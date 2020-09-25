@@ -1,0 +1,268 @@
+---
+title: AEM 스타일 시스템의 코드 작성 방법 이해
+description: 이 비디오에서는 스타일 시스템을 사용하여 Adobe Experience Manager의 핵심 제목 구성 요소의 스타일을 지정하는 데 사용되는 CSS(또는 LESS) 및 JavaScript의 구조와 이러한 스타일이 HTML 및 DOM에 적용되는 방법을 살펴봅니다.
+feature: style-system
+topics: development, components, front-end-development
+audience: developer, implementer
+doc-type: technical video
+activity: understand
+version: 6.4, 6.5
+translation-type: tm+mt
+source-git-commit: 664d3964df796d508973067f8fa4fe5ef83c5fec
+workflow-type: tm+mt
+source-wordcount: '1145'
+ht-degree: 1%
+
+---
+
+
+# 스타일 시스템의 코드 작성 방법 이해{#understanding-how-to-code-for-the-aem-style-system}
+
+이 비디오에서는 스타일 시스템을 사용하여 Experience Manager의 핵심 제목 구성 요소의 스타일을 지정하는 데 사용되는 CSS(또는 [!DNL LESS]) 및 JavaScript의 구조와 이러한 스타일이 HTML 및 DOM에 적용되는 방법을 살펴봅니다.
+
+>[!NOTE]
+>
+>AEM Style System은 [AEM 6.3 SP1](https://helpx.adobe.com/experience-manager/6-3/release-notes/sp1-release-notes.html) + [Feature Pack 20593과 함께 도입되었습니다](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-20593).
+>
+>이 비디오에서는 We.Retail 제목 구성 요소가 [핵심 구성 요소 v2.0.0+에서 상속되도록 업데이트되었다고 가정합니다](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/releases).
+
+## 스타일 시스템의 코드 작성 방법 이해 {#understanding-how-to-code-for-the-style-system}
+
+>[!VIDEO](https://video.tv.adobe.com/v/21538/?quality=9&learn=on)
+
+제공된 AEM 패키지(**technical-review.sites.style-system-1.0.0.zip**)는 예제 제목 스타일, We.Retail 레이아웃 컨테이너 및 제목 구성 요소에 대한 샘플 정책 및 샘플 페이지를 설치합니다.
+
+[technical-review.sites.style-system-1.0.0.zip](assets/technical-review.sites.style-system-1.0.0.zip)
+
+### CSS {#the-css}
+
+다음은 예제 스타일에 대한 [!DNL LESS] 정의입니다.
+
+* `/apps/demo/sites/style-system/clientlib-example/components/titles/styles/example.less`
+
+CSS를 선호하는 사용자의 경우 이 코드 조각 아래는 이 코드 조각이 컴파일한 CSS입니다 [!DNL LESS] .
+
+```css
+/* LESS */
+.cmp-title--example {
+ .cmp-title {
+  text-align: center;
+
+  .cmp-title__text {
+   color: #EB212E;
+   font-weight: 600;
+   font-size: 5rem;
+   border-bottom: solid 1px #ddd;
+   padding-bottom: 0;
+   margin-bottom: .25rem
+  }
+
+  // Last Modified At element injected via JS
+  .cmp-title__last-modified-at {
+   color: #999;
+   font-size: 1.5rem;
+   font-style: italic;
+   font-weight: 200;
+  }
+ }
+}
+```
+
+위 [!DNL LESS] 는 Experience Manager에서 다음 CSS로 기본적으로 컴파일됩니다.
+
+```css
+/* CSS */
+.cmp-title--example .cmp-title {
+ text-align: center;
+}
+
+.cmp-title--example .cmp-title .cmp-title__text {
+ color: #EB212E;
+ font-weight: 600;
+ font-size: 5rem;
+ border-bottom: solid 1px #ddd;
+ padding-bottom: 0;
+ margin-bottom: 0.25rem;
+}
+
+.cmp-title--example .cmp-title .cmp-title__last-modified-at {
+ color: #999;
+ font-size: 1.5rem;
+ font-style: italic;
+ font-weight: 200;
+}
+```
+
+### JavaScript {#example-javascript}
+
+다음 JavaScript는 제목 구성 요소에 예제 스타일이 적용된 경우 제목 텍스트 아래에 현재 페이지의 마지막 수정 날짜 및 시간을 수집하고 삽입합니다.
+
+jQuery는 사용되는 이름 지정 규칙뿐만 아니라 선택 사항입니다.
+
+다음은 예제 스타일에 대한 [!DNL LESS] 정의입니다.
+
+* `/apps/demo/sites/style-system/clientlib-example/components/titles/styles/js/title.js`
+
+```js
+/**
+ * JavaScript supporting Styles may be re-used across multi Component Styles.
+ *
+ * For example:
+ * Many styles may require the Components Image (provided via an <img> element) to be set as the background-image.
+ * A single JavaScript function may be used to adjust the DOM for all styles that required this effect.
+ *
+ * JavaScript must react to the DOMNodeInserted event to handle style-switching in the Page Editor Authoring experience.
+ * JavaScript must also run on DOM ready to handle the initial page load rendering (AEM Publish).
+ * JavaScript must mark and check for elements as processed to avoid cyclic processing (ie. if the JavaScript inserts a DOM node of its own).
+ */
+jQuery(function ($) {
+    "use strict;"
+
+    moment.locale("en");
+
+    /**
+     * Method that injects p element, containing the current pages last modified date/time, under the title text.
+     *
+     * Similar to the CSS Style application, component HTML elements should be targeted via the BEM class names (as they define the stable API)
+     * and targeting "raw" elements (ex. "li", "a") should be avoided.
+     */
+    function applyComponentStyles() {
+
+        $(".cmp-title--example").not("[data-styles-title-last-modified-processed]").each(function () {
+            var title = $(this).attr("data-styles-title-last-modified-processed", true),
+                url = Granite.HTTP.getPath() + ".model.json";
+
+            $.getJSON(url, function(data) {
+                var dateObject = moment(data['lastModifiedDate']),
+                    titleText = title.find('.cmp-title__text');
+
+                titleText.after($("<p>").addClass("cmp-title__last-modified-at").text("Last modified " + dateObject.fromNow()));
+            });
+        });
+    }
+
+    // Handle DOM Ready event
+    applyComponentStyles();
+
+    // Apply Styles when a component is inserted into the DOM (ie. during Authoring)
+    $(".responsivegrid").bind("DOMNodeInserted", applyComponentStyles);
+});
+```
+
+## Development best practices {#development-best-practices}
+
+### HTML 모범 사례 {#html-best-practices}
+
+* HTML(HTL을 통해 생성)은 가능한 한 구조적인 의미여야 합니다.요소의 불필요한 그룹화/중첩 방지
+* HTML 요소는 BEM 스타일 CSS 클래스를 통해 주소를 지정해야 합니다.
+
+**양호** - 구성 요소의 모든 요소는 BEM 표기법을 통해 주소 지정이 가능합니다.
+
+```html
+<!-- Good practice -->
+<div class="cmp-list">
+    <ul class="cmp-list__item-group">
+        <li class="cmp-list__item">...</li>
+    </ul>
+</div>
+```
+
+**불량** - 목록 및 목록 요소는 요소 이름으로만 주소 지정이 가능합니다.
+
+```html
+<!-- Bad practice -->
+<div class="cmp-list">
+    <ul>
+        <li>...</li>
+    </ul>
+</div>
+```
+
+* 미래의 백엔드 개발이 필요한 데이터가 너무 적어서 데이터를 노출하여 노출시키는 것보다 더 많은 데이터를 노출하고 숨기는 것이 더 좋습니다.
+
+   * 작성 가능한 컨텐츠를 구현하면 이 HTML을 유지할 수 있으므로 작성자는 HTML에 쓸 컨텐츠 요소를 선택할 수 있습니다. 일부 스타일에는 사용할 수 없는 HTML에 이미지를 쓸 때 특히 중요할 수 있습니다.
+   * 이 규칙의 예외는 이미지 등 값비싼 리소스가 기본적으로 노출되는 경우입니다. CSS로 숨겨진 이벤트 이미지는 이 경우 불필요한 반입이 되기 때문입니다.
+
+      * 최신 이미지 구성 요소는 종종 JavaScript를 사용하여 사용 사례(뷰포트)에 가장 적합한 이미지를 선택하고 로드합니다.
+
+### CSS 모범 사례 {#css-best-practices}
+
+>[!NOTE]
+>
+>스타일 시스템은 BEM에서 지정한 것처럼 BEM [과](https://en.bem.info/)비슷한 요소 `BLOCK` 에 적용되거나 적용되지 `BLOCK--MODIFIER` 않는다는 점에서 기술 측면에서 [차이가](https://en.bem.info/)납니다.
+>
+>대신 제품 제약 조건으로 인해 요소 `BLOCK--MODIFIER` 의 상위에 `BLOCK` 적용됩니다.
+>
+>BEM의 다른 [모든](https://en.bem.info/) 세입자들은 함께 해야 한다.
+
+* LESS(AEM에서 기본적으로 [지원됨](https://lesscss.org/) ) 또는 [SCSS](https://sass-lang.com/) (사용자 정의 빌드 시스템 필요)와 같은 프리프로세서를 사용하여 CSS 정의를 지우고 재사용할 수 있습니다.
+
+* 선택기 두께/특성도 균일 유지이를 통해 CSS 캐스케이드 충돌을 피하거나 확인할 수 있습니다.
+* 각 스타일을 개별 파일로 구성합니다.
+   * LESS/SCSS를 사용하여 이러한 파일을 결합하거나 HTML 클라이언트 라이브러리 파일 포함 또는 사용자 정의 프런트 엔드 에셋 빌드 시스템을 통해 원시 CSS가 필요한 경우 결합할 수 있습니다 `@imports` .
+* 복잡한 스타일을 혼합하지 마십시오.
+   * 한 번에 구성 요소에 적용할 수 있는 스타일이 많을수록 순열의 다양성이 커집니다. 이를 통해 유지/QA/브랜드 정렬을 확인하는 것이 어려울 수 있습니다.
+* 항상 CSS 클래스(BEM 표기법 적용)를 사용하여 CSS 규칙을 정의합니다.
+   * CSS 클래스가 없는 요소(즉, 기본 요소)를 선택하는 것이 절대적으로 필요한 경우 CSS 정의에서 해당 요소를 더 높은 위치로 이동하여 선택 가능한 CSS 클래스가 있는 해당 유형의 요소와의 충돌보다 더 낮은 정확성을 갖도록 하십시오.
+* 반응형 격자에 연결되어 있으므로 직접 스타일을 지정하지 `BLOCK--MODIFIER` 마십시오. 이 요소의 표시를 변경하면 응답형 격자의 렌더링 및 기능에 영향을 줄 수 있으므로 반응형 격자의 동작을 변경하려는 경우에만 이 수준에서 스타일을 지정합니다.
+* 을 사용하여 스타일 범위를 적용할 수 `BLOCK--MODIFIER`있습니다. 구성 요소에서 사용할 `BLOCK__ELEMENT--MODIFIERS` 수 있지만, 구성 요소는 구성 요소를 `BLOCK` 나타내며 구성 요소는 스타일이 지정된 것이므로 스타일은 &quot;정의&quot;되고 을 통해 범위가 지정됩니다 `BLOCK--MODIFIER`.
+
+예제 CSS 선택기 구조는 다음과 같아야 합니다.
+
+<table> 
+ <tbody> 
+  <tr> 
+   <td valign="bottom"><p>1차 수준 선택기</p> <p>블록(BLOCK) - 수정자</p> </td> 
+   <td valign="bottom"><p>2차 수준 선택기</p> <p>블록</p> </td> 
+   <td valign="bottom"><p>3차 수준 선택기</p> <p>BLOCK__ELEMENT</p> </td> 
+   <td> </td> 
+   <td valign="middle">효과적인 CSS 선택기</td> 
+  </tr> 
+  <tr> 
+   <td valign="middle"><span class="code">.cmp-list—dark</span></td> 
+   <td valign="middle"><span class="code">.cmp-list</span></td> 
+   <td valign="middle"><span class="code">.cmp-list_item</span></td> 
+   <td valign="middle">→</td> 
+   <td><p><span class="code">.cmp-list—dark</span></p> <p><span class="code"> .cmp-list</span></p> <p><span class="code"> </span><strong><span class="code"> .cmp-list__item { </span></strong></p> <p><strong> 색상:blue;</strong></p> <p><strong> }</strong></p> </td> 
+  </tr> 
+  <tr> 
+   <td valign="middle"><span class="code">.cmp-image—hero</span></td> 
+   <td valign="middle"><span class="code">.cmp-image</span></td> 
+   <td valign="middle"><span class="code">.cmp-image_caption</span></td> 
+   <td valign="middle">→</td> 
+   <td valign="middle"><p><span class="code">.cmp-image—hero</span></p> <p><span class="code"> .cmp-image</span></p> <p><span class="code"> .cmp-image__caption {</span></p> <p><span class="code"> 색상:red;</span></p> <p><span class="code"> }</span></p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+중첩된 구성 요소의 경우 이러한 중첩된 구성 요소 요소의 CSS 선택기 깊이가 3번째 수준 선택기를 초과합니다. 중첩된 구성 요소에 대해 동일한 패턴을 반복하지만 부모 구성 요소의 범위에 따라 범위를 지정합니다 `BLOCK`. 즉, 중첩된 구성 요소의 위치를 3번째 수준 `BLOCK` 에서 시작하면 중첩된 구성 요소의 `ELEMENT` 위치가 4번째 선택기 수준에 있게 됩니다.
+
+### JavaScript 우수 사례 {#javascript-best-practices}
+
+이 섹션에 정의된 우수 사례는 &quot;style-JavaScript&quot; 또는 JavaScript가 기능적 목적이 아니라 스타일을 위해 구성 요소를 조작하도록 특별히 고안된 것입니다.
+
+* Style-JavaScript는 신중하게 사용해야 하며 소수 사용 사례입니다.
+* Style-JavaScript는 CSS로 스타일링을 지원하기 위해 구성 요소의 DOM을 조작하는 데 주로 사용되어야 합니다.
+* 구성 요소가 페이지에 여러 번 나타날 경우 Javascript 사용을 재평가하고 계산/다시 그리기 비용을 이해합니다.
+* 구성 요소가 페이지에 여러 번 표시될 수 있을 때 새로운 데이터/컨텐츠를 비동기적으로(AJAX을 통해) 가져오는 경우 Javascript 사용을 다시 평가합니다.
+* 게시 및 작성 경험을 모두 처리합니다.
+* 가능한 경우 style-Javascript를 다시 사용합니다.
+   * 예를 들어, 구성 요소의 여러 스타일을 사용하려면 배경 이미지로 이동해야 하는 경우 style-JavaScript를 한 번 구현하고 여러 페이지에 연결할 수 있습니다 `BLOCK--MODIFIERs`.
+* 가능한 경우 기능적인 JavaScript와 style-JavaScript를 구분합니다.
+* HTL을 통해 HTML에서 직접 이러한 DOM 변경 사항을 표시하는 것과 JavaScript의 비용을 평가합니다.
+   * style-JavaScript를 사용하는 구성 요소에 서버측 수정이 필요한 경우 현재 JavaScript 조작을 가져올 수 있는지, 그리고 구성 요소의 성능 및 지원 가능성에 대한 효과/파급 효과를 평가합니다.
+
+#### 성능 고려 사항 {#performance-considerations}
+
+* 스타일-JavaScript는 밝고 날씬해야 합니다.
+* 깜박거리고 불필요한 다시 드로잉을 방지하려면, 을 통해 구성 요소를 `BLOCK--MODIFIER BLOCK`숨기고 JavaScript의 모든 DOM 조작이 완료되면 표시합니다.
+* style-JavaScript 조작 성능은 DOMAINeady의 요소에 연결하고 수정하는 기본 jQuery 플러그인과 비슷합니다.
+* 요청이 압축되고 CSS 및 JavaScript가 축소되었는지 확인합니다.
+
+## 추가 리소스 {#additional-resources}
+
+* [스타일 시스템 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/style-system.html)
+* [AEM 클라이언트 라이브러리 만들기](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/clientlibs.html)
+* [BEM(블록 요소 수정자) 설명서 웹 사이트](https://getbem.com/)
+* [LESS 설명서 웹 사이트](https://lesscss.org/)
+* [jQuery 웹 사이트](https://jquery.com/)
