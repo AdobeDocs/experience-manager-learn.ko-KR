@@ -1,0 +1,36 @@
+---
+title: 양식 조각 만들기
+description: AEM forms에서는 패널이나 필드 그룹과 같은 양식 세그먼트를 한 번만 만들고 적응형 양식에 다시 사용할 수 있는 편리한 메커니즘을 제공합니다.
+feature: adaptive-forms
+topics: authoring
+audience: developer
+doc-type: tutorial
+activity: understand
+kt: 5862
+thumbnail: 37325.jpg
+translation-type: tm+mt
+source-git-commit: c60a46027cc8d71fddd41aa31dbb569e4df94823
+workflow-type: tm+mt
+source-wordcount: '107'
+ht-degree: 4%
+
+---
+
+
+# 양식 조각 만들기
+
+조각은 양식의 재사용 가능한 부분입니다. 예를 들어, 조각에 주소 블록 또는 법적 텍스트가 포함될 수 있습니다. 조각을 사용하면 다수의 양식을 간단하게 만들고 유지 관리할 수 있습니다.
+
+
+>[!VIDEO](https://video.tv.adobe.com/v/37325/quality=9)
+
+
+
+자세한 내용은 [적응형 양식 템플릿 설명서를](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html) 참조하십시오.
+
+필요한 경우 [패키지 관리자를 사용하여 ](assets/spouse-details-fragment.zip) 배우자 세부 정보 조각 [을 다운로드하고 AEM으로 가져올 수 있습니다.](http://localhost:4502/crx/packmgr/index.jsp)
+
+
+
+
+
