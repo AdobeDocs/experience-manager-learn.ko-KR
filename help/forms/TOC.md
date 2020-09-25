@@ -6,9 +6,9 @@ user-guide-description: Collection of AEM Forms resources for beginners and expe
 breadcrumb-title: AEM Forms Tutorials
 index: y
 translation-type: tm+mt
-source-git-commit: c7ae9a51800bb96de24ad577863989053d53da6b
+source-git-commit: 9f8c858197e44de020ab195373f30e3d38dfd2cc
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '835'
 ht-degree: 3%
 
 ---
@@ -38,7 +38,8 @@ ht-degree: 3%
    + [AEM Workflow를 트리거하는 응용 양식 구성 - 비디오](handling-form-submissions/configure-af-to-trigger-aem-workflow.md)
    + [PTO AEM 워크플로우](handling-form-submissions/invoking-aem-workflow-on-form-submission-article-use.md)
    + [작업 지정 알림 사용자 지정](handling-form-submissions/customize-assign-task-notification.md)
-
++ 유용한 통합{#some-useful-integrations}
+   + [2단계 인증](some-useful-integrations/two-factor-authentication.md)
 + 적응형 양식 {#adaptive-forms}
    + [Windows에 AEM Forms 설치](adaptive-forms/installing-aem-form-on-windows-tutorial-use.md)
    + [적응형 Forms의 프리필링 서비스](adaptive-forms/prefill-service-adaptive-forms-article-use.md)
