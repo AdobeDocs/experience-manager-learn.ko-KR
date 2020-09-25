@@ -1,0 +1,47 @@
+---
+title: AEM의 번역 개선 사항
+description: AEM의 강력한 번역 프레임워크를 사용하면 지원되는 번역 공급업체에서 AEM 컨텐츠를 원활하게 변환할 수 있습니다. 향상된 최신 기능에 대해 자세히 알아보십시오.
+feature: multi-site-manager, language-copy
+topics: localization, authoring, content-architecture
+audience: author, marketer, developer
+doc-type: feature video
+activity: use
+version: 6.3, 6.4, 6.5
+translation-type: tm+mt
+source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+workflow-type: tm+mt
+source-wordcount: '334'
+ht-degree: 0%
+
+---
+
+
+# 다중 사이트 관리자를 사용한 번역 개선 사항 {#translation-enhancements}
+
+AEM의 강력한 번역 프레임워크를 사용하면 지원되는 번역 공급업체에서 AEM 컨텐츠를 원활하게 변환할 수 있습니다.
+
+## AEM 6.5의 번역 개선 사항
+
+>[!VIDEO](https://video.tv.adobe.com/v/27405?quality=9&learn=on)
+
+AEM 6.5 변환 개선 사항:
+
+**번역 자동 승인 작업**:번역 작업의 승인 플래그는 이진 속성입니다. 즉시 사용 가능한 검토 및 승인 워크플로우를 추진하거나 통합할 수 없습니다. 번역 작업의 단계 수를 최소화하려면 기본적으로 번역 프로젝트의 [!UICONTROL 고급 속성에서] &quot;자동 승인&quot;으로 설정됩니다. 조직에서 번역 작업에 대한 승인이 필요한 경우 번역 프로젝트의 [!UICONTROL 고급 속성에서] &quot;자동 승인&quot; 옵션의 선택을 취소할 수 있습니다.
+
+**번역 실행**&#x200B;자동 삭제:이제 팩트 후에 론치 관리에서 번역 실행을 수동으로 삭제하는 대신, 홍보 후 번역 론치를 자동으로 삭제할 수 있습니다.
+
+**JSON 형식으로 번역 개체 내보내기**:AEM 6.4 및 이전 버전은 번역 개체의 XML 및 XLIFF 형식을 지원합니다. 이제 시스템 콘솔 구성 관리자를 사용하여 내보내기 형식을 JSON 형식으로 [!UICONTROL 구성할 수 있습니다]. 번역 [!UICONTROL 플랫폼 구성을]찾은 다음 내보내기 형식을 JSON으로 선택할 수 있습니다.
+
+**번역된 AEM 컨텐츠를 TMS(번역 메모리)에서 업데이트합니다**.aem에 대한 액세스 권한이 없는 로컬 작성자는 번역된 컨텐츠가 AEM으로 이미 재처리된 후 TM(번역 메모리, TMS)에서 직접로 업데이트하거나 번역 작업을 TMS에서 AEM으로 다시 전송하여 AEM에서 번역을 업데이트할 수 있습니다
+
+## AEM 6.4의 번역 개선 사항
+
+>[!VIDEO](https://video.tv.adobe.com/v/21309?quality=9&learn=on)
+
+이제 작성자는 사이트 관리자나 프로젝트 관리자로부터 바로 다국어 번역 프로젝트를 빠르고 손쉽게 제작할 수 있고 이러한 프로젝트를 설정하여 론치를 자동으로 홍보할 수 있으며 자동화를 위한 일정을 설정할 수 있습니다.
+
+## 추가 리소스 {#additional-resources}
+
+* [다국어 사이트의 컨텐츠 번역](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/translation.html)
+* [https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-manage.html](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-manage.html)
+* [번역 우수 사례](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-bp.html)
