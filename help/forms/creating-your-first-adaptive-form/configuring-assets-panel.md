@@ -1,0 +1,37 @@
+---
+title: 자산 섹션에 구성 요소 추가
+seo-title: 자산 섹션에 구성 요소 추가
+description: 에셋 패널의 아코디언 레이아웃을 구성합니다.아코디언 레이아웃에서는 반복 가능한 섹션을 추가하는 더 나은 최종 사용자 환경을 제공합니다.
+seo-description: 에셋 패널의 아코디언 레이아웃을 구성합니다.아코디언 레이아웃에서는 반복 가능한 섹션을 추가하는 더 나은 최종 사용자 환경을 제공합니다.
+uuid: 0e853b07-a08d-4c5d-b5c2-0df34f0d81b3
+feature: adaptive-forms
+topics: authoring
+audience: developer
+doc-type: tutorial
+activity: understand
+version: 6.4,6.5
+kt: 4212
+thumbnail: 22200.jpg
+discoiquuid: 37c039c4-422a-4836-8aa5-ba0459d342cc
+translation-type: tm+mt
+source-git-commit: c60a46027cc8d71fddd41aa31dbb569e4df94823
+workflow-type: tm+mt
+source-wordcount: '78'
+ht-degree: 0%
+
+---
+
+
+# 자산 섹션에 구성 요소 추가 {#adding-components-to-assets-section}
+
+에셋 패널의 아코디언 레이아웃을 구성합니다.아코디언 레이아웃에서는 반복 가능한 섹션을 추가하는 더 나은 최종 사용자 환경을 제공합니다.
+
+**에셋 패널 구성**
+
+>[!VIDEO](https://video.tv.adobe.com/v/22200?quality=9&learn=on)
+
+**요약 제목 설정**
+>[!VIDEO](https://video.tv.adobe.com/v/28387)
+
+
+
