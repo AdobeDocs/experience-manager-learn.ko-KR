@@ -10,10 +10,10 @@ doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 translation-type: tm+mt
-source-git-commit: e99779b5d42bb9a3b258e2bbe815defde9d40bf7
+source-git-commit: 449202af47b6bbcd9f860d5c5391d1f7096d489e
 workflow-type: tm+mt
-source-wordcount: '274'
-ht-degree: 3%
+source-wordcount: '224'
+ht-degree: 2%
 
 ---
 
@@ -37,18 +37,4 @@ Interactive Communications는 AEM Forms 6.4에서 처음 도입되었습니다. 
 * 문서 조각 만들기
 * 테이블 및 차트 구성
 * 감시 폴더를 사용하여 일괄 처리 모드로 문서 생성
-
-## 자습서
-
-* [Tomcat 설정](partone.md)
-* [데이터 소스 만들기](parttwo.md)
-* [양식 데이터 모델 작성](partthree.md)
-* [Forms 디자이너를 사용하여 XDP 레이아웃 만들기](partfour.md)
-* [문서 조각 만들기](partfive.md)
-* [인쇄 채널 문서 만들기](partsix.md)
-* [Target 영역에 컨텐츠 추가](partseven.md)
-* [라인 차트 구성](parteight.md)
-* [인쇄 채널에 표 추가](partnine.md)
-* [감시 폴더를 사용하여 인쇄 문서 생성](partten.md)
-* [양식 제출 시 에이전트 UI 열기](parteleven.md)
 
