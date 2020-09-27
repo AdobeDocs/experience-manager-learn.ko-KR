@@ -6,9 +6,9 @@ user-guide-description: Collection of AEM Forms resources for beginners and expe
 breadcrumb-title: AEM Forms Tutorials
 index: y
 translation-type: tm+mt
-source-git-commit: 9f8c858197e44de020ab195373f30e3d38dfd2cc
+source-git-commit: 449202af47b6bbcd9f860d5c5391d1f7096d489e
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '836'
 ht-degree: 3%
 
 ---
@@ -30,16 +30,17 @@ ht-degree: 3%
    + [에셋 패널 구성](creating-your-first-adaptive-form/configuring-assets-panel.md)
    + [사용자 정의 함수 및 코드 편집기 사용](creating-your-first-adaptive-form/using-custom-functions-and-code-editor.md)
 + 양식 제출 처리 {#handling-af-form-submissions}
-   + [검토 워크플로우 만들기](handling-form-submissions/create-workflow-to-review.md)
-   + [적응형 양식을 구성하여 워크플로우 트리거](handling-form-submissions/trigger-workflow-on-form-submission.md)
+   + [검토 워크플로우 만들기](handling-form-submissions/creating-a-review-workflow.md)
+   + [적응형 양식을 구성하여 워크플로우 트리거](handling-form-submissions/configuring-adaptive-form-to-trigger-workflow.md)
    + [감사 페이지 표시](handling-form-submissions/submitting-adaptive-forms-thank-you-page-article-use.md)
    + [외부 엔드 포인트에 제출](handling-form-submissions/submitting-adaptive-forms-to-external-server-article-use.md)
    + [이메일 전송](handling-form-submissions/sending-email-on-adaptive-form-submission.md)
+   + [유료 요청 워크플로우](handling-form-submissions/paid-time-off-request-workflow.md)
    + [AEM Workflow를 트리거하는 응용 양식 구성 - 비디오](handling-form-submissions/configure-af-to-trigger-aem-workflow.md)
-   + [PTO AEM 워크플로우](handling-form-submissions/invoking-aem-workflow-on-form-submission-article-use.md)
    + [작업 지정 알림 사용자 지정](handling-form-submissions/customize-assign-task-notification.md)
 + 유용한 통합{#some-useful-integrations}
    + [2단계 인증](some-useful-integrations/two-factor-authentication.md)
+
 + 적응형 양식 {#adaptive-forms}
    + [Windows에 AEM Forms 설치](adaptive-forms/installing-aem-form-on-windows-tutorial-use.md)
    + [적응형 Forms의 프리필링 서비스](adaptive-forms/prefill-service-adaptive-forms-article-use.md)
@@ -169,17 +170,17 @@ ht-degree: 3%
    + [문서 인증](document-services/certifying-documents-aem-forms-tutorial.md)
 + 인쇄 채널을 위한 인터랙티브 커뮤니케이션 {#ic-print-channel-tutorial}
    + [소개](ic-print-channel-tutorial/introduction.md)
-   + [Tomcat 설정](ic-print-channel-tutorial/partone.md)
-   + [데이터 소스 만들기](ic-print-channel-tutorial/parttwo.md)
-   + [양식 데이터 모델 작성](ic-print-channel-tutorial/partthree.md)
-   + [Forms 디자이너를 사용하여 XDP 레이아웃 만들기](ic-print-channel-tutorial/partfour.md)
-   + [문서 조각 만들기](ic-print-channel-tutorial/partfive.md)
-   + [인쇄 채널 문서 만들기](ic-print-channel-tutorial/partsix.md)
-   + [Target 영역에 컨텐츠 추가](ic-print-channel-tutorial/partseven.md)
-   + [라인 차트 구성](ic-print-channel-tutorial/parteight.md)
-   + [인쇄 채널에 표 추가](ic-print-channel-tutorial/partnine.md)
-   + [감시 폴더를 사용하여 인쇄 문서 생성](ic-print-channel-tutorial/partten.md)
-   + [양식 제출 시 에이전트 UI 열기](ic-print-channel-tutorial/parteleven.md)
+   + [Tomcat 설정](ic-print-channel-tutorial/set-up-tomcat.md)
+   + [데이터 소스 만들기](ic-print-channel-tutorial/create-data-source.md)
+   + [양식 데이터 모델 작성](ic-print-channel-tutorial/create-form-data-model.md)
+   + [Forms 디자이너를 사용하여 XDP 레이아웃 만들기](ic-print-channel-tutorial/create-xdp-layout-using-forms-designer.md)
+   + [문서 조각 만들기](ic-print-channel-tutorial/create-document-fragment.md)
+   + [인쇄 채널 문서 만들기](ic-print-channel-tutorial/create-print-channel-document.md)
+   + [Target 영역에 컨텐츠 추가](ic-print-channel-tutorial/add-content-to-target-areas.md)
+   + [라인 차트 구성](ic-print-channel-tutorial/configuring-line-chart.md)
+   + [인쇄 채널에 표 추가](ic-print-channel-tutorial/adding-table-to-print-channel.md)
+   + [감시 폴더를 사용하여 문서 생성](ic-print-channel-tutorial/using-watched-folder-to-generate-document.md)
+   + [양식 제출 시 에이전트 UI 열기](ic-print-channel-tutorial/opening-agent-ui-on-form-submission.md)
 + 대화형 통신 {#interactive-communications}
    + [배치 API 사용](interactive-communications/batch-generation-interactive-communications.md)
    + [다중 시리즈 차트](interactive-communications/multiseriescharts.md)
