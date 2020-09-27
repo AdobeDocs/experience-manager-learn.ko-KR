@@ -10,7 +10,7 @@ doc-type: article
 activity: implement
 version: 6.4,6.5
 translation-type: tm+mt
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: 449202af47b6bbcd9f860d5c5391d1f7096d489e
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 0%
@@ -110,7 +110,7 @@ resourceResolverHelper.callWith(resourceResolver, {call: function()
 
 **로컬 시스템에서 테스트하려면 다음 지침을 따르십시오.**
 
-* 이 문서에 설명된 대로 Tomcat을 [설정합니다.](/help/forms/ic-print-channel-tutorial/partone.md) Tomcat은 샘플 데이터를 생성하는 전쟁 파일을 가지고 있습니다.
+* 이 문서에 설명된 대로 Tomcat을 [설정합니다.](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md) Tomcat은 샘플 데이터를 생성하는 전쟁 파일을 가지고 있습니다.
 * 이 문서에 설명된 대로 서비스 또는 시스템 사용자를 [설정합니다](/help/forms/adaptive-forms/service-user-tutorial-develop.md).
 이 시스템 사용자가 다음 노드에 대한 읽기 권한을 가지고 있는지 확인하십시오. 권한 로그인을 [사용자 관리자에게](https://localhost:4502/useradmin) 부여하고 시스템 사용자 &quot;데이터&quot;를 검색하고 권한 탭으로 이동하여 다음 노드에 대한 읽기 권한을 부여하려면
    * /content/dam/formsanddocuments
