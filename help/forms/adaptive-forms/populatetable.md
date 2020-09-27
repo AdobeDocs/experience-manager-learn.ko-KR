@@ -10,7 +10,7 @@ doc-type: article
 activity: implement
 version: 6.4,6.5
 translation-type: tm+mt
-source-git-commit: 4f51f7bf00827210d2631b9335768a9980f6655c
+source-git-commit: 449202af47b6bbcd9f860d5c5391d1f7096d489e
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 0%
@@ -26,5 +26,5 @@ Row1은 서비스 호출에서 반환된 데이터에 따라 확장되도록 구
 
 ## 서버에 배포
 
-[여기에](/help/forms/ic-print-channel-tutorial/partone.md)지정된 대로 Tomcat[설치](https://forms.enablementadobe.com/content/DemoServerBundles/SampleRest.war)[SampleRest.war 파일 ](assets/amortizationschedule.zip) 배포 AEM 패키지 관리자를[사용하여 자산 설치](http://localhost:4502/content/dam/formsanddocuments/amortization/jcr:content?wcmmode=disabled)상용화 일정 양식을 엽니다. 적절한 값을 입력하고 계산을 클릭하면양식에서 상용화 일정이 채워집니다.
+[여기에](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md)지정된 대로 Tomcat[설치](https://forms.enablementadobe.com/content/DemoServerBundles/SampleRest.war)[SampleRest.war 파일 ](assets/amortizationschedule.zip) 배포 AEM 패키지 관리자를[사용하여 자산 설치](http://localhost:4502/content/dam/formsanddocuments/amortization/jcr:content?wcmmode=disabled)상용화 일정 양식을 엽니다. 적절한 값을 입력하고 계산을 클릭하면양식에서 상용화 일정이 채워집니다.
 
