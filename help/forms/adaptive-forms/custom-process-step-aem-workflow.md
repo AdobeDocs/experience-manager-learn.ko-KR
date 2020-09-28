@@ -10,7 +10,7 @@ doc-type: tutorial
 activity: understand
 version: 6.5
 translation-type: tm+mt
-source-git-commit: c7ae9a51800bb96de24ad577863989053d53da6b
+source-git-commit: ca4a8f02ea9ec5db15dbe6f322731748da90be6b
 workflow-type: tm+mt
 source-wordcount: '895'
 ht-degree: 0%
@@ -133,7 +133,7 @@ Adobe는 AEM Forms 전용 문서 개체를 사용하고 있으므로, 마스터 
 
 #### 구축 및 배포
 
-[여기에 설명된 대로 번들](https://helpx.adobe.com/experience-manager/using/maven_arch13.html#BuildtheOSGibundleusingMaven)[을 빌드합니다. 번들이 배포되어 활성 상태인지 확인하십시오](http://localhost:450/system/console/bundles)
+[여기에 설명된 대로 번들](https://helpx.adobe.com/experience-manager/using/maven_arch13.html#BuildtheOSGibundleusingMaven)[을 빌드합니다. 번들이 배포되어 활성 상태인지 확인하십시오](http://localhost:4502/system/console/bundles)
 
 워크플로우 모델을 만듭니다. 워크플로우 모델에서 프로세스 단계를 드래그하여 놓습니다. 프로세스 단계를 &quot;파일 시스템에 적응형 양식 첨부 저장&quot;과 연결합니다.
 
