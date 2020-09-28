@@ -10,9 +10,9 @@ doc-type: tutorial
 activity: understand
 version: 6.5
 translation-type: tm+mt
-source-git-commit: 22ccd6627a035b37edb180eb4633bc3b57470c0c
+source-git-commit: ca4a8f02ea9ec5db15dbe6f322731748da90be6b
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
@@ -20,19 +20,17 @@ ht-degree: 0%
 # AEM 워크플로우에서 JSON 유형의 변수
 
 이제 AEM Forms 6.5부터 AEM 워크플로우에서 JSON 유형의 변수를 만들 수 있습니다. 일반적으로 JSON 스키마를 기반으로 하는 적응형 Forms을 AEM 워크플로우에 제출하거나 양식 데이터 모델 호출 작업의 결과를 저장하려는 경우 JSON 유형의 변수를 만듭니다. 다음 비디오에서는 AEM 워크플로우에서 JSON 유형의 변수를 만들고 사용하는 데 필요한 단계를 안내합니다
->[!NOTE]
 
 **AEM Forms 6.5.0을 사용하는 경우**
 
 워크플로우 모델에서 제출된 데이터를 캡처하기 위해 JSON 유형의 변수를 만드는 경우 JSON 스키마를 변수와 연결하지 마십시오. 이는 JSON 스키마 기반 적응형 양식을 제출할 때 제출된 데이터가 JSON 스키마를 준수하지 않기 때문입니다. JSON 스키마 불만 데이터는 afData.afBoundData.data 요소로 포함되어 있습니다.
 
+>[!VIDEO](https://video.tv.adobe.com/v/26444?quality=12&learn=on)
+
+
 **AEM Forms 6.5.1 이상 버전을 사용하는 경우**
 
 워크플로우 모델에서 JSON 유형의 변수에 스키마를 매핑할 수 있습니다. 그런 다음 스키마 브라우저를 사용하여 워크플로우 모델에서 스키마 요소를 문자열/번호 변수와 매핑할 수 있습니다
-
->[!VIDEO](https://video.tv.adobe.com/v/26444?quality=12&learn=on)
-
-**스키마 요소를 드릴다운하고 워크플로 변수에 스키마 요소를 매핑하는 기능은 AEM Forms 6.5.1 버전에서만 사용할 수 있습니다.**
 
 >[!VIDEO](https://video.tv.adobe.com/v/28097?quality=12&learn=on)
 
