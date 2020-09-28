@@ -11,7 +11,7 @@ doc-type: article
 activity: implement
 version: 6.4,6.5
 translation-type: tm+mt
-source-git-commit: e99779b5d42bb9a3b258e2bbe815defde9d40bf7
+source-git-commit: ca4a8f02ea9ec5db15dbe6f322731748da90be6b
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%
@@ -61,7 +61,7 @@ AEM의 키 저장소에 인증서를 추가하려면 아래 단계를 따르십�
    **아래 스크린샷에 나와 있는 것처럼 DevelopingWithServiceUser.core:getformsresourisresolver=fd-service**
    ![User-Mapper](assets/user-mapper-service.PNG)
 * [샘플 적응형 양식 가져오기](assets/certify-pdf-af.zip)
-* [클라이언트 라이브러리 및 사용자 지정 제출 가져오기](assets/certify-document-assets.zip)
+* [사용자 지정 제출 가져오기 및 설치](assets/custom-submit-certify.zip)
 * [응용 양식 열기](http://localhost:4502/content/dam/formsanddocuments/certifypdf/jcr:content?wcmmode=disabled)
 * 인증을 받아야 하는 PDF 문서 업로드
    **선택** 사항 - 문서 인증에 사용할 서명 필드를 지정합니다.
