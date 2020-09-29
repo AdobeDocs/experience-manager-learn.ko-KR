@@ -10,9 +10,9 @@ audience: developer
 kt: 5432
 thumbnail: kt-5432.jpg
 translation-type: tm+mt
-source-git-commit: 1eb15af3d9d2904856218aaad4d5c52233603a71
+source-git-commit: 7fd232d6821f91c342dd04fcdd04b9b505cb7250
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '990'
 ht-degree: 1%
 
 ---
@@ -28,6 +28,12 @@ ht-degree: 1%
 
 + `cm-p<PROGRAM ID>-e<ENVIRONMENT ID>-aem-<author|publish>-<POD NAME>`
 + 예: `cm-p12345-e56789-aem-author-abcdefabde-98765`
+
+## 사용자 정의 로그 파일
+
+AEM은 사용자 정의 로그 파일을 지원하지 않지만 사용자 정의 로깅을 지원합니다.
+
+AEM에서 Cloud Service( [Cloud Manager](#cloud-manager) 또는 [Adobe I/O CLI를 통해)로 Java 로그를 사용할 수 있도록 하려면 사용자 정의 로그 문을](#aio)`error.log`작성해야 합니다. 사용자 지정 명명된 로그와 같은 로그 `example.log`는 AEM에서 Cloud Service으로 액세스할 수 없습니다.
 
 ## AEM 작성자 및 게시 서비스 로그
 
@@ -54,7 +60,7 @@ AEM 게시 디스패처만이 Apache 웹 서버 및 디스패처 로그를 제�
    + 단계: `WARN`
    + 프로덕션: `ERROR`
 
-## Cloud Manager
+## Cloud Manager{#cloud-manager}
 
 Adobe Cloud Manager를 사용하면 환경의 로그 다운로드 작업을 통해 일별로 로그를 다운로드할 수 있습니다.
 
@@ -62,7 +68,7 @@ Adobe Cloud Manager를 사용하면 환경의 로그 다운로드 작업을 통�
 
 이러한 로그는 모든 로그 분석 도구를 통해 다운로드 및 검사할 수 있습니다.
 
-## Adobe I/O CLI with Cloud Manager plugin
+## Adobe I/O CLI with Cloud Manager plugin{#aio}
 
 Adobe Cloud Manager는 Adobe I/O CLI용 [Cloud Manager 플러그인과 함께 Adobe I/O CLI를 통해](https://github.com/adobe/aio-cli) AEM을 Cloud Service 로그으로 액세스할 수 있도록 지원합니다 [](https://github.com/adobe/aio-cli-plugin-cloudmanager).
 
