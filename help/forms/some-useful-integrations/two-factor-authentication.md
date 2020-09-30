@@ -9,10 +9,10 @@ activity: use
 version: 6.4,6.5
 kt: 6317
 translation-type: tm+mt
-source-git-commit: 9f8c858197e44de020ab195373f30e3d38dfd2cc
+source-git-commit: 4c08b09f59be0eb6644aaec729807b92bc339e82
 workflow-type: tm+mt
-source-wordcount: '603'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -67,7 +67,9 @@ API 키와 함께 샘플 에셋을 사용하려면 다음 단계를 따르십시
 * 샘플 적응형 양식을 여기에서 [다운로드할 수 있습니다](assets/sms-2fa-verification-af.zip). 이 샘플 양식은 이 문서의 일부로 제공되는 양식 데이터 모델의 서비스 호출을 사용합니다.
 * 양식을 [Forms 및 문서 UI에서 AEM으로 가져오기](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * 편집 모드에서 양식을 엽니다. 다음 필드에 대한 규칙 편집기를 엽니다.
-   ![sms-send](assets/check-sms.PNG)
+
+![sms-send](assets/check-sms.PNG)
+
 * 필드와 관련된 규칙을 편집합니다. 적절한 API 키 제공
 * 양식 저장
 * [양식](http://localhost:4502/content/dam/formsanddocuments/sms-2fa-verification/jcr:content?wcmmode=disabled) 미리 보기 및 기능 테스트
