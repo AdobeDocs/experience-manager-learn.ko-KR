@@ -6,10 +6,10 @@ user-guide-description: Collection of AEM Forms resources for beginners and expe
 breadcrumb-title: AEM Forms Tutorials
 index: y
 translation-type: tm+mt
-source-git-commit: 449202af47b6bbcd9f860d5c5391d1f7096d489e
+source-git-commit: 4c08b09f59be0eb6644aaec729807b92bc339e82
 workflow-type: tm+mt
-source-wordcount: '836'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -119,6 +119,7 @@ ht-degree: 3%
    + [JSON 변수](variables-aem-workflow/part2.md)
    + [문서 변수](variables-aem-workflow/part3.md)
    + [ArrayList 변수](variables-aem-workflow/part4.md)
+   + [양식 데이터 모델 변수](variables-aem-workflow/form-data-model.md)
    + [AEM 워크플로우의 규칙 편집기](variables-aem-workflow/part5.md)
 + MySQL DB에서 양식 데이터 저장 및 검색{#storing-and-retrieving-form-data}
    + [소개](storing-retrieving-form-data/introduction.md)
