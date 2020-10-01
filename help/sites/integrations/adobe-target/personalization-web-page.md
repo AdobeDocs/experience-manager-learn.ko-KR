@@ -1,0 +1,77 @@
+---
+title: 전체 웹 페이지 경험의 개인화
+description: AEM에서 호스팅되는 사이트 페이지를 Adobe Target을 사용하여 새 페이지로 리디렉션하는 활동을 만드는 방법을 알아봅니다.
+feature: targeting
+topics: integrations, authoring, personalization, activity, offers
+audience: all
+doc-type: feature video
+activity: use
+version: cloud-service
+kt: 6353
+thumbnail: 6353-personalization-web-page.jpg
+translation-type: tm+mt
+source-git-commit: 25ca90f641aaeb93fc9319692f3b099d6b528dd1
+workflow-type: tm+mt
+source-wordcount: '430'
+ht-degree: 0%
+
+---
+
+
+# 전체 웹 페이지 경험의 개인화 {#personalization-fpe}
+
+AEM에서 호스팅되는 사이트 페이지를 Adobe Target을 사용하여 새 페이지로 리디렉션하는 활동을 만드는 방법을 알아봅니다.
+
+## 시나리오 개요
+
+WKND 사이트는 홈 페이지를 다시 설계했으며 현재 홈 페이지 방문자를 새 홈 페이지로 리디렉션하려고 합니다. 동시에 재디자인된 홈 페이지를 통해 사용자 참여도와 매출을 향상시킬 수 있는 방법을 파악할 수 있습니다. 마케터는 방문자를 새 홈 페이지로 리디렉션하는 활동을 만드는 작업을 지정받았습니다. WKND 사이트 홈 페이지에서 Adobe Target을 사용하여 활동을 만드는 방법을 알아보겠습니다.
+
+## VEC(Visual Experience Composer)를 사용하여 A/B 테스트를 만드는 절차
+
+1. Adobe Target에 로그인하고 활동 탭으로 이동합니다.
+2. 활동 **만들기** 단추를 클릭한 다음 **A/B 테스트** 활동을선택합니다
+
+   ![A/B 활동](assets/ab-target-activity.png)
+
+3. Visual Experience **Composer** 옵션을 선택하고 활동 URL을 제공한 다음 **다음을 클릭합니다**
+
+   ![활동 URL](assets/ab-test-url.png)
+
+4. Visual Experience Composer는 새 활동을 만든 후 왼쪽의 두 탭을 표시합니다. *경험 A* 및 *경험 B*. 목록에서 경험을 선택합니다. 경험 **추가 단추를 사용하여 목록에 새 경험을 추가할 수** 있습니다.
+
+   ![경험 옵션](assets/experience-options.png)
+
+5. 경험 A에 사용할 수 있는 옵션을 본 다음 [URL로 **리디렉션** ] 옵션을 선택하고 새 WKND 사이트 홈 페이지에 대한 URL을 제공합니다.
+
+   ![리디렉션 URL](assets/redirect-url.png)
+
+6. 경험 *A* 를 *새 WKND 홈 페이지로* 변경하고 *경험 B를* WKND 홈 페이지로 *이름 변경*
+
+   ![모험](assets/new-experiences.png)
+
+7. 다음 **을** 클릭하여 타깃팅으로 이동하고 두 경험 간에 50-50의 수동 트래픽 할당을 유지합니다.
+
+   ![타깃팅](assets/targeting.png)
+
+8. 목표 및 설정에 대해 보고 소스를 Adobe Target으로 선택하고 페이지 보기 작업으로 전환으로 목표 지표를 선택합니다.
+
+   ![목표](assets/goals.png)
+
+9. 활동 이름을 입력하고 저장을 클릭합니다.
+10. 저장된 활동을 활성화하여 변경 사항을 라이브로 푸시합니다.
+
+   ![목표](assets/activate.png)
+
+11. 새 탭에서 사이트 페이지(3단계의 활동 URL)를 열고 A/B 테스트 활동에서 경험(WKND 홈 페이지 또는 새 WKND 홈 페이지) 중 하나를 볼 수 있어야 합니다. `us/en.html` 리디렉션 대상 `us/home.html`.
+
+   ![목표](assets/redirect-test.png)
+
+## 요약
+
+마케터는 AEM에 호스팅된 사이트 페이지를 Adobe Target을 사용하여 새 페이지로 리디렉션하는 활동을 만들 수 있었습니다.
+
+## 지원 링크
+
+* [Adobe Experience Cloud 디버거 - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
+* [Adobe Experience Cloud 디버거 - Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
+
