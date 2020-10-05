@@ -10,9 +10,9 @@ version: cloud-service
 kt: 6353
 thumbnail: 6353-personalization-web-page.jpg
 translation-type: tm+mt
-source-git-commit: 25ca90f641aaeb93fc9319692f3b099d6b528dd1
+source-git-commit: 892cb074814eabd347ba7aef883721df0ee4d431
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -29,40 +29,40 @@ WKND 사이트는 홈 페이지를 다시 설계했으며 현재 홈 페이지 �
 ## VEC(Visual Experience Composer)를 사용하여 A/B 테스트를 만드는 절차
 
 1. Adobe Target에 로그인하고 활동 탭으로 이동합니다.
-2. 활동 **만들기** 단추를 클릭한 다음 **A/B 테스트** 활동을선택합니다
+1. 활동 **만들기** 단추를 클릭한 다음 **A/B 테스트** 활동을선택합니다
 
    ![A/B 활동](assets/ab-target-activity.png)
 
-3. Visual Experience **Composer** 옵션을 선택하고 활동 URL을 제공한 다음 **다음을 클릭합니다**
+1. Visual Experience **Composer** 옵션을 선택하고 활동 URL을 제공한 다음 **다음을 클릭합니다**
 
    ![활동 URL](assets/ab-test-url.png)
 
-4. Visual Experience Composer는 새 활동을 만든 후 왼쪽의 두 탭을 표시합니다. *경험 A* 및 *경험 B*. 목록에서 경험을 선택합니다. 경험 **추가 단추를 사용하여 목록에 새 경험을 추가할 수** 있습니다.
+1. Visual Experience Composer는 새 활동을 만든 후 왼쪽의 두 탭을 표시합니다. *경험 A* 및 *경험 B*. 목록에서 경험을 선택합니다. 경험 **추가 단추를 사용하여 목록에 새 경험을 추가할 수** 있습니다.
 
    ![경험 옵션](assets/experience-options.png)
 
-5. 경험 A에 사용할 수 있는 옵션을 본 다음 [URL로 **리디렉션** ] 옵션을 선택하고 새 WKND 사이트 홈 페이지에 대한 URL을 제공합니다.
+1. 경험 A에 사용할 수 있는 옵션을 본 다음 [URL로 **리디렉션** ] 옵션을 선택하고 새 WKND 사이트 홈 페이지에 대한 URL을 제공합니다.
 
    ![리디렉션 URL](assets/redirect-url.png)
 
-6. 경험 *A* 를 *새 WKND 홈 페이지로* 변경하고 *경험 B를* WKND 홈 페이지로 *이름 변경*
+1. 경험 *A* 를 *새 WKND 홈 페이지로* 변경하고 *경험 B를* WKND 홈 페이지로 *이름 변경*
 
    ![모험](assets/new-experiences.png)
 
-7. 다음 **을** 클릭하여 타깃팅으로 이동하고 두 경험 간에 50-50의 수동 트래픽 할당을 유지합니다.
+1. 다음 **을** 클릭하여 타깃팅으로 이동하고 두 경험 간에 50-50의 수동 트래픽 할당을 유지합니다.
 
    ![타깃팅](assets/targeting.png)
 
-8. 목표 및 설정에 대해 보고 소스를 Adobe Target으로 선택하고 페이지 보기 작업으로 전환으로 목표 지표를 선택합니다.
+1. 목표 및 설정에 대해 보고 소스를 Adobe Target으로 선택하고 페이지 보기 작업으로 전환으로 목표 지표를 선택합니다.
 
    ![목표](assets/goals.png)
 
-9. 활동 이름을 입력하고 저장을 클릭합니다.
-10. 저장된 활동을 활성화하여 변경 사항을 라이브로 푸시합니다.
+1. 활동 이름을 입력하고 저장을 클릭합니다.
+1. 저장된 활동을 활성화하여 변경 사항을 라이브로 푸시합니다.
 
    ![목표](assets/activate.png)
 
-11. 새 탭에서 사이트 페이지(3단계의 활동 URL)를 열고 A/B 테스트 활동에서 경험(WKND 홈 페이지 또는 새 WKND 홈 페이지) 중 하나를 볼 수 있어야 합니다. `us/en.html` 리디렉션 대상 `us/home.html`.
+1. 새 탭에서 사이트 페이지(3단계의 활동 URL)를 열고 A/B 테스트 활동에서 경험(WKND 홈 페이지 또는 새 WKND 홈 페이지) 중 하나를 볼 수 있어야 합니다. `us/en.html` 리디렉션 대상 `us/home.html`.
 
    ![목표](assets/redirect-test.png)
 
