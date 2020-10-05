@@ -9,9 +9,9 @@ doc-type: tutorial
 activity: use
 version: 6.3, 6.4, 6.5
 translation-type: tm+mt
-source-git-commit: e19e177589df7ce6a56c0be3f9d590cbca2f8ce7
+source-git-commit: 892cb074814eabd347ba7aef883721df0ee4d431
 workflow-type: tm+mt
-source-wordcount: '3181'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -104,7 +104,7 @@ $ npm --version
    >
    >이 자습서는 프로젝트의 **1.2.1-SNAPSHOT** 버전이 있는 **마스터** 분기에 대해작동합니다.
 
-2. 다음 구조가 표시됩니다.
+1. 다음 구조가 표시됩니다.
 
    ![프로젝트 폴더 구조](assets/spa-editor-helloworld-tutorial-use/folder-structure.png)
 
@@ -117,7 +117,7 @@ $ npm --version
    * `react-app`:We.Retail Journal 반응형 응용 프로그램. 이는 Maven 모듈과 웹 팩 프로젝트입니다.
    * `angular-app`:We.Retail 분개 각도 응용 프로그램. 이는 [!DNL Maven] 모듈과 웹 팩 프로젝트입니다.
 
-3. 새 터미널 창을 열고 다음 명령을 실행하여 http://localhost:4502에서 실행되는 로컬 AEM 인스턴스에 전체 앱을 빌드하고 배포합니다 [](http://localhost:4502).
+1. 새 터미널 창을 열고 다음 명령을 실행하여 http://localhost:4502에서 실행되는 로컬 AEM 인스턴스에 전체 앱을 빌드하고 배포합니다 [](http://localhost:4502).
 
    ```shell
    $ cd <src>/aem-sample-we-retail-journal
@@ -132,22 +132,22 @@ $ npm --version
    >
    > 빌드 중에 오류가 발생하는 경우 Maven settings.xml 파일에 Adobe의 Maven 아티팩트 저장소가 [포함되어 있는지 확인합니다](https://helpx.adobe.com/experience-manager/kb/SetUpTheAdobeMavenRepository.html).
 
-4. 다음으로 이동:
+1. 다음으로 이동:
 
    * [http://localhost:4502/editor.html/content/we-retail-journal/react/en/home.html](http://localhost:4502/editor.html/content/we-retail-journal/react/en/home.html)
    * [http://localhost:4502/editor.html/content/we-retail-journal/angular/en/home.html](http://localhost:4502/editor.html/content/we-retail-journal/angular/en/home.html)
 
    We.Retail 저널 앱이 AEM Sites 편집기 내에 표시되어야 합니다.
 
-5. 편집  모드에서 편집할 구성 요소를 선택하고 컨텐츠를 업데이트합니다.
+1. 편집  모드에서 편집할 구성 요소를 선택하고 컨텐츠를 업데이트합니다.
 
    ![구성 요소 편집](assets/spa-editor-helloworld-tutorial-use/editcontent.png)
 
-6. 페이지 [!UICONTROL 속성] 아이콘을 선택하여 [!UICONTROL 페이지 속성을 엽니다]. 템플릿 [!UICONTROL 편집을] 선택하여 페이지의 템플릿을 엽니다.
+1. 페이지 [!UICONTROL 속성] 아이콘을 선택하여 [!UICONTROL 페이지 속성을 엽니다]. 템플릿 [!UICONTROL 편집을] 선택하여 페이지의 템플릿을 엽니다.
 
    ![페이지 속성 메뉴](assets/spa-editor-helloworld-tutorial-use/page-properties.png)
 
-7. 최신 버전의 SPA 편집기에서 편집 가능한 템플릿 [을 기존 사이트 구현과](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/page-templates-editable.html) 같은 방식으로 사용할 수 있습니다. 사용자 지정 구성 요소와 함께 나중에 다시 방문됩니다.
+1. 최신 버전의 SPA 편집기에서 편집 가능한 템플릿 [을 기존 사이트 구현과](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/page-templates-editable.html) 같은 방식으로 사용할 수 있습니다. 사용자 지정 구성 요소와 함께 나중에 다시 방문됩니다.
 
    >[!NOTE]
    >
@@ -160,8 +160,8 @@ $ npm --version
 SPA 개발 반복은 AEM과 독립적으로 이루어집니다. SPA가 AEM에 배치될 준비가 되면 다음과 같은 고급 단계가 수행됩니다(위 그림 참조).
 
 1. AEM 프로젝트 빌드가 호출되어 SPA 프로젝트 빌드가 트리거됩니다. We.Retail Journal은 the [**frontend-maven-plugin을 사용합니다**](https://github.com/eirslett/frontend-maven-plugin).
-2. SPA 프로젝트의 [**aem-clientlib-generator**](https://www.npmjs.com/package/aem-clientlib-generator) 는 AEM 프로젝트에 컴파일된 SPA를 AEM 클라이언트 라이브러리로 포함합니다.
-3. AEM 프로젝트는 컴파일된 SPA와 기타 지원 AEM 코드를 포함한 AEM 패키지를 생성합니다.
+1. SPA 프로젝트의 [**aem-clientlib-generator**](https://www.npmjs.com/package/aem-clientlib-generator) 는 AEM 프로젝트에 컴파일된 SPA를 AEM 클라이언트 라이브러리로 포함합니다.
+1. AEM 프로젝트는 컴파일된 SPA와 기타 지원 AEM 코드를 포함한 AEM 패키지를 생성합니다.
 
 ## AEM 구성 요소 만들기 {#aem-component}
 
@@ -197,8 +197,8 @@ We. [!DNL Eclipse]Retail Journal [!DNL IDE]Maven 프로젝트를 사용하거나
        </plugin>
    ```
 
-2. **we-retail-journal-content** (`<src>/aem-sample-we-retail-journal/ui.apps`) 모듈에서 cq:ComponentBelow `ui.apps/jcr_root/apps/we-retail-journal/components` 형식 **의 helworld라는 이름의 새 노드를** ****&#x200B;만듭니다.
-3. 아래 XML( **Help World** )로 표시된 도움말 월드 구성 요소에 다음 속성을`/helloworld/.content.xml`추가합니다.
+1. **we-retail-journal-content** (`<src>/aem-sample-we-retail-journal/ui.apps`) 모듈에서 cq:ComponentBelow `ui.apps/jcr_root/apps/we-retail-journal/components` 형식 **의 helworld라는 이름의 새 노드를** ****&#x200B;만듭니다.
+1. 아래 XML( **Help World** )로 표시된 도움말 월드 구성 요소에 다음 속성을`/helloworld/.content.xml`추가합니다.
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -217,8 +217,8 @@ We. [!DNL Eclipse]Retail Journal [!DNL IDE]Maven 프로젝트를 사용하거나
    >
    > AEM 6.5 및 AEM 6.4 + **서비스 팩 5만** 편집 가능한 템플릿을 지원합니다.
 
-4. 다음 대화 상자를 만들어 **Hello World 구성 요소에 대해 사용자 지정 메시지를 구성할 수** 있습니다. 아래 `/apps/we-retail-journal/components/helloworld` 에 **nt:unstructured의** cq:dialog **노드 이름을**&#x200B;추가합니다.
-5. cq:dialog **에** 이름이 지정된 속성에 텍스트를 유지하는 단일 텍스트 필드가 표시됩니다 **[!DNL message]**. 새로 만든 **cq:dialog** 아래에서 아래 XML로 표시된 다음 노드 및 속성을 추가합니다. (`helloworld/_cq_dialog/.content.xml`)
+1. 다음 대화 상자를 만들어 **Hello World 구성 요소에 대해 사용자 지정 메시지를 구성할 수** 있습니다. 아래 `/apps/we-retail-journal/components/helloworld` 에 **nt:unstructured의** cq:dialog **노드 이름을**&#x200B;추가합니다.
+1. cq:dialog **에** 이름이 지정된 속성에 텍스트를 유지하는 단일 텍스트 필드가 표시됩니다 **[!DNL message]**. 새로 만든 **cq:dialog** 아래에서 아래 XML로 표시된 다음 노드 및 속성을 추가합니다. (`helloworld/_cq_dialog/.content.xml`)
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -273,7 +273,7 @@ We. [!DNL Eclipse]Retail Journal [!DNL IDE]Maven 프로젝트를 사용하거나
 
    위의 XML 노드 정의는 사용자가 &quot;메시지&quot;를 입력할 수 있는 단일 텍스트 필드가 포함된 대화 상자를 만듭니다. 노드 `name="./message"` 내의 속성을 `<message />` 확인합니다. AEM 내의 JCR에 저장되는 속성의 이름입니다.
 
-6. 다음으로 빈 정책 대화 상자가 만들어집니다(`cq:design_dialog`). 템플릿 편집기에서 구성 요소를 보려면 정책 대화 상자가 필요합니다. 이 간단한 사용 사례의 경우 빈 대화 상자가 됩니다.
+1. 다음으로 빈 정책 대화 상자가 만들어집니다(`cq:design_dialog`). 템플릿 편집기에서 구성 요소를 보려면 정책 대화 상자가 필요합니다. 이 간단한 사용 사례의 경우 빈 대화 상자가 됩니다.
 
    아래의 노드 이름 `/apps/we-retail-journal/components/helloworld` 을 `cq:design_dialog` `nt:unstructured`추가합니다.
 
@@ -285,7 +285,7 @@ We. [!DNL Eclipse]Retail Journal [!DNL IDE]Maven 프로젝트를 사용하거나
    jcr:primaryType="nt:unstructured" />
    ```
 
-7. 명령줄에서 AEM에 코드 베이스를 배포합니다.
+1. 명령줄에서 AEM에 코드 베이스를 배포합니다.
 
    ```shell
    $ cd <src>/aem-sample-we-retail-journal/content
@@ -309,7 +309,7 @@ We. [!DNL Eclipse]Retail Journal [!DNL IDE]Maven 프로젝트를 사용하거나
 >개발자는 가능하면 [AEM 코어 구성 요소를 사용하는 것이](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html) 좋습니다. 핵심 구성 요소는 개발자가 프런트 엔드 프레젠테이션에 더 집중할 수 있도록 &quot;SPA-ready&quot; JSON 출력 [!DNL Sling Models] 을 제공합니다.
 
 1. 선택한 편집기의 **we-retail-journal-commons** 프로젝트()를 엽니다 `<src>/aem-sample-we-retail-journal/bundles/commons`.
-2. 패키지에서 `com.adobe.cq.sample.spa.commons.impl.models`:
+1. 패키지에서 `com.adobe.cq.sample.spa.commons.impl.models`:
    * 이름이 지정된 새 클래스를 만듭니다 `HelloWorld`.
    * 구현 인터페이스 추가 `com.adobe.cq.export.json.ComponentExporter.`
 
@@ -331,7 +331,7 @@ We. [!DNL Eclipse]Retail Journal [!DNL IDE]Maven 프로젝트를 사용하거나
     }
    ```
 
-3. 구성 요소의 리소스 유형 `RESOURCE_TYPE` 을 식별하기 위해 이름이 [!DNL HelloWorld] 지정된 정적 변수를 추가합니다.
+1. 구성 요소의 리소스 유형 `RESOURCE_TYPE` 을 식별하기 위해 이름이 [!DNL HelloWorld] 지정된 정적 변수를 추가합니다.
 
    ```java
     ...
@@ -343,7 +343,7 @@ We. [!DNL Eclipse]Retail Journal [!DNL IDE]Maven 프로젝트를 사용하거나
     }
    ```
 
-4. 및 에 대한 OSGi 주석 `@Model` 을 추가합니다 `@Exporter`. 주석을 달면 `@Model` 해당 클래스가 하나의 그룹으로 등록됩니다 [!DNL Sling Model]. 이 `@Exporter` 주석에는 프레임워크를 사용하여 메서드를 직렬화된 JSON으로 [!DNL Jackson Exporter] 표시합니다.
+1. 및 에 대한 OSGi 주석 `@Model` 을 추가합니다 `@Exporter`. 주석을 달면 `@Model` 해당 클래스가 하나의 그룹으로 등록됩니다 [!DNL Sling Model]. 이 `@Exporter` 주석에는 프레임워크를 사용하여 메서드를 직렬화된 JSON으로 [!DNL Jackson Exporter] 표시합니다.
 
    ```java
    import org.apache.sling.api.SlingHttpServletRequest;
@@ -366,7 +366,7 @@ We. [!DNL Eclipse]Retail Journal [!DNL IDE]Maven 프로젝트를 사용하거나
    ...
    ```
 
-5. JCR 속성 `getDisplayMessage()` 을 반환하는 메서드를 구현합니다 `message`. 의 주석 [!DNL Sling Model] 을 사용하여 구성 요소 아래에 `@ValueMapValue` `message` 저장된 속성을 쉽게 검색할 수 있습니다. 주석을 `@Optional` 중요한 것은 구성 요소를 페이지에 처음 추가할 때 채워지지 `message` 않기 때문입니다.
+1. JCR 속성 `getDisplayMessage()` 을 반환하는 메서드를 구현합니다 `message`. 의 주석 [!DNL Sling Model] 을 사용하여 구성 요소 아래에 `@ValueMapValue` `message` 저장된 속성을 쉽게 검색할 수 있습니다. 주석을 `@Optional` 중요한 것은 구성 요소를 페이지에 처음 추가할 때 채워지지 `message` 않기 때문입니다.
 
    비즈니스 논리의 일부로서 메시지에 &quot;**Hello**&quot;라는 문자열이 추가됩니다.
 
@@ -401,7 +401,7 @@ We. [!DNL Eclipse]Retail Journal [!DNL IDE]Maven 프로젝트를 사용하거나
 
    방법 `getExportedType` 도 중요하다. 구성 요소의 값은 JSON 데이터를 프런트 엔드 구성 요소에 &quot;매핑&quot;하는 데 `resourceType` 사용됩니다(각도 / 반응). 다음 코너에서 살펴보도록 하겠습니다
 
-6. 구성 요소 `getExportedType()` 의 리소스 유형을 반환하는 메서드를 `HelloWorld` 구현합니다.
+1. 구성 요소 `getExportedType()` 의 리소스 유형을 반환하는 메서드를 `HelloWorld` 구현합니다.
 
    ```java
     @Override
@@ -412,7 +412,7 @@ We. [!DNL Eclipse]Retail Journal [!DNL IDE]Maven 프로젝트를 사용하거나
 
    HelloWorld.java [**에 대한 전체** 코드는 여기에서 찾을 수 있습니다.](https://github.com/Adobe-Marketing-Cloud/aem-guides/blob/master/spa-helloworld-guide/src/bundles/commons/HelloWorld.java)
 
-7. Apache Maven을 사용하여 코드를 AEM에 배포:
+1. Apache Maven을 사용하여 코드를 AEM에 배포:
 
    ```shell
    $ cd <src>/sample-we-retail-spa-content/bundles/commons
@@ -442,15 +442,15 @@ We. [!DNL Eclipse]Retail Journal [!DNL IDE]Maven 프로젝트를 사용하거나
 
    ![반응형 구성 요소 파일 구조](assets/spa-editor-helloworld-tutorial-use/react-components.png)
 
-2. 이름이 지정된 구성 요소 폴더 아래에 새 파일을 추가합니다 `HelloWorld.js`.
-3. 열기 `HelloWorld.js`. 가져오기 문을 추가하여 React 구성 요소 라이브러리를 가져옵니다. 두 번째 가져오기 문을 추가하여 Adobe에서 제공하는 `MapTo` 도우미를 가져옵니다. 도우미는 AEM 구성 요소의 JSON에 반응형 구성 요소의 매핑을 `MapTo` 제공합니다.
+1. 이름이 지정된 구성 요소 폴더 아래에 새 파일을 추가합니다 `HelloWorld.js`.
+1. 열기 `HelloWorld.js`. 가져오기 문을 추가하여 React 구성 요소 라이브러리를 가져옵니다. 두 번째 가져오기 문을 추가하여 Adobe에서 제공하는 `MapTo` 도우미를 가져옵니다. 도우미는 AEM 구성 요소의 JSON에 반응형 구성 요소의 매핑을 `MapTo` 제공합니다.
 
    ```js
    import React, {Component} from 'react';
    import {MapTo} from '@adobe/cq-react-editable-components';
    ```
 
-4. 가져오기 아래에서 React 인터페이스를 확장하는 새 클래스 `HelloWorld` 를 만듭니다 `Component` . 필요한 `render()` 메서드를 `HelloWorld` 클래스에 추가합니다.
+1. 가져오기 아래에서 React 인터페이스를 확장하는 새 클래스 `HelloWorld` 를 만듭니다 `Component` . 필요한 `render()` 메서드를 `HelloWorld` 클래스에 추가합니다.
 
    ```js
    import React, {Component} from 'react';
@@ -464,7 +464,7 @@ We. [!DNL Eclipse]Retail Journal [!DNL IDE]Maven 프로젝트를 사용하거나
    }
    ```
 
-5. 도우미에는 `MapTo` 반응 구성 요소의 prop `cqModel` 의 일부로 명명된 개체가 자동으로 포함됩니다. 여기에는 `cqModel` 에 의해 노출된 모든 속성이 포함됩니다 [!DNL Sling Model].
+1. 도우미에는 `MapTo` 반응 구성 요소의 prop `cqModel` 의 일부로 명명된 개체가 자동으로 포함됩니다. 여기에는 `cqModel` 에 의해 노출된 모든 속성이 포함됩니다 [!DNL Sling Model].
 
    이전에 [!DNL Sling Model] 만든 항목에 메서드가 포함되어 있음을 기억하십시오 `getDisplayMessage()`. `getDisplayMessage()` 는 출력 시 이름이 지정된 JSON 키로 `displayMessage` 변환됩니다.
 
@@ -488,7 +488,7 @@ We. [!DNL Eclipse]Retail Journal [!DNL IDE]Maven 프로젝트를 사용하거나
    }
    ```
 
-6. 편집 구성 방법을 구현합니다. 이 메서드는 `MapTo` 도우미를 통해 전달되며, 구성 요소가 비어 있는 경우 자리 표시자를 표시하는 정보를 AEM 편집기에 제공합니다. 이 문제는 구성 요소가 SPA에 추가되었지만 아직 작성되지 않은 경우에 발생합니다. 클래스 아래에 다음을 `HelloWorld` 추가합니다.
+1. 편집 구성 방법을 구현합니다. 이 메서드는 `MapTo` 도우미를 통해 전달되며, 구성 요소가 비어 있는 경우 자리 표시자를 표시하는 정보를 AEM 편집기에 제공합니다. 이 문제는 구성 요소가 SPA에 추가되었지만 아직 작성되지 않은 경우에 발생합니다. 클래스 아래에 다음을 `HelloWorld` 추가합니다.
 
    ```js
    ...
@@ -509,7 +509,7 @@ We. [!DNL Eclipse]Retail Journal [!DNL IDE]Maven 프로젝트를 사용하거나
    ...
    ```
 
-7. 파일 끝에 있는 `MapTo` 도우미를 호출하고 `HelloWorld` 클래스와 클래스를 전달합니다 `HelloWorldEditConfig`. AEM 구성 요소의 리소스 유형을 기반으로 AEM 구성 요소에 반응형 구성 요소를 매핑합니다. `we-retail-journal/components/helloworld`.
+1. 파일 끝에 있는 `MapTo` 도우미를 호출하고 `HelloWorld` 클래스와 클래스를 전달합니다 `HelloWorldEditConfig`. AEM 구성 요소의 리소스 유형을 기반으로 AEM 구성 요소에 반응형 구성 요소를 매핑합니다. `we-retail-journal/components/helloworld`.
 
    ```js
    MapTo('we-retail-journal/components/helloworld')(HelloWorld, HelloWorldEditConfig);
@@ -517,7 +517,7 @@ We. [!DNL Eclipse]Retail Journal [!DNL IDE]Maven 프로젝트를 사용하거나
 
    HelloWorld.js에 대한 [**완성된** 코드는 여기에서 찾을 수 있습니다.](https://github.com/Adobe-Marketing-Cloud/aem-guides/blob/master/spa-helloworld-guide/src/react-app/components/HelloWorld.js)
 
-8. Open the file `ImportComponents.js`. 에 있습니다 `<src>/aem-sample-we-retail-journal/react-app/src/ImportComponents.js`.
+1. Open the file `ImportComponents.js`. 에 있습니다 `<src>/aem-sample-we-retail-journal/react-app/src/ImportComponents.js`.
 
    컴파일된 JavaScript 번들의 다른 구성 요소와 함께 `HelloWorld.js` 필요한 줄을 추가합니다.
 
@@ -529,7 +529,7 @@ We. [!DNL Eclipse]Retail Journal [!DNL IDE]Maven 프로젝트를 사용하거나
    ...
    ```
 
-9. 폴더에서 `components` 파일 채우기 `HelloWorld.css` 의 동위 `HelloWorld.js.` 로 명명된 새 파일을 만들어 구성 요소에 대한 몇 가지 기본 스타일 `HelloWorld` 을 만듭니다.
+1. 폴더에서 `components` 파일 채우기 `HelloWorld.css` 의 동위 `HelloWorld.js.` 로 명명된 새 파일을 만들어 구성 요소에 대한 몇 가지 기본 스타일 `HelloWorld` 을 만듭니다.
 
    ```css
    /* HelloWorld.css to style HelloWorld component */
@@ -542,7 +542,7 @@ We. [!DNL Eclipse]Retail Journal [!DNL IDE]Maven 프로젝트를 사용하거나
    }
    ```
 
-10. 필요한 가져오기 문 `HelloWorld.js` 에서 다시 열고 업데이트합니다. `HelloWorld.css`
+1. 필요한 가져오기 문 `HelloWorld.js` 에서 다시 열고 업데이트합니다. `HelloWorld.css`
 
    ```js
    import React, {Component} from 'react';
@@ -553,14 +553,14 @@ We. [!DNL Eclipse]Retail Journal [!DNL IDE]Maven 프로젝트를 사용하거나
    ...
    ```
 
-11. Apache Maven을 사용하여 코드를 AEM에 배포:
+1. Apache Maven을 사용하여 코드를 AEM에 배포:
 
    ```shell
    $ cd <src>/sample-we-retail-spa-content
    $ mvn -PautoInstallSinglePackage clean install
    ```
 
-12. CRXDE- [Lite에서](http://localhost:4502/crx/de/index.jsp#/apps/we-retail-journal/react/clientlibs/we-retail-journal-react/js/app.js) 엽니다 `/apps/we-retail-journal/react/clientlibs/we-retail-journal-react/js/app.js`. app.js에서 HelloWorld를 빠르게 검색하여 Responsive 구성 요소가 컴파일된 앱에 포함되어 있는지 확인합니다.
+1. CRXDE- [Lite에서](http://localhost:4502/crx/de/index.jsp#/apps/we-retail-journal/react/clientlibs/we-retail-journal-react/js/app.js) 엽니다 `/apps/we-retail-journal/react/clientlibs/we-retail-journal-react/js/app.js`. app.js에서 HelloWorld를 빠르게 검색하여 Responsive 구성 요소가 컴파일된 앱에 포함되어 있는지 확인합니다.
 
    >[!NOTE]
    >
@@ -581,7 +581,7 @@ We. [!DNL Eclipse]Retail Journal [!DNL IDE]Maven 프로젝트를 사용하거나
 
    ![각 파일 구조](assets/spa-editor-helloworld-tutorial-use/angular-file-structure.png)
 
-2. 이름이 지정된 구성 요소 폴더 아래에 새 폴더를 추가합니다 `helloworld`. 폴더 아래에 `helloworld` 이름이 새로 추가되었습니다 `helloworld.component.css, helloworld.component.html, helloworld.component.ts`.
+1. 이름이 지정된 구성 요소 폴더 아래에 새 폴더를 추가합니다 `helloworld`. 폴더 아래에 `helloworld` 이름이 새로 추가되었습니다 `helloworld.component.css, helloworld.component.html, helloworld.component.ts`.
 
    ```plain
    /angular-app
@@ -594,7 +594,7 @@ We. [!DNL Eclipse]Retail Journal [!DNL IDE]Maven 프로젝트를 사용하거나
    +                    helloworld.component.ts
    ```
 
-3. 열기 `helloworld.component.ts`. 가져오기 문을 추가하여 각도 `Component` 및 `Input` 클래스를 가져옵니다. 및 를 가리키는 새 구성 요소 `styleUrls` 를 만들고, `templateUrl` and를 `helloworld.component.css` 지정합니다 `helloworld.component.html`. 마지막으로, 예상 입력 `HelloWorldComponent` 으로 클래스를 내보냅니다 `displayMessage`.
+1. 열기 `helloworld.component.ts`. 가져오기 문을 추가하여 각도 `Component` 및 `Input` 클래스를 가져옵니다. 및 를 가리키는 새 구성 요소 `styleUrls` 를 만들고, `templateUrl` and를 `helloworld.component.css` 지정합니다 `helloworld.component.html`. 마지막으로, 예상 입력 `HelloWorldComponent` 으로 클래스를 내보냅니다 `displayMessage`.
 
    ```js
    //helloworld.component.ts
@@ -617,7 +617,7 @@ We. [!DNL Eclipse]Retail Journal [!DNL IDE]Maven 프로젝트를 사용하거나
    >
    > 이전에 [!DNL Sling Model] 만든 내용을 다시 호출할 경우 getDisplayMessage() **라는 메서드가 있었습니다**. 이 메서드의 직렬화된 JSON은 **displayMessage**&#x200B;가 되며, 이는 현재 Angular 앱에서 읽고 있습니다.
 
-4. 속성 `helloworld.component.html` 을 인쇄하는 `h1` 태그를 포함하도록 열어서 `displayMessage` 다음을 수행합니다.
+1. 속성 `helloworld.component.html` 을 인쇄하는 `h1` 태그를 포함하도록 열어서 `displayMessage` 다음을 수행합니다.
 
    ```html
    <h1 *ngIf="displayMessage" class="cmp-helloworld_message">
@@ -625,7 +625,7 @@ We. [!DNL Eclipse]Retail Journal [!DNL IDE]Maven 프로젝트를 사용하거나
    </h1>
    ```
 
-5. 구성 요소 `helloworld.component.css` 에 대한 몇 가지 기본 스타일을 포함하도록 업데이트합니다.
+1. 구성 요소 `helloworld.component.css` 에 대한 몇 가지 기본 스타일을 포함하도록 업데이트합니다.
 
    ```css
    :host-context {
@@ -643,7 +643,7 @@ We. [!DNL Eclipse]Retail Journal [!DNL IDE]Maven 프로젝트를 사용하거나
    }
    ```
 
-6. 다음 테스트 `helloworld.component.spec.ts` 로 업데이트합니다.
+1. 다음 테스트 `helloworld.component.spec.ts` 로 업데이트합니다.
 
    ```js
    import { async, ComponentFixture, TestBed } from '@angular/core/testing';
@@ -673,7 +673,7 @@ We. [!DNL Eclipse]Retail Journal [!DNL IDE]Maven 프로젝트를 사용하거나
    });
    ```
 
-7. 다음 업데이트 `src/components/mapping.ts` 에 해당 항목이 `HelloWorldComponent`포함됩니다. 구성 요소를 구성하기 전에 AEM 편집기에서 자리 표시자를 표시하는 `HelloWorldEditConfig` 항목을 추가합니다. 마지막으로 한 줄을 추가하여 AEM 구성 요소를 도우미로 각도 구성 요소에 `MapTo` 매핑합니다.
+1. 다음 업데이트 `src/components/mapping.ts` 에 해당 항목이 `HelloWorldComponent`포함됩니다. 구성 요소를 구성하기 전에 AEM 편집기에서 자리 표시자를 표시하는 `HelloWorldEditConfig` 항목을 추가합니다. 마지막으로 한 줄을 추가하여 AEM 구성 요소를 도우미로 각도 구성 요소에 `MapTo` 매핑합니다.
 
    ```js
    // src/components/mapping.ts
@@ -698,7 +698,7 @@ We. [!DNL Eclipse]Retail Journal [!DNL IDE]Maven 프로젝트를 사용하거나
 
    mapping.ts에 대한 전체 [**코드는** 여기에서 찾을 수 있습니다.](https://github.com/Adobe-Marketing-Cloud/aem-guides/blob/master/spa-helloworld-guide/src/angular-app/mapping.ts)
 
-8. NgModule `src/app.module.ts` 을 업데이트하도록 **업데이트합니다**. AppModule **`HelloWorldComponent`** 에 속하는 **선언으로** 추가합니다 ****. 또한 JSON 모델 `HelloWorldComponent` 이 처리되는 동안 **컴파일되고 동적으로 앱에 포함되도록 응모 구성** 요소로 해당 구성 요소를 추가합니다.
+1. NgModule `src/app.module.ts` 을 업데이트하도록 **업데이트합니다**. AppModule **`HelloWorldComponent`** 에 속하는 **선언으로** 추가합니다 ****. 또한 JSON 모델 `HelloWorldComponent` 이 처리되는 동안 **컴파일되고 동적으로 앱에 포함되도록 응모 구성** 요소로 해당 구성 요소를 추가합니다.
 
    ```js
    import { HelloWorldComponent } from './components/helloworld/helloworld.component';
@@ -737,14 +737,14 @@ We. [!DNL Eclipse]Retail Journal [!DNL IDE]Maven 프로젝트를 사용하거나
 
    app.module.ts에 대한 [**완료된** 코드는 여기에서 찾을 수 있습니다.](https://github.com/Adobe-Marketing-Cloud/aem-guides/blob/master/spa-helloworld-guide/src/angular-app/app.module.ts)
 
-9. Maven을 사용하여 코드를 AEM에 배포합니다.
+1. Maven을 사용하여 코드를 AEM에 배포합니다.
 
    ```shell
    $ cd <src>/sample-we-retail-spa-content
    $ mvn -PautoInstallSinglePackage clean install
    ```
 
-10. CRXDE- [Lite에서](http://localhost:4502/crx/de/index.jsp#/apps/we-retail-journal/angular/clientlibs/we-retail-journal-angular/js/main.js) 엽니다 `/apps/we-retail-journal/angular/clientlibs/we-retail-journal-angular/js/main.js`. HelloWorld **에** 대한 빠른 검색 `main.js` 을 수행하여 Angular 구성 요소가 포함되어 있는지 확인합니다.
+1. CRXDE- [Lite에서](http://localhost:4502/crx/de/index.jsp#/apps/we-retail-journal/angular/clientlibs/we-retail-journal-angular/js/main.js) 엽니다 `/apps/we-retail-journal/angular/clientlibs/we-retail-journal-angular/js/main.js`. HelloWorld **에** 대한 빠른 검색 `main.js` 을 수행하여 Angular 구성 요소가 포함되어 있는지 확인합니다.
 
    >[!NOTE]
    >
@@ -757,7 +757,7 @@ We. [!DNL Eclipse]Retail Journal [!DNL IDE]Maven 프로젝트를 사용하거나
    * (각도) [http://localhost:4502/editor.html/conf/we-retail-journal/angular/settings/wcm/templates/we-retail-angular-weather-template/structure.html](http://localhost:4502/editor.html/conf/we-retail-journal/angular/settings/wcm/templates/we-retail-angular-weather-template/structure.html)
    * (반응) [http://localhost:4502/editor.html/conf/we-retail-journal/react/settings/wcm/templates/we-retail-react-weather-template/structure.html](http://localhost:4502/editor.html/conf/we-retail-journal/react/settings/wcm/templates/we-retail-react-weather-template/structure.html)
 
-2. 기본 [!UICONTROL 레이아웃 컨테이너를] 선택하고 정책 [!UICONTROL 아이콘을 선택하여] 정책을 엽니다.
+1. 기본 [!UICONTROL 레이아웃 컨테이너를] 선택하고 정책 [!UICONTROL 아이콘을 선택하여] 정책을 엽니다.
 
    ![레이아웃 정책 선택](assets/spa-editor-helloworld-tutorial-use/select-page-policy.png)
 
@@ -765,7 +765,7 @@ We. [!DNL Eclipse]Retail Journal [!DNL IDE]Maven 프로젝트를 사용하거나
 
    ![레이아웃 컨테이너 정책 구성](assets/spa-editor-helloworld-tutorial-use/layoutcontainer-update.png)
 
-3. 저장 후 레이아웃 컨테이너에는 구성 **[!DNL HelloWorld]** 요소를 허용된 구성 요소로 [!UICONTROL 표시해야 합니다].
+1. 저장 후 레이아웃 컨테이너에는 구성 **[!DNL HelloWorld]** 요소를 허용된 구성 요소로 [!UICONTROL 표시해야 합니다].
 
    ![허용된 구성 요소 업데이트됨](assets/spa-editor-helloworld-tutorial-use/allowed-components.png)
 
@@ -784,7 +784,7 @@ We. [!DNL Eclipse]Retail Journal [!DNL IDE]Maven 프로젝트를 사용하거나
    * [http://localhost:4502/editor.html/content/we-retail-journal/react/en/home.html](http://localhost:4502/editor.html/content/we-retail-journal/react/en/home.html)
    * [http://localhost:4502/editor.html/content/we-retail-journal/angular/en/home.html](http://localhost:4502/editor.html/content/we-retail-journal/angular/en/home.html)
 
-2. 구성 요소를 **[!DNL Hello World]** 찾아 구성 요소를 페이지에 드래그하여 **[!DNL Hello World]** 놓습니다.
+1. 구성 요소를 **[!DNL Hello World]** 찾아 구성 요소를 페이지에 드래그하여 **[!DNL Hello World]** 놓습니다.
 
    ![hello world drag + drop](assets/spa-editor-helloworld-tutorial-use/fig7.png)
 
@@ -792,7 +792,7 @@ We. [!DNL Eclipse]Retail Journal [!DNL IDE]Maven 프로젝트를 사용하거나
 
    ![인사말](assets/spa-editor-helloworld-tutorial-use/fig10.png)
 
-3. 구성 요소를 선택하고 대화 상자에 &quot;세계&quot; 또는 &quot;사용자 이름&quot;과 같은 메시지를 추가합니다. 변경 사항을 저장합니다.
+1. 구성 요소를 선택하고 대화 상자에 &quot;세계&quot; 또는 &quot;사용자 이름&quot;과 같은 메시지를 추가합니다. 변경 사항을 저장합니다.
 
    ![렌더링된 구성 요소](assets/spa-editor-helloworld-tutorial-use/fig11.png)
 
