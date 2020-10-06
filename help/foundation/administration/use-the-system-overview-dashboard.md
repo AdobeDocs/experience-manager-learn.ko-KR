@@ -9,7 +9,7 @@ audience: administrator, architect, developer, implementer
 doc-type: technical video
 contentOwner: dgordon
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: c9a11bcb01a5ec9f7390deab68e6d0e1dec273de
 workflow-type: tm+mt
 source-wordcount: '142'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Adobe Experience Manager(AEM) [!UICONTROL 시스템 개요] 는 단일 대시보
 
 1. 시스템 개요는 다음 위치에서 액세스할 수 있습니다. **AEM 시작** > **[!UICONTROL 도구]** > **[!UICONTROL 작업]** **[!UICONTROL >시스템 개요]**
 
-   에서 바로 **[!DNL <server-host>/libs/granite/operations/content/systemoverview.html]**
+   에서 바로 **`<server-host>/libs/granite/operations/content/systemoverview.html`**
 
 1. 시스템 개요 [!UICONTROL 의] 정보는 [!UICONTROL 다운로드] 단추를 클릭하여 내보낼 수 있습니다. 정보는 다음 종단점을 통해 [!DNL REST] 노출됩니다.
 1. 다음은 [!UICONTROL 시스템 개요에서 내보낸 JSON의 샘플 출력입니다].
