@@ -347,7 +347,7 @@ Resource resource = page.adaptTo(Resource.class);
 Resource resource = asset.adaptTo(Resource.class);
 ```
 
-### &#39; [!DNL Sling]s ModifiableValueMap&#39;을 사용하여 속성 쓰기
+### Slings ModifiableValueMap을 사용하여 속성 쓰기
 
 노드 [!DNL Sling]에 속성 [을](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/ModifiableValueMap.html) 쓰려면 &#39;s ModifiableValueMap&#39;을 사용하십시오. 이 작업은 즉시 노드에만 쓸 수 있습니다(상대 속성 경로는 지원되지 않음).
 
