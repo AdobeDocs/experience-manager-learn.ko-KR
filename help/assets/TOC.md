@@ -5,9 +5,9 @@ breadcrumb-title: AEM Assets Tutorials
 sub-product: 자산
 team: TM
 translation-type: tm+mt
-source-git-commit: 172a1369cb572b367c78e04c692db8e02e7287e7
+source-git-commit: 10784dce34443adfa1fc6dc324242b1c021d2a17
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '239'
 ht-degree: 25%
 
 ---
@@ -47,10 +47,11 @@ ht-degree: 25%
    + [검색 증폭](./search-and-discovery/search-boost.md)
 
 + 고급 기능{#advanced}
-   + [권한(CUG)](./advanced/closed-user-groups.md)
-   + [자산 보고서](./advanced/asset-reports.md)
-   + [자산 통찰력](./advanced/asset-insights-launch-tutorial.md)
    + [주석 PDF 출력](./advanced/customizing-annotations-pdf-output.md)
+   + [자산 통찰력](./advanced/asset-insights-launch-tutorial.md)
+   + [자산 보고서](./advanced/asset-reports.md)
+   + [권한(CUG)](./advanced/closed-user-groups.md)
+   + [워터마크](./advanced/watermarks.md)
 
 + 고급 메타데이터 관리{#metadata}
    + [계단식 메타데이터](metadata/cascade-metadata-feature-video-use.md)
