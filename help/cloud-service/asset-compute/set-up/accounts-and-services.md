@@ -10,7 +10,7 @@ doc-type: tutorial
 kt: 6264
 thumbnail: 40377.jpg
 translation-type: tm+mt
-source-git-commit: 9cf01dbf9461df4cc96d5bd0a96c0d4d900af089
+source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 1%
@@ -39,7 +39,7 @@ ht-degree: 1%
 
 ## 클라우드 서비스로서의 AEM{#aem-as-a-cloud-service}
 
-사용자 지정 자산 계산 응용 프로그램을 호출하도록 AEM Assets 처리 프로필을 구성하려면 Cloud Service 환경으로 AEM에 액세스해야 합니다.
+사용자 지정 자산 계산 작업자를 호출하도록 AEM Assets 처리 프로필을 구성하려면 Cloud Service 환경으로 AEM에 액세스해야 합니다.
 
 샌드박스 프로그램 또는 비샌드박스 개발 환경을 사용하는 것이 좋습니다.
 
@@ -47,7 +47,7 @@ ht-degree: 1%
 
 ## Adobe 프로젝트 Firefly{#adobe-project-firefly}
 
-Adobe [Project Firefly](https://www.adobe.io/apis/experienceplatform/project-firefly.html) 프레임워크는 사용자 정의 애플리케이션을 구축하고 Adobe 서버를 사용하지 않는 플랫폼 Adobe I/O Runtime에 배포하는 데 사용됩니다. AEM Asset Compute 애플리케이션은 처리 프로필을 통해 AEM Assets과 통합되고 자산 바이너리에 액세스하고 처리할 수 있는 기능을 제공하는 특별히 빌드된 Firefox 애플리케이션입니다.
+Adobe 프로젝트 [Firefly](https://www.adobe.io/apis/experienceplatform/project-firefly.html) 프레임워크는 Adobe 서버를 사용하지 않는 플랫폼 Adobe I/O Runtime에 사용자 정의 동작을 빌드하고 배포하는 데 사용됩니다. AEM Asset Compute 프로젝트는 처리 프로필을 통해 AEM Assets과 통합되고 에셋 바이너리에 액세스하고 처리할 수 있는 기능을 제공하는 특별히 빌드된 Firefox 프로젝트입니다.
 
 Project Firefox에 액세스하려면 미리 보기에 등록하십시오.
 
@@ -57,9 +57,9 @@ Project Firefox에 액세스하려면 미리 보기에 등록하십시오.
 
 ## 클라우드 스토리지
 
-Asset Compute 응용 프로그램의 로컬 개발에 클라우드 스토리지가 필요합니다.
+Asset Compute 프로젝트의 로컬 개발에 클라우드 스토리지가 필요합니다.
 
-AEM에서 Cloud Service으로 직접 사용하기 위해 자산 계산 응용 프로그램을 Adobe I/O Runtime에 배포하는 경우, AEM이 자산을 읽고 변환을 쓰는 클라우드 스토리지를 제공하기 때문에 이 클라우드 스토리지가 엄격하게 필요하지 않습니다.
+자산 계산 작업자가 AEM에서 Cloud Service으로 직접 사용하기 위해 Adobe I/O Runtime에 배포되는 경우, AEM이 자산을 읽고 변환을 쓰는 클라우드 스토리지를 제공하기 때문에 이 클라우드 스토리지가 엄격하게 필요하지 않습니다.
 
 ### Microsoft Azure Blob 저장소{#azure-blob-storage}
 
