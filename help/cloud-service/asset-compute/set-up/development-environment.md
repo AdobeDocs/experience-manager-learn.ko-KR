@@ -10,7 +10,7 @@ doc-type: tutorial
 kt: 6266
 thumbnail: KT-6266.jpg
 translation-type: tm+mt
-source-git-commit: 53e4235c55d890765e9f13ffeb37a2c805fb307b
+source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # 로컬 개발 환경 설정
 
-Adobe 에셋 컴퓨팅 애플리케이션은 AEM SDK에서 제공하는 로컬 AEM 런타임과 통합할 수 없으며 AEM Maven 프로젝트 원형을 기반으로 하는 AEM 애플리케이션에서 요구하는 툴 체인과 별도로 고유한 도구 체인을 사용하여 개발됩니다.
+Adobe 에셋 컴퓨팅 프로젝트는 AEM SDK에서 제공하는 로컬 AEM 런타임과 통합할 수 없으며 AEM Maven 프로젝트 원형을 기반으로 하는 AEM 애플리케이션에서 필요로 하는 것과 별도로 고유한 도구 체인을 사용하여 개발됩니다.
 
 자산 계산 마이크로서비스를 확장하려면 로컬 개발자 컴퓨터에 다음 도구를 설치해야 합니다.
 
@@ -46,7 +46,7 @@ Adobe 에셋 컴퓨팅 애플리케이션은 AEM SDK에서 제공하는 로컬 A
 
 ## Visual Studio 코드 설치{#vscode}
 
-[Microsoft Visual Studio 코드는](https://code.visualstudio.com/download) Asset Compute 응용 프로그램을 개발 및 디버깅하는 데 사용됩니다. 다른 [JavaScript 호환 IDE를](../../local-development-environment/development-tools.md#set-up-the-development-ide) 사용하여 응용 프로그램을 개발할 수 있지만 Visual Studio 코드만 통합하여 [자산 계산 응용](../test-debug/debug.md) 프로그램을 디버깅할 수 있습니다.
+[Microsoft Visual Studio 코드는](https://code.visualstudio.com/download) 자산 계산 작업자를 개발 및 디버깅하는 데 사용됩니다. 작업자 개발에 다른 [JavaScript 호환 IDE를](../../local-development-environment/development-tools.md#set-up-the-development-ide) 사용할 수는 있지만 Visual Studio 코드만 통합하여 [자산 계산](../test-debug/debug.md) 작업자를 디버깅할 수 있습니다.
 
 _Visual Studio 코드 1.48.x+가[필요합니다](#wskdebug)._
 
@@ -67,7 +67,7 @@ Windows 시스템 개발자는 위의 이미지에 Linux 컨테이너를 사용�
 
 ## Node.js(및 npm) 설치{#node-js}
 
-자산 계산 작업자는 [Node.js](https://nodejs.org/) 애플리케이션이므로 개발 및 빌드에 Node.js 10+(및 npm)가 필요합니다.
+자산 계산 작업자는 [Node.js](https://nodejs.org/)기반이므로 개발 및 빌드에 Node.js 10+(및 npm)가 필요합니다.
 
 + [기존 AEM 개발에서와 동일한 방식으로 Node.js(및 npm)](../../local-development-environment/development-tools.md#node-js) 를 설치합니다.
 
@@ -89,7 +89,7 @@ $ aio plugins:install @adobe/aio-cli-plugin-asset-compute
 
 ## wskdebug 설치{#wskdebug}
 
-Asset Compute 응용 프로그램의 [로컬 디버깅을 용이하게 하기 위해 Apache OpenWhisk 디버그](https://www.npmjs.com/package/@openwhisk/wskdebug) npm 모듈을 다운로드하여 설치합니다.
+Asset Compute 작업자의 로컬 디버깅을 용이하게 하기 위해 [Apache OpenWhisk 디버그](https://www.npmjs.com/package/@openwhisk/wskdebug) npm 모듈을 다운로드하여 설치합니다.
 
 _Visual Studio 코드 1.48.x+가[필요합니다](#wskdebug)._
 
@@ -99,7 +99,7 @@ $ npm install -g @openwhisk/wskdebug
 
 ## 설치{#ngrok}
 
-로컬 개발 시스템에 대한 [공개 액세스를 제공하는](https://www.npmjs.com/package/ngrok) ngroup npm 모듈을 다운로드하여 설치하면 Asset Compute 응용 프로그램의 로컬 디버깅을 쉽게 수행할 수 있습니다.
+로컬 개발 시스템에 대한 [공개 액세스를 제공하는](https://www.npmjs.com/package/ngrok) ngroup npm 모듈을 다운로드하여 설치하면 Asset Compute 작업자의 로컬 디버깅을 쉽게 수행할 수 있습니다.
 
 ```
 $ npm install -g ngrok --unsafe-perm=true
