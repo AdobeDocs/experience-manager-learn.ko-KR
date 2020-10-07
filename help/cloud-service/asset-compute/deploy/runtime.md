@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6286
 thumbnail: KT-6286.jpg
 translation-type: tm+mt
-source-git-commit: 50519b9526182b528047069f211498099e3a4c88
+source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '648'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ AEM에서 Cloud Service 작성자 서비스로 사용하기 위해 Adobe I/O Run
 
 작업 공간에 배포하려면 프로젝트 `.env` 파일에서 다음을 정의합니다.
 
-1. 자산 계산 응용 프로그램 프로젝트의 루트에서 명령줄을 엽니다.
+1. 자산 계산 프로젝트의 루트에서 명령줄을 엽니다.
 1. 명령 실행 `aio app deploy`
 1. 이 사용자 지정 자산 계산 작업자 `aio app get-url` 를 참조하는 Cloud Service 처리 프로필로 AEM에서 사용할 작업자 URL을 얻으려면 명령을 실행합니다. 프로젝트에 여러 작업자가 포함된 경우 각 작업자에 대한 개별 URL이 나열됩니다.
 
@@ -54,7 +54,7 @@ true 환경 변수를 설정하면 에서 동일한 이름의 변수에 대한 �
 스테이지 및 프로덕션 환경에 배포하기 위해 일반적으로 CI/CD 시스템에 의해 자동화되는 일반적인 방법은 다음과 같습니다.
 
 1. Adobe [I/O CLI npm 모듈 및 Asset Compute 플러그인이](../set-up/development-environment.md#aio) 설치되어 있는지 확인합니다.
-1. Git에서 배포할 에셋 컴퓨팅 응용 프로그램 확인
+1. Git에서 배포할 에셋 컴퓨팅 프로젝트 확인
 1. 대상 작업 공간(스테이지 또는 프로덕션)에 해당하는 값으로 환경 변수를 설정합니다.
    + 두 가지 필수 변수 `AIO_runtime_namespace` 는 작업 공간의 모든 `AIO_runtime_auth` 다운로드 기능을 통해 Adobe I/O 개발자 콘솔의 작업 공간별로 획득되며 __이러한 변수들은 모두__ 사용됩니다.
 
@@ -74,7 +74,7 @@ $ export AIO_runtime_auth=27100f9f-2676-4cce-b73d-b3fb6bac47d1:0tDu307W6MboQf5VW
 1. AEM에서 Cloud Service 처리 프로필로 참조한 작업자 URL은 다음을 통해서도 사용할 수 있습니다.
    + `aio app get-url`.
 
-자산 계산 응용 프로그램 버전이 작업자 URL도 새 버전을 반영하도록 변경되면 처리 프로필에서 URL을 업데이트해야 합니다.
+자산 계산 프로젝트 버전이 작업자 URL도 새 버전을 반영하도록 변경되면 처리 프로필에서 URL을 업데이트해야 합니다.
 
 ## 작업 공간 API 프로비저닝{#workspace-api-provisioning}
 
