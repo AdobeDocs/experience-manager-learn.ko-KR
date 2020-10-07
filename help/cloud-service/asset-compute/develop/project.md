@@ -1,6 +1,6 @@
 ---
 title: 자산 계산 확장성을 위한 자산 계산 프로젝트 만들기
-description: 자산 계산 애플리케이션은 Adobe I/O CLI를 사용하여 생성된 Node.js 프로젝트로서, 특정 구조를 준수하여 Adobe I/O Runtime에 배포하고 AEM과 Cloud Service으로 통합할 수 있습니다.
+description: 자산 계산 프로젝트는 Adobe I/O CLI를 사용하여 생성된 Node.js 프로젝트로서, 특정 구조를 준수하여 Adobe I/O Runtime에 배포하고 AEM과 Cloud Service으로 통합할 수 있습니다.
 feature: asset-compute
 topics: renditions, development
 version: cloud-service
@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6269
 thumbnail: 40197.jpg
 translation-type: tm+mt
-source-git-commit: a71c61304bbc9d54490086b3313c823225fbe2e0
+source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '675'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # 자산 계산 프로젝트 만들기
 
-자산 계산 애플리케이션은 Adobe I/O CLI를 사용하여 생성된 Node.js 프로젝트로서, 특정 구조를 준수하여 Adobe I/O Runtime에 배포하고 AEM과 Cloud Service으로 통합할 수 있습니다. 단일 자산 계산 프로젝트에는 하나 이상의 자산 계산 작업자가 포함될 수 있으며, 여기에는 AEM에서 Cloud Service 처리 프로필로 참조할 수 있는 개별 HTTP 끝점이 있습니다.
+자산 계산 프로젝트는 Adobe I/O CLI를 사용하여 생성된 Node.js 프로젝트로서, 특정 구조를 준수하여 Adobe I/O Runtime에 배포하고 AEM과 Cloud Service으로 통합할 수 있습니다. 단일 자산 계산 프로젝트에는 하나 이상의 자산 계산 작업자가 포함될 수 있으며, 여기에는 AEM에서 Cloud Service 처리 프로필로 참조할 수 있는 개별 HTTP 끝점이 있습니다.
 
 ## 프로젝트 생성
 
@@ -51,7 +51,7 @@ Adobe [I/O CLI Asset Compute 플러그인을](../set-up/development-environment.
 
 ## 그 프로젝트의 구조 검토
 
-생성된 자산 계산 프로젝트는 전문 Adobe 프로젝트 Firefly 응용 프로그램의 Node.js 프로젝트이며, 다음은 자산 계산 프로젝트와 별개입니다.
+생성된 자산 계산 프로젝트는 전문화된 Adobe 프로젝트 Firefly 프로젝트에 대한 Node.js 프로젝트이며, 다음은 자산 계산 프로젝트와 별개입니다.
 
 + `/actions` 하위 폴더가 들어 있고 각 하위 폴더는 자산 계산 작업자를 정의합니다.
    + `/actions/<worker-name>/index.js` 이 작업자의 작업을 수행하기 위해 실행되는 JavaScript를 정의합니다.
@@ -65,6 +65,14 @@ Adobe [I/O CLI Asset Compute 플러그인을](../set-up/development-environment.
 + `/.env` 구문에 환경 변수를 정의하고 공유할 수 없는 비밀을 `key=value` 포함합니다. 이러한 비밀을 보호하려면 이 파일을 Git로 체크 인하지 않아야 하며 프로젝트의 기본 `.gitignore` 파일을 통해 무시됩니다.
    + 이 파일에 정의된 변수는 명령줄에서 변수를 [내보내어](../deploy/runtime.md) 재정의할 수 있습니다.
 
-프로젝트 구조 검토에 대한 자세한 내용은 Firefox Adobe 프로젝트 [의 구조 애플리케이션을 참조하십시오](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#5-anatomy-of-a-project-firefly-application).
+프로젝트 구조 검토에 대한 자세한 내용은 Firefly Adobe 프로젝트 [구조 프로젝트를 검토하십시오](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#5-anatomy-of-a-project-firefly-application).
 
 대부분의 개발 작업은 작업자 구현을 개발하는 `/actions` 폴더에서 발생하고 사용자 지정 자산 계산 작업자에 대한 테스트를 `/test/asset-compute` 쓰는 방식으로 이루어집니다.
+
+## Github에서 자산 계산 프로젝트
+
+최종 자산 계산 프로젝트는 다음 위치의 Github에서 사용할 수 있습니다.
+
++ [aem-guides-wknd-asset-compute](https://github.com/adobe/aem-guides-wknd-asset-compute)
+
+_Github contains is the final state of the project, fully built with the worker and test cases, but does not contain any credentials, ie.`.env`,`.config.json`or`.aio`._
