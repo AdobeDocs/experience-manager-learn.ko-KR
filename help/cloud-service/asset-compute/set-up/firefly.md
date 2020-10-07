@@ -1,6 +1,6 @@
 ---
 title: 자산 계산 확장성을 위해 Adobe 프로젝트 Firefly 설정
-description: 자산 컴퓨팅 애플리케이션은 특별히 정의된 Adobe Project Firefly 애플리케이션으로서, 설정 및 배포하려면 Adobe 개발자 콘솔에서 Adobe 프로젝트 Firefox에 액세스해야 합니다.
+description: 에셋 컴퓨팅 프로젝트는 특별히 정의된 Adobe 프로젝트 Firefly 프로젝트입니다. 이와 같이 Adobe 개발자 콘솔에서 Adobe 프로젝트 Firefly에 액세스해야 설정 및 배포할 수 있습니다.
 feature: asset-compute
 topics: renditions, development
 version: cloud-service
@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6268
 thumbnail: 40183.jpg
 translation-type: tm+mt
-source-git-commit: 50519b9526182b528047069f211498099e3a4c88
+source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '545'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Adobe 프로젝트 Firefly 설정
 
-자산 컴퓨팅 애플리케이션은 특별히 정의된 Adobe Project Firefly 애플리케이션으로서, 설정 및 배포하려면 Adobe 개발자 콘솔에서 Adobe 프로젝트 Firefox에 액세스해야 합니다.
+에셋 컴퓨팅 프로젝트는 특별히 정의된 Adobe 프로젝트 Firefly 프로젝트입니다. 이와 같이 Adobe 개발자 콘솔에서 Adobe 프로젝트 Firefly에 액세스해야 설정 및 배포할 수 있습니다.
 
 ## Adobe 개발자 콘솔에서 Adobe 프로젝트 Firefly 만들기 및 설정{#set-up}
 
@@ -34,8 +34,8 @@ _Adobe 프로젝트 Firefly(오디오 없음)를 설정하는 클릭스루_
 
    + __프로젝트 제목__: `WKND AEM Asset Compute`
    + __앱 이름__: `wkndAemAssetCompute<YourName>`
-      + 앱 이름 __은__ 모든 Firefox 애플리케이션에서 고유해야 하며 나중에 수정할 수 없습니다. 회사나 조직의 이름을 접두사로 사용하고, 접미사를 붙인 포스트픽스는 다음과 같은 좋은 방법입니다. `wkndAemAssetCompute`.
-      + 자체 지원을 위해 다른 Project Firefly 애플리케이션과 충돌하지 않도록 하는 등 __앱 이름에__&#x200B;이름을 `wkndAemAssetComputeJaneDoe` 게시하는 것이 가장 좋습니다.
+      + 앱 이름 __은__ 모든 Firefox 프로젝트에서 고유해야 하며 나중에 수정할 수 없습니다. 회사나 조직의 이름을 접두사로 사용하고, 접미사를 붙인 포스트픽스는 다음과 같은 좋은 방법입니다. `wkndAemAssetCompute`.
+      + 자체 지원을 위해 다른 Project Firefly 프로젝트와의 충돌을 피하는 등 __앱 이름에__&#x200B;이름을 `wkndAemAssetComputeJaneDoe` 게시하는 것이 가장 좋습니다.
    + 작업 __공간__ 아래에서 `Development`
    + [ __Adobe I/O Runtime__ ] 아래에서 __각 작업 영역에 [런타임 포함]을__ 선택합니다.
    + 저장을 __눌러__ 프로젝트 저장
@@ -58,7 +58,7 @@ _Adobe 프로젝트 Firefly(오디오 없음)를 설정하는 클릭스루_
 
 ## JWT(서비스 계정) 자격 증명 검토
 
-이 Adobe I/O 프로젝트의 자격 증명은 Adobe I/O Runtime과 상호 작용하기 위해 로컬 [에셋 컴퓨팅 개발 도구](../develop/development-tool.md) 에서 사용되며 에셋 컴퓨팅 응용 프로그램 프로젝트에 통합되어야 합니다. JWT(서비스 계정) 자격 증명을 숙지하십시오.
+이 Adobe I/O 프로젝트의 자격 증명은 로컬 [에셋 컴퓨팅 개발 도구에서](../develop/development-tool.md) Adobe I/O Runtime과 상호 작용하기 위해 사용되므로 에셋 컴퓨팅 프로젝트에 통합되어야 합니다. JWT(서비스 계정) 자격 증명을 숙지하십시오.
 
 ![Adobe 개발자 서비스 계정 자격 증명](./assets/firefly/service-account.png)
 
