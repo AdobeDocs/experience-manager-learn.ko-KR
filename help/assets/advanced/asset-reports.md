@@ -1,5 +1,5 @@
 ---
-title: AEM Assets에서 보고서 사용
+title: AEM Assets의 자산 보고서
 description: 'AEM Assets은 직관적인 사용자 경험을 통해 대규모 리포지토리에 맞게 확장되는 엔터프라이즈급 보고 프레임워크를 제공합니다. '
 feature: reports
 topics: authoring, operations, performance, metadata
@@ -9,15 +9,15 @@ activity: use
 version: 6.3, 6.4, 6.5
 kt: 648
 translation-type: tm+mt
-source-git-commit: 3b5dd583a458393a41dbce1d8eeb0095a22db734
+source-git-commit: 10784dce34443adfa1fc6dc324242b1c021d2a17
 workflow-type: tm+mt
-source-wordcount: '94'
+source-wordcount: '91'
 ht-degree: 2%
 
 ---
 
 
-# AEM Assets에서 보고서 사용{#using-reports-in-aem-assets}
+# 자산 보고서{#using-reports-in-aem-assets}
 
 AEM Assets은 직관적인 사용자 경험을 통해 대규모 리포지토리에 맞게 확장되는 엔터프라이즈급 보고 프레임워크를 제공합니다.
 
