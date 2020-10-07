@@ -1,6 +1,6 @@
 ---
 title: 자산 계산 작업자 개발
-description: 자산 계산 작업자는 자산에서 새 변환을 만들기 위해 수행한 작업을 수행하거나 조정하는 사용자 정의 기능을 제공하는 자산 계산 애플리케이션의 핵심입니다.
+description: 자산 계산 작업자는 자산에서 새 변환을 만들기 위해 수행한 작업을 수행하거나 조정하는 사용자 정의 기능을 제공하는 자산 계산 프로젝트의 핵심입니다.
 feature: asset-compute
 topics: renditions, development
 version: cloud-service
@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6282
 thumbnail: KT-6282.jpg
 translation-type: tm+mt
-source-git-commit: 9cf01dbf9461df4cc96d5bd0a96c0d4d900af089
+source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
 workflow-type: tm+mt
-source-wordcount: '1412'
+source-wordcount: '1508'
 ht-degree: 0%
 
 ---
@@ -20,26 +20,28 @@ ht-degree: 0%
 
 # 자산 계산 작업자 개발
 
-자산 계산 작업자는 자산에서 새 변환을 만들기 위해 수행한 작업을 수행하거나 조정하는 사용자 정의 기능을 제공하는 자산 계산 애플리케이션의 핵심입니다.
+자산 계산 작업자는 자산에서 새 변환을 만들기 위해 수행한 작업을 수행하거나 조정하는 사용자 정의 기능을 제공하는 자산 계산 프로젝트의 핵심입니다.
 
 자산 계산 프로젝트는 간단한 작업자를 자동으로 생성하여 자산의 원래 바이너리를 명명된 변환으로 복사하고 변형하지 않습니다. 이 튜토리얼에서는 Asset Compute Workers의 강력한 기능을 설명하기 위해 이 작업자를 수정하여 보다 흥미로운 표현물을 만들게 됩니다.
 
-자산 변환 왼쪽 및 오른쪽에 빈 공간을 포함하는 새로운 수평 이미지 변환을 생성하는 Asset Compute Worker를 만듭니다. 이 변환은 에셋 버전이 흐리게 표시됩니다. 최종 표현물의 폭, 높이 및 흐림 효과는 매개 변수화됩니다.
+자산 계산 작업자를 만들어 새로운 가로 이미지 변환을 생성하며, 자산 변환의 왼쪽과 오른쪽에 빈 공간을 포함하고 흐릿한 버전의 에셋을 사용할 수 있습니다. 최종 표현물의 폭, 높이 및 흐림 효과는 매개 변수화됩니다.
 
-## 자산 계산 근로자의 실행 이해
+## 자산 계산 작업자 호출의 논리 흐름
 
-자산 계산 작업자는 단순하게 다음 자산 계산 SDK 작업자 API 계약을 구현합니다.
+자산 계산 작업자는 개념적으로, `renditionCallback(...)` 함수에서 자산 계산 SDK 작업자 API 계약을 구현합니다.
 
 + __입력:__ AEM 자산의 원래 자산 이진 및 매개 변수
 + __출력:__ AEM 자산에 추가할 하나 이상의 변환
 
-![자산 계산 작업자 실행 흐름](./assets/worker/execution-flow.png)
+![자산 계산 작업자 논리 흐름](./assets/worker/logical-flow.png)
 
 1. 자산 계산 작업자가 AEM 작성자 서비스에서 호출되면 처리 프로필을 통해 AEM 자산에 대해 호출됩니다. 자산의 __(1a)__ 원래 바이너리는 변환 콜백 함수의 매개 변수를 통해 작업자에게 전달되고, `source` (1b) __매개 변수 세트를 통해 처리 프로필에 정의된 모든 매개 변수__ 가 `rendition.instructions` 사용됩니다.
-1. 자산 계산 작업자 코드는 소스 바이너리의 변환을 생성하기 위해 __(1b)__ 에서 제공하는 매개 변수를 기반으로 __소스 바이너리를__ (1a)변환합니다.
+1. Asset Compute SDK 레이어는 처리 프로필의 요청을 수락하고 사용자 지정 Asset Compute 작업자 `renditionCallback(...)` 함수 실행을 오케스트레이션하여 __(1a)__ 소스 바이너리를 __(1b)__ 에서 제공하는 매개 변수를 기반으로 변환하여 소스 바이너리의 변환을생성합니다.
    + 이 자습서에서는 변환이 &quot;진행 중&quot;으로 만들어집니다. 이는 작업자가 변환을 구성하지만 변환 생성을 위해 소스 바이너리를 다른 웹 서비스 API로 전송할 수 있음을 의미합니다.
 1. 자산 계산 작업자가 변환의 이진 표현을 저장하여 AEM 작성자 서비스에 저장할 수 `rendition.path` 있도록 합니다.
-1. 완료되면, 에 기록된 바이너리 데이터 `rendition.path` 가 AEM 작성자 서비스를 통해 Asset Compute Worker가 호출된 AEM 자산의 변환으로 노출됩니다.
+1. 완료되면, 보낸 바이너리 데이터 `rendition.path` 는 Asset Compute SDK를 통해 전송되고 AEM UI에서 사용할 수 있는 변환으로 AEM 작성자 서비스를 통해 노출됩니다.
+
+위의 다이어그램은 Asset Compute 개발자 대면 관련 문제와 Asset Compute 작업자 호출로의 논리 흐름을 기술합니다. 궁금한 사항을 위해 자산 계산 실행에 [대한](https://docs.adobe.com/content/help/en/asset-compute/using/extend/custom-application-internals.html) 내부 세부 사항은 사용할 수 있지만 공개 자산 계산 SDK API 계약만 의존해야 합니다.
 
 ## 근로자의 구조
 
@@ -106,7 +108,7 @@ function customHelperFunctions() { ... }
 
 ## 지원 npm 모듈 설치 및 가져오기
 
-Node.js 애플리케이션으로, Asset Compute 애플리케이션은 강력한 [npm 모듈 에코시스템의 이점을 활용합니다](https://npmjs.com). npm 모듈을 활용하려면 먼저 Asset Compute 응용 프로그램 프로젝트에 설치해야 합니다.
+Node.js 기반의 자산 컴퓨팅 프로젝트는 강력한 [npm 모듈 에코시스템의 이점을 활용합니다](https://npmjs.com). npm 모듈을 활용하려면 먼저 Asset Compute 프로젝트에 설치해야 합니다.
 
 In this worker, we leverage the [jimp](https://www.npmjs.com/package/jimp) to create and manipate the rendition image directly in the Node.js code.
 
@@ -380,6 +382,12 @@ Adobe 코드에서는 다음에 대한 매개 변수를 허용합니다.
    ![매개 변수화된 PNG 변환](./assets/worker/parameterized-rendition.png)
 
 1. 다른 이미지를 __소스 파일__ 드롭다운에 업로드하고 다른 매개 변수를 사용하여 작업자를 실행해 보십시오.
+
+## Github의 Worker index.js
+
+결승전은 다음 위치의 Github에서 볼 수 있습니다. `index.js`
+
++ [aem-guides-wknd-asset-compute/actions/worker/index.js](https://github.com/adobe/aem-guides-wknd-asset-compute/blob/master/actions/worker/index.js)
 
 ## 문제 해결
 
