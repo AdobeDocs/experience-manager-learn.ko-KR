@@ -1,6 +1,6 @@
 ---
 title: 자산 계산 프로젝트의 manifest.yml 구성
-description: 자산 계산 프로젝트의 manifest.yml은 이 응용 프로그램의 배포 대상 모든 작업자에 대해 설명합니다.
+description: 자산 계산 프로젝트의 manifest.yml에서 이 프로젝트의 배포될 모든 작업자에 대해 설명합니다.
 feature: asset-compute
 topics: renditions, development
 version: cloud-service
@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6281
 thumbnail: KT-6281.jpg
 translation-type: tm+mt
-source-git-commit: 50519b9526182b528047069f211498099e3a4c88
+source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '550'
 ht-degree: 0%
 
 ---
@@ -93,6 +93,13 @@ packages:
         annotations:
           require-adobe-auth: true
 ```
+
+## github의 manifest.yml
+
+결승전은 다음 위치의 Github에서 볼 수 있습니다. `.manifest.yml`
+
++ [aem-guides-wknd-asset-compute/manifest.yml](https://github.com/adobe/aem-guides-wknd-asset-compute/blob/master/manifest.yml)
+
 
 ## manifest.html 유효성 확인
 
