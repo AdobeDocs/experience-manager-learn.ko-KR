@@ -10,9 +10,9 @@ audience: developer
 kt: 5802
 thumbnail: KT-5802.jpg
 translation-type: tm+mt
-source-git-commit: ecee5f83dc778b016b6d236c1e3bcc4919ee55a7
+source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '985'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ AEM as Cloud Service(Asset Compute microservices)는 사용자 정의 에셋 변
 
 에셋 컴퓨팅 작업자 확장을 적절하게 준비하는 방법을 알아보고, 배포하고 구성해야 하는 서비스 및 계정 및 개발을 위해 로컬로 설치되는 소프트웨어를 파악합니다.
 
-### 계정 및 서비스 프로비저닝
+### 계정 및 서비스 프로비저닝{#accounts-and-services}
 
 다음 계정 및 서비스는 Cloud Service 개발 환경 또는 샌드박스 프로그램으로 AEM의 자습서를 완료하고 Adobe 프로젝트 Firefly 및 Microsoft Azure Blob 저장소에 액세스하려면 프로비저닝 및 액세스 권한이 필요합니다.
 
@@ -50,13 +50,13 @@ AEM as Cloud Service(Asset Compute microservices)는 사용자 정의 에셋 변
 
 ### 로컬 개발 환경
 
-에셋 컴퓨팅 애플리케이션의 로컬 개발을 위해서는 다음과 같은 기존의 AEM 개발과는 다른 특정 개발자 도구 세트가 필요합니다.Microsoft Visual Studio 코드, Docker Desktop, Node.js 및 지원 npm 모듈입니다.
+에셋 컴퓨팅 프로젝트의 로컬 개발을 위해서는 다음과 같은 기존의 AEM 개발과는 다른 특정 개발자 도구 세트가 필요합니다.Microsoft Visual Studio 코드, Docker Desktop, Node.js 및 지원 npm 모듈입니다.
 
 + [로컬 개발 환경 설정](./set-up/development-environment.md)
 
 ### Adobe 프로젝트 Firefly
 
-자산 컴퓨팅 프로젝트는 특별히 정의된 Adobe 프로젝트 Firefly 애플리케이션으로서, 설정 및 배포하려면 Adobe 개발자 콘솔에서 Adobe 프로젝트 Firefox에 액세스해야 합니다.
+에셋 컴퓨팅 프로젝트는 특별히 정의된 Adobe 프로젝트 Firefly 프로젝트입니다. 이와 같이 Adobe 개발자 콘솔에서 Adobe 프로젝트 Firefly에 액세스해야 설정 및 배포할 수 있습니다.
 
 + [Adobe 프로젝트 Firefly 설정](./set-up/firefly.md)
 
@@ -66,7 +66,7 @@ AEM as Cloud Service(Asset Compute microservices)는 사용자 정의 에셋 변
 
 ### 새 자산 계산 프로젝트 만들기
 
-자산 계산 애플리케이션 프로젝트는 하나 이상의 자산 계산 작업자가 들어 있으며 대화형 Adobe I/O CLI를 사용하여 생성됩니다. 자산 계산 애플리케이션은 특별히 구조화된 Adobe Project Firefly 애플리케이션이며, 이 응용 프로그램은 Node.js 응용 프로그램입니다.
+하나 이상의 자산 계산 작업자가 포함된 자산 계산 프로젝트는 대화형 Adobe I/O CLI를 사용하여 생성됩니다. 에셋 컴퓨팅 프로젝트는 특별히 구조화된 Adobe 프로젝트 Firefly 프로젝트이며, 이 프로젝트는 Node.js 프로젝트를 차례대로 진행합니다.
 
 + [새 자산 계산 프로젝트 만들기](./develop/project.md)
 
@@ -78,7 +78,7 @@ AEM as Cloud Service(Asset Compute microservices)는 사용자 정의 에셋 변
 
 ### manifest.html 구성
 
-자산 계산 애플리케이션에는 프로젝트 내에 포함된 모든 자산 계산 작업자와 실행을 위해 Adobe I/O Runtime에 배포할 때 사용할 수 있는 리소스를 정의하는 매니페스트가 포함됩니다.
+자산 계산 프로젝트에는 프로젝트 내에 포함된 모든 자산 계산 작업자를 정의하는 매니페스트와 실행을 위해 Adobe I/O Runtime에 배포할 때 사용할 수 있는 리소스가 포함되어 있습니다.
 
 + [manifest.html 구성](./develop/manifest.md)
 
@@ -106,7 +106,7 @@ AEM as Cloud Service(Asset Compute microservices)는 사용자 정의 에셋 변
 
 ### 작업자 디버그
 
-Asset Compute 애플리케이션은 기존 `console.log(..)` 출력에서 __VS 코드__ 및 __wskdebug와의 통합__&#x200B;등 다양한 수준의 디버깅을 제공하므로 개발자는 작업자 코드를 실시간으로 실행할 수 있습니다.
+에셋 컴퓨팅 작업자는 기존 `console.log(..)` 출력에서 __VS 코드__ 및 __wskdebug와의 통합__&#x200B;등 다양한 수준의 디버깅을 제공하므로 개발자는 실시간으로 작업자 코드를 단계별로 실행할 수 있습니다.
 
 + [작업자 디버그](./test-debug/debug.md)
 
@@ -125,6 +125,14 @@ AEM과 Cloud Service을 함께 사용하려면 자산 계산 작업자를 Adobe 
 Adobe I/O Runtime에 배포되면 자산 계산 작업자는 자산 처리 프로필을 통해 AEM에 Cloud Service으로 [등록할 수 있습니다](../../assets/configuring/processing-profiles.md). 처리 프로필은 해당 자산에 적용되는 Assets 폴더에 적용됩니다.
 
 + [AEM 처리 프로필과 통합](./deploy/processing-profiles.md)
+
+## Github에 대한 자습서 코드
+
+자습서 코드 베이스는 다음 위치의 Github에서 사용할 수 있습니다.
+
++ [adobe/aem-guides-wknd-asset-compute](https://github.com/adobe/aem-guides-wknd-asset-compute) @ 마스터 분기
+
+소스 코드에 필수 `.env` 또는 `config.json` 파일이 없습니다. 계정 및 서비스 [](#accounts-and-services) 정보를 사용하여 이러한 정보를 추가하고 구성해야 합니다.
 
 ## 추가 리소스
 
