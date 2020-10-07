@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6284
 thumbnail: KT-6284.jpg
 translation-type: tm+mt
-source-git-commit: 06632b90e5cdaf80b9343e5a69ab9c735d4a70f1
+source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '818'
 ht-degree: 0%
 
 ---
@@ -109,6 +109,12 @@ ht-degree: 0%
    + 실행 중인 개발 도구 인스턴스 종료
 
 ![테스트 - 오류 대비](./assets/test/error-contrast/result.png)
+
+## Github에서 테스트 케이스
+
+최종 테스트 사례는 다음 위치의 Github에서 사용할 수 있습니다.
+
++ [aem-guides-wknd-asset-compute/test/asset-compute/worker](https://github.com/adobe/aem-guides-wknd-asset-compute/tree/master/test/asset-compute/worker)
 
 ## 문제 해결
 
