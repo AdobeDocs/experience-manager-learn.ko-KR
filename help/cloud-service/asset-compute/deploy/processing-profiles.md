@@ -10,10 +10,10 @@ doc-type: tutorial
 kt: 6287
 thumbnail: KT-6287.jpg
 translation-type: tm+mt
-source-git-commit: 59bfc9ae08acca6c41234f23eaa60f56e2eda890
+source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
 workflow-type: tm+mt
-source-wordcount: '730'
-ht-degree: 2%
+source-wordcount: '778'
+ht-degree: 1%
 
 ---
 
@@ -76,6 +76,14 @@ ht-degree: 2%
 ## 완료됨!
 
 축하합니다! AEM을 Cloud Service Asset Compute [microsoft](../overview.md) 서비스로 확장하는 방법에 대한 자습서를 마쳤습니다. 이제 AEM에서 Cloud Service 작성자 서비스로 사용할 사용자 정의 에셋 계산 작업자를 설정, 개발, 테스트, 디버그 및 배포할 수 있습니다.
+
+### Github에서 전체 프로젝트 소스 코드 검토
+
+최종 자산 계산 프로젝트는 다음 위치의 Github에서 사용할 수 있습니다.
+
++ [aem-guides-wknd-asset-compute](https://github.com/adobe/aem-guides-wknd-asset-compute)
+
+_Github contains is the final state of the project, fully built with the worker and test cases, but does not contain any credentials, ie.`.env`,`.config.json`또는`.aio`._
 
 ## 문제 해결
 
