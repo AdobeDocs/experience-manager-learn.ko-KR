@@ -1,5 +1,5 @@
 ---
-title: AEM Assets에서 닫힌 사용자 그룹 사용
+title: AEM Assets의 폐쇄된 사용자 그룹
 description: '폐쇄된 사용자 그룹(CUG)은 게시된 사이트의 특정 사용자 그룹에 대한 컨텐츠 액세스를 제한하는 데 사용되는 기능입니다. 이 비디오에서는 닫힌 사용자 그룹을 Adobe Experience Manager 자산과 함께 사용하여 특정 자산 폴더에 대한 액세스를 제한하는 방법을 보여줍니다. AEM Assets에서 폐쇄된 사용자 그룹에 대한 지원은 AEM 6.4에서 처음 도입되었습니다. '
 feature: asset-share
 topics: authoring, collaboration, operations, sharing
@@ -8,15 +8,15 @@ doc-type: feature video
 activity: use
 version: 6.3, 6.4, 6.5
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 10784dce34443adfa1fc6dc324242b1c021d2a17
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '486'
 ht-degree: 0%
 
 ---
 
 
-# AEM Assets에서 닫힌 사용자 그룹 사용{#using-closed-user-groups-with-aem-assets}
+# 닫힌 사용자 그룹{#using-closed-user-groups-with-aem-assets}
 
 폐쇄된 사용자 그룹(CUG)은 게시된 사이트의 특정 사용자 그룹에 대한 컨텐츠 액세스를 제한하는 데 사용되는 기능입니다. 이 비디오에서는 닫힌 사용자 그룹을 Adobe Experience Manager 자산과 함께 사용하여 특정 자산 폴더에 대한 액세스를 제한하는 방법을 보여줍니다. AEM Assets에서 폐쇄된 사용자 그룹에 대한 지원은 AEM 6.4에서 처음 도입되었습니다.
 
