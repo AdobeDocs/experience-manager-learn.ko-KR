@@ -5,9 +5,9 @@ description: Adobe Experience Manager 에셋을 위한 비디오 및 자습서 �
 seo-description: Adobe Experience Manager 에셋을 위한 비디오 및 자습서 모음
 sub-product: 자산, 다이내믹 미디어
 translation-type: tm+mt
-source-git-commit: a2772bd8dd65e8bcb4caf660709f6aceb6e28eb4
+source-git-commit: 10784dce34443adfa1fc6dc324242b1c021d2a17
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '244'
 ht-degree: 5%
 
 ---
@@ -18,6 +18,11 @@ ht-degree: 5%
 Adobe Experience Manager 에셋은 AEM Platform의 디지털 에셋 관리 툴로 사용자는 웹 기반의 저장소에서 디지털 에셋(이미지, 비디오, 문서 및 오디오 클립)을 제작, 관리 및 공유할 수 있습니다. 이 사용자 안내서에는 AEM Assets의 다양한 기능과 기능에 대한 비디오 및 자습서가 포함되어 있습니다.
 
 ## 새로운 기능
+
+* **[워터마크(비디오)](./advanced/watermarks.md)**
+
+   <br>
+   *AEM에서 Cloud Service으로 에셋 표현물을 워터마킹하는 방법 살펴보기*
 
 * **[기본 권한(비디오)](./configuring/baseline-permissions.md)**
 
@@ -38,12 +43,6 @@ Adobe Experience Manager 에셋은 AEM Platform의 디지털 에셋 관리 툴�
 
    <br>
    *AEM Assets의 컬렉션이 자산을 구성하고 검색하는 새로운 방법을 확인하세요*
-
-* **[검토 작업 사용(비디오)](./collaboration/review-task.md)**
-
-   <br>
-   *작업 검토 워크플로우를 사용하여 에셋을 빠르고 쉽게 승인(또는 거부)*
-
 
 ## 직원 선택
 
