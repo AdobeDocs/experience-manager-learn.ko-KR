@@ -10,7 +10,7 @@ doc-type: tutorial
 kt: 6264
 thumbnail: 40377.jpg
 translation-type: tm+mt
-source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 1%
@@ -68,6 +68,7 @@ Asset Compute 프로젝트의 로컬 개발에 클라우드 스토리지가 필�
 이 자습서는 Azure Blob 저장소를 사용하지만 [Amazon S3는](#amazon-s3) 자습서에 약간의 변형만 사용할 수 있습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/40377/?quality=12&learn=on)
+
 _Azure Blob 저장소 프로비저닝 클릭스루(오디오 없음)_
 
 
