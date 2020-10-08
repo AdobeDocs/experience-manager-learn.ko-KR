@@ -8,7 +8,7 @@ doc-type: tutorial
 activity: implement
 version: 6.3,6.4
 translation-type: tm+mt
-source-git-commit: 1ba56ad44df4dc327cf37d39ac72539b5c7af4a2
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 0%
@@ -32,4 +32,5 @@ ht-degree: 0%
 이 데모를 시스템 작업을 수행하려면 AEM Assets에 있는 폴더를 만들어야 `acroforms` 합니다. Acrobat을 이 `acroforms` 폴더에 업로드합니다.
 
 >[!NOTE]
-샘플 코드는 이 폴더에서 Acrobat을 찾습니다. 적응형 양식의 제출된 데이터를 병합하려면 Acrobat이 필요합니다.
+>
+>샘플 코드는 이 폴더에서 Acrobat을 찾습니다. 적응형 양식의 제출된 데이터를 병합하려면 Acrobat이 필요합니다.
