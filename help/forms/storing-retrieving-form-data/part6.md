@@ -8,7 +8,7 @@ doc-type: tutorial
 activity: implement
 version: 6.3,6.4,6.5
 translation-type: tm+mt
-source-git-commit: 6ae8110d4f4bc80682c35b0dab3fe7a62cad88f3
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '248'
 ht-degree: 2%
@@ -19,7 +19,12 @@ ht-degree: 2%
 # 서버에 배포
 
 >[!NOTE]
-시스템에서 이 작업을 실행하려면 다음이 필요합니다.AEM Forms(버전 6.3 이상)MYSQL 데이터베이스
+>
+>시스템에서 이 작업을 실행하려면 다음이 필요합니다.
+>
+>* AEM Forms(버전 6.3 이상)
+>* MYSQL 데이터베이스
+
 
 AEM Forms 인스턴스에서 이 기능을 테스트하려면 다음 단계를 수행하십시오
 
