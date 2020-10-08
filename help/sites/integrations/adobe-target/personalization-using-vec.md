@@ -10,9 +10,9 @@ version: cloud-service
 kt: 6352
 thumbnail: 6352-personalization-using-vec.jpg
 translation-type: tm+mt
-source-git-commit: 892cb074814eabd347ba7aef883721df0ee4d431
+source-git-commit: 7a830d5a04ce53014b86f9f05238dd64f79edffc
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '485'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,10 @@ ht-degree: 0%
 
 VEC(Visual Experience Composer)를 사용하여 A/B 테스트 Target 활동을 만드는 방법을 알아봅니다.
 
+Target에서 활동을 만들기 전에 다음을 설정해야 합니다.
+
+1. [Experience Platform Launch 및 AEM 통합](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html)
+2. [Cloud Services을 사용하여 Adobe Experience Manager과 Adobe Target 통합](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/target/setup-aem-target-cloud-service.html)
 
 ## 시나리오 개요
 
