@@ -12,7 +12,7 @@ doc-type: technical video
 activity: setup
 version: 6.3, 6.4, 6.5
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 8%
@@ -30,7 +30,7 @@ Adobe I/O를 사용하여 Adobe Experience Manager(AEM)과 스마트 콘텐츠 �
 
 >[!NOTE]
 >
-> 스마트 콘텐츠 서비스를 설정하려면 스마트 콘텐츠 서비스가 활성화된 조직에 대한 관리자 권한이 있는 Adobe ID 계정을 가지고 있어야 합니다.
+>스마트 콘텐츠 서비스를 설정하려면 스마트 콘텐츠 서비스가 활성화된 조직에 대해 관리자 권한이 있는 Adobe ID 계정이 있어야 합니다.
 
 비디오에서는 스마트 콘텐츠 서비스를 구성하는 데 필요한 다음 주요 작업에 대해 자세히 설명합니다.
 
