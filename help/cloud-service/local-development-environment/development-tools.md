@@ -10,7 +10,7 @@ audience: developer
 kt: 4267
 thumbnail: 25907.jpg
 translation-type: tm+mt
-source-git-commit: 50519b9526182b528047069f211498099e3a4c88
+source-git-commit: cb5f3c323c433c9321ba26ac1194be0cd225a405
 workflow-type: tm+mt
 source-wordcount: '1366'
 ht-degree: 0%
@@ -88,8 +88,10 @@ Homebrew를 사용하는 경우 아래 섹션에 있는 __Homebrew를 사용하�
 ![Node.js 및 npm](./assets/development-tools/nodejs-and-npm.png)
 
 >[!TIP]
-> [AEM Project Tranype](https://github.com/adobe/aem-project-archetype)기반의 AEM Projects는 구축 시 Node.js의 격리된 버전을 설치합니다. AEM Maven 프로젝트의 Reactor pom.xml에 지정된 Node.js 및 npm 버전과 로컬 개발 시스템의 버전을 동기화(또는 가까운)하는 것이 좋습니다.
-Node.js 및 npm 빌드 버전을 찾을 위치에 대해서는 이 [예 AEM Project Reactor pom.xml](https://github.com/adobe/aem-guides-wknd/blob/9ac94f3f40c978a53ec88fae79fbc17dd2db72f2/pom.xml#L117-L118) 을 참조하십시오.
+>
+>[AEM Project Tranype](https://github.com/adobe/aem-project-archetype)기반의 AEM Projects는 구축 시 Node.js의 격리된 버전을 설치합니다. AEM Maven 프로젝트의 Reactor pom.xml에 지정된 Node.js 및 npm 버전과 로컬 개발 시스템의 버전을 동기화(또는 가까운)하는 것이 좋습니다.
+>
+>Node.js 및 npm 빌드 버전을 찾을 위치에 대해서는 이 [예 AEM Project Reactor pom.xml](https://github.com/adobe/aem-guides-wknd/blob/9ac94f3f40c978a53ec88fae79fbc17dd2db72f2/pom.xml#L117-L118) 을 참조하십시오.
 
 ## Maven 설치
 
