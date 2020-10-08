@@ -10,9 +10,9 @@ version: cloud-service
 kt: 6350
 thumbnail: 41245.jpg
 translation-type: tm+mt
-source-git-commit: 25ca90f641aaeb93fc9319692f3b099d6b528dd1
+source-git-commit: 7a830d5a04ce53014b86f9f05238dd64f79edffc
 workflow-type: tm+mt
-source-wordcount: '60'
+source-wordcount: '70'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ ht-degree: 0%
 AEM 경험 조각을 Adobe Target 오퍼으로 내보내는 방법을 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/41245?quality=12&learn=on)
+
+## 다음 단계
+
+1. [경험 조각 오퍼를 사용하여 Target 활동 생성](./create-target-activity.md)
 
 ## 지원 링크
 
