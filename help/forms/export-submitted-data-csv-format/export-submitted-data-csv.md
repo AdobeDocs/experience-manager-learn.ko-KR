@@ -7,7 +7,7 @@ audience: developer
 doc-type: article
 activity: implement
 translation-type: tm+mt
-source-git-commit: defefc1451e2873e81cd81e3cccafa438aa062e3
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 0%
@@ -39,7 +39,8 @@ ht-degree: 0%
 * 89행:서비스의 시작 지점입니다.이 메서드는 formName을 입력 매개 변수로 `getCSVFile(..)` 가져와서 지정된 양식 이름과 관련된 제출된 데이터를 가져옵니다.
 
 >[!NOTE]
-이 코드에서는 사용자가 Felix 웹 콘솔에서 &quot;aemformsology&quot;라고 하는 연결 풀링된 DataSource를 정의했다고 가정합니다. 또한 코드에서는 aemformsology라는 데이터베이스에 스키마가 있다고 가정합니다
+>
+>이 코드에서는 사용자가 Felix 웹 콘솔에서 &quot;aemformsology&quot;라고 하는 연결 풀링된 DataSource를 정의했다고 가정합니다. 또한 코드에서는 aemformsology라는 데이터베이스에 스키마가 있다고 가정합니다
 
 ```java
 package com.aemforms.storeandexport.core;
