@@ -11,7 +11,7 @@ doc-type: article
 activity: implement
 version: 6.4,6.5
 translation-type: tm+mt
-source-git-commit: ca4a8f02ea9ec5db15dbe6f322731748da90be6b
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%
@@ -49,8 +49,10 @@ AEM의 키 저장소에 인증서를 추가하려면 아래 단계를 따르십�
 * [Document Service API 사용](https://helpx.adobe.com/experience-manager/6-4/forms/using/aem-document-services-programmatically.html)
 
 또는 이 자습서 에셋의 일부로 포함된 샘플 번들을 사용할 수 있습니다.
+
 >[!NOTE]
-샘플 번들은 &quot;ares&quot;라는 별칭을 사용하여 문서를 인증합니다. 따라서 이 번들을 사용할 때 별칭이 &quot;ares&quot;인지 확인하십시오.
+>
+>샘플 번들은 &quot;ares&quot;라는 별칭을 사용하여 문서를 인증합니다. 따라서 이 번들을 사용할 때 별칭이 &quot;ares&quot;인지 확인하십시오.
 
 ## 로컬 시스템에서 샘플 테스트
 
