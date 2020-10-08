@@ -11,7 +11,7 @@ audience: developer
 kt: 4679
 thumbnail: 30603.jpg
 translation-type: tm+mt
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '1508'
 ht-degree: 2%
@@ -74,6 +74,7 @@ Cloud Service SDK 또는 AEM SDK인 AEM에는 개발을 위해 Dispatcher 모듈
 아래에 실행된 모든 명령은 현재 작업 디렉토리에 확장 중인 Dispatcher 도구 내용이 포함되어 있다고 가정합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/30601/?quality=12&learn=on)
+
 *이 비디오에서는 실례가 되는 목적으로 macOS를 사용합니다. 동일한 Windows/Linux 명령을 사용하여 유사한 결과를 얻을 수 있습니다*
 
 ## Dispatcher 구성 파일 이해
@@ -86,6 +87,7 @@ Dispatcher 도구는 로컬 개발을 포함하여 모든 환경에 대한 동�
 이러한 파일은 Experience Manager Maven 프로젝트에 아직 존재하지 않는 경우 Experience Manager Maven 프로젝트로 `dispatcher/src` 복사됩니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/30602/?quality=12&learn=on)
+
 *이 비디오에서는 실례가 되는 목적으로 macOS를 사용합니다. 동일한 Windows/Linux 명령을 사용하여 유사한 결과를 얻을 수 있습니다*
 
 구성 파일에 대한 전체 설명은 압축을 푼 Dispatcher 도구에서 사용할 수 있습니다 `dispatcher-sdk-x.x.x/docs/Config.html`.
@@ -142,6 +144,7 @@ Experience Manager 프로젝트의 Dispatcher 구성에 대해 Dispatcher 도구
    ```
 
 >[!VIDEO](https://video.tv.adobe.com/v/30603/?quality=12&learn=on)
+
 *이 비디오에서는 실례가 되는 목적으로 macOS를 사용합니다. 동일한 Windows/Linux 명령을 사용하여 유사한 결과를 얻을 수 있습니다*
 
 ## 발송자 도구 로그
@@ -177,6 +180,7 @@ Dispatcher 디버깅에 유용한 매개 변수는 다음과 같습니다.
    ```
 
 >[!VIDEO](https://video.tv.adobe.com/v/30604/?quality=12&learn=on)
+
 *이 비디오에서는 실례가 되는 목적으로 macOS를 사용합니다. 동일한 Windows/Linux 명령을 사용하여 유사한 결과를 얻을 수 있습니다*
 
 ## Dispatcher 도구 업데이트 시기{#dispatcher-tools-version}
