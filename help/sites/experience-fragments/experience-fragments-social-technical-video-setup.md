@@ -9,7 +9,7 @@ doc-type: setup
 activity: use
 version: 6.3, 6.4, 6.5
 translation-type: tm+mt
-source-git-commit: 22ccd6627a035b37edb180eb4633bc3b57470c0c
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 0%
@@ -22,6 +22,7 @@ ht-degree: 0%
 경험 조각을 통해 마케터는 AEM에서 만든 경험을 소셜 미디어 플랫폼에 게시할 수 있습니다. 아래 비디오에서는 경험 조각을 Facebook 및 Pinterest에 게시하는 데 필요한 설정 및 구성에 대해 자세히 설명합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/20592/?quality=9&learn=on)
+
 *[경험 조각]- Facebook 및 Pinterest에 소셜 게시물을 설정하는 방법 및 구성*
 
 ## Facebook 및 Pinterest에 게시하도록 경험 조각을 구성하는 검사 목록
