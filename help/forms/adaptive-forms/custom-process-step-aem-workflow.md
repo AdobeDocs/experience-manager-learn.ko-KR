@@ -10,7 +10,7 @@ doc-type: tutorial
 activity: understand
 version: 6.5
 translation-type: tm+mt
-source-git-commit: ca4a8f02ea9ec5db15dbe6f322731748da90be6b
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '895'
 ht-degree: 0%
@@ -129,7 +129,8 @@ public class WriteFormAttachmentsToFileSystem implements WorkflowProcess {
 나머지 코드는 API를 사용하여 attachmentFilePath를 가리키는 리소스의 하위 개체를 반복하여 Document 개체를 만듭니다. 이 문서 개체는 AEM Forms에서만 사용할 수 있습니다. 그런 다음 문서 개체의 copyToFile 메서드를 사용하여 문서 개체를 저장합니다.
 
 >[!NOTE]
-Adobe는 AEM Forms 전용 문서 개체를 사용하고 있으므로, 마스터 프로젝트에 aemfd-client-sdk 종속성을 포함해야 합니다. 그룹 ID는 com.adobe.aemfd이고 아티팩트 ID는 aemfd-client-sdk입니다.
+>
+>Adobe는 AEM Forms 전용 문서 개체를 사용하고 있으므로, 마스터 프로젝트에 aemfd-client-sdk 종속성을 포함해야 합니다. 그룹 ID는 com.adobe.aemfd이고 아티팩트 ID는 aemfd-client-sdk입니다.
 
 #### 구축 및 배포
 
