@@ -10,7 +10,7 @@ doc-type: tutorial
 kt: 6285
 thumbnail: 40383.jpg
 translation-type: tm+mt
-source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '836'
 ht-degree: 0%
@@ -45,6 +45,7 @@ ht-degree: 0%
 wskdebug [npm](https://www.npmjs.com/package/@openwhisk/wskdebug) 모듈은 VS 코드에서 중단점을 설정하고 코드를 단계별로 진행하는 기능을 포함하여 자산 계산 작업자에 디버거를 첨부할 수 있도록 지원합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/40383/?quality=12&learn=on)
+
 _wskdebug(오디오 없음)를 사용하여 자산 계산 작업자 디버깅의 클릭스루_
 
 1. wskdebug [및](../set-up/development-environment.md#wskdebug) ngroup [npm 모듈이](../set-up/development-environment.md#ngork) 설치되어 있는지 확인합니다.
