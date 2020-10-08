@@ -10,7 +10,7 @@ doc-type: tutorial
 kt: 6283
 thumbnail: 40241.jpg
 translation-type: tm+mt
-source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 0%
@@ -50,6 +50,7 @@ $ aio app run
 ### 사용자 정의 작업자 실행
 
 >[!VIDEO](https://video.tv.adobe.com/v/40241?quality=12&learn=on)
+
 _개발 도구에서 에셋 계산 작업을 실행하는 클릭스루(오디오 없음)_
 
 1. 명령을 사용하여 프로젝트 루트에서 에셋 계산 개발 도구가 시작되었는지 `aio app run` 확인합니다.
