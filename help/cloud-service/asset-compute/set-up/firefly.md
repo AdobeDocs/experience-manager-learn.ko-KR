@@ -10,7 +10,7 @@ doc-type: tutorial
 kt: 6268
 thumbnail: 40183.jpg
 translation-type: tm+mt
-source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '545'
 ht-degree: 0%
@@ -25,6 +25,7 @@ ht-degree: 0%
 ## Adobe 개발자 콘솔에서 Adobe 프로젝트 Firefly 만들기 및 설정{#set-up}
 
 >[!VIDEO](https://video.tv.adobe.com/v/40183/?quality=12&learn=on)
+
 _Adobe 프로젝트 Firefly(오디오 없음)를 설정하는 클릭스루_
 
 1. 제공된 [계정 및 서비스와](https://console.adobe.io) 연결된 Adobe ID을 사용하여 Adobe 개발자 콘솔에 [로그인합니다](./accounts-and-services.md). 시스템 __관리자나__ 올바른 Adobe 조직의 __개발자 역할__ 에 있는지 확인합니다.
