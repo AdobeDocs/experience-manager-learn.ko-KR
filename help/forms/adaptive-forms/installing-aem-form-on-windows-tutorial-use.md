@@ -12,27 +12,33 @@ activity: setup
 version: 6.4,6.5
 discoiquuid: 1182ef4d-5838-433b-991d-e24ab805ae0e
 translation-type: tm+mt
-source-git-commit: 82127d5be9a4b969537738f9ba537efe07f38479
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '613'
 ht-degree: 1%
 
 ---
 
+
 # Windows에서 AEM Forms 설치 간소화
 
 >[!NOTE]
+>
 >AEM Forms을 사용하려면 AEM 빠른 시작 jar를 두 번 클릭하지 마십시오.
+>
 >또한 AEM Forms 설치 폴더 경로에 공백이 없는지 확인하십시오.
+>
 >예를 들어 c:\jack and jill\AEM Forms folder에 AEM Forms을 설치하지 마십시오.
 
 >[!NOTE]
-AEM Forms 6.5를 설치하는 경우 다음 32비트 Microsoft Visual C++ 재배포용 파일을 설치했는지 확인하십시오.
+>
+>AEM Forms 6.5를 설치하는 경우 다음 32비트 Microsoft Visual C++ 재배포용 파일을 설치했는지 확인하십시오.
+>
+>* Microsoft Visual C++ 2008 재배포 가능
+>* Microsoft Visual C++ 2010 재배포 가능
+>* Microsoft Visual C++ 2012 재배포 가능
+>* Microsoft Visual C++ 2013 재배포 가능(6.5 기준)
 
-* Microsoft Visual C++ 2008 재배포 가능
-* Microsoft Visual C++ 2010 재배포 가능
-* Microsoft Visual C++ 2012 재배포 가능
-* Microsoft Visual C++ 2013 재배포 가능(6.5 기준)
 
 하지만 AEM Forms을 설치하려면 [공식](https://helpx.adobe.com/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html) 설명서를 따르는 것이 좋습니다. Windows 환경에서 AEM Forms을 설치하고 구성하려면 다음 단계를 따르십시오.
 
