@@ -8,7 +8,7 @@ doc-type: tutorial
 activity: implement
 version: 6.3,6.4
 translation-type: tm+mt
-source-git-commit: 1e615d1c51fa0c4c0db335607c29a8c284874c8d
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '204'
 ht-degree: 0%
@@ -38,8 +38,12 @@ Acrobat은 Acrobat을 사용하여 만든 양식입니다. Acrobat을 사용하�
 [Adobe Sign 텍스트 태그 문서](https://helpx.adobe.com/sign/using/text-tag.html)
 
 >[!NOTE]
-acroform 파일 이름에 공백이 없는지 확인합니다. 현재 샘플 코드는 공백을 처리하지 않습니다.
-양식 필드 이름에는 다음을 포함할 수 있습니다.
-* 단일 공간
-* 단일 밑줄
-* 영숫자
+>
+>acroform 파일 이름에 공백이 없는지 확인합니다. 현재 샘플 코드는 공백을 처리하지 않습니다.
+>
+>양식 필드 이름에는 다음을 사용할 수 있습니다.
+>
+>* 단일 공간
+>* 단일 밑줄
+>* 영숫자
+
