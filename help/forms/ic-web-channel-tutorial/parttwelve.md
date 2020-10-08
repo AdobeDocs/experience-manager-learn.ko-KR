@@ -12,7 +12,7 @@ activity: implement
 version: 6.4,6.5
 discoiquuid: 1a7cf095-c5d8-4d92-a018-883cda76fe70
 translation-type: tm+mt
-source-git-commit: 4f51f7bf00827210d2631b9335768a9980f6655c
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 0%
@@ -68,5 +68,7 @@ AEM Forms에 로그인합니다.
 * [getad.html 열기](http://localhost:4502/content/getad.html)
 
 * 이 URL과 연결된 코드는 로그인한 사용자의 계정 번호를 가져옵니다. 이 계정 번호는 FDM에 requestattribute로 전달됩니다. 그런 다음 FDM이 이 계정 번호와 연관된 데이터를 가져오고 웹 채널 문서를 채웁니다.
+
 >[!NOTE]
-crx에 있는 /apps/AEMForms/fetchad/GET.jsp **** 파일을 살펴보십시오. 문자열 변수 webChannelDocument가 올바른 통신 문서 경로를 가리키는지 확인하십시오.
+>
+>crx에 있는 /apps/AEMForms/fetchad/GET.jsp **** 파일을 살펴보십시오. 문자열 변수 webChannelDocument가 올바른 통신 문서 경로를 가리키는지 확인하십시오.
