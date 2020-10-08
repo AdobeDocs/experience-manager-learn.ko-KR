@@ -13,7 +13,7 @@ discoiquuid: 1c9fb7b6-98dd-4725-b787-ac9e71906500
 kt: 4208
 thumbnail: 22173.jpg
 translation-type: tm+mt
-source-git-commit: 9cf01dbf9461df4cc96d5bd0a96c0d4d900af089
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '64'
 ht-degree: 0%
@@ -28,10 +28,3 @@ Part1에서는 이전 단원에서 만든 템플릿을 기반으로 적응형 �
 **간단한 적응형 양식 만들기**
 
 >[!VIDEO](https://video.tv.adobe.com/v/22173/quality=9)
-
-
-
-
-
-
-
