@@ -1,20 +1,20 @@
 ---
 sub-product: 양식
 audience: developer
-user-guide-title: AEM Forms 비디오 및 Tutorials
+user-guide-title: AEM Forms 비디오 및 자습서
 user-guide-description: Collection of AEM Forms resources for beginners and experienced AEM Forms developers.
 breadcrumb-title: AEM Forms Tutorials
 index: y
 translation-type: tm+mt
-source-git-commit: 4c08b09f59be0eb6644aaec729807b92bc339e82
+source-git-commit: 8aed732a0488aa9303ddf35f6c2065eb08ec0c4c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '843'
+ht-degree: 4%
 
 ---
 
 
-# AEM Forms 비디오 및 Tutorials {#forms}
+# AEM Forms 비디오 및 자습서 {#forms}
 
 + [개요](overview.md)
 + [따라야 할 모범 사례](adaptive-forms/best-practices-adaptive-forms.md)
@@ -169,7 +169,9 @@ ht-degree: 0%
    + [XDP 변환에서 PDF에 사용 권한 적용](document-services/rendering-and-reader-extending-xdp-templates-article.md)
    + [업로드된 PDF에 사용 권한 적용](document-services/apply-reader-extension-rights-to-pdf.md)
    + [문서 인증](document-services/certifying-documents-aem-forms-tutorial.md)
-+ 인쇄 채널을 위한 인터랙티브 커뮤니케이션 {#ic-print-channel-tutorial}
+   + [양식 첨부 파일 조합](document-services/assemble-form-attachments.md)
++ 인쇄 채널을 위한 인터랙티브 커뮤니케이션
+{#ic-print-channel-tutorial}
    + [소개](ic-print-channel-tutorial/introduction.md)
    + [Tomcat 설정](ic-print-channel-tutorial/set-up-tomcat.md)
    + [데이터 소스 만들기](ic-print-channel-tutorial/create-data-source.md)
