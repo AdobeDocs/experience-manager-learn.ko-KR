@@ -10,9 +10,9 @@ version: 6.4,6.5
 kt: 6406
 thumbnail: kt-6406.jpg
 translation-type: tm+mt
-source-git-commit: 8aed732a0488aa9303ddf35f6c2065eb08ec0c4c
+source-git-commit: a9fbd73f128998bb201ef8715e5e725e94ee1ede
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '619'
 ht-degree: 0%
 
 ---
@@ -137,7 +137,7 @@ session.save();
 * 로컬 시스템에 [양식 첨부 파일](assets/assemble-form-attachments-af.zip) 조합 양식을 다운로드합니다.
 * 양식 및 문서 페이지[에서 양식을](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments) 가져옵니다.
 * 워크플로우 [를](assets/assemble-form-attachments.zip) 다운로드하고 패키지 관리자를 사용하여 AEM으로 가져옵니다.
-* 사용자 지정 번들 다운로드(assets/assembletaskattachments.assembletaskattachments.core-1.0-SNAPSHOT.jar)
+* 사용자 [정의 번들 다운로드](assets/assembletaskattachments.assembletaskattachments.core-1.0-SNAPSHOT.jar)
 * [웹 콘솔을 사용하여 번들 배포 및 시작](http://localhost:4502/system/console/bundles)
 * 브라우저에서 첨부 파일 [양식을 가리킵니다.](http://localhost:4502/content/dam/formsanddocuments/assembleattachments/jcr:content?wcmmode=disabled)
 * ID 문서에 첨부 파일을 추가하고 은행 명세서 섹션에 두 개의 pdf 문서를 추가합니다.
