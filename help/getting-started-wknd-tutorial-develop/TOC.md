@@ -6,19 +6,19 @@ doc-type: tutorial
 activity: develop
 audience: developer
 user-guide-title: AEM Sites 시작하기 - WKND 자습서
-user-guide-description: A multi-part tutorial for developers new to AEM. Implement an AEM site for a fictitious lifestyle brand, the WKND.
-breadcrumb-title: AEM Sites WKND Tutorials
+user-guide-description: AEM을 처음 사용하는 개발자를 위한 다양한 자습서입니다. 가상 라이프스타일 브랜드인 WKND에 AEM 사이트를 구현합니다.
+breadcrumb-title: AEM Sites WKND 자습서
 index: y
 translation-type: tm+mt
 source-git-commit: 172a1369cb572b367c78e04c692db8e02e7287e7
 workflow-type: tm+mt
-source-wordcount: '33'
-ht-degree: 12%
+source-wordcount: '56'
+ht-degree: 73%
 
 ---
 
 
-# Getting Started with AEM Sites - WKND Tutorial {#getting-started-wknd-tutorial-develop}
+# AEM Sites 시작하기 - WKND 자습서 {#getting-started-wknd-tutorial-develop}
 
 + [WKND 자습서 개요](overview.md)
 + [프로젝트 설정](project-setup.md)
