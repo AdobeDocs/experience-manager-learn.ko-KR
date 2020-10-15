@@ -2,14 +2,14 @@
 sub-product: 양식
 audience: developer
 user-guide-title: AEM Forms 비디오 및 자습서
-user-guide-description: Collection of AEM Forms resources for beginners and experienced AEM Forms developers.
-breadcrumb-title: AEM Forms Tutorials
+user-guide-description: 초보자 및 숙련된 AEM Forms 개발자를 위한 AEM Forms 리소스 모음입니다.
+breadcrumb-title: AEM Forms 자습서
 index: y
 translation-type: tm+mt
 source-git-commit: 8aed732a0488aa9303ddf35f6c2065eb08ec0c4c
 workflow-type: tm+mt
-source-wordcount: '843'
-ht-degree: 4%
+source-wordcount: '858'
+ht-degree: 6%
 
 ---
 
