@@ -6,14 +6,14 @@ doc-type: tutorial
 activity: develop
 audience: developer
 user-guide-title: Dynamic Media Classic 소개
-user-guide-description: This tutorial shows how to use Dynamic Media Classic to create, author, and deliver rich media content.
-breadcrumb-title: Dynamic Media Classic Tutorials
+user-guide-description: 이 자습서에서는 Dynamic Media Classic을 사용하여 리치 미디어 컨텐츠를 제작, 작성 및 제공하는 방법을 설명합니다.
+breadcrumb-title: Dynamic Media Classic 자습서
 index: y
 translation-type: tm+mt
 source-git-commit: 172a1369cb572b367c78e04c692db8e02e7287e7
 workflow-type: tm+mt
-source-wordcount: '55'
-ht-degree: 7%
+source-wordcount: '76'
+ht-degree: 46%
 
 ---
 
