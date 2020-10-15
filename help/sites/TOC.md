@@ -1,18 +1,18 @@
 ---
-user-guide-title: AEM Sites 비디오 및 Tutorials
-user-guide-description: A collection of videos and tutorials for Adobe Experience Manager Sites.
-breadcrumb-title: AEM Sites Tutorials
+user-guide-title: AEM Sites 비디오 및 자습서
+user-guide-description: Adobe Experience Manager Sites을 위한 비디오 및 자습서 모음입니다.
+breadcrumb-title: AEM Sites 자습서
 sub-product: sites
 translation-type: tm+mt
 source-git-commit: 25ca90f641aaeb93fc9319692f3b099d6b528dd1
 workflow-type: tm+mt
-source-wordcount: '457'
-ht-degree: 8%
+source-wordcount: '471'
+ht-degree: 14%
 
 ---
 
 
-# AEM Sites 비디오 및 Tutorials {#sites}
+# AEM Sites 비디오 및 자습서 {#sites}
 
 + [개요](overview.md)
 + 페이지 작성 {#page-authoring}
@@ -51,7 +51,7 @@ ht-degree: 8%
    + [AEM Sites 시작하기](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
    + [AEM 헤드리스 시작하기](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-with-aem-headless/overview.html)
    + [AEM SPA 편집기 시작 및 반응](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
-   + [AEM SPA 편집기 및 Angular 시작하기](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
+   + [AEM SPA 편집기 및 각도 시작하기](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
    + [페이지 속성 확장](developing/page-properties-technical-video-develop.md)
    + [스타일 시스템을 사용한 개발](developing/style-system-technical-video-understand.md)
    + [스타일 시스템 우수 사례](developing/style-organization-style-system-understand-article.md)
@@ -68,7 +68,7 @@ ht-degree: 8%
    + [SPA 편집기 사용](spa-editor/spa-editor-framework-feature-video-use.md)
    + [Hello World 자습서](spa-editor/spa-editor-helloworld-tutorial-use.md)
    + [AEM SPA 편집기 시작 및 반응](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
-   + [AEM SPA 편집기 및 Angular 시작하기](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
+   + [AEM SPA 편집기 및 각도 시작하기](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
 + Multi Site Management {#multi-site-management}
    + [언어 사본 소개](./multi-site-management/language-copy-overview.md)
    + [Live Copy 및 블루프린트](./multi-site-management/live-copy-and-blueprint.md)
