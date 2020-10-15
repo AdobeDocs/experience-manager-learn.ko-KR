@@ -1,14 +1,14 @@
 ---
 user-guide-title: 클라우드 서비스로서의 Adobe Experience Manager 자습서
-user-guide-description: A collection of tutorials for Adobe Experience Manager as a Cloud Service.
-breadcrumb-title: AEM as a Cloud Service Tutorials
+user-guide-description: Cloud Service로써 Adobe Experience Manager을 위한 자습서 모음입니다.
+breadcrumb-title: Cloud Service로써의 AEM 자습서
 sub-product: 클라우드 서비스
 team: TM
 translation-type: tm+mt
 source-git-commit: 50519b9526182b528047069f211498099e3a4c88
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 25%
+source-wordcount: '197'
+ht-degree: 32%
 
 ---
 
