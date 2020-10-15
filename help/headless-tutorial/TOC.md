@@ -1,7 +1,7 @@
 ---
 user-guide-title: AEM 헤드리스 시작하기
-user-guide-description: An end-to-end tutorial illustrating how to build-out and expose content using AEM Headless.
-breadcrumb-title: AEM Headless Tutorial
+user-guide-description: AEM Headless를 사용하여 컨텐츠를 작성하고 노출하는 방법을 소개하는 종단간 자습서입니다.
+breadcrumb-title: AEM 헤드리스 자습서
 version: 6.5
 sub-product: 컨텐츠 서비스
 doc-type: tutorial
@@ -14,13 +14,13 @@ index: y
 translation-type: tm+mt
 source-git-commit: 172a1369cb572b367c78e04c692db8e02e7287e7
 workflow-type: tm+mt
-source-wordcount: '48'
-ht-degree: 2%
+source-wordcount: '64'
+ht-degree: 42%
 
 ---
 
 
-# Getting Started with AEM Headless{#getting-started-with-aem-headless}
+# AEM 헤드리스 시작하기{#getting-started-with-aem-headless}
 
 + [개요](./overview.md)
 + [1 - 자습서 설정](./chapter-1.md)
