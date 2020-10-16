@@ -10,9 +10,9 @@ version: cloud-service
 kt: 6296
 thumbnail: KT-6296.jpg
 translation-type: tm+mt
-source-git-commit: 97fe98c8c62f5472f7771bbc803b2a47dc97044d
+source-git-commit: 096cdccdf1675480aa0a35d46ce7b62a3906dad1
 workflow-type: tm+mt
-source-wordcount: '1773'
+source-wordcount: '1831'
 ht-degree: 1%
 
 ---
@@ -255,9 +255,13 @@ Adobe 클라이언트 데이터 레이어는 **이벤트** 기반 데이터 레�
 
    * `evar8` - `%Component ID%`
    * `prop8` - `%Component ID%`
-   * `event8` - `CTA Clicked`
+   * `event8`
 
    ![eVar Prop 및 이벤트 설정](assets/track-clicked-component/set-evar-prop-event.png)
+
+   >[!NOTE]
+   >
+   > 여기서는 `%Component ID%` 클릭한 CTA에 대한 고유 식별자를 보관하므로 사용됩니다. Analytics 보고서에 다음과 같은 값 `%Component ID%` 이 포함될 가능성이 있다는 단점이 있습니다 `button-2e6d32893a`. 좀 더 인간적인 면모이지만 그 가치는 특이하지 않을 것이다. `%Component Title%`
 
 1. 그런 다음 **Adobe Analytics 오른쪽에 추가 작업 추가 -** 더하기 **아이콘을 눌러 변수** 설정:
 
@@ -265,9 +269,11 @@ Adobe 클라이언트 데이터 레이어는 **이벤트** 기반 데이터 레�
 
 1. 확장 **유형** 을 **Adobe Analytics** 로 **설정하고** 작업 유형 **을 Send Beacon**&#x200B;으로설정합니다.
 1. [ **추적]** 아래에서 라디오 단추를 로 **`s.tl()`**&#x200B;설정합니다.
-1. 링크 **유형** 사용자 지정 **링크** 및 **링크 이름** 의 경우 값을 데이터 요소 **요소 구성 요소 제목**&#x200B;을 선택합니다.
+1. 링크 **유형** 에 대해 **** 사용자 지정 링크 **를** 선택하고링크 이름에값을 다음으로 설정합니다. **`%Component Title%: CTA Clicked`**:
 
    ![링크 보내기 비콘 구성](assets/track-clicked-component/analytics-send-beacon-link-track.png)
+
+   이렇게 하면 데이터 요소 구성 요소 **제목** 및 정적 문자열 **CTA 클릭됨**&#x200B;의 동적 변수가 결합됩니다.
 
 1. 변경 사항을 저장합니다. 이제 **CTA 클릭됨** 규칙에 다음 구성이 있어야 합니다.
 
