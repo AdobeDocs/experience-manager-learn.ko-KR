@@ -10,9 +10,9 @@ version: cloud-service
 kt: 5332
 thumbnail: 5332-collect-data-analytics.jpg
 translation-type: tm+mt
-source-git-commit: 97fe98c8c62f5472f7771bbc803b2a47dc97044d
+source-git-commit: 096cdccdf1675480aa0a35d46ce7b62a3906dad1
 workflow-type: tm+mt
-source-wordcount: '2402'
+source-wordcount: '2414'
 ht-degree: 2%
 
 ---
@@ -270,6 +270,10 @@ Adobe 클라이언트 데이터 레이어는 **이벤트** 기반 데이터 레�
    >[!TIP]
    >
    >라이브러리를 보다 손쉽게 최신 상태로 유지할 수 있도록 라이브러리 관리 *설정으로* 내 `AppMeasurement.js` 의 라이브러리 관리 옵션을 사용하는 것이 좋습니다.
+
+1. Activity Map 사용을 활성화하려면 **확인란을 선택합니다**.
+
+   ![Activity Map 사용](assets/track-clicked-component/analytic-track-click.png)
 
 1. [ **일반** ] > **추적 서버**]에서 추적 서버를 입력합니다(예: `tmd.sc.omtrdc.net`. 사이트가 지원하는 경우 SSL 추적 서버를 입력합니다 `https://`
 
