@@ -10,9 +10,9 @@ audience: developer
 kt: 4678, 4677
 thumbnail: 32551.jpg
 translation-type: tm+mt
-source-git-commit: ecbd4d21c5f41b2bc6db3b409767b767f00cc5d1
+source-git-commit: 4cfbf975919eb38413be8446b70b107bbfebb845
 workflow-type: tm+mt
-source-wordcount: '1518'
+source-wordcount: '1406'
 ht-degree: 1%
 
 ---
@@ -23,12 +23,6 @@ ht-degree: 1%
 Adobe Experience Manager(AEM)은 AEM을 Cloud Service SDK의 Quickstart Jar로 사용하여 로컬로 실행할 수 있습니다. 이를 통해 개발자는 사용자 정의 코드, 구성 및 컨텐츠를 소스 제어에 커밋하기 전에 배포 및 테스트하고 이를 AEM에 Cloud Service 환경으로 배포할 수 있습니다.
 
 사용자 디렉토리 `~` 의 약칭으로 사용됩니다. Windows의 경우 이 값은 `%HOMEPATH%`
-
->[!VIDEO](https://video.tv.adobe.com/v/32551/?quality=12&learn=on)
-
->[!NOTE]
->
-> 이 비디오에서는 AEM SDK의 로컬 빠른 시작을 사용하여 몇 분 만에 Adobe Experience Manager의 로컬 인스턴스를 설치하고 실행하는 방법을 보여줍니다. 이 비디오는 빠른 시작 Jar 파일을 두 번 클릭하여 AEM SDK의 로컬 빠른 시작을 보여주지만 컴퓨터에 설치된 Java 8에서는 작동하지 않습니다. 또는 이 페이지에 `java -jar ...` 설명된 대로 명령줄을 사용하여 AEM SDK의 로컬 빠른 시작을 명령줄에서 시작할 수 있습니다 [](#set-up-local-aem-author-service).
 
 ## Java 설치
 
@@ -55,9 +49,6 @@ Cloud Service SDK 또는 AEM SDK로 AEM에는 개발을 위해 AEM 작성자 및
 ## AEM SDK zip에서 빠른 시작 Jar 추출
 
 1. 다운로드한 파일의 압축을 `aem-sdk-XXX.zip` 해제합니다.
-1. Experience Manager 개발자 __license.properties__ 파일을 사용할 수 있는지 확인
-
-동일한 빠른 시작 Jar 및 license.properties 파일을 사용하여 AEM 작성자 및 게시 서비스 _모두를_ 시작합니다.
 
 ## 로컬 AEM 작성자 서비스 설정{#set-up-local-aem-author-service}
 
@@ -65,7 +56,6 @@ Cloud Service SDK 또는 AEM SDK로 AEM에는 개발을 위해 AEM 작성자 및
 
 1. 폴더 만들기 `~/aem-sdk/author`
 1. 빠른 __시작 JAR__ 파일을 복사하여 `~/aem-sdk/author` `aem-author-p4502.jar`
-1. license.properties ____ 파일을  `~/aem-sdk/author`
 1. 명령줄에서 다음을 실행하여 로컬 AEM 작성자 서비스를 시작합니다.
    + `java -jar aem-author-p4502.jar`
       + 관리자 암호를 입력합니다 `admin`. 모든 관리자 암호는 사용할 수 있지만 로컬 개발에 기본값을 사용하여 다시 구성할 필요가 없습니다.
@@ -78,7 +68,6 @@ Windows:
 ```shell
 $ mkdir -p c:\Users\<My User>\aem-sdk\author
 $ copy aem-sdk-Quickstart-XXX.jar c:\Users\<My User>\aem-sdk\author\aem-author-p4502.jar
-$ copy ../license.properties c:\Users\<My User>\aem-sdk\author
 $ cd c:\Users\<My User>\aem-sdk\author
 $ java -jar aem-author-p4502.jar
 ```
@@ -88,7 +77,6 @@ macOS/Linux:
 ```shell
 $ mkdir -p ~/aem-sdk/author
 $ cp aem-sdk-Quickstart-XXX.jar ~/aem-sdk/author/aem-author-p4502.jar
-$ cp ../license.properties ~/aem-sdk/author
 $ cd ~/aem-sdk/author
 $ java -jar aem-author-p4502.jar
 ```
@@ -99,7 +87,6 @@ $ java -jar aem-author-p4502.jar
 
 1. 폴더 만들기 `~/aem-sdk/publish`
 1. 빠른 __시작 JAR__ 파일을 복사하여 `~/aem-sdk/publish` `aem-publish-p4503.jar`
-1. license.properties ____ 파일을  `~/aem-sdk/publish`
 1. 명령줄에서 다음을 실행하여 로컬 AEM 게시 서비스를 시작합니다.
    + `java -jar aem-publish-p4503.jar`
       + 관리자 암호를 입력합니다 `admin`. 모든 관리자 암호는 사용할 수 있지만 로컬 개발에 기본값을 사용하여 다시 구성할 필요가 없습니다.
@@ -112,7 +99,6 @@ Windows:
 ```shell
 $ mkdir -p c:\Users\<My User>\aem-sdk\publish
 $ copy aem-sdk-Quickstart-XXX.jar c:\Users\<My User>\aem-sdk\publish\aem-publish-p4503.jar
-$ copy ../license.properties c:\Users\<My User>\aem-sdk\publish
 $ cd c:\Users\<My User>\aem-sdk\publish
 $ java -jar aem-publish-p4503.jar
 ```
@@ -122,7 +108,6 @@ macOS/Linux:
 ```shell
 $ mkdir -p ~/aem-sdk/publish
 $ cp aem-sdk-Quickstart-XXX.jar ~/aem-sdk/publish/aem-publish-p4503.jar
-$ cp ../license.properties ~/aem-sdk/publish
 $ cd ~/aem-sdk/publish
 $ java -jar aem-publish-p4503.jar
 ```
