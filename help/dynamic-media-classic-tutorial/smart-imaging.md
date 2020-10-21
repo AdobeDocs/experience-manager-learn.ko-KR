@@ -8,9 +8,9 @@ topics: development, authoring, configuring, renditions, images
 audience: all
 activity: use
 translation-type: tm+mt
-source-git-commit: 5eeeb197f9a2ee4216e1f9220c830751c36f01ab
+source-git-commit: 317fb625e7af57b7ad0079014c341eab9adda376
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '694'
 ht-degree: 1%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 1%
 
 스마트 이미징은 기존 Dynamic Media Classic 라이선스에 포함되어 있습니다. 이 기능에 대한 추가 비용은 없습니다. 이를 활용하려면 두 가지 요구 사항을 충족해야 합니다.adobe 번들로 묶은 CDN과 전용 도메인이 있습니다. 그러면 계정이 자동으로 활성화되지 않으므로 계정에 대해 활성화해야 합니다.
 
-스마트 이미징 활성화는 기술 지원 요청을 s7support@adobe.com으로 이메일로 전송함으로써 [시작됩니다](mailto:s7support@adobe.com). Smart Imaging과 연결할 사용자 정의 도메인을 설정하는 데 함께 사용할 것입니다. 캐싱(Time To Live 또는 TTL)과 관련된 하나의 매개 변수를 변경하고 지원을 통해 캐시를 지웁니다. 프로덕션으로 푸시하기 전에 원하는 경우 선택적 스테이징 단계를 수행할 수도 있습니다. 스마트 이미징 기능을 활성화하면 고객이 요청한 동일한 품질의 소형 이미지를 제공할 수 있습니다. 이는 Adobe Sensei이 가장 효율적인 크기를 선택하도록 돕기 때문에 페이지 로드 시간이 빨라지고 모든 작업이 자동으로 완료된다는 것을 의미합니다.
+Smart Imaging 활성화는 |지원 사례 만들기| [https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Smart Imaging과 연결할 사용자 지정 도메인을 설정하는 지원이 사용됩니다. 캐싱(Time To Live 또는 TTL)과 관련된 하나의 매개 변수를 변경하고 지원을 통해 캐시를 지웁니다. 프로덕션으로 푸시하기 전에 원하는 경우 선택적 스테이징 단계를 수행할 수도 있습니다. 스마트 이미징 기능을 활성화하면 고객이 요청한 동일한 품질의 소형 이미지를 제공할 수 있습니다. 이는 Adobe Sensei이 가장 효율적인 크기를 선택하도록 돕기 때문에 페이지 로드 시간이 빨라지고 모든 작업이 자동으로 완료된다는 것을 의미합니다.
 
 스마트 이미징을 활성화하면 예상대로 작동하는지 확인합니다.
 
