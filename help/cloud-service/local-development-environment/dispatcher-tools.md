@@ -11,9 +11,9 @@ audience: developer
 kt: 4679
 thumbnail: 30603.jpg
 translation-type: tm+mt
-source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
+source-git-commit: 1b4a927a68d24eeb08d0ee244e85519323482910
 workflow-type: tm+mt
-source-wordcount: '1508'
+source-wordcount: '1534'
 ht-degree: 2%
 
 ---
@@ -26,7 +26,8 @@ Adobe Experience Manager(AEM)의 Dispatcher는 CDN과 AEM 게시 계층 간에 �
 Cloud Service SDK로 AEM에는 발송자를 로컬에 구성, 유효성 검사 및 시뮬레이트하는 데 도움이 되는 권장 발송자 도구 버전이 포함되어 있습니다. 발송자 도구는 다음과 같이 구성됩니다.
 
 + Apache HTTP Web Server 및 Dispatcher 구성 파일의 기본 집합 `.../dispatcher-sdk-x.x.x/src`
-+ 구성 유효성 검사기 CLI 도구( `.../dispatcher-sdk-x.x.x/bin/validator`
++ 구성 유효성 검사기 CLI 도구( `.../dispatcher-sdk-x.x.x/bin/validate` (Dispatcher SDK 2.0.29+)에 있음)
++ 구성 생성 CLI 툴( `.../dispatcher-sdk-x.x.x/bin/validator`
 + 구성 배포 CLI 툴( `.../dispatcher-sdk-x.x.x/bin/docker_run`
 + Dispatcher 모듈과 함께 Apache HTTP 웹 서버를 실행하는 Docker 이미지
 
@@ -39,7 +40,7 @@ Cloud Service SDK로 AEM에는 발송자를 로컬에 구성, 유효성 검사 �
 ## 전제 조건
 
 1. Windows 사용자는 Windows 10 Professional을 사용해야 합니다.
-1. 로컬 개발 컴퓨터에 [Experience Manager 게시](./aem-runtime.md) QuickStart를 설치합니다.
+1. 로컬 개발 컴퓨터에 [Experience Manager 게시 빠른](./aem-runtime.md) 시작 jar를 설치합니다.
    + 원할 경우, 로컬 AEM 게시 서비스에 최신 [AEM 참조](https://github.com/adobe/aem-guides-wknd/releases) 웹 사이트를 설치합니다. 이 웹 사이트는 이 자습서에서 작업 중인 디스패처를 시각화하는 데 사용됩니다.
 1. 로컬 개발 컴퓨터에 최신 버전의 [Docker](https://www.docker.com/) (Docker Desktop 2.2.0.5+/Docker Engine v19.03.9+)를 설치하고 시작합니다.
 
@@ -49,13 +50,10 @@ Cloud Service SDK 또는 AEM SDK인 AEM에는 개발을 위해 Dispatcher 모듈
 
 로컬 AEM 런타임을 [설정하기 위해 AEM을 Cloud Service SDK로 이미 다운로드한 경우에는](./aem-runtime.md)다시 다운로드할 필요가 없습니다.
 
-1. Adobe ID으로 [experience.adobe.com/#/downloads](https://experience.adobe.com/#/downloads) 로그인
-   + AEM을 Cloud Service SDK로 다운로드하려면 Adobe 조직이 Cloud Service으로 프로비저닝되어야 ____ 합니다.
-1. Cloud Service 탭으로 __AEM으로__ 이동
-1. 게시된 __날짜별로 내림차순__ __으로__ 정렬
-1. 최신 __AEM SDK__ 결과 행을 클릭합니다.
-1. EULA를 검토하고 승인한 후 __다운로드__ 단추를 누릅니다
-1. AEM SDK의 Dispatcher Tools v2.0.21+가 사용되는지 확인
+1. Adobe ID으로 [experience.adobe.com/#/downloads](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=AEM*+SDK*&amp;1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AssoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atoting&amp;orderby=%40jcr%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=1) 로그인
+   + AEM을 Cloud Service SDK로 다운로드하려면 Adobe 조직이 AEM을 Cloud Service으로 프로비저닝되어야 ____ 합니다.
+1. 다운로드할 최신 __AEM SDK__ 결과 행을 클릭합니다.
+   + 다운로드 설명에 AEM SDK의 Dispatcher Tools v2.0.29+가 명시되어 있는지 확인
 
 ## AEM SDK zip에서 Dispatcher 도구 추출
 
@@ -92,20 +90,25 @@ Dispatcher 도구는 로컬 개발을 포함하여 모든 환경에 대한 동�
 
 구성 파일에 대한 전체 설명은 압축을 푼 Dispatcher 도구에서 사용할 수 있습니다 `dispatcher-sdk-x.x.x/docs/Config.html`.
 
+## 구성 유효성 확인
+
+선택적으로, Dispatcher 및 Apache 웹 서버 구성(를 통해 `httpd -t`)은 `validate` 스크립트를 사용하여 유효성을 검사할 수 있습니다(실행 파일과 혼동하지 않도록 `validator` 함).
+
++ 사용량:
+   + Windows: `bin\validate src`
+   + macOS/Linux: `./bin/validate ./src`
+
 ## 로컬에서 Dispatcher 실행
 
-Dispatcher를 로컬로 실행하려면 Dispatcher 도구의 CLI 도구를 사용하여 Dispatcher 구성 파일의 유효성을 검사해야 `validator` 합니다.
+Dispatcher를 로컬로 실행하려면 Dispatcher 도구의 CLI 도구를 사용하여 Dispatcher 구성 파일을 `validator` 생성해야 합니다.
 
 + 사용량:
    + Windows: `bin\validator full -d out src`
    + macOS/Linux: `./bin/validator full -d ./out ./src`
 
-유효성 검사는 이중 용도로만 사용됩니다.
+이 명령은 구성을 Docker 컨테이너의 Apache HTTP 웹 서버와 호환되는 파일 세트로 변환합니다.
 
-+ Apache HTTP 웹 서버 및 Dispatcher 구성 파일의 유효성을 확인합니다.
-+ 구성을 Docker 컨테이너의 Apache HTTP Web Server와 호환되는 파일 세트로 변환합니다.
-
-유효성이 확인되면 투명도 구성은 Docker 컨테이너에서 로컬로 Dispatcher를 실행합니다. 유효성 검사기의 옵션을 사용하여 최신 구성의 유효성을 ____ 확인하고 출력해야 `-d` 합니다.
+생성된 투명도 구성은 Docker 컨테이너에서 로컬로 Dispatcher를 실행합니다. 유효성 검사기의 `validate` 옵션 __을 사용하여__ 및 `-d` 출력하여 최신 구성이 유효한지 확인해야 합니다.
 
 + 사용량:
    + Windows: `bin\docker_run <deployment-folder> <aem-publish-host>:<aem-publish-port> <dispatcher-port>`
