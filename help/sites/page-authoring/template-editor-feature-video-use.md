@@ -11,7 +11,7 @@ activity: use
 version: 6.3, 6.4, 6.5
 kt: 193
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 41e2c27cd089e7111b2eb1ef6c344d27980f0741
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 4%
@@ -23,7 +23,7 @@ ht-degree: 4%
 
 편집 가능한 템플릿을 사용하면 전문적인 작성자는 페이지 템플릿을 만들어 업데이트하고 Adobe Experience Manager(AEM) 사이트를 통해 고급 정책 구성을 관리할 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/17455/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326784/?quality=12&learn=on)
 
 편집 가능한 템플릿은 새 AEM Sites을 만들기 위한 권장 사항입니다.
 
