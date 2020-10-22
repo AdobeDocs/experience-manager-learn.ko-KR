@@ -4,9 +4,9 @@ user-guide-description: Adobe Experience Manager Sites을 위한 비디오 및 �
 breadcrumb-title: AEM Sites 자습서
 sub-product: sites
 translation-type: tm+mt
-source-git-commit: 25ca90f641aaeb93fc9319692f3b099d6b528dd1
+source-git-commit: 55beee99b91c44f96cd37d161bb3b4ffe38d2687
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '476'
 ht-degree: 14%
 
 ---
@@ -101,6 +101,7 @@ ht-degree: 14%
    + 분석 {#analytics}
       + [Adobe Analytics을 사용하여 페이지 데이터 수집](integrations/analytics/collect-data-analytics.md)
       + [클릭한 구성 요소를 Adobe Analytics에서 추적](integrations/analytics/track-clicked-component.md)
+      + [Analysis Workspace을 사용하여 데이터 분석](integrations/analytics/create-analytics-workspace.md)
    + Adobe Target {#target}
       + [개요](integrations/adobe-target/overview.md)
       + [Launch 속성에 Target 확장 추가](integrations/adobe-target/add-target-launch-extension.md)
