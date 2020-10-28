@@ -5,10 +5,10 @@ breadcrumb-title: AEM Assets 자습서
 sub-product: 자산
 team: TM
 translation-type: tm+mt
-source-git-commit: 10784dce34443adfa1fc6dc324242b1c021d2a17
+source-git-commit: 159e9d7ea363768f202db91a1d0555c2e57ebb13
 workflow-type: tm+mt
 source-wordcount: '253'
-ht-degree: 33%
+ht-degree: 32%
 
 ---
 
@@ -55,10 +55,9 @@ ht-degree: 33%
 
 + 고급 메타데이터 관리{#metadata}
    + [계단식 메타데이터](metadata/cascade-metadata-feature-video-use.md)
-   + [스마트 태그 개요](metadata/smart-tags-feature-video-use.md)
-   + [스마트 태그 구성](metadata/smart-tags-technical-video-setup.md)
-   + [향상된 스마트 태그](metadata/enhanced-smart-tags-feature-video-use.md)
-   + [고급 스마트 태그 구성](metadata/enhanced-smart-tags-technical-video-setup.md)
+   + [이미지의 스마트 태그](metadata/image-smart-tags.md)
+   + [이미지에 대한 사용자 정의 스마트 태그](metadata/custom-smart-tags.md)
+   + [비디오용 스마트 태그](metadata/video-smart-tags.md)
    + [메타데이터 가져오기 및 내보내기](metadata/metadata-import-feature-video-use.md)
 
 + 공유 및 배포{#sharing}
