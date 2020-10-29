@@ -4,10 +4,10 @@ seo-title: AEM 컨텐츠 서비스 시작하기 - 2장 - 이벤트 컨텐츠 조
 description: AEM 헤드리스 자습서의 2장에서는 이벤트 생성을 위한 정규화된 데이터 구조 및 저작 인터페이스를 정의하는 데 사용되는 컨텐츠 조각 모델을 활성화하고 정의하는 데 사용됩니다.
 seo-description: AEM 헤드리스 자습서의 2장에서는 이벤트 생성을 위한 정규화된 데이터 구조 및 저작 인터페이스를 정의하는 데 사용되는 컨텐츠 조각 모델을 활성화하고 정의하는 데 사용됩니다.
 translation-type: tm+mt
-source-git-commit: 885e30dea2a21dff789c98bdc5beb2f758b806f3
+source-git-commit: 1faf22f2e664b775c11e16cb1dfa18b363a7316b
 workflow-type: tm+mt
-source-wordcount: '968'
-ht-degree: 8%
+source-wordcount: '994'
+ht-degree: 7%
 
 ---
 
@@ -25,9 +25,9 @@ AEM 컨텐츠 조각 모델은 AEM 작성자가 원시 컨텐츠 생성을 템�
 
 ## 컨텐츠 조각 모델 활성화
 
-컨텐츠 조각 모델은 **AEM** 구성 브라우저를 통해 활성화되어야 **[!UICONTROL 합니다]**.
+컨텐츠 조각 모델은 **AEM** 구성 브라우저를 통해 활성화되어야 **[[!UICONTROL 합니다]](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html)**.
 
-컨텐츠 조각 모델이 구성에 대해 **활성화되지** **[!UICONTROL 않은]경우[!UICONTROL 관련 AEM 구성에 대해]** 만들기>컨텐츠 조각버튼이 나타나지 않습니다.
+컨텐츠 조각 모델이 구성에 대해 **활성화되지** **[!UICONTROL 않은] 경우 [!UICONTROL 관련 AEM 구성에 대해]** 만들기>컨텐츠 조각버튼이 나타나지 않습니다.
 
 >[!NOTE]
 >
@@ -36,11 +36,13 @@ AEM 컨텐츠 조각 모델은 AEM 작성자가 원시 컨텐츠 생성을 템�
 >구성이 콘텐츠 계층에 영향을 주려면 해당 콘텐츠 계층 구조의 속성을 통해 구성을 `cq:conf` 참조해야 합니다. (아래 [!DNL WKND Mobile] 5단계 **** 에서 구성을 위해 이 작업을 수행합니다.)
 >
 >구성을 `global` 사용하면 구성이 모든 컨텐츠에 적용되며 설정할 필요가 `cq:conf` 없습니다.
+>
+>See the [[!UICONTROL Configuration Browser] documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html) for more information.
 
 1. 관련 구성을 수정할 수 있는 적절한 권한이 있는 사용자로 AEM Author에 로그인합니다.
    * 이 자습서에서는 **관리자** 사용자를 사용할 수 있습니다.
-1. 도구 **[!UICONTROL >]일반[!UICONTROL >구성브라우저로이동합니다.]**
-1. 선택 옆에 있는 **폴더 아이콘** 을 **[!DNL WKND Mobile]** 누른 다음 왼쪽 상단에 있는 **[!UICONTROL 편집]단추** 를누릅니다.
+1. 도구 **[!UICONTROL >] 일반 [!UICONTROL >구성브라우저로이동합니다.]**
+1. 선택 옆에 있는 **폴더 아이콘** 을 **[!DNL WKND Mobile]** 누른 다음 왼쪽 상단에 있는 **[!UICONTROL 편집] 단추** 를누릅니다.
 1. 컨텐츠 **[!UICONTROL 조각 모델을]**&#x200B;선택하고 오른쪽 상단에서 **[!UICONTROL 저장 및]** 닫기를 누릅니다.
 
    이렇게 하면 구성이 적용된 자산 폴더 컨텐츠 트리에서 컨텐츠 조각 모델을 [!DNL WKND Mobile] 사용할 수 있습니다.
@@ -58,8 +60,8 @@ AEM 컨텐츠 조각 모델은 AEM 작성자가 원시 컨텐츠 생성을 템�
 
 1. 구성 **[!DNL WKND Mobile]** 을 자산 폴더에 **[!DNL WKND Mobile]적용하여 컨텐츠 조각 모델의 컨텐츠 조각을 해당 자산 폴더 계층 내에 만들 수 있도록 합니다** .
 
-   1. AEM **[!UICONTROL >]자산[!UICONTROL >]파일[!UICONTROL 로이동합니다.]**
-   1. WKND **[!UICONTROL 모바일]폴더 선택**
+   1. AEM **[!UICONTROL >] 자산 [!UICONTROL >] 파일 [!UICONTROL 로이동합니다.]**
+   1. WKND **[!UICONTROL 모바일] 폴더 선택**
    1. 상단 작업 **[!UICONTROL 막대의 속성]** 단추를 눌러 폴더 [!UICONTROL 속성을 엽니다.]
    1. 폴더 [!UICONTROL 속성에서]**[!UICONTROL Cloud Services]** 탭을 누릅니다
    1. 클라우드 **[!UICONTROL 구성]** 필드가 **/conf/wknd-mobile로 설정되어 있는지 확인**
@@ -79,7 +81,7 @@ AEM 컨텐츠 조각 모델은 AEM 작성자가 원시 컨텐츠 생성을 템�
 
 ## 컨텐츠 조각 모델 생성
 
-1. Navigate to **[!UICONTROL Tools]>[!UICONTROL Assets]>[!UICONTROL Content Fragment Models]**.
+1. Navigate to **[!UICONTROL Tools] > [!UICONTROL Assets] > [!UICONTROL Content Fragment Models]**.
 1. 폴더를 눌러 **[!DNL WKND Mobile]** 엽니다.
 1. 만들기를 **[!UICONTROL 눌러]** 컨텐츠 조각 모델 생성 마법사를 엽니다.
 1. 모델 제목 **[!DNL Event]** 으로 **[!UICONTROL 입력하고]** *(설명* 선택) **[!UICONTROL 만들기를]** 탭하여저장합니다.
@@ -88,10 +90,10 @@ AEM 컨텐츠 조각 모델은 AEM 작성자가 원시 컨텐츠 생성을 템�
 
 ## 컨텐츠 조각 모델의 구조 정의
 
-1. Navigate to **[!UICONTROL Tools]>[!UICONTROL Assets]>[!UICONTROL Content Fragment Models]>[!DNL WKND]**.
+1. Navigate to **[!UICONTROL Tools] > [!UICONTROL Assets] > [!UICONTROL Content Fragment Models] >[!DNL WKND]**.
 1. 컨텐츠 **[!DNL Event]** 조각 모델을 선택하고 상단 작업 **[!UICONTROL 막대에서]** 편집을 누릅니다.
-1. 오른쪽의 **[!UICONTROL 데이터 유형]탭****** 에서 **[!DNL Question]** 단일 행 텍스트 입력을왼쪽 드롭 영역에 드래그하여필드를 정의합니다.
-1. 왼쪽에서 새 **[!UICONTROL 단일 행 텍스트 입력]** 이 선택되어 있고 오른쪽에 **[!UICONTROL 속성]탭** 이선택되어 있는지 확인합니다. 다음과 같이 속성 필드를 채웁니다.
+1. 오른쪽의 **[!UICONTROL 데이터 유형] 탭****** 에서 **[!DNL Question]** 단일 행 텍스트 입력을왼쪽 드롭 영역에 드래그하여필드를 정의합니다.
+1. 왼쪽에서 새 **[!UICONTROL 단일 행 텍스트 입력]** 이 선택되어 있고 오른쪽에 **[!UICONTROL 속성] 탭** 이선택되어 있는지 확인합니다. 다음과 같이 속성 필드를 채웁니다.
 
    * [!UICONTROL 렌더링 형식] : `textfield`
    * [!UICONTROL 필드 레이블] : `Event Title`
