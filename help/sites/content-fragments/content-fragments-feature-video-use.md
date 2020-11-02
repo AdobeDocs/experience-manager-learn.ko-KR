@@ -9,9 +9,9 @@ doc-type: feature video
 activity: use
 version: 6.3, 6.4, 6.5
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 1faf22f2e664b775c11e16cb1dfa18b363a7316b
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '396'
 ht-degree: 6%
 
 ---
@@ -39,7 +39,7 @@ AEM 컨텐츠 조각은 디자인이나 레이아웃 정보 없이 일부 구조
 
 >[!VIDEO](https://video.tv.adobe.com/v/22452/?quality=12&learn=on)
 
-컨텐츠 조각의 데이터 스키마인 AEM 컨텐츠 조각 모델은 AEM [!UICONTROL 구성 브라우저를]통해 활성화되어야 하며, 이를 통해 구성 단위로 컨텐츠 조각 모델을 정의할 수 있습니다.
+컨텐츠 조각의 데이터 스키마인 AEM 컨텐츠 조각 모델은 AEM [[!UICONTROL 구성 브라우저를]](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html)통해 활성화되어야 하며, 이를 통해 구성 단위로 컨텐츠 조각 모델을 정의할 수 있습니다.
 
 ## 컨텐츠 조각 만들기 {#creating-content-fragments}
 
