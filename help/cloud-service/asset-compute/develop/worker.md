@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6282
 thumbnail: KT-6282.jpg
 translation-type: tm+mt
-source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
+source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
 workflow-type: tm+mt
-source-wordcount: '1508'
+source-wordcount: '1418'
 ht-degree: 0%
 
 ---
@@ -30,18 +30,20 @@ ht-degree: 0%
 
 자산 계산 작업자는 개념적으로, `renditionCallback(...)` 함수에서 자산 계산 SDK 작업자 API 계약을 구현합니다.
 
-+ __입력:__ AEM 자산의 원래 자산 이진 및 매개 변수
++ __입력:__ AEM 자산의 원래 이진 및 처리 프로필 매개 변수
 + __출력:__ AEM 자산에 추가할 하나 이상의 변환
 
 ![자산 계산 작업자 논리 흐름](./assets/worker/logical-flow.png)
 
-1. 자산 계산 작업자가 AEM 작성자 서비스에서 호출되면 처리 프로필을 통해 AEM 자산에 대해 호출됩니다. 자산의 __(1a)__ 원래 바이너리는 변환 콜백 함수의 매개 변수를 통해 작업자에게 전달되고, `source` (1b) __매개 변수 세트를 통해 처리 프로필에 정의된 모든 매개 변수__ 가 `rendition.instructions` 사용됩니다.
-1. Asset Compute SDK 레이어는 처리 프로필의 요청을 수락하고 사용자 지정 Asset Compute 작업자 `renditionCallback(...)` 함수 실행을 오케스트레이션하여 __(1a)__ 소스 바이너리를 __(1b)__ 에서 제공하는 매개 변수를 기반으로 변환하여 소스 바이너리의 변환을생성합니다.
-   + 이 자습서에서는 변환이 &quot;진행 중&quot;으로 만들어집니다. 이는 작업자가 변환을 구성하지만 변환 생성을 위해 소스 바이너리를 다른 웹 서비스 API로 전송할 수 있음을 의미합니다.
-1. 자산 계산 작업자가 변환의 이진 표현을 저장하여 AEM 작성자 서비스에 저장할 수 `rendition.path` 있도록 합니다.
-1. 완료되면, 보낸 바이너리 데이터 `rendition.path` 는 Asset Compute SDK를 통해 전송되고 AEM UI에서 사용할 수 있는 변환으로 AEM 작성자 서비스를 통해 노출됩니다.
+1. AEM 작성자 서비스는 자산의 __(1a)__ 원래 이진(매개 변수)`source` 및 __(1b)__ 처리 프로필(`rendition.instructions` 매개 변수)에 정의된 모든 매개 변수를 제공하여 자산 계산 작업자를호출합니다.
+1. Asset Compute SDK는 사용자 지정 Asset Compute 메타데이터 작업자 `renditionCallback(...)` 기능의 실행을 구성하며 자산의 원래 이진 __(1a)__ 및 모든 매개 변수 __(1b)__&#x200B;에 따라 새 이진 변환을 생성합니다.
 
-위의 다이어그램은 Asset Compute 개발자 대면 관련 문제와 Asset Compute 작업자 호출로의 논리 흐름을 기술합니다. 궁금한 사항을 위해 자산 계산 실행에 [대한](https://docs.adobe.com/content/help/en/asset-compute/using/extend/custom-application-internals.html) 내부 세부 사항은 사용할 수 있지만 공개 자산 계산 SDK API 계약만 의존해야 합니다.
+   + 이 자습서에서는 변환이 &quot;진행 중&quot;으로 만들어집니다. 이는 작업자가 변환을 구성하지만 변환 생성을 위해 소스 바이너리를 다른 웹 서비스 API로 전송할 수 있음을 의미합니다.
+
+1. 자산 계산 작업자는 새 변환의 이진 데이터를 저장합니다 `rendition.path`.
+1. 에 기록된 이진 데이터 `rendition.path` 는 자산 계산 SDK를 통해 AEM 작성자 서비스로 전송되고 __(4a)__ 텍스트 변환 및 __(4b)__ 자산의 메타데이터 노드에 지속됩니다.
+
+위의 다이어그램은 Asset Compute 개발자 대면 관련 문제와 Asset Compute 작업자 호출로의 논리 흐름을 기술합니다. 궁금한 사항을 위해 자산 계산 실행에 [대한](https://docs.adobe.com/content/help/en/asset-compute/using/extend/custom-application-internals.html) 내부 세부 사항은 사용할 수 있지만 공개 자산 계산 SDK API 계약만 의존할 수 있습니다.
 
 ## 근로자의 구조
 
@@ -316,7 +318,7 @@ class RenditionInstructionsError extends ClientError {
 이제 작업자 코드가 완료되고, [manifest.yml](./manifest.md)에 이전에 등록 및 구성되었으므로 로컬 자산 계산 개발 도구를 사용하여 실행하여 결과를 볼 수 있습니다.
 
 1. 자산 계산 프로젝트의 루트에서
-1. 실행 `app aio run`
+1. 실행 `aio app run`
 1. 자산 계산 개발 도구가 새 창에서 열릴 때까지 대기
 1. 파일 __선택..__ 드롭다운에서 처리할 샘플 이미지를 선택합니다.
    + 소스 에셋 바이너리로 사용할 샘플 이미지 파일 선택
@@ -391,11 +393,4 @@ Adobe 코드에서는 다음에 대한 매개 변수를 허용합니다.
 
 ## 문제 해결
 
-### 변환이 부분적으로 그려집니다.
-
-+ __오류__:변환은 전체 변환 파일 크기가 클 때 완전히 렌더링되지 않습니다.
-
-   ![문제 해결 - 변환이 부분적으로 그려집니다.](./assets/worker/troubleshooting__await.png)
-
-+ __원인__:변환을 완전히 쓰기 전에 근로자의 `renditionCallback` 기능이 종료된다 `rendition.path`.
-+ __해상도__:사용자 지정 작업자 코드를 검토하고 모든 비동기 호출이 동기식으로 수행되었는지 확인합니다.
++ [변환이 부분적으로 그림/손상된](../troubleshooting.md#rendition-returned-partially-drawn-or-corrupt)
