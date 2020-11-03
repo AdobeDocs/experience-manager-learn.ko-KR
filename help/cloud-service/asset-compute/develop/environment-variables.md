@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6270
 thumbnail: KT-6270.jpg
 translation-type: tm+mt
-source-git-commit: 50519b9526182b528047069f211498099e3a4c88
+source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '588'
 ht-degree: 0%
 
 ---
@@ -113,8 +113,4 @@ AWS_REGION=us-east-1
 
 ## 문제 해결
 
-### private.key가 누락되어 자산 계산 로컬 개발 도구를 시작할 수 없습니다.
-
-+ __오류:__ 로컬 개발 서버오류:validatePrivateKeyFile에 필요한 파일이 없습니다.... (표준에서 나온 명령 `aio app run` 사용)
-+ __원인:__ 파일 `ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH` 의 값이 `.env` 가리켜지지 `private.key` 않거나 현재 사용자가 읽을 수 `private.key` 없습니다.
-+ __해결 방법:__ 파일의 `ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH` 값을 `.env` 검토하고 파일 시스템에 대한 전체 절대 경로를 포함하는지 `private.key` 확인합니다.
++ [private.key가 누락되어 개발 도구를 시작할 수 없습니다.](../troubleshooting.md#missing-private-key)
