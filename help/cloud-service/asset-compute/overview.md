@@ -10,9 +10,9 @@ audience: developer
 kt: 5802
 thumbnail: KT-5802.jpg
 translation-type: tm+mt
-source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
+source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '1028'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 AEM as Cloud Service(Asset Compute microservices)는 사용자 정의 에셋 변환을 만들기 위해 일반적으로 AEM에 저장된 에셋의 이진 데이터를 읽고 조작하는 데 사용되는 사용자 정의 작업자의 개발 및 배포를 지원합니다.
 
-반면 AEM 6.x 사용자 정의 AEM 워크플로우 프로세스는 자산 표현물을 읽고, 변환하고, 다시 쓰는 데 사용되었지만, AEM에서는 Cloud Service 자산 계산 직원이 이러한 요구를 충족합니다.
+반면 AEM 6.x 사용자 정의 AEM 워크플로우 프로세스는 자산 표현물을 읽고, 변형하고, 다시 쓰는 데 사용되었지만, AEM에서는 Cloud Service 자산 계산 직원이 이러한 요구를 충족시키는 역할을 했습니다.
 
 ## 무엇을 할 것인가
 
@@ -112,7 +112,7 @@ AEM as Cloud Service(Asset Compute microservices)는 사용자 정의 에셋 변
 
 ## 배포
 
-사용자 지정 에셋 컴퓨팅 작업자를 Cloud Service으로 통합한 다음, 먼저 Adobe I/O Runtime에 배포한 다음 AEM Assets 처리 프로필을 통해 Cloud Service 작성자로 AEM에서 불러오면 됩니다.
+사용자 지정 자산 컴퓨팅 작업자를 Cloud Service으로 통합한 다음, 먼저 Adobe I/O Runtime에 배포한 다음 AEM에서 AEM 자산의 처리 프로필을 통해 Cloud Service 작성자로 불러오면 됩니다.
 
 ### Adobe I/O Runtime에 배포
 
@@ -122,13 +122,19 @@ AEM과 Cloud Service을 함께 사용하려면 자산 계산 작업자를 Adobe 
 
 ### AEM 처리 프로필을 통해 직원 통합
 
-Adobe I/O Runtime에 배포되면 자산 계산 작업자는 자산 처리 프로필을 통해 AEM에 Cloud Service으로 [등록할 수 있습니다](../../assets/configuring/processing-profiles.md). 처리 프로필은 해당 자산에 적용되는 Assets 폴더에 적용됩니다.
+Adobe I/O Runtime에 배포되면 자산 계산 작업자는 자산 처리 프로필을 통해 AEM에 Cloud Service으로 [등록할 수 있습니다](../../assets/configuring/processing-profiles.md). 처리 프로필은 해당 자산에 적용되는 자산 폴더에 적용됩니다.
 
 + [AEM 처리 프로필과 통합](./deploy/processing-profiles.md)
 
-## Github에 대한 자습서 코드
+## 고급
 
-자습서 코드 베이스는 다음 위치의 Github에서 사용할 수 있습니다.
+이 요약된 자습서는 이전 장에 확립된 기초 학습 자료를 바탕으로 보다 진보적인 활용 사례를 제공합니다.
+
++ [메타데이터를 다시](./advanced/metadata.md)
+
+## Codebase on Github
+
+튜토리얼의 코드베이스는 다음 위치의 Github에서 사용할 수 있습니다.
 
 + [adobe/aem-guides-wknd-asset-compute](https://github.com/adobe/aem-guides-wknd-asset-compute) @ 마스터 분기
 
@@ -142,14 +148,13 @@ Adobe I/O Runtime에 배포되면 자산 계산 작업자는 자산 처리 프�
 
 + [자산 계산 서비스 설명서](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html)
 + [자산 계산 개발 도구 읽어보기](https://github.com/adobe/asset-compute-devtool)
-
-### 기타 코드 샘플
-
 + [자산 계산 예제 근로자](https://github.com/adobe/asset-compute-example-workers)
 
 ### API 및 SDK
 
 + [자산 계산 SDK](https://github.com/adobe/asset-compute-sdk)
    + [에셋 컴퓨팅 공용](https://github.com/adobe/asset-compute-commons)
+   + [Asset Compute XMP](https://github.com/adobe/asset-compute-xmp#readme)
 + [Adobe 클라우드 블로브스토어 래퍼 라이브러리](https://github.com/adobe/node-cloud-blobstore-wrapper)
 + [Adobe 노드 가져오기 재시도 라이브러리](https://github.com/adobe/node-fetch-retry)
++ [자산 계산 예제 근로자](https://github.com/adobe/asset-compute-example-workers)
