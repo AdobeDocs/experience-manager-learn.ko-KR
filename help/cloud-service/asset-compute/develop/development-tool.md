@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6283
 thumbnail: 40241.jpg
 translation-type: tm+mt
-source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
+source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '536'
 ht-degree: 0%
 
 ---
@@ -84,24 +84,10 @@ _개발 도구에서 에셋 계산 작업을 실행하는 클릭스루(오디오
 
 ## 문제 해결
 
-### 소스 파일 드롭다운이 잘못되었습니다.{#troubleshooting__dev-tool-application-cache}
-
-자산 계산 개발 도구는 오래된 데이터를 가져오는 상태에 들어갈 수 있으며, 소스 파일 ____ 드롭다운에서 잘못된 항목을 표시하는 것이 가장 눈에 띄었습니다.
-
-+ __오류:__ 소스 파일 드롭다운에 잘못된 항목이 표시됩니다.
-+ __원인:__ 오래된 캐시된 브라우저 상태로 인해
-+ __해결 방법:__ 브라우저에서 브라우저 탭의 &quot;응용 프로그램 상태&quot;, 브라우저 캐시, 로컬 저장소 및 서비스 작업자를 완전히 지웁니다.
-
-### devToolToken 쿼리 매개 변수가 없거나 잘못되었습니다.{#troubleshooting__devtooltoken}
-
-+ __오류:__ 자산 계산 개발 도구의 &quot;권한 없음&quot; 알림
-+ __원인:__`devToolToken` 없거나 잘못되었습니다.
-+ __해결 방법:__ 자산 계산 개발 도구 브라우저 창을 닫고, 명령을 통해 시작된 모든 실행 중인 개발 도구 프로세스를 `aio app run` 종료하고 개발 도구를 다시 시작합니다(사용 `aio app run`).
-
-### 소스 파일을 제거할 수 없습니다.{#troubleshooting__remove-source-files}
-
-+ __오류:__ 개발 도구 UI에서 추가된 소스 파일을 제거할 방법이 없습니다.
-+ __원인:__ 이 기능은 구현되지 않았습니다.
-+ __해결 방법:__ 에 정의된 자격 증명을 사용하여 클라우드 스토리지 공급자에 로그인합니다 `.env`. 개발 도구(에 지정됨)에서 사용하는 컨테이너 `.env`를 찾아 __소스__ 폴더로 이동한 다음 소스 이미지를 삭제합니다. 삭제된 소스 파일이 개발 도구 &quot;응용 프로그램 상태&quot;에서 로컬에 캐싱될 수 있으므로 드롭다운에 계속 표시되는 경우 [소스 파일 드롭다운에](#troubleshooting__dev-tool-application-cache) 설명된 단계를 수행해야 할 수 있습니다.
-
-   ![Microsoft Azure Blob 저장소](./assets/development-tool/troubleshooting__remove-source-files.png)
++ [잘못된 YAML 들여쓰기](../troubleshooting.md#incorrect-yaml-indentation)
++ [memorySize 제한이 너무 낮게 설정되어 있습니다.](../troubleshooting.md#memorysize-limit-is-set-too-low)
++ [private.key가 누락되어 개발 도구를 시작할 수 없습니다.](../troubleshooting.md#missing-private-key)
++ [소스 파일 드롭다운이 잘못되었습니다.](../troubleshooting.md#source-files-dropdown-incorrect)
++ [devToolToken 쿼리 매개 변수가 없거나 잘못되었습니다.](../troubleshooting.md#missing-or-invalid-devtooltoken-query-parameter)
++ [소스 파일을 제거할 수 없습니다.](../troubleshooting.md#unable-to-remove-source-files)
++ [변환이 부분적으로 그림/손상된](../troubleshooting.md#rendition-returned-partially-drawn-or-corrupt)
