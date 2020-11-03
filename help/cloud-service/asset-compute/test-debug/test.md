@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6284
 thumbnail: KT-6284.jpg
 translation-type: tm+mt
-source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
+source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '631'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 ...
 /test/
   asset-compute/
-    <worker-name>/           <--- Test suite for the worker
+    <worker-name>/           <--- Test suite for the worker, must match the yaml key for this worker in manifest.yml
         <test-case-1>/       <--- Specific test case 
             file.jpg         <--- Input file (ie. `source.path` or `source.url`)
             params.json      <--- Parameters (ie. `rendition.instructions`)
@@ -118,21 +118,5 @@ ht-degree: 0%
 
 ## 문제 해결
 
-### 생성된 변환 없음
-
-변환을 생성하지 않으면 테스트 케이스가 실패합니다.
-
-+ __오류:__ 실패:생성된 변환이 없습니다.
-+ __원인:__ JavaScript 구문 오류와 같은 예기치 않은 오류로 인해 Worker에서 변환을 생성하지 못했습니다.
-+ __해결 방법:__ 테스트 실행을 `test.log` 검토합니다 `/build/test-results/test-worker/test.log`. 이 파일에서 실패한 테스트 케이스에 해당하는 섹션을 찾아 오류를 검토합니다.
-
-   ![문제 해결 - 생성된 변환 없음](./assets/test/troubleshooting__no-rendition-generated.png)
-
-### 테스트가 잘못된 변환을 생성합니다.
-
-테스트 케이스가 잘못된 변환을 생성하지 못합니다.
-
-+ __오류:__ 실패:&#39;rendition.xxx&#39; 변환이 예상대로 표시되지 않습니다.
-+ __원인:__ 작업자가 테스트 케이스에 제공된 것과 동일하지 않은 변환을 `rendition.<extension>` 출력합니다.
-   + 예상 `rendition.<extension>` 파일이 테스트 케이스에서 로컬로 생성된 변환과 동일한 방식으로 만들어지지 않으면 비트 간의 차이가 있기 때문에 테스트가 실패할 수 있습니다. 테스트 케이스의 예상 변환이 Development Tool에서 저장된 경우, 즉 Adobe I/O Runtime 내에서 생성된 비트가 기술적으로 다를 수 있으므로, 인간의 관점에서 예상되는 변환 파일과 실제 변환 파일이 동일하더라도 테스트가 실패할 수 있습니다.
-+ __해결 방법:__ 테스트로 이동하여 테스트의 변환 출력을 검토하고 테스트 케이스 `/build/test-worker/<worker-name>/<test-run-timestamp>/<test-case>/rendition.<extension>`에서 예상 변환 파일과 비교합니다.
++ [테스트 실행 중 생성된 변환 없음](../troubleshooting.md#test-no-rendition-generated)
++ [테스트가 잘못된 변환을 생성합니다.](../troubleshooting.md#tests-generates-incorrect-rendition)
