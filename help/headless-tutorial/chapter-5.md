@@ -2,7 +2,7 @@
 title: 5장 - 컨텐츠 서비스 페이지 작성
 description: AEM Headless 자습서의 5장에서는 4장에 정의된 템플릿에서 페이지 만들기를 다룹니다. 이러한 페이지는 JSON HTTP 끝점으로 작동합니다.
 translation-type: tm+mt
-source-git-commit: 22ccd6627a035b37edb180eb4633bc3b57470c0c
+source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
 workflow-type: tm+mt
 source-wordcount: '594'
 ht-degree: 0%
@@ -20,7 +20,7 @@ AEM Headless 자습서의 5장에서는 4장에 정의된 템플릿에서 페이
 
 ## 이벤트 API 페이지 만들기
 
-1. AEM **[!UICONTROL >]사이트[!UICONTROL >]>[!DNL WKND Mobile]>[!DNL English]>[!DNL API]**&#x200B;으로 이동합니다.
+1. AEM **[!UICONTROL >] 사이트 [!UICONTROL >] > [!DNL WKND Mobile] > [!DNL English] >[!DNL API]**&#x200B;으로 이동합니다.
 1. **API 페이지**&#x200B;레이블을 누른 다음 상단 작업 표시줄의 **만들기** 단추를 누르고 API 페이지 아래에 새 이벤트 API 페이지를 만듭니다.
    1. 상단 **작업** 표시줄에서 만들기를 누릅니다.
    1. 이벤트 **API** 템플릿 선택
@@ -44,7 +44,7 @@ AEM Headless 자습서의 5장에서는 4장에 정의된 템플릿에서 페이
 1. 이벤트 위에 표시할 **태그** 행을 추가합니다.
    1. 텍스트 구성 **요소** 편집
    1. 텍스트를 입력합니다.
-      1. `The WKND is here.`
+      * `The WKND is here.`
 
 1. 표시할 **이벤트를** 선택합니다.
    1. 속성 탭에서 다음 **구성을** 설정합니다.
