@@ -5,9 +5,9 @@ breadcrumb-title: Cloud Service로써의 AEM 자습서
 sub-product: 클라우드 서비스
 team: TM
 translation-type: tm+mt
-source-git-commit: 50519b9526182b528047069f211498099e3a4c88
+source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '201'
 ht-degree: 32%
 
 ---
@@ -69,4 +69,8 @@ ht-degree: 32%
    + Deploy{#deploy}
       + [Adobe I/O Runtime에 배포](./asset-compute/deploy/runtime.md)
       + [AEM과 통합](./asset-compute/deploy/processing-profiles.md)
+   + 고급{#advanced}
+      + [메타데이터 작업자](./asset-compute/advanced/metadata.md)
+   + [문제 해결](./asset-compute/troubleshooting.md)
+
 + [AEM Sites 개발 시작 - WKND 자습서](./develop-wknd-tutorial.md)
