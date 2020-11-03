@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6281
 thumbnail: KT-6281.jpg
 translation-type: tm+mt
-source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
+source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---
@@ -122,14 +122,5 @@ packages:
 
 ## 문제 해결
 
-### 잘못된 YAML 들여쓰기
-
-+ __오류:__ YAMLException:라인 X, 열 Y:(표준 출력 명령을 통해)에서 매핑 항목의 잘못된 들여쓰기 `aio app run` 가
-+ __원인:__ Yaml 파일은 흰색 간격에 민감하므로 들여쓰기가 올바르지 않을 수 있습니다.
-+ __해결 방법:__ 문서를 검토하고 `manifest.yml` 모든 들여쓰기가 올바른지 확인하십시오.
-
-### memorySize 제한이 너무 낮게 설정되어 있습니다.
-
-+ __오류:__ 로컬 개발 서버 OpenWhiskError:PUT https://adobeioruntime.net/api/v1/namespaces/xxx-xxx-xxx/actions/xxx-0.0.1/__secured_workeroverwrite=true이(가) HTTP 400을 반환했습니다(잘못된 요청) —> &quot;요청 컨텐츠의 형식이 잘못되었습니다. 요구 사항 실패:메모리 64MB가 허용된 임계값 134217728B&quot;보다 낮음
-+ __원인:__ 매니페스트의 `memorySize` 제한이 오류 메시지에 의해 보고되는 최소 허용 임계값(바이트)보다 낮게 설정되었습니다.
-+ __해결 방법:__ 제한 `memorySize` 을 검토하고 `manifest.yml` 모두 허용된 최소 임계값보다 커야 합니다.
++ [잘못된 YAML 들여쓰기](../troubleshooting.md#incorrect-yaml-indentation)
++ [memorySize 제한이 너무 낮게 설정되어 있습니다.](../troubleshooting.md#memorysize-limit-is-set-too-low)
