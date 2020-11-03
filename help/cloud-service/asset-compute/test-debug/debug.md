@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6285
 thumbnail: 40383.jpg
 translation-type: tm+mt
-source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
+source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '618'
 ht-degree: 0%
 
 ---
@@ -103,40 +103,9 @@ _wskdebug(오디오 없음)를 사용하여 자산 계산 작업자 디버깅의
 
 ## 문제 해결
 
-### 디버거가 연결되지 않음
-
-+ __오류__:론치를 처리하는 동안 오류 발생:오류:...에서 디버그 타겟에 연결할 수 없습니다.
-+ __원인__:Docker Desktop이 로컬 시스템에서 실행되고 있지 않습니다. VS 코드 디버그 콘솔([보기] > [디버그 콘솔])을 검토하여 이 오류가 보고되었는지 확인합니다.
-+ __해상도__:Docker [Desktop을 시작하고 필수 Docker 이미지가 설치되었는지](../set-up/development-environment.md#docker)확인합니다.
-
-### 중단점이 일시 중지되지 않음
-
-+ __오류__:디버그 가능 개발 도구에서 자산 계산 작업자를 실행할 때 VS 코드가 중단점에서 일시 중지되지 않습니다.
-
-#### VS 코드 디버거가 연결되지 않았습니다.
-
-+ __원인:__ VS 코드 디버거가 중지/연결이 끊어졌습니다.
-+ __해결 방법:__ VS 코드 디버거를 다시 시작하고 VS 코드 디버그 출력 콘솔(보기 > 디버그 콘솔)을 시청하여 VS 코드 디버그 디버거가 첨부되는지 확인합니다.
-
-#### 작업자 실행이 시작된 후 연결된 VS 코드 디버거
-
-+ __원인:__ VS 코드 디버거가 개발 도구에서 __실행을 탭하기__ 전에 연결되지 않았습니다.
-+ __해결 방법:__ VS 코드의 디버그 콘솔(보기 > 디버그 콘솔)을 검토한 다음 개발 도구에서 자산 계산 작업자를 다시 실행하여 디버거가 연결되었는지 확인합니다.
-
-### 디버깅 시 작업 시간 초과
-
-+ __오류__:디버그 콘솔에서는 &quot;작업 시간이 -XXX 밀리초&quot; 또는 [Asset Compute Development Tool의](../develop/development-tool.md) 변환 미리 보기가 무기한 또는
-+ __원인__:디버깅 중에 manifest.yml에 정의된 작업자 시간 [이](../develop/manifest.md) 초과되었습니다.
-+ __해상도__:manifest.yml에서 작업자의 시간 초과를 [일시적으로 늘리거나 디버깅](../develop/manifest.md) 활동을 가속화합니다.
-
-### 디버거 프로세스를 종료할 수 없습니다.
-
-+ __오류__: `Ctrl-C` 명령줄에서 디버거 프로세스를 종료하지 않습니다(`npx adobe-asset-compute devtool`).
-+ __원인__:1.3.x의 버그로 인해 종료 명령으로 인식되지 `@adobe/aio-cli-plugin-asset-compute` `Ctrl-C` 않습니다.
-+ __해상도__:버전 1.4.1+ `@adobe/aio-cli-plugin-asset-compute` 로 업데이트
-
-   ```
-   $ aio update
-   ```
-
-   ![문제 해결 - aio 업데이트](./assets/debug/troubleshooting__terminate.png)
++ [디버거가 연결되지 않음](../troubleshooting.md#debugger-does-not-attach)
++ [중단점이 일시 중지되지 않음](../troubleshooting.md#breakpoints-no-pausing)
++ [VS 코드 디버거가 연결되지 않음](../troubleshooting.md#vs-code-debugger-not-attached)
++ [작업자 실행이 시작된 후 연결된 VS 코드 디버거](../troubleshooting.md#vs-code-debugger-attached-after-worker-execution-began)
++ [디버깅 시 작업 시간 초과](../troubleshooting.md#worker-times-out-while-debugging)
++ [디버거 프로세스를 종료할 수 없습니다.](../troubleshooting.md#cannot-terminate-debugger-process)
