@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6287
 thumbnail: KT-6287.jpg
 translation-type: tm+mt
-source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
+source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
 workflow-type: tm+mt
-source-wordcount: '778'
+source-wordcount: '630'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 1%
    + __확장:__ `png`
       + 생성할 변환의 확장. 이 `png` 가 Worker 웹 서비스에서 지원하는 출력 포맷이므로 원 뒤에 투명한 배경이 잘립니다.
    + __끝점:__ `https://...adobeioruntime.net/api/v1/web/wkndAemAssetCompute-0.0.1/worker`
-      + 이 URL은 을 통해 받는 작업자의 URL입니다 `aio app get-url`. 처리 프로필이 구성된 Cloud Service 환경으로 AEM을 기반으로 올바른 작업 영역에서 URL 포인트를 확인합니다. 이 하위 도메인은 `development` 작업 공간과 일치한다는 점을 참고하십시오.
+      + 이 URL은 을 통해 받는 작업자의 URL입니다 `aio app get-url`. AEM을 기준으로 올바른 작업 영역에서 URL을 Cloud Service 환경으로 확인합니다.
       + 작업자 URL이 올바른 작업 영역을 가리키는지 확인합니다. CLOUD SERVICE 스테이지로 AEM은 스테이지 작업 공간 URL을 사용하고, Cloud Service 프로덕션으로 AEM은 프로덕션 작업 공간 URL을 사용해야 합니다.
    + __서비스 매개 변수__
       + 매개 변수 __추가를 누릅니다.__
@@ -54,7 +54,7 @@ ht-degree: 1%
       + 이러한 키/값 쌍은 자산 계산 작업자로 전달되고 `rendition.instructions` JavaScript 개체를 통해 사용할 수 있습니다.
    + __MIME 유형__
       + __포함:__`image/jpeg`, `image/png`, `image/gif`, `image/bmp`, `image/tiff`
-         + 이러한 MIME 유형은 작업자의 웹 서비스가 지원하는 유일한 형식이며, 이는 사용자 지정 작업자가 처리할 수 있는 자산을 제한합니다.
+         + 이러한 MIME 유형은 작업자의 npm 모듈만 해당합니다. 이 목록은 사용자 지정 근로자가 처리할 자산을 제한합니다.
       + __제외:__ `Leave blank`
          + 이 서비스 구성을 사용하여 MIME 형식을 사용하여 자산을 처리하지 마십시오. 이 경우 허용 목록만 사용합니다.
 1. 오른쪽 __상단에 있는 저장을__ 누릅니다.
@@ -83,26 +83,9 @@ ht-degree: 1%
 
 + [aem-guides-wknd-asset-compute](https://github.com/adobe/aem-guides-wknd-asset-compute)
 
-_Github contains is the final state of the project, fully built with the worker and test cases, but does not contain any credentials, ie.`.env`,`.config.json`또는`.aio`._
+_Github contains is the final state of the project, fully built with the worker and test cases, but does not contain any credentials, ie. `.env`, `.config.json` 또는 `.aio`._
 
 ## 문제 해결
 
-### 자산에 사용자 지정 표현물이 없습니다.
-
-+ __오류:__ 새 자산 및 재처리된 에셋이 성공적으로 처리되었지만 사용자 지정 변환이 없습니다.
-
-#### 상위 폴더에 처리 프로필이 적용되지 않음
-
-+ __원인:__ 사용자 지정 작업자를 사용하는 처리 프로필의 폴더 아래에 자산이 없습니다.
-+ __해결 방법:__ 자산의 상위 폴더에 처리 프로필 적용
-
-#### 처리 프로필은 낮은 처리 프로필로 대체됨
-
-+ __원인:__ 자산은 사용자 지정 작업자 처리 프로필이 적용된 폴더 아래에 있지만, 고객 작업자를 사용하지 않는 다른 처리 프로필은 해당 폴더와 자산 사이에 적용되었습니다.
-+ __해결 방법:__ 두 처리 프로필 결합 또는 다른 방법으로 대사하고 중간 처리 프로필 제거
-
-### 자산 처리 실패
-
-+ __오류:__ 자산에 표시된 자산 처리 실패 배지
-+ __원인:__ 사용자 지정 작업자를 실행하는 동안 오류가 발생했습니다.
-+ __해결 방법:__ 를 사용하여 Adobe I/O Runtime 활동 [디버깅에 대한 지침을](../test-debug/debug.md#aio-app-logs) 따릅니다 `aio app logs`.
++ [AEM의 자산에서 사용자 지정 변환이 없습니다.](../troubleshooting.md#custom-rendition-missing-from-asset)
++ [AEM에서 자산 처리 실패](../troubleshooting.md#asset-processing-fails)
