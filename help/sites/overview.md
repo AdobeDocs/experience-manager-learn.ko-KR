@@ -1,14 +1,14 @@
 ---
-title: AEM Sites Tutorials
-seo-title: AEM Sites Tutorials
+title: AEM Sites 자습서
+seo-title: AEM Sites 자습서
 description: 'Adobe Experience Manager Sites을 위한 비디오 및 자습서 모음입니다. '
-seo-description: Adobe Experience Manager Sites을 위한 비디오 및 자습서 컬렉션
+seo-description: Adobe Experience Manager Sites을 위한 비디오 및 자습서 모음입니다
 sub-product: 사이트, 컨텐츠 서비스
 translation-type: tm+mt
-source-git-commit: 2325132bc5fecf6637d6c105b66d4455e7edf485
+source-git-commit: 23664bae44b74ee35ab7f7cb415d2ba017ea8752
 workflow-type: tm+mt
 source-wordcount: '396'
-ht-degree: 5%
+ht-degree: 20%
 
 ---
 
@@ -19,35 +19,29 @@ Adobe Experience Manager(AEM) Sites는 선도적인 경험 관리 플랫폼입�
 
 ## 새로운 기능
 
-* **[AEM SPA 편집기 및 반응](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)시작(자습서)**
+* **[AEM SPA 편집기 시작 및 반응](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html) (자습서)**
 
-   <br>
-   *React를 사용하여 단일 페이지 애플리케이션(SPA)과 AEM을 통합하는 개발자를 위한 시작 가이드*
+   *개발자가 반응형 기능을 사용하여 단일 페이지 애플리케이션(SPA)과 AEM을 통합하는 시작 가이드*
 
-* **[AEM SPA 편집기 및 각도](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)시작(자습서)**
+* **[AEM SPA 편집기 및 각도](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html) 시작하기(자습서)**
 
-   <br>
    *Angular를 사용하여 단일 페이지 애플리케이션(SPA)과 AEM을 통합하는 개발자를 위한 시작 가이드*
 
 * **[AEM 헤드리스 시작하기(자습서)](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-with-aem-headless/overview.html)**
 
-   <br>
    *헤드리스 CMS 시나리오에서 AEM 콘텐츠를 기본 모바일 앱에서 노출시키는 방법*
 
 * **[경험 조각 사용(비디오 시리즈)](./experience-fragments/experience-fragments-feature-video-use.md)**
 
-   <br>
    *콘텐츠 크로스채널 홍보를 위한 AEM 경험 조각에 대해 알아보십시오.*
 
 * **[컨텐츠 조각 사용(비디오 시리즈)](./content-fragments/content-fragments-feature-video-use.md)**
 
-   <br>
    *컨텐츠 조각은 채널에 관계없이 재사용할 수 있는 컨텐츠입니다.*
 
 * **[SPA 편집기 사용(비디오)](./spa-editor/spa-editor-framework-feature-video-use.md)**
 
-   <br>
-   *단일 페이지 애플리케이션(SPA)을 위한 AEM 편집 기능에 대해 알아보십시오.*
+   *단일 페이지 애플리케이션(SPA)을 위한 AEM 편집 기능에 대해 알아봅니다.*
 
 ## 직원 선택
 
@@ -89,7 +83,7 @@ Adobe Experience Manager(AEM) Sites는 선도적인 경험 관리 플랫폼입�
       </a>
     </div>
     <p>
-    <em>단일 페이지 애플리케이션(SPA)과 AEM을 통합하는 개발자를 위한 시작 가이드입니다.</em>
+    <em>단일 페이지 애플리케이션(SPA)과 AEM을 통합하는 개발자를 위한 시작 가이드</em>
     <p>
   </td>
 </tr>
@@ -102,7 +96,7 @@ Adobe Experience Manager(AEM) Sites는 선도적인 경험 관리 플랫폼입�
 * [AEM Sites 개발 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/developing/user-guide.html)
 * [AEM Sites 관리 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/administering/user-guide.html)
 * [AEM Sites 배포 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/user-guide.html)
-* [CLOUD SERVICE Tutorials으로 AEM](/help/cloud-service/overview.md)
-* [AEM Assets Tutorials](/help/assets/overview.md)
-* [AEM Forms Tutorials](/help/forms/overview.md)
-* [AEM Foundation Tutorials](/help/foundation/overview.md)
+* [AEM as a Cloud Service 자습서](/help/cloud-service/overview.md)
+* [AEM Assets 자습서](/help/assets/overview.md)
+* [AEM Forms 자습서](/help/forms/overview.md)
+* [AEM Foundation 자습서](/help/foundation/overview.md)
