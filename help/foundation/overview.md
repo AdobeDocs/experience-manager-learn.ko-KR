@@ -1,13 +1,13 @@
 ---
-title: AEM Foundation 비디오 및 Tutorials
-seo-title: AEM Foundation 비디오 및 Tutorials
-description: 'Adobe Experience Manager 재단을 위한 비디오 및 자습서 모음입니다. '
-seo-description: Adobe Experience Manager 재단을 위한 비디오 및 자습서 컬렉션
+title: AEM Foundation 비디오 및 자습서
+seo-title: AEM Foundation 비디오 및 자습서
+description: 'Adobe Experience Manager Foundation을 위한 비디오 및 자습서 모음입니다. '
+seo-description: Adobe Experience Manager Foundation을 위한 비디오 및 자습서 모음입니다
 translation-type: tm+mt
-source-git-commit: e19e177589df7ce6a56c0be3f9d590cbca2f8ce7
+source-git-commit: 23664bae44b74ee35ab7f7cb415d2ba017ea8752
 workflow-type: tm+mt
 source-wordcount: '261'
-ht-degree: 1%
+ht-degree: 22%
 
 ---
 
@@ -19,22 +19,15 @@ Adobe Experience Manager은 AEM Sites 및 사용자가 사용할 수 있는 공�
 ## 새로운 기능
 
 * **[AEM(비디오)에서 워크플로우 관리 사용](./workflow/use-workflow-management.md)**
-
-   <br>
-   *AEM은 실행 중인 워크플로우를 시각적으로 파악하고 정의를 간편하게 관리할 수[!DNL Workflow]있습니다.*
+   *AEM은 실행 중인 워크플로우를 시각적으로 파악하고 정의를 간편하게 관리할 수 [!DNL Workflow] 있습니다.*
 
 * **[AEM용 Cloud Manager 이해(비디오)](./cloud-manager/understand-cloud-manager-for-aem.md)**\
-   <br>
-
    *AEM용 Cloud Manager를 사용하면 AEM 환경을 손쉽게 관리, 검사 및 셀프 서비스를 이용할 수 있습니다.*
 
 * **[Adobe I/O에 사용할 공개 및 개인 키 설정(자습서)](./authentication/set-up-public-private-keys-for-use-with-aem-and-adobe-io.md)**\
-   <br>
-   *AEM 및 Adobe I/O에서 작동하는 키 및 키 저장소[!DNL openssl]가 생성되는 방법을 알아봅니다.*
+   *AEM 및 Adobe I/O에서 작동하는 키 및 키 저장소 [!DNL openssl] 가 생성되는 방법을 알아봅니다.*
 
 * **[Cloud Manager CI/CD 파이프라인 사용(비디오)](./cloud-manager/use-the-cicd-pipeline-in-cloud-manager-for-aem.md)**\
-   <br>
-
    *Cloud Manager의 CI/CD 파이프라인을 사용하여 안전하고 일관된 배포를 보장하는 방법을 알아봅니다.*
 
 ## 직원 선택
@@ -86,7 +79,7 @@ Adobe Experience Manager은 AEM Sites 및 사용자가 사용할 수 있는 공�
 ## 추가 리소스
 
 * [Experience League - AEM 살펴보기](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
-* [CLOUD SERVICE Tutorials으로 AEM](/help/cloud-service/overview.md)
-* [AEM Sites 비디오 및 Tutorials](/help/sites/overview.md)
-* [AEM Assets 비디오 및 Tutorials](/help/assets/overview.md)
-* [AEM Forms 비디오 및 Tutorials](/help/forms/overview.md)
+* [AEM as a Cloud Service 자습서](/help/cloud-service/overview.md)
+* [AEM Sites 비디오 및 자습서](/help/sites/overview.md)
+* [AEM Assets 비디오 및 자습서](/help/assets/overview.md)
+* [AEM Forms 비디오 및 자습서](/help/forms/overview.md)
