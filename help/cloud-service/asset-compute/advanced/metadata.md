@@ -1,6 +1,6 @@
 ---
-title: 자산 계산 메타데이터 작업자 개발
-description: 이미지 자산에서 가장 일반적으로 사용되는 색상을 파생하고 색상 이름을 다시 AEM의 에셋 메타데이터에 쓰는 에셋 계산 메타데이터 작업자를 만드는 방법을 알아봅니다.
+title: asset compute 메타데이터 작업자 개발
+description: 이미지 자산에서 가장 일반적으로 사용되는 색상을 파생하고 색상 이름을 AEM의 자산 메타데이터에 다시 쓰는 Asset compute 메타데이터 작업자를 만드는 방법을 알아봅니다.
 feature: asset-compute
 topics: metadata, development
 version: cloud-service
@@ -10,49 +10,49 @@ doc-type: tutorial
 kt: 6448
 thumbnail: 327313.jpg
 translation-type: tm+mt
-source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
+source-git-commit: c2a8e6c3ae6dcaa45816b1d3efe569126c6c1e60
 workflow-type: tm+mt
-source-wordcount: '1420'
+source-wordcount: '1434'
 ht-degree: 1%
 
 ---
 
 
-# 자산 계산 메타데이터 작업자 개발
+# asset compute 메타데이터 작업자 개발
 
-사용자 지정 자산 계산 작업자는 AEM으로 다시 전송되어 자산에 메타데이터로 저장되는 XMP(XML) 데이터를 생성할 수 있습니다.
+사용자 정의 Asset compute 작업자는 AEM으로 다시 전송되고 에셋에 메타데이터로 저장되는 XMP(XML) 데이터를 생성할 수 있습니다.
 
 일반적인 사용 사례는 다음과 같습니다.
 
 + PIM(제품 정보 관리 시스템)과 같은 타사 시스템과의 통합(추가 메타데이터를 검색하여 자산에 저장해야 함)
 + 콘텐츠 및 커머스 AI와 같은 Adobe 서비스와의 통합을 통해 추가 머신 러닝 특성으로 에셋 메타데이터 추가
-+ 자산의 메타데이터를 이진 파일에서 추출하여 AEM에 Cloud Service으로 자산 메타데이터로 저장
++ 이진 파일에서 에셋에 대한 메타데이터를 추출하여 AEM에 Cloud Service으로 에셋 메타데이터로 저장
 
 ## 무엇을 할 것인가
 
 >[!VIDEO](https://video.tv.adobe.com/v/327313?quality=12&learn=on)
 
-이 자습서에서는 이미지 자산에서 가장 일반적으로 사용되는 색상을 파생하고 색상 이름을 다시 AEM의 에셋 메타데이터에 쓰는 에셋 계산 메타데이터 작업자를 만듭니다. 작업자 자체는 기본이지만 이 튜토리얼에서는 자산 계산 작업자를 사용하여 메타데이터를 AEM의 자산에 Cloud Service으로 쓰는 방법을 살펴봅니다.
+이 자습서에서는 이미지 자산에서 가장 일반적으로 사용되는 색상을 파생하고 색상 이름을 AEM의 자산 메타데이터에 다시 쓰는 Asset compute 메타데이터 작업자를 만듭니다. 작업자 자체는 기본이지만 이 튜토리얼에서는 Asset compute 작업자가 메타데이터를 AEM의 자산에 다시 쓰는 데 Cloud Service을 사용하는 방법을 살펴봅니다.
 
-## 자산 계산 메타데이터 작업자 호출의 논리 흐름
+## asset compute 메타데이터 작업자 호출의 논리적 흐름
 
-Asset Compute 메타데이터 작업자의 호출은 작업자 [생성](../develop/worker.md)이진 변환의 호출과 거의 동일하며 반환 유형은 자산의 메타데이터에도 값이 작성되는 XMP(XML) 변환입니다.
+asset compute 메타데이터 작업자의 호출은 작업자 [생성](../develop/worker.md)이진 변환의 호출과 거의 동일하며 반환 유형은 자산의 메타데이터에도 값이 기록되는 XMP(XML) 변환입니다.
 
-자산 계산 작업자는 개념적으로, `renditionCallback(...)` 함수에서 자산 계산 SDK 작업자 API 계약을 구현합니다.
+asset compute 작업자는 개념적으로 다음과 같은 함수에서 Asset compute SDK 작업자 API 계약을 `renditionCallback(...)` 구현합니다.
 
 + __입력:__ AEM 자산의 원래 이진 및 처리 프로필 매개 변수
 + __출력:__ AEM 자산에 대한 변환과 자산의 메타데이터로 지속된 XMP(XML) 변환
 
-![자산 계산 메타데이터 작업자 논리 흐름](./assets/metadata/logical-flow.png)
+![asset compute 메타데이터 작업자 논리 흐름](./assets/metadata/logical-flow.png)
 
-1. AEM 작성자 서비스는 자산 계산 메타데이터 작업자를 호출하여 자산의 __(1a)__ 원래 이진 및 __(1b)__ 처리 프로필에 정의된 모든 매개 변수를 제공합니다.
-1. 자산 계산 SDK는 자산의 이진 `renditionCallback(...)` (1a) __및 모든 처리 프로필 매개 변수__ (1b) __에 따라 XMP(XML) 변환을 파생하면서 사용자 지정 자산 계산 메타데이터 작업자__&#x200B;의 기능 실행을 오케스트레이화합니다.
-1. 자산 계산 작업자는 XMP(XML) 표현을 저장합니다 `rendition.path`.
-1. XMP(XML) 데이터 `rendition.path` 는 Asset Compute SDK를 통해 AEM Author Service로 전송되며 이를 __(4a)__ 텍스트 변환 및 __(4b)__ 자산의 메타데이터 노드에남아 있는 것으로 노출합니다.
+1. AEM 작성자 서비스는 Asset compute 메타데이터 작업자를 호출하여 자산의 __(1a)__ 원래 바이너리 및 __(1b)__ 처리 프로필에 정의된 모든 매개 변수를 제공합니다.
+1. asset compute SDK는 자산의 이진 `renditionCallback(...)` (1a) __및 모든 처리 프로필 매개 변수__ (1b) __에 따라 XMP(XML) 변환을 도출하여 사용자 정의 Asset compute 메타데이터 작업자__&#x200B;의 기능 실행을 오케스트레이션합니다.
+1. asset compute 작업자는 XMP(XML) 표현을 에 저장합니다 `rendition.path`.
+1. XMP(XML) 데이터 `rendition.path` 는 Asset compute SDK를 통해 AEM 작성자 서비스로 전송되며 __(4a)__ 텍스트 변환 및 __(4b)__ 에셋의 메타데이터 노드에 지속되도록 노출됩니다.
 
 ## manifest.html 구성{#manifest}
 
-모든 자산 계산 작업자는 [manifest.yml에 등록되어 있어야 합니다](../develop/manifest.md).
+모든 Asset compute 작업자는 manifest. [yml에 등록되어 있어야 합니다](../develop/manifest.md).
 
 프로젝트 `manifest.yml` 를 열고 새 작업자를 구성하는 작업자 항목을 추가합니다(이 경우) `metadata-colors`.
 
@@ -87,11 +87,11 @@ packages:
 
 ## 메타데이터 작업자 개발{#metadata-worker}
 
-새 작업자에 대해 [정의된 manifest.yml 경로의 자산 계산 프로젝트에서 새 메타데이터 작업자 JavaScript 파일을 만듭니다](#manifest). `/actions/metadata-colors/index.js`
+새 작업자에 대해 [](#manifest)정의된 manifest.yml 경로의 Asset compute 프로젝트에 새 메타데이터 작업자 JavaScript 파일을 만듭니다( `/actions/metadata-colors/index.js`
 
 ### npm 모듈 설치
 
-이 자산 계산 작업자에 사용할 추가 npm 모듈([@adobe/asset-compute-xmp](https://www.npmjs.com/package/@adobe/asset-compute-xmp?activeTab=versions), [get-image-colors](https://www.npmjs.com/package/get-image-colors)및 [color-namer](https://www.npmjs.com/package/color-namer))을 설치합니다.
+이 Asset compute 작업자에 사용할 추가 npm 모듈([@adobe/asset-compute-xmp](https://www.npmjs.com/package/@adobe/asset-compute-xmp?activeTab=versions), [get-image-color](https://www.npmjs.com/package/get-image-colors)및 [color-namer](https://www.npmjs.com/package/color-namer))을설치합니다.
 
 ```
 $ npm install @adobe/asset-compute-xmp
@@ -180,14 +180,14 @@ function getColorName(colorsFamily, color) {
 
 ## 로컬에서 메타데이터 작업자 실행{#development-tool}
 
-작업자 코드가 완료되면 로컬 자산 계산 개발 도구를 사용하여 실행할 수 있습니다.
+작업자 코드가 완료되면 로컬 Asset compute 개발 도구를 사용하여 실행할 수 있습니다.
 
-Asset Compute 프로젝트에는 두 명의 작업자(이전 [원 변환](../develop/worker.md) 및 이 `metadata-colors` 근로자)가 포함되어 있으므로 [Asset Compute Development Tool의](../develop/development-tool.md) 프로파일 정의에는 두 작업자 모두에 대한 실행 프로필이 나열됩니다. 두 번째 프로파일 정의는 새 `metadata-colors` 작업자를 가리킵니다.
+asset compute 프로젝트에는 두 명의 작업자(이전 [원 변환](../develop/worker.md) 및 이 근로자)가 포함되어 있으므로 `metadata-colors` Asset compute 개발 도구의 [프로파일 정의에는 두 작업자 모두에 대한 실행 프로필이](../develop/development-tool.md) 나열됩니다. 두 번째 프로파일 정의는 새 `metadata-colors` 작업자를 가리킵니다.
 
 ![XML 메타데이터 변환](./assets/metadata/metadata-rendition.png)
 
-1. 자산 계산 프로젝트의 루트에서
-1. 실행 `aio app run` 을 통해 자산 계산 개발 도구 시작
+1. asset compute 프로젝트의 루트에서
+1. 실행 `aio app run` 을 통해 Asset compute 개발 도구 시작
 1. 파일 __선택..__ 드롭다운에서 처리할 [샘플 이미지](../assets/samples/sample-file.jpg) 선택
 1. 작업자를 가리키는 두 번째 프로필 정의 구성에서 이 작업자는 XMP(XML) 변환 `metadata-colors` `"name": "rendition.xml"` 을 생성하므로 업데이트합니다. 매개 변수(지원되는 값 `colorsFamily` , `basic`, `hex`, `html``ntc`, `pantone`등)를 추가할 수도 `roygbiv`있습니다.
 
@@ -208,9 +208,9 @@ Asset Compute 프로젝트에는 두 명의 작업자(이전 [원 변환](../dev
 
 ## 작업자 테스트{#test}
 
-메타데이터 작업자는 이진 표현물과 [동일한 에셋 계산 테스트 프레임워크를 사용하여 테스트할 수 있습니다](../test-debug/test.md). 유일한 차이점은 테스트 케이스의 `rendition.xxx` 파일이 예상 XMP(XML) 변환이어야 한다는 것입니다.
+메타데이터 작업자는 이진 표현물과 [동일한 Asset compute 테스트 프레임워크를 사용하여 테스트할 수 있습니다](../test-debug/test.md). 유일한 차이점은 테스트 케이스의 `rendition.xxx` 파일이 예상 XMP(XML) 변환이어야 한다는 것입니다.
 
-1. 자산 계산 프로젝트에서 다음 구조를 만듭니다.
+1. asset compute 프로젝트에서 다음 구조를 만듭니다.
 
    ```
    /test/asset-compute/metadata-colors/success-pantone/
@@ -239,7 +239,7 @@ Asset Compute 프로젝트에는 두 명의 작업자(이전 [원 변환](../dev
    <?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:wknd="https://wknd.site/assets/1.0/"><rdf:Description><wknd:colors><rdf:Seq><rdf:li>Silver</rdf:li><rdf:li>Black</rdf:li><rdf:li>Outer Space</rdf:li></rdf:Seq></wknd:colors><wknd:colorsFamily>pantone</wknd:colorsFamily></rdf:Description></rdf:RDF>
    ```
 
-5. 자산 계산 프로젝트 `aio app test` 의 루트에서 실행하여 모든 테스트 세트를 실행합니다.
+5. asset compute 프로젝트 `aio app test` 의 루트에서 실행하여 모든 테스트 세트를 실행합니다.
 
 ### 작업자를 Adobe I/O Runtime에 배포{#deploy}
 
@@ -304,15 +304,15 @@ $ aio app deploy
 1. 폴더 또는 하위 폴더로 이동하여 처리 프로필이
 1. 새 이미지(JPEG, PNG, GIF 또는 SVG)를 폴더에 업로드하거나 업데이트된 처리 프로필을 사용하여 기존 이미지를 [다시 처리합니다](#processing-profile)
 1. 처리가 완료되면 자산을 선택하고 상단 작업 표시줄의 __속성을__ 눌러 해당 메타데이터를 표시합니다
-1. 사용자 지정 자산 계산 메타데이터 작업자로부터 `Colors Family` 다시 작성된 메타데이터에 대한 `Colors` 및 [메타데이터 필드를](#metadata-schema) 검토합니다.
+1. 사용자 지정 Asset compute 메타데이터 작업자로부터 `Colors Family` 다시 작성된 메타데이터에 대한 `Colors` 및 [메타데이터 필드를](#metadata-schema) 검토합니다.
 
-이제 이 색상 메타데이터를 XMP 데이터(다음 XMP 다시 쓰기 시)로 바이너리에 다시 쓸 수 있을 뿐만 아니라 전체 텍스트 검색을 통해 자산 검색 기능을 사용할 수 있습니다.
+자산의 메타데이터에 기록된 색상 메타데이터로 `[dam:Asset]/jcr:content/metadata` 리소스에 의해 이 메타데이터는 검색을 통해 이러한 용어를 사용하여 자산 검색 기능이 증가하는 인덱싱되며, DAM 메타데이터 쓰기 ____ 작업 과정이 호출되면 자산의 바이너리에 다시 기록될 수도 있습니다.
 
 ### AEM Assets의 메타데이터 변환
 
 ![AEM Assets 메타데이터 변환 파일](./assets/metadata/cqdam-metadata-rendition.png)
 
-자산 계산 메타데이터 작업자가 생성한 실제 XMP 파일도 자산의 개별 변환으로 저장됩니다. 이 파일은 일반적으로 사용되지 않으며, 자산의 메타데이터 노드에 적용된 값이 사용되지만 작업자의 원시 XML 출력은 AEM에서 사용할 수 있습니다.
+asset compute 메타데이터 작업자가 생성한 실제 XMP 파일도 자산에 대해 개별 변환으로 저장됩니다. 이 파일은 일반적으로 사용되지 않으며, 자산의 메타데이터 노드에 적용된 값이 사용되지만 작업자의 원시 XML 출력은 AEM에서 사용할 수 있습니다.
 
 ## Github의 메타데이터 색상 작업자 코드
 
