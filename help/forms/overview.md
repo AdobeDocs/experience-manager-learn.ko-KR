@@ -1,14 +1,14 @@
 ---
 title: AEM Forms Tutorials 및 비디오
 seo-title: AEM Forms Tutorials 및 비디오
-description: 초보자 및 숙련된 AEM Forms 개발자를 위한 AEM Forms 리소스 컬렉션
-seo-description: 초보자 및 숙련된 AEM Forms 개발자를 위한 AEM Forms 리소스 컬렉션
+description: 초보자 및 숙련된 AEM Forms 개발자를 위한 AEM Forms 리소스 모음입니다
+seo-description: 초보자 및 숙련된 AEM Forms 개발자를 위한 AEM Forms 리소스 모음입니다
 sub-product: 양식
 translation-type: tm+mt
-source-git-commit: b085a2c75f8e0b4860d503774ea01a108773ad09
+source-git-commit: 23664bae44b74ee35ab7f7cb415d2ba017ea8752
 workflow-type: tm+mt
 source-wordcount: '303'
-ht-degree: 1%
+ht-degree: 14%
 
 ---
 
@@ -21,18 +21,15 @@ Adobe Experience Manager(AEM)은 백엔드 프로세스, 비즈니스 규칙 및
 
 * **[양식 데이터 모델 서비스 호출 단계의 오류 메시지 처리](./adaptive-forms/handling-error-messages-in-invoke-fdm-step.md)**
 
-   <br>
    *워크플로우 모델의 변수는 데이터 유형을 기반으로 값을 저장하는 방법입니다*
 
 * **[대화형 통신 문서의 다중 시리즈 차트(비디오)](./interactive-communications/multiseriescharts.md)**
 
-   <br>
    *동일한 차트에서 둘 이상의 시리즈를 플롯.여러 시리즈 차트는 일반적으로 라인,막대,열 차트 유형과 연관되어 사용됩니다.*
 
 * **[재사용 가능한 워크플로우 모델 만들기](./adaptive-forms/re-usable-aem-forms-workflow-models-article.md)**
 
-   <br>
-   _특정 양식과 연결되지 않은 워크플로우 모델 만들기_
+   *특정 양식과 연결되지 않은 워크플로우 모델 만들기*
 
 ## 직원 선택
 
@@ -87,7 +84,7 @@ Adobe Experience Manager(AEM)은 백엔드 프로세스, 비즈니스 규칙 및
 * [AEM Sites 개발 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/developing/user-guide.html)
 * [AEM Sites 관리 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/administering/user-guide.html)
 * [AEM Sites 배포 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/user-guide.html)
-* [CLOUD SERVICE Tutorials으로 AEM](/help/cloud-service/overview.md)
-* [AEM Assets Tutorials](/help/assets/overview.md)
-* [AEM Forms Tutorials](/help/forms/overview.md)
-* [AEM Foundation Tutorials](/help/foundation/overview.md)
+* [AEM as a Cloud Service 자습서](/help/cloud-service/overview.md)
+* [AEM Assets 자습서](/help/assets/overview.md)
+* [AEM Forms 자습서](/help/forms/overview.md)
+* [AEM Foundation 자습서](/help/foundation/overview.md)
