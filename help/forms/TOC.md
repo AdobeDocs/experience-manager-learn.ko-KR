@@ -6,9 +6,9 @@ user-guide-description: 초보자 및 숙련된 AEM Forms 개발자를 위한 AE
 breadcrumb-title: AEM Forms 자습서
 index: y
 translation-type: tm+mt
-source-git-commit: 8aed732a0488aa9303ddf35f6c2065eb08ec0c4c
+source-git-commit: 9d4e864f42fa6c0b2f9b895257db03311269ce2e
 workflow-type: tm+mt
-source-wordcount: '858'
+source-wordcount: '898'
 ht-degree: 6%
 
 ---
@@ -94,7 +94,18 @@ ht-degree: 6%
    + [사용자 지정 열 추가](inbox-customization/add-married-column.md)
    + [Sightly 템플릿 사용](inbox-customization/use-sightly-template.md)
 
-
++ 응용 양식 저장 및 검색{#store-and-retrieve-af-with-2fa}
+   + [소개](store-and-retrieve-af-with-2fa/introduction.md)
+   + [데이터 소스 구성](store-and-retrieve-af-with-2fa/configure-data-source.md)
+   + [양식 첨부 파일 저장](store-and-retrieve-af-with-2fa/store-form-attachments.md)
+   + [양식 데이터 저장](store-and-retrieve-af-with-2fa/store-form-data.md)
+   + [서블릿 만들기](store-and-retrieve-af-with-2fa/create-servlet.md)
+   + [저장된 데이터를 사용하여 양식 렌더링](store-and-retrieve-af-with-2fa/retrieve-saved-form.md)
+   + [클라이언트 라이브러리 만들기](store-and-retrieve-af-with-2fa/create-client-lib.md)
+   + [OTP 서비스와 통합](store-and-retrieve-af-with-2fa/verify-users-with-otp.md)
+   + [기본 양식 만들기](store-and-retrieve-af-with-2fa/create-the-main-adaptive-form.md)
+   + [MyAccount 양식 만들기](store-and-retrieve-af-with-2fa/create-the-myaccount-form.md)
+   + [샘플 배포](store-and-retrieve-af-with-2fa/deploy-this-sample.md)
 + CSV 형식으로 제출된 데이터 내보내기{#export-submitted-data-csv-format}
    + [제출된 데이터 내보내기](export-submitted-data-csv-format/export-submitted-data-csv.md)
 + HTML5 양식{#html5-forms}
@@ -109,7 +120,7 @@ ht-degree: 6%
    + [적응형 양식 만들기 및 구성](aem-forms-and-adobe-sign/create-and-configure-adaptive-form.md)
    + [단일 서명자를 위한 적응형 양식 구성](aem-forms-and-adobe-sign/configure-adaptive-form-for-single-signer.md)
    + [두 서명자를 위한 적응형 양식 구성](aem-forms-and-adobe-sign/configure-adaptive-form-for-two-signers.md)
-   + [자동화된 Forms 전환 서비스 구성](aem-forms-and-adobe-sign/configure-automated-forms-conversion-service.md)
+   + [automated forms conversion 서비스 구성](aem-forms-and-adobe-sign/configure-automated-forms-conversion-service.md)
    + [PDF 양식을 적응형 양식으로 변환](aem-forms-and-adobe-sign/convert-pdf-form-into-adaptive-form.md)
    + [변환된 응용 양식 구성](aem-forms-and-adobe-sign/configure-converted-adaptive-form.md)
    + [Adobe Sign에서 XDP 템플릿 사용](aem-forms-and-adobe-sign/using-xdp-templates-with-adobe-sign.md)
