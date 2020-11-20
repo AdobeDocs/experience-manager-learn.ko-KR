@@ -12,7 +12,7 @@ activity: setup
 version: 6.4
 discoiquuid: 548fb2ec-cfcf-4fe2-a02a-14f267618d68
 translation-type: tm+mt
-source-git-commit: f07680e73316efb859a675f4b2212d8c3e03f6a0
+source-git-commit: 233ad7184cb48098253a78c07a3913356ac9e774
 workflow-type: tm+mt
 source-wordcount: '762'
 ht-degree: 1%
@@ -46,7 +46,7 @@ afData.afUnboundData.data.initialStep,N
 
 * [DevelopingWithServiceUserBundle 다운로드 및 배포](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-*[setvalue 번들을 다운로드하고 배포합니다](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). 전송된 json 데이터에서 요소의 값을 설정할 수 있는 맞춤형 OSGI 번들입니다.
+* [setvalue 번들을 다운로드하고 배포합니다](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). 전송된 json 데이터에서 요소의 값을 설정할 수 있는 맞춤형 OSGI 번들입니다.
 
 * [zip 파일의 콘텐트를 다운로드하고 추출합니다.](assets/set-value-jsondata.zip)
    * 브라우저에서 [패키지 관리자 지정](http://localhost:4502/crx/packmgr/index.jsp)
@@ -63,10 +63,8 @@ afData.afUnboundData.data.initialStep,N
 * 첫 번째 패널의 필드가 비활성화됩니다.
 * 이제 요청을 승인하거나 거절하는 패널이 표시됩니다.
 
-
-
 >[!NOTE]
-
+>
 >사용자 프로필을 사용하여 응용 양식을 미리 채우고 있으므로 관리 [사용자 프로필 정보를 확인하십시오 ](http://localhost:4502/security/users.html). 최소한 FirstName, LastName 및 Email 필드 값을 설정해야 합니다.
 >여기에서 com.aemforms.setvalue.core.SetValueInJson에 대한 로거를 활성화하여 디버그 로깅을 활성화할 [수 있습니다](http://localhost:4502/system/console/slinglog)
 
