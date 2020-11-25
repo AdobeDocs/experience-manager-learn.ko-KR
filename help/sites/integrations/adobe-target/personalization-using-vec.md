@@ -10,9 +10,9 @@ version: cloud-service
 kt: 6352
 thumbnail: 6352-personalization-using-vec.jpg
 translation-type: tm+mt
-source-git-commit: 7a830d5a04ce53014b86f9f05238dd64f79edffc
+source-git-commit: 988e390dd9e1fc6033b3651db151e6a60ce4efaa
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '518'
 ht-degree: 0%
 
 ---
@@ -22,10 +22,12 @@ ht-degree: 0%
 
 VEC(Visual Experience Composer)를 사용하여 A/B 테스트 Target 활동을 만드는 방법을 알아봅니다.
 
-Target에서 활동을 만들기 전에 다음을 설정해야 합니다.
+## 전제 조건
 
-1. [Experience Platform Launch 및 AEM 통합](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html)
-2. [Cloud Services을 사용하여 Adobe Experience Manager과 Adobe Target 통합](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/target/setup-aem-target-cloud-service.html)
+AEM 웹 사이트에서 VEC를 사용하려면 다음 설정을 완료해야 합니다.
+
+1. [AEM 웹 사이트에 Adobe Target 추가](./add-target-launch-extension.md)
+1. [Launch에서 Adobe Target 호출 트리거](./load-and-fire-target.md)
 
 ## 시나리오 개요
 
@@ -33,7 +35,10 @@ WKND 사이트 홈 페이지에는 지역 활동 또는 도시 주변에서 정�
 
 ## VEC(Visual Experience Composer)를 사용하여 A/B 테스트를 만드는 절차
 
-1. Adobe Target에 로그인하고 활동 탭으로 이동합니다.
+1. Adobe Experience Cloud에 [로그인](https://experience.adobe.com/), __Target__&#x200B;를 탭하고 활동 __탭으로__ 이동합니다.
+
+   + Experience Cloud 대시보드에 __Target__ 가 표시되지 않으면 오른쪽 상단의 조직 전환기에서 올바른 Adobe 조직이 선택되었는지, 그리고 사용자에게 [Adobe Admin Console](https://adminconsole.adobe.com/)의 Target에 대한 액세스 권한이 부여되었는지 확인하십시오.
+
 1. 활동 **만들기** 단추를 클릭한 다음 **A/B 테스트** 활동을선택합니다
 
    ![A/B 활동](assets/ab-target-activity.png)
@@ -82,5 +87,5 @@ WKND 사이트 홈 페이지에는 지역 활동 또는 도시 주변에서 정�
 
 ## 지원 링크
 
-* [Adobe Experience Cloud 디버거 - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
-* [Adobe Experience Cloud 디버거 - Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
++ [Adobe Experience Cloud 디버거 - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
++ [Adobe Experience Cloud 디버거 - Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
