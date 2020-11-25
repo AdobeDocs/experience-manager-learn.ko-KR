@@ -10,24 +10,28 @@ version: cloud-service
 kt: 6351
 thumbnail: 41246.jpg
 translation-type: tm+mt
-source-git-commit: 7a830d5a04ce53014b86f9f05238dd64f79edffc
+source-git-commit: 988e390dd9e1fc6033b3651db151e6a60ce4efaa
 workflow-type: tm+mt
-source-wordcount: '116'
-ht-degree: 0%
+source-wordcount: '118'
+ht-degree: 6%
 
 ---
 
 
-# 경험 조각을 사용하여 Adobe Target 활동 만들기 {#target-activity-experience-fragment}
+# 경험 조각 오퍼를 사용하여 Adobe Target 활동 생성 {#target-activity-experience-fragment}
 
 AEM 경험 조각 오퍼를 사용하여 Adobe Target 활동을 만들고 테스트하는 방법을 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/41246?quality=12&learn=on)
 
-Target에서 활동을 만들기 전에 다음을 설정해야 합니다.
+## 전제 조건
 
-1. [Experience Platform Launch 및 AEM 통합](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html)
-2. [Cloud Services을 사용하여 Adobe Experience Manager과 Adobe Target 통합](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/target/setup-aem-target-cloud-service.html)
+경험 조각 오퍼를 사용하여 Adobe Target 활동을 생성하려면 다음 설정을 완료해야 합니다.
+
+1. [AEM 웹 사이트에 Adobe Target 추가](./add-target-launch-extension.md)
+1. [Launch에서 Adobe Target 호출 트리거](./load-and-fire-target.md)
+1. [AEM 작성자 서비스를 Adobe Target과 통합](./setup-aem-target-cloud-service.md)
+1. [Adobe Target으로 AEM 경험 구성요소를 내보냅니다](./export-experience-fragment-target.md)
 
 ## 지원 링크
 
