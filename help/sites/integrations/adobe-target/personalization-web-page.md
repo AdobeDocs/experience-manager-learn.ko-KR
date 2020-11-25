@@ -1,6 +1,6 @@
 ---
 title: 전체 웹 페이지 경험의 개인화
-description: AEM에서 호스팅되는 사이트 페이지를 Adobe Target을 사용하여 새 페이지로 리디렉션하는 활동을 만드는 방법을 알아봅니다.
+description: Adobe Target을 사용하여 AEM 웹 사이트 페이지를 새 페이지로 리디렉션하기 위해 Target 활동을 만드는 방법을 알아봅니다.
 feature: targeting
 topics: integrations, authoring, personalization, activity, offers
 audience: all
@@ -10,9 +10,9 @@ version: cloud-service
 kt: 6353
 thumbnail: 6353-personalization-web-page.jpg
 translation-type: tm+mt
-source-git-commit: 7a830d5a04ce53014b86f9f05238dd64f79edffc
+source-git-commit: 988e390dd9e1fc6033b3651db151e6a60ce4efaa
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
@@ -22,9 +22,12 @@ ht-degree: 0%
 
 AEM에서 호스팅되는 사이트 페이지를 Adobe Target을 사용하여 새 페이지로 리디렉션하는 활동을 만드는 방법을 알아봅니다.
 
-Target에서 활동을 만들기 전에 다음을 설정해야 합니다.
+## 전제 조건
 
-1. [Experience Platform Launch 및 AEM 통합](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html)
+AEM 웹 사이트의 전체 페이지를 개인화하기 위해 다음 설정을 완료해야 합니다.
+
+1. [AEM 웹 사이트에 Adobe Target 추가](./add-target-launch-extension.md)
+1. [Launch에서 Adobe Target 호출 트리거](./load-and-fire-target.md)
 
 ## 시나리오 개요
 
