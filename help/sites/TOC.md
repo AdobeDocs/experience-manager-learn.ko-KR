@@ -4,10 +4,10 @@ user-guide-description: Adobe Experience Manager Sites을 위한 비디오 및 �
 breadcrumb-title: AEM Sites 자습서
 sub-product: sites
 translation-type: tm+mt
-source-git-commit: 55beee99b91c44f96cd37d161bb3b4ffe38d2687
+source-git-commit: 988e390dd9e1fc6033b3651db151e6a60ce4efaa
 workflow-type: tm+mt
 source-wordcount: '476'
-ht-degree: 14%
+ht-degree: 15%
 
 ---
 
@@ -107,7 +107,7 @@ ht-degree: 14%
       + [Launch 속성에 Target 확장 추가](integrations/adobe-target/add-target-launch-extension.md)
       + [Target 호출 로드 및 실행](integrations/adobe-target/load-and-fire-target.md)
       + [Adobe Target Cloud Service 계정 만들기](integrations/adobe-target/setup-aem-target-cloud-service.md)
-      + [Adobe Target으로 경험 조각 내보내기](integrations/adobe-target/export-experience-fragment-target.md)
+      + [Adobe Target으로 경험 구성요소를 내보냅니다](integrations/adobe-target/export-experience-fragment-target.md)
       + [경험 조각 오퍼를 사용하여 Target 활동 생성](integrations/adobe-target/create-target-activity.md)
       + [Visual Experience Composer를 사용한 개인화](integrations/adobe-target/personalization-using-vec.md)
       + [완벽한 웹 페이지 경험 개인화](integrations/adobe-target/personalization-web-page.md)
