@@ -1,6 +1,6 @@
 ---
-title: Adobe I/O를 사용하여 AEM과 Launch 연결
-description: Adobe I/O로 IMS 구성을 만들어 Launch API로 AEM을 인증하는 방법을 알아봅니다. 이 통합이 실행되면 AEM은 Launch API를 통해 통신하여 Launch 속성에 액세스할 수 있습니다.
+title: Adobe I/O을 사용하여 AEM과 Launch 연결
+description: Launch API를 사용하여 AEM을 인증하기 위해 Adobe I/O에서 IMS 구성을 만드는 방법을 알아봅니다. 이 통합이 실행되면 AEM은 Launch API를 통해 통신하여 Launch 속성에 액세스할 수 있습니다.
 feature: launch
 topics: integrations
 audience: administrator
@@ -18,9 +18,9 @@ ht-degree: 0%
 ---
 
 
-# Adobe I/O를 사용하여 AEM과 Launch 연결 {#connect-aem-launch-adobe-io}
+# Adobe I/O {#connect-aem-launch-adobe-io}을(를) 사용하여 AEM과 Launch
 
-Adobe I/O로 IMS 구성을 만들어 Launch API로 AEM을 인증하는 방법을 알아봅니다. 이 통합이 실행되면 AEM은 Launch API를 통해 통신하여 Launch 속성에 액세스할 수 있습니다.
+Launch API를 사용하여 AEM을 인증하기 위해 Adobe I/O에서 IMS 구성을 만드는 방법을 알아봅니다. 이 통합이 실행되면 AEM은 Launch API를 통해 통신하여 Launch 속성에 액세스할 수 있습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/38555?quality=12&learn=on)
 
