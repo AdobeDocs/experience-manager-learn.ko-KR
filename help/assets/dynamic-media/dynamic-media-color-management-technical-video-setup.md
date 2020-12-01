@@ -21,7 +21,7 @@ ht-degree: 13%
 ---
 
 
-# AEM Dynamic Media를 통한 색상 관리 이해{#understanding-color-management-with-aem-dynamic-media}
+# AEM Dynamic Media를 사용한 색상 관리 이해{#understanding-color-management-with-aem-dynamic-media}
 
 이 비디오에서는 다이내믹 미디어 색상 관리를 살펴보고 이 기능을 사용하여 AEM Assets의 색상 교정 미리 보기 기능을 제공하는 방법을 살펴봅니다.
 
@@ -29,11 +29,11 @@ ht-degree: 13%
 
 >[!NOTE]
 >
->[AEM에서 Dynamic Media](https://docs.adobe.com/docs/en/aem/6-0/administer/integration/dynamic-media/enabling-dynamic-media.html) 가 이 기능을 사용하도록 설정합니다.
+>[Dynamic ](https://docs.adobe.com/docs/en/aem/6-0/administer/integration/dynamic-media/enabling-dynamic-media.html) Media AEM에서 이 기능을 사용하도록 설정합니다.
 
 이 기능은 AEM 6.1 및 6.2 버전의 Feature Pack에서 사용할 수 있습니다.
 
-## 색상 관리 구성 노드에 대한 XML 템플릿 {#xml-template-for-the-color-management-configuration-node}
+## 색상 관리 구성 노드 {#xml-template-for-the-color-management-configuration-node}에 대한 XML 템플릿
 
 다음은 색상 관리 구성 노드에 대한 XML 템플릿입니다. 이 XML 템플릿을 AEM 개발 프로젝트로 복사하고 프로젝트에 적합한 구성으로 구성할 수 있습니다.
 
@@ -91,7 +91,7 @@ ht-degree: 13%
 />
 ```
 
-### 기본 Adobe 색상 프로파일 목록은 아래에 나열되어 있습니다. {#list-of-default-adobe-color-profiles-are-listed-below}
+### 기본 Adobe 색상 프로파일 목록이 {#list-of-default-adobe-color-profiles-are-listed-below} 아래에 나열됩니다.
 
 | 이름 | 색상 공간 | 설명 |
 | ------------------- | ---------- | ------------------------------------- |
@@ -114,8 +114,8 @@ ht-degree: 13%
 | NTSC | RGB | NTSC(1953) |
 | PAL | RGB | PAL/SECAM |
 | ProPhoto | RGB | ProPhoto RGB |
-| PS4Default | CMYK | Photoshop 4 기본 CMYK |
-| PS5Default | CMYK | Photoshop 5 기본 CMYK |
+| PS4기본값 | CMYK | Photoshop 4 기본 CMYK |
+| PS5기본값 | CMYK | Photoshop 5 기본 CMYK |
 | SheetfedCoated | CMYK | U.S. Sheetfed Coated v2 |
 | SheetfedUncoated | CMYK | US Sheetfed Uncoated v2 |
 | SMPTE | RGB | SMPTE-C |
