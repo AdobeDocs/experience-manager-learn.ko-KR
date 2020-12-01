@@ -18,7 +18,7 @@ ht-degree: 1%
 ---
 
 
-# 론치 속성 만들기 {#create-launch-property}
+# 시작 속성 {#create-launch-property} 만들기
 
 Adobe Experience Manager와의 나머지 통합을 설정하는 데 필요한 최소 구성 수를 갖는 론치 속성을 만드는 방법을 알아봅니다. 사용자는 시작 UI에 소개되고 확장, 규칙 및 게시 워크플로우에 대해 학습합니다.
 
@@ -26,7 +26,7 @@ Adobe Experience Manager와의 나머지 통합을 설정하는 데 필요한 �
 
 ## 다음 단계
 
-[Adobe I/O를 사용하여 AEM과 Launch 연결](connect-aem-launch-adobe-io.md)
+[Adobe I/O을 사용하여 AEM과 Launch 연결](connect-aem-launch-adobe-io.md)
 
 ## 추가 리소스 {#additional-resources}
 
