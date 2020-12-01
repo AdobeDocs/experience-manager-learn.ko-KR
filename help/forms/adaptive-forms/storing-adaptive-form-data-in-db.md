@@ -30,12 +30,12 @@ ht-degree: 0%
    * 패키지 관리자를 사용하여 StoreAFInDBWorkflow.zip을 AEM으로 가져옵니다. 패키지에는 AF 데이터를 DB에 저장하는 샘플 워크플로우가 있습니다. 워크플로우 모델을 엽니다. 워크플로우는 한 단계만 진행합니다. 이 단계에서는 AF 데이터를 데이터베이스에 저장하기 위해 번들에 기록된 코드를 호출합니다. 나는 그 과정에 하나의 주장을 전달하는 중이다. 데이터가 저장되는 응용 양식의 이름입니다.
    * Felix 웹 콘솔을 사용하여 insertdata.core-0.0.1-SNAPSHOT.jar를 배포합니다. 이 번들에는 제출된 양식 데이터를 데이터베이스에 쓰는 코드가 있습니다
 
-* ConfigMgr로 [이동](http://localhost:4502/system/console/configMgr)
+* [ConfigMgr](http://localhost:4502/system/console/configMgr)으로 이동
 
    * &quot;JDBC 접속 풀&quot;을 검색합니다. 새 Day Commons JDBC 접속 풀을 생성합니다. 데이터베이스에 맞는 설정을 지정합니다.
 
    * ![jdbc 접속 풀](assets/jdbc-connection-pool.png)
-   * &quot;DB에&#x200B;**양식 데이터 삽입&quot;을 검색합니다**.
+   * &quot;**DB에 양식 데이터 삽입**&quot;을 검색합니다.
    * 데이터베이스에 해당하는 속성을 지정합니다.
       * DataSourceName:이전에 구성한 데이터 소스의 이름입니다.
       * TableName - AF 데이터를 저장할 테이블의 이름
@@ -48,7 +48,7 @@ ht-degree: 0%
 
 * 아래 스크린샷에 표시된 대로 응용 양식을 AEM Workflow(StoreAFValusinDB)와 연결합니다.
 
-* 아래 스크린샷과 같이 데이터 파일 경로에 &quot;data.xml&quot;을 지정해야 합니다
+* 아래 스크린샷에 표시된 것처럼 데이터 파일 경로에 &quot;data.xml&quot;을 지정해야 합니다
 
    ![제출](assets/submissionafforms.png)
 
