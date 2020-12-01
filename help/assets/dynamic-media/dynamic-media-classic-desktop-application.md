@@ -21,7 +21,7 @@ ht-degree: 0%
 ---
 
 
-# Dynamic Media Classic 데스크탑 애플리케이션 사용{#using-dynamic-media-desktop-application}
+# Dynamic Media Classic 데스크톱 응용 프로그램 사용{#using-dynamic-media-desktop-application}
 
 Adobe은 브라우저와 유사한 경험을 제공하고 Adobe Flash 플레이어에 종속되지 않는 기능적으로 동등한 인터페이스를 제공하는 Dynamic Media Classic용 데스크톱 응용 프로그램을 제공합니다.
 
