@@ -13,7 +13,7 @@ discoiquuid: 9e666741-0f76-43c9-ab79-1ef149884686
 translation-type: tm+mt
 source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
 workflow-type: tm+mt
-source-wordcount: '215'
+source-wordcount: '213'
 ht-degree: 0%
 
 ---
@@ -33,11 +33,11 @@ Adobe Experience Manager의 SSL 설정 마법사를 사용하여 AEM 인스턴�
 
 ## 개인 키 및 자체 서명된 인증서 다운로드
 
-다음 zip에는 로컬 호스트 [!DNL DER] 에서 AEM SSL을 설정하는 데 필요한 파일과 로컬 개발 용도로만 사용되는 [!DNL CRT] 파일이 포함되어 있습니다.
+다음 zip 파일에는 로컬 개발 목적으로만 AEM SSL을 설정하는 데 필요한 [!DNL DER] 및 [!DNL CRT] 파일이 포함되어 있습니다.
 
-편의를 위해 [!DNL DER] 및 [!DNL CERT] 파일이 제공되며 아래의 개인 키 및 자체 서명된 인증서 생성 섹션에 설명된 단계에 따라 생성됩니다.
+[!DNL DER] 및 [!DNL CERT] 파일은 편의를 위해 제공되며 아래의 개인 키 및 자체 서명된 인증서 생성 섹션에 설명된 단계에 따라 생성됩니다.
 
-필요한 경우 인증서 전달 구문은 **admin입니다**.
+필요한 경우 인증서 전달 구문은 **admin**&#x200B;입니다.
 
 localhost - 개인 키 및 자체 서명된 certificate.zip(2028년 7월 만료)
 
@@ -45,7 +45,7 @@ localhost - 개인 키 및 자체 서명된 certificate.zip(2028년 7월 만료)
 
 ## 개인 키 및 자체 서명된 인증서 생성
 
-위 비디오에서는 자체 서명된 인증서를 사용하는 AEM 작성자 인스턴스의 SSL 설정 및 구성을 설명합니다. 아래의 명령은 [[!DNL OpenSSL]](https://www.openssl.org/) 을 사용하여 마법사의 2단계에서 사용할 개인 키와 인증서를 생성할 수 있습니다.
+위 비디오에서는 자체 서명된 인증서를 사용하는 AEM 작성자 인스턴스의 SSL 설정 및 구성을 설명합니다. [[!DNL OpenSSL]](https://www.openssl.org/)을 사용하는 아래 명령은 마법사의 2단계에서 사용할 개인 키와 인증서를 생성할 수 있습니다.
 
 ```shell
 ### Create Private Key
