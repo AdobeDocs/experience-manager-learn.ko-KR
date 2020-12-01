@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# 실행 시 언어 사본 업데이트 {#update-language-copy-launch}
+# 시작 {#update-language-copy-launch}으로 언어 사본 업데이트
 
 론치의 도움을 받아 언어 카피의 변경 사항을 업데이트, 검토 및 승인하는 방법을 알아봅니다.
 
