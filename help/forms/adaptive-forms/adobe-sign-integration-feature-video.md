@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# AEM Forms과 Adobe Sign 사용{#using-adobe-sign-with-aem-forms}
+# AEM Forms과 함께 Adobe Sign 사용{#using-adobe-sign-with-aem-forms}
 
 AEM Forms과 Adobe Sign 사용
 
@@ -32,4 +32,4 @@ AEM Forms과 Adobe Sign 사용
 >
 >이 기능은 AEM 6.3 버전에서만 사용할 수 있습니다.
 
-이 기능의 실시간 데모를 보려면 [AEM Forms 샘플](https://forms.enablementadobe.com/content/samples/samples.html?query=0) 페이지를 참조하십시오.
+이 기능의 실시간 데모를 보려면 [AEM Forms 샘플](https://forms.enablementadobe.com/content/samples/samples.html?query=0) 페이지를 방문하십시오.
