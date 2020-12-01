@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# AEM Forms의 규칙 편집기 개선 사항 {#rule-editor-improvements-in-aem-forms}
+# AEM Forms {#rule-editor-improvements-in-aem-forms}의 규칙 편집기 개선
 
 규칙 편집기를 사용하면 AEM Adaptive Forms에 로직을 추가할 수 있습니다. AEM 6.3은 여러 가지 방법으로 규칙 편집기를 개선하여 기술 사용자와 기술 지식이 없는 사용자 모두 인텔리전스를 보다 빠르고 손쉽게 추가할 수 있도록 합니다.
 
