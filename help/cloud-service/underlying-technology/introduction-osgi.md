@@ -19,6 +19,6 @@ ht-degree: 4%
 
 # [!DNL OSGi] 소개{#introduction-osgi}
 
-Adobe Experience Manager [!DNL OSGi]의 기반이 되는 [!DNL Java] 애플리케이션을 위한 동적 모듈식 아키텍처에 대한 소개
+Adobe Experience Manager의 기초가 되는 [!DNL Java] 응용 프로그램을 위한 동적 모듈식 아키텍처인 [!DNL OSGi]에 대한 소개입니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32031/?quality=12&learn=on)
