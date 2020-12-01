@@ -31,5 +31,5 @@ AEM 받은 편지함은 작업 및 워크플로우에 대한 공동 작업과 �
 * 워크플로우 정보 콘솔
 * 임시 작업 생성
 * 작업 및 작업 항목 가시성
-* [!DNL Inbox] 및 [!DNL Omnisearch] 통합
-* [!DNL Inbox] 및 [!DNL AEM Projects] 통합
+* [!DNL Inbox] 및  [!DNL Omnisearch] 통합
+* [!DNL Inbox] 및  [!DNL AEM Projects] 통합
