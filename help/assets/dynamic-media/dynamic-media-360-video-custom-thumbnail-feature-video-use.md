@@ -55,7 +55,7 @@ AEM 6.5의 향상된 Dynamic Media Viewer에는 360개의 비디오 렌더링 �
    <tr>
       <td>다이내믹 미디어 실행 모드</td>
       <td>다이내믹 미디어 Scene7 모드만 해당</td>
-      <td>다이내믹 미디어 Scene7 모드만 해당<br>
+      <td>동적 미디어 Scene7 모드만<br>
          <br>
       </td>
    </tr>
