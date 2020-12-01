@@ -22,10 +22,10 @@ ht-degree: 0%
 # Reader 확장 적용
 
 Reader 익스텐션을 사용하면 PDF 문서의 사용 권한을 조작할 수 있습니다. 사용 권한은 Acrobat에서 사용할 수 있지만 Adobe Reader에서는 사용할 수 없는 기능과 관련이 있습니다. Reader 익스텐션에서 제어하는 기능에는 문서에 주석을 추가하고 양식을 작성하며 문서를 저장하는 기능이 포함되어 있습니다. 사용 권한이 추가된 PDF 문서를 권한 사용 문서라고 합니다. Adobe Reader에서 권한이 활성화된 PDF 문서를 여는 사용자는 해당 문서에 대해 활성화된 작업을 수행할 수 있습니다.
-이 기능을 테스트하려면 이 [링크를 사용해 볼 수 있습니다](https://forms.enablementadobe.com/content/samples/samples.html?query=0). 샘플 이름은 &quot;RE를 사용하여 XDP 렌더링&quot;입니다.
+이 기능을 테스트하려면 이 [link](https://forms.enablementadobe.com/content/samples/samples.html?query=0)을 사용해 보십시오. 샘플 이름은 &quot;RE를 사용하여 XDP 렌더링&quot;입니다.
 
 이 사용 사례를 수행하려면 다음을 수행해야 합니다.
-* &quot;fd-service&quot; 사용자에게 Reader 확장 인증서를 추가합니다. Reader 확장 자격 증명을 추가하는 단계는 [여기에 나와 있습니다](https://helpx.adobe.com/experience-manager/6-3/forms/using/configuring-document-services.html)
+* &quot;fd-service&quot; 사용자에게 Reader 확장 인증서를 추가합니다. Reader 확장 자격 증명을 추가하는 단계는 [여기](https://helpx.adobe.com/experience-manager/6-3/forms/using/configuring-document-services.html)입니다.
 
 * 문서에 사용 권한을 적용할 사용자 정의 OSGi 서비스를 만듭니다. 이 작업을 수행할 코드는 아래에 나열되어 있습니다
 
@@ -67,11 +67,11 @@ public Document applyUsageRights(Document pdfDocument,UsageRights usageRights) {
 }
 ```
 
-## PDF를 스트리밍할 서블릿 만들기 {#create-servlet-to-stream-the-pdf}
+## PDF {#create-servlet-to-stream-the-pdf}을(를) 스트리밍할 서블릿 만들기
 
 다음 단계는 POST 방법으로 서블릿을 만들어 사용자에게 Reader 확장 PDF를 반환하는 것입니다. 이 경우 사용자에게 파일 시스템에 PDF를 저장하라는 메시지가 표시됩니다. 이는 PDF가 동적 PDF로 렌더링되고 브라우저와 함께 제공되는 PDF 뷰어가 동적 PDF를 처리하지 않기 때문입니다.
 
-서블릿의 코드는 다음과 같습니다. 서블릿은 응용 양식의 **사용자 지정** 작업에서 호출됩니다.
+서블릿의 코드는 다음과 같습니다. 서블릿은 응용 양식의 **customsubmit** 작업에서 호출됩니다.
 서블릿은 UsageRights 개체를 만들고 응용 양식에 사용자가 입력한 값을 기반으로 해당 속성을 설정합니다. 그런 다음 서블릿은 이 목적으로 만들어진 서비스의 **applyUsageRights** 메서드를 호출합니다.
 
 ```java
