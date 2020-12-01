@@ -22,7 +22,7 @@ ht-degree: 0%
 ---
 
 
-# 소득 패널에 구성 요소 추가 {#adding-components-to-income-panel}
+# [수입] 패널에 구성 요소 추가 {#adding-components-to-income-panel}
 
 수입 패널에 테이블을 추가하겠습니다. 표 행을 구성하고 규칙 편집기를 사용하여 총 합계를 계산합니다.
 
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 
 
-## 소득 테이블을 동적으로 만들기 {#make-the-income-table-dynamic}
+## 소득 테이블을 동적으로 지정 {#make-the-income-table-dynamic}
 
 **편집 모드인지 확인합니다. 편집 단추는 브라우저의 오른쪽 상단에 있습니다.**
 
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 * 반복 설정 아래에서 최소 및 최대 개수를 1과 5로 설정하고 파란색 확인 표시 아이콘을 클릭하여 변경 사항을 저장합니다. 즉, 테이블에 최대 5개의 행이 있을 수 있습니다. 행이 일정하지 않게 되려면 최대 개수를 -1로 설정합니다.
 
-## 합계 합계를 계산하는 규칙 만들기 {#create-rule-to-calculate-grand-total}
+## 총 합계를 계산하기 위한 규칙 만들기 {#create-rule-to-calculate-grand-total}
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/22197?quality=9&learn=on)
