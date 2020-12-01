@@ -1,11 +1,11 @@
 ---
 title: AEM 헤드리스 시작하기
-description: AEM Headless를 사용하여 컨텐츠를 작성하고 노출하는 방법을 소개하는 종합적인 자습서입니다.
+description: AEM Headless를 사용하여 컨텐츠를 작성하고 노출하는 방법을 소개하는 종단간 자습서입니다.
 translation-type: tm+mt
 source-git-commit: 22ccd6627a035b37edb180eb4633bc3b57470c0c
 workflow-type: tm+mt
 source-wordcount: '211'
-ht-degree: 0%
+ht-degree: 10%
 
 ---
 
@@ -28,6 +28,6 @@ ht-degree: 0%
 
 ## GitHub 프로젝트
 
-소스 코드 및 컨텐츠 패키지는 [AEM 가이드 - WKND Mobile GitHub 프로젝트에서 사용할 수 있습니다](https://github.com/adobe/aem-guides-wknd-mobile).
+소스 코드와 콘텐츠 패키지는 [AEM 가이드 - WKND Mobile GitHub 프로젝트](https://github.com/adobe/aem-guides-wknd-mobile)에서 사용할 수 있습니다.
 
-자습서 또는 코드에 문제가 있는 경우 [GitHub 문제를](https://github.com/adobe/aem-guides-wknd-mobile/issues)두십시오.
+자습서 또는 코드에 문제가 있는 경우 [GitHub 문제](https://github.com/adobe/aem-guides-wknd-mobile/issues)를 남겨 두십시오.
