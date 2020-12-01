@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Live Copy 만들기 {#create-livecopy}
+# Live Copy {#create-livecopy} 만들기
 
 Live Copy 만들기 마법사를 사용하여 블루프린트에서 사이트에 대한 Live Copy를 만드는 방법을 이해합니다.
 
