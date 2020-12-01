@@ -26,13 +26,13 @@ Cloud Service 환경으로서 각 AEM에는 자체 개발자 콘솔이 있습니
 
 ## 개발자 콘솔 액세스
 
-개발자 콘솔에 액세스하고 사용하려면 [Adobe Admin Console을 통해 개발자의 Adobe ID에 다음 권한을 부여해야 합니다](https://adminconsole.adobe.com).
+개발자 콘솔에 액세스하고 사용하려면 [Adobe의 Admin Console](https://adminconsole.adobe.com)을 통해 개발자의 Adobe ID에 다음 권한을 부여해야 합니다.
 
 1. Adobe 조직 전환기에서 Cloud Service 제품으로 Cloud Manager 및 AEM을 활성화한 Adobe 조직이 활성화되었는지 확인합니다.
-1. 개발자는 클라우드 관리자 제품의 개발자 - Cloud Service __제품 프로필의__ 멤버여야 합니다.
+1. 개발자는 클라우드 관리자 제품의 __개발자 - Cloud Service__ 제품 프로필의 구성원이어야 합니다.
    + 이 멤버십이 없는 경우 개발자는 개발자 콘솔에 로그인할 수 없습니다.
-1. 개발자는 AEM 작성자 및 게시 서비스의 __AEM 관리자 제품 프로필 멤버여야__ 합니다.
-   + 이 멤버십이 없는 경우 [상태](#status) 덤프가 시간 초과되어 401 권한 없음 오류가 발생합니다.
+1. 개발자는 AEM 작성자 및 게시 서비스의 __AEM 관리자__ 제품 프로필의 구성원이어야 합니다.
+   + 이 멤버십이 없는 경우 [status](#status) 덤프가 시간 초과되어 401 권한 없음 오류가 발생합니다.
 
 ### 개발자 콘솔 액세스 문제 해결
 
@@ -72,7 +72,7 @@ AEM은 Cloud Service 작성자 및 게시 서비스로 트래픽 가변성과 �
 
 ### 번들
 
-번들은 AEM의 모든 OSGi 번들을 나열합니다. 이 기능은 [AEM SDK의 로컬 빠른 시작 OSGi 번들과](http://localhost:4502/system/console/bundles) 유사합니다 `/system/console/bundles`.
+번들은 AEM의 모든 OSGi 번들을 나열합니다. 이 기능은 `/system/console/bundles`의 [AEM SDK의 로컬 quickstart의 OSGi 번들](http://localhost:4502/system/console/bundles)과 유사합니다.
 
 디버깅에 도움이 되는 번들:
 
@@ -82,7 +82,7 @@ AEM은 Cloud Service 작성자 및 게시 서비스로 트래픽 가변성과 �
 
 ### 구성 요소
 
-구성 요소는 AEM의 모든 OSGi 구성 요소를 나열합니다. 이 기능은 [AEM SDK의 로컬 quickstart의 OSGi 구성 요소](http://localhost:4502/system/console/components) `/system/console/components`(
+구성 요소는 AEM의 모든 OSGi 구성 요소를 나열합니다. 이 기능은 `/system/console/components`의 [AEM SDK의 로컬 quickstart의 OSGi 구성 요소](http://localhost:4502/system/console/components)와 유사합니다.
 
 구성 요소 도움말:
 
@@ -93,7 +93,7 @@ AEM은 Cloud Service 작성자 및 게시 서비스로 트래픽 가변성과 �
 
 ### 구성
 
-구성은 모든 OSGi 구성 요소의 구성(OSGi 속성 및 값)을 나열합니다. 이 기능은 [AEM SDK의 로컬 quickstart의 OSGi Configuration Manager와](http://localhost:4502/system/console/configMgr) 유사합니다 `/system/console/configMgr`.
+구성은 모든 OSGi 구성 요소의 구성(OSGi 속성 및 값)을 나열합니다. 이 기능은 `/system/console/configMgr`의 [AEM SDK의 로컬 빠른 시작 OSGi 구성 관리자](http://localhost:4502/system/console/configMgr)와 유사합니다.
 
 디버깅에 도움이 되는 구성:
 
@@ -102,7 +102,7 @@ AEM은 Cloud Service 작성자 및 게시 서비스로 트래픽 가변성과 �
 
 ### Oak Indexes
 
-Oak 색인은 아래에 정의된 노드의 덤프를 제공합니다 `/oak:index`. AEM 색인이 수정될 때 발생하는 병합된 색인은 표시되지 않습니다.
+Oak 색인은 `/oak:index` 아래에 정의된 노드의 덤프를 제공합니다. AEM 색인이 수정될 때 발생하는 병합된 색인은 표시되지 않습니다.
 
 Oak Indexes 도움말:
 
@@ -110,7 +110,7 @@ Oak Indexes 도움말:
 
 ### OSGi 서비스
 
-구성 요소에는 모든 OSGi 서비스가 나열됩니다. 이 기능은 [AEM SDK의 로컬 quickstart의 OSGi 서비스](http://localhost:4502/system/console/services) `/system/console/services`(
+구성 요소에는 모든 OSGi 서비스가 나열됩니다. 이 기능은 `/system/console/services`의 [AEM SDK의 로컬 빠른 시작 서비스](http://localhost:4502/system/console/services)와 유사합니다.
 
 OSGi 서비스 도움말은 다음을 통해 디버깅에 도움을 줍니다.
 
@@ -118,7 +118,7 @@ OSGi 서비스 도움말은 다음을 통해 디버깅에 도움을 줍니다.
 
 ### Sling 작업
 
-Sling Jobs에는 모든 Sling Jobs 대기열이 나열됩니다. 이 기능은 [AEM SDK의 로컬 빠른 시작 작업](http://localhost:4502/system/console/slingevent) `/system/console/slingevent`(
+Sling Jobs에는 모든 Sling Jobs 대기열이 나열됩니다. 이 기능은 `/system/console/slingevent`의 [AEM SDK의 로컬 빠른 시작 작업](http://localhost:4502/system/console/slingevent)과 유사합니다.
 
 Sling Jobs는 다음을 통해 디버깅에 도움을 줍니다.
 
@@ -127,7 +127,7 @@ Sling Jobs는 다음을 통해 디버깅에 도움을 줍니다.
 
 ## Java 패키지
 
-Java 패키지를 사용하면 AEM에서 Cloud Service으로 사용할 수 있는 Java 패키지 및 버전을 확인할 수 있습니다. 이 기능은 [AEM SDK의 로컬 quickstart의 종속성 파인더와](http://localhost:4502/system/console/depfinder) 동일합니다 `/system/console/depfinder`.
+Java 패키지를 사용하면 AEM에서 Cloud Service으로 사용할 수 있는 Java 패키지 및 버전을 확인할 수 있습니다. 이 기능은 `/system/console/depfinder`의 [AEM SDK의 로컬 quickstart의 종속성 파인더](http://localhost:4502/system/console/depfinder)과 동일합니다.
 
 ![개발자 콘솔 - Java 패키지](./assets/developer-console/java-packages.png)
 
@@ -136,11 +136,11 @@ Java Packages는 가져오기 문제가 해결되지 않았거나 스크립트(H
 + 프로젝트의 AEM API 마비사 종속성 버전이 환경의 AEM 릴리스 버전과 일치하는지 확인하고 가능한 경우 모든 내용을 최신 버전으로 업데이트하십시오.
 + Maven 프로젝트에 추가적인 Maven 종속성이 사용되는 경우
    + AEM SDK API 종속성이 제공하는 대체 API를 대신 사용할 수 있는지 확인합니다.
-   + 추가 종속성이 필요한 경우, 기본 OSGi 번들이 패키지에 임베드되어 있는 방법과 유사하게, OSGi 번들(일반 Jar가 아니라)으로 제공되고 프로젝트의 코드 패키지(`ui.apps`)에 임베드되어 있는지 `ui.apps` 확인합니다.
+   + 추가 종속성이 필요한 경우 OSGi 번들(일반 Jar가 아닌)으로 제공되어야 하며, 핵심 OSGi 번들이 `ui.apps` 패키지에 포함된 방식과 유사한 방식으로 프로젝트의 코드 패키지(`ui.apps`)에 포함되어 있는지 확인합니다.
 
 ## 서비스
 
-서블릿은 AEM이 요청을 궁극적으로 처리하는 Java 서블릿이나 스크립트(HTL, JSP)로 URL을 해결하는 방법에 대한 통찰력을 제공하는 데 사용됩니다. 이 기능은 [AEM SDK의 로컬 Quickstart의 Sling Servlet Resolver와](http://localhost:4502/system/console/servletresolver) 동일합니다 `/system/console/servletresolver`.
+서블릿은 AEM이 요청을 궁극적으로 처리하는 Java 서블릿이나 스크립트(HTL, JSP)로 URL을 해결하는 방법에 대한 통찰력을 제공하는 데 사용됩니다. 이 기능은 ](http://localhost:4502/system/console/servletresolver)에서 AEM SDK의 로컬 Quickstart의 Sling Servlet Resolver[과 동일합니다.`/system/console/servletresolver`
 
 ![개발자 콘솔 - 서비스](./assets/developer-console/servlets.png)
 
