@@ -46,24 +46,24 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->문제 해결 팁 - 어떤 이유로 DOR.pdf가 DAM에 생성되지 않은 경우 [여기를 클릭하여 데이터 소스 인증 설정을 재설정합니다](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2Fglobal%2Fsettings%2Fcloudconfigs%2Ffdm%2Fpostdortodam). AEM 인증 설정이며 기본적으로 admin/admin입니다.
+>문제 해결 팁 - 어떤 이유로 DOR.pdf가 DAM에 생성되지 않은 경우 [여기](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2Fglobal%2Fsettings%2Fcloudconfigs%2Ffdm%2Fpostdortodam)를 클릭하여 데이터 소스 인증 설정을 재설정합니다. AEM 인증 설정이며 기본적으로 admin/admin입니다.
 
 서버에서 이 기능을 테스트하려면 아래 단계를 따르십시오.
 
-1.[DeveloperServiceuser 번들 배포](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
+1.[Developingwith serviceuser 번들](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar) 배포
 
-1. [setvalue 번들](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)다운로드 및 배포. 이 사용자 지정 OSGI 번들은 메타데이터 속성을 만들고 제출된 양식 데이터에서 값을 설정하는 데 사용됩니다.
+1. [setvalue 번들](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar) 다운로드 및 배포. 이 사용자 지정 OSGI 번들은 메타데이터 속성을 만들고 제출된 양식 데이터에서 값을 설정하는 데 사용됩니다.
 
-1. [패키지 관리자를 사용하여 이 아티클과](assets/postdortodam.zip) 관련된 에셋을 AEM으로 가져옵니다. 다음과 같은 결과가 나타납니다
+1. [패키지 관리자를 사용하여 이 ](assets/postdortodam.zip) 아티클과 연결된 에셋을 AEM으로 가져옵니다. 다음과 같은 결과가 나타납니다
 
    1. 워크플로우 모델
    1. AEM 워크플로우에 제출하도록 구성된 적응형 양식
    1. PostToDam.JSON 파일을 사용하도록 구성된 데이터 소스
    1. 데이터 소스를 사용하는 양식 데이터 모델
 
-1. 브라우저에서 응용 [양식 열기](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
+1. [브라우저를 지정하여 응용 양식](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled) 열기
 1. 양식을 작성하고 제출합니다.
 1. 기록 문서가 만들어지고 저장된 경우 자산 애플리케이션을 확인합니다.
 
 
-[데이터 소스 만들기에 사용되는](http://localhost:4502/conf/global/settings/cloudconfigs/fdm/postdortodam/jcr:content/swaggerFile) Swagger 파일 참조
+[데이터 ](http://localhost:4502/conf/global/settings/cloudconfigs/fdm/postdortodam/jcr:content/swaggerFile) 소스를 만드는 데 사용되는 Swagger File을 참조할 수 있습니다.
