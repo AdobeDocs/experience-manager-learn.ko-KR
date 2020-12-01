@@ -61,11 +61,11 @@ wrapperRequest.getRequestDispatcher("/aem/forms/createcorrespondence.html").incl
 
 * [패키지 관리자를 사용하여 이 아티클과 관련된 에셋을 가져오고 설치합니다.](assets/launch-agent-ui.zip)
 * [configMgr에 로그인](http://localhost:4502/system/console/configMgr)
-* [MOCK] Search for _Adobe Granite CSRF Filter_
+* _Adobe Granite CSRF 필터_ 검색
 * 제외된 경로에 _/content/getprintchannel_ 추가
 * 변경 내용을 저장합니다.
 * [POST.jsp를 엽니다](http://localhost:4502/apps/AEMForms/openprintchannel/POST.jsp). FormFieldRequestParameter에 전달된 문자열이 유효한 documentId인지 확인하십시오.(19호선).
-* [웹 페이지를 열고](http://localhost:4502/content/OpenPrintChannel.html) 계정 번호를 입력하고 양식을 제출합니다.
+* [웹 페이지를 ](http://localhost:4502/content/OpenPrintChannel.html) 열고 계정 번호를 입력하고 양식을 제출합니다.
 * 에이전트 UI 인터페이스는 양식에 입력된 계정 번호에 따라 미리 채워진 데이터로 열어야 합니다.
 
 >[!NOTE]
