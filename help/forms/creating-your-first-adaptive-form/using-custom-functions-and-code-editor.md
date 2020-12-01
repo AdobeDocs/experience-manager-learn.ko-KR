@@ -22,20 +22,20 @@ ht-degree: 0%
 ---
 
 
-# 사용자 정의 함수 및 코드 편집기 사용 {#using-functions-and-code-editor}
+# 사용자 지정 함수 및 코드 편집기 사용 {#using-functions-and-code-editor}
 
 이 부분에서는 사용자 지정 함수와 코드 편집기를 사용하여 비즈니스 규칙을 작성합니다.
 
-이 자습서의 앞부분에서 사용자 지정 함수로 [ClientLib를](assets/client-libs-and-logo.zip) 이미 설치했습니다.
+이 자습서에서 [ClientLib에 사용자 지정 함수](assets/client-libs-and-logo.zip)이(가) 이미 설치되어 있습니다.
 
 일반적으로 클라이언트 라이브러리는 CSS 및 Javascript 파일로 구성됩니다. 이 클라이언트 라이브러리에는 드롭다운 목록 값을 채우는 함수를 표시하는 javascript 파일이 포함되어 있습니다.
 
 
-## 드롭다운 목록을 채우는 함수 {#function-to-populate-drop-down-list}
+## 드롭다운 목록 채우기 함수 {#function-to-populate-drop-down-list}
 
 >[!VIDEO](https://video.tv.adobe.com/v/22282?quality=9&learn=on)
 
-### 패널의 요약 제목 설정 {#set-the-summary-title-of-panels}
+### 패널 {#set-the-summary-title-of-panels}의 요약 제목 설정
 
 >[!VIDEO](https://video.tv.adobe.com/v/28387?quality=9&learn=on)
 
