@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# 페이지 태그 지정 {#using-page-tagging-with-aem-sites}
+# 페이지 {#using-page-tagging-with-aem-sites} 태깅
 
 Tagging을 사용하여 Adobe Experience Manager에서 웹 페이지를 유지 관리하고 구성하는 방법을 살펴볼 수 있습니다.
 
