@@ -22,13 +22,18 @@ ht-degree: 0%
 >
 >이 샘플은 스키마 또는 양식 데이터 모델을 기반으로 하지 않는 응용 Forms에서만 작동합니다
 
-![테이블 구조](assets/tablestructure.PNG)스키마 이름을 볼 수 있으므로 구문 변경이 가능합니다.이 스키마 안에는 다음과 같은 열이 정의된 테이블 형식 제출이 있습니다
+![테이블 ](assets/tablestructure.PNG)
+구조스키마의 이름을 볼 수 있으므로 구문 오류가 발생합니다
 
 * formatdata:이 열에는 전송된 양식 데이터가 포함됩니다.
 * 형식 이름:이 열에는 제출된 양식의 이름이 포함됩니다.
 * id:기본 키이며 자동 증분으로 설정되어 있습니다.
 
-아래 스크린샷과 같이 테이블 이름과 두 열 이름이 OSGi 구성 속성으로 노출됩니다.![osgi-configuration](assets/configuration.PNG)코드는 이러한 값을 읽고 실행할 적절한 SQL 쿼리를 구성합니다. 예를 들어 다음 쿼리는 위의 값&#x200B;**을 기준으로 SELECT formdata FROM aemforstutorial.formsubmissions where formname=timeoffrequestform**&#x200B;위 쿼리에서 양식(timeoffrequestform)의 이름이 요청 매개 변수로 서블릿에 전달됩니다.
+아래 스크린샷과 같이 테이블 이름과 두 열 이름이 OSGi 구성 속성으로 노출됩니다.
+![osgi-configuration](assets/configuration.PNG)
+코드는 이러한 값을 읽고 실행할 적절한 SQL 쿼리를 구성합니다. 예를 들어 다음 쿼리는 위의 값을 기준으로 실행됩니다
+**SELECT formdata FROM AEMFORMATTHATORIAL.FORMSUBMISSIONS WHERE FORMNAME=TIMEOFFREQUESTFORM&lt;A1/>
+위의 쿼리에서 양식(timeoffrequestform)의 이름이 요청 매개 변수로 서블릿에 전달됩니다.**
 
 ## **OSGi 서비스 만들기**
 
@@ -36,7 +41,7 @@ ht-degree: 0%
 
 * 37호선:Apache Sling Connection 풀링된 DataSource에 액세스합니다.
 
-* 89행:서비스의 시작 지점입니다.이 메서드는 formName을 입력 매개 변수로 `getCSVFile(..)` 가져와서 지정된 양식 이름과 관련된 제출된 데이터를 가져옵니다.
+* 89행:서비스의 시작 지점입니다.메서드 `getCSVFile(..)`은(는) formName을 입력 매개 변수로 사용하고 주어진 양식 이름과 관련된 제출된 데이터를 가져옵니다.
 
 >[!NOTE]
 >
@@ -256,7 +261,7 @@ public @interface StoreAndExportConfiguration {
 
 ## 서블릿
 
-다음은 서비스의 방법을 호출하는 서블릿 `getCSVFile(..)` 코드입니다. 서비스는 호출 응용 프로그램으로 다시 스트리밍되는 StringBuffer 개체를 반환합니다
+다음은 서비스의 `getCSVFile(..)` 메서드를 호출하는 서블릿 코드입니다. 서비스는 호출 응용 프로그램으로 다시 스트리밍되는 StringBuffer 개체를 반환합니다
 
 ```java
 package com.aemforms.storeandexport.core.servlets;
@@ -298,6 +303,6 @@ public class StreamCSVFile extends SlingAllMethodsServlet {
 
 ### 서버에 배포
 
-* MySQL Workbench를 사용하여 [SQL 파일을](assets/formsubmissions.sql) MySQL 서버로 가져옵니다. 이렇게 하면 **형식** 끊기라는 스키마와 일부 샘플 데이터가 있는 **형식 제출이라고 하는** 테이블이 만들어집니다.
-* Felix [웹 콘솔을 사용하여](assets/store-export.jar) OSGi 번들 배포
-* [TimeOffRequest 제출](http://localhost:4502/bin/streamformdata?formName=timeoffrequestform)받기 CSV 파일을 다시 스트리밍해야 합니다.
+* MySQL Workbench를 사용하여 [SQL 파일](assets/formsubmissions.sql)을 MySQL 서버로 가져옵니다. 이렇게 하면 **aemformsology**&#x200B;라는 스키마와 일부 샘플 데이터가 있는 **formsubmissions**&#x200B;이라는 테이블이 만들어집니다.
+* Felix 웹 콘솔을 사용하여 [OSGi Bundle](assets/store-export.jar) 배포
+* [TimeOffRequest 제출](http://localhost:4502/bin/streamformdata?formName=timeoffrequestform) 받기 CSV 파일을 다시 스트리밍해야 합니다.
