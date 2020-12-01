@@ -30,23 +30,23 @@ AEMForms Portal에 나열하기 위한 사용자 지정 자산 유형 활성화
 
 ## 기본 경로 지정 {#specify-base-path}
 
-기본 경로는 사용자가 검색 및 라이브러리 구성 요소에 나열할 수 있는 모든 자산을 구성하는 최상위 저장소 경로입니다. 원하는 경우, 사용자는 기본 경로 내의 모든 노드를 검색하는 대신 특정 위치에서 검색이 트리거되도록 구성 요소 편집 대화 상자의 기본 경로 내의 특정 위치를 구성할 수도 있습니다. 기본적으로 사용자가 이 위치 내에서 특정 경로 집합을 구성하지 않는 한 기본 경로는 자산을 가져오기 위한 검색 경로 기준으로 사용됩니다. 성능 검색을 수행하려면 이 경로에 대한 최적의 값을 갖는 것이 중요합니다. 모든 AEM Forms 에셋이 **_/content/dam/formsanddocuments_** **_에 있으므로 기본 경로의 기본값은 /content/dam/formsanddocuments로 유지됩니다._**
+기본 경로는 사용자가 검색 및 라이브러리 구성 요소에 나열할 수 있는 모든 자산을 구성하는 최상위 저장소 경로입니다. 원하는 경우, 사용자는 기본 경로 내의 모든 노드를 검색하는 대신 특정 위치에서 검색이 트리거되도록 구성 요소 편집 대화 상자의 기본 경로 내의 특정 위치를 구성할 수도 있습니다. 기본적으로 사용자가 이 위치 내에서 특정 경로 집합을 구성하지 않는 한 기본 경로는 자산을 가져오기 위한 검색 경로 기준으로 사용됩니다. 성능 검색을 수행하려면 이 경로에 대한 최적의 값을 갖는 것이 중요합니다. 모든 AEM Forms 자산은 **_/content/dam/formsanddocuments_**&#x200B;에 있으므로 기본 경로의 기본값은 **_/content/dam/formsanddocuments&lt;a1/>로 유지됩니다._**
 
 기본 경로를 구성하는 단계
 
 1. crx에 로그인
-1. /libs/fd/fp/extensions/queryBuilder/basepath로 이동합니다. ****
+1. **/libs/fd/fp/extensions/queryBuilder/basepath**&#x200B;로 이동합니다.
 
 1. 도구 모음에서 &quot;Overlay Node&quot;를 클릭합니다.
 1. 오버레이 위치가 &quot;/apps/&quot;인지 확인하십시오.
 1. 확인을 클릭합니다
 1. 저장을 클릭합니다
-1. /apps/fd/fp/extensions/querybuilder/basepath에서 만든 새 구조로 **이동합니다.**
+1. **/apps/fd/fp/extensions/querybuilder/basepath**&#x200B;에서 만든 새 구조로 이동합니다.
 
-1. 경로 속성의 값을 **&quot;/content/dam&quot;으로 변경**
+1. 경로 속성의 값을 **&quot;/content/dam&quot;**&#x200B;으로 변경합니다.
 1. 저장을 클릭합니다
 
-경로 속성을 **&quot;/content/dam&quot;에 지정하면** 기본 경로를 /content/dam으로 기본적으로 설정합니다. 검색 및 라이브러리 구성 요소를 열어 확인할 수 있습니다.
+경로 속성을 **&quot;/content/dam&quot;**&#x200B;으로 지정하면 기본 경로를 /content/dam으로 기본적으로 설정합니다. 검색 및 라이브러리 구성 요소를 열어 확인할 수 있습니다.
 
 ![바세패스](assets/basepath.png)
 
@@ -61,12 +61,12 @@ AEMForms Portal에 나열하기 위한 사용자 지정 자산 유형 활성화
 
 **사용자 지정 자산 유형을 등록하는 단계**
 
-1. /libs/fd/fp/extensions/querybuilder/ **assettypes의 오버레이 노드 만들기**
+1. **/libs/fd/fp/extensions/querybuilder/assettypes**&#x200B;의 오버레이 노드 만들기
 
 1. 오버레이 위치를 &quot;/apps&quot;로 설정
 1. **/apps/fd/fp/extensions/queryBuilder/assettypes에서 만든 새로운 구조로 이동합니다. **
 
-1. 이 위치에서 등록할 유형에 대해 &#39;nt:unstructured&#39; 노드를 만들고 노드 이름을 **mp4파일로 지정합니다. 이 mp4files 노드에 다음 두 속성 추가**
+1. 이 위치에서 등록할 유형에 대해 &#39;nt:unstructured&#39; 노드를 만들고 노드 이름을 **mp4files로 지정합니다. 이 mp4files 노드**&#x200B;에 다음 두 속성 추가
 
    1. jcr:title 속성을 추가하여 자산 유형의 표시 이름을 지정합니다. jcr:title 값을 &quot;Mp4 파일&quot;로 설정합니다.
    1. &quot;type&quot; 속성을 추가하고 값을 &quot;videos&quot;로 설정합니다. 형식 비디오의 자산을 나열하기 위해 템플릿에서 사용하는 값입니다. 변경 내용을 저장합니다.
@@ -85,9 +85,9 @@ AEMForms Portal에 나열하기 위한 사용자 지정 자산 유형 활성화
 
 위의 단계를 수행한 후, 새 자산 유형(Mp4 파일)이 아래와 같이 검색 및 라이브러리 구성 요소의 자산 유형 드롭다운 목록에 나타납니다
 
-![mp4files](assets/mp4files.png)
+![mp4파일](assets/mp4files.png)
 
-[이 작업을 수행하는 데 문제가 있는 경우 다음 패키지를 가져올 수 있습니다.](assets/assettypeskt1.zip) 패키지에 정의된 두 개의 사용자 지정 자산 유형이 있습니다. Mp4 파일 및 Word 문서. /apps/fd/fp/extensions/querybuilder/assettypes를 **살펴보십시오.**
+[이 작업을 수행하는 데 문제가 있는 경우 다음 패키지를 가져올 수 있습니다.](assets/assettypeskt1.zip) 패키지에 정의된 두 개의 사용자 지정 자산 유형이 있습니다. Mp4 파일 및 Word 문서. **/apps/fd/fp/extensions/queryBuilder/assettypes**&#x200B;를 확인해 보는 것이 좋습니다.
 
 [사용자 지정 포털 패키지를 설치합니다](assets/customportalpage.zip). 이 패키지에는 샘플 포털 페이지가 포함되어 있습니다. 이 페이지는 이 자습서의 일부2에서 사용됩니다.
 
