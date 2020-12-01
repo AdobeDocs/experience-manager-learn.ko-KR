@@ -19,7 +19,7 @@ ht-degree: 1%
 ---
 
 
-# Publishing pages {#using-publication-management-with-aem-sites}
+# 페이지 {#using-publication-management-with-aem-sites} 게시
 
 AEM Sites은 컨텐츠 게시 및 게시 취소를 위한 여러 옵션을 제공합니다. 이 비디오에서는 다양한 방법과 기능을 탐색합니다.
 
