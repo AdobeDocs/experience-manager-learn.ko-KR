@@ -20,15 +20,15 @@ ht-degree: 0%
 ---
 
 
-# 적응형 Forms에서 지리적 위치 API 사용{#using-geolocation-api-s-in-adaptive-forms}
+# 응용 Forms에서 위치 정보 API 사용{#using-geolocation-api-s-in-adaptive-forms}
 
-이 기능의 실시간 데모를 보려면 [AEM Forms 샘플](https://forms.enablementadobe.com/content/samples/samples.html?query=0) 페이지를 참조하십시오.
+이 기능의 실시간 데모를 보려면 [AEM Forms 샘플](https://forms.enablementadobe.com/content/samples/samples.html?query=0) 페이지를 방문하십시오.
 
 이 문서에서는 Google의 지리적 위치 API를 사용하여 적응형 양식의 필드를 채우는 방법을 살펴봅니다. 이 사용 사례는 양식의 현재 주소 필드를 채울 때 일반적으로 사용됩니다.
 
 응용 Forms에서 지리적 위치 API를 사용하기 위해 다음 단계가 수행되었습니다.
 
-1. [Google Maps](https://developers.google.com/maps/documentation/javascript/get-api-key) 플랫폼을 사용하려면 Google에서 API 키를 가져옵니다. 1년 동안 유효한 시험버전을 이용할 수 있습니다.
+1. [Google Maps ](https://developers.google.com/maps/documentation/javascript/get-api-key) 플랫폼을 사용하려면 Google에서 API Keyword를 가져옵니다. 1년 동안 유효한 시험버전을 이용할 수 있습니다.
 
 1. 적응형 양식 조각이 현재 주소를 저장할 필드로 생성되었습니다.
 
