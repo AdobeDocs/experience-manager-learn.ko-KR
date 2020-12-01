@@ -20,7 +20,7 @@ ht-degree: 14%
 ---
 
 
-# 반응형 레이아웃 이해 {#understanding-responsive-layout-with-aem-sites}
+# 응답형 레이아웃 이해 {#understanding-responsive-layout-with-aem-sites}
 
 Adobe Experience Manager Sites을 사용하면 반응형 사이트 디자인을 용이하게 하기 위해 작성자가 장치 너비를 기반으로 구성 요소의 너비를 관리할 수 있습니다. 레이아웃 모드 및 레이아웃 컨테이너를 사용하면 AEM UI를 종료하지 않고도 다양한 장치에 맞는 반응형 컨텐츠를 제작하고 최종 사용자 경험을 미리 볼 수 있습니다.
 
