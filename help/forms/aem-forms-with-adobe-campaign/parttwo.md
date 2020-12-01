@@ -30,7 +30,7 @@ ht-degree: 0%
 * 적응형 양식 제출 처리를 위한 사용자 정의 제출 작업 만들기
 * CampaignService의 createProfile 메서드 호출
 
-## AEM 서비스 만들기 {#create-aem-service}
+## AEM 서비스 {#create-aem-service} 만들기
 
 AEM 서비스를 만들어 Adobe Campaign 프로필을 만듭니다. 이 AEM 서비스는 OSGI 구성에서 Adobe Campaign 자격 증명을 가져옵니다. 캠페인 자격 증명이 액세스 토큰이 생성되면 액세스 토큰 HTTP Post 호출이 수행되어 Adobe Campaign에서 프로필을 만듭니다. 다음은 프로필을 만들기 위한 코드입니다.
 
@@ -245,11 +245,11 @@ return null;
 }
 ```
 
-## Custom Submit {#custom-submit}
+## 사용자 지정 제출 {#custom-submit}
 
 사용자 지정 제출 핸들러를 만들어 응용 양식 제출을 처리합니다. 이 사용자 지정 제출 처리기에서 CampaignService의 createProfile 메서드를 호출합니다. createProfile 메서드는 만들어야 하는 프로파일을 나타내는 JSONObject를 수락합니다.
 
-AEM Forms의 사용자 지정 제출 처리기에 대한 자세한 내용은 이 [링크를 따르십시오](/help/forms/adaptive-forms/custom-submit-aem-forms-article.md)
+AEM Forms의 사용자 지정 제출 처리기에 대한 자세한 내용을 보려면 이 [link](/help/forms/adaptive-forms/custom-submit-aem-forms-article.md)을 따르십시오.
 
 다음은 사용자 지정 제출의 코드입니다
 
@@ -264,13 +264,13 @@ profile.addProperty("mobilePhone",request.getParameter("phone"));
 String pkey = addNewProfile.createProfile(profile);
 ```
 
-## 솔루션 테스트 {#test-the-solution}
+## 솔루션 {#test-the-solution} 테스트
 
 서비스 및 사용자 정의 제출 작업을 정의하면 솔루션을 테스트할 준비가 되었습니다. 솔루션을 테스트하려면 다음 단계를 수행하십시오
 
 
 * [여기에 설명된 대로 단계를 수행했는지 확인하십시오.](aem-forms-with-campaign-standard-getting-started-tutorial.md)
-* [패키지 관리자를](assets/create-acs-profile-on-af-submission.zip)사용하여 응용 양식 및 사용자 지정 제출 핸들러를 가져옵니다. 이 패키지에는 사용자 지정 제출 작업에 제출하도록 구성된 응용 양식이 포함되어 있습니다.
-* 양식 미리 [보기](http://localhost:4502/content/dam/formsanddocuments/createcampaignprofile/jcr:content?wcmmode=disabled)
+* [패키지 관리자를](assets/create-acs-profile-on-af-submission.zip) 사용하여 응용 양식 및 사용자 지정 제출 핸들러를 가져옵니다. 이 패키지에는 사용자 지정 제출 작업에 제출하도록 구성된 응용 양식이 포함되어 있습니다.
+* [양식](http://localhost:4502/content/dam/formsanddocuments/createcampaignprofile/jcr:content?wcmmode=disabled) 미리 보기
 * 모든 필드 입력 및 제출
 * ACS 인스턴스에서 새 프로필이 만들어집니다
