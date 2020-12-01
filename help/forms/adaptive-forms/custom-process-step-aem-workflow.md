@@ -31,16 +31,18 @@ ht-degree: 0%
 
 ## 마스터 프로젝트 만들기
 
-첫 번째 단계는 적절한 Adobe Maven Tranype을 사용하여 전문적인 프로젝트를 만드는 것입니다. 자세한 단계는 이 [문서에 나와 있습니다](https://helpx.adobe.com/experience-manager/using/maven_arch13.html). span 프로젝트를 eclipse로 가져오면 프로세스 단계에서 사용할 수 있는 첫 번째 OSGi 구성 요소 작성을 시작할 수 있습니다.
+첫 번째 단계는 적절한 Adobe Maven Tranype을 사용하여 전문적인 프로젝트를 만드는 것입니다. 자세한 단계는 이 [article](https://helpx.adobe.com/experience-manager/using/maven_arch13.html)에 나열되어 있습니다. span 프로젝트를 eclipse로 가져오면 프로세스 단계에서 사용할 수 있는 첫 번째 OSGi 구성 요소 작성을 시작할 수 있습니다.
 
 
 ### WorkflowProcess를 구현하는 클래스 만들기
 
-Eclipse IDE에서 전문적인 프로젝트 열기 projectname **>** 핵심 **폴더를** 확장합니다. src/main/java 폴더를 확장합니다. &quot;core&quot;로 끝나는 패키지가 표시됩니다. 이 패키지에서 WorkflowProcess를 구현하는 Java 클래스를 만듭니다. 실행 메서드를 재정의해야 합니다. 실행 메서드의 서명은 다음 공개 void 실행과 같습니다(WorkItem, WorkflowSessionSession, MetaDataMap processArguments). throwWorkflowException실행 메서드는 다음 3개 변수에 대한 액세스 권한을 제공합니다
+Eclipse IDE에서 전문적인 프로젝트 열기 **projectname** > **core** 폴더를 확장합니다. src/main/java 폴더를 확장합니다. &quot;core&quot;로 끝나는 패키지가 표시됩니다. 이 패키지에서 WorkflowProcess를 구현하는 Java 클래스를 만듭니다. 실행 메서드를 재정의해야 합니다. 실행 방법의 서명은 다음과 같습니다.
+public void execute(WorkItem, WorkflowSession workflowSession, MetaDataMap processArguments)는 WorkflowException을 throw합니다.
+실행 방법은 다음 3개 변수에 대한 액세스를 제공합니다
 
-**WorkItem**:workItem 변수는 워크플로와 관련된 데이터에 액세스할 수 있도록 합니다. 공개 API 문서는 [여기에서 사용할 수 있습니다.](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
+**WorkItem**:workItem 변수는 워크플로와 관련된 데이터에 액세스할 수 있도록 합니다. 공개 API 설명서는 [여기에서 사용할 수 있습니다.](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
 
-**WorkflowSession**:이 workflowSession 변수는 워크플로우를 제어하는 기능을 제공합니다. 공개 API 문서는 [여기에서 사용할 수 있습니다.](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
+**WorkflowSession**:이 workflowSession 변수는 워크플로우를 제어하는 기능을 제공합니다. 공개 API 설명서는 [여기](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)에서 사용할 수 있습니다.
 
 **MetaDataMap**:워크플로우와 연관된 모든 메타데이터 프로세스 단계로 전달되는 모든 프로세스 인수는 MetaDataMap 개체를 사용하여 사용할 수 있습니다.[API 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)
 
@@ -134,7 +136,8 @@ public class WriteFormAttachmentsToFileSystem implements WorkflowProcess {
 
 #### 구축 및 배포
 
-[여기에 설명된 대로 번들](https://helpx.adobe.com/experience-manager/using/maven_arch13.html#BuildtheOSGibundleusingMaven)[을 빌드합니다. 번들이 배포되어 활성 상태인지 확인하십시오](http://localhost:4502/system/console/bundles)
+[여기에 설명된 대로 번들 ](https://helpx.adobe.com/experience-manager/using/maven_arch13.html#BuildtheOSGibundleusingMaven)
+[빌드번들이 배포되어 활성 상태인지 확인합니다](http://localhost:4502/system/console/bundles)
 
 워크플로우 모델을 만듭니다. 워크플로우 모델에서 프로세스 단계를 드래그하여 놓습니다. 프로세스 단계를 &quot;파일 시스템에 적응형 양식 첨부 저장&quot;과 연결합니다.
 
