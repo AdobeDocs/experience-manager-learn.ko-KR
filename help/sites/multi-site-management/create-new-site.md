@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# 국가 사이트 만들기 {#create-country-site}
+# 국가 사이트 {#create-country-site} 만들기
 
 사이트 만들기 마법사를 사용하여 기존 언어 복사본에서 국가 사이트를 만드는 방법을 알아봅니다.
 
