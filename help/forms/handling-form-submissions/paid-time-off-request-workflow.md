@@ -27,7 +27,7 @@ ht-degree: 0%
 * 관리자가 양식을 엽니다. 관리자는 제출자가 작성한 정보를 편집할 수 없습니다.
 * 승인자 섹션이 승인자에게 표시되어야 합니다(이 경우 AEM 관리자 사용자임).
 
-위의 요구 사항을 충족하기 위해 양식에 **initialstep이라는** 숨김 필드를 사용하고 기본값은 Yes로 설정됩니다. 양식이 제출되면 워크플로우의 첫 번째 단계는 초기 단계의 값을 No로 설정합니다. 양식에는 초기 단계 값에 따라 적절한 섹션을 숨기거나 표시하는 비즈니스 규칙이 있습니다.
+위의 요구 사항을 충족하기 위해 양식에서 **initialstep**&#x200B;이라는 숨김 필드를 사용하고 기본값이 Yes로 설정됩니다. 양식이 제출되면 워크플로우의 첫 번째 단계에서 초기 단계의 값이 No로 설정됩니다. 양식에는 초기 단계 값에 따라 적절한 섹션을 숨기거나 표시하는 비즈니스 규칙이 있습니다.
 
 **AEM 워크플로우를 트리거할 양식 구성**
 
@@ -51,8 +51,8 @@ ht-degree: 0%
 * [DevelopingWithServiceUserBundle 다운로드 및 배포](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 * [SetValue 사용자 지정 OSGI 번들 다운로드 및 배포](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)
 * [이 아티클과 관련된 에셋을 AEM으로 가져오기](assets/helpxworkflow.zip)
-* 요청 [시간 초과 양식 열기](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
+* [요청 시간 해제 양식](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled) 열기
 * 세부 사항을 작성하고 제출합니다.
-* Open the [inbox](http://localhost:4502/mnt/overlay/cq/inbox/content/inbox.html). 새 작업이 할당되어 있어야 합니다. 양식을 엽니다. 제출자의 데이터는 읽기 전용이어야 하며 새로운 승인자 섹션이 표시되어야 합니다.
-* 워크플로우 모델 [살펴보기](http://localhost:4502/editor.html/conf/global/settings/workflow/models/helpxworkflow.html)
+* [받은 편지함](http://localhost:4502/mnt/overlay/cq/inbox/content/inbox.html)을 엽니다. 새 작업이 할당되어 있어야 합니다. 양식을 엽니다. 제출자의 데이터는 읽기 전용이어야 하며 새로운 승인자 섹션이 표시되어야 합니다.
+* [워크플로우 모델](http://localhost:4502/editor.html/conf/global/settings/workflow/models/helpxworkflow.html) 살펴보기
 * 프로세스 단계를 살펴보십시오. 초기 단계의 값을 아니요로 설정하는 단계입니다.
