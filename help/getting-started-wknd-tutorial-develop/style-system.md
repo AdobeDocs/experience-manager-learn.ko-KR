@@ -20,22 +20,22 @@ ht-degree: 0%
 ---
 
 
-# 스타일 시스템을 사용한 개발 {#developing-with-the-style-system}
+# 스타일 시스템 {#developing-with-the-style-system}으로 개발
 
 Experience Manager 스타일 시스템을 사용하여 개별 스타일을 구현하고 핵심 구성 요소를 다시 사용하는 방법을 알아봅니다. 이 자습서에서는 템플릿 편집기의 브랜드별 CSS 및 고급 정책 구성으로 핵심 구성 요소를 확장하기 위한 스타일 시스템 개발에 대해 설명합니다.
 
 ## 전제 조건 {#prerequisites}
 
-필요한 도구 및 [로컬 개발 환경 설정을 위한 지침을 검토하십시오](overview.md#local-dev-environment).
+[로컬 개발 환경 설정](overview.md#local-dev-environment)에 대한 필수 도구 및 지침을 검토하십시오.
 
-또한 클라이언트측 라이브러리 및 [프런트 엔드 워크플로우](client-side-libraries.md) 튜토리얼을 검토하여 클라이언트측 라이브러리 및 AEM 프로젝트에 내장된 다양한 프런트 엔드 툴의 기본 사항을 이해하는 것이 좋습니다.
+또한 클라이언트측 라이브러리 및 프런트 엔드 워크플로우[ 튜토리얼을 검토하여 AEM 프로젝트에 내장된 다양한 프런트 엔드 툴과 클라이언트측 라이브러리의 기본 사항을 이해하는 것이 좋습니다.](client-side-libraries.md)
 
 ### 스타터 프로젝트
 
 튜토리얼이 빌드하는 기본 라인 코드를 확인합니다.
 
-1. github.com/adobe/aem-guides-wknd [저장소](https://github.com/adobe/aem-guides-wknd) 복제
-1. 분기를 `style-system/start` 확인해 보세요
+1. [github.com/adobe/aem-guides-wknd](https://github.com/adobe/aem-guides-wknd) 저장소를 복제합니다.
+1. `style-system/start` 분기를 확인합니다.
 
    ```shell
    $ git clone git@github.com:adobe/aem-guides-wknd.git ~/code/aem-guides-wknd
@@ -50,7 +50,7 @@ Experience Manager 스타일 시스템을 사용하여 개별 스타일을 구�
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-항상 [GitHub에서](https://github.com/adobe/aem-guides-wknd/tree/style-system/solution) 완료된 코드를 보거나 분기로 전환하여 로컬로 코드를 체크 아웃할 수 `style-system/solution`있습니다.
+항상 [GitHub](https://github.com/adobe/aem-guides-wknd/tree/style-system/solution)에서 완료된 코드를 보거나 분기 `style-system/solution`로 전환하여 로컬로 코드를 체크 아웃할 수 있습니다.
 
 ## 목표
 
@@ -58,27 +58,27 @@ Experience Manager 스타일 시스템을 사용하여 개별 스타일을 구�
 1. BEM 표기법과 이 표기법을 사용하여 스타일에 대해 자세히 범위를 지정하는 방법을 알아봅니다.
 1. 편집 가능한 템플릿으로 고급 정책 구성을 적용합니다.
 
-## 구축 내용 {#what-you-will-build}
+## {#what-you-will-build} 빌드할 항목
 
-이 장에서는 [스타일 시스템 기능을](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html) 사용하여 아티클 페이지에 사용되는 여러 가지 구성 요소를 만듭니다. 또한 스타일 시스템을 사용하여 머리글/바닥글 및 레이아웃 컨테이너와 같은 구조적 요소에 대한 변형을 만들 것입니다.
+이 장에서는 [스타일 시스템 기능](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html)을 사용하여 아티클 페이지에 사용되는 여러 가지 구성 요소를 만듭니다. 또한 스타일 시스템을 사용하여 머리글/바닥글 및 레이아웃 컨테이너와 같은 구조적 요소에 대한 변형을 만들 것입니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/30386/?quality=12&learn=on)
 
 ## 배경 {#background}
 
-개발자와 [템플릿](https://docs.adobe.com/content/help/en/experience-manager-65/developing/components/style-system.html) 편집자는 스타일 시스템을 사용하여 구성 요소의 시각적 변형을 여러 개 만들 수 있습니다. 그런 다음 작성자는 페이지를 작성할 때 사용할 스타일을 결정할 수 있습니다. Adobe는 튜토리얼의 나머지 부분 전체에서 스타일 시스템을 활용하여 몇 가지 고유한 스타일을 구현하고 낮은 코드 접근 방식에서는 핵심 구성 요소를 활용할 것입니다.
+[스타일 시스템](https://docs.adobe.com/content/help/en/experience-manager-65/developing/components/style-system.html)을 사용하면 개발자와 템플릿 편집자는 구성 요소의 시각적 변형을 여러 개 만들 수 있습니다. 그런 다음 작성자는 페이지를 작성할 때 사용할 스타일을 결정할 수 있습니다. Adobe는 튜토리얼의 나머지 부분 전체에서 스타일 시스템을 활용하여 몇 가지 고유한 스타일을 구현하고 낮은 코드 접근 방식에서는 핵심 구성 요소를 활용할 것입니다.
 
 스타일 시스템의 일반적인 아이디어는 작성자가 구성 요소의 모양을 다양한 스타일로 선택할 수 있다는 것입니다. &quot;styles&quot;는 구성 요소의 바깥쪽 div에 삽입되는 추가 CSS 클래스에 의해 지원됩니다. 클라이언트 라이브러리에서 CSS 규칙은 이러한 스타일 클래스를 기반으로 추가되어 구성 요소의 모양이 변경됩니다.
 
-스타일 시스템에 대한 [자세한 설명서는 여기에서 찾을 수 있습니다](https://docs.adobe.com/content/help/en/experience-manager-65/developing/components/style-system.html). 스타일 시스템을 이해하기 위한 뛰어난 [기술 비디오도 있습니다](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/style-system-technical-video-understand.html).
+[스타일 시스템에 대한 자세한 설명서는 여기에서 찾을 수 있습니다](https://docs.adobe.com/content/help/en/experience-manager-65/developing/components/style-system.html). 스타일 시스템](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/style-system-technical-video-understand.html)을 이해하는 데 유용한 [기술 비디오도 있습니다.
 
 ## 제목 구성 요소 스타일 {#title-component}
 
-이 시점에서 [제목 구성](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/title.html) 요소는 `/apps/wknd/components/content/title` ui.apps **모듈** 의 일부로서 프로젝트로 프록시되었습니다. 머리글 요소(`H1`, `H2`, `H3`..)의 기본 스타일은 다음 **파일** 의 ui.frontend `_elements.scss` 모듈에 이미 구현되었습니다 `ui.frontend/src/main/webpack/base/sass/_elements.scss`.
+이때 [제목 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/title.html)은 **ui.apps** 모듈의 일부로 `/apps/wknd/components/content/title`의 프로젝트에 프록시되었습니다. 제목 요소(`H1`, `H2`, `H3`...)의 기본 스타일이 이미 `ui.frontend/src/main/webpack/base/sass/_elements.scss` 아래의 `_elements.scss` 파일의 **ui.frontend** 모듈에서 구현되었습니다.
 
 ### 밑줄 스타일
 
-WKND [아티클 디자인에는](assets/pages-templates/wknd-article-design.xd) 밑줄이 있는 제목 구성 요소의 고유한 스타일이 포함되어 있습니다. 두 개의 구성 요소를 만들거나 구성 요소 대화 상자를 수정하는 대신 스타일 시스템을 사용하여 작성자가 밑줄 스타일을 추가할 수 있습니다.
+[WKND 아티클 디자인](assets/pages-templates/wknd-article-design.xd)에는 밑줄이 있는 제목 구성 요소의 고유한 스타일이 포함되어 있습니다. 두 개의 구성 요소를 만들거나 구성 요소 대화 상자를 수정하는 대신 스타일 시스템을 사용하여 작성자가 밑줄 스타일을 추가할 수 있습니다.
 
 ![밑줄 스타일 - 제목 구성 요소](assets/style-system/title-underline-style.png)
 
@@ -86,13 +86,13 @@ WKND [아티클 디자인에는](assets/pages-templates/wknd-article-design.xd) 
 
 프런트 엔드 개발자로서 핵심 구성 요소의 스타일 지정을 위한 첫 번째 단계는 구성 요소에서 생성한 마크업을 이해하는 것입니다.
 
-생성된 프로젝트의 일부로 원형 유형이 **핵심 구성 요소 예** 프로젝트를 포함했습니다. 개발자 및 컨텐츠 작성자의 경우 핵심 구성 요소에서 사용 가능한 모든 기능을 쉽게 이해할 수 있습니다. 라이브 버전도 [제공됩니다](https://opensource.adobe.com/aem-core-wcm-components/library.html).
+생성된 프로젝트의 일부로서 원형에는 **핵심 구성 요소 예** 프로젝트가 포함되었습니다. 개발자 및 컨텐츠 작성자의 경우 핵심 구성 요소에서 사용 가능한 모든 기능을 쉽게 이해할 수 있습니다. 라이브 버전도 [available](https://opensource.adobe.com/aem-core-wcm-components/library.html)입니다.
 
 1. 새 브라우저를 열고 제목 구성 요소를 봅니다.
 
-   로컬 AEM 인스턴스: [http://localhost:4502/editor.html/content/core-components-examples/library/title.html](http://localhost:4502/editor.html/content/core-components-examples/library/title.html)
+   로컬 AEM 인스턴스:[http://localhost:4502/editor.html/content/core-components-examples/library/title.html](http://localhost:4502/editor.html/content/core-components-examples/library/title.html)
 
-   라이브 예: [https://opensource.adobe.com/aem-core-wcm-components/library/title.html](https://opensource.adobe.com/aem-core-wcm-components/library/title.html)
+   라이브 예:[https://opensource.adobe.com/aem-core-wcm-components/library/title.html](https://opensource.adobe.com/aem-core-wcm-components/library/title.html)
 
 1. 다음은 제목 구성 요소의 마크업입니다.
 
@@ -121,9 +121,9 @@ WKND [아티클 디자인에는](assets/pages-templates/wknd-article-design.xd) 
 
 ### 밑줄 스타일 구현 - ui.frontend
 
-다음으로 프로젝트의 **ui.frontend** 모듈을 사용하여 Underline 스타일을 구현할 것입니다. AEM의 로컬 인스턴스에 배포하기 **전에** ui.frontrend ** 모듈과 함께 번들로 제공되는 webpack 개발 서버를 사용할 것입니다.
+다음으로 프로젝트의 **ui.frontend** 모듈을 사용하여 밑줄 스타일을 구현하겠습니다. **ui.frontend** 모듈과 함께 번들로 제공되는 webpack 개발 서버를 사용하여 *스타일을 AEM의 로컬 인스턴스에 배포하기 전에 미리 봅니다.*
 
-1. ui.frontend 모듈 내에서 다음 명령을 실행하여 webpack **개발** 서버를 시작합니다.
+1. **ui.frontend** 모듈 내에서 다음 명령을 실행하여 webpack dev 서버를 시작합니다.
 
    ```shell
    $ cd ~/code/aem-guides-wknd/ui.frontend/
@@ -133,7 +133,7 @@ WKND [아티클 디자인에는](assets/pages-templates/wknd-article-design.xd) 
    > webpack-dev-server --open --config ./webpack.dev.js
    ```
 
-   브라우저를 http://localhost:8080에서 [열어야 합니다](http://localhost:8080).
+   브라우저가 [http://localhost:8080](http://localhost:8080)에 열립니다.
 
    >[!NOTE]
    >
@@ -141,8 +141,8 @@ WKND [아티클 디자인에는](assets/pages-templates/wknd-article-design.xd) 
 
    ![웹 팩 개발 서버](assets/style-system/static-webpack-server.png)
 
-1. Eclipse 또는 선택한 IDE에서 다음 위치에 있는 파일을 `index.html` 엽니다. `ui.frontend/src/main/webpack/static/index.html`. 웹 팩 개발 서버에서 사용하는 정적 마크업입니다.
-1. 제목 구성 요소의 인스턴스를 `index.html` 찾아 문서에 cmp-title을 검색하여 밑줄 스타일을 추가할 *수 있습니다*. Choose the Title component with the text *&quot;Banks of the Wall Skatepark&quot;* (line 218). 클래스를 주변 div `cmp-title--underline` 에 추가합니다.
+1. Eclipse 또는 선택한 IDE에서 다음 위치에 있는 `index.html` 파일을 엽니다.`ui.frontend/src/main/webpack/static/index.html`. 웹 팩 개발 서버에서 사용하는 정적 마크업입니다.
+1. `index.html`에서 *cmp-title*&#x200B;에 대한 문서를 검색하여 제목 구성 요소의 인스턴스를 찾아 밑줄 스타일을 추가합니다. 텍스트 *&quot;Banks of the Wall Skatetpark&quot;*(218줄)가 있는 제목 구성 요소를 선택합니다. `cmp-title--underline` 클래스를 주변 div에 추가합니다.
 
    ```html
     <!-- before -->
@@ -163,7 +163,7 @@ WKND [아티클 디자인에는](assets/pages-templates/wknd-article-design.xd) 
    ```
 
 1. 브라우저로 돌아가 추가 클래스가 마크업에 반영되었는지 확인합니다.
-1. ui. **frontend** 모듈로 돌아가서 다음 위치에 있는 파일을 `title.scss` 업데이트합니다. `ui.frontend/src/main/webpack/components/content/title/scss/title.scss`:
+1. **ui.frontend** 모듈로 돌아가서 다음 위치에 있는 `title.scss` 파일을 업데이트합니다.`ui.frontend/src/main/webpack/components/content/title/scss/title.scss`:
 
    ```css
    /* Add Title Underline Style */
@@ -188,7 +188,7 @@ WKND [아티클 디자인에는](assets/pages-templates/wknd-article-design.xd) 
    >
    >스타일 범위를 대상 구성 요소로 항상 엄격히 지정하는 것이 좋습니다. 이렇게 하면 페이지의 다른 영역에 추가 스타일이 적용되지 않습니다.
    >
-   >모든 핵심 구성 요소는 **[BEM 표기법을 준수합니다](https://github.com/adobe/aem-core-wcm-components/wiki/css-coding-conventions)**. 구성 요소의 기본 스타일을 만들 때 외부 CSS 클래스를 타깃팅하는 것이 가장 좋습니다. 또 다른 우수 사례는 HTML 요소가 아닌 핵심 구성 요소 BEM 표기법에 의해 지정된 클래스 이름을 대상으로 하는 것입니다.
+   >모든 핵심 구성 요소는 **[BEM 표기법](https://github.com/adobe/aem-core-wcm-components/wiki/css-coding-conventions)**&#x200B;을 따릅니다. 구성 요소의 기본 스타일을 만들 때 외부 CSS 클래스를 타깃팅하는 것이 가장 좋습니다. 또 다른 우수 사례는 HTML 요소가 아닌 핵심 구성 요소 BEM 표기법에 의해 지정된 클래스 이름을 대상으로 하는 것입니다.
 
 1. 다시 브라우저로 돌아오면 밑줄 스타일이 추가되어 표시됩니다.
 
@@ -207,9 +207,9 @@ WKND [아티클 디자인에는](assets/pages-templates/wknd-article-design.xd) 
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-1. 다음 위치에 있는 **아티클 페이지 템플릿으로** 이동합니다. [http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html).
+1. 다음 위치에 있는 **아티클 페이지 템플릿**&#x200B;으로 이동합니다.[http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html).
 
-1. 기본 **레이아웃 컨테이너** 의 기본 **레이아웃 컨테이너**&#x200B;에서Allowed ComponentsComponents에 나열된 TitleAllowed **구성 요소 옆에 있는 정책** 아이콘 **** **&#x200B;을 선택합니다.
+1. **구조** 모드의 기본 **레이아웃 컨테이너**&#x200B;에서 *허용된 구성 요소*&#x200B;에 나열된 **제목** 구성 요소 옆에 있는 **정책** 아이콘을 선택합니다.
 
    ![제목 정책 구성](assets/style-system/article-template-title-policy-icon.png)
 
@@ -217,42 +217,42 @@ WKND [아티클 디자인에는](assets/pages-templates/wknd-article-design.xd) 
 
    *정책 제목 **: **WKND 제목**
 
-   *속성* > *스타일 탭* > *새 스타일 추가*
+   *속성* >  *스타일 탭* >  *새 스타일 추가*
 
-   **밑줄** : `cmp-title--underline`
+   **밑줄** :  `cmp-title--underline`
 
    ![제목에 대한 스타일 정책 구성](assets/style-system/title-style-policy.gif)
 
-   완료 **를** 클릭하여 제목 정책에 대한 변경 사항을 저장합니다.
+   제목 정책에 대한 변경 내용을 저장하려면 **완료**&#x200B;를 클릭합니다.
 
    >[!NOTE]
    >
-   > 이 값 `cmp-title--underline` 은 **ui.frontend** 모듈에서 개발할 때 이전에 타깃팅한 CSS 클래스와 일치합니다.
+   > `cmp-title--underline` 값은 **ui.frontend** 모듈로 개발 시 이전에 타깃팅한 CSS 클래스와 일치합니다.
 
 ### 밑줄 스타일 적용
 
 마지막으로 작성자는 특정 제목 구성 요소에 밑줄 스타일을 적용하도록 선택할 수 있습니다.
 
-1. AEM Sites 편집기에서 **La Skatetparks** 아티클로 이동합니다. [http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html)
-1. 편집 **** 모드에서 제목 구성 요소를 선택합니다. 페인트브러쉬 **아이콘을 클릭하고** 밑줄 **** 스타일을 선택합니다.
+1. 다음 AEM Sites 편집기에서 **La Skatetparks** 아티클로 이동합니다.[http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html)
+1. **편집** 모드에서 제목 구성 요소를 선택합니다. **페인트브러쉬** 아이콘을 클릭하고 **밑줄** 스타일을 선택합니다.
 
    ![밑줄 스타일 적용](assets/style-system/apply-underline-style-title.png)
 
    작성자는 스타일을 켜거나 끌 수 있어야 합니다.
 
-1. [ **페이지 정보** ] 아이콘 > **[게시됨으로** 보기]를 클릭하여 AEM 편집기 외부에서 페이지를 검사합니다.
+1. AEM 편집기 외부에서 페이지를 검사하려면 **페이지 정보** 아이콘 > **게시됨으로 보기**&#x200B;를 클릭합니다.
 
    ![게시됨으로 보기](assets/style-system/view-as-published.png)
 
-   브라우저 개발자 도구를 사용하여 Title 구성 요소 주위의 마크업에 외부 div에 `cmp-title--underline` 적용되는 CSS 클래스가 있는지 확인합니다.
+   브라우저 개발자 도구를 사용하여 Title 구성 요소 주위의 마크업에 외부 div에 CSS 클래스 `cmp-title--underline`가 적용되었는지 확인합니다.
 
 ## 텍스트 구성 요소 스타일 {#text-component}
 
-그런 다음 유사한 단계를 반복하여 [텍스트 구성 요소에 고유한 스타일을 적용합니다](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/text.html). 텍스트 구성 요소는 `/apps/wknd/components/content/text` ui.apps **모듈** 의 일부로서 프로젝트에서 프록시되었습니다. 단락 요소의 기본 스타일은 **아래 파일의 ui.frontend** 모듈에 이미 구현되어 `_elements.scss` 있습니다 `ui.frontend/src/main/webpack/base/sass/_elements.scss`.
+그런 다음 유사한 단계를 반복하여 [텍스트 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/text.html)에 고유한 스타일을 적용합니다. 텍스트 구성 요소는 **ui.apps** 모듈의 일부로 `/apps/wknd/components/content/text` 아래의 프로젝트로 프록시되었습니다. 단락 요소의 기본 스타일이 이미 `ui.frontend/src/main/webpack/base/sass/_elements.scss` 아래의 `_elements.scss` 파일의 **ui.frontend** 모듈에서 구현되었습니다.
 
 ### 견적 블록 스타일
 
-WKND [아티클 디자인에는](assets/pages-templates/wknd-article-design.xd) 견적 블록이 있는 텍스트 구성 요소에 대한 고유한 스타일이 포함되어 있습니다.
+[WKND 아티클 디자인](assets/pages-templates/wknd-article-design.xd)은 텍스트 구성 요소에 대한 고유 스타일을 따옴표 블록으로 포함합니다.
 
 ![견적 블록 스타일 - 텍스트 구성 요소](assets/style-system/quote-block-style.png)
 
@@ -260,9 +260,10 @@ WKND [아티클 디자인에는](assets/pages-templates/wknd-article-design.xd) 
 
 다시 한 번 텍스트 구성 요소의 마크업을 검사합니다.
 
-1. 새 브라우저를 열고 핵심 구성 요소 라이브러리의 일부로 텍스트 구성 요소를 봅니다.로컬 AEM 인스턴스: [http://localhost:4502/editor.html/content/core-components-examples/library/text.html](http://localhost:4502/editor.html/content/core-components-examples/library/text.html)
+1. 새 브라우저를 열고 핵심 구성 요소 라이브러리의 일부로 텍스트 구성 요소를 봅니다.
+로컬 AEM 인스턴스:[http://localhost:4502/editor.html/content/core-components-examples/library/text.html](http://localhost:4502/editor.html/content/core-components-examples/library/text.html)
 
-   라이브 예: [https://opensource.adobe.com/aem-core-wcm-components/library/text.html](https://opensource.adobe.com/aem-core-wcm-components/library/text.html)
+   라이브 예:[https://opensource.adobe.com/aem-core-wcm-components/library/text.html](https://opensource.adobe.com/aem-core-wcm-components/library/text.html)
 
 1. 다음은 텍스트 구성 요소의 마크업입니다.
 
@@ -295,9 +296,9 @@ WKND [아티클 디자인에는](assets/pages-templates/wknd-article-design.xd) 
 
 ### 견적 블록 스타일 구현 - ui.frontend
 
-그런 다음 프로젝트의 ui.frontend **** 모듈을 사용하여 견적 블록 스타일을 구현할 것입니다.
+다음으로 프로젝트의 **ui.frontend** 모듈을 사용하여 견적 블록 스타일을 구현하겠습니다.
 
-1. ui.frontend 모듈 내에서 다음 명령을 실행하여 webpack **개발** 서버를 시작합니다.
+1. **ui.frontend** 모듈 내에서 다음 명령을 실행하여 webpack dev 서버를 시작합니다.
 
    ```shell
    $ cd ~/code/aem-guides-wknd/ui.frontend/
@@ -307,8 +308,8 @@ WKND [아티클 디자인에는](assets/pages-templates/wknd-article-design.xd) 
    > webpack-dev-server --open --config ./webpack.dev.js
    ```
 
-1. Eclipse 또는 선택한 IDE에서 다음 위치에 있는 파일을 `index.html` 엽니다. `ui.frontend/src/main/webpack/static/index.html`. 웹 팩 개발 서버에서 사용하는 정적 마크업입니다.
-1. 텍스트 구성 요소의 인스턴스 `index.html` 에서 텍스트 *&quot;Jacob Wester&quot;* (210행)를 검색하여찾습니다. 클래스를 주변 div `cmp-text--quote` 에 추가합니다.
+1. Eclipse 또는 선택한 IDE에서 다음 위치에 있는 `index.html` 파일을 엽니다.`ui.frontend/src/main/webpack/static/index.html`. 웹 팩 개발 서버에서 사용하는 정적 마크업입니다.
+1. `index.html`에서 텍스트 *&quot;Jacob Wester&quot;*(210행)을 검색하여 텍스트 구성 요소의 인스턴스를 찾습니다. `cmp-text--quote` 클래스를 주변 div에 추가합니다.
 
    ```html
     <!-- before -->
@@ -331,7 +332,7 @@ WKND [아티클 디자인에는](assets/pages-templates/wknd-article-design.xd) 
    ```
 
 1. 브라우저로 돌아가 추가 클래스가 마크업에 반영되었는지 확인합니다.
-1. ui. **frontend** 모듈로 돌아가서 다음 위치에 있는 파일을 `text.scss` 업데이트합니다. `ui.frontend/src/main/webpack/components/content/text/scss/text.scss`:
+1. **ui.frontend** 모듈로 돌아가서 다음 위치에 있는 `text.scss` 파일을 업데이트합니다.`ui.frontend/src/main/webpack/components/content/text/scss/text.scss`:
 
    ```css
    /* WKND Text Quote style */
@@ -390,9 +391,9 @@ WKND [아티클 디자인에는](assets/pages-templates/wknd-article-design.xd) 
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-1. 다음 위치에 있는 **아티클 페이지 템플릿으로** 이동합니다. [http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html).
+1. 다음 위치에 있는 **아티클 페이지 템플릿**&#x200B;으로 이동합니다.[http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html).
 
-1. 기본 **레이아웃 컨테이너** 의 기본 **레이아웃 컨테이너**&#x200B;에서 Allowed Text Allowed Components구성 요소 아래에 나열된 **Facebook 구성 요소 옆에 있는 정책** 아이콘 **** **&#x200B;을 선택합니다.
+1. **구조** 모드의 기본 **레이아웃 컨테이너**&#x200B;에서 **Text** 구성 요소가 *에 나열된 다음&#x200B;**정책**아이콘을 선택합니다.*
 
    ![텍스트 정책 구성](assets/style-system/article-template-text-policy-icon.png)
 
@@ -400,22 +401,22 @@ WKND [아티클 디자인에는](assets/pages-templates/wknd-article-design.xd) 
 
    *정책 제목 **: **WKND 텍스트**
 
-   *플러그인* > *단락 스타일* > 단락 *스타일 사용*
+   *플러그인* >  *단락 스타일* >  *단락 스타일 사용*
 
-   *스타일 탭* > *새 스타일 추가*
+   *스타일 탭* >  *새 스타일 추가*
 
-   **견적 블록** : `cmp-text--quote`
+   **견적 블록** :  `cmp-text--quote`
 
    ![텍스트 구성 요소 정책](assets/style-system/text-policy-enable-paragraphstyles.png)
 
    ![텍스트 구성 요소 정책 2](assets/style-system/text-policy-enable-quotestyle.png)
 
-   완료를 **클릭하여** 텍스트 정책에 대한 변경 사항을 저장합니다.
+   텍스트 정책에 대한 변경 사항을 저장하려면 **완료**&#x200B;를 클릭합니다.
 
 ### 견적 블록 스타일 적용
 
-1. AEM Sites 편집기에서 **La Skatetparks** 아티클로 이동합니다. [http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html)
-1. 편집 **** 모드에서 텍스트 구성 요소를 선택합니다. 견적 요소를 포함하도록 구성 요소를 편집합니다.
+1. 다음 AEM Sites 편집기에서 **La Skatetparks** 아티클로 이동합니다.[http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html)
+1. **편집** 모드에서 텍스트 구성 요소를 선택합니다. 견적 요소를 포함하도록 구성 요소를 편집합니다.
 
    ![텍스트 구성 요소 구성](assets/style-system/configure-text-component.png)
 
@@ -429,25 +430,25 @@ WKND [아티클 디자인에는](assets/pages-templates/wknd-article-design.xd) 
 
 레이아웃 컨테이너는 아티클 페이지 템플릿의 기본 구조를 만들고 콘텐츠 작성자가 페이지에 콘텐츠를 추가할 수 있는 드롭 영역을 제공하는 데 사용되었습니다. 또한 레이아웃 컨테이너는 스타일 시스템을 활용할 수 있으므로 컨텐츠 작성자에게 레이아웃 디자인을 위한 더 많은 옵션을 제공합니다.
 
-현재 CSS 규칙은 고정된 너비를 적용하는 전체 페이지에 적용됩니다. 대신 컨텐츠 작성자가 켜기/끄기로 전환할 수 있는 **고정 폭** 스타일을 만드는 것이 보다 유연한 접근 방식입니다.
+현재 CSS 규칙은 고정된 너비를 적용하는 전체 페이지에 적용됩니다. 대신 컨텐츠 작성자가 켜기/끄기로 전환할 수 있는 **고정 너비** 스타일을 만드는 보다 유연한 접근 방식이 있습니다.
 
 ### 고정 폭 스타일 구현 - ui.frontend
 
-프로젝트의 **ui.frontend** 모듈에서 고정 폭 스타일을 구현하기 시작합니다.
+프로젝트의 **ui.frontend** 모듈에서 고정 너비 스타일 구현을 시작합니다.
 
-1. ui.frontend 모듈 내에서 다음 명령을 실행하여 webpack **개발** 서버를 시작합니다.
+1. **ui.frontend** 모듈 내에서 다음 명령을 실행하여 webpack dev 서버를 시작합니다.
 
    ```shell
    $ cd ~/code/aem-guides-wknd/ui.frontend/
    $ npm start
    ```
 
-1. 다음 위치에 `index.html` 있는 파일을 엽니다. `ui.frontend/src/main/webpack/static/index.html`.
-1. 집필 페이지 템플릿의 본문을 고정 너비로 만들고 머리글과 바닥글을 더 넓힐 수 있게 하려고 합니다. 따라서 두 경험 조각(136줄) 사이의 두 번째 `<div class='responsivegrid aem-GridColumn aem-GridColumn--default--12'` (레이아웃 컨테이너)를 타깃팅하려고 합니다.
+1. 다음 위치에 있는 `index.html` 파일을 엽니다.`ui.frontend/src/main/webpack/static/index.html`.
+1. 집필 페이지 템플릿의 본문을 고정 너비로 만들고 머리글과 바닥글을 더 넓힐 수 있게 하려고 합니다. 따라서 두 경험 조각(136줄) 사이의 두 번째 `<div class='responsivegrid aem-GridColumn aem-GridColumn--default--12'`(레이아웃 컨테이너)을 타깃팅하려고 합니다.
 
    ![기본 본문 레이아웃 컨테이너 Div](assets/style-system/main-body-layoutContainer.png)
 
-1. 이전 단계 `cmp-layout-container--fixed` 에서 식별된 `div` 클래스에 클래스를 추가합니다.
+1. 이전 단계에서 식별된 `div`에 `cmp-layout-container--fixed` 클래스를 추가합니다.
 
    ```html
    <!-- Experience Fragment Header -->
@@ -464,7 +465,7 @@ WKND [아티클 디자인에는](assets/pages-templates/wknd-article-design.xd) 
    </div>
    ```
 
-1. 다음 위치에 `container.scss` 있는 파일을 업데이트합니다. `ui.frontend/src/main/webpack/components/content/container/scss/container.scss`:
+1. 다음 위치에 있는 `container.scss` 파일을 업데이트합니다.`ui.frontend/src/main/webpack/components/content/container/scss/container.scss`:
 
    ```css
    /* WKND Layout Container - Fixed Width */
@@ -481,7 +482,7 @@ WKND [아티클 디자인에는](assets/pages-templates/wknd-article-design.xd) 
    }
    ```
 
-1. 다음 위치에 `_elements.scss` 있는 파일을 업데이트합니다. `ui.frontend/src/main/webpack/base/sass/_elements.scss` 변수를 사용하여 `.root` 규칙을 변경하여 변수에 새로운 최대 너비를 설정합니다 `$max-body-width`.
+1. 다음 위치에 있는 `_elements.scss` 파일을 업데이트합니다.`ui.frontend/src/main/webpack/base/sass/_elements.scss` 및 `.root` 규칙을 변경하여 변수 `$max-body-width`에 새 최대 너비를 설정합니다.
 
    ```css
     /* Before */
@@ -511,7 +512,7 @@ WKND [아티클 디자인에는](assets/pages-templates/wknd-article-design.xd) 
 
    >[!NOTE]
    >
-   > 변수 및 값의 전체 목록은 `ui.frontend/src/main/webpack/base/sass/_variables.scss`.
+   > 변수 및 값의 전체 목록은`ui.frontend/src/main/webpack/base/sass/_variables.scss`.
 
 1. 브라우저로 돌아가면 페이지의 기본 컨텐츠는 동일하게 나타나지만 머리글과 바닥글은 훨씬 더 넓습니다. 예상된 일입니다.
 
@@ -528,25 +529,25 @@ WKND [아티클 디자인에는](assets/pages-templates/wknd-article-design.xd) 
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-1. 다음 위치에 있는 **아티클 페이지 템플릿으로** 이동합니다. [http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html).
+1. 다음 위치에 있는 **아티클 페이지 템플릿**&#x200B;으로 이동합니다.[http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html).
 
-1. 구조 **** 모드에서 기본 **레이아웃 컨테이너** (경험 조각 머리글과 바닥글 사이)를 선택하고 **정책** 아이콘을 선택합니다.
+1. **구조** 모드에서 기본 **레이아웃 컨테이너**(경험 조각 머리글과 바닥글 사이)를 선택하고 **정책** 아이콘을 선택합니다.
 
    ![기본 본문 레이아웃 컨테이너 정책 구성](assets/style-system/layout-container-article-template-policy-icon.png)
 
-1. 다음 값이 있는 **고정 너비에 대한 추가** 스타일을 포함하도록 WKND 사이트 기본 **정책을** `cmp-layout-container--fixed`업데이트합니다.
+1. **고정 너비**&#x200B;에 대한 추가 스타일을 포함하려면 **WKND 사이트 기본값** 정책을 업데이트하십시오(`cmp-layout-container--fixed`).
 
-   ![WKND 사이트 기본 정책 업데이트 ](assets/style-system/wknd-site-default-policy-update-fixed-width.png)
+   ![WKND 사이트 기본 정책 업데이트  ](assets/style-system/wknd-site-default-policy-update-fixed-width.png)
 
    변경 내용을 저장하고 아티클 페이지 템플릿 페이지를 새로 고칩니다.
 
-1. 기본 **레이아웃 컨테이너** (경험 조각 머리글과 바닥글 사이)를 다시 선택합니다. 이번에는 **페인트브러쉬** 아이콘이 표시되고 스타일 드롭다운에서 **고정 너비** 를 선택할 수 있습니다.
+1. 기본 **레이아웃 컨테이너**(경험 조각 머리글과 바닥글 사이)를 다시 선택합니다. 이번에는 **페인트브러쉬** 아이콘이 표시되고 스타일 드롭다운에서 **고정 너비**&#x200B;를 선택할 수 있습니다.
 
    ![고정 폭 레이아웃 컨테이너 적용](assets/style-system/apply-fixed-width-layout-container.png)
 
    스타일을 켜거나 끌 수 있어야 합니다.
 
-1. AEM Sites 편집기에서 **La Skatetparks** 아티클로 이동합니다. [http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html). 고정 폭 컨테이너가 작동 중이어야 합니다.
+1. 다음 AEM Sites 편집기에서 **La Skatetparks** 아티클로 이동합니다.[http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html). 고정 폭 컨테이너가 작동 중이어야 합니다.
 
 ## 머리글/바닥글 - 경험 조각 {#experience-fragment}
 
@@ -554,18 +555,18 @@ WKND [아티클 디자인에는](assets/pages-templates/wknd-article-design.xd) 
 
 ### 헤더 스타일 구현 - ui.frontend
 
-헤더 구성 요소 내의 구성 요소는 [AdobeXD 디자인과](assets/pages-templates/wknd-article-design.xd)일치하도록 이미 스타일이 지정되어 있으므로, 일부 작은 레이아웃 수정만 필요합니다.
+헤더 구성 요소 내의 구성 요소는 이미 [AdobeXD 디자인](assets/pages-templates/wknd-article-design.xd)과 일치하도록 스타일이 지정되어 있으므로 일부 작은 레이아웃 수정만 필요합니다.
 
-1. ui.frontend 모듈 내에서 다음 명령을 실행하여 webpack **개발** 서버를 시작합니다.
+1. **ui.frontend** 모듈 내에서 다음 명령을 실행하여 webpack dev 서버를 시작합니다.
 
    ```shell
    $ cd ~/code/aem-guides-wknd/ui.frontend/
    $ npm start
    ```
 
-1. 다음 위치에 `index.html` 있는 파일을 엽니다. `ui.frontend/src/main/webpack/static/index.html`.
-1. class=&quot;experiencerfragment(Line 48)를 검색하여 경험 조각 구성 요소의 **첫** 번째 ** 인스턴스를 찾습니다.
-1. 이전 단계 `cmp-experiencefragment--header` 에서 식별된 `div` 클래스에 클래스를 추가합니다.
+1. 다음 위치에 있는 `index.html` 파일을 엽니다.`ui.frontend/src/main/webpack/static/index.html`.
+1. *class=&quot;experiencerfragment*(48행)를 검색하여 경험 조각 구성 요소의 **first** 인스턴스를 찾습니다.
+1. 이전 단계에서 식별된 `div`에 `cmp-experiencefragment--header` 클래스를 추가합니다.
 
    ```html
        ...
@@ -577,7 +578,7 @@ WKND [아티클 디자인에는](assets/pages-templates/wknd-article-design.xd) 
                ...
    ```
 
-1. 다음 위치에 `experiencefragment.scss` 있는 파일을 엽니다. `ui.frontend/src/main/webpack/components/content/experiencefragment/scss/experiencefragment.scss`. 파일에 다음 스타일을 추가합니다.
+1. 다음 위치에 있는 `experiencefragment.scss` 파일을 엽니다.`ui.frontend/src/main/webpack/components/content/experiencefragment/scss/experiencefragment.scss`. 파일에 다음 스타일을 추가합니다.
 
    ```css
    /* Header Style */
@@ -620,20 +621,20 @@ WKND [아티클 디자인에는](assets/pages-templates/wknd-article-design.xd) 
 
 ### 바닥글 스타일 구현 - ui.front
 
-Adobe XD 디자인의 [Footer에는](assets/pages-templates/wknd-article-design.xd) 텍스트가 밝은 검은색 배경이 포함되어 있습니다. 이를 반영하려면 경험 조각 바닥글 내에 있는 컨텐츠의 스타일을 지정해야 합니다.
+[AdobeXD 디자인](assets/pages-templates/wknd-article-design.xd)의 바닥글에는 텍스트가 밝은 검은색 배경이 포함되어 있습니다. 이를 반영하려면 경험 조각 바닥글 내에 있는 컨텐츠의 스타일을 지정해야 합니다.
 
-1. 다음 위치에 `index.html` 있는 파일을 엽니다. `ui.frontend/src/main/webpack/static/index.html`.
+1. 다음 위치에 있는 `index.html` 파일을 엽니다.`ui.frontend/src/main/webpack/static/index.html`.
 
-1. class=&quot;experiencerfragment **(Line 385)를 검색하여 경험 조각 구성 요소의** 두 번째 ** 인스턴스를 찾습니다.
+1. *class=&quot;experiencerfragment*(Line 385)를 검색하여 경험 조각 구성 요소의 **두 번째** 인스턴스를 찾습니다.
 
-1. 이전 단계 `cmp-experiencefragment--footer` 에서 식별된 `div` 클래스에 클래스를 추가합니다.
+1. 이전 단계에서 식별된 `div`에 `cmp-experiencefragment--footer` 클래스를 추가합니다.
 
    ```html
    <!-- add cmp-experiencefragment--footer -->
    <div class="experiencefragment cmp-experiencefragment--footer aem-GridColumn aem-GridColumn--default--12">
    ```
 
-1. 다음 위치에 `experiencefragment.scss` 있는 파일을 다시 엽니다. `ui.frontend/src/main/webpack/components/content/experiencefragment/scss/experiencefragment.scss`. **파일에 다음 스타일을 추가합니다** .
+1. 다음 위치에 있는 `experiencefragment.scss` 파일을 다시 엽니다.`ui.frontend/src/main/webpack/components/content/experiencefragment/scss/experiencefragment.scss`. **파일에 다음** 스타일을 추가합니다.
 
    ```css
    /* Footer Style */
@@ -703,13 +704,13 @@ Adobe XD 디자인의 [Footer에는](assets/pages-templates/wknd-article-design.
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-1. 다음 위치에 있는 **아티클 페이지 템플릿으로** 이동합니다. [http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html).
+1. 다음 위치에 있는 **아티클 페이지 템플릿**&#x200B;으로 이동합니다.[http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html).
 
-1. 구조 **** 모드에서 헤더 **경험 조각**&#x200B;을 선택하고 **정책** 아이콘을선택합니다.
+1. **구조** 모드에서 헤더 **경험 조각**&#x200B;을 선택하고 **정책** 아이콘을 선택합니다.
 
    ![경험 조각 정책 구성](assets/style-system/experience-fragment-click-policy.png)
 
-1. WKND **Site Experience Fragment - Header** 정책을 업데이트하여 값 **으로 기본 CSS 클래스를** 추가합니다 `cmp-experiencefragment--header`
+1. **WKND 사이트 경험 조각 - 헤더** 정책을 업데이트하여 **기본 CSS 클래스**&#x200B;의 값을 `cmp-experiencefragment--header`로 추가합니다.
 
    ![WKND 사이트 경험 조각 - 헤더 업데이트](assets/style-system/experience-fragment-header-policy-configure.png)
 
@@ -719,9 +720,9 @@ Adobe XD 디자인의 [Footer에는](assets/pages-templates/wknd-article-design.
    >
    > 템플릿 이외의 헤더 스타일을 전환할 필요가 없으므로 기본 CSS 스타일로 간단히 설정할 수 있습니다.
 
-1. 그런 다음 바닥글 **경험 조각을** 선택하고 해당 **정책** 아이콘을 클릭하여 정책 구성을 엽니다.
+1. 그런 다음 바닥글 **경험 조각**&#x200B;을 선택하고 **정책** 아이콘을 클릭하여 정책 구성을 엽니다.
 
-1. WKND **Site Experience Fragment - Footer** 정책을 업데이트하여 다음 값 **의 기본 CSS 클래스를** 추가합니다 `cmp-experiencefragment--footer`.
+1. **WKND 사이트 경험 조각 - 바닥글** 정책을 업데이트하여 **기본 CSS 클래스**&#x200B;의 값을 `cmp-experiencefragment--footer`으로 추가합니다.
 
    ![WKND 사이트 경험 조각 - 바닥글 업데이트](assets/style-system/experience-fragment-footer-policy-configure.png)
 
@@ -729,7 +730,7 @@ Adobe XD 디자인의 [Footer에는](assets/pages-templates/wknd-article-design.
 
    ![WKND 아티클 템플릿 - 최종 스타일](assets/style-system/final-header-footer-applied.png)
 
-1. AEM Sites 편집기에서 **La Skatetparks** 아티클로 이동합니다. [http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html). 업데이트된 머리글 및 바닥글이 적용된 것을 확인할 수 있습니다.
+1. 다음 AEM Sites 편집기에서 **La Skatetparks** 아티클로 이동합니다.[http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html). 업데이트된 머리글 및 바닥글이 적용된 것을 확인할 수 있습니다.
 
 ## 리뷰 {#review}
 
@@ -737,15 +738,15 @@ Adobe XD 디자인의 [Footer에는](assets/pages-templates/wknd-article-design.
 
 >[!VIDEO](https://video.tv.adobe.com/v/30378/?quality=12&learn=on)
 
-## 축하합니다! {#congratulations}
+## 축하합니다!{#congratulations}
 
 축하합니다. 아티클 페이지는 거의 완전히 스타일을 지정했으며 AEM 스타일 시스템을 사용하여 직접 제작한 경험을 얻게 되었습니다.
 
 ### 다음 단계 {#next-steps}
 
-대화 상자에서 작성한 컨텐츠를 표시하는 [사용자 정의 AEM 구성](custom-component.md) 요소를 만드는 단계를 끝까지 알아보고, Sling 모델을 개발하여 구성 요소의 HTL을 채우는 비즈니스 로직을 캡슐화합니다.
+대화 상자에서 제작된 컨텐츠를 표시하는 [사용자 지정 AEM 구성 요소](custom-component.md)를 만들고, 구성 요소의 HTL을 채우는 비즈니스 로직을 캡슐화하는 슬링 모델을 개발하는 과정을 탐색합니다.
 
-완성된 코드를 [GitHub에서](https://github.com/adobe/aem-guides-wknd) 보거나 Git brach에서 로컬로 코드를 검토하고 배포합니다 `style-system/solution`.
+[GitHub](https://github.com/adobe/aem-guides-wknd)에서 완료된 코드를 보거나 Git brach `style-system/solution`에서 로컬로 코드를 검토하고 배포합니다.
 
-1. github.com/adobe/aem-wknd-guides [저장소](https://github.com/adobe/aem-guides-wknd) 복제
-1. 분기를 `style-system/solution` 보세요
+1. [github.com/adobe/aem-wknd-guides](https://github.com/adobe/aem-guides-wknd) 저장소를 복제합니다.
+1. `style-system/solution` 분기를 확인합니다.
