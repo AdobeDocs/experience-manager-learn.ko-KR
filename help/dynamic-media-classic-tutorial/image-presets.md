@@ -38,8 +38,8 @@ The true value of Image Presets is that any Company Administrator can update the
 >
 >사이트에서 고유한 이미지 크기당 하나의 이미지 사전 설정을 만듭니다. 예를 들어 제품 세부 사항 페이지에 350 X 350 이미지, 검색 페이지에 120 X 120 이미지, 크로스셀링/주요 항목에 90 X 90 이미지가 필요한 경우 500개 이미지 또는 500,000개 이미지 중 세 개의 이미지 사전 설정이 필요합니다.
 
-- 이미지 사전 설정에 대한 자세한 [내용을 살펴보십시오](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/image-sizing/setting-image-presets.html).
-- 이미지 사전 설정 [을 만드는 방법을 알아봅니다](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/image-sizing/setting-image-presets.html#creating-an-image-preset).
+- [이미지 사전 설정](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/image-sizing/setting-image-presets.html)에 대해 자세히 알아보십시오.
+- [이미지 사전 설정](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/image-sizing/setting-image-presets.html#creating-an-image-preset)을 만드는 방법을 알아봅니다.
 
 ## 이미지 사전 설정 및 선명하게 하기
 
@@ -61,12 +61,12 @@ Dynamic Media Classic에 업로드한 고해상도 이미지는 확대했을 때
 
 Dynamic Media Classic에서는 세 가지 유형의 선명하게 하기를 허용합니다.간단한 선명하게 하기, 리샘플링 모드 및 언샵 마스크
 
-Dynamic Media [Classic Sharpening 옵션에 대한 자세한 내용을 살펴보십시오](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/sharpening-image.html#sharpening_an_image).
+[Dynamic Media Classic Sharpening Options](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/sharpening-image.html#sharpening_an_image)에 대해 자세히 알아보십시오.
 
 ## 추가 리소스
 
 [Image Preset Guide](https://www.adobe.com/content/dam/www/us/en/experience-manager/pdfs/dynamic-media-image-preset-guide.pdf). 이미지 품질 및 로드 속도에 맞게 최적화하는 데 사용할 설정입니다.
 
-[이미지는 모든 부분 2입니다.품질과 속도](https://theblog.adobe.com/image-is-everything-part-2-its-never-just-a-blur-quality-versus-speed/)등 단순한 흐림 효과를 얻을 수 있습니다. 고품질의 빠른 로딩 이미지를 전달하기 위해 이미지 사전 설정을 사용하는 것에 대해 논의하는 블로그 게시물입니다.
+[이미지는 모든 부분 2입니다.품질과 속도](https://theblog.adobe.com/image-is-everything-part-2-its-never-just-a-blur-quality-versus-speed/) 등 단순한 흐림 효과를 얻을 수 있습니다. 고품질의 빠른 로딩 이미지를 전달하기 위해 이미지 사전 설정을 사용하는 것에 대해 논의하는 블로그 게시물입니다.
 
-[이미지는 웨비나를](https://dynamicmediaseries2019.enterprise.adobeevents.com/)의미합니다. Image Is Everything 시리즈 _에서 세 개 웨비나의 레코딩 링크_ . [웨비나 2에서](https://seminars.adobeconnect.com/p6lqaotpjnd3) 이미지 사전 설정에 대해 설명합니다.
+[이미지는 웨비나를](https://dynamicmediaseries2019.enterprise.adobeevents.com/) 의미합니다. _이미지가 모든 것_ 시리즈에 있는 세 개 웨비나의 레코딩 링크 [웨비나 2](https://seminars.adobeconnect.com/p6lqaotpjnd3) 에서 이미지 사전 설정에 대해 설명합니다.
