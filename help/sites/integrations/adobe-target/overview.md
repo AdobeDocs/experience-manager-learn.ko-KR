@@ -26,7 +26,7 @@ Adobe Experience Manager(AEM)과 Adobe Target은 경쟁 제품으로 잘못 해�
 
 이 비디오에서는 AEM 및 Target을 사용하기 위한 세 가지 접근 방법을 논의하며 조직에 가장 적합한 방법을 이해하는 데 도움을 줍니다.
 
-* __시나리오 1:__ AEM 경험 조각 오퍼를 사용한 개인화
+* __시나리오 1: AEM__ 경험 조각 오퍼를 사용한 개인화
 
    1. [AEM 웹 사이트에 Adobe Target 추가](./add-target-launch-extension.md)
    1. [Launch에서 Adobe Target 호출 트리거](./load-and-fire-target.md)
@@ -40,7 +40,7 @@ Adobe Experience Manager(AEM)과 Adobe Target은 경쟁 제품으로 잘못 해�
    1. [Launch에서 Adobe Target 호출 트리거](./load-and-fire-target.md)
    1. [Visual Experience Composer를 사용하여 웹 페이지의 일부 개인화](./personalization-using-vec.md)
 
-* __시나리오 3:__ 완벽한 웹 페이지 경험 개인화
+* __시나리오 3:__ 완벽한 웹 페이지 경험의 개인화
 
    1. [AEM 웹 사이트에 Adobe Target 추가](./add-target-launch-extension.md)
    1. [Launch에서 Adobe Target 호출 트리거](./load-and-fire-target.md)
