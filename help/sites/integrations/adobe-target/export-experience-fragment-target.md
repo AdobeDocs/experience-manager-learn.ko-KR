@@ -18,7 +18,7 @@ ht-degree: 4%
 ---
 
 
-# Export Experience Fragment to Adobe Target {#experience-fragment-target}
+# 경험 조각을 Adobe Target {#experience-fragment-target}로 내보내기
 
 AEM 경험 조각을 Adobe Target 오퍼으로 내보내는 방법을 알아봅니다.
 
@@ -38,16 +38,16 @@ Adobe Admin Console에서 올바른 권한 없이 경험 조각을 Adobe Target�
 
     ![Target API UI 오류](assets/error-target-offer.png)
 
-... 및 다음 로그 `aemerror` 메시지:
+... 및 `aemerror` 로그의 다음 로그 메시지:
 
     ![Target API 콘솔 오류](assets/target-console-error.png)
 
 #### 해상도
 
-1. 사용한 Adobe Target 제품 프로필에 대한 관리 권한이 있는 [Admin Console](https://adminconsole.adobe.com/) 로그인(AEM 통합)
-2. 제품 > __Adobe Target > 제품 프로필을 선택합니다.__
-3. 통합 __탭에서__ AEM에 대한 통합을 Cloud Service 환경으로 선택합니다(Adobe I/O 프로젝트와 동일한 이름).
-4. 편집기 __또는 승인자__ __역할__ 할당
+1. AEM 통합을 사용했지만 Adobe Target 제품 프로필에 대한 관리 권한이 있는 [Admin Console](https://adminconsole.adobe.com/)에 로그인합니다.
+2. __제품 > Adobe Target > 제품 프로필__&#x200B;을 선택합니다.
+3. __통합__ 탭에서 AEM에 대한 통합을 Cloud Service 환경으로 선택합니다(Adobe I/O 프로젝트와 동일한 이름).
+4. __편집기__ 또는 __승인자__ 역할 할당
 
    ![Target API 오류](assets/target-permissions.png)
 
