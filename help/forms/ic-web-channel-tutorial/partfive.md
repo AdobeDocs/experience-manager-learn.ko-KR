@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# 받는 사람 이름과 주소를 저장할 문서 조각 만들기 {#creating-document-fragments-to-hold-the-recipient-name-and-address}
+# 받는 사람 이름 및 주소 {#creating-document-fragments-to-hold-the-recipient-name-and-address}를 포함하는 문서 조각 만들기
 
 이 부분에서 수신자 이름과 주소를 저장할 문서 조각을 만듭니다.
 
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 리치 텍스트 편집기는 비즈니스 사용자가 텍스트를 작성하고 양식 데이터 요소를 삽입할 수 있을 정도로 직관적입니다. 문서 조각 편집기에는 텍스트 서식 지정, 글꼴 유형 및 스타일 지정, 특수 문자 삽입 및 하이퍼링크 생성 기능이 있습니다.
 
-문서 조각 편집기에서는 이 [비디오에서 설명한 대로 텍스트에 인라인 조건을 삽입할 수도 있습니다](https://helpx.adobe.com/experience-manager/kt/forms/using/editing-improvements-correspondence-mgmt-feature-video-use.html)
+문서 조각 편집기에는 이 [video](https://helpx.adobe.com/experience-manager/kt/forms/using/editing-improvements-correspondence-mgmt-feature-video-use.html)에서 설명한 대로 텍스트에 인라인 조건을 삽입할 수도 있습니다
 
 >[!NOTE]
 >
