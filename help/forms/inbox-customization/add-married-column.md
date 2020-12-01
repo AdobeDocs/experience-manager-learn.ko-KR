@@ -82,12 +82,12 @@ return isMarried(inboxItem);
 * [AEM 웹 콘솔에 로그인](http://localhost:4502/system/console/bundles)
 * [받은 편지함 사용자 정의 번들 배포 및 시작](assets/inboxcustomization.inboxcustomization.core-1.0-SNAPSHOT.jar)
 * [받은 편지함 열기](http://localhost:4502/aem/inbox)
-* 만들기 단추 옆에 있는 _목록 보기_ 아이콘을 클릭하여 관리 _컨트롤_ 열기
+* _만들기_ 단추 옆에 있는 _목록 보기_ 아이콘을 클릭하여 관리 컨트롤을 엽니다
 * 받은 편지함에 결혼한 열 추가 및 변경 내용 저장
 * [FormsAndDocuments UI로 이동](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* [만들기](assets/snap-form.zip) 메뉴에서 파일 업로드 _를 선택하여 샘플 양식__을_ 가져옵니다
+* [만들기 메뉴에서 파일 ](assets/snap-form.zip) 업로드를 선택하여 샘플  __ 형식  __ 가져오기
 * [양식 미리 보기](http://localhost:4502/content/dam/formsanddocuments/snapform/jcr:content?wcmmode=disabled)
-* 혼인 _상태를_ 선택하고 양식을 제출합니다.
+* _혼인 상태_를 선택하고 양식을 제출합니다.
    [받은 편지함 보기](http://localhost:4502/aem/inbox)
 
 양식을 제출하면 워크플로우가 트리거되고 작업이 &quot;관리자&quot; 사용자에게 할당됩니다. 이 스크린샷에 표시된 대로 결혼한 사람 열 아래에 값이 표시됩니다
