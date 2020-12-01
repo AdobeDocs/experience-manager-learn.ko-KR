@@ -26,11 +26,11 @@ Adobe Experience Manager을 Cloud Service으로 개발하는 일 처음? 최신 
 
 >[!VIDEO](https://video.tv.adobe.com/v/30476?quality=12&learn=on)
 
-이 자습서는 **AEM에서 Cloud Service으로** 작동하도록 설계되었으며 **AEM 6.5+** 및 **AEM 6.4.2+**&#x200B;와 역호환됩니다.
+이 자습서는 **AEM에서 Cloud Service**&#x200B;로 작동하도록 설계되었으며 **AEM 6.5+** 및 **AEM 6.4.2+**&#x200B;와 역호환됩니다.
 
 **[튜토리얼을 확인하십시오!](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)**
 
-## Deploying WKND to AEM as a Cloud Service{#deploying-wknd-to-aem-as-a-cloud-service}
+## AEM에 Cloud Service{#deploying-wknd-to-aem-as-a-cloud-service}으로 WKND 배포
 
 WKND 튜토리얼을 완료한 후 아래 비디오에서 WKND 프로젝트를 AEM에 Cloud Service으로 배포하는 방법에 대한 개요를 확인하십시오.
 
@@ -42,4 +42,4 @@ WKND 튜토리얼을 완료한 후 아래 비디오에서 WKND 프로젝트를 A
 2. AEM에 Cloud Service 프로그램으로 등록된 업스트림 Adobe Cloud Manager Git 리포지토리로 푸시됨
 3. Cloud Service 환경으로 Cloud Manager 파이프라인을 통해 AEM으로 배포
 
-AEM 프로젝트를 AEM에 클라우드 서비스로 배포하는 방법에 대한 전체 개요를 보려면 비디오 시리즈에서 Git을 Adobe Cloud Manager와 [통합하는 방법을 확인하십시오](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html).
+AEM 프로젝트를 AEM에 클라우드 서비스로 배포하는 방법에 대한 전체 개요를 보려면 [Git을 Adobe Cloud Manager와 통합하는 방법](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html)에 대한 비디오 시리즈를 시청하십시오.
