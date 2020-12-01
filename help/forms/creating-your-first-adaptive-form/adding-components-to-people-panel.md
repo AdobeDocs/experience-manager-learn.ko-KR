@@ -22,7 +22,7 @@ ht-degree: 0%
 ---
 
 
-# 사람 패널에 구성 요소 추가 {#adding-components-to-people-panel}
+# 사용자 패널에 구성 요소 추가 {#adding-components-to-people-panel}
 
 배우자 세부 정보 조각을 추가하여 사람 패널을 구성합니다. 혼인 상태가 결혼한 경우 배우자 상세내역 조각을 표시하는 규칙이 생성됩니다.
 
