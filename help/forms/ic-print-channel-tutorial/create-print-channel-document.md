@@ -22,7 +22,7 @@ ht-degree: 0%
 ---
 
 
-# 인쇄 채널용 인터랙티브한 커뮤니케이션 제작 {#create-interactive-communication-for-print-channel}
+# 인쇄 채널용 대화형 통신 만들기 {#create-interactive-communication-for-print-channel}
 
 이 부분에서 인쇄 채널용 대화형 통신 문서가 만들어집니다.
 
