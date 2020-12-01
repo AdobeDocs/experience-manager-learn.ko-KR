@@ -42,7 +42,7 @@ Dynamic Media Classic은 리치 미디어 컨텐츠를 제작, 작성 및 전달
 - **비디오.** 최종 비디오를 업로드하고 게시한 다음 구성 가능한 비디오 뷰어에 점진적으로 다운로드할 수 있습니다.
 - **스마트 이미징.** Adobe Sensei AI 기능을 활용하고 기존 &quot;이미지 사전 설정&quot;과 연동되는 기술을 통해 클라이언트 브라우저 기능을 기반으로 이미지 포맷, 크기 및 품질을 자동으로 최적화하여 이미지 전달 성능을 향상시킬 수 있습니다.
 
-솔루션의 추가 기능을 살펴보려면 Dynamic Media Classic [에 대한 설명서를 참조하십시오](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/intro/introduction.html).
+솔루션의 추가 기능을 살펴보려면 [Documentation for Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/intro/introduction.html)을 참조하십시오.
 
 ## Dynamic Media Classic 사용자 인터페이스(UI)
 
@@ -64,12 +64,12 @@ _Dynamic Media Classic UI_
 
 >[!IMPORTANT]
 >
->각 자산 ID 옆에 게시 **로 표시** 스위치가 있습니다. 토글이 켜진 경우(녹색), 자산이 게시로 표시되어 있음을 나타냅니다.
+>각 자산 ID 옆에 **게시용 표시** 스위치가 있습니다. 토글이 켜진 경우(녹색), 자산이 게시로 표시되어 있음을 나타냅니다.
 
 ![이미지](assets/overview/overview-mark-for-publish.png)
 
 >[!TIP]
 >
->업로드 **시 자산을 자동으로 게시하려면 업로드 대화 상자에서** 업로드 후 게시 확인란을 선택합니다.
+>업로드 시 자산을 자동으로 게시하려면 업로드 대화 상자에서 **업로드 후 게시** 확인란을 선택합니다.
 
-Dynamic Media [Classic의 UI 탐색에 대해 자세히 알아보십시오](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/getting-started/navigation-basics.html).
+[Dynamic Media Classic의 UI 탐색](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/getting-started/navigation-basics.html)에 대해 자세히 알아보십시오.
