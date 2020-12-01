@@ -20,11 +20,11 @@ ht-degree: 2%
 ---
 
 
-# 양식 데이터 모델을 사용하여 캠페인 프로필 만들기 {#create-campaign-profile-using-form-data-model}
+# 양식 데이터 모델 {#create-campaign-profile-using-form-data-model}을(를) 사용하여 캠페인 프로필 만들기
 
 AEM Forms 양식 데이터 모델을 사용하여 Adobe Campaign Standard 프로파일을 만드는 단계
 
-## 사용자 정의 인증 만들기 {#create-custom-authentication}
+## 사용자 지정 인증 만들기 {#create-custom-authentication}
 
 Swagger 파일을 사용하여 데이터 소스를 만들 때, AEM Forms은 다음과 같은 유형의 인증 유형을 지원합니다
 
@@ -113,12 +113,13 @@ Swagger 파일을 사용하여 데이터 소스가 만들어집니다. 데이터
 
 샘플 스웨거 파일은 이 아티클과 관련된 에셋의 일부로 사용자에게 제공됩니다.**ACS 인스턴스와 일치하도록 Swagger 파일의 host 및 basePath를 변경해야 합니다.**
 
-## 솔루션 테스트 {#test-the-solution}
+## 솔루션 {#test-the-solution} 테스트
 
 솔루션을 테스트하려면 다음 단계를 수행하십시오.
 * [여기에 설명된 대로 단계를 수행했는지 확인하십시오.](aem-forms-with-campaign-standard-getting-started-tutorial.md)
 * [이 파일을 다운로드 및 압축 해제하여 Swagger 파일 가져오기](assets/create-acs-profile-swagger-file.zip)
-* swagger 파일을 사용하여 데이터 소스 만들기양식 데이터 모델 생성 및 이전 단계에서 만든 데이터 소스를 기반으로 합니다
+* swagger 파일을 사용하여 데이터 소스 만들기
+양식 데이터 모델을 만들고 이전 단계에서 만든 데이터 소스를 기반으로 합니다
 * 이전 단계에서 만든 양식 데이터 모델을 기반으로 적응형 양식을 만듭니다.
 * 데이터 소스 탭에서 응용 양식으로 다음 요소를 드래그하여 놓습니다.
 
