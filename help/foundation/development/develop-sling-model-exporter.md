@@ -29,9 +29,9 @@ Apache Sling은 다른 웹 서비스 및 JavaScript 애플리케이션과 같은
 
 >[!VIDEO](https://video.tv.adobe.com/v/16862/?quality=12&learn=on)
 
-[!DNL Sling Model Exporter] 는 프로젝트의 [!DNL Apache Sling] 기능으로 AEM 제품 릴리스 주기에 직접 연결되지 않습니다. [!DNL Sling Model Exporter] 은 AEM 6.3 이상과 호환됩니다.
+[!DNL Sling Model Exporter] 는  [!DNL Apache Sling] 프로젝트의 기능으로 AEM 제품 릴리스 주기에 직접 연결되지 않습니다. [!DNL Sling Model Exporter] 은 AEM 6.3 이상과 호환됩니다.
 
-## 사용 사례 [!DNL Sling Model Exporter]
+## [!DNL Sling Model Exporter]에 대한 사용 사례
 
 >[!VIDEO](https://video.tv.adobe.com/v/16863/?quality=12&learn=on)
 
@@ -41,28 +41,28 @@ Apache Sling은 다른 웹 서비스 및 JavaScript 애플리케이션과 같은
 
 >[!VIDEO](https://video.tv.adobe.com/v/16864/?quality=12&learn=on)
 
-Java 클래스에 주석 [!DNL Exporter] 을 추가하는 것만큼 손쉽게 [!DNL Sling Model] `@Exporter` a에 대한 지원을 활성화할 수 있습니다.
+[!DNL Sling Model]에서 [!DNL Exporter] 지원을 활성화하는 것은 Java 클래스에 `@Exporter` 주석을 추가하는 것만큼 쉽습니다.
 
 ## 슬링 모델 내보내기 옵션 적용
 
 >[!VIDEO](https://video.tv.adobe.com/v/16865/?quality=12&learn=on)
 
-[!DNL Sling Model Exporter] 는 최종 내보내기 방법을 유도하기 위해 모델별 내보내기 옵션 전달 [!DNL Sling Model] 을 지원합니다. 이러한 옵션은 일반적으로 내보내기의 방법에 &quot;전역적&quot; [!DNL Sling Model] 으로 적용되며, 아래에 설명된 인라인 주석을 통해 수행할 수 있는 데이터 포인트별로 적용됩니다.
+[!DNL Sling Model Exporter] 는 내보내기를 위한 모델 단위 내보내기 옵션을 내보내기 구현으로 전달하여  [!DNL Sling Model] 내보내는 방법을 구동할 수 있도록 지원합니다. 이러한 옵션은 일반적으로 [!DNL Sling Model]의 내보내기 방식과 아래에 설명된 인라인 주석을 통해 수행할 수 있는 데이터 포인트별로 &quot;전역적&quot;이 적용됩니다.
 
 [!DNL Jackson Exporter] 옵션:
 
 * [매퍼 기능 옵션](https://static.javadoc.io/com.fasterxml.jackson.core/jackson-databind/2.8.5/com/fasterxml/jackson/databind/MapperFeature.html)
 * [직렬화 기능 옵션](https://static.javadoc.io/com.fasterxml.jackson.core/jackson-databind/2.8.5/com/fasterxml/jackson/databind/SerializationFeature.html)
 
-## 주석 적용 [!DNL Jackson] 중
+## [!DNL Jackson] 주석 적용
 
 >[!VIDEO](https://video.tv.adobe.com/v/16866/?quality=12&learn=on)
 
-Exporter 구현은 데이터의 내보내기 방법을 보다 세밀하게 제어할 수 있도록 클래스에 인라인으로 적용할 수 있는 주석을 지원할 수도 있습니다. [!DNL Sling Model]
+내보내기 구현은 데이터를 내보내는 방법을 보다 세밀하게 제어할 수 있는 [!DNL Sling Model] 클래스에 인라인으로 적용할 수 있는 주석을 지원할 수도 있습니다.
 
 * [[!DNL Jackson Exporter] 주석](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations)
 
-## 코드 보기 {#view-the-code}
+## 코드 {#view-the-code} 보기
 
 [SampleSlingModelExporter.java](https://github.com/Adobe-Consulting-Services/acs-aem-samples/blob/master/core/src/main/java/com/adobe/acs/samples/models/SampleSlingModelExporter.java)
 
