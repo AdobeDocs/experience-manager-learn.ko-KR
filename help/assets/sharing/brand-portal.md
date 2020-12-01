@@ -19,7 +19,7 @@ ht-degree: 1%
 ---
 
 
-# AEM Assets에서 브랜드 포털 사용{#using-brand-portal-with-aem-assets}
+# AEM Assets{#using-brand-portal-with-aem-assets}에서 브랜드 포털 사용
 
 Adobe Experience Manager(AEM) 자산 브랜드 포털 통합의 비디오 가이드
 
@@ -35,7 +35,7 @@ Adobe Experience Manager(AEM) 자산 브랜드 포털 통합의 비디오 가이
 
 *자산 소싱을 사용하려면 Experience Manager 작성자 6.5 SP2(6.5.2) 이상이 필요합니다.*
 
-Experience Manager [작성자에 대한 자산 소싱을 구성 및 설정하는 방법에](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/configure-asset-sourcing-in-aem/brand-portal-enable-asset-sourcing.html) 대한 지침은 자산 소싱에 대한 Experience Manager 작성자 활성화를 참조하십시오.
+Experience Manager 작성자에 대한 자산 소싱을 구성 및 설정하는 방법에 대한 지침은 [자산 소싱에 대한 Experience Manager 작성자 활성화](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/configure-asset-sourcing-in-aem/brand-portal-enable-asset-sourcing.html)를 검토하십시오.
 
 ## 브랜드 포털 2019년 2월 기능 및 개선 사항{#brand-portal-features-and-enhancements-644}
 
@@ -61,7 +61,7 @@ Experience Manager [작성자에 대한 자산 소싱을 구성 및 설정하는
 
 브랜드 포털에서는 검색 구문의 단어 일부와 함께 검색 쿼리에 별표(*)를 사용할 수 있습니다.
 
-**사용 사례** : 검색어에서 발생하는 정확한 단어를 잘 모를 경우 와일드카드 검색을 사용하여 검색 쿼리의 간격을 채울 수 있습니다.
+**사용 사례** :검색어에 발생하는 정확한 단어를 잘 모를 경우 와일드카드 검색을 사용하여 검색 쿼리의 간격을 채울 수 있습니다.
 
 예를 들어 scaling*을 지정하면 브랜드 포털의 검색 양식에서 자산 제목에 대한 부분 검색을 위해 속성 조건자를 사용하는 경우 제목 구문의 문자로 시작하는 단어가 있는 모든 자산을 반환합니다.
 
@@ -73,12 +73,12 @@ Experience Manager [작성자에 대한 자산 소싱을 구성 및 설정하는
 #### 폴더 계층 구조 사용
 
 이제 관리자는 로그인 시 관리자가 아닌 사용자(편집기, 뷰어 및 게스트 사용자)에게 폴더가 표시되는 방식을 구성할 수 있습니다.
-[폴더 계층](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal-general-configuration.html) 활성화 구성이 관리 도구 패널의 일반 설정에 추가됩니다. 구성이 다음과 같은 경우:
+[폴더 계층 ](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal-general-configuration.html) 구성 활성화가 관리 도구 패널의 일반 설정에 추가됩니다. 구성이 다음과 같은 경우:
 
 * 활성화되면 루트 폴더에서 시작하는 폴더 트리가 관리자가 아닌 사용자에게 표시됩니다. 따라서 관리자와 유사한 탐색 경험을 제공할 수 있습니다.
 * 비활성화된 경우, 공유 폴더만 랜딩 페이지에 표시됩니다.
 
-[폴더 계층](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal-general-configuration.html) 기능 활성화(활성화된 경우)를 사용하면 다른 계층과 공유된 동일한 이름의 폴더를 구별할 수 있습니다. 로그인하면 관리자가 아닌 사용자가 공유 폴더의 가상 상위(및 상위) 폴더를 보게 됩니다.
+[폴더 계층 ](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal-general-configuration.html) 기능 활성화(활성화된 경우)를 사용하면 다른 계층과 공유된 동일한 이름의 폴더를 구별할 수 있습니다. 로그인하면 관리자가 아닌 사용자가 공유 폴더의 가상 상위(및 상위) 폴더를 보게 됩니다.
 
 공유 폴더는 가상 폴더의 각 디렉토리 내에 구성됩니다. 이러한 가상 폴더는 잠금 아이콘으로 인식할 수 있습니다.
 
@@ -103,7 +103,7 @@ Dynamic Media 비디오를 다음과 같이 미리 볼 수 있습니다.
 
 ### 브랜드 포털에 게시 예약
 
-AEM(6.4.2.0)의 [자산(및 폴더)](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html#main-pars_header_9658011) 게시 워크플로우에서 브랜드 포털로 작성자 인스턴스를 나중 날짜로 예약할 수 있습니다.
+[AEM(6.4.2.0)](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html#main-pars_header_9658011)의 에셋(및 폴더) 게시 워크플로우는 나중에 브랜드 포털로 작성자 인스턴스를 예약할 수 있습니다.
 
 마찬가지로 게시된 에셋은 브랜드 포털에서 게시 취소 워크플로우를 예약하여 나중 날짜(시간)에 포털에서 제거할 수 있습니다.
 
@@ -112,9 +112,9 @@ AEM(6.4.2.0)의 [자산(및 폴더)](https://helpx.adobe.com/experience-manager/
 조직은 URL에 대체 접두사를 추가하여 포털 URL을 사용자 정의할 수 있습니다. 기존 포털 URL에서 테넌트 이름에 대한 별칭을 받으려면 조직이 Adobe 지원에 문의해야 합니다.
 
 브랜드 포털 URL의 접두사만 사용자 정의할 수 있으며 전체 URL은 사용자 지정할 수 없습니다.
-예를 들어 기존 도메인이 있는 조직은 요청 시 만들 `wknd.brand-portal.adobe.com` 수 `wkndinc.brand-portal.adobe.com` 있습니다.
+예를 들어 기존 도메인이 `wknd.brand-portal.adobe.com`인 조직은 요청 시 `wkndinc.brand-portal.adobe.com`을(를) 만들 수 있습니다.
 
-그러나 AEM 작성자 인스턴스는 테넌트 ID로만 [구성할](https://helpx.adobe.com/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html) 수 있으며 테넌트 별칭(대체) URL로는 구성할 수 없습니다.
+그러나 AEM 작성자 인스턴스는 테넌트 ID를 가진 [configured](https://helpx.adobe.com/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html)만 될 수 있고 테넌트 별칭(대체) URL에는 없을 수 있습니다.
 
 **사용 사례** :조직은 Adobe에서 제공하는 URL을 고수하는 대신 포털 URL을 사용자 정의하여 브랜딩 요구 사항을 충족할 수 있습니다.
 
@@ -156,12 +156,12 @@ AEM 브랜드 포털에서는 고객이 포털에 액세스할 수 있습니다.
 
 ### 기타 개선 사항
 
-* *카드 및 목록 보기의* 폴더 계층 경로 — 사용자는 브랜드 포털 인스턴스 내에 저장된 폴더의 위치를 알 수 있습니다. 다른 폴더 계층 구조 내에서 이름이 같은 폴더를 차별화할 수 있습니다.
+* *카드 및 목록 보기의 폴더 계층*  경로— 사용자는 브랜드 포털 인스턴스 내에 저장된 폴더의 위치를 알 수 있습니다. 다른 폴더 계층 구조 내에서 이름이 같은 폴더를 차별화할 수 있습니다.
 * *개요 옵션* — 자산/폴더를 선택한 다음 도구 모음에서 개요 옵션을 선택하여 자산/폴더에 대한 비관리 사용자 메타데이터를 제공합니다. 현재 제목, 만든 날짜 및 경로가 표시됩니다.
 
-### Adobe I/O 호스트 UI를 사용하여 oAuth 통합 구성
+### Adobe I/O이 UI를 호스팅하여 Auth 통합 구성
 
-브랜드 포털은 Adobe I/O [https://legacy-oauth.cloud.adobe.io/](https://legacy-oauth.cloud.adobe.io/) 인터페이스를 사용하여 JWT 애플리케이션을 만듭니다. 이 애플리케이션에서 AEM Assets과 브랜드 포털과의 통합을 허용하도록 oAuth 통합을 구성할 수 있습니다. 이전에는 OAuth 통합을 구성하기 위한 UI가 에서 호스팅되었습니다 `https://marketing.adobe.com/developer/`. 브랜드 포털에 자산 및 컬렉션을 게시하기 위해 AEM Assets과 브랜드 포털 통합에 대한 자세한 내용은 [AEM Assets 통합을 브랜드 포털과 구성을 참조하십시오](https://helpx.adobe.com/experience-manager/6-4/assets/using/brand-portal-configuring-integration.html).
+브랜드 포털은 Adobe I/O [https://legacy-oauth.cloud.adobe.io/](https://legacy-oauth.cloud.adobe.io/) 인터페이스를 사용하여 JWT 애플리케이션을 만듭니다. 이 JWT 응용 프로그램은 AEM Assets과 브랜드 포털과의 통합을 허용하도록 인증 통합을 구성합니다. 이전에는 OAuth 통합을 구성하기 위한 UI가 `https://marketing.adobe.com/developer/`에서 호스팅되었습니다. 브랜드 포털에 자산 및 컬렉션을 게시하기 위한 브랜드 포털과 AEM Assets 통합에 대한 자세한 내용은 [브랜드 포털과 AEM Assets 통합 구성](https://helpx.adobe.com/experience-manager/6-4/assets/using/brand-portal-configuring-integration.html)을 참조하십시오.
 
 ## 브랜드 포털 2018년 2월 기능 및 개선 사항{#brand-portal-features-and-enhancements-632}
 
@@ -207,7 +207,7 @@ AEM과 Brand Portal을 연결하는 새로운 기능 강화
 
 ## 추가 리소스{#additional-resources}
 
-* [브랜드 포털의 새로운 기능](https://helpx.adobe.com/kr/experience-manager/brand-portal/using/whats-new.html)
+* [브랜드 포털의 새로운 기능](https://helpx.adobe.com/experience-manager/brand-portal/using/whats-new.html)
 * [AEM 작성자 복제 에이전트](https://helpx.adobe.com/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html)
 * [가속화된 다운로드 안내서](https://helpx.adobe.com/experience-manager/brand-portal/using/accelerated-download.html#main-pars_header)
 * [AEM Assets 브랜드 포털 Adobe 문서](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal.html)
