@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# 감사 인사 페이지 제출 {#submitting-to-thank-you-page}
+# 감사 인사 페이지 {#submitting-to-thank-you-page} 제출
 
 REST에 제출 끝점 옵션은 양식에 입력된 데이터를 HTTP GET 요청의 일부로 구성된 확인 페이지로 전달합니다. 요청할 필드 이름을 추가할 수 있습니다. 요청의 형식은 다음과 같습니다.
 
@@ -39,8 +39,8 @@ POST을 통해 외부 종단점에 제출할 수도 있습니다. 이를 위해�
 
 서버에서 이 기능을 테스트하려면 아래 지침을 따르십시오.
 
-* 패키지 관리자를 사용하여 이 아티클과 연결된 [에셋 파일을 AEM으로 가져옵니다.](assets/submittingtorestendpoint.zip)
-* 브라우저를 요청 [시간 초과 양식으로 지정합니다.](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
+* 패키지 관리자](assets/submittingtorestendpoint.zip)를 사용하여 이 아티클과 연결된 [에셋 파일을 AEM으로 가져옵니다.
+* 브라우저를 [요청 시간 초과 양식](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)으로 가리킵니다.
 * 필요한 필드를 입력하고 양식을 제출합니다.
 * 페이지에 정보가 채워진 감사 페이지를 받으십시오
 
