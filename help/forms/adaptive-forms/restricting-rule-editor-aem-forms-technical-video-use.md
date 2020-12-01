@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# AEM Forms의 특정 그룹으로 규칙 편집기 제한 {#restricting-the-rule-editor-to-specific-groups-in-aem-forms}
+# 규칙 편집기를 AEM Forms {#restricting-the-rule-editor-to-specific-groups-in-aem-forms}의 특정 그룹으로 제한
 
 AEM의 특정 그룹으로 응용 양식 규칙 편집기 제한
 
