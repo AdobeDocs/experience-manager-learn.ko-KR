@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# 구성 요소의 Live Copy 상속 관리 {#manage-live-copy-component}
+# 구성 요소 {#manage-live-copy-component}의 Live Copy 상속 관리
 
 구성 요소 수준에서 Live Copy와 블루프린트 간의 상속을 관리하는 방법을 이해합니다.
 
