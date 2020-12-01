@@ -19,7 +19,7 @@ ht-degree: 0%
 ---
 
 
-# AEM Assets에서 다이내믹 미디어 사용 {#understanding-aem-dynamic-media}
+# AEM Assets에서 동적 미디어 사용 {#understanding-aem-dynamic-media}
 
 이 멀티 파트 비디오 시리즈는 컨텐츠 서비스 서비스로 Adobe Experience Manager Dynamic Media를 사용하여 미디어 컨텐츠를 관리하고 액세스하는 방법에 대한 개요를 제공합니다. Dynamic Media를 사용하면 Experience Manager 자산에만 고유한 기능을 제공하는 다이내믹한 디지털 경험을 관리하고 게시할 수 있습니다. Adobe의 프레임워크 및 구성 요소 제품군을 통해 마케터는 모든 디바이스에 인터랙티브한 멀티미디어 경험을 맞춤화하고 전달할 수 있습니다.
 
