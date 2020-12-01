@@ -20,9 +20,9 @@ ht-degree: 0%
 
 # 사용자 지정 프로필 만들기
 
-이 부분에서는 [사용자 정의 프로파일을 만듭니다.](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html) 프로필은 XDP를 HTML로 렌더링합니다. XDP를 HTML로 렌더링하기 위해 기본 프로필이 기본적으로 제공됩니다. 사용자 정의된 버전의 Mobile Forms 변환 서비스를 나타냅니다. 모바일 양식 변환 서비스를 사용하여 모바일 Forms의 모양, 동작 및 인터랙션을 사용자 정의할 수 있습니다. 사용자 지정 프로필에서는 안내선 API를 사용하여 모바일 양식에 입력된 데이터를 캡처합니다. 그런 다음 이 데이터를 사용자 정의 서블릿으로 전송하여 인터랙티브한 PDF를 생성하고 이 데이터를 호출 애플리케이션으로 다시 스트리밍합니다.
+이 부분에서 [사용자 지정 프로필을 만듭니다.](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html) 프로필은 XDP를 HTML로 렌더링합니다. XDP를 HTML로 렌더링하기 위해 기본 프로필이 기본적으로 제공됩니다. 사용자 정의된 버전의 Mobile Forms 변환 서비스를 나타냅니다. 모바일 양식 변환 서비스를 사용하여 모바일 Forms의 모양, 동작 및 인터랙션을 사용자 정의할 수 있습니다. 사용자 지정 프로필에서는 안내선 API를 사용하여 모바일 양식에 입력된 데이터를 캡처합니다. 그런 다음 이 데이터를 사용자 정의 서블릿으로 전송하여 인터랙티브한 PDF를 생성하고 이 데이터를 호출 애플리케이션으로 다시 스트리밍합니다.
 
-JavaScript API를 사용하여 양식 데이터를 `formBridge` 가져옵니다. 다음 방법을 `getDataXML()` 사용합니다.
+`formBridge` JavaScript API를 사용하여 양식 데이터를 가져옵니다. `getDataXML()` 메서드를 사용합니다.
 
 ```javascript
 window.formBridge.getDataXML({success:suc,error:err});
@@ -123,7 +123,7 @@ public class GenerateInteractivePDF extends SlingAllMethodsServlet {
 
 ### 인터랙티브한 PDF 렌더링
 
-다음 코드는 [Forms 서비스 API를](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/forms/api/FormsService.html) 사용하여 모바일 양식의 데이터로 대화형 PDF를 렌더링합니다.
+다음 코드는 [Forms 서비스 API](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/forms/api/FormsService.html)를 사용하여 모바일 양식의 데이터로 대화형 PDF를 렌더링합니다.
 
 ```java
 public Document mobileFormToInteractivePdf(Document xmlData,String path) {
@@ -146,7 +146,7 @@ public Document mobileFormToInteractivePdf(Document xmlData,String path) {
 }
 ```
 
-부분적으로 완성된 모바일 양식에서 인터랙티브한 PDF를 다운로드하는 기능을 보려면 여기를 [클릭하십시오](https://forms.enablementadobe.com/content/dam/formsanddocuments/schengen.xdp/jcr:content).
+부분적으로 완료된 모바일 양식에서 대화형 PDF를 다운로드하는 기능을 보려면 [여기를 클릭하십시오](https://forms.enablementadobe.com/content/dam/formsanddocuments/schengen.xdp/jcr:content).
 PDF가 다운로드되면 다음 단계에서는 PDF를 제출하여 AEM 워크플로우를 트리거합니다. 이 워크플로우는 제출된 PDF의 데이터를 병합하고 비대화형 PDF를 생성하여 검토할 수 있습니다.
 
 이 사용 사례에 대해 만들어진 사용자 지정 프로필은 이 자습서 자산의 일부로 사용할 수 있습니다.
