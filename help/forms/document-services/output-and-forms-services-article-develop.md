@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# AEM Forms의 출력 및 Forms 서비스를 통한 개발{#developing-with-output-and-forms-services-in-aem-forms}
+# AEM Forms에서 출력 및 Forms 서비스를 사용하여 개발{#developing-with-output-and-forms-services-in-aem-forms}
 
 AEM Forms에서 출력 및 Forms 서비스 API 사용
 
@@ -29,7 +29,7 @@ AEM Forms에서 출력 및 Forms 서비스 API 사용
 * 출력 서비스 - 일반적으로 이 서비스는 xdp 템플릿 또는 pdf와 xml 데이터를 병합하여 분리된 pdf를 생성하는 데 사용됩니다
 * FormsService - PDF 파일에서 데이터를 가져오거나 내보낼 수 있는 다목적 서비스입니다
 
-공식 Javadoc for AEM Forms API는 [여기에 나와 있습니다.](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/package-summary.html)
+AEM Forms API에 대한 공식 javadoc가 [여기](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/package-summary.html)에 나열되어 있습니다.
 
 다음 코드 조각은 PDF 파일의 데이터를 내보냅니다
 
@@ -67,10 +67,16 @@ Line 6은 PDF 파일에서 xmlData 내보내기
 1. /content/AemFormsSamples/exportdata
 1. /content/AemFormsSamples/outputservice
 1. &quot;Sling Referrer filter&quot; 검색
-1. &quot;비어 있음&quot; 확인란을 선택합니다. (이 설정은 테스트용으로만 사용해야 함)샘플 코드를 테스트하는 방법에는 여러 가지가 있습니다. 가장 빠르고 쉬운 방법은 Postman 앱을 사용하는 것입니다. Postman을 사용하면 서버에 POST 요청을 만들 수 있습니다. 시스템에 Postman 앱을 설치합니다.
+1. &quot;비어 있음&quot; 확인란을 선택합니다. (이 설정은 테스트용으로만 사용해야 함)
+샘플 코드를 테스트하는 여러 가지 방법이 있습니다. 가장 빠르고 쉬운 방법은 Postman 앱을 사용하는 것입니다. Postman을 사용하면 서버에 POST 요청을 만들 수 있습니다. 시스템에 Postman 앱을 설치합니다.
 앱을 실행하고 다음 URL을 입력하여 내보내기 데이터 API를 테스트합니다
 
-드롭다운 목록에서 &quot;POST&quot;을 선택했는지 확인하십시오.http://localhost:4502/content/AemFormsSamples/exportdata.html인증&quot;을 &quot;기본 인증&quot;으로 지정해야 합니다. AEM 서버 사용자 이름 및 암호 지정&quot;Body&quot; 탭으로 이동하여 내보내기 아래![이미지에 표시된 대로 요청 매개 변수를](assets/postexport.png)지정한 다음 보내기 단추를 클릭합니다
+드롭다운 목록에서 &quot;POST&quot;을 선택했는지 확인하십시오.
+http://localhost:4502/content/AemFormsSamples/exportdata.html
+&quot;인증&quot;을 &quot;기본 인증&quot;으로 지정해야 합니다. AEM 서버 사용자 이름 및 암호 지정
+&quot;본문&quot; 탭으로 이동하여 아래 이미지에 표시된 대로 요청 매개 변수를 지정합니다
+![export](assets/postexport.png)
+전송 단추를 클릭합니다
 
 그 소포에 견본이 3개 있다. 다음 단락은 각 서비스가 기대하는 출력 서비스 또는 Forms 서비스, 서비스 URL의 사용 시기를 설명합니다
 
@@ -86,7 +92,7 @@ Line 6은 PDF 파일에서 xmlData 내보내기
 
 **데이터를 PDF 파일로 가져오기:**
 * FormsService를 사용하여 데이터를 PDF 파일로 가져오기
-* **POST URL** - http://localhost:4502/content/AemFormsSamples/mergedata.html
+* **POST URL**  - http://localhost:4502/content/AemFormsSamples/mergedata.html
 * **요청 매개 변수:**
 
    * pdf :데이터를 병합할 pdf 파일
