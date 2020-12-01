@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# 복사 배치 {#place-copy}
+# 복사본 배치 {#place-copy}
 
 복사 배치 작업을 사용하여 AEM Assets의 자산을 사용하는 방법을 알아봅니다.
 
