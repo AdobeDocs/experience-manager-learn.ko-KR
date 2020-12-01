@@ -18,7 +18,8 @@ ht-degree: 1%
 
 # 시스템에서 이 기능 테스트
 
-[이 패키지 다운로드 및 AEM](assets/acro-form-aem-form.zip)로 가져오기 이 패키지에는 업로드된 Acrobat에서 스키마를 만들 수 있는 샘플 작업 과정과 html 페이지가 포함되어 있습니다.
+[이 패키지를 다운로드하여 AEMT로 가져오기이 패키지에는 업로드된 Acrobat](assets/acro-form-aem-form.zip)
+에서 스키마를 만들 수 있는 샘플 작업 과정과 html 페이지가 포함되어 있습니다.
 
 ## 워크플로우 구성
 
