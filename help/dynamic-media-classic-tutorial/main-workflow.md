@@ -16,7 +16,7 @@ ht-degree: 1%
 ---
 
 
-# Dynamic Media Classic 기본 워크플로우 및 자산 미리 보기 {#main-workflow}
+# Dynamic Media Classic 기본 워크플로 및 자산 미리 보기 {#main-workflow}
 
 Dynamic Media는 만들기(및 업로드), 작성자(및 게시) 및 전달 워크플로우 프로세스를 지원합니다. 먼저 에셋을 업로드한 다음 이미지 세트 구축과 같은 이러한 에셋으로 작업을 수행하고 이를 생동감 있게 게시합니다. 일부 워크플로우에서는 빌드 단계가 선택 사항입니다. 예를 들어 이미지 크기를 동적으로 조정하고 확대/축소하거나 비디오를 변환하여 스트리밍하는 것이 목표인 경우 필요한 빌드 단계는 없습니다.
 
@@ -32,12 +32,12 @@ Dynamic Media Classic 솔루션의 워크플로우는 다음 세 가지 주요 �
 
 워크플로우의 시작입니다. 이 단계에서는 사용 중인 워크플로우에 맞는 소스 컨텐츠를 수집하거나 만들어 Dynamic Media Classic에 업로드합니다. 이 시스템은 이미지, 비디오 및 글꼴뿐만 아니라 PDF, Adobe Illustrator 및 Adobe InDesign용 다양한 파일 유형을 지원합니다.
 
-지원되는 파일 유형의 전체 목록 [을 참조하십시오](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#supported-asset-file-formats).
+[지원되는 파일 형식](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#supported-asset-file-formats)의 전체 목록을 참조하십시오.
 
 다음과 같은 다양한 방법으로 소스 컨텐츠를 업로드할 수 있습니다.
 
-- 데스크탑 또는 로컬 네트워크에서 바로 사용 [방법](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-sps-desktop-application)살펴보기
-- Dynamic Media Classic FTP 서버에서 가져옵니다. [방법](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-via-ftp)살펴보기
+- 데스크탑 또는 로컬 네트워크에서 바로 사용 [방법](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-sps-desktop-application) 살펴보기
+- Dynamic Media Classic FTP 서버에서 가져옵니다. [방법](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-via-ftp) 살펴보기
 
 기본 모드는 로컬 네트워크에서 파일을 찾아 업로드를 시작하는 데스크탑입니다.
 
@@ -45,9 +45,9 @@ Dynamic Media Classic 솔루션의 워크플로우는 다음 세 가지 주요 �
 
 >[!TIP]
 >
->폴더를 수동으로 추가하지 마십시오. 대신 FTP에서 업로드를 실행하고 하위 폴더 **포함** 옵션을 사용하여 Dynamic Media Classic 내에서 폴더 구조를 다시 만듭니다.
+>폴더를 수동으로 추가하지 마십시오. 대신 FTP에서 업로드를 실행하고 **하위 폴더 포함** 옵션을 사용하여 Dynamic Media Classic 내에서 폴더 구조를 다시 만듭니다.
 
-가장 중요한 두 가지 업로드 옵션은 기본적으로 활성화되어 있습니다. **이전에**&#x200B;설명한 게시로 표시 및 **덮어쓰기입니다**. 덮어쓰는 것은 업로드되는 파일의 이름이 시스템에 있는 파일과 같은 경우 새 파일이 기존 버전을 대체한다는 의미입니다. 이 옵션의 선택을 취소하면 파일이 업로드되지 않을 수 있습니다.
+가장 중요한 두 개의 업로드 옵션은 기본적으로 활성화되어 있습니다. **게시**&#x200B;에 표시(이전에 설명한 것) 및 **덮어쓰기**). 덮어쓰는 것은 업로드되는 파일의 이름이 시스템에 있는 파일과 같은 경우 새 파일이 기존 버전을 대체한다는 의미입니다. 이 옵션의 선택을 취소하면 파일이 업로드되지 않을 수 있습니다.
 
 ### 이미지 업로드 시 덮어쓰기 옵션
 
@@ -65,11 +65,11 @@ Dynamic Media Classic 솔루션의 워크플로우는 다음 세 가지 주요 �
 - **확장명에 관계없이 동일한 기본 자산 이름으로 모든 폴더에 덮어씁니다**.
 이 옵션은 가장 포괄적인 대체 규칙입니다. 원본 파일과 다른 폴더에 교체 이미지를 업로드하고 파일 이름 확장자가 다른 파일을 업로드한 다음 원본 파일을 바꿀 수 있습니다. 원본 파일이 다른 폴더에 있는 경우 교체 이미지는 업로드된 새 폴더에 있습니다.
 
-이미지 [덮어쓰기 옵션에 대한 자세한 내용을 살펴보십시오](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/setup/application-setup.html#using-the-overwrite-images-option).
+[이미지 덮어쓰기 옵션](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/setup/application-setup.html#using-the-overwrite-images-option)에 대해 자세히 알아보십시오.
 
 위의 두 가지 방법 중 하나를 사용하여 업로드할 때는 필요하지 않지만 특정 업로드에 대한 작업 옵션을 지정할 수 있습니다. 예를 들어, 반복 업로드를 예약하고, 업로드 시 자르기 옵션을 설정하는 등의 작업이 가능합니다. 이러한 기능은 일부 워크플로우에서 유용할 수 있으므로 유용한지 고려해 볼 만한 가치가 있습니다.
 
-작업 옵션에 대한 자세한 [내용을 살펴보십시오](https://docs.adobe.com/content/help/ko-KR/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-options).
+[작업 옵션](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-options)에 대해 자세히 알아보십시오.
 
 업로드는 Dynamic Media Classic에서 해당 시스템에 아직 없는 모든 콘텐츠로 작동할 수 없기 때문에 모든 워크플로우에서 첫 번째로 필요한 단계입니다. 업로드 도중 백그라운드에서 시스템은 업로드된 모든 자산을 중앙 집중식 Dynamic Media Classic 데이터베이스에 등록하고, ID를 할당하고, 이를 스토리지에 복사합니다. 또한 이미지 파일을 동적 크기 조정 및 확대/축소를 허용하는 포맷으로 변환하고 비디오 파일을 MP4 웹에 적합한 포맷으로 변환합니다.
 
@@ -98,7 +98,7 @@ Dynamic Media Classic 솔루션의 워크플로우는 다음 세 가지 주요 �
 
 **이미지 크기를 최소로 설정할 수는 없지만 큰 이미지를 업로드하는 것은 권장되지 않습니다.** 큰 이미지는 4000픽셀 이상으로 간주됩니다. 이 크기의 이미지를 업로드하면 이미지의 먼지나 머리카락과 같은 잠재적 결함을 나타낼 수 있습니다. 이러한 이미지는 Dynamic Media Classic 서버의 공간을 더 차지하므로 계약 저장소 제한을 넘을 수 있습니다.
 
-파일 업로드에 대한 자세한 [내용을 살펴보십시오](https://docs.adobe.com/content/help/ko-KR/dynamic-media-classic/using/upload-publish/uploading-files.html#uploading-your-files).
+[파일 업로드](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#uploading-your-files)에 대해 자세히 알아보십시오.
 
 ## 2단계:작성자(및 게시)
 
@@ -128,7 +128,7 @@ Dynamic Media Classic 작업 과정의 최종 제품은 자산(이미지 세트 
 
 URL에서 질문 표시 왼쪽에 있는 모든 항목은 특정 이미지의 가상 경로입니다. 물음표 오른쪽에 있는 모든 것은 이미지를 처리하는 방법에 대한 지침인 이미지 서버 수정자입니다. 여러 개의 수정자가 있는 경우 수정자가 앰퍼맨드로 구분됩니다.
 
-첫 번째 예에서 &quot;Backpack_A&quot; 이미지의 가상 경로는 입니다 `http://sample.scene7.com/is/image/s7train/BackpackA`. 이미지 서버 수정자는 이미지 크기를 250픽셀의 너비(wid=250픽셀)로 조정하고 크기를 조정함과 동시에(resMode=sharp2)하는 랜커스 보간 알고리즘을 사용하여 이미지를 다시 샘플링합니다.
+첫 번째 예에서 이미지 &quot;Backpack_A&quot;의 가상 경로는 `http://sample.scene7.com/is/image/s7train/BackpackA`입니다. 이미지 서버 수정자는 이미지 크기를 250픽셀의 너비(wid=250픽셀)로 조정하고 크기를 조정함과 동시에(resMode=sharp2)하는 랜커스 보간 알고리즘을 사용하여 이미지를 다시 샘플링합니다.
 
 두 번째 예는 $!로 표시된 동일한 Backpack_A 이미지에 &quot;이미지 사전 설정&quot;이라고 하는 것을 적용합니다._template300$. 표현식 양쪽의 $ 기호는 패키지된 이미지 수정자 세트인 이미지 사전 설정이 이미지에 적용되고 있음을 나타냅니다.
 
@@ -140,18 +140,18 @@ Dynamic Media Classic URL의 통합 방법을 이해하면 프로그래밍 방�
 
 일반적으로 오류가 발생하지 않는 한 문제가 되지 않으며 이미지/자산의 이름이 이전에 게시된 버전과 동일하지만 이미지에 문제가 있습니다. 예를 들어 실수로 저해상도 버전을 업로드했거나 아트 디렉터가 이미지를 승인하지 않았습니다. 이 경우 원본 이미지를 다시 불러온 다음 동일한 자산 ID를 사용하여 새 버전으로 바꾸려고 합니다.
 
-업데이트해야 하는 URL에 대한 캐시를 [수동으로 지우는 방법을 알아봅니다](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/invalidate-cdn-cached-content.html).
+[업데이트해야 하는 URL에 대한 캐시를 수동으로 지우는 방법을 알아봅니다](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/invalidate-cdn-cached-content.html).
 
 >[!TIP]
 >
 >캐싱 지연과 관련된 문제를 방지하려면 저녁, 하루, 2주 등의 작업을 항상 미리 수행하십시오. 공개적으로 발표하기 전에 내부 당사자가 작업을 입증하기 위한 QA/수락 시간을 작성합니다. 전날 저녁에 작업하는 경우에도 변경 사항을 적용하고 그날 저녁에 다시 게시할 수 있습니다. 아침까지 10시간이 지나자 캐시가 올바른 이미지로 업데이트됩니다.
 
-- 게시 작업 [만들기에 대해 자세히 알아보십시오](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/publishing-files.html#creating-a-publish-job).
-- 게시에 대한 자세한 [내용을 살펴보십시오](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/publishing-files.html).
+- [게시 작업 만들기](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/publishing-files.html#creating-a-publish-job)에 대해 자세히 알아보십시오.
+- [게시](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/publishing-files.html)에 대해 자세히 알아보십시오.
 
 ## 3단계:전달
 
-Dynamic Media Classic 작업 과정의 최종 제품은 자산을 가리키는 URL입니다. 이 URL은 개별 이미지, 이미지 세트, 스핀 세트, 기타 일부 이미지 세트 컬렉션 또는 비디오를 가리킬 수 있습니다. 태그는 현재 사이트에서 오는 이미지를 가리키는 대신 Dynamic Media Classic 이미지를 가리키도록 HTML을 편집하는 등 해당 URL을 사용하여 수행해야 합니다. `<IMG>`
+Dynamic Media Classic 작업 과정의 최종 제품은 자산을 가리키는 URL입니다. 이 URL은 개별 이미지, 이미지 세트, 스핀 세트, 기타 일부 이미지 세트 컬렉션 또는 비디오를 가리킬 수 있습니다. `<IMG>` 태그가 현재 사이트에서 오는 이미지를 가리키는 대신 Dynamic Media Classic 이미지를 가리키도록 HTML을 편집하는 등 해당 URL을 사용하여 작업을 수행해야 합니다.
 
 전달 단계에서 이러한 URL을 웹 사이트, 모바일 앱, 이메일 캠페인 또는 자산을 표시하려는 기타 모든 디지털 접점에 통합해야 합니다.
 
@@ -175,14 +175,14 @@ IT 팀이나 통합 파트너는 코드를 작성하고 변경하는 작업을 �
 
 ## 자산 미리 보기
 
-업로드한 자산을 미리 보거나 만들고 있거나 편집 중인 자산이 고객이 볼 때 원하는 대로 표시되는지 확인할 수 있습니다. 자산의 축소판, 찾아보기/ **빌드 패널** 상단의 미리 보기 단추를 클릭하거나 **파일 > 미리 보기로 이동하여 미리 보기**&#x200B;창에 **액세스할 수 있습니다**. 브라우저 창에서 현재 패널에 있는 에셋이 이미지, 비디오 또는 이미지 세트와 같은 빌드 자산인지 미리 봅니다.
+업로드한 자산을 미리 보거나 만들고 있거나 편집 중인 자산이 고객이 볼 때 원하는 대로 표시되는지 확인할 수 있습니다. **미리 보기** 단추를 클릭하거나 **찾아보기/빌드 패널**&#x200B;의 상단에 있는 또는 **파일 > 미리 보기**&#x200B;로 이동하여 미리 보기 창에 액세스할 수 있습니다. 브라우저 창에서 현재 패널에 있는 에셋이 이미지, 비디오 또는 이미지 세트와 같은 빌드 자산인지 미리 봅니다.
 
 ### 동적 크기 미리 보기(이미지 사전 설정)
 
-크기 미리 보기를 사용하여 여러 크기로 이미지를 미리 볼 **수** 있습니다. 사용 가능한 이미지 사전 설정 목록이 로드됩니다. 나중에 이미지 사전 설정에 대해 논의하겠지만, 이러한 사전 설정을 특정 양의 선명하게 하기 및 이미지 품질로 지정된 크기로 이미지를 로드할 수 있는 &quot;레서피&quot;로 간주합니다.
+**크기** 미리 보기를 사용하여 여러 크기로 이미지를 미리 볼 수 있습니다. 사용 가능한 이미지 사전 설정 목록이 로드됩니다. 나중에 이미지 사전 설정에 대해 논의하겠지만, 이러한 사전 설정을 특정 양의 선명하게 하기 및 이미지 품질로 지정된 크기로 이미지를 로드할 수 있는 &quot;레서피&quot;로 간주합니다.
 
 ### 확대/축소 미리 보기
 
-또한 **확대/축소** 옵션을 사용하여 다양한 포함된 확대/축소 뷰어를 기반으로 미리 만들어진 여러 사전 설정 중 하나에서 이미지를 미리 볼 수도 있습니다.
+또한 **확대/축소** 옵션을 사용하여 여러 가지 포함된 확대/축소 뷰어를 기반으로 미리 작성된 여러 사전 설정 중 하나에서 이미지를 미리 볼 수도 있습니다.
 
-자산 미리 보기에 대한 자세한 [내용을 살펴보십시오](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/managing-assets/previewing-asset.html).
+[자산 미리 보기](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/managing-assets/previewing-asset.html)에 대해 자세히 알아보십시오.
