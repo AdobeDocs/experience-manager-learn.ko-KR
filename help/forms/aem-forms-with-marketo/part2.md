@@ -203,5 +203,5 @@ public class MarketoConfigurationService {
 ```
 
 1. 번들을 구축하여 AEM 서버에 배포합니다.
-1. [브라우저를 configMgr로](http://localhost:4502/system/console/configMgr) 지정하고 &quot;Marketing To 자격 증명 서비스 구성&quot;을 검색합니다.
+1. [브라우저에서 &quot;Marketing To 자격 증명 서비스 구성&quot;을 ](http://localhost:4502/system/console/configMgr) configMgrand로 검색하십시오.
 1. 마케팅 인스턴스와 관련된 적절한 속성 지정
