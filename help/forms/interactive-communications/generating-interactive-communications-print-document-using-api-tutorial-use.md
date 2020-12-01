@@ -28,7 +28,7 @@ ht-degree: 0%
 
 감시 폴더에 드롭된 파일의 구조는 다음과 같습니다. 이 코드는 XML 문서에 나열된 모든 계정 번호에 대한 문을 생성합니다.
 
-&lt;계정 번호>
+&lt;accountnumbers>
 
 &lt;accountnumber>509840&lt;/accountnumber>
 
@@ -110,9 +110,9 @@ resourceResolverHelper.callWith(resourceResolver, {call: function()
 
 **로컬 시스템에서 테스트하려면 다음 지침을 따르십시오.**
 
-* 이 문서에 설명된 대로 Tomcat을 [설정합니다.](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md) Tomcat은 샘플 데이터를 생성하는 전쟁 파일을 가지고 있습니다.
-* 이 문서에 설명된 대로 서비스 또는 시스템 사용자를 [설정합니다](/help/forms/adaptive-forms/service-user-tutorial-develop.md).
-이 시스템 사용자가 다음 노드에 대한 읽기 권한을 가지고 있는지 확인하십시오. 권한 로그인을 [사용자 관리자에게](https://localhost:4502/useradmin) 부여하고 시스템 사용자 &quot;데이터&quot;를 검색하고 권한 탭으로 이동하여 다음 노드에 대한 읽기 권한을 부여하려면
+* 이 [아티클에 설명된 대로 Tomcat 설정을 참조하십시오.](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md) Tomcat은 샘플 데이터를 생성하는 전쟁 파일을 가지고 있습니다.
+* 이 [article](/help/forms/adaptive-forms/service-user-tutorial-develop.md)에 설명된 대로 서비스 또는 시스템 사용자를 설정합니다.
+이 시스템 사용자가 다음 노드에 대한 읽기 권한을 가지고 있는지 확인하십시오. 사용 권한을 [user admin](https://localhost:4502/useradmin)에 로그인하여 시스템 사용자 &quot;데이터&quot;를 검색하고 사용 권한 탭으로 이동하여 다음 노드에 대한 읽기 권한을 부여하려면
    * /content/dam/formsanddocuments
    * /content/dam/formsanddocuments-fdm
    * /content/forms/af
