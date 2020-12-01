@@ -32,7 +32,7 @@ ht-degree: 0%
 
 * 계정 소유자의 현재 및 모델 투자 조합을 나타내는 파이 차트 2개를 추가할 예정입니다.
 
-## 현재 에셋 혼합 {#current-asset-mix}
+## 현재 자산 혼합 {#current-asset-mix}
 
 * 오른쪽의 &quot;CurrentAssetMix&quot; 패널을 누르고 &quot;+&quot; 아이콘을 선택하고 텍스트 구성 요소를 삽입합니다. 기본 텍스트를 &quot;현재 자산 혼합&quot;으로 변경합니다.
 
