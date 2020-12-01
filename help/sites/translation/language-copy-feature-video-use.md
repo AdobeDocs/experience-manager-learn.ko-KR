@@ -15,7 +15,7 @@ ht-degree: 3%
 ---
 
 
-# 언어 사본 사용 {#using-language-copy}
+# 언어 복사 사용 {#using-language-copy}
 
 AEM 6.3 Create Language Copy Wizard site translation enhancements를 사용하면 루트 페이지를 만들지 않고도 마스터 언어로 언어 사본을 만들 수 있습니다.
 
