@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# AEM Forms에서 거래 보고 사용{#using-transaction-reporting-in-aem-forms}
+# AEM Forms에서 트랜잭션 보고 사용{#using-transaction-reporting-in-aem-forms}
 
 양식 제출 수를 캡처하기 위한 거래 보고, 문서 서비스를 사용한 문서 렌더링 및 인터랙티브한 통신(웹 및 인쇄 채널)의 렌더링이 AEM Forms 6.4.1에서 도입되었습니다. 이 기능은 주로 사용자가 양식 제출 및/또는 문서 렌더링에 따라 소프트웨어 라이선스를 부여하고자 하는 경우에 사용됩니다. 이 기능은 현재 AEM Forms OSGI 스택에서만 사용할 수 있습니다.
 
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 도구 선택 | Forms | 거래 보고서 보기
 
-또는 [여기를 클릭하여 거래 보고서를 봅니다.](http://localhost:4502/mnt/overlay/fd/transaction/gui/content/report.html)
+또는 [여기](http://localhost:4502/mnt/overlay/fd/transaction/gui/content/report.html)를 클릭하여 거래 보고서를 봅니다.
 
 ![거래 보고](assets/transactionreporting.gif)
 
@@ -53,5 +53,5 @@ PDF 양식 제출, 에이전트 UI를 사용하여 대화형 통신을 미리 �
 
 작성 인스턴스에서 트랜잭션 보고서를 보고 있는 경우 모든 게시 인스턴스에 역 복제가 구성되어 있는지 확인합니다.
 
-거래 보고에 대한 자세한 내용을 [보려면 여기를 클릭하십시오.](https://helpx.adobe.com/experience-manager/6-4/forms/using/transaction-reports-overview.html)
+거래 보고에 대한 자세한 내용을 보려면 [여기를 클릭하십시오.](https://helpx.adobe.com/experience-manager/6-4/forms/using/transaction-reports-overview.html)
 
