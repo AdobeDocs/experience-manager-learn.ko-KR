@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# 연결 배치{#place-linked}
+# Place Linked{#place-linked}
 
 연결된 가져오기 작업을 사용하여 AEM Assets의 자산을 사용하는 방법을 알아봅니다.
 
