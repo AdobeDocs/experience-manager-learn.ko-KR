@@ -22,13 +22,13 @@ ht-degree: 2%
 
 # 다중 사이트 관리자 사용 {#using-multi-site-manager-with-aem-sites}
 
-[!UICONTROL Live Copy 개요] 및 [!UICONTROL 블루프린트 구성 관리자는] Adobe Experience Manager Sites의 다중 사이트 관리자 기능을 사용하여 작업하는 AEM 작성자 인터페이스입니다.
+[!UICONTROL Live Copy ] 개요 및  [!UICONTROL 블루프린트 구성 ] 관리자는 Adobe Experience Manager Sites의 다중 사이트 관리자 기능 작업을 위한 AEM 작성자 인터페이스입니다.
 
 ## Live Copy 개요 {#live-copy-overview}
 
 >[!VIDEO](https://video.tv.adobe.com/v/17054/?quality=9&learn=on)
 
-*Live Copy 개요는 Live Copy 및 해당 블루프린트 관리에 사용되는 터치 UI 인터페이스입니다. 이 기능은 AEM 6.3에서 도입되어 클래식 UI 블루프린트 제어 센터를 대체합니다.*
+*Live Copy 개요는 Live Copy 및 해당 블루프린트 관리에 사용되는 터치 UI 인터페이스입니다. AEM 6.3에서 도입된 이 기능은 클래식 UI 블루프린트 제어 센터를 대체합니다.*
 
 ## 블루프린트 구성 관리자 - 터치 UI {#blueprint-config-mgr}
 
