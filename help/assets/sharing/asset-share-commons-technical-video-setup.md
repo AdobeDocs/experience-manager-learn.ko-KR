@@ -21,7 +21,7 @@ ht-degree: 0%
 ---
 
 
-# 로컬 AEM에서 자산 공유 공유기 설정 {#setup-asset-share-commons}
+# 로컬 AEM {#setup-asset-share-commons}에서 자산 공유 공유물 설정
 
 로컬 AEM 인스턴스에서 자산 공유 공유물을 실행하는 간단한 가이드입니다.
 
