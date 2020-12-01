@@ -15,9 +15,9 @@ ht-degree: 1%
 ---
 
 
-# 간단한 검색 구현 가이드{#simple-search-implementation-guide}
+# 단순 검색 구현 안내서{#simple-search-implementation-guide}
 
-단순 검색 구현은 **Adobe Summit 랩 AEM Search Demanded의 자료입니다**. 이 페이지에는 이 랩의 자료가 포함되어 있습니다. 실습 가이드를 둘러보려면 이 페이지의 프레젠테이션 섹션에서 Lab 통합 문서를 확인하십시오.
+단순 검색 구현은 **Adobe Summit 랩 AEM Search Demided**&#x200B;의 자료입니다. 이 페이지에는 이 랩의 자료가 포함되어 있습니다. 실습 가이드를 둘러보려면 이 페이지의 프레젠테이션 섹션에서 Lab 통합 문서를 확인하십시오.
 
 ![검색 아키텍처 개요](assets/l4080/simple-search-application.png)
 
@@ -39,7 +39,7 @@ ht-degree: 1%
 
 ### 챕터 {#chapters}
 
-*아래의 장 링크에서는[초기 패키지가](#initialpackages)AEM 작성자`http://localhost:4502`*
+*아래의 장 링크에서는  [초기 ](#initialpackages) 패키지가`http://localhost:4502`*
 
 * [제1장](http://localhost:4502/editor.html/content/summit/l4080/chapter-1.html)
 * [제2장](http://localhost:4502/editor.html/content/summit/l4080/chapter-2.html)
@@ -83,18 +83,18 @@ ht-degree: 1%
 
 1. **다시 색인을 중지하는 방법?**
 
-   IndexStats MBean을 통해 [AEM 웹 콘솔 > JMX를 통해 다시 색인화를 중지할 수 있습니다.](http://localhost:4502/system/console/jmx)
+   [AEM 웹 콘솔 > JMX](http://localhost:4502/system/console/jmx)을 통해 사용 가능한 IndexStats MBean을 통해 다시 색인화를 중지할 수 있습니다.
 
    * [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats)
-      * 재색인 `abortAndPause()` 을 중단하려면 실행합니다. 이 경우 호출될 때까지 인덱스를 더 다시 인덱싱하도록 `resume()` 잠깁니다.
-      * 실행 `resume()` 을 하면 색인 프로세스가 다시 시작됩니다.
-   * 설명서: [https://jackrabbit.apache.org/oak/docs/query/indexing.html#async-index-mbean](https://jackrabbit.apache.org/oak/docs/query/indexing.html#async-index-mbean)
+      * 다시 색인을 중단하려면 `abortAndPause()`을 실행합니다. 이렇게 하면 `resume()`이(가) 호출될 때까지 인덱스를 더 다시 인덱싱하도록 잠깁니다.
+      * `resume()`을(를) 실행하면 색인 프로세스가 다시 시작됩니다.
+   * 설명서:[https://jackrabbit.apache.org/oak/docs/query/indexing.html#async-index-mbean](https://jackrabbit.apache.org/oak/docs/query/indexing.html#async-index-mbean)
 
 2. **오크 색인은 여러 세입자를 어떻게 지원할 수 있습니까?**
 
-   Oak는 컨텐츠 트리를 통해 색인 배치를 지원하며 이러한 인덱스는 해당 하위 트리 내에서만 색인화됩니다. 예를 들어 컨텐츠 **`/content/site-a/oak:index/cqPageLucene`** 를 다음 아래에만 색인화하도록 만들 수 **`/content/site-a`있습니다.**
+   Oak는 컨텐츠 트리를 통해 색인 배치를 지원하며 이러한 인덱스는 해당 하위 트리 내에서만 색인화됩니다. 예를 들어 **`/content/site-a/oak:index/cqPageLucene`**&#x200B;은(는) **`/content/site-a`아래에서만 콘텐츠를 인덱싱하도록 만들 수 있습니다.**
 
-   동일한 접근 방법은 아래의 인덱스에서 **`includePaths`** 및 **`queryPaths`** 속성을 사용하는 **`/oak:index`**&#x200B;것입니다. 예:
+   동일한 접근 방식은 **`/oak:index`** 아래의 인덱스에서 **`includePaths`** 및 **`queryPaths`** 속성을 사용하는 것입니다. 예:
 
    * `/oak:index/siteAcqPageLucene@includePaths=/content/site-a`
    * `/oak:index/siteAcqPageLucene@queryPaths=/content/site-a`
@@ -118,7 +118,7 @@ ht-degree: 1%
 
 4. **동일한 쿼리에서 페이지 및 자산을 검색하는 방법**
 
-   AEM 6.3의 새로운 기능은 제공된 동일한 쿼리에서 여러 노드 유형을 쿼리하는 기능입니다. 다음 QueryBuilder 쿼리 각 &quot;하위 쿼리&quot;는 자체 인덱스로 확인할 수 있으므로 이 예에서 `cq:Page` 하위 쿼리는 `/oak:index/cqPageLucene` 확인되고 `dam:Asset` 하위 쿼리는 으로 확인됩니다 `/oak:index/damAssetLucene`.
+   AEM 6.3의 새로운 기능은 제공된 동일한 쿼리에서 여러 노드 유형을 쿼리하는 기능입니다. 다음 QueryBuilder 쿼리 각 &quot;하위 쿼리&quot;는 자체 인덱스로 확인할 수 있으므로 이 예에서는 `cq:Page` 하위 쿼리가 `/oak:index/cqPageLucene`으로 확인되고 `dam:Asset` 하위 쿼리가 `/oak:index/damAssetLucene`으로 확인됩니다.
 
    ```plain
    group.p.or=true
@@ -136,7 +136,7 @@ ht-degree: 1%
    PLAN: [cq:Page] as [a] /* lucene:cqPageLucene(/oak:index/cqPageLucene) *:* */ union [dam:Asset] as [a] /* lucene:damAssetLucene(/oak:index/damAssetLucene) *:* */
    ```
 
-   QueryBuilder Debugger 및 [AEM Chrome 플러그인을 통해](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&amp;query=group.p.or%3Dtrue%0D%0Agroup.1_group.type%3Dcq%3APage%0D%0A%23+add+all+page+restrictions+to+this+group%0D%0Agroup.2_group.type%3Ddam%3AAsset%0D%0A%23+add+all+asset+restrictions+to+this+group) 쿼리 및 결과를 살펴볼 수 있습니다 [](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US).
+   [QueryBuilder 디버거](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&amp;query=group.p.or%3Dtrue%0D%0Agroup.1_group.type%3Dcq%3APage%0D%0A%23+add+all+page+restrictions+to+this+group%0D%0Agroup.2_group.type%3Ddam%3AAsset%0D%0A%23+add+all+asset+restrictions+to+this+group) 및 [AEM Chrome 플러그인](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US)을 통해 쿼리 및 결과를 탐색합니다.
 
 5. **동일한 쿼리에서 여러 경로를 검색하는 방법**
 
@@ -160,4 +160,4 @@ ht-degree: 1%
    PLAN: [cq:Page] as [a] /* traverse "/content/docs/en/6-2//*" where isdescendantnode([a], [/content/docs/en/6-2]) */ union [cq:Page] as [a] /* traverse "/content/docs/en/6-3//*" where isdescendantnode([a], [/content/docs/en/6-3]) */
    ```
 
-   QueryBuilder Debugger 및 [AEM Chrome 플러그인을 통해](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&amp;query=group.p.or%3Dtrue%0D%0Agroup.1_group.type%3Dcq%3APage%0D%0Agroup.1_group.path%3D%2Fcontent%2Fdocs%2Fen%2F6-2%0D%0A%23+add+all+page+restrictions+to+this+group%0D%0Agroup.2_group.type%3Dcq%3APage%0D%0Agroup.2_group.path%3D%2Fcontent%2Fdocs%2Fen%2F6-3%0D%0A%23+add+all+asset+restrictions+to+this+group) 쿼리 및 결과를 살펴볼 수 있습니다 [](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US).
+   [QueryBuilder 디버거](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&amp;query=group.p.or%3Dtrue%0D%0Agroup.1_group.type%3Dcq%3APage%0D%0Agroup.1_group.path%3D%2Fcontent%2Fdocs%2Fen%2F6-2%0D%0A%23+add+all+page+restrictions+to+this+group%0D%0Agroup.2_group.type%3Dcq%3APage%0D%0Agroup.2_group.path%3D%2Fcontent%2Fdocs%2Fen%2F6-3%0D%0A%23+add+all+asset+restrictions+to+this+group) 및 [AEM Chrome 플러그인](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US)을 통해 쿼리 및 결과를 탐색합니다.
