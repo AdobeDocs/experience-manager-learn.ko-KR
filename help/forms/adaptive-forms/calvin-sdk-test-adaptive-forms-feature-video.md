@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# AEM Forms의 자동화된 Forms 테스트 이해{#understanding-automated-forms-testing-with-aem-forms}
+# AEM Forms을 사용한 자동화된 Forms 테스트 이해{#understanding-automated-forms-testing-with-aem-forms}
 
 AEM 6.3 Forms은 사용자가 hobbes.js 프레임워크 위에 구축된 Calvin SDK를 사용하여 AEM에서 적응형 Forms용 테스트 케이스를 만들 수 있는 기능을 도입했습니다.
 
