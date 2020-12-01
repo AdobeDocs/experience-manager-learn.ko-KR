@@ -17,13 +17,13 @@ ht-degree: 0%
 ---
 
 
-# AEM Assets에서 주석 사용자 정의{#using-annotations-in-aem-assets}
+# AEM Assets에서 주석 사용자 지정{#using-annotations-in-aem-assets}
 
 AEM에서는 주석 출력을 PDF로 사용자 정의할 수 있습니다.
 
 ## PDF 주석 처리:OsgiConfig 정의
 
-PDF 주석을 사용자 정의하려면 AEM 프로젝트 **** 의
+PDF 주석을 사용자 정의하려면&#x200B;****
 
 `/apps/my-project/config.author/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig.xml` 필요에 따라 값을 조정합니다.
 
