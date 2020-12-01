@@ -22,7 +22,7 @@ ht-degree: 0%
 ---
 
 
-# 첫 번째 대화형 통신 문서에 대한 라인 차트 구성 {#configuring-line-chart-for-your-first-interactive-communication-document}
+# 첫 번째 대화형 통신 문서 {#configuring-line-chart-for-your-first-interactive-communication-document}에 대한 라인 차트 구성
 
 이 부분에서는 계정 잔액을 표시하는 라인 차트를 추가합니다.
 
