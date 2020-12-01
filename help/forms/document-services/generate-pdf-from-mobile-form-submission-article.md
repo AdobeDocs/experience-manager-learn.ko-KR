@@ -20,11 +20,11 @@ ht-degree: 0%
 ---
 
 
-# HTM5 양식 제출에서 PDF 생성 {#generate-pdf-from-htm-form-submission}
+# HTM5 양식 제출 시 PDF 생성 {#generate-pdf-from-htm-form-submission}
 
 이 문서에서는 HTML5(일명 모바일 Forms) 양식 제출 시 pdf를 생성하는 데 필요한 단계를 안내합니다. 이 데모에서는 HTML5 양식에 이미지를 추가하고 이미지를 최종 pdf로 병합하는 데 필요한 단계도 설명합니다.
 
-이 기능의 라이브 데모를 보려면 [샘플 서버를](https://forms.enablementadobe.com/content/samples/samples.html?query=0) 방문하여 &quot;Mobile Form To PDF&quot;를 검색하십시오.
+이 기능의 라이브 데모를 보려면 [샘플 서버](https://forms.enablementadobe.com/content/samples/samples.html?query=0)에서 &quot;Mobile Form To PDF&quot;를 검색하십시오.
 
 제출된 데이터를 xdp 템플릿에 병합하려면 다음을 수행합니다
 
@@ -121,7 +121,7 @@ function readURL(input) {
 
 * [이 아티클과 관련된 패키지를 다운로드하고 설치합니다.](assets/pdf-from-mobile-form-submission.zip)
 
-* xdp의 속성 페이지를 보고 제출 URL 및 HTML 렌더링 프로필이 올바르게 설정되었는지 [확인합니다](http://localhost:4502/libs/fd/fm/gui/content/forms/formmetadataeditor.html/content/dam/formsanddocuments/schengen.xdp)
+* 제출 URL 및 HTML 렌더링 프로필이 [xdp](http://localhost:4502/libs/fd/fm/gui/content/forms/formmetadataeditor.html/content/dam/formsanddocuments/schengen.xdp)의 속성 페이지를 보고 올바르게 설정되었는지 확인하십시오
 
 * [XDP를 html로 미리 보기](http://localhost:4502/content/dam/formsanddocuments/schengen.xdp/jcr:content)
 
