@@ -1,7 +1,7 @@
 ---
-user-guide-title: 클라우드 서비스로서의 Adobe Experience Manager 자습서
-user-guide-description: Cloud Service로써 Adobe Experience Manager을 위한 자습서 모음입니다.
-breadcrumb-title: Cloud Service로써의 AEM 자습서
+user-guide-title: Adobe Experience Manager as a Cloud Service 자습서
+user-guide-description: Adobe Experience Manager as a Cloud Service를 위한 자습서 모음입니다.
+breadcrumb-title: AEM as a Cloud Service 자습서
 sub-product: 클라우드 서비스
 team: TM
 translation-type: tm+mt
@@ -13,7 +13,7 @@ ht-degree: 32%
 ---
 
 
-# 클라우드 서비스로서의 Adobe Experience Manager 자습서 {#cloud-service}
+# Adobe Experience Manager as a Cloud Service 자습서 {#cloud-service}
 
 + [개요](./overview.md)
 + 기본 기술 {#underlying-technology}
@@ -28,7 +28,7 @@ ht-degree: 32%
    + [개발 도구](./local-development-environment/development-tools.md)
    + [로컬 AEM 런타임](./local-development-environment/aem-runtime.md)
    + [로컬 디스패처 도구](./local-development-environment/dispatcher-tools.md)
-+ AEM 디버깅{#debugging}
++ AEM{#debugging} 디버깅
    + AEM SDK 디버깅{#debugging-aem-sdk}
       + [개요](./debugging/aem-sdk-local-quickstart/overview.md)
       + [로그](./debugging/aem-sdk-local-quickstart/logs.md)
@@ -36,13 +36,13 @@ ht-degree: 32%
       + [OSGi 웹 콘솔](./debugging/aem-sdk-local-quickstart/osgi-web-consoles.md)
       + [발송자 도구](./debugging/aem-sdk-local-quickstart/dispatcher-tools.md)
       + [기타 툴](./debugging/aem-sdk-local-quickstart/other-tools.md)
-   + AEM을 Cloud Service으로 디버깅{#debugging-aem-as-a-cloud-service}
+   + AEM을 Cloud Service{#debugging-aem-as-a-cloud-service}으로 디버깅
       + [개요](./debugging/cloud-service/overview.md)
       + [로그](./debugging/cloud-service/logs.md)
       + [구축 및 배포](./debugging/cloud-service/build-and-deployment.md)
       + [개발자 콘솔](./debugging/cloud-service/developer-console.md)
       + [CRXDE Lite](./debugging/cloud-service/crxde-lite.md)
-+ AEM 액세스{#accessing}
++ AEM{#accessing} 액세스
    + [개요](./accessing/overview.md)
    + [Adobe IMS 사용자](./accessing/adobe-ims-users.md)
    + [Adobe IMS 사용자 그룹](./accessing/adobe-ims-user-groups.md)
@@ -51,14 +51,14 @@ ht-degree: 32%
    + [AEM Walk-through 액세스 구성](./accessing/walk-through.md)
 + 마이그레이션 {#migration}
    + [컨텐츠 전송 도구](./migration/content-transfer-tool.md)
-+ 자산 컴퓨팅 확장성{#asset-compute}
++ asset compute 확장성{#asset-compute}
    + [개요](./asset-compute/overview.md)
-   + 설정{#set-up}
+   + {#set-up} 설정
       + [계정 및 서비스 프로비저닝](./asset-compute/set-up/accounts-and-services.md)
       + [로컬 개발 환경](./asset-compute/set-up/development-environment.md)
       + [Adobe 프로젝트 Firefly](./asset-compute/set-up/firefly.md)
    + 개발{#develop}
-      + [자산 계산 프로젝트 만들기](./asset-compute/develop/project.md)
+      + [asset compute 프로젝트 만들기](./asset-compute/develop/project.md)
       + [환경 변수 구성](./asset-compute/develop/environment-variables.md)
       + [manifest.html 구성](./asset-compute/develop/manifest.md)
       + [근로자 개발](./asset-compute/develop/worker.md)
@@ -66,7 +66,7 @@ ht-degree: 32%
    + 테스트 및 디버그{#test-debug}
       + [작업자 테스트](./asset-compute/test-debug/test.md)
       + [작업자 디버그](./asset-compute/test-debug/debug.md)
-   + Deploy{#deploy}
+   + 배포{#deploy}
       + [Adobe I/O Runtime에 배포](./asset-compute/deploy/runtime.md)
       + [AEM과 통합](./asset-compute/deploy/processing-profiles.md)
    + 고급{#advanced}
