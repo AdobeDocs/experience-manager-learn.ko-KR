@@ -28,12 +28,12 @@ ht-degree: 0%
 + 목록 보기 설정에서 워크플로우 메타데이터를 활성화합니다.
 + 목록 보기에서 워크플로우 타임라인으로 간편한 탐색
 + 기존 OOTB 작업 과정을 복사하여 붙여넣어 기본 기능을 사용자 정의하거나 재정의합니다.
-+ 및 [!DNL Workflow Models] [!DNL Launchers]
-+ 및 [!DNL Workflow Models] 의 게시를 관리합니다 [!DNL Launchers].
++ [!DNL Workflow Models] 및 [!DNL Launchers]에 대해 빠른 게시 수행
++ [!DNL Workflow Models] 및 [!DNL Launchers]에 대한 게시를 관리합니다.
 + OOTB 워크플로우 모델 또는 론쳐를 편집하려고 할 때 경고 툴팁으로 사용자에게 알립니다.
 + OOTB 워크플로우 모델 또는 방사기에 대한 변경 사항을 재확인하는 기능
 
-이 비디오 [!DNL Workflow models] 는 이 기능 집합을 시연하는 데 사용되지만, 이 기능 역시 적용 가능합니다 [!DNL AEM Launchers].
+이 비디오는 [!DNL Workflow models]을(를) 사용하여 이 기능 집합을 보여주지만 [!DNL AEM Launchers]에도 적용됩니다.
 
 
 >[!NOTE]
