@@ -11,7 +11,7 @@ doc-type: tutorial
 translation-type: tm+mt
 source-git-commit: 22ccd6627a035b37edb180eb4633bc3b57470c0c
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '273'
 ht-degree: 0%
 
 ---
@@ -19,27 +19,27 @@ ht-degree: 0%
 
 # CORS(Cross-Origin Resource Sharing) 개발
 
-클라이언트측 JavaScript를 통해 외부 웹 애플리케이션에서 AEM 컨텐츠 [!DNL CORS] 에 액세스하는 방법을 소개하는 짧은 예입니다.
+클라이언트 측 JavaScript를 통해 외부 웹 애플리케이션에서 AEM 컨텐츠에 액세스하기 위해 [!DNL CORS]을 활용하는 간단한 예입니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/18837/?quality=12&learn=on)
 
 이 비디오에서:
 
-* **www.example.com을** 통해 localhost에 매핑 `/etc/hosts`
-* **aem-publish.local** maps to localhost via `/etc/hosts`
-* [SimpleHTTPServer](https://itunes.apple.com/us/app/simple-http-server/id441002840?mt=12) ( [[!DNL Python]&#39;s SimpleHTTPServer의 래퍼](https://docs.python.org/2/library/simplehttpserver.html))는 포트 8000을 통해 HTML 페이지를 제공하고 있습니다.
-* [!DNL AEM Dispatcher] 가 [!DNL Apache HTTP Web Server] 2.4에서 실행되고 요청이 다음으로 역방향 프록시 처리 `aem-publish.local` 를 `localhost:4503`실행합니다.
+* **www.example.** comaps를  `/etc/hosts`
+* **aem-publish.** localmap을  `/etc/hosts`
+* [SimpleHTTPServer](https://itunes.apple.com/us/app/simple-http-server/id441002840?mt=12) (SimpleHTTPServer의 래퍼 [[!DNL Python])는 포트 8000을 통해 HTML 페이지를](https://docs.python.org/2/library/simplehttpserver.html) 제공하고 있습니다.
+* [!DNL AEM Dispatcher] 가  [!DNL Apache HTTP Web Server] 2.4에서 실행되고 요청이 다음으로 역방향 프록시 처리 `aem-publish.local` 를  `localhost:4503`실행합니다.
 
-자세한 내용은 AEM [에서 CORS(Cross-Origin Resource Sharing) 이해를 참조하십시오](./understand-cross-origin-resource-sharing.md).
+자세한 내용은 AEM](./understand-cross-origin-resource-sharing.md)에서 [CORS(교차 도메인 리소스 공유) 이해를 참조하십시오.
 
 ## www.example.com 및 JavaScript 사용
 
 이 웹 페이지에는
 
 1. 단추 클릭
-1. 다음에 [!DNL AJAX GET] 요청 `http://aem-publish.local/content/we-retail/.../experience/_jcr_content.1.json`
-1. JSON 응답의 `jcr:title` 양식을 검색합니다.
-1. DOM `jcr:title` 에
+1. [!DNL AJAX GET] 요청을 `http://aem-publish.local/content/we-retail/.../experience/_jcr_content.1.json`에 만듭니다.
+1. JSON 응답의 `jcr:title`을 검색합니다.
+1. `jcr:title`을(를) DOM에 삽입합니다.
 
 ```xml
 <html>
@@ -74,7 +74,7 @@ ht-degree: 0%
 
 ## OSGi 공장 구성
 
-에 대한 OSGi 구성 팩터리는 다음을 통해 [!DNL Cross-Origin Resource Sharing] 사용할 수 있습니다.
+[!DNL Cross-Origin Resource Sharing]에 대한 OSGi 구성 팩터리는 다음을 통해 사용할 수 있습니다.
 
 * `http://<host>:<port>/system/console/configMgr > [!UICONTROL Adobe Granite Cross-Origin Resource Sharing Policy]`
 
@@ -94,9 +94,9 @@ Access-Control-Request-Method,Access-Control-Request-Headers]"
 />
 ```
 
-## Dispatcher configuration {#dispatcher-configuration}
+## 발송자 구성 {#dispatcher-configuration}
 
-캐시된 컨텐츠에서 헤더의 캐싱 및 [!DNL CORS] 제공을 허용하려면 다음 구성을 모든 지원 AEM 게시 `dispatcher.any` 파일에 추가합니다.
+캐시된 컨텐츠에서 [!DNL CORS] 헤더의 캐싱 및 제공을 허용하려면 다음 구성을 모든 지원 AEM 게시 `dispatcher.any` 파일에 추가합니다.
 
 ```
 /cache { 
@@ -113,9 +113,9 @@ Access-Control-Request-Method,Access-Control-Request-Headers]"
 }
 ```
 
-**파일을 변경한 후 웹 서버 응용** 프로그램을 `dispatcher.any` 다시 시작합니다.
+**웹 서버 응용 프로그램** 을 변경한 후  `dispatcher.any` 파일을 다시 시작합니다.
 
-구성 업데이트 후 헤더가 다음 요청에 적절하게 캐시되도록 하기 위해 캐시를 완전히 지우는 것이 `/headers` 좋습니다.
+`/headers` 구성 업데이트 후 다음에 요청에서 헤더가 적절하게 캐시되도록 하려면 캐시를 완전히 지우는 것이 필요합니다.
 
 ## 지원 자료 {#supporting-materials}
 
