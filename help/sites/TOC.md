@@ -69,7 +69,7 @@ ht-degree: 15%
    + [Hello World 자습서](spa-editor/spa-editor-helloworld-tutorial-use.md)
    + [AEM SPA 편집기 시작 및 반응](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
    + [AEM SPA 편집기 및 각도 시작하기](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
-+ Multi Site Management {#multi-site-management}
++ 다중 사이트 관리 {#multi-site-management}
    + [언어 사본 소개](./multi-site-management/language-copy-overview.md)
    + [Live Copy 및 블루프린트](./multi-site-management/live-copy-and-blueprint.md)
    + [Live Copy 만들기](./multi-site-management/create-live-copy.md)
@@ -93,7 +93,7 @@ ht-degree: 15%
    + Experience Platform Launch {#experience-platform-launch}
       + [개요](integrations/experience-platform-launch/overview.md)
       + [론치 속성 만들기](integrations/experience-platform-launch/create-launch-property.md)
-      + [Adobe I/O를 사용하여 AEM과 Launch 연결](integrations/experience-platform-launch/connect-aem-launch-adobe-io.md)
+      + [Adobe I/O을 사용하여 AEM과 Launch 연결](integrations/experience-platform-launch/connect-aem-launch-adobe-io.md)
       + [론치 Cloud Service 만들기](integrations/experience-platform-launch/create-launch-cloud-service.md)
       + [론치 구현 디버깅](integrations/experience-platform-launch/debug-launch-implementation.md)
    + Adobe 클라이언트 데이터 레이어 {#adobe-client-data-layer}
