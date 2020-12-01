@@ -19,7 +19,7 @@ ht-degree: 0%
 ---
 
 
-# 비디오에 Dynamic Media Smart Crop 사용 {#using-smart-crop-video}
+# 비디오 {#using-smart-crop-video}에 Dynamic Media Smart Crop 사용
 
 Dynamic Media Smart Crop for video를 사용하면 Adobe Sensei을 통해 비디오의 관심 영역을 지능적으로 추적하여 모든 화면 크기에서 비디오가 가장 잘 보이도록 할 수 있습니다.
 
