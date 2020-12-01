@@ -33,4 +33,4 @@ AEM Assets Dynamic Media는 인터랙티브 미디어 뷰어를 통해 자산 �
 
 비디오에 표시되는 팝업 경험 조각 변형은 아래의 AEM 패키지로 사용할 수 있습니다.
 
-경험 [조각 Dynamic Media 자산 다운로드](assets/experience-fragmentsdynamic-mediaassets-100.zip)
+[경험 조각 다이내믹 미디어 자산 다운로드](assets/experience-fragmentsdynamic-mediaassets-100.zip)
