@@ -23,7 +23,7 @@ Adobe Experience Manager(AEM) Sites는 선도적인 경험 관리 플랫폼입�
 
    *개발자가 반응형 기능을 사용하여 단일 페이지 애플리케이션(SPA)과 AEM을 통합하는 시작 가이드*
 
-* **[AEM SPA 편집기 및 각도](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html) 시작하기(자습서)**
+* **[AEM SPA 편집기 및 Angular](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html) (자습서) 시작하기**
 
    *Angular를 사용하여 단일 페이지 애플리케이션(SPA)과 AEM을 통합하는 개발자를 위한 시작 가이드*
 
