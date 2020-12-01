@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> 아래 비디오는 AEM 6.3에 기록되었으며 AEM 6.4+는 변환 규칙 XML 파일을 저장하기 위한 새로운 저장소 구조를 도입했습니다. AEM 6.4+에서 변환 구성 UI를 사용할 때 규칙이 위치에 저장됩니다 `/conf/global/settings/translation/rules/translation_rules.xml`. 자세한 [내용은 변환할](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-rules.html) 컨텐츠 식별을 참조하십시오.
+> 아래 비디오는 AEM 6.3에 기록되었으며 AEM 6.4+는 변환 규칙 XML 파일을 저장하기 위한 새로운 저장소 구조를 도입했습니다. AEM 6.4+에서 번역 구성 UI를 사용할 때 규칙은 `/conf/global/settings/translation/rules/translation_rules.xml` 위치에 저장됩니다. 자세한 내용은 [번역 내용 확인](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-rules.html)을 참조하십시오.
 
 >[!VIDEO](https://video.tv.adobe.com/v/18135/?quality=9&learn=on)
 
@@ -36,11 +36,11 @@ ht-degree: 0%
 
 번역 구성 UI 액세스:
 
-* **[!UICONTROL AEM 시작 메뉴]>[!UICONTROL 도구]>[!UICONTROL 일반]>[[!UICONTROL 번역 구성]](http://localhost:4502/libs/cq/translation/translationrules/contexts.html)**
+* **[!UICONTROL AEM 시작 메뉴] >  [!UICONTROL 도구] >  [!UICONTROL 일반] >  [[!UICONTROL 번역 구성]](http://localhost:4502/libs/cq/translation/translationrules/contexts.html)**
 
 ## AEM 6.3 이전 {#prior-to-aem}
 
-이전 AEM 버전 변환 규칙은 번역 워크플로우에 있는 XML 파일을 편집하여 수동으로 업데이트했습니다. `/etc/workflow/models/translation/translation_rules.xml`.
+이전 AEM 버전 변환 규칙은 번역 워크플로우에 있는 XML 파일을 편집하여 수동으로 업데이트했습니다.`/etc/workflow/models/translation/translation_rules.xml`.
 
 ## 추가 리소스 {#additional-resources}
 
