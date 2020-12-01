@@ -19,7 +19,7 @@ ht-degree: 0%
 ---
 
 
-# AEM Assets에서 고급 번역 검색 사용{#using-smart-translation-search-with-aem-assets}
+# AEM Assets에서 고급 변환 검색 사용{#using-smart-translation-search-with-aem-assets}
 
 Smart Translation Search를 사용하면 AEM 컨텐츠에서 에셋과 페이지 모두를 자동으로 언어 간 검색 및 검색할 수 있으므로 50개 이상의 언어를 지원하고 수동 컨텐츠 번역 필요성을 줄일 수 있습니다.
 
@@ -29,9 +29,9 @@ AEM Smart Translation Search를 사용하면 AEM에서 영어 용어에 상응�
 
 고급 번역 검색은 영어로 된 자산에 적용되는 AEM 스마트 태그를 완벽하게 보완합니다.
 
-이 비디오에서는 [AEM Smart Translation Search가](smart-translation-search-technical-video-setup.md) 설정되었다고 가정합니다.
+이 비디오에서는 [AEM Smart Translation Search](smart-translation-search-technical-video-setup.md)가 설정되었다고 가정합니다.
 
-## Smart Translation Search 작동 방식 {#how-smart-translation-search-works}
+## 고급 번역 검색 작동 방식 {#how-smart-translation-search-works}
 
 ![고급 번역 검색 흐름 다이어그램](assets/smart-translation-search-flow.png)
 
