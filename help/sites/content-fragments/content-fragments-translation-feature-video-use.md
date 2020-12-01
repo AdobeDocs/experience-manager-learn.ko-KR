@@ -34,7 +34,7 @@ AEM 6.3에서는 컨텐츠 조각을 변환하는 기능을 도입했습니다. 
 
 ## 번역 구성 옵션 {#translation-config-options}
 
-기본적으로 컨텐츠 조각을 변환하는 여러 옵션을 지원합니다. 기본적으로 인라인 미디어 자산 및 관련 자산 컬렉션은 번역되지 않습니다. 번역 구성을 업데이트하려면 http://localhost:4502/etc/cloudservices/translation/default_translation.html으로 [이동합니다](http://localhost:4502/etc/cloudservices/translation/default_translation.html).
+기본적으로 컨텐츠 조각을 변환하는 여러 옵션을 지원합니다. 기본적으로 인라인 미디어 자산 및 관련 자산 컬렉션은 번역되지 않습니다. 번역 구성을 업데이트하려면 [http://localhost:4502/etc/cloudservices/translation/default_translation.html](http://localhost:4502/etc/cloudservices/translation/default_translation.html)로 이동합니다.
 
 컨텐츠 조각 자산을 번역하기 위한 네 가지 옵션이 있습니다.
 
