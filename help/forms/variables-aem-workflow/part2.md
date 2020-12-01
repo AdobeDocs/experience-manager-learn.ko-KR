@@ -37,7 +37,7 @@ ht-degree: 0%
 시스템에서 에셋을 작동하려면 다음 단계를 따르십시오.
 
 * [패키지 관리자를 사용하여 에셋을 다운로드하고 AEM으로 가져오기](assets/jsonandstringvariable.zip)
-* [워크플로우 모델을](http://localhost:4502/editor.html/conf/global/settings/workflow/models/jsonvariable.html) 탐색하여 워크플로우에 사용되는 변수를 파악합니다.
+* [워크플로우 ](http://localhost:4502/editor.html/conf/global/settings/workflow/models/jsonvariable.html) 모델을 탐색하여 워크플로우에 사용되는 변수를 파악합니다.
 * [이메일 서비스 구성](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/notification.html#ConfiguringtheMailService)
 * [응용 양식 열기](http://localhost:4502/content/dam/formsanddocuments/afbasedonjson/jcr:content?wcmmode=disabled)
 * 세부 사항을 작성하고 양식 제출
