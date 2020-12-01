@@ -23,7 +23,8 @@ OutputService는 양식 디자인 및 양식 디자인과 병합할 데이터를
 
 ![multi-record-xml](assets/multi-record-xml.PNG)
 
-데이터 xml에는 2개의 레코드가 있습니다. 각 레코드는 form1 요소로 표현됩니다. 이 xml은 OutputService generatePDFOutputBatch 메서드로 전달되며 [](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/OutputService.html) PDF 문서 목록(레코드당 1개)을 받습니다.generatePDFOutputBatch 메서드의 서명은 다음 매개 변수를 사용합니다
+데이터 xml에는 2개의 레코드가 있습니다. 각 레코드는 form1 요소로 표현됩니다. 이 xml은 OutputService [generatePDFOutputBatch 메서드](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/OutputService.html)에 전달되며 PDF 문서의 목록이 기록당 1개 있습니다.
+generatePDFOutputBatch 메서드의 서명은 다음 매개 변수를 사용합니다
 
 * 템플릿 - 키
 * 데이터 - 키로 식별되는 xml 데이터 문서를 포함하는 맵
@@ -32,7 +33,7 @@ OutputService는 양식 디자인 및 양식 디자인과 병합할 데이터를
 
 >[!NOTE]
 >
->이 사용 사례는 이 [웹 사이트에서 라이브 예로 사용할 수 있습니다](https://forms.enablementadobe.com/content/samples/samples.html?query=0).
+>이 사용 사례는 이 [website](https://forms.enablementadobe.com/content/samples/samples.html?query=0)에서 라이브 예제로 사용할 수 있습니다.
 
 ## 사용 사례 세부 정보{#use-case-details}
 
@@ -130,7 +131,7 @@ public Document generateMultiplePdfs(HashMap < String, String > templateMap, Has
 
 * [zip 파일 내용을 파일 시스템에 다운로드 및 추출합니다](assets/mult-records-template-and-xml-file.zip). 이 zip 파일에는 템플릿 및 xml 데이터 파일이 포함되어 있습니다.
 * [브라우저에서 Felix 웹 콘솔 지정](http://localhost:4502/system/console/bundles)
-* [DevelopingWithServiceUser 번들](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)배포
+* [DevelopingWithServiceUser 번들](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar) 배포
 * [OutputService API를 사용하여 pdf를 생성하는 사용자 지정 AEMFormsDocumentServices Bundle](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar).사용자 지정 번들 배포
 * [브라우저를 패키지 관리자로 지정](http://localhost:4502/crx/packmgr/index.jsp)
 * [패키지를 가져와 설치합니다](assets/generate-multiple-pdf-from-xml.zip). 이 패키지에는 템플릿 및 데이터 파일을 삭제할 수 있는 html 페이지가 포함되어 있습니다.
