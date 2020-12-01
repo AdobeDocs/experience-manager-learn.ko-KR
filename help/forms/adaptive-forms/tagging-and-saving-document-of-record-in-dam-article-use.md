@@ -54,12 +54,12 @@ tagManager.setTags(metadata, tagArray, true);
 
 * 만들기를 클릭합니다. | 파일 업로드 및 samplleadaptiveform.zip 업로드
 
-* [AEM 패키지 관리자를 사용하여 아티클 에셋](assets/tag-and-store-in-dam-assets.zip) 가져오기
-* 미리 보기 모드에서 [샘플 양식을 엽니다](http://localhost:4502/content/dam/formsanddocuments/summit/peakform/jcr:content?wcmmode=disabled). 사람 섹션을 채우고 양식을 제출합니다.
+* [AEM 패키지 관리자를 ](assets/tag-and-store-in-dam-assets.zip) 사용하여 아티클 에셋 가져오기
+* 미리 보기 모드](http://localhost:4502/content/dam/formsanddocuments/summit/peakform/jcr:content?wcmmode=disabled)에서 [샘플 양식을 엽니다. 사람 섹션을 채우고 양식을 제출합니다.
 * [DAM의 Peak 폴더로 이동합니다](http://localhost:4502/assets.html/content/dam/Peak). Peak 폴더에 DoR이 표시됩니다. 문서의 속성을 확인합니다. 태그는 적절히 사용해야 합니다.
 축하합니다! 샘플이 시스템에 설치되었습니다.
 
-* 양식 제출 시 트리거되는 [워크플로우를](http://localhost:4502/editor.html/conf/global/settings/workflow/models/TagAndStoreDoRinDAM.html) 살펴봅시다.
+* 양식 제출 시 트리거되는 [workflow](http://localhost:4502/editor.html/conf/global/settings/workflow/models/TagAndStoreDoRinDAM.html)를 살펴보도록 하겠습니다.
 * 워크플로우의 첫 번째 단계에서는 지원자 이름과 거주 군을 연결하여 고유한 파일 이름을 만듭니다.
 * 워크플로우의 두 번째 단계는 태그 지정이 필요한 태그 계층 구조 및 양식 필드 요소를 전달합니다. 프로세스 단계에서는 제출된 데이터에서 값을 추출하고 문서에 태그를 지정해야 하는 태그 제목을 생성합니다.
 * DAM의 다른 폴더에 DoR을 저장하려면 아래 스크린샷에 지정된 구성 속성을 사용하여 폴더 위치를 지정합니다.
