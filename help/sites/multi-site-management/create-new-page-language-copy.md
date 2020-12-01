@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# 언어 복사 페이지 만들기 {#create-language-copy-page}
+# 언어 복사 페이지 {#create-language-copy-page} 만들기
 
 기존 언어 사본에서 페이지를 만든 다음 해당 내용을 다른 언어 사본으로 변환하는 방법을 알아봅니다.
 
