@@ -20,9 +20,9 @@ ht-degree: 0%
 ---
 
 
-# 데이터 특성을 사용하여 HTML5 Forms 미리 채우기 {#prepopulate-html-forms-using-data-attribute}
+# 데이터 속성 {#prepopulate-html-forms-using-data-attribute}을(를) 사용하여 HTML5 Forms 미리 채우기
 
-이 기능의 실시간 데모를 보려면 [AEM Forms 샘플](https://forms.enablementadobe.com/content/samples/samples.html?query=0) 페이지를 참조하십시오.
+이 기능의 실시간 데모를 보려면 [AEM Forms 샘플](https://forms.enablementadobe.com/content/samples/samples.html?query=0) 페이지를 방문하십시오.
 
 AEM Forms을 사용하여 HTML 형식으로 렌더링되는 XDP 템플릿을 HTML5 또는 모바일 Forms라고 합니다. 이러한 양식을 렌더링할 때 이러한 양식을 미리 채우는 것이 일반적인 사용 사례입니다.
 
@@ -38,7 +38,7 @@ slingRequest.setAttribute(&quot;data&quot;, content);
 
 이 예에서는 컨텐츠가 있는 데이터 속성을 설정합니다. 컨텐츠는 양식을 미리 채울 데이터를 나타냅니다. 일반적으로 내부 서비스에 REST 호출을 수행하여 &quot;컨텐트&quot;를 가져옵니다.
 
-이 사용 사례를 수행하려면 사용자 지정 프로필을 만들어야 합니다. 사용자 지정 프로필 만들기에 대한 세부 사항은 여기에 있는 [AEM Forms 설명서에 분명히 설명되어 있습니다](https://helpx.adobe.com/aem-forms/6/html5-forms/custom-profile.html).
+이 사용 사례를 수행하려면 사용자 지정 프로필을 만들어야 합니다. 사용자 지정 프로필 만들기에 대한 세부 사항은 [AEM Forms 설명서](https://helpx.adobe.com/aem-forms/6/html5-forms/custom-profile.html)에 분명히 설명되어 있습니다.
 
 사용자 정의 프로파일을 만든 후 백엔드 시스템을 호출하여 데이터를 가져오는 JSP 파일을 생성합니다. 데이터를 가져오면 slingRequest.setAttribute(&quot;data&quot;, content)를 사용합니다.양식 미리 채우기
 
@@ -49,7 +49,8 @@ XDP를 렌더링할 때 일부 매개 변수를 xdp에 전달하거나 백엔드
 작성한 JSP는 request.getParameter(&quot;name&quot;)를 통해 name 매개 변수에 액세스할 수 있습니다. 그런 다음 이 매개 변수의 값을 백엔드 프로세스에 전달하여 필요한 데이터를 가져올 수 있습니다.
 시스템에서 이 기능을 사용하려면 아래 단계를 따르십시오.
 
-* [패키지 관리자를 사용하여 AEM으로 자산 다운로드 및 가져오기](assets/prepopulatemobileform.zip)패키지의 설치
+* [패키지 관리자를 사용하여 AEM에 에셋 다운로드 및 ](assets/prepopulatemobileform.zip)
+가져오기패키지가 다음
 
    * 사용자 지정 프로필
    * 샘플 XDP
