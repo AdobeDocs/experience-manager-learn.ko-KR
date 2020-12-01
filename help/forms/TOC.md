@@ -6,9 +6,9 @@ user-guide-description: 초보자 및 숙련된 AEM Forms 개발자를 위한 AE
 breadcrumb-title: AEM Forms 자습서
 index: y
 translation-type: tm+mt
-source-git-commit: 9d4e864f42fa6c0b2f9b895257db03311269ce2e
+source-git-commit: 787a79663472711b78d467977d633e3d410803e5
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '896'
 ht-degree: 6%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 6%
 + [개요](overview.md)
 + [따라야 할 모범 사례](adaptive-forms/best-practices-adaptive-forms.md)
 + [AEM 작성자를 사용하여 OKTA 인증 설정](adaptive-forms/single-sign-on-with-okta.md)
-+ 간단한 응용 양식 만들기 {#creating-your-first-adaptive-form}
++ 첫 번째 응용 양식 만들기 {#creating-your-first-adaptive-form}
    + [소개 및 설정](creating-your-first-adaptive-form/introduction-and-setup.md)
    + [적응형 양식 템플릿 만들기](creating-your-first-adaptive-form/create-adaptive-form-template.md)
    + [양식 조각 만들기](creating-your-first-adaptive-form/create-form-fragment.md)
@@ -83,13 +83,13 @@ ht-degree: 6%
    + [HTML5 Forms 사전 채우기](adaptive-forms/prepopulating-html5-forms-in-aem-forms-article.md)
    + [Salesforce를 사용한 양식 데이터 모델](adaptive-forms/using-adaptive-forms-with-sales-force-integration-tutorial.md)
    + [선택 구성 요소에 동적으로 항목 추가](adaptive-forms/choice-group-items-adding-dynamically-article.md)
-+ 양식 데이터 모델을 사용하여 적응형 양식 자동 완성{#prefill-fdm-db}
++ 양식 데이터 모델{#prefill-fdm-db}을(를) 사용하여 응용 양식 자동 채우기
    + [소개](prefill-fdm-db/introduction.md)
    + [데이터베이스 테이블 만들기](prefill-fdm-db/create-database-tables.md)
    + [양식 데이터 모델 구성](prefill-fdm-db/configuring-form-data-model.md)
    + [요청 매개 변수 가져오기](prefill-fdm-db/get-request-parameter.md)
    + [적응형 양식 만들기](prefill-fdm-db/create-adaptive-form.md)
-+ 받은 편지함 사용자 정의{#inbox-customization}
++ 받은 편지함 사용자 지정{#inbox-customization}
    + [소개](inbox-customization/introduction.md)
    + [사용자 지정 열 추가](inbox-customization/add-married-column.md)
    + [Sightly 템플릿 사용](inbox-customization/use-sightly-template.md)
@@ -106,7 +106,7 @@ ht-degree: 6%
    + [기본 양식 만들기](store-and-retrieve-af-with-2fa/create-the-main-adaptive-form.md)
    + [MyAccount 양식 만들기](store-and-retrieve-af-with-2fa/create-the-myaccount-form.md)
    + [샘플 배포](store-and-retrieve-af-with-2fa/deploy-this-sample.md)
-+ CSV 형식으로 제출된 데이터 내보내기{#export-submitted-data-csv-format}
++ CSV 형식{#export-submitted-data-csv-format}으로 제출된 데이터 내보내기
    + [제출된 데이터 내보내기](export-submitted-data-csv-format/export-submitted-data-csv.md)
 + HTML5 양식{#html5-forms}
    + [HTML5 양식 만들기](html5-forms/create-html5-form.md)
@@ -124,7 +124,7 @@ ht-degree: 6%
    + [PDF 양식을 적응형 양식으로 변환](aem-forms-and-adobe-sign/convert-pdf-form-into-adaptive-form.md)
    + [변환된 응용 양식 구성](aem-forms-and-adobe-sign/configure-converted-adaptive-form.md)
    + [Adobe Sign에서 XDP 템플릿 사용](aem-forms-and-adobe-sign/using-xdp-templates-with-adobe-sign.md)
-+ AEM 워크플로우의 변수{#variables-aem-workflow}
++ AEM Workflow{#variables-aem-workflow}의 변수
    + [소개 - 워크플로우의 변수](variables-aem-workflow/introduction.md)
    + [XML 변수](variables-aem-workflow/part1.md)
    + [JSON 변수](variables-aem-workflow/part2.md)
@@ -135,18 +135,18 @@ ht-degree: 6%
 + MySQL DB에서 양식 데이터 저장 및 검색{#storing-and-retrieving-form-data}
    + [소개](storing-retrieving-form-data/introduction.md)
    + [데이터 소스 구성](storing-retrieving-form-data/part1.md)
-   + [데이터를 저장할 서블릿](storing-retrieving-form-data/part2.md)
-   + [데이터를 가져오는 서비스](storing-retrieving-form-data/part3.md)
+   + [데이터를 저장하는 서비스](storing-retrieving-form-data/part3.md)
+   + [서블릿 만들기](storing-retrieving-form-data/part2.md)
    + [클라이언트 라이브러리](storing-retrieving-form-data/part4.md)
    + [적응형 양식 템플릿](storing-retrieving-form-data/part5.md)
    + [샘플 에셋 배포](storing-retrieving-form-data/part6.md)
-+ 모바일 양식 제출 시 AEM 워크플로우 트리거{#offline-mobile-form-submission}
++ 모바일 양식 제출 시 AEM 워크플로 트리거{#offline-mobile-form-submission}
    + [소개](offline-mobile-form-submission/introduction.md)
    + [사용자 지정 프로필](offline-mobile-form-submission/part-one.md)
    + [PDF 제출 처리](offline-mobile-form-submission/part-two.md)
    + [PDF 검토 워크플로우](offline-mobile-form-submission/part-three.md)
    + [시스템에 배포](offline-mobile-form-submission/part-four.md)
-+ 제출된 데이터 쿼리{#querying-submitted-data}
++ 제출된 데이터 쿼리 중{#querying-submitted-data}
    + [소개](querying-submitted-data/introduction.md)
    + [JSON 스키마를 기반으로 양식 만들기](querying-submitted-data/part1.md)
    + [제출된 데이터 저장](querying-submitted-data/part2.md)
@@ -155,13 +155,13 @@ ht-degree: 6%
 + Forms 포털에서 사용자 지정 자산 유형 나열{#listing-custom-asset-types}
    + [부분1-사용자 지정 자산 유형 등록](listing-custom-asset-types/part1.md)
    + [2부 - 사용자 지정 템플릿 만들기](listing-custom-asset-types/part2.md)
-+ AEM Forms with Marketing{#aem-forms-with-marketo}
++ AEM Forms(Markto 포함){#aem-forms-with-marketo}
    + [1부 - 소개](aem-forms-with-marketo/part1.md)
    + [2부 - 사용자 정의 인증](aem-forms-with-marketo/part2.md)
    + [부분3 - 데이터 소스](aem-forms-with-marketo/part3.md)
    + [4부 - 모든 것을 함께](aem-forms-with-marketo/part4.md)
 
-+ Adobe Campaign Standard{#aem-forms-with-adobe-campaign}
++ AEM Forms, Adobe Campaign Standard{#aem-forms-with-adobe-campaign}
    + [소개](aem-forms-with-adobe-campaign/aem-forms-with-campaign-standard-getting-started-tutorial.md)
    + [1부 - 토큰 생성](aem-forms-with-adobe-campaign/partone.md)
    + [2부 - 양식 제출 시 ACS 프로필 만들기](aem-forms-with-adobe-campaign/parttwo.md)
@@ -204,7 +204,7 @@ ht-degree: 6%
    + [AEM Forms 인쇄 채널 문서에서 표 구성 요소 사용](interactive-communications/table-in-print-channel-documents-video-use.md)
    + [감시 폴더를 사용하여 인쇄 채널용 대화형 통신 문서 생성](interactive-communications/generating-interactive-communications-print-document-using-api-tutorial-use.md)
 
-+ Interactive Communications For Web Channel {#ic-web-channel-tutorial}
++ 웹 채널에 대한 대화형 통신 {#ic-web-channel-tutorial}
    + [소개](ic-web-channel-tutorial/introduction.md)
    + [Tomcat 설정](ic-web-channel-tutorial/partone.md)
    + [데이터 소스 만들기](ic-web-channel-tutorial/parttwo.md)
