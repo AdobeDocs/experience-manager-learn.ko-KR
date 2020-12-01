@@ -20,16 +20,16 @@ ht-degree: 0%
 
 다음 단계는 이전 단계에서 생성된 Acrobat에서 스키마를 만드는 것입니다. 이 자습서의 일부로 스키마를 만들기 위한 샘플 응용 프로그램이 제공됩니다. 스키마를 만들려면 다음 지침을 따르십시오.
 
-1. CRXDE Lite에 [로그인](http://localhost:4502/crx/de)
-2. 파일에 열기 `/apps/AemFormsSamples/components/createxsd/POST.jsp`
-3. 하드 드라이브 `saveLocation` 의 해당 폴더로 변경합니다. 저장할 폴더가 이미 생성되어 있는지 확인합니다.
-4. AEM에서 호스팅되는 [XSD](http://localhost:4502/content/DocumentServices/CreateXsd.html) 페이지를 브라우저에서 가리킵니다.
+1. [CRXDE Lite](http://localhost:4502/crx/de)에 로그인합니다.
+2. `/apps/AemFormsSamples/components/createxsd/POST.jsp` 파일로 열기
+3. `saveLocation`을(를) 하드 드라이브의 적절한 폴더로 변경합니다. 저장할 폴더가 이미 생성되어 있는지 확인합니다.
+4. 브라우저에서 AEM에서 호스팅되는 XSD[ 페이지를 가리킵니다.](http://localhost:4502/content/DocumentServices/CreateXsd.html)
 5. Acrobat을 드래그하여 놓습니다.
 6. 3단계에서 지정한 폴더를 확인합니다. 스키마 파일이 이 위치에 저장됩니다.
 
 ## Acrobat 업로드
 
-이 데모를 시스템 작업을 수행하려면 AEM Assets에 있는 폴더를 만들어야 `acroforms` 합니다. Acrobat을 이 `acroforms` 폴더에 업로드합니다.
+이 데모를 시스템에서 사용하려면 AEM Assets에 `acroforms`이라는 폴더를 만들어야 합니다. 이 `acroforms` 폴더에 Acrobat을 업로드합니다.
 
 >[!NOTE]
 >
