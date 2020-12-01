@@ -19,11 +19,11 @@ ht-degree: 0%
 
 ---
 
-# ACS 프로필을 사용한 적응형 양식 자동 채우기 {#prefilling-adaptive-form-using-acs-profile}
+# ACS 프로필을 사용한 응용 양식 자동 완성 {#prefilling-adaptive-form-using-acs-profile}
 
 이 부분에서 Adobe는 ACS에서 가져온 프로필 정보를 사용하여 적응형 양식을 미리 작성합니다. AEM Forms은 적응형 양식을 채울 수 있는 강력한 기능을 갖추고 있습니다.
 
-사전 채우기 적응형 양식에 대한 자세한 내용은 이 [자습서를 참조하십시오](https://helpx.adobe.com/experience-manager/kt/forms/using/prefill-service-adaptive-forms-article-use.html).
+사전 채우기 적응형 양식에 대한 자세한 내용은 [자습서](https://helpx.adobe.com/experience-manager/kt/forms/using/prefill-service-adaptive-forms-article-use.html)를 참조하십시오.
 
 ACS에서 데이터를 가져와 적응형 양식을 채울 수 있도록, 로그인된 AEM 사용자와 동일한 이메일을 가진 ACS에 프로필이 있다고 가정합니다. 예를 들어, AEM에 로그인한 사람의 이메일 ID가 csimms@adobe.com인 경우, ACS에서 이메일(csimms@adobe.com)인 프로파일을 찾을 수 있습니다.
 
