@@ -28,7 +28,7 @@ Adobe Experience Manager의 스타일 시스템을 사용하면 백엔드 개발
 
 이 비디오에서는 스타일 시스템을 활용하여 CSS만을 사용하여 단일 구성 요소에 대해 매우 다른 시각적 모양을 만드는 방법을 보여 줍니다.
 
-표시되는 스타일은 [WKND 애플리케이션에서 제공합니다](https://github.com/adobe/aem-guides-wknd). 이러한 스타일은 CSS로 정의되며, 구성 요소의 백엔드 로직인 HTL 스크립트 또는 Sling 모델을 변경할 필요가 없습니다.
+표시된 스타일은 [WKND 응용 프로그램](https://github.com/adobe/aem-guides-wknd)에서 제공합니다. 이러한 스타일은 CSS로 정의되며, 구성 요소의 백엔드 로직인 HTL 스크립트 또는 Sling 모델을 변경할 필요가 없습니다.
 
 ## 추가 리소스 {#additional-resources}
 
