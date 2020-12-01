@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# AEM Forms의 향상된 테마 편집기{#theme-editor-improvements-in-aem-forms}
+# AEM Forms{#theme-editor-improvements-in-aem-forms}의 테마 편집기 개선
 
 AEM 6.3에서 적응형 양식에 대한 테마 편집기 개선
 
