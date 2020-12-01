@@ -32,7 +32,7 @@ AEM 데스크탑 앱을 사용하면 데스크탑에서 AEM으로 관리되는 �
 
 >[!NOTE]
 >
-> [Adobe Asset Link](./adobe-asset-link.md) 는 Adobe Creative Cloud 애플리케이션에서 AEM 에셋을 사용하여 작업할 수 있는 Adobe의 전용 솔루션입니다.Photoshop, Illustrator, InDesign 이러한 응용 프로그램에서 AEM Assets을 사용하는 경우, Adobe 자산 링크가 AEM 데스크톱 응용 프로그램보다 더 선호됩니다.
+> [Adobe Asset ](./adobe-asset-link.md) Linkis Adobe은 Adobe Creative Cloud 애플리케이션에서 AEM 에셋을 사용하여 작업할 수 있는 전용 솔루션입니다.Photoshop, Illustrator, InDesign 이러한 응용 프로그램에서 AEM Assets을 사용하는 경우, Adobe 자산 링크가 AEM 데스크톱 응용 프로그램보다 더 선호됩니다.
 
 ## 추가 리소스
 
