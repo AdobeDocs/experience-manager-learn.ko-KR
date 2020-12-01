@@ -30,5 +30,7 @@ AEM Forms 6.4 릴리스까지 데이터 소스가 구성되면 구성표, 호스
 
 **AEM 6.4의 데이터 소스 구성**
 
-![64AEM 6.5 이상](assets/64release.gif)의 DataSource 구성&#x200B;**편집 가능한 데이터 소스 구성**![65DataSource 구성](assets/modifiabledatasource.jfif)
+![64DataSource ](assets/64release.gif)
+**ConfigurationAEM 6.5 이상**
+![의 편집 가능한 데이터 소스 구성](assets/modifiabledatasource.jfif)
 
