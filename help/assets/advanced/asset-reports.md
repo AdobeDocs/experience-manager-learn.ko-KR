@@ -27,7 +27,7 @@ AEM Assets은 직관적인 사용자 경험을 통해 대규모 리포지토리�
 
 다음 수식은 비디오에서 Microsoft Excel에서 크기별 차트를 생성하는 데 사용됩니다.
 
-### 에셋 크기 표준화(바이트) {#asset-size-normalization-to-bytes}
+### 에셋 크기 표준화 - 바이트 {#asset-size-normalization-to-bytes}
 
 ```
 =IF(RIGHT(D2,2)="KB",
@@ -62,4 +62,4 @@ AEM Assets은 직관적인 사용자 경험을 통해 대규모 리포지토리�
 
 ## 추가 리소스{#additional-resources}
 
-차트와 함께 [모든 자산 Excel 파일 다운로드](./assets/asset-reports/all-assets.xlsx)
+[차트가 있는 모든 자산 Excel 파일 다운로드](./assets/asset-reports/all-assets.xlsx)
