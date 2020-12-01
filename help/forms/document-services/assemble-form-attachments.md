@@ -26,7 +26,7 @@ ht-degree: 0%
 
 ## WorkflowProcess 인터페이스를 구현하는 OSGi 구성 요소 만들기
 
-com.adobe.granite.workflow.exec.WorkflowProcess 인터페이스를 구현하는 [OSGi 구성 요소를 만듭니다](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowProcess.html). 이 구성 요소의 코드는 AEM 작업 과정의 프로세스 단계 구성 요소와 연결할 수 있습니다. 인터페이스 com.adobe.granite.workflow.exec.WorkflowProcess의 실행 방법이 이 구성 요소에서 구현됩니다.
+[com.adobe.granite.workflow.exec.WorkflowProcess 인터페이스](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowProcess.html)를 구현하는 OSGi 구성 요소를 만듭니다. 이 구성 요소의 코드는 AEM 작업 과정의 프로세스 단계 구성 요소와 연결할 수 있습니다. 인터페이스 com.adobe.granite.workflow.exec.WorkflowProcess의 실행 방법이 이 구성 요소에서 구현됩니다.
 
 AEM 워크플로우를 트리거하기 위해 적응형 양식이 제출되면 제출된 데이터가 페이로드 폴더 아래의 지정된 파일에 저장됩니다. 예를 들어 제출된 데이터 파일입니다. 카드 및 은행 거래 명세서 태그 아래에 지정된 첨부 파일을 조합해야 합니다.
 ![전송 데이터](assets/submitted-data.JPG).
@@ -45,7 +45,7 @@ String  []attachmentNames  = arg2.get("PROCESS_ARGS","string").toString().split(
 
 ### 첨부 파일에서 DCX 만들기
 
-그런 다음 문서를 취합하는 데 Assembler 서비스에서 사용하는 [DDX(문서 설명 XML)](https://helpx.adobe.com/pdf/aem-forms/6-2/ddxRef.pdf) 문서를 만들어야 합니다. 다음은 프로세스 인수에서 생성된 DDX입니다. 프로세스 인수에 지정된 대로 PDF 소스 요소가 올바른 순서로 표시됩니다.
+그런 다음 어셈블러 서비스에서 문서를 조합하는 데 사용하는 [문서 설명 XML(DDX)](https://helpx.adobe.com/pdf/aem-forms/6-2/ddxRef.pdf) 문서를 만들어야 합니다. 다음은 프로세스 인수에서 생성된 DDX입니다. 프로세스 인수에 지정된 대로 PDF 소스 요소가 올바른 순서로 표시됩니다.
 
 ![dax-xml](assets/ddx-xml.JPG)
 
@@ -134,15 +134,15 @@ session.save();
 
 ### AEM 서버에서 이 기능을 사용하려면
 
-* 로컬 시스템에 [양식 첨부 파일](assets/assemble-form-attachments-af.zip) 조합 양식을 다운로드합니다.
-* 양식 및 문서 페이지[에서 양식을](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments) 가져옵니다.
-* 워크플로우 [를](assets/assemble-form-attachments.zip) 다운로드하고 패키지 관리자를 사용하여 AEM으로 가져옵니다.
-* 사용자 [정의 번들 다운로드](assets/assembletaskattachments.assembletaskattachments.core-1.0-SNAPSHOT.jar)
-* [웹 콘솔을 사용하여 번들 배포 및 시작](http://localhost:4502/system/console/bundles)
-* 브라우저에서 첨부 파일 [양식을 가리킵니다.](http://localhost:4502/content/dam/formsanddocuments/assembleattachments/jcr:content?wcmmode=disabled)
+* [양식 첨부 파일 조합 양식](assets/assemble-form-attachments-af.zip)을 로컬 시스템에 다운로드합니다.
+* [Forms 및 문서](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments) 페이지에서 양식을 가져옵니다.
+* [workflow](assets/assemble-form-attachments.zip)를 다운로드하고 패키지 관리자를 사용하여 AEM으로 가져옵니다.
+* [사용자 지정 번들](assets/assembletaskattachments.assembletaskattachments.core-1.0-SNAPSHOT.jar) 다운로드
+* [웹 콘솔](http://localhost:4502/system/console/bundles)을 사용하여 번들 배포 및 시작
+* 브라우저를 [AssembleAttachments Form](http://localhost:4502/content/dam/formsanddocuments/assembleattachments/jcr:content?wcmmode=disabled)으로 지정합니다.
 * ID 문서에 첨부 파일을 추가하고 은행 명세서 섹션에 두 개의 pdf 문서를 추가합니다.
 * 양식 제출을 통해 워크플로우 트리거
-* crx에 있는 워크플로우의 [페이로드 폴더에서 조합된](http://localhost:4502/crx/de/index.jsp#/var/fd/dashboard/payload) pdf를 확인합니다.
+* 결합된 pdf에 대해 crx](http://localhost:4502/crx/de/index.jsp#/var/fd/dashboard/payload)에 있는 워크플로우의 [페이로드 폴더를 확인합니다.
 
 >[!NOTE]
 > 사용자 정의 번들에 대해 로거를 활성화한 경우 DDX와 어셈블된 파일이 AEM 설치 폴더에 기록됩니다.
