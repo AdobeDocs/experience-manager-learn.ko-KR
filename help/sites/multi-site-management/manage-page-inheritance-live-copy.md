@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# 페이지의 Live Copy 상속 관리 {#manage-live-copy-page}
+# 페이지 {#manage-live-copy-page}의 Live Copy 상속 관리
 
 페이지 수준에서 Live Copy와 블루프린트 간의 상속을 관리하는 방법을 알아봅니다.
 >[!VIDEO](https://video.tv.adobe.com/v/36679?quality=12&learn=on)
