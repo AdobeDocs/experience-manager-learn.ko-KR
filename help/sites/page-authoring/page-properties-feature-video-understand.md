@@ -20,7 +20,7 @@ ht-degree: 27%
 ---
 
 
-# 페이지 속성 이해 {#understanding-page-properties-aem-sites}
+# 페이지 속성 {#understanding-page-properties-aem-sites} 이해
 
 다음 비디오에서는 Adobe Experience Manager의 페이지와 관련된 페이지 속성을 소개합니다.
 
