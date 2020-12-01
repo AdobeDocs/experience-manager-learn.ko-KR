@@ -20,10 +20,10 @@ ht-degree: 0%
 ---
 
 
-# AEM Forms에서 DataSource 구성 만들기{#creating-datasource-configuration-in-aem-forms}
+# AEM Forms{#creating-datasource-configuration-in-aem-forms}에서 DataSource 구성 만들기
 
 이 부분에서는 REST 지원 데이터 소스를 만듭니다.  다음 비디오에서는 데이터 소스를 만드는 단계를 안내합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/22344/?quality=9&learn=on)
 
-이 튜토리얼과 관련된 에셋의 일부로 제공된 스웨거 파일을 사용하십시오. 이 튜토리얼의 [도입부에서](introduction.md) 에셋을 이용할 수 있습니다.
+이 튜토리얼과 관련된 에셋의 일부로 제공된 스웨거 파일을 사용하십시오. 자산은 이 자습서의 [소개](introduction.md)에서 사용할 수 있습니다.
