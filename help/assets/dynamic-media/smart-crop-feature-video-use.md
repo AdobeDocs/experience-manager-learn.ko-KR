@@ -21,7 +21,7 @@ ht-degree: 0%
 ---
 
 
-# AEM Assets Dynamic Media에서 스마트 자르기 사용{#using-smart-crop-with-aem-assets-dynamic-media}
+# AEM Assets 다이내믹 미디어와 함께 스마트 자르기 사용{#using-smart-crop-with-aem-assets-dynamic-media}
 
 Smart Crop은 Adobe Sensei을 사용하여 반응형 디자인을 위해 컨텐츠를 자르는 데 많은 시간과 비용이 소요되는 작업을 제거합니다.
 
