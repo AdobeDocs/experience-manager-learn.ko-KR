@@ -40,14 +40,14 @@ ht-degree: 1%
 >* Microsoft Visual C++ 2013 재배포 가능(6.5 기준)
 
 
-하지만 AEM Forms을 설치하려면 [공식](https://helpx.adobe.com/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html) 설명서를 따르는 것이 좋습니다. Windows 환경에서 AEM Forms을 설치하고 구성하려면 다음 단계를 따르십시오.
+하지만 AEM Forms을 설치하려면 [공식 설명서](https://helpx.adobe.com/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html)를 따르는 것이 좋습니다. Windows 환경에서 AEM Forms을 설치하고 구성하려면 다음 단계를 따르십시오.
 
 * 해당 JDK가 설치되어 있는지 확인하십시오.
    * AEM 6.2.Oracle SE 8 JDK 1.8.x(64비트)
 * 
    * AEM 6.3 및 AEM 6.4 필요한 경우:Oracle SE 8 JDK 1.8.x(64비트)
 * AEM 6.5 JDK 8 또는 JDK 11이 필요합니다.
-* [공식 JDK 요구 사항은](https://helpx.adobe.com/experience-manager/6-3/sites/deploying/using/technical-requirements.html) 여기에 나와 있습니다.
+* [공식 JDK ](https://helpx.adobe.com/experience-manager/6-3/sites/deploying/using/technical-requirements.html) 요구 사항은 여기에 명시되어 있습니다.
 * JAVA_HOME이 설치되어 있는 JDK를 가리키도록 설정되어 있는지 확인합니다.
    * 창에서 JAVA_HOME 변수를 만들려면 아래 단계를 수행하십시오.
       * 내 컴퓨터를 마우스 오른쪽 단추로 클릭하고 [속성]을 선택합니다
@@ -70,7 +70,7 @@ ht-degree: 1%
 * 시작이 완료되면 sling.properties 파일을 엽니다. c:\AEMForms\crx-quickstart\conf folder에 있습니다.
 
 * 다음 두 줄을 파일 아래에 복사
-   * **sling.bootdelegation.class.com.rsa.jsafe.provider.JsafeJCE=com.rsa.*** sling.bootdelegation.class.org.bo **uncycastle.jce.provider.BouncyCastleProvider=org.bouncycastle***
+   * **sling.bootdelegation.class.com.rsa.jsafe.provider.JsafeJCE=com.rsa.*** **sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider=org.bouncycastle.***
 * 문서 서비스가 작동하려면 이 두 속성이 필요합니다
 * sling.properties 파일 저장
 
@@ -78,7 +78,7 @@ ht-degree: 1%
 
    * AdobeId를 로그인하여 공유 패키지
    * AEM Forms 검색 귀하의 AEM Forms 및 운영 체제에 적합한 패키지에 추가
-   * 또는 [적절한 양식 addon 패키지를 다운로드할 수 있습니다](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html)
+   * 또는 [적절한 양식 addon 패키지](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html)를 다운로드할 수 있습니다.
    * 패키지에 add on을 설치한 후 다음 단계를 수행해야 합니다.
 
       * **모든 번들이 활성 상태여야 합니다. (AEMFD 서명 번들 제외).**
@@ -86,12 +86,12 @@ ht-degree: 1%
    * **모든 번들이 활성화되면(AEMFD Signatures 번들 제외) 시스템을 다시 시작하여 AEM Forms 설치를 완료하십시오**
 
 
-* 허용 목록 `sun.util.calendar` 에 패키지 추가:
+* 허용 목록에 `sun.util.calendar` 패키지 추가:
 
-   1. 브라우저 창에서 Felix 웹 콘솔 [열기](http://localhost:4502/system/console/configMgr)
-   2. 방화벽 구성 검색 및 열기: `com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
-   3. 새 항목 `sun.util.calendar` 으로 추가 `com.adobe.cq.deserfw.impl.DeserializationFirewallImpl.firewall.deserialization.whitelist.name`
+   1. [브라우저 창에서 Felix 웹 콘솔 열기](http://localhost:4502/system/console/configMgr)
+   2. 방화벽 구성 검색 및 열기:`com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
+   3. `sun.util.calendar`을(를) `com.adobe.cq.deserfw.impl.DeserializationFirewallImpl.firewall.deserialization.whitelist.name` 아래의 새 항목으로 추가
    4. 변경 사항을 저장합니다.
 
 축하합니다! 이제 시스템에 AEM Forms을 설치하고 구성했습니다.
-필요에 따라 서버에 [Reader 확장](https://helpx.adobe.com/experience-manager/6-3/forms/using/configuring-document-services.html) 또는 PDFG를 구성할 [ 수](https://helpx.adobe.com/experience-manager/6-3/forms/using/install-configure-pdf-generator.html) 있습니다
+필요에 따라 서버에 [Reader 확장](https://helpx.adobe.com/experience-manager/6-3/forms/using/configuring-document-services.html) 또는 [ PDFG](https://helpx.adobe.com/experience-manager/6-3/forms/using/install-configure-pdf-generator.html)을 구성할 수 있습니다
