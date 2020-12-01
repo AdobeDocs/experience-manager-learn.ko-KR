@@ -39,7 +39,7 @@ AEM Forms과 Marketing의 통합을 위해 RESTful 웹 서비스를 사용할 �
 
 이후 데이터 소스를 구성한 후 다음 단계는 이전 단계에서 구성된 데이터 소스를 기반으로 양식 데이터 모델을 만드는 것입니다. 양식 데이터 모델을 만들려면 다음 단계를 수행하십시오.
 
-브라우저에서 [데이터 통합 페이지를 가리킵니다.](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm) AEM 인스턴스에서 만든 모든 데이터 통합이 나열됩니다.
+브라우저를 [데이터 통합 페이지로 가리킵니다.](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm) AEM 인스턴스에서 만든 모든 데이터 통합이 나열됩니다.
 
 1. 만들기를 클릭합니다 | 양식 데이터 모델
 1. FormsAndMarketing과 같은 의미 있는 제목을 입력하고 다음을 클릭합니다
