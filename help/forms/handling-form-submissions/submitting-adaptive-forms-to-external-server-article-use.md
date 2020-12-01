@@ -28,7 +28,7 @@ REST 종단점에 제출 동작을 사용하여 제출된 데이터를 REST URL�
 
 내부 서버에 데이터를 게시하려면 리소스의 경로를 제공합니다. 데이터는 리소스의 경로를 게시합니다. 예: &lt;/content/restEndPoint>. 이러한 게시물 요청의 경우 제출 요청의 인증 정보가 사용됩니다.
 
-외부 서버에 데이터를 게시하려면 URL을 제공하십시오. The format of the URL is <http://host:port/path_to_rest_end_point>. POST 요청을 익명으로 처리할 경로를 구성했는지 확인합니다.
+외부 서버에 데이터를 게시하려면 URL을 제공하십시오. URL의 형식은 <http://host:port/path_to_rest_end_point>입니다. POST 요청을 익명으로 처리할 경로를 구성했는지 확인합니다.
 
 본 문서의 목적을 위해 귀하의 tomcat 인스턴스에 배포할 수 있는 간단한 전쟁 파일을 작성했습니다. 포트 8080에서 tomcat이 실행 중이면 POST URL이
 
@@ -52,13 +52,14 @@ String data = request.getParameter(paramName);System.out.println("The data  is "
 }
 ```
 
-![형식 제출](assets/formsubmission.gif)을 통해 서버에서 테스트하려면 다음을 수행하십시오
+![형식 ](assets/formsubmission.gif)
+제출서버에서 테스트하려면 다음을 수행하십시오
 
 1. 아직 설치하지 않은 경우 Tomcat을 설치합니다. [tomcat 설치 지침은](https://helpx.adobe.com/experience-manager/kt/forms/using/preparing-datasource-for-form-data-model-tutorial-use.html)
-1. 이 [아티클과](assets/aemformsenablement.zip) 관련된 zip 파일을 다운로드합니다. 파일을 압축 해제하여 전쟁 파일을 가져옵니다.
+1. 이 아티클과 관련된 [zip 파일](assets/aemformsenablement.zip)을 다운로드합니다. 파일을 압축 해제하여 전쟁 파일을 가져옵니다.
 1. tomcat 서버에 전쟁 파일을 배포합니다.
-1. 파일 첨부 구성 요소가 포함된 간단한 응용 양식을 만들고 위 스크린샷에 표시된 것처럼 해당 제출 동작을 구성합니다. POST URL은 입니다 <http://localhost:8080/AemFormsEnablement/HandleFormSubmission>. AEM 및 tomcat이 localhost에서 실행되고 있지 않은 경우 그에 따라 URL을 변경하십시오.
+1. 파일 첨부 구성 요소가 포함된 간단한 응용 양식을 만들고 위 스크린샷에 표시된 것처럼 해당 제출 동작을 구성합니다. POST URL은 <http://localhost:8080/AemFormsEnablement/HandleFormSubmission>입니다. AEM 및 tomcat이 localhost에서 실행되고 있지 않은 경우 그에 따라 URL을 변경하십시오.
 1. tomcat에 다중 부분 양식 데이터 제출을 활성화하려면 &lt;tomcatInstallDir>\conf\context.xml폴더의 컨텍스트 요소에 다음 속성을 추가하고 Tomcat 서버를 다시 시작하십시오.
-1. **&lt;context allowCancerMultipartParsing=&quot;true&quot;>**
+1. **&lt;context allowCasualMultipartParsing=&quot;true&quot;>**
 1. 적응형 양식을 미리 보고 첨부 파일을 추가하고 제출합니다. tomcat 콘솔 창에서 메시지를 확인합니다.
 
