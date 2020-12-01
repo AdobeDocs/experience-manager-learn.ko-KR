@@ -20,17 +20,17 @@ ht-degree: 0%
 ---
 
 
-# 사용 권한으로 XDP를 PDF로 렌더링{#rendering-xdp-into-pdf-with-usage-rights}
+# 사용 권한{#rendering-xdp-into-pdf-with-usage-rights}을(를) 사용하여 XDP를 PDF로 렌더링
 
 xdp를 PDF로 렌더링하고 Reader 익스텐션을 렌더링된 PDF에 적용하는 것이 일반적인 사용 사례입니다.
 
 예를 들어, AEM Forms의 양식 포털에서 사용자가 XDP를 클릭하면 XDP를 PDF로 렌더링하고 reader가 PDF를 확장할 수 있습니다.
 
-이 기능을 테스트하려면 이 [링크를 사용해 볼 수 있습니다](https://forms.enablementadobe.com/content/samples/samples.html?query=0). 샘플 이름은 &quot;RE를 사용하여 XDP 렌더링&quot;입니다.
+이 기능을 테스트하려면 이 [link](https://forms.enablementadobe.com/content/samples/samples.html?query=0)을 사용해 보십시오. 샘플 이름은 &quot;RE를 사용하여 XDP 렌더링&quot;입니다.
 
 이 사용 사례를 수행하려면 다음을 수행해야 합니다.
 
-* &quot;fd-service&quot; 사용자에게 Reader 확장 인증서를 추가합니다. Reader 확장 자격 증명을 추가하는 단계는 [여기에 나와 있습니다](https://helpx.adobe.com/experience-manager/6-3/forms/using/configuring-document-services.html)
+* &quot;fd-service&quot; 사용자에게 Reader 확장 인증서를 추가합니다. Reader 확장 자격 증명을 추가하는 단계는 [여기](https://helpx.adobe.com/experience-manager/6-3/forms/using/configuring-document-services.html)입니다.
 
 * 사용 권한을 렌더링하고 적용할 사용자 정의 OSGi 서비스를 만듭니다. 이 작업을 수행할 코드는 아래에 나열되어 있습니다
 
@@ -123,7 +123,7 @@ public @interface DocSvcConfiguration {
 }
 ```
 
-## PDF를 스트리밍할 서블릿 만들기 {#create-servlet-to-stream-the-pdf}
+## PDF {#create-servlet-to-stream-the-pdf}을(를) 스트리밍할 서블릿 만들기
 
 다음 단계는 GET 방법으로 서블릿을 만들어 사용자에게 Reader 확장 PDF를 반환하는 것입니다. 이 경우 사용자에게 파일 시스템에 PDF를 저장하라는 메시지가 표시됩니다. 이는 PDF가 동적 PDF로 렌더링되고 브라우저와 함께 제공되는 PDF 뷰어가 동적 PDF를 처리하지 않기 때문입니다.
 
@@ -203,7 +203,7 @@ public class RenderAndReaderExtend extends SlingSafeMethodsServlet {
 1. [패키지 관리자를 사용하여 이 아티클과 관련된 에셋을 다운로드하고 AEM으로 가져옵니다.](assets/renderandextendxdp.zip)
    * 이 패키지에는 샘플 포털 및 xdp 파일이 있습니다.
 1. &quot;fd-service&quot; 사용자에게 Reader 확장 인증서 추가
-1. 브라우저에서 [포털 웹 페이지 지정](http://localhost:4502/content/AemForms/ReaderExtensionsXdp.html)
+1. 브라우저를 [포털 웹 페이지](http://localhost:4502/content/AemForms/ReaderExtensionsXdp.html)로 가리킵니다.
 1. pdf 아이콘을 클릭하여 xdp를 렌더링하고 Reader Extended인 pdf를 가져옵니다.
 
 
