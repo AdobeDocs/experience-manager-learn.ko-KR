@@ -22,7 +22,7 @@ ht-degree: 0%
 ---
 
 
-# Forms 디자이너를 사용하여 레이아웃 만들기 {#create-layout-using-forms-designer}
+# Forms 디자이너 {#create-layout-using-forms-designer}를 사용하여 레이아웃 만들기
 
 이 부분에서는 AEM Forms 디자이너를 사용하여 만든 레이아웃 파일을 살펴봅니다.
 
