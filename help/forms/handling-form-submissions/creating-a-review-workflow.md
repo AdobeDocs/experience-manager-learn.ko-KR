@@ -25,13 +25,13 @@ ht-degree: 4%
 
 ## 전제 조건
 
-AEM Forms의 작업 인스턴스가 있는지 확인하십시오. AEM Forms을 설치 및 구성하려면 [설치](https://docs.adobe.com/content/help/en/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html) 가이드를 따르십시오.
+AEM Forms의 작업 인스턴스가 있는지 확인하십시오. AEM Forms을 설치하고 구성하려면 [설치 안내서](https://docs.adobe.com/content/help/en/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html)에 따르십시오.
 
 다음 비디오에서는 AEM Forms 구성 요소를 사용한 검토 및 승인 워크플로우 만들기에 대해 설명합니다
 >[!VIDEO](https://video.tv.adobe.com/v/40242/?quality=9&learn=on)
 
 
-어떤 이유로 워크플로우를 구축할 수 없는 경우 [여기에서](assets/review-submitted-data-workflow.zip) 완료된 워크플로우를 다운로드하고 패키지 관리자를 사용하여 동일한 워크플로우를 AEM 인스턴스로 가져올 수 [](http://localhost:4502/crx/packmgr/index.jsp) 있습니다.
+어떤 이유로 워크플로우를 구축할 수 없는 경우 [here](assets/review-submitted-data-workflow.zip)에서 완료된 워크플로우를 다운로드하고 [패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp)를 사용하여 동일한 워크플로우를 AEM 인스턴스로 가져올 수 있습니다.
 
 
 
