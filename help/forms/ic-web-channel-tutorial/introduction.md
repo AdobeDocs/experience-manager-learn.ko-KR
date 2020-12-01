@@ -22,7 +22,7 @@ ht-degree: 2%
 
 Interactive Communications는 AEM Forms 6.4에서 처음 도입되었습니다. 이 문서에서는 인쇄 채널용 대화형 통신을 만드는 데 필요한 단계를 안내합니다.
 
-이 기능의 실시간 데모를 보려면 [AEM Forms 샘플](https://forms.enablementadobe.com/content/samples/samples.html?query=0) 페이지를 참조하십시오.
+이 기능의 실시간 데모를 보려면 [AEM Forms 샘플](https://forms.enablementadobe.com/content/samples/samples.html?query=0) 페이지를 방문하십시오.
 
 ## 전제 조건 {#prerequistes}
 
