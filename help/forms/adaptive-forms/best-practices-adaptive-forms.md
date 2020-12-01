@@ -19,7 +19,7 @@ ht-degree: 1%
 
 # 우수 사례
 
-Adobe Experience Manager(AEM) 양식을 사용하면 복잡한 거래를 간단하고 매력적인 디지털 경험으로 탈바꿈시킬 수 있습니다. 다음 문서에서는 적응형 Forms 개발 시 수행해야 하는 몇 가지 추가 우수 사례에 대해 설명합니다. 이 문서는 [이 문서와 함께 사용됩니다.](https://helpx.adobe.com/experience-manager/6-3/forms/using/adaptive-forms-best-practices.html#Overview)
+Adobe Experience Manager(AEM) 양식을 사용하면 복잡한 거래를 간단하고 매력적인 디지털 경험으로 탈바꿈시킬 수 있습니다. 다음 문서에서는 적응형 Forms 개발 시 수행해야 하는 몇 가지 추가 우수 사례에 대해 설명합니다. 이 문서는 [이 문서](https://helpx.adobe.com/experience-manager/6-3/forms/using/adaptive-forms-best-practices.html#Overview)와 함께 사용됩니다.
 
 ## 이름 지정 규칙
 
@@ -33,10 +33,10 @@ Adobe Experience Manager(AEM) 양식을 사용하면 복잡한 거래를 간단�
    * 이름에는 문자, 숫자, 밑줄 및 달러 기호가 포함될 수 있습니다.
    * 이름은 문자로 시작해야 합니다
    * 이름은 대소문자를 구분합니다
-   * 예약된 단어(JavaScript 키워드 등)는 이름으로 사용할 수 없습니다. &quot;panel&quot;,&quot;name&quot;과 같은 다른 AF 전용 예약어에 주의하십시오.
+   * 예약된 단어(JavaScript 키워드 등)는 이름으로 사용할 수 없습니다. 기타 AF 전용 예약어(예:   를 &quot;panel&quot;,&quot;name&quot;으로 지정합니다.
    * 이름에 &quot;-&quot; 대시 포함 안 함
 * **개발 Forms**
-   * 큰 양식을 개발할 때는 양식 조각을 고려해야 합니다. 신속한 로드 시간을 위해 양식 조각 지연 로드
+   * 큰 양식을 개발할 때는 양식 조각을 고려해야 합니다. 신속한 로드를 위해 양식 조각에 대한 지연 로딩 사용   times
    * **DataModel**
       * 적응형 양식과 적절한 데이터 모델을 연결하는 것이 좋습니다
    * **개체 이벤트**
