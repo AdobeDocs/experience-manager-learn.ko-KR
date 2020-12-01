@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# AEM Forms에서 계산된 양식 데이터 모델 요소 생성{#creating-computed-form-data-model-elements-in-aem-forms}
+# AEM Forms에서 계산된 양식 데이터 모델 요소 만들기{#creating-computed-form-data-model-elements-in-aem-forms}
 
 계산된 양식 데이터 모델 요소를 사용하면 하나 이상의 양식 데이터 모델 요소에 조작 결과를 저장할 수 있습니다. 예를 들어, 임금 필드에서 수학적 연산을 수행하여 월간 급여를 계산하고 저장할 수 있습니다. 이렇게 하려면 봉급을 12로 나누고 결과를 monthlySalary라는 계산된 양식 데이터 모델 요소로 저장합니다.
 
