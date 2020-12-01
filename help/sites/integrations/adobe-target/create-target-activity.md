@@ -18,7 +18,7 @@ ht-degree: 6%
 ---
 
 
-# 경험 조각 오퍼를 사용하여 Adobe Target 활동 생성 {#target-activity-experience-fragment}
+# 경험 조각 오퍼를 사용하여 Adobe Target 활동 만들기 {#target-activity-experience-fragment}
 
 AEM 경험 조각 오퍼를 사용하여 Adobe Target 활동을 만들고 테스트하는 방법을 알아봅니다.
 
