@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# 데이터베이스에 JSON 스키마 저장 {#storing-json-schema-in-database}
+# 데이터베이스 {#storing-json-schema-in-database}에 JSON 스키마 저장
 
 
 제출된 데이터를 쿼리하려면 제출된 양식과 관련된 JSON 스키마를 저장해야 합니다. 쿼리 빌더에서 JSON 스키마를 사용하여 쿼리를 작성합니다.
