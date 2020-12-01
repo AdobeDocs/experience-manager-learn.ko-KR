@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Create a multi-language Translation Project {#create-multi-language-translation-projects}
+# 다국어 번역 프로젝트 만들기 {#create-multi-language-translation-projects}
 
 AEM 프로젝트 콘솔에서 언어 사본을 위한 다국어 번역 프로젝트를 만들고, 편집하고, 관리하는 방법을 알아봅니다
 
