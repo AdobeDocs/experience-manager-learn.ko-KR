@@ -20,7 +20,7 @@ ht-degree: 1%
 ---
 
 
-# AEM Forms에서 맞춤형 제출 {#writing-a-custom-submit-in-aem-forms}
+# AEM Forms {#writing-a-custom-submit-in-aem-forms}에 사용자 지정 제출 작성
 
 적응형 양식의 맞춤형 제출 동작을 빠르고 손쉽게 만들 수 있습니다.
 
