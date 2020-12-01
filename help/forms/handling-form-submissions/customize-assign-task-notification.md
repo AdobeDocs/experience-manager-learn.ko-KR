@@ -22,16 +22,16 @@ ht-degree: 1%
 # 작업 지정 알림 사용자 지정
 
 작업 할당 구성 요소는 워크플로우 참가자에게 작업을 할당하는 데 사용됩니다. 작업이 사용자 또는 그룹에 할당되면 정의된 사용자 또는 그룹 구성원에게 이메일 알림이 전송됩니다.
-이 전자 메일 알림은 일반적으로 작업과 관련된 동적 데이터를 포함합니다. 시스템에서 생성된 [메타데이터 속성을 사용하여 이 동적 데이터를 가져옵니다](https://docs.adobe.com/content/help/en/experience-manager-65/forms/publish-process-aem-forms/use-metadata-in-email-notifications.html#using-system-generated-metadata-in-an-email-notification).
+이 전자 메일 알림은 일반적으로 작업과 관련된 동적 데이터를 포함합니다. 이 동적 데이터는 시스템에서 생성된 [메타데이터 속성](https://docs.adobe.com/content/help/en/experience-manager-65/forms/publish-process-aem-forms/use-metadata-in-email-notifications.html#using-system-generated-metadata-in-an-email-notification)을 사용하여 가져옵니다.
 제출된 양식 데이터의 값을 이메일 알림에 포함하려면 사용자 지정 메타데이터 속성을 만든 다음 이 사용자 지정 메타데이터 속성을 이메일 템플릿에서 사용해야 합니다
 
 
 
 ## 사용자 지정 메타데이터 속성 만들기
 
-권장되는 방법은 WorkitemUserMetadataService의 getUserMetadata 메서드를 구현하는 [OSGI 구성 요소를 만드는 것입니다](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/workspace/service/external/WorkitemUserMetadataService.html#getUserMetadataMap--)
+권장되는 방법은 [WorkitemUserMetadataService](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/workspace/service/external/WorkitemUserMetadataService.html#getUserMetadataMap--)의 getUserMetadata 메서드를 구현하는 OSGI 구성 요소를 만드는 것입니다
 
-다음 코드는 4개의 메타데이터 속성(_firstName_,_lastName__,_ reason _및_ amountReastedProxed)을 만들고 제출된 데이터에서 해당 값을 설정합니다. 예를 들어 메타데이터 속성 _firstName_&#x200B;의 값은 제출된 데이터에서 firstName이라는 요소의 값으로 설정됩니다. 다음 코드에서는 응용 양식의 제출된 데이터가 xml 형식으로 되어 있다고 가정합니다. JSON 스키마 또는 양식 데이터 모델을 기반으로 하는 적응형 Forms은 JSON 포맷으로 데이터를 생성합니다.
+다음 코드는 4개의 메타데이터 속성(_firstName_,_lastName_,_reason_ 및 _amountRequested_)을 만들고 제출된 데이터에서 해당 값을 설정합니다. 예를 들어 메타데이터 속성 _firstName_&#39;s 값은 제출된 데이터에서 firstName이라는 요소의 값으로 설정됩니다. 다음 코드에서는 응용 양식의 제출된 데이터가 xml 형식으로 되어 있다고 가정합니다. JSON 스키마 또는 양식 데이터 모델을 기반으로 하는 적응형 Forms은 JSON 포맷으로 데이터를 생성합니다.
 
 
 ```java
@@ -113,7 +113,7 @@ return customMetadataMap;
 
 ## 작업 알림 이메일 템플릿에서 사용자 지정 메타데이터 속성 사용
 
-email 템플릿에서 amountRequested가 메타데이터 속성인 다음 구문을 사용하여 메타데이터 속성을 포함할 수 있습니다 `${amountRequested}`
+이메일 템플릿에서 amountRequested가 메타데이터 속성 `${amountRequested}`인 다음 구문을 사용하여 메타데이터 속성을 포함할 수 있습니다.
 
 ## 사용자 지정 메타데이터 속성을 사용하도록 지정 작업 구성
 
@@ -129,10 +129,10 @@ OSGi 구성 요소가 AEM 서버에 작성 및 배포된 후 사용자 지정 �
 ## 서버에서 이 기능을 사용해 보려면
 
 * [일 CQ 메일 서비스 구성](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)
-* 올바른 전자 메일 ID를 [관리자 사용자와 연결](http://localhost:4502/security/users.html)
-* 패키지 관리자를 사용하여 [워크플로우 및 알림 템플릿](assets/workflow-and-task-notification-template.zip) 다운로드 및 [설치](http://localhost:4502/crx/packmgr/index.jsp)
-* 적응형 [양식을](assets/request-travel-authorization.zip) 다운로드하고 [양식 및 문서 ui에서 AEM으로 가져올 수 있습니다](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
-* [웹 콘솔을 사용하여](assets/work-items-user-service-bundle.jar) 맞춤형 번들 [배포 및 시작](http://localhost:4502/system/console/bundles)
+* 유효한 이메일 ID를 [admin user](http://localhost:4502/security/users.html)과 연결
+* [패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp)를 사용하여 [Workflow-and-notification-template](assets/workflow-and-task-notification-template.zip)을 다운로드하고 설치합니다
+* [적응형 양식](assets/request-travel-authorization.zip)을 다운로드하고 [양식 및 문서 ui](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)에서 AEM으로 가져옵니다.
+* [웹 콘솔](http://localhost:4502/system/console/bundles)을 사용하여 [사용자 지정 번들](assets/work-items-user-service-bundle.jar)을 배포하고 시작합니다.
 * [양식 미리 보기 및 제출](http://localhost:4502/content/dam/formsanddocuments/requestfortravelauhtorization/jcr:content?wcmmode=disabled)
 
 양식 제출 작업 할당 알림은 관리자 사용자와 연결된 이메일 ID로 전송됩니다. 다음 스크린샷은 작업 할당 알림을 샘플링하는 것을 보여줍니다
