@@ -26,5 +26,5 @@ Adobe Experience Manager은 사용자에게 AEM에 대한 사용자 정의 가�
 
 ## 추가 리소스
 
-+ [클라우드 서비스로서의 Adobe Experience Manager에 대한 IMS 지원](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/security/ims-support.html)
++ [Adobe Experience Manager as a Cloud Service에 대한 IMS 지원](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/security/ims-support.html)
 + [AEM 제공 사용자 그룹 및 해당 권한](https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/security.html#built-in-users-and-groups)
