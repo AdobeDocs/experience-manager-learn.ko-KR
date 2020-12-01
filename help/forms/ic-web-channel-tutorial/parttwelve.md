@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# 웹 채널 문서 전달 설정 {#setting-up-the-delivery-of-web-channel-document}
+# 웹 채널 문서 {#setting-up-the-delivery-of-web-channel-document} 배달 설정
 
 
 이 부분에서는 이메일을 통한 웹 채널 문서 전달을 살펴봅니다.
@@ -71,4 +71,4 @@ AEM Forms에 로그인합니다.
 
 >[!NOTE]
 >
->crx에 있는 /apps/AEMForms/fetchad/GET.jsp **** 파일을 살펴보십시오. 문자열 변수 webChannelDocument가 올바른 통신 문서 경로를 가리키는지 확인하십시오.
+>crx의 **/apps/AEMForms/fetchad/GET.jsp** 파일을 살펴보십시오. 문자열 변수 webChannelDocument가 올바른 통신 문서 경로를 가리키는지 확인하십시오.
