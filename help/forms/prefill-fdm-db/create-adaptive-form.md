@@ -22,30 +22,30 @@ ht-degree: 1%
 
 지금까지 다음을 만들었습니다.
 
-* 2개의 테이블이 있는 데이터베이스 - `newhire` 및 `beneficiaries`
+* 테이블 2개가 있는 데이터베이스 - `newhire` 및 `beneficiaries`
 * Apache Sling 연결 풀링된 DataSource 구성
 * RDBMS 기반 양식 데이터 모델
 
-다음 단계는 양식 데이터 모델을 사용하도록 적응형 양식을 만들고 구성하는 것입니다.  샘플 양식을 [다운로드하여 가져올](assets/fdm-demo-af.zip) 수 있습니다. 샘플 양식에는 직원 세부 사항을 표시하는 섹션과 사원의 수익자를 나열하는 다른 섹션이 있습니다.
+다음 단계는 양식 데이터 모델을 사용하도록 적응형 양식을 만들고 구성하는 것입니다.  [샘플 양식을 다운로드하여 가져올 수 있습니다. ](assets/fdm-demo-af.zip) 샘플 양식에는 직원 세부 사항을 표시하는 섹션과 사원의 수익자를 나열하는 다른 섹션이 있습니다.
 
 ## 양식 데이터 모델과 양식 연결
 
 이 강좌와 함께 제공된 샘플 양식은 양식 데이터 모델과 연결되어 있지 않습니다. 양식 데이터 모델을 사용하도록 양식을 구성하려면 다음을 수행해야 합니다.
 
 * FDMDemo 양식 선택
-* 속성 _->_&#x200B;양식&#x200B;_모델을 클릭합니다._
+* _속성_->_양식 모델_&#x200B;을 클릭합니다.
 * 드롭다운 목록에서 양식 데이터 모델 선택
 * 이전 단원에서 만든 양식 데이터 모델을 검색하고 선택합니다.
-* Click on _Save &amp; Close_
+* _저장 및 닫기_&#x200B;를 클릭합니다.
 
 ## 자동 완성 서비스 구성
 
 첫 번째 단계는 양식 자동 완성 서비스를 연결하는 것입니다. 자동 완성 서비스를 연결하려면 아래 단계를 따르십시오
 
-* 양식 `FDMDemo` 선택
-* 편집 _을_ 클릭하여 편집 모드에서 양식을 엽니다
+* `FDMDemo` 양식 선택
+* _편집_&#x200B;을 클릭하여 편집 모드에서 양식을 엽니다.
 * 컨텐츠 계층 구조에서 양식 컨테이너를 선택하고 렌치 아이콘을 클릭하여 속성 시트를 엽니다
-* 자동 _채우기 서비스_ 드롭다운 목록에서 양식 데이터 모델 자동 채우기 서비스를 선택합니다.
+* 자동 완성 서비스 드롭다운 목록에서 _양식 데이터 모델 자동 완성 서비스_&#x200B;를 선택합니다.
 * 파란색을 ☑ 클릭하여 변경 내용을 저장합니다
 
 * ![프리필서비스](assets/fdm-prefill.png)
@@ -71,7 +71,7 @@ ht-degree: 1%
 * 편집 모드에서 양식을 엽니다.
 * 루트 패널->수혜자->표 확장
 * 1행을 선택하고 렌치 아이콘을 클릭하여 속성 시트를 엽니다.
-* 바인딩 참조를 **/whire/GetEmployeeBenefiers로 설정**
+* 바인딩 참조를 **/newhire/GetEmployeeBenefiers**&#x200B;로 설정합니다.
 * 반복 설정 - 최소 카운트를 1로, 최대 카운트를 5로 설정합니다.
 * Row1 구성은 아래 스크린샷과 같아야 합니다.
    ![row-configure](assets/configure-row.PNG)
@@ -95,7 +95,9 @@ ht-degree: 1%
 
 ## 양식 테스트
 
-이제 url에 적절한 empID가 있는 양식을 열어야 합니다. 다음 2개의 링크를 통해 데이터베이스[양식 정보를 empID=207](http://localhost:4502/content/dam/formsanddocuments/fdmdemo/jcr:content?wcmmode=disabled&amp;empID=207)[Form의 empID=208로 양식 채우기](http://localhost:4502/content/dam/formsanddocuments/fdmdemo/jcr:content?wcmmode=disabled&amp;empID=208)
+이제 url에 적절한 empID가 있는 양식을 열어야 합니다. 다음 2개의 링크가 데이터베이스의 정보로 양식을 채웁니다
+[empID가 있는 양식=207](http://localhost:4502/content/dam/formsanddocuments/fdmdemo/jcr:content?wcmmode=disabled&amp;empID=207)
+[empID가 있는 양식=208](http://localhost:4502/content/dam/formsanddocuments/fdmdemo/jcr:content?wcmmode=disabled&amp;empID=208)
 
 ## 문제 해결
 
