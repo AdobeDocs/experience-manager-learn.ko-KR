@@ -22,7 +22,7 @@ ht-degree: 7%
 
 >[!VIDEO](https://video.tv.adobe.com/v/18897/?quality=9&learn=on)
 
-이 비디오에서는 We.Retail 샘플 웹 사이트를 사용하여 소셜 미디어 공유 구성 요소( [AEM 핵심 구성 요소의](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)일부)의 다음 [기능을](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail#weretail) 살펴볼 수 있습니다.
+이 비디오는 [We.Retail](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail#weretail) 샘플 웹 사이트를 사용하여 소셜 미디어 공유 구성 요소([AEM 핵심 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)의 일부)의 다음 기능을 탐색합니다.
 
 * 0:00 - 소셜 미디어 공유 구성 요소 추가 및 구성
 * 1:00 - Facebook에 공유
@@ -35,9 +35,9 @@ ht-degree: 7%
 
 [http://localhost:4502/system/console/configMgr/com.day.cq.commons.impl.ExternalizerImpl](http://localhost:4502/system/console/configMgr/com.day.cq.commons.impl.ExternalizerImpl)
 
-[AEM externalizer를](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/externalizer.html) AEM 작성자 및 AEM 게시 모두에서 설정해야 게시 실행 모드를 AEM 게시 게시에 액세스하는 데 사용되는 공개적으로 액세스할 수 있는 도메인에 매핑합니다.
+[AEM externalizerr](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/externalizer.html) 은 AEM 작성자 및 AEM 게시 모두에서 설정하여 게시 실행 모드를 AEM 게시에 액세스하는 데 사용되는 공개적으로 액세스 가능한 도메인에 매핑해야 합니다.
 
-이 비디오 `/etc/hosts` 에서는 www.example.com *을 스푸핑* 을 사용하여 로컬 호스트를 확인하고 [기본 AEM 디스패처 구성을](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/getting-started/dispatcher-install.html) 사용하여 www.example.com에서 AEM 게시를 앞지르게 합니다.
+이 비디오에서는 `/etc/hosts`을(를) 사용하여 *www.example.com*&#x200B;를 스푸핑(localhost)으로 확인하고, www.example.com을 AEM 게시 앞에 놓도록 허용하는 [기본 AEM 디스패처 구성](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/getting-started/dispatcher-install.html)을(를) 사용합니다.
 
 ## 지원 자료 {#supporting-materials}
 
