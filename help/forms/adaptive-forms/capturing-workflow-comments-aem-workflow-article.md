@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# 적응형 Forms Workflow에서 워크플로우 주석 캡처{#capturing-workflow-comments-in-adaptive-forms-workflow}
+# 응용 Forms Workflow{#capturing-workflow-comments-in-adaptive-forms-workflow}에서 워크플로우 주석 캡처
 
 >[AEM Forms 6.4에만 적용됩니다. AEM Forms 6.5에서는 변수 기능을 사용하여 이 사용 사례를 만드십시오]
 
@@ -28,9 +28,9 @@ ht-degree: 0%
 
 이러한 요구 사항을 충족하기 위해 주석을 캡처하고 이러한 주석을 워크플로우 메타데이터 속성으로 저장하는 데 사용할 수 있는 샘플 OSGi 번들이 제공됩니다.
 
-다음 스크린샷은 [AEM Workflow에서](http://localhost:4502/editor.html/conf/global/settings/workflow/models/CaptureComments.html) 프로세스 단계를 사용하여 주석을 캡처하고 메타데이터 속성으로 저장하는 방법을 보여줍니다. &quot;Capture Workflow Comments&quot;는 프로세스 단계에서 사용해야 하는 java 클래스의 이름입니다. 주석을 저장할 메타데이터 속성 이름을 전달해야 합니다. 아래 스크린샷에서 managerComments는 주석을 저장할 메타데이터 속성입니다.
+다음 스크린샷은 [AEM Workflow](http://localhost:4502/editor.html/conf/global/settings/workflow/models/CaptureComments.html)의 프로세스 단계를 사용하여 주석을 캡처하고 메타데이터 속성으로 저장하는 방법을 보여줍니다. &quot;Capture Workflow Comments&quot;는 프로세스 단계에서 사용해야 하는 java 클래스의 이름입니다. 주석을 저장할 메타데이터 속성 이름을 전달해야 합니다. 아래 스크린샷에서 managerComments는 주석을 저장할 메타데이터 속성입니다.
 
-![workflowcomments1](assets/workflowcomments1.gif)
+![workflcomments1](assets/workflowcomments1.gif)
 
 시스템에서 이 기능을 테스트하려면 다음 단계를 따르십시오.
 * [워크플로우의 프로세스 단계가 Capture Workflow 주석을 사용하도록 구성되었는지 확인합니다.](http://localhost:4502/editor.html/conf/global/settings/workflow/models/CaptureComments.html)
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 * [SetValue 번들을 배포합니다](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). 이 번들에는 주석을 캡처하고 메타데이터 속성으로 저장하는 샘플 코드가 포함되어 있습니다
 
-* [이 아티클과 관련된 에셋을 파일 시스템에 다운로드 및 압축 해제하십시오. 에셋에는 워크플로우 모델 및 샘플 적응형 양식이 포함되어 있습니다](assets/capturecomments.zip) .
+* [이 아티클과 관련된 에셋을 파일 ](assets/capturecomments.zip) 시스템에 다운로드 및 압축 해제에셋에는 워크플로우 모델과 샘플 응용 양식이 포함되어 있습니다.
 
 * 패키지 관리자를 사용하여 2개의 zip 파일을 AEM으로 가져오기
 
