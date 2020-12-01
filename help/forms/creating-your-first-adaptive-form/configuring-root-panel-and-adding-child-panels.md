@@ -22,9 +22,9 @@ ht-degree: 0%
 ---
 
 
-# 루트 패널에 하위 패널 추가 {#adding-child-panels-to-root-panel}
+# 루트 패널 {#adding-child-panels-to-root-panel}에 하위 패널 추가
 
-루트 패널에 하위 패널을 추가할 때 편집 **모드인지 확인하십시오. 편집 단추는 브라우저의 오른쪽 상단에 있습니다.**
+루트 패널에 하위 패널을 추가할 때 **편집 모드에 있는지 확인하십시오. 편집 단추는 브라우저의 오른쪽 상단에 있습니다.**
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/28536?quality=9&learn=on)
