@@ -19,7 +19,7 @@ ht-degree: 23%
 ---
 
 
-# Using Dynamic Media Viewers with Adobe Analytics and Adobe Launch{#using-dynamic-media-viewers-adobe-analytics-launch}
+# Adobe Analytics 및 Adobe 론치와 함께 동적 미디어 뷰어 사용{#using-dynamic-media-viewers-adobe-analytics-launch}
 
 다이내믹 미디어 및 Adobe Analytics을 사용하는 고객의 경우 이제 다이내믹 미디어 뷰어 익스텐션을 사용하여 웹 사이트에서 다이내믹 미디어 뷰어의 사용을 추적할 수 있습니다.
 
@@ -27,7 +27,7 @@ ht-degree: 23%
 
 >[!NOTE]
 >
-> 이 기능을 사용하려면 Dynamic Media Scene7 모드에서 Adobe Experience Manager을 실행합니다. 또한 AEM 인스턴스와 [Adobe Experience Platform Launch을 통합해야 합니다](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/adobe-launch-integration-tutorial-understand.html).
+> 이 기능을 사용하려면 Dynamic Media Scene7 모드에서 Adobe Experience Manager을 실행합니다. 또한 [Adobe Experience Platform Launch을 AEM 인스턴스](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/adobe-launch-integration-tutorial-understand.html)와 통합해야 합니다.
 
 Dynamic Media Viewer 익스텐션이 도입되면서 이제 Dynamic Media 뷰어(5.13)와 함께 제공되는 자산에 대한 고급 분석 지원을 통해 Dynamic Media Viewer가 사이트 페이지에서 사용될 때 이벤트 추적을 보다 세밀하게 제어할 수 있습니다.
 
