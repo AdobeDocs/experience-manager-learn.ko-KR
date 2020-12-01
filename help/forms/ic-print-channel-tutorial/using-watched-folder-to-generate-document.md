@@ -29,11 +29,11 @@ ht-degree: 0%
 
 AEM에서 감시 폴더를 구성할 때 파일을 감시 폴더에 드롭할 때 실행되는 ECMA 스크립트 또는 java 코드를 연결합니다. 이 문서에서는 인쇄 채널 문서를 생성하여 파일 시스템에 저장하는 ECMA 스크립트에 중점을 둡니다.
 
-감시 폴더 구성 및 ECMA 스크립트는 이 자습서를 [시작할 때 가져온 자산의 일부입니다](introduction.md)
+감시 폴더 구성 및 ECMA 스크립트는 이 자습서[의 시작 부분에서 가져온 자산의 일부입니다](introduction.md)
 
 감시 폴더에 드롭된 입력 파일의 구조는 다음과 같습니다. ECMA 스크립트는 계정 번호를 읽고 이러한 각 계정에 대해 인쇄 채널 문서를 생성합니다.
 
-문서 생성을 위한 ECMA 스크립트에 대한 자세한 내용은 이 문서를 [참조하십시오.](/help/forms/interactive-communications/generating-interactive-communications-print-document-using-api-tutorial-use.md)
+문서 생성을 위한 ECMA 스크립트에 대한 자세한 내용은 [이 문서](/help/forms/interactive-communications/generating-interactive-communications-print-document-using-api-tutorial-use.md)를 참조하십시오.
 
 ```xml
 <accountnumbers>
