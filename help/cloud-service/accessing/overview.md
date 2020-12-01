@@ -24,22 +24,22 @@ CLOUD SERVICE은 AEM 애플리케이션을 활용하는 클라우드 기본 방�
 
 ## Adobe IMS 사용자
 
-AEM 작성자 서비스에 액세스해야 하는 사용자는 [Adobe의 AdminConsole에서](https://helpx.adobe.com/kr/enterprise/using/set-up-identity.html) Adobe IMS 사용자로 [관리됩니다](https://adminconsole.adobe.com). Adobe IMS 사용자가 어떤 상태이고 Admin Console에서 액세스 및 관리되는 방법에 대해 알아보십시오.
+AEM 작성자 서비스에 액세스해야 하는 사용자는 [Adobe IMS로 관리됩니다. [Adobe의 AdminConsole](https://adminconsole.adobe.com)에서 사용자](https://helpx.adobe.com/kr/enterprise/using/set-up-identity.html)이(가) 관리됩니다. Adobe IMS 사용자가 어떤 상태이고 Admin Console에서 액세스 및 관리되는 방법에 대해 알아보십시오.
 
 [Adobe IMS 사용자에 대한 자세한 내용](./adobe-ims-users.md)
 
 ## Adobe IMS 사용자 그룹
 
-AEM 작성자 서비스에 액세스하는 사용자는 [Adobe의 AdminConsole에서](https://helpx.adobe.com/enterprise/using/user-groups.html) Adobe IMS 사용자 그룹을 [사용하여 논리 그룹으로 구성해야 합니다](https://adminconsole.adobe.com). Adobe IMS 사용자 그룹은 AEM에 직접 권한 또는 액세스 권한을 제공하지 않지만( [Adobe IMS 제품 프로필의](#adobe-ims-product-profiles)작업), AEM 그룹 및 권한을 사용하여 AEM 작성자 서비스의 특정 액세스 수준으로 변환할 수 있는 사용자의 논리적 그룹을 정의하는 좋은 방법입니다.
+AEM 작성자 서비스에 액세스하는 사용자는 [Adobe IMS를 사용하여 논리 그룹으로 구성되어야 합니다. [Adobe의 AdminConsole](https://adminconsole.adobe.com)에서 사용자 그룹](https://helpx.adobe.com/enterprise/using/user-groups.html)을(를) 사용해야 합니다. Adobe IMS 사용자 그룹은 AEM에 대한 직접 권한 또는 액세스 권한을 제공하지 않습니다(이것은 [Adobe IMS 제품 프로필](#adobe-ims-product-profiles)). 그러나, AEM 그룹 및 권한을 사용하여 AEM 작성자 서비스에서 특정 수준의 액세스 권한으로 변환할 수 있는 사용자의 논리적 그룹을 정의하는 좋은 방법입니다.
 
 [Adobe IMS 사용자 그룹에 대한 자세한 내용](./adobe-ims-user-groups.md)
 
 ## Adobe IMS 제품 프로필
 
-[Adobe IMS 제품 프로필](https://helpx.adobe.com/enterprise/using/manage-permissions-and-roles.html)은 [Adobe AdminConsole](https://adminconsole.adobe.com)에서 관리되며, 기본 액세스 수준에서 AEM 작성자 서비스에 로그인하기 위한 [Adobe IMS 사용자](#adobe-ims-users) 액세스 권한을 제공하는 정비기입니다.
+[Adobe IMS 제품 프로필](https://helpx.adobe.com/enterprise/using/manage-permissions-and-roles.html)은  [Adobe AdminConsole](https://adminconsole.adobe.com)에서  [관리되며, 기본 액세스 수준에서 AEM 작성자 서비스에 로그인하기 위한 액세스](#adobe-ims-users) 를 제공하는 정비기입니다.
 
-+ AEM __사용자__ 제품 프로필은 사용자에게 AEM 기여자 그룹의 멤버십을 통해 AEM에 대한 읽기 전용 액세스 권한을 제공합니다.
-+ AEM 관리자 ____ 제품 프로필은 사용자에게 AEM에 대한 모든 관리 액세스 권한을 제공합니다.
++ __AEM 사용자__ 제품 프로필은 사용자에게 AEM 기여자 그룹의 멤버십을 통해 AEM에 대한 읽기 전용 액세스 권한을 제공합니다.
++ __AEM 관리자__ 제품 프로필은 사용자에게 AEM에 대한 모든 관리 액세스 권한을 제공합니다.
 
 [Adobe IMS 제품 프로필에 대한 자세한 내용](./adobe-ims-product-profiles.md)
 
@@ -57,7 +57,7 @@ Adobe AdminConsole에서 Adobe IMS 사용자, 사용자 그룹 및 제품 프로
 
 ## 추가 Adobe Admin Console 리소스
 
-다음 설명서에서는 Adobe Admin Console을 더 잘 이해하고를 사용하여 사용자를 관리하고 Experience Cloud 제품 간에 액세스하도록 도울 수 있는 [Adobe Admin Console](https://adminconsole.adobe.com)관련 세부 사항과 문제를 다룹니다.
+다음 설명서에서는 [Adobe Admin Console](https://adminconsole.adobe.com) 특정 세부 사항과 Adobe Admin Console을 더 잘 이해하고 이를 사용하여 사용자를 관리하고 Experience Cloud 제품 간에 액세스하도록 도울 수 있는 사항을 다룹니다.
 
 + [Adobe Admin Console ID 개요](https://helpx.adobe.com/enterprise/using/identity.html)
 + [Adobe Admin Console 관리자 역할](https://helpx.adobe.com/enterprise/using/admin-roles.html)
