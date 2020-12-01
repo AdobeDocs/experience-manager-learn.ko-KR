@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# AEM Forms에서 서비스 데이터 모델 사용{#using-service-data-models-with-aem-forms}
+# 서비스 데이터 모델을 AEM Forms과 함께 사용{#using-service-data-models-with-aem-forms}
 
 AEM Adaptive Forms의 규칙 편집기는 양식 데이터 모델에서 생성된 서비스를 활용할 수 있습니다.
 
