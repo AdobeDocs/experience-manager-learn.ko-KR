@@ -20,12 +20,12 @@ ht-degree: 0%
 
 이 비디오에서는 AEM에 도입된 에셋 검색에 대한 개선 사항을 살펴봅니다. 작성자는 각 메타데이터 속성을 업데이트하여 키워드 검색 결과의 특정 자산을 늘릴 수 있습니다. 또한 Assets OmniSearch 예측자에 대한 일부 고급 구성도 살펴보십시오.
 
-## 자산 메타데이터로 검색 활성화 {#search-boost-asset}
+## 자산 메타데이터로 검색 부풀려짐 {#search-boost-asset}
 
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=9&learn=on)
 
-## 다중 값 및 태그 검색 예측자의 고급 구성 {#multi-value-tag-predicates}
+## 다중 값 및 태그 검색 예측자의 고급 구성{#multi-value-tag-predicates}
 
-여러 **값 검색 조건자를** 검색 결과에서 쉽게 텍스트를 일치시킬 수 있습니다. 자산 검색 결과를 보다 효율적으로 필터링하기 위해 태그 설명 몇 가지를 개선했습니다.
+검색 결과에서 텍스트 일치를 쉽게 찾기 위해 **다중 값 검색 조건자**&#x200B;를 사용할 수 있습니다. 자산 검색 결과를 보다 효율적으로 필터링하기 위해 태그 설명 몇 가지를 개선했습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16457/?quality=9&learn=on)
