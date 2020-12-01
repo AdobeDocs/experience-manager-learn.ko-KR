@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Live Copy 및 Blue Print {#livecopy-blueprint}
+# Live Copy 및 파란색 인쇄 {#livecopy-blueprint}
 
 AEM Sites에서 Live Copy와 블루프린트 간의 관계를 파악합니다.
 
