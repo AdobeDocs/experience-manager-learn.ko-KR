@@ -21,7 +21,7 @@ ht-degree: 0%
 ---
 
 
-# AEM Dynamic Media에서 사용자 정의 비디오 축소판 사용{#using-custom-video-thumbnail-with-aem-dynamic-media}
+# AEM Dynamic Media에서 사용자 지정 비디오 축소판 사용{#using-custom-video-thumbnail-with-aem-dynamic-media}
 
 AEM Assets 사용자 정의 비디오 축소판은 작성자가 생성된 축소판 세트에서 해당 축소판을 선택할 수 있는 기능을 제공합니다. 비디오에 대해 생성된 축소판 수는 손쉽게 사용자 정의할 수 있습니다.
 
@@ -33,4 +33,4 @@ AEM Assets 사용자 정의 비디오 축소판은 작성자가 생성된 축소
 
 >[!NOTE]
 >
->다이내믹 미디어 모드에서 [AEM 인스턴스를 실행해야](https://docs.adobe.com/docs/en/aem/6-3/administer/content/dynamic-media/config-dynamic.html) 합니다
+>Dynamic Media](https://docs.adobe.com/docs/en/aem/6-3/administer/content/dynamic-media/config-dynamic.html) 모드에서 [AEM 인스턴스를 실행해야 합니다.
