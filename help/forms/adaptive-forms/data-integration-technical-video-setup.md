@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# AEM Forms과 데이터 통합 설정 {#set-up-data-integration-with-aem-forms}
+# AEM Forms {#set-up-data-integration-with-aem-forms}과(와) 데이터 통합 설정
 
 JDBC 데이터 소스에 데이터 연결 설정
 
@@ -34,5 +34,5 @@ JDBC 데이터 소스에 데이터 연결 설정
 
 * [MySQL JDBC OSGi 번들 다운로드](https://dev.mysql.com/downloads/connector/j/)
 
-   * [AEM 웹 콘솔을 통해 JAR 파일을 다운로드, 압축 해제 및 설치](http://localhost:4502/system/console/bundles)
+   * [AEM 웹 콘솔](http://localhost:4502/system/console/bundles)을 통해 JAR 파일을 다운로드, 압축 해제 및 설치합니다
 
