@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->AEM Forms 6.5를 사용하는 경우 자동화된 Forms 변환 기능을 사용하십시오.
+>AEM Forms 6.5를 사용하는 경우 Automated forms conversion 기능을 사용하십시오.
 
 ## 전제 조건
 
@@ -32,12 +32,12 @@ ht-degree: 0%
 
 ### 시스템에서 이 기능을 사용하려면 다음이 필요합니다.
 
-* Felix [Web Console을 사용하여 번들 다운로드 및 배포](http://localhost:4502/system/console/bundles)
+* [Felix Web Console](http://localhost:4502/system/console/bundles)을 사용하여 번들 다운로드 및 배포
 * [DocumentServicesBundle](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
 * [DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 * [AcroFormsToAEMFormsBundle](https://forms.enablementadobe.com/content/DemoServerBundles/AcroFormToAEMForm.core-1.0-SNAPSHOT.jar)
 * [이 패키지를 다운로드하여 AEM으로 가져옵니다](assets/acro-form-aem-form.zip). 이 패키지에는 Acrobat에서 XSD를 만드는 샘플 작업 과정 및 html 페이지가 포함되어 있습니다
-* configMgr을 [엽니다.](http://localhost:4502/system/console/configMgr)
+* [configMgr](http://localhost:4502/system/console/configMgr) 열기
    * &#39;Apache Sling Service User Mapper Service&#39;를 검색하고 클릭하여 속성을 엽니다.
    * 다음 서비스 매핑을 추가하려면 `+` 아이콘(더하기)을 클릭합니다
       * `DevelopingWithServiceUser.core:getresourceresolver=data`
