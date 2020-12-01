@@ -26,7 +26,7 @@ AEM의 Cloud Service 워터마크 기능을 사용하면 모든 PNG 이미지를
 
 ## OSGi 구성
 
-다음 OSGi 구성 부본을 업데이트하여 AEM 프로젝트의 하위 프로젝트에 추가할 수 `ui.config` 있습니다.
+다음 OSGi 구성 부본을 업데이트하여 AEM 프로젝트의 `ui.config` 하위 프로젝트에 추가할 수 있습니다.
 
 `/apps/example/osgiconfig/config.author/com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json`
 
