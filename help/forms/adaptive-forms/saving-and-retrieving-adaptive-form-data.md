@@ -212,7 +212,7 @@ public class StoreDataInDB extends SlingAllMethodsServlet {
 }
 ```
 
-## 데이터를 가져오기 위한 OSGI 서비스 만들기 {#create-osgi-service}
+## 데이터 가져오기 {#create-osgi-service}에 대한 OSGI 서비스 만들기
 
 다음 코드는 저장된 응용 양식 데이터를 가져오기 위해 작성되었습니다. 단순 쿼리는 주어진 GUID와 연결된 응용 양식 데이터를 가져오는 데 사용됩니다. 그러면 가져온 데이터가 호출 응용 프로그램으로 돌아갑니다. 이 코드에서 참조되는 첫 번째 단계에서 만든 동일한 데이터 소스입니다.
 
@@ -405,7 +405,7 @@ $(document).ready(function()
 });
 ```
 
-## 적응형 양식 템플릿 및 페이지 구성 요소 만들기 {#form-template-and-page-component}
+## 적응형 양식 템플릿 만들기 및 페이지 구성 요소 {#form-template-and-page-component}
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/27828?quality=9&learn=on)
@@ -414,7 +414,7 @@ $(document).ready(function()
 
 >[!VIDEO](https://video.tv.adobe.com/v/27829?quality=9&learn=on)
 
-#### 서버에 배포 {#deploy-on-your-server}
+#### 서버 {#deploy-on-your-server}에 배포
 
 AEM Forms 인스턴스에서 이 기능을 테스트하려면 다음 단계를 수행하십시오
 
