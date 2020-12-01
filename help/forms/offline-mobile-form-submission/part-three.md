@@ -20,7 +20,7 @@ ht-degree: 2%
 
 # 제출된 PDF 검토 및 승인 워크플로우
 
-마지막 단계와 마지막 단계는 AEM 워크플로우를 만들어 검토 및 승인을 위해 정적이거나 비대화형 PDF를 생성합니다. 워크플로우는 노드에 구성된 AEM Launcher를 통해 트리거됩니다 `/content/pdfsubmissions`.
+마지막 단계와 마지막 단계는 AEM 워크플로우를 만들어 검토 및 승인을 위해 정적이거나 비대화형 PDF를 생성합니다. 워크플로우는 `/content/pdfsubmissions` 노드에 구성된 AEM Launcher를 통해 트리거됩니다.
 
 다음 스크린샷은 워크플로우와 관련된 단계를 보여줍니다.
 
@@ -28,16 +28,16 @@ ht-degree: 2%
 
 ## 비대화형 PDF 워크플로우 생성 단계
 
-XDP 템플릿 및 템플릿과 병합할 데이터는 여기에 지정됩니다. 병합할 데이터는 PDF에서 제출한 데이터입니다. 이 제출된 데이터는 노드 아래에 저장됩니다 `/content/pdfsubmissions`.
+XDP 템플릿 및 템플릿과 병합할 데이터는 여기에 지정됩니다. 병합할 데이터는 PDF에서 제출한 데이터입니다. 이 전송된 데이터는 노드 `/content/pdfsubmissions`에 저장됩니다.
 
-![workflow](assets/generate-pdf1.PNG)
+![워크플로우](assets/generate-pdf1.PNG)
 
-생성된 PDF는 `submittedPDF`
+생성된 PDF가 `submittedPDF`이라는 워크플로우 변수에 할당됩니다.
 
-![workflow](assets/generate-pdf2.PNG)
+![워크플로우](assets/generate-pdf2.PNG)
 
 ### 검토 및 승인을 위해 생성된 pdf 할당
 
-작업 워크플로우 지정 구성 요소는 여기에서 검토 및 승인을 위해 생성된 PDF를 할당하는 데 사용됩니다. 이 변수 `submittedPDF` 는 작업 할당 워크플로우 구성 요소의 Forms 및 문서 탭에서 사용됩니다.
+작업 워크플로우 지정 구성 요소는 여기에서 검토 및 승인을 위해 생성된 PDF를 할당하는 데 사용됩니다. `submittedPDF` 변수는 작업 할당 워크플로우 구성 요소의 Forms 및 문서 탭에서 사용됩니다.
 
-![workflow](assets/assign-task.PNG)
+![워크플로우](assets/assign-task.PNG)
