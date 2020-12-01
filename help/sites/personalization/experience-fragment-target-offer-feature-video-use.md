@@ -21,7 +21,7 @@ ht-degree: 11%
 ---
 
 
-# Adobe Target 내에서 경험 조각 오퍼 사용{#using-experience-fragment-offers-within-adobe-target}
+# Adobe Target{#using-experience-fragment-offers-within-adobe-target} 내에서 경험 조각 오퍼 사용
 
 Adobe Experience Manager 6.4는 AEM과 Target 간의 개인화 워크플로우를 혁신합니다. 이제 AEM에서 만든 경험을 HTML 오퍼로 Adobe Target에 직접 전달할 수 있습니다. 이를 통해 마케터는 다양한 채널에서 컨텐츠를 원활하게 테스트하고 개인화할 수 있습니다.
 
