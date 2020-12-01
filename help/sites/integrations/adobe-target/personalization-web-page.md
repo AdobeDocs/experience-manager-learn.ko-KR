@@ -36,27 +36,27 @@ WKND 사이트는 홈 페이지를 다시 설계했으며 현재 홈 페이지 �
 ## VEC(Visual Experience Composer)를 사용하여 A/B 테스트를 만드는 절차
 
 1. Adobe Target에 로그인하고 활동 탭으로 이동합니다.
-1. 활동 **만들기** 단추를 클릭한 다음 **A/B 테스트** 활동을선택합니다
+1. **활동 만들기** 단추를 클릭한 다음 **A/B 테스트** 활동을 선택합니다.
 
    ![A/B 활동](assets/ab-target-activity.png)
 
-1. Visual Experience **Composer** 옵션을 선택하고 활동 URL을 제공한 다음 **다음을 클릭합니다**
+1. **Visual Experience Composer** 옵션을 선택하고 활동 URL을 제공한 다음 **다음**&#x200B;을 클릭합니다
 
    ![활동 URL](assets/ab-test-url.png)
 
-1. Visual Experience Composer는 새 활동을 만든 후 왼쪽의 두 탭을 표시합니다. *경험 A* 및 *경험 B*. 목록에서 경험을 선택합니다. 경험 **추가 단추를 사용하여 목록에 새 경험을 추가할 수** 있습니다.
+1. Visual Experience Composer는 새 활동을 만든 후 왼쪽의 두 탭을 표시합니다.*경험 A* 및 *경험 B*&#x200B;입니다. 목록에서 경험을 선택합니다. **경험 추가** 단추를 사용하여 목록에 새 경험을 추가할 수 있습니다.
 
    ![경험 옵션](assets/experience-options.png)
 
-1. 경험 A에 사용할 수 있는 옵션을 본 다음 [URL로 **리디렉션** ] 옵션을 선택하고 새 WKND 사이트 홈 페이지에 대한 URL을 제공합니다.
+1. 경험 A에 사용할 수 있는 옵션을 본 다음 **URL**&#x200B;로 리디렉션 옵션을 선택하고 새 WKND 사이트 홈 페이지에 대한 URL을 제공합니다.
 
    ![리디렉션 URL](assets/redirect-url.png)
 
-1. 경험 *A* 를 *새 WKND 홈 페이지로* 변경하고 *경험 B를* WKND 홈 페이지로 *이름 변경*
+1. *경험 A*&#x200B;새 WKND 홈 페이지&#x200B;*및*&#x200B;경험 B *을* WKND 홈 페이지&#x200B;*로 이름 변경*
 
    ![모험](assets/new-experiences.png)
 
-1. 다음 **을** 클릭하여 타깃팅으로 이동하고 두 경험 간에 50-50의 수동 트래픽 할당을 유지합니다.
+1. 타깃팅으로 이동하고 두 경험 간에 50-50의 수동 트래픽 할당을 유지하려면 **다음**&#x200B;을 클릭합니다.
 
    ![타깃팅](assets/targeting.png)
 
