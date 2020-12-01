@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # AEM 아키텍처 스택 소개 {#introduction-architecture}
 
-Adobe Experience Manager의 기술 스택의 [!DNL OSGi]일부로 [!DNL JCR], [!DNL Oak]및 [!DNL Sling] 기술을 소개합니다.
+Adobe Experience Manager 기술 스택의 일부로 [!DNL OSGi], [!DNL JCR], [!DNL Oak] 및 [!DNL Sling]의 기술을 소개합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32034/?quality=12&learn=on)
