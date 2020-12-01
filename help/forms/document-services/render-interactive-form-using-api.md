@@ -26,7 +26,7 @@ AEM Forms에서 Forms 서비스 API를 사용하여 인터랙티브한 PDF 렌�
 
 * FormsService - PDF 파일에서 데이터를 가져오거나 내보낼 수 있고 xml 데이터를 xdp 템플릿으로 병합하여 인터랙티브한 pdf를 생성할 수 있는 매우 다양한 서비스입니다
 
-공식 Javadoc for AEM Forms API는 [여기에 나와 있습니다.](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/package-summary.html)
+AEM Forms API에 대한 공식 javadoc가 [여기](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/package-summary.html)에 나열되어 있습니다.
 
 다음 코드 조각은 FormsService의 renderPDForm 작업을 사용하여 대화형 pdf를 렌더링합니다. schengen.xdp는 xml 데이터를 병합하는 데 사용되는 템플릿입니다.
 
@@ -63,10 +63,10 @@ return interactivePDF;
 1. 제외된 섹션에 다음 경로를 추가하고 저장합니다.
 1. /bin/generateinteractivepdf
 1. [모바일 양식 열기](http://localhost:4502/content/dam/formsanddocuments/schengen.xdp/jcr:content)
-1. 두 개의 필드를 채운 다음 ***다운로드 및 채우기를 클릭합니다..*** 단추
+1. 두 개의 필드를 채운 다음 ***다운로드 및 채우기...*** 단추
 1. 인터랙티브한 pdf를 로컬 시스템에 다운로드해야 합니다.
 
 
-샘플 패키지에는 모바일 양식과 연결된 사용자 지정 프로필이 포함되어 있습니다. customtoolbar.jsp [파일을](http://localhost:4502/apps/AEMFormsDemoListings/customprofiles/addImageToMobileForm/demo/customtoolbar.jsp) 살펴보십시오. 이 jsp는 모바일 양식에서 데이터를 추출하고 ***/bin/generateinteractivepdf*** 경로에 서블릿으로 POST 요청을 수행합니다. 서블릿은 인터랙티브한 pdf를 호출 애플리케이션에 반환합니다. customtoolbar.jsp의 코드가 로컬 시스템에 파일을 다운로드합니다
+샘플 패키지에는 모바일 양식과 연결된 사용자 지정 프로필이 포함되어 있습니다. [customtoolbar.jsp](http://localhost:4502/apps/AEMFormsDemoListings/customprofiles/addImageToMobileForm/demo/customtoolbar.jsp) 파일을 탐색해 보십시오. 이 jsp는 모바일 양식에서 데이터를 추출하고 ***/bin/generateinteractivepdf*** 경로에 마운트된 서블릿에 POST 요청을 수행합니다. 서블릿은 인터랙티브한 pdf를 호출 애플리케이션에 반환합니다. customtoolbar.jsp의 코드가 로컬 시스템에 파일을 다운로드합니다
 
 
