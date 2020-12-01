@@ -40,7 +40,7 @@ ht-degree: 0%
 
 * &quot;연필&quot; 아이콘을 선택하여 기본 텍스트를 편집합니다.
 
-* 기본 텍스트를 &quot;퇴직금&#x200B;**전망&quot;으로 바꿉니다.**
+* 기본 텍스트를 &quot;**퇴직소득 전망&quot;**&#x200B;으로 바꿉니다.
 
 **RightPanel 대상 영역 구성**
 
@@ -52,13 +52,13 @@ ht-degree: 0%
 
 * &quot;연필&quot; 아이콘을 선택하여 기본 텍스트를 편집합니다.
 
-* 기본 텍스트를 &quot;예상&#x200B;**월별 퇴직 소득&quot;으로 바꿉니다.**
+* 기본 텍스트를 &quot;**예상 월별 퇴직 소득&quot;**&#x200B;으로 바꿉니다.
 
 ## 퇴직 소득 Outlook 문서 조각 추가 {#add-retirement-income-outlook-document-fragment}
 
 * 자산 아이콘을 클릭하고 필터를 적용하여 &quot;문서 조각&quot; 유형의 자산을 표시합니다. RestructionIncomeOutlook 문서 조각을 왼쪽 패널 대상 영역으로 드래그하여 놓습니다.
 
-* 컨텐츠 영역 [에 문서 조각을 추가하는 경우 이 페이지를](https://helpx.adobe.com/experience-manager/kt/forms/using/interactive-communication-web-channel-aem-forms/9.html) 참조할 수 있습니다.
+* 컨텐츠 영역에 문서 조각을 추가하는 경우 이 페이지](https://helpx.adobe.com/experience-manager/kt/forms/using/interactive-communication-web-channel-aem-forms/9.html)에 [을 참조할 수 있습니다.
 
 ## 예상 월별 소득 차트 추가 {#adding-estimated-monthly-income-chart}
 
