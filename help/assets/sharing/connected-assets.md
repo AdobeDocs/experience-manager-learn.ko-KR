@@ -28,4 +28,4 @@ ht-degree: 0%
 * 03:30 — 연결된 자산의 이미지 사용
 * 04:42 — 연결된 에셋 기능을 활성화하는 관리자 구성
 
-AEM 배포이 연결된 에셋을 지원할 수 있는지 여부를 [확인하려면 연결된 에셋에](https://docs.adobe.com/content/help/en/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html#prerequisites) 대한 지원 배포를 검토하십시오.
+AEM 배포에서 연결된 에셋을 지원할 수 있는지 확인하려면 [연결된 에셋에 대한 지원되는 배포를 검토하십시오.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html#prerequisites)
