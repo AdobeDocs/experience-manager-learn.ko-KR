@@ -22,7 +22,7 @@ ht-degree: 0%
 ---
 
 
-# 자산 섹션에 구성 요소 추가 {#adding-components-to-assets-section}
+# 자산 섹션 {#adding-components-to-assets-section}에 구성 요소 추가
 
 에셋 패널의 아코디언 레이아웃을 구성합니다.아코디언 레이아웃에서는 반복 가능한 섹션을 추가하는 더 나은 최종 사용자 환경을 제공합니다.
 
