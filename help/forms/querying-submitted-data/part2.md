@@ -29,7 +29,7 @@ ht-degree: 0%
 
 양식 제출을 처리하기 위해 맞춤형 제출을 만들었습니다. 이 사용자 지정 제출의 post.POST.jsp에서는 요청을 Adobe 서블릿으로 전달합니다.
 
-사용자 지정 제출 서명에 대한 자세한 내용은 이 [문서를 참조하십시오.](https://helpx.adobe.com/experience-manager/kt/forms/using/custom-submit-aem-forms-article.html)
+사용자 지정 제출 서명에 대한 자세한 내용은 이 [article](https://helpx.adobe.com/experience-manager/kt/forms/using/custom-submit-aem-forms-article.html)을 참조하십시오.
 
 com.adobe.aemds.guide.utils.GuideSubmitUtils.setForwardPath(slingRequest,&quot;/bin/storeafsubmission&quot;,null,null);
 
