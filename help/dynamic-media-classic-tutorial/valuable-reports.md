@@ -42,9 +42,9 @@ _이미지 오류 보고서._
 
 Dynamic Media Classic에 대한 자세한 내용은 다음 리소스를 참조하십시오.
 
-- [경험 리그의 Dynamic Media Classic - 가치 창출](https://guided.adobe.com/?launch=AEM-5a#recommended/solutions/experience-manager)
+- [Experience League의 Dynamic Media Classic - 가치 창출](https://guided.adobe.com/?launch=AEM-5a#recommended/solutions/experience-manager)
 - [Experience League의 Dynamic Media Classic - 더 많은 작업](https://guided.adobe.com/?launch=AEM-6a#recommended/solutions/experience-manager)
 - [다이내믹 미디어 뉴스레터 아카이브](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/dynamic-media-newsletter.html)
 - [Dynamic Media 뉴스레터 구독 페이지](https://www.adobe.com/subscription/dynamic-media-newsletter.html)
-- [Dynamic Media Classic 설명서](https://docs.adobe.com/content/help/ko-KR/dynamic-media-classic/using/home.html)
+- [Dynamic Media Classic 설명서](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/home.html)
 - [리치 미디어 블로그 게시물](https://theblog.adobe.com/tag/dynamic-media)
