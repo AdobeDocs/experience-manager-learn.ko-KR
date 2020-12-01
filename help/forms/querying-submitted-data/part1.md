@@ -21,11 +21,11 @@ ht-degree: 0%
 # JSON 스키마를 기반으로 적응형 양식 만들기
 
 
-JSON 스키마를 기반으로 하는 적응형 Forms 생성 기능은 AEM Forms 6.3 릴리스에서 도입되었습니다. JSON 스키마를 사용한 응용 Forms 만들기에 대한 자세한 내용은 이 [문서에 자세히 설명되어 있습니다](https://helpx.adobe.com/experience-manager/6-3/forms/using/adaptive-form-json-schema-form-model.html).
+JSON 스키마를 기반으로 하는 적응형 Forms 생성 기능은 AEM Forms 6.3 릴리스에서 도입되었습니다. JSON 스키마를 사용한 응용 Forms 만들기에 대한 자세한 내용은 이 [article](https://helpx.adobe.com/experience-manager/6-3/forms/using/adaptive-form-json-schema-form-model.html)에 자세히 설명되어 있습니다.
 
 JSON 스키마를 기반으로 적응형 양식을 만든 후 다음 단계는 제출된 데이터를 데이터베이스에 저장하는 것입니다. 이를 위해 다양한 데이터베이스 공급업체에서 도입한 새로운 JSON 데이터 유형을 사용합니다. 이 문서의 목적을 위해 MySql 8 데이터베이스를 사용하여 제출된 데이터를 저장합니다.
 
-이 아티클에 MySql 8 데이터베이스가 사용되었습니다. MySQL은 JSON이라는 새로운 데이터 유형을 [도입했습니다](https://dev.mysql.com/doc/refman/8.0/en/json.html). 따라서 JSON 개체를 보다 손쉽게 저장하고 쿼리할 수 있습니다. 전송된 데이터를 데이터베이스에 JSON 유형의 열에 저장할 예정입니다.
+이 아티클에 MySql 8 데이터베이스가 사용되었습니다. MySQL에서는 [JSON](https://dev.mysql.com/doc/refman/8.0/en/json.html)이라는 새 데이터 유형을 도입했습니다. 따라서 JSON 개체를 보다 손쉽게 저장하고 쿼리할 수 있습니다. 전송된 데이터를 데이터베이스에 JSON 유형의 열에 저장할 예정입니다.
 
 다음 스크린샷은 JSON 데이터 유형에 저장된 제출된 양식 데이터를 보여줍니다. 열 &quot;formdata&quot;는 JSON 형식입니다. 또한 열 형식 이름에 데이터와 연결된 양식 이름을 저장했습니다
 
