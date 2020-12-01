@@ -38,21 +38,21 @@ Cloud Manager 및 Cloud Manager 프로그램 소개
 
 ## 실패한 파이프라인 실행
 
-이 비디오에서는 저장소 분기를 사용하여 Cloud Manager의 필수 품질 확인에 실패하는 코드를 사용하여 CI/CD 파이프라인의 실행을 **[!DNL yellow]** 탐색합니다.
+이 비디오에서는 **[!DNL yellow]** 저장소 분기를 사용하여 Cloud Manager의 필수 품질 확인에 실패하는 코드를 사용하여 CI/CD 파이프라인의 실행을 탐색합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/23084/?quality=12&learn=on)
 
 ## 성공적인 파이프라인 실행
 
-이 비디오에서는 저장소 분기를 사용하여 Cloud Manager의 필수 품질 검사를 전달하는 코드를 사용하여 CI/CD 파이프라인의 성공적인 실행을 **[!DNL master]** 탐색합니다.
+이 비디오에서는 **[!DNL master]** 저장소 분기를 사용하여 Cloud Manager의 필수 품질 검사를 전달하는 코드를 사용하여 CI/CD 파이프라인의 성공적인 실행을 탐색합니다.
 
-또한 이 비디오에서는 Cloud Manager의 [!UICONTROL 활동] 콘솔을 터치하여 활성 실행에 재입장하거나, 완료된 실행 또는 실패한 실행을 검토할 수 있습니다.
+또한 이 비디오에서는 Cloud Manager의 [!UICONTROL Activity] 콘솔을 터치하여 활성 실행에 재진입하거나, 완료되었거나 실패한 실행을 검토할 수 있습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/23085/?quality=12&learn=on)
 
 ## 지원 자료
 
 * [Cloud Manager 사용 안내서](https://helpx.adobe.com/experience-manager/cloud-manager/user-guide.html)
-* [코드 [!DNL SonarQube] 스캐닝 규칙 다운로드](https://helpx.adobe.com/experience-manager/cloud-manager/using/understand-your-test-results.html#CodeQualityTesting)
+* [코드  [!DNL SonarQube] 스캐닝 규칙 다운로드](https://helpx.adobe.com/experience-manager/cloud-manager/using/understand-your-test-results.html#CodeQualityTesting)
    * *연결된 섹션 하단에 있는 XLSX 사용 가능*
 * [[!DNL SonarQube] Java 규칙 색인](https://rules.sonarsource.com/java/)
