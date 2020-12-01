@@ -18,7 +18,7 @@ ht-degree: 27%
 ---
 
 
-# 페이지 버전 만들기 {#creating-page-versions-aem-sites}
+# 페이지 버전 {#creating-page-versions-aem-sites}을(를) 만드는 중
 
 페이지 버전 관리를 통해 컨텐츠 작성자는 페이지 버전을 만들어 페이지와 연관된 변경 사항을 추적할 수 있으며 버전을 미리 보고 버전을 복원하며 현재 버전의 페이지와 버전을 비교하는 옵션을 제공합니다.
 
