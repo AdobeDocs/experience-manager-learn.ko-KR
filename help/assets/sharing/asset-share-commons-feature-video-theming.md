@@ -21,7 +21,7 @@ ht-degree: 1%
 ---
 
 
-# 자산 공유 공유지의 주제 소개 {#asset-share-commons-theme}
+# 자산 공유 공유에서 테마 소개 {#asset-share-commons-theme}
 
 에셋 공유 공유에서 간략한 소개 이 비디오는 사용자 지정 색상 구성표를 사용하여 새 테마를 만드는 과정을 안내합니다.
 
@@ -80,7 +80,7 @@ ht-degree: 1%
 @msgWarningBackgroundColor: @yellow;
 ```
 
-사용자 [정의 클라이언트 라이브러리 테마 다운로드](assets/asc-theme-demo.zip)
+[사용자 지정 클라이언트 라이브러리 테마 다운로드](assets/asc-theme-demo.zip)
 
 ## 추가 리소스{#additional-resources}
 
