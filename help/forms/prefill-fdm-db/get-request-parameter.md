@@ -24,14 +24,14 @@ ht-degree: 2%
 다음 단계는 url에서 empID 매개 변수에 액세스하는 것입니다. 그런 다음 empID 요청 매개 변수의 값이 양식 데이터 모델의 **_get_** 서비스 작업으로 전달됩니다.
 본 교육 과정의 목적을 위해 Adobe는 다음을 만들고 제공했습니다
 
-* FDMDemo라는 응용 양식 **_템플릿_**
-* fdmdemo라는 **_페이지 구성 요소_**
+* 응용 양식 서식 파일(**_FDMDemo_**)
+* **_fdmdemo_**&#x200B;라는 페이지 구성 요소
 * 페이지 구성 요소에 사용자 지정 jsp 포함
 * 적응형 양식 템플릿을 페이지 구성 요소와 연결됨
 
 이렇게 하면 사용자 지정 jsp의 코드가 이 사용자 지정 템플릿을 기반으로 하는 응용 양식이 렌더링될 때만 실행됩니다
 
-* [패키지 관리자를](assets/template-page-component.zip) 사용하여 패키지 [가져오기](http://localhost:4502/crx/packmgr/index.jsp)
+* [패키지 ](assets/template-page-component.zip) 관리자를 사용하여  [패키지 가져오기](http://localhost:4502/crx/packmgr/index.jsp)
 * [fdmrequest.jsp 열기](http://localhost:4502/crx/de/index.jsp#/apps/fdmdemo/component/page/fdmdemo/fdmrequest.jsp)
 * 댓글 줄의 주석을 해제합니다.
 * 변경 내용 저장
