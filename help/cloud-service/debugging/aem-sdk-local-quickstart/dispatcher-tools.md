@@ -28,15 +28,15 @@ Dispatcher Tools의 로그 및 캐시 컨텐츠에 대한 디버그는 엔드 �
 
 ## 발송자 도구 로그
 
-디스패처 도구 로그는 `stdout` 또는 `bin/docker_run` 명령을 통해 사용할 수 있으며 자세한 내용은 의 Docker 컨테이너에 사용할 수 있습니다 `/etc/https/logs`.
+디스패처 도구 로그는 `stdout` 또는 `bin/docker_run` 명령을 통해 사용할 수도 있고 자세한 내용은 `/etc/https/logs`의 Docker 컨테이너에서 사용할 수 있습니다.
 
-Dispatcher [도구의 Docker 컨테이너 로그에 직접 액세스하는 방법에 대한 지침은 Dispatcher 로그를](./logs.md#dispatcher-logs) 참조하십시오.
+Dispatcher 도구의 Docker 컨테이너 로그에 직접 액세스하는 방법에 대한 지침은 [Dispatcher 로그](./logs.md#dispatcher-logs)를 참조하십시오.
 
 ## 발송자 도구 캐시
 
 ### Docker 컨테이너의 로그 액세스
 
-디스패처 캐시는 의 Docker 컨테이너에서 직접 액세스할 수 있습니다 ` /mnt/var/www/html`.
+디스패처 캐시는 ` /mnt/var/www/html`의 Docker 컨테이너에서 직접 액세스할 수 있습니다.
 
 ```shell
 $ docker ps
@@ -56,7 +56,7 @@ $ docker exec -it <CONTAINER ID> /bin/sh
 
 ### Docker 로그를 로컬 파일 시스템에 복사
 
-발송자 로그는 로컬 파일 시스템에 있는 Docker 컨테이너 `/mnt/var/www/html` 에서 복사하여 자주 사용하는 도구를 사용하여 검사할 수 있습니다. 이 문서는 지정 시간 복사본이며 캐시에 대한 실시간 업데이트를 제공하지 않습니다.
+디스패처 로그는 Docker 컨테이너(`/mnt/var/www/html`)에서 로컬 파일 시스템으로 복사하여 자주 사용하는 도구를 사용하여 검사할 수 있습니다. 이 문서는 지정 시간 복사본이며 캐시에 대한 실시간 업데이트를 제공하지 않습니다.
 
 ```shell
 $ docker ps
