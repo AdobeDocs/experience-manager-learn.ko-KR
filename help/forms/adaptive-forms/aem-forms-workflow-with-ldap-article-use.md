@@ -26,7 +26,7 @@ ht-degree: 0%
 
 AEM 워크플로우에서 적응형 양식을 사용하는 경우 양식 제출자의 관리자에게 작업을 동적으로 할당할 수 있습니다. 이 사용 사례를 수행하려면 Ldap를 사용하여 AEM을 구성해야 합니다.
 
-LDAP를 사용하여 AEM을 구성하는 데 필요한 단계는 여기에 [자세히 설명되어 있습니다.](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ldap-config.html)
+LDAP를 사용하여 AEM을 구성하는 데 필요한 단계는 [세부 정보에 설명되어 있습니다.](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ldap-config.html)
 
 이 문서의 목적을 위해 Adobe Ldap를 사용하여 AEM 구성에 사용되는 구성 파일을 첨부합니다. 이러한 파일은 패키지 관리자를 사용하여 가져올 수 있는 패키지에 포함되어 있습니다.
 
@@ -66,16 +66,16 @@ String managerPorperty = workflowInitiator.getProperty("profile/manager")[0].get
 
 관리자 속성이 LDAP에 저장되는 방식에 따라 관리자 ID를 얻으려면 몇 가지 문자열 조작을 수행해야 할 수 있습니다.
 
-자신의 참가자 선택기를 구현하려면 이 문서를 [ 읽어 보십시오.](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
+자신의 [ ParticipantChooser를 구현하려면 이 문서를 읽어 보십시오. ](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
 
 시스템에서 테스트하려면(Adobe 직원의 경우 즉시 이 샘플을 사용할 수 있음)
 
 * [setvalue 번들을 다운로드하고 배포합니다](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). 관리자 속성을 설정하는 사용자 지정 OSGI 번들입니다.
 * [DevelopingWithServiceUserBundle 다운로드 및 설치](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-* [패키지 관리자를](assets/aem-forms-ldap.zip)사용하여 이 아티클과 연결된 에셋을 AEM으로 가져옵니다. 이 패키지의 일부로 포함되는 것은 LDAP 구성 파일, 워크플로우 및 적응형 양식입니다.
+* [패키지 관리자를](assets/aem-forms-ldap.zip) 사용하여 이 아티클과 연결된 에셋을 AEM으로 가져옵니다. 이 패키지의 일부로 포함되는 것은 LDAP 구성 파일, 워크플로우 및 적응형 양식입니다.
 * 적절한 LDAP 자격 증명을 사용하여 LDAP를 사용하여 AEM을 구성합니다.
 * LDAP 자격 증명을 사용하여 AEM에 로그인합니다.
-* 시간 [요청 양식 열기](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
+* [timeoffrequestform](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled) 열기
 * 양식을 작성하고 제출합니다.
 * 제출자의 지배인이 검토할 수 있는 양식을 받아야 한다.
 
