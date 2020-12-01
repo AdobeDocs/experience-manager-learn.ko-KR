@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# 계정 균형 패널에 표 추가{#adding-table-to-account-balance-panel}
+# 계정 균형 패널에 테이블 추가{#adding-table-to-account-balance-panel}
 
 이 부분에서 계정 균형 패널에 테이블을 추가합니다.
 
