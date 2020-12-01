@@ -30,7 +30,7 @@ CRXDE Lite은 AEM 데이터 저장소의 JCR과 상호 작용을 위한 웹 기�
 CRXDE Lite은 다음 위치에 있습니다.
 
 + 도구 > 일반 > CRXDE Lite
-+ 또는 http://localhost:4502/crx/de/index.jsp에서 직접 [액세스](http://localhost:4502/crx/de/index.jsp)
++ 또는 [http://localhost:4502/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp)에서 직접
 
 ## 쿼리 설명
 
@@ -57,9 +57,9 @@ QueryBuilder 디버거는 다음 위치에 있습니다.
 
 ![Sling Log Tracer 및 AEM Chrome 플러그인](./assets/other-tools/log-tracer.png)
 
-[AEM SDK의 로컬 빠른 시작](https://sling.apache.org/documentation/bundles/log-tracers.html)기능과 함께 제공되는 Sling Log Tracer를 사용하면 HTTP 요청에 대한 심층 추적 기능을 통해 요청당 심도 있는 디버깅 정보를 표시할 수 있습니다. 이 기능을 사용하도록 [로그 추적 OSGi 구성을 구성해야](https://sling.apache.org/documentation/bundles/log-tracers.html#configuration-1) 합니다.
+[AEM SDK의 로컬 빠른 시작](https://sling.apache.org/documentation/bundles/log-tracers.html) 기능과 함께 제공되는 Sling Log Tracer를 사용하면 HTTP 요청에 대한 심층 추적 기능을 통해 요청당 심도 있는 디버깅 정보를 표시할 수 있습니다. 이 기능을 사용하려면 [로그 추적 OSGi 구성을 구성해야 합니다](https://sling.apache.org/documentation/bundles/log-tracers.html#configuration-1).
 
-Google [Chrome 웹 브라우저용](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US) [](https://www.google.com/chrome/)오픈 소스 AEM Chrome 플러그인은 Log Tracer와 통합되어 Chrome의 Dev Tools에서 바로 디버그 정보를 노출합니다.
+[Google Chrome 웹 브라우저](https://www.google.com/chrome/)용 오픈 소스 [AEM Chrome 플러그인](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US)은(는) Log Tracer와 통합되어 Chrome의 Dev Tools에서 바로 디버그 정보를 노출합니다.
 
 _AEM Chrome 플러그인은 오픈 소스 도구이며 Adobe에서는 이를 지원하지 않습니다._
 
