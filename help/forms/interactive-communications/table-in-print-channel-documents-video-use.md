@@ -44,7 +44,7 @@ ht-degree: 0%
    * 인터랙티브 커뮤니케이션 문서
    * sampleretirementaccountdata.json
 
-* 대화형 통신 문서를 [편집 모드로 엽니다](http://localhost:4502/editor.html/content/forms/af/401kstatement/tablesinprintdocument/channels/print.html).
+* [편집 모드](http://localhost:4502/editor.html/content/forms/af/401kstatement/tablesinprintdocument/channels/print.html)에서 대화형 통신 문서를 엽니다.
 
 * 기여도 섹션에 TableDemo 레이아웃 조각을 추가합니다.
 * 표 셀을 비디오에 표시된 대로 적절한 양식 데이터 모델 요소에 바인딩합니다
