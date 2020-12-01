@@ -22,7 +22,7 @@ AEM Assets 템플릿을 사용하면 디지털 및 인쇄용 디지털 자산을
 
 >[!NOTE]
 >
->InDesign Server 구성에 대한 단계는 InDesign Server으로 자산 [템플릿 설정을 참조하십시오](asset-templates-technical-video-setup.md).
+>InDesign Server 구성에 대한 단계는 [InDesign Server](asset-templates-technical-video-setup.md)로 자산 템플릿 설정을 참조하십시오.
 
 ## 개요 {#overview}
 
