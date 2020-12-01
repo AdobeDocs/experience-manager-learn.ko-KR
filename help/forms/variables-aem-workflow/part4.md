@@ -68,12 +68,15 @@ AEM Workflow에서 ArrayList 변수를 사용하려면 제출된 데이터의 �
 ```
 
 하위 유형 문자열의 ArrayList 변수를 초기화하려면 JSON 점 표기법 또는 XPath 매핑 모드를 사용할 수 있습니다. 다음 스크린샷은 JSON 점 표기법을 사용하여 CustomRoute라는 ArrayList 변수를 채우는 것을 보여줍니다. 아래 스크린샷과 같이 배열 개체의 요소를 가리키는지 확인하십시오. managerchain 배열 개체의 이름으로 CustomRouts ArrayList를 채우고 있습니다.
-그런 다음 CustomRouts ArrayList를 사용하여 AssignTask 구성 요소![의](assets/arraylist.jpg)사용자 지정 경로를 채웁니다. CustomRouts ArrayList 변수가 제출된 데이터의 값으로 초기화되면 AssignTask 구성 요소의 경로가 CustomRouts 변수를 사용하여 채워집니다. 아래 스크린샷은 AssignTask의 사용자 지정 경로를![보여줍니다](assets/customactions.jpg)
+그런 다음 CustomRouts ArrayList를 사용하여 AssignTask 구성 요소의 경로 채우기
+![사용자 지정 경로](assets/arraylist.jpg)
+CustomRouts ArrayList 변수가 제출된 데이터의 값으로 초기화되면 AssignTask 구성 요소의 경로가 CustomRouts 변수를 사용하여 채워집니다. 아래 스크린샷은 AssignTask의 사용자 지정 경로를 보여줍니다
+![asingtask](assets/customactions.jpg)
 
 시스템에서 이 워크플로우를 테스트하려면 다음 단계를 따르십시오
 
 * ArrayListVariable.zip 파일을 파일 시스템에 다운로드 및 저장
-* [AEM 패키지 관리자를 사용하여 zip 파일](assets/arraylistvariable.zip) 가져오기
+* [AEM 패키지 관리자를 사용하여 zip ](assets/arraylistvariable.zip) 파일 가져오기
 * [TravelExpenseReport 양식 열기](http://localhost:4502/content/dam/formsanddocuments/helpx/travelexpensereport/jcr:content?wcmmode=disabled)
 * 두 개의 비용과 두 명의 관리자의 이름을 입력하십시오.
 * 제출 단추를 누르십시오.
