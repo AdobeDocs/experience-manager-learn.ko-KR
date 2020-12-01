@@ -27,7 +27,7 @@ ht-degree: 5%
 
 >[!VIDEO](https://video.tv.adobe.com/v/16791/?quality=9&learn=on)
 
-## Flash이 아닌 비디오 플레이어에 대한 빠른 검토 {#quick-look-into-non-flash-video-player}
+## Flash이 아닌 비디오 플레이어 {#quick-look-into-non-flash-video-player}에 대한 빠른 검토
 
 >[!VIDEO](https://video.tv.adobe.com/v/17429/?quality=9&learn=on)
 
