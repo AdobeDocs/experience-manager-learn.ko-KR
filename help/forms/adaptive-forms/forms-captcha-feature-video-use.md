@@ -24,7 +24,7 @@ ht-degree: 0%
 
 AEM Adaptive Forms에서 CAPTCHA 추가 및 사용
 
-이 기능의 실시간 데모를 보려면 [AEM Forms 샘플](https://forms.enablementadobe.com/content/samples/samples.html?query=0) 페이지를 참조하십시오.
+이 기능의 실시간 데모를 보려면 [AEM Forms 샘플](https://forms.enablementadobe.com/content/samples/samples.html?query=0) 페이지를 방문하십시오.
 
 >[!VIDEO](https://video.tv.adobe.com/v/18336/?quality=9&learn=on)
 
@@ -40,7 +40,7 @@ AEM Adaptive Forms에서 CAPTCHA 추가 및 사용
 >
 >작성 인스턴스에서 reCapture 구성
 >
->작성 인스턴스에서 felix [웹 콘솔](http://localhost:4502/system/console/bundles) 열기
+>작성 인스턴스에서 felix [웹 콘솔](http://localhost:4502/system/console/bundles)을 엽니다.
 >
 >com.adobe.granite.crypto.file bundle 검색
 >
@@ -51,7 +51,7 @@ AEM Adaptive Forms에서 CAPTCHA 추가 및 사용
 >* &lt;author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle20/data
 * HMAC 및 마스터 파일 복사
 
-게시 인스턴스에서 [펠릭스 웹 콘솔을](http://localhost:4502/system/console/bundles) 엽니다. com.adobe.granite.crypto.file bundle을 검색합니다. 번들 ID
+게시 인스턴스에서 [felix 웹 콘솔](http://localhost:4502/system/console/bundles)을 엽니다. com.adobe.granite.crypto.file bundle을 검색합니다. 번들 ID
 게시 인스턴스의 파일 시스템에서 번들 ID로 이동합니다.
 * &lt;publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle20/data
 * 기존 HMAC 및 마스터 파일을 삭제합니다.
