@@ -15,7 +15,7 @@ ht-degree: 4%
 ---
 
 
-# 자산 메타데이터로 검색 활성화 {#search-boost-asset}
+# 자산 메타데이터로 검색 부풀려짐 {#search-boost-asset}
 
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=12&learn=on)
 
