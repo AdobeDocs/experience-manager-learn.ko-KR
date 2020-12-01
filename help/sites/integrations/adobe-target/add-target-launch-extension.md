@@ -18,9 +18,9 @@ ht-degree: 0%
 ---
 
 
-# 시작 속성에 타겟 확장 추가 {#adobe-target-extension}
+# 시작 속성 {#adobe-target-extension}에 타겟 확장 추가
 
-이 비디오를 사용하려면 이미 AEM과 [Experience Platform Launch을 통합해야 합니다](../experience-platform-launch/overview.md).
+이 비디오를 사용하려면 이미 [AEM](../experience-platform-launch/overview.md)과(와) 통합된 Experience Platform Launch이 있어야 합니다.
 
 Experience Platform Launch을 사용하여 AEM 웹 사이트에 Adobe Target을 활성화하는 방법을 알아봅니다.
 
