@@ -37,7 +37,7 @@ $ java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005 -jar a
 대부분의 Java IDE는 Java 프로그램의 원격 디버깅을 지원하지만 각 IDE의 정확한 설정 단계는 다릅니다. 정확한 단계에 대한 IDE의 원격 디버깅 설정 지침을 검토하십시오. 일반적으로 IDE 구성에는 다음이 필요합니다.
 
 + 호스트 AEM SDK의 로컬 quickstart가 수신 대기 중입니다(예: `localhost`).
-+ 포트 AEM SDK의 로컬 quickstart가 원격 디버그 연결에 대해 수신 대기 중입니다. 원격 디버그 연결은 AEM SDK의 로컬 빠른 시작을 시작할 때 매개 변수에 의해 `address` 지정된 포트입니다.
++ 포트 AEM SDK의 로컬 quickstart가 원격 디버그 연결에 대해 수신 대기 중입니다. 원격 디버그 연결은 AEM SDK의 로컬 빠른 시작을 시작할 때 `address` 매개 변수로 지정한 포트입니다.
 + 경우에 따라 원격 디버깅에 소스 코드를 제공하는 Maven 프로젝트를 지정해야 합니다.OSGi 번들 maven 프로젝트
 
 ### 지침 설정
