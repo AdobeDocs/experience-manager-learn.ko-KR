@@ -23,7 +23,7 @@ ht-degree: 19%
    + [시스템 개요 대시보드 사용](./administration/use-the-system-overview-dashboard.md)
 + 인증 {#authentication}
    + [OAuth 인증](authentication/oauth-code-sample-develop.md)
-   + [Adobe I/O에 사용할 공개/비공개 키 설정](authentication/set-up-public-private-keys-for-use-with-aem-and-adobe-io.md)
+   + [Adobe I/O에 사용할 공개/개인 키 설정](authentication/set-up-public-private-keys-for-use-with-aem-and-adobe-io.md)
    + [인증 이해](authentication/authentication-support-article-understand.md)
    + [AMS의 IMS 인증 이해](authentication/adobe-ims-authentication-technical-video-understand.md)
 + Adobe 클라우드 관리자{#cloud-manager}
