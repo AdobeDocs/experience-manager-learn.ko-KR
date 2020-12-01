@@ -50,7 +50,7 @@ AEM에서 지원하는 인증(및 가끔 인증) 메커니즘에 대한 통합 �
             <td>✔</td>
         </tr>
         <tr>
-            <td>토큰 기반( <a href="https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/encapsulated-token.html" target="_blank">캡슐화된 토큰</a>포함)</td>
+            <td>토큰 기반(포함/ <a href="https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/encapsulated-token.html" target="_blank">캡슐화된 토큰</a>)</td>
             <td>✔</td>
             <td>✔</td>
             <td>✔</td>
@@ -93,4 +93,4 @@ AEM에서 지원하는 인증(및 가끔 인증) 메커니즘에 대한 통합 �
     </tbody>
 </table>
 
-커뮤니티 프로젝트를 통해 ⁕ *제공되지만 Adobe에서 직접 지원되지는 않습니다.*
+*⁕ 커뮤니티 프로젝트를 통해 제공되지만 Adobe에서 직접 지원되지 않습니다.*
