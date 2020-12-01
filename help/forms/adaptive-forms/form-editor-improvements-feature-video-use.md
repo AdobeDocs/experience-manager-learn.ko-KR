@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# AEM Forms의 향상된 양식 편집기 {#form-editor-improvements-in-aem-forms}
+# AEM Forms {#form-editor-improvements-in-aem-forms}의 양식 편집기 개선
 
 AEM 6.3에서는 적응형 양식 및 문서의 작성 경험을 간소화하기 위해 이 릴리스의 몇 가지 새로운 기능과 향상된 기능을 도입했습니다. 향상된 기능을 통해 출시 시간을 단축하고 비즈니스 사용자가 양식과 문서를 사용하여 작업할 수 있습니다
 
