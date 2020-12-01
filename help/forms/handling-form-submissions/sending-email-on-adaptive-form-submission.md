@@ -19,7 +19,7 @@ ht-degree: 0%
 ---
 
 
-# 적응형 양식 제출 시 이메일 보내기 {#sending-email-on-adaptive-form-submission}
+# 적응형 양식 제출 시 이메일 전송 {#sending-email-on-adaptive-form-submission}
 
 일반적인 작업 중 하나는 적응형 양식의 성공적인 제출 시 제출자에게 확인 이메일을 보내는 것입니다. 이를 위해 &quot;이메일 보내기&quot;를 제출 작업으로 선택합니다.
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 ## 구성 필요 {#configurations-needed}
 
-일 CQ 메일 서비스를 구성해야 합니다. 브라우저를 [Felix Configuration Manager로 이동하여 구성할 수 있습니다.](http://localhost:4502/system/console/configMgr)
+일 CQ 메일 서비스를 구성해야 합니다. 브라우저를 [Felix Configuration Manager](http://localhost:4502/system/console/configMgr)로 가리켜 구성할 수 있습니다.
 
 스크린샷은 adobe 메일 서버의 구성 속성을 보여 줍니다.
 
@@ -41,9 +41,9 @@ ht-degree: 0%
 
 서버에서 실습하려면 다음 지침을 따르십시오.
 
-* [패키지 관리자를 사용하여 AEM에서 이 아티클과](assets/timeoffrequest.zip) 연관된 에셋을 가져옵니다.
+* [패키지 ](assets/timeoffrequest.zip) 관리자를 사용하여 AEM에서 이 아티클과 연결된 에셋을 가져옵니다.
 
-* TimeOffRequestForm [을 엽니다](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled).
+* [TimeOffRequestForm](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)을 엽니다.
 
 * 세부 사항을 입력합니다.이메일 필드에 유효한 이메일 주소를 입력해야 합니다.
 
