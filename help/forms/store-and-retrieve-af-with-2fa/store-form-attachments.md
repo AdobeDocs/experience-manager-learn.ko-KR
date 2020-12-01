@@ -31,7 +31,7 @@ OSGi 서비스는 양식 첨부 파일을 CRX 저장소의 새 위치에 저장�
 }
 ```
 
-다음은 요청에서 첨부 파일을 추출하여 **/content/afattachments** 폴더 아래에 저장하는 코드입니다
+다음은 요청에서 첨부 파일을 추출하여 **/content/attachments** 폴더에 저장하는 코드입니다
 
 ```java
 public String storeAFAttachments(JSONObject fileMap, SlingHttpServletRequest request) {
