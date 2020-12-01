@@ -28,5 +28,5 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->필요한 데이터베이스 드라이버가 AEM에 OSGi 번들로 배포되는 한 모든 RDBMS 데이터 소스를 사용할 수 있습니다. AEM에서 RDBMS 데이터 소스 설정은 AEM Forms [와 데이터 통합 설정에서 다룹니다](/help/forms/adaptive-forms/data-integration-technical-video-setup.md).
+>필요한 데이터베이스 드라이버가 AEM에 OSGi 번들로 배포되는 한 모든 RDBMS 데이터 소스를 사용할 수 있습니다. AEM에서 RDBMS 데이터 소스 설정은 [AEM Forms과 데이터 통합 설정](/help/forms/adaptive-forms/data-integration-technical-video-setup.md)에서 다룹니다.
 
