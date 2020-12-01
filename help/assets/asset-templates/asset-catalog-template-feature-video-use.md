@@ -19,7 +19,7 @@ ht-degree: 0%
 ---
 
 
-# AEM 커머스 및 InDesign Server에서 자산 카탈로그 사용{#using-asset-catalog-with-aem-commerce-and-indesign-server}
+# AEM Commerce 및 InDesign Server에서 자산 카탈로그 사용{#using-asset-catalog-with-aem-commerce-and-indesign-server}
 
 AEM 6.4 카탈로그 개선에서는 AEM 자산 템플릿 및 InDesign Server을 사용하여 카탈로그 페이지를 만드는 기능을 제공합니다.  사용자는 InDesign 템플릿을 사용하여 카탈로그 페이지를 만들고 제품 속성을 편집 가능한 필드에 매핑할 수 있습니다. 이 필드는 나중에 다른 제품에 대해 유사한 페이지를 만드는 데 사용할 수 있습니다.
 
