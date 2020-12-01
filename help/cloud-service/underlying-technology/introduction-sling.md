@@ -19,6 +19,6 @@ ht-degree: 4%
 
 # [!DNL Sling] 소개{#introduction-sling}
 
-Adobe Experience Manager [!DNL Sling]의 기본 기술 스택의 일부인 오픈 소스 [!DNL RESTful] 웹 프레임워크에 대한 소개입니다.
+Adobe Experience Manager의 기본 기술 스택에 포함된 오픈 소스 [!DNL RESTful] 웹 프레임워크인 [!DNL Sling]에 대한 소개입니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32032/?quality=12&learn=on)
