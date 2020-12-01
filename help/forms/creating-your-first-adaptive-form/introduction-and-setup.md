@@ -20,7 +20,7 @@ ht-degree: 2%
 ---
 
 
-# 적응형 Forms 시작하기 {#getting-started-with-adaptive-forms}
+# 적응형 Forms 시작 {#getting-started-with-adaptive-forms}
 
 이 자습서에서는 다중 탭 형식의 응용 양식 만들기에 관련된 단계를 안내합니다. 표, 아코디언 레이아웃 및 규칙 편집기를 사용하여 비즈니스 규칙을 작성하는 방법을 알아봅니다.
 
@@ -36,8 +36,8 @@ ht-degree: 2%
 
 * **localhost:4502에서 AEM Forms 버전 6.4 이상을 실행하고 있다고 가정합니다.**
 
-* [클라이언트-libs-and-logo](assets/client-libs-and-logo.zip) 및 [getting-started-fragment](assets/getting-started-fragment.zip) 를 하드 드라이브에 다운로드합니다.
+* [클라이언트-libs-and-](assets/client-libs-and-logo.zip) logoand  [getting-started-](assets/getting-started-fragment.zip) fragmentto your hard drive.
 
-* 패키지 관리자를 사용하여 zip 파일을 AEM에 [가져오기 ](http://localhost:4502/crx/packmgr/index.jsp)
+* [패키지 관리자 ](http://localhost:4502/crx/packmgr/index.jsp)를 사용하여 zip 파일을 AEM으로 가져옵니다.
 
 
