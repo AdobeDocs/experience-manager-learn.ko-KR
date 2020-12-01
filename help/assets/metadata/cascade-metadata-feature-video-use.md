@@ -19,7 +19,7 @@ ht-degree: 0%
 ---
 
 
-# AEM Assets에서 CSS 메타데이터 사용{#using-cascading-metadata-in-aem-assets}
+# AEM Assets{#using-cascading-metadata-in-aem-assets}에서 계단식 메타데이터 사용
 
 고급 메타데이터 관리 기능을 사용하면 사용자가 CSS(Cascading Field) 규칙을 만들어 AEM Assets의 메타데이터 간에 상황에 맞는 관계를 형성할 수 있습니다. 아래 비디오에서는 필드 요구 사항, 가시성 및 컨텍스트 선택에 대한 새로운 동적 규칙을 설명합니다. 또한 이 비디오에서는 관리자가 사용자 지정 메타데이터 스키마에 이러한 규칙을 적용하는 데 필요한 단계를 자세히 설명합니다.
 
@@ -37,9 +37,9 @@ ht-degree: 0%
 >
 >CSS 규칙은 드롭다운 필드의 값을 기반으로만 만들 수 있습니다. 세 가지 규칙 세트를 모두 동일한 메타데이터 필드에 적용할 수 있지만 각 규칙 세트가 동일한 메타데이터 드롭다운에 종속되도록 하는 것이 좋습니다.
 
-사용자 [정의 메타데이터 패키지 다운로드](assets/cascade-metadata-values-001.zip)
+[사용자 지정 메타데이터 패키지](assets/cascade-metadata-values-001.zip) 다운로드
 
 ## 추가 리소스{#additional-resources}
 
-사용자 지정 메타데이터 스키마 생성 위치: `/conf/global/settings/dam/adminui-extension/metadataschema/custom`. 아래 AEM 패키지는 사용자 정의 스키마를 폴더에 적용합니다. `/content/dam/we-retail/en/activities`:
+사용자 지정 메타데이터 스키마 생성 위치:`/conf/global/settings/dam/adminui-extension/metadataschema/custom`. 아래 AEM 패키지는 사용자 정의 스키마를 폴더에 적용합니다.`/content/dam/we-retail/en/activities`:
 
