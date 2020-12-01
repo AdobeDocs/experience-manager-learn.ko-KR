@@ -20,7 +20,7 @@ ht-degree: 64%
 ---
 
 
-# AEM Sites UI 및 내비게이션 {#basic-handling-aem-sites}
+# AEM Sites UI 및 탐색 {#basic-handling-aem-sites}
 
 다음 비디오에서는 AEM 작성 환경을 사용할 때의 기본 처리에 대한 개요를 제공합니다. 사이트 콘솔을 기본으로 사용합니다.
 
