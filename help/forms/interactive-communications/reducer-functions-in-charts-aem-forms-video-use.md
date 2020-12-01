@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# AEM Forms에서 감소 기능 사용 - 차트{#using-reducer-functions-in-aem-forms-charts}
+# AEM Forms에서 감소 함수 사용 - 차트{#using-reducer-functions-in-aem-forms-charts}
 
 감소 함수는 차트에 표시되는 값을 집계하거나 그룹화하는 데 사용됩니다.
 
