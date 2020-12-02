@@ -6,9 +6,9 @@ user-guide-description: 초보자 및 숙련된 AEM Forms 개발자를 위한 AE
 breadcrumb-title: AEM Forms 자습서
 index: y
 translation-type: tm+mt
-source-git-commit: 787a79663472711b78d467977d633e3d410803e5
+source-git-commit: c0db84f25334106c798d555c754d550113e91eac
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '899'
 ht-degree: 6%
 
 ---
@@ -40,6 +40,7 @@ ht-degree: 6%
    + [작업 지정 알림 사용자 지정](handling-form-submissions/customize-assign-task-notification.md)
 + 유용한 통합{#some-useful-integrations}
    + [2단계 인증](some-useful-integrations/two-factor-authentication.md)
+   + [OCR 데이터 추출](some-useful-integrations/ocr-data-extraction.md)
 
 + 적응형 양식 {#adaptive-forms}
    + [Windows에 AEM Forms 설치](adaptive-forms/installing-aem-form-on-windows-tutorial-use.md)
