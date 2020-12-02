@@ -23,9 +23,9 @@ ht-degree: 0%
 
 다음 단계는 제출된 데이터를 쿼리하고 결과를 표 형식으로 표시하는 것입니다. 이를 위해 다음 소프트웨어를 사용할 것입니다
 
-[QueryBuilder](https://querybuilder.js.org/) - 쿼리를 만드는 UI 구성 요소
+[쿼리를](https://querybuilder.js.org/)  만드는 QueryBuilder - UI 구성 요소
 
-[데이터 테이블](https://datatables.net/)- 쿼리 결과를 표 형식으로 표시하려면
+[데이터 테이블](https://datatables.net/) - 쿼리 결과를 표 형식으로 표시하려면
 
 다음 UI가 빌드되어 제출된 데이터를 쿼리할 수 있게 되었습니다. JSON 스키마에서 필수로 표시된 요소만 쿼리하는 데 사용할 수 있습니다. 아래 스크린샷에서는 배달이 SMS인 모든 제출을 쿼리하고 있습니다.
 
@@ -37,7 +37,7 @@ ht-degree: 0%
 >
 >이 자습서의 현재 버전은 여러 열 쿼리를 지원하지 않습니다.
 
-쿼리를 수행할 양식을 선택하면 GET 호출이 **/bin/getdatakeisfromschema에 수행됩니다**. 이 GET 호출은 양식 스키마와 연결된 필수 필드를 반환합니다. 그런 다음 필요한 필드는 QueryBuilder의 드롭다운 목록에 채워져 쿼리를 작성할 수 있습니다.
+쿼리를 수행할 양식을 선택하면 GET 호출이 **/bin/getdatakeisfromschema**&#x200B;로 수행됩니다. 이 GET 호출은 양식 스키마와 연결된 필수 필드를 반환합니다. 그런 다음 필요한 필드는 QueryBuilder의 드롭다운 목록에 채워져 쿼리를 작성할 수 있습니다.
 
 다음 코드 조각은 JSONSchemaOperations 서비스의 getRequiredColumnsFromSchema 메서드를 호출합니다. 스키마의 속성과 필수 요소를 이 메서드 호출로 전달합니다. 이 함수 호출에서 반환되는 배열은 쿼리 빌더 드롭다운 목록을 채우는 데 사용됩니다
 
@@ -62,7 +62,7 @@ public JSONArray getData(String formName) throws SQLException, IOException {
  }
 ```
 
-GetResult 단추를 클릭하면 Get 호출이 **&quot;/bin/queryData&quot;에 수행됩니다**. 쿼리 매개 변수를 통해 QueryBuilder UI로 작성한 쿼리를 서블릿으로 전달합니다. 그런 다음 서블릿은 데이터베이스를 쿼리하는 데 사용할 수 있는 SQL 쿼리로 이 쿼리를 보냅니다. 예를 들어 &#39;Mouse&#39;라는 모든 제품을 검색하는 경우 Query Builder 쿼리 문자열은 $.productname = &#39;Mouse&#39;입니다. 그러면 이 쿼리는 다음과 같이 변환됩니다
+GetResult 단추를 클릭하면 Get 호출이 **&quot;/bin/queryData&quot;**&#x200B;에 수행됩니다. 쿼리 매개 변수를 통해 QueryBuilder UI로 작성한 쿼리를 서블릿으로 전달합니다. 그런 다음 서블릿은 데이터베이스를 쿼리하는 데 사용할 수 있는 SQL 쿼리로 이 쿼리를 보냅니다. 예를 들어 &#39;Mouse&#39;라는 모든 제품을 검색하는 경우 Query Builder 쿼리 문자열은 $.productname = &#39;Mouse&#39;입니다. 그러면 이 쿼리는 다음과 같이 변환됩니다
 
 aemformswitjson에서 *를 선택합니다.  formsubmissions where JSON_EXTRACT( formsubmissions .formdata,&quot;$.productName &quot;)= &#39;Mouse&#39;
 
@@ -75,6 +75,6 @@ aemformswitjson에서 *를 선택합니다.  formsubmissions where JSON_EXTRACT(
 1. 샘플 json 스키마를 사용하여 적응형 양식 만들기
 1. &quot;사용자 지정 하위 상자&quot; 사용자 지정 제출 작업에 제출되도록 응용 양식 구성
 1. 양식 작성 및 제출
-1. 브라우저를 [dashboard.html로 지정](http://localhost:4502/content/AemForms/dashboard.html)
+1. 브라우저를 [dashboard.html](http://localhost:4502/content/AemForms/dashboard.html)로 가리킵니다.
 1. 양식을 선택하고 간단한 쿼리 수행
 
