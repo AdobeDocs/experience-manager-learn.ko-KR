@@ -7,11 +7,11 @@ topics: authoring, content-architecture
 audience: all
 doc-type: feature video
 activity: use
-version: 6.3, 6.4, 6.5
+version: cloud-service
 translation-type: tm+mt
-source-git-commit: 1faf22f2e664b775c11e16cb1dfa18b363a7316b
+source-git-commit: 5012433a5f1c7169b1a3996453bfdbd5d78e5b1c
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '374'
 ht-degree: 6%
 
 ---
@@ -20,11 +20,6 @@ ht-degree: 6%
 # 컨텐츠 조각 작성 {#authoring-content-fragments}
 
 컨텐츠 조각은 AEM에서 지원하는 채널과 독립적으로 텍스트 기반 컨텐츠를 작성 및 관리할 수 있는 컨텐츠 추상화입니다.
-
->[!NOTE]
->
->이러한 비디오에서 다루는 AEM 컨텐츠 조각 기능은 [AEM 6.3 + FP 19008 및 FP19614](https://helpx.adobe.com/experience-manager/6-3/release-notes/content-services-fragments-featurepack.html)에서 처음 도입되었습니다.
-
 
 AEM 컨텐츠 조각은 디자인이나 레이아웃 정보 없이 일부 구조화된 데이터 요소를 포함하지만 순수한 컨텐츠로 간주되는 텍스트 기반의 편집 컨텐츠입니다. 컨텐츠 조각은 일반적으로 채널에 관계없이 만들어진 컨텐츠로, 여러 채널에서 사용되고 재사용하기 위해 만들어지며, 이를 통해 컨텐츠를 컨텍스트에 맞는 경험으로 이어지게 됩니다.
 
