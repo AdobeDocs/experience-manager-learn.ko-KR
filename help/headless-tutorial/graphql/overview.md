@@ -11,9 +11,9 @@ mini-toc-levels: 1
 kt: null
 thumbnail: null
 translation-type: tm+mt
-source-git-commit: 5012433a5f1c7169b1a3996453bfdbd5d78e5b1c
+source-git-commit: 64d88ef98ec1fe3e2dbe727fc59b350bb0a2134b
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '251'
 ht-degree: 0%
 
 ---
@@ -37,12 +37,6 @@ AEM GraphQL API를 사용하여 컨텐츠를 작성하고 노출하는 방법을
 * 통합된 GraphiQL 개발 도구를 사용하여 AEM의 컨텐츠 조각을 쿼리하는 방법을 알아봅니다.
 * 샘플 WKND GraphQL Reresponse 앱의 AEM GraphQL API 사용
 * 조각 참조를 사용하여 고급 데이터 모델링 수행
-
-## GraphQL 개요
-
-아래 비디오에서는 AEM에서 구현된 GraphQL API에 대한 개요를 제공합니다. AEM의 GraphQL API는 헤드리스 배포의 일부로서 다운스트림 애플리케이션에 컨텐츠 조각 데이터를 제공하기 위해 주로 설계되었습니다.
-
->[!VIDEO](https://video.tv.adobe.com/v/328618/?quality=12&learn=on)
 
 ## GraphQL 개요
 
