@@ -11,9 +11,9 @@ mini-toc-levels: 1
 kt: null
 thumbnail: null
 translation-type: tm+mt
-source-git-commit: 5012433a5f1c7169b1a3996453bfdbd5d78e5b1c
+source-git-commit: 64d88ef98ec1fe3e2dbe727fc59b350bb0a2134b
 workflow-type: tm+mt
-source-wordcount: '1441'
+source-wordcount: '1418'
 ht-degree: 0%
 
 ---
@@ -208,40 +208,40 @@ React 앱을 시작하는 방법은 [Quick Setup](./setup.md) 장에 자세히 �
 1. IDE에서 파일을 엽니다.`src/components/Adventures.js`. 이 파일은 모험 카드를 쿼리하고 표시하는 홈 경험의 모험 구성 요소를 나타냅니다.
 1. Inspect은 사용하지 않지만 `filterQuery(activity)` 키를 사용하여 모험을 필터링하는 GraphQL 쿼리를 만들 준비가 되었습니다.`activity`
 
-`activity` 매개 변수가 `adventureActivity` 필드의 `filter`의 일부로 GraphQL 쿼리에 삽입되어 해당 필드의 값이 매개 변수의 값과 일치해야 합니다.
+   `activity` 매개 변수가 `adventureActivity` 필드의 `filter`의 일부로 GraphQL 쿼리에 삽입되어 해당 필드의 값이 매개 변수의 값과 일치해야 합니다.
 
-    &quot;
-    javascriptfunction filterQuery(activity) {
-    return &#39;
-    {
-    adventure (filter:{
-    adventureActivity:{
-    _expressions:[
-    {
-    value:&quot;${activity}
-    }
-    }
-    }){
-    항목 {
-     
-     
-    
-    
-    
-     
-     
-     
-    
-    
-     
-     
-     
-     
-     
-     
-     
-     
-    _pricetripTripTripTripTripTripTripTripTripTripTripTripLies {primaryRefImageRefAddHeightSpirtHeightSS를 8으로 만듭니다.
+   ```javascript
+   function filterQuery(activity) {
+       return `
+           {
+           adventures (filter: {
+               adventureActivity: {
+               _expressions: [
+                   {
+                   value: "${activity}"
+                   }
+                 ]
+               }
+           }){
+               items {
+               _path
+               adventureTitle
+               adventurePrice
+               adventureTripLength
+               adventurePrimaryImage {
+               ... on ImageRef {
+                   _path
+                   mimeType
+                   width
+                   height
+               }
+               }
+             }
+         }
+       }
+       `;
+   }
+   ```
 
 1. 목록에 모험 기능을 제공하기 위해 매개 변수가 있는 새 `filterQuery(activity)`을 호출하는 단추를 추가하려면 Repeact Adventure 구성 요소의 `return` 문을 업데이트합니다.
 
