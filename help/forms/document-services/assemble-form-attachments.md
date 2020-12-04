@@ -10,9 +10,9 @@ version: 6.4,6.5
 kt: 6406
 thumbnail: kt-6406.jpg
 translation-type: tm+mt
-source-git-commit: a9fbd73f128998bb201ef8715e5e725e94ee1ede
+source-git-commit: 3e8b820939c2d39ef9a17f7d7aaef87cd9cdbbbb
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '633'
 ht-degree: 0%
 
 ---
@@ -45,9 +45,9 @@ String  []attachmentNames  = arg2.get("PROCESS_ARGS","string").toString().split(
 
 ### 첨부 파일에서 DCX 만들기
 
-그런 다음 어셈블러 서비스에서 문서를 조합하는 데 사용하는 [문서 설명 XML(DDX)](https://helpx.adobe.com/pdf/aem-forms/6-2/ddxRef.pdf) 문서를 만들어야 합니다. 다음은 프로세스 인수에서 생성된 DDX입니다. 프로세스 인수에 지정된 대로 PDF 소스 요소가 올바른 순서로 표시됩니다.
+그런 다음 어셈블러 서비스에서 문서를 조합하는 데 사용하는 [문서 설명 XML(DDX)](https://helpx.adobe.com/pdf/aem-forms/6-2/ddxRef.pdf) 문서를 만들어야 합니다. 다음은 프로세스 인수에서 생성된 DDX입니다. NoForms 요소를 사용하면 XFA 기반 문서를 취합하기 전에 병합할 수 있습니다. 프로세스 인수에 지정된 대로 PDF 소스 요소가 올바른 순서로 표시됩니다.
 
-![dax-xml](assets/ddx-xml.JPG)
+![dax-xml](assets/ddx.PNG)
 
 ### 문서 맵 만들기
 
