@@ -11,9 +11,9 @@ mini-toc-levels: 1
 kt: null
 thumbnail: null
 translation-type: tm+mt
-source-git-commit: 5012433a5f1c7169b1a3996453bfdbd5d78e5b1c
+source-git-commit: 2e0352b051bf25a491b67468a76522084e53a71f
 workflow-type: tm+mt
-source-wordcount: '1413'
+source-wordcount: '1553'
 ht-degree: 1%
 
 ---
@@ -109,27 +109,15 @@ ht-degree: 1%
 >
 > Cloud Service 환경을 사용하는 경우 WKND 참조 사이트와 같은 코드 베이스를 Cloud Service 환경[에 배포하는 방법에 대한 설명서를 참조하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#deploying)
 
-## GraphQL 요청 허용
+## GraphQL 엔드포인트 설치{#graphql-endpoint}
 
-AEM은 기본적으로 보안을 유지하므로 인증되지 않은 애플리케이션이 컨텐츠에 연결되어 노출되지 않도록 합니다.
+GraphQL 끝점을 구성해야 합니다. 이를 통해 GraphQL API가 노출되는 정확한 끝점을 결정할 때 프로젝트 효율성이 높아집니다. 외부 응용 프로그램에 대한 액세스 권한을 부여하려면 [CORS](#cors-config)도 필요합니다. 이 자습서를 신속하게 사용하기 위해 패키지가 미리 생성되었습니다.
 
-이 튜토리얼의 Responsive 앱이 AEM GraphQL API 끝점과 상호 작용할 수 있도록 하려면 교차 출처 리소스 공유 구성이 정의됩니다.
+1. [aem-guides-wknd-graphql.all-1.0.0-SNAPSHOT.zip](./assets/setup/aem-guides-wknd-graphql.all-1.0.0-SNAPSHOT.zip) 패키지를 다운로드합니다.
+1. **AEM 시작** 메뉴에서 **도구** > **배포** > **패키지**&#x200B;로 이동합니다.
+1. **패키지 업로드**&#x200B;를 클릭하고 이전 단계에서 다운로드한 패키지를 선택합니다. **설치**&#x200B;를 클릭하여 패키지를 설치합니다.
 
-![원본 간 리소스 공유 구성](./assets/setup/cross-origin-resource-sharing-configuration.png)
-
-1. **도구** > **작업** > **웹 콘솔**&#x200B;에서 AEM SDK의 웹 콘솔로 이동합니다.
-1. **Adobe Granite Cross-Origin Resource Sharing Policy** 행을 클릭하여 새 구성을 만듭니다.
-1. 다음 필드를 업데이트하여 다른 필드를 기본값으로 유지합니다.
-   * 허용된 출처:`localhost:3000`
-   * 허용된 출처(Regex):`.* `
-   * 허용되는 경로: `/content/graphql/endpoint.gql`
-   * 허용되는 메서드:`GET`, `HEAD`, `POST`
-      * GraphQL에는 `POST`만 필요하지만 헤드리스 방식으로 AEM과 상호 작용할 때 다른 방법이 유용할 수 있습니다.
-   * 자격 증명 지원:`Yes`
-      * React 앱이 AEM 작성자 서비스의 보호된 GraphQL 끝점과 통신할 때 필요합니다.
-1. **저장**&#x200B;을 클릭합니다
-
-이 구성을 사용하면 `localhost:3000`에서 경로 `/content/graphql/endpoint.gql`의 AEM 작성자 서비스로 시작되는 `POST` HTTP 요청을 허용합니다.
+위의 패키지에는 나중 장에 사용될 [GraphiQL 도구](https://github.com/graphql/graphiql)도 포함되어 있습니다. CORS 구성에 대한 자세한 내용은 [이(가)](#cors-config) 아래에 있을 수 있습니다.
 
 ## 샘플 앱 설치{#sample-app}
 
@@ -209,3 +197,29 @@ React 앱이 실행 중이니 AEM에서 콘텐츠를 업데이트하고 앱에 �
 ## 다음 단계 {#next-steps}
 
 다음 장의 [컨텐츠 조각 모델 정의](content-fragment-models.md)에서 컨텐트를 모델링하고 **컨텐츠 조각 모델**&#x200B;으로 스키마를 구축하는 방법을 알아봅니다. 기존 모델을 검토하고 새 모델을 생성합니다. 또한 스키마를 모델의 일부로 정의하는 데 사용할 수 있는 다양한 데이터 유형에 대해서도 학습합니다.
+
+## (보너스) CORS 구성 {#cors-config}
+
+AEM은 기본적으로 보안을 유지하므로 인증되지 않은 애플리케이션이 컨텐츠에 연결되어 노출되지 않도록 합니다.
+
+이 튜토리얼의 Responsive 앱이 AEM GraphQL API 끝점과 상호 작용할 수 있도록 하기 위해 GraphQL 엔드포인트 패키지에서 크로스 원본 리소스 공유 구성이 정의되었습니다.
+
+![원본 간 리소스 공유 구성](./assets/setup/cross-origin-resource-sharing-configuration.png)
+
+수동으로 구성하려면:
+
+1. **도구** > **작업** > **웹 콘솔**&#x200B;에서 AEM SDK의 웹 콘솔로 이동합니다.
+1. **Adobe Granite Cross-Origin Resource Sharing Policy** 행을 클릭하여 새 구성을 만듭니다.
+1. 다음 필드를 업데이트하여 다른 필드를 기본값으로 유지합니다.
+   * 허용된 출처:`localhost:3000`
+   * 허용된 출처(Regex):`.* `
+   * 허용되는 경로: `/content/graphql/endpoint.gql`
+   * 허용되는 메서드:`GET`, `HEAD`, `POST`
+      * GraphQL에는 `POST`만 필요하지만 헤드리스 방식으로 AEM과 상호 작용할 때 다른 방법이 유용할 수 있습니다.
+   * 자격 증명 지원:`Yes`
+      * React 앱이 AEM 작성자 서비스의 보호된 GraphQL 끝점과 통신할 때 필요합니다.
+1. **저장**&#x200B;을 클릭합니다
+
+이 구성을 사용하면 `localhost:3000`에서 경로 `/content/graphql/endpoint.gql`의 AEM 작성자 서비스로 시작되는 `POST` HTTP 요청을 허용합니다.
+
+이 구성 및 GraphQL 끝점은 AEM 프로젝트에서 생성됩니다. [자세한 내용은 여기를 참조하십시오](https://github.com/adobe/aem-guides-wknd-graphql/tree/master/aem-project).
