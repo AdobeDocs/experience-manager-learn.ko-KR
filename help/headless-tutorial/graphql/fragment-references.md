@@ -8,12 +8,12 @@ doc-type: tutorial
 activity: develop
 audience: developer
 mini-toc-levels: 1
-kt: null
-thumbnail: null
+kt: 6718
+thumbnail: KT-6718.jpg
 translation-type: tm+mt
-source-git-commit: 5012433a5f1c7169b1a3996453bfdbd5d78e5b1c
+source-git-commit: 2ea667d3bdb73fa4da87b877f14db77d896448a7
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '849'
 ht-degree: 1%
 
 ---
@@ -239,6 +239,12 @@ Adventure 컨텐츠 조각 모델을 업데이트하여 기고자 모델에 참�
 
    ![앱에 추가된 기고자](assets/fragment-references/contributor-added-detail.png)
 
+## 추가 리소스
+
+컨텐츠 조각 및 GraphQL에 대한 자세한 내용은 다음 리소스를 참조하십시오.
+
+* [GraphQL을 사용한 컨텐츠 조각을 사용한 헤드리스 컨텐츠 전달](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-graphql.html)
+* [컨텐츠 조각에 사용할 AEM GraphQL API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html)
 
 ## 축하합니다!{#congratulations}
 
