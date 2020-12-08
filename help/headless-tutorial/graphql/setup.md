@@ -8,12 +8,12 @@ doc-type: tutorial
 activity: develop
 audience: developer
 mini-toc-levels: 1
-kt: null
-thumbnail: null
+kt: 6386
+thumbnail: KT-6386.jpg
 translation-type: tm+mt
-source-git-commit: 2e0352b051bf25a491b67468a76522084e53a71f
+source-git-commit: 2ea667d3bdb73fa4da87b877f14db77d896448a7
 workflow-type: tm+mt
-source-wordcount: '1553'
+source-wordcount: '1590'
 ht-degree: 1%
 
 ---
@@ -67,6 +67,10 @@ ht-degree: 1%
 1. 관리자 암호를 `admin`으로 입력합니다. 모든 관리자 암호는 사용할 수 있지만 로컬 개발에 기본값을 사용하여 다시 구성할 필요가 없습니다.
 1. 몇 분 후 AEM 인스턴스가 설치를 완료하고 새 브라우저 창이 [http://localhost:4502](http://localhost:4502)에서 열립니다.
 1. 사용자 이름 `admin` 및 암호 `admin`로 로그인합니다.
+
+>[!CAUTION]
+>
+> 설치를 계속하려면 Quickstart SDK에서 GraphQL 기능을 수동으로 활성화해야 합니다. 자세한 내용은 Adobe 담당자에게 문의하십시오. 이 수동 단계는 2021년 기능이 릴리스될 때만 필요합니다.
 
 ## 샘플 컨텐츠 설치{#wknd-site}
 
