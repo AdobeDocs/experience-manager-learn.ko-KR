@@ -4,10 +4,10 @@ user-guide-description: Adobe Experience Manager Sites을 위한 비디오 및 �
 breadcrumb-title: AEM Sites 자습서
 sub-product: sites
 translation-type: tm+mt
-source-git-commit: 988e390dd9e1fc6033b3651db151e6a60ce4efaa
+source-git-commit: 16c73d19584eefff3c9551d2a3174b5b8ed6d427
 workflow-type: tm+mt
-source-wordcount: '476'
-ht-degree: 15%
+source-wordcount: '441'
+ht-degree: 21%
 
 ---
 
@@ -16,36 +16,36 @@ ht-degree: 15%
 
 + [개요](overview.md)
 + 페이지 작성 {#page-authoring}
-   + [작성 개요](page-authoring/aem-sites-authoring-overview.md)
-   + [AEM Sites의 기본 항법](page-authoring/basic-handling-sites-feature-video-use.md)
-   + [AEM Sites의 콘텐츠 계층](page-authoring/content-hierarchy-feature-video-use.md)
-   + [AEM Sites의 페이지 작성](page-authoring/page-authoring-overview-feature-video-use.md)
-   + [새 페이지 만들기](page-authoring/creating-page-feature-video-use.md)
-   + [페이지 편집기 사용](page-authoring/page-editor-feature-video-use.md)
-   + [반응형 레이아웃 이해](page-authoring/responsive-layout-feature-video-understand.md)
-   + [AEM Sites의 페이지 태그 지정](page-authoring/page-tagging-feature-video-use.md)
+   + [작성](page-authoring/aem-sites-authoring-overview.md)
+   + [탐색](page-authoring/basic-handling-sites-feature-video-use.md)
+   + [사이트 구조](page-authoring/content-hierarchy-feature-video-use.md)
+   + [페이지 만들기](page-authoring/creating-page-feature-video-use.md)
+   + [페이지 작성](page-authoring/page-authoring-overview-feature-video-use.md)
+   + [페이지 편집기](page-authoring/page-editor-feature-video-use.md)
+   + [페이지 태그 지정](page-authoring/page-tagging-feature-video-use.md)
    + [페이지 버전 관리](page-authoring/page-versioning-feature-video-use.md)
    + [페이지 버전 비교](page-authoring/page-diff-feature-video-use.md)
-   + [페이지 속성 이해](page-authoring/page-properties-feature-video-understand.md)
-   + [기본 페이지 작업](page-authoring/page-operations-feature-video-use.md)
-   + [페이지 게시](page-authoring/publication-management-feature-video-use.md)
-   + [편집 가능한 페이지 템플릿 사용](page-authoring/template-editor-feature-video-use.md)
-   + [스타일 시스템 사용](page-authoring/style-system-feature-video-use.md)
-   + [타임워프 사용](page-authoring/timewarp-feature-video-use.md)
+   + [페이지 속성](page-authoring/page-properties-feature-video-understand.md)
+   + [페이지 작업](page-authoring/page-operations-feature-video-use.md)
+   + [레이아웃 모드](page-authoring/responsive-layout-feature-video-understand.md)
+   + [게시](page-authoring/publication-management-feature-video-use.md)
+   + [편집 가능한 템플릿](page-authoring/template-editor-feature-video-use.md)
+   + [스타일 시스템](page-authoring/style-system-feature-video-use.md)
+   + [타임워프](page-authoring/timewarp-feature-video-use.md)
 + 구성 요소 {#components}
    + [구성 요소 개발](components/component-development.md)
-   + [핵심 구성 요소 이해](components/core-components-feature-video-understand.md)
-   + [구성 요소 콘솔 사용](components/components-console-feature-video-use.md)
+   + [코어 구성 요소](components/core-components-feature-video-understand.md)
+   + [구성 요소 콘솔](components/components-console-feature-video-use.md)
 + 콘텐츠 조각 {#content-fragments}
    + [컨텐츠 조각 작성](content-fragments/content-fragments-feature-video-use.md)
    + [컨텐츠 조각 제공](content-fragments/content-fragments-delivery-feature-video-use.md)
-   + [컨텐츠 조각과 번역 사용](content-fragments/content-fragments-translation-feature-video-use.md)
-   + [컨텐츠 조각과 경험 조각 이해](content-fragments/understand-content-fragments-and-experience-fragments.md)
+   + [컨텐츠 조각으로 변환](content-fragments/content-fragments-translation-feature-video-use.md)
+   + [컨텐츠 조각과 경험 조각](content-fragments/understand-content-fragments-and-experience-fragments.md)
 + 경험 조각 {#experience-fragments}
    + [경험 조각 사용](experience-fragments/experience-fragments-feature-video-use.md)
    + [경험 조각 이해](experience-fragments/experience-fragments-feature-video-understand.md)
    + [경험 조각으로 소셜 게시 설정](experience-fragments/experience-fragments-social-technical-video-setup.md)
-   + [컨텐츠 조각과 경험 조각 이해](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html)
+   + [컨텐츠 조각과 경험 조각](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html)
 + 개발 {#developing}
    + [AEM 프로젝트 전형](developing/aem-project-archetype.md)
    + [AEM Sites 시작하기](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
