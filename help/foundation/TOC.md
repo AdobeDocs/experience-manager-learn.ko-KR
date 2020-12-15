@@ -17,9 +17,9 @@ ht-degree: 19%
 
 + [개요](./overview.md)
 + 관리 {#administration}
-   + [AEM을 업그레이드해야 하는 이유 이해](./administration/understand-reasons-to-upgrade.md)
-   + [oak-run.jar를 사용하여 인덱스 관리](./administration/use-oak-run-jar-to-manage-indexes.md)
-   + [온라인 수정 사용](./administration/use-online-revision-clean-up.md)
+   + [AEM 업그레이드해야 하는 이유 이해](./administration/understand-reasons-to-upgrade.md)
+   + [oak-run.jar를 사용하여 색인 관리](./administration/use-oak-run-jar-to-manage-indexes.md)
+   + [온라인 개정 정리 사용](./administration/use-online-revision-clean-up.md)
    + [시스템 개요 대시보드 사용](./administration/use-the-system-overview-dashboard.md)
 + 인증 {#authentication}
    + [OAuth 인증](authentication/oauth-code-sample-develop.md)
@@ -34,7 +34,7 @@ ht-degree: 19%
    + [로컬 AEM 개발 환경 설정](./development/set-up-a-local-aem-development-environment.md)
    + [Sling 동적 포함 설정](./development/set-up-sling-dynamic-include.md)
    + [Java API 우수 사례 이해](./development/understand-java-api-best-practices.md)
-   + [Sling 모델 내보내기 이해](./development/understand-sling-model-exporter.md)
+   + [Sling 모델 내보내기 프로그램 이해](./development/understand-sling-model-exporter.md)
 + 프로젝트 {#projects}
    + [AEM 프로젝트 개발](./projects/develop-aem-projects.md)
    + [프로젝트 마스터 사용](./projects/use-project-masters.md)
