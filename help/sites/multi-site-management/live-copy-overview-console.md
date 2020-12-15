@@ -1,6 +1,6 @@
 ---
 title: Live Copy 콘솔
-description: 다음 비디오에서는 사이트 전체의 상속을 보거나 관리하거나 Live Copy 개요 콘솔을 사용하여 롤아웃 작업을 수행하는 방법에 대해 설명합니다.
+description: 다음 비디오에서는 Live Copy 개요 콘솔을 사용하여 사이트 전체의 상속을 보거나 관리하거나 롤아웃 작업을 수행하는 방법을 설명합니다.
 feature: language-copy, live-copy, multi-site-manager
 topics: localization, authoring, content-architecture
 audience: all
