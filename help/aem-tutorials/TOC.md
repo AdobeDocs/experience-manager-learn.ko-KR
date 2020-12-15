@@ -19,7 +19,7 @@ ht-degree: 23%
 + [AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/overview.html)
 + [AEM as Cloud Service](https://docs.adobe.com/content/help/ko-KR/experience-manager-learn/cloud-service/overview.html)
 + [AEM 기반 정보](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
-+ 다중 단계 Tutorials {#multi}
++ 다단계 Tutorials {#multi}
    + [AEM Sites 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
    + [AEM 헤드리스 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
    + [AEM SPA 편집기 시작 및 반응](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html)
