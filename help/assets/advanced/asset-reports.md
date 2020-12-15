@@ -40,7 +40,7 @@ AEM Assets은 직관적인 사용자 경험을 통해 대규모 리포지토리�
       LEFT(D2,(LEN(D2)-2))*1024*1024*1024*1024, 0))))
 ```
 
-### 크기별 자산 수 {#asset-count-by-size}
+### 크기별 자산 개수 {#asset-count-by-size}
 
 #### 200KB 미만 {#less-than-kb}
 
@@ -48,7 +48,7 @@ AEM Assets은 직관적인 사용자 경험을 통해 대규모 리포지토리�
 =COUNTIFS(E2:E1000,"< 200000")
 ```
 
-#### 200KB ~ 500KB {#kb-to-kb}
+#### 200KB~500KB {#kb-to-kb}
 
 ```
 =COUNTIFS(E2:E1000,">= 200000", E2:E1000,"<= 500000")
@@ -62,4 +62,4 @@ AEM Assets은 직관적인 사용자 경험을 통해 대규모 리포지토리�
 
 ## 추가 리소스{#additional-resources}
 
-[차트가 있는 모든 자산 Excel 파일 다운로드](./assets/asset-reports/all-assets.xlsx)
+[차트](./assets/asset-reports/all-assets.xlsx)와 함께 모든 자산 Excel 파일 다운로드
