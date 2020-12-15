@@ -1,5 +1,5 @@
 ---
-title: Live Copy와 Blueprint의 관계 이해
+title: Live Copy와 블루프린트 간의 관계 이해
 description: 다음 비디오에서는 Live Copy가 AEM Sites의 Blueprint와 어떻게 관련되어 있는지 설명합니다.
 feature: language-copy, live-copy, multi-site-manager
 topics: localization, authoring, content-architecture
