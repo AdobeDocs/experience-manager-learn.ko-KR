@@ -1,6 +1,6 @@
 ---
 title: AEM 사이트 페이지용 페이지 버전 만들기
-description: 다음 비디오에서는 페이지 버전을 만들고, 페이지 버전을 미리 보고, 복원하며, 현재 페이지 버전을 저장된 페이지 버전과 비교하는 방법을 설명합니다.
+description: 다음 비디오에서는 페이지 버전을 만들고, 페이지 버전을 미리 보고, 복원하며, 현재 페이지 버전을 저장된 페이지 버전과 비교하는 방법을 강조 표시합니다.
 feature: page-diff
 topics: authoring
 audience: author, marketer
@@ -18,9 +18,9 @@ ht-degree: 27%
 ---
 
 
-# 페이지 버전 {#creating-page-versions-aem-sites}을(를) 만드는 중
+# 페이지 버전 {#creating-page-versions-aem-sites} 만들기
 
-페이지 버전 관리를 통해 컨텐츠 작성자는 페이지 버전을 만들어 페이지와 연관된 변경 사항을 추적할 수 있으며 버전을 미리 보고 버전을 복원하며 현재 버전의 페이지와 버전을 비교하는 옵션을 제공합니다.
+페이지 버전 매기기를 통해 컨텐츠 작성자는 페이지 버전을 만들어 페이지와 관련된 변경 사항을 추적할 수 있으며 버전을 미리 보고 버전을 복원하며 버전을 현재 버전의 페이지와 비교하는 옵션을 제공합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32151?quality=9&learn=on)
 
