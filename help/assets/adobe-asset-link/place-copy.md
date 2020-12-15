@@ -1,6 +1,6 @@
 ---
 title: 자산 복사 가져오기 작업 사용
-description: 복사 배치 작업을 사용하여 AEM Assets의 자산을 사용하는 방법을 알아봅니다.
+description: 복사 배치 작업을 사용하여 AEM Assets의 에셋을 사용하는 방법을 알아봅니다.
 sub-product: 자산
 feature: adobe-asset-link
 topics: authoring, collaboration, operations, sharing, metadata, images, operations
@@ -18,8 +18,8 @@ ht-degree: 0%
 ---
 
 
-# 복사본 배치 {#place-copy}
+# 사본 가져오기 {#place-copy}
 
-복사 배치 작업을 사용하여 AEM Assets의 자산을 사용하는 방법을 알아봅니다.
+복사 배치 작업을 사용하여 AEM Assets의 에셋을 사용하는 방법을 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/34049/?quality=12)
