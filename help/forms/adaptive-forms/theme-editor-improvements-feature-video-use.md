@@ -1,6 +1,6 @@
 ---
-title: AEM Forms의 향상된 테마 편집기
-seo-title: AEM Forms의 향상된 테마 편집기
+title: AEM Forms의 테마 편집기 개선 사항
+seo-title: AEM Forms의 테마 편집기 개선 사항
 description: AEM 6.3에서 적응형 양식에 대한 테마 편집기 개선
 seo-description: AEM 6.3에서 적응형 양식에 대한 테마 편집기 개선
 uuid: cd1f01ee-2603-4d9a-a8ad-2981e3937956
@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# AEM Forms{#theme-editor-improvements-in-aem-forms}의 테마 편집기 개선
+# AEM Forms{#theme-editor-improvements-in-aem-forms}의 테마 편집기 개선 사항
 
 AEM 6.3에서 적응형 양식에 대한 테마 편집기 개선
 
