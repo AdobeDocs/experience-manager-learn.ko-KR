@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # 시작 속성 {#adobe-target-extension}에 타겟 확장 추가
 
-이 비디오를 사용하려면 이미 [AEM](../experience-platform-launch/overview.md)과(와) 통합된 Experience Platform Launch이 있어야 합니다.
+이 비디오를 팔로우하려면 이미 [AEM](../experience-platform-launch/overview.md)에 통합된 Experience Platform Launch이 있어야 합니다.
 
 Experience Platform Launch을 사용하여 AEM 웹 사이트에 Adobe Target을 활성화하는 방법을 알아봅니다.
 
@@ -32,6 +32,6 @@ Experience Platform Launch을 사용하여 AEM 웹 사이트에 Adobe Target을 
 
 ## 지원 링크
 
-+ [Adobe Experience Cloud 디버거 - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
-+ [Adobe Experience Cloud 디버거 - Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
-+ [Adobe Experience Platform 디버거 소개](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/web-sdk/introduction-to-the-experience-platform-debugger.html)
++ [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
++ [Adobe Experience Cloud Debugger - Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
++ [Adobe Experience Platform Debugger 소개](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/web-sdk/introduction-to-the-experience-platform-debugger.html)
