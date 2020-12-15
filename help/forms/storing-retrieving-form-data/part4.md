@@ -1,6 +1,6 @@
 ---
 title: MySQL 데이터베이스에서 양식 데이터 저장 및 검색
-description: 양식 데이터 저장 및 검색에 관련된 단계를 단계별로 안내하는 멀티 파트 자습서
+description: 양식 데이터 저장 및 검색에 관련된 단계를 단계별로 안내하는 다중 부분 자습서
 feature: adaptive-forms
 topics: development
 audience: developer
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # 클라이언트 라이브러리 만들기
 
-AEM 클라이언트 라이브러리는 모든 클라이언트측 JavaScript 코드를 관리합니다. 이 문서의 경우 안내서 bridge API를 사용하여 응용 양식 데이터를 가져오기 위한 간단한 JavaScript를 만들었습니다. 응용 양식 데이터를 가져오면 POST 호출이 서블릿에 생성되어 데이터베이스에 적응형 양식 데이터를 삽입하거나 업데이트합니다. getALLUrlParams 함수는 URL의 매개 변수를 반환합니다. guid 매개 변수가 URL에 있는 경우 삽입 작업이 아닌 경우 업데이트 작업을 수행해야 합니다.나머지 기능은 .savebutton 클래스의 click 이벤트와 연관된 코드에서 처리됩니다.
+AEM 클라이언트 라이브러리는 모든 클라이언트측 JavaScript 코드를 관리합니다. 이 문서의 경우 안내서 브리지 API를 사용하여 응용 양식 데이터를 가져오기 위한 간단한 JavaScript를 만들었습니다. 적응형 양식 데이터를 가져오면 POST 호출이 서블릿에 수행되어 데이터베이스에 적응형 양식 데이터를 삽입하거나 업데이트합니다. getALLUrlParams 함수는 URL의 매개 변수를 반환합니다. guid 매개 변수가 URL에 있으면 삽입 작업이 아닌 경우 업데이트 작업을 수행해야 합니다.나머지 기능은 .savebutton 클래스의 click 이벤트와 연관된 코드에서 처리됩니다.
 
 >[!NOTE]
 >
