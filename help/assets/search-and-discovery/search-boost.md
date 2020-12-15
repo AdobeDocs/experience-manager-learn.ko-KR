@@ -1,6 +1,6 @@
 ---
 title: 검색 증폭
-description: AEM Assets 검색 활성화 및 AEM의 광범위한 컨텍스트에서 사용 방법에 대한 심층 분석
+description: AEM의 광범위한 컨텍스트에서 AEM Assets 검색 활성화 및 작동 방식에 대해 자세히 살펴봅니다.
 topics: metadata, search
 audience: all
 doc-type: feature video
@@ -19,8 +19,8 @@ ht-degree: 4%
 
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=12&learn=on)
 
-## AEM Assets의 검색 활성화 이해{#understanding-search-boosting-in-aem-assets}
+## AEM Assets{#understanding-search-boosting-in-aem-assets}의 검색 부흥 이해
 
-AEM Assets 검색 활성화 및 AEM의 광범위한 컨텍스트에서 사용 방법에 대한 심층 분석
+AEM의 광범위한 컨텍스트에서 AEM Assets 검색 활성화 및 작동 방식에 대해 자세히 살펴봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16770/?quality=12&learn=on)
