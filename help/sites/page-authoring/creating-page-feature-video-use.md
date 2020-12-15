@@ -20,8 +20,8 @@ ht-degree: 0%
 ---
 
 
-# 페이지 {#creating-page-aem-sites} 만들기
+# 페이지 만들기 {#creating-page-aem-sites}
 
-Adobe Experience Manager의 페이지 템플릿을 사용하여 사이트 페이지를 만드는 방법을 알아봅니다.
+Adobe Experience Manager에서 페이지 템플릿을 사용하여 사이트 페이지를 만드는 방법을 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/31827?quality=12&learn=on)
