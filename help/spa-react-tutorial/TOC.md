@@ -1,5 +1,5 @@
 ---
-sub-product: sites
+sub-product: 사이트
 topics: development, spa
 version: cloud-service
 doc-type: tutorial
