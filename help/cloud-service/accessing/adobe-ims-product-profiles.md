@@ -1,6 +1,6 @@
 ---
 title: Adobe IMS 제품 프로필 및 AEM
-description: Adobe IMS 제품 프로필은 사용자가 AEM 작성자 서비스에 로그인하고 해당 사용자가 속한 제품 프로필에 따라 액세스 기준을 제공할 수 있도록 권한을 부여합니다.
+description: Adobe IMS 제품 프로필은 사용자가 AEM 작성자 서비스에 로그인하고 해당 사용자가 속한 제품 프로필에 따라 액세스 기준을 제공할 수 있는 권한을 부여합니다.
 feature: users-and-groups
 topics: authorization, permissions
 version: cloud-service
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Adobe IMS 제품 프로필
 
-Adobe IMS 제품 프로필은 사용자가 AEM 작성자 서비스에 로그인하고 해당 사용자가 속한 제품 프로필에 따라 액세스 기준을 제공할 수 있도록 권한을 부여합니다.
+Adobe IMS 제품 프로필은 사용자가 AEM 작성자 서비스에 로그인하고 해당 사용자가 속한 제품 프로필에 따라 액세스 기준을 제공할 수 있는 권한을 부여합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/39156/?quality=12&learn=on)
 
