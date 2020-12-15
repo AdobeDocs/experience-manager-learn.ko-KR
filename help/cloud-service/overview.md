@@ -1,7 +1,7 @@
 ---
 title: Adobe Experience Manager as Cloud Service 자습서
-description: Cloud Service의 Adobe Experience Manager(AEM)을 위한 자습서 모음
-sub-product: sites, cloud manager, foundation, assets
+description: Cloud Service으로 제공되는 Adobe Experience Manager(AEM)용 자습서 모음
+sub-product: 사이트, 클라우드 관리자, 파운데이션, 자산
 kt: 3289
 translation-type: tm+mt
 source-git-commit: 23664bae44b74ee35ab7f7cb415d2ba017ea8752
@@ -14,7 +14,7 @@ ht-degree: 8%
 
 # 개요 {#overview}
 
-Adobe Experience Manager(AEM)는 이제 클라우드 서비스로 제공됩니다. AEM은 Cloud Service로서 모든 사용 사례와 기능을 유지하고 확장하면서 과거 투자 및 혁신을 바탕으로 차세대 Experience Manager 제품 라인을 출시했습니다.
+Adobe Experience Manager(AEM)는 이제 클라우드 서비스로 제공됩니다. AEM은 Cloud Service의 차세대 Experience Manager 제품군을 제공하며, 이전 투자와 혁신을 바탕으로 모든 사용 사례 및 기능을 보존 및 확장하여 제공합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/31085/?quality=12&learn=on)
 
@@ -22,19 +22,19 @@ Adobe Experience Manager(AEM)는 이제 클라우드 서비스로 제공됩니�
 
 * **[asset compute 마이크로서비스 확장성(자습서)](./asset-compute/overview.md)**
 
-   *사용자 정의 에셋 표현물을 생성하기 위해 Asset compute 작업자를 개발하는 방법을 알아봅니다.*
+   *사용자 정의 에셋 표현물을 생성하기 위해 Asset compute 작업자를 개발하는 방법에 대해 알아봅니다.*
 
 * **[AEM에 대한 액세스를 Cloud Service으로 구성(자습서)](./accessing/overview.md)**
 
    *AEM에 액세스할 수 있도록 Adobe Admin Console에서 IMS 사용자를 구성하는 방법에 대해 알아봅니다.*
 
-* **[AEM을 Cloud Service으로 디버깅(자습서)](./debugging/cloud-service/overview.md)**
+* **[Cloud Service으로 AEM 디버깅(자습서)](./debugging/cloud-service/overview.md)**
 
-   *AEM을 Cloud Service으로 디버깅하는 방법 살펴보기*
+   *Cloud Service으로 AEM을 디버깅하는 방법 살펴보기*
 
 * **[AEM SDK 디버깅(자습서)](./debugging/aem-sdk-local-quickstart/overview.md)**
 
-   *AEM에서 Cloud Service SDK의 로컬 quickstart로 애플리케이션을 디버깅하는 데 사용되는 다양한 도구를 살펴보십시오*
+   *Cloud Service SDK의 로컬 quickstart로 AEM에서 애플리케이션을 디버깅하는 데 사용되는 다양한 도구를 살펴봅니다.*
 
 * **[로컬 개발 환경 설정(자습서)](./local-development-environment/overview.md)**
 
@@ -53,7 +53,7 @@ Adobe Experience Manager(AEM)는 이제 클라우드 서비스로 제공됩니�
          </a>
       </div>
       <p>
-         <em>Adobe Admin Console의 IMS 사용자가 AEM에 액세스하도록 구성합니다.</em>
+         <em>Adobe Admin Console에서 AEM에 액세스할 수 있도록 IMS 사용자를 구성합니다.</em>
       <p>
    </td>   
    <td>
@@ -66,7 +66,7 @@ Adobe Experience Manager(AEM)는 이제 클라우드 서비스로 제공됩니�
          </a>
       </div>
       <p>
-         <em>Cloud Service 개발으로 AEM용으로 로컬 개발 시스템을 준비할 수 있습니다.</em>
+         <em>Cloud Service 개발으로서 AEM용으로 로컬 개발 시스템을 준비할 수 있습니다.</em>
       <p>
    </td>   
    <td>
@@ -79,12 +79,12 @@ Adobe Experience Manager(AEM)는 이제 클라우드 서비스로 제공됩니�
          </a>
       </div>
       <p>
-         <em>Cloud Service SDK의 로컬 빠른 시작으로서 AEM에서 애플리케이션을 디버깅하는 데 사용되는 툴을 살펴보십시오.</em>
+         <em>Cloud Service SDK의 로컬 quickstart로 AEM에서 애플리케이션을 디버깅하는 데 사용되는 툴을 살펴봅니다.</em>
       <p>
    </td>
 </table>
 
 ## 추가 리소스
 
-* [Experience League - Adobe Experience Manager 둘러보기](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
-* [Cloud Service 문서로서 Adobe Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html)
+* [Experience League - Adobe Experience Manager 살펴보기](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
+* [Adobe Experience Manager을 Cloud Service 문서로 사용](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html)
