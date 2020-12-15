@@ -1,8 +1,8 @@
 ---
 title: 업그레이드해야 하는 이유 이해
-description: 최신 버전의 Adobe Experience Manager으로 업그레이드를 고려 중인 고객을 위한 주요 기능의 수준 높은 분류
+description: 최신 버전의 Adobe Experience Manager으로 업그레이드하는 것을 고려 중인 고객을 위한 주요 기능의 상세 분류.
 version: 6.5
-sub-product: 자산, 클라우드 관리자, 커머스, 콘텐츠 서비스, 다이내믹 미디어, 양식, 기반, 스크린, 사이트
+sub-product: 자산, 클라우드 관리자, 커머스, 컨텐츠 서비스, 다이내믹 미디어, 양식, 기반, 스크린, 사이트
 topics: best-practices, upgrade
 audience: all
 activity: understand
@@ -18,75 +18,75 @@ ht-degree: 2%
 
 # 업그레이드해야 하는 이유 이해
 
-최신 버전의 Adobe Experience Manager으로 업그레이드를 고려 중인 고객을 위한 주요 기능의 수준 높은 분류
+최신 버전의 Adobe Experience Manager으로 업그레이드하는 것을 고려 중인 고객을 위한 주요 기능의 상세 분류.
 
 ## AEM 6.5로 업그레이드하기 위한 주요 기능
 
 + [Adobe Experience Manager 6.5 릴리스 노트](https://helpx.adobe.com/kr/experience-manager/6-5/release-notes.html)
 
-### 향상된 기반
+### 향상된 기본 기능
 
-Adobe Experience Manager 6.5는 다음을 통해 시스템의 안정성, 성능 및 지원 능력을 지속적으로 향상하고 있습니다.
+Adobe Experience Manager 6.5는 다음을 통해 시스템의 안정성, 성능 및 지원 기능을 지속적으로 향상시켜 줍니다.
 
-+ **Java 11** 지원(Java 8 지원 유지).
++ **Java 11** 지원(Java 8 지원 유지 관리).
 
 ### 웹 사이트 제작 및 관리
 
-AEM Sites은 웹 사이트 제작 및 배포를 가속화하기 위해 고안된 다양한 기능을 도입하고 있습니다.
+AEM Sites은 웹 사이트 제작 및 빌드를 가속화하기 위해 고안된 다양한 기능을 제공합니다.
 
-+ **SPA** Editorsupport를 통해 SPA(단일 페이지 애플리케이션)는 AEM에서 완벽하게 제작하여 마케터가 필요로 하는 풍부한 저작 경험을 지원할 수 있습니다.
-+_ **JavaScript SDK의**, SPA 프로젝트 시작 키트 및 지원 빌드 도구를 사용하여 프런트 엔드 개발자는 SPA 편집기와 별도로 AEM 편집기와 호환되는 단일 페이지 애플리케이션을 개발할 수 있습니다.
-+ **코어** 구성 요소는 다양한 새 구성 요소, 구성 요소 라이브러리 및  **기존 핵심 구성** 요소에 대한 다양한 개선 사항을 제공합니다.
-+ 또한 **Translation**&#x200B;의 향상된 기능을 통해 AEM Sites의 번역을 간소화할 수 있습니다.
++ **SPA** Editorsupport를 통해 SPA(단일 페이지 애플리케이션)는 AEM에서 완벽하게 제작되므로 마케터에게 익숙한 리치 저작 경험을 지원할 수 있습니다.
++_ **JavaScript SDK의**, SPA 프로젝트 시작 키트 및 지원 빌드 도구를 사용하여 프런트 엔드 개발자는 AEM과 독립적으로 SPA 편집기와 호환되는 단일 페이지 애플리케이션을 개발할 수 있습니다.
++ **핵심** 구성 요소에는 다양한 새 구성 요소,  **구성 요소 라이브러리** 및 기존 핵심 구성 요소에 대한 다양한 개선 사항이 포함되어 있습니다.
++ 또한 **번역**&#x200B;개선 사항을 통해 AEM Sites의 번역이 능률화됩니다.
 
 ### 유연한 경험
 
-AEM은 AEM 외부에 있는 컨텐츠를 쉽게 사용할 수 있는 새롭고 향상된 툴을 통해 유동적인 경험을 지속적으로 수용하고 있습니다.
+AEM은 AEM 외부에 있는 컨텐츠를 손쉽게 사용할 수 있는 새롭고 향상된 툴을 통해 유동적인 경험을 지속적으로 수용하고 있습니다.
 
-+ **컨텐츠** 조각버전 비교/비교 및 주석을 지원합니다.
-+ **AEM Assets HTTP** API는 DAM에서 바로  **컨텐츠** 조각 **을 JSON으로 노출할 수 있도록**지원합니다.
-   **경험** 조각 **은 참조하는 페이지** 를 참조하는  **전체 텍스트** 검색 및  **AEM Dispatcher 캐시**&#x200B;무효화를지원합니다.
++ **컨텐츠** 조각은 버전 비교/비교 및 주석을 지원합니다.
++ **AEM Assets HTTP** API는 DAM에서 바로  **컨텐츠 조각** 을 JSON **으로 표시할 수 있습니다**.
+   **경험** 조각 **은 페이지** 를 참조하기 위해  **전체 텍스트** 검색 및  **AEM Dispatcher**&#x200B;캐시 무효화를지원합니다.
 
 ### 자산 관리
 
-AEM Assets은 DAM의 사용, 관리 및 이해를 개선하기 위해 풍부한 에셋 관리 기능을 기반으로 계속 구축하고 있습니다. AEM 6.5는 Adobe Creative Cloud과 크리에이티브 워크플로우 간의 통합을 지속적으로 향상시키고 있습니다.
+AEM Assets은 DAM의 사용, 관리 및 이해를 개선하기 위해 풍부한 에셋 관리 기능을 기반으로 계속 구축하고 있습니다. AEM 6.5는 Adobe Creative Cloud과 크리에이티브 워크플로우 간의 통합을 계속 개선합니다.
 
-+ **Adobe 에셋** 링크를 사용하면 크리에이티브 전문가를 Adobe Creative Cloud 툴의 AEM Assets에 바로 연결할 수 있습니다.
-+ **Adobe** Stockintegration을 사용하면 AEM Assets 환경에서 바로 Adobe Stock 이미지에 액세스할 수 있으므로 완벽한 컨텐츠 검색 경험을 제공할 수 있습니다.
-+ **AEM** Desktop은 버전 2.0을 재구상하고 성능과 안정성을 개선합니다.
-+ **커넥티드** 자산은 서로 다른 AEM Assets 인스턴스의 자산에 원활하게 액세스하고 사용할 수 있도록 개별 AEM Sites 인스턴스를 지원합니다.
-+ **360 Video** 및 **사용자 지정 비디오 축소판**&#x200B;을(를) 포함하여 **Dynamic Media**&#x200B;에서 비디오 지원을 업데이트했습니다.
++ **Adobe Asset** Link는 Adobe Creative Cloud 툴에서 크리에이티브 전문가를 AEM Assets에 바로 연결할 수 있습니다.
++ **Adobe** Stockintegration을 사용하면 AEM Assets 환경에서 바로 Adobe Stock 이미지에 액세스할 수 있으므로 컨텐츠를 매끄럽게 검색할 수 있습니다.
++ **AEM Desktop** Improps 버전 2.0을 다시 구상하고 성능과 안정성을 개선합니다.
++ **연결된** 자산은 서로 다른 AEM Assets 인스턴스의 에셋에 원활하게 액세스하고 사용할 수 있도록 개별 AEM Sites 인스턴스를 지원합니다.
++ **Dynamic Media**&#x200B;에서 **360 비디오** 및 **사용자 지정 비디오 축소판**&#x200B;을(를) 포함하여 비디오 지원을 업데이트했습니다.
 
 ### 콘텐츠 인텔리전스
 
-AEM은 모든 경험을 향상시키기 위해 머신 러닝과 인공 지능을 활용하여 스마트 기술과의 통합을 지속적으로 강화하고 있습니다.
+AEM은 모든 경험을 개선하기 위해 머신 러닝과 인공 지능을 활용하여 스마트 기술과의 통합을 지속적으로 구축하고 있습니다.
 
-+ **Adobe 자산** 링크 **는 시각적 유사성 검색** 기능을 추가하므로  **Adobe Creative Cloud 도구** 내에서 유사한 이미지를 손쉽게 찾아 사용할 수 있습니다.
++ **Adobe Asset** Linkes는  **시각적 유사성 검색** 기능을 추가하므로  **Adobe Creative Cloud 도구** 내에서 유사한 이미지를 손쉽게 검색하고 사용할 수 있습니다.
 
 ### 통합
 
 AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있습니다.
 
-+ **경험** 조각 **은 JSON으로 내보내기** 를 지원하고, Adobe Target에서 경험 조각 **을 기반으로 하는 오퍼XV를 삭제하** 는 기능을 지원함으로써  **Adobe Targetby와의 긴밀한 통합**   ****&#x200B;을 제공합니다.
++ **경험** 조각은 JSON을 Adobe Target으로  **내보내기** 를 지원하고, Adobe Target에서 경험 조각 기반의 오프퍼블리셔를  **삭제하** 는 기능을 지원함으로써  **Adobe Targetmentals와의 통합**   ****&#x200B;을 강화합니다.
 
 ### AMS Cloud Manager
 
 [Adobe AMS(Managed Services) 고객을 위한 Cloud Manager](https://adobe.ly/2HODmsv) 기능은 다음과 같습니다.
 
-+ Cloud Manager는 자산 처리&#x200B;**의 자동 성능 테스트를 포함하여, AEM 배포 지원을 AEM Sites에서** AEM Assets **까지 확장합니다.**
-+ **사전 정의된 임계값에 AEM** 게시 계층의 자동 크기 조정을 통해 최종 사용자 경험을 최적화할 수 있습니다.
-+ **비프로덕션** 파이프라인을 통해 개발 팀은 Cloud Manager를 활용하여 코드 품질을 지속적으로 확인하고 낮은 환경(개발 및 QA)에 배포할 수 있습니다.
-+ **CI/CD Pipeline** API클라우드 관리자를 프로그래밍 방식으로 활용하는 고객에게 사내 개발 인프라와의 통합 가능성을 높입니다.
++ Cloud Manager는 자산 처리&#x200B;**의 자동 성능 테스트를 포함하여 AEM Sites에서** AEM Assets **까지 AEM 배포 지원을 확장합니다.**
++ **사전** 정의된 임계값에서 AEM 게시 계층의 자동 크기 조정을 통해 최적의 최종 사용자 환경을 보장합니다.
++ **비프로덕션** 파이프라인을 통해 개발 팀은 Cloud Manager를 활용하여 코드 품질을 지속적으로 확인하고 하위 환경(개발 및 QA)에 배포할 수 있습니다.
++ **CI/CD Pipeline** APIsallow 고객은 Cloud Manager를 프로그래밍 방식으로 사용하여 사내 개발 인프라와의 통합을 더욱 강화할 수 있습니다.
 
 ## 기본 기능
 
-다음은 AEM에서 제공하는 주요 기반 기능의 매트릭스입니다. 이러한 기능 중 일부는 각 릴리스에 추가된 이전 버전의 증분 개선 기능에서 도입되었습니다.
+다음은 AEM에서 제공하는 주요 기본 기능의 매트릭스입니다. 이러한 기능 중 일부는 각 릴리스에 추가된 이전 버전의 증분 개선 사항에서 도입되었습니다.
 
 + [AEM Foundation 릴리스 노트](https://helpx.adobe.com/experience-manager/6-5/release-notes/wcm-platform.html)
 
-***이 버전✔의 기능에 대한 <sup>+</sup> 상당한 개선 사항***
+***✔<sup>+</sup> 이 버전의 기능이 크게 향상되었습니다.***
 
-***SP<sup></sup> 는 서비스 ✔ 팩 또는 기능 팩을 통해 이 기능을 사용할 수 있음을 나타냅니다.***
+***✔<sup></sup> SP는 서비스 팩 또는 기능 팩을 통해 해당 기능을 사용할 수 있음을 나타냅니다.***
 
 <table>
     <thead>
@@ -126,7 +126,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/indexing-via-the-oak-run-jar.html">oak-run.jar 인덱스 지원</a>:</strong> Oak 색인에 대한 향상된 다시 인덱싱, 통계 수집 및 일관성 확인</td>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/indexing-via-the-oak-run-jar.html">oak-run.jar 인덱스 지원</a>:</strong> Oak 인덱스의 다시 색인 작성, 통계 수집 및 일관성 확인 기능이 개선되었습니다.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -158,9 +158,9 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/storage-elements-in-aem-6.html" target="_blank">TarMK 또는 MongoMK 저장소</a>:</strong>
-                <br> MongoMK가 백업된 MongoDB 저장소를 사용하여 간단하고 성능이 뛰어난 파일 기반 TarMK(차세대 버전의 TarPM)의 저장 
-                <br> 또는 가로로 확장할 수 있는 옵션</td>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/storage-elements-in-aem-6.html" target="_blank">TarMK 또는 MongoMK 리포지토리</a>:</strong>
+                <br> Options는 TarMK(차세대 버전의 TarPM)의 간단한 성능 파일 기반 저장 공간
+                <br> 을 사용하거나 MongoMK가 지원되는 MongoDB 저장소를 사용하여 가로로 확장할 수 있습니다.</td>
             <td> </td>
             <td>✔</td>
             <td>✔</td>
@@ -170,8 +170,8 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/aem-with-mongodb.html" target="_blank">MongoMK 성능 및 안정성</a>: AEM 6.0이 소개되면서 </strong>
-            MongoMK는 계속 개선되었습니다.</td>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/aem-with-mongodb.html" target="_blank">MongoMK 성능 및 안정성</a>:</strong>
+            AEM 6.0이 소개되면서 MongoMK는 계속 향상되었습니다.</td>
             <td> </td>
             <td> </td>
             <td>✔</td>
@@ -193,7 +193,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
         </tr>
         <tr>
             <td><strong>터치 UI 기능 패리티: </strong>
-                Classic UI와의 생산성 및 기능 패리티 향상으로 UI 작성의 속도를 계속 향상시켜 줍니다.</td>
+                향상된 생산성과 클래식 UI와의 기능 패리티 덕분에 UI 작성의 속도를 계속 향상시킬 수 있습니다.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -203,8 +203,8 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong>Omnisearch: AEM</strong>
-                를 신속하게 검색하고 탐색할 수 있습니다.</td>
+            <td><strong>Omnisearch: </strong>
+                신속하게 AEM 검색 및 탐색</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -226,7 +226,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/upgrade.html" target="_blank">업그레이드 개선</a> 사항: </strong>
-            향상된 업그레이드 기능을 통해 AEM을 보다 빠르고 손쉽게 업그레이드할 수 있습니다.</td>
+            업그레이드 기능을 통해 AEM을 보다 빠르고 손쉽게 업그레이드할 수 있습니다.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -237,7 +237,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/htl/using/overview.html" target="_blank">HTL 템플릿 언어</a>:</strong>
-            프레젠테이션과 로직을 분리하는 최신 템플릿 엔진입니다. 구성 요소 개발 시간이 크게 단축됩니다. 각 릴리스에 추가된 증분 기능</td>
+            프레젠테이션과 논리를 구분하는 최신 템플릿 엔진입니다. 구성 요소 개발 시간을 크게 줄입니다. 각 릴리스에 추가 기능</td>
             <td> </td>
             <td>✔</td>
             <td>✔</td>
@@ -248,7 +248,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
         </tr>
         <tr>
             <td><strong><a href="https://sling.apache.org/documentation/bundles/models.html" target="_blank">Sling Models</a>:</strong>
-            JCR 리소스를 비즈니스 개체 및 로직에 모델링하기 위한 유연한 프레임워크입니다. 각 릴리스에 추가된 증분 기능
+            JCR 리소스를 비즈니스 개체 및 로직에 모델링할 수 있는 유연한 프레임워크입니다. 각 릴리스에 추가 기능
             </td>
             <td> </td>
             <td>✔</td>
@@ -260,7 +260,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
         </tr>
         <tr>
             <td><strong><a href="https://adobe.ly/2HODmsv" target="_blank">클라우드 관리자</a>: </strong>
-                Adobe AMS(Managed Services) 고객을 위한 Cloud Manager는 첨단 CI/CD 파이프라인을 통해 개발 및 배포 시간을 단축시켜줍니다.</td>
+                Adobe AMS(Managed Services) 고객을 위한 Cloud Manager는 첨단 CI/CD 파이프라인을 통해 개발 및 배포 시간을 단축시켜 줍니다.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -274,13 +274,13 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
 
 ## 보안 기능
 
-다음은 AEM에서 제공하는 주요 보안 기능의 매트릭스입니다. 이러한 기능 중 일부는 각 릴리스에 추가된 이전 버전의 증분 개선 기능에서 도입되었습니다.
+다음은 AEM에서 제공하는 주요 보안 기능의 매트릭스입니다. 이러한 기능 중 일부는 각 릴리스에 추가된 이전 버전의 증분 개선 사항에서 도입되었습니다.
 
-+ [보안 릴리스 정보](https://helpx.adobe.com/experience-manager/6-5/release-notes/wcm-platform.html#Security)
++ [보안 릴리스 노트](https://helpx.adobe.com/experience-manager/6-5/release-notes/wcm-platform.html#Security)
 
-***이 버전의 기능이 크게 개선되었음을 ✔ 나타냅니다.***
+***✔은 이 버전의 기능이 크게 개선되었음을 나타냅니다.***
 
-***서비스 팩 또는 기능 팩을 통해 <sup>+</sup> 는 기능을 사용할 수 있음을 나타냅니다.***
+***✔<sup>+</sup> 는 서비스 팩 또는 기능 팩을 통해 해당 기능을 사용할 수 있음을 나타냅니다.***
 
 <table>
     <thead>
@@ -298,7 +298,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
     <tbody>
         <tr>
         <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/security-service-users.html" target="_blank">서비스 </a></strong>
-            <br> 사용자 격리권한을 구분하면 관리자 권한이 필요하지 않습니다.</td>
+            <br> 사용자 구획된 권한을 통해 관리자 권한이 필요하지 않습니다.</td>
         <td></td>
         <td>✔</td>
         <td>✔</td>
@@ -319,8 +319,8 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
         <td>✔</td>
     </tr>
     <tr>
-        <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/csrf-protection.html" target="_blank"><strong>CSRFprotectionCross-</strong> <strong></strong></a>
-            <br> Site Request 위조 보호를 즉시 제공합니다.</td>
+        <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/csrf-protection.html" target="_blank"><strong></strong> <strong></strong></a>
+            <br> CSRFprotectionCross-Site 요청 위조 보호를 즉시 제공합니다.</td>
         <td></td>
         <td></td>
         <td>✔</td>
@@ -342,7 +342,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
     </tr>
     <tr>
         <td><strong><a href="https://docs.adobe.com/docs/en/aem/6-5/administer/security/saml-2-0-authenticationhandler.html" target="_blank">향상된 SAML 인증 </a><br>
- </strong>지원 향상된 SAML 리디렉션, 최적화된 그룹 정보 및 키 암호화 문제가 해결되었습니다. 
+ </strong>지원향상된 SAML 리디렉션, 최적화된 그룹 정보 및 키 암호화 문제가 해결되었습니다. 
             <br>
         </td>
         <td></td>
@@ -354,8 +354,8 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
         <td>✔</td>
     </tr>
     <tr>
-        <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ldap-config.html" target="_blank">OSGi </a><br>
- </strong>구성LDAP 인증의 관리 및 업데이트를 간소화합니다.</td>
+        <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ldap-config.html" target="_blank">LDAP를 OSGi </a><br>
+ </strong>구성LDAP 인증의 관리 및 업데이트를 간소화할 수 있습니다.</td>
         <td></td>
         <td>✔</td>
         <td>✔</td>
@@ -365,8 +365,8 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
         <td>✔</td>
     </tr>
     <tr>
-        <td><strong>일반 텍스트 <br>
- </strong>암호에 대한 OSGi 암호화 지원암호 및 기타 중요한 값은 암호화된 형태로 저장하고 자동으로 해독됩니다.</td>
+        <td><strong>일반 텍스트 암호에 대한 OSGi 암호화 <br>
+ </strong>지원암호 및 기타 중요한 값은 암호화된 형태로 저장하고 자동으로 해독할 수 있습니다.</td>
         <td></td>
         <td></td>
         <td></td>
@@ -377,7 +377,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
     </tr>
     <tr>
         <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/user-group-ac-admin.html" target="_blank">CUG </a><br>
- </strong>개선 사항Closed-User Group 구현은 성능 및 확장성 문제를 해결하기 위해 다시 작성되었습니다.</td>
+ </strong>개선 사항Closed-User Group 구현이 성능 및 확장성 문제를 해결하기 위해 다시 작성되었습니다.</td>
         <td></td>
         <td></td>
         <td></td>
@@ -388,7 +388,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
     </tr>
     <tr>
         <td><strong><a href="https://helpx.adobe.com/experience-manager/kt/platform-repository/using/ssl-wizard-technical-video-use.html" target="_blank">SSL </a></strong>
-            <br> 마법사UI를 사용하여 SSL의 설정 및 관리를 간소화할 수 있습니다.</td>
+            <br> 마법사 UI를 사용하여 SSL의 설정 및 관리를 간소화할 수 있습니다.</td>
         <td> </td>
         <td> </td>
         <td> </td>
@@ -399,7 +399,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
     </tr>
     <tr>
         <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/encapsulated-token.html" target="_blank">캡슐화된 토큰 </a></strong>
-            <br> 지원 더 이상 게시 인스턴스 간에 수평 인증을 지원하는 "고정" 세션이 필요하지 않습니다.</td>
+            <br> 지원더 이상 게시 인스턴스 전체에서 가로 인증을 지원하기 위해 "고정" 세션이 필요하지 않습니다.</td>
         <td> </td>
         <td> </td>
         <td>✔</td>
@@ -410,7 +410,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
     </tr>
     <tr>
         <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ims-config-and-admin-console.html" target="_blank">Adobe IMS 인증 </a><br>
- </strong>지원Adobe Managed Services(AMS)에만 국한되며 Adobe IMS(Identity Management 시스템)를 통해 AEM 작성자 인스턴스에 대한 액세스를 중앙에서 관리할 수 있습니다.</td>
+ </strong>지원Adobe AMS(Managed Services)에만 국한되며 Adobe IMS(Identity Management System)를 통해 AEM 작성자 인스턴스에 대한 액세스를 중앙에서 관리할 수 있습니다.</td>
         <td> </td>
         <td> </td>
         <td> </td>
@@ -424,13 +424,13 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
 
 ## 사이트 기능
 
-다음은 AEM에서 제공하는 주요 사이트 기능의 매트릭스입니다. 이러한 기능 중 일부는 각 릴리스에 추가된 이전 버전의 증분 개선 기능에서 도입되었습니다.
+다음은 AEM에서 제공하는 주요 사이트 기능의 매트릭스입니다. 이러한 기능 중 일부는 각 릴리스에 추가된 이전 버전의 증분 개선 사항에서 도입되었습니다.
 
 + [AEM Sites 릴리스 노트](https://helpx.adobe.com/experience-manager/6-5/release-notes/sites.html)
 
-***이 버전✔의 기능에 대한 <sup>+</sup> 상당한 개선 사항***
+***✔<sup>+</sup> 이 버전의 기능이 크게 향상되었습니다.***
 
-***SP<sup></sup> 는 서비스 ✔ 팩 또는 기능 팩을 통해 이 기능을 사용할 수 있음을 나타냅니다.***
+***✔<sup></sup> SP는 서비스 팩 또는 기능 팩을 통해 해당 기능을 사용할 수 있음을 나타냅니다.***
 
 <table>
     <thead>
@@ -448,7 +448,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
     <tbody>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/kt/sites/using/page-editor-feature-video-use.html" target="_blank">터치에 적합한 페이지 작성</a>:</strong>
-            편집자는 터치스크린이 포함된 태블릿과 컴퓨터를 활용할 수 있습니다.</td>
+            편집자가 터치스크린이 있는 태블릿 및 컴퓨터를 활용할 수 있습니다.</td>
             <td></td>
             <td>✔</td>
             <td>✔<sup>+</sup></td>
@@ -459,7 +459,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/responsive-layout.html" target="_blank">반응형 사이트 제작</a>:</strong>
-                레이아웃 모드를 사용하면 편집자는 반응형 사이트의 장치 너비를 기반으로 구성 요소의 크기를 조정할 수 있습니다.</td>
+                레이아웃 모드를 사용하면 반응형 사이트의 장치 너비를 기반으로 구성 요소의 크기를 조정할 수 있습니다.</td>
             <td></td>
             <td></td>
             <td>✔</td>
@@ -481,7 +481,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/core-components/user-guide.html" target="_blank">핵심 구성 요소</a>:</strong>
-            사이트 개발 시간을 단축합니다. GitHub에서 자주 릴리스 일정 및 유연성을 이용할 수 있습니다.</td>
+            사이트 개발 시간을 단축합니다. GitHub에서 자주 출시 일정 및 유연성을 이용할 수 있습니다.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -492,7 +492,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/spa-overview.html" target="_blank">SPA 편집기</a>:</strong>
-            반응 또는 각진 방식으로 구축된 SPA(단일 페이지 애플리케이션) 프레임워크를 사용하여 저작 및 매력적인 웹 경험을 제작할 수 있습니다.</td>
+            반응형 또는 각진 방식으로 구축된 SPA(Single-Page Application) 프레임워크를 사용하여 저작 가능하고 매력적인 웹 경험을 제작할 수 있습니다.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -513,8 +513,8 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm.html" target="_blank">다중 사이트 관리자(MSM)</a>:</strong>
-            공통 컨텐츠를 공유하는 여러 웹 사이트를 관리합니다(예: 다국어, 여러 브랜드).</td>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm.html" target="_blank">MSM(Multi-Site Manager)</a>:</strong>
+            공통 컨텐츠(예: 다중 언어, 다중 브랜드)를 공유하는 여러 웹 사이트를 관리합니다.</td>
             <td>✔</td>
             <td>✔</td>
             <td>✔</td>
@@ -558,7 +558,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-feature-video-understand.html" target="_blank">컨텐츠 조각</a>:</strong>
-            프레젠테이션에서 편집 내용을 결합하여 손쉽게 재사용할 수 있습니다.</td>
+            프레젠테이션에서 편집 내용을 비결합 상태로 만들어 선별하여 손쉽게 재사용할 수 있습니다.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -569,7 +569,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/kt/sites/using/experience-fragments-feature-video-use.html" target="_blank">경험 조각</a>:</strong>
-            데스크탑, 모바일 및 소셜 채널에 맞게 최적화된 재사용 가능한 경험 및 변형을 만들 수 있습니다.</td>
+            데스크탑, 모바일 및 소셜 채널에 맞게 최적화된 재사용 가능한 경험 및 변형을 만듭니다.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -580,7 +580,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/release-notes/content-services-fragments-featurepack.html" target="_blank">컨텐츠 서비스</a>:</strong>
-            AEM의 컨텐츠를 JSON으로 내보내 다양한 디바이스와 애플리케이션에서 사용할 수 있습니다.</td>
+            AEM의 컨텐츠를 JSON으로 내보내 디바이스 및 애플리케이션에서 컨텐츠를 소비할 수 있습니다.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -591,7 +591,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
         </tr>
         <tr>
             <td><strong>Adobe Analytics 통합 및 컨텐츠 인사이트: </strong>
-                Adobe Analytics과 DTM의 손쉬운 통합 작성 환경 내에서 성능 정보를 표시합니다.</td>
+                Adobe Analytics 및 DTM의 손쉬운 통합 작성 환경 내에서 성능 정보를 표시합니다.</td>
             <td> </td>
             <td>✔</td>
             <td>✔</td>
@@ -645,8 +645,8 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ecommerce.html" target="_blank">전자 상거래</a>:</strong>
-            웹, 모바일 및 소셜 접점에서 브랜드화되고 개인화된 쇼핑 경험을 전달할 수 있습니다.
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ecommerce.html" target="_blank">e커머스</a>:</strong>
+            웹, 모바일 및 소셜 접점에서 브랜드화되고 개인화된 쇼핑 경험을 제공합니다.
             </td>
             <td>✔</td>
             <td>✔</td>
@@ -657,8 +657,8 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/overview.html" target="_blank">커뮤니티</a>:</strong>
-            포럼, 스레드 주석, 이벤트 일정 및 기타 많은 기능을 통해 사이트 방문자와의 참여도를 높일 수 있습니다.</td>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/overview.html" target="_blank">커뮤니티</a>: </strong>
+            포럼, 스레드된 주석, 이벤트 달력 및 기타 많은 기능을 통해 사이트 방문자에 대한 참여도를 높일 수 있습니다.</td>
             <td>✔</td>
             <td>✔</td>
             <td>✔<sup>+</sup></td>
@@ -672,13 +672,13 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
 
 ## 에셋 기능
 
-다음은 AEM에서 제공하는 주요 자산 기능의 매트릭스입니다. 이러한 기능 중 일부는 각 릴리스에 추가된 이전 버전의 증분 개선 기능에서 도입되었습니다.
+다음은 AEM에서 제공하는 주요 자산 기능의 매트릭스입니다. 이러한 기능 중 일부는 각 릴리스에 추가된 이전 버전의 증분 개선 사항에서 도입되었습니다.
 
 + [AEM Assets 릴리스 노트](https://helpx.adobe.com/experience-manager/6-5/release-notes/assets.html)
 
-***이 버전의 기능이 크게 개선되었음을 ✔ 나타냅니다.***
+***✔은 이 버전의 기능이 크게 개선되었음을 나타냅니다.***
 
-***서비스 팩 또는 기능 팩을 통해 <sup>+</sup> 는 기능을 사용할 수 있음을 나타냅니다.***
+***✔<sup>+</sup> 는 서비스 팩 또는 기능 팩을 통해 해당 기능을 사용할 수 있음을 나타냅니다.***
 
 <table>
     <thead>
@@ -696,7 +696,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
     <tbody>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/managing-assets-touch-ui.html" target="_blank">터치에 적합한 UI</a>:</strong>
-            데스크탑 컴퓨터 또는 터치 지원 디바이스에서 자산을 관리합니다.</td>
+            데스크톱 컴퓨터 또는 터치 지원 장치에서 자산을 관리합니다.</td>
             <td> </td>
             <td>✔</td>
             <td>✔<sup>+</sup></td>
@@ -717,8 +717,8 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/task-content.html" target="_blank">작업 </a> 및  <a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects-with-workflows.html" target="_blank"></a> 워크플로우 </strong>
-            관리:AEM 프로젝트를 활용하는 디지털 자산을 검토하고 승인하는 미리 만들어진 워크플로우 및 작업입니다.</td>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/task-content.html" target="_blank">작업 </a> 및  <a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects-with-workflows.html" target="_blank"></a> 워크플로우 관리: </strong>
+            AEM 프로젝트를 활용하는 디지털 자산을 검토 및 승인하는 미리 만들어진 워크플로우 및 작업입니다.</td>
             <td> </td>
             <td>✔</td>
             <td>✔</td>
@@ -729,7 +729,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
         </tr>
         <tr>
             <td><strong>확장성 및 성능: </strong>
-            통합, 업로드 및 저장 규모에 대한 향상된 지원</td>
+            통합, 업로드 및 저장 규모에 대한 향상된 지원.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -740,7 +740,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/mac-api-assets.html" target="_blank">에셋 HTTP API</a>:</strong>
-            HTTP 및 JSON을 통해 프로그래밍 방식으로 에셋과 상호 작용합니다.</td>
+            HTTP 및 JSON을 통해 프로그래밍 방식으로 에셋과 상호 작용할 수 있습니다.</td>
             <td> </td>
             <td> </td>
             <td>✔</td>
@@ -772,7 +772,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/use-assets-across-connected-assets-instances.html" target="_blank">연결된 에셋</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/use-assets-across-connected-assets-instances.html" target="_blank">연결된 에셋</a>: </strong>
             AEM Sites 인스턴스는 다른 AEM Assets 인스턴스의 에셋에 원활하게 액세스하고 사용할 수 있습니다.</td>
             <td> </td>
             <td> </td>
@@ -783,8 +783,8 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/touch-ui-asset-insights.html" target="_blank">자산 통찰력</a>:</strong>
-            Adobe Analytics을 활용하여 디지털 자산에 대한 고객 인터랙션을 캡처하고 AEM에서 볼 수 있습니다.</td>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/touch-ui-asset-insights.html" target="_blank">에셋 인사이트</a>:</strong>
+            Adobe Analytics을 활용하여 디지털 에셋의 고객 인터랙션을 캡처하고 AEM에서 볼 수 있습니다.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -806,7 +806,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/enhanced-smart-tags.html" target="_blank">스마트 태그 및 중재</a>:</strong>
-            Adobe Sensei을 활용하여 유용한 메타데이터로 이미지에 자동으로 태그를 지정합니다.</td>
+            Adobe Sensei을 활용하여 유용한 메타데이터로 이미지에 자동으로 태그를 지정할 수 있습니다.</td>
             <td> </td>
             <td></td>
             <td> </td>
@@ -816,7 +816,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/kt/assets/using/smart-translation-search-feature-video-use.html" target="_blank">Smart Translation Search</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/kt/assets/using/smart-translation-search-feature-video-use.html" target="_blank">고급 번역 검색</a>:</strong>
             AEM Assets을 검색할 때 검색어를 자동으로 변환합니다.</td>
             <td> </td>
             <td> </td>
@@ -828,7 +828,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/indesign.html" target="_blank">Adobe InDesign Server 통합</a>:</strong>
-            제품 카탈로그를 생성합니다. InDesign 템플릿을 기반으로 브로셔, 전단지 및 인쇄 광고를 제작할 수 있습니다.</td>
+            제품 카탈로그를 생성합니다. InDesign 템플릿을 기반으로 브로셔, 전단지 및 인쇄 광고를 만들 수 있습니다.</td>
             <td> </td>
             <td> </td>
             <td>✔</td>
@@ -861,8 +861,8 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://www.adobe.com/kr/creativecloud/business/enterprise/adobe-asset-link.html" target="_blank">Adobe 자산 링크</a>:</strong>
-            Adobe Create Cloud 애플리케이션에서 바로 AEM Assets에 액세스합니다.</td>
+            <td><strong><a href="https://www.adobe.com/kr/creativecloud/business/enterprise/adobe-asset-link.html" target="_blank">Adobe 에셋 링크</a>:</strong>
+            Adobe Create Cloud 응용 프로그램에서 직접 AEM Assets에 액세스합니다.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -873,7 +873,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/aem-assets-adobe-stock.html" target="_blank">Adobe Stock 통합</a>:</strong>
-            AEM에서 바로 Adobe Stock 이미지에 매끄럽게 액세스하여 사용할 수 있습니다.</td>
+            AEM에서 바로 Adobe Stock 이미지를 원활하게 액세스하고 사용할 수 있습니다.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -885,17 +885,17 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
     </tbody>
 </table>
 
-### AEM Assets 다이내믹 미디어
+### AEM Assets Dynamic Media
 
-***이 버전✔의 기능에 대한 <sup>+</sup> 상당한 개선 사항***
+***✔<sup>+</sup> 이 버전의 기능이 크게 향상되었습니다.***
 
-***SP<sup></sup> 는 서비스 ✔ 팩 또는 기능 팩을 통해 이 기능을 사용할 수 있음을 나타냅니다.***
+***✔<sup></sup> SP는 서비스 팩 또는 기능 팩을 통해 해당 기능을 사용할 수 있음을 나타냅니다.***
 
 
 <table>
     <thead>
         <tr>
-            <td>다이내믹 미디어 기능</td>
+            <td>Dynamic Media 기능</td>
             <td>5.6.x</td>
             <td>6.0</td>
             <td>6.1</td>
@@ -908,7 +908,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
     <tbody>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/managing-assets.html" target="_blank">이미지</a>:</strong>
-            스마트 자르기 등 다양한 크기 및 포맷으로 이미지를 동적으로 전달할 수 있습니다.</td>
+            스마트 자르기 등 다양한 크기와 포맷으로 이미지를 동적으로 전달할 수 있습니다.</td>
             <td> </td>
             <td>✔</td>
             <td>✔</td>
@@ -941,8 +941,8 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong>세트(<a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/image-sets.html" target="_blank">이미지</a>,  <a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/spin-sets.html" target="_blank">스핀</a>,  <a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/mixed-media-sets.html" target="_blank">혼합 미디어</a></strong>
-            ):360도 보기 환경을 확대, 이동, 회전 및 시뮬레이션할 수 있습니다.</td>
+            <td><strong>세트(<a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/image-sets.html" target="_blank">이미지</a>,  <a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/spin-sets.html" target="_blank">회전</a>,  <a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/mixed-media-sets.html" target="_blank">혼합 미디어</a></strong>
+            ):360도 보기 환경을 확대/축소, 이동, 회전 및 시뮬레이트할 수 있도록 합니다.</td>
             <td> </td>
             <td>✔</td>
             <td>✔</td>
@@ -953,7 +953,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
         </tr>
         <tr>
             <td><strong><a href="https://docs.adobe.com/docs/en/aem/6-5/administer/content/dynamic-media/viewer-presets.html" target="_blank">뷰어</a>:</strong>
-            다양한 화면/장치에 대한 지원을 통해 브랜드화된 맞춤형 리치 미디어 플레이어 및 사전 설정</td>
+            다양한 화면/장치에 대한 지원을 통해 브랜딩된 맞춤형 리치 미디어 플레이어 및 사전 설정.</td>
             <td> </td>
             <td>✔</td>
             <td>✔</td>
@@ -964,7 +964,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/delivering-dynamic-media-assets.html" target="_blank">전달</a>:</strong>
-            HTTP/2 프로토콜을 통해 다이내믹 미디어 컨텐츠를 연결하거나 포함하고 전달하기 위한 유연한 옵션</td>
+            HTTP/2 프로토콜을 통해 Dynamic Media 컨텐츠를 연결하거나 임베드하는 유연한 옵션</td>
             <td> </td>
             <td>✔</td>
             <td>✔</td>
@@ -974,7 +974,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong>Scene7에서 다이내믹 미디어로 업그레이드: </strong>
+            <td><strong>Scene7에서 Dynamic Media으로 업그레이드: </strong>
             마스터 자산을 마이그레이션하고 기존 S7 URL을 계속 사용할 수 있습니다.</td>
             <td> </td>
             <td> </td>
@@ -989,13 +989,13 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
 
 ## Forms 기능
 
-다음은 AEM에서 제공하는 주요 AEM Forms 추가 기능 매트릭스입니다. 이러한 기능 중 일부는 각 릴리스에 추가된 이전 버전의 증분 개선 기능에서 도입되었습니다.
+다음은 AEM에서 제공하는 주요 AEM Forms Add-on 기능의 매트릭스입니다. 이러한 기능 중 일부는 각 릴리스에 추가된 이전 버전의 증분 개선 사항에서 도입되었습니다.
 
 + [AEM Forms 릴리스 노트](https://helpx.adobe.com/experience-manager/6-5/release-notes/forms.html)
 
-***이 버전✔의 기능에 대한 <sup>+</sup> 상당한 개선 사항***
+***✔<sup>+</sup> 이 버전의 기능이 크게 향상되었습니다.***
 
-***SP<sup></sup> 는 서비스 ✔ 팩 또는 기능 팩을 통해 이 기능을 사용할 수 있음을 나타냅니다.***
+***✔<sup></sup> SP는 서비스 팩 또는 기능 팩을 통해 해당 기능을 사용할 수 있음을 나타냅니다.***
 
 <table>
     <thead>
@@ -1013,7 +1013,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
     <tbody>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html" target="_blank">적응형 Forms 편집기</a>:</strong>
-            디바이스 및 브라우저 설정에 따라 매력적이고 응답적이며 적응형 양식을 만들 수 있습니다.</td>
+            디바이스 및 브라우저 설정에 따라 매력적인 반응형 양식을 만들 수 있습니다.</td>
             <td> </td>
             <td>✔</td>
             <td>✔<sup>+</sup></td>
@@ -1035,7 +1035,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html" target="_blank">테마 편집기</a>:</strong>
-            재사용 가능한 테마를 만들어 양식의 구성 요소와 패널에 스타일을 지정합니다.</td>
+            재사용 가능한 테마를 만들어 양식의 구성 요소 및 패널에 스타일을 지정합니다.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -1068,7 +1068,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/cm-overview.html" target="_blank">커뮤니케이션 관리</a>:</strong>
-            AEM Forms을 통해 개인화되고 인터랙티브한 고객 커뮤니케이션을 제작, 관리 및 전달할 수 있습니다.
+            AEM Forms을 사용하면 개인화되고 인터랙티브한 고객 커뮤니케이션을 제작, 관리 및 전달할 수 있습니다.
             </td>
             <td> </td>
             <td>✔</td>
@@ -1079,8 +1079,8 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/aem-forms/6-5/whats-new.html#AEMFormsdataintegration" target="_blank">타사 데이터 통합</a>:</strong>
-            데이터 통합을 사용하면 양식의 사용자 입력을 기반으로 서로 다른 데이터 소스에서 데이터를 가져옵니다. 양식 제출 시 캡처된 데이터는 데이터 소스에 다시 기록됩니다.
+            <td><strong><a href="https://helpx.adobe.com/aem-forms/6-5/whats-new.html#AEMFormsdataintegration" target="_blank">제3자 데이터 통합</a>:</strong>
+            데이터 통합을 사용하여 양식의 사용자 입력을 기반으로 서로 다른 데이터 소스에서 데이터를 가져옵니다. 양식 제출 시 캡처된 데이터는 데이터 소스에 다시 기록됩니다.
             </td>
             <td> </td>
             <td> </td>
@@ -1091,8 +1091,8 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/aem-forms/6-5/whats-new.html#FormscentricAEMWorkflowsforAEMFormsonOSGi" target="_blank">Forms 처리를 위한 OSGi 워크플로우</a>:</strong>
-            양식 승인 프로세스의 간소화된 배포</td>
+            <td><strong><a href="https://helpx.adobe.com/aem-forms/6-5/whats-new.html#FormscentricAEMWorkflowsforAEMFormsonOSGi" target="_blank">Forms 처리를 위한 워크플로우(OSGi</a>):</strong>
+            양식 승인 프로세스 배포 간소화</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -1114,7 +1114,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-managing-forms.html" target="_blank">양식 관리자</a>:</strong>
-            분석, 번역, A/B 테스트, 검토, 게시 등 모든 양식/문서/커뮤니케이션을 관리할 수 있는 단일 위치
+            분석, 번역, A/B 테스트, 검토, 퍼블리싱 등 모든 양식/문서/커뮤니케이션을 관리할 수 있는 단일 위치입니다.
             </td>
             <td> </td>
             <td>✔</td>
@@ -1126,7 +1126,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/aem-forms-app.html" target="_blank">AEM Forms 앱</a>:</strong>
-            iOS, Android 또는 Windows에서 앱 내에서 온라인/오프라인 양식 처리를 허용합니다.</td>
+            iOS, Android 또는 Windows의 앱 내에서 온라인/오프라인 양식 처리를 허용합니다.</td>
             <td> </td>
             <td>✔</td>
             <td>✔</td>
@@ -1136,8 +1136,8 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/aem-forms/6-5/adaptive-document.html" target="_blank">인터랙티브한 커뮤니케이션</a>:</strong>
-            차트(이전의 적응형 문서)와 같은 인터랙티브한 요소가 포함된 타깃팅된 문구와 같은 풍부한 커뮤니케이션을 만들 수 있습니다.</td>
+            <td><strong><a href="https://helpx.adobe.com/aem-forms/6-5/adaptive-document.html" target="_blank">인터랙티브 커뮤니케이션</a>:</strong>
+            차트(이전의 적응형 문서)와 같은 인터랙티브한 요소가 포함된 대상화된 문구와 같은 풍부한 커뮤니케이션을 만듭니다.</td>
             <td> </td>
             <td> </td>
             <td>✔</td>
@@ -1147,7 +1147,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/pdf/aem-forms/6-5/WorkbenchHelp.pdf" target="_blank">Forms 처리를 위한 워크플로우</a>(J2EE):</strong>
+            <td><strong><a href="https://helpx.adobe.com/pdf/aem-forms/6-5/WorkbenchHelp.pdf" target="_blank">Forms 처리를 위한 워크플로우(J2EE)</a>:</strong>
             직관적인 IDE를 활용하여 복잡한 양식/문서 중심의 워크플로우를 구축할 수 있습니다.</td>
             <td></td>
             <td>✔</td>
@@ -1158,7 +1158,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/aem-forms/6-5/whats-new.html#EnhancedDocumentSecurity" target="_blank">AEM Forms 문서 보안</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/aem-forms/6-5/whats-new.html#EnhancedDocumentSecurity" target="_blank">AEM Forms Document Security</a>:</strong>
             PDF 및 Office 문서에 대한 안전한 액세스 및 인증
             </td>
             <td> </td>
@@ -1171,7 +1171,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/aem-forms/6-5/whats-new.html#Simplifiedauthoringexperience" target="_blank">테스트 프레임워크</a>:</strong>
-            Calvin framework 및 Chrome 플러그인을 사용하여 적응형 양식을 지원하고 디버깅합니다.</td>
+            Calvin 프레임워크 및 Chrome 플러그인을 사용하여 적응형 양식을 지원하고 디버깅합니다.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -1185,13 +1185,13 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
 
 ## 커뮤니티 기능
 
-다음은 AEM에서 제공하는 주요 AEM Communities 추가 기능 매트릭스입니다. 이러한 기능 중 일부는 각 릴리스에 추가된 이전 버전의 증분 개선 기능에서 도입되었습니다.
+다음은 AEM에서 제공하는 주요 AEM Communities Add-on 기능의 매트릭스입니다. 이러한 기능 중 일부는 각 릴리스에 추가된 이전 버전의 증분 개선 사항에서 도입되었습니다.
 
 + [AEM Communities의 새로운 기능 요약](https://helpx.adobe.com/experience-manager/6-5/communities/using/whats-new-aem-communities.html#main-pars_text)
 
-***이 버전✔의 기능에 대한 <sup>+</sup> 상당한 개선 사항***
+***✔<sup>+</sup> 이 버전의 기능이 크게 향상되었습니다.***
 
-***SP<sup></sup> 는 서비스 ✔ 팩 또는 기능 팩을 통해 이 기능을 사용할 수 있음을 나타냅니다.***
+***✔<sup></sup> SP는 서비스 팩 또는 기능 팩을 통해 해당 기능을 사용할 수 있음을 나타냅니다.***
 
 <table>
     <thead>
@@ -1219,8 +1219,8 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
         </tr>
         <tr>
             <td>
-                <p><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/working-with-qna.html" target="_blank">QnA</a>:질문</strong>
-                을 하고, 질문을 보고, 답변을 합니다.</p>
+                <p><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/working-with-qna.html" target="_blank">QnA</a>:</strong>
+                질문, 보기 및 답변</p>
             </td>
             <td></td>
             <td>✔<sup>+</sup></td>
@@ -1232,7 +1232,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
         <tr>
             <td>
                 <strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/blog-feature.html" target="_blank">블로그</a>:</strong>
-                게시 측에서 블로그 기사 및 댓글을 만듭니다.
+                게시 측에서 블로그 아티클과 주석을 만듭니다.
             </td>
             <td> </td>
             <td>✔<sup>+</sup></td>
@@ -1244,7 +1244,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
         <tr>
             <td>
                 <strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/ideation-feature.html" target="_blank">아이디어</a>:</strong>
-                커뮤니티에 아이디어를 만들어 공유하거나 기존 아이디어를 보거나 팔로우하고 주석을 달 수 있습니다.
+                아이디어를 만들어 커뮤니티와 공유하거나 기존 아이디어를 보거나 팔로우하고 의견을 추가할 수 있습니다.
             </td>
             <td> </td>
             <td> </td>
@@ -1255,7 +1255,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
         </tr>
         <tr>
             <td>
-                <strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/calendar.html" target="_blank">일정</a>:</strong>
+                <strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/calendar.html" target="_blank">달력</a>:</strong>
                 (소셜 구성 요소 프레임워크) 사이트 방문자에게 커뮤니티 이벤트 정보를 제공합니다.
             </td>
             <td>✔<sup>+</sup></td>
@@ -1289,7 +1289,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
         <tr>
             <td><strong> </strong></td>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/resource.html" target="_blank">할당</a>:</strong>
-            학습 리소스를 만들고 커뮤니티 구성원에게 할당합니다.</td>
+            커뮤니티 구성원에게 학습 리소스를 만들고 할당합니다.</td>
             <td> </td>
             <td>✔<sup>+</sup></td>
             <td>✔</td>
@@ -1300,7 +1300,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
         <tr>
             <td rowspan="5">지원</td>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/catalog.html" target="_blank">카탈로그 </a> 및  <a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/resource.html" target="_blank">리소스 관리</a>:</strong>
-            카탈로그의 활성 리소스에 액세스하십시오.</td>
+            카탈로그에서 역량 강화 리소스에 액세스합니다.</td>
             <td> </td>
             <td>✔<sup>+</sup></td>
             <td>✔</td>
@@ -1310,7 +1310,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/resources.html#CreateaLearningPath" target="_blank">학습 경로 관리</a>:</strong>
-            교육 과정 또는 활성 리소스 그룹을 관리합니다.</td>
+            교육 과정 또는 역량 강화 리소스 그룹을 관리합니다.</td>
             <td> </td>
             <td>✔<sup>+</sup></td>
             <td>✔</td>
@@ -1329,8 +1329,8 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/resources.html#main-pars_text_899882038" target="_blank">활성</a> 시 참여:</strong>
-            활성 리소스에 주석을 추가합니다.</td>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/resources.html#main-pars_text_899882038" target="_blank">역량 강화에 대한 참여</a>:</strong>
+            지원 리소스에 주석을 추가합니다.</td>
             <td> </td>
             <td> </td>
             <td>✔<sup>+</sup></td>
@@ -1339,7 +1339,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/analytics.html" target="_blank">활성 분석</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/analytics.html" target="_blank">활성 분석</a>: </strong>
             비디오 분석, 진행 보고 및 할당 보고</td>
             <td> </td>
             <td>✔<sup>+</sup></td>
@@ -1351,7 +1351,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
         <tr>
             <td rowspan="8">Commons</td>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/comments.html" target="_blank">주석 </a> 및 첨부 파일:</strong>
-            (Social Component Framework) 커뮤니티 멤버는 커뮤니티 사이트의 컨텐츠에 대한 의견 및 지식을 공유합니다.</td>
+            (Social Component Framework) 커뮤니티 멤버는 커뮤니티 사이트에서 컨텐트에 대한 의견 및 지식을 공유합니다.</td>
             <td>✔<sup>+</sup></td>
             <td>✔</td>
             <td>✔<sup>+</sup></td>
@@ -1360,7 +1360,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong>컨텐츠 조각 전환:</strong>
+            <td><strong>컨텐츠 조각 변환:</strong>
             UGC 기여도를 컨텐츠 조각으로 변환합니다.</td>
             <td> </td>
             <td> </td>
@@ -1371,7 +1371,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/reviews.html" target="_blank">검토</a>:</strong>
-                 (소셜 구성 요소 프레임워크) 커뮤니티 구성원은 댓글 및 등급 기능의 조합을 사용하여 컨텐츠 일부를 검토합니다.</td>
+                 (소셜 구성 요소 프레임워크) 커뮤니티 멤버는 주석과 등급 함수의 조합을 사용하여 컨텐츠 일부를 검토합니다.</td>
             <td>✔<sup>+</sup></td>
             <td>✔<sup>+</sup></td>
             <td>✔</td>
@@ -1390,7 +1390,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/voting.html" target="_blank">투표</a>:</strong>
-                 (소셜 구성 요소 프레임워크) 커뮤니티 구성원이 컨텐츠 일부를 업로드하거나 다운투표합니다.</td>
+                 (소셜 구성 요소 프레임워크) 커뮤니티 멤버는 컨텐츠를 업로드하거나 다운로드할 수 있습니다.</td>
             <td>✔<sup>+</sup></td>
             <td>✔</td>
             <td>✔</td>
@@ -1441,7 +1441,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/sites.html" target="_blank">템플릿</a>:</strong>
-                <a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/sites.html" target="_blank"></a> 마법사 <a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/tools-groups.html" target="_blank"></a> 를 기반으로 모든 기능을 갖춘 커뮤니티 사이트를 제작하는 사이트 및 그룹 템플릿입니다.</td>
+                <a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/sites.html" target="_blank"></a> 마법사 기반 <a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/tools-groups.html" target="_blank"></a> 의 전체 기능 커뮤니티 사이트 생성을 위한 사이트 및 그룹 템플릿입니다.</td>
             <td> </td>
             <td>✔<sup>+</sup></td>
             <td>✔</td>
@@ -1450,8 +1450,8 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong>편집 가능한 템플릿:</strong>
-            커뮤니티 관리자는 AEM 편집 가능한 템플릿을 사용하여 풍부한 경험을 구축할 수 있습니다.</td>
+            <td><strong>편집 가능한 템플릿: </strong>
+            커뮤니티 관리자는 AEM 편집 가능 템플릿을 사용하여 풍부한 경험을 구축할 수 있습니다.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -1483,7 +1483,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/moderation.html" target="_blank">일괄 중재</a>:</strong>
-            중재 콘솔을 사용하여 사용자가 생성한 컨텐츠를 일괄 관리합니다.</td>
+            중재 콘솔을 사용하여 사용자 생성 컨텐츠를 일괄 관리할 수 있습니다.</td>
             <td> </td>
             <td>✔<sup>+</sup></td>
             <td>✔</td>
@@ -1502,7 +1502,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/members.html" target="_blank">구성원 관리</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/members.html" target="_blank">멤버 관리</a>:</strong>
             구성원 관리 영역에서 사용자 프로필 및 그룹을 관리합니다.</td>
             <td> </td>
             <td>✔<sup>+</sup></td>
@@ -1513,7 +1513,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/overview.html#main-pars_text_866731966" target="_blank">반응형 디자인</a>:</strong>
-            AEM Communities 사이트는 반응형 사이트입니다.
+            AEM Communities 사이트는 반응형으로 작동하며
             </td>
             <td> </td>
             <td>✔</td>
@@ -1535,7 +1535,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
         <tr>
             <td rowspan="4">구성원</td>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/advanced.html" target="_blank">채점 및 배지</a>:</strong>
-            (Adobe Sensei에서 제공하는 고급 점수) 커뮤니티 구성원을 전문가로 식별하고 보상합니다.</td>
+            (Adobe Sensei에서 제공하는 고급 채점) 커뮤니티 구성원을 전문가로 식별하고 이에 대한 보상으로 만듭니다.</td>
             <td> </td>
             <td> </td>
             <td>✔</td>
@@ -1555,7 +1555,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/configure-messaging.html" target="_blank">메시지</a>:</strong>
-            사용자 및 그룹에 쪽지를 보냅니다.</td>
+            사용자 및 그룹에 직접 메시징을 제공합니다.</td>
             <td>✔</td>
             <td>✔</td>
             <td>✔</td>
@@ -1576,7 +1576,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
         <tr>
             <td rowspan="5">플랫폼</td>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/working-with-srp.html" target="_blank">MSRP(Mongo Storage)</a>:</strong>
-            사용자 생성 콘텐츠(UGC)는 로컬 MongoDB 인스턴스에 직접 보관됩니다.</td>
+            사용자 생성 콘텐츠(UGC)는 로컬 MongoDB 인스턴스에 직접 유지됩니다.</td>
             <td> </td>
             <td>✔<sup>+</sup></td>
             <td>✔</td>
@@ -1596,7 +1596,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/working-with-srp.html" target="_blank">SRP(클라우드 스토리지)</a>:</strong>
-                사용자 생성 콘텐츠(UGC)는 Adobe에서 호스팅 및 관리되는 클라우드 서비스에서 원격으로 유지됩니다.</td>
+                사용자 생성 콘텐츠(UGC)는 Adobe에 호스팅되고 관리되는 클라우드 서비스에서 원격으로 유지됩니다.</td>
             <td>✔<sup>+</sup></td>
             <td>✔</td>
             <td>✔</td>
@@ -1606,7 +1606,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/working-with-srp.html" target="_blank"><strong>JSRP</a>:</strong>
-                커뮤니티 컨텐츠는 JCR에 저장되며 UGC는 게시된 작성자(또는 게시) 인스턴스에서 액세스할 수 있습니다.</td>
+                커뮤니티 컨텐츠는 JCR에 저장되고 UGC는 게시된 작성자(또는 게시) 인스턴스에서 액세스할 수 있습니다.</td>
             <td> </td>
             <td> </td>
             <td>✔<sup>+</sup></td>
@@ -1627,10 +1627,10 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 역량을 강화하고 있
     </tbody>
 </table>
 
-AEM Communities은 다음과 같이 조직에서 사용자를 참여 및 활성화할 수 있도록 [enhancements](https://helpx.adobe.com/experience-manager/6-5/communities/using/whats-new-aem-communities.html) - 릴리스를 추가합니다.
+AEM Communities은 다음과 같이 [개선 사항](https://helpx.adobe.com/experience-manager/6-5/communities/using/whats-new-aem-communities.html)을 릴리스에 추가하여 조직에서 사용자를 참여 및 활성화할 수 있도록 합니다.
 
-+ **사용자** 가 생성한 콘텐츠의 @mentionsupport입니다.
-+ **Enablement** 구성 요소의 **키보드 탐색**&#x200B;을 통한 액세서빌러티 개선
-+ **사용자 지정 필터**&#x200B;를 사용하여 **벌크 중재**&#x200B;가 개선되었습니다.
++ **사용자** 생성 콘텐츠의 @mentionsupport입니다.
++ **지원** 구성 요소의 **키보드 탐색**&#x200B;을 통한 액세서빌러티 개선
++ **사용자 지정 필터**&#x200B;를 사용하여 **벌크 중재**&#x200B;를 개선했습니다.
 + **편집** 가능한 템플릿을 사용하면 커뮤니티 관리자가 AEM에서 풍부한 커뮤니티 경험을 구축할 수 있습니다.
 + 이제 사용자는 그룹의 모든 구성원에게 **쪽지를 일괄**&#x200B;으로 보낼 수 있습니다.
