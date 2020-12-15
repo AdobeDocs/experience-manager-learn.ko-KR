@@ -5,9 +5,9 @@ breadcrumb-title: AEM Assets 자습서
 sub-product: 자산
 team: TM
 translation-type: tm+mt
-source-git-commit: 159e9d7ea363768f202db91a1d0555c2e57ebb13
+source-git-commit: aa349fba9e0f1df97316105ada62ff9b32501573
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '257'
 ht-degree: 32%
 
 ---
@@ -102,6 +102,7 @@ ht-degree: 32%
    + [Dynamic Media Classic 데스크톱 응용 프로그램](dynamic-media/dynamic-media-classic-desktop-application.md)
    + [Dynamic Media 3D](dynamic-media/dynamic-media-3d-feature-video.md)
    + [Dynamic Media 스마트 자르기 비디오](dynamic-media/dynamic-media-smart-crop-video.md)
+   + [Dynamic Media 핵심 구성 요소](dynamic-media/dynamic-media-core-components.md)
 
 + 번역 {#translation}
    + [소스 파일 변환](translation/source-file-translation-feature-video-use.md)
