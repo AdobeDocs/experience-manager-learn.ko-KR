@@ -15,25 +15,25 @@ ht-degree: 20%
 
 # 개요 {#overview}
 
-Adobe Experience Manager(AEM) Sites는 선도적인 경험 관리 플랫폼입니다. 이 사용자 안내서에는 AEM Sites의 다양한 기능과 기능에 대한 비디오 및 자습서가 포함되어 있습니다.
+Adobe Experience Manager(AEM) Sites는 선도적인 경험 관리 플랫폼입니다. 이 사용 안내서에는 AEM Sites의 다양한 기능과 기능에 대한 비디오 및 자습서가 포함되어 있습니다.
 
 ## 새로운 기능
 
 * **[AEM SPA 편집기 시작 및 반응](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html) (자습서)**
 
-   *개발자가 반응형 기능을 사용하여 단일 페이지 애플리케이션(SPA)과 AEM을 통합하는 시작 가이드*
+   *반응형 기능을 사용하여 AEM과 단일 페이지 애플리케이션(SPA)을 통합하는 개발자를 위한 시작 가이드*
 
 * **[AEM SPA 편집기 및 Angular](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html) (자습서) 시작하기**
 
    *Angular를 사용하여 단일 페이지 애플리케이션(SPA)과 AEM을 통합하는 개발자를 위한 시작 가이드*
 
-* **[AEM 헤드리스 시작하기(자습서)](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-with-aem-headless/overview.html)**
+* **[AEM 제목 없는 시작하기(자습서)](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-with-aem-headless/overview.html)**
 
-   *헤드리스 CMS 시나리오에서 AEM 콘텐츠를 기본 모바일 앱에서 노출시키는 방법*
+   *헤드리스 CMS 시나리오에서 AEM 콘텐츠를 기본 모바일 앱에서 노출하여 사용하는 방법*
 
 * **[경험 조각 사용(비디오 시리즈)](./experience-fragments/experience-fragments-feature-video-use.md)**
 
-   *콘텐츠 크로스채널 홍보를 위한 AEM 경험 조각에 대해 알아보십시오.*
+   *콘텐츠 크로스 채널 홍보를 위한 AEM 경험 조각에 대해 알아보십시오.*
 
 * **[컨텐츠 조각 사용(비디오 시리즈)](./content-fragments/content-fragments-feature-video-use.md)**
 
@@ -57,7 +57,7 @@ Adobe Experience Manager(AEM) Sites는 선도적인 경험 관리 플랫폼입�
     </a>
     </div>
     <p>
-    <em>AEM Sites 구현을 원하는 개발자를 위한 시작 가이드</em>
+    <em>AEM Sites을 구현하려는 개발자를 위한 시작 가이드</em>
     <p>
   </td>
   <td>
@@ -75,15 +75,15 @@ Adobe Experience Manager(AEM) Sites는 선도적인 경험 관리 플랫폼입�
   </td>
   <td>
     <a href="https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html">
-      <img alt="AEM SPA 편집기 시작하기" src="./assets/aem-wknd-spa-editor-tutorial.png" />
+      <img alt="AEM SPA Editor 시작하기" src="./assets/aem-wknd-spa-editor-tutorial.png" />
     </a>
      <div>
       <a href="https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html">
-        <strong>AEM SPA 편집기 시작하기</strong>
+        <strong>AEM SPA Editor 시작하기</strong>
       </a>
     </div>
     <p>
-    <em>단일 페이지 애플리케이션(SPA)과 AEM을 통합하는 개발자를 위한 시작 가이드</em>
+    <em>AEM과 단일 페이지 애플리케이션(SPA)을 통합하는 개발자를 위한 시작 가이드입니다.</em>
     <p>
   </td>
 </tr>
