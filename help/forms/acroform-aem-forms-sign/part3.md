@@ -1,6 +1,6 @@
 ---
 title: AEM Forms을 사용한 Acrobat
-seo-title: Acrobat과 적응형 양식 데이터 병합
+seo-title: Acrobat을 사용하여 적응형 양식 데이터 병합
 feature: adaptive-forms
 topics: development
 audience: developer
@@ -26,17 +26,17 @@ ht-degree: 1%
 1. [편집 모드에서 워크플로우 모델을 엽니다](http://localhost:4502/editor.html/conf/global/settings/workflow/models/MergeAcroformData.html).
 2. MergeAcroformData 단계의 구성 속성을 엽니다.
 3. 프로세스 탭을 클릭합니다.
-4. 전달하는 인수가 서버의 유효한 폴더인지 확인하십시오.
+4. 전달할 인수가 서버의 유효한 폴더인지 확인합니다.
 5. 변경 사항을 저장합니다.
 
 ## 적응형 양식 만들기
 
-1. 이전 단계에서 만든 스키마를 사용하여 응용 양식을 만듭니다.
+1. 이전 단계에서 만든 스키마를 사용하여 적응형 양식을 만듭니다.
 2. 몇 가지 스키마 요소를 응용 양식으로 드래그하여 놓습니다.
-3. AEM 작업 과정(MergeAcroformData)에 제출할 응용 양식의 제출 작업을 구성합니다.
-4. **데이터 파일 경로를 &quot;Data.xml&quot;로 지정해야 합니다. 이는 샘플 코드가 워크플로우 페이로드에서 Data.xml이라는 파일을 검색하므로 매우 중요합니다.**
+3. 응용 양식의 제출 작업을 구성하여 AEM 작업 과정(MergeAcroformData)에 제출합니다.
+4. **데이터 파일 경로를 &quot;Data.xml&quot;로 지정해야 합니다. 이 작업은 샘플 코드가 워크플로 페이로드에서 Data.xml이라는 파일을 검색하므로 매우 중요합니다.**
 5. 적응형 양식을 미리 보고 양식을 채우고 제출합니다.
-6. 구성 워크플로우에서 4단계에서 지정한 폴더에 병합된 데이터가 포함된 PDF가 표시됩니다
+6. 구성 작업 과정 아래의 4단계에서 지정한 폴더에 병합된 데이터가 저장된 PDF가 표시됩니다
 
 >[!NOTE]
 >
