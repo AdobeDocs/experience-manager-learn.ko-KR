@@ -1,6 +1,6 @@
 ---
 title: AEM 빠른 시작 Jar 사용
-description: AEM Quickstart jar를 사용하여 몇 분 만에 로컬 Adobe Experience Manager 인스턴스를 설치하고 실행하는 방법을 살펴봅니다. AEM Quickstart jar는 로컬 컴퓨터에서 설치하고 실행할 수 있는 AEM 런타임입니다.
+description: AEM Quickstart jar를 사용하여 단 몇 분 만에 Adobe Experience Manager의 로컬 인스턴스를 설치하고 실행하는 방법을 살펴봅니다. AEM Quickstart jar는 로컬 컴퓨터에 설치하여 실행할 수 있는 AEM 런타임입니다.
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # AEM 빠른 시작 Jar 사용
 
-AEM Quickstart jar를 사용하여 몇 분 만에 로컬 Adobe Experience Manager 인스턴스를 설치하고 실행하는 방법을 살펴봅니다. AEM Quickstart jar는 로컬 컴퓨터에서 설치하고 실행할 수 있는 AEM 런타임입니다.
+AEM Quickstart jar를 사용하여 단 몇 분 만에 Adobe Experience Manager의 로컬 인스턴스를 설치하고 실행하는 방법을 살펴봅니다. AEM Quickstart jar는 로컬 컴퓨터에 설치하여 실행할 수 있는 AEM 런타임입니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32551/?quality=12&learn=on)
 
