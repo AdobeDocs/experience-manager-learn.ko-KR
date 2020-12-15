@@ -1,8 +1,8 @@
 ---
 title: 번역 프로젝트
 seo-title: 번역 프로젝트
-description: '언어 카피를 위한 번역 프로젝트를 제작, 편집 및 관리하는 방법을 알아봅니다. '
-seo-description: '언어 카피를 위한 번역 프로젝트를 제작, 편집 및 관리하는 방법을 알아봅니다.  '
+description: '언어 사본용 번역 프로젝트를 만들고, 편집하고, 관리하는 방법을 알아봅니다. '
+seo-description: '언어 사본용 번역 프로젝트를 만들고, 편집하고, 관리하는 방법을 알아봅니다.  '
 feature: language-copy, live-copy, multi-site-manager
 topics: localization, authoring, content-architecture
 audience: all
@@ -22,6 +22,6 @@ ht-degree: 12%
 
 # 번역 프로젝트 {#translation-projects}
 
-언어 카피를 위한 번역 프로젝트를 제작, 편집 및 관리하는 방법을 알아봅니다.
+언어 사본용 번역 프로젝트를 만들고, 편집하고, 관리하는 방법을 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/36486?quality=12&learn=on)
