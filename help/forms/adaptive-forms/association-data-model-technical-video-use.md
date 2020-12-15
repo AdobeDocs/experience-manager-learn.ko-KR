@@ -1,6 +1,6 @@
 ---
-title: AEM Forms과 연결 데이터 모델 사용
-seo-title: AEM Forms과 연결 데이터 모델 사용
+title: AEM Forms에서 연결 데이터 모델 사용
+seo-title: AEM Forms에서 연결 데이터 모델 사용
 description: 양식 데이터 모델에서 엔티티 간 연결 추가
 seo-description: 양식 데이터 모델에서 엔티티 간 연결 추가
 uuid: 82626632-3251-4f7b-9af1-43a9161107c2
@@ -20,9 +20,9 @@ ht-degree: 0%
 ---
 
 
-# 연결 데이터 모델을 AEM Forms과 함께 사용{#using-association-data-models-with-aem-forms}
+# AEM Forms{#using-association-data-models-with-aem-forms}에서 연결 데이터 모델 사용
 
-양식 데이터 모델에서 2개 엔티티 간 연결 만들기
+양식 데이터 모델에서 2개 개체 간의 연결 만들기
 
 >[!VIDEO](https://video.tv.adobe.com/v/17737/?quality=9&learn=on)
 
