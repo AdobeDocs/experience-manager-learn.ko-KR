@@ -1,6 +1,6 @@
 ---
 title: MySQL 데이터베이스에서 양식 데이터 저장 및 검색
-description: 양식 데이터 저장 및 검색에 관련된 단계를 단계별로 안내하는 멀티 파트 자습서
+description: 양식 데이터 저장 및 검색에 관련된 단계를 단계별로 안내하는 다중 부분 자습서
 feature: adaptive-forms
 topics: development
 audience: developer
@@ -16,9 +16,9 @@ ht-degree: 1%
 ---
 
 
-# 데이터를 가져오기 위한 OSGi 서비스 만들기
+# OSGi 서비스를 만들어 데이터 가져오기
 
-다음 코드는 저장된 응용 양식 데이터를 저장하고 가져오기 위해 작성되었습니다. 단순 쿼리는 주어진 GUID와 연결된 응용 양식 데이터를 가져오는 데 사용됩니다. 그러면 가져온 데이터가 호출 응용 프로그램으로 돌아갑니다. 이전 단계에서 만든 동일한 데이터 소스가 이 코드에서 참조됩니다.
+다음 코드는 저장된 적응형 양식 데이터를 저장하고 가져오기 위해 작성되었습니다. 단순 쿼리는 주어진 GUID와 연결된 응용 양식 데이터를 가져오는 데 사용됩니다. 가져온 데이터는 호출 응용 프로그램으로 돌아갑니다. 이전 단계에서 만든 동일한 데이터 소스가 이 코드에서 참조됩니다.
 
 
 ```java
@@ -155,7 +155,7 @@ public class FetchFormData implements com.aemforms.saveandcontinue.core.FetchSto
 
 ## 인터페이스
 
-다음은 사용된 인터페이스 선언입니다
+다음은 사용된 인터페이스 선언입니다.
 
 ```java
 package com.aemforms.saveandcontinue.core;
