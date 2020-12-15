@@ -1,8 +1,8 @@
 ---
 title: 웹 채널 문서 템플릿 만들기 AEM Forms
 seo-title: 웹 채널 문서 템플릿 만들기 AEM Forms
-description: 첫 번째 인터랙티브한 커뮤니케이션 문서를 만들기 위한 여러 단계로 구성된 자습서의 4번째 부분입니다. 이 부분에서 웹 채널 문서에 대한 템플릿을 만듭니다.
-seo-description: 첫 번째 인터랙티브한 커뮤니케이션 문서를 만들기 위한 여러 단계로 구성된 자습서의 4번째 부분입니다. 이 부분에서 웹 채널 문서에 대한 템플릿을 만듭니다.
+description: 첫 번째 인터랙티브한 커뮤니케이션 문서를 만들기 위한 여러 단계로 구성된 자습서의 4번째 부분입니다. 이 부분에서 웹 채널 문서용 템플릿을 만듭니다.
+seo-description: 첫 번째 인터랙티브한 커뮤니케이션 문서를 만들기 위한 여러 단계로 구성된 자습서의 4번째 부분입니다. 이 부분에서 웹 채널 문서용 템플릿을 만듭니다.
 uuid: b4c9f68b-3091-4f87-988d-705f0296a8d8
 feature: interactive-communication
 topics: development
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 # 웹 채널 문서 템플릿 만들기 AEM Forms {#creating-web-channel-document-template-aem-forms}
 
-이 부분에서 웹 채널 문서에 대한 템플릿을 만듭니다.
+이 부분에서 웹 채널 문서용 템플릿을 만듭니다.
 AEM Forms 6.4에서 웹 채널 문서 템플릿 만들기
 >[!VIDEO](https://video.tv.adobe.com/v/22342?quality=9&learn=on)
 
