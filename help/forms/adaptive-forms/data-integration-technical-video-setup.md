@@ -34,5 +34,5 @@ JDBC 데이터 소스에 데이터 연결 설정
 
 * [MySQL JDBC OSGi 번들 다운로드](https://dev.mysql.com/downloads/connector/j/)
 
-   * [AEM 웹 콘솔](http://localhost:4502/system/console/bundles)을 통해 JAR 파일을 다운로드, 압축 해제 및 설치합니다
+   * [AEM 웹 콘솔](http://localhost:4502/system/console/bundles)을 통해 JAR 파일을 다운로드, 압축 해제 및 설치합니다.
 
