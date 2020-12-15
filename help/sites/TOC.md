@@ -2,7 +2,7 @@
 user-guide-title: AEM Sites 비디오 및 자습서
 user-guide-description: Adobe Experience Manager Sites을 위한 비디오 및 자습서 모음입니다.
 breadcrumb-title: AEM Sites 자습서
-sub-product: sites
+sub-product: 사이트
 translation-type: tm+mt
 source-git-commit: 16c73d19584eefff3c9551d2a3174b5b8ed6d427
 workflow-type: tm+mt
@@ -39,13 +39,13 @@ ht-degree: 21%
 + 콘텐츠 조각 {#content-fragments}
    + [컨텐츠 조각 작성](content-fragments/content-fragments-feature-video-use.md)
    + [컨텐츠 조각 제공](content-fragments/content-fragments-delivery-feature-video-use.md)
-   + [컨텐츠 조각으로 변환](content-fragments/content-fragments-translation-feature-video-use.md)
-   + [컨텐츠 조각과 경험 조각](content-fragments/understand-content-fragments-and-experience-fragments.md)
+   + [컨텐츠 조각으로 번역](content-fragments/content-fragments-translation-feature-video-use.md)
+   + [컨텐츠 조각과 경험 조각 비교](content-fragments/understand-content-fragments-and-experience-fragments.md)
 + 경험 조각 {#experience-fragments}
    + [경험 조각 사용](experience-fragments/experience-fragments-feature-video-use.md)
    + [경험 조각 이해](experience-fragments/experience-fragments-feature-video-understand.md)
    + [경험 조각으로 소셜 게시 설정](experience-fragments/experience-fragments-social-technical-video-setup.md)
-   + [컨텐츠 조각과 경험 조각](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html)
+   + [컨텐츠 조각과 경험 조각 비교](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html)
 + 개발 {#developing}
    + [AEM 프로젝트 전형](developing/aem-project-archetype.md)
    + [AEM Sites 시작하기](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
@@ -80,7 +80,7 @@ ht-degree: 21%
    + [번역 프로젝트](./multi-site-management/manage-translation-projects.md)
    + [다중 언어 번역 프로젝트 만들기](./multi-site-management/create-multinational-translational-project.md)
    + [번역 작업](./multi-site-management/create-translation-job.md)
-   + [실행 시 언어 사본 업데이트](./multi-site-management/updating-language-copy.md)
+   + [론치를 사용하여 언어 사본 업데이트](./multi-site-management/updating-language-copy.md)
    + [언어 복사 페이지 만들기](./multi-site-management/create-new-page-language-copy.md)
    + [번역 작업 상태](./multi-site-management/translation-job-status.md)
    + [언어 사본에서 국가 사이트 만들기](./multi-site-management/create-new-site.md)
@@ -88,7 +88,7 @@ ht-degree: 21%
    + [다중 사이트 관리자 사용](translation/multi-site-manager-feature-video-use.md)
    + [언어 사본 사용](translation/language-copy-feature-video-use.md)
    + [번역 규칙 설정](translation/translation-rules-editor-technical-video-setup.md)
-   + [향상된 번역](translation/translation-enhancements-feature-video-use.md)
+   + [번역 개선 사항](translation/translation-enhancements-feature-video-use.md)
 + 통합 {#integrations}
    + Experience Platform Launch {#experience-platform-launch}
       + [개요](integrations/experience-platform-launch/overview.md)
@@ -100,14 +100,14 @@ ht-degree: 21%
       + [Adobe 클라이언트 데이터 레이어 사용](integrations/adobe-client-data-layer/data-layer-overview.md)
    + 분석 {#analytics}
       + [Adobe Analytics을 사용하여 페이지 데이터 수집](integrations/analytics/collect-data-analytics.md)
-      + [클릭한 구성 요소를 Adobe Analytics에서 추적](integrations/analytics/track-clicked-component.md)
+      + [Adobe Analytics을 사용하여 클릭한 구성 요소 추적](integrations/analytics/track-clicked-component.md)
       + [Analysis Workspace을 사용하여 데이터 분석](integrations/analytics/create-analytics-workspace.md)
    + Adobe Target {#target}
       + [개요](integrations/adobe-target/overview.md)
-      + [Launch 속성에 Target 확장 추가](integrations/adobe-target/add-target-launch-extension.md)
+      + [시작 속성에 대상 확장 추가](integrations/adobe-target/add-target-launch-extension.md)
       + [Target 호출 로드 및 실행](integrations/adobe-target/load-and-fire-target.md)
       + [Adobe Target Cloud Service 계정 만들기](integrations/adobe-target/setup-aem-target-cloud-service.md)
       + [Adobe Target으로 경험 구성요소를 내보냅니다](integrations/adobe-target/export-experience-fragment-target.md)
-      + [경험 조각 오퍼를 사용하여 Target 활동 생성](integrations/adobe-target/create-target-activity.md)
+      + [경험 조각 오퍼를 사용하여 Target 활동 만들기](integrations/adobe-target/create-target-activity.md)
       + [Visual Experience Composer를 사용한 개인화](integrations/adobe-target/personalization-using-vec.md)
-      + [완벽한 웹 페이지 경험 개인화](integrations/adobe-target/personalization-web-page.md)
+      + [완벽한 웹 페이지 경험의 개인화](integrations/adobe-target/personalization-web-page.md)
