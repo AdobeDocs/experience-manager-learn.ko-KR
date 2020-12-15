@@ -1,6 +1,6 @@
 ---
 title: 메타데이터
-description: AEM Assets에서 메타데이터에 액세스하고 이를 이용하는 방법을 알아봅니다.
+description: AEM Assets에서 메타데이터에 액세스하여 인터랙션하는 방법을 살펴봅니다.
 sub-product: 자산
 feature: null
 topics: authoring
@@ -21,6 +21,6 @@ ht-degree: 8%
 
 # 메타데이터
 
-AEM Assets에서 메타데이터에 액세스하고 이를 이용하는 방법을 알아봅니다.
+AEM Assets에서 메타데이터에 액세스하여 인터랙션하는 방법을 살펴봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32045/?quality=12&learn=on&hidetitle=true)
