@@ -1,6 +1,6 @@
 ---
 title: AEM Assets의 워터마크
-description: AEM의 Cloud Service 워터마크 기능을 사용하면 모든 PNG 이미지를 사용하여 사용자 정의 이미지 표현물에 워터마크를 적용할 수 있습니다.
+description: AEM은 Cloud Service의 워터마크 기능을 통해 모든 PNG 이미지를 사용하여 사용자 정의 이미지 표현물을 워터마킹할 수 있습니다.
 feature: watermark
 topics: images
 audience: all
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # 워터마크
 
-AEM의 Cloud Service 워터마크 기능을 사용하면 모든 PNG 이미지를 사용하여 사용자 정의 이미지 표현물에 워터마크를 적용할 수 있습니다.
+AEM은 Cloud Service의 워터마크 기능을 통해 모든 PNG 이미지를 사용하여 사용자 정의 이미지 표현물을 워터마킹할 수 있습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/41536/?quality=12&learn=on)
 
