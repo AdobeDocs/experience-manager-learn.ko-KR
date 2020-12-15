@@ -1,6 +1,6 @@
 ---
-title: 실행 시 언어 사본 업데이트
-description: 론치의 도움을 받아 언어 카피의 변경 사항을 업데이트, 검토 및 승인하는 방법을 알아봅니다.
+title: 론치를 사용하여 언어 사본 업데이트
+description: 론치의 도움으로 언어 사본의 변경 내용을 업데이트, 검토 및 승인하는 방법을 알아봅니다.
 feature: language-copy, live-copy, multi-site-manager
 topics: localization, authoring, content-architecture
 audience: all
@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # 시작 {#update-language-copy-launch}으로 언어 사본 업데이트
 
-론치의 도움을 받아 언어 카피의 변경 사항을 업데이트, 검토 및 승인하는 방법을 알아봅니다.
+론치의 도움으로 언어 사본의 변경 내용을 업데이트, 검토 및 승인하는 방법을 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/36683?quality=12&learn=on)
