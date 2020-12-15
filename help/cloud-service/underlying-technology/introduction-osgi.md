@@ -1,6 +1,6 @@
 ---
 title: OSGi 소개
-description: Adobe Experience Manager의 기반이 되는 Java 애플리케이션을 위한 동적 모듈식 아키텍처인 OSGi에 대한 소개입니다.
+description: Adobe Experience Manager의 기반이 되는 Java 애플리케이션을 위한 다이내믹한 모듈식 아키텍처인 OSGi를 소개합니다.
 topics: osgi, architecture
 audience: administrator, developer
 doc-type: technical video
