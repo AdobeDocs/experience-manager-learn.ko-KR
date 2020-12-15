@@ -1,8 +1,8 @@
 ---
 title: AEM Sites의 페이지 속성 이해
 seo-title: Adobe Experience Manager Sites의 페이지 속성 이해
-description: 다음 비디오에서는 Adobe Experience Manager의 페이지와 연관된 페이지 속성 메타데이터를 소개합니다.
-seo-description: '다음 비디오에서는 Adobe Experience Manager의 페이지와 연관된 페이지 속성 메타데이터를 소개합니다. '
+description: 다음 비디오에서는 Adobe Experience Manager의 페이지와 연결된 페이지 속성 메타데이터를 소개합니다.
+seo-description: '다음 비디오에서는 Adobe Experience Manager의 페이지와 연결된 페이지 속성 메타데이터를 소개합니다. '
 feature: page-editor
 topics: authoring, metadata
 audience: author, marketer
@@ -20,7 +20,7 @@ ht-degree: 27%
 ---
 
 
-# 페이지 속성 {#understanding-page-properties-aem-sites} 이해
+# 페이지 속성 이해 {#understanding-page-properties-aem-sites}
 
 다음 비디오에서는 Adobe Experience Manager의 페이지와 관련된 페이지 속성을 소개합니다.
 
@@ -60,6 +60,6 @@ ht-degree: 27%
 
 ## 추가 리소스 {#additional-resources}
 
-* [페이지 속성 설명서 편집](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/authoring/editing-page-properties.html)
+* [페이지 속성 편집 설명서](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/authoring/editing-page-properties.html)
 * [페이지 컨텐츠 설명서 편집](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/authoring/editing-content.html)
 * [사이트 작성 사용 안내서](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/home.html?topic=/experience-manager/6-5/sites/authoring/morehelp/page-authoring.ug.js)
