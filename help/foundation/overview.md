@@ -18,17 +18,17 @@ Adobe Experience Manager은 AEM Sites, [!DNL Assets] 및 [!DNL Forms] 사용자�
 
 ## 새로운 기능
 
-* **[AEM(비디오)에서 워크플로우 관리 사용](./workflow/use-workflow-management.md)**
-   *AEM은 실행 중인 워크플로우를 시각적으로 파악하고  [!DNL Workflow] 정의를 간편하게 관리할 수 있습니다.*
+* **[AEM에서 워크플로우 관리 사용(비디오)](./workflow/use-workflow-management.md)**
+   *AEM은 실행 중인 워크플로우를 시각적으로 표시하고 정의를 간편하게 관리할 수  [!DNL Workflow] 있습니다.*
 
 * **[AEM용 Cloud Manager 이해(비디오)](./cloud-manager/understand-cloud-manager-for-aem.md)**\
-   *AEM용 Cloud Manager를 사용하면 AEM 환경을 손쉽게 관리, 검사 및 셀프 서비스를 이용할 수 있습니다.*
+   *AEM용 Cloud Manager를 사용하면 AEM 환경을 손쉽게 관리, 검사 및 셀프 서비스를 받을 수 있습니다.*
 
-* **[Adobe I/O에 사용할 공개 및 개인 키 설정(자습서)](./authentication/set-up-public-private-keys-for-use-with-aem-and-adobe-io.md)**\
-   *AEM 및 Adobe I/O에서 작동하는 키 및 키 스토어 [!DNL openssl] 를 사용하여 생성하는 방법을 알아봅니다.*
+* **[Adobe I/O에서 사용할 공개 및 개인 키 설정(자습서)](./authentication/set-up-public-private-keys-for-use-with-aem-and-adobe-io.md)**\
+   *AEM 및 Adobe I/O에서 작동하는 키 및 키 스토어 [!DNL openssl] 가 생성되는 방법을 알아봅니다.*
 
-* **[Cloud Manager CI/CD 파이프라인 사용(비디오)](./cloud-manager/use-the-cicd-pipeline-in-cloud-manager-for-aem.md)**\
-   *Cloud Manager의 CI/CD 파이프라인을 사용하여 안전하고 일관된 배포를 보장하는 방법을 알아봅니다.*
+* **[클라우드 관리자 CI/CD 파이프라인 사용(비디오)](./cloud-manager/use-the-cicd-pipeline-in-cloud-manager-for-aem.md)**\
+   *안전하고 일관된 배포를 위해 Cloud Manager의 CI/CD 파이프라인을 사용하는 방법을 살펴볼 수 있습니다.*
 
 ## 직원 선택
 
@@ -57,20 +57,20 @@ Adobe Experience Manager은 AEM Sites, [!DNL Assets] 및 [!DNL Forms] 사용자�
     </a>
     </div>
     <p>
-    <em>SDI(Sling Dynamic Include)를 설정하는 방법을 살펴보고 다이내믹 AEM 구성 요소가 항상 최신 컨텐츠를 제공하도록 하는 방법을 살펴봅니다.</em>
+    <em>SDI(Sling Dynamic Include)를 설정하는 방법을 살펴보고 다이내믹 AEM 구성 요소가 항상 최신 컨텐츠를 제공하도록 할 수 있습니다.</em>
     <p>
   </td>
   <td>
     <a href="./administration/understand-reasons-to-upgrade.md">
-    <img alt="AEM을 업그레이드해야 하는 이유 이해" src="./administration/assets/understand-reasons-to-upgrade/thumbnail.png" />
+    <img alt="AEM 업그레이드해야 하는 이유 이해" src="./administration/assets/understand-reasons-to-upgrade/thumbnail.png" />
     </a>
     <div>
     <a href="./administration/understand-reasons-to-upgrade.md">
-    <strong>AEM을 업그레이드해야 하는 이유 이해</strong>
+    <strong>AEM 업그레이드해야 하는 이유 이해</strong>
     </a>
     </div>
     <p>
-    <em>최신 AEM 버전으로 업그레이드하는 것을 고려할 때 이해할 수 있는 주요 기능의 고급 분류</em>
+    <em>최신 버전의 AEM으로 업그레이드하는 것을 고려해 볼 때 주요 기능을 세부적으로 분류합니다.</em>
     </p>
   </td>
 </tr>
