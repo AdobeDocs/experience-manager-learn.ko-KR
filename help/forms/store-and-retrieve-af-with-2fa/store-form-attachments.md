@@ -19,10 +19,10 @@ ht-degree: 0%
 
 # 양식 첨부 파일 저장
 
-적응형 양식에 첨부 파일을 추가하면 첨부 파일이 CRX 저장소의 임시 위치에 저장됩니다. 사용 사례를 살펴보려면 CRX 저장소의 새로운 위치에 양식 첨부 파일을 저장해야 합니다.
+적응형 양식에 첨부 파일을 추가하면 첨부 파일은 CRX 저장소의 임시 위치에 저장됩니다. 사용 사례를 사용하려면 CRX 저장소의 새 위치에 양식 첨부 파일을 저장해야 합니다.
 
-OSGi 서비스는 양식 첨부 파일을 CRX 저장소의 새 위치에 저장하기 위해 생성됩니다. CRX에 있는 첨부 파일의 새 위치를 사용하여 새 파일 맵이 만들어지고 호출 응용 프로그램으로 돌아갑니다.
-다음은 서블릿으로 전송되는 FileMap입니다. 키는 적응형 양식 필드이고 값은 첨부 파일의 임시 위치입니다. Adobe 서블릿에서 첨부 파일을 추출하여 AEM 저장소의 새 위치에 저장하고 새 위치로 FileMap을 업데이트합니다
+OSGi 서비스는 양식 첨부 파일을 CRX 저장소의 새 위치에 저장하도록 작성됩니다. 새 파일 맵은 CRX에 있는 첨부 파일의 새 위치로 만들어지고 호출 응용 프로그램으로 반환됩니다.
+다음은 서블릿으로 전송되는 FileMap입니다. 키는 적응형 양식 필드이며 값은 첨부 파일의 임시 위치입니다. Adobe 서블릿에서는 첨부 파일을 추출하여 AEM 저장소의 새 위치에 저장하고 새 위치로 FileMap을 업데이트합니다
 
 ```java
 {
@@ -31,7 +31,7 @@ OSGi 서비스는 양식 첨부 파일을 CRX 저장소의 새 위치에 저장�
 }
 ```
 
-다음은 요청에서 첨부 파일을 추출하여 **/content/attachments** 폴더에 저장하는 코드입니다
+다음은 요청에서 첨부 파일을 추출하여 **/content/afattachments** 폴더 아래에 저장하는 코드입니다.
 
 ```java
 public String storeAFAttachments(JSONObject fileMap, SlingHttpServletRequest request) {
@@ -72,7 +72,7 @@ public String storeAFAttachments(JSONObject fileMap, SlingHttpServletRequest req
 }
 ```
 
-양식 첨부 파일의 업데이트된 위치를 갖는 새 FileMap
+양식 첨부 파일의 업데이트된 위치가 있는 새 FileMap입니다.
 
 ```java
 {
