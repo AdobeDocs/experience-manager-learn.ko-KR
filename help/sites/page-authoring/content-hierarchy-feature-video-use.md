@@ -1,8 +1,8 @@
 ---
 title: AEM Sites 컨텐츠 계층 소개
 seo-title: AEM Sites 컨텐츠 계층 소개
-description: 다음 비디오에서는 조직에서 사용할 AEM 내에서 사이트 페이지를 저장하는 방법을 설명합니다.
-seo-description: 다음 비디오에서는 조직에서 사용할 AEM 내에서 사이트 페이지를 저장하는 방법을 설명합니다.
+description: 다음 비디오에서는 조직에서 사용할 AEM에 사이트 페이지가 저장되는 방법을 설명합니다.
+seo-description: 다음 비디오에서는 조직에서 사용할 AEM에 사이트 페이지가 저장되는 방법을 설명합니다.
 feature: page-editor
 topics: authoring, publishing
 audience: author, marketer
