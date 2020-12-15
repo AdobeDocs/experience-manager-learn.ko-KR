@@ -1,6 +1,6 @@
 ---
 title: Dispatcher 소개
-description: AEM 아키텍처의 일부로 디스패처의 기능과 기능에 대한 소개입니다.
+description: AEM 아키텍처의 일부로 Dispatcher의 기능 및 기능에 대해 소개합니다.
 feature: dispatcher
 topics: architecture
 audience: administrator, developer
