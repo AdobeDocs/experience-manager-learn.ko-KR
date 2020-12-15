@@ -1,7 +1,7 @@
 ---
 title: AEM Sites에서 페이지 속성 확장
 seo-title: AEM Sites에서 페이지 속성 확장
-description: 사이트 구현에서 페이지 속성에 대한 메타데이터 필드 사용자 지정은 일반적인 요구 사항입니다. 이 비디오에서는 Sling Resource Combination의 기능을 사용하여 이러한 작업을 수행하는 가장 효과적인 방법을 자세히 설명합니다.
+description: 사이트 구현에서 페이지 속성에 대한 메타데이터 필드를 사용자 정의하는 것은 일반적인 요구 사항입니다. 이 비디오는 Sling Resource Combination의 기능을 사용하여 이러한 작업을 수행하는 가장 효과적인 방법을 자세히 설명합니다.
 topics: development
 audience: developer
 doc-type: technical video
@@ -18,14 +18,14 @@ ht-degree: 7%
 
 # 페이지 속성 확장 {#extending-page-properties-in-aem-sites}
 
-사이트 구현에서 페이지 속성에 대한 메타데이터 필드 사용자 지정은 일반적인 요구 사항입니다. 이 비디오에서는 Sling Resource Combination의 기능을 사용하여 이러한 작업을 수행하는 가장 효과적인 방법을 자세히 설명합니다.
+사이트 구현에서 페이지 속성에 대한 메타데이터 필드를 사용자 정의하는 것은 일반적인 요구 사항입니다. 이 비디오는 Sling Resource Combination의 기능을 사용하여 이러한 작업을 수행하는 가장 효과적인 방법을 자세히 설명합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25173?quality=9&learn=on)
 
-위 비디오에서는 Sling 리소스 합병의 다양한 기능을 사용하여 **AEM 6.4**&#x200B;의 We.Retail 응용 프로그램에 대한 페이지 속성을 사용자 지정하는 방법을 보여 줍니다. 다음과 같은 사용자 지정을 활성화합니다.
+위의 비디오에서는 Sling 리소스 합병의 다양한 기능을 사용하여 **AEM 6.4**&#x200B;의 We.Retail 응용 프로그램에 대한 페이지 속성을 사용자 지정하는 방법을 보여 줍니다. 다음과 같은 사용자 지정을 활성화합니다.
 
-* 사용자 지정 탭을 기본 탭 앞에 삽입했습니다.
-* 기본 탭의 일부로 삽입된 새 텍스트 필드.
+* 기본 탭 앞에 사용자 정의 탭을 삽입합니다.
+* [기본] 탭의 일부로 삽입된 새 텍스트 필드입니다.
 * 블루프린트 탭을 숨깁니다.
 
 완성된 익스텐션을 We.Retail 저널 사이트에 설치할 패키지를 다운로드합니다.\
