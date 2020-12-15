@@ -1,6 +1,6 @@
 ---
 title: MySQL 데이터베이스에서 양식 데이터 저장 및 검색
-description: 양식 데이터 저장 및 검색에 관련된 단계를 단계별로 안내하는 멀티 파트 자습서
+description: 양식 데이터 저장 및 검색에 관련된 단계를 단계별로 안내하는 다중 부분 자습서
 feature: adaptive-forms
 topics: development
 audience: developer
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # 양식 데이터를 저장할 서블릿
 
-다음 단계는 양식 데이터를 삽입하거나 업데이트할 서블릿을 만드는 것입니다. 서블릿은 데이터베이스를 삽입하거나 업데이트하기 위해 OSGi 서비스의 적절한 방법을 호출합니다. 저장된 응용 양식 데이터가 GUID와 연결됩니다. 그런 다음 양식 데이터를 업데이트하는 데 동일한 GUID를 사용합니다. 이 서블릿은 &quot;SaveAndContinueLater&quot; 단추를 클릭하면 호출됩니다.
+다음 단계는 양식 데이터를 삽입하거나 업데이트할 서블릿을 만드는 것입니다. 서블릿은 데이터베이스를 삽입하거나 업데이트하기 위해 OSGi 서비스의 적절한 메서드를 호출합니다. 저장된 응용 양식 데이터는 GUID와 연결되어 있습니다. 양식 데이터를 업데이트하는 데 동일한 GUID를 사용합니다. &quot;SaveAndContinueLater&quot; 단추를 클릭하면 이 서블릿이 호출됩니다.
 
 ```java
 package com.aemforms.saveandcontinue.core.servlets;
