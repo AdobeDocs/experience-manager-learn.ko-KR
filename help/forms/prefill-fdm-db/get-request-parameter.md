@@ -1,6 +1,6 @@
 ---
 title: 요청 매개 변수 가져오기
-description: 양식 데이터 모델의 자동 완성 서비스로 요청 매개 변수에 액세스
+description: 양식 데이터 모델의 미리 채우기 서비스에서 요청 매개 변수에 액세스합니다.
 feature: adaptive-forms
 topics: development
 audience: developer
@@ -19,21 +19,21 @@ ht-degree: 2%
 
 # 요청 매개 변수 가져오기
 
-## Get empID 매개 변수
+## empID 매개 변수 가져오기
 
 다음 단계는 url에서 empID 매개 변수에 액세스하는 것입니다. 그런 다음 empID 요청 매개 변수의 값이 양식 데이터 모델의 **_get_** 서비스 작업으로 전달됩니다.
-본 교육 과정의 목적을 위해 Adobe는 다음을 만들고 제공했습니다
+이 강좌를 위해 다음을 만들고 제공했습니다
 
-* 응용 양식 서식 파일(**_FDMDemo_**)
+* 적응형 양식 템플릿(**_FDMDemo_**)
 * **_fdmdemo_**&#x200B;라는 페이지 구성 요소
-* 페이지 구성 요소에 사용자 지정 jsp 포함
-* 적응형 양식 템플릿을 페이지 구성 요소와 연결됨
+* 페이지 구성 요소에 사용자 정의 jsp 포함
+* 적응형 양식 템플릿을 페이지 구성 요소에 연결했습니다.
 
-이렇게 하면 사용자 지정 jsp의 코드가 이 사용자 지정 템플릿을 기반으로 하는 응용 양식이 렌더링될 때만 실행됩니다
+이렇게 하면 사용자 지정 jsp의 코드가 이 사용자 지정 템플릿을 기반으로 하는 적응형 양식이 렌더링되는 경우에만 실행됩니다
 
 * [패키지 ](assets/template-page-component.zip) 관리자를 사용하여  [패키지 가져오기](http://localhost:4502/crx/packmgr/index.jsp)
 * [fdmrequest.jsp 열기](http://localhost:4502/crx/de/index.jsp#/apps/fdmdemo/component/page/fdmdemo/fdmrequest.jsp)
-* 댓글 줄의 주석을 해제합니다.
+* 주석 처리된 줄의 주석을 해제합니다.
 * 변경 내용 저장
 
 ```java
@@ -46,8 +46,8 @@ if(request.getParameter("empID")!=null)
     }
 ```
 
-empID의 값은 paraMap의 empID라는 키와 연결됩니다. 그러면 이 맵이 slingRequest로 전달됩니다
+empID 값은 paraMap의 empID라는 키와 연결되어 있습니다. 그러면 이 맵이 slingRequest로 전달됩니다
 
 >[!NOTE]
 >
->키 empID가 새 엔터티에 서비스를 받는 바인딩 값과 일치해야 합니다
+>키 empID는 서비스를 받는 엔터티의 바인딩 값과 일치해야 합니다.
