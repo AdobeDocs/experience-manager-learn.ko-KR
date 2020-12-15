@@ -47,15 +47,15 @@ ht-degree: 32%
    + [검색 증폭](./search-and-discovery/search-boost.md)
 
 + 고급 기능{#advanced}
-   + [주석 PDF 출력](./advanced/customizing-annotations-pdf-output.md)
+   + [PDF 출력 주석](./advanced/customizing-annotations-pdf-output.md)
    + [자산 통찰력](./advanced/asset-insights-launch-tutorial.md)
    + [자산 보고서](./advanced/asset-reports.md)
    + [권한(CUG)](./advanced/closed-user-groups.md)
    + [워터마크](./advanced/watermarks.md)
 
 + 고급 메타데이터 관리{#metadata}
-   + [계단식 메타데이터](metadata/cascade-metadata-feature-video-use.md)
-   + [이미지의 스마트 태그](metadata/image-smart-tags.md)
+   + [CSS 메타데이터](metadata/cascade-metadata-feature-video-use.md)
+   + [이미지용 스마트 태그](metadata/image-smart-tags.md)
    + [이미지에 대한 사용자 정의 스마트 태그](metadata/custom-smart-tags.md)
    + [비디오용 스마트 태그](metadata/video-smart-tags.md)
    + [메타데이터 가져오기 및 내보내기](metadata/metadata-import-feature-video-use.md)
@@ -64,8 +64,8 @@ ht-degree: 32%
    + [자산 다운로드](./sharing/download.md)
    + [Brand Portal](./sharing/brand-portal.md)
    + 자산 공유{#assets-share}
-      + [자산 공유 공용](./sharing/asset-share-commons-user-experience-feature-video-understand.md)
-      + [로컬 AEM에서 자산 공유 공유기 설정](./sharing/asset-share-commons-technical-video-setup.md)
+      + [에셋 공유 공유물](./sharing/asset-share-commons-user-experience-feature-video-understand.md)
+      + [로컬 AEM에서 자산 공유 공유물 설정](./sharing/asset-share-commons-technical-video-setup.md)
       + [자산 공유 공유물](./sharing/asset-share-commons-feature-video-theming.md)
    + [연결된 자산](./sharing/connected-assets.md)
 
@@ -75,19 +75,19 @@ ht-degree: 32%
    + [Adobe Stock](./creative-workflows/adobe-stock.md)
 
 + Adobe Asset Link{#adobe-asset-link}
-   + [액세스 Adobe 자산 링크](./adobe-asset-link/launch-adobe-asset-link.md)
+   + [Adobe 자산 링크 액세스](./adobe-asset-link/launch-adobe-asset-link.md)
    + [패널 개요](./adobe-asset-link/panel-overview.md)
    + [파일 및 컬렉션](./adobe-asset-link/files-and-collections.md)
    + [다운로드 및 업로드](./adobe-asset-link/download-and-upload.md)
    + [체크 인 체크 아웃](./adobe-asset-link/check-in-check-out.md)
    + [버전 관리 및 주석](./adobe-asset-link/file-versioning-and-comments.md)
-   + [복사 배치](./adobe-asset-link/place-copy.md)
-   + [연결 배치](./adobe-asset-link/place-linked.md)
+   + [사본 배치](./adobe-asset-link/place-copy.md)
+   + [연결 가져오기](./adobe-asset-link/place-linked.md)
    + [배치만(FPO)](./adobe-asset-link/for-placement-only.md)
    + [자산 검색](./adobe-asset-link/asset-search.md)
 
 + Dynamic Media{#dynamic-media}
-   + [다이내믹 미디어 개요](dynamic-media/dynamic-media-overview-feature-video-use.md)
+   + [Dynamic Media 개요](dynamic-media/dynamic-media-overview-feature-video-use.md)
    + [스마트 자르기](dynamic-media/smart-crop-feature-video-use.md)
    + [경험 조각](dynamic-media/dynamic-media-experience-fragments-feature-video-use.md)
    + [대화형 비디오](dynamic-media/dynamic-media-interactive-video-feature-video-use.md)
@@ -98,10 +98,10 @@ ht-degree: 32%
    + [색상 관리](dynamic-media/dynamic-media-color-management-technical-video-setup.md)
    + [뷰어](dynamic-media/dynamic-media-viewer-feature-video-understand.md)
    + [파노라마 및 세로 이미지 뷰어](dynamic-media/panorama-vertical-image-viewer-feature-video-use.md)
-   + [Adobe Analytics의 시청자](dynamic-media/dynamic-media-viewer-extension-use.md)
-   + [Dynamic Media Classic 데스크탑 애플리케이션](dynamic-media/dynamic-media-classic-desktop-application.md)
-   + [다이내믹 미디어 3D](dynamic-media/dynamic-media-3d-feature-video.md)
-   + [다이내믹 미디어 스마트 자르기 비디오](dynamic-media/dynamic-media-smart-crop-video.md)
+   + [Adobe Analytics을 사용한 뷰어](dynamic-media/dynamic-media-viewer-extension-use.md)
+   + [Dynamic Media Classic 데스크톱 응용 프로그램](dynamic-media/dynamic-media-classic-desktop-application.md)
+   + [Dynamic Media 3D](dynamic-media/dynamic-media-3d-feature-video.md)
+   + [Dynamic Media 스마트 자르기 비디오](dynamic-media/dynamic-media-smart-crop-video.md)
 
 + 번역 {#translation}
    + [소스 파일 변환](translation/source-file-translation-feature-video-use.md)
@@ -115,5 +115,5 @@ ht-degree: 32%
    + [자산 카탈로그 사용](asset-templates/asset-catalog-template-feature-video-use.md)
 
 + 배포{#deployment}
-   + [멀티 테넌트 관리 및 동시 개발](deployment/multitenancy-concurrent-article-understand.md)
+   + [멀티 테넌트 및 동시 개발](deployment/multitenancy-concurrent-article-understand.md)
 
