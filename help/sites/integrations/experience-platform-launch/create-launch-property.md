@@ -1,6 +1,6 @@
 ---
 title: 론치 속성 만들기
-description: 나머지 통합을 설정하는 데 필요한 최소 구성으로 론치 속성을 만드는 방법을 알아봅니다. 사용자는 Launch UI를 소개하고 익스텐션, 규칙 및 게시 워크플로우에 대해 학습합니다.
+description: 나머지 통합을 설정하는 데 필요한 최소 구성으로 Launch 속성을 만드는 방법을 알아봅니다. 사용자는 시작 UI를 소개하고 확장, 규칙 및 게시 워크플로우에 대해 알아봅니다.
 feature: launch
 topics: integrations
 audience: administrator
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # 시작 속성 {#create-launch-property} 만들기
 
-Adobe Experience Manager와의 나머지 통합을 설정하는 데 필요한 최소 구성 수를 갖는 론치 속성을 만드는 방법을 알아봅니다. 사용자는 시작 UI에 소개되고 확장, 규칙 및 게시 워크플로우에 대해 학습합니다.
+Adobe Experience Manager와의 나머지 통합을 설정하는 데 필요한 최소 구성 수를 사용하여 Launch 속성을 만드는 방법을 알아봅니다. 사용자는 시작 UI에 소개되고 확장, 규칙 및 게시 워크플로우에 대해 학습합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/38553?quality=12&learn=on)
 
