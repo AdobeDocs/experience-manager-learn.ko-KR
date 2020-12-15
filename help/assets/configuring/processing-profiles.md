@@ -1,6 +1,6 @@
 ---
 title: 처리 프로필
-description: 처리 프로필은 AEM에서 자산에 대해 만들 변환을 Cloud Service으로 정의합니다.
+description: 처리 프로필은 AEM의 자산에 대해 Cloud Service으로 만들 변환을 정의합니다.
 sub-product: 자산
 feature: processing-profiles
 topics: renditions
@@ -21,6 +21,6 @@ ht-degree: 10%
 
 # 처리 프로필
 
-처리 프로필은 AEM에서 자산에 대해 만들 변환을 Cloud Service으로 정의합니다.
+처리 프로필은 AEM의 자산에 대해 Cloud Service으로 만들 변환을 정의합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35597/?quality=12&learn=on&hidetitle=true)
