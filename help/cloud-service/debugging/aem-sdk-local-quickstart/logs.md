@@ -1,6 +1,6 @@
 ---
 title: 로그를 사용하여 AEM SDK 디버깅
-description: 로그는 AEM 응용 프로그램을 디버깅하기 위해 최전방 역할을 하지만 배포된 AEM 응용 프로그램에서 적절한 로깅에 의존합니다.
+description: 로그는 AEM 응용 프로그램 디버깅에 있어 최전선 역할을 하지만 배포된 AEM 응용 프로그램에서 적절한 로깅에 의존합니다.
 feature: null
 topics: development
 version: cloud-service
@@ -19,21 +19,21 @@ ht-degree: 2%
 
 # 로그를 사용하여 AEM SDK 디버깅
 
-AEM SDK 로그에 액세스하는 경우 AEM SDK 로컬 빠른 시작 Jar 또는 Dispatcher Tools&#39;가 AEM 애플리케이션 디버깅에 대한 주요 통찰력을 제공할 수 있습니다.
+AEM SDK의 로그에 액세스하는 경우 AEM SDK 로컬 quickstart Jar 또는 Dispatcher Tools&#39;가 AEM 애플리케이션 디버깅에 대한 주요 통찰력을 제공할 수 있습니다.
 
 ## AEM 로그
 
 >[!VIDEO](https://video.tv.adobe.com/v/34334/?quality=12&learn=on)
 
-로그는 AEM 응용 프로그램을 디버깅하기 위해 최전방 역할을 하지만 배포된 AEM 응용 프로그램에서 적절한 로깅에 의존합니다. Adobe은 AEM SDK의 로컬 quickstart 및 AEM에 대한 로그 가시성을 Cloud Service 개발 환경으로 정규화하여 구성 위젯을 줄이고 재배포를 줄이면서 로컬 개발 및 AEM을 가능한 유사한 Cloud Service 개발 로깅 구성으로 유지하는 것이 좋습니다.
+로그는 AEM 응용 프로그램 디버깅에 있어 최전선 역할을 하지만 배포된 AEM 응용 프로그램에서 적절한 로깅에 의존합니다. Adobe은 AEM SDK의 로컬 quickstart 및 AEM에 대한 로그 가시성을 Cloud Service의 개발 환경으로 정규화하여 구성 위젯과 재배포를 줄이는 방법으로 로컬 개발 및 AEM을 Cloud Service 개발 로깅 구성으로 유지하는 것이 좋습니다.
 
-[AEM Project Tranype](https://github.com/adobe/aem-project-archetype)은
+[AEM 프로젝트 원형](https://github.com/adobe/aem-project-archetype)은
 
 `ui.apps/src/main/content/jcr_root/apps/example/config/org.apache.sling.commons.log.LogManager.factory.config-example.cfg.json`
 
-이 값은 `error.log`에 기록됩니다.
+`error.log`에 로그인하는 경우.
 
-로컬 개발에 기본 로깅이 충분하지 않은 경우 AEM SDK의 로컬 빠른 시작 로그 지원 웹 콘솔([/system/console/slinglog](http://localhost:4502/system/console/slinglog))을 통해 애드혹 로깅을 구성할 수 있지만, AEM에서도 Cloud Service 개발 환경으로서 동일한 로그 구성이 필요하지 않은 경우 애드혹 변경 사항이 Git에 지속되지 않는 것이 좋습니다. 로그 지원 콘솔을 통해 변경한 내용은 AEM SDK의 로컬 quickstart 저장소에 바로 유지됩니다.
+기본 로깅이 로컬 개발에 충분하지 않은 경우 AEM SDK의 로컬 quickstart의 로그 지원 웹 콘솔([/system/console/slinglog](http://localhost:4502/system/console/slinglog))을 통해 애드혹 로깅을 구성할 수 있지만, Cloud Service 개발 환경에서도 이와 동일한 로그 구성이 필요하지 않은 한 Git에 애드혹 변경 사항이 권장되지 않습니다. 로그 지원 콘솔을 통해 변경한 내용은 AEM SDK의 로컬 quickstart 저장소에 바로 유지됩니다.
 
 Java 로그 문은 `error.log` 파일에서 볼 수 있습니다.
 
@@ -41,15 +41,15 @@ Java 로그 문은 `error.log` 파일에서 볼 수 있습니다.
 $ ~/aem-sdk/author/crx-quickstart/logs/error.log
 ```
 
-종종 출력을 터미널로 스트리밍하는 `error.log`을 &quot;테일&quot;하는 것이 유용합니다.
+터미널로 출력을 스트리밍하는 `error.log`을 &quot;꼬리&quot;하는 것이 유용한 경우가 많습니다.
 
 + macOS/Linux
    + `$ tail -f ~/aem-sdk/author/crx-quickstart/logs/error.log`
-+ Windows에는 [타사 꼬리 응용 프로그램](https://stackoverflow.com/questions/187587/a-windows-equivalent-of-the-unix-tail-command) 또는 [Powershell의 Get-Content 명령](https://stackoverflow.com/a/46444596/133936)을 사용해야 합니다.
++ Windows를 사용하려면 [3rd party 꼬리 응용 프로그램](https://stackoverflow.com/questions/187587/a-windows-equivalent-of-the-unix-tail-command) 또는 [Powershell의 Get-Content 명령](https://stackoverflow.com/a/46444596/133936)을 사용해야 합니다.
 
-## 디스패처 로그
+## 발송자 로그
 
-`bin/docker_run`을(를) 호출하면 디스패처 로그가 stdout으로 출력되지만 Docker 포함에서 로그에 직접 액세스할 수 있습니다.
+디스패처 로그는 `bin/docker_run`을(를) 호출할 때 stdout으로 출력되지만 Docker 포함에서 로그에 직접 액세스할 수 있습니다.
 
 ### Docker 컨테이너의 로그 액세스
 
@@ -75,7 +75,7 @@ $ docker exec -it <CONTAINER ID> /bin/sh
 
 ### Docker 로그를 로컬 파일 시스템에 복사
 
-발송자 로그는 즐겨 사용하는 로그 분석 도구를 사용하여 검사를 위해 `/etc/httpd/logs`의 Docker 컨테이너에서 로컬 파일 시스템으로 복사할 수 있습니다. 이 데이터는 특정 시점으로 기록되며 로그에 대한 실시간 업데이트를 제공하지 않습니다.
+디스패처 로그는 즐겨찾기 로그 분석 도구를 사용하여 검사를 위해 `/etc/httpd/logs`의 Docker 컨테이너에서 로컬 파일 시스템으로 복사할 수 있습니다. 이 문서는 지정 시간 사본이며 로그에 대한 실시간 업데이트를 제공하지 않습니다.
 
 ```shell
 $ docker ps
