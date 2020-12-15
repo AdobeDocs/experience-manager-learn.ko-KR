@@ -1,6 +1,6 @@
 ---
 title: AEM 자습서
-description: 'Adobe Experience Manager을 위한 비디오 및 자습서 모음입니다. '
+description: 'Adobe Experience Manager용 비디오 및 자습서 모음입니다. '
 translation-type: tm+mt
 source-git-commit: 23664bae44b74ee35ab7f7cb415d2ba017ea8752
 workflow-type: tm+mt
