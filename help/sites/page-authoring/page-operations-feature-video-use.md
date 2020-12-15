@@ -22,7 +22,7 @@ ht-degree: 2%
 
 # 기본 페이지 작업 {#basic-page-operations-aem-sites}
 
-Adobe Experience Manager Sites 페이지에 대한 기본 페이지 관리 작업을 수행하는 방법을 알아봅니다.
+Adobe Experience Manager Sites 페이지에 대한 기본 페이지 관리 작업을 수행하는 방법에 대해 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32147?quality=12&learn=on)
 
