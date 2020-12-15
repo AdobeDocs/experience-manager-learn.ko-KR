@@ -1,6 +1,6 @@
 ---
 title: 버전
-description: AEM에서 에셋 버전을 생성하고 유지 관리하는 방법을 살펴볼 수 있습니다.
+description: AEM에서 에셋 버전을 만들고 유지 관리하는 방법을 살펴봅니다.
 sub-product: 자산
 feature: null
 topics: authoring, collaboration
@@ -21,6 +21,6 @@ ht-degree: 10%
 
 # 버전
 
-AEM에서 에셋 버전을 생성하고 유지 관리하는 방법을 살펴볼 수 있습니다.
+AEM에서 에셋 버전을 만들고 유지 관리하는 방법을 살펴봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32052/?quality=12&learn=on&hidetitle=true)
