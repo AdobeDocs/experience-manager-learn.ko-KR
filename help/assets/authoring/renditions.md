@@ -1,6 +1,6 @@
 ---
 title: 표현물
-description: AEM Assets의 표현물과 미리 보기 방법에 대해 알아봅니다.
+description: AEM Assets의 표현물과 미리 볼 수 있는 방법에 대해 알아봅니다.
 sub-product: 자산
 feature: null
 topics: authoring, renditions
@@ -21,6 +21,6 @@ ht-degree: 7%
 
 # 표현물
 
-AEM Assets의 표현물과 미리 보기 방법에 대해 알아봅니다.
+AEM Assets의 표현물과 미리 볼 수 있는 방법에 대해 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32047/?quality=12&learn=on&hidetitle=true)
