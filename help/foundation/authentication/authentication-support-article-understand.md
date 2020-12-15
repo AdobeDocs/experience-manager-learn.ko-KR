@@ -1,6 +1,6 @@
 ---
-title: AEM의 인증 지원 이해
-description: 'AEM에서 지원하는 인증(및 가끔 인증) 메커니즘에 대한 통합 보기. '
+title: AEM에서 인증 지원 이해
+description: 'AEM에서 지원하는 인증(및 경우에 따라 권한 부여) 메커니즘에 대한 통합 보기. '
 version: 6.3, 6.4, 6.5
 feature: authentication
 topics: authentication, security
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 # AEM 6.x에서 인증 지원 이해
 
-AEM에서 지원하는 인증(및 가끔 인증) 메커니즘에 대한 통합 보기.
+AEM에서 지원하는 인증(및 경우에 따라 권한 부여) 메커니즘에 대한 통합 보기.
 
 *다음 표에서는 사용자가 AEM에 인증할 수 있는 방법을 설명합니다.*
 
@@ -32,7 +32,7 @@ AEM에서 지원하는 인증(및 가끔 인증) 메커니즘에 대한 통합 �
             <td><strong>AEM 6.5</strong></td>
         </tr>
         <tr>
-            <td><strong>표준 ID로 AEM 사용</strong></td>
+            <td><strong>표준 ID 공급자로 AEM</strong></td>
             <td></td>
             <td></td>
             <td></td>
@@ -93,4 +93,4 @@ AEM에서 지원하는 인증(및 가끔 인증) 메커니즘에 대한 통합 �
     </tbody>
 </table>
 
-*⁕ 커뮤니티 프로젝트를 통해 제공되지만 Adobe에서 직접 지원되지 않습니다.*
+*⁕ 커뮤니티 프로젝트를 통해 제공되지만 Adobe에서 직접 지원되지는 않습니다.*
