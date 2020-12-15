@@ -3,7 +3,7 @@ user-guide-title: 'AEM 및 Adobe Target 시작하기 '
 user-guide-description: Experience Manager 및 Target을 사용하여 개인화된 경험을 전달하는 방법을 보여주는 종단간 자습서입니다.
 product: experience manager
 version: 6.5
-sub-product: sites
+sub-product: 사이트
 audience: author, marketer, administrator, architect, developer
 doc-type: tutorial
 feature: experience-fragments
@@ -29,4 +29,4 @@ ht-degree: 46%
 + 구현 {#aem-target-implementation}
    + [소개](./implementation.md)
    + [Launch 및 Adobe I/O을 사용한 AEM 및 Adobe Target](./using-launch-adobe-io.md)
-   + [기존 Cloud Services을 사용하는 AEM 및 Adobe Target](./using-aem-cloud-services.md)
+   + [이전 Cloud Services을 사용하는 AEM 및 Adobe Target](./using-aem-cloud-services.md)
