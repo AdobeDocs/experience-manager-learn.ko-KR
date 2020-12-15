@@ -1,8 +1,8 @@
 ---
 title: 기여도 섹션에 테이블 추가
 seo-title: 기여도 섹션에 테이블 추가
-description: 첫 번째 대화형 통신 문서를 만들기 위한 다중 단계 자습서의 9부분입니다. 이 부분에서는 기여도 섹션에 표를 추가하겠습니다.
-seo-description: 첫 번째 대화형 통신 문서를 만들기 위한 다중 단계 자습서의 9부분입니다. 이 부분에서는 기여도 섹션에 표를 추가하겠습니다.
+description: 첫 번째 대화형 통신 문서를 만들기 위한 여러 단계로 구성된 자습서의 9부분입니다. 이 부분에서는 기여도 섹션에 표를 추가합니다.
+seo-description: 첫 번째 대화형 통신 문서를 만들기 위한 여러 단계로 구성된 자습서의 9부분입니다. 이 부분에서는 기여도 섹션에 표를 추가합니다.
 uuid: 9475e769-a3f8-4aec-9b46-e0dc182b78a0
 feature: interactive-communication
 topics: development
@@ -29,11 +29,11 @@ ht-degree: 0%
 
 AEM Forms에 로그인하고 Adobe Experience Manager > Forms > Forms 및 문서로 이동합니다.
 
-401KStutementPrint 폴더를 엽니다.
+401KStatementPrint 폴더를 엽니다.
 
-편집 모드에서 401KStutementPrint를 엽니다.
+편집 모드에서 401KStatementPrint를 엽니다.
 
-다음 비디오에서는 인쇄 채널 문서에서 표를 구성하는 절차를 안내합니다.
+다음 비디오는 인쇄 채널 문서에서 표를 구성하는 절차를 안내합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/22387t1?quality=9&learn=on)
 
