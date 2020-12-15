@@ -1,8 +1,8 @@
 ---
 title: AEM Forms에서 서비스 데이터 모델 사용
 seo-title: AEM Forms에서 서비스 데이터 모델 사용
-description: AEM Adaptive Forms의 규칙 편집기는 양식 데이터 모델에서 생성된 서비스를 활용할 수 있습니다.
-seo-description: AEM Adaptive Forms의 규칙 편집기는 양식 데이터 모델에서 생성된 서비스를 활용할 수 있습니다.
+description: AEM 응용 Forms 규칙 편집기는 양식 데이터 모델에서 생성된 서비스를 활용할 수 있습니다.
+seo-description: AEM 응용 Forms 규칙 편집기는 양식 데이터 모델에서 생성된 서비스를 활용할 수 있습니다.
 uuid: fb4a331f-231a-4864-9325-6dceb288ad75
 feature: adaptive-forms, form-data-model
 topics: integrations
@@ -20,9 +20,9 @@ ht-degree: 0%
 ---
 
 
-# 서비스 데이터 모델을 AEM Forms과 함께 사용{#using-service-data-models-with-aem-forms}
+# AEM Forms{#using-service-data-models-with-aem-forms}에서 서비스 데이터 모델 사용
 
-AEM Adaptive Forms의 규칙 편집기는 양식 데이터 모델에서 생성된 서비스를 활용할 수 있습니다.
+AEM 응용 Forms 규칙 편집기는 양식 데이터 모델에서 생성된 서비스를 활용할 수 있습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17739/?quality=9&learn=on)
 
