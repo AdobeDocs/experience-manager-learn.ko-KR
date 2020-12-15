@@ -20,9 +20,9 @@ ht-degree: 0%
 ---
 
 
-# AEM Forms과 사용자 프로필 데이터 통합 사용{#using-user-profile-data-integration-with-aem-forms}
+# AEM Forms{#using-user-profile-data-integration-with-aem-forms}에서 사용자 프로필 데이터 통합 사용
 
-AEM Forms 데이터 통합을 사용하면 서로 다른 데이터 소스를 구성하고 연결할 수 있습니다. 기본적으로 지원되는 기능은 다음과 같습니다. 그러나 사용자 정의가 거의 이루어지지 않는 경우 다른 데이터 소스도 통합할 수 있습니다.
+AEM Forms 데이터 통합을 사용하여 서로 다른 데이터 소스를 구성하고 연결할 수 있습니다. 기본적으로 지원되는 항목: 그러나 사용자 지정이 필요 없는 경우에도 다른 데이터 소스를 통합할 수 있습니다.
 
 관계형 데이터베이스 - MySQL, Microsoft SQL Server, IBM DB2 및 Oracle RDBMS
 
