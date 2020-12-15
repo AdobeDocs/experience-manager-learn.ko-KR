@@ -1,6 +1,6 @@
 ---
 title: 컬렉션
-description: 컬렉션이 AEM Assets에 대한 다양한 관점을 제공하는 방법을 살펴보십시오.
+description: 컬렉션이 AEM Assets에 대해 어떻게 다양한 관점을 제공하고 있는지 알아봅니다.
 sub-product: 자산
 feature: collections
 topics: authoring
@@ -21,6 +21,6 @@ ht-degree: 8%
 
 # 컬렉션
 
-컬렉션이 AEM Assets에 대한 다양한 관점을 제공하는 방법을 살펴보십시오.
+컬렉션이 AEM Assets에 대해 어떻게 다양한 관점을 제공하고 있는지 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32053/?quality=12&learn=on&hidetitle=true)
