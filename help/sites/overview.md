@@ -1,14 +1,14 @@
 ---
 title: AEM Sites 자습서
 seo-title: AEM Sites 자습서
-description: 'Adobe Experience Manager Sites을 위한 비디오 및 자습서 모음입니다. '
-seo-description: Adobe Experience Manager Sites을 위한 비디오 및 자습서 모음입니다
+description: 'Adobe Experience Manager Sites를 위한 비디오 및 자습서 모음입니다. '
+seo-description: Adobe Experience Manager Sites를 위한 비디오 및 자습서 모음입니다
 sub-product: 사이트, 컨텐츠 서비스
 translation-type: tm+mt
-source-git-commit: 23664bae44b74ee35ab7f7cb415d2ba017ea8752
+source-git-commit: aa48c94413f83e794c5d062daaac85c97b451b82
 workflow-type: tm+mt
-source-wordcount: '396'
-ht-degree: 20%
+source-wordcount: '337'
+ht-degree: 24%
 
 ---
 
@@ -19,21 +19,13 @@ Adobe Experience Manager(AEM) Sites는 선도적인 경험 관리 플랫폼입�
 
 ## 새로운 기능
 
-* **[AEM SPA 편집기 시작 및 반응](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html) (자습서)**
+* **[AEM 구성 요소를 사용하여 Adobe 클라이언트 데이터 레이어 사용자 정의](./integrations/adobe-client-data-layer/data-layer-customize.md)**
 
-   *반응형 기능을 사용하여 AEM과 단일 페이지 애플리케이션(SPA)을 통합하는 개발자를 위한 시작 가이드*
+   *사용자 정의 AEM 구성 요소의 내용으로 Adobe 클라이언트 데이터 레이어를 업데이트하는 방법을 알아봅니다.*
 
-* **[AEM SPA 편집기 및 Angular](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html) (자습서) 시작하기**
+* **[AEM 헤드리스 GraphQL 시작하기(자습서)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)**
 
-   *Angular를 사용하여 단일 페이지 애플리케이션(SPA)과 AEM을 통합하는 개발자를 위한 시작 가이드*
-
-* **[AEM 제목 없는 시작하기(자습서)](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-with-aem-headless/overview.html)**
-
-   *헤드리스 CMS 시나리오에서 AEM 콘텐츠를 기본 모바일 앱에서 노출하여 사용하는 방법*
-
-* **[경험 조각 사용(비디오 시리즈)](./experience-fragments/experience-fragments-feature-video-use.md)**
-
-   *콘텐츠 크로스 채널 홍보를 위한 AEM 경험 조각에 대해 알아보십시오.*
+   *AEM GraphQL API를 사용하여 기본 모바일 앱에서 사용할 AEM 콘텐츠를 표시하는 방법입니다.*
 
 * **[컨텐츠 조각 사용(비디오 시리즈)](./content-fragments/content-fragments-feature-video-use.md)**
 
