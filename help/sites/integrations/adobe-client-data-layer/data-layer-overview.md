@@ -10,9 +10,9 @@ version: cloud-service
 kt: 6261
 thumbnail: 41195.jpg
 translation-type: tm+mt
-source-git-commit: e13a5171fbeb9e1eb5f78d1c691bc8b4b896a998
+source-git-commit: aa48c94413f83e794c5d062daaac85c97b451b82
 workflow-type: tm+mt
-source-wordcount: '775'
+source-wordcount: '788'
 ht-degree: 1%
 
 ---
@@ -174,6 +174,8 @@ Adobe 클라이언트 데이터 레이어는 웹 페이지에서 방문자 경�
 ## 다음 단계
 
 이벤트 기반 Adobe 클라이언트 데이터 레이어를 사용하여 [페이지 데이터를 수집하고 Adobe Analytics](../analytics/collect-data-analytics.md)로 전송하는 방법을 알아보려면 다음 자습서를 확인하십시오.
+
+또는 AEM 구성 요소를 사용하여 Adobe 클라이언트 데이터 레이어를 사용자 지정하는 방법[](./data-layer-customize.md)
 
 
 ## 추가 리소스 {#additional-resources}
