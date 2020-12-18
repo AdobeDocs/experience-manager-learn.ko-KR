@@ -5,9 +5,9 @@ breadcrumb-title: AEM as a Cloud Service 자습서
 sub-product: 클라우드 서비스
 team: TM
 translation-type: tm+mt
-source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
+source-git-commit: 322f618469126656dc735263abd55548eb0a3cbf
 workflow-type: tm+mt
-source-wordcount: '201'
+source-wordcount: '205'
 ht-degree: 32%
 
 ---
@@ -51,6 +51,7 @@ ht-degree: 32%
    + [AEM 설치 과정에 대한 액세스 구성](./accessing/walk-through.md)
 + 마이그레이션 {#migration}
    + [컨텐츠 전송 도구](./migration/content-transfer-tool.md)
+   + [자산의 일괄 가져오기](./migration/bulk-import.md)
 + asset compute 확장성{#asset-compute}
    + [개요](./asset-compute/overview.md)
    + {#set-up} 설정
