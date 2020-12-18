@@ -1,12 +1,12 @@
 ---
 user-guide-title: AEM Sites 비디오 및 자습서
-user-guide-description: Adobe Experience Manager Sites을 위한 비디오 및 자습서 모음입니다.
+user-guide-description: Adobe Experience Manager Sites를 위한 비디오 및 자습서 모음입니다.
 breadcrumb-title: AEM Sites 자습서
 sub-product: 사이트
 translation-type: tm+mt
-source-git-commit: 16c73d19584eefff3c9551d2a3174b5b8ed6d427
+source-git-commit: aa48c94413f83e794c5d062daaac85c97b451b82
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '447'
 ht-degree: 21%
 
 ---
@@ -98,6 +98,7 @@ ht-degree: 21%
       + [론치 구현 디버깅](integrations/experience-platform-launch/debug-launch-implementation.md)
    + Adobe 클라이언트 데이터 레이어 {#adobe-client-data-layer}
       + [Adobe 클라이언트 데이터 레이어 사용](integrations/adobe-client-data-layer/data-layer-overview.md)
+      + [Adobe 클라이언트 데이터 레이어 사용자 정의](integrations/adobe-client-data-layer/data-layer-customize.md)
    + 분석 {#analytics}
       + [Adobe Analytics을 사용하여 페이지 데이터 수집](integrations/analytics/collect-data-analytics.md)
       + [Adobe Analytics을 사용하여 클릭한 구성 요소 추적](integrations/analytics/track-clicked-component.md)
