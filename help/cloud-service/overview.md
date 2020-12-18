@@ -4,9 +4,9 @@ description: Cloud Service으로 제공되는 Adobe Experience Manager(AEM)용 �
 sub-product: 사이트, 클라우드 관리자, 파운데이션, 자산
 kt: 3289
 translation-type: tm+mt
-source-git-commit: 23664bae44b74ee35ab7f7cb415d2ba017ea8752
+source-git-commit: 322f618469126656dc735263abd55548eb0a3cbf
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '265'
 ht-degree: 8%
 
 ---
@@ -20,6 +20,14 @@ Adobe Experience Manager(AEM)는 이제 클라우드 서비스로 제공됩니�
 
 ## 새로운 기능
 
+* **[벌크 가져오기(비디오)](./migration/bulk-import.md)**
+
+   *Azure Blob 저장소 또는 Amazon S3에서 AEM으로 에셋을 일괄적으로 가져오는 방법을 알아봅니다.*
+
+* **[asset compute 메타데이터 작업자(자습서)](./asset-compute/advanced/metadata.md)**
+
+   *asset compute 작업자의 AEM에 에셋 메타데이터를 다시 쓰는 방법 살펴보기*
+
 * **[asset compute 마이크로서비스 확장성(자습서)](./asset-compute/overview.md)**
 
    *사용자 정의 에셋 표현물을 생성하기 위해 Asset compute 작업자를 개발하는 방법에 대해 알아봅니다.*
@@ -31,14 +39,6 @@ Adobe Experience Manager(AEM)는 이제 클라우드 서비스로 제공됩니�
 * **[Cloud Service으로 AEM 디버깅(자습서)](./debugging/cloud-service/overview.md)**
 
    *Cloud Service으로 AEM을 디버깅하는 방법 살펴보기*
-
-* **[AEM SDK 디버깅(자습서)](./debugging/aem-sdk-local-quickstart/overview.md)**
-
-   *Cloud Service SDK의 로컬 quickstart로 AEM에서 애플리케이션을 디버깅하는 데 사용되는 다양한 도구를 살펴봅니다.*
-
-* **[로컬 개발 환경 설정(자습서)](./local-development-environment/overview.md)**
-
-   *Cloud Service 개발으로서 AEM용 로컬 개발 시스템을 설정하는 방법을 알아봅니다.*
 
 ## 직원 선택
 
