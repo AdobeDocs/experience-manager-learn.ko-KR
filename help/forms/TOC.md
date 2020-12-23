@@ -6,9 +6,9 @@ user-guide-description: 초보자 및 숙련된 AEM Forms 개발자를 위한 AE
 breadcrumb-title: AEM Forms 자습서
 index: y
 translation-type: tm+mt
-source-git-commit: c0db84f25334106c798d555c754d550113e91eac
+source-git-commit: 243e26e2403e3d7816a0dd024ffbe73743827c7c
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '902'
 ht-degree: 6%
 
 ---
@@ -182,6 +182,7 @@ ht-degree: 6%
    + [업로드된 PDF에 사용 권한 적용](document-services/apply-reader-extension-rights-to-pdf.md)
    + [문서 인증](document-services/certifying-documents-aem-forms-tutorial.md)
    + [양식 첨부 파일 조합](document-services/assemble-form-attachments.md)
+   + [유용한 유틸리티 서비스](document-services/useful-utility-services.md)
 + 인쇄 채널을 위한 인터랙티브 커뮤니케이션
 {#ic-print-channel-tutorial}
    + [소개](ic-print-channel-tutorial/introduction.md)
