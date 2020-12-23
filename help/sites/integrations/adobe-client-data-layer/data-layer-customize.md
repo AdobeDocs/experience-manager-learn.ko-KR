@@ -10,9 +10,9 @@ version: cloud-service
 kt: 6265
 thumbnail: KT-6265.jpg
 translation-type: tm+mt
-source-git-commit: aa48c94413f83e794c5d062daaac85c97b451b82
+source-git-commit: 46936876de355de9923f7a755aa6915a13cca354
 workflow-type: tm+mt
-source-wordcount: '2013'
+source-wordcount: '2027'
 ht-degree: 1%
 
 ---
@@ -112,6 +112,8 @@ ht-degree: 1%
 1. 파일 시작 부분에 다음 가져오기 문을 추가합니다.
 
    ```java
+   import java.util.HashMap;
+   import java.util.Map;
    import org.apache.sling.api.resource.Resource;
    import com.fasterxml.jackson.core.JsonProcessingException;
    import com.fasterxml.jackson.databind.ObjectMapper;
@@ -163,17 +165,6 @@ ht-degree: 1%
 
    `ObjectMapper`은 속성을 일련화하고 JSON 문자열을 반환하는 데 사용됩니다. 그런 다음 이 JSON 문자열을 데이터 레이어에 삽입할 수 있습니다.
 
-1. `core/src/main/java/com/adobe/aem/guides/wknd/core/models/package-info.java`에서 `package-info.java` 파일을 열고 `1.0`에서 `2.0`(으)로 버전을 업데이트합니다.
-
-   ```java
-   @Version("2.0")
-   package com.adobe.aem.guides.wknd.core.models;
-   
-   import org.osgi.annotation.versioning.Version;
-   ```
-
-   `Byline.java` 인터페이스가 변경되었으므로 Java 패키지 버전을 업데이트해야 합니다.
-
 1. 터미널 창을 엽니다. Maven 기술을 사용하여 `core` 모듈만 빌드하고 배포합니다.
 
    ```shell
@@ -194,13 +185,11 @@ ht-degree: 1%
 
 1. `data-cmp-data-layer` 특성을 포함하도록 `byline.html`을(를) 업데이트합니다.
 
-   ```html
-    <div data-sly-use.byline="com.adobe.aem.guides.wknd.core.models.Byline"
+   ```diff
+     <div data-sly-use.byline="com.adobe.aem.guides.wknd.core.models.Byline"
        data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
        data-sly-test.hasContent="${!byline.empty}"
-       <!--/* Add the data-cmp-data-layer */-->
-       data-cmp-data-layer="${byline.data}"
-   
+   +   data-cmp-data-layer="${byline.data}"
        class="cmp-byline">
        ...
    ```
@@ -256,8 +245,11 @@ Adobe 클라이언트 데이터 레이어는 이벤트 기반이며 작업을 �
 
 1. `byline.html`을 업데이트하여 Byline의 **name** 요소에 `data-cmp-clickable` 특성을 포함하십시오.
 
-   ```html
-   <h2 class="cmp-byline__name" data-cmp-clickable>${byline.name}</h2>
+   ```diff
+     <h2 class="cmp-byline__name" 
+   +    data-cmp-clickable="${byline.data ? true : false}">
+        ${byline.name}
+     </h2>
    ```
 
 1. 새 터미널을 엽니다. Maven 기술을 사용하여 `ui.apps` 모듈만 빌드하고 배포합니다.
@@ -289,7 +281,7 @@ Adobe 클라이언트 데이터 레이어는 이벤트 기반이며 작업을 �
 
    ```javascript
    window.adobeDataLayer.push(function (dl) {
-        dl.addEventListener("cmp:show", bylineClickHandler);
+        dl.addEventListener("cmp:click", bylineClickHandler);
    });
    ```
 
@@ -419,6 +411,13 @@ Sling 모델이 이 장의 이전 버전에서 [업데이트](#sling-model)인 �
    ```
 
    이제 `byline` 구성 요소 항목 내에 `image` 개체가 있습니다. DAM의 자산에 대한 자세한 정보가 더 있습니다. 또한 `@type` 및 고유 ID(이 경우 `byline-136073cfcb`)가 자동으로 채워지고 구성 요소를 수정할 때 나타내는 `repo:modifyDate`도 확인합니다.
+
+## 추가 예 {#additional-examples}
+
+1. WKND 코드 베이스에서 `ImageList` 구성 요소를 검사하면 데이터 레이어를 확장하는 다른 예를 볼 수 있습니다.
+   * `ImageList.java` - 모듈의 Java  `core` 인터페이스.
+   * `ImageListImpl.java` - 모듈의 Sling  `core` Model을 참조하십시오.
+   * `image-list.html` - 모듈의 HTL  `ui.apps` 템플릿입니다.
 
    >[!NOTE]
    >
