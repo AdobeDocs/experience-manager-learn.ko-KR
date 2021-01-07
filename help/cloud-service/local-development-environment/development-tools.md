@@ -10,7 +10,7 @@ audience: developer
 kt: 4267
 thumbnail: 25907.jpg
 translation-type: tm+mt
-source-git-commit: cb5f3c323c433c9321ba26ac1194be0cd225a405
+source-git-commit: debf13d8e376979548bcbf55f71661d8cb8eb823
 workflow-type: tm+mt
 source-wordcount: '1366'
 ht-degree: 0%
@@ -132,7 +132,7 @@ Adobe I/O Cloud Manager 플러그인을 사용하면 aio CLI가 `aio cloudmanage
 
 Adobe I/O Cloud Manager 플러그인을 사용하면 aio CLI에서 `aio asset-compute` 명령을 통해 Asset compute 작업자를 생성하고 실행할 수 있습니다.
 
-1. `aio plugins:install @adobe/aio-cli-plugin-cloudmanager`을(를) 실행하여 [aio Asset compute 플러그인](https://github.com/adobe/aio-cli-plugin-asset-compute)을 설치합니다.
+1. `aio plugins:install @adobe/aio-cli-plugin-asset-compute`을(를) 실행하여 [aio Asset compute 플러그인](https://github.com/adobe/aio-cli-plugin-asset-compute)을 설치합니다.
 
 ### Adobe I/O CLI 인증 설정
 
