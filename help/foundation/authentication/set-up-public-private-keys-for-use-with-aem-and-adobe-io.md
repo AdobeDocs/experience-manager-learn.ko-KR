@@ -9,9 +9,9 @@ audience: architect, developer, implementer
 doc-type: tutorial
 kt: 2450
 translation-type: tm+mt
-source-git-commit: c85a59a8bd180d5affe2a5bf5939dabfb2776d73
+source-git-commit: 3f973e36531a2d04cbaf6bb8dd70b39fef7d8b2f
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -115,9 +115,13 @@ AEM은 생성된 **개인 키**&#x200B;를 사용하여 Adobe I/O 및 기타 웹
 
 * **[!UICONTROL 새 별칭]**:aem에서 키의 별칭입니다. 이 값은 무엇이든 될 수 있으며 openssl 명령으로 만든 키 저장소의 이름과 일치할 필요가 없습니다.
 * **[!UICONTROL 키 저장소 파일]**:openssl pkcs12 명령 출력(keystore.p12)
-* **[!UICONTROL 개인 키 별칭]**:인수를 통해 openssl pkcs12 명령에 설정된  `-  passout` 암호입니다.
+* **[!UICONTROL 키 저장소 파일 암호]**:인수를 통해 openssl pkcs12 명령에 설정된  `-passout` 암호입니다.
+* **[!UICONTROL 개인 키 별칭]**:위의 openssl pkcs12 명령 `-name` 의 인수에 제공된 값(예: `my-key`).
+* **[!UICONTROL 개인 키 암호]**:인수를 통해 openssl pkcs12 명령에 설정된  `-passout` 암호입니다.
 
-* **[!UICONTROL 개인 키 암호]**:인수를 통해 openssl pkcs12 명령에 설정된  `-  passout` 암호입니다.
+>[!CAUTION]
+>
+>KeyStore 파일 암호 및 개인 키 암호는 두 입력에 모두 동일합니다. 일치하지 않는 암호를 입력하면 키를 가져오지 않습니다.
 
 ### 개인 키가 AEM 키 저장소 {#verify-the-private-key-is-loaded-into-the-aem-keystore}에 로드되었는지 확인합니다.
 
