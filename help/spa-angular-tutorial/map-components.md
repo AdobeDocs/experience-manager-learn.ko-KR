@@ -11,7 +11,7 @@ audience: developer
 kt: 5311
 thumbnail: 5311-spa-angular.jpg
 translation-type: tm+mt
-source-git-commit: ab5b92dd9c901075347cc521bf0abe0dfc0e5319
+source-git-commit: 28b5522e094a41d81116acb923dc0390478e2308
 workflow-type: tm+mt
 source-wordcount: '2387'
 ht-degree: 1%
@@ -481,7 +481,7 @@ SPA 코드로 이동하기 전에 AEM에서 제공하는 JSON 모델을 검사�
 
    ![VSCode 가져오기 템플릿](assets/map-components/import-aem-servervscode.png)
 
-4. 내용을 가져오려면 단계를 반복하지만 `/conf/wknd-spa-angular/settings/wcm/templates/policies`에 있는 **policies** 폴더를 선택합니다.
+4. 내용을 가져오려면 단계를 반복하지만 `/conf/wknd-spa-angular/settings/wcm/policies`에 있는 **policies** 폴더를 선택합니다.
 
 5. Inspect은 `ui.content/src/main/content/META-INF/vault/filter.xml`에 있는 `filter.xml` 파일을 반환합니다.
 
