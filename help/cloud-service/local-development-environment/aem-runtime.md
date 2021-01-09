@@ -10,9 +10,9 @@ audience: developer
 kt: 4678, 4677
 thumbnail: 32551.jpg
 translation-type: tm+mt
-source-git-commit: 4cfbf975919eb38413be8446b70b107bbfebb845
+source-git-commit: 398b9f855556fc425b034986a7f21159297dcba5
 workflow-type: tm+mt
-source-wordcount: '1406'
+source-wordcount: '1614'
 ht-degree: 1%
 
 ---
@@ -111,6 +111,39 @@ $ cp aem-sdk-Quickstart-XXX.jar ~/aem-sdk/publish/aem-publish-p4503.jar
 $ cd ~/aem-sdk/publish
 $ java -jar aem-publish-p4503.jar
 ```
+
+## 내용 배포 시뮬레이션 {#content-distribution}
+
+진정한 Cloud Service 환경 콘텐츠는 [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html) 및 Adobe 파이프라인을 사용하여 작성자 서비스에서 게시 서비스로 배포됩니다. [Adobe 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/core-concepts/architecture.html?lang=en#content-distribution)은 클라우드 환경에서만 사용할 수 있는 격리된 마이크로서비스입니다.
+
+개발 중에 로컬 작성자 및 게시 서비스를 사용하여 컨텐츠의 배포를 시뮬레이션하는 것이 좋습니다. 기존 복제 에이전트를 활성화하면 이 작업을 수행할 수 있습니다.
+
+>[!NOTE]
+>
+> 복제 에이전트는 로컬 Quickstart JAR에서만 사용할 수 있으며 컨텐츠 배포 시뮬레이션만 제공합니다.
+
+1. **작성자** 서비스에 로그인하고 [http://localhost:4502/etc/replication/agents.author.html](http://localhost:4502/etc/replication/agents.author.html)로 이동합니다.
+1. 기본 복제 에이전트를 열려면 **기본 에이전트(게시)**&#x200B;를 클릭합니다.
+1. **편집**&#x200B;을 클릭하여 에이전트의 구성을 엽니다.
+1. **설정** 탭에서 다음 필드를 업데이트합니다.
+
+   + **활성화됨**  - true 확인
+   + **에이전트 사용자 ID**  - 이 필드를 비워 둡니다.
+
+   ![복제 에이전트 구성 - 설정](assets/aem-runtime/settings-config.png)
+
+1. **전송** 탭에서 다음 필드를 업데이트합니다.
+
+   + **URI** -  `http://localhost:4503/bin/receive?sling:authRequestLogin=1`
+   + **사용자** -  `admin`
+   + **암호** -  `admin`
+
+   ![복제 에이전트 구성 - 전송](assets/aem-runtime/transport-config.png)
+
+1. **확인**&#x200B;을 클릭하여 구성을 저장하고 **기본** 복제 에이전트를 활성화합니다.
+1. 이제 작성자 서비스에서 컨텐츠를 변경하고 게시 서비스에 게시할 수 있습니다.
+
+![페이지 게시](assets/aem-runtime/publish-page-changes.png)
 
 ## 빠른 시작 Jar 시작 모드
 
