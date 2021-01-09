@@ -5,9 +5,9 @@ breadcrumb-title: AEM as a Cloud Service 자습서
 sub-product: 클라우드 서비스
 team: TM
 translation-type: tm+mt
-source-git-commit: 322f618469126656dc735263abd55548eb0a3cbf
+source-git-commit: 81c704240f163ccd151a61643f589f825a288705
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '218'
 ht-degree: 32%
 
 ---
@@ -23,6 +23,12 @@ ht-degree: 32%
    + [Sling 소개](./underlying-technology/introduction-sling.md)
    + [작성자 및 게시 계층 소개](./underlying-technology/introduction-author-publish.md)
    + [Dispatcher 소개](./underlying-technology/introduction-dispatcher.md)
++ Cloud Manager {#cloud-manager}
+   + [프로그램](./cloud-manager/programs.md)
+   + [환경](./cloud-manager/environments.md)
+   + [CI/CD 프로덕션 파이프라인](./cloud-manager/cicd-production-pipeline.md)
+   + [CI/CD 비프로덕션 파이프라인](./cloud-manager/cicd-non-production-pipeline.md)
+   + [활동](./cloud-manager/activity.md)
 + 로컬 개발 환경 설정 {#local-development-environment-set-up}
    + [개요](./local-development-environment/overview.md)
    + [개발 도구](./local-development-environment/development-tools.md)
