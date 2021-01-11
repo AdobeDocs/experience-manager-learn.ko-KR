@@ -1,20 +1,17 @@
 ---
 title: AEM Assets에서 메타데이터 가져오기 및 내보내기 사용
-seo-title: AEM Assets에서 메타데이터 가져오기 및 내보내기 사용
 description: AEM Assets 메타데이터 가져오기 및 내보내기 기능을 사용하면 컨텐츠 작성자는 AEM에서 에셋 메타데이터를 손쉽게 이동 및 내보낼 수 있으며 Microsoft Excel의 강력한 기능을 활용하여 메타데이터를 규모에 맞게 조작할 수 있으므로 AEM에서 기존 에셋에 대한 대량 업데이트 메타데이터를 활용할 수 있습니다.
-seo-description: AEM Assets 메타데이터 가져오기 및 내보내기 기능을 사용하면 컨텐츠 작성자는 AEM에서 에셋 메타데이터를 손쉽게 이동 및 내보낼 수 있으며 Microsoft Excel의 강력한 기능을 활용하여 메타데이터를 규모에 맞게 조작할 수 있으므로 AEM에서 기존 에셋에 대한 대량 업데이트 메타데이터를 활용할 수 있습니다.
-uuid: db7e57a4-b0c1-4a48-906d-802c19964313
-discoiquuid: 72dd9230-73e1-454e-a3e0-9281e621d901
 topics: metadata
 audience: all
 doc-type: feature video
 activity: use
+kt: 647
 version: 6.3, 6.4, 6.5
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 2c0818d0223a3db55e6407068f4802b9e7f7dd83
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 2%
+source-wordcount: '256'
+ht-degree: 3%
 
 ---
 
@@ -56,7 +53,7 @@ AEM Assets 메타데이터 가져오기 및 내보내기 기능을 사용하면 
 
 * 속성 이름은 대/소문자를 구분합니다.
    * 정답:`dc:title {{String}}`
-   * 오답:`Dc:Ttle {{String}}`
+   * 오답:`Dc:Title {{String}}`
 
 * 속성 유형은 대/소문자를 구분하지 않습니다.
 * 모든 유효한 [JCR 속성 유형](https://docs.adobe.com/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/PropertyType.html)이(가) 지원됩니다.
