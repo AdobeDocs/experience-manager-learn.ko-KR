@@ -10,9 +10,9 @@ audience: developer
 kt: 5802
 thumbnail: KT-5802.jpg
 translation-type: tm+mt
-source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
+source-git-commit: 649d971ecaa67c0d1dd2636f3c212bfee3d13561
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1241'
 ht-degree: 0%
 
 ---
@@ -34,6 +34,15 @@ ht-degree: 0%
 + __해상도__:사용자 지정 작업자 코드를 검토하고 모든 비동기 호출이 를 사용하여 동기식으로 수행되는지 확인합니다 `await`.
 
 ## 개발 도구{#development-tool}
+
+### asset compute 프로젝트{#missing-console-json}에 Console.json 파일이 없습니다.
+
++ __오류:__ 오류:유효성 검사(...)에 필요한 파일이 없습니다./node_modules/@adobe/asset-compute-client/lib/integrationConfiguration.js:XX:YY) async setupAssetCompute(.../node_modules/@adobe/asset-compute-devtool/src/assetComputeDevTool.js:XX:YY)
++ __원인:__ Asset compute  `console.json` 프로젝트의 루트에서 파일이 없습니다.
++ __해상도:__ Adobe I/O 프로젝트의  `console.json` 새 양식 다운로드
+   1. console.adobe.io에서 Asset compute 프로젝트가 사용하도록 구성된 Adobe I/O 프로젝트를 엽니다.
+   1. 오른쪽 상단의 __다운로드__ 단추를 누릅니다.
+   1. 파일 이름 `console.json`을 사용하여 다운로드한 파일을 Asset compute 프로젝트의 루트에 저장합니다.
 
 ### manifest.yml{#incorrect-yaml-indentation}에 잘못된 YAML 들여쓰기가 있습니다.
 
@@ -95,7 +104,6 @@ asset compute 개발 도구는 부실 데이터를 가져오는 상태를 입력
    + 또는 `/build/test-worker/<worker-name>/<test-run-timestamp>/<test-case>/rendition.<extension>`에서 테스트 생성 파일의 유효성을 확인하고, 올바른지 유효성을 검사한 다음 예상 변환 파일로 사용합니다.
 
 ## 디버그
-
 
 ### 디버거가 {#debugger-does-not-attach}을(를) 첨부하지 않습니다.
 
