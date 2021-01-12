@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6269
 thumbnail: 40197.jpg
 translation-type: tm+mt
-source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
+source-git-commit: c551eb984d8fefe19a979ce8c556289caa6805d8
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '759'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ _asset compute 프로젝트 생성 클릭스루(오디오 없음)_
 $ aio app use
 ```
 
-현재 작업 영역 세부 정보가 올바른지 확인하고 `Y`을(를) 꽤 표시하거나 `console.json`을(를) 입력하여 생성합니다. `.env` 및 `.aio`이(가) 이미 존재하는 것으로 감지되면 `x`를 눌러 만들기를 건너뜁니다.
+현재 작업 영역 세부 정보가 올바른지 확인하고 `Y` 키를 누르거나 `console.json`을(를) 생성하려면 Enter 키를 누릅니다. `.env` 및 `.aio`이(가) 이미 존재하는 것으로 감지되면 `x`를 눌러 만들기를 건너뜁니다.
 
 ## 프로젝트의 구조 검토
 
