@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6269
 thumbnail: 40197.jpg
 translation-type: tm+mt
-source-git-commit: c551eb984d8fefe19a979ce8c556289caa6805d8
+source-git-commit: 676d4bfceaaec3ae8d4feb9f66294ec04e1ecd2b
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '772'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,6 @@ asset compute 프로젝트는 Adobe I/O CLI를 사용하여 생성된 Node.js �
 >[!VIDEO](https://video.tv.adobe.com/v/40197/?quality=12&learn=on)
 
 _asset compute 프로젝트 생성 클릭스루(오디오 없음)_
-
 
 [Adobe I/O CLI Asset compute 플러그인](../set-up/development-environment.md#aio-cli)을 사용하여 빈 새 Asset compute 프로젝트를 생성합니다.
 
@@ -59,6 +58,20 @@ $ aio app use
 ```
 
 현재 작업 영역 세부 정보가 올바른지 확인하고 `Y` 키를 누르거나 `console.json`을(를) 생성하려면 Enter 키를 누릅니다. `.env` 및 `.aio`이(가) 이미 존재하는 것으로 감지되면 `x`를 눌러 만들기를 건너뜁니다.
+
+새로 만들거나 `.env`을(를) 덮어쓰는 경우, 누락된 키/값을 새 `.env`에 다시 추가합니다.
+
+```
+## please provide the following environment variables for the Asset Compute devtool. You can use AWS or Azure, not both:
+#ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH=
+#S3_BUCKET=
+#AWS_ACCESS_KEY_ID=
+#AWS_SECRET_ACCESS_KEY=
+#AWS_REGION=
+#AZURE_STORAGE_ACCOUNT=
+#AZURE_STORAGE_KEY=
+#AZURE_STORAGE_CONTAINER_NAME=
+```
 
 ## 프로젝트의 구조 검토
 
