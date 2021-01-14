@@ -2,9 +2,9 @@
 title: AEM 제목 없는 자습서
 description: 헤드리스 CMS로 Adobe Experience Manager을 사용하는 방법에 대한 자습서 모음입니다.
 translation-type: tm+mt
-source-git-commit: 5012433a5f1c7169b1a3996453bfdbd5d78e5b1c
+source-git-commit: eb2b556c5947b15a31a74a86dadd525fb06bcf14
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '373'
 ht-degree: 5%
 
 ---
@@ -18,8 +18,8 @@ Adobe Experience Manager에는 헤드리스 끝점을 정의하고 콘텐츠를 
 
 >[!CAUTION]
 >
-> 컨텐츠 조각 전달용 AEM GraphQL API는 2021년 초에 릴리스됩니다.
-> 관련 문서는 미리 보기 목적으로 사용할 수 있습니다.
+> 요청에 따라 컨텐츠 조각 전달용 AEM GraphQL API를 사용할 수 있습니다.
+> Cloud Service 프로그램으로 AEM용 API를 활성화하려면 Adobe 지원에 문의하십시오.
 
 컨텐츠 조각용 AEM GraphQL API
 외부 클라이언트 애플리케이션이 AEM에서 관리되는 컨텐츠를 사용하여 경험을 렌더링하는 헤드리스 CMS 시나리오를 지원합니다.
