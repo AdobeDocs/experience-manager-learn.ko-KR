@@ -11,9 +11,9 @@ mini-toc-levels: 1
 kt: 6386
 thumbnail: KT-6386.jpg
 translation-type: tm+mt
-source-git-commit: 2ea667d3bdb73fa4da87b877f14db77d896448a7
+source-git-commit: eb2b556c5947b15a31a74a86dadd525fb06bcf14
 workflow-type: tm+mt
-source-wordcount: '1590'
+source-wordcount: '1599'
 ht-degree: 1%
 
 ---
@@ -23,8 +23,8 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
-> 컨텐츠 조각 전달용 AEM GraphQL API는 2021년 초에 릴리스됩니다.
-> 관련 문서는 미리 보기 목적으로 사용할 수 있습니다.
+> 요청에 따라 컨텐츠 조각 전달용 AEM GraphQL API를 사용할 수 있습니다.
+> Cloud Service 프로그램으로 AEM용 API를 활성화하려면 Adobe 지원에 문의하십시오.
 
 이 장에서는 AEM GraphQL API를 사용하여 외부 애플리케이션이 AEM의 컨텐츠를 사용하는지 확인할 수 있도록 로컬 환경을 빠르게 설정할 수 있습니다. 튜토리얼의 이후 장은 이 설정을 구성합니다.
 
@@ -111,7 +111,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-> Cloud Service 환경을 사용하는 경우 WKND 참조 사이트와 같은 코드 베이스를 Cloud Service 환경에 배포하는 방법에 대한 설명서를 참조하십시오[.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#deploying)
+> Cloud Service 환경을 사용하는 경우 WKND 참조 사이트와 같은 코드 베이스를 Cloud Service 환경에 배포하는 방법에 대한 설명서를 참조하십시오](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#deploying).[
 
 ## GraphQL 끝점 설치{#graphql-endpoint}
 
@@ -180,7 +180,7 @@ GraphQL 끝점을 구성해야 합니다. 따라서 GraphQL API가 표시되는 
 React 앱이 실행 중이니 AEM의 콘텐츠를 업데이트하고 앱에 반영된 변경 사항을 확인하십시오.
 
 1. AEM [http://localhost:4502](http://localhost:4502)로 이동합니다.
-1. **자산** > **파일** > **WKND 사이트** > **영어** > **모험**[ > &lt;a10/>발리 서프 캠프](http://localhost:4502/assets.html/content/dam/wknd/en/adventures/bali-surf-camp)&lt;a11/> 2/>.****
+1. **자산** > **파일** > **WKND 사이트** > **영어** > **모험**[ > **발리 서프 캠프](http://localhost:4502/assets.html/content/dam/wknd/en/adventures/bali-surf-camp)** 2/>.
 
    ![발리 서프 캠프 폴더](assets/setup/bali-surf-camp-folder.png)
 
