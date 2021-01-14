@@ -11,9 +11,9 @@ mini-toc-levels: 1
 kt: 6712
 thumbnail: 22452.jpg
 translation-type: tm+mt
-source-git-commit: 2ea667d3bdb73fa4da87b877f14db77d896448a7
+source-git-commit: eb2b556c5947b15a31a74a86dadd525fb06bcf14
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '980'
 ht-degree: 1%
 
 ---
@@ -23,8 +23,8 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
-> 컨텐츠 조각 전달용 AEM GraphQL API는 2021년 초에 릴리스됩니다.
-> 관련 문서는 미리 보기 목적으로 사용할 수 있습니다.
+> 요청에 따라 컨텐츠 조각 전달용 AEM GraphQL API를 사용할 수 있습니다.
+> Cloud Service 프로그램으로 AEM용 API를 활성화하려면 Adobe 지원에 문의하십시오.
 
 이 장에서는 **컨텐츠 조각 모델**&#x200B;을 사용하여 컨텐트를 모델링하고 스키마를 작성하는 방법에 대해 알아봅니다. 기존 모델을 검토하고 새 모델을 생성합니다. 또한 모델의 일부로 스키마를 정의하는 데 사용할 수 있는 다양한 데이터 유형에 대해서도 학습합니다.
 
@@ -58,7 +58,7 @@ ht-degree: 1%
 
    ![모험 컨텐츠 조각 모델 열기](assets/content-fragment-models/adventure-content-fragment-edit.png)
 
-1. 그러면 **컨텐츠 조각 모델 편집기**&#x200B;가 열립니다. 입력 필드가 정의하는 탐색 모델에 **단일 행 텍스트**, **여러 행 텍스트**, **열거형** 및 **컨텐트 참조**&#x200B;와 같은 다른 &lt;a0/>데이터 유형&#x200B;**이 포함되어 있는지 확인합니다.**
+1. 그러면 **컨텐츠 조각 모델 편집기**&#x200B;가 열립니다. 입력 필드가 정의하는 탐색 모델에 **단일 행 텍스트**, **여러 행 텍스트**, **열거형** 및 **컨텐트 참조**&#x200B;와 같은 다른 **데이터 유형**&#x200B;이 포함되어 있는지 확인합니다.
 
 1. 편집기의 오른쪽 열에는 컨텐츠 조각 작성에 사용되는 양식 필드를 정의하는 사용 가능한 **데이터 유형**&#x200B;이 나열됩니다.
 
