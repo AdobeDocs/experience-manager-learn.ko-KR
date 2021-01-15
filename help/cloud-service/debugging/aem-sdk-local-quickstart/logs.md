@@ -9,9 +9,9 @@ activity: develop
 audience: developer
 kt: 5252
 translation-type: tm+mt
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: 178ba3dbcb6f2050a9c56303bbabbcfcbead3e79
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '394'
 ht-degree: 2%
 
 ---
@@ -51,7 +51,7 @@ $ ~/aem-sdk/author/crx-quickstart/logs/error.log
 
 디스패처 로그는 `bin/docker_run`을(를) 호출할 때 stdout으로 출력되지만 Docker 포함에서 로그에 직접 액세스할 수 있습니다.
 
-### Docker 컨테이너의 로그 액세스
+### Docker 컨테이너의 로그 액세스{#dispatcher-tools-access-logs}
 
 발송자 로그는 `/etc/httpd/logs`의 Docker 컨테이너에서 직접 액세스할 수 있습니다.
 
@@ -73,7 +73,10 @@ $ docker exec -it <CONTAINER ID> /bin/sh
 /# exit
 ```
 
-### Docker 로그를 로컬 파일 시스템에 복사
+_in `<CONTAINER ID>` 을 명령에서 나열된 대상 Docker 컨테이너 ID로  `docker exec -it <CONTAINER ID> /bin/sh` 바꿔야  `docker ps` 합니다._
+
+
+### Docker 로그를 로컬 파일 시스템{#dispatcher-tools-copy-logs}에 복사
 
 디스패처 로그는 즐겨찾기 로그 분석 도구를 사용하여 검사를 위해 `/etc/httpd/logs`의 Docker 컨테이너에서 로컬 파일 시스템으로 복사할 수 있습니다. 이 문서는 지정 시간 사본이며 로그에 대한 실시간 업데이트를 제공하지 않습니다.
 
@@ -90,3 +93,4 @@ $ ls
     dispatcher.log          healthcheck_access_log  httpd_access.log        httpd_error.log
 ```
 
+_in `<CONTAINER_ID>` 을 명령에서 나열된 대상 Docker 컨테이너 ID로  `docker cp <CONTAINER_ID>:/var/log/apache2 ./` 바꿔야  `docker ps` 합니다._
