@@ -11,9 +11,9 @@ audience: developer
 kt: 4679
 thumbnail: 30603.jpg
 translation-type: tm+mt
-source-git-commit: 1b4a927a68d24eeb08d0ee244e85519323482910
+source-git-commit: 178ba3dbcb6f2050a9c56303bbabbcfcbead3e79
 workflow-type: tm+mt
-source-wordcount: '1534'
+source-wordcount: '1566'
 ht-degree: 2%
 
 ---
@@ -96,7 +96,7 @@ Dispatcher 도구는 로컬 개발을 포함하여 모든 환경에 대한 동�
 
 + 사용량:
    + Windows: `bin\validate src`
-   + macOS / Linux:`./bin/validate ./src`
+   + macOS / Linux:`./bin/validate.sh ./src`
 
 ## 로컬에서 Dispatcher 실행
 
@@ -185,6 +185,13 @@ Dispatcher 디버깅에 유용한 매개 변수는 다음과 같습니다.
 >[!VIDEO](https://video.tv.adobe.com/v/30604/?quality=12&learn=on)
 
 *이 비디오에서는 일러스트레이션 목적으로 macOS를 사용합니다. 동일한 Windows/Linux 명령을 사용하여 비슷한 결과를 얻을 수 있습니다*
+
+### 로그 파일 액세스
+
+Apache 웹 서버 및 AEM Dispatcher 로그는 Docker 컨테이너에서 직접 액세스할 수 있습니다.
+
++ [Docker 컨테이너의 로그 액세스](../debugging/aem-sdk-local-quickstart/logs.md#dispatcher-tools-access-logs)
++ [Docker 로그를 로컬 파일 시스템에 복사](../debugging/aem-sdk-local-quickstart/logs.md#dispatcher-tools-copy-logs)
 
 ## Dispatcher 도구를 업데이트하는 경우{#dispatcher-tools-version}
 
