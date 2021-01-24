@@ -6,9 +6,9 @@ user-guide-description: 초보자 및 숙련된 AEM Forms 개발자를 위한 AE
 breadcrumb-title: AEM Forms 자습서
 index: y
 translation-type: tm+mt
-source-git-commit: 243e26e2403e3d7816a0dd024ffbe73743827c7c
+source-git-commit: 049574ab2536b784d6b303f474dba0412007e18c
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '938'
 ht-degree: 6%
 
 ---
@@ -125,6 +125,18 @@ ht-degree: 6%
    + [PDF 양식을 적응형 양식으로 변환](aem-forms-and-adobe-sign/convert-pdf-form-into-adaptive-form.md)
    + [변환된 응용 양식 구성](aem-forms-and-adobe-sign/configure-converted-adaptive-form.md)
    + [Adobe Sign에서 XDP 템플릿 사용](aem-forms-and-adobe-sign/using-xdp-templates-with-adobe-sign.md)
++ 여러 Forms 서명{#sign-multiple-documents}
+   + [소개](sign-multiple-documents/introduction.md)
+   + [데이터 소스 구성](sign-multiple-documents/configure-data-source.md)
+   + [OSGi 서비스 만들기](sign-multiple-documents/create-osgi-service.md)
+   + [기본 워크플로우 만들기](sign-multiple-documents/create-main-workflow.md)
+   + [서명 상태 업데이트 워크플로](sign-multiple-documents/update-signature-status.md)
+   + [요약 구성 요소 사용자 지정](sign-multiple-documents/customize-summary-component.md)
+   + [클라이언트 라이브러리 만들기](sign-multiple-documents/create-client-lib.md)
+   + [양식 템플릿 만들기](sign-multiple-documents/create-af-template.md)
+   + [초기 양식 만들기](sign-multiple-documents/create-initial-form.md)
+   + [서명을 위한 Forms 만들기](sign-multiple-documents/create-forms-for-signing.md)
+   + [솔루션 테스트](sign-multiple-documents/testing-and-trouble-shooting.md)
 + AEM Workflow 변수{#variables-aem-workflow}
    + [소개 - 워크플로우의 변수](variables-aem-workflow/introduction.md)
    + [XML 변수](variables-aem-workflow/part1.md)
