@@ -1,0 +1,35 @@
+---
+title: 소개
+description: 여러 양식의 서명 사용 사례 비디오 데모
+feature: adaptive-forms
+topics: development
+audience: developer
+doc-type: tutorial
+activity: implement
+version: 6.4,6.5
+thumbnail: 330165.jpg
+translation-type: tm+mt
+source-git-commit: 049574ab2536b784d6b303f474dba0412007e18c
+workflow-type: tm+mt
+source-wordcount: '119'
+ht-degree: 2%
+
+---
+
+# 소개
+
+대출 신청을 하든 새 은행 계좌를 개설하든 관계없이 여러 양식을 작성하고 서명해야 한다. AEM Forms과 Adobe Sign의 통합을 통해 여러 양식을 손쉽게 채우고 서명할 수 있습니다.
+다음 비디오에서는 여러 양식에 서명하는 사용 사례를 안내합니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/330165?quality=9&learn=on)
+
+## 전제 조건
+
+이 강좌에서는 다음을 가정합니다.
+
+* 패키지에 설치 및 구성된 Forms Add on 패키지를 사용하여 AEM 6.4 또는 6.5 서버에 액세스할 수 있습니다.
+* ADOBE SIGN으로 구성된 AEM
+* SMTP 서버에 대한 액세스
+* AEM/AEM Forms 관련 경험
+
+이 자습서를 따라 제공된 자산을 설치하면 여러 양식에 서명할 수 있는 작업 솔루션을 사용할 수 있습니다.
