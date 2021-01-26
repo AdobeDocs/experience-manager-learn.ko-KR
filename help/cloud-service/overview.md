@@ -4,9 +4,9 @@ description: Cloud Service으로 제공되는 Adobe Experience Manager(AEM)용 �
 sub-product: 사이트, 클라우드 관리자, 파운데이션, 자산
 kt: 3289
 translation-type: tm+mt
-source-git-commit: 322f618469126656dc735263abd55548eb0a3cbf
+source-git-commit: eabd8650886fa78d9d177f3c588374a443ac1ad6
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '277'
 ht-degree: 8%
 
 ---
@@ -19,6 +19,10 @@ Adobe Experience Manager(AEM)는 이제 클라우드 서비스로 제공됩니�
 >[!VIDEO](https://video.tv.adobe.com/v/31085/?quality=12&learn=on)
 
 ## 새로운 기능
+
+* **[외부 애플리케이션에서 Cloud Service으로 AEM에 인증(자습서)](../headless-tutorial/authentication/overview.md)**
+
+   *HTTP를 통해 Cloud Service으로 AEM과 상호 작용하는 토큰 기반 인증을 사용하는 방법을 알아봅니다.*
 
 * **[벌크 가져오기(비디오)](./migration/bulk-import.md)**
 
@@ -36,9 +40,6 @@ Adobe Experience Manager(AEM)는 이제 클라우드 서비스로 제공됩니�
 
    *AEM에 액세스할 수 있도록 Adobe Admin Console에서 IMS 사용자를 구성하는 방법에 대해 알아봅니다.*
 
-* **[Cloud Service으로 AEM 디버깅(자습서)](./debugging/cloud-service/overview.md)**
-
-   *Cloud Service으로 AEM을 디버깅하는 방법 살펴보기*
 
 ## 직원 선택
 
