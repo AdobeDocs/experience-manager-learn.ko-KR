@@ -5,9 +5,9 @@ breadcrumb-title: AEM Assets 자습서
 sub-product: 자산
 team: TM
 translation-type: tm+mt
-source-git-commit: aa349fba9e0f1df97316105ada62ff9b32501573
+source-git-commit: 94ea85d4a96bf9da62c5658961474a12663ac77b
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '259'
 ht-degree: 32%
 
 ---
@@ -62,6 +62,7 @@ ht-degree: 32%
 
 + 공유 및 배포{#sharing}
    + [자산 다운로드](./sharing/download.md)
+   + [자산 게시](./sharing/publish.md)
    + [Brand Portal](./sharing/brand-portal.md)
    + 자산 공유{#assets-share}
       + [에셋 공유 공유물](./sharing/asset-share-commons-user-experience-feature-video-understand.md)
