@@ -12,9 +12,9 @@ activity: develop, understand
 kt: 2963
 index: y
 translation-type: tm+mt
-source-git-commit: 5012433a5f1c7169b1a3996453bfdbd5d78e5b1c
+source-git-commit: eabd8650886fa78d9d177f3c588374a443ac1ad6
 workflow-type: tm+mt
-source-wordcount: '94'
+source-wordcount: '103'
 ht-degree: 31%
 
 ---
@@ -40,3 +40,7 @@ ht-degree: 31%
    + [4 - GraphQL API 탐색](./graphql/explore-graphql-api.md)
    + [5 - 외부 앱에서 쿼리](./graphql/graphql-and-external-app.md)
    + [6 - 조각 참조를 사용한 고급 데이터 모델링](./graphql/fragment-references.md)
++ 토큰 기반 인증 {#authentication}
+   + [개요](./authentication/overview.md)
+   + [1 - 로컬 개발 액세스 토큰](./authentication/local-development-access-token.md)
+   + [2 - 서비스 자격 증명](./authentication/service-credentials.md)
