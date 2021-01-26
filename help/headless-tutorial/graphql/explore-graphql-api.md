@@ -11,7 +11,7 @@ mini-toc-levels: 1
 kt: 6714
 thumbnail: KT-6714.jpg
 translation-type: tm+mt
-source-git-commit: eb2b556c5947b15a31a74a86dadd525fb06bcf14
+source-git-commit: bfcc9dbb70753f985a2e47f329dbb9f43f5805e2
 workflow-type: tm+mt
 source-wordcount: '1039'
 ht-degree: 0%
@@ -73,7 +73,7 @@ AEM의 GraphQL API는 콘텐츠 조각의 데이터를 다운스트림 애플리
 
    `fullName` 간단한  `occupation` 자산입니다. [컨텐츠 조각 모델 정의](./content-fragment-models.md) 장에서 `fullName` 및 `occupation`은 각 필드의 **속성 이름**&#x200B;을 정의할 때 사용되는 값입니다.
 
-1. `pictureReference` 보다 복잡한 필드를  `biography` 나타냅니다. `pictureReference` 및 `biography` 필드에 대한 데이터를 반환하려면 쿼리를 다음과 같이 업데이트합니다.
+1. `pictureReference` 보다 복잡한 필드를  `biographyText` 나타냅니다. `pictureReference` 및 `biographyText` 필드에 대한 데이터를 반환하려면 쿼리를 다음과 같이 업데이트합니다.
 
    ```graphql
    {
@@ -82,7 +82,7 @@ AEM의 GraphQL API는 콘텐츠 조각의 데이터를 다운스트림 애플리
          _path
          fullName
          occupation
-         biography {
+         biographyText {
            html
          }
          pictureReference {
@@ -97,7 +97,7 @@ AEM의 GraphQL API는 콘텐츠 조각의 데이터를 다운스트림 애플리
    }
    ```
 
-   `biography` 는 여러 줄로 된 텍스트 필드이며 GraphQL API를 사용하면  `html`,  `markdown`또는 `json`   `plaintext`와 같은 다양한 형식을 선택할 수 있습니다.
+   `biographyText` 는 여러 줄로 된 텍스트 필드이며 GraphQL API를 사용하면  `html`,  `markdown`또는 `json`   `plaintext`와 같은 다양한 형식을 선택할 수 있습니다.
 
    `pictureReference` 는 컨텐츠 참조이며 이미지인 것으로 예상되므로 내장  `ImageRef` 개체가 사용됩니다. 따라서 참조되는 이미지에 대한 추가 데이터를 요청할 수 있습니다(예: `width` 및 `height`).
 
