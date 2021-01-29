@@ -10,9 +10,9 @@ audience: developer
 kt: 6785
 thumbnail: 330519.jpg
 translation-type: tm+mt
-source-git-commit: eabd8650886fa78d9d177f3c588374a443ac1ad6
+source-git-commit: c4f3d437b5ecfe6cb97314076cd3a5e31b184c79
 workflow-type: tm+mt
-source-wordcount: '1781'
+source-wordcount: '1824'
 ht-degree: 0%
 
 ---
@@ -26,9 +26,11 @@ AEM과의 Cloud Service 통합은 AEM에 안전하게 인증할 수 있어야 �
 
 서비스 자격 증명은 [로컬 개발 액세스 토큰](./local-development-access-token.md)과 비슷하지만 몇 가지 주요 방법으로 다릅니다.
 
-+ 서비스 자격 증명은 액세스 토큰을 가져오는 데 사용되는 자격 증명보다는 _액세스 토큰이 아닙니다._
-+ 서비스 자격 증명은 영구적이며, 취소되지 않는 한 변경되지 않으며, 로컬 개발 액세스 토큰은 매일 만료됩니다.
-+ Cloud Service 환경으로 AEM에 대한 서비스 자격 증명은 단일 AEM 사용자에게 매핑되는 반면, 로컬 개발 액세스 토큰은 액세스 토큰을 생성한 AEM 사용자로 인증합니다.
++ 서비스 자격 증명은 _액세스 토큰이 아닌_&#x200B;입니다. 오히려 이 자격 증명은 _obtain_ 액세스 토큰에 사용되는 자격 증명입니다.
++ 서비스 자격 증명은 보다 영구적이며(365일마다 만료), 취소되지 않는 한 변경되지 않으며, 로컬 개발 액세스 토큰은 매일 만료됩니다.
++ Cloud Service 환경으로 AEM에 대한 서비스 자격 증명은 단일 AEM 기술 계정 사용자에게 매핑되는 반면, 로컬 개발 액세스 토큰은 액세스 토큰을 생성한 AEM 사용자로 인증합니다.
+
+서비스 자격 증명과 사용자가 생성하는 액세스 토큰 및 로컬 개발 액세스 토큰은 모두 비밀로 유지되어야 합니다. 이 세 가지는 Cloud Service 환경으로 각 AEM에 대한 액세스를 얻는 데 사용할 수 있습니다
 
 ## 서비스 자격 증명 생성
 
@@ -39,7 +41,7 @@ AEM과의 Cloud Service 통합은 AEM에 안전하게 인증할 수 있어야 �
 
 ### 서비스 자격 증명 초기화
 
-로컬 개발 액세스 토큰과 달리 서비스 자격 증명은 Adobe 조직 IMS 관리자가 한 번 초기화하여 다운로드할 수 있어야 합니다.
+로컬 개발 액세스 토큰과 달리 서비스 자격 증명은 Adobe 조직 IMS의 _1회 초기화_&#x200B;를 필요로 합니다. 관리자가 이러한 자격 증명을 다운로드하여 사용할 수 있습니다.
 
 ![서비스 자격 증명 초기화](assets/service-credentials/initialize-service-credentials.png)
 
@@ -55,7 +57,7 @@ __Cloud Service 환경으로 AEM당 한 번 초기화됩니다.__
 
 ![AEM 개발자 콘솔 - 통합 - 서비스 자격 증명 가져오기](./assets/service-credentials/developer-console.png)
 
-AEM을 Cloud Service 환경의 서비스 자격 증명이 초기화되면 다른 사용자가 해당 자격 증명을 다운로드할 수 있습니다.
+Cloud Service 환경의 서비스 자격 증명으로 AEM이 초기화되면 Adobe IMS Org의 다른 AEM 개발자가 해당 자격 증명을 다운로드할 수 있습니다.
 
 ### 서비스 자격 증명 다운로드
 
@@ -71,7 +73,7 @@ AEM을 Cloud Service 환경의 서비스 자격 증명이 초기화되면 다른
 1. __통합__ 탭을 탭합니다.
 1. __서비스 자격 증명 가져오기__ 단추를 누릅니다.
 1. 왼쪽 위 모서리의 다운로드 단추를 눌러 서비스 자격 증명 값이 포함된 JSON 파일을 다운로드하고 파일을 안전한 위치에 저장합니다.
-   + _이러한 서비스 자격 증명이 손상되면 즉시 Adobe 지원 센터에 연락하여 서비스 자격 증명을 취소하도록 합니다._
+   + _서비스 자격 증명이 손상되면 즉시 Adobe 지원 센터에 연락하여 서비스 자격 증명을 취소하도록 합니다._
 
 ## 서비스 자격 증명 설치
 
@@ -137,38 +139,38 @@ function getCommandLineParams() {
 
 1. `getAccessToken(..)`을 업데이트하여 JSON 파일 내용을 검사하고 로컬 개발 액세스 토큰 또는 서비스 자격 증명을 나타내는지 확인합니다. 이 작업은 로컬 개발 액세스 토큰 JSON에만 존재하는 `.accessToken` 속성이 있는지 확인하여 손쉽게 수행할 수 있습니다.
 
-서비스 자격 증명이 제공되면 애플리케이션이 JWT를 생성하고 액세스 토큰에 대해 Adobe IMS와 교환합니다. JWT를 생성하여 단일 함수 호출에서 액세스 토큰으로 교환하는 [@adobe/jwt-auth](https://www.npmjs.com/package/@adobe/jwt-auth)`auth(...)` 함수를 사용합니다.  `auth(..)`에 대한 매개 변수는 아래 코드에 설명된 바와 같이 서비스 자격 증명 JSON에서 사용할 수 있는 특정 정보[JSON 개체입니다.](https://www.npmjs.com/package/@adobe/jwt-auth#config-object)
+   서비스 자격 증명이 제공되면 애플리케이션이 JWT를 생성하고 액세스 토큰에 대해 Adobe IMS와 교환합니다. JWT를 생성하여 단일 함수 호출에서 액세스 토큰으로 교환하는 [@adobe/jwt-auth](https://www.npmjs.com/package/@adobe/jwt-auth)`auth(...)` 함수를 사용합니다.  `auth(..)`에 대한 매개 변수는 아래 코드에 설명된 바와 같이 서비스 자격 증명 JSON에서 사용할 수 있는 특정 정보[JSON 개체입니다.](https://www.npmjs.com/package/@adobe/jwt-auth#config-object)
 
-```javascript
- async function getAccessToken(developerConsoleCredentials) {
+   ```javascript
+    async function getAccessToken(developerConsoleCredentials) {
+   
+        if (developerConsoleCredentials.accessToken) {
+            // This is a Local Development access token
+            return developerConsoleCredentials.accessToken;
+        } else {
+            // This is the Service Credentials JSON object that must be exchanged with Adobe IMS for an access token
+            let serviceCredentials = developerConsoleCredentials.integration;
+   
+            // Use the @adobe/jwt-auth library to pass the service credentials generated a JWT and exchange that with Adobe IMS for an access token.
+            // If other programming languages are used, please see these code samples: https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/samples/samples.md
+            let { access_token } = await auth({
+                clientId: serviceCredentials.technicalAccount.clientId, // Client Id
+                technicalAccountId: serviceCredentials.id,              // Technical Account Id
+                orgId: serviceCredentials.org,                          // Adobe IMS Org Id
+                clientSecret: serviceCredentials.technicalAccount.clientSecret, // Client Secret
+                privateKey: serviceCredentials.privateKey,              // Private Key to sign the JWT
+                metaScopes: serviceCredentials.metascopes.split(','),   // Meta Scopes defining level of access the access token should provide
+                ims: `https://${serviceCredentials.imsEndpoint}`,       // IMS endpoint used to obtain the access token from
+            });
+   
+            return access_token;
+        }
+    }
+   ```
 
-     if (developerConsoleCredentials.accessToken) {
-         // This is a Local Development access token
-         return developerConsoleCredentials.accessToken;
-     } else {
-         // This is the Service Credentials JSON object that must be exchanged with Adobe IMS for an access token
-         let serviceCredentials = developerConsoleCredentials.integration;
+   이제 `file` 명령줄 매개 변수를 통해 전달되는 JSON 파일(로컬 개발 액세스 토큰 JSON 또는 서비스 자격 증명 JSON)에 따라 응용 프로그램에서 액세스 토큰을 파생합니다.
 
-         // Use the @adobe/jwt-auth library to pass the service credentials generated a JWT and exchange that with Adobe IMS for an access token.
-         // If other programming languages are used, please see these code samples: https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/samples/samples.md
-         let { access_token } = await auth({
-             clientId: serviceCredentials.technicalAccount.clientId, // Client Id
-             technicalAccountId: serviceCredentials.id,              // Technical Account Id
-             orgId: serviceCredentials.org,                          // Adobe IMS Org Id
-             clientSecret: serviceCredentials.technicalAccount.clientSecret, // Client Secret
-             privateKey: serviceCredentials.privateKey,              // Private Key to sign the JWT
-             metaScopes: serviceCredentials.metascopes.split(','),   // Meta Scopes defining level of access the access token should provide
-             ims: `https://${serviceCredentials.imsEndpoint}`,       // IMS endpoint used to obtain the access token from
-         });
-
-         return access_token;
-     }
- }
-```
-
-    이제 &#39;file&#39; 명령줄 매개 변수를 통해 전달되는 JSON 파일(로컬 개발 액세스 토큰 JSON 또는 서비스 자격 증명 JSON)에 따라 애플리케이션이 액세스 토큰을 파생하게 됩니다.
-    
-    서비스 자격 증명이 만료되지 않는 동안 JWT 및 해당 액세스 토큰은 만료되지 않으며 발급 후 12시간을 새로 고쳐야 합니다. 이 작업은 Adobe IMS에서 제공하는 &#39;refresh_token&#39;(https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/OAuth/OAuth.md#access-tokens)을 사용하여 수행할 수 있습니다.
+   서비스 자격 증명이 만료되지 않는 동안 JWT 및 해당 액세스 토큰은 만료되기 전에 새로 고쳐야 합니다. 이 작업은 Adobe IMS](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/OAuth/OAuth.md#access-tokens)에서 제공하는 `refresh_token` [을 사용하여 수행할 수 있습니다.
 
 1. 이러한 변경 사항이 적용되고 AEM 개발자 콘솔에서 다운로드한 서비스 자격 증명 JSON과 간단히 이 `index.js`과 동일한 폴더 `service_token.json`로 저장된 경우 명령줄 매개 변수 `file`를 `service_token.json`으로 대체한 응용 프로그램을 실행하고 `propertyValue`을(를) 새 값으로 업데이트하여 효과가 AEM에 분명히 나타날 수 있습니다.
 
@@ -241,11 +243,6 @@ $ node index.js \
 1. 업데이트된 속성의 값을 검토하십시오. 예를 들어 업데이트된 `metadata/dc:rights` JCR 속성에 매핑되고, 이 속성은 `propertyValue` 매개 변수에 제공된 값을 반영합니다(예: __WKND 제한된 사용__).____
 
 ![WKND 제한된 사용 메타데이터 업데이트](./assets/service-credentials/asset-metadata.png)
-
-## 서비스 자격 증명 취소
-
-
-
 
 ## 축하합니다!
 
