@@ -10,9 +10,9 @@ audience: developer
 kt: 6785
 thumbnail: 330477.jpg
 translation-type: tm+mt
-source-git-commit: eabd8650886fa78d9d177f3c588374a443ac1ad6
+source-git-commit: c4f3d437b5ecfe6cb97314076cd3a5e31b184c79
 workflow-type: tm+mt
-source-wordcount: '1044'
+source-wordcount: '1070'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Cloud Service으로 AEM에 프로그래밍 방식으로 액세스해야 하는 �
 
 ![로컬 개발 액세스 토큰 가져오기](assets/local-development-access-token/getting-a-local-development-access-token.png)
 
-로컬 개발 액세스 토큰은 권한과 함께 AEM 작성자 및 게시 서비스에 대한 액세스 권한을 토큰을 생성한 사용자로 제공합니다. 개발 토큰이지만 이 토큰을 공유하지 마십시오.
+로컬 개발 액세스 토큰은 권한과 함께 AEM 작성자 및 게시 서비스에 대한 액세스 권한을 토큰을 생성한 사용자로 제공합니다. 개발 토큰이지만 이 토큰을 공유하거나 소스 제어에 저장하지 마십시오.
 
 1. [Adobe AdminConsole](https://adminconsole.adobe.com/)에서 개발자가 다음 멤버인지 확인합니다.
    + __클라우드 관리자 -__ DeveloperIMS 제품 프로필(AEM 개발자 콘솔에 대한 액세스 권한 부여)
@@ -44,7 +44,7 @@ Cloud Service으로 AEM에 프로그래밍 방식으로 액세스해야 하는 �
 
 ![AEM 개발자 콘솔 - 통합 - 로컬 개발 토큰 가져오기](./assets/local-development-access-token/developer-console.png)
 
-## 로컬 개발 액세스 토큰 다운로드{#download-local-development-access-token}
+## 로컬 개발 액세스 토큰{#use-local-development-access-token} 사용
 
 ![로컬 개발 액세스 토큰 - 외부 응용 프로그램](assets/local-development-access-token/local-development-access-token-external-application.png)
 
@@ -55,11 +55,11 @@ Cloud Service으로 AEM에 프로그래밍 방식으로 액세스해야 하는 �
 1. 외부 응용 프로그램은 AEM에 대한 HTTP 요청을 Cloud Service으로 구성하며 HTTP 요청의 인증 헤더에 로컬 개발 액세스 토큰을 전달자 토큰으로 추가합니다.
 1. AEM은 Cloud Service이 HTTP 요청을 받고, 요청을 인증하고, HTTP 요청에 의해 요청된 작업을 수행하고, 외부 응용 프로그램에 HTTP 응답을 다시 반환합니다
 
-### 외부 애플리케이션
+### 샘플 외부 애플리케이션
 
 로컬 개발자 액세스 토큰을 사용하여 HTTPS를 통해 AEM을 Cloud Service으로 프로그래밍 방식으로 액세스하는 방법을 설명하는 간단한 외부 JavaScript 응용 프로그램을 만듭니다. 프레임워크나 언어에 관계없이 AEM 외부에서 실행 중인 _모든_ 응용 프로그램 또는 시스템이 액세스 토큰을 사용하여 AEM을 Cloud Service으로 프로그래밍 방식으로 인증하고 액세스할 수 있는 방법을 설명합니다. [다음 섹션](./service-credentials.md)에서 프로덕션 사용을 위한 토큰을 생성하는 방법을 지원하도록 이 응용 프로그램 코드를 업데이트합니다.
 
-이 응용 프로그램은 명령줄에서 실행되며, 다음 흐름을 사용하여 AEM Assets HTTP API를 사용하여 AEM 에셋 메타데이터를 업데이트합니다.
+이 샘플 응용 프로그램은 명령줄에서 실행되며 다음 흐름을 사용하여 AEM Assets HTTP API를 사용하여 AEM 에셋 메타데이터를 업데이트합니다.
 
 1. 명령줄에서 매개 변수 읽기(`getCommandLineParams()`)
 1. AEM에 Cloud Service(`getAccessToken(...)`)로 인증하는 데 사용되는 액세스 토큰을 가져옵니다.
@@ -208,11 +208,11 @@ Cloud Service으로 AEM에 프로그래밍 방식으로 액세스해야 하는 �
    }
    ```
 
-   `listAssetsByFolder(...)` 및 `updateMetadata(...)`에서 `fetch(..)` 호출을 검토하고 `headers` 값이 `Bearer <ACCESS TOKEN>`인 `Authorization` HTTP 요청 헤더를 정의하십시오. 외부 응용 프로그램에서 시작된 HTTP 요청이 Cloud Service으로 인증되는 방법입니다.
+   `listAssetsByFolder(...)` 및 `updateMetadata(...)`에서 `fetch(..)` 호출을 검토하고 `headers` 값이 `Bearer ACCESS_TOKEN`인 `Authorization` HTTP 요청 헤더를 정의하십시오. 외부 응용 프로그램에서 시작된 HTTP 요청이 Cloud Service으로 인증되는 방법입니다.
 
    ```javascript
    ...
-   return fetch(`${params.aem}${ASSETS_HTTP_API}${folder}.json?configid=ims`, {
+   return fetch(`${params.aem}${ASSETS_HTTP_API}${folder}.json`, {
                method: 'get',
                headers: { 
                    'Content-Type': 'application/json',
@@ -267,4 +267,6 @@ AEM에 Cloud Service 환경으로 로그인하여 메타데이터가 업데이�
 
 ## 다음 단계
 
-로컬 개발 토큰을 사용하는 Cloud Service으로 프로그램 방식으로 AEM에 액세스했으므로 코드를 업데이트해야 합니다.
+로컬 개발 토큰을 사용하는 Cloud Service으로 프로그래밍 방식으로 AEM에 액세스했으므로 이제 응용 프로그램을 업데이트하여 서비스 자격 증명을 사용하여 처리해야 하므로 이 응용 프로그램을 프로덕션 컨텍스트에서 사용할 수 있습니다.
+
++ [서비스 자격 증명을 사용하는 방법](./service-credentials.md)
