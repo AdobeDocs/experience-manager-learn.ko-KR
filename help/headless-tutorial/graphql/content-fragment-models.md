@@ -11,20 +11,15 @@ mini-toc-levels: 1
 kt: 6712
 thumbnail: 22452.jpg
 translation-type: tm+mt
-source-git-commit: eb2b556c5947b15a31a74a86dadd525fb06bcf14
+source-git-commit: 8c5b425e6dcf23cbef042097f17db9e51bdf63c9
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '950'
 ht-degree: 1%
 
 ---
 
 
 # 컨텐츠 조각 모델 정의 {#content-fragment-models}
-
->[!CAUTION]
->
-> 요청에 따라 컨텐츠 조각 전달용 AEM GraphQL API를 사용할 수 있습니다.
-> Cloud Service 프로그램으로 AEM용 API를 활성화하려면 Adobe 지원에 문의하십시오.
 
 이 장에서는 **컨텐츠 조각 모델**&#x200B;을 사용하여 컨텐트를 모델링하고 스키마를 작성하는 방법에 대해 알아봅니다. 기존 모델을 검토하고 새 모델을 생성합니다. 또한 모델의 일부로 스키마를 정의하는 데 사용할 수 있는 다양한 데이터 유형에 대해서도 학습합니다.
 
