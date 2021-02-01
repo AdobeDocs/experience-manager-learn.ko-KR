@@ -1,6 +1,7 @@
 ---
 title: AEM Forms을 사용한 Acrobat
 seo-title: Acrobat을 사용하여 적응형 양식 데이터 병합
+description: Acrobat과 AEM Forms의 통합을 위한 2부 Acrobat에서 스키마를 만듭니다.
 feature: adaptive-forms
 topics: development
 audience: developer
@@ -8,9 +9,9 @@ doc-type: tutorial
 activity: implement
 version: 6.3,6.4
 translation-type: tm+mt
-source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
+source-git-commit: 451ca39511b52e90a44bba25c6739280f49a0aac
 workflow-type: tm+mt
-source-wordcount: '170'
+source-wordcount: '183'
 ht-degree: 0%
 
 ---
