@@ -11,20 +11,15 @@ mini-toc-levels: 1
 kt: 6718
 thumbnail: KT-6718.jpg
 translation-type: tm+mt
-source-git-commit: eb2b556c5947b15a31a74a86dadd525fb06bcf14
+source-git-commit: 8c5b425e6dcf23cbef042097f17db9e51bdf63c9
 workflow-type: tm+mt
-source-wordcount: '858'
+source-wordcount: '828'
 ht-degree: 1%
 
 ---
 
 
 # 조각 참조를 사용한 고급 데이터 모델링
-
->[!CAUTION]
->
-> 요청에 따라 컨텐츠 조각 전달용 AEM GraphQL API를 사용할 수 있습니다.
-> Cloud Service 프로그램으로 AEM용 API를 활성화하려면 Adobe 지원에 문의하십시오.
 
 다른 컨텐츠 조각 내에서 컨텐츠 조각을 참조할 수 있습니다. 이를 통해 조각 간의 관계가 있는 복잡한 데이터 모델을 작성할 수 있습니다.
 
