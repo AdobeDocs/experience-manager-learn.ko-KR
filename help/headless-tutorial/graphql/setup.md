@@ -11,20 +11,15 @@ mini-toc-levels: 1
 kt: 6386
 thumbnail: KT-6386.jpg
 translation-type: tm+mt
-source-git-commit: eb2b556c5947b15a31a74a86dadd525fb06bcf14
+source-git-commit: 8c5b425e6dcf23cbef042097f17db9e51bdf63c9
 workflow-type: tm+mt
-source-wordcount: '1599'
+source-wordcount: '1532'
 ht-degree: 1%
 
 ---
 
 
 # 빠른 설정 {#setup}
-
->[!CAUTION]
->
-> 요청에 따라 컨텐츠 조각 전달용 AEM GraphQL API를 사용할 수 있습니다.
-> Cloud Service 프로그램으로 AEM용 API를 활성화하려면 Adobe 지원에 문의하십시오.
 
 이 장에서는 AEM GraphQL API를 사용하여 외부 애플리케이션이 AEM의 컨텐츠를 사용하는지 확인할 수 있도록 로컬 환경을 빠르게 설정할 수 있습니다. 튜토리얼의 이후 장은 이 설정을 구성합니다.
 
@@ -67,10 +62,6 @@ ht-degree: 1%
 1. 관리자 암호를 `admin`으로 입력합니다. 모든 관리자 암호는 사용할 수 있지만 다시 구성할 필요가 없도록 로컬 개발에 기본값을 사용하는 것이 좋습니다.
 1. 몇 분 후에 AEM 인스턴스가 설치를 완료하고 새 브라우저 창이 [http://localhost:4502](http://localhost:4502)에서 열립니다.
 1. 사용자 이름 `admin` 및 암호 `admin`로 로그인합니다.
-
->[!CAUTION]
->
-> 설치를 계속하려면 Quickstart SDK에서 GraphQL 기능을 수동으로 활성화해야 합니다. 자세한 내용은 Adobe 담당자에게 문의하십시오. 이 수동 단계는 2021년에 이 기능이 릴리스될 때까지 필요합니다.
 
 ## 샘플 컨텐츠 설치{#wknd-site}
 
