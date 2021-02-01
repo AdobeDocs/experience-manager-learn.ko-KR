@@ -12,10 +12,10 @@ mini-toc-levels: 1
 index: y
 thumbnail: 30476.jpg
 translation-type: tm+mt
-source-git-commit: 69c1767098cc9da8ec0ae2bd83d25417d330f393
+source-git-commit: e03d84f92be11623704602fb448273e461c70b4e
 workflow-type: tm+mt
-source-wordcount: '970'
-ht-degree: 6%
+source-wordcount: '873'
+ht-degree: 7%
 
 ---
 
@@ -30,16 +30,37 @@ AEM(Adobe Experience Manager)을 처음 사용하는 개발자를 위해 고안�
 
 >[!VIDEO](https://video.tv.adobe.com/v/30476?quality=12&learn=on)
 
-이 자습서는 **AEM을 Cloud Service**&#x200B;으로 사용하도록 설계되었으며 **AEM 6.5+** 및 **AEM 6.4.2+**&#x200B;와 역호환됩니다. 사이트는 다음을 사용하여 구현됩니다.
+이 자습서는 **AEM을 Cloud Service**&#x200B;로 사용하도록 설계되었으며 **AEM 6.5.5.0+** 및 **AEM 6.4.8.1+**&#x200B;와 역호환됩니다. 사이트는 다음을 사용하여 구현됩니다.
 
 * [Maven AEM 프로젝트 원형](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/developing/archetype/overview.html)
 * [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)
 * [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/getting-started/getting-started.html)
-* Sling Models
+* Sling 모델
 * [편집 가능한 템플릿](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html)
 * [스타일 시스템](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html)
 
 *자습서의 각 부분을 통과하는 데 1-2시간을 예상합니다.*
+
+## 로컬 개발 환경 {#local-dev-environment}
+
+이 자습서를 완료하려면 로컬 개발 환경이 필요합니다. 스크린샷 및 비디오는 [Visual Studio 코드](https://code.visualstudio.com/)가 IDE로 Mac OS 환경에서 실행되는 Cloud Service SDK로 AEM을 사용하여 캡처됩니다. 별도의 설명이 없는 한 명령과 코드는 로컬 운영 체제와 독립적입니다.
+
+### 필수 소프트웨어
+
+다음은 로컬에 설치해야 합니다.
+
+* 로컬 AEM **작성자** 인스턴스(Cloud Service SDK, 6.5.5+ 또는 6.4.8.1+)
+* [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
+* [Apache Maven](https://maven.apache.org/) (3.3.9 이상)
+* [Node.js](https://nodejs.org/en/) (LTS - 장기 지원)
+* [npm 6+](https://www.npmjs.com/)
+* [Git](https://git-scm.com/)
+
+>[!NOTE]
+>
+> **Cloud Service으로 AEM을 처음 사용하시나요?** AEM을 Cloud Service SDK로 사용하여 로컬 개발 환경을 설정하는 방법에 대한  [다음 가이드를 확인하십시오](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
+>
+> **AEM 6.5를 처음 사용하시나요?** 로컬 개발 환경을 설정하는 방법은  [다음 안내서를 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html).
 
 ## 자습서 {#about-tutorial} 정보
 
@@ -68,31 +89,6 @@ XD UI 키트를 다운로드합니다.
 >
 > 이 자습서의 이전 버전을 사용하여 작업하고 있는 경우에도 GitHub에서 [솔루션 패키지](https://github.com/adobe/aem-guides-wknd/releases/tag/archetype-18.1) 및 [code](https://github.com/adobe/aem-guides-wknd/tree/archetype-18.1)를 찾을 수 있습니다.
 
-## 로컬 개발 환경 {#local-dev-environment}
-
-이 자습서를 완료하려면 로컬 개발 환경이 필요합니다. Mac OS 환경에서 실행 중인 Cloud Service SDK로 AEM을 사용하여 스크린샷과 비디오를 캡처합니다. 별도의 설명이 없는 한 명령과 코드는 로컬 운영 체제와 독립적입니다.
-
-**Cloud Service으로 AEM을 처음 사용하시나요?** AEM을 Cloud Service SDK로 사용하여 로컬 개발 환경을 설정하는 방법에 대한  [다음 가이드를 확인하십시오](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
-
-**AEM 6.5를 처음 사용하시나요?** 로컬 개발 환경을 설정하는 방법은  [다음 안내서를 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html).
-
-### 필수 소프트웨어
-
-다음은 로컬에 설치해야 합니다.
-
-* [AEM(Cloud Service ](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk) SDK) 또는  [AEM 6.5](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/technical-requirements.html)  또는  [AEM 6.4 + SP2](https://helpx.adobe.com/kr/experience-manager/6-4/release-notes/sp-release-notes.html)
-* [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html) (AEM 6.5+ 전용)
-* [Apache Maven](https://maven.apache.org/) (3.3.9 이상)
-* [Node.js v10+](https://nodejs.org/en/)
-* [npm 6+](https://www.npmjs.com/)
-* [Git](https://git-scm.com/)
-
-### IDE(Integrated Development Environment)
-
-이 자습서에서는 [Eclipse](https://www.eclipse.org/)를 [AEM Developer Tool 플러그인](https://eclipse.adobe.com/aem/dev-tools/)과 함께 IDE를 사용하지만 Java 및 Mavin 프로젝트에 대한 지원이 있는 모든 IDE를 사용할 수 있습니다. 이 자습서에서는 특정 IDE 기능에 대한 의존도를 최소화합니다.
-
-[Visual Studio 코드](https://code.visualstudio.com/) 또는 [IntelliJ](https://www.jetbrains.com/idea/)와 같은 Eclipse 또는 기타 IDE를 사용하기 위한 자세한 단계를 보려면 [다음 안내서](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)를 확인하십시오.
-
 ## 참조 사이트 {#reference-site}
 
 WKND 사이트의 완성된 버전을 참조로도 사용할 수 있습니다.[https://wknd.site/](https://wknd.site/)
@@ -103,7 +99,7 @@ WKND 사이트의 완성된 버전을 참조로도 사용할 수 있습니다.[h
 
 ### Adobe Stock 제공
 
-WKND 참조 웹 사이트의 많은 이미지는 [Adobe Stock](https://stock.adobe.com/)에 있으며 데모 에셋 추가 약관([https://www.adobe.com/legal/terms.html](https://www.adobe.com/legal/terms.html)에 정의된 바와 같이 제3자 자료입니다. 웹 사이트 또는 마케팅 자료에 게시하는 등 이 데모 웹 사이트를 볼 수 없는 다른 목적으로 Adobe Stock 이미지를 사용하려면 Adobe Stock에서 라이센스를 구입할 수 있습니다.
+WKND 참조 웹 사이트의 많은 이미지는 [Adobe Stock](https://stock.adobe.com/)에 있으며 데모 에셋 추가 약관([https://www.adobe.com/legal/terms.html](https://www.adobe.com/kr/legal/terms.html)에 정의된 바와 같이 제3자 자료입니다. 웹 사이트 또는 마케팅 자료에 게시하는 등 이 데모 웹 사이트를 볼 수 없는 다른 목적으로 Adobe Stock 이미지를 사용하려면 Adobe Stock에서 라이센스를 구입할 수 있습니다.
 
 Adobe Stock을 사용하면 사진, 그래픽, 비디오, 템플릿 등 1억 4천만 개 이상의 고품질의 로열티 프리 이미지를 이용하여 크리에이티브 프로젝트를 바로 시작할 수 있습니다.
 
