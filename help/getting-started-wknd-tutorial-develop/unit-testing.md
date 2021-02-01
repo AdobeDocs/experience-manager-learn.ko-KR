@@ -10,9 +10,9 @@ kt: 4089
 mini-toc-levels: 1
 thumbnail: 30207.jpg
 translation-type: tm+mt
-source-git-commit: 836ef9b7f6a9dcb2ac78f5d1320797897931ef8c
+source-git-commit: e03d84f92be11623704602fb448273e461c70b4e
 workflow-type: tm+mt
-source-wordcount: '3544'
+source-wordcount: '3015'
 ht-degree: 0%
 
 ---
@@ -24,18 +24,40 @@ ht-degree: 0%
 
 ## 전제 조건 {#prerequisites}
 
+[로컬 개발 환경 설정](overview.md#local-dev-environment)에 대한 필수 도구 및 지침을 검토하십시오.
+
+_시스템에 Java 8과 Java 11이 모두 설치되어 있는 경우 VS 코드 테스트 참가자가 테스트를 실행할 때 낮은 Java 런타임을 선택하여 테스트 오류를 초래할 수 있습니다. 이러한 경우 Java 8._ 제거
+
+### 시작 프로젝트
+
+>[!NOTE]
+>
+> 이전 장을 성공적으로 완료한 경우 프로젝트를 다시 사용하고 시작 프로젝트를 체크 아웃하는 단계를 건너뛸 수 있습니다.
+
 튜토리얼이 빌드하는 기본 라인 코드를 확인합니다.
 
-1. [github.com/adobe/aem-guides-wknd](https://github.com/adobe/aem-guides-wknd) 저장소를 복제합니다.
-1. `unit-testing/start` 분기를 확인합니다.
+1. [GitHub](https://github.com/adobe/aem-guides-wknd)에서 `tutorial/unit-testing-start` 분기를 확인합니다.
 
-```shell
-$ git clone git@github.com:adobe/aem-guides-wknd.git ~/code/aem-guides-wknd
-$ cd ~/code/aem-guides-wknd
-$ git checkout unit-testing/start
-```
+   ```shell
+   $ cd aem-guides-wknd
+   $ git checkout tutorial/unit-testing-start
+   ```
 
-항상 [GitHub](https://github.com/adobe/aem-guides-wknd/tree/unit-testing/solution)에서 완료된 코드를 보거나 분기 `unit-testing/solution`로 전환하여 로컬로 코드를 체크 아웃할 수 있습니다.
+1. Maven 기술을 사용하여 로컬 AEM 인스턴스에 코드 베이스를 배포할 수 있습니다.
+
+   ```shell
+   $ mvn clean install -PautoInstallSinglePackage
+   ```
+
+   >[!NOTE]
+   >
+   > AEM 6.5 또는 6.4를 사용하는 경우 `classic` 프로파일을 모든 Maven 명령에 추가합니다.
+
+   ```shell
+   $ mvn clean install -PautoInstallSinglePackage -Pclassic
+   ```
+
+항상 [GitHub](https://github.com/adobe/aem-guides-wknd/tree/tutorial/unit-testing-start)에서 완료된 코드를 보거나 분기 `tutorial/unit-testing-start`로 전환하여 로컬로 코드를 체크 아웃할 수 있습니다.
 
 ## 목표
 
@@ -52,8 +74,6 @@ AEM 모범 사례를 사용하고 다음과 같은 이점을 사용할 것입니
 * [주니트 5](https://junit.org/junit5/)
 * [Mockito Testing Framework](https://site.mockito.org/)
 * [wcm.io 테스트 프레임워크](https://wcm.io/testing/) ( [Apache Sling Android를 기반으로 구축됨](https://sling.apache.org/documentation/development/sling-mock.html))
-
->[!VIDEO](https://video.tv.adobe.com/v/30207/?quality=12&learn=on)
 
 ## 유닛 테스트 및 Adobe 클라우드 관리자 {#unit-testing-and-adobe-cloud-manager}
 
@@ -76,31 +96,25 @@ AEM 모범 사례를 사용하고 다음과 같은 이점을 사용할 것입니
 
    ```xml
    <dependencies>
-       ...
+       ...       
        <!-- Testing -->
        <dependency>
            <groupId>org.junit</groupId>
            <artifactId>junit-bom</artifactId>
-           <version>5.5.2</version>
+           <version>5.6.2</version>
            <type>pom</type>
            <scope>import</scope>
        </dependency>
        <dependency>
-           <groupId>org.slf4j</groupId>
-           <artifactId>slf4j-simple</artifactId>
-           <version>1.7.25</version>
-           <scope>test</scope>
-       </dependency>
-       <dependency>
            <groupId>org.mockito</groupId>
            <artifactId>mockito-core</artifactId>
-           <version>2.25.1</version>
+           <version>3.3.3</version>
            <scope>test</scope>
        </dependency>
        <dependency>
            <groupId>org.mockito</groupId>
            <artifactId>mockito-junit-jupiter</artifactId>
-           <version>2.25.1</version>
+           <version>3.3.3</version>
            <scope>test</scope>
        </dependency>
        <dependency>
@@ -113,9 +127,9 @@ AEM 모범 사례를 사용하고 다음과 같은 이점을 사용할 것입니
            <groupId>io.wcm</groupId>
            <artifactId>io.wcm.testing.aem-mock.junit5</artifactId>
            <!-- Prefer the latest version of AEM Mock Junit5 dependency -->
-           <version>2.5.2</version>
+           <version>3.0.2</version>
            <scope>test</scope>
-       </dependency>
+       </dependency>        
        ...
    </dependencies>
    ```
@@ -124,6 +138,7 @@ AEM 모범 사례를 사용하고 다음과 같은 이점을 사용할 것입니
 
    ```xml
    ...
+   <!-- Testing -->
    <dependency>
        <groupId>org.junit.jupiter</groupId>
        <artifactId>junit-jupiter</artifactId>
@@ -142,10 +157,29 @@ AEM 모범 사례를 사용하고 다음과 같은 이점을 사용할 것입니
    <dependency>
        <groupId>junit-addons</groupId>
        <artifactId>junit-addons</artifactId>
+       <scope>test</scope>
    </dependency>
    <dependency>
        <groupId>io.wcm</groupId>
        <artifactId>io.wcm.testing.aem-mock.junit5</artifactId>
+       <exclusions>
+           <exclusion>
+               <groupId>org.apache.sling</groupId>
+               <artifactId>org.apache.sling.models.impl</artifactId>
+           </exclusion>
+           <exclusion>
+               <groupId>org.slf4j</groupId>
+               <artifactId>slf4j-simple</artifactId>
+           </exclusion>
+       </exclusions>
+       <scope>test</scope>
+   </dependency>
+   <!-- Required to be able to support injection with @Self and @Via -->
+   <dependency>
+       <groupId>org.apache.sling</groupId>
+       <artifactId>org.apache.sling.models.impl</artifactId>
+       <version>1.4.4</version>
+       <scope>test</scope>
    </dependency>
    ...
    ```
@@ -156,68 +190,88 @@ AEM 모범 사례를 사용하고 다음과 같은 이점을 사용할 것입니
 
 단위 테스트는 일반적으로 Java 클래스에 1-1로 매핑됩니다. 이 장에서 Byline 구성 요소를 지원하는 Sling 모델인 **BylineImpl.java**&#x200B;에 대한 JUnit 테스트를 작성합니다.
 
-![유닛 테스트 패키지 탐색기](assets/unit-testing/core-src-test-folder.png)
+![단위 테스트 src 폴더](assets/unit-testing/core-src-test-folder.png)
 
 *단위 테스트가 저장되는 위치입니다.*
 
-1. Eclipse에서는 테스트할 Java 클래스를 마우스 오른쪽 단추로 클릭하고 **새로 만들기 > 기타 > Java > JUnit > JUnit 테스트 케이스**&#x200B;를 선택하여 이 작업을 수행할 수 있습니다.
+1. 테스트할 Java 클래스의 위치를 미러링하는 Java 패키지 폴더 구조에서 `src/test/java` 아래에 새 Java 클래스를 만들어 `BylineImpl.java`에 대한 단위 테스트를 만듭니다.
 
-   ![단위 테스트를 만들려면 BylineImpl.java를 마우스 오른쪽 단추로 클릭합니다.](assets/unit-testing/junit-test-case-1.png)
+   ![새 BylineImplTest.java 파일 만들기](assets/unit-testing/new-bylineimpltest.png)
 
-1. 첫 번째 마법사 화면에서 다음을 확인합니다.
+   테스트 중
 
-   * JUnit 테스트 유형은 **New JUnit Jupiter 테스트**&#x200B;입니다. 이는 **pom.xml의**&#x200B;에 설정한 JUnit Maven 종속성 목록입니다.
-   * **package**&#x200B;은 테스트되는 클래스의 java 패키지입니다(`BylineImpl.java`).
-   * 소스 폴더는 단위 테스트 파일이 저장되는 위치를 Eclipse에 지시하는 **core** 프로젝트(`aem-guides-wknd.core/src/test/java`)를 가리킵니다.
-   * `setUp()` 메서드 부본이 수동으로 생성됩니다.나중에 어떻게 사용되는지 보겠습니다.
-   * 그리고 테스트 중인 클래스는 테스트하려는 Java 클래스이므로 `BylineImpl.java`입니다.
+   * `src/main/java/com/adobe/aem/guides/wknd/core/models/impl/BylineImpl.java`
 
-   ![단위 테스트 마법사의 2단계](assets/unit-testing/junit-wizard-testcase.png)
+   해당 단위 테스트 Java 클래스 만들기(
 
-   *주 테스트 케이스 마법사 - 2단계*
+   * `src/test/java/com/adobe/aem/guides/wknd/core/models/impl/BylineImplTest.java`
 
-1. 마법사 아래쪽에 있는 **다음** 단추를 클릭합니다.
-
-   다음 단계는 테스트 방법의 자동 생성에 도움이 됩니다. 일반적으로 Java 클래스의 각 공용 메서드에는 해당 테스트 메서드가 하나 이상 있어 비헤이비어의 유효성을 검사합니다. 종종 단위 테스트에는 서로 다른 입력 또는 상태 집합을 나타내는 여러 테스트 방법이 단일 공개 방법을 테스트하는 경우가 있습니다.
-
-   마법사에서 `BylineImpl` 아래의 모든 메서드를 선택합니다. 단, `@PostConstruct`를 통해 내부적으로 Sling 모델에서 사용되는 메서드인 `init()`은(는) 예외입니다. 다른 메서드는 `init()`의 실행에 의존하므로 다른 모든 방법을 테스트하여 `init()`을(를) 효과적으로 테스트합니다.
-
-   새로운 테스트 방법을 JUnit 테스트 클래스에 언제든지 추가할 수 있습니다. 마법사의 이 페이지는 단지 편의를 위한 것입니다.
-
-   ![유닛 테스트 마법사의 3단계](assets/unit-testing/junit-test-case-3.png)
-
-   *테스트 케이스 마법사(계속)*
-
-1. 마법사 아래쪽에 있는 [마침] 단추를 클릭하여 JUnit5 테스트 파일을 생성합니다.
-1. **aem-guides-wknd.core** > **/src/test/java**&#x200B;에 있는 해당 패키지 구조에서 JUnit5 테스트 파일이 `BylineImplTest.java`라는 파일로 생성되었는지 확인합니다.
+2. 또한 테스트 파일을 차별화합니다.    단위 테스트 파일의 `Test` 접미사 `BylineImplTest.java`는 우리가 사용할 수 있는 규칙입니다.
+1. _`BylineImpl.java`용 테스트 파일_으로 쉽게 식별합니다.
+2. 테스트 중인 클래스 `BylineImpl.java`와 테스트 파일 _을 차별화합니다._
 
 ## BylineImplTest.java {#reviewing-bylineimpltest-java} 검토
 
-테스트 파일에는 여러 가지 자동 생성 메서드가 있습니다. 이때 이 JUnit 테스트 파일에 대한 AEM 관련 정보는 없습니다.
+이때 JUnit 테스트 파일은 빈 Java 클래스입니다. 다음 코드로 파일을 업데이트합니다.
 
-첫 번째 방법은 `@BeforeEach`로 주석을 단 `public void setUp() { .. }`입니다.
+```java
+package com.adobe.aem.guides.wknd.core.models.impl;
 
-`@BeforeEach` 주석은 이 클래스의 각 테스트 메서드를 실행하기 전에 JUnit 테스트를 실행하여 이 메서드를 실행하도록 지시한 JUnit 주석입니다.
+import static org.junit.jupiter.api.Assertions.*;
 
-그 다음 메서드는 테스트 메서드 자체이며 `@Test` 주석과 같이 표시됩니다. 기본적으로 모든 테스트는 실패로 설정됩니다.
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-이 JUnit 테스트 클래스(JUnit Test Case라고도 함)를 실행하면 `@Test`으로 표시된 각 메서드가 합격 또는 실패할 수 있는 테스트로 실행됩니다.
+public class BylineImplTest {
 
-![생성된 BylineImplTest](assets/unit-testing/bylineimpltest-new.png)
+    @BeforeEach
+    void setUp() throws Exception {
+
+    }
+
+    @Test 
+    void testGetName() { 
+        fail("Not yet implemented");
+    }
+    
+    @Test 
+    void testGetOccupations() { 
+        fail("Not yet implemented");
+    }
+
+    @Test 
+    void testIsEmpty() { 
+        fail("Not yet implemented");
+    }
+}
+```
+
+1. 첫 번째 메서드 `public void setUp() { .. }`에 JUnit의 `@BeforeEach`로 주석을 달면 JUnit 테스트 참가자가 이 메서드를 실행하고 이 클래스의 각 테스트 메서드를 실행하게 됩니다. 모든 테스트에 필요한 일반적인 테스트 상태를 초기화하기 위한 편리한 위치를 제공합니다.
+
+2. 그 다음 메서드는 이름에 `test` 접두어가 추가되고 `@Test` 주석으로 표시된 테스트 메서드입니다. 아직 구현하지 않았기 때문에 기본적으로 모든 테스트가 실패하도록 설정되어 있습니다.
+
+   먼저 테스트하고 있는 클래스의 각 공용 메서드에 대해 단일 테스트 방법으로 시작합니다.
+
+   | BylineImpl.java |  | BylineImplTest.java |
+   | ------------------|--------------|---------------------|
+   | getName() | 에 의해 테스트됨 | testGetName() |
+   | getFirty() | 에 의해 테스트됨 | testGetProtals() |
+   | isEmpty() | 에 의해 테스트됨 | testIsEmpty() |
+
+   이 장의 후반부에서 볼 수 있듯이 이러한 방법은 필요에 따라 확장할 수 있습니다.
+
+   이 JUnit 테스트 클래스(JUnit Test Case라고도 함)를 실행하면 `@Test`으로 표시된 각 메서드가 합격 또는 실패할 수 있는 테스트로 실행됩니다.
+
+![생성된 BylineImplTest](assets/unit-testing/bylineimpltest-stub-methods.png)
 
 *`core/src/test/java/com/adobe/aem/guides/wknd/core/models/impl/BylineImplTest.java`*
 
-1. 클래스 이름을 마우스 오른쪽 단추로 클릭하고 **Run As > JUnit Test**&#x200B;를 클릭하여 JUnit 테스트 케이스를 실행합니다.
+1. `BylineImplTest.java` 파일을 마우스 오른쪽 단추로 클릭하고 **Run**을 눌러 JUnit 테스트 케이스를 실행합니다.
+예상대로 모든 테스트는 아직 구현되지 않았기 때문에 실패한다.
 
-   ![junit 테스트로 실행](assets/unit-testing/run-as-junit-test.png)
+   ![junit 테스트로 실행](assets/unit-testing/run-junit-tests.png)
 
-   *BylineImplTests.java > 다른 이름으로 실행 > JUnit 테스트를 마우스 오른쪽 버튼으로 클릭합니다.*
-
-1. 예상대로 모든 테스트가 실패합니다.
-
-   ![테스트 실패](assets/unit-testing/all-tests-fail.png)
-
-   *Eclipse > Window > 보기 표시 > Java > JUnit에서 보기 삽입*
+   *BylineImplTests.java > Run을 마우스 오른쪽 단추로 클릭합니다.*
 
 ## BylineImpl.java 검토 {#reviewing-bylineimpl-java}
 
@@ -226,19 +280,17 @@ AEM 모범 사례를 사용하고 다음과 같은 이점을 사용할 것입니
 * [구현을 개발하기](https://en.wikipedia.org/wiki/Test-driven_development) 직전에 단위 테스트를 증분적으로 쓰는 TDD 또는 테스트 기반 개발테스트를 작성하고 구현을 작성하여 테스트를 통과합니다.
 * 먼저 작업 코드를 개발한 다음 해당 코드의 유효성을 검사하는 테스트를 작성하는 등의 구현 첫 번째 개발.
 
-이 자습서에서는 작업 중인 **BylineImpl.java**&#x200B;을(를) 이미 이전 장에서 만들었으므로 후자의 접근 방식이 사용됩니다. 따라서 공개 방법의 행동을 검토하고 이해해야 하며, 또한 구체적인 구현 방법도 고려해야 합니다. 이는 반대로 들릴 수 있습니다. 좋은 테스트는 입력 및 출력 문제만 신경써야 하지만 AEM에서 작업하는 경우 실행 테스트를 구성하기 위해 이해해야 하는 다양한 구현 고려 사항이 있습니다.
+이 자습서에서는 작업 중인 **BylineImpl.java**&#x200B;을(를) 이미 이전 장에서 만들었으므로 후자의 접근 방식이 사용됩니다. 따라서 공개 방법의 행동을 검토하고 이해해야 하며, 또한 구체적인 구현 방법도 고려해야 합니다. 이는 반대로 들릴 수 있습니다. 좋은 테스트는 입력 및 출력 문제만 신경써야 하지만 AEM에서 작업할 때는 작업 테스트를 구성하기 위해 이해해야 하는 다양한 구현 고려 사항이 있습니다.
 
 AEM의 컨텍스트에서 TDD는 전문 지식 수준을 필요로 하며 AEM 개발 및 AEM 코드의 유닛 테스트 분야에서 능숙하게 AEM 개발자에게 채택되고 있습니다.
-
->[!VIDEO](https://video.tv.adobe.com/v/30208/?quality=12&learn=on)
 
 ## AEM 테스트 컨텍스트 설정 {#setting-up-aem-test-context}
 
 AEM용으로 작성된 대부분의 코드는 JCR, Sling 또는 AEM API에 의존하며, 이를 위해서는 실행 중인 AEM의 컨텍스트를 올바르게 실행해야 합니다.
 
-단위 테스트는 실행 중인 AEM 인스턴스의 컨텍스트 외부에서 빌드에서 실행되므로 이러한 리소스가 없습니다. 이 작업을 용이하게 하기 위해 [wcm.io의 AEM Android](https://wcm.io/testing/aem-mock/usage.html)에서는 이러한 API가 AEM에서 실행 중인 것처럼 대부분 작동할 수 있도록 하는 모의 컨텍스트를 만듭니다.
+단위 테스트는 실행 중인 AEM 인스턴스의 컨텍스트 외부에서 빌드에서 실행되므로 그러한 컨텍스트가 없습니다. 이 작업을 용이하게 하기 위해 [wcm.io의 AEM Android](https://wcm.io/testing/aem-mock/usage.html)에서는 이러한 API가 AEM에서 실행 중인 것처럼 _대부분_&#x200B;이(가) 작동할 수 있도록 하는 모의 컨텍스트를 만듭니다.
 
-1. `@ExtendWith`BylineImplTest.java **에서** wcm.io의&#x200B;**`AemContext`을(를) 사용하여** BylineImplTest.java **파일에 &lt;a5/>로 장식된 JUnit 확장자로 추가하여 AEM 컨텍스트를 만듭니다.** 익스텐션은 필요한 모든 초기화 및 정리 작업을 처리합니다. 모든 테스트 메서드에 사용할 수 있는 `AemContext`에 대한 클래스 변수를 만듭니다.
+1. `@ExtendWith`BylineImplTest.java **에서** wcm.io의&#x200B;**`AemContext`을(를) 사용하여** BylineImplTest.java **파일에**&#x200B;로 장식된 JUnit 확장자로 추가하여 AEM 컨텍스트를 만듭니다. 익스텐션은 필요한 모든 초기화 및 정리 작업을 처리합니다. 모든 테스트 메서드에 사용할 수 있는 `AemContext`에 대한 클래스 변수를 만듭니다.
 
    ```java
    import org.junit.jupiter.api.extension.ExtendWith;
@@ -292,9 +344,9 @@ AEM용으로 작성된 대부분의 코드는 JCR, Sling 또는 AEM API에 의�
 
    ![BylineImplTest.json](assets/unit-testing/bylineimpltest-json.png)
 
-   이 JSON은 필라인 구성 요소 단위 테스트에 대한 모의 리소스 정의를 정의합니다. 이 시점에서 JSON에는 Byline 구성 요소 컨텐츠 리소스, `jcr:primaryType` 및 `sling:resourceType`을(를) 나타내는 데 필요한 최소 속성 세트가 있습니다.
+   이 JSON은 필라인 구성 요소 단위 테스트에 대한 모의 리소스(JCR 노드)를 정의합니다. 이 시점에서 JSON에는 Byline 구성 요소 컨텐츠 리소스, `jcr:primaryType` 및 `sling:resourceType`을(를) 나타내는 데 필요한 최소 속성 세트가 있습니다.
 
-   단위 테스트를 사용하여 작업할 때 일반적인 규칙은 각 테스트를 충족하는 데 필요한 최소한의 샘플 컨텐츠, 컨텍스트 및 코드를 만드는 것입니다. 테스트를 작성하기 전에 전체 시안적 컨텍스트를 작성하려는 유혹을 피하십시오. 이러한 경우 불필요한 가공물이 발생할 수 있습니다.
+   단위 테스트를 사용할 때의 일반적인 규칙은 각 테스트를 충족하는 데 필요한 최소한의 샘플 컨텐츠, 컨텍스트 및 코드를 만드는 것입니다. 테스트를 작성하기 전에 전체 시안적 컨텍스트를 작성하려는 유혹을 피하십시오. 이러한 경우 불필요한 가공물이 발생할 수 있습니다.
 
    이제 **BylineImplTest.json**&#x200B;이(가) 있으므로 `ctx.json("/com/adobe/aem/guides/wknd/core/models/impl/BylineImplTest.json", "/content")`이(가) 실행될 때 모의 리소스 정의는 **/content 경로의 컨텍스트에 로드됩니다.**
 
@@ -306,7 +358,6 @@ AEM용으로 작성된 대부분의 코드는 JCR, Sling 또는 AEM API에 의�
 
    ```java
    import com.adobe.aem.guides.wknd.core.components.Byline;
-   import static org.junit.jupiter.api.Assertions.assertEquals;
    ...
    @Test
    public void testGetName() {
@@ -331,7 +382,7 @@ AEM용으로 작성된 대부분의 코드는 JCR, Sling 또는 AEM API에 의�
 
    모의 JSON에 `name` 속성을 정의하지 않아 테스트 실패가 발생하지 않습니다. 따라서 테스트 실행이 해당 시점으로 넘어가지 못했지만 테스트 실행이 실패하게 됩니다. 이 테스트는 바이트 개체 자체의 `NullPointerException` 때문에 실패합니다.
 
-1. 위의 [Reviewing BylineImpl.java](#reviewing-bylineimpl-java) 비디오에서 `@PostConstruct init()`에서 Sling 모델이 인스턴스화할 수 없는 예외를 throw하는지 여부와 현재 일어나고 있는 문제에 대해 설명합니다.
+1. `BylineImpl.java`에서, `@PostConstruct init()`에서 예외가 발생하면 Sling 모델이 인스턴스화되지 못하도록 하여 Sling 모델 객체가 null이 됩니다.
 
    ```java
    @PostConstruct
@@ -340,7 +391,7 @@ AEM용으로 작성된 대부분의 코드는 JCR, Sling 또는 AEM API에 의�
    }
    ```
 
-   ModelFactory OSGi 서비스가 `AemContext`(Apache Sling Context의 방식)을 통해 제공되지만 BylineImpl의 `init()` 메서드에서 호출되는 `getModelFromWrappedRequest(...)`을 포함하여 모든 메서드가 구현되지 않는 것으로 나타났습니다. 이로 인해 [AbstractMethodError](https://docs.oracle.com/javase/8/docs/api/java/lang/AbstractMethodError.html)이(가) 발생하여 `init()`이(가) 실패하고 `ctx.request().adaptTo(Byline.class)`의 결과가 null 개체입니다.
+   ModelFactory OSGi 서비스가 `AemContext`(Apache Sling Context의 방식)을 통해 제공되지만 BylineImpl의 `init()` 메서드에서 호출되는 `getModelFromWrappedRequest(...)`을 포함하여 모든 메서드가 구현되지 않는 것으로 나타났습니다. 이로 인해 [AbstractMethodError](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/AbstractMethodError.html)이(가) 발생하여 `init()`이(가) 실패하고 `ctx.request().adaptTo(Byline.class)`의 결과가 null 개체입니다.
 
    제공된 조롱은 코드를 수용할 수 없으므로 직접 샘플 컨텍스트를 구현해야 합니다. 따라서 Mockie를 사용하여 ModelFactory 객체를 만들 수 있습니다. 이 개체 앞에 `getModelFromWrappedRequest(...)`이(가) 호출되면 모의 이미지 객체를 반환합니다.
 
@@ -363,8 +414,7 @@ AEM용으로 작성된 대부분의 코드는 JCR, Sling 또는 AEM API에 의�
    import org.junit.jupiter.api.Test;
    import org.junit.jupiter.api.extension.ExtendWith;
    
-   import static org.junit.jupiter.api.Assertions.assertEquals;
-   import static org.junit.jupiter.api.Assertions.fail;
+   import static org.junit.jupiter.api.Assertions.*;
    import static org.mockito.Mockito.*;
    import org.apache.sling.api.resource.Resource;
    
@@ -411,7 +461,7 @@ AEM용으로 작성된 대부분의 코드는 JCR, Sling 또는 AEM API에 의�
 
    테스트에 실패한 어설션 조건을 의미하는 **AssertionError**&#x200B;이(가) 수신되고, **예상 값은 &quot;Jane Doe&quot;**&#x200B;이지만 **실제 값은 null**&#x200B;입니다. 이것은 &quot;**name&quot;** 속성이 **BylineImplTest.json**&#x200B;의 모의 **/content/byline** 리소스 정의에 추가되지 않았기 때문에 의미가 있습니다. 이 속성을 추가해 보죠.
 
-1. `"name": "Jane Doe".`BylineImplTest.json **을 업데이트하여 &lt;a2/> 정의**
+1. `"name": "Jane Doe".`BylineImplTest.json **을 업데이트하여** 정의
 
    ```json
    {
@@ -424,6 +474,9 @@ AEM용으로 작성된 대부분의 코드는 JCR, Sling 또는 AEM API에 의�
    ```
 
 1. 테스트를 다시 실행하면 이제 **`testGetName()`**&#x200B;이(가) 전달됩니다!
+
+   ![테스트 이름 통과](assets/unit-testing/testgetname-pass.png)
+
 
 ## getProtals() {#testing-get-occupations} 테스트
 
@@ -462,7 +515,7 @@ AEM용으로 작성된 대부분의 코드는 JCR, Sling 또는 AEM API에 의�
 
 1. 위의 **`getName()`**&#x200B;과 마찬가지로 **BylineImplTest.json**&#x200B;은 직업을 정의하지 않으므로, `byline.getOccupations()`이(가) 빈 목록을 반환하므로 이 테스트를 실행하는 경우 이 테스트가 실패하게 됩니다.
 
-   직업 목록을 포함하도록 **BylineImplTest.json**&#x200B;을 업데이트하면, 해당 직업 목록이 알파벳 순서로 설정되므로 테스트 결과에서 **`getOccupations()`**&#x200B;별로 정렬되어 있는지 확인할 수 있습니다.
+   직업 목록을 포함하도록 **BylineImplTest.json**&#x200B;을 업데이트하면, 해당 직업 목록이 알파벳 순으로 정렬되어 테스트 결과가 **`getOccupations()`**&#x200B;별로 알파벳순으로 정렬되어 있는지 확인할 수 있습니다.
 
    ```json
    {
@@ -477,7 +530,7 @@ AEM용으로 작성된 대부분의 코드는 JCR, Sling 또는 AEM API에 의�
 
 1. 테스트를 실행하면, 다시 합격합니다! 정렬된 직업이 효과가 있는 것 같아!
 
-   ![직업 패스 받기](assets/unit-testing/testgetoccupations-success.png)
+   ![직업 패스 받기](assets/unit-testing/testgetoccupations-pass.png)
 
    *testGetFirty() 패스*
 
@@ -503,14 +556,14 @@ AEM용으로 작성된 대부분의 코드는 JCR, Sling 또는 AEM API에 의�
    ```json
    {
        "byline": {
-       "jcr:primaryType": "nt:unstructured",
-       "sling:resourceType": "wknd/components/content/byline",
-       "name": "Jane Doe",
-       "occupations": ["Photographer", "Blogger", "YouTuber"]
+           "jcr:primaryType": "nt:unstructured",
+           "sling:resourceType": "wknd/components/content/byline",
+           "name": "Jane Doe",
+           "occupations": ["Photographer", "Blogger", "YouTuber"]
        },
        "empty": {
-       "jcr:primaryType": "nt:unstructured",
-       "sling:resourceType": "wknd/components/content/byline"
+           "jcr:primaryType": "nt:unstructured",
+           "sling:resourceType": "wknd/components/content/byline"
        }
    }
    ```
@@ -540,24 +593,24 @@ AEM용으로 작성된 대부분의 코드는 JCR, Sling 또는 AEM API에 의�
    ```json
    {
        "byline": {
-       "jcr:primaryType": "nt:unstructured",
-       "sling:resourceType": "wknd/components/content/byline",
-       "name": "Jane Doe",
-       "occupations": ["Photographer", "Blogger", "YouTuber"]
+           "jcr:primaryType": "nt:unstructured",
+           "sling:resourceType": "wknd/components/content/byline",
+           "name": "Jane Doe",
+           "occupations": ["Photographer", "Blogger", "YouTuber"]
        },
        "empty": {
-       "jcr:primaryType": "nt:unstructured",
-       "sling:resourceType": "wknd/components/content/byline"
+           "jcr:primaryType": "nt:unstructured",
+           "sling:resourceType": "wknd/components/content/byline"
        },
        "without-name": {
-       "jcr:primaryType": "nt:unstructured",
-       "sling:resourceType": "wknd/components/content/byline",
-       "occupations": "[Photographer, Blogger, YouTuber]"
+           "jcr:primaryType": "nt:unstructured",
+           "sling:resourceType": "wknd/components/content/byline",
+           "occupations": "[Photographer, Blogger, YouTuber]"
        },
        "without-occupations": {
-       "jcr:primaryType": "nt:unstructured",
-       "sling:resourceType": "wknd/components/content/byline",
-       "name": "Jane Doe"
+           "jcr:primaryType": "nt:unstructured",
+           "sling:resourceType": "wknd/components/content/byline",
+           "name": "Jane Doe"
        }
    }
    ```
@@ -632,98 +685,18 @@ AEM용으로 작성된 대부분의 코드는 JCR, Sling 또는 AEM API에 의�
    ```java
    @Test
    public void testIsNotEmpty() {
-   ctx.currentResource("/content/byline");
-   when(image.getSrc()).thenReturn("/content/bio.png");
-   
-   Byline byline = ctx.request().adaptTo(Byline.class);
-   
-   assertFalse(byline.isEmpty());
-   }
-   ```
-
-## 코드 검사 {#code-coverage}
-
-코드 범위는 단위 테스트에서 다루는 소스 코드의 양입니다. 최신 IDE는 단위 테스트 과정에서 실행되는 소스 코드를 자동으로 확인하는 툴을 제공합니다. 코드 검사 자체가 코드 품질에 대한 지표가 아니지만 단위 테스트로 테스트되지 않은 소스 코드의 중요한 영역이 있는지 파악하는 데 유용합니다.
-
-1. Eclipse의 프로젝트 탐색기에서 **BylineImplTest.java**&#x200B;를 마우스 오른쪽 단추로 클릭하고 **Coverage As > JUnit 테스트**
-
-   범위 요약 보기가 열려 있는지 확인합니다(창 > 보기 표시 > 기타 > Java > 적용 범위).
-
-   이 파일 내에서 단위 테스트를 실행하고 코드 범위를 나타내는 보고서를 제공합니다. 클래스와 메서드로 드릴다운하면 파일 일부를 테스트할 것인지 그렇지 않을 것인지를 보다 명확하게 알 수 있습니다.
-
-   ![코드 범위로 실행](assets/unit-testing/bylineimpl-coverage.png)
-
-   *코드 검사 요약*
-
-   Eclipse는 단위 테스트를 통해 각 클래스와 메서드의 양을 빠르게 확인할 수 있습니다. Eclipse는 코드 줄을 색상으로 변환합니다.
-
-   * **하나** 이상의 테스트에 의해 실행되는 녹색 코드
-   * **[** 노랑]은 어떤 테스트로도 평가되지 않는 분기를 나타냅니다.
-   * **테스트** 에서 실행되지 않는 코드를 재정의합니다.
-
-1. 검사 보고서에서 이 항목이 식별된 분기는 직업 필드가 null이고 빈 목록을 반환하면 절대 평가되지 않습니다. 이것은 571 및 86줄에 노란색으로 표시되고, if/else가 실행되지 않은 분기가 표시되고, 75줄에 빨간색으로 표시된 선으로 코드 줄이 실행되지 않음을 나타냅니다.
-
-   ![커버리지 색상 코딩](assets/unit-testing/coverage-color-coding.png)
-
-1. 리소스에 대한 직업 값이 없을 때 빈 목록이 반환된다고 주장하는 `getOccupations()`에 대한 테스트를 추가하면 이 문제를 수정할 수 있습니다. 다음 새 테스트 메서드를 **BylineImplTests.java**&#x200B;에 추가합니다.
-
-   ```java
-   @Test
-   public void testGetOccupations_WithoutOccupations() {
-       List<String> expected = Collections.emptyList();
-   
-       ctx.currentResource("/content/empty");
-       Byline byline = ctx.request().adaptTo(Byline.class);
-   
-       List<String> actual = byline.getOccupations();
-   
-       assertEquals(expected, actual);
-   }
-   ```
-
-   **`Collections.emptyList();`** 예상 값을 빈 목록으로 설정합니다.
-
-   **`ctx.currentResource("/content/empty")`** 현재 리소스를 /content/empty로 설정합니다. 여기에는 정의된 직업 속성이 없습니다.
-
-1. 보상 범위를 다시 실행하면, 현재 **BylineImpl.java**&#x200B;가 100% 범위 내에 있지만 여전히 isEmpty()에서 평가되지 않은 분기가 한 개 있으며, 이 분기는 해당 작업과 다시 관련이 있습니다. 이 경우 직업== null은 평가되지만 protals.isEmpty()는 `"occupations": []`을 설정하는 모의 리소스 정의가 없으므로 평가되지 않습니다.
-
-   ![testGetProtals_WithoutProtals()를 사용한 범위](assets/unit-testing/getoccupations-withoutoccupations.png)
-
-   *testGetProtals_WithoutProtals()를 사용한 범위*
-
-1. 직업을 빈 배열로 설정하는 모의 리소스 정의를 사용하는 다른 테스트 방법을 만들어 쉽게 해결할 수 있습니다.
-
-   **&quot;withotty&quot;**&#x200B;의 복사본인 **BylineImplTest.json**&#x200B;에 새 모의 리소스 정의를 추가하고, 빈 배열에 설정된 직업 속성을 추가하고 이름을 **&quot;withotty-empty-array&quot;**&#x200B;로 지정합니다.
-
-   ```json
-   "without-occupations-empty-array": {
-      "jcr:primaryType": "nt:unstructured",
-      "sling:resourceType": "wknd/components/content/byline",
-      "name": "Jane Doe",
-      "occupations": []
-    }
-   ```
-
-   이 새 모의 리소스를 사용하는 `BylineImplTest.java`에 새 **@Test** 메서드를 만들고 `isEmpty()`이 true를 반환합니다.
-
-   ```java
-   @Test
-   public void testIsEmpty_WithEmptyArrayOfOccupations() {
-       ctx.currentResource("/content/without-occupations-empty-array");
+       ctx.currentResource("/content/byline");
+       when(image.getSrc()).thenReturn("/content/bio.png");
    
        Byline byline = ctx.request().adaptTo(Byline.class);
    
-       assertTrue(byline.isEmpty());
+       assertFalse(byline.isEmpty());
    }
    ```
 
-   ![testIsEmpty_WithEmptyArrayOfFirty()를 사용한 범위](assets/unit-testing/testisempty_withemptyarrayofoccupations.png)
+1. 이제 BylineImplTest.java 파일에서 모든 단위 테스트를 실행하고 Java 테스트 보고서 출력을 검토합니다.
 
-   *testIsEmpty_WithEmptyArrayOfFirty()를 사용한 범위*
-
-1. 이 마지막 추가 기능으로 `BylineImpl.java`은(는) 모든 조건부 경로 지정을 평가하여 100% 코드 범위를 누리고 있습니다.
-
-   테스트는 최소 구현 세부 사항 집합에 의존하지 않고 `BylineImpl`의 예상 동작을 확인합니다.
+![모든 테스트 통과](./assets/unit-testing/all-tests-pass.png)
 
 ## 빌드 {#running-unit-tests-as-part-of-the-build}의 일부로 단위 테스트를 실행하는 중
 
@@ -745,4 +718,4 @@ $ mvn package
 
 ## 코드 {#review-the-code} 검토
 
-[GitHub](https://github.com/adobe/aem-guides-wknd)에서 완료된 코드를 보거나 Git brach `unit-testing/solution`에서 코드를 로컬로 검토 및 배포합니다.
+[GitHub](https://github.com/adobe/aem-guides-wknd)에서 완료된 코드를 보거나 Git brach `tutorial/unit-testing-solution`에서 코드를 로컬로 검토 및 배포합니다.
