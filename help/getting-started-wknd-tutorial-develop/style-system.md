@@ -12,9 +12,9 @@ kt: 4128
 mini-toc-levels: 1
 thumbnail: 30386.jpg
 translation-type: tm+mt
-source-git-commit: e99779b5d42bb9a3b258e2bbe815defde9d40bf7
+source-git-commit: e03d84f92be11623704602fb448273e461c70b4e
 workflow-type: tm+mt
-source-wordcount: '3077'
+source-wordcount: '1996'
 ht-degree: 0%
 
 ---
@@ -32,25 +32,34 @@ Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 �
 
 ### 시작 프로젝트
 
+>[!NOTE]
+>
+> 이전 장을 성공적으로 완료한 경우 프로젝트를 다시 사용하고 시작 프로젝트를 체크 아웃하는 단계를 건너뛸 수 있습니다.
+
 튜토리얼이 빌드하는 기본 라인 코드를 확인합니다.
 
-1. [github.com/adobe/aem-guides-wknd](https://github.com/adobe/aem-guides-wknd) 저장소를 복제합니다.
-1. `style-system/start` 분기를 확인합니다.
+1. [GitHub](https://github.com/adobe/aem-guides-wknd)에서 `tutorial/style-system-start` 분기를 확인합니다.
 
    ```shell
-   $ git clone git@github.com:adobe/aem-guides-wknd.git ~/code/aem-guides-wknd
-   $ cd ~/code/aem-guides-wknd
-   $ git checkout style-system/start
+   $ cd aem-guides-wknd
+   $ git checkout tutorial/style-system-start
    ```
 
 1. Maven 기술을 사용하여 로컬 AEM 인스턴스에 코드 베이스를 배포할 수 있습니다.
 
    ```shell
-   $ cd ~/code/aem-guides-wknd
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-항상 [GitHub](https://github.com/adobe/aem-guides-wknd/tree/style-system/solution)에서 완료된 코드를 보거나 분기 `style-system/solution`로 전환하여 로컬로 코드를 체크 아웃할 수 있습니다.
+   >[!NOTE]
+   >
+   > AEM 6.5 또는 6.4를 사용하는 경우 `classic` 프로파일을 모든 Maven 명령에 추가합니다.
+
+   ```shell
+   $ mvn clean install -PautoInstallSinglePackage -Pclassic
+   ```
+
+항상 [GitHub](https://github.com/adobe/aem-guides-wknd/tree/tutorial/style-system-solution)에서 완료된 코드를 보거나 분기 `tutorial/style-system-solution`로 전환하여 로컬로 코드를 체크 아웃할 수 있습니다.
 
 ## 목표
 
@@ -60,9 +69,11 @@ Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 �
 
 ## {#what-you-will-build} 빌드할 항목
 
-이 장에서는 [스타일 시스템 기능](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html)을 사용하여 아티클 페이지에 사용되는 여러 가지 구성 요소를 만들 것입니다. 또한 스타일 시스템을 사용하여 머리글/바닥글 및 레이아웃 컨테이너와 같은 구조 요소에 대한 변형을 만들 수 있습니다.
+이 장에서는 [스타일 시스템 기능](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html)을 사용하여 아티클 페이지에 사용되는 **제목** 및 **텍스트** 구성 요소의 변형을 만듭니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/30386/?quality=12&learn=on)
+![제목에 사용할 수 있는 스타일](assets/style-system/styles-added-title.png)
+
+*제목 구성 요소에 사용할 수 있는 밑줄 스타일*
 
 ## 배경 {#background}
 
@@ -70,29 +81,21 @@ Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 �
 
 스타일 시스템의 일반적인 아이디어는 작성자가 구성 요소의 모양을 다양한 스타일로 선택할 수 있다는 것입니다. &quot;styles&quot;는 구성 요소의 외부 div에 삽입되는 추가 CSS 클래스를 지원합니다. 클라이언트 라이브러리에서 CSS 규칙은 이러한 스타일 클래스를 기반으로 추가되어 구성 요소의 모양이 변경됩니다.
 
-[스타일 시스템에 대한 자세한 설명서는 여기에서 찾을 수 있습니다](https://docs.adobe.com/content/help/en/experience-manager-65/developing/components/style-system.html). 스타일 시스템](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/style-system-technical-video-understand.html)을 이해하는 데 유용한 [기술 비디오도 있습니다.
+[스타일 시스템에 대한 자세한 설명서는 여기에서 찾을 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html). 스타일 시스템](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/style-system-technical-video-understand.html)을 이해하는 데 유용한 [기술 비디오도 있습니다.
 
-## 제목 구성 요소 스타일 {#title-component}
+## 밑줄 스타일 - 제목 {#underline-style}
 
-이때 [제목 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/title.html)는 **ui.apps** 모듈의 일부로 `/apps/wknd/components/content/title` 아래의 프로젝트에 프록시되었습니다. 제목 요소(`H1`, `H2`, `H3`..)의 기본 스타일이 이미 `ui.frontend/src/main/webpack/base/sass/_elements.scss` 아래의 `_elements.scss` 파일의 **ui.frontend** 모듈에서 구현되었습니다.
-
-### 밑줄 스타일
+[제목 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/title.html)가 **ui.apps** 모듈의 일부로 `/apps/wknd/components/title` 아래의 프로젝트에 프록시되었습니다. 제목 요소(`H1`, `H2`, `H3`..)의 기본 스타일이 이미 **ui.frontend** 모듈에 구현되었습니다.
 
 [WKND 아티클 디자인](assets/pages-templates/wknd-article-design.xd)에는 밑줄이 있는 제목 구성 요소의 고유한 스타일이 포함되어 있습니다. 두 개의 구성 요소를 만들거나 구성 요소 대화 상자를 수정하는 대신 스타일 시스템을 사용하여 작성자가 밑줄 스타일을 추가할 수 있도록 할 수 있습니다.
 
 ![밑줄 스타일 - 제목 구성 요소](assets/style-system/title-underline-style.png)
 
-### Inspect 제목 구성 요소 마크업
+### Inspect 제목 마크업
 
 프런트 엔드 개발자로서 핵심 구성 요소의 스타일 지정을 위한 첫 번째 단계는 구성 요소에서 생성한 마크업을 이해하는 것입니다.
 
-생성된 프로젝트의 일부로 원형 유형은 **핵심 구성 요소 예** 프로젝트를 포함했습니다. 개발자 및 컨텐츠 작성자는 핵심 구성 요소에서 사용할 수 있는 모든 기능을 이해하기 위한 쉬운 참조를 포함합니다. 라이브 버전도 [available](https://opensource.adobe.com/aem-core-wcm-components/library.html)입니다.
-
-1. 새 브라우저를 열고 제목 구성 요소를 봅니다.
-
-   로컬 AEM 인스턴스:[http://localhost:4502/editor.html/content/core-components-examples/library/title.html](http://localhost:4502/editor.html/content/core-components-examples/library/title.html)
-
-   라이브 예:[https://opensource.adobe.com/aem-core-wcm-components/library/title.html](https://opensource.adobe.com/aem-core-wcm-components/library/title.html)
+1. 새 브라우저를 열고 AEM 코어 구성 요소 라이브러리 사이트에서 제목 구성 요소를 봅니다.[https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/title.html](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/title.html)
 
 1. 다음은 제목 구성 요소의 마크업입니다.
 
@@ -121,7 +124,7 @@ Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 �
 
 ### 밑줄 스타일 구현 - ui.front
 
-다음으로 프로젝트의 **ui.frontend** 모듈을 사용하여 밑줄 스타일을 구현합니다. **ui.frontend** 모듈과 함께 번들로 제공되는 webpack 개발 서버를 사용하여 *스타일을 AEM의 로컬 인스턴스에 배포하기 전에 미리 봅니다.*
+그런 다음 프로젝트의 **ui.frontend** 모듈을 사용하여 밑줄 스타일을 구현합니다. **ui.frontend** 모듈과 함께 번들로 제공되는 webpack 개발 서버를 사용하여 *스타일을 AEM의 로컬 인스턴스에 배포하기 전에 미리 봅니다.*
 
 1. **ui.frontend** 모듈 내에서 다음 명령을 실행하여 webpack 개발 서버를 시작합니다.
 
@@ -141,37 +144,24 @@ Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 �
 
    ![웹 팩 개발 서버](assets/style-system/static-webpack-server.png)
 
-1. Eclipse 또는 선택한 IDE에서 다음 위치에 있는 `index.html` 파일을 엽니다.`ui.frontend/src/main/webpack/static/index.html`. 웹 팩 개발 서버에서 사용하는 정적 마크업입니다.
+1. IDE에서 다음 위치에 있는 `index.html` 파일을 엽니다.`ui.frontend/src/main/webpack/static/index.html`. 웹 팩 개발 서버에서 사용하는 정적 마크업입니다.
 1. `index.html`에서 *cmp-title*&#x200B;에 대한 문서를 검색하여 제목 구성 요소의 인스턴스를 찾아 밑줄 스타일을 추가합니다. 텍스트 *&quot;Bannes of the Wall Skatepark&quot;*(218행)이 있는 제목 구성 요소를 선택합니다. `cmp-title--underline` 클래스를 주변 div에 추가합니다.
 
-   ```html
-    <!-- before -->
-    <div class="title aem-GridColumn aem-GridColumn--default--8">
-        <div class="cmp-title">
-            <h2 class="cmp-title__text">Vans off the Wall Skatepark</h2>
-        </div>
-    </div>
-   ```
-
-   ```html
-    <!-- After -->
-    <div class="cmp-title--underline title aem-GridColumn aem-GridColumn--default--8">
-        <div class="cmp-title">
-            <h2 class="cmp-title__text">Vans off the Wall Skatepark</h2>
+   ```diff
+   - <div class="title aem-GridColumn--phone--12 aem-GridColumn aem-GridColumn--default--8">
+   + <div class="cmp-title--underline title aem-GridColumn--phone--12 aem-GridColumn aem-GridColumn--default--8">
+        <div data-cmp-data-layer="{&#34;title-8bea562fa0&#34;:{&#34;@type&#34;:&#34;wknd/components/title&#34;,&#34;repo:modifyDate&#34;:&#34;2021-01-22T18:54:20Z&#34;,&#34;dc:title&#34;:&#34;Vans Off the Wall&#34;}}" id="title-8bea562fa0" class="cmp-title">
+            <h2 class="cmp-title__text">Vans Off the Wall</h2>
         </div>
     </div>
    ```
 
 1. 브라우저로 돌아가서 추가 클래스가 마크업에 반영되었는지 확인합니다.
-1. **ui.frontend** 모듈로 돌아가서 다음 위치에 있는 `title.scss` 파일을 업데이트합니다.`ui.frontend/src/main/webpack/components/content/title/scss/title.scss`:
+1. **ui.frontend** 모듈로 돌아가서 다음 위치에 있는 `title.scss` 파일을 업데이트합니다.`ui.frontend/src/main/webpack/components/_title.scss`:
 
    ```css
    /* Add Title Underline Style */
    .cmp-title--underline {
-   
-       .cmp-title {
-       }
-   
        .cmp-title__text {
            &:after {
            display: block;
@@ -200,16 +190,16 @@ Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 �
 
 다음으로 컨텐츠 작성자가 특정 구성 요소에 적용할 밑줄 스타일을 선택할 수 있도록 제목 구성 요소에 대한 새 정책을 추가해야 합니다. 이 작업은 AEM 내의 템플릿 편집기를 사용하여 수행됩니다.
 
-1. Maven 기술을 사용하여 로컬 AEM 인스턴스에 코드 베이스를 배포할 수 있습니다.
+1. Maven 기술을 사용하여 코드 베이스를 로컬 AEM 인스턴스에 배포합니다.
 
    ```shell
    $ cd ~/code/aem-guides-wknd
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-1. 다음 위치에 있는 **아티클 페이지 템플릿**&#x200B;으로 이동합니다.[http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html).
+1. 다음 위치에 있는 **아티클 페이지** 템플릿으로 이동합니다.[http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html)
 
-1. **구조** 모드의 기본 **레이아웃 컨테이너**&#x200B;에서 **허용되는 구성 요소&#x200B;*에 나열된 &lt;a6/>제목**구성 요소 옆에 있는&#x200B;**정책**아이콘을 선택합니다.*
+1. **구조** 모드의 기본 **레이아웃 컨테이너**&#x200B;에서 **허용되는 구성 요소&#x200B;*에 나열된*제목** 구성 요소 옆에 있는 **정책** 아이콘을 선택합니다.
 
    ![제목 정책 구성](assets/style-system/article-template-title-policy-icon.png)
 
@@ -221,7 +211,7 @@ Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 �
 
    **밑줄** :  `cmp-title--underline`
 
-   ![제목에 대한 스타일 정책 구성](assets/style-system/title-style-policy.gif)
+   ![제목에 대한 스타일 정책 구성](assets/style-system/title-style-policy.png)
 
    제목 정책에 대한 변경 내용을 저장하려면 **완료**&#x200B;를 클릭합니다.
 
@@ -246,11 +236,9 @@ Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 �
 
    브라우저 개발자 도구를 사용하여 제목 구성 요소 주위의 마크업에 외부 div에 CSS 클래스 `cmp-title--underline`가 적용되었는지 확인합니다.
 
-## 텍스트 구성 요소 스타일 {#text-component}
+## 인용 블록 스타일 - 텍스트 {#text-component}
 
-다음으로 비슷한 단계를 반복하여 [텍스트 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/text.html)에 고유한 스타일을 적용합니다. 텍스트 구성 요소는 **ui.apps** 모듈의 일부로 `/apps/wknd/components/content/text` 아래의 프로젝트에 프록시되었습니다. 단락 요소의 기본 스타일은 `ui.frontend/src/main/webpack/base/sass/_elements.scss` 아래의 `_elements.scss` 파일의 **ui.frontend** 모듈에서 이미 구현되었습니다.
-
-### 따옴표 블록 스타일
+그런 다음 유사한 단계를 반복하여 [텍스트 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html)에 고유한 스타일을 적용합니다. 텍스트 구성 요소는 **ui.apps** 모듈의 일부로 `/apps/wknd/components/text` 아래의 프로젝트에 프록시되었습니다. 단락 요소의 기본 스타일이 이미 **ui.frontend**&#x200B;에 구현되었습니다.
 
 [WKND 아티클 디자인](assets/pages-templates/wknd-article-design.xd)에는 인용 블록이 있는 텍스트 구성 요소에 대한 고유한 스타일이 포함되어 있습니다.
 
@@ -260,22 +248,19 @@ Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 �
 
 다시 한 번 텍스트 구성 요소의 마크업을 검사합니다.
 
-1. 새 브라우저를 열고 핵심 구성 요소 라이브러리의 일부로 텍스트 구성 요소를 봅니다.
-로컬 AEM 인스턴스:[http://localhost:4502/editor.html/content/core-components-examples/library/text.html](http://localhost:4502/editor.html/content/core-components-examples/library/text.html)
-
-   라이브 예:[https://opensource.adobe.com/aem-core-wcm-components/library/text.html](https://opensource.adobe.com/aem-core-wcm-components/library/text.html)
+1. 다음 위치에서 텍스트 구성 요소에 대한 마크업을 검토합니다.[https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/text.html](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/text.html)
 
 1. 다음은 텍스트 구성 요소의 마크업입니다.
 
    ```html
-   <div class="cmp-text">
-       <p><b>Bold </b>can be used to emphasize a word or phrase, as can <u>underline</u> and <i>italics.&nbsp;</i><sup>Superscript</sup> and <sub>subscript</sub> are useful for mathematical (E = mc<sup>2</sup>) or scientific (h<sub>2</sub>O) expressions. Paragraph styles can provide alternative renderings, such as quote sections:</p>
-       <blockquote>"<i>Be yourself; everyone else is already taken"</i></blockquote>
-       <b>- Oscar Wilde</b>
+   <div class="text">
+       <div class="cmp-text" data-cmp-data-layer="{&quot;text-2d9d50c5a7&quot;:{&quot;@type&quot;:&quot;core/wcm/components/text/v2/text&quot;,&quot;repo:modifyDate&quot;:&quot;2019-01-22T11:56:17Z&quot;,&quot;xdm:text&quot;:&quot;<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu mi bibendum neque egestas congue quisque egestas. Varius morbi enim nunc faucibus a pellentesque. Scelerisque eleifend donec pretium vulputate sapien nec sagittis.</p>\n&quot;}}" id="text-2d9d50c5a7">
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu mi bibendum neque egestas congue quisque egestas. Varius morbi enim nunc faucibus a pellentesque. Scelerisque eleifend donec pretium vulputate sapien nec sagittis.</p>
+       </div>
    </div>
    ```
 
-   제목 구성 요소의 BEM 표기법:
+   텍스트 구성 요소의 BEM 표기법:
 
    ```plain
    BLOCK cmp-text
@@ -285,11 +270,9 @@ Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 �
 1. 스타일 시스템은 구성 요소를 둘러싼 외부 div에 CSS 클래스를 추가합니다. 따라서 타깃팅할 마크업은 다음과 같이 표시됩니다.
 
    ```html
-   <div class="STYLE-SYSTEM-CLASS-HERE"> <!-- Custom CSS class - implementation gets to define this -->
-       <div class="cmp-text">
-           <p><b>Bold </b>can be used to emphasize a word or phrase, as can <u>underline</u> and <i>italics.&nbsp;</i><sup>Superscript</sup> and <sub>subscript</sub> are useful for mathematical (E = mc<sup>2</sup>) or scientific (h<sub>2</sub>O) expressions. Paragraph styles can provide alternative renderings, such as quote sections:</p>
-           <blockquote>"<i>Be yourself; everyone else is already taken"</i></blockquote>
-           <b>- Oscar Wilde</b>
+   <div class="text STYLE-SYSTEM-CLASS-HERE"> <!-- Custom CSS class - implementation gets to define this -->
+       <div class="cmp-text" data-cmp-data-layer="{&quot;text-2d9d50c5a7&quot;:{&quot;@type&quot;:&quot;core/wcm/components/text/v2/text&quot;,&quot;repo:modifyDate&quot;:&quot;2019-01-22T11:56:17Z&quot;,&quot;xdm:text&quot;:&quot;<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu mi bibendum neque egestas congue quisque egestas. Varius morbi enim nunc faucibus a pellentesque. Scelerisque eleifend donec pretium vulputate sapien nec sagittis.</p>\n&quot;}}" id="text-2d9d50c5a7">
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu mi bibendum neque egestas congue quisque egestas. Varius morbi enim nunc faucibus a pellentesque. Scelerisque eleifend donec pretium vulputate sapien nec sagittis.</p>
        </div>
    </div>
    ```
@@ -303,42 +286,26 @@ Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 �
    ```shell
    $ cd ~/code/aem-guides-wknd/ui.frontend/
    $ npm start
-   
-   > aem-maven-archetype@1.0.0 start code/aem-guides-wknd/ui.frontend
-   > webpack-dev-server --open --config ./webpack.dev.js
    ```
 
-1. Eclipse 또는 선택한 IDE에서 다음 위치에 있는 `index.html` 파일을 엽니다.`ui.frontend/src/main/webpack/static/index.html`. 웹 팩 개발 서버에서 사용하는 정적 마크업입니다.
+1. IDE에서 다음 위치에 있는 `index.html` 파일을 엽니다.`ui.frontend/src/main/webpack/static/index.html`.
 1. `index.html`에서 텍스트 *&quot;Jacob Wester&quot;*(210행)을 검색하여 텍스트 구성 요소의 인스턴스를 찾습니다. `cmp-text--quote` 클래스를 주변 div에 추가합니다.
 
-   ```html
-    <!-- before -->
-    <div class="text aem-GridColumn aem-GridColumn--default--8">
-        <div class="cmp-text">
-            <blockquote>"There is no better place to shred then Los Angeles"</blockquote>
-            <p>Jacob Wester - Pro Skater</p>
+   ```diff
+   - <div class="text aem-GridColumn--phone--12 aem-GridColumn aem-GridColumn--default--8">
+   + <div class="cmp-text--quote text aem-GridColumn--phone--12 aem-GridColumn aem-GridColumn--default--8">
+        <div data-cmp-data-layer="{&#34;text-a15f39a83a&#34;:{&#34;@type&#34;:&#34;wknd/components/text&#34;,&#34;repo:modifyDate&#34;:&#34;2021-01-22T00:23:27Z&#34;,&#34;xdm:text&#34;:&#34;&lt;blockquote>&amp;quot;There is no better place to shred then Los Angeles.”&lt;/blockquote>\r\n&lt;p>- Jacob Wester, Pro Skater&lt;/p>\r\n&#34;}}" id="text-a15f39a83a" class="cmp-text">
+            <blockquote>&quot;There is no better place to shred then Los Angeles.”</blockquote>
+            <p>- Jacob Wester, Pro Skater</p>
         </div>
     </div>
    ```
 
-   ```html
-    <!-- After -->
-    <div class="cmp-text--quote text aem-GridColumn aem-GridColumn--default--8">
-        <div class="cmp-text">
-            <blockquote>"There is no better place to shred then Los Angeles"</blockquote>
-            <p>Jacob Wester - Pro Skater</p>
-        </div>
-    </div>
-   ```
-
-1. 브라우저로 돌아가서 추가 클래스가 마크업에 반영되었는지 확인합니다.
-1. **ui.frontend** 모듈로 돌아가서 다음 위치에 있는 `text.scss` 파일을 업데이트합니다.`ui.frontend/src/main/webpack/components/content/text/scss/text.scss`:
+1. 다음 위치에 있는 `text.scss` 파일을 업데이트합니다.`ui.frontend/src/main/webpack/components/_text.scss`:
 
    ```css
    /* WKND Text Quote style */
-   
    .cmp-text--quote {
-   
        .cmp-text {
            background-color: $brand-third;
            margin: 1em 0em;
@@ -346,7 +313,7 @@ Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 �
    
            blockquote {
                border: none;
-               font-size: $font-size-h2;
+               font-size: $font-size-large;
                font-family: $font-family-serif;
                padding: 14px 14px;
                margin: 0;
@@ -361,9 +328,7 @@ Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 �
                    width: 80px;
                }
            }
-   
            p {
-               font-size:    $font-size-large;
                font-family:  $font-family-serif;
            }
        }
@@ -391,15 +356,15 @@ Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 �
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-1. 다음 위치에 있는 **아티클 페이지 템플릿**&#x200B;으로 이동합니다.[http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html).
+1. 다음 위치에 있는 **아티클 페이지 템플릿**&#x200B;으로 이동합니다.[http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html)).
 
-1. **구조** 모드의 기본 **레이아웃 컨테이너**&#x200B;에서 **허용되는 구성 요소&#x200B;*에 나열된 &lt;a6/>텍스트**구성 요소 옆에 있는&#x200B;**정책**아이콘을 선택합니다.*
+1. **구조** 모드의 기본 **레이아웃 컨테이너**&#x200B;에서 **허용되는 구성 요소&#x200B;*에 나열된*텍스트** 구성 요소 옆에 있는 **정책** 아이콘을 선택합니다.
 
    ![텍스트 정책 구성](assets/style-system/article-template-text-policy-icon.png)
 
-1. 다음 값을 사용하여 텍스트 구성 요소에 대한 새 정책을 만듭니다.
+1. 다음 값으로 텍스트 구성 요소 정책을 업데이트합니다.
 
-   *정책 제목 **: **WKND 텍스트**
+   *정책 제목 **: **컨텐츠 텍스트**
 
    *플러그인* >  *단락 스타일* >  *단락 스타일 사용*
 
@@ -426,317 +391,35 @@ Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 �
 
    작성자는 스타일을 켜거나 끌 수 있어야 합니다.
 
-## 레이아웃 컨테이너 {#layout-container}
+## 고정 폭 - 컨테이너(보너스) {#layout-container}
 
-레이아웃 컨테이너는 아티클 페이지 템플릿의 기본 구조를 만들고 콘텐츠 작성자가 페이지에 콘텐츠를 추가할 수 있는 드롭 영역을 제공하는 데 사용되었습니다. 레이아웃 컨테이너는 스타일 시스템을 활용할 수도 있으며 컨텐츠 작성자에게 레이아웃 디자인에 대한 더 많은 옵션을 제공합니다.
+컨테이너 구성 요소는 아티클 페이지 템플릿의 기본 구조를 만들고 콘텐츠 작성자가 페이지에 콘텐츠를 추가할 수 있는 드롭 영역을 제공하는 데 사용되었습니다. 또한 컨테이너는 스타일 시스템을 활용할 수 있으므로 컨텐츠 작성자에게 레이아웃을 디자인할 수 있는 더 많은 옵션을 제공합니다.
 
-현재 CSS 규칙은 고정 폭을 적용하는 전체 페이지에 적용됩니다. 대신 컨텐츠 작성자가 켜기/끄기를 전환할 수 있는 **고정 너비** 스타일을 만드는 것이 더 유연합니다.
+아티클 페이지 템플릿의 **기본 컨테이너**&#x200B;에는 작성 가능한 컨테이너 2개가 포함되어 있고 너비가 고정되어 있습니다.
 
-### 고정 폭 스타일 구현 - ui.frontend
+![기본 컨테이너](assets/style-system/main-container-article-page-template.png)
 
-프로젝트의 **ui.frontend** 모듈에서 고정 폭 스타일을 구현하기 시작합니다.
+*아티클 페이지 템플릿의 기본 컨테이너입니다*.
 
-1. **ui.frontend** 모듈 내에서 다음 명령을 실행하여 webpack 개발 서버를 시작합니다.
+**기본 컨테이너**&#x200B;의 정책은 기본 요소를 `main`으로 설정합니다.
 
-   ```shell
-   $ cd ~/code/aem-guides-wknd/ui.frontend/
-   $ npm start
-   ```
+![기본 컨테이너 정책](assets/style-system/main-container-policy.png)
 
-1. 다음 위치에 있는 `index.html` 파일을 엽니다.`ui.frontend/src/main/webpack/static/index.html`.
-1. 집필 페이지 템플릿의 본문을 고정 너비로 만들고 머리글과 바닥글을 자유롭게 확대하려고 합니다. 따라서 두 경험 조각(136행) 사이의 2번째 `<div class='responsivegrid aem-GridColumn aem-GridColumn--default--12'`(레이아웃 컨테이너)을 타깃팅하려고 합니다.
+**기본 컨테이너**&#x200B;를 수정하도록 하는 CSS는 `ui.frontend/src/main/webpack/site/styles/container_main.scss`의 **ui.frontend** 모듈에서 설정됩니다.
 
-   ![기본 본문 레이아웃 컨테이너 Div](assets/style-system/main-body-layoutContainer.png)
+```SCSS
+main.container {
+    padding: .5em 1em;
+    max-width: $max-content-width;
+    float: unset!important;
+    margin: 0 auto!important;
+    clear: both!important;
+}
+```
 
-1. 이전 단계에서 식별된 `div`에 `cmp-layout-container--fixed` 클래스를 추가합니다.
+`main` HTML 요소를 대상으로 하는 대신 스타일 시스템을 사용하여 **고정 폭** 스타일을 컨테이너 정책의 일부로 만들 수 있습니다. 스타일 시스템에서는 사용자에게 **고정 너비**&#x200B;와 **유동 너비** 컨테이너 간 전환 옵션을 제공할 수 있습니다.
 
-   ```html
-   <!-- Experience Fragment Header -->
-   <div class="experiencefragment aem-GridColumn aem-GridColumn--default--12">
-       ...
-   </div>
-   <!-- Main body Layout Container -->
-   <div class="responsivegrid cmp-layout-container--fixed aem-GridColumn aem-GridColumn--default--12">
-       ...
-   </div>
-   <!-- Experience Fragment Footer -->
-   <div class="experiencefragment aem-GridColumn aem-GridColumn--default--12">
-       ...
-   </div>
-   ```
-
-1. 다음 위치에 있는 `container.scss` 파일을 업데이트합니다.`ui.frontend/src/main/webpack/components/content/container/scss/container.scss`:
-
-   ```css
-   /* WKND Layout Container - Fixed Width */
-   
-   .cmp-layout-container--fixed {
-       @media (min-width: $screen-medium + 1) {
-           display:block;
-           max-width:  $max-width !important;
-           float: unset !important;
-           margin: 0 auto !important;
-           padding: 0 $gutter-padding;
-           clear: both !important;
-       }
-   }
-   ```
-
-1. 다음 위치에 있는 `_elements.scss` 파일을 업데이트합니다.`ui.frontend/src/main/webpack/base/sass/_elements.scss` 규칙을 변경하고 `.root` 규칙을 새 최대 너비가 `$max-body-width` 변수로 설정되도록 변경합니다.
-
-   ```css
-    /* Before */
-    body {
-        ...
-   
-        .root {
-            max-width: $max-width;
-            margin: 0 auto;
-            padding-top: 12px;
-        }
-    }
-   ```
-
-   ```css
-    /* After */
-    body {
-        ...
-   
-        .root {
-            max-width: $max-body-width;
-            margin: 0 auto;
-            padding-top: 12px;
-        }
-    }
-   ```
-
-   >[!NOTE]
-   >
-   > 변수와 값의 전체 목록은 다음 사이트에서 찾을 수 있습니다.`ui.frontend/src/main/webpack/base/sass/_variables.scss`.
-
-1. 브라우저로 돌아가면 페이지의 기본 컨텐츠는 동일하게 표시되지만 머리글과 바닥글은 훨씬 더 넓습니다. 예상된 내용입니다.
-
-   ![고정 레이아웃 컨테이너 - 웹 팩 서버](assets/style-system/fixed-layout-container-webpack-server.png)
-
-### 레이아웃 컨테이너 정책 업데이트
-
-다음으로 AEM의 레이아웃 컨테이너 정책을 업데이트하여 고정 폭 스타일을 추가합니다.
-
-1. Maven 기술을 사용하여 로컬 AEM 인스턴스에 코드 베이스를 배포할 수 있습니다.
-
-   ```shell
-   $ cd ~/code/aem-guides-wknd
-   $ mvn clean install -PautoInstallSinglePackage
-   ```
-
-1. 다음 위치에 있는 **아티클 페이지 템플릿**&#x200B;으로 이동합니다.[http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html).
-
-1. **구조** 모드에서 기본 **레이아웃 컨테이너**(경험 조각 머리글과 바닥글 사이)를 선택하고 **정책** 아이콘을 선택합니다.
-
-   ![기본 본문 레이아웃 컨테이너 정책 구성](assets/style-system/layout-container-article-template-policy-icon.png)
-
-1. **고정 폭**&#x200B;에 대한 추가 스타일을 `cmp-layout-container--fixed` 값으로 포함하려면 **WKND 사이트 기본값** 정책을 업데이트합니다.
-
-   ![WKND 사이트 기본 정책 업데이트  ](assets/style-system/wknd-site-default-policy-update-fixed-width.png)
-
-   변경 내용을 저장하고 아티클 페이지 템플릿 페이지를 새로 고칩니다.
-
-1. 다시 기본 **레이아웃 컨테이너**(경험 조각 머리글과 바닥글 사이)를 선택합니다. 이번에는 **페인트브러쉬** 아이콘이 표시되고 스타일 드롭다운에서 **고정 너비**&#x200B;를 선택할 수 있습니다.
-
-   ![고정 폭 레이아웃 컨테이너 적용](assets/style-system/apply-fixed-width-layout-container.png)
-
-   스타일을 켜거나 끌 수 있어야 합니다.
-
-1. 다음 AEM Sites 편집기에서 **La Skatetparks** 아티클로 이동합니다.[http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html). 고정 폭 컨테이너가 작동 중이어야 합니다.
-
-## 머리글/바닥글 - 경험 조각 {#experience-fragment}
-
-다음으로 머리글 및 바닥글에 스타일을 추가하여 아티클 페이지 템플릿을 마무리하겠습니다. 머리글과 바닥글 모두 컨테이너 내의 구성 요소 그룹인 경험 조각으로 구현되었습니다. 스타일 시스템을 사용하는 다른 핵심 구성 요소 구성 요소와 마찬가지로 고유한 CSS 클래스를 경험 조각 구성 요소에 적용할 수 있습니다.
-
-### 머리글 스타일 구현 - ui.frontend
-
-헤더 구성 요소 내의 구성 요소는 이미 [AdobeXD 디자인](assets/pages-templates/wknd-article-design.xd)과 일치하도록 스타일이 지정되어 있으므로 일부 작은 레이아웃 수정만 필요합니다.
-
-1. **ui.frontend** 모듈 내에서 다음 명령을 실행하여 webpack 개발 서버를 시작합니다.
-
-   ```shell
-   $ cd ~/code/aem-guides-wknd/ui.frontend/
-   $ npm start
-   ```
-
-1. 다음 위치에 있는 `index.html` 파일을 엽니다.`ui.frontend/src/main/webpack/static/index.html`.
-1. *class=&quot;experiencerfragment*(48행)을 검색하여 경험 조각 구성 요소의 **first** 인스턴스를 찾습니다.
-1. 이전 단계에서 식별된 `div`에 `cmp-experiencefragment--header` 클래스를 추가합니다.
-
-   ```html
-       ...
-       <div class="root responsivegrid">
-           <div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
-   
-           <!-- add cmp-experiencefragment--header -->
-           <div class="experiencefragment cmp-experiencefragment--header aem-GridColumn aem-GridColumn--default--12">
-               ...
-   ```
-
-1. 다음 위치에 있는 `experiencefragment.scss` 파일을 엽니다.`ui.frontend/src/main/webpack/components/content/experiencefragment/scss/experiencefragment.scss`. 파일에 다음 스타일을 추가합니다.
-
-   ```css
-   /* Header Style */
-   .cmp-experiencefragment--header {
-   
-       .cmp-experiencefragment {
-           max-width: $max-width;
-           margin: 0 auto;
-       }
-   
-       /* Logo Image */
-       .cmp-image__image {
-           max-width: 8rem;
-           margin-top: $gutter-padding / 2;
-           margin-bottom: $gutter-padding / 2;
-       }
-   
-       @media (max-width: $screen-medium) {
-   
-           .cmp-experiencefragment {
-               padding-top: 1rem;
-               padding-bottom: 1rem;
-           }
-           /* Logo Image */
-           .cmp-image__image {
-               max-width: 6rem;
-               margin-top: .75rem;
-           }
-       }
-   }
-   ```
-
-   >[!CAUTION]
-   >
-   > 머리글 내에서 로고의 스타일을 지정하는 단축키를 조금 취하고 있습니다. 로고는 실제로 경험 조각 내에 있는 이미지 구성 요소입니다. 나중에 헤더에 다른 이미지를 추가해야 했기 때문에 두 이미지를 구분할 수 없었다고 가정해 보겠습니다. 필요한 경우 여기에 &quot;logo&quot; 클래스를 항상 이미지 구성 요소에 추가할 수 있습니다.
-
-1. 브라우저로 돌아가서 웹 팩 개발 서버를 확인합니다. 업데이트된 머리글 스타일이 나머지 컨텐츠에 더 맞게 조정되어 있는 것을 볼 수 있습니다. 브라우저를 태블릿/모바일 장치 너비로 축소하면 로고의 크기가 보다 적절하게 조정되었음을 알 수 있습니다.
-
-   ![경험 조각 헤더](assets/style-system/header-experience-fragment-webpack.png)
-
-### 바닥글 스타일 구현 - ui.front
-
-[AdobeXD 디자인](assets/pages-templates/wknd-article-design.xd)의 바닥글에는 텍스트가 밝은 검은색 배경이 포함되어 있습니다. 이를 반영하려면 경험 조각 바닥글 내의 컨텐트에 스타일을 지정해야 합니다.
-
-1. 다음 위치에 있는 `index.html` 파일을 엽니다.`ui.frontend/src/main/webpack/static/index.html`.
-
-1. *class=&quot;experiencerfragment*(385행)를 검색하여 경험 조각 구성 요소의 **두 번째** 인스턴스를 찾습니다.
-
-1. 이전 단계에서 식별된 `div`에 `cmp-experiencefragment--footer` 클래스를 추가합니다.
-
-   ```html
-   <!-- add cmp-experiencefragment--footer -->
-   <div class="experiencefragment cmp-experiencefragment--footer aem-GridColumn aem-GridColumn--default--12">
-   ```
-
-1. 다음 위치에 있는 `experiencefragment.scss` 파일을 다시 엽니다.`ui.frontend/src/main/webpack/components/content/experiencefragment/scss/experiencefragment.scss`. **파일** 에 다음 스타일을 추가합니다.
-
-   ```css
-   /* Footer Style */
-   .cmp-experiencefragment--footer {
-   
-       background-color: $black;
-       color: $gray-light;
-       margin-top: 5rem;
-   
-       p {
-           font-size: $font-size-small;
-       }
-   
-       .cmp-experiencefragment {
-           max-width: $max-width;
-           margin: 0 auto;
-           padding-bottom: 0rem;
-       }
-   
-       /* Separator */
-       .cmp-separator {
-           margin-top: 2rem;
-           margin-bottom: 2rem;
-       }
-   
-       .cmp-separator__horizontal-rule {
-           border: 0;
-       }
-   
-       /* Navigation */
-       .cmp-navigation__item-link {
-           color: $nav-link-inverse;
-           &:hover,
-           &:focus {
-               background-color: unset;
-               text-decoration: underline;
-           }
-       }
-   
-       .cmp-navigation__item--level-1.cmp-navigation__item--active .cmp-navigation__item-link {
-           background-color: unset;
-           color: $gray-lighter;
-           text-decoration: underline;
-       }
-   
-   }
-   ```
-
-   >[!CAUTION]
-   >
-   > Experience Fragment 바닥글 CSS 내에서 내비게이션 구성 요소의 기본 스타일을 재정의하여 약간의 단축키를 사용할 수 있습니다. 바닥글 내에 여러 내비게이션 구성 요소가 있을 가능성이 없으며 컨텐츠 작성자가 내비게이션 스타일을 전환할 가능성은 거의 없습니다. 탐색 구성 요소에 대해서만 바닥글 스타일을 만드는 것이 좋습니다.
-
-1. 브라우저 및 웹팩 개발 서버로 돌아갑니다. XD 디자인에 더 가깝게 일치하도록 바닥글 스타일을 업데이트해야 합니다.
-
-   ![바닥글](assets/style-system/footer-webpack-style.png)
-
-1. 웹 팩 개발 서버를 중지합니다.
-
-### 경험 조각 정책 업데이트
-
-다음으로 AEM의 경험 조각 구성 요소 정책을 업데이트하여 머리글 및 바닥글 스타일을 추가합니다.
-
-1. Maven 기술을 사용하여 로컬 AEM 인스턴스에 코드 베이스를 배포할 수 있습니다.
-
-   ```shell
-   $ cd ~/code/aem-guides-wknd
-   $ mvn clean install -PautoInstallSinglePackage
-   ```
-
-1. 다음 위치에 있는 **아티클 페이지 템플릿**&#x200B;으로 이동합니다.[http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html).
-
-1. **구조** 모드에서 머리글 **경험 조각**&#x200B;을 선택하고 **정책** 아이콘을 선택합니다.
-
-   ![경험 조각 정책 구성](assets/style-system/experience-fragment-click-policy.png)
-
-1. **WKND 사이트 경험 조각 - 헤더** 정책을 업데이트하여 **기본 CSS 클래스**&#x200B;의 값을 `cmp-experiencefragment--header`으로 추가합니다.
-
-   ![WKND 사이트 경험 조각 - 헤더 업데이트](assets/style-system/experience-fragment-header-policy-configure.png)
-
-   변경 내용을 저장하면 적용된 적절한 머리글 CSS 스타일이 표시됩니다.
-
-   >[!NOTE]
-   >
-   > 템플릿 이외의 다른 머리글 스타일을 전환할 필요가 없으므로 기본 CSS 스타일로 간단히 설정할 수 있습니다.
-
-1. 그런 다음 바닥글 **경험 조각**&#x200B;을 선택하고 **정책** 아이콘을 클릭하여 정책 구성을 엽니다.
-
-1. **기본 CSS 클래스**&#x200B;를 `cmp-experiencefragment--footer` 값으로 추가하려면 **WKND 사이트 경험 조각 - 바닥글** 정책을 업데이트합니다.
-
-   ![WKND 사이트 경험 조각 - 바닥글 업데이트](assets/style-system/experience-fragment-footer-policy-configure.png)
-
-   변경 내용을 저장하면 적용된 바닥글 CSS 스타일이 표시됩니다.
-
-   ![WKND 아티클 템플릿 - 최종 스타일](assets/style-system/final-header-footer-applied.png)
-
-1. 다음 AEM Sites 편집기에서 **La Skatetparks** 아티클로 이동합니다.[http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html). 업데이트된 머리글 및 바닥글이 적용된 것을 볼 수 있습니다.
-
-## 리뷰 {#review}
-
-장의 일부로 구현된 스타일 및 기능을 검토합니다.
-
->[!VIDEO](https://video.tv.adobe.com/v/30378/?quality=12&learn=on)
+1. **추가 과제**  - 이전 연습에서 학습한 교훈을 살펴보고 스타일 시스템을 사용하여 컨테이너 구성 요소에 대해  **** 고정 폭 및  **유동** 위젯 스타일을 구현하십시오.
 
 ## 축하합니다!{#congratulations}
 
@@ -746,7 +429,7 @@ Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 �
 
 대화 상자에서 제작된 콘텐츠를 표시하는 [사용자 정의 AEM 구성 요소](custom-component.md)를 만들고 Sling 모델을 개발하여 구성 요소의 HTL을 채우는 비즈니스 논리를 캡슐화하는 단계를 끝까지 알아봅니다.
 
-[GitHub](https://github.com/adobe/aem-guides-wknd)에서 완료된 코드를 보거나 Git brach `style-system/solution`에서 코드를 로컬로 검토 및 배포합니다.
+[GitHub](https://github.com/adobe/aem-guides-wknd)에서 완료된 코드를 보거나 Git brach `tutorial/style-system-solution`에서 코드를 로컬로 검토 및 배포합니다.
 
 1. [github.com/adobe/aem-wknd-guides](https://github.com/adobe/aem-guides-wknd) 저장소를 복제합니다.
-1. `style-system/solution` 분기를 확인합니다.
+1. `tutorial/style-system-solution` 분기를 확인합니다.
