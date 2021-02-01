@@ -11,20 +11,15 @@ mini-toc-levels: 1
 kt: 6713
 thumbnail: 22451.jpg
 translation-type: tm+mt
-source-git-commit: eb2b556c5947b15a31a74a86dadd525fb06bcf14
+source-git-commit: 8c5b425e6dcf23cbef042097f17db9e51bdf63c9
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '785'
 ht-degree: 0%
 
 ---
 
 
 # 컨텐츠 조각 작성 {#authoring-content-fragments}
-
->[!CAUTION]
->
-> 요청에 따라 컨텐츠 조각 전달용 AEM GraphQL API를 사용할 수 있습니다.
-> Cloud Service 프로그램으로 AEM용 API를 활성화하려면 Adobe 지원에 문의하십시오.
 
 이 장에서는 [새로 정의된 콘텐츠 조각 모델](./content-fragment-models.md)을 기반으로 새 컨텐츠 조각을 만들고 편집합니다. 컨텐츠 조각을 변형하여 만드는 방법도 알아봅니다.
 
