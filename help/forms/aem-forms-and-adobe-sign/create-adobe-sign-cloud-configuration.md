@@ -1,5 +1,6 @@
 ---
 title: Adobe Sign 클라우드 구성 만들기
+description: AEM의 클라우드 서비스 구성을 사용하여 AEM과 다른 클라우드 애플리케이션 간의 통합을 만들 수 있습니다. 다음 비디오에서는 AEM을 Adobe Sign과 통합하기 위해 클라우드 서비스 구성을 만드는 데 필요한 단계를 안내합니다.
 feature: adaptive-forms
 topics: development
 audience: developer
@@ -8,9 +9,9 @@ activity: implement
 thumbnail: 38179.jpg
 kt: 6033
 translation-type: tm+mt
-source-git-commit: c60a46027cc8d71fddd41aa31dbb569e4df94823
+source-git-commit: 451ca39511b52e90a44bba25c6739280f49a0aac
 workflow-type: tm+mt
-source-wordcount: '47'
+source-wordcount: '84'
 ht-degree: 0%
 
 ---
