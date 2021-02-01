@@ -6,9 +6,9 @@ user-guide-description: 초보자 및 숙련된 AEM Forms 개발자를 위한 AE
 breadcrumb-title: AEM Forms 자습서
 index: y
 translation-type: tm+mt
-source-git-commit: 049574ab2536b784d6b303f474dba0412007e18c
+source-git-commit: 48060b4d8c4b502e0c099ae8081695f97b423037
 workflow-type: tm+mt
-source-wordcount: '938'
+source-wordcount: '943'
 ht-degree: 6%
 
 ---
@@ -19,6 +19,7 @@ ht-degree: 6%
 + [개요](overview.md)
 + [따라야 할 모범 사례](adaptive-forms/best-practices-adaptive-forms.md)
 + [AEM 작성자를 사용하여 OKTA 인증 설정](adaptive-forms/single-sign-on-with-okta.md)
++ [간단한 OSGi 번들 만들기](adaptive-forms/create-your-first-osgi-bundle.md)
 + 첫 번째 적응형 양식 만들기 {#creating-your-first-adaptive-form}
    + [소개 및 설정](creating-your-first-adaptive-form/introduction-and-setup.md)
    + [적응형 양식 템플릿 만들기](creating-your-first-adaptive-form/create-adaptive-form-template.md)
