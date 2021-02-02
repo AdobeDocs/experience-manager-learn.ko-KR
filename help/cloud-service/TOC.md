@@ -5,9 +5,9 @@ breadcrumb-title: AEM as a Cloud Service 자습서
 sub-product: 클라우드 서비스
 team: TM
 translation-type: tm+mt
-source-git-commit: 81c704240f163ccd151a61643f589f825a288705
+source-git-commit: 5ac82928d4b0bf75b348a414793c24c3aca92f36
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '270'
 ht-degree: 32%
 
 ---
@@ -16,24 +16,48 @@ ht-degree: 32%
 # Adobe Experience Manager as a Cloud Service 자습서 {#cloud-service}
 
 + [개요](./overview.md)
++ AEM as a Cloud Service 소개{#introduction}
+   + [AEM은 Cloud Service란?](./introduction/what-is-aem-as-a-cloud-service.md)
+   + [진화](./introduction/evolution.md)
+   + [아키텍처](./introduction/architecture.md)
+   + [Cloud Manager](./introduction/cloud-manager.md)
 + 기본 기술 {#underlying-technology}
-   + [AEM 아키텍처 소개](./underlying-technology/introduction-architecture.md)
-   + [OSGi 소개](./underlying-technology/introduction-osgi.md)
-   + [Java 컨텐츠 저장소 소개](./underlying-technology/introduction-jcr.md)
-   + [Sling 소개](./underlying-technology/introduction-sling.md)
-   + [작성자 및 게시 계층 소개](./underlying-technology/introduction-author-publish.md)
-   + [Dispatcher 소개](./underlying-technology/introduction-dispatcher.md)
+   + [AEM 아키텍처](./underlying-technology/introduction-architecture.md)
+   + [OSGi](./underlying-technology/introduction-osgi.md)
+   + [Java 컨텐츠 저장소](./underlying-technology/introduction-jcr.md)
+   + [슬링](./underlying-technology/introduction-sling.md)
+   + [서비스 작성 및 게시](./underlying-technology/introduction-author-publish.md)
+   + [Dispatcher](./underlying-technology/introduction-dispatcher.md)
 + Cloud Manager {#cloud-manager}
    + [프로그램](./cloud-manager/programs.md)
    + [환경](./cloud-manager/environments.md)
    + [CI/CD 프로덕션 파이프라인](./cloud-manager/cicd-production-pipeline.md)
    + [CI/CD 비프로덕션 파이프라인](./cloud-manager/cicd-non-production-pipeline.md)
    + [활동](./cloud-manager/activity.md)
+   + 개발 운영{#devops}
+      + [코드 배포](./cloud-manager/devops/deploy-code.md)
+      + [프로젝트 병합](./cloud-manager/devops/merge-projects.md)
+      + [파이프라인 구성](./cloud-manager/devops/configure-pipelines.md)
+      + [지속적인 통합](./cloud-manager/devops/continuous-integration.md)
+      + [테스트 결과 분석](./cloud-manager/devops/analyze-test-results.md)
+      + [발송자 구성](./cloud-manager/devops/dispatcher-configurations.md)
+      + [클라우드 관리자 API](./cloud-manager/devops/cloud-manager-apis.md)
 + 로컬 개발 환경 설정 {#local-development-environment-set-up}
    + [개요](./local-development-environment/overview.md)
    + [개발 도구](./local-development-environment/development-tools.md)
    + [로컬 AEM 런타임](./local-development-environment/aem-runtime.md)
    + [로컬 디스패처 도구](./local-development-environment/dispatcher-tools.md)
++ 개발{#developing}
+   + 개발 기본 사항{#basics}
+      + [AEM SDK](./developing/basics/aem-sdk.md)
+      + [로컬 개발 환경](./developing/basics/local-development-environment.md)
+      + [AEM 프로젝트 전형](./developing/basics/aem-project-archetype.md)
+      + [AEM 프로젝트 구조](./developing/basics/project-structure.md)
+      + [변경 가능한 컨텐츠와 변경 불가능한 컨텐츠 비교](./developing/basics/mutable-immutable.md)
+      + [저장소 구조 패키지](./developing/basics/repository-structure-package.md)
+      + [컨텐츠 게시](./developing/basics/content-publishing.md)
+      + [OSGi 구성](./developing/basics/osgi-configurations.md)
+      + [발송자 구성 마이그레이션](./developing/basics/dispatcher-configuration.md)
 + AEM{#debugging} 디버깅
    + AEM SDK 디버깅{#debugging-aem-sdk}
       + [개요](./debugging/aem-sdk-local-quickstart/overview.md)
