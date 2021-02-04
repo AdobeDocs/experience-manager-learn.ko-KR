@@ -8,9 +8,9 @@ feature: APIs
 activity: develop
 audience: developer
 kt: 6785
-thumbnail: 330460.jpg
+thumbnail: 330519.jpg
 translation-type: tm+mt
-source-git-commit: c4f3d437b5ecfe6cb97314076cd3a5e31b184c79
+source-git-commit: 733382dc0e0ca14d4bd6e49174ba33f8d7fc517d
 workflow-type: tm+mt
 source-wordcount: '585'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 이 자습서에서는 액세스 토큰을 사용하여 외부 애플리케이션이 HTTP를 통해 Cloud Service으로 프로그래밍 방식으로 인증하고 AEM에 상호 작용할 수 있는 방법을 살펴봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/330460/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330519/?quality=12&learn=on)
 
 ## 전제 조건
 
