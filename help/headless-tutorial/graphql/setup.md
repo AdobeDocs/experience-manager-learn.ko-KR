@@ -11,9 +11,9 @@ mini-toc-levels: 1
 kt: 6386
 thumbnail: KT-6386.jpg
 translation-type: tm+mt
-source-git-commit: 8c5b425e6dcf23cbef042097f17db9e51bdf63c9
+source-git-commit: c752106cc68774eb7e8b9fe525273bb7088d38e5
 workflow-type: tm+mt
-source-wordcount: '1532'
+source-wordcount: '1547'
 ht-degree: 1%
 
 ---
@@ -49,6 +49,10 @@ ht-degree: 1%
 1. **[소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)** > **AEM을 Cloud Service**&#x200B;로 이동하고 최신 버전의 **AEM SDK**&#x200B;을 다운로드합니다.
 
    ![소프트웨어 배포 포털](assets/setup/software-distribution-portal-download.png)
+
+   >[!CAUTION]
+   >
+   > GraphQL 기능은 기본적으로 2021-02-04 이상의 AEM SDK에서만 활성화됩니다.
 
 1. 다운로드 압축을 풀고 빠른 시작 jar(`aem-sdk-quickstart-XXX.jar`)를 전용 폴더(예: `~/aem-sdk/author`)에 복사합니다.
 1. jar 파일의 이름을 `aem-author-p4502.jar`로 다시 지정합니다.
