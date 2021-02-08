@@ -12,9 +12,9 @@ mini-toc-levels: 1
 index: y
 thumbnail: 30476.jpg
 translation-type: tm+mt
-source-git-commit: e03d84f92be11623704602fb448273e461c70b4e
+source-git-commit: 76462bb75ceda1921db2fa37606ed7c5a1eadb81
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '893'
 ht-degree: 7%
 
 ---
@@ -55,6 +55,8 @@ AEM(Adobe Experience Manager)을 처음 사용하는 개발자를 위해 고안�
 * [Node.js](https://nodejs.org/en/) (LTS - 장기 지원)
 * [npm 6+](https://www.npmjs.com/)
 * [Git](https://git-scm.com/)
+* [Visual Studio ](https://code.visualstudio.com/) 코드 또는 동급 IDE
+   * [VSCode AEM 동기화](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync)  - 튜토리얼 전체에서 사용되는 도구
 
 >[!NOTE]
 >
