@@ -10,9 +10,9 @@ audience: developer
 kt: 4083
 thumbnail: 30359.jpg
 translation-type: tm+mt
-source-git-commit: e03d84f92be11623704602fb448273e461c70b4e
+source-git-commit: 76462bb75ceda1921db2fa37606ed7c5a1eadb81
 workflow-type: tm+mt
-source-wordcount: '3257'
+source-wordcount: '3291'
 ht-degree: 1%
 
 ---
@@ -144,7 +144,7 @@ AEM(Adobe Experience Manager) 사이트 구현을 위해 CSS 및 Javascript를 �
 
    각 파일은 [아코디언 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/accordion.html?lang=en#components)와 같은 핵심 구성 요소에 매핑됩니다. 각 핵심 구성 요소는 [블록 요소 수정자](https://getbem.com/) 또는 BEM 표기법을 사용하여 작성되므로 스타일 규칙을 사용하여 특정 CSS 클래스를 보다 쉽게 타깃팅할 수 있습니다. `/components` 아래 파일은 AEM 프로젝트 원형(Tranype)에 의해 각 구성 요소에 대한 다른 BEM 규칙과 함께 분석되었습니다.
 
-1. WKND 기본 스타일 **[wknd-base-styles-src.zip](./assets/client-side-libraries/wknd-base-styles-src.zip)** 및 **압축 해제** 파일을 다운로드합니다.
+1. WKND 기본 스타일 **[wknd-base-styles-src.zip](./assets/client-side-libraries/wknd-base-styles-srcv2.zip)** 및 **압축 해제** 파일을 다운로드합니다.
 
    ![WKND 기본 스타일](assets/client-side-libraries/wknd-base-styles-unzipped.png)
 
@@ -307,6 +307,10 @@ AEM Project Tranype은 이 통합을 자동으로 설정합니다. 그 다음 �
    ...
    </body>
    ```
+
+   >[!NOTE]
+   >
+   > 6.5/6.4에서 다음을 수행하면 클라이언트측 라이브러리가 자동으로 축소되지 않습니다. 분류(권장)](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=en#using-preprocessors)를 활성화하려면 [HTML 라이브러리 관리자의 설명서를 참조하십시오.
 
    >[!WARNING]
    >
