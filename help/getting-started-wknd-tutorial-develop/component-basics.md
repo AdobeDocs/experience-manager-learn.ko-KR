@@ -12,9 +12,9 @@ mini-toc-levels: 1
 kt: 4081
 thumbnail: 30177.jpg
 translation-type: tm+mt
-source-git-commit: e03d84f92be11623704602fb448273e461c70b4e
+source-git-commit: 76462bb75ceda1921db2fa37606ed7c5a1eadb81
 workflow-type: tm+mt
-source-wordcount: '1066'
+source-wordcount: '1145'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,8 @@ ht-degree: 0%
 ## 전제 조건 {#prerequisites}
 
 [로컬 개발 환경 설정](overview.md#local-dev-environment)에 대한 필수 도구 및 지침을 검토하십시오.
+
+비디오에 사용되는 IDE는 [Visual Studio 코드](https://code.visualstudio.com/) 및 [VSCode AEM Sync](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync) 플러그인입니다.
 
 ## 목표 {#objective}
 
@@ -110,7 +112,7 @@ HTML 템플릿 언어 또는 **[HTL](https://docs.adobe.com/content/help/en/expe
 
 1. IDE로 전환하고 프로젝트를 `ui.apps` 모듈로 엽니다.
 1. `helloworld.html` 파일을 열고 HTML 마크업을 변경합니다.
-1. IDE 툴을 사용하여 파일 변경 사항을 로컬 AEM 인스턴스와 동기화합니다.
+1. [VSCode AEM 동기화](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync)와 같은 IDE 도구를 사용하여 파일 변경 내용을 로컬 AEM 인스턴스와 동기화합니다.
 1. 브라우저로 돌아가 구성 요소 렌더링이 변경되었음을 확인합니다.
 1. 다음 위치에서 `HelloWorld` 구성 요소에 대한 대화 상자를 정의하는 `.content.xml` 파일을 엽니다.
 
@@ -209,14 +211,14 @@ Sling Models는 JCR에서 Java 변수에 대한 데이터 매핑을 용이하게
        ...
    
        @ValueMapValue
-       protected String title;
+       private String title;
    
        @ValueMapValue
-       protected String text;
+       private String text;
    
-           @PostConstruct
-           protected void init() {
-               ...
+       @PostConstruct
+       protected void init() {
+           ...
    ```
 
 1. `HelloWorldModel` 클래스에 다음 메서드 `getTitle()`을 추가합니다. 이 메서드는 `title` 속성의 값을 반환합니다. 이 메서드는 &quot;Default Value here!&quot;의 문자열 값을 반환하는 추가 논리를 추가합니다. 속성 `title`이(가) null이거나 비어 있는 경우:
@@ -349,6 +351,10 @@ Sling Models는 JCR에서 Java 변수에 대한 데이터 매핑을 용이하게
    ```
 
 1. 개발자 플러그인을 사용하거나 Maven 기술을 사용하여 AEM의 로컬 인스턴스에 변경 사항을 배포합니다.
+
+   >[!NOTE]
+   >
+   > CSS 및 JavaScript는 성능상의 이유로 브라우저에서 자주 캐시됩니다. 클라이언트 라이브러리에 대한 변경 사항이 즉시 표시되지 않으면 하드 새로 고침을 수행하고 브라우저의 캐시를 지웁니다. 새 캐시를 보장하기 위해 익명으로 만든 윈도우를 사용하는 것이 도움이 될 수 있습니다.
 
 ## 축하합니다!{#congratulations}
 
