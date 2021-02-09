@@ -5,9 +5,9 @@ breadcrumb-title: AEM Assets 자습서
 sub-product: 자산
 team: TM
 translation-type: tm+mt
-source-git-commit: 94ea85d4a96bf9da62c5658961474a12663ac77b
+source-git-commit: d89cd051f9fc8800d94ad11851ceaf4212f3c797
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '262'
 ht-degree: 32%
 
 ---
@@ -33,6 +33,7 @@ ht-degree: 32%
    + [기본 작업](./authoring/basic-operations.md)
    + [메타데이터](./authoring/metadata.md)
    + [표현물](./authoring/renditions.md)
+   + [관계 및 관계 없음](./authoring/relate-unrelate.md)
 
 + 협업{#collaboration}
    + [타임라인 및 받은 편지함](./collaboration/timeline-and-inbox.md)
