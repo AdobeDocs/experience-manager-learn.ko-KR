@@ -6,10 +6,10 @@ user-guide-description: 초보자 및 숙련된 AEM Forms 개발자를 위한 AE
 breadcrumb-title: AEM Forms 자습서
 index: y
 translation-type: tm+mt
-source-git-commit: 48060b4d8c4b502e0c099ae8081695f97b423037
+source-git-commit: 1e945afddda3d7735005029952a9d7ec46828bc6
 workflow-type: tm+mt
-source-wordcount: '943'
-ht-degree: 6%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 6%
 + [따라야 할 모범 사례](adaptive-forms/best-practices-adaptive-forms.md)
 + [AEM 작성자를 사용하여 OKTA 인증 설정](adaptive-forms/single-sign-on-with-okta.md)
 + [간단한 OSGi 번들 만들기](adaptive-forms/create-your-first-osgi-bundle.md)
-+ 첫 번째 적응형 양식 만들기 {#creating-your-first-adaptive-form}
++ 첫 번째 응용 양식 만들기 {#creating-your-first-adaptive-form}
    + [소개 및 설정](creating-your-first-adaptive-form/introduction-and-setup.md)
    + [적응형 양식 템플릿 만들기](creating-your-first-adaptive-form/create-adaptive-form-template.md)
    + [양식 조각 만들기](creating-your-first-adaptive-form/create-form-fragment.md)
@@ -91,7 +91,7 @@ ht-degree: 6%
    + [양식 데이터 모델 구성](prefill-fdm-db/configuring-form-data-model.md)
    + [요청 매개 변수 가져오기](prefill-fdm-db/get-request-parameter.md)
    + [적응형 양식 만들기](prefill-fdm-db/create-adaptive-form.md)
-+ 받은 편지함 사용자 지정{#inbox-customization}
++ 받은 편지함 {#inbox-customization} 사용자 정의
    + [소개](inbox-customization/introduction.md)
    + [사용자 지정 열 추가](inbox-customization/add-married-column.md)
    + [sightly 템플릿 사용](inbox-customization/use-sightly-template.md)
@@ -183,6 +183,7 @@ ht-degree: 6%
    + [4부 - 양식 데이터 모델을 사용하여 ACS 프로파일 만들기](aem-forms-with-adobe-campaign/partfour.md)
 
 + 문서 서비스 {#document-services}
+   + [PDF forms 유형](document-services/pdf-forms-and-documents.md)
    + [AEM Forms에서 어셈블러 서비스 사용](document-services/using-assembler-service-in-aem-forms.md)
    + [AEM Forms에서 감시 폴더 사용](document-services/watched-folders-document-services-article-use.md)
    + [AEM Forms에서 바코드 서비스 사용](document-services/barcode-service-adaptive-forms-article.md)
