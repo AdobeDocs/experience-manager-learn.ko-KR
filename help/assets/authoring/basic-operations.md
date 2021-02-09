@@ -1,19 +1,17 @@
 ---
 title: 기본 작업
 description: 자산 업로드, 복사, 이동 및 삭제는 물론, 폴더를 만드는 방법을 포함한 AEM Assets의 기본 작업에 대해 알아봅니다.
-sub-product: 자산
-feature: null
-topics: authoring, collaboration
-audience: author
-doc-type: feature video
-activity: use
+feature: Asset Management
+topics: Content Management
+role: Business Practitioner
+level: Beginner
 version: cloud-service
 kt: 4299
 thumbnail: 32044.jpg
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d89cd051f9fc8800d94ad11851ceaf4212f3c797
 workflow-type: tm+mt
-source-wordcount: '49'
+source-wordcount: '48'
 ht-degree: 0%
 
 ---
