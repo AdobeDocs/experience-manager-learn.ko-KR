@@ -1,19 +1,17 @@
 ---
 title: 메타데이터
 description: AEM Assets에서 메타데이터에 액세스하여 인터랙션하는 방법을 살펴봅니다.
-sub-product: 자산
-feature: null
-topics: authoring
-audience: author
-doc-type: feature video
-activity: use
+feature: Metadata
+topics: Content Management
+role: Business Practitioner
+level: Beginner
 version: cloud-service
 kt: 4303
 thumbnail: 32045.jpg
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d89cd051f9fc8800d94ad11851ceaf4212f3c797
 workflow-type: tm+mt
-source-wordcount: '25'
+source-wordcount: '24'
 ht-degree: 8%
 
 ---
