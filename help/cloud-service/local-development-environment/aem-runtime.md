@@ -10,9 +10,9 @@ audience: developer
 kt: 4678, 4677
 thumbnail: 32551.jpg
 translation-type: tm+mt
-source-git-commit: 398b9f855556fc425b034986a7f21159297dcba5
+source-git-commit: 39ea3dd6133477a52fd91ee696936cd226fce5ea
 workflow-type: tm+mt
-source-wordcount: '1614'
+source-wordcount: '1652'
 ht-degree: 1%
 
 ---
@@ -180,6 +180,10 @@ $ java -jar aem-publish-p4503.jar
 ## 로컬 AEM 런타임 중지
 
 로컬 AEM 런타임을 중지하려면 AEM 작성자 또는 게시 서비스에서 AEM 런타임을 시작하는 데 사용된 명령줄 창을 열고 `Ctrl-C`를 누릅니다. AEM이 종료될 때까지 기다립니다. 종료 프로세스가 완료되면 명령줄 프롬프트를 사용할 수 있습니다.
+
+## 선택적 로컬 AEM 런타임 설정 작업
+
++ __OSGi 구성 환경 변수 및 비밀__ 변수는  [aio CLI를 사용하는 대신 AEM 로컬 런타임에](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development) 대해 특별히 설정됩니다.
 
 ## 빠른 시작 JAR를 업데이트하는 경우
 
