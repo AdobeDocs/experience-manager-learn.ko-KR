@@ -3,9 +3,9 @@ title: AEM Assets 비디오 및 자습서
 description: Adobe Experience Manager Assets을 위한 비디오 및 자습서 모음입니다
 sub-product: 자산, 다이내믹 미디어
 translation-type: tm+mt
-source-git-commit: 94ea85d4a96bf9da62c5658961474a12663ac77b
+source-git-commit: d89cd051f9fc8800d94ad11851ceaf4212f3c797
 workflow-type: tm+mt
-source-wordcount: '227'
+source-wordcount: '230'
 ht-degree: 19%
 
 ---
@@ -17,6 +17,9 @@ Adobe Experience Manager Assets는 AEM Platform의 디지털 에셋 관리 툴�
 
 ## 새로운 기능
 
+* **[관계 및 관계 없음(비디오)](./authoring/relate-unrelate.md)**
+
+   *AEM에서 에셋 간의 관계를 설정하고 관리하는 방법을 알아봅니다.*
 
 * **[자산 게시(비디오)](./sharing/publish.md)**
 
@@ -33,10 +36,6 @@ Adobe Experience Manager Assets는 AEM Platform의 디지털 에셋 관리 툴�
 * **[워크플로우 자동 시작(비디오)](./configuring/auto-start-workflows.md)**
 
    *업로드되거나 재처리된 자산에서 AEM 워크플로우를 자동으로 호출하는 방법을 살펴봅니다.*
-
-* **[처리 프로필(비디오)](./configuring/processing-profiles.md)**
-
-   *Assets 마이크로서비스를 호출하여 에셋을 변환하는 방법 살펴보기*
 
 ## 직원 선택
 
