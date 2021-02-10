@@ -10,9 +10,9 @@ audience: developer
 kt: 5434
 thumbnail: kt-5424.jpg
 translation-type: tm+mt
-source-git-commit: a405cf14d3f71bf51e32e50c828c3216d29aa253
+source-git-commit: b9fb3cb0c12afcabf4a92ded3d7d330ac9d229d6
 workflow-type: tm+mt
-source-wordcount: '2517'
+source-wordcount: '2537'
 ht-degree: 0%
 
 ---
@@ -232,6 +232,7 @@ CLOUD SERVICE은 모든 AEM 릴리스에 최신 핵심 구성 요소 버전을 �
    1. `/var` 리소스가 필요하지 않은 경우 응용 프로그램의 일부로 배포된 컨텐츠 패키지에서 `/var` 아래의 리소스를 제거할 필요가 없습니다.
    2. `/var` 리소스가 필요한 경우 [repoinit](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#repoinit)를 사용하여 노드 구조를 정의합니다. 참조 스크립트는 AEM 작성자, AEM 게시 또는 둘 모두를 OSGi 실행 모드를 통해 타깃팅할 수 있습니다.
    3. `/var` 리소스가 AEM 작성자에만 필요하고 [repoinit](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#repoinit)을(를) 사용하여 합리적으로 모델링할 수 없는 경우, AEM 작성자 런타임 모드 폴더(`<target>/apps/example-packages/content/install.author</target>`)의 `all` 패키지에 ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html#embeddeds)만 포함하여 AEM 작성자에만 설치되는 개별 컨텐츠 패키지로 이동합니다.[
+   4. 이 [Adobe KB](https://helpx.adobe.com/in/experience-manager/kb/cm/cloudmanager-deploy-fails-due-to-sling-distribution-aem.html)에 설명된 대로 `sling-distribution-importer` 서비스 사용자에게 적절한 ACL을 제공합니다.
 
 ### Adobe 지원 사례 만들기
 
