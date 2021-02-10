@@ -9,9 +9,9 @@ activity: develop
 audience: developer
 doc-type: tutorial
 translation-type: tm+mt
-source-git-commit: 22ccd6627a035b37edb180eb4633bc3b57470c0c
+source-git-commit: c657eefa69b383c1b1a9e2845276245d3db00e6f
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
@@ -96,12 +96,12 @@ Access-Control-Request-Method,Access-Control-Request-Headers]"
 
 ## 발송자 구성 {#dispatcher-configuration}
 
-캐시된 콘텐츠에 대한 [!DNL CORS] 헤더의 캐싱 및 제공을 허용하려면 다음 구성을 모든 지원 AEM 게시 `dispatcher.any` 파일에 추가합니다.
+캐시된 컨텐츠에서 CORS 헤더의 캐싱 및 제공을 허용하려면 다음 [/clientheaders 구성](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders)을 모든 지원 AEM 게시 `dispatcher.any` 파일에 추가합니다.
 
 ```
 /cache { 
   ...
-  /headers {
+  /clientheaders {
       "Access-Control-Allow-Origin",
       "Access-Control-Expose-Headers",
       "Access-Control-Max-Age",
@@ -115,7 +115,7 @@ Access-Control-Request-Method,Access-Control-Request-Headers]"
 
 **파일을 변경한** 후 웹 서버 응용 프로그램을  `dispatcher.any` 다시 시작합니다.
 
-`/headers` 구성 업데이트 후 다음 요청에서 헤더가 적절하게 캐시되도록 하려면 캐시를 완전히 지우는 것이 필요할 수 있습니다.
+`/clientheaders` 구성 업데이트 후 다음 요청에서 헤더가 적절하게 캐시되도록 하려면 캐시를 완전히 지우는 것이 필요할 수 있습니다.
 
 ## 지원 자료 {#supporting-materials}
 
