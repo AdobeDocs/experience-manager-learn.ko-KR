@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6282
 thumbnail: KT-6282.jpg
 translation-type: tm+mt
-source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
+source-git-commit: 2d7ae5e46acb25eaaf7a1a35d9bbf20f7c14042e
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1421'
 ht-degree: 0%
 
 ---
@@ -116,7 +116,7 @@ Node.js 기반의 Asset compute 프로젝트는 강력한 [npm 모듈 에코시�
 
 >[!WARNING]
 >
->자산 조작에 대한 모든 npm 모듈이 Asset compute에서 지원되는 것은 아닙니다. ImageMagick 또는 OS 종속 라이브러리와 같은 다른 응용 프로그램의 기존 사용에 의존하는 npm 모듈입니다. JavaScript 전용 npm 모듈의 사용을 제한하는 것이 가장 좋습니다.
+>자산 조작에 대한 모든 npm 모듈이 Asset compute에서 지원되는 것은 아닙니다. ImageMagick 또는 기타 OS 종속 라이브러리와 같은 응용 프로그램의 존재를 의존하는 npm 모듈은 지원되지 않습니다. JavaScript 전용 npm 모듈의 사용을 제한하는 것이 가장 좋습니다.
 
 1. asset compute 프로젝트의 루트에서 명령줄을 열고(이 작업은 __터미널 > 새 터미널__&#x200B;을 통해 VS 코드에서 수행할 수 있음) 명령을 실행합니다.
 
