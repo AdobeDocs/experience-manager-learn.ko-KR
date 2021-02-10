@@ -1,11 +1,11 @@
 ---
-user-guide-title: AEM Assets 비디오 및 자습서
-user-guide-description: Adobe Experience Manager Assets을 위한 비디오 및 자습서 모음입니다.
-breadcrumb-title: AEM Assets 자습서
+user-guide-title: AEM Assets 비디오 및 튜토리얼
+user-guide-description: Adobe Experience Manager Assets을 위한 비디오 및 튜토리얼 모음입니다.
+breadcrumb-title: AEM Assets 튜토리얼
 sub-product: 자산
 team: TM
 translation-type: tm+mt
-source-git-commit: d89cd051f9fc8800d94ad11851ceaf4212f3c797
+source-git-commit: d302444e74f8c2a548d2e08b5ec2991cc7347324
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 32%
@@ -13,7 +13,7 @@ ht-degree: 32%
 ---
 
 
-# AEM Assets 비디오 및 자습서 {#assets}
+# AEM Assets 비디오 및 튜토리얼 {#assets}
 
 + [개요](overview.md)
 
