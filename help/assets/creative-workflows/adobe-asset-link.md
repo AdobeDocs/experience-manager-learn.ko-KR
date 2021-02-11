@@ -8,9 +8,9 @@ doc-type: feature video
 activity: use
 version: 6.4, 6.5
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 9102505bbd826e17bf924cec719d7a430eea5095
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1094'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe Creative Cloud Enterprise ID 또는 Federated ID만 사용하십시오. [Adobe 자산 링크](https://helpx.adobe.com/enterprise/using/configure-aem-for-aal-prerelease.html)에 대해 AEM을 구성해야 합니다.
+>Adobe Creative Cloud Enterprise ID 또는 Federated ID만 사용하십시오. [Adobe 자산 링크](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html)에 대해 AEM을 구성해야 합니다.
 
 
 ### Adobe 자산 링크 기능
@@ -73,8 +73,6 @@ FPO 변환은 원본 자산의 작은 대체 항목입니다. 종횡비는 같�
 * BMP
 
 AEM Assets의 특정 자산에 대해 FPO 변환을 사용할 수 없는 경우 원본 고해상도 에셋이 대신 참조됩니다. FPO 이미지의 경우 InDesign 링크 패널에 FPO 상태가 표시됩니다.
-
-
 
 ## AEM Assets{#understanding-adobe-asset-link-authentication-with-aem-assets}의 Adobe 에셋 링크 인증 이해
 
