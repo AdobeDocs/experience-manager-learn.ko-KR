@@ -1,14 +1,14 @@
 ---
-title: AEM Sites 자습서
-seo-title: AEM Sites 자습서
-description: 'Adobe Experience Manager Sites를 위한 비디오 및 자습서 모음입니다. '
-seo-description: Adobe Experience Manager Sites를 위한 비디오 및 자습서 모음입니다
+title: AEM Sites 튜토리얼
+seo-title: AEM Sites 튜토리얼
+description: 'Adobe Experience Manager Sites를 위한 비디오 및 튜토리얼 모음입니다. '
+seo-description: Adobe Experience Manager Sites를 위한 비디오 및 튜토리얼 모음입니다
 sub-product: 사이트, 컨텐츠 서비스
 translation-type: tm+mt
-source-git-commit: aa48c94413f83e794c5d062daaac85c97b451b82
+source-git-commit: ac2e937613eba4857d0f9bf8c5a39d5611157cbd
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 24%
+source-wordcount: '363'
+ht-degree: 23%
 
 ---
 
@@ -19,7 +19,11 @@ Adobe Experience Manager(AEM) Sites는 선도적인 경험 관리 플랫폼입�
 
 ## 새로운 기능
 
-* **[AEM 구성 요소를 사용하여 Adobe 클라이언트 데이터 레이어 사용자 정의](./integrations/adobe-client-data-layer/data-layer-customize.md)**
+* **[AEM Sites에서 론치 사용(비디오)](./spa-editor/spa-editor-framework-feature-video-use.md)**
+
+   *AEM Sites의 론치와 향후 릴리스를 위해 웹 사이트 컨텐츠를 준비하는 데 사용할 수 있는 방법에 대해 학습합니다.*
+
+* **[AEM 구성 요소를 사용하여 Adobe 클라이언트 데이터 레이어 사용자 정의(자습서)](./integrations/adobe-client-data-layer/data-layer-customize.md)**
 
    *사용자 정의 AEM 구성 요소의 내용으로 Adobe 클라이언트 데이터 레이어를 업데이트하는 방법을 알아봅니다.*
 
@@ -41,7 +45,7 @@ Adobe Experience Manager(AEM) Sites는 선도적인 경험 관리 플랫폼입�
 <tr>
   <td>
     <a href="https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html">
-      <img alt="AEM Sites 시작하기 - WKND 자습서" src="./assets/aem-wknd-tutorial.png" />
+      <img alt="AEM Sites 시작하기 - WKND 튜토리얼" src="./assets/aem-wknd-tutorial.png" />
     </a>
     <div>
       <a href="https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html">
@@ -88,7 +92,7 @@ Adobe Experience Manager(AEM) Sites는 선도적인 경험 관리 플랫폼입�
 * [AEM Sites 개발 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/developing/user-guide.html)
 * [AEM Sites 관리 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/administering/user-guide.html)
 * [AEM Sites 배포 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/user-guide.html)
-* [AEM as a Cloud Service 자습서](/help/cloud-service/overview.md)
-* [AEM Assets 자습서](/help/assets/overview.md)
-* [AEM Forms 자습서](/help/forms/overview.md)
-* [AEM Foundation 자습서](/help/foundation/overview.md)
+* [AEM as a Cloud Service 튜토리얼](/help/cloud-service/overview.md)
+* [AEM Assets 튜토리얼](/help/assets/overview.md)
+* [AEM Forms 튜토리얼](/help/forms/overview.md)
+* [AEM Foundation 튜토리얼](/help/foundation/overview.md)
