@@ -1,18 +1,18 @@
 ---
-user-guide-title: AEM Sites 비디오 및 자습서
-user-guide-description: Adobe Experience Manager Sites를 위한 비디오 및 자습서 모음입니다.
-breadcrumb-title: AEM Sites 자습서
+user-guide-title: AEM Sites 비디오 및 튜토리얼
+user-guide-description: Adobe Experience Manager Sites를 위한 비디오 및 튜토리얼 모음입니다.
+breadcrumb-title: AEM Sites 튜토리얼
 sub-product: 사이트
 translation-type: tm+mt
-source-git-commit: aa48c94413f83e794c5d062daaac85c97b451b82
+source-git-commit: ac2e937613eba4857d0f9bf8c5a39d5611157cbd
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 21%
+source-wordcount: '448'
+ht-degree: 22%
 
 ---
 
 
-# AEM Sites 비디오 및 자습서 {#sites}
+# AEM Sites 비디오 및 튜토리얼 {#sites}
 
 + [개요](overview.md)
 + 페이지 작성 {#page-authoring}
@@ -32,6 +32,7 @@ ht-degree: 21%
    + [편집 가능한 템플릿](page-authoring/template-editor-feature-video-use.md)
    + [스타일 시스템](page-authoring/style-system-feature-video-use.md)
    + [타임워프](page-authoring/timewarp-feature-video-use.md)
+   + [론치](page-authoring/launches.md)
 + 구성 요소 {#components}
    + [구성 요소 개발](components/component-development.md)
    + [코어 구성 요소](components/core-components-feature-video-understand.md)
@@ -41,7 +42,7 @@ ht-degree: 21%
    + [컨텐츠 조각 제공](content-fragments/content-fragments-delivery-feature-video-use.md)
    + [컨텐츠 조각으로 번역](content-fragments/content-fragments-translation-feature-video-use.md)
    + [컨텐츠 조각과 경험 조각 비교](content-fragments/understand-content-fragments-and-experience-fragments.md)
-+ 경험 조각 {#experience-fragments}
++ 경험 구성요소 {#experience-fragments}
    + [경험 조각 사용](experience-fragments/experience-fragments-feature-video-use.md)
    + [경험 조각 이해](experience-fragments/experience-fragments-feature-video-understand.md)
    + [경험 조각으로 소셜 게시 설정](experience-fragments/experience-fragments-social-technical-video-setup.md)
