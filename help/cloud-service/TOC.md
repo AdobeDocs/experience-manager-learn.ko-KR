@@ -5,10 +5,10 @@ breadcrumb-title: AEM as a Cloud Service 튜토리얼
 sub-product: 클라우드 서비스
 team: TM
 translation-type: tm+mt
-source-git-commit: 3e719ffd035623803c92ec814911413ec571ab30
+source-git-commit: 91399ff4ab26655de27bbecab4ff773f6666d86a
 workflow-type: tm+mt
-source-wordcount: '282'
-ht-degree: 29%
+source-wordcount: '320'
+ht-degree: 25%
 
 ---
 
@@ -104,10 +104,10 @@ ht-degree: 29%
       + [메타데이터 작업자](./asset-compute/advanced/metadata.md)
    + [문제 해결](./asset-compute/troubleshooting.md)
 + 다단계 Tutorials{#multi-step-tutorials}
-   + [AEM Sites 개발](./develop-wknd-tutorial.md)
-   + [GraphQL](../headless-tutorial/graphql/overview.md)
-   + [SPA 편집기(응답)](../spa-react-tutorial/overview.md)
-   + [SPA 편집기(각도)](../spa-angular-tutorial/overview.md)
-   + [AEM Sites 및 Adobe Target](../aem-target-personalization/overview.md)
-   + [토큰 기반 인증](../headless-tutorial/authentication/overview.md)
+   + [AEM Sites 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/develop-wknd-tutorial.html)
+   + [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)
+   + [SPA 편집기(응답)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html)
+   + [SPA 편집기(각도)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-angular-tutorial/overview.html)
+   + [AEM Sites 및 Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html)
+   + [토큰 기반 인증](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)
 
