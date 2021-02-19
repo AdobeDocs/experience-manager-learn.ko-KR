@@ -4,9 +4,9 @@ description: Cloud Service으로 제공되는 Adobe Experience Manager(AEM)용 �
 sub-product: 사이트, 클라우드 관리자, 파운데이션, 자산
 kt: 3289
 translation-type: tm+mt
-source-git-commit: eabd8650886fa78d9d177f3c588374a443ac1ad6
+source-git-commit: 3e719ffd035623803c92ec814911413ec571ab30
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '268'
 ht-degree: 8%
 
 ---
@@ -20,7 +20,7 @@ Adobe Experience Manager(AEM)는 이제 클라우드 서비스로 제공됩니�
 
 ## 새로운 기능
 
-* **[외부 애플리케이션에서 Cloud Service으로 AEM에 인증(자습서)](../headless-tutorial/authentication/overview.md)**
+* **[토큰 기반 인증(자습서)](../headless-tutorial/authentication/overview.md)**
 
    *HTTP를 통해 Cloud Service으로 AEM과 상호 작용하는 토큰 기반 인증을 사용하는 방법을 알아봅니다.*
 
