@@ -1,14 +1,14 @@
 ---
 user-guide-title: Adobe Experience Manager as a Cloud Service 자습서
-user-guide-description: Adobe Experience Manager as a Cloud Service를 위한 자습서 모음입니다.
-breadcrumb-title: AEM as a Cloud Service 자습서
+user-guide-description: Adobe Experience Manager as a Cloud Service를 위한 튜토리얼 모음입니다.
+breadcrumb-title: AEM as a Cloud Service 튜토리얼
 sub-product: 클라우드 서비스
 team: TM
 translation-type: tm+mt
-source-git-commit: 5ac82928d4b0bf75b348a414793c24c3aca92f36
+source-git-commit: 3e719ffd035623803c92ec814911413ec571ab30
 workflow-type: tm+mt
-source-wordcount: '270'
-ht-degree: 32%
+source-wordcount: '282'
+ht-degree: 29%
 
 ---
 
@@ -103,5 +103,11 @@ ht-degree: 32%
    + 고급{#advanced}
       + [메타데이터 작업자](./asset-compute/advanced/metadata.md)
    + [문제 해결](./asset-compute/troubleshooting.md)
++ 다단계 Tutorials{#multi-step-tutorials}
+   + [AEM Sites 개발](./develop-wknd-tutorial.md)
+   + [GraphQL](../headless-tutorial/graphql/overview.md)
+   + [SPA 편집기(응답)](../spa-react-tutorial/overview.md)
+   + [SPA 편집기(각도)](../spa-angular-tutorial/overview.md)
+   + [AEM Sites 및 Adobe Target](../aem-target-personalization/overview.md)
+   + [토큰 기반 인증](../headless-tutorial/authentication/overview.md)
 
-+ [AEM Sites 개발 시작 - WKND 자습서](./develop-wknd-tutorial.md)
