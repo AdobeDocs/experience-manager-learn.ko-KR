@@ -5,7 +5,7 @@ description: 'Adobe Experience Manager Sites를 위한 비디오 및 튜토리�
 seo-description: Adobe Experience Manager Sites를 위한 비디오 및 튜토리얼 모음입니다
 sub-product: 사이트, 컨텐츠 서비스
 translation-type: tm+mt
-source-git-commit: ac2e937613eba4857d0f9bf8c5a39d5611157cbd
+source-git-commit: 3e719ffd035623803c92ec814911413ec571ab30
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 23%
@@ -19,7 +19,7 @@ Adobe Experience Manager(AEM) Sites는 선도적인 경험 관리 플랫폼입�
 
 ## 새로운 기능
 
-* **[AEM Sites에서 론치 사용(비디오)](./spa-editor/spa-editor-framework-feature-video-use.md)**
+* **[AEM Sites에서 론치 사용(비디오)](./page-authoring/launches.md)**
 
    *AEM Sites의 론치와 향후 릴리스를 위해 웹 사이트 컨텐츠를 준비하는 데 사용할 수 있는 방법에 대해 학습합니다.*
 
