@@ -1,8 +1,8 @@
 ---
-title: SPA 통합 | AEM SPA 편집기 및 각도 시작하기
-description: 각도로 작성된 단일 페이지 애플리케이션(SPA)의 소스 코드를 AEM(Adobe Experience Manager) 프로젝트와 통합하는 방법을 알아봅니다. AEM JSON 모델 API를 통해 SPA을 신속하게 개발할 수 있도록 Angular의 CLI 툴과 같은 최신 프런트 엔드 툴을 사용하는 방법을 살펴볼 수 있습니다.
+title: SPA 통합 | AEM SPA 편집기 및 Angular 시작하기
+description: Angular에 기록된 단일 페이지 애플리케이션(SPA)의 소스 코드를 Adobe Experience Manager(AEM) 프로젝트와 통합하는 방법을 살펴봅니다. Angular의 CLI 툴과 같은 최신 프런트 엔드 툴을 사용하여 AEM JSON 모델 API를 통해 SPA을 신속하게 개발할 수 있는 방법을 살펴볼 수 있습니다.
 sub-product: 사이트
-feature: SPA Editor
+feature: SPA 편집기
 topics: development
 doc-type: tutorial
 version: cloud-service
@@ -13,7 +13,7 @@ thumbnail: 5310-spa-angular.jpg
 translation-type: tm+mt
 source-git-commit: ab5b92dd9c901075347cc521bf0abe0dfc0e5319
 workflow-type: tm+mt
-source-wordcount: '2202'
+source-wordcount: '2204'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # SPA {#integrate-spa} 통합
 
-각도로 작성된 단일 페이지 애플리케이션(SPA)의 소스 코드를 AEM(Adobe Experience Manager) 프로젝트와 통합하는 방법을 알아봅니다. AEM JSON 모델 API를 통해 SPA을 신속하게 개발할 수 있도록 웹 팩 개발 서버와 같은 최신 프런트 엔드 툴을 사용하는 방법을 살펴볼 수 있습니다.
+Angular에 기록된 단일 페이지 애플리케이션(SPA)의 소스 코드를 Adobe Experience Manager(AEM) 프로젝트와 통합하는 방법을 살펴봅니다. AEM JSON 모델 API를 통해 SPA을 신속하게 개발할 수 있도록 웹 팩 개발 서버와 같은 최신 프런트 엔드 툴을 사용하는 방법을 살펴볼 수 있습니다.
 
 ## 목표
 
@@ -100,7 +100,7 @@ AEM 프로젝트의 일부로 2개의 모듈이 생성되었습니다.`ui.apps` 
    "@angular/router": "~9.1.10",
    ```
 
-   `ui.frontend` 모듈은 라우팅이 포함된 [Angular CLI 도구](https://angular.io/cli)를 사용하여 생성된 [Angular application](https://angular.io)입니다.
+   `ui.frontend` 모듈은 라우팅을 포함하는 [Angular CLI 도구](https://angular.io/cli)를 사용하여 생성된 [Angular 응용 프로그램](https://angular.io)입니다.
 
 4. 또한 `@adobe` 앞에 추가된 세 개의 종속성이 있습니다.
 
@@ -175,7 +175,7 @@ AEM 프로젝트의 일부로 2개의 모듈이 생성되었습니다.`ui.apps` 
    $ cd aem-guides-wknd-spa/ui.frontend
    ```
 
-2. &lt; a0/>Angular CLI[ 전역적 설치 이 옵션은 Angular 구성 요소를 생성하고 ](https://angular.io/cli#installing-angular-cli)ng **명령을 통해 Angular 애플리케이션을 구축 및 제공하는 데 사용됩니다.**
+2. &lt; a0/>Angular CLI](https://angular.io/cli#installing-angular-cli) 전역적 설치 이 옵션은 Angular 구성 요소를 생성할 뿐만 아니라 **ng** 명령을 통해 Angular 애플리케이션을 구축 및 제공하는 데 사용됩니다.[
 
    ```shell
    $ npm install -g @angular/cli
@@ -183,7 +183,7 @@ AEM 프로젝트의 일부로 2개의 모듈이 생성되었습니다.`ui.apps` 
 
    >[!CAUTION]
    >
-   > 이 프로젝트에 사용되는 **@angular/cli** 버전은 **9.1.7**&#x200B;입니다. Angular CLI 버전을 동기화된 상태로 유지하는 것이 좋습니다.
+   > 이 프로젝트에 사용되는 **@angular/cli** 버전은 **9.1.7**&#x200B;입니다. Angular CLI 버전을 동기화할 것을 권장합니다.
 
 3. `ui.frontend` 폴더 내에서 Angular CLI `ng generate component` 명령을 실행하여 새 `Header` 구성 요소를 만듭니다.
 
@@ -197,7 +197,7 @@ AEM 프로젝트의 일부로 2개의 모듈이 생성되었습니다.`ui.apps` 
    UPDATE src/app/app.module.ts (1809 bytes)
    ```
 
-   이렇게 하면 `ui.frontend/src/app/components/header`에 있는 새 각도 헤더 구성 요소에 대한 뼈대가 생성됩니다.
+   이렇게 하면 `ui.frontend/src/app/components/header`에 새 Angular 헤더 구성 요소에 대한 골격이 만들어집니다.
 
 4. 원하는 IDE에서 `aem-guides-wknd-spa` 프로젝트를 엽니다. `ui.frontend/src/app/components/header` 폴더로 이동합니다.
 
@@ -214,7 +214,7 @@ AEM 프로젝트의 일부로 2개의 모듈이 생성되었습니다.`ui.apps` 
    </header>
    ```
 
-   정적 컨텐츠가 표시되므로 이 각도 구성 요소는 기본적으로 생성된 `header.component.ts`에 대한 조정이 필요하지 않습니다.
+   여기에는 정적 컨텐츠가 표시되므로 이 Angular 구성 요소는 기본적으로 생성된 `header.component.ts`에 대한 조정이 필요하지 않습니다.
 
 6. `ui.frontend/src/app/app.component.html`에서 **app.component.html** 파일을 엽니다. `app-header` 추가:
 
@@ -267,7 +267,7 @@ AEM 프로젝트의 일부로 2개의 모듈이 생성되었습니다.`ui.apps` 
 
 이전 연습에서 보듯이 클라이언트 라이브러리를 작성하고 AEM의 로컬 인스턴스에 동기화하는 작업은 몇 분 정도 소요됩니다. 최종 테스트에는 허용되지만 대부분의 SPA 개발에는 적합하지 않습니다.
 
-[웹팩 개발 서버](https://webpack.js.org/configuration/dev-server/)를 사용하여 SPA을 신속하게 개발할 수 있습니다. SPA은 AEM에서 생성된 JSON 모델을 기반으로 합니다. 이 연습에서는 AEM의 실행 중인 인스턴스의 JSON 컨텐츠가 [Angular project](https://angular.io/guide/build)에 의해 구성된 개발 서버로 **proxied**&#x200B;됩니다.
+[웹팩 개발 서버](https://webpack.js.org/configuration/dev-server/)를 사용하여 SPA을 신속하게 개발할 수 있습니다. SPA은 AEM에서 생성된 JSON 모델을 기반으로 합니다. 이 연습에서는 AEM의 실행 중인 인스턴스의 JSON 콘텐츠가 [Angular 프로젝트](https://angular.io/guide/build)에 의해 구성된 개발 서버로 **proxied**&#x200B;됩니다.
 
 1. IDE로 돌아가서 `ui.frontend/proxy.conf.json`에서 **proxy.conf.json** 파일을 엽니다.
 
@@ -285,7 +285,7 @@ AEM 프로젝트의 일부로 2개의 모듈이 생성되었습니다.`ui.apps` 
    ]
    ```
 
-   [Angular app](https://angular.io/guide/build#proxying-to-a-backend-server)은 API 요청을 프록시할 수 있는 간편한 메커니즘을 제공합니다. `context`에 지정된 패턴은 로컬 AEM quickstart인 `localhost:4502`을 통해 프록시됩니다.
+   [Angular 앱](https://angular.io/guide/build#proxying-to-a-backend-server)은 API 요청을 프록시하는 쉬운 메커니즘을 제공합니다. `context`에 지정된 패턴은 로컬 AEM quickstart인 `localhost:4502`을 통해 프록시됩니다.
 
 2. `ui.frontend/src/index.html`에서 **index.html** 파일을 엽니다. 개발 서버에서 사용하는 루트 HTML 파일입니다.
 
@@ -403,7 +403,7 @@ AEM 프로젝트의 일부로 2개의 모듈이 생성되었습니다.`ui.apps` 
        },
    ```
 
-   ![각 JSON 개발자 에셋 업데이트 폴더](assets/integrate-spa/dev-assets-update-folder.png)
+   ![Angular JSON 개발자 에셋 업데이트 폴더](assets/integrate-spa/dev-assets-update-folder.png)
 
    전용 **dev** 구성을 만들면 **comparing** 폴더가 개발 중에만 사용되고 프로덕션 빌드에서 AEM에 배포되지 않습니다.
 
