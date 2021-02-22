@@ -1,6 +1,6 @@
 ---
 title: AEM SPA 편집기 및 Angular 시작하기
-description: WKND SPA을 사용하여 AEM, Adobe Experience Manager에서 편집할 수 있는 첫 번째 각도 단일 페이지 애플리케이션(SPA)을 만듭니다. AEM SPA Editor에서 Angular JS 프레임워크를 사용하여 SPA을 만드는 방법을 살펴봅니다. 이 다중 부분 자습서는 가상 라이프스타일 브랜드인 WKND에 대한 Angular 응용 프로그램을 구현하는 과정을 안내합니다. 이 자습서에서는 SPA의 전체 생성 및 AEM와의 통합에 대해 설명합니다.
+description: WKND SPA을 사용하여 AEM, Adobe Experience Manager에서 편집할 수 있는 첫 번째 Angular 단일 페이지 애플리케이션(SPA)을 만듭니다. AEM SPA Editor를 사용하여 Angular JS 프레임워크를 사용하여 SPA을 만드는 방법을 살펴봅니다. 이 여러 부분으로 구성된 튜토리얼은 가상 라이프스타일 브랜드인 WKND에 대한 Angular 애플리케이션 구현을 안내합니다. 이 자습서에서는 SPA의 전체 생성 및 AEM와의 통합에 대해 설명합니다.
 sub-product: 사이트
 topics: development
 version: cloud-service
@@ -18,9 +18,9 @@ ht-degree: 7%
 ---
 
 
-# AEM {#introduction}에서 첫 번째 각도 SPA 만들기
+# AEM {#introduction}에서 첫 번째 Angular SPA 만들기
 
-AEM(Adobe Experience Manager)의 **SPA Editor** 기능에 대해 처음 사용하는 개발자를 위해 고안된 여러 부분으로 구성된 자습서입니다. 이 자습서에서는 가상 라이프스타일 브랜드인 WKND에 대한 Angular 응용 프로그램의 구현에 대해 설명합니다. Angular 앱은 AEM SPA Editor를 통해 배포되도록 개발되어 디자인되며 Angular 구성 요소를 AEM 구성 요소로 매핑합니다. AEM에 배포된 완성된 SPA은 AEM의 기존 인라인 편집 툴을 사용하여 동적으로 제작할 수 있습니다.
+AEM(Adobe Experience Manager)의 **SPA Editor** 기능에 대해 처음 사용하는 개발자를 위해 고안된 여러 부분으로 구성된 자습서입니다. 이 자습서에서는 가상 라이프스타일 브랜드인 WKND에 대한 Angular 응용 프로그램을 구현합니다. Angular 앱은 Angular 구성 요소를 AEM 구성 요소에 매핑하는 AEM SPA Editor를 사용하여 배포되도록 개발 및 설계되었습니다. AEM에 배포된 완성된 SPA은 AEM의 기존 인라인 편집 툴을 사용하여 동적으로 제작할 수 있습니다.
 
 ![구현된 최종 SPA](assets/wknd-spa-implementation.png)
 
@@ -28,14 +28,14 @@ AEM(Adobe Experience Manager)의 **SPA Editor** 기능에 대해 처음 사용�
 
 ## 정보
 
-이 여러 부분으로 구성된 자습서의 목표는 AEM의 SPA 편집기 기능을 사용하여 작업하도록 Angular 애플리케이션을 구현하는 방법을 개발자에게 교육하는 것입니다. 실제 시나리오에서 개발 활동은 가상 사용자로 분류되며, 종종 **프런트 엔드 개발자** 및 **백엔드 개발자**&#x200B;이 포함됩니다. AEM SPA 편집기 프로젝트에 참여하여 이 튜토리얼을 완료하는 것은 모든 개발자에게 이로운 작업이라고 생각합니다.
+이 여러 부분으로 구성된 자습서의 목적은 개발자에게 AEM의 SPA 편집기 기능과 함께 작동하도록 Angular 애플리케이션을 구현하는 방법을 교육하는 것입니다. 실제 시나리오에서 개발 활동은 가상 사용자로 분류되며, 종종 **프런트 엔드 개발자** 및 **백엔드 개발자**&#x200B;이 포함됩니다. AEM SPA 편집기 프로젝트에 참여하여 이 튜토리얼을 완료하는 것은 모든 개발자에게 이로운 작업이라고 생각합니다.
 
 이 자습서는 **AEM을 Cloud Service**&#x200B;로 사용하도록 설계되었으며 **AEM 6.5.4+** 및 **AEM 6.4.8+**&#x200B;와 역호환됩니다. SPA은 다음을 사용하여 구현됩니다.
 
 * [Maven AEM 프로젝트 원형](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/developing/archetype/overview.html)
 * [AEM SPA 편집기](https://docs.adobe.com/content/help/en/experience-manager-65/developing/headless/spas/spa-walkthrough.html#content-editing-experience-with-spa)
 * [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)
-* [각진](https://angular.io/)
+* [Angular](https://angular.io/)
 
 *자습서의 각 부분을 통과하는 데 1-2시간을 예상합니다.*
 
