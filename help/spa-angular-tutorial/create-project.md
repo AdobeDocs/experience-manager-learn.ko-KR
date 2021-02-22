@@ -1,8 +1,8 @@
 ---
-title: SPA 편집기 프로젝트 | AEM SPA 편집기 및 각도 시작하기
-description: AEM(Adobe Experience Manager) Maven 프로젝트를 AEM SPA 편집기와 통합된 각 애플리케이션의 시작점으로 사용하는 방법을 살펴봅니다.
+title: SPA 편집기 프로젝트 | AEM SPA 편집기 및 Angular 시작하기
+description: AEM(Adobe Experience Manager) Maven 프로젝트를 AEM SPA 편집기와 통합된 Angular 애플리케이션의 시작점으로 사용하는 방법을 살펴볼 수 있습니다.
 sub-product: 사이트
-feature: maven-archetype
+feature: 마반원형
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -13,7 +13,7 @@ thumbnail: 5309-spa-angular.jpg
 translation-type: tm+mt
 source-git-commit: ab5b92dd9c901075347cc521bf0abe0dfc0e5319
 workflow-type: tm+mt
-source-wordcount: '1109'
+source-wordcount: '1110'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 3%
 
 # SPA 편집기 프로젝트 {#create-project}
 
-AEM(Adobe Experience Manager) Maven 프로젝트를 AEM SPA 편집기와 통합된 각 애플리케이션의 시작점으로 사용하는 방법을 살펴봅니다.
+AEM(Adobe Experience Manager) Maven 프로젝트를 AEM SPA 편집기와 통합된 Angular 애플리케이션의 시작점으로 사용하는 방법을 살펴볼 수 있습니다.
 
 ## 목표
 
@@ -32,7 +32,7 @@ AEM(Adobe Experience Manager) Maven 프로젝트를 AEM SPA 편집기와 통합�
 
 이 장에서 새 AEM 프로젝트는 [AEM 프로젝트 원형](https://github.com/adobe/aem-project-archetype)을 기반으로 배포됩니다. AEM 프로젝트는 Angular SPA의 매우 간단한 시작점으로 부트스트윗됩니다. 이 장에서 사용되는 프로젝트는 WKND SPA의 구현을 위한 기반이 될 것이며, 향후 장에 구축될 것입니다.
 
-![WKND SPA Angular Starter 프로젝트](./assets/create-project/what-you-will-build.png)
+![WKND SPA Angular 시작 프로젝트](./assets/create-project/what-you-will-build.png)
 
 *클래식 Hello World 메시지입니다.*
 
@@ -79,7 +79,7 @@ AEM용 Maven 다중 모듈 프로젝트를 만드는 옵션은 여러 가지가 
    | 속성 | 값 |
    |-----------------|---------------------------------------|
    | aemVersion | 구름 |
-   | appTitle | WKND SPA 각도 |
+   | appTitle | WKND SPA Angular |
    | appId | wknd-spa-angular |
    | groupId | com.adobe.aem.guides |
    | frontendModule | 각진 |
@@ -88,7 +88,7 @@ AEM용 Maven 다중 모듈 프로젝트를 만드는 옵션은 여러 가지가 
 
    >[!NOTE]
    >
-   > `frontendModule=angular` 속성을 확인합니다. 이렇게 하면 AEM SPA 편집기에 사용할 시작 [Angular code base](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html)로 프로젝트를 부트스트래핑할 AEM 프로젝트 원형이 표시됩니다.
+   > `frontendModule=angular` 속성을 확인합니다. 이렇게 하면 AEM SPA 편집기에 사용할 시작 [Angular 코드 기준](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html)으로 프로젝트를 부트스트래핑할 AEM 프로젝트 원형이 표시됩니다.
 
 ## 프로젝트 빌드
 
@@ -192,7 +192,7 @@ AEM용 Maven 다중 모듈 프로젝트를 만드는 옵션은 여러 가지가 
    ...
    ```
 
-   `clientlib-angular.min.js` 는 페이지로 로드되고 컨텐츠를 렌더링할 책임이 있는 각 SPA입니다.
+   `clientlib-angular.min.js` 는 페이지로 로드되고 컨텐츠를 렌더링할 책임이 있는 Angular SPA입니다.
 
    *컨텐츠는 어디에서 오나요?*
 
