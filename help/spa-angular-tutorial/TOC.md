@@ -7,7 +7,7 @@ activity: develop
 audience: developer
 user-guide-title: AEM SPA 편집기 및 Angular 시작하기
 user-guide-description: AEM에서 WKND SPA를 사용하여 편집할 수 있는 첫 번째 Angular Single Page Application(SPA)을 개발합니다.
-breadcrumb-title: AEM SPA Editor 및 Angular 자습서
+breadcrumb-title: AEM SPA Editor 및 Angular 튜토리얼
 translation-type: tm+mt
 source-git-commit: 172a1369cb572b367c78e04c692db8e02e7287e7
 workflow-type: tm+mt
