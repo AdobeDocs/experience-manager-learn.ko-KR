@@ -1,8 +1,8 @@
 ---
-title: 사용자 지정 구성 요소 만들기 | AEM SPA 편집기 및 각도 시작하기
+title: 사용자 지정 구성 요소 만들기 | AEM SPA 편집기 및 Angular 시작하기
 description: AEM SPA 편집기에 사용할 사용자 정의 구성 요소를 만드는 방법을 알아봅니다. 작성 대화 상자와 Sling Models를 개발하여 JSON 모델을 확장하여 사용자 정의 구성 요소를 채우는 방법을 알아봅니다.
 sub-product: 사이트
-feature: SPA Editor
+feature: SPA 편집기
 doc-type: tutorial
 topics: development
 version: cloud-service
@@ -13,7 +13,7 @@ thumbnail: 5831-spa-angular.jpg
 translation-type: tm+mt
 source-git-commit: 1fd4d31770a4eac37a88a7c6960fd51845601bee
 workflow-type: tm+mt
-source-wordcount: '1505'
+source-wordcount: '1507'
 ht-degree: 1%
 
 ---
@@ -204,7 +204,7 @@ SPA Editor 컨텍스트에서 Sling Models는 [Sling Model Exporter](https://doc
    static final String RESOURCE_TYPE = "wknd-spa-angular/components/custom-component";
    ```
 
-   구성 요소의 리소스 유형은 Sling 모델을 AEM 구성 요소에 바인딩하고 최종적으로 각도 구성 요소에 매핑되는 것입니다.
+   구성 요소의 리소스 유형은 Sling 모델을 AEM 구성 요소에 바인딩하고 궁극적으로 Angular 구성 요소에 매핑되는 것입니다.
 
 6. `getExportedType()` 메서드를 `CustomComponentImpl` 클래스에 추가하여 구성 요소 리소스 유형을 반환합니다.
 
@@ -238,9 +238,9 @@ SPA Editor 컨텍스트에서 Sling Models는 [Sling Model Exporter](https://doc
    >
    > [완료된 CustomComponentImpl.java는 여기에서 볼 수 있습니다](https://github.com/adobe/aem-guides-wknd-spa/blob/Angular/custom-component-solution/core/src/main/java/com/adobe/aem/guides/wknd/spa/angular/core/models/impl/CustomComponentImpl.java).
 
-## 각도 구성 요소 업데이트
+## Angular 구성 요소 업데이트
 
-사용자 지정 구성 요소에 대한 각 코드가 이미 만들어졌습니다. 그런 다음 각도 구성 요소를 AEM 구성 요소에 매핑하기 위해 몇 가지 업데이트를 수행합니다.
+사용자 지정 구성 요소에 대한 Angular 코드가 이미 만들어졌습니다. 다음으로 Angular 구성 요소를 AEM 구성 요소에 매핑하기 위해 몇 가지 업데이트를 수행합니다.
 
 1. `ui.frontend` 모듈에서 `ui.frontend/src/app/components/custom/custom.component.ts` 파일을 엽니다.
 2. `@Input() message: string;` 행을 관찰합니다. 변형된 대문자 값이 이 변수에 매핑되어야 합니다.
