@@ -1,8 +1,8 @@
 ---
-title: SPA 구성 요소를 AEM 구성 요소에 매핑 | AEM SPA 편집기 및 각도 시작하기
-description: AEM SPA Editor JS SDK를 사용하여 Angular 구성 요소를 Adobe Experience Manager(AEM) 구성 요소에 매핑하는 방법을 알아봅니다. 구성 요소 매핑을 사용하면 AEM SPA Editor 내에서 SPA 구성 요소에 대한 동적 업데이트를 일반적인 AEM 작성과 유사합니다.
+title: SPA 구성 요소를 AEM 구성 요소에 매핑 | AEM SPA 편집기 및 Angular 시작하기
+description: AEM SPA Editor JS SDK를 사용하여 Angular 구성 요소를 AEM(Adobe Experience Manager) 구성 요소에 매핑하는 방법을 알아봅니다. 구성 요소 매핑을 사용하면 AEM SPA Editor 내에서 SPA 구성 요소에 대한 동적 업데이트를 일반적인 AEM 작성과 유사합니다.
 sub-product: 사이트
-feature: SPA Editor
+feature: SPA 편집기
 topics: development
 doc-type: tutorial
 version: cloud-service
@@ -13,7 +13,7 @@ thumbnail: 5311-spa-angular.jpg
 translation-type: tm+mt
 source-git-commit: 28b5522e094a41d81116acb923dc0390478e2308
 workflow-type: tm+mt
-source-wordcount: '2387'
+source-wordcount: '2389'
 ht-degree: 1%
 
 ---
@@ -21,15 +21,15 @@ ht-degree: 1%
 
 # SPA 구성 요소를 AEM 구성 요소 {#map-components}에 매핑
 
-AEM SPA Editor JS SDK를 사용하여 Angular 구성 요소를 Adobe Experience Manager(AEM) 구성 요소에 매핑하는 방법을 알아봅니다. 구성 요소 매핑을 사용하면 AEM SPA Editor 내에서 SPA 구성 요소에 대한 동적 업데이트를 일반적인 AEM 작성과 유사합니다.
+AEM SPA Editor JS SDK를 사용하여 Angular 구성 요소를 AEM(Adobe Experience Manager) 구성 요소에 매핑하는 방법을 알아봅니다. 구성 요소 매핑을 사용하면 AEM SPA Editor 내에서 SPA 구성 요소에 대한 동적 업데이트를 일반적인 AEM 작성과 유사합니다.
 
-이 장에서는 AEM JSON 모델 API에 대해 자세히 설명하고 AEM 구성 요소에 의해 노출된 JSON 컨텐츠를 Angular 구성 요소에 prop으로 자동으로 주입하는 방법을 살펴봅니다.
+이 장에서는 AEM JSON 모델 API에 대해 자세히 설명하고 AEM 구성 요소에 의해 노출되는 JSON 콘텐츠를 Angular 구성 요소에 prop으로 자동으로 주입하는 방법을 살펴봅니다.
 
 ## 목표
 
 1. AEM 구성 요소를 SPA 구성 요소에 매핑하는 방법을 알아봅니다.
 2. **Container** 구성 요소와 **Content** 구성 요소 간의 차이점을 이해합니다.
-3. 기존 AEM 구성 요소에 매핑되는 새 각도 구성 요소를 만듭니다.
+3. 기존 AEM 구성 요소에 매핑되는 새 Angular 구성 요소를 만듭니다.
 
 ## 구축 분야
 
@@ -69,13 +69,13 @@ AEM SPA Editor JS SDK를 사용하여 Angular 구성 요소를 Adobe Experience 
 
 기본 개념은 SPA 구성 요소를 AEM 구성 요소에 매핑하는 것입니다. AEM 구성 요소, 서버측 실행, JSON 모델 API의 일부로 컨텐츠 내보내기 JSON 콘텐츠는 SPA이 브라우저에서 클라이언트측을 실행하여 사용합니다. SPA 구성 요소와 AEM 구성 요소 간 1:1 매핑이 만들어집니다.
 
-![AEM 구성 요소를 각 구성 요소에 매핑하는 높은 수준의 개요](./assets/map-components/high-level-approach.png)
+![AEM 구성 요소를 Angular 구성 요소에 매핑하는 개요](./assets/map-components/high-level-approach.png)
 
-*AEM 구성 요소를 각 구성 요소에 매핑하는 높은 수준의 개요*
+*AEM 구성 요소를 Angular 구성 요소에 매핑하는 개요*
 
 ## Inspect the Text Component
 
-[AEM 프로젝트 원형](https://github.com/adobe/aem-project-archetype)은 AEM [텍스트 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/text.html)에 매핑되는 `Text` 구성 요소를 제공합니다. AEM에서 *content*&#x200B;를 렌더링하기 위한 **content** 구성 요소의 예입니다.
+[AEM 프로젝트 원형](https://github.com/adobe/aem-project-archetype)은 AEM [텍스트 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/text.html)에 매핑되는 `Text` 구성 요소를 제공합니다. AEM에서 *content*&#x200B;를 렌더링한다는 점에서 **content** 구성 요소의 예입니다.
 
 구성 요소의 작동 방식을 살펴보겠습니다.
 
@@ -90,7 +90,7 @@ AEM SPA Editor JS SDK를 사용하여 Angular 구성 요소를 Adobe Experience 
 
    `:type` 는 AEM 구성 요소의  `sling:resourceType` (또는 경로)를 나열하는 예약된 속성입니다. `:type` 값은 AEM 구성 요소를 SPA 구성 요소에 매핑하는 데 사용되는 값입니다.
 
-   `text` spa  `richText` 구성 요소에 노출되는 추가 속성입니다.
+   `text` SPA  `richText` 구성 요소에 노출되는 추가 속성입니다.
 
 ### Inspect the Text 구성 요소
 
@@ -109,7 +109,7 @@ AEM SPA Editor JS SDK를 사용하여 Angular 구성 요소를 Adobe Experience 
 
 3. 원하는 IDE에서 WKND SPA용 AEM 프로젝트를 엽니다. `ui.frontend` 모듈을 확장하고 `ui.frontend/src/app/components/text/text.component.ts` 아래의 **text.component.ts** 파일을 엽니다.
 
-   ![Text.js 각 구성 요소 소스 코드](assets/map-components/vscode-ide-text-js.png)
+   ![Text.js Angular 구성 요소 소스 코드](assets/map-components/vscode-ide-text-js.png)
 
 4. 검사할 첫 번째 영역은 ~line 35의 `class TextComponent`입니다.
 
@@ -132,7 +132,7 @@ AEM SPA Editor JS SDK를 사용하여 Angular 구성 요소를 Adobe Experience 
 
    [@Input()](https://angular.io/api/core/Input) decorator는 앞에서 검토한 매핑된 JSON 개체를 통해 값이 설정된 필드를 선언하는 데 사용됩니다.
 
-   `@HostBinding('innerHtml') get content()` 은 의 값에서 제작된 텍스트 컨텐츠를 표시하는  `this.text`메서드입니다. 내용이 리치 텍스트인 경우(`this.richText` 플래그를 통해 결정) Angular의 내장 보안을 건너뜁니다. Angular의 [DomWidden](https://angular.io/api/platform-browser/DomSanitizer)은 원시 HTML을 &quot;스크러빙&quot;하고 크로스 사이트 스크립팅 취약점을 방지하는 데 사용됩니다. 이 메서드는 [@HostBinding](https://angular.io/api/core/HostBinding) 장식기를 사용하여 `innerHtml` 속성에 바인딩됩니다.
+   `@HostBinding('innerHtml') get content()` 은 의 값에서 제작된 텍스트 컨텐츠를 표시하는  `this.text`메서드입니다. 컨텐츠가 풍부한 텍스트인 경우(`this.richText` 플래그를 통해 결정) Angular의 기본 제공 보안을 건너뜁니다. Angular의 [DomVeridesizer](https://angular.io/api/platform-browser/DomSanitizer)는 원시 HTML을 &quot;스크러빙&quot;하고 크로스 사이트 스크립팅 취약점을 방지하는 데 사용됩니다. 이 메서드는 [@HostBinding](https://angular.io/api/core/HostBinding) 장식기를 사용하여 `innerHtml` 속성에 바인딩됩니다.
 
 5. 다음 검사: ~line 24의 `TextEditConfig`:
 
@@ -199,7 +199,7 @@ AEM SPA Editor JS SDK를 사용하여 Angular 구성 요소를 Adobe Experience 
 
 ## 이미지 구성 요소 만들기
 
-다음으로 AEM [이미지 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/image.html)에 매핑되는 `Image` 각도 구성 요소를 만듭니다. `Image` 구성 요소는 **content** 구성 요소의 또 다른 예입니다.
+다음으로 AEM [이미지 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/image.html)에 매핑되는 `Image` Angular 구성 요소를 만듭니다. `Image` 구성 요소는 **content** 구성 요소의 또 다른 예입니다.
 
 ### JSON을 위한 Inspect
 
@@ -363,7 +363,7 @@ SPA 코드로 이동하기 전에 AEM에서 제공하는 JSON 모델을 검사�
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-2. AEM 시작 화면에서 **[!UICONTROL 도구]** > **[!UICONTROL 템플릿]** > **[WKND SPA 각도](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf/wknd-spa-angular)**&#x200B;로 이동합니다.
+2. AEM 시작 화면에서 **[!UICONTROL 도구]** > **[!UICONTROL 템플릿]** > **[WKND SPA Angular](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf/wknd-spa-angular)**&#x200B;으로 이동합니다.
 
    **SPA 페이지**&#x200B;를 선택하고 편집합니다.
 
@@ -373,11 +373,11 @@ SPA 코드로 이동하기 전에 AEM에서 제공하는 JSON 모델을 검사�
 
    ![레이아웃 컨테이너 정책](./assets/map-components/layout-container-policy.png)
 
-4. **허용된 구성 요소** > **WKND SPA 각도 - 컨텐츠** > **이미지** 구성 요소 선택:
+4. **허용된 구성 요소** > **WKND SPA Angular - 컨텐트** > **이미지** 구성 요소 선택:
 
    ![선택한 이미지 구성 요소](assets/map-components/check-image-component.png)
 
-   **기본 구성 요소** > **매핑 추가**&#x200B;에서 **이미지 - WKND SPA 각도 - 컨텐츠** 구성 요소를 선택합니다.
+   **기본 구성 요소** > **매핑 추가**&#x200B;에서 **이미지 - WKND SPA Angular - 내용** 구성 요소 선택:
 
    ![기본 구성 요소 설정](assets/map-components/default-components.png)
 
@@ -419,7 +419,7 @@ SPA 코드로 이동하기 전에 AEM에서 제공하는 JSON 모델을 검사�
 
 레이아웃 컨테이너를 더 자세히 살펴보죠.
 
-1. IDE에서 **responsive-grid.component.ts**&#x200B;를 엽니다.`ui.frontend/src/app/components/responsive-grid`
+1. IDE에서 `ui.frontend/src/app/components/responsive-grid`responsive-grid.component.ts **를 엽니다.**
 
    ```js
    import { AEMResponsiveGridComponent,MapTo } from '@adobe/cq-angular-editable-components';
@@ -463,7 +463,7 @@ SPA 코드로 이동하기 전에 AEM에서 제공하는 JSON 모델을 검사�
 
 ### 다음 단계 {#next-steps}
 
-[탐색 및 라우팅](navigation-routing.md)  - SPA Editor SDK를 사용하여 AEM 페이지에 매핑하여 SPA에서 여러 보기를 지원하는 방법을 알아봅니다. 동적 탐색은 각도 라우터를 사용하여 구현되고 기존 헤더 구성 요소에 추가됩니다.
+[탐색 및 라우팅](navigation-routing.md)  - SPA Editor SDK를 사용하여 AEM 페이지에 매핑하여 SPA에서 여러 보기를 지원하는 방법을 알아봅니다. 동적 탐색은 Angular 라우터를 사용하여 구현되고 기존 헤더 구성 요소에 추가됩니다.
 
 ## 추가 - 소스 제어 {#bonus}(으)로 구성 유지
 
