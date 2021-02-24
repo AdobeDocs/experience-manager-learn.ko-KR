@@ -20,7 +20,7 @@ ht-degree: 7%
 
 # AEM {#introduction}에서 첫 번째 Angular SPA 만들기
 
-AEM(Adobe Experience Manager)의 **SPA Editor** 기능에 대해 처음 사용하는 개발자를 위해 고안된 여러 부분으로 구성된 자습서입니다. 이 자습서에서는 가상 라이프스타일 브랜드인 WKND에 대한 Angular 응용 프로그램을 구현합니다. Angular 앱은 Angular 구성 요소를 AEM 구성 요소에 매핑하는 AEM SPA Editor를 사용하여 배포되도록 개발 및 설계되었습니다. AEM에 배포된 완성된 SPA은 AEM의 기존 인라인 편집 툴을 사용하여 동적으로 제작할 수 있습니다.
+AEM(Adobe Experience Manager)의 **SPA Editor** 기능에 대해 처음 사용하는 개발자를 위해 고안된 여러 부분으로 구성된 자습서입니다. 이 자습서에서는 가상 라이프스타일 브랜드인 WKND에 대한 Angular 응용 프로그램을 구현합니다. angular 앱은 Angular 구성 요소를 AEM 구성 요소에 매핑하는 AEM SPA Editor를 사용하여 배포되도록 개발 및 설계되었습니다. AEM에 배포된 완성된 SPA은 AEM의 기존 인라인 편집 툴을 사용하여 동적으로 제작할 수 있습니다.
 
 ![구현된 최종 SPA](assets/wknd-spa-implementation.png)
 
