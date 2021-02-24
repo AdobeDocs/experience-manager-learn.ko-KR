@@ -1,21 +1,21 @@
 ---
 user-guide-title: AEM 헤드리스 시작하기
-user-guide-description: AEM Headless를 사용하여 컨텐츠를 작성하고 노출하는 방법을 소개하는 종단간 자습서입니다.
-breadcrumb-title: AEM 헤드리스 자습서
+user-guide-description: AEM Headless를 사용하여 컨텐츠를 작성하고 노출하는 방법을 소개하는 종단간 튜토리얼입니다.
+breadcrumb-title: AEM 헤드리스 튜토리얼
 version: cloud-service
 sub-product: 컨텐츠 서비스
 doc-type: tutorial
-feature: content-fragment, core-components
+feature: 컨텐츠 조각, 핵심 구성 요소
 topics: content-delivery
 audience: architect, developer, implementer
 activity: develop, understand
 kt: 2963
 index: y
 translation-type: tm+mt
-source-git-commit: eabd8650886fa78d9d177f3c588374a443ac1ad6
+source-git-commit: ce4a35f763862c6d6a42795fd5e79d9c59ff645a
 workflow-type: tm+mt
-source-wordcount: '103'
-ht-degree: 31%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -40,6 +40,7 @@ ht-degree: 31%
    + [4 - GraphQL API 탐색](./graphql/explore-graphql-api.md)
    + [5 - 외부 앱에서 쿼리](./graphql/graphql-and-external-app.md)
    + [6 - 조각 참조를 사용한 고급 데이터 모델링](./graphql/fragment-references.md)
+   + [7 - 제작 배포](./graphql/production-deployment.md)
 + 토큰 기반 인증 {#authentication}
    + [개요](./authentication/overview.md)
    + [1 - 로컬 개발 액세스 토큰](./authentication/local-development-access-token.md)
