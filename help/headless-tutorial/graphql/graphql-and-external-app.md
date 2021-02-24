@@ -11,7 +11,7 @@ mini-toc-levels: 1
 kt: 6716
 thumbnail: KT-6716.jpg
 translation-type: tm+mt
-source-git-commit: 8c5b425e6dcf23cbef042097f17db9e51bdf63c9
+source-git-commit: ce4a35f763862c6d6a42795fd5e79d9c59ff645a
 workflow-type: tm+mt
 source-wordcount: '1397'
 ht-degree: 0%
@@ -68,7 +68,7 @@ React 응용 프로그램을 시작하는 것은 [빠른 설정](./setup.md) 장
 
 1. [http://localhost:3000/](http://localhost:3000/)에서 앱을 검토합니다. 샘플 React 앱에는 두 가지 주요 부분이 있습니다.
 
-   * 홈 경험은 WKND Adventure의 색인 역할을 하지만 GraphQL을 사용하여 AEM의 __Adventure__ 컨텐츠 조각을 쿼리합니다. 이 장에서는 활동별 모험 필터링을 지원하도록 이 보기를 수정합니다.
+   * 홈 경험은 GraphQL을 사용하여 AEM의 __Adventure__ 컨텐츠 조각을 쿼리하여 WKND Adventure의 색인 역할을 합니다. 이 장에서는 활동별 모험 필터링을 지원하도록 이 보기를 수정합니다.
 
       ![WKND GraphQL 반응형 앱 - 홈 경험](./assets/graphql-and-external-app/react-home-view.png)
 
@@ -238,7 +238,7 @@ React 응용 프로그램을 시작하는 것은 [빠른 설정](./setup.md) 장
    }
    ```
 
-1. 목록에 대한 모험을 제공하기 위해 매개 변수화된 새 `filterQuery(activity)`을 호출하는 단추를 추가하려면 Repeat Adventure 구성 요소의 `return` 문을 업데이트합니다.
+1. 목록에 대한 모험을 제공하기 위해 새 매개 변수화된 `filterQuery(activity)`을 호출하는 단추를 추가하려면 Repeat Adventure 구성 요소의 `return` 문을 업데이트합니다.
 
    ```javascript
    function Adventures() {
