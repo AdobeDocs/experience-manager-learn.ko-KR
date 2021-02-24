@@ -5,10 +5,10 @@ breadcrumb-title: AEM as a Cloud Service 튜토리얼
 sub-product: 클라우드 서비스
 team: TM
 translation-type: tm+mt
-source-git-commit: 91399ff4ab26655de27bbecab4ff773f6666d86a
+source-git-commit: c7b3a6e408e46338a6a540c6403601be8c0893e2
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 25%
+source-wordcount: '329'
+ht-degree: 24%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 25%
       + [테스트 결과 분석](./cloud-manager/devops/analyze-test-results.md)
       + [발송자 구성](./cloud-manager/devops/dispatcher-configurations.md)
       + [클라우드 관리자 API](./cloud-manager/devops/cloud-manager-apis.md)
-+ 로컬 개발 환경 설정 {#local-development-environment-set-up}
++ 로컬 개발 환경 설정 {#local-development-environment-setup}
    + [개요](./local-development-environment/overview.md)
    + [개발 도구](./local-development-environment/development-tools.md)
    + [로컬 AEM 런타임](./local-development-environment/aem-runtime.md)
@@ -58,6 +58,7 @@ ht-degree: 25%
       + [컨텐츠 게시](./developing/basics/content-publishing.md)
       + [OSGi 구성](./developing/basics/osgi-configurations.md)
       + [발송자 구성 마이그레이션](./developing/basics/dispatcher-configuration.md)
+   + [AEM SDK API JavaDocs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/)
 + AEM{#debugging} 디버깅
    + AEM SDK 디버깅{#debugging-aem-sdk}
       + [개요](./debugging/aem-sdk-local-quickstart/overview.md)
@@ -107,7 +108,7 @@ ht-degree: 25%
    + [AEM Sites 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/develop-wknd-tutorial.html)
    + [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)
    + [SPA 편집기(응답)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html)
-   + [SPA 편집기(각도)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-angular-tutorial/overview.html)
+   + [SPA 편집기(Angular)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-angular-tutorial/overview.html)
    + [AEM Sites 및 Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html)
    + [토큰 기반 인증](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)
 
