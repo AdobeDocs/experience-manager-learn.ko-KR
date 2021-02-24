@@ -238,7 +238,7 @@ SPA Editor 컨텍스트에서 Sling Models는 [Sling Model Exporter](https://doc
    >
    > [완료된 CustomComponentImpl.java는 여기에서 볼 수 있습니다](https://github.com/adobe/aem-guides-wknd-spa/blob/Angular/custom-component-solution/core/src/main/java/com/adobe/aem/guides/wknd/spa/angular/core/models/impl/CustomComponentImpl.java).
 
-## Angular 구성 요소 업데이트
+## angular 구성 요소 업데이트
 
 사용자 지정 구성 요소에 대한 Angular 코드가 이미 만들어졌습니다. 다음으로 Angular 구성 요소를 AEM 구성 요소에 매핑하기 위해 몇 가지 업데이트를 수행합니다.
 
