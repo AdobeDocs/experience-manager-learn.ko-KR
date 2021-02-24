@@ -5,7 +5,7 @@ breadcrumb-title: AEM as a Cloud Service 튜토리얼
 sub-product: 클라우드 서비스
 team: TM
 translation-type: tm+mt
-source-git-commit: c7b3a6e408e46338a6a540c6403601be8c0893e2
+source-git-commit: 59b786d95d1428916adad37ceca4412b93463e9b
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 24%
@@ -42,7 +42,7 @@ ht-degree: 24%
       + [테스트 결과 분석](./cloud-manager/devops/analyze-test-results.md)
       + [발송자 구성](./cloud-manager/devops/dispatcher-configurations.md)
       + [클라우드 관리자 API](./cloud-manager/devops/cloud-manager-apis.md)
-+ 로컬 개발 환경 설정 {#local-development-environment-setup}
++ 로컬 개발 환경 설정 {#local-development-environment-set-up}
    + [개요](./local-development-environment/overview.md)
    + [개발 도구](./local-development-environment/development-tools.md)
    + [로컬 AEM 런타임](./local-development-environment/aem-runtime.md)
