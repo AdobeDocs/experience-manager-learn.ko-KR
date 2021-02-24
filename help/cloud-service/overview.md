@@ -4,10 +4,10 @@ description: Cloud Service으로 제공되는 Adobe Experience Manager(AEM)용 �
 sub-product: 사이트, 클라우드 관리자, 파운데이션, 자산
 kt: 3289
 translation-type: tm+mt
-source-git-commit: 3e719ffd035623803c92ec814911413ec571ab30
+source-git-commit: ce4a35f763862c6d6a42795fd5e79d9c59ff645a
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 8%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -20,9 +20,13 @@ Adobe Experience Manager(AEM)는 이제 클라우드 서비스로 제공됩니�
 
 ## 새로운 기능
 
-* **[토큰 기반 인증(자습서)](../headless-tutorial/authentication/overview.md)**
+* **[토큰 기반 인증(자습서)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)**
 
    *HTTP를 통해 Cloud Service으로 AEM과 상호 작용하는 토큰 기반 인증을 사용하는 방법을 알아봅니다.*
+
+* **[헤드리스 GraphQL(자습서)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)**
+
+   *AEM GraphQL API를 사용하여 외부 애플리케이션에서 경험을 향상시키는 방법을 알아봅니다.*
 
 * **[벌크 가져오기(비디오)](./migration/bulk-import.md)**
 
@@ -35,11 +39,6 @@ Adobe Experience Manager(AEM)는 이제 클라우드 서비스로 제공됩니�
 * **[asset compute 마이크로서비스 확장성(자습서)](./asset-compute/overview.md)**
 
    *사용자 정의 에셋 표현물을 생성하기 위해 Asset compute 작업자를 개발하는 방법에 대해 알아봅니다.*
-
-* **[AEM에 대한 액세스를 Cloud Service으로 구성(자습서)](./accessing/overview.md)**
-
-   *AEM에 액세스할 수 있도록 Adobe Admin Console에서 IMS 사용자를 구성하는 방법에 대해 알아봅니다.*
-
 
 ## 직원 선택
 
