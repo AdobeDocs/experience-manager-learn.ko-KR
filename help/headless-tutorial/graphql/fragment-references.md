@@ -11,9 +11,9 @@ mini-toc-levels: 1
 kt: 6718
 thumbnail: KT-6718.jpg
 translation-type: tm+mt
-source-git-commit: 8c5b425e6dcf23cbef042097f17db9e51bdf63c9
+source-git-commit: ce4a35f763862c6d6a42795fd5e79d9c59ff645a
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '848'
 ht-degree: 1%
 
 ---
@@ -234,13 +234,10 @@ Adventure 컨텐츠 조각 모델을 업데이트하여 콘텐츠 작가 모델�
 
    ![앱에 추가된 콘텐츠 작가](assets/fragment-references/contributor-added-detail.png)
 
-## 추가 리소스
-
-컨텐츠 조각 및 GraphQL에 대한 자세한 내용은 다음 리소스를 참조하십시오.
-
-* [GraphQL이 있는 컨텐츠 조각을 사용하여 헤드리스 컨텐츠 전달](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-graphql.html)
-* [컨텐츠 조각에 사용할 AEM GraphQL API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html)
-
 ## 축하합니다!{#congratulations}
 
 축하합니다! 기존 컨텐츠 조각 모델을 업데이트하여 **조각 참조** 필드를 사용하여 중첩된 컨텐츠 조각을 참조합니다. 참조된 모델의 필드를 포함하도록 GraphQL 쿼리를 수정하는 방법도 알아보았습니다.
+
+## 다음 단계 {#next-steps}
+
+다음 장의 헤드리스 응용 프로그램에 대한 권장 배포 패턴과 AEM 게시 환경](./production-deployment.md)을 사용하는 제작 배포에서 AEM 작성자 및 게시 서비스에 대해 알아보고, [ 기존 응용 프로그램을 업데이트하여 환경 변수를 사용하여 대상 환경을 기반으로 GraphQL 끝점을 동적으로 변경합니다. 또한 CORS(Cross-Origin Resource Sharing)를 위해 AEM을 제대로 구성하는 방법도 알아봅니다.
