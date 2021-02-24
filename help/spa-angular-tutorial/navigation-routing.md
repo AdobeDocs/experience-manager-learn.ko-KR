@@ -313,7 +313,7 @@ AEM 페이지 및 SPA 편집기 SDK를 사용하여 SPA에서 여러 보기가 �
 
    AEM 페이지의 계층 속성은 탐색 메뉴를 채우는 데 사용할 수 있는 JSON에서 모델링됩니다. `Header` 구성 요소는 [내비게이션 코어 구성 요소](https://www.aemcomponents.dev/content/core-components-examples/library/templating/navigation.html)의 모든 기능을 상속하며 JSON을 통해 노출된 컨텐츠는 Angular `@Input` 주석에 자동으로 매핑됩니다.
 
-2. 새 터미널 창을 열고 SPA 프로젝트의 `ui.frontend` 폴더로 이동합니다. Angular CLI 도구를 사용하여 새 `NavigationComponent`을 만듭니다.
+2. 새 터미널 창을 열고 SPA 프로젝트의 `ui.frontend` 폴더로 이동합니다. angular CLI 도구를 사용하여 새 `NavigationComponent`을 만듭니다.
 
    ```shell
    $ cd ui.frontend
@@ -700,7 +700,7 @@ AEM 페이지 및 SPA 편집기 SDK를 사용하여 SPA에서 여러 보기가 �
 
    >[!CAUTION]
    >
-   > Angular 프로젝트에 매우 엄격한 선형규칙이 활성화되어 있습니다. 마웬 빌드가 실패할 경우 오류를 확인하고 나열된 파일에 있는 **라인 오류를 찾습니다.**. 린터에서 발견된 문제를 수정하고 [maven] 명령을 다시 실행합니다.
+   > angular 프로젝트에 매우 엄격한 선형규칙이 활성화되어 있습니다. 마웬 빌드가 실패할 경우 오류를 확인하고 나열된 파일에 있는 **라인 오류를 찾습니다.**. 린터에서 발견된 문제를 수정하고 [maven] 명령을 다시 실행합니다.
 
 2. AEM에서 SPA 홈 페이지로 이동:[http://localhost:4502/content/wknd-spa-angular/us/en/home.html](http://localhost:4502/content/wknd-spa-angular/us/en/home.html)을(를) 사용하여 브라우저의 개발자 도구를 엽니다. 아래 스크린샷은 Google Chrome 브라우저에서 캡처됩니다.
 
