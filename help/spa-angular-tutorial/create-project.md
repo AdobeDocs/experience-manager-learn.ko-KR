@@ -82,7 +82,7 @@ AEM용 Maven 다중 모듈 프로젝트를 만드는 옵션은 여러 가지가 
    | appTitle | WKND SPA Angular |
    | appId | wknd-spa-angular |
    | groupId | com.adobe.aem.guides |
-   | frontendModule | 각진 |
+   | frontendModule | angular |
    | package | com.adobe.aem.guides.wknd.spa.angular |
    | includeExamples | n |
 
