@@ -11,9 +11,9 @@ mini-toc-levels: 1
 kt: 6714
 thumbnail: KT-6714.jpg
 translation-type: tm+mt
-source-git-commit: 8c5b425e6dcf23cbef042097f17db9e51bdf63c9
+source-git-commit: ce4a35f763862c6d6a42795fd5e79d9c59ff645a
 workflow-type: tm+mt
-source-wordcount: '1009'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 AEM의 GraphQL API는 콘텐츠 조각의 데이터를 다운스트림 애플리케이션에 표시하는 강력한 쿼리 언어를 제공합니다. 컨텐츠 조각 모델은 컨텐츠 조각에 사용되는 데이터 스키마를 정의합니다. 컨텐츠 조각 모델을 만들거나 업데이트할 때마다 스키마가 변환되어 GraphQL API를 구성하는 &quot;그래프&quot;에 추가됩니다.
 
-이 장에서는 일반적인 GraphQL 쿼리를 통해 컨텐츠를 수집합니다. AEM에 내장된 IDE는 [GraphiQL](https://github.com/graphql/graphiql)입니다. GraphiQL IDE를 사용하면 반환된 쿼리 및 데이터를 신속하게 테스트하고 세분화할 수 있습니다. GraphiQL은 문서에 손쉽게 액세스할 수 있으므로 사용 가능한 방법을 손쉽게 파악하고 파악할 수 있습니다.
+이 장에서는 일반적인 GraphQL 쿼리를 탐색하여 [GraphiQL](https://github.com/graphql/graphiql)이라는 IDE를 사용하여 콘텐츠를 수집합니다. GraphiQL IDE를 사용하면 반환된 쿼리 및 데이터를 신속하게 테스트하고 세분화할 수 있습니다. GraphiQL은 문서에 손쉽게 액세스할 수 있으므로 사용 가능한 방법을 손쉽게 파악하고 파악할 수 있습니다.
 
 ## 전제 조건 {#prerequisites}
 
@@ -36,6 +36,23 @@ AEM의 GraphQL API는 콘텐츠 조각의 데이터를 다운스트림 애플리
 * 특정 데이터 속성을 필터링하고 요청하는 방법을 알아봅니다.
 * 컨텐츠 조각 변형을 쿼리하는 방법을 알아봅니다.
 * 여러 컨텐츠 조각 모델의 쿼리에 참여하는 방법을 알아봅니다.
+
+## 그래픽 QL 도구 {#install-graphiql} 설치
+
+GraphiQL IDE는 개발 툴이며 개발이나 로컬 인스턴스와 같은 하위 수준 환경에서만 필요합니다. 따라서 AEM 프로젝트에 포함되지 않지만 애드혹 기반으로 설치할 수 있는 별도의 패키지로 제공됩니다.
+
+1. **[소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)** > **AEM으로 Cloud Service**&#x200B;으로 이동합니다.
+1. &quot;GraphiQL&quot;을 검색합니다(**GraphiQL**&#x200B;에 **i**&#x200B;을 포함해야 합니다.).
+1. 최신 **GraphiQL 콘텐츠 패키지 v.x.x** 다운로드
+
+   ![그래픽 QL 패키지 다운로드](assets/explore-graphql-api/software-distribution.png)
+
+   zip 파일은 직접 설치할 수 있는 AEM 패키지입니다.
+
+1. **AEM 시작** 메뉴에서 **도구** > **배포** > **패키지**&#x200B;로 이동합니다.
+1. **패키지 업로드**&#x200B;를 클릭하고 이전 단계에서 다운로드한 패키지를 선택합니다. **설치**&#x200B;를 클릭하여 패키지를 설치합니다.
+
+   ![그래픽 QL 패키지 설치](assets/explore-graphql-api/install-graphiql-package.png)
 
 ## 컨텐츠 조각 목록 쿼리 {#query-list-cf}
 
@@ -181,7 +198,7 @@ AEM의 GraphQL API는 콘텐츠 조각의 데이터를 다운스트림 애플리
        item {
          _path
          fullName
-         biography {
+         biographyText {
            html
          }
        }
@@ -205,7 +222,7 @@ AEM의 GraphQL API는 콘텐츠 조각의 데이터를 다운스트림 애플리
        item {
          _path
          fullName
-         biography {
+         biographyText {
            html
          }
        }
