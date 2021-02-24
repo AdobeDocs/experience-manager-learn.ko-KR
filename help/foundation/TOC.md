@@ -1,19 +1,19 @@
 ---
-user-guide-title: AEM Foundation 비디오 및 자습서
-breadcrumb-title: AEM Foundation 자습서
-user-guide-description: 'Adobe Experience Manager Foundation을 위한 비디오 및 자습서 모음입니다. '
+user-guide-title: AEM Foundation 비디오 및 튜토리얼
+breadcrumb-title: AEM Foundation 튜토리얼
+user-guide-description: 'Adobe Experience Manager Foundation을 위한 비디오 및 튜토리얼 모음입니다. '
 sub-product: foundation
 index: y
 translation-type: tm+mt
-source-git-commit: 172a1369cb572b367c78e04c692db8e02e7287e7
+source-git-commit: 2760064642002a684b3fd70337a81a7d6e28a343
 workflow-type: tm+mt
-source-wordcount: '156'
-ht-degree: 19%
+source-wordcount: '147'
+ht-degree: 21%
 
 ---
 
 
-# AEM Foundation 비디오 및 자습서 {#foundation}
+# AEM Foundation 비디오 및 튜토리얼 {#foundation}
 
 + [개요](./overview.md)
 + 관리 {#administration}
@@ -43,9 +43,8 @@ ht-degree: 19%
    + [CORS(Cross-Origin Resource Sharing) 개발](./security/develop-for-cross-origin-resource-sharing.md)
    + [CORS(Cross-Origin Resource Sharing) 이해](./security/understand-cross-origin-resource-sharing.md)
    + [SSL 마법사 사용](./security/use-the-ssl-wizard.md)
-+ 워크플로우 {#workflow}
++ 워크플로 {#workflow}
    + [워크플로우 편집기 사용](./workflow/use-the-workflow-editor.md)
    + [워크플로우 관리 사용](./workflow/use-workflow-management.md)
-   + [AEM 프로젝트 및 받은 편지함과 함께 달력 보기 사용](./workflow/use-the-calendar-view-with-aem-projects-and-inbox.md)
    + [받은 편지함 사용](./workflow/use-the-inbox.md)
 
