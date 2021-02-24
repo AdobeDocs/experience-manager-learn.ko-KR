@@ -1,6 +1,6 @@
 ---
 title: SPA 통합 | AEM SPA 편집기 및 Angular 시작하기
-description: Angular에 기록된 단일 페이지 애플리케이션(SPA)의 소스 코드를 Adobe Experience Manager(AEM) 프로젝트와 통합하는 방법을 살펴봅니다. Angular의 CLI 툴과 같은 최신 프런트 엔드 툴을 사용하여 AEM JSON 모델 API를 통해 SPA을 신속하게 개발할 수 있는 방법을 살펴볼 수 있습니다.
+description: angular에 기록된 단일 페이지 애플리케이션(SPA)의 소스 코드를 Adobe Experience Manager(AEM) 프로젝트와 통합하는 방법을 살펴봅니다. angular의 CLI 툴과 같은 최신 프런트 엔드 툴을 사용하여 AEM JSON 모델 API를 통해 SPA을 신속하게 개발할 수 있는 방법을 살펴볼 수 있습니다.
 sub-product: 사이트
 feature: SPA 편집기
 topics: development
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # SPA {#integrate-spa} 통합
 
-Angular에 기록된 단일 페이지 애플리케이션(SPA)의 소스 코드를 Adobe Experience Manager(AEM) 프로젝트와 통합하는 방법을 살펴봅니다. AEM JSON 모델 API를 통해 SPA을 신속하게 개발할 수 있도록 웹 팩 개발 서버와 같은 최신 프런트 엔드 툴을 사용하는 방법을 살펴볼 수 있습니다.
+angular에 기록된 단일 페이지 애플리케이션(SPA)의 소스 코드를 Adobe Experience Manager(AEM) 프로젝트와 통합하는 방법을 살펴봅니다. AEM JSON 모델 API를 통해 SPA을 신속하게 개발할 수 있도록 웹 팩 개발 서버와 같은 최신 프런트 엔드 툴을 사용하는 방법을 살펴볼 수 있습니다.
 
 ## 목표
 
@@ -183,7 +183,7 @@ AEM 프로젝트의 일부로 2개의 모듈이 생성되었습니다.`ui.apps` 
 
    >[!CAUTION]
    >
-   > 이 프로젝트에 사용되는 **@angular/cli** 버전은 **9.1.7**&#x200B;입니다. Angular CLI 버전을 동기화할 것을 권장합니다.
+   > 이 프로젝트에 사용되는 **@angular/cli** 버전은 **9.1.7**&#x200B;입니다. angular CLI 버전을 동기화할 것을 권장합니다.
 
 3. `ui.frontend` 폴더 내에서 Angular CLI `ng generate component` 명령을 실행하여 새 `Header` 구성 요소를 만듭니다.
 
@@ -407,7 +407,7 @@ AEM 프로젝트의 일부로 2개의 모듈이 생성되었습니다.`ui.apps` 
 
    전용 **dev** 구성을 만들면 **comparing** 폴더가 개발 중에만 사용되고 프로덕션 빌드에서 AEM에 배포되지 않습니다.
 
-6. **angular.json** 파일에서 다음 업데이트를 통해 **browserTarget** 구성을 새로 **dev** 구성을 사용합니다.
+6. **angular.json** 파일에서 다음 업데이트 **browserTarget** 구성을 사용하여 새 **dev** 구성을 사용합니다.
 
    ```diff
      ...
