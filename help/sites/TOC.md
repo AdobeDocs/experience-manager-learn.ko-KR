@@ -4,9 +4,9 @@ user-guide-description: Adobe Experience Manager Sites를 위한 비디오 및 �
 breadcrumb-title: AEM Sites 튜토리얼
 sub-product: 사이트
 translation-type: tm+mt
-source-git-commit: fcfb33f93e57d40b08e0527d38cfce8553095e65
+source-git-commit: 4620acc18a08d71994753903b79247a8ed3fd8f5
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '446'
 ht-degree: 22%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 22%
 + 콘텐츠 조각 {#content-fragments}
    + [컨텐츠 조각 작성](content-fragments/content-fragments-feature-video-use.md)
    + [컨텐츠 조각 제공](content-fragments/content-fragments-delivery-feature-video-use.md)
-   + [컨텐츠 조각으로 번역](content-fragments/content-fragments-translation-feature-video-use.md)
+   + [컨텐츠 조각 번역](content-fragments/content-fragments-translation-feature-video-use.md)
    + [컨텐츠 조각과 경험 조각 비교](content-fragments/understand-content-fragments-and-experience-fragments.md)
 + 경험 구성요소 {#experience-fragments}
    + [경험 조각 사용](experience-fragments/experience-fragments-feature-video-use.md)
