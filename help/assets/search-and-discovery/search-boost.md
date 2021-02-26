@@ -1,26 +1,22 @@
 ---
-title: 검색 증폭
-description: AEM의 광범위한 컨텍스트에서 AEM Assets 검색 활성화 및 작동 방식에 대해 자세히 살펴봅니다.
-topics: metadata, search
-audience: all
-doc-type: feature video
-activity: understand
-version: 6.3, 6.4, 6.5
+title: AEM Assets의 검색 활성화 소개
+description: Adobe Experience Manager에서 에셋의 검색 관련성을 높이기 위해 키워드 및 구문을 추가하는 방법을 살펴볼 수 있습니다.
+topic: 컨텐츠 관리
+feature: 검색
+role: 비즈니스 전문가
+level: 중간
+version: 6.3, 6.4, 6.5, cloud-service
+kt: 103
+thumbnail: 16766.jpg
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 7a06a9ae0c57669578e1c11fa035f80583c90dd8
 workflow-type: tm+mt
-source-wordcount: '49'
-ht-degree: 4%
+source-wordcount: '33'
+ht-degree: 15%
 
 ---
 
 
-# 자산 메타데이터로 검색 부풀려짐 {#search-boost-asset}
+# 검색 증폭
 
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=12&learn=on)
-
-## AEM Assets{#understanding-search-boosting-in-aem-assets}의 검색 부흥 이해
-
-AEM의 광범위한 컨텍스트에서 AEM Assets 검색 활성화 및 작동 방식에 대해 자세히 살펴봅니다.
-
->[!VIDEO](https://video.tv.adobe.com/v/16770/?quality=12&learn=on)
