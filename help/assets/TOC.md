@@ -5,7 +5,7 @@ breadcrumb-title: AEM Assets 튜토리얼
 sub-product: 자산
 team: TM
 translation-type: tm+mt
-source-git-commit: d302444e74f8c2a548d2e08b5ec2991cc7347324
+source-git-commit: 0d012d61b7740e461e641dddd6c5255a022305ea
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 32%
@@ -59,7 +59,7 @@ ht-degree: 32%
    + [이미지용 스마트 태그](metadata/image-smart-tags.md)
    + [이미지에 대한 사용자 정의 스마트 태그](metadata/custom-smart-tags.md)
    + [비디오용 스마트 태그](metadata/video-smart-tags.md)
-   + [메타데이터 가져오기 및 내보내기](metadata/metadata-import-feature-video-use.md)
+   + [메타데이터 가져오기 및 내보내기](metadata/metadata-import-export.md)
 
 + 공유 및 배포{#sharing}
    + [자산 다운로드](./sharing/download.md)
