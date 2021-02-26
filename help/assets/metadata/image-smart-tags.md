@@ -1,19 +1,18 @@
 ---
 title: AEM Assets을 사용한 이미지 스마트 태그
 description: 이미지에 대한 스마트 태그는 이미지 컨텐츠를 기반으로 이미지 자산에 메타데이터 태그를 자동으로 지능적으로 추가하여 AEM 검색 기능을 향상시킵니다.
-feature: smart-tags
-topics: metadata, search
-audience: all
-doc-type: feature video
-activity: understand
-version: 6.3, 6.4, 6.5
-kt: 5244
+topic: 컨텐츠 관리
+feature: 스마트 태그
+role: 비즈니스 전문가
+level: 중간
+version: 6.3, 6.4, 6.5, cloud-service
+kt: 645
 thumbnail: 17019.jpg
 translation-type: tm+mt
-source-git-commit: 159e9d7ea363768f202db91a1d0555c2e57ebb13
+source-git-commit: a5fb96275194ddc46169832c0fb79a2587833564
 workflow-type: tm+mt
-source-wordcount: '217'
-ht-degree: 8%
+source-wordcount: '225'
+ht-degree: 10%
 
 ---
 
@@ -31,7 +30,7 @@ ht-degree: 8%
 
 >[!VIDEO](https://video.tv.adobe.com/v/17023/?quality=12&learn=on)
 
-Smart Content Service를 사용하려면 먼저 다음을 통해 Adobe I/O에 통합을 만드십시오.
+Smart Content Service를 사용하려면 먼저 다음을 통해 Adobe I/O에 대한 통합을 만드십시오.
 
 * 조직에 대한 관리자 권한이 부여된 Adobe ID 계정이 있습니다
 * 조직에서 스마트 콘텐츠 서비스 서비스를 사용할 수 있습니다.
@@ -45,4 +44,4 @@ Smart Content Service를 사용하려면 먼저 다음을 통해 Adobe I/O에 �
 
 ## 추가 리소스
 
-* [AEM Assets 스마트 태그 설명서](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html)
+* [AEM Assets 스마트 태그 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/smart-tags.html)
