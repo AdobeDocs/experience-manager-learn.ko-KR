@@ -7,7 +7,7 @@ activity: develop
 audience: developer
 user-guide-title: AEM SPA Editor 및 React 시작하기
 user-guide-description: AEM에서 WKND SPA를 사용하여 편집할 수 있는 간단한 SPA(Response Single Page Application)를 만들 수 있습니다.
-breadcrumb-title: AEM SPA 편집기 및 대화형 자습서
+breadcrumb-title: AEM SPA 편집기 및 대화형 튜토리얼
 translation-type: tm+mt
 source-git-commit: 172a1369cb572b367c78e04c692db8e02e7287e7
 workflow-type: tm+mt
