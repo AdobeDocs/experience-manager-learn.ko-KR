@@ -2,7 +2,7 @@
 title: 작업 알림 지정 사용자 지정
 description: 할당 작업 알림 이메일에 양식 데이터 포함
 sub-product: 양식
-feature: workflow
+feature: 워크플로우
 topics: integrations
 audience: developer
 doc-type: article
@@ -10,11 +10,14 @@ activity: setup
 version: 6.4,6.5
 kt: 6279
 thumbnail: KT-6279.jpg
+topic: 개발
+role: 개발자
+level: 경험
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 1%
+source-wordcount: '450'
+ht-degree: 2%
 
 ---
 
