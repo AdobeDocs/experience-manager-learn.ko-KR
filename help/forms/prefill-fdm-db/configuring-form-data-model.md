@@ -1,7 +1,7 @@
 ---
 title: 양식 데이터 모델 구성
 description: RDBMS 데이터 소스를 기반으로 양식 데이터 모델 생성
-feature: adaptive-forms
+feature: 적응형 양식
 topics: development
 audience: developer
 doc-type: article
@@ -9,11 +9,14 @@ activity: implement
 version: 6.4,6.5
 kt: 5812
 thumbnail: kt-5812.jpg
+topic: 개발
+role: 개발자
+level: 초급
 translation-type: tm+mt
-source-git-commit: e99779b5d42bb9a3b258e2bbe815defde9d40bf7
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '492'
-ht-degree: 1%
+source-wordcount: '497'
+ht-degree: 2%
 
 ---
 
@@ -25,7 +28,7 @@ ht-degree: 1%
 
 RDBMS 백업 양식 데이터 모델을 만드는 첫 번째 단계는 Apache Sling Connection Booled DataSource를 구성하는 것입니다. 데이터 소스를 구성하려면 아래 단계를 따르십시오.
 
-* 브라우저를 [configMgr](http://localhost:4502/system/console/configMgr)로 지정합니다.
+* 브라우저를 [configMgr](http://localhost:4502/system/console/configMgr)로 가리킵니다.
 * **Apache Sling 연결 풀링된 DataSource 검색**
 * 새 항목을 추가하고 스크린샷에 표시된 대로 값을 제공합니다.
 * ![데이터 소스](assets/data-source.png)
