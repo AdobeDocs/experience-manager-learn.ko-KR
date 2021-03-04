@@ -1,17 +1,20 @@
 ---
 title: AEM Sites에서 소셜 미디어 공유 사용
 description: 소셜 미디어 공유 구성 요소의 설정 및 사용을 살펴봅니다.
-feature: core-components
+feature: 코어 구성 요소
 topics: integrations
 audience: developer, implementer
 doc-type: technical video
 activity: setup
 version: 6.3, 6.4, 6.5
+topic: 컨텐츠 관리
+role: 개발자
+level: 중간
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 7%
+source-wordcount: '215'
+ht-degree: 9%
 
 ---
 
@@ -35,7 +38,7 @@ ht-degree: 7%
 
 [http://localhost:4502/system/console/configMgr/com.day.cq.commons.impl.ExternalizerImpl](http://localhost:4502/system/console/configMgr/com.day.cq.commons.impl.ExternalizerImpl)
 
-[AEM ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/externalizer.html) externalizer는 AEM 작성자 및 AEM 게시 모두에서 게시 실행 모드를 AEM 게시 게시에 액세스하는 데 사용되는 공개적으로 액세스 가능한 도메인에 매핑하려면 설정해야 합니다.
+[AEM ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/externalizer.html) externalizer는 AEM 작성자 및 AEM 게시 모두에서 게시 실행 모드를 AEM 게시에 액세스하는 데 사용되는 공개적으로 액세스 가능한 도메인에 매핑하려면 설정해야 합니다.
 
 이 비디오에서는 `/etc/hosts`를 사용하여 *www.example.com*&#x200B;를 스푸핑(localhost)으로 확인하고 [기본 AEM Dispatcher 구성](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/getting-started/dispatcher-install.html)을 사용하여 www.example.com에서 AEM 게시를 앞설 수 있도록 합니다.
 
