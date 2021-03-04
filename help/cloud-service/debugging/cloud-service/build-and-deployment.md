@@ -1,7 +1,7 @@
 ---
 title: 구축 및 배포
 description: Adobe Cloud Manager는 Cloud Service으로 AEM에 대한 코드 작성 및 배포를 용이하게 합니다. 빌드 프로세스의 단계 중에 오류가 발생할 수 있으므로 오류를 해결하기 위한 작업이 필요합니다. 이 안내서에서는 배포의 일반적인 실패를 파악하고 이러한 오류에 가장 잘 접근하는 방법을 안내합니다.
-feature: null
+feature: 개발자 도구
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -9,10 +9,13 @@ activity: develop
 audience: developer
 kt: 5434
 thumbnail: kt-5424.jpg
+topic: 개발
+role: 개발자
+level: 초급
 translation-type: tm+mt
-source-git-commit: b9fb3cb0c12afcabf4a92ded3d7d330ac9d229d6
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '2537'
+source-wordcount: '2542'
 ht-degree: 0%
 
 ---
@@ -123,14 +126,14 @@ set the ‘mergeConfigurations’ flag to ‘true’ if you want to merge multip
 
 _이 문제는 최신 AEM 릴리스로 자동 업데이트되지 않는 비프로덕션 환경에만 영향을 줍니다._
 
-CLOUD SERVICE은 모든 AEM 릴리스에 최신 핵심 구성 요소 버전을 자동으로 포함합니다. 즉, Cloud Service 환경으로 AEM이 자동으로 또는 수동으로 업데이트되면 최신 버전의 핵심 구성 요소가 해당 AEM에 배포됩니다.
+Cloud Service은 모든 AEM 릴리스에 최신 핵심 구성 요소 버전을 자동으로 포함합니다. 즉, Cloud Service 환경으로 AEM이 자동으로 또는 수동으로 업데이트되면 최신 버전의 핵심 구성 요소가 해당 AEM에 배포됩니다.
 
 다음 경우 이미지 작성 단계가 실패할 수 있습니다.
 
 + 배포 응용 프로그램은 `core`(OSGi 번들) 프로젝트의 핵심 구성 요소 상위 종속성 버전을 업데이트합니다.
 + 그런 다음 배포 응용 프로그램이 새 코어 구성 요소 버전이 포함된 AEM 릴리스를 사용하도록 업데이트되지 않은 Cloud Service 환경으로 샌드박스(비프로덕션) AEM에 배포됩니다.
 
-이러한 실패를 방지하기 위해 Cloud Service 환경으로 AEM 업데이트를 사용할 수 있을 때마다 업데이트를 다음 빌드/배포의 일부로 포함시키고 응용 프로그램 코드 베이스에서 핵심 구성 요소 버전을 증가시킨 후 항상 업데이트가 포함되는지 확인하십시오.
+이러한 실패를 방지하기 위해 Cloud Service 환경으로 AEM 업데이트를 사용할 수 있을 때마다 업데이트를 다음 빌드/배포의 일부로 포함시키고 응용 프로그램 코드 베이스에서 핵심 구성 요소 버전을 증분시킨 후에 항상 업데이트가 포함되는지 확인하십시오.
 
 + __증상:__
 이미지 만들기 단계가 실패하여 
