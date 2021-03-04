@@ -4,11 +4,13 @@ seo-title: AEM Forms Tutorials 및 비디오
 description: 초보자 및 숙련된 AEM Forms 개발자를 위한 AEM Forms 리소스 모음입니다
 seo-description: 초보자 및 숙련된 AEM Forms 개발자를 위한 AEM Forms 리소스 모음입니다
 sub-product: 양식
+topic: 개발
+role: 개발자
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 16%
+source-wordcount: '305'
+ht-degree: 17%
 
 ---
 
