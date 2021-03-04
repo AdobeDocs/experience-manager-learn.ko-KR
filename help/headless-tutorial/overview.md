@@ -1,10 +1,14 @@
 ---
 title: AEM 제목 없는 자습서
 description: 헤드리스 CMS로 Adobe Experience Manager을 사용하는 방법에 대한 자습서 모음입니다.
+feature: '"컨텐츠 조각, API"'
+topic: '"헤드리스, 콘텐츠 관리"'
+role: 개발자
+level: 초급
 translation-type: tm+mt
-source-git-commit: eabd8650886fa78d9d177f3c588374a443ac1ad6
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '468'
 ht-degree: 4%
 
 ---
@@ -37,7 +41,7 @@ Adobe Experience Manager에는 헤드리스 끝점을 정의하고 콘텐츠를 
 
 AEM은 GraphQL, AEM 콘텐츠 서비스에서 Assets HTTP API에 이르기까지 헤드리스 방식으로 상호 작용할 수 있는 다양한 HTTP 끝점을 제공합니다. 종종 이러한 헤드리스 소비자가 보호된 컨텐츠 또는 작업에 액세스하려면 AEM에 인증해야 할 수 있습니다. 이를 위해 AEM은 외부 애플리케이션, 서비스 또는 시스템에서 HTTP 요청의 토큰 기반 인증을 지원합니다.
 
-* 외부 응용 프로그램 자습서](./authentication/overview.md)외부 응용 프로그램의 Cloud Service으로 AEM에 인증 [액세스 토큰을 사용하여 HTTP를 통해 AEM에 인증하는 방법을 알아봅니다.
+* 외부 응용 프로그램 자습서](./authentication/overview.md)에서 [AEM에 Cloud Service으로 인증하는 경우 액세스 토큰을 사용하여 HTTP를 통해 AEM에 인증하는 방법을 알아봅니다.
 
 ## AEM 컨텐츠 서비스 자습서
 
