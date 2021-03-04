@@ -1,7 +1,7 @@
 ---
 title: Adobe IMS 사용자 및 AEM
 description: AEM 작성자 서비스에 액세스해야 하는 사용자는 Adobe Admin Console의 Adobe IMS 사용자로 관리됩니다. Adobe IMS 사용자가 무엇이고 Admin Console에서 액세스 및 관리하는 방법에 대해 알아보십시오.
-feature: users-and-groups
+feature: 사용자 및 그룹
 topics: authentication
 version: cloud-service
 activity: setup
@@ -9,11 +9,14 @@ audience: administrator
 doc-type: feature video
 kt: 4997
 thumbnail: 39149.jpg
+topic: 관리, 보안
+role: 관리자
+level: 초급
 translation-type: tm+mt
-source-git-commit: f30d15f0578b7e529e4acefb8e1d2e29157ab359
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '174'
-ht-degree: 5%
+source-wordcount: '181'
+ht-degree: 7%
 
 ---
 
