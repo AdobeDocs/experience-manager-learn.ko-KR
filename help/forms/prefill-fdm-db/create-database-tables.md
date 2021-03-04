@@ -1,7 +1,7 @@
 ---
 title: 데이터베이스 테이블 만들기
 description: 양식 데이터 모델에서 사용할 데이터베이스 만들기
-feature: adaptive-forms
+feature: 적응형 양식
 topics: development
 audience: developer
 doc-type: article
@@ -9,11 +9,14 @@ activity: implement
 version: 6.4,6.5
 kt: 5811
 thumbnail: kt-5811.jpg
+topic: 개발
+role: 개발자
+level: 초급
 translation-type: tm+mt
-source-git-commit: b085a2c75f8e0b4860d503774ea01a108773ad09
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '99'
-ht-degree: 0%
+source-wordcount: '104'
+ht-degree: 3%
 
 ---
 
