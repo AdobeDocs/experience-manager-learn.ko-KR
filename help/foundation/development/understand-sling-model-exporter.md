@@ -3,18 +3,15 @@ title: AEM에서 Sling 모델 내보내기 프로그램 이해
 description: Apache Sling Models 1.3.0에는 Sling Model 객체를 사용자 정의 추상형으로 내보내거나 직렬화할 수 있는 세련된 방법인 Sling Model Exporter가 도입되었습니다. 이 문서에서는 Sling Model Exporter 프레임워크를 활용하여 Sling 모델을 JSON으로 일련화하는 것과 함께 Sling Models를 사용하여 HTML 스크립트를 채우는 일반적인 사용 사례를 소개합니다.
 version: 6.3, 6.4, 6.5
 sub-product: 기반, 컨텐츠 서비스
-feature: API
+feature: sling-models, sling-model-exporter
 topics: development, content-delivery, headless
 activity: understand
 audience: developer, architect
 doc-type: article
-topic: 개발
-role: 개발자
-level: 초급
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '573'
 ht-degree: 0%
 
 ---
