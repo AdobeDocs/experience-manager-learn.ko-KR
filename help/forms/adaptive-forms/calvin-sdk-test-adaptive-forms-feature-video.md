@@ -3,7 +3,7 @@ title: AEM Forms을 사용한 Forms 테스트 자동화 이해
 seo-title: AEM Forms을 사용한 Forms 테스트 자동화 이해
 description: AEM 6.3 Forms은 사용자가 hobbes.js 프레임워크 위에 구축된 Calvin SDK를 사용하여 AEM for Adaptive Forms에서 테스트 케이스를 생성할 수 있도록 하는 기능을 제공합니다.
 seo-description: AEM 6.3 Forms은 사용자가 hobbes.js 프레임워크 위에 구축된 Calvin SDK를 사용하여 AEM for Adaptive Forms에서 테스트 케이스를 생성할 수 있도록 하는 기능을 제공합니다.
-feature: adaptive-forms
+feature: 적응형 양식
 topics: development
 audience: developer
 doc-type: technical video
@@ -11,11 +11,14 @@ activity: develop
 version: 6.3,6.4,6.5
 uuid: 3cea2785-28f0-42c1-9935-3e876c28214a
 discoiquuid: a78936b4-e817-41a0-86cc-f9ac2d6dd08f
+topic: 개발
+role: 개발자
+level: 초급
 translation-type: tm+mt
-source-git-commit: 1e615d1c51fa0c4c0db335607c29a8c284874c8d
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '130'
-ht-degree: 0%
+source-wordcount: '135'
+ht-degree: 2%
 
 ---
 
