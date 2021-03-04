@@ -3,17 +3,20 @@ title: 감시 폴더 메커니즘을 사용하여 인쇄 채널용 대화형 통
 seo-title: 감시 폴더 메커니즘을 사용하여 인쇄 채널용 대화형 통신 문서 생성
 description: 감시 폴더를 사용하여 인쇄 채널 문서 생성
 seo-description: 감시 폴더를 사용하여 인쇄 채널 문서 생성
-feature: interactive-communication
+feature: 대화형 통신
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
+topic: 개발
+role: 개발자
+level: 중간
 translation-type: tm+mt
-source-git-commit: 449202af47b6bbcd9f860d5c5391d1f7096d489e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '482'
-ht-degree: 0%
+source-wordcount: '487'
+ht-degree: 1%
 
 ---
 
