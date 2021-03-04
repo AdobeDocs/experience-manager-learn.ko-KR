@@ -4,7 +4,7 @@ seo-title: 첫 번째 대화형 통신 문서에 대한 라인 차트 구성
 description: 인쇄 채널용 첫 번째 대화형 통신 문서를 만들기 위한 여러 단계로 구성된 자습서의 8부분입니다. 이 부분에서 계정 잔액을 표시하는 라인 차트를 추가합니다.
 seo-description: 인쇄 채널용 첫 번째 대화형 통신 문서를 만들기 위한 여러 단계로 구성된 자습서의 8부분입니다. 이 부분에서 계정 잔액을 표시하는 라인 차트를 추가합니다.
 uuid: a4394874-a080-4b6a-a3eb-ffc71504919d
-feature: interactive-communication
+feature: 대화형 통신
 topics: development
 audience: developer
 doc-type: tutorial
@@ -13,11 +13,14 @@ version: 6.4,6.5
 discoiquuid: 9110e5c6-50ee-4c3e-a779-b680ff49ef23
 kt: 5993
 thumbnail: 22386.jpg
+topic: 개발
+role: 개발자
+level: 초급
 translation-type: tm+mt
-source-git-commit: 449202af47b6bbcd9f860d5c5391d1f7096d489e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 0%
+source-wordcount: '175'
+ht-degree: 2%
 
 ---
 
