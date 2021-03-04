@@ -3,11 +3,15 @@ title: Adobe Target Visual Experience Composer를 사용한 개인화
 seo-title: Adobe Target VEC(Visual Experience Composer)를 사용한 개인화
 description: Adobe Target VEC(Visual Experience Composer)를 사용하여 개인화된 경험을 만들고 전달하는 방법을 보여주는 엔드 투 엔드 자습서입니다.
 seo-description: Adobe Target VEC(Visual Experience Composer)를 사용하여 개인화된 경험을 만들고 전달하는 방법을 보여주는 엔드 투 엔드 자습서입니다.
+feature: 경험 구성요소
+topic: 개인화
+role: 개발자
+level: 중간
 translation-type: tm+mt
-source-git-commit: 0443c8ff42e773021ff8b6e969f5c1c31eea3ae4
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '610'
-ht-degree: 2%
+source-wordcount: '615'
+ht-degree: 3%
 
 ---
 
@@ -35,7 +39,7 @@ WKND 사이트 홈 페이지에는 카드 레이아웃 형태로 도시 주변�
 
 * **AEM**
    * [4503](./implementation.md#getting-aem) 에 AEM 게시 설치
-   * [ADOBE EXPERIENCE PLATFORM LAUNCH을 사용하여 Adobe Target과 통합](./using-launch-adobe-io.md#aem-target-using-launch-by-adobe)
+   * [Adobe Experience Platform Launch을 사용하여 Adobe Target과 통합](./using-launch-adobe-io.md#aem-target-using-launch-by-adobe)
 * **Experience Cloud**
    * 조직 Adobe Experience Cloud 액세스 - <https://>`<yourcompany>`.experiencecloud.adobe.com
    * [Adobe Target](https://experiencecloud.adobe.com)로 제공된 Experience Cloud
@@ -58,7 +62,7 @@ WKND 사이트 홈 페이지에는 카드 레이아웃 형태로 도시 주변�
       ![경험 B](assets/personalization-use-case-3/use-case3-experience-b.png)
    8. 카드 레이아웃 컨테이너(*최상의 회전자*) 중 하나를 클릭하고 **재배치** 옵션을 선택합니다.
       ![컨테이너 선택](assets/personalization-use-case-3/container-selection.png)
-   9. 다시 정렬할 컨테이너를 클릭하고 원하는 위치로 드래그하여 놓습니다. *Best Roasters* 컨테이너를 1번째 행 1번째 열에서 1번째 행 3번째 열로 재정렬합니다. 이제 *Best Roasters* 컨테이너가 *사진 전시회* 컨테이너 옆에 있습니다.
+   9. 다시 정렬할 컨테이너를 클릭하고 원하는 위치로 드래그하여 놓습니다. *Best Roasters* 컨테이너를 1행 1행에서 1번째 행 3번째 열로 재정렬합니다. 이제 *Best Roasters* 컨테이너가 *사진 전시회* 컨테이너 옆에 있습니다.
       ![컨테이너 교체](assets/personalization-use-case-3/container-swap.png)
 
       **교체 후**
