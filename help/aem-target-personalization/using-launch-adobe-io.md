@@ -3,10 +3,14 @@ title: Experience Platform Launch 및 Adobe I/O을 사용하여 Adobe Experience
 seo-title: Experience Platform Launch 및 Adobe I/O을 사용하여 Adobe Experience Manager과 Adobe Target 통합
 description: Experience Platform Launch 및 Adobe I/O을 사용하여 Adobe Experience Manager과 Adobe Target을 통합하는 방법에 대한 단계별 지침
 seo-description: Experience Platform Launch 및 Adobe I/O을 사용하여 Adobe Experience Manager과 Adobe Target을 통합하는 방법에 대한 단계별 지침
+feature: 경험 구성요소
+topic: 개인화
+role: 개발자
+level: 중간
 translation-type: tm+mt
-source-git-commit: 1209064fd81238d4611369b8e5b517365fc302e3
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1098'
+source-wordcount: '1103'
 ht-degree: 2%
 
 ---
@@ -105,7 +109,7 @@ Target 확장 기능은 두 개의 주요 부분으로 구성됩니다.
 
    Target이 비동기 실행 포함 코드를 통해 배포되는 경우 컨텐츠 깜박임을 관리하기 위해 시작 포함 코드 전에 페이지에 사전 숨겨진 코드 조각을 하드 코딩해야 합니다. 우리는 나중에 숨어있는 스나입자들에 대해 더 자세히 배울 것이다. 사전 숨겨진 코드 조각 [여기](assets/using-launch-adobe-io/prehiding.js)를 다운로드할 수 있습니다.
 
-5. **저장**&#x200B;을 클릭하여 Target 확장 기능을 Launch 속성에 추가를 완료하면 이제 **Installed** 확장 목록 아래에 Target 확장이 표시될 수 있습니다.
+5. **저장**&#x200B;을 클릭하여 Target 확장을 Launch 속성에 추가를 완료하면 이제 **Installed** 확장 목록 아래에 Target 확장이 표시됩니다.
 
 6. 위의 단계를 반복하여 &quot;Experience Cloud ID 서비스&quot; 확장을 검색하고 설치합니다.
    ![확장 - Experience Cloud ID 서비스](assets/using-launch-adobe-io/launch-extension-experience-cloud.png)
@@ -134,7 +138,7 @@ Target 확장 기능은 두 개의 주요 부분으로 구성됩니다.
 
 >[!NOTE]
 >
-> 중앙 팀이 몇 개의 작업 영역](https://docs.adobe.com/content/help/en/target/using/administer/manage-users/enterprise/configure-adobe-io-integration.html)에서만 API 기반 변경 작업을 수행할 수 있도록 적절한 [ 역할이 있는 일부 작업 영역에 대한 액세스 권한을 Adobe I/O에 부여합니다.
+> 중앙 팀이 몇 개의 작업 영역](https://docs.adobe.com/content/help/en/target/using/administer/manage-users/enterprise/configure-adobe-io-integration.html)에서만 API 기반 변경을 수행할 수 있도록 Adobe I/O 통합을 적절한 [ 역할이 있는 선택한 작업 영역에 대한 액세스 권한을 부여합니다.
 
 1. Adobe I/O의 자격 증명을 사용하여 AEM에서 IMS 통합을 만듭니다(01:12~03:55).
 2. Experience Platform Launch에서 속성을 만듭니다. (위 [위](#create-launch-property) 포함)
