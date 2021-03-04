@@ -1,7 +1,7 @@
 ---
 title: asset compute 확장성을 위해 Adobe 프로젝트 Firefox 설정
 description: asset compute 프로젝트는 특별히 정의된 Adobe 프로젝트 Firefox 프로젝트입니다. 따라서 Adobe 개발자 콘솔에서 Adobe 프로젝트 Firefox에 액세스해야 설정 및 배포할 수 있습니다.
-feature: asset-compute
+feature: asset compute 마이크로서비스
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,10 +9,13 @@ audience: developer
 doc-type: tutorial
 kt: 6268
 thumbnail: 40183.jpg
+topic: 통합, 개발
+role: 개발자
+level: 중간, 경험
 translation-type: tm+mt
-source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '553'
 ht-degree: 0%
 
 ---
@@ -65,6 +68,6 @@ _Adobe 프로젝트 반딧불 설정 클릭스루(오디오 없음)_
 
 1. Adobe I/O 프로젝트 Firefly 프로젝트에서 `Development` 작업 영역이 선택되어 있는지 확인합니다
 1. __자격 증명__ 아래의 __서비스 계정(JWT)__&#x200B;을 탭합니다.
-1. 표시된 Adobe I/O 자격 증명을 검토합니다.
+1. 표시된 Adobe I/O 자격 증명 검토
    + 맨 아래에 나열된 __공개 키__&#x200B;에는 __Asset compute API__&#x200B;이(가) 이 프로젝트에 추가되었을 때 다운로드한 `config.zip`의 __private.key__&#x200B;이(가) 있습니다.
       + 개인 키가 손실되거나 손상되지 않은 경우 일치하는 공개 키를 제거할 수 있으며 이 인터페이스를 사용하여 새 키 쌍을 Adobe I/O에 생성하거나 업로드할 수 있습니다.
