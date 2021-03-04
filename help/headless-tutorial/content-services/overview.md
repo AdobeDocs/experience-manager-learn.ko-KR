@@ -1,11 +1,15 @@
 ---
 title: AEM 헤드리스 시작하기 - 컨텐츠 서비스
 description: AEM Headless를 사용하여 컨텐츠를 작성하고 노출하는 방법을 소개하는 종단간 튜토리얼입니다.
+feature: 컨텐츠 조각, API
+topic: 헤드리스, 컨텐츠 관리
+role: 개발자
+level: 초급
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '215'
-ht-degree: 9%
+source-wordcount: '223'
+ht-degree: 6%
 
 ---
 
