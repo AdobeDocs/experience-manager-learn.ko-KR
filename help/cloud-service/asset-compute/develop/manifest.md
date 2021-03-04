@@ -1,7 +1,7 @@
 ---
 title: asset compute 프로젝트의 manifest.yml 구성
 description: asset compute 프로젝트의 manifest.yml은 이 프로젝트의 배포 대상 모든 작업자에 대해 설명합니다.
-feature: asset-compute
+feature: asset compute 마이크로서비스
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,10 +9,13 @@ audience: developer
 doc-type: tutorial
 kt: 6281
 thumbnail: KT-6281.jpg
+topic: 통합, 개발
+role: 개발자
+level: 중간, 경험
 translation-type: tm+mt
-source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '445'
 ht-degree: 0%
 
 ---
@@ -28,7 +31,7 @@ asset compute 프로젝트의 루트에 있는 `manifest.yml`은 이 프로젝�
 
 워커는 `actions` 아래에 Adobe I/O Runtime 작업 항목으로 정의되며 일련의 구성으로 구성됩니다.
 
-다른 Adobe I/O 통합에 액세스하는 작업자는 `annotations -> require-adobe-auth` 속성을 `true`으로 설정해야 합니다. 이 [는 `params.auth` 개체를 통해 워커의 Adobe I/O 자격 증명](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#access-adobe-apis)을 노출합니다. 이는 일반적으로 워커가 Adobe Photoshop, Lightroom 또는 Sensei API와 같은 Adobe I/O API를 호출하고 작업자별로 전환할 수 있는 경우에 필요합니다.
+다른 Adobe I/O 통합에 액세스하는 작업자는 `annotations -> require-adobe-auth` 속성을 `true`으로 설정해야 합니다. 이 [는 `params.auth` 개체를 통해 근로자의 Adobe I/O 자격 증명](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#access-adobe-apis)을 노출합니다. 이는 일반적으로 워커가 Adobe Photoshop, Lightroom 또는 Sensei API와 같은 Adobe I/O API를 호출하고 작업자별로 전환할 수 있는 경우에 필요합니다.
 
 1. 자동 생성된 작업자 `manifest.yml`를 열고 검토합니다. 여러 Asset compute 작업자를 포함하는 프로젝트는 `actions` 배열 아래에 있는 각 워커에 대한 항목을 정의해야 합니다.
 
