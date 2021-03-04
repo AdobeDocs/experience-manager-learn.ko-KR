@@ -3,7 +3,7 @@ title: 재사용 가능한 AEM Forms 워크플로우 모델 만들기
 seo-title: 재사용 가능한 AEM Forms 워크플로우 모델 만들기
 description: 적응형 Forms에 독립적인 워크플로우 모델
 seo-description: 적응형 Forms에 독립적인 워크플로우 모델
-feature: workflow
+feature: 워크플로우
 topics: development
 audience: developer
 doc-type: article
@@ -11,11 +11,14 @@ activity: setup
 version: 6.5
 uuid: 3a082743-3e56-42f4-a44b-24fa34165926
 discoiquuid: 9f18c314-39d1-4c82-b1bc-d905ea472451
+topic: 개발
+role: 개발자
+level: 초급
 translation-type: tm+mt
-source-git-commit: 3d54a8158d0564a3289a2100bbbc59e5ae38f175
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '290'
-ht-degree: 0%
+source-wordcount: '294'
+ht-degree: 1%
 
 ---
 
@@ -41,6 +44,6 @@ ht-degree: 0%
 1. 절대 경로에서 사용 가능 - 즉, 워크플로우가 적응형 양식과 밀접하게 연결됨을 의미합니다. 이건 우리가 원하는 게 아니야
 1. **워크플로우에 제출됨**  - 즉, 적응형 양식이 제출되면 워크플로우 엔진은 제출된 데이터에서 양식 이름을 추출합니다. 이 옵션을 선택해야 합니다.
 1. 변수의 경로에서 사용 가능 - 이것은 적응형 양식이 워크플로우 변수에서 선택됨을 의미합니다
-다음 스크린샷은 적응형 양식의 연결 해제 작업 과정을 선택해야 하는 올바른 옵션을 보여 줍니다
+다음 스크린샷은 적응형 양식의 결합 해제 작업 과정을 선택해야 하는 올바른 옵션을 보여줍니다
 
 ![워크플로모델](assets/workflomodel.PNG)
