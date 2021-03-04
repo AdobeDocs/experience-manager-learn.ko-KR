@@ -1,16 +1,11 @@
 ---
 title: AEM Assets에서 검색 사용
-seo-title: AEM Assets에서 검색 사용
 description: 이 비디오에서는 AEM에 도입된 에셋 검색에 대한 개선 사항을 살펴봅니다. 작성자는 각 메타데이터 속성을 업데이트하여 키워드 검색 결과에서 특정 자산을 활성화할 수 있습니다. 또한 Assets OmniSearch 예측자에 대한 일부 고급 구성을 살펴봅니다.
-seo-description: 이 비디오에서는 AEM에 도입된 에셋 검색에 대한 개선 사항을 살펴봅니다. 작성자는 각 메타데이터 속성을 업데이트하여 키워드 검색 결과에서 특정 자산을 활성화할 수 있습니다. 또한 Assets OmniSearch 예측자에 대한 일부 고급 구성을 살펴봅니다.
-uuid: d4074602-a68d-4f44-b9f3-47a02c6420a0
-topics: metadata, search
-activity: use
 version: 6.3, 6.4, 6.5
 translation-type: tm+mt
-source-git-commit: 22ccd6627a035b37edb180eb4633bc3b57470c0c
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '177'
+source-wordcount: '133'
 ht-degree: 0%
 
 ---
