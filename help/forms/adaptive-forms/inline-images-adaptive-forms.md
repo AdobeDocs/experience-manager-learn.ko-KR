@@ -3,17 +3,20 @@ title: 적응형 Forms에서 인라인 이미지 표시
 seo-title: 적응형 Forms에서 인라인 이미지 표시
 description: 적응형 Forms에서 업로드된 이미지 인라인 표시
 seo-description: 적응형 Forms에서 업로드된 이미지 인라인 표시
-feature: adaptive-forms
+feature: 적응형 양식
 topics: development
 audience: developer
 doc-type: article
 activity: setup
 version: 6.3,6.4,6.5
+topic: 개발
+role: 개발자
+level: 경험
 translation-type: tm+mt
-source-git-commit: defefc1451e2873e81cd81e3cccafa438aa062e3
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 0%
+source-wordcount: '243'
+ht-degree: 1%
 
 ---
 
