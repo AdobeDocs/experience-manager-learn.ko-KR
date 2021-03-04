@@ -4,7 +4,7 @@ seo-title: 자산 섹션에 구성 요소 추가
 description: 에셋 패널의 아코디언 레이아웃을 구성합니다.아코디언 레이아웃은 반복 가능한 섹션을 추가할 수 있는 더 나은 최종 사용자 경험을 제공합니다.
 seo-description: 에셋 패널의 아코디언 레이아웃을 구성합니다.아코디언 레이아웃은 반복 가능한 섹션을 추가할 수 있는 더 나은 최종 사용자 경험을 제공합니다.
 uuid: 0e853b07-a08d-4c5d-b5c2-0df34f0d81b3
-feature: adaptive-forms
+feature: 적응형 양식
 topics: authoring
 audience: developer
 doc-type: tutorial
@@ -13,11 +13,14 @@ version: 6.4,6.5
 kt: 4212
 thumbnail: 22200.jpg
 discoiquuid: 37c039c4-422a-4836-8aa5-ba0459d342cc
+topic: 개발
+role: 개발자
+level: 초급
 translation-type: tm+mt
-source-git-commit: c60a46027cc8d71fddd41aa31dbb569e4df94823
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '78'
-ht-degree: 0%
+source-wordcount: '83'
+ht-degree: 4%
 
 ---
 
