@@ -3,11 +3,13 @@ title: AEM Foundation 비디오 및 튜토리얼
 seo-title: AEM Foundation 비디오 및 튜토리얼
 description: 'Adobe Experience Manager Foundation을 위한 비디오 및 튜토리얼 모음입니다. '
 seo-description: Adobe Experience Manager Foundation을 위한 비디오 및 튜토리얼 모음입니다
+role: 리더, 건축가, 개발자, 관리자, 비즈니스 전문가
+level: 초급
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 22%
+source-wordcount: '268'
+ht-degree: 21%
 
 ---
 
