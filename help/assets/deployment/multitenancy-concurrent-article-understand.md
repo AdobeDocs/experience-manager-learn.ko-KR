@@ -1,17 +1,13 @@
 ---
 title: 다중 테넌트 및 동시 개발 이해
-seo-title: 다중 테넌트 및 동시 개발 이해
 description: Adobe Experience Manager Assets로 멀티 테넌트 구현을 관리하는 이점, 당면 과제 및 기술에 대해 알아보십시오.
-uuid: 682093fe-ce55-4ef8-af10-99f7062f8b1b
-discoiquuid: 0dfcdf39-7423-459f-8f35-ee5b4b829f2c
-feature: connected-assets
-topics: authoring, operations, sharing, publishing
-audience: all
-doc-type: article
-activity: understand
+feature: 연결된 자산
 version: 6.5
+topic: 개발
+role: 개발자
+level: 중간
 translation-type: tm+mt
-source-git-commit: e03d84f92be11623704602fb448273e461c70b4e
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
 source-wordcount: '2024'
 ht-degree: 0%
