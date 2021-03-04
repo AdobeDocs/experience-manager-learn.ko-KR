@@ -1,7 +1,6 @@
 ---
 title: 론치 속성 만들기
 description: 나머지 통합을 설정하는 데 필요한 최소 구성으로 Launch 속성을 만드는 방법을 알아봅니다. 사용자는 시작 UI를 소개하고 확장, 규칙 및 게시 워크플로우에 대해 알아봅니다.
-feature: launch
 topics: integrations
 audience: administrator
 doc-type: technical video
@@ -9,11 +8,14 @@ activity: setup
 version: cloud-service
 kt: 5980
 thumbnail: 38553.jpg
+topic: 통합
+role: 개발자
+level: 중간
 translation-type: tm+mt
-source-git-commit: eabc325c498b4d5b8b5a53b9004f0e89d82cefe3
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '109'
-ht-degree: 1%
+source-wordcount: '112'
+ht-degree: 3%
 
 ---
 
