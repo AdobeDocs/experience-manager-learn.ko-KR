@@ -1,7 +1,7 @@
 ---
 title: 서명을 위한 Forms 만들기
 description: 서명 패키지에 포함해야 하는 양식을 만듭니다.
-feature: adaptive-forms
+feature: 적응형 양식
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,11 +9,14 @@ activity: implement
 version: 6.4,6.5
 kt: 6893
 thumbnail: 6893.jpg
+topic: 개발
+role: 비즈니스 전문가
+level: 초급
 translation-type: tm+mt
-source-git-commit: 049574ab2536b784d6b303f474dba0412007e18c
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 0%
+source-wordcount: '332'
+ht-degree: 1%
 
 ---
 
