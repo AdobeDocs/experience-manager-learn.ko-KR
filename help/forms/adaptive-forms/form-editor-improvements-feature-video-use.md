@@ -3,7 +3,7 @@ title: AEM Forms의 양식 편집기 개선 사항
 seo-title: AEM Forms의 양식 편집기 개선 사항
 description: AEM 6.3에서는 적응형 양식 및 문서의 작성 환경을 간소화하기 위해 이 릴리스의 몇 가지 새로운 기능과 향상된 기능을 제공합니다. 향상된 기능을 통해 출시 시간을 단축하고 비즈니스 사용자가 양식 및 문서를 사용하여 작업할 수 있습니다
 seo-description: AEM 6.3에서는 적응형 양식 및 문서의 작성 환경을 간소화하기 위해 이 릴리스의 몇 가지 새로운 기능과 향상된 기능을 제공합니다. 향상된 기능을 통해 출시 시간을 단축하고 비즈니스 사용자가 양식 및 문서를 사용하여 작업할 수 있습니다
-feature: adaptive-forms
+feature: 적응형 양식
 topics: authoring
 audience: developer
 doc-type: technical video
@@ -11,11 +11,14 @@ activity: setup
 version: 6.3,6.4,6.5
 uuid: 9e76a2b8-f843-47b8-abf8-596c64fbcbb6
 discoiquuid: 7a7bad50-c604-4182-accb-acb85571ba78
+topic: 개발
+role: 비즈니스 전문가
+level: 초급
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 0%
+source-wordcount: '237'
+ht-degree: 1%
 
 ---
 
