@@ -4,17 +4,20 @@ seo-title: AEM Forms 및 Adobe Campaign Standard 시작하기
 description: AEM Forms 양식 데이터 모델을 사용하여 AEM Forms을 Adobe Campaign Standard과 통합하여 ACS 캠페인 프로필 정보 등을 가져올 수 있습니다.
 seo-description: AEM Forms 양식 데이터 모델을 사용하여 AEM Forms을 Adobe Campaign Standard과 통합하여 ACS 캠페인 프로필 정보 등을 가져올 수 있습니다.
 uuid: 56450c9b-3752-4a64-b1b3-8c78e81f5921
-feature: adaptive-forms, form-data-model
+feature: '"적응형 Forms, 양식 데이터 모델"'
 topics: integrations
 audience: developer
 doc-type: tutorial
 activity: setup
 version: 6.3,6.4,6.5
 discoiquuid: 89245554-7b99-4e7e-9810-52191f9ea365
+topic: 개발
+role: 개발자
+level: 경험
 translation-type: tm+mt
-source-git-commit: 3b44a9e2341ce23f737e6ef75c67fadd9870d2ac
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '288'
 ht-degree: 0%
 
 ---
