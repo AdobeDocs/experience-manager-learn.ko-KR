@@ -3,7 +3,7 @@ title: AEM Sites에서 페이지 편집기 사용
 seo-title: Adobe Experience Manager Sites에서 페이지 편집기 사용
 description: 다음 비디오에서는 Adobe Experience Manager에서 터치 UI 사이트 편집기의 주요 기능 중 몇 가지를 강조 표시합니다.
 seo-description: 다음 비디오에서는 Adobe Experience Manager에서 터치 UI 사이트 편집기의 주요 기능 중 몇 가지를 강조 표시합니다.
-feature: page-editor
+feature: 페이지 편집기
 topics: authoring
 audience: author, marketer
 doc-type: feature video
@@ -11,11 +11,14 @@ activity: use
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 4248
 thumbnail: 32011.jpg
+topic: 컨텐츠 관리
+role: 비즈니스 전문가
+level: 초급
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '242'
-ht-degree: 7%
+source-wordcount: '249'
+ht-degree: 8%
 
 ---
 
