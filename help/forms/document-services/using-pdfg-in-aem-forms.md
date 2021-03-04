@@ -4,18 +4,21 @@ seo-title: AEM Forms에서 PDF 사용
 description: AEM Forms을 사용하여 PDF를 만들기 위한 드래그 앤 드롭 기능 보기
 seo-description: AEM Forms을 사용하여 PDF를 만들기 위한 드래그 앤 드롭 기능 보기
 uuid: ee54edb4-a7b1-42ed-81ea-cb6bef6cf97f
-feature: pdf-generator
+feature: pdf 생성기
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
 discoiquuid: 7f570f12-ce43-4da7-a249-ef6bd0fe48e5
+topic: 개발
+role: 개발자
+level: 중간
 translation-type: tm+mt
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '281'
-ht-degree: 0%
+source-wordcount: '285'
+ht-degree: 2%
 
 ---
 
@@ -31,7 +34,7 @@ PDF는 PDF 생성을 의미합니다. 즉, 다양한 파일 형식을 PDF로 변
 
 데모 에셋을 설치하려면 다음 단계를 수행하십시오
 
-1. 이 문서 [여기](https://helpx.adobe.com/experience-manager/6-4/forms/using/install-configure-pdf-generator.html)에 명시된 대로 PDFG를 구성합니다.
+1. 이 문서 [여기](https://helpx.adobe.com/kr/experience-manager/6-4/forms/using/install-configure-pdf-generator.html)에 명시된 대로 PDFG를 구성합니다.
 1. AEM Forms 버전과 관련된 적절한 설명서를 따르십시오.
 1. [패키지 관리자를 사용하여 이 아티클과 관련된 에셋을 가져오고 설치합니다.](assets/createpdfgdemov2.zip)
 1. [게시물로 이동합니다.](http://localhost:4502/apps/AemFormsSamples/components/createPDF/POST.jsp) CRX 회전
