@@ -3,7 +3,7 @@ title: 번역 작업 상태
 seo-title: 번역 작업 상태
 description: 번역 작업 또는 작업의 항목과 연관된 여러 상태를 파악합니다.
 seo-description: 번역 작업 또는 작업의 항목과 연관된 여러 상태를 파악합니다.
-feature: language-copy, live-copy, multi-site-manager
+feature: 언어 사본, 다중 사이트 관리자
 topics: localization, authoring, content-architecture
 audience: all
 doc-type: feature video
@@ -11,11 +11,14 @@ activity: use
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 5846
 thumbnail: 36685.jpg
+topic: 로컬라이제이션
+role: 비즈니스 전문가
+level: 초급
 translation-type: tm+mt
-source-git-commit: 309bed2f0c137bdd245c017cd1f94d7f6ca2d396
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '54'
-ht-degree: 16%
+source-wordcount: '63'
+ht-degree: 15%
 
 ---
 
