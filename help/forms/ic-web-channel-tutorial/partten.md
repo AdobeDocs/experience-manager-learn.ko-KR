@@ -4,18 +4,21 @@ seo-title: 퇴직 Outlook 패널 구성
 description: 첫 번째 인터랙티브 커뮤니케이션 문서를 만들기 위한 여러 단계로 구성된 자습서의 10부분입니다. 이 부분에서는 텍스트 및 차트 구성 요소를 추가하여 은퇴 outlook 패널을 구성합니다.
 seo-description: 첫 번째 인터랙티브 커뮤니케이션 문서를 만들기 위한 여러 단계로 구성된 자습서의 10부분입니다. 이 부분에서는 텍스트 및 차트 구성 요소를 추가하여 은퇴 outlook 패널을 구성합니다.
 uuid: 1d5119b5-e797-4bf0-9b10-995b3f051f92
-feature: interactive-communication
+feature: 대화형 통신
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 discoiquuid: 2ee2cea2-aefa-4d21-a258-248648f73a68
+topic: 개발
+role: 개발자
+level: 초급
 translation-type: tm+mt
-source-git-commit: f6a9c0522219614b87c483504c9c64875f2e4286
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 0%
+source-wordcount: '383'
+ht-degree: 1%
 
 ---
 
