@@ -4,7 +4,7 @@ seo-title: 인쇄 채널 문서에 텍스트 및 이미지 컨텐츠 추가
 description: '첫 번째 인터랙티브 커뮤니케이션 문서를 만들기 위한 다단계 자습서의 7부분입니다. 이 부분에서는 레이아웃(xdp)에 정의된 대상 영역에 이미지와 텍스트 컨텐츠를 추가합니다. '
 seo-description: '첫 번째 인터랙티브 커뮤니케이션 문서를 만들기 위한 다단계 자습서의 7부분입니다. 이 부분에서는 레이아웃(xdp)에 정의된 대상 영역에 이미지와 텍스트 컨텐츠를 추가합니다. '
 uuid: f20d6974-6faf-4b90-a7ff-8aa8a620fcaa
-feature: interactive-communication
+feature: 대화형 통신
 topics: development
 audience: developer
 doc-type: tutorial
@@ -13,11 +13,14 @@ version: 6.4,6.5
 discoiquuid: a79bf219-2423-4819-89fc-dcfe976e08b7
 kt: 5992
 thumbnail: 22379.jpg
+topic: 개발
+role: 개발자
+level: 초급
 translation-type: tm+mt
-source-git-commit: 449202af47b6bbcd9f860d5c5391d1f7096d489e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '196'
-ht-degree: 0%
+source-wordcount: '201'
+ht-degree: 1%
 
 ---
 
