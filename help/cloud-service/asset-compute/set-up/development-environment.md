@@ -1,7 +1,7 @@
 ---
 title: asset compute 확장성을 위한 로컬 개발 환경 설정
 description: Node.js JavaScript 애플리케이션인 Asset compute 작업자를 개발하려면 Node.js 및 다양한 npm 모듈에서 Docker Desktop 및 Microsoft Visual Studio 코드에 이르기까지 기존의 AEM 개발과는 다른 특정 개발 도구가 필요합니다.
-feature: asset-compute
+feature: asset compute 마이크로서비스
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,10 +9,13 @@ audience: developer
 doc-type: tutorial
 kt: 6266
 thumbnail: KT-6266.jpg
+topic: 통합, 개발
+role: 개발자
+level: 중간, 경험
 translation-type: tm+mt
-source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '498'
 ht-degree: 0%
 
 ---
@@ -75,7 +78,7 @@ asset compute 근로자는 [Node.js](https://nodejs.org/) 기반이므로 개발
 
 ## Adobe I/O CLI 설치{#aio}
 
-[Adobe I/O CLI](../../local-development-environment/development-tools.md#aio-cli) 또는 Adobe I/O 기술 사용 및 상호 작용을 용이하게 하고 사용자 정의 Asset compute 작업자를 생성 및 로컬에서 개발하는 데 사용되는  ____ CLI(Aiois an command-line) npm 모듈을 설치합니다.
+[Adobe I/O CLI](../../local-development-environment/development-tools.md#aio-cli) 또는 Adobe I/O 기술 ____ 의 사용 및 상호 작용을 용이하게 하고 사용자 정의 Asset compute 작업자를 생성 및 로컬에서 개발하는 데 사용되는 CLI(Aiois an command-line) npm 모듈을 설치합니다.
 
 ```
 $ npm install -g @adobe/aio-cli
@@ -101,7 +104,7 @@ $ npm install -g @openwhisk/wskdebug
 
 ## ngrok{#ngrok} 설치
 
-asset compute 작업자의 로컬 디버깅을 용이하게 하기 위해 로컬 개발 시스템에 대한 공용 액세스를 제공하는 [ngroup](https://www.npmjs.com/package/ngrok) npm 모듈을 다운로드하여 설치합니다.
+asset compute 작업자의 로컬 디버깅을 용이하게 하기 위해 로컬 개발 컴퓨터에 대한 공용 액세스를 제공하는 [npm 모듈을 다운로드하여 설치합니다.](https://www.npmjs.com/package/ngrok)
 
 ```
 $ npm install -g ngrok --unsafe-perm=true
