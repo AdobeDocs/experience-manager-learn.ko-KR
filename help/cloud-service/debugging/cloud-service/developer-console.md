@@ -1,7 +1,7 @@
 ---
 title: 개발자 콘솔
 description: AEM as a Cloud Service은 디버깅에 유용한 실행 중인 AEM 서비스의 다양한 세부 사항을 표시하는 각 환경에 대한 개발자 콘솔을 제공합니다.
-feature: null
+feature: 개발자 도구
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -9,11 +9,14 @@ activity: develop
 audience: developer
 kt: 5433
 thumbnail: kt-5433.jpg
+topic: 개발
+role: 개발자
+level: 초급
 translation-type: tm+mt
-source-git-commit: 1af3661e5c18206d58d339d51d5189834e843023
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1344'
-ht-degree: 0%
+source-wordcount: '1349'
+ht-degree: 1%
 
 ---
 
@@ -45,14 +48,14 @@ Cloud Service 환경으로서 각 AEM에는 자체 개발자 콘솔이 있습니
 401 권한 없는 문제를 해결하려면 다음을 수행하십시오.
 
 1. 사용자가 Cloud Service 제품 인스턴스로 개발자 콘솔과 연결된 AEM에 대한 적절한 Adobe IMS 제품 프로필(AEM 관리자 또는 AEM 사용자)의 멤버인지 확인합니다.
-   + Developer Console은 2개의 Adobe IMS 제품 인스턴스에 액세스합니다.aem은 Cloud Service 작성자 및 게시 제품 인스턴스로 표시되므로 개발자 콘솔을 통해 액세스해야 하는 서비스 계층에 따라 올바른 제품 프로필이 사용되는지 확인하십시오.
+   + Developer Console은 2개의 Adobe IMS 제품 인스턴스에 액세스합니다.AEM은 Cloud Service 작성자 및 게시 제품 인스턴스로 표시되므로 개발자 콘솔을 통해 액세스해야 하는 서비스 계층에 따라 올바른 제품 프로필이 사용되는지 확인하십시오.
 1. AEM에 Cloud Service(작성자 또는 게시)로 로그인하고 사용자 및 그룹이 AEM에 제대로 동기화되었는지 확인합니다.
    + 개발자 콘솔에서는 해당 서비스 계층에 인증하기 위해 해당 AEM 서비스 계층에서 사용자 레코드를 만들어야 합니다.
 1. 브라우저 쿠키와 애플리케이션 상태(로컬 저장소)를 지우고 개발자 콘솔에 다시 로그인하여 액세스 토큰의 개발자 콘솔이 올바로 사용되고 있고 만료되지 않도록 합니다.
 
 ## 창
 
-CLOUD SERVICE 작성자 및 게시 서비스인 AEM은 다운타임 없이 트래픽 가변성과 롤링 업데이트를 처리하기 위해 각각 여러 개의 인스턴스로 구성됩니다. 이러한 인스턴스를 [창]이라고 합니다. 개발자 콘솔의 창 선택 항목은 다른 컨트롤을 통해 노출되는 데이터의 범위를 정의합니다.
+Cloud Service 작성자 및 게시 서비스인 AEM은 다운타임 없이 트래픽 가변성과 롤링 업데이트를 처리하기 위해 각각 여러 개의 인스턴스로 구성됩니다. 이러한 인스턴스를 [창]이라고 합니다. 개발자 콘솔의 창 선택 항목은 다른 컨트롤을 통해 노출되는 데이터의 범위를 정의합니다.
 
 ![개발자 콘솔 - 창](./assets/developer-console/pod.png)
 
@@ -72,7 +75,7 @@ CLOUD SERVICE 작성자 및 게시 서비스인 AEM은 다운타임 없이 트�
 
 ### 번들
 
-번들에는 AEM의 모든 OSGi 번들이 나열됩니다. 이 기능은 ](http://localhost:4502/system/console/bundles)AEM SDK의 로컬 quickstart의 OSGi 번들[과 유사합니다.`/system/console/bundles`
+번들에는 AEM의 모든 OSGi 번들이 나열됩니다. 이 기능은 `/system/console/bundles`AEM SDK의 로컬 quickstart의 OSGi 번들](http://localhost:4502/system/console/bundles)과 유사합니다.[
 
 디버깅에 도움이 되는 번들:
 
@@ -82,7 +85,7 @@ CLOUD SERVICE 작성자 및 게시 서비스인 AEM은 다운타임 없이 트�
 
 ### 구성 요소
 
-구성 요소는 AEM의 모든 OSGi 구성 요소를 나열합니다. 이 기능은 ](http://localhost:4502/system/console/components)AEM SDK의 로컬 quickstart의 OSGi 구성 요소[와 유사합니다.`/system/console/components`
+구성 요소는 AEM의 모든 OSGi 구성 요소를 나열합니다. 이 기능은 `/system/console/components`AEM SDK의 로컬 quickstart의 OSGi 구성 요소](http://localhost:4502/system/console/components)와 유사합니다.[
 
 구성 요소는 다음을 통해 디버깅에 도움이 됩니다.
 
@@ -110,7 +113,7 @@ Oak 인덱스는 디버깅에 다음과 같은 방법을 사용합니다.
 
 ### OSGi 서비스
 
-구성 요소에는 모든 OSGi 서비스가 나열됩니다. 이 기능은 ](http://localhost:4502/system/console/services)AEM SDK의 로컬 quickstart의 OSGi 서비스[와 유사합니다.`/system/console/services`
+구성 요소에는 모든 OSGi 서비스가 나열됩니다. 이 기능은 `/system/console/services`AEM SDK의 로컬 quickstart의 OSGi 서비스](http://localhost:4502/system/console/services)와 유사합니다.[
 
 OSGi Services 도움말은 다음을 통해 디버깅할 수 있습니다.
 
@@ -118,7 +121,7 @@ OSGi Services 도움말은 다음을 통해 디버깅할 수 있습니다.
 
 ### Sling 작업
 
-Sling 작업은 모든 Sling 작업 대기열을 나열합니다. 이 기능은 ](http://localhost:4502/system/console/slingevent)AEM SDK의 로컬 quickstart 작업[과 유사합니다.`/system/console/slingevent`
+Sling 작업은 모든 Sling 작업 대기열을 나열합니다. 이 기능은 `/system/console/slingevent`AEM SDK의 로컬 quickstart 작업](http://localhost:4502/system/console/slingevent)과 유사합니다.[
 
 Sling Jobs는 디버깅에 다음과 같은 방법을 제공합니다.
 
@@ -140,7 +143,7 @@ Java Packages는 확인되지 않은 가져오기 문제 또는 스크립트(HTL
 
 ## Servlets
 
-서블릿은 AEM이 요청을 궁극적으로 처리하는 Java 서블릿 또는 스크립트(HTL, JSP)로 URL을 해결하는 방법에 대한 통찰력을 제공하는 데 사용됩니다. 이 기능은 ](http://localhost:4502/system/console/servletresolver)에서 AEM SDK의 로컬 Quickstart의 Sling Servlet Resolver[과 동일합니다.`/system/console/servletresolver`
+서블릿은 AEM이 요청을 궁극적으로 처리하는 Java 서블릿 또는 스크립트(HTL, JSP)로 URL을 해결하는 방법에 대한 통찰력을 제공하는 데 사용됩니다. 이 기능은 `/system/console/servletresolver`에서 AEM SDK의 로컬 Quickstart의 Sling Servlet Resolver](http://localhost:4502/system/console/servletresolver)과 동일합니다.[
 
 ![개발자 콘솔 - 서비스](./assets/developer-console/servlets.png)
 
