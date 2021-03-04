@@ -1,12 +1,14 @@
 ---
-title: 3장 - 고급 캐싱 항목
-seo-title: AEM Dispatcher Cache Demanded - 3장 - 고급 캐싱 항목
-description: AEM Dispatcher Cache Demified 자습서의 3장에서는 2장에서 설명한 제한 사항을 해결하는 방법을 설명합니다.
-seo-description: AEM Dispatcher Cache Demified 자습서의 3장에서는 2장에서 설명한 제한 사항을 해결하는 방법을 설명합니다.
+title: '"3장 - 고급 발송자 캐싱 항목"'
+description: AEM에서 캐싱할 3부 시리즈의 3부입니다. 처음 두 부분은 Dispatcher의 일반 http 캐싱에 중점을 두었으며 어떤 제한이 있습니까? 이 섹션에서는 이러한 한계를 극복할 수 있는 방법에 대한 몇 가지 아이디어를 설명합니다.
+feature: Dispatcher
+topic: 아키텍처
+role: 건축가
+level: 중간
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '6187'
+source-wordcount: '6191'
 ht-degree: 0%
 
 ---
@@ -141,7 +143,7 @@ Dispatcher를 툴박스에서 유일한 툴로 사용하면 사실상 한계가 
 
 하나의 규칙을 염두에 두어야 합니다.
 
-내면에서 외부 캐시까지 항상 무효화합니다. 외부 캐시를 먼저 무효화하면 내부 캐시를 통해 오래된 콘텐츠를 다시 캐시할 수 있습니다. 캐시가 다시 업데이트되는 시간을 추측하지 마십시오. 반드시 확인하십시오. 가장 좋습니다. 외부 캐시 _after_&#x200B;에 대한 무효화를 트리거하여 내부 캐시를 무효화합니다.
+내면에서 외부 캐시까지 항상 무효화합니다. 외부 캐시를 먼저 무효화하면 내부 캐시를 통해 오래된 콘텐츠를 다시 캐시할 수 있습니다. 캐시가 다시 업데이트되는 시간을 추측하지 마십시오. 반드시 확인하십시오. 가장 좋습니다. 외부 캐시 _after_&#x200B;가 내부 캐시를 무효화합니다.
 
 자, 그것이 이론입니다. 하지만 실제로는 많은 것이 있습니다. 이벤트를 네트워크를 통해 배포해야 합니다. 실제로, 이것은 구현하기에 가장 어려운 실효 제도이다.
 
