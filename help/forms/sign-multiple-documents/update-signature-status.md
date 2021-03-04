@@ -1,7 +1,7 @@
 ---
 title: 데이터베이스에서 양식의 서명 상태 업데이트
 description: AEM 작업 과정을 사용하여 데이터베이스에서 서명된 양식의 서명 상태를 업데이트합니다.
-feature: adaptive-forms
+feature: 적응형 양식
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,11 +9,14 @@ activity: implement
 version: 6.4,6.5
 kt: 6888
 thumbnail: 6888.jpg
+topic: 개발
+role: 개발자
+level: 경험
 translation-type: tm+mt
-source-git-commit: 049574ab2536b784d6b303f474dba0412007e18c
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '104'
-ht-degree: 0%
+source-wordcount: '109'
+ht-degree: 4%
 
 ---
 
