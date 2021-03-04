@@ -3,15 +3,18 @@ title: AEM을 통한 CORS(Cross-Origin Resource Sharing) 개발
 description: 클라이언트측 JavaScript를 통해 외부 웹 애플리케이션에서 AEM 컨텐츠에 액세스하기 위해 CORS를 활용하는 간단한 예.
 version: 6.3, 6,4, 6.5
 sub-product: 기반, 컨텐츠 서비스, 사이트
-feature: null
 topics: security, development, content-delivery
 activity: develop
 audience: developer
 doc-type: tutorial
+topic: 보안
+role: 개발자
+level: 초급
+feature: null
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
