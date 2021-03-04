@@ -11,10 +11,14 @@ audience: developer
 kt: 4128
 mini-toc-levels: 1
 thumbnail: 30386.jpg
+feature: '"핵심 구성 요소, 스타일 시스템"'
+topic: '"콘텐츠 관리, 개발"'
+role: 개발자
+level: 초급
 translation-type: tm+mt
-source-git-commit: e03d84f92be11623704602fb448273e461c70b4e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '1996'
+source-wordcount: '2005'
 ht-degree: 0%
 
 ---
@@ -156,7 +160,7 @@ Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 �
     </div>
    ```
 
-1. 브라우저로 돌아가서 추가 클래스가 마크업에 반영되었는지 확인합니다.
+1. 브라우저로 돌아가 추가 클래스가 마크업에 반영되었는지 확인합니다.
 1. **ui.frontend** 모듈로 돌아가서 다음 위치에 있는 `title.scss` 파일을 업데이트합니다.`ui.frontend/src/main/webpack/components/_title.scss`:
 
    ```css
