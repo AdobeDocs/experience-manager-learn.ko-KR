@@ -2,19 +2,18 @@
 title: 컬렉션
 description: 컬렉션이 AEM Assets에 대해 어떻게 다양한 관점을 제공하고 있는지 알아봅니다.
 sub-product: 자산
-feature: collections
-topics: authoring
-audience: author
-doc-type: feature video
-activity: use
+feature: 컬렉션
 version: cloud-service
 kt: 4301
 thumbnail: 32053.jpg
+topic: 컨텐츠 관리
+role: 비즈니스 전문가
+level: 초급
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '23'
-ht-degree: 8%
+source-wordcount: '29'
+ht-degree: 17%
 
 ---
 
