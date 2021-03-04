@@ -1,18 +1,21 @@
 ---
 title: automated forms conversion 서비스
 description: automated forms conversion 서비스. 이 문서에서는 AEM 관리자가 Automated forms conversion 서비스를 구성하여 PDF forms을 적응형 양식으로 변환하는 방법을 설명합니다. 이 도움말은 조직의 IT 및 AEM 관리자를 위한 것입니다.
-feature: adaptive-forms
+feature: 적응형 양식
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 thumbnail: 39493.jpg
 kt: 6114
+topic: 개발
+role: 관리자
+level: 초급
 translation-type: tm+mt
-source-git-commit: 451ca39511b52e90a44bba25c6739280f49a0aac
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 14%
+source-wordcount: '258'
+ht-degree: 15%
 
 ---
 
