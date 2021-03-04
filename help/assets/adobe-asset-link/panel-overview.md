@@ -2,19 +2,18 @@
 title: Adobe 에셋 링크 패널 개요
 description: 'Adobe Asset Link는 크리에이티브 사용자가 InDesign, Photoshop 및 Illustrator의 인앱 패널을 통해 AEM Assets에 저장되어 있는 에셋을 검색, 검색, 체크 아웃 및 확인할 수 있는 기능을 제공합니다. Adobe 에셋 링크 패널의 UI 및 기능에 대해 소개합니다. '
 sub-product: 자산
-feature: adobe-asset-link
-topics: authoring, collaboration, operations, sharing, metadata, images
-audience: all
-doc-type: feature video
-activity: use
-version: null
+feature: Adobe Asset Link
+version: cloud-service
 kt: 4905
 thumbnail: 33734.jpg
+topic: 컨텐츠 관리
+role: 비즈니스 전문가
+level: 초급
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '95'
-ht-degree: 0%
+source-wordcount: '103'
+ht-degree: 4%
 
 ---
 
