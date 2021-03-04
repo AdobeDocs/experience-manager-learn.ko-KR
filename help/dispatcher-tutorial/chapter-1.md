@@ -1,12 +1,14 @@
 ---
-title: 1장 - 자습서 설정 및 다운로드
-seo-title: AEM Content Services 시작하기 - 1장 - 자습서 설정
-description: AEM 헤드리스 자습서의 1장에서는 자습서에 대한 AEM 인스턴스의 기준선 설정을 설명합니다.
-seo-description: AEM 헤드리스 자습서의 1장에서는 자습서에 대한 AEM 인스턴스의 기준선 설정을 설명합니다.
+title: '"1장 - 발송자 개념, 패턴 및 안티패턴"'
+description: 이 장에서는 Dispatcher의 작업 내역과 구조에 대한 간단한 설명을 제공하며 AEM 개발자가 구성 요소를 디자인하는 방식에 미치는 영향을 설명합니다.
+feature: Dispatcher
+topic: 아키텍처
+role: 건축가
+level: 초급
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '17502'
+source-wordcount: '17489'
 ht-degree: 0%
 
 ---
