@@ -3,7 +3,7 @@ title: AEM Sites의 페이지 속성 이해
 seo-title: Adobe Experience Manager Sites의 페이지 속성 이해
 description: 다음 비디오에서는 Adobe Experience Manager의 페이지와 연결된 페이지 속성 메타데이터를 소개합니다.
 seo-description: '다음 비디오에서는 Adobe Experience Manager의 페이지와 연결된 페이지 속성 메타데이터를 소개합니다. '
-feature: page-editor
+feature: 페이지 편집기
 topics: authoring, metadata
 audience: author, marketer
 doc-type: feature video
@@ -11,11 +11,14 @@ activity: understand
 version: 6.3, 6.4, 6.5
 kt: 4321
 thumbnail: 32192.jpg
+topic: 컨텐츠 관리
+role: 비즈니스 전문가
+level: 초급
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 27%
+source-wordcount: '177'
+ht-degree: 28%
 
 ---
 
