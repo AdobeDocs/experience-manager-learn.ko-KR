@@ -1,18 +1,21 @@
 ---
 title: SMS 2단계 인증
 description: 특정 활동을 수행하려는 사용자의 ID를 확인하는 데 도움이 되는 추가 보안 레이어를 추가합니다.
-feature: integrations
+feature: 적응형 양식
 topics: adaptive forms
 audience: developer
 doc-type: article
 activity: use
 version: 6.4,6.5
 kt: 6317
+topic: 개발
+role: 개발자
+level: 경험
 translation-type: tm+mt
-source-git-commit: 4c08b09f59be0eb6644aaec729807b92bc339e82
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '603'
-ht-degree: 1%
+source-wordcount: '608'
+ht-degree: 2%
 
 ---
 
