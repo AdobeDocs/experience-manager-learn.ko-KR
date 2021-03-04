@@ -1,7 +1,7 @@
 ---
 title: 핵심 구성 요소 이해
 description: 'AEM 코어 구성 요소는 Adobe Experience Manager과 함께 사용할 표준 세트 구성 요소입니다. 핵심 구성 요소는 Adobe의 우수 사례 및 표준을 사용하여 구축되었으며 모든 사이트 구현에 대한 기본 기능 세트를 제공합니다. '
-feature: core-components
+feature: 코어 구성 요소
 topics: authoring
 audience: all
 activity: use
@@ -9,11 +9,14 @@ doc-type: feature video
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 4676
 thumbnail: 18926.jpg
+topic: 개발
+role: 비즈니스 전문가
+level: 초급
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '98'
-ht-degree: 14%
+source-wordcount: '104'
+ht-degree: 16%
 
 ---
 
