@@ -1,7 +1,7 @@
 ---
 title: Analysis Workspace을 사용하여 데이터 분석
 description: Adobe Experience Manager 사이트에서 캡처한 데이터를 Adobe Analytics 보고서 세트의 지표 및 차원에 매핑하는 방법을 알아봅니다. Adobe Analytics의 Analysis Workspace 기능을 사용하여 자세한 보고 대시보드를 만드는 방법을 알아봅니다.
-feature: analytics
+feature: 분석
 topics: integrations
 audience: administrator
 doc-type: tutorial
@@ -9,10 +9,13 @@ activity: setup
 version: cloud-service
 kt: 6409
 thumbnail: KT-6296.jpg
+topic: 통합
+role: 비즈니스 전문가
+level: 중간
 translation-type: tm+mt
-source-git-commit: 55beee99b91c44f96cd37d161bb3b4ffe38d2687
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '2202'
+source-wordcount: '2207'
 ht-degree: 0%
 
 ---
