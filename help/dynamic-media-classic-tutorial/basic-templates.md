@@ -2,15 +2,18 @@
 title: 기본 템플릿 소개
 description: 이미지 서버에서 호출된 이미지 기반 템플릿과 이미지 및 렌더링된 텍스트로 구성된 Dynamic Media Classic의 기본 템플릿에 대해 알아봅니다. 템플릿이 게시된 후 URL을 통해 템플릿을 동적으로 변경할 수 있습니다. Photoshop PSD를 Dynamic Media Classic에 업로드하여 템플릿의 기반으로 사용하는 방법을 살펴봅니다. 이미지 레이어로 구성된 간단한 머천다이징 기본 템플릿을 만듭니다. 매개 변수를 사용하여 텍스트 레이어를 추가하고 변수를 변경할 수 있습니다. 템플릿 URL을 구성하고 웹 브라우저를 통해 이미지를 동적으로 조작합니다.
 sub-product: dynamic-media
-feature: templates
+feature: Dynamic Media Classic
 doc-type: tutorial
 topics: development, authoring, configuring
 audience: all
 activity: use
+topic: 컨텐츠 관리
+role: 비즈니스 전문가
+level: 초급
 translation-type: tm+mt
-source-git-commit: 5eeeb197f9a2ee4216e1f9220c830751c36f01ab
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '6301'
+source-wordcount: '6309'
 ht-degree: 0%
 
 ---
@@ -124,11 +127,11 @@ Dynamic Media Classic에서는 이 글꼴의 파일 이름(ACaslonPro-Semibold)�
 
 URL을 통해 글꼴을 변경해야 하는 경우 글꼴의 RTF 이름(에셋 ID가 아님)을 호출해야 합니다. 그렇지 않으면 오류가 발생합니다. 이 경우 이 글꼴의 올바른 이름은 &quot;Adobe Caslon Pro&quot;입니다. 아래에 있는 RTF 및 텍스트 매개 변수에 글꼴 및 RTF에 대해 자세히 설명합니다.
 
-Windows 및 Mac 시스템에서 찾을 수 있는 가장 일반적인 글꼴 파일 형식은 OpenType 및 TrueType입니다. OpenType의 확장명은 .OTF이고 TrueType은 .TTF입니다. 두 포맷 모두 Dynamic Media Classic에서 동일하게 잘 작동합니다.
+Windows 및 Mac 시스템에서 발견되는 가장 일반적인 글꼴 파일 포맷은 OpenType 및 TrueType입니다. OpenType의 확장명은 .OTF이고 TrueType은 .TTF입니다. 두 포맷 모두 Dynamic Media Classic에서 동일하게 잘 작동합니다.
 
 ### PSD 업로드 시 옵션 선택
 
-템플릿을 만들기 위해 Photoshop 파일(PSD)을 업로드할 필요가 없습니다.dynamic media Classic의 이미지 에셋으로 템플릿을 작성할 수 있습니다. 그러나 PSD를 업로드하면 일반적으로 이러한 에셋이 레이어로 구성된 PSD에 이미 있으므로 보다 쉽게 작성할 수 있습니다. 또한 레이어로 구성된 PSD를 업로드할 때 Dynamic Media Classic에서는 템플릿이 자동으로 생성됩니다.
+템플릿을 만들기 위해 Photoshop 파일(PSD)을 업로드할 필요가 없습니다.Dynamic Media Classic의 이미지 에셋으로 템플릿을 작성할 수 있습니다. 그러나 PSD를 업로드하면 일반적으로 이러한 에셋이 레이어로 구성된 PSD에 이미 있으므로 보다 쉽게 작성할 수 있습니다. 또한 레이어로 구성된 PSD를 업로드할 때 Dynamic Media Classic에서는 템플릿이 자동으로 생성됩니다.
 
 - **레이어 유지.** 이것이 가장 중요한 선택이다. 이렇게 하면 Dynamic Media Classic에서 Photoshop 레이어당 하나의 이미지 에셋을 만듭니다. 선택 취소하면 다른 모든 옵션이 비활성화되고 PSD가 단일 이미지로 병합됩니다.
 - **템플릿** **만들기를 참조하십시오.** 이 옵션은 다양한 생성된 레이어를 가져와 다시 결합하여 템플릿을 자동으로 만듭니다. 자동 생성된 템플릿을 사용할 때의 단점은 Dynamic Media Classic에서 모든 레이어를 하나의 파일에 배치하지만 레이어당 하나의 자리 표시자만 있으면 된다는 것입니다. 추가 레이어를 삭제하기는 쉽지만 레이어가 많을 경우 레이어를 다시 만드는 것이 더 빠릅니다. 새 템플릿의 이름을 변경해야 합니다.그렇지 않은 경우 다음 번에 동일한 PSD를 다시 업로드할 때 덮어쓰기됩니다.
@@ -248,7 +251,7 @@ Dynamic Media Classic 용어에서 매개 변수는 URL을 통해 조작할 수 
 
 [템플릿 기본] 도구를 사용하여 텍스트에 변수를 추가하려면 텍스트가 렌더링되는 방식을 이해해야 합니다. 이미지 서버는 Photoshop 및 Illustrator에서 사용하는 동일한 엔진인 Adobe 텍스트 엔진을 사용하여 텍스트를 생성하고 이 엔진은 최종 이미지의 레이어로 합성합니다. 엔진과 통신하기 위해 이미지 서버는 [서식 있는 텍스트 형식] 또는 [RTF]를 사용합니다.
 
-RTF는 문서 서식을 지정하기 위해 Microsoft에서 개발한 파일 형식 사양입니다. 대부분의 워드 프로세싱 및 이메일 소프트웨어에서 사용되는 표준 마크업 언어입니다. URL &amp;text=\b1 Hello에 로그인하면 \b1은 텍스트를 굵게 만드는 RTF 명령이므로 이미지 서버에서 &quot;Hello&quot;라는 단어가 굵게 표시된 이미지를 생성합니다.
+RTF는 문서 서식을 지정하기 위해 Microsoft에서 개발한 파일 형식 사양입니다. 대부분의 워드 프로세싱 및 이메일 소프트웨어에서 사용되는 표준 마크업 언어입니다. URL &amp;text=\b1 Hello에 로그인하면 \b1은 텍스트를 굵게 만드는 RTF 명령이므로 이미지 서버에서 &quot;Hello&quot;라는 단어를 굵게 입력하여 이미지를 생성합니다.
 
 좋은 소식은 Dynamic Media Classic에서 RTF를 자동으로 생성한다는 것입니다. 템플릿에 텍스트를 입력하고 서식을 추가할 때마다 Dynamic Media Classic에서는 RTF 코드를 템플릿에 자동으로 기록합니다. 매개 변수를 RTF 자체에 직접 추가하므로 익숙한 것이 중요합니다.
 
