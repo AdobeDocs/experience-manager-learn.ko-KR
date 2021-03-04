@@ -13,14 +13,11 @@ version: 6.4,6.5
 discoiquuid: 17f4cdbb-079b-4fe3-861d-cfa0c03d30dd
 kt: 5957
 thumbnail: 37890.jpg
-topic: 개발
-role: 개발자
-level: 초급
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '169'
-ht-degree: 2%
+source-wordcount: '165'
+ht-degree: 0%
 
 ---
 
