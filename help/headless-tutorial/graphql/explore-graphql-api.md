@@ -10,14 +10,10 @@ audience: developer
 mini-toc-levels: 1
 kt: 6714
 thumbnail: KT-6714.jpg
-feature: '"컨텐츠 조각, GraphQL API"'
-topic: '"헤드리스, 콘텐츠 관리"'
-role: 개발자
-level: 초급
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1134'
 ht-degree: 0%
 
 ---
