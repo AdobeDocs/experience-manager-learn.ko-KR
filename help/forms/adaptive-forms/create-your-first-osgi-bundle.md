@@ -1,19 +1,16 @@
 ---
 title: AEM 양식을 사용하여 간단한 OSGi 번들 만들기
 description: 마비나 eclipse를 사용하여 간단한 OSGi 번들 제작
-feature: 적응형 양식
+feature: 관리
 topics: development
 audience: developer
 doc-type: article
 activity: setup
 version: 6.4,6.5
-topic: 개발
-role: 개발자
-level: 초급
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '831'
 ht-degree: 2%
 
 ---
