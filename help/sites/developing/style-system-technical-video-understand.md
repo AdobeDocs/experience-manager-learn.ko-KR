@@ -1,17 +1,20 @@
 ---
 title: AEM 스타일 시스템의 코드 작성 방법 이해
 description: 이 비디오에서는 스타일 시스템을 사용하여 Adobe Experience Manager의 핵심 제목 구성 요소의 스타일을 지정하는 데 사용되는 CSS(또는 LESS) 및 JavaScript의 구조와 이러한 스타일이 HTML 및 DOM에 적용되는 방법을 살펴봅니다.
-feature: style-system
+feature: 스타일 시스템
 topics: development, components, front-end-development
 audience: developer, implementer
 doc-type: technical video
 activity: understand
 version: 6.4, 6.5
+topic: 개발
+role: 개발자
+level: 중간, 경험
 translation-type: tm+mt
-source-git-commit: 664d3964df796d508973067f8fa4fe5ef83c5fec
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1145'
-ht-degree: 1%
+source-wordcount: '1151'
+ht-degree: 2%
 
 ---
 
@@ -256,7 +259,7 @@ jQuery(function ($) {
 
 * Style-JavaScript는 밝고 날씬해야 합니다.
 * 깜박이거나 불필요한 다시 드래그를 피하려면, 처음에 `BLOCK--MODIFIER BLOCK`을 통해 구성 요소를 숨기고 JavaScript의 모든 DOM 조작이 완료되면 해당 구성 요소를 표시합니다.
-* 스타일-JavaScript 조정의 성능은 DOMAeady의 요소에 첨부하고 수정하는 기본 jQuery 플러그인과 비슷합니다.
+* 스타일-JavaScript 조정의 성능은 DOMAeday의 요소에 첨부하고 수정하는 기본 jQuery 플러그인과 비슷합니다.
 * 요청이 압축되고 CSS 및 JavaScript가 축소되었는지 확인합니다.
 
 ## 추가 리소스 {#additional-resources}
