@@ -4,7 +4,7 @@ seo-title: AEM에서 경험 조각 및 Adobe Target 통합 설정
 description: Adobe Experience Manager 6.4는 AEM과 Target 간의 개인화 워크플로우를 혁신합니다. 이제 AEM 내에서 만든 경험을 HTML 오퍼로 Adobe Target에 직접 전달할 수 있습니다. 이를 통해 마케터는 다양한 채널에서 컨텐츠를 원활하게 테스트하고 개인화할 수 있습니다.
 seo-description: Adobe Experience Manager 6.4는 AEM과 Target 간의 개인화 워크플로우를 혁신합니다. 이제 AEM 내에서 만든 경험을 HTML 오퍼로 Adobe Target에 직접 전달할 수 있습니다. 이를 통해 마케터는 다양한 채널에서 컨텐츠를 원활하게 테스트하고 개인화할 수 있습니다.
 sub-product: 컨텐츠 서비스
-feature: experience-fragments
+feature: 경험 구성요소
 topics: integrations
 audience: administrator, developer
 doc-type: technical video
@@ -12,11 +12,14 @@ activity: setup
 version: 6.4, 6.5
 uuid: 05fd477d-0c1a-42c0-ab92-2bca86602e2e
 discoiquuid: 16cb0b92-9398-4fd2-b8c3-f4b7675ef72c
+topic: 개인화
+role: 관리자, 개발자
+level: 중간
 translation-type: tm+mt
-source-git-commit: 7a830d5a04ce53014b86f9f05238dd64f79edffc
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 1%
+source-wordcount: '275'
+ht-degree: 2%
 
 ---
 
