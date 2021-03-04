@@ -2,16 +2,19 @@
 title: 스마트 이미징
 description: Dynamic Media Classic의 스마트 이미징은 클라이언트 브라우저 기능을 기반으로 이미지 형식과 품질을 자동으로 최적화하여 이미지 전달 성능을 향상시킵니다. Adobe Sensei AI 기능을 활용하고 기존 이미지 사전 설정을 사용하여 작업할 수 있습니다. 스마트 이미징에 대한 자세한 내용과 신속한 페이지 로드를 통해 고객 경험을 향상시키는 방법을 살펴볼 수 있습니다.
 sub-product: dynamic-media
-feature: smart-crop
+feature: Dynamic Media Classic
 doc-type: tutorial
 topics: development, authoring, configuring, renditions, images
 audience: all
 activity: use
+topic: 컨텐츠 관리
+role: 비즈니스 전문가
+level: 초급
 translation-type: tm+mt
-source-git-commit: 317fb625e7af57b7ad0079014c341eab9adda376
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '694'
-ht-degree: 1%
+source-wordcount: '702'
+ht-degree: 3%
 
 ---
 
@@ -22,7 +25,7 @@ ht-degree: 1%
 
 스마트 이미징은 또한 Adobe의 최고급 프리미엄 서비스와 완벽하게 통합되는 향상된 성능을 제공합니다. 이 서비스는 서버의 기본 경로보다 지연 시간이 가장 짧은 서버, 네트워크 및 피어링 지점 간의 최적의 인터넷 경로를 찾아냅니다.
 
-[스마트 이미징](https://docs.adobe.com/content/help/en/experience-manager-64/assets/dynamic/imaging-faq.html)에 대해 자세히 알아보십시오.
+[스마트 이미징](https://docs.adobe.com/content/help/ko-KR/experience-manager-64/assets/dynamic/imaging-faq.html)에 대해 자세히 알아보십시오.
 
 ## 스마트 이미징 이점
 
@@ -46,7 +49,7 @@ ht-degree: 1%
 >
 >스마트 이미징으로 이동하면 CDN의 캐시를 지웁니다. CDN의 캐시는 일반적으로 1 또는 2일 이내에 다시 빌드됩니다.
 
-스마트 이미징은 기존 Dynamic Media Classic 라이선스에 포함되어 있습니다. 이 기능에 대한 추가 비용은 없습니다. 이를 활용하려면 다음 두 가지 요구 사항을 충족해야 합니다.adobe 번들로 묶은 CDN과 전용 도메인을 보유합니다. 그러면 계정이 자동으로 활성화되지 않으므로 계정에 대해 활성화해야 합니다.
+스마트 이미징은 기존 Dynamic Media Classic 라이선스에 포함되어 있습니다. 이 기능에 대한 추가 비용은 없습니다. 이를 활용하려면 다음 두 가지 요구 사항을 충족해야 합니다.Adobe 번들로 묶은 CDN과 전용 도메인을 보유합니다. 그러면 계정이 자동으로 활성화되지 않으므로 계정에 대해 활성화해야 합니다.
 
 스마트 이미징 활성화는 기술 지원 요청을 보낼 때 |지원 사례 만들기| [https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Smart Imaging과 연결할 사용자 정의 도메인을 설정하는 기능이 지원됩니다. 캐싱(Time To Live) 또는 TTL(TTL)과 관련된 하나의 매개 변수를 변경하고 지원을 통해 캐시를 지웁니다. 프로덕션으로 푸시하기 전에 원할 경우 선택적 스테이징 단계를 수행할 수도 있습니다. 스마트 이미징이 켜져 있으면 고객이 요청한 동일한 품질로 더 작은 크기의 이미지를 제공할 수 있습니다. 즉, Adobe Sensei에서 가장 효율적인 크기를 선택할 수 있으므로 페이지 로드 시간이 단축되고 이 모든 작업이 자동으로 수행됩니다.
 
