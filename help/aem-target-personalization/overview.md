@@ -3,10 +3,14 @@ title: AEM 및 Adobe Target 시작하기
 seo-title: AEM 및 Adobe Target 시작하기
 description: Adobe Experience Manager 및 Adobe Target을 사용하여 개인화된 경험을 제작 및 전달하는 방법을 소개하는 종합적인 자습서입니다. 이 자습서에서는 엔드 투 엔드 프로세스와 관련된 다양한 성향과 이들이 어떻게 서로 협업하는지도 살펴봅니다
 seo-description: Adobe Experience Manager 및 Adobe Target을 사용하여 개인화된 경험을 제작 및 전달하는 방법을 소개하는 종합적인 자습서입니다. 이 자습서에서는 엔드 투 엔드 프로세스와 관련된 다양한 성향과 이들이 어떻게 서로 협업하는지도 살펴봅니다
+feature: 경험 구성요소
+topic: 개인화
+role: 개발자
+level: 중간
 translation-type: tm+mt
-source-git-commit: c4ddafe392f74be8401f3ef6e07fc9d463d7620a
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '894'
 ht-degree: 2%
 
 ---
