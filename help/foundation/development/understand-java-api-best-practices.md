@@ -3,18 +3,15 @@ title: AEM에서 Java API 우수 사례 이해
 description: AEM은 개발 중에 사용할 수 있는 많은 Java API를 표시하는 풍부한 오픈 소스 소프트웨어 스택을 기반으로 구축되었습니다. 이 문서에서는 주요 API와 API를 사용해야 하는 시기와 이유를 설명합니다.
 version: 6.2, 6.3, 6.4, 6.5
 sub-product: foundation, assets, sites
-feature: API
+feature: null
 topics: best-practices, development
 activity: develop
 audience: developer
 doc-type: article
-topic: 개발
-role: 개발자
-level: 초급
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '2027'
+source-wordcount: '2023'
 ht-degree: 2%
 
 ---
@@ -131,7 +128,7 @@ AEM은 여러 쿼리 언어를 지원합니다. 3개의 기본 언어는 [JCR-SQ
 * 비동기 작업 처리 구성 블록
 
    * [이벤트 및 작업 핸들러](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html)
-   * [스케줄러](https://sling.apache.org/documentation/bundles/scheduler-service-commons-scheduler.html)
+   * [예약](https://sling.apache.org/documentation/bundles/scheduler-service-commons-scheduler.html)
    * [Sling 모델](https://sling.apache.org/documentation/bundles/models.html)
 
 * [서비스 사용자](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/security-service-users.html)
