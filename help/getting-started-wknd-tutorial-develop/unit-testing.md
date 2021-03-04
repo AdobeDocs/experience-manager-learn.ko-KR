@@ -9,10 +9,14 @@ audience: developer
 kt: 4089
 mini-toc-levels: 1
 thumbnail: 30207.jpg
+feature: '"API, AEM 프로젝트 원형"'
+topic: '"콘텐츠 관리, 개발"'
+role: 개발자
+level: 초급
 translation-type: tm+mt
-source-git-commit: e03d84f92be11623704602fb448273e461c70b4e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '3015'
+source-wordcount: '3024'
 ht-degree: 0%
 
 ---
@@ -206,9 +210,9 @@ AEM 모범 사례를 사용하고 다음과 같은 이점을 사용할 것입니
 
    * `src/test/java/com/adobe/aem/guides/wknd/core/models/impl/BylineImplTest.java`
 
-   또한 테스트 파일을 차별화합니다.    단위 테스트 파일의 `Test` 접미사 `BylineImplTest.java`는 우리가 사용할 수 있는 규칙입니다.
-      1. _`BylineImpl.java`용 테스트 파일_으로 쉽게 식별합니다.
-      2. 테스트 중인 클래스 `BylineImpl.java`와 테스트 파일 _을 차별화합니다._
+2. 또한 테스트 파일을 차별화합니다.    단위 테스트 파일의 `Test` 접미사 `BylineImplTest.java`는 우리가 사용할 수 있는 규칙입니다.
+1. _`BylineImpl.java`용 테스트 파일_으로 쉽게 식별합니다.
+2. 테스트 중인 클래스 `BylineImpl.java`와 테스트 파일 _을 차별화합니다._
 
 ## BylineImplTest.java {#reviewing-bylineimpltest-java} 검토
 
