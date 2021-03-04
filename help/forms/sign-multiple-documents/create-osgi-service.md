@@ -1,7 +1,7 @@
 ---
 title: OSGi 서비스 만들기
 description: 서명할 양식을 저장할 OSGi 서비스 만들기
-feature: adaptive-forms
+feature: 워크플로우
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,11 +9,14 @@ activity: implement
 version: 6.4,6.5
 thumbnail: 6886.jpg
 kt: 6886
+topic: 개발
+role: 개발자
+level: 경험
 translation-type: tm+mt
-source-git-commit: 049574ab2536b784d6b303f474dba0412007e18c
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 0%
+source-wordcount: '356'
+ht-degree: 1%
 
 ---
 
