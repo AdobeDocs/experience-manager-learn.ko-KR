@@ -3,16 +3,19 @@ title: AEM에서 Java API 우수 사례 이해
 description: AEM은 개발 중에 사용할 수 있는 많은 Java API를 표시하는 풍부한 오픈 소스 소프트웨어 스택을 기반으로 구축되었습니다. 이 문서에서는 주요 API와 API를 사용해야 하는 시기와 이유를 설명합니다.
 version: 6.2, 6.3, 6.4, 6.5
 sub-product: foundation, assets, sites
-feature: null
+feature: API
 topics: best-practices, development
 activity: develop
 audience: developer
 doc-type: article
+topic: 개발
+role: 개발자
+level: 초급
 translation-type: tm+mt
-source-git-commit: fcb47ee3878f6a789b2151e283431c4806e12564
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '2023'
-ht-degree: 1%
+source-wordcount: '2027'
+ht-degree: 2%
 
 ---
 
@@ -84,7 +87,7 @@ AEM API에는 다음 Java 패키지로 식별되는 패키지 내 환경 설정�
 
 ### 쿼리 API
 
-AEM은 여러 쿼리 언어를 지원합니다. 3개의 기본 언어는 [JCR-SQL2](https://docs.jboss.org/jbossdna/0.7/manuals/reference/html/jcr-query-and-search.html), XPath 및 [AEM Query Builder](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/querybuilder-api.html)입니다.
+AEM은 여러 쿼리 언어를 지원합니다. 3개의 기본 언어는 [JCR-SQL2](https://docs.jboss.org/jbossdna/0.7/manuals/reference/html/jcr-query-and-search.html), XPath 및 [AEM Query Builder](https://helpx.adobe.com/kr/experience-manager/6-5/sites/developing/using/querybuilder-api.html)입니다.
 
 가장 중요한 문제는 코드 베이스에서 일관된 쿼리 언어를 유지 관리하여 복잡성과 비용 부담을 줄이는 것입니다.
 
@@ -93,7 +96,7 @@ AEM은 여러 쿼리 언어를 지원합니다. 3개의 기본 언어는 [JCR-SQ
 기본 API는 [AEM Query Builder](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/querybuilder-api.html)이며, 가장 높은 수준의 추상화이며 쿼리에 대한 결과를 생성, 실행 및 검색하는 데 강력한 API를 제공하며 다음을 제공합니다.
 
 * 간단하고 매개 변수화된 쿼리 구성(맵으로 모델링된 쿼리 매개 변수)
-* 기본 [Java API 및 HTTP API](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/querybuilder-api.html)
+* 기본 [Java API 및 HTTP API](https://helpx.adobe.com/kr/experience-manager/6-3/sites/developing/using/querybuilder-api.html)
 * [OOTB 쿼리 디버거](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/querybuilder-api.html#TestingandDebugging)
 * [일반적인 ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/querybuilder-predicate-reference.html) 쿼리 요구 사항을 지원하는 OOTB 예측
 
@@ -129,7 +132,7 @@ AEM은 여러 쿼리 언어를 지원합니다. 3개의 기본 언어는 [JCR-SQ
 
    * [이벤트 및 작업 핸들러](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html)
    * [스케줄러](https://sling.apache.org/documentation/bundles/scheduler-service-commons-scheduler.html)
-   * [Sling Models](https://sling.apache.org/documentation/bundles/models.html)
+   * [Sling 모델](https://sling.apache.org/documentation/bundles/models.html)
 
 * [서비스 사용자](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/security-service-users.html)
 
@@ -265,7 +268,7 @@ Resource resource = ResourceResolver.getResource("/path/to/the/resource");
 Resource resource = resourceResolver.getResource(node.getPath());
 ```
 
-### [!DNL Sling] [!DNL Resource] aem Asset
+### [!DNL Sling] [!DNL Resource] AEM Asset
 
 #### 권장 방법
 
