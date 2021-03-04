@@ -3,17 +3,20 @@ title: HTM5 양식 제출 시 AEM 워크플로우 트리거
 seo-title: HTML5 양식 제출 시 AEM 워크플로우 트리거
 description: 오프라인 모드에서 모바일 양식 입력을 계속하고 모바일 양식을 전송하여 AEM 워크플로우를 트리거할 수 있습니다.
 seo-description: 오프라인 모드에서 모바일 양식 입력을 계속하고 모바일 양식을 전송하여 AEM 워크플로우를 트리거할 수 있습니다.
-feature: mobile-forms
+feature: Mobile Forms
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
+topic: 개발
+role: 개발자
+level: 경험
 translation-type: tm+mt
-source-git-commit: 22ccd6627a035b37edb180eb4633bc3b57470c0c
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '226'
-ht-degree: 0%
+source-wordcount: '231'
+ht-degree: 1%
 
 ---
 
