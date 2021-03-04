@@ -3,7 +3,7 @@ title: AEM Sites에서 페이지 작성
 seo-title: 다음 비디오에서는 사이트 편집기의 UI를 사용하여 Adobe Experience Manager Sites에서 새 페이지를 작성하는 방법을 설명합니다
 description: 다음 비디오에서는 사이트 편집기의 UI를 사용하여 Adobe Experience Manager Sites에서 새 페이지를 작성하는 방법을 설명합니다
 seo-description: 다음 비디오에서는 사이트 편집기의 UI를 사용하여 Adobe Experience Manager Sites에서 새 페이지를 작성하는 방법을 설명합니다
-feature: page-editor, template-editor
+feature: 페이지 편집기, 편집 가능한 템플릿
 topics: authoring, publishing
 audience: author, marketer
 doc-type: feature video
@@ -11,11 +11,14 @@ activity: use
 version: 6.3, 6.4, 6.5
 kt: 4497
 thumbnail: 31828.jpg
+topic: 컨텐츠 관리
+role: 비즈니스 전문가
+level: 초급
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '176'
-ht-degree: 11%
+source-wordcount: '185'
+ht-degree: 12%
 
 ---
 
