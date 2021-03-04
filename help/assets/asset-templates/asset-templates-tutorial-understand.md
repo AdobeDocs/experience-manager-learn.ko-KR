@@ -1,16 +1,14 @@
 ---
 title: 'AEM Assets의 InDesign 파일 및 자산 템플릿 이해 '
 description: 이 비디오 자습서에서는 InDesign 파일을 정의하고 AEM Assets의 자산 템플릿 기능에서 사용할 수 있는 모든 관련 고려 사항을 안내합니다.
-feature: catalogs, asset-templates
-topics: authoring, renditions, documents
-audience: all
-doc-type: tutorial
-activity: understand
 version: 6.3, 6.4, 6.5
+topic: 컨텐츠 관리
+role: 비즈니스 전문가
+level: 중간
 translation-type: tm+mt
-source-git-commit: 22ccd6627a035b37edb180eb4633bc3b57470c0c
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '488'
 ht-degree: 1%
 
 ---
@@ -29,7 +27,7 @@ ht-degree: 1%
 
    * **창 > 유틸리티 > 태그**
 
-3. 페이지에서 새 텍스트 요소를 추가하고 텍스트 &quot;머리글&quot;을 입력하고 **머리글** 단락 스타일을 적용합니다.
+3. 페이지에서 새 텍스트 요소를 추가하고 &quot;머리글&quot; 텍스트를 입력하고 **머리글** 단락 스타일을 적용합니다.
 
    * **창 > 스타일 > 단락 스타일**
 
