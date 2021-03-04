@@ -1,19 +1,16 @@
 ---
 title: AEM Assets 및 Adobe 시작을 사용하여 자산 인사이트 설정
 description: 이 5개 비디오 시리즈에서는 Launch by Adobe을 통해 배포된 Experience Manager에 대한 자산 인사이트의 설정 및 구성을 살펴봅니다.
-contentOwner: selvaraj
-feature: asset-insights
-topics: integrations, development, metadata
-audience: developer, architect, administrator
-doc-type: article
-activity: implement
+feature: 자산 통찰력
 version: 6.3, 6.4, 6.5
-redirect-form: https://docs.adobe.com/content/help/en/experience-manager-learn/assets/analytics/asset-insights-launch-tutorial-setup.html
+topic: 통합
+role: 개발자
+level: 중간
 translation-type: tm+mt
-source-git-commit: 22ccd6627a035b37edb180eb4633bc3b57470c0c
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '821'
-ht-degree: 0%
+source-wordcount: '826'
+ht-degree: 1%
 
 ---
 
@@ -39,7 +36,7 @@ ht-degree: 0%
 비디오는 더 이상 최신 버전이 아닌 핵심 구성 요소 v2.2.2을 사용합니다.다음 섹션으로 이동하기 전에 반드시 최신 버전을 사용하십시오.
 
 * [자산 인사이트 샘플 이미지 콘텐츠 다운로드](./assets/asset-insights-launch-tutorial/aem-assets-insights-sample.zip)
-* 최신 AEM WCM 핵심 구성 요소[ 다운로드](https://github.com/adobe/aem-core-wcm-components/releases)
+* 최신 AEM WCM 핵심 구성 요소](https://github.com/adobe/aem-core-wcm-components/releases) 다운로드[
 
 ## 2부 :샘플 이미지 구성 요소 {#sample-image-component-asset-insights}에 대한 자산 인사이트 추적 활성화
 
