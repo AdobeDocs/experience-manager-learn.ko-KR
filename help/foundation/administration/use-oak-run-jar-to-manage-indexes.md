@@ -2,15 +2,18 @@
 title: oak-run.jar를 사용하여 색인 관리
 description: oak-run.jar의 index 명령을 사용하면 인덱스 통계 수집, 인덱스 일관성 검사 실행, 색인 재지정 등 AEM에서 Oak 색인을 관리할 수 있는 다양한 기능을 통합할 수 있습니다.
 version: 6.4, 6.5
-feature: oak
+feature: 검색
 topics: search
 activity: use
 audience: architect, developer, implementer
 doc-type: technical video
+topic: 공연
+role: 개발자
+level: 경험
 translation-type: tm+mt
-source-git-commit: e19e177589df7ce6a56c0be3f9d590cbca2f8ce7
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '453'
 ht-degree: 0%
 
 ---
@@ -72,7 +75,7 @@ ht-degree: 0%
 
 * [!DNL MongoMK] 및 [!DNL RDBMK]에 [!DNL oak-run.jar]이(가) 있는 온라인 색인은 AEM 설치를 다시 색인화하는 데 권장되는 방법입니다([!DNL MongoMK] 및 [!DNL RDBMK]). **다른 방법은  [!DNL MongoMK] 또는 [!DNL RDBMK].**
 * 이 인덱스는 클러스터의 단일 AEM 인스턴스에만 실행되어야 합니다.
-* 저장소 추적은 단일 [!DNL MongoMK] 노드에서만 발생하므로 실행 중인 AEM 클러스터에 대해 온라인 색인 작업을 수행해도 안전하며 다른 사용자는 성능에 영향을 미치지 않고 요청을 계속 제공할 수 있습니다.[!DNL MongoDB]
+* 저장소 추적은 단일 [!DNL MongoDB] 노드에서만 발생하므로 실행 중인 AEM 클러스터에 대해 온라인 색인 작업을 수행해도 안전하며 다른 사용자는 성능에 영향을 미치지 않고 요청을 계속 제공할 수 있습니다.[!DNL MongoMK]
 
 [!DNL MongoMK]의 온라인 인덱싱을 수행하기 위한 [!DNL oak-run.jar] 인덱스 명령은 [와  [!DNL TarMK] Online 인덱스와 동일하며 세그먼트 저장소 매개 변수가 노드 스토어를 포함하는 [!DNL MongoDB] 인스턴스를 가리키는 차이입니다. [!DNL oak-run.jar]](#tarmkonlineindexingwithoakrunjar)
 
