@@ -3,7 +3,7 @@ title: AEM Sites 시작하기 - 프로젝트 설정
 seo-title: AEM Sites 시작하기 - 프로젝트 설정
 description: AEM 사이트에 대한 코드 및 구성을 관리하기 위한 마스터 멀티 모듈 프로젝트 생성에 대해 설명합니다.
 sub-product: 사이트
-feature: maven-archetype
+feature: AEM 프로젝트 전형
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -12,10 +12,13 @@ audience: developer
 mini-toc-levels: 1
 kt: 3418
 thumbnail: 30152.jpg
+topic: '"콘텐츠 관리, 개발"'
+role: 개발자
+level: 초급
 translation-type: tm+mt
-source-git-commit: e03d84f92be11623704602fb448273e461c70b4e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '1887'
+source-wordcount: '1895'
 ht-degree: 4%
 
 ---
@@ -212,7 +215,7 @@ AEM용 Maven 다중 모듈 프로젝트를 만들기 위한 두 가지 옵션이
 
 [AEM 핵심 ](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html) 구성 요소는 AEM용 표준화된 WCM(Web Content Management) 구성 요소 세트입니다. 이러한 구성 요소는 기본적인 기능 세트를 제공하며 개별 프로젝트에 맞게 스타일, 사용자 정의 및 확장되도록 설계되었습니다.
 
-CLOUD SERVICE 환경으로 AEM에는 최신 버전의 [AEM 코어 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)가 포함됩니다. 따라서 Cloud Service으로 AEM용으로 생성된 프로젝트는 AEM 코어 구성 요소 임베드&#x200B;**가 아닌**&#x200B;을(를) 수행합니다.
+Cloud Service 환경으로 AEM에는 최신 버전의 [AEM 코어 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)가 포함됩니다. 따라서 Cloud Service으로 AEM용으로 생성된 프로젝트는 AEM 코어 구성 요소 임베드&#x200B;**가 아닌**&#x200B;을(를) 수행합니다.
 
 AEM 6.5/6.4에서 생성된 프로젝트의 경우 원형에는 프로젝트에 [AEM 코어 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)가 자동으로 포함됩니다. AEM 6.5/6.4에서 AEM 핵심 구성 요소를 포함하여 최신 버전이 프로젝트에 배포되도록 하는 것이 좋습니다. 프로젝트에 포함된 핵심 구성 요소가 [포함된 방법에 대한 자세한 내용은 ](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/using.html#core-components)에서 확인할 수 있습니다.
 
