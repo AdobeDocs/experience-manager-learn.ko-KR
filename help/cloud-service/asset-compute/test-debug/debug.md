@@ -1,7 +1,7 @@
 ---
 title: asset compute 작업자 디버그
 description: asset compute 작업자는 간단한 디버그 로그 명령문에서부터 연결된 VS 코드를 원격 디버거로, AEM에서 Cloud Service으로 시작한 Adobe I/O Runtime에서 활성화할 로그를 가져오는 등 다양한 방법으로 디버깅할 수 있습니다.
-feature: asset-compute
+feature: asset compute 마이크로서비스
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,10 +9,13 @@ audience: developer
 doc-type: tutorial
 kt: 6285
 thumbnail: 40383.jpg
+topic: 통합, 개발
+role: 개발자
+level: 중간, 경험
 translation-type: tm+mt
-source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---
@@ -91,7 +94,7 @@ _wskdebug를 사용하여 Asset compute 작업자 디버깅의 클릭스루(오�
 
 ## Adobe I/O Runtime{#aio-app-logs}에서 로그 액세스
 
-[CLOUD SERVICE의 경우 Adobe I/O Runtime에서 직접 호출하면 처리 프로필](../deploy/processing-profiles.md) 을 통해 Asset compute 작업자를 활용합니다. 이러한 호출에는 로컬 개발이 포함되지 않으므로 Asset compute 개발 도구나 wskdebug와 같은 로컬 도구를 사용하여 해당 실행을 디버깅할 수 없습니다. 대신 Adobe I/O CLI를 사용하여 Adobe I/O Runtime의 특정 작업 영역에서 실행되는 작업자로부터 로그를 가져올 수 있습니다.
+[Cloud Service의 경우 Adobe I/O Runtime에서 직접 호출하면 처리 프로필](../deploy/processing-profiles.md) 을 통해 Asset compute 작업자를 활용합니다. 이러한 호출에는 로컬 개발이 포함되지 않으므로 Asset compute 개발 도구나 wskdebug와 같은 로컬 도구를 사용하여 해당 실행을 디버깅할 수 없습니다. 대신 Adobe I/O CLI를 사용하여 Adobe I/O Runtime의 특정 작업 공간에서 실행되는 워커로부터 로그를 가져올 수 있습니다.
 
 1. 디버깅이 필요한 작업 영역을 기준으로 [작업 공간별 환경 변수](../deploy/runtime.md)가 `AIO_runtime_namespace` 및 `AIO_runtime_auth`을 통해 설정되었는지 확인합니다.
 1. 명령줄에서 `aio app logs` 실행
