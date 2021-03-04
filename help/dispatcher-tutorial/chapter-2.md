@@ -1,12 +1,14 @@
 ---
-title: 2장 - 이벤트 컨텐츠 조각 모델 정의
-seo-title: AEM 컨텐츠 서비스 시작하기 - 2장 - 이벤트 컨텐츠 조각 모델 정의
-description: AEM 헤드리스 자습서의 2장에서는 이벤트 생성을 위한 정규화된 데이터 구조 및 제작 인터페이스를 정의하는 데 사용되는 컨텐츠 조각 모델을 활성화 및 정의하는 방법에 대해 설명합니다.
-seo-description: AEM 헤드리스 자습서의 2장에서는 이벤트 생성을 위한 정규화된 데이터 구조 및 제작 인터페이스를 정의하는 데 사용되는 컨텐츠 조각 모델을 활성화 및 정의하는 방법에 대해 설명합니다.
+title: '"2장 - 발송자 인프라"'
+description: 게시 및 디스패처 토폴로지를 이해합니다. 가장 일반적인 토폴로지 및 설정에 대해 알아봅니다.
+feature: Dispatcher
+topic: 아키텍처
+role: 건축가
+level: 초급
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1917'
+source-wordcount: '1868'
 ht-degree: 0%
 
 ---
