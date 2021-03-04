@@ -11,10 +11,14 @@ KT: 4132
 mini-toc-levels: 1
 index: y
 thumbnail: 30476.jpg
+feature: 핵심 구성 요소, 페이지 편집기, 편집 가능한 템플릿, AEM 프로젝트 원형
+topic: 컨텐츠 관리, 개발
+role: 개발자
+level: 초급
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '893'
+source-wordcount: '907'
 ht-degree: 7%
 
 ---
