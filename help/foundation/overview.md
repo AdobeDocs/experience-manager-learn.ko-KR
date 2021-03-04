@@ -1,13 +1,15 @@
 ---
-title: AEM Foundation 비디오 및 자습서
-seo-title: AEM Foundation 비디오 및 자습서
-description: 'Adobe Experience Manager Foundation을 위한 비디오 및 자습서 모음입니다. '
-seo-description: Adobe Experience Manager Foundation을 위한 비디오 및 자습서 모음입니다
+title: AEM Foundation 비디오 및 튜토리얼
+seo-title: AEM Foundation 비디오 및 튜토리얼
+description: 'Adobe Experience Manager Foundation을 위한 비디오 및 튜토리얼 모음입니다. '
+seo-description: Adobe Experience Manager Foundation을 위한 비디오 및 튜토리얼 모음입니다
+role: '"리더, 건축가, 개발자, 관리자, 비즈니스 전문가"'
+level: 초급
 translation-type: tm+mt
-source-git-commit: 23664bae44b74ee35ab7f7cb415d2ba017ea8752
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 22%
+source-wordcount: '268'
+ht-degree: 21%
 
 ---
 
@@ -24,7 +26,7 @@ Adobe Experience Manager은 AEM Sites, [!DNL Assets] 및 [!DNL Forms] 사용자�
 * **[AEM용 Cloud Manager 이해(비디오)](./cloud-manager/understand-cloud-manager-for-aem.md)**\
    *AEM용 Cloud Manager를 사용하면 AEM 환경을 손쉽게 관리, 검사 및 셀프 서비스를 받을 수 있습니다.*
 
-* **[Adobe I/O에서 사용할 공개 및 개인 키 설정(자습서)](./authentication/set-up-public-private-keys-for-use-with-aem-and-adobe-io.md)**\
+* **[Adobe I/O에 사용할 공개 및 개인 키 설정(자습서)](./authentication/set-up-public-private-keys-for-use-with-aem-and-adobe-io.md)**\
    *AEM 및 Adobe I/O에서 작동하는 키 및 키 스토어 [!DNL openssl] 가 생성되는 방법을 알아봅니다.*
 
 * **[클라우드 관리자 CI/CD 파이프라인 사용(비디오)](./cloud-manager/use-the-cicd-pipeline-in-cloud-manager-for-aem.md)**\
@@ -79,7 +81,7 @@ Adobe Experience Manager은 AEM Sites, [!DNL Assets] 및 [!DNL Forms] 사용자�
 ## 추가 리소스
 
 * [Experience League - AEM 살펴보기](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
-* [AEM as a Cloud Service 자습서](/help/cloud-service/overview.md)
-* [AEM Sites 비디오 및 자습서](/help/sites/overview.md)
-* [AEM Assets 비디오 및 자습서](/help/assets/overview.md)
-* [AEM Forms 비디오 및 자습서](/help/forms/overview.md)
+* [AEM as a Cloud Service 튜토리얼](/help/cloud-service/overview.md)
+* [AEM Sites 비디오 및 튜토리얼](/help/sites/overview.md)
+* [AEM Assets 비디오 및 튜토리얼](/help/assets/overview.md)
+* [AEM Forms 비디오 및 튜토리얼](/help/forms/overview.md)
