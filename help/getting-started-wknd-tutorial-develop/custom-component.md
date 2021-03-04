@@ -2,7 +2,7 @@
 title: 사용자 지정 구성 요소
 description: 제작된 콘텐츠를 표시하는 사용자 지정 필라인 구성 요소의 전체 생성을 다룹니다. byline 구성 요소를 채우는 비즈니스 로직과 해당 HTL을 캡슐화하여 구성 요소를 렌더링하는 Sling 모델 개발이 포함되어 있습니다.
 sub-product: 사이트
-feature: '"핵심 구성 요소, API"'
+feature: sling-models
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -11,13 +11,10 @@ audience: developer
 kt: 4072
 mini-toc-levels: 1
 thumbnail: 30181.jpg
-topic: '"콘텐츠 관리, 개발"'
-role: 개발자
-level: 초급
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '3969'
+source-wordcount: '3962'
 ht-degree: 0%
 
 ---
