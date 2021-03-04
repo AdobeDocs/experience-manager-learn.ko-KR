@@ -4,18 +4,21 @@ seo-title: 웹 채널 문서 전달 설정
 description: 첫 번째 인터랙티브 커뮤니케이션 문서를 만들기 위한 여러 단계로 구성된 자습서의 마지막 부분입니다. 이 부분에서는 이메일을 통해 웹 채널 문서의 전달을 살펴봅니다.
 seo-description: 첫 번째 인터랙티브 커뮤니케이션 문서를 만들기 위한 여러 단계로 구성된 자습서의 마지막 부분입니다. 이 부분에서는 이메일을 통해 웹 채널 문서의 전달을 살펴봅니다.
 uuid: c1066600-1abd-4401-b04f-b93c28603cc7
-feature: interactive-communication
+feature: 대화형 통신
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 discoiquuid: 1a7cf095-c5d8-4d92-a018-883cda76fe70
+topic: 개발
+role: 개발자
+level: 초급
 translation-type: tm+mt
-source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '389'
-ht-degree: 0%
+source-wordcount: '394'
+ht-degree: 1%
 
 ---
 
