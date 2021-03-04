@@ -1,7 +1,7 @@
 ---
 title: AF 템플릿 만들기
 description: AF 템플릿을 만들고 이를 페이지 렌더링 구성 요소와 연결합니다
-feature: adaptive-forms
+feature: 적응형 양식
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,11 +9,14 @@ activity: implement
 version: 6.4,6.5
 kt: 6891
 thumbnail: 6891.jpg
+topic: 개발
+role: 개발자
+level: 초급
 translation-type: tm+mt
-source-git-commit: 049574ab2536b784d6b303f474dba0412007e18c
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '109'
-ht-degree: 0%
+source-wordcount: '114'
+ht-degree: 4%
 
 ---
 
