@@ -1,18 +1,17 @@
 ---
 title: AEM Assets에서 Dynamic Media 3D 사용
 description: Adobe Experience Manager에 대한 Dynamic Media 3D 지원을 통해 인터랙티브한 3D 기반의 경험을 규모에 맞게 손쉽게 맞춤화하고 전달할 수 있습니다
-feature: 3d
-topics: authoring, integrations, videos, renditions, dynamic media
-audience: all
-doc-type: feature-video
-activity: use
+feature: 3D 자산
 version: 6.5
 kt: 5349
+topic: 컨텐츠 관리
+role: 비즈니스 전문가
+level: 초급
 translation-type: tm+mt
-source-git-commit: 7b092963c6162d96c57a76dd4c2ba3f19ca432a1
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '145'
-ht-degree: 0%
+source-wordcount: '152'
+ht-degree: 1%
 
 ---
 
