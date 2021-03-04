@@ -2,17 +2,20 @@
 title: SPA 구성 요소를 AEM 구성 요소에 매핑 | AEM SPA 편집기 시작 및 반응
 description: AEM SPA Editor JS SDK를 사용하여 AEM(Adobe Experience Manager) 구성 요소에 반응형 구성 요소를 매핑하는 방법을 알아봅니다. 구성 요소 매핑을 사용하면 AEM SPA Editor 내에서 SPA 구성 요소에 대한 동적 업데이트를 일반적인 AEM 작성과 유사합니다.
 sub-product: 사이트
-feature: maven-archetype, SPA Editor
+feature: SPA 편집기
 topics: development
 version: cloud-service
 activity: develop
 audience: developer
 kt: 4854
 thumbnail: 4854-spa-react.jpg
+topic: SPA
+role: 개발자
+level: 초급
 translation-type: tm+mt
-source-git-commit: 52748ff530e98c4ec21b84250bd73543899db4e4
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '2259'
+source-wordcount: '2264'
 ht-degree: 1%
 
 ---
@@ -74,7 +77,7 @@ AEM SPA Editor JS SDK를 사용하여 AEM(Adobe Experience Manager) 구성 요�
 
 ## Inspect the Text Component
 
-[AEM 프로젝트 원형](https://github.com/adobe/aem-project-archetype)은 AEM [텍스트 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/text.html)에 매핑되는 `Text` 구성 요소를 제공합니다. AEM에서 *content*&#x200B;를 렌더링하기 위한 **content** 구성 요소의 예입니다.
+[AEM 프로젝트 원형](https://github.com/adobe/aem-project-archetype)은 AEM [텍스트 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/text.html)에 매핑되는 `Text` 구성 요소를 제공합니다. AEM에서 *content*&#x200B;를 렌더링한다는 점에서 **content** 구성 요소의 예입니다.
 
 구성 요소의 작동 방식을 살펴보겠습니다.
 
@@ -89,7 +92,7 @@ AEM SPA Editor JS SDK를 사용하여 AEM(Adobe Experience Manager) 구성 요�
 
    `:type` 는 AEM 구성 요소의  `sling:resourceType` (또는 경로)를 나열하는 예약된 속성입니다. `:type` 값은 AEM 구성 요소를 SPA 구성 요소에 매핑하는 데 사용되는 값입니다.
 
-   `text` spa  `richText` 구성 요소에 노출되는 추가 속성입니다.
+   `text` SPA  `richText` 구성 요소에 노출되는 추가 속성입니다.
 
 ### Inspect the Text 구성 요소
 
