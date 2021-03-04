@@ -4,7 +4,7 @@ seo-title: Adobe Experience Manager에서 컨텐츠 조각 제공
 description: 레이아웃에 상관없이 컨텐츠 조각은 핵심 구성 요소가 있는 AEM Sites에서 직접 사용하거나 다운스트림 채널에 헤드리스 방식으로 전달할 수 있습니다.
 seo-description: 레이아웃에 상관없이 컨텐츠 조각은 핵심 구성 요소가 있는 AEM Sites에서 직접 사용하거나 다운스트림 채널에 헤드리스 방식으로 전달할 수 있습니다.
 sub-product: 컨텐츠 서비스
-feature: content-fragments
+feature: 컨텐츠 조각
 topics: authoring, content-architecture
 audience: all
 doc-type: feature video
@@ -12,11 +12,14 @@ activity: use
 version: 6.3, 6.4, 6.5
 uuid: 045473d2-5abe-4414-b91c-d369f3069ead
 discoiquuid: 912e0c41-83cf-49f7-b515-09519b6718c1
+topic: 컨텐츠 관리
+role: 비즈니스 전문가
+level: 초급
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '592'
-ht-degree: 6%
+source-wordcount: '599'
+ht-degree: 7%
 
 ---
 
