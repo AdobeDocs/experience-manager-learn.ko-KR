@@ -1,16 +1,15 @@
 ---
 title: AEM Assets에서 Adobe Stock 에셋 사용
 description: 'AEM은 AEM에서 바로 Adobe Stock 에셋을 검색, 미리 보기, 저장 및 라이선스를 부여할 수 있는 기능을 제공합니다. 조직은 이제 Adobe Stock Enterprise 플랜과 AEM Assets을 통합하여 이제 AEM의 강력한 에셋 관리 기능과 함께 라이선스가 부여된 에셋을 크리에이티브 및 마케팅 프로젝트에 광범위하게 사용할 수 있습니다. '
-feature: creative-cloud-integration
-topics: authoring, collaboration, operations, sharing, metadata, images, stock
-audience: all
-doc-type: feature video
-activity: use
+feature: Adobe Stock
 version: 6.4, 6.5
+topic: 컨텐츠 관리
+role: 비즈니스 전문가
+level: 초급
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '973'
 ht-degree: 6%
 
 ---
@@ -24,7 +23,7 @@ AEM 6.4.2은 AEM에서 바로 Adobe Stock 에셋을 검색, 미리 보기, 저�
 
 >[!NOTE]
 >
->통합에는 서비스 팩 2가 적어도 배포된 [엔터프라이즈 Adobe Stock 플랜](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html) 및 AEM 6.4가 필요합니다. AEM 6.4 서비스 팩 세부 정보는 [릴리스 노트](https://helpx.adobe.com/kr/experience-manager/6-4/release-notes/sp-release-notes.html)를 참조하십시오.
+>통합에는 서비스 팩 2가 적어도 배포된 [엔터프라이즈 Adobe Stock 플랜](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html) 및 AEM 6.4가 필요합니다. AEM 6.4 서비스 팩 세부 정보는 [릴리스 노트](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html)를 참조하십시오.
 
 Adobe Stock 및 AEM Assets 통합을 통해 컨텐츠 작성자 및 마케터는 크리에이티브 또는 마케팅 목적으로 스톡 에셋에 라이선스를 손쉽게 부여하고 사용할 수 있습니다. Omni Search를 사용하여 위치 필터를 Adobe Stock으로 추가하거나 AEM Assets 주 탐색 간을 탐색하고 Adobe Stock Coral UI 검색 아이콘을 클릭하여 Stock 에셋 검색을 수행할 수 있습니다.
 
@@ -64,7 +63,7 @@ Adobe Stock 및 AEM Assets 통합을 통해 컨텐츠 작성자 및 마케터는
 
 ## AEM Assets{#set-up-adobe-stock-with-aem-assets}으로 Adobe Stock 설정
 
-AEM 6.4.2은 AEM에서 바로 Adobe Stock 에셋을 검색, 미리 보기, 저장 및 라이선스를 부여할 수 있는 기능을 제공합니다. 이 비디오에서는 Adobe I/O 콘솔을 사용하여 AEM Assets으로 Adobe 주식을 설정하는 방법에 대한 간단한 연습을 다룹니다.
+AEM 6.4.2은 AEM에서 바로 Adobe Stock 에셋을 검색, 미리 보기, 저장 및 라이선스를 부여할 수 있는 기능을 제공합니다. 이 비디오에서는 Adobe I/O 콘솔을 사용하여 AEM Assets으로 Adobe 주식을 설정하는 방법을 간략히 설명합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25043/?quality=12&learn=on)
 
@@ -85,7 +84,7 @@ AEM 6.4.2은 AEM에서 바로 Adobe Stock 에셋을 검색, 미리 보기, 저�
 
 1. **도구 > 보안**&#x200B;에서 Adobe IMS 기술 계정 구성을 만듭니다.
 2. *클라우드 솔루션*&#x200B;을 *Adobe Stock*&#x200B;으로 선택하고 새 인증서를 만들거나 구성에 대한 기존 인증서를 다시 사용합니다.
-3. Adobe I/O 콘솔으로 이동하여 *Adobe Stock*&#x200B;에 대한 새 서비스 계정 통합을 만듭니다.
+3. Adobe I/O 콘솔으로 이동하고 *Adobe Stock*&#x200B;에 대한 새 서비스 계정 통합을 만듭니다.
 4. 2단계에서 Adobe Stock 서비스 계정 통합으로 인증서를 업로드합니다.
 5. 필요한 Adobe Stock 프로파일 구성을 선택하고 서비스 통합을 완료합니다.
 6. 통합 세부 정보를 사용하여 Adobe IMS 기술 계정 구성을 완료합니다.
