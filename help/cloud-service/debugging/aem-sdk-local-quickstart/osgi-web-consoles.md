@@ -1,18 +1,21 @@
 ---
 title: OSGi 웹 콘솔을 사용하여 AEM SDK 디버깅
 description: AEM SDK의 로컬 quickstart에는 애플리케이션이 어떻게 인식되고 AEM 내에서 작동하는지 이해하는 데 유용한 다양한 정보와 설명을 로컬 AEM 런타임에 제공하는 OSGi 웹 콘솔이 있습니다.
-feature: null
+feature: 개발자 도구
 topics: development
 version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5265, 5366, 5267
+topic: 개발
+role: 개발자
+level: 초급, 중급
 translation-type: tm+mt
-source-git-commit: a3d3612713decefb5c7e1cf5b2d4d21afff0a2f5
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '393'
-ht-degree: 0%
+source-wordcount: '399'
+ht-degree: 1%
 
 ---
 
@@ -59,7 +62,7 @@ AEM에서는 많은 OSGi 콘솔을 제공하며, 각 콘솔은 AEM의 다양한 
 + Git에서 구성 요소에 대한 OSGi 구성을 만들려면 구성 요소의 PID를 구합니다.
 + 활성 OSGi 구성에 바인딩된 OSGi 속성 값 식별
 
-## Sling Models
+## Sling 모델
 
 >[!VIDEO](https://video.tv.adobe.com/v/34337/?quality=12&learn=on)
 
