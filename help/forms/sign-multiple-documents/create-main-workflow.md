@@ -1,7 +1,7 @@
 ---
 title: 서명 프로세스를 트리거하는 기본 워크플로우 만들기
 description: 데이터베이스에 서명을 위한 양식을 저장하는 워크플로우 만들기
-feature: adaptive-forms
+feature: 적응형 양식
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,11 +9,14 @@ activity: implement
 version: 6.4,6.5
 thumbnail: 6887.jpg
 kt: 6887
+topic: 개발
+role: 개발자
+level: 중간
 translation-type: tm+mt
-source-git-commit: 049574ab2536b784d6b303f474dba0412007e18c
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '162'
-ht-degree: 0%
+source-wordcount: '167'
+ht-degree: 2%
 
 ---
 
