@@ -3,10 +3,14 @@ title: AEM 경험 조각 및 Adobe Target을 사용한 개인화
 seo-title: Adobe Experience Manager(AEM) 경험 조각 및 Adobe Target을 사용한 개인화
 description: Adobe Experience Manager 경험 조각 및 Adobe Target을 사용하여 개인화된 경험을 제작 및 전달하는 방법을 보여주는 엔드 투 엔드 튜토리얼
 seo-description: Adobe Experience Manager 경험 조각 및 Adobe Target을 사용하여 개인화된 경험을 제작 및 전달하는 방법을 보여주는 엔드 투 엔드 튜토리얼
+feature: 경험 구성요소
+topic: 개인화
+role: 개발자
+level: 중간
 translation-type: tm+mt
-source-git-commit: 892cb074814eabd347ba7aef883721df0ee4d431
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1729'
+source-wordcount: '1734'
 ht-degree: 1%
 
 ---
@@ -47,7 +51,7 @@ WKND 사이트는 웹 사이트를 통해 미국 전역에 **SkateFest Challenge
 ![AEM Target 시나리오 1](assets/personalization-use-case-1/aem-target-use-case-1-4.png)
 
 1. 마케터는 AEM Content Editor를 통해 WKND SkateFest 캠페인 토론을 시작하고 요구 사항에 대해 자세히 설명합니다.
-   * ***요구 사항***:미국 각 주의 방문자를 위한 개인화된 컨텐츠가 포함된 WKND 사이트 홈 페이지에서 WKND SkateFest 캠페인을 홍보할 수 있습니다. 배경 이미지, 텍스트 및 단추가 포함된 홈 페이지 회전판 아래에 새 내용 블록을 추가합니다.
+   * ***요구 사항***:미국 각 주의 방문자를 위한 개인화된 컨텐츠가 포함된 WKND 사이트 홈 페이지에서 WKND SkateFest 캠페인을 홍보합니다. 배경 이미지, 텍스트 및 단추가 포함된 홈 페이지 회전판 아래에 새 내용 블록을 추가합니다.
       * **배경 이미지**:이미지는 사용자가 WKND 사이트 페이지를 방문하는 상태와 관련이 있어야 합니다.
       * **텍스트**:&quot;Audition 등록&quot;
       * **단추**:WKND SkateFest 페이지를 가리키는 &quot;이벤트 세부 사항&quot;
