@@ -1,7 +1,7 @@
 ---
 title: AEM 데이터 소스 구성
 description: 양식 데이터를 저장 및 검색하도록 MySQL 백업 데이터 소스 구성
-feature: adaptive-forms
+feature: 적응형 양식
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,11 +9,14 @@ activity: implement
 version: 6.4,6.5
 kt: 6899
 thumbnail: 6899.jpg
+topic: 개발
+role: 개발자
+level: 초급
 translation-type: tm+mt
-source-git-commit: 049574ab2536b784d6b303f474dba0412007e18c
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '191'
-ht-degree: 4%
+source-wordcount: '196'
+ht-degree: 6%
 
 ---
 
