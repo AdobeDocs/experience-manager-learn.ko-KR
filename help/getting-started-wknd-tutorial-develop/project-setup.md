@@ -3,7 +3,7 @@ title: AEM Sites 시작하기 - 프로젝트 설정
 seo-title: AEM Sites 시작하기 - 프로젝트 설정
 description: AEM 사이트에 대한 코드 및 구성을 관리하기 위한 마스터 멀티 모듈 프로젝트 생성에 대해 설명합니다.
 sub-product: 사이트
-feature: AEM 프로젝트 전형
+feature: 마반원형
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -12,13 +12,10 @@ audience: developer
 mini-toc-levels: 1
 kt: 3418
 thumbnail: 30152.jpg
-topic: '"콘텐츠 관리, 개발"'
-role: 개발자
-level: 초급
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '1895'
+source-wordcount: '1888'
 ht-degree: 4%
 
 ---
