@@ -1,7 +1,7 @@
 ---
 title: asset compute 메타데이터 작업자 개발
 description: 이미지 자산에서 가장 일반적으로 사용되는 색상을 파생하고 색상 이름을 AEM의 자산 메타데이터에 다시 쓰는 Asset compute 메타데이터 워커를 만드는 방법을 알아봅니다.
-feature: asset-compute
+feature: asset compute 마이크로서비스
 topics: metadata, development
 version: cloud-service
 activity: develop
@@ -9,10 +9,13 @@ audience: developer
 doc-type: tutorial
 kt: 6448
 thumbnail: 327313.jpg
+topic: 통합, 개발
+role: 개발자
+level: 중간, 경험
 translation-type: tm+mt
-source-git-commit: c2a8e6c3ae6dcaa45816b1d3efe569126c6c1e60
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1434'
+source-wordcount: '1442'
 ht-degree: 1%
 
 ---
@@ -48,7 +51,7 @@ asset compute 근로자는 개념적인 개념인 `renditionCallback(...)` 함�
 1. AEM 작성자 서비스는 자산의 __(1a)__ 원본 이진 및 __(1b)__ 처리 프로필에 정의된 모든 매개 변수를 제공하여 Asset compute 메타데이터 작업자를 호출합니다.
 1. asset compute SDK는 자산의 이진 __(1a)__ 및 처리 프로필 매개 변수 __(1b)__&#x200B;에 따라 사용자 지정 Asset compute 메타데이터 근로자의 `renditionCallback(...)` 함수 실행을 구성하며 XMP(XML) 변환을 파생합니다.
 1. asset compute 워커는 XMP(XML) 표현을 `rendition.path`에 저장합니다.
-1. `rendition.path`에 기록된 XMP(XML) 데이터는 Asset compute SDK를 통해 AEM 작성자 서비스로 전송되고 텍스트 변환과 __(4b)__(4b)&lt;a4/>가 자산의 메타데이터 노드에 지속되도록 노출됩니다.____
+1. `rendition.path`에 기록된 XMP(XML) 데이터는 Asset compute SDK를 통해 AEM 작성자 서비스로 전송되고 텍스트 변환과 __(4b)__(4b)__가 자산의 메타데이터 노드에 지속되도록 노출됩니다.__
 
 ## manifest.yml{#manifest} 구성
 
@@ -306,7 +309,7 @@ $ aio app deploy
 1. 처리가 완료되면 자산을 선택하고 맨 위 작업 표시줄에서 __속성__&#x200B;을 탭하여 해당 메타데이터를 표시합니다
 1. 사용자 지정 Asset compute 메타데이터 워커에서 다시 쓴 메타데이터에 대해서는 `Colors Family` 및 `Colors` [ 메타데이터 필드](#metadata-schema)를 검토하십시오.
 
-에셋의 메타데이터에 기록된 색상 메타데이터가 있는 `[dam:Asset]/jcr:content/metadata` 리소스에서 이 메타데이터는 검색을 통해 이러한 용어를 사용하여 자산 검색 기능이 증가된 색인화되어 에셋의 바이너리에 다시 기록할 수 있으며, 그런 다음 __DAM 메타데이터 쓰기 저장__ 워크플로우가 해당 에셋에서 호출될 경우 에셋의 바이너리에 다시 기록할 수도 있습니다.
+에셋의 메타데이터에 기록된 색상 메타데이터가 있는 `[dam:Asset]/jcr:content/metadata` 리소스에서 이 메타데이터는 검색을 통해 이러한 용어를 사용하여 자산 검색 기능이 증가된 색인화되어 에셋의 바이너리에 다시 기록할 수 있습니다. 그런 다음 __DAM 메타데이터 쓰기 저장__ 워크플로우가 해당 에셋에서 호출될 경우 이 메타데이터는 에셋의 바이너리에 다시 쓸 수도 있습니다.
 
 ### AEM Assets의 메타데이터 변환
 
