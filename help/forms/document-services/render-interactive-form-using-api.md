@@ -3,17 +3,20 @@ title: AEM Forms에서 출력 및 Forms 서비스를 사용한 개발
 seo-title: AEM Forms에서 출력 및 Forms 서비스를 사용한 개발
 description: AEM Forms에서 출력 및 Forms 서비스 API 사용
 seo-description: AEM Forms에서 출력 및 Forms 서비스 API 사용
-feature: 양식 서비스
+feature: Forms 서비스
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
+topic: 개발
+role: 개발자
+level: 중간
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '348'
-ht-degree: 1%
+source-wordcount: '352'
+ht-degree: 2%
 
 ---
 
