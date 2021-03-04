@@ -5,10 +5,14 @@ description: AEM 개발을 처음 하시나요? 모범 사례에 대한 재교�
 seo-description: AEM 개발을 처음 하시나요? 모범 사례에 대한 재교육이 필요하십니까? 여기가 바로 시작이야! 이 여러 부분으로 구성된 튜토리얼의 목표는 최신 표준과 기술을 사용하여 AEM에서 웹 사이트를 구현하는 방법을 처음 접하는 개발자에게 교육하는 것입니다.
 content-type: reference
 topic-tags: introduction
+feature: AEM 프로젝트 원형, 핵심 구성 요소, 페이지 편집기, 편집 가능한 템플릿
+topic: 개발
+role: 개발자
+level: 초급
 translation-type: tm+mt
-source-git-commit: 22ccd6627a035b37edb180eb4633bc3b57470c0c
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '366'
 ht-degree: 9%
 
 ---
