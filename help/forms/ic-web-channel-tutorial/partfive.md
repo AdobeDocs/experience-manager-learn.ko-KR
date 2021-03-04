@@ -4,18 +4,21 @@ seo-title: 받는 사람 이름 및 주소를 저장할 문서 조각 만들기
 description: '첫 번째 인터랙티브 커뮤니케이션 문서를 만들기 위한 여러 단계로 구성된 자습서의 5부분입니다. 이 부분에서 수신자 이름과 주소를 저장할 문서 조각을 만듭니다. '
 seo-description: '첫 번째 인터랙티브 커뮤니케이션 문서를 만들기 위한 여러 단계로 구성된 자습서의 5부분입니다. 이 부분에서 수신자 이름과 주소를 저장할 문서 조각을 만듭니다. '
 uuid: 689931e4-a026-4e62-9acd-552918180819
-feature: interactive-communication
+feature: 대화형 통신
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 discoiquuid: 404eed65-ec55-492a-85b5-59773896b217
+topic: 개발
+role: 개발자
+level: 초급
 translation-type: tm+mt
-source-git-commit: 22ccd6627a035b37edb180eb4633bc3b57470c0c
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 0%
+source-wordcount: '282'
+ht-degree: 1%
 
 ---
 
