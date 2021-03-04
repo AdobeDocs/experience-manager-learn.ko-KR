@@ -1,20 +1,17 @@
 ---
 title: 유용한 유틸리티 서비스
 description: AEM Forms 개발자를 위한 유용한 유틸리티 서비스
-feature: 적응형 양식
+feature: 문서 서비스
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
-topic: 개발
-role: 개발자
-level: 중간
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '160'
-ht-degree: 3%
+source-wordcount: '156'
+ht-degree: 0%
 
 ---
 
