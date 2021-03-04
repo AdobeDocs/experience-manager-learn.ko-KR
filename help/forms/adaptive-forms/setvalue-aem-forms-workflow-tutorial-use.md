@@ -4,20 +4,17 @@ seo-title: AEM Forms 워크플로우에서 setvalue 사용
 description: 적응형 Forms에서 AEM Forms OSGI에 전송된 데이터의 요소 값 설정
 seo-description: 적응형 Forms에서 AEM Forms OSGI에 전송된 데이터의 요소 값 설정
 uuid: fe431e48-f05b-4b23-94d2-95d34d863984
-feature: 적응형 양식
+feature: 적응형 양식,워크플로
 topics: developing
 audience: implementer
 doc-type: article
 activity: setup
 discoiquuid: dbd87302-f770-4e61-b5ad-3fc5831b4613
-topic: 개발
-role: 개발자
-level: 경험
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '552'
-ht-degree: 1%
+source-wordcount: '549'
+ht-degree: 0%
 
 ---
 
