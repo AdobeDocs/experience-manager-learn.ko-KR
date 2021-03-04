@@ -1,19 +1,14 @@
 ---
 title: AEM 상거래 및 InDesign Server에서 자산 카탈로그 사용
-seo-title: AEM 상거래 및 InDesign Server에서 자산 카탈로그 사용
 description: AEM 6.4 카탈로그 개선에서는 AEM 자산 템플릿 및 InDesign Server을 사용하여 카탈로그 페이지를 만드는 기능을 제공합니다.  사용자는 InDesign 템플릿을 사용하여 카탈로그 페이지를 만들고 제품 속성을 편집 가능한 필드에 매핑할 수 있습니다. 이 작업은 나중에 다른 제품에 대해 유사한 페이지를 만드는 데 사용할 수 있습니다.
-seo-description: AEM 6.4 카탈로그 개선에서는 AEM 자산 템플릿 및 InDesign Server을 사용하여 카탈로그 페이지를 만드는 기능을 제공합니다.  사용자는 InDesign 템플릿을 사용하여 카탈로그 페이지를 만들고 제품 속성을 편집 가능한 필드에 매핑할 수 있습니다. 이 작업은 나중에 다른 제품에 대해 유사한 페이지를 만드는 데 사용할 수 있습니다.
-contentOwner: selvaraj
-feature: catalogs, asset-templates
-topics: authoring, renditions, documents
-audience: all
-doc-type: feature video
-activity: use
 version: 6.3, 6.4, 6.5
+topic: 컨텐츠 관리
+role: 비즈니스 전문가
+level: 초급
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '225'
 ht-degree: 0%
 
 ---
