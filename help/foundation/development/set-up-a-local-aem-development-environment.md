@@ -2,15 +2,18 @@
 title: 로컬 AEM 개발 환경 설정
 description: AEM, Adobe Experience Manager용 로컬 개발 설정에 대한 가이드입니다. 로컬 설치, Apache Maven, 통합 개발 환경 및 디버깅/문제 해결에 대한 중요한 주제를 다룹니다. Eclipse IDE, CRXDE-Lite, Visual Studio 코드 및 IntelliJ를 사용한 개발에 대해 설명합니다.
 version: 6.4, 6.5
-feature: 마반원형
+feature: 개발자 도구
 topics: development
 activity: develop
 audience: developer
+topic: 개발
+role: 개발자
+level: 초급
 translation-type: tm+mt
-source-git-commit: 947ffbfcc64f0e2e010a0515c8e6cf1530ec4ea9
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '2653'
-ht-degree: 0%
+source-wordcount: '2657'
+ht-degree: 1%
 
 ---
 
@@ -30,7 +33,7 @@ Adobe Experience Manager 또는 AEM용으로 개발할 때는 로컬 개발 환�
 
 ## 로컬 AEM 인스턴스 설치
 
-로컬 AEM 인스턴스를 참조하면 개발자의 개인 컴퓨터에서 실행 중인 Adobe Experience Manager의 사본에 대해 설명합니다. ***모든*** AEM 개발은 로컬 AEM 인스턴스에 대해 코드를 작성하고 실행함으로써 시작해야 합니다.
+로컬 AEM 인스턴스를 참조하면 개발자의 개인 컴퓨터에서 실행 중인 Adobe Experience Manager 사본에 대해 설명합니다. ***모든*** AEM 개발은 로컬 AEM 인스턴스에 대해 코드를 작성하고 실행함으로써 시작해야 합니다.
 
 AEM을 처음 사용하는 경우 다음과 같이 두 가지 기본 실행 모드를 설치할 수 있습니다.***작성자*** 및 ***게시***. ***작성자*** [runmode](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/configure-runmodes.html)는 디지털 마케터가 컨텐츠를 만들고 관리하는 데 사용할 환경입니다. **대부분의**&#x200B;을(를) 개발할 때 작성자 인스턴스에 코드를 배포하게 됩니다. 이렇게 하면 구성 요소를 추가 및 구성할 수 있을 뿐만 아니라 새 페이지를 만들 수 있습니다. AEM Sites은 WYSIWYG 작성 CMS이므로 대부분의 CSS 및 JavaScript를 저작 인스턴스에서 테스트할 수 있습니다.
 
