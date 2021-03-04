@@ -3,16 +3,19 @@ title: 데이터를 병합하여 인쇄 채널 문서 생성
 seo-title: 데이터를 병합하여 인쇄 채널 문서 생성
 description: 입력 스트림에 포함된 데이터를 병합하여 인쇄 채널 문서를 생성하는 방법을 알아봅니다.
 seo-description: 입력 스트림에 포함된 데이터를 병합하여 인쇄 채널 문서를 생성하는 방법을 알아봅니다.
-feature: interactive-communication
+feature: 대화형 통신
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
+topic: 개발
+role: 개발자
+level: 중간
 translation-type: tm+mt
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '506'
 ht-degree: 1%
 
 ---
