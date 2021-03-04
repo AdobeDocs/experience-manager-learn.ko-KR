@@ -4,11 +4,13 @@ seo-title: AEM Forms Tutorials 및 비디오
 description: 초보자 및 숙련된 AEM Forms 개발자를 위한 AEM Forms 리소스 모음입니다
 seo-description: 초보자 및 숙련된 AEM Forms 개발자를 위한 AEM Forms 리소스 모음입니다
 sub-product: 양식
+topic: 개발
+role: 개발자
 translation-type: tm+mt
-source-git-commit: 23664bae44b74ee35ab7f7cb415d2ba017ea8752
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 14%
+source-wordcount: '305'
+ht-degree: 17%
 
 ---
 
@@ -84,7 +86,7 @@ Adobe Experience Manager(AEM)은 백엔드 프로세스, 비즈니스 규칙 및
 * [AEM Sites 개발 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/developing/user-guide.html)
 * [AEM Sites 관리 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/administering/user-guide.html)
 * [AEM Sites 배포 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/user-guide.html)
-* [AEM as a Cloud Service 자습서](/help/cloud-service/overview.md)
-* [AEM Assets 자습서](/help/assets/overview.md)
-* [AEM Forms 자습서](/help/forms/overview.md)
-* [AEM Foundation 자습서](/help/foundation/overview.md)
+* [AEM as a Cloud Service 튜토리얼](/help/cloud-service/overview.md)
+* [AEM Assets 튜토리얼](/help/assets/overview.md)
+* [AEM Forms 튜토리얼](/help/forms/overview.md)
+* [AEM Foundation 튜토리얼](/help/foundation/overview.md)
