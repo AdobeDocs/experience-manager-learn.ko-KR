@@ -2,16 +2,19 @@
 title: AEM에서 OAuth 범위 개발
 description: Adobe Experience Manager의 확장 가능한 OAuth 범위를 통해 최종 사용자가 인증한 클라이언트 응용 프로그램의 리소스에 대한 액세스 제어를 가능하게 합니다. 아래 다이어그램은 AEM 컨텍스트의 요청 흐름을 보여줍니다.
 version: 6.3, 6.4, 6.5
-feature: 인증
+feature: 사용자 및 그룹
 topics: authentication, security
 activity: develop
 audience: developer
 doc-type: code
+topic: 개발
+role: 개발자
+level: 경험
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 1%
+source-wordcount: '185'
+ht-degree: 3%
 
 ---
 
