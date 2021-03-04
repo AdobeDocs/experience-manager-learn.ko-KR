@@ -3,10 +3,14 @@ title: 4장 - 컨텐츠 서비스 템플릿 정의 - 컨텐츠 서비스
 seo-title: AEM 헤드리스 시작 - 4장 - 컨텐츠 서비스 템플릿 정의
 description: AEM Headless 자습서의 4장에서는 AEM Content Services 컨텍스트에서 AEM 편집 가능 템플릿의 역할을 다룹니다. 편집 가능한 템플릿은 JSON 컨텐츠 구조를 정의하는 데 사용됩니다. AEM 컨텐츠 서비스는 궁극적으로 노출됩니다.
 seo-description: AEM Headless 자습서의 4장에서는 AEM Content Services 컨텍스트에서 AEM 편집 가능 템플릿의 역할을 다룹니다. 편집 가능한 템플릿은 JSON 컨텐츠 구조를 정의하는 데 사용됩니다. AEM 컨텐츠 서비스는 궁극적으로 노출됩니다.
+feature: '"컨텐츠 조각, API"'
+topic: '"헤드리스, 콘텐츠 관리"'
+role: 개발자
+level: 초급
 translation-type: tm+mt
-source-git-commit: 5012433a5f1c7169b1a3996453bfdbd5d78e5b1c
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '845'
 ht-degree: 0%
 
 ---
