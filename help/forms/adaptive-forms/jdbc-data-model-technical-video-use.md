@@ -4,21 +4,18 @@ seo-title: AEM Forms에서 JDBC 기반 양식 데이터 모델 사용
 description: 이 비디오에서는 JDBC 데이터 소스를 기반으로 양식 데이터 모델을 생성하고 양식 데이터 모델을 기반으로 적응형 양식을 생성하는 방법 및 양식 데이터 모델을 사용하여 "INSERT" 작업을 사용하는 방법을 보여 줍니다.
 seo-description: 이 비디오에서는 JDBC 데이터 소스를 기반으로 양식 데이터 모델을 생성하고 양식 데이터 모델을 기반으로 적응형 양식을 생성하는 방법 및 양식 데이터 모델을 사용하여 "INSERT" 작업을 사용하는 방법을 보여 줍니다.
 uuid: 5c664b16-c089-48ad-8bf6-9766d0ddc3c4
-feature: 적응형 양식
+feature: 통합
 topics: form-data-model
 audience: developer
 doc-type: technical video
 activity: setup
 version: 6.4,6.5
 discoiquuid: 4e5f947c-b49a-423e-9139-51c0c5648318
-topic: 개발
-role: 개발자
-level: 초급
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '175'
-ht-degree: 2%
+source-wordcount: '171'
+ht-degree: 0%
 
 ---
 
