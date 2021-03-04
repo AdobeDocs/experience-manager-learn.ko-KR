@@ -3,7 +3,7 @@ title: 데이터 소스 구성 설정 수정을 참조하십시오.
 seo-title: 데이터 소스 구성 설정 수정을 참조하십시오.
 description: 데이터 소스 구성 설정에서 호스트 이름 및 기타 설정을 수정합니다.
 seo-description: 데이터 소스 구성 설정에서 호스트 이름 및 기타 설정을 수정합니다.
-feature: 적응형 양식
+feature: 통합
 topics: form-data-model
 audience: developer
 doc-type: technical video
@@ -11,14 +11,11 @@ activity: setup
 version: 6.5
 uuid: 31e297c9-3d12-4a7a-b1ff-1e347e17b24c
 discoiquuid: de227e8f-0f59-4506-828b-3b6b18b61eb1
-topic: 개발
-role: 개발자
-level: 초급
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '161'
-ht-degree: 2%
+source-wordcount: '157'
+ht-degree: 0%
 
 ---
 
