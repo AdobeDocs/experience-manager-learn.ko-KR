@@ -1,10 +1,14 @@
 ---
 title: 7장 - 모바일 앱에서 AEM 컨텐츠 서비스 소비 - 컨텐츠 서비스
 description: 자습서의 7장은 AEM Content Services에서 제작한 콘텐츠를 사용하기 위해 Android Mobile 앱을 실행합니다.
+feature: '"컨텐츠 조각, API"'
+topic: '"헤드리스, 콘텐츠 관리"'
+role: 개발자
+level: 초급
 translation-type: tm+mt
-source-git-commit: 5012433a5f1c7169b1a3996453bfdbd5d78e5b1c
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '1408'
+source-wordcount: '1416'
 ht-degree: 1%
 
 ---
@@ -87,7 +91,7 @@ AEM 게시가 **http://localhost:4503**&#x200B;에서 실행되지 않으면 호
 
 1. [!DNL WKND Mobile] 앱을 열면 `HTTP GET` 요청이 AEM 게시(`/content/wknd-mobile/en/api/events.model.json`에 있음)에 대한 요청을 호출하여 모바일 앱의 UI를 채웁니다.
 2. AEM에서 콘텐츠를 받으면 모바일 앱의 3가지 보기 요소 각각 **로고, 태그 라인 및 이벤트 목록**&#x200B;이 AEM의 컨텐츠로 초기화됩니다.
-   * AEM 콘텐츠를 모바일 앱의 보기 요소에 바인딩하기 위해 각 AEM 구성 요소를 나타내는 JSON은 Java POJO에 매핑되고, 이 JSON은 Android View 요소에 바인딩됩니다.
+   * AEM 콘텐츠를 모바일 앱의 보기 요소에 바인딩하기 위해 각 AEM 구성 요소를 나타내는 JSON은 Java POJO에 매핑되고, 이 개체는 Android View 요소에 바인딩됩니다.
       * 이미지 구성 요소 JSON → 로고 POJO → 로고 이미지 보기
       * 텍스트 구성 요소 JSON → TagLine POJO → 텍스트 이미지 보기
       * 컨텐츠 조각 목록 JSON → 이벤트 POJO →이벤트 재활용기 보기
