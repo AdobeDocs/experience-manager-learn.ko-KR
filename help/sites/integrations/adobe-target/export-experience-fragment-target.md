@@ -1,7 +1,7 @@
 ---
 title: Adobe Target으로 경험 구성요소를 내보냅니다
 description: AEM 경험 조각을 Adobe Target 오퍼으로 게시하고 내보내는 방법을 알아봅니다.
-feature: experience-fragments
+feature: 경험 구성요소
 topics: integrations, authoring
 audience: all
 doc-type: feature video
@@ -9,11 +9,14 @@ activity: use
 version: cloud-service
 kt: 6350
 thumbnail: 41245.jpg
+topic: 통합
+role: 비즈니스 전문가
+level: 중간
 translation-type: tm+mt
-source-git-commit: 988e390dd9e1fc6033b3651db151e6a60ce4efaa
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 4%
+source-wordcount: '198'
+ht-degree: 6%
 
 ---
 
