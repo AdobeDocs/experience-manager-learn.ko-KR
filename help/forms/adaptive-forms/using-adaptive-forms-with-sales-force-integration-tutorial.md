@@ -4,17 +4,20 @@ seo-title: AEM Forms 6.3 및 6.4에서 Salesforce를 사용하여 DataSource 구
 description: 양식 데이터 모델을 사용하여 Salesforce와 AEM Forms 통합
 seo-description: 양식 데이터 모델을 사용하여 Salesforce와 AEM Forms 통합
 uuid: 0124526d-f1a3-4f57-b090-a418a595632e
-feature: 적응형 양식, 양식 데이터 모델
+feature: 적응형 Forms, 양식 데이터 모델
 topics: integrations
 audience: developer
 doc-type: article
 activity: setup
 version: 6.3,6.4,6.5
 discoiquuid: 8e314fc3-62d0-4c42-b1ff-49ee34255e83
+topic: 개발
+role: 개발자
+level: 경험
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '936'
 ht-degree: 0%
 
 ---
