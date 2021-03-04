@@ -8,14 +8,11 @@ doc-type: article
 activity: implement
 thumbnail: 39493.jpg
 kt: 6114
-topic: 개발
-role: 관리자
-level: 초급
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '258'
-ht-degree: 15%
+source-wordcount: '254'
+ht-degree: 14%
 
 ---
 
