@@ -3,17 +3,20 @@ title: AEM 6.5 워크플로우에서 양식 데이터 모델 서비스 사용
 seo-title: AEM 6.5 워크플로우에서 양식 데이터 모델 서비스 사용
 description: AEM Forms 6.5는 AEM 워크플로우에서 변수를 만드는 기능을 도입했습니다. AEM Workflow에서 "양식 데이터 모델 서비스 호출"을 사용하는 이 새로운 기능이 더욱 수월해졌습니다. 다음 비디오에서는 AEM Workflow에서 양식 데이터 모델 서비스 호출 사용과 관련된 단계를 안내합니다.
 seo-description: AEM Forms 6.5는 AEM 워크플로우에서 변수를 만드는 기능을 도입했습니다. AEM Workflow에서 "양식 데이터 모델 서비스 호출"을 사용하는 이 새로운 기능이 더욱 수월해졌습니다. 다음 비디오에서는 AEM Workflow에서 양식 데이터 모델 서비스 호출 사용과 관련된 단계를 안내합니다.
-feature: workflow.
+feature: 워크플로우
 topics: workflow.
 audience: developer.
 doc-type: technical video.
 activity: setup.
 version: 6.5.
+topic: 개발
+role: 개발자
+level: 중간
 translation-type: tm+mt
-source-git-commit: e99779b5d42bb9a3b258e2bbe815defde9d40bf7
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 0%
+source-wordcount: '338'
+ht-degree: 1%
 
 ---
 
@@ -40,4 +43,4 @@ AEM Forms 6.4부터 이제 AEM Workflow의 일부로 양식 데이터 모델 서
 * [MortgageApplicationForm](http://localhost:4502/content/dam/formsanddocuments/loanapplication/jcr:content?wcmmode=disabled)을 엽니다. 세부 사항을 입력하고 제출합니다. 양식 제출 시 [응용 프로그램 워크플로](http://http://localhost:4502/editor.html/conf/global/settings/workflow/models/LoanApplication2.html)이(가) 트리거됩니다.
 
 ![ workflow ](assets/invokefdm651.PNG).
-워크플로우는 신용 점수가 500점 이상인 경우 Or Split 구성 요소를 사용하여 애플리케이션을 관리자에게 전달합니다. 신용 점수가 500점 미만인 경우, 응용 프로그램이 할당으로 라우팅됩니다.
+워크플로우는 신용 점수가 500점 이상인 경우 Or Split 구성 요소를 사용하여 애플리케이션을 관리자에게 전달합니다. 신용 점수가 500점 미만인 경우, 응용 프로그램은 할당으로 라우팅됩니다.
