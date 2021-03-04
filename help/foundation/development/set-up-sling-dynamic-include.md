@@ -3,16 +3,19 @@ title: AEM용 Sling 동적 포함 설정
 description: Apache HTTP Web Server에서 실행되는 AEM Dispatcher와 함께 Apache Sling Dynamic Include를 설치 및 사용하는 비디오 단계입니다.
 version: 6.3, 6.4, 6.5
 sub-product: foundation, sites
-feature: core-components, dispatcher
+feature: API
 topics: caching
 activity: develop
 audience: architect, developer
 doc-type: technical video
+topic: 개발
+role: 개발자
+level: 경험
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 3%
+source-wordcount: '267'
+ht-degree: 6%
 
 ---
 
@@ -28,7 +31,7 @@ ht-degree: 3%
 > 최신 버전의 AEM Dispatcher가 로컬에 설치되어 있는지 확인합니다.
 
 1. [[!DNL Sling Dynamic Include] bundle](https://sling.apache.org/downloads.cgi)을(를) 다운로드하고 설치합니다.
-1. [!DNL Sling Dynamic Include]http://&lt;host>:&lt;port>/system/console/configMgr/org.apache.sling.dynamicinclude.Configuration **의 [!DNL OSGi Configuration Factory]을(를) 통해 &lt;a0/>을 구성합니다.**
+1. [!DNL Sling Dynamic Include]http://&lt;host>:&lt;port>/system/console/configMgr/org.apache.sling.dynamicinclude.Configuration **의 [!DNL OSGi Configuration Factory]을(를) 통해**&#x200B;을 구성합니다.
 
    또는 AEM 코드 베이스에 추가하려면 다음 위치에 적절한 **sling:OsgiConfig** 노드를 만드십시오.
 
@@ -54,7 +57,7 @@ ht-degree: 3%
    -->
    ```
 
-1. (선택 사항) 편집 가능한 템플릿](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/page-templates-editable.html)의 [잠김(초기) 컨텐츠에 있는 구성 요소가 [!DNL SDI]를 통해 제공될 수 있도록 하려면 마지막 단계를 반복합니다. 추가 구성의 이유는 편집 가능한 템플릿의 잠긴 내용이 `/content` 대신 `/conf`에서 제공되기 때문입니다.
+1. (선택 사항) 편집 가능한 템플릿](https://helpx.adobe.com/kr/experience-manager/6-5/sites/developing/using/page-templates-editable.html)의 [잠김(초기) 컨텐츠에 있는 구성 요소가 [!DNL SDI]를 통해 제공될 수 있도록 하려면 마지막 단계를 반복합니다. 추가 구성의 이유는 편집 가능한 템플릿의 잠긴 내용이 `/content` 대신 `/conf`에서 제공되기 때문입니다.
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
