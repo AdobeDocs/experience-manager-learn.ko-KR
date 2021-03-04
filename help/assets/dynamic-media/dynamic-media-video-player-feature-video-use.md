@@ -1,22 +1,17 @@
 ---
 title: AEM Dynamic Media에서 비디오 플레이어 사용
-seo-title: AEM Dynamic Media에서 비디오 플레이어 사용
 description: 데스크탑 클라이언트 및 브라우저에서 적응형 비디오 스트리밍을 지원하기 위해 Flash 런타임을 사용하는 AEM Dynamic Media 비디오 플레이어가 더욱 공격적으로 flash 기반의 컨텐츠 스트리밍을 사용하고 있습니다. HLS(Apple의 HTTP Live 스트리밍 비디오 전달 프로토콜)가 도입됨에 따라 이제 flash를 의존하지 않고 컨텐츠를 스트리밍할 수 있습니다.
-seo-description: 데스크탑 클라이언트 및 브라우저에서 적응형 비디오 스트리밍을 지원하기 위해 Flash 런타임을 사용하는 AEM Dynamic Media 비디오 플레이어가 더욱 공격적으로 flash 기반의 컨텐츠 스트리밍을 사용하고 있습니다. HLS(Apple의 HTTP Live 스트리밍 비디오 전달 프로토콜)가 도입됨에 따라 이제 flash를 의존하지 않고 컨텐츠를 스트리밍할 수 있습니다.
-uuid: aac6f471-4bed-4773-890f-0dd2ceee381d
-discoiquuid: b01cc46b-ef64-4db9-b3b4-52d3f27bddf5
 sub-product: dynamic-media
-feature: media-player, video-profiles
-topics: videos, renditions, authoring, best-practices
-doc-type: feature video
-audience: all
-activity: use
+feature: 비디오 프로필
 version: 6.3, 6.4, 6.5
+topic: 컨텐츠 관리
+role: 비즈니스 전문가
+level: 초급
 translation-type: tm+mt
-source-git-commit: 9cf01dbf9461df4cc96d5bd0a96c0d4d900af089
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 5%
+source-wordcount: '221'
+ht-degree: 9%
 
 ---
 
