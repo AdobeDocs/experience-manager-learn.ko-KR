@@ -1,17 +1,20 @@
 ---
 title: AEM에서 OKTA 구성
 description: okta를 사용하여 단일 사인온을 사용하기 위한 다양한 구성 설정 이해
-feature: administration
+feature: 적응형 양식
 topics: development, authentication, security
 audience: developer
 doc-type: tutorial
 activity: setup
 version: 6.5
+topic: 관리
+role: 관리자
+level: 경험
 translation-type: tm+mt
-source-git-commit: 0b48ae445f4b32deeec08bcb68f805bf19992c9e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 1%
+source-wordcount: '767'
+ht-degree: 2%
 
 ---
 
