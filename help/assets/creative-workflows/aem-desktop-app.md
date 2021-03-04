@@ -3,18 +3,16 @@ title: AEM 데스크탑 앱
 description: AEM 데스크탑 앱을 사용하면 데스크탑에서 AEM으로 관리되는 모든 에셋, 모든 애플리케이션 및 파일 포맷에 대한 액세스를 간소화할 수 있습니다.
 kt: 2551
 sub-product: 자산
-feature: desktop-app
-topics: authoring, collaboration, content-velocity
+feature: Experience Manager 데스크탑 앱
 version: 6.5, 6.4, 6.3
-doc-type: feature video
-activity: use
-team: TM
-audience: author, marketer
+topic: 컨텐츠 관리
+role: 비즈니스 전문가
+level: 초급
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '137'
-ht-degree: 7%
+source-wordcount: '146'
+ht-degree: 10%
 
 ---
 
