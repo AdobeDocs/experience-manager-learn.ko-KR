@@ -4,17 +4,20 @@ seo-title: 적응형 양식 제출 시 캠페인 프로필 만들기
 description: 이 문서에서는 적응형 양식 제출 시 Adobe Campaign Standard에서 프로필을 만드는 데 필요한 단계에 대해 설명합니다. 이 프로세스에서는 사용자 지정 제출 메커니즘을 사용하여 적응형 양식 제출을 처리합니다.
 seo-description: 이 문서에서는 적응형 양식 제출 시 Adobe Campaign Standard에서 프로필을 만드는 데 필요한 단계에 대해 설명합니다. 이 프로세스에서는 사용자 지정 제출 메커니즘을 사용하여 적응형 양식 제출을 처리합니다.
 uuid: f3cb7b3c-1a1c-49eb-9447-a9e52c675244
-feature: adaptive-forms, form-data-model
+feature: '"적응형 Forms, 양식 데이터 모델"'
 topics: integrations
 audience: developer
 doc-type: tutorial
 activity: setup
 version: 6.3,6.4,6.5
 discoiquuid: 46ec4136-4898-4b01-86bb-ac638a29b242
+topic: 개발
+role: 개발자
+level: 경험
 translation-type: tm+mt
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '400'
+source-wordcount: '408'
 ht-degree: 0%
 
 ---
@@ -32,7 +35,7 @@ ht-degree: 0%
 
 ## AEM 서비스 {#create-aem-service} 만들기
 
-AEM 서비스를 만들어 Adobe Campaign 프로필을 만듭니다. 이 AEM 서비스는 OSGI 구성에서 Adobe Campaign 자격 증명을 가져옵니다. 캠페인 자격 증명이 액세스 토큰을 생성하고 액세스 토큰 HTTP Post 호출을 사용하여 Adobe Campaign에서 프로필을 만듭니다. 다음은 프로필을 만들기 위한 코드입니다.
+AEM 서비스를 만들어 Adobe Campaign 프로필을 만듭니다. 이 AEM 서비스는 OSGI 구성에서 Adobe Campaign 자격 증명을 가져옵니다. 캠페인 자격 증명이 액세스 토큰을 생성하고 액세스 토큰 HTTP 게시물 호출을 사용하여 Adobe Campaign에서 프로필을 만듭니다. 다음은 프로필을 만들기 위한 코드입니다.
 
 ```java
 package aemformwithcampaign.core.services.impl;
