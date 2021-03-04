@@ -3,10 +3,14 @@ title: 1장 - 자습서 설정 및 다운로드 - 컨텐트 서비스
 seo-title: AEM Content Services 시작하기 - 1장 - 자습서 설정
 description: AEM 헤드리스 자습서의 1장에서는 자습서에 대한 AEM 인스턴스의 기준선 설정을 설명합니다.
 seo-description: AEM 헤드리스 자습서의 1장에서는 자습서에 대한 AEM 인스턴스의 기준선 설정을 설명합니다.
+feature: '"컨텐츠 조각, API"'
+topic: '"헤드리스, 콘텐츠 관리"'
+role: 개발자
+level: 초급
 translation-type: tm+mt
-source-git-commit: 5012433a5f1c7169b1a3996453bfdbd5d78e5b1c
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '446'
 ht-degree: 0%
 
 ---
@@ -20,7 +24,7 @@ AEM 및 AEM WCM 핵심 구성 요소의 최신 버전이 항상 권장됩니다.
 * AEM WCM 핵심 구성 요소 2.4.0 이상
    * [WKND Mobile AEM 응용 프로그램 콘텐츠 패키지에 포함됨](#wknd-mobile-application-packages)
 
-이 자습서를 시작하기 전에 다음 AEM 인스턴스가 로컬 컴퓨터에 설치되어 실행되고 있는지 확인합니다[.](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#Default%20Local%20Install)
+이 자습서를 시작하기 전에 다음 AEM 인스턴스가 로컬 컴퓨터에 설치되어 실행되고 있는지 확인합니다](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#Default%20Local%20Install).[
 
 * **AEM** Authoron  **포트 4502**
 * **AEM** Publishon  **포트 4503**
