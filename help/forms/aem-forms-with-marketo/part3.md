@@ -3,19 +3,16 @@ title: AEM Forms과 Marketing(3부)
 seo-title: AEM Forms과 Marketing(3부)
 description: AEM Forms 양식 데이터 모델을 사용하여 AEM Forms과 Marketing을 통합하는 자습서입니다.
 seo-description: AEM Forms 양식 데이터 모델을 사용하여 AEM Forms과 Marketing을 통합하는 자습서입니다.
-feature: '"적응형 Forms, 양식 데이터 모델"'
+feature: 적응형 양식, 양식 데이터 모델
 topics: integrations
 audience: developer
 doc-type: tutorial
 activity: setup
 version: 6.3,6.4,6.5
-topic: 개발
-role: 개발자
-level: 경험
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '399'
 ht-degree: 1%
 
 ---
