@@ -3,16 +3,19 @@ title: AEM Forms과 Marketing(1부)
 seo-title: AEM Forms과 Marketing(1부)
 description: AEM Forms 양식 데이터 모델을 사용하여 AEM Forms과 Marketing을 통합하는 자습서입니다.
 seo-description: AEM Forms 양식 데이터 모델을 사용하여 AEM Forms과 Marketing을 통합하는 자습서입니다.
-feature: adaptive-forms, form-data-model
+feature: '"적응형 Forms, 양식 데이터 모델"'
 topics: integrations
 audience: developer
 doc-type: tutorial
 activity: setup
 version: 6.3,6.4,6.5
+topic: 개발
+role: 개발자
+level: 경험
 translation-type: tm+mt
-source-git-commit: 3d54a8158d0564a3289a2100bbbc59e5ae38f175
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
@@ -26,7 +29,7 @@ AEM Forms의 양식 데이터 모델을 사용하여 AEM Form을 Marketing Cloud
 
 [양식 데이터 모델에 대한 자세한 내용](https://helpx.adobe.com/experience-manager/6-5/forms/using/data-integration.html)
 
-Marketing Cloud는 많은 시스템 기능을 원격으로 실행할 수 있는 REST API를 표시합니다. 프로그램 제작에서 리드 일괄 가져오기까지 Marketing 인스턴스를 세밀하게 제어할 수 있는 옵션이 많습니다. 양식 데이터 모델을 사용하면 AEM Forms을 Marketing To와 간단하게 통합할 수 있습니다.
+Marketing Cloud는 많은 시스템 기능을 원격으로 실행할 수 있는 REST API를 표시합니다. 프로그램 제작에서 리드 일괄 가져오기에 이르기까지 Marketing 인스턴스를 세밀하게 제어할 수 있는 옵션이 많습니다. 양식 데이터 모델을 사용하면 AEM Forms을 Marketing To와 간단하게 통합할 수 있습니다.
 
 이 자습서에서는 양식 데이터 모델을 사용하여 AEM Forms과 Marketing을 통합하는 방법과 관련된 단계를 안내합니다. 자습서를 완료하면 Marketing에 대해 사용자 정의 인증을 수행하는 OSGi 번들을 갖게 됩니다. 제공된 swagger 파일을 사용하여 데이터 소스를 구성할 수도 있습니다.
 
