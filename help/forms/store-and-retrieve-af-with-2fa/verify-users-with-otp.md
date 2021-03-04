@@ -1,7 +1,7 @@
 ---
 title: OTP로 사용자 확인
 description: OTP를 사용하여 애플리케이션 번호와 연결된 모바일 번호를 확인합니다.
-feature: 적응형 양식
+feature: 통합
 topics: adaptive forms
 audience: developer
 doc-type: article
@@ -9,14 +9,11 @@ activity: use
 version: 6.4,6.5
 kt: 6594
 thumbnail: 6594.jpg
-topic: 개발
-role: 개발자
-level: 경험
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 1%
+source-wordcount: '426'
+ht-degree: 0%
 
 ---
 
