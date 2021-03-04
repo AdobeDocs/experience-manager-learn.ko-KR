@@ -1,7 +1,7 @@
 ---
 title: asset compute 확장성을 위한 환경 변수 구성
 description: 환경 변수는 로컬 개발을 위해 .env 파일에서 유지되며 로컬 개발에 필요한 Adobe I/O 자격 증명과 클라우드 저장소 자격 증명을 제공하는 데 사용됩니다.
-feature: asset-compute
+feature: asset compute 마이크로서비스
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,10 +9,13 @@ audience: developer
 doc-type: tutorial
 kt: 6270
 thumbnail: KT-6270.jpg
+topic: 통합, 개발
+role: 개발자
+level: 중간, 경험
 translation-type: tm+mt
-source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '596'
 ht-degree: 0%
 
 ---
@@ -28,10 +31,10 @@ asset compute 근로자의 개발을 시작하기 전에 프로젝트가 Adobe I
 
 ![개인 키](assets/environment-variables/private-key.png)
 
-`.env` 파일을 열고 `ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH` 키의 주석을 해제하고 파일 시스템의 절대 경로를 `private.key`에 제공하여 Adobe I/O FireFly 프로젝트에 추가된 공개 인증서와 함께 추가합니다.
+`.env` 파일을 열고 `ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH` 키의 주석을 해제하고 파일 시스템의 절대 경로를 `private.key`에 제공하여 Adobe I/O FireFly 프로젝트에 추가된 공용 인증서와 함께 추가합니다.
 
-+ 키 쌍이 Adobe I/O에서 생성된 경우 `config.zip`의 일부로 자동 다운로드되었습니다.
-+ 공개 키를 Adobe I/O에 제공한 경우 일치하는 개인 키도 보유하고 있어야 합니다.
++ 키 쌍이 Adobe I/O에 의해 생성된 경우 `config.zip`의 일부로 자동 다운로드되었습니다.
++ 공개 키를 Adobe I/O에 제공한 경우 일치하는 개인 키도 보유해야 합니다.
 + 이러한 키 쌍이 없는 경우 다음 맨 아래에 새 키 쌍을 생성하거나 새 공개 키를 업로드할 수 있습니다.
    [https://console.adobe.com](https://console.adobe.io) > Asset compute Firefly 프로젝트 > 작업 영역 @ 개발 > 서비스 계정(JWT).
 
