@@ -2,7 +2,7 @@
 title: SPA 편집기 프로젝트 | AEM SPA 편집기 시작 및 반응
 description: AEM(Adobe Experience Manager) Maven 프로젝트를 AEM SPA 편집기와 통합된 반응형 애플리케이션의 시작점으로 사용하는 방법을 살펴볼 수 있습니다.
 sub-product: 사이트
-feature: maven-archetype, SPA Editor
+feature: SPA 편집기, AEM 프로젝트 원형
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -10,10 +10,13 @@ activity: develop
 audience: developer
 kt: 413
 thumbnail: 413-spa-react.jpg
+topic: SPA
+role: 개발자
+level: 초급
 translation-type: tm+mt
-source-git-commit: ab5b92dd9c901075347cc521bf0abe0dfc0e5319
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1136'
 ht-degree: 3%
 
 ---
