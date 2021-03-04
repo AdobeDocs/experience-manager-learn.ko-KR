@@ -1,7 +1,7 @@
 ---
 title: HTML5 양식 제출 처리
 description: HTML5 양식 제출 처리기 만들기
-feature: 모바일 양식
+feature: Mobile Forms
 topics: development
 audience: developer
 doc-type: article
@@ -9,11 +9,14 @@ activity: implement
 version: 6.4,6.5
 kt: 5269
 thumbnail: kt-5269.jpg
+topic: 개발
+role: 개발자
+level: 경험
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 3%
+source-wordcount: '282'
+ht-degree: 4%
 
 ---
 
