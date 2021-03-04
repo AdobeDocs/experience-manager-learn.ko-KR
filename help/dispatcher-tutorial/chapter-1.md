@@ -1,10 +1,12 @@
 ---
 title: 1장 - 자습서 설정 및 다운로드
+seo-title: AEM Content Services 시작하기 - 1장 - 자습서 설정
 description: AEM 헤드리스 자습서의 1장에서는 자습서에 대한 AEM 인스턴스의 기준선 설정을 설명합니다.
+seo-description: AEM 헤드리스 자습서의 1장에서는 자습서에 대한 AEM 인스턴스의 기준선 설정을 설명합니다.
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '17476'
+source-wordcount: '17502'
 ht-degree: 0%
 
 ---
