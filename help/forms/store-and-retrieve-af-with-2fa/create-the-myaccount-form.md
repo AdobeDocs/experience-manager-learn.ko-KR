@@ -1,7 +1,7 @@
 ---
 title: MyAccountForm 만들기
 description: 응용 프로그램 ID와 전화 번호를 성공적으로 확인하면 부분적으로 완료된 양식을 검색할 myaccount 양식을 만듭니다.
-feature: adaptive-forms
+feature: 적응형 양식
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,11 +9,14 @@ activity: implement
 version: 6.4,6.5
 kt: 6599
 thumbnail: 6599.jpg
+topic: 개발
+role: 비즈니스 전문가
+level: 초급
 translation-type: tm+mt
-source-git-commit: 9d4e864f42fa6c0b2f9b895257db03311269ce2e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 0%
+source-wordcount: '261'
+ht-degree: 1%
 
 ---
 
