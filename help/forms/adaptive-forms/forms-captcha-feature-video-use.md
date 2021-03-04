@@ -3,7 +3,7 @@ title: AEM Adaptive Forms에서 CAPTCHA 사용
 seo-title: AEM Adaptive Forms에서 CAPTCHA 사용
 description: AEM Adaptive Forms에서 CAPTCHA 추가 및 사용
 seo-description: AEM Adaptive Forms에서 CAPTCHA 추가 및 사용
-feature: adaptive-forms
+feature: '"적응형 Forms,워크플로우"'
 topics: integrations
 audience: developer
 doc-type: technical video
@@ -11,10 +11,13 @@ activity: setup
 version: 6.4,6.5
 uuid: bd63e207-4f4d-4f34-9ac4-7572ed26f646
 discoiquuid: 5e184e44-e385-4df7-b7ed-085239f2a642
+topic: 개발
+role: 개발자
+level: 중간
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
