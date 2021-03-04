@@ -2,15 +2,18 @@
 title: AEM에서 프로젝트 개발
 description: AEM Projects를 개발하는 방법을 소개하는 개발 자습서입니다.  이 자습서에서는 컨텐츠 제작 워크플로우 및 작업을 관리하기 위해 AEM 내에서 새 프로젝트를 만드는 데 사용할 수 있는 사용자 정의 프로젝트 템플릿을 만듭니다.
 version: 6.3, 6.4, 6.5
-feature: projects, workflow
+feature: '"프로젝트, 워크플로우"'
 topics: collaboration, development, governance
 activity: develop
 audience: developer, implementer, administrator
 doc-type: tutorial
+topic: 개발
+role: 개발자
+level: 초급
 translation-type: tm+mt
-source-git-commit: 22ccd6627a035b37edb180eb4633bc3b57470c0c
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '4649'
+source-wordcount: '4654'
 ht-degree: 0%
 
 ---
@@ -148,7 +151,7 @@ AEM 프로젝트는 여러 [OOTB 프로젝트 템플릿](https://helpx.adobe.com
 
 1. 프로젝트 템플릿에 사용자 지정 승인자 역할을 추가합니다.
 
-   1. 프로젝트 템플릿(authoring-project) 노드 아래에 **nt:unstructured** 노드 레이블이 **roles**&#x200B;인 새 &lt;a0/>노드를 추가합니다.
+   1. 프로젝트 템플릿(authoring-project) 노드 아래에 **nt:unstructured** 노드 레이블이 **roles**&#x200B;인 새 노드를 추가합니다.
    1. 다른 **nt:unstructured** 노드 레이블이 지정된 승인자를 역할 노드의 하위 노드로 추가합니다.
    1. 문자열 속성 **jcr:title** = &quot;**승인자**&quot;, **롤클래스** =&quot;**소유자**&quot;, **roleid**=&quot;**승인자**&quot;을 추가합니다.
       1. 승인자 노드의 이름뿐만 아니라 jcr:title 및 roleid도 문자열 값일 수 있습니다(roleid가 고유한 경우).
@@ -165,7 +168,7 @@ AEM 프로젝트는 여러 [OOTB 프로젝트 템플릿](https://helpx.adobe.com
                 - roleid = "approver"
    ```
 
-1. 단순 프로젝트 템플릿을 복사하면 4개의 OTB 워크플로우가 구성됩니다. 워크플로우/모델 아래의 각 노드는 특정 워크플로우와 해당 워크플로우에 대한 시작 대화 상자를 가리킵니다. 이 튜토리얼의 후반부에 이 프로젝트에 대한 사용자 정의 워크플로우를 만듭니다. 이제 워크플로우/모델 아래의 노드를 삭제합니다.
+1. 단순 프로젝트 템플릿을 복사하면 4개의 OTB 워크플로우가 구성됩니다. 워크플로우/모델 아래의 각 노드는 특정 워크플로우와 해당 워크플로우에 대한 시작 대화 상자를 가리킵니다. 이 튜토리얼의 후반부에서 이 프로젝트에 대한 사용자 정의 워크플로우를 만듭니다. 이제 워크플로우/모델 아래의 노드를 삭제합니다.
 
    ```shell
    ../projects/templates/authoring-project
@@ -278,7 +281,7 @@ AEM 프로젝트는 여러 [OOTB 프로젝트 템플릿](https://helpx.adobe.com
 
 참가자 단계와 마찬가지로 작업을 동적으로 할당하거나 라우팅할 수 있습니다. 제목, 우선 순위와 같은 작업 메타데이터도 다음 튜토리얼에서 볼 수 있듯이 이전 작업을 기반으로 동적으로 설정할 수 있습니다.
 
-작업은 참가자 단계보다 몇 가지 이점이 있지만, 프로젝트 외부에서는 더 많은 간접비를 부담하므로 유용하지 않습니다. 또한 작업의 모든 동적 동작은 고유한 제한이 있는 ecma 스크립트를 사용하여 코딩되어야 합니다.
+작업은 참가자 단계보다 몇 가지 이점이 있지만, 추가 오버헤드를 발생시키므로 프로젝트 외부에서 유용하지 않습니다. 또한 작업의 모든 동적 동작은 고유한 제한이 있는 ecma 스크립트를 사용하여 코딩되어야 합니다.
 
 ## 샘플 사용 사례 요구 사항 {#goals-tutorial}
 
@@ -512,7 +515,7 @@ task.setCurrentAssignee(projectApproverGrp);
        "Send Back for Revision"
    ```
 
-   이 경로는 Rush Approval 경로이므로 작업의 우선 순위가 High로 설정됩니다. 또한 승인자 그룹에는 작업을 완료할 수 있는 하루만 제공됩니다. 할당자는 [고급 설정] 탭에서 동적으로 할당하므로 작업 탭에 비어 있습니다.
+   이 루트는 러시 승인 경로이므로 작업의 우선 순위가 높음으로 설정됩니다. 또한 승인자 그룹에는 작업을 완료할 수 있는 하루만 제공됩니다. 할당자는 [고급 설정] 탭에서 동적으로 할당하므로 작업 탭에 비어 있습니다.
 
    7단계와 동일한 스크립트 조각을 다시 사용하여 고급 설정 **탭의 **스크립트** 텍스트 영역을 채울 수 있습니다. 아래 코드를 복사하여 붙여 넣습니다.
 
