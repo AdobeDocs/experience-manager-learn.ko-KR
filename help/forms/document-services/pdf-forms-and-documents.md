@@ -3,17 +3,17 @@ title: 다양한 유형의 PDF forms 및 문서 이해
 description: PDF는 파일 포맷으로 되어 있으며 이 문서에서는 양식 개발자에게 중요하며 관련이 있는 PDF 유형에 대해 설명합니다.
 solution: Experience Manager Forms
 product: aem
-type: Documentation
-role: Developer
-level: Beginner,Intermediate
+type: 설명서
+role: 개발자
+level: 초급,중급
 version: 6.3,6.4,6.5
-feature: Document Services
-topic: development
+feature: 문서 서비스
+topic: 개발
 kt: 7071
 translation-type: tm+mt
-source-git-commit: 1e945afddda3d7735005029952a9d7ec46828bc6
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '1294'
+source-wordcount: '1301'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ Adobe은 PDF 양식이라는 용어를 사용하여 AEM Forms Designer에서 만
 
 ## Acrobat
 
-Acrobat은 Adobe의 이전 인터랙티브 양식 기술입니다.acrobat 버전 3으로 돌아갑니다. Adobe은 이 기술에 대한 기술 세부 정보를 제공하기 위해 2003년 5월 최신 [Acrobat Forms API 참조](assets/FormsAPIReference.pdf)를 제공합니다. Acrobat은
+Acrobat은 Adobe의 이전 인터랙티브 양식 기술입니다.Acrobat 버전 3으로 돌아갑니다. Adobe은 이 기술에 대한 기술 세부 정보를 제공하기 위해 2003년 5월 최신 [Acrobat Forms API 참조](assets/FormsAPIReference.pdf)를 제공합니다. Acrobat은
 다음 항목:
 
 * 양식의 정적 레이아웃과 그래픽을 정의하는 일반적인 PDF입니다.
