@@ -1,7 +1,7 @@
 ---
 title: asset compute 확장성을 위한 Asset compute 프로젝트 만들기
 description: asset compute 프로젝트는 Adobe I/O CLI를 사용하여 생성된 Node.js 프로젝트로서 특정 구조를 준수하여 Adobe I/O Runtime에 배포하고 AEM과 Cloud Service으로 통합할 수 있습니다.
-feature: asset-compute
+feature: asset compute 마이크로서비스
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,10 +9,13 @@ audience: developer
 doc-type: tutorial
 kt: 6269
 thumbnail: 40197.jpg
+topic: 통합, 개발
+role: 개발자
+level: 중간, 경험
 translation-type: tm+mt
-source-git-commit: 23c91551673197cebeb517089e5ab6591f084846
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '912'
 ht-degree: 1%
 
 ---
@@ -20,7 +23,7 @@ ht-degree: 1%
 
 # asset compute 프로젝트 만들기
 
-asset compute 프로젝트는 Adobe I/O CLI를 사용하여 생성된 Node.js 프로젝트로서 특정 구조를 준수하여 Adobe I/O Runtime에 배포하고 AEM과 Cloud Service으로 통합할 수 있습니다. 단일 Asset compute 프로젝트에는 하나 이상의 Asset compute 워커가 포함될 수 있으며 각 프로젝트에는 AEM에서 Cloud Service 처리 프로필로 참조할 수 있는 개별 HTTP 종단점이 있습니다.
+asset compute 프로젝트는 Adobe I/O CLI를 사용하여 생성된 Node.js 프로젝트로서, Adobe I/O Runtime에 배포하고 AEM과 Cloud Service으로 통합할 수 있는 특정 구조를 준수합니다. 단일 Asset compute 프로젝트에는 하나 이상의 Asset compute 워커가 포함될 수 있으며 각 프로젝트에는 AEM에서 Cloud Service 처리 프로필로 참조할 수 있는 개별 HTTP 종단점이 있습니다.
 
 ## 프로젝트 생성
 
@@ -51,7 +54,7 @@ _asset compute 프로젝트 생성 클릭스루(오디오 없음)_
 
 ## console.json 생성
 
-개발자 도구에는 Adobe I/O에 연결하는 데 필요한 자격 증명이 포함된 `console.json` 파일이 필요합니다.이 파일은 Adobe I/O 콘솔에서 다운로드됩니다.
+개발자 도구에 Adobe I/O에 연결하는 데 필요한 자격 증명이 포함된 `console.json` 파일이 필요합니다.이 파일은 Adobe I/O 콘솔에서 다운로드됩니다.
 
 1. asset compute 근로자의 [Adobe I/O](https://console.adobe.io) 프로젝트를 엽니다.
 1. 프로젝트 작업 영역을 선택하여 `console.json` 자격 증명을 다운로드합니다. 이 경우 `Development`
@@ -81,7 +84,7 @@ _asset compute 프로젝트 생성 클릭스루(오디오 없음)_
    + `/test/asset-compute/worker`특정 작업자에 대한 테스트 세트를 나타내는 에는 테스트 입력, 매개 변수 및 예상 출력과 함께 특정 테스트 케이스를 나타내는 하위 폴더가 포함됩니다.
 + `/build` asset compute 테스트 케이스 실행의 출력, 로그 및 가공물이 포함되어 있습니다.
 + `/manifest.yml` 프로젝트에서 제공하는 Asset compute 근로자를 정의합니다. AEM에서 Cloud Service으로 사용할 수 있도록 하려면 각 작업자 구현을 이 파일에 열거해야 합니다.
-+ `/console.json` adobe i/o 구성 정의
++ `/console.json` Adobe I/O 구성 정의
    + 이 파일은 `aio app use` 명령을 사용하여 생성/업데이트할 수 있습니다.
 + `/.aio` 에는 aio CLI 툴에 사용되는 구성이 들어 있습니다.
    + 이 파일은 `aio app use` 명령을 사용하여 생성/업데이트할 수 있습니다.
