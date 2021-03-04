@@ -2,16 +2,19 @@
 title: 컨텐츠 조각 및 경험 조각 이해
 description: Adobe Experience Manager의 컨텐츠 조각 및 경험 조각은 표면에서 비슷해 보일 수 있지만 각 컨텐츠 조각은 다른 사용 사례에서 주요 역할을 수행합니다. 컨텐츠 조각 및 경험 조각의 유사성, 차이점, 각 조각 사용 시기 및 방법에 대해 알아봅니다.
 sub-product: 자산, 사이트, 콘텐츠 서비스
-feature: content fragments, experience fragments
+feature: 컨텐츠 조각, 경험 조각
 topics: headless
 version: 6.3, 6.4, 6.5
 doc-type: article
 activity: understand
 audience: all
+topic: 컨텐츠 관리
+role: 비즈니스 전문가
+level: 초급
 translation-type: tm+mt
-source-git-commit: 03db12de4d95ced8fabf36b8dc328581ec7a2749
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '1007'
 ht-degree: 5%
 
 ---
@@ -104,9 +107,9 @@ Adobe Experience Manager의 컨텐츠 조각 및 경험 조각은 표면에서 �
 </ul>
 </td>
 <td><ul>
-<li>AEM SITES, AEM Screens 또는 기타 경험 조각에서 사용할 AEM 경험 조각 구성 요소입니다.</li>
+<li>AEM Sites, AEM Screens 또는 기타 경험 조각에서 사용할 AEM 경험 조각 구성 요소입니다.</li>
 <li>타사 시스템에서 사용하려면 <a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/experience-fragments.html#ThePlainHTMLRendition" target="_blank">일반 HTML</a>로 내보내기</li>
-<li><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/experience-fragments-target.html" target="_blank">타깃팅된 오퍼에 대해 Adobe </a> 타게팅으로 HTML 내보내기</li>
+<li><a href="https://helpx.adobe.com/kr/experience-manager/6-5/sites/administering/using/experience-fragments-target.html" target="_blank">타깃팅된 오퍼에 대해 Adobe </a> 타게팅으로 HTML 내보내기</li>
 <li>타깃팅된 오퍼를 위해 Adobe Target으로 JSON 내보내기</li>
 </ul>
 </td>
@@ -155,7 +158,7 @@ Adobe Experience Manager의 컨텐츠 조각 및 경험 조각은 표면에서 �
 
 !![경험 조각 아키텍처](./assets/experience-fragments-architecture.png)
 
-+ **편집 가능** 템플릿은  **편집 가능 템플릿 유형 및** AEM  **페이지 구성 요소 구현에 의해 정의됩니다. 이** 템플릿은 경험 조각을 구성하는 데 사용할 수 있는 허용된 AEM 구성 요소를 정의합니다.
++ **편집 가능** 템플릿은  **편집 가능 템플릿 유형 및** AEM  **페이지 구성 요소 구현에 의해 차례로 정의되며**, 경험 조각을 구성하는 데 사용할 수 있는 허용된 AEM 구성 요소를 정의합니다.
 + **경험 조각**&#x200B;은 논리적 경험을 나타내는 편집 가능한 템플릿의 인스턴스입니다.
 + 경험 조각 **변형**&#x200B;은 편집 가능한 템플릿을 따르지만 경험(컨텐츠 및 디자인)에 차이가 있습니다.
 + 경험 조각은 다음과 같이 노출/소비할 수 있습니다.
