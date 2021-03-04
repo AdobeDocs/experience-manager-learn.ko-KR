@@ -1,7 +1,7 @@
 ---
 title: asset compute 개발 도구
 description: asset compute 개발 도구는 개발자가 Adobe I/O Runtime의 Asset compute 리소스에 대해 AEM SDK의 컨텍스트에서 벗어나 로컬로 에셋 컴퓨터 작업자를 구성 및 실행할 수 있도록 하는 로컬 웹 도구입니다.
-feature: asset-compute
+feature: asset compute 마이크로서비스
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,10 +9,13 @@ audience: developer
 doc-type: tutorial
 kt: 6283
 thumbnail: 40241.jpg
+topic: 통합, 개발
+role: 개발자
+level: 중간, 경험
 translation-type: tm+mt
-source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '544'
 ht-degree: 0%
 
 ---
@@ -30,7 +33,7 @@ asset compute 개발 도구는 터미널 명령을 통해 Asset compute 프로�
 $ aio app run
 ```
 
-이렇게 하면 __http://localhost:9000__&#x200B;에서 개발 도구가 시작되고 브라우저 창에서 자동으로 열립니다. 개발 도구를 실행하려면 쿼리 매개 변수[를 통해 자동 생성된 유효한 devToolToken을 제공해야 합니다.](#troubleshooting__devtooltoken)
+이렇게 하면 __http://localhost:9000__&#x200B;에서 개발 도구가 시작되고 브라우저 창에서 자동으로 열립니다. 개발 도구를 실행하려면 쿼리 매개 변수](#troubleshooting__devtooltoken)를 통해 자동 생성된 유효한 devToolToken을 제공해야 합니다.[
 
 ## asset compute 개발 도구 인터페이스 이해{#interface}
 
