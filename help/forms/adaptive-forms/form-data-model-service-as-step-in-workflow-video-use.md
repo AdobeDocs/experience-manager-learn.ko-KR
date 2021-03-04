@@ -4,18 +4,21 @@ seo-title: 양식 데이터 모델 서비스를 워크플로우의 단계로 사
 description: AEM Forms 6.4부터 이제 AEM Workflow의 일부로 양식 데이터 모델을 사용할 수 있습니다. 다음 비디오는 AEM Workflow에서 양식 데이터 모델 단계를 구성하는 데 필요한 단계에 따라 안내합니다.
 seo-description: AEM Forms 6.4부터 이제 AEM Workflow의 일부로 양식 데이터 모델을 사용할 수 있습니다. 다음 비디오는 AEM Workflow에서 양식 데이터 모델 단계를 구성하는 데 필요한 단계에 따라 안내합니다.
 uuid: ecd5d5aa-01eb-48fb-872f-66c656ae14df.
-feature: workflow
+feature: 워크플로우
 topics: integrations
 audience: developer
 doc-type: technical video
 activity: setup
 version: 6.4,6.5
 discoiquuid: c442f439-1e5d-4f96-85df-b818c28389ff
+topic: 개발
+role: 개발자
+level: 중간
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 0%
+source-wordcount: '330'
+ht-degree: 1%
 
 ---
 
