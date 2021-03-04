@@ -4,18 +4,21 @@ seo-title: 양식 데이터 모델을 사용하여 캠페인 프로필 만들기
 description: AEM Forms 양식 데이터 모델을 사용하여 Adobe Campaign Standard 프로파일을 만드는 절차
 seo-description: AEM Forms 양식 데이터 모델을 사용하여 Adobe Campaign Standard 프로파일을 만드는 절차
 uuid: 3216827e-e1a2-4203-8fe3-4e2a82ad180a
-feature: adaptive-forms, form-data-model
+feature: 출력 서비스
 topics: integrations
 audience: developer
 doc-type: tutorial
 activity: setup
 version: 6.3,6.4,6.5
 discoiquuid: 461c532e-7a07-49f5-90b7-ad0dcde40984
+topic: 개발
+role: 개발자
+level: 경험
 translation-type: tm+mt
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 2%
+source-wordcount: '452'
+ht-degree: 3%
 
 ---
 
