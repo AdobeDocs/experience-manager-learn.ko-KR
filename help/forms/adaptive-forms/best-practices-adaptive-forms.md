@@ -3,17 +3,20 @@ title: 적응형 양식을 만들 때 따라야 할 이름 지정 규칙 및 우
 seo-title: 적응형 양식을 만들 때 따라야 할 이름 지정 규칙 및 우수 사례
 description: 적응형 양식을 만들 때 따라야 할 이름 지정 규칙 및 우수 사례
 seo-description: 적응형 양식을 만들 때 따라야 할 이름 지정 규칙 및 우수 사례
-feature: adaptive-forms
+feature: 적응형 양식
 topics: best-practices
 audience: developer
 doc-type: article
 activity: setup
 version: 6.3,6.4,6.5
+topic: 개발
+role: 개발자
+level: 초급
 translation-type: tm+mt
-source-git-commit: 5b05dbe45babfcfcfc81995d9d48bc9b26b9b6c8
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '311'
-ht-degree: 1%
+source-wordcount: '316'
+ht-degree: 2%
 
 ---
 
