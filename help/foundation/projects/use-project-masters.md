@@ -2,17 +2,17 @@
 title: AEM에서 Project Master를 사용하는 방법
 description: Project Masters를 사용하면 AEM Projects를 통해 사용자 및 팀 관리를 크게 간소화할 수 있습니다.
 version: 6.4, 6.5, cloud-service
-topic: 컨텐츠 관리
+topic: 컨텐츠 관리, 공동 작업
 feature: 프로젝트
 level: 중간
 role: 비즈니스 전문가
 kt: 256
 thumbnail: 17740.jpg
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 1%
+source-wordcount: '375'
+ht-degree: 0%
 
 ---
 
