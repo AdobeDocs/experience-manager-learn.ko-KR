@@ -2,16 +2,18 @@
 title: 온라인 개정 정리 사용
 description: '온라인 개정 정리 소개 온라인 개정 정리 - 빈번한 오프라인 개정 정리 필요성을 완화합니다. '
 version: 6.3, 6.4, 6.5
-feature: oak, compaction
 topics: operations, authoring, performance
 activity: use
 audience: administrator, architect, implementer
 doc-type: technical video
+topic: 관리
+role: 관리자
+level: 중간
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '74'
-ht-degree: 1%
+source-wordcount: '77'
+ht-degree: 3%
 
 ---
 
