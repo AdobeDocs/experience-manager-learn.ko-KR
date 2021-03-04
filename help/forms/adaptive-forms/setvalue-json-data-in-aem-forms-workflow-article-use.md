@@ -4,20 +4,17 @@ seo-title: AEM Forms 워크플로우에서 Json 데이터 요소의 설정 값
 description: 적응형 양식이 AEM Workflow에서 다른 사용자에게 전달되므로 양식을 검토하는 사람을 기준으로 특정 필드나 패널을 숨기거나 비활성화해야 합니다. 이러한 사용 사례를 충족하기 위해 일반적으로 숨김 필드의 값을 설정합니다. 이 숨김 필드의 값 비즈니스 규칙을 기반으로 적절한 패널이나 필드를 숨기거나 비활성화하도록 작성할 수 있습니다.
 seo-description: 적응형 양식이 AEM Workflow에서 다른 사용자에게 전달되므로 양식을 검토하는 사람을 기준으로 특정 필드나 패널을 숨기거나 비활성화해야 합니다. 이러한 사용 사례를 충족하기 위해 일반적으로 숨김 필드의 값을 설정합니다. 이 숨김 필드의 값 비즈니스 규칙을 기반으로 적절한 패널이나 필드를 숨기거나 비활성화하도록 작성할 수 있습니다.
 uuid: a4ea6aef-a799-49e5-9682-3fa3b7a442fb
-feature: 적응형 양식
+feature: 적응형 양식,워크플로
 topics: developing
 audience: implementer
 doc-type: article
 activity: setup
 version: 6.4
 discoiquuid: 548fb2ec-cfcf-4fe2-a02a-14f267618d68
-topic: 개발
-role: 개발자
-level: 경험
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '764'
 ht-degree: 1%
 
 ---
