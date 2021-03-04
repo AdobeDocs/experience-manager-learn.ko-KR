@@ -1,16 +1,19 @@
 ---
 title: 자르기, 조정된 이미지 및 확대/축소 Target
-description: Dynamic Media Classic의 마스터 이미지는 각 이미지의 잘라낸 버전을 별도로 만들지 않고도 세부 정보를 표시하거나 견본 견본을 위해 각 이미지의 잘린 버전을 만들 수 있습니다. Dynamic Media Classic에서 이미지를 자르고 새 마스터 파일 또는 가상 이미지로 저장하고, 가상 조정된 이미지를 저장하고 마스터 자산 대신 사용하고, 이미지에 확대/축소 Target을 만들어 강조 표시된 세부 사항을 표시하는 방법을 알아봅니다.
+description: Dynamic Media Classic의 마스터 이미지는 각 이미지의 잘린 버전을 별도로 만들지 않고도 세부 정보를 표시하거나 견본 견본을 위해 각 이미지의 잘린 버전을 만들 수 있습니다. Dynamic Media Classic에서 이미지를 자르고 새 마스터 파일 또는 가상 이미지로 저장하고, 가상 조정된 이미지를 저장하고 마스터 자산 대신 사용하고, 이미지에 확대/축소 Target을 만들어 강조 표시된 세부 사항을 표시하는 방법을 알아봅니다.
 sub-product: dynamic-media
-feature: smart-crop
+feature: Dynamic Media Classic
 doc-type: tutorial
 topics: development, authoring, configuring
 audience: all
 activity: use
+topic: 컨텐츠 관리
+role: 비즈니스 전문가
+level: 초급
 translation-type: tm+mt
-source-git-commit: 5eeeb197f9a2ee4216e1f9220c830751c36f01ab
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '2665'
+source-wordcount: '2673'
 ht-degree: 0%
 
 ---
@@ -72,7 +75,7 @@ Dynamic Media Classic에는 자르기 툴을 비롯하여 UI에서 편리하게 
 
 앞에서 언급했듯이 이미지를 업로드할 때 이미지를 자를 수도 있습니다. 업로드 시 트림 자르기를 사용하려면 **작업 옵션** 단추를 클릭하고 [자르기 옵션] 아래에서 **트림**&#x200B;을 선택합니다.
 
-Dynamic Media Classic에서는 다음 업로드를 위해 이 옵션을 기억합니다. 이 업로드를 위해 이미지를 자르려면 모든 업로드에 대해 이미지를 잘리지 않도록 해야 합니다. 다른 옵션은 특별히 예약된 FTP 업로드 작업을 설정하고 자르기 옵션을 여기에 배치하는 것입니다. 이렇게 하면 이미지를 자르는 데 필요한 경우에만 작업을 실행할 수 있습니다.
+Dynamic Media Classic에서는 다음 업로드를 위해 이 옵션을 기억합니다. 이 업로드에 사용할 이미지를 자르려면 모든 업로드에 대해 이미지를 잘리지 않도록 해야 합니다. 다른 옵션은 특별히 예약된 FTP 업로드 작업을 설정하고 자르기 옵션을 여기에 배치하는 것입니다. 이렇게 하면 이미지를 자르는 데 필요한 경우에만 작업을 실행할 수 있습니다.
 
 >[!IMPORTANT]
 >
