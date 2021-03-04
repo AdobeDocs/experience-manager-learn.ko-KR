@@ -1,7 +1,7 @@
 ---
 title: AEM과 함께 Cloud Service으로 사용할 수 있도록 Adobe I/O Runtime에 Asset compute 직원 배포
 description: 'asset compute 프로젝트 및 포함된 작업자는 AEM에서 Cloud Service으로 사용하려면 Adobe I/O Runtime에 배포해야 합니다. '
-feature: asset-compute
+feature: asset compute 마이크로서비스
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,10 +9,13 @@ audience: developer
 doc-type: tutorial
 kt: 6286
 thumbnail: KT-6286.jpg
+topic: 통합, 개발
+role: 개발자
+level: 중간, 경험
 translation-type: tm+mt
-source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '656'
 ht-degree: 0%
 
 ---
@@ -20,12 +23,12 @@ ht-degree: 0%
 
 # Adobe I/O Runtime에 배포
 
-asset compute 프로젝트와 포함된 작업자는 AEM에서 Cloud Service으로 사용할 Adobe I/O CLI를 통해 Adobe I/O Runtime에 배포해야 합니다.
+asset compute 프로젝트와 포함된 작업자는 Cloud Service으로 사용할 Adobe I/O CLI를 통해 Adobe I/O Runtime에 배포해야 합니다.
 
 AEM에서 Cloud Service 작성 서비스로 사용하기 위해 Adobe I/O Runtime에 배포하는 경우 2개의 환경 변수만 필요합니다.
 
 + `AIO_runtime_namespace` 배포할 Adobe 프로젝트 Firefly 작업 공간을 가리킵니다.
-+ `AIO_runtime_auth` adobe 프로젝트 Firefly 작업 공간의 인증 자격 증명입니다.
++ `AIO_runtime_auth` Adobe 프로젝트 Firefly 작업 공간의 인증 자격 증명입니다.
 
 `.env` 파일에 정의된 다른 표준 변수는 Asset compute 워커를 호출할 때 AEM에서 Cloud Service으로 암시적으로 제공됩니다.
 
@@ -78,6 +81,6 @@ asset compute 프로젝트 버전이 작업자 URL도 새 버전을 반영하도
 
 ## 작업 공간 API 프로비저닝{#workspace-api-provisioning}
 
-로컬 개발을 지원하기 위해 Adobe I/O[에서 Adobe 프로젝트 Firefly 프로젝트를 설정하는 경우 새 개발 작업 영역이 만들어지고 ](../set-up/firefly.md)Asset compute, I/O 이벤트&#x200B;__및__ I/O 이벤트 관리 API __가 이 프로젝트에 추가되었습니다.__
+Adobe I/O](../set-up/firefly.md)에서 Adobe 프로젝트 Firefly 프로젝트를 설정하여 로컬 개발을 지원할 때 새 개발 작업 영역이 만들어지고 __Asset compute, I/O 이벤트__ 및 __I/O 이벤트 관리 API__&#x200B;가 이 프로젝트에 추가되었습니다.[
 
 __Asset compute, I/O 이벤트__ 및 __I/O 이벤트 관리 API__ API는 로컬 개발에 사용되는 작업 영역에만 명시적으로 추가됩니다. Cloud Service 환경으로 AEM과 통합(전용)하는 작업 영역은 API가 Cloud Service으로 자연스럽게 AEM에서 사용할 수 있도록 하기 위해 이러한 API를 명시적으로 추가해야 하는 __가 아닙니다.__
