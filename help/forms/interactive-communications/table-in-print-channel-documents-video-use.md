@@ -2,17 +2,20 @@
 title: AEM Forms 인쇄 채널 문서에서 표 구성 요소 사용
 seo-title: AEM Forms 인쇄 채널 문서에서 표 구성 요소 사용
 description: 다음 비디오에서는 인쇄 채널 문서에 대해 대화형 통신에서 표 구성 요소를 사용하는 데 필요한 단계를 안내합니다.
-feature: interactive-communication
+feature: 대화형 통신
 topics: development
 audience: developer
 doc-type: technical video
 activity: implement
 version: 6.4,6.5
+topic: 개발
+role: 개발자
+level: 중간
 translation-type: tm+mt
-source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '276'
-ht-degree: 0%
+source-wordcount: '281'
+ht-degree: 2%
 
 ---
 
