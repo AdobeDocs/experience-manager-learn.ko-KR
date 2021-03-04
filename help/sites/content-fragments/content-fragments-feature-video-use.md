@@ -2,17 +2,20 @@
 title: AEM에서 컨텐츠 조각 작성
 description: '컨텐츠 조각은 AEM에서 지원하는 채널과 독립적으로 텍스트 기반 컨텐츠를 작성 및 관리할 수 있는 컨텐츠 추상화입니다. '
 sub-product: 컨텐츠 서비스
-feature: content-fragments
+feature: 컨텐츠 조각
 topics: authoring, content-architecture
 audience: all
 doc-type: feature video
 activity: use
 version: cloud-service
+topic: 컨텐츠 관리
+role: 비즈니스 전문가
+level: 초급
 translation-type: tm+mt
-source-git-commit: 5012433a5f1c7169b1a3996453bfdbd5d78e5b1c
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 6%
+source-wordcount: '381'
+ht-degree: 9%
 
 ---
 
@@ -62,7 +65,7 @@ AEM 컨텐츠 조각은 변형, 요소 및 메타데이터가 포함된 Zip 파�
 
 >[!NOTE]
 >
-> 컨텐츠 조각에 대한 주석 및 버전 비교는 [AEM 6.4 서비스 팩 2](https://helpx.adobe.com/kr/experience-manager/aem-releases-updates.html) 및 [AEM 6.3 서비스 팩 3](https://helpx.adobe.com/experience-manager/6-3/release-notes/sp3-release-notes.html)에서 도입되었습니다.
+> 컨텐츠 조각에 대한 주석 및 버전 비교는 [AEM 6.4 서비스 팩 2](https://helpx.adobe.com/experience-manager/aem-releases-updates.html) 및 [AEM 6.3 서비스 팩 3](https://helpx.adobe.com/experience-manager/6-3/release-notes/sp3-release-notes.html)에서 도입되었습니다.
 
 ## 다음 단계
 
