@@ -3,18 +3,15 @@ title: AEM에서 슬링 모델 내보내기 개발
 description: 이 기술은 Sling Model Exporter와 함께 사용할 AEM 설정, Exporter 프레임워크를 사용하여 기존 Sling 모델을 JSON으로 향상시키는 방법, Exporter 옵션 및 Jackson 주석을 사용하여 출력을 사용자 정의하는 방법을 안내합니다.
 version: 6.3, 6.4, 6.5
 sub-product: 기반, 컨텐츠 서비스
-feature: API
+feature: sling-models, sling-model-exporter
 topics: content-delivery, development, headless
 activity: develop
 audience: developer
 doc-type: technical video
-topic: 개발
-role: 개발자
-level: 중간
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '423'
 ht-degree: 0%
 
 ---
