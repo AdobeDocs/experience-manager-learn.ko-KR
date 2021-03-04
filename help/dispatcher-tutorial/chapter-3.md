@@ -1,10 +1,12 @@
 ---
 title: 3장 - 고급 캐싱 항목
+seo-title: AEM Dispatcher Cache Demanded - 3장 - 고급 캐싱 항목
 description: AEM Dispatcher Cache Demified 자습서의 3장에서는 2장에서 설명한 제한 사항을 해결하는 방법을 설명합니다.
+seo-description: AEM Dispatcher Cache Demified 자습서의 3장에서는 2장에서 설명한 제한 사항을 해결하는 방법을 설명합니다.
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '6162'
+source-wordcount: '6187'
 ht-degree: 0%
 
 ---
