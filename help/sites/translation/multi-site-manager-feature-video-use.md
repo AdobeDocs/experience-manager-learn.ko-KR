@@ -3,7 +3,7 @@ title: AEM Sites에서 다중 사이트 관리자 사용
 seo-title: Adobe Experience Manager에서 다중 사이트 관리자 터치 UI 인터페이스 사용
 description: Live Copy 개요 및 블루프린트 구성 관리자는 다중 사이트 관리자 작업을 위한 터치 UI 사용 인터페이스입니다.
 seo-description: Live Copy 개요 및 Blueprint Configuration Manager는 Adobe Experience Manager에서 다중 사이트 관리자를 사용하여 작업할 수 있는 터치 UI 지원 인터페이스입니다.
-feature: multi-site-manager
+feature: 다중 사이트 관리자
 topics: localization, authoring, content-architecture
 audience: all
 doc-type: feature video
@@ -11,11 +11,14 @@ activity: use
 version: 6.3, 6.4, 6.5
 uuid: 76f295d0-78dd-429c-9129-9182b3a706a6
 discoiquuid: a0dc581e-300f-45ef-916a-1cbac0429899
+topic: 로컬라이제이션
+role: 비즈니스 전문가
+level: 초급
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '171'
-ht-degree: 2%
+source-wordcount: '178'
+ht-degree: 5%
 
 ---
 
@@ -34,7 +37,7 @@ ht-degree: 2%
 
 >[!VIDEO](https://video.tv.adobe.com/v/17056/?quality=9&learn=on)
 
-*AEM 6.3에서는 다중 사이트 관리자에서 사용할 블루프린트 구성을 관리하기 위한 터치 UI 인터페이스를 도입합니다.*
+*AEM 6.3에서는 다중 사이트 관리자에서 사용할 블루프린트 구성을 관리하는 터치 UI 인터페이스를 도입했습니다.*
 
 ## 추가 리소스 {#additional-resources}
 
