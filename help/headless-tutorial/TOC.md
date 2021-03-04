@@ -4,18 +4,17 @@ user-guide-description: AEM Headless를 사용하여 컨텐츠를 작성하고 �
 breadcrumb-title: AEM 헤드리스 튜토리얼
 version: cloud-service
 sub-product: 컨텐츠 서비스
-doc-type: tutorial
-feature: 컨텐츠 조각, 핵심 구성 요소
-topics: content-delivery
 audience: architect, developer, implementer
+doc-type: tutorial
+topics: content-delivery
 activity: develop, understand
 kt: 2963
 index: y
 translation-type: tm+mt
-source-git-commit: ce4a35f763862c6d6a42795fd5e79d9c59ff645a
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 29%
+source-wordcount: '105'
+ht-degree: 30%
 
 ---
 
