@@ -4,7 +4,7 @@ seo-title: Adobe Target 내에서 AEM 경험 조각 오퍼 사용
 description: Adobe Experience Manager 6.4는 AEM과 Target 간의 개인화 워크플로우를 혁신합니다. 이제 AEM 내에서 만든 경험을 HTML 오퍼로 Adobe Target에 직접 전달할 수 있습니다. 이를 통해 마케터는 다양한 채널에서 컨텐츠를 원활하게 테스트하고 개인화할 수 있습니다.
 seo-description: Adobe Experience Manager 6.4는 AEM과 Target 간의 개인화 워크플로우를 혁신합니다. 이제 AEM 내에서 만든 경험을 HTML 오퍼로 Adobe Target에 직접 전달할 수 있습니다. 이를 통해 마케터는 다양한 채널에서 컨텐츠를 원활하게 테스트하고 개인화할 수 있습니다.
 sub-product: 컨텐츠 서비스
-feature: experience-fragments
+feature: 경험 구성요소
 topics: integrations, personalization
 audience: all
 doc-type: feature video
@@ -12,10 +12,13 @@ activity: setup
 version: 6.4, 6.5
 uuid: 7b91f65d-5a35-419a-8cf7-be850165dd33
 discoiquuid: 45fc8d83-73fb-42e5-9c92-ce588c085ed4
+topic: 개인화
+role: 비즈니스 전문가
+level: 초급
 translation-type: tm+mt
-source-git-commit: 7a830d5a04ce53014b86f9f05238dd64f79edffc
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '465'
 ht-degree: 11%
 
 ---
@@ -33,7 +36,7 @@ Adobe Experience Manager 6.4는 AEM과 Target 간의 개인화 워크플로우�
 
 >[!NOTE]
 >
->ADOBE TARGET 내의 AEM 경험 조각 오퍼는 AEM 6.3 사용자를 위한 기능 팩으로도 사용할 수 있습니다. 기능 팩 및 종속성에 대해서는 아래 섹션을 참조하십시오.
+>Adobe Target 내의 AEM 경험 조각 오퍼는 AEM 6.3 사용자를 위한 기능 팩으로도 사용할 수 있습니다. 기능 팩 및 종속성에 대해서는 아래 섹션을 참조하십시오.
 
 
 * 컨텐츠 작성자는 Adobe Experience Manager의 AI(인위적 Intelligence) 및 머신 러닝(Machine Learning)과 함께 사용하기 쉽고 강력한 컨텐츠 제작 메커니즘을 사용하여 중앙에서 모든 채널에 배포할 컨텐츠를 제작하고 관리할 수 있습니다. 경험 조각을 HTML 오퍼로 Adobe Target으로 내보낼 수 있는 기능을 통해 마케터는 이제 이러한 오퍼를 사용하여 보다 개인화된 경험을 제작할 수 있고 각각의 경험을 테스트하고 확장할 수 있습니다.
