@@ -2,17 +2,19 @@
 title: AEM에서 시스템 개요 대시보드 사용
 description: 이전 버전의 AEM 관리자는 AEM 인스턴스의 전체 상황을 파악하기 위해 여러 위치를 확인해야 했습니다. 시스템 개요는 단일 대시보드에서 AEM 인스턴스의 구성, 하드웨어 및 상태를 수준 높게 확인하여 이 문제를 해결하도록 합니다.
 version: 6.4, 6.5
-feature: null
 topics: administration, operations, monitoring
 activity: use
 audience: administrator, architect, developer, implementer
 doc-type: technical video
 contentOwner: dgordon
+topic: 관리
+role: 관리자
+level: 초급
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '142'
-ht-degree: 0%
+source-wordcount: '145'
+ht-degree: 1%
 
 ---
 
