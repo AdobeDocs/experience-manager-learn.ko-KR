@@ -3,7 +3,7 @@ title: 재사용 가능한 AEM Forms 워크플로우 모델 만들기
 seo-title: 재사용 가능한 AEM Forms 워크플로우 모델 만들기
 description: 적응형 Forms에 독립적인 워크플로우 모델
 seo-description: 적응형 Forms에 독립적인 워크플로우 모델
-feature: 워크플로우
+feature: workflow
 topics: development
 audience: developer
 doc-type: article
@@ -11,14 +11,11 @@ activity: setup
 version: 6.5
 uuid: 3a082743-3e56-42f4-a44b-24fa34165926
 discoiquuid: 9f18c314-39d1-4c82-b1bc-d905ea472451
-topic: 개발
-role: 개발자
-level: 초급
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 1%
+source-wordcount: '291'
+ht-degree: 0%
 
 ---
 
