@@ -1,7 +1,7 @@
 ---
 title: 여러 문서 솔루션 서명 문제 해결
 description: 솔루션 테스트 및 문제 해결
-feature: adaptive-forms
+feature: 적응형 양식
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,11 +9,14 @@ activity: implement
 version: 6.4,6.5
 kt: 6960
 thumbnail: 6960.jpg
+topic: 개발
+role: 개발자
+level: 중간
 translation-type: tm+mt
-source-git-commit: 049574ab2536b784d6b303f474dba0412007e18c
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '389'
-ht-degree: 0%
+source-wordcount: '394'
+ht-degree: 1%
 
 ---
 
