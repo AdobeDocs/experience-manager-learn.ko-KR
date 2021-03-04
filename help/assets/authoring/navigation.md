@@ -1,18 +1,18 @@
 ---
 title: 탐색
 description: AEM Assets 탐색의 기본 사항을 살펴보십시오.
-feature: Asset Management
-topics: Content Management
-role: Business Practitioner
-level: Beginner
+feature: 자산 관리
+role: 비즈니스 전문가
+level: 초급
 version: cloud-service
 kt: 4305
 thumbnail: 32046.jpg
+topic: 컨텐츠 관리
 translation-type: tm+mt
-source-git-commit: d89cd051f9fc8800d94ad11851ceaf4212f3c797
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '16'
-ht-degree: 12%
+source-wordcount: '23'
+ht-degree: 17%
 
 ---
 
