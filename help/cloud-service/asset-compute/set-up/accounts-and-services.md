@@ -1,7 +1,7 @@
 ---
 title: asset compute 확장성을 위한 계정 및 서비스 설정
 description: 개발 Asset compute 작업자를 개발하려면 Microsoft 또는 Amazon에서 제공하는 Cloud Service, Adobe 프로젝트 파이어플라이로 AEM을 비롯한 계정 및 서비스에 액세스해야 하며 클라우드 스토리지가 필요합니다.
-feature: asset-compute
+feature: asset compute 마이크로서비스
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,11 +9,14 @@ audience: developer
 doc-type: tutorial
 kt: 6264
 thumbnail: 40377.jpg
+topic: 통합, 개발
+role: 개발자
+level: 중간, 경험
 translation-type: tm+mt
-source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '627'
-ht-degree: 1%
+source-wordcount: '635'
+ht-degree: 2%
 
 ---
 
