@@ -1,18 +1,21 @@
 ---
 title: AEM SDK 디버깅
 description: AEM SDK는 개발자가 사용하는 기본 개발 환경으로, AEM 및 배포된 애플리케이션을 디버깅하는 다양한 방법을 지원합니다.
-feature: null
+feature: 개발자 도구
 topics: development
 version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: null
+topic: 개발
+role: 개발자
+level: 초급, 중급
 translation-type: tm+mt
-source-git-commit: a3d3612713decefb5c7e1cf5b2d4d21afff0a2f5
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 0%
+source-wordcount: '215'
+ht-degree: 2%
 
 ---
 
