@@ -2,7 +2,7 @@
 title: 사용자 지정 구성 요소 만들기 | AEM SPA 편집기 시작 및 반응
 description: AEM SPA 편집기에 사용할 사용자 정의 구성 요소를 만드는 방법을 알아봅니다. 작성 대화 상자와 Sling Models를 개발하여 JSON 모델을 확장하여 사용자 정의 구성 요소를 채우는 방법을 알아봅니다.
 sub-product: 사이트
-feature: SPA Editor
+feature: SPA 편집기
 doc-type: tutorial
 topics: development
 version: cloud-service
@@ -10,10 +10,13 @@ activity: develop
 audience: developer
 kt: 5878
 thumbnail: 5878-spa-react.jpg
+topic: SPA
+role: 개발자
+level: 초급
 translation-type: tm+mt
-source-git-commit: e6da018a21155eca3a52dd562e469296b3c68c0d
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1486'
+source-wordcount: '1491'
 ht-degree: 1%
 
 ---
