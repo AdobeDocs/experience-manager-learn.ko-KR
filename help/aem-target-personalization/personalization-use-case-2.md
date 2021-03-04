@@ -3,11 +3,15 @@ title: Adobe Target을 사용한 개인화
 seo-title: Adobe Target을 사용한 개인화
 description: Adobe Target을 사용하여 개인화된 경험을 제작 및 전달하는 방법을 소개하는 종합적인 자습서입니다.
 seo-description: Adobe Target을 사용하여 개인화된 경험을 제작 및 전달하는 방법을 소개하는 종합적인 자습서입니다.
+feature: 경험 구성요소
+topic: 개인화
+role: 개발자
+level: 중간
 translation-type: tm+mt
-source-git-commit: 0443c8ff42e773021ff8b6e969f5c1c31eea3ae4
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '606'
-ht-degree: 2%
+source-wordcount: '611'
+ht-degree: 3%
 
 ---
 
@@ -37,7 +41,7 @@ WKND 사이트는 홈 페이지를 다시 설계했으며 현재 홈 페이지 �
 
 * **AEM**
    * [AEM 작성자 및 ](./implementation.md#getting-aem) 각각 localhost 4502 및 4503에 게시 설치
-   * [ADOBE EXPERIENCE PLATFORM LAUNCH을 사용하여 Adobe Target과 통합](./using-launch-adobe-io.md#aem-target-using-launch-by-adobe)
+   * [Adobe Experience Platform Launch을 사용하여 Adobe Target과 통합](./using-launch-adobe-io.md#aem-target-using-launch-by-adobe)
 * **Experience Cloud**
    * 조직 Adobe Experience Cloud 액세스 - <https://>`<yourcompany>`.experiencecloud.adobe.com
    * 다음 솔루션으로 제공된 Experience Cloud
