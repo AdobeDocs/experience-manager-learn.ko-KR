@@ -1,20 +1,17 @@
 ---
 title: Adobe Sign과 함께 AEM Forms 사용
 description: Adobe Sign과 AEM Forms을 사용하면 복잡한 트랜잭션을 자동화할 수 있고 완벽한 디지털 경험의 일부로 합법적인 전자 서명을 포함시킬 수 있습니다.
-feature: '"적응형 Forms,Adobe Sign"'
+feature: 적응형 양식
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
-topic: 개발
-role: 개발자
-level: 초급
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '165'
-ht-degree: 1%
+source-wordcount: '159'
+ht-degree: 0%
 
 ---
 
