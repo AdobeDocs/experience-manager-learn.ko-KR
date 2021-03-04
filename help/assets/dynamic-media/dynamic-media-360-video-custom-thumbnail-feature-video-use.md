@@ -1,22 +1,17 @@
 ---
 title: AEM Assets에서 Dynamic Media 360 비디오 및 사용자 정의 비디오 축소판 사용
-seo-title: AEM Assets에서 Dynamic Media 360 비디오 및 사용자 정의 비디오 축소판 사용
 description: AEM 6.5의 Dynamic Media 뷰어 개선 사항에는 360개 비디오 렌더링 지원, 360개의 미디어 뷰어(video360Social 및 video360VR) 지원 추가, 사용자 정의 비디오 축소판 선택 기능이 포함되어 있습니다.
-seo-description: AEM 6.5의 Dynamic Media 뷰어 개선 사항에는 360개 비디오 렌더링 지원, 360개의 미디어 뷰어(video360Social 및 video360VR) 지원 추가, 사용자 정의 비디오 축소판 선택 기능이 포함되어 있습니다.
-uuid: 44b91c22-635c-48c2-af27-49bdbfb61639
-discoiquuid: 67d5e0f2-3fde-4ea7-9e53-4fc0cf8b9f2a
 sub-product: dynamic-media
-feature: video-profiles, viewer-presets
-topics: images, videos, renditions, authoring, integrations, publishing, metadata
-doc-type: feature video
-audience: all
-activity: use
+feature: 비디오 프로필
 version: 6.3, 6.4, 6.5
+topic: 컨텐츠 관리
+role: 비즈니스 전문가
+level: 초급
 translation-type: tm+mt
-source-git-commit: 9cf01dbf9461df4cc96d5bd0a96c0d4d900af089
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 2%
+source-wordcount: '402'
+ht-degree: 5%
 
 ---
 
@@ -29,7 +24,7 @@ AEM 6.5의 Dynamic Media 뷰어 개선 사항에는 360개 비디오 렌더링 �
 
 >[!NOTE]
 >
->비디오는 AEM 인스턴스가 Dynamic Media S7 모드에서 실행 중이라고 가정합니다.  [Dynamic Media을 사용하여 AEM을 설정하는 방법은 여기를 참조하십시오](https://helpx.adobe.com/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html). 비디오를 업로드할 때 기본적으로 Dynamic Media은 종횡비가 2:1인 경우 푸티지를 360 비디오로 처리합니다. 예를 들어 폭에서 높이 사이의 비율은 2:1입니다.
+>비디오는 AEM 인스턴스가 Dynamic Media S7 모드에서 실행 중이라고 가정합니다.  [Dynamic Media을 사용하여 AEM을 설정하는 방법은 여기를 참조하십시오](https://helpx.adobe.com/kr/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html). 비디오를 업로드할 때 기본적으로 Dynamic Media은 종횡비가 2:1인 경우 푸티지를 360 비디오로 처리합니다. 예를 들어 폭에서 높이 사이의 비율은 2:1입니다.
 
 >[!NOTE]
 >
