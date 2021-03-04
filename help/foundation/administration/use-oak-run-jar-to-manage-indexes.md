@@ -2,15 +2,18 @@
 title: oak-run.jar를 사용하여 색인 관리
 description: oak-run.jar의 index 명령을 사용하면 인덱스 통계 수집, 인덱스 일관성 검사 실행, 색인 재지정 등 AEM에서 Oak 색인을 관리할 수 있는 다양한 기능을 통합할 수 있습니다.
 version: 6.4, 6.5
-feature: 오크
+feature: 검색
 topics: search
 activity: use
 audience: architect, developer, implementer
 doc-type: technical video
+topic: 공연
+role: 개발자
+level: 경험
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '453'
 ht-degree: 0%
 
 ---
