@@ -1,20 +1,17 @@
 ---
 title: AEM Assets Dynamic Media에서 파노라마 및 세로 이미지 뷰어 사용
-seo-title: AEM Assets Dynamic Media에서 파노라마 및 세로 이미지 뷰어 사용
 description: AEM 6.4에서 향상된 Dynamic Media 뷰어 기능에는 파노라마 이미지 뷰어 추가, 파노라마 가상 현실 이미지 뷰어 및 세로 이미지 뷰어가 포함됩니다. Panoramic Viewer를 사용하면 사용자 정의 개발 없이도 회의실, 속성, 위치 또는 경관의 매력적이고 매력적인 경험을 손쉽게 전달할 수 있습니다.
-seo-description: AEM 6.4에서 향상된 Dynamic Media 뷰어 기능에는 파노라마 이미지 뷰어 추가, 파노라마 가상 현실 이미지 뷰어 및 세로 이미지 뷰어가 포함됩니다. Panoramic Viewer를 사용하면 사용자 정의 개발 없이도 회의실, 속성, 위치 또는 경관의 매력적이고 매력적인 경험을 손쉽게 전달할 수 있습니다.
 sub-product: dynamic-media
-feature: video-profiles, video-profiles, vr-360
-topics: videos, renditions, authoring
-doc-type: feature video
-audience: all
-activity: use
+feature: 비디오 프로필, 비디오 프로필, 360 VR 비디오
 version: 6.4, 6.5
+topic: 컨텐츠 관리
+role: 비즈니스 전문가
+level: 초급
 translation-type: tm+mt
-source-git-commit: 9cf01dbf9461df4cc96d5bd0a96c0d4d900af089
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '593'
-ht-degree: 1%
+source-wordcount: '548'
+ht-degree: 3%
 
 ---
 
@@ -27,7 +24,7 @@ AEM 6.4에서 향상된 Dynamic Media 뷰어 기능에는 파노라마 이미지
 
 >[!NOTE]
 >
->비디오는 AEM 인스턴스가 Dynamic Media S7 모드에서 실행 중이라고 가정합니다. [Dynamic Media을 사용하여 AEM을 설정하는 방법은 여기를 참조하십시오.](https://helpx.adobe.com/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
+>비디오는 AEM 인스턴스가 Dynamic Media S7 모드에서 실행 중이라고 가정합니다. [Dynamic Media을 사용하여 AEM을 설정하는 방법은 여기를 참조하십시오.](https://helpx.adobe.com/kr/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
 
 ## 파노라마 및 파노라마 VR 뷰어
 
