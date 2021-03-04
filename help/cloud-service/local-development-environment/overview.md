@@ -1,7 +1,7 @@
 ---
 title: Cloud Service의 지역개발 환경
 description: Adobe Experience Manager(AEM) 로컬 개발 환경 개요.
-feature: null
+feature: 개발자 도구
 topics: development
 version: cloud-service
 doc-type: article
@@ -9,11 +9,14 @@ activity: troubleshoot
 audience: developer
 kt: 3290
 thumbnail: 32565.jpg
+topic: 개발
+role: 개발자
+level: 초급
 translation-type: tm+mt
-source-git-commit: 69c1767098cc9da8ec0ae2bd83d25417d330f393
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '477'
-ht-degree: 1%
+source-wordcount: '482'
+ht-degree: 2%
 
 ---
 
@@ -24,7 +27,7 @@ ht-degree: 1%
 
 >[!VIDEO](https://video.tv.adobe.com/v/32565/?quality=12&learn=on)
 
-![CLOUD SERVICE 로컬 개발 환경 기술 스택으로서 AEM](./assets/overview/aem-sdk-technology-stack.png)
+![Cloud Service 로컬 개발 환경 기술 스택으로서 AEM](./assets/overview/aem-sdk-technology-stack.png)
 
 AEM의 로컬 개발 환경은 3개의 논리 그룹으로 분류할 수 있습니다.
 
