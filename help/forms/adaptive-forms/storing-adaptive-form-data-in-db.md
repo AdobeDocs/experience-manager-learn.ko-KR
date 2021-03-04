@@ -3,19 +3,16 @@ title: 적응형 양식 데이터 저장
 seo-title: 적응형 양식 데이터 저장
 description: AEM 워크플로우의 일부로 DataBase에 적응형 양식 데이터 저장
 seo-description: AEM 워크플로우의 일부로 DataBase에 적응형 양식 데이터 저장
-feature: '"적응형 Forms,워크플로,양식 데이터 모델"'
+feature: 적응형 양식,워크플로
 topics: integrations
 audience: implementer
 doc-type: article
 activity: setup
 version: 6.3,6.4,6.5
-topic: 개발
-role: 개발자
-level: 경험
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '392'
 ht-degree: 1%
 
 ---
