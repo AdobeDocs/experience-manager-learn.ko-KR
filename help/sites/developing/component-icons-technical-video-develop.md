@@ -6,11 +6,15 @@ audience: administrator, developer
 doc-type: technical video
 activity: develop
 version: 6.3, 6.4, 6.5
+feature: 코어 구성 요소
+topic: 개발
+role: 비즈니스 전문가
+level: 중간
 translation-type: tm+mt
-source-git-commit: c85a59a8bd180d5affe2a5bf5939dabfb2776d73
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 1%
+source-wordcount: '381'
+ht-degree: 2%
 
 ---
 
