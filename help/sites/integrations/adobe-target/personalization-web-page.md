@@ -1,7 +1,6 @@
 ---
 title: 전체 웹 페이지 경험의 개인화
 description: Adobe Target을 사용하여 AEM 웹 사이트 페이지를 새 페이지로 리디렉션하기 위해 Target 활동을 만드는 방법을 알아봅니다.
-feature: targeting
 topics: integrations, authoring, personalization, activity, offers
 audience: all
 doc-type: feature video
@@ -9,11 +8,14 @@ activity: use
 version: cloud-service
 kt: 6353
 thumbnail: 6353-personalization-web-page.jpg
+topic: 통합
+role: 개발자
+level: 중간
 translation-type: tm+mt
-source-git-commit: 988e390dd9e1fc6033b3651db151e6a60ce4efaa
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 0%
+source-wordcount: '464'
+ht-degree: 1%
 
 ---
 
