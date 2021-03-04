@@ -1,22 +1,19 @@
 ---
 title: Dynamic Media Classic 데스크톱 응용 프로그램 사용
-seo-title: Dynamic Media Classic 데스크톱 응용 프로그램 사용
 description: Adobe은 브라우저에서 더 이상 Adobe Flash 기술을 사용하지 않는 Dynamic Media Classic 사용자를 위한 데스크탑 애플리케이션을 제공합니다.
-seo-description: Adobe은 브라우저에서 더 이상 Adobe Flash 기술을 사용하지 않는 Dynamic Media Classic 사용자를 위한 데스크탑 애플리케이션을 제공합니다.
 sub-product: dynamic-media
-feature: desktop-application, classic
-topics: authoring, operations
-doc-type: feature-video
-audience: all
-activity: use
+feature: Dynamic Media Classic
 version: 6.5
 kt: 5808
 thumbnail: 36645.jpg
+topic: 컨텐츠 관리
+role: 비즈니스 전문가
+level: 초급
 translation-type: tm+mt
-source-git-commit: 9cf01dbf9461df4cc96d5bd0a96c0d4d900af089
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 0%
+source-wordcount: '212'
+ht-degree: 1%
 
 ---
 
