@@ -1,21 +1,18 @@
 ---
 title: 2명의 서명자와 임대 계약
 description: 2명의 서명자와 임대 계약 이 비디오에서는 2명의 서명자가 있는 적응형 양식을 구성하는 데 필요한 다양한 단계를 설명합니다.
-feature: '"적응형 Forms,Adobe Sign"'
+feature: 적응형 양식
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 thumbnail: 39294.jpg
 kt: 6071
-topic: 개발
-role: 관리자
-level: 초급
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '65'
-ht-degree: 7%
+source-wordcount: '59'
+ht-degree: 5%
 
 ---
 
