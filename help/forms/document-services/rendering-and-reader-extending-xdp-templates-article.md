@@ -9,12 +9,15 @@ audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
-feature: forms-service
+feature: Forms 서비스
 discoiquuid: aefb4124-91a0-4548-94a3-86785ea04549
+topic: 개발
+role: 개발자
+level: 경험
 translation-type: tm+mt
-source-git-commit: e99779b5d42bb9a3b258e2bbe815defde9d40bf7
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '435'
 ht-degree: 0%
 
 ---
