@@ -2,19 +2,18 @@
 title: 주석 및 주석
 description: AEM에서 주석과 주석을 사용하여 에셋에 대해 커뮤니케이션하고 공동 작업을 하는 방법을 살펴봅니다.
 sub-product: 자산
-feature: null
-topics: authoring, collaboration
-audience: author
-doc-type: feature video
-activity: use
+feature: 협업
 version: cloud-service
 kt: 4541
 thumbnail: 32049.jpg
+topic: 협업
+role: 비즈니스 전문가
+level: 초급
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '37'
-ht-degree: 0%
+source-wordcount: '42'
+ht-degree: 4%
 
 ---
 
