@@ -1,7 +1,7 @@
 ---
 title: Target 호출 로드 및 실행
 description: 시작 규칙을 사용하여 매개 변수를 로드하고, 페이지 요청에 매개 변수를 전달하고, 사이트 페이지에서 Target 호출을 실행하는 방법에 대해 알아보십시오. 페이지 정보는 검색 및 매개 변수로 전달됩니다. Adobe 클라이언트 데이터 레이어를 사용하면 웹 페이지에서 방문자의 경험에 대한 데이터를 수집하고 저장한 다음 이 데이터에 쉽게 액세스할 수 있습니다.
-feature: launch, core-components, data-layer
+feature: 핵심 구성 요소, Adobe 클라이언트 데이터 레이어
 topics: integrations, administration, development
 audience: administrator, developer
 doc-type: technical video
@@ -9,10 +9,13 @@ activity: setup
 version: cloud-service
 kt: 6133
 thumbnail: 41243.jpg
+topic: 통합
+role: 개발자
+level: 중간
 translation-type: tm+mt
-source-git-commit: 9102505bbd826e17bf924cec719d7a430eea5095
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '622'
 ht-degree: 3%
 
 ---
