@@ -4,15 +4,18 @@ description: AEM 로컬 개발 액세스 토큰은 HTTP를 통해 AEM 작성자 
 version: cloud-service
 doc-type: tutorial
 topics: Development, Security
-feature: APIs
+feature: API
 activity: develop
 audience: developer
 kt: 6785
 thumbnail: 330477.jpg
+topic: '"헤드리스, 통합"'
+role: 개발자
+level: '"중간, 경험"'
 translation-type: tm+mt
-source-git-commit: c4f3d437b5ecfe6cb97314076cd3a5e31b184c79
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '1070'
+source-wordcount: '1076'
 ht-degree: 0%
 
 ---
