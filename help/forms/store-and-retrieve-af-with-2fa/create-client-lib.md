@@ -1,7 +1,7 @@
 ---
 title: 클라이언트 라이브러리 만들기
 description: 클라이언트 라이브러리를 만들어 "저장 및 종료" 단추의 클릭 이벤트를 처리합니다.
-feature: adaptive-forms
+feature: 적응형 양식
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,11 +9,14 @@ activity: implement
 version: 6.4,6.5
 kt: 6597
 thumbnail: 6597.pg
+topic: 개발
+role: 개발자
+level: 중간
 translation-type: tm+mt
-source-git-commit: 9d4e864f42fa6c0b2f9b895257db03311269ce2e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '141'
-ht-degree: 0%
+source-wordcount: '146'
+ht-degree: 2%
 
 ---
 
