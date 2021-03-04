@@ -1,7 +1,7 @@
 ---
 title: Dispatcher 소개
 description: AEM 아키텍처의 일부로 Dispatcher의 기능 및 기능에 대해 소개합니다.
-feature: dispatcher
+feature: Dispatcher
 topics: architecture
 audience: administrator, developer
 doc-type: technical video
@@ -9,11 +9,14 @@ activity: understand
 version: cloud-service
 kt: 4644
 thumbnail: 32029.jpg
+topic: 아키텍처, 성능
+role: 건축가, 개발자
+level: 초급
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '47'
-ht-degree: 34%
+source-wordcount: '53'
+ht-degree: 32%
 
 ---
 
