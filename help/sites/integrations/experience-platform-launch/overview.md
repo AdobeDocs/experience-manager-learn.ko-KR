@@ -1,7 +1,6 @@
 ---
 title: Experience Platform Launch 및 AEM 통합
 description: Experience Platform Launch은 Adobe의 차세대 태그 관리 플랫폼이며 Adobe Analytics, Target, Audience Manager 및 기타 다양한 솔루션을 배포하는 최상의 방법입니다. Launch에 대한 개요 및 Adobe Experience Manager와의 권장 통합을 살펴보십시오.
-feature: launch
 topics: integrations
 audience: administrator
 doc-type: technical video
@@ -9,11 +8,14 @@ activity: setup
 version: cloud-service
 kt: 5979
 thumbnail: 39090.jpg
+topic: 통합
+role: 개발자
+level: 중간
 translation-type: tm+mt
-source-git-commit: d1ab6e59d817ef103b76960b260b7958d1fa5953
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '139'
-ht-degree: 10%
+source-wordcount: '142'
+ht-degree: 11%
 
 ---
 
