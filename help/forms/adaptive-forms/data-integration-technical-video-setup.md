@@ -3,7 +3,7 @@ title: AEM Forms과 데이터 통합 설정
 seo-title: AEM Forms과 데이터 통합 설정
 description: JDBC 데이터 소스에 데이터 연결 설정
 seo-description: JDBC 데이터 소스에 데이터 연결 설정
-feature: 적응형 양식,양식-데이터 모델
+feature: 적응형 Forms,작업 과정
 topics: integrations
 audience: developer
 doc-type: technical video
@@ -11,11 +11,14 @@ activity: setup
 version: 6.4,6.5
 uuid: 267de794-4462-4421-adee-d40a469fabb3
 discoiquuid: 41864584-cb99-4c54-abda-8eb83829cb90
+topic: 개발
+role: 개발자
+level: 초급
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '92'
-ht-degree: 0%
+source-wordcount: '96'
+ht-degree: 2%
 
 ---
 
