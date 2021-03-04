@@ -2,15 +2,18 @@
 title: 비디오 개요
 description: Dynamic Media Classic에는 업로드 시 비디오를 자동으로 변환하는 기능, 데스크탑 및 모바일 디바이스로의 비디오 스트리밍, 디바이스 및 대역폭에 따라 재생에 최적화된 적응형 비디오 세트가 포함되어 있습니다. Dynamic Media Classic에서 비디오에 대해 자세히 살펴보고 비디오 개념 및 용어에 대한 입문서를 얻을 수 있습니다. 그런 다음 비디오를 업로드 및 인코딩하는 방법, 업로드를 위한 비디오 사전 설정 선택, 비디오 사전 설정을 추가 또는 편집하는 방법, 비디오 뷰어에서 비디오를 미리 보기, 웹 및 모바일 사이트에 비디오를 배포하고 비디오에 캡션 및 장 마커를 추가하고 데스크톱 및 모바일 사용자에게 비디오 뷰어를 게시하는 방법에 대해 자세히 살펴봅니다.
 sub-product: dynamic-media
-feature: Viewer Presets
+feature: Dynamic Media Classic, 비디오 프로필, 뷰어 사전 설정
 doc-type: tutorial
 topics: development, authoring, configuring, videos, video-profiles
 audience: all
 activity: use
+topic: 컨텐츠 관리
+role: 비즈니스 전문가
+level: 초급
 translation-type: tm+mt
-source-git-commit: 5eeeb197f9a2ee4216e1f9220c830751c36f01ab
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '6222'
+source-wordcount: '6234'
 ht-degree: 0%
 
 ---
@@ -242,7 +245,7 @@ Dynamic Media Classic에 포함된 사전 설정 중 하나를 선택하거나 �
 
 ## 비디오에 캡션 추가
 
-경우에 따라 비디오에 캡션을 추가하는 것이 유용할 수 있습니다. 예를 들어 비디오를 여러 언어로 시청자에게 제공해야 하지만 다른 언어로 오디오를 뒤틀거나 비디오를 별도의 언어로 다시 녹음하지 않으려는 경우가 있습니다. 또한 캡션을 추가하면 청각 장애가 있는 사용자도 액세스할 수 있고 자막을 사용할 수 있습니다. Dynamic Media Classic을 사용하면 비디오에 캡션을 손쉽게 추가할 수 있습니다.
+비디오에 캡션을 추가하는 것이 유용할 수 있습니다. 예를 들어 비디오를 여러 언어로 시청자에게 제공해야 하지만 다른 언어로 오디오를 더하거나 별도의 언어로 다시 비디오를 기록하지 않으려는 경우가 있습니다. 또한 캡션을 추가하면 청각 장애가 있는 사용자도 액세스할 수 있고 자막을 사용할 수 있습니다. Dynamic Media Classic을 사용하면 비디오에 캡션을 손쉽게 추가할 수 있습니다.
 
 [비디오에 캡션 추가 방법](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/adding-captions-video.html)에 대해 알아봅니다.
 
