@@ -1,18 +1,21 @@
 ---
 title: 양식 조각 만들기
 description: AEM 양식은 패널이나 필드 그룹과 같은 양식 세그먼트를 한 번만 만들고 적응형 양식에 다시 사용할 수 있는 편리한 메커니즘을 제공합니다.
-feature: adaptive-forms
+feature: 적응형 양식
 topics: authoring
 audience: developer
 doc-type: tutorial
 activity: understand
 kt: 5862
 thumbnail: 37325.jpg
+topic: 개발
+role: 개발자
+level: 초급
 translation-type: tm+mt
-source-git-commit: c60a46027cc8d71fddd41aa31dbb569e4df94823
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 4%
+source-wordcount: '112'
+ht-degree: 8%
 
 ---
 
