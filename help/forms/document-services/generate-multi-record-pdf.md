@@ -1,16 +1,19 @@
 ---
 title: 하나의 데이터 파일에서 여러 PDF 생성
 seo-title: 하나의 데이터 파일에서 여러 PDF 생성
-feature: output-service
+feature: 출력 서비스
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
+topic: 개발
+role: 개발자
+level: 경험
 translation-type: tm+mt
-source-git-commit: defefc1451e2873e81cd81e3cccafa438aa062e3
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '501'
 ht-degree: 1%
 
 ---
