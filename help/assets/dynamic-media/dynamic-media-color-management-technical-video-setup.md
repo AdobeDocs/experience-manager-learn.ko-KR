@@ -1,22 +1,17 @@
 ---
 title: AEM Dynamic Media의 색상 관리 이해
-seo-title: AEM Dynamic Media의 색상 관리 이해
 description: 이 비디오에서는 Dynamic Media 색상 관리 및 이 기능을 사용하여 AEM Assets의 색상 교정 미리 보기 기능을 제공하는 방법을 살펴봅니다.
-seo-description: 이 비디오에서는 Dynamic Media 색상 관리 및 이 기능을 사용하여 AEM Assets의 색상 교정 미리 보기 기능을 제공하는 방법을 살펴봅니다.
-uuid: dc14d067-11a2-4662-acfd-f9f6f1d738ee
-discoiquuid: b2b9ccc9-96b5-4bea-9995-2e6b353c469d
 sub-product: dynamic-media
-feature: image-profiles, video-profiles
-topics: images, videos, renditions, authoring, integrations, publishing, metadata
-audience: developer, architect, administrator
-doc-type: technical video
-activity: setup
+feature: 이미지 프로필, 비디오 프로필
 version: 6.3, 6.4, 6.5
+topic: 컨텐츠 관리
+role: 개발자
+level: 중간
 translation-type: tm+mt
-source-git-commit: 9cf01dbf9461df4cc96d5bd0a96c0d4d900af089
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '354'
-ht-degree: 13%
+source-wordcount: '330'
+ht-degree: 15%
 
 ---
 
