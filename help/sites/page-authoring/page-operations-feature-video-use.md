@@ -3,7 +3,7 @@ title: AEM Sites의 기본 페이지 작업
 seo-title: AEM Sites의 기본 페이지 작업
 description: 다음 비디오에서는 Adobe Experience Manager Sites 페이지에 대한 기본 페이지 관리 작업을 수행하는 방법을 설명합니다.
 seo-description: 다음 비디오에서는 Adobe Experience Manager Sites 페이지에 대한 기본 페이지 관리 작업을 수행하는 방법을 설명합니다.
-feature: page-editor, template-editor
+feature: 페이지 편집기, 편집 가능한 템플릿
 topics: authoring, publishing
 audience: author, marketer
 doc-type: feature video
@@ -11,11 +11,14 @@ activity: use
 version: 6.3, 6.4, 6.5
 kt: 4245
 thumbnail: 32147.jpg
+topic: 컨텐츠 관리
+role: 비즈니스 전문가
+level: 초급
 translation-type: tm+mt
-source-git-commit: d3e2595bf189c937b1023881d84eb1a9739750b6
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '99'
-ht-degree: 2%
+source-wordcount: '108'
+ht-degree: 3%
 
 ---
 
