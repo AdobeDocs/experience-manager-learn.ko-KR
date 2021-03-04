@@ -1,19 +1,18 @@
 ---
 title: AEM Assets의 이미지에 대한 사용자 정의 스마트 태그
 description: AEM Assets의 스마트 태그를 교육하여 자산에 사용자 지정 용어를 적용하는 방법을 알아봅니다.
-feature: smart-tags
-topics: metadata
-audience: developer, administrator
-doc-type: technical video
-activity: setup
+feature: 스마트 태그
 version: 6.4, 6.5, cloud-services
 kt: 795
 thumbnail: 22254.jpg
+topic: 컨텐츠 관리
+role: 개발자
+level: 중간
 translation-type: tm+mt
-source-git-commit: 159e9d7ea363768f202db91a1d0555c2e57ebb13
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '149'
-ht-degree: 1%
+source-wordcount: '155'
+ht-degree: 4%
 
 ---
 
