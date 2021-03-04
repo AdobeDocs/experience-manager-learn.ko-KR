@@ -2,7 +2,7 @@
 title: 제출된 데이터를 검토할 워크플로우 만들기
 description: AEM Forms 워크플로우 구성 요소를 사용하여 AEM 워크플로우 모델을 작성하여 제출된 데이터를 검토합니다.
 sub-product: 양식
-feature: workflow
+feature: 워크플로우
 topics: integrations
 audience: developer
 doc-type: article
@@ -10,11 +10,14 @@ activity: setup
 version: 6.4,6.5
 kt: 4271
 thumbnail: 40242.jpg
+topic: 개발
+role: 개발자
+level: 초급
 translation-type: tm+mt
-source-git-commit: 449202af47b6bbcd9f860d5c5391d1f7096d489e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '141'
-ht-degree: 4%
+source-wordcount: '145'
+ht-degree: 6%
 
 ---
 
