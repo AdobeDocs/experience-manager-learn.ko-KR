@@ -1,16 +1,19 @@
 ---
 title: AEM Sites을 사용한 스타일 시스템 우수 사례 이해
 description: Adobe Experience Manager Sites에서 스타일 시스템 구현 시 모범 사례를 설명하는 자세한 문서입니다.
-feature: style-system
+feature: 스타일 시스템
 topics: development, components, front-end-development
 audience: developer
 doc-type: article
 activity: understand
 version: 6.4, 6.5
+topic: 개발
+role: 개발자
+level: 중간, 경험
 translation-type: tm+mt
-source-git-commit: e99779b5d42bb9a3b258e2bbe815defde9d40bf7
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1538'
+source-wordcount: '1544'
 ht-degree: 2%
 
 ---
@@ -164,7 +167,7 @@ AEM 스타일 시스템에서는 CSS 개발자가 `.cmp-component--primary-color
 
 ...[기본 스타일](#default-style)에서 이미 위반되었습니다.
 
-올바른 정렬은 프로모션 레이아웃 스타일만 영향을 주고 다른 2개의 레이아웃 스타일에는 영향을 주지 않습니다.기본 및 hero의 경우 프로모션 레이아웃 스타일 컨텐츠를 바로 정렬하는 CSS 클래스가 포함된 새 레이아웃 스타일 프로모션(오른쪽 정렬)을 만들 수 있습니다.`cmp -teaser--alternate`.
+올바른 정렬은 프로모션 레이아웃 스타일만 영향을 주고 다른 2개의 레이아웃 스타일에는 영향을 주지 않습니다.기본 및 hero에서는 프로모션 레이아웃 스타일 컨텐츠를 바로 정렬하는 CSS 클래스가 포함된 새 레이아웃 스타일 프로모션(오른쪽 정렬)을 만들 수 있습니다.`cmp -teaser--alternate`.
 
 여러 스타일을 하나의 스타일 항목으로 결합하면 사용 가능한 스타일 및 스타일 순열의 수를 줄이는 데 도움이 되므로 이를 최소화합니다.
 
