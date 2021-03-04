@@ -1,18 +1,21 @@
 ---
 title: AEM SPA 편집기를 사용한 개발 - Hello World 자습서
-description: AEM SPA Editor는 단일 페이지 애플리케이션 또는 SPA의 상황에 맞는 편집을 지원합니다. 이 자습서는 AEM SPA Editor JS SDK와 함께 사용할 SPA 개발에 대한 소개입니다. 이 자습서는 사용자 지정 Hello World 구성 요소를 추가하여 We.Retail 저널 앱을 확장합니다. 사용자는 [반응] 또는 [각] 프레임워크를 사용하여 자습서를 완료할 수 있습니다.
+description: AEM SPA Editor는 단일 페이지 애플리케이션 또는 SPA의 상황에 맞는 편집을 지원합니다. 이 자습서는 AEM SPA Editor JS SDK와 함께 사용할 SPA 개발에 대한 소개입니다. 이 자습서는 사용자 지정 Hello World 구성 요소를 추가하여 We.Retail 저널 앱을 확장합니다. 사용자는 반응 또는 Angular 프레임워크을 사용하여 자습서를 완료할 수 있습니다.
 sub-product: 사이트, 컨텐츠 서비스
-feature: spa-editor
+feature: 스파 편집기
 topics: development, single-page-applications
 audience: developer
 doc-type: tutorial
 activity: use
 version: 6.3, 6.4, 6.5
+topic: SPA
+role: 개발자
+level: 초급
 translation-type: tm+mt
-source-git-commit: 892cb074814eabd347ba7aef883721df0ee4d431
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '3171'
-ht-degree: 0%
+source-wordcount: '3176'
+ht-degree: 1%
 
 ---
 
@@ -21,31 +24,31 @@ ht-degree: 0%
 
 >[!WARNING]
 >
-> 이 자습서는 **사용되지 않음**&#x200B;입니다. 다음 중 하나를 수행하는 것이 좋습니다.[AEM SPA 편집기 시작하기 및 Angular](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html) 또는 [AEM SPA Editor 시작 및 반응](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
+> 이 자습서는 **사용되지 않음**&#x200B;입니다. 다음 중 하나를 수행하는 것이 좋습니다.[AEM SPA Editor 및 Angular 시작하기](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html) 또는 [AEM SPA Editor 시작하기 및 반응](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
 
-AEM SPA Editor는 단일 페이지 애플리케이션 또는 SPA의 상황에 맞는 편집을 지원합니다. 이 자습서는 AEM SPA Editor JS SDK와 함께 사용할 SPA 개발에 대한 소개입니다. 이 자습서는 사용자 지정 Hello World 구성 요소를 추가하여 We.Retail 저널 앱을 확장합니다. 사용자는 [반응] 또는 [각] 프레임워크를 사용하여 자습서를 완료할 수 있습니다.
+AEM SPA Editor는 단일 페이지 애플리케이션 또는 SPA의 상황에 맞는 편집을 지원합니다. 이 자습서는 AEM SPA Editor JS SDK와 함께 사용할 SPA 개발에 대한 소개입니다. 이 자습서는 사용자 지정 Hello World 구성 요소를 추가하여 We.Retail 저널 앱을 확장합니다. 사용자는 반응 또는 Angular 프레임워크을 사용하여 자습서를 완료할 수 있습니다.
 
 >[!NOTE]
 >
 > 단일 페이지 애플리케이션(SPA) 편집기 기능을 사용하려면 AEM 6.4 서비스 팩 2 이상이 필요합니다.
 >
-> SPA 편집기는 SPA 프레임워크 기반의 클라이언트측 렌더링(예: 반응형 또는 각도)이 필요한 프로젝트에 권장되는 솔루션입니다.
+> SPA 편집기는 SPA 프레임워크 기반의 클라이언트측 렌더링(예: 반응 또는 Angular)이 필요한 프로젝트에 권장되는 솔루션입니다.
 
 ## 사전 요구 사항 읽기 {#prereq}
 
-이 자습서는 SPA 구성 요소를 AEM 구성 요소에 매핑하여 컨텍스트 내 편집을 활성화하는 데 필요한 단계를 강조 표시하기 위한 것입니다. 이 자습서를 시작하는 사용자는 Adobe Experience Manager, AEM의 개발 기본 개념뿐만 아니라 React of Angular 프레임워크를 사용하여 개발하는 방법에 대해 알고 있어야 합니다. 이 자습서에서는 백엔드 개발 작업과 프런트 엔드 개발 작업을 모두 다룹니다.
+이 자습서는 SPA 구성 요소를 AEM 구성 요소에 매핑하여 컨텍스트 내 편집을 활성화하는 데 필요한 단계를 강조 표시하기 위한 것입니다. 이 튜토리얼을 시작하는 사용자는 Angular, AEM의 개발 기본 개념뿐만 아니라 Adobe Experience Manager의 반응 프레임워크를 사용하여 개발하는 방법에 대해 알고 있어야 합니다. 이 자습서에서는 백엔드 개발 작업과 프런트 엔드 개발 작업을 모두 다룹니다.
 
 이 자습서를 시작하기 전에 다음 리소스를 검토하는 것이 좋습니다.
 
 * [SPA 편집기 기능 비디오](spa-editor-framework-feature-video-use.md)  - SPA 편집기 및 We.Retail Journal 앱에 대한 비디오 개요입니다.
 * [Response.js 자습서](https://reactjs.org/tutorial/tutorial.html)  - Response 프레임워크를 사용한 개발 소개
-* [각 자습서](https://angular.io/tutorial)  - 각진 방식으로 개발하는 방법 소개
+* [Angular 자습서](https://angular.io/tutorial)  - Angular을 사용한 개발 소개
 
 ## 로컬 개발 환경 {#local-dev}
 
 이 튜토리얼은 다음과 같은 용도로 설계되었습니다.
 
-[Adobe Experience Manager 6.5 ](https://helpx.adobe.com/kr/experience-manager/6-5/release-notes.html) 또는  [Adobe Experience Manager 6.4](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/technical-requirements.html) +  [서비스 팩 5](https://helpx.adobe.com/kr/experience-manager/6-4/release-notes/sp-release-notes.html)
+[Adobe Experience Manager 6.5 ](https://helpx.adobe.com/kr/experience-manager/6-5/release-notes.html) 또는  [Adobe Experience Manager 6.4](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/technical-requirements.html) +  [서비스 팩 5](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html)
 
 이 자습서에서는 다음 기술과 도구를 설치해야 합니다.
 
@@ -75,7 +78,7 @@ $ npm --version
 
 ![SPA 구성 요소 매핑](assets/spa-editor-helloworld-tutorial-use/mapto.png)
 
-인기 있는 프레임워크 [JS](https://reactjs.org/) 및 [Angular](https://angular.io/)는 즉시 지원됩니다. 사용자는 가장 익숙한 프레임워크에서 각도 또는 반응 중 하나로 이 자습서를 완료할 수 있습니다.
+인기 있는 프레임워크 [JS](https://reactjs.org/) 및 [Angular](https://angular.io/)은 즉시 지원됩니다. 사용자는 가장 익숙한 프레임워크에서 Angular 또는 반응형 프레임워크로 이 튜토리얼을 완료할 수 있습니다.
 
 ## 프로젝트 설정 {#project-setup}
 
@@ -115,7 +118,7 @@ SPA 개발은 AEM 개발에 한발씩, 또 다른 한 발에는 발전이 있다
    * `ui.apps`:프로젝트의 /apps 부분, 즉 JS 및 CSS clientlibs, 구성 요소, 런타임 모드 특정 구성을 포함합니다.
    * `ui.content`:구조 내용 및 구성 포함(`/content`,  `/conf`
    * `react-app`:We.Retail Journal React 응용 프로그램. 이는 Maven 모듈과 웹 팩 프로젝트입니다.
-   * `angular-app`:We.Retail 분개 각도 애플리케이션. 이것은 [!DNL Maven] 모듈과 웹 팩 프로젝트 모두입니다.
+   * `angular-app`:We.Retail 분개 Angular 응용 프로그램. 이것은 [!DNL Maven] 모듈과 웹 팩 프로젝트 모두입니다.
 
 1. 새 터미널 창을 열고 다음 명령을 실행하여 전체 앱을 빌드하고 [http://localhost:4502](http://localhost:4502)에서 실행 중인 로컬 AEM 인스턴스에 배포합니다.
 
@@ -147,7 +150,7 @@ SPA 개발은 AEM 개발에 한발씩, 또 다른 한 발에는 발전이 있다
 
    ![페이지 속성 메뉴](assets/spa-editor-helloworld-tutorial-use/page-properties.png)
 
-1. SPA Editor의 최신 버전에서는 기존 사이트 구현과 동일한 방식으로 [편집 가능한 템플릿](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/page-templates-editable.html)을 사용할 수 있습니다. 사용자 지정 구성 요소와 함께 나중에 다시 방문하게 됩니다.
+1. SPA Editor의 최신 버전에서는 기존 사이트 구현과 동일한 방식으로 [편집 가능한 템플릿](https://helpx.adobe.com/kr/experience-manager/6-5/sites/developing/using/page-templates-editable.html)을 사용할 수 있습니다. 사용자 지정 구성 요소와 함께 나중에 다시 방문하게 됩니다.
 
    >[!NOTE]
    >
@@ -399,7 +402,7 @@ AEM 구성 요소가 먼저 만들어집니다. AEM 구성 요소는 [반응] �
    >
    > 메서드 이름 `getDisplayMessage`은(는) 중요합니다. [!DNL Sling Model]이(가) [!DNL Jackson Exporter]로 직렬화되면 JSON 속성으로 표시됩니다.`displayMessage`. [!DNL Jackson Exporter]은 매개 변수를 사용하지 않는 모든 `getter` 메서드를 직렬화하고 노출합니다(명시적으로 무시로 표시된 경우 제외). 나중에 React/Angular 앱에서 이 속성 값을 읽고 애플리케이션의 일부로 표시합니다.
 
-   `getExportedType` 메서드도 중요합니다. 구성 요소 `resourceType`의 값은 JSON 데이터를 프런트 엔드 구성 요소에 &quot;매핑&quot;하는 데 사용됩니다(각도 / 반응). 다음 섹션에서 이 방법을 살펴보죠.
+   `getExportedType` 메서드도 중요합니다. 구성 요소 `resourceType`의 값은 JSON 데이터를 프런트 엔드 구성 요소에 &quot;매핑&quot;하는 데 사용됩니다(Angular / 반응). 다음 섹션에서 이 방법을 살펴보죠.
 
 1. `getExportedType()` 메서드를 구현하여 `HelloWorld` 구성 요소의 리소스 유형을 반환합니다.
 
@@ -436,7 +439,7 @@ AEM 구성 요소가 먼저 만들어집니다. AEM 구성 요소는 [반응] �
 
 >[!NOTE]
 >
-> [각도 개발](#angular-component)에만 관심이 있는 경우 이 섹션을 건너뛰십시오.
+> [Angular 개발](#angular-component)에만 관심이 있는 경우 이 섹션을 건너뛰십시오.
 
 1. `react-app` 폴더 내에서 src 폴더로 이동합니다. 구성 요소 폴더를 확장하여 기존 [반응] 구성 요소 파일을 봅니다.
 
@@ -567,7 +570,7 @@ AEM 구성 요소가 먼저 만들어집니다. AEM 구성 요소는 [반응] �
    > **app.** jsis는 번들 React 앱입니다. 이 코드는 더 이상 사람이 읽을 수 없습니다. `npm run build` 명령은 최신 브라우저에서 해석할 수 있는 컴파일된 JavaScript를 출력하는 최적화된 빌드를 트리거했습니다.
 
 
-## 각도 구성 요소 만들기 {#angular-component}
+## angular 구성 요소 {#angular-component} 만들기
 
 **페르소나:프런트 엔드 개발자**
 
@@ -575,11 +578,11 @@ AEM 구성 요소가 먼저 만들어집니다. AEM 구성 요소는 [반응] �
 >
 > 반응형 개발에 관심이 있는 경우에만 이 섹션을 건너뛰십시오.
 
-그런 다음 각도 컴포넌트가 생성됩니다. 원하는 편집기를 사용하여 **angular-app** 모듈(`<src>/aem-sample-we-retail-journal/angular-app`)을 엽니다.
+다음으로 Angular 구성 요소가 만들어집니다. 원하는 편집기를 사용하여 **angular-app** 모듈(`<src>/aem-sample-we-retail-journal/angular-app`)을 엽니다.
 
-1. `angular-app` 폴더 내에서 `src` 폴더로 이동합니다. 컴포넌트 폴더를 확장하여 기존 각도 컴포넌트 파일을 표시합니다.
+1. `angular-app` 폴더 내에서 `src` 폴더로 이동합니다. 구성 요소 폴더를 확장하여 기존 Angular 구성 요소 파일을 봅니다.
 
-   ![각 파일 구조](assets/spa-editor-helloworld-tutorial-use/angular-file-structure.png)
+   ![Angular 파일 구조](assets/spa-editor-helloworld-tutorial-use/angular-file-structure.png)
 
 1. `helloworld` 구성 요소 폴더 아래에 새 폴더를 추가합니다. `helloworld` 폴더 아래에 `helloworld.component.css, helloworld.component.html, helloworld.component.ts`라는 새 파일을 추가합니다.
 
@@ -615,7 +618,7 @@ AEM 구성 요소가 먼저 만들어집니다. AEM 구성 요소는 [반응] �
 
    >[!NOTE]
    >
-   > 이전에 만든 [!DNL Sling Model]을 다시 호출하면 **getDisplayMessage()** 메서드가 있습니다. 이 메서드의 직렬화된 JSON은 **displayMessage**&#x200B;이며, 현재 Angular 앱에서 읽고 있습니다.
+   > 이전에 만든 [!DNL Sling Model]을 다시 호출하면 **getDisplayMessage()** 메서드가 있습니다. 이 메서드의 직렬화된 JSON은 이제 Angular 앱에서 읽고 있는 **displayMessage**&#x200B;입니다.
 
 1. `displayMessage` 속성을 인쇄할 `h1` 태그를 포함하려면 `helloworld.component.html`을 엽니다.
 
@@ -673,7 +676,7 @@ AEM 구성 요소가 먼저 만들어집니다. AEM 구성 요소는 [반응] �
    });
    ```
 
-1. `HelloWorldComponent`을(를) 포함하도록 `src/components/mapping.ts`을(를) 다음으로 업데이트합니다. 구성 요소를 구성하기 전에 AEM 편집기에서 자리 표시자를 표시하는 `HelloWorldEditConfig`을 추가합니다. 마지막으로 AEM 구성 요소를 `MapTo` 도우미로 각도 구성 요소에 매핑하는 행을 추가합니다.
+1. `HelloWorldComponent`을(를) 포함하도록 `src/components/mapping.ts`을(를) 다음으로 업데이트합니다. 구성 요소를 구성하기 전에 AEM 편집기에서 자리 표시자를 표시하는 `HelloWorldEditConfig`을 추가합니다. 마지막으로 AEM 구성 요소를 `MapTo` 도우미로 Angular 구성 요소에 매핑하는 행을 추가합니다.
 
    ```js
    // src/components/mapping.ts
@@ -744,17 +747,17 @@ AEM 구성 요소가 먼저 만들어집니다. AEM 구성 요소는 [반응] �
    $ mvn -PautoInstallSinglePackage clean install
    ```
 
-1. [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/apps/we-retail-journal/angular/clientlibs/we-retail-journal-angular/js/main.js)에서 `/apps/we-retail-journal/angular/clientlibs/we-retail-journal-angular/js/main.js`를 엽니다. `main.js`에서 **HelloWorld**&#x200B;를 빠르게 검색하여 각 구성 요소가 포함되어 있는지 확인합니다.
+1. [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/apps/we-retail-journal/angular/clientlibs/we-retail-journal-angular/js/main.js)에서 `/apps/we-retail-journal/angular/clientlibs/we-retail-journal-angular/js/main.js`를 엽니다. `main.js`에서 **HelloWorld**&#x200B;를 빠르게 검색하여 Angular 구성 요소가 포함되어 있는지 확인합니다.
 
    >[!NOTE]
    >
-   > **main.** jsis the bundled Angular app. 이 코드는 더 이상 사람이 읽을 수 없습니다. npm run build 명령은 최신 브라우저에서 해석할 수 있는 컴파일된 JavaScript를 출력하는 최적화된 빌드를 트리거했습니다.
+   > **main.** jsis는 번들 Angular 앱입니다. 이 코드는 더 이상 사람이 읽을 수 없습니다. npm run build 명령은 최신 브라우저에서 해석할 수 있는 컴파일된 JavaScript를 출력하는 최적화된 빌드를 트리거했습니다.
 
 ## 템플릿 {#template-update} 업데이트
 
-1. 반응형 및/또는 각도 버전의 편집 가능 템플릿으로 이동합니다.
+1. 반응 및/또는 Angular 버전에 대한 편집 가능 템플릿으로 이동합니다.
 
-   * (각) [http://localhost:4502/editor.html/conf/we-retail-journal/angular/settings/wcm/templates/we-retail-angular-weather-template/structure.html](http://localhost:4502/editor.html/conf/we-retail-journal/angular/settings/wcm/templates/we-retail-angular-weather-template/structure.html)
+   * (Angular) [http://localhost:4502/editor.html/conf/we-retail-journal/angular/settings/wcm/templates/we-retail-angular-weather-template/structure.html](http://localhost:4502/editor.html/conf/we-retail-journal/angular/settings/wcm/templates/we-retail-angular-weather-template/structure.html)
    * (반응) [http://localhost:4502/editor.html/conf/we-retail-journal/react/settings/wcm/templates/we-retail-react-weather-template/structure.html](http://localhost:4502/editor.html/conf/we-retail-journal/react/settings/wcm/templates/we-retail-react-weather-template/structure.html)
 
 1. 기본 [!UICONTROL 레이아웃 컨테이너]를 선택하고 [!UICONTROL 정책] 아이콘을 선택하여 해당 정책을 엽니다.
@@ -779,7 +782,7 @@ AEM 구성 요소가 먼저 만들어집니다. AEM 구성 요소는 [반응] �
 
 ## 모두 함께 {#putting-together}
 
-1. 각도 또는 반응 페이지로 이동합니다.
+1. angular 또는 반응 페이지로 이동합니다.
 
    * [http://localhost:4502/editor.html/content/we-retail-journal/react/en/home.html](http://localhost:4502/editor.html/content/we-retail-journal/react/en/home.html)
    * [http://localhost:4502/editor.html/content/we-retail-journal/angular/en/home.html](http://localhost:4502/editor.html/content/we-retail-journal/angular/en/home.html)
@@ -829,10 +832,10 @@ AEM 종속성이 만족스럽지 않으면 **[!UICONTROL AEM 패키지 관리자
 
 ### 구성 요소가 표시되지 않음
 
-**오류**:성공적으로 배포되고 컴파일된 버전의 React/Angular 앱에 업데이트된  `helloworld` 구성 요소가 있는지 확인한 후에도 구성 요소를 페이지로 드래그하면 표시되지 않습니다. AEM UI에서 구성 요소를 볼 수 있습니다.
+**오류**:배포 성공 여부를 확인하고 컴파일된 버전의 React/Angular 앱에 업데이트된  `helloworld` 구성 요소가 있는지 확인한 후에도 구성 요소를 페이지로 드래그하면 표시되지 않습니다. AEM UI에서 구성 요소를 볼 수 있습니다.
 
 **해상도**:브라우저의 기록/캐시를 지우고 새 브라우저를 열거나 익명으로 복제 모드를 사용합니다. 그래도 해결되지 않으면 로컬 AEM 인스턴스에서 클라이언트 라이브러리 캐시를 무효화합니다. AEM은 효율적인 작업을 위해 대형 클라이언트 라이브러리를 캐시하려고 합니다. 오래된 코드가 캐시되는 문제를 수정하기 위해 때로 캐시를 수동으로 무효화해야 합니다.
 
-탐색:[http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html](http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html)을(를) 클릭하고 캐시 무효화를 클릭합니다. [반응형/각도] 페이지로 돌아가서 페이지를 새로 고칩니다.
+탐색:[http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html](http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html)을(를) 클릭하고 캐시 무효화를 클릭합니다. 응답/Angular 페이지로 돌아가서 페이지를 새로 고칩니다.
 
 ![클라이언트 라이브러리 다시 만들기](assets/spa-editor-helloworld-tutorial-use/invalidatecache.png)
