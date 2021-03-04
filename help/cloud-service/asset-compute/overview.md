@@ -1,7 +1,7 @@
 ---
 title: Cloud Service의 AEM용 asset compute 마이크로서비스 확장성
 description: 이 자습서에서는 원래 에셋을 원형으로 잘라내고 구성 가능한 대비와 명도를 적용하여 에셋 변환을 만드는 간단한 Asset compute 작업자를 만드는 방법을 살펴봅니다. 작업자 자체는 기본이지만 이 튜토리얼에서는 이 프레임워크를 사용하여 AEM과 함께 Cloud Service에 사용할 사용자 정의 Asset compute 작업자 만들기, 개발 및 배포를 살펴봅니다.
-feature: asset-compute
+feature: asset compute 마이크로서비스
 topics: renditions, development
 version: cloud-service
 doc-type: tutorial
@@ -9,10 +9,13 @@ activity: develop
 audience: developer
 kt: 5802
 thumbnail: KT-5802.jpg
+topic: 통합, 개발
+role: 개발자
+level: 중간, 경험
 translation-type: tm+mt
-source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1036'
 ht-degree: 0%
 
 ---
