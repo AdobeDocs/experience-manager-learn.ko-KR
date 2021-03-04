@@ -4,17 +4,20 @@ seo-title: ACS 프로필을 사용하여 적응형 양식 자동 완성
 description: ACS 프로필을 사용하여 적응형 Forms 프리플링
 seo-description: ACS 프로필을 사용하여 적응형 Forms 프리플링
 uuid: 9bff6f61-96e9-40d4-a977-a80008cfbeee
-feature: 적응형 양식, 양식 데이터 모델
+feature: 적응형 Forms, 양식 데이터 모델
 topics: integrations
 audience: developer
 doc-type: tutorial
 activity: setup
 version: 6.3,6.4,6.5
 discoiquuid: a2ffcb84-4dd8-45e5-8e2c-0da74202851b
+topic: 개발
+role: 개발자
+level: 경험
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '353'
 ht-degree: 0%
 
 ---
