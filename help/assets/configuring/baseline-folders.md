@@ -2,19 +2,18 @@
 title: 기본 폴더
 description: 'AEM Assets에서 기준 폴더를 정의하면 디지털 에셋 관리를 위한 견고한 컨텐츠 아키텍처와 기반을 구축할 수 있습니다. '
 sub-product: 자산
-feature: null
-topics: configuring, content-architecture
-audience: administrator, implementer
-doc-type: feature video
-activity: use
+feature: 자산 관리
 version: cloud-service
 kt: 4870
 thumbnail: 33496.jpg
+topic: 컨텐츠 관리
+role: 비즈니스 전문가
+level: 초급
 translation-type: tm+mt
-source-git-commit: a2772bd8dd65e8bcb4caf660709f6aceb6e28eb4
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '43'
-ht-degree: 0%
+source-wordcount: '50'
+ht-degree: 4%
 
 ---
 
