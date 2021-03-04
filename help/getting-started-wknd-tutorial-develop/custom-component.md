@@ -2,7 +2,7 @@
 title: 사용자 지정 구성 요소
 description: 제작된 콘텐츠를 표시하는 사용자 지정 필라인 구성 요소의 전체 생성을 다룹니다. byline 구성 요소를 채우는 비즈니스 로직과 해당 HTL을 캡슐화하여 구성 요소를 렌더링하는 Sling 모델 개발이 포함되어 있습니다.
 sub-product: 사이트
-feature: sling-models
+feature: '"핵심 구성 요소, API"'
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -11,10 +11,13 @@ audience: developer
 kt: 4072
 mini-toc-levels: 1
 thumbnail: 30181.jpg
+topic: '"콘텐츠 관리, 개발"'
+role: 개발자
+level: 초급
 translation-type: tm+mt
-source-git-commit: e03d84f92be11623704602fb448273e461c70b4e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '3961'
+source-wordcount: '3969'
 ht-degree: 0%
 
 ---
@@ -318,7 +321,7 @@ AEM 구성 요소 개발을 단순화하고 초점을 맞추기 위해 현재 �
 
    ![자산 파인더 열기](assets/custom-component/open-asset-finder.png)
 
-1. **Byline 구성 요소 자리 표시자**&#x200B;를 선택합니다. 그러면 작업 표시줄이 표시되고 **렌치** 아이콘을 눌러 대화 상자를 엽니다.
+1. **바이트 구성 요소 자리 표시자**&#x200B;를 선택합니다. 그러면 작업 표시줄이 표시되고 **렌치** 아이콘을 눌러 대화 상자를 엽니다.
 
    ![구성 요소 작업 표시줄](assets/custom-component/action-bar.png)
 
