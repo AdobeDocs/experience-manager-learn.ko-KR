@@ -1,7 +1,7 @@
 ---
 title: asset compute 작업자 테스트
 description: asset compute 프로젝트는 Asset compute 근로자의 테스트를 쉽게 만들고 실행하는 패턴을 정의합니다.
-feature: asset-compute
+feature: asset compute 마이크로서비스
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,10 +9,13 @@ audience: developer
 doc-type: tutorial
 kt: 6284
 thumbnail: KT-6284.jpg
+topic: 통합, 개발
+role: 개발자
+level: 중간, 경험
 translation-type: tm+mt
-source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '639'
 ht-degree: 0%
 
 ---
