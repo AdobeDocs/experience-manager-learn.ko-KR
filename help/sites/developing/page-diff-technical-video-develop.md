@@ -1,17 +1,20 @@
 ---
 title: AEM Sites의 페이지 차이에 대한 개발
 description: 이 비디오에서는 AEM Sites의 페이지 차이 기능에 대한 사용자 지정 스타일을 제공하는 방법을 보여줍니다.
-feature: page-diff
+feature: 작성
 topics: development
 audience: developer
 doc-type: technical video
 activity: develop
 version: 6.3, 6.4, 6.5
+topic: 개발
+role: 개발자
+level: 초급
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 2%
+source-wordcount: '297'
+ht-degree: 3%
 
 ---
 
@@ -103,7 +106,7 @@ body {
 
 ### 페이지 구성 요소 {#include-the-authoring-clientlib-css-via-the-page-component}를 통해 제작 clientlib CSS 포함
 
-`/apps/my-project/components/structure/page/customheaderlibs.html` 태그 바로 앞에 제작 clientlibs 범주를 포함시켜 스타일이 로드되도록 합니다.`</head>`
+`</head>` 태그 바로 앞에 제작 clientlibs 범주를 포함시켜 스타일이 로드되도록 합니다.`/apps/my-project/components/structure/page/customheaderlibs.html`
 
 이러한 스타일은 [!UICONTROL 편집] 및 [!UICONTROL 미리 보기] WCM 모드로 제한되어야 합니다.
 
