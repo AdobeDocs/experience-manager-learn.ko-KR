@@ -3,7 +3,7 @@ title: 데이터 속성을 사용하여 HTML5 Forms을 채웁니다.
 seo-title: 데이터 속성을 사용하여 HTML5 Forms을 채웁니다.
 description: 백엔드 소스에서 데이터를 가져와 HTML5 양식을 채웁니다.
 seo-description: 백엔드 소스에서 데이터를 가져와 HTML5 양식을 채웁니다.
-feature: 통합
+feature: 적응형 양식
 topics: mobile-forms
 audience: developer
 doc-type: article
@@ -11,10 +11,13 @@ activity: implement
 version: 6.3,6.4,6.5.
 uuid: 889d2cd5-fcf2-4854-928b-0c2c0db9dbc2
 discoiquuid: 3aa645c9-941e-4b27-a538-cca13574b21c
+topic: 개발
+role: 개발자
+level: 경험
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
