@@ -1,22 +1,17 @@
 ---
 title: AEM Dynamic Media에서 사용자 정의 비디오 축소판 사용
-seo-title: AEM Dynamic Media에서 사용자 정의 비디오 축소판 사용
 description: AEM Assets 사용자 정의 비디오 축소판은 작성자가 생성된 축소판 세트에서 해당 축소판을 선택할 수 있는 기능을 제공합니다. 비디오에 대해 생성된 축소판 수는 손쉽게 사용자 정의할 수 있습니다.
-seo-description: AEM Assets 사용자 정의 비디오 축소판은 작성자가 생성된 축소판 세트에서 해당 축소판을 선택할 수 있는 기능을 제공합니다. 비디오에 대해 생성된 축소판 수는 손쉽게 사용자 정의할 수 있습니다.
-uuid: 1559b1bc-daca-49e9-b6de-0b93798658a8
-discoiquuid: 5e168b37-2906-4ab5-9840-086ae7efa281
 sub-product: dynamic-media
-feature: media-player, video-profiles
-topics: videos, renditions, authoring, best-practices
-doc-type: feature video
-audience: all
-activity: use
+feature: 비디오 프로필
 version: 6.3, 6.4, 6.5
+topic: 컨텐츠 관리
+role: 비즈니스 전문가
+level: 초급
 translation-type: tm+mt
-source-git-commit: 9cf01dbf9461df4cc96d5bd0a96c0d4d900af089
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 0%
+source-wordcount: '112'
+ht-degree: 11%
 
 ---
 
@@ -33,4 +28,4 @@ AEM Assets 사용자 정의 비디오 축소판은 작성자가 생성된 축소
 
 >[!NOTE]
 >
->Dynamic Media](https://docs.adobe.com/docs/en/aem/6-3/administer/content/dynamic-media/config-dynamic.html) 모드에서 [AEM 인스턴스를 실행해야 합니다.
+>Dynamic Media](https://docs.adobe.com/docs/ko-KR/aem/6-3/administer/content/dynamic-media/config-dynamic.html) 모드에서 [AEM 인스턴스를 실행해야 합니다.
