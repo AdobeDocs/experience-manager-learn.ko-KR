@@ -2,15 +2,17 @@
 title: Adobe Cloud Manager 이해
 description: Adobe Cloud Manager는 AEM 환경을 간편하게 관리하고 검사할 수 있으며 셀프 서비스를 제공하는 간단하면서도 강력한 솔루션을 제공합니다.
 sub-product: 클라우드 관리자, foundation
-feature: pipelines, programs, projects, quality-gates, reports
 topics: best-practices, cicd, development, operations, governance
 doc-type: feature video
 activity: understand
 audience: developer, implementer, administrator, architect
+topic: 아키텍처
+role: 건축가
+level: 초급
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '534'
 ht-degree: 3%
 
 ---
