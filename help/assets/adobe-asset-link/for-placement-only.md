@@ -2,18 +2,18 @@
 title: 배치만(FPO) 변환의 경우
 description: '이제 자주 사용하는 Adobe Creative Cloud 데스크탑 애플리케이션에서 디자이너와 크리에이티브 사용자가 Adobe Experience Manager 에셋을 사용할 수 있습니다. Adobe Creative Cloud Enterprise용 Adobe Asset Link 익스텐션은 Adobe Photoshop, InDesign 및 Illustrator과 같은 Creative Cloud 툴에서 AEM 에셋을 검색 및 검색하고 정렬, 미리 보기, 업로드, 체크 아웃, 수정, 체크 인 및 볼 수 있는 기능을 확장합니다. '
 sub-product: 자산
-feature: adobe-asset-link
-topics: authoring, collaboration, operations, sharing, metadata, images, operations, renditions
-audience: all
-doc-type: feature video
-activity: use
-version: null
+feature: Adobe Asset Link
+version: cloud-service
+kt: 4916
 thumbnail: 34259.jpg
+topic: 컨텐츠 관리
+role: 비즈니스 전문가
+level: 중간
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '87'
-ht-degree: 0%
+source-wordcount: '95'
+ht-degree: 5%
 
 ---
 
