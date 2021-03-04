@@ -4,15 +4,18 @@ description: AEM 서비스 자격 증명은 HTTP를 통해 AEM 작성자 또는 
 version: cloud-service
 doc-type: tutorial
 topics: Development, Security
-feature: APIs
+feature: API
 activity: develop
 audience: developer
 kt: 6785
 thumbnail: 330519.jpg
+topic: '"헤드리스, 통합"'
+role: 개발자
+level: '"중간, 경험"'
 translation-type: tm+mt
-source-git-commit: 0b1150cd7ca32382cfaa880f9f956b55bfb65a33
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '1824'
+source-wordcount: '1830'
 ht-degree: 0%
 
 ---
