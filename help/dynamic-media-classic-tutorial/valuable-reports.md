@@ -2,16 +2,19 @@
 title: 관리자를 위한 중요한 보고서
 description: Dynamic Media Classic의 관리자가 설정을 고려해야 하는 2개의 중요한 보고서를 검색합니다.
 sub-product: 다이내믹 미디어, 자산
-feature: reports
+feature: Dynamic Media Classic
 doc-type: tutorial
 topics: development, authoring, configuring, reports
 audience: all
 activity: use
+topic: 컨텐츠 관리
+role: 관리자
+level: 중간
 translation-type: tm+mt
-source-git-commit: ac603e55308f306305482dfdee31a591274c164a
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 2%
+source-wordcount: '344'
+ht-degree: 3%
 
 ---
 
