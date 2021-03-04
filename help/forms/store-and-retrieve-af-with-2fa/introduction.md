@@ -1,7 +1,7 @@
 ---
 title: MySQL 데이터베이스의 첨부 파일이 있는 양식 데이터 저장 및 검색
 description: 첨부 파일이 있는 양식 데이터를 저장하고 검색하는 절차를 단계별로 안내합니다.
-feature: adaptive-forms
+feature: 적응형 양식
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,11 +9,14 @@ activity: implement
 version: 6.4,6.5
 kt: 6593
 thumbnail: 327122.jpg
+topic: 개발
+role: 개발자
+level: 경험
 translation-type: tm+mt
-source-git-commit: 9d4e864f42fa6c0b2f9b895257db03311269ce2e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 2%
+source-wordcount: '212'
+ht-degree: 4%
 
 ---
 
