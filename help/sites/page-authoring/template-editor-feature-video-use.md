@@ -3,18 +3,21 @@ title: AEM Sites에서 편집 가능한 페이지 템플릿 사용
 seo-title: Adobe Experience Manager Sites에서 편집 가능한 페이지 템플릿 사용
 description: 편집 가능한 템플릿을 사용하면 전문적인 작성자가 페이지 템플릿을 만들어 업데이트하고 AEM Sites을 사용하여 고급 정책 구성을 관리할 수 있습니다.
 seo-description: 편집 가능한 템플릿을 사용하면 전문적인 작성자가 페이지 템플릿을 만들어 업데이트하고 Adobe Experience Manager Sites을 사용하여 고급 정책 구성을 관리할 수 있습니다.
-feature: template-editor
+feature: 편집 가능한 템플릿
 topics: authoring
 audience: all
 doc-type: feature video
 activity: use
 version: 6.3, 6.4, 6.5
 kt: 193
+topic: 컨텐츠 관리
+role: 비즈니스 전문가
+level: 초급
 translation-type: tm+mt
-source-git-commit: 41e2c27cd089e7111b2eb1ef6c344d27980f0741
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '252'
-ht-degree: 4%
+source-wordcount: '259'
+ht-degree: 5%
 
 ---
 
