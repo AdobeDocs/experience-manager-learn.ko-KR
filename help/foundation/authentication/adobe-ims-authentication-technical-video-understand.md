@@ -2,16 +2,19 @@
 title: Adobe Managed Services에서 AEM을 통한 Adobe IMS 인증 이해
 description: Adobe Experience Manager은 Managed Services 기반의 AEM용 AEM 인스턴스 및 Adobe IMS(Identity Management System) 기반 인증에 대한 Admin Console 지원을 제공합니다.   이 통합을 통해 AEM Managed Services 고객은 하나의 통합 웹 콘솔에서 모든 Experience Cloud 사용자를 관리할 수 있습니다. 사용자 및 그룹을 AEM 인스턴스와 연관된 제품 프로필에 할당할 수 있으므로 특정 AEM 인스턴스에 대한 중앙에서 관리되는 액세스 권한을 부여할 수 있습니다.
 version: 6.4, 6.5
-feature: 인증
+feature: 사용자 및 그룹
 topics: authentication, security
 activity: understand
 audience: administrator, architect, developer, implementer
 doc-type: technical video
 kt: 781
+topic: 아키텍처
+role: 건축가
+level: 경험
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '454'
 ht-degree: 0%
 
 ---
