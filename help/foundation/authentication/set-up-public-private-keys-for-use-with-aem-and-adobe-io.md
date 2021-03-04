@@ -1,23 +1,26 @@
 ---
 seo: Set up public and private keys for use with AEM and Adobe I/O
-description: 'AEM은 공개/비공개 키 쌍을 사용하여 Adobe I/O 및 기타 웹 서비스와 안전하게 통신합니다. 이 짧은 자습서에서는 AEM 및 Adobe I/O에서 모두 작동하는 openssl 명령줄 도구를 사용하여 호환 키와 키스토어를 생성할 수 있는 방법을 설명합니다. '
+description: 'AEM은 공개/비공개 키 쌍을 사용하여 Adobe I/O 및 기타 웹 서비스와 안전하게 통신합니다. 이 짧은 자습서에서는 AEM 및 Adobe I/O에서 모두 작동하는 openssl 명령줄 도구를 사용하여 호환 키와 키 키스토어를 생성하는 방법을 설명합니다. '
 version: 6.4, 6.5
-feature: authentication
+feature: 사용자 및 그룹
 topics: authentication, integrations
 activity: setup
 audience: architect, developer, implementer
 doc-type: tutorial
 kt: 2450
+topic: 개발
+role: 개발자
+level: 경험
 translation-type: tm+mt
-source-git-commit: 3f973e36531a2d04cbaf6bb8dd70b39fef7d8b2f
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '774'
 ht-degree: 0%
 
 ---
 
 
-# Adobe I/O에서 사용할 공개 및 개인 키 설정
+# Adobe I/O에 사용할 공개 및 개인 키 설정
 
 AEM은 공개/비공개 키 쌍을 사용하여 Adobe I/O 및 기타 웹 서비스와 안전하게 통신합니다. 이 짧은 자습서에서는 AEM 및 Adobe I/O에서 모두 작동하는 [!DNL openssl] 명령줄 도구를 사용하여 호환 키와 키 저장소를 생성하는 방법을 설명합니다.
 
@@ -113,7 +116,7 @@ AEM은 생성된 **개인 키**&#x200B;를 사용하여 Adobe I/O 및 기타 웹
 
 사용자의 키 저장소 콘솔에서 **[!UICONTROL KeyStore 파일]**&#x200B;에서 개인 키 추가를 클릭하고 다음 정보를 추가합니다.
 
-* **[!UICONTROL 새 별칭]**:aem에서 키의 별칭입니다. 이 값은 무엇이든 될 수 있으며 openssl 명령으로 만든 키 저장소의 이름과 일치할 필요가 없습니다.
+* **[!UICONTROL 새 별칭]**:AEM에서 키의 별칭입니다. 이 값은 무엇이든 될 수 있으며 openssl 명령으로 만든 키 저장소의 이름과 일치할 필요가 없습니다.
 * **[!UICONTROL 키 저장소 파일]**:openssl pkcs12 명령 출력(keystore.p12)
 * **[!UICONTROL 키 저장소 파일 암호]**:인수를 통해 openssl pkcs12 명령에 설정된  `-passout` 암호입니다.
 * **[!UICONTROL 개인 키 별칭]**:위의 openssl pkcs12 명령 `-name` 의 인수에 제공된 값(예: `my-key`).
@@ -132,15 +135,15 @@ AEM은 생성된 **개인 키**&#x200B;를 사용하여 Adobe I/O 및 기타 웹
 
 ## Adobe I/O {#adding-the-public-key-to-adobe-i-o}에 공개 키 추가
 
-공개 키의 해당 개인 정보가 있는 AEM 서비스 사용자가 안전하게 통신하도록 하려면 일치하는 공개 키를 Adobe I/O에 업로드해야 합니다.
+공개 키의 해당 개인 공개 키가 있는 AEM 서비스 사용자가 안전하게 통신하도록 하려면 일치하는 공개 키를 Adobe I/O에 업로드해야 합니다.
 
 ### Adobe I/O 새 통합 {#create-a-adobe-i-o-new-integration} 만들기
 
-![Adobe I/O 새로운 통합 만들기](assets/set-up-public-private-keys-for-use-with-aem-and-adobe-io/adobe-io--create-new-integration.png)
+![Adobe I/O 새 통합 만들기](assets/set-up-public-private-keys-for-use-with-aem-and-adobe-io/adobe-io--create-new-integration.png)
 
-*[[!UICONTROL Adobe I/O 통합 만들기]](https://console.adobe.io/) >  [!UICONTROL 새로운 통합]*
+*[[!UICONTROL Adobe I/O 통합 만들기]](https://console.adobe.io/) >  [!UICONTROL 새 통합]*
 
-Adobe I/O에서 새 통합을 만들려면 공개 인증서를 업로드해야 합니다. `openssl req` 명령으로 생성된 **certificate.crt**&#x200B;을 업로드합니다.
+Adobe I/O에서 새 통합을 만들려면 공용 인증서를 업로드해야 합니다. `openssl req` 명령으로 생성된 **certificate.crt**&#x200B;을 업로드합니다.
 
 ### 공개 키가 Adobe I/O {#verify-the-public-keys-are-loaded-in-adobe-i-o}에 로드되었는지 확인합니다.
 
