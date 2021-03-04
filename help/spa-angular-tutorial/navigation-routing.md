@@ -10,10 +10,13 @@ activity: develop
 audience: developer
 kt: 5312
 thumbnail: 5312-spa-angular.jpg
+topic: SPA
+role: 개발자
+level: 초급
 translation-type: tm+mt
-source-git-commit: e99779b5d42bb9a3b258e2bbe815defde9d40bf7
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '2722'
+source-wordcount: '2725'
 ht-degree: 1%
 
 ---
@@ -120,7 +123,7 @@ AEM 페이지 및 SPA 편집기 SDK를 사용하여 SPA에서 여러 보기가 �
 
 1. 브라우저를 열고 AEM [http://localhost:4502/](http://localhost:4502/)에 로그인합니다. 시작 코드 베이스는 이미 배포되어야 합니다.
 2. **[!UICONTROL SPA 페이지 템플릿]**&#x200B;으로 이동합니다.[http://localhost:4502/editor.html/conf/wknd-spa-angular/settings/wcm/templates/spa-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd-spa-angular/settings/wcm/templates/spa-page-template/structure.html).
-3. 맨 바깥쪽 **[!UICONTROL 루트 레이아웃 컨테이너]**&#x200B;를 선택하고 **[!UICONTROL 정책]** 아이콘을 클릭합니다. 작성을 위해 잠기지 않은 **[!UICONTROL 레이아웃 컨테이너]**&#x200B;를 선택하려면 **not**&#x200B;을(를) 주의하십시오.
+3. 맨 바깥쪽 **[!UICONTROL 루트 레이아웃 컨테이너]**&#x200B;를 선택하고 **[!UICONTROL 정책]** 아이콘을 클릭합니다. 작성을 위해 **[!UICONTROL 레이아웃 컨테이너]**&#x200B;가 잠겨 있지 않은 **을(를) 선택하려면 주의하십시오.**
 
    ![루트 레이아웃 컨테이너 정책 아이콘 선택](assets/navigation-routing/root-layout-container-policy.png)
 
