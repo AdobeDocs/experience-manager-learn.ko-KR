@@ -1,7 +1,7 @@
 ---
 title: Adobe Analytics을 사용하여 페이지 데이터 수집
 description: 이벤트 기반 Adobe 클라이언트 데이터 레이어를 사용하여 Adobe Experience Manager으로 구축된 웹 사이트에서 사용자 활동에 대한 데이터를 수집합니다. Experience Platform Launch에서 규칙을 사용하여 이러한 이벤트를 수신하고 데이터를 Adobe Analytics 보고서 세트로 전송하는 방법을 알아봅니다.
-feature: analytics
+feature: 분석
 topics: integrations
 audience: administrator
 doc-type: tutorial
@@ -9,10 +9,13 @@ activity: setup
 version: cloud-service
 kt: 5332
 thumbnail: 5332-collect-data-analytics.jpg
+topic: 통합
+role: 개발자
+level: 중간
 translation-type: tm+mt
-source-git-commit: 64c167ec1d625fdd8be1bc56f7f5e59460b8fed3
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '2415'
+source-wordcount: '2419'
 ht-degree: 2%
 
 ---
@@ -51,7 +54,7 @@ AEM 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-m
 
 [https://wknd.](https://wknd.site) sitee는 AEM 구현을 위해 참조 및  [자습서로 ](https://github.com/adobe/aem-guides-wknd) 설계된 오픈 소스 프로젝트를 기반으로 구축된 공개  [](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) 사이트 사이트입니다.
 
-AEM 환경을 설정하고 WKND 코드 베이스를 설치하는 대신 Experience Platform 디버거를 사용하여 **라이브 [https://wknd.site/](https://wknd.site/)을 *your* 시작 속성으로 &lt;a4/>전환할 수 있습니다.** 물론 이미 [Adobe 클라이언트 데이터 레이어가 활성화된 경우 자체 AEM 사이트를 사용할 수 있습니다.](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation)
+AEM 환경을 설정하고 WKND 코드 베이스를 설치하는 대신 Experience Platform 디버거를 사용하여 **라이브 [https://wknd.site/](https://wknd.site/)을 *your* 시작 속성으로**&#x200B;전환할 수 있습니다. 물론 이미 [Adobe 클라이언트 데이터 레이어가 활성화된 경우 자체 AEM 사이트를 사용할 수 있습니다.](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation)
 
 1. Experience Platform Launch에 로그인하고 [론치 속성](https://docs.adobe.com/content/help/en/core-services-learn/implementing-in-websites-with-launch/configure-launch/launch.html)을 만듭니다(아직 없는 경우).
 1. 초기 시작 [라이브러리가 만들어졌고 시작 [환경](https://docs.adobe.com/content/help/en/launch/using/reference/publish/environments.html)으로 승격되었는지 확인합니다.](https://docs.adobe.com/content/help/en/launch/using/reference/publish/libraries.html#create-a-library)
@@ -92,7 +95,7 @@ AEM 환경을 설정하고 WKND 코드 베이스를 설치하는 대신 Experien
    ```json
    page-2eee4f8914:
        @type: "wknd/components/page"
-       dc:description: "WKND is a collective of outdoors, music, crafts, adventure sports, and travel enthusiasts that want to share our experiences, connections, and expertise with the world."
+       dc:description: WKND is a collective of outdoors, music, crafts, adventure sports, and travel enthusiasts that want to share our experiences, connections, and expertise with the world.
        dc:title: "WKND Adventures and Travel"
        repo:modifyDate: "2020-08-31T21:02:21Z"
        repo:path: "/content/wknd/us/en.html"
