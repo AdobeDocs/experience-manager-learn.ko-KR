@@ -4,17 +4,20 @@ seo-title: Forms Workflow의 이메일 단계 보내기 사용
 description: 전자 메일 보내기 단계는 AEM Forms 6.4에서 도입되었습니다. 이 단계를 사용하여 첨부 파일 포함 또는 없는 이메일을 보낼 수 있는 비즈니스 프로세스 또는 워크플로우를 구축할 수 있습니다. 다음 비디오에서는 이메일 보내기 구성 요소를 구성하는 절차를 안내합니다
 seo-description: 전자 메일 보내기 단계는 AEM Forms 6.4에서 도입되었습니다. 이 단계를 사용하여 첨부 파일 포함 또는 없는 이메일을 보낼 수 있는 비즈니스 프로세스 또는 워크플로우를 구축할 수 있습니다. 다음 비디오에서는 이메일 보내기 구성 요소를 구성하는 절차를 안내합니다
 uuid: d054ebfb-3b9b-4ca4-8355-0eb0ee7febcb
-feature: workflow
+feature: 워크플로우
 topics: integrations
 audience: developer
 doc-type: technical video
 activity: setup
 version: 6.4,6.5
 discoiquuid: 3a11f602-2f4c-423a-baef-28824c0325a1
+topic: 개발
+role: 개발자
+level: 초급
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '497'
 ht-degree: 1%
 
 ---
