@@ -4,15 +4,18 @@ description: 로컬 개발 액세스 토큰 및 서비스 자격 증명을 사�
 version: cloud-service
 doc-type: tutorial
 topics: Development, Security
-feature: APIs
+feature: API
 activity: develop
 audience: developer
 kt: 6785
 thumbnail: 330460.jpg
+topic: '"헤드리스, 통합"'
+role: 개발자
+level: '"중간, 경험"'
 translation-type: tm+mt
-source-git-commit: 0b1150cd7ca32382cfaa880f9f956b55bfb65a33
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '591'
 ht-degree: 0%
 
 ---
