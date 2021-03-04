@@ -6,10 +6,14 @@ doc-type: tutorial
 topics: best-practices, development, authoring, configuring
 audience: all
 activity: develop, use
+feature: Dynamic Media Classic
+topic: 컨텐츠 관리
+role: 비즈니스 전문가
+level: 초급
 translation-type: tm+mt
-source-git-commit: 5eeeb197f9a2ee4216e1f9220c830751c36f01ab
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '904'
 ht-degree: 1%
 
 ---
