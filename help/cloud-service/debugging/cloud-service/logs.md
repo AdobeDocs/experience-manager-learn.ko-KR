@@ -1,7 +1,7 @@
 ---
 title: 로그
 description: 로그는 AEM에서 Cloud Service으로 AEM 애플리케이션을 디버깅하기 위해 최전선으로 사용되지만 배포된 AEM 응용 프로그램에서 적절한 로깅에 의존합니다.
-feature: null
+feature: 개발자 도구
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -9,11 +9,14 @@ activity: develop
 audience: developer
 kt: 5432
 thumbnail: kt-5432.jpg
+topic: 개발
+role: 개발자
+level: 초급
 translation-type: tm+mt
-source-git-commit: 7fd232d6821f91c342dd04fcdd04b9b505cb7250
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '990'
-ht-degree: 1%
+source-wordcount: '995'
+ht-degree: 2%
 
 ---
 
@@ -31,7 +34,7 @@ ht-degree: 1%
 
 ## 사용자 정의 로그 파일
 
-CLOUD SERVICES은 사용자 정의 로그 파일을 지원하지 않지만 사용자 정의 로깅을 지원합니다.
+Cloud Services은 사용자 정의 로그 파일을 지원하지 않지만 사용자 정의 로깅을 지원합니다.
 
 AEM에서 Java 로그를 Cloud Service([Cloud Manager](#cloud-manager) 또는 [Adobe I/O CLI](#aio)를 통해)로 사용할 수 있도록 하려면 사용자 정의 로그 문을 `error.log`에 작성해야 합니다. `example.log` 등의 사용자 지정 이름 있는 로그에 기록된 로그는 AEM에서 Cloud Service으로 액세스할 수 없습니다.
 
@@ -44,7 +47,7 @@ AEM 작성자 및 게시 서비스 모두 AEM 런타임 서버 로그를 제공�
    + 단계: `WARN`
    + 프로덕션: `ERROR`
 + `aemaccess` 자세한 내용은 AEM 서비스에 대한 HTTP 요청을 나열합니다.
-+ `aemrequest` aem 서비스에 대한 HTTP 요청 및 해당 HTTP 응답을 나열합니다.
++ `aemrequest` AEM 서비스에 대한 HTTP 요청 및 해당 HTTP 응답을 나열합니다.
 
 ## AEM 게시 디스패처 로그
 
@@ -68,11 +71,11 @@ Adobe Cloud Manager를 사용하면 환경의 [다운로드 로그] 작업을 �
 
 이러한 로그는 로그 분석 도구를 통해 다운로드 및 검사할 수 있습니다.
 
-## Adobe I/O CLI with Cloud Manager plugin{#aio}
+## Cloud Manager 플러그인이 포함된 Adobe I/O CLI{#aio}
 
-Adobe Cloud Manager는 Adobe I/O CLI용 [Cloud Manager 플러그인과 함께 [Adobe I/O CLI](https://github.com/adobe/aio-cli)를 통해 AEM을 Cloud Service 로그으로 액세스할 수 있습니다](https://github.com/adobe/aio-cli-plugin-cloudmanager).
+Adobe Cloud Manager는 Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)용 [Cloud Manager 플러그인과 함께 [Adobe I/O CLI](https://github.com/adobe/aio-cli)를 통해 AEM을 Cloud Service 로그으로 액세스할 수 있도록 지원합니다.
 
-먼저 [클라우드 관리자 플러그인](../../local-development-environment/development-tools.md#aio-cli)과 함께 Adobe I/O을 설정합니다.
+먼저 [클라우드 관리자 플러그인](../../local-development-environment/development-tools.md#aio-cli)을 사용하여 Adobe I/O을 설정합니다.
 
 관련 프로그램 ID 및 환경 ID가 식별되었는지 확인하고 [list-available-log-options](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerlist-available-log-options-environmentid)을 사용하여 [꼬리](#aio-cli-tail-logs) 또는 [다운로드](#aio-cli-download-logs) 로그에 사용되는 로그 옵션을 나열합니다.
 
@@ -113,7 +116,7 @@ $ aio config:set cloudmanager_programid <PROGRAM ID>
 $ aio cloudmanager:tail-logs <ENVIRONMENT ID> <SERVICE> <NAME>
 ```
 
-`grep`과 같은 다른 명령줄 도구는 `tail-logs`과 함께 사용하여 관심 있는 로그 문을 분리할 수 있습니다. 예:
+`grep`과 같은 다른 명령줄 도구는 `tail-logs`과 함께 사용하여 관심 있는 로그 문을 분리할 수 있습니다. 예를 들면 다음과 같습니다.
 
 ```
 $ aio cloudmanager:tail-logs 12345 author | grep com.example.MySlingModel
@@ -173,7 +176,7 @@ Cloud Service 환경으로서 AEM당 로그 수준에 대한 Adobe의 일반적�
 
 ### Java 로그 수준을 설정하는 환경별 변수
 
-각 환경에 대해 잘 알려진 정적 Java 로그 수준을 설정하는 대신 AEM을 Cloud Service [환경별 변수](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#environment-specific-configuration-values)로 사용하여 로그 수준을 매개 변수화하여 값을 Cloud Manager 플러그인](#aio-cli)의 [Adobe I/O CLI를 통해 동적으로 변경할 수 있도록 하는 것이 좋습니다.
+각 환경에 대해 정적으로 잘 알려진 Java 로그 수준을 설정하는 방법은 AEM을 Cloud Service [환경별 변수](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#environment-specific-configuration-values)로 사용하여 로그 수준을 매개 변수화하여 Cloud Manager 플러그인](#aio-cli)이 있는 [Adobe I/O CLI를 통해 값을 동적으로 변경할 수 있도록 하는 것입니다.
 
 따라서 환경별 변수 자리 표시자를 사용하려면 로깅 OSGi 구성을 업데이트해야 합니다. [로그 ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#default-values) 수준의 기본 값은  [Adobe 권장 사항에 따라 설정해야 합니다](#log-levels). 예:
 
