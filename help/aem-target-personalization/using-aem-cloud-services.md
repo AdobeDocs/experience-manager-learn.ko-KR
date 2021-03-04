@@ -3,11 +3,15 @@ title: Cloud Services을 사용하여 Adobe Experience Manager과 Adobe Target �
 seo-title: 레거시 Cloud Services을 사용하여 Adobe Experience Manager(AEM)과 Adobe Target 통합
 description: AEM Cloud Service을 사용하여 Adobe Experience Manager(AEM)과 Adobe Target을 통합하는 방법에 대한 단계별 연습
 seo-description: AEM Cloud Service을 사용하여 Adobe Experience Manager(AEM)과 Adobe Target을 통합하는 방법에 대한 단계별 연습
+feature: 경험 구성요소
+topic: 개인화
+role: 개발자
+level: 중간
 translation-type: tm+mt
-source-git-commit: 0443c8ff42e773021ff8b6e969f5c1c31eea3ae4
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 3%
+source-wordcount: '388'
+ht-degree: 4%
 
 ---
 
@@ -35,7 +39,7 @@ ht-degree: 3%
 
       >[!NOTE]
       >
-      > 고객은 [Adobe 지원](https://helpx.adobe.com/kr/contact/enterprise-support.ec.html)에서 Experience Platform Launch 및 Adobe I/O을 공급받거나 시스템 관리자에게 문의해야 합니다.
+      > 고객은 [Adobe 지원](https://helpx.adobe.com/kr/contact/enterprise-support.ec.html)에서 Experience Platform Launch 및 Adobe I/O을 공급하거나 시스템 관리자에게 문의해야 합니다.
 
 
 
