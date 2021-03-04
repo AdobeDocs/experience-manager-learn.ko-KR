@@ -1,18 +1,21 @@
 ---
 title: AEM SDK 디버깅을 위한 기타 도구
 description: AEM SDK의 로컬 빠른 시작을 디버깅하는 데 도움이 되는 다양한 도구를 사용할 수 있습니다.
-feature: null
+feature: 개발자 도구
 topics: development
 version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5251
+topic: 개발
+role: 개발자
+level: 초급, 중급
 translation-type: tm+mt
-source-git-commit: a3d3612713decefb5c7e1cf5b2d4d21afff0a2f5
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 2%
+source-wordcount: '339'
+ht-degree: 3%
 
 ---
 
