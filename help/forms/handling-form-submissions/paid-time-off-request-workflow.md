@@ -2,21 +2,18 @@
 title: 간단한 유료 요청 시간 워크플로우
 description: AEM Workflow에서 응용 양식 패널 숨기기 및 표시
 uuid: 28ceb72b-24d9-488e-92af-7e85775dc682
-feature: 적응형 양식
+feature: 통합
 topics: workflow
 audience: developer
 doc-type: article
 activity: use
 version: 6.4,6.5
 discoiquuid: 1c4822e6-76ce-446b-98cb-408900d68b24
-topic: 개발
-role: 개발자
-level: 경험
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 1%
+source-wordcount: '333'
+ht-degree: 0%
 
 ---
 
