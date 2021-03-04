@@ -2,18 +2,17 @@
 title: 자산 복사 가져오기 작업 사용
 description: 복사 배치 작업을 사용하여 AEM Assets의 에셋을 사용하는 방법을 알아봅니다.
 sub-product: 자산
-feature: adobe-asset-link
-topics: authoring, collaboration, operations, sharing, metadata, images, operations
-audience: all
-doc-type: feature video
-activity: use
-version: null
+feature: Adobe Asset Link
+version: cloud-service
 thumbnail: 34049.jpg
+topic: 컨텐츠 관리
+role: 비즈니스 전문가
+level: 초급
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '34'
-ht-degree: 0%
+source-wordcount: '42'
+ht-degree: 11%
 
 ---
 
