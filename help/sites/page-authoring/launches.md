@@ -1,18 +1,18 @@
 ---
 title: AEM Sites에서 론치를 사용하는 방법
 description: AEM Sites의 론치는 향후 릴리스에 사용할 컨텐츠를 만들고, 작성하고 검토할 수 있는 방법을 제공합니다.
-topic: Content Management
-feature: Launches
-level: Intermediate, Experienced
-role: Business Practitioner
+topic: 컨텐츠 관리
+feature: 론치
+level: 중간, 경험
+role: 관리자
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 6970
 thumbnail: 331285.jpg
 translation-type: tm+mt
-source-git-commit: ac2e937613eba4857d0f9bf8c5a39d5611157cbd
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '65'
-ht-degree: 1%
+source-wordcount: '71'
+ht-degree: 7%
 
 ---
 
