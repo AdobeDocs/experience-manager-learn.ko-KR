@@ -1,7 +1,7 @@
 ---
 title: asset compute 직원과 AEM 처리 프로필 통합
-description: CLOUD SERVICE으로 AEM은 AEM Assets 처리 프로필을 통해 Adobe I/O Runtime에 배포된 Asset compute 근로자와 통합됩니다. 처리 프로필은 사용자 지정 작업자를 사용하여 특정 자산을 처리하고 작업자가 생성한 파일을 자산 표현물로 저장하도록 작성자 서비스에 구성됩니다.
-feature: asset-compute, processing-profiles
+description: Cloud Service으로 AEM은 AEM Assets 처리 프로필을 통해 Adobe I/O Runtime에 배포된 Asset compute 근로자와 통합됩니다. 처리 프로필은 사용자 지정 작업자를 사용하여 특정 자산을 처리하고 작업자가 생성한 파일을 자산 표현물로 저장하도록 작성자 서비스에 구성됩니다.
+feature: asset compute 마이크로서비스
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,11 +9,14 @@ audience: developer
 doc-type: tutorial
 kt: 6287
 thumbnail: KT-6287.jpg
+topic: 통합, 개발
+role: 개발자
+level: 중간, 경험
 translation-type: tm+mt
-source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 1%
+source-wordcount: '638'
+ht-degree: 2%
 
 ---
 
@@ -40,7 +43,7 @@ asset compute 근로자가 Cloud Service으로 AEM에서 사용자 정의 변환
       + 생성할 변환의 확장. 이 형식은 워커의 웹 서비스가 지원하는 출력 형식이며 원 뒤에 투명한 배경이 잘려서 `png`으로 설정합니다.
    + __끝점:__ `https://...adobeioruntime.net/api/v1/web/wkndAemAssetCompute-0.0.1/worker`
       + 이 URL은 `aio app get-url`을 통해 얻은 워커의 URL입니다. AEM을 Cloud Service 환경으로 기반으로 올바른 작업 영역에서 URL 점을 확인합니다.
-      + 작업자 URL이 올바른 작업 영역을 가리키는지 확인합니다. CLOUD SERVICE 스테이지로 AEM은 스테이지 작업 영역 URL을 사용해야 하며 Cloud Service 프로덕션으로 AEM은 프로덕션 작업 공간 URL을 사용해야 합니다.
+      + 작업자 URL이 올바른 작업 영역을 가리키는지 확인합니다. Cloud Service 스테이지로 AEM은 스테이지 작업 영역 URL을 사용해야 하며 Cloud Service 프로덕션으로 AEM은 프로덕션 작업 공간 URL을 사용해야 합니다.
    + __서비스 매개 변수__
       + __매개 변수 추가__&#x200B;를 탭합니다.
          + 키: `size`
