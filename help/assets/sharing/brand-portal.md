@@ -1,20 +1,16 @@
 ---
 title: 브랜드 포털 사용
-seo-title: AEM Assets에서 브랜드 포털 사용
 description: AEM 작성자 및 AEM Assets 브랜드 포털 통합의 비디오 개요.
-seo-description: AEM 작성자 및 AEM Assets 브랜드 포털 통합의 비디오 개요.
-feature: brand-portal
-topics: authoring, sharing, collaboration, search, integrations, publishing, metadata, images, renditions, administration
-audience: all
-doc-type: feature video
-activity: use
+feature: Brand Portal
 version: 6.3, 6.4, 6.5
-team: tm
+topic: 컨텐츠 관리
+role: 비즈니스 전문가
+level: 초급
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1788'
-ht-degree: 1%
+source-wordcount: '1777'
+ht-degree: 2%
 
 ---
 
@@ -98,7 +94,7 @@ Dynamic Media 비디오를 다음과 같이 미리 볼 수 있습니다.
 
 Dynamic Media 비디오 인코딩은 다음 위치에서 다운로드할 수 있습니다.
 
-* Brand Portal
+* 브랜드 포털
 * 공유 링크
 
 ### 브랜드 포털에 게시 예약
@@ -114,7 +110,7 @@ Dynamic Media 비디오 인코딩은 다음 위치에서 다운로드할 수 있
 브랜드 포털 URL의 접두어만 사용자 정의할 수 있으며 전체 URL은 사용자 지정할 수 없습니다.
 예를 들어 기존 도메인이 `wknd.brand-portal.adobe.com`인 조직은 요청 시 `wkndinc.brand-portal.adobe.com`을(를) 만들 수 있습니다.
 
-그러나 AEM 작성자 인스턴스는 테넌트 ID를 가진 [구성된](https://helpx.adobe.com/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html)만 될 수 있고 임차인 별칭(대체) URL을 포함하지 않습니다.
+그러나 AEM 작성자 인스턴스는 테넌트 ID를 가진 [구성된](https://helpx.adobe.com/kr/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html)만 될 수 있고 임차인 별칭(대체) URL을 포함하지 않습니다.
 
 **사용 사례** :조직은 Adobe에서 제공하는 URL을 고수하는 대신 포털 URL을 사용자 정의하여 브랜딩 요구 사항을 충족할 수 있습니다.
 
@@ -159,9 +155,9 @@ AEM 브랜드 포털에서는 게스트가 포털에 액세스할 수 있도록 
 * *카드 및 목록 보기의 폴더 계층*  경로 — 사용자는 브랜드 포털 인스턴스 내에 저장된 폴더의 위치를 알 수 있습니다. 다른 폴더 계층 구조 내에서 이름이 같은 폴더를 차별화할 수 있습니다.
 * *개요 옵션*  — 자산/폴더를 선택한 다음 도구 모음에서 개요 옵션을 선택하여 비관리 사용자에게 자산/폴더에 대한 메타데이터를 제공합니다. 현재 제목, 만든 날짜 및 경로가 표시됩니다.
 
-### Adobe I/O 호스트 UI를 사용하여 Auth 통합 구성
+### Adobe I/O 호스트 UI를 사용하여 oAuth 통합 구성
 
-브랜드 포털은 Adobe I/O [https://legacy-oauth.cloud.adobe.io/](https://legacy-oauth.cloud.adobe.io/) 인터페이스를 사용하여 JWT 애플리케이션을 만듭니다. 이 인터페이스를 통해 브랜드 포털과 AEM Assets 통합을 허용하도록 oAuth 통합을 구성할 수 있습니다. 이전에는 OAuth 통합을 구성하기 위한 UI가 `https://marketing.adobe.com/developer/`에서 호스팅되었습니다. 브랜드 포털에 자산 및 컬렉션을 게시하기 위한 AEM Assets과 브랜드 포털의 통합에 대한 자세한 내용은 [브랜드 포털과 AEM Assets 통합 구성](https://helpx.adobe.com/experience-manager/6-4/assets/using/brand-portal-configuring-integration.html)을 참조하십시오.
+브랜드 포털은 Adobe I/O [https://legacy-oauth.cloud.adobe.io/](https://legacy-oauth.cloud.adobe.io/) 인터페이스를 사용하여 JWT 애플리케이션을 만듭니다. 이 인터페이스를 사용하면 브랜드 포털과 AEM Assets 통합을 허용하도록 oAuth 통합을 구성할 수 있습니다. 이전에는 OAuth 통합을 구성하기 위한 UI가 `https://marketing.adobe.com/developer/`에서 호스팅되었습니다. 브랜드 포털에 자산 및 컬렉션을 게시하기 위한 AEM Assets과 브랜드 포털의 통합에 대한 자세한 내용은 [브랜드 포털과 AEM Assets 통합 구성](https://helpx.adobe.com/kr/experience-manager/6-4/assets/using/brand-portal-configuring-integration.html)을 참조하십시오.
 
 ## 브랜드 포털 2018년 2월 기능 및 개선 사항{#brand-portal-features-and-enhancements-632}
 
