@@ -1,23 +1,17 @@
 ---
 title: AEM Dynamic Media을 사용한 자산 뷰어 이해
-seo-title: AEM Dynamic Media을 사용한 자산 뷰어 이해
 description: AEM Dynamic Media Viewer의 향상된 기능을 사용하면 AEM 작성자가 경험 에셋을 정의하고 사용자 정의할 수 있으며 웹 사이트 사용자에게 표시됩니다.
-seo-description: AEM Dynamic Media Viewer의 향상된 기능을 사용하면 AEM 작성자가 경험 에셋을 정의하고 사용자 정의할 수 있으며 웹 사이트 사용자에게 표시됩니다.
-uuid: 5762c0a2-4371-4719-8400-849c7a11926d
-discoiquuid: a0be2cd0-4fdb-431f-a8c7-e4620b8b129b
-products: SG_EXPERIENCEMANAGER/6.3/ASSETS
-sub-product: dynamic-media
-feature: viewer-presets, image-profiles
-topics: videos, renditions, authoring
-doc-type: feature video
-audience: all
-activity: understand
+sub-product: dynamic media classic
+feature: 뷰어 사전 설정, 이미지 프로필
 version: 6.3, 6.4, 6.5
+topic: 컨텐츠 관리
+role: 개발자
+level: 중간
 translation-type: tm+mt
-source-git-commit: 9cf01dbf9461df4cc96d5bd0a96c0d4d900af089
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '150'
-ht-degree: 0%
+source-wordcount: '132'
+ht-degree: 2%
 
 ---
 
