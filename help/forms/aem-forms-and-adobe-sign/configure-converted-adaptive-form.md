@@ -1,18 +1,21 @@
 ---
 title: 변환된 응용 양식 구성
 description: 변환된 응용 양식 구성
-feature: adaptive-forms
+feature: 적응형 양식
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 thumbnail: 39574.jpg
 kt: 6126
+topic: 개발
+role: 비즈니스 전문가
+level: 초급
 translation-type: tm+mt
-source-git-commit: 451ca39511b52e90a44bba25c6739280f49a0aac
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '74'
-ht-degree: 0%
+source-wordcount: '80'
+ht-degree: 3%
 
 ---
 
