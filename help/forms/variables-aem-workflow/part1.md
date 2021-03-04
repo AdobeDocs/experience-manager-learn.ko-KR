@@ -3,16 +3,19 @@ title: AEM Workflow[1부]의 변수
 seo-title: AEM Workflow[1부]의 변수
 description: aem 워크플로우에서 xml,json,arraylist,문서 유형의 변수 사용
 seo-description: aem 워크플로우에서 xml,json,arraylist,문서 유형의 변수 사용
-feature: workflow
+feature: 워크플로우
 topics: development
 audience: developer
 doc-type: tutorial
 activity: understand
 version: 6.5
+topic: 개발
+role: 개발자
+level: 초급
 translation-type: tm+mt
-source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
