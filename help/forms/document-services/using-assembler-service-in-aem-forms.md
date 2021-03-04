@@ -4,18 +4,21 @@ seo-title: AEM Forms에서 어셈블러 서비스 사용
 description: AEM Forms의 Assembler Service를 사용하여 여러 pdf 파일 취합
 seo-description: AEM Forms의 Assembler Service를 사용하여 여러 pdf 파일 취합
 uuid: 7895b1a3-6f9d-4413-bb7f-692ea0380fcd
-feature: assembler
+feature: 어셈블러
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
 discoiquuid: a12f52af-7039-4452-a58d-9ad2c0096347
+topic: 개발
+role: 개발자
+level: 경험
 translation-type: tm+mt
-source-git-commit: f07680e73316efb859a675f4b2212d8c3e03f6a0
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 2%
+source-wordcount: '228'
+ht-degree: 3%
 
 ---
 
