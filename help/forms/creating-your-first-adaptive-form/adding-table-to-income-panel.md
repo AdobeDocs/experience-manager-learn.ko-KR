@@ -4,7 +4,7 @@ seo-title: '[수입] 패널에 구성 요소 추가'
 description: '[수입] 패널에 테이블을 추가합니다. 테이블 행을 구성하고 규칙 편집기를 사용하여 총 합계를 계산합니다.'
 seo-description: '[수입] 패널에 테이블을 추가합니다. 테이블 행을 구성하고 규칙 편집기를 사용하여 총 합계를 계산합니다.'
 uuid: d5c98561-c559-4624-976a-7a1486da7e69
-feature: adaptive-forms
+feature: 적응형 양식
 topics: authoring
 audience: developer
 doc-type: tutorial
@@ -13,11 +13,14 @@ version: 6.4,6.5
 thumbnail: 22198.jpg
 kt: 4211
 discoiquuid: fa483260-38ff-40d8-96a7-1de11d8b792b
+topic: 개발
+role: 개발자
+level: 초급
 translation-type: tm+mt
-source-git-commit: c60a46027cc8d71fddd41aa31dbb569e4df94823
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '211'
-ht-degree: 0%
+source-wordcount: '216'
+ht-degree: 1%
 
 ---
 
