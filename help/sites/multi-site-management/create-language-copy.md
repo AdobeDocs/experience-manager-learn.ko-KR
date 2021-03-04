@@ -1,7 +1,7 @@
 ---
 title: 언어 사본 만들기
 description: '언어 복사 만들기 마법사를 사용하여 AEM 사이트에 사용할 언어 사본을 만드는 방법을 살펴봅니다.  '
-feature: language-copy, live-copy, multi-site-manager
+feature: 언어 사본, 다중 사이트 관리자
 topics: localization, authoring, content-architecture
 audience: all
 doc-type: feature video
@@ -9,11 +9,14 @@ activity: use
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 5371
 thumbnail: 36483.jpg
+topic: 로컬라이제이션
+role: 비즈니스 전문가
+level: 초급
 translation-type: tm+mt
-source-git-commit: eabc325c498b4d5b8b5a53b9004f0e89d82cefe3
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '42'
-ht-degree: 0%
+source-wordcount: '51'
+ht-degree: 1%
 
 ---
 
