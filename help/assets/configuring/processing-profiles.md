@@ -2,19 +2,18 @@
 title: 처리 프로필
 description: 처리 프로필은 AEM의 자산에 대해 Cloud Service으로 만들 변환을 정의합니다.
 sub-product: 자산
-feature: processing-profiles
-topics: renditions
-audience: administrator, implementer
-doc-type: feature-video
-activity: use
+feature: asset compute 마이크로서비스
 version: cloud-service
 kt: 4993
 thumbnail: 35597.jpg
+topic: 통합
+role: 개발자
+level: 초급
 translation-type: tm+mt
-source-git-commit: c258b679b335070bbfe1b78489b5730052ee7971
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '37'
-ht-degree: 10%
+source-wordcount: '43'
+ht-degree: 13%
 
 ---
 
