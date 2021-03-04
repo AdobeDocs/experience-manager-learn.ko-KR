@@ -1,18 +1,21 @@
 ---
 title: 적응형 양식 만들기 및 구성
 description: 적응형 양식을 만들고 구성합니다. 다음 비디오에서는 DoR 자동 생성을 위해 적응형 양식을 만들고 구성하는 데 필요한 단계를 강조 표시합니다. 또한 비디오에서는 AEM 워크플로우를 트리거하기 위해 적응형 양식을 구성하는 데 필요한 단계를 안내합니다.
-feature: 적응형 양식
+feature: 적응형 Forms,Adobe Sign
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 thumbnail: 38348.jpg
 kt: 6039
+topic: 개발
+role: 비즈니스 전문가
+level: 초급
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '86'
-ht-degree: 0%
+source-wordcount: '93'
+ht-degree: 1%
 
 ---
 
