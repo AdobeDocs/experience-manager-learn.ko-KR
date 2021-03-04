@@ -11,7 +11,7 @@ doc-type: feature video
 kt: 660
 thumbnail: 331786.jpg
 translation-type: tm+mt
-source-git-commit: fcfb33f93e57d40b08e0527d38cfce8553095e65
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
 source-wordcount: '111'
 ht-degree: 3%
@@ -23,7 +23,7 @@ ht-degree: 3%
 
 구성 블록은 경험 조각의 하위 기능입니다. 콘텐츠 작성자는 블록 작성을 통해 다양한 경험 조각에 있는 구성 요소를 재사용할 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/331786/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/331786/?quality=12&learn=on)
 
 >[!NOTE]
 >
