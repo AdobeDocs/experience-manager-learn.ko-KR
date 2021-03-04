@@ -3,10 +3,14 @@ title: 3장 - 이벤트 컨텐츠 조각 작성 - 컨텐츠 서비스
 seo-title: AEM 컨텐츠 서비스 시작하기 - 3장 - 이벤트 컨텐츠 조각 작성
 description: AEM 헤드리스 자습서의 3장에서는 2장에서 만든 컨텐츠 조각 모델에서 이벤트 컨텐츠 조각을 만들고 작성하는 방법을 다룹니다.
 seo-description: AEM 헤드리스 자습서의 3장에서는 2장에서 만든 컨텐츠 조각 모델에서 이벤트 컨텐츠 조각을 만들고 작성하는 방법을 다룹니다.
+feature: '"컨텐츠 조각, API"'
+topic: '"헤드리스, 콘텐츠 관리"'
+role: 개발자
+level: 초급
 translation-type: tm+mt
-source-git-commit: 5012433a5f1c7169b1a3996453bfdbd5d78e5b1c
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '518'
 ht-degree: 2%
 
 ---
