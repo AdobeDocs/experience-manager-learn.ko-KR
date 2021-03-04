@@ -4,18 +4,21 @@ seo-title: AEM Forms에서 트랜잭션 보고 사용
 description: AEM Forms의 트랜잭션 보고서를 사용하면 AEM Forms 배포의 지정된 날짜 이후 발생한 모든 트랜잭션 수를 유지할 수 있습니다.
 seo-description: AEM Forms의 트랜잭션 보고서를 사용하면 AEM Forms 배포의 지정된 날짜 이후 발생한 모든 트랜잭션 수를 유지할 수 있습니다.
 uuid: e6133f7e-c79c-4006-89e7-3bebf7b8229e
-feature: adaptive-forms
+feature: 적응형 양식
 topics: developing
 audience: administrator
 doc-type: article
 activity: setup
 version: 6.4.1,6.5
 discoiquuid: 1abdf07a-b9f0-4c58-a1c6-08ae57db2014
+topic: 개발
+role: 개발자
+level: 초급
 translation-type: tm+mt
-source-git-commit: 3d54a8158d0564a3289a2100bbbc59e5ae38f175
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '398'
-ht-degree: 1%
+source-wordcount: '403'
+ht-degree: 2%
 
 ---
 
