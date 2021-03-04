@@ -1,18 +1,16 @@
 ---
 title: AEM Assets에서 주석 사용자 정의
-seo-title: AEM Assets에서 주석 사용자 정의
 description: AEM 개발자는 PDF로 출력할 때 AEM Assets 포맷 및 스타일을 구성할 수 있습니다.
-feature: asset-share
-topics: authoring, collaboration, operations, sharing
-audience: developer
-doc-type: feature video
-activity: developer
+feature: 협업
 version: 6.3, 6.4, 6.5
+topic: 협업
+role: 개발자
+level: 중간
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '65'
-ht-degree: 0%
+source-wordcount: '64'
+ht-degree: 4%
 
 ---
 
