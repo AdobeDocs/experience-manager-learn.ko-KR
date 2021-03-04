@@ -1,18 +1,21 @@
 ---
 title: Dispatcher 도구 디버깅
 description: 디스패처 도구는 AEM을 Cloud Services AEM 게시 서비스의 로컬 디스패처로 시뮬레이션하는 데 사용할 수 있는 포함된 Apache 웹 서버 환경을 제공합니다. 엔드 투 엔드 AEM 응용 프로그램 및 지원 캐시 및 보안 구성이 올바른지 확인하는 데 Dispatcher Tools의 로그 및 캐시 내용을 디버깅하는 것이 중요합니다.
-feature: dispatcher, aem-sdk
+feature: Dispatcher
 topics: development
 version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5918
+topic: 개발
+role: 개발자
+level: 초급, 중급
 translation-type: tm+mt
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '229'
-ht-degree: 0%
+source-wordcount: '234'
+ht-degree: 1%
 
 ---
 
