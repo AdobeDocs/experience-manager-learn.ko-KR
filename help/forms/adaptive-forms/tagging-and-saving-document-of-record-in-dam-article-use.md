@@ -4,17 +4,20 @@ seo-title: DAM에 AEM Forms DoR 태그 지정 및 저장
 description: 이 문서에서는 AEM DAM에서 AEM Forms이 생성한 DoR을 저장하고 태깅하는 사용 사례를 살펴봅니다. 문서의 태그 지정은 제출된 양식 데이터를 기반으로 수행됩니다.
 seo-description: 이 문서에서는 AEM DAM에서 AEM Forms이 생성한 DoR을 저장하고 태깅하는 사용 사례를 살펴봅니다. 문서의 태그 지정은 제출된 양식 데이터를 기반으로 수행됩니다.
 uuid: b9ba13ed-52d5-4389-a7d5-bf85e58fea49
-feature: 적응형 양식,워크플로
+feature: 적응형 Forms,작업 과정
 topics: developing
 audience: implementer
 doc-type: article
 activity: develop
 version: 6.4,6.5
 discoiquuid: 53961454-633b-4cd8-aef7-e64ab4e528e4
+topic: 개발
+role: 개발자
+level: 경험
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '661'
 ht-degree: 0%
 
 ---
