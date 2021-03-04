@@ -1,16 +1,15 @@
 ---
 title: AEM Assets에서 Adobe Asset Link Extension 사용
 description: '이제 자주 사용하는 Adobe Creative Cloud 데스크탑 애플리케이션에서 디자이너와 크리에이티브 사용자가 Adobe Experience Manager 에셋을 사용할 수 있습니다. Adobe Creative Cloud Enterprise용 Adobe Asset Link 익스텐션은 Adobe Photoshop, InDesign 및 Illustrator과 같은 Creative Cloud 툴에서 AEM 에셋을 검색 및 검색하고 정렬, 미리 보기, 업로드, 체크 아웃, 수정, 체크 인 및 볼 수 있는 기능을 확장합니다. '
-feature: adobe-asset-link
-topics: authoring, collaboration, operations, sharing, metadata, images
-audience: all
-doc-type: feature video
-activity: use
+feature: Adobe Asset Link
 version: 6.4, 6.5
+topic: 컨텐츠 관리
+role: 비즈니스 전문가
+level: 초급
 translation-type: tm+mt
-source-git-commit: 9102505bbd826e17bf924cec719d7a430eea5095
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1094'
+source-wordcount: '1102'
 ht-degree: 1%
 
 ---
@@ -86,7 +85,7 @@ Adobe Identity Management 서비스(IMS) 및 Adobe Experience Manager 작성자 
 2. Adobe 에셋 링크 확장은 **1단계**&#x200B;에서 얻은 전달자 토큰(HTTP/HTTPS), 확장 설정의 JSON에 제공된 호스트 및 포트를 포함하여 HTTP를 통해 AEM 작성자에 연결됩니다.
 3. AEM Bearer Authentication Handler가 요청에서 Bearer 토큰을 추출하고 Adobe IMS에 대해 확인합니다.
 4. Adobe IMS가 베어러 토큰을 검증하면, 사용자는 AEM에서 만들어지고(아직 없는 경우) Adobe IMS의 프로필 및 그룹/멤버십 데이터를 동기화합니다. AEM 사용자는 표준 AEM 로그인 토큰을 발급받고, 이 토큰은 HTTP(S) 응답의 쿠키로 Adobe 자산 링크 확장 프로그램으로 다시 전송됩니다.
-5. 후속 상호 작용(예: 검색, 검색, 자산 체크인/체크아웃 등) adobe Asset Link 확장 기능을 사용하면 표준 AEM 토큰 인증 핸들러를 사용하여 AEM 로그인 토큰을 사용하여 유효성을 검사하는 AEM 작성자에게 HTTP를 요청합니다.
+5. 후속 상호 작용(예: 검색, 검색, 자산 체크인/체크아웃 등) Adobe Asset Link 확장 기능을 사용하면 표준 AEM 토큰 인증 핸들러를 사용하여 AEM 로그인 토큰을 사용하여 유효성을 검사하는 AEM 작성자에게 HTTP를 요청합니다.
 
 >[!NOTE]
 >
