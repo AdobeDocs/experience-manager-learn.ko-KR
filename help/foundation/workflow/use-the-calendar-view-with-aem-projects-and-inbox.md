@@ -4,20 +4,17 @@ seo-title: AEM 프로젝트 및 받은 편지함과 함께 달력 보기 사용
 description: 'AEM 달력 보기는 보다 간편한 프로젝트 관리 및 예약을 위해 달력 보기에서 프로젝트와 작업을 추적합니다. 달력 보기를 사용하면 현재 진행 중인 프로젝트 및 작업, 계획, 예정, 기한 및 기한 지난 작업을 전체적으로 확인할 수 있습니다. '
 seo-description: AEM 달력 보기는 보다 간편한 프로젝트 관리 및 예약을 위해 달력 보기에서 프로젝트와 작업을 추적합니다. 달력 보기를 사용하면 현재 진행 중인 프로젝트 및 작업, 계획, 예정, 기한 및 기한 지난 작업을 전체적으로 확인할 수 있습니다.
 version: 6.3, 6.4, 6.5
-feature: '"워크플로우, 프로젝트"'
+feature: 받은 편지함, 프로젝트, 워크플로우
 topics: governance, collaboration
 activity: use
 audience: author, analyst
 doc-type: feature video
 uuid: 3dc9999c-eddf-4e42-9aa9-87a37a47699d
 discoiquuid: 5ad21858-a4a2-486c-98dc-4f5ba46a3bc1
-topic: 협업
-role: 비즈니스 전문가
-level: 초급
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '240'
+source-wordcount: '237'
 ht-degree: 0%
 
 ---
