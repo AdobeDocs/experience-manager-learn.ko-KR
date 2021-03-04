@@ -1,14 +1,10 @@
 ---
 title: 5장 - 컨텐츠 서비스 페이지 작성 - 컨텐츠 서비스
 description: AEM 제목 없는 자습서의 5장에서는 4장에 정의된 템플릿에서 페이지 만들기를 다룹니다. 이러한 페이지는 JSON HTTP 끝점 역할을 합니다.
-feature: '"컨텐츠 조각, API"'
-topic: '"헤드리스, 콘텐츠 관리"'
-role: 개발자
-level: 초급
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '596'
 ht-degree: 0%
 
 ---
