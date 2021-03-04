@@ -9,10 +9,14 @@ activity: develop
 audience: developer
 kt: 4083
 thumbnail: 30359.jpg
+feature: '"핵심 구성 요소, AEM 프로젝트 원형"'
+topic: '"콘텐츠 관리, 개발"'
+role: 개발자
+level: 초급
 translation-type: tm+mt
-source-git-commit: 76462bb75ceda1921db2fa37606ed7c5a1eadb81
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '3291'
+source-wordcount: '3301'
 ht-degree: 1%
 
 ---
@@ -142,7 +146,7 @@ AEM(Adobe Experience Manager) 사이트 구현을 위해 CSS 및 Javascript를 �
 
    ![구성 요소 공유 파일](assets/client-side-libraries/component-sass-files.png)
 
-   각 파일은 [아코디언 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/accordion.html?lang=en#components)와 같은 핵심 구성 요소에 매핑됩니다. 각 핵심 구성 요소는 [블록 요소 수정자](https://getbem.com/) 또는 BEM 표기법을 사용하여 작성되므로 스타일 규칙을 사용하여 특정 CSS 클래스를 보다 쉽게 타깃팅할 수 있습니다. `/components` 아래 파일은 AEM 프로젝트 원형(Tranype)에 의해 각 구성 요소에 대한 다른 BEM 규칙과 함께 분석되었습니다.
+   각 파일은 [아코디언 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/accordion.html?lang=en#components)와 같은 핵심 구성 요소에 매핑됩니다. 각 핵심 구성 요소는 [블록 요소 수정자](https://getbem.com/) 또는 BEM 표기법을 사용하여 작성되므로 스타일 규칙을 사용하여 특정 CSS 클래스를 보다 쉽게 타깃팅할 수 있습니다. `/components` 아래의 파일은 각 구성 요소에 대한 다른 BEM 규칙과 함께 AEM Project Tranype에 의해 분석되었습니다.
 
 1. WKND 기본 스타일 **[wknd-base-styles-src.zip](./assets/client-side-libraries/wknd-base-styles-srcv2.zip)** 및 **압축 해제** 파일을 다운로드합니다.
 
@@ -370,7 +374,7 @@ AEM Project Tranype은 이 통합을 자동으로 설정합니다. 그 다음 �
 
 1. `CTRL+C`를 입력하여 명령줄에서 **웹 팩 서버를 중지**&#x200B;할 수 있습니다.
 
-## Webpack DevServer - {#webpack-dev-watch} 시청 및 emsync
+## Webpack DevServer - {#webpack-dev-watch} 감시 및 emsync
 
 또 다른 방법은 `ui.frontend` 모듈의 src 파일에 대한 모든 파일 변경 사항에 대해 Node.js 보기를 사용하는 것입니다. 파일이 변경될 때마다 클라이언트 라이브러리를 빠르게 컴파일하고 [aemsync](https://www.npmjs.com/package/aemsync) npm 모듈을 사용하여 실행 중인 AEM 서버에 변경 내용을 동기화합니다.
 
