@@ -4,17 +4,20 @@ seo-title: 사용자 지정 자산 유형 등록
 description: AEMForms Portal에 나열하기 위한 사용자 지정 자산 유형 활성화
 seo-description: AEMForms Portal에 나열하기 위한 사용자 지정 자산 유형 활성화
 uuid: eaf29eb0-a0f6-493e-b267-1c5c4ddbe6aa
-feature: adaptive-forms
+feature: 적응형 양식
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.3,6.4,6.5
 discoiquuid: 99944f44-0985-4320-b437-06c5adfc60a1
+topic: 개발
+role: 개발자
+level: 경험
 translation-type: tm+mt
-source-git-commit: 3d54a8158d0564a3289a2100bbbc59e5ae38f175
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '671'
 ht-degree: 2%
 
 ---
@@ -30,7 +33,7 @@ AEMForms Portal에 나열하기 위한 사용자 지정 자산 유형 활성화
 
 ## 기본 경로 지정 {#specify-base-path}
 
-기본 경로는 사용자가 검색 및 라이브러리 구성 요소에 나열할 수 있는 모든 자산을 구성하는 최상위 저장소 경로입니다. 원하는 경우 기본 경로 내의 모든 노드를 검색하는 대신 특정 위치에 검색을 트리거하도록 구성 요소 편집 대화 상자에서 기본 경로 내의 특정 위치를 구성할 수도 있습니다. 기본적으로 사용자가 이 위치 내에서 특정 경로 집합을 구성하지 않는 한 기본 경로는 자산을 가져오기 위한 검색 경로 기준으로 사용됩니다. 성능 검색을 수행하려면 이 경로에 대한 최적의 값을 갖는 것이 중요합니다. 모든 AEM Forms 에셋이 **_/content/dam/formsanddocuments_**&#x200B;에 있으므로 기본 경로의 기본값은 **_/content/dam/formsanddocuments&lt;a1/>로 유지됩니다._**
+기본 경로는 사용자가 검색 및 라이브러리 구성 요소에 나열할 수 있는 모든 자산을 구성하는 최상위 저장소 경로입니다. 원하는 경우 기본 경로 내의 모든 노드를 검색하는 대신 특정 위치에 검색을 트리거하도록 구성 요소 편집 대화 상자에서 기본 경로 내의 특정 위치를 구성할 수도 있습니다. 기본적으로 사용자가 이 위치 내에서 특정 경로 집합을 구성하지 않는 한 기본 경로는 자산을 가져오기 위한 검색 경로 기준으로 사용됩니다. 성능 검색을 수행하려면 이 경로에 대한 최적의 값을 갖는 것이 중요합니다. 모든 AEM Forms 에셋이 **_/content/dam/formsanddocuments_**&#x200B;에 있으므로 기본 경로의 기본값은 **_/content/dam/formsanddocuments로 유지됩니다._**
 
 기본 경로를 구성하는 절차
 
