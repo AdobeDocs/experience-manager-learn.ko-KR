@@ -1,7 +1,7 @@
 ---
 title: Cloud Service 개발용으로 AEM용 개발 도구 설정
 description: AEM 로컬에서 개발하는 데 필요한 모든 기본 툴이 포함된 로컬 개발 시스템을 설정할 수 있습니다.
-feature: null
+feature: 개발자 도구
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -9,10 +9,13 @@ activity: develop
 audience: developer
 kt: 4267
 thumbnail: 25907.jpg
+topic: 개발
+role: 개발자
+level: 초급
 translation-type: tm+mt
-source-git-commit: debf13d8e376979548bcbf55f71661d8cb8eb823
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1366'
+source-wordcount: '1371'
 ht-degree: 0%
 
 ---
@@ -28,7 +31,7 @@ AEM(Adobe Experience Manager) 개발을 위해서는 개발자 시스템에 최�
 
 Experience Manager은 Java 애플리케이션이므로 Java SDK가 개발을 지원하고 AEM은 Cloud Service SDK로 지원해야 합니다.
 
-1. [최신 릴리스 Java 11 SDK 다운로드 및 설치](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Content%2Fmetadata%2Fdc%3SoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%4040jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)
+1. [최신 릴리스 Java 11 SDK 다운로드 및 설치](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Content%2Fmetadata%2Fdc%3SoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%4444 0jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)
 1. 다음 명령을 실행하여 Java 11 SDK가 설치되었는지 확인합니다.
    + Windows: `java -version`
    + macOS / Linux:`java --version`
@@ -136,18 +139,18 @@ Adobe I/O Cloud Manager 플러그인을 사용하면 aio CLI에서 `aio asset-co
 
 ### Adobe I/O CLI 인증 설정
 
-Adobe I/O CLI가 Cloud Manager와 통신하려면 Cloud Manager 통합을 Adobe I/O Console에서 만들고 인증을 성공적으로 수행하려면 자격 증명을 받아야 합니다.
+Adobe I/O CLI가 Cloud Manager와 통신하려면 Cloud Manager 통합을 Adobe I/O 콘솔에서 생성해야 하며 인증을 성공적으로 수행하려면 자격 증명을 취득해야 합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35094?quality=12&learn=on)
 
 1. [console.adobe.io](https://console.adobe.io)에 로그인
 1. 연결할 클라우드 관리자 제품을 포함하는 조직이 Adobe 조직 전환기에서 활성화되어 있는지 확인합니다.
 1. 새로 만들거나 기존 [Adobe I/O 프로그램](https://www.adobe.io/apis/experienceplatform/console/docs.html#!AdobeDocs/adobeio-console/master/projects.md) 열기
-   + Adobe I/O 콘솔 프로그램은 통합 관리 방법을 기반으로 통합, 생성 또는 사용 및 기존 프로그램의 구성 그룹화입니다
+   + Adobe I/O 콘솔 프로그램은 통합을 관리할 방법을 기반으로 통합, 생성 또는 사용 및 기존 프로그램의 구성 그룹화입니다
    + 새 프로젝트를 만들 경우 메시지가 표시되면(템플릿에서 만드는 것과 비교) &quot;빈 프로젝트&quot;를 선택합니다.
-   + Adobe I/O 콘솔 프로그램은 Cloud Manager 프로그램과 다른 개념입니다.
+   + Adobe I/O 콘솔 프로그램은 Cloud Manager 프로그램에 대해 서로 다른 개념입니다.
 1. &quot;개발자 - Cloud Service&quot; 프로파일과 새로운 Cloud Manager API 통합 만들기
-1. JWT(서비스 계정) 자격 증명을 얻으려면 Adobe I/O CLI의 [config.json](https://github.com/adobe/aio-cli-plugin-cloudmanager#authentication)을 채워야 합니다.
+1. JWT(서비스 계정) 자격 증명을 얻으려면 Adobe I/O CLI의 [config.json](https://github.com/adobe/aio-cli-plugin-cloudmanager#authentication) 을 채워야 합니다.
 1. Adobe I/O CLI에 `config.json` 파일을 로드합니다.
    + `$ aio config:set jwt-auth PATH_TO_CONFIG_JSON_FILE --file --json`
 1. Adobe I/O CLI에 `private.key` 파일을 로드합니다.
