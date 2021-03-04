@@ -4,17 +4,20 @@ seo-title: 적응형 Forms을 사용한 바코드 서비스
 description: 바코드 서비스를 사용하여 바코드 코드를 디코딩하고 추출된 데이터의 양식 필드 채우기
 seo-description: 바코드 서비스를 사용하여 바코드 코드를 디코딩하고 추출된 데이터의 양식 필드 채우기
 uuid: 42568b81-cbcd-479e-8d9a-cc0b244da4ae
-feature: barcoded-forms
+feature: 바코드 양식
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
 discoiquuid: 1224de6d-7ca1-4e9d-85fe-cd675d03e262
+topic: 개발
+role: 개발자
+level: 중간
 translation-type: tm+mt
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
