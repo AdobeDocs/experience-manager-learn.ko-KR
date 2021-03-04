@@ -2,15 +2,18 @@
 title: Dynamic Media Classic 기본 워크플로 및 자산 미리 보기
 description: 만들기(및 업로드), 작성자(및 게시) 및 전달의 3단계를 포함하는 Dynamic Media Classic의 기본 워크플로우에 대해 알아보십시오. 그런 다음 Dynamic Media Classic에서 에셋을 미리 보는 방법을 알아봅니다.
 sub-product: dynamic-media
-feature: workflow
+feature: Dynamic Media Classic
 doc-type: tutorial
 topics: development, authoring, configuring, architecture, publishing
 audience: all
 activity: use
+topic: 컨텐츠 관리
+role: 비즈니스 전문가
+level: 초급
 translation-type: tm+mt
-source-git-commit: 5eeeb197f9a2ee4216e1f9220c830751c36f01ab
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '2729'
+source-wordcount: '2737'
 ht-degree: 1%
 
 ---
@@ -175,7 +178,7 @@ IT 팀이나 통합 파트너는 코드를 작성하고 변경하는 작업을 �
 
 ## 자산 미리 보기
 
-업로드한 에셋을 미리 보거나 만들거나 편집하는 경우 고객이 볼 때 원하는 대로 에셋을 표시할 수 있습니다. **미리 보기** 단추를 클릭하거나 **찾아보기/빌드 패널**&#x200B;의 상단에 있는 **파일 > 미리 보기**&#x200B;로 이동하여 해당 에셋의 축소판에서 &lt;a0/>미리 보기&lt;a1/> 단추를 클릭하여 [미리 보기] 창에 액세스할 수 있습니다. 브라우저 창에서는 이미지, 비디오 또는 이미지 집합과 같은 내장된 에셋인지 여부에 따라 현재 패널에 있는 에셋을 미리 봅니다.
+업로드한 에셋을 미리 보거나 만들거나 편집하는 경우 고객이 볼 때 원하는 대로 에셋을 표시할 수 있습니다. **미리 보기** 단추를 클릭하거나 **찾아보기/빌드 패널**&#x200B;의 상단에 있는 **파일 > 미리 보기**&#x200B;로 이동하여 해당 에셋의 축소판에서 미리 보기 단추를 클릭하여 [미리 보기] 창에 액세스할 수 있습니다. 브라우저 창에서는 이미지, 비디오 또는 이미지 집합과 같은 내장된 에셋인지 여부에 따라 현재 패널에 있는 에셋을 미리 봅니다.
 
 ### 동적 크기 미리 보기(이미지 사전 설정)
 
