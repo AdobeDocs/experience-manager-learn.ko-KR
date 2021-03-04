@@ -1,17 +1,20 @@
 ---
 title: AEM의 번역 개선 사항
 description: AEM의 강력한 번역 프레임워크를 사용하면 지원되는 번역 업체에 의해 AEM 컨텐츠를 원활하게 변환할 수 있습니다. 최신 개선 사항에 대해 알아보십시오.
-feature: multi-site-manager, language-copy
+feature: multi-site-manager, 언어 복사
 topics: localization, authoring, content-architecture
 audience: author, marketer, developer
 doc-type: feature video
 activity: use
 version: 6.3, 6.4, 6.5
+topic: 로컬라이제이션
+role: 비즈니스 전문가
+level: 초급
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 0%
+source-wordcount: '340'
+ht-degree: 2%
 
 ---
 
@@ -32,7 +35,7 @@ AEM 6.5 번역 개선 사항은 다음과 같습니다.
 
 **JSON 형식으로 번역 개체 내보내기**:AEM 6.4 및 이전 버전은 변환 객체의 XML 및 XLIFF 형식을 지원합니다. 이제 시스템 콘솔 [!UICONTROL 구성 관리자]를 사용하여 내보내기 형식을 JSON 형식으로 구성할 수 있습니다. [!UICONTROL 번역 플랫폼 구성]을 찾은 다음 내보내기 형식을 JSON으로 선택할 수 있습니다.
 
-**번역된 AEM 컨텐츠를 TMS(번역 메모리)에서 업데이트합니다**.aem에 대한 액세스 권한이 없는 로컬 작성자는 번역된 컨텐트에 대한 업데이트를 할 수 있으며, 이는 이미 AEM으로 처리된 컨텐츠를 TM(번역 메모리, TMS)에서 직접 업데이트하고, 번역 작업을 TMS에서 AEM으로 다시 전송하여 AEM에서 번역을 업데이트할 수 있습니다.
+**번역된 AEM 컨텐츠를 TMS(번역 메모리)에서 업데이트합니다**.AEM에 대한 액세스 권한이 없는 로컬 작성자는 번역된 컨텐트에 대한 업데이트를 할 수 있으며, 이는 이미 AEM으로 처리된 컨텐츠를 TM(번역 메모리, TMS)에서 직접 업데이트하고, 번역 작업을 TMS에서 AEM으로 다시 전송하여 AEM에서 번역을 업데이트할 수 있습니다.
 
 ## AEM 6.4의 번역 개선 사항
 
@@ -42,6 +45,6 @@ AEM 6.5 번역 개선 사항은 다음과 같습니다.
 
 ## 추가 리소스 {#additional-resources}
 
-* [다국어 사이트의 컨텐츠 번역](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/translation.html)
+* [다국어 사이트의 컨텐츠 번역](https://helpx.adobe.com/kr/experience-manager/6-5/sites/administering/using/translation.html)
 * [https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-manage.html](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-manage.html)
 * [번역 우수 사례](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-bp.html)
