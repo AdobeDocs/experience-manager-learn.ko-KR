@@ -4,7 +4,7 @@ seo-title: 감시 폴더를 사용하여 인쇄 채널 문서 생성
 description: 이 튜토리얼은 인쇄 채널용 첫 인터랙티브 커뮤니케이션 문서를 만들기 위한 여러 단계로 구성된 10개의 튜토리얼을 제공합니다. 이 부분에서는 감시 폴더 메커니즘을 사용하여 인쇄 채널 문서를 생성합니다.
 seo-description: 이 튜토리얼은 인쇄 채널용 첫 인터랙티브 커뮤니케이션 문서를 만들기 위한 여러 단계로 구성된 10개의 튜토리얼을 제공합니다. 이 부분에서는 감시 폴더 메커니즘을 사용하여 인쇄 채널 문서를 생성합니다.
 uuid: 9e39f4e3-1053-4839-9338-09961ac54f81
-feature: interactive-communication
+feature: 대화형 통신
 topics: development
 audience: developer
 doc-type: tutorial
@@ -12,11 +12,14 @@ activity: implement
 version: 6.4,6.5
 contentOwner: gbedekar
 discoiquuid: 23fbada3-d776-4b77-b381-22d3ec716ae9
+topic: 개발
+role: 개발자
+level: 초급
 translation-type: tm+mt
-source-git-commit: 449202af47b6bbcd9f860d5c5391d1f7096d489e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 0%
+source-wordcount: '383'
+ht-degree: 1%
 
 ---
 
@@ -29,7 +32,7 @@ ht-degree: 0%
 
 AEM에서 감시 폴더를 구성할 때 파일을 감시 폴더에 드롭할 때 실행되는 ECMA 스크립트 또는 java 코드를 연결합니다. 이 문서에서는 인쇄 채널 문서를 생성하여 파일 시스템에 저장하는 ECMA 스크립트에 중점을 둡니다.
 
-감시 폴더 구성 및 ECMA 스크립트는 이 자습서[의 시작 부분에서 가져온 에셋의 일부입니다](introduction.md)
+감시 폴더 구성 및 ECMA 스크립트는 이 자습서](introduction.md)의 시작 부분에서 가져온 에셋의 일부입니다[
 
 감시 폴더에 드롭된 입력 파일의 구조는 다음과 같습니다. ECMA 스크립트는 계정 번호를 읽고 이러한 각 계정에 대한 인쇄 채널 문서를 생성합니다.
 
