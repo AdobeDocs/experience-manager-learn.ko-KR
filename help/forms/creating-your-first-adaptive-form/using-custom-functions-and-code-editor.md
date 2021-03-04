@@ -4,7 +4,7 @@ seo-title: 함수 및 코드 편집기 사용
 description: 함수 및 코드 편집기를 사용하여 비즈니스 규칙 작성
 seo-description: 함수 및 코드 편집기를 사용하여 비즈니스 규칙 작성
 uuid: 578e91f8-0d93-4192-b7af-1579df2feaf8
-feature: adaptive-forms
+feature: 적응형 양식
 topics: authoring
 audience: developer
 doc-type: tutorial
@@ -13,11 +13,14 @@ version: 6.4,6.5
 discoiquuid: f480ef3e-7e38-4a6b-a223-c102787aea7f
 kt: 4270
 thumbnail: 22282.jpg
+topic: 개발
+role: 개발자
+level: 초급
 translation-type: tm+mt
-source-git-commit: c60a46027cc8d71fddd41aa31dbb569e4df94823
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '150'
-ht-degree: 0%
+source-wordcount: '155'
+ht-degree: 2%
 
 ---
 
