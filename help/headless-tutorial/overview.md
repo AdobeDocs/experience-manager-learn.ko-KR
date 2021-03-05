@@ -6,10 +6,10 @@ topic: 헤드리스, 컨텐츠 관리
 role: 개발자
 level: 초급
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: db9f4d09dcc83f85c8d02d94c383fa456af88c24
 workflow-type: tm+mt
-source-wordcount: '468'
-ht-degree: 4%
+source-wordcount: '438'
+ht-degree: 5%
 
 ---
 
@@ -19,11 +19,6 @@ ht-degree: 4%
 Adobe Experience Manager에는 헤드리스 끝점을 정의하고 콘텐츠를 JSON으로 전달하기 위한 여러 옵션이 있습니다. 실습 위주의 튜토리얼을 통해 다양한 옵션을 사용하여 자신에게 딱 맞는 옵션을 선택하는 방법을 살펴봅니다.
 
 ## AEM GraphQL API 자습서
-
->[!CAUTION]
->
-> 요청에 따라 컨텐츠 조각 전달용 AEM GraphQL API를 사용할 수 있습니다.
-> Cloud Service 프로그램으로 AEM용 API를 활성화하려면 Adobe 지원에 문의하십시오.
 
 컨텐츠 조각용 AEM GraphQL API
 외부 클라이언트 애플리케이션이 AEM에서 관리되는 컨텐츠를 사용하여 경험을 렌더링하는 헤드리스 CMS 시나리오를 지원합니다.
