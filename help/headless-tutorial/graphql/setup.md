@@ -15,9 +15,9 @@ topic: 헤드리스, 컨텐츠 관리
 role: 개발자
 level: 초급
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: db9f4d09dcc83f85c8d02d94c383fa456af88c24
 workflow-type: tm+mt
-source-wordcount: '1828'
+source-wordcount: '1832'
 ht-degree: 1%
 
 ---
@@ -127,11 +127,12 @@ WKND 참조 사이트에는 [GraphQL 끝점](https://experienceleague.adobe.com/
    $ git clone --branch tutorial/react git@github.com:adobe/aem-guides-wknd-graphql.git
    ```
 
-1. 선택한 IDE에서 `aem-guides-wknd-graphql/react-app/.env.development`에 있는 `.env.development` 파일을 엽니다. 파일이 다음과 같이 표시되도록 `REACT_APP_AUTHORIZATION` 줄의 주석을 해제합니다.
+1. 선택한 IDE에서 `aem-guides-wknd-graphql/react-app/.env.development`에 있는 `.env.development` 파일을 엽니다. `REACT_APP_AUTHORIZATION` 행이 주석 처리되지 않았고 파일이 다음과 같은지 확인합니다.
 
    ```plain
    REACT_APP_HOST_URI=http://localhost:4502
    REACT_APP_GRAPHQL_ENDPOINT=/content/graphql/global/endpoint.json
+   # Use Authorization when connecting to an AEM Author environment
    REACT_APP_AUTHORIZATION=admin:admin
    ```
 
@@ -139,7 +140,7 @@ WKND 참조 사이트에는 [GraphQL 끝점](https://experienceleague.adobe.com/
 
    >[!NOTE]
    >
-   > 제작 시나리오에서 앱은 AEM **게시** 환경에 연결됩니다. 자세한 내용은 튜토리얼의 후반부에서 확인하십시오.
+   > 제작 시나리오에서 앱은 AEM **게시** 환경에 연결됩니다. 이 내용은 [프로덕션 배포](production-deployment.md) 장에서 자세히 다룹니다.
 
 1. `aem-guides-wknd-graphql/react-app` 폴더로 이동합니다. 앱을 설치하고 시작합니다.
 
