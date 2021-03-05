@@ -15,9 +15,9 @@ topic: 헤드리스, 컨텐츠 관리
 role: 개발자
 level: 초급
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: cae6e32baa256d4c94fe317eb31cd5163cdae41f
 workflow-type: tm+mt
-source-wordcount: '975'
+source-wordcount: '1027'
 ht-degree: 1%
 
 ---
@@ -44,6 +44,10 @@ ht-degree: 1%
 >[!VIDEO](https://video.tv.adobe.com/v/22452/?quality=12&learn=on)
 
 위의 비디오에서는 컨텐츠 조각 모델을 사용한 작업에 대한 높은 수준의 개요를 제공합니다.
+
+>[!CAUTION]
+>
+> 위의 비디오에서는 **기고자** 모델의 이름을 `Contributors`로 만드는 방법을 보여 줍니다. 자체 환경에서 단계를 수행할 때 제목이 단일 양식을 사용하는지 확인합니다.**s** 없이 `Contributor`. 컨텐츠 조각 모델의 이름은 튜토리얼에서 나중에 수행할 GraphQL API 호출을 유도합니다.
 
 ## Inspect의 모험 컨텐츠 조각 모델
 
