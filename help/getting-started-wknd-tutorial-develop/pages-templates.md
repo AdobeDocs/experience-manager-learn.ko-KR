@@ -16,9 +16,9 @@ topic: 컨텐츠 관리, 개발
 role: 개발자
 level: 초급
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b5b43ae8231bf23e0c53777b1e9c16bcc3fc188a
 workflow-type: tm+mt
-source-wordcount: '3083'
+source-wordcount: '3106'
 ht-degree: 0%
 
 ---
@@ -82,6 +82,10 @@ ht-degree: 0%
 >[!VIDEO](https://video.tv.adobe.com/v/30214/?quality=12&learn=on)
 
 **WKND  [아티클 디자인 파일을 다운로드합니다](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-0.0.2/AEM_UI-kit-WKND-article-design.xd)**.
+
+>[!NOTE]
+>
+> 일반 [AEM 코어 구성 요소 UI 키트도 사용자 지정 프로젝트의 시작점으로 사용할 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/AEM-CoreComponents-UI-Kit.xd).
 
 ## 아티클 페이지 템플릿 만들기
 
