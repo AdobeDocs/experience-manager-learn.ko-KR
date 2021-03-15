@@ -16,9 +16,9 @@ topic: 컨텐츠 관리, 개발
 role: 개발자
 level: 초급
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b11039ef9d373685a4279c01dbd08eb6464acd29
 workflow-type: tm+mt
-source-wordcount: '1895'
+source-wordcount: '1947'
 ht-degree: 4%
 
 ---
@@ -134,6 +134,24 @@ AEM용 Maven 다중 모듈 프로젝트를 만들기 위한 두 가지 옵션이
            |--- pom.xml
            |--- README.md
            |--- .gitignore
+   ```
+
+### 프로젝트 분석 버전 업데이트
+
+>[!CAUTION]
+>
+> 생성된 프로젝트에서 **프로젝트 분석** 버전으로 업데이트해야 하는 [알려진 문제가 원형 버전 25에 있습니다. ](https://github.com/adobe/aem-project-archetype/issues/638) 아래 단계는 `aemVersion="cloud"`로 생성된 프로젝트에 대해서만 **만 필요합니다.**
+
+1. 선호하는 텍스트 편집기를 사용하여 `aem-guides-wknd/poml.xml` 파일을 엽니다.
+1. `aemanalyser.version`을(를) **`0.9.2`**(으)로 업데이트합니다.
+
+   ```diff
+    <properties>
+       ...
+   -   <aemanalyser.version>0.0.18</aemanalyser.version>
+   +   <aemanalyser.version>0.9.2</aemanalyser.version>
+       ...
+    </properties>
    ```
 
 ## 프로젝트 {#build} 배포 및 빌드
