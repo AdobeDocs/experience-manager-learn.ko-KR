@@ -13,7 +13,7 @@ topic: 통합, 개발
 role: 개발자
 level: 중간, 경험
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 53c20b9774c15b04a1c78c7c0c7b61a60996bf60
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 0%
@@ -35,7 +35,7 @@ asset compute 마이크로서비스를 확장하려면 로컬 개발자 컴퓨�
 
    ```
    $ docker pull openwhisk/action-nodejs-v12:latest
-   $ docker pull adobeapiplatform/adobe-action-nodejs-v12:latest
+   $ docker pull adobeapiplatform/adobe-action-nodejs-v12:3.0.22
    ```
 
 1. [Visual Studio 코드 설치](https://code.visualstudio.com/download)
