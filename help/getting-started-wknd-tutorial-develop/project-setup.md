@@ -16,9 +16,9 @@ topic: 컨텐츠 관리, 개발
 role: 개발자
 level: 초급
 translation-type: tm+mt
-source-git-commit: b11039ef9d373685a4279c01dbd08eb6464acd29
+source-git-commit: 600d3e217b93b30cc673af85c1fd1b62ccc37eb1
 workflow-type: tm+mt
-source-wordcount: '1947'
+source-wordcount: '1890'
 ht-degree: 4%
 
 ---
@@ -50,11 +50,11 @@ ht-degree: 4%
 
 ## 프로젝트 {#create} 만들기
 
-AEM용 Maven 다중 모듈 프로젝트를 만들기 위한 두 가지 옵션이 있습니다. 이 자습서에서는 [Maven AEM 프로젝트 원형 **25**](https://github.com/adobe/aem-project-archetype)을(를) 활용합니다. 또한 Cloud Manager는 AEM 응용 프로그램 프로젝트 생성을 시작하는 UI 마법사](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/getting-started/create-an-application-project.html)도 제공합니다. [ Cloud Manager UI에서 생성된 기본 프로젝트는 원형 유형을 직접 사용하는 구조와 동일한 구조를 갖게 됩니다.
+AEM용 Maven 다중 모듈 프로젝트를 만들기 위한 두 가지 옵션이 있습니다. 이 자습서에서는 [Maven AEM 프로젝트 원형 **26**](https://github.com/adobe/aem-project-archetype)을(를) 활용합니다. 또한 Cloud Manager는 AEM 응용 프로그램 프로젝트 생성을 시작하는 UI 마법사](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/getting-started/create-an-application-project.html)도 제공합니다. [ Cloud Manager UI에서 생성된 기본 프로젝트는 원형 유형을 직접 사용하는 구조와 동일한 구조를 갖게 됩니다.
 
 >[!NOTE]
 >
->이 자습서에서는 원형 버전의 **25**&#x200B;을 사용합니다. 새 프로젝트를 생성하기 위해 기본적으로 **최신** 버전을 사용하는 것이 좋습니다.
+>이 자습서에서는 원형 버전의 **26**&#x200B;을 사용합니다. 새 프로젝트를 생성하기 위해 기본적으로 **최신** 버전을 사용하는 것이 좋습니다.
 
 다음 일련의 단계는 UNIX 기반 명령줄 터미널을 사용하여 수행되지만 Windows 터미널을 사용하는 경우 비슷해야 합니다.
 
@@ -100,7 +100,7 @@ AEM용 Maven 다중 모듈 프로젝트를 만들기 위한 두 가지 옵션이
    mvn -B archetype:generate \
        -D archetypeGroupId=com.adobe.aem \
        -D archetypeArtifactId=aem-project-archetype \
-       -D archetypeVersion=25 \
+       -D archetypeVersion=26 \
        -D appTitle="WKND Sites Project" \
        -D appId="wknd" \
        -D groupId="com.adobe.aem.guides.wknd" \
@@ -111,7 +111,7 @@ AEM용 Maven 다중 모듈 프로젝트를 만들기 위한 두 가지 옵션이
 
    >[!NOTE]
    >
-   > AEM 6.5.5.0+ 또는 6.4.8.1+을 사용하는 경우 `aemVersion="cloud"`을(를) 대상 버전의 AEM(예: `aemVersion="6.5.5"` 또는 `aemVersion="6.4.8.1"`)로 교체합니다.
+   > AEM 6.5.5+을 타깃팅하는 경우 `aemVersion="cloud"`을 `aemVersion="6.5.5"`으로 바꿉니다. 6.4.8+을 타깃팅하는 경우 `aemVersion="6.4.8"`을(를) 사용합니다.
 
    프로젝트 [을(를) 구성하는 데 사용할 수 있는 속성의 전체 목록은](https://github.com/adobe/aem-project-archetype#available-properties)에서 찾을 수 있습니다.
 
@@ -134,24 +134,6 @@ AEM용 Maven 다중 모듈 프로젝트를 만들기 위한 두 가지 옵션이
            |--- pom.xml
            |--- README.md
            |--- .gitignore
-   ```
-
-### 프로젝트 분석 버전 업데이트
-
->[!CAUTION]
->
-> 생성된 프로젝트에서 **프로젝트 분석** 버전으로 업데이트해야 하는 [알려진 문제가 원형 버전 25에 있습니다. ](https://github.com/adobe/aem-project-archetype/issues/638) 아래 단계는 `aemVersion="cloud"`로 생성된 프로젝트에 대해서만 **만 필요합니다.**
-
-1. 선호하는 텍스트 편집기를 사용하여 `aem-guides-wknd/poml.xml` 파일을 엽니다.
-1. `aemanalyser.version`을(를) **`0.9.2`**(으)로 업데이트합니다.
-
-   ```diff
-    <properties>
-       ...
-   -   <aemanalyser.version>0.0.18</aemanalyser.version>
-   +   <aemanalyser.version>0.9.2</aemanalyser.version>
-       ...
-    </properties>
    ```
 
 ## 프로젝트 {#build} 배포 및 빌드
