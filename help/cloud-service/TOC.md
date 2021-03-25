@@ -5,10 +5,10 @@ breadcrumb-title: AEM as a Cloud Service 튜토리얼
 sub-product: 클라우드 서비스
 team: TM
 translation-type: tm+mt
-source-git-commit: 59b786d95d1428916adad37ceca4412b93463e9b
+source-git-commit: d9799acb28dfc3c9767374798828754d5a50831f
 workflow-type: tm+mt
-source-wordcount: '329'
-ht-degree: 24%
+source-wordcount: '353'
+ht-degree: 23%
 
 ---
 
@@ -83,6 +83,15 @@ ht-degree: 24%
 + 마이그레이션 {#migration}
    + [컨텐츠 전송 도구](./migration/content-transfer-tool.md)
    + [자산의 일괄 가져오기](./migration/bulk-import.md)
++ 양식{#forms}
+   + [Salesforce와 통합]{#integrate-with-salesforce}
+      + [소개](./forms/integrate-with-salesforce/introduction.md)
+      + [연결된 앱 만들기](./forms/integrate-with-salesforce/create-connected-app.md)
+      + [Swagger 파일 만들기](./forms/integrate-with-salesforce/describe-rest-api.md)
+      + [데이터 소스 만들기](./forms/integrate-with-salesforce/create-data-source.md)
+      + [양식 데이터 모델 만들기](./forms/integrate-with-salesforce/create-form-data-model.md)
+      + [테스트 양식 제출](./forms/integrate-with-salesforce/create-lead-submitting-form.md)
+      + [클릭 이벤트 테스트](./forms/integrate-with-salesforce/create-lead-click-event.md)
 + asset compute 확장성{#asset-compute}
    + [개요](./asset-compute/overview.md)
    + {#set-up} 설정
@@ -111,4 +120,3 @@ ht-degree: 24%
    + [SPA 편집기(Angular)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-angular-tutorial/overview.html)
    + [AEM Sites 및 Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html)
    + [토큰 기반 인증](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)
-
