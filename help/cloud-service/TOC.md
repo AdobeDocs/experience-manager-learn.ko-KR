@@ -5,10 +5,10 @@ breadcrumb-title: AEM as a Cloud Service 튜토리얼
 sub-product: 클라우드 서비스
 team: TM
 translation-type: tm+mt
-source-git-commit: d9799acb28dfc3c9767374798828754d5a50831f
+source-git-commit: 27f21bb9c1b905a2100a5013fe3b75760b9d6821
 workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 23%
+source-wordcount: '413'
+ht-degree: 22%
 
 ---
 
@@ -84,7 +84,26 @@ ht-degree: 23%
    + [컨텐츠 전송 도구](./migration/content-transfer-tool.md)
    + [자산의 일괄 가져오기](./migration/bulk-import.md)
 + 양식{#forms}
-   + [Salesforce와 통합]{#integrate-with-salesforce}
+   + 응용 양식 만들기{#create-first-af}
+      + [테마 만들기](./forms/create-first-af/create-theme.md)
+      + [템플릿 만들기](./forms/create-first-af/create-template.md)
+      + [조각 만들기](./forms/create-first-af/create-fragments.md)
+      + [양식 만들기](./forms/create-first-af/create-af.md)
+      + [루트 패널 구성](./forms/create-first-af/configure-root-panel.md)
+      + [인물 패널 구성](./forms/create-first-af/configure-people-panel.md)
+      + [소득 패널 구성](./forms/create-first-af/configure-income-panel.md)
+      + [에셋 패널 구성](./forms/create-first-af/configure-assets-panel.md)
+      + [시작 패널 구성](./forms/create-first-af/configure-start-panel.md)
+      + [도구 모음 추가 및 구성](./forms/create-first-af/add-configure-toolbar.md)
+   + 검토 워크플로 만들기{#create-aem-workflow}
+      + [워크플로우 모델 만들기](./forms/create-aem-workflow/create-workflow.md)
+      + [트리거 워크플로우](./forms/create-aem-workflow/configure-af.md)
+   + Adobe Sign과 AEM Forms{forms-and-sign}
+      + [Adobe Sign API 응용 프로그램](./forms/forms-and-sign/create-sign-api-application.md)
+      + [Adobe Sign 클라우드 구성](./forms/forms-and-sign/create-adobe-sign-cloud-configuration.md)
+      + [적응형 양식 만들기](./forms/forms-and-sign/create-adaptive-form.md)
+      + [채우기 및 서명 구성](./forms/forms-and-sign/configure-form-fill-and-sign.md)
+   + Salesforce와 통합{#integrate-with-salesforce}
       + [소개](./forms/integrate-with-salesforce/introduction.md)
       + [연결된 앱 만들기](./forms/integrate-with-salesforce/create-connected-app.md)
       + [Swagger 파일 만들기](./forms/integrate-with-salesforce/describe-rest-api.md)
