@@ -1,7 +1,7 @@
 ---
 title: Salesforce 연결 앱 만들기
 description: 긴밀하게 연결된 앱을 사용하면 Salesforce를 AEM Forms과 같은 제3자 애플리케이션과 Salesforce에 통합할 수 있습니다.
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 type: 설명서
 role: 개발자
 level: 초급, 중급
@@ -11,7 +11,7 @@ topic: 개발
 kt: 7152
 thumbnail: 331757.jpg
 translation-type: tm+mt
-source-git-commit: d9799acb28dfc3c9767374798828754d5a50831f
+source-git-commit: 1b4512fdb047bec15d72a8278fd0ce5dfafa309f
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 4%
