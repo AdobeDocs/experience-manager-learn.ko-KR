@@ -15,9 +15,9 @@ topic: 개발
 role: 개발자
 level: 중간
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 67be45dbd72a8af8b9ab60452ff15081c6f9f192
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '613'
 ht-degree: 1%
 
 ---
@@ -29,10 +29,9 @@ AEM Forms에서 출력 및 Forms 서비스 API 사용
 
 이 문서에서는 다음 사항을 살펴보겠습니다.
 
-* 출력 서비스 - 일반적으로 이 서비스는 xml 데이터를 xdp 템플릿 또는 pdf와 병합하여 병합된 pdf를 생성하는 데 사용됩니다
-* FormsService - PDF 파일에서 데이터를 가져오거나 내보낼 수 있는 다목적 서비스입니다
+* 출력 서비스 - 일반적으로 이 서비스는 xml 데이터를 xdp 템플릿 또는 pdf와 병합하여 병합된 pdf를 생성하는 데 사용됩니다. 자세한 내용은 출력 서비스에 대한 [javadoc](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html)을 참조하십시오.
+* FormsService - PDF 파일에서 데이터를 가져오거나 내보낼 수 있는 다양한 서비스입니다. 자세한 내용은 Forms 서비스에 대한 [javadoc](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/forms/api/class-use/FormsService.html)을 참조하십시오.
 
-AEM Forms API에 대한 공식 javadoc는 [여기에](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/package-summary.html) 나열됩니다.
 
 다음 코드 조각은 PDF 파일의 데이터를 내보냅니다
 
