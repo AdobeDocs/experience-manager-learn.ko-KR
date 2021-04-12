@@ -5,7 +5,7 @@ breadcrumb-title: AEM as a Cloud Service 튜토리얼
 sub-product: 클라우드 서비스
 team: TM
 translation-type: tm+mt
-source-git-commit: 27f21bb9c1b905a2100a5013fe3b75760b9d6821
+source-git-commit: cb4f678be79ad39110cc199b8c66349f311a431d
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 22%
@@ -85,6 +85,7 @@ ht-degree: 22%
    + [자산의 일괄 가져오기](./migration/bulk-import.md)
 + 양식{#forms}
    + 응용 양식 만들기{#create-first-af}
+      + [소개](./forms/create-first-af/introduction.md)
       + [테마 만들기](./forms/create-first-af/create-theme.md)
       + [템플릿 만들기](./forms/create-first-af/create-template.md)
       + [조각 만들기](./forms/create-first-af/create-fragments.md)
@@ -98,7 +99,7 @@ ht-degree: 22%
    + 검토 워크플로 만들기{#create-aem-workflow}
       + [워크플로우 모델 만들기](./forms/create-aem-workflow/create-workflow.md)
       + [트리거 워크플로우](./forms/create-aem-workflow/configure-af.md)
-   + Adobe Sign과 AEM Forms{forms-and-sign}
+   + Adobe Sign with AEM Forms{#forms-and-sign}
       + [Adobe Sign API 응용 프로그램](./forms/forms-and-sign/create-sign-api-application.md)
       + [Adobe Sign 클라우드 구성](./forms/forms-and-sign/create-adobe-sign-cloud-configuration.md)
       + [적응형 양식 만들기](./forms/forms-and-sign/create-adaptive-form.md)
