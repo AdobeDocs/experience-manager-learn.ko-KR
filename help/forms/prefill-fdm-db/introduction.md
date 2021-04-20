@@ -1,21 +1,20 @@
 ---
 title: 양식 데이터 모델을 사용하여 양식 미리 채우기
 description: '양식 데이터 모델의 요청 속성을 사용하여 적응형 양식 미리 채우기 '
-feature: Adaptive Forms
-topics: development
+feature: 적응형 양식
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
 kt: 4419
-thumbnail: kt-4419.jpg
-topic: Development
+thumbnail: 36387.jpg
+topic: 개발
 role: Business Practitioner
 level: Intermediate
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 98cfc9e007770e7a8291343bdd63fd523f747bb9
 workflow-type: tm+mt
-source-wordcount: '131'
+source-wordcount: '128'
 ht-degree: 3%
 
 ---
