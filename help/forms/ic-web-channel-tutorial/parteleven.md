@@ -4,16 +4,16 @@ seo-title: 투자 혼합 패널 구성
 description: 첫 번째 인터랙티브 커뮤니케이션 문서를 만들기 위한 여러 단계로 구성된 자습서의 11부분입니다. 이 부분에서는 현재 및 모델 투자 조합을 표시하는 파이 차트를 추가하겠습니다.
 seo-description: 첫 번째 인터랙티브 커뮤니케이션 문서를 만들기 위한 여러 단계로 구성된 자습서의 11부분입니다. 이 부분에서는 현재 및 모델 투자 조합을 표시하는 파이 차트를 추가하겠습니다.
 uuid: b0132912-cb6e-4dec-8309-5125d29ad291
-feature: 대화형 통신
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 discoiquuid: 77de4e76-53ee-467c-a71c-d1d3ea15283b
-topic: 개발
-role: 개발자
-level: 초급
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

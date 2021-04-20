@@ -3,7 +3,7 @@ title: API를 사용하여 AEM Forms에서 기록 문서 생성
 seo-title: API를 사용하여 AEM Forms에서 기록 문서 생성
 description: 프로그래밍 방식으로 기록 문서(DOR) 생성
 seo-description: API를 사용하여 AEM Forms에서 기록 문서 생성
-feature: 적응형 양식
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: article
@@ -11,9 +11,9 @@ activity: implement
 version: 6.4,6.5
 uuid: 94ac3b13-01b4-4198-af81-e5609c80324c
 discoiquuid: ba91d9df-dc61-47d8-8e0a-e3f66cae6a87
-topic: 개발
-role: 개발자
-level: 경험
+topic: Development
+role: Developer
+level: Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

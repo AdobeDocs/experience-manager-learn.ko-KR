@@ -3,15 +3,15 @@ title: 사용자 지정 프로세스 단계 구현
 seo-title: 사용자 지정 프로세스 단계 구현
 description: 사용자 정의 프로세스 단계를 사용하여 파일 시스템에 적응형 양식 첨부 파일 작성
 seo-description: 사용자 정의 프로세스 단계를 사용하여 파일 시스템에 적응형 양식 첨부 파일 작성
-feature: 워크플로우
+feature: Workflow
 topics: development
 audience: developer
 doc-type: tutorial
 activity: understand
 version: 6.5
-topic: 개발
-role: 개발자
-level: 경험
+topic: Development
+role: Developer
+level: Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

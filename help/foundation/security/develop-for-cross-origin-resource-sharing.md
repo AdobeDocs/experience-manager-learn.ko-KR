@@ -7,10 +7,10 @@ topics: security, development, content-delivery
 activity: develop
 audience: developer
 doc-type: tutorial
-topic: 보안
-role: 개발자
-level: 초급
-feature: null
+topic: Security
+role: Developer
+level: Beginner
+feature:  
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

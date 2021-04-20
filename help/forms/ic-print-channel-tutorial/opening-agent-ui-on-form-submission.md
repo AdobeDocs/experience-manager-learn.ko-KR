@@ -4,7 +4,7 @@ seo-title: POST 제출 시 에이전트 UI 열기
 description: 이 튜토리얼은 인쇄 채널용 첫 인터랙티브한 커뮤니케이션 문서를 만들기 위한 여러 단계로 구성된 자습서의 11부분입니다. 이 부분에서는 양식 제출 시 애드혹 메시지를 만들기 위한 에이전트 ui 인터페이스를 시작합니다.
 seo-description: 이 튜토리얼은 인쇄 채널용 첫 인터랙티브한 커뮤니케이션 문서를 만들기 위한 여러 단계로 구성된 자습서의 11부분입니다. 이 부분에서는 양식 제출 시 애드혹 메시지를 만들기 위한 에이전트 ui 인터페이스를 시작합니다.
 uuid: 96f34986-a5c3-400b-b51b-775da5d2cbd7
-feature: 대화형 통신
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: tutorial
@@ -12,9 +12,9 @@ activity: implement
 version: 6.4,6.5
 kt: 6168
 thumbnail: 40122.jpg
-topic: 개발
-role: 개발자
-level: 중간
+topic: Development
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

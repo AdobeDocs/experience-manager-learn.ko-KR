@@ -2,12 +2,12 @@
 title: 간단한 적응형 양식 만들기
 description: 첫 번째 적응형 양식 만들기에 대한 교육 과정 소개 비디오
 solution: Experience Manager Forms
-type: 설명서
-role: 개발자
-level: 초급, 중급
+type: Documentation
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: 적응형 양식
-topic: 개발
+feature: Adaptive Forms
+topic: Development
 kt: 7464
 thumbnail: 332571.jpg
 translation-type: tm+mt

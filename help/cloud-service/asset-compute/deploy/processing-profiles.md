@@ -1,7 +1,7 @@
 ---
 title: asset compute 직원과 AEM 처리 프로필 통합
 description: Cloud Service으로 AEM은 AEM Assets 처리 프로필을 통해 Adobe I/O Runtime에 배포된 Asset compute 근로자와 통합됩니다. 처리 프로필은 사용자 지정 작업자를 사용하여 특정 자산을 처리하고 작업자가 생성한 파일을 자산 표현물로 저장하도록 작성자 서비스에 구성됩니다.
-feature: asset compute 마이크로서비스
+feature: Asset Compute Microservices
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,9 +9,9 @@ audience: developer
 doc-type: tutorial
 kt: 6287
 thumbnail: KT-6287.jpg
-topic: 통합, 개발
-role: 개발자
-level: 중간, 경험
+topic: Integrations, Development
+role: Developer
+level: Intermediate, Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

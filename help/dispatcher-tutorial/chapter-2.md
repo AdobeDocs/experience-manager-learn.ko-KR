@@ -2,9 +2,9 @@
 title: '"2장 - 발송자 인프라"'
 description: 게시 및 디스패처 토폴로지를 이해합니다. 가장 일반적인 토폴로지 및 설정에 대해 알아봅니다.
 feature: Dispatcher
-topic: 아키텍처
-role: 건축가
-level: 초급
+topic: Architecture
+role: Architect
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

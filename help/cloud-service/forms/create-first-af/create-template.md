@@ -2,12 +2,12 @@
 title: 적응형 양식 템플릿 만들기
 description: 적응형 양식 템플릿은 적응형 양식의 구조와 초기 컨텐츠를 정의합니다.
 solution: Experience Manager Forms
-type: 설명서
-role: 개발자
-level: 초급, 중급
+type: Documentation
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: 적응형 양식
-topic: 개발
+feature: Adaptive Forms
+topic: Development
 kt: 7382
 thumbnail: 332223.jpg
 translation-type: tm+mt

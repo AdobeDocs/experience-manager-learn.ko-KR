@@ -5,8 +5,8 @@ type: Documentation
 role: Developer
 level: Beginner, Intermediate
 version: cloud-service
-feature: 적응형 양식
-topic: 개발
+feature: Adaptive Forms
+topic: Development
 kt: 7431
 thumbnail: 332438.jpg
 translation-type: tm+mt

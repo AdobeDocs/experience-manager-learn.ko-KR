@@ -2,15 +2,15 @@
 title: 컨텐츠 조각 및 경험 조각 이해
 description: Adobe Experience Manager의 컨텐츠 조각 및 경험 조각은 표면에서 비슷해 보일 수 있지만 각 컨텐츠 조각은 다른 사용 사례에서 주요 역할을 수행합니다. 컨텐츠 조각 및 경험 조각의 유사성, 차이점, 각 조각 사용 시기 및 방법에 대해 알아봅니다.
 sub-product: 자산, 사이트, 콘텐츠 서비스
-feature: 컨텐츠 조각, 경험 조각
+feature: Content Fragments, Experience Fragments
 topics: headless
 version: 6.3, 6.4, 6.5
 doc-type: article
 activity: understand
 audience: all
-topic: 컨텐츠 관리
-role: 비즈니스 전문가
-level: 초급
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -4,7 +4,7 @@ seo-title: 인쇄 채널용 인터랙티브한 커뮤니케이션 제작
 description: 인쇄 채널용 첫 번째 대화형 통신 문서를 만들기 위한 여러 부분으로 구성된 자습서의 6부분입니다. 이 부분에서는 인쇄 채널용 대화형 통신 문서가 만들어집니다.
 seo-description: 인쇄 채널용 첫 번째 대화형 통신 문서를 만들기 위한 여러 부분으로 구성된 자습서의 6부분입니다. 이 부분에서는 인쇄 채널용 대화형 통신 문서가 만들어집니다.
 uuid: 25318a2a-be9d-47d8-806b-d99c8e1c6a74
-feature: 대화형 통신
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: tutorial
@@ -13,9 +13,9 @@ version: 6.4,6.5
 discoiquuid: 6e3f9c8c-8ec4-4084-bf35-1c97a5b463f1
 kt: 5972
 thumbnail: 37888.jpg
-topic: 개발
-role: 개발자
-level: 초급
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -4,16 +4,16 @@ seo-title: 감사 인사 페이지에 제출
 description: 적응형 양식 제출 시 감사 인사 페이지 표시
 seo-description: 적응형 양식 제출 시 감사 인사 페이지 표시
 uuid: ec695b87-083a-47f6-92ac-c9a6dc2b85fb
-feature: 적응형 양식
+feature: Adaptive Forms
 topics: developing
 audience: implementer
 doc-type: article
 activity: setup
 version: 6.3,6.4,6.5
 discoiquuid: 58c6bf42-efe5-41a3-8023-d84f3675f689
-topic: 개발
-role: 개발자
-level: 초급
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

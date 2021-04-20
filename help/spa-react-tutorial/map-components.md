@@ -2,7 +2,7 @@
 title: SPA 구성 요소를 AEM 구성 요소에 매핑 | AEM SPA 편집기 시작 및 반응
 description: AEM SPA Editor JS SDK를 사용하여 AEM(Adobe Experience Manager) 구성 요소에 반응형 구성 요소를 매핑하는 방법을 알아봅니다. 구성 요소 매핑을 사용하면 AEM SPA Editor 내에서 SPA 구성 요소에 대한 동적 업데이트를 일반적인 AEM 작성과 유사합니다.
 sub-product: 사이트
-feature: SPA 편집기
+feature: SPA Editor
 topics: development
 version: cloud-service
 activity: develop
@@ -10,8 +10,8 @@ audience: developer
 kt: 4854
 thumbnail: 4854-spa-react.jpg
 topic: SPA
-role: 개발자
-level: 초급
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -1,7 +1,7 @@
 ---
 title: CRXDE Lite
 description: 'CRXDE Lite은 Cloud Service 개발자 환경으로 AEM을 디버깅하기 위한 클래식하면서도 강력한 툴입니다. CRXDE Lite은 모든 리소스와 속성을 검사하는 디버깅을 지원하고 JCR의 변경 가능한 부분을 조작하며 권한을 조사하는 기능을 제공합니다. '
-feature: 개발자 도구
+feature: Developer Tools
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -9,9 +9,9 @@ activity: develop
 audience: developer
 kt: KT-5481
 thumbnail: kt-5481.jpg
-topic: 개발
-role: 개발자
-level: 초급
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

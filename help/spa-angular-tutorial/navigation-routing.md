@@ -2,7 +2,7 @@
 title: 내비게이션 및 라우팅 추가 | AEM SPA 편집기 및 Angular 시작하기
 description: AEM 페이지 및 SPA 편집기 SDK를 사용하여 SPA에서 여러 보기가 지원되는 방법을 살펴봅니다. 동적 탐색은 Angular 경로를 사용하여 구현되고 기존 헤더 구성 요소에 추가됩니다.
 sub-product: 사이트
-feature: SPA 편집기
+feature: SPA Editor
 topics: development
 doc-type: tutorial
 version: cloud-service
@@ -11,8 +11,8 @@ audience: developer
 kt: 5312
 thumbnail: 5312-spa-angular.jpg
 topic: SPA
-role: 개발자
-level: 초급
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

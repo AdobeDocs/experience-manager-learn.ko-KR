@@ -1,15 +1,15 @@
 ---
 title: AEM의 번역 개선 사항
 description: AEM의 강력한 번역 프레임워크를 사용하면 지원되는 번역 업체에 의해 AEM 컨텐츠를 원활하게 변환할 수 있습니다. 최신 개선 사항에 대해 알아보십시오.
-feature: multi-site-manager, 언어 복사
+feature: multi-site-manager, language-copy
 topics: localization, authoring, content-architecture
 audience: author, marketer, developer
 doc-type: feature video
 activity: use
 version: 6.3, 6.4, 6.5
-topic: 로컬라이제이션
-role: 비즈니스 전문가
-level: 초급
+topic: Localization
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

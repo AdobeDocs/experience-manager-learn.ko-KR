@@ -2,14 +2,14 @@
 title: 이미지, 견본, 회전 및 혼합 미디어 집합
 description: Dynamic Media Classic의 가장 유용하고 강력한 기능 중 하나는 이미지, 견본, 회전 및 혼합 미디어 세트와 같은 리치 미디어 세트를 만들 수 있다는 것입니다. 각 리치 미디어 세트가 무엇이고 Dynamic Media Classic에서 각 유형을 만드는 방법을 알아봅니다. 업로드 시 리치 미디어 세트 생성 프로세스를 자동화하는 일괄 세트 사전 설정에 대해 자세히 알아보십시오.
 sub-product: dynamic-media
-feature: Dynamic Media Classic, 이미지 세트, 믹스 미디어 세트, 스핀 세트
+feature: Dynamic Media Classic, Image Sets, Mix Media Sets, Spin Sets
 doc-type: tutorial
 topics: sets, development, authoring, configuring
 audience: all
 activity: use
-topic: 컨텐츠 관리
-role: 비즈니스 전문가
-level: 초급
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

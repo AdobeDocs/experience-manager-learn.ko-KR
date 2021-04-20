@@ -2,11 +2,11 @@
 title: Adobe Analytics 및 Adobe 론치에서 Dynamic Media 뷰어 사용
 description: Dynamic Media Viewers 5.13 릴리스와 함께 Adobe Launch용 Dynamic Media Viewers 확장을 사용하면 Dynamic Media, Adobe Analytics 및 Adobe Launch 고객은 Adobe Launch 구성에서 Dynamic Media Viewer에 고유한 이벤트 및 데이터를 사용할 수 있습니다.
 sub-product: 다이내믹 미디어
-feature: 자산 통찰력
+feature: Asset Insights
 version: 6.3, 6.4, 6.5
-topic: 컨텐츠 관리
-role: 비즈니스 전문가
-level: 초급
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

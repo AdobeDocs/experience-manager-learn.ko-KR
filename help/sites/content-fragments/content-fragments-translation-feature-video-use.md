@@ -1,10 +1,10 @@
 ---
 title: AEM 컨텐츠 조각에 대한 번역 지원
 description: 컨텐츠 조각을 Adobe Experience Manager으로 현지화 및 변환하는 방법을 알아봅니다. 컨텐츠 조각과 연관된 혼합 미디어 자산도 추출하여 변환할 수 있습니다.
-feature: 컨텐츠 조각, 다중 사이트 관리자
-topic: 로컬라이제이션
-role: 비즈니스 전문가
-level: 중간
+feature: Content Fragments, Multi Site Manager
+topic: Localization
+role: Business Practitioner
+level: Intermediate
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 201
 thumbnail: 18131.jpg

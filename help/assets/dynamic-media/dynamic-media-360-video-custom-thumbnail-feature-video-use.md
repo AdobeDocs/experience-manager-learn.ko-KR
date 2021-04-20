@@ -2,11 +2,11 @@
 title: AEM Assets에서 Dynamic Media 360 비디오 및 사용자 정의 비디오 축소판 사용
 description: AEM 6.5의 Dynamic Media 뷰어 개선 사항에는 360개 비디오 렌더링 지원, 360개의 미디어 뷰어(video360Social 및 video360VR) 지원 추가, 사용자 정의 비디오 축소판 선택 기능이 포함되어 있습니다.
 sub-product: dynamic-media
-feature: 비디오 프로필
+feature: Video Profiles
 version: 6.3, 6.4, 6.5
-topic: 컨텐츠 관리
-role: 비즈니스 전문가
-level: 초급
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

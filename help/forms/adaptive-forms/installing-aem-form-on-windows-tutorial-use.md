@@ -4,16 +4,16 @@ seo-title: Windows에서 AEM Forms 설치를 위한 간단한 단계
 description: Windows에 AEM Forms을 설치하는 빠르고 간편한 단계
 seo-description: Windows에 AEM Forms을 설치하는 빠르고 간편한 단계
 uuid: a148b8f0-83db-47f6-89d3-c8a9961be289
-feature: 적응형 양식
+feature: Adaptive Forms
 topics: administration
 audience: developer
 doc-type: article
 activity: setup
 version: 6.4,6.5
 discoiquuid: 1182ef4d-5838-433b-991d-e24ab805ae0e
-topic: 개발
-role: 개발자
-level: 초급
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

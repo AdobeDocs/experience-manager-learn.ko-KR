@@ -4,16 +4,16 @@ seo-title: 'JSON 웹 토큰 및 액세스 토큰 생성 '
 description: 이 문서에서는 Adobe Campaign Standard에 대한 REST 호출을 수행하는 데 필요한 JWT 및 액세스 토큰을 생성하는 데 필요한 코드에 대해 설명합니다
 seo-description: 이 문서에서는 Adobe Campaign Standard에 대한 REST 호출을 수행하는 데 필요한 JWT 및 액세스 토큰을 생성하는 데 필요한 코드에 대해 설명합니다
 uuid: 5b780eee-1e7c-4e1c-a164-49ce64939b91
-feature: 적응형 Forms, 양식 데이터 모델
+feature: Adaptive Forms, Form Data Model
 topics: integrations
 audience: developer
 doc-type: tutorial
 activity: setup
 version: 6.3,6.4,6.5
 discoiquuid: cc268946-a7e4-42b3-bfad-5509e215871a
-topic: 개발
-role: 개발자
-level: 경험
+topic: Development
+role: Developer
+level: Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

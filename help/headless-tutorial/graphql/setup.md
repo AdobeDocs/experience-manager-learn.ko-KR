@@ -10,10 +10,10 @@ audience: developer
 mini-toc-levels: 1
 kt: 6386
 thumbnail: KT-6386.jpg
-feature: 컨텐츠 조각, GraphQL API
-topic: 헤드리스, 컨텐츠 관리
-role: 개발자
-level: 초급
+feature: Content Fragments, GraphQL APIs
+topic: Headless, Content Management
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: db9f4d09dcc83f85c8d02d94c383fa456af88c24
 workflow-type: tm+mt

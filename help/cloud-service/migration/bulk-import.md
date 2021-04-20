@@ -4,14 +4,14 @@ description: AEM의 벌크 가져오기 도구를 Cloud Service으로 사용하�
 version: cloud-service
 doc-type: technical-video
 topics: Migration
-feature: 마이그레이션
+feature: Migration
 activity: develop
 audience: developer
 kt: 6729
 thumbnail: 329680.jpg
-topic: 마이그레이션
-role: 건축가, 개발자
-level: 초급
+topic: Migration
+role: Architect, Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

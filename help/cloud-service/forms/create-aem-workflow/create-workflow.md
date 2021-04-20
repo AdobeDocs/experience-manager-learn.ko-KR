@@ -2,12 +2,12 @@
 title: AEM 워크플로우 만들기
 description: 비즈니스 프로세스를 모방할 워크플로우 모델을 만들 수 있습니다.
 solution: Experience Manager Forms
-type: 설명서
-role: 개발자
-level: 초급, 중급
+type: Documentation
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: 적응형 양식
-topic: 개발
+feature: Adaptive Forms
+topic: Development
 kt: 7424
 thumbnail: 332434.pg
 translation-type: tm+mt

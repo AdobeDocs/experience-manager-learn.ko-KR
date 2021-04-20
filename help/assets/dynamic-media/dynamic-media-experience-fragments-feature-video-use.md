@@ -2,11 +2,11 @@
 title: AEM Assets Dynamic Media에서 경험 조각 사용
 description: AEM Assets Dynamic Media은 인터랙티브 미디어 뷰어를 통해 에셋 핫스팟과 경험 조각을 통합합니다. 마케터는 경험 조각을 텍스트, 이미지 및 링크로 제작하여 사용자 지정 팝업을 채우고 해당 팝업을 배너, Carousel 또는 비디오의 핫스팟에 연결할 수 있습니다.
 sub-product: dynamic-media, content-services
-feature: 경험 구성요소
+feature: Experience Fragments
 version: 6.3, 6.4, 6.5
-topic: 컨텐츠 관리
-role: 비즈니스 전문가
-level: 초급
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -1,7 +1,7 @@
 ---
 title: 프로세스를 트리거할 초기 양식 만들기
 description: 서명 프로세스를 시작하기 위해 이메일 알림을 트리거하는 초기 양식을 만듭니다.
-feature: 적응형 양식
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,9 +9,9 @@ activity: implement
 version: 6.4,6.5
 kt: 6892
 thumbnail: 6892.jpg
-topic: 개발
-role: 비즈니스 전문가
-level: 중간
+topic: Development
+role: Business Practitioner
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

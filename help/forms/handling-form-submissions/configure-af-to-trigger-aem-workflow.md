@@ -4,15 +4,15 @@ seo-title: AEM Workflow를 트리거하는 적응형 양식 구성
 description: AEM Workflow를 트리거하는 적응형 양식 구성의 다양한 옵션 이해
 seo-description: AEM Workflow를 트리거하는 적응형 양식 구성의 다양한 옵션 이해
 sub-product: 양식
-feature: 워크플로우
+feature: Workflow
 topics: integrations
 audience: developer
 doc-type: technical video
 activity: setup
 version: 6.4,6.5
-topic: 개발
-role: 개발자
-level: 초급
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

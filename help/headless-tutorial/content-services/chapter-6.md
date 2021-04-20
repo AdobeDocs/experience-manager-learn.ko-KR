@@ -1,10 +1,10 @@
 ---
 title: 6장 - AEM 게시에서 JSON으로 컨텐츠 노출 - 컨텐츠 서비스
 description: AEM 헤드리스 자습서의 6장에서는 모바일 앱의 소비를 허용하기 위해 필요한 모든 패키지, 구성 및 컨텐츠를 AEM Publish에 포함시키는 내용을 다룹니다.
-feature: 컨텐츠 조각, API
-topic: 헤드리스, 컨텐츠 관리
-role: 개발자
-level: 초급
+feature: Content Fragments, APIs
+topic: Headless, Content Management
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

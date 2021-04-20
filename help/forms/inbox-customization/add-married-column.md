@@ -1,16 +1,16 @@
 ---
 title: 받은 편지함 사용자 정의
 description: 사용자 정의 열을 추가하여 워크플로우의 추가 데이터 표시
-feature: 적응형 양식
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.5.5
 kt: 5830
-topic: 개발
-role: 개발자
-level: 경험
+topic: Development
+role: Developer
+level: Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

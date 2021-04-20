@@ -2,9 +2,9 @@
 title: 로컬 AEM에서 자산 공유 공유물 설정
 description: 자산 공유를 위한 기능 및 기술적 이해를 위한 자료
 version: 6.3, 6.4, 6.5
-topic: 컨텐츠 관리
-role: 개발자
-level: 중간
+topic: Content Management
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

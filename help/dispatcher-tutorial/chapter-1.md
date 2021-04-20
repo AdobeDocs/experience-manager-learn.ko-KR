@@ -2,9 +2,9 @@
 title: '"1장 - 발송자 개념, 패턴 및 안티패턴"'
 description: 이 장에서는 Dispatcher의 작업 내역과 구조에 대한 간단한 설명을 제공하며 AEM 개발자가 구성 요소를 디자인하는 방식에 미치는 영향을 설명합니다.
 feature: Dispatcher
-topic: 아키텍처
-role: 건축가
-level: 초급
+topic: Architecture
+role: Architect
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

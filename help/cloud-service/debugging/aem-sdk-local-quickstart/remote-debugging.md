@@ -1,16 +1,16 @@
 ---
 title: AEM SDK의 원격 디버깅
 description: AEM SDK의 로컬 quickstart를 사용하면 IDE에서 원격 Java 디버깅을 수행할 수 있으므로 AEM에서 라이브 코드 실행을 단계별로 진행하여 정확한 실행 흐름을 파악할 수 있습니다.
-feature: 개발자 도구
+feature: Developer Tools
 topics: development
 version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5251
-topic: 개발
-role: 개발자
-level: 초급, 중급
+topic: Development
+role: Developer
+level: Beginner, Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -2,11 +2,11 @@
 title: AEM Dynamic Media을 사용한 자산 뷰어 이해
 description: AEM Dynamic Media Viewer의 향상된 기능을 사용하면 AEM 작성자가 경험 에셋을 정의하고 사용자 정의할 수 있으며 웹 사이트 사용자에게 표시됩니다.
 sub-product: dynamic media classic
-feature: 뷰어 사전 설정, 이미지 프로필
+feature: Viewer Presets, Image Profiles
 version: 6.3, 6.4, 6.5
-topic: 컨텐츠 관리
-role: 개발자
-level: 중간
+topic: Content Management
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

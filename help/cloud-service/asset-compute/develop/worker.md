@@ -1,7 +1,7 @@
 ---
 title: asset compute 작업자 개발
 description: asset compute 작업자는 자산에 대해 수행되는 작업을 수행하여 새 변환을 만드는 사용자 정의 기능을 제공하는 Asset compute 프로젝트의 핵심입니다.
-feature: asset compute 마이크로서비스
+feature: Asset Compute Microservices
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,9 +9,9 @@ audience: developer
 doc-type: tutorial
 kt: 6282
 thumbnail: KT-6282.jpg
-topic: 통합, 개발
-role: 개발자
-level: 중간, 경험
+topic: Integrations, Development
+role: Developer
+level: Intermediate, Experienced
 translation-type: tm+mt
 source-git-commit: 1e5d8171832ec6b26969a8485ae970e295962828
 workflow-type: tm+mt

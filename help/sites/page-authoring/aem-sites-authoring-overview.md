@@ -3,7 +3,7 @@ title: AEM Sites의 작성 개요
 seo-title: AEM Sites의 작성 개요
 description: 다음 비디오에서는 AEM 작성 환경에서 작성에 대한 기본 개념에 대한 개요를 제공합니다. 사이트 콘솔을 기본으로 사용합니다.
 seo-description: 다음 비디오에서는 AEM 작성 환경에서 작성에 대한 기본 개념에 대한 개요를 제공합니다. 사이트 콘솔을 기본으로 사용합니다.
-feature: 페이지 편집기, 편집 가능한 템플릿
+feature: Page Editor, Editable Templates
 topics: authoring, publishing
 audience: author, marketer
 doc-type: feature video
@@ -11,9 +11,9 @@ activity: use
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 4242
 thumbnail: 33594.jpg
-topic: 컨텐츠 관리
-role: 비즈니스 전문가
-level: 초급
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -1,12 +1,12 @@
 ---
 title: '버튼의 클릭 이벤트에 대한 Salesforce 데이터베이스의 리드 개체 만들기 '
 description: 양식 데이터 모델의 사후 작업을 호출하여 리드 만들기
-type: 설명서
-role: 개발자
-level: 초급, 중급
+type: Documentation
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: 적응형 양식
-topic: 개발
+feature: Adaptive Forms
+topic: Development
 kt: 7193
 thumbnail: 331892.jpg
 translation-type: tm+mt

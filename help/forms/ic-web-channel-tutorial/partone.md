@@ -4,16 +4,16 @@ seo-title: Tomcat 설치 및 구성
 description: 첫 번째 인터랙티브 커뮤니케이션 문서를 만들기 위한 여러 단계로 구성된 자습서의 1부분입니다. 이 부분에서는 TOMCAT를 설치하고 TOMCAT에 sampleRest.war 파일을 배포합니다. 이 WAR 파일에 의해 노출된 REST 끝점은 데이터 소스 및 양식 데이터 모델의 기반이 됩니다.
 seo-description: 첫 번째 인터랙티브 커뮤니케이션 문서를 만들기 위한 여러 단계로 구성된 자습서의 1부분입니다. 이 부분에서는 TOMCAT를 설치하고 TOMCAT에 sampleRest.war 파일을 배포합니다. 이 WAR 파일에 의해 노출된 REST 끝점은 데이터 소스 및 양식 데이터 모델의 기반이 됩니다.
 uuid: c6d4c74c-ea16-4c63-92c9-182d087fd88c
-feature: 대화형 통신
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 discoiquuid: 4f400c22-6c96-4018-851c-70d988ce7c6c
-topic: 개발
-role: 개발자
-level: 초급
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

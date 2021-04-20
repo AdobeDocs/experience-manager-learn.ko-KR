@@ -1,7 +1,7 @@
 ---
 title: Adobe Analytics을 사용하여 클릭한 구성 요소 추적
 description: 이벤트 기반 Adobe 클라이언트 데이터 레이어를 사용하여 Adobe Experience Manager 사이트에서 특정 구성 요소의 클릭 수를 추적합니다. Experience Platform Launch에서 규칙을 사용하여 이러한 이벤트를 수신하고 추적 링크 비콘이 있는 Adobe Analytics으로 데이터를 전송하는 방법을 알아봅니다.
-feature: 분석
+feature: analytics
 topics: integrations
 audience: administrator
 doc-type: tutorial
@@ -9,9 +9,9 @@ activity: setup
 version: cloud-service
 kt: 6296
 thumbnail: KT-6296.jpg
-topic: 통합
-role: 개발자
-level: 중간
+topic: Integrations
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

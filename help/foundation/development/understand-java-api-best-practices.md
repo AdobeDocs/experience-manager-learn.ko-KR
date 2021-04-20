@@ -3,14 +3,14 @@ title: AEM에서 Java API 우수 사례 이해
 description: AEM은 개발 중에 사용할 수 있는 많은 Java API를 표시하는 풍부한 오픈 소스 소프트웨어 스택을 기반으로 구축되었습니다. 이 문서에서는 주요 API와 API를 사용해야 하는 시기와 이유를 설명합니다.
 version: 6.2, 6.3, 6.4, 6.5
 sub-product: foundation, assets, sites
-feature: API
+feature: APIs
 topics: best-practices, development
 activity: develop
 audience: developer
 doc-type: article
-topic: 개발
-role: 개발자
-level: 초급
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

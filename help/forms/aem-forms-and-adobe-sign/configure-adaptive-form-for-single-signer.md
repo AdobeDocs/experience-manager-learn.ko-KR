@@ -1,16 +1,16 @@
 ---
 title: 단일 서명자를 통한 적응형 양식
 description: 단일 서명자를 통한 적응형 양식 이 비디오에서는 단일 서명자로 응용 양식을 구성하는 데 필요한 다양한 단계를 설명합니다.
-feature: 적응형 Forms,Adobe Sign
+feature: Adaptive Forms,Adobe Sign
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 thumbnail: 39475.jpg
 kt: 6103
-topic: 개발
-role: 비즈니스 전문가
-level: 초급
+topic: Development
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

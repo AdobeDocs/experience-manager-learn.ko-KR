@@ -4,16 +4,16 @@ seo-title: 첫 번째 대화형 통신 문서에 대한 라인 차트 구성
 description: 첫 번째 인터랙티브 커뮤니케이션 문서를 만들기 위한 여러 단계로 구성된 자습서의 8부분입니다. 이 부분에서는 계정 진행 패널에 라인 차트를 추가합니다.
 seo-description: 첫 번째 인터랙티브 커뮤니케이션 문서를 만들기 위한 여러 단계로 구성된 자습서의 8부분입니다. 이 부분에서는 계정 진행 패널에 라인 차트를 추가합니다.
 uuid: 08c3e7af-e3cb-4ee0-bdc1-d112bfa70e40
-feature: 대화형 통신
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 discoiquuid: 4292303c-3ef4-4df2-b537-fdb011412670
-topic: 개발
-role: 개발자
-level: 초급
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

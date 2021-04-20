@@ -2,12 +2,12 @@
 title: 적응형 양식을 구성하여 워크플로우 트리거
 description: 적응형 양식 제출 시 워크플로우를 트리거합니다.
 solution: Experience Manager Forms
-type: 설명서
-role: 개발자
-level: 초급, 중급
+type: Documentation
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: 적응형 양식
-topic: 개발
+feature: Adaptive Forms
+topic: Development
 kt: 7425
 thumbnail: 332435.pg
 translation-type: tm+mt

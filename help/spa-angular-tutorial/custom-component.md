@@ -2,7 +2,7 @@
 title: 사용자 지정 구성 요소 만들기 | AEM SPA 편집기 및 Angular 시작하기
 description: AEM SPA 편집기에 사용할 사용자 정의 구성 요소를 만드는 방법을 알아봅니다. 작성 대화 상자와 Sling Models를 개발하여 JSON 모델을 확장하여 사용자 정의 구성 요소를 채우는 방법을 알아봅니다.
 sub-product: 사이트
-feature: SPA 편집기
+feature: SPA Editor
 doc-type: tutorial
 topics: development
 version: cloud-service
@@ -11,8 +11,8 @@ audience: developer
 kt: 5831
 thumbnail: 5831-spa-angular.jpg
 topic: SPA
-role: 개발자
-level: 초급
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

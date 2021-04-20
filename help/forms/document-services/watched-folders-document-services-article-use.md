@@ -4,16 +4,16 @@ seo-title: AEM Forms에서 감시 폴더 사용
 description: AEM Forms에서 감시 폴더 구성 및 사용
 seo-description: AEM Forms에서 감시 폴더 구성 및 사용
 uuid: 32c4bda2-363d-4294-925e-405a176f7f8d
-feature: 출력 서비스
+feature: Output Service
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
 discoiquuid: a40e2381-0dc8-4784-9b80-15e27b244035
-topic: 개발
-role: 개발자
-level: 중간
+topic: Development
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -3,15 +3,15 @@ title: 선택 그룹 구성 요소에 항목 추가
 seo-title: 선택 그룹 구성 요소에 항목 추가
 description: 동적으로 선택 그룹 구성 요소에 항목 추가
 seo-description: 동적으로 선택 그룹 구성 요소에 항목 추가
-feature: 적응형 양식
+feature: Adaptive Forms
 topics: authoring
 audience: developer
 doc-type: tutorial
 activity: understand
 version: 6.5
-topic: 개발
-role: 비즈니스 전문가
-level: 초급
+topic: Development
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

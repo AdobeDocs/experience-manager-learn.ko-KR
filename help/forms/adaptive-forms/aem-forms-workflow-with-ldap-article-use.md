@@ -3,7 +3,7 @@ title: Aem Forms Workflow에서 ldap 사용
 seo-title: Aem Forms Workflow에서 ldap 사용
 description: 제출자의 관리자에 AEM Forms 워크플로우 작업 할당
 seo-description: 제출자의 관리자에 AEM Forms 워크플로우 작업 할당
-feature: 적응형 Forms,작업 과정
+feature: Adaptive Forms,Workflow
 topics: integrations
 audience: developer
 doc-type: article
@@ -11,9 +11,9 @@ activity: setup
 version: 6.3,6.4,6.5
 uuid: 3e32c3a7-387f-4652-8a94-4e6aa6cd5ab8
 discoiquuid: 671872b3-3de0-40da-9691-f8b7e88a9443
-topic: 개발
-role: 관리자
-level: 중간
+topic: Development
+role: Administrator
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

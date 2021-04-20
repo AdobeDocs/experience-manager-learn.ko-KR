@@ -1,7 +1,7 @@
 ---
 title: asset compute 개발 도구
 description: asset compute 개발 도구는 개발자가 Adobe I/O Runtime의 Asset compute 리소스에 대해 AEM SDK의 컨텍스트에서 벗어나 로컬로 에셋 컴퓨터 작업자를 구성 및 실행할 수 있도록 하는 로컬 웹 도구입니다.
-feature: asset compute 마이크로서비스
+feature: Asset Compute Microservices
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,9 +9,9 @@ audience: developer
 doc-type: tutorial
 kt: 6283
 thumbnail: 40241.jpg
-topic: 통합, 개발
-role: 개발자
-level: 중간, 경험
+topic: Integrations, Development
+role: Developer
+level: Intermediate, Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

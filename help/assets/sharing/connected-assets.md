@@ -1,11 +1,11 @@
 ---
 title: AEM Sites에서 연결된 에셋 사용
 description: 연결된 에셋 기능을 사용하면 AEM Sites 제작자는 다른 AEM 인스턴스에서 호스팅되는 디지털 에셋을 매끄럽게 공유할 수 있습니다.
-feature: 연결된 자산
+feature: Connected Assets
 version: 6.5
-topic: 컨텐츠 관리
-role: 개발자
-level: 중간
+topic: Content Management
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -3,7 +3,7 @@ title: AEM Sites에서 SPA 편집기 사용
 seo-title: AEM Sites에서 SPA Editor 프레임워크 사용
 description: AEM 단일 페이지 애플리케이션 편집기 프레임워크는 작성자가 단일 페이지 애플리케이션 또는 SPA의 컨텐츠를 편집할 수 있는 기능을 제공합니다. Responsive 또는 Angular 프레임워크을 사용하는 개발자는 SPA을 만든 다음 SPA의 영역을 AEM 구성 요소에 매핑하여 작성자가 익숙한 AEM Sites 편집 툴을 사용할 수 있도록 합니다.
 sub-product: 사이트, 컨텐츠 서비스
-feature: 스파 편집기
+feature: Spa Editor
 topics: authoring, single-page-applications
 audience: all
 doc-type: feature video
@@ -12,8 +12,8 @@ version: 6.4, 6.5, cloud-service
 kt: 1047
 thumbnail: 22229.jpg
 topic: SPA
-role: 개발자
-level: 초급
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -1,7 +1,7 @@
 ---
 title: asset compute 메타데이터 작업자 개발
 description: 이미지 자산에서 가장 일반적으로 사용되는 색상을 파생하고 색상 이름을 AEM의 자산 메타데이터에 다시 쓰는 Asset compute 메타데이터 워커를 만드는 방법을 알아봅니다.
-feature: asset compute 마이크로서비스
+feature: Asset Compute Microservices
 topics: metadata, development
 version: cloud-service
 activity: develop
@@ -9,9 +9,9 @@ audience: developer
 doc-type: tutorial
 kt: 6448
 thumbnail: 327313.jpg
-topic: 통합, 개발
-role: 개발자
-level: 중간, 경험
+topic: Integrations, Development
+role: Developer
+level: Intermediate, Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

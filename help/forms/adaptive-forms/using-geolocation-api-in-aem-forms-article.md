@@ -4,16 +4,16 @@ seo-title: 적응형 Forms에서 Geolocation API 사용
 description: Geolocation api의
 seo-description: Geolocation api의
 uuid: 5a461659-6873-4ea1-9f37-8296e5a9d895
-feature: 적응형 양식
+feature: Adaptive Forms
 topics: integrations
 audience: developer
 doc-type: article
 activity: develop
 version: 6.3,6.4,6.5
 discoiquuid: 3400251b-aee0-4d69-994b-e1643fabc868
-topic: 개발
-role: 개발자
-level: 경험
+topic: Development
+role: Developer
+level: Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

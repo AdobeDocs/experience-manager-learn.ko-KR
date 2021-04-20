@@ -1,15 +1,15 @@
 ---
 title: AEM에서 OKTA 구성
 description: okta를 사용하여 단일 사인온을 사용하기 위한 다양한 구성 설정 이해
-feature: 적응형 양식
+feature: Adaptive Forms
 topics: development, authentication, security
 audience: developer
 doc-type: tutorial
 activity: setup
 version: 6.5
-topic: 관리
-role: 관리자
-level: 경험
+topic: Administration
+role: Administrator
+level: Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -2,9 +2,9 @@
 title: 'AEM Assets의 InDesign 파일 및 자산 템플릿 이해 '
 description: 이 비디오 자습서에서는 InDesign 파일을 정의하고 AEM Assets의 자산 템플릿 기능에서 사용할 수 있는 모든 관련 고려 사항을 안내합니다.
 version: 6.3, 6.4, 6.5
-topic: 컨텐츠 관리
-role: 비즈니스 전문가
-level: 중간
+topic: Content Management
+role: Business Practitioner
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

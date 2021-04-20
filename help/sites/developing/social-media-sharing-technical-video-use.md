@@ -1,15 +1,15 @@
 ---
 title: AEM Sites에서 소셜 미디어 공유 사용
 description: 소셜 미디어 공유 구성 요소의 설정 및 사용을 살펴봅니다.
-feature: 코어 구성 요소
+feature: Core Components
 topics: integrations
 audience: developer, implementer
 doc-type: technical video
 activity: setup
 version: 6.3, 6.4, 6.5
-topic: 컨텐츠 관리
-role: 개발자
-level: 중간
+topic: Content Management
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -2,15 +2,15 @@
 title: AEM SPA 편집기를 사용한 개발 - Hello World 자습서
 description: AEM SPA Editor는 단일 페이지 애플리케이션 또는 SPA의 상황에 맞는 편집을 지원합니다. 이 자습서는 AEM SPA Editor JS SDK와 함께 사용할 SPA 개발에 대한 소개입니다. 이 자습서는 사용자 지정 Hello World 구성 요소를 추가하여 We.Retail 저널 앱을 확장합니다. 사용자는 반응 또는 Angular 프레임워크을 사용하여 자습서를 완료할 수 있습니다.
 sub-product: 사이트, 컨텐츠 서비스
-feature: 스파 편집기
+feature: Spa Editor
 topics: development, single-page-applications
 audience: developer
 doc-type: tutorial
 activity: use
 version: 6.3, 6.4, 6.5
 topic: SPA
-role: 개발자
-level: 초급
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

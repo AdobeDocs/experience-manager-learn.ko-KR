@@ -1,7 +1,7 @@
 ---
 title: 주 적응형 양식 만들기
 description: 적응형 양식을 만들어 지원자 정보 및 적응형 양식을 캡처하여 저장된 적응형 양식을 검색합니다.
-feature: 적응형 양식
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,9 +9,9 @@ activity: implement
 version: 6.4,6.5
 kt: 6552
 thumbnail: 6552.jpg
-topic: 개발
-role: 비즈니스 전문가
-level: 초급
+topic: Development
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

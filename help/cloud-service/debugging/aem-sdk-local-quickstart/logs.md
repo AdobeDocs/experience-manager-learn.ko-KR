@@ -1,16 +1,16 @@
 ---
 title: 로그를 사용하여 AEM SDK 디버깅
 description: 로그는 AEM 응용 프로그램 디버깅에 있어 최전선 역할을 하지만 배포된 AEM 응용 프로그램에서 적절한 로깅에 의존합니다.
-feature: 개발자 도구
+feature: Developer Tools
 topics: development
 version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5252
-topic: 개발
-role: 개발자
-level: 초급, 중급
+topic: Development
+role: Developer
+level: Beginner, Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

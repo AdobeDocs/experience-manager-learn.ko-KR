@@ -3,9 +3,9 @@ title: 브랜드 포털 사용
 description: AEM 작성자 및 AEM Assets 브랜드 포털 통합의 비디오 개요.
 feature: Brand Portal
 version: 6.3, 6.4, 6.5
-topic: 컨텐츠 관리
-role: 비즈니스 전문가
-level: 초급
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

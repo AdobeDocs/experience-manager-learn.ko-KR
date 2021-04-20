@@ -4,15 +4,15 @@ seo-title: AEM Forms의 문서 인증
 description: Docassurance 서비스를 사용하여 AEM Forms에서 PDF 문서 인증
 seo-description: Docassurance 서비스를 사용하여 AEM Forms에서 PDF 문서 인증
 uuid: ecb1f9b6-bbb3-43a3-a0e0-4c04411acc9f
-feature: 문서 보안
+feature: Document Security
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
-topic: 개발
-role: 개발자
-level: 중간
+topic: Development
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

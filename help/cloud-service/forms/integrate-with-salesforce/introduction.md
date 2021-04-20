@@ -2,11 +2,11 @@
 title: Salesforce와 Adobe Experience Manager Forms을 Cloud Service으로 통합
 description: 통합을 사용하여 Salesforce에서 리드 개체 만들기
 solution: Experience Manager, Experience Manager Forms
-type: 설명서
-role: 개발자
-level: 초급, 중급
+type: Documentation
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-topic: 개발
+topic: development
 thumbnail: 331891.jpg
 translation-type: tm+mt
 source-git-commit: 1b4512fdb047bec15d72a8278fd0ce5dfafa309f

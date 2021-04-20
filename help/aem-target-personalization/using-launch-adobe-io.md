@@ -3,10 +3,10 @@ title: Experience Platform Launch 및 Adobe I/O을 사용하여 Adobe Experience
 seo-title: Experience Platform Launch 및 Adobe I/O을 사용하여 Adobe Experience Manager과 Adobe Target 통합
 description: Experience Platform Launch 및 Adobe I/O을 사용하여 Adobe Experience Manager과 Adobe Target을 통합하는 방법에 대한 단계별 지침
 seo-description: Experience Platform Launch 및 Adobe I/O을 사용하여 Adobe Experience Manager과 Adobe Target을 통합하는 방법에 대한 단계별 지침
-feature: 경험 구성요소
-topic: 개인화
-role: 개발자
-level: 중간
+feature: Experience Fragments
+topic: Personalization
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

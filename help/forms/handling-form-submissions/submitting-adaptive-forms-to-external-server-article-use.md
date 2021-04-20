@@ -4,16 +4,16 @@ seo-title: 외부 서버에 응용 양식 제출
 description: 외부 서버에서 실행 중인 REST 끝점에 적응형 양식 제출
 seo-description: 외부 서버에서 실행 중인 REST 끝점에 적응형 양식 제출
 uuid: 1a46e206-6188-4096-816a-d59e9fb43263
-feature: 적응형 양식
+feature: Adaptive Forms
 topics: developing
 audience: implementer
 doc-type: article
 activity: setup
 version: 6.3,6.4,6.5
 discoiquuid: 9e936885-4e10-4c05-b572-b8da56fcac73
-topic: 개발
-role: 개발자
-level: 초급
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

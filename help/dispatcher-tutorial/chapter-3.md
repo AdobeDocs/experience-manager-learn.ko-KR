@@ -2,9 +2,9 @@
 title: '"3장 - 고급 발송자 캐싱 항목"'
 description: AEM에서 캐싱할 3부 시리즈의 3부입니다. 처음 두 부분은 Dispatcher의 일반 http 캐싱에 중점을 두었으며 어떤 제한이 있습니까? 이 섹션에서는 이러한 한계를 극복할 수 있는 방법에 대한 몇 가지 아이디어를 설명합니다.
 feature: Dispatcher
-topic: 아키텍처
-role: 건축가
-level: 중간
+topic: Architecture
+role: Architect
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

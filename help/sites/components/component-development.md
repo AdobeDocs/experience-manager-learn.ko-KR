@@ -1,7 +1,7 @@
 ---
 title: Adobe Experience Manager Sites의 구성 요소 개발
 description: Adobe Experience Manager Sites을 사용한 구성 요소 개발에 대한 개요입니다. 대화 상자, Sling Models, HTML 스크립트 및 클라이언트측 라이브러리에 대한 소개가 포함되어 있습니다.
-feature: sling-models, html
+feature: sling-models, htl
 topics: components, development
 audience: administrator, developer
 doc-type: technical video
@@ -9,9 +9,9 @@ activity: develop
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 4235
 thumbnail: 32547.jpg
-topic: 개발
-role: 개발자
-level: 초급
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -4,16 +4,16 @@ seo-title: 웹 채널 문서에 텍스트 및 이미지 컨텐츠 추가
 description: '첫 번째 인터랙티브 커뮤니케이션 문서를 만들기 위한 다단계 자습서의 7부분입니다. 이 부분에서는 이미지 및 텍스트 컨텐츠를 머리글 패널에 추가합니다. '
 seo-description: '첫 번째 인터랙티브 커뮤니케이션 문서를 만들기 위한 다단계 자습서의 7부분입니다. 이 부분에서는 이미지 및 텍스트 컨텐츠를 머리글 패널에 추가합니다. '
 uuid: 440f8b74-3be7-4e58-a46e-4110065b7705
-feature: 대화형 통신
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 discoiquuid: 3dd64e7d-3f13-4022-bb75-c9dc1884bc19
-topic: 개발
-role: 개발자
-level: 초급
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

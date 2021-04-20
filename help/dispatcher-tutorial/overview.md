@@ -4,9 +4,9 @@ seo-title: AEM Dispatcher 캐시 튜토리얼
 description: 이 자습서의 목표는 디스패처의 작동 방식과 사용 방법을 이해하는 데 도움이 됩니다.
 seo-description: 이 자습서의 목표는 디스패처의 작동 방식과 사용 방법을 이해하는 데 도움이 됩니다.
 feature: Dispatcher
-topic: 아키텍처
-role: 건축가
-level: 초급
+topic: Architecture
+role: Architect
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -2,15 +2,15 @@
 title: AEM에서 인증 지원 이해
 description: 'AEM에서 지원하는 인증(및 경우에 따라 권한 부여) 메커니즘에 대한 통합 보기. '
 version: 6.3, 6.4, 6.5
-feature: 사용자 및 그룹
+feature: Users and Groups
 topics: authentication, security
 activity: understand
 audience: architect, developer, implementer
 doc-type: article
 kt: 406
-topic: 아키텍처
-role: 건축가
-level: 경험
+topic: Architecture
+role: Architect
+level: Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

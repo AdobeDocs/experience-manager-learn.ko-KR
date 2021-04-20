@@ -3,10 +3,10 @@ title: Adobe Target Visual Experience Composer를 사용한 개인화
 seo-title: Adobe Target VEC(Visual Experience Composer)를 사용한 개인화
 description: Adobe Target VEC(Visual Experience Composer)를 사용하여 개인화된 경험을 만들고 전달하는 방법을 보여주는 엔드 투 엔드 자습서입니다.
 seo-description: Adobe Target VEC(Visual Experience Composer)를 사용하여 개인화된 경험을 만들고 전달하는 방법을 보여주는 엔드 투 엔드 자습서입니다.
-feature: 경험 구성요소
-topic: 개인화
-role: 개발자
-level: 중간
+feature: Experience Fragments
+topic: Personalization
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

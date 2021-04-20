@@ -2,10 +2,10 @@
 title: AEM Assets에서 닫힌 사용자 그룹
 description: 폐쇄된 사용자 그룹(CUG)은 게시된 사이트의 사용자 선택 그룹에 대한 컨텐츠 액세스를 제한하는 데 사용되는 기능입니다. 이 비디오는 닫힌 사용자 그룹을 Adobe Experience Manager 자산과 함께 사용하여 특정 자산 폴더에 대한 액세스를 제한하는 방법을 보여줍니다.
 version: 6.3, 6.4, 6.5, cloud-service
-topic: 관리, 보안
-feature: 사용자 및 그룹
-role: 관리자
-level: 중간
+topic: Administration, Security
+feature: User and Groups
+role: Admin
+level: Intermediate
 kt: 649
 thumbnail: 22155.jpg
 translation-type: tm+mt

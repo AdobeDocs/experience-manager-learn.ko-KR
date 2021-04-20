@@ -2,14 +2,14 @@
 title: 비디오 개요
 description: Dynamic Media Classic에는 업로드 시 비디오를 자동으로 변환하는 기능, 데스크탑 및 모바일 디바이스로의 비디오 스트리밍, 디바이스 및 대역폭에 따라 재생에 최적화된 적응형 비디오 세트가 포함되어 있습니다. Dynamic Media Classic에서 비디오에 대해 자세히 살펴보고 비디오 개념 및 용어에 대한 입문서를 얻을 수 있습니다. 그런 다음 비디오를 업로드 및 인코딩하는 방법, 업로드를 위한 비디오 사전 설정 선택, 비디오 사전 설정을 추가 또는 편집하는 방법, 비디오 뷰어에서 비디오를 미리 보기, 웹 및 모바일 사이트에 비디오를 배포하고 비디오에 캡션 및 장 마커를 추가하고 데스크톱 및 모바일 사용자에게 비디오 뷰어를 게시하는 방법에 대해 자세히 살펴봅니다.
 sub-product: dynamic-media
-feature: Dynamic Media Classic, 비디오 프로필, 뷰어 사전 설정
+feature: Dynamic Media Classic, Video Profiles, Viewer Presets
 doc-type: tutorial
 topics: development, authoring, configuring, videos, video-profiles
 audience: all
 activity: use
-topic: 컨텐츠 관리
-role: 비즈니스 전문가
-level: 초급
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

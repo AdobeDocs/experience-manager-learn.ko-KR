@@ -1,7 +1,7 @@
 ---
 title: asset compute 확장성을 위한 로컬 개발 환경 설정
 description: Node.js JavaScript 애플리케이션인 Asset compute 작업자를 개발하려면 Node.js 및 다양한 npm 모듈에서 Docker Desktop 및 Microsoft Visual Studio 코드에 이르기까지 기존의 AEM 개발과는 다른 특정 개발 도구가 필요합니다.
-feature: asset compute 마이크로서비스
+feature: Asset Compute Microservices
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,9 +9,9 @@ audience: developer
 doc-type: tutorial
 kt: 6266
 thumbnail: KT-6266.jpg
-topic: 통합, 개발
-role: 개발자
-level: 중간, 경험
+topic: Integrations, Development
+role: Developer
+level: Intermediate, Experienced
 translation-type: tm+mt
 source-git-commit: 53c20b9774c15b04a1c78c7c0c7b61a60996bf60
 workflow-type: tm+mt

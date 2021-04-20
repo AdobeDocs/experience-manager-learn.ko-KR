@@ -2,12 +2,12 @@
 title: 인물 패널 구성
 description: 배우자 세부 정보 조각을 추가하여 사람 패널을 구성합니다.
 solution: Experience Manager Forms
-type: 설명서
-role: 개발자
-level: 초급, 중급
+type: Documentation
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: 적응형 양식
-topic: 개발
+feature: Adaptive Forms
+topic: Development
 kt: 7378
 thumbnail: 332234.jpg
 translation-type: tm+mt

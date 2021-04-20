@@ -2,15 +2,15 @@
 title: AEM 경험 조각으로 소셜 게시 설정
 description: 경험 조각을 사용하면 마케터는 AEM에서 만든 경험을 소셜 미디어 플랫폼에 게시할 수 있습니다. 아래 비디오에서는 경험 조각을 Facebook 및 Pinterest에 게시하는 데 필요한 설정 및 구성에 대해 자세히 설명합니다.
 sub-product: 사이트, 컨텐츠 서비스
-feature: 경험 구성요소
+feature: Experience Fragments
 topics: integrations, content-delivery
 audience: administrator, implementer, developer
 doc-type: setup
 activity: use
 version: 6.3, 6.4, 6.5
-topic: 컨텐츠 관리
-role: 관리자, 개발자
-level: 중간
+topic: Content Management
+role: Administrator, Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

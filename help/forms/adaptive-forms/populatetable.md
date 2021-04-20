@@ -3,15 +3,15 @@ title: '적응형 양식 테이블 채우기 '
 seo-title: 적응형 양식 테이블 채우기
 description: 양식 데이터 모델 서비스 호출의 결과로 적응형 양식 테이블 채우기
 seo-description: 양식 데이터 모델 서비스 호출의 결과로 적응형 양식 테이블 채우기
-feature: 적응형 양식
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
-topic: 개발
-role: 비즈니스 전문가
-level: 중간
+topic: Development
+role: Business Practitioner
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

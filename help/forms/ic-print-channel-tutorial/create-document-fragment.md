@@ -3,7 +3,7 @@ title: 문서 조각 만들기
 description: '첫 번째 인터랙티브 커뮤니케이션 문서를 만들기 위한 여러 단계로 구성된 자습서의 5부분입니다. 이 부분에서 수신자 이름과 주소를 저장할 문서 조각을 만듭니다. '
 seo-description: '첫 번째 인터랙티브 커뮤니케이션 문서를 만들기 위한 여러 단계로 구성된 자습서의 5부분입니다. 이 부분에서 수신자 이름과 주소를 저장할 문서 조각을 만듭니다. '
 uuid: 7fd8a0f2-a921-4e70-91c9-908dae9aeab2
-feature: 대화형 통신
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: tutorial
@@ -12,9 +12,9 @@ version: 6.4,6.5
 discoiquuid: 47d3aa97-0bff-48e0-8a65-55e5332f811b
 kt: 5958
 thumbnail: 22350.jpg
-topic: 개발
-role: 개발자
-level: 초급
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

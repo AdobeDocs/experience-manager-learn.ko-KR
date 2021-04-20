@@ -4,7 +4,7 @@ seo-title: 기여도 섹션에 테이블 추가
 description: 첫 번째 대화형 통신 문서를 만들기 위한 여러 단계로 구성된 자습서의 9부분입니다. 이 부분에서는 기여도 섹션에 표를 추가합니다.
 seo-description: 첫 번째 대화형 통신 문서를 만들기 위한 여러 단계로 구성된 자습서의 9부분입니다. 이 부분에서는 기여도 섹션에 표를 추가합니다.
 uuid: 9475e769-a3f8-4aec-9b46-e0dc182b78a0
-feature: 대화형 통신
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: tutorial
@@ -13,9 +13,9 @@ version: 6.4,6.5
 kt: 5994
 thumbnail: 37953.jpg
 discoiquuid: 36c1f67f-b5bb-431e-893c-fd5032918dd7
-topic: 개발
-role: 개발자
-level: 초급
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -1,15 +1,15 @@
 ---
 title: AEM Sites을 사용한 스타일 시스템 우수 사례 이해
 description: Adobe Experience Manager Sites에서 스타일 시스템 구현 시 모범 사례를 설명하는 자세한 문서입니다.
-feature: 스타일 시스템
+feature: Style System
 topics: development, components, front-end-development
 audience: developer
 doc-type: article
 activity: understand
 version: 6.4, 6.5
-topic: 개발
-role: 개발자
-level: 중간, 경험
+topic: Development
+role: Developer
+level: Intermediate, Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

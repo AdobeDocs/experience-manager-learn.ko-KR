@@ -2,11 +2,11 @@
 title: AEM Dynamic Media에서 이미지 선명하게 하기 사용
 description: 이 비디오에서는 이미지를 선명하게 하는 것이 이미지 품질을 유지하는 데 중요한 이유와 고급 설정을 사용하여 완벽한 이미지를 만드는 방법을 설명합니다.
 sub-product: dynamic-media
-feature: 이미지 프로필, 뷰어 사전 설정
+feature: Image Profiles, Viewer Presets
 version: 6.3, 6.4, 6.5
-topic: 컨텐츠 관리
-role: 비즈니스 전문가
-level: 초급
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

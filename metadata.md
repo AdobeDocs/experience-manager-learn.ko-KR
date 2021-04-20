@@ -5,7 +5,7 @@ mini-toc-levels: 2
 git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-learn.ko-KR
 product: experience manager
 index: y
-type: 자습서
+type: Tutorial
 solution: Experience Manager
 feature-set: Experience Manager, Experience Manager Assets, Experience Manager Cloud Manager, Experience Manager Forms, Experience Manager Screens, Experience Manager Sites
 translation-type: tm+mt

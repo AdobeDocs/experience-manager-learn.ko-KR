@@ -2,12 +2,12 @@
 title: Adobe Sign 애플리케이션 만들기
 description: Adobe Sign 애플리케이션은 AEM Forms과 Adobe Sign 간의 통합을 만드는 첫 번째 단계입니다.
 solution: Experience Manager Forms
-type: 설명서
-role: 개발자
-level: 초급, 중급
+type: Documentation
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: 적응형 양식
-topic: 개발
+feature: Adaptive Forms
+topic: Development
 kt: 7427
 thumbnail: 332436.jpg
 translation-type: tm+mt

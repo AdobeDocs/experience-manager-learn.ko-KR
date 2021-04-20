@@ -2,13 +2,13 @@
 title: 메타데이터 폴더 스키마
 description: 메타데이터 폴더 스키마를 사용하면 에셋에 직접 추가하는 것이 아니라 에셋 폴더 자체에 연결된 메타데이터를 관리하고 검토할 수 있습니다.
 sub-product: 자산
-feature: 메타데이터
+feature: Metadata
 version: cloud-service
 kt: 4983
 thumbnail: 34071.jpg
-topic: 컨텐츠 관리
-role: 비즈니스 전문가
-level: 초급
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

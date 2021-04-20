@@ -1,16 +1,16 @@
 ---
 title: OCR 데이터 추출
 description: 정부 기관에서 발행한 문서에서 데이터를 추출하여 양식을 채울 수 있습니다.
-feature: 바코드 Forms
+feature: Barcoded Forms
 topics: adaptive forms
 audience: developer
 doc-type: article
 activity: use
 version: 6.4,6.5
 kt: 6679
-topic: 개발
-role: 개발자
-level: 중간
+topic: Development
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

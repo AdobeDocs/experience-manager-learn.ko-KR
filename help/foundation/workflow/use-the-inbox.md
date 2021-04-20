@@ -2,10 +2,10 @@
 title: AEM에서 받은 편지함을 사용하는 방법
 description: AEM 받은 편지함을 사용하면 작업 및 워크플로우에 대한 공동 작업과 가시성이 향상됩니다.
 version: 6.3, 6.4, 6.5, cloud-service
-topic: 협업
-feature: 받은 편지함
-role: 비즈니스 전문가
-level: 중간
+topic: Collaboration
+feature: Inbox
+role: Business Practitioner
+level: Intermediate
 kt: 159
 thumbnail: 16827.jpg
 translation-type: tm+mt

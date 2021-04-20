@@ -2,7 +2,7 @@
 title: SPA 통합 | AEM SPA 편집기 및 Angular 시작하기
 description: angular에 기록된 단일 페이지 애플리케이션(SPA)의 소스 코드를 Adobe Experience Manager(AEM) 프로젝트와 통합하는 방법을 살펴봅니다. angular의 CLI 툴과 같은 최신 프런트 엔드 툴을 사용하여 AEM JSON 모델 API를 통해 SPA을 신속하게 개발할 수 있는 방법을 살펴볼 수 있습니다.
 sub-product: 사이트
-feature: SPA 편집기
+feature: SPA Editor
 topics: development
 doc-type: tutorial
 version: cloud-service
@@ -11,8 +11,8 @@ audience: developer
 kt: 5310
 thumbnail: 5310-spa-angular.jpg
 topic: SPA
-role: 개발자
-level: 초급
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -2,12 +2,12 @@
 title: 도구 모음 추가 및 구성
 description: 양식 패널 간을 이동하는 기능을 추가할 수 있습니다.
 solution: Experience Manager Forms
-type: 설명서
-role: 개발자
-level: 초급, 중급
+type: Documentation
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: 적응형 양식
-topic: 개발
+feature: Adaptive Forms
+topic: Development
 kt: 7389
 thumbnail: 332236.jpg
 translation-type: tm+mt

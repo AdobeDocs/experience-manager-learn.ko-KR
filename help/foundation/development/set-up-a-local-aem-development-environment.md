@@ -2,13 +2,13 @@
 title: 로컬 AEM 개발 환경 설정
 description: AEM, Adobe Experience Manager용 로컬 개발 설정에 대한 가이드입니다. 로컬 설치, Apache Maven, 통합 개발 환경 및 디버깅/문제 해결에 대한 중요한 주제를 다룹니다. Eclipse IDE, CRXDE-Lite, Visual Studio 코드 및 IntelliJ를 사용한 개발에 대해 설명합니다.
 version: 6.4, 6.5
-feature: 개발자 도구
+feature: Developer Tools
 topics: development
 activity: develop
 audience: developer
-topic: 개발
-role: 개발자
-level: 초급
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

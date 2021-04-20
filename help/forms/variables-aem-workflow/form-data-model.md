@@ -1,7 +1,7 @@
 ---
 title: 양식 데이터 모델 유형의 변수
 description: AEM 워크플로우에서 양식 데이터 모델 유형의 변수 사용
-feature: 워크플로우
+feature: Workflow
 topics: development
 audience: developer
 doc-type: technical video
@@ -9,9 +9,9 @@ activity: understand
 version: 6.5
 kt: 6347
 thumbnail: 41238.jpg
-topic: 개발
-role: 개발자
-level: 초급
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

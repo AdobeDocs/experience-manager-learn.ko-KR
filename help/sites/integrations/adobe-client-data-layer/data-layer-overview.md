@@ -1,7 +1,7 @@
 ---
 title: AEM 핵심 구성 요소에서 Adobe 클라이언트 데이터 레이어 사용
 description: Adobe 클라이언트 데이터 레이어는 웹 페이지에서 방문자 경험에 대한 데이터를 수집 및 저장한 다음 이 데이터에 쉽게 액세스할 수 있는 표준 방법을 제공합니다. Adobe 클라이언트 데이터 레이어는 플랫폼에 관계 없지만, AEM과 함께 사용하기 위해 핵심 구성 요소에 완벽하게 통합됩니다.
-feature: 핵심 구성 요소
+feature: core-component
 topics: integrations
 audience: developer
 doc-type: feature video
@@ -9,9 +9,9 @@ activity: use
 version: cloud-service
 kt: 6261
 thumbnail: 41195.jpg
-topic: 통합
-role: 개발자
-level: 중간
+topic: Integrations
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

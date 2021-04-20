@@ -3,7 +3,7 @@ title: AEM Sites 컨텐츠 계층 소개
 seo-title: AEM Sites 컨텐츠 계층 소개
 description: 다음 비디오에서는 조직에서 사용할 AEM에 사이트 페이지가 저장되는 방법을 설명합니다.
 seo-description: 다음 비디오에서는 조직에서 사용할 AEM에 사이트 페이지가 저장되는 방법을 설명합니다.
-feature: 페이지 편집기
+feature: Page Editor
 topics: authoring, publishing
 audience: author, marketer
 doc-type: feature video
@@ -11,9 +11,9 @@ activity: use
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 4243
 thumbnail: 31785.jpg
-topic: 컨텐츠 관리
-role: 비즈니스 전문가
-level: 초급
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

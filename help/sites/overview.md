@@ -4,7 +4,7 @@ seo-title: AEM Sites 튜토리얼
 description: 'Adobe Experience Manager Sites를 위한 비디오 및 튜토리얼 모음입니다. '
 seo-description: Adobe Experience Manager Sites를 위한 비디오 및 튜토리얼 모음입니다
 sub-product: 사이트, 컨텐츠 서비스
-topic: 컨텐츠 관리
+topic: Content Management
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

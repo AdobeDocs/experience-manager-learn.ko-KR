@@ -1,7 +1,7 @@
 ---
 title: AEM 구성 요소를 사용하여 Adobe 클라이언트 데이터 레이어 사용자 정의
 description: 사용자 정의 AEM 구성 요소의 컨텐츠를 사용하여 Adobe 클라이언트 데이터 레이어를 사용자 정의하는 방법을 알아봅니다. AEM 코어 구성 요소에서 제공하는 API를 사용하여 데이터 레이어를 확장하고 사용자 지정하는 방법을 알아봅니다.
-feature: Adobe 클라이언트 데이터 레이어, 핵심 구성 요소
+feature: Adobe Client Data Layer, Core Component
 topics: integrations
 audience: developer
 doc-type: tutorial
@@ -9,9 +9,9 @@ activity: use
 version: cloud-service
 kt: 6265
 thumbnail: KT-6265.jpg
-topic: 통합
-role: 개발자
-level: 중간, 경험
+topic: Integrations
+role: Developer
+level: Intermediate, Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

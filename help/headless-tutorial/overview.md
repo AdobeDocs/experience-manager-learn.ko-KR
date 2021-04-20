@@ -1,10 +1,10 @@
 ---
 title: AEM 제목 없는 자습서
 description: 헤드리스 CMS로 Adobe Experience Manager을 사용하는 방법에 대한 자습서 모음입니다.
-feature: 컨텐츠 조각, API
-topic: 헤드리스, 컨텐츠 관리
-role: 개발자
-level: 초급
+feature: Content Fragments, APIs
+topic: Headless, Content Management
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: db9f4d09dcc83f85c8d02d94c383fa456af88c24
 workflow-type: tm+mt

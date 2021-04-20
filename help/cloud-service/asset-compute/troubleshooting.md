@@ -1,7 +1,7 @@
 ---
 title: AEM Assets의 Asset compute 확장 문제 해결
 description: 다음은 AEM Assets용 사용자 정의 Asset compute 작업자를 개발 및 배포할 때 발생할 수 있는 일반적인 문제 및 오류에 대한 인덱스입니다.
-feature: asset compute 마이크로서비스
+feature: Asset Compute Microservices
 topics: renditions, metadata, development
 version: cloud-service
 doc-type: tutorial
@@ -9,9 +9,9 @@ activity: develop
 audience: developer
 kt: 5802
 thumbnail: KT-5802.jpg
-topic: 통합, 개발
-role: 개발자
-level: 중간, 경험
+topic: Integrations, Development
+role: Developer
+level: Intermediate, Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

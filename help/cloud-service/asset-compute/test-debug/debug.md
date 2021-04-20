@@ -1,7 +1,7 @@
 ---
 title: asset compute 작업자 디버그
 description: asset compute 작업자는 간단한 디버그 로그 명령문에서부터 연결된 VS 코드를 원격 디버거로, AEM에서 Cloud Service으로 시작한 Adobe I/O Runtime에서 활성화할 로그를 가져오는 등 다양한 방법으로 디버깅할 수 있습니다.
-feature: asset compute 마이크로서비스
+feature: Asset Compute Microservices
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,9 +9,9 @@ audience: developer
 doc-type: tutorial
 kt: 6285
 thumbnail: 40383.jpg
-topic: 통합, 개발
-role: 개발자
-level: 중간, 경험
+topic: Integrations, Development
+role: Developer
+level: Intermediate, Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -2,11 +2,11 @@
 title: AEM Assets Dynamic Media에서 파노라마 및 세로 이미지 뷰어 사용
 description: AEM 6.4에서 향상된 Dynamic Media 뷰어 기능에는 파노라마 이미지 뷰어 추가, 파노라마 가상 현실 이미지 뷰어 및 세로 이미지 뷰어가 포함됩니다. Panoramic Viewer를 사용하면 사용자 정의 개발 없이도 회의실, 속성, 위치 또는 경관의 매력적이고 매력적인 경험을 손쉽게 전달할 수 있습니다.
 sub-product: dynamic-media
-feature: 비디오 프로필, 비디오 프로필, 360 VR 비디오
+feature: Video Profiles, Video Profiles, 360 VR Video
 version: 6.4, 6.5
-topic: 컨텐츠 관리
-role: 비즈니스 전문가
-level: 초급
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -3,10 +3,10 @@ title: Adobe Target과 Adobe Experience Manager 통합
 seo-title: 개인화된 컨텐츠를 전달하기 위해 Adobe Experience Manager(AEM)과 Adobe Target을 통합하는 다양한 방법에 대한 기술문서입니다.
 description: 다양한 시나리오를 위해 Adobe Target으로 Adobe Experience Manager을 설정하는 방법을 다루는 문서입니다.
 seo-description: 다양한 시나리오를 위해 Adobe Target으로 Adobe Experience Manager을 설정하는 방법을 다루는 문서입니다.
-feature: 경험 구성요소
-topic: 개인화
-role: 개발자
-level: 중간
+feature: Experience Fragments
+topic: Personalization
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

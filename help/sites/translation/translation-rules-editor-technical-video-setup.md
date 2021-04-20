@@ -1,15 +1,15 @@
 ---
 title: AEM에서 번역 규칙 설정
 description: 번역 구성 UI를 사용하면 AEM Sites에서 컨텐츠를 번역하기 위한 규칙을 관리할 수 있습니다. 이 비디오에서는 사용자 지정 구성 요소에 대한 새 번역 규칙 만들기에 대해 자세히 설명합니다.
-feature: 언어 복사
+feature: Language Copy
 topics: localization, content-architecture
 audience: developer, administrator
 doc-type: technical video
 activity: setup
 version: 6.4, 6.5
-topic: 로컬라이제이션
-role: 비즈니스 전문가
-level: 초급
+topic: Localization
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

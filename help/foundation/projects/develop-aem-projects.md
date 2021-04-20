@@ -2,14 +2,14 @@
 title: AEM에서 프로젝트 개발
 description: AEM Projects를 개발하는 방법을 소개하는 개발 자습서입니다.  이 자습서에서는 컨텐츠 제작 워크플로우 및 작업을 관리하기 위해 AEM 내에서 새 프로젝트를 만드는 데 사용할 수 있는 사용자 정의 프로젝트 템플릿을 만듭니다.
 version: 6.3, 6.4, 6.5
-feature: 프로젝트, 워크플로우
+feature: Projects, Workflow
 topics: collaboration, development, governance
 activity: develop
 audience: developer, implementer, administrator
 doc-type: tutorial
-topic: 개발
-role: 개발자
-level: 초급
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

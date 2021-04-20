@@ -2,13 +2,13 @@
 title: 다양한 유형의 PDF forms 및 문서 이해
 description: PDF는 파일 포맷으로 되어 있으며 이 문서에서는 양식 개발자에게 중요하며 관련이 있는 PDF 유형에 대해 설명합니다.
 solution: Experience Manager, Experience Manager Forms
-type: 설명서
-role: 개발자
-level: 초급,중급
+type: Documentation
+role: Developer
+level: Beginner,Intermediate
 version: 6.3,6.4,6.5
-feature: 문서 서비스
+feature: Document Services
 kt: 7071
-topic: 개발
+topic: Development
 translation-type: tm+mt
 source-git-commit: 1b4512fdb047bec15d72a8278fd0ce5dfafa309f
 workflow-type: tm+mt

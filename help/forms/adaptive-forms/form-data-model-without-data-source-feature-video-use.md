@@ -3,7 +3,7 @@ title: 데이터 소스 없이 양식 데이터 모델 만들기
 seo-title: 데이터 소스 없이 양식 데이터 모델 만들기
 description: AEM Forms 6.4부터 이제 데이터 소스와 연결하지 않고도 FDM(양식 데이터 모델)을 정의할 수 있습니다. 다음 비디오는 데이터 소스 없이 FDM을 생성하는 단계를 안내합니다.
 seo-description: AEM Forms 6.4부터 이제 데이터 소스와 연결하지 않고도 FDM(양식 데이터 모델)을 정의할 수 있습니다. 다음 비디오는 데이터 소스 없이 FDM을 생성하는 단계를 안내합니다.
-feature: 워크플로우
+feature: Workflow
 topics: integrations
 audience: developer
 doc-type: technical video
@@ -11,9 +11,9 @@ activity: setup
 version: 6.4,6.5
 uuid: eeb6165c-5465-4692-a3a9-8ef10780678d
 discoiquuid: 54fdce05-486b-4fb5-aed4-8552fe2040fd
-topic: 개발
-role: 개발자
-level: 초급
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

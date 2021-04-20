@@ -2,12 +2,12 @@
 title: Salesforce 데이터 소스를 기반으로 양식 데이터 모델 만들기
 description: RESTful 데이터 소스의 양식 데이터 모델 만들기
 solution: Experience Manager, Experience Manager Forms
-type: 설명서
-role: 개발자
-level: 초급, 중급
+type: Documentation
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: 적응형 양식
-topic: 개발
+feature: Adaptive Forms
+topic: Development
 kt: 7149
 thumbnail: 331756.jpg
 translation-type: tm+mt

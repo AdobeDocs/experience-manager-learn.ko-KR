@@ -2,12 +2,12 @@
 title: Salesforce REST API를 설명하는 Swagger 파일 만들기
 description: Swagger 파일은 API 끝점과 입력 및 출력 매개 변수를 정의합니다.
 solution: Experience Manager, Experience Manager Forms
-type: 설명서
-role: 개발자
-level: 초급, 중급
+type: Documentation
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: 적응형 양식
-topic: 개발
+feature: Adaptive Forms
+topic: Development
 kt: 7147
 thumbnail: 331754.jpg
 translation-type: tm+mt

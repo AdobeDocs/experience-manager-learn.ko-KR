@@ -1,7 +1,7 @@
 ---
 title: AEM 프로젝트 전형
 description: 'AEM Project Tranype은 AEM 프로젝트를 위한 시작점으로 최소의 모범 사례 기반 Adobe Experience Manager 프로젝트를 만듭니다. '
-feature: AEM 프로젝트 전형
+feature: AEM Project Archetype
 topics: development
 audience: developer
 doc-type: technical video
@@ -9,9 +9,9 @@ activity: understand
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 4675
 thumbnail: 32550.jpg
-topic: 개발
-role: 개발자
-level: 초급
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

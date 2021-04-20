@@ -2,11 +2,11 @@
 title: AEM Dynamic Media에서 사용자 정의 비디오 축소판 사용
 description: AEM Assets 사용자 정의 비디오 축소판은 작성자가 생성된 축소판 세트에서 해당 축소판을 선택할 수 있는 기능을 제공합니다. 비디오에 대해 생성된 축소판 수는 손쉽게 사용자 정의할 수 있습니다.
 sub-product: dynamic-media
-feature: 비디오 프로필
+feature: Video Profiles
 version: 6.3, 6.4, 6.5
-topic: 컨텐츠 관리
-role: 비즈니스 전문가
-level: 초급
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

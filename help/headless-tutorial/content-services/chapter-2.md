@@ -3,10 +3,10 @@ title: 2장 - 이벤트 컨텐츠 조각 모델 정의 - 컨텐츠 서비스
 seo-title: AEM 컨텐츠 서비스 시작하기 - 2장 - 이벤트 컨텐츠 조각 모델 정의
 description: AEM 헤드리스 자습서의 2장에서는 이벤트 생성을 위한 정규화된 데이터 구조 및 제작 인터페이스를 정의하는 데 사용되는 컨텐츠 조각 모델을 활성화 및 정의하는 방법에 대해 설명합니다.
 seo-description: AEM 헤드리스 자습서의 2장에서는 이벤트 생성을 위한 정규화된 데이터 구조 및 제작 인터페이스를 정의하는 데 사용되는 컨텐츠 조각 모델을 활성화 및 정의하는 방법에 대해 설명합니다.
-feature: 컨텐츠 조각, API
-topic: 헤드리스, 컨텐츠 관리
-role: 개발자
-level: 초급
+feature: Content Fragments, APIs
+topic: Headless, Content Management
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

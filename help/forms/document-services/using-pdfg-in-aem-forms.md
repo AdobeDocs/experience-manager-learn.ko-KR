@@ -4,16 +4,16 @@ seo-title: AEM Forms에서 PDF 사용
 description: AEM Forms을 사용하여 PDF를 만들기 위한 드래그 앤 드롭 기능 보기
 seo-description: AEM Forms을 사용하여 PDF를 만들기 위한 드래그 앤 드롭 기능 보기
 uuid: ee54edb4-a7b1-42ed-81ea-cb6bef6cf97f
-feature: pdf 생성기
+feature: pdf-generator
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
 discoiquuid: 7f570f12-ce43-4da7-a249-ef6bd0fe48e5
-topic: 개발
-role: 개발자
-level: 중간
+topic: Development
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

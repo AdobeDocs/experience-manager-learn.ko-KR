@@ -3,15 +3,15 @@ title: AEM Forms의 멀티 시리즈 차트
 seo-title: AEM Forms의 멀티 시리즈 차트
 description: 적절한 양식 데이터 모델을 작성하여 인쇄 및 웹 채널 문서에 다양한 시리즈 차트를 만들 수 있습니다.
 seo-description: 적절한 양식 데이터 모델을 작성하여 인쇄 및 웹 채널 문서에 다양한 시리즈 차트를 만들 수 있습니다.
-feature: 대화형 통신
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.5
-topic: 개발
-role: 개발자
-level: 초급
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -5,15 +5,15 @@ description: 첫 번째 인터랙티브 커뮤니케이션 문서를 만들기 �
 seo-description: 첫 번째 인터랙티브 커뮤니케이션 문서를 만들기 위한 다단계 자습서의 6부분입니다. 이 부분에서 웹 채널용 대화형 통신을 만듭니다.
 uuid: a1b29c5b-a323-4bda-aa99-5fb98614b690
 discoiquuid: b44ff855-9ead-471e-8f0f-b562b88a5337
-feature: 대화형 통신
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
-topic: 개발
-role: 개발자
-level: 초급
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

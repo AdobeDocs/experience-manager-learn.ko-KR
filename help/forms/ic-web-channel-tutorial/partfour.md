@@ -4,16 +4,16 @@ seo-title: 웹 채널 문서 템플릿 만들기 AEM Forms
 description: 첫 번째 인터랙티브한 커뮤니케이션 문서를 만들기 위한 여러 단계로 구성된 자습서의 4번째 부분입니다. 이 부분에서 웹 채널 문서용 템플릿을 만듭니다.
 seo-description: 첫 번째 인터랙티브한 커뮤니케이션 문서를 만들기 위한 여러 단계로 구성된 자습서의 4번째 부분입니다. 이 부분에서 웹 채널 문서용 템플릿을 만듭니다.
 uuid: b4c9f68b-3091-4f87-988d-705f0296a8d8
-feature: 대화형 통신
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 discoiquuid: 95ca401b-69ea-49e2-a9ae-e144444e481e
-topic: 개발
-role: 개발자
-level: 초급
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

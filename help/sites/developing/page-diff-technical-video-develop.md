@@ -1,15 +1,15 @@
 ---
 title: AEM Sites의 페이지 차이에 대한 개발
 description: 이 비디오에서는 AEM Sites의 페이지 차이 기능에 대한 사용자 지정 스타일을 제공하는 방법을 보여줍니다.
-feature: 작성
+feature: Authoring
 topics: development
 audience: developer
 doc-type: technical video
 activity: develop
 version: 6.3, 6.4, 6.5
-topic: 개발
-role: 개발자
-level: 초급
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

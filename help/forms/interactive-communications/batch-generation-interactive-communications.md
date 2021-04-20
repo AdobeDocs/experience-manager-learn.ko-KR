@@ -1,15 +1,15 @@
 ---
 title: Batch API를 사용하여 대화형 통신 문서 생성
 description: 일괄 처리 API를 사용하여 인쇄 채널 문서를 생성하기 위한 샘플 에셋
-feature: 대화형 통신
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.5
-topic: 개발
-role: 개발자
-level: 중간
+topic: Development
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -1,7 +1,7 @@
 ---
 title: Adobe Analytics을 사용하여 페이지 데이터 수집
 description: 이벤트 기반 Adobe 클라이언트 데이터 레이어를 사용하여 Adobe Experience Manager으로 구축된 웹 사이트에서 사용자 활동에 대한 데이터를 수집합니다. Experience Platform Launch에서 규칙을 사용하여 이러한 이벤트를 수신하고 데이터를 Adobe Analytics 보고서 세트로 전송하는 방법을 알아봅니다.
-feature: 분석
+feature: analytics
 topics: integrations
 audience: administrator
 doc-type: tutorial
@@ -9,9 +9,9 @@ activity: setup
 version: cloud-service
 kt: 5332
 thumbnail: 5332-collect-data-analytics.jpg
-topic: 통합
-role: 개발자
-level: 중간
+topic: Integrations
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

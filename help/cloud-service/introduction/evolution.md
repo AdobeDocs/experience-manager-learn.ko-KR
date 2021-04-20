@@ -1,10 +1,10 @@
 ---
 title: Cloud Service의 진화
 description: 'AEM의 내역과 사내 AEM, Adobe Managed Services AEM 및 Cloud Service의 차이점을 살펴볼 수 있습니다. '
-role: 건축가, 개발자
-level: 초급
-type: 자습서
-topic: 아키텍처
+role: Architect, Developer
+level: Beginner
+type: Tutorial
+topic: Architecture
 kt: 6920
 thumbnail: 330543.jpg
 translation-type: tm+mt

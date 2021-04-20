@@ -1,7 +1,7 @@
 ---
 title: 로그
 description: 로그는 AEM에서 Cloud Service으로 AEM 애플리케이션을 디버깅하기 위해 최전선으로 사용되지만 배포된 AEM 응용 프로그램에서 적절한 로깅에 의존합니다.
-feature: 개발자 도구
+feature: Developer Tools
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -9,9 +9,9 @@ activity: develop
 audience: developer
 kt: 5432
 thumbnail: kt-5432.jpg
-topic: 개발
-role: 개발자
-level: 초급
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

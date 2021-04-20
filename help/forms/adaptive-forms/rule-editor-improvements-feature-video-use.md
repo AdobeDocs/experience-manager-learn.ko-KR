@@ -4,16 +4,16 @@ seo-title: AEM Forms의 규칙 편집기 개선 사항
 description: '규칙 편집기를 사용하여 AEM 응용 Forms에 논리를 추가할 수 있습니다. AEM 6.3은 여러 가지 방법으로 규칙 편집기를 개선하여 기술적 지식이 있는 사용자와 전문 기술 지식이 없는 사용자 모두 인텔리전스를 보다 빠르고 손쉽게 추가할 수 있도록 합니다. '
 seo-description: '규칙 편집기를 사용하여 AEM 응용 Forms에 논리를 추가할 수 있습니다. AEM 6.3은 여러 가지 방법으로 규칙 편집기를 개선하여 기술적 지식이 있는 사용자와 전문 기술 지식이 없는 사용자 모두 인텔리전스를 보다 빠르고 손쉽게 추가할 수 있도록 합니다. '
 uuid: 35e8cc7c-04cf-43b4-bbc7-41bfd909cfba
-feature: 적응형 양식
+feature: Adaptive Forms
 topics: authoring
 audience: author
 doc-type: technical video
 activity: use
 version: 6.3,6.4,6.5.
 discoiquuid: 51750b3f-1fda-43ae-b3ed-1eede83b19d5
-topic: 관리
-role: 개발자
-level: 초급
+topic: Administration
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -1,16 +1,16 @@
 ---
 title: Cloud Service으로 AEM 디버깅
 description: AEM 개발자는 AEM의 다양한 측면을 Cloud Service으로 이해하고 디버깅하는 방법을 파악하고 구축 및 배포에서부터 AEM 애플리케이션 실행에 대한 세부 정보를 얻는 데 이르기까지 셀프 서비스, 확장 가능한 클라우드 인프라 등을 기반으로 합니다.
-feature: 개발자 도구
+feature: Developer Tools
 topics: development
 version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5346
-topic: 개발
-role: 개발자
-level: 초급, 중급
+topic: Development
+role: Developer
+level: Beginner, Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

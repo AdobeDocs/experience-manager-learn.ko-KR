@@ -2,10 +2,10 @@
 title: AEM에서 Workflow를 관리하는 방법
 description: 'AEM 워크플로우 관리는 사용자가 워크플로우 중인 컨텐츠를 보다 자세히 볼 수 있도록 하며 워크플로우 모델 정의를 보다 손쉽게 관리할 수 있도록 해줍니다. '
 version: 6.5, cloud-service
-feature: 워크플로우
-topic: 컨텐츠 관리
-role: 관리자
-level: 중간
+feature: Workflow
+topic: Content Management
+role: Administrator
+level: Intermediate
 kt: 2557
 thumbnail: 27848.jpg
 translation-type: tm+mt

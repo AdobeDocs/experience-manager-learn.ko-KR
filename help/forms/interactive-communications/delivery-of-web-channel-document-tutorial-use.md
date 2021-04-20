@@ -3,15 +3,15 @@ title: 인터랙티브 커뮤니케이션 문서 전달 - 웹 채널 AEM Forms
 seo-title: 인터랙티브 커뮤니케이션 문서 전달 - 웹 채널 AEM Forms
 description: 이메일의 링크를 통한 웹 채널 문서 전달
 seo-description: 이메일의 링크를 통한 웹 채널 문서 전달
-feature: 대화형 통신
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
-topic: 개발
-role: 개발자
-level: 초급
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

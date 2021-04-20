@@ -2,10 +2,10 @@
 title: AEM Assets을 사용하여 고급 번역 검색 설정
 description: 고급 번역 검색을 사용하면 영어 이외의 검색어를 사용하여 영어 컨텐츠로 확인할 수 있습니다. Smart Translation Search를 위해 AEM을 설정하려면 Apache Oak Search Machine Translation OSGi 번들과 번역 규칙이 포함된 적절한 무료 및 오픈 소스 Apache Joshua 언어 팩을 설치하고 구성해야 합니다.
 version: 6.3, 6.4, 6.5
-feature: 검색
-topic: 컨텐츠 관리
-role: 개발자
-level: 초급
+feature: Search
+topic: Content Management
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

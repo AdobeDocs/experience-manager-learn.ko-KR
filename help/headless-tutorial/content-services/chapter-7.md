@@ -1,10 +1,10 @@
 ---
 title: 7장 - 모바일 앱에서 AEM 컨텐츠 서비스 소비 - 컨텐츠 서비스
 description: 자습서의 7장은 AEM Content Services에서 제작한 콘텐츠를 사용하기 위해 Android Mobile 앱을 실행합니다.
-feature: 컨텐츠 조각, API
-topic: 헤드리스, 컨텐츠 관리
-role: 개발자
-level: 초급
+feature: Content Fragments, APIs
+topic: Headless, Content Management
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

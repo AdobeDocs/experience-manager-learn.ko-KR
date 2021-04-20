@@ -1,7 +1,7 @@
 ---
 title: 요약 구성 요소 사용자 지정
 description: 패키지에서 다음 양식으로 이동하는 기능을 포함하도록 요약 단계 구성 요소를 확장합니다.
-feature: 적응형 양식
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,9 +9,9 @@ activity: implement
 version: 6.4,6.5
 kt: 6894
 thumbnail: 6894.jpg
-topic: 개발
-role: 개발자
-level: 경험
+topic: Development
+role: Developer
+level: Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

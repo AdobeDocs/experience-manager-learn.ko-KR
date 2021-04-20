@@ -3,15 +3,15 @@ title: 인쇄 채널 문서를 위한 2개의 열 레이아웃 만들기
 seo-title: 인쇄 채널 문서를 위한 2개의 열 레이아웃 만들기
 description: 인쇄 채널 문서를 위한 2개의 열 레이아웃 만들기
 seo-description: 인쇄 채널 문서를 위한 2개의 열 레이아웃 만들기
-feature: 대화형 통신
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
-topic: 개발
-role: 개발자
-level: 중간
+topic: Development
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

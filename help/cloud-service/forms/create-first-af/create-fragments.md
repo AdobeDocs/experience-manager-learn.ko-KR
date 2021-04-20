@@ -2,12 +2,12 @@
 title: 적응형 양식 조각 만들기
 description: 조각은 양식의 재사용 가능한 부분입니다. 예를 들어, 조각에는 주소 블록 또는 법적 텍스트가 포함될 수 있습니다.
 solution: Experience Manager Forms
-type: 설명서
-role: 개발자
-level: 초급, 중급
+type: Documentation
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: 적응형 양식
-topic: 개발
+feature: Adaptive Forms
+topic: Development
 kt: 7383
 thumbnail: 332231.jpg
 translation-type: tm+mt

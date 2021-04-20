@@ -2,12 +2,12 @@
 title: 양식 데이터 모델의 제출 작업을 사용하여 양식 제출
 description: 양식 제출 시 리드 개체를 만들어 Salesforce 통합을 테스트하기 위한 적응형 양식 만들기
 solution: Experience Manager, Experience Manager Forms
-type: 설명서
-role: 개발자
-level: 초급, 중급
+type: Documentation
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: 적응형 양식
-topic: 개발
+feature: Adaptive Forms
+topic: Development
 kt: 7151
 thumbnail: 331758.jpg
 translation-type: tm+mt

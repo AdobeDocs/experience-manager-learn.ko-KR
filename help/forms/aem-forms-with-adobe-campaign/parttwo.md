@@ -4,16 +4,16 @@ seo-title: 적응형 양식 제출 시 캠페인 프로필 만들기
 description: 이 문서에서는 적응형 양식 제출 시 Adobe Campaign Standard에서 프로필을 만드는 데 필요한 단계에 대해 설명합니다. 이 프로세스에서는 사용자 지정 제출 메커니즘을 사용하여 적응형 양식 제출을 처리합니다.
 seo-description: 이 문서에서는 적응형 양식 제출 시 Adobe Campaign Standard에서 프로필을 만드는 데 필요한 단계에 대해 설명합니다. 이 프로세스에서는 사용자 지정 제출 메커니즘을 사용하여 적응형 양식 제출을 처리합니다.
 uuid: f3cb7b3c-1a1c-49eb-9447-a9e52c675244
-feature: 적응형 Forms, 양식 데이터 모델
+feature: Adaptive Forms, Form Data Model
 topics: integrations
 audience: developer
 doc-type: tutorial
 activity: setup
 version: 6.3,6.4,6.5
 discoiquuid: 46ec4136-4898-4b01-86bb-ac638a29b242
-topic: 개발
-role: 개발자
-level: 경험
+topic: Development
+role: Developer
+level: Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

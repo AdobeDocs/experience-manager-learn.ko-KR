@@ -1,9 +1,9 @@
 ---
 title: AEM Sites에서 페이지 속성 확장
 description: Adobe Experience Manager Sites에서 페이지 속성의 메타데이터 필드를 확장하는 방법을 알아봅니다. 이 비디오는 Sling Resource Combination의 기능을 사용하여 이러한 작업을 수행하는 가장 효과적인 방법을 자세히 설명합니다.
-topic: 개발
-feature: 코어 구성 요소
-role: 개발자
+topic: Development
+feature: Core Components
+role: Developer
 version: cloud-service
 kt: 243
 thumbnail: 25173.jpg

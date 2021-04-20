@@ -4,16 +4,16 @@ seo-title: 양식 데이터 모델 만들기
 description: 첫 번째 인터랙티브 커뮤니케이션 문서를 만들기 위한 다단계 자습서의 3부분입니다. 이 부분에서는 양식 데이터 모델을 만듭니다. 양식 데이터 모델을 사용하면 서로 다른 데이터 소스를 구성하고 연결할 수 있습니다.연결된 데이터 소스 간에 비즈니스 엔터티 및 서비스의 통합 데이터 표현 스키마를 만들 수 있는 직관적인 사용자 인터페이스를 제공합니다.다음 비디오에서는 양식 데이터 모델을 만드는 단계를 안내합니다.
 seo-description: 첫 번째 인터랙티브 커뮤니케이션 문서를 만들기 위한 다단계 자습서의 3부분입니다. 이 부분에서는 양식 데이터 모델을 만듭니다. 양식 데이터 모델을 사용하면 서로 다른 데이터 소스를 구성하고 연결할 수 있습니다. 또한 직관적인 사용자 인터페이스를 통해 연결된 데이터 소스에서 비즈니스 엔티티 및 서비스의 통합 데이터 표현 스키마를 만들 수 있습니다. 다음 비디오에서는 양식 데이터 모델을 만드는 단계를 안내합니다.
 uuid: c3bfd212-049d-4abd-9849-64129dae2a83
-feature: 대화형 통신
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 discoiquuid: 723b7ef3-f552-4710-b2a4-410b0b1b7525
-topic: 개발
-role: 개발자
-level: 초급
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

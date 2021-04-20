@@ -4,7 +4,7 @@ seo-title: Forms Designer를 사용하여 레이아웃 만들기
 description: 인쇄 채널용 첫 번째 대화형 통신 문서를 만들기 위한 다중 부분 자습서 4의 일부입니다.이 부분에서 AEM Forms Designer를 사용하여 만든 레이아웃 파일을 봅니다.
 seo-description: 인쇄 채널용 첫 번째 대화형 통신 문서를 만들기 위한 다중 부분 자습서 4의 일부입니다.이 부분에서 AEM Forms Designer를 사용하여 만든 레이아웃 파일을 봅니다.
 uuid: 2f014c58-1ae1-40e8-a45d-7ffe9c86f693
-feature: 대화형 통신
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: tutorial
@@ -13,9 +13,9 @@ version: 6.4,6.5
 discoiquuid: 17f4cdbb-079b-4fe3-861d-cfa0c03d30dd
 kt: 5957
 thumbnail: 37890.jpg
-topic: 개발
-role: 개발자
-level: 초급
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

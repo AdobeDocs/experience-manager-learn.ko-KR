@@ -2,10 +2,10 @@
 title: AEM 경험 조각 사용
 description: 컨텐츠 작성자는 경험 조각을 사용하여 사이트 페이지 및 제3자 시스템을 비롯한 모든 채널에서 컨텐츠를 재사용할 수 있습니다.
 sub-product: 사이트, 컨텐츠 서비스
-feature: 경험 구성요소
-topic: 컨텐츠 관리
-role: 건축가, 개발자, 관리자, 비즈니스 전문가
-level: 초급
+feature: Experience Fragments
+topic: Content Management
+role: Architect, Developer, Administrator, Business Practitioner
+level: Beginner
 doc-type: feature video
 version: cloud-service
 kt: 194

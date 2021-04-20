@@ -1,7 +1,7 @@
 ---
 title: Cloud Service 개발용으로 AEM용 개발 도구 설정
 description: AEM 로컬에서 개발하는 데 필요한 모든 기본 툴이 포함된 로컬 개발 시스템을 설정할 수 있습니다.
-feature: 개발자 도구
+feature: Developer Tools
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -9,9 +9,9 @@ activity: develop
 audience: developer
 kt: 4267
 thumbnail: 25907.jpg
-topic: 개발
-role: 개발자
-level: 초급
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

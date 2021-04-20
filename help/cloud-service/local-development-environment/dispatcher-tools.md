@@ -2,7 +2,7 @@
 title: AEM용 디스패처 도구를 Cloud Service 개발으로 설정
 description: AEM SDK의 Dispatcher Tools를 사용하면 Dispatcher를 로컬에서 손쉽게 설치, 실행 및 해결할 수 있으므로 AEM(Adobe Experience Manager) 프로젝트의 로컬 개발을 수월하게 수행할 수 있습니다.
 sub-product: foundation
-feature: Dispatcher, 개발자 도구
+feature: Dispatcher, Developer Tools
 topics: development, caching, security
 version: cloud-service
 doc-type: tutorial
@@ -10,9 +10,9 @@ activity: develop
 audience: developer
 kt: 4679
 thumbnail: 30603.jpg
-topic: 개발
-role: 개발자
-level: 초급
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

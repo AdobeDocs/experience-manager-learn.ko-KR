@@ -2,13 +2,13 @@
 title: AEM을 사용하여 자산을 게시하는 방법
 description: AEM 작성자에서 AEM 게시로 자산 및 해당 표현물을 게시하는 방법에 대해 알아봅니다.
 sub-product: 자산
-feature: 자산 관리
+feature: Asset Management
 version: cloud-service
 kt: 330932
 thumbnail: 32194.jpg
-topic: 컨텐츠 관리
-role: 비즈니스 전문가
-level: 초급
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

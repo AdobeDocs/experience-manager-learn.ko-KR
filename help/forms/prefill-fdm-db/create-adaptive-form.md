@@ -1,7 +1,7 @@
 ---
 title: 적응형 양식 만들기
 description: 양식 데이터 모델의 자동 완성 서비스를 사용하도록 적응형 양식 만들기 및 구성
-feature: 적응형 양식
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: article
@@ -9,9 +9,9 @@ activity: implement
 version: 6.4,6.5
 kt: 5813
 thumbnail: kt-5813.jpg
-topic: 개발
-role: 비즈니스 전문가
-level: 초급
+topic: Development
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

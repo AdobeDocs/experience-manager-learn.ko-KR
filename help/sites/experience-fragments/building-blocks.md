@@ -3,10 +3,10 @@ title: 경험 조각 구성 블록 사용 방법
 description: 구성 블록은 경험 조각의 다양한 변형에서 작성된 구성 요소를 재사용할 수 있도록 하는 경험 조각의 하위 기능입니다.
 sub-product: 사이트, 컨텐츠 서비스
 version: cloud-service
-feature: 경험 구성요소
-topic: 컨텐츠 관리
-level: 초급, 중급
-role: 건축가, 개발자, 관리자, 비즈니스 전문가
+feature: Experience Fragments
+topic: Content Management
+level: Beginner, Intermediate
+role: Architect, Developer, Administrator, Business Practitioner
 doc-type: feature video
 kt: 660
 thumbnail: 331786.jpg

@@ -2,12 +2,12 @@
 title: AEM Sites 핵심 구성 요소에서 Dynamic Media 사용
 description: Adobe Experience Manager Sites과 함께 Dynamic Media을 사용하는 방법을 알아봅니다. Experience Manager 코어 구성 요소에 포함된 이미지 구성 요소는 Dynamic Media에 대한 내장된 지원을 제공합니다. 이미지 구성 요소를 사용하면 컨텐츠 작성자가 AEM Sites 페이지에서 이미지 사전 설정, 스마트 자르기 및 이미지 수정자와 같은 Dynamic Media 기능을 사용할 수 있습니다.
 sub-product: dynamic-media
-feature: 핵심 구성 요소, 스마트 자르기, 이미지 프로필, 이미지 사전 설정
+feature: Core Components, Smart Crop, Image profiles, Image presets
 version: cloud-service
 kt: 6630
-topic: 컨텐츠 관리
-role: 비즈니스 전문가
-level: 초급
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

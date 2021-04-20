@@ -9,9 +9,9 @@ activity: implement
 version: 6.4,6.5
 kt: 4419
 thumbnail: kt-4419.jpg
-topic: 개발
-role: 비즈니스 전문가
-level: 초급
+topic: Development
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -1,11 +1,11 @@
 ---
 title: AEM Assets에서 주석 사용자 정의
 description: AEM 개발자는 PDF로 출력할 때 AEM Assets 포맷 및 스타일을 구성할 수 있습니다.
-feature: 협업
+feature: Collaboration
 version: 6.3, 6.4, 6.5
-topic: 협업
-role: 개발자
-level: 중간
+topic: Collaboration
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -1,16 +1,16 @@
 ---
 title: OSGi 웹 콘솔을 사용하여 AEM SDK 디버깅
 description: AEM SDK의 로컬 quickstart에는 애플리케이션이 어떻게 인식되고 AEM 내에서 작동하는지 이해하는 데 유용한 다양한 정보와 설명을 로컬 AEM 런타임에 제공하는 OSGi 웹 콘솔이 있습니다.
-feature: 개발자 도구
+feature: Developer Tools
 topics: development
 version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5265, 5366, 5267
-topic: 개발
-role: 개발자
-level: 초급, 중급
+topic: Development
+role: Developer
+level: Beginner, Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

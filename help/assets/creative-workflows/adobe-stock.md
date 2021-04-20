@@ -3,9 +3,9 @@ title: AEM Assets에서 Adobe Stock 에셋 사용
 description: 'AEM은 AEM에서 바로 Adobe Stock 에셋을 검색, 미리 보기, 저장 및 라이선스를 부여할 수 있는 기능을 제공합니다. 조직은 이제 Adobe Stock Enterprise 플랜과 AEM Assets을 통합하여 이제 AEM의 강력한 에셋 관리 기능과 함께 라이선스가 부여된 에셋을 크리에이티브 및 마케팅 프로젝트에 광범위하게 사용할 수 있습니다. '
 feature: Adobe Stock
 version: 6.4, 6.5
-topic: 컨텐츠 관리
-role: 비즈니스 전문가
-level: 초급
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -1,10 +1,10 @@
 ---
 title: AEM은 Cloud Service란?
 description: Cloud Service으로 AEM이 무엇인지, 다른 버전의 Adobe Experience Manager과 어떻게 다른지 살펴보십시오.
-role: 건축가, 개발자
-level: 초급
-type: 자습서
-topic: 아키텍처
+role: Architect, Developer
+level: Beginner
+type: Tutorial
+topic: Architecture
 kt: 6923
 thumbnail: 330546.jpg
 translation-type: tm+mt

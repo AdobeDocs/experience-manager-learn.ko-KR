@@ -4,14 +4,14 @@ description: 콘텐츠 전송 도구는 AEM의 온프레미스 또는 AMS 호스
 version: cloud-service
 doc-type: technical-video
 topics: migration
-feature: 마이그레이션
+feature: Migration
 activity: develop
 audience: developer
 kt: 5352
 thumbnail: kt-5352.jpg
-topic: 마이그레이션
-role: 건축가, 개발자
-level: 초급
+topic: Migration
+role: Architect, Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

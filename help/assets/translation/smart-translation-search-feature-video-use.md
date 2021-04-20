@@ -2,10 +2,10 @@
 title: AEM Assets에서 고급 번역 검색 사용
 description: Smart Translation Search를 사용하면 AEM 컨텐츠(Assets 및 Pages) 전체에서 자동으로 언어 간 검색을 수행할 수 있으므로 50개 이상의 언어를 지원하고 수동 컨텐츠 번역 필요성을 줄일 수 있습니다.
 version: 6.3, 6.4, 6.5
-feature: 검색
-topic: 컨텐츠 관리
-role: 비즈니스 전문가
-level: 초급
+feature: Search
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

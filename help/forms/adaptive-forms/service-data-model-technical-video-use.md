@@ -4,16 +4,16 @@ seo-title: AEM Forms에서 서비스 데이터 모델 사용
 description: AEM 응용 Forms 규칙 편집기는 양식 데이터 모델에서 생성된 서비스를 활용할 수 있습니다.
 seo-description: AEM 응용 Forms 규칙 편집기는 양식 데이터 모델에서 생성된 서비스를 활용할 수 있습니다.
 uuid: fb4a331f-231a-4864-9325-6dceb288ad75
-feature: 적응형 Forms, 양식 데이터 모델
+feature: Adaptive Forms, Form Data Model
 topics: integrations
 audience: developer
 doc-type: technical video
 activity: setup
 version: 6.3,6.4,6.5
 discoiquuid: e3ff47c3-9ab3-41cb-83ba-38f3eb7b2299
-topic: 개발
-role: 개발자
-level: 초급
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

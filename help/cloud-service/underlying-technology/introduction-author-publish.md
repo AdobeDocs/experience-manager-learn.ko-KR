@@ -8,10 +8,10 @@ activity: understand
 version: cloud-service
 kt: 4639
 thumbnail: 32033.jpg
-feature: 게시
-topic: 아키텍처
-role: 건축가, 개발자
-level: 초급
+feature: Publishing
+topic: Architecture
+role: Architect, Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

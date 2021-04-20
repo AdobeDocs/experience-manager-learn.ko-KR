@@ -1,10 +1,10 @@
 ---
 title: AEM Assets의 검색 활성화 소개
 description: Adobe Experience Manager에서 에셋의 검색 관련성을 높이기 위해 키워드 및 구문을 추가하는 방법을 살펴볼 수 있습니다.
-topic: 컨텐츠 관리
-feature: 검색
-role: 비즈니스 전문가
-level: 중간
+topic: Content Management
+feature: Search
+role: Business Practitioner
+level: Intermediate
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 103
 thumbnail: 16766.jpg

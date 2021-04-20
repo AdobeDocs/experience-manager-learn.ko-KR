@@ -4,7 +4,7 @@ seo-title: AEM Forms에서 DataSource 구성 만들기
 description: 첫 번째 인터랙티브 커뮤니케이션 문서를 만들기 위한 여러 단계로 구성된 자습서의 2부분입니다. 이 부분에서는 REST 백업 데이터 소스를 만듭니다.  다음 비디오는 데이터 소스를 만드는 단계를 안내합니다.
 seo-description: 첫 번째 인터랙티브 커뮤니케이션 문서를 만들기 위한 여러 단계로 구성된 자습서의 2부분입니다. 이 부분에서는 REST 백업 데이터 소스를 만듭니다.  다음 비디오는 데이터 소스를 만드는 단계를 안내합니다.
 uuid: b9d5c220-3e86-4e7d-8ea0-a7f604dde925
-feature: 대화형 통신
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: tutorial
@@ -13,9 +13,9 @@ version: 6.4,6.5
 targetaudience: target-audience ongoing
 thumbnail: 27765.jpg
 kt: 5954
-topic: 개발
-role: 개발자
-level: 초급
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

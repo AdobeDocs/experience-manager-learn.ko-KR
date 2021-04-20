@@ -2,15 +2,15 @@
 seo: Set up public and private keys for use with AEM and Adobe I/O
 description: 'AEM은 공개/비공개 키 쌍을 사용하여 Adobe I/O 및 기타 웹 서비스와 안전하게 통신합니다. 이 짧은 자습서에서는 AEM 및 Adobe I/O에서 모두 작동하는 openssl 명령줄 도구를 사용하여 호환 키와 키 키스토어를 생성하는 방법을 설명합니다. '
 version: 6.4, 6.5
-feature: 사용자 및 그룹
+feature: Users and Groups
 topics: authentication, integrations
 activity: setup
 audience: architect, developer, implementer
 doc-type: tutorial
 kt: 2450
-topic: 개발
-role: 개발자
-level: 경험
+topic: Development
+role: Developer
+level: Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -1,15 +1,15 @@
 ---
 title: 적응형 양식 템플릿 만들기
 description: 템플릿은 적응형 양식의 구조와 초기 컨텐츠를 정의합니다.
-feature: 적응형 양식
+feature: Adaptive Forms
 topics: authoring
 audience: developer
 doc-type: tutorial
 activity: understand
 thumbnail: 37324.jpg
-topic: 개발
-role: 개발자
-level: 초급
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

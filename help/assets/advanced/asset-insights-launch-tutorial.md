@@ -1,11 +1,11 @@
 ---
 title: AEM Assets 및 Adobe 시작을 사용하여 자산 인사이트 설정
 description: 이 5개 비디오 시리즈에서는 Launch by Adobe을 통해 배포된 Experience Manager에 대한 자산 인사이트의 설정 및 구성을 살펴봅니다.
-feature: 자산 통찰력
+feature: Asset Insights
 version: 6.3, 6.4, 6.5
-topic: 통합
-role: 개발자
-level: 중간
+topic: Integrations
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

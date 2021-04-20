@@ -3,7 +3,7 @@ title: AEM Forms에서 사용자 정의 제출 작성
 seo-title: AEM Forms에서 사용자 정의 제출 작성
 description: 적응형 양식에 대한 사용자 정의 제출 동작을 빠르고 쉽게 만들 수 있습니다.
 seo-description: 적응형 양식에 대한 사용자 정의 제출 동작을 빠르고 쉽게 만들 수 있습니다.
-feature: 적응형 양식
+feature: Adaptive Forms
 topics: integrations
 audience: developer
 doc-type: article
@@ -11,9 +11,9 @@ activity: implement
 version: 6.3,6.4,6.5
 uuid: a26db0b9-7db4-4e80-813d-5c0438fabd1e
 discoiquuid: 28611011-2ff9-477e-b654-e62e7374096a
-topic: 개발
-role: 개발자
-level: 경험
+topic: Development
+role: Developer
+level: Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

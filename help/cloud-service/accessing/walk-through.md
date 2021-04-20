@@ -1,7 +1,7 @@
 ---
 title: AEM 설치 과정에 대한 액세스 구성
 description: Adobe AdminConsole에서 Adobe IMS 사용자, 사용자 그룹 및 제품 프로필 구성을 요약하고, AEM 작성자에서 이러한 Adobe IMS 추상적인 요소를 활용하여 특정 그룹 기반 권한을 정의 및 관리하는 방법을 자세히 설명합니다.
-feature: 사용자 및 그룹
+feature: Users and Groups
 topics: authentication, permissions
 version: cloud-service
 activity: setup
@@ -9,9 +9,9 @@ audience: administrator
 doc-type: technical video
 kt: 6061
 thumbnail: 39155.jpg
-topic: 관리, 보안
-role: 관리자
-level: 초급
+topic: Administration, Security
+role: Administrator
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

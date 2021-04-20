@@ -2,14 +2,14 @@
 title: 이미지 사전 설정
 description: Dynamic Media Classic의 이미지 사전 설정에는 특정 크기, 형식, 품질 및 선명하게 하기 방식으로 이미지를 만드는 데 필요한 모든 설정이 포함되어 있습니다. 이미지 사전 설정은 다이내믹한 크기 조정의 핵심 구성 요소입니다. Dynamic Media Classic에서 URL을 보면 이미지 사전 설정이 사용 중인지 쉽게 확인할 수 있습니다. 이미지 사전 설정에 대해 알아보고, 이러한 사전 설정이 유용한 이유와 이미지 사전 설정을 만드는 방법을 알아봅니다.
 sub-product: dynamic-media
-feature: Dynamic Media Classic, 이미지 사전 설정
+feature: Dynamic Media Classic, Image Presets
 doc-type: tutorial
 topics: development, authoring, configuring
 audience: all
 activity: use
-topic: 컨텐츠 관리
-role: 비즈니스 전문가
-level: 초급
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

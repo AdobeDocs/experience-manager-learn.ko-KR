@@ -1,7 +1,7 @@
 ---
 title: 양식 데이터 저장
 description: 데이터베이스의 새 첨부 맵과 함께 양식 데이터 저장
-feature: 적응형 양식
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,9 +9,9 @@ activity: implement
 version: 6.3,6.4,6.5
 kt: 6538
 thumbnail: 6538.jpg
-topic: 개발
-role: 개발자
-level: 경험
+topic: Development
+role: Developer
+level: Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

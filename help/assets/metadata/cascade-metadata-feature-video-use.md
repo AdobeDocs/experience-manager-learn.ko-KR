@@ -2,10 +2,10 @@
 title: AEM Assets에서 CSS 메타데이터 사용
 description: 고급 메타데이터 관리 기능을 사용하면 CSS(Cascading Field) 규칙을 만들어 AEM Assets에서 메타데이터 간의 상황에 맞는 관계를 만들 수 있습니다. 아래 비디오에서는 필드 요구 사항, 가시성 및 컨텍스트 선택에 대한 새로운 동적 규칙을 설명합니다. 또한 이 비디오는 관리자가 사용자 지정 메타데이터 스키마에 이러한 규칙을 적용하는 데 필요한 단계를 자세히 설명합니다.
 version: 6.3, 6.4, 6.5, cloud-service
-topic: 컨텐츠 관리
-feature: 메타데이터
-role: 비즈니스 전문가
-level: 중간
+topic: Content Management
+feature: Metadata
+role: Business Practitioner
+level: Intermediate
 kt: 616
 thumbnail: 20702.jpg
 translation-type: tm+mt

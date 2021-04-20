@@ -1,14 +1,14 @@
 ---
 title: CSV 형식으로 제출된 양식 데이터 내보내기
 description: 제출된 적응형 양식 데이터를 CSV 형식으로 내보내기
-feature: 적응형 양식
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: article
 activity: implement
-topic: 개발
-role: 개발자
-level: 경험
+topic: Development
+role: Developer
+level: Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -1,10 +1,10 @@
 ---
 title: AEM Sites에서 시간 변형 사용
 description: 타임워프는 작성자가 과거의 특정 시간에 페이지 상태를 신속하게 검토할 수 있는 Adobe Experience Manager Sites의 기능입니다.
-topic: 컨텐츠 관리
-feature: 작성
-role: 비즈니스 전문가
-level: 중간
+topic: Content Management
+feature: Authoring
+role: Business Practitioner
+level: Intermediate
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 3307
 thumbnail: 17453.jpg

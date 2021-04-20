@@ -1,7 +1,7 @@
 ---
 title: 구축 및 배포
 description: Adobe Cloud Manager는 Cloud Service으로 AEM에 대한 코드 작성 및 배포를 용이하게 합니다. 빌드 프로세스의 단계 중에 오류가 발생할 수 있으므로 오류를 해결하기 위한 작업이 필요합니다. 이 안내서에서는 배포의 일반적인 실패를 파악하고 이러한 오류에 가장 잘 접근하는 방법을 안내합니다.
-feature: 개발자 도구
+feature: Developer Tools
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -9,9 +9,9 @@ activity: develop
 audience: developer
 kt: 5434
 thumbnail: kt-5424.jpg
-topic: 개발
-role: 개발자
-level: 초급
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

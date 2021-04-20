@@ -1,7 +1,7 @@
 ---
 title: 요청 매개 변수 가져오기
 description: 양식 데이터 모델의 미리 채우기 서비스에서 요청 매개 변수에 액세스합니다.
-feature: 적응형 양식
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: article
@@ -9,9 +9,9 @@ activity: implement
 version: 6.4,6.5
 kt: 5815
 thumbnail: kt-5815.jpg
-topic: 개발
-role: 개발자
-level: 초급
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

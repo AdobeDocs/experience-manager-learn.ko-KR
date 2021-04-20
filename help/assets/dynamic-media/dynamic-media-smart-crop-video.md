@@ -2,13 +2,13 @@
 title: 비디오에 Dynamic Media 스마트 자르기 사용
 description: Dynamic Media Smart Crop for video는 Adobe Sensei을 사용하여 비디오의 관심 영역을 지능적으로 추적하므로 모든 화면 크기에서 비디오가 최상의 상태로 표시되도록 합니다.
 sub-product: dynamic-media
-feature: 스마트 자르기, 비디오 프로필, 뷰어 사전 설정
+feature: Smart Crop, Video Profiles, Viewer Presets
 version: cloud-service
 kt: 5977
 thumbnail: 37958.jpg
-topic: 컨텐츠 관리
-role: 비즈니스 전문가
-level: 초급
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

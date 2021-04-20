@@ -1,7 +1,7 @@
 ---
 title: AEM용 SSL 사용
 description: Adobe Experience Manager의 SSL 설정 마법사를 사용하여 HTTPS를 통해 실행할 AEM 인스턴스를 설정합니다.
-feature: 적응형 양식
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,9 +9,9 @@ activity: implement
 version: 6.4,6.5
 thumbnail: 17993.jpg
 kt: 6046
-topic: 개발
-role: 관리자
-level: 중간
+topic: Development
+role: Administrator
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

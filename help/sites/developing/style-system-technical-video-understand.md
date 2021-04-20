@@ -1,15 +1,15 @@
 ---
 title: AEM 스타일 시스템의 코드 작성 방법 이해
 description: 이 비디오에서는 스타일 시스템을 사용하여 Adobe Experience Manager의 핵심 제목 구성 요소의 스타일을 지정하는 데 사용되는 CSS(또는 LESS) 및 JavaScript의 구조와 이러한 스타일이 HTML 및 DOM에 적용되는 방법을 살펴봅니다.
-feature: 스타일 시스템
+feature: Style System
 topics: development, components, front-end-development
 audience: developer, implementer
 doc-type: technical video
 activity: understand
 version: 6.4, 6.5
-topic: 개발
-role: 개발자
-level: 중간, 경험
+topic: Development
+role: Developer
+level: Intermediate, Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

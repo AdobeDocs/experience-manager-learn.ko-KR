@@ -4,16 +4,16 @@ seo-title: 양식 데이터 모델을 사용하여 이진 데이터 게시
 description: 양식 데이터 모델을 사용하여 이진 데이터를 AEM DAM에 게시
 seo-description: 양식 데이터 모델을 사용하여 이진 데이터를 AEM DAM에 게시
 uuid: dd344ed8-69f7-4d63-888a-3c96993fe99d
-feature: 워크플로우
+feature: Workflow
 topics: integrations
 audience: developer
 doc-type: article
 activity: setup
 version: 6.4,6.5
 discoiquuid: 6e99df7d-c030-416b-83d2-24247f673b33
-topic: 개발
-role: 개발자
-level: 중간
+topic: Development
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

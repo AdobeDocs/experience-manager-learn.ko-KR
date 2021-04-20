@@ -3,10 +3,10 @@ title: AEM 경험 조각 및 Adobe Target을 사용한 개인화
 seo-title: Adobe Experience Manager(AEM) 경험 조각 및 Adobe Target을 사용한 개인화
 description: Adobe Experience Manager 경험 조각 및 Adobe Target을 사용하여 개인화된 경험을 제작 및 전달하는 방법을 보여주는 엔드 투 엔드 튜토리얼
 seo-description: Adobe Experience Manager 경험 조각 및 Adobe Target을 사용하여 개인화된 경험을 제작 및 전달하는 방법을 보여주는 엔드 투 엔드 튜토리얼
-feature: 경험 구성요소
-topic: 개인화
-role: 개발자
-level: 중간
+feature: Experience Fragments
+topic: Personalization
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

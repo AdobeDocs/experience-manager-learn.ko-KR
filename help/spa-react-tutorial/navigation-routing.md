@@ -2,7 +2,7 @@
 title: 내비게이션 및 라우팅 추가 | AEM SPA 편집기 시작 및 반응
 description: SPA Editor SDK를 사용하여 AEM 페이지에 매핑하여 SPA에서 여러 보기를 지원하는 방법을 알아봅니다. 동적 탐색은 React Router를 사용하여 구현되고 기존 Header 구성 요소에 추가됩니다.
 sub-product: 사이트
-feature: SPA 편집기
+feature: SPA Editor
 topics: development
 version: cloud-service
 activity: develop
@@ -10,8 +10,8 @@ audience: developer
 kt: 4988
 thumbnail: 4988-spa-react.jpg
 topic: SPA
-role: 개발자
-level: 초급
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

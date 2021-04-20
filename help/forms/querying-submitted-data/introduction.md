@@ -3,15 +3,15 @@ title: JSON 스키마 및 데이터와 함께 AEM Forms
 seo-title: JSON 스키마 및 데이터와 함께 AEM Forms
 description: JSON 스키마를 사용하여 적응형 양식을 만들고 제출된 데이터를 쿼리하는 단계를 단계별로 안내합니다.
 seo-description: JSON 스키마를 사용하여 적응형 양식을 만들고 제출된 데이터를 쿼리하는 단계를 단계별로 안내합니다.
-feature: 적응형 양식
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.3,6.4,6.5
-topic: 개발
-role: 개발자
-level: 경험
+topic: Development
+role: Developer
+level: Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

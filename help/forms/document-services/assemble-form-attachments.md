@@ -1,7 +1,7 @@
 ---
 title: 양식 첨부 파일 조합
 description: 지정된 순서로 양식 첨부 파일 취합
-feature: 어셈블러
+feature: Assembler
 topics: development
 audience: developer
 doc-type: article
@@ -9,9 +9,9 @@ activity: implement
 version: 6.4,6.5
 kt: 6406
 thumbnail: kt-6406.jpg
-topic: 개발
-role: 개발자
-level: 경험
+topic: Development
+role: Developer
+level: Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

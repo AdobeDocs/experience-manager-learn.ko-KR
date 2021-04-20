@@ -5,15 +5,15 @@ description: reducer 함수는 차트에 표시된 값을 집계하거나 그룹
 seo-description: reducer 함수는 차트에 표시된 값을 집계하거나 그룹화하는 데 사용됩니다.다음 비디오에서는 reducer 함수 사용에 관련된 단계를 안내합니다.
 uuid: e9bd8bda-48ea-4a02-95c4-02aedafdb640
 discoiquuid: 6fef8341-8fd5-4d82-9f69-2b8be7cd22db
-feature: 대화형 통신
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: technical video
 activity: use
 version: 6.4,6.5
-topic: 개발
-role: 개발자
-level: 중간
+topic: Development
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

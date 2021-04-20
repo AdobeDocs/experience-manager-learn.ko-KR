@@ -1,7 +1,7 @@
 ---
 title: 저장된 적응형 양식 검색
 description: 저장된 데이터로 적응형 양식을 렌더링하는 서블릿
-feature: 적응형 양식
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,9 +9,9 @@ activity: implement
 version: 6.4,6.5
 kt: 6553
 thumbnail: 6553.jpg
-topic: 개발
-role: 개발자
-level: 경험
+topic: Development
+role: Developer
+level: Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

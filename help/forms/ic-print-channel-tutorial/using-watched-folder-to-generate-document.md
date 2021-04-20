@@ -4,7 +4,7 @@ seo-title: 감시 폴더를 사용하여 인쇄 채널 문서 생성
 description: 이 튜토리얼은 인쇄 채널용 첫 인터랙티브 커뮤니케이션 문서를 만들기 위한 여러 단계로 구성된 10개의 튜토리얼을 제공합니다. 이 부분에서는 감시 폴더 메커니즘을 사용하여 인쇄 채널 문서를 생성합니다.
 seo-description: 이 튜토리얼은 인쇄 채널용 첫 인터랙티브 커뮤니케이션 문서를 만들기 위한 여러 단계로 구성된 10개의 튜토리얼을 제공합니다. 이 부분에서는 감시 폴더 메커니즘을 사용하여 인쇄 채널 문서를 생성합니다.
 uuid: 9e39f4e3-1053-4839-9338-09961ac54f81
-feature: 대화형 통신
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: tutorial
@@ -12,9 +12,9 @@ activity: implement
 version: 6.4,6.5
 contentOwner: gbedekar
 discoiquuid: 23fbada3-d776-4b77-b381-22d3ec716ae9
-topic: 개발
-role: 개발자
-level: 초급
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

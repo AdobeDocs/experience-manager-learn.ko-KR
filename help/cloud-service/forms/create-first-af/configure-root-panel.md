@@ -2,12 +2,12 @@
 title: 루트 패널 구성
 description: 루트 패널에 하위 패널을 추가합니다.
 solution: Experience Manager Forms
-type: 설명서
-role: 개발자
-level: 초급, 중급
+type: Documentation
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: 적응형 양식
-topic: 개발
+feature: Adaptive Forms
+topic: Development
 kt: 7377
 thumbnail: 332238.jpg
 translation-type: tm+mt

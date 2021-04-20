@@ -1,7 +1,7 @@
 ---
 title: OSGi 서비스 만들기
 description: 서명할 양식을 저장할 OSGi 서비스 만들기
-feature: 워크플로우
+feature: Workflow
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,9 +9,9 @@ activity: implement
 version: 6.4,6.5
 thumbnail: 6886.jpg
 kt: 6886
-topic: 개발
-role: 개발자
-level: 경험
+topic: Development
+role: Developer
+level: Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
