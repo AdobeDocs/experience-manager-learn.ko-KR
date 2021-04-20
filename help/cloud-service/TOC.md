@@ -5,9 +5,9 @@ breadcrumb-title: AEM as a Cloud Service 튜토리얼
 sub-product: 클라우드 서비스
 team: TM
 translation-type: tm+mt
-source-git-commit: 0c7759b59e6b6c99da3cd7e7c502445c14964e26
+source-git-commit: 98cfc9e007770e7a8291343bdd63fd523f747bb9
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '415'
 ht-degree: 22%
 
 ---
@@ -100,6 +100,7 @@ ht-degree: 22%
       + [워크플로우 모델 만들기](./forms/create-aem-workflow/create-workflow.md)
       + [트리거 워크플로우](./forms/create-aem-workflow/configure-af.md)
    + Adobe Sign with AEM Forms{#forms-and-sign}
+      + [소개](./forms/forms-and-sign/introduction.md)
       + [Adobe Sign API 응용 프로그램](./forms/forms-and-sign/create-sign-api-application.md)
       + [Adobe Sign 클라우드 구성](./forms/forms-and-sign/create-adobe-sign-cloud-configuration.md)
       + [적응형 양식 만들기](./forms/forms-and-sign/create-adaptive-form.md)
