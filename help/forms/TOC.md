@@ -6,9 +6,9 @@ user-guide-description: 초보자 및 숙련된 AEM Forms 개발자를 위한 AE
 breadcrumb-title: AEM Forms 튜토리얼
 index: y
 translation-type: tm+mt
-source-git-commit: 1e945afddda3d7735005029952a9d7ec46828bc6
+source-git-commit: da7837d45a9d5f614a4f6527b7bfe98aaf980d4f
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '952'
 ht-degree: 6%
 
 ---
@@ -45,6 +45,7 @@ ht-degree: 6%
 
 + 적응형 양식 {#adaptive-forms}
    + [Windows에서 AEM Forms 설치](adaptive-forms/installing-aem-form-on-windows-tutorial-use.md)
+   + [Linux에서 32비트 패키지 설치](adaptive-forms/installing-aem-form-on-linux.md)
    + [적응형 Forms의 프리플라이트 서비스](adaptive-forms/prefill-service-adaptive-forms-article-use.md)
    + [적응형 Forms에서 사용자 정의 제출](adaptive-forms/custom-submit-aem-forms-article.md)
    + [적응형 Forms의 Captcha](adaptive-forms/forms-captcha-feature-video-use.md)
@@ -169,7 +170,7 @@ ht-degree: 6%
 + Forms Portal{#listing-custom-asset-types}에 사용자 지정 자산 유형 나열
    + [1부-사용자 지정 자산 유형 등록](listing-custom-asset-types/part1.md)
    + [2부 - 사용자 정의 템플릿 만들기](listing-custom-asset-types/part2.md)
-+ AEM Forms with Marketing{#aem-forms-with-marketo}
++ AEM Forms with Marketo{#aem-forms-with-marketo}
    + [1부 - 소개](aem-forms-with-marketo/part1.md)
    + [2부 - 사용자 정의 인증](aem-forms-with-marketo/part2.md)
    + [파트3 - 데이터 소스](aem-forms-with-marketo/part3.md)
