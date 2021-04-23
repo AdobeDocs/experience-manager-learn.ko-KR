@@ -10,10 +10,10 @@ user-guide-description: AEM을 처음 사용하는 개발자를 위한 다양한
 breadcrumb-title: AEM Sites WKND 튜토리얼
 index: y
 translation-type: tm+mt
-source-git-commit: e03d84f92be11623704602fb448273e461c70b4e
+source-git-commit: fb6c56dfc85fbcb36a68210f068fd496849c352e
 workflow-type: tm+mt
-source-wordcount: '56'
-ht-degree: 66%
+source-wordcount: '59'
+ht-degree: 64%
 
 ---
 
@@ -21,10 +21,12 @@ ht-degree: 66%
 # AEM Sites 시작하기 - WKND 튜토리얼 {#getting-started-wknd-tutorial-develop}
 
 + [WKND 자습서 개요](overview.md)
-+ [1 - 프로젝트 설정](project-setup.md)
-+ [2 - 구성 요소 기본 사항](component-basics.md)
-+ [3 - 페이지 및 템플릿](pages-templates.md)
-+ [4 - 클라이언트측 라이브러리](client-side-libraries.md)
-+ [5 - 스타일 시스템](style-system.md)
-+ [6 - 사용자 지정 구성 요소](custom-component.md)
-+ [7 - 유닛 테스트](unit-testing.md)
++ 프로젝트 원형 {#project-archetype}
+   + [개요](./project-archetype/overview.md)
+   + [1 - 프로젝트 설정](./project-archetype/project-setup.md)
+   + [2 - 구성 요소 기본 사항](./project-archetype/component-basics.md)
+   + [3 - 페이지 및 템플릿](./project-archetype/pages-templates.md)
+   + [4 - 클라이언트측 라이브러리](./project-archetype/client-side-libraries.md)
+   + [5 - 스타일 시스템](./project-archetype/style-system.md)
+   + [6 - 사용자 지정 구성 요소](./project-archetype/custom-component.md)
+   + [7 - 유닛 테스트](./project-archetype/unit-testing.md)
