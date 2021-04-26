@@ -3,22 +3,19 @@ title: AEM Sites 시작하기 - 페이지 및 템플릿
 seo-title: AEM Sites 시작하기 - 페이지 및 템플릿
 description: 기본 페이지 구성 요소와 편집 가능한 템플릿 간의 관계에 대해 알아봅니다. 핵심 구성 요소가 프로젝트에 프록시하는 방법을 파악하고 편집 가능한 템플릿의 고급 정책 구성을 학습하여 Adobe XD의 초안을 기반으로 잘 구조화된 아티클 페이지 템플릿을 빌드합니다.
 sub-product: 사이트
-feature: 핵심 구성 요소, 편집 가능한 템플릿
-topics: development
-version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
-mini-toc-levels: 1
-kt: 4082
-thumbnail: 30214.jpg
+version: 6.4, 6.5, Cloud Service
+type: Tutorial
+feature: 핵심 구성 요소, 편집 가능한 템플릿, 페이지 편집기
 topic: 컨텐츠 관리, 개발
 role: Developer
 level: Beginner
+mini-toc-levels: 1
+kt: 4082
+thumbnail: 30214.jpg
 translation-type: tm+mt
-source-git-commit: fb6c56dfc85fbcb36a68210f068fd496849c352e
+source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
 workflow-type: tm+mt
-source-wordcount: '3104'
+source-wordcount: '3106'
 ht-degree: 0%
 
 ---
