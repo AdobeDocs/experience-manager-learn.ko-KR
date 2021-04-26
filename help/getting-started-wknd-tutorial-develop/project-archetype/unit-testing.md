@@ -14,9 +14,9 @@ topic: 컨텐츠 관리, 개발
 role: Developer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: fb6c56dfc85fbcb36a68210f068fd496849c352e
+source-git-commit: e8c36a85bc47adbf76e614f245c3f47d7a50826e
 workflow-type: tm+mt
-source-wordcount: '3022'
+source-wordcount: '3016'
 ht-degree: 0%
 
 ---
@@ -212,8 +212,10 @@ AEM 모범 사례를 사용하고 다음과 같은 이점을 사용할 것입니
 
    단위 테스트 파일의 `Test` 접미사 `BylineImplTest.java`는 우리가 사용할 수 있는 규칙입니다.
 
-   1. `BylineImpl.java`용 테스트 파일_으로 쉽게 식별합니다.
-   2. 테스트 중인 클래스 `BylineImpl.java`와 테스트 파일 _을 차별화합니다._
+   1. _`BylineImpl.java`에 대한 테스트 파일_&#x200B;으로 쉽게 식별합니다.
+   1. 그러나 테스트 중인 클래스 _와 테스트 파일_&#x200B;을 차별화합니다. `BylineImpl.java`
+
+
 
 ## BylineImplTest.java {#reviewing-bylineimpltest-java} 검토
 
