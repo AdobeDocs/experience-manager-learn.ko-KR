@@ -2,19 +2,16 @@
 title: 클라이언트측 라이브러리 및 프런트 엔드 워크플로우
 description: AEM(Adobe Experience Manager) 사이트 구현을 위해 CSS 및 Javascript를 배포하고 관리하는 데 클라이언트측 라이브러리 또는 클라이언트가 사용되는 방법을 알아봅니다. 이 자습서에서는 웹 팩 프로젝트인 ui.frontend 모듈을 엔드 투 엔드 빌드 프로세스에 통합하는 방법도 다룹니다.
 sub-product: 사이트
-topics: front-end-development,responsive
-version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
-kt: 4083
-thumbnail: 30359.jpg
+version: 6.4, 6.5, Cloud Service
+type: Tutorial
 feature: 핵심 구성 요소, AEM 프로젝트 원형
 topic: 컨텐츠 관리, 개발
 role: Developer
 level: Beginner
+kt: 4083
+thumbnail: 30359.jpg
 translation-type: tm+mt
-source-git-commit: fb6c56dfc85fbcb36a68210f068fd496849c352e
+source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
 workflow-type: tm+mt
 source-wordcount: '3299'
 ht-degree: 1%
