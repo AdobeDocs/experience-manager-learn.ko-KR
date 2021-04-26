@@ -2,19 +2,16 @@
 title: AEM Sites 시작하기 - 프로젝트 원형
 description: AEM Sites 시작하기 - 프로젝트 원형을 참조하십시오. WKND 자습서는 Adobe Experience Manager을 처음 사용하는 개발자를 위해 고안된 다양한 자습서입니다. 이 자습서에서는 가상 라이프스타일 브랜드 WKND를 위한 AEM 사이트 구현을 안내합니다. 이 자습서에서는 프로젝트 설정, 전문가 원형, 핵심 구성 요소, 편집 가능한 템플릿, 클라이언트 라이브러리 및 구성 요소 개발과 같은 기본 주제를 다룹니다.
 sub-product: 사이트
-topics: development
-version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
-mini-toc-levels: 1
-index: y
+version: 6.4, 6.5, Cloud Service
+type: Tutorial
 feature: 핵심 구성 요소, 페이지 편집기, 편집 가능한 템플릿, AEM 프로젝트 원형
 topic: 컨텐츠 관리, 개발
 role: Developer
 level: Beginner
+mini-toc-levels: 1
+index: y
 translation-type: tm+mt
-source-git-commit: fb6c56dfc85fbcb36a68210f068fd496849c352e
+source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 7%
