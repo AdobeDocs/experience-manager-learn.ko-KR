@@ -11,10 +11,10 @@ activity: develop, understand
 kt: 2963
 index: y
 translation-type: tm+mt
-source-git-commit: 81626b8d853f3f43d9c51130acf02561f91536ac
+source-git-commit: 0eb086242ecaafa53c59c2018f178e15f98dd76f
 workflow-type: tm+mt
-source-wordcount: '117'
-ht-degree: 28%
+source-wordcount: '135'
+ht-degree: 25%
 
 ---
 
@@ -37,6 +37,15 @@ ht-degree: 28%
       + [5 - 외부 앱에서 쿼리](./graphql/multi-step/graphql-and-external-app.md)
       + [6 - 조각 참조를 사용한 고급 데이터 모델링](./graphql/multi-step/fragment-references.md)
       + [7 - 제작 배포](./graphql/multi-step/production-deployment.md)
++ SPA 편집기{#spa-editor}
+   + 원격 SPA{#remote-spa}
+      + [개요](./spa-editor/remote-spa/overview.md)
+      + [1 - 빠른 설정](./spa-editor/remote-spa/quick-setup.md)
+      + [2 - AEM 구성](./spa-editor/remote-spa/aem-configure.md)
+      + [3 - SPA Bootstrap](./spa-editor/remote-spa/spa-bootstrap.md)
+      + [4 - 고정 구성 요소](./spa-editor/remote-spa/spa-fixed-component.md)
+      + [5 - 컨테이너 구성 요소](./spa-editor/remote-spa/spa-container-component.md)
+      + [6 - 동적 경로](./spa-editor/remote-spa/spa-dynamic-routes.md)
 + 토큰 기반 인증 {#authentication}
    + [개요](./authentication/overview.md)
    + [1 - 로컬 개발 액세스 토큰](./authentication/local-development-access-token.md)
