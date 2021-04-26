@@ -1,7 +1,7 @@
 ---
 title: 개발자 콘솔
 description: AEM as a Cloud Service은 디버깅에 유용한 실행 중인 AEM 서비스의 다양한 세부 사항을 표시하는 각 환경에 대한 개발자 콘솔을 제공합니다.
-feature: Developer Tools
+feature: 개발자 도구
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -9,14 +9,14 @@ activity: develop
 audience: developer
 kt: 5433
 thumbnail: kt-5433.jpg
-topic: Development
+topic: 개발
 role: Developer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 048a37a9813e7b61ff069c4606b8d23cc6b6844f
 workflow-type: tm+mt
-source-wordcount: '1349'
-ht-degree: 1%
+source-wordcount: '1351'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +34,7 @@ Cloud Service 환경으로서 각 AEM에는 자체 개발자 콘솔이 있습니
 1. Adobe 조직 전환기에서 Cloud Service 제품으로 Cloud Manager 및 AEM을 영향을 준 Adobe 조직이 활성화되어 있는지 확인합니다.
 1. 개발자는 클라우드 관리자 제품의 __개발자 - Cloud Service__ 제품 프로필의 멤버여야 합니다.
    + 이 멤버십이 없는 경우 개발자는 개발자 콘솔에 로그인할 수 없습니다.
-1. 개발자는 AEM 작성자 및 게시 서비스의 __AEM 관리자__ 제품 프로필의 구성원이어야 합니다.
+1. 개발자는 AEM 작성자 및/또는 게시에서 __AEM 사용자__ 또는 __AEM 관리자__ 제품 프로필의 구성원이어야 합니다.
    + 이 멤버십이 없는 경우 [status](#status) 덤프가 401 권한 없음 오류로 인해 시간 초과됩니다.
 
 ### 개발자 콘솔 액세스 문제 해결
