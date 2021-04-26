@@ -10,10 +10,10 @@ user-guide-description: AEM을 처음 사용하는 개발자를 위한 다양한
 breadcrumb-title: AEM Sites WKND 튜토리얼
 index: y
 translation-type: tm+mt
-source-git-commit: fb6c56dfc85fbcb36a68210f068fd496849c352e
+source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
 workflow-type: tm+mt
-source-wordcount: '59'
-ht-degree: 64%
+source-wordcount: '76'
+ht-degree: 60%
 
 ---
 
@@ -30,3 +30,8 @@ ht-degree: 64%
    + [5 - 스타일 시스템](./project-archetype/style-system.md)
    + [6 - 사용자 지정 구성 요소](./project-archetype/custom-component.md)
    + [7 - 유닛 테스트](./project-archetype/unit-testing.md)
++ 사이트 템플릿 {#site-template}
+   + [1. 사이트 만들기](./site-template/create-site.md)
+   + [2. 내용 작성 및 변경 내용 게시](./site-template/author-content-publish.md)
+   + [3. 페이지 템플릿](./site-template/page-templates.md)
+   + [4. ](./site-template/theming.md) 테마
