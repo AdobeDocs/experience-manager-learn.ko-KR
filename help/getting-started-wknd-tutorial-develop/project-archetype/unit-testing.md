@@ -1,22 +1,20 @@
 ---
 title: 단위 테스트
 description: 이 자습서에서는 사용자 지정 구성 요소 자습서에서 만든 필라인 구성 요소의 슬링 모델의 동작을 확인하는 단위 테스트 구현에 대해 설명합니다.
-topics: development
-version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
-kt: 4089
-mini-toc-levels: 1
-thumbnail: 30207.jpg
+sub-product: 사이트
+version: 6.4, 6.5, Cloud Service
+type: Tutorial
 feature: API, AEM 프로젝트 원형
 topic: 컨텐츠 관리, 개발
 role: Developer
 level: Beginner
+kt: 4089
+mini-toc-levels: 1
+thumbnail: 30207.jpg
 translation-type: tm+mt
-source-git-commit: e8c36a85bc47adbf76e614f245c3f47d7a50826e
+source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
 workflow-type: tm+mt
-source-wordcount: '3016'
+source-wordcount: '3017'
 ht-degree: 0%
 
 ---
