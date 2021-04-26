@@ -16,10 +16,10 @@ topic: 컨텐츠 관리, 개발
 role: Developer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: fb6c56dfc85fbcb36a68210f068fd496849c352e
+source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
 workflow-type: tm+mt
-source-wordcount: '510'
-ht-degree: 5%
+source-wordcount: '632'
+ht-degree: 4%
 
 ---
 
@@ -34,11 +34,19 @@ AEM(Adobe Experience Manager)을 처음 사용하는 개발자를 위해 고안�
 
 >[!VIDEO](https://video.tv.adobe.com/v/30476?quality=12&learn=on)
 
-## 자습서 {#about-tutorial} 정보
+## 사이트 프로젝트 시작 옵션
 
-WKND는 여러 국제 도시에서 밤 문화, 활동, 그리고 이벤트들에 초점을 맞춘 가상의 온라인 잡지 및 블로그입니다.
+AEM Sites 프로젝트를 시작하는 기본적인 방법은 두 가지가 있습니다.
 
-### Adobe XD UI 키트
+**AEM 프로젝트 원형** - Mahen 템플릿을 사용하여 최소한의 AEM 프로젝트를 생성하여 AEM 개발에 대한 기존의 접근 방식입니다. 이는 과도한 맞춤화를 예상할 수 있는 Cloud Service 프로젝트로 AEM 6.5/6.4 프로젝트와 AEM에 권장되는 방법입니다. 이 튜토리얼에서는 AEM 개발에 대해 자세히 살펴봅니다.
+
+[AEM 프로젝트 원형을 사용하여 자습서 시작](./project-archetype/overview.md)
+
+**AEM 사이트 템플릿**  - 사전 정의된 사이트 템플릿을 사용하여 AEM 사이트를 생성하는 낮은 코드 접근 방식입니다. 즉시 사용 가능한 구성 요소 및 템플릿을 사용하여 사이트를 빠르게 시작하고 실행할 수 있습니다. 테마 워크플로우를 사용하여 CSS 및 JavaScript만으로 브랜드별 스타일과 사용자 지정을 적용할 수 있습니다. 새로운 프로젝트 및 개발자에게 권장됩니다. 현재 Cloud Service으로 AEM에서만 사용할 수 있습니다.
+
+[사이트 템플릿을 사용하여 자습서 시작](./site-template/create-site.md)
+
+## Adobe XD UI 키트
 
 이 튜토리얼을 실제 시나리오의 실제 시나리오에 더 가깝게 만들기 위해 Adobe의 재능 있는 UX 디자이너는 [Adobe XD](https://www.adobe.com/products/xd.html)을 사용하여 해당 사이트의 초안을 만들었습니다. 자습서 과정 동안 다양한 디자인 조각이 저작이 가능한 AEM 사이트에 구현됩니다. **로렌조 부오시** 및 WKND 사이트에 대한 아름다운 디자인을 만든 **킬리안 아멘돌라**&#x200B;에 감사드립니다.
 
@@ -63,4 +71,4 @@ Adobe Stock을 사용하면 사진, 그래픽, 비디오, 템플릿 등 1억 4�
 
 ## 다음 단계 {#next-steps}
 
-뭘 기다리고 있어?!자습서를 시작하고 AEM 프로젝트 원형](./project-archetype/overview.md)을(를) 사용하여 새 Adobe Experience Manager 프로젝트를 생성하는 방법을 알아봅니다.[
+뭘 기다리고 있어?!AEM 프로젝트 원형](./project-archetype/overview.md) 또는 [사이트 템플릿](./site-template/create-site.md)을 사용하여 새 Adobe Experience Manager 프로젝트를 생성하는 방법을 알아봅니다.[
