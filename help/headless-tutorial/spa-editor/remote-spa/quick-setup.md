@@ -8,9 +8,9 @@ level: Beginner
 kt: 7629
 thumbnail: kt-7629.jpeg
 translation-type: tm+mt
-source-git-commit: 0eb086242ecaafa53c59c2018f178e15f98dd76f
+source-git-commit: b6f63110f14ede51fa2dd740aea7cbb623cbec60
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '729'
 ht-degree: 4%
 
 ---
@@ -75,8 +75,8 @@ AEM SDK가 시작되고 [http://localhost:4502](http://localhost:4502)에 자동
 
 빠른 설정을 수행하려면 튜토리얼의 최종 AEM 구성과 내용이 포함된 AEM 패키지가 제공됩니다.
 
-1. DemoHub 자산 창에서 `wknd-app.all.x.x.x.zip` 다운로드
-1. DemoHub 자산 창에서 `wknd-app.ui.content.sample.x.x.x.zip` 다운로드
+1. [다운로드 `wknd-app.all.x.x.x.zip`](./assets/quick-setup/wknd-app.all-1.0.0-SNAPSHOT.zip)
+1. [다운로드 `wknd-app.ui.content.sample.x.x.x.zip`](./assets/quick-setup/wknd-app.ui.content.sample-1.0.0.zip)
 1. `admin` 자격 증명으로 [http://localhost:4502/crx/packmgr](http://localhost:4502/crx/packmgr)에 AEM SDK의 패키지 관리자에 로그인합니다.
 1. ____ 1단계에서  `wknd-app.all.x.x.x.zip` 다운로드한 파일 업로드
 1. `wknd-app.all.x.x.x.zip` 항목의 __설치__ 단추를 누릅니다.
