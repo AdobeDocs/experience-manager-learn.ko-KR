@@ -11,7 +11,7 @@ activity: develop, understand
 kt: 2963
 index: y
 translation-type: tm+mt
-source-git-commit: 0eb086242ecaafa53c59c2018f178e15f98dd76f
+source-git-commit: b6f63110f14ede51fa2dd740aea7cbb623cbec60
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 25%
@@ -40,12 +40,12 @@ ht-degree: 25%
 + SPA 편집기{#spa-editor}
    + 원격 SPA{#remote-spa}
       + [개요](./spa-editor/remote-spa/overview.md)
-      + [1 - 빠른 설정](./spa-editor/remote-spa/quick-setup.md)
-      + [2 - AEM 구성](./spa-editor/remote-spa/aem-configure.md)
-      + [3 - SPA Bootstrap](./spa-editor/remote-spa/spa-bootstrap.md)
-      + [4 - 고정 구성 요소](./spa-editor/remote-spa/spa-fixed-component.md)
-      + [5 - 컨테이너 구성 요소](./spa-editor/remote-spa/spa-container-component.md)
-      + [6 - 동적 경로](./spa-editor/remote-spa/spa-dynamic-routes.md)
+      + [빠른 설정](./spa-editor/remote-spa/quick-setup.md)
+      + [1 - AEM 구성](./spa-editor/remote-spa/aem-configure.md)
+      + [2 - SPA Bootstrap](./spa-editor/remote-spa/spa-bootstrap.md)
+      + [3 - 고정 구성 요소](./spa-editor/remote-spa/spa-fixed-component.md)
+      + [4 - 컨테이너 구성 요소](./spa-editor/remote-spa/spa-container-component.md)
+      + [5 - 동적 경로](./spa-editor/remote-spa/spa-dynamic-routes.md)
 + 토큰 기반 인증 {#authentication}
    + [개요](./authentication/overview.md)
    + [1 - 로컬 개발 액세스 토큰](./authentication/local-development-access-token.md)
