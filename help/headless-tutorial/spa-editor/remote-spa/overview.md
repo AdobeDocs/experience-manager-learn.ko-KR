@@ -8,9 +8,9 @@ level: Beginner
 kt: 7630
 thumbnail: kt-7630.jpg
 translation-type: tm+mt
-source-git-commit: 0eb086242ecaafa53c59c2018f178e15f98dd76f
+source-git-commit: b6f63110f14ede51fa2dd740aea7cbb623cbec60
 workflow-type: tm+mt
-source-wordcount: '675'
+source-wordcount: '694'
 ht-degree: 1%
 
 ---
@@ -67,35 +67,37 @@ AEM 컨텍스트 외부에서 실행되는 SPA 또는 원격 SPA을 업데이트
 
 빠른 설정을 통해 15분 안에 WKND App SPA 및 AEM SPA 편집기를 사용하여 작업을 시작할 수 있습니다. 이 가속화된 설정을 사용하면 튜토리얼의 최종 상태를 바로 확인할 수 있으므로 AEM SPA Editor에서 SPA을 제작할 수 있습니다.
 
-+ [빠른 설정](./quick-setup.md)
++ [빠른 설정에 대한 자세한 내용](./quick-setup.md)
 
-## SPA 편집기용 AEM 구성
+## 1. SPA 편집기용 AEM 구성
 
 SPA을 AEM SPA Editor와 통합하려면 AEM 구성이 필요합니다. 이러한 구성은 AEM 프로젝트를 통해 관리 및 배포됩니다. 이 장에서 필요한 구성과 구성 정의 방법에 대해 알아봅니다.
 
-+ [AEM 구성](./aem-configure.md)
++ [SPA 편집기용 AEM 구성 방법 살펴보기](./aem-configure.md)
 
-## SPA Bootstrap
+## 2. SPA Bootstrap
 
 AEM SPA Editor에서 SPA을 저작 컨텍스트에 통합하려면 SPA에 몇 가지 추가 사항을 추가해야 합니다.
 
-+ [AEM SPA용 Bootstrap 편집기](./spa-bootstrap.md)
++ [AEM SPA 편집기용 SPA 부트스트래핑 방법 학습](./spa-bootstrap.md)
 
-## 편집 가능한 고정 구성 요소
+## 3. 편집 가능한 고정 구성 요소
 
 먼저 SPA에 편집 가능한 &quot;고정 구성 요소&quot;를 추가하는 방법을 살펴보십시오. 개발자가 SPA에서 특정 편집 가능한 구성 요소를 배치할 수 있는 방법을 설명합니다. 작성자는 구성 요소의 컨텐츠를 변경할 수 있지만 구성 요소를 제거하거나 배치, 배치 또는 크기를 변경할 수 없습니다.
 
-+ [편집 가능한 고정 구성 요소](./spa-fixed-component.md)
++ [편집 가능한 고정 구성 요소에 대해 알아보기](./spa-fixed-component.md)
 
-## 편집 가능한 컨테이너 구성 요소
+## 4. 편집 가능한 컨테이너 구성 요소
 
 다음으로 SPA에 편집 가능한 &quot;컨테이너 구성 요소&quot;를 추가하는 방법을 살펴봅니다. 개발자가 SPA에 컨테이너 구성 요소를 배치할 수 있는 방법을 설명합니다. 컨테이너 구성 요소를 사용하면 작성자가 허용된 구성 요소를 그 안에 배치하고 구성 요소의 레이아웃을 조정할 수 있습니다.
 
-## 동적 경로 및 편집 가능한 구성 요소
++ [편집 가능한 컨테이너 구성 요소에 대해 알아보기](./spa-container-component.md)
+
+## 5. 동적 경로 및 편집 가능한 구성 요소
 
 마지막으로, 동적 경로에 대해 이전 장에 설명된 개념을 사용합니다.경로의 매개 변수에 따라 서로 다른 컨텐트를 표시하는 경로. 프로그래밍 방식으로 제어되고 파생된 경로에서 컨텐츠를 작성하는 데 AEM SPA Editor를 사용하는 방법을 설명합니다.
 
-+ [동적 경로 및 편집 가능한 구성 요소](./spa-dynamic-routes.md)
++ [동적 경로 및 편집 가능한 구성 요소에 대해 알아봅니다.](./spa-dynamic-routes.md)
 
 ## 추가 리소스
 
