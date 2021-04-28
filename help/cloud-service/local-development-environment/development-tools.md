@@ -1,7 +1,7 @@
 ---
 title: Cloud Service 개발용으로 AEM용 개발 도구 설정
 description: AEM 로컬에서 개발하는 데 필요한 모든 기본 툴이 포함된 로컬 개발 시스템을 설정할 수 있습니다.
-feature: Developer Tools
+feature: 개발자 도구
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -9,19 +9,26 @@ activity: develop
 audience: developer
 kt: 4267
 thumbnail: 25907.jpg
-topic: Development
+topic: 개발
 role: Developer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 9a78cbdb5fd35e4aa7169382494dd014aa8098e9
 workflow-type: tm+mt
-source-wordcount: '1371'
+source-wordcount: '1426'
 ht-degree: 0%
 
 ---
 
 
 # 개발 도구 설정
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_localdev_devtools"
+>title="개발 도구 설정"
+>abstract="AEM(Adobe Experience Manager) 개발을 위해서는 개발자 시스템에 최소한의 개발 도구를 설치하고 설정해야 합니다. 이러한 툴에는 Java, Maven, Adobe I/O CLI, 개발 IDE 등이 포함됩니다."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html" text="개발 지침"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/basics/aem-sdk.html" text="개발 기본 사항"
 
 AEM(Adobe Experience Manager) 개발을 위해서는 개발자 시스템에 최소한의 개발 도구를 설치하고 설정해야 합니다. 이러한 도구는 AEM Projects의 개발 및 구축을 지원합니다.
 
