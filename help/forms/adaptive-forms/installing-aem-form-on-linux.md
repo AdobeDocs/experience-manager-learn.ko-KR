@@ -1,6 +1,6 @@
 ---
 title: Linux에서 AEM Forms 설치
-description: Linux 설치 시 작동되도록 AEM Forms용 32비트 라이브러리 설치
+description: Linux 설치 시 AEM Forms용 32비트 라이브러리를 설치하는 방법을 알아봅니다.
 feature: 적응형 양식
 audience: developer
 doc-type: article
@@ -11,9 +11,9 @@ role: Developer
 level: Beginner
 kt: 7593
 translation-type: tm+mt
-source-git-commit: da7837d45a9d5f614a4f6527b7bfe98aaf980d4f
+source-git-commit: 9583006352ca6a20a763c9d5ec7ba15c3791e897
 workflow-type: tm+mt
-source-wordcount: '945'
+source-wordcount: '948'
 ht-degree: 0%
 
 ---
