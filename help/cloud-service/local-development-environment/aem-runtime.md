@@ -1,7 +1,7 @@
 ---
 title: AEM용 로컬 AEM 런타임을 Cloud Service 개발으로 설정
 description: AEM을 Cloud Service SDK의 Quickstart Jar로 사용하여 로컬 AEM 런타임을 설정합니다.
-feature: Developer Tools
+feature: 개발자 도구
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -9,19 +9,26 @@ activity: develop
 audience: developer
 kt: 4678, 4677
 thumbnail: 32551.jpg
-topic: Development
+topic: 개발
 role: Developer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 9a78cbdb5fd35e4aa7169382494dd014aa8098e9
 workflow-type: tm+mt
-source-wordcount: '1657'
-ht-degree: 1%
+source-wordcount: '1734'
+ht-degree: 2%
 
 ---
 
 
 # 로컬 AEM 런타임 설정
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_localdev_aemruntime"
+>title="로컬 AEM 런타임"
+>abstract="AEM(Adobe Experience Manager)은 AEM을 Cloud Service SDK의 Quickstart Jar로 사용하여 로컬로 실행할 수 있습니다. 이를 통해 개발자는 사용자 정의 코드, 구성 및 컨텐츠를 소스 제어에 커밋하기 전에 배포 및 테스트하고 이를 Cloud Service 환경으로 AEM에 배포할 수 있습니다."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html" text="AEM as a Cloud Service SDK"
+>additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Cloud Service SDK로 AEM 다운로드"
 
 AEM(Adobe Experience Manager)은 AEM을 Cloud Service SDK의 Quickstart Jar로 사용하여 로컬로 실행할 수 있습니다. 이를 통해 개발자는 사용자 정의 코드, 구성 및 컨텐츠를 소스 제어에 커밋하기 전에 배포 및 테스트하고 이를 Cloud Service 환경으로 AEM에 배포할 수 있습니다.
 
