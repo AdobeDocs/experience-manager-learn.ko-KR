@@ -2,7 +2,7 @@
 title: AEM용 디스패처 도구를 Cloud Service 개발으로 설정
 description: AEM SDK의 Dispatcher Tools를 사용하면 Dispatcher를 로컬에서 손쉽게 설치, 실행 및 해결할 수 있으므로 AEM(Adobe Experience Manager) 프로젝트의 로컬 개발을 수월하게 수행할 수 있습니다.
 sub-product: foundation
-feature: Dispatcher, Developer Tools
+feature: Dispatcher, 개발자 도구
 topics: development, caching, security
 version: cloud-service
 doc-type: tutorial
@@ -10,19 +10,26 @@ activity: develop
 audience: developer
 kt: 4679
 thumbnail: 30603.jpg
-topic: Development
+topic: 개발
 role: Developer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 9a78cbdb5fd35e4aa7169382494dd014aa8098e9
 workflow-type: tm+mt
-source-wordcount: '1572'
-ht-degree: 2%
+source-wordcount: '1639'
+ht-degree: 3%
 
 ---
 
 
 # 로컬 디스패처 도구 설정
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_localdev_dispatcher"
+>title="로컬 디스패처 도구"
+>abstract="디스패처는 전체 Experience Manager 아키텍처의 필수 부분이며 로컬 개발 설정의 일부여야 합니다. Cloud Service SDK로 AEM에는 Dispatcher 로컬에서 구성, 유효성 검사 및 시뮬레이션을 수행하는 데 유용한 권장 Dispatcher 도구 버전이 포함되어 있습니다."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html" text="클라우드의 디스패처"
+>additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Cloud Service SDK로 AEM 다운로드"
 
 Adobe Experience Manager(AEM)의 Dispatcher는 CDN과 AEM 게시 계층 사이의 보안 및 성능 레이어를 제공하는 Apache HTTP 웹 서버 모듈입니다. 디스패처는 전체 Experience Manager 아키텍처의 필수 부분이며 로컬 개발 설정의 일부여야 합니다.
 
