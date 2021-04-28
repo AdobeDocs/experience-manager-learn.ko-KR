@@ -1,7 +1,7 @@
 ---
 title: Cloud Service의 지역개발 환경
 description: Adobe Experience Manager(AEM) 로컬 개발 환경 개요.
-feature: Developer Tools
+feature: 개발자 도구
 topics: development
 version: cloud-service
 doc-type: article
@@ -9,19 +9,26 @@ activity: troubleshoot
 audience: developer
 kt: 3290
 thumbnail: 32565.jpg
-topic: Development
+topic: 개발
 role: Developer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 9a78cbdb5fd35e4aa7169382494dd014aa8098e9
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '549'
 ht-degree: 2%
 
 ---
 
 
 # 로컬 개발 환경 설정
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_localdev_overview"
+>title="개요"
+>abstract="AEM용 로컬 개발 환경을 Cloud Service으로 설정하면 AEM 프로젝트를 개발, 구축 및 컴파일하는 데 필요한 개발 툴과 로컬 실행 시간이 포함되어 있어 개발자는 Adobe Cloud Manager를 통해 Cloud Service으로 AEM에 새로운 기능을 배포하기 전에 로컬에서 새로운 기능을 신속하게 확인할 수 있습니다."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html" text="개발 지침"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/basics/aem-sdk.html" text="개발 기본 사항"
 
 이 자습서에서는 AEM을 Cloud Service SDK로 사용하여 AEM(Adobe Experience Manager)용 로컬 개발 환경을 설정하는 절차를 안내합니다. AEM 프로젝트를 개발, 구축 및 컴파일하는 데 필요한 개발 툴과 로컬 실행 시간이 포함되어 있으므로 개발자는 Adobe Cloud Manager를 통해 Cloud Service으로 새로운 기능을 AEM에 배포하기 전에 로컬에서 새로운 기능을 신속하게 확인할 수 있습니다.
 
