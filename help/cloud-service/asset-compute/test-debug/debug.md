@@ -1,7 +1,7 @@
 ---
 title: asset compute 작업자 디버그
 description: asset compute 작업자는 간단한 디버그 로그 명령문에서부터 연결된 VS 코드를 원격 디버거로, AEM에서 Cloud Service으로 시작한 Adobe I/O Runtime에서 활성화할 로그를 가져오는 등 다양한 방법으로 디버깅할 수 있습니다.
-feature: Asset Compute Microservices
+feature: asset compute 마이크로서비스
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,13 +9,13 @@ audience: developer
 doc-type: tutorial
 kt: 6285
 thumbnail: 40383.jpg
-topic: Integrations, Development
+topic: 통합, 개발
 role: Developer
 level: Intermediate, Experienced
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 2efb7050b0b0c783c5f34c1f2e375cf21fa7a6cd
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '623'
 ht-degree: 0%
 
 ---
@@ -59,6 +59,7 @@ _wskdebug를 사용하여 Asset compute 작업자 디버깅의 클릭스루(오�
    ```
    ℹ Info: Deploying package [wkndAemAssetCompute-0.0.1]...
    ```
+
 1. `npx adobe-asset-compute devtool` 명령을 사용하여 Asset compute 개발 도구의 새 인스턴스를 시작합니다.
 1. VS 코드에서 왼쪽 탐색 창의 디버그 아이콘을 누릅니다.
    + 메시지가 표시되면 __launch.json 파일 만들기 > Node.js__&#x200B;를 눌러 새 `launch.json` 파일을 만듭니다.
