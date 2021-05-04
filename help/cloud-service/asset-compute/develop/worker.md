@@ -1,7 +1,7 @@
 ---
 title: asset compute 작업자 개발
 description: asset compute 작업자는 자산에 대해 수행되는 작업을 수행하여 새 변환을 만드는 사용자 정의 기능을 제공하는 Asset compute 프로젝트의 핵심입니다.
-feature: Asset Compute Microservices
+feature: asset compute 마이크로서비스
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,13 +9,13 @@ audience: developer
 doc-type: tutorial
 kt: 6282
 thumbnail: KT-6282.jpg
-topic: Integrations, Development
+topic: 통합, 개발
 role: Developer
 level: Intermediate, Experienced
 translation-type: tm+mt
-source-git-commit: 1e5d8171832ec6b26969a8485ae970e295962828
+source-git-commit: 2efb7050b0b0c783c5f34c1f2e375cf21fa7a6cd
 workflow-type: tm+mt
-source-wordcount: '1429'
+source-wordcount: '1426'
 ht-degree: 0%
 
 ---
@@ -340,6 +340,7 @@ class RenditionInstructionsError extends ClientError {
        ]
    }
    ```
+
 1. __실행__&#x200B;을 누르고 변환이 생성되기를 기다립니다
 1. __표현물__ 섹션에서는 생성된 표현물을 미리 봅니다. 변환 미리 보기를 눌러 전체 변환 다운로드
 
