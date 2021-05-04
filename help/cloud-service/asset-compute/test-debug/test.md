@@ -1,7 +1,7 @@
 ---
 title: asset compute 작업자 테스트
 description: asset compute 프로젝트는 Asset compute 근로자의 테스트를 쉽게 만들고 실행하는 패턴을 정의합니다.
-feature: Asset Compute Microservices
+feature: asset compute 마이크로서비스
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,13 +9,13 @@ audience: developer
 doc-type: tutorial
 kt: 6284
 thumbnail: KT-6284.jpg
-topic: Integrations, Development
+topic: 통합, 개발
 role: Developer
 level: Intermediate, Experienced
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 2efb7050b0b0c783c5f34c1f2e375cf21fa7a6cd
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '636'
 ht-degree: 0%
 
 ---
@@ -80,7 +80,9 @@ asset compute 프로젝트의 테스트 구조는 다음과 같습니다.
        "brightness": "-0.50"
    }
    ```
+
    이러한 키/값은 `worker` 키를 제외한 [개발 도구의 Asset compute 프로필 정의](../develop/development-tool.md)에 전달된 것과 같습니다.
+
 1. 예상 [변환 파일](./assets/test/success-parameterized/rendition.png)을 이 테스트 케이스에 추가하고 이름을 `rendition.png`로 지정합니다. 이 파일은 지정된 입력 `file.jpg`에 대해 워커의 예상 출력을 나타냅니다.
 1. 명령줄에서 `aio app test`을(를) 실행하여 프로젝트 루트를 테스트합니다.
    + [Docker Desktop](../set-up/development-environment.md#docker) 및 지원 Docker 이미지가 설치 및 시작되었는지 확인
