@@ -1,7 +1,7 @@
 ---
 title: asset compute 메타데이터 작업자 개발
 description: 이미지 자산에서 가장 일반적으로 사용되는 색상을 파생하고 색상 이름을 AEM의 자산 메타데이터에 다시 쓰는 Asset compute 메타데이터 워커를 만드는 방법을 알아봅니다.
-feature: Asset Compute Microservices
+feature: asset compute 마이크로서비스
 topics: metadata, development
 version: cloud-service
 activity: develop
@@ -9,13 +9,13 @@ audience: developer
 doc-type: tutorial
 kt: 6448
 thumbnail: 327313.jpg
-topic: Integrations, Development
+topic: 통합, 개발
 role: Developer
 level: Intermediate, Experienced
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 2efb7050b0b0c783c5f34c1f2e375cf21fa7a6cd
 workflow-type: tm+mt
-source-wordcount: '1442'
+source-wordcount: '1439'
 ht-degree: 1%
 
 ---
@@ -205,6 +205,7 @@ asset compute 프로젝트에 2명의 작업자(이전 [원 변환](../develop/w
        ]
    }
    ```
+
 1. __실행__&#x200B;을 누르고 XML 변환이 생성될 때까지 기다립니다
    + 두 작업자 모두 프로필 정의에 나열되므로 두 표현물 모두 생성됩니다. 선택적으로, 개발 도구에서 실행하지 않도록 [원 변환 작업자](../develop/worker.md)를 가리키는 최상위 프로필 정의를 삭제할 수 있습니다.
 1. __표현물__ 섹션에서는 생성된 표현물을 미리 봅니다. `rendition.xml`을 눌러 다운로드하고 VS 코드(또는 선호하는 XML/텍스트 편집기)에서 열어 검토합니다.
