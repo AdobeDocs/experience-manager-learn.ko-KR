@@ -8,9 +8,9 @@ level: Beginner
 kt: 7629
 thumbnail: kt-7629.jpeg
 translation-type: tm+mt
-source-git-commit: 2efb7050b0b0c783c5f34c1f2e375cf21fa7a6cd
+source-git-commit: d3a237b196ac872beda6119c854a0cae29510437
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '794'
 ht-degree: 4%
 
 ---
@@ -32,8 +32,11 @@ ht-degree: 4%
 + [Java™ 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 + [Maven 3.6+](https://maven.apache.org/)
 + [Git](https://git-scm.com/downloads)
++ macOS 전용 사전 요구 사항
+   + [Xcodeor ](https://developer.apple.com/xcode/)   [Xcode 명령줄 툴](https://developer.apple.com/xcode/resources/)
 + [aem-guides-wknd.all.0.3.0.zip 이상](https://github.com/adobe/aem-guides-wknd/releases)
 + [aem-guides-wknd-graphql 소스 코드](https://github.com/adobe/aem-guides-wknd-graphql)
+
 
 이 자습서에서는 다음 내용을 가정합니다.
 
@@ -90,7 +93,8 @@ Github.com에서 WKND 앱의 소스 코드를 다운로드하고 이 튜토리�
 ```
 $ mkdir -p ~/Code/wknd-app
 $ cd ~/Code/wknd-app
-$ git clone git@github.com:adobe/aem-guides-wknd-graphql.git
+$ git clone https://github.com/adobe/aem-guides-wknd-graphql.git
+$ cd aem-guides-wknd-graphql
 $ git checkout -b feature/spa-editor
 $ git pull origin feature/spa-editor
 ```
@@ -146,6 +150,8 @@ SPA이 [http://localhost:3000](http://localhost:3000)에서 실행되고 있는�
 1. __Bali Surf Camp__ 카드를 탭하고 동적 경로로 이동합니다.
 1. __일정표__ 머리글 위에 있는 사이트를 포함하는 컨테이너 구성 요소에서 구성 요소를 추가, 변경 또는 제거합니다.
 1. `http://localhost:3000`에서 실행 중인 SPA을 새로 고치고 변경 내용이 반영되었는지 확인합니다.
+
+__WKND 앱 홈 페이지 > Adventure__ _에 해당 탐험 컨텐츠 조각 이름과 일치하는 AEM 페이지 이름이 있어야 합니다._ AEM 페이지 매핑으로의 SPA 경로는 컨텐츠 조각 이름인 경로의 마지막 세그먼트를 기반으로 하기 때문입니다.
 
 ## 축하합니다!
 
