@@ -6,11 +6,11 @@ feature: SPA 편집기, 핵심 구성 요소, API, 개발
 role: Developer, Architect
 level: Beginner
 kt: 7629
-thumbnail: kt-7629.jpeg
+thumbnail: 333181.jpeg
 translation-type: tm+mt
-source-git-commit: d3a237b196ac872beda6119c854a0cae29510437
+source-git-commit: e6dc028a120670d34806def36ad200ed161295e1
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '801'
 ht-degree: 4%
 
 ---
@@ -21,6 +21,10 @@ ht-degree: 4%
 빠른 설정은 WKND 앱과 Remote SPA의 설치 및 실행 방법을 소개하고 AEM SPA Editor를 사용하여 이를 작성하는 방법을 설명하는 빠른 방법입니다.
 
 빠른 설정을 통해 이 튜토리얼의 최종 상태가 바로 표시됩니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/333181/?quality=12&learn=on)
+
+_빠른 설정의 비디오 개요_
 
 ## 전제 조건
 
