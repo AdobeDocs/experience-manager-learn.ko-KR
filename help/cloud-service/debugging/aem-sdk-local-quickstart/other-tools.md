@@ -1,21 +1,21 @@
 ---
 title: AEM SDK 디버깅을 위한 기타 도구
 description: AEM SDK의 로컬 빠른 시작을 디버깅하는 데 도움이 되는 다양한 도구를 사용할 수 있습니다.
-feature: Developer Tools
+feature: 개발자 도구
 topics: development
 version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5251
-topic: Development
+topic: 개발
 role: Developer
 level: Beginner, Intermediate
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 5fcc7eec120debf1a8ac08716154599467e66759
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 3%
+source-wordcount: '222'
+ht-degree: 4%
 
 ---
 
@@ -55,14 +55,4 @@ QueryBuilder 디버거는 AEM [QueryBuilder](https://docs.adobe.com/content/help
 QueryBuilder Debugger는 다음 위치에 있습니다.
 
 + [http://localhost:4502/libs/cq/search/content/querydebug.html](http://localhost:4502/libs/cq/search/content/querydebug.html)
-
-## Sling Log Tracer 및 AEM Chrome 플러그인
-
-![Sling Log Tracer 및 AEM Chrome 플러그인](./assets/other-tools/log-tracer.png)
-
-[AEM SDK의 로컬 quickstart와 함께 제공되는 Sling Log Tracer를 사용하면](https://sling.apache.org/documentation/bundles/log-tracers.html) HTTP 요청의 심층적인 추적을 수행할 수 있으며 요청당 심도 있는 디버깅 정보를 표시할 수 있습니다. 이 기능을 활성화하려면 [로그 추적 OSGi 구성을 ](https://sling.apache.org/documentation/bundles/log-tracers.html#configuration-1)로 구성해야 합니다.
-
-[Google Chrome 웹 브라우저](https://www.google.com/chrome/)용 오픈 소스 [AEM Chrome 플러그인](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US)은(는) Log Tracer와 통합되어 Chrome의 Dev Tools에서 바로 디버그 정보를 노출합니다.
-
-_AEM Chrome 플러그인은 오픈 소스 도구이므로 Adobe에서 지원하지 않습니다._
 
