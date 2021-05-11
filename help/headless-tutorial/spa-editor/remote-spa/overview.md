@@ -8,7 +8,7 @@ level: Beginner
 kt: 7630
 thumbnail: kt-7630.jpg
 translation-type: tm+mt
-source-git-commit: b6f63110f14ede51fa2dd740aea7cbb623cbec60
+source-git-commit: ec692af56afa83330097bb9d8db0d2f2f4fde1c1
 workflow-type: tm+mt
 source-wordcount: '694'
 ht-degree: 1%
@@ -35,7 +35,7 @@ AEM 컨텍스트 외부에서 실행되는 SPA 또는 원격 SPA을 업데이트
 
 ## 최신 코드
 
-+ 이 자습서의 코드는 `feature/spa-editor` 분기의 [GitHub](https://github.com/adobe/aem-guides-wknd-graphq)에서 찾을 수 있습니다.
++ 이 자습서의 코드는 `feature/spa-editor` 분기의 [GitHub](https://github.com/adobe/aem-guides-wknd-graphql)에서 찾을 수 있습니다.
 
 ## 전제 조건
 
