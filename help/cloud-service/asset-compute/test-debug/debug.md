@@ -13,7 +13,7 @@ topic: 통합, 개발
 role: Developer
 level: Intermediate, Experienced
 translation-type: tm+mt
-source-git-commit: 2efb7050b0b0c783c5f34c1f2e375cf21fa7a6cd
+source-git-commit: dbc0a35ae96594fec1e10f411d57d2a3812c1cf2
 workflow-type: tm+mt
 source-wordcount: '623'
 ht-degree: 0%
@@ -59,6 +59,7 @@ _wskdebug를 사용하여 Asset compute 작업자 디버깅의 클릭스루(오�
    ```
    ℹ Info: Deploying package [wkndAemAssetCompute-0.0.1]...
    ```
+
 
 1. `npx adobe-asset-compute devtool` 명령을 사용하여 Asset compute 개발 도구의 새 인스턴스를 시작합니다.
 1. VS 코드에서 왼쪽 탐색 창의 디버그 아이콘을 누릅니다.
