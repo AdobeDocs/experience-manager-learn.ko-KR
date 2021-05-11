@@ -13,7 +13,7 @@ topic: 통합, 개발
 role: Developer
 level: Intermediate, Experienced
 translation-type: tm+mt
-source-git-commit: 2efb7050b0b0c783c5f34c1f2e375cf21fa7a6cd
+source-git-commit: dbc0a35ae96594fec1e10f411d57d2a3812c1cf2
 workflow-type: tm+mt
 source-wordcount: '1439'
 ht-degree: 1%
@@ -270,7 +270,7 @@ $ aio app deploy
 1. 새 서비스 정의
    + __메타데이터 변환 만들기__:활성으로 전환
    + __끝점:__ `https://...adobeioruntime.net/api/v1/web/wkndAemAssetCompute-0.0.1/metadata-colors`
-      + 이 URL은 [배포](#deploy) 또는 `aio app get-url` 명령을 사용하는 동안 얻은 워커의 URL입니다. AEM을 Cloud Service 환경으로 기반으로 올바른 작업 영역에서 URL 점을 확인합니다.
+      + 이 URL은 [deploy](#deploy) 중에 얻거나 `aio app get-url` 명령을 사용하는 워커의 URL입니다. AEM을 Cloud Service 환경으로 기반으로 올바른 작업 영역에서 URL 점을 확인합니다.
    + __서비스 매개 변수__
       + __매개 변수 추가__&#x200B;를 탭합니다.
          + 키: `colorFamily`
