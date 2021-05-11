@@ -13,7 +13,7 @@ topic: 개발
 role: Developer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: 9a78cbdb5fd35e4aa7169382494dd014aa8098e9
+source-git-commit: d49ae402b332ba972a78cdbd8f5bf962b91c83b1
 workflow-type: tm+mt
 source-wordcount: '1734'
 ht-degree: 2%
@@ -229,7 +229,7 @@ AEM 작성자 서비스를 시작하려면 `cd`을(를) 빠른 시작 Jar가 포
 
 또는 AEM 게시 서비스를 시작하려면 빠른 시작 JAR이 포함된 디렉토리로 `cd`의 명령을 실행합니다.
 
-`$ java -jar aem-author-p4503.jar`
+`$ java -jar aem-publish-p4503.jar`
 
 ## 명령줄에서 빠른 시작 JAR를 시작하면 {#troubleshooting-java-8}이 즉시 중단됩니다.
 
