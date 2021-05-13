@@ -6,9 +6,8 @@ feature: SPA 편집기, 핵심 구성 요소, API, 개발
 role: Developer, Architect
 level: Beginner
 kt: 7630
-thumbnail: kt-7630.jpg
-translation-type: tm+mt
-source-git-commit: ec692af56afa83330097bb9d8db0d2f2f4fde1c1
+thumbnail: 333272.jpeg
+source-git-commit: cede0c97e0f322fe5d20d5c4f685ed10b90af1d4
 workflow-type: tm+mt
 source-wordcount: '694'
 ht-degree: 1%
@@ -21,6 +20,8 @@ ht-degree: 1%
 SPA Editor를 사용하여 편집 가능한 AEM 컨텐츠으로 기존 Response 기반(또는 Next.js) Remote SPA을 향상시키고자 하는 개발자를 위한 다중 부분 자습서입니다.
 
 이 자습서는 AEM GraphQL API를 통해 AEM 컨텐츠 조각 컨텐츠를 사용하는 React 앱인 [WKND GraphQL 앱](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)을 기반으로 구축되지만, SPA 컨텐츠의 컨텍스트 내 저작은 제공하지 않습니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/333272/?quality=12&learn=on)
 
 ## 자습서 정보
 
