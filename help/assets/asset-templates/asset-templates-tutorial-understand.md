@@ -2,13 +2,12 @@
 title: 'AEM Assets의 InDesign 파일 및 자산 템플릿 이해 '
 description: 이 비디오 자습서에서는 InDesign 파일을 정의하고 AEM Assets의 자산 템플릿 기능에서 사용할 수 있는 모든 관련 고려 사항을 안내합니다.
 version: 6.3, 6.4, 6.5
-topic: Content Management
+topic: 컨텐츠 관리
 role: Business Practitioner
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b4fa992abe22e3a546d651e465d6ffc9e415aee2
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '496'
 ht-degree: 1%
 
 ---
@@ -74,4 +73,4 @@ InDesign 템플릿 파일 및 지원 이미지
 [InDesign 템플릿 파일 및 지원 이미지](assets/asset-templates-tutorial-video--supporting-files-1.zip) 다운로드
 
 * [InDesign CC 시험버전 다운로드](https://creative.adobe.com/products/download/indesign)
-* [InDesign Server 시험버전 다운로드](https://www.adobe.com/devnet/indesign/indesign-server-trial-downloads.html)
+* [CC Enterprise 고객은 계정 관리자에게 문의하여 InDesign Server 시험판 라이선스를 요청할 수 있습니다.](https://www.adobe.com/products/indesignserver/faq.html)
