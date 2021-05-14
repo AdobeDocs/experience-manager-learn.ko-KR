@@ -1,25 +1,33 @@
 ---
 title: 내용 분석기 만들기
 description: REST 호출에 대한 입력 매개 변수에 대한 정보가 포함된 JSON 부분을 만듭니다.
-solution: Experience Manager, Experience Manager Forms
+solution: Experience Manager
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
 version: cloud-service
 topic: 개발
-thumbnail: 331891.jpg
-kt: 7192
-translation-type: tm+mt
-source-git-commit: dbc0a35ae96594fec1e10f411d57d2a3812c1cf2
+thumbnail: 7836.jpg
+kt: 7836
+source-git-commit: 84499d5a7c8adac87196f08c6328e8cb428c0130
 workflow-type: tm+mt
-source-wordcount: '47'
-ht-degree: 2%
+source-wordcount: '59'
+ht-degree: 1%
 
 ---
 
-# contentAnalyticsRequests
 
-입력, 매개 변수 및 출력에 대한 정보가 포함된 JSON 부분. 이 [양식 매개 변수의 세부 사항은 여기에서 확인할 수 있습니다.](https://documentcloud.adobe.com/document-services/index.html#post-createPDF)
+# Analyzer 요청 만들기
+
+다음을 정의하는 JSON 조각을 만듭니다.
+
++ input
++ 매개 변수
++ 출력.
+
+이 [양식 매개 변수의 세부 사항은 여기에서 확인할 수 있습니다.](https://documentcloud.adobe.com/document-services/index.html#post-createPDF)
+
+아래 나열된 샘플 코드는 모든 Office 365 문서 유형에 대한 JSON 조각을 생성합니다.
 
 ```java
 package com.aemforms.doccloud.core.impl;
@@ -34,10 +42,15 @@ public class GetContentAnalyser {
 		
 		JsonObject documentIn = new JsonObject();
 		documentIn.addProperty("cpf:location", "InputFile0");
-		System.out.println("The file name is "+fileName);
+
+		if(fileName.endsWith(".pptx"))
+		{
+			documentIn.addProperty("dc:format","application/vnd.openxmlformats-officedocument.presentationml.presentation");
+		}
+
 		if(fileName.endsWith(".docx"))
 		{
-			System.out.println("This is word document");
+			
 			documentIn.addProperty("dc:format","application/vnd.openxmlformats-officedocument.wordprocessingml.document");
 		}
 		if(fileName.endsWith(".xlsx"))
