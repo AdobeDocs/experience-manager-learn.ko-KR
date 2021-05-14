@@ -7,12 +7,11 @@ role: Developer
 level: Beginner, Intermediate
 version: cloud-service
 topic: 개발
-thumbnail: 331891.jpg
-kt: 7192
-translation-type: tm+mt
-source-git-commit: dbc0a35ae96594fec1e10f411d57d2a3812c1cf2
+thumbnail: 7826.jpg
+kt: 7826
+source-git-commit: 84499d5a7c8adac87196f08c6328e8cb428c0130
 workflow-type: tm+mt
-source-wordcount: '48'
+source-wordcount: '44'
 ht-degree: 2%
 
 ---
@@ -20,7 +19,8 @@ ht-degree: 2%
 # 인터페이스 구현
 
 다음은 인터페이스를 구현하는 클래스에서 수행하는 전체 코드입니다.
-이 클래스는 GetContentAnalyser 클래스의 2개의 유틸리티 메서드 getAccessToken, getJWTTaken 및 정적 메서드 getContentAnalyserRequest를 사용합니다.
+
+이 클래스는 `GetContentAnalyser` 클래스의 `getAccessToken`, `getJWTToken` 및 정적 메서드 `getContentAnalyserRequest`를 2개 사용합니다.
 
 
 ```java
