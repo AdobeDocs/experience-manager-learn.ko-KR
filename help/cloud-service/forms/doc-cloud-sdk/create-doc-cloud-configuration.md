@@ -7,12 +7,11 @@ role: Developer
 level: Beginner, Intermediate
 version: cloud-service
 topic: 개발
-thumbnail: 331891.jpg
-kt: 7192
-translation-type: tm+mt
-source-git-commit: dbc0a35ae96594fec1e10f411d57d2a3812c1cf2
+thumbnail: 7818.jpg
+kt: 7818
+source-git-commit: 84499d5a7c8adac87196f08c6328e8cb428c0130
 workflow-type: tm+mt
-source-wordcount: '63'
+source-wordcount: '64'
 ht-degree: 3%
 
 ---
@@ -21,7 +20,11 @@ ht-degree: 3%
 
 사용자 정의 OSGi 구성을 만들어 Document Cloud 계정의 자격 증명을 캡처합니다.
 
+
 사용자 지정 OSGi 구성을 만들려면 먼저 공개 메서드가 구성의 필드를 나타내는 인터페이스를 만들어야 합니다.
+
+![doc-cloud-config](assets/doc-cloud-configuration.JPG)
+
 
 DocumentCloudConfiguration이라는 인터페이스를 만들고 다음 코드를 여기에 붙여 넣습니다.
 
