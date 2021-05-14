@@ -4,11 +4,10 @@ user-guide-description: Adobe Experience Manager as a Cloud Service를 위한 �
 breadcrumb-title: AEM as a Cloud Service 튜토리얼
 sub-product: 클라우드 서비스
 team: TM
-translation-type: tm+mt
-source-git-commit: 98cfc9e007770e7a8291343bdd63fd523f747bb9
+source-git-commit: 84499d5a7c8adac87196f08c6328e8cb428c0130
 workflow-type: tm+mt
-source-wordcount: '415'
-ht-degree: 22%
+source-wordcount: '440'
+ht-degree: 21%
 
 ---
 
@@ -96,6 +95,14 @@ ht-degree: 22%
       + [에셋 패널 구성](./forms/create-first-af/configure-assets-panel.md)
       + [시작 패널 구성](./forms/create-first-af/configure-start-panel.md)
       + [도구 모음 추가 및 구성](./forms/create-first-af/add-configure-toolbar.md)
+   + Document Cloud API 및 AEM Forms CS{#doc-cloud-sdk}
+      + [소개](./forms/doc-cloud-sdk/introduction.md)
+      + [Adobe IO 프로젝트 만들기](./forms/doc-cloud-sdk/create-document-cloud-credentials.md)
+      + [OSGI 구성 만들기](./forms/doc-cloud-sdk/create-doc-cloud-configuration.md)
+      + [인터페이스 정의](./forms/doc-cloud-sdk/create-interface.md)
+      + [인터페이스 구현](./forms/doc-cloud-sdk/implement-interface.md)
+      + [JSON 파트 만들기](./forms/doc-cloud-sdk/get-content-analyzer.md)
+      + [사용자 지정 프로세스 단계](./forms/doc-cloud-sdk/custom-process-step.md)
    + 검토 워크플로 만들기{#create-aem-workflow}
       + [워크플로우 모델 만들기](./forms/create-aem-workflow/create-workflow.md)
       + [트리거 워크플로우](./forms/create-aem-workflow/configure-af.md)
