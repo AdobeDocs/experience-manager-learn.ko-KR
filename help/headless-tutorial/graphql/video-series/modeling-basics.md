@@ -9,10 +9,9 @@ role: Developer
 level: Beginner
 kt: 7619
 thumbnail: 332858.jpg
-translation-type: tm+mt
-source-git-commit: 81626b8d853f3f43d9c51130acf02561f91536ac
+source-git-commit: e4abfe07f1b4e67f973f39186aafc33715592b2f
 workflow-type: tm+mt
-source-wordcount: '48'
+source-wordcount: '89'
 ht-degree: 0%
 
 ---
@@ -22,5 +21,10 @@ ht-degree: 0%
 
 GraphQL과 함께 사용할 수 있도록 AEM(Adobe Experience Manager)에서 컨텐츠 조각을 정의하고 사용하는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/332858/?quality=12&learn=on)
+이 비디오에서는 다음을 수행합니다.
 
++ 컨텐츠 조각 모델을 만들고 정의하는 방법을 알아봅니다.
++ 컨텐츠 조각 모델을 작성하는 데 사용되는 다양한 데이터 유형 및 유효성 검사에 대해 알아봅니다.
++ 컨텐츠 조각 모델이 GraphQL API를 유도하는 방법을 이해합니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/332858/?quality=12&learn=on)
