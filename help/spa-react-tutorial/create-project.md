@@ -2,7 +2,7 @@
 title: SPA 편집기 프로젝트 | AEM SPA 편집기 시작 및 반응
 description: AEM(Adobe Experience Manager) Maven 프로젝트를 AEM SPA 편집기와 통합된 반응형 애플리케이션의 시작점으로 사용하는 방법을 살펴볼 수 있습니다.
 sub-product: 사이트
-feature: SPA Editor, AEM Project Archetype
+feature: SPA 편집기, AEM 프로젝트 원형
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -13,10 +13,9 @@ thumbnail: 413-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 375df47a13b1820911a7ceb73af0dad15c68740e
 workflow-type: tm+mt
-source-wordcount: '1136'
+source-wordcount: '1134'
 ht-degree: 3%
 
 ---
@@ -122,23 +121,23 @@ AEM용 Maven 다중 모듈 프로젝트를 만드는 옵션은 여러 가지가 
    프로젝트의 여러 모듈을 컴파일하고 AEM에 배포해야 합니다.
 
    ```plain
-    [INFO] ------------------------------------------------------------------------
-    [INFO] Reactor Summary for wknd-spa-react 1.0.0-SNAPSHOT:
-    [INFO] 
-    [INFO] wknd-spa-react ..................................... SUCCESS [  0.523 s]
-    [INFO] WKND SPA React - Core .............................. SUCCESS [  8.069 s]
-    [INFO] wknd-spa-react.ui.frontend - UI Frontend ........... SUCCESS [01:23 min]
-    [INFO] WKND SPA React - Repository Structure Package ...... SUCCESS [  0.830 s]
-    [INFO] WKND SPA React - UI apps ........................... SUCCESS [  4.654 s]
-    [INFO] WKND SPA React - UI content ........................ SUCCESS [  1.607 s]
-    [INFO] WKND SPA React - All ............................... SUCCESS [  0.384 s]
-    [INFO] WKND SPA React - Integration Tests Bundles ......... SUCCESS [  0.770 s]
-    [INFO] WKND SPA React - Integration Tests Launcher ........ SUCCESS [  1.407 s]
-    [INFO] WKND SPA React - Dispatcher ........................ SUCCESS [  0.055 s]
-    [INFO] ------------------------------------------------------------------------
-    [INFO] BUILD SUCCESS
-    [INFO] ------------------------------------------------------------------------
-    [INFO] Total time:  01:44 min
+   [INFO] ------------------------------------------------------------------------
+   [INFO] Reactor Summary for wknd-spa-react 1.0.0-SNAPSHOT:
+   [INFO] 
+   [INFO] wknd-spa-react ..................................... SUCCESS [  0.523 s]
+   [INFO] WKND SPA React - Core .............................. SUCCESS [  8.069 s]
+   [INFO] wknd-spa-react.ui.frontend - UI Frontend ........... SUCCESS [01:23 min]
+   [INFO] WKND SPA React - Repository Structure Package ...... SUCCESS [  0.830 s]
+   [INFO] WKND SPA React - UI apps ........................... SUCCESS [  4.654 s]
+   [INFO] WKND SPA React - UI content ........................ SUCCESS [  1.607 s]
+   [INFO] WKND SPA React - All ............................... SUCCESS [  0.384 s]
+   [INFO] WKND SPA React - Integration Tests Bundles ......... SUCCESS [  0.770 s]
+   [INFO] WKND SPA React - Integration Tests Launcher ........ SUCCESS [  1.407 s]
+   [INFO] WKND SPA React - Dispatcher ........................ SUCCESS [  0.055 s]
+   [INFO] ------------------------------------------------------------------------
+   [INFO] BUILD SUCCESS
+   [INFO] ------------------------------------------------------------------------
+   [INFO] Total time:  01:44 min
    ```
 
    Maven 프로필 ***autoInstallSinglePackage***&#x200B;은 프로젝트의 개별 모듈을 컴파일하고 단일 패키지를 AEM 인스턴스에 배포합니다. 기본적으로 이 패키지는 **4502** 포트에서 로컬로 실행 중인 AEM 인스턴스와 **admin:admin**&#x200B;의 자격 증명으로 배포됩니다.
@@ -153,7 +152,7 @@ AEM용 Maven 다중 모듈 프로젝트를 만드는 옵션은 여러 가지가 
 
    프로젝트에 필요한 모든 사용자 정의 코드는 이러한 패키지에 번들로 포함되어 AEM 런타임에 설치됩니다.
 
-6. 또한 `spa.project.core` 및 `core.wcm.components`에 대한 여러 패키지가 표시됩니다. 이러한 종속성은 기본적으로 자동으로 포함됩니다. [AEM 코어 구성 요소에 대한 자세한 내용은](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)에서 확인할 수 있습니다.
+6. 또한 `spa.project.core` 및 `core.wcm.components`에 대한 여러 패키지가 표시됩니다. 이러한 종속성은 기본적으로 자동으로 포함됩니다. [AEM 코어 구성 요소에 대한 자세한 내용은](https://docs.adobe.com/content/help/ko/experience-manager-core-components/using/introduction.html)에서 확인할 수 있습니다.
 
    `spa.project.core` 는 SPA 편집기에 필요한 JSON 모델 API를 생성하는 데 필요한 종속성이 됩니다.
 
@@ -237,7 +236,7 @@ AEM용 Maven 다중 모듈 프로젝트를 만드는 옵션은 여러 가지가 
    >
    > JSON 출력 서식을 자동으로 지정하기 위해 브라우저 확장을 설치하는 것이 도움이 될 수 있습니다.
 
-## 축하합니다!{#congratulations}
+## 축하합니다! {#congratulations}
 
 축하합니다. 첫 번째 AEM SPA 편집기 프로젝트를 만들었습니다!
 
