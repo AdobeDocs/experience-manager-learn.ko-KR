@@ -1,15 +1,14 @@
 ---
 title: AEM Foundation 비디오 및 튜토리얼
 seo-title: AEM Foundation 비디오 및 튜토리얼
-description: 'Adobe Experience Manager Foundation을 위한 비디오 및 튜토리얼 모음입니다. '
-seo-description: Adobe Experience Manager Foundation을 위한 비디오 및 튜토리얼 모음입니다
+description: 'Adobe Experience Manager Foundation에 대한 비디오 및 튜토리얼 모음입니다. '
+seo-description: Adobe Experience Manager Foundation에 대한 비디오 및 튜토리얼 모음입니다
 role: Leader, Architect, Developer, Administrator, Business Practitioner
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 01053f3d8de0405cfc7058f46443647154c508c4
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 21%
+source-wordcount: '261'
+ht-degree: 22%
 
 ---
 
@@ -20,8 +19,9 @@ Adobe Experience Manager은 AEM Sites, [!DNL Assets] 및 [!DNL Forms] 사용자�
 
 ## 새로운 기능
 
-* **[AEM에서 워크플로우 관리 사용(비디오)](./workflow/use-workflow-management.md)**
-   *AEM은 실행 중인 워크플로우를 시각적으로 표시하고 정의를 간편하게 관리할 수  [!DNL Workflow] 있습니다.*
+* **[워크플로우 AEM(비디오) 사용](./workflow/use-workflow.md)**
+
+   *AEM Workflow는 AEM에서 컨텐츠를 공동 작업, 관리 및 처리할 수 있는 방법을 제공합니다.*
 
 * **[AEM용 Cloud Manager 이해(비디오)](./cloud-manager/understand-cloud-manager-for-aem.md)**\
    *AEM용 Cloud Manager를 사용하면 AEM 환경을 손쉽게 관리, 검사 및 셀프 서비스를 받을 수 있습니다.*
