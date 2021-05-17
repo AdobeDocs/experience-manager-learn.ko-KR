@@ -1,13 +1,12 @@
 ---
 user-guide-title: AEM Foundation 비디오 및 튜토리얼
 breadcrumb-title: AEM Foundation 튜토리얼
-user-guide-description: 'Adobe Experience Manager Foundation을 위한 비디오 및 튜토리얼 모음입니다. '
+user-guide-description: 'Adobe Experience Manager Foundation에 대한 비디오 및 튜토리얼 모음입니다. '
 sub-product: foundation
 index: y
-translation-type: tm+mt
-source-git-commit: 2760064642002a684b3fd70337a81a7d6e28a343
+source-git-commit: 01053f3d8de0405cfc7058f46443647154c508c4
 workflow-type: tm+mt
-source-wordcount: '147'
+source-wordcount: '146'
 ht-degree: 21%
 
 ---
@@ -45,6 +44,6 @@ ht-degree: 21%
    + [SSL 마법사 사용](./security/use-the-ssl-wizard.md)
 + 워크플로 {#workflow}
    + [워크플로우 편집기 사용](./workflow/use-the-workflow-editor.md)
-   + [워크플로우 관리 사용](./workflow/use-workflow-management.md)
+   + [워크플로우 사용](./workflow/use-workflow.md)
    + [받은 편지함 사용](./workflow/use-the-inbox.md)
 
