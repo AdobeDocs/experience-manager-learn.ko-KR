@@ -10,9 +10,9 @@ topics: content-delivery
 activity: develop, understand
 kt: 2963
 index: y
-source-git-commit: e4abfe07f1b4e67f973f39186aafc33715592b2f
+source-git-commit: 73c75f8dac85615f4ed2dfdcc2ee4d0e9e5d161a
 workflow-type: tm+mt
-source-wordcount: '142'
+source-wordcount: '144'
 ht-degree: 23%
 
 ---
@@ -29,6 +29,7 @@ ht-degree: 23%
       + [3 - GraphQL 쿼리 만들기](./graphql/video-series/creating-graphql-queries.md)
       + [4 - 작성자 및 게시 아키텍처](./graphql/video-series/author-publish-architecture.md)
       + [5 - 컨텐츠 조각 변형](./graphql/video-series/content-fragment-variations.md)
+      + [6 - GraphQL 끝점](./graphql/video-series/graphql-endpoints.md)
    + 다단계 자습서{#multi-step}
       + [개요](./graphql/multi-step/overview.md)
       + [1 - 빠른 설정](./graphql/multi-step/setup.md)
