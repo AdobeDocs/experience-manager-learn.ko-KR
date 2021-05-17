@@ -2,7 +2,7 @@
 title: SPA 편집기 프로젝트 | AEM SPA 편집기 및 Angular 시작하기
 description: AEM(Adobe Experience Manager) Maven 프로젝트를 AEM SPA 편집기와 통합된 Angular 애플리케이션의 시작점으로 사용하는 방법을 살펴볼 수 있습니다.
 sub-product: 사이트
-feature: SPA Editor, AEM Project Archetype
+feature: SPA 편집기, AEM 프로젝트 원형
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -13,10 +13,9 @@ thumbnail: 5309-spa-angular.jpg
 topic: SPA
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 375df47a13b1820911a7ceb73af0dad15c68740e
 workflow-type: tm+mt
-source-wordcount: '1117'
+source-wordcount: '1115'
 ht-degree: 3%
 
 ---
@@ -102,9 +101,9 @@ AEM용 Maven 다중 모듈 프로젝트를 만드는 옵션은 여러 가지가 
 
    ```shell
    $ mvn --version
-    Apache Maven 3.6.2
-    Maven home: /Library/apache-maven-3.6.2
-    Java version: 11.0.4, vendor: Oracle Corporation, runtime: /Library/Java/JavaVirtualMachines/jdk-11.0.4.jdk/Contents/Home
+   Apache Maven 3.6.2
+   Maven home: /Library/apache-maven-3.6.2
+   Java version: 11.0.4, vendor: Oracle Corporation, runtime: /Library/Java/JavaVirtualMachines/jdk-11.0.4.jdk/Contents/Home
    ```
 
 3. `aem-guides-wknd-spa` 디렉토리에서 아래 Maven 명령을 실행하여 프로젝트를 빌드하고 AEM에 배포합니다.
@@ -122,22 +121,22 @@ AEM용 Maven 다중 모듈 프로젝트를 만드는 옵션은 여러 가지가 
    프로젝트의 여러 모듈을 컴파일하고 AEM에 배포해야 합니다.
 
    ```plain
-    [INFO] ------------------------------------------------------------------------
-    [INFO] Reactor Summary for wknd-spa-angular 1.0.0-SNAPSHOT:
-    [INFO] 
-    [INFO] wknd-spa-angular ................................... SUCCESS [  0.473 s]
-    [INFO] WKND SPA Angular - Core ............................ SUCCESS [ 54.866 s]
-    [INFO] wknd-spa-angular.ui.frontend - UI Frontend ......... SUCCESS [02:10 min]
-    [INFO] WKND SPA Angular - Repository Structure Package .... SUCCESS [  0.694 s]
-    [INFO] WKND SPA Angular - UI apps ......................... SUCCESS [  6.351 s]
-    [INFO] WKND SPA Angular - UI content ...................... SUCCESS [  2.885 s]
-    [INFO] WKND SPA Angular - All ............................. SUCCESS [  1.736 s]
-    [INFO] WKND SPA Angular - Integration Tests Bundles ....... SUCCESS [  2.563 s]
-    [INFO] WKND SPA Angular - Integration Tests Launcher ...... SUCCESS [  1.846 s]
-    [INFO] WKND SPA Angular - Dispatcher ...................... SUCCESS [  0.270 s]
-    [INFO] ------------------------------------------------------------------------
-    [INFO] BUILD SUCCESS
-    [INFO] ------------------------------------------------------------------------
+   [INFO] ------------------------------------------------------------------------
+   [INFO] Reactor Summary for wknd-spa-angular 1.0.0-SNAPSHOT:
+   [INFO] 
+   [INFO] wknd-spa-angular ................................... SUCCESS [  0.473 s]
+   [INFO] WKND SPA Angular - Core ............................ SUCCESS [ 54.866 s]
+   [INFO] wknd-spa-angular.ui.frontend - UI Frontend ......... SUCCESS [02:10 min]
+   [INFO] WKND SPA Angular - Repository Structure Package .... SUCCESS [  0.694 s]
+   [INFO] WKND SPA Angular - UI apps ......................... SUCCESS [  6.351 s]
+   [INFO] WKND SPA Angular - UI content ...................... SUCCESS [  2.885 s]
+   [INFO] WKND SPA Angular - All ............................. SUCCESS [  1.736 s]
+   [INFO] WKND SPA Angular - Integration Tests Bundles ....... SUCCESS [  2.563 s]
+   [INFO] WKND SPA Angular - Integration Tests Launcher ...... SUCCESS [  1.846 s]
+   [INFO] WKND SPA Angular - Dispatcher ...................... SUCCESS [  0.270 s]
+   [INFO] ------------------------------------------------------------------------
+   [INFO] BUILD SUCCESS
+   [INFO] ------------------------------------------------------------------------
    ```
 
    Maven 프로필 ***autoInstallSinglePackage***&#x200B;은 프로젝트의 개별 모듈을 컴파일하고 단일 패키지를 AEM 인스턴스에 배포합니다. 기본적으로 이 패키지는 **4502** 포트에서 로컬로 실행 중인 AEM 인스턴스와 **admin:admin**&#x200B;의 자격 증명으로 배포됩니다.
@@ -150,7 +149,7 @@ AEM용 Maven 다중 모듈 프로젝트를 만드는 옵션은 여러 가지가 
 
    프로젝트에 필요한 모든 사용자 정의 코드는 이러한 패키지에 번들로 포함되어 AEM 런타임에 설치됩니다.
 
-6. 또한 `spa.project.core` 및 `core.wcm.components`에 대한 여러 패키지가 표시됩니다. 이러한 의존 관계는 원형 유형에 의해 자동으로 포함됩니다. [AEM 코어 구성 요소에 대한 자세한 내용은](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)에서 확인할 수 있습니다.
+6. 또한 `spa.project.core` 및 `core.wcm.components`에 대한 여러 패키지가 표시됩니다. 이러한 의존 관계는 원형 유형에 의해 자동으로 포함됩니다. [AEM 코어 구성 요소에 대한 자세한 내용은](https://docs.adobe.com/content/help/ko/experience-manager-core-components/using/introduction.html)에서 확인할 수 있습니다.
 
 ## 컨텐츠 작성
 
@@ -232,7 +231,7 @@ AEM용 Maven 다중 모듈 프로젝트를 만드는 옵션은 여러 가지가 
    >
    > JSON 출력 서식을 자동으로 지정하기 위해 브라우저 확장을 설치하는 것이 도움이 될 수 있습니다.
 
-## 축하합니다!{#congratulations}
+## 축하합니다! {#congratulations}
 
 축하합니다. 첫 번째 AEM SPA 편집기 프로젝트를 만들었습니다!
 
