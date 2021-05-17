@@ -6,9 +6,8 @@ feature: SPA 편집기, 핵심 구성 요소, API, 개발
 role: Developer, Architect
 level: Beginner
 kt: 7629
-thumbnail: 333181.jpeg
-translation-type: tm+mt
-source-git-commit: e6dc028a120670d34806def36ad200ed161295e1
+thumbnail: 333181.jpg
+source-git-commit: 73c75f8dac85615f4ed2dfdcc2ee4d0e9e5d161a
 workflow-type: tm+mt
 source-wordcount: '801'
 ht-degree: 4%
@@ -82,8 +81,8 @@ AEM SDK가 시작되고 [http://localhost:4502](http://localhost:4502)에 자동
 
 빠른 설정을 수행하려면 튜토리얼의 최종 AEM 구성과 내용이 포함된 AEM 패키지가 제공됩니다.
 
-1. [다운로드 `wknd-app.all.x.x.x.zip`](./assets/quick-setup/wknd-app.all-1.0.0-SNAPSHOT.zip)
-1. [다운로드 `wknd-app.ui.content.sample.x.x.x.zip`](./assets/quick-setup/wknd-app.ui.content.sample-1.0.0.zip)
+1. [다운로드 ](./assets/quick-setup/wknd-app.all-1.0.0-SNAPSHOT.zip)
+1. [다운로드 ](./assets/quick-setup/wknd-app.ui.content.sample-1.0.0.zip)
 1. `admin` 자격 증명으로 [http://localhost:4502/crx/packmgr](http://localhost:4502/crx/packmgr)에 AEM SDK의 패키지 관리자에 로그인합니다.
 1. ____ 1단계에서  `wknd-app.all.x.x.x.zip` 다운로드한 파일 업로드
 1. `wknd-app.all.x.x.x.zip` 항목의 __설치__ 단추를 누릅니다.
