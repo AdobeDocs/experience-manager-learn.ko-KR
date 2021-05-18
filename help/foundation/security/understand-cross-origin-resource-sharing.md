@@ -7,13 +7,12 @@ topics: security, development, content-delivery
 activity: understand
 audience: architect, developer
 doc-type: article
-topic: Security
+topic: 보안
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 1c99c319fba5048904177fc82c43554b0cf0fc15
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '918'
 ht-degree: 1%
 
 ---
@@ -141,7 +140,8 @@ CORS 헤더의 캐싱을 허용하려면 다음 구성을 모든 지원 AEM 게�
 ```
 /cache { 
   ...
-  /clientheaders {
+  /headers {
+      "Origin",
       "Access-Control-Allow-Origin"
       "Access-Control-Expose-Headers"
       "Access-Control-Max-Age"
@@ -155,7 +155,7 @@ CORS 헤더의 캐싱을 허용하려면 다음 구성을 모든 지원 AEM 게�
 
 `dispatcher.any` 파일을 변경한 후 **웹 서버 응용 프로그램**&#x200B;을 다시 시작해야 합니다.
 
-`/clientheaders` 구성 업데이트 후 다음 요청에서 헤더가 적절하게 캐시되도록 하려면 캐시를 완전히 지우는 것이 필요할 수 있습니다.
+`/cache/headers` 구성 업데이트 후 다음 요청에서 헤더가 적절하게 캐시되도록 하려면 캐시를 완전히 지우는 것이 필요할 수 있습니다.
 
 ## CORS 문제 해결
 
@@ -170,7 +170,7 @@ CORS 헤더의 캐싱을 허용하려면 다음 구성을 모든 지원 AEM 게�
 * 인증, CSRF 토큰 필터, 디스패처 필터 또는 기타 보안 레이어가 아닌 CORS 핸들러에서 요청이 거부되었는지 확인
    * CORS 핸들러가 200으로 응답하지만 `Access-Control-Allow-Origin` 헤더가 응답에 없는 경우 `com.adobe.granite.cors`의 [!DNL DEBUG] 아래에 있는 거부 로그를 검토하십시오.
 * [!DNL CORS] 요청의 디스패처 캐싱이 활성화된 경우
-   * `/clientheaders` 구성이 `dispatcher.any`에 적용되었고 웹 서버가 다시 시작되었는지 확인합니다.
+   * `/cache/headers` 구성이 `dispatcher.any`에 적용되었고 웹 서버가 다시 시작되었는지 확인합니다.
    * OSGi 또는 dispatcher.구성이 변경된 후 캐시가 올바르게 지워졌는지 확인합니다.
 * 필요한 경우 요청에 인증 자격 증명이 있는지 확인하십시오.
 
