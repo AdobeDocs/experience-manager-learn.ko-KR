@@ -1,7 +1,7 @@
 ---
 title: OSGi 서비스 만들기
 description: 서명할 양식을 저장할 OSGi 서비스 만들기
-feature: Workflow
+feature: 워크플로우
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,13 +9,12 @@ activity: implement
 version: 6.4,6.5
 thumbnail: 6886.jpg
 kt: 6886
-topic: Development
+topic: 개발
 role: Developer
 level: Experienced
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '354'
 ht-degree: 1%
 
 ---
@@ -23,11 +22,11 @@ ht-degree: 1%
 
 # OSGi 서비스 만들기
 
-다음 코드는 서명이 필요한 양식을 저장하기 위해 작성되었습니다. 서명할 각 양식은 고유한 GUID 및 고객 ID와 연결됩니다. 따라서 하나 이상의 양식을 동일한 고객 ID와 연결할 수 있지만 고유한 GUID가 양식에 지정됩니다.
+다음 코드는 서명해야 하는 양식을 저장하기 위해 작성되었습니다. 서명할 각 양식은 고유한 GUID 및 고객 ID와 연결됩니다. 따라서 하나 이상의 양식은 동일한 고객 ID와 연결할 수 있지만 양식에 고유한 GUID가 지정됩니다.
 
 ## 인터페이스
 
-다음은 사용된 인터페이스 선언입니다.
+다음은 사용된 인터페이스 선언입니다
 
 ```java
 package com.aem.forms.signmultipleforms;
@@ -46,7 +45,7 @@ public interface SignMultipleForms
 
 ## 데이터 삽입
 
-데이터 삽입 메서드는 데이터 원본으로 식별되는 데이터베이스에 행을 삽입합니다. 데이터베이스의 각 행은 양식에 해당하며 GUID 및 고객 ID로 고유하게 식별됩니다. 양식 데이터와 양식 URL도 이 행에 저장됩니다. 상태 열은 양식이 채워지고 서명되었는지 여부를 나타냅니다. 값이 0이면 양식에 아직 서명되지 않은 것입니다.
+데이터 삽입 메서드는 데이터 원본으로 식별된 데이터베이스에 행을 삽입합니다. 데이터베이스의 각 행은 양식에 해당하며 GUID 및 고객 ID로 고유하게 식별됩니다. 양식 데이터와 양식 URL도 이 행에 저장됩니다. 상태 열은 양식이 채워지고 서명되었는지 여부를 나타냅니다. 값이 0이면 양식에 아직 서명되지 않았음을 나타냅니다.
 
 ```java
 @Override
@@ -108,7 +107,7 @@ log.debug(e.getMessage());
 
 ## 양식 데이터 가져오기
 
-다음 코드는 지정된 GUID와 연관된 적응형 양식 데이터를 가져오는 데 사용됩니다. 그런 다음 양식 데이터를 사용하여 적응형 양식을 미리 채웁니다.
+다음 코드는 지정된 GUID와 연결된 적응형 양식 데이터를 가져오는 데 사용됩니다. 그런 다음 양식 데이터를 사용하여 적응형 양식을 미리 채웁니다.
 
 ```java
 @Override
@@ -135,7 +134,7 @@ public String getFormData(String guid) {
 
 ## 서명 상태 업데이트
 
-서명식이 성공적으로 완료되면 양식과 연관된 AEM 작업 과정이 시작됩니다. 워크플로우의 첫 번째 단계는 GUID 및 고객 ID로 식별된 행의 데이터베이스의 상태를 업데이트하는 프로세스 단계입니다. 양식 데이터에 있는 서명된 요소의 값을 Y로 설정하여 양식이 채워지고 서명되었음을 나타냅니다. 적응형 양식이 이 데이터로 채워지고 xml 데이터에서 서명된 데이터 요소의 값이 적절한 메시지를 표시하는 데 사용됩니다. updateSignatureStatus 코드는 사용자 지정 프로세스 단계에서 호출됩니다.
+성공적으로 서명식을 완료하면 양식과 연결된 AEM 워크플로우가 트리거됩니다. 워크플로우의 첫 번째 단계는 guid 및 고객 ID로 식별된 행의 데이터베이스의 상태를 업데이트하는 프로세스 단계입니다. 또한 양식 데이터에서 서명된 요소의 값을 Y로 설정하여 양식이 채워지고 서명되었음을 나타냅니다. 적응형 양식은 이 데이터로 채워지고 xml 데이터에 있는 서명된 데이터 요소의 값은 해당 메시지를 표시하는 데 사용됩니다. updateSignatureStatus 코드는 사용자 지정 프로세스 단계에서 호출됩니다.
 
 
 ```java
@@ -167,9 +166,9 @@ public void updateSignatureStatus(String formData, String guid) {
 }
 ```
 
-## 다음 양식에 서명
+## 서명할 다음 양식 받기
 
-다음 코드는 상태가 0인 지정된 customerID에 서명할 다음 양식을 가져오는 데 사용되었습니다. sql 쿼리가 행을 반환하지 않으면 지정된 고객 ID에 서명할 양식이 더 이상 없음을 나타내는 **&quot;AllDone&quot;** 문자열을 반환합니다.
+다음 코드는 상태가 0인 지정된 customerID에 서명하는 다음 양식을 가져오는 데 사용되었습니다. sql 쿼리가 행을 반환하지 않으면 지정된 고객 ID에 서명할 양식이 더 이상 없음을 나타내는 **&quot;AllDone&quot;** 문자열을 반환합니다.
 
 ```java
 @Override
@@ -209,4 +208,4 @@ public String getNextFormToSign(int customerID) {
 
 ## 자산
 
-위에서 언급한 서비스와 함께 OSGi 번들은 여기에서 [다운로드할 수 있습니다](assets/sign-multiple-forms.jar)
+위에 언급된 서비스와 함께 OSGi 번들은 여기에서 [다운로드할 수 있습니다.](assets/sign-multiple-forms.jar)
