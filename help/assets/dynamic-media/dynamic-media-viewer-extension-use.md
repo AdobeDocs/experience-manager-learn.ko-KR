@@ -1,38 +1,37 @@
 ---
-title: Adobe Analytics 및 Adobe 론치에서 Dynamic Media 뷰어 사용
+title: Adobe Analytics 및 Adobe Launch에서 Dynamic Media Viewer 사용
 description: Dynamic Media Viewers 5.13 릴리스와 함께 Adobe Launch용 Dynamic Media Viewers 확장을 사용하면 Dynamic Media, Adobe Analytics 및 Adobe Launch 고객은 Adobe Launch 구성에서 Dynamic Media Viewer에 고유한 이벤트 및 데이터를 사용할 수 있습니다.
 sub-product: 다이내믹 미디어
-feature: Asset Insights
+feature: 자산 통찰력
 version: 6.3, 6.4, 6.5
-topic: Content Management
+topic: 컨텐츠 관리
 role: Business Practitioner
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '364'
 ht-degree: 16%
 
 ---
 
 
-# Adobe Analytics 및 Adobe 론치와 함께 Dynamic Media 뷰어 사용{#using-dynamic-media-viewers-adobe-analytics-launch}
+# Adobe Analytics 및 Adobe Launch에서 Dynamic Media Viewer 사용{#using-dynamic-media-viewers-adobe-analytics-launch}
 
-이제 Dynamic Media 및 Adobe Analytics 고객의 경우 Dynamic Media Viewer Extension을 사용하여 웹 사이트에서 Dynamic Media 뷰어의 사용을 추적할 수 있습니다.
+이제 Dynamic Media 및 Adobe Analytics을 사용하는 고객의 경우 Dynamic Media Viewer Extension을 사용하여 웹 사이트에서 Dynamic Media Viewer 사용을 추적할 수 있습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29308/?quality=12&learn=on)
 
 >[!NOTE]
 >
-> 이 기능을 사용하려면 Dynamic Media Scene7 모드에서 Adobe Experience Manager을 실행합니다. 또한 [Adobe Experience Platform Launch을 AEM 인스턴스](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/adobe-launch-integration-tutorial-understand.html)와 통합해야 합니다.
+> 이 기능을 사용하려면 Dynamic Media Scene7 모드에서 Adobe Experience Manager을 실행하십시오. 또한 [Adobe Experience Platform Launch을 AEM 인스턴스](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/adobe-launch-integration-tutorial-understand.html)와 통합해야 합니다.
 
-Dynamic Media 뷰어 확장 기능이 도입됨에 따라 Adobe Experience Manager은 이제 Dynamic Media 뷰어와 함께 제공되는 에셋에 대한 고급 분석 지원(5.13)을 제공하므로 사이트 페이지에서 Dynamic Media 뷰어를 사용할 때 이벤트 추적을 보다 세밀하게 제어할 수 있습니다.
+Dynamic Media 뷰어 확장의 도입으로 이제 Adobe Experience Manager은 Dynamic Media 뷰어(5.13)와 함께 제공된 자산에 대한 고급 분석 지원을 제공하여 사이트 페이지에서 Dynamic Media 뷰어를 사용할 때 이벤트 추적을 보다 세밀하게 제어할 수 있습니다.
 
-이미 AEM Assets 및 사이트가 있는 경우 Launch 속성을 AEM 작성자 인스턴스와 통합할 수 있습니다. 론치 통합이 웹 사이트와 연결되면 뷰어에 대한 이벤트 추적이 활성화되면 다이내믹 미디어 구성 요소를 페이지에 추가할 수 있습니다.
+이미 AEM Assets 및 Sites가 있는 경우 Launch 속성을 AEM 작성자 인스턴스와 통합할 수 있습니다. Launch 통합이 웹 사이트와 연결되면 뷰어에 대한 이벤트 추적이 활성화되면 페이지에 Dynamic Media 구성 요소를 추가할 수 있습니다.
 
-AEM Assets 전용 고객 또는 Dynamic Media Classic 고객의 경우 사용자는 뷰어용 포함 코드를 가져와서 페이지에 추가할 수 있습니다. 그런 다음 뷰어 이벤트 추적을 위해 Launch Script 라이브러리를 페이지에 수동으로 추가할 수 있습니다.
+AEM Assets 전용 고객 또는 Dynamic Media Classic 고객의 경우 사용자는 뷰어에 대한 포함 코드를 가져와 페이지에 추가할 수 있습니다. 그런 다음 뷰어 이벤트 추적을 위해 Launch 스크립트 라이브러리를 페이지에 수동으로 추가할 수 있습니다.
 
-다음 표는 Dynamic Media 뷰어 이벤트와 지원되는 인수를 나열합니다.
+다음 표에는 Dynamic Media 뷰어 이벤트 및 지원되는 인수가 나와 있습니다.
 
 <table>
    <tbody>
@@ -110,7 +109,7 @@ AEM Assets 전용 고객 또는 Dynamic Media Classic 고객의 경우 사용자
       </tr>
       <tr>
          <td> 이정표 </td>
-         <td> %event.detail.dm.MILESTONE.milestone% </td>
+         <td> %event.detail.dm.MILESTONE.milestones% </td>
       </tr>
       <tr>
          <td> 페이지 </td>
@@ -121,7 +120,7 @@ AEM Assets 전용 고객 또는 Dynamic Media Classic 고객의 경우 사용자
          <td> %event.detail.dm.PAGE.label% </td>
       </tr>
       <tr>
-         <td> 일시 중지 </td>
+         <td> 일시 정지 </td>
          <td> %event.detail.dm.PAUSE.timestamp% </td>
       </tr>
       <tr>
@@ -133,7 +132,7 @@ AEM Assets 전용 고객 또는 Dynamic Media Classic 고객의 경우 사용자
          <td> %event.detail.dm.SPIN.framenumber% </td>
       </tr>
       <tr>
-         <td> 중지 </td>
+         <td> 정지 </td>
          <td> %event.detail.dm.STOP.timestamp% </td>
       </tr>
       <tr>
@@ -165,6 +164,6 @@ AEM Assets 전용 고객 또는 Dynamic Media Classic 고객의 경우 사용자
 
 ## 추가 리소스{#additional-resources}
 
-* [Adobe Launch와 Adobe Experience Manager 통합](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/adobe-launch-integration-tutorial-understand.html)
+* [Adobe Experience Manager과 Adobe Launch 통합](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/adobe-launch-integration-tutorial-understand.html)
 * [Dynamic Media Scene7 모드에서 Adobe Experience Manager 실행](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dms7.html)
 * [Adobe Analytics 및 Adobe Launch와 Dynamic Media Viewer 통합](https://helpx.adobe.com/experience-manager/6-5/assets/using/launch.html)
