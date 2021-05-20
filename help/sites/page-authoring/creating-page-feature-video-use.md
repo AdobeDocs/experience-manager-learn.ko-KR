@@ -1,9 +1,9 @@
 ---
 title: AEM Sites에서 새 페이지 만들기
 seo-title: Adobe Experience Manager Sites에서 새 페이지 만들기
-description: 다음 비디오에서는 Adobe Experience Manager의 템플릿을 기반으로 사이트 페이지를 만드는 방법을 설명합니다.
-seo-description: 다음 비디오에서는 Adobe Experience Manager의 템플릿을 기반으로 사이트 페이지를 만드는 방법을 설명합니다.
-feature: Page Editor, Editable Templates
+description: 다음 비디오에서는 Adobe Experience Manager의 템플릿을 기반으로 사이트 페이지를 만드는 방법을 강조 표시합니다.
+seo-description: 다음 비디오에서는 Adobe Experience Manager의 템플릿을 기반으로 사이트 페이지를 만드는 방법을 강조 표시합니다.
+feature: 페이지 편집기, 편집 가능한 템플릿
 topics: authoring, publishing
 audience: author, marketer
 doc-type: feature video
@@ -11,13 +11,12 @@ activity: use
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 4244
 thumbnail: 31827.jpg
-topic: Content Management
+topic: 컨텐츠 관리
 role: Business Practitioner
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '77'
+source-wordcount: '74'
 ht-degree: 2%
 
 ---
