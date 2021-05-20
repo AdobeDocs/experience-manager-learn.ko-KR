@@ -1,6 +1,6 @@
 ---
 title: 인터페이스 메서드 구현
-description: 인터페이스 방법을 구현하여 Document Cloud REST API를 사용하여 pdf를 만듭니다.
+description: 인터페이스 메서드를 구현하여 Document Cloud REST API를 사용하여 pdf를 만듭니다.
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
@@ -18,9 +18,9 @@ ht-degree: 2%
 
 # 인터페이스 구현
 
-다음은 인터페이스를 구현하는 클래스에서 수행하는 전체 코드입니다.
+다음은 인터페이스를 구현하는 클래스의 전체 코드입니다.
 
-이 클래스는 `GetContentAnalyser` 클래스의 `getAccessToken`, `getJWTToken` 및 정적 메서드 `getContentAnalyserRequest`를 2개 사용합니다.
+이 클래스는 `GetContentAnalyser` 클래스의 `getAccessToken`, `getJWTToken` 및 정적 메서드 `getContentAnalyserRequest`를 사용합니다.
 
 
 ```java
