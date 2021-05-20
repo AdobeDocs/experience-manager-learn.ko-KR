@@ -18,9 +18,9 @@ ht-degree: 1%
 
 # Adobe I/O 프로젝트 만들기
 
-1. 통합을 만드는 첫 번째 단계는 [Adobe ID](https://account.adobe.com/)을(를) 만드는 것입니다.
-1. [Adobe 개발자 콘솔](https://console.adobe.io/home)로 이동
-1. 1단계에서 만든 Adobe ID을 사용하여 로그인
+1. 통합을 만드는 첫 번째 단계는 [Adobe ID](https://account.adobe.com/)을 만드는 것입니다
+1. [Adobe 개발자 콘솔](https://console.adobe.io/home)로 이동합니다.
+1. 1단계에서 만든 Adobe ID을 사용하여 로그인합니다
 1. 새 프로젝트 만들기
 
 비디오를 따라 Adobe I/O 프로젝트를 만드십시오.
