@@ -1,26 +1,25 @@
 ---
-title: 에셋 공유 공유에서 소개
-description: 자산 공유를 위한 기능 및 기술적 이해를 위한 자료
+title: Asset Share Commons의 소개
+description: Assets Share Commons의 기능 및 기술 이해를 위한 자료
 version: 6.3, 6.4, 6.5
-topic: Content Management
+topic: 컨텐츠 관리
 role: Developer
 level: Intermediate
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '117'
-ht-degree: 4%
+source-wordcount: '115'
+ht-degree: 3%
 
 ---
 
 
-# 에셋 공유 공유에서 소개 {#asset-share-commons-theme}
+# Asset Share Commons {#asset-share-commons-theme} 의 소개
 
-에셋 공유 공유에서 간략한 소개. 비디오는 사용자 정의 색상 구성표를 사용하여 새 테마를 만드는 과정을 안내합니다.
+Asset Share Commons에서 이러한 내용을 간략하게 소개합니다. 이 비디오는 사용자 지정 색상 구성표를 사용하여 새 테마를 만드는 과정을 거칩니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/20572/?quality=9&learn=on)
 
-이 비디오에서는 자산 공유 어두운 테마를 기반으로 새 테마가 만들어집니다. 색상 구성표는 사용자 정의 로고와 일치하여 사이트에 일관된 모양과 느낌을 줄 수 있습니다.
+이 비디오에서는 Asset Share Commons Dark 테마를 기반으로 새 테마가 만들어집니다. 색상 구성표는 사용자 지정 로고와 일치하여 사이트에 일관된 모양과 느낌을 줍니다.
 
 ## 테마 변수
 
@@ -73,7 +72,7 @@ ht-degree: 4%
 @msgWarningBackgroundColor: @yellow;
 ```
 
-[사용자 정의 클라이언트 라이브러리 테마 다운로드](assets/asc-theme-demo.zip)
+[사용자 지정 클라이언트 라이브러리 테마 다운로드](assets/asc-theme-demo.zip)
 
 ## 추가 리소스{#additional-resources}
 
