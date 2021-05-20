@@ -1,7 +1,7 @@
 ---
 title: Live Copy 콘솔
-description: 다음 비디오에서는 Live Copy 개요 콘솔을 사용하여 사이트 전체의 상속을 보거나 관리하거나 롤아웃 작업을 수행하는 방법을 설명합니다.
-feature: Language Copy, Multi Site Manager
+description: 다음 비디오에서는 사이트 전체의 상속을 보거나 관리하거나 Live Copy 개요 콘솔을 사용하여 롤아웃 작업을 수행하는 방법에 대해 설명합니다.
+feature: 언어 사본, 다중 사이트 관리자
 topics: localization, authoring, content-architecture
 audience: all
 doc-type: feature video
@@ -9,13 +9,12 @@ activity: use
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 5373
 thumbnail: 36680.jpg
-topic: Localization
+topic: 로컬라이제이션
 role: Business Practitioner
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '58'
+source-wordcount: '55'
 ht-degree: 1%
 
 ---
