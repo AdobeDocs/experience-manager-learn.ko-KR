@@ -1,5 +1,5 @@
 ---
-title: 내용 분석기 만들기
+title: 컨텐츠 분석기 만들기
 description: REST 호출에 대한 입력 매개 변수에 대한 정보가 포함된 JSON 부분을 만듭니다.
 solution: Experience Manager
 type: Documentation
@@ -21,11 +21,11 @@ ht-degree: 1%
 
 다음을 정의하는 JSON 조각을 만듭니다.
 
-+ input
++ 입력
 + 매개 변수
 + 출력.
 
-이 [양식 매개 변수의 세부 사항은 여기에서 확인할 수 있습니다.](https://documentcloud.adobe.com/document-services/index.html#post-createPDF)
+이 [양식 매개 변수의 세부 정보는 여기에서 확인할 수 있습니다.](https://documentcloud.adobe.com/document-services/index.html#post-createPDF)
 
 아래 나열된 샘플 코드는 모든 Office 365 문서 유형에 대한 JSON 조각을 생성합니다.
 
