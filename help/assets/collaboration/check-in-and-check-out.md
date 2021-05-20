@@ -1,26 +1,25 @@
 ---
-title: 체크 인 및 체크 아웃
-description: AEM 체크 인 및 체크 아웃 기능을 사용하여 여러 사용자가 에셋에서 공동 작업을 쉽게 할 수 있는 방법을 살펴봅니다.
-sub-product: 자산
-feature: Asset Management
+title: 체크인 및 체크아웃
+description: 자산에 대한 여러 사용자 공동 작업을 용이하게 하기 위해 AEM 체크인 및 체크아웃 기능을 사용하는 방법을 알아봅니다.
+sub-product: assets
+feature: 자산 관리
 version: cloud-service
 kt: 4542
 thumbnail: 32048.jpg
-topic: Collaboration
+topic: 협업
 role: Business Practitioner
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '51'
-ht-degree: 1%
+source-wordcount: '48'
+ht-degree: 2%
 
 ---
 
 
-# 체크 인 및 체크 아웃
+# 체크인 및 체크아웃
 
-AEM 체크 인 및 체크 아웃 기능을 사용하여 여러 사용자가 에셋에서 공동 작업을 쉽게 할 수 있는 방법을 살펴봅니다.
+자산에 대한 여러 사용자 공동 작업을 용이하게 하기 위해 AEM 체크인 및 체크아웃 기능을 사용하는 방법을 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32048/?quality=12&learn=on&hidetitle=true)
 
