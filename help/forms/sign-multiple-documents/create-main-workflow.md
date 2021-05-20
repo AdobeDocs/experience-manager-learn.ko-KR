@@ -1,7 +1,7 @@
 ---
 title: 서명 프로세스를 트리거하는 기본 워크플로우 만들기
 description: 데이터베이스에 서명을 위한 양식을 저장하는 워크플로우 만들기
-feature: Adaptive Forms
+feature: 적응형 양식
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,13 +9,12 @@ activity: implement
 version: 6.4,6.5
 thumbnail: 6887.jpg
 kt: 6887
-topic: Development
+topic: 개발
 role: Developer
 level: Intermediate
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '165'
 ht-degree: 2%
 
 ---
@@ -23,13 +22,13 @@ ht-degree: 2%
 
 # 기본 워크플로우 만들기
 
-기본 워크플로우는 사용자가 초기 양식(**RefinanceForm**)을 제출할 때 트리거됩니다. 다음은 워크플로우의 흐름입니다.
+기본 워크플로우는 사용자가 초기 양식(**RefinanceForm**)을 제출하면 트리거됩니다. 다음은 워크플로우의 흐름입니다
 
 ![기본 워크플로우](assets/main-workflow.PNG)
 
-**Forms To Sign** 을 사용자 정의 프로세스 단계입니다.
+**Forms을** Sign에 저장한다는 것은 사용자 지정 프로세스 단계입니다.
 
-사용자 정의 프로세스 단계를 구현하는 동기는 AEM Workflow를 확장하는 것입니다. 다음 코드는 사용자 지정 프로세스 단계를 구현합니다. 이 코드는 서명할 양식의 이름을 추출하고 제출된 양식 데이터를 SignMultipleForms 서비스의 `insertData` 메서드에 전달합니다. 그런 다음 `insertData` 메서드는 데이터 소스 **aemformstuutation**&#x200B;에 의해 식별된 데이터베이스에 행을 삽입합니다.
+사용자 지정 프로세스 단계를 구현하는 동기는 AEM Workflow를 확장하는 것입니다. 다음 코드는 사용자 지정 프로세스 단계를 구현합니다. 이 코드는 서명할 양식의 이름을 추출하고 제출된 양식 데이터를 SignMultipleForms 서비스의 `insertData` 메서드에 전달합니다. 그런 다음 `insertData` 메서드는 데이터 소스 **emformstutorial**&#x200B;로 식별되는 데이터베이스의 행을 삽입합니다.
 
 이 사용자 지정 프로세스 단계의 코드는 `SignMultipleForms` 서비스를 참조합니다.
 
@@ -122,7 +121,7 @@ public class StoreFormsToSignWorkflowStep implements WorkflowProcess {
 
 ## 자산
 
-이 문서에 사용된 여러 Forms 서명 작업 과정은 여기에서 [다운로드할 수 있습니다](assets/sign-multiple-forms-workflows.zip)
+이 문서에 사용되는 여러 Forms 서명 워크플로우는 여기에서 [다운로드할 수 있습니다](assets/sign-multiple-forms-workflows.zip)
 
 >[!NOTE]
-> 전자 메일 알림을 전송하려면 일 CQ 메일 서비스를 구성해야 합니다. 전자 메일 템플릿이 위 패키지에도 제공됩니다.
+> 전자 메일 알림을 보내려면 Day CQ Mail Service를 구성해야 합니다. 전자 메일 템플릿도 위의 패키지에서 제공됩니다.
