@@ -1,7 +1,7 @@
 ---
-title: AEM GraphQL을 사용한 제작 및 게시 아키텍처
-description: AEM GraphQL API를 사용할 때 AEM 작성자 및 게시 환경을 활용하는 방법과 시기를 알아보십시오.
-sub-product: 자산
+title: AEM GraphQL을 사용한 작성자 및 게시 아키텍처
+description: AEM GraphQL API를 사용할 때 AEM 작성자 및 게시 환경을 활용하는 방법 및 시기를 알아봅니다.
+sub-product: assets
 version: cloud-service
 topic: 헤드리스, 컨텐츠 관리
 feature: 컨텐츠 조각, GraphQL API
@@ -19,12 +19,12 @@ ht-degree: 0%
 
 # 작성 및 게시 아키텍처
 
-AEM GraphQL API를 사용할 때 AEM 작성자 및 게시 환경을 활용하는 방법과 시기를 알아보십시오.
+AEM GraphQL API를 사용할 때 AEM 작성자 및 게시 환경을 활용하는 방법 및 시기를 알아봅니다.
 
-이 비디오에서는 다음을 수행합니다.
+이 비디오에서는 다음 작업을 수행합니다.
 
-+ AEM 작성자 및 게시 아키텍처 이해 및 컨텐츠가 게시되는 방식 이해
-+ AEM 게시 환경을 통한 헤드리스 전달에 대한 우수 사례에 대해 알아봅니다.
-+ 애플리케이션 미리 보기로 작성 환경을 사용하는 방법 살펴보기
++ AEM 작성자 및 게시 아키텍처와 컨텐츠가 게시되는 방식을 이해합니다
++ AEM 게시 환경을 사용한 헤드리스 게재에 대한 우수 사례를 알아봅니다
++ 작성자 환경을 응용 프로그램의 미리 보기로 사용하는 방법을 알아봅니다
 
 >[!VIDEO](https://video.tv.adobe.com/v/333296/?quality=12&learn=on)
