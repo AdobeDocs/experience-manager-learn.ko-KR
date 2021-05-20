@@ -1,7 +1,7 @@
 ---
 title: 클라이언트 라이브러리 만들기
-description: 클라이언트 라이브러리를 만들어 "저장 및 종료" 단추의 클릭 이벤트를 처리합니다.
-feature: Adaptive Forms
+description: clientlibrary를 만들어 "저장 및 종료" 단추의 클릭 이벤트를 처리합니다
+feature: 적응형 양식
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,22 +9,21 @@ activity: implement
 version: 6.4,6.5
 kt: 6597
 thumbnail: 6597.pg
-topic: Development
+topic: 개발
 role: Developer
 level: Intermediate
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '144'
 ht-degree: 2%
 
 ---
 
 # 클라이언트 라이브러리 만들기
 
-CSS 클래스 **savebutton**&#x200B;에 의해 식별되는 버튼의 click 이벤트에서 `guideBridge` API의 `doAjaxSubmitWithFileAttachment` 메서드를 호출하는 코드가 포함된 [client lib](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/clientlibs.html)을 만듭니다.  응용 양식 데이터 `fileMap` 및 `mobileNumber`을(를) `**/bin/storeafdatawithattachments`의 수신 끝점으로 전달했습니다.
+CSS 클래스 **savebutton**&#x200B;으로 식별되는 단추의 클릭 이벤트에서 `guideBridge` API의 `doAjaxSubmitWithFileAttachment` 메서드를 호출하는 코드를 포함하는 [클라이언트 lib](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/clientlibs.html)을(를) 만듭니다.  적응형 양식 데이터 `fileMap` 및 `mobileNumber`을 `**/bin/storeafdatawithattachments`에서 수신 대기하는 종단점에 전달합니다
 
-양식 데이터가 저장되면 고유한 응용 프로그램 ID가 생성되어 대화 상자에 사용자에게 표시됩니다. 대화 상자를 닫으면 사용자가 고유한 응용 프로그램 ID를 사용하여 저장된 응용 양식을 검색할 수 있는 양식으로 이동됩니다.
+양식 데이터가 저장되면 고유한 애플리케이션 ID가 생성되고 대화 상자에서 사용자에게 표시됩니다. 대화 상자를 닫을 때 사용자가 고유한 애플리케이션 ID를 사용하여 저장된 적응형 양식을 검색할 수 있는 양식으로 이동합니다.
 
 ```java
 $(document).ready(function () {
@@ -70,6 +69,6 @@ $(document).ready(function () {
 ```
 
 >[!NOTE]
-> [bootbox javascript 라이브러리](http://bootboxjs.com/examples.html)를 사용하여 대화 상자를 표시했습니다.
+> [bootbox javascript 라이브러리](http://bootboxjs.com/examples.html)를 사용하여 대화 상자를 표시했습니다
 
-이 샘플에 사용된 클라이언트 라이브러리는 여기에서 [다운로드할 수 있습니다](assets/client-libraries.zip)
+이 샘플에 사용된 클라이언트 라이브러리는 여기에서 [다운로드할 수 있습니다.](assets/client-libraries.zip)
