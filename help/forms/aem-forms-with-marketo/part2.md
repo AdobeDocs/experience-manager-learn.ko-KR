@@ -1,33 +1,32 @@
 ---
-title: AEM Forms과 Marketing(2부)
-seo-title: AEM Forms과 Marketing(2부)
-description: AEM Forms 양식 데이터 모델을 사용하여 AEM Forms과 Marketing을 통합하는 자습서입니다.
-seo-description: AEM Forms 양식 데이터 모델을 사용하여 AEM Forms과 Marketing을 통합하는 자습서입니다.
-feature: Adaptive Forms, Form Data Model
+title: AEM Forms과 Marketo(2부)
+seo-title: AEM Forms과 Marketo(2부)
+description: AEM Forms 양식 데이터 모델을 사용하여 AEM Forms을 Marketo과 통합하는 자습서입니다.
+seo-description: AEM Forms 양식 데이터 모델을 사용하여 AEM Forms을 Marketo과 통합하는 자습서입니다.
+feature: 적응형 Forms, 양식 데이터 모델
 topics: integrations
 audience: developer
 doc-type: tutorial
 activity: setup
 version: 6.3,6.4,6.5
-topic: Development
+topic: 개발
 role: Developer
 level: Experienced
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 2%
+source-wordcount: '380'
+ht-degree: 1%
 
 ---
 
 
-# Marketing To 인증 서비스
+# Marketo 인증 서비스
 
-Marketing의 REST API는 다리 2개 OAuth 2.0에서 인증됩니다. Marketing에 대해 인증하려면 사용자 정의 인증을 만들어야 합니다. 이 사용자 정의 인증은 일반적으로 OSGI 번들 내에서 작성됩니다. 다음 코드는 이 자습서의 일부로 사용된 사용자 정의 인증자를 보여 줍니다.
+Marketo의 REST API는 2개의 다리를 가진 OAuth 2.0으로 인증됩니다. Marketo에 대해 인증하려면 사용자 지정 인증을 만들어야 합니다. 이 사용자 지정 인증은 일반적으로 OSGI 번들 내에 작성됩니다. 다음 코드는 이 자습서의 일부로 사용된 사용자 지정 인증자를 보여줍니다.
 
-## 사용자 정의 인증 서비스
+## 사용자 지정 인증 서비스
 
-다음 코드는 Marketing에 대한 인증에 필요한 access_token을 포함하는 AuthenticationDetails 개체를 만듭니다
+다음 코드는 Marketo에 대한 인증에 필요한 access_token 이 있는 AuthenticationDetails 개체를 만듭니다
 
 ```java
 package com.marketoandforms.core;
@@ -59,13 +58,13 @@ MarketoService marketoService;
 }
 ```
 
-MarketingAuthenticationService는 IAuthentication 인터페이스를 구현합니다. 이 인터페이스는 AEM Forms Client SDK의 일부입니다. 서비스는 액세스 토큰을 가져오고 토큰을 AuthenticationDetails의 HttpHeader에 삽입합니다. AuthenticationDetails 개체의 HttpHeaders가 채워지면 AuthenticationDetails 개체가 양식 데이터 모델의 Dermis 레이어에 반환됩니다.
+MarketoAuthenticationService는 IAuthentication 인터페이스를 구현합니다. 이 인터페이스는 AEM Forms 클라이언트 SDK의 일부입니다. 이 서비스는 액세스 토큰을 가져오고 토큰을 AuthenticationDetails의 HttpHeader에 삽입합니다. AuthenticationDetails 개체의 HttpHeaders를 채우면 AuthenticationDetails 개체가 양식 데이터 모델의 Dermis 레이어에 반환됩니다.
 
-getAuthenticationType 메서드에서 반환되는 문자열에 주의하십시오. 이 문자열은 데이터 소스를 구성할 때 사용됩니다.
+getAuthenticationType 메서드에서 반환된 문자열에 주의하십시오. 이 문자열은 데이터 소스를 구성할 때 사용됩니다.
 
 ### 액세스 토큰 가져오기
 
-단순 인터페이스는 access_token을 반환하는 하나의 메서드로 정의됩니다. 이 인터페이스를 구현하는 클래스에 대한 코드가 페이지 아래에 더 나열됩니다.
+단순 인터페이스는 access_token 을 반환하는 한 가지 메서드로 정의됩니다. 이 인터페이스를 구현하는 클래스의 코드가 페이지 아래쪽에 나열됩니다.
 
 ```java
 package com.marketoandforms.core;
@@ -74,7 +73,7 @@ public interface MarketoService {
 }
 ```
 
-다음 코드는 REST API 호출을 수행하는 데 사용할 access_token을 반환하는 서비스의 코드입니다. 이 서비스의 코드는 GET 호출을 수행하는 데 필요한 구성 매개 변수에 액세스합니다. 보시다시피 GET URL에 client_id,client_secret을 전달하여 access_token을 생성합니다. 그러면 이 access_token이 호출 응용 프로그램으로 반환됩니다.
+다음 코드는 REST API 호출 시 사용할 access_token 을 반환하는 서비스의 코드입니다. 이 서비스의 코드는 GET 호출을 수행하는 데 필요한 구성 매개 변수에 액세스합니다. 보시다시피 GET URL에 client_id,client_secret을 전달하여 access_token을 생성합니다. 그런 다음 이 access_token 이 호출 응용 프로그램으로 반환됩니다.
 
 ```java
 package com.marketoandforms.core.impl;
@@ -133,13 +132,13 @@ MarketoConfigurationService config;
 }
 ```
 
-아래 스크린샷은 설정해야 하는 구성 속성을 보여줍니다. 이러한 구성 속성은 위에 나열된 코드로 읽혀 access_token을 가져옵니다.
+아래 스크린샷은 설정해야 하는 구성 속성을 보여줍니다. 이러한 구성 속성은 access_token을 가져오려면 위에 나열된 코드에서 읽습니다
 
 ![config](assets/marketoconfig.jfif)
 
 ### 구성
 
-구성 속성을 만드는 데 다음 코드가 사용되었습니다. 이러한 속성은 마케팅 인스턴스와 관련이 있습니다
+구성 속성을 만드는 데 다음 코드가 사용되었습니다. 이러한 속성은 Marketo 인스턴스에만 적용됩니다
 
 ```java
 package com.marketoandforms.core;
@@ -160,7 +159,7 @@ public @interface MarketoConfiguration {
 }
 ```
 
-다음 코드는 구성 속성을 읽고 getter 메서드를 통해 동일한 값을 반환합니다
+다음 코드는 구성 속성을 읽고 getter 메서드를 통해 동일하게 반환합니다
 
 ```java
 package com.marketoandforms.core;
@@ -205,6 +204,6 @@ public class MarketoConfigurationService {
 }
 ```
 
-1. 번들을 구축하여 AEM 서버에 배포합니다.
-1. [&quot;Marketing To 자격 증명 서비스 구성&quot;을 ](http://localhost:4502/system/console/configMgr) 위해 브라우저를 configMgrand로 검색하십시오.
-1. 마케팅 인스턴스와 관련된 적절한 속성 지정
+1. 번들을 작성하고 AEM 서버에 배포합니다.
+1. [브라우저를 ](http://localhost:4502/system/console/configMgr) &quot;Marketo 자격 증명 서비스 구성&quot;에 대한 configMgrand 검색을 가리킵니다.
+1. Marketo 인스턴스에 대한 적절한 속성을 지정합니다
