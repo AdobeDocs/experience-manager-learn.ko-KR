@@ -1,6 +1,6 @@
 ---
 title: 핵심 구성 요소 이해
-description: 'AEM 코어 구성 요소는 Adobe Experience Manager과 함께 사용할 표준 세트 구성 요소입니다. 핵심 구성 요소는 Adobe의 우수 사례 및 표준을 사용하여 구축되었으며 모든 사이트 구현에 대한 기본 기능 세트를 제공합니다. '
+description: 'AEM 코어 구성 요소 는 Adobe Experience Manager에서 사용할 표준 구성 요소 세트입니다. Adobe의 우수 사례 및 표준을 기반으로 구축된 핵심 구성 요소는 모든 사이트 구현에 대한 기본 기능 세트를 제공합니다. '
 feature: 코어 구성 요소
 topics: authoring
 audience: all
@@ -20,20 +20,20 @@ ht-degree: 11%
 ---
 
 
-# 핵심 구성 요소 이해{#understanding-core-components}
+# 코어 구성 요소 이해{#understanding-core-components}
 
 >[!CONTEXTUALHELP]
 >id="intro_core_components"
->title="Cloud Service의 핵심 구성 요소 소개"
->abstract="이 탭에서 AEM과 호환되는 최신 사이트를 Cloud Service으로 제작하는 데 도움이 되는 컨텐츠를 볼 수 있습니다. 핵심 구성 요소를 사용하는 것이 중요합니다"
+>title="AEM as a Cloud Service의 핵심 구성 요소 소개"
+>abstract="이 탭에서 AEM as a Cloud Service과 호환되는 최신 사이트를 구축하는 데 도움이 되는 콘텐츠를 볼 수 있습니다. 핵심 구성 요소를 사용하는 것이 이 작업을 수행하는 방법입니다"
 >additional-url="https://video.tv.adobe.com/v/18926" text="핵심 구성 요소 개요"
 
-AEM 코어 구성 요소는 Adobe Experience Manager과 함께 사용할 표준 세트 구성 요소입니다. 핵심 구성 요소는 Adobe의 우수 사례 및 표준을 사용하여 구축되었으며 모든 사이트 구현에 대한 기본 기능 세트를 제공합니다.
+AEM 코어 구성 요소 는 Adobe Experience Manager에서 사용할 표준 구성 요소 세트입니다. Adobe의 우수 사례 및 표준을 기반으로 구축된 핵심 구성 요소는 모든 사이트 구현에 대한 기본 기능 세트를 제공합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/18926/?quality=12&learn=on)
 
 ## 추가 리소스 {#additional-resources}
 
 * [GitHub 프로젝트](https://github.com/adobe/aem-core-wcm-components)
-* [핵심 구성 요소 예](https://www.aemcomponents.dev/)
-* [핵심 구성 요소 설명서](https://docs.adobe.com/content/help/ko/experience-manager-core-components/using/introduction.html)
+* [코어 구성 요소 예](https://www.aemcomponents.dev/)
+* [핵심 구성 요소 설명서](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)
