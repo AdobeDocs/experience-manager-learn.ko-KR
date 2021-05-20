@@ -1,7 +1,7 @@
 ---
 title: 클라이언트 라이브러리 만들기
 description: 서명할 다음 양식을 가져올 클라이언트 라이브러리 코드
-feature: Adaptive Forms
+feature: 적응형 양식
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,22 +9,21 @@ activity: implement
 version: 6.4,6.5
 kt: 6907
 thumbnail: 6907.jpg
-topic: Development
+topic: 개발
 role: Developer
 level: Intermediate
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '86'
-ht-degree: 5%
+source-wordcount: '84'
+ht-degree: 4%
 
 ---
 
 # 클라이언트 라이브러리 만들기
 
-사용자 정의 클라이언트 라이브러리인 clientlib for short를 만들어 URL 매개 변수를 추출하여 GET 호출에서 해당 매개 변수를 전달합니다. GET 호출은 패키지에 로그인할 다음 양식의 URL을 반환하는 /bin/getnextformtosign에 마운트된 서블릿에 수행됩니다.
+짧게 URL 매개 변수를 추출하기 위해 사용자 지정 클라이언트 라이브러리인 clientlib을 만들고 GET 호출에 해당 매개 변수를 전달합니다. 패키지에 로그인할 다음 양식의 url을 반환하는 /bin/getnextformtosign에 마운트된 서블릿에 GET 호출이 수행됩니다.
 
-다음은 clientlib javascript 함수에서 사용되는 코드입니다
+다음은 clientlib javascript 함수에 사용되는 코드입니다
 
 
 ```java
@@ -78,4 +77,4 @@ $(document).ready(function()
 
 ## 자산
 
-[clientlib은 여기에서 다운로드할 수 있습니다.](assets/get-next-form-client-lib.zip)
+[clientlib은 여기에서 다운로드할 수 있습니다](assets/get-next-form-client-lib.zip)
