@@ -1,7 +1,7 @@
 ---
 title: 저장된 적응형 양식 검색
-description: 저장된 데이터로 적응형 양식을 렌더링하는 서블릿
-feature: Adaptive Forms
+description: 저장된 데이터를 사용하여 적응형 양식을 렌더링할 서블릿
+feature: 적응형 양식
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,21 +9,20 @@ activity: implement
 version: 6.4,6.5
 kt: 6553
 thumbnail: 6553.jpg
-topic: Development
+topic: 개발
 role: Developer
 level: Experienced
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '108'
-ht-degree: 3%
+source-wordcount: '106'
+ht-degree: 2%
 
 ---
 
 # 저장된 양식 검색
 
-다음 단계는 저장된 데이터 및 첨부 파일로 적응형 양식을 렌더링할 서블릿을 만드는 것입니다.
-다음 서블릿 코드는 OTP 코드가 확인된 후에 실행됩니다. 고유한 응용 프로그램 ID와 연결된 응용 양식 데이터 및 해당 첨부 파일 맵은 데이터베이스에서 가져옵니다. 요청 개체는 저장된 적응형 양식 데이터와 첨부 파일 맵으로 채워집니다. 그런 다음 요청을 전달하여 원본 데이터 및 첨부 파일이 미리 채워진 &quot;저장 첨부 파일&quot; 양식을 렌더링합니다.
+다음 단계는 저장된 데이터와 해당 첨부 파일로 적응형 양식을 렌더링할 서블릿을 만드는 것입니다.
+OTP 코드가 확인되면 다음 서블릿 코드가 실행됩니다. 고유한 애플리케이션 ID와 연결된 적응형 양식 데이터와 해당 파일 첨부 맵을 데이터베이스에서 가져옵니다. 요청 개체가 저장된 적응형 양식 데이터와 첨부 파일 맵으로 채워집니다. 그런 다음 원래 데이터와 해당 첨부 파일이 미리 채워져 있는 &quot;storeafwithattachments&quot; 양식을 렌더링하도록 요청이 전달됩니다.
 
 ```java
 package store.and.fetch.core.servlets;
