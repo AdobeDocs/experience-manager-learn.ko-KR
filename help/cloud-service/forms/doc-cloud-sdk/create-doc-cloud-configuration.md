@@ -1,6 +1,6 @@
 ---
-title: 사용자 정의 OSGi 구성 만들기
-description: 사용자 정의 OSGi 구성을 사용하여 Document Cloud 특정 세부 사항을 캡처합니다.
+title: 사용자 지정 OSGi 구성 만들기
+description: 문서 클라우드 관련 세부 정보를 캡처하기 위한 사용자 지정 OSGi 구성
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
@@ -18,10 +18,10 @@ ht-degree: 3%
 
 # 소개
 
-사용자 정의 OSGi 구성을 만들어 Document Cloud 계정의 자격 증명을 캡처합니다.
+사용자 정의 OSGi 구성을 만들어 문서 클라우드 계정의 자격 증명을 캡처합니다
 
 
-사용자 지정 OSGi 구성을 만들려면 먼저 공개 메서드가 구성의 필드를 나타내는 인터페이스를 만들어야 합니다.
+사용자 지정 OSGi 구성을 만들려면 먼저 공용 메서드가 구성의 필드를 나타내는 인터페이스를 만들어야 합니다.
 
 ![doc-cloud-config](assets/doc-cloud-configuration.JPG)
 
