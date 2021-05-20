@@ -1,9 +1,9 @@
 ---
-title: AEM Forms을 사용한 Forms 테스트 자동화 이해
-seo-title: AEM Forms을 사용한 Forms 테스트 자동화 이해
-description: AEM 6.3 Forms은 사용자가 hobbes.js 프레임워크 위에 구축된 Calvin SDK를 사용하여 AEM for Adaptive Forms에서 테스트 케이스를 생성할 수 있도록 하는 기능을 제공합니다.
-seo-description: AEM 6.3 Forms은 사용자가 hobbes.js 프레임워크 위에 구축된 Calvin SDK를 사용하여 AEM for Adaptive Forms에서 테스트 케이스를 생성할 수 있도록 하는 기능을 제공합니다.
-feature: Adaptive Forms
+title: AEM Forms을 사용한 자동화된 Forms 테스트 이해
+seo-title: AEM Forms을 사용한 자동화된 Forms 테스트 이해
+description: AEM 6.3 Forms은 사용자가 hobbes.js 프레임워크 위에 구축된 Calvin SDK를 사용하여 AEM for Adaptive Forms 내에서 테스트 사례를 만들 수 있도록 해주는 기능을 도입했습니다
+seo-description: AEM 6.3 Forms은 사용자가 hobbes.js 프레임워크 위에 구축된 Calvin SDK를 사용하여 AEM for Adaptive Forms 내에서 테스트 사례를 만들 수 있도록 해주는 기능을 도입했습니다
+feature: 적응형 양식
 topics: development
 audience: developer
 doc-type: technical video
@@ -11,13 +11,12 @@ activity: develop
 version: 6.3,6.4,6.5
 uuid: 3cea2785-28f0-42c1-9935-3e876c28214a
 discoiquuid: a78936b4-e817-41a0-86cc-f9ac2d6dd08f
-topic: Development
+topic: 개발
 role: Developer
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '135'
+source-wordcount: '133'
 ht-degree: 2%
 
 ---
@@ -25,18 +24,18 @@ ht-degree: 2%
 
 # AEM Forms을 사용한 자동화된 Forms 테스트 이해{#understanding-automated-forms-testing-with-aem-forms}
 
-AEM 6.3 Forms은 사용자가 hobes.js 프레임워크 위에 구축된 Calvin SDK를 사용하여 Adaptive Forms용 AEM에서 테스트 케이스를 만들 수 있는 기능을 제공합니다.
+AEM 6.3 Forms은 사용자가 hobbes.js 프레임워크 위에 구축된 Calvin SDK를 사용하여 적응형 Forms용 AEM 내에서 테스트 사례를 만들 수 있도록 해주는 기능을 도입했습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/19700/)
 
 >[!NOTE]
 >
->적응형 Forms 자동 테스트 기능은 AEM 6.3부터 제공됩니다.
+>적응형 Forms 자동화된 테스트 기능은 AEM 6.3 이상에서 사용할 수 있습니다
 
 >[!NOTE]
 >
 >**유용한 링크**
 >
->* [캘빈 SDK 네임스페이스](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html)
->* [Hobes.js 설명서](https://docs.adobe.com/docs/en/aem/6-3/develop/ref/test-api/index.html)
+>* [Calvin SDK 네임스페이스](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html)
+>* [Hobbes.js 설명서](https://docs.adobe.com/docs/en/aem/6-3/develop/ref/test-api/index.html)
 
