@@ -12,9 +12,9 @@ thumbnail: 25907.jpg
 topic: 개발
 role: Developer
 level: Beginner
-source-git-commit: 9a78cbdb5fd35e4aa7169382494dd014aa8098e9
+source-git-commit: 6b4b9d7039b7b1c60ed1a7e5ec4ed42250499cec
 workflow-type: tm+mt
-source-wordcount: '1426'
+source-wordcount: '1430'
 ht-degree: 0%
 
 ---
@@ -145,22 +145,20 @@ Adobe I/O Cloud Manager 플러그인을 사용하면 Aio CLI에서 `aio asset-co
 
 ### Adobe I/O CLI 인증 설정
 
-Adobe I/O CLI가 Cloud Manager와 통신하려면 Adobe I/O 콘솔에서 Cloud Manager 통합을 만들고 자격 증명을 획득하여 인증해야 합니다.
-
->[!VIDEO](https://video.tv.adobe.com/v/35094?quality=12&learn=on)
+Adobe I/O CLI가 Cloud Manager와 통신하려면 Adobe I/O 콘솔](https://github.com/adobe/aio-cli-plugin-cloudmanager)에서 [Cloud Manager 통합을 만들어야 하며, 자격 증명을 획득하여 인증해야 합니다.
 
 1. [console.adobe.io](https://console.adobe.io)에 로그인합니다.
 1. 연결할 Cloud Manager 제품이 포함된 조직이 Adobe 조직 전환기에서 활성화되어 있는지 확인합니다
 1. 새 프로그램 만들기 또는 기존 [Adobe I/O 프로그램](https://www.adobe.io/apis/experienceplatform/console/docs.html#!AdobeDocs/adobeio-console/master/projects.md) 열기
    + Adobe I/O 콘솔 프로그램은 통합을 관리할 방법에 따라 통합, 만들기 또는 사용 및 기존 프로그램을 구성하는 간단한 조직입니다
-   + 새 프로젝트를 만드는 경우 메시지가 표시되면(템플릿에서 만들기와 비교) &quot;빈 프로젝트&quot;를 선택합니다
+   + 새 프로젝트를 만드는 경우 메시지가 표시되면(와) &quot;빈 프로젝트&quot;를 선택합니다.&quot;템플릿에서 만들기&quot;)
    + Adobe I/O 콘솔 프로그램은 Cloud Manager 프로그램의 다양한 개념입니다
 1. 개발자 - Cloud Service 프로필과 새로운 Cloud Manager API 통합 만들기
 1. JWT(서비스 계정) 자격 증명을 얻으려면 Adobe I/O CLI의 [config.json](https://github.com/adobe/aio-cli-plugin-cloudmanager#authentication) 을 채워야 합니다.
 1. `config.json` 파일을 Adobe I/O CLI에 로드합니다.
-   + `$ aio config:set jwt-auth PATH_TO_CONFIG_JSON_FILE --file --json`
+   + `$ aio config:set ims.contexts.aio-cli-plugin-cloudmanager PATH_TO_CONFIG_JSON_FILE --file --json`
 1. `private.key` 파일을 Adobe I/O CLI에 로드합니다.
-   + `$ aio config:set jwt-auth.jwt_private_key PATH_TO_PRIVATE_KEY_FILE --file`
+   + `$ aio config:set ims.contexts.aio-cli-plugin-cloudmanager.private_key PATH_TO_PRIVATE_KEY_FILE --file`
 
 Adobe I/O CLI를 통해 Cloud Manager에 대한 명령](https://github.com/adobe/aio-cli-plugin-cloudmanager#commands) 실행을 시작합니다.[
 
