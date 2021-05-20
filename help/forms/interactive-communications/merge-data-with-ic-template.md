@@ -1,32 +1,31 @@
 ---
 title: 데이터를 병합하여 인쇄 채널 문서 생성
 seo-title: 데이터를 병합하여 인쇄 채널 문서 생성
-description: 입력 스트림에 포함된 데이터를 병합하여 인쇄 채널 문서를 생성하는 방법을 알아봅니다.
-seo-description: 입력 스트림에 포함된 데이터를 병합하여 인쇄 채널 문서를 생성하는 방법을 알아봅니다.
-feature: Interactive Communication
+description: 입력 스트림에 포함된 데이터를 병합하여 인쇄 채널 문서를 생성하는 방법을 알아봅니다
+seo-description: 입력 스트림에 포함된 데이터를 병합하여 인쇄 채널 문서를 생성하는 방법을 알아봅니다
+feature: 대화형 통신
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
-topic: Development
+topic: 개발
 role: Developer
 level: Intermediate
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '504'
 ht-degree: 1%
 
 ---
 
 # 제출된 데이터를 사용하여 인쇄 채널 문서 생성
 
-인쇄 채널 문서는 일반적으로 양식 데이터 모델의 Get 서비스를 통해 백엔드 데이터 소스에서 데이터를 가져와 생성됩니다. 경우에 따라 제공된 데이터로 인쇄 채널 문서를 생성해야 할 필요가 있습니다. 예를 들어, 고객은 수익자 양식의 변경 사항을 채우고, 제출된 양식의 데이터가 포함된 인쇄 채널 문서를 생성할 수 있습니다. 이 사용 사례를 수행하려면 다음 단계를 수행해야 합니다.
+인쇄 채널 문서는 일반적으로 양식 데이터 모델의 get 서비스를 통해 백엔드 데이터 소스에서 데이터를 가져와 생성됩니다. 경우에 따라 제공된 데이터로 인쇄 채널 문서를 생성해야 합니다. 예를 들어, 고객이 수익자 양식의 변경 사항을 기입하고 제출된 양식의 데이터가 있는 인쇄 채널 문서를 생성할 수 있습니다. 이 사용 사례를 수행하려면 다음 단계를 수행해야 합니다
 
-## 자동 완성 서비스 만들기
+## 미리 채우기 서비스 만들기
 
-이 서비스에 액세스하는 데 서비스 이름 &quot;ccm-print-test&quot;가 사용됩니다. 이 사전 채우기 서비스가 정의되면 서블릿이나 워크플로우 프로세스 단계 구현에서 이 서비스에 액세스하여 인쇄 채널 문서를 생성할 수 있습니다.
+서비스 이름 &quot;ccm-print-test&quot;가 이 서비스에 액세스하는 데 사용됩니다. 이 사전 채우기 서비스가 정의되면 서블릿 또는 워크플로우 프로세스 단계 구현에서 이 서비스에 액세스하여 인쇄 채널 문서를 생성할 수 있습니다.
 
 ```java
 import java.io.InputStream;
@@ -68,15 +67,15 @@ public PrefillData getPrefillData(DataOptions options) throws FormsException {
 
 ### WorkflowProcess 구현 만들기
 
-workflowProcess 구현 코드 조각은 아래에 표시됩니다.이 코드는 AEM Workflow의 프로세스 단계가 이 구현과 연결되어 있을 때 실행됩니다. 이 구현에는 아래 설명된 3개의 프로세스 인수가 필요합니다.
+workflowProcess 구현 코드 조각은 아래에 표시되어 있습니다. 이 코드는 AEM Workflow의 프로세스 단계가 이 구현과 연결되면 실행됩니다. 이 구현에서는 아래에 설명된 3개의 프로세스 인수가 필요합니다.
 
-* 적응형 양식을 구성할 때 지정된 DataFile 경로의 이름
-* 인쇄 채널 템플릿 이름
+* 적응형 양식을 구성할 때 지정된 데이터 파일 경로의 이름입니다
+* 인쇄 채널 템플릿의 이름입니다
 * 생성된 인쇄 채널 문서의 이름
 
-98행 - 응용 양식이 양식 데이터 모델을 기반으로 하므로 afBoundData의 데이터 노드에 있는 데이터가 추출됩니다.
-128행 - 데이터 옵션 서비스 이름이 설정되었습니다. 서비스 이름을 메모해 둡니다. 이전 코드 목록의 45행에서 반환된 이름과 일치해야 합니다.
-135행 - PrintChannel 객체의 렌더링 방법을 사용하여 문서가 생성됩니다.
+라인 98 - 적응형 양식은 양식 데이터 모델을 기반으로 하므로 afBoundData의 데이터 노드에 있는 데이터가 추출됩니다.
+128행 - 데이터 옵션 서비스 이름이 설정되었습니다. 서비스 이름을 확인합니다. 이전 코드 목록의 45행에 반환되는 이름과 일치해야 합니다.
+135행 - PrintChannel 객체의 렌더링 방법을 사용하여 문서가 생성됩니다
 
 
 ```java
@@ -165,22 +164,22 @@ String params = arg2.get("PROCESS_ARGS","string").toString();
 
 서버에서 테스트하려면 다음 단계를 수행하십시오.
 
-* [일 CQ 메일 서비스를 구성합니다.](https://helpx.adobe.com/experience-manager/6-5/communities/using/email.html) 첨부 파일로 생성된 문서와 함께 이메일을 보내는 데 필요합니다.
+* [Day CQ Mail Service를 구성합니다.](https://helpx.adobe.com/experience-manager/6-5/communities/using/email.html) 첨부 파일로 생성된 문서가 포함된 이메일을 전송하는 데 필요합니다.
 * [서비스 사용자 번들로 개발 배포](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-* Apache Sling Service User Mapper Service Configuration에 다음 항목을 추가해야 합니다.
-* **DevelopingWithServiceUser.core:getformsresourcesolver=fd-service**
-* [이 아티클과 관련된 에셋을 파일 시스템에 다운로드 및 압축 해제](assets/prefillservice.zip)
-* [AEM 패키지 관리자를 사용하여 다음 패키지 가져오기](http://localhost:4502/crx/packmgr/index.jsp)
+* Apache Sling Service User Mapper Service 구성에 다음 항목을 추가했는지 확인합니다
+* **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service**
+* [이 문서와 관련된 자산을 파일 시스템에서 다운로드 및 압축 해제합니다](assets/prefillservice.zip)
+* [AEM 패키지 관리자를 사용하여 다음 패키지를 가져옵니다](http://localhost:4502/crx/packmgr/index.jsp)
    1. beneficiaryconfirmationic.zip
    2. changeofbeneficiaryform.zip
    3. generatebeneficiaryworkflow.zip
-* [AEM Felix 웹 콘솔을 사용하여 다음 배포](http://localhost:4502/system/console/bundles)
+* [AEM Felix Web Console을 사용하여 다음 내용을 배포합니다](http://localhost:4502/system/console/bundles)
 
    * GenerateIC.GenerateIC.core-1.0-SNAPSHOT.jar 이 번들에는 이 문서에 언급된 코드가 포함되어 있습니다.
 
 * [Open ChangeOfRecipientForm](http://localhost:4502/content/dam/formsanddocuments/changebeneficiary/jcr:content?wcmmode=disabled)
-* 아래에서 보듯이 적응형 양식이 AEM Workflow에 전송하도록 구성되어 있는지 확인합니다
+* 아래 표시된 대로 적응형 양식이 AEM Workflow에 제출되도록 구성되어 있는지 확인합니다
    ![이미지](assets/generateic.PNG)
-* [워크플로우 모델을 구성합니다.](http://localhost:4502/editor.html/conf/global/settings/workflow/models/ChangesToBeneficiary.html)프로세스 단계 및 이메일 구성 요소가 환경에 따라 구성되어 있는지 확인합니다.
-* [ChangeOfRequetedForm을 미리 봅니다.](http://localhost:4502/content/dam/formsanddocuments/changebeneficiary/jcr:content?wcmmode=disabled) 자세한 내용을 입력하고 제출합니다.
-* 워크플로우를 호출해야 하며 IC 인쇄 채널 문서를 이메일 구성 요소에 지정된 수신자에게 첨부 파일로 보내야 합니다.
+* [워크플로우 모델을 구성합니다.](http://localhost:4502/editor.html/conf/global/settings/workflow/models/ChangesToBeneficiary.html)프로세스 단계 및 이메일 구성 요소 전송 프로세스가 환경에 따라 구성되어 있는지 확인합니다
+* [ChangeOfRecipientForm을 미리 봅니다.](http://localhost:4502/content/dam/formsanddocuments/changebeneficiary/jcr:content?wcmmode=disabled) 자세한 내용을 입력하고 제출하십시오
+* 워크플로우가 호출되고 IC 인쇄 채널 문서가 전자 메일 전송 구성 요소에 첨부 파일로 지정된 수신자에게 전송되어야 합니다
