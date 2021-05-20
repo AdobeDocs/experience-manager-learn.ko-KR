@@ -1,6 +1,6 @@
 ---
 title: AEM Sites 시작하기 - 구성 요소 기본 사항
-description: 간단한 'HelloWorld' 예제를 통해 AEM(Adobe Experience Manager) 사이트 구성 요소의 기본 기술을 이해합니다. HTL, Sling Models, 클라이언트측 라이브러리 및 작성자 대화 상자의 항목에 대해 살펴봅니다.
+description: 간단한 'HelloWorld' 예를 통해 AEM(Adobe Experience Manager) 사이트 구성 요소의 기본 기술을 이해합니다. HTL, Sling 모델, 클라이언트측 라이브러리 및 작성자 대화 상자의 주제를 탐색합니다.
 sub-product: 사이트
 version: 6.4, 6.5, Cloud Service
 type: Tutorial
@@ -11,7 +11,6 @@ level: Beginner
 mini-toc-levels: 1
 kt: 4081
 thumbnail: 30177.jpg
-translation-type: tm+mt
 source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
 workflow-type: tm+mt
 source-wordcount: '1152'
@@ -22,27 +21,27 @@ ht-degree: 0%
 
 # 구성 요소 기본 사항 {#component-basics}
 
-이 장에서는 간단한 `HelloWorld` 예제를 통해 AEM(Adobe Experience Manager) 사이트 구성 요소의 기본 기술을 살펴봅니다. 저작, HTL, Sling Models, Client-side Libraries에 대한 주제를 포함하여 기존 구성 요소에 대해 약간의 수정이 이루어집니다.
+이 장에서는 간단한 `HelloWorld` 예를 통해 AEM(Adobe Experience Manager) 사이트 구성 요소의 기본 기술을 살펴보게 됩니다. 작성, HTL, Sling 모델, 클라이언트 측 라이브러리에 대한 주제를 다루는 기존 구성 요소에 대해 약간 수정됩니다.
 
 ## 전제 조건 {#prerequisites}
 
-[로컬 개발 환경 설정](./overview.md#local-dev-environment)에 대한 필수 도구 및 지침을 검토하십시오.
+[로컬 개발 환경](./overview.md#local-dev-environment)을 설정하는 데 필요한 도구 및 지침을 검토하십시오.
 
-비디오에 사용되는 IDE는 [Visual Studio 코드](https://code.visualstudio.com/) 및 [VSCode AEM Sync](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync) 플러그인입니다.
+비디오에 사용되는 IDE는 [Visual Studio Code](https://code.visualstudio.com/) 및 [VSCode AEM Sync](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync) 플러그인입니다.
 
 ## 목표 {#objective}
 
 1. HTML을 동적으로 렌더링하는 HTL 템플릿 및 Sling 모델의 역할을 알아봅니다.
-1. 대화 상자가 컨텐츠 작성을 용이하게 하는 방법을 이해합니다.
-1. 구성 요소를 지원하는 CSS 및 JavaScript를 포함하는 클라이언트측 라이브러리의 기본 사항에 대해 알아봅니다.
+1. 대화 상자를 사용하여 컨텐츠 작성을 용이하게 하는 방법을 이해합니다.
+1. 구성 요소를 지원하는 CSS 및 JavaScript를 포함하도록 클라이언트 측 라이브러리의 기본 사항을 알아봅니다.
 
-## {#what-you-will-build} 빌드할 항목
+## {#what-you-will-build} 빌드할 내용
 
-이 장에서는 매우 간단한 `HelloWorld` 구성 요소에 대한 몇 가지 수정 작업을 수행합니다. `HelloWorld` 구성 요소를 업데이트하는 과정에서 AEM 구성 요소 개발의 주요 영역에 대해 학습합니다.
+이 장에서는 매우 간단한 `HelloWorld` 구성 요소에 대해 몇 가지 수정 작업을 수행합니다. `HelloWorld` 구성 요소를 업데이트하는 과정에서 AEM 구성 요소 개발의 주요 영역에 대해 학습하게 됩니다.
 
-## 장 시작 프로젝트 {#starter-project}
+## 시작 장 프로젝트 {#starter-project}
 
-이 장은 [AEM 프로젝트 원형](https://github.com/adobe/aem-project-archetype)에서 생성된 일반 프로젝트를 기반으로 합니다. 아래 비디오를 시청하고 [사전 요구 사항](#prerequisites)을 검토하여 시작하십시오!
+이 장은 [AEM Project Archetype](https://github.com/adobe/aem-project-archetype)에서 생성한 일반 프로젝트를 기반으로 합니다. 시작하려면 아래 비디오를 시청하고 [사전 요구 사항](#prerequisites)을 검토하십시오.
 
 >[!NOTE]
 >
@@ -60,7 +59,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   > 선택적으로 이전 장 [프로젝트 설정](./project-setup.md)에서 생성된 프로젝트를 계속 사용할 수 있습니다.
+   > 선택 사항으로, 이전 장 [프로젝트 설정](./project-setup.md)에서 생성된 프로젝트를 계속 사용할 수 있습니다.
 
 1. `aem-guides-wknd` 폴더로 이동합니다.
 
@@ -68,7 +67,7 @@ ht-degree: 0%
    $ cd aem-guides-wknd
    ```
 
-1. 다음 명령을 사용하여 프로젝트를 빌드하고 AEM의 로컬 인스턴스에 배포합니다.
+1. 다음 명령을 사용하여 프로젝트를 AEM의 로컬 인스턴스에 빌드 및 배포합니다.
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage
@@ -76,7 +75,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   > AEM 6.5 또는 6.4를 사용하는 경우 `classic` 프로파일을 모든 Maven 명령에 추가합니다.
+   > AEM 6.5 또는 6.4를 사용하는 경우 `classic` 프로필을 Maven 명령에 추가합니다.
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
@@ -84,25 +83,25 @@ ht-degree: 0%
 
 1. [로컬 개발 환경](overview.md#local-dev-environment)을 설정하는 지침에 따라 프로젝트를 기본 IDE로 가져옵니다.
 
-## 구성 요소 제작 {#component-authoring}
+## 구성 요소 작성 {#component-authoring}
 
-구성 요소는 웹 페이지의 작은 모듈식 빌딩 블록으로 생각할 수 있습니다. 구성 요소를 다시 사용하려면 구성 요소를 구성할 수 있어야 합니다. 이 작업은 작성자 대화 상자를 통해 수행됩니다. 그런 다음 간단한 구성 요소를 작성하고 대화 상자의 값이 AEM에서 유지되는 방식을 검사합니다.
+구성 요소는 웹 페이지의 작은 모듈식 빌딩 블록으로 생각할 수 있습니다. 구성 요소를 다시 사용하려면 구성 요소를 구성해야 합니다. 이 작업은 작성 대화 상자를 통해 수행됩니다. 다음으로 단순 구성 요소를 작성하고 대화 상자의 값이 AEM에서 지속되는 방식을 검사합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330986/?quality=12&learn=on)
 
 다음은 위의 비디오에서 수행되는 높은 수준의 단계입니다.
 
-1. **WKND 사이트** `>` **** `>` **en** 아래에 **구성 요소 기초**&#x200B;라는 새 페이지를 만듭니다.
+1. **WKND 사이트** `>` **US** `>` **en** 아래에 **구성 요소 기본 사항**&#x200B;이라는 새 페이지를 만듭니다.
 1. 새로 만든 페이지에 **Hello World 구성 요소**&#x200B;를 추가합니다.
-1. 구성 요소에 대한 대화 상자를 열고 텍스트를 입력합니다. 변경 내용을 저장하여 페이지에 표시되는 메시지를 확인합니다.
+1. 구성 요소에 대한 대화 상자를 열고 텍스트를 입력합니다. 변경 사항을 저장하여 페이지에 표시되는 메시지를 확인합니다.
 1. 개발자 모드로 전환하고 CRXDE-Lite에서 컨텐츠 경로를 보고 구성 요소 인스턴스의 속성을 검사합니다.
-1. CRXDE-Lite를 사용하여 `/apps/wknd/components/content/helloworld`에 있는 `cq:dialog` 및 `helloworld.html` 스크립트를 봅니다.
+1. `/apps/wknd/components/content/helloworld`에 있는 `cq:dialog` 및 `helloworld.html` 스크립트를 보려면 CRXDE-Lite를 사용하십시오.
 
-## HTL(HTML 템플릿 언어) 및 대화 상자 {#htl-dialogs}
+## HTL(HTML Template Language) 및 대화 상자 {#htl-dialogs}
 
-HTML 템플릿 언어 또는 **[HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/getting-started/getting-started.html)**&#x200B;은 AEM 구성 요소가 컨텐츠를 렌더링하는 데 사용하는 경량의 서버측 템플릿 언어입니다.
+HTML 템플릿 언어 또는 **[HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/getting-started/getting-started.html)**&#x200B;는 AEM 구성 요소가 컨텐츠를 렌더링하는 데 사용하는 경량 서버 측 템플릿 언어입니다.
 
-**대화 상자** 는 구성 요소에 사용할 수 있는 구성을 정의합니다.
+**** 대화 상자구성 요소에 사용할 수 있는 구성을 정의합니다.
 
 다음으로 텍스트 메시지 앞에 추가 인사말을 표시하도록 `HelloWorld` HTL 스크립트를 업데이트합니다.
 
@@ -112,15 +111,15 @@ HTML 템플릿 언어 또는 **[HTL](https://docs.adobe.com/content/help/en/expe
 
 1. IDE로 전환하고 프로젝트를 `ui.apps` 모듈로 엽니다.
 1. `helloworld.html` 파일을 열고 HTML 마크업을 변경합니다.
-1. [VSCode AEM 동기화](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync)와 같은 IDE 도구를 사용하여 파일 변경 내용을 로컬 AEM 인스턴스와 동기화합니다.
-1. 브라우저로 돌아가 구성 요소 렌더링이 변경되었음을 확인합니다.
-1. 다음 위치에서 `HelloWorld` 구성 요소에 대한 대화 상자를 정의하는 `.content.xml` 파일을 엽니다.
+1. [VSCode AEM Sync](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync)와 같은 IDE 도구를 사용하여 파일 변경 사항을 로컬 AEM 인스턴스와 동기화합니다.
+1. 브라우저로 돌아가서 구성 요소 렌더링이 변경되었음을 확인합니다.
+1. 다음 위치에서 `HelloWorld` 구성 요소의 대화 상자를 정의하는 `.content.xml` 파일을 엽니다.
 
    ```plain
    <code>/aem-guides-wknd/ui.apps/src/main/content/jcr_root/apps/wknd/components/helloworld/_cq_dialog/.content.xml
    ```
 
-1. 대화 상자를 업데이트하여 `./title` 이름의 **제목**&#x200B;이라는 이름의 추가 텍스트 필드를 추가합니다.
+1. 대화 상자를 업데이트하여 **Title**&#x200B;이라는 이름의 추가 텍스트 필드를 `./title` 이름으로 추가합니다.
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -153,13 +152,13 @@ HTML 템플릿 언어 또는 **[HTL](https://docs.adobe.com/content/help/en/expe
    </jcr:root>
    ```
 
-1. 다음 위치에 있는 `HelloWorld` 구성 요소를 렌더링하는 기본 HTL 스크립트를 나타내는 `helloworld.html` 파일을 다시 엽니다.
+1. 다음 위치에 있는 `HelloWorld` 구성 요소 렌더링을 담당하는 기본 HTL 스크립트를 나타내는 파일 `helloworld.html` 을 다시 엽니다.
 
    ```plain
        <code>/aem-guides-wknd.ui.apps/src/main/content/jcr_root/apps/wknd/components/helloworld/helloworld.html
    ```
 
-1. `helloworld.html`을 업데이트하여 `H1` 태그의 일부로 **Greeting** textfield의 값을 렌더링합니다.
+1. `helloworld.html` 을 업데이트하여 **Greeting** 텍스트 필드의 값을 `H1` 태그의 일부로 렌더링합니다.
 
    ```html
    <div class="cmp-helloworld" data-cmp-is="helloworld">
@@ -172,26 +171,26 @@ HTML 템플릿 언어 또는 **[HTL](https://docs.adobe.com/content/help/en/expe
 
 ## Sling 모델 {#sling-models}
 
-Sling Models는 JCR에서 Java 변수에 대한 데이터 매핑을 용이하게 하고 AEM 컨텍스트에서 개발 시 많은 다른 세부 사항을 제공하는 주석 기반 Java &quot;POJO&#39;(Plain Old Java Objects)입니다.
+Sling 모델은 AEM 컨텍스트에서 개발 시 JCR에서 Java 변수로 데이터를 쉽게 매핑하고 많은 다른 세부 사항을 제공하는 주석 기반의 Java &quot;POJO&quot;(Plain Old Java Objects)입니다.
 
-다음으로, 페이지에 게시하기 전에 JCR에 저장된 값에 일부 비즈니스 논리를 적용하기 위해 `HelloWorldModel` Sling 모델에 몇 가지 업데이트를 적용합니다.
+다음으로, `HelloWorldModel` Sling Model을 업데이트하여 일부 비즈니스 로직을 JCR에 저장된 값에 적용한 후에 페이지에 출력합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330988/?quality=12&learn=on)
 
-1. `HelloWorld` 구성 요소에 사용된 Sling 모델인 `HelloWorldModel.java` 파일을 엽니다.
+1. `HelloWorld` 구성 요소와 함께 사용되는 Sling 모델인 `HelloWorldModel.java` 파일을 엽니다.
 
    ```plain
    <code>/aem-guides-wknd.core/src/main/java/com/adobe/aem/guides/wknd/core/models/HelloWorldModel.java
    ```
 
-1. 다음 가져오기 문을 추가합니다.
+1. 다음 가져오기 구문을 추가합니다.
 
    ```java
    import org.apache.commons.lang.StringUtils;
    import org.apache.sling.models.annotations.DefaultInjectionStrategy;
    ```
 
-1. `DefaultInjectionStrategy`을(를) 사용하도록 `@Model` 주석을 업데이트합니다.
+1. `DefaultInjectionStrategy` 주석을 업데이트하여`@Model`
 
    ```java
    @Model(adaptables = Resource.class,
@@ -221,7 +220,7 @@ Sling Models는 JCR에서 Java 변수에 대한 데이터 매핑을 용이하게
            ...
    ```
 
-1. `HelloWorldModel` 클래스에 다음 메서드 `getTitle()`을 추가합니다. 이 메서드는 `title` 속성의 값을 반환합니다. 이 메서드는 &quot;Default Value here!&quot;의 문자열 값을 반환하는 추가 논리를 추가합니다. 속성 `title`이(가) null이거나 비어 있는 경우:
+1. `HelloWorldModel` 클래스에 다음 메서드 `getTitle()`을 추가하고 `title` 속성의 값을 반환합니다. 이 메서드는 &quot;Default Value here!&quot;라는 문자열 값을 반환하기 위해 추가 논리를 추가합니다. `title` 속성이 null이거나 비어 있는 경우:
 
    ```java
    /***
@@ -233,7 +232,7 @@ Sling Models는 JCR에서 Java 변수에 대한 데이터 매핑을 용이하게
    }
    ```
 
-1. `HelloWorldModel` 클래스에 다음 메서드 `getText()`을 추가합니다. 이 메서드는 `text` 속성의 값을 반환합니다. 이 메서드는 문자열을 모든 대문자로 변환합니다.
+1. `HelloWorldModel` 클래스에 다음 메서드 `getText()`을 추가하고 `text` 속성의 값을 반환합니다. 이 메서드는 문자열을 모든 대문자로 변환합니다.
 
    ```java
        /***
@@ -256,7 +255,7 @@ Sling Models는 JCR에서 Java 변수에 대한 데이터 매핑을 용이하게
    >
    > AEM 6.4/6.5를 사용하는 경우 `mvn clean install -PautoInstallBundle -Pclassic` 사용
 
-1. `HelloWorld` 모델의 새로 만든 메서드를 사용하도록 `aem-guides-wknd.ui.apps/src/main/content/jcr_root/apps/wknd/components/content/helloworld/helloworld.html`에 있는 `helloworld.html` 파일을 업데이트합니다.
+1. `HelloWorld` 모델의 새로 만든 메서드를 사용하려면 `helloworld.html` 파일을 `aem-guides-wknd.ui.apps/src/main/content/jcr_root/apps/wknd/components/content/helloworld/helloworld.html`에서 업데이트하십시오.
 
    ```html
    <div class="cmp-helloworld" data-cmp-is="helloworld"
@@ -277,20 +276,20 @@ Sling Models는 JCR에서 Java 변수에 대한 데이터 매핑을 용이하게
    </div>
    ```
 
-1. Eclipse Developer 플러그인을 사용하거나 Maven 기술을 사용하여 AEM의 로컬 인스턴스에 변경 사항을 배포합니다.
+1. Eclipse 개발자 플러그인을 사용하거나 Maven 기술을 사용하여 AEM의 로컬 인스턴스에 변경 사항을 배포합니다.
 
 ## 클라이언트측 라이브러리 {#client-side-libraries}
 
-클라이언트측 라이브러리로서 클라이언트측은 AEM Sites 구현에 필요한 CSS 및 JavaScript 파일을 구성하고 관리하는 메커니즘을 제공합니다. 클라이언트측 라이브러리는 AEM의 페이지에 CSS 및 JavaScript를 포함하는 표준 방법입니다.
+클라이언트측 라이브러리인 clientlibs는 짧게 설명하며, AEM Sites 구현에 필요한 CSS 및 JavaScript 파일을 구성하고 관리하는 메커니즘을 제공합니다. 클라이언트측 라이브러리는 AEM의 페이지에 CSS 및 JavaScript를 포함하는 표준 방법입니다.
 
-다음으로 클라이언트측 라이브러리의 기본 사항을 이해하기 위해 `HelloWorld` 구성 요소에 대한 일부 CSS 스타일을 포함시킬 것입니다.
+다음으로, 클라이언트 측 라이브러리의 기본 사항을 이해하기 위해 `HelloWorld` 구성 요소에 대한 일부 CSS 스타일을 포함하겠습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330989/?quality=12&learn=on)
 
 다음은 위의 비디오에서 수행되는 높은 수준의 단계입니다.
 
 1. `/aem-guides-wknd.ui.apps/src/main/content/jcr_root/apps/wknd/clientlibs` 아래에 `clientlib-helloworld` 라는 새 폴더를 만듭니다.
-1. `clientlibs` 아래에 다음과 같은 폴더 및 파일 구조를 만듭니다.
+1. `clientlibs` 아래에 다음과 같이 폴더 및 파일 구조를 만듭니다.
 
    ```plain
    /clientlib-helloworld
@@ -301,7 +300,7 @@ Sling Models는 JCR에서 Java 변수에 대한 데이터 매핑을 용이하게
        +.content.xml
    ```
 
-1. `helloworld.css`을(를) 다음 항목으로 채웁니다.
+1. `helloworld.css` 을 다음과 같이 채웁니다.
 
    ```css
    .cmp-helloworld .cmp-helloworld__title {
@@ -309,20 +308,20 @@ Sling Models는 JCR에서 Java 변수에 대한 데이터 매핑을 용이하게
    }
    ```
 
-1. `helloworld/clientlibs/css.txt`을(를) 다음 항목으로 채웁니다.
+1. `helloworld/clientlibs/css.txt` 을 다음과 같이 채웁니다.
 
    ```plain
    #base=css
    helloworld.css
    ```
 
-1. `helloworld/clientlibs/js/helloworld.js`을(를) 다음 항목으로 채웁니다.
+1. `helloworld/clientlibs/js/helloworld.js` 을 다음과 같이 채웁니다.
 
    ```js
    console.log("Hello World from Javascript!");
    ```
 
-1. `helloworld/clientlibs/js.txt`을(를) 다음 항목으로 채웁니다.
+1. `helloworld/clientlibs/js.txt` 을 다음과 같이 채웁니다.
 
    ```plain
    #base=js
@@ -339,7 +338,7 @@ Sling Models는 JCR에서 Java 변수에 대한 데이터 매핑을 용이하게
        categories="[wknd.helloworld]" />
    ```
 
-1. `clientlibs/clientlib-base/.content.xml` 파일을 **embed** `wknd.helloworld` 범주로 업데이트합니다.
+1. `clientlibs/clientlib-base/.content.xml` 파일을 **embed** `wknd.helloworld` 카테고리로 업데이트합니다.
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -354,14 +353,14 @@ Sling Models는 JCR에서 Java 변수에 대한 데이터 매핑을 용이하게
 
    >[!NOTE]
    >
-   > CSS 및 JavaScript는 성능상의 이유로 브라우저에서 자주 캐시됩니다. 클라이언트 라이브러리에 대한 변경 사항이 즉시 표시되지 않으면 하드 새로 고침을 수행하고 브라우저의 캐시를 지웁니다. 새 캐시를 보장하기 위해 익명으로 만든 윈도우를 사용하는 것이 도움이 될 수 있습니다.
+   > CSS 및 JavaScript는 성능상의 이유로 브라우저에 의해 자주 캐시됩니다. 클라이언트 라이브러리에 대한 변경 사항이 즉시 표시되지 않으면 하드 새로 고침을 수행하고 브라우저의 캐시를 지웁니다. 새 캐시를 보장하기 위해 시크릿 윈도우를 사용하는 것이 도움이 될 수 있습니다.
 
-## 축하합니다!{#congratulations}
+## 축하합니다! {#congratulations}
 
 축하합니다. Adobe Experience Manager에서 구성 요소 개발의 기본 사항을 익혔습니다.
 
 ### 다음 단계 {#next-steps}
 
-다음 장 [페이지 및 템플릿](pages-templates.md)에서 Adobe Experience Manager 페이지 및 템플릿에 대해 알아봅니다. 핵심 구성 요소가 프로젝트에 프록시하는 방법을 파악하고 편집 가능한 템플릿의 고급 정책 구성을 학습하여 잘 구성된 아티클 페이지 템플릿을 빌드합니다.
+다음 장 [페이지 및 템플릿](pages-templates.md)에서 Adobe Experience Manager 페이지 및 템플릿을 숙지하십시오. 핵심 구성 요소가 프로젝트에 프록시되는 방법을 이해하고 편집 가능한 템플릿의 고급 정책 구성을 배워서 잘 구조화된 문서 페이지 템플릿을 작성합니다.
 
-[GitHub](https://github.com/adobe/aem-guides-wknd)에서 완료된 코드를 보거나 Git 분기 `tutorial/component-basics-solution`에서 로컬로 코드를 검토하고 배포합니다.
+완료된 코드를 [GitHub](https://github.com/adobe/aem-guides-wknd)에서 확인하거나 Git 분기 `tutorial/component-basics-solution`에서 로컬로 코드를 검토하고 배포합니다.
