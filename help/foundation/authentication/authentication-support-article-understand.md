@@ -1,20 +1,19 @@
 ---
 title: AEM에서 인증 지원 이해
-description: 'AEM에서 지원하는 인증(및 경우에 따라 권한 부여) 메커니즘에 대한 통합 보기. '
+description: 'AEM에서 지원하는 인증(및 때때로 권한 부여) 메커니즘에 대한 통합 보기. '
 version: 6.3, 6.4, 6.5
-feature: Users and Groups
+feature: 사용자 및 그룹
 topics: authentication, security
 activity: understand
 audience: architect, developer, implementer
 doc-type: article
 kt: 406
-topic: Architecture
+topic: 아키텍처
 role: Architect
 level: Experienced
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '144'
+source-wordcount: '142'
 ht-degree: 5%
 
 ---
@@ -22,7 +21,7 @@ ht-degree: 5%
 
 # AEM 6.x에서 인증 지원 이해
 
-AEM에서 지원하는 인증(및 경우에 따라 권한 부여) 메커니즘에 대한 통합 보기.
+AEM에서 지원하는 인증(및 때때로 권한 부여) 메커니즘에 대한 통합 보기.
 
 *다음 표에서는 사용자가 AEM에 인증할 수 있는 방법을 설명합니다.*
 
@@ -53,13 +52,13 @@ AEM에서 지원하는 인증(및 경우에 따라 권한 부여) 메커니즘�
             <td>✔</td>
         </tr>
         <tr>
-            <td>토큰 기반(포함/ <a href="https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/encapsulated-token.html" target="_blank">캡슐화된 토큰</a>)</td>
+            <td>토큰 기반(<a href="https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/encapsulated-token.html" target="_blank">캡슐화된 토큰</a>포함)</td>
             <td>✔</td>
             <td>✔</td>
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong>표준 ID 공급자로 AEM이 아닌 시스템</strong></td>
+            <td><strong>정식 ID 공급자로 비 AEM 시스템</strong></td>
             <td></td>
             <td></td>
             <td></td>
@@ -96,4 +95,4 @@ AEM에서 지원하는 인증(및 경우에 따라 권한 부여) 메커니즘�
     </tbody>
 </table>
 
-*⁕ 커뮤니티 프로젝트를 통해 제공되지만 Adobe에서 직접 지원되지는 않습니다.*
+*⁕ 커뮤니티 프로젝트를 통해 제공되지만, Adobe이 직접 지원하지 않습니다.*
