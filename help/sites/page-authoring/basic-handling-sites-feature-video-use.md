@@ -3,7 +3,7 @@ title: AEM Sites의 기본 처리
 seo-title: Adobe Experience Manager Sites에서 새 페이지 만들기
 description: 다음 비디오에서는 AEM 작성 환경을 사용할 때의 기본 처리에 대한 개요를 제공합니다. 사이트 콘솔을 기본으로 사용합니다.
 seo-description: 다음 비디오에서는 AEM 작성 환경을 사용할 때의 기본 처리에 대한 개요를 제공합니다. 사이트 콘솔을 기본으로 사용합니다.
-feature: Page Editor, Editable Templates
+feature: 페이지 편집기, 편집 가능한 템플릿
 topics: authoring, publishing
 audience: author, marketer
 doc-type: feature video
@@ -11,14 +11,13 @@ activity: use
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 4495
 thumbnail: 31784.jpg
-topic: Content Management
+topic: 컨텐츠 관리
 role: Business Practitioner
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '379'
-ht-degree: 67%
+source-wordcount: '376'
+ht-degree: 68%
 
 ---
 
@@ -32,7 +31,7 @@ ht-degree: 67%
 이 비디오에서는 다음 기능 또는 기능을 다룹니다.
 
 * 터치 활성화 UI
-* 전역 탐색 패널은 다음과 같이 구성됩니다.
+* 전역 탐색 패널은 로 구성됩니다.
    * 탐색 - 나침반으로 표시되며, 
 
       | 콘솔 | 목적 |
@@ -63,5 +62,5 @@ ht-degree: 67%
 
 ## 추가 리소스 {#additional-resources}
 
-* [페이지 컨텐츠 설명서 편집](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html)
+* [페이지 컨텐츠 편집 설명서](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html)
 * [페이지 작성에 대한 빠른 시작 안내서](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)
