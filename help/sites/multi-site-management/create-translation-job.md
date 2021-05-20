@@ -1,7 +1,7 @@
 ---
 title: 번역 작업
 description: 기존 번역 프로젝트에 번역 작업을 추가하는 방법을 알아봅니다.
-feature: Language Copy, Multi Site Manager
+feature: 언어 사본, 다중 사이트 관리자
 topics: localization, authoring, content-architecture
 audience: all
 doc-type: feature video
@@ -9,13 +9,12 @@ activity: use
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 5366
 thumbnail: 36488.jpg
-topic: Localization
+topic: 로컬라이제이션
 role: Business Practitioner
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '37'
+source-wordcount: '34'
 ht-degree: 2%
 
 ---
