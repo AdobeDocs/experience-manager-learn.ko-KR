@@ -1,40 +1,39 @@
 ---
 title: 적응형 Forms을 사용한 바코드 서비스
 seo-title: 적응형 Forms을 사용한 바코드 서비스
-description: 바코드 서비스를 사용하여 바코드 코드를 디코딩하고 추출된 데이터의 양식 필드 채우기
-seo-description: 바코드 서비스를 사용하여 바코드 코드를 디코딩하고 추출된 데이터의 양식 필드 채우기
+description: 바코드 서비스를 사용하여 바코드를 디코딩하고 추출된 데이터에서 양식 필드를 채웁니다
+seo-description: 바코드 서비스를 사용하여 바코드를 디코딩하고 추출된 데이터에서 양식 필드를 채웁니다
 uuid: 42568b81-cbcd-479e-8d9a-cc0b244da4ae
-feature: barcoded-forms
+feature: 바코드 양식
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
 discoiquuid: 1224de6d-7ca1-4e9d-85fe-cd675d03e262
-topic: Development
+topic: 개발
 role: Developer
 level: Intermediate
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '403'
 ht-degree: 0%
 
 ---
 
 
-# 적응형 Forms 포함 바코드 서비스{#barcode-service-with-adaptive-forms}
+# 적응형 Forms을 사용하는 바코드 서비스{#barcode-service-with-adaptive-forms}
 
-이 문서에서는 바코드 서비스를 사용하여 적응형 양식을 채우는 방법을 설명합니다. 사용 사례는 다음과 같습니다.
+이 문서에서는 바코드 서비스를 사용하여 적응형 양식을 채우는 방법을 보여 줍니다. 사용 사례는 다음과 같습니다.
 
-1. 사용자가 바코드가 있는 PDF를 적응형 양식 첨부 파일로 추가합니다.
-1. 첨부 파일의 경로가 서블릿으로 전송됩니다.
-1. 이 서블릿은 바코드를 디코딩하고 데이터를 JSON 형식으로 반환합니다.
-1. 그런 다음 디코딩된 데이터를 사용하여 응용 양식이 채워집니다.
+1. 사용자가 바코드가 있는 PDF를 적응형 양식 첨부 파일로 추가합니다
+1. 첨부 파일의 경로가 서블릿으로 전송됩니다
+1. 서블릿은 바코드를 디코딩하고 데이터를 JSON 형식으로 반환합니다
+1. 그런 다음 디코딩된 데이터를 사용하여 적응형 양식을 채웁니다
 
-다음 코드는 바코드를 디코딩하고 디코딩된 값으로 JSON 개체를 채웁니다. 그런 다음 이 서블릿은 호출 응용 프로그램에 대한 응답으로 JSON 개체를 반환합니다.
+다음 코드는 바코드를 디코딩하고 JSON 개체를 디코딩된 값으로 채웁니다. 그러면 서블릿은 호출 애플리케이션에 대한 응답으로 JSON 개체를 반환합니다.
 
-이 기능을 실시간으로 볼 수 있습니다. [샘플 포털](https://forms.enablementadobe.com/content/samples/samples.html?query=0)을 방문하여 바코드 서비스 데모 검색
+이 기능을 실시간으로 볼 수 있습니다. [샘플 포털](https://forms.enablementadobe.com/content/samples/samples.html?query=0)을 방문하여 바코드 서비스 데모를 검색하십시오
 
 ```java
 public JSONObject extractBarCode(Document pdfDocument) {
@@ -62,7 +61,7 @@ public JSONObject extractBarCode(Document pdfDocument) {
  }
 ```
 
-다음은 servlet 코드입니다. 이 서블릿은 사용자가 적응형 양식에 첨부 파일을 추가할 때 호출됩니다. 이 서블릿은 JSON 개체를 다시 호출 응용 프로그램으로 반환합니다. 그런 다음 호출 응용 프로그램은 적응형 양식을 JSON 개체에서 추출된 값으로 채웁니다.
+다음은 서블릿 코드입니다. 이 서블릿은 사용자가 적응형 양식에 첨부 파일을 추가할 때 호출됩니다. 서블릿은 JSON 개체를 호출 애플리케이션에 다시 반환합니다. 그런 다음 호출 애플리케이션이 적응형 양식을 JSON 개체에서 추출된 값으로 채웁니다.
 
 ```java
 @Component(service = Servlet.class, property = {
@@ -104,7 +103,7 @@ public class DecodeBarCode extends SlingSafeMethodsServlet {
 }
 ```
 
-다음 코드는 응용 양식에 의해 참조되는 클라이언트 라이브러리의 일부입니다. 사용자가 응용 양식에 첨부 파일을 추가하면 이 코드가 실행됩니다. 이 코드는 요청 매개 변수에 전달되는 첨부 파일의 경로를 사용하여 서블릿에 GET을 호출합니다. 그런 다음 servlet 호출에서 받은 데이터를 사용하여 적응형 양식을 채웁니다.
+다음 코드는 적응형 양식에서 참조하는 클라이언트 라이브러리의 일부입니다. 사용자가 적응형 양식에 첨부 파일을 추가하면 이 코드가 트리거됩니다. 이 코드는 요청 매개 변수에서 전달된 첨부 파일의 경로를 사용하여 서블릿을 GET으로 호출합니다. 그런 다음 서블릿 호출에서 수신한 데이터를 사용하여 적응형 양식을 채웁니다.
 
 ```
 $(document).ready(function()
@@ -141,19 +140,19 @@ $(document).ready(function()
 
 >[!NOTE]
 >
->이 패키지에 포함된 적응형 양식이 AEM Forms 6.4를 사용하여 빌드되었습니다. AEM Forms 6.3 환경에서 이 패키지를 사용하려면 AEM Form 6.3에서 적응형 양식을 만드십시오.
+>이 패키지에 포함된 적응형 양식은 AEM Forms 6.4를 사용하여 빌드되었습니다. AEM Forms 6.3 환경에서 이 패키지를 사용하려면 AEM Form 6.3에서 적응형 양식을 만드십시오
 
-12행 - 서비스 확인자를 가져오기 위한 사용자 지정 코드입니다. 이 번들은 이 아티클 에셋의 일부로 포함되어 있습니다.
+12행 - 서비스 확인자를 가져오기 위한 사용자 지정 코드. 이 번들은 이 문서의 assets의 일부로 포함되어 있습니다.
 
 23행 - DocumentServices extractBarCode 메서드를 호출하여 디코딩된 데이터로 JSON 개체를 채웁니다
 
 시스템에서 이 작업을 실행하려면 다음 단계를 수행하십시오
 
 1. [BarcodeService.](assets/barcodeservice.zip) zip을 다운로드하고 패키지 관리자를 사용하여 AEM으로 가져옵니다.
-1. [사용자 정의 DocumentServices 번들 다운로드 및 설치](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
+1. [사용자 지정 DocumentServices 번들 다운로드 및 설치](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
 1. [DevelopingWithServiceUser 번들 다운로드 및 설치](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 1. [샘플 PDF 양식 다운로드](assets/barcode.pdf)
-1. 브라우저에 [샘플 적응형 양식](http://localhost:4502/content/dam/formsanddocuments/barcodedemo/jcr:content?wcmmode=disabled)을 지정합니다.
+1. 브라우저를 [샘플 적응형 양식](http://localhost:4502/content/dam/formsanddocuments/barcodedemo/jcr:content?wcmmode=disabled)에 보냅니다.
 1. 제공된 샘플 PDF 업로드
-1. 데이터가 채워진 양식을 볼 수 있습니다
+1. 데이터가 채워진 양식이 표시됩니다
 
