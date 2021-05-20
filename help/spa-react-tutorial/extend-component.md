@@ -1,8 +1,8 @@
 ---
-title: 구성 요소 확장 | AEM SPA 편집기 시작 및 반응
-description: AEM SPA Editor에서 사용할 기존 핵심 구성 요소를 확장하는 방법을 알아봅니다. 기존 구성 요소에 속성과 컨텐츠를 추가하는 방법에 대한 이해는 AEM SPA 편집기 구현의 기능을 확장하는 강력한 방법입니다. Sling 모델 및 Sling 리소스 합병의 기능을 확장하기 위해 위임 패턴을 사용하는 방법을 알아봅니다.
+title: 구성 요소 확장 | AEM SPA 편집기 및 반응 시작하기
+description: AEM SPA 편집기에서 사용할 기존 코어 구성 요소를 확장하는 방법을 알아봅니다. 기존 구성 요소에 속성 및 컨텐츠를 추가하는 방법을 이해하는 것은 AEM SPA 편집기 구현의 기능을 확장하는 강력한 방법입니다. Sling Model 및 Sling Resource Merger 기능을 확장하는 위임 패턴을 사용하는 방법을 알아봅니다.
 sub-product: 사이트
-feature: SPA Editor, Core Components
+feature: SPA 편집기, 핵심 구성 요소
 doc-type: tutorial
 topics: development
 version: cloud-service
@@ -13,38 +13,37 @@ thumbnail: 5879-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1976'
+source-wordcount: '1974'
 ht-degree: 2%
 
 ---
 
 
-# 핵심 구성 요소 {#extend-component} 확장
+# 코어 구성 요소 확장 {#extend-component}
 
-AEM SPA Editor에서 사용할 기존 핵심 구성 요소를 확장하는 방법을 알아봅니다. 기존 구성 요소를 확장하는 방법을 이해하는 것은 AEM SPA Editor 구현의 기능을 사용자 정의하고 확장하는 강력한 방법입니다.
+AEM SPA 편집기에서 사용할 기존 코어 구성 요소를 확장하는 방법을 알아봅니다. 기존 구성 요소를 확장하는 방법을 이해하는 것은 AEM SPA 편집기 구현의 기능을 사용자 지정하고 확장하는 강력한 방법입니다.
 
 ## 목표
 
-1. 추가 속성 및 컨텐츠로 기존 핵심 구성 요소를 확장합니다.
-2. `sling:resourceSuperType`을(를) 사용하여 구성 요소 상속의 기본 사항을 이해합니다.
-3. Sling 모델용 [위임 패턴](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models)을 활용하여 기존 로직과 기능을 다시 사용하는 방법을 알아봅니다.
+1. 추가 속성 및 콘텐츠로 기존 코어 구성 요소를 확장합니다.
+2. `sling:resourceSuperType`을 사용하여 구성 요소 상속의 기본 사항을 이해합니다.
+3. Sling 모델용 [위임 패턴](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models)을 활용하여 기존 로직 및 기능을 다시 사용하는 방법을 알아봅니다.
 
-## 구축 분야
+## 빌드할 내용
 
-이 장에서 새 `Card` 구성 요소가 만들어집니다. `Card` 구성 요소는 [이미지 핵심 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/image.html)를 확장하여 제목 및 클릭유도문안 버튼과 같은 추가 컨텐츠 필드를 SPA 내의 다른 컨텐츠에 대한 티저의 역할을 수행합니다.
+이 장에서는 새 `Card` 구성 요소가 만들어집니다. `Card` 구성 요소는 [이미지 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/image.html)를 추가하여 제목 및 클릭유도문안 단추와 같은 추가 컨텐츠 필드를 SPA 내의 다른 콘텐츠에 대한 티저 역할을 수행합니다.
 
 ![카드 구성 요소의 최종 작성](assets/extend-component/final-authoring-card.png)
 
 >[!NOTE]
 >
-> 실제 구현에서는 프로젝트 요구 사항에 따라 [Teaser 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/teaser.html)를 사용한 다음 [이미지 코어 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html)를 확장하여 `Card` 구성 요소를 만드는 것이 더 적절할 수 있습니다. 가능하면 항상 [핵심 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)를 직접 사용하는 것이 좋습니다.
+> 실제 구현에서는 [Teaser 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/teaser.html)를 사용한 다음 [이미지 코어 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html)를 확장하여 프로젝트 요구 사항에 따라 `Card` 구성 요소를 만드는 것이 더 적절할 수 있습니다. 가능하면 항상 [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)를 직접 사용하는 것이 좋습니다.
 
 ## 전제 조건
 
-[로컬 개발 환경 설정](overview.md#local-dev-environment)에 대한 필수 도구 및 지침을 검토하십시오.
+[로컬 개발 환경](overview.md#local-dev-environment)을 설정하는 데 필요한 도구 및 지침을 검토하십시오.
 
 ### 코드 가져오기
 
@@ -56,7 +55,7 @@ AEM SPA Editor에서 사용할 기존 핵심 구성 요소를 확장하는 방�
    $ git checkout React/extend-component-start
    ```
 
-2. Maven을 사용하여 코드 베이스를 로컬 AEM 인스턴스에 배포합니다.
+2. Maven을 사용하여 로컬 AEM 인스턴스에 코드 베이스를 배포합니다.
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage
@@ -68,18 +67,18 @@ AEM SPA Editor에서 사용할 기존 핵심 구성 요소를 확장하는 방�
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
-3. 기존 [WKND 참조 사이트](https://github.com/adobe/aem-guides-wknd/releases/latest)에 대해 완료된 패키지를 설치합니다. [WKND 참조 사이트](https://github.com/adobe/aem-guides-wknd/releases/latest)에서 제공하는 이미지가 WKND SPA에서 다시 사용됩니다. [AEM 패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp)를 사용하여 패키지를 설치할 수 있습니다.
+3. 기존 [WKND 참조 사이트](https://github.com/adobe/aem-guides-wknd/releases/latest)에 대해 완료된 패키지를 설치합니다. [WKND 참조 사이트](https://github.com/adobe/aem-guides-wknd/releases/latest)에서 제공하는 이미지가 WKND SPA에서 다시 사용됩니다. 패키지는 [AEM 패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp)를 사용하여 설치할 수 있습니다.
 
-   ![Package Manager 설치 wknd.all](./assets/map-components/package-manager-wknd-all.png)
+   ![패키지 관리자 설치 wknd.all](./assets/map-components/package-manager-wknd-all.png)
 
 항상 [GitHub](https://github.com/adobe/aem-guides-wknd-spa/tree/React/extend-component-solution)에서 완료된 코드를 보거나 분기 `React/extend-component-solution`로 전환하여 로컬로 코드를 체크 아웃할 수 있습니다.
 
 ## Inspect 초기 카드 구현
 
-초기 카드 구성 요소는 장 시작 코드로 제공되었습니다. Inspect은 카드 구현의 시작점입니다.
+초기 카드 구성 요소는 장 시작 코드에서 제공했습니다. Inspect 를 카드 구현의 시작점입니다.
 
 1. 선택한 IDE에서 `ui.apps` 모듈을 엽니다.
-2. `ui.apps/src/main/content/jcr_root/apps/wknd-spa-react/components/card`으로 이동하여 `.content.xml` 파일을 봅니다.
+2. `ui.apps/src/main/content/jcr_root/apps/wknd-spa-react/components/card` 로 이동하여 `.content.xml` 파일을 봅니다.
 
    ![카드 구성 요소 AEM 정의 시작](assets/extend-component/aem-card-cmp-start-definition.png)
 
@@ -92,9 +91,9 @@ AEM SPA Editor에서 사용할 기존 핵심 구성 요소를 확장하는 방�
        componentGroup="WKND SPA React - Content"/>
    ```
 
-   속성 `sling:resourceSuperType`은 `wknd-spa-react/components/image`을(를) 가리킵니다. 즉, `Card` 구성 요소는 WKND SPA 이미지 구성 요소의 모든 기능을 상속합니다.
+   `sling:resourceSuperType` 속성은 `Card` 구성 요소가 WKND SPA 이미지 구성 요소에서 모든 기능을 상속함을 나타내는 `wknd-spa-react/components/image`을 가리킵니다.
 
-3. Inspect 파일 `ui.apps/src/main/content/jcr_root/apps/wknd-spa-react/components/image/.content.xml`:
+3. Inspect `ui.apps/src/main/content/jcr_root/apps/wknd-spa-react/components/image/.content.xml` 파일:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -105,19 +104,19 @@ AEM SPA Editor에서 사용할 기존 핵심 구성 요소를 확장하는 방�
        componentGroup="WKND SPA React - Content"/>
    ```
 
-   `sling:resourceSuperType`이 `core/wcm/components/image/v2/image`을(를) 가리킵니다. 이것은 WKND SPA 이미지 구성 요소가 핵심 구성 요소 이미지의 모든 기능을 상속함을 나타냅니다.
+   `sling:resourceSuperType`이 `core/wcm/components/image/v2/image`을 가리킵니다. 이는 WKND SPA 이미지 구성 요소가 핵심 구성 요소 이미지의 모든 기능을 상속함을 나타냅니다.
 
-   [프록시 패턴](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/guidelines.html#proxy-component-pattern) Sling 리소스 상속은 하위 구성 요소가 기능을 상속하고 원하는 경우 동작을 확장/재정의할 수 있도록 하는 강력한 디자인 패턴입니다. 슬링 상속은 여러 수준의 상속을 지원하므로, 궁극적으로 새로운 `Card` 구성 요소는 핵심 구성 요소 이미지의 기능을 상속합니다.
+   [프록시 패턴](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/guidelines.html#proxy-component-pattern) Sling 리소스 상속은 하위 구성 요소가 원하는 경우 기능을 상속하고 동작을 확장/무시할 수 있도록 해주는 강력한 디자인 패턴입니다. Sling 상속은 여러 수준의 상속을 지원하므로 궁극적으로 새 `Card` 구성 요소는 핵심 구성 요소 이미지의 기능을 상속합니다.
 
-   많은 개발 팀들은 D.R.Y.가 되기 위해 노력한다(반복하지 말아라). Sling 상속은 AEM을 통해 가능합니다.
+   많은 개발 팀은 D.R.Y.가 되기 위해 노력하고 있습니다(반복하지 마십시오). Sling 상속을 사용하면 AEM에서 이 작업을 수행할 수 있습니다.
 
 4. `card` 폴더 아래에서 `_cq_dialog/.content.xml` 파일을 엽니다.
 
-   이 파일은 `Card` 구성 요소의 구성 요소 대화 상자 정의입니다. Sling 상속을 사용하는 경우 [Sling 리소스 합병](https://docs.adobe.com/content/help/en/experience-manager-65/developing/platform/sling-resource-merger.html)의 기능을 사용하여 대화 상자의 부분을 대체하거나 확장할 수 있습니다. 이 샘플에서는 카드 구성 요소를 채우기 위해 작성자의 추가 데이터를 캡처하기 위해 대화 상자에 새 탭이 추가되었습니다.
+   이 파일은 `Card` 구성 요소의 구성 요소 대화 상자 정의입니다. Sling 상속을 사용하는 경우 [Sling Resource Merger](https://docs.adobe.com/content/help/en/experience-manager-65/developing/platform/sling-resource-merger.html)의 기능을 사용하여 대화 상자의 부분을 대체하거나 확장할 수 있습니다. 이 샘플에서는 카드 구성 요소를 채우기 위해 작성자의 추가 데이터를 캡처하기 위해 대화 상자에 새 탭이 추가되었습니다.
 
-   `sling:orderBefore`과 같은 속성을 통해 개발자는 새 탭이나 양식 필드를 삽입할 위치를 선택할 수 있습니다. 이 경우 `Text` 탭이 `asset` 탭 앞에 삽입됩니다. Sling 리소스 합병을 완전히 사용하려면 [이미지 구성 요소 대화 상자](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/image/v2/image/_cq_dialog/.content.xml)에 대한 원래 대화 상자 노드 구조를 알고 있어야 합니다.
+   `sling:orderBefore` 과 같은 속성을 사용하면 개발자가 새 탭이나 양식 필드를 삽입할 위치를 선택할 수 있습니다. 이 경우 `Text` 탭이 `asset` 탭 앞에 삽입됩니다. Sling 리소스 병합을 완전히 사용하려면 [이미지 구성 요소 대화 상자](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/image/v2/image/_cq_dialog/.content.xml)에 대한 원래 대화 상자 노드 구조를 알고 있어야 합니다.
 
-5. `card` 폴더 아래에서 `_cq_editConfig.xml` 파일을 엽니다. 이 파일은 AEM 작성 UI의 드래그 앤 드롭 동작을 지시합니다. 이미지 구성 요소를 확장할 때는 리소스 유형이 구성 요소 자체와 일치해야 합니다. `<parameters>` 노드를 검토합니다.
+5. `card` 폴더 아래에서 `_cq_editConfig.xml` 파일을 엽니다. 이 파일은 AEM 작성 UI의 드래그 앤 드롭 동작을 지시합니다. 이미지 구성 요소를 확장할 때 리소스 유형이 구성 요소 자체와 일치해야 합니다. `<parameters>` 노드를 검토합니다.
 
    ```xml
    <parameters
@@ -128,15 +127,15 @@ AEM SPA Editor에서 사용할 기존 핵심 구성 요소를 확장하는 방�
        imageRotate=""/>
    ```
 
-   대부분의 구성 요소는 `cq:editConfig`이 필요하지 않으며 이미지 구성 요소의 이미지 및 하위 하위 하위 하위 항목은 예외입니다.
+   대부분의 구성 요소는 `cq:editConfig`이 필요하지 않으며, 이미지 구성 요소의 이미지 및 하위 항목은 예외입니다.
 
-6. IDE 스위치에서 `ui.frontend` 모듈로 전환하고 `ui.frontend/src/components/Card`:
+6. IDE 스위치에서 `ui.frontend` 모듈로 이동하여 `ui.frontend/src/components/Card`:
 
-   ![반응형 구성 요소 시작](assets/extend-component/react-card-component-start.png)
+   ![React 구성 요소 시작](assets/extend-component/react-card-component-start.png)
 
-7. Inspect에서 `Card.js` 파일을 찾습니다.
+7. Inspect: `Card.js` 파일
 
-   표준 `MapTo` 함수를 사용하여 AEM `Card` 구성 요소에 매핑하기 위해 구성 요소가 이미 출력되었습니다.
+   구성 요소가 이미 표준 `MapTo` 함수를 사용하여 AEM `Card` 구성 요소에 매핑되도록 업로드되었습니다.
 
    ```js
    MapTo('wknd-spa-react/components/card')(Card, CardEditConfig);
@@ -153,13 +152,13 @@ AEM SPA Editor에서 사용할 기존 핵심 구성 요소를 확장하는 방�
    }
    ```
 
-   이 예에서는 기존 React Image 구성 요소 `Image`을(를) 단순히 `Card` 구성 요소에서 `this.props`로 전달하여 다시 사용하도록 선택했습니다. 자습서의 후반부에 제목, 날짜 및 클릭유도문안 단추를 표시하도록 `get bodyContent()` 메서드가 구현됩니다.
+   이 예에서는 `Card` 구성 요소에서 `this.props`을 단순히 전달하여 기존 React 이미지 구성 요소 `Image`을 다시 사용하도록 선택했습니다. 자습서의 뒷부분에서 `get bodyContent()` 메서드가 제목, 날짜 및 클릭유도문안 단추를 표시하도록 구현됩니다.
 
 ## 템플릿 정책 업데이트
 
-이 초기 `Card` 구현에서 AEM SPA Editor의 기능을 검토합니다. 초기 `Card` 구성 요소를 보려면 템플릿 정책을 업데이트해야 합니다.
+이 초기 `Card` 구현에서 AEM SPA 편집기의 기능을 검토합니다. 초기 `Card` 구성 요소를 보려면 템플릿 정책에 대한 업데이트가 필요합니다.
 
-1. 아직 없는 경우 시작 코드를 AEM의 로컬 인스턴스에 배포합니다.
+1. 아직 수행하지 않았다면 AEM의 로컬 인스턴스에 시작 코드를 배포합니다.
 
    ```shell
    $ cd aem-guides-wknd-spa
@@ -171,58 +170,58 @@ AEM SPA Editor에서 사용할 기존 핵심 구성 요소를 확장하는 방�
 
    ![레이아웃 컨테이너 정책 업데이트](assets/extend-component/card-component-allowed.png)
 
-   정책 변경 내용을 저장하고 `Card` 구성 요소를 허용된 구성 요소로 확인합니다.
+   정책에 대한 변경 사항을 저장하고 `Card` 구성 요소를 허용된 구성 요소로 관찰합니다.
 
-   ![카드 구성 요소를 허용된 구성 요소로 사용](assets/extend-component/card-component-allowed-layout-container.png)
+   ![허용된 구성 요소로 카드 구성 요소](assets/extend-component/card-component-allowed-layout-container.png)
 
-## 초기 카드 구성 요소 작성
+## 작성자 초기 카드 구성 요소
 
-다음으로 AEM SPA 편집기를 사용하여 `Card` 구성 요소를 작성합니다.
+그런 다음 AEM SPA 편집기를 사용하여 `Card` 구성 요소를 작성합니다.
 
 1. [http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html)로 이동합니다.
 2. `Edit` 모드에서 `Card` 구성 요소를 `Layout Container`에 추가합니다.
 
    ![새 구성 요소 삽입](assets/extend-component/insert-card-component.png)
 
-3. 자산 파인더의 이미지를 `Card` 구성 요소로 드래그하여 놓습니다.
+3. 자산 파인더의 이미지를 `Card` 구성 요소로 끌어다 놓습니다.
 
    ![이미지 추가](assets/extend-component/card-add-image.png)
 
-4. `Card` 구성 요소 대화 상자를 열고 **텍스트** 탭이 추가되었음을 확인합니다.
+4. `Card` 구성 요소 대화 상자를 열고 **텍스트** 탭의 추가를 확인합니다.
 5. **텍스트** 탭에 다음 값을 입력합니다.
 
    ![텍스트 구성 요소 탭](assets/extend-component/card-component-text.png)
 
    **카드 경로**  - SPA 홈 페이지 아래에서 페이지를 선택합니다.
 
-   **CTA 텍스트**  - &quot;자세히 보기&quot;
+   **CTA 텍스트**  - &quot;자세한 내용&quot;
 
    **카드 제목**  - 비워 둡니다.
 
-   **연결된 페이지에서 제목**  가져오기 - 확인란을 선택하여 true로 표시합니다.
+   **연결된 페이지에서 제목 가져오기**  - 확인란을 선택하여 true를 나타냅니다.
 
-6. **자산 메타데이터** 탭을 업데이트하여 **대체 텍스트** 및 **캡션**&#x200B;의 값을 추가합니다.
+6. **자산 메타데이터** 탭을 업데이트하여 **대체 텍스트** 및 **캡션**&#x200B;에 대한 값을 추가합니다.
 
-   현재 대화 상자를 업데이트한 후 추가 변경 사항이 표시되지 않습니다. 새 필드를 반응 구성 요소에 표시하려면 `Card` 구성 요소에 대한 슬링 모델을 업데이트해야 합니다.
+   현재 대화 상자를 업데이트한 후에는 추가 변경 사항이 표시되지 않습니다. 새 필드를 React 구성 요소에 노출하려면 `Card` 구성 요소에 대한 Sling 모델을 업데이트해야 합니다.
 
-7. 새 탭을 열고 [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/content/wknd-spa-react/us/en/home/jcr%3Acontent/root/responsivegrid/card)로 이동합니다. Inspect `/content/wknd-spa-react/us/en/home/jcr:content/root/responsivegrid` 아래의 컨텐트 노드를 사용하여 `Card` 구성 요소 컨텐트를 찾습니다.
+7. 새 탭을 열고 [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/content/wknd-spa-react/us/en/home/jcr%3Acontent/root/responsivegrid/card)로 이동합니다. Inspect `/content/wknd-spa-react/us/en/home/jcr:content/root/responsivegrid` 아래의 컨텐츠 노드를 사용하여 `Card` 구성 요소 컨텐츠를 찾습니다.
 
    ![CRXDE-Lite 구성 요소 속성](assets/extend-component/crxde-lite-properties.png)
 
-   대화 상자에서 속성 `cardPath`, `ctaText`, `titleFromPage`을(를) 지속하는지 확인합니다.
+   `cardPath`, `ctaText`, `titleFromPage` 속성이 대화 상자에 의해 유지되는지 확인합니다.
 
-## 카드 슬링 모델 업데이트
+## 카드 Sling 모델 업데이트
 
-궁극적으로 구성 요소 대화 상자의 값을 반응 구성 요소에 표시하려면 `Card` 구성 요소에 대한 JSON을 채우는 Sling 모델을 업데이트해야 합니다. 또한 다음과 같은 두 가지 비즈니스 로직을 구현할 수 있습니다.
+구성 요소 대화 상자의 값을 React 구성 요소에 최종적으로 노출하려면 `Card` 구성 요소에 대한 JSON을 채우는 Sling 모델을 업데이트해야 합니다. 또한 두 가지 비즈니스 로직을 구현할 수 있는 기회가 있습니다.
 
-* `titleFromPage`이(가) **true**&#x200B;인 경우 `cardPath`에서 지정한 페이지의 제목을 반환하거나 `cardTitle` textfield의 값을 반환합니다.
+* `titleFromPage`이 **true**&#x200B;로 반환되면 `cardPath`에서 지정한 페이지의 제목을 반환하거나 `cardTitle` textfield의 값을 반환합니다.
 * `cardPath`에서 지정한 페이지의 마지막 수정 날짜를 반환합니다.
 
-원하는 IDE로 돌아가 `core` 모듈을 엽니다.
+원하는 IDE로 돌아가서 `core` 모듈을 엽니다.
 
 1. `core/src/main/java/com/adobe/aem/guides/wknd/spa/react/core/models/Card.java`에서 `Card.java` 파일을 엽니다.
 
-   `Card` 인터페이스는 현재 `com.adobe.cq.wcm.core.components.models.Image`을(를) 확장하므로 `Image` 인터페이스의 모든 메서드를 상속합니다. `Image` 인터페이스는 이미 `ComponentExporter` 인터페이스를 확장하여 Sling 모델을 JSON으로 내보내고 SPA 편집기로 매핑할 수 있습니다. 따라서 [사용자 지정 구성 요소 장](custom-component.md)에서와 같이 `ComponentExporter` 인터페이스를 명시적으로 확장할 필요는 없습니다.
+   `Card` 인터페이스는 현재 `com.adobe.cq.wcm.core.components.models.Image`을 확장하므로 `Image` 인터페이스의 모든 메서드를 상속합니다. `Image` 인터페이스는 이미 Sling 모델을 JSON으로 내보내고 SPA 편집기로 매핑할 수 있도록 하는 `ComponentExporter` 인터페이스를 확장합니다. 따라서 [사용자 지정 구성 요소 장](custom-component.md)에서 수행한 것과 같이 `ComponentExporter` 인터페이스를 명시적으로 확장할 필요가 없습니다.
 
 2. 인터페이스에 다음 메서드를 추가합니다.
 
@@ -262,13 +261,13 @@ AEM SPA Editor에서 사용할 기존 핵심 구성 요소를 확장하는 방�
    }
    ```
 
-   이러한 메서드는 JSON 모델 API를 통해 노출되고 React 구성 요소에 전달됩니다.
+   이러한 메서드는 JSON 모델 API를 통해 노출되고 React 구성 요소로 전달됩니다.
 
-3. 열기 `CardImpl.java`. 이것은 `Card.java` 인터페이스의 구현입니다. 이 구현은 자습서를 가속화하기 위해 이미 부분적으로 시도되었습니다.  `@Model` 및 `@Exporter` 주석을 사용하여 Sling 모델이 Sling Model Exporter를 통해 JSON으로 직렬화할 수 있도록 합니다.
+3. 열기 `CardImpl.java`. `Card.java` 인터페이스의 구현입니다. 이 구현은 이미 자습서를 가속화하기 위해 부분적으로 시도되었습니다.  `@Model` 및 `@Exporter` 주석을 사용하여 Sling 모델을 Sling Model Exporter를 통해 JSON으로 직렬화할 수 있는지 확인합니다.
 
-   `CardImpl.java` 또한 Sling  [Models에 위임 패턴을 사용하여 ](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) 이미지 핵심 구성 요소의 모든 논리를 재작성하지 않습니다.
+   `CardImpl.java` 또한 는 Sling  [Models에 위임 ](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) 패턴을 사용하여 이미지 코어 구성 요소에서 모든 논리를 다시 작성하지 않습니다.
 
-4. 다음 줄을 준수하십시오.
+4. 다음 줄을 준수합니다.
 
    ```java
    @Self
@@ -276,7 +275,7 @@ AEM SPA Editor에서 사용할 기존 핵심 구성 요소를 확장하는 방�
    private Image image;
    ```
 
-   위의 주석은 `Card` 구성 요소의 `sling:resourceSuperType` 상속을 기준으로 `image`이라는 이미지 개체를 인스턴스화합니다.
+   위의 주석은 `Card` 구성 요소의 `sling:resourceSuperType` 상속을 기반으로 `image`이라는 이미지 개체를 인스턴스화합니다.
 
    ```java
    @Override
@@ -285,9 +284,9 @@ AEM SPA Editor에서 사용할 기존 핵심 구성 요소를 확장하는 방�
    }
    ```
 
-   그런 다음 논리를 직접 작성하지 않고도 `image` 개체를 사용하여 `Image` 인터페이스에서 정의한 메서드를 구현할 수 있습니다. 이 기술은 `getSrc()`, `getAlt()` 및 `getTitle()`에 사용됩니다.
+   그런 다음 `image` 개체를 사용하여 논리를 직접 작성하지 않고도 `Image` 인터페이스에 정의된 메서드를 구현할 수 있습니다. 이 기법은 `getSrc()`, `getAlt()` 및 `getTitle()`에 사용됩니다.
 
-5. 다음으로 `initModel()` 메서드를 구현하여 `cardPath` 값을 기반으로 개인 변수 `cardPage`을(를) 시작합니다.
+5. 그런 다음 `initModel()` 메서드를 구현하여 `cardPath` 값을 기반으로 개인 변수 `cardPage`을 시작합니다
 
    ```java
    @PostConstruct
@@ -298,11 +297,11 @@ AEM SPA Editor에서 사용할 기존 핵심 구성 요소를 확장하는 방�
    }
    ```
 
-   Sling 모델이 초기화될 때 `@PostConstruct initModel()`은 항상 호출되므로 모델의 다른 메서드에서 사용할 수 있는 개체를 초기화하는 것이 좋습니다. `pageManager`은 `@ScriptVariable` 주석을 통해 Sling 모델에서 사용할 수 있는 [Java 지원 전역 개체](https://docs.adobe.com/content/help/en/experience-manager-htl/using/htl/global-objects.html#java-backed-objects) 수 중 하나입니다. [getPage](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/day/cq/wcm/api/PageManager.html#getPage-java.lang.String-) 메서드는 경로를 가져와서 AEM [Page](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/day/cq/wcm/api/Page.html) 개체를 반환하거나 경로가 올바른 페이지를 가리키지 않으면 null을 반환합니다.
+   Sling 모델이 초기화되면 `@PostConstruct initModel()`은 항상 호출되므로 모델의 다른 메서드에서 사용할 수 있는 개체를 초기화하는 것이 좋습니다. `pageManager`은 `@ScriptVariable` 주석을 통해 Sling 모델에서 사용할 수 있는 [Java 지원 전역 개체](https://docs.adobe.com/content/help/en/experience-manager-htl/using/htl/global-objects.html#java-backed-objects) 중 하나입니다. [getPage](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/day/cq/wcm/api/PageManager.html#getPage-java.lang.String-) 메서드는 경로를 가져와 AEM [Page](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/day/cq/wcm/api/Page.html) 개체를 반환하거나, 경로가 올바른 페이지를 가리키지 않으면 null을 반환합니다.
 
-   이렇게 하면 기본적으로 연결된 페이지에 대한 데이터를 반환하는 다른 새 메서드에서 사용할 `cardPage` 변수가 초기화됩니다.
+   이렇게 하면 `cardPage` 변수가 초기화됩니다. 이 변수는 기본적으로 연결된 페이지에 대한 데이터를 반환하기 위해 다른 새로운 방법으로 사용됩니다.
 
-6. 작성 대화 상자를 저장한 JCR 속성에 이미 매핑된 전역 변수를 검토합니다. `@ValueMapValue` 주석은 매핑을 자동으로 수행하는 데 사용됩니다.
+6. 작성자 대화 상자에 저장된 JCR 속성에 이미 매핑된 전역 변수를 검토하십시오. `@ValueMapValue` 주석은 매핑을 자동으로 수행하는 데 사용됩니다.
 
    ```java
    @ValueMapValue
@@ -355,16 +354,16 @@ AEM SPA Editor에서 사용할 기존 핵심 구성 요소를 확장하는 방�
 
    >[!NOTE]
    >
-   > [완료된 CardImpl.java는 ](https://github.com/adobe/aem-guides-wknd-spa/blob/React/extend-component-solution/core/src/main/java/com/adobe/aem/guides/wknd/spa/react/core/models/impl/CardImpl.java)에서 볼 수 있습니다.
+   > 여기서 [완성된 CardImpl.java를 볼 수 있습니다](https://github.com/adobe/aem-guides-wknd-spa/blob/React/extend-component-solution/core/src/main/java/com/adobe/aem/guides/wknd/spa/react/core/models/impl/CardImpl.java).
 
-8. 터미널 창을 열고 `core` 디렉토리에서 Maben `autoInstallBundle` 프로파일을 사용하여 `core` 모듈에 업데이트만 배포합니다.
+8. 터미널 창을 열고 `core` 디렉토리의 Maven `autoInstallBundle` 프로필을 사용하여 `core` 모듈에 대한 업데이트만 배포합니다.
 
    ```shell
    $ cd core/
    $ mvn clean install -PautoInstallBundle
    ```
 
-   [AEM 6.x](overview.md#compatibility)을 사용하는 경우 `classic` 프로필을 추가합니다.
+   [AEM 6.x](overview.md#compatibility)를 사용하는 경우 `classic` 프로필을 추가합니다.
 
 9. 다음 위치에서 JSON 모델 응답을 봅니다.[http://localhost:4502/content/wknd-spa-react/us/en.model.json](http://localhost:4502/content/wknd-spa-react/us/en.model.json) 및 `wknd-spa-react/components/card` 검색:
 
@@ -381,13 +380,13 @@ AEM SPA Editor에서 사용할 기존 핵심 구성 요소를 확장하는 방�
    }
    ```
 
-   JSON 모델은 `CardImpl` Sling 모델의 메서드를 업데이트한 후 추가 키/값 쌍으로 업데이트됩니다.
+   `CardImpl` Sling 모델에서 메서드를 업데이트하면 JSON 모델이 추가 키/값 쌍으로 업데이트됩니다.
 
-## 반응형 구성 요소 업데이트
+## React 구성 요소 업데이트
 
-이제 JSON 모델이 `ctaLinkURL`, `ctaText`, `cardTitle` 및 `cardLastModified`에 대한 새 속성으로 채워지므로 반응형 구성 요소를 업데이트하여 표시할 수 있습니다.
+이제 JSON 모델이 `ctaLinkURL`, `ctaText`, `cardTitle` 및 `cardLastModified`에 대한 새 속성으로 채워지므로 이러한 속성을 표시하도록 React 구성 요소를 업데이트할 수 있습니다.
 
-1. IDE로 돌아가서 `ui.frontend` 모듈을 엽니다. 원할 경우, 새 터미널 창에서 웹 팩 개발 서버를 시작하여 변경 사항을 실시간으로 확인합니다.
+1. IDE로 돌아가서 `ui.frontend` 모듈을 엽니다. 선택적으로 새 터미널 창에서 웹 팩 개발 서버를 시작하여 변경 사항을 실시간으로 확인합니다.
 
    ```shell
    $ cd ui.frontend
@@ -395,8 +394,8 @@ AEM SPA Editor에서 사용할 기존 핵심 구성 요소를 확장하는 방�
    $ npm start
    ```
 
-2. `ui.frontend/src/components/Card/Card.js`에서 `Card.js`을(를) 엽니다.
-3. 액션 호출을 렌더링하기 위해 `get ctaButton()` 메서드를 추가합니다.
+2. `ui.frontend/src/components/Card/Card.js`에서 `Card.js` 을 엽니다.
+3. 작업에 대한 호출을 렌더링하려면 메서드 `get ctaButton()`을 추가하십시오.
 
    ```js
    import {Link} from "react-router-dom";
@@ -422,7 +421,7 @@ AEM SPA Editor에서 사용할 기존 핵심 구성 요소를 확장하는 방�
    }
    ```
 
-4. `get lastModifiedDisplayDate()`의 메서드를 추가하여 `this.props.cardLastModified`을(를) 날짜를 나타내는 현지화된 문자열로 변환합니다.
+4. `get lastModifiedDisplayDate()` 메서드를 추가하여 `this.props.cardLastModified` 날짜를 나타내는 현지화된 문자열로 변환합니다.
 
    ```js
    export default class Card extends Component {
@@ -439,7 +438,7 @@ AEM SPA Editor에서 사용할 기존 핵심 구성 요소를 확장하는 방�
    }
    ```
 
-5. `get bodyContent()`을 업데이트하여 `this.props.cardTitle`을 표시하고 이전 단계에서 만든 메서드를 사용합니다.
+5. `get bodyContent()`을 업데이트하여 `this.props.cardTitle`을 표시하고 이전 단계에서 생성된 메서드를 사용합니다.
 
    ```js
    export default class Card extends Component {
@@ -458,7 +457,7 @@ AEM SPA Editor에서 사용할 기존 핵심 구성 요소를 확장하는 방�
    }
    ```
 
-6. 제목, 클릭유도문안 및 마지막으로 수정한 날짜를 스타일 지정하기 위해 이미 `Card.scss`에 sass 규칙이 추가되었습니다. 파일 맨 위의 `Card.js`에 다음 줄을 추가하여 이러한 스타일을 포함하십시오.
+6. 제목, 작업 호출 및 마지막 수정 날짜를 스타일을 지정하는 규칙이 이미 `Card.scss`에 추가되었습니다. 파일 맨 위의 `Card.js`에 다음 줄을 추가하여 이러한 스타일을 포함합니다.
 
    ```diff
      import {MapTo} from '@adobe/aem-react-editable-components';
@@ -470,25 +469,25 @@ AEM SPA Editor에서 사용할 기존 핵심 구성 요소를 확장하는 방�
 
    >[!NOTE]
    >
-   > 완성된 [반응형 카드 구성 요소 코드는 여기에서 볼 수 있습니다](https://github.com/adobe/aem-guides-wknd-spa/blob/React/extend-component-solution/ui.frontend/src/components/Card/Card.js).
+   > 완성된 [React 카드 구성 요소 코드를 여기](https://github.com/adobe/aem-guides-wknd-spa/blob/React/extend-component-solution/ui.frontend/src/components/Card/Card.js)에서 볼 수 있습니다.
 
-7. Maven을 사용하여 프로젝트의 루트에서 AEM에 전체 변경 사항을 배포합니다.
+7. Maven을 사용하여 프로젝트의 루트에서 AEM에 대한 전체 변경 사항을 배포합니다.
 
    ```shell
    $ cd aem-guides-wknd-spa
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-8. 업데이트된 구성 요소를 보려면 [http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html)로 이동합니다.
+8. [http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html)로 이동하여 업데이트된 구성 요소를 확인합니다.
 
    ![AEM에서 업데이트된 카드 구성 요소](assets/extend-component/updated-card-in-aem.png)
 
-9. 기존 컨텐츠를 다시 작성하여 다음과 유사한 페이지를 만들 수 있습니다.
+9. 다음과 유사한 페이지를 만들려면 기존 컨텐츠를 다시 작성합니다.
 
    ![카드 구성 요소의 최종 작성](assets/extend-component/final-authoring-card.png)
 
-## 축하합니다!{#congratulations}
+## 축하합니다! {#congratulations}
 
-축하합니다. JSON 모델에서 Sling 모델 및 대화 상자가 작동하는 방식과 함께 AEM 구성 요소를 확장하는 방법을 알아보았습니다.
+축하합니다. 를 사용하여 AEM 구성 요소를 확장하는 방법과 Sling 모델 및 대화 상자가 JSON 모델로 작동하는 방법을 알아보았습니다.
 
 항상 [GitHub](https://github.com/adobe/aem-guides-wknd-spa/tree/React/extend-component-solution)에서 완료된 코드를 보거나 분기 `React/extend-component-solution`로 전환하여 로컬로 코드를 체크 아웃할 수 있습니다.
