@@ -1,23 +1,22 @@
 ---
 title: 감사 인사 페이지에 제출
 seo-title: 감사 인사 페이지에 제출
-description: 적응형 양식 제출 시 감사 인사 페이지 표시
-seo-description: 적응형 양식 제출 시 감사 인사 페이지 표시
+description: 적응형 양식 제출 시 감사 인사 페이지를 표시합니다
+seo-description: 적응형 양식 제출 시 감사 인사 페이지를 표시합니다
 uuid: ec695b87-083a-47f6-92ac-c9a6dc2b85fb
-feature: Adaptive Forms
+feature: 적응형 양식
 topics: developing
 audience: implementer
 doc-type: article
 activity: setup
 version: 6.3,6.4,6.5
 discoiquuid: 58c6bf42-efe5-41a3-8023-d84f3675f689
-topic: Development
+topic: 개발
 role: Developer
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '278'
 ht-degree: 1%
 
 ---
@@ -25,25 +24,25 @@ ht-degree: 1%
 
 # 감사 인사 페이지 {#submitting-to-thank-you-page} 제출
 
-REST 종단점에 제출 옵션은 HTTP GET 요청의 일부로 양식에 입력된 데이터를 구성된 확인 페이지로 전달합니다. 요청할 필드의 이름을 추가할 수 있습니다. 요청의 형식은 다음과 같습니다.
+REST에 제출 끝점 옵션은 HTTP GET 요청의 일부로 양식에 입력된 데이터를 구성된 확인 페이지에 전달합니다. 요청할 필드의 이름을 추가할 수 있습니다. 요청 형식은 다음과 같습니다.
 
-\{fieldName\} = \{parameterName\}. 예를 들어 submitterName은 적응형 양식 필드의 이름이고 제출자는 매개 변수의 이름입니다. 감사 인사 페이지에서 request.getParameter(&quot;submitter&quot;)를 사용하여 제출자 이름 필드의 값을 저장할 수 있습니다.
+\{fieldName\} = \{parameterName\}. 예를 들어 submitterName은 적응형 양식 필드의 이름이고 submitter는 매개 변수의 이름입니다. 감사 인사 페이지에서 request.getParameter(&quot;submitter&quot;) 를 사용하여 제출자 매개 변수에 액세스하여 제출자 이름 필드의 값을 보유할 수 있습니다.
 
 submitterName=submitter
 
-아래 스크린샷에서는 /content/thanks/you에 있는 감사 인사 페이지에 적응형 양식을 제출합니다. 감사 인사 페이지에 양식 필드 값을 포함하는 3개의 요청 속성을 전달합니다.
+아래 스크린샷에서는 /content/thank에 있는 감사 인사 페이지에 적응형 양식을 제출합니다. 감사 인사 페이지에 양식 필드 값을 포함하는 3개의 요청 속성을 전달합니다.
 
-![thank](assets/thankyoupage.gif)
+![감사](assets/thankyoupage.gif)
 
-POST을 통해 외부 종단점에 제출할 수도 있습니다. 이를 수행하려면 &quot;게시물 요청 활성화&quot; 확인란을 선택하고 외부 끝점에 대한 URL을 제공해야 합니다. 양식을 제출하면 감사 인사 페이지가 표시되고 POST 끝점이 동시에 호출됩니다.
+POST을 통해 외부 종단점에 제출할 수도 있습니다. 이를 위해서는 &quot;post 요청 활성화&quot; 확인란을 선택하고 외부 엔드포인트에 대한 URL을 제공해야 합니다. 양식을 제출하면 감사 인사 페이지가 표시되고 POST 종단점이 동시에 호출됩니다.
 
-![capture](assets/capture.gif)
+![캡처](assets/capture.gif)
 
 
-서버에서 이 기능을 테스트하려면 아래 지침을 따르십시오.
+서버에서 이 기능을 테스트하려면 아래에 언급된 지침을 따르십시오.
 
-* 패키지 관리자](assets/submittingtorestendpoint.zip)를 사용하여 이 아티클과 연결된 [에셋 파일을 AEM으로 가져옵니다.
-* 브라우저를 [요청 해제 시간 양식](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)으로 가리킵니다.
-* 필요한 필드를 입력하고 양식을 제출합니다.
-* 페이지에 정보가 채워진 감사 페이지를 가져와야 합니다.
+* 패키지 관리자](assets/submittingtorestendpoint.zip)를 사용하여 이 문서와 연결된 [자산 파일을 AEM에 가져옵니다
+* 브라우저를 [요청 시간 해제 양식](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)에 보냅니다.
+* 필수 필드를 입력하고 양식을 제출합니다
+* 페이지에 정보가 채워져 감사 인사 페이지가 표시됩니다
 
