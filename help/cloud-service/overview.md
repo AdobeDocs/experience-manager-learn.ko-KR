@@ -1,20 +1,19 @@
 ---
 title: Adobe Experience Manager as Cloud Service 자습서
-description: Cloud Service으로 제공되는 Adobe Experience Manager(AEM)용 자습서 모음
-sub-product: 사이트, 클라우드 관리자, 파운데이션, 자산
+description: Adobe Experience Manager (AEM) as a Cloud Service을 위한 자습서 모음입니다
+sub-product: 사이트, cloud manager, foundation, assets
 kt: 3289
-translation-type: tm+mt
 source-git-commit: ce4a35f763862c6d6a42795fd5e79d9c59ff645a
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '275'
+ht-degree: 8%
 
 ---
 
 
 # 개요 {#overview}
 
-Adobe Experience Manager(AEM)는 이제 클라우드 서비스로 제공됩니다. AEM은 Cloud Service의 차세대 Experience Manager 제품군을 제공하며, 이전 투자와 혁신을 바탕으로 모든 사용 사례 및 기능을 보존 및 확장하여 제공합니다.
+Adobe Experience Manager(AEM)는 이제 클라우드 서비스로 제공됩니다. AEM as a Cloud Service은 모든 사용 사례 및 기능을 유지 및 확장하면서 과거의 투자 및 혁신을 바탕으로 구축된 차세대 Experience Manager 제품군을 도입합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/31085/?quality=12&learn=on)
 
@@ -22,38 +21,38 @@ Adobe Experience Manager(AEM)는 이제 클라우드 서비스로 제공됩니�
 
 * **[토큰 기반 인증(자습서)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)**
 
-   *HTTP를 통해 Cloud Service으로 AEM과 상호 작용하는 토큰 기반 인증을 사용하는 방법을 알아봅니다.*
+   *HTTP를 통해 토큰 기반 인증을 사용하여 AEM과 Cloud Service으로 상호 작용하는 방법을 알아봅니다*
 
 * **[헤드리스 GraphQL(자습서)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)**
 
-   *AEM GraphQL API를 사용하여 외부 애플리케이션에서 경험을 향상시키는 방법을 알아봅니다.*
+   *AEM GraphQL API를 사용하여 외부 애플리케이션에서 경험을 제공하는 방법을 알아봅니다.*
 
 * **[벌크 가져오기(비디오)](./migration/bulk-import.md)**
 
-   *Azure Blob 저장소 또는 Amazon S3에서 AEM으로 에셋을 일괄적으로 가져오는 방법을 알아봅니다.*
+   *Azure Blob 저장 공간 또는 Amazon S3에서 AEM으로 자산을 대량 가져오는 방법을 알아봅니다*
 
 * **[asset compute 메타데이터 작업자(자습서)](./asset-compute/advanced/metadata.md)**
 
-   *asset compute 작업자의 AEM에 에셋 메타데이터를 다시 쓰는 방법 살펴보기*
+   *asset compute 작업자로부터 자산 메타데이터를 AEM에 다시 쓰는 방법을 알아봅니다*
 
-* **[asset compute 마이크로서비스 확장성(자습서)](./asset-compute/overview.md)**
+* **[asset compute 마이크로 서비스 확장성(튜토리얼)](./asset-compute/overview.md)**
 
-   *사용자 정의 에셋 표현물을 생성하기 위해 Asset compute 작업자를 개발하는 방법에 대해 알아봅니다.*
+   *asset compute 작업자를 개발하여 사용자 정의 자산 표현물을 생성하는 방법을 알아봅니다*
 
-## 직원 선택
+## 직원 추천
 
 <table>
    <td>
       <a href="./accessing/overview.md">
-      <img alt="AEM에 대한 액세스를 Cloud Service으로 구성" src="./assets/overview/staff-pick__accessing.png"/>
+      <img alt="AEM as a Cloud Service 액세스 구성" src="./assets/overview/staff-pick__accessing.png"/>
       </a>
       <div>
          <a href="./accessing/overview.md">
-         <strong>AEM 자습서에 대한 액세스 권한 구성</strong>
+         <strong>AEM 액세스 자습서 구성</strong>
          </a>
       </div>
       <p>
-         <em>Adobe Admin Console에서 AEM에 액세스할 수 있도록 IMS 사용자를 구성합니다.</em>
+         <em>AEM에 액세스할 수 있도록 Adobe Admin Console에서 IMS 사용자를 구성합니다.</em>
       <p>
    </td>   
    <td>
@@ -66,7 +65,7 @@ Adobe Experience Manager(AEM)는 이제 클라우드 서비스로 제공됩니�
          </a>
       </div>
       <p>
-         <em>Cloud Service 개발으로서 AEM용으로 로컬 개발 시스템을 준비할 수 있습니다.</em>
+         <em>로컬 개발 시스템을 AEM as a Cloud Service 개발용으로 준비하십시오!</em>
       <p>
    </td>   
    <td>
@@ -79,7 +78,7 @@ Adobe Experience Manager(AEM)는 이제 클라우드 서비스로 제공됩니�
          </a>
       </div>
       <p>
-         <em>Cloud Service SDK의 로컬 quickstart로 AEM에서 애플리케이션을 디버깅하는 데 사용되는 툴을 살펴봅니다.</em>
+         <em>AEM에서 Cloud Service SDK의 로컬 빠른 시작으로서 애플리케이션을 디버깅하는 데 사용되는 도구를 탐색합니다.</em>
       <p>
    </td>
 </table>
@@ -87,4 +86,4 @@ Adobe Experience Manager(AEM)는 이제 클라우드 서비스로 제공됩니�
 ## 추가 리소스
 
 * [Experience League - Adobe Experience Manager 살펴보기](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
-* [Adobe Experience Manager을 Cloud Service 문서로 사용](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html)
+* [Adobe Experience Manager as a Cloud Service 설명서](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html)
