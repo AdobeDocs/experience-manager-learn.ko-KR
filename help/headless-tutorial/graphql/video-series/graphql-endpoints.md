@@ -9,9 +9,9 @@ role: Developer
 level: Beginner
 kt: 7875
 thumbnail: 333339.jpg
-source-git-commit: 73c75f8dac85615f4ed2dfdcc2ee4d0e9e5d161a
+source-git-commit: bfca379bf2722dc1658400f375e65d2943f27ed7
 workflow-type: tm+mt
-source-wordcount: '64'
+source-wordcount: '65'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # GraphQL 끝점
 
-GraphQL 종단점을 활성화하고 실행하며 보안 GraphQL 종단점을 게시하는 방법을 알아봅니다.
+GraphQL 종단점에 대해 쿼리를 활성화, 실행, 게시 및 보호하는 방법을 알아봅니다.
 
 이 비디오에서는 다음 작업을 수행합니다.
 
