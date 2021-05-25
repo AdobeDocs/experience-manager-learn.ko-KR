@@ -10,9 +10,9 @@ topics: content-delivery
 activity: develop, understand
 kt: 2963
 index: y
-source-git-commit: 73c75f8dac85615f4ed2dfdcc2ee4d0e9e5d161a
+source-git-commit: bfca379bf2722dc1658400f375e65d2943f27ed7
 workflow-type: tm+mt
-source-wordcount: '144'
+source-wordcount: '147'
 ht-degree: 23%
 
 ---
@@ -27,9 +27,10 @@ ht-degree: 23%
       + [1 - 모델링 기본 사항](./graphql/video-series/modeling-basics.md)
       + [2 - 고급 모델링](./graphql/video-series/advanced-modeling.md)
       + [3 - GraphQL 쿼리 만들기](./graphql/video-series/creating-graphql-queries.md)
-      + [4 - 작성자 및 게시 아키텍처](./graphql/video-series/author-publish-architecture.md)
-      + [5 - 컨텐츠 조각 변형](./graphql/video-series/content-fragment-variations.md)
-      + [6 - GraphQL 끝점](./graphql/video-series/graphql-endpoints.md)
+      + [4 - GraphQL 지속적인 쿼리](./graphql/video-series/graphql-persisted-queries.md)
+      + [5 - 작성자 및 게시 아키텍처](./graphql/video-series/author-publish-architecture.md)
+      + [6 - 컨텐츠 조각 변형](./graphql/video-series/content-fragment-variations.md)
+      + [7 - GraphQL 끝점](./graphql/video-series/graphql-endpoints.md)
    + 여러 단계 자습서{#multi-step}
       + [개요](./graphql/multi-step/overview.md)
       + [1 - 빠른 설정](./graphql/multi-step/setup.md)
