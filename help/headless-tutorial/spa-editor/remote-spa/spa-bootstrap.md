@@ -7,7 +7,7 @@ role: Developer, Architect
 level: Beginner
 kt: 7633
 thumbnail: kt-7633.jpeg
-source-git-commit: 0eb086242ecaafa53c59c2018f178e15f98dd76f
+source-git-commit: 5dea9cf646762c0f4aff43d9e48a35ab6ebc0af8
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 1%
@@ -277,7 +277,7 @@ AEM 응답형 그리드 SCSS 파일을 SPA에 추가합니다.
 1. 다음 두 파일을 다운로드하여 `src/styles`에 복사합니다.
    + [_grid.scss](./assets/spa-bootstrap/_grid.scss)
       + AEM 응답형 그리드 SCSS 생성기
-   + [_grid-init.scss](./assets/spa-bootstrap/_grid.scss)
+   + [_grid-init.scss](./assets/spa-bootstrap/_grid-init.scss)
       + SPA 특정 중단점(데스크톱 및 모바일)과 열(12)을 사용하여 `_grid.scss`을 호출합니다.
 1. `src/App.scss` 을 열고 `./styles/grid-init.scss` 가져오기
 
