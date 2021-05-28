@@ -10,10 +10,10 @@ topics: content-delivery
 activity: develop, understand
 kt: 2963
 index: y
-source-git-commit: 24d70ebaa6a63cfd4a73f43188f25b375dc702ec
+source-git-commit: bf9ab30f57faa23721d7d27b837d8e0f0e8cf4f1
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 21%
+source-wordcount: '182'
+ht-degree: 19%
 
 ---
 
@@ -49,6 +49,14 @@ ht-degree: 21%
       + [4 - 탐색 및 라우팅](./spa-editor/react/navigation-routing.md)
       + [5 - 사용자 지정 구성 요소](./spa-editor/react/custom-component.md)
       + [6 - 구성 요소 확장](./spa-editor/react/extend-component.md)
+   + Angular{#angular}
+      + [개요](./spa-editor/angular/overview.md)
+      + [1 - SPA 편집기 프로젝트](./spa-editor/angular/create-project.md)
+      + [2 - SPA 통합](./spa-editor/angular/integrate-spa.md)
+      + [3 - SPA 구성 요소 매핑](./spa-editor/angular/map-components.md)
+      + [4 - 탐색 및 라우팅](./spa-editor/angular/navigation-routing.md)
+      + [5 - 사용자 지정 구성 요소](./spa-editor/angular/custom-component.md)
+      + [6 - 구성 요소 확장](./spa-editor/angular/extend-component.md)
    + 원격 SPA{#remote-spa}
       + [개요](./spa-editor/remote-spa/overview.md)
       + [빠른 설정](./spa-editor/remote-spa/quick-setup.md)
