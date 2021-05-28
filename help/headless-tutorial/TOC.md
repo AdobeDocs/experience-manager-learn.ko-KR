@@ -10,10 +10,10 @@ topics: content-delivery
 activity: develop, understand
 kt: 2963
 index: y
-source-git-commit: 2b2c45e5ceb6f1121ff5b9befa0c79226e4e2efb
+source-git-commit: 24d70ebaa6a63cfd4a73f43188f25b375dc702ec
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 23%
+source-wordcount: '164'
+ht-degree: 21%
 
 ---
 
@@ -41,6 +41,14 @@ ht-degree: 23%
       + [6 - 조각 참조를 사용한 고급 데이터 모델링](./graphql/multi-step/fragment-references.md)
       + [7 - 프로덕션 배포](./graphql/multi-step/production-deployment.md)
 + SPA 편집기{#spa-editor}
+   + React{#react}
+      + [개요](./spa-editor/react/overview.md)
+      + [1 - 프로젝트 만들기](./spa-editor/react/create-project.md)
+      + [2 - SPA 통합](./spa-editor/react/integrate-spa.md)
+      + [3 - SPA 구성 요소 매핑](./spa-editor/react/map-components.md)
+      + [4 - 탐색 및 라우팅](./spa-editor/react/navigation-routing.md)
+      + [5 - 사용자 지정 구성 요소](./spa-editor/react/custom-component.md)
+      + [6 - 구성 요소 확장](./spa-editor/react/extend-component.md)
    + 원격 SPA{#remote-spa}
       + [개요](./spa-editor/remote-spa/overview.md)
       + [빠른 설정](./spa-editor/remote-spa/quick-setup.md)
