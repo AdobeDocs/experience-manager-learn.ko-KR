@@ -12,15 +12,17 @@ thumbnail: 330460.jpg
 topic: 헤드리스, 통합
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 22829f532f7791af14919af24650b4593fe89ae8
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '647'
 ht-degree: 0%
 
 ---
 
 
 # AEM as a Cloud Service에 대한 토큰 기반 인증
+
+AEM은 GraphQL, AEM Content Services에서 Assets HTTP API에 헤드리스 방식으로 상호 작용할 수 있는 다양한 HTTP 엔드포인트를 제공합니다. 종종 이러한 헤드리스 소비자는 보호된 컨텐츠 또는 작업에 액세스하려면 AEM을 인증해야 할 수 있습니다. 이를 위해 AEM에서는 외부 애플리케이션, 서비스 또는 시스템에서 HTTP 요청에 대한 토큰 기반 인증을 지원합니다.
 
 이 자습서에서는 액세스 토큰을 사용하여 외부 애플리케이션이 HTTP를 통해 AEM을 Cloud Service으로 프로그래밍 방식으로 인증하고 상호 작용하는 방법을 살펴봅니다.
 
