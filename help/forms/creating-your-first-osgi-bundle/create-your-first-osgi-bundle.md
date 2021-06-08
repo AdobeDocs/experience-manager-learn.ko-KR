@@ -6,7 +6,7 @@ feature: 적응형 양식
 topic: 개발
 role: Developer
 level: Beginner
-source-git-commit: c74c6f5627e69e32bbf0098d6b6bab122cace798
+source-git-commit: 22437e93cbf8f36d723dc573fa327562cb51b562
 workflow-type: tm+mt
 source-wordcount: '833'
 ht-degree: 2%
@@ -115,7 +115,9 @@ Enter 키를 눌러 다른 속성에 대한 기본값을 사용합니다.
 
 ## 프로젝트 빌드
 
+
 OSGi 서비스 또는 서블릿을 작성했으면 Felix 웹 콘솔을 사용하여 배포할 수 있는 OSGi 번들을 생성하기 위해 프로젝트를 빌드해야 합니다. Maven 프로젝트에 적절한 클라이언트 SDK를 포함하려면 [AEMFD 클라이언트 SDK](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/)를 참조하십시오. 아래 표시된 대로 핵심 프로젝트의 `pom.xml` 종속성 섹션에 AEM FD Client SDK를 포함해야 합니다.
+
 
 ```xml
 <dependency>
