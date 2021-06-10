@@ -6,9 +6,9 @@ feature: 적응형 양식
 topic: 개발
 role: Developer
 level: Beginner
-source-git-commit: 22437e93cbf8f36d723dc573fa327562cb51b562
+source-git-commit: e82cc5e5de6db33e82b7c71c73bb606f16b98ea6
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '843'
 ht-degree: 2%
 
 ---
@@ -116,7 +116,12 @@ Enter 키를 눌러 다른 속성에 대한 기본값을 사용합니다.
 ## 프로젝트 빌드
 
 
-OSGi 서비스 또는 서블릿을 작성했으면 Felix 웹 콘솔을 사용하여 배포할 수 있는 OSGi 번들을 생성하기 위해 프로젝트를 빌드해야 합니다. Maven 프로젝트에 적절한 클라이언트 SDK를 포함하려면 [AEMFD 클라이언트 SDK](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/)를 참조하십시오. 아래 표시된 대로 핵심 프로젝트의 `pom.xml` 종속성 섹션에 AEM FD Client SDK를 포함해야 합니다.
+
+
+OSGi 서비스 또는 서블릿을 작성했으면 Felix 웹 콘솔을 사용하여 배포할 수 있는 OSGi 번들을 생성하기 위해 프로젝트를 빌드해야 합니다. Maven 프로젝트에 적절한 클라이언트 SDK를 포함하려면 [AEMFD 클라이언트 SDK](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aemfd/aemfd-client-sdk-)를 참조하십시오. 아래 표시된 대로 핵심 프로젝트의 `pom.xml` 종속성 섹션에 AEM FD Client SDK를 포함해야 합니다.
+
+
+
 
 
 ```xml
@@ -131,5 +136,6 @@ OSGi 서비스 또는 서블릿을 작성했으면 Felix 웹 콘솔을 사용하
 
 * **명령 프롬프트 창**&#x200B;을 엽니다.
 * 다음으로 이동 `c:\aemformsbundles\learningaemforms\core`
-* `mvn clean install` 명령을 실행합니다.
-모든 것이 제대로 작동하면 다음 위치 `C:\AEMFormsBundles\learningaemforms\core\target`에 번들이 표시됩니다. 이제 Felix 웹 콘솔을 사용하여 AEM에 이 번들을 배포할 준비가 되었습니다.
+* `mvn clean install -PautoInstallBundle` 명령을 실행합니다.
+위의 명령은 `http://localhost:4502`에서 실행되는 AEM 서버에 번들을 빌드하고 설치합니다. 이 번들은 의 파일 시스템에서도 사용할 수 있습니다
+   `C:\AEMFormsBundles\learningaemforms\core\target` Felix 웹 콘솔을 사용하여 배포할  [수 있습니다.](http://localhost:4502/system/console/bundles)
