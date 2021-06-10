@@ -7,9 +7,9 @@ feature: 경험 구성요소
 topic: 개인화
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: e82cc5e5de6db33e82b7c71c73bb606f16b98ea6
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '700'
 ht-degree: 4%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 4%
 이 섹션에서는 다양한 시나리오에 대해 Adobe Target과 함께 Adobe Experience Manager을 설정하는 방법에 대해 설명합니다. 시나리오 및 조직 요구 사항을 기반으로 합니다.
 
 * **Adobe Target JavaScript 라이브러리 추가(모든 시나리오에 필요)**
- AEM에서 호스팅되는 사이트의 경우  [Launch](https://docs.adobe.com/content/help/en/launch/using/overview.html)를 사용하여 Target 라이브러리를 사이트에 추가할 수 있습니다. Launch는 관련 고객 환경을 향상하는 데 필요한 모든 태그를 배포하고 관리하는 간단한 방법을 제공합니다.
+ AEM에서 호스팅되는 사이트의 경우  [Launch](https://experienceleague.adobe.com/docs/launch/using/home.html)를 사용하여 Target 라이브러리를 사이트에 추가할 수 있습니다. Launch는 관련 고객 환경을 향상하는 데 필요한 모든 태그를 배포하고 관리하는 간단한 방법을 제공합니다.
 * **Adobe Target Cloud Services 추가 (경험 조각 시나리오에 필요)**
  경험 조각 오퍼를 사용하여 Adobe Target 내에서 활동을 만들려는 AEM 고객의 경우 기존 Cloud Services을 사용하여 Adobe Target을 AEM과 통합해야 합니다. AEM에서 HTML/JSON 오퍼로 Target에 경험 구성요소를 푸시하고 오퍼를 AEM과 계속 동기화하는 데 이 통합이 필요합니다. 
 *이 통합은 시나리오 1을 구현하는 데 필요합니다.*
