@@ -5,9 +5,9 @@ user-guide-title: AEM Forms 비디오 및 튜토리얼
 user-guide-description: 초보자 및 숙련된 AEM Forms 개발자를 위한 AEM Forms 리소스 모음입니다.
 breadcrumb-title: AEM Forms 튜토리얼
 index: y
-source-git-commit: 22437e93cbf8f36d723dc573fa327562cb51b562
+source-git-commit: e82cc5e5de6db33e82b7c71c73bb606f16b98ea6
 workflow-type: tm+mt
-source-wordcount: '970'
+source-wordcount: '973'
 ht-degree: 6%
 
 ---
@@ -101,7 +101,7 @@ ht-degree: 6%
 + 양식 첨부 파일 지핑{#zipping-form-attachments}
    + [소개](zipping-form-attachments/introduction.md)
    + [사용자 지정 프로세스](zipping-form-attachments/custom-process-step.md)
-
+   + [솔루션 테스트](zipping-form-attachments/test.md)
 + 적응형 양식 저장 및 검색{#store-and-retrieve-af-with-2fa}
    + [소개](store-and-retrieve-af-with-2fa/introduction.md)
    + [데이터 소스 구성](store-and-retrieve-af-with-2fa/configure-data-source.md)
