@@ -7,9 +7,9 @@ role: Developer, Architect
 level: Beginner
 kt: 7633
 thumbnail: kt-7633.jpeg
-source-git-commit: 5dea9cf646762c0f4aff43d9e48a35ab6ebc0af8
+source-git-commit: 76b10941ca8aeb5aa15ca39d354d9f7e7fb24522
 workflow-type: tm+mt
-source-wordcount: '1192'
+source-wordcount: '1227'
 ht-degree: 1%
 
 ---
@@ -18,6 +18,18 @@ ht-degree: 1%
 # Remote SPA for SPA 편집기 Bootstrap
 
 편집 가능한 영역을 Remote SPA에 추가하려면 먼저 AEM SPA Editor JavaScript SDK 및 기타 몇 가지 구성으로 부트스트해야 합니다.
+
+
+## WKND 앱 소스 다운로드
+
+아직 수행하지 않았다면 Github.com에서 WKND 앱의 소스 코드를 다운로드하여 이 자습서에서 수행한 SPA의 변경 사항이 포함된 분기를 전환합니다.
+
+```
+$ mkdir -p ~/Code/wknd-app
+$ cd ~/Code/wknd-app
+$ git clone --branch feature/spa-editor https://github.com/adobe/aem-guides-wknd-graphql.git
+$ cd aem-guides-wknd-graphql
+```
 
 ## AEM SPA Editor JS SDK npm 종속성 추가
 
