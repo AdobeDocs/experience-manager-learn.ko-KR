@@ -9,9 +9,9 @@ role: Developer
 level: Beginner
 kt: 7872
 thumbnail: 333429.jpeg
-source-git-commit: bfca379bf2722dc1658400f375e65d2943f27ed7
+source-git-commit: 1853960cce1e17ade43e4b2d7b521f63c4d04d71
 workflow-type: tm+mt
-source-wordcount: '67'
+source-wordcount: '78'
 ht-degree: 0%
 
 ---
@@ -28,3 +28,5 @@ AEM에서 지속되는 쿼리를 활성화, 업데이트 및 실행하는 방법
 + 장단점 및 단점 서버측 쿼리와 클라이언트측 쿼리 이해
 
 >[!VIDEO](https://video.tv.adobe.com/v/333429/?quality=12&learn=on)
+
+_AEM  [Headless ](./assets/aem-headless-video-series.postman_collection.json) 비디오 시리즈 전체에서 사용되는 Postman Collection을 다운로드합니다._
