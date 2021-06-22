@@ -10,7 +10,7 @@ role: Developer
 level: Beginner
 kt: 4083
 thumbnail: 30359.jpg
-source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
+source-git-commit: 32320905786682a852baf7d777cb06de0072c439
 workflow-type: tm+mt
 source-wordcount: '3299'
 ht-degree: 1%
@@ -130,7 +130,8 @@ ht-degree: 1%
 
    `main.scss` 는 모듈에 있는 모든 Sass 파일의 시작  `ui.frontend` 지점입니다. 여기에는 프로젝트의 다른 Sass 파일에서 사용할 일련의 브랜드 변수가 포함된 `_variables.scss` 파일이 포함됩니다. `_base.scss` 파일도 포함되어 있으며 HTML 요소에 대한 몇 가지 기본 스타일을 정의합니다. 정규 표현식은 `src/main/webpack/components` 아래에 있는 개별 구성 요소 스타일에 대한 모든 스타일을 포함합니다. 다른 정규식은 `src/main/webpack/site/styles` 아래의 모든 파일을 포함합니다.
 
-1. Inspect: `main.ts` 파일 `main.ts` 포함  `main.scss` 및 은 프로젝트에서 또는  `.js` 파일을  `.ts` 수집하기 위한 정규 표현식을 포함합니다. 이 시작 지점은 [웹 팩 구성 파일](https://webpack.js.org/configuration/)에서 전체 `ui.frontend` 모듈의 시작 지점으로 사용됩니다.
+1. 
+   1. Inspect: `main.ts` 파일 이 파일에는 프로젝트의 `.js` 또는 `.ts` 파일을 수집하기 위한 `main.scss` 및 정규 표현식이 포함되어 있습니다. 이 시작 지점은 [웹 팩 구성 파일](https://webpack.js.org/configuration/)에서 전체 `ui.frontend` 모듈의 시작 지점으로 사용됩니다.
 
 1. Inspect `src/main/webpack/site/styles` 아래의 파일:
 
@@ -201,7 +202,7 @@ AEM 프로젝트 원형 은 이 통합을 자동으로 설정합니다. 이제 �
    >
    >또한 JS 및 CSS를 축소하는 `npm run prod` 프로필이 있습니다. Maven을 통해 웹 팩 빌드가 트리거될 때마다 적용되는 표준 컴파일입니다. [ui.frontend 모듈에 대한 자세한 내용은 여기](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend.html)에서 확인할 수 있습니다.
 
-1. Inspect `ui.frontend/dist/clientlib-site/css/site.css` 아래의 `site.css` 파일을 작성합니다. 이것은 Sass 소스 파일을 기반으로 컴파일된 CSS입니다.
+1. Inspect `ui.frontend/dist/clientlib-site/site.css` 아래의 `site.css` 파일을 작성합니다. 이것은 Sass 소스 파일을 기반으로 컴파일된 CSS입니다.
 
    ![분산 사이트 CSS](assets/client-side-libraries/ui-frontend-dist-site-css.png)
 
