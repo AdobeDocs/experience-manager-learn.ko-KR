@@ -9,9 +9,9 @@ role: Developer
 level: Beginner
 kt: 7875
 thumbnail: 333339.jpg
-source-git-commit: bfca379bf2722dc1658400f375e65d2943f27ed7
+source-git-commit: 1853960cce1e17ade43e4b2d7b521f63c4d04d71
 workflow-type: tm+mt
-source-wordcount: '65'
+source-wordcount: '76'
 ht-degree: 0%
 
 ---
@@ -28,3 +28,5 @@ GraphQL 종단점에 대해 쿼리를 활성화, 실행, 게시 및 보호하는
 + GraphQL 엔드포인트를 게시하고 보호하는 방법을 이해합니다
 
 >[!VIDEO](https://video.tv.adobe.com/v/333339/?quality=12&learn=on)
+
+_AEM  [Headless ](./assets/aem-headless-video-series.postman_collection.json) 비디오 시리즈 전체에서 사용되는 Postman Collection을 다운로드합니다._
