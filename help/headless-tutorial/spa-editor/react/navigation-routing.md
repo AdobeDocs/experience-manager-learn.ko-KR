@@ -12,7 +12,7 @@ thumbnail: 4988-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: 24d70ebaa6a63cfd4a73f43188f25b375dc702ec
+source-git-commit: 32320905786682a852baf7d777cb06de0072c439
 workflow-type: tm+mt
 source-wordcount: '1625'
 ht-degree: 0%
@@ -54,7 +54,7 @@ SPA Editor SDK를 사용하여 AEM 페이지에 매핑하여 SPA에서 여러 �
 
    **허용된 구성 요소** > **일반** 아래에서 **레이아웃 컨테이너** 구성 요소를 선택합니다.
 
-   **허용된 구성 요소** > **WKND SPA REACT - STRUCTURE** 아래에서 **헤더** 구성 요소를 선택합니다.
+   **허용된 구성 요소** > **WKND SPA REACT - STRUCTURE** 아래에서 **탐색** 구성 요소를 선택합니다.
 
    ![탐색 구성 요소 선택](assets/navigation-routing/select-navigation-component.png)
 
