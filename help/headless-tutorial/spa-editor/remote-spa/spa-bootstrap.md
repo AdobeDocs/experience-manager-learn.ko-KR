@@ -7,9 +7,9 @@ role: Developer, Architect
 level: Beginner
 kt: 7633
 thumbnail: kt-7633.jpeg
-source-git-commit: 76b10941ca8aeb5aa15ca39d354d9f7e7fb24522
+source-git-commit: aa4fb5afc2d30bb499493b93c51940ea6db56e41
 workflow-type: tm+mt
-source-wordcount: '1227'
+source-wordcount: '1226'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 ## WKND 앱 소스 다운로드
 
-아직 수행하지 않았다면 Github.com에서 WKND 앱의 소스 코드를 다운로드하여 이 자습서에서 수행한 SPA의 변경 사항이 포함된 분기를 전환합니다.
+아직 수행하지 않았다면 Github.com에서 WKND 앱의 소스 코드를 다운로드하고 이 자습서에서 수행한 SPA의 변경 사항이 포함된 분기를 전환합니다.
 
 ```
 $ mkdir -p ~/Code/wknd-app
