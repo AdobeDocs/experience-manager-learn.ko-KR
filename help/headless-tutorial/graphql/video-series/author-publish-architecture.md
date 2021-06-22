@@ -9,9 +9,9 @@ role: Developer
 level: Beginner
 kt: 7873
 thumbnail: 333296.jpg
-source-git-commit: e4abfe07f1b4e67f973f39186aafc33715592b2f
+source-git-commit: 1853960cce1e17ade43e4b2d7b521f63c4d04d71
 workflow-type: tm+mt
-source-wordcount: '93'
+source-wordcount: '104'
 ht-degree: 0%
 
 ---
@@ -28,3 +28,5 @@ AEM GraphQL API를 사용할 때 AEM 작성자 및 게시 환경을 활용하는
 + 작성자 환경을 응용 프로그램의 미리 보기로 사용하는 방법을 알아봅니다
 
 >[!VIDEO](https://video.tv.adobe.com/v/333296/?quality=12&learn=on)
+
+_AEM  [Headless ](./assets/aem-headless-video-series.postman_collection.json) 비디오 시리즈 전체에서 사용되는 Postman Collection을 다운로드합니다._
