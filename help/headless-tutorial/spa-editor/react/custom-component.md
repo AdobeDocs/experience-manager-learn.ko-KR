@@ -11,7 +11,7 @@ thumbnail: 5878-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: 24d70ebaa6a63cfd4a73f43188f25b375dc702ec
+source-git-commit: 32320905786682a852baf7d777cb06de0072c439
 workflow-type: tm+mt
 source-wordcount: '1230'
 ht-degree: 1%
@@ -155,7 +155,7 @@ SPA Editor 컨텍스트에서 Sling Models는 [Sling Model Exporter](https://exp
 
 1. 선택한 IDE에서 `aem-guides-wknd-spa.react/core`에 있는 `core` 모듈을 엽니다.
 1. `core/src/main/java/com/adobe/aem/guides/wkndspa/react/core/models`에서 `OpenWeatherModel.java`에 이름이 지정된 파일을 만듭니다.
-1. `OpenWeather.java` 을 다음과 같이 채웁니다.
+1. `OpenWeatherModel.java` 을 다음과 같이 채웁니다.
 
    ```java
    package com.adobe.aem.guides.wkndspa.react.core.models;
