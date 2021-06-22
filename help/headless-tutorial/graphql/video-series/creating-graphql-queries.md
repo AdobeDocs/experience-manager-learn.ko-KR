@@ -9,9 +9,9 @@ role: Developer
 level: Beginner
 kt: 7621
 thumbnail: 332860.jpg
-source-git-commit: e4abfe07f1b4e67f973f39186aafc33715592b2f
+source-git-commit: 1853960cce1e17ade43e4b2d7b521f63c4d04d71
 workflow-type: tm+mt
-source-wordcount: '114'
+source-wordcount: '125'
 ht-degree: 0%
 
 ---
@@ -29,3 +29,5 @@ GraphQL 쿼리를 만들어 AEM(Adobe Experience Manager)에서 콘텐츠를 반
 + GraphiQL 도구를 설치하고 사용하는 방법을 알아봅니다
 
 >[!VIDEO](https://video.tv.adobe.com/v/332860/?quality=12&learn=on)
+
+_AEM  [Headless ](./assets/aem-headless-video-series.postman_collection.json) 비디오 시리즈 전체에서 사용되는 Postman Collection을 다운로드합니다._
