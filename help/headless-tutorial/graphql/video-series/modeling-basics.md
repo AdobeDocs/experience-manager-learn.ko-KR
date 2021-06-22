@@ -9,9 +9,9 @@ role: Developer
 level: Beginner
 kt: 7619
 thumbnail: 332858.jpg
-source-git-commit: e4abfe07f1b4e67f973f39186aafc33715592b2f
+source-git-commit: 1853960cce1e17ade43e4b2d7b521f63c4d04d71
 workflow-type: tm+mt
-source-wordcount: '89'
+source-wordcount: '100'
 ht-degree: 0%
 
 ---
@@ -28,3 +28,5 @@ GraphQL에서 사용할 수 있도록 Adobe Experience Manager(AEM)에서 컨텐
 + 컨텐츠 조각 모델이 GraphQL API를 구동하는 방법을 이해합니다
 
 >[!VIDEO](https://video.tv.adobe.com/v/332858/?quality=12&learn=on)
+
+_AEM  [Headless ](./assets/aem-headless-video-series.postman_collection.json) 비디오 시리즈 전체에서 사용되는 Postman Collection을 다운로드합니다._
