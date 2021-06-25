@@ -2,17 +2,13 @@
 title: MySQL 데이터베이스에서 양식 데이터 저장 및 검색
 description: 양식 데이터를 저장하고 검색하는 단계를 단계별로 안내하는 다중 부분 자습서입니다
 feature: 적응형 양식
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
-version: 6.3,6.4,6.5
 topic: 개발
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+version: 6.3,6.4,6.5
+source-git-commit: 3569d8b2a38d1cce02f6f4ff8b0c583f4dc118b6
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '280'
 ht-degree: 5%
 
 ---
@@ -39,11 +35,10 @@ AEM Forms 인스턴스에서 이 기능을 테스트하려면 다음 단계를 �
 * [configMgr에 로그인합니다.](http://localhost:4502/system/console/configMgr) &quot;Apache Sling 연결의 풀링된 데이터 소스를 검색합니다. 다음 속성을 사용하여 **SaveAndContinue**&#x200B;라는 새 Apache Sling 연결 풀링된 데이터 소스 항목을 만듭니다.
 
 | 속성 이름 | 값 |
-------------------------|---------------------------------------
+| ------------------------|---------------------------------------|
 | 데이터 소스 이름 | SaveAndContinue |
 | JDBC 드라이버 클래스 | com.mysql.cj.jdbc.Driver |
 | JDBC 연결 uri | jdbc:mysql://localhost:3306/aemformstutorial |
-
 
 * [적응형 양식](http://localhost:4502/content/dam/formsanddocuments/demostoreandretrieveformdata/jcr:content?wcmmode=disabled)을 엽니다.
 * 자세한 내용을 입력하고 &quot;나중에 저장 및 계속&quot; 단추를 클릭합니다.
