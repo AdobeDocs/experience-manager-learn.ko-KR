@@ -5,7 +5,7 @@ feature: Dispatcher
 topic: 아키텍처
 role: Architect
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 67e55e92cf95e03388ab3de49eff5a80786fb3a7
 workflow-type: tm+mt
 source-wordcount: '17487'
 ht-degree: 0%
@@ -684,8 +684,10 @@ _에_&#x200B;이 있어야 한다고 생각하겠지만 그렇지 않습니다.�
 
 실제로 Dispatcher에 무효화하도록 하는 경로는 동일한 &quot;하위 트리&quot;에 있는 한 중요하지 않습니다. 실제 리소스 경로를 사용하지 않아도 됩니다. &quot;가상&quot;일 수도 있습니다.
 
-`GET /dispatcher-invalidate
-Invalidate-path /content/mysite/dummy`
+```
+GET /dispatcher-invalidate
+Invalidate-path /content/mysite/dummy
+```
 
 ![](assets/chapter-1/resource-path.png)
 
@@ -908,8 +910,10 @@ responsive2 구성 요소는 응답형 이미지를 표시하는 구성 요소�
 
 선택기를 줄이는 것이 좋은 시작이었다. 경험상 항상 유효한 매개 변수의 수를 절대 최소로 제한해야 합니다. 이러한 경우 기본 AEM 시스템에 대한 깊은 지식이 없는 정적 필터 세트를 사용하여 AEM 외부의 웹 애플리케이션 방화벽을 활용하여 시스템을 보호할 수 있습니다.
 
-`Allow: /content/dam/(-\_/a-z0-9)+/(-\_a-z0-9)+
-\.respi\.q-(20|40|60|80|100)\.jpg`
+```
+Allow: /content/dam/(-\_/a-z0-9)+/(-\_a-z0-9)+
+       \.respi\.q-(20|40|60|80|100)\.jpg
+```
 
 웹 애플리케이션 방화벽이 없는 경우 Dispatcher 또는 AEM 자체에서 필터링해야 합니다. AEM에서 하는 경우 다음을 확인하십시오
 
