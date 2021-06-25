@@ -10,7 +10,7 @@ version: 6.4,6.5
 topic: 개발
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 3a9778c97d57e55e3da740b492472456768fb32c
 workflow-type: tm+mt
 source-wordcount: '833'
 ht-degree: 2%
@@ -77,7 +77,7 @@ Archetype은 Maven 프로젝트 템플릿 툴킷입니다. 원형은 같은 종�
 maven 프로젝트가 대화식으로 생성되며 다음과 같은 여러 속성에 값을 제공하라는 메시지가 표시됩니다
 
 | 속성 이름 | 유의 | 값 |
-------------------------|---------------------------------------|---------------------
+|------------------------|---------------------------------------|---------------------|
 | groupId | groupId는 모든 프로젝트에서 프로젝트를 고유하게 식별합니다 | com.learningaemforms.adobe |
 | appsFolderName | 프로젝트 구조를 유지할 폴더의 이름입니다 | 학습 양식 |
 | artifactId | artifactId는 버전이 없는 jar의 이름입니다. 생성한 경우 소문자 및 이상한 기호로 원하는 이름을 선택할 수 있습니다. | 학습 양식 |
