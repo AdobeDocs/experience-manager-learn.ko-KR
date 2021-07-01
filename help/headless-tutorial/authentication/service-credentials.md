@@ -12,9 +12,9 @@ thumbnail: 330519.jpg
 topic: 헤드리스, 통합
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: e0822ad4aaf4022a849825ef625e1c29eb6e78f3
 workflow-type: tm+mt
-source-wordcount: '1827'
+source-wordcount: '1828'
 ht-degree: 0%
 
 ---
@@ -172,7 +172,7 @@ function getCommandLineParams() {
 
    이제 어느 JSON 파일(로컬 개발 액세스 토큰 JSON 또는 서비스 자격 증명 JSON)이 `file` 명령줄 매개 변수를 통해 전달되는지에 따라 애플리케이션이 액세스 토큰을 파생됩니다.
 
-   서비스 자격 증명이 만료되지 않는 동안 JWT 및 해당 액세스 토큰이 만료되기 전에 새로 고쳐야 합니다. 이 작업은 Adobe IMS](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/OAuth/OAuth.md#access-tokens)에서 제공하는 `refresh_token` [을 사용하여 수행할 수 있습니다.
+   서비스 자격 증명은 365일마다 만료되지만 JWT 및 해당 액세스 토큰이 자주 만료되므로 만료되기 전에 새로 고쳐야 합니다. 이 작업은 Adobe IMS](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/OAuth/OAuth.md#access-tokens)에서 제공하는 `refresh_token` [을 사용하여 수행할 수 있습니다.
 
 1. 이러한 변경 사항이 적용되면 AEM 개발자 콘솔에서 다운로드한 서비스 자격 증명 JSON이 다운로드됩니다(그리고 간단히 하기 위해 이 `index.js`와 동일한 폴더 `service_token.json`로 저장됨). 명령줄 매개 변수 `file`를 `service_token.json`로 대체하는 응용 프로그램을 실행하고 `propertyValue`를 새 값으로 업데이트하여 효과가 AEM에 분명히 표시됩니다.
 
@@ -207,7 +207,7 @@ function getCommandLineParams() {
 
 기술 계정 AEM 사용자가 AEM에 있으면(액세스 토큰을 사용하여 첫 번째 HTTP 요청 후) 이 AEM 사용자의 권한을 다른 AEM 사용자와 동일하게 관리할 수 있습니다.
 
-1. 먼저 AEM Developer Console에서 다운로드한 서비스 자격 증명 JSON을 열어 기술 계정의 AEM 로그인 이름을 찾은 다음 과 유사한 `integration.email` 값을 찾습니다.`12345678-abcd-9000-efgh-0987654321c@techacct.adobe.com`.
+1. 먼저 AEM Developer Console에서 다운로드한 서비스 자격 증명 JSON을 열어 기술 계정의 AEM 로그인 이름을 찾은 다음 과 유사하게 보이는 `integration.email` 값을 찾습니다.`12345678-abcd-9000-efgh-0987654321c@techacct.adobe.com`.
 1. 해당 AEM 환경의 작성자 서비스에 AEM 관리자로 로그인합니다
 1. __도구__ > __보안__ > __사용자__&#x200B;로 이동합니다.
 1. 1단계에서 식별된 __로그인 이름__&#x200B;을 사용하여 AEM 사용자를 찾아 __속성__&#x200B;을 엽니다.
