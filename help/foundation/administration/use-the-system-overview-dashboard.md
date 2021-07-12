@@ -8,9 +8,9 @@ audience: administrator, architect, developer, implementer
 doc-type: technical video
 contentOwner: dgordon
 topic: 관리
-role: Administrator
+role: Admin
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Adobe Experience Manager(AEM) [!UICONTROL 시스템 개요]에서는 단일 대�
 
 >[!VIDEO](https://video.tv.adobe.com/v/21340?quality=12&learn=on)
 
-1. 시스템 개요는 다음 위치에서 액세스할 수 있습니다.**AEM 시작** > **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 시스템 개요]**
+1. 시스템 개요는 다음 위치에서 액세스할 수 있습니다. **AEM 시작** > **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 시스템 개요]**
 
    **`<server-host>/libs/granite/operations/content/systemoverview.html`**&#x200B;에서 직접 액세스
 
