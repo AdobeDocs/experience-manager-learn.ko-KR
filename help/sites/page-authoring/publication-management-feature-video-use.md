@@ -12,9 +12,9 @@ kt: 4322
 thumbnail: 32193.jpg
 feature: 게시
 topic: 컨텐츠 관리
-role: Business Practitioner
+role: User
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 2%
@@ -22,7 +22,7 @@ ht-degree: 2%
 ---
 
 
-# 페이지 게시 중 {#using-publication-management-with-aem-sites}
+# 페이지 게시 {#using-publication-management-with-aem-sites}
 
 AEM Sites에서는 컨텐츠를 게시하고 게시 취소할 수 있는 여러 옵션을 제공합니다. 이 비디오에서는 다양한 방법 및 기능을 탐구합니다.
 
