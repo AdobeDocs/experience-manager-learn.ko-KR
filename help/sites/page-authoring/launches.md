@@ -4,11 +4,11 @@ description: AEM Sites의 론치는 향후 릴리스를 위해 컨텐츠를 작�
 topic: 컨텐츠 관리
 feature: 론치
 level: Intermediate, Experienced
-role: Administrator
+role: Admin
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 6970
 thumbnail: 331285.jpg
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '68'
 ht-degree: 5%
