@@ -8,9 +8,9 @@ doc-type: technical video
 activity: setup
 version: 6.4, 6.5
 topic: 로컬라이제이션
-role: Business Practitioner
+role: User
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 3%
@@ -42,7 +42,7 @@ ht-degree: 3%
 
 ## AEM 6.3 이전 {#prior-to-aem}
 
-이전 AEM 버전 번역 규칙은 번역 작업 과정 아래에 있는 XML 파일을 편집하여 수동으로 업데이트되었습니다.`/etc/workflow/models/translation/translation_rules.xml`
+이전 AEM 버전 번역 규칙은 번역 작업 과정 아래에 있는 XML 파일을 편집하여 수동으로 업데이트되었습니다. `/etc/workflow/models/translation/translation_rules.xml`
 
 ## 추가 리소스 {#additional-resources}
 
