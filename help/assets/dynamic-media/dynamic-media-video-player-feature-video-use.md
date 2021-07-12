@@ -5,9 +5,9 @@ sub-product: dynamic-media
 feature: 비디오 프로필
 version: 6.3, 6.4, 6.5
 topic: 컨텐츠 관리
-role: Business Practitioner
+role: User
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 9%
@@ -21,7 +21,7 @@ ht-degree: 9%
 
 >[!VIDEO](https://video.tv.adobe.com/v/16791/?quality=9&learn=on)
 
-## 비Flash 비디오 플레이어 {#quick-look-into-non-flash-video-player} 를 빠르게 살펴보십시오.
+## 비Flash 비디오 플레이어에 대한 빠른 검색 {#quick-look-into-non-flash-video-player}
 
 >[!VIDEO](https://video.tv.adobe.com/v/17429/?quality=9&learn=on)
 
