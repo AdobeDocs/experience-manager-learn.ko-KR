@@ -10,9 +10,9 @@ doc-type: tutorial
 activity: understand
 version: 6.5
 topic: 개발
-role: Business Practitioner
+role: User
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '530'
 ht-degree: 1%
@@ -36,7 +36,7 @@ AEM Forms 6.5에서는 CheckBox, 라디오 단추 및 이미지 목록과 같은
 
 ![규칙 편집기](assets/ruleeditor.png)
 
-**코드 편집기 사용**:선택한 그룹의 항목을 양식에 입력한 값에 따라 동적으로 설정하려면 예를 들어, 다음 코드 조각은 확인란의 항목을 적응형 양식의 지원자 이름 및 배우자 필드에 입력한 값으로 설정합니다.
+**코드 편집기 사용**: 선택한 그룹의 항목을 양식에 입력한 값에 따라 동적으로 설정하려면 예를 들어, 다음 코드 조각은 확인란의 항목을 적응형 양식의 지원자 이름 및 배우자 필드에 입력한 값으로 설정합니다.
 
 코드 조각에서 확인란 구성 요소인 WorkingMembers 항목을 설정하고 있습니다. 적응형 양식의 aprierName 및 배우자 텍스트 필드의 값을 가져오므로 항목의 배열이 동적으로 빌드되고 있습니다
 
