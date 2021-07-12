@@ -11,9 +11,9 @@ activity: use
 version: 6.3, 6.4, 6.5
 kt: 193
 topic: 컨텐츠 관리
-role: Business Practitioner
+role: User
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 5%
@@ -38,7 +38,7 @@ ht-degree: 5%
 * **이미지 구성 요소**  - 자르기, 새 UI를 사용하여 데스크탑 파일 업로드, 템플릿 간에 이미지 정책을 다시 사용하는 등의 기능을 켜거나 끌 수 있습니다.
 
 편집 가능한 템플릿은 **도구** `>` **일반** `>` **템플릿**&#x200B;에서 찾을 수 있습니다.\
-편집 가능한 템플릿 URL(로컬 AEM 인스턴스):[http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
+편집 가능한 템플릿 URL(로컬 AEM 인스턴스): [http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
 
 ## 추가 리소스 {#additional-resources}
 
