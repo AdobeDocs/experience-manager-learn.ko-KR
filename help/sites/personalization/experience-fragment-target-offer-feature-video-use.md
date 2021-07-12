@@ -13,17 +13,17 @@ version: 6.4, 6.5
 uuid: 7b91f65d-5a35-419a-8cf7-be850165dd33
 discoiquuid: 45fc8d83-73fb-42e5-9c92-ce588c085ed4
 topic: 개인화
-role: Business Practitioner
+role: User
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '459'
 ht-degree: 11%
 
 ---
 
 
-# Adobe Target{#using-experience-fragment-offers-within-adobe-target} 내에서 경험 조각 오퍼 사용
+# Adobe Target 내에서 경험 조각 오퍼 사용{#using-experience-fragment-offers-within-adobe-target}
 
 Adobe Experience Manager 6.4는 AEM과 Target 간의 개인화 워크플로우를 재설계합니다. 이제 AEM 내에서 만든 경험을 HTML 오퍼로 Adobe Target에 직접 전달할 수 있습니다. 이를 통해 마케터는 다양한 채널에서 컨텐츠를 원활하게 테스트 및 개인화할 수 있습니다.
 
