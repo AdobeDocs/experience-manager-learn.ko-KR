@@ -5,10 +5,10 @@ version: 6.4, 6.5, cloud-service
 topic: 컨텐츠 관리, 공동 작업
 feature: 프로젝트
 level: Intermediate
-role: Business Practitioner
+role: User
 kt: 256
 thumbnail: 17740.jpg
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 0%
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 [!DNL Master Projects] 은   AEM Projects [!UICONTROL  아래의 Master]폴더에 만들 수 있습니다. 기본 프로젝트를 만들면 새 프로젝트를 만들 때 마법사에서 사용 가능한 템플릿과 함께 옵션으로 표시됩니다.
 
-[!DNL Project Masters] URL(로컬 AEM 작성자 인스턴스): [http://localhost:4502/projects.html/content/projects/masters](http://localhost:4502/projects.html/content/projects/masters)
+[!DNL Project Masters] URL(로컬 AEM 작성자 인스턴스):  [http://localhost:4502/projects.html/content/projects/masters](http://localhost:4502/projects.html/content/projects/masters)
 
 ## 삭제 [!DNL Project Masters]
 
