@@ -4,13 +4,13 @@ description: 경험 조각을 사용하면 컨텐츠 작성자가 사이트 페�
 sub-product: 사이트, 컨텐츠 서비스
 feature: 경험 구성요소
 topic: 컨텐츠 관리
-role: Architect, Developer, Administrator, Business Practitioner
+role: Architect, Developer, Admin, User
 level: Beginner
 doc-type: feature video
 version: cloud-service
 kt: 194
 thumbnail: 331785.jpg
-source-git-commit: fcfb33f93e57d40b08e0527d38cfce8553095e65
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '124'
 ht-degree: 5%
