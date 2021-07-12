@@ -6,9 +6,9 @@ sub-product: assets
 feature: Experience Manager 데스크탑 앱
 version: 6.5, 6.4, 6.3
 topic: 컨텐츠 관리
-role: Business Practitioner
+role: User
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 11%
@@ -29,8 +29,8 @@ AEM 데스크탑 앱을 사용하면 데스크탑에서 AEM으로 관리되는 �
 
 >[!NOTE]
 >
-> [Adobe Asset ](./adobe-asset-link.md) Link는 Adobe Creative Cloud 애플리케이션 내에서 AEM 자산으로 작업하는 Adobe의 전용 솔루션입니다.Photoshop, Illustrator, InDesign 이러한 애플리케이션에서 AEM Assets을 사용하는 경우 AEM 데스크탑 앱보다 Adobe 자산 링크가 선호됩니다.
+> [Adobe Asset ](./adobe-asset-link.md) Link는 Adobe Creative Cloud 애플리케이션 내에서 AEM 자산으로 작업하는 Adobe의 전용 솔루션입니다. Photoshop, Illustrator, InDesign 이러한 애플리케이션에서 AEM Assets을 사용하는 경우 AEM 데스크탑 앱보다 Adobe 자산 링크가 선호됩니다.
 
 ## 추가 리소스
 
-+ [최신 AEM 데스크탑 앱 다운로드](https://docs.adobe.com/content/help/ko-KR/experience-manager-desktop-app/using/release-notes.html)
++ [최신 AEM 데스크탑 앱 다운로드](https://docs.adobe.com/content/help/ko/experience-manager-desktop-app/using/release-notes.html)
