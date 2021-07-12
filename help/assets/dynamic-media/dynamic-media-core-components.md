@@ -6,9 +6,9 @@ feature: 코어 구성 요소, 스마트 자르기, 이미지 프로필, 이미�
 version: cloud-service
 kt: 6630
 topic: 컨텐츠 관리
-role: Business Practitioner
+role: User
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 2%
@@ -16,7 +16,7 @@ ht-degree: 2%
 ---
 
 
-# AEM Sites 핵심 구성 요소에 Dynamic Media 사용 {#dynamic-media-sites-core-components}
+# AEM Sites 핵심 구성 요소에서 Dynamic Media 사용 {#dynamic-media-sites-core-components}
 
 Experience Manager 코어 구성 요소에 포함된 이미지 구성 요소는 Dynamic Media에 대한 내장된 지원을 제공합니다. 컨텐츠 작성자는 이미지 구성 요소를 사용하여 AEM Sites 페이지에서 이미지 사전 설정, 스마트 자르기 및 이미지 수정자와 같은 Dynamic Media 기능을 사용할 수 있습니다.
 
