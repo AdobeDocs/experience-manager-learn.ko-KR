@@ -4,9 +4,9 @@ description: AEM 작성자 및 AEM Assets Brand Portal 통합의 비디오 둘�
 feature: Brand Portal
 version: 6.3, 6.4, 6.5
 topic: 컨텐츠 관리
-role: Business Practitioner
+role: User
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '1774'
 ht-degree: 2%
@@ -32,7 +32,7 @@ Brand Portal의 자산 소싱은 타사 에이전시 및 팀에서 자산을 수
 
 Experience Manager 작성자에 대한 자산 소싱을 구성 및 설정하는 방법에 대한 지침은 [자산 소싱용 Experience Manager 작성자 활성화](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/configure-asset-sourcing-in-aem/brand-portal-enable-asset-sourcing.html)를 검토하십시오.
 
-## Brand Portal 기능 및 개선 사항{#brand-portal-features-and-enhancements-644}
+## Brand Portal 2019년 2월 기능 및 개선 사항{#brand-portal-features-and-enhancements-644}
 
 >[!VIDEO](https://video.tv.adobe.com/v/26354/?quality=9&learn=on)
 
@@ -48,7 +48,7 @@ Brand Portal은 필터링 창에서 속성 조건부에서 부분 텍스트 검�
 
 이제 필터링 창에서 검색한 구문의 부분인 단어 또는 두 개만 지정하여 자산을 검색할 수 있습니다.
 
-**사용 사례** :부분 구문 검색은 검색한 구문에서 발생하는 단어의 정확한 조합을 잘 모르는 경우 유용합니다.
+**사용 사례** : 부분 구문 검색은 검색한 구문에서 발생하는 단어의 정확한 조합을 잘 모르는 경우 유용합니다.
 
 예를 들어 Brand Portal의 검색 양식에서 자산 제목에서 부분 검색에 속성 설명을 사용하는 경우 camp 라는 용어를 지정하면 제목 구문에 camp 라는 단어가 포함된 모든 자산이 반환됩니다.
 
@@ -111,7 +111,7 @@ Brand Portal URL의 접두사만 사용자 지정할 수 있으며 전체 URL은
 
 그러나 AEM 작성자 인스턴스는 테넌트 ID가 없고 임차인 별칭(대체) URL이 없는 [구성된](https://helpx.adobe.com/kr/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html)일 수 있습니다.
 
-**사용 사례** :조직은 Adobe에서 제공한 URL에 의존하는 대신 포털 URL을 사용자 지정하여 브랜딩 요구 사항을 충족할 수 있습니다.
+**사용 사례** : 조직은 Adobe에서 제공한 URL에 의존하는 대신 포털 URL을 사용자 지정하여 브랜딩 요구 사항을 충족할 수 있습니다.
 
 ## Brand Portal 2018년 12월 기능 및 개선 사항{#brand-portal-features-and-enhancements-642}
 
