@@ -8,9 +8,9 @@ activity: develop
 topics: development, authoring, configuring, architecture
 audience: all
 topic: 컨텐츠 관리
-role: Business Practitioner
+role: User
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '1216'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# 폴더 구조 및 파일 이름 지정 규칙 확인 {#folder-structure-filenaming}
+# 폴더 구조 및 파일 이름 지정 규칙을 결정합니다 {#folder-structure-filenaming}
 
 시작하기 전에 먼저 사용할 폴더 구조와 특히 파일 이름 지정 규칙을 고려해 보십시오. 시간이 절약되고 나중에 작업을 다시 실행해야 할 수도 있습니다. 모든 그룹에서 이러한 결정을 조정하는 것이 가장 좋습니다.
 
