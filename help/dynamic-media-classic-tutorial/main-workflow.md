@@ -8,9 +8,9 @@ topics: development, authoring, configuring, architecture, publishing
 audience: all
 activity: use
 topic: 컨텐츠 관리
-role: Business Practitioner
+role: User
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '2734'
 ht-degree: 1%
@@ -30,7 +30,7 @@ Dynamic Media Classic 솔루션의 워크플로우는 다음 세 가지 주요 �
 2. 자산 작성(및 게시)
 3. 자산 제공
 
-## 1단계:만들기(및 업로드)
+## 1단계: 만들기(및 업로드)
 
 워크플로우의 시작입니다. 이 단계에서는 사용 중인 워크플로우에 맞는 소스 컨텐츠를 수집하거나 만들어 Dynamic Media Classic에 업로드합니다. 이 시스템은 이미지, 비디오 및 글꼴에 대한 여러 파일 유형을 지원하지만 PDF, Adobe Illustrator 및 Adobe InDesign에 대해서도 지원합니다.
 
@@ -62,7 +62,7 @@ Dynamic Media Classic 솔루션의 워크플로우는 다음 세 가지 주요 �
 교체 이미지를 원본과 동일한 폴더로 업로드해야 하지만 파일 이름 확장명은 원본과 다를 수 있습니다. 예를 들어 chair.tif는 chair.jpg를 대체합니다.
 
 - **동일한 기본 자산 이름/확장에 있는 임의의 폴더에 덮어씁니다**.
-교체 이미지의 파일 확장명이 원본 이미지와 동일해야 합니다(예: chair.jpg는 chair.tif가 아니라 chair.jpg로 대체해야 함). 그러나 대체 이미지를 원본과 다른 폴더에 업로드할 수 있습니다. 업데이트된 이미지는 새 폴더에 있습니다.파일을 원래 위치에서 더 이상 찾을 수 없습니다.
+교체 이미지의 파일 확장명이 원본 이미지와 동일해야 합니다(예: chair.jpg는 chair.tif가 아니라 chair.jpg로 대체해야 함). 그러나 대체 이미지를 원본과 다른 폴더에 업로드할 수 있습니다. 업데이트된 이미지는 새 폴더에 있습니다. 파일을 원래 위치에서 더 이상 찾을 수 없습니다.
 
 - **확장에 관계없이 동일한 기본 자산 이름으로 모든 폴더에 덮어씁니다**.
 이 옵션은 가장 포괄적인 대체 규칙입니다. 대체 이미지를 원본과 다른 폴더에 업로드하고, 다른 파일 확장자를 가진 파일을 업로드하고, 원래 파일을 바꿀 수 있습니다. 원본 파일이 다른 폴더에 있는 경우 대체 이미지는 업로드된 새 폴더에 있습니다.
@@ -75,7 +75,7 @@ Dynamic Media Classic 솔루션의 워크플로우는 다음 세 가지 주요 �
 
 Dynamic Media Classic은 해당 시스템에 아직 없는 콘텐츠에서는 작동할 수 없으므로 워크플로우에서 업로드는 첫 번째 필수 단계입니다. 업로드 중에 백그라운드에서 시스템은 업로드된 모든 자산을 중앙 집중식 Dynamic Media Classic 데이터베이스에 등록하고 ID를 지정한 다음 저장소에 복사합니다. 또한, 영상 파일을 다이내믹 크기 조정 및 확대/축소를 가능하게 하는 포맷으로 변환하고, 영상 파일을 MP4 웹에 친숙한 형식으로 변환한다.
 
-### 개념:다음은 Dynamic Media Classic에 업로드할 때 이미지에 발생하는 작업입니다
+### 개념: 다음은 Dynamic Media Classic에 업로드할 때 이미지에 발생하는 작업입니다
 
 모든 유형의 이미지를 Dynamic Media Classic에 업로드하면 Pyramid TIFF 또는 P-TIFF라는 마스터 이미지 형식으로 변환됩니다. P-TIFF는 서로 다른 레이어 대신 동일한 이미지의 여러 크기(해상도)를 파일에 포함한다는 점을 제외하면 계층화된 TIFF 비트맵 이미지의 형식과 유사합니다.
 
@@ -102,7 +102,7 @@ Dynamic Media Classic은 해당 시스템에 아직 없는 콘텐츠에서는 �
 
 [파일 업로드](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#uploading-your-files)에 대해 자세히 알아보십시오.
 
-## 2단계:작성자(및 게시)
+## 2단계: 작성자(및 게시)
 
 컨텐츠를 만들고 업로드한 후에는 하나 이상의 하위 워크플로우를 수행하여 업로드한 자산에서 새 리치 미디어 자산을 작성합니다. 여기에는 템플릿과 이미지, 견본, 스핀, 혼합 미디어 세트 등 모든 유형의 집합 컬렉션이 포함됩니다. 비디오도 포함되어 있습니다. 각 유형의 이미지 컬렉션 세트와 비디오 리치 미디어에 대해 나중에 더 자세히 살펴보겠습니다. 하지만 거의 모든 경우에, 하나 이상의 자산을 선택하고(또는 자산을 선택하지 않은 경우) 빌드할 자산 유형을 선택하여 시작합니다. 예를 들어, 기본 이미지와 해당 이미지의 몇 가지 보기를 선택하고 동일한 제품의 대체 보기인 이미지 세트를 작성할 수 있습니다.
 
@@ -120,7 +120,7 @@ Dynamic Media Classic은 해당 시스템에 아직 없는 콘텐츠에서는 �
 >
 >게시 작업을 자동화하고 매일 오전 12시에 또는 저녁 늦게 실행하도록 전체 게시 일정을 예약합니다.
 
-### 개념:Dynamic Media Classic URL 이해
+### 개념: Dynamic Media Classic URL 이해
 
 Dynamic Media Classic 워크플로우의 최종 제품은 자산(이미지 세트 또는 응용 비디오 세트)을 가리키는 URL입니다. 이러한 URL은 매우 예측 가능하고 동일한 패턴을 따릅니다. 이미지의 경우 각 이미지가 P-TIFF 마스터 이미지에서 생성됩니다.
 
@@ -136,7 +136,7 @@ URL에서 물음표의 왼쪽에 있는 모든 항목은 특정 이미지에 대
 
 Dynamic Media Classic URL을 통합하는 방법을 이해하면 프로그래밍 방식으로 변경하는 방법과 이들을 사이트 및 백엔드 시스템에 더 많이 통합하는 방법을 이해할 수 있습니다.
 
-### 개념:캐싱 지연 이해
+### 개념: 캐싱 지연 이해
 
 새로 업로드하고 게시된 자산이 바로 표시되지만, 업데이트된 자산은 캐싱 지연 10시간이 걸릴 수 있습니다. 기본적으로 게시된 모든 자산은 만료되기 최소 10시간 전에 만료됩니다. 최소라고 합니다. 이미지를 볼 때마다, 10시간이 지나도 아무도 해당 이미지를 보지 못한 시간까지 만료되지 않는 시계가 시작됩니다. 이 10시간 기간은 자산의 &quot;Time to Live&quot;입니다. 해당 자산에 대한 캐시가 만료되면 업데이트된 버전이 배달될 수 있습니다.
 
@@ -151,7 +151,7 @@ Dynamic Media Classic URL을 통합하는 방법을 이해하면 프로그래밍
 - [게시 작업 만들기](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/publishing-files.html#creating-a-publish-job)에 대해 자세히 알아보십시오.
 - [게시](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/publishing-files.html)에 대해 자세히 알아보십시오.
 
-## 3단계:배달
+## 3단계: 배달
 
 Dynamic Media Classic 워크플로우의 최종 제품은 자산을 가리키는 URL입니다. 이 URL은 개별 이미지, 이미지 세트, 스핀 세트 또는 기타 이미지 세트 컬렉션이나 비디오를 가리킬 수 있습니다. 해당 URL을 가져와서 `<IMG>` 태그가 현재 사이트에서 오는 이미지를 가리키는 대신 Dynamic Media Classic 이미지를 가리키도록 HTML을 편집하는 등의 작업을 수행해야 합니다.
 
