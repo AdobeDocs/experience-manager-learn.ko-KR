@@ -6,11 +6,11 @@ version: cloud-service
 feature: 경험 구성요소
 topic: 컨텐츠 관리
 level: Beginner, Intermediate
-role: Architect, Developer, Administrator, Business Practitioner
+role: Architect, Developer, Admin, User
 doc-type: feature video
 kt: 660
 thumbnail: 331786.jpg
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 3%
@@ -18,7 +18,7 @@ ht-degree: 3%
 ---
 
 
-# 경험 구성요소 {#building-blocks}를 사용하는 빌딩 블록
+# 경험 조각을 사용한 빌딩 블록 {#building-blocks}
 
 빌딩 블록은 경험 조각의 하위 기능입니다. 빌딩 블록을 사용하면 컨텐츠 작성자가 경험 조각의 다양한 변형에서 구성 요소를 재사용할 수 있습니다.
 
