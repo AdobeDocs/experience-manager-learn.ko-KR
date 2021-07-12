@@ -4,9 +4,9 @@ description: 'AEM은 AEM에서 직접 Adobe Stock 자산을 검색, 미리 보�
 feature: Adobe Stock
 version: 6.4, 6.5
 topic: 컨텐츠 관리
-role: Business Practitioner
+role: User
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '970'
 ht-degree: 6%
@@ -60,7 +60,7 @@ Adobe Stock과 AEM Assets 통합을 통해 컨텐츠 작성자와 마케터는 �
 * 관리자는 Adobe Stock 클라우드 서비스 구성을 설정할 때 특정 사용자/그룹에 스톡 자산의 라이선스를 제공할 수 있는 권한을 제공할 수 있습니다.
 * 특정 사용자/그룹에 주식 자산의 라이선스를 제공할 권한이 없는 경우 *주식 자산 검색/자산 라이선스* 기능이 비활성화됩니다.
 
-## AEM Assets{#set-up-adobe-stock-with-aem-assets}으로 Adobe Stock 설정
+## AEM Assets을 사용하여 Adobe Stock 설정{#set-up-adobe-stock-with-aem-assets}
 
 AEM 6.4.2는 AEM에서 직접 Adobe Stock 자산을 검색, 미리 보기, 저장 및 라이선스를 제공할 수 있는 기능을 제공합니다. 이 비디오에서는 Adobe I/O 콘솔을 사용하여 AEM Assets으로 Adobe 주식을 설정하는 방법에 대한 간단한 연습을 다룹니다.
 
@@ -79,7 +79,7 @@ AEM 6.4.2는 AEM에서 직접 Adobe Stock 자산을 검색, 미리 보기, 저�
 * AEM 6.4의 경우 [AEM 서비스 팩 2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.2.0)를 설치한 다음 cq-dam-stock-integration-content-1.0.4.zip 파일을 다시 설치해야 합니다.
 * 통합을 설정하려면 [Adobe I/O 콘솔](https://console.adobe.io/), [Adobe Admin Console](https://adminconsole.adobe.com/) 및 Adobe Experience Manager에 대한 관리자 권한이 있어야 합니다.
 
-#### Adobe I/O 콘솔 {#set-up-adobe-ims-configuration-using-adobe-i-o-console}을 사용하여 Adobe IMS 구성 설정
+#### Adobe I/O 콘솔을 사용하여 Adobe IMS 구성 설정 {#set-up-adobe-ims-configuration-using-adobe-i-o-console}
 
 1. **도구 > 보안**&#x200B;에서 Adobe IMS 기술 계정 구성을 만듭니다.
 2. *클라우드 솔루션* 을 *Adobe Stock*&#x200B;로 선택하고 새 인증서를 만들거나 구성에 대한 기존 인증서를 다시 사용합니다.
@@ -91,7 +91,7 @@ AEM 6.4.2는 AEM에서 직접 Adobe Stock 자산을 검색, 미리 보기, 저�
 
 ![Adobe IMS 기술 계정](assets/screen_shot_2018-10-22at12219pm.png)
 
-#### Adobe Stock Cloud Services {#set-up-adobe-stock-cloud-services} 설정
+#### Adobe Stock Cloud Services 설정 {#set-up-adobe-stock-cloud-services}
 
 1. **도구 > Cloud Services에서 Adobe Stock에 대한 새 클라우드 서비스 구성을 만듭니다.**
 2. *Adobe Stock Cloud* 구성에 대한 위의 섹션에서 만든 *Adobe IMS 구성*&#x200B;을 선택합니다
