@@ -3,9 +3,9 @@ title: 'AEM Assets의 InDesign 파일 및 자산 템플릿 이해 '
 description: 이 비디오 자습서에서는 AEM Assets의 자산 템플릿 기능에 사용할 InDesign 파일 및 추가 고려 사항을 모두 정의하는 과정을 안내합니다.
 version: 6.3, 6.4, 6.5
 topic: 컨텐츠 관리
-role: Business Practitioner
+role: User
 level: Intermediate
-source-git-commit: b4fa992abe22e3a546d651e465d6ffc9e415aee2
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '496'
 ht-degree: 1%
@@ -13,11 +13,11 @@ ht-degree: 1%
 ---
 
 
-# AEM Assets {#understanding-indesign-files-and-asset-templates-in-aem-assets}의 InDesign 파일 및 자산 템플릿 이해
+# AEM Assets의 InDesign 파일 및 자산 템플릿 이해 {#understanding-indesign-files-and-asset-templates-in-aem-assets}
 
 이 비디오 자습서에서는 AEM Assets의 자산 템플릿 기능에 사용할 InDesign 파일 및 추가 고려 사항을 모두 정의하는 과정을 안내합니다.
 
-## InDesign 템플릿 파일 {#constructing-the-indesign-template-file} 구성
+## InDesign 템플릿 파일 구성 {#constructing-the-indesign-template-file}
 
 >[!VIDEO](https://video.tv.adobe.com/v/19293/?quality=9&learn=on)
 
@@ -49,7 +49,7 @@ ht-degree: 1%
    >
    >AEM 자산 템플릿 문제의 가장 일반적인 원인은 잘못 구성된 InDesign 파일이므로 태깅 및 구조가 깨끗하고 정확한지 확인하십시오.
 
-## AEM Assets {#creating-and-authoring-an-asset-template-in-aem-assets}에서 자산 템플릿 만들기 및 작성
+## AEM Assets에서 자산 템플릿 만들기 및 작성 {#creating-and-authoring-an-asset-template-in-aem-assets}
 
 >[!VIDEO](https://video.tv.adobe.com/v/19294/?quality=9&learn=on)
 
