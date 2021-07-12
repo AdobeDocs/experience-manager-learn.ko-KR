@@ -3,12 +3,12 @@ title: AEM Assets을 사용한 이미지용 스마트 태그
 description: 이미지용 스마트 태그는 이미지의 컨텐츠를 기반으로 이미지 자산에 메타데이터 태그를 자동으로 지능적으로 추가하여 AEM 검색 기능을 향상시킵니다.
 topic: 컨텐츠 관리
 feature: 스마트 태그
-role: Business Practitioner
+role: User
 level: Intermediate
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 645
 thumbnail: 17019.jpg
-source-git-commit: a5fb96275194ddc46169832c0fb79a2587833564
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 10%
@@ -22,7 +22,7 @@ ht-degree: 10%
 
 >[!VIDEO](https://video.tv.adobe.com/v/17019/?quality=12&learn=on)
 
-## AEM 6.x{#set-up}에 대해 설정
+## AEM 6.x 설정{#set-up}
 
 >[!NOTE]
 > 이미지용 스마트 태그는 AEM에 Cloud Service으로 자동으로 제공됩니다.
