@@ -9,9 +9,9 @@ doc-type: feature video
 activity: use
 version: cloud-service
 topic: 컨텐츠 관리
-role: Business Practitioner
+role: User
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 9%
@@ -49,7 +49,7 @@ AEM 구성은 컨텐츠 조각 모델을 컨텐츠 조각으로 만들 수 있�
 *수입을 위한 선수 전기 예:*\
 **[sandra-sprient-bio.txt](assets/sandra-sprient-bio.txt)**
 
-## 컨텐츠 조각 {#downloading-content-fragments} 다운로드
+## 컨텐츠 조각 다운로드 {#downloading-content-fragments}
 
 >[!VIDEO](https://video.tv.adobe.com/v/22450/?quality=12&learn=on)
 
