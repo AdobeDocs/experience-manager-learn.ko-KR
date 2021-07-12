@@ -8,9 +8,9 @@ activity: develop
 version: 6.3, 6.4, 6.5
 feature: 코어 구성 요소
 topic: 개발
-role: Business Practitioner
+role: User
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 2%
