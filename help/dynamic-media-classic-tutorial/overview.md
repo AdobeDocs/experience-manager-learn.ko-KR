@@ -8,9 +8,9 @@ audience: all
 activity: develop, use
 feature: Dynamic Media Classic
 topic: 컨텐츠 관리
-role: Business Practitioner
+role: User
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '901'
 ht-degree: 1%
@@ -41,7 +41,7 @@ Dynamic Media Classic은 고객이 리치 미디어 컨텐츠를 작성, 작성 
 
 이 안내서에서는 Dynamic Media Classic의 다음 핵심 기능에 대해 설명합니다.
 
-- **동적 이미징.** 실시간 편집, 서식 및 크기 조정, 대화형 확대/축소 및 패닝에 대한 엄포형 용어입니다.색상 및 텍스쳐 시청360도 회전이미지 템플릿;및 멀티미디어 뷰어입니다.
+- **동적 이미징.** 실시간 편집, 서식 및 크기 조정, 대화형 확대/축소 및 패닝에 대한 엄포형 용어입니다. 색상 및 텍스쳐 시청 360도 회전 이미지 템플릿; 및 멀티미디어 뷰어입니다.
 - **비디오.** 최종 비디오를 업로드하고 게시한 다음 구성 가능한 비디오 뷰어에 점진적으로 다운로드합니다.
 - **스마트 이미징.** Adobe Sensei AI 기능을 활용하고 기존 &quot;이미지 사전 설정&quot;과 함께 사용하면 클라이언트 브라우저 기능을 기반으로 이미지 형식, 크기 및 품질을 자동으로 최적화하여 이미지 전달 성능을 향상시킬 수 있습니다.
 
@@ -49,7 +49,7 @@ Dynamic Media Classic은 고객이 리치 미디어 컨텐츠를 작성, 작성 
 
 ## Dynamic Media Classic 사용자 인터페이스(UI)
 
-Dynamic Media Classic 기본 UI는 다음 세 가지 주요 영역으로 구성됩니다.전역 탐색 막대, 자산 라이브러리 및 찾아보기 패널/빌드 패널입니다.
+Dynamic Media Classic 기본 UI는 다음 세 가지 주요 영역으로 구성됩니다. 전역 탐색 막대, 자산 라이브러리 및 찾아보기 패널/빌드 패널입니다.
 
 ![이미지](assets/overview/overview-dmc-ui-ew.png)
 
