@@ -8,9 +8,9 @@ topics: development, authoring, configuring, renditions, images
 audience: all
 activity: use
 topic: 컨텐츠 관리
-role: Business Practitioner
+role: User
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '699'
 ht-degree: 3%
@@ -24,7 +24,7 @@ ht-degree: 3%
 
 또한 스마트 이미징은 Adobe의 동급 최고의 프리미엄 서비스와 완전히 통합될 수 있는 향상된 성능 증대의 이점을 제공합니다. 이 서비스는 지연 시간이 가장 짧은 서버, 네트워크 및 피어링 지점 간의 최적의 인터넷 경로를 찾아 인터넷 상의 기본 경로보다 패킷 손실률을 찾습니다.
 
-[스마트 이미징](https://docs.adobe.com/content/help/ko-KR/experience-manager-64/assets/dynamic/imaging-faq.html)에 대해 자세히 알아보십시오.
+[스마트 이미징](https://docs.adobe.com/content/help/ko/experience-manager-64/assets/dynamic/imaging-faq.html)에 대해 자세히 알아보십시오.
 
 ## 스마트 이미징의 이점
 
@@ -48,7 +48,7 @@ ht-degree: 3%
 >
 >Smart Imaging으로 전환하면 CDN에서 캐시가 지워집니다. CDN의 캐시는 일반적으로 1~2일 내에 다시 빌드됩니다.
 
-스마트 이미징은 Dynamic Media Classic의 기존 라이선스에 포함되어 있습니다. 이 기능에 대한 추가 비용은 없습니다. 이를 활용하려면 다음 두 가지 요구 사항을 충족해야 합니다.는 Adobe 번들 CDN 및 전용 도메인을 갖습니다. 그러면 자동으로 활성화되지 않으므로 계정에 대해 활성화해야 합니다.
+스마트 이미징은 Dynamic Media Classic의 기존 라이선스에 포함되어 있습니다. 이 기능에 대한 추가 비용은 없습니다. 이를 활용하려면 다음 두 가지 요구 사항을 충족해야 합니다. 는 Adobe 번들 CDN 및 전용 도메인을 갖습니다. 그러면 자동으로 활성화되지 않으므로 계정에 대해 활성화해야 합니다.
 
 스마트 이미징을 활성화하는 것은 기술 지원 요청을 보내는 것부터 시작합니다 |지원 사례 만들기| [https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 스마트 이미징과 연결할 사용자 지정 도메인을 설정하는 지원이 사용자와 함께 작동합니다. 캐싱과 관련된 하나의 매개 변수(Time To Live 또는 TTL)를 변경하고 지원이 캐시를 지웁니다. 프로덕션에 푸시하기 전에 원하는 경우 선택적 스테이징 단계를 수행할 수도 있습니다. 그런 다음 스마트 이미징을 켜면 고객이 요청한 것과 동일한 품질로 더 작은 크기의 이미지를 고객에게 제공할 수 있습니다. 즉, 페이지 로드 시간이 빨라지고 Adobe Sensei이 가장 효율적인 크기를 선택하는 데 도움이 되므로 이 모든 작업이 자동으로 수행됩니다.
 
