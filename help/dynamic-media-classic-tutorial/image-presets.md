@@ -8,9 +8,9 @@ topics: development, authoring, configuring
 audience: all
 activity: use
 topic: 컨텐츠 관리
-role: Business Practitioner
+role: User
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '712'
 ht-degree: 1%
@@ -61,7 +61,7 @@ Dynamic Media Classic에 업로드하는 고해상도 이미지는 확대하면 
 
 ![이미지](assets/image-presets/image-presets-1.jpg)
 
-Dynamic Media Classic에서는 세 가지 유형의 선명하게 하기를 사용할 수 있습니다.간단한 선명도, 리샘플 모드 및 언샵 마스크
+Dynamic Media Classic에서는 세 가지 유형의 선명하게 하기를 사용할 수 있습니다. 간단한 선명도, 리샘플 모드 및 언샵 마스크
 
 [Dynamic Media Classic 선명하게 하기 옵션](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/sharpening-image.html#sharpening_an_image)에 대해 자세히 알아보십시오.
 
@@ -69,6 +69,6 @@ Dynamic Media Classic에서는 세 가지 유형의 선명하게 하기를 사�
 
 [이미지 사전 설정 안내서](https://www.adobe.com/content/dam/www/us/en/experience-manager/pdfs/dynamic-media-image-preset-guide.pdf). 이미지 품질 및 로드 속도를 최적화하는 데 사용할 설정입니다.
 
-[이미지는 2의 모든 부분입니다.단순한 흐림 현상이 아닙니다. 품질과 속도](https://theblog.adobe.com/image-is-everything-part-2-its-never-just-a-blur-quality-versus-speed/). 고품질의, 빠른 로드 이미지를 제공하기 위해 이미지 사전 설정을 사용하여 논의하는 블로그 게시물입니다.
+[이미지는 2의 모든 부분입니다. 단순한 흐림 현상이 아닙니다. 품질과 속도](https://theblog.adobe.com/image-is-everything-part-2-its-never-just-a-blur-quality-versus-speed/). 고품질의, 빠른 로드 이미지를 제공하기 위해 이미지 사전 설정을 사용하여 논의하는 블로그 게시물입니다.
 
 [이미지는 모든 웨비나입니다](https://dynamicmediaseries2019.enterprise.adobeevents.com/). _이미지가 모든 것_ 시리즈에서 세 개의 웨비나를 모두 녹음하는 링크입니다. [웨비나 2](https://seminars.adobeconnect.com/p6lqaotpjnd3) 에서 이미지 사전 설정에 대해 설명합니다.
