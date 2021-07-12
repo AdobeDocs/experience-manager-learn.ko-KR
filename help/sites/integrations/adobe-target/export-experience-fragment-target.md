@@ -10,9 +10,9 @@ version: cloud-service
 kt: 6350
 thumbnail: 41245.jpg
 topic: 통합
-role: Business Practitioner
+role: User
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 6%
@@ -20,7 +20,7 @@ ht-degree: 6%
 ---
 
 
-# Adobe Target {#experience-fragment-target}으로 경험 조각 내보내기
+# Adobe Target으로 경험 조각 내보내기 {#experience-fragment-target}
 
 AEM 경험 조각을 Adobe Target 오퍼으로 내보내는 방법을 알아봅니다.
 
