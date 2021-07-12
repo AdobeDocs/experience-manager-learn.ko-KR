@@ -10,9 +10,9 @@ version: cloud-service
 kt: 6351
 thumbnail: 41246.jpg
 topic: 통합
-role: Business Practitioner
+role: User
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '121'
 ht-degree: 9%
@@ -20,7 +20,7 @@ ht-degree: 9%
 ---
 
 
-# 경험 조각 오퍼 {#target-activity-experience-fragment}를 사용하여 Adobe Target 활동 만들기
+# 경험 조각 오퍼를 사용하여 Adobe Target 활동 생성 {#target-activity-experience-fragment}
 
 AEM 경험 조각 오퍼를 사용하여 Adobe Target 활동을 만들고 테스트하는 방법을 알아봅니다.
 
