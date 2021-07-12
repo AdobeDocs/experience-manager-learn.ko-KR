@@ -9,9 +9,9 @@ version: 6.3, 6.4, 6.5, cloud-service
 kt: 4630
 thumbnail: 32151.jpg
 topic: 컨텐츠 관리
-role: Business Practitioner
+role: User
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 28%
@@ -19,13 +19,13 @@ ht-degree: 28%
 ---
 
 
-# 페이지 버전 {#creating-page-versions-aem-sites} 만들기
+# 페이지 버전 만들기 {#creating-page-versions-aem-sites}
 
 페이지 버전 관리는 컨텐츠 작성자가 페이지 버전을 만들어 페이지와 관련된 변경 사항을 추적하는 데 도움이 되며, 버전을 미리 보고 버전을 복원하며 버전을 현재 버전의 페이지와 비교하는 옵션을 제공합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32151?quality=9&learn=on)
 
-버전 매기기를 통해 특정 시점의 페이지 스냅샷을 만들 수 있습니다.버전 관리를 사용하여 다음 작업을 수행할 수 있습니다.
+버전 매기기를 통해 특정 시점의 페이지 스냅샷을 만들 수 있습니다. 버전 관리를 사용하여 다음 작업을 수행할 수 있습니다.
 * 페이지의 새 버전 만들기
 * 예를 들어 페이지의 변경을 취소하려면 페이지를 이전 버전으로 복원합니다
 * 강조 표시된 텍스트와 이미지에 차이점을 보이는 현재 버전의 페이지를 이전 버전과 비교합니다
