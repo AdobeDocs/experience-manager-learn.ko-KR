@@ -8,9 +8,9 @@ audience: all
 activity: understand
 doc-type: article
 topic: 업그레이드
-role: Leader, Architect, Developer, Administrator, Business Practitioner
+role: Leader, Architect, Developer, Admin, User
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '3541'
 ht-degree: 3%
@@ -45,7 +45,7 @@ AEM Sites에서는 웹 사이트 제작 및 빌드를 가속화하기 위해 고
 
 AEM은 AEM 외부의 컨텐츠를 쉽게 사용할 수 있도록 해주는 새롭고 향상된 도구를 사용하여 Fluid Experiences를 계속 수용합니다.
 
-+ **컨텐츠** 조각은 버전 비교/비교 및 주석을 지원합니다.
++ **컨텐츠** 조각은 버전 비교/차이 및 주석을 지원합니다.
 + **AEM Assets HTTP** API는  **DAM에서 직접 컨텐츠** 조각을 JSON으로 노출할  **수 있도록 지원합니다**.
    **경험** 조각은 페이지 **를 참조하기** 위한 전체 텍스트 검색 및  **AEM Dispatcher 캐시** 무효화 **를 지원합니다**.
 
@@ -138,7 +138,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있습니다.
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/queries-and-indexing.html" target="_blank">사용자 지정 검색 색인</a>: </strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/queries-and-indexing.html" target="_blank">사용자 지정 검색 색인</a>:  </strong>
                 사용자 지정 색인 정의를 추가하여 쿼리 성능을 최적화하고 검색 관련성을 최적화할 수 있습니다.</td>
             <td> </td>
             <td>✔</td>
@@ -261,7 +261,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있습니다.
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://adobe.ly/2HODmsv" target="_blank">Cloud Manager</a>: </strong>
+            <td><strong><a href="https://adobe.ly/2HODmsv" target="_blank">Cloud Manager</a>:  </strong>
                 Adobe AMS(Managed Services) 고객을 전용으로 하는 Cloud Manager는 최신 CI/CD 파이프라인의 상태를 통해 개발 및 배포를 가속화합니다.</td>
             <td> </td>
             <td> </td>
@@ -1279,7 +1279,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있습니다.
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/users.html#AboutCommunityGroups" target="_blank">사용자 그룹</a>:
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/users.html#AboutCommunityGroups" target="_blank">사용자 그룹</a>: 
             </strong>사용자 집합은 구성원 그룹에 속할 수 있으며, 집합적으로 역할을 지정할 수 있습니다.</td>
             <td>✔</td>
             <td>✔</td>
