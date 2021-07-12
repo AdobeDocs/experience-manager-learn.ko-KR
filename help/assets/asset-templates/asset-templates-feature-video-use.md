@@ -3,9 +3,9 @@ title: AEM Assets 및 InDesign Server에서 자산 템플릿 사용
 description: AEM Assets 템플릿을 사용하면 마케터가 디지털 및 인쇄용 디지털 자산을 생성, 관리 및 전달할 수 있습니다. InDesign 서버와 통합하여 자산 템플릿을 사용하면 마케팅 브로셔, 명함, 전단, 광고 및 게시물 카드를 보다 쉽게 만들 수 있습니다.
 version: 6.3, 6.4, 6.5
 topic: 컨텐츠 관리
-role: Business Practitioner
+role: User
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 ---
 
 
-# AEM Assets 및 InDesign Server{#using-asset-templates-with-aem-assets-and-indesign-server}에서 자산 템플릿 사용
+# AEM Assets 및 InDesign Server에서 자산 템플릿 사용{#using-asset-templates-with-aem-assets-and-indesign-server}
 
 AEM Assets 템플릿을 사용하면 마케터가 디지털 및 인쇄용 디지털 자산을 생성, 관리 및 전달할 수 있습니다. InDesign 서버와 통합하여 자산 템플릿을 사용하면 마케팅 브로셔, 명함, 전단, 광고 및 게시물 카드를 보다 쉽게 만들 수 있습니다.
 
