@@ -8,9 +8,9 @@ topics: development, authoring, configuring, reports
 audience: all
 activity: use
 topic: 컨텐츠 관리
-role: Administrator
+role: Admin
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '342'
 ht-degree: 3%
@@ -20,7 +20,7 @@ ht-degree: 3%
 
 # 관리자를 위한 중요한 보고서 {#valuable-reports}
 
-이 마지막 장에서는 관리자가 될 경우 설정할 수 있는 두 가지 중요한 보고서에 대해 알고 싶습니다.대역폭 및 저장소 보고서와 이미지 오류 보고서.
+이 마지막 장에서는 관리자가 될 경우 설정할 수 있는 두 가지 중요한 보고서에 대해 알고 싶습니다. 대역폭 및 저장소 보고서와 이미지 오류 보고서.
 
 ## 대역폭 및 스토리지 보고서
 
@@ -45,7 +45,7 @@ _이미지 오류 보고서._
 Dynamic Media Classic에 대해 자세히 알아보려면 다음 리소스를 확인하십시오.
 
 - [Experience League의 Dynamic Media Classic - 가치 창출](https://guided.adobe.com/?launch=AEM-5a#recommended/solutions/experience-manager)
-- [Experience League의 Dynamic Media Classic - 자세한 내용](https://guided.adobe.com/?launch=AEM-6a#recommended/solutions/experience-manager)
+- [Experience League의 Dynamic Media Classic - 더 많은 작업](https://guided.adobe.com/?launch=AEM-6a#recommended/solutions/experience-manager)
 - [Dynamic Media 뉴스레터 아카이브](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/dynamic-media-newsletter.html)
 - [Dynamic Media 뉴스레터 구독 페이지](https://www.adobe.com/subscription/dynamic-media-newsletter.html)
 - [Dynamic Media Classic 설명서](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/home.html)
