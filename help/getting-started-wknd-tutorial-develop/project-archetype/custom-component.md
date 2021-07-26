@@ -11,9 +11,9 @@ level: Beginner
 kt: 4072
 mini-toc-levels: 1
 thumbnail: 30181.jpg
-source-git-commit: 255d6bd403d240b2c18a0ca46c15b0bb98cf9593
+source-git-commit: 66d35a41d63d4c33f71a118e9471c5aa58dc48a7
 workflow-type: tm+mt
-source-wordcount: '3967'
+source-wordcount: '4108'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ ht-degree: 0%
 1. Sling 모델을 사용하여 비즈니스 로직을 캡슐화하는 방법을 알아봅니다
 1. HTL 스크립트 내에서 Sling 모델을 사용하는 방법을 이해합니다
 
-## {#byline-component} 빌드할 내용
+## 빌드할 내용 {#byline-component}
 
 WKND 자습서의 이 부분에서 아티클의 기여자에 대한 작성된 정보를 표시하는 데 사용되는 줄 구성 요소가 만들어집니다.
 
@@ -78,7 +78,7 @@ WKND 자습서의 이 부분에서 아티클의 기여자에 대한 작성된 �
 * 이미지
 * 직업
 
-## 필자 구성 요소 {#create-byline-component} 만들기
+## 필자 구성 요소 만들기 {#create-byline-component}
 
 먼저 부산물 구성 요소 노드 구조를 만들고 대화 상자를 정의합니다. 이 항목은 AEM의 구성 요소를 나타내며 JCR의 해당 위치별로 구성 요소의 리소스 유형을 암시적으로 정의합니다.
 
@@ -105,7 +105,7 @@ WKND 자습서의 이 부분에서 아티클의 기여자에 대한 작성된 �
 
    위의 XML 파일은 제목, 설명 및 그룹을 포함하여 구성 요소에 대한 정의를 제공합니다. `sling:resourceSuperType`은 `core/wcm/components/image/v2/image`코어 이미지 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html)를 가리킵니다.[
 
-### HTL 스크립트 {#create-the-htl-script} 만들기
+### HTL 스크립트 만들기 {#create-the-htl-script}
 
 1. `byline` 폴더 아래에 구성 요소의 HTML 프레젠테이션을 담당하는 새 파일 `byline.html`을 추가합니다. Sling에서 이 리소스 유형을 렌더링하는 데 사용할 기본 스크립트가 되므로 폴더와 동일한 이름으로 파일 이름을 지정하는 것이 중요합니다.
 
@@ -120,13 +120,13 @@ WKND 자습서의 이 부분에서 아티클의 기여자에 대한 작성된 �
 
 `byline.html` Sling  [모델이 만들어지면 나중에](#byline-htl) 다시 방문합니다. HTL 파일의 현재 상태를 사용하면 구성 요소가 페이지로 끌어다 놓을 때 AEM Sites의 페이지 편집기에 빈 상태로 표시될 수 있습니다.
 
-### 대화 상자 정의 {#create-the-dialog-definition} 만들기
+### 대화 상자 정의 만들기 {#create-the-dialog-definition}
 
 다음으로, 다음 필드로 필자 구성 요소에 대한 대화 상자를 정의합니다.
 
-* **이름**:기여자 이름이 되는 텍스트 필드.
-* **이미지**:기여자의 소개 사진.
-* **직업**:기여자가 갖는 직업 목록. 직업은 오름차순(a~z)으로 정렬해야 합니다.
+* **이름**: 기여자 이름이 되는 텍스트 필드.
+* **이미지**: 기여자의 소개 사진.
+* **직업**: 기여자가 갖는 직업 목록. 직업은 오름차순(a~z)으로 정렬해야 합니다.
 
 1. `byline` 폴더 아래에서 `_cq_dialog` 라는 새 폴더를 만듭니다.
 1. `byline/_cq_dialog` 아래에 `.content.xml` 라는 새 파일을 추가합니다. 대화 상자의 XML 정의입니다. 다음 XML을 추가합니다.
@@ -204,12 +204,12 @@ WKND 자습서의 이 부분에서 아티클의 기여자에 대한 작성된 �
 
    ![필라인에 대한 완료 대화 상자](assets/custom-component/byline-dialog-created.png)
 
-### 정책 대화 상자 {#create-the-policy-dialog} 만들기
+### 정책 대화 상자 만들기 {#create-the-policy-dialog}
 
 대화 상자 만들기와 동일한 접근 방식에 따라 정책 대화 상자(이전의 디자인 대화 상자)를 만들어 핵심 구성 요소의 이미지 구성 요소에서 상속된 정책 구성에서 원하지 않는 필드를 숨깁니다.
 
 1. `byline` 폴더 아래에서 `_cq_design_dialog` 라는 새 폴더를 만듭니다.
-1. `byline/_cq_design_dialog` 아래에 `.content.xml` 라는 새 파일을 만듭니다. 파일을 다음과 같이 업데이트합니다.사용할 수 있습니다. `.content.xml` 을 열고 아래 XML을 복사하거나 붙여 넣는 것이 더 쉽습니다.
+1. `byline/_cq_design_dialog` 아래에 `.content.xml` 라는 새 파일을 만듭니다. 파일을 다음과 같이 업데이트합니다. 사용할 수 있습니다. `.content.xml` 을 열고 아래 XML을 복사하거나 붙여 넣는 것이 더 쉽습니다.
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -280,7 +280,7 @@ WKND 자습서의 이 부분에서 아티클의 기여자에 대한 작성된 �
 
    대화 상자 구성에서 처럼 [Sling Resource Merger](https://sling.apache.org/documentation/bundles/resource-merger.html)는 `sling:hideResource="{Boolean}true"` 속성을 사용하는 노드 정의에서 보듯이 `sling:resourceSuperType`에서 상속되지 않은 필드를 숨기는 데 사용됩니다.
 
-### 코드 {#deploy-the-code} 배포
+### 코드 배포 {#deploy-the-code}
 
 1. Maven 기술을 사용하여 로컬 AEM 인스턴스에 업데이트된 코드 베이스를 배포합니다.
 
@@ -289,7 +289,7 @@ WKND 자습서의 이 부분에서 아티클의 기여자에 대한 작성된 �
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-## 구성 요소를 페이지에 {#add-the-component-to-a-page} 추가
+## 페이지에 구성 요소 추가 {#add-the-component-to-a-page}
 
 작업을 단순화하고 AEM 구성 요소 개발에 집중할 수 있도록 현재 상태의 부산물 구성 요소를 문서 페이지에 추가하여 `cq:Component` 노드 정의가 배포되고 올바른지 확인하고, AEM은 새 구성 요소 정의를 인식하며 구성 요소의 대화 상자가 작성에 대해 작동합니다.
 
@@ -297,17 +297,17 @@ WKND 자습서의 이 부분에서 아티클의 기여자에 대한 작성된 �
 
 먼저 샘플 헤드 샷을 AEM Assets에 업로드하여 오프라인 구성 요소에서 이미지를 채우는 데 사용합니다.
 
-1. AEM Assets의 LA Skatestparks 폴더로 이동합니다.[http://localhost:4502/assets.html/content/dam/wknd/en/magazine/la-skateparks](http://localhost:4502/assets.html/content/dam/wknd/en/magazine/la-skateparks)
+1. AEM Assets의 LA Skatestparks 폴더로 이동합니다. [http://localhost:4502/assets.html/content/dam/wknd/en/magazine/la-skateparks](http://localhost:4502/assets.html/content/dam/wknd/en/magazine/la-skateparks)
 
 1. **[stacey-roswells.jpg](assets/custom-component/stacey-roswells.jpg)**&#x200B;에 대한 헤드 샷을 폴더에 업로드합니다.
 
    ![업로드된 헤드샷](assets/custom-component/stacey-roswell-headshot-assets.png)
 
-### 구성 요소 {#author-the-component} 작성
+### 구성 요소 작성 {#author-the-component}
 
 다음으로, AEM의 페이지에 타임라인 구성 요소를 추가합니다. Byline 구성 요소를 **WKND Sites Project - Content** 구성 요소 그룹에 추가했으므로 `ui.apps/src/main/content/jcr_root/apps/wknd/components/byline/.content.xml` 정의를 통해 이 구성 요소는 문서 페이지의 레이아웃 컨테이너가 있는 **WKND Sites Project - Content** 구성 요소 그룹을 허용하는 **Container**&#x200B;에서 자동으로 사용할 수 있습니다.****
 
-1. 다음 위치에서 LA 스케이트파크 문서로 이동합니다.[http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html)
+1. 다음 위치에서 LA 스케이트파크 문서로 이동합니다. [http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html)
 
 1. 왼쪽 사이드바에서 열린 문서 페이지의 레이아웃 컨테이너 **하단**&#x200B;에 있는 **개별 구성 요소**&#x200B;를 끌어다 놓습니다.
 
@@ -345,7 +345,7 @@ WKND 자습서의 이 부분에서 아티클의 기여자에 대한 작성된 �
 
    ![crxde의 byline 속성](assets/custom-component/byline-properties-crxde.png)
 
-## Sling Model {#create-sling-model} 작성
+## 라인 Sling 모델 작성 {#create-sling-model}
 
 다음으로, 데이터 모델 역할을 하는 Sling 모델을 만들고 Byline 구성 요소에 대한 비즈니스 논리를 제공합니다.
 
@@ -381,7 +381,7 @@ Sling 모델은 AEM에서 제공하는 여러 Java API를 사용합니다. 이�
 
    `uber-jar`은 `classic` 프로필이 호출될 때만 포함됩니다(예: `mvn clean install -PautoInstallSinglePackage -Pclassic`). 이 프로젝트에서도 고유합니다. AEM 프로젝트 원형(Project Archetype)에서 생성된 실제 프로젝트에서 지정된 AEM 버전이 6.5 또는 6.4인 경우 `uber-jar`이(가) 기본값입니다.
 
-   [uber-jar](https://docs.adobe.com/content/help/en/experience-manager-65/developing/devtools/ht-projects-maven.html#experience-manager-api-dependencies)에는 AEM 6.x에 의해 노출된 모든 공개 Java API가 포함되어 있습니다.버전은 프로젝트 `aem-guides-wknd/pom.xml`의 루트에 있는 상위 반응기 pom에서 유지됩니다.
+   [uber-jar](https://docs.adobe.com/content/help/en/experience-manager-65/developing/devtools/ht-projects-maven.html#experience-manager-api-dependencies)에는 AEM 6.x에 의해 노출된 모든 공개 Java API가 포함되어 있습니다. 버전은 프로젝트 `aem-guides-wknd/pom.xml`의 루트에 있는 상위 반응기 pom에서 유지됩니다.
 
 1. `core.wcm.components.core`에 대한 종속성을 찾습니다.
 
@@ -441,9 +441,22 @@ Sling 모델은 AEM에서 제공하는 여러 Java API를 사용합니다. 이�
 
    `isEmpty()` 메서드는 구성 요소에 렌더링할 컨텐츠가 있는지 또는 구성 대기 중인지 확인하는 데 사용됩니다.
 
-   이 이미지에 대한 방법은 없습니다.[나중에](#tackling-the-image-problem)인 이유를 살펴보겠습니다.
+   이 이미지에 대한 방법은 없습니다. [나중에](#tackling-the-image-problem)인 이유를 살펴보겠습니다.
 
-### 기본 구현 {#byline-implementation}
+1. 공개 Java 클래스가 들어 있는 Java 패키지, 이 경우 Sling 모델은 패키지의 `package-info.java` 파일을 사용하여 버전을 지정해야 합니다.
+
+WKND 소스의 Java 패키지 `com.adobe.aem.guides.wknd.core.models` 는 `2.0.0` 버전이므로 중단되지 않는 공용 인터페이스 및 메서드를 추가하고 있으므로 버전을 `2.1.0`(으)로 늘려야 합니다. `core/src/main/java/com/adobe/aem/guides/wknd/core/models/package-info.java`에서 파일을 열고 `@Version("2.0.0")`을 `@Version("2.1.0")`(으)로 업데이트하십시오.
+
+    &quot;
+    @Version(&quot;2.1.0&quot;)
+    package com.adobe.aem.guides.wknd.core.models;
+    
+    import org.osgi.annotation.versioning.Version;
+    &quot;
+
+이 패키지의 파일을 변경할 때마다 [패키지 버전을 의미상](https://semver.org/)조정해야 합니다. 없는 경우 Maven 프로젝트의 [bnd-baseline-maven-plugin](https://github.com/bndtools/bnd/tree/master/maven/bnd-baseline-maven-plugin)은 잘못된 패키지 버전을 감지하고 빌드된 패키지를 중단합니다. 다행히도, 실패 시 Maven 플러그인은 잘못된 Java 패키지 버전과 이 버전이 되어야 한다고 보고합니다. 위반되는 Java 패키지의 `package-info.java`에 있는 `@Version("...")` 선언을 수정하기 위해 플러그인이 권장하는 버전으로 방금 업데이트했습니다.
+
+### 필자 구현 {#byline-implementation}
 
 `BylineImpl.java` 는 이전에 정의된 인터페이스를 구현하는 Sling  `Byline.java` 모델의 구현입니다. `BylineImpl.java`에 대한 전체 코드는 이 섹션의 하단에 있습니다.
 
@@ -507,7 +520,7 @@ Sling 모델은 AEM에서 제공하는 여러 Java API를 사용합니다. 이�
    * `adapters` 매개 변수를 사용하면 Byline 인터페이스 아래에 구현 클래스를 등록할 수 있습니다. 이렇게 하면 HTL 스크립트가 impl이 직접 아닌 인터페이스를 통해 Sling 모델을 호출할 수 있습니다. [어댑터에 대한 자세한 내용은 여기에서 확인할 수 있습니다](https://sling.apache.org/documentation/bundles/models.html#specifying-an-alternate-adapter-class-since-110).
    * `resourceType`은(는) 순 구성 요소 리소스 유형(이전에 만든)을 가리키며, 여러 구현이 있는 경우 올바른 모델을 확인하는 데 도움이 됩니다. [모델 클래스를 리소스 유형과 연결하는 방법에 대한 자세한 내용은 여기에서 확인할 수 있습니다](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130).
 
-### Sling 모델 메서드 {#implementing-the-sling-model-methods} 구현
+### Sling 모델 메서드 구현 {#implementing-the-sling-model-methods}
 
 #### getName() {#implementing-get-name}
 
@@ -535,7 +548,7 @@ public class BylineImpl implements Byline {
 
 JCR 속성은 Java 필드와 동일한 이름을 공유하므로(둘 다 &quot;이름&quot;임) `@ValueMapValue`은 이 연결을 자동으로 확인하고 속성 값을 Java 필드에 삽입합니다.
 
-#### getProtesties() {#implementing-get-occupations}
+#### getTowals() {#implementing-get-occupations}
 
 다음 구현 방법은 `getOccupations()`입니다. 이 메서드는 JCR 속성 `occupations`에 저장된 모든 작업을 수집하고 정렬된(사전순) 컬렉션을 반환합니다.
 
@@ -835,7 +848,7 @@ public class BylineImpl implements Byline {
    ```
 
 
-## 줄 HTL {#byline-htl}
+## 필자 HTL {#byline-htl}
 
 `ui.apps` 모듈에서 AEM 구성 요소의 이전 세트에서 만든 `/apps/wknd/components/byline/byline.html` 을 엽니다.
 
@@ -869,7 +882,7 @@ public class BylineImpl implements Byline {
 
    CSS 클래스는 [BEM 이름 지정 규칙](https://getbem.com/naming/)을 따릅니다. BEM 규칙 사용은 필수가 아니지만, BEM은 핵심 구성 요소 CSS 클래스에서 사용되고 일반적으로 읽기 쉬운 CSS 규칙을 만드는 데 사용되므로 권장됩니다.
 
-### HTL {#instantiating-sling-model-objects-in-htl}에서 Sling Model 개체 인스턴스화
+### HTL에서 Sling Model 개체 인스턴스화 {#instantiating-sling-model-objects-in-htl}
 
 [Use block 문](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#221-use)은 HTL 스크립트에서 Sling Model 개체를 인스턴스화하고 HTL 변수에 할당하는 데 사용됩니다.
 
@@ -885,7 +898,7 @@ public class BylineImpl implements Byline {
    </div>
    ```
 
-### Sling 모델 메서드 {#accessing-sling-model-methods} 액세스
+### Sling 모델 메서드 액세스 {#accessing-sling-model-methods}
 
 HTL은 JSTL에서 빌리며 Java getter 메서드 이름의 단축과 동일한 사용을 사용합니다.
 
@@ -893,7 +906,7 @@ HTL은 JSTL에서 빌리며 Java getter 메서드 이름의 단축과 동일한 
 
 매개 변수 **이 필요한 Java 메서드는 HTL에서**&#x200B;를 사용할 수 없습니다. 이것은 HTL에서 논리를 단순하게 유지하기 위해 디자인에 의해 결정됩니다.
 
-1. Byline Sling Model에서 `getName()` 메서드를 호출하거나 HTL에서 Byline 이름을 구성 요소에 추가할 수 있습니다.`${byline.name}`.
+1. Byline Sling Model에서 `getName()` 메서드를 호출하거나 HTL에서 Byline 이름을 구성 요소에 추가할 수 있습니다. `${byline.name}`.
 
    `h2` 태그를 업데이트합니다.
 
@@ -913,9 +926,9 @@ HTL은 JSTL에서 빌리며 Java getter 메서드 이름의 단축과 동일한 
    <p class="cmp-byline__occupations">${byline.occupations @ join=', '}</p>
    ```
 
-### 자리 표시자 {#conditionally-displaying-the-placeholder}을 조건부 표시
+### 자리 표시자를 조건부로 표시 {#conditionally-displaying-the-placeholder}
 
-AEM 구성 요소에 대한 대부분의 HTL 스크립트는 **자리 표시자 패러다임**&#x200B;을 활용하여 구성 요소가 잘못 작성되고 AEM Publish **에 표시되지 않음을 나타내는**&#x200B;작성자에게 시각적 단서를 제공합니다. 이 결정을 내리기 위한 규칙은 구성 요소의 지원 Sling 모델에 대한 메서드를 구현하는 것입니다. 이 경우`Byline.isEmpty()`
+AEM 구성 요소에 대한 대부분의 HTL 스크립트는 **자리 표시자 패러다임**&#x200B;을 활용하여 구성 요소가 잘못 작성되고 AEM Publish **에 표시되지 않음을 나타내는**&#x200B;작성자에게 시각적 단서를 제공합니다. 이 결정을 내리기 위한 규칙은 구성 요소의 지원 Sling 모델에 대한 메서드를 구현하는 것입니다. 이 경우 `Byline.isEmpty()`
 
 `isEmpty()` 은 Byline Sling Model에서 호출되고 결과(또는  `!` 연산자를 통해 음수가 아님)가  `hasContent`라는 HTL 변수에 저장됩니다.
 
@@ -940,7 +953,7 @@ AEM 구성 요소에 대한 대부분의 HTL 스크립트는 **자리 표시자 
    <sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=!hasContent}"></sly>
    ```
 
-### 핵심 구성 요소 {#using-the-core-components-image}를 사용하여 이미지 표시
+### 핵심 구성 요소를 사용하여 이미지 표시 {#using-the-core-components-image}
 
 이제 `byline.html`에 대한 HTL 스크립트가 완료되었으며 이미지만 누락되었습니다.
 
@@ -989,7 +1002,7 @@ Core Components 이미지 구성 요소를 사용하여 이미지 작성을 제�
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
-### 스타일이 지정되지 않은 Byline 구성 요소 {#reviewing-the-unstyled-byline-component} 검토
+### 스타일이 지정되지 않은 필자 구성 요소 검토 {#reviewing-the-unstyled-byline-component}
 
 1. 업데이트를 배포한 후 [Ultimate Guide to LA Skatestparks ](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html) 페이지로 이동하거나 장에서 이전에 Byline 구성 요소를 추가한 위치로 이동합니다.
 
@@ -1007,7 +1020,7 @@ Core Components 이미지 구성 요소를 사용하여 이미지 작성을 제�
 
 *http://localhost:4502/system/console/status-slingmodels*
 
-## 개별 스타일 {#byline-styles}
+## 필자 스타일 {#byline-styles}
 
 필자 구성 요소의 크리에이티브 디자인에 맞추기 위해 필자 구성 요소를 스타일링해야 합니다. 이 작업은 **ui.frontend** Maven 하위 프로젝트를 통해 AEM이 지원을 제공하는 SCSS를 사용하여 수행됩니다.
 
@@ -1080,7 +1093,7 @@ Core Components 이미지 구성 요소를 사용하여 이미지 작성을 제�
    >
    >오래된 CSS가 제공되지 않도록 브라우저 캐시를 지우고 개별 구성 요소로 페이지를 새로 고쳐 전체 스타일이 지정된 페이지를 가져올 수 있습니다.
 
-## {#putting-it-together} 함께 넣기
+## 함께 {#putting-it-together}
 
 다음은 완전히 작성 및 스타일이 지정된 개별 구성 요소가 AEM 페이지에서 어떻게 표시되어야 하는지 설명합니다.
 
