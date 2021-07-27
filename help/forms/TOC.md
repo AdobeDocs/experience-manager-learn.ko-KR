@@ -5,10 +5,10 @@ user-guide-title: AEM Forms 비디오 및 튜토리얼
 user-guide-description: 초보자 및 숙련된 AEM Forms 개발자를 위한 AEM Forms 리소스 모음입니다.
 breadcrumb-title: AEM Forms 튜토리얼
 index: y
-source-git-commit: 540e11c0861eacc795122328b2359c7db6378aec
+source-git-commit: 65a40826d3be322673e116d98124c3cbfb1d6eb4
 workflow-type: tm+mt
-source-wordcount: '977'
-ht-degree: 6%
+source-wordcount: '1593'
+ht-degree: 3%
 
 ---
 
@@ -242,3 +242,74 @@ ht-degree: 6%
    + [파이 차트 구성](ic-web-channel-tutorial/parteleven.md)
    + [웹 채널 문서 전달](ic-web-channel-tutorial/parttwelve.md)
    + [웹 채널 문서의 이메일 전달](interactive-communications/delivery-of-web-channel-document-tutorial-use.md)
+
++ 문제 해결 {#troubleshooting}
+   + [문서 서비스: DDX 관련 문제를 해결하는 절차](troubleshooting/steps-to-capture-required-information-to-troubleshoot-ddx-related-issues.md)
+   + [문서 서비스: PDFA 변환 문제를 해결하는 절차](troubleshooting/steps-to-capture-required-information-to-troubleshoot-pdfa-conversion-issues.md)
+   + [문서 서비스: Forms 및 출력 서비스에 대한 글꼴 관련 문제를 디버깅하는 방법](troubleshooting/how-to-debug-font-related-issue-for-forms-and-output-service.md)
+   + [문서 서비스: Forms 및 출력 서비스용 글꼴을 포함하는 방법](troubleshooting/how-to-embed-fonts-for-forms-and-output-service.md)
+   + [문서 서비스: 성능 로깅을 사용하여 Forms 및 출력 서비스를 디버깅하는 방법](troubleshooting/how-to-enable-performance-logging-to-debug-forms-and-output-service.md)
+   + [문서 서비스: 대용량 파일 변환을 위한 경로 트랜잭션 시간 제한을 늘리는 방법](troubleshooting/how-to-increase-aries-transaction-timeout-for-conversion-of-large-files.md)
+   + [문서 서비스: FormsIVS 및 OutputIVS를 사용하여 로드 테스트를 실행하는 방법](troubleshooting/how-to-run-load-tests-using-formsivs-and-outputivs.md)
+   + [문서 서비스: FormsIVS 및 OutputIVS에서 사용자 지정 XDP 및 데이터 파일을 업데이트하는 방법](troubleshooting/how-to-update-custom-xdps-and-data-files-in-formsivs-and-outputivs.md)
+   + [문서 서비스: 자세한 ORB 추적을 활성화하는 단계](troubleshooting/steps-to-enable-verbose-orb-trace.md)
+   + [문서 서비스: XMLFormService part1에 대한 bmc 풀 크기를 조정하는 단계](troubleshooting/steps-to-tweak-bmc-pool-size-for-xmlformservice-1.md)
+   + [문서 서비스: XMLFormService part2에 대한 bmc 풀 크기를 조정하는 단계](troubleshooting/steps-to-tweak-bmc-pool-size-for-xmlformservice-2.md)
+   + [문서 서비스: JMX 콘솔에서 매개 변수를 수정하는 절차](troubleshooting/steps-to-tweak-parameters-on-jmx-console.md)
+   + [PDFG: PDFG에서 트랜잭션 시간 제한을 변경하는 방법](troubleshooting/how-to-change-the-transaction-timeout-in-pdfg.md)
+   + [PDFG: PDFG에서 CORBA 시간 제한을 업데이트하는 방법](troubleshooting/how-to-update-corba-timeout-in-pdfg.md)
+   + [PDFG: PDFG에서 시간 초과를 업데이트하는 방법](troubleshooting/how-to-update-the-timeouts-in-pdfg.md)
+   + [PDFG: Windows Server 2016에서 PDFG 사용자를 추가하는 절차](troubleshooting/steps-to-add-pdfg-user-in-windows-server.md)
+   + [PDFG: 32비트 라이브러리 및 해당 종속성을 확인하고 설치하는 단계](troubleshooting/steps-to-check-and-install-32-bit-libraries-and-their-dependencies.md)
+   + [PDFG: windows server 2016에서 폴더 권한을 확인하는 절차](troubleshooting/steps-to-check-folder-permission-on-windows-server-2016.md)
+   + [PDFG: unix에서 문자열을 활성화하는 단계](troubleshooting/steps-to-enable-strace-on-unix-setup.md)
+   + [PDFG: 필요한 32비트 Microsoft Visual C++ 재배포용 파일을 설치하는 단계](troubleshooting/steps-to-install-required-32bit-microsoft-vc-redistributables.md)
+   + [PDFG: 시스템 준비 도구 출력을 실행하고 해석하는 절차](troubleshooting/steps-to-run-and-interpret-output-of-system-readiness-tool.md)
+   + [PDFG: Acrobat 관련 문제를 해결하는 절차](troubleshooting/steps-to-troubleshoot-acrobat-specific-issues.md)
+   + [PDFG: Windows에서 HtmltoPDF 문제를 해결하는 절차](troubleshooting/steps-to-troubleshoot-htmltopdf-issues-on-windows.md)
+   + [PDFG: unix(PhantomJS)의 HtmltoPDF 관련 문제를 해결하는 절차](troubleshooting/steps-to-troubleshoot-htmltopdf-specific-issues-on-unix-phantomjs.md)
+   + [PDFG: unix의 HtmltoPDF 관련 문제를 해결하는 단계(WebKit 변환)](troubleshooting/steps-to-troubleshoot-htmltopdf-specific-issues-on-unix-webkit.md)
+   + [PDFG: unix에서 다중 사용자 PDFG 변환 문제 해결 절차](troubleshooting/steps-to-troubleshoot-multi-user-pdfg-conversion-on-unix.md)
+   + [PDFG: Windows에서 다중 사용자 PDFG 변환 문제 해결 절차](troubleshooting/steps-to-troubleshoot-multi-user-pdfg-conversion-on-windows.md)
+   + [PDFG: unix의 OpenOffice 관련 문제를 해결하는 절차](troubleshooting/steps-to-troubleshoot-openoffice-specific-issues-on-unix.md)
+   + [PDFG: Windows에서 OpenOffice 관련 문제를 해결하는 절차](troubleshooting/steps-to-troubleshoot-openoffice-specific-issues-on-windows.md)
+   + [문서 보안: Acrobat에서 문서 보안 모듈을 사용하여 만든 정책을 적용하는 방법](troubleshooting/how-to-apply-policy-created-using-document-security-module-in-acrobat.md)
+   + [사용자 관리: AEM Forms JEE에서 사용자 또는 그룹을 추가하는 방법](troubleshooting/how-to-add-users-or-groups-in-aem-forms-jee.md)
+   + [사용자 관리: UM 세션 시간 초과를 늘리는 방법](troubleshooting/how-to-increase-um-session-timeout.md)
+   + [Workbench: https를 사용하여 워크벤치 연결](troubleshooting/connecting-workbench-using-https.md)
+   + [Workbench: 도움말 메뉴에서 Workbench 로그 수집](troubleshooting/gathering-workbench-logs-from-help-menu.md)
+   + [Workbench: Workbench에 대한 디버그 출력을 활성화하는 방법](troubleshooting/how-to-enable-debug-output-for-workbench.md)
+   + [Workbench: Workbench 메모리 매개 변수를 사용하는 방법](troubleshooting/how-to-tweak-workbench-memory-parameters.md)
+   + [Workbench: Workbench 성능 매개 변수 조정 방법](troubleshooting/how-to-tweak-workbench-performance-parameters.md)
+   + [디자이너: C++ 재배포 가능 디자이너에 대한 종속성](troubleshooting/dependency-of-vc-on-designer.md)
+   + [디자이너: HTML 미리 보기를 활성화하는 방법](troubleshooting/how-to-enable-html-preview.md)
+   + [디자이너: PDF 미리 보기를 활성화하는 방법](troubleshooting/how-to-enable-pdf-preview.md)
+   + [디자이너: 디자이너 패치 설치 방법](troubleshooting/how-to-install-designer-patches.md)
+   + [JEE Foundation: 엔트로피 값을 변경하는 방법](troubleshooting/how-to-change-the-value-of-entropy.md)
+   + [JEE Foundation: AEM Forms JEE에서 모든 서비스의 트랜잭션 시간 제한을 변경하는 방법](troubleshooting/how-to-change-transaction-timeout-of-any-service-in-aem-forms-jee.md)
+   + [JEE Foundation: 작업 관리자 테이블에서 프로세스 레코드를 삭제하는 방법](troubleshooting/how-to-purge-process-records-from-the-job-manager-table.md)
+   + [JEE Foundation: 명령줄에서 프로세스 삭제를 실행하는 방법](troubleshooting/how-to-run-process-purge-from-command-line.md)
+   + [JEE Foundation: 수동으로 부트스트랩 단계](troubleshooting/steps-to-bootstrap-manually.md)
+   + [JEE Foundation: 모바일 양식에 대한 디버그 로그를 캡처하는 절차](troubleshooting/steps-to-capture-debug-logs-for-mobile-forms.md)
+   + [JEE Foundation: ForcedDisconnectException 완화 단계](troubleshooting/steps-to-mitigate-forceddisconnectexception.md)
+   + [일반: JBoss Admin Console용 관리 사용자를 추가하는 방법](troubleshooting/how-to-add-management-user-for-jboss-admin-console.md)
+   + [일반: HAR 로그를 캡처하는 방법](troubleshooting/how-to-capture-har-logs.md)
+   + [일반: unix 서버에서 JVM 힙을 캡처하는 방법](troubleshooting/how-to-capture-heap-dumps-of-a-jvm-on-a-unix-server.md)
+   + [일반: Windows 서버에서 JVM 힙을 캡처하는 방법](troubleshooting/how-to-capture-heap-dumps-of-a-jvm-on-a-windows-server.md)
+   + [일반: 네트워크 로그를 캡처하는 방법](troubleshooting/how-to-capture-network-logs.md)
+   + [일반: unix 서버에서 JVM의 스레드 덤프를 캡처하는 방법](troubleshooting/how-to-capture-thread-dumps-of-a-jvm-on-a-unix-server.md)
+   + [일반: Windows 서버에서 JVM의 스레드 덤프를 캡처하는 방법](troubleshooting/how-to-capture-thread-dumps-of-a-jvm-on-a-windows-server.md)
+   + [일반: 자체 서명된 인증서를 생성하는 방법](troubleshooting/how-to-generate-a-self-signed-certificate.md)
+   + [일반: HTML5 양식에서 웹 서비스를 호출하는 방법](troubleshooting/how-to-make-web-service-call-from-html5-form.md)
+   + [일반: AEM Forms OSGI의 모든 클래스에 대한 디버그 로깅을 활성화하는 절차](troubleshooting/steps-to-enable-debug-logging-for-any-classes-in-aem-forms-osgi.md)
+   + [일반: JBOSS Application Server의 모든 클래스에 대해 디버그 로깅을 활성화하는 절차](troubleshooting/steps-to-enable-debug-logging-for-any-classes-in-jboss-application-server.md)
+   + [일반: Websphere Application Server의 모든 클래스에 대해 디버그 로깅을 활성화하는 절차](troubleshooting/steps-to-enable-debug-logging-for-any-classes-in-websphere-application-server.md)
+   + [일반: AEM Forms OSGi에 대한 SSL을 활성화하는 절차](troubleshooting/steps-to-enable-ssl-for-aem-forms-osgi.md)
+   + [일반: lc_turnkey.xml에 사용할 키 저장소 암호를 암호화하는 절차](troubleshooting/steps-to-encrypt-keystore-password-to-be-used-in-lc-turnkey-xml.md)
+   + [일반: Steps-to-reset-default-password-for-users-in-AEM-Forms-JEE](troubleshooting/steps-to-reset-default-password-for-users-in-aem-forms-jee.md)
+   + [일반: Steps-to-reset-default-password-for-users-in-AEM-Forms-OSGI](troubleshooting/steps-to-reset-default-password-for-users-in-aem-forms-osgi.md)
+   + [일반: 클러스터에서 Gemfire 로케이터를 설정하고 관련 구성을 수행하는 절차](troubleshooting/steps-to-set-up-gemfire-locators-in-a-cluster-and-perform-related-configuration.md)
+
+
+
+
