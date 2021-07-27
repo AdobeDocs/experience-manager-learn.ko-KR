@@ -12,9 +12,9 @@ thumbnail: 330519.jpg
 topic: 헤드리스, 통합
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: e0822ad4aaf4022a849825ef625e1c29eb6e78f3
+source-git-commit: b902ced3d7f7cf827d0a487bf741ff370f7c1f04
 workflow-type: tm+mt
-source-wordcount: '1828'
+source-wordcount: '1863'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,10 @@ AEM as a Cloud Service과 통합하려면 AEM에 안전하게 인증할 수 있�
 
 __AEM as a Cloud Service 환경당 1회 초기화입니다__
 
-1. Adobe IMS 조직 관리자로 로그인했는지 확인합니다
+1. 다음과 같이 로그인되어 있는지 확인하십시오.
+   + Adobe IMS 조직의 관리자
+   + __Cloud Manager - Developer__ IMS 제품 프로필 구성원
+   + __AEM User__ 또는 __AEM Administrators__ IMS 제품 프로필의 구성원 __AEM Author__
 1. [Adobe Cloud Manager](https://my.cloudmanager.adobe.com)에 로그인합니다.
 1. AEM을 Cloud Service 환경으로 포함하는 프로그램을 열어 서비스 자격 증명 설정을 통합합니다.
 1. __환경__ 섹션에서 환경 옆에 있는 줄임표를 탭하고 __개발자 콘솔__ 을 선택합니다.
@@ -67,8 +70,10 @@ Cloud Service 환경의 서비스 자격 증명이 초기화되면 Adobe IMS 조
 
 서비스 자격 증명을 다운로드하는 방법은 초기화와 동일한 단계를 따릅니다. 초기화가 아직 발생하지 않은 경우 __서비스 자격 증명 가져오기__ 단추를 탭하면 오류가 표시됩니다.
 
-1. __Cloud Manager - Developer__ IMS 제품 프로필(AEM Developer Console에 대한 액세스 권한을 부여하는)의 구성원인지 확인합니다
-   + Sandbox AEM as a Cloud Service 환경에는 __AEM Administrators__ 또는 __AEM Users__ 제품 프로필의 멤버십만 필요합니다
+1. 로 로그인했는지 확인합니다.
+   + __Cloud Manager - Developer__ IMS 제품 프로필(AEM Developer Console에 대한 액세스 권한을 부여합니다)의 구성원
+      + Cloud Service 환경으로서 Sandbox AEM에는 이 __Cloud Manager - Developer__ 멤버십이 필요하지 않습니다
+   + __AEM User__ 또는 __AEM Administrators__ IMS 제품 프로필의 구성원 __AEM Author__
 1. [Adobe Cloud Manager](https://my.cloudmanager.adobe.com)에 로그인합니다.
 1. AEM을 Cloud Service 환경으로 포함하는 프로그램을 열어
 1. __환경__ 섹션에서 환경 옆에 있는 줄임표를 탭하고 __개발자 콘솔__ 을 선택합니다.
@@ -207,7 +212,7 @@ function getCommandLineParams() {
 
 기술 계정 AEM 사용자가 AEM에 있으면(액세스 토큰을 사용하여 첫 번째 HTTP 요청 후) 이 AEM 사용자의 권한을 다른 AEM 사용자와 동일하게 관리할 수 있습니다.
 
-1. 먼저 AEM Developer Console에서 다운로드한 서비스 자격 증명 JSON을 열어 기술 계정의 AEM 로그인 이름을 찾은 다음 과 유사하게 보이는 `integration.email` 값을 찾습니다.`12345678-abcd-9000-efgh-0987654321c@techacct.adobe.com`.
+1. 먼저 AEM Developer Console에서 다운로드한 서비스 자격 증명 JSON을 열어 기술 계정의 AEM 로그인 이름을 찾은 다음 과 유사하게 보이는 `integration.email` 값을 찾습니다. `12345678-abcd-9000-efgh-0987654321c@techacct.adobe.com`.
 1. 해당 AEM 환경의 작성자 서비스에 AEM 관리자로 로그인합니다
 1. __도구__ > __보안__ > __사용자__&#x200B;로 이동합니다.
 1. 1단계에서 식별된 __로그인 이름__&#x200B;을 사용하여 AEM 사용자를 찾아 __속성__&#x200B;을 엽니다.
