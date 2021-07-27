@@ -3,10 +3,10 @@ user-guide-title: AEM Sites 비디오 및 튜토리얼
 user-guide-description: Adobe Experience Manager Sites에 대한 비디오 및 튜토리얼 모음입니다.
 breadcrumb-title: AEM Sites 튜토리얼
 sub-product: 사이트
-source-git-commit: 4620acc18a08d71994753903b79247a8ed3fd8f5
+source-git-commit: 65a40826d3be322673e116d98124c3cbfb1d6eb4
 workflow-type: tm+mt
-source-wordcount: '446'
-ht-degree: 22%
+source-wordcount: '605'
+ht-degree: 16%
 
 ---
 
@@ -112,3 +112,24 @@ ht-degree: 22%
       + [경험 조각 오퍼를 사용하여 Target 활동 생성](integrations/adobe-target/create-target-activity.md)
       + [Visual Experience Composer를 사용한 개인화](integrations/adobe-target/personalization-using-vec.md)
       + [전체 웹 페이지 경험의 개인화](integrations/adobe-target/personalization-web-page.md)
+
++ Dynamic Media Tutorials {#dynamic-media}
+   + [DMc 앱을 사용한 보안 미리 보기를 위해 Dynamic Media에서 테스트 이미지 서버(클라이언트 IP 필터) 세부 정보 추가](dynamic-media/adding-test-image-server-details-in-dynamic-media-for-secure-preview.md)
+   + [AEM Dynamic Media을 사용하여 다양한 종류의 세트 만들기 | 회전 메뉴 세트](dynamic-media/creating-different-kinds-of-sets-with-aem-dynamic-media-carousel-sets.md)
+   + [AEM Dynamic Media으로 다른 종류의 세트 만들기| 이미지 세트](dynamic-media/creating-different-kinds-of-sets-with-aem-dynamic-media-image-sets.md)
+   + [이미지 사전 설정 만들기](dynamic-media/creating-image-presets.md)
+   + [Dynamic Media에서 이미지 프로필(스마트 자르기) 만들기](dynamic-media/creating-image-profile-smart-crop.md)
+   + [Dynamic Media에서 비디오를 처리하는 비디오 프로필 만들기](dynamic-media/creating-video-profile-to-process-videos-in-dynamic-media.md)
+   + [Dynamic Media 구성 삭제](dynamic-media/deleting-dynamic-media-configuration.md)
+   + [Dynamic Media Classic 앱에서 자산을 다운로드하는 방법](dynamic-media/how-to-download-asset-in-dynamic-media-classic-app.md)
+   + [자산에 대한 공개 URL 또는 포함 코드를 생성하는 방법](dynamic-media/how-to-generate-public-url-or-embed-code-for-an-asset.md)
+   + [Dynamic Media이 활성화된 자산에서 DAM 자산 업데이트 워크플로우를 실행하는 방법입니다.](dynamic-media/how-to-run-dam-update-asset-workflow-on-an-asset-with-dynamic-media-enabled.md)
+   + [제출 작업 작업 매개 변수 동안 Dynamic Media에서 내보내기 작업을 트리거하는 방법](dynamic-media/how-to-trigger-export-job-in-dynamic-media-during-submit-job-operation-parameter.md)
+   + [Dynamic Media Classic IPS API 소개](dynamic-media/introduction-to-dynamic-media-classic-ips-api.md)
+   + [Dynamic Media을 통해 CDN 캐시 무효화](dynamic-media/invalidating-the-cdn-cache-by-way-of-dynamic-media.md)
+   + [사이트 페이지에서 DM 구성 요소 사용](dynamic-media/using-dm-components-on-site-page.md)
+
++ Brand Portal Tutorials {#brand-portal}
+   + [Brand Portal로 자산 소싱 구성](brand-portal/configuring-asset-sourcing-with-the-brand-portal.md)
+   + [표현물 다운로드를 활성화하는 방법](brand-portal/how-to-enable-the-download-of-renditions.md)
+   + [AEM Assets Brand Portal 구성 단계](brand-portal/steps-to-configure-aem-assets-brand-portal.md)
