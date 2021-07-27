@@ -4,10 +4,10 @@ breadcrumb-title: AEM Foundation 튜토리얼
 user-guide-description: 'Adobe Experience Manager Foundation에 대한 비디오 및 튜토리얼 모음입니다. '
 sub-product: foundation
 index: y
-source-git-commit: 01053f3d8de0405cfc7058f46443647154c508c4
+source-git-commit: 65a40826d3be322673e116d98124c3cbfb1d6eb4
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 21%
+source-wordcount: '221'
+ht-degree: 14%
 
 ---
 
@@ -46,4 +46,14 @@ ht-degree: 21%
    + [워크플로우 편집기 사용](./workflow/use-the-workflow-editor.md)
    + [워크플로우 사용](./workflow/use-workflow.md)
    + [받은 편지함 사용](./workflow/use-the-inbox.md)
-
++ 문제 해결 {#troubleshooting}
+   + [자산 다운로드 보고서를 활성화하는 방법](./troubleshooting/how-to-enable-asset-download-report.md)
+   + [AEM6.4에서 다시 컴파일하는 방법](./troubleshooting/how-to-force-recompilation.md)
+   + [AEM에서 색인 관련 문제를 조사하는 방법](./troubleshooting/how-to-investigate-indexing-related-issues.md)
+   + [AEM에서 SAML 관련 문제를 조사하는 방법](./troubleshooting/how-to-investigate-saml-related-issues.md)
+   + [AEM에서 검색 관련 문제를 조사하는 방법](./troubleshooting/how-to-investigate-search-related-issues.md)
+   + [Oak 로그인 토큰 세션 만료를 설정하는 방법](./troubleshooting/how-to-set-the-oak-login-token-session-expiration.md)
+   + [Jetty 구성과 관련된 문제를 해결하는 방법](./troubleshooting/how-to-troubleshoot-issues-related-to-jetty-configuration.md)
+   + [성능 관련 문제를 해결하는 방법](./troubleshooting/how-to-troubleshoot-performance-related-issues.md)
+   + [AEM의 메모리 관련 문제를 해결하는 절차](./troubleshooting/steps-to-resolve-memory-related-issues.md)
+   + [AEM의 복제 문제를 해결하는 절차](./troubleshooting/steps-to-resolve-replication-issues.md)
