@@ -4,7 +4,7 @@ user-guide-description: Adobe Experience Manager as a Cloud Service를 위한 �
 breadcrumb-title: AEM as a Cloud Service 튜토리얼
 sub-product: 클라우드 서비스
 team: TM
-source-git-commit: 680043f5717bf938bf6f0b960d9ed5939d13544c
+source-git-commit: e442c6d67a02aae4c6ce9241e754c15abc920c67
 workflow-type: tm+mt
 source-wordcount: '460'
 ht-degree: 21%
@@ -59,12 +59,12 @@ ht-degree: 21%
       + [Dispatcher 구성 마이그레이션](./developing/basics/dispatcher-configuration.md)
    + AEM 프로젝트{#aem-projects}
       + [AEM Maven 프로젝트](./developing/projects/maven-project-structure.md)
-+ OSGi 서비스{#osgi-services}
-   + [OSGi 서비스 기본 사항](./developing/osgi-services/basics.md)
-   + [OSGi 구성 요소 라이프사이클](./developing/osgi-services/lifecycle.md)
-   + [OSGi 구성 기본 사항](./developing/osgi-services/configurations.md)
-   + [OCD를 사용한 OSGi 구성](./developing/osgi-services/configurations-ocd.md)
-+ [AEM SDK API JavaDocs](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html)
+   + OSGi 서비스{#osgi-services}
+      + [OSGi 서비스 기본 사항](./developing/osgi-services/basics.md)
+      + [OSGi 구성 요소 라이프사이클](./developing/osgi-services/lifecycle.md)
+      + [OSGi 구성 기본 사항](./developing/osgi-services/configurations.md)
+      + [OCD를 사용한 OSGi 구성](./developing/osgi-services/configurations-ocd.md)
+   + [AEM SDK API JavaDocs](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html)
 + AEM{#debugging} 디버깅
    + AEM SDK{#debugging-aem-sdk} 디버깅
       + [개요](./debugging/aem-sdk-local-quickstart/overview.md)
