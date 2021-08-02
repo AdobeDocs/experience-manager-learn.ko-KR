@@ -12,9 +12,9 @@ version: 6.4, 6.5
 topic: 개발
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: f2a94910fbc29b705f82a66d8248cbcf54366874
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '345'
 ht-degree: 0%
 
 ---
@@ -148,7 +148,7 @@ public Document mobileFormToInteractivePdf(Document xmlData,String path) {
 }
 ```
 
-부분적으로 완료된 모바일 양식에서 대화형 PDF를 다운로드하는 기능을 보려면 [여기](https://forms.enablementadobe.com/content/dam/formsanddocuments/schengen.xdp/jcr:content)를 클릭하십시오.
+부분적으로 완료된 모바일 양식에서 대화형 PDF를 다운로드하는 기능을 보려면 [여기](https://forms.enablementadobe.com/content/dam/formsanddocuments/xdptemplates/schengenvisa.xdp/jcr:content)를 클릭하십시오.
 PDF를 다운로드하면 다음 단계는 PDF를 제출하여 AEM 워크플로우를 트리거하는 것입니다. 이 워크플로우는 제출된 PDF의 데이터를 병합하고 검토할 비대화형 PDF를 생성합니다.
 
 이 사용 사례에 대해 만든 사용자 지정 프로필은 이 자습서 자산의 일부로 사용할 수 있습니다.
