@@ -5,9 +5,9 @@ user-guide-title: AEM Forms 비디오 및 튜토리얼
 user-guide-description: 초보자 및 숙련된 AEM Forms 개발자를 위한 AEM Forms 리소스 모음입니다.
 breadcrumb-title: AEM Forms 튜토리얼
 index: y
-source-git-commit: 65a40826d3be322673e116d98124c3cbfb1d6eb4
+source-git-commit: 55a6ff5d01898b994aee60f214126c5c18a06a5e
 workflow-type: tm+mt
-source-wordcount: '1593'
+source-wordcount: '1597'
 ht-degree: 3%
 
 ---
@@ -198,6 +198,7 @@ ht-degree: 3%
    + [AEM Forms에서 출력 및 Forms 서비스 사용](document-services/output-and-forms-services-article-develop.md)
    + [하나의 데이터 파일에서 여러 pdf 생성](document-services/generate-multi-record-pdf.md)
    + [모바일 양식 제출에서 PDF 생성](document-services/generate-pdf-from-mobile-form-submission-article.md)
+   + [Reader 확장 자격 증명 구성](document-services/configuring-reader-extension-osgi.md)
    + [모바일 양식에서 대화형 PDF 생성](document-services/render-interactive-form-using-api.md)
    + [XDP 표현물의 PDF에 사용 권한 적용](document-services/rendering-and-reader-extending-xdp-templates-article.md)
    + [업로드된 PDF에 사용 권한 적용](document-services/apply-reader-extension-rights-to-pdf.md)
