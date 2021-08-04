@@ -14,9 +14,9 @@ discoiquuid: aefb4124-91a0-4548-94a3-86785ea04549
 topic: 개발
 role: Developer
 level: Experienced
-source-git-commit: 55a6ff5d01898b994aee60f214126c5c18a06a5e
+source-git-commit: 2fc4f748fd3b8f820d1451d08c5fe01d11892029
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '464'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,10 @@ ht-degree: 0%
 이 사용 사례를 수행하려면 다음을 수행해야 합니다.
 
 * Reader 확장 인증서를 &quot;fd-service&quot; 사용자에게 추가합니다. Reader 확장 자격 증명을 추가하는 단계는 [여기](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html?lang=en)에 나열되어 있습니다.
+
+
+* [Reader 확장 자격 증명 구성](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html)에서 비디오를 참조할 수도 있습니다
+
 
 * 사용 권한을 렌더링하고 적용할 사용자 지정 OSGi 서비스를 만듭니다. 이를 수행할 코드는 다음과 같습니다
 
