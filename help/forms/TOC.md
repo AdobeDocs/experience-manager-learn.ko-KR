@@ -5,9 +5,9 @@ user-guide-title: AEM Forms 비디오 및 튜토리얼
 user-guide-description: 초보자 및 숙련된 AEM Forms 개발자를 위한 AEM Forms 리소스 모음입니다.
 breadcrumb-title: AEM Forms 튜토리얼
 index: y
-source-git-commit: 55a6ff5d01898b994aee60f214126c5c18a06a5e
+source-git-commit: 2fc4f748fd3b8f820d1451d08c5fe01d11892029
 workflow-type: tm+mt
-source-wordcount: '1597'
+source-wordcount: '1603'
 ht-degree: 3%
 
 ---
@@ -51,6 +51,7 @@ ht-degree: 3%
    + [응용 Forms의 미리 채우기 서비스](adaptive-forms/prefill-service-adaptive-forms-article-use.md)
    + [적응형 Forms에서 사용자 지정 제출](adaptive-forms/custom-submit-aem-forms-article.md)
    + [응용 Forms의 Captcha](adaptive-forms/forms-captcha-feature-video-use.md)
+   + [웹 페이지에 적응형 양식 포함](adaptive-forms/embed-af-web-page.md)
    + [OSGI 워크플로우에서 XML에 값 설정 사용](adaptive-forms/setvalue-aem-forms-workflow-tutorial-use.md)
    + [OSGI 워크플로우에서 JSON에서 값 설정 사용](adaptive-forms/setvalue-json-data-in-aem-forms-workflow-article-use.md)
    + [AEM Forms 워크플로우에서 이메일 구성 요소 보내기](adaptive-forms/email-step-aem-workflow-video-use.md)
@@ -198,8 +199,8 @@ ht-degree: 3%
    + [AEM Forms에서 출력 및 Forms 서비스 사용](document-services/output-and-forms-services-article-develop.md)
    + [하나의 데이터 파일에서 여러 pdf 생성](document-services/generate-multi-record-pdf.md)
    + [모바일 양식 제출에서 PDF 생성](document-services/generate-pdf-from-mobile-form-submission-article.md)
-   + [Reader 확장 자격 증명 구성](document-services/configuring-reader-extension-osgi.md)
    + [모바일 양식에서 대화형 PDF 생성](document-services/render-interactive-form-using-api.md)
+   + [Reader 확장 자격 증명 구성](document-services/configuring-reader-extension-osgi.md)
    + [XDP 표현물의 PDF에 사용 권한 적용](document-services/rendering-and-reader-extending-xdp-templates-article.md)
    + [업로드된 PDF에 사용 권한 적용](document-services/apply-reader-extension-rights-to-pdf.md)
    + [문서 인증](document-services/certifying-documents-aem-forms-tutorial.md)
