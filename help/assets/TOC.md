@@ -4,7 +4,7 @@ user-guide-description: Adobe Experience Manager Assets에 대한 비디오 및 
 breadcrumb-title: AEM Assets 튜토리얼
 sub-product: assets
 team: TM
-source-git-commit: 53312e573ca022f09faa44cbbf51c5b8b0ed90ee
+source-git-commit: 46f270c5b26baeb546997f2191cc28801444a290
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 32%
@@ -121,4 +121,3 @@ ht-degree: 32%
 
 + 배포{#deployment}
    + [멀티 테넌트 관리 및 동시 개발](deployment/multitenancy-concurrent-article-understand.md)
-
