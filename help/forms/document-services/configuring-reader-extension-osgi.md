@@ -11,9 +11,9 @@ version: 6.4,6.5
 topic: 관리
 role: Admin
 level: Beginner
-source-git-commit: 55a6ff5d01898b994aee60f214126c5c18a06a5e
+source-git-commit: 2fc4f748fd3b8f820d1451d08c5fe01d11892029
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '212'
 ht-degree: 0%
 
 ---
@@ -40,6 +40,15 @@ DocAssurance 서비스는 PDF 문서에 사용 권한을 적용할 수 있습니
 비디오에 따라 fd 서비스 사용자에게 자격 증명을 추가하십시오
 
 >[!VIDEO](https://video.tv.adobe.com/v/335849?quality=9&learn=on)
+
+
+pfx 파일의 세부 정보를 나열하는 명령은 입니다. 다음 명령은 사용자가 pfx 파일 과 동일한 디렉터리에 있다고 가정합니다.
+
+**keytool -v -list -storetype pkcs12 -keystore  &lt;name of=&quot;&quot; your=&quot;&quot;>**
+
+예: keytool -v -list -storetype pkcs12 -keystore 1005566.pfx 여기서 1005566.pfx는 내 pfx 파일의 이름입니다.
+
+
 
 
 
