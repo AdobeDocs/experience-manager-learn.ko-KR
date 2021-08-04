@@ -1,21 +1,23 @@
 ---
 title: "Assets Essentials 사용\t"
-description: null
+description: Assets Essentials에서 자산을 다운로드하는 방법을 학습합니다.
 version: cloud-service
 feature: Assets Essentials
 topic: 컨텐츠 관리
 role: User
 level: Beginner
-kt: null
+kt: 8380
 thumbnai: 335861.jpeg
-source-git-commit: 46f270c5b26baeb546997f2191cc28801444a290
+source-git-commit: 882c7ce872533ab4848c8db6145172b8cce4e270
 workflow-type: tm+mt
-source-wordcount: '10'
-ht-degree: 20%
+source-wordcount: '32'
+ht-degree: 6%
 
 ---
 
 
 # Assets Essentials 사용
 
->[!VIDEO](https://video.tv.adobe.com/v/335861/?quality=9&learn=on)
+Assets Essentials에서 자산을 다운로드하는 방법을 학습합니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/335861/?quality=12&learn=on)
