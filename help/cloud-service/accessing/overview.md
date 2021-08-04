@@ -12,9 +12,9 @@ thumbnail: KT-5882.jpg
 topic: 관리, 보안
 role: Admin
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 36346a8a45fc20b5e6d71d6d00345d74b6b04c2a
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '603'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,11 @@ ht-degree: 1%
 >title="Adobe IMS 소개"
 >abstract="AEM as a Cloud Service은 Adobe IMS(Identity Management System)를 활용하여 사용자와 관리자 및 일반 사용자 모두 AEM 작성자 서비스에 쉽게 로그인할 수 있습니다. AEM 그룹 및 권한과 함께 Adobe IMS 사용자, 그룹 및 제품 프로필을 사용하여 AEM 작성자 서비스에 세밀하게 액세스하는 방법을 알아봅니다."
 
-AEM as a Cloud Service은 클라우드 기반의 AEM 애플리케이션 활용 방법으로서, 은 Adobe IMS(Identity Management System)를 활용하여 사용자와 관리자 및 일반 사용자 모두가 AEM 작성자 서비스에 쉽게 로그인할 수 있도록 합니다. AEM 그룹 및 권한과 함께 Adobe IMS 사용자, 그룹 및 제품 프로필을 사용하여 AEM 작성자 서비스에 세밀하게 액세스하는 방법을 알아봅니다.
+AEM as a Cloud Service은 클라우드 기반의 AEM 애플리케이션 활용 방법으로서, 은 Adobe IMS(Identity Management System)를 활용하여 사용자와 관리자 및 일반 사용자 모두가 AEM 작성자 서비스에 쉽게 로그인할 수 있도록 합니다.
+
+![Adobe Admin Console](./assets/hero.png)
+
+AEM 그룹 및 권한과 함께 Adobe IMS 사용자, 그룹 및 제품 프로필을 사용하여 AEM 작성자 서비스에 세밀하게 액세스하는 방법을 알아봅니다.
 
 ## IMS 사용자 Adobe
 
