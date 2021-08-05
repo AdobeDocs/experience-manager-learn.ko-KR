@@ -7,9 +7,9 @@ topic: 컨텐츠 관리
 role: User
 level: Beginner
 thumbnail: 28988.jpg
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 0cfa83bdbd534f0fa06b3fa0013971feb188224e
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '1029'
 ht-degree: 2%
 
 ---
@@ -20,6 +20,13 @@ ht-degree: 2%
 Adobe Experience Manager 자산은 디자이너와 크리에이티브 사용자가 선호하는 Adobe Creative Cloud 데스크탑 애플리케이션 내에서 사용할 수 있습니다.
 
 Adobe Creative Cloud for enterprise에 대한 AEM Asset Link 확장 기능은 Creative Cloud 애플리케이션 내에서 Adobe 자산의 메타데이터를 검색 및 탐색, 정렬, 미리 보기, 업로드, 체크아웃, 수정, 체크인 및 볼 수 있는 기능을 확장합니다.
+
+
+## Adobe Asset Link 및 AEM Creative 워크플로우
+
+다음 비디오에서는 Adobe Creative Cloud 애플리케이션에서 작업하는 크리에이티브가 사용하는 일반적인 워크플로우를 보여주고, Adobe 자산 링크를 사용하여 AEM과 직접 통합합니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/335927/?quality=12&learn=on)
 
 ## 자산 링크 기능 Adobe
 
