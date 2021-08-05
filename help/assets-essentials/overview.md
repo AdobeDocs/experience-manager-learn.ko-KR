@@ -2,9 +2,9 @@
 title: AEM Assets Essentials 비디오
 description: Adobe Experience Manager Assets Essentials용 비디오 모음입니다
 sub-product: assets
-source-git-commit: 36346a8a45fc20b5e6d71d6d00345d74b6b04c2a
+source-git-commit: c385183bee58bc062f4d46253096828c03e058c3
 workflow-type: tm+mt
-source-wordcount: '126'
+source-wordcount: '133'
 ht-degree: 0%
 
 ---
@@ -35,16 +35,16 @@ Assets Essentials을 사용하여 자산을 관리하는 방법과 Adobe 여정 
    </p>
 </td>
 <td>
-   <a href="./basics/collaborating.md">
-   <img alt="" src="./assets/overview/collaboration.png"/>
+   <a href="https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html">
+   <img alt="" src="./assets/overview/assets-essentials-docs.png"/>
    </a>
    <div>
-      <a href="./basics/collaborating.md">
-      <strong>공동 작업 Assets Essentials</strong>
+      <a href="https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html">
+      <strong>Assets Essentials 설명서</strong>
       </a>
    </div>
    <p>
-      <em>Assets Essentials이 자산의 라이프 사이클을 관리하기 위해 경량 작업 관리를 제공하는 방법에 대해 알아보십시오.</em>
+      <em>Assets Essentials 제품 설명서를 확인하십시오!</em>
    <p>
 </td>
 <td>
@@ -53,7 +53,7 @@ Assets Essentials을 사용하여 자산을 관리하는 방법과 Adobe 여정 
    </a>
    <div>
       <a href="https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-messages/create-email-content-with-the-message-editor.html">
-      <strong>Adobe Journey Optimizer</strong>
+      <strong>Adobe Journey Optimizer 통합</strong>
       </a>
    </div>
    <p>
