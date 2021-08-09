@@ -4,10 +4,10 @@ user-guide-description: Adobe Experience Manager Assets Essentials을 위한 비
 breadcrumb-title: AEM Assets Essentials 비디오
 sub-product: assets
 team: TM
-source-git-commit: 5438fd521e08b37405f18e5fc2e7fc1f02592a78
+source-git-commit: 70ec794abc15aaed23f5a7bd99a3deafc65ed401
 workflow-type: tm+mt
-source-wordcount: '42'
-ht-degree: 9%
+source-wordcount: '44'
+ht-degree: 13%
 
 ---
 
@@ -17,6 +17,7 @@ ht-degree: 9%
 + [개요](overview.md)
 
 + [프로비저닝](./provisioning.md)
++ [시작하기](./getting-started.md)
 
 + 기본 사항{#basics}
    + [관리](basics/managing.md)
