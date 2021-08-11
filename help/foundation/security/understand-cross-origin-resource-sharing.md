@@ -10,10 +10,10 @@ doc-type: article
 topic: 보안
 role: Developer
 level: Intermediate
-source-git-commit: 1c99c319fba5048904177fc82c43554b0cf0fc15
+source-git-commit: 3418cd424cc82fece9e7d13de72c0d8dde346d7c
 workflow-type: tm+mt
-source-wordcount: '918'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -141,7 +141,7 @@ CORS 헤더의 캐싱을 허용하려면 다음 구성을 모든 지원 AEM Publ
 /cache { 
   ...
   /headers {
-      "Origin",
+      "Origin"
       "Access-Control-Allow-Origin"
       "Access-Control-Expose-Headers"
       "Access-Control-Max-Age"
@@ -166,7 +166,7 @@ CORS 헤더의 캐싱을 허용하려면 다음 구성을 모든 지원 AEM Publ
 
 ### 팁:
 
-* curl을 사용하여 XHR 요청을 수동으로 다시 만들지만, 각 요청에 차이가 있을 수 있으므로 모든 헤더와 세부 정보를 복사해야 합니다.일부 브라우저 콘솔에서는 curl 명령을 복사할 수 있습니다
+* curl을 사용하여 XHR 요청을 수동으로 다시 만들지만, 각 요청에 차이가 있을 수 있으므로 모든 헤더와 세부 정보를 복사해야 합니다. 일부 브라우저 콘솔에서는 curl 명령을 복사할 수 있습니다
 * CORS 처리기에서 요청이 거부되었는지, 인증, CSRF 토큰 필터, 디스패처 필터 또는 기타 보안 레이어가 아닌지 확인합니다
    * CORS 처리기가 200에 응답하지만 `Access-Control-Allow-Origin` 헤더가 응답에 없는 경우 `com.adobe.granite.cors`의 [!DNL DEBUG] 아래에 있는 거부 로그를 검토하십시오
 * [!DNL CORS] 요청의 디스패처 캐싱이 활성화된 경우
