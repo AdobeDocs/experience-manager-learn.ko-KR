@@ -12,10 +12,10 @@ thumbnail: kt-5432.jpg
 topic: 개발
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: e2473a1584ccf315fffe5b93cb6afaed506fdbce
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -37,11 +37,21 @@ AEM as a Cloud Services은 사용자 지정 로그 파일을 지원하지 않지
 
 Java 로그를 AEM에서 Cloud Service([Cloud Manager](#cloud-manager) 또는 [Adobe I/O CLI](#aio)를 통해)로 사용할 수 있도록 하려면 사용자 지정 로그 문을 `error.log`에 작성해야 합니다. 사용자 지정 명명된 로그(예: `example.log`)에 작성된 로그는 AEM에서 Cloud Service으로 액세스할 수 없습니다.
 
+애플리케이션의 `org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json` 파일에서 Sling LogManager OSGi 구성 속성을 사용하여 `error.log`에 로그를 쓸 수 있습니다.
+
+```
+{
+   ...
+   "org.apache.sling.commons.log.file": "logs/error.log"
+   ...
+}
+```
+
 ## AEM 작성자 및 게시 서비스 로그
 
 AEM 작성자 및 게시 서비스 모두 AEM 런타임 서버 로그를 제공합니다.
 
-+ `aemerror` 는 AEM SDK 로컬 빠른 시작 `/crx-quickstart/error.log` 에 있는 Java 오류 로그입니다. 다음은 환경 유형별 사용자 지정 로거들에 대한 [권장 로그 수준](#log-levels)입니다.
++ `aemerror` 는 AEM SDK 로컬 빠른 시작 `/crx-quickstart/logs/error.log` 에 있는 Java 오류 로그입니다. 다음은 환경 유형별 사용자 지정 로거들에 대한 [권장 로그 수준](#log-levels)입니다.
    + 개발: `DEBUG`
    + 단계: `WARN`
    + 프로덕션: `ERROR`
@@ -106,7 +116,7 @@ Environment Id Service    Name
 22295          dispatcher aemdispatcher 
 ```
 
-### 추적 로그{#aio-cli-tail-logs}
+### 로그 지우기{#aio-cli-tail-logs}
 
 Adobe I/O CLI는 [tail-logs](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagertail-log-environmentid-service-name) 명령을 사용하여 AEM as a Cloud Service에서 실시간으로 로그를 추적할 수 있는 기능을 제공합니다. Tailing은 AEM as a Cloud Service 환경에서 작업이 수행되므로 실시간 로그 활동을 보는 데 유용합니다.
 
@@ -123,7 +133,7 @@ $ aio cloudmanager:tail-logs 12345 author | grep com.example.MySlingModel
 
 ...은(는) `com.example.MySlingModel`에서 생성된 로그 명령문만 표시하거나 해당 문자열에 해당 문자열을 포함합니다.
 
-### 로그 다운로드 중{#aio-cli-download-logs}
+### 로그 다운로드{#aio-cli-download-logs}
 
 Adobe I/O CLI는 [download-logs](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerdownload-logs-environmentid-service-name-days)) 명령을 사용하여 AEM에서 Cloud Service으로 로그를 다운로드할 수 있는 기능을 제공합니다. 이렇게 하면 Cloud Manager 웹 UI에서 로그를 다운로드하는 것과 동일한 종료 결과가 제공되며, 이 경우 요청 받은 로그 수를 기준으로 여러 날에 걸쳐 로그가 통합됩니다. `download-logs` 명령을 사용하면
 
@@ -161,7 +171,7 @@ __Pod cm-p12345-e56789-aem-author-abcdefg-2222__
 
 Cloud Service 환경으로서 AEM당 로그 수준에 대한 Adobe의 일반적인 지침은 다음과 같습니다.
 
-+ 로컬 개발(AEM SDK):`DEBUG`
++ 로컬 개발(AEM SDK): `DEBUG`
 + 개발: `DEBUG`
 + 단계: `WARN`
 + 프로덕션: `ERROR`
