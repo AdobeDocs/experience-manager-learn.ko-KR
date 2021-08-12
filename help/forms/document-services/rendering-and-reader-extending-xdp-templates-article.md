@@ -14,9 +14,9 @@ discoiquuid: aefb4124-91a0-4548-94a3-86785ea04549
 topic: 개발
 role: Developer
 level: Experienced
-source-git-commit: 2fc4f748fd3b8f820d1451d08c5fe01d11892029
+source-git-commit: aa90b2c1a066dc36d4ba26ecdb8b58939445ef34
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '465'
 ht-degree: 0%
 
 ---
@@ -212,7 +212,7 @@ public class RenderAndReaderExtend extends SlingSafeMethodsServlet {
    * 이 패키지에는 샘플 포털과 xdp 파일이 있습니다
 1. &quot;fd-service&quot; 사용자에게 Reader 확장 인증서 추가
 1. 브라우저를 [포털 웹 페이지](http://localhost:4502/content/AemForms/ReaderExtensionsXdp.html)에 보냅니다.
-1. pdf 아이콘을 클릭하여 xdp를 렌더링하고 Reader 확장인 pdf를 가져옵니다
+1. 사용 권한이 적용된 pdf 파일로 xdp를 렌더링하려면 pdf 아이콘을 클릭합니다.
 
 
 
