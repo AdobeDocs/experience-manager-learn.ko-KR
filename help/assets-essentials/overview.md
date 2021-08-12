@@ -2,9 +2,9 @@
 title: AEM Assets Essentials 비디오
 description: Adobe Experience Manager Assets Essentials용 비디오 모음입니다
 sub-product: assets
-source-git-commit: c385183bee58bc062f4d46253096828c03e058c3
+source-git-commit: 21d6df065fe61614d3bbd68ce2f20d3dc23a9cef
 workflow-type: tm+mt
-source-wordcount: '133'
+source-wordcount: '132'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Assets Essentials을 사용하여 자산을 관리하는 방법과 Adobe 여정 
       </a>
    </div>
    <p>
-      <em>Assets Essentials 방법에 대한 기본 사항을 배웁니다.</em>
+      <em>Assets Essentials의 기본 사항을 배웁니다.</em>
    </p>
 </td>
 <td>
