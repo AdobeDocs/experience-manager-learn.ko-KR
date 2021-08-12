@@ -4,9 +4,9 @@ user-guide-description: Adobe Experience Manager as a Cloud Service를 위한 �
 breadcrumb-title: AEM as a Cloud Service 튜토리얼
 sub-product: 클라우드 서비스
 team: TM
-source-git-commit: e442c6d67a02aae4c6ce9241e754c15abc920c67
+source-git-commit: aa90b2c1a066dc36d4ba26ecdb8b58939445ef34
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '478'
 ht-degree: 21%
 
 ---
@@ -110,6 +110,12 @@ ht-degree: 21%
       + [인터페이스 구현](./forms/doc-cloud-sdk/implement-interface.md)
       + [JSON 부분 만들기](./forms/doc-cloud-sdk/get-content-analyzer.md)
       + [사용자 지정 프로세스 단계](./forms/doc-cloud-sdk/custom-process-step.md)
+   + Azure 포털 저장소{#forms-cs-azure-portal}
+      + [소개](./forms/forms-cs-azure-portal/introduction.md)
+      + [양식 데이터 모델 작성](./forms/forms-cs-azure-portal/create-fdm.md)
+      + [Azure 저장소에 양식 데이터 저장](./forms/forms-cs-azure-portal/create-af.md)
+      + [양식 미리 채우기](./forms/forms-cs-azure-portal/prefill-af-storage.md)
+      + [쿼리 제출](./forms/forms-cs-azure-portal/query-submitted-data.md)
    + 검토 작업 과정 만들기{#create-aem-workflow}
       + [워크플로우 모델 만들기](./forms/create-aem-workflow/create-workflow.md)
       + [워크플로우 트리거](./forms/create-aem-workflow/configure-af.md)
