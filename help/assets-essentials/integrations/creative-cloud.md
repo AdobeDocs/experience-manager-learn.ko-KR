@@ -1,5 +1,5 @@
 ---
-title: "Creative Cloud 및 Assets Essentials\t"
+title: Creative Cloud 및 Assets Essentials
 description: Assets Essentials과 Adobe Creative Cloud이 통합하는 방법을 알아봅니다.
 version: cloud-service
 feature: Assets Essentials
@@ -8,7 +8,7 @@ role: User
 level: Beginner
 kt: 7918
 thumbnail: 336069.jpeg
-source-git-commit: c7da508b500ac64ac2e817c5b6ff40899f71e7f3
+source-git-commit: b247bb18eab3e610d40d3e01a63ba7e311fafde0
 workflow-type: tm+mt
 source-wordcount: '59'
 ht-degree: 3%
