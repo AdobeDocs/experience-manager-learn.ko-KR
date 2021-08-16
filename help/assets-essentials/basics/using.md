@@ -1,5 +1,5 @@
 ---
-title: "Assets Essentials 사용\t"
+title: Assets Essentials 사용
 description: Assets Essentials에서 자산을 다운로드하는 방법을 학습합니다.
 version: cloud-service
 feature: Assets Essentials
@@ -8,10 +8,10 @@ role: User
 level: Beginner
 kt: 8380
 thumbnai: 335861.jpeg
-source-git-commit: 6b835f273e6bf31bc6957282e160436f73fc6b83
+source-git-commit: b247bb18eab3e610d40d3e01a63ba7e311fafde0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '32'
+ht-degree: 6%
 
 ---
 
