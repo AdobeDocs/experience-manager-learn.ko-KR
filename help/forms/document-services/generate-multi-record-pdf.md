@@ -1,6 +1,6 @@
 ---
 title: 하나의 데이터 파일에서 여러 pdf 생성
-seo-title: 하나의 데이터 파일에서 여러 pdf 생성
+description: OutputService에서는 양식 디자인과 데이터를 사용하여 문서를 만드는 많은 방법을 양식 디자인에 병합합니다. 여러 개의 개별 레코드가 포함된 하나의 큰 xml에서 여러 pdf를 생성하는 방법을 알아봅니다.
 feature: 출력 서비스
 topics: development
 audience: developer
@@ -10,9 +10,9 @@ version: 6.4,6.5
 topic: 개발
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: fb6c21a9a88b5ebcbfb14213182a9b8cba6fe6ae
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '526'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,7 @@ generatePDFOutputBatch 메서드의 서명은 다음 매개 변수를 사용합�
 >
 >이 사용 사례는 이 [웹 사이트](https://forms.enablementadobe.com/content/samples/samples.html?query=0)에서 라이브 예제로 사용할 수 있습니다.
 
-## 사용 사례 세부 정보{#use-case-details}
+## 사용 사례 세부 사항{#use-case-details}
 
 이 사용 사례에서는 템플릿 및 데이터(xml) 파일을 업로드할 수 있는 간단한 웹 인터페이스를 제공하려고 합니다. 파일 업로드가 완료되고 POST 요청이 AEM 서블릿으로 전송되면. 이 서블릿은 문서를 추출하고 OutputService의 generatePDFOutputBatch 메서드를 호출합니다. 생성된 pdf는 zip 파일로 압축되어 최종 사용자가 웹 브라우저에서 다운로드할 수 있도록 합니다.
 
