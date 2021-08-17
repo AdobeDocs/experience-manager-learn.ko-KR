@@ -12,9 +12,9 @@ thumbnail: KT-6266.jpg
 topic: 통합, 개발
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: 53c20b9774c15b04a1c78c7c0c7b61a60996bf60
+source-git-commit: fd72f3c85db8a56ec8abfd1609da53492ee54be2
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '505'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ asset compute 마이크로서비스를 확장하려면 로컬 개발자 시스�
 1. 명령줄에서 필요한 npm 모듈 및 Adobe I/O CLI 플러그인을 설치합니다.
 
    ```
-   $ npm i -g @adobe/aio-cli @openwhisk/wskdebug ngrok --unsafe-perm=true \
+   $ npm i -g @adobe/aio-cli@7.1.0 @openwhisk/wskdebug ngrok --unsafe-perm=true \
    && aio plugins:install @adobe/aio-cli-plugin-asset-compute
    ```
 
@@ -51,8 +51,6 @@ asset compute 마이크로서비스를 확장하려면 로컬 개발자 시스�
 ## Visual Studio 코드 설치{#vscode}
 
 [Microsoft Visual Studio ](https://code.visualstudio.com/download) 코드는 Asset compute 작업자를 개발 및 디버깅하는 데 사용됩니다. 다른 [JavaScript 호환 IDE](../../local-development-environment/development-tools.md#set-up-the-development-ide)를 사용하여 작업자를 개발할 수 있지만 Visual Studio 코드만 [debug](../test-debug/debug.md) Asset compute 작업자에 통합할 수 있습니다.
-
-_Visual Studio Code 1.48.x+는  [](#wskdebug) wskdebugger가 작동하려면 필요합니다._
 
 이 자습서에서는 Asset compute 확장에 가장 적합한 개발자 환경을 제공하므로 Visual Studio 코드를 사용하는 것으로 가정합니다.
 
@@ -80,8 +78,11 @@ asset compute 작업자는 [Node.js](https://nodejs.org/) 기반이므로 개발
 [Adobe I/O CLI](../../local-development-environment/development-tools.md#aio-cli) 또는 Adobe I/O 기술 ____ 의 사용 및 상호 작용을 용이하게 하고 사용자 정의 Asset compute 작업자를 생성하고 로컬에서 개발하는 데 사용되는 CLI(Aiois an Command-Line) npm 모듈을 설치합니다.
 
 ```
-$ npm install -g @adobe/aio-cli
+$ npm install -g @adobe/aio-cli@7.1.0
 ```
+
+_Adobe I/O CLI 버전 7.1.0이 필요합니다. 현재 Adobe I/O CLI 이후 버전이 지원되지 않습니다._
+
 
 ## Adobe I/O CLI Asset compute 플러그인 설치{#aio-asset-compute}
 
