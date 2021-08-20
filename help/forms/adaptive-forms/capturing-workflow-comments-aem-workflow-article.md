@@ -1,28 +1,20 @@
 ---
 title: 적응형 Forms Workflow에서 워크플로우 댓글 캡처
-seo-title: 적응형 Forms Workflow에서 워크플로우 댓글 캡처
 description: AEM 워크플로우에서 워크플로우 주석 캡처
-seo-description: AEM 워크플로우에서 워크플로우 주석 캡처
-uuid: df41fc6f-9abf-47b4-a014-b3b9fb58b6f7
 feature: 워크플로우
-topics: development
-audience: developer
-doc-type: article
-activity: setup
 version: 6.3,6.4
-discoiquuid: d5e40650-3b1f-4875-91b2-e22d932b5e7c
 topic: 개발
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '382'
 ht-degree: 0%
 
 ---
 
 
-# 적응형 Forms Workflow{#capturing-workflow-comments-in-adaptive-forms-workflow}에서 워크플로우 주석 캡처
+# 적응형 Forms Workflow에서 워크플로우 댓글 캡처{#capturing-workflow-comments-in-adaptive-forms-workflow}
 
 >[AEM Forms 6.4에만 적용됩니다. AEM Forms 6.5에서는 변수 기능을 사용하여 이 사용 사례를 수행하십시오]
 
