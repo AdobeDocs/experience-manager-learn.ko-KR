@@ -1,28 +1,20 @@
 ---
 title: AEM Forms과 연결 데이터 모델 사용
-seo-title: AEM Forms과 연결 데이터 모델 사용
 description: 양식 데이터 모델의 엔티티 간 연결 추가
-seo-description: 양식 데이터 모델의 엔티티 간 연결 추가
-uuid: 82626632-3251-4f7b-9af1-43a9161107c2
-discoiquuid: e01e9bd4-5b47-4356-9884-6968f385bb20
 feature: 적응형 Forms, 양식 데이터 모델
-topics: integrations
-audience: developer
-doc-type: technical video
-activity: setup
 version: 6.3,6.4,6.5
 topic: 개발
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '51'
-ht-degree: 1%
+source-wordcount: '36'
+ht-degree: 2%
 
 ---
 
 
-# AEM Forms{#using-association-data-models-with-aem-forms}에서 연결 데이터 모델 사용
+# AEM Forms과 연결 데이터 모델 사용{#using-association-data-models-with-aem-forms}
 
 양식 데이터 모델에서 두 엔터티 간의 연결 만들기
 
