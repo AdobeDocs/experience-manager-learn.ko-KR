@@ -2,17 +2,15 @@
 title: Windows 서버에서 JVM의 스레드 덤프를 캡처하는 방법
 description: Windows 서버에서 Java 프로세스의 스레드 덤프를 캡처하는 절차
 type: Troubleshooting
-product: forms
 role: Admin
 level: Intermediate
 version: 6.5
-feature: Foundation JEE
 topic: 관리
 index: y
-source-git-commit: 65a40826d3be322673e116d98124c3cbfb1d6eb4
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '58'
-ht-degree: 5%
+source-wordcount: '56'
+ht-degree: 1%
 
 ---
 
