@@ -2,17 +2,14 @@
 title: 서블릿 만들기
 description: 양식 데이터를 저장할 POST 요청을 처리할 서블릿 만들기
 feature: 적응형 양식
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+type: Tutorial
 version: 6.4,6.5
 kt: 6539
 thumbnail: 6539.pg
 topic: 개발
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 3%
