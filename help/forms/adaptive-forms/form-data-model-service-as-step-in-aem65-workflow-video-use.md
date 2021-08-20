@@ -1,26 +1,21 @@
 ---
 title: AEM 6.5 워크플로우에서 양식 데이터 모델 서비스를 단계로 사용
-seo-title: AEM 6.5 워크플로우에서 양식 데이터 모델 서비스를 단계로 사용
 description: AEM Forms 6.5에서는 AEM 워크플로우에서 변수를 만드는 기능을 도입했습니다. AEM Workflow에서 "양식 데이터 모델 서비스 호출"을 사용하는 이 새로운 기능을 사용하면 매우 쉽게 작업할 수 있습니다. 다음 비디오에서는 AEM Workflow에서 양식 데이터 모델 서비스 호출을 사용하는 단계를 설명합니다.
-seo-description: AEM Forms 6.5에서는 AEM 워크플로우에서 변수를 만드는 기능을 도입했습니다. AEM Workflow에서 "양식 데이터 모델 서비스 호출"을 사용하는 이 새로운 기능을 사용하면 매우 쉽게 작업할 수 있습니다. 다음 비디오에서는 AEM Workflow에서 양식 데이터 모델 서비스 호출을 사용하는 단계를 설명합니다.
 feature: 워크플로우
-topics: workflow.
-audience: developer.
-doc-type: technical video.
-activity: setup.
+type: Tutorial
 version: 6.5.
 topic: 개발
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 0%
+source-wordcount: '274'
+ht-degree: 1%
 
 ---
 
 
-# AEM 6.5 워크플로우 {#using-form-data-model-service-as-step-in-workflow}에서 양식 데이터 모델 서비스를 단계로 사용
+# AEM 6.5 워크플로우에서 양식 데이터 모델 서비스를 단계로 사용 {#using-form-data-model-service-as-step-in-workflow}
 
 AEM Forms 6.4부터 이제 양식 데이터 모델 서비스를 AEM Workflow의 일부로 사용할 수 있습니다. 다음 비디오에서는 AEM Workflow에서 양식 데이터 모델 단계를 구성하는 데 필요한 단계를 안내합니다
 
