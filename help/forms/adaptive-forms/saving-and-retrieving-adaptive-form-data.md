@@ -1,17 +1,14 @@
 ---
 title: 적응형 양식 데이터 저장 및 검색
-seo-title: 적응형 양식 데이터 저장 및 검색
 description: 데이터베이스에서 적응형 양식 데이터를 저장하고 검색합니다. 이 기능을 사용하면 양식 작성자가 양식을 저장하고 나중에 양식을 계속 채울 수 있습니다.
-seo-description: 데이터베이스에서 적응형 양식 데이터를 저장하고 검색합니다. 이 기능을 사용하면 양식 작성자가 양식을 저장하고 나중에 양식을 계속 채울 수 있습니다.
 feature: 적응형 양식
-topics: developing
-audience: developer,implementer
-doc-type: article
-activity: setup
+topic: 개발
+role: Developer
+type: Tutorial
 version: 6.3,6.4,6.5
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '615'
 ht-degree: 0%
 
 ---
@@ -413,7 +410,7 @@ $(document).ready(function()
 
 >[!VIDEO](https://video.tv.adobe.com/v/27829?quality=9&learn=on)
 
-#### 서버 {#deploy-on-your-server}에 배포
+#### 서버에 배포 {#deploy-on-your-server}
 
 AEM Forms 인스턴스에서 이 기능을 테스트하려면 다음 단계를 수행하십시오
 
