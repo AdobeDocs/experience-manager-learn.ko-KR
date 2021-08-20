@@ -1,22 +1,14 @@
 ---
 title: DAM에 AEM Forms DoR 태깅 및 저장
-seo-title: DAM에 AEM Forms DoR 태깅 및 저장
 description: 이 문서는 AEM DAM에서 AEM Forms에서 생성한 DoR을 저장하고 태깅하는 사용 사례를 안내합니다. 문서의 태깅은 제출된 양식 데이터를 기반으로 수행됩니다.
-seo-description: 이 문서는 AEM DAM에서 AEM Forms에서 생성한 DoR을 저장하고 태깅하는 사용 사례를 안내합니다. 문서의 태깅은 제출된 양식 데이터를 기반으로 수행됩니다.
-uuid: b9ba13ed-52d5-4389-a7d5-bf85e58fea49
-feature: 적응형 Forms,워크플로우
-topics: developing
-audience: implementer
-doc-type: article
-activity: develop
+feature: 적응형 양식
 version: 6.4,6.5
-discoiquuid: 53961454-633b-4cd8-aef7-e64ab4e528e4
 topic: 개발
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '616'
 ht-degree: 0%
 
 ---
