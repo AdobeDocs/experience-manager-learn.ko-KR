@@ -2,19 +2,16 @@
 title: 샘플 배포
 description: 로컬 AEM Forms 인스턴스에서 실행 중인 사용 사례 가져오기
 feature: 적응형 양식
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+type: Tutorial
 version: 6.4,6.5
 kt: 6602
 thumbnail: 6602.jpg
 topic: 개발
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '371'
 ht-degree: 1%
 
 ---
@@ -48,7 +45,7 @@ OTP 코드 전송 및 확인을 위해 [Nexmo](https://dashboard.nexmo.com/)로 
 ## 다음 OSGi 번들 배포
 
 데이터베이스에 데이터를 저장하고 가져올 [코드가 있는 번들을 배포합니다](assets/FetchPartiallyCompletedForm.PartiallyCompletedForm.core-1.0-SNAPSHOT.jar)
-[DevelopingWithServiceUser 번들](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)을(를) 배포합니다.
+[DevelopingWithServiceUser 번들](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)을(를) 배포합니다.
 
 ## 클라이언트 라이브러리 배포
 
