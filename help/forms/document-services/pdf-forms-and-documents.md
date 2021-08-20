@@ -1,15 +1,14 @@
 ---
 title: 다양한 유형의 PDF forms 및 문서 이해
 description: PDF는 실제로 파일 형식 제품군이며, 이 문서에서는 양식 개발자에게 중요하며 관련이 있는 PDF 유형에 대해 설명합니다.
-solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
-level: Beginner,Intermediate
-version: 6.3,6.4,6.5
-feature: 문서 서비스
+level: Beginner, Intermediate
+version: 6.3,6.4, 6.5
+feature: PDF 생성기
 kt: 7071
 topic: 개발
-source-git-commit: 1b4512fdb047bec15d72a8278fd0ce5dfafa309f
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
 source-wordcount: '1696'
 ht-degree: 0%
@@ -105,16 +104,16 @@ Certified Document는 PDF 문서 및 Forms 수신자에게 PDF의 신뢰성 및 
 
 가장 널리 사용되는 PDF 형식은 기존 PDF 파일입니다. Acrobat 및 다양한 타사 도구 사용을 포함하여 기존 PDF 파일을 만드는 방법에는 여러 가지가 있습니다. Acrobat에서는 기존 PDF 파일을 만드는 다음과 같은 모든 방법을 제공합니다. Acrobat이 설치되어 있지 않으면 컴퓨터에 이러한 옵션이 표시되지 않을 수 있습니다.
 
-* 데스크탑 애플리케이션의 인쇄 스트림을 캡처하여 다음을 수행합니다.작성 응용 프로그램의 인쇄 명령을 선택하고 Adobe PDF 프린터 아이콘을 선택합니다. 문서의 인쇄 사본 대신 문서의 PDF 파일을 작성합니다
-* Microsoft Office 응용 프로그램에서 Acrobat PDFMaker 플러그인 사용:Acrobat을 설치하면 Microsoft Office 응용 프로그램에 Adobe PDF 메뉴가 추가되고 Office 리본에는 아이콘이 추가됩니다. 이러한 추가된 기능을 사용하여 Microsoft Office에서 직접 PDF 파일을 만들 수 있습니다
-* Acrobat Distiller을 사용하여 Postscript 및 EPS(Encapsulated Postscript) 파일을 PDF로 변환:Distiller은 일반적으로 인쇄 게시 및 Postscript 포맷에서 PDF 형식으로 변환해야 하는 기타 워크플로우에서 사용됩니다
+* 데스크탑 애플리케이션의 인쇄 스트림을 캡처하여 다음을 수행합니다. 작성 응용 프로그램의 인쇄 명령을 선택하고 Adobe PDF 프린터 아이콘을 선택합니다. 문서의 인쇄 사본 대신 문서의 PDF 파일을 작성합니다
+* Microsoft Office 응용 프로그램에서 Acrobat PDFMaker 플러그인 사용: Acrobat을 설치하면 Microsoft Office 응용 프로그램에 Adobe PDF 메뉴가 추가되고 Office 리본에는 아이콘이 추가됩니다. 이러한 추가된 기능을 사용하여 Microsoft Office에서 직접 PDF 파일을 만들 수 있습니다
+* Acrobat Distiller을 사용하여 Postscript 및 EPS(Encapsulated Postscript) 파일을 PDF로 변환: Distiller은 일반적으로 인쇄 게시 및 Postscript 포맷에서 PDF 형식으로 변환해야 하는 기타 워크플로우에서 사용됩니다
 * 후드 아래에서는 기존 PDF가 XFA PDF와 매우 다릅니다. XML 구조는 동일하지 않으며 파일의 인쇄 스트림을 캡처하여 만들므로 일반 PDF는 정적 및 읽기 전용 파일입니다.
 
 Certified Document는 PDF 문서 및 양식 수신자에게 PDF의 신뢰성 및 무결성을 보장합니다.
 
 ### Acrobat
 
-Acrobat은 Adobe의 이전 대화형 양식 기술입니다.이 수정 사항은 Acrobat 버전 3. Adobe은 이 기술에 대한 기술 세부 사항을 제공하기 위해 [Acrobat Forms API 참조](assets/FormsAPIReference.pdf)를 제공합니다. 곡선은
+Acrobat은 Adobe의 이전 대화형 양식 기술입니다. 이 수정 사항은 Acrobat 버전 3. Adobe은 이 기술에 대한 기술 세부 사항을 제공하기 위해 [Acrobat Forms API 참조](assets/FormsAPIReference.pdf)를 제공합니다. 곡선은
 다음 항목을 참조하십시오.
 
 * 양식의 정적 레이아웃과 그래픽을 정의하는 기존 PDF입니다.
