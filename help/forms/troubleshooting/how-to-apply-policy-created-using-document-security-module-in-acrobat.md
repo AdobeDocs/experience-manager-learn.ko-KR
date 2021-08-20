@@ -2,14 +2,13 @@
 title: Acrobat에서 문서 보안 모듈을 사용하여 만든 정책을 적용하는 방법
 description: '문서 보안을 사용하여 문서에 정책을 적용하도록 Acrobat 구성 '
 type: Troubleshooting
-product: forms
 role: Developer
 level: Intermediate
 version: 6.5
 feature: '문서 보안 '
 topic: '개발 '
 index: y
-source-git-commit: 65a40826d3be322673e116d98124c3cbfb1d6eb4
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
 source-wordcount: '52'
 ht-degree: 5%
