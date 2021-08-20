@@ -1,32 +1,24 @@
 ---
 title: API를 사용하여 AEM Forms을 사용하여 레코드 문서 생성
-seo-title: API를 사용하여 AEM Forms을 사용하여 레코드 문서 생성
 description: 프로그래밍 방식으로 DOR(Document Of Record) 생성
-seo-description: API를 사용하여 AEM Forms을 사용하여 레코드 문서 생성
 feature: 적응형 양식
-topics: development
-audience: developer
-doc-type: article
-activity: implement
 version: 6.4,6.5
-uuid: 94ac3b13-01b4-4198-af81-e5609c80324c
-discoiquuid: ba91d9df-dc61-47d8-8e0a-e3f66cae6a87
 topic: 개발
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '279'
-ht-degree: 2%
+source-wordcount: '257'
+ht-degree: 3%
 
 ---
 
 
-# API를 사용하여 AEM Forms {#using-api-to-generate-document-of-record-with-aem-forms}에서 기록 문서 생성
+# API를 사용하여 AEM Forms에서 레코드 문서 생성 {#using-api-to-generate-document-of-record-with-aem-forms}
 
 프로그래밍 방식으로 DOR(Document Of Record) 생성
 
-이 문서에서는 `com.adobe.aemds.guide.addon.dor.DoRService API`을 사용하여 프로그래밍 방식으로 **Document of Record**&#x200B;를 생성하는 방법을 보여 줍니다. [기록 ](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) 문서는 적응형 양식으로 캡처된 데이터의 PDF 버전을 보여 줍니다.
+이 문서에서는 `com.adobe.aemds.guide.addon.dor.DoRService API`을 사용하여 프로그래밍 방식으로 **Document of Record**&#x200B;를 생성하는 방법을 보여 줍니다. [기록 ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) 문서는 적응형 양식으로 캡처된 데이터의 PDF 버전을 보여 줍니다.
 
 1. 다음은 코드 조각입니다. 첫 번째 줄이 DOR 서비스를 받습니다.
 1. DoROptions를 설정합니다.
