@@ -1,28 +1,20 @@
 ---
 title: AEM Forms에서 사용자 지정 제출 작성
-seo-title: AEM Forms에서 사용자 지정 제출 작성
 description: 적응형 양식을 위한 자신만의 사용자 지정 제출 작업을 빠르고 쉽게 만들 수 있습니다
-seo-description: 적응형 양식을 위한 자신만의 사용자 지정 제출 작업을 빠르고 쉽게 만들 수 있습니다
 feature: 적응형 양식
-topics: integrations
-audience: developer
-doc-type: article
-activity: implement
 version: 6.3,6.4,6.5
-uuid: a26db0b9-7db4-4e80-813d-5c0438fabd1e
-discoiquuid: 28611011-2ff9-477e-b654-e62e7374096a
 topic: 개발
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '230'
+source-wordcount: '209'
 ht-degree: 2%
 
 ---
 
 
-# AEM Forms {#writing-a-custom-submit-in-aem-forms}에서 사용자 지정 제출 작성
+# AEM Forms에서 사용자 지정 제출 작성 {#writing-a-custom-submit-in-aem-forms}
 
 적응형 양식을 위한 자신만의 사용자 지정 제출 작업을 빠르고 쉽게 만들 수 있습니다
 
