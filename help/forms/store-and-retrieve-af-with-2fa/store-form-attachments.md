@@ -2,17 +2,14 @@
 title: 양식 첨부 파일 저장
 description: 양식 첨부 파일을 추출하고 CRX 저장소의 새 위치에 저장합니다.
 feature: 적응형 양식
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+type: Tutorial
 version: 6.4,6.5
 kt: 6537
 thumbnail: 6537.jpg
 topic: 개발
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 1%
