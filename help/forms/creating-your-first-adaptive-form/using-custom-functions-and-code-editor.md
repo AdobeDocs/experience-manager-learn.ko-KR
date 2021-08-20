@@ -1,25 +1,17 @@
 ---
 title: 함수 및 코드 편집기 사용
-seo-title: 함수 및 코드 편집기 사용
 description: 함수 및 코드 편집기를 사용하여 비즈니스 규칙 작성
-seo-description: 함수 및 코드 편집기를 사용하여 비즈니스 규칙 작성
-uuid: 578e91f8-0d93-4192-b7af-1579df2feaf8
 feature: 적응형 양식
-topics: authoring
-audience: developer
-doc-type: tutorial
-activity: understand
 version: 6.4,6.5
-discoiquuid: f480ef3e-7e38-4a6b-a223-c102787aea7f
 kt: 4270
 thumbnail: 22282.jpg
 topic: 개발
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '153'
-ht-degree: 1%
+source-wordcount: '139'
+ht-degree: 2%
 
 ---
 
@@ -41,7 +33,7 @@ ht-degree: 1%
 
 >[!VIDEO](https://video.tv.adobe.com/v/28387?quality=9&learn=on)
 
-#### 패널 {#validate-panels-using-rule-editor} 유효성 검사
+#### 패널 유효성 검사 {#validate-panels-using-rule-editor}
 
 >[!VIDEO](https://video.tv.adobe.com/v/28409?quality=9&learn=on)
 
