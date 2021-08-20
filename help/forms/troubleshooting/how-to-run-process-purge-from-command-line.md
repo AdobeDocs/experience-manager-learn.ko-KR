@@ -2,13 +2,12 @@
 title: 명령줄에서 프로세스 제거 도구를 실행하는 방법
 description: 작업 관리자 테이블에서 레코드를 삭제할 명령줄에서 프로세스 제거 도구를 실행하는 절차
 type: Troubleshooting
-product: forms
 role: Developer
 level: Intermediate
 version: 6.5
-topic: 개발자
+topic: 개발
 index: y
-source-git-commit: 65a40826d3be322673e116d98124c3cbfb1d6eb4
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
 source-wordcount: '49'
 ht-degree: 2%
