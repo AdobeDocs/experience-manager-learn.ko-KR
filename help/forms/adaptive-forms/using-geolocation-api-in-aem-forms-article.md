@@ -1,22 +1,14 @@
 ---
 title: 적응형 Forms에서 지리적 위치 API 사용
-seo-title: 적응형 Forms에서 지리적 위치 API 사용
-description: 지리적 위치 api의
-seo-description: 지리적 위치 api의
-uuid: 5a461659-6873-4ea1-9f37-8296e5a9d895
+description: 지리적 위치 API를 사용하여 양식에서 주소 필드를 채웁니다
 feature: 적응형 양식
-topics: integrations
-audience: developer
-doc-type: article
-activity: develop
 version: 6.3,6.4,6.5
-discoiquuid: 3400251b-aee0-4d69-994b-e1643fabc868
 topic: 개발
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '417'
 ht-degree: 0%
 
 ---
@@ -24,7 +16,7 @@ ht-degree: 0%
 
 # 적응형 Forms에서 지리적 위치 API 사용{#using-geolocation-api-s-in-adaptive-forms}
 
-이 기능의 라이브 데모에 대한 링크는 [AEM Forms 샘플](https://forms.enablementadobe.com/content/samples/samples.html?query=0) 페이지를 방문하십시오.
+이 기능의 라이브 데모에 대한 링크는 [AEM Forms 샘플](https://forms.enablementadobe.com/content/samples/samples.html?query=0#collapse1) 페이지를 방문하십시오.
 
 이 문서에서는 Google의 지리적 위치 API를 사용하여 적응형 양식의 필드를 채우는 방법을 살펴봅니다. 이 사용 사례는 일반적으로 양식의 현재 주소 필드를 채울 때 사용됩니다.
 
