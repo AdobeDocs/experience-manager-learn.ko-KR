@@ -2,16 +2,15 @@
 title: 적응형 양식 템플릿 만들기
 description: 템플릿은 적응형 양식의 구조와 초기 컨텐츠를 정의합니다.
 feature: 적응형 양식
-topics: authoring
-audience: developer
-doc-type: tutorial
-activity: understand
+topic: 개발
+role: Developer
+level: Beginner
 kt: 5859
-thumbnail: 37324
-source-git-commit: c60a46027cc8d71fddd41aa31dbb569e4df94823
+thumbnail: 37324.jpg
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
 source-wordcount: '134'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
@@ -24,7 +23,7 @@ ht-degree: 3%
 
 >[!VIDEO](https://video.tv.adobe.com/v/37324/quality=9)
 
-자세한 내용은 [적응형 양식 템플릿 설명서](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html)를 참조하십시오
+자세한 내용은 [적응형 양식 템플릿 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html)를 참조하십시오
 
 필요한 경우 [적응형 양식 템플릿](assets/peak-application-template.zip)을 다운로드하고 [패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp)를 사용하여 AEM으로 가져올 수 있습니다
 
