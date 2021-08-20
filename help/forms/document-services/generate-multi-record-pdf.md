@@ -2,15 +2,11 @@
 title: 하나의 데이터 파일에서 여러 pdf 생성
 description: OutputService에서는 양식 디자인과 데이터를 사용하여 문서를 만드는 많은 방법을 양식 디자인에 병합합니다. 여러 개의 개별 레코드가 포함된 하나의 큰 xml에서 여러 pdf를 생성하는 방법을 알아봅니다.
 feature: 출력 서비스
-topics: development
-audience: developer
-doc-type: article
-activity: implement
 version: 6.4,6.5
 topic: 개발
 role: Developer
 level: Experienced
-source-git-commit: fb6c21a9a88b5ebcbfb14213182a9b8cba6fe6ae
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 1%
