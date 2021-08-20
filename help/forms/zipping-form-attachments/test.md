@@ -1,21 +1,16 @@
 ---
 title: 솔루션 테스트
 description: 양식에 첨부 파일을 추가하여 솔루션을 테스트하고 워크플로우를 트리거하여 전자 메일을 보냅니다.
-sub-product: forms
-feature: 워크플로우
-topics: adaptive forms
-audience: developer
-doc-type: article
-activity: develop
+feature: 적응형 양식
 version: 6.5
 topic: 개발
 role: Developer
 level: Beginner
 kt: kt-8049
-source-git-commit: 540e11c0861eacc795122328b2359c7db6378aec
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
 source-wordcount: '257'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
