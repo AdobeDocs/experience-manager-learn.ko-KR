@@ -1,20 +1,14 @@
 ---
 title: 선택 그룹 구성 요소에 항목 추가
-seo-title: 선택 그룹 구성 요소에 항목 추가
 description: 동적으로 선택 그룹 구성 요소에 항목 추가
-seo-description: 동적으로 선택 그룹 구성 요소에 항목 추가
 feature: 적응형 양식
-topics: authoring
-audience: developer
-doc-type: tutorial
-activity: understand
 version: 6.5
 topic: 개발
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '515'
 ht-degree: 1%
 
 ---
@@ -96,7 +90,7 @@ else
 **시각적 편집기를 사용하여 항목 추가**
 
 * [자산 다운로드](assets/usingthevisualeditor.zip)
-* Tomcat이 없는 경우 설치합니다. [tomcat 설치 지침은 여기에서 확인할 수 있습니다.](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html)
+* Tomcat이 없는 경우 설치합니다. [tomcat 설치 지침은 여기에서 확인할 수 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html)
 * [Tomcat에서 SampleRest.war 파일 배포](https://forms.enablementadobe.com/content/DemoServerBundles/SampleRest.war)
 * [Forms 및 문서 열기](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * 만들기 를 클릭합니다. | 파일 업로드&quot; 및 이전 단계에서 다운로드한 파일을 업로드합니다
