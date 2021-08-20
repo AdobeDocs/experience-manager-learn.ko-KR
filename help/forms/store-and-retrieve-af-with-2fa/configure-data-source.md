@@ -2,17 +2,14 @@
 title: 데이터 소스 구성
 description: MySQL 데이터베이스를 가리키는 DataSource 만들기
 feature: 적응형 양식
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+type: Tutorial
 version: 6.4,6.5
 kt: 6541
 thumbnail: 6541.jpg
 topic: 개발
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 4%
@@ -29,8 +26,8 @@ AEM에서 외부 데이터베이스와 통합할 수 있는 방법에는 여러 
 ![데이터 소스](assets/data-source.JPG)
 
 
-* JDBC 드라이버 클래스:`com.mysql.cj.jdbc.Driver`
-* JDBC 연결 URI:`jdbc:mysql://localhost:3306/aemformstutorial`
+* JDBC 드라이버 클래스: `com.mysql.cj.jdbc.Driver`
+* JDBC 연결 URI: `jdbc:mysql://localhost:3306/aemformstutorial`
 
 >[!NOTE]
 >데이터 소스 이름 `StoreAndRetrieveAfData`은 OSGi 서비스에 사용되는 이름이므로 이름을 지정하십시오.
