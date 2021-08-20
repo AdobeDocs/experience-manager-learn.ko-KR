@@ -1,25 +1,17 @@
 ---
 title: 자산 섹션에 구성 요소 추가
-seo-title: 자산 섹션에 구성 요소 추가
 description: '[자산] 패널의 아코디언 레이아웃을 구성합니다. 아코디언 레이아웃은 반복 가능한 섹션을 추가할 수 있는 최종 사용자 경험을 제공합니다.'
-seo-description: '[자산] 패널의 아코디언 레이아웃을 구성합니다. 아코디언 레이아웃은 반복 가능한 섹션을 추가할 수 있는 최종 사용자 경험을 제공합니다.'
-uuid: 0e853b07-a08d-4c5d-b5c2-0df34f0d81b3
 feature: 적응형 양식
-topics: authoring
-audience: developer
-doc-type: tutorial
-activity: understand
 version: 6.4,6.5
 kt: 4212
 thumbnail: 22200.jpg
-discoiquuid: 37c039c4-422a-4836-8aa5-ba0459d342cc
 topic: 개발
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '81'
-ht-degree: 3%
+source-wordcount: '57'
+ht-degree: 5%
 
 ---
 
