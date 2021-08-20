@@ -1,20 +1,14 @@
 ---
 title: 사용자 지정 프로세스 단계 구현
-seo-title: 사용자 지정 프로세스 단계 구현
 description: 사용자 정의 프로세스 단계를 사용하여 파일 시스템에 적응형 양식 첨부 파일 작성
-seo-description: 사용자 정의 프로세스 단계를 사용하여 파일 시스템에 적응형 양식 첨부 파일 작성
 feature: 워크플로우
-topics: development
-audience: developer
-doc-type: tutorial
-activity: understand
 version: 6.5
 topic: 개발
 role: Developer
 level: Experienced
-source-git-commit: dbc0a35ae96594fec1e10f411d57d2a3812c1cf2
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '818'
 ht-degree: 0%
 
 ---
@@ -42,11 +36,11 @@ Eclipse IDE에서 maven 프로젝트를 엽니다. **projectname** > **core** �
 public void execute(WorkItem, WorkflowSession workflowSession, MetaDataMap processArguments)는 WorkflowException을 발생합니다
 execute 메서드는 다음 3개 변수에 대한 액세스 권한을 제공합니다
 
-**작업 항목**:workItem 변수는 워크플로우와 관련된 데이터에 액세스할 수 있도록 합니다. 공용 API 설명서는 [여기에서 사용할 수 있습니다.](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
+**작업 항목**: workItem 변수는 워크플로우와 관련된 데이터에 액세스할 수 있도록 합니다. 공용 API 설명서는 [여기에서 사용할 수 있습니다.](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
 
-**WorkflowSession**:이 workflowSession 변수를 사용하면 워크플로우를 제어할 수 있습니다. 공개 API 설명서는 [여기](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)에서 사용할 수 있습니다
+**WorkflowSession**: 이 workflowSession 변수를 사용하면 워크플로우를 제어할 수 있습니다. 공개 API 설명서는 [여기](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)에서 사용할 수 있습니다
 
-**MetaDataMap**:워크플로우와 연관된 모든 메타데이터. 프로세스 단계로 전달되는 모든 프로세스 인수는 MetaDataMap 개체를 사용하여 사용할 수 있습니다.[API 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)
+**MetaDataMap**: 워크플로우와 연관된 모든 메타데이터. 프로세스 단계로 전달되는 모든 프로세스 인수는 MetaDataMap 개체를 사용하여 사용할 수 있습니다.[API 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)
 
 이 자습서에서는 AEM Workflow의 일부로 적응형 양식에 추가된 첨부 파일을 파일 시스템에 작성하려고 합니다.
 
