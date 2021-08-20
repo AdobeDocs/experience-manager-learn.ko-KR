@@ -1,20 +1,14 @@
 ---
 title: '적응형 양식 테이블 채우기 '
-seo-title: 적응형 양식 테이블 채우기
 description: 양식 데이터 모델 서비스 호출의 결과로 적응형 양식 테이블 채우기
-seo-description: 양식 데이터 모델 서비스 호출의 결과로 적응형 양식 테이블 채우기
 feature: 적응형 양식
-topics: development
-audience: developer
-doc-type: article
-activity: implement
 version: 6.4,6.5
 topic: 개발
 role: User
 level: Intermediate
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '240'
 ht-degree: 1%
 
 ---
