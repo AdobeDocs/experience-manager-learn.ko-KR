@@ -1,28 +1,20 @@
 ---
 title: AEM Forms에서 어셈블러 서비스 사용
-seo-title: AEM Forms에서 어셈블러 서비스 사용
 description: AEM Forms의 어셈블러 서비스를 사용하여 여러 pdf 파일 조합
-seo-description: AEM Forms의 어셈블러 서비스를 사용하여 여러 pdf 파일 조합
-uuid: 7895b1a3-6f9d-4413-bb7f-692ea0380fcd
 feature: 어셈블러
-topics: development
-audience: developer
-doc-type: article
-activity: implement
 version: 6.4,6.5
-discoiquuid: a12f52af-7039-4452-a58d-9ad2c0096347
 topic: 개발
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '209'
 ht-degree: 3%
 
 ---
 
 
-# AEM Forms{#using-assembler-service-in-aem-forms}에서 어셈블러 서비스 사용
+# AEM Forms에서 어셈블러 서비스 사용{#using-assembler-service-in-aem-forms}
 
 이 문서에서는 여러 PDF 파일을 브라우저에 드래그하여 놓고 어셈블된 pdf 파일을 파일 시스템에 저장하는 기능을 보여주는 자산을 제공합니다. 다음은 브라우저를 사용하여 업로드된 pdf 파일을 결합하는 서블릿의 코드입니다.
 
