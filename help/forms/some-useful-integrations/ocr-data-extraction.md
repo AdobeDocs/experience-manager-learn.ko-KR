@@ -2,18 +2,14 @@
 title: OCR 데이터 추출
 description: 정부 기관에서 발행한 문서에서 데이터를 추출하여 양식을 채웁니다.
 feature: 바코드 Forms
-topics: adaptive forms
-audience: developer
-doc-type: article
-activity: use
 version: 6.4,6.5
 kt: 6679
 topic: 개발
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '646'
 ht-degree: 2%
 
 ---
@@ -51,11 +47,11 @@ OpenAPI Specification(이전 Swagger Specification)은 REST API에 대한 API �
 
 ## 데이터 소스 만들기
 
-AEM/AEM Forms을 타사 애플리케이션과 통합하려면 클라우드 서비스 구성에서 [데이터 소스](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html)를 만들어야 합니다. [swagger 파일](assets/drivers-license-swagger.zip)을 사용하여 데이터 소스를 만드십시오.
+AEM/AEM Forms을 타사 애플리케이션과 통합하려면 클라우드 서비스 구성에서 [데이터 소스](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html)를 만들어야 합니다. [swagger 파일](assets/drivers-license-swagger.zip)을 사용하여 데이터 소스를 만드십시오.
 
 ## 양식 데이터 모델 작성
 
-AEM Forms 데이터 통합은 [양식 데이터 모델](https://docs.adobe.com/content/help/en/experience-manager-65/forms/form-data-model/create-form-data-models.html)을 만들고 사용할 수 있는 직관적인 사용자 인터페이스를 제공합니다. 이전 단계에서 만든 데이터 소스를 기반으로 양식 데이터 모델을 만듭니다.
+AEM Forms 데이터 통합은 [양식 데이터 모델](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html)을 만들고 사용할 수 있는 직관적인 사용자 인터페이스를 제공합니다. 이전 단계에서 만든 데이터 소스를 기반으로 양식 데이터 모델을 만듭니다.
 
 ![fdm](assets/test-dl-fdm.PNG)
 
