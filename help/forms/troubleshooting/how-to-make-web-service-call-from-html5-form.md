@@ -2,14 +2,13 @@
 title: HTML5 양식에서 웹 서비스를 호출하는 방법
 description: html5 양식에서 웹 서비스를 구성하는 절차
 type: Troubleshooting
-product: forms
 role: Developer
 level: Intermediate
 version: 6.5
 feature: Mobile Forms
 topic: '개발  '
 index: y
-source-git-commit: 65a40826d3be322673e116d98124c3cbfb1d6eb4
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
 source-wordcount: '44'
 ht-degree: 6%
