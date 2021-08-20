@@ -1,22 +1,15 @@
 ---
 title: Windows에서 AEM Forms을 설치하는 간소화된 단계
-seo-title: Windows에서 AEM Forms을 설치하는 간소화된 단계
 description: Windows에 AEM Forms을 설치하는 빠르고 쉬운 단계
-seo-description: Windows에 AEM Forms을 설치하는 빠르고 쉬운 단계
-uuid: a148b8f0-83db-47f6-89d3-c8a9961be289
 feature: 적응형 양식
-topics: administration
-audience: developer
-doc-type: article
-activity: setup
+type: Tutorial
 version: 6.4,6.5
-discoiquuid: 1182ef4d-5838-433b-991d-e24ab805ae0e
 topic: 개발
-role: Developer
+role: Admin
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '598'
 ht-degree: 5%
 
 ---
@@ -45,9 +38,9 @@ ht-degree: 5%
 AEM Forms을 설치하려면 [공식 설명서](https://helpx.adobe.com/kr/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html)를 따르는 것이 좋습니다. Windows 환경에서 AEM Forms을 설치하고 구성하려면 다음 단계를 수행해야 합니다.
 
 * 적절한 JDK가 설치되어 있는지 확인하십시오
-   * AEM 6.2 필요한 경우:Oracle SE 8 JDK 1.8.x(64비트)
+   * AEM 6.2 필요한 경우: Oracle SE 8 JDK 1.8.x(64비트)
 * 
-   * AEM 6.3과 AEM 6.4 다음 요구 사항:Oracle SE 8 JDK 1.8.x(64비트)
+   * AEM 6.3과 AEM 6.4 다음 요구 사항: Oracle SE 8 JDK 1.8.x(64비트)
 * AEM 6.5 JDK 8 또는 JDK 11이 필요합니다.
 * [공식 JDK ](https://helpx.adobe.com/experience-manager/6-3/sites/deploying/using/technical-requirements.html) 요구 사항은 여기에 나열되어 있습니다.
 * JAVA_HOME이 설치된 JDK를 가리키도록 설정되어 있는지 확인합니다.
@@ -91,7 +84,7 @@ AEM Forms을 설치하려면 [공식 설명서](https://helpx.adobe.com/kr/exper
 * 허용 목록에 `sun.util.calendar` 패키지 추가:
 
    1. [브라우저 창에서 Felix 웹 콘솔을 엽니다.](http://localhost:4502/system/console/configMgr)
-   2. Deserialization 방화벽 구성 검색 및 열기:`com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
+   2. Deserialization 방화벽 구성 검색 및 열기: `com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
    3. `com.adobe.cq.deserfw.impl.DeserializationFirewallImpl.firewall.deserialization.whitelist.name` 아래에 새 항목으로 `sun.util.calendar` 추가
    4. 변경 사항을 저장합니다.
 
