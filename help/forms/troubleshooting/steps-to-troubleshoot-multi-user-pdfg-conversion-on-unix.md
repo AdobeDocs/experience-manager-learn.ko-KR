@@ -2,14 +2,13 @@
 title: Unix 설정에서 다중 사용자 PDFG 변환 문제를 해결하는 절차
 description: UNIX 설정에서 여러 사용자 PDF 생성기 문제를 해결합니다.
 type: Troubleshooting
-product: forms
 role: Developer
 level: Intermediate
 version: 6.5
 feature: 'PDF 생성기 '
 topic: '개발   '
 index: y
-source-git-commit: 65a40826d3be322673e116d98124c3cbfb1d6eb4
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
 source-wordcount: '49'
 ht-degree: 6%
