@@ -2,18 +2,14 @@
 title: SMS 2단계 인증
 description: 특정 활동을 수행하려는 경우 사용자의 ID를 확인하는 데 도움이 되는 추가 보안 계층을 추가하십시오
 feature: 적응형 양식
-topics: adaptive forms
-audience: developer
-doc-type: article
-activity: use
 version: 6.4,6.5
 kt: 6317
 topic: 개발
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '602'
 ht-degree: 1%
 
 ---
@@ -51,11 +47,11 @@ OpenAPI Specification(이전 Swagger Specification)은 REST API에 대한 API �
 
 ## 데이터 소스 만들기
 
-AEM/AEM Forms을 타사 애플리케이션과 통합하려면 클라우드 서비스 구성에서 [데이터 소스](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html)를 만들어야 합니다.
+AEM/AEM Forms을 타사 애플리케이션과 통합하려면 클라우드 서비스 구성에서 [데이터 소스](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html)를 만들어야 합니다.
 
 ## 양식 데이터 모델 작성
 
-AEM Forms 데이터 통합은 [양식 데이터 모델](https://docs.adobe.com/content/help/en/experience-manager-65/forms/form-data-model/create-form-data-models.html)을 만들고 사용할 수 있는 직관적인 사용자 인터페이스를 제공합니다. 양식 데이터 모델은 데이터 교환을 위해 데이터 소스를 사용합니다.
+AEM Forms 데이터 통합은 [양식 데이터 모델](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html)을 만들고 사용할 수 있는 직관적인 사용자 인터페이스를 제공합니다. 양식 데이터 모델은 데이터 교환을 위해 데이터 소스를 사용합니다.
 완성된 양식 데이터 모델은 여기에서 [다운로드할 수 있습니다.](assets/sms-2fa-fdm.zip)
 
 ![fdm](assets/2FA-fdm.PNG)
