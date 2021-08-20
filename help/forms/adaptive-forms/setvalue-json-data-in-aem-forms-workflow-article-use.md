@@ -1,28 +1,20 @@
 ---
 title: AEM Forms Workflow에서 Json 데이터 요소의 값 설정
-seo-title: AEM Forms Workflow에서 Json 데이터 요소의 값 설정
 description: 적응형 양식이 AEM Workflow의 다른 사용자에게 라우팅되므로 양식을 검토하는 사용자를 기반으로 특정 필드 또는 패널을 숨기거나 비활성화하는 요구 사항이 있습니다. 이러한 사용 사례를 충족하기 위해 일반적으로 숨김 필드의 값을 설정합니다. 이 숨김 필드의 값 비즈니스 규칙을 기반으로 적절한 패널이나 필드를 숨기거나 비활성화하도록 작성할 수 있습니다.
-seo-description: 적응형 양식이 AEM Workflow의 다른 사용자에게 라우팅되므로 양식을 검토하는 사용자를 기반으로 특정 필드 또는 패널을 숨기거나 비활성화하는 요구 사항이 있습니다. 이러한 사용 사례를 충족하기 위해 일반적으로 숨김 필드의 값을 설정합니다. 이 숨김 필드의 값 비즈니스 규칙을 기반으로 적절한 패널이나 필드를 숨기거나 비활성화하도록 작성할 수 있습니다.
-uuid: a4ea6aef-a799-49e5-9682-3fa3b7a442fb
 feature: 적응형 양식
-topics: developing
-audience: implementer
-doc-type: article
-activity: setup
 version: 6.4
-discoiquuid: 548fb2ec-cfcf-4fe2-a02a-14f267618d68
 topic: 개발
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '692'
 ht-degree: 1%
 
 ---
 
 
-# AEM Forms Workflow {#setting-value-of-json-data-element-in-aem-forms-workflow}에서 JSON 데이터 요소의 값 설정
+# AEM Forms Workflow에서 JSON 데이터 요소의 값 설정 {#setting-value-of-json-data-element-in-aem-forms-workflow}
 
 적응형 양식이 AEM Workflow의 다른 사용자에게 라우팅되므로 양식을 검토하는 사용자를 기반으로 특정 필드 또는 패널을 숨기거나 비활성화하는 요구 사항이 있습니다. 이러한 사용 사례를 충족하기 위해 일반적으로 숨김 필드의 값을 설정합니다. 이 숨김 필드의 값 비즈니스 규칙을 기반으로 적절한 패널이나 필드를 숨기거나 비활성화하도록 작성할 수 있습니다.
 
