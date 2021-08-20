@@ -1,28 +1,20 @@
 ---
 title: 양식 데이터 모델을 사용하여 Campaign 프로필 만들기
-seo-title: 양식 데이터 모델을 사용하여 Campaign 프로필 만들기
 description: AEM Forms 양식 데이터 모델을 사용하여 Adobe Campaign Standard 프로필을 만드는 단계입니다
-seo-description: AEM Forms 양식 데이터 모델을 사용하여 Adobe Campaign Standard 프로필을 만드는 단계입니다
-uuid: 3216827e-e1a2-4203-8fe3-4e2a82ad180a
-feature: 출력 서비스
-topics: integrations
-audience: developer
-doc-type: tutorial
-activity: setup
+feature: 적응형 양식
 version: 6.3,6.4,6.5
-discoiquuid: 461c532e-7a07-49f5-90b7-ad0dcde40984
 topic: 개발
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '429'
 ht-degree: 3%
 
 ---
 
 
-# 양식 데이터 모델 {#create-campaign-profile-using-form-data-model}을 사용하여 Campaign 프로필 만들기
+# 양식 데이터 모델을 사용하여 Campaign 프로필 만들기 {#create-campaign-profile-using-form-data-model}
 
 AEM Forms 양식 데이터 모델을 사용하여 Adobe Campaign Standard 프로필을 만드는 단계입니다
 
@@ -115,7 +107,7 @@ swagger 파일을 사용하여 데이터 소스가 생성됩니다. 데이터 �
 
 이 문서와 관련된 자산의 일부로 샘플 Swagger 파일이 제공됩니다.**ACS 인스턴스와 일치하도록 swagger 파일의 호스트 및 basePath를 변경해야 합니다.**
 
-## 솔루션 {#test-the-solution} 테스트
+## 솔루션 테스트 {#test-the-solution}
 
 솔루션을 테스트하려면 다음 단계를 수행하십시오.
 * [여기에 설명된 대로 단계를 따랐는지 확인합니다](aem-forms-with-campaign-standard-getting-started-tutorial.md)
