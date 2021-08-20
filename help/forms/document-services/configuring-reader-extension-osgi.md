@@ -2,16 +2,13 @@
 title: AEM Forms OSGi에서 Reader 확장 구성
 description: AEM Forms OSGi의 신뢰 저장소에 Reader 확장 자격 증명을 추가합니다
 feature: Reader 확장
-feature-set: Reader Extensions
-topics: development
 audience: developer
-doc-type: Tutorial
-activity: implement
+type: Tutorial
 version: 6.4,6.5
 topic: 관리
 role: Admin
 level: Beginner
-source-git-commit: 2fc4f748fd3b8f820d1451d08c5fe01d11892029
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 0%
