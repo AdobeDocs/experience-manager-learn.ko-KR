@@ -1,32 +1,24 @@
 ---
 title: AEM Adaptive Forms에서 CAPTCHA 사용
-seo-title: AEM Adaptive Forms에서 CAPTCHA 사용
 description: AEM Adaptive Forms이 있는 CAPTCHA 추가 및 사용.
-seo-description: AEM Adaptive Forms이 있는 CAPTCHA 추가 및 사용.
 feature: 적응형 Forms,워크플로우
-topics: integrations
-audience: developer
-doc-type: technical video
-activity: setup
 version: 6.4,6.5
-uuid: bd63e207-4f4d-4f34-9ac4-7572ed26f646
-discoiquuid: 5e184e44-e385-4df7-b7ed-085239f2a642
 topic: 개발
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '232'
 ht-degree: 0%
 
 ---
 
 
-# AEM Adaptive Forms에 CAPTCHA 사용{#using-captchas-with-aem-adaptive-forms}
+# AEM Adaptive Forms에서 CAPTCHA 사용{#using-captchas-with-aem-adaptive-forms}
 
 AEM Adaptive Forms이 있는 CAPTCHA 추가 및 사용.
 
-이 기능의 라이브 데모에 대한 링크는 [AEM Forms 샘플](https://forms.enablementadobe.com/content/samples/samples.html?query=0) 페이지를 방문하십시오.
+이 기능의 라이브 데모에 대한 링크는 [AEM Forms 샘플](https://forms.enablementadobe.com/content/samples/samples.html?query=0#collapse1) 페이지를 방문하십시오.
 
 >[!VIDEO](https://video.tv.adobe.com/v/18336/?quality=9&learn=on)
 
@@ -42,7 +34,7 @@ AEM Adaptive Forms이 있는 CAPTCHA 추가 및 사용.
 >
 >작성자 인스턴스에서 reCaptach 구성
 >
->작성자 인스턴스에서 felix [웹 콘솔](http://localhost:4502/system/console/bundles)을 엽니다.
+>작성자 인스턴스에서 Felix [웹 콘솔](http://localhost:4502/system/console/bundles)을 엽니다.
 >
 >com.adobe.granite.crypto.file bundle 검색
 >
