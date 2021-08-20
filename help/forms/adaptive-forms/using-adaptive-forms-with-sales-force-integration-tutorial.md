@@ -1,22 +1,15 @@
 ---
 title: AEM Forms 6.3 및 6.4에서 Salesforce로 DataSource 구성
-seo-title: AEM Forms 6.3 및 6.4에서 Salesforce로 DataSource 구성
 description: 양식 데이터 모델을 사용하여 AEM Forms과 Salesforce 통합
-seo-description: 양식 데이터 모델을 사용하여 AEM Forms과 Salesforce 통합
-uuid: 0124526d-f1a3-4f57-b090-a418a595632e
 feature: 적응형 Forms, 양식 데이터 모델
 topics: integrations
-audience: developer
-doc-type: article
-activity: setup
 version: 6.3,6.4,6.5
-discoiquuid: 8e314fc3-62d0-4c42-b1ff-49ee34255e83
 topic: 개발
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '934'
+source-wordcount: '917'
 ht-degree: 0%
 
 ---
@@ -62,8 +55,8 @@ ht-degree: 0%
 * 새 구성을 추가하려면 &quot;+&quot;를 클릭합니다
 * &quot;Rest Full Service&quot;를 선택합니다. 구성에 의미 있는 제목과 이름을 제공합니다. 예,
 
-   * 이름:CreateLeadInSalesForce
-   * 제목:CreateLeadInSalesForce
+   * 이름: CreateLeadInSalesForce
+   * 제목: CreateLeadInSalesForce
 
 * &quot;만들기&quot;를 클릭합니다
 
@@ -75,8 +68,8 @@ ht-degree: 0%
 * OAuth Url은 - **https://login.salesforce.com/services/oauth2/authorize**
 * 새로 고침 토큰 Url - **https://na5.salesforce.com/services/oauth2/token**
 * **액세스 토큰 Url - https://na5.salesforce.com/services/oauth2/token**
-* 권한 부여 범위:** api   chatter_api 전체 id   openid   refresh_token visualforce web**
-* 인증 처리기:권한 부여 베어러
+* 권한 부여 범위: ** api   chatter_api 전체 id   openid   refresh_token visualforce web**
+* 인증 처리기: 권한 부여 베어러
 * &quot;Connect To OAUTH&quot;를 클릭합니다.모든 것이 제대로 작동하면 오류가 표시되지 않습니다
 
 Salesforce를 사용하여 양식 데이터 모델을 만들었으면 방금 만든 데이터 소스를 사용하여 양식 데이터 통합을 만들 수 있습니다. 양식 데이터 통합을 만들기 위한 공식 설명서는 [여기](https://helpx.adobe.com/aem-forms/6-3/data-integration.html)입니다.
@@ -96,19 +89,19 @@ SFDC에서 리드 개체를 만들기 위해 POST 서비스를 포함하도록 �
    * &quot;만들기&quot; 단추를 클릭합니다
    * 몇 가지 의미 있는 값 제공
 
-      * 이름:CreateLeadInSalesForce
-      * 제목:CreateLeadInSalesForce
-      * 서비스 유형:RESTful 서비스
+      * 이름: CreateLeadInSalesForce
+      * 제목: CreateLeadInSalesForce
+      * 서비스 유형: RESTful 서비스
    * 다음을 클릭합니다
-   * Swagger 소스:파일
+   * Swagger 소스: 파일
    * 이전 단계에서 다운로드한 swagger 파일을 찾아 선택합니다
-   * 인증 유형:OAuth 2.0. 다음 값을 지정합니다
+   * 인증 유형: OAuth 2.0. 다음 값을 지정합니다
    * ClientID 및 Client Secret 값을 제공합니다.
    * OAuth Url은 - **https://login.salesforce.com/services/oauth2/authorize**
    * 새로 고침 토큰 Url - **https://na5.salesforce.com/services/oauth2/token**
    * 액세스 토큰 Url **l - https://na5.salesforce.com/services/oauth2/token**
-   * 권한 부여 범위:** api chatter_api 전체 id openid refresh_token visualforce web**
-   * 인증 처리기:권한 부여 베어러
+   * 권한 부여 범위: ** api chatter_api 전체 id openid refresh_token visualforce web**
+   * 인증 처리기: 권한 부여 베어러
    * &quot;OAuth에 연결&quot; 단추를 클릭합니다. 오류가 발생하면 이전 단계를 검토하여 모든 정보가 정확하게 입력되었는지 확인하십시오.
 
 
