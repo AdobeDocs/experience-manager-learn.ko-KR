@@ -1,20 +1,14 @@
 ---
 title: AEM Forms에서 출력 및 Forms 서비스를 사용한 개발
-seo-title: AEM Forms에서 출력 및 Forms 서비스를 사용한 개발
 description: AEM Forms에서 출력 및 Forms 서비스 API 사용
-seo-description: AEM Forms에서 출력 및 Forms 서비스 API 사용
 feature: Forms 서비스
-topics: development
-audience: developer
-doc-type: article
-activity: implement
 version: 6.4,6.5
 topic: 개발
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '332'
 ht-degree: 2%
 
 ---
@@ -46,13 +40,13 @@ interactivePDF = formsService.renderPDFForm("schengen.xdp", xmlData, renderOptio
 return interactivePDF;
 ```
 
-1행:xdp 템플릿이 들어 있는 폴더의 위치
+1행: xdp 템플릿이 들어 있는 폴더의 위치
 
-Line2-4:PDFFormRenderOptions를 만들고 해당 속성을 설정합니다
+Line2-4: PDFFormRenderOptions를 만들고 해당 속성을 설정합니다
 
-7행:FormsService의 renderPDFForm 서비스 작업을 사용하여 대화형 PDF 생성
+7행: FormsService의 renderPDFForm 서비스 작업을 사용하여 대화형 PDF 생성
 
-11호선:생성된 대화형 pdf를 호출 애플리케이션에 반환합니다
+11호선: 생성된 대화형 pdf를 호출 애플리케이션에 반환합니다
 
 **시스템에서 샘플 패키지를 테스트하려면**
 1. [Felix 웹 콘솔을 사용하여 DocumentServices 샘플 번들을 다운로드하여 설치합니다](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
