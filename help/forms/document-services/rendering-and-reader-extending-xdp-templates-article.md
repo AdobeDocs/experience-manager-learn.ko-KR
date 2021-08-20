@@ -1,22 +1,14 @@
 ---
 title: 사용 권한을 사용하여 XDP를 PDF로 렌더링
-seo-title: 사용 권한을 사용하여 XDP를 PDF로 렌더링
 description: pdf에 사용 권한 적용
-seo-description: pdf에 사용 권한 적용
-uuid: 5e60c61e-821d-439c-ad89-ab169ffe36c0
-topics: development
-audience: developer
-doc-type: article
-activity: implement
 version: 6.4,6.5
 feature: Forms 서비스
-discoiquuid: aefb4124-91a0-4548-94a3-86785ea04549
 topic: 개발
 role: Developer
 level: Experienced
-source-git-commit: aa90b2c1a066dc36d4ba26ecdb8b58939445ef34
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '453'
 ht-degree: 0%
 
 ---
