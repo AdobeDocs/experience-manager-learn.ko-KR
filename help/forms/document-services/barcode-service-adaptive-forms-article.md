@@ -1,28 +1,20 @@
 ---
 title: 적응형 Forms을 사용한 바코드 서비스
-seo-title: 적응형 Forms을 사용한 바코드 서비스
-description: 바코드 서비스를 사용하여 바코드를 디코딩하고 추출된 데이터에서 양식 필드를 채웁니다
-seo-description: 바코드 서비스를 사용하여 바코드를 디코딩하고 추출된 데이터에서 양식 필드를 채웁니다
-uuid: 42568b81-cbcd-479e-8d9a-cc0b244da4ae
-feature: 바코드 양식
-topics: development
-audience: developer
-doc-type: article
-activity: implement
+description: 바코드 서비스를 사용하여 바코드를 디코딩하고 추출된 데이터에서 양식 필드를 채웁니다.
+feature: 바코드 Forms
 version: 6.4,6.5
-discoiquuid: 1224de6d-7ca1-4e9d-85fe-cd675d03e262
 topic: 개발
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
 
 
-# 적응형 Forms을 사용하는 바코드 서비스{#barcode-service-with-adaptive-forms}
+# 적응형 Forms을 사용한 바코드 서비스{#barcode-service-with-adaptive-forms}
 
 이 문서에서는 바코드 서비스를 사용하여 적응형 양식을 채우는 방법을 보여 줍니다. 사용 사례는 다음과 같습니다.
 
