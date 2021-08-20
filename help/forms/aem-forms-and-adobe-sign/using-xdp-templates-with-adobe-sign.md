@@ -2,16 +2,12 @@
 title: AEM Forms 및 Adobe Sign에서 XDP 템플릿 사용
 description: AEM Forms 및 Adobe Sign에서 XDP 템플릿 사용. AEM Forms 및 Sign 통합을 통해 기존 XDP 템플릿을 활용하는 방법을 자세히 설명하는 비디오입니다.
 feature: 적응형 양식
-topics: development
-audience: developer
-doc-type: article
-activity: implement
 thumbnail: 39705.jpg
 kt: 6143
 topic: 개발
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
 source-wordcount: '70'
 ht-degree: 7%
