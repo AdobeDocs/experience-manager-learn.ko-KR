@@ -1,28 +1,20 @@
 ---
 title: AEM Forms에서 출력 및 Forms 서비스를 사용한 개발
-seo-title: AEM Forms에서 출력 및 Forms 서비스를 사용한 개발
 description: AEM Forms에서 출력 및 Forms 서비스 API 사용
-seo-description: AEM Forms에서 출력 및 Forms 서비스 API 사용
-uuid: be018eb5-dbe7-4101-a1a9-bee11ac97273
 feature: 출력 서비스
-topics: development
-audience: developer
-doc-type: article
-activity: implement
 version: 6.4,6.5
-discoiquuid: 57f478a9-8495-469e-8a06-ce1251172fda
 topic: 개발
 role: Developer
 level: Intermediate
-source-git-commit: 67be45dbd72a8af8b9ab60452ff15081c6f9f192
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '611'
+source-wordcount: '593'
 ht-degree: 1%
 
 ---
 
 
-# AEM Forms에서 출력 및 Forms 서비스를 사용하여 개발{#developing-with-output-and-forms-services-in-aem-forms}
+# AEM Forms에서 출력 및 Forms 서비스를 사용한 개발{#developing-with-output-and-forms-services-in-aem-forms}
 
 AEM Forms에서 출력 및 Forms 서비스 API 사용
 
@@ -84,29 +76,29 @@ http://localhost:4502/content/AemFormsSamples/exportdata.html
 **데이터 병합 및 병합 출력:**
 
 * 출력 서비스를 사용하여 데이터를 xdp 또는 pdf 문서와 병합하여 병합된 pdf 생성
-* **POST URL**:http://localhost:4502/content/AemFormsSamples/outputservice.html
+* **POST URL**: http://localhost:4502/content/AemFormsSamples/outputservice.html
 * **요청 매개 변수 -**
 
-   * xdp_or_pdf_file :데이터를 병합할 xdp 또는 pdf 파일
-   * xmlfile:xdp_or_pdf_file과 병합되는 xml 데이터 파일입니다
-   * saveLocation:렌더링된 문서를 파일 시스템에 저장할 위치입니다
+   * xdp_or_pdf_file : 데이터를 병합할 xdp 또는 pdf 파일
+   * xmlfile: xdp_or_pdf_file과 병합되는 xml 데이터 파일입니다
+   * saveLocation: 렌더링된 문서를 파일 시스템에 저장할 위치입니다
 
 **데이터를 PDF 파일로 가져오기:**
 * FormsService를 사용하여 데이터를 PDF 파일로 가져오기
 * **POST URL**  - http://localhost:4502/content/AemFormsSamples/mergedata.html
 * **요청 매개 변수:**
 
-   * pdfile :데이터를 병합할 pdf 파일
-   * xmlfile:pdf 파일과 병합될 xml 데이터 파일
-   * saveLocation:렌더링된 문서를 파일 시스템에 저장할 위치입니다. 예: c:\\\outputsample.pdf
+   * pdfile : 데이터를 병합할 pdf 파일
+   * xmlfile: pdf 파일과 병합될 xml 데이터 파일
+   * saveLocation: 렌더링된 문서를 파일 시스템에 저장할 위치입니다. 예: c:\\\outputsample.pdf
 
 **PDF 파일에서 데이터 내보내기**
 * FormsService를 사용하여 PDF 파일에서 데이터를 내보냅니다
 * **POST** URL - http://localhost:4502/content/AemFormsSamples/exportdata.html
 * **요청 매개 변수:**
 
-   * pdfile :데이터를 내보낼 pdf 파일
-   * saveLocation:내보낸 데이터를 파일 시스템에 저장할 위치입니다
+   * pdfile : 데이터를 내보낼 pdf 파일
+   * saveLocation: 내보낸 데이터를 파일 시스템에 저장할 위치입니다
 
 [이 postman 컬렉션을 가져와서 API를 테스트할 수 있습니다](assets/document-services-postman-collection.json)
 
