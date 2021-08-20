@@ -1,24 +1,16 @@
 ---
 title: 적응형 양식 만들기
-seo-title: 적응형 양식 만들기
 description: 1부에서는 적응형 양식을 만들고, 적절한 단추가 있는 도구 모음을 추가 및 구성합니다.
-seo-description: 1부에서는 적응형 양식을 만들고, 적절한 단추가 있는 도구 모음을 추가 및 구성합니다.
-uuid: 4ab7f01e-a75b-4e08-a5d8-690c63773ec3
 feature: 적응형 양식
-topics: authoring
-audience: developer
-doc-type: tutorial
-activity: understand
-discoiquuid: 1c9fb7b6-98dd-4725-b787-ac9e71906500
 kt: 4208
 thumbnail: 22173.jpg
 topic: 개발
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '67'
-ht-degree: 4%
+source-wordcount: '50'
+ht-degree: 6%
 
 ---
 
