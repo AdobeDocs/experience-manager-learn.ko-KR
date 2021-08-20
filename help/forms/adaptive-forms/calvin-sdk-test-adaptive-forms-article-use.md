@@ -1,21 +1,16 @@
 ---
 title: 'AEM Adaptive Forms에서 자동화된 테스트 사용 '
-seo-title: 'AEM Adaptive Forms에서 자동화된 테스트 사용 '
 description: Calvin SDK를 사용한 적응형 Forms의 자동화된 테스트
-seo-description: Calvin SDK를 사용한 적응형 Forms의 자동화된 테스트
 feature: 적응형 양식
-topics: development
-audience: developer
 doc-type: article
 activity: develop
 version: 6.3,6.4,6.5
-uuid: 3ad4e6d6-d3b1-4e4d-9169-847f74ba06be
 topic: 개발
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '446'
 ht-degree: 1%
 
 ---
@@ -25,7 +20,7 @@ ht-degree: 1%
 
 Calvin SDK를 사용한 적응형 Forms의 자동화된 테스트
 
-Calvin SDK는 응용 Forms 개발자가 응용 Forms을 테스트할 수 있는 유틸리티 API입니다. Calvin SDK는 [Hobbes.js 테스트 프레임워크](https://docs.adobe.com/docs/en/aem/6-3/develop/ref/test-api/index.html) 맨 위에 빌드되어 있습니다. Calvin SDK는 AEM Forms 6.3 이상에서 사용할 수 있습니다.
+Calvin SDK는 응용 Forms 개발자가 응용 Forms을 테스트할 수 있는 유틸리티 API입니다. Calvin SDK는 [Hobbes.js 테스트 프레임워크](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html) 맨 위에 빌드되어 있습니다. Calvin SDK는 AEM Forms 6.3 이상에서 사용할 수 있습니다.
 
 이 자습서에서는 다음 내용을 만듭니다.
 
@@ -76,7 +71,7 @@ var mortgageFormTS = new hobs.TestSuite("Mortgage Form Test", {
 * 테스트 사례를 테스트 세트에 추가하려면 TestSuite 개체의 `addTestCase` 메서드를 사용하십시오.
 * `addTestCase` 메서드는 TestCase 개체를 매개 변수로 사용합니다.
 * TestCase를 만들려면 `hobs.TestCase(..)` 메서드를 사용합니다.
-* 참고:첫 번째 매개 변수는 UI에 표시되는 테스트 사례 의 이름입니다.
+* 참고: 첫 번째 매개 변수는 UI에 표시되는 테스트 사례 의 이름입니다.
 * 테스트 사례를 만들고 나면 테스트 사례에 작업을 추가할 수 있습니다.
 * `navigateTo`, `asserts.isTrue`을 포함하는 작업은 테스트 사례에 작업으로 추가할 수 있습니다.
 
@@ -86,7 +81,7 @@ var mortgageFormTS = new hobs.TestSuite("Mortgage Form Test", {
 
 ![calvinsdk](assets/calvinimage.png)
 
-## 샘플 테스트 세트 {#try-out-the-sample-test-suites} 를 사용해 보십시오
+## 샘플 테스트 세트 시도 {#try-out-the-sample-test-suites}
 
 샘플 패키지의 일부로 세 개의 추가 테스트 세트가 있습니다. 아래 그림과 같이 clientlibrary의 js.txt 파일에 적절한 파일을 포함하여 시도할 수 있습니다.
 
