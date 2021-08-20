@@ -1,20 +1,15 @@
 ---
 title: 응용 Forms에서 인라인 이미지 표시
-seo-title: 응용 Forms에서 인라인 이미지 표시
 description: 적응형 Forms에서 업로드된 이미지 인라인 표시
-seo-description: 적응형 Forms에서 업로드된 이미지 인라인 표시
 feature: 적응형 양식
 topics: development
-audience: developer
-doc-type: article
-activity: setup
 version: 6.3,6.4,6.5
 topic: 개발
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '240'
 ht-degree: 1%
 
 ---
@@ -23,6 +18,8 @@ ht-degree: 1%
 # 응용 Forms의 인라인 이미지
 
 일반적인 사용 사례는 업로드된 이미지를 적응형 양식에 인라인 이미지로 표시하는 것입니다. 기본적으로 업로드된 이미지는 링크로 표시되며, 이미지를 적응형 양식으로 표시하여 이 경험을 향상시킬 수 있습니다. 이 문서는 인라인 이미지를 표시하는 단계를 안내합니다.
+
+[이 기능의 라이브 예](https://forms.enablementadobe.com/content/samples/samples.html?query=0#collapse1)
 
 ## 자리 표시자 이미지 추가
 
