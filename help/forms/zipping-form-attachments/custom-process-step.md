@@ -1,19 +1,15 @@
 ---
 title: 첨부 파일을 압축하는 사용자 정의 프로세스 단계
 description: 적응형 양식 첨부 파일을 zip 파일에 추가하고 zip 파일을 워크플로우 변수에 저장하는 사용자 지정 프로세스 단계입니다
-feature: 워크플로우
-topics: adaptive forms
-audience: developer
-doc-type: article
-activity: setup
+feature: 적응형 양식
 version: 6.5
 topic: 개발
 role: Developer
 level: Beginner
 kt: kt-8049
-source-git-commit: 540e11c0861eacc795122328b2359c7db6378aec
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '150'
+source-wordcount: '151'
 ht-degree: 1%
 
 ---
