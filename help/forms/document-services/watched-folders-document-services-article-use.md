@@ -1,22 +1,14 @@
 ---
 title: AEM Forms에서 감시 폴더 사용
-seo-title: AEM Forms에서 감시 폴더 사용
 description: AEM Forms에서 감시 폴더 구성 및 사용
-seo-description: AEM Forms에서 감시 폴더 구성 및 사용
-uuid: 32c4bda2-363d-4294-925e-405a176f7f8d
 feature: 출력 서비스
-topics: development
-audience: developer
-doc-type: article
-activity: implement
 version: 6.4,6.5
-discoiquuid: a40e2381-0dc8-4784-9b80-15e27b244035
 topic: 개발
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '428'
 ht-degree: 0%
 
 ---
