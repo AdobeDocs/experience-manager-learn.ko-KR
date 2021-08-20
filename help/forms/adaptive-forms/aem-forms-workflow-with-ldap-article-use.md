@@ -1,22 +1,14 @@
 ---
-title: Aem에서 LDAP Forms Workflow 사용
-seo-title: Aem에서 LDAP Forms Workflow 사용
+title: AEM Forms 워크플로우에서 LDAP 사용
 description: 제출자의 관리자에 AEM Forms 워크플로우 작업 할당
-seo-description: 제출자의 관리자에 AEM Forms 워크플로우 작업 할당
-feature: 적응형 Forms,워크플로우
-topics: integrations
-audience: developer
-doc-type: article
-activity: setup
+feature: 적응형 Forms, 워크플로우
+topic: 통합
+role: Developer
 version: 6.3,6.4,6.5
-uuid: 3e32c3a7-387f-4652-8a94-4e6aa6cd5ab8
-discoiquuid: 671872b3-3de0-40da-9691-f8b7e88a9443
-topic: 개발
-role: Admin
 level: Intermediate
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '532'
 ht-degree: 0%
 
 ---
