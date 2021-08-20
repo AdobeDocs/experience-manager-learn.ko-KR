@@ -2,17 +2,13 @@
 title: 양식 데이터 모델 구성
 description: RDBMS 데이터 소스를 기반으로 양식 데이터 모델 만들기
 feature: 적응형 양식
-topics: development
-audience: developer
-doc-type: article
-activity: implement
 version: 6.4,6.5
 kt: 5812
 thumbnail: kt-5812.jpg
 topic: 개발
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 2%
