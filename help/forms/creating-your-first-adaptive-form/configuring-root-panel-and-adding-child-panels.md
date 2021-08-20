@@ -1,25 +1,17 @@
 ---
 title: 루트 패널에 하위 패널 추가
-seo-title: 루트 패널에 하위 패널 추가
 description: 루트 패널 레이아웃을 "왼쪽 탭"으로 구성하고 하위 패널을 루트 패널에 추가합니다.
-seo-description: 루트 패널 레이아웃을 "왼쪽 탭"으로 구성하고 하위 패널을 루트 패널에 추가합니다.
-uuid: ef9f7c02-ead8-4f96-aabd-40d586127aa7
 feature: 적응형 양식
-topics: authoring
-audience: developer
-doc-type: tutorial
-activity: understand
 version: 6.4,6.5
-discoiquuid: e748b7c3-99c9-4caa-98b1-4433046c24b8
 thumbnail: 28536.jpg
 kt: 4209
 topic: 개발
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '83'
-ht-degree: 3%
+source-wordcount: '61'
+ht-degree: 4%
 
 ---
 
