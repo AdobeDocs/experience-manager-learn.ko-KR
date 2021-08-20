@@ -2,17 +2,13 @@
 title: 웹 페이지에 적응형 Forms/HTML5 양식 포함
 description: AEM이 아닌 웹 페이지에 적응형 Forms 또는 HTML5 양식을 포함하는 데 필요한 구성 단계입니다.
 feature: 적응형 양식
-feature-set: Adaptive Forms
-topics: development
-audience: developer
-doc-type: Tutorial
-activity: implement
+type: Tutorial
 version: 6.4,6.5
-topic: 관리
-role: Admin
+topic: 개발
+role: Developer
 level: Beginner
 kt: 8390
-source-git-commit: 2fc4f748fd3b8f820d1451d08c5fe01d11892029
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 2%
