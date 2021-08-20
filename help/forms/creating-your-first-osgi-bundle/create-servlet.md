@@ -2,15 +2,11 @@
 title: AEM Forms에서 첫 번째 서블릿 만들기
 description: 데이터를 양식 템플릿과 병합하기 위해 첫 번째 sling 서블릿을 빌드합니다.
 feature: 적응형 양식
-topics: development
-audience: developer
-doc-type: article
-activity: setup
 version: 6.4,6.5
 topic: 개발
 role: Developer
 level: Beginner
-source-git-commit: c74c6f5627e69e32bbf0098d6b6bab122cace798
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 2%
@@ -24,7 +20,7 @@ ht-degree: 2%
 모든 서블릿은 라이프 사이클 메서드를 정의하는 서블릿 인터페이스를 구현해야 합니다.
 
 
-AEM의 서블릿은 OSGi 서비스로 등록할 수 있습니다.모든 RESTful 작업을 구현하기 위해 읽기 전용 구현에 대해 SlingSafeMethodsServlet을 확장하거나 SlingAllMethodsServlet을 확장할 수 있습니다.
+AEM의 서블릿은 OSGi 서비스로 등록할 수 있습니다. 모든 RESTful 작업을 구현하기 위해 읽기 전용 구현에 대해 SlingSafeMethodsServlet을 확장하거나 SlingAllMethodsServlet을 확장할 수 있습니다.
 
 ## 서블릿 코드
 
