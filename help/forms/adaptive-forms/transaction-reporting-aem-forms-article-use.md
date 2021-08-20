@@ -1,28 +1,20 @@
 ---
 title: AEM Forms에서 거래 보고 사용
-seo-title: AEM Forms에서 거래 보고 사용
 description: AEM Forms의 트랜잭션 보고서를 사용하면 AEM Forms 배포에 지정된 날짜 이후 발생한 모든 트랜잭션 수를 유지할 수 있습니다.
-seo-description: AEM Forms의 트랜잭션 보고서를 사용하면 AEM Forms 배포에 지정된 날짜 이후 발생한 모든 트랜잭션 수를 유지할 수 있습니다.
-uuid: e6133f7e-c79c-4006-89e7-3bebf7b8229e
 feature: 적응형 양식
-topics: developing
-audience: administrator
-doc-type: article
-activity: setup
 version: 6.4.1,6.5
-discoiquuid: 1abdf07a-b9f0-4c58-a1c6-08ae57db2014
 topic: 개발
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '401'
-ht-degree: 1%
+source-wordcount: '370'
+ht-degree: 2%
 
 ---
 
 
-# AEM Forms에서 트랜잭션 보고 사용{#using-transaction-reporting-in-aem-forms}
+# AEM Forms에서 거래 보고 사용{#using-transaction-reporting-in-aem-forms}
 
 양식 제출 수를 캡처하기 위한 거래 보고, 문서 서비스를 사용한 문서 렌더링 및 대화형 커뮤니케이션(웹 및 인쇄 채널)이 AEM Forms 6.4.1에서 도입되었습니다. 이 기능은 주로 양식 제출 및/또는 렌더링된 문서의 수에 따라 소프트웨어 라이센스를 부여하려는 고객에게 제공됩니다. 이 기능은 현재 AEM Forms OSGI 스택에서만 사용할 수 있습니다.
 
