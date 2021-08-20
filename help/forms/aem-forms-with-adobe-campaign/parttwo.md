@@ -1,28 +1,20 @@
 ---
 title: 적응형 양식 제출에서 캠페인 프로필 만들기
-seo-title: 적응형 양식 제출에서 캠페인 프로필 만들기
 description: 이 문서에서는 적응형 양식 제출 시 Adobe Campaign Standard에서 프로필을 만드는 데 필요한 단계에 대해 설명합니다. 이 프로세스에서는 사용자 지정 제출 메커니즘을 사용하여 적응형 양식 제출을 처리합니다.
-seo-description: 이 문서에서는 적응형 양식 제출 시 Adobe Campaign Standard에서 프로필을 만드는 데 필요한 단계에 대해 설명합니다. 이 프로세스에서는 사용자 지정 제출 메커니즘을 사용하여 적응형 양식 제출을 처리합니다.
-uuid: f3cb7b3c-1a1c-49eb-9447-a9e52c675244
 feature: 적응형 Forms, 양식 데이터 모델
-topics: integrations
-audience: developer
-doc-type: tutorial
-activity: setup
 version: 6.3,6.4,6.5
-discoiquuid: 46ec4136-4898-4b01-86bb-ac638a29b242
 topic: 개발
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '365'
 ht-degree: 0%
 
 ---
 
 
-# 적응형 양식 제출 시 캠페인 프로필 만들기 {#creating-campaign-profile-on-adaptive-form-submission}
+# 적응형 양식 제출에서 캠페인 프로필 만들기 {#creating-campaign-profile-on-adaptive-form-submission}
 
 이 문서에서는 적응형 양식 제출 시 Adobe Campaign Standard에서 프로필을 만드는 데 필요한 단계에 대해 설명합니다. 이 프로세스에서는 사용자 지정 제출 메커니즘을 사용하여 적응형 양식 제출을 처리합니다.
 
@@ -266,7 +258,7 @@ profile.addProperty("mobilePhone",request.getParameter("phone"));
 String pkey = addNewProfile.createProfile(profile);
 ```
 
-## 솔루션 {#test-the-solution} 테스트
+## 솔루션 테스트 {#test-the-solution}
 
 서비스와 사용자 지정 제출 작업을 정의했으면 솔루션을 테스트할 준비가 되었습니다. 솔루션을 테스트하려면 다음 단계를 수행하십시오
 
