@@ -1,28 +1,20 @@
 ---
 title: 적응형 Forms 시작하기
-seo-title: 적응형 Forms 시작하기
 description: '이 자습서에서는 다중 탭 적응형 양식 만들기에 관련된 단계를 안내합니다. 표, 아코디언 레이아웃 및 규칙 편집기를 사용하여 비즈니스 규칙을 작성하는 방법을 알아봅니다. '
-seo-description: '이 자습서에서는 다중 탭 적응형 양식 만들기에 관련된 단계를 안내합니다. 표, 아코디언 레이아웃 및 규칙 편집기를 사용하여 비즈니스 규칙을 작성하는 방법을 알아봅니다. '
-uuid: 6f73cb1c-94e2-4ac7-89e5-a72141a06bbe
 feature: 적응형 양식
-topics: authoring
-audience: developer
-doc-type: tutorial
-activity: understand
 version: 6.3,6.4,6.5
-discoiquuid: b6863d3d-8528-4a96-ae37-c8d1aa62d443
 topic: 개발
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 3%
+source-wordcount: '210'
+ht-degree: 4%
 
 ---
 
 
-# 응용 Forms 시작하기 {#getting-started-with-adaptive-forms}
+# 적응형 Forms 시작하기 {#getting-started-with-adaptive-forms}
 
 이 자습서에서는 다중 탭 적응형 양식 만들기에 관련된 단계를 안내합니다. 표, 아코디언 레이아웃 및 규칙 편집기를 사용하여 비즈니스 규칙을 작성하는 방법을 알아봅니다.
 
