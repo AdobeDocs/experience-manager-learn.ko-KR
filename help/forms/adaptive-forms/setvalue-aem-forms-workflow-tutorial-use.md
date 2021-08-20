@@ -1,21 +1,13 @@
 ---
 title: AEM Forms 워크플로우에서 setvalue 사용
-seo-title: AEM Forms Workflow에서 setvalue 사용
 description: AEM Forms OSGI에서 제출된 적응형 Forms의 요소 값 설정
-seo-description: AEM Forms OSGI에서 제출된 적응형 Forms의 요소 값 설정
-uuid: fe431e48-f05b-4b23-94d2-95d34d863984
 feature: 적응형 양식
-topics: developing
-audience: implementer
-doc-type: article
-activity: setup
-discoiquuid: dbd87302-f770-4e61-b5ad-3fc5831b4613
 topic: 개발
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '531'
 ht-degree: 1%
 
 ---
