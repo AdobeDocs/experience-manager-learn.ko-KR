@@ -7,10 +7,10 @@ version: 6.3, 6.4, 6.5
 topic: 컨텐츠 관리
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '155'
-ht-degree: 8%
+source-wordcount: '149'
+ht-degree: 2%
 
 ---
 
@@ -23,7 +23,7 @@ AEM Assets Dynamic Media은 Interactive Media 뷰어를 통해 자산 핫스팟�
 
 >[!NOTE]
 >
->AEM Assets Dynamic Media 핫스팟과 함께 AEM 경험 구성요소를 사용하려면 [AEM을 Dynamic Media](https://docs.adobe.com/docs/ko-KR/aem/6-3/administer/content/dynamic-media/config-dynamic.html) 모드에서 실행해야 합니다.
+>AEM Assets Dynamic Media 핫스팟과 함께 AEM 경험 구성요소를 사용하려면 [AEM을 Dynamic Media](https://experienceleague.adobe.com/docs/) 모드에서 실행해야 합니다.
 
 비디오에 표시된 팝업 경험 조각 변형을 아래의 AEM 패키지로 사용할 수 있습니다.
 
