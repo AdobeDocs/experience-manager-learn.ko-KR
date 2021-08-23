@@ -11,9 +11,9 @@ kt: 5830
 topic: 개발
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '292'
 ht-degree: 1%
 
 ---
@@ -81,7 +81,7 @@ return val;
 
 >[!NOTE]
 >
->이 문서에서는 사용자가 이 시리즈의 이전 문서](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/inbox-customization/add-married-column.md)에서 [샘플 워크플로우](assets/review-workflow.zip) 및 [샘플 양식](assets/snap-form.zip)을 설치했다고 가정합니다.[
+>이 문서에서는 사용자가 이 시리즈의 이전 문서](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/inbox-customization/add-married-column.md)에서 [샘플 워크플로우](assets/review-workflow.zip) 및 [샘플 양식](assets/snap-form.zip)을 설치했다고 가정합니다.[
 
 * [관리 사용자로 crx에 로그인](http://localhost:4502/crx/de/index.jsp)
 * [sightly 템플릿 가져오기](assets/sightly-template.zip)
