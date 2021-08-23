@@ -10,10 +10,10 @@ version: 6.5
 topic: 개발
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '419'
-ht-degree: 16%
+source-wordcount: '417'
+ht-degree: 17%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 16%
 
 배치 API를 사용하여 템플릿에서 여러 대화형 커뮤니케이션을 생성할 수 있습니다. 템플릿은 데이터가 없는 대화형 커뮤니케이션입니다. 배치 API는 데이터를 템플릿과 결합하여 대화형 커뮤니케이션을 생성합니다. API는 대량의 대화형 커뮤니케이션 제작 시 유용합니다. 예를 들면 여러 고객을 위한 전화 요금 청구서, 신용 카드 명세서 등이 있습니다.
 
-[배치 생성 API에 대해 자세히 알아보기](https://docs.adobe.com/content/help/en/experience-manager-65/forms/interactive-communications/generate-multiple-interactive-communication-using-batch-api.html)
+[배치 생성 API에 대해 자세히 알아보기](https://experienceleague.adobe.com/docs/experience-manager-65/forms/interactive-communications/generate-multiple-interactive-communication-using-batch-api.html)
 
 이 문서에서는 배치 API를 사용하여 인터랙티브 통신 문서를 생성하는 샘플 자산을 제공합니다.
 
