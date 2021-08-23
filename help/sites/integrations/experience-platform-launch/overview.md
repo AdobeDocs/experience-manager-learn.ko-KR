@@ -11,9 +11,9 @@ thumbnail: 39090.jpg
 topic: 통합
 role: Developer
 level: Intermediate
-source-git-commit: e82cc5e5de6db33e82b7c71c73bb606f16b98ea6
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '138'
+source-wordcount: '134'
 ht-degree: 11%
 
 ---
@@ -31,6 +31,6 @@ Experience Platform Launch은 Adobe의 차세대 태그 관리 플랫폼으로 A
 
 ## 추가 리소스 {#additional-resources}
 
-* [Experience Cloud 애플리케이션과의 Experience Platform 통합](https://docs.adobe.com/content/help/en/platform-learn/tutorials/intro-to-platform/integrations-with-experience-cloud-applications.html)
-* [Experience Platform Launch 사용 안내서](https://experienceleague.adobe.com/docs/launch/using/home.html)
-* [Launch를 사용하여 웹 사이트에서 Experience Cloud 구현](https://docs.adobe.com/content/help/en/core-services-learn/implementing-in-websites-with-launch/index.html)
+* [Experience Cloud 애플리케이션과의 Experience Platform 통합](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/integrations-with-experience-cloud-applications.html)
+* [Experience Platform Launch 사용 안내서](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
+* [Launch를 사용하여 웹 사이트에서 Experience Cloud 구현](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/index.html)
