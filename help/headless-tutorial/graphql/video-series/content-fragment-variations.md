@@ -1,7 +1,6 @@
 ---
 title: 컨텐츠 조각 변형
 description: 컨텐츠 조각의 변형을 만들고 몇 가지 일반적인 사용 사례를 탐색하는 방법을 알아봅니다.
-sub-product: assets
 version: cloud-service
 topic: 헤드리스, 컨텐츠 관리
 feature: 컨텐츠 조각, GraphQL API
@@ -9,9 +8,9 @@ role: Developer
 level: Beginner
 kt: 7874
 thumbnail: 333295.jpg
-source-git-commit: 1853960cce1e17ade43e4b2d7b521f63c4d04d71
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '87'
+source-wordcount: '86'
 ht-degree: 0%
 
 ---
