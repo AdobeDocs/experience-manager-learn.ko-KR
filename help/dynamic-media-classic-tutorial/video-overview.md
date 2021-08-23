@@ -10,9 +10,9 @@ activity: use
 topic: 컨텐츠 관리
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '6231'
+source-wordcount: '6195'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ Dynamic Media Classic이 HTML5 비디오를 지원하므로 웹 및 모바일 �
 
 일부 고객에게 적용될 수 있는 Dynamic Media Classic 비디오에 대한 마지막 참고 사항: 모든 회사에서 계정에 대해 자동 전환, 스트리밍 또는 비디오 사전 설정이 활성화되어 있을 수는 없습니다. 어떤 이유로 스트리밍 비디오용 URL에 액세스할 수 없는 경우, 이러한 이유가 있을 수 있습니다. 점진적으로 다운로드한 비디오를 업로드 및 게시하고 모든 비디오 뷰어에 액세스할 수 있습니다. 그러나 전체 Dynamic Media Classic 비디오 기능을 활용하려면 계정 관리자 또는 영업 관리자에게 문의하여 이러한 기능을 사용하도록 설정하려고 합니다.
 
-Dynamic Media Classic에서 [비디오에 대해 자세히 알아보십시오](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/quick-start-video.html).
+Dynamic Media Classic에서 [비디오에 대해 자세히 알아보십시오](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/quick-start-video.html).
 
 ## Video 101
 
@@ -138,8 +138,8 @@ Dynamic Media Classic에서 비디오를 사용하여 작업하는 경우 이미
 
 ![이미지](assets/video-overview/video-overview-2.png)
 
-1. 먼저 Dynamic Media Classic에 비디오 파일을 업로드합니다. 이렇게 하려면 Dynamic Media Classic 확장 패널 하단에 있는 **도구 메뉴**&#x200B;를 열고 **Dynamic Media Classic에 업로드 > 폴더 이름**&#x200B;에 파일 또는 **Dynamic Media Classic에 업로드 > 폴더 이름**&#x200B;을 선택합니다. &quot;폴더 이름&quot;은 현재 확장을 사용하여 탐색하는 모든 폴더가 됩니다. 비디오 파일은 클 수 있으므로 큰 파일을 업로드하려면 FTP를 사용하는 것이 좋습니다. 업로드의 일부로, 비디오를 인코딩할 하나 이상의 비디오 사전 설정 을 선택합니다. 업로드 시 비디오를 MP4 비디오로 코딩할 수 있습니다. 인코딩 사전 설정 사용 및 작성에 대한 자세한 내용은 아래 비디오 사전 설정 항목을 참조하십시오. [비디오 업로드 및 인코딩에 대해 알아봅니다](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/uploading-encoding-videos.html).
-2. 비디오 뷰어 사전 설정을 선택하거나 수정하고 비디오를 미리 봅니다. 미리 빌드된 뷰어 사전 설정을 선택하거나 직접 사용자 지정할 수 있습니다. 모바일 사용자를 타깃팅하는 경우 모바일 플랫폼에는 뷰어 또는 사전 설정이 필요하지 않으므로 여기서 작업을 수행하지 않아도 됩니다. [비디오 뷰어](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/previewing-videos-video-viewer.html) 및 [비디오 뷰어 사전 설정 추가 또는 편집](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/previewing-videos-video-viewer.html#adding-or-editing-a-video-viewer-preset)에 대해 자세히 알아보십시오.
+1. 먼저 Dynamic Media Classic에 비디오 파일을 업로드합니다. 이렇게 하려면 Dynamic Media Classic 확장 패널 하단에 있는 **도구 메뉴**&#x200B;를 열고 **Dynamic Media Classic에 업로드 > 폴더 이름**&#x200B;에 파일 또는 **Dynamic Media Classic에 업로드 > 폴더 이름**&#x200B;을 선택합니다. &quot;폴더 이름&quot;은 현재 확장을 사용하여 탐색하는 모든 폴더가 됩니다. 비디오 파일은 클 수 있으므로 큰 파일을 업로드하려면 FTP를 사용하는 것이 좋습니다. 업로드의 일부로, 비디오를 인코딩할 하나 이상의 비디오 사전 설정 을 선택합니다. 업로드 시 비디오를 MP4 비디오로 코딩할 수 있습니다. 인코딩 사전 설정 사용 및 작성에 대한 자세한 내용은 아래 비디오 사전 설정 항목을 참조하십시오. [비디오 업로드 및 인코딩에 대해 알아봅니다](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/uploading-encoding-videos.html).
+2. 비디오 뷰어 사전 설정을 선택하거나 수정하고 비디오를 미리 봅니다. 미리 빌드된 뷰어 사전 설정을 선택하거나 직접 사용자 지정할 수 있습니다. 모바일 사용자를 타깃팅하는 경우 모바일 플랫폼에는 뷰어 또는 사전 설정이 필요하지 않으므로 여기서 작업을 수행하지 않아도 됩니다. [비디오 뷰어](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/previewing-videos-video-viewer.html) 및 [비디오 뷰어 사전 설정 추가 또는 편집](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/previewing-videos-video-viewer.html#adding-or-editing-a-video-viewer-preset)에 대해 자세히 알아보십시오.
 3. 비디오 게시를 실행하고 URL을 가져와서 통합합니다. 비디오 워크플로우와 이미지 워크플로우에 대한 이 단계의 주요 차이점은 표준 이미지 제공 게시 대신 특별 비디오 게시 를 실행한다는 것입니다. 데스크탑의 비디오 뷰어 통합은 이미지 뷰어 통합과 정확히 동일하게 작동하지만 모바일 장치의 경우 훨씬 간단합니다. 필요한 것은 비디오 자체의 URL입니다.
 
 ### 코드 변환 정보
@@ -174,11 +174,11 @@ Dynamic Media Classic은 파일을 대신 변환할 수 있을 뿐만 아니라 
 
 비디오를 업로드할 때 인코딩을 통해 마스터 비디오를 웹에 친숙한 형식으로 변환하는 설정이 포함된 하나 이상의 사전 설정 중에서 선택합니다. 비디오 사전 설정은 응용 비디오 사전 설정과 단일 인코딩 사전 설정의 두 가지 방식으로 제공됩니다.
 
-[사용 가능한 비디오 사전 설정](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files)을 참조하십시오.
+[사용 가능한 비디오 사전 설정](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files)을 참조하십시오.
 
 응용 비디오 사전 설정은 기본적으로 활성화되어 있으므로 인코딩에 사용할 수 있습니다. 단일 인코딩 사전 설정을 사용하려면 관리자가 이 사전 설정이 비디오 사전 설정 목록에 나타나도록 활성화해야 합니다.
 
-[비디오 사전 설정을 활성화 또는 비활성화하는 방법을 알아봅니다](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/uploading-encoding-videos.html#activating-or-deactivating-video-encoding-presets).
+[비디오 사전 설정을 활성화 또는 비활성화하는 방법을 알아봅니다](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/uploading-encoding-videos.html#activating-or-deactivating-video-encoding-presets).
 
 Dynamic Media Classic과 함께 제공되는 많은 사전 설정 중 하나를 선택하거나 직접 만들 수 있습니다. 그러나 기본적으로 업로드할 사전 설정은 선택되어 있지 않습니다. 즉, 업로드 시 비디오 사전 설정을 선택하지 않으면 비디오가 변환되지 않고 게시 취소할 수 없는&#x200B;**일 수 있습니다.** 그러나 비디오를 오프라인으로 직접 변환하고 업로드하고 게시할 수도 있습니다. Dynamic Media Classic에서 자동으로 전환하도록 하려는 경우에만 비디오 사전 설정이 필요합니다.
 
@@ -240,19 +240,19 @@ Dynamic Media Classic과 함께 제공되는 많은 사전 설정 중 하나를 
 11. **저장**&#x200B;을 클릭하여 사전 설정을 저장합니다. 다른 모든 사전 설정과 달리 이 시점에서 게시할 필요가 없습니다. 사전 설정은 파일을 업로드하기 위해서만 가능하기 때문입니다. 나중에 인코딩된 비디오를 게시해야 하지만 사전 설정은 내부 Dynamic Media Classic 사용용으로만 사용됩니다.
 12. 비디오 사전 설정이 업로드 목록에 있는지 확인하려면 **업로드**.작업 옵션&#x200B;**을 선택하고**&#x200B;비디오 옵션&#x200B;**을 확장합니다.** 선택한 재생 장치(컴퓨터, 모바일 또는 태블릿)의 카테고리에 사전 설정이 나열됩니다.
 
-[비디오 사전 설정 추가 또는 편집에 대해 자세히 알아보십시오](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/uploading-encoding-videos.html#adding-or-editing-a-video-encoding-preset).
+[비디오 사전 설정 추가 또는 편집에 대해 자세히 알아보십시오](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/uploading-encoding-videos.html#adding-or-editing-a-video-encoding-preset).
 
 ## 비디오에 캡션 추가
 
 경우에 따라 비디오에 캡션을 추가하는 것이 유용할 수 있습니다. 예를 들어, 여러 언어로 뷰어에 비디오를 제공해야 할 때, 오디오를 다른 언어로 중복하거나 별도의 언어로 다시 녹음하지 않으려는 경우가 있습니다. 또한 캡션 기능을 추가하면 청각 장애가 있는 사용자에게 더 많은 액세스 가능성이 있고 자막을 사용할 수 있습니다. Dynamic Media Classic을 사용하면 비디오에 캡션을 쉽게 추가할 수 있습니다.
 
-[비디오에 캡션을 추가하는 방법을 알아봅니다](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/adding-captions-video.html).
+[비디오에 캡션을 추가하는 방법을 알아봅니다](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/adding-captions-video.html).
 
 ## 비디오에 장 마커 추가
 
 긴 형식의 비디오의 경우 시청자는 장 마커를 사용하여 비디오를 탐색함으로써 제공되는 기능과 편리함을 감상할 수 있습니다. Dynamic Media Classic에서는 비디오에 장 마커를 쉽게 추가할 수 있습니다.
 
-[비디오](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/adding-chapter-markers-video.html)에 장 마커를 추가하는 방법을 알아봅니다.
+[비디오](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/adding-chapter-markers-video.html)에 장 마커를 추가하는 방법을 알아봅니다.
 
 ## 비디오 구현 항목
 
@@ -262,20 +262,20 @@ Dynamic Media Classic 워크플로우의 마지막 단계는 비디오 컨텐츠
 
 ![이미지](assets/video-overview/video-overview-6.jpg)
 
-[비디오를 게시하는 방법을 알아봅니다](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#publishing-video).
+[비디오를 게시하는 방법을 알아봅니다](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#publishing-video).
 
 비디오 게시를 실행하면 웹 브라우저에서 비디오와 최신 Dynamic Media Classic 뷰어 사전 설정에 액세스할 URL을 가져올 수 있습니다. 그러나 고유한 비디오 뷰어 사전 설정을 사용자 지정하거나 만드는 경우에는 여전히 별도의 이미지 서버 게시를 실행해야 합니다.
 
-- [모바일 사이트 또는 웹 사이트에 URL을 연결하는 방법을 알아봅니다](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#linking-a-video-url-to-a-mobile-site-or-a-website).
-- [웹 페이지에 비디오 뷰어를 포함하는 방법을 알아봅니다](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#embedding-the-video-viewer-on-a-web-page).
+- [모바일 사이트 또는 웹 사이트에 URL을 연결하는 방법을 알아봅니다](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#linking-a-video-url-to-a-mobile-site-or-a-website).
+- [웹 페이지에 비디오 뷰어를 포함하는 방법을 알아봅니다](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#embedding-the-video-viewer-on-a-web-page).
 
 타사 또는 사용자 지정 제작 비디오 플레이어를 사용하여 비디오를 배포할 수도 있습니다.
 
-타사 비디오 플레이어](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#deploying-video-using-a-third-party-video-player)를 사용하여 비디오를 배포하는 방법을 알아봅니다.[
+타사 비디오 플레이어](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#deploying-video-using-a-third-party-video-player)를 사용하여 비디오를 배포하는 방법을 알아봅니다.[
 
 또한 비디오에서 추출된 이미지, 비디오 미리 보기를 사용하려면 이미지 서버 게시를 실행해야 합니다. 비디오의 축소판 이미지는 이미지 서버에 있지만 비디오 자체는 비디오 서버에 있기 때문입니다. 비디오 미리 보기는 비디오 검색 결과, 비디오 재생 목록에 사용할 수 있으며, 비디오가 재생되기 전에 비디오 뷰어에 나타나는 초기 &quot;포스터 프레임&quot;으로 사용할 수 있습니다.
 
-[비디오 축소판 작업](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#working-with-video-thumbnails)에 대해 자세히 알아보십시오.
+[비디오 축소판 작업](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#working-with-video-thumbnails)에 대해 자세히 알아보십시오.
 
 ### 뷰어 사전 설정 선택 및 사용자 지정
 
@@ -310,15 +310,15 @@ Google 및 기타 검색 엔진이 파일을 거부하지 않도록 하려면 �
 
 이 방법을 사용하면 Dynamic Media Classic을 사용하여 이 데이터를 수동으로 입력할 필요가 없습니다. 하지만 매번 동일한 데이터를 빠르게 입력할 수 있도록 Dynamic Media Classic에서 메타데이터 사전 설정을 사용할 수도 있습니다.
 
-해당 항목에 대한 자세한 내용은 [메타데이터 보기, 추가 및 내보내기](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/managing-assets/viewing-adding-exporting-metadata.html)를 참조하십시오.
+해당 항목에 대한 자세한 내용은 [메타데이터 보기, 추가 및 내보내기](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/managing-assets/viewing-adding-exporting-metadata.html)를 참조하십시오.
 
 ![이미지](assets/video-overview/video-overview-7.jpg)
 
 메타데이터가 채워지면 해당 비디오 자산에 대한 세부 사항 보기에서 해당 메타데이터를 볼 수 있습니다. 키워드가 있을 수도 있지만 키워드 탭 아래에 있습니다.
 
-- [키워드 추가](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/managing-assets/viewing-adding-exporting-metadata.html#add-or-edit-keywords)에 대해 자세히 알아보십시오.
-- [비디오 SEO](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/setup/video-seo-search-engine-optimization.html)에 대해 자세히 알아보십시오.
-- [비디오 SEO](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/setup/video-seo-search-engine-optimization.html#choosing-video-seo-settings)에 대한 설정에 대해 알아봅니다.
+- [키워드 추가](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/managing-assets/viewing-adding-exporting-metadata.html#add-or-edit-keywords)에 대해 자세히 알아보십시오.
+- [비디오 SEO](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/video-seo-search-engine-optimization.html)에 대해 자세히 알아보십시오.
+- [비디오 SEO](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/video-seo-search-engine-optimization.html#choosing-video-seo-settings)에 대한 설정에 대해 알아봅니다.
 
 #### 비디오 SEO 설정
 
