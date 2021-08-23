@@ -7,9 +7,9 @@ version: 6.3, 6.4, 6.5
 topic: 컨텐츠 관리
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '326'
 ht-degree: 15%
 
 ---
@@ -23,11 +23,11 @@ ht-degree: 15%
 
 >[!NOTE]
 >
->[Dynamic Media ](https://docs.adobe.com/docs/en/aem/6-0/administer/integration/dynamic-media/enabling-dynamic-media.html) AEM을 활성화하여 이 기능을 사용합니다.
+>[Dynamic Media ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html) AEM을 활성화하여 이 기능을 사용합니다.
 
 이 기능은 AEM 6.1 및 6.2 버전에서 기능 팩으로 사용할 수 있습니다.
 
-## 색상 관리 구성 노드 {#xml-template-for-the-color-management-configuration-node}에 대한 XML 템플릿
+## 색상 관리 구성 노드의 XML 템플릿 {#xml-template-for-the-color-management-configuration-node}
 
 다음은 색상 관리 구성 노드의 XML 템플릿입니다. 이 XML 템플릿은 AEM 개발 프로젝트에 복사되며 프로젝트에 적합한 구성으로 구성할 수 있습니다.
 
@@ -85,7 +85,7 @@ ht-degree: 15%
 />
 ```
 
-### 기본 Adobe 색상 프로필 목록은 {#list-of-default-adobe-color-profiles-are-listed-below} 아래에 나와 있습니다
+### 기본 Adobe 색상 프로필 목록은 아래에 나와 있습니다 {#list-of-default-adobe-color-profiles-are-listed-below}
 
 | 이름 | 색상 공간 | 설명 |
 | ------------------- | ---------- | ------------------------------------- |
