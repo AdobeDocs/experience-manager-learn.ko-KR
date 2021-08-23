@@ -13,9 +13,9 @@ thumbnail: 40242.jpg
 topic: 개발
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '143'
+source-wordcount: '141'
 ht-degree: 5%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 5%
 
 ## 전제 조건
 
-AEM Forms의 작업 인스턴스가 있는지 확인하십시오. AEM Forms을 설치 및 구성하려면 [설치 안내서](https://docs.adobe.com/content/help/en/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html)에 따르십시오
+AEM Forms의 작업 인스턴스가 있는지 확인하십시오. AEM Forms을 설치 및 구성하려면 [설치 안내서](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html)에 따르십시오
 
 다음 비디오에서는 AEM Forms 구성 요소를 사용하여 검토 및 승인 작업 과정을 만드는 방법에 대해 설명합니다
 >[!VIDEO](https://video.tv.adobe.com/v/40242/?quality=9&learn=on)
