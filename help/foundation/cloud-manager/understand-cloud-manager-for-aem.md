@@ -9,9 +9,9 @@ audience: developer, implementer, administrator, architect
 topic: 아키텍처
 role: Architect
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '516'
 ht-degree: 3%
 
 ---
@@ -32,23 +32,23 @@ Adobe Cloud Manager는 AEM 환경을 쉽게 관리, 도입 및 셀프 서비스�
 * [CI/CD 비프로덕션 파이프라인](#cicd-non-production-pipeline)
 * [활동](#activity)
 
-전체 개요를 보려면 [Cloud Manager 사용 안내서](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)를 검토하십시오.
+전체 개요를 보려면 [Cloud Manager 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=ko-KR)를 검토하십시오.
 
 ## 프로그램 {#programs}
 
-[Cloud Manager ](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/getting-started/setting-up-program.html) 프로그램은 일반적으로 구매한 SLA(서비스 수준 계약)에 해당하는 일련의 비즈니스 이니셔티브를 지원하는 AEM 환경 세트를 나타냅니다. 예를 들어, 하나의 프로그램은 전역 공용 웹 사이트를 지원하는 AEM 리소스를 나타내고, 다른 프로그램은 내부 중앙 DAM을 나타냅니다.
+[Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/setting-up-program.html) 프로그램은 일반적으로 구매한 SLA(서비스 수준 계약)에 해당하는 일련의 비즈니스 이니셔티브를 지원하는 AEM 환경 세트를 나타냅니다. 예를 들어, 하나의 프로그램은 전역 공용 웹 사이트를 지원하는 AEM 리소스를 나타내고, 다른 프로그램은 내부 중앙 DAM을 나타냅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26313/?quality=12&learn=on)
 
 ## 환경 {#environments}
 
-[Cloud Manager ](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html) 환경은 AEM 작성자, AEM 게시 및 Dispatcher 인스턴스로 구성됩니다. 다양한 환경이 역할을 지원하고 다른 CI/CD 파이프라인을 사용하여 참여할 수 있습니다(아래에 설명되어 있음). Cloud Manager 환경에는 일반적으로 프로덕션 환경과 하나의 스테이지 환경이 있습니다.
+[Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html) 환경은 AEM 작성자, AEM 게시 및 Dispatcher 인스턴스로 구성됩니다. 다양한 환경이 역할을 지원하고 다른 CI/CD 파이프라인을 사용하여 참여할 수 있습니다(아래에 설명되어 있음). Cloud Manager 환경에는 일반적으로 프로덕션 환경과 하나의 스테이지 환경이 있습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26318/?quality=12&learn=on)
 
 ## 보고서 {#reports}
 
-[Cloud Manager ](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/how-to-use/monitor-your-environments.html) 보고서는 각 AEM 인스턴스에 대한 다양한 지표를 보고 추적하는 차트 집합을 통해 프로그램의 환경 및 AEM 인스턴스에 대한 보기를 제공합니다.
+[Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/monitor-your-environments.html) 보고서는 각 AEM 인스턴스에 대한 다양한 지표를 보고 추적하는 차트 집합을 통해 프로그램의 환경 및 AEM 인스턴스에 대한 보기를 제공합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26315/?quality=12&learn=on)
 
@@ -62,19 +62,19 @@ Adobe Cloud Manager는 AEM 환경을 쉽게 관리, 도입 및 셀프 서비스�
 
 ### 구성
 
-[CI/CD 프로덕션 파이프라인](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html) 구성은 파이프라인을 시작하는 트리거, 프로덕션 배포 및 성능 테스트 매개 변수를 제어하는 매개 변수를 정의합니다.
+[CI/CD 프로덕션 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html) 구성은 파이프라인을 시작하는 트리거, 프로덕션 배포 및 성능 테스트 매개 변수를 제어하는 매개 변수를 정의합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26314/?quality=12&learn=on)
 
 ### 파이프라인 실행
 
-[CI/CD 프로덕션 파이프라인](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)은 스테이지를 통해 코드를 작성하고 프로덕션 환경에 배포하는 데 사용되어 가치 창출 시간을 단축합니다.
+[CI/CD 프로덕션 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)은 스테이지를 통해 코드를 작성하고 프로덕션 환경에 배포하는 데 사용되어 가치 창출 시간을 단축합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26317/?quality=12&learn=on)
 
 ## CI/CD 비프로덕션 파이프라인 {#cicd-non-production-pipeline}
 
-[CI/CD 비프로덕션 파이프라인은 ](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html#non-production--code-quality-only-pipelines) 코드 품질 파이프라인 및 배포 파이프라인의 두 가지 카테고리로 분류됩니다. 코드 품질 파이프라인은 Git 분기에서 모든 코드를 작성하여 Cloud Manager의 코드 품질 검사에 대해 평가됩니다. 배포 파이프라인은 Git 리포지토리에서 비프로덕션 환경으로 코드를 자동으로 배포하도록 지원합니다. 즉, 스테이지나 프로덕션이 아닌 프로비저닝된 AEM 환경을 의미합니다.
+[CI/CD 비프로덕션 파이프라인은 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html#non-production--code-quality-only-pipelines) 코드 품질 파이프라인 및 배포 파이프라인의 두 가지 카테고리로 분류됩니다. 코드 품질 파이프라인은 Git 분기에서 모든 코드를 작성하여 Cloud Manager의 코드 품질 검사에 대해 평가됩니다. 배포 파이프라인은 Git 리포지토리에서 비프로덕션 환경으로 코드를 자동으로 배포하도록 지원합니다. 즉, 스테이지나 프로덕션이 아닌 프로비저닝된 AEM 환경을 의미합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26316/?quality=12&learn=on)
 
@@ -82,6 +82,6 @@ Adobe Cloud Manager는 AEM 환경을 쉽게 관리, 도입 및 셀프 서비스�
 
 Cloud Manager는 프로그램의 활동에 대한 통합 보기를 제공하고 모든 CI/CD 파이프라인 실행, 프로덕션 및 비프로덕션 모두를 나열하며 과거 및 현재 활동을 볼 수 있으며 모든 활동의 세부 사항을 검토할 수 있습니다.
 
-또한 Cloud Manager는 사용자당 수준으로 [Adobe Experience Cloud 알림](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/how-to-use/notifications.html)과 통합되어 있으며, 어디에서나 관심 있는 이벤트 및 작업에 볼 수 있습니다.
+또한 Cloud Manager는 사용자당 수준으로 [Adobe Experience Cloud 알림](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/notifications.html)과 통합되어 있으며, 어디에서나 관심 있는 이벤트 및 작업에 볼 수 있습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26319/?quality=12&learn=on)
