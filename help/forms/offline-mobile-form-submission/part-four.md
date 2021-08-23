@@ -12,9 +12,9 @@ version: 6.4,6.5
 topic: 개발
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '472'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 로컬 시스템에서 이 사용 사례를 사용하려면 다음 단계를 수행하십시오.
 
 * 포트 4502 및 포트 4503에 AEM 작성자 인스턴스 설치
-* [AEM Forms에서 서비스 사용자를 사용하여 개발에 지정된 지침을 따르십시오](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/adaptive-forms/service-user-tutorial-develop.html). 서비스 사용자를 만들고 AEM 작성자 및 게시 인스턴스에 번들을 배포해야 합니다.
+* [AEM Forms에서 서비스 사용자를 사용하여 개발에 지정된 지침을 따르십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/service-user-tutorial-develop.html). 서비스 사용자를 만들고 AEM 작성자 및 게시 인스턴스에 번들을 배포해야 합니다.
 * [osgi 구성을 엽니다  ](http://localhost:4503/system/console/configMgr).
 * **Apache Sling 레퍼러 필터**&#x200B;를 검색합니다. 빈 항목 허용 확인란이 선택되어 있는지 확인합니다.
 * [사용자 지정 AEMFormDocumentService 번들을 배포합니다](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar). 이 번들은 AEM 게시 인스턴스에 배포해야 합니다. 이 번들에는 모바일 양식에서 대화형 PDF를 생성하는 코드가 있습니다.
