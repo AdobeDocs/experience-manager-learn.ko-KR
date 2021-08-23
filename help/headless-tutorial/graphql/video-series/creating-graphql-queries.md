@@ -1,7 +1,6 @@
 ---
 title: GraphQL 쿼리 만들기
 description: GraphQL 쿼리를 만들어 AEM(Adobe Experience Manager)에서 콘텐츠를 반환하는 방법 및 GraphiQL 도구를 사용하여 쿼리를 빠르게 테스트, 세분화 및 디버깅하는 방법을 알아봅니다.
-sub-product: assets
 version: cloud-service
 topic: 헤드리스, 컨텐츠 관리
 feature: 컨텐츠 조각, GraphQL API
@@ -9,9 +8,9 @@ role: Developer
 level: Beginner
 kt: 7621
 thumbnail: 332860.jpg
-source-git-commit: 1853960cce1e17ade43e4b2d7b521f63c4d04d71
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '125'
+source-wordcount: '124'
 ht-degree: 0%
 
 ---
