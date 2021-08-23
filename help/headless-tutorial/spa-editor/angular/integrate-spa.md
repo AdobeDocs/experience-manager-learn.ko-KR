@@ -13,15 +13,15 @@ thumbnail: 5310-spa-angular.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: bf9ab30f57faa23721d7d27b837d8e0f0e8cf4f1
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '2205'
+source-wordcount: '2195'
 ht-degree: 0%
 
 ---
 
 
-# SPA {#integrate-spa} 통합
+# SPA 통합 {#integrate-spa}
 
 angular에 작성된 SPA(단일 페이지 애플리케이션)의 소스 코드를 AEM(Adobe Experience Manager) 프로젝트와 통합하는 방법을 알아봅니다. 웹 팩 개발 서버와 같은 최신 프런트 엔드 도구를 사용하여 AEM JSON 모델 API에 대해 SPA을 빠르게 개발하는 방법을 알아봅니다.
 
@@ -67,9 +67,9 @@ angular에 작성된 SPA(단일 페이지 애플리케이션)의 소스 코드�
 
 항상 [GitHub](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/integrate-spa-solution)에서 완료된 코드를 보거나 분기 `Angular/integrate-spa-solution`로 전환하여 로컬로 코드를 체크 아웃할 수 있습니다.
 
-## 통합 접근 방법 {#integration-approach}
+## 통합 방법 {#integration-approach}
 
-AEM 프로젝트의 일부로 두 개의 모듈이 생성되었습니다.`ui.apps` 및 `ui.frontend`
+AEM 프로젝트의 일부로 두 개의 모듈이 생성되었습니다. `ui.apps` 및 `ui.frontend`
 
 `ui.frontend` 모듈은 모든 SPA 소스 코드를 포함하는 [webpack](https://webpack.js.org/) 프로젝트입니다. 대부분의 SPA 개발 및 테스트는 웹 팩 프로젝트에서 수행됩니다. 프로덕션 빌드가 트리거되면 SPA이 웹 팩을 사용하여 빌드되고 컴파일됩니다. 컴파일된 객체(CSS 및 Javascript)는 `ui.apps` 모듈에 복사되며 AEM 런타임에 배포됩니다.
 
@@ -77,13 +77,13 @@ AEM 프로젝트의 일부로 두 개의 모듈이 생성되었습니다.`ui.app
 
 *SPA 통합에 대한 높은 수준의 묘사.*
 
-프런트 엔드 빌드에 대한 추가 정보는 [여기에서 찾을 수 있습니다](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html).
+프런트 엔드 빌드에 대한 추가 정보는 [여기에서 찾을 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html).
 
 ## Inspect SPA 통합 {#inspect-spa-integration}
 
-그런 다음 [AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html)에서 자동으로 생성된 SPA을 이해하려면 `ui.frontend` 모듈을 검사하십시오.
+그런 다음 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html)에서 자동으로 생성된 SPA을 이해하려면 `ui.frontend` 모듈을 검사하십시오.
 
-1. 선택한 IDE에서 WKND SPA용 AEM 프로젝트를 엽니다. 이 자습서에서는 [Visual Studio 코드 IDE](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code)를 사용합니다.
+1. 선택한 IDE에서 WKND SPA용 AEM 프로젝트를 엽니다. 이 자습서에서는 [Visual Studio 코드 IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code)를 사용합니다.
 
    ![VSCode - AEM WKND SPA 프로젝트](./assets/integrate-spa/vscode-ide-openproject.png)
 
@@ -112,7 +112,7 @@ AEM 프로젝트의 일부로 두 개의 모듈이 생성되었습니다.`ui.app
    "@adobe/cq-spa-page-model-manager": "^1.1.3",
    ```
 
-   위의 모듈은 [AEM SPA Editor JS SDK](https://docs.adobe.com/content/help/en/experience-manager-65/developing/headless/spas/spa-blueprint.html)를 구성하고 SPA 구성 요소를 AEM 구성 요소에 매핑할 수 있는 기능을 제공합니다.
+   위의 모듈은 [AEM SPA Editor JS SDK](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-blueprint.html)를 구성하고 SPA 구성 요소를 AEM 구성 요소에 매핑할 수 있는 기능을 제공합니다.
 
 5. `package.json` 파일에서 여러 `scripts`이 정의되어 있습니다.
 
@@ -132,7 +132,7 @@ AEM 프로젝트의 일부로 두 개의 모듈이 생성되었습니다.`ui.app
 
    `build` - 프로덕션 배포를 위한 Angular 앱을 컴파일합니다. `&& clientlib`을 추가하면 빌드 중에 컴파일된 SPA을 `ui.apps` 모듈로 클라이언트측 라이브러리로 복사할 수 있습니다. npm 모듈 [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator)은(는) 이 작업을 용이하게 하는 데 사용됩니다.
 
-   사용 가능한 스크립트에 대한 자세한 내용은 [여기](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html)를 참조하십시오.
+   사용 가능한 스크립트에 대한 자세한 내용은 [여기](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html)를 참조하십시오.
 
 6. Inspect: `ui.frontend/clientlib.config.js` 파일 이 구성 파일은 [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator#clientlibconfigjs)에서 클라이언트 라이브러리를 생성하는 방법을 결정하는 데 사용됩니다.
 
@@ -167,7 +167,7 @@ AEM 프로젝트의 일부로 두 개의 모듈이 생성되었습니다.`ui.app
 
    `app.component.js` 는 SPA의 시작점입니다. `ModelManager` 는 AEM SPA Editor JS SDK에서 제공합니다. JSON 콘텐츠는 를 호출하고 애플리케이션에 `pageModel` (JSON 콘텐츠)를 삽입해야 합니다.
 
-## 헤더 구성 요소 {#header-component} 추가
+## 헤더 구성 요소 추가 {#header-component}
 
 다음으로, SPA에 새 구성 요소를 추가하고 변경 사항을 로컬 AEM 인스턴스에 배포하여 통합을 확인합니다.
 
@@ -265,7 +265,7 @@ AEM 프로젝트의 일부로 두 개의 모듈이 생성되었습니다.`ui.app
 
    **7-9** 단계는 프로젝트의 루트에서 Maven 빌드를 트리거할 때 자동으로 실행됩니다(예: `mvn clean install -PautoInstallSinglePackage`). 이제 SPA과 AEM 클라이언트 측 라이브러리 간의 통합에 대한 기본 사항을 이해해야 합니다. AEM에서 `Text` 구성 요소를 계속 편집하고 추가할 수 있지만 `Header` 구성 요소는 편집할 수 없습니다.
 
-## Webpack Dev Server - JSON API {#proxy-json} 프록시
+## Webpack 개발 서버 - JSON API 프록시 {#proxy-json}
 
 이전 연습에서 보듯이 빌드를 수행하고 클라이언트 라이브러리를 AEM의 로컬 인스턴스에 동기화하는 데에는 몇 분이 소요됩니다. 최종 테스트에는 허용되지만, SPA 개발의 대부분을 위해서는 적합하지 않습니다.
 
