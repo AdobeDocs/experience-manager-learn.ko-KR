@@ -11,9 +11,9 @@ level: Beginner
 mini-toc-levels: 1
 kt: 4081
 thumbnail: 30177.jpg
-source-git-commit: 32320905786682a852baf7d777cb06de0072c439
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1152'
+source-wordcount: '1150'
 ht-degree: 0%
 
 ---
@@ -35,11 +35,11 @@ ht-degree: 0%
 1. 대화 상자를 사용하여 컨텐츠 작성을 용이하게 하는 방법을 이해합니다.
 1. 구성 요소를 지원하는 CSS 및 JavaScript를 포함하도록 클라이언트 측 라이브러리의 기본 사항을 알아봅니다.
 
-## {#what-you-will-build} 빌드할 내용
+## 빌드할 내용 {#what-you-will-build}
 
 이 장에서는 매우 간단한 `HelloWorld` 구성 요소에 대해 몇 가지 수정 작업을 수행합니다. `HelloWorld` 구성 요소를 업데이트하는 과정에서 AEM 구성 요소 개발의 주요 영역에 대해 학습하게 됩니다.
 
-## 시작 장 프로젝트 {#starter-project}
+## 스타터 프로젝트 {#starter-project}
 
 이 장은 [AEM Project Archetype](https://github.com/adobe/aem-project-archetype)에서 생성한 일반 프로젝트를 기반으로 합니다. 시작하려면 아래 비디오를 시청하고 [사전 요구 사항](#prerequisites)을 검토하십시오.
 
@@ -99,7 +99,7 @@ ht-degree: 0%
 
 ## HTL(HTML Template Language) 및 대화 상자 {#htl-dialogs}
 
-HTML 템플릿 언어 또는 **[HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/getting-started/getting-started.html)**&#x200B;는 AEM 구성 요소가 컨텐츠를 렌더링하는 데 사용하는 경량 서버 측 템플릿 언어입니다.
+HTML 템플릿 언어 또는 **[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html)**&#x200B;는 AEM 구성 요소가 컨텐츠를 렌더링하는 데 사용하는 경량 서버 측 템플릿 언어입니다.
 
 **** 대화 상자구성 요소에 사용할 수 있는 구성을 정의합니다.
 
