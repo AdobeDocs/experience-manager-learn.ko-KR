@@ -10,17 +10,17 @@ role: Developer
 level: Beginner
 kt: 4083
 thumbnail: 30359.jpg
-source-git-commit: 32320905786682a852baf7d777cb06de0072c439
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '3299'
-ht-degree: 1%
+source-wordcount: '3285'
+ht-degree: 0%
 
 ---
 
 
 # 클라이언트 측 라이브러리 및 프런트 엔드 워크플로우 {#client-side-libraries}
 
-클라이언트측 라이브러리 또는 clientlibs를 사용하여 AEM(Adobe Experience Manager) 사이트 구현을 위한 CSS 및 Javascript를 배포하고 관리하는 방법을 알아봅니다. 이 튜토리얼에서는 또한 비활성화된 [webpack](https://webpack.js.org/) 프로젝트인 [ui.frontend](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/developing/archetype/uifrontend.html) 모듈을 전체 빌드 프로세스에 통합할 수 있는 방법을 다룹니다.
+클라이언트측 라이브러리 또는 clientlibs를 사용하여 AEM(Adobe Experience Manager) 사이트 구현을 위한 CSS 및 Javascript를 배포하고 관리하는 방법을 알아봅니다. 이 튜토리얼에서는 또한 비활성화된 [webpack](https://webpack.js.org/) 프로젝트인 [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) 모듈을 전체 빌드 프로세스에 통합할 수 있는 방법을 다룹니다.
 
 ## 전제 조건 {#prerequisites}
 
@@ -65,7 +65,7 @@ ht-degree: 1%
 1. 전용 프런트 엔드 개발을 위해 UI.Frontend Module 및 웹 팩 개발 서버를 사용하는 방법을 알아봅니다.
 1. 컴파일된 CSS 및 JavaScript를 사이트 구현에 전달하는 종단간 워크플로우를 이해합니다.
 
-## {#what-you-will-build} 빌드할 내용
+## 빌드할 내용 {#what-you-will-build}
 
 이 장에서는 구현을 [UI 디자인 팝업](assets/pages-templates/wknd-article-design.xd)에 더 가깝게 만들기 위해 WKND 사이트 및 문서 페이지 템플릿에 대한 몇 가지 기준선 스타일을 추가합니다. 고급 프런트 엔드 워크플로우를 사용하여 웹 팩 프로젝트를 AEM 클라이언트 라이브러리에 통합합니다.
 
@@ -81,7 +81,7 @@ ht-degree: 1%
 1. 정리된 방식으로 타사 프레임워크에 대한 종속성을 관리합니다
 1. CSS/JS를 하나 또는 두 개의 요청에 연결하여 클라이언트측 요청 수를 최소화하십시오.
 
-[클라이언트측 라이브러리 사용에 대한 자세한 내용은 여기에서 확인할 수 있습니다.](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/clientlibs.html)
+[클라이언트측 라이브러리 사용에 대한 자세한 내용은 여기에서 확인할 수 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html)
 
 클라이언트측 라이브러리에는 몇 가지 제한 사항이 있습니다. 가장 주목할 만한 것은 Sass, LESS 및 TypeScript와 같은 인기 있는 프런트 엔드 언어에 대한 지원이 제한적입니다. 이 자습서에서는 **ui.frontend** 모듈이 어떻게 이 문제를 해결할 수 있는지 살펴보겠습니다.
 
@@ -89,7 +89,7 @@ ht-degree: 1%
 
 ## 클라이언트 측 라이브러리 조직 {#organization}
 
-다음으로 [AEM Project Archetype](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/developing/archetype/overview.html)에서 생성된 clientlibs 조직을 살펴보겠습니다.
+다음으로 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)에서 생성된 clientlibs 조직을 살펴보겠습니다.
 
 ![높은 수준의 clientlibrary 조직](./assets/client-side-libraries/high-level-clientlib-organization.png)
 
@@ -119,7 +119,7 @@ ht-degree: 1%
 
 ## 기본 스타일 업데이트 {#base-styles}
 
-그런 다음 **[ui.frontend](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend.html)** 모듈에 정의된 기본 스타일을 업데이트합니다. `ui.frontend` 모듈의 파일은 사이트 테마 및 타사 종속성을 포함하는 `clientlib-site` 및 `clientlib-dependecies` 라이브러리를 생성합니다.
+그런 다음 **[ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)** 모듈에 정의된 기본 스타일을 업데이트합니다. `ui.frontend` 모듈의 파일은 사이트 테마 및 타사 종속성을 포함하는 `clientlib-site` 및 `clientlib-dependecies` 라이브러리를 생성합니다.
 
 클라이언트 측 라이브러리에는 [Sas](https://sass-lang.com/) 또는 [TypeScript](https://www.typescriptlang.org/)와 같은 언어를 지원하는 데 몇 가지 제한 사항이 있습니다. 프런트 엔드 개발을 가속화하고 최적화하는 [NPM](https://www.npmjs.com/) 및 [webpack](https://webpack.js.org/)과 같은 많은 오픈 소스 도구가 있습니다. **ui.frontend** 모듈의 목표는 이러한 도구를 사용하여 대부분의 프런트 엔드 소스 파일을 관리할 수 있는 것입니다.
 
@@ -200,7 +200,7 @@ AEM 프로젝트 원형 은 이 통합을 자동으로 설정합니다. 이제 �
 
    >[!NOTE]
    >
-   >또한 JS 및 CSS를 축소하는 `npm run prod` 프로필이 있습니다. Maven을 통해 웹 팩 빌드가 트리거될 때마다 적용되는 표준 컴파일입니다. [ui.frontend 모듈에 대한 자세한 내용은 여기](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend.html)에서 확인할 수 있습니다.
+   >또한 JS 및 CSS를 축소하는 `npm run prod` 프로필이 있습니다. Maven을 통해 웹 팩 빌드가 트리거될 때마다 적용되는 표준 컴파일입니다. [ui.frontend 모듈에 대한 자세한 내용은 여기](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)에서 확인할 수 있습니다.
 
 1. Inspect `ui.frontend/dist/clientlib-site/site.css` 아래의 `site.css` 파일을 작성합니다. 이것은 Sass 소스 파일을 기반으로 컴파일된 CSS입니다.
 
@@ -220,7 +220,7 @@ AEM 프로젝트 원형 은 이 통합을 자동으로 설정합니다. 이제 �
 
    ![Clientlib 사이트 동기화](assets/client-side-libraries/sync-clientlib-site.png)
 
-1. AEM에서 LA Skatebok Park 문서를 엽니다. 위치:[http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html)
+1. AEM에서 LA Skatebok Park 문서를 엽니다. 위치: [http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html)
 
    ![문서에 대한 기본 스타일이 업데이트되었습니다](assets/client-side-libraries/updated-base-styles.png)
 
@@ -279,7 +279,7 @@ AEM 프로젝트 원형 은 이 통합을 자동으로 설정합니다. 이제 �
    >
    > `wknd.base` clientlib에 대해 이전에 보듯이 `customheaderlibs.html` 또는 `customfooterlibs.html` 스크립트를 사용하여 페이지 구성 요소에서 직접 `wknd.site` 또는 `wknd.dependencies`을 참조할 수도 있습니다. 템플릿을 사용하면 템플릿별로 사용할 clientlibs를 선택하고 선택할 수 있는 유연성이 제공됩니다. 예를 들어, 선택한 템플릿에서만 사용할 매우 많은 JavaScript 라이브러리가 있는 경우.
 
-1. **문서 페이지 템플릿**&#x200B;을 사용하여 만든 **LA 스케이트보드장** 페이지로 이동합니다.[http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html) 글꼴의 차이가 느껴질 겁니다
+1. **문서 페이지 템플릿**&#x200B;을 사용하여 만든 **LA 스케이트보드장** 페이지로 이동합니다. [http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html) 글꼴의 차이가 느껴질 겁니다
 
 1. **페이지 정보** 아이콘을 클릭하고 메뉴에서 **게시됨으로 보기**&#x200B;를 선택하여 AEM 편집기 외부에서 문서 페이지를 엽니다.
 
@@ -315,7 +315,7 @@ AEM 프로젝트 원형 은 이 통합을 자동으로 설정합니다. 이제 �
 
    >[!WARNING]
    >
-   >[Dispatcher 필터 섹션](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#example-filter-section)을 사용하는 보안상의 이유로 이 경로를 제한해야 하므로 클라이언트 라이브러리는 **/apps**&#x200B;에서 제공되지 **않는 것이 중요합니다.** 클라이언트 라이브러리의 [allowProxy 속성](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/clientlibs.html#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet)을 사용하면 CSS 및 JS가 **/etc.clientlibs**&#x200B;에서 제공될 수 있습니다.
+   >[Dispatcher 필터 섹션](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#example-filter-section)을 사용하는 보안상의 이유로 이 경로를 제한해야 하므로 클라이언트 라이브러리는 **/apps**&#x200B;에서 제공되지 **않는 것이 중요합니다.** 클라이언트 라이브러리의 [allowProxy 속성](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet)을 사용하면 CSS 및 JS가 **/etc.clientlibs**&#x200B;에서 제공될 수 있습니다.
 
 ## Webpack DevServer - 정적 마크업 {#webpack-dev-static}
 
@@ -371,7 +371,7 @@ AEM 프로젝트 원형 은 이 통합을 자동으로 설정합니다. 이제 �
 
 1. **명령줄에서 `CTRL+C`을(를) 입력하여 웹 팩 서버를 중지할 수 있습니다.**
 
-## Webpack DevServer - Watch 및 aemsync {#webpack-dev-watch}
+## 웹 팩 DevServer - 시청 및 aemsync {#webpack-dev-watch}
 
 또 다른 기법은 Node.js가 `ui.frontend` 모듈에서 src 파일에 대한 모든 파일 변경 사항을 감시하도록 하는 것입니다. 파일이 변경될 때마다 클라이언트 라이브러리를 빠르게 컴파일하고 [aemsync](https://www.npmjs.com/package/aemsync) npm 모듈을 사용하여 실행 중인 AEM 서버에 변경 사항을 동기화합니다.
 
@@ -397,7 +397,7 @@ AEM 프로젝트 원형 은 이 통합을 자동으로 설정합니다. 이제 �
    http://admin:admin@localhost:4502 > OK
    ```
 
-1. AEM 및 LA Skateboats 문서로 이동합니다.[http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html?wcmmode=disabled](http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html?wcmmode=disabled)
+1. AEM 및 LA Skateboats 문서로 이동합니다. [http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html?wcmmode=disabled](http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html?wcmmode=disabled)
 
    ![AEM에 배포된 변경 사항](assets/client-side-libraries/changes-deployed-aem-watch.png)
 
@@ -447,6 +447,6 @@ Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 �
 
 * [**라이브러리 종속성 유효성 검사**](http://localhost:4502/libs/granite/ui/content/dumplibs.validate.html)  - 찾을 수 없는 모든 종속성 또는 포함된 카테고리를 강조 표시합니다.  `<host>/libs/granite/ui/content/dumplibs.validate.html`
 
-* [**클라이언트 라이브러리 다시 작성**](http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html)  - 사용자가 AEM에서 모든 클라이언트 라이브러리를 다시 빌드하거나 클라이언트 라이브러리의 캐시를 무효화할 수 있습니다. 이 도구는 AEM이 생성된 CSS를 다시 컴파일하도록 할 수 있으므로 LESS를 사용하여 개발할 때 특히 유용합니다. 일반적으로 캐시를 무효화한 다음 페이지 새로 고침을 수행하고 모든 라이브러리를 다시 빌드하는 것보다 더 효과적입니다.`<host>/libs/granite/ui/content/dumplibs.rebuild.html`
+* [**클라이언트 라이브러리 다시 작성**](http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html)  - 사용자가 AEM에서 모든 클라이언트 라이브러리를 다시 빌드하거나 클라이언트 라이브러리의 캐시를 무효화할 수 있습니다. 이 도구는 AEM이 생성된 CSS를 다시 컴파일하도록 할 수 있으므로 LESS를 사용하여 개발할 때 특히 유용합니다. 일반적으로 캐시를 무효화한 다음 페이지 새로 고침을 수행하고 모든 라이브러리를 다시 빌드하는 것보다 더 효과적입니다. `<host>/libs/granite/ui/content/dumplibs.rebuild.html`
 
 ![클라이언트 라이브러리 다시 작성](assets/client-side-libraries/rebuild-clientlibs.png)
