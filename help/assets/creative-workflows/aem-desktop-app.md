@@ -1,17 +1,17 @@
 ---
 title: AEM Desktop App
 description: AEM 데스크탑 앱을 사용하면 데스크탑에서 AEM으로 관리되는 모든 자산, 애플리케이션 및 파일 형식에 대한 액세스를 간소화할 수 있습니다.
-kt: 2551
-sub-product: assets
-feature: Experience Manager 데스크탑 앱
 version: 6.5, 6.4, 6.3
 topic: 컨텐츠 관리
+feature: 데스크탑 앱
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+kt: 2551
+thumbnail: 28868.jpeg
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '143'
-ht-degree: 11%
+source-wordcount: '138'
+ht-degree: 5%
 
 ---
 
@@ -33,4 +33,4 @@ AEM 데스크탑 앱을 사용하면 데스크탑에서 AEM으로 관리되는 �
 
 ## 추가 리소스
 
-+ [최신 AEM 데스크탑 앱 다운로드](https://docs.adobe.com/content/help/ko/experience-manager-desktop-app/using/release-notes.html)
++ [최신 AEM 데스크탑 앱 다운로드](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html)
