@@ -9,15 +9,15 @@ thumbnail: 4853-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: 24d70ebaa6a63cfd4a73f43188f25b375dc702ec
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1851'
+source-wordcount: '1843'
 ht-degree: 0%
 
 ---
 
 
-# SPA {#developer-workflow} 통합
+# SPA 통합 {#developer-workflow}
 
 React에 작성된 SPA(단일 페이지 애플리케이션)의 소스 코드를 Adobe Experience Manager(AEM) 프로젝트와 통합하는 방법을 이해합니다. 웹 팩 개발 서버와 같은 최신 프런트 엔드 도구를 사용하여 AEM JSON 모델 API에 대해 SPA을 빠르게 개발하는 방법을 알아봅니다.
 
@@ -40,9 +40,9 @@ React에 작성된 SPA(단일 페이지 애플리케이션)의 소스 코드를 
 
 [로컬 개발 환경](overview.md#local-dev-environment)을 설정하는 데 필요한 도구 및 지침을 검토하십시오. 이 장은 [프로젝트 만들기](create-project.md) 장의 연속이지만, 필요한 모든 작업을 수행하는 데는 SPA이 활성화된 AEM 프로젝트가 있습니다.
 
-## 통합 접근 방법 {#integration-approach}
+## 통합 방법 {#integration-approach}
 
-AEM 프로젝트의 일부로 두 개의 모듈이 생성되었습니다.`ui.apps` 및 `ui.frontend`
+AEM 프로젝트의 일부로 두 개의 모듈이 생성되었습니다. `ui.apps` 및 `ui.frontend`
 
 `ui.frontend` 모듈은 모든 SPA 소스 코드를 포함하는 [webpack](https://webpack.js.org/) 프로젝트입니다. 대부분의 SPA 개발 및 테스트는 웹 팩 프로젝트에서 수행됩니다. 프로덕션 빌드가 트리거되면 SPA이 웹 팩을 사용하여 빌드되고 컴파일됩니다. 컴파일된 객체(CSS 및 Javascript)는 `ui.apps` 모듈에 복사되며 AEM 런타임에 배포됩니다.
 
@@ -50,13 +50,13 @@ AEM 프로젝트의 일부로 두 개의 모듈이 생성되었습니다.`ui.app
 
 *SPA 통합에 대한 높은 수준의 묘사.*
 
-프런트 엔드 빌드에 대한 추가 정보는 [여기에서 찾을 수 있습니다](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend-react.html).
+프런트 엔드 빌드에 대한 추가 정보는 [여기에서 찾을 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-react.html).
 
 ## Inspect SPA 통합 {#inspect-spa-integration}
 
-그런 다음 [AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend-react.html)에서 자동으로 생성된 SPA을 이해하려면 `ui.frontend` 모듈을 검사하십시오.
+그런 다음 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-react.html)에서 자동으로 생성된 SPA을 이해하려면 `ui.frontend` 모듈을 검사하십시오.
 
-1. 선택한 IDE에서 AEM 프로젝트를 엽니다. 이 자습서에서는 [Visual Studio 코드 IDE](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code)를 사용합니다.
+1. 선택한 IDE에서 AEM 프로젝트를 엽니다. 이 자습서에서는 [Visual Studio 코드 IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code)를 사용합니다.
 
    ![VSCode - AEM WKND SPA 프로젝트](./assets/integrate-spa/vscode-ide-openproject.png)
 
@@ -76,7 +76,7 @@ AEM 프로젝트의 일부로 두 개의 모듈이 생성되었습니다.`ui.app
    "@adobe/aem-core-components-react-spa": "1.1.7",
    ```
 
-   위의 모듈은 [AEM SPA Editor JS SDK](https://docs.adobe.com/content/help/en/experience-manager-65/developing/headless/spas/spa-blueprint.html)를 구성하고 SPA 구성 요소를 AEM 구성 요소에 매핑할 수 있는 기능을 제공합니다.
+   위의 모듈은 [AEM SPA Editor JS SDK](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-blueprint.html)를 구성하고 SPA 구성 요소를 AEM 구성 요소에 매핑할 수 있는 기능을 제공합니다.
 
    또한 [AEM WCM 구성 요소 - React Core 구현](https://github.com/adobe/aem-react-core-wcm-components-base) 및 [AEM WCM 구성 요소 - Spa 편집기 - React Core 구현](https://github.com/adobe/aem-react-core-wcm-components-spa)이 포함되어 있습니다. 이는 즉시 사용 가능한 AEM 구성 요소에 매핑되는 재사용 가능한 UI 구성 요소 세트입니다. 이러한 프로젝트들은 프로젝트의 요구 사항을 충족하도록 그대로 사용하고 스타일이 지정되도록 디자인되었습니다.
 
@@ -130,7 +130,7 @@ AEM 프로젝트의 일부로 두 개의 모듈이 생성되었습니다.`ui.app
 
 1. Inspect에서 `import-component.js` 파일을 `ui.frontend/src/import-components.js`에 추가합니다. 이 파일은 **React Core Components** 로부터 을 가져와 프로젝트에서 사용할 수 있도록 합니다. 다음 장에서는 AEM 컨텐츠가 SPA 구성 요소에 매핑되는지 검사합니다.
 
-## 정적 SPA 구성 요소 {#static-spa-component} 추가
+## 정적 SPA 구성 요소 추가 {#static-spa-component}
 
 그런 다음, SPA에 새 구성 요소를 추가하고 변경 사항을 로컬 AEM 인스턴스에 배포합니다. 이는 SPA 업데이트 방식을 보여주는 간단한 변경 사항입니다.
 
@@ -223,7 +223,7 @@ AEM 프로젝트의 일부로 두 개의 모듈이 생성되었습니다.`ui.app
 
    위의 단계는 프로젝트의 루트에서 Maven 빌드를 트리거할 때(예: `mvn clean install -PautoInstallSinglePackage`) 자동으로 실행됩니다. 이제 SPA과 AEM 클라이언트 측 라이브러리 간의 통합에 대한 기본 사항을 이해해야 합니다. 정적 `Header` 구성 요소 아래에 있는 AEM에서 `Text` 구성 요소를 계속 편집하고 추가할 수 있습니다.
 
-## Webpack Dev Server - JSON API {#proxy-json} 프록시
+## Webpack 개발 서버 - JSON API 프록시 {#proxy-json}
 
 이전 연습에서 보듯이 빌드를 수행하고 클라이언트 라이브러리를 AEM의 로컬 인스턴스에 동기화하는 데에는 몇 분이 소요됩니다. 최종 테스트에는 허용되지만, SPA 개발의 대부분을 위해서는 적합하지 않습니다.
 
