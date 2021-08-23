@@ -5,10 +5,10 @@ description: 'Adobe Experience Manager Sites에 대한 비디오 및 튜토리�
 seo-description: Adobe Experience Manager Sites에 대한 비디오 및 튜토리얼 모음입니다
 sub-product: 사이트, 컨텐츠 서비스
 topic: 컨텐츠 관리
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 24%
+source-wordcount: '357'
+ht-degree: 20%
 
 ---
 
@@ -44,11 +44,11 @@ Adobe Experience Manager (AEM) Sites는 선도적인 경험 관리 플랫폼입�
 <table>
 <tr>
   <td>
-    <a href="https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html">
       <img alt="AEM Sites 시작하기 - WKND 튜토리얼" src="./assets/aem-wknd-tutorial.png" />
     </a>
     <div>
-      <a href="https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html">
+      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html">
     <strong>AEM Sites 시작하기</strong>
     </a>
     </div>
@@ -57,11 +57,11 @@ Adobe Experience Manager (AEM) Sites는 선도적인 경험 관리 플랫폼입�
     <p>
   </td>
   <td>
-    <a href="https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-with-aem-headless/overview.html">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html">
     <img alt="AEM 헤드리스 시작하기" src="./assets/aem-headless-tutorial.png" />
     </a>
     <div>
-    <a href="https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-with-aem-headless/overview.html">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html">
     <strong>AEM 헤드리스 시작하기</strong>
     </a>
     </div>
@@ -70,11 +70,11 @@ Adobe Experience Manager (AEM) Sites는 선도적인 경험 관리 플랫폼입�
     </p>
   </td>
   <td>
-    <a href="https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html">
       <img alt="AEM SPA 편집기 시작하기" src="./assets/aem-wknd-spa-editor-tutorial.png" />
     </a>
      <div>
-      <a href="https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html">
+      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html">
         <strong>AEM SPA 편집기 시작하기</strong>
       </a>
     </div>
