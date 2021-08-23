@@ -1,7 +1,6 @@
 ---
 title: GraphQL에 대한 고급 모델링
 description: AEM(Adobe Experience Manager)의 컨텐츠 조각 모델 간 관계를 만드는 방법과 GraphQL 쿼리에서 이러한 관계를 활용하는 방법을 알아봅니다.
-sub-product: assets
 version: cloud-service
 topic: 헤드리스, 컨텐츠 관리
 feature: 컨텐츠 조각, GraphQL API
@@ -9,9 +8,9 @@ role: Developer
 level: Beginner
 kt: 7620
 thumbnail: 332859.jpg
-source-git-commit: 1853960cce1e17ade43e4b2d7b521f63c4d04d71
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '117'
+source-wordcount: '116'
 ht-degree: 0%
 
 ---
