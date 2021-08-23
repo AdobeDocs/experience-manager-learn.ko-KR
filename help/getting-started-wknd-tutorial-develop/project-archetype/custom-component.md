@@ -11,9 +11,9 @@ level: Beginner
 kt: 4072
 mini-toc-levels: 1
 thumbnail: 30181.jpg
-source-git-commit: 66d35a41d63d4c33f71a118e9471c5aa58dc48a7
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '4108'
+source-wordcount: '4106'
 ht-degree: 0%
 
 ---
@@ -381,7 +381,7 @@ Sling 모델은 AEM에서 제공하는 여러 Java API를 사용합니다. 이�
 
    `uber-jar`은 `classic` 프로필이 호출될 때만 포함됩니다(예: `mvn clean install -PautoInstallSinglePackage -Pclassic`). 이 프로젝트에서도 고유합니다. AEM 프로젝트 원형(Project Archetype)에서 생성된 실제 프로젝트에서 지정된 AEM 버전이 6.5 또는 6.4인 경우 `uber-jar`이(가) 기본값입니다.
 
-   [uber-jar](https://docs.adobe.com/content/help/en/experience-manager-65/developing/devtools/ht-projects-maven.html#experience-manager-api-dependencies)에는 AEM 6.x에 의해 노출된 모든 공개 Java API가 포함되어 있습니다. 버전은 프로젝트 `aem-guides-wknd/pom.xml`의 루트에 있는 상위 반응기 pom에서 유지됩니다.
+   [uber-jar](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html#experience-manager-api-dependencies)에는 AEM 6.x에 의해 노출된 모든 공개 Java API가 포함되어 있습니다. 버전은 프로젝트 `aem-guides-wknd/pom.xml`의 루트에 있는 상위 반응기 pom에서 유지됩니다.
 
 1. `core.wcm.components.core`에 대한 종속성을 찾습니다.
 
