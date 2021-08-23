@@ -1,29 +1,24 @@
 ---
 title: AEM SPA 편집기를 사용한 개발 - Hello World 자습서
 description: AEM SPA Editor 에서는 단일 페이지 애플리케이션 또는 SPA의 컨텍스트 내 편집을 지원합니다. 이 자습서는 AEM SPA Editor JS SDK와 함께 사용할 SPA 개발을 소개합니다. 이 자습서는 사용자 지정 Hello World 구성 요소를 추가하여 We.Retail 저널 앱을 확장합니다. 사용자는 React 또는 Angular 프레임워크을 사용하여 자습서를 완료할 수 있습니다.
-sub-product: 사이트, 컨텐츠 서비스
-feature: Spa 편집기
-topics: development, single-page-applications
-audience: developer
-doc-type: tutorial
-activity: use
 version: 6.3, 6.4, 6.5
 topic: SPA
+feature: SPA 편집기
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '3174'
+source-wordcount: '3170'
 ht-degree: 1%
 
 ---
 
 
-# AEM SPA 편집기를 사용하여 개발 - Hello World 자습서 {#developing-with-the-aem-spa-editor-hello-world-tutorial}
+# AEM SPA 편집기를 사용한 개발 - Hello World 자습서 {#developing-with-the-aem-spa-editor-hello-world-tutorial}
 
 >[!WARNING]
 >
-> 이 자습서는 **사용되지 않음**&#x200B;입니다. 다음 중 하나를 수행하는 것이 좋습니다.[AEM SPA 편집기 및 Angular 시작하기](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html) 또는 [AEM SPA 편집기 및 React](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
+> 이 자습서는 **사용되지 않음**&#x200B;입니다. 다음 중 하나를 수행하는 것이 좋습니다. [AEM SPA 편집기 및 Angular 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html) 또는 [AEM SPA 편집기 및 React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
 
 AEM SPA Editor 에서는 단일 페이지 애플리케이션 또는 SPA의 컨텍스트 내 편집을 지원합니다. 이 자습서는 AEM SPA Editor JS SDK와 함께 사용할 SPA 개발을 소개합니다. 이 자습서는 사용자 지정 Hello World 구성 요소를 추가하여 We.Retail 저널 앱을 확장합니다. 사용자는 React 또는 Angular 프레임워크을 사용하여 자습서를 완료할 수 있습니다.
 
@@ -112,12 +107,12 @@ SPA 개발은 AEM 개발에 한 발, 다른 한 발도 있다. 목표는 SPA 개
 
    이 프로젝트에는 다음과 같은 전문 모듈이 포함되어 있습니다.
 
-   * `all`:전체 프로젝트를 하나의 패키지에 포함 및 설치합니다.
-   * `bundles`:다음 두 개의 OSGi 번들을 포함합니다.및 기타 Java 코드를 포함하 [!DNL Sling Models] 는 commons 및 core.
-   * `ui.apps`:는 프로젝트의 /apps 부분, 즉 JS 및 CSS clientlibs, 구성 요소, 런타임 모드별 구성을 포함합니다.
-   * `ui.content`:구조적 컨텐츠 및 구성 포함(`/content`,  `/conf`)
-   * `react-app`:We.Retail Journal React 응용 프로그램입니다. 이는 Maven 모듈과 웹 팩 프로젝트입니다.
-   * `angular-app`:We.Retail 분개 Angular 애플리케이션. 이는 [!DNL Maven] 모듈과 웹 팩 프로젝트입니다.
+   * `all`: 전체 프로젝트를 하나의 패키지에 포함 및 설치합니다.
+   * `bundles`: 다음 두 개의 OSGi 번들을 포함합니다. 및 기타 Java 코드를 포함하 [!DNL Sling Models] 는 commons 및 core.
+   * `ui.apps`: 는 프로젝트의 /apps 부분, 즉 JS 및 CSS clientlibs, 구성 요소, 런타임 모드별 구성을 포함합니다.
+   * `ui.content`: 구조적 컨텐츠 및 구성 포함(`/content`,  `/conf`)
+   * `react-app`: We.Retail Journal React 응용 프로그램입니다. 이는 Maven 모듈과 웹 팩 프로젝트입니다.
+   * `angular-app`: We.Retail 분개 Angular 애플리케이션. 이는 [!DNL Maven] 모듈과 웹 팩 프로젝트입니다.
 
 1. 새 터미널 창을 열고 다음 명령을 실행하여 전체 앱을 빌드하고 [http://localhost:4502](http://localhost:4502)에서 실행되는 로컬 AEM 인스턴스에 배포합니다.
 
@@ -167,7 +162,7 @@ SPA 개발 이터레이션은 AEM과 독립적으로 수행됩니다. SPA을 AEM
 
 ## AEM 구성 요소 만들기 {#aem-component}
 
-**모습:AEM 개발자**
+**모습: AEM 개발자**
 
 AEM 구성 요소가 먼저 생성됩니다. AEM 구성 요소는 React 구성 요소에서 읽는 JSON 속성을 렌더링합니다. AEM 구성 요소는 구성 요소의 편집 가능한 속성에 대한 대화 상자를 제공할 책임이 있습니다.
 
@@ -300,7 +295,7 @@ AEM 구성 요소가 먼저 생성됩니다. AEM 구성 요소는 React 구성 �
 
 ## Sling 모델 만들기 {#create-sling-model}
 
-**모습:AEM 개발자**
+**모습: AEM 개발자**
 
 다음 [!DNL Sling Model] 이(가) 생성되어 [!DNL Hello World] 구성 요소를 백업합니다. 기존 WCM 사용 사례에서 [!DNL Sling Model]은 비즈니스 로직을 구현하고 HTL(서버측 렌더링 스크립트)이 [!DNL Sling Model]을 호출합니다. 이렇게 하면 렌더링 스크립트가 비교적 간단해집니다.
 
@@ -308,7 +303,7 @@ AEM 구성 요소가 먼저 생성됩니다. AEM 구성 요소는 React 구성 �
 
 >[!NOTE]
 >
->개발자는 가장 좋은 방법으로서, 가능하면 [AEM 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)를 사용해야 합니다. 핵심 구성 요소는 [!DNL Sling Models]에 &quot;SPA-ready&quot;인 JSON 출력을 제공하므로 개발자가 프런트 엔드 프레젠테이션에 더 집중할 수 있습니다.
+>개발자는 가장 좋은 방법으로서, 가능하면 [AEM 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)를 사용해야 합니다. 핵심 구성 요소는 [!DNL Sling Models]에 &quot;SPA-ready&quot;인 JSON 출력을 제공하므로 개발자가 프런트 엔드 프레젠테이션에 더 집중할 수 있습니다.
 
 1. 선택한 편집기에서 **we-retail-journal-commons** 프로젝트( `<src>/aem-sample-we-retail-journal/bundles/commons`)를 엽니다.
 1. 패키지 `com.adobe.cq.sample.spa.commons.impl.models`에서:
@@ -399,7 +394,7 @@ AEM 구성 요소가 먼저 생성됩니다. AEM 구성 요소는 React 구성 �
 
    >[!NOTE]
    >
-   > 메서드 이름 `getDisplayMessage`이(가) 중요합니다. [!DNL Sling Model]이 [!DNL Jackson Exporter]로 직렬화되면 JSON 속성으로 표시됩니다.`displayMessage` [!DNL Jackson Exporter]은(는) 매개 변수를 사용하지 않는 모든 `getter` 메서드를 serialize하고 노출합니다(명시적으로 ignore로 표시되지 않음). 나중에 React/Angular 앱에서 이 속성 값을 읽고 응용 프로그램의 일부로 표시합니다.
+   > 메서드 이름 `getDisplayMessage`이(가) 중요합니다. [!DNL Sling Model]이 [!DNL Jackson Exporter]로 직렬화되면 JSON 속성으로 표시됩니다. `displayMessage` [!DNL Jackson Exporter]은(는) 매개 변수를 사용하지 않는 모든 `getter` 메서드를 serialize하고 노출합니다(명시적으로 ignore로 표시되지 않음). 나중에 React/Angular 앱에서 이 속성 값을 읽고 응용 프로그램의 일부로 표시합니다.
 
    메서드 `getExportedType` 도 중요합니다. 구성 요소 `resourceType` 값은 JSON 데이터를 프런트 엔드 구성 요소에 &quot;매핑&quot;하는 데 사용됩니다(Angular / React). 다음 섹션에서 이 방법을 살펴보겠습니다.
 
@@ -430,9 +425,9 @@ AEM 구성 요소가 먼저 생성됩니다. AEM 구성 요소는 React 구성 �
    com.adobe.cq.sample.spa.commons.impl.models.HelloWorld exports 'we-retail-journal/components/helloworld' with selector 'model' and extension '[Ljava.lang.String;@6480f3e5' with exporter 'jackson'
    ```
 
-## React 구성 요소 {#react-component} 만들기
+## React 구성 요소 만들기 {#react-component}
 
-**모습:프런트 엔드 개발자**
+**모습: 프런트 엔드 개발자**
 
 다음으로, React 구성 요소가 만들어집니다. 원하는 편집기를 사용하여 **react-app** 모듈( `<src>/aem-sample-we-retail-journal/react-app`)을 엽니다.
 
@@ -511,7 +506,7 @@ AEM 구성 요소가 먼저 생성됩니다. AEM 구성 요소는 React 구성 �
    ...
    ```
 
-1. 파일의 끝 부분에서 `MapTo` 도우미 를 호출하여 `HelloWorld` 클래스와 `HelloWorldEditConfig`를 전달합니다. 이렇게 하면 AEM 구성 요소의 리소스 유형을 기반으로 하여 React 구성 요소가 AEM 구성 요소에 매핑됩니다.`we-retail-journal/components/helloworld`
+1. 파일의 끝 부분에서 `MapTo` 도우미 를 호출하여 `HelloWorld` 클래스와 `HelloWorldEditConfig`를 전달합니다. 이렇게 하면 AEM 구성 요소의 리소스 유형을 기반으로 하여 React 구성 요소가 AEM 구성 요소에 매핑됩니다. `we-retail-journal/components/helloworld`
 
    ```js
    MapTo('we-retail-journal/components/helloworld')(HelloWorld, HelloWorldEditConfig);
@@ -571,7 +566,7 @@ AEM 구성 요소가 먼저 생성됩니다. AEM 구성 요소는 React 구성 �
 
 ## angular 구성 요소 만들기 {#angular-component}
 
-**모습:프런트 엔드 개발자**
+**모습: 프런트 엔드 개발자**
 
 >[!NOTE]
 >
@@ -752,7 +747,7 @@ AEM 구성 요소가 먼저 생성됩니다. AEM 구성 요소는 React 구성 �
    >
    > **main.** jsis the bundled Angular 앱을 사용합니다. 이 코드는 더 이상 사람이 읽을 수 없습니다. npm run build 명령은 최신 브라우저에서 해석할 수 있는 컴파일된 JavaScript를 출력하는 최적화된 빌드를 트리거했습니다.
 
-## 템플릿 {#template-update} 업데이트
+## 템플릿 업데이트 {#template-update}
 
 1. React 및/또는 Angular 버전에 대한 편집 가능한 템플릿으로 이동합니다.
 
@@ -773,13 +768,13 @@ AEM 구성 요소가 먼저 생성됩니다. AEM 구성 요소는 React 구성 �
 
    >[!NOTE]
    >
-   > AEM 6.5 및 AEM 6.4.5만 SPA Editor의 편집 가능한 템플릿 기능을 지원합니다. AEM 6.4를 사용하는 경우 CRXDE Lite을 통해 허용된 구성 요소에 대한 정책을 수동으로 구성해야 합니다.`/conf/we-retail-journal/react/settings/wcm/policies/wcm/foundation/components/responsivegrid/default` 또는 `/conf/we-retail-journal/angular/settings/wcm/policies/wcm/foundation/components/responsivegrid/default`
+   > AEM 6.5 및 AEM 6.4.5만 SPA Editor의 편집 가능한 템플릿 기능을 지원합니다. AEM 6.4를 사용하는 경우 CRXDE Lite을 통해 허용된 구성 요소에 대한 정책을 수동으로 구성해야 합니다. `/conf/we-retail-journal/react/settings/wcm/policies/wcm/foundation/components/responsivegrid/default` 또는 `/conf/we-retail-journal/angular/settings/wcm/policies/wcm/foundation/components/responsivegrid/default`
 
    [!UICONTROL 레이아웃 컨테이너]에서 [!UICONTROL 허용된 구성 요소]에 대한 업데이트된 정책 구성을 표시하는 CRXDE Lite:
 
    ![레이아웃 컨테이너에서 허용된 구성 요소에 대한 업데이트된 정책 구성을 표시하는 CRXDE Lite](assets/spa-editor-helloworld-tutorial-use/editable-template-policy.png)
 
-## 모두 함께 {#putting-together}
+## 모든 것을 하나로 묶는 방법 {#putting-together}
 
 1. angular 또는 React 페이지로 이동합니다.
 
@@ -809,7 +804,7 @@ AEM 구성 요소가 먼저 생성됩니다. AEM 구성 요소는 React 구성 �
 
 ## 문제 해결 {#troubleshooting}
 
-### Eclipse {#unable-to-build-project-in-eclipse}에서 프로젝트를 작성할 수 없습니다.
+### Eclipse에서 프로젝트를 작성할 수 없습니다. {#unable-to-build-project-in-eclipse}
 
 **오류:** 인식할 수 없는 목표 실행을 위해  [!DNL We.Retail Journal] 프로젝트를 Eclipse로 가져오는 동안 오류가 발생했습니다.
 
@@ -817,13 +812,13 @@ AEM 구성 요소가 먼저 생성됩니다. AEM 구성 요소는 React 구성 �
 
 ![일식 오류 마법사](assets/spa-editor-helloworld-tutorial-use/fig9.png)
 
-**해결 방법**:마침을 눌러 나중에 이 문제를 해결합니다. 이렇게 한다고 자습서가 완료되지 않습니다.
+**해결 방법**: 마침을 눌러 나중에 이 문제를 해결합니다. 이렇게 한다고 자습서가 완료되지 않습니다.
 
-**오류**:Maven 빌드  `react-app`중에 React 모듈이 성공적으로 빌드되지 않습니다.
+**오류**: Maven 빌드  `react-app`중에 React 모듈이 성공적으로 빌드되지 않습니다.
 
 **해결 방법:** React- `node_modules` app 아래의  **폴더를 삭제해 보십시오**. 프로젝트의 루트에서 Apache Maven 명령 `mvn  clean install -PautoInstallSinglePackage`을 다시 실행합니다.
 
-### AEM {#unsatisfied-dependencies-in-aem}에 없는 종속성이 있습니다.
+### AEM의 충족되지 않은 종속성 {#unsatisfied-dependencies-in-aem}
 
 ![패키지 관리자 종속성 오류](assets/spa-editor-helloworld-tutorial-use/we-retail-journal-package-dependency.png)
 
@@ -831,10 +826,10 @@ AEM 종속성이 충족되지 않으면 **[!UICONTROL AEM Package Manager]** 또
 
 ### 구성 요소가 표시되지 않음
 
-**오류**:성공적으로 배포하고 컴파일된 버전의 React/Angular 앱에 업데이트된  `helloworld` 구성 요소가 있는지 확인한 후에도 구성 요소를 페이지로 끌면 표시되지 않습니다. AEM UI에서 구성 요소를 볼 수 있습니다.
+**오류**: 성공적으로 배포하고 컴파일된 버전의 React/Angular 앱에 업데이트된  `helloworld` 구성 요소가 있는지 확인한 후에도 구성 요소를 페이지로 끌면 표시되지 않습니다. AEM UI에서 구성 요소를 볼 수 있습니다.
 
-**해결 방법**:브라우저의 기록/캐시를 지우거나 새 브라우저를 열거나 시크릿 모드를 사용합니다. 작동하지 않는 경우 로컬 AEM 인스턴스에서 클라이언트 라이브러리 캐시를 무효화합니다. AEM은 효율성을 위해 큰 clientlibraries를 캐시하려고 합니다. 오래된 코드가 캐시된 문제를 수정하기 위해 경우에 따라 캐시를 수동으로 무효화해야 합니다.
+**해결 방법**: 브라우저의 기록/캐시를 지우거나 새 브라우저를 열거나 시크릿 모드를 사용합니다. 작동하지 않는 경우 로컬 AEM 인스턴스에서 클라이언트 라이브러리 캐시를 무효화합니다. AEM은 효율성을 위해 큰 clientlibraries를 캐시하려고 합니다. 오래된 코드가 캐시된 문제를 수정하기 위해 경우에 따라 캐시를 수동으로 무효화해야 합니다.
 
-다음 위치로 이동합니다.[http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html](http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html) 를 클릭하고 Invalidate Cache를 클릭합니다. React/Angular 페이지로 돌아가서 페이지를 새로 고칩니다.
+다음 위치로 이동합니다. [http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html](http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html) 를 클릭하고 Invalidate Cache를 클릭합니다. React/Angular 페이지로 돌아가서 페이지를 새로 고칩니다.
 
 ![클라이언트 라이브러리 다시 작성](assets/spa-editor-helloworld-tutorial-use/invalidatecache.png)
