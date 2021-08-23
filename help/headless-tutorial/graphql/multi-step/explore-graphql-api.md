@@ -1,12 +1,7 @@
 ---
 title: GraphQL API 탐색 - AEM 헤드리스 시작하기 - GraphQL
 description: Adobe Experience Manager(AEM) 및 GraphQL을 시작합니다. 내장된 GraphicsQL IDE를 사용하여 AEM GraphQL API를 탐색합니다. AEM에서 컨텐츠 조각 모델을 기반으로 GraphQL 스키마를 자동으로 생성하는 방법을 알아봅니다. GraphQL 구문을 사용하여 기본 쿼리를 구성해 봅니다.
-sub-product: assets
-topics: headless
 version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
 mini-toc-levels: 1
 kt: 6714
 thumbnail: KT-6714.jpg
@@ -14,9 +9,9 @@ feature: 컨텐츠 조각, GraphQL API
 topic: 헤드리스, 컨텐츠 관리
 role: Developer
 level: Beginner
-source-git-commit: 81626b8d853f3f43d9c51130acf02561f91536ac
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1141'
+source-wordcount: '1140'
 ht-degree: 0%
 
 ---
@@ -40,7 +35,7 @@ AEM의 GraphQL API는 컨텐츠 조각의 데이터를 다운스트림 애플리
 * 컨텐츠 조각의 변형을 쿼리하는 방법을 알아봅니다.
 * 여러 컨텐츠 조각 모델 쿼리를 조인하는 방법을 알아봅니다
 
-## GraphiQL 도구 {#install-graphiql} 설치
+## GraphiQL 도구 설치 {#install-graphiql}
 
 GraphiQL IDE는 개발 툴이며 개발이나 로컬 인스턴스와 같은 하위 수준 환경에서만 필요합니다. 따라서 AEM 프로젝트에는 포함되지 않지만, 임시로 설치할 수 있는 별도의 패키지로 제공됩니다.
 
@@ -237,7 +232,7 @@ GraphiQL IDE는 개발 툴이며 개발이나 로컬 인스턴스와 같은 하�
 
 1. 쿼리를 실행하고 `biography` 필드에 훨씬 더 짧은 `html` 결과가 포함되어 있음을 관찰합니다.
 
-## 여러 컨텐츠 조각 모델 {#query-multiple-models} 쿼리
+## 여러 컨텐츠 조각 모델에 대한 쿼리 {#query-multiple-models}
 
 또한 별도의 쿼리를 단일 쿼리로 결합할 수도 있습니다. 이 기능은 응용 프로그램을 구동하는 데 필요한 HTTP 요청 수를 최소화하는 데 유용합니다. 예를 들어 애플리케이션의 *홈* 보기는 **두 개의** 다른 컨텐츠 조각 모델을 기반으로 컨텐츠를 표시할 수 있습니다. **두 개의** 별도의 쿼리를 실행하지 않고 쿼리를 단일 요청으로 결합할 수 있습니다.
 
@@ -296,7 +291,7 @@ GraphiQL IDE는 개발 툴이며 개발이나 로컬 인스턴스와 같은 하�
 
 ## 추가 리소스
 
-GraphQL 쿼리의 많은 예는 다음을 참조하십시오.[AEM에서 GraphQL을 사용하는 방법 학습 - 샘플 컨텐츠 및 쿼리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html).
+GraphQL 쿼리의 많은 예는 다음을 참조하십시오. [AEM에서 GraphQL을 사용하는 방법 학습 - 샘플 컨텐츠 및 쿼리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html).
 
 ## 축하합니다! {#congratulations}
 
