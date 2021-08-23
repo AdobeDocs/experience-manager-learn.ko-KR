@@ -11,10 +11,10 @@ doc-type: article
 topic: 개발
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '2025'
-ht-degree: 2%
+source-wordcount: '2029'
+ht-degree: 3%
 
 ---
 
@@ -66,7 +66,7 @@ API가 AEM에서 제공되는 경우 [!DNL Sling], JCR 및 OSGi보다 선호합�
 
 AEM API는 생산화된 사용 사례와 관련된 추상화와 기능을 제공합니다.
 
-예를 들어 AEM [PageManager](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html) 및 [Page](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/foundation/model/Page.html) API는 웹 페이지를 나타내는 AEM의 `cq:Page` 노드에 대한 추상을 제공합니다.
+예를 들어 AEM [PageManager](https://helpx.adobe.com/kr/experience-manager/6-3/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html) 및 [Page](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/foundation/model/Page.html) API는 웹 페이지를 나타내는 AEM의 `cq:Page` 노드에 대한 추상을 제공합니다.
 
 이러한 노드는 [!DNL Sling] API를 리소스로 사용하고 JCR API를 노드로 사용할 수 있지만 AEM API는 일반적인 사용 사례에 대한 추상을 제공합니다. AEM API를 사용하면 AEM 제품, 사용자 지정 및 AEM 확장 간에 일관된 동작을 보장합니다.
 
@@ -78,7 +78,7 @@ AEM API에는 기본 설정 순서로 다음 Java 패키지로 식별되는 인�
 1. `com.adobe.granite`
 1. `com.day.cq`
 
-`com.adobe.cq` 은 제품 사용 사례를 지원하지만 워크플로우 또는 작업(제품 간에 사용)과 같은 제품 간 플랫폼 사용 사례를  `com.adobe.granite` 지원합니다.AEM Assets, Sites 등).
+`com.adobe.cq` 은 제품 사용 사례를 지원하지만 워크플로우 또는 작업(제품 간에 사용)과 같은 제품 간 플랫폼 사용 사례를  `com.adobe.granite` 지원합니다. AEM Assets, Sites 등).
 
 `com.day.cq` 에는 &quot;원래&quot; API가 포함되어 있습니다. 이러한 API는 Adobe의 [!DNL Day CQ] 획득 전 및/또는 그 주변에 존재했던 핵심 추상화 및 기능을 처리합니다. 이러한 API는 `com.adobe.cq` 또는 `com.adobe.granite`에서 (최신) 대체 요소를 제공하지 않는 한 지원되므로 방지해서는 안 됩니다.
 
@@ -100,7 +100,7 @@ AEM에서는 여러 쿼리 언어를 지원합니다. 3개의 기본 언어는 [
 * [일반적인 ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/querybuilder-predicate-reference.html) 쿼리 요구 사항을 지원하는 OOTB 설명
 
 * 확장 가능한 API - 사용자 지정 [쿼리 설명](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/implementing-custom-predicate-evaluator.html)을 개발할 수 있습니다.
-* JCR-SQL2 및 XPath는 [[!DNL Sling]](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/ResourceResolver.html#findResources-java.lang.String-java.lang.String-) 및 [JCR API](https://docs.adobe.com/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/query/package-summary.html)를 통해 직접 실행할 수 있으며, 결과는 각각 [[!DNL Sling] 리소스](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/Resource.html) 또는 [JCR 노드](https://docs.adobe.com/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html)를 반환합니다.
+* JCR-SQL2 및 XPath는 [[!DNL Sling]](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/ResourceResolver.html#findResources-java.lang.String-java.lang.String-) 및 [JCR API](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/query/package-summary.html)를 통해 직접 실행할 수 있으며, 결과는 각각 [[!DNL Sling] 리소스](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/Resource.html) 또는 [JCR 노드](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html)를 반환합니다.
 
 >[!CAUTION]
 >
@@ -137,9 +137,9 @@ AEM에서는 여러 쿼리 언어를 지원합니다. 3개의 기본 언어는 [
 
 ## JCR API
 
-* **[JCR 2.0 JavaDocs](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html)**
+* **[JCR 2.0 JavaDocs](https://docs.adobe.com/content/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html)**
 
-[JCR(Java Content Repository) 2.0 API는 JCR 구현을 위한 사양의 일부입니다(AEM의 경우 [Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/)). ](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html) 모든 JCR 구현은 이러한 API를 준수하고 구현해야 하므로 AEM 콘텐츠과 상호 작용하기 위한 가장 낮은 수준의 API입니다.
+[JCR(Java Content Repository) 2.0 API는 JCR 구현을 위한 사양의 일부입니다(AEM의 경우 [Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/)). ](https://docs.adobe.com/content/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html) 모든 JCR 구현은 이러한 API를 준수하고 구현해야 하므로 AEM 콘텐츠과 상호 작용하기 위한 가장 낮은 수준의 API입니다.
 
 JCR 자체는 컨텐츠 저장소로 사용하는 계층적/트리 기반 NoSQL 데이터 저장소 AEM입니다. JCR에는 컨텐츠 CRUD부터 콘텐츠 쿼리 등 다양한 지원되는 API의 범위가 있습니다. 이러한 강력한 API에도 불구하고 높은 수준의 AEM 및 [!DNL Sling] 추상화보다 선호되는 경우는 거의 없습니다.
 
@@ -202,11 +202,11 @@ OSGi는 모든 OSGi 컨테이너가 구현하고 준수해야 하는 사양을 �
 
 * AEM QueryBuilder는 [제안](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Suggestions), 맞춤법 검사 및 색인 힌트와 같은 특정 쿼리 함수를 지원하지 않습니다. 이러한 함수를 사용하여 쿼리하려면 JCR-SQL2가 선호됩니다.
 
-### [!DNL Sling] 서블릿 등록  {#sling-servlet-registration}
+### [!DNL Sling] 서블릿 등록 {#sling-servlet-registration}
 
 * [!DNL Sling] 서블릿 등록, @ [SlingServletResourceTypesover가 있는 OSGi DS 1.2 주석](https://sling.apache.org/documentation/the-sling-engine/servlets.html) 을 선호함  `@SlingServlet`
 
-### [!DNL Sling] 필터 등록  {#sling-filter-registration}
+### [!DNL Sling] 필터 등록 {#sling-filter-registration}
 
 * [!DNL Sling] 필터 등록, @ [SlingServletFilterover가 있는 OSGi DS 1.2 주석](https://sling.apache.org/documentation/the-sling-engine/filters.html) 을 선호함  `@SlingFilter`
 
@@ -325,7 +325,7 @@ String title = asset.getMetadataValue("dc:title");
 Calendar lastModified = (Calendar) asset.getMetadata("cq:lastModified");
 ```
 
-### [!DNL Sling] [!DNL Resource] 속성 {#read-sling-resource-properties} 읽기
+### [!DNL Sling] [!DNL Resource] 속성 읽기 {#read-sling-resource-properties}
 
 속성을 AEM API(페이지, 자산)에 직접 액세스할 수 없는 위치(속성 또는 상대 리소스)에 저장하면 [!DNL Sling] 리소스 및 ValueMap 을 사용하여 데이터를 가져올 수 있습니다.
 
