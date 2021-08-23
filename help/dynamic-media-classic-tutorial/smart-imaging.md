@@ -10,10 +10,10 @@ activity: use
 topic: 컨텐츠 관리
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 3%
+source-wordcount: '693'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 3%
 
 또한 스마트 이미징은 Adobe의 동급 최고의 프리미엄 서비스와 완전히 통합될 수 있는 향상된 성능 증대의 이점을 제공합니다. 이 서비스는 지연 시간이 가장 짧은 서버, 네트워크 및 피어링 지점 간의 최적의 인터넷 경로를 찾아 인터넷 상의 기본 경로보다 패킷 손실률을 찾습니다.
 
-[스마트 이미징](https://docs.adobe.com/content/help/ko/experience-manager-64/assets/dynamic/imaging-faq.html)에 대해 자세히 알아보십시오.
+[스마트 이미징](https://experienceleague.adobe.com/docs/experience-manager-64/assets/dynamic/imaging-faq.html)에 대해 자세히 알아보십시오.
 
 ## 스마트 이미징의 이점
 
@@ -36,7 +36,7 @@ ht-degree: 3%
 
 앞에서 설명한 바와 같이, 스마트 이미징은 Adobe Sensei AI 기능을 활용하고 기존 이미지 사전 설정과 함께 시각적 품질을 유지하면서 이미지를 WebP와 같은 최적의 차세대 이미지 형식으로 자동으로 변환합니다.
 
-지원되는 이미지 형식(및 이러한 형식을 사용하지 않을 경우 발생하는 내용)과 사용 중인 기존 이미지 사전 설정에 미치는 영향을 포함하여 [스마트 이미징 작동 방식](https://docs.adobe.com/content/help/en/experience-manager-64/assets/dynamic/imaging-faq.html#how-does-smart-imaging-work)에 대해 자세히 알아보십시오.
+지원되는 이미지 형식(및 이러한 형식을 사용하지 않을 경우 발생하는 내용)과 사용 중인 기존 이미지 사전 설정에 미치는 영향을 포함하여 [스마트 이미징 작동 방식](https://experienceleague.adobe.com/docs/experience-manager-64/assets/dynamic/imaging-faq.html#how-does-smart-imaging-work)에 대해 자세히 알아보십시오.
 
 ## 스마트 이미징의 영향
 
@@ -54,7 +54,7 @@ ht-degree: 3%
 
 스마트 이미징을 활성화하면 예상대로 작동하는지 확인할 수 있습니다.
 
-스마트 이미징에 대한 추가 질문이 있을 수 있습니다. 질문과 대답(FAQ) 목록을 정리했습니다. [FAQ](https://docs.adobe.com/content/help/en/experience-manager-64/assets/dynamic/imaging-faq.html)를 참조하십시오.
+스마트 이미징에 대한 추가 질문이 있을 수 있습니다. 질문과 대답(FAQ) 목록을 정리했습니다. [FAQ](https://experienceleague.adobe.com/docs/experience-manager-64/assets/dynamic/imaging-faq.html)를 참조하십시오.
 
 ## 추가 리소스
 
