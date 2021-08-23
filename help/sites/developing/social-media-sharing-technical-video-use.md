@@ -10,9 +10,9 @@ version: 6.3, 6.4, 6.5
 topic: 컨텐츠 관리
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '207'
 ht-degree: 8%
 
 ---
@@ -24,14 +24,14 @@ ht-degree: 8%
 
 >[!VIDEO](https://video.tv.adobe.com/v/18897/?quality=9&learn=on)
 
-이 비디오에서는 [We.Retail](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail#weretail) 샘플 웹 사이트를 사용하여 Social Media 공유 구성 요소([AEM Core Components](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)의 일부)의 다음 기능을 설명합니다.
+이 비디오에서는 [We.Retail](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail#weretail) 샘플 웹 사이트를 사용하여 Social Media 공유 구성 요소([AEM Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)의 일부)의 다음 기능을 설명합니다.
 
 * 0:00 - 소셜 미디어 공유 구성 요소 추가 및 구성
 * 1:00 - Facebook에 공유
 * 3:10 - Pinterest에 공유
 * 6:25 - 제품 페이지에서 소셜 미디어 공유 구성 요소 사용
 
-## Externalizer 설정 {#externalizer-setup}
+## 외부 도우미 설정 {#externalizer-setup}
 
 ![Day CQ Link Externalizer](assets/externalizer.png)
 
@@ -39,10 +39,10 @@ ht-degree: 8%
 
 [AEM ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/externalizer.html) externalizerr는 게시 실행 모드를 AEM Publish에 액세스하는 데 사용되는 공개적으로 액세스 가능한 도메인에 매핑하려면 AEM Author와 AEM Publish 모두에서 설정해야 합니다.
 
-이 비디오에서는 `/etc/hosts`을(를) 사용하여 *www.example.com*&#x200B;를 로컬 호스트로 확인하고 [기본 AEM Dispatcher 구성](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/getting-started/dispatcher-install.html)을(를) 사용하여 www.example.com을 AEM Publish를 앞에 추가할 수 있습니다.
+이 비디오에서는 `/etc/hosts`을(를) 사용하여 *www.example.com*&#x200B;를 로컬 호스트로 확인하고 [기본 AEM Dispatcher 구성](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html)을(를) 사용하여 www.example.com을 AEM Publish를 앞에 추가할 수 있습니다.
 
 ## 지원 자료 {#supporting-materials}
 
 * [AEM 코어 구성 요소 다운로드](https://github.com/adobe/aem-core-wcm-components/releases)
 * [We.Retail 다운로드](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases)
-* [Dispatcher 설치](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/getting-started/dispatcher-install.html)
+* [Dispatcher 설치](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html)
