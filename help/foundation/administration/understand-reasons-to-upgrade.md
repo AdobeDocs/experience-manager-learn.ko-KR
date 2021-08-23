@@ -10,9 +10,9 @@ doc-type: article
 topic: 업그레이드
 role: Leader, Architect, Developer, Admin, User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '3541'
+source-wordcount: '3529'
 ht-degree: 3%
 
 ---
@@ -343,7 +343,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있습니다.
         <td>✔</td>
     </tr>
     <tr>
-        <td><strong><a href="https://docs.adobe.com/docs/en/aem/6-5/administer/security/saml-2-0-authenticationhandler.html" target="_blank">향상된 SAML 인증 </a><br>
+        <td><strong><a href="https://experienceleague.adobe.com/docs/" target="_blank">향상된 SAML 인증 </a><br>
  </strong>지원SAML 리디렉션, 최적화된 그룹 정보 및 키 암호화 문제가 해결되었습니다. 
             <br>
         </td>
@@ -954,7 +954,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있습니다.
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://docs.adobe.com/docs/ko-KR/aem/6-5/administer/content/dynamic-media/viewer-presets.html" target="_blank">뷰어</a>:</strong>
+            <td><strong><a href="https://experienceleague.adobe.com/docs/" target="_blank">뷰어</a>:</strong>
             다양한 화면/장치를 지원하는 사용자 지정 브랜드 리치 미디어 플레이어 및 사전 설정.</td>
             <td> </td>
             <td>✔</td>
