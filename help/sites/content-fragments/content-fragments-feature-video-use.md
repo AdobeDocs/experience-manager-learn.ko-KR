@@ -11,10 +11,10 @@ version: cloud-service
 topic: 컨텐츠 관리
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 9%
+source-wordcount: '372'
+ht-degree: 6%
 
 ---
 
@@ -36,7 +36,7 @@ AEM 컨텐츠 조각은 연관되지만 디자인이나 레이아웃 정보 없�
 
 >[!VIDEO](https://video.tv.adobe.com/v/22452/?quality=12&learn=on)
 
-컨텐츠 조각의 데이터 스키마인 AEM 컨텐츠 조각 모델은 AEM [[!UICONTROL 구성 브라우저]](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html)를 통해 활성화되어야 하며, 이를 통해 구성 기준에 따라 컨텐츠 조각 모델을 정의할 수 있습니다.
+컨텐츠 조각의 데이터 스키마인 AEM 컨텐츠 조각 모델은 AEM [[!UICONTROL 구성 브라우저]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html)를 통해 활성화되어야 하며, 이를 통해 구성 기준에 따라 컨텐츠 조각 모델을 정의할 수 있습니다.
 
 ## 컨텐츠 조각 만들기 {#creating-content-fragments}
 
@@ -73,8 +73,8 @@ AEM 컨텐츠 조각은 AEM Author에서 변형, 요소 및 메타데이터를 �
 ## 추가 리소스 {#additional-resources}
 
 * [컨텐츠 조각 제공](content-fragments-delivery-feature-video-use.md)
-* [AEM WCM 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)
-* [AEM WCM 코어 컨텐츠 조각 구성 요소](https://docs.adobe.com/content/help/kr/experience-manager-core-components/using/components/content-fragment-component.html)
+* [AEM WCM 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)
+* [AEM WCM 코어 컨텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
 
 비디오 시리즈에서 최종 상태에 대한 AEM 6.4+ 인스턴스에 아래 패키지를 다운로드하여 설치하려면 다음을 수행하십시오.
 
