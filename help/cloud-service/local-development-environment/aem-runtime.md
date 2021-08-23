@@ -12,9 +12,9 @@ thumbnail: 32551.jpg
 topic: 개발
 role: Developer
 level: Beginner
-source-git-commit: d49ae402b332ba972a78cdbd8f5bf962b91c83b1
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1734'
+source-wordcount: '1732'
 ht-degree: 2%
 
 ---
@@ -40,7 +40,7 @@ Experience Manager은 Java 애플리케이션이므로 개발 도구를 지원�
 1. [최신 Java SDK 11 다운로드 및 설치](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atologing&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%3AlastModified&amp;orderby.sort=desc&amp;layout=0&amp;p.offset=0&amp;p.limit=0&amp;limit=1)
 1. 명령을 실행하여 Java 11 SDK가 설치되어 있는지 확인합니다.
    + Windows:`java -version`
-   + macOS / Linux:`java --version`
+   + macOS / Linux: `java --version`
 
 ![Java](./assets/aem-runtime/java.png)
 
@@ -230,7 +230,7 @@ AEM 작성자 서비스를 시작하려면 `cd` 를 Quickstart Jar가 포함된 
 
 `$ java -jar aem-publish-p4503.jar`
 
-## 명령줄에서 Quickstart Jar를 시작하면 즉시 {#troubleshooting-java-8}이 중단됩니다.
+## 명령줄에서 Quickstart Jar를 시작하면 즉시 중단됩니다{#troubleshooting-java-8}
 
 명령줄에서 Quickstart Jar를 시작할 때 프로세스가 즉시 중단되고 AEM 서비스가 시작되지 않으며 다음 오류가 발생합니다.
 
@@ -251,11 +251,11 @@ Java SDK 11이 설치되면 명령줄에서 다음을 실행하여 활성 버전
 Java 11 SDK가 설치되면 명령줄에서 명령을 실행하여 활성 버전인지 확인합니다.
 
 + Windows: `java -version`
-+ macOS / Linux:`java --version`
++ macOS / Linux: `java --version`
 
 ## 추가 리소스
 
 + [AEM SDK 다운로드](https://experience.adobe.com/#/downloads)
 + [Adobe Cloud Manager](https://my.cloudmanager.adobe.com/)
 + [Docker 다운로드](https://www.docker.com/)
-+ [Experience Manager Dispatcher 설명서](https://docs.adobe.com/content/help/ko-KR/experience-manager-dispatcher/using/dispatcher.html)
++ [Experience Manager Dispatcher 설명서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko-KR)
