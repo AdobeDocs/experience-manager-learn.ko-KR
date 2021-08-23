@@ -11,15 +11,15 @@ thumbnail: 5878-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: 32320905786682a852baf7d777cb06de0072c439
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1230'
+source-wordcount: '1228'
 ht-degree: 1%
 
 ---
 
 
-# 사용자 지정 날씨 구성 요소 {#custom-component} 만들기
+# 사용자 지정 날씨 구성 요소 만들기 {#custom-component}
 
 AEM SPA 편집기에 사용할 사용자 지정 날씨 구성 요소를 만드는 방법을 알아봅니다. 작성자 대화 상자 및 Sling 모델을 개발하여 JSON 모델을 확장하여 사용자 지정 구성 요소를 채우는 방법을 알아봅니다. [Open Weather API](https://openweathermap.org) 및 [React Open Weather 구성 요소](https://www.npmjs.com/package/react-open-weather)가 사용됩니다.
 
@@ -145,7 +145,7 @@ AEM 구성 요소는 노드 및 속성으로 정의됩니다. 프로젝트에서
    >
    > 코어 구성 요소 정의](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components)를 보면 대화 상자의 예제를 훨씬 더 많이 볼 수 있습니다. [ [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/libs/granite/ui/components/coral/foundation/form)에서 `/libs/granite/ui/components/coral/foundation/form` 아래에 있는 `select`, `textarea`, `pathfield` 등의 추가 양식 필드를 볼 수도 있습니다.
 
-   기존 AEM 구성 요소를 사용하는 경우 일반적으로 [HTL](https://docs.adobe.com/content/help/ko/experience-manager-htl/using/overview.html) 스크립트가 필요합니다. SPA이 구성 요소를 렌더링하므로 HTL 스크립트가 필요하지 않습니다.
+   기존 AEM 구성 요소를 사용하는 경우 일반적으로 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=ko-KR) 스크립트가 필요합니다. SPA이 구성 요소를 렌더링하므로 HTL 스크립트가 필요하지 않습니다.
 
 ## Sling 모델 만들기
 
