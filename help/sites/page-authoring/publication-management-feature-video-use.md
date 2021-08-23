@@ -1,12 +1,7 @@
 ---
 title: AEM Sites을 사용하여 페이지 게시
-seo-title: Adobe Experience Manager Sites을 사용하여 페이지 게시
 description: Adobe Experience Manager Sites에서는 컨텐츠를 게시하고 게시 취소할 수 있는 여러 옵션을 제공합니다. 이 비디오에서는 다양한 방법 및 기능을 탐구합니다.
-seo-description: Adobe Experience Manager Sites에서는 컨텐츠를 게시하고 게시 취소할 수 있는 여러 옵션을 제공합니다. 이 비디오에서는 다양한 방법 및 기능을 탐구합니다.
-topics: publishing
-audience: all
-doc-type: feature video
-activity: use
+feature-set: Experience Manager
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 4322
 thumbnail: 32193.jpg
@@ -14,10 +9,10 @@ feature: 게시
 topic: 컨텐츠 관리
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '168'
-ht-degree: 2%
+source-wordcount: '137'
+ht-degree: 3%
 
 ---
 
@@ -40,4 +35,4 @@ AEM Sites은 작성자의 워크플로우를 기반으로 게시 및 게시 취�
 
 ## 추가 리소스 {#additional-resources}
 
-* [페이지 게시 설명서](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/authoring/publishing-pages.html)
+* [페이지 게시 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/publishing-pages.html)
