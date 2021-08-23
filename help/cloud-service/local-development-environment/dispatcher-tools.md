@@ -13,10 +13,10 @@ thumbnail: 30603.jpg
 topic: 개발
 role: Developer
 level: Beginner
-source-git-commit: 9a78cbdb5fd35e4aa7169382494dd014aa8098e9
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1639'
-ht-degree: 3%
+source-wordcount: '1637'
+ht-degree: 2%
 
 ---
 
@@ -74,8 +74,8 @@ Dispatcher 도구 버전은 AEM SDK의 버전과 다릅니다. AEM SDK 버전을
 
 1. 다운로드한 `aem-sdk-xxx.zip` 파일의 압축을 해제합니다
 1. Dispatcher 도구의 짐을 `~/aem-sdk/dispatcher`에 넣습니다.
-   + Windows:`aem-sdk-dispatcher-tools-x.x.x-windows.zip`을 `C:\Users\<My User>\aem-sdk\dispatcher`에 압축 해제(필요한 경우 누락된 폴더 만들기)
-   + macOS / Linux:함께 셸 스크립트 `aem-sdk-dispatcher-tools-x.x.x-unix.sh`를 실행하여 Dispatcher 도구의 압축을 해제합니다
+   + Windows: `aem-sdk-dispatcher-tools-x.x.x-windows.zip`을 `C:\Users\<My User>\aem-sdk\dispatcher`에 압축 해제(필요한 경우 누락된 폴더 만들기)
+   + macOS / Linux: 함께 셸 스크립트 `aem-sdk-dispatcher-tools-x.x.x-unix.sh`를 실행하여 Dispatcher 도구의 압축을 해제합니다
       + `chmod a+x aem-sdk-dispatcher-tools-x.x.x-unix.sh && ./aem-sdk-dispatcher-tools-x.x.x-unix.sh`
 
 아래 실행된 모든 명령은 현재 작업 디렉터리에 확장된 Dispatcher 도구 콘텐츠가 포함되어 있다고 가정합니다.
@@ -105,23 +105,23 @@ Dispatcher 도구는 로컬 개발을 포함하여 모든 환경에 대한 동�
 
 + 사용량:
    + Windows: `bin\validate src`
-   + macOS / Linux:`./bin/validate.sh ./src`
+   + macOS / Linux: `./bin/validate.sh ./src`
 
 ## 로컬에서 Dispatcher 실행
 
 Dispatcher를 로컬로 실행하려면 Dispatcher 도구의 `validator` CLI 도구를 사용하여 Dispatcher 구성 파일을 생성해야 합니다.
 
 + 사용량:
-   + Windows:`bin\validator full -d out src`
-   + macOS / Linux:`./bin/validator full -d ./out ./src`
+   + Windows: `bin\validator full -d out src`
+   + macOS / Linux: `./bin/validator full -d ./out ./src`
 
 이 명령은 구성을 Docker 컨테이너의 Apache HTTP Web Server와 호환되는 파일 세트로 전달합니다.
 
 생성된 투명화된 구성은 Docker 컨테이너에서 로컬로 Dispatcher를 실행하는 데 사용됩니다. 유효성 검사기의 `-d` 옵션을 사용하여 `validate` __및__ 출력을 사용하여 최신 구성의 유효성을 검사한 것이 중요합니다.
 
 + 사용량:
-   + Windows:`bin\docker_run <deployment-folder> <aem-publish-host>:<aem-publish-port> <dispatcher-port>`
-   + macOS / Linux:`./bin/docker_run.sh <deployment-folder> <aem-publish-host>:<aem-publish-port> <dispatcher-port>`
+   + Windows: `bin\docker_run <deployment-folder> <aem-publish-host>:<aem-publish-port> <dispatcher-port>`
+   + macOS / Linux: `./bin/docker_run.sh <deployment-folder> <aem-publish-host>:<aem-publish-port> <dispatcher-port>`
 
 `aem-publish-host`은(는) Docker가 호스트 컴퓨터의 IP로 확인되는 컨테이너에 제공하는 특수 DNS 이름인 `host.docker.internal`로 설정할 수 있습니다. `host.docker.internal`이 해결되지 않으면 아래의 [문제 해결](#troubleshooting-host-docker-internal) 섹션을 참조하십시오.
 
@@ -129,13 +129,13 @@ Dispatcher를 로컬로 실행하려면 Dispatcher 도구의 `validator` CLI 도
 
 1. 구성이 변경될 때마다 처음부터 `out` 라는 `deployment-folder`을 수동으로 생성합니다.
 
-   + Windows:`del /Q out && bin\validator full -d out src`
-   + macOS / Linux:`rm -rf ./out && ./bin/validator full -d ./out ./src`
+   + Windows: `del /Q out && bin\validator full -d out src`
+   + macOS / Linux: `rm -rf ./out && ./bin/validator full -d ./out ./src`
 
 2. (다시 시작) 배포 폴더의 경로를 제공하는 Dispatcher Docker 컨테이너를 시작합니다.
 
-   + Windows:`bin\docker_run out host.docker.internal:4503 8080`
-   + macOS / Linux:`./bin/docker_run.sh ./out host.docker.internal:4503 8080`
+   + Windows: `bin\docker_run out host.docker.internal:4503 8080`
+   + macOS / Linux: `./bin/docker_run.sh ./out host.docker.internal:4503 8080`
 
 포트 4503에서 로컬로 실행되는 AEM as a Cloud Service SDK의 게시 서비스는 `http://localhost:8080`에 있는 Dispatcher를 통해 사용할 수 있습니다.
 
@@ -168,12 +168,12 @@ Dispatcher 도구 로그는 `docker_run`이(가) 실행될 때 표준으로 내�
 Dispatcher 디버깅에 유용한 매개 변수는 다음과 같습니다.
 
 + `DISP_LOG_LEVEL=Debug` Dispatcher 모듈 로깅을 디버그 수준으로 설정합니다
-   + 기본값은 다음과 같습니다.`Warn`
+   + 기본값은 다음과 같습니다. `Warn`
 + `REWRITE_LOG_LEVEL=Debug` apache HTTP 웹 서버 재작성 모듈 로깅을 디버그 수준으로 설정합니다.
-   + 기본값은 다음과 같습니다.`Warn`
+   + 기본값은 다음과 같습니다. `Warn`
 + `DISP_RUN_MODE` dispatcher 환경의 &quot;실행 모드&quot;를 설정하여 해당 실행 모드 Dispatcher 구성 파일을 로드합니다.
    + 기본값은 입니다.`dev`
-+ 유효한 값:`dev`, `stage` 또는 `prod`
++ 유효한 값: `dev`, `stage` 또는 `prod`
 
 하나 이상의 매개 변수를 `docker_run`에 전달할 수 있습니다.
 
@@ -246,9 +246,9 @@ Running script /docker_entrypoint.d/30-wait-for-backend.sh
 Waiting until host.docker.internal is available
 ```
 
-### docker_run 결과 &#39;** 오류:배포 폴더를 찾을 수 없습니다.&#39;
+### docker_run 결과 &#39;** 오류: 배포 폴더를 찾을 수 없습니다.&#39;
 
-`docker_run.cmd`을 실행하면 __** 오류를 읽는 오류가 표시됩니다.배포 폴더를 찾을 수 없습니다.__. 이 문제는 일반적으로 경로에 공백이 있기 때문에 발생합니다. 가능하면 폴더의 공백을 제거하거나 `aem-sdk` 폴더를 공백이 없는 경로로 이동합니다.
+`docker_run.cmd`을 실행하면 __** 오류를 읽는 오류가 표시됩니다. 배포 폴더를 찾을 수 없습니다.__. 이 문제는 일반적으로 경로에 공백이 있기 때문에 발생합니다. 가능하면 폴더의 공백을 제거하거나 `aem-sdk` 폴더를 공백이 없는 경로로 이동합니다.
 
 예를 들어, Windows 사용자 폴더는 대개 `<First name> <Last name>`이며, 그 사이에 공백이 있습니다. 아래 예에서 폴더 `...\My User\...`에는 로컬 Dispatcher 도구의 `docker_run` 실행을 중단하는 공백이 포함되어 있습니다. 공백이 Windows 사용자 폴더에 있는 경우 Windows가 중단되므로 이 폴더의 이름을 바꾸려고 하지 마십시오. 대신 `aem-sdk` 폴더를 사용자가 완전히 수정할 수 있는 권한이 있는 새 위치로 이동합니다. `aem-sdk` 폴더가 사용자의 홈 디렉토리에 있다고 가정하는 지침은 새 위치로 조정해야 합니다.
 
@@ -262,7 +262,7 @@ operable program or batch file.
 ** error: Deployment folder not found: c:\Users\My User\aem-sdk\dispatcher\out
 ```
 
-### docker_run이 Windows{#troubleshooting-windows-compatible}에서 시작하지 못했습니다.
+### docker_run이 Windows에서 시작되지 않음{#troubleshooting-windows-compatible}
 
 Windows에서 `docker_run`을 실행하면 다음 오류가 발생하여 Dispatcher가 시작되지 않을 수 있습니다. 이 문제는 Windows에서 Dispatcher에 보고된 문제이며 향후 릴리스에서 수정됩니다.
 
@@ -293,4 +293,4 @@ AH00016: Configuration Failed
 + [Adobe Cloud Manager](https://my.cloudmanager.adobe.com/)
 + [Docker 다운로드](https://www.docker.com/)
 + [AEM 참조 웹 사이트(WKND) 다운로드](https://github.com/adobe/aem-guides-wknd/releases)
-+ [Experience Manager Dispatcher 설명서](https://docs.adobe.com/content/help/ko-KR/experience-manager-dispatcher/using/dispatcher.html)
++ [Experience Manager Dispatcher 설명서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko-KR)
