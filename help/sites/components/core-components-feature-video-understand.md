@@ -12,10 +12,10 @@ thumbnail: 18926.jpg
 topic: 개발
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '148'
-ht-degree: 11%
+source-wordcount: '146'
+ht-degree: 10%
 
 ---
 
@@ -36,4 +36,4 @@ AEM 코어 구성 요소 는 Adobe Experience Manager에서 사용할 표준 구
 
 * [GitHub 프로젝트](https://github.com/adobe/aem-core-wcm-components)
 * [코어 구성 요소 예](https://www.aemcomponents.dev/)
-* [핵심 구성 요소 설명서](https://docs.adobe.com/content/help/ko/experience-manager-core-components/using/introduction.html)
+* [핵심 구성 요소 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)
