@@ -1,26 +1,22 @@
 ---
 title: AEM 구성 요소를 사용하여 Adobe 클라이언트 데이터 레이어 사용자 지정
 description: 사용자 지정 AEM 구성 요소의 컨텐츠로 Adobe 클라이언트 데이터 레이어를 사용자 지정하는 방법을 알아봅니다. AEM 핵심 구성 요소에서 제공하는 API를 사용하여 데이터 레이어를 확장 및 사용자 지정하는 방법을 알아봅니다.
-feature: Adobe 클라이언트 데이터 레이어, 핵심 구성 요소
-topics: integrations
-audience: developer
-doc-type: tutorial
-activity: use
 version: cloud-service
-kt: 6265
-thumbnail: KT-6265.jpg
 topic: 통합
+feature: Adobe 클라이언트 데이터 레이어, 핵심 구성 요소
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+kt: 6265
+thumbnail: KT-6265.jpg
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '2034'
-ht-degree: 1%
+source-wordcount: '2028'
+ht-degree: 0%
 
 ---
 
 
-# AEM 구성 요소 {#customize-data-layer}로 Adobe 클라이언트 데이터 레이어 사용자 지정
+# AEM 구성 요소를 사용하여 Adobe 클라이언트 데이터 레이어 사용자 지정 {#customize-data-layer}
 
 사용자 지정 AEM 구성 요소의 컨텐츠로 Adobe 클라이언트 데이터 레이어를 사용자 지정하는 방법을 알아봅니다. [AEM 코어 구성 요소에서 제공하는 API를 사용하여](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/extending.html)을(를) 확장하고 데이터 레이어를 사용자 지정하는 방법을 알아봅니다.
 
@@ -40,11 +36,11 @@ ht-degree: 1%
 
 이 자습서를 완료하려면 **로컬 개발 환경**&#x200B;이 필요합니다. 스크린샷 및 비디오는 macOS에서 실행되는 Cloud Service SDK로 AEM을 사용하여 캡처됩니다. 별도의 설명이 없는 한 명령과 코드는 로컬 운영 체제와 독립적입니다.
 
-**AEM as a Cloud Service을 처음 사용하십니까?** AEM as a  [Cloud Service SDK로 사용하여 로컬 개발 환경을 설정하려면 다음 안내서를 확인하십시오](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
+**AEM as a Cloud Service을 처음 사용하십니까?** AEM as a  [Cloud Service SDK로 사용하여 로컬 개발 환경을 설정하려면 다음 안내서를 확인하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
 
-**AEM 6.5를 처음 사용하십니까?** 로컬 개발 환경을  [설정하려면 다음 안내서를 확인하십시오](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html).
+**AEM 6.5를 처음 사용하십니까?** 로컬 개발 환경을  [설정하려면 다음 안내서를 확인하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html).
 
-## WKND 참조 사이트 {#set-up-wknd-site} 를 다운로드하여 배포합니다.
+## WKND 참조 사이트 다운로드 및 배포 {#set-up-wknd-site}
 
 이 자습서는 WKND 참조 사이트에서 부산물 구성 요소를 확장합니다. 로컬 환경에 WKND 코드 베이스를 복제하고 설치합니다.
 
@@ -68,7 +64,7 @@ ht-degree: 1%
    >
    > `mvn clean install -PautoInstallSinglePackage -Pclassic`
 
-1. 새 브라우저 창을 열고 AEM에 로그인합니다. 다음과 같은 **Magazine** 페이지를 엽니다.[http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html)
+1. 새 브라우저 창을 열고 AEM에 로그인합니다. 다음과 같은 **Magazine** 페이지를 엽니다. [http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html)
 
    ![페이지의 개별 구성 요소](assets/adobe-client-data-layer/byline-component-onpage.png)
 
@@ -85,7 +81,7 @@ ht-degree: 1%
 
    필자 구성 요소가 데이터 계층에 나열되지 않음을 확인합니다.
 
-## 라인 Sling 모델 {#sling-model} 업데이트
+## 라인 Sling 모델 업데이트 {#sling-model}
 
 데이터 계층에 구성 요소에 대한 데이터를 주입하려면 먼저 구성 요소의 Sling 모델을 업데이트해야 합니다. 다음으로, Byline의 Java 인터페이스와 Sling 모델 구현을 업데이트하여 새 메서드 `getData()`을 추가합니다. 이 메서드에는 데이터 계층에 삽입할 속성이 포함됩니다.
 
@@ -205,7 +201,7 @@ ht-degree: 1%
    $ mvn clean install -PautoInstallPackage
    ```
 
-1. 브라우저로 돌아가서 개별 구성 요소로 페이지를 다시 엽니다.[http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html)
+1. 브라우저로 돌아가서 개별 구성 요소로 페이지를 다시 엽니다. [http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html)
 
 1. 개발자 도구를 열고 페이지의 HTML 소스에서 Byline 구성 요소를 검사합니다.
 
@@ -238,7 +234,7 @@ ht-degree: 1%
 
 ## 클릭 이벤트 추가 {#click-event}
 
-Adobe 클라이언트 데이터 계층은 이벤트 기반이며 작업을 트리거하는 가장 일반적인 이벤트 중 하나는 `cmp:click` 이벤트입니다. AEM 코어 구성 요소를 사용하면 데이터 요소의 도움을 받아 구성 요소를 쉽게 등록할 수 있습니다.`data-cmp-clickable`
+Adobe 클라이언트 데이터 계층은 이벤트 기반이며 작업을 트리거하는 가장 일반적인 이벤트 중 하나는 `cmp:click` 이벤트입니다. AEM 코어 구성 요소를 사용하면 데이터 요소의 도움을 받아 구성 요소를 쉽게 등록할 수 있습니다. `data-cmp-clickable`
 
 클릭 가능한 요소는 일반적으로 CTA 단추 또는 탐색 링크입니다. 안타깝게도 Byline 구성 요소에는 이러한 구성 요소가 없지만 다른 사용자 지정 구성 요소에 공통인 경우 등록하게 됩니다.
 
@@ -261,7 +257,7 @@ Adobe 클라이언트 데이터 계층은 이벤트 기반이며 작업을 트�
    $ mvn clean install -PautoInstallPackage
    ```
 
-1. 브라우저로 돌아가서 라인 구성 요소가 추가된 상태로 페이지를 다시 엽니다.[http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html)
+1. 브라우저로 돌아가서 라인 구성 요소가 추가된 상태로 페이지를 다시 엽니다. [http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html)
 
    이벤트를 테스트하기 위해 개발자 콘솔을 사용하여 일부 JavaScript를 수동으로 추가합니다. 이 작업을 수행하는 방법에 대한 비디오에 대해서는 [AEM 핵심 구성 요소에 Adobe 클라이언트 데이터 레이어 사용](data-layer-overview.md)을 참조하십시오.
 
@@ -301,7 +297,7 @@ Adobe 클라이언트 데이터 계층은 이벤트 기반이며 작업을 트�
 
    `cmp:click` 이벤트는 에 연결하는 가장 쉬운 이벤트입니다. 더 복잡한 구성 요소와 다른 동작을 추적하려면 사용자 지정 Javascript를 추가하여 새 이벤트를 추가하고 등록할 수 있습니다. 가장 좋은 예는 회전 메뉴 구성 요소입니다. 이 구성 요소는 슬라이드가 전환될 때마다 `cmp:show` 이벤트를 트리거합니다. 자세한 내용은 [소스 코드를 참조하십시오](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/carousel/v1/carousel/clientlibs/site/js/carousel.js#L219).
 
-## DataLayerBuilder 유틸리티 {#data-layer-builder} 사용
+## DataLayerBuilder 유틸리티 사용 {#data-layer-builder}
 
 Sling 모델이 장의 앞부분에서 [업데이트됨](#sling-model)인 경우 `HashMap`를 사용하여 JSON 문자열을 만들고 각 속성을 수동으로 설정하도록 선택했습니다. 이 방법은 작은 일회성 구성 요소에 대해서는 잘 작동하지만 AEM 코어 구성 요소를 확장하는 구성 요소에 대해서는 많은 추가 코드가 발생할 수 있습니다.
 
@@ -385,7 +381,7 @@ Sling 모델이 장의 앞부분에서 [업데이트됨](#sling-model)인 경우
    $ mvn clean install -PautoInstallPackage
    ```
 
-1. 브라우저로 돌아가서 라인 구성 요소가 추가된 상태로 페이지를 다시 엽니다.[http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html)
+1. 브라우저로 돌아가서 라인 구성 요소가 추가된 상태로 페이지를 다시 엽니다. [http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html)
 1. 브라우저의 개발자 도구를 열고 **콘솔**&#x200B;에 다음 명령을 입력합니다.
 
    ```js
@@ -437,4 +433,4 @@ AEM 구성 요소를 사용하여 Adobe 클라이언트 데이터 레이어를 �
 
 * [Adobe 클라이언트 데이터 레이어 설명서](https://github.com/adobe/adobe-client-data-layer/wiki)
 * [핵심 구성 요소와 데이터 레이어 통합](https://github.com/adobe/aem-core-wcm-components/blob/master/DATA_LAYER_INTEGRATION.md)
-* [Adobe 클라이언트 데이터 레이어 및 핵심 구성 요소 설명서 사용](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/developing/data-layer/overview.html)
+* [Adobe 클라이언트 데이터 레이어 및 핵심 구성 요소 설명서 사용](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)
