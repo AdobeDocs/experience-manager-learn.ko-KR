@@ -1,20 +1,16 @@
 ---
 title: 클릭한 구성 요소를 Adobe Analytics에서 추적
 description: 이벤트 기반 Adobe 클라이언트 데이터 레이어를 사용하여 Adobe Experience Manager 사이트에서 특정 구성 요소의 클릭을 추적합니다. Experience Platform Launch에서 규칙을 사용하여 이러한 이벤트를 수신하고 추적 링크 비콘이 있는 Adobe Analytics으로 데이터를 전송하는 방법을 알아봅니다.
-feature: 분석
-topics: integrations
-audience: administrator
-doc-type: tutorial
-activity: setup
 version: cloud-service
-kt: 6296
-thumbnail: KT-6296.jpg
 topic: 통합
+feature: Adobe 클라이언트 데이터 레이어
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+kt: 6296
+thumbnail: KT-6296.jpg
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1833'
+source-wordcount: '1814'
 ht-degree: 1%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 1%
 
 # 클릭한 구성 요소를 Adobe Analytics에서 추적
 
-이벤트 기반 [AEM 핵심 구성 요소와 함께 클라이언트 데이터 레이어 Adobe](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/developing/data-layer/overview.html)를 사용하여 Adobe Experience Manager 사이트에서 특정 구성 요소의 클릭을 추적합니다. Experience Platform Launch의 규칙을 사용하여 클릭 이벤트를 수신하고, 구성 요소별로 필터링하고, 추적 링크 비콘이 있는 Adobe Analytics으로 데이터를 전송하는 방법을 알아봅니다.
+이벤트 기반 [AEM 핵심 구성 요소와 함께 클라이언트 데이터 레이어 Adobe](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)를 사용하여 Adobe Experience Manager 사이트에서 특정 구성 요소의 클릭을 추적합니다. Experience Platform Launch의 규칙을 사용하여 클릭 이벤트를 수신하고, 구성 요소별로 필터링하고, 추적 링크 비콘이 있는 Adobe Analytics으로 데이터를 전송하는 방법을 알아봅니다.
 
 ## 빌드할 내용
 
@@ -40,13 +36,13 @@ WKND 마케팅 팀은 홈 페이지에서 가장 잘 수행하는 CTA(Call to Ac
 
 이 자습서는 [Adobe Analytics](./collect-data-analytics.md)로 페이지 데이터를 수집하는 일련의 작업으로서, 다음과 같은 내용이 있다고 가정합니다.
 
-* [Adobe Analytics 확장](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html)이 활성화된 **Launch 속성**
-* **Adobe** Analytics 테스트/개발 보고서 세트 ID 및 추적 서버. [새 보고서 세트 만들기](https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html)에 대한 다음 설명서를 참조하십시오.
-* [Experience Platform ](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/web-sdk/introduction-to-the-experience-platform-debugger.html) Debugger 브라우저 확장 프로그램은 Adobe 데이터 레이어가 활성화된 AEM  [사이트](https://wknd.site/us/en.html) 에서 Launch 속성을 로드하여 구성됩니다. https://wknd.site/us/en
+* [Adobe Analytics 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html)이 활성화된 **Launch 속성**
+* **Adobe** Analytics 테스트/개발 보고서 세트 ID 및 추적 서버. [새 보고서 세트 만들기](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html)에 대한 다음 설명서를 참조하십시오.
+* [Experience Platform ](https://experienceleague.adobe.com/docs/debugger-learn/tutorials/experience-platform-debugger/introduction-to-the-experience-platform-debugger.html) Debugger 브라우저 확장 프로그램은 Adobe 데이터 레이어가 활성화된 AEM  [사이트](https://wknd.site/us/en.html) 에서 Launch 속성을 로드하여 구성됩니다. https://wknd.site/us/en
 
 ## Inspect 단추 및 티저 스키마
 
-Launch에서 규칙을 만들기 전에 Button 및 Teaser](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html#item)에 대한 [스키마를 검토하고 데이터 레이어 구현에서 검사하는 것이 유용합니다.
+Launch에서 규칙을 만들기 전에 Button 및 Teaser](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#item)에 대한 [스키마를 검토하고 데이터 레이어 구현에서 검사하는 것이 유용합니다.
 
 1. [https://wknd.site/us/en.html](https://wknd.site/us/en.html)로 이동합니다.
 1. 브라우저의 개발자 도구를 열고 **콘솔**&#x200B;로 이동합니다. 다음 명령을 실행합니다.
@@ -82,7 +78,7 @@ Launch에서 규칙을 만들기 전에 Button 및 Teaser](https://docs.adobe.co
        xdm:linkURL: "/content/wknd/us/en/magazine/san-diego-surf.html"
    ```
 
-   이는 [구성 요소/컨테이너 항목 스키마](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html#item)를 기반으로 합니다. Launch에서 만드는 규칙은 이 스키마를 사용합니다.
+   이는 [구성 요소/컨테이너 항목 스키마](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#item)를 기반으로 합니다. Launch에서 만드는 규칙은 이 스키마를 사용합니다.
 
 ## 클릭한 CTA 규칙 만들기
 
@@ -129,7 +125,7 @@ Adobe 클라이언트 데이터 계층은 **이벤트** 기반 데이터 레이�
 
    위의 코드 조각은 [함수](https://github.com/adobe/adobe-client-data-layer/wiki#pushing-a-function)를 데이터 레이어에 푸시하여 이벤트 리스너를 추가합니다. `cmp:click` 이벤트가 트리거되면 `componentClickedHandler` 함수가 호출됩니다. 이 함수에서 몇 가지 상태 검사가 추가되고 이벤트를 트리거한 구성 요소에 대한 데이터 레이어](https://github.com/adobe/adobe-client-data-layer/wiki#getstate)의 최신 [상태로 새 `event` 개체가 작성됩니다.
 
-   그 후 `trigger(event)`이 호출됩니다. `trigger()` 는 Launch에서 예약된 이름이며, Launch 규칙에 &quot;트리거&quot;됩니다. `event` 개체를 매개 변수로 전달합니다. 그러면 `event` Launch에서 다른 예약된 이름으로 표시됩니다. 이제 Launch의 데이터 요소는 다음과 같은 다양한 속성을 참조할 수 있습니다.`event.component['someKey']`
+   그 후 `trigger(event)`이 호출됩니다. `trigger()` 는 Launch에서 예약된 이름이며, Launch 규칙에 &quot;트리거&quot;됩니다. `event` 개체를 매개 변수로 전달합니다. 그러면 `event` Launch에서 다른 예약된 이름으로 표시됩니다. 이제 Launch의 데이터 요소는 다음과 같은 다양한 속성을 참조할 수 있습니다. `event.component['someKey']`
 
 1. 변경 사항을 저장합니다.
 1. **작업** 아래의 **추가**&#x200B;를 클릭하여 **작업 구성** 마법사를 엽니다.
@@ -148,11 +144,11 @@ Adobe 클라이언트 데이터 계층은 **이벤트** 기반 데이터 레이�
 
    `event` 개체가 사용자 지정 이벤트에서 호출된 `trigger()` 메서드에서 전달됩니다. `component` 클릭을 트리거한 데이터 레이어에서 파생된 구성 요소 `getState` 의 현재 상태입니다.
 
-1. 변경 사항을 저장하고 Launch에서 [build](https://docs.adobe.com/content/help/en/launch/using/reference/publish/builds.html)를 실행하여 코드를 AEM 사이트에서 사용되는 [환경](https://docs.adobe.com/content/help/en/launch/using/reference/publish/environments.html)으로 승격합니다.
+1. 변경 사항을 저장하고 Launch에서 [build](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html)를 실행하여 코드를 AEM 사이트에서 사용되는 [환경](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments.html)으로 승격합니다.
 
    >[!NOTE]
    >
-   > [Adobe Experience Platform Debugger](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/web-sdk/introduction-to-the-experience-platform-debugger.html)를 사용하여 포함 코드를 **개발** 환경으로 전환하는 것이 매우 유용할 수 있습니다.
+   > [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/debugger-learn/tutorials/experience-platform-debugger/introduction-to-the-experience-platform-debugger.html)를 사용하여 포함 코드를 **개발** 환경으로 전환하는 것이 매우 유용할 수 있습니다.
 
 1. [WKND 사이트](https://wknd.site/us/en.html)로 이동하고 개발자 도구를 열어 콘솔을 봅니다. **로그 보존**&#x200B;을 선택합니다.
 
@@ -266,7 +262,7 @@ Adobe 클라이언트 데이터 계층은 **이벤트** 기반 데이터 레이�
 
 1. **확장** 유형을 **Adobe Analytics**&#x200B;로 설정하고 **작업 유형**&#x200B;비콘 보내기&#x200B;**로 설정합니다.**
 1. **추적**&#x200B;에서 라디오 단추를 **`s.tl()`**&#x200B;로 설정합니다.
-1. **링크 유형**&#x200B;에 대해 **사용자 지정 링크**&#x200B;를 선택하고 **링크 이름**&#x200B;에 대해 값을 다음으로 설정하십시오.**`%Component Title%: CTA Clicked`**:
+1. **링크 유형**&#x200B;에 대해 **사용자 지정 링크**&#x200B;를 선택하고 **링크 이름**&#x200B;에 대해 값을 다음으로 설정하십시오. **`%Component Title%: CTA Clicked`**:
 
    ![링크 비콘 보내기 구성](assets/track-clicked-component/analytics-send-beacon-link-track.png)
 
