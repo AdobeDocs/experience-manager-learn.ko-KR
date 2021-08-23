@@ -2,11 +2,11 @@
 user-guide-title: AEM Sites 비디오 및 튜토리얼
 user-guide-description: Adobe Experience Manager Sites에 대한 비디오 및 튜토리얼 모음입니다.
 breadcrumb-title: AEM Sites 튜토리얼
-sub-product: 사이트
-source-git-commit: 65a40826d3be322673e116d98124c3cbfb1d6eb4
+feature-set: Experience Manager, Experience Manager Sites
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '605'
-ht-degree: 16%
+source-wordcount: '439'
+ht-degree: 21%
 
 ---
 
@@ -45,13 +45,13 @@ ht-degree: 16%
    + [경험 조각 사용](experience-fragments/experience-fragments-feature-video-use.md)
    + [빌딩 블록](experience-fragments/building-blocks.md)
    + [경험 조각을 사용하여 소셜 게시 설정](experience-fragments/experience-fragments-social-technical-video-setup.md)
-   + [컨텐츠 조각과 경험 조각 비교](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html)
+   + [컨텐츠 조각과 경험 조각 비교](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html)
 + 개발 {#developing}
    + [AEM 프로젝트 전형](developing/aem-project-archetype.md)
-   + [AEM Sites 시작하기](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
-   + [AEM 헤드리스 시작하기](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-with-aem-headless/overview.html)
-   + [AEM SPA Editor 및 React 시작하기](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
-   + [AEM SPA 편집기 및 Angular 시작하기](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
+   + [AEM Sites 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+   + [AEM 헤드리스 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+   + [AEM SPA Editor 및 React 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
+   + [AEM SPA 편집기 및 Angular 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html)
    + [페이지 속성 확장](developing/page-properties-technical-video-develop.md)
    + [스타일 시스템을 사용한 개발](developing/style-system-technical-video-understand.md)
    + [스타일 시스템 우수 사례](developing/style-organization-style-system-understand-article.md)
@@ -67,8 +67,8 @@ ht-degree: 16%
 + SPA(Single Page Applications){#spa-editor}
    + [SPA 편집기 사용](spa-editor/spa-editor-framework-feature-video-use.md)
    + [Hello World 자습서](spa-editor/spa-editor-helloworld-tutorial-use.md)
-   + [AEM SPA Editor 및 React 시작하기](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
-   + [AEM SPA 편집기 및 Angular 시작하기](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
+   + [AEM SPA Editor 및 React 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
+   + [AEM SPA 편집기 및 Angular 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html)
 + 다중 사이트 관리 {#multi-site-management}
    + [언어 사본 소개](./multi-site-management/language-copy-overview.md)
    + [Live Copy 및 블루프린트](./multi-site-management/live-copy-and-blueprint.md)
@@ -112,24 +112,3 @@ ht-degree: 16%
       + [경험 조각 오퍼를 사용하여 Target 활동 생성](integrations/adobe-target/create-target-activity.md)
       + [Visual Experience Composer를 사용한 개인화](integrations/adobe-target/personalization-using-vec.md)
       + [전체 웹 페이지 경험의 개인화](integrations/adobe-target/personalization-web-page.md)
-
-+ Dynamic Media Tutorials {#dynamic-media}
-   + [DMc 앱을 사용한 보안 미리 보기를 위해 Dynamic Media에서 테스트 이미지 서버(클라이언트 IP 필터) 세부 정보 추가](dynamic-media/adding-test-image-server-details-in-dynamic-media-for-secure-preview.md)
-   + [AEM Dynamic Media을 사용하여 다양한 종류의 세트 만들기 | 회전 메뉴 세트](dynamic-media/creating-different-kinds-of-sets-with-aem-dynamic-media-carousel-sets.md)
-   + [AEM Dynamic Media으로 다른 종류의 세트 만들기| 이미지 세트](dynamic-media/creating-different-kinds-of-sets-with-aem-dynamic-media-image-sets.md)
-   + [이미지 사전 설정 만들기](dynamic-media/creating-image-presets.md)
-   + [Dynamic Media에서 이미지 프로필(스마트 자르기) 만들기](dynamic-media/creating-image-profile-smart-crop.md)
-   + [Dynamic Media에서 비디오를 처리하는 비디오 프로필 만들기](dynamic-media/creating-video-profile-to-process-videos-in-dynamic-media.md)
-   + [Dynamic Media 구성 삭제](dynamic-media/deleting-dynamic-media-configuration.md)
-   + [Dynamic Media Classic 앱에서 자산을 다운로드하는 방법](dynamic-media/how-to-download-asset-in-dynamic-media-classic-app.md)
-   + [자산에 대한 공개 URL 또는 포함 코드를 생성하는 방법](dynamic-media/how-to-generate-public-url-or-embed-code-for-an-asset.md)
-   + [Dynamic Media이 활성화된 자산에서 DAM 자산 업데이트 워크플로우를 실행하는 방법입니다.](dynamic-media/how-to-run-dam-update-asset-workflow-on-an-asset-with-dynamic-media-enabled.md)
-   + [제출 작업 작업 매개 변수 동안 Dynamic Media에서 내보내기 작업을 트리거하는 방법](dynamic-media/how-to-trigger-export-job-in-dynamic-media-during-submit-job-operation-parameter.md)
-   + [Dynamic Media Classic IPS API 소개](dynamic-media/introduction-to-dynamic-media-classic-ips-api.md)
-   + [Dynamic Media을 통해 CDN 캐시 무효화](dynamic-media/invalidating-the-cdn-cache-by-way-of-dynamic-media.md)
-   + [사이트 페이지에서 DM 구성 요소 사용](dynamic-media/using-dm-components-on-site-page.md)
-
-+ Brand Portal Tutorials {#brand-portal}
-   + [Brand Portal로 자산 소싱 구성](brand-portal/configuring-asset-sourcing-with-the-brand-portal.md)
-   + [표현물 다운로드를 활성화하는 방법](brand-portal/how-to-enable-the-download-of-renditions.md)
-   + [AEM Assets Brand Portal 구성 단계](brand-portal/steps-to-configure-aem-assets-brand-portal.md)
