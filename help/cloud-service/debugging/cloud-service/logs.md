@@ -12,9 +12,9 @@ thumbnail: kt-5432.jpg
 topic: 개발
 role: Developer
 level: Beginner
-source-git-commit: e2473a1584ccf315fffe5b93cb6afaed506fdbce
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1010'
+source-wordcount: '1002'
 ht-degree: 2%
 
 ---
@@ -185,9 +185,9 @@ Cloud Service 환경으로서 AEM당 로그 수준에 대한 Adobe의 일반적�
 
 ### Java 로그 수준을 설정할 환경별 변수
 
-각 환경에 대해 잘 알려진 정적 Java 로그 수준을 설정하는 대신, AEM을 Cloud Service의 [환경별 변수](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#environment-specific-configuration-values)로 사용하여 로그 수준을 매개 변수화함으로써 Cloud Manager 플러그인](#aio-cli)이 있는 [Adobe I/O CLI를 통해 값을 동적으로 변경할 수 있습니다.
+각 환경에 대해 잘 알려진 정적 Java 로그 수준을 설정하는 대신, AEM을 Cloud Service의 [환경별 변수](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#environment-specific-configuration-values)로 사용하여 로그 수준을 매개 변수화함으로써 Cloud Manager 플러그인](#aio-cli)이 있는 [Adobe I/O CLI를 통해 값을 동적으로 변경할 수 있습니다.
 
-따라서 환경별 변수 자리 표시자를 사용하려면 로깅 OSGi 구성을 업데이트해야 합니다. [로그 ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#default-values) 수준에 대한 기본값은  [Adobe 권장 사항에 따라 설정되어야 합니다](#log-levels). 예:
+따라서 환경별 변수 자리 표시자를 사용하려면 로깅 OSGi 구성을 업데이트해야 합니다. [로그 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#default-values) 수준에 대한 기본값은  [Adobe 권장 사항에 따라 설정되어야 합니다](#log-levels). 예:
 
 `/apps/example/config/org.apache.sling.commons.log.LogManager.factory.config-example.cfg.json`
 
@@ -200,8 +200,8 @@ Cloud Service 환경으로서 AEM당 로그 수준에 대한 Adobe의 일반적�
 
 이 접근 방식은 다음과 같은 사항을 고려해야 합니다.
 
-+ [제한된 수의 환경 변수가 허용됩니다](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#number-of-variables). 로그 수준을 관리하기 위해 변수를 만들면 이 변수가 사용됩니다.
-+ 환경 변수는 [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) 또는 [Cloud Manager HTTP API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#cloud-manager-api-format-for-setting-properties)를 통해서만 프로그래밍 방식으로 관리할 수 있습니다.
++ [제한된 수의 환경 변수가 허용됩니다](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#number-of-variables). 로그 수준을 관리하기 위해 변수를 만들면 이 변수가 사용됩니다.
++ 환경 변수는 [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) 또는 [Cloud Manager HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#cloud-manager-api-format-for-setting-properties)를 통해서만 프로그래밍 방식으로 관리할 수 있습니다.
 + 환경 변수에 대한 변경 사항은 지원되는 도구에 의해 수동으로 재설정되어야 합니다. 프로덕션과 같은 높은 트래픽 환경을 더 적은 세부 로그 수준으로 재설정하지 않도록 하면 로그가 붓고 AEM 성능에 영향을 줄 수 있습니다.
 
 _Apache 웹 서버 또는 Dispatcher 로그 구성에서는 OSGi 구성을 통해 구성되지 않으므로 환경별 변수가 작동하지 않습니다._
