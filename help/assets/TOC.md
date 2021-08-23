@@ -2,12 +2,12 @@
 user-guide-title: AEM Assets 비디오 및 튜토리얼
 user-guide-description: Adobe Experience Manager Assets에 대한 비디오 및 튜토리얼 모음입니다.
 breadcrumb-title: AEM Assets 튜토리얼
-sub-product: assets
+feature-set: Experience Manager, Experience Manager Assets, Experience Manager Sites
 team: TM
-source-git-commit: 0cfa83bdbd534f0fa06b3fa0013971feb188224e
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 31%
+source-wordcount: '343'
+ht-degree: 26%
 
 ---
 
@@ -63,12 +63,18 @@ ht-degree: 31%
 + 공유 및 배포{#sharing}
    + [자산 다운로드](./sharing/download.md)
    + [자산 게시](./sharing/publish.md)
-   + [Brand Portal](./sharing/brand-portal.md)
+
+   + Brand Portal{#brand-portal}
+      + [Brand Portal](./sharing/brand-portal.md)
+      + [AEM Brand Portal 구성](brand-portal/configure.md)
+      + [자산 소싱 구성](brand-portal/configure-asset-sourcing.md)
+      + [표현물 다운로드 활성화](brand-portal/enable-renditions-download.md)
    + 자산 공유{#assets-share}
       + [Asset Share Commons](./sharing/asset-share-commons-user-experience-feature-video-understand.md)
       + [로컬 AEM에서 Asset Share Commons 설정](./sharing/asset-share-commons-technical-video-setup.md)
       + [Asset Share Commons 테마](./sharing/asset-share-commons-feature-video-theming.md)
    + [연결된 자산](./sharing/connected-assets.md)
+
 
 + Creative Workflows와 통합{#creative-workflows}
    + [AEM Desktop App](./creative-workflows/aem-desktop-app.md)
@@ -107,6 +113,22 @@ ht-degree: 31%
    + [Dynamic Media 3D](dynamic-media/dynamic-media-3d-feature-video.md)
    + [Dynamic Media 스마트 자르기 비디오](dynamic-media/dynamic-media-smart-crop-video.md)
    + [Dynamic Media 핵심 구성 요소](dynamic-media/dynamic-media-core-components.md)
+
+   + 튜토리얼 {#tutorials}
+      + [회전판 세트 만들기](dynamic-media/tutorials/creating-different-kinds-of-sets-with-aem-dynamic-media-carousel-sets.md)
+      + [이미지 세트 만들기](dynamic-media/tutorials/creating-different-kinds-of-sets-with-aem-dynamic-media-image-sets.md)
+      + [이미지 사전 설정 만들기](dynamic-media/tutorials/creating-image-presets.md)
+      + [스마트 자르기 이미지 프로필 만들기](dynamic-media/tutorials/creating-image-profile-smart-crop.md)
+      + [비디오 프로필 만들기](dynamic-media/tutorials/creating-video-profile-to-process-videos-in-dynamic-media.md)
+      + [자산 처리](dynamic-media/tutorials/how-to-run-dam-update-asset-workflow-on-an-asset-with-dynamic-media-enabled.md)
+      + [보안 미리 보기 서버 구성](dynamic-media/tutorials/adding-test-image-server-details-in-dynamic-media-for-secure-preview.md)
+      + [URL 및 포함 코드 생성](dynamic-media/tutorials/how-to-generate-public-url-or-embed-code-for-an-asset.md)
+      + [내보내기 작업 트리거](dynamic-media/tutorials/how-to-trigger-export-job-in-dynamic-media-during-submit-job-operation-parameter.md)
+      + [CDN 캐시 무효화](dynamic-media/tutorials/invalidating-the-cdn-cache-by-way-of-dynamic-media.md)
+      + [Dynamic Media 핵심 구성 요소 사용](dynamic-media/tutorials/using-dm-components-on-site-page.md)
+      + [Dynamic Media 구성 삭제](dynamic-media/tutorials/deleting-dynamic-media-configuration.md)
+      + [Dynamic Media Classic 앱에서 자산 다운로드](dynamic-media/tutorials/how-to-download-asset-in-dynamic-media-classic-app.md)
+      + [Dynamic Media Classic IPS API](dynamic-media/tutorials/introduction-to-dynamic-media-classic-ips-api.md)
 
 + 번역 {#translation}
    + [소스 파일 변환](translation/source-file-translation-feature-video-use.md)
