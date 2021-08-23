@@ -12,9 +12,9 @@ thumbnail: kt-5424.jpg
 topic: 개발
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '2540'
+source-wordcount: '2529'
 ht-degree: 0%
 
 ---
@@ -47,8 +47,8 @@ Adobe Cloud Manager를 사용하면 AEM as a Cloud Service에 대한 코드 작�
 
 ### 파이프라인과 연결된 Git 분기를 찾을 수 없습니다
 
-+ __오류 메시지:__ 잘못된 파이프라인:XXXXXX. Reason=Branch=xxxx가 저장소에 없습니다.
-   ![잘못된 파이프라인:XXXXXX. Reason=Branch=xxxx 리포지토리에 없습니다.](./assets/build-and-deployment/validation__branch-not-found.png)
++ __오류 메시지:__ 잘못된 파이프라인: XXXXXX. Reason=Branch=xxxx가 저장소에 없습니다.
+   ![잘못된 파이프라인: XXXXXX. Reason=Branch=xxxx 리포지토리에 없습니다.](./assets/build-and-deployment/validation__branch-not-found.png)
 + __원인:__  파이프라인이 사용하도록 구성된 Git 분기가 삭제되었습니다.
 + __해결 방법:__ 정확히 동일한 이름을 사용하여 누락된 Git 분기를 다시 만들거나, 기존 다른 분기에서 빌드하도록 파이프라인을 다시 구성합니다.
 
@@ -72,11 +72,11 @@ Adobe Cloud Manager를 사용하면 AEM as a Cloud Service에 대한 코드 작�
 
 코드 스캔에서는 Java와 AEM 관련 우수 사례를 혼합하여 정적 코드 분석을 수행합니다.
 
-코드 스캔은 코드에 위험 보안 취약점이 있는 경우 빌드 오류를 발생합니다. 작은 위반은 재정의할 수 있지만, 이를 수정하는 것이 좋습니다. 코드 스캔은 불완전하고 [긍정 오류](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/understand-test-results.html#dealing-with-false-positives)가 발생할 수 있습니다.
+코드 스캔은 코드에 위험 보안 취약점이 있는 경우 빌드 오류를 발생합니다. 작은 위반은 재정의할 수 있지만, 이를 수정하는 것이 좋습니다. 코드 스캔은 불완전하고 [긍정 오류](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/overview-test-results.html#dealing-with-false-positives)가 발생할 수 있습니다.
 
 코드 스캔 문제를 해결하려면 **세부 정보 다운로드** 단추를 통해 Cloud Manager가 제공하는 CSV 형식 보고서를 다운로드하고 모든 항목을 검토하십시오.
 
-자세한 내용은 AEM 관련 규칙 을 참조하십시오. Cloud Manager 설명서&#39; [사용자 지정 AEM 관련 코드 스캔 규칙](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/how-to-use/custom-code-quality-rules.html) 을 참조하십시오.
+자세한 내용은 AEM 관련 규칙 을 참조하십시오. Cloud Manager 설명서&#39; [사용자 지정 AEM 관련 코드 스캔 규칙](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/custom-code-quality-rules.html) 을 참조하십시오.
 
 ## 이미지 작성
 
@@ -104,7 +104,7 @@ set the ‘mergeConfigurations’ flag to ‘true’ if you want to merge multip
 #### 원인 2
 
 + __원인:__  AEM 프로젝트가 동일한 코드 패키지를 두 번 잘못 포함하므로 해당 패키지에 포함된 모든 OSGi 구성이 중복됩니다.
-+ __해결 방법:__ 모든 프로젝트에 포함된 모든 pom.xml 패키지의 구성 `filevault-package-maven-plugin` [](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html#cloud-manager-target) 을  `<cloudManagerTarget>none</cloudManagerTarget>`로 설정했는지 확인합니다.
++ __해결 방법:__ 모든 프로젝트에 포함된 모든 pom.xml 패키지의 구성 `filevault-package-maven-plugin` [](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html#cloud-manager-target) 을  `<cloudManagerTarget>none</cloudManagerTarget>`로 설정했는지 확인합니다.
 
 ### 잘못된 형식의 포인터 스크립트
 
@@ -193,7 +193,7 @@ AEM as a Cloud Service은 모든 AEM 릴리스에 최신 핵심 구성 요소 �
 + __원인:__  사용자 지정 코드는 OSGi 번들 또는 구성 요소 수명 주기에 초기에 트리거된 큰 쿼리 또는 컨텐츠 순서와 같은 긴 작업을 호출하는 경우 AEM의 시작 시간이 크게 지연될 수 있습니다.
 + __해결 방법:__ Cloud  `aemerror` Manager에서 보듯이 실패의 시간(GMT에 로그 시간)에 AEM 작성자 및 게시 서비스에 대한 로그를 검토합니다.
    1. 사용자 지정 응용 프로그램에서 제공하는 Java 클래스에서 발생하는 모든 ERRORS에 대한 로그를 검토합니다. 문제가 발견되면 문제를 해결하고 고정 코드를 푸시한 다음 파이프라인을 다시 빌드합니다.
-   1. 사용자 지정 애플리케이션에서 확장/상호 작용하고 있는 AEM의 여러 측면을 통해 보고된 오류에 대해 로그를 검토하고 이를 조사합니다.이러한 오류는 Java 클래스에 직접적으로 귀속되지 않을 수 있습니다. 문제가 발견되면 문제를 해결하고 고정 코드를 푸시한 다음 파이프라인을 다시 빌드합니다.
+   1. 사용자 지정 애플리케이션에서 확장/상호 작용하고 있는 AEM의 여러 측면을 통해 보고된 오류에 대해 로그를 검토하고 이를 조사합니다. 이러한 오류는 Java 클래스에 직접적으로 귀속되지 않을 수 있습니다. 문제가 발견되면 문제를 해결하고 고정 코드를 푸시한 다음 파이프라인을 다시 빌드합니다.
 
 ### 컨텐츠 패키지에 /var 포함
 
@@ -232,8 +232,8 @@ AEM as a Cloud Service은 모든 AEM 릴리스에 최신 핵심 구성 요소 �
 + __원인:__ AEM 게시 서비스에 컨텐츠 패키지를 배포하는 데 사용되는 AEM 복제 서비스 사용자는 AEM 게시 `/var` 에서 쓰기를 할 수 없습니다. 따라서 AEM 게시 서비스에 컨텐츠 패키지를 배포하지 못합니다.
 + __해결 방법:__ 이 문제를 해결하는 다음과 같은 방법은 기본 설정 순서로 나열됩니다.
    1. `/var` 리소스가 필요하지 않으면 응용 프로그램의 일부로 배포되는 컨텐츠 패키지에서 `/var` 아래의 리소스를 제거할 수 있습니다.
-   2. `/var` 리소스가 필요한 경우 [repoinit](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#repoinit)를 사용하여 노드 구조를 정의합니다. 리디렉션 스크립트는 OSGi 실행 모드를 통해 AEM 작성자, AEM 게시 또는 둘 다에 타깃팅될 수 있습니다.
-   3. `/var` 리소스가 AEM 작성자에만 필요하며 [Repoinit](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#repoinit)를 사용하여 합리적으로 모델링할 수 없는 경우, AEM 작성자 런타임 모드 폴더(`<target>/apps/example-packages/content/install.author</target>`)의 [포함](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html#embeddeds)에 의해 AEM 작성자에만 설치된 개별 컨텐츠 패키지로 이동합니다.`all`
+   2. `/var` 리소스가 필요한 경우 [repoinit](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#repoinit)를 사용하여 노드 구조를 정의합니다. 리디렉션 스크립트는 OSGi 실행 모드를 통해 AEM 작성자, AEM 게시 또는 둘 다에 타깃팅될 수 있습니다.
+   3. `/var` 리소스가 AEM 작성자에만 필요하며 [Repoinit](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#repoinit)를 사용하여 합리적으로 모델링할 수 없는 경우, AEM 작성자 런타임 모드 폴더(`<target>/apps/example-packages/content/install.author</target>`)의 [포함](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html#embeddeds)에 의해 AEM 작성자에만 설치된 개별 컨텐츠 패키지로 이동합니다.`all`
    4. 이 [Adobe KB](https://helpx.adobe.com/in/experience-manager/kb/cm/cloudmanager-deploy-fails-due-to-sling-distribution-aem.html)에 설명된 대로 `sling-distribution-importer` 서비스 사용자에게 적절한 ACL을 제공합니다.
 
 ### Adobe 지원 사례 만들기
