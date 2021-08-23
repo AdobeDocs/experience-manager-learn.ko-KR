@@ -10,10 +10,10 @@ activity: use
 topic: 컨텐츠 관리
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '2734'
-ht-degree: 1%
+source-wordcount: '2714'
+ht-degree: 0%
 
 ---
 
@@ -34,12 +34,12 @@ Dynamic Media Classic 솔루션의 워크플로우는 다음 세 가지 주요 �
 
 워크플로우의 시작입니다. 이 단계에서는 사용 중인 워크플로우에 맞는 소스 컨텐츠를 수집하거나 만들어 Dynamic Media Classic에 업로드합니다. 이 시스템은 이미지, 비디오 및 글꼴에 대한 여러 파일 유형을 지원하지만 PDF, Adobe Illustrator 및 Adobe InDesign에 대해서도 지원합니다.
 
-[지원되는 파일 형식](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#supported-asset-file-formats)의 전체 목록을 참조하십시오.
+[지원되는 파일 형식](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#supported-asset-file-formats)의 전체 목록을 참조하십시오.
 
 다음과 같은 여러 가지 방법으로 소스 컨텐츠를 업로드할 수 있습니다.
 
-- 데스크탑 또는 로컬 네트워크에서 직접 액세스 [방법](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-sps-desktop-application) 알아보기.
-- Dynamic Media Classic FTP 서버에서 가져옵니다. [방법](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-via-ftp) 알아보기.
+- 데스크탑 또는 로컬 네트워크에서 직접 액세스 [방법](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-sps-desktop-application) 알아보기.
+- Dynamic Media Classic FTP 서버에서 가져옵니다. [방법](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-via-ftp) 알아보기.
 
 기본 모드는 바탕 화면에서 로컬 네트워크에서 파일을 검색하고 업로드를 시작하는 것입니다.
 
@@ -67,11 +67,11 @@ Dynamic Media Classic 솔루션의 워크플로우는 다음 세 가지 주요 �
 - **확장에 관계없이 동일한 기본 자산 이름으로 모든 폴더에 덮어씁니다**.
 이 옵션은 가장 포괄적인 대체 규칙입니다. 대체 이미지를 원본과 다른 폴더에 업로드하고, 다른 파일 확장자를 가진 파일을 업로드하고, 원래 파일을 바꿀 수 있습니다. 원본 파일이 다른 폴더에 있는 경우 대체 이미지는 업로드된 새 폴더에 있습니다.
 
-[이미지 덮어쓰기 옵션](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/setup/application-setup.html#using-the-overwrite-images-option)에 대해 자세히 알아보십시오.
+[이미지 덮어쓰기 옵션](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#using-the-overwrite-images-option)에 대해 자세히 알아보십시오.
 
 필요하지 않지만 위의 두 방법 중 하나를 사용하여 업로드하는 동안 해당 특정 업로드에 대한 작업 옵션 을 지정할 수 있습니다. 예를 들어, 반복 업로드를 예약하고 업로드 시 자르기 옵션을 설정하는 등 많은 작업이 가능합니다. 이는 일부 워크플로우에서 유용할 수 있으므로 귀사에 유용할 수 있는지 고려해 볼 가치가 있습니다.
 
-[작업 옵션](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-options)에 대해 자세히 알아보십시오.
+[작업 옵션](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-options)에 대해 자세히 알아보십시오.
 
 Dynamic Media Classic은 해당 시스템에 아직 없는 콘텐츠에서는 작동할 수 없으므로 워크플로우에서 업로드는 첫 번째 필수 단계입니다. 업로드 중에 백그라운드에서 시스템은 업로드된 모든 자산을 중앙 집중식 Dynamic Media Classic 데이터베이스에 등록하고 ID를 지정한 다음 저장소에 복사합니다. 또한, 영상 파일을 다이내믹 크기 조정 및 확대/축소를 가능하게 하는 포맷으로 변환하고, 영상 파일을 MP4 웹에 친숙한 형식으로 변환한다.
 
@@ -100,7 +100,7 @@ Dynamic Media Classic은 해당 시스템에 아직 없는 콘텐츠에서는 �
 
 **이미지 크기에 대한 최소 크기는 아니지만 큰 이미지를 업로드하는 것은 권장되지 않습니다.** 대형 이미지는 4000픽셀 이상으로 간주됩니다. 이 크기의 이미지를 업로드하는 것은 이미지에 있는 먼지나 머리카락 같은 잠재적인 결함을 보여줄 수 있습니다. 이러한 이미지는 Dynamic Media Classic 서버의 공간을 더 많이 차지하게 되므로 축소된 저장소 제한을 초과할 수 있습니다.
 
-[파일 업로드](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#uploading-your-files)에 대해 자세히 알아보십시오.
+[파일 업로드](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#uploading-your-files)에 대해 자세히 알아보십시오.
 
 ## 2단계: 작성자(및 게시)
 
@@ -142,14 +142,14 @@ Dynamic Media Classic URL을 통합하는 방법을 이해하면 프로그래밍
 
 일반적으로 오류가 발생하지 않고 이미지/자산의 이름이 이전에 게시된 버전과 동일하지만 이미지에 문제가 있습니다. 예를 들어 실수로 저해상도 버전을 업로드했거나 아트 디렉터가 이미지를 승인하지 않았습니다. 이 경우 원본 이미지를 회수하여 동일한 자산 ID를 사용하여 새 버전으로 바꾸려고 합니다.
 
-[업데이트해야 하는 URL에 대한 캐시를 수동으로 지우는 방법을 알아봅니다](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/invalidate-cdn-cached-content.html).
+[업데이트해야 하는 URL에 대한 캐시를 수동으로 지우는 방법을 알아봅니다](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/invalidate-cdn-cached-content.html).
 
 >[!TIP]
 >
 >캐싱 지연과 관련된 문제를 방지하려면 항상 저녁, 하루, 2주 등 미리 작업하십시오. 대중에게 공개되기 전에 작업을 입증할 내부 당사자에 대한 QA/수락에 대한 시간을 작성하십시오. 전날 저녁에 작업하더라도 변경 작업을 수행하고 그날 저녁에 다시 게시할 수 있습니다. 아침까지, 10시간이 경과했고 캐시는 올바른 이미지로 업데이트됩니다.
 
-- [게시 작업 만들기](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/publishing-files.html#creating-a-publish-job)에 대해 자세히 알아보십시오.
-- [게시](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/publishing-files.html)에 대해 자세히 알아보십시오.
+- [게시 작업 만들기](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/publishing-files.html#creating-a-publish-job)에 대해 자세히 알아보십시오.
+- [게시](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/publishing-files.html)에 대해 자세히 알아보십시오.
 
 ## 3단계: 배달
 
@@ -187,4 +187,4 @@ IT 팀이나 통합 파트너는 Dynamic Media Classic URL을 사이트에 통�
 
 **확대/축소** 옵션을 사용하여 포함된 다른 확대/축소 뷰어를 기반으로 하는 미리 만들어진 확대/축소 사전 설정 중 하나에서 이미지를 미리 볼 수도 있습니다.
 
-[자산 미리 보기](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/managing-assets/previewing-asset.html)에 대해 자세히 알아보십시오.
+[자산 미리 보기](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/managing-assets/previewing-asset.html)에 대해 자세히 알아보십시오.
