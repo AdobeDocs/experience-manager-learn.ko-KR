@@ -9,10 +9,10 @@ feature: AEM Project Archetype, 핵심 구성 요소, 페이지 편집기, 편�
 topic: 개발
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 9%
+source-wordcount: '362'
+ht-degree: 7%
 
 ---
 
@@ -31,9 +31,9 @@ Adobe Experience Manager as a Cloud Service을 처음 개발하시겠습니까? 
 
 이 자습서는 **AEM as a Cloud Service**&#x200B;에서 작동하도록 설계되었으며 **AEM 6.5+** 및 **AEM 6.4.2+**&#x200B;와 이전 버전과 호환됩니다.
 
-**[자습서는 여기에서 확인하십시오.](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)**
+**[자습서는 여기에서 확인하십시오.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)**
 
-## AEM에 Cloud Service{#deploying-wknd-to-aem-as-a-cloud-service}으로 WKND 배포
+## AEM에 Cloud Service으로 WKND 배포{#deploying-wknd-to-aem-as-a-cloud-service}
 
 WKND 자습서를 완료한 후 아래 비디오에서 WKND 프로젝트를 AEM as a Cloud Service으로 배포하는 방법에 대한 개요를 참조하십시오.
 
