@@ -7,9 +7,9 @@ feature: 경험 구성요소
 topic: 개인화
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1732'
+source-wordcount: '1728'
 ht-degree: 1%
 
 ---
@@ -50,16 +50,16 @@ WKND 사이트는 웹사이트를 통해 미국 전역에 **SkateFest Challenge*
 ![AEM Target 시나리오 1](assets/personalization-use-case-1/aem-target-use-case-1-4.png)
 
 1. 마케터는 AEM 컨텐츠 편집기와 함께 WKND SkateFest 캠페인 토론을 시작하고 요구 사항을 자세히 설명합니다.
-   * ***요구 사항***:WKND 사이트 홈 페이지에서 미국의 각 주 방문자를 위한 개인화된 콘텐츠를 사용하여 WKND SkateFest 캠페인을 홍보합니다. 배경 이미지, 텍스트 및 단추가 들어 있는 홈 페이지 회전 메뉴 아래에 새 콘텐츠 블록을 추가합니다.
-      * **배경 이미지**:이미지는 사용자가 WKND 사이트 페이지를 방문하는 상태와 관련이 있어야 합니다.
-      * **텍스트**:&quot;Audition 등록&quot;
-      * **단추**:WKND SkateFest 페이지를 가리키는 &quot;이벤트 세부 사항&quot;
-      * **WKND SkateFest 페이지**:오디션 장소, 날짜, 시간 등 이벤트 세부 사항이 포함된 새로운 페이지입니다.
+   * ***요구 사항***: WKND 사이트 홈 페이지에서 미국의 각 주 방문자를 위한 개인화된 콘텐츠를 사용하여 WKND SkateFest 캠페인을 홍보합니다. 배경 이미지, 텍스트 및 단추가 들어 있는 홈 페이지 회전 메뉴 아래에 새 콘텐츠 블록을 추가합니다.
+      * **배경 이미지**: 이미지는 사용자가 WKND 사이트 페이지를 방문하는 상태와 관련이 있어야 합니다.
+      * **텍스트**: &quot;Audition 등록&quot;
+      * **단추**: WKND SkateFest 페이지를 가리키는 &quot;이벤트 세부 사항&quot;
+      * **WKND SkateFest 페이지**: 오디션 장소, 날짜, 시간 등 이벤트 세부 사항이 포함된 새로운 페이지입니다.
 1. 요구 사항을 기반으로 AEM 컨텐츠 편집기는 컨텐츠 블록에 대한 경험 조각을 만들어 Adobe Target에 오퍼로 내보냅니다. 미국의 모든 상태에 대해 개인화된 컨텐츠를 제공하기 위해 컨텐츠 작성자는 하나의 경험 조각 마스터 변형을 만든 다음 각 상태에 대해 하나씩 50개의 다른 변형을 만들 수 있습니다. 관련 이미지 및 텍스트가 있는 각 상태 변형에 대한 컨텐츠를 수동으로 편집할 수 있습니다. 경험 조각을 작성할 때 컨텐츠 편집기에서 자산 파인더 옵션을 사용하여 AEM Assets 내에서 사용할 수 있는 모든 자산에 빠르게 액세스할 수 있습니다. 경험 조각을 Adobe Target으로 내보내면 모든 변형이 오퍼로 Adobe Target에 푸시됩니다.
 
 1. AEM에서 Adobe Target으로 경험 조각을 오퍼로 내보내고 나면 마케터는 이러한 오퍼를 사용하여 Target에서 활동을 만들 수 있습니다. WKND 사이트 SkateFest 캠페인을 기반으로 마케터는 각 주의 WKND 사이트 방문자에게 개인화된 경험을 만들어 제공해야 합니다. 경험 타깃팅 활동을 만들려면 마케터가 대상자를 식별해야 합니다. WKND SkateFest 캠페인을 위해 WKND 웹 사이트를 방문하는 위치에 따라 50개의 별도 대상을 만들어야 합니다.
-   * [](https://docs.adobe.com/content/help/en/target/using/introduction/target-key-concepts.html#section_3F32DA46BDF947878DD79DBB97040D01) 대상은 활동에 대한 타겟을 정의하며 타깃팅을 사용할 수 있는 모든 위치에서 사용됩니다. Target 대상은 정의된 방문자 기준 세트입니다. 오퍼를 특정 대상(또는 세그먼트)에 타깃팅할 수 있습니다. 해당 대상에 속하는 방문자만 타깃팅된 경험을 보게 됩니다.  예를 들어 특정 브라우저를 사용하거나 특정 지리적 위치에서 오퍼를 사용하는 방문자로 구성된 대상에게 제공할 수 있습니다.
-   * [오퍼](https://docs.adobe.com/content/help/en/target/using/introduction/target-key-concepts.html#section_973D4CC4CEB44711BBB9A21BF74B89E9)는 캠페인이나 활동 중에 웹 페이지에 표시되는 콘텐츠입니다. 웹 페이지를 테스트할 때 해당 위치에서 다른 오퍼가 있는 각 경험의 성공을 측정합니다. 오퍼에는 다음을 포함한 다양한 유형의 컨텐츠가 포함될 수 있습니다.
+   * [](https://experienceleague.adobe.com/docs/target/using/introduction/target-key-concepts.html#section_3F32DA46BDF947878DD79DBB97040D01) 대상은 활동에 대한 타겟을 정의하며 타깃팅을 사용할 수 있는 모든 위치에서 사용됩니다. Target 대상은 정의된 방문자 기준 세트입니다. 오퍼를 특정 대상(또는 세그먼트)에 타깃팅할 수 있습니다. 해당 대상에 속하는 방문자만 타깃팅된 경험을 보게 됩니다.  예를 들어 특정 브라우저를 사용하거나 특정 지리적 위치에서 오퍼를 사용하는 방문자로 구성된 대상에게 제공할 수 있습니다.
+   * [오퍼](https://experienceleague.adobe.com/docs/target/using/introduction/target-key-concepts.html#section_973D4CC4CEB44711BBB9A21BF74B89E9)는 캠페인이나 활동 중에 웹 페이지에 표시되는 콘텐츠입니다. 웹 페이지를 테스트할 때 해당 위치에서 다른 오퍼가 있는 각 경험의 성공을 측정합니다. 오퍼에는 다음을 포함한 다양한 유형의 컨텐츠가 포함될 수 있습니다.
       * 이미지
       * 텍스트
       * **HTML**
@@ -77,7 +77,7 @@ WKND 사이트는 웹사이트를 통해 미국 전역에 **SkateFest Challenge*
 
 ## 마케터 활동
 
-### 지역 타깃팅 {#marketer-audience}으로 대상 만들기
+### 지리 기반의 타깃팅으로 대상 만들기 {#marketer-audience}
 
 1. 조직 [Adobe Experience Cloud](https://experiencecloud.adobe.com/)(<https://>`<yourcompany>`.experiencecloud.adobe.com)로 이동합니다.
 1. Adobe ID을 사용하여 로그인하고 올바른 조직에 있는지 확인하십시오.
@@ -95,7 +95,7 @@ WKND 사이트는 웹사이트를 통해 미국 전역에 **SkateFest Challenge*
 
 1. 대상을 만들려면 **대상 만들기** 단추를 클릭하고 대상 이름을 입력합니다.
 
-   **대상 이름 형식 :WKND-\&lt;>state *\>***
+   **대상 이름 형식 : WKND-\&lt;>state *\>***
 
    ![Experience Cloud - Adobe Target](assets/personalization-use-case-1/audience-target-1.png)
 
@@ -115,7 +115,7 @@ WKND 사이트는 웹사이트를 통해 미국 전역에 **SkateFest Challenge*
    >[!NOTE]
    >방문자의 IP 주소는 해당 방문자에 대한 지역 타깃팅 매개 변수를 해결하기 위해 방문당 한 번씩 mbox 요청을 통해 전달됩니다.
 
-1. 연산자를 **일치**&#x200B;로 선택하고 적절한 값을 제공합니다(예:California) 및 **변경 내용을 저장**&#x200B;합니다. 이 경우 상태 이름을 입력합니다.
+1. 연산자를 **일치**&#x200B;로 선택하고 적절한 값을 제공합니다(예: California) 및 **변경 내용을 저장**&#x200B;합니다. 이 경우 상태 이름을 입력합니다.
 
    ![Adobe Target - 지역 규칙](assets/personalization-use-case-1/audience-geo-rule.png)
 
@@ -135,7 +135,7 @@ WKND 사이트는 웹사이트를 통해 미국 전역에 **SkateFest Challenge*
 1. **웹** 채널을 선택하고 **시각적 경험 작성기**&#x200B;를 선택합니다.
 1. **활동 URL**&#x200B;을 입력하고 **다음**&#x200B;을 클릭하여 시각적 경험 작성기를 엽니다.
 
-   WKND 사이트 홈 페이지 게시 URL:http://localhost:4503/content/wknd/en.html
+   WKND 사이트 홈 페이지 게시 URL: http://localhost:4503/content/wknd/en.html
 
    ![경험 타깃팅 활동](assets/personalization-use-case-1/target-activity.png)
 
@@ -173,7 +173,7 @@ WKND 사이트는 웹사이트를 통해 미국 전역에 **SkateFest Challenge*
    ![활동 활성화](assets/personalization-use-case-1/activate-activity.png)
 
 1. 이제 WKND SkateFest Campaign이 모든 WKND 사이트 방문자에게 생방송으로 제공됩니다.
-1. [WKND 사이트 홈 페이지](http://localhost:4503/content/wknd/en.html)로 이동하면 지리적 위치(*상태)를 기준으로 WKND SkateFest 오퍼를 볼 수 있습니다.California*).
+1. [WKND 사이트 홈 페이지](http://localhost:4503/content/wknd/en.html)로 이동하면 지리적 위치(*상태)를 기준으로 WKND SkateFest 오퍼를 볼 수 있습니다. California*).
 
    ![활동 QA](assets/personalization-use-case-1/wknd-california.png)
 
