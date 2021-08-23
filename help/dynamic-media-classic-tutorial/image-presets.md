@@ -10,9 +10,9 @@ activity: use
 topic: 컨텐츠 관리
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '706'
 ht-degree: 1%
 
 ---
@@ -40,8 +40,8 @@ Dynamic Media Classic 고객의 URL을 보면 사용 중인 이미지 사전 설
 >
 >사이트에서 고유한 이미지 크기당 하나의 이미지 사전 설정을 만듭니다. 예를 들어 제품 세부 사항 페이지에 350 X 350 이미지, 찾아보기/검색 페이지에 120 X 120 이미지, 크로스셀/주요 항목에 대해 90 X 90 이미지가 필요한 경우 500개 이미지 또는 500,000개 이미지 중 어떤 이미지 사전 설정이 있더라도 3개의 이미지 사전 설정이 필요합니다.
 
-- [이미지 사전 설정](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/image-sizing/setting-image-presets.html)에 대해 자세히 알아보십시오.
-- [이미지 사전 설정을 만드는 방법을 알아봅니다](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/image-sizing/setting-image-presets.html#creating-an-image-preset).
+- [이미지 사전 설정](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sizing/setting-image-presets.html)에 대해 자세히 알아보십시오.
+- [이미지 사전 설정을 만드는 방법을 알아봅니다](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sizing/setting-image-presets.html#creating-an-image-preset).
 
 ## 이미지 사전 설정 및 선명하게 하기
 
@@ -63,7 +63,7 @@ Dynamic Media Classic에 업로드하는 고해상도 이미지는 확대하면 
 
 Dynamic Media Classic에서는 세 가지 유형의 선명하게 하기를 사용할 수 있습니다. 간단한 선명도, 리샘플 모드 및 언샵 마스크
 
-[Dynamic Media Classic 선명하게 하기 옵션](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/sharpening-image.html#sharpening_an_image)에 대해 자세히 알아보십시오.
+[Dynamic Media Classic 선명하게 하기 옵션](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/sharpening-image.html#sharpening_an_image)에 대해 자세히 알아보십시오.
 
 ## 추가 리소스
 
