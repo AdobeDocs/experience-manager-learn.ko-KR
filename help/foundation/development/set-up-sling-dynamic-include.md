@@ -11,17 +11,17 @@ doc-type: technical video
 topic: 개발
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 6%
+source-wordcount: '261'
+ht-degree: 5%
 
 ---
 
 
 # [!DNL Sling Dynamic Include] 설정
 
-[!DNL Apache HTTP Web Server]에서 실행 중인 [AEM Dispatcher](https://docs.adobe.com/content/help/ko-KR/experience-manager-dispatcher/using/dispatcher.html)와 함께 [!DNL Apache Sling Dynamic Include]을 설치하고 사용하는 비디오 연습입니다.
+[!DNL Apache HTTP Web Server]에서 실행 중인 [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko-KR)와 함께 [!DNL Apache Sling Dynamic Include]을 설치하고 사용하는 비디오 연습입니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17040/?quality=12&learn=on)
 
@@ -150,7 +150,7 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->Edge-side includes (ESI)를 제공하는 데 [!DNL Sling Dynamic Includes]을 사용하는 경우 Dispatcher 캐시](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#CachingHTTPResponseHeaders)에 관련 [응답 헤더를 캐시해야 합니다. 가능한 헤더에는 다음이 포함됩니다.
+>Edge-side includes (ESI)를 제공하는 데 [!DNL Sling Dynamic Includes]을 사용하는 경우 Dispatcher 캐시](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#CachingHTTPResponseHeaders)에 관련 [응답 헤더를 캐시해야 합니다. 가능한 헤더에는 다음이 포함됩니다.
 >
 >* &quot;Cache-Control&quot;
 >* &quot;컨텐츠 처리&quot;
