@@ -14,9 +14,9 @@ thumbnail: 32012.jpg
 topic: 컨텐츠 관리
 role: User
 level: Intermediate
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '132'
 ht-degree: 15%
 
 ---
@@ -30,4 +30,4 @@ Adobe Experience Manager Sites을 사용하면 반응형 사이트 디자인을 
 
 ## 추가 리소스 {#additional-resources}
 
-* [응답형 레이아웃 설명서](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/siteandpage/responsive-layout.html)
+* [응답형 레이아웃 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html)
