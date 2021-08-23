@@ -1,12 +1,7 @@
 ---
 title: 조각 참조를 사용한 고급 데이터 모델링 - AEM 헤드리스 시작하기 - GraphQL
 description: Adobe Experience Manager(AEM) 및 GraphQL을 시작합니다. 고급 데이터 모델링을 위해 조각 참조 기능을 사용하고 두 개의 다른 컨텐츠 조각 간의 관계를 만드는 방법을 알아봅니다. 참조된 모델의 필드를 포함하도록 GraphQL 쿼리를 수정하는 방법을 알아봅니다.
-sub-product: assets
-topics: headless
 version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
 mini-toc-levels: 1
 kt: 6718
 thumbnail: KT-6718.jpg
@@ -14,9 +9,9 @@ feature: 컨텐츠 조각, GraphQL API
 topic: 헤드리스, 컨텐츠 관리
 role: Developer
 level: Beginner
-source-git-commit: 81626b8d853f3f43d9c51130acf02561f91536ac
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '854'
 ht-degree: 1%
 
 ---
@@ -94,7 +89,7 @@ Adventure 컨텐츠 조각 모델을 업데이트하여 기여자 모델에 대�
 
 다음으로, Adventure에 대한 쿼리를 수행하고 참조된 Contributor 모델의 중첩된 속성을 추가합니다. GraphiQL 도구를 사용하여 쿼리의 구문을 신속하게 확인할 것입니다.
 
-1. AEM에서 GraphiQL 도구로 이동합니다.[http://localhost:4502/content/graphiql.html](http://localhost:4502/content/graphiql.html)
+1. AEM에서 GraphiQL 도구로 이동합니다. [http://localhost:4502/content/graphiql.html](http://localhost:4502/content/graphiql.html)
 
 1. 다음 쿼리를 입력합니다.
 
