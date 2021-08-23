@@ -9,10 +9,10 @@ thumbnail: 37958.jpg
 topic: 컨텐츠 관리
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '111'
-ht-degree: 9%
+source-wordcount: '109'
+ht-degree: 1%
 
 ---
 
@@ -25,5 +25,5 @@ Dynamic Media Smart Crop for video는 Adobe Sensei을 사용하여 비디오의 
 
 >[!NOTE]
 >
->위의 비디오에서는 AEM 서비스가 Dynamic Media S7 모드에서 실행 중이라고 가정합니다. [Dynamic Media을 사용하여 AEM을 설정하는 방법은 여기에서 확인할 수 있습니다.](https://docs.adobe.com/content/help/ko/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html)
+>위의 비디오에서는 AEM 서비스가 Dynamic Media S7 모드에서 실행 중이라고 가정합니다. [Dynamic Media을 사용하여 AEM을 설정하는 방법은 여기에서 확인할 수 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html)
 
