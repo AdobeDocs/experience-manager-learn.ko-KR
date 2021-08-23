@@ -1,12 +1,7 @@
 ---
 title: 컨텐츠 조각 작성 - AEM 헤드리스 시작하기 - GraphQL
 description: Adobe Experience Manager(AEM) 및 GraphQL을 시작합니다. 컨텐츠 조각 모델을 기반으로 새 컨텐츠 조각을 만들고 편집합니다. 컨텐츠 조각의 변형을 만드는 방법을 알아봅니다.
-sub-product: assets
-topics: headless
 version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
 mini-toc-levels: 1
 kt: 6713
 thumbnail: 22451.jpg
@@ -14,9 +9,9 @@ feature: 컨텐츠 조각, GraphQL API
 topic: 헤드리스, 컨텐츠 관리
 role: Developer
 level: Beginner
-source-git-commit: 81626b8d853f3f43d9c51130acf02561f91536ac
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '791'
 ht-degree: 0%
 
 ---
@@ -41,7 +36,7 @@ ht-degree: 0%
 
 위의 비디오에서는 컨텐츠 조각 작성에 대한 높은 수준의 개요를 제공합니다.
 
-## 컨텐츠 조각 {#create-content-fragment} 만들기
+## 컨텐츠 조각 만들기 {#create-content-fragment}
 
 이전 장의 [컨텐츠 조각 모델 정의](./content-fragment-models.md)에서 **기여자** 모델이 생성되었습니다. 이 모델을 사용하여 새 컨텐츠 조각을 작성합니다.
 
@@ -65,9 +60,9 @@ ht-degree: 0%
 
    모델에 정의된 필드를 이제 컨텐츠 조각의 이 인스턴스를 작성할 수 있습니다.
 
-1. **전체 이름**&#x200B;에 대해 다음을 입력합니다.**스테이시 로셀**
+1. **전체 이름**&#x200B;에 대해 다음을 입력합니다. **스테이시 로셀**
 1. **전기**&#x200B;에 간단한 전기를 입력합니다. 영감이 필요하십니까? 이 [텍스트 파일](assets/author-content-fragments/stacey-roswells-bio.txt)을 자유롭게 다시 사용할 수 있습니다.
-1. **그림 참조**&#x200B;에 대해 **폴더** 아이콘을 클릭하고 **WKND 사이트** > **영어** > **기여자** > **stacey-roswells.jpg**&#x200B;로 이동합니다. 이렇게 하면 경로가 평가됩니다.`/content/dam/wknd/en/contributors/stacey-roswells.jpg`
+1. **그림 참조**&#x200B;에 대해 **폴더** 아이콘을 클릭하고 **WKND 사이트** > **영어** > **기여자** > **stacey-roswells.jpg**&#x200B;로 이동합니다. 이렇게 하면 경로가 평가됩니다. `/content/dam/wknd/en/contributors/stacey-roswells.jpg`
 1. **작업**&#x200B;에 대해 **사진**&#x200B;을 선택합니다.
 
    ![작성된 조각](assets/author-content-fragments/stacye-roswell-fragment-authored.png)
@@ -112,9 +107,9 @@ ht-degree: 0%
 1. **기여자** 모델을 선택하고 **다음**&#x200B;을 클릭합니다.
 1. 제목에 **Jacob Wester**&#x200B;을 입력하고 **만들기**&#x200B;를 클릭합니다.
 1. **성공** 대화 상자에서 **열기**&#x200B;를 클릭하여 새로 만든 조각을 엽니다.
-1. **전체 이름**&#x200B;에 대해 다음을 입력합니다.**Jacob Wester**
+1. **전체 이름**&#x200B;에 대해 다음을 입력합니다. **Jacob Wester**
 1. **전기**&#x200B;에 간단한 전기를 입력합니다. 영감이 필요하십니까? 이 [텍스트 파일](assets/author-content-fragments/jacob-wester.txt)을 자유롭게 다시 사용할 수 있습니다.
-1. **그림 참조**&#x200B;에 대해 **폴더** 아이콘을 클릭하고 **WKND 사이트** > **영어** > **기여자** > **jacob_wester.jpg**&#x200B;로 이동합니다. 이렇게 하면 경로가 평가됩니다.`/content/dam/wknd/en/contributors/jacob_wester.jpg`
+1. **그림 참조**&#x200B;에 대해 **폴더** 아이콘을 클릭하고 **WKND 사이트** > **영어** > **기여자** > **jacob_wester.jpg**&#x200B;로 이동합니다. 이렇게 하면 경로가 평가됩니다. `/content/dam/wknd/en/contributors/jacob_wester.jpg`
 1. **작업**&#x200B;에 대해 **작성기**&#x200B;를 선택합니다.
 1. **저장**&#x200B;을 클릭하여 변경 내용을 저장합니다. 원하는 경우가 아니면 변형을 만들 필요가 없습니다.
 
