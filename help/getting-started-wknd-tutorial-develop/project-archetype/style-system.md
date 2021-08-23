@@ -12,15 +12,15 @@ level: Beginner
 kt: 4128
 mini-toc-levels: 1
 thumbnail: 30386.jpg
-source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '2003'
+source-wordcount: '1999'
 ht-degree: 0%
 
 ---
 
 
-# 스타일 시스템 {#developing-with-the-style-system} 을 사용하여 개발
+# 스타일 시스템을 사용한 개발 {#developing-with-the-style-system}
 
 Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 구현하고 핵심 구성 요소를 다시 사용하는 방법을 알아봅니다. 이 자습서에서는 템플릿 편집기의 브랜드별 CSS 및 고급 정책 구성으로 코어 구성 요소를 확장하는 스타일 시스템 개발에 대해 설명합니다.
 
@@ -67,9 +67,9 @@ Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 �
 1. BEM 표기법 및 이 표기법을 사용하여 스타일을 신중하게 범위를 지정하는 방법에 대해 알아봅니다.
 1. 편집 가능한 템플릿에 고급 정책 구성을 적용합니다.
 
-## {#what-you-will-build} 빌드할 내용
+## 빌드할 내용 {#what-you-will-build}
 
-이 장에서는 [스타일 시스템 기능](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html)을 사용하여 문서 페이지에서 사용되는 **제목** 및 **텍스트** 구성 요소의 변형을 만듭니다.
+이 장에서는 [스타일 시스템 기능](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html)을 사용하여 문서 페이지에서 사용되는 **제목** 및 **텍스트** 구성 요소의 변형을 만듭니다.
 
 ![제목에 사용할 수 있는 스타일](assets/style-system/styles-added-title.png)
 
@@ -77,7 +77,7 @@ Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 �
 
 ## 배경 {#background}
 
-[스타일 시스템](https://docs.adobe.com/content/help/en/experience-manager-65/developing/components/style-system.html)을 사용하면 개발자와 템플릿 편집기에서 구성 요소의 여러 시각적 변형을 만들 수 있습니다. 그런 다음 작성자가 페이지를 작성할 때 사용할 스타일을 결정할 수 있습니다. 낮은 코드 접근 방식으로 코어 구성 요소를 활용하는 동시에 자습서의 나머지 부분에서 스타일 시스템을 활용하여 몇 가지 고유한 스타일을 달성할 수 있습니다.
+[스타일 시스템](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html)을 사용하면 개발자와 템플릿 편집기에서 구성 요소의 여러 시각적 변형을 만들 수 있습니다. 그런 다음 작성자가 페이지를 작성할 때 사용할 스타일을 결정할 수 있습니다. 낮은 코드 접근 방식으로 코어 구성 요소를 활용하는 동시에 자습서의 나머지 부분에서 스타일 시스템을 활용하여 몇 가지 고유한 스타일을 달성할 수 있습니다.
 
 스타일 시스템을 사용하는 일반적인 아이디어는 작성자가 구성 요소가 표시되는 다양한 스타일을 선택할 수 있다는 것입니다. &quot;스타일&quot;은 구성 요소의 외부 div에 삽입되는 추가 CSS 클래스로 지원됩니다. 클라이언트 라이브러리에서 CSS 규칙은 구성 요소가 모양을 변경하도록 이러한 스타일 클래스를 기반으로 추가됩니다.
 
@@ -95,7 +95,7 @@ Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 �
 
 프런트엔드 개발자로서 코어 구성 요소에 스타일을 지정하는 첫 번째 단계는 구성 요소에서 생성한 마크업을 이해하는 것입니다.
 
-1. 새 브라우저를 열고 AEM 코어 구성 요소 라이브러리 사이트에서 제목 구성 요소를 봅니다.[https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/title.html](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/title.html)
+1. 새 브라우저를 열고 AEM 코어 구성 요소 라이브러리 사이트에서 제목 구성 요소를 봅니다. [https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/title.html](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/title.html)
 
 1. 다음은 제목 구성 요소의 마크업입니다.
 
@@ -144,7 +144,7 @@ Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 �
 
    ![웹 팩 개발 서버](assets/style-system/static-webpack-server.png)
 
-1. IDE에서 다음 위치에 있는 `index.html` 파일을 엽니다.`ui.frontend/src/main/webpack/static/index.html`. 웹 팩 개발 서버에서 사용하는 정적 마크업입니다.
+1. IDE에서 다음 위치에 있는 `index.html` 파일을 엽니다. `ui.frontend/src/main/webpack/static/index.html`. 웹 팩 개발 서버에서 사용하는 정적 마크업입니다.
 1. `index.html`에서 문서에 *cmp-title*&#x200B;을 검색하여 밑줄 스타일을 추가할 제목 구성 요소의 인스턴스를 찾습니다. *&quot;Banks off the Wall Skateboak&quot;* (218행)이라는 텍스트가 있는 제목 구성 요소를 선택합니다. 클래스 `cmp-title--underline`를 주변 div에 추가합니다.
 
    ```diff
@@ -157,7 +157,7 @@ Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 �
    ```
 
 1. 브라우저로 돌아가서 추가 클래스가 마크업에 반영되었는지 확인합니다.
-1. **ui.frontend** 모듈로 돌아가서 다음 위치에 있는 `title.scss` 파일을 업데이트합니다.`ui.frontend/src/main/webpack/components/_title.scss`:
+1. **ui.frontend** 모듈로 돌아가서 다음 위치에 있는 `title.scss` 파일을 업데이트합니다. `ui.frontend/src/main/webpack/components/_title.scss`:
 
    ```css
    /* Add Title Underline Style */
@@ -197,7 +197,7 @@ Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 �
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-1. 다음 위치에 있는 **문서 페이지** 템플릿으로 이동합니다.[http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html)
+1. 다음 위치에 있는 **문서 페이지** 템플릿으로 이동합니다. [http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html)
 
 1. **구조** 모드의 기본 **레이아웃 컨테이너**&#x200B;에서 *허용된 구성 요소*&#x200B;에 나열된 **제목** 구성 요소 옆에 있는 **정책** 아이콘을 선택합니다.
 
@@ -205,7 +205,7 @@ Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 �
 
 1. 다음 값으로 제목 구성 요소에 대한 새 정책을 만듭니다.
 
-   *정책 제목 **: **WKND 제목**
+   *정책 제목 **:  **WKND 제목**
 
    *속성*  >  *스타일 탭*  >  *새 스타일 추가*
 
@@ -223,7 +223,7 @@ Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 �
 
 마지막으로 작성자는 특정 제목 구성 요소에 밑줄 스타일을 적용하도록 선택할 수 있습니다.
 
-1. AEM Sites 편집기의 **La Skatestparks** 문서로 이동합니다.[http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html)
+1. AEM Sites 편집기의 **La Skatestparks** 문서로 이동합니다. [http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html)
 1. **편집** 모드에서 제목 구성 요소를 선택합니다. **페인트브러쉬** 아이콘을 클릭하고 **밑줄** 스타일을 선택합니다.
 
    ![밑줄 스타일 적용](assets/style-system/apply-underline-style-title.png)
@@ -236,7 +236,7 @@ Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 �
 
    브라우저 개발자 도구를 사용하여 제목 구성 요소 주위에 있는 마크업에 외부 div에 적용된 CSS 클래스 `cmp-title--underline`가 있는지 확인합니다.
 
-## 따옴표 블록 스타일 - 텍스트 {#text-component}
+## 견적 블록 스타일 - 텍스트 {#text-component}
 
 그런 다음 유사한 단계를 반복하여 [텍스트 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html)에 고유한 스타일을 적용합니다. 텍스트 구성 요소가 **ui.apps** 모듈의 일부로 `/apps/wknd/components/text` 아래의 프로젝트에 프록시되었습니다. 단락 요소의 기본 스타일이 이미 **ui.frontend**&#x200B;에 구현되었습니다.
 
@@ -248,7 +248,7 @@ Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 �
 
 다시 한 번 텍스트 구성 요소의 마크업을 검사합니다.
 
-1. 다음 위치에서 텍스트 구성 요소에 대한 마크업을 검토합니다.[https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/text.html](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/text.html)
+1. 다음 위치에서 텍스트 구성 요소에 대한 마크업을 검토합니다. [https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/text.html](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/text.html)
 
 1. 아래는 텍스트 구성 요소의 마크업입니다.
 
@@ -288,7 +288,7 @@ Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 �
    $ npm start
    ```
 
-1. IDE에서 다음 위치에 있는 `index.html` 파일을 엽니다.`ui.frontend/src/main/webpack/static/index.html`.
+1. IDE에서 다음 위치에 있는 `index.html` 파일을 엽니다. `ui.frontend/src/main/webpack/static/index.html`.
 1. `index.html`에서 *&quot;Jacob Wester&quot;* (210행)을 검색하여 텍스트 구성 요소의 인스턴스를 찾습니다. 클래스 `cmp-text--quote`를 주변 div에 추가합니다.
 
    ```diff
@@ -301,7 +301,7 @@ Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 �
     </div>
    ```
 
-1. 다음 위치에 있는 `text.scss` 파일을 업데이트합니다.`ui.frontend/src/main/webpack/components/_text.scss`:
+1. 다음 위치에 있는 `text.scss` 파일을 업데이트합니다. `ui.frontend/src/main/webpack/components/_text.scss`:
 
    ```css
    /* WKND Text Quote style */
@@ -356,7 +356,7 @@ Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 �
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-1. 다음 위치에 있는 **문서 페이지 템플릿**&#x200B;으로 이동합니다.[http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html)).
+1. 다음 위치에 있는 **문서 페이지 템플릿**&#x200B;으로 이동합니다. [http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html)).
 
 1. **구조** 모드의 기본 **레이아웃 컨테이너**&#x200B;에서 *허용된 구성 요소*&#x200B;에 나열된 **텍스트** 구성 요소 옆에 있는 **정책** 아이콘을 선택합니다.
 
@@ -364,7 +364,7 @@ Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 �
 
 1. 텍스트 구성 요소 정책을 다음 값으로 업데이트합니다.
 
-   *정책 제목 **: **컨텐츠 텍스트**
+   *정책 제목 **:  **컨텐츠 텍스트**
 
    *플러그인*  >  *단락 스타일*  >  *단락 스타일 활성화*
 
@@ -380,7 +380,7 @@ Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 �
 
 ### 견적 블록 스타일 적용
 
-1. AEM Sites 편집기의 **La Skatestparks** 문서로 이동합니다.[http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html)
+1. AEM Sites 편집기의 **La Skatestparks** 문서로 이동합니다. [http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html)
 1. **편집** 모드에서 텍스트 구성 요소를 선택합니다. 견적 요소를 포함하도록 구성 요소를 편집합니다.
 
    ![텍스트 구성 요소 구성](assets/style-system/configure-text-component.png)
