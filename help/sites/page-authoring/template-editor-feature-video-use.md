@@ -13,9 +13,9 @@ kt: 193
 topic: 컨텐츠 관리
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '252'
 ht-degree: 5%
 
 ---
@@ -42,5 +42,5 @@ ht-degree: 5%
 
 ## 추가 리소스 {#additional-resources}
 
-* [편집 가능한 페이지 템플릿 - 설명서](https://docs.adobe.com/content/help/en/experience-manager-65/developing/platform/templates/page-templates-editable.html)
-* [페이지 템플릿 만들기 - 설명서](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/siteandpage/templates.html)
+* [편집 가능한 페이지 템플릿 - 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html)
+* [페이지 템플릿 만들기 - 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/templates.html)
