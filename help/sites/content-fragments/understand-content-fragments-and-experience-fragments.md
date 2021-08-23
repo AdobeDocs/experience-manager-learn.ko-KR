@@ -11,10 +11,10 @@ audience: all
 topic: 컨텐츠 관리
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1004'
-ht-degree: 5%
+source-wordcount: '1000'
+ht-degree: 4%
 
 ---
 
@@ -100,7 +100,7 @@ Adobe Experience Manager의 컨텐츠 조각 및 경험 조각은 표면에서�
 </td>
 </tr><tr><td><strong>사용</strong></td>
 <td><ul>
-<li><a href="https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html" target="_blank">AEM Sites, AEM Screens 또는 경험 </a> 조각에서 사용할 AEM 코어 구성 요소 컨텐츠 조각 구성 요소입니다.</li>
+<li><a href="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html" target="_blank">AEM Sites, AEM Screens 또는 경험 </a> 조각에서 사용할 AEM 코어 구성 요소 컨텐츠 조각 구성 요소입니다.</li>
 <li>타사 소비에 대해 <a href="https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html" target="_blank">AEM Content Services</a>를 통해 JSON 내보내기</li>
 <li>타사 사용을 위해 AEM HTTP Assets API를 통한 JSON입니다.</li>
 </ul>
@@ -171,7 +171,7 @@ Adobe Experience Manager의 컨텐츠 조각 및 경험 조각은 표면에서�
 
 + [컨텐츠 조각 사용 안내서](https://helpx.adobe.com/experience-manager/6-5/assets/user-guide.html?topic=/experience-manager/6-5/assets/morehelp/content-fragments.ug.js)
 + [AEM에서 컨텐츠 조각 사용](https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-feature-video-use.html)
-+ [AEM WCM 코어 구성 요소의 컨텐츠 조각 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/content-fragment-component.html)
++ [AEM WCM 코어 구성 요소의 컨텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
 + [컨텐츠 조각 및 AEM Content Services 사용](https://helpx.adobe.com/experience-manager/kt/sites/using/structured-fragments-content-services-feature-video-use.html)
 + [AEM 컨텐츠 서비스 시작하기](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html)
 
