@@ -7,9 +7,9 @@ feature: 경험 구성요소
 topic: 개인화
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1101'
+source-wordcount: '1098'
 ht-degree: 2%
 
 ---
@@ -87,7 +87,7 @@ AEM에서는 Experience Platform Launch과 즉시 통합할 수 있습니다. �
 
 #### Target 확장 추가
 
-Adobe Target 확장은 최신 웹, `at.js`에 Target JavaScript SDK를 사용하여 클라이언트측 구현을 지원합니다. 여전히 Target 이전 라이브러리인 `mbox.js`, [을 사용하는 고객은 Launch를 사용하려면 at.js](https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/upgrading-from-atjs-1x-to-atjs-20.html)로 업그레이드해야 합니다.
+Adobe Target 확장은 최신 웹, `at.js`에 Target JavaScript SDK를 사용하여 클라이언트측 구현을 지원합니다. 여전히 Target 이전 라이브러리인 `mbox.js`, [을 사용하는 고객은 Launch를 사용하려면 at.js](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/at-js-implementation/upgrading-from-atjs-1x-to-atjs-20.html)로 업그레이드해야 합니다.
 
 Target 확장은 다음 두 가지 주요 부분으로 구성됩니다.
 
@@ -137,7 +137,7 @@ Target 확장은 다음 두 가지 주요 부분으로 구성됩니다.
 
 >[!NOTE]
 >
-> Adobe I/O 통합에 적절한 [역할이 있는 작업 영역을 선택할 수 있는 액세스 권한을 부여하면 중앙 팀이 소수의 작업 영역에서만 API 기반 변경을 수행할 수 있습니다](https://docs.adobe.com/content/help/en/target/using/administer/manage-users/enterprise/configure-adobe-io-integration.html).
+> Adobe I/O 통합에 적절한 [역할이 있는 작업 영역을 선택할 수 있는 액세스 권한을 부여하면 중앙 팀이 소수의 작업 영역에서만 API 기반 변경을 수행할 수 있습니다](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/configure-adobe-io-integration.html).
 
 1. Adobe I/O의 자격 증명을 사용하여 AEM에서 IMS 통합을 만듭니다(01:12~03:55).
 2. Experience Platform Launch에서 속성을 만듭니다. (위 [위](#create-launch-property))
