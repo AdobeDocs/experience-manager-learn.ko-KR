@@ -1,21 +1,16 @@
 ---
 title: AEM 핵심 구성 요소에서 Adobe 클라이언트 데이터 레이어 사용
 description: Adobe 클라이언트 데이터 계층은 웹 페이지에서 방문자 경험에 대한 데이터를 수집 및 저장한 다음 이 데이터에 쉽게 액세스할 수 있는 표준 방법을 제공합니다. Adobe 클라이언트 데이터 계층은 플랫폼에 영향을 받지 않지만 AEM에서 사용할 수 있도록 핵심 구성 요소에 완전히 통합됩니다.
-feature: 코어 구성 요소
-topics: integrations
-audience: developer
-doc-type: feature video
-activity: use
-version: cloud-service
-kt: 6261
-thumbnail: 41195.jpg
 topic: 통합
+feature: Adobe 클라이언트 데이터 레이어, 핵심 구성 요소
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+kt: 6261
+thumbnail: 41195.jpg
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '790'
-ht-degree: 1%
+source-wordcount: '791'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +23,7 @@ Adobe 클라이언트 데이터 계층은 웹 페이지에서 방문자 경험�
 
 >[!NOTE]
 >
-> AEM 사이트에서 Adobe 클라이언트 데이터 계층을 활성화하시겠습니까? [지침은 여기 ](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation)를 참조하십시오.
+> AEM 사이트에서 Adobe 클라이언트 데이터 계층을 활성화하시겠습니까? [지침은 여기 ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation)를 참조하십시오.
 
 ## 데이터 레이어 살펴보기
 
@@ -183,4 +178,4 @@ Adobe 클라이언트 데이터 계층은 웹 페이지에서 방문자 경험�
 ## 추가 리소스 {#additional-resources}
 
 * [Adobe 클라이언트 데이터 레이어 설명서](https://github.com/adobe/adobe-client-data-layer/wiki)
-* [Adobe 클라이언트 데이터 레이어 및 핵심 구성 요소 설명서 사용](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html)
+* [Adobe 클라이언트 데이터 레이어 및 핵심 구성 요소 설명서 사용](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)
