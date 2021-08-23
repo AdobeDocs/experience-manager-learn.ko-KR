@@ -4,12 +4,13 @@ description: OSGi 서비스를 활성화, 수정 및 비활성화하는 방법 �
 role: Developer
 level: Beginner
 topic: 개발
+feature: OSGI
 kt: 8228
 thumbnail: 335475.jpeg
-source-git-commit: 680043f5717bf938bf6f0b960d9ed5939d13544c
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '95'
-ht-degree: 4%
+source-wordcount: '96'
+ht-degree: 5%
 
 ---
 
