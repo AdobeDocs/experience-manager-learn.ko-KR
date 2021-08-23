@@ -1,21 +1,17 @@
 ---
 title: AEM as a Cloud Service 액세스 구성
 description: 'AEM as a Cloud Service은 AEM 애플리케이션을 활용하는 클라우드 기반의 방법으로서, 이와 같이 는 Adobe IMS(Identity Management System)를 활용하여 사용자와 관리자 및 일반 사용자 모두를 AEM 작성자 서비스에 쉽게 로그인할 수 있도록 합니다. AEM 그룹 및 권한과 함께 Adobe IMS 사용자, 사용자 그룹 및 제품 프로필을 모두 사용하여 AEM 작성자에 대한 특정 액세스 권한을 제공하는 방법을 알아봅니다.  '
-feature: 사용자 및 그룹
-topics: authentication
 version: cloud-service
-activity: setup
-audience: administrator
-doc-type: article
-kt: 5882
-thumbnail: KT-5882.jpg
 topic: 관리, 보안
+feature: 사용자 및 그룹
 role: Admin
 level: Beginner
-source-git-commit: 36346a8a45fc20b5e6d71d6d00345d74b6b04c2a
+kt: 5882
+thumbnail: KT-5882.jpg
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
 source-wordcount: '603'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
