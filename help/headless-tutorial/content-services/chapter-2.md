@@ -7,9 +7,9 @@ feature: 컨텐츠 조각, API
 topic: 헤드리스, 컨텐츠 관리
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '998'
 ht-degree: 7%
 
 ---
@@ -28,7 +28,7 @@ AEM 컨텐츠 조각 모델은 AEM 작성자가 원시 컨텐츠 만들기를 �
 
 ## 컨텐츠 조각 모델 활성화
 
-컨텐츠 조각 모델 **은**[ AEM [!UICONTROL 구성 브라우저]](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html)**를 통해 활성화되어야 합니다.**
+컨텐츠 조각 모델 **은**[ AEM [!UICONTROL 구성 브라우저]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html)**를 통해 활성화되어야 합니다.**
 
 컨텐츠 조각 모델이 구성에 대해 활성화되어 있지 않은 **이면**[!UICONTROL &#x200B;만들기] > [!UICONTROL 컨텐츠 조각&#x200B;]**단추가 관련 AEM 구성에 대해 표시되지 않습니다.**
 
@@ -40,7 +40,7 @@ AEM 컨텐츠 조각 모델은 AEM 작성자가 원시 컨텐츠 만들기를 �
 >
 >`global` 구성을 사용하면 구성이 모든 콘텐츠에 적용되며 `cq:conf` 을 설정할 필요가 없습니다.
 >
->자세한 내용은 [[!UICONTROL 구성 브라우저] 설명서](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html)를 참조하십시오.
+>자세한 내용은 [[!UICONTROL 구성 브라우저] 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html)를 참조하십시오.
 
 1. 적절한 권한이 있는 사용자로 AEM Author에 로그인하여 관련 구성을 수정합니다.
    * 이 자습서에서는 **admin** 사용자를 사용할 수 있습니다.
@@ -101,7 +101,7 @@ AEM 컨텐츠 조각 모델은 AEM 작성자가 원시 컨텐츠 만들기를 �
    * [!UICONTROL 렌더링 형식] : `textfield`
    * [!UICONTROL 필드 레이블] : `Event Title`
    * [!UICONTROL 속성 이름] : `eventTitle`
-   * [!UICONTROL 최대 길이] :25년
+   * [!UICONTROL 최대 길이] : 25년
    * [!UICONTROL 필수] : `Yes`
 
 아래에 정의된 입력 정의를 사용하여 이러한 단계를 반복하여 이벤트 컨텐츠 조각 모델의 나머지 부분을 만듭니다.
@@ -155,7 +155,7 @@ AEM 컨텐츠 조각 모델은 AEM 작성자가 원시 컨텐츠 만들기를 �
 * [!UICONTROL 렌더링 형식] : `textfield`
 * [!UICONTROL 필드 레이블] : `Venue Name`
 * [!UICONTROL 속성 이름] : `venueName`
-* [!UICONTROL 최대 길이] :20년
+* [!UICONTROL 최대 길이] : 20년
 * [!UICONTROL 필수] : `Yes`
 
 ### 장소 구/군/시
