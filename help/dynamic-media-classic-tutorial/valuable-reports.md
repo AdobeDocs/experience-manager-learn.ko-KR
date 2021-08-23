@@ -10,10 +10,10 @@ activity: use
 topic: 컨텐츠 관리
 role: Admin
 level: Intermediate
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 3%
+source-wordcount: '338'
+ht-degree: 1%
 
 ---
 
@@ -46,7 +46,7 @@ Dynamic Media Classic에 대해 자세히 알아보려면 다음 리소스를 �
 
 - [Experience League의 Dynamic Media Classic - 가치 창출](https://guided.adobe.com/?launch=AEM-5a#recommended/solutions/experience-manager)
 - [Experience League의 Dynamic Media Classic - 더 많은 작업](https://guided.adobe.com/?launch=AEM-6a#recommended/solutions/experience-manager)
-- [Dynamic Media 뉴스레터 아카이브](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/dynamic-media-newsletter.html)
+- [Dynamic Media 뉴스레터 아카이브](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/dynamic-media-newsletter.html)
 - [Dynamic Media 뉴스레터 구독 페이지](https://www.adobe.com/subscription/dynamic-media-newsletter.html)
-- [Dynamic Media Classic 설명서](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/home.html)
+- [Dynamic Media Classic 설명서](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html)
 - [리치 미디어 블로그 게시물](https://theblog.adobe.com/tag/dynamic-media)
