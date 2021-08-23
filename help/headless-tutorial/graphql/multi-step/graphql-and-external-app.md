@@ -1,12 +1,7 @@
 ---
 title: 외부 앱에서 GraphQL을 사용하여 AEM 쿼리 - AEM 헤드리스 시작하기 - GraphQL
 description: Adobe Experience Manager(AEM) 및 GraphQL을 시작합니다. AEM GraphQL API를 통해 샘플 WKND GraphQL React 앱을 확인할 수 있습니다. 이 외부 앱을 사용하여 GraphQL에서 AEM으로 전화를 걸어 경험을 향상시키는 방법을 알아봅니다. 기본적인 오류 처리를 수행하는 방법을 알아봅니다.
-sub-product: assets
-topics: headless
 version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
 mini-toc-levels: 1
 kt: 6716
 thumbnail: KT-6716.jpg
@@ -14,9 +9,9 @@ feature: 컨텐츠 조각, GraphQL API
 topic: 헤드리스, 컨텐츠 관리
 role: Developer
 level: Beginner
-source-git-commit: 81626b8d853f3f43d9c51130acf02561f91536ac
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1404'
+source-wordcount: '1403'
 ht-degree: 0%
 
 ---
@@ -203,7 +198,7 @@ React 앱을 시작하는 방법은 [빠른 설정](./setup.md) 장에 더 자�
 
 다음으로, React 앱을 수정하여 매개 변수화된 GraphQL 쿼리를 수행하여 모험의 활동으로 홈 보기를 제한합니다.
 
-1. IDE에서 파일을 엽니다.`src/components/Adventures.js` 이 파일은 어드벤처 카드를 쿼리하고 표시하는 홈 경험의 어드벤처 구성 요소를 나타냅니다.
+1. IDE에서 파일을 엽니다. `src/components/Adventures.js` 이 파일은 어드벤처 카드를 쿼리하고 표시하는 홈 경험의 어드벤처 구성 요소를 나타냅니다.
 1. Inspect은 사용하지 않지만 `activity`에 의해 모험을 필터링하는 GraphQL 쿼리를 만들 수 있도록 준비되었습니다.`filterQuery(activity)`
 
    `activity` 매개 변수는 `adventureActivity` 필드에서 `filter` 의 일부로 GraphQL 쿼리에 삽입되므로 해당 필드의 값이 매개 변수의 값과 일치해야 합니다.
@@ -268,7 +263,7 @@ React 앱을 시작하는 방법은 [빠른 설정](./setup.md) 장에 더 자�
 
    ![활동별로 모험 필터링](./assets/graphql-and-external-app/filter-by-activity.png)
 
-1. 활동에 대한 필터링 단추를 더 추가해 보십시오.`Rock Climbing`, `Cycling` 및 `Skiing`
+1. 활동에 대한 필터링 단추를 더 추가해 보십시오. `Rock Climbing`, `Cycling` 및 `Skiing`
 
 ## GraphQL 오류 처리
 
