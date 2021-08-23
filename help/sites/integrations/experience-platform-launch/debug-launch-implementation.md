@@ -11,10 +11,10 @@ thumbnail: 38567.jpg
 topic: 통합
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '102'
-ht-degree: 2%
+source-wordcount: '99'
+ht-degree: 3%
 
 ---
 
@@ -27,4 +27,4 @@ Launch 구현을 디버깅하는 데 사용되는 일반적인 도구와 기술�
 
 ## 추가 리소스 {#additional-resources}
 
-* [Adobe Experience Platform Debugger 소개](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/web-sdk/introduction-to-the-experience-platform-debugger.html)
+* [Adobe Experience Platform Debugger 소개](https://experienceleague.adobe.com/docs/debugger-learn/tutorials/experience-platform-debugger/introduction-to-the-experience-platform-debugger.html)
