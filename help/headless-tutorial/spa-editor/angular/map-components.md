@@ -13,15 +13,15 @@ thumbnail: 5311-spa-angular.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: bf9ab30f57faa23721d7d27b837d8e0f0e8cf4f1
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '2390'
-ht-degree: 1%
+source-wordcount: '2384'
+ht-degree: 0%
 
 ---
 
 
-# SPA 구성 요소를 AEM 구성 요소 {#map-components}에 매핑
+# AEM 구성 요소에 SPA 구성 요소 매핑 {#map-components}
 
 AEM SPA Editor JS SDK를 사용하여 AEM(Adobe Experience Manager) 구성 요소에 Angular 구성 요소를 매핑하는 방법을 알아봅니다. 구성 요소 매핑을 사용하면 기존 AEM 작성과 유사하게 AEM SPA 편집기 내에서 SPA 구성 요소를 동적으로 업데이트할 수 있습니다.
 
@@ -77,7 +77,7 @@ AEM SPA Editor JS SDK를 사용하여 AEM(Adobe Experience Manager) 구성 요�
 
 ## 텍스트 구성 요소의 Inspect
 
-[AEM Project Archetype](https://github.com/adobe/aem-project-archetype)은 AEM [텍스트 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/text.html)에 매핑되는 `Text` 구성 요소를 제공합니다. AEM에서 *content*&#x200B;를 렌더링한다는 점에서 **content** 구성 요소의 예입니다.
+[AEM Project Archetype](https://github.com/adobe/aem-project-archetype)은 AEM [텍스트 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html)에 매핑되는 `Text` 구성 요소를 제공합니다. AEM에서 *content*&#x200B;를 렌더링한다는 점에서 **content** 구성 요소의 예입니다.
 
 구성 요소가 어떻게 작동하는지 살펴보겠습니다.
 
@@ -88,7 +88,7 @@ AEM SPA Editor JS SDK를 사용하여 AEM(Adobe Experience Manager) 구성 요�
 
    ![텍스트 JSON 모델](./assets/map-components/text-json.png)
 
-   다음 세 가지 속성이 표시됩니다.`text`, `richText` 및 `:type`
+   다음 세 가지 속성이 표시됩니다. `text`, `richText` 및 `:type`
 
    `:type` 는 AEM 구성 요소의  `sling:resourceType` (또는 경로)를 나열하는 예약된 속성입니다. `:type` 값은 AEM 구성 요소를 SPA 구성 요소에 매핑하는 데 사용되는 값입니다.
 
@@ -201,7 +201,7 @@ AEM SPA Editor JS SDK를 사용하여 AEM(Adobe Experience Manager) 구성 요�
 
 ## 이미지 구성 요소 만들기
 
-다음으로 AEM [이미지 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/image.html)에 매핑된 `Image` Angular 구성 요소를 만듭니다. `Image` 구성 요소는 **content** 구성 요소의 다른 예입니다.
+다음으로 AEM [이미지 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html)에 매핑된 `Image` Angular 구성 요소를 만듭니다. `Image` 구성 요소는 **content** 구성 요소의 다른 예입니다.
 
 ### JSON의 Inspect
 
@@ -352,7 +352,7 @@ SPA 코드로 이동하기 전에 AEM에서 제공하는 JSON 모델을 검사�
 
    >[!NOTE]
    >
-   > **보너스 문제**:이미지 아래에 의 값을  `title` 캡션으로 표시하려면 새 메서드를 구현합니다.
+   > **보너스 문제**: 이미지 아래에 의 값을  `title` 캡션으로 표시하려면 새 메서드를 구현합니다.
 
 ## AEM에서 정책 업데이트
 
@@ -437,7 +437,7 @@ SPA 코드로 이동하기 전에 AEM에서 제공하는 JSON 모델을 검사�
 
    **레이아웃 컨테이너** 구성 요소에는 `wcm/foundation/components/responsivegrid`의 `sling:resourceType`가 있으며, `Text` 및 `Image` 구성 요소처럼 `:type` 속성을 사용하여 SPA 편집기에서 인식됩니다.
 
-   SPA 편집기에서 [레이아웃 모드](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/siteandpage/responsive-layout.html#defining-layouts-layout-mode)를 사용하여 구성 요소의 크기를 다시 조정하는 동일한 기능을 사용할 수 있습니다.
+   SPA 편집기에서 [레이아웃 모드](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html#defining-layouts-layout-mode)를 사용하여 구성 요소의 크기를 다시 조정하는 동일한 기능을 사용할 수 있습니다.
 
 3. [http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html)로 돌아갑니다. **이미지** 구성 요소를 더 추가하고 **레이아웃** 옵션을 사용하여 구성 요소의 크기를 다시 조정해 보십시오.
 
