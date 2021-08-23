@@ -10,9 +10,9 @@ feature: Dynamic Media Classic
 topic: 컨텐츠 관리
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '897'
 ht-degree: 1%
 
 ---
@@ -45,7 +45,7 @@ Dynamic Media Classic은 고객이 리치 미디어 컨텐츠를 작성, 작성 
 - **비디오.** 최종 비디오를 업로드하고 게시한 다음 구성 가능한 비디오 뷰어에 점진적으로 다운로드합니다.
 - **스마트 이미징.** Adobe Sensei AI 기능을 활용하고 기존 &quot;이미지 사전 설정&quot;과 함께 사용하면 클라이언트 브라우저 기능을 기반으로 이미지 형식, 크기 및 품질을 자동으로 최적화하여 이미지 전달 성능을 향상시킬 수 있습니다.
 
-솔루션의 추가 기능을 살펴보려면 [Dynamic Media Classic 설명서](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/intro/introduction.html)를 방문하십시오.
+솔루션의 추가 기능을 살펴보려면 [Dynamic Media Classic 설명서](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/introduction.html)를 방문하십시오.
 
 ## Dynamic Media Classic 사용자 인터페이스(UI)
 
@@ -75,4 +75,4 @@ _Dynamic Media 클래식 UI_
 >
 >업로드 대화 상자에서 **업로드 후 게시** 확인란을 선택하여 업로드 시 자산을 자동으로 게시합니다.
 
-[Dynamic Media Classic UI 탐색](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/getting-started/navigation-basics.html)에 대해 자세히 알아보십시오.
+[Dynamic Media Classic UI 탐색](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/navigation-basics.html)에 대해 자세히 알아보십시오.
