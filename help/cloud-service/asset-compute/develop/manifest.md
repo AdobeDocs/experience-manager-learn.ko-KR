@@ -12,9 +12,9 @@ thumbnail: KT-6281.jpg
 topic: 통합, 개발
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '438'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ asset compute 프로젝트의 루트에 있는 `manifest.yml`은 이 프로젝�
 
 작업자는 `actions` 아래에 Adobe I/O Runtime 작업 항목으로 정의되며 구성 세트로 구성됩니다.
 
-다른 Adobe I/O 통합에 액세스하는 작업자는 `annotations -> require-adobe-auth` 속성을 `true`으로 설정해야 합니다. 이 [는 `params.auth` 개체를 통해 작업자의 Adobe I/O 자격 증명](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#access-adobe-apis)을 노출하기 때문입니다. 일반적으로 작업자가 Adobe Photoshop, Lightroom 또는 Sensei API와 같은 Adobe I/O API를 호출하고 작업자별로 전환할 수 있는 경우에 필요합니다.
+다른 Adobe I/O 통합에 액세스하는 작업자는 `annotations -> require-adobe-auth` 속성을 `true`으로 설정해야 합니다. 이 [는 `params.auth` 개체를 통해 작업자의 Adobe I/O 자격 증명](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#access-adobe-apis)을 노출하기 때문입니다. 일반적으로 작업자가 Adobe Photoshop, Lightroom 또는 Sensei API와 같은 Adobe I/O API를 호출하고 작업자별로 전환할 수 있는 경우에 필요합니다.
 
 1. 자동 생성된 작업자 `manifest.yml`를 열고 검토합니다. 여러 Asset compute 작업자를 포함하는 프로젝트는 `actions` 배열 아래에 각 작업자에 대한 항목을 정의해야 합니다.
 
@@ -53,7 +53,7 @@ packages:
 
 각 작업자는 Adobe I/O Runtime에서 해당 실행 컨텍스트에 대해 [limits](https://www.adobe.io/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/guides/system_settings.md)를 구성할 수 있습니다. 이러한 값은 작업 유형과 함께 계산될 자산의 볼륨, 비율 및 유형에 따라 작업자에게 최적의 크기 조정을 제공하도록 조정되어야 합니다.
 
-제한을 설정하기 전에 [Adobe 크기 조정 지침](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#sizing-workers)을 검토하십시오. asset compute 작업자는 자산을 처리할 때 메모리가 부족하여 Adobe I/O Runtime 실행이 중단될 수 있으므로, 작업자 크기가 모든 후보 자산을 처리할 수 있도록 적절히 조정됩니다.
+제한을 설정하기 전에 [Adobe 크기 조정 지침](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#sizing-workers)을 검토하십시오. asset compute 작업자는 자산을 처리할 때 메모리가 부족하여 Adobe I/O Runtime 실행이 중단될 수 있으므로, 작업자 크기가 모든 후보 자산을 처리할 수 있도록 적절히 조정됩니다.
 
 1. 새 `wknd-asset-compute` 작업 항목에 `inputs` 섹션을 추가합니다. 이를 통해 Asset compute 작업자의 전체 성능 및 자원 할당을 조정할 수 있습니다.
 
