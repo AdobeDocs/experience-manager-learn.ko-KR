@@ -13,10 +13,10 @@ thumbnail: 5309-spa-angular.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: bf9ab30f57faa23721d7d27b837d8e0f0e8cf4f1
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1115'
-ht-degree: 3%
+source-wordcount: '1111'
+ht-degree: 2%
 
 ---
 
@@ -90,7 +90,7 @@ AEM용 Maven 다중 모듈 프로젝트를 만드는 옵션은 몇 가지가 있
 
    >[!NOTE]
    >
-   > `frontendModule=angular` 속성을 확인합니다. 이렇게 하면 AEM Project Archetype에 AEM SPA 편집기와 함께 사용할 시작 [Angular 코드 기본](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html)을 사용하여 프로젝트를 부트스트랩하도록 지시합니다.
+   > `frontendModule=angular` 속성을 확인합니다. 이렇게 하면 AEM Project Archetype에 AEM SPA 편집기와 함께 사용할 시작 [Angular 코드 기본](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html)을 사용하여 프로젝트를 부트스트랩하도록 지시합니다.
 
 ## 프로젝트 빌드
 
@@ -141,7 +141,7 @@ AEM용 Maven 다중 모듈 프로젝트를 만드는 옵션은 몇 가지가 있
 
    Maven 프로필 ***autoInstallSinglePackage***&#x200B;은 프로젝트의 개별 모듈을 컴파일하고 단일 패키지를 AEM 인스턴스에 배포합니다. 기본적으로 이 패키지는 **4502** 포트에서 로컬로 실행되는 AEM 인스턴스에 배포되고 **admin:admin**&#x200B;의 자격 증명이 있습니다.
 
-4. 로컬 AEM 인스턴스에서 **[!UICONTROL 패키지 관리자]**&#x200B;로 이동합니다.[http://localhost:4502/crx/packmgr/index.jsp](http://localhost:4502/crx/packmgr/index.jsp)
+4. 로컬 AEM 인스턴스에서 **[!UICONTROL 패키지 관리자]**&#x200B;로 이동합니다. [http://localhost:4502/crx/packmgr/index.jsp](http://localhost:4502/crx/packmgr/index.jsp)
 
 5. `wknd-spa-angular.all`, `wknd-spa-angular.ui.apps` 및 `wknd-spa-angular.ui.content`에 대한 세 개의 패키지가 표시됩니다.
 
@@ -149,13 +149,13 @@ AEM용 Maven 다중 모듈 프로젝트를 만드는 옵션은 몇 가지가 있
 
    프로젝트에 필요한 모든 사용자 지정 코드는 이러한 패키지에 번들로 제공되며 AEM 런타임에 설치됩니다.
 
-6. `spa.project.core` 및 `core.wcm.components`에 대한 여러 패키지가 표시되어야 합니다. 이러한 종속성은 원형 유형에 의해 자동으로 포함되는 종속성입니다. [AEM 코어 구성 요소에 대한 자세한 내용은 여기](https://docs.adobe.com/content/help/ko/experience-manager-core-components/using/introduction.html)에 있습니다.
+6. `spa.project.core` 및 `core.wcm.components`에 대한 여러 패키지가 표시되어야 합니다. 이러한 종속성은 원형 유형에 의해 자동으로 포함되는 종속성입니다. [AEM 코어 구성 요소에 대한 자세한 내용은 여기](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)에 있습니다.
 
 ## 컨텐츠 작성
 
 그런 다음 원형에서 생성된 시작 SPA을 열고 일부 컨텐츠를 업데이트합니다.
 
-1. **[!UICONTROL 사이트]** 콘솔로 이동합니다.[http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content)
+1. **[!UICONTROL 사이트]** 콘솔로 이동합니다. [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content)
 
    WKND SPA에는 국가, 언어 및 홈 페이지가 포함된 기본 사이트 구조가 포함되어 있습니다. 이 계층 구조는 `language_country` 및 `isSingleCountryWebsite`에 대한 원형 유형의 기본값을 기반으로 합니다. 이러한 값은 프로젝트를 생성할 때 [사용 가능한 속성](https://github.com/adobe/aem-project-archetype#available-properties)을 업데이트하여 덮어쓸 수 있습니다.
 
@@ -179,7 +179,7 @@ AEM용 Maven 다중 모듈 프로젝트를 만드는 옵션은 몇 가지가 있
 
    ![게시됨으로 보기 단추](./assets/create-project/view-as-published.png)
 
-   이렇게 하면 쿼리 매개 변수 `?wcmmode=disabled`을 사용하여 새 탭이 열리고 AEM 편집기가 효과적으로 꺼집니다.[http://localhost:4502/content/wknd-spa-angular/us/en/home.html?wcmmode=disabled](http://localhost:4502/content/wknd-spa-angular/us/en/home.html?wcmmode=disabled)
+   이렇게 하면 쿼리 매개 변수 `?wcmmode=disabled`을 사용하여 새 탭이 열리고 AEM 편집기가 효과적으로 꺼집니다. [http://localhost:4502/content/wknd-spa-angular/us/en/home.html?wcmmode=disabled](http://localhost:4502/content/wknd-spa-angular/us/en/home.html?wcmmode=disabled)
 
 2. 페이지의 소스를 보고 텍스트 콘텐츠 **[!DNL Hello World]** 또는 다른 콘텐츠를 찾을 수 없습니다. 대신 다음과 같은 HTML이 표시됩니다.
 
@@ -198,7 +198,7 @@ AEM용 Maven 다중 모듈 프로젝트를 만드는 옵션은 몇 가지가 있
 
    *컨텐츠는 어디에서 얻습니까?*
 
-3. 탭으로 돌아갑니다.[http://localhost:4502/content/wknd-spa-angular/us/en/home.html?wcmmode=disabled](http://localhost:4502/content/wknd-spa-angular/us/en/home.html?wcmmode=disabled)
+3. 탭으로 돌아갑니다. [http://localhost:4502/content/wknd-spa-angular/us/en/home.html?wcmmode=disabled](http://localhost:4502/content/wknd-spa-angular/us/en/home.html?wcmmode=disabled)
 4. 새로 고침 중에 브라우저의 개발자 도구를 열고 페이지의 네트워크 트래픽을 검사합니다. **XHR** 요청을 봅니다.
 
    ![XHR 요청](./assets/create-project/xhr-requests.png)
