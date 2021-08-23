@@ -11,9 +11,9 @@ thumbnail: 41244.jpg
 topic: 통합
 role: Admin
 level: Intermediate
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '144'
+source-wordcount: '142'
 ht-degree: 0%
 
 ---
@@ -29,5 +29,5 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->비디오에 표시된 Adobe Target Cloud Services 구성에 대해 알려진 문제가 있습니다. 이 문제가 해결될 때까지 비디오에서 동일한 단계를 따르지만 [기존 Adobe Target Cloud Services 구성](https://docs.adobe.com/content/help/en/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-aem-cloud-services.html)을 사용하십시오.
+>비디오에 표시된 Adobe Target Cloud Services 구성에 대해 알려진 문제가 있습니다. 이 문제가 해결될 때까지 비디오에서 동일한 단계를 따르지만 [기존 Adobe Target Cloud Services 구성](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-aem-cloud-services.html)을 사용하십시오.
 
