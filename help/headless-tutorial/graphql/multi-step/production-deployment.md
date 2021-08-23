@@ -1,18 +1,17 @@
 ---
 title: AEM 게시 서비스를 사용한 프로덕션 배포 - AEM 헤드리스 시작하기 - GraphQL
 description: AEM 작성자 및 게시 서비스 및 헤드리스 애플리케이션에 대한 권장 배포 패턴에 대해 알아봅니다. 이 자습서에서는 환경 변수를 사용하여 대상 환경을 기반으로 GraphQL 엔드포인트를 동적으로 변경하는 방법을 알아봅니다. CORS(원본 간 리소스 공유)를 위해 AEM을 올바르게 구성하는 방법을 알아봅니다.
-sub-product: assets
-topics: headless
 version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
+feature: 컨텐츠 조각, GraphQL API
+topic: 헤드리스, 컨텐츠 관리
+role: Developer
+level: Beginner
 mini-toc-levels: 1
 kt: 7131
 thumbnail: KT-7131.jpg
-source-git-commit: 81626b8d853f3f43d9c51130acf02561f91536ac
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '2361'
+source-wordcount: '2367'
 ht-degree: 1%
 
 ---
@@ -81,17 +80,17 @@ AEM 헤드리스 애플리케이션을 사용하는 가장 일반적인 배포 �
 
    404 찾을 수 없음 페이지를 반환합니다. 완전히 새로운 AEM 인스턴스이며, 설치된 컨텐츠가 없습니다.
 
-## 샘플 컨텐츠 및 GraphQL 엔드포인트 {#wknd-site-content-endpoints} 설치
+## 샘플 컨텐츠 및 GraphQL 엔드포인트 설치 {#wknd-site-content-endpoints}
 
 작성자 인스턴스와 마찬가지로 게시 인스턴스에도 GraphQL 엔드포인트가 활성화되어 있어야 하며 샘플 컨텐츠가 필요합니다. 그런 다음 게시 인스턴스에 WKND 참조 사이트를 설치합니다.
 
-1. WKND Site용 최신 컴파일된 AEM 패키지를 다운로드합니다.[aem-guides-wknd.all-x.x.zip](https://github.com/adobe/aem-guides-wknd/releases/latest).
+1. WKND Site용 최신 컴파일된 AEM 패키지를 다운로드합니다. [aem-guides-wknd.all-x.x.zip](https://github.com/adobe/aem-guides-wknd/releases/latest).
 
    >[!NOTE]
    >
    > AEM as a Cloud Service과 호환되는 표준 버전을 다운로드하십시오. **버전이 아닌**&#x200B;을 다운로드하십시오. `classic`
 
-1. 다음 위치로 직접 이동하여 게시 인스턴스에 로그인합니다.[http://localhost:4503/libs/granite/core/content/login.html](http://localhost:4503/libs/granite/core/content/login.html)(사용자 이름 `admin`)과 암호 `admin`가 있는 경우).
+1. 다음 위치로 직접 이동하여 게시 인스턴스에 로그인합니다. [http://localhost:4503/libs/granite/core/content/login.html](http://localhost:4503/libs/granite/core/content/login.html)(사용자 이름 `admin`)과 암호 `admin`가 있는 경우).
 1. 다음으로 [http://localhost:4503/crx/packmgr/index.jsp](http://localhost:4503/crx/packmgr/index.jsp)의 패키지 관리자로 이동합니다.
 1. **패키지 업로드**&#x200B;를 클릭하고 이전 단계에서 다운로드한 WKND 패키지를 선택합니다. **설치**&#x200B;를 클릭하여 패키지를 설치합니다.
 1. 패키지를 설치한 후 WKND 참조 사이트를 이제 [http://localhost:4503/content/wknd/us/en.html](http://localhost:4503/content/wknd/us/en.html)에서 사용할 수 있습니다.
@@ -101,7 +100,7 @@ AEM 헤드리스 애플리케이션을 사용하는 가장 일반적인 배포 �
 
    AEM 작성자 인스턴스와 달리 AEM 게시 인스턴스는 기본적으로 익명 읽기 전용 액세스로 설정됩니다. React 응용 프로그램을 실행할 때 익명의 사용자의 경험을 시뮬레이션하려고 합니다.
 
-## 환경 변수를 업데이트하여 게시 인스턴스 {#react-app-publish}
+## 게시 인스턴스를 가리키도록 환경 변수 업데이트 {#react-app-publish}
 
 그런 다음 React 애플리케이션에서 사용하는 환경 변수를 업데이트하여 게시 인스턴스를 가리킵니다. React 앱은 **만 프로덕션 모드에서 게시 인스턴스에 연결해야 합니다.**
 
@@ -125,7 +124,7 @@ AEM 헤드리스 애플리케이션을 사용하는 가장 일반적인 배포 �
    >
    > 게시 환경은 기본적으로 컨텐츠에 익명 액세스를 제공하므로 인증 정보가 포함되지 않습니다.
 
-## 정적 노드 서버 {#static-server} 배포
+## 정적 노드 서버 배포 {#static-server}
 
 React 앱은 웹 팩 서버를 사용하여 시작할 수 있지만 개발용입니다. 다음으로, [serve](https://github.com/vercel/serve)을 사용하여 Node.js를 사용하여 React 앱의 프로덕션 빌드를 호스팅하여 프로덕션 배포를 시뮬레이션합니다.
 
@@ -301,7 +300,7 @@ React 앱은 웹 팩 서버를 사용하여 시작할 수 있지만 개발용입
 
    ![손상된 이미지 수정](assets/publish-deployment/broken-images-fixed.png)
 
-## 컨텐츠 게시 시뮬레이트 {#content-publish}
+## 컨텐츠 게시 시뮬레이션 {#content-publish}
 
 Adventure Details 페이지가 요청될 때 `adventureContributor`에 대해 GraphQL 오류가 발생합니다. **기여자** 컨텐츠 조각 모델이 아직 게시 인스턴스에 없습니다. **Adventure** 컨텐츠 조각 모델에 대한 업데이트도 게시 인스턴스에서도 사용할 수 없습니다. 이러한 변경 사항은 작성자 인스턴스에 직접 적용되었으며 게시 인스턴스에 배포해야 합니다.
 
