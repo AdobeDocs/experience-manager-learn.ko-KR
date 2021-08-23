@@ -13,9 +13,9 @@ thumbnail: KT-6279.jpg
 topic: 개발
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '444'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 1%
 # 작업 알림 할당 사용자 지정
 
 작업 할당 구성 요소는 워크플로우 참가자에게 작업을 할당하는 데 사용됩니다. 작업이 사용자 또는 그룹에 할당되면 정의된 사용자 또는 그룹 구성원에게 전자 메일 알림이 전송됩니다.
-이 전자 메일 알림은 일반적으로 작업과 관련된 동적 데이터를 포함합니다. 시스템에서 생성한 [메타데이터 속성](https://docs.adobe.com/content/help/en/experience-manager-65/forms/publish-process-aem-forms/use-metadata-in-email-notifications.html#using-system-generated-metadata-in-an-email-notification)을 사용하여 이 동적 데이터를 가져옵니다.
+이 전자 메일 알림은 일반적으로 작업과 관련된 동적 데이터를 포함합니다. 시스템에서 생성한 [메타데이터 속성](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/use-metadata-in-email-notifications.html#using-system-generated-metadata-in-an-email-notification)을 사용하여 이 동적 데이터를 가져옵니다.
 전자 메일 알림에 제출된 양식 데이터의 값을 포함하려면 사용자 지정 메타데이터 속성을 만든 다음 전자 메일 템플릿에서 이러한 사용자 지정 메타데이터 속성을 사용해야 합니다
 
 
@@ -130,7 +130,7 @@ OSGi 구성 요소가 빌드되어 AEM 서버에 배포되면 사용자 지정 �
 
 ## 서버에서 사용하려면 다음을 수행하십시오
 
-* [일 CQ 메일 서비스 구성](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)
+* [일 CQ 메일 서비스 구성](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)
 * 올바른 전자 메일 ID를 [관리 사용자](http://localhost:4502/security/users.html)와 연결
 * [패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp)를 사용하여 [Workflow-and-notification-template](assets/workflow-and-task-notification-template.zip)을 다운로드하여 설치합니다
 * [적응형 양식](assets/request-travel-authorization.zip)을 다운로드하고 [양식 및 문서 ui](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)에서 AEM으로 가져옵니다.
