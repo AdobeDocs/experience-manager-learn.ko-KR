@@ -6,9 +6,9 @@ version: 6.3, 6.4, 6.5
 topic: 컨텐츠 관리
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1774'
+source-wordcount: '1767'
 ht-degree: 2%
 
 ---
@@ -30,7 +30,7 @@ Brand Portal의 자산 소싱은 타사 에이전시 및 팀에서 자산을 수
 
 *자산 소싱을 사용하려면 Experience Manager 작성자 6.5 SP2(6.5.2) 이상이 필요합니다*
 
-Experience Manager 작성자에 대한 자산 소싱을 구성 및 설정하는 방법에 대한 지침은 [자산 소싱용 Experience Manager 작성자 활성화](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/configure-asset-sourcing-in-aem/brand-portal-enable-asset-sourcing.html)를 검토하십시오.
+Experience Manager 작성자에 대한 자산 소싱을 구성 및 설정하는 방법에 대한 지침은 [자산 소싱용 Experience Manager 작성자 활성화](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/configure-asset-sourcing-in-aem/brand-portal-enable-asset-sourcing.html)를 검토하십시오.
 
 ## Brand Portal 2019년 2월 기능 및 개선 사항{#brand-portal-features-and-enhancements-644}
 
@@ -206,6 +206,6 @@ Brand Portal과 AEM을 정렬하는 데 초점을 맞춘 새로운 기능이 향
 * [AEM 작성자 복제 에이전트](https://helpx.adobe.com/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html)
 * [가속 다운로드 안내서](https://helpx.adobe.com/experience-manager/brand-portal/using/accelerated-download.html#main-pars_header)
 * [AEM Assets Brand Portal Adobe 문서](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal.html)
-* [AEM Assets Dynamic Media Adobe 문서](https://docs.adobe.com/docs/ko/aem/6-3/author/assets/dynamic-media.html)
+* [AEM Assets Dynamic Media Adobe 문서](https://experienceleague.adobe.com/docs/)
 * [Aspera Connect 다운로드](https://downloads.asperasoft.com/connect2/)
 * [Aspera Connect Test Server](https://test-connect.asperasoft.com/)
