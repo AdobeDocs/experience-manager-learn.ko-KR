@@ -1,13 +1,13 @@
 ---
 title: AEM 헤드리스 시작하기 - GraphQL
 description: AEM GraphQL API 및 기능에 대한 개요입니다.
-feature: 컨텐츠 조각, API
+feature: 컨텐츠 조각, GraphQL API, API
 topic: 헤드리스, 컨텐츠 관리
 role: Developer
 level: Beginner
-source-git-commit: 22829f532f7791af14919af24650b4593fe89ae8
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '250'
+source-wordcount: '252'
 ht-degree: 1%
 
 ---
