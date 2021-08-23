@@ -12,10 +12,10 @@ thumbnail: 32550.jpg
 topic: 개발
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '81'
-ht-degree: 28%
+source-wordcount: '79'
+ht-degree: 16%
 
 ---
 
@@ -29,4 +29,4 @@ AEM 프로젝트에는 구현에 대한 모든 코드와 구성이 포함되어 
 ## 추가 리소스 {#additional-resources}
 
 * [GitHub 프로젝트](https://github.com/adobe/aem-project-archetype)
-* [AEM 프로젝트 원형 설명서](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/developing/archetype/overview.html)
+* [AEM 프로젝트 원형 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
