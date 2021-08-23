@@ -10,9 +10,9 @@ doc-type: tutorial
 topic: 개발
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '4652'
+source-wordcount: '4585'
 ht-degree: 0%
 
 ---
@@ -41,13 +41,13 @@ AEM Projects에는 여러 [OOTB 프로젝트 템플릿](https://helpx.adobe.com/
 * [완료된 자습서 패키지](./assets/develop-aem-projects/projects-tasks-guide.ui.apps-0.0.1-SNAPSHOT.zip)
 * [GitHub의 전체 코드 리포지토리](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/feature/projects-tasks-guide)
 
-이 자습서에서는 [AEM 개발 사례](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/the-basics.html)에 대한 몇 가지 기본 지식과 [AEM Maven 프로젝트 설정](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/ht-projects-maven.html)에 대해 잘 알고 있다고 가정합니다. 언급된 모든 코드는 참조용으로 사용되며 [로컬 개발 AEM 인스턴스](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#GettingStarted)에만 배포해야 합니다.
+이 자습서에서는 [AEM 개발 사례](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/the-basics.html)에 대한 몇 가지 기본 지식과 [AEM Maven 프로젝트 설정](https://helpx.adobe.com/kr/experience-manager/6-5/sites/developing/using/ht-projects-maven.html)에 대해 잘 알고 있다고 가정합니다. 언급된 모든 코드는 참조용으로 사용되며 [로컬 개발 AEM 인스턴스](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#GettingStarted)에만 배포해야 합니다.
 
 ## 프로젝트 템플릿 구조
 
-프로젝트 템플릿은 소스 제어 하에 두어야 하며 /apps 아래의 애플리케이션 폴더 아래에 있어야 합니다. 이러한 폴더는 ***/projects/templates/**&lt;my-template>의 이름 지정 규칙이 있는 하위 폴더에 배치하는 것이 좋습니다. 이러한 명명 규칙을 지정하면 프로젝트를 만들 때 작성자가 새로운 사용자 지정 템플릿을 자동으로 사용할 수 있게 됩니다. 사용 가능한 프로젝트 템플릿의 구성은 다음 위치에서 설정됩니다.**/content/projects/jcr:content** 노드(**cq:allowedTemplates** 속성) 기본적으로 정규 표현식입니다.**/(apps|libs)/*/projects/templates/.***
+프로젝트 템플릿은 소스 제어 하에 두어야 하며 /apps 아래의 애플리케이션 폴더 아래에 있어야 합니다. 이러한 폴더는 ***/projects/templates/**&lt;my-template>의 이름 지정 규칙이 있는 하위 폴더에 배치하는 것이 좋습니다. 이러한 명명 규칙을 지정하면 프로젝트를 만들 때 작성자가 새로운 사용자 지정 템플릿을 자동으로 사용할 수 있게 됩니다. 사용 가능한 프로젝트 템플릿의 구성은 다음 위치에서 설정됩니다. **/content/projects/jcr:content** 노드(**cq:allowedTemplates** 속성) 기본적으로 정규 표현식입니다. **/(apps|libs)/*/projects/templates/.***
 
-프로젝트 템플릿의 루트 노드에는 **jcr:primaryType** cq:Template **이 있습니다.** 의 루트 노드 아래에 3개의 노드가 있습니다.**가젯**, **역할** 및 **워크플로우**. 이러한 노드는 모두 **nt:un구조화되지 않음**&#x200B;입니다. 루트 노드 아래에는 프로젝트 만들기 마법사에서 템플릿을 선택할 때 표시되는 thumbnail.png 파일도 있을 수 있습니다.
+프로젝트 템플릿의 루트 노드에는 **jcr:primaryType** cq:Template **이 있습니다.** 의 루트 노드 아래에 3개의 노드가 있습니다. **가젯**, **역할** 및 **워크플로우**. 이러한 노드는 모두 **nt:un구조화되지 않음**&#x200B;입니다. 루트 노드 아래에는 프로젝트 만들기 마법사에서 템플릿을 선택할 때 표시되는 thumbnail.png 파일도 있을 수 있습니다.
 
 전체 노드 구조:
 
@@ -63,19 +63,19 @@ AEM Projects에는 여러 [OOTB 프로젝트 템플릿](https://helpx.adobe.com/
 
 ### 프로젝트 템플릿 루트
 
-프로젝트 템플릿의 루트 노드는 **cq:Template** 유형이 됩니다. 이 노드에서 프로젝트 만들기 마법사에 표시할 속성 **jcr:title** 및 **jcr:description**&#x200B;을 구성할 수 있습니다. 프로젝트의 속성을 채울 양식을 가리키는 **마법사**&#x200B;라는 속성도 있습니다. 기본값은 다음과 같습니다.**/libs/cq/core/content/projects/wizard/steps/defaultproject.html**&#x200B;은 사용자가 기본 프로젝트 속성을 채우고 그룹 구성원을 추가할 수 있도록 하므로 대부분의 경우 제대로 작동해야 합니다.
+프로젝트 템플릿의 루트 노드는 **cq:Template** 유형이 됩니다. 이 노드에서 프로젝트 만들기 마법사에 표시할 속성 **jcr:title** 및 **jcr:description**&#x200B;을 구성할 수 있습니다. 프로젝트의 속성을 채울 양식을 가리키는 **마법사**&#x200B;라는 속성도 있습니다. 기본값은 다음과 같습니다. **/libs/cq/core/content/projects/wizard/steps/defaultproject.html**&#x200B;은 사용자가 기본 프로젝트 속성을 채우고 그룹 구성원을 추가할 수 있도록 하므로 대부분의 경우 제대로 작동해야 합니다.
 
 **프로젝트 만들기 마법사는 Sling POST 서블릿을 사용하지 않습니다. 대신 값이 사용자 지정 서블릿에 게시됩니다.**com.adobe.cq.projects.impl.servlet.ProjectServlet**사용자 지정 필드를 추가할 때 이를 고려해야 합니다.*
 
-사용자 지정 마법사의 예는 번역 프로젝트 템플릿에 대해 찾을 수 있습니다.**/libs/cq/core/content/projects/wizard/translationproject/defaultproject**
+사용자 지정 마법사의 예는 번역 프로젝트 템플릿에 대해 찾을 수 있습니다. **/libs/cq/core/content/projects/wizard/translationproject/defaultproject**
 
 ### 가젯 {#gadgets}
 
-이 노드에는 추가 속성이 없지만 가젯 노드의 하위는 새 프로젝트를 만들 때 프로젝트 타일이 프로젝트 대시보드를 채우는 것을 제어합니다. [프로젝트 타일](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects.html#ProjectTiles) (가젯 또는 포드라고도 함)은 프로젝트의 작업 공간을 채우는 간단한 카드입니다. ootb 타일의 전체 목록은 다음 위치에서 찾을 수 있습니다.**/libs/cq/gui/components/projects/admin/pod **프로젝트를 만든 후에는 항상 타일을 추가/제거할 수 있습니다.
+이 노드에는 추가 속성이 없지만 가젯 노드의 하위는 새 프로젝트를 만들 때 프로젝트 타일이 프로젝트 대시보드를 채우는 것을 제어합니다. [프로젝트 타일](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects.html#ProjectTiles) (가젯 또는 포드라고도 함)은 프로젝트의 작업 공간을 채우는 간단한 카드입니다. ootb 타일의 전체 목록은 다음 위치에서 찾을 수 있습니다. **/libs/cq/gui/components/projects/admin/pod **프로젝트를 만든 후에는 항상 타일을 추가/제거할 수 있습니다.
 
 ### 역할 {#roles}
 
-모든 프로젝트에 3개의 [기본 역할](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects.html#UserRolesinaProject)이 있습니다.**관찰자**, **편집자** 및 **소유자** 역할 노드 아래에 하위 노드를 추가하면 템플릿에 대한 비즈니스 특정 프로젝트 역할을 추가할 수 있습니다. 그런 다음 이러한 역할을 프로젝트와 연결된 특정 워크플로우에 연결할 수 있습니다.
+모든 프로젝트에 3개의 [기본 역할](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects.html#UserRolesinaProject)이 있습니다. **관찰자**, **편집자** 및 **소유자** 역할 노드 아래에 하위 노드를 추가하면 템플릿에 대한 비즈니스 특정 프로젝트 역할을 추가할 수 있습니다. 그런 다음 이러한 역할을 프로젝트와 연결된 특정 워크플로우에 연결할 수 있습니다.
 
 ### 워크플로우 {#workflows}
 
@@ -131,7 +131,7 @@ AEM Projects에는 여러 [OOTB 프로젝트 템플릿](https://helpx.adobe.com/
    1. **tasks**&#x200B;라는 authoring-project/gadgets 아래에 새 **nt:un구조화되지 않은** 노드를 추가합니다.
    1. **cardWeight** = &quot;100&quot;, **jcr:title**=&quot;Tasks&quot; 및 **sling:resourceType**=&quot;cq/gui/components/projects/admin/pod/taskpod&quot;에 대한 작업 노드에 문자열 속성을 추가합니다.
 
-   이제 새 프로젝트를 만들 때 기본적으로 [작업 타일](https://docs.adobe.com/docs/en/aem/6-3/author/projects.html#Tasks)이 표시됩니다.
+   이제 새 프로젝트를 만들 때 기본적으로 [작업 타일](https://experienceleague.adobe.com/docs/#Tasks)이 표시됩니다.
 
    ```shell
    ../projects/templates/authoring-project
@@ -154,7 +154,7 @@ AEM Projects에는 여러 [OOTB 프로젝트 템플릿](https://helpx.adobe.com/
    1. 다른 **nt:un구조화되지 않은** 노드를 역할 노드의 하위로 추가합니다.
    1. 문자열 속성 추가 **jcr:title** = &quot;**승인자**&quot;, **롤클래스** =&quot;**소유자**&quot;, **roleid**=&quot;**승인자**&quot;.
       1. 승인자 노드의 이름과 jcr:title 및 roleid는 어떤 문자열 값이든 될 수 있습니다(roleid가 고유한 경우).
-      1. **** roleclasses는  [3개의 OOTB 역할을 기반으로 해당 역할에 적용된 권한을 제어합니다](https://docs.adobe.com/docs/en/aem/6-3/author/projects.html#User Roleclasses in a Project). **소유자**,  **편집자** 및  **관찰자**.
+      1. **** roleclasses는  [3개의 OOTB 역할을 기반으로 해당 역할에 적용된 권한을 제어합니다](https://docs.adobe.com/docs/en/aem/6-3/author/projects.html#User Roleclasses in a Project).  **소유자**,  **편집자** 및  **관찰자**.
       1. 일반적으로 사용자 지정 역할이 관리 역할보다 많은 경우 롤렉클래스는 **owner;**&#x200B;이고, 사진사나 디자이너와 같은 보다 구체적인 작성 역할이면 **editor** 롤렉스가 충분합니다. **owner** 와 **editor** 간의 큰 차이점은 프로젝트 소유자가 프로젝트 속성을 업데이트하고 새 사용자를 프로젝트에 추가할 수 있다는 것입니다.
 
    ```shell
@@ -306,7 +306,7 @@ AEM Projects에는 여러 [OOTB 프로젝트 템플릿](https://helpx.adobe.com/
 
 1. AEM 시작 메뉴에서 도구 -> 워크플로우 -> 모델로 이동합니다. 오른쪽 상단 모서리에서 &#39;만들기&#39;를 클릭하여 새 워크플로우 모델을 만듭니다.
 
-   새 모델에 제목을 지정합니다.&quot;컨텐츠 승인 작업 과정&quot; 및 URL 이름:&quot;content-approval-workflow&quot;.
+   새 모델에 제목을 지정합니다. &quot;컨텐츠 승인 작업 과정&quot; 및 URL 이름: &quot;content-approval-workflow&quot;.
 
    ![워크플로우 만들기 대화 상자](./assets/develop-aem-projects/workflow-create-dialog.png)
 
@@ -395,7 +395,7 @@ AEM Projects에는 여러 [OOTB 프로젝트 템플릿](https://helpx.adobe.com/
 
 1. 이전 단계에서 작업 사전 만들기를 참조했습니다. 이제 워크플로우 메타데이터 값 &quot;**할당자**&quot;의 값을 기반으로 Task의 Assignee를 설정할 스크립트를 만듭니다. 워크플로우가 시작될 때 **&quot;assignee&quot;** 값이 설정됩니다. 또한 첫 번째 작업이 만기될 때 동적으로 설정되도록 워크플로우 메타데이터의 &quot;**taskPriority&quot;** 값과 **&quot;taskDueDate&quot; **를 읽어 작업의 우선순위를 동적으로 선택하는 워크플로우 메타데이터도 읽습니다.
 
-   조직을 위해 앱 폴더 아래에 모든 프로젝트 관련 스크립트를 포함하는 폴더를 만들었습니다.**/apps/aem-guides/projects-tasks/projects/scripts**. 이 폴더 아래에 **&quot;start-task-config.ecma&quot;**&#x200B;라는 새 파일을 만듭니다. *start-task-config.ecma 파일의 경로가 4단계의 고급 설정 탭에 설정된 경로와 일치하는지 확인합니다.
+   조직을 위해 앱 폴더 아래에 모든 프로젝트 관련 스크립트를 포함하는 폴더를 만들었습니다. **/apps/aem-guides/projects-tasks/projects/scripts**. 이 폴더 아래에 **&quot;start-task-config.ecma&quot;**&#x200B;라는 새 파일을 만듭니다. *start-task-config.ecma 파일의 경로가 4단계의 고급 설정 탭에 설정된 경로와 일치하는지 확인합니다.
 
    파일의 컨텐츠로 다음 내용을 추가합니다.
 
@@ -480,7 +480,7 @@ AEM Projects에는 여러 [OOTB 프로젝트 템플릿](https://helpx.adobe.com/
        "Send Back for Revision"
    ```
 
-   일반 승인 경로이므로 작업의 우선 순위는 보통으로 설정됩니다. 또한 승인자 그룹에 5일을 지정하여 작업을 완료합니다. 할당자는 고급 설정 탭에서 동적으로 할당하므로 작업 탭에 비어 있습니다. 이 작업을 완료할 때 승인자 그룹에 가능한 두 개의 경로를 제공합니다.**&quot;Approve and Publish&quot;** 컨텐츠를 승인하고 게시할 수 있는 경우 및 원래 편집기가 수정해야 하는 문제가 있는 경우 **&quot;Send Back for Revision&quot;**. 승인자는 원래 편집기에서 워크플로우가 자신에게 반환되는지 확인하는 주석을 남길 수 있습니다.
+   일반 승인 경로이므로 작업의 우선 순위는 보통으로 설정됩니다. 또한 승인자 그룹에 5일을 지정하여 작업을 완료합니다. 할당자는 고급 설정 탭에서 동적으로 할당하므로 작업 탭에 비어 있습니다. 이 작업을 완료할 때 승인자 그룹에 가능한 두 개의 경로를 제공합니다. **&quot;Approve and Publish&quot;** 컨텐츠를 승인하고 게시할 수 있는 경우 및 원래 편집기가 수정해야 하는 문제가 있는 경우 **&quot;Send Back for Revision&quot;**. 승인자는 원래 편집기에서 워크플로우가 자신에게 반환되는지 확인하는 주석을 남길 수 있습니다.
 
 이 자습서의 앞부분에서 승인자 역할이 포함된 프로젝트 템플릿을 만들었습니다. 이 템플릿에서 새 프로젝트를 작성할 때마다 승인자 역할에 대해 프로젝트별 그룹이 생성됩니다. 참가자 단계와 마찬가지로 작업은 사용자 또는 그룹에만 지정할 수 있습니다. 승인자 그룹에 해당하는 프로젝트 그룹에 이 작업을 할당하려고 합니다. 프로젝트 내에서 실행되는 모든 워크플로우에는 프로젝트 역할을 프로젝트 특정 그룹에 매핑하는 메타데이터가 있습니다.
 
@@ -623,21 +623,21 @@ task.setCurrentAssignee(projectApproverGrp);
    }
    ```
 
-## &quot;워크플로우 시작&quot; 마법사 {#start-workflow-wizard} 만들기
+## 워크플로우 시작 마법사 만들기 {#start-workflow-wizard}
 
-프로젝트 내에서 워크플로우를 시작할 때 워크플로우를 시작하려면 마법사를 지정해야 합니다. 기본 마법사:`/libs/cq/core/content/projects/workflowwizards/default_workflow` 에서는 사용자가 워크플로우를 실행할 워크플로우 제목, 시작 댓글 및 페이로드 경로를 입력할 수 있습니다. 다음 몇 가지 다른 예를 볼 수 있습니다.`/libs/cq/core/content/projects/workflowwizards`
+프로젝트 내에서 워크플로우를 시작할 때 워크플로우를 시작하려면 마법사를 지정해야 합니다. 기본 마법사: `/libs/cq/core/content/projects/workflowwizards/default_workflow` 에서는 사용자가 워크플로우를 실행할 워크플로우 제목, 시작 댓글 및 페이로드 경로를 입력할 수 있습니다. 다음 몇 가지 다른 예를 볼 수 있습니다. `/libs/cq/core/content/projects/workflowwizards`
 
 사용자 지정 마법사를 만드는 것은 워크플로우가 시작되기 전에 중요한 정보를 수집할 수 있으므로 매우 강력한 기능을 제공할 수 있습니다. 데이터는 워크플로우의 메타데이터 및 워크플로우 프로세스의 일부로 저장되며, 입력된 값에 따라 이 데이터를 읽고 동작을 동적으로 변경할 수 있습니다. 시작 마법사 값을 기반으로 워크플로우의 첫 번째 작업을 동적으로 할당하는 사용자 지정 마법사를 만듭니다.
 
-1. CRXDE-Lite에서는 `/apps/aem-guides/projects-tasks/projects` 폴더 아래에 &quot;wizards&quot;라는 하위 폴더를 만듭니다. 다음 위치에서 기본 마법사를 복사합니다.새로 만든 마법사 폴더 아래에 `/libs/cq/core/content/projects/workflowwizards/default_workflow` 이름을 **content-approval-start**&#x200B;로 변경합니다. 이제 전체 경로는 다음과 같습니다.`/apps/aem-guides/projects-tasks/projects/wizards/content-approval-start`
+1. CRXDE-Lite에서는 `/apps/aem-guides/projects-tasks/projects` 폴더 아래에 &quot;wizards&quot;라는 하위 폴더를 만듭니다. 다음 위치에서 기본 마법사를 복사합니다. 새로 만든 마법사 폴더 아래에 `/libs/cq/core/content/projects/workflowwizards/default_workflow` 이름을 **content-approval-start**&#x200B;로 변경합니다. 이제 전체 경로는 다음과 같습니다. `/apps/aem-guides/projects-tasks/projects/wizards/content-approval-start`
 
-   기본 마법사는 워크플로우 모델의 제목, 설명 및 축소판이 선택된 첫 번째 열이 있는 2열 마법사입니다. 두 번째 열에는 워크플로우 제목, 시작 댓글 및 페이로드 경로에 대한 필드가 포함됩니다. 마법사는 표준 Touch UI 양식이며 표준 [Granite UI 양식 구성 요소](https://docs.adobe.com/docs/en/aem/6-5/develop/ref/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/index.html)를 사용하여 필드를 채웁니다.
+   기본 마법사는 워크플로우 모델의 제목, 설명 및 축소판이 선택된 첫 번째 열이 있는 2열 마법사입니다. 두 번째 열에는 워크플로우 제목, 시작 댓글 및 페이로드 경로에 대한 필드가 포함됩니다. 마법사는 표준 Touch UI 양식이며 표준 [Granite UI 양식 구성 요소](https://experienceleague.adobe.com/docs/)를 사용하여 필드를 채웁니다.
 
    ![콘텐츠 승인 워크플로우 마법사](./assets/develop-aem-projects/content-approval-start-wizard.png)
 
-1. 워크플로우에서 첫 번째 작업의 담당자를 설정하는 데 사용할 추가 필드를 마법사에 추가합니다( [워크플로우 모델 만들기](#create-workflow-model) 참조).5단계).
+1. 워크플로우에서 첫 번째 작업의 담당자를 설정하는 데 사용할 추가 필드를 마법사에 추가합니다( [워크플로우 모델 만들기](#create-workflow-model) 참조). 5단계).
 
-   `../content-approval-start/jcr:content/items/column2/items` 아래에 **&quot;assign&quot;** 유형의 새 노드를 만듭니다. `nt:unstructured` 프로젝트 사용자 선택기 구성 요소([Granite 사용자 선택기 구성 요소](https://docs.adobe.com/docs/en/aem/6-5/develop/ref/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/userpicker/index.html))를 기반으로 합니다. 이 양식 필드를 사용하면 사용자 및 그룹 선택을 현재 프로젝트에 속하는 사용자만 쉽게 제한할 수 있습니다.
+   `../content-approval-start/jcr:content/items/column2/items` 아래에 **&quot;assign&quot;** 유형의 새 노드를 만듭니다. `nt:unstructured` 프로젝트 사용자 선택기 구성 요소([Granite 사용자 선택기 구성 요소](https://experienceleague.adobe.com/docs/))를 기반으로 합니다. 이 양식 필드를 사용하면 사용자 및 그룹 선택을 현재 프로젝트에 속하는 사용자만 쉽게 제한할 수 있습니다.
 
    다음은 **assign** 노드의 XML 표현입니다.
 
@@ -655,9 +655,9 @@ task.setCurrentAssignee(projectApproverGrp);
        required="{Boolean}true"/>
    ```
 
-1. 또한 워크플로우에서 첫 번째 작업의 우선 순위를 결정하는 우선 순위 선택 필드도 추가합니다([워크플로우 모델 만들기](#create-workflow-model) 참조).5단계).
+1. 또한 워크플로우에서 첫 번째 작업의 우선 순위를 결정하는 우선 순위 선택 필드도 추가합니다([워크플로우 모델 만들기](#create-workflow-model) 참조). 5단계).
 
-   `/content-approval-start/jcr:content/items/column2/items` 아래에 **priority**&#x200B;라는 이름의 새 노드를 만듭니다. `nt:unstructured` [Granite UI 구성 요소 선택](https://docs.adobe.com/docs/en/aem/6-2/develop/ref/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/select/index.html)을 사용하여 양식 필드를 채웁니다.
+   `/content-approval-start/jcr:content/items/column2/items` 아래에 **priority**&#x200B;라는 이름의 새 노드를 만듭니다. `nt:unstructured` [Granite UI 구성 요소 선택](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)을 사용하여 양식 필드를 채웁니다.
 
    **priority** 노드 아래에 **nt:un구조화되지 않은**&#x200B;의 **items** 노드를 추가합니다. **items** 노드 아래에 3개의 노드를 추가하여 높음, 중간 및 낮음에 대한 선택 옵션을 채웁니다. 각 노드는 **nt:un구조화되지 않음** 유형이며 **text** 및 **value** 속성을 가져야 합니다. 텍스트와 값 모두 동일한 값이어야 합니다.
 
@@ -693,7 +693,7 @@ task.setCurrentAssignee(projectApproverGrp);
    </priority>
    ```
 
-1. 워크플로우 개시자가 초기 작업의 기한 날짜를 설정하도록 허용합니다. [Granite UI DatePicker](https://docs.adobe.com/docs/en/aem/6-5/develop/ref/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/datepicker/index.html) 양식 필드를 사용하여 이 입력을 캡처합니다. 또한 [TypeHint](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html#typehint)가 있는 숨김 필드를 추가하여 입력이 JCR에서 Date 유형 속성으로 저장되도록 합니다.
+1. 워크플로우 개시자가 초기 작업의 기한 날짜를 설정하도록 허용합니다. [Granite UI DatePicker](https://experienceleague.adobe.com/docs/) 양식 필드를 사용하여 이 입력을 캡처합니다. 또한 [TypeHint](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html#typehint)가 있는 숨김 필드를 추가하여 입력이 JCR에서 Date 유형 속성으로 저장되도록 합니다.
 
    XML에 아래에 표시되는 다음 속성을 사용하여 두 개의 **nt:unrecrugend** 노드를 추가합니다.
 
@@ -717,7 +717,7 @@ task.setCurrentAssignee(projectApproverGrp);
 
 1. 시작 마법사 대화 상자 [에 대한 전체 코드를 여기](https://github.com/Adobe-Marketing-Cloud/aem-guides/blob/master/projects-tasks-guide/ui.apps/src/main/content/jcr_root/apps/aem-guides/projects-tasks/projects/wizards/content-approval-start/.content.xml)에서 볼 수 있습니다.
 
-## 워크플로우 및 프로젝트 템플릿 {#connecting-workflow-project} 연결
+## 워크플로우 및 프로젝트 템플릿 연결 {#connecting-workflow-project}
 
 마지막으로 수행해야 하는 작업은 프로젝트 중 하나에서 워크플로우 모델을 시작할 수 있도록 하는 것입니다. 이렇게 하려면 이 시리즈의 1부에서 만든 프로젝트 템플릿을 다시 방문해야 합니다.
 
