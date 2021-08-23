@@ -3,9 +3,9 @@ title: Adobe Experience Manager as Cloud Service 자습서
 description: Adobe Experience Manager (AEM) as a Cloud Service을 위한 자습서 모음입니다
 sub-product: 사이트, cloud manager, foundation, assets
 kt: 3289
-source-git-commit: ce4a35f763862c6d6a42795fd5e79d9c59ff645a
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '273'
 ht-degree: 8%
 
 ---
@@ -85,5 +85,5 @@ Adobe Experience Manager(AEM)는 이제 클라우드 서비스로 제공됩니�
 
 ## 추가 리소스
 
-* [Experience League - Adobe Experience Manager 살펴보기](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
-* [Adobe Experience Manager as a Cloud Service 설명서](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html)
+* [Experience League - Adobe Experience Manager 탐색](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
+* [Adobe Experience Manager as a Cloud Service 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html)
