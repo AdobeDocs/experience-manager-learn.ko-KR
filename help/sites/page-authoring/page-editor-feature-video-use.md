@@ -14,9 +14,9 @@ thumbnail: 32011.jpg
 topic: 컨텐츠 관리
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '242'
 ht-degree: 8%
 
 ---
@@ -56,5 +56,5 @@ AEM 사이트의 페이지 편집기는 웹 컨텐츠를 만들고 편집할 수
 
 ## 추가 리소스 {#additional-resources}
 
-* [페이지 컨텐츠 편집 설명서](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/authoring/editing-content.html)
-* [사이트 작성 사용 안내서](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/home.html)
+* [페이지 컨텐츠 편집 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html)
+* [사이트 작성 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html)
