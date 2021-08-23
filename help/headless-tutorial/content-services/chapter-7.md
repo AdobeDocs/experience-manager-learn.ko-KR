@@ -5,9 +5,9 @@ feature: 컨텐츠 조각, API
 topic: 헤드리스, 컨텐츠 관리
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1414'
+source-wordcount: '1412'
 ht-degree: 1%
 
 ---
@@ -201,7 +201,7 @@ JSON 개체에서 더 많은 데이터 포인트를 선택해야 하는 이벤�
 AEM Content Services 및 AEM as a Headless CMS에 대해 자세히 알아보려면 Adobe의 다른 설명서 및 지원 자료를 참조하십시오.
 
 * [컨텐츠 조각 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html)
-* [AEM WCM 코어 구성 요소 사용 안내서](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)
+* [AEM WCM 코어 구성 요소 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)
 * [AEM WCM 코어 구성 요소 구성 요소 라이브러리](https://opensource.adobe.com/aem-core-wcm-components/library.html)
 * [AEM WCM 코어 구성 요소 GitHub 프로젝트](https://github.com/adobe/aem-core-wcm-components)
 * [AEM WCM 핵심 구성 요소 - 전문가에게 문의](https://helpx.adobe.com/kr/experience-manager/kt/eseminars/ask-the-expert/aem-content-services.html)
