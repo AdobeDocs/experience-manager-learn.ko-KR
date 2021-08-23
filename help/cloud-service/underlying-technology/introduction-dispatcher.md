@@ -12,15 +12,15 @@ thumbnail: 32029.jpg
 topic: 아키텍처, 성능
 role: Architect, Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '50'
-ht-degree: 34%
+source-wordcount: '48'
+ht-degree: 31%
 
 ---
 
 
-# [!DNL Dispatcher] 소개{#introduction-dispatcher}
+# [!DNL Dispatcher] 소개 {#introduction-dispatcher}
 
 AEM 아키텍처의 일부로 [!DNL dispatcher] 의 기능 및 특징을 소개합니다.
 
@@ -28,4 +28,4 @@ AEM 아키텍처의 일부로 [!DNL dispatcher] 의 기능 및 특징을 소개�
 
 ## 추가 리소스 {#additional-resources}
 
-* [[!DNL Dispatcher] 설명서](https://docs.adobe.com/content/help/ko-KR/experience-manager-dispatcher/using/dispatcher.html)
+* [[!DNL Dispatcher] 설명서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko-KR)
