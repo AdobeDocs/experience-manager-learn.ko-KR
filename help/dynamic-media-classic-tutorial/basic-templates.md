@@ -10,9 +10,9 @@ activity: use
 topic: 컨텐츠 관리
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '6306'
+source-wordcount: '6292'
 ht-degree: 0%
 
 ---
@@ -66,8 +66,8 @@ Photoshop에서와 마찬가지로 모든 레이어를 단일 파일에 넣고 �
 
 템플릿 프로젝트는 비즈니스 규칙과 애플리케이션의 요구 사항에 따라 비교적 간단하거나 매우 복잡할 수 있습니다. 기본 템플릿은 이미지 서버에서 호출되지만 Dynamic Media Classic 환경의 유연성으로 인해 다른 템플릿 내에 템플릿을 중첩할 수 있으므로 일반적으로 이름이 지정된 변수로 연결할 수 있는 매우 복잡한 이미지를 만들 수 있습니다.
 
-- [템플릿 기본 사항](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/template-basics/quick-start-template-basics.html)에 대해 자세히 알아보십시오.
-- [기본 템플릿을 만드는 방법을 알아봅니다](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/template-basics/creating-template.html#creating_a_template).
+- [템플릿 기본 사항](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html)에 대해 자세히 알아보십시오.
+- [기본 템플릿을 만드는 방법을 알아봅니다](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template.html#creating_a_template).
 
 ## 기본 템플릿 만들기
 
@@ -189,7 +189,7 @@ _그림자 및 그림자 없는 레이어_
 
 그림자 효과는 레이어에서 가로 또는 세로로 오프셋되지만 [광선] 효과는 모든 방향으로 균일하게 적용됩니다. [외부] 효과는 레이어의 불투명 부분 위에 영향을 주며 [외부] 효과는 투명 영역에만 영향을 줍니다.
 
-[레이어 효과 추가](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/template-basics/creating-template.html#using-shadow-and-glow-effects-on-layers)에 대해 자세히 알아보십시오.
+[레이어 효과 추가](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template.html#using-shadow-and-glow-effects-on-layers)에 대해 자세히 알아보십시오.
 
 ### 매개 변수 추가
 
@@ -226,7 +226,7 @@ Dynamic Media Classic에서 매개 변수는 URL을 통해 조작할 수 있도�
 >
 >속성이 표시되지 않아 매개 변수를 추가할 수 없습니까? 이동, 크기 조정, 숨기기 등으로 레이어의 속성을 기본값에서 변경하면 됩니다. 이제 해당 속성이 노출되는 것이 보여야 합니다.
 
-[템플릿 매개 변수](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/template-basics/creating-template-parameters.html)에 대해 자세히 알아보십시오.
+[템플릿 매개 변수](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template-parameters.html)에 대해 자세히 알아보십시오.
 
 ## 텍스트 레이어로 템플릿 만들기
 
@@ -315,7 +315,7 @@ RTF를 검사할 때 각 설정을 변경할 위치를 파악해야 합니다. �
 - RGB 값을 볼 수 있습니다. \red56\green53\blue4 — 텍스트 색상입니다.
 - 글꼴 크기가 20이지만 20이라는 숫자가 표시되지 않습니다. 그러나 \fs40 명령이 표시됩니다. 일부 이상한 이유로 RTF는 글꼴을 반점으로 측정합니다. 따라서 \fs40은 글꼴 크기입니다!
 
-매개 변수를 작성할 수 있는 충분한 정보가 있지만 이미지 제공 문서에 모든 RTF 명령에 대한 전체 참조가 있습니다. [이미지 제공 설명서](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/c-text-formatting.html#concept-0d3136db7f6f49668274541cd4b6364c)를 방문하십시오.
+매개 변수를 작성할 수 있는 충분한 정보가 있지만 이미지 제공 문서에 모든 RTF 명령에 대한 전체 참조가 있습니다. [이미지 제공 설명서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/c-text-formatting.html#concept-0d3136db7f6f49668274541cd4b6364c)를 방문하십시오.
 
 #### 텍스트 레이어에 매개 변수 추가
 
@@ -333,7 +333,7 @@ RTF를 검사할 때 각 설정을 변경할 위치를 파악해야 합니다. �
 >
 >텍스트 색상에 매개 변수를 추가하려면 빨간색, 녹색 및 파란색에 대한 매개 변수를 별도로 추가하십시오. 예를 들어 RTF가 `\red56\green53\blue46`이면 56, 53 및 46에 대해 별도의 빨간색, 녹색 및 파란색 매개변수를 추가합니다. URL에서 세 가지 모두 를 호출하여 색상을 변경합니다. `&$red=56&$green=53&$blue=46`
 
-[동적 텍스트 매개 변수를 만드는 방법을 알아봅니다](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/template-basics/creating-template-parameters.html#creating-dynamic-text-parameters).
+[동적 텍스트 매개 변수를 만드는 방법을 알아봅니다](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template-parameters.html#creating-dynamic-text-parameters).
 
 ## 템플릿 URL 게시 및 만들기
 
@@ -347,7 +347,7 @@ RTF를 검사할 때 각 설정을 변경할 위치를 파악해야 합니다. �
 
 이미지 서버에 실시간으로 푸시된 변경 사항을 보려면 게시를 실행해야 합니다. 게시해야 하는 사항을 염두에 두십시오. 다양한 이미지 자산 레이어, 동적 텍스트에 대한 글꼴 및 템플릿 자체. 이미지 세트 및 스핀 세트와 같은 다른 Dynamic Media Classic 리치 미디어 자산과 유사한 기본 템플릿은 인공 구조입니다. 일련의 이미지 제공 명령을 사용하여 이미지와 글꼴을 참조하는 데이터베이스의 라인 항목입니다. 따라서 템플릿을 게시하면 이미지 서버에서 데이터를 업데이트하기만 하면 됩니다.
 
-[템플릿 게시](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/template-basics/publishing-templates.html)에 대해 자세히 알아보십시오.
+[템플릿 게시](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/publishing-templates.html)에 대해 자세히 알아보십시오.
 
 ### 템플릿 URL 구성
 
