@@ -1,20 +1,16 @@
 ---
 title: Analysis Workspace을 사용하여 데이터 분석
 description: Adobe Experience Manager 사이트에서 캡처한 데이터를 Adobe Analytics 보고서 세트의 지표 및 차원에 매핑하는 방법을 알아봅니다. Adobe Analytics의 Analysis Workspace 기능을 사용하여 자세한 보고 대시보드를 만드는 방법을 알아봅니다.
-feature: 분석
-topics: integrations
-audience: administrator
-doc-type: tutorial
-activity: setup
 version: cloud-service
-kt: 6409
-thumbnail: KT-6296.jpg
 topic: 통합
+feature: Adobe 클라이언트 데이터 레이어
 role: User
 level: Intermediate
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+kt: 6409
+thumbnail: KT-6296.jpg
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '2204'
+source-wordcount: '2184'
 ht-degree: 0%
 
 ---
@@ -45,17 +41,17 @@ WKND 마케팅 팀은 홈 페이지에서 가장 잘 수행하는 CTA(Call to Ac
 ### 목표 {#objective}
 
 1. 새 보고서 세트를 만들거나 기존 보고서 세트를 사용합니다.
-1. 보고서 세트에서 [전환 변수(eVar)](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/conversion-variables/conversion-var-admin.html) 및 [성공 이벤트(이벤트)](https://docs.adobe.com/help/en/analytics/admin/admin-tools/success-events/success-event.html)를 구성합니다.
-1. 인사이트를 신속하게 작성, 분석 및 공유할 수 있는 도구의 도움으로 [Analysis Workspace 프로젝트](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html)를 만들어 데이터를 분석할 수 있습니다.
+1. 보고서 세트에서 [전환 변수(eVar)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/conversion-var-admin.html) 및 [성공 이벤트(이벤트)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/success-event.html)를 구성합니다.
+1. 인사이트를 신속하게 작성, 분석 및 공유할 수 있는 도구의 도움으로 [Analysis Workspace 프로젝트](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html)를 만들어 데이터를 분석할 수 있습니다.
 1. 다른 팀 구성원과 Analysis Workspace 프로젝트를 공유합니다.
 
 ## 전제 조건
 
 이 자습서는 [클릭한 구성 요소를 Adobe Analytics](./track-clicked-component.md)에서 계속 추적하는 것으로, 다음과 같이 가정합니다.
 
-* [Adobe Analytics 확장](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html)이 활성화된 **Launch 속성**
-* **Adobe** Analytics 테스트/개발 보고서 세트 ID 및 추적 서버. [새 보고서 세트 만들기](https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html)에 대한 다음 설명서를 참조하십시오.
-* [Experience Platform ](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/web-sdk/introduction-to-the-experience-platform-debugger.html) Debugger 브라우저 확장 프로그램은 Adobe 데이터 레이어가 활성화된 AEM  [사이트](https://wknd.site/us/en.html) 에서 Launch 속성을 로드하여 구성됩니다. https://wknd.site/us/en
+* [Adobe Analytics 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html)이 활성화된 **Launch 속성**
+* **Adobe** Analytics 테스트/개발 보고서 세트 ID 및 추적 서버. [새 보고서 세트 만들기](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html)에 대한 다음 설명서를 참조하십시오.
+* [Experience Platform ](https://experienceleague.adobe.com/docs/debugger-learn/tutorials/experience-platform-debugger/introduction-to-the-experience-platform-debugger.html) Debugger 브라우저 확장 프로그램은 Adobe 데이터 레이어가 활성화된 AEM  [사이트](https://wknd.site/us/en.html) 에서 Launch 속성을 로드하여 구성됩니다. https://wknd.site/us/en
 
 ## 전환 변수(eVar) 및 성공 이벤트(이벤트)
 
@@ -116,19 +112,19 @@ eVar는 다음과 같은 원인과 효과를 측정하는 데 가장 잘 사용�
 
 Analysis Workspace은 분석을 신속하게 작성하고 인사이트를 공유할 수 있는 유연한 브라우저 도구입니다. 드래그하여 놓기 인터페이스를 사용하여 분석을 만들고 시각화를 추가하여 데이터를 생동감 있게 표현하고 데이터 세트를 조정하며 조직 내 누구와도 프로젝트를 공유 및 예약할 수 있습니다.
 
-그런 다음 새 [프로젝트](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/build-workspace-project/t-freeform-project.html)를 만들어 사이트 전체에서 CTA 버튼의 성능을 분석할 대시보드를 만듭니다.
+그런 다음 새 [프로젝트](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/freeform-overview.html#analysis-workspace)를 만들어 사이트 전체에서 CTA 버튼의 성능을 분석할 대시보드를 만듭니다.
 
 1. Analytics 도구 모음에서 **작업 공간**&#x200B;을 선택하고 **새 프로젝트 만들기**&#x200B;를 클릭합니다.
 
    ![작업 공간](assets/create-analytics-workspace/create-workspace.png)
 
-1. **빈 프로젝트**&#x200B;에서 시작하거나, Adobe이 제공한 템플릿 또는 조직에서 만든 사용자 정의 템플릿 중 하나를 선택하여 미리 빌드된 템플릿 중 하나를 선택하십시오. 분석 또는 염두에 둔 사용 사례에 따라 몇 가지 템플릿을 사용할 수 있습니다. [사용 ](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) 가능한 다양한 템플릿 옵션에 대해 자세히 알아보십시오 .
+1. **빈 프로젝트**&#x200B;에서 시작하거나, Adobe이 제공한 템플릿 또는 조직에서 만든 사용자 정의 템플릿 중 하나를 선택하여 미리 빌드된 템플릿 중 하나를 선택하십시오. 분석 또는 염두에 둔 사용 사례에 따라 몇 가지 템플릿을 사용할 수 있습니다. [사용 ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) 가능한 다양한 템플릿 옵션에 대해 자세히 알아보십시오 .
 
    Analysis Workspace 프로젝트에서 패널, 표, 시각화 및 구성 요소 는 왼쪽 레일에서 액세스됩니다. 이는 프로젝트 구성 요소입니다.
 
-   * **[구성 요소](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/components/analysis-workspace-components.html)**  - 구성 요소는 차원, 지표, 세그먼트 또는 날짜 범위입니다. 이 모든 구성 요소를 자유 형식 테이블에서 결합하여 비즈니스 질문에 답변할 수 있습니다. 분석하기 전에 각 구성 요소 유형을 숙지하십시오. 구성 요소 용어를 숙지하면 드래그 앤 드롭을 시작하여 자유 형식 테이블에서 분석을 빌드할 수 있습니다.
-   * **[시각화](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html)**  - 막대형 차트 또는 선형 차트와 같은 시각화 가 데이터 위에 추가되어 시각적으로 생동감 있게 표현됩니다. 맨 왼쪽 레일에서 가운데 시각화 아이콘을 선택하여 시각화 의 전체 목록을 확인합니다.
-   * **[패널](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/panels.html)**  - 패널은 테이블 및 시각화의 컬렉션입니다. Workspace의 왼쪽 위 아이콘에서 패널에 액세스할 수 있습니다. 패널 은 기간, 보고서 세트 또는 분석 사용 사례에 따라 프로젝트를 구성하려는 경우 유용합니다. Analysis Workspace에서는 다음 패널 유형을 사용할 수 있습니다.
+   * **[구성 요소](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/analysis-workspace-components.html)**  - 구성 요소는 차원, 지표, 세그먼트 또는 날짜 범위입니다. 이 모든 구성 요소를 자유 형식 테이블에서 결합하여 비즈니스 질문에 답변할 수 있습니다. 분석하기 전에 각 구성 요소 유형을 숙지하십시오. 구성 요소 용어를 숙지하면 드래그 앤 드롭을 시작하여 자유 형식 테이블에서 분석을 빌드할 수 있습니다.
+   * **[시각화](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html)**  - 막대형 차트 또는 선형 차트와 같은 시각화 가 데이터 위에 추가되어 시각적으로 생동감 있게 표현됩니다. 맨 왼쪽 레일에서 가운데 시각화 아이콘을 선택하여 시각화 의 전체 목록을 확인합니다.
+   * **[패널](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html)**  - 패널은 테이블 및 시각화의 컬렉션입니다. Workspace의 왼쪽 위 아이콘에서 패널에 액세스할 수 있습니다. 패널 은 기간, 보고서 세트 또는 분석 사용 사례에 따라 프로젝트를 구성하려는 경우 유용합니다. Analysis Workspace에서는 다음 패널 유형을 사용할 수 있습니다.
 
    ![템플릿 선택](assets/create-analytics-workspace/workspace-tools.png)
 
@@ -170,7 +166,7 @@ Analysis Workspace은 분석을 신속하게 작성하고 인사이트를 공유
 
    ![eVar8](assets/create-analytics-workspace/evar8-metric.png)
 
-1. Adobe Analytics 분류를 사용하여 단추 ID 값을 사용자에게 친숙한 이름으로 바꿀 수 있습니다. 여기](https://docs.adobe.com/content/help/en/analytics/components/classifications/c-classifications.html)에서 특정 지표 [에 대한 분류를 만드는 방법에 대해 자세히 알아볼 수 있습니다. 이 경우 단추 ID를 사용자에게 친숙한 이름에 매핑하는 `eVar8`에 대한 분류 지표 `Button Section (Button ID)` 설정이 있습니다.
+1. Adobe Analytics 분류를 사용하여 단추 ID 값을 사용자에게 친숙한 이름으로 바꿀 수 있습니다. 여기](https://experienceleague.adobe.com/docs/analytics/components/classifications/c-classifications.html)에서 특정 지표 [에 대한 분류를 만드는 방법에 대해 자세히 알아볼 수 있습니다. 이 경우 단추 ID를 사용자에게 친숙한 이름에 매핑하는 `eVar8`에 대한 분류 지표 `Button Section (Button ID)` 설정이 있습니다.
 
    ![단추 섹션](assets/create-analytics-workspace/button-section.png)
 
