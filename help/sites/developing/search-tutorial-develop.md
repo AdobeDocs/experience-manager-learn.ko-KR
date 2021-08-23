@@ -10,9 +10,9 @@ feature: 검색
 topic: 개발
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '899'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 # 단순 검색 구현 안내서{#simple-search-implementation-guide}
 
-단순 검색 구현은 **Adobe Summit lab AEM Search Demystified**&#x200B;의 자료입니다. 이 페이지에는 이 실습의 자료가 포함되어 있습니다. 랩을 안내하는 둘러보려면 이 페이지의 프레젠테이션 섹션에서 Lab 통합 문서를 확인하십시오.
+단순 검색 구현은 **Adobe Summit 랩 AEM Search Demystified**&#x200B;의 자료입니다. 이 페이지에는 이 실습의 자료가 포함되어 있습니다. 랩을 안내하는 둘러보려면 이 페이지의 프레젠테이션 섹션에서 Lab 통합 문서를 확인하십시오.
 
 ![검색 아키텍처 개요](assets/l4080/simple-search-application.png)
 
@@ -77,7 +77,7 @@ ht-degree: 2%
 * [Github 저장소](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/master/simple-search-guide)
 * [Sling 모델](https://sling.apache.org/documentation/bundles/models.html)
 * [Sling 모델 내보내기](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130)
-* [QueryBuilder API](https://docs.adobe.com/docs/en/aem/6-2/develop/search/querybuilder-api.html)
+* [QueryBuilder API](https://experienceleague.adobe.com/docs/)
 * [AEM Chrome 플러그인](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode) ([설명서 페이지](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/))
 
 ## 수정 및 추가 {#corrections-and-follow-up}
@@ -91,7 +91,7 @@ ht-degree: 2%
    * [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats)
       * `abortAndPause()`을 실행하여 재색인을 중단합니다. 이렇게 하면 `resume()`이 호출될 때까지 인덱스를 더 다시 인덱싱하도록 잠깁니다.
       * `resume()`을 실행하면 인덱싱 프로세스가 다시 시작됩니다.
-   * 설명서:[https://jackrabbit.apache.org/oak/docs/query/indexing.html#async-index-mbean](https://jackrabbit.apache.org/oak/docs/query/indexing.html#async-index-mbean)
+   * 설명서: [https://jackrabbit.apache.org/oak/docs/query/indexing.html#async-index-mbean](https://jackrabbit.apache.org/oak/docs/query/indexing.html#async-index-mbean)
 
 2. **oak 색인은 여러 테넌트를 어떻게 지원할 수 있습니까?**
 
