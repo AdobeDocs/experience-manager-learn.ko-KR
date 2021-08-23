@@ -1,12 +1,7 @@
 ---
 title: AEM 헤드리스 실습 자습서 - GraphQL 시작하기
 description: AEM GraphQL API를 사용하여 컨텐츠를 작성하고 노출하는 방법을 소개하는 종단간 자습서입니다.
-sub-product: 사이트
-topics: headless
-version: cloud-service
 doc-type: tutorial
-activity: develop
-audience: developer
 mini-toc-levels: 1
 kt: 6678
 thumbnail: 328618.jpg
@@ -14,9 +9,9 @@ feature: 컨텐츠 조각, GraphQL API
 topic: 헤드리스, 컨텐츠 관리
 role: Developer
 level: Beginner
-source-git-commit: 81626b8d853f3f43d9c51130acf02561f91536ac
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '201'
 ht-degree: 0%
 
 ---
