@@ -10,15 +10,15 @@ role: Developer
 level: Beginner
 mini-toc-levels: 1
 index: y
-source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 7%
+source-wordcount: '488'
+ht-degree: 3%
 
 ---
 
 
-# AEM Sites 시작하기 - 프로젝트 원형 {#project-archetype}
+# AEM Sites 시작하기 - Project Archetype {#project-archetype}
 
 AEM(Adobe Experience Manager)을 처음 사용하는 개발자를 위해 고안된 다양한 자습서를 시작합니다. 이 자습서에서는 가상 라이프스타일 브랜드인 WKND에 대한 AEM 사이트 구현을 안내합니다.
 
@@ -26,12 +26,12 @@ AEM(Adobe Experience Manager)을 처음 사용하는 개발자를 위해 고안�
 
 이 자습서는 **AEM as a1/>Cloud Service으로 작동하도록 설계되었으며** AEM 6.5.5.0+**및** AEM 6.4.8.1+**와 이전 버전과 호환됩니다.** 사이트는 다음을 사용하여 구현됩니다.
 
-* [Maven AEM 프로젝트 원형](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/developing/archetype/overview.html)
-* [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)
-* [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/getting-started/getting-started.html)
+* [Maven AEM 프로젝트 원형](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+* [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)
+* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html)
 * Sling 모델
-* [편집 가능한 템플릿](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html)
-* [스타일 시스템](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html)
+* [편집 가능한 템플릿](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html)
+* [스타일 시스템](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html)
 
 *자습서의 각 부분을 통과하는 데 1~2시간을 예상합니다.*
 
@@ -54,18 +54,18 @@ AEM(Adobe Experience Manager)을 처음 사용하는 개발자를 위해 고안�
 
 >[!NOTE]
 >
-> **AEM as a Cloud Service을 처음 사용하십니까?** AEM as a  [Cloud Service SDK로 사용하여 로컬 개발 환경을 설정하려면 다음 안내서를 확인하십시오](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
+> **AEM as a Cloud Service을 처음 사용하십니까?** AEM as a  [Cloud Service SDK로 사용하여 로컬 개발 환경을 설정하려면 다음 안내서를 확인하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
 >
-> **AEM 6.5를 처음 사용하십니까?** 로컬 개발 환경을  [설정하려면 다음 안내서를 확인하십시오](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html).
+> **AEM 6.5를 처음 사용하십니까?** 로컬 개발 환경을  [설정하려면 다음 안내서를 확인하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html).
 
 ## Github {#github}
 
 프로젝트의 모든 코드는 AEM 안내서 보고서의 Github에 있습니다.
 
-**[GitHub:WKND Sites 프로젝트](https://github.com/adobe/aem-guides-wknd)**
+**[GitHub: WKND Sites 프로젝트](https://github.com/adobe/aem-guides-wknd)**
 
 또한 자습서의 각 부분에는 GitHub에 고유한 분기가 있습니다. 사용자는 이전 부품에 해당하는 분기를 체크 아웃하면 언제든지 자습서를 시작할 수 있습니다.
 
 ## 다음 단계 {#next-steps}
 
-뭘 기다리고 있는 거야?![프로젝트 설정](project-setup.md) 장으로 이동하여 자습서를 시작하고 AEM Project Archetype을 사용하여 새 Adobe Experience Manager 프로젝트를 생성하는 방법을 알아봅니다.
+뭘 기다리고 있는 거야?! [프로젝트 설정](project-setup.md) 장으로 이동하여 자습서를 시작하고 AEM Project Archetype을 사용하여 새 Adobe Experience Manager 프로젝트를 생성하는 방법을 알아봅니다.
