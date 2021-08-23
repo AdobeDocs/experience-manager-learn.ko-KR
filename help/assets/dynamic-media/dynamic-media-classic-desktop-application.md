@@ -9,9 +9,9 @@ thumbnail: 36645.jpg
 topic: 컨텐츠 관리
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '205'
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ Adobe Dynamic Media Classic 데스크탑 앱은 다음 운영 체제와 호환�
 
 ## 지지 자료
 
-* [Adobe Dynamic Media Classic 데스크탑 애플리케이션 설명서](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html)
-* [Adobe Dynamic Media FAQ](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/new-ui-2020.html)
+* [Adobe Dynamic Media Classic 데스크탑 애플리케이션 설명서](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html)
+* [Adobe Dynamic Media FAQ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/new-ui-2020.html)
 * [다운로드 - macOS용 디스크 이미지 파일(.dmg)](http://download.macromedia.com/dynamic-media-classic/20.20.1/adobe-dynamic-media-classic-20.20.1.dmg)
 * [다운로드 - Windows용 실행 파일(.exe)](http://download.macromedia.com/dynamic-media-classic/20.20.1/adobe-dynamic-media-classic-20.20.1.exe)
