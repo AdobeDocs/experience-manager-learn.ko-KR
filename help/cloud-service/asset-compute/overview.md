@@ -12,9 +12,9 @@ thumbnail: KT-5802.jpg
 topic: 통합, 개발
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1033'
+source-wordcount: '1031'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ asset compute 작업자 확장을 적절히 준비하는 방법과 어떤 서비
 
 ### 로컬 개발 환경
 
-asset compute 프로젝트의 로컬 개발에는 다음과 같은 기존 AEM 개발과는 다른 특정 개발자 도구 세트가 필요합니다.Microsoft Visual Studio Code, Docker Desktop, Node.js 및 지원 npm 모듈입니다.
+asset compute 프로젝트의 로컬 개발에는 다음과 같은 기존 AEM 개발과는 다른 특정 개발자 도구 세트가 필요합니다. Microsoft Visual Studio Code, Docker Desktop, Node.js 및 지원 npm 모듈입니다.
 
 + [로컬 개발 환경 설정](./set-up/development-environment.md)
 
@@ -148,7 +148,7 @@ Adobe I/O Runtime에 배포되면 Asset compute 작업자는 [자산 처리 프�
 
 ### 설명서
 
-+ [asset compute 서비스 설명서](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html)
++ [asset compute 서비스 설명서](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html)
 + [asset compute 개발 도구 추가 정보](https://github.com/adobe/asset-compute-devtool)
 + [asset compute 예제 작업자](https://github.com/adobe/asset-compute-example-workers)
 
