@@ -12,9 +12,9 @@ level: Beginner
 mini-toc-levels: 1
 kt: 4082
 thumbnail: 30214.jpg
-source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '3106'
+source-wordcount: '3100'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ ht-degree: 0%
 1. 편집 가능한 템플릿의 세부 사항과 정책을 사용하여 페이지 컨텐츠를 세부적으로 제어하는 방법을 알아봅니다.
 1. 템플릿 및 페이지 연결 방법 알아보기
 
-## {#what-you-will-build} 빌드할 내용
+## 빌드할 내용 {#what-you-will-build}
 
 자습서의 이 부분에서 새 문서 페이지를 만들고 공통 구조에 맞게 조정하는 데 사용할 수 있는 새 문서 페이지 템플릿을 만듭니다. 문서 페이지 템플릿은 Adobe XD에서 만들어진 UI 키트 및 디자인을 기반으로 합니다. 이 장은 템플릿의 구조나 골격을 빌드하는 데만 중점을 둡니다. 스타일이 구현되지 않지만 템플릿 및 페이지가 작동합니다.
 
@@ -121,7 +121,7 @@ ht-degree: 0%
 1. **컨텐츠 컨테이너** 아래에 다른 **컨테이너** 구성 요소를 추가합니다. 이는 템플릿의 **사이드 레일** 컨테이너 역할을 합니다.
    * **사이드 레일** 컨테이너의 잠금을 해제합니다.
    * **문서 페이지 - 사이드 레일**&#x200B;이라는 새 정책을 만듭니다.
-   * **WKND Sites Project - Content**&#x200B;에서 **허용되는 구성 요소**&#x200B;를 구성하여 다음을 포함하도록 하십시오.**Button**, **다운로드**, **이미지**, **목록**, **구분 문자**, **소셜 미디어 공유**, **텍스트** 및 **제목**.
+   * **WKND Sites Project - Content**&#x200B;에서 **허용되는 구성 요소**&#x200B;를 구성하여 다음을 포함하도록 하십시오. **Button**, **다운로드**, **이미지**, **목록**, **구분 문자**, **소셜 미디어 공유**, **텍스트** 및 **제목**.
 1. 페이지 루트 컨테이너의 정책을 업데이트합니다. 템플릿에서 가장 바깥쪽 컨테이너입니다. 정책을 **페이지 루트**&#x200B;로 설정합니다.
    * **컨테이너 설정**&#x200B;에서 **레이아웃**&#x200B;을 **응답형 그리드**&#x200B;로 설정합니다.
 1. **컨텐츠 컨테이너**&#x200B;에 대해 레이아웃 모드를 사용합니다. 핸들을 오른쪽에서 왼쪽으로 드래그하고 컨테이너를 8열로 줄입니다.
@@ -136,11 +136,11 @@ ht-degree: 0%
 1. **초기 컨텐츠** 모드로 전환합니다.
 1. **Title** 구성 요소를 **컨텐츠 컨테이너**&#x200B;에 추가합니다. 이것은 문서 제목으로서 작용합니다. 비워 두면 현재 페이지의 제목이 자동으로 표시됩니다.
 1. 첫 번째 제목 구성 요소 아래에 두 번째 **Title** 구성 요소를 추가합니다.
-   * 텍스트를 사용하여 구성 요소를 구성합니다.작성자 텍스트 자리 표시자가 됩니다.
+   * 텍스트를 사용하여 구성 요소를 구성합니다. 작성자 텍스트 자리 표시자가 됩니다.
    * 유형을 `H4`으로 설정합니다.
 1. **작성자** 제목 구성 요소 아래에 **텍스트** 구성 요소를 추가합니다.
 1. **제목** 구성 요소를 **사이드 레일 컨테이너**&#x200B;에 추가합니다.
-   * 텍스트를 사용하여 구성 요소를 구성합니다.&quot;이 스토리 공유&quot;
+   * 텍스트를 사용하여 구성 요소를 구성합니다. &quot;이 스토리 공유&quot;
    * 유형을 `H5`으로 설정합니다.
 1. **이 스토리** 제목 구성 요소 공유 아래에 **소셜 미디어 공유** 구성 요소를 추가합니다.
 1. **소셜 미디어 공유** 구성 요소 아래에 **구분 기호** 구성 요소를 추가합니다.
@@ -157,9 +157,9 @@ ht-degree: 0%
 
    ![문서 페이지 템플릿 축소판](assets/pages-templates/article-page-template-thumbnail.png)
 
-## 경험 구성요소 {#experience-fragments}로 머리글 및 바닥글 업데이트
+## 경험 조각으로 머리글 및 바닥글 업데이트 {#experience-fragments}
 
-머리글 또는 바닥글과 같은 글로벌 컨텐츠를 만들 때 일반적으로 사용되는 방법은 [경험 조각](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html)을 사용하는 것입니다. 경험 조각 을 사용하면 여러 구성 요소를 결합하여 하나의 참조 가능한 구성 요소를 만들 수 있습니다. 경험 조각은 다중 사이트 관리 및 [로컬라이제이션](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html?lang=en#localized-site-structure)을 지원하는 이점이 있습니다.
+머리글 또는 바닥글과 같은 글로벌 컨텐츠를 만들 때 일반적으로 사용되는 방법은 [경험 조각](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html)을 사용하는 것입니다. 경험 조각 을 사용하면 여러 구성 요소를 결합하여 하나의 참조 가능한 구성 요소를 만들 수 있습니다. 경험 조각은 다중 사이트 관리 및 [로컬라이제이션](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html?lang=en#localized-site-structure)을 지원하는 이점이 있습니다.
 
 AEM 프로젝트 원형 이 머리글 및 바닥글을 생성했습니다. 그런 다음 경험 조각을 업데이트하여 비웃는 내용과 일치시킵니다. 아래 비디오에서 절차를 따르십시오.
 
@@ -219,15 +219,15 @@ AEM 프로젝트 원형 이 머리글 및 바닥글을 생성했습니다. 그�
    * **속성** 아래에서 **제목**&#x200B;을 &quot;Ultimate Guide to LA Skatestand&quot; 로 설정합니다.
    * **이름**&#x200B;을 &quot;guide-la-skatestparks&quot;로 설정합니다.
 1. **By Author** Title을 &quot;By Stacey Roswells&quot; 텍스트로 바꿉니다.
-1. 단락을 포함하도록 **Text** 구성 요소를 업데이트하여 문서를 채웁니다. 다음 텍스트 파일을 복사본으로 사용할 수 있습니다.[la-skate-parks-copy.txt](assets/pages-templates/la-skateparks-copy.txt)
+1. 단락을 포함하도록 **Text** 구성 요소를 업데이트하여 문서를 채웁니다. 다음 텍스트 파일을 복사본으로 사용할 수 있습니다. [la-skate-parks-copy.txt](assets/pages-templates/la-skateparks-copy.txt)
 1. 다른 **Text** 구성 요소를 추가합니다.
-   * 견적을 포함하도록 구성 요소를 업데이트합니다.&quot;LA를 떠날 곳이 없다.&quot;
+   * 견적을 포함하도록 구성 요소를 업데이트합니다. &quot;LA를 떠날 곳이 없다.&quot;
    * 전체 화면 모드로 리치 텍스트 편집기를 편집하고 위의 따옴표를 수정하여 **견적 블록** 요소를 사용합니다.
 1. 모집단 유사하게 문서의 본문을 계속 채우십시오.
 1. 문서의 PDF 버전을 사용하도록 **다운로드** 구성 요소를 구성합니다.
    * **다운로드** > **속성**&#x200B;에서 확인란을 클릭하여 **DAM 자산에서 제목을 가져옵니다**.
-   * **설명**&#x200B;을 다음과 같이 설정합니다.&quot;Get the Full Story&quot;.
-   * **작업 텍스트**&#x200B;를 다음과 같이 설정합니다.&quot;PDF 다운로드&quot;.
+   * **설명**&#x200B;을 다음과 같이 설정합니다. &quot;Get the Full Story&quot;.
+   * **작업 텍스트**&#x200B;를 다음과 같이 설정합니다. &quot;PDF 다운로드&quot;.
 1. **List** 구성 요소를 구성합니다.
    * **목록 설정** > **목록 작성**&#x200B;에서 **하위 페이지**&#x200B;를 선택합니다.
    * **상위 페이지**&#x200B;를 `/content/wknd/us/en/magazine`로 설정합니다.
@@ -261,9 +261,9 @@ AEM 프로젝트 원형 이 머리글 및 바닥글을 생성했습니다. 그�
 
    페이지 구성 요소 아래에는 HTL 스크립트 `customfooterlibs.html` 및 `customheaderlibs.html`만 2개 있습니다. *그러면 이 구성 요소는 페이지를 어떻게 렌더링합니까?*
 
-   `sling:resourceSuperType` 속성은 `core/wcm/components/page/v2/page`을 가리킵니다. 이 속성을 사용하면 WKND의 페이지 구성 요소가 코어 구성 요소 페이지 구성 요소의 기능 **모든**&#x200B;을 상속할 수 있습니다. 이것은 [프록시 구성 요소 패턴](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/guidelines.html#ProxyComponentPattern)이라는 이름의 첫 번째 예입니다. 자세한 내용은 [여기에서 찾을 수 있습니다.](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/guidelines.html)
+   `sling:resourceSuperType` 속성은 `core/wcm/components/page/v2/page`을 가리킵니다. 이 속성을 사용하면 WKND의 페이지 구성 요소가 코어 구성 요소 페이지 구성 요소의 기능 **모든**&#x200B;을 상속할 수 있습니다. 이것은 [프록시 구성 요소 패턴](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html#ProxyComponentPattern)이라는 이름의 첫 번째 예입니다. 자세한 내용은 [여기에서 찾을 수 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html)
 
-1. Inspect 구성 요소 내의 다른 구성 요소인 `Breadcrumb` 구성 요소는 다음과 같습니다.`/apps/wknd/components/breadcrumb`. 동일한 `sling:resourceSuperType` 속성을 찾을 수 있지만 이번에는 `core/wcm/components/breadcrumb/v2/breadcrumb`을 가리킵니다. 프록시 구성 요소 패턴을 사용하여 코어 구성 요소를 포함하는 다른 예입니다. 실제로 WKND 코드 베이스의 모든 구성 요소는 AEM 코어 구성 요소의 프록시입니다(유명한 HelloWorld 구성 요소 제외). 사용자 지정 코드를 쓰기 전에 *핵심 구성 요소의 기능을 최대한 다시 사용하는 것이 좋습니다.*
+1. Inspect 구성 요소 내의 다른 구성 요소인 `Breadcrumb` 구성 요소는 다음과 같습니다. `/apps/wknd/components/breadcrumb`. 동일한 `sling:resourceSuperType` 속성을 찾을 수 있지만 이번에는 `core/wcm/components/breadcrumb/v2/breadcrumb`을 가리킵니다. 프록시 구성 요소 패턴을 사용하여 코어 구성 요소를 포함하는 다른 예입니다. 실제로 WKND 코드 베이스의 모든 구성 요소는 AEM 코어 구성 요소의 프록시입니다(유명한 HelloWorld 구성 요소 제외). 사용자 지정 코드를 쓰기 전에 *핵심 구성 요소의 기능을 최대한 다시 사용하는 것이 좋습니다.*
 
 1. 다음으로 CRXDE Lite을 사용하여 `/libs/core/wcm/components/page/v2/page`에 있는 코어 구성 요소 페이지를 검사합니다.
 
@@ -315,7 +315,7 @@ AEM 프로젝트 원형 이 머리글 및 바닥글을 생성했습니다. 그�
 
 1. 다른 코어 구성 요소(예: `/libs/core/wcm/components/breadcrumb/v2/breadcrumb`의 탐색 표시)입니다. `breadcrumb.html` 스크립트를 보고 이동 경로 구성 요소에 대한 마크업이 최종적으로 어떻게 생성되는지 알아보십시오.
 
-## 소스 제어에 구성 저장 {#configuration-persistence}
+## 소스 컨트롤에 구성 저장 {#configuration-persistence}
 
 대부분의 경우, 특히 AEM 프로젝트 시작 시 템플릿 및 관련 컨텐츠 정책과 같은 구성을 소스 제어에 유지하는 것이 중요합니다. 이렇게 하면 모든 개발자가 동일한 컨텐츠 및 구성 세트에 대해 작업하고 있으므로 환경 간에 추가적인 일관성을 유지할 수 있습니다. 프로젝트가 일정 수준의 성숙기에 도달하면 템플릿 관리 방법을 특수 사용자 그룹으로 전환할 수 있습니다.
 
