@@ -11,10 +11,10 @@ kt: 5251
 topic: 개발
 role: Developer
 level: Beginner, Intermediate
-source-git-commit: 5fcc7eec120debf1a8ac08716154599467e66759
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '222'
-ht-degree: 4%
+source-wordcount: '220'
+ht-degree: 5%
 
 ---
 
@@ -49,7 +49,7 @@ AEM SDK의 로컬 빠른 시작에서 쿼리 웹 기반 도구를 설명하고, 
 
 ![QueryBuilder 디버거](./assets/other-tools/query-debugger.png)
 
-QueryBuilder 디버거는 AEM [QueryBuilder](https://docs.adobe.com/content/help/en/experience-manager-65/developing/platform/query-builder/querybuilder-api.html) 구문을 사용하여 검색 쿼리를 디버깅하고 이해하는 데 도움이 되는 웹 기반 도구입니다.
+QueryBuilder 디버거는 AEM [QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html) 구문을 사용하여 검색 쿼리를 디버깅하고 이해하는 데 도움이 되는 웹 기반 도구입니다.
 
 QueryBuilder 디버거는 다음 위치에 있습니다.
 
