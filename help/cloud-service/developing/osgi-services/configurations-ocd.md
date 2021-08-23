@@ -3,13 +3,14 @@ title: ObjectClassDefinition 개체로 OSGi 구성
 description: OSGi 서비스에서 ObjectClassDefinitions를 만들고 OSGi 구성 표현으로 지정하는 방법을 알아봅니다
 role: Developer
 level: Beginner
-topic: 초보
+topic: 개발
+feature: OSGI
 kt: 8269
 thumbnail: 335730.jpeg
-source-git-commit: 680043f5717bf938bf6f0b960d9ed5939d13544c
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '105'
-ht-degree: 0%
+source-wordcount: '106'
+ht-degree: 2%
 
 ---
 
