@@ -1,12 +1,7 @@
 ---
 title: 컨텐츠 조각 모델 정의 - AEM 헤드리스 시작하기 - GraphQL
 description: Adobe Experience Manager(AEM) 및 GraphQL을 시작합니다. AEM에서 컨텐츠 조각 모델을 사용하여 컨텐츠를 모델링하고 스키마를 구축하는 방법을 알아봅니다. 기존 모델을 검토하고 새 모델을 만듭니다. 스키마를 정의하는 데 사용할 수 있는 다양한 데이터 유형에 대해 알아봅니다.
-sub-product: assets
-topics: headless
 version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
 mini-toc-levels: 1
 kt: 6712
 thumbnail: 22452.jpg
@@ -14,9 +9,9 @@ feature: 컨텐츠 조각, GraphQL API
 topic: 헤드리스, 컨텐츠 관리
 role: Developer
 level: Beginner
-source-git-commit: 81626b8d853f3f43d9c51130acf02561f91536ac
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1025'
+source-wordcount: '1024'
 ht-degree: 1%
 
 ---
@@ -46,7 +41,7 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
-> 위의 비디오에서는 **Contributor** 모델을 만드는 방법을 `Contributors` 이름으로 보여줍니다. 자체 환경에서 단계를 수행할 때 제목에 단일 양식이 사용되는지 확인하십시오.**s** 없이 `Contributor`. 컨텐츠 조각 모델 이름을 지정하면 자습서에서 나중에 수행될 GraphQL API 호출을 구동합니다.
+> 위의 비디오에서는 **Contributor** 모델을 만드는 방법을 `Contributors` 이름으로 보여줍니다. 자체 환경에서 단계를 수행할 때 제목에 단일 양식이 사용되는지 확인하십시오. **s** 없이 `Contributor`. 컨텐츠 조각 모델 이름을 지정하면 자습서에서 나중에 수행될 GraphQL API 호출을 구동합니다.
 
 ## Inspect the Adventure Content Fragment Model
 
@@ -87,7 +82,7 @@ ht-degree: 1%
 다음으로, **기여자**&#x200B;에 대한 새 모델을 만듭니다. 이 모델은 WKND 브랜드의 일부로 매거진과 모험 컨텐츠를 작성하는 사용자를 위한 데이터 모델입니다.
 
 1. 오른쪽 위 모서리에서 **만들기**&#x200B;를 클릭하여 **모델 만들기** 마법사를 표시합니다.
-1. **모델 제목**&#x200B;에 대해 다음을 입력합니다.**기여자**&#x200B;를 클릭하고 **만들기**&#x200B;를 클릭합니다.
+1. **모델 제목**&#x200B;에 대해 다음을 입력합니다. **기여자**&#x200B;를 클릭하고 **만들기**&#x200B;를 클릭합니다.
 
    ![컨텐츠 조각 모델 마법사](assets/content-fragment-models/content-fragment-model-wizard.png)
 
@@ -95,7 +90,7 @@ ht-degree: 1%
 
 1. **단일 행 텍스트** 요소를 주 패널에 드래그하여 놓습니다. **속성** 탭에 다음 속성을 입력합니다.
 
-   * **필드 레이블**: **전체 이름**
+   * **필드 레이블**:  **전체 이름**
    * **속성 이름**: `fullName`
    * **필수** 확인
 
@@ -103,13 +98,13 @@ ht-degree: 1%
 
 1. **데이터 유형** 탭을 클릭하고 **전체 이름** 필드 아래에 있는 **여러 줄 텍스트** 필드를 드래그하여 놓습니다. 다음 속성을 입력합니다.
 
-   * **필드 레이블**: **전기**
+   * **필드 레이블**:  **전기**
    * **속성 이름**: `biographyText`
-   * **기본 유형**: **리치 텍스트**
+   * **기본 유형**:  **리치 텍스트**
 
 1. **데이터 유형** 탭을 클릭하고 **컨텐츠 참조** 필드를 드래그하여 놓습니다. 다음 속성을 입력합니다.
 
-   * **필드 레이블**: **그림 참조**
+   * **필드 레이블**:  **그림 참조**
    * **속성 이름**: `pictureReference`
    * **루트 경로**: `/content/dam/wknd`
 
@@ -123,7 +118,7 @@ ht-degree: 1%
 
 1. **데이터 유형** 탭을 클릭하고 **그림 참조** 필드 아래에 있는 **열거형** 데이터 유형을 끌어다 놓습니다. 다음 속성을 입력합니다.
 
-   * **필드 레이블**: **직업**
+   * **필드 레이블**:  **직업**
    * **속성 이름**: `occupation`
 
 1. **옵션** 단추를 사용하여 여러 **옵션**&#x200B;을 추가합니다. **옵션 레이블** 및 **옵션 값**&#x200B;에 동일한 값을 사용합니다.
