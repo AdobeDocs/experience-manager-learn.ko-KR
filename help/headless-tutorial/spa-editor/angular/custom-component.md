@@ -13,15 +13,15 @@ thumbnail: 5831-spa-angular.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: bf9ab30f57faa23721d7d27b837d8e0f0e8cf4f1
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1508'
+source-wordcount: '1502'
 ht-degree: 1%
 
 ---
 
 
-# 사용자 지정 구성 요소 {#custom-component} 만들기
+# 사용자 지정 구성 요소 만들기 {#custom-component}
 
 AEM SPA 편집기에 사용할 사용자 지정 구성 요소를 만드는 방법을 알아봅니다. 작성자 대화 상자 및 Sling 모델을 개발하여 JSON 모델을 확장하여 사용자 지정 구성 요소를 채우는 방법을 알아봅니다.
 
@@ -77,7 +77,7 @@ AEM 구성 요소는 노드 및 속성으로 정의됩니다. 프로젝트에서
 
 >[!NOTE]
 >
-> AEM 구성 요소의 [기본 사항에 대한 빠른 재료는](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/component-basics.html)에 도움이 될 수 있습니다.
+> AEM 구성 요소의 [기본 사항에 대한 빠른 재료는](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html)에 도움이 될 수 있습니다.
 
 1. 선택한 IDE에서 `ui.apps` 폴더를 엽니다.
 2. `ui.apps/src/main/content/jcr_root/apps/wknd-spa-angular/components` 로 이동하여 `custom-component` 라는 새 폴더를 만듭니다.
@@ -159,13 +159,13 @@ AEM 구성 요소는 노드 및 속성으로 정의됩니다. 프로젝트에서
    >
    > 코어 구성 요소 정의](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components)를 보면 대화 상자의 예제를 훨씬 더 많이 볼 수 있습니다. [ [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/libs/granite/ui/components/coral/foundation/form)에서 `/libs/granite/ui/components/coral/foundation/form` 아래에 있는 `select`, `textarea`, `pathfield` 등의 추가 양식 필드를 볼 수도 있습니다.
 
-   기존 AEM 구성 요소를 사용하는 경우 일반적으로 [HTL](https://docs.adobe.com/content/help/ko/experience-manager-htl/using/overview.html) 스크립트가 필요합니다. SPA이 구성 요소를 렌더링하므로 HTL 스크립트가 필요하지 않습니다.
+   기존 AEM 구성 요소를 사용하는 경우 일반적으로 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=ko-KR) 스크립트가 필요합니다. SPA이 구성 요소를 렌더링하므로 HTL 스크립트가 필요하지 않습니다.
 
 ## Sling 모델 만들기
 
-Sling 모델은 JCR에서 Java 변수에 데이터를 쉽게 매핑하는 주석 기반의 Java &quot;POJO&quot;(일반 이전 Java 개체)입니다. [AEM ](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/component-basics.html#sling-models) 구성 요소에 대한 복잡한 서버측 비즈니스 로직을 캡슐화하는 Sling Modelstically 함수
+Sling 모델은 JCR에서 Java 변수에 데이터를 쉽게 매핑하는 주석 기반의 Java &quot;POJO&quot;(일반 이전 Java 개체)입니다. [AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html#sling-models) 구성 요소에 대한 복잡한 서버측 비즈니스 로직을 캡슐화하는 Sling Modelstically 함수
 
-SPA Editor 컨텍스트에서 Sling Models는 [Sling Model Exporter](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/develop-sling-model-exporter.html)를 사용하는 기능을 통해 JSON 모델을 통해 구성 요소의 컨텐츠를 제공합니다.
+SPA Editor 컨텍스트에서 Sling Models는 [Sling Model Exporter](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html)를 사용하는 기능을 통해 JSON 모델을 통해 구성 요소의 컨텐츠를 제공합니다.
 
 1. 선택한 IDE에서 `core` 모듈을 엽니다. `CustomComponent.java` 그리고  `CustomComponentImpl.java` 는 이미 장 스타터 코드의 일부로 작성되고 게시되었습니다.
 
