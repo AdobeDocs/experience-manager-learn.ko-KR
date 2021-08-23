@@ -12,9 +12,9 @@ thumbnail: KT-6282.jpg
 topic: 통합, 개발
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: 2efb7050b0b0c783c5f34c1f2e375cf21fa7a6cd
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1426'
+source-wordcount: '1424'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ asset compute 작업자는 개념적으로 `renditionCallback(...)` 함수에서
 1. asset compute 작업자가 새 표현물의 이진 데이터를 `rendition.path`에 저장합니다.
 1. `rendition.path`에 작성된 이진 데이터는 Asset compute SDK를 통해 AEM 작성자 서비스로 전송되고, __(4a)__ 텍스트 표현물과 __(4b)__(4b) 자산의 메타데이터 노드로 노출됩니다.
 
-위의 다이어그램은 Asset compute 개발자 대면 관련 문제와 Asset compute 작업자 호출을 설명하는 논리 흐름을 보여줍니다. 궁금하신 경우 Asset compute 실행에 대한 [내부 세부 정보](https://docs.adobe.com/content/help/en/asset-compute/using/extend/custom-application-internals.html)를 사용할 수 있지만 공개 Asset compute SDK API 계약만 종속될 수 있습니다.
+위의 다이어그램은 Asset compute 개발자 대면 관련 문제와 Asset compute 작업자 호출을 설명하는 논리 흐름을 보여줍니다. 궁금하신 경우 Asset compute 실행에 대한 [내부 세부 정보](https://experienceleague.adobe.com/docs/asset-compute/using/extend/custom-application-internals.html)를 사용할 수 있지만 공개 Asset compute SDK API 계약만 종속될 수 있습니다.
 
 ## 근로자 구조
 
@@ -352,7 +352,7 @@ class RenditionInstructionsError extends ClientError {
 >[!WARNING]
 >
 >로컬 개발 중에 AEM에서 Cloud Service 처리 프로필로 전달된 경우 다양한 데이터 유형을 사용하여 값을 전달할 수 있으므로 필요한 경우 올바른 데이터 유형을 구문 분석해야 합니다.
-> 예를 들어 Jimp의 `crop(width, height)` 함수에는 해당 매개 변수가 `int`&#39;여야 합니다.`parseInt(rendition.instructions.size)`를 int로 구문 분석하지 않으면 매개 변수가 호환되지 않는 &#39;String&#39; 유형이 되므로 `jimp.crop(SIZE, SIZE)` 호출이 실패합니다.
+> 예를 들어 Jimp의 `crop(width, height)` 함수에는 해당 매개 변수가 `int`&#39;여야 합니다. `parseInt(rendition.instructions.size)`를 int로 구문 분석하지 않으면 매개 변수가 호환되지 않는 &#39;String&#39; 유형이 되므로 `jimp.crop(SIZE, SIZE)` 호출이 실패합니다.
 
 코드는 다음에 대한 매개 변수를 허용합니다.
 
