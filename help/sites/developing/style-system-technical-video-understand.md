@@ -1,36 +1,27 @@
 ---
 title: AEM 스타일 시스템에 대한 코드 지정 방법 이해
 description: 이 비디오에서는 스타일 시스템을 사용하여 Adobe Experience Manager의 핵심 제목 구성 요소에 스타일을 지정하는 데 사용되는 CSS(또는 LESS) 및 JavaScript의 해부와 이러한 스타일이 HTML 및 DOM에 적용되는 방식을 살펴봅니다.
-feature: 스타일 시스템
-topics: development, components, front-end-development
-audience: developer, implementer
-doc-type: technical video
-activity: understand
+feature: Style System
 version: 6.4, 6.5
-topic: 개발
+topic: Development
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '1148'
-ht-degree: 2%
+source-wordcount: '1092'
+ht-degree: 0%
 
 ---
 
 
-# 스타일 시스템{#understanding-how-to-code-for-the-aem-style-system}에 대한 코드를 작성하는 방법 이해하기
+# 스타일 시스템에 대한 코드 지정 방법 이해{#understanding-how-to-code-for-the-aem-style-system}
 
 이 비디오에서는 스타일 시스템을 사용하여 Experience Manager의 코어 제목 구성 요소에 스타일을 지정하는 데 사용되는 CSS(또는 [!DNL LESS])와 JavaScript의 해부도와 이러한 스타일이 HTML 및 DOM에 적용되는 방식을 살펴봅니다.
 
->[!NOTE]
->
->AEM 스타일 시스템이 [AEM 6.3 SP1](https://helpx.adobe.com/kr/experience-manager/6-3/release-notes/sp1-release-notes.html) + [기능 팩 20593](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-20593)에서 도입되었습니다.
->
->이 비디오에서는 We.Retail 제목 구성 요소가 [코어 구성 요소 v2.0.0+](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/releases)에서 상속되도록 업데이트되었다고 가정합니다.
 
-## 스타일 시스템 {#understanding-how-to-code-for-the-style-system}에 대한 코드 작성 방법 이해
+## 스타일 시스템에 대한 코드 지정 방법 이해 {#understanding-how-to-code-for-the-style-system}
 
->[!VIDEO](https://video.tv.adobe.com/v/21538/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/21538/?quality=12&learn=on)
 
 제공된 AEM 패키지(**technical-review.sites.style-system-1.0.0.zip**)는 예제 제목 스타일, We.Retail 레이아웃 컨테이너 및 제목 구성 요소에 대한 샘플 정책 및 샘플 페이지를 설치합니다.
 
@@ -155,7 +146,7 @@ jQuery(function ($) {
 
 ### HTML 우수 사례 {#html-best-practices}
 
-* HTML(HTL을 통해 생성)은 가능한 구조적으로 의미가 있어야 합니다.요소의 불필요한 그룹화/중첩 방지
+* HTML(HTL을 통해 생성)은 가능한 구조적으로 의미가 있어야 합니다. 요소의 불필요한 그룹화/중첩 방지
 * HTML 요소는 BEM 스타일 CSS 클래스를 통해 주소를 지정해야 합니다.
 
 **좋은**  - 구성 요소의 모든 요소는 BEM 표기법을 통해 대응 가능 합니다.
@@ -199,7 +190,7 @@ jQuery(function ($) {
 
 * CSS 정의를 지우고 다시 사용할 수 있도록 [LESS](https://lesscss.org/)(기본적으로 AEM에서 지원됨) 또는 [SCSS](https://sass-lang.com/)(사용자 지정 빌드 시스템 필요)와 같은 전처리기 사용.
 
-* 선택기 가중치/특이성을 균일하게 유지합니다.따라서 CSS 캐스케이드 충돌을 피하거나 식별하기 어려운 문제를 해결하는 데 도움이 됩니다.
+* 선택기 가중치/특이성을 균일하게 유지합니다. 따라서 CSS 캐스케이드 충돌을 피하거나 식별하기 어려운 문제를 해결하는 데 도움이 됩니다.
 * 각 스타일을 개별 파일로 구성합니다.
    * 이러한 파일은 LESS/SCSS `@imports` 를 사용하여 결합하거나, 원시 CSS가 필요한 경우 HTML 클라이언트 라이브러리 파일 포함 또는 사용자 지정 프런트 엔드 자산 빌드 시스템을 통해 결합할 수 있습니다.
 * 여러 복잡한 스타일을 혼합하지 마십시오.
@@ -225,14 +216,14 @@ jQuery(function ($) {
    <td valign="middle"><span class="code">.cmp-list</span></td> 
    <td valign="middle"><span class="code">.cmp-list__item</span></td> 
    <td valign="middle">→</td> 
-   <td><p><span class="code">.cmp-list—dark</span></p> <p><span class="code"> .cmp-list</span></p> <p><span class="code"> </span><strong><span class="code"> .cmp-list__item {  </span></strong></p> <p><strong> 색상:파란색;</strong></p> <p><strong> }</strong></p> </td> 
+   <td><p><span class="code">.cmp-list—dark</span></p> <p><span class="code"> .cmp-list</span></p> <p><span class="code"> </span><strong><span class="code"> .cmp-list__item {  </span></strong></p> <p><strong> 색상: 파란색;</strong></p> <p><strong> }</strong></p> </td> 
   </tr> 
   <tr> 
    <td valign="middle"><span class="code">.cmp-image—hero</span></td> 
    <td valign="middle"><span class="code">.cmp-image</span></td> 
    <td valign="middle"><span class="code">.cmp-image__caption</span></td> 
    <td valign="middle">→</td> 
-   <td valign="middle"><p><span class="code">.cmp-image—hero</span></p> <p><span class="code"> .cmp-image</span></p> <p><span class="code"> .cmp-image__caption {</span></p> <p><span class="code"> 색상:빨간색;</span></p> <p><span class="code"> }</span></p> </td> 
+   <td valign="middle"><p><span class="code">.cmp-image—hero</span></p> <p><span class="code"> .cmp-image</span></p> <p><span class="code"> .cmp-image__caption {</span></p> <p><span class="code"> 색상: 빨간색;</span></p> <p><span class="code"> }</span></p> </td> 
   </tr> 
  </tbody> 
 </table>
