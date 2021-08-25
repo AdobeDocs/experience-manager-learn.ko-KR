@@ -2,17 +2,12 @@
 title: 업그레이드해야 하는 이유 이해하기
 description: 최신 버전의 Adobe Experience Manager으로 업그레이드하려는 고객을 위한 주요 기능에 대한 높은 수준의 분석입니다.
 version: 6.5
-sub-product: assets, cloud manager, commerce, content-services, dynamic-media, forms, foundation, screens, sites
-topics: best-practices, upgrade
-audience: all
-activity: understand
-doc-type: article
-topic: 업그레이드
+topic: Upgrade
 role: Leader, Architect, Developer, Admin, User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '3529'
+source-wordcount: '3462'
 ht-degree: 3%
 
 ---
@@ -504,8 +499,8 @@ AEM은 다른 Adobe 서비스와 통합할 수 있습니다.
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/6-5/release-notes/style-system-fp.html" target="_blank">스타일 시스템</a>:</strong>
-            컨텍스트 내 스타일 시스템을 사용하여 AEM 구성 요소의 시각적 모양을 정의하여 구성 요소를 다시 사용합니다.</td>
+            <td><strong>스타일 시스템: </strong>
+            컨텍스트 내 스타일 시스템을 사용하여 AEM 구성 요소의 시각적 모양을 정의하여 다시 사용합니다.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -559,8 +554,8 @@ AEM은 다른 Adobe 서비스와 통합할 수 있습니다.
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-feature-video-understand.html" target="_blank">컨텐츠 조각</a>:</strong>
-            프레젠테이션에서 편집 가능한 컨텐츠를 만들어 조정하면 쉽게 재사용할 수 있습니다.</td>
+            <td><strong>컨텐츠 조각:</strong>
+            프레젠테이션에서 편집 가능한 컨텐츠를 재사용할 수 있도록 재결합하지 않고 만들어 조정합니다.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -581,7 +576,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있습니다.
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/release-notes/content-services-fragments-featurepack.html" target="_blank">컨텐츠 서비스</a>: </strong>
+            <td><strong>컨텐츠 서비스: </strong>
             장치 및 애플리케이션 간에 소비할 수 있도록 AEM의 컨텐츠를 JSON으로 내보냅니다.</td>
             <td> </td>
             <td> </td>
@@ -636,7 +631,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있습니다.
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/aem-screens-introduction.html" target="_blank">스크린</a>:</strong>
+            <td><strong>화면: </strong>
             디지털 간판 및 키오스크에 대한 경험을 관리합니다.</td>
             <td> </td>
             <td> </td>
@@ -993,8 +988,6 @@ AEM은 다른 Adobe 서비스와 통합할 수 있습니다.
 
 다음은 AEM에서 제공하는 주요 AEM Forms 추가 기능 매트릭스입니다. 이러한 기능 중 일부는 각 릴리스에 추가된 이전 버전의 증분 개선 사항에서 도입되었습니다.
 
-+ [AEM Forms 릴리스 노트](https://helpx.adobe.com/experience-manager/6-5/release-notes/forms.html)
-
 ***✔<sup>+</sup> 이 버전의 기능에 대한 중요한 개선 사항입니다.***
 
 ***✔<sup></sup> SP는 서비스 팩 또는 기능 팩을 통해 사용할 수 있음을 나타냅니다.***
@@ -1149,8 +1142,8 @@ AEM은 다른 Adobe 서비스와 통합할 수 있습니다.
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/pdf/aem-forms/6-5/WorkbenchHelp.pdf" target="_blank">Forms 처리를 위한 워크플로우(J2EE)</a>:</strong>
-             직관적인 IDE를 사용하여 복잡한 양식/문서 중심의 워크플로우를 빌드합니다.</td>
+            <td><strong>Forms 처리를 위한 워크플로우(J2EE): </strong>
+            직관적인 IDE를 사용하여 복잡한 양식/문서 중심의 워크플로우를 빌드합니다.</td>
             <td></td>
             <td>✔</td>
             <td>✔</td>
@@ -1188,8 +1181,6 @@ AEM은 다른 Adobe 서비스와 통합할 수 있습니다.
 ## 커뮤니티 기능
 
 다음은 AEM에서 제공하는 주요 AEM Communities 추가 기능 매트릭스입니다. 이러한 기능 중 일부는 각 릴리스에 추가된 이전 버전의 증분 개선 사항에서 도입되었습니다.
-
-+ [AEM Communities의 새로운 기능 요약](https://helpx.adobe.com/experience-manager/6-5/communities/using/whats-new-aem-communities.html#main-pars_text)
 
 ***✔<sup>+</sup> 이 버전의 기능에 대한 중요한 개선 사항입니다.***
 
@@ -1629,7 +1620,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있습니다.
     </tbody>
 </table>
 
-AEM Communities은 조직에서 다음 방법으로 사용자를 참여시키고 활성화할 수 있도록 릴리스에 [개선 사항](https://helpx.adobe.com/experience-manager/6-5/communities/using/whats-new-aem-communities.html)을 추가합니다.
+AEM Communities은 릴리스를 통해 향상된 기능을 추가하여 조직에서 다음과 같이 사용자를 참여시키고 활성화할 수 있습니다.
 
 + **사용자** 생성 콘텐츠의 @mentionsupport입니다.
 + **지원** 구성 요소의 **키보드 탐색**&#x200B;을 통해 액세스 가능성이 개선되었습니다.
