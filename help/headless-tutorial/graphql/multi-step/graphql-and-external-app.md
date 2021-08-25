@@ -5,13 +5,13 @@ version: cloud-service
 mini-toc-levels: 1
 kt: 6716
 thumbnail: KT-6716.jpg
-feature: 컨텐츠 조각, GraphQL API
-topic: 헤드리스, 컨텐츠 관리
+feature: Content Fragments, GraphQL API
+topic: Headless, Content Management
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '1403'
+source-wordcount: '1398'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 _이 장의 IDE 스크린샷은  [Visual Studio 코드에서 가져옵니다.](https://code.visualstudio.com/)_
 
-GraphQL 쿼리에 대한 자세한 내용을 보려면 [GraphQL 네트워크](https://chrome.google.com/webstore/detail/graphql-network/igbmhmnkobkjalekgiehijefpkdemocm)와 같은 브라우저 확장을 설치하십시오.
+GraphQL 쿼리에 대한 자세한 내용을 보려면 [GraphQL 네트워크 관리자](https://chrome.google.com/webstore/detail/graphql-network-inspector/ndlbedplllcgconngcnfmkadhokfaaln)와 같은 브라우저 확장을 설치하십시오.
 
 ## 목표
 
@@ -74,7 +74,7 @@ React 앱을 시작하는 방법은 [빠른 설정](./setup.md) 장에 더 자�
 
       ![WKND GraphQL React 앱 - 세부 경험](./assets/graphql-and-external-app/react-details-view.png)
 
-1. 브라우저의 개발 도구 및 [GraphQL 네트워크](https://chrome.google.com/webstore/detail/graphql-network/igbmhmnkobkjalekgiehijefpkdemocm)와 같은 브라우저 확장을 사용하여 AEM에 전송된 GraphQL 쿼리 및 해당 JSON 응답을 검사합니다. 이 접근 방식을 사용하여 GraphQL 요청 및 응답을 모니터링하여 이러한 요청이 올바로 작성되고 응답이 예상대로 수행되는지 확인할 수 있습니다.
+1. 브라우저의 개발 도구 및 [GraphQL 네트워크 관리자](https://chrome.google.com/webstore/detail/graphql-network-inspector/ndlbedplllcgconngcnfmkadhokfaaln)와 같은 브라우저 확장을 사용하여 AEM에 전송된 GraphQL 쿼리 및 해당 JSON 응답을 검사합니다. 이 접근 방식을 사용하여 GraphQL 요청 및 응답을 모니터링하여 이러한 요청이 올바로 작성되고 응답이 예상대로 수행되는지 확인할 수 있습니다.
 
    ![adventureList에 대한 원시 쿼리](assets/graphql-and-external-app/raw-query-chrome-extension.png)
 
