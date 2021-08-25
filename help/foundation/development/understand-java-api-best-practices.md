@@ -1,25 +1,20 @@
 ---
-title: AEM의 Java API 우수 사례 이해
+title: AEM의 Java API 우수 사례
 description: AEM은 개발 중에 사용할 많은 Java API를 표시하는 풍부한 오픈 소스 소프트웨어 스택을 기반으로 구축됩니다. 이 문서에서는 주요 API와 그 사용 시기 및 이유를 설명합니다.
 version: 6.2, 6.3, 6.4, 6.5
-sub-product: foundation, assets, 사이트
-feature: API
-topics: best-practices, development
-activity: develop
-audience: developer
-doc-type: article
-topic: 개발
+feature: APIs
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '2029'
+source-wordcount: '2030'
 ht-degree: 3%
 
 ---
 
 
-# Java API 우수 사례 이해
+# Java API 우수 사례
 
 AEM(Adobe Experience Manager)은 개발 중에 사용할 많은 Java API를 표시하는 풍부한 오픈 소스 소프트웨어 스택에 빌드되어 있습니다. 이 문서에서는 주요 API와 그 사용 시기 및 이유를 설명합니다.
 
@@ -29,15 +24,15 @@ AEM은 4개의 기본 Java API 세트를 기반으로 구축됩니다.
 
    * 페이지, 자산, 워크플로우 등과 같은 제품 추상
 
-* **[!DNL Apache Sling]웹 프레임워크**
+* **Apache Sling Web Framework**
 
    * 리소스, 값 맵 및 HTTP 요청과 같은 REST 및 리소스 기반 추상화.
 
-* **JCR([!DNL Apache Jackrabbit Oak])**
+* **JCR(Apache Jackrabbit Oak)**
 
    * 노드, 속성 및 세션과 같은 데이터 및 컨텐츠 추상.
 
-* **[!DNL OSGi (Apache Felix)]**
+* **OSGi(Apache Felix)**
 
    * 서비스 및 (OSGi) 구성 요소와 같은 OSGi 애플리케이션 컨테이너 추상.
 
@@ -46,7 +41,7 @@ AEM은 4개의 기본 Java API 세트를 기반으로 구축됩니다.
 일반적인 규칙은 API/추상을 다음 순서로 선호합니다.
 
 1. **AEM**
-1. **[!DNL Sling]**
+1. **슬링**
 1. **JCR**
 1. **OSGi**
 
@@ -96,8 +91,8 @@ AEM에서는 여러 쿼리 언어를 지원합니다. 3개의 기본 언어는 [
 
 * 간단한 매개 변수화된 쿼리 구성(맵으로 모델링된 쿼리 매개 변수)
 * 네이티브 [Java API 및 HTTP API](https://helpx.adobe.com/kr/experience-manager/6-3/sites/developing/using/querybuilder-api.html)
-* [OOTB 쿼리 디버거](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/querybuilder-api.html#TestingandDebugging)
-* [일반적인 ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/querybuilder-predicate-reference.html) 쿼리 요구 사항을 지원하는 OOTB 설명
+* [AEM Query Debugger](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/querybuilder-api.html#TestingandDebugging)
+* [AEM ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/querybuilder-predicate-reference.html) 예측일반적인 쿼리 요구 사항 지원
 
 * 확장 가능한 API - 사용자 지정 [쿼리 설명](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/implementing-custom-predicate-evaluator.html)을 개발할 수 있습니다.
 * JCR-SQL2 및 XPath는 [[!DNL Sling]](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/ResourceResolver.html#findResources-java.lang.String-java.lang.String-) 및 [JCR API](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/query/package-summary.html)를 통해 직접 실행할 수 있으며, 결과는 각각 [[!DNL Sling] 리소스](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/Resource.html) 또는 [JCR 노드](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html)를 반환합니다.
@@ -105,7 +100,6 @@ AEM에서는 여러 쿼리 언어를 지원합니다. 3개의 기본 언어는 [
 >[!CAUTION]
 >
 >AEM QueryBuilder API에서 ResourceResolver 개체가 누출됩니다. 이 누수를 줄이려면 이 [코드 샘플](https://github.com/Adobe-Consulting-Services/acs-aem-samples/blob/master/core/src/main/java/com/adobe/acs/samples/search/querybuilder/impl/SampleQueryBuilder.java#L164)을 따르십시오.
-
 
 ## [!DNL Sling] API
 
@@ -155,12 +149,12 @@ JCR은 AEM 컨텐츠 저장소이지만 API는 컨텐츠와 상호 작용하기 
 
 ### JCR API의 일반적인 사용
 
-* [액세스 제어 관리](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/security-service-users.html)
+* [액세스 제어 관리](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html)
 * [승인 가능 관리(사용자/그룹)](https://jackrabbit.apache.org/api/2.8/org/apache/jackrabbit/api/security/user/package-summary.html)
 * JCR 관찰(JCR 이벤트 수신)
 * 딥 노드 구조 만들기
 
-   * Sling API는 리소스 생성을 지원하지만, JCR API는 딥 구조를 신속하게 만드는 [JcrUtils](https://jackrabbit.apache.org/api/2.10/index.html?org/apache/jackrabbit/commons/JcrUtils.html) 및 [JcrUtil](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/jcr/JcrUtil.html)의 편의 방법을 제공합니다.
+   * Sling API는 리소스 생성을 지원하지만, JCR API는 딥 구조를 신속하게 만드는 [JcrUtils](https://jackrabbit.apache.org/api/2.12/org/apache/jackrabbit/commons/JcrUtils.html) 및 [JcrUtil](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/jcr/JcrUtil.html)의 편의 방법을 제공합니다.
 
 ## OSGi API
 
