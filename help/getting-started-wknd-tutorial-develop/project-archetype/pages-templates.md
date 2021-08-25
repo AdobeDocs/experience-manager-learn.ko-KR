@@ -1,20 +1,16 @@
 ---
 title: AEM Sites 시작하기 - 페이지 및 템플릿
-seo-title: AEM Sites 시작하기 - 페이지 및 템플릿
 description: 기본 페이지 구성 요소와 편집 가능한 템플릿 간의 관계에 대해 알아봅니다. 핵심 구성 요소가 프로젝트에 프록시되는 방법을 이해하고 편집 가능한 템플릿의 고급 정책 구성을 배워서 Adobe XD의 모집단 을 기반으로 잘 구성된 문서 페이지 템플릿을 작성합니다.
-sub-product: 사이트
-version: 6.4, 6.5, Cloud Service
-type: Tutorial
-feature: 핵심 구성 요소, 편집 가능한 템플릿, 페이지 편집기
-topic: 컨텐츠 관리, 개발
+feature: Core Components, Editable Templates, Page Editor
+topic: Content Management, Development
 role: Developer
 level: Beginner
 mini-toc-levels: 1
 kt: 4082
 thumbnail: 30214.jpg
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '3100'
+source-wordcount: '3082'
 ht-degree: 0%
 
 ---
@@ -57,7 +53,7 @@ ht-degree: 0%
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
-항상 [GitHub](https://github.com/adobe/aem-guides-wknd/tree/pages-templates/solution)에서 완료된 코드를 보거나 분기 `tutorial/pages-templates-solution`로 전환하여 로컬로 코드를 체크 아웃할 수 있습니다.
+항상 [GitHub](https://github.com/adobe/aem-guides-wknd/tree/tutorial/pages-templates-solution)에서 완료된 코드를 보거나 분기 `tutorial/pages-templates-solution`로 전환하여 로컬로 코드를 체크 아웃할 수 있습니다.
 
 ## 목표
 
