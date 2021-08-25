@@ -1,15 +1,15 @@
 ---
 title: AEM 경험 구성요소 및 Adobe Target을 사용한 개인화
-seo-title: Adobe Experience Manager(AEM) 경험 구성요소 및 Adobe Target을 사용한 개인화
+seo-title: Personalization using Adobe Experience Manager (AEM) Experience Fragments and Adobe Target
 description: Adobe Experience Manager 경험 구성요소 및 Adobe Target을 사용하여 개인화된 경험을 만들고 전달하는 방법을 보여주는 종단간 자습서입니다.
-seo-description: Adobe Experience Manager 경험 구성요소 및 Adobe Target을 사용하여 개인화된 경험을 만들고 전달하는 방법을 보여주는 종단간 자습서입니다.
-feature: 경험 구성요소
-topic: 개인화
+seo-description: An end-to-end tutorial showing how to create and deliver personalized experience using Adobe Experience Manager Experience Fragments and Adobe Target.
+feature: Experience Fragments
+topic: Personalization
 role: Developer
 level: Intermediate
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '1728'
+source-wordcount: '1692'
 ht-degree: 1%
 
 ---
@@ -41,7 +41,7 @@ WKND 사이트는 웹사이트를 통해 미국 전역에 **SkateFest Challenge*
 * **AEM**
    * [localhost 4502 ](./implementation.md#getting-aem) 및 4503에서 각각 AEM 작성자 및 게시 설치
 * **Experience Cloud**
-   * 조직 Adobe Experience Cloud - <https://>`<yourcompany>`.experiencecloud.adobe.com에 액세스
+   * 조직에 대한 액세스 Adobe Experience Cloud - `https://<yourcompany>.experiencecloud.adobe.com`
    * 다음 솔루션으로 제공된 Experience Cloud
       * [Adobe Target](https://experiencecloud.adobe.com)
 
@@ -79,7 +79,7 @@ WKND 사이트는 웹사이트를 통해 미국 전역에 **SkateFest Challenge*
 
 ### 지리 기반의 타깃팅으로 대상 만들기 {#marketer-audience}
 
-1. 조직 [Adobe Experience Cloud](https://experiencecloud.adobe.com/)(<https://>`<yourcompany>`.experiencecloud.adobe.com)로 이동합니다.
+1. 조직 [Adobe Experience Cloud](https://experiencecloud.adobe.com/)(`<https://<yourcompany>.experiencecloud.adobe.com`)로 이동합니다.
 1. Adobe ID을 사용하여 로그인하고 올바른 조직에 있는지 확인하십시오.
 1. 솔루션 전환기에서 **Target**&#x200B;을 클릭한 다음 **launch** Adobe Target을 클릭합니다.
 
