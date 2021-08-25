@@ -1,19 +1,14 @@
 ---
 title: 관리자를 위한 중요한 보고서
 description: Dynamic Media Classic 관리자가 설정을 고려해야 하는 두 개의 중요한 보고서를 살펴봅니다.
-sub-product: dynamic media, 자산
 feature: Dynamic Media Classic
-doc-type: tutorial
-topics: development, authoring, configuring, reports
-audience: all
-activity: use
-topic: 컨텐츠 관리
+topic: Content Management
 role: Admin
 level: Intermediate
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 1%
+source-wordcount: '314'
+ht-degree: 0%
 
 ---
 
@@ -47,6 +42,4 @@ Dynamic Media Classic에 대해 자세히 알아보려면 다음 리소스를 �
 - [Experience League의 Dynamic Media Classic - 가치 창출](https://guided.adobe.com/?launch=AEM-5a#recommended/solutions/experience-manager)
 - [Experience League의 Dynamic Media Classic - 더 많은 작업](https://guided.adobe.com/?launch=AEM-6a#recommended/solutions/experience-manager)
 - [Dynamic Media 뉴스레터 아카이브](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/dynamic-media-newsletter.html)
-- [Dynamic Media 뉴스레터 구독 페이지](https://www.adobe.com/subscription/dynamic-media-newsletter.html)
 - [Dynamic Media Classic 설명서](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html)
-- [리치 미디어 블로그 게시물](https://theblog.adobe.com/tag/dynamic-media)
