@@ -1,15 +1,15 @@
 ---
 title: Experience Platform Launch 및 Adobe I/O을 사용하여 Adobe Experience Manager과 Adobe Target 통합
-seo-title: Experience Platform Launch 및 Adobe I/O을 사용하여 Adobe Experience Manager과 Adobe Target 통합
+seo-title: Integrating Adobe Experience Manager with Adobe Target using Experience Platform Launch and Adobe I/O
 description: Experience Platform Launch 및 Adobe I/O을 사용하여 Adobe Experience Manager을 Adobe Target과 통합하는 방법을 단계별로 안내합니다
-seo-description: Experience Platform Launch 및 Adobe I/O을 사용하여 Adobe Experience Manager을 Adobe Target과 통합하는 방법을 단계별로 안내합니다
-feature: 경험 구성요소
-topic: 개인화
+seo-description: Step by step walk-through on how to integrate Adobe Experience Manager with Adobe Target using Experience Platform Launch and Adobe I/O
+feature: Experience Fragments
+topic: Personalization
 role: Developer
 level: Intermediate
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '1098'
+source-wordcount: '1064'
 ht-degree: 2%
 
 ---
@@ -21,14 +21,14 @@ ht-degree: 2%
 
 * [로컬 호스트 ](./implementation.md#set-up-aem) 포트 4502 및 4503에서 AEM 작성자 및 게시 설치
 * **Experience Cloud**
-   * 조직 Adobe Experience Cloud - <https://>`<yourcompany>`.experiencecloud.adobe.com에 액세스
+   * 조직에 대한 액세스 Adobe Experience Cloud - `https://<yourcompany>.experiencecloud.adobe.com`
    * 다음 솔루션으로 제공된 Experience Cloud
       * [Adobe Experience Platform Launch](https://experiencecloud.adobe.com)
       * [Adobe Target](https://experiencecloud.adobe.com)
       * [Adobe I/O 콘솔](https://console.adobe.io)
 
       >[!NOTE]
-      >Launch에서 개발, 승인, 게시, 확장 관리 및 환경 관리 권한이 있어야 합니다. 사용자 인터페이스 옵션을 사용할 수 없어서 이러한 단계를 완료할 수 없는 경우 Experience Cloud 관리자에게 연락하여 액세스 권한을 요청하십시오. Launch 권한에 대한 자세한 내용은 [ 설명서](https://docs.adobelaunch.com/administration/user-permissions)를 참조하십시오.
+      >Launch에서 개발, 승인, 게시, 확장 관리 및 환경 관리 권한이 있어야 합니다. 사용자 인터페이스 옵션을 사용할 수 없어서 이러한 단계를 완료할 수 없는 경우 Experience Cloud 관리자에게 연락하여 액세스 권한을 요청하십시오. Launch 권한에 대한 자세한 내용은 [ 설명서](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html)를 참조하십시오.
 
 
 * **브라우저 플러그인**
@@ -66,7 +66,7 @@ AEM에서는 Experience Platform Launch과 즉시 통합할 수 있습니다. �
 
 속성은 사이트에 태그를 배포할 때 확장, 규칙, 데이터 요소 및 라이브러리로 채우는 컨테이너입니다.
 
-1. 조직 [Adobe Experience Cloud](https://experiencecloud.adobe.com/)(<https://>`<yourcompany>`.experiencecloud.adobe.com)로 이동합니다.
+1. 조직 [Adobe Experience Cloud](https://experiencecloud.adobe.com/)(`https://<yourcompany>.experiencecloud.adobe.com`)로 이동합니다.
 2. Adobe ID을 사용하여 로그인하고 올바른 조직에 있는지 확인하십시오.
 3. 솔루션 전환기에서 **Launch**&#x200B;를 클릭한 다음 **Go To Launch** 단추를 선택합니다.
 
@@ -75,7 +75,7 @@ AEM에서는 Experience Platform Launch과 즉시 통합할 수 있습니다. �
 4. 올바른 조직에 있는지 확인한 다음 Launch 속성 만들기를 계속합니다.
    ![Experience Cloud - 시작](assets/using-launch-adobe-io/launch-create-property.png)
 
-   *속성 만들기에 대한 자세한 내용은 제품  [설명서](https://docs.adobelaunch.com/administration/companies-and-properties#create-a-property) 에서 속성 만들기 를 참조하십시오.*
+   *속성 만들기에 대한 자세한 내용은 제품  [설명서](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=en#create-or-configure-a-property) 에서 속성 만들기 를 참조하십시오.*
 5. **New Property** 단추를 클릭합니다.
 6. 속성의 이름을 입력합니다(예: *AEM Target 자습서*).
 7. WKND 데모 사이트가 실행 중인 도메인이므로 도메인으로는 *localhost.com*&#x200B;을 입력합니다. &#39;*도메인*&#39; 필드가 필요하지만 Launch 속성은 Launch가 구현된 모든 도메인에서 작동합니다. 이 필드의 주 목적은 규칙 빌더에서 메뉴 옵션을 미리 채우는 것입니다.
