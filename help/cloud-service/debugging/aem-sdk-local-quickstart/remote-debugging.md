@@ -1,20 +1,16 @@
 ---
 title: AEM SDK를 원격 디버깅
 description: AEM SDK의 로컬 빠른 시작을 사용하면 IDE에서 원격 Java 디버깅을 사용할 수 있으므로 AEM에서 라이브 코드 실행을 단계별로 진행하여 정확한 실행 흐름을 파악할 수 있습니다.
-feature: 개발자 도구
-topics: development
-version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
 kt: 5251
-topic: 개발
+topic: Development
+feature: Developer Tools
 role: Developer
 level: Beginner, Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+thumbnail: 34338.jpeg
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 1%
+source-wordcount: '275'
+ht-degree: 0%
 
 ---
 
@@ -40,10 +36,10 @@ $ java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005 -jar a
 
 + 호스트 AEM SDK의 로컬 빠른 시작이 `localhost` 수신 대기합니다.
 + AEM SDK의 로컬 빠른 시작은 AEM SDK의 로컬 빠른 시작을 시작할 때 `address` 매개 변수로 지정된 포트인 원격 디버그 연결을 수신 대기합니다.
-+ 원격 디버거에 소스 코드를 제공하는 Maven 프로젝트를 지정해야 하는 경우가 있습니다.OSGi 번들 maven 프로젝트 프로젝트입니다.
++ 원격 디버거에 소스 코드를 제공하는 Maven 프로젝트를 지정해야 하는 경우가 있습니다. OSGi 번들 maven 프로젝트 프로젝트입니다.
 
 ### 지침 설정
 
 + [VS 코드 Java 원격 디버거 설정](https://code.visualstudio.com/docs/java/java-debugging)
-+ [IntelliJ IDEA 원격 디버거 설정](https://www.jetbrains.com/help/idea/run-debug-configuration-remote-debug.html)
++ [IntelliJ IDEA 원격 디버거 설정](https://www.jetbrains.com/help/idea/tutorial-remote-debug.html)
 + [Eclipse 원격 디버거 설정](https://javapapers.com/core-java/java-remote-debug-with-eclipse/)
