@@ -2,15 +2,15 @@
 title: Adobe Analytics을 사용하여 페이지 데이터 수집
 description: 이벤트 기반 Adobe 클라이언트 데이터 레이어를 사용하여 Adobe Experience Manager으로 빌드된 웹 사이트에서 사용자 활동에 대한 데이터를 수집합니다. Experience Platform Launch에서 규칙을 사용하여 이러한 이벤트를 수신하고 데이터를 Adobe Analytics 보고서 세트로 보내는 방법을 알아봅니다.
 version: cloud-service
-topic: 통합
-feature: Adobe 클라이언트 데이터 레이어
+topic: Integrations
+feature: Adobe Client Data Layer
 role: Developer
 level: Intermediate
 kt: 5332
 thumbnail: 5332-collect-data-analytics.jpg
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '2378'
+source-wordcount: '2375'
 ht-degree: 1%
 
 ---
@@ -52,7 +52,7 @@ AEM 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-man
 AEM 환경을 설정하고 WKND 코드 베이스를 설치하는 대신 Experience Platform 디버거를 사용하여 라이브 **https://wknd.site/](https://wknd.site/)를 *your*Launch 속성으로**&#x200B;전환할 수 있습니다. [ 물론 AEM 사이트([Adobe 클라이언트 데이터 레이어 활성화](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation)가 이미 있는 경우)를 사용할 수 있습니다
 
 1. Experience Platform Launch에 로그인하고 [Launch 속성](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/configure-launch/launch.html)을 만듭니다(아직 작성하지 않았다면).
-1. 초기 Launch [라이브러리가 생성되어 Launch [환경](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments.html)으로 승격되었는지 확인합니다.](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html#create-a-library)
+1. 초기 Launch [라이브러리가 생성되어 Launch [환경](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html)으로 승격되었는지 확인합니다.](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html#create-a-library)
 1. 라이브러리가 게시된 환경에서 Launch 포함 코드를 복사합니다.
 
    ![Launch 포함 코드 복사](assets/collect-data-analytics/launch-environment-copy.png)
@@ -172,7 +172,7 @@ Adobe 클라이언트 데이터 계층은 **이벤트** 기반 데이터 레이�
 
    `event` 개체가 사용자 지정 이벤트에서 호출된 `trigger()` 메서드에서 전달됩니다. `component` 는 사용자 지정 이벤트의 데이터 레이어 `getState` 에서 파생된 현재 페이지입니다. 데이터 계층에 의해 노출된 [페이지 스키마](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#page)의 앞부분에서 다시 불러와 즉시 노출되는 다양한 키를 확인하십시오.
 
-1. 변경 사항을 저장하고 Launch에서 [build](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html)를 실행하여 코드를 AEM 사이트에서 사용되는 [환경](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments.html)으로 승격합니다.
+1. 변경 사항을 저장하고 Launch에서 [build](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html)를 실행하여 코드를 AEM 사이트에서 사용되는 [환경](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html)으로 승격합니다.
 
    >[!NOTE]
    >
