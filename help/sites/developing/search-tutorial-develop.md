@@ -1,18 +1,14 @@
 ---
 title: 단순 검색 구현 안내서
 description: 단순 검색 구현은 2017년 Summit Lab AEM Search Demystified의 자료입니다. 이 페이지에는 이 실습의 자료가 포함되어 있습니다. 랩을 안내하는 둘러보려면 이 페이지의 프레젠테이션 섹션에서 Lab 통합 문서를 확인하십시오.
-topics: development, search
-audience: developer
-doc-type: tutorial
-activity: develop
 version: 6.3, 6.4, 6.5
-feature: 검색
-topic: 개발
+feature: Search
+topic: Development
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '897'
 ht-degree: 2%
 
 ---
@@ -114,7 +110,7 @@ ht-degree: 2%
 
    Oak는 AEM에서 사용할 lucene 제공 분석기 구성 요소 집합을 표시합니다.
 
-   * [Apache Oak Analytics 설명서](http://jackrabbit.apache.org/oak/docs/query/lucene.html#analyzers)
+   * [Apache Oak Analytics 설명서](https://jackrabbit.apache.org/oak/docs/query/lucene.html#analyzers)
       * [토큰제](https://cwiki.apache.org/confluence/display/solr/Tokenizers)
       * [필터](https://cwiki.apache.org/confluence/display/solr/Filter+Descriptions)
       * [CharFilters](https://cwiki.apache.org/confluence/display/solr/CharFilterFactories)
