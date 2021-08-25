@@ -1,20 +1,15 @@
 ---
 title: asset compute 확장성을 위한 Asset compute 프로젝트 만들기
 description: asset compute 프로젝트는 Adobe I/O CLI를 사용하여 생성된 Node.js 프로젝트로서, 특정 구조를 준수하여 Adobe I/O Runtime에 배포하고 AEM과 Cloud Service으로 통합할 수 있습니다.
-feature: asset compute 마이크로서비스
-topics: renditions, development
-version: cloud-service
-activity: develop
-audience: developer
-doc-type: tutorial
 kt: 6269
 thumbnail: 40197.jpg
-topic: 통합, 개발
+topic: Integrations, Development
+feature: Asset Compute Microservices
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '902'
 ht-degree: 1%
 
 ---
@@ -34,7 +29,7 @@ _asset compute 프로젝트를 생성하는 클릭스루(오디오 없음)_
 
 1. 명령줄에서 프로젝트를 포함할 폴더로 이동합니다.
 1. 명령줄에서 `aio app init`을(를) 실행하여 대화형 프로젝트 생성 CLI를 시작합니다.
-   + 이 명령은 Adobe I/O 인증을 요청하는 웹 브라우저를 만들 수 있습니다.이 경우 [필수 Adobe 서비스 및 제품](../set-up/accounts-and-services.md)과 연관된 Adobe 자격 증명을 제공합니다. 로그인할 수 없는 경우 [프로젝트](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#42-developer-is-not-logged-in-as-enterprise-organization-user)를 생성하는 방법에 대한 다음 지침을 따르십시오.
+   + 이 명령은 Adobe I/O 인증을 요청하는 웹 브라우저를 만들 수 있습니다. 이 경우 [필수 Adobe 서비스 및 제품](../set-up/accounts-and-services.md)과 연관된 Adobe 자격 증명을 제공합니다. 로그인할 수 없는 경우 [프로젝트](https://www.adobe.io/project-firefly/docs/getting_started/first_app/#42-developer-is-not-logged-in-as-enterprise-organization-user)를 생성하는 방법에 대한 다음 지침을 따르십시오.
 1. __조직 선택__
    + AEM as a Cloud Service, Project Firefly 가 등록된 Adobe 조직을 선택합니다
 1. __프로젝트 선택__
@@ -53,12 +48,12 @@ _asset compute 프로젝트를 생성하는 클릭스루(오디오 없음)_
 
 ## console.json 생성
 
-개발자 도구에는 Adobe I/O에 연결하는 데 필요한 자격 증명이 포함된 `console.json` 파일이 필요합니다.이 파일은 Adobe I/O 콘솔에서 다운로드됩니다.
+개발자 도구에는 Adobe I/O에 연결하는 데 필요한 자격 증명이 포함된 `console.json` 파일이 필요합니다. 이 파일은 Adobe I/O 콘솔에서 다운로드됩니다.
 
 1. asset compute 작업자의 [Adobe I/O](https://console.adobe.io) 프로젝트를 엽니다.
 1. 프로젝트 작업 영역을 선택하여 `console.json` 자격 증명을 다운로드합니다. 이 경우 `Development` 를 선택합니다
 1. Adobe I/O 프로젝트의 루트로 이동하고 오른쪽 위 모서리에서 __모두 다운로드__&#x200B;를 누릅니다.
-1. 파일은 프로젝트 및 작업 공간 접두사가 있는 `.json` 파일로 다운로드됩니다. 예:`wkndAemAssetCompute-81368-Development.json`
+1. 파일은 프로젝트 및 작업 공간 접두사가 있는 `.json` 파일로 다운로드됩니다. 예: `wkndAemAssetCompute-81368-Development.json`
 1. 다음 중 하나를 수행할 수 있습니다.
    + 파일 이름을 `config.json`로 변경하고 Asset compute 작업자 프로젝트의 루트에서 이동합니다. 이 자습서의 접근 방식입니다.
    + 구성 항목이 `ASSET_COMPUTE_INTEGRATION_FILE_PATH`인 `.env` 파일에서 해당 폴더를 임의의 폴더로 이동하고 참조합니다. 파일 경로는 프로젝트의 루트에 대해 절대 또는 상대적일 수 있습니다. 예:
