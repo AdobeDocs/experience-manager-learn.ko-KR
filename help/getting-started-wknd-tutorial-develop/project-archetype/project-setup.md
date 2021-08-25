@@ -1,20 +1,20 @@
 ---
 title: AEM Sites 시작하기 - 프로젝트 설정
-seo-title: AEM Sites 시작하기 - 프로젝트 설정
+seo-title: Getting Started with AEM Sites - Project Setup
 description: AEM 사이트에 대한 코드 및 구성을 관리할 Maven 다중 모듈 프로젝트 만들기를 다룹니다.
-sub-product: 사이트
+sub-product: sites
 version: 6.4, 6.5, Cloud Service
 type: Tutorial
-feature: AEM 프로젝트 전형
-topic: 컨텐츠 관리, 개발
+feature: AEM Project Archetype
+topic: Content Management, Development
 role: Developer
 level: Beginner
 mini-toc-levels: 1
 kt: 3418
 thumbnail: 30152.jpg
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '1857'
+source-wordcount: '1843'
 ht-degree: 2%
 
 ---
@@ -275,7 +275,7 @@ AEM 프로젝트 원형 은 파일을 안전하게 무시할 수 있는 시작�
 
 ### Ui.apps 및 Ui.content 모듈 {#apps-content-module}
 
-**[ui.apps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uiapps.html)** maven 모듈에는 `/apps` 아래의 사이트에 필요한 모든 렌더링 코드가 포함되어 있습니다. 여기에는 [clientlibs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/clientlibs.html)라는 AEM 형식으로 저장될 CSS/JS가 포함됩니다. 여기에는 동적 HTML 렌더링을 위한 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=ko-KR) 스크립트도 포함됩니다. **ui.apps** 모듈을 JCR의 구조에 대한 맵으로 생각할 수 있지만 파일 시스템에 저장하고 소스 제어에 커밋할 수 있는 형식으로 생각할 수 있습니다. **ui.apps** 모듈에는 코드만 포함되어 있습니다.
+**[ui.apps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uiapps.html)** maven 모듈에는 `/apps` 아래의 사이트에 필요한 모든 렌더링 코드가 포함되어 있습니다. 여기에는 [clientlibs](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html)라는 AEM 형식으로 저장될 CSS/JS가 포함됩니다. 여기에는 동적 HTML 렌더링을 위한 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=ko-KR) 스크립트도 포함됩니다. **ui.apps** 모듈을 JCR의 구조에 대한 맵으로 생각할 수 있지만 파일 시스템에 저장하고 소스 제어에 커밋할 수 있는 형식으로 생각할 수 있습니다. **ui.apps** 모듈에는 코드만 포함되어 있습니다.
 
 이 모듈만 빌드하려면
 
@@ -346,6 +346,6 @@ AEM 프로젝트 원형 은 파일을 안전하게 무시할 수 있는 시작�
 
    포트 **4504**&#x200B;에서 실행 중인 AEM 인스턴스가 없을 경우 다시 빌드 오류가 발생합니다. 매개 변수 `aem.port`은(는) `aem-guides-wknd/pom.xml`의 POM 파일에 정의됩니다.
 
-**[ui.content](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.htm)** 모듈은 **ui.apps** 모듈과 동일한 방식으로 구성됩니다. 유일한 차이는 **ui.content** 모듈에 **가변** 콘텐츠라고 하는 내용이 포함되어 있다는 것입니다. **** 메타콘텐츠는 기본적으로 소스 제어에 저장되지만 AEM 인스턴스에서 직접 수정할 수 있는 템플릿, 정책 또는 폴더 구조와 같은 비코드 구성을  **** 나타냅니다. 이 내용은 페이지 및 템플릿 장의 훨씬 더 자세히 살펴보겠습니다.
+**[ui.content](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.html)** 모듈은 **ui.apps** 모듈과 동일한 방식으로 구성됩니다. 유일한 차이는 **ui.content** 모듈에 **가변** 콘텐츠라고 하는 내용이 포함되어 있다는 것입니다. **** 메타콘텐츠는 기본적으로 소스 제어에 저장되지만 AEM 인스턴스에서 직접 수정할 수 있는 템플릿, 정책 또는 폴더 구조와 같은 비코드 구성을  **** 나타냅니다. 이 내용은 페이지 및 템플릿 장의 훨씬 더 자세히 살펴보겠습니다.
 
 **ui.apps** 모듈을 빌드하는 데 사용되는 것과 동일한 Maven 명령을 사용하여 **ui.content** 모듈을 빌드할 수 있습니다. **ui.content** 폴더 내에서 위의 단계를 자유롭게 반복하십시오.
