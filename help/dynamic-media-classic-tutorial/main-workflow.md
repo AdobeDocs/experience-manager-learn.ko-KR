@@ -7,12 +7,12 @@ doc-type: tutorial
 topics: development, authoring, configuring, architecture, publishing
 audience: all
 activity: use
-topic: 컨텐츠 관리
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '2714'
+source-wordcount: '2710'
 ht-degree: 0%
 
 ---
@@ -142,7 +142,7 @@ Dynamic Media Classic URL을 통합하는 방법을 이해하면 프로그래밍
 
 일반적으로 오류가 발생하지 않고 이미지/자산의 이름이 이전에 게시된 버전과 동일하지만 이미지에 문제가 있습니다. 예를 들어 실수로 저해상도 버전을 업로드했거나 아트 디렉터가 이미지를 승인하지 않았습니다. 이 경우 원본 이미지를 회수하여 동일한 자산 ID를 사용하여 새 버전으로 바꾸려고 합니다.
 
-[업데이트해야 하는 URL에 대한 캐시를 수동으로 지우는 방법을 알아봅니다](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/invalidate-cdn-cached-content.html).
+[업데이트해야 하는 URL에 대한 캐시를 수동으로 지우는 방법을 알아봅니다](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/invalidate-cdn-cache-dynamic-media.html?lang=en).
 
 >[!TIP]
 >
