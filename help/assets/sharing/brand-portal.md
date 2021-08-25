@@ -3,12 +3,12 @@ title: Brand Portal 사용
 description: AEM 작성자 및 AEM Assets Brand Portal 통합의 비디오 둘러보기.
 feature: Brand Portal
 version: 6.3, 6.4, 6.5
-topic: 컨텐츠 관리
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '1767'
+source-wordcount: '1764'
 ht-degree: 2%
 
 ---
@@ -30,7 +30,7 @@ Brand Portal의 자산 소싱은 타사 에이전시 및 팀에서 자산을 수
 
 *자산 소싱을 사용하려면 Experience Manager 작성자 6.5 SP2(6.5.2) 이상이 필요합니다*
 
-Experience Manager 작성자에 대한 자산 소싱을 구성 및 설정하는 방법에 대한 지침은 [자산 소싱용 Experience Manager 작성자 활성화](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/configure-asset-sourcing-in-aem/brand-portal-enable-asset-sourcing.html)를 검토하십시오.
+Experience Manager 작성자에 대한 자산 소싱을 구성 및 설정하는 방법에 대한 지침은 [자산 소싱용 Experience Manager 작성자 활성화](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en)를 검토하십시오.
 
 ## Brand Portal 2019년 2월 기능 및 개선 사항{#brand-portal-features-and-enhancements-644}
 
