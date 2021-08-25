@@ -2,13 +2,13 @@
 title: AEM을 통한 CORS(원본 간 리소스 공유) 개발
 description: 클라이언트 측 JavaScript를 통해 외부 웹 애플리케이션에서 AEM 컨텐츠에 액세스하는 CORS를 활용하는 짧은 예입니다.
 version: 6.3, 6,4, 6.5
-topic: 보안, 개발
+topic: Security, Development
 role: Developer
 level: Beginner
-feature: 보안
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+feature: Security
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '293'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,8 @@ ht-degree: 0%
 
 * **www.example.** comaps 를 통해 localhost에 매핑  `/etc/hosts`
 * **aem-publish.** localmap을 통해 localhost에 매핑  `/etc/hosts`
-* [SimpleHTTPServer](https://itunes.apple.com/us/app/simple-http-server/id441002840?mt=12) ( [[!DNL Python]&#39;s SimpleHTTPServer의 래퍼](https://docs.python.org/2/library/simplehttpserver.html))는 포트 8000을 통해 HTML 페이지를 제공합니다.
+* SimpleHTTPServer([[!DNL Python]&#39;s SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html)의 래퍼)는 포트 8000을 통해 HTML 페이지를 제공합니다.
+   * _Mac App Store에서 더 이상 사용할 수 없습니다. [Jeeves](https://apps.apple.com/us/app/jeeves-local-http-server/id980824182?mt=12)._ 와 같이 유사한 를 사용하십시오.
 * [!DNL AEM Dispatcher] 가  [!DNL Apache HTTP Web Server] 2.4에서 실행 중이며 에 대한 역방향 프록싱 요청 `aem-publish.local` 이  `localhost:4503`.
 
 자세한 내용은 AEM](./understand-cross-origin-resource-sharing.md)에서 [CORS(원본 간 리소스 공유) 이해 를 검토하십시오.
@@ -117,7 +118,7 @@ Access-Control-Request-Method,Access-Control-Request-Headers]"
 ## 지원 자료 {#supporting-materials}
 
 * [교차 도메인 리소스 공유 정책을 위한 AEM OSGi Configuration factory](http://localhost:4502/system/console/configMgr/com.adobe.granite.cors.impl.CORSPolicyImpl)
-* [macOS용 SimpleHTTPServer](https://itunes.apple.com/us/app/simple-http-server/id441002840?mt=12)
+* [macOS용 Jeeves](https://apps.apple.com/us/app/jeeves-local-http-server/id980824182?mt=12)
 * [Python SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html) (Windows/macOS/Linux 호환)
 
 * [AEM의 CORS(원본 간 리소스 공유) 이해](./understand-cross-origin-resource-sharing.md)
