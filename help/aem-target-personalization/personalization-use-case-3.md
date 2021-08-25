@@ -1,15 +1,15 @@
 ---
 title: Adobe Target Visual Experience Composer를 사용한 개인화
-seo-title: Adobe Target VEC(시각적 경험 작성기)를 사용한 개인화
+seo-title: Personalization using Adobe Target Visual Experience Composer (VEC)
 description: Adobe Target VEC(시각적 경험 작성기)를 사용하여 개인화된 경험을 만들고 전달하는 방법을 보여주는 종단간 자습서입니다.
-seo-description: Adobe Target VEC(시각적 경험 작성기)를 사용하여 개인화된 경험을 만들고 전달하는 방법을 보여주는 종단간 자습서입니다.
-feature: 경험 구성요소
-topic: 개인화
+seo-description: An end-to-end tutorial showing how to create and deliver personalized experience using Adobe Target Visual Experience Composer (VEC).
+feature: Experience Fragments
+topic: Personalization
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '583'
 ht-degree: 2%
 
 ---
@@ -40,7 +40,7 @@ WKND 사이트 홈 페이지에는 도시 주변에서 수행할 수 있는 로�
    * [4503](./implementation.md#getting-aem) 에 AEM 게시 설치
    * [Adobe Experience Platform Launch을 사용하여 Adobe Target과 통합](./using-launch-adobe-io.md#aem-target-using-launch-by-adobe)
 * **Experience Cloud**
-   * 조직 Adobe Experience Cloud - <https://>`<yourcompany>`.experiencecloud.adobe.com에 액세스
+   * 조직에 대한 액세스 Adobe Experience Cloud - `https://<yourcompany>.experiencecloud.adobe.com`
    * [Adobe Target](https://experiencecloud.adobe.com)로 제공된 Experience Cloud
 
 ## 마케터 활동
