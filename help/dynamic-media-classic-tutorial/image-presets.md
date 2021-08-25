@@ -2,17 +2,17 @@
 title: 이미지 사전 설정
 description: Dynamic Media Classic의 이미지 사전 설정에는 특정 크기, 형식, 품질 및 선명하게 만드는 데 필요한 모든 설정이 포함되어 있습니다. 이미지 사전 설정은 동적 크기 조절의 주요 구성 요소입니다. Dynamic Media Classic에서 URL을 보면 이미지 사전 설정이 사용 중인지 쉽게 확인할 수 있습니다. 이미지 사전 설정, 이미지 사전 설정이 유용한 이유 및 이미지 사전 설정을 만드는 방법에 대해 알아봅니다.
 sub-product: dynamic-media
-feature: Dynamic Media Classic, 이미지 사전 설정
+feature: Dynamic Media Classic, Image Presets
 doc-type: tutorial
 topics: development, authoring, configuring
 audience: all
 activity: use
-topic: 컨텐츠 관리
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '670'
 ht-degree: 1%
 
 ---
@@ -70,5 +70,3 @@ Dynamic Media Classic에서는 세 가지 유형의 선명하게 하기를 사�
 [이미지 사전 설정 안내서](https://www.adobe.com/content/dam/www/us/en/experience-manager/pdfs/dynamic-media-image-preset-guide.pdf). 이미지 품질 및 로드 속도를 최적화하는 데 사용할 설정입니다.
 
 [이미지는 2의 모든 부분입니다. 단순한 흐림 현상이 아닙니다. 품질과 속도](https://theblog.adobe.com/image-is-everything-part-2-its-never-just-a-blur-quality-versus-speed/). 고품질의, 빠른 로드 이미지를 제공하기 위해 이미지 사전 설정을 사용하여 논의하는 블로그 게시물입니다.
-
-[이미지는 모든 웨비나입니다](https://dynamicmediaseries2019.enterprise.adobeevents.com/). _이미지가 모든 것_ 시리즈에서 세 개의 웨비나를 모두 녹음하는 링크입니다. [웨비나 2](https://seminars.adobeconnect.com/p6lqaotpjnd3) 에서 이미지 사전 설정에 대해 설명합니다.
