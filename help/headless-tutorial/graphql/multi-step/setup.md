@@ -5,13 +5,13 @@ version: cloud-service
 mini-toc-levels: 1
 kt: 6386
 thumbnail: KT-6386.jpg
-feature: 컨텐츠 조각, GraphQL API
-topic: 헤드리스, 컨텐츠 관리
+feature: Content Fragments, GraphQL API
+topic: Headless, Content Management
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '1829'
+source-wordcount: '1814'
 ht-degree: 1%
 
 ---
@@ -158,11 +158,7 @@ WKND 참조 사이트에는 [GraphQL 종단점을 노출하는 데 필요한 구
 
    ![GraphQL 끝점 XHR 요청](assets/setup/endpoint-gql.png)
 
-1. 네트워크 요청을 검사하여 매개 변수와 JSON 응답을 볼 수도 있습니다. 쿼리 및 응답을 보다 잘 이해하기 위해 Chrome용 [GraphQL 네트워크](https://chrome.google.com/webstore/detail/graphql-network/igbmhmnkobkjalekgiehijefpkdemocm) 와 같은 브라우저 확장을 설치하는 것이 도움이 될 수 있습니다.
-
-   ![GraphQL 네트워크 확장](assets/setup/GraphQL-extension.png)
-
-   *Chrome 확장 프로그램 GraphQL 네트워크 사용*
+1. 네트워크 요청을 검사하여 매개 변수와 JSON 응답을 볼 수도 있습니다. 쿼리 및 응답을 보다 잘 이해하기 위해 Chrome용 [GraphQL 네트워크 관리자](https://chrome.google.com/webstore/detail/graphql-network-inspector/ndlbedplllcgconngcnfmkadhokfaaln) 와 같은 브라우저 확장을 설치하는 것이 도움이 될 수 있습니다.
 
 ## 컨텐츠 조각 수정
 
