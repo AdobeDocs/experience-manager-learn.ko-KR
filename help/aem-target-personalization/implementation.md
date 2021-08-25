@@ -1,15 +1,15 @@
 ---
 title: Adobe Experience Manager과 Adobe Target 통합
-seo-title: 개인화된 콘텐츠를 제공하기 위해 Adobe Experience Manager(AEM)을 Adobe Target과 통합하는 다양한 방법을 다루는 문서입니다.
+seo-title: An article covering different ways to integrate Adobe Experience Manager(AEM) with Adobe Target for delivering personalized content.
 description: 다양한 시나리오에 대해 Adobe Target과 함께 Adobe Experience Manager을 설정하는 방법을 다루는 문서입니다.
-seo-description: 다양한 시나리오에 대해 Adobe Target과 함께 Adobe Experience Manager을 설정하는 방법을 다루는 문서입니다.
-feature: 경험 구성요소
-topic: 개인화
+seo-description: An article covering how to set up Adobe Experience Manager with Adobe Target for different scenarios.
+feature: Experience Fragments
+topic: Personalization
 role: Developer
 level: Intermediate
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '662'
 ht-degree: 4%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 4%
       * [디지털 데이터 계층](assets/implementation/digital-data-layer.zip)
 
 * **Experience Cloud**
-   * 조직 Adobe Experience Cloud - <https://>`<yourcompany>`.experiencecloud.adobe.com에 액세스
+   * 조직에 대한 액세스 Adobe Experience Cloud - `https://<yourcompany>.experiencecloud.adobe.com`
    * 다음 솔루션으로 제공된 Experience Cloud
       * [Adobe Experience Platform Launch](https://experiencecloud.adobe.com)
       * [Adobe Target](https://experiencecloud.adobe.com)
