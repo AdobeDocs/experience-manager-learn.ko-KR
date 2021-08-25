@@ -2,17 +2,17 @@
 title: 로컬 AEM 개발 환경 설정
 description: AEM, Adobe Experience Manager에 대한 로컬 개발 설정에 대한 안내서입니다. 로컬 설치, Apache Maven, 통합 개발 환경 및 디버깅/문제 해결에 대한 중요한 항목을 다룹니다. Eclipse IDE, CRXDE-Lite, Visual Studio 코드 및 IntelliJ를 사용한 개발에 대해 설명합니다.
 version: 6.4, 6.5
-feature: 개발자 도구
+feature: Developer Tools
 topics: development
 activity: develop
 audience: developer
-topic: 개발
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '2655'
-ht-degree: 1%
+source-wordcount: '2658'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +34,7 @@ AEM, Adobe Experience Manager에 대한 로컬 개발 설정에 대한 안내서
 
 로컬 AEM 인스턴스를 참조할 때 개발자의 개인 컴퓨터에서 실행 중인 Adobe Experience Manager 사본에 대해 이야기하고 있습니다. ****** 모든 AEM 개발은 로컬 AEM 인스턴스에 대해 코드를 작성하고 실행하는 것으로 시작해야 합니다.
 
-AEM을 처음 사용하는 경우 두 가지 기본 실행 모드를 설치할 수 있습니다.***작성자*** 및 ***게시***. ***작성자*** [실행 모드](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/configure-runmodes.html)는 디지털 마케터가 컨텐츠를 만들고 관리하는 데 사용할 환경입니다. **대부분의**&#x200B;을 개발할 때 코드를 작성자 인스턴스에 배포합니다. 구성 요소를 추가 및 구성할 수 있을 뿐만 아니라 새 페이지를 만들 수도 있습니다. AEM Sites은 WYSIWYG 작성 CMS이므로 대부분의 CSS 및 JavaScript를 작성 인스턴스에 대해 테스트할 수 있습니다.
+AEM을 처음 사용하는 경우 두 가지 기본 실행 모드를 설치할 수 있습니다. ***작성자*** 및 ***게시***. ***작성자*** [실행 모드](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/configure-runmodes.html)는 디지털 마케터가 컨텐츠를 만들고 관리하는 데 사용할 환경입니다. **대부분의**&#x200B;을 개발할 때 코드를 작성자 인스턴스에 배포합니다. 구성 요소를 추가 및 구성할 수 있을 뿐만 아니라 새 페이지를 만들 수도 있습니다. AEM Sites은 WYSIWYG 작성 CMS이므로 대부분의 CSS 및 JavaScript를 작성 인스턴스에 대해 테스트할 수 있습니다.
 
 또한 로컬 ***Publish*** 인스턴스에 대해 *critical* 테스트 코드도 사용됩니다. ***게시*** 인스턴스는 웹 사이트 방문자가 상호 작용하는 AEM 환경입니다. ***게시*** 인스턴스는 ***작성자*** 인스턴스와 동일한 기술 스택이지만 구성 및 권한과 관련된 몇 가지 주요 차이점이 있습니다. 코드는 높은 수준 환경으로 승격되기 전에 *항상*&#x200B;로컬 ***게시*** 인스턴스에 대해 테스트해야 합니다.
 
@@ -79,7 +79,7 @@ AEM을 처음 사용하는 경우 두 가지 기본 실행 모드를 설치할 �
 
 ***[!DNL Apache Maven]*** 는 Java 기반 프로젝트에 대한 빌드 및 배포 절차를 관리하는 도구입니다. AEM은 Java 기반 플랫폼이고 [!DNL Maven] 은 AEM 프로젝트에 대한 코드를 관리하는 표준 방법입니다. ***AEM Maven Project*** 또는 ***AEM Project***&#x200B;라고 말하는 경우, Adobe는 사이트에 대한 *사용자 지정* 코드를 모두 포함하는 Maven 프로젝트를 참조합니다.
 
-모든 AEM 프로젝트는 최신 버전의 **[!DNL AEM Project Archetype]**&#x200B;에서 빌드해야 합니다.[https://github.com/Adobe-Marketing-Cloud/aem-project-archetype](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype) [!DNL AEM Project Archetype]은(는) 일부 샘플 코드와 컨텐츠를 사용하여 AEM 프로젝트의 부트스트랩을 만듭니다. [!DNL AEM Project Archetype]에도 프로젝트에 사용하도록 구성된 **[!DNL AEM WCM Core Components]**&#x200B;이 포함되어 있습니다.
+모든 AEM 프로젝트는 최신 버전의 **[!DNL AEM Project Archetype]**&#x200B;에서 빌드해야 합니다. [https://github.com/Adobe-Marketing-Cloud/aem-project-archetype](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype) [!DNL AEM Project Archetype]은(는) 일부 샘플 코드와 컨텐츠를 사용하여 AEM 프로젝트의 부트스트랩을 만듭니다. [!DNL AEM Project Archetype]에도 프로젝트에 사용하도록 구성된 **[!DNL AEM WCM Core Components]**&#x200B;이 포함되어 있습니다.
 
 >[!CAUTION]
 >
@@ -207,12 +207,12 @@ IDE를 사용할 때는 Maven Profile 탭에서 `classic`을 확인하십시오.
 
 ### [!DNL Eclipse] IDE
 
-**[[!DNL Eclipse] IDE](https://www.eclipse.org/ide/)**&#x200B;는 오픈 소스 및 ***free***!이기 때문에 Java 개발을 위해 가장 많이 사용되는 IDE 중 하나입니다. Adobe은 [!DNL Eclipse]에 대한 플러그인 **[[!DNL AEM Developer Tools]](https://eclipse.adobe.com/aem/dev-tools/)**&#x200B;을 제공하여 코드를 로컬 AEM 인스턴스와 동기화할 수 있는 좋은 GUI로 쉽게 개발할 수 있도록 합니다. [!DNL Eclipse] IDE는 [!DNL AEM Developer Tools]의 GUI를 지원하기 때문에 일반적으로 AEM을 처음 사용하는 개발자에게 권장됩니다.
+**[[!DNL Eclipse] IDE](https://www.eclipse.org/ide/)**&#x200B;는 오픈 소스 및 ***free***!이기 때문에 Java 개발을 위해 가장 많이 사용되는 IDE 중 하나입니다. Adobe은 [!DNL Eclipse]에 대한 플러그인 **[[!DNL AEM Developer Tools]](https://experienceleague.adobe.com/docs/experience-manager-64/developing/devtools/aem-eclipse.html)**&#x200B;을 제공하여 코드를 로컬 AEM 인스턴스와 동기화할 수 있는 좋은 GUI로 쉽게 개발할 수 있도록 합니다. [!DNL Eclipse] IDE는 [!DNL AEM Developer Tools]의 GUI를 지원하기 때문에 일반적으로 AEM을 처음 사용하는 개발자에게 권장됩니다.
 
 #### 설치 및 설정
 
-1. [!DNL Java EE Developers]용 [!DNL Eclipse] IDE를 다운로드하여 설치합니다.[https://www.eclipse.org](https://www.eclipse.org/)
-1. 지침에 따라 [!DNL AEM Developer Tools] 플러그인을 설치합니다.[https://eclipse.adobe.com/aem/dev-tools/](https://eclipse.adobe.com/aem/dev-tools/)
+1. [!DNL Java EE Developers]용 [!DNL Eclipse] IDE를 다운로드하여 설치합니다. [https://www.eclipse.org](https://www.eclipse.org/)
+1. 지침에 따라 [!DNL AEM Developer Tools] 플러그인을 설치합니다. [https://experienceleague.adobe.com/docs/experience-manager-64/developing/devtools/aem-eclipse.html](https://eclipse.adobe.com/aem/dev-tools/)
 
 >[!VIDEO](https://video.tv.adobe.com/v/25906?quality=12&learn=on)
 
@@ -228,8 +228,8 @@ IDE를 사용할 때는 Maven Profile 탭에서 `classic`을 확인하십시오.
 
 #### [!DNL Installation and Setup]
 
-1. [!DNL IntelliJ IDEA] 을 다운로드하여 설치합니다.[https://www.jetbrains.com/idea/download](https://www.jetbrains.com/idea/download)
-1. [!DNL Repo] 설치(명령줄 도구):[https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#installation)
+1. [!DNL IntelliJ IDEA] 을 다운로드하여 설치합니다. [https://www.jetbrains.com/idea/download](https://www.jetbrains.com/idea/download)
+1. [!DNL Repo] 설치(명령줄 도구): [https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#installation)
 
 >[!VIDEO](https://video.tv.adobe.com/v/26089/?quality=12&learn=on)
 
@@ -277,13 +277,13 @@ IDE를 사용할 때는 Maven Profile 탭에서 `classic`을 확인하십시오.
 
 문제가 발생할 때 첫 번째 단계는 코드가 성공적으로 AEM에 배포되어 설치되었는지 확인하는 것입니다.
 
-1. **패키지  [!UICONTROL 관리자]** 를 확인하여 코드 패키지가 업로드 및 설치되었는지 확인합니다. [http://localhost:4502/crx/packmgr/index.jsp](http://localhost:4502/crx/packmgr/index.jsp)에서 확인하십시오. 최근에 패키지가 설치되었는지 확인하려면 타임스탬프를 확인하십시오.
-1. [!DNL Repo] 또는 [!DNL AEM Developer Tools] 등의 도구를 사용하여 증분 파일 업데이트를 수행하는 경우 **파일이 로컬 AEM 인스턴스에 푸시되어 파일 내용이 업데이트되는지[!DNL CRXDE Lite]**&#x200B;확인합니다.[http://localhost:4502/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp)
-1. **OSGi 번들의** Java 코드와 관련된 문제가 번들에 업로드되고 있는지 확인합니다. [!UICONTROL Adobe Experience Manager Web Console]을 엽니다.[http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles) 및 번들을 검색합니다. 번들에 **[!UICONTROL Active]** 상태가 있는지 확인합니다. **[!UICONTROL 설치됨]** 상태의 번들 문제 해결에 대한 자세한 내용은 아래를 참조하십시오.
+1. **패키지  [!UICONTROL 관리자]** 를 확인하여 코드 패키지가 업로드 및 설치되었는지 확인합니다.  [http://localhost:4502/crx/packmgr/index.jsp](http://localhost:4502/crx/packmgr/index.jsp)에서 확인하십시오. 최근에 패키지가 설치되었는지 확인하려면 타임스탬프를 확인하십시오.
+1. [!DNL Repo] 또는 [!DNL AEM Developer Tools] 등의 도구를 사용하여 증분 파일 업데이트를 수행하는 경우 **파일이 로컬 AEM 인스턴스에 푸시되어 파일 내용이 업데이트되는지[!DNL CRXDE Lite]**&#x200B;확인합니다. [http://localhost:4502/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp)
+1. **OSGi 번들의** Java 코드와 관련된 문제가 번들에 업로드되고 있는지 확인합니다. [!UICONTROL Adobe Experience Manager Web Console]을 엽니다. [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles) 및 번들을 검색합니다. 번들에 **[!UICONTROL Active]** 상태가 있는지 확인합니다. **[!UICONTROL 설치됨]** 상태의 번들 문제 해결에 대한 자세한 내용은 아래를 참조하십시오.
 
 #### 로그 확인
 
-AEM은 채팅 플랫폼이며 **error.log**&#x200B;에 유용한 정보를 많이 기록합니다. **error.log**&#x200B;는 AEM이 설치된 위치에서 찾을 수 있습니다.&lt; `aem-installation-folder>/crx-quickstart/logs/error.log`.
+AEM은 채팅 플랫폼이며 **error.log**&#x200B;에 유용한 정보를 많이 기록합니다. **error.log**&#x200B;는 AEM이 설치된 위치에서 찾을 수 있습니다. &lt; `aem-installation-folder>/crx-quickstart/logs/error.log`.
 
 문제를 추적하는 유용한 기법은 Java 코드에 로그 문을 추가하는 것입니다.
 
@@ -305,11 +305,11 @@ public class MyClass {
 }
 ```
 
-기본적으로 **error.log** 는 *[!DNL INFO]* 문을 로깅하도록 구성되어 있습니다. 로그 수준을 변경하려면 [!UICONTROL 로그 지원]으로 이동하십시오.[http://localhost:4502/system/console/slinglog](http://localhost:4502/system/console/slinglog) 또한 **error.log**&#x200B;가 너무 수다하다. [!UICONTROL 로그 지원]을 사용하여 지정된 Java 패키지에 대한 로그 문을 구성할 수 있습니다. 사용자 지정 코드 문제를 OOTB AEM 플랫폼 문제와 쉽게 구분하기 위해 프로젝트에 가장 좋습니다.
+기본적으로 **error.log** 는 *[!DNL INFO]* 문을 로깅하도록 구성되어 있습니다. 로그 수준을 변경하려면 [!UICONTROL 로그 지원]으로 이동하십시오. [http://localhost:4502/system/console/slinglog](http://localhost:4502/system/console/slinglog) 또한 **error.log**&#x200B;가 너무 수다하다. [!UICONTROL 로그 지원]을 사용하여 지정된 Java 패키지에 대한 로그 문을 구성할 수 있습니다. 사용자 지정 코드 문제를 OOTB AEM 플랫폼 문제와 쉽게 구분하기 위해 프로젝트에 가장 좋습니다.
 
 ![AEM에서 구성 로깅](./assets/set-up-a-local-aem-development-environment/logging.png)
 
-#### 번들이 설치 상태 {#bundle-active}에 있습니다.
+#### 번들이 설치됨 상태입니다. {#bundle-active}
 
 모든 번들(조각 제외)은 **[!UICONTROL Active]** 상태여야 합니다. 코드 번들이 [!UICONTROL Installed] 상태로 표시되면 해결해야 하는 문제가 있습니다. 대부분의 경우 종속성 문제입니다.
 
@@ -317,7 +317,7 @@ public class MyClass {
 
 위의 스크린샷에서 [!DNL WKND Core bundle]은 [!UICONTROL Installed] 상태입니다. 이는 번들에 AEM 인스턴스에서 사용할 수 있는 것과 다른 `com.adobe.cq.wcm.core.components.models` 버전이 필요하기 때문입니다.
 
-사용할 수 있는 유용한 도구는 [!UICONTROL 종속성 파인더]입니다.[http://localhost:4502/system/console/depfinder](http://localhost:4502/system/console/depfinder) Java 패키지 이름을 추가하여 AEM 인스턴스에서 사용할 수 있는 버전을 검사합니다.
+사용할 수 있는 유용한 도구는 [!UICONTROL 종속성 파인더]입니다. [http://localhost:4502/system/console/depfinder](http://localhost:4502/system/console/depfinder) Java 패키지 이름을 추가하여 AEM 인스턴스에서 사용할 수 있는 버전을 검사합니다.
 
 ![코어 구성 요소](assets/set-up-a-local-aem-development-environment/core-components.png)
 
@@ -325,7 +325,7 @@ public class MyClass {
 
 #### Sling 모델 등록 확인 {#osgi-component-sling-models}
 
-AEM 구성 요소는 항상 [!DNL Sling Model] 을 사용하여 비즈니스 논리를 캡슐화하고 HTL 렌더링 스크립트가 깨끗한지 확인해야 합니다. Sling 모델을 찾을 수 없는 문제가 발생하는 경우 콘솔에서 [!DNL Sling Models]을(를) 확인하는 것이 도움이 될 수 있습니다.[http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels) Sling 모델이 등록되었는지 여부 및 어떤 리소스 유형(구성 요소 경로)에 연결되어 있는지 알 수 있습니다.
+AEM 구성 요소는 항상 [!DNL Sling Model] 을 사용하여 비즈니스 논리를 캡슐화하고 HTL 렌더링 스크립트가 깨끗한지 확인해야 합니다. Sling 모델을 찾을 수 없는 문제가 발생하는 경우 콘솔에서 [!DNL Sling Models]을(를) 확인하는 것이 도움이 될 수 있습니다. [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels) Sling 모델이 등록되었는지 여부 및 어떤 리소스 유형(구성 요소 경로)에 연결되어 있는지 알 수 있습니다.
 
 ![Sling 모델 상태](assets/set-up-a-local-aem-development-environment/sling-model-status.png)
 
