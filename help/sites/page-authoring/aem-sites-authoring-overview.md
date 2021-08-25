@@ -1,9 +1,9 @@
 ---
 title: AEM Sites에서 작성 개요
-seo-title: AEM Sites에서 작성 개요
+seo-title: Overview of Authoring in AEM Sites
 description: 다음 비디오에서는 AEM 작성 환경에서 작성에 대한 기본 개념에 대한 개요를 제공합니다. 사이트 콘솔을 기본으로 사용합니다.
-seo-description: 다음 비디오에서는 AEM 작성 환경에서 작성에 대한 기본 개념에 대한 개요를 제공합니다. 사이트 콘솔을 기본으로 사용합니다.
-feature: 페이지 편집기, 편집 가능한 템플릿
+seo-description: The following video provides an overview of basic concepts of authoring in an AEM author environment. It uses the Sites console as a basis.
+feature: Page Editor, Editable Templates
 topics: authoring, publishing
 audience: author, marketer
 doc-type: feature video
@@ -11,13 +11,13 @@ activity: use
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 4242
 thumbnail: 33594.jpg
-topic: 컨텐츠 관리
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '117'
-ht-degree: 17%
+source-wordcount: '79'
+ht-degree: 20%
 
 ---
 
@@ -31,4 +31,4 @@ ht-degree: 17%
 ## 추가 리소스 {#additional-resources}
 
 * [페이지 컨텐츠 편집 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html)
-* [사이트 작성 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html&amp;topic=/experience-manager/6-5/sites/authoring/morehelp/page-authoring.ug.js)
+* [페이지 작성에 대한 빠른 시작 안내서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)
