@@ -1,15 +1,15 @@
 ---
 title: Adobe Target을 사용한 개인화
-seo-title: Adobe Target을 사용한 개인화
+seo-title: Personalization using Adobe Target
 description: Adobe Target을 사용하여 개인화된 경험을 만들고 전달하는 방법을 보여주는 종단간 자습서입니다.
-seo-description: Adobe Target을 사용하여 개인화된 경험을 만들고 전달하는 방법을 보여주는 종단간 자습서입니다.
-feature: 경험 구성요소
-topic: 개인화
+seo-description: An end-to-end tutorial showing how to create and deliver personalized experience using Adobe Target.
+feature: Experience Fragments
+topic: Personalization
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '609'
+source-wordcount: '587'
 ht-degree: 2%
 
 ---
@@ -42,14 +42,14 @@ WKND 사이트는 홈 페이지를 다시 디자인했으며 현재 홈 페이�
    * [localhost 4502 ](./implementation.md#getting-aem) 및 4503에서 각각 AEM 작성자 및 게시 설치
    * [Adobe Experience Platform Launch을 사용하여 Adobe Target과 통합](./using-launch-adobe-io.md#aem-target-using-launch-by-adobe)
 * **Experience Cloud**
-   * 조직 Adobe Experience Cloud - <https://>`<yourcompany>`.experiencecloud.adobe.com에 액세스
+   * 조직에 대한 액세스 Adobe Experience Cloud - `https://<yourcompany>.experiencecloud.adobe.com`
    * 다음 솔루션으로 제공된 Experience Cloud
       * [Adobe Target](https://experiencecloud.adobe.com)
 
 ## 컨텐츠 편집기 활동
 
 1. 마케터는 AEM 컨텐츠 편집기와 함께 WKND 홈 페이지 재디자인 논의를 시작하고 요구 사항을 자세히 설명합니다.
-   * ***요구 사항*** :카드 기반 디자인을 사용하여 WKND 사이트 홈 페이지를 재설계합니다.
+   * ***요구 사항*** : 카드 기반 디자인을 사용하여 WKND 사이트 홈 페이지를 재설계합니다.
 2. 그런 다음 요구 사항을 기반으로 AEM 컨텐츠 편집기는 카드 기반 디자인으로 새 WKND 사이트 홈 페이지를 만들고 새 홈 페이지를 게시합니다.
 
 ## 마케터 활동
