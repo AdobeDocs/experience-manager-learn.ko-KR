@@ -2,15 +2,15 @@
 title: 클릭한 구성 요소를 Adobe Analytics에서 추적
 description: 이벤트 기반 Adobe 클라이언트 데이터 레이어를 사용하여 Adobe Experience Manager 사이트에서 특정 구성 요소의 클릭을 추적합니다. Experience Platform Launch에서 규칙을 사용하여 이러한 이벤트를 수신하고 추적 링크 비콘이 있는 Adobe Analytics으로 데이터를 전송하는 방법을 알아봅니다.
 version: cloud-service
-topic: 통합
-feature: Adobe 클라이언트 데이터 레이어
+topic: Integrations
+feature: Adobe Client Data Layer
 role: Developer
 level: Intermediate
 kt: 6296
 thumbnail: KT-6296.jpg
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '1814'
+source-wordcount: '1810'
 ht-degree: 1%
 
 ---
@@ -144,7 +144,7 @@ Adobe 클라이언트 데이터 계층은 **이벤트** 기반 데이터 레이�
 
    `event` 개체가 사용자 지정 이벤트에서 호출된 `trigger()` 메서드에서 전달됩니다. `component` 클릭을 트리거한 데이터 레이어에서 파생된 구성 요소 `getState` 의 현재 상태입니다.
 
-1. 변경 사항을 저장하고 Launch에서 [build](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html)를 실행하여 코드를 AEM 사이트에서 사용되는 [환경](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments.html)으로 승격합니다.
+1. 변경 사항을 저장하고 Launch에서 [build](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html)를 실행하여 코드를 AEM 사이트에서 사용되는 [환경](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html)으로 승격합니다.
 
    >[!NOTE]
    >
