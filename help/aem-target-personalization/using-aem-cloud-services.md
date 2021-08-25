@@ -1,15 +1,15 @@
 ---
 title: Cloud Services을 사용하여 Adobe Experience Manager과 Adobe Target 통합
-seo-title: 레거시 Cloud Services을 사용하여 Adobe Experience Manager(AEM)과 Adobe Target 통합
+seo-title: Integrating Adobe Experience Manager (AEM) with Adobe Target using Legacy Cloud Services
 description: AEM Cloud Service을 사용하여 Adobe Experience Manager(AEM)을 Adobe Target과 통합하는 방법에 대한 단계별 연습
-seo-description: AEM Cloud Service을 사용하여 Adobe Experience Manager(AEM)을 Adobe Target과 통합하는 방법에 대한 단계별 연습
-feature: 경험 구성요소
-topic: 개인화
+seo-description: Step by step walkthrough on how to integrate Adobe Experience Manager (AEM) with Adobe Target using AEM Cloud Service
+feature: Experience Fragments
+topic: Personalization
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '351'
 ht-degree: 3%
 
 ---
@@ -32,14 +32,13 @@ AEM 경험 조각 오퍼를 사용하여 개인화 활동을 수행할 수 있�
    * 이 자습서를 완료하려면 AEM 작성자 및 게시 인스턴스가 필요합니다. AEM 인스턴스를 아직 설정하지 않은 경우 [여기](./implementation.md#set-up-aem)단계를 따를 수 있습니다.
 
 * **Experience Cloud**
-   * 조직 Adobe Experience Cloud - <https://>`<yourcompany>`.experiencecloud.adobe.com에 액세스
+   * 조직에 대한 액세스 Adobe Experience Cloud - `https://<yourcompany>.experiencecloud.adobe.com`
    * 다음 솔루션으로 제공된 Experience Cloud
       * [Adobe Target](https://experiencecloud.adobe.com)
 
       >[!NOTE]
       >
       > 고객은 [Adobe 지원](https://helpx.adobe.com/kr/contact/enterprise-support.ec.html)에서 Experience Platform Launch 및 Adobe I/O을 공급받거나 시스템 관리자에게 문의해야 합니다
-
 
 
 ### AEM과 Adobe Target 통합
