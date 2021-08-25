@@ -1,16 +1,16 @@
 ---
 title: Adobe Analytics 및 Adobe Launch에서 Dynamic Media Viewer 사용
 description: Dynamic Media Viewers 5.13 릴리스와 함께 Adobe Launch용 Dynamic Media Viewers 확장을 사용하면 Dynamic Media, Adobe Analytics 및 Adobe Launch 고객은 Adobe Launch 구성에서 Dynamic Media Viewer에 고유한 이벤트 및 데이터를 사용할 수 있습니다.
-sub-product: 다이내믹 미디어
-feature: 자산 통찰력
-version: 6.3, 6.4, 6.5
-topic: 컨텐츠 관리
+sub-product: Dynamic Media
+feature: Asset Insights
+version: 6.4, 6.5
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 16%
+source-wordcount: '360'
+ht-degree: 15%
 
 ---
 
@@ -165,5 +165,5 @@ AEM Assets 전용 고객 또는 Dynamic Media Classic 고객의 경우 사용자
 ## 추가 리소스{#additional-resources}
 
 * [Adobe Experience Manager과 Adobe Launch 통합](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html)
-* [Dynamic Media Scene7 모드에서 Adobe Experience Manager 실행](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dms7.html)
-* [Adobe Analytics 및 Adobe Launch와 Dynamic Media Viewer 통합](https://helpx.adobe.com/experience-manager/6-5/assets/using/launch.html)
+* [Dynamic Media Scene7 모드에서 Adobe Experience Manager 실행](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dms7.html?lang=en)
+* [Adobe Analytics 및 Adobe Launch와 Dynamic Media Viewer 통합](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-extension-use.html)
