@@ -1,20 +1,20 @@
 ---
 title: 컨텐츠 조각 및 경험 조각 이해
 description: Adobe Experience Manager의 컨텐츠 조각 및 경험 조각은 표면에서는 유사해 보일 수 있지만 각 기능은 다른 사용 사례에서 주요 역할을 합니다. 컨텐츠 조각 및 경험 조각이 유사하고, 서로 다른 방식을 사용하며, 각각의 조각을 사용하는 시기와 방법을 알아봅니다.
-sub-product: 자산, 사이트, 컨텐츠 서비스
-feature: 컨텐츠 조각, 경험 조각
+sub-product: assets, sites, content services
+feature: Content Fragments, Experience Fragments
 topics: headless
 version: 6.3, 6.4, 6.5
 doc-type: article
 activity: understand
 audience: all
-topic: 컨텐츠 관리
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '1000'
-ht-degree: 4%
+source-wordcount: '1037'
+ht-degree: 1%
 
 ---
 
@@ -41,7 +41,7 @@ Adobe Experience Manager의 컨텐츠 조각 및 경험 조각은 표면에서�
 </tr><tr><td><strong>핵심 테넌트</strong></td>
 <td><ul>
 <li>콘텐츠 중심</li>
-<li><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/content-fragments-models.html" target="_blank">구조화된 양식 기반 데이터 모델로 정의됩니다.</a></li>
+<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments-models.html?lang=en" target="_blank">구조화된 양식 기반 데이터 모델로 정의됩니다.</a></li>
 <li>디자인 및 레이아웃에 구애받지 않음.</li>
 <li>채널은 컨텐츠 조각의 컨텐츠(레이아웃 및 디자인)에 대한 프레젠테이션을 소유합니다</li>
 </ul>
@@ -56,7 +56,7 @@ Adobe Experience Manager의 컨텐츠 조각 및 경험 조각은 표면에서�
 </tr><tr><td><strong>기술 세부 사항</strong></td>
 <td><ul>
 <li><strong>dam:Asset</strong>로 구현됨</li>
-<li><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/content-fragments-models.html" target="_blank">컨텐츠 조각 모델</a>에 의해 정의됨</li>
+<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments-models.html?lang=en" target="_blank">컨텐츠 조각 모델</a>에 의해 정의됨</li>
 </ul>
 </td>
 <td><ul>
@@ -74,25 +74,25 @@ Adobe Experience Manager의 컨텐츠 조각 및 경험 조각은 표면에서�
 <td><ul>
 <li>변형은 채널별 또는 컨텍스트별</li>
 <li>변형은 AEM Live Copy를 통해 계속 동기화됩니다</li>
-<li><a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/experience-fragments.html#BuildingBlocks" target="_blank">변형 </a> 간 블록 판매 컨텐츠 재사용</li>
+<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html" target="_blank">변형 </a> 간 블록 판매 컨텐츠 재사용</li>
 </ul>
 </td>
 </tr><tr><td><strong>기능</strong></td>
 <td><ul>
 <li>변형</li>
 <li>버전</li>
-<li><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/content-fragments-variations.html#SynchronizingwithMaster" target="_blank"></a> 변형 간 컨텐츠 동기화</li>
-<li><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/content-fragments-managing.html#ComparingFragmentVersions" target="_blank">시각적</a> 으로 다른 컨텐츠 조각 버전</li>
-<li><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/content-fragments-variations.html#AnnotatingaContentFragment" target="_blank"></a> 여러 줄 텍스트 요소에 대한 주석</li>
-<li>여러 줄 텍스트 요소의 지능형 <a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/content-fragments-variations.html#SummarizingText" target="_blank">요약</a>.</li>
-<li><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/creating-translation-projects-for-content-fragments.html" target="_blank">번역/로컬라이제이션</a></li>
+<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments-variations.html?lang=en#synchronizing-with-master" target="_blank"></a> 변형 간 컨텐츠 동기화</li>
+<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments-managing.html?lang=en#comparing-fragment-versions" target="_blank">시각적</a> 으로 다른 컨텐츠 조각 버전</li>
+<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments-variations.html?lang=en#annotating-a-content-fragment" target="_blank"></a> 여러 줄 텍스트 요소에 대한 주석</li>
+<li>여러 줄 텍스트 요소의 지능형 <a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments-variations.html?lang=en#summarizing-text" target="_blank">요약</a>.</li>
+<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/creating-translation-projects-for-content-fragments.html?lang=en" target="_blank">번역/로컬라이제이션</a></li>
 </ul>
 </td>
 <td><ul>
 <li>변형</li>
 <li>변형을 Live Copy로</li>
 <li>버전</li>
-<li><a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/experience-fragments.html#BuildingBlocks" target="_blank">빌딩 블록</a></li>
+<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html?lang=en#building-blocks" target="_blank">빌딩 블록</a></li>
 <li>주석</li>
 <li>응답형 레이아웃 및 미리 보기</li>
 <li>번역/로컬라이제이션</li>
@@ -101,14 +101,14 @@ Adobe Experience Manager의 컨텐츠 조각 및 경험 조각은 표면에서�
 </tr><tr><td><strong>사용</strong></td>
 <td><ul>
 <li><a href="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html" target="_blank">AEM Sites, AEM Screens 또는 경험 </a> 조각에서 사용할 AEM 코어 구성 요소 컨텐츠 조각 구성 요소입니다.</li>
-<li>타사 소비에 대해 <a href="https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html" target="_blank">AEM Content Services</a>를 통해 JSON 내보내기</li>
+<li>타사 소비에 대해 <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=en" target="_blank">AEM Content Services</a>를 통해 JSON 내보내기</li>
 <li>타사 사용을 위해 AEM HTTP Assets API를 통한 JSON입니다.</li>
 </ul>
 </td>
 <td><ul>
 <li>AEM Sites, AEM Screens 또는 기타 경험 조각에서 사용할 AEM 경험 조각 구성 요소입니다.</li>
-<li>타사 시스템에서 사용하기 위해 <a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/experience-fragments.html#ThePlainHTMLRendition" target="_blank">일반 HTML</a>로 내보내기</li>
-<li><a href="https://helpx.adobe.com/kr/experience-manager/6-5/sites/administering/using/experience-fragments-target.html" target="_blank">타깃팅된 오퍼에 대해 Adobe </a> Target으로 HTML 내보내기</li>
+<li>타사 시스템에서 사용하기 위해 <a href="https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html?lang=en" target="_blank">일반 HTML</a>로 내보내기</li>
+<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/experience-fragments-target.html?lang=en" target="_blank">타깃팅된 오퍼에 대해 Adobe </a> Target으로 HTML 내보내기</li>
 <li>타깃팅된 오퍼를 위해 Adobe Target으로 JSON 내보내기</li>
 </ul>
 </td>
@@ -128,12 +128,12 @@ Adobe Experience Manager의 컨텐츠 조각 및 경험 조각은 표면에서�
 </td>
 </tr><tr><td><strong>설명서</strong></td>
 <td><ul>
-<li><a href="https://helpx.adobe.com/experience-manager/6-5/assets/user-guide.html?topic=/experience-manager/6-5/assets/morehelp/content-fragments.ug.js" target="_blank">AEM 컨텐츠 조각 사용 안내서</a></li>
-<li><a href="https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-feature-video-use.html" target="_blank">AEM에서 컨텐츠 조각 사용</a></li>
+<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=en&amp;topic=/experience-manager/6-5/assets/morehelp/content-fragments.ug.js" target="_blank">AEM 컨텐츠 조각 사용 안내서</a></li>
+<li><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/content-fragments-feature-video-use.html?lang=en" target="_blank">AEM에서 컨텐츠 조각 사용</a></li>
 </ul>
 </td>
 <td><ul>
-<li><a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/experience-fragments.html" target="_blank">경험 조각에 대한 Adobe 설명서</a></li>
+<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html?lang=en" target="_blank">경험 조각에 대한 Adobe 설명서</a></li>
 </ul>
 </td>
 </tr></tbody></table>
@@ -169,15 +169,15 @@ Adobe Experience Manager의 컨텐츠 조각 및 경험 조각은 표면에서�
 
 ## 컨텐츠 조각용 지원 자료
 
-+ [컨텐츠 조각 사용 안내서](https://helpx.adobe.com/experience-manager/6-5/assets/user-guide.html?topic=/experience-manager/6-5/assets/morehelp/content-fragments.ug.js)
-+ [AEM에서 컨텐츠 조각 사용](https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-feature-video-use.html)
++ [컨텐츠 조각 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=en&amp;topic=/experience-manager/6-5/assets/morehelp/content-fragments.ug.js)
++ [AEM에서 컨텐츠 조각 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/content-fragments-feature-video-use.html?lang=en)
 + [AEM WCM 코어 구성 요소의 컨텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
-+ [컨텐츠 조각 및 AEM Content Services 사용](https://helpx.adobe.com/experience-manager/kt/sites/using/structured-fragments-content-services-feature-video-use.html)
-+ [AEM 컨텐츠 서비스 시작하기](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html)
++ [컨텐츠 조각 및 AEM 헤드리스 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=en)
++ [AEM 컨텐츠 서비스 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=en)
 
 ## 경험 조각 지원 자료
 
-+ [경험 조각에 대한 Adobe 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/experience-fragments.html)
-+ [AEM 경험 구성요소 이해](https://helpx.adobe.com/experience-manager/kt/sites/using/experience-fragments-feature-video-understand.html)
-+ [AEM 경험 구성요소 사용](https://helpx.adobe.com/experience-manager/kt/sites/using/experience-fragments-feature-video-use.html)
++ [경험 조각에 대한 Adobe 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html?lang=en)
++ [AEM 경험 구성요소 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html?lang=en)
++ [AEM 경험 구성요소 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html?lang=en)
 + [Adobe Target에서 AEM 경험 구성요소 사용](https://medium.com/adobetech/experience-fragments-and-adobe-target-d8d74381b9b2)
