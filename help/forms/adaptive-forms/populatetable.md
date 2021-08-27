@@ -1,15 +1,15 @@
 ---
 title: '적응형 양식 테이블 채우기 '
 description: 양식 데이터 모델 서비스 호출의 결과로 적응형 양식 테이블 채우기
-feature: 적응형 양식
+feature: Adaptive Forms
 version: 6.4,6.5
-topic: 개발
+topic: Development
 role: User
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+source-git-commit: 0049c9fd864bd4dd4f8c33b1e40e94aad3ffc5b9
 workflow-type: tm+mt
-source-wordcount: '240'
-ht-degree: 1%
+source-wordcount: '245'
+ht-degree: 0%
 
 ---
 
@@ -26,8 +26,8 @@ Row1은 서비스 호출에서 반환된 데이터에 따라 증가하도록 구
 ## 서버에 배포
 
 [여기에 지정된 대로 Tomcat 설치](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md)
-[SampleRest.war ](https://forms.enablementadobe.com/content/DemoServerBundles/SampleRest.war)
-[파일 배포AEM 패키지 관리자 ](assets/amortizationschedule.zip) 를 사용하여 자산 설치
-[상각 일정 양식 열기적절한 값을 입력하고 ](http://localhost:4502/content/dam/formsanddocuments/amortization/jcr:content?wcmmode=disabled)
-상각 일정 계산 을 클릭합니다
+[이 zip 파일에 들어 있는 SampleRest.war 파일 ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/assets/common-osgi-bundles/sample-rest.zip)
+[배포AEM 패키지 관리자 ](assets/amortizationschedule.zip) 를 사용하여 자산 설치
+[상각 일정 양식 열기](http://localhost:4502/content/dam/formsanddocuments/amortization/jcr:content?wcmmode=disabled)
+적절한 값을 입력하고 확인 일정 계산을 클릭합니다
 

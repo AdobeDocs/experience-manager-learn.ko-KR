@@ -2,13 +2,13 @@
 title: AEM Forms으로 첫 번째 OSGi 번들 만들기
 description: Maven 및 Eclipse를 사용하여 첫 번째 OSGi 번들 구축
 version: 6.4,6.5
-feature: 적응형 양식
-topic: 개발
+feature: Adaptive Forms
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 3569d8b2a38d1cce02f6f4ff8b0c583f4dc118b6
+source-git-commit: 0049c9fd864bd4dd4f8c33b1e40e94aad3ffc5b9
 workflow-type: tm+mt
-source-wordcount: '843'
+source-wordcount: '840'
 ht-degree: 2%
 
 ---
@@ -31,7 +31,7 @@ OSGi 번들은 Java 코드, 리소스 및 번들과 해당 종속성을 설명�
 
 ### JDK 버전 테스트
 
-새 명령 프롬프트 창을 열고 다음을 입력합니다.`java -version` `JAVA_HOME` 변수로 식별된 JDK 버전을 다시 가져와야 합니다
+새 명령 프롬프트 창을 열고 다음을 입력합니다. `java -version` `JAVA_HOME` 변수로 식별된 JDK 버전을 다시 가져와야 합니다
 
 ![데이터 소스](assets/java-version.JPG)
 
@@ -40,7 +40,7 @@ OSGi 번들은 Java 코드, 리소스 및 번들과 해당 종속성을 설명�
 Maven은 주로 Java 프로젝트에 사용되는 빌드 자동화 도구입니다. 다음 단계에 따라 로컬 시스템에 maven을 설치하십시오.
 
 * C 드라이브에 `maven`라는 폴더를 만듭니다
-* [이진 zip 아카이브 다운로드](http://maven.apache.org/download.cgi)
+* [이진 zip 아카이브 다운로드](https://maven.apache.org/download.cgi)
 * zip 아카이브의 컨텐츠를 `c:\maven`에 추출합니다.
 * `C:\maven\apache-maven-3.6.0` 값으로 `M2_HOME`이라는 환경 변수를 만듭니다. 내 경우 **mvn** 버전은 3.6.0입니다. 이 문서를 작성할 때 최신 maven 버전은 3.6.3입니다
 * 경로에 `%M2_HOME%\bin` 추가

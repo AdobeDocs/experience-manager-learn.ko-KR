@@ -1,20 +1,20 @@
 ---
 title: 받은 편지함 사용자 지정
 description: sightly 템플릿을 사용하여 워크플로우의 추가 데이터를 표시하려면 사용자 지정 열을 추가합니다
-feature: 적응형 양식
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.5.5
 kt: 5830
-topic: 개발
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: 0049c9fd864bd4dd4f8c33b1e40e94aad3ffc5b9
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 1%
+source-wordcount: '289'
+ht-degree: 0%
 
 ---
 
@@ -81,7 +81,7 @@ return val;
 
 >[!NOTE]
 >
->이 문서에서는 사용자가 이 시리즈의 이전 문서](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/inbox-customization/add-married-column.md)에서 [샘플 워크플로우](assets/review-workflow.zip) 및 [샘플 양식](assets/snap-form.zip)을 설치했다고 가정합니다.[
+>이 문서에서는 사용자가 이 시리즈의 이전 문서](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/inbox-customization/add-married-column.html)에서 [샘플 워크플로우](assets/review-workflow.zip) 및 [샘플 양식](assets/snap-form.zip)을 설치했다고 가정합니다.[
 
 * [관리 사용자로 crx에 로그인](http://localhost:4502/crx/de/index.jsp)
 * [sightly 템플릿 가져오기](assets/sightly-template.zip)

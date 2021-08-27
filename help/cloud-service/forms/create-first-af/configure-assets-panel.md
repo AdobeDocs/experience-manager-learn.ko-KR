@@ -6,14 +6,14 @@ type: Documentation
 role: Developer
 level: Beginner, Intermediate
 version: cloud-service
-feature: 적응형 양식
-topic: 개발
+feature: Adaptive Forms
+topic: Development
 kt: 7380
-thumbnail: 332232.jpg
-source-git-commit: 67be45dbd72a8af8b9ab60452ff15081c6f9f192
+thumbnail: 22200.jpg
+source-git-commit: 0049c9fd864bd4dd4f8c33b1e40e94aad3ffc5b9
 workflow-type: tm+mt
-source-wordcount: '29'
-ht-degree: 10%
+source-wordcount: '26'
+ht-degree: 0%
 
 ---
 
@@ -22,5 +22,5 @@ ht-degree: 10%
 
 아코디언 레이아웃으로 반복 가능한 패널을 사용하여 지원자의 자산을 캡처합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/332232?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/22200?quality=9&learn=on)
 

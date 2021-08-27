@@ -1,21 +1,21 @@
 ---
 title: AEM Forms의 다중 시리즈 차트
-seo-title: AEM Forms의 다중 시리즈 차트
+seo-title: Multi Series Charts in AEM Forms
 description: 적절한 양식 데이터 모델을 만들어 인쇄 및 웹 채널 문서에서 다중 시리즈 차트를 만듭니다.
-seo-description: 적절한 양식 데이터 모델을 만들어 인쇄 및 웹 채널 문서에서 다중 시리즈 차트를 만듭니다.
-feature: 대화형 통신
+seo-description: Create appropriate Form Data Model to create multi series charts in print and web channel documents.
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.5
-topic: 개발
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 0049c9fd864bd4dd4f8c33b1e40e94aad3ffc5b9
 workflow-type: tm+mt
-source-wordcount: '304'
-ht-degree: 1%
+source-wordcount: '279'
+ht-degree: 0%
 
 ---
 
@@ -45,7 +45,7 @@ AEM Forms에서 다중 시리즈 차트를 만들려면 필요한 엔티티와 �
 
 * [AEM Package Manager를 사용하여 MutualFundFactSheet.zip을 다운로드하여 가져옵니다.](assets/mutualfundfactsheet.zip)
 * [하드 드라이브에 SeriesChartSampleData.json을 다운로드합니다.](assets/serieschartsampledata.json) 차트를 채우는 데 사용할 샘플 데이터입니다.
-* [Forms 및 문서로 이동합니다.](https://helpx.adobe.com/aem/forms.html/content/dam/formsanddocuments.html)
+* [Forms 및 문서로 이동합니다.](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * &quot;MutualFundGrowthFactSheet&quot; 대화형 통신 템플릿을 부드럽게 선택합니다.
 * 미리 보기 클릭 | 샘플 데이터를 업로드합니다.
 * 이 문서의 일부로 제공된 샘플 데이터 파일을 찾습니다.

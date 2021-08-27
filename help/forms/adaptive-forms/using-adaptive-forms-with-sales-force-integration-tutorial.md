@@ -1,15 +1,15 @@
 ---
 title: AEM Forms 6.3 및 6.4에서 Salesforce로 DataSource 구성
 description: 양식 데이터 모델을 사용하여 AEM Forms과 Salesforce 통합
-feature: 적응형 Forms, 양식 데이터 모델
+feature: Adaptive Forms, Form Data Model
 topics: integrations
 version: 6.3,6.4,6.5
-topic: 개발
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+source-git-commit: 0049c9fd864bd4dd4f8c33b1e40e94aad3ffc5b9
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '900'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 0%
 
    * **AEM Forms 6.3**&#x200B;을 사용하는 경우 콜백 URL은 https://gbedekar-w7-1:6443/etc/cloudservices/fdm/createlead.html입니다. 이 URL에서 createload는 내 양식 데이터 모델의 이름입니다.
 
-   * ** AEM Forms 6.4**를 사용하는 경우 콜백 URL은 [https://gbedekar-w7-:6443/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html](https://gbedekar-w7-1:6443/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html)입니다.
+   * ** AEM Forms 6.4**를 사용하는 경우 콜백 URL은 https://gbedekar-w7-:6443/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html입니다.
 
 이 예에서 gbedekar -w7-1:6443은 AEM이 실행 중인 서버 및 포트의 이름입니다.
 
