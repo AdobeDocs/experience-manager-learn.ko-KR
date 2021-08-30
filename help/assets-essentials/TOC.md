@@ -4,10 +4,10 @@ user-guide-description: Adobe Experience Manager Assets Essentials을 위한 비
 breadcrumb-title: AEM Assets Essentials 비디오
 feature-set: Experience Manager Assets
 team: TM
-source-git-commit: 2edcaa0e10121f75ac3081eb00e8c1419400a205
+source-git-commit: 32917f4fe6be88b1ee1d1f7da1c02d0f81c20fe7
 workflow-type: tm+mt
-source-wordcount: '64'
-ht-degree: 17%
+source-wordcount: '66'
+ht-degree: 16%
 
 ---
 
@@ -29,6 +29,7 @@ ht-degree: 17%
 
 + Adobe Workfront 통합{#workfront}
    + [구성](./integrations/workfront/configure.md)
+   + [메타데이터 매핑](./integrations/workfront/map-metadata.md)
    + [문서 보내기 및 자산 연결](./integrations/workfront/link-send.md)
    + [버전 기록](./integrations/workfront/versions.md)
 
