@@ -7,9 +7,9 @@ topic: Integrations, Development
 feature: Asset Compute Microservices
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+source-git-commit: ac93d6ba636e64ba6d8bbdb0840810b8f47a25c8
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '896'
 ht-degree: 1%
 
 ---
@@ -86,7 +86,7 @@ _asset compute 프로젝트를 생성하는 클릭스루(오디오 없음)_
    + 이 파일은 `aio app use` 명령을 사용하여 생성/업데이트할 수 있습니다.
    + 이 파일에 정의된 변수는 명령줄에서 [변수 내보내기](../deploy/runtime.md)로 대체할 수 있습니다.
 
-프로젝트 구조 검토에 대한 자세한 내용은 [Adobe Project Firefly 프로젝트의 구조](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#5-anatomy-of-a-project-firefly-application)를 검토하십시오.
+프로젝트 구조 검토에 대한 자세한 내용은 [Adobe Project Firefly 프로젝트의 구조](https://www.adobe.io/project-firefly/docs/guides/)를 검토하십시오.
 
 대부분의 개발 작업은 작업자 구현을 개발하는 `/actions` 폴더와 사용자 지정 Asset compute 작업자에 대한 테스트 쓰기에서 수행됩니다.`/test/asset-compute`
 

@@ -1,13 +1,13 @@
 ---
 title: 7장 - 모바일 앱에서 AEM Content Services 사용 - Content Services
 description: 자습서의 7장에서 Android 모바일 앱을 실행하여 AEM Content Services에서 작성된 콘텐츠를 사용합니다.
-feature: 컨텐츠 조각, API
-topic: 헤드리스, 컨텐츠 관리
+feature: Content Fragments, APIs
+topic: Headless, Content Management
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ac93d6ba636e64ba6d8bbdb0840810b8f47a25c8
 workflow-type: tm+mt
-source-wordcount: '1412'
+source-wordcount: '1406'
 ht-degree: 1%
 
 ---
@@ -205,4 +205,4 @@ AEM Content Services 및 AEM as a Headless CMS에 대해 자세히 알아보려�
 * [AEM WCM 코어 구성 요소 구성 요소 라이브러리](https://opensource.adobe.com/aem-core-wcm-components/library.html)
 * [AEM WCM 코어 구성 요소 GitHub 프로젝트](https://github.com/adobe/aem-core-wcm-components)
 * [AEM WCM 핵심 구성 요소 - 전문가에게 문의](https://helpx.adobe.com/kr/experience-manager/kt/eseminars/ask-the-expert/aem-content-services.html)
-* [구성 요소 익스포터의 코드 샘플](https://github.com/Adobe-Consulting-Services/acs-aem-samples/blob/master/bundle/src/main/java/com/adobe/acs/samples/models/SampleComponentExporter.java)
+* [구성 요소 익스포터의 코드 샘플](https://github.com/Adobe-Consulting-Services/acs-aem-samples/blob/master/core/src/main/java/com/adobe/acs/samples/models/SampleComponentExporter.java)

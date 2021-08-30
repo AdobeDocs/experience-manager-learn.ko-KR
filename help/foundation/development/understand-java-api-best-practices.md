@@ -6,10 +6,10 @@ feature: APIs
 topic: Development
 role: Developer
 level: Beginner
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+source-git-commit: ac93d6ba636e64ba6d8bbdb0840810b8f47a25c8
 workflow-type: tm+mt
-source-wordcount: '2030'
-ht-degree: 3%
+source-wordcount: '2021'
+ht-degree: 2%
 
 ---
 
@@ -61,7 +61,7 @@ API가 AEM에서 제공되는 경우 [!DNL Sling], JCR 및 OSGi보다 선호합�
 
 AEM API는 생산화된 사용 사례와 관련된 추상화와 기능을 제공합니다.
 
-예를 들어 AEM [PageManager](https://helpx.adobe.com/kr/experience-manager/6-3/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html) 및 [Page](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/foundation/model/Page.html) API는 웹 페이지를 나타내는 AEM의 `cq:Page` 노드에 대한 추상을 제공합니다.
+예를 들어 AEM [PageManager](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageManager.html) 및 [Page](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/Page.html) API는 웹 페이지를 나타내는 AEM의 `cq:Page` 노드에 대한 추상을 제공합니다.
 
 이러한 노드는 [!DNL Sling] API를 리소스로 사용하고 JCR API를 노드로 사용할 수 있지만 AEM API는 일반적인 사용 사례에 대한 추상을 제공합니다. AEM API를 사용하면 AEM 제품, 사용자 지정 및 AEM 확장 간에 일관된 동작을 보장합니다.
 
@@ -95,7 +95,7 @@ AEM에서는 여러 쿼리 언어를 지원합니다. 3개의 기본 언어는 [
 * [AEM ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/querybuilder-predicate-reference.html) 예측일반적인 쿼리 요구 사항 지원
 
 * 확장 가능한 API - 사용자 지정 [쿼리 설명](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/implementing-custom-predicate-evaluator.html)을 개발할 수 있습니다.
-* JCR-SQL2 및 XPath는 [[!DNL Sling]](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/ResourceResolver.html#findResources-java.lang.String-java.lang.String-) 및 [JCR API](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/query/package-summary.html)를 통해 직접 실행할 수 있으며, 결과는 각각 [[!DNL Sling] 리소스](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/Resource.html) 또는 [JCR 노드](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html)를 반환합니다.
+* JCR-SQL2 및 XPath는 [[!DNL Sling]](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/ResourceResolver.html#findResources-java.lang.String-java.lang.String-) 및 [JCR API](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/query/package-summary.html)를 통해 직접 실행할 수 있으며, 결과는 각각 [[!DNL Sling] 리소스](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/Resource.html) 또는 [JCR 노드](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html)를 반환합니다.
 
 >[!CAUTION]
 >
@@ -131,9 +131,9 @@ AEM에서는 여러 쿼리 언어를 지원합니다. 3개의 기본 언어는 [
 
 ## JCR API
 
-* **[JCR 2.0 JavaDocs](https://docs.adobe.com/content/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html)**
+* **[JCR 2.0 JavaDocs](https://www.adobe.io/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html)**
 
-[JCR(Java Content Repository) 2.0 API는 JCR 구현을 위한 사양의 일부입니다(AEM의 경우 [Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/)). ](https://docs.adobe.com/content/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html) 모든 JCR 구현은 이러한 API를 준수하고 구현해야 하므로 AEM 콘텐츠과 상호 작용하기 위한 가장 낮은 수준의 API입니다.
+[JCR(Java Content Repository) 2.0 API는 JCR 구현을 위한 사양의 일부입니다(AEM의 경우 [Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/)). ](https://www.adobe.io/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) 모든 JCR 구현은 이러한 API를 준수하고 구현해야 하므로 AEM 콘텐츠과 상호 작용하기 위한 가장 낮은 수준의 API입니다.
 
 JCR 자체는 컨텐츠 저장소로 사용하는 계층적/트리 기반 NoSQL 데이터 저장소 AEM입니다. JCR에는 컨텐츠 CRUD부터 콘텐츠 쿼리 등 다양한 지원되는 API의 범위가 있습니다. 이러한 강력한 API에도 불구하고 높은 수준의 AEM 및 [!DNL Sling] 추상화보다 선호되는 경우는 거의 없습니다.
 
@@ -150,7 +150,7 @@ JCR은 AEM 컨텐츠 저장소이지만 API는 컨텐츠와 상호 작용하기 
 ### JCR API의 일반적인 사용
 
 * [액세스 제어 관리](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html)
-* [승인 가능 관리(사용자/그룹)](https://jackrabbit.apache.org/api/2.8/org/apache/jackrabbit/api/security/user/package-summary.html)
+* [승인 가능 관리(사용자/그룹)](https://jackrabbit.apache.org/api/2.12/org/apache/jackrabbit/api/security/user/package-summary.html)
 * JCR 관찰(JCR 이벤트 수신)
 * 딥 노드 구조 만들기
 
