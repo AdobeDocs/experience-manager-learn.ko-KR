@@ -4,10 +4,10 @@ user-guide-description: Adobe Experience Manager Assets Essentials을 위한 비
 breadcrumb-title: AEM Assets Essentials 비디오
 feature-set: Experience Manager Assets
 team: TM
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: 2edcaa0e10121f75ac3081eb00e8c1419400a205
 workflow-type: tm+mt
-source-wordcount: '46'
-ht-degree: 19%
+source-wordcount: '64'
+ht-degree: 17%
 
 ---
 
@@ -23,8 +23,15 @@ ht-degree: 19%
    + [관리](basics/managing.md)
    + [사용](basics/using.md)
    + [컨텐츠 만들기](basics/creating.md)
-   + [협업](basics/collaborating.md)
+   + [공동 작업](basics/collaborating.md)
 
 + [Creative Cloud 통합](integrations/creative-cloud.md)
+
++ Adobe Workfront 통합{#workfront}
+   + [구성](./integrations/workfront/configure.md)
+   + [문서 보내기 및 자산 연결](./integrations/workfront/link-send.md)
+   + [버전 기록](./integrations/workfront/versions.md)
+
 + [Adobe Journey Optimizer 통합](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-messages/create-email-content-with-the-message-editor.html)
 
++ [설명서](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html)
