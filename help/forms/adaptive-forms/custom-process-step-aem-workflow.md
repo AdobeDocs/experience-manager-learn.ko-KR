@@ -1,14 +1,14 @@
 ---
 title: 사용자 지정 프로세스 단계 구현
 description: 사용자 정의 프로세스 단계를 사용하여 파일 시스템에 적응형 양식 첨부 파일 작성
-feature: 워크플로우
+feature: Workflow
 version: 6.5
-topic: 개발
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+source-git-commit: 2b7f0f6c34803672cc57425811db89146b38a70a
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '815'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ## Maven 프로젝트 만들기
 
-첫 번째 단계는 적절한 Adobe Maven Archetype을 사용하여 maven 프로젝트를 만드는 것입니다. 자세한 단계는 이 [article](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/create-your-first-osgi-bundle.html?lang=en)에 나열되어 있습니다. maven 프로젝트를 eclipse로 가져온 후에는 프로세스 단계에서 사용할 수 있는 첫 번째 OSGi 구성 요소 작성을 시작할 준비가 되었습니다.
+첫 번째 단계는 적절한 Adobe Maven Archetype을 사용하여 maven 프로젝트를 만드는 것입니다. 자세한 단계는 이 [article](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)에 나열되어 있습니다. maven 프로젝트를 eclipse로 가져온 후에는 프로세스 단계에서 사용할 수 있는 첫 번째 OSGi 구성 요소 작성을 시작할 준비가 되었습니다.
 
 
 ### WorkflowProcess를 구현하는 클래스 만들기

@@ -6,9 +6,9 @@ version: 6.4,6.5
 topic: Development
 role: User
 level: Intermediate
-source-git-commit: 0049c9fd864bd4dd4f8c33b1e40e94aad3ffc5b9
+source-git-commit: 2b7f0f6c34803672cc57425811db89146b38a70a
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '240'
 ht-degree: 0%
 
 ---
@@ -25,9 +25,9 @@ Row1은 서비스 호출에서 반환된 데이터에 따라 증가하도록 구
 
 ## 서버에 배포
 
-[여기에 지정된 대로 Tomcat 설치](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md)
-[이 zip 파일에 들어 있는 SampleRest.war 파일 ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/assets/common-osgi-bundles/sample-rest.zip)
-[배포AEM 패키지 관리자 ](assets/amortizationschedule.zip) 를 사용하여 자산 설치
-[상각 일정 양식 열기](http://localhost:4502/content/dam/formsanddocuments/amortization/jcr:content?wcmmode=disabled)
-적절한 값을 입력하고 확인 일정 계산을 클릭합니다
+[여기에 지정된 대로 Tomcat ](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md)
+[설치Tomcat이 zip 파일에 포함된 SampleRest.war 파일을 Tomcat](assets/sample-rest.zip)
+[에 배포AEM 패키지 관리자 ](assets/amortizationschedule.zip) 를 사용하여 자산 설치패키지 
+[열기 양식적절한 값을 입력하고 확인 일정 계산](http://localhost:4502/content/dam/formsanddocuments/amortization/jcr:content?wcmmode=disabled)
+을 클릭하면 양식에 값이 채워집니다
 

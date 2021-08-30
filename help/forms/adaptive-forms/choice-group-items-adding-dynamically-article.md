@@ -6,9 +6,9 @@ version: 6.5
 topic: Development
 role: User
 level: Beginner
-source-git-commit: 0049c9fd864bd4dd4f8c33b1e40e94aad3ffc5b9
+source-git-commit: 2b7f0f6c34803672cc57425811db89146b38a70a
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,7 @@ else
 
 * [자산 다운로드](assets/usingthevisualeditor.zip)
 * Tomcat이 없는 경우 설치합니다. [tomcat 설치 지침은 여기에서 확인할 수 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html)
-* [이 zip 파일에 포함된 SampleRest.war 파일을 배포합니다](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/assets/common-osgi-bundles/sample-rest.zip)
+* [Tomcat에서 이 zip 파일에 포함된 SampleRest.war 파일을 배포합니다](assets/sample-rest.zip)
 * [Forms 및 문서 열기](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * 만들기 를 클릭합니다. | 파일 업로드&quot; 및 이전 단계에서 다운로드한 파일을 업로드합니다
 * [양식 미리 보기](http://localhost:4502/content/dam/formsanddocuments/amortizationschedule/jcr:content?wcmmode=disabled)
