@@ -2,18 +2,13 @@
 title: Dispatcher 도구 디버깅
 description: Dispatcher 도구는 AEM을 Cloud Services의 AEM 게시 서비스의 Dispatcher로 로컬로 시뮬레이션하는 데 사용할 수 있는 컨테이너화된 Apache 웹 서버 환경을 제공합니다. Dispatcher 도구의 로그 및 캐시 콘텐츠를 디버깅하는 것은 종단 간 AEM 응용 프로그램과 캐시 및 보안 구성이 올바른지 확인하는 데 매우 중요합니다.
 feature: Dispatcher
-topics: development
-version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
 kt: 5918
-topic: 개발
+topic: Development
 role: Developer
 level: Beginner, Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 0737cd2410b48dbaa9b6dfaaa27b854d44536f15
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '230'
 ht-degree: 0%
 
 ---
@@ -22,6 +17,7 @@ ht-degree: 0%
 # Dispatcher 도구 디버깅
 
 Dispatcher 도구는 AEM을 Cloud Services의 AEM 게시 서비스의 Dispatcher로 로컬로 시뮬레이션하는 데 사용할 수 있는 컨테이너화된 Apache 웹 서버 환경을 제공합니다.
+
 Dispatcher 도구의 로그 및 캐시 콘텐츠를 디버깅하는 것은 종단 간 AEM 응용 프로그램과 캐시 및 보안 구성이 올바른지 확인하는 데 매우 중요합니다.
 
 >[!NOTE]
@@ -65,7 +61,7 @@ $ docker ps
 
 # locate the CONTAINER ID associated with "adobe/aem-ethos/dispatcher-publisher" IMAGE
 CONTAINER ID        IMAGE                                       COMMAND                  CREATED             STATUS              PORTS                  NAMES
-46127c9d7081        adobe/aem-ethos/dispatcher-publish:2.0.23   "/docker_entrypoint.…"   6 seconds ago       Up 5 seconds        0.0.0.0:8080->80/tcp   wonderful_merkle
+46127c9d7081        adobe/aem-ethos/dispatcher-publish:2.0.23   "/docker_entrypoint.…"   6 seconds ago       Up 5 seconds        0.0.0.0:8080->80/tcp   wonderful_ira
 
 $ docker cp -L <CONTAINER ID>:/mnt/var/www/html cache 
 $ cd cache

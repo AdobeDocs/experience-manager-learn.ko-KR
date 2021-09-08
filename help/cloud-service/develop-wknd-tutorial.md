@@ -1,18 +1,15 @@
 ---
 title: AEM Sites 개발 시작 - WKND 자습서
-seo-title: AEM Sites 개발 시작 - WKND 자습서
 description: AEM 개발을 처음 사용하십니까? 모범 사례에 대한 리프레셔가 필요하십니까? 여기가 바로 시작이야! 이 다중 부분 자습서의 목표는 최신 표준 및 기술을 사용하여 AEM에서 웹 사이트를 구현하는 방법을 처음 사용하는 개발자에게 가르치는 것입니다.
-seo-description: AEM 개발을 처음 사용하십니까? 모범 사례에 대한 리프레셔가 필요하십니까? 여기가 바로 시작이야! 이 다중 부분 자습서의 목표는 최신 표준 및 기술을 사용하여 AEM에서 웹 사이트를 구현하는 방법을 처음 사용하는 개발자에게 가르치는 것입니다.
-content-type: reference
-topic-tags: introduction
-feature: AEM Project Archetype, 핵심 구성 요소, 페이지 편집기, 편집 가능한 템플릿
-topic: 개발
+feature: AEM Project Archetype, Core Components, Page Editor, Editable Templates
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+thumbnail: 30476.jpeg
+source-git-commit: 0737cd2410b48dbaa9b6dfaaa27b854d44536f15
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 7%
+source-wordcount: '300'
+ht-degree: 6%
 
 ---
 

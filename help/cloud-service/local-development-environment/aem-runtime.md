@@ -1,20 +1,16 @@
 ---
 title: AEM as a Cloud Service 개발용 로컬 AEM 런타임 설정
 description: AEM을 Cloud Service SDK의 Quickstart Jar로 사용하여 로컬 AEM 런타임을 설정합니다.
-feature: 개발자 도구
-topics: development
-version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
+feature: Developer Tools
+version: Cloud Service
 kt: 4678, 4677
 thumbnail: 32551.jpg
-topic: 개발
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: 0737cd2410b48dbaa9b6dfaaa27b854d44536f15
 workflow-type: tm+mt
-source-wordcount: '1732'
+source-wordcount: '1729'
 ht-degree: 2%
 
 ---
