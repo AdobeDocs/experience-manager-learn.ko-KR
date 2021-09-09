@@ -1,15 +1,15 @@
 ---
 title: AEM에서 OKTA 구성
 description: okta를 사용하여 단일 사인온을 사용하기 위한 다양한 구성 설정 이해
-feature: 적응형 양식
+feature: Adaptive Forms
 version: 6.5
-topic: 관리
+topic: Administration
 role: Admin
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+source-git-commit: 3109d406ed4788ab492a148d4eac94f7e5ad9f2d
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 2%
+source-wordcount: '759'
+ht-degree: 1%
 
 ---
 
@@ -76,11 +76,11 @@ SAML 어설션이 암호화되어 있으므로 OKTA와 AEM 간의 보안 통신�
 [configMgr](http://localhost:4502/system/console/configMgr)로 이동합니다.
 &quot;Apache Sling Referrer Filter&quot;를 검색하고 엽니다. 아래에 지정된 대로 다음 속성을 설정합니다.
 
-* **비어 있음**: true
+* **비어 있음**: false
 * **호스트 허용**: IdP의 호스트 이름(경우에 따라 다름)
 * **Regexp 호스트 허용**: IdP의 호스트 이름(경우에 따라 다름) Sling Referrer 필터 레퍼러 속성 스크린샷
 
-![referrer-filter](assets/sling-referrer-filter.PNG)
+![referrer-filter](assets/okta-referrer.png)
 
 #### OKTA 통합에 대한 DEBUG 로깅 구성
 
