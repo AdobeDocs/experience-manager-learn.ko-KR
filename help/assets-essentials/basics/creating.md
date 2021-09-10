@@ -3,18 +3,17 @@ title: Assets Essentials을 사용하여 컨텐츠 만들기
 description: Adobe Photoshop Express를 사용하여 자산을 업로드하고 버전을 만들고 자산을 편집하는 방법을 알아봅니다.
 version: cloud-service
 feature: Assets Essentials
-topic: 컨텐츠 관리
+topic: Content Management
 role: User
 level: Beginner
 kt: 7914
 thumbnail: 335746.jpeg
-source-git-commit: b247bb18eab3e610d40d3e01a63ba7e311fafde0
+source-git-commit: 7fde77ac287d01ce2ad4924b2b10939d8df4c3e5
 workflow-type: tm+mt
-source-wordcount: '44'
-ht-degree: 4%
+source-wordcount: '40'
+ht-degree: 0%
 
 ---
-
 
 # Assets Essentials을 사용하여 컨텐츠 만들기
 
