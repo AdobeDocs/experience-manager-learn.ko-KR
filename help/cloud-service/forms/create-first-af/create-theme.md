@@ -1,7 +1,7 @@
 ---
 title: 적응형 양식 테마 만들기
 description: 테마는 적응형 양식의 모양과 느낌을 정의하는 AEM 클라이언트 라이브러리입니다.
-solution: Experience Manager Forms
+solution: Experience Manager,Experience Manager Forms
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -11,7 +11,7 @@ topic: Development
 kt: 7386
 thumbnail: 332229.jpg
 exl-id: c8c04528-384b-48b3-abba-04db16fd87c5
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: 2f619bc6ebaae36c8b9d05d8c4ff5c1cc8c18332
 workflow-type: tm+mt
 source-wordcount: '72'
 ht-degree: 0%
