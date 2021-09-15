@@ -2,20 +2,20 @@
 title: AEM을 사용하여 자산을 게시하는 방법
 description: AEM Author에서 AEM Publish로 자산 및 해당 표현물을 게시하는 방법을 알아봅니다.
 sub-product: assets
-feature: 자산 관리
-version: cloud-service
+feature: Asset Management
+version: Cloud Service
 kt: 330932
 thumbnail: 32194.jpg
-topic: 컨텐츠 관리
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: b69508c9-4be3-43c9-9d54-84ac0a2b4b6b
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '55'
-ht-degree: 5%
+source-wordcount: '50'
+ht-degree: 2%
 
 ---
-
 
 # 게시
 

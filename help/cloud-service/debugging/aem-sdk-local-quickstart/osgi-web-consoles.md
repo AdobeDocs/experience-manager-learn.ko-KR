@@ -1,23 +1,23 @@
 ---
 title: OSGi 웹 콘솔을 사용하여 AEM SDK 디버깅
 description: AEM SDK의 로컬 빠른 시작에는 로컬 AEM 런타임에서 애플리케이션을 인식하는 방법과 AEM 내의 기능을 이해하는 데 유용한 다양한 정보와 설명을 제공하는 OSGi 웹 콘솔이 있습니다.
-feature: 개발자 도구
+feature: Developer Tools
 topics: development
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5265, 5366, 5267
-topic: 개발
+topic: Development
 role: Developer
 level: Beginner, Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 0929bc1a-376c-4e16-a540-a276fd5af164
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '396'
-ht-degree: 1%
+source-wordcount: '393'
+ht-degree: 0%
 
 ---
-
 
 # OSGi 웹 콘솔을 사용하여 AEM SDK 디버깅
 
@@ -34,7 +34,7 @@ AEM에서는 많은 OSGi 콘솔을 제공하며, 각 콘솔은 AEM의 다른 측
 번들 콘솔은 다음 위치에 있습니다.
 
 + 도구 > 작업 > 웹 콘솔 > OSGi > 번들
-+ 또는 다음 위치에서 바로 사용할 수 있습니다.[http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
++ 또는 다음 위치에서 바로 사용할 수 있습니다. [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
 
 각 번들을 클릭하면 애플리케이션 디버깅에 도움이 되는 세부 정보가 제공됩니다.
 
@@ -51,7 +51,7 @@ AEM에서는 많은 OSGi 콘솔을 제공하며, 각 콘솔은 AEM의 다른 측
 구성 요소 콘솔은 다음 위치에 있습니다.
 
 + 도구 > 작업 > 웹 콘솔 > OSGi > 구성 요소
-+ 또는 다음 위치에서 바로 사용할 수 있습니다.[http://localhost:4502/system/console/components](http://localhost:4502/system/console/components)
++ 또는 다음 위치에서 바로 사용할 수 있습니다. [http://localhost:4502/system/console/components](http://localhost:4502/system/console/components)
 
 디버깅 활동에 도움이 되는 주요 측면:
 
@@ -68,7 +68,7 @@ AEM에서는 많은 OSGi 콘솔을 제공하며, 각 콘솔은 AEM의 다른 측
 Sling 모델 콘솔은 다음 위치에 있습니다.
 
 + 도구 > 작업 > 웹 콘솔 > 상태 > Sling 모델
-+ 또는 다음 위치에서 바로 사용할 수 있습니다.[http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)
++ 또는 다음 위치에서 바로 사용할 수 있습니다. [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)
 
 디버깅 활동에 도움이 되는 주요 측면:
 

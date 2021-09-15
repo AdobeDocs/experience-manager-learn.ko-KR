@@ -1,26 +1,26 @@
 ---
 title: 번역 프로젝트
-seo-title: 번역 프로젝트
-description: '언어 사본 번역 프로젝트를 작성, 편집 및 관리하는 방법을 알아봅니다. '
-seo-description: '언어 사본 번역 프로젝트를 작성, 편집 및 관리하는 방법을 알아봅니다.  '
-feature: 언어 사본, 다중 사이트 관리자
+seo-title: Translation Projects
+description: 언어 사본 번역 프로젝트를 작성, 편집 및 관리하는 방법을 알아봅니다.
+seo-description: Learn how to create, edit and manage a translation project for your Language Copy.
+feature: Language Copy, Multi Site Manager
 topics: localization, authoring, content-architecture
 audience: all
 doc-type: feature video
 activity: use
-version: 6.3, 6.4, 6.5, cloud-service
+version: 6.3, 6.4, 6.5, Cloud Service
 kt: 5369
 thumbnail: 36486.jpg
-topic: 로컬라이제이션
+topic: Localization
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 1e406454-885d-4215-9304-13e476788c2c
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '54'
+source-wordcount: '32'
 ht-degree: 12%
 
 ---
-
 
 # 번역 프로젝트 {#translation-projects}
 

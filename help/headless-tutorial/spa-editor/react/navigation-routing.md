@@ -1,10 +1,10 @@
 ---
 title: 탐색 및 라우팅 추가 | AEM SPA 편집기 및 반응 시작하기
 description: SPA Editor SDK를 사용하여 AEM 페이지에 매핑하여 SPA에서 여러 개의 보기를 지원하는 방법을 알아봅니다. 동적 탐색은 React Router 및 React Core 구성 요소를 사용하여 구현됩니다.
-sub-product: 사이트
-feature: SPA 편집기
+sub-product: sites
+feature: SPA Editor
 topics: development
-version: cloud-service
+version: Cloud Service
 activity: develop
 audience: developer
 kt: 4988
@@ -12,13 +12,13 @@ thumbnail: 4988-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 9c3d47c7-1bb9-441c-a0e6-85887a32c817
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '1623'
+source-wordcount: '1619'
 ht-degree: 0%
 
 ---
-
 
 # 탐색 및 라우팅 추가 {#navigation-routing}
 
@@ -329,4 +329,3 @@ SPA Editor SDK를 사용하여 AEM 페이지에 매핑하여 SPA에서 여러 �
 ## 축하합니다! {#congratulations}
 
 축하합니다. SPA Editor SDK를 사용하여 AEM 페이지에 매핑하여 SPA에서 여러 개의 보기를 지원하는 방법을 알아보았습니다. 동적 탐색이 React Router를 사용하여 구현되었으며 `Header` 구성 요소에 추가되었습니다.
-

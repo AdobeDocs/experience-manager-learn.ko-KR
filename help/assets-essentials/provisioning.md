@@ -1,14 +1,15 @@
 ---
 title: 프로비저닝 Assets Essentials
 description: Cloud Manager를 사용하여 Assets Essentials을 배포하고 사용자 액세스를 프로비저닝하는 방법을 알아봅니다.
-version: cloud-service
+version: Cloud Service
 feature: Assets Essentials
 topic: Content Management
 role: User
 level: Beginner
 kt: 8020
 thumbnail: 335952.jpeg
-source-git-commit: 7fde77ac287d01ce2ad4924b2b10939d8df4c3e5
+exl-id: ca994bdb-8f59-4504-b623-68d74e559fbb
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
 source-wordcount: '32'
 ht-degree: 0%

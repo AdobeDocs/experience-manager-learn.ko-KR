@@ -1,24 +1,24 @@
 ---
 title: 개발자 콘솔
 description: AEM as a Cloud Service은 디버깅에 유용한 실행 중인 AEM 서비스의 다양한 세부 사항을 표시하는 각 환경에 대한 개발자 콘솔을 제공합니다.
-feature: 개발자 도구
+feature: Developer Tools
 topics: development
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5433
 thumbnail: kt-5433.jpg
-topic: 개발
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 048a37a9813e7b61ff069c4606b8d23cc6b6844f
+exl-id: 0499ff9f-d452-459f-b1a2-2853a228efd1
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '1351'
+source-wordcount: '1348'
 ht-degree: 0%
 
 ---
-
 
 # 개발자 콘솔을 사용하여 AEM as a Cloud Service 디버깅
 
@@ -46,8 +46,8 @@ AEM as a Cloud Service은 디버깅에 유용한 실행 중인 AEM 서비스의 
 
 401 권한 없는 문제를 해결하려면
 
-1. 사용자가 Cloud Service 제품 인스턴스로 개발자 콘솔의 연결된 AEM에 대한 적절한 Adobe IMS 제품 프로필(AEM 관리자 또는 AEM 사용자)의 구성원인지 확인합니다.
-   + 개발자 콘솔에서 2 Adobe IMS 제품 인스턴스에 액세스합니다.AEM as a Cloud Service 작성자 및 게시 제품 인스턴스이므로, 개발자 콘솔을 통해 액세스해야 하는 서비스 계층에 따라 올바른 제품 프로필이 사용되는지 확인하십시오.
+1. 사용자가 개발자 콘솔의 Cloud Service 제품 인스턴스로 연결된 AEM에 대한 적절한 Adobe IMS 제품 프로필(AEM 관리자 또는 AEM 사용자)의 구성원인지 확인합니다.
+   + 개발자 콘솔에서 2 Adobe IMS 제품 인스턴스에 액세스합니다. AEM as a Cloud Service 작성자 및 게시 제품 인스턴스이므로, 개발자 콘솔을 통해 액세스해야 하는 서비스 계층에 따라 올바른 제품 프로필이 사용되는지 확인하십시오.
 1. AEM as a Cloud Service(작성자 또는 게시)에 로그인하고 사용자 및 그룹이 AEM에 제대로 동기화되었는지 확인합니다.
    + 개발자 콘솔에서는 해당 서비스 계층을 인증하기 위해 해당 AEM 서비스 계층에 사용자 레코드를 만들어야 합니다.
 1. 브라우저 쿠키와 애플리케이션 상태(로컬 저장소)를 지우고 Developer Console에 다시 로그인하여 개발자 콘솔에서 사용 중인 액세스 토큰이 올바르고 만료되지 않도록 합니다.
@@ -79,7 +79,7 @@ AEM as a Cloud Service 작성자 및 게시 서비스는 다운타임 없이 트
 다음 방법으로 디버깅하는 데 도움이 되는 번들:
 
 + AEM as a Service에 배포된 모든 OSGi 번들 나열
-+ 각 OSGi 번들 상태 나열활성 상태인지 여부를 포함합니다.
++ 각 OSGi 번들 상태 나열 활성 상태인지 여부를 포함합니다.
 + OSGi 번들이 활성화되지 않도록 하는 해결되지 않은 종속성에 세부 정보 제공
 
 ### 구성 요소
@@ -89,7 +89,7 @@ AEM as a Cloud Service 작성자 및 게시 서비스는 다운타임 없이 트
 다음 방법으로 디버깅하는 데 도움이 되는 구성 요소:
 
 + AEM에 Cloud Service으로 배포된 모든 OSGi 구성 요소 나열
-+ 각 OSGi 구성 요소의 상태 제공;활성 상태이거나 충족되지 않은 경우 포함
++ 각 OSGi 구성 요소의 상태 제공; 활성 상태이거나 충족되지 않은 경우 포함
 + 서비스 참조에 세부 사항을 제공하면 OSGi 구성 요소가 활성 상태가 될 수 있습니다
 + OSGi 속성 및 OSGi 구성 요소에 바인딩된 값을 나열하는 중입니다
 

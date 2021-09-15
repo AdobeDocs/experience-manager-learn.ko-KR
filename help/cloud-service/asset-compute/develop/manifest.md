@@ -1,24 +1,24 @@
 ---
 title: asset compute 프로젝트의 manifest.html 구성
 description: asset compute 프로젝트의 manifest.yml은 이 프로젝트의 배포될 모든 작업자에 대해 설명합니다.
-feature: asset compute 마이크로서비스
+feature: Asset Compute Microservices
 topics: renditions, development
-version: cloud-service
+version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
 kt: 6281
 thumbnail: KT-6281.jpg
-topic: 통합, 개발
+topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 766bfaff-ade0-41c8-a395-e79dfb4b3d76
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '433'
 ht-degree: 0%
 
 ---
-
 
 # manifest.html 구성
 

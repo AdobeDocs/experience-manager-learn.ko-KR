@@ -1,20 +1,20 @@
 ---
 title: AEM GraphQL을 사용한 작성자 및 게시 아키텍처
 description: AEM GraphQL API를 사용할 때 AEM 작성자 및 게시 환경을 활용하는 방법 및 시기를 알아봅니다.
-version: cloud-service
-topic: 헤드리스, 컨텐츠 관리
-feature: 컨텐츠 조각, GraphQL API
+version: Cloud Service
+topic: Headless, Content Management
+feature: Content Fragments, GraphQL API
 role: Developer
 level: Beginner
 kt: 7873
 thumbnail: 333296.jpg
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 7d5f5edb-10e7-43ec-a4e7-4cee8ddba685
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '103'
+source-wordcount: '96'
 ht-degree: 0%
 
 ---
-
 
 # 작성 및 게시 아키텍처
 

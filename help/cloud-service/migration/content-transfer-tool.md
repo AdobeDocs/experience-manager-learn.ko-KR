@@ -1,24 +1,24 @@
 ---
 title: 컨텐츠 전송 도구 사용
 description: 컨텐츠 전송 도구 는 컨텐츠를 온-프레미스 또는 AMS 호스팅 버전의 AEM에서 Cloud Service 환경으로 마이그레이션하는 데 권장하는 방법입니다.
-version: cloud-service
+version: Cloud Service
 doc-type: technical-video
 topics: migration
-feature: 마이그레이션
+feature: Migration
 activity: develop
 audience: developer
 kt: 5352
 thumbnail: kt-5352.jpg
-topic: 마이그레이션
+topic: Migration
 role: Architect, Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 0cefc336-2a46-4a11-a734-ba1cb63c5cbe
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '82'
+source-wordcount: '80'
 ht-degree: 2%
 
 ---
-
 
 # 컨텐츠 전송 도구 사용
 

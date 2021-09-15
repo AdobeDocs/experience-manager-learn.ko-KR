@@ -1,19 +1,19 @@
 ---
 title: AEM Dynamic Media에서 비디오 프로필 만들기
 description: Dynamic Media에서 비디오를 처리하도록 비디오 프로필 구성
-version: cloud-service
+version: Cloud Service
 role: Developer
 level: Intermediate
-feature: 비디오 프로필
-topic: 개발
+feature: Video Profiles
+topic: Development
 index: y
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 0fd4d366-bb7a-4c43-887f-3a83cf60d15b
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '42'
-ht-degree: 7%
+source-wordcount: '39'
+ht-degree: 0%
 
 ---
-
 
 # AEM Dynamic Media에서 비디오 프로필 만들기
 

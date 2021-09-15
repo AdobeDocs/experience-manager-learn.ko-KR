@@ -1,24 +1,24 @@
 ---
 title: asset compute 메타데이터 작업자 개발
 description: 이미지 자산에서 가장 일반적으로 사용되는 색상을 파생시키는 Asset compute 메타데이터 작업자를 만들고 색상 이름을 AEM의 자산 메타데이터에 다시 쓰는 방법을 알아봅니다.
-feature: asset compute 마이크로서비스
+feature: Asset Compute Microservices
 topics: metadata, development
-version: cloud-service
+version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
 kt: 6448
 thumbnail: 327313.jpg
-topic: 통합, 개발
+topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: dbc0a35ae96594fec1e10f411d57d2a3812c1cf2
+exl-id: 6ece6e82-efe9-41eb-adf8-78d9deed131e
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '1439'
+source-wordcount: '1434'
 ht-degree: 1%
 
 ---
-
 
 # asset compute 메타데이터 작업자 개발
 
@@ -27,7 +27,7 @@ ht-degree: 1%
 일반적인 사용 사례는 다음과 같습니다.
 
 + PIM(제품 정보 관리 시스템)과 같은 타사 시스템과 통합하며, 자산에서 추가 메타데이터를 검색하고 저장해야 합니다
-+ 컨텐츠 및 Commerce AI와 같은 Adobe 서비스와 통합하여 자산 메타데이터를 추가 기계 학습 속성으로 보강합니다
++ Content 및 Commerce AI와 같은 Adobe 서비스와 통합하여 자산 메타데이터를 추가 기계 학습 속성으로 보강합니다
 + 자산에 대한 메타데이터를 이진 정보에서 Cloud Service으로 AEM에 자산 메타데이터로 저장합니다
 
 ## 무엇을 할 것인가
@@ -267,14 +267,14 @@ AEM에서 작업자를 불러옵니다. 새 작업자를 생성하거나 이 배
 1. ____ 새 처리 프로필 또 ____ 는 편집 및 기존 처리 프로필 만들기
 1. __사용자 지정__ 탭을 탭하고 __새로 추가__&#x200B;를 탭합니다
 1. 새 서비스 정의
-   + __메타데이터 렌디션 만들기__:활성으로 전환
+   + __메타데이터 렌디션 만들기__: 활성으로 전환
    + __끝점:__ `https://...adobeioruntime.net/api/v1/web/wkndAemAssetCompute-0.0.1/metadata-colors`
       + 이 URL은 [배포](#deploy) 또는 `aio app get-url` 명령을 사용하는 동안 가져온 작업자의 URL입니다. URL이 AEM as a Cloud Service 환경을 기반으로 하는 올바른 작업 영역에서 표시되는지 확인하십시오.
    + __서비스 매개 변수__
       + __매개 변수 추가__ 를 누릅니다
          + 키: `colorFamily`
          + 값: `pantone`
-            + 지원되는 값:`basic`, `hex`, `html`, `ntc`, `pantone`, `roygbiv`
+            + 지원되는 값: `basic`, `hex`, `html`, `ntc`, `pantone`, `roygbiv`
    + __MIME 유형__
       + __포함:__ `image/jpeg`,  `image/png`,  `image/gif`,  `image/svg`
          + 이러한 유형은 색상을 파생하는 데 사용되는 타사 npm 모듈에서 지원하는 유일한 MIME 유형입니다.
@@ -293,7 +293,7 @@ AEM에서 작업자를 불러옵니다. 새 작업자를 생성하거나 이 배
 1. __단일 행 텍스트 추가__
    + __필드 레이블__: `Colors Family`
    + __속성에 매핑__: `./jcr:content/metadata/wknd:colorsFamily`
-   + __규칙 > 필드 > 편집__ 비활성화:선택됨
+   + __규칙 > 필드 > 편집__ 비활성화: 선택됨
 1. __다중 값 텍스트__ 추가
    + __필드 레이블__: `Colors`
    + __속성에 매핑__: `./jcr:content/metadata/wknd:colors`

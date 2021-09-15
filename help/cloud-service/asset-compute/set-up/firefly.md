@@ -1,30 +1,30 @@
 ---
 title: asset compute 확장성을 위해 Adobe Project Firefly 설정
 description: asset compute 프로젝트는 특별히 정의된 Adobe Project Firefly 프로젝트로서, 설정 및 배포하려면 Adobe 개발자 콘솔에서 Project Firefly Adobe에 액세스해야 합니다.
-feature: asset compute 마이크로서비스
+feature: Asset Compute Microservices
 topics: renditions, development
-version: cloud-service
+version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
 kt: 6268
 thumbnail: 40183.jpg
-topic: 통합, 개발
+topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 2b1d8786-592e-41f2-80cc-bc0b1c7e1b49
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '545'
 ht-degree: 0%
 
 ---
-
 
 # Firefly Adobe 프로젝트 설정
 
 asset compute 프로젝트는 특별히 정의된 Adobe Project Firefly 프로젝트로서, 설정 및 배포하려면 Adobe 개발자 콘솔에서 Project Firefly Adobe에 액세스해야 합니다.
 
-## Adobe 개발자 콘솔에서 Firefly Adobe 프로젝트 만들기 및 설정{#set-up}
+## Adobe 개발자 콘솔에서 Adobe Project Firefly 만들기 및 설정{#set-up}
 
 >[!VIDEO](https://video.tv.adobe.com/v/40183/?quality=12&learn=on)
 
@@ -37,7 +37,7 @@ _Adobe Project Firefly 설정 클릭스루(오디오 없음)_
 
    + __프로젝트 제목__:  `WKND AEM Asset Compute`
    + __앱 이름__:  `wkndAemAssetCompute<YourName>`
-      + __앱 이름__&#x200B;은 모든 Firefly 프로젝트에서 고유해야 하며 나중에 수정할 수 없습니다. 회사나 조직의 이름을 접두사로 사용하고 의미 있는 접미사를 사용하여 포스트픽스를 수정하는 것은 다음과 같은 좋은 방법입니다.`wkndAemAssetCompute`
+      + __앱 이름__&#x200B;은 모든 Firefly 프로젝트에서 고유해야 하며 나중에 수정할 수 없습니다. 회사나 조직의 이름을 접두사로 사용하고 의미 있는 접미사를 사용하여 포스트픽스를 수정하는 것은 다음과 같은 좋은 방법입니다. `wkndAemAssetCompute`
       + 자체 활성화를 위해 다른 Project Firefly 프로젝트와의 충돌을 방지하기 위해 이름을 __앱 이름__(예: `wkndAemAssetComputeJaneDoe`)에 포스트픽스하는 것이 가장 좋습니다.
    + __작업 공간__&#x200B;에서 `Development`라는 새 환경을 추가합니다
    + __Adobe I/O Runtime__&#x200B;각 작업 공간에서 __런타임 포함__&#x200B;이 선택되었는지 확인합니다
@@ -49,10 +49,10 @@ _Adobe Project Firefly 설정 클릭스루(오디오 없음)_
       + __키 쌍 생성__&#x200B;을 선택하고 __키 쌍 생성__ 단추를 탭하고 다운로드한 `config.zip`을(를) [나중에 사용](#private-key)할 수 있도록 안전한 위치에 저장합니다
       + __Next__ 탭하기
       + 제품 프로필 __통합 - Cloud Service__&#x200B;을 선택하고 __구성된 API 저장__&#x200B;을 탭합니다.
-   + __Adobe 서비스 > I/O__ 이벤트 를 탭하고 구성된  __API 저장 을 탭합니다__
-   + __Adobe 서비스 > I/O 관리__ API 및 구성된  __API 저장 탭하기__
+   + __Adobe Services > I/O__ 이벤트 및 구성된  __API 저장 탭__
+   + __Adobe Services > I/O 관리__ API 및 구성된  __API 저장 탭__
 
-## private.key{#private-key}에 액세스합니다.
+## private.key에 액세스{#private-key}
 
 [Asset compute API 통합](#set-up)을 설정할 때 새 키 쌍이 생성되고 `config.zip` 파일이 자동으로 다운로드되었습니다. 이 `config.zip`에는 생성된 공개 인증서가 포함되어 있으며 일치하는 `private.key` 파일이 포함되어 있습니다.
 

@@ -1,20 +1,20 @@
 ---
 title: 메타데이터
 description: AEM Assets에서 메타데이터에 액세스하고 상호 작용하는 방법을 알아봅니다.
-feature: 메타데이터
+feature: Metadata
 role: User
 level: Beginner
-version: cloud-service
+version: Cloud Service
 kt: 4303
 thumbnail: 32045.jpg
-topic: 컨텐츠 관리
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+topic: Content Management
+exl-id: 67898b75-6307-4933-ad93-e6db2e220fd6
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '27'
-ht-degree: 18%
+source-wordcount: '24'
+ht-degree: 8%
 
 ---
-
 
 # 메타데이터
 

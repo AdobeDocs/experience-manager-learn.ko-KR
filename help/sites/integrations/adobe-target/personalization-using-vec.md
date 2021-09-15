@@ -5,21 +5,21 @@ topics: integrations, authoring, personalization, activity, offers
 audience: all
 doc-type: feature video
 activity: use
-version: cloud-service
+version: Cloud Service
 kt: 6352
 thumbnail: 6352-personalization-using-vec.jpg
-topic: 통합
+topic: Integrations
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: becf2bed-0541-45e8-9ce2-f9fb023234e0
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '518'
 ht-degree: 0%
 
 ---
 
-
-# 시각적 경험 작성기를 사용한 개인화 {#personalization-vec}
+# Visual Experience Composer를 사용한 개인화 {#personalization-vec}
 
 VEC(시각적 경험 작성기)를 사용하여 A/B 테스트 Target 활동을 만드는 방법을 알아봅니다.
 
@@ -48,7 +48,7 @@ WKND 사이트 홈 페이지에는 로컬 활동이나 도시 주변에서 정�
 
    ![활동 URL](assets/ab-test-url.png)
 
-1. 새 활동을 만든 후 시각적 경험 작성기에 왼쪽에 두 개의 탭이 표시됩니다.*경험 A* 및 *경험 B*. 목록에서 경험을 선택합니다. **경험 추가** 단추를 사용하여 목록에 새 경험을 추가할 수 있습니다.
+1. 새 활동을 만든 후 시각적 경험 작성기에 왼쪽에 두 개의 탭이 표시됩니다. *경험 A* 및 *경험 B*. 목록에서 경험을 선택합니다. **경험 추가** 단추를 사용하여 목록에 새 경험을 추가할 수 있습니다.
 
    ![경험 A](assets/experience.png)
 

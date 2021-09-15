@@ -3,17 +3,17 @@ title: Brand Portal에서 표현물 다운로드를 활성화하는 방법.
 description: Brand Portal에서 표현물 다운로드를 활성화하는 절차
 role: Developer
 level: Beginner
-version: cloud-service
+version: Cloud Service
 feature: Brand Portal
-topic: 개발
+topic: Development
 index: y
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 78664b38-b64a-4220-bb7a-83f09bdd441a
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '46'
-ht-degree: 6%
+source-wordcount: '43'
+ht-degree: 0%
 
 ---
-
 
 # Brand Portal에서 변환 다운로드 활성화
 

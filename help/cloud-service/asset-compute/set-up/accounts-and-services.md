@@ -1,24 +1,24 @@
 ---
 title: asset compute 확장성을 위한 계정 및 서비스 설정
 description: 개발 Asset compute 작업자는 AEM as a Cloud Service, Project Firefly Adobe, Microsoft 또는 Amazon에서 제공하는 클라우드 스토리지 등의 서비스 및 계정에 액세스해야 합니다.
-feature: asset compute 마이크로서비스
+feature: Asset Compute Microservices
 topics: renditions, development
-version: cloud-service
+version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
 kt: 6264
 thumbnail: 40377.jpg
-topic: 통합, 개발
+topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 707657ad-221e-4dab-ac2a-46a4fcbc55bc
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '627'
 ht-degree: 1%
 
 ---
-
 
 # 계정 및 서비스 설정
 
@@ -77,8 +77,8 @@ _Azure Blob 저장소 프로비저닝의 클릭스루(오디오 없음)_
 1. [Microsoft Azure 계정](https://azure.microsoft.com/en-us/account/)에 로그인합니다.
 1. __저장소 계정__ Azure 서비스 섹션으로 이동합니다.
 1. __+ 추가__&#x200B;를 탭하여 새 Blob 저장소 계정을 만듭니다
-1. 필요에 따라 새 __리소스 그룹__&#x200B;을 만듭니다. 예를 들면 다음과 같습니다.`aem-as-a-cloud-service`
-1. __저장소 계정 이름__&#x200B;을 입력합니다. 예를 들면 다음과 같습니다.`aemguideswkndassetcomput`
+1. 필요에 따라 새 __리소스 그룹__&#x200B;을 만듭니다. 예를 들면 다음과 같습니다. `aem-as-a-cloud-service`
+1. __저장소 계정 이름__&#x200B;을 입력합니다. 예를 들면 다음과 같습니다. `aemguideswkndassetcomput`
    + __저장소 계정 이름__&#x200B;은 로컬 Asset compute 개발 도구에 대한 클라우드 저장소 구성](../develop/environment-variables.md)에 사용됩니다[
    + [클라우드 저장소](../develop/environment-variables.md)를 구성할 때 저장소 계정과 연결된 __액세스 키__&#x200B;도 필요합니다.
 1. 다른 모든 항목을 기본값으로 두고 __검토 + 만들기__ 단추를 누릅니다

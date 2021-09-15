@@ -1,24 +1,24 @@
 ---
 title: Cloud Manager 사용 - CI/CD 프로덕션 파이프라인
-description: 'CI/CD 프로덕션 파이프라인은 스테이지를 통해 프로덕션 환경에 코드를 빌드 및 배포하는 데 사용되며, 가치 창출 시간을 단축합니다. CI/CD 프로덕션 파이프라인 구성은 파이프라인을 시작하는 트리거, 프로덕션 배포를 제어하는 매개 변수 및 성능 테스트 매개 변수를 정의합니다. '
+description: CI/CD 프로덕션 파이프라인은 스테이지를 통해 프로덕션 환경에 코드를 빌드 및 배포하는 데 사용되며, 가치 창출 시간을 단축합니다. CI/CD 프로덕션 파이프라인 구성은 파이프라인을 시작하는 트리거, 프로덕션 배포를 제어하는 매개 변수 및 성능 테스트 매개 변수를 정의합니다.
 sub-product: cloud-manager
 topics: Administration
 audience: administrator
 doc-type: feature video
 activity: use
-version: cloud-service
+version: Cloud Service
 kt: 6872, 6875
 thumbnail: 26317.jpg
-topic: 아키텍처
+topic: Architecture
 role: Architect, Developer, Admin
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: c4f5667a-0da2-490b-9d55-9fbde21db595
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '179'
+source-wordcount: '177'
 ht-degree: 2%
 
 ---
-
 
 # Cloud Manager 사용 - CI/CD 프로덕션 파이프라인
 

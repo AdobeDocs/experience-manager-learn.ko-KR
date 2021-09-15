@@ -1,22 +1,22 @@
 ---
 title: 경험 조각 빌딩 블록을 사용하는 방법
 description: 빌딩 블록은 경험 조각의 변형에서 작성된 구성 요소를 다시 사용할 수 있도록 하는 경험 조각의 하위 기능입니다.
-sub-product: 사이트, 컨텐츠 서비스
-version: cloud-service
-feature: 경험 구성요소
-topic: 컨텐츠 관리
+sub-product: sites, content-services
+version: Cloud Service
+feature: Experience Fragments
+topic: Content Management
 level: Beginner, Intermediate
 role: Architect, Developer, Admin, User
 doc-type: feature video
 kt: 660
 thumbnail: 331786.jpg
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: cc758602-3c20-4eca-9b87-f04b6dc96bfe
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '104'
-ht-degree: 3%
+source-wordcount: '98'
+ht-degree: 0%
 
 ---
-
 
 # 경험 조각을 사용한 빌딩 블록 {#building-blocks}
 

@@ -1,24 +1,24 @@
 ---
 title: asset compute 개발 도구
 description: asset compute 개발 도구는 개발자가 Adobe I/O Runtime의 Asset compute 리소스에 대해 AEM SDK 컨텍스트 외부에 있는 Asset Computer 작업자를 로컬로 구성 및 실행할 수 있도록 해주는 로컬 웹 도구입니다.
-feature: asset compute 마이크로서비스
+feature: Asset Compute Microservices
 topics: renditions, development
-version: cloud-service
+version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
 kt: 6283
 thumbnail: 40241.jpg
-topic: 통합, 개발
+topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: cbe08570-e353-4daf-94d1-a91a8d63406d
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '536'
 ht-degree: 0%
 
 ---
-
 
 # asset compute 개발 도구
 
@@ -41,7 +41,7 @@ $ aio app run
 1. __소스 파일:__  소스 파일을 선택하여 다음을 수행할 수 있습니다.
    + asset compute 작업자에게 전달된 `source` 바이너리인 자산 바이너리를 선택했습니다
    + 소스 파일 업로드
-1. __asset compute 프로필 정의:__  매개 변수를 포함하여 실행할 Asset compute 작업자를 정의합니다.작업자의 URL 끝점, 결과 변환 이름 및 모든 매개 변수 포함
+1. __asset compute 프로필 정의:__  매개 변수를 포함하여 실행할 Asset compute 작업자를 정의합니다. 작업자의 URL 끝점, 결과 변환 이름 및 모든 매개 변수 포함
 1. __실행:__ 실행 단추는 Asset compute 구성 프로필 편집기에 정의된 대로 Asset compute 프로필을 실행합니다
 1. __Abort:__  Abort 버튼을 클릭하면 실행 버튼을 탭하지 않은 실행 취소
 1. __요청/응답:__  Adobe I/O Runtime에서 실행되는 Asset compute 작업자에 대한 HTTP 요청 및 응답을 제공합니다. 이 기능은 디버깅에 유용할 수 있습니다

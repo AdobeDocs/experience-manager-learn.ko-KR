@@ -1,24 +1,24 @@
 ---
 title: Adobe Analytics을 사용하여 페이지 데이터 수집
 description: 이벤트 기반 Adobe 클라이언트 데이터 레이어를 사용하여 Adobe Experience Manager으로 빌드된 웹 사이트에서 사용자 활동에 대한 데이터를 수집합니다. Experience Platform Launch에서 규칙을 사용하여 이러한 이벤트를 수신하고 데이터를 Adobe Analytics 보고서 세트로 보내는 방법을 알아봅니다.
-version: cloud-service
+version: Cloud Service
 topic: Integrations
 feature: Adobe Client Data Layer
 role: Developer
 level: Intermediate
 kt: 5332
 thumbnail: 5332-collect-data-analytics.jpg
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+exl-id: 33f2fd25-8696-42fd-b496-dd21b88397b2
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
 source-wordcount: '2375'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-
 # Adobe Analytics을 사용하여 페이지 데이터 수집
 
-AEM 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)와 함께 클라이언트 데이터 레이어 Adobe의 내장 기능을 사용하여 Adobe Experience Manager Sites의 페이지에 대한 데이터를 수집하는 방법을 알아봅니다. [ [Experience Platform ](https://www.adobe.com/experience-platform/launch.html) Launch 및  [Adobe Analytics ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html) 확장은 페이지 데이터를 Adobe Analytics에 전송하는 규칙을 만드는 데 사용됩니다.
+AEM 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)와 함께 클라이언트 데이터 레이어 Adobe의 내장 기능을 사용하여 Adobe Experience Manager Sites의 페이지에 대한 데이터를 수집하는 방법을 알아봅니다. [ [Experience Platform Launch 및 Adobe Analytics 확장 기능을 사용해 Adobe Analytics로 페이지 데이터를 전송할 규칙을 생성합니다.](https://www.adobe.com/experience-platform/launch.html)[](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html)
 
 ## 빌드할 내용
 

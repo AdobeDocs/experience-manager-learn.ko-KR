@@ -1,24 +1,24 @@
 ---
 title: 로컬 개발 액세스 토큰
 description: AEM 로컬 개발 액세스 토큰은 HTTP를 통해 AEM 작성자 또는 게시 서비스와 프로그래밍 방식으로 상호 작용하는 Cloud Service로서 AEM과의 통합 개발을 가속화하는 데 사용됩니다.
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 topics: Development, Security
-feature: API
+feature: APIs
 activity: develop
 audience: developer
 kt: 6785
 thumbnail: 330477.jpg
-topic: 헤드리스, 통합
+topic: Headless, Integrations
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 197444cb-a68f-4d09-9120-7b6603e1f47d
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1070'
 ht-degree: 0%
 
 ---
-
 
 # 로컬 개발 액세스 토큰
 
@@ -238,11 +238,11 @@ Cloud Service으로 AEM에 프로그래밍 방식으로 액세스해야 하는 �
 
    다음 매개 변수가 전달됩니다.
 
-   + `aem`:애플리케이션이 상호 작용하는 AEM as a Cloud Service 환경의 구성표 및 호스트 이름(예: `https://author-p1234-e5678.adobeaemcloud.com`).
-   + `folder`:자산이 로 업데이트될 자산 폴더 경로입니다 `propertyValue`.접두사를 추가하지  `/content/dam` 마십시오(예: `/wknd/en/adventures/napa-wine-tasting`)
-   + `propertyName`:업데이트할 자산 속성 이름입니다(예:  `[dam:Asset]/jcr:content` ). `metadata/dc:rights`).
-   + `propertyValue`:을(를) 설정할  `propertyName` 값;공백이 있는 값은 로 캡슐화해야  `"` 합니다(예: `"WKND Limited Use"`)
-   + `file`:AEM 개발자 콘솔에서 다운로드한 JSON 파일의 상대 파일 경로입니다.
+   + `aem`: 애플리케이션이 상호 작용하는 AEM as a Cloud Service 환경의 구성표 및 호스트 이름(예:  `https://author-p1234-e5678.adobeaemcloud.com`).
+   + `folder`: 자산이 로 업데이트될 자산 폴더 경로입니다 `propertyValue`. 접두사를 추가하지  `/content/dam` 마십시오(예:  `/wknd/en/adventures/napa-wine-tasting`)
+   + `propertyName`: 업데이트할 자산 속성 이름입니다(예:  `[dam:Asset]/jcr:content` ).  `metadata/dc:rights`).
+   + `propertyValue`: 을(를) 설정할  `propertyName` 값; 공백이 있는 값은 로 캡슐화해야  `"` 합니다(예:  `"WKND Limited Use"`)
+   + `file`: AEM 개발자 콘솔에서 다운로드한 JSON 파일의 상대 파일 경로입니다.
 
    업데이트된 각 자산에 대한 애플리케이션 결과 출력을 성공적으로 실행합니다.
 

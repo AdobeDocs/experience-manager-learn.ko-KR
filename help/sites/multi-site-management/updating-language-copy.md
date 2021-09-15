@@ -1,24 +1,24 @@
 ---
 title: Launches에서 언어 사본 업데이트
 description: Launches에서 언어 사본 의 변경 사항을 업데이트, 검토 및 승인하는 방법을 알아봅니다.
-feature: 언어 사본, 다중 사이트 관리자
+feature: Language Copy, Multi Site Manager
 topics: localization, authoring, content-architecture
 audience: all
 doc-type: feature video
 activity: use
-version: 6.3, 6.4, 6.5, cloud-service
+version: 6.3, 6.4, 6.5, Cloud Service
 kt: 5367
 thumbnail: 36683.jpg
-topic: 로컬라이제이션
+topic: Localization
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: c29f64a3-56cd-4594-9265-692974f4c01a
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '52'
-ht-degree: 1%
+source-wordcount: '46'
+ht-degree: 0%
 
 ---
-
 
 # Launches에서 언어 사본 업데이트 {#update-language-copy-launch}
 

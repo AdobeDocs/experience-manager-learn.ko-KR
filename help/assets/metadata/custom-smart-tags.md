@@ -1,20 +1,20 @@
 ---
 title: AEM Assets에서 이미지용 사용자 지정 스마트 태그
 description: 자산에 사용자 지정 용어를 적용하도록 AEM Assets의 스마트 태그를 학습하는 방법을 알아봅니다.
-feature: 스마트 태그
-version: 6.4, 6.5, cloud-services
+feature: Smart Tags
+version: 6.4, 6.5, Cloud Services
 kt: 795
 thumbnail: 22254.jpg
-topic: 컨텐츠 관리
+topic: Content Management
 role: Developer
 level: Intermediate
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 06f2ae4d-c18e-45ed-96d7-ddc6f9c8d829
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '151'
-ht-degree: 3%
+source-wordcount: '147'
+ht-degree: 1%
 
 ---
-
 
 # 이미지용 사용자 지정 스마트 태그
 
@@ -37,5 +37,3 @@ ht-degree: 3%
 ## 추가 리소스
 
 * AEM 6.4에는 [최신 서비스 팩](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html#aem-64)이 필요합니다.
-
-

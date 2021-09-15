@@ -1,20 +1,20 @@
 ---
 title: AEM Sites에서 SPA Editor 사용
 description: AEM 단일 페이지 애플리케이션 편집기 프레임워크는 작성자가 단일 페이지 애플리케이션 또는 SPA에 대한 컨텐츠를 편집할 수 있는 기능을 제공합니다. React 또는 Angular 프레임워크을 사용하는 개발자는 SPA을 만든 다음 SPA의 영역을 AEM 구성 요소에 매핑하므로 작성자는 친숙한 AEM Sites 편집 도구를 사용할 수 있습니다.
-version: 6.4, 6.5, cloud-service
+version: 6.4, 6.5, Cloud Service
 topic: SPA
-feature: SPA 편집기
+feature: SPA Editor
 role: Developer
 level: Beginner
 kt: 1047
 thumbnail: 22229.jpg
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 645b6986-830f-4409-b46c-ddf15c33e84c
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '274'
 ht-degree: 7%
 
 ---
-
 
 # AEM Sites에서 SPA Editor 사용 {#using-the-spa-editor-with-aem-sites}
 

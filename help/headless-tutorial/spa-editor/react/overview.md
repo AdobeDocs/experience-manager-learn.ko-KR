@@ -1,25 +1,25 @@
 ---
 title: AEM SPA Editor 및 React 시작하기
 description: WKND SPA을 사용하여 Adobe Experience Manager AEM에서 편집할 수 있는 첫 번째 React Single Page Application(SPA)을 만듭니다. AEM SPA Editor에서 React JS 프레임워크를 사용하여 SPA을 만드는 방법을 알아봅니다. 이 여러 부분으로 구성된 자습서에서는 가상 라이프스타일 브랜드인 WKND에 React 애플리케이션을 구현하는 과정을 설명합니다. 이 자습서에서는 SPA 만들기 종단간 및 AEM과의 통합을 다룹니다.
-sub-product: 사이트
+sub-product: sites
 topics: development
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5912
 thumbnail: 5912-spa-react.jpg
-feature: SPA 편집기
+feature: SPA Editor
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 38802296-8988-4300-a04a-fcbbe98ac810
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 2%
+source-wordcount: '466'
+ht-degree: 3%
 
 ---
-
 
 # AEM에서 첫 번째 React SPA 만들기 {#overview}
 

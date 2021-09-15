@@ -1,9 +1,9 @@
 ---
 title: AEM Sites 시작하기 - WKND 튜토리얼
 description: AEM Sites 시작하기 - WKND 튜토리얼. WKND 자습서는 Adobe Experience Manager을 처음 사용하는 개발자를 위해 디자인된 여러 부분으로 된 자습서입니다. 이 자습서에서는 가상 라이프스타일 브랜드인 WKND에 대해 AEM 사이트를 구현하는 방법을 설명합니다. 이 자습서에서는 프로젝트 설정, maven 원형, 핵심 구성 요소, 편집 가능한 템플릿, 클라이언트 라이브러리 및 구성 요소 개발과 같은 기본 주제를 다룹니다.
-sub-product: 사이트
+sub-product: sites
 topics: development
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
@@ -11,17 +11,17 @@ KT: 4132
 mini-toc-levels: 1
 index: y
 thumbnail: 30476.jpg
-feature: 핵심 구성 요소, 페이지 편집기, 편집 가능한 템플릿, AEM Project Archetype
-topic: 컨텐츠 관리, 개발
+feature: Core Components, Page Editor, Editable Templates, AEM Project Archetype
+topic: Content Management, Development
 role: Developer
 level: Beginner
-source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
+exl-id: 09a600f4-1ada-4fb7-ae44-586364cff389
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 4%
+source-wordcount: '619'
+ht-degree: 6%
 
 ---
-
 
 # AEM Sites 시작하기 - WKND 튜토리얼 {#introduction}
 
@@ -56,7 +56,7 @@ XD UI 키트를 다운로드합니다.
 
 ## 참조 사이트 {#reference-site}
 
-WKND Site의 완성된 버전을 참조로도 사용할 수 있습니다.[https://wknd.site/](https://wknd.site/)
+WKND Site의 완성된 버전을 참조로도 사용할 수 있습니다. [https://wknd.site/](https://wknd.site/)
 
 이 자습서에서는 AEM 개발자에게 필요한 주요 개발 기술을 설명하지만 *전체 사이트를 처음부터 끝까지 빌드하지 않습니다.* 완료된 참조 사이트는 즉시 사용 가능한 AEM 기능을 탐색하고 확인할 수 있는 또 다른 유용한 리소스입니다.
 
@@ -70,4 +70,4 @@ Adobe Stock을 사용하면 사진, 그래픽, 비디오 및 템플릿을 포함
 
 ## 다음 단계 {#next-steps}
 
-뭘 기다리고 있는 거야?![AEM Project Archetype](./project-archetype/overview.md) 또는 [사이트 템플릿](./site-template/create-site.md)을 사용하여 사이트를 만드는 방법을 알아봅니다.
+뭘 기다리고 있는 거야?! [AEM Project Archetype](./project-archetype/overview.md) 또는 [사이트 템플릿](./site-template/create-site.md)을 사용하여 사이트를 만드는 방법을 알아봅니다.

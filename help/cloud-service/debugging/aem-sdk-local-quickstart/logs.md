@@ -1,23 +1,23 @@
 ---
 title: 로그를 사용하여 AEM SDK 디버깅
 description: 로그는 AEM 응용 프로그램을 디버깅하기 위해 최전방 역할을 하지만 배포된 AEM 응용 프로그램에서 적절한 로깅에 의존합니다.
-feature: 개발자 도구
+feature: Developer Tools
 topics: development
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5252
-topic: 개발
+topic: Development
 role: Developer
 level: Beginner, Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 91aa4a10-47fe-4313-acd2-ca753e5484d9
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 3%
+source-wordcount: '394'
+ht-degree: 2%
 
 ---
-
 
 # 로그를 사용하여 AEM SDK 디버깅
 
@@ -53,7 +53,7 @@ $ ~/aem-sdk/author/crx-quickstart/logs/error.log
 
 Dispatcher 로그는 `bin/docker_run`이 호출될 때 stdout으로 출력되지만 Docker의 포함에서 로그를 직접 액세스할 수 있습니다.
 
-### Docker 컨테이너의 로그에 액세스{#dispatcher-tools-access-logs}
+### Docker 컨테이너의 로그 액세스{#dispatcher-tools-access-logs}
 
 Dispatcher 로그는 `/etc/httpd/logs`의 Docker 컨테이너에서 직접 액세스할 수 있습니다.
 

@@ -1,24 +1,24 @@
 ---
 title: asset compute 작업자 디버깅
 description: asset compute 작업자는 간단한 디버그 로그 명령문에서 원격 디버거로 연결된 VS 코드에 이르기까지 여러 가지 방법으로 디버깅할 수 있으며 AEM as a Cloud Service으로 시작한 Adobe I/O Runtime에서 활성화 로그를 가져올 수도 있습니다.
-feature: asset compute 마이크로서비스
+feature: Asset Compute Microservices
 topics: renditions, development
-version: cloud-service
+version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
 kt: 6285
 thumbnail: 40383.jpg
-topic: 통합, 개발
+topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: dbc0a35ae96594fec1e10f411d57d2a3812c1cf2
+exl-id: 4dea9cc4-2133-4ceb-8ced-e9b9874f6d89
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '618'
 ht-degree: 0%
 
 ---
-
 
 # asset compute 작업자 디버깅
 
@@ -93,7 +93,7 @@ _wskdebug(오디오 없음)를 사용하여 Asset compute 작업자를 디버깅
 1. VS 코드로 돌아가서 `/actions/worker/index.js` 로 이동하고 코드를 단계별로 진행합니다
 1. 디버그 가능 개발 도구를 종료하려면 6단계에서 `npx adobe-asset-compute devtool` 명령을 실행한 터미널에서 `Ctrl-C`을 누릅니다
 
-## Adobe I/O Runtime{#aio-app-logs}에서 로그에 액세스
+## Adobe I/O Runtime에서 로그 액세스{#aio-app-logs}
 
 [AEM as a Cloud Service은 Adobe I/O Runtime에서 직접 ](../deploy/processing-profiles.md) 을 호출하여 처리 프로필을 통해 Asset compute 작업자를 활용합니다. 이러한 호출에는 로컬 개발이 포함되지 않으므로 Asset compute 개발 도구 또는 wskdebug와 같은 로컬 도구를 사용하여 해당 실행을 디버깅할 수 없습니다. 대신 Adobe I/O CLI를 사용하여 Adobe I/O Runtime의 특정 작업 공간에서 실행된 작업자로부터 로그를 가져올 수 있습니다.
 

@@ -1,20 +1,20 @@
 ---
 title: 표현물
 description: AEM Assets의 표현물과 미리 보기를 위한 방법에 대해 알아봅니다.
-feature: 표현물
+feature: Renditions
 role: User
 level: Beginner
-version: cloud-service
+version: Cloud Service
 kt: 4496
 thumbnail: 32047.jpg
-topic: 컨텐츠 관리
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+topic: Content Management
+exl-id: 1df0ffd7-fe22-4eef-9428-b228ed0dcf31
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '29'
-ht-degree: 17%
+source-wordcount: '26'
+ht-degree: 7%
 
 ---
-
 
 # 표현물
 

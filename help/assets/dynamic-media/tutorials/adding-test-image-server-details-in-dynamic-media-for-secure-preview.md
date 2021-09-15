@@ -1,18 +1,18 @@
 ---
 title: AEM Dynamic Media에 대한 보안 미리 보기 서버 구성
 description: AEM Dynamic Media Classic 앱을 사용하여 보안 미리 보기를 위한 테스트 이미지 서버를 구성합니다.
-version: cloud-service
+version: Cloud Service
 role: Developer
 level: Intermediate
-topic: 개발
+topic: Development
 index: y
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 7c12fc14-cdaf-45eb-807a-64de86a2a36a
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '59'
-ht-degree: 1%
+source-wordcount: '58'
+ht-degree: 0%
 
 ---
-
 
 # AEM Dynamic Media에 대한 보안 미리 보기 서버 구성
 

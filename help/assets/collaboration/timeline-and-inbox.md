@@ -2,20 +2,20 @@
 title: 타임라인 및 받은 편지함
 description: 공동 작업에 사용되는 AEM Assets의 주요 웹 콘솔에 대해 숙지하십시오.
 sub-product: assets
-feature: 워크플로우
-version: cloud-service
+feature: Workflow
+version: Cloud Service
 kt: 4540
 thumbnail: 32051.jpg
-topic: 협업
+topic: Collaboration
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 868dc44b-23ca-4e52-a0bc-229480cfae10
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '39'
-ht-degree: 5%
+source-wordcount: '36'
+ht-degree: 0%
 
 ---
-
 
 # 타임라인 및 받은 편지함
 

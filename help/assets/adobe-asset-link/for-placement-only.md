@@ -1,21 +1,21 @@
 ---
 title: 배치만(FPO) 표현물
-description: '이제 디자이너와 크리에이티브 사용자가 선호하는 Adobe Creative Cloud 데스크탑 애플리케이션 내에서 Adobe Experience Manager 자산을 사용할 수 있습니다. Adobe Creative Cloud Enterprise용 Adobe Asset Link 확장 기능은 Adobe Photoshop, InDesign 및 Illustrator과 같은 Creative Cloud 도구 내에서 AEM 자산의 메타데이터를 검색 및 탐색, 정렬, 미리 보기, 업로드, 체크아웃, 수정, 체크인 및 볼 수 있는 기능을 확장합니다. '
+description: 이제 디자이너와 크리에이티브 사용자가 선호하는 Adobe Creative Cloud 데스크탑 애플리케이션 내에서 Adobe Experience Manager 자산을 사용할 수 있습니다. Adobe Creative Cloud Enterprise용 Adobe Asset Link 확장 기능은 Adobe Photoshop, InDesign 및 Illustrator과 같은 Creative Cloud 도구 내에서 AEM 자산의 메타데이터를 검색 및 탐색, 정렬, 미리 보기, 업로드, 체크아웃, 수정, 체크인 및 볼 수 있는 기능을 확장합니다.
 sub-product: assets
 feature: Adobe Asset Link
-version: cloud-service
+version: Cloud Service
 kt: 4916
 thumbnail: 34259.jpg
-topic: 컨텐츠 관리
+topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 940608db-6e84-441a-b031-e8cf52459597
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '92'
-ht-degree: 5%
+source-wordcount: '86'
+ht-degree: 0%
 
 ---
-
 
 # 배치만(FPO) 표현물{#for-placement-only-rendition}
 

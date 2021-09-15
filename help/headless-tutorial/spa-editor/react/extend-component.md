@@ -1,22 +1,22 @@
 ---
 title: 코어 구성 요소 확장 | AEM SPA 편집기 및 반응 시작하기
 description: AEM SPA 편집기에서 사용할 기존 핵심 구성 요소에 대한 JSON 모델을 확장하는 방법을 알아봅니다. 기존 구성 요소에 속성 및 컨텐츠를 추가하는 방법을 이해하는 것은 AEM SPA 편집기 구현의 기능을 확장하는 강력한 방법입니다. Sling 모델 및 Sling Resource Merger 기능을 확장하는 데 위임 패턴을 사용하는 방법을 알아봅니다.
-sub-product: 사이트
-feature: SPA 편집기, 핵심 구성 요소
+sub-product: sites
+feature: SPA Editor, Core Components
 doc-type: tutorial
-version: cloud-service
+version: Cloud Service
 kt: 5879
 thumbnail: 5879-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: 24d70ebaa6a63cfd4a73f43188f25b375dc702ec
+exl-id: 44433595-08bc-4a82-9232-49d46c31b07b
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '1097'
-ht-degree: 0%
+source-wordcount: '1091'
+ht-degree: 1%
 
 ---
-
 
 # 코어 구성 요소 확장 {#extend-component}
 
@@ -38,7 +38,7 @@ AEM SPA 편집기에서 사용할 기존 코어 구성 요소를 확장하는 �
 
 [로컬 개발 환경](overview.md#local-dev-environment)을 설정하는 데 필요한 도구 및 지침을 검토하십시오. 이 시점에서 자습서 사용자는 AEM SPA 편집기 기능을 명확하게 이해할 수 있다고 가정합니다.
 
-## Sling 리소스 슈퍼 유형 {#sling-resource-super-type}이(가) 있는 상속
+## Sling 리소스 슈퍼 유형을 사용한 상속 {#sling-resource-super-type}
 
 기존 구성 요소를 확장하려면 구성 요소의 정의에 `sling:resourceSuperType` 속성을 설정합니다.  `sling:resourceSuperType`는  [](https://sling.apache.org/documentation/the-sling-engine/resources.html#resource-properties) 다른 구성 요소를 가리키는 AEM 구성 요소 정의에 설정할 수 있는 속성입니다. 이렇게 하면 구성 요소가 `sling:resourceSuperType`(으)로 식별된 구성 요소의 모든 기능을 상속하도록 명시적으로 설정됩니다.
 
@@ -172,7 +172,7 @@ AEM SPA 편집기에서 사용할 기존 코어 구성 요소를 확장하는 �
 
    대부분의 구성 요소는 `_cq_editConfig`이 필요하지 않습니다. 이미지 구성 요소 및 하위 항목은 예외입니다.
 
-## 대화 상자 {#extend-dialog} 확장
+## 대화 상자 확장 {#extend-dialog}
 
 `Banner` 구성 요소에는 `bannerText`을 캡처하기 위한 대화 상자에 추가 텍스트 필드가 필요합니다. Sling 상속을 사용하고 있으므로 [Sling Resource Merger](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/sling-resource-merger.html)의 기능을 사용하여 대화 상자의 부분을 대체하거나 확장할 수 있습니다. 이 샘플에서는 카드 구성 요소를 채우기 위해 작성자의 추가 데이터를 캡처하기 위해 대화 상자에 새 탭이 추가되었습니다.
 
@@ -462,7 +462,7 @@ AEM SPA 편집기에서 사용할 기존 코어 구성 요소를 확장하는 �
    $ mvn clean install -PautoInstallBundle
    ```
 
-## 모두 함께 {#put-together}
+## 결합하기 {#put-together}
 
 1. AEM으로 돌아가서 `Banner` 구성 요소가 있는 SPA 페이지를 엽니다.
 1. **배너 텍스트**&#x200B;를 포함하도록 `Banner` 구성 요소를 업데이트합니다.
@@ -479,7 +479,7 @@ AEM SPA 편집기에서 사용할 기존 코어 구성 요소를 확장하는 �
 
    ![표시되는 배너 텍스트](assets/extend-component/banner-text-displayed.png)
 
-1. 다음 위치에서 JSON 모델 응답을 봅니다.[http://localhost:4502/content/wknd-spa-react/us/en.model.json](http://localhost:4502/content/wknd-spa-react/us/en.model.json) 및 `wknd-spa-react/components/card` 검색:
+1. 다음 위치에서 JSON 모델 응답을 봅니다. [http://localhost:4502/content/wknd-spa-react/us/en.model.json](http://localhost:4502/content/wknd-spa-react/us/en.model.json) 및 `wknd-spa-react/components/card` 검색:
 
    ```json
    "banner": {
@@ -495,4 +495,3 @@ AEM SPA 편집기에서 사용할 기존 코어 구성 요소를 확장하는 �
 ## 축하합니다! {#congratulations}
 
 축하합니다. 를 사용하여 AEM 구성 요소를 확장하는 방법과 Sling 모델 및 대화 상자가 JSON 모델로 작동하는 방법을 알아보았습니다.
-

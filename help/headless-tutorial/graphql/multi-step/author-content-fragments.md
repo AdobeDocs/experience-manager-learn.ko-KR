@@ -1,21 +1,21 @@
 ---
 title: 컨텐츠 조각 작성 - AEM 헤드리스 시작하기 - GraphQL
 description: Adobe Experience Manager(AEM) 및 GraphQL을 시작합니다. 컨텐츠 조각 모델을 기반으로 새 컨텐츠 조각을 만들고 편집합니다. 컨텐츠 조각의 변형을 만드는 방법을 알아봅니다.
-version: cloud-service
+version: Cloud Service
 mini-toc-levels: 1
 kt: 6713
 thumbnail: 22451.jpg
-feature: 컨텐츠 조각, GraphQL API
-topic: 헤드리스, 컨텐츠 관리
+feature: Content Fragments, GraphQL API
+topic: Headless, Content Management
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 701fae92-f740-4eb6-8133-1bc45a472d0f
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '784'
 ht-degree: 0%
 
 ---
-
 
 # 컨텐츠 조각 작성 {#authoring-content-fragments}
 

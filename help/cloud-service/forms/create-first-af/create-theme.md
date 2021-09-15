@@ -5,22 +5,21 @@ solution: Experience Manager Forms
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: cloud-service
-feature: 적응형 양식
-topic: 개발
+version: Cloud Service
+feature: Adaptive Forms
+topic: Development
 kt: 7386
 thumbnail: 332229.jpg
-source-git-commit: 67be45dbd72a8af8b9ab60452ff15081c6f9f192
+exl-id: c8c04528-384b-48b3-abba-04db16fd87c5
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '75'
-ht-degree: 4%
+source-wordcount: '72'
+ht-degree: 0%
 
 ---
-
 
 # 테마 만들기
 
 테마에는 구성 요소 및 패널에 대한 스타일 지정 세부 사항이 포함되어 있으며 다른 양식에서 테마를 다시 사용할 수 있습니다. 스타일은 배경색, 상태 색상, 투명도, 정렬 및 크기와 같은 속성을 포함합니다. 양식에 테마를 적용하면 지정된 스타일이 양식의 해당 구성 요소에 반영됩니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/332229?quality=12&learn=on)
-

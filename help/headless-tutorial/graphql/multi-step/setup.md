@@ -1,7 +1,7 @@
 ---
 title: 빠른 설정 - AEM 헤드리스 시작하기 - GraphQL
 description: Adobe Experience Manager(AEM) 및 GraphQL을 시작합니다. GraphQL API를 사용하여 AEM SDK를 설치하고 샘플 컨텐츠를 추가하고 AEM의 컨텐츠를 사용하는 애플리케이션을 배포합니다. AEM이 옴니채널 경험을 가능하게 하는 방법을 참조하십시오.
-version: cloud-service
+version: Cloud Service
 mini-toc-levels: 1
 kt: 6386
 thumbnail: KT-6386.jpg
@@ -9,13 +9,13 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+exl-id: d2da6efa-1f77-4391-adda-e3180c42addc
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
 source-wordcount: '1814'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
-
 
 # 빠른 설정 {#setup}
 

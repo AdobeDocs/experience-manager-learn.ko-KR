@@ -2,20 +2,20 @@
 title: 댓글 및 주석
 description: AEM에서 주석 및 주석을 사용하여 자산에 대해 통신 및 공동 작업하는 방법을 알아봅니다.
 sub-product: assets
-feature: 협업
-version: cloud-service
+feature: Collaboration
+version: Cloud Service
 kt: 4541
 thumbnail: 32049.jpg
-topic: 협업
+topic: Collaboration
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: c3b4366b-cbb2-48d6-b101-78effb35130d
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '39'
-ht-degree: 5%
+source-wordcount: '36'
+ht-degree: 0%
 
 ---
-
 
 # 댓글 및 주석
 

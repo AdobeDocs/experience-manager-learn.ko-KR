@@ -1,18 +1,18 @@
 ---
 title: AEM Dynamic Media에서 내보내기 작업 트리거
-description: 'Dynamic Media에서 작업 제출 작업 작업 중에 내보내기 작업을 트리거하는 단계입니다.  '
+description: Dynamic Media에서 작업 제출 작업 작업 중에 내보내기 작업을 트리거하는 단계입니다.
 role: Developer
 level: Intermediate
-version: cloud-service
-topic: 개발
+version: Cloud Service
+topic: Development
 index: y
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 2df133dc-8c9d-445c-895b-d2fb43cbd39e
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '47'
-ht-degree: 2%
+source-wordcount: '46'
+ht-degree: 0%
 
 ---
-
 
 # AEM Dynamic Media에서 내보내기 작업 트리거
 

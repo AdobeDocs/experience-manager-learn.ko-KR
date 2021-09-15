@@ -5,19 +5,19 @@ topics: integrations, authoring, personalization, activity, offers
 audience: all
 doc-type: feature video
 activity: use
-version: cloud-service
+version: Cloud Service
 kt: 6353
 thumbnail: 6353-personalization-web-page.jpg
-topic: 통합
+topic: Integrations
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 2d201b48-c0fb-4bb4-a7d8-da9f4702e9ff
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
-
 
 # 전체 웹 페이지 경험의 개인화 {#personalization-fpe}
 
@@ -45,7 +45,7 @@ WKND 사이트는 홈 페이지를 다시 디자인했으며 현재 홈 페이�
 
    ![활동 URL](assets/ab-test-url.png)
 
-1. 새 활동을 만든 후 시각적 경험 작성기에 왼쪽에 두 개의 탭이 표시됩니다.*경험 A* 및 *경험 B*. 목록에서 경험을 선택합니다. **경험 추가** 단추를 사용하여 목록에 새 경험을 추가할 수 있습니다.
+1. 새 활동을 만든 후 시각적 경험 작성기에 왼쪽에 두 개의 탭이 표시됩니다. *경험 A* 및 *경험 B*. 목록에서 경험을 선택합니다. **경험 추가** 단추를 사용하여 목록에 새 경험을 추가할 수 있습니다.
 
    ![경험 선택 사항](assets/experience-options.png)
 
@@ -82,4 +82,3 @@ WKND 사이트는 홈 페이지를 다시 디자인했으며 현재 홈 페이�
 
 * [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
 * [Adobe Experience Cloud Debugger - Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
-

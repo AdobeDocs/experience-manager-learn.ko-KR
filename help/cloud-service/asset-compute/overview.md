@@ -1,24 +1,24 @@
 ---
 title: AEM as a Cloud Service을 위한 마이크로 서비스 확장성 asset compute
 description: 이 자습서에서는 원래 자산을 원형으로 자르어 자산 렌디션을 만들고 구성 가능한 대비와 밝기를 적용하는 간단한 Asset compute 작업자를 만드는 과정을 안내합니다. 작업자 자체는 기본적이지만 이 자습서에서는 AEM as a Cloud Service에서 사용할 사용자 정의 Asset compute 작업자를 만들고, 개발하고, 배포하기 위해 이 작업자를 사용합니다.
-feature: asset compute 마이크로서비스
+feature: Asset Compute Microservices
 topics: renditions, development
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5802
 thumbnail: KT-5802.jpg
-topic: 통합, 개발
+topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 575b12f9-b57f-41f7-bd39-56d242de4747
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '1031'
+source-wordcount: '1026'
 ht-degree: 0%
 
 ---
-
 
 # asset compute 마이크로 서비스 확장성
 

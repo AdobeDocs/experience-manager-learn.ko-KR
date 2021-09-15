@@ -1,24 +1,24 @@
 ---
 title: 외부 응용 프로그램에서 Cloud Service으로 AEM에 인증
 description: 로컬 개발 액세스 토큰 및 서비스 자격 증명을 사용하여 외부 애플리케이션이 HTTP를 통해 AEM을 Cloud Service으로 프로그래밍 방식으로 인증하고 상호 작용하는 방법을 탐색합니다.
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 topics: Development, Security
-feature: API
+feature: APIs
 activity: develop
 audience: developer
 kt: 6785
 thumbnail: 330460.jpg
-topic: 헤드리스, 통합
+topic: Headless, Integrations
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: 22829f532f7791af14919af24650b4593fe89ae8
+exl-id: 63c23f22-533d-486c-846b-fae22a4d68db
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '647'
+source-wordcount: '644'
 ht-degree: 0%
 
 ---
-
 
 # AEM as a Cloud Service에 대한 토큰 기반 인증
 
@@ -53,7 +53,7 @@ Node.js 애플리케이션의 실행 흐름은 다음과 같습니다.
    + AEM as a Cloud Service(`file`)에 액세스하는 데 필요한 자격 증명을 제공하는 파일의 로컬 경로입니다
 1. AEM에 인증하는 데 사용되는 액세스 토큰은 명령줄 매개 변수 `file`을 통해 제공된 JSON 파일에서 파생됩니다
 
-   a.비로컬 개발에 사용된 서비스 자격 증명이 JSON 파일(`file`)에 제공되면 액세스 토큰이 Adobe IMS API에서 검색됩니다
+   a. 비로컬 개발에 사용된 서비스 자격 증명이 JSON 파일(`file`)에 제공되면 액세스 토큰이 Adobe IMS API에서 검색됩니다
 1. 응용 프로그램은 액세스 토큰을 사용하여 AEM에 액세스하고 명령줄 매개 변수 `folder`에 지정된 폴더에 있는 모든 자산을 나열합니다
 1. 폴더의 각 자산에 대해 명령줄 매개 변수 `propertyName` 및 `propertyValue`에 지정된 속성 이름 및 값을 기반으로 해당 메타데이터를 업데이트합니다
 
@@ -67,7 +67,7 @@ Node.js 애플리케이션의 실행 흐름은 다음과 같습니다.
 
 ## 서비스 자격 증명
 
-서비스 자격 증명은 HTTP를 통해 AEM을 Cloud Service으로 인증하고 상호 작용할 수 있는 외부 애플리케이션 또는 시스템의 기능을 용이하게 하는 비개발 시나리오에서 사용되는 통합 자격 증명입니다. 서비스 자격 증명 자체는 인증을 위해 AEM에 전송되지 않습니다. 대신 외부 애플리케이션은 이 파일을 사용하여 Adobe IMS의 API _용_&#x200B;액세스 토큰과 교환되는 JWT를 생성하여 Cloud Service으로 AEM에 대한 HTTP 요청을 인증하는 데 사용할 수 있습니다.
+서비스 자격 증명은 HTTP를 통해 AEM을 Cloud Service으로 인증하고 상호 작용할 수 있는 외부 애플리케이션이나 시스템의 기능을 용이하게 하는 비개발 시나리오(가장 확실한 프로덕션)에서 사용되는 통합 자격 증명입니다. 서비스 자격 증명 자체는 인증을 위해 AEM에 전송되지 않습니다. 대신 외부 애플리케이션은 이 파일을 사용하여 Adobe IMS의 API _용_&#x200B;액세스 토큰과 교환되는 JWT를 생성하여 Cloud Service으로 AEM에 대한 HTTP 요청을 인증하는 데 사용할 수 있습니다.
 
 + [서비스 자격 증명을 사용하는 방법](./service-credentials.md)
 

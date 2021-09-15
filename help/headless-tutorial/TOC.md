@@ -2,11 +2,11 @@
 user-guide-title: AEM 헤드리스 시작하기
 user-guide-description: AEM Headless를 사용하여 콘텐츠를 작성하고 노출하는 방법을 소개하는 종단간 튜토리얼입니다.
 breadcrumb-title: AEM 헤드리스 튜토리얼
-version: cloud-service
+version: Cloud Service
 feature-set: Experience Manager, Experience Manager Assets, Experience Manager Sites
 kt: 2963
 index: y
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 19%

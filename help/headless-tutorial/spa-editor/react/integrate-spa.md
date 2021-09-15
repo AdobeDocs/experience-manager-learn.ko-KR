@@ -3,19 +3,19 @@ title: SPA 통합 | AEM SPA 편집기 및 반응 시작하기
 description: React에 작성된 SPA(단일 페이지 애플리케이션)의 소스 코드를 Adobe Experience Manager(AEM) 프로젝트와 통합하는 방법을 이해합니다. 웹 팩 개발 서버와 같은 최신 프런트 엔드 도구를 사용하여 AEM JSON 모델 API에 대해 SPA을 빠르게 개발하는 방법을 알아봅니다.
 sub-product: sites
 feature: SPA Editor
-version: cloud-service
+version: Cloud Service
 kt: 4853
 thumbnail: 4853-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+exl-id: 31416399-6a4e-47d1-8ed8-be842a01a727
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
 source-wordcount: '1839'
 ht-degree: 0%
 
 ---
-
 
 # SPA 통합 {#developer-workflow}
 

@@ -2,20 +2,20 @@
 title: 메타데이터 프로필
 description: 메타데이터 프로필을 사용하면 자산 폴더 내의 자산에 기본 메타데이터를 자동으로 적용할 수 있으므로 AEM 사용자의 메타데이터 관리 부담이 줄어들고 메타데이터 일관성이 향상됩니다.
 sub-product: assets
-feature: 메타데이터
-version: cloud-service
+feature: Metadata
+version: Cloud Service
 kt: 4984
 thumbnail: 33974.jpg
-topic: 컨텐츠 관리
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 1e35da82-08e7-44c2-aec6-79d8ea74d556
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '66'
-ht-degree: 10%
+source-wordcount: '62'
+ht-degree: 6%
 
 ---
-
 
 # 메타데이터 프로필
 

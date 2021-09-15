@@ -1,24 +1,24 @@
 ---
 title: AEM 및 Adobe Target 개요
 description: Adobe Experience Manager as a Cloud Service 및 Adobe Target을 사용하여 개인화된 경험을 만들고 전달하는 방법을 알아봅니다.
-feature: 경험 조각, 핵심 구성 요소, Adobe 클라이언트 데이터 레이어
+feature: Experience Fragments, Core Components, Adobe Client Data Layer
 topics: integrations, personalization, administration, development
 audience: all
 doc-type: feature video
 activity: use
-version: cloud-service
+version: Cloud Service
 kt: 6043
 thumbnail: 41241.jpg
-topic: 통합
+topic: Integrations
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 2bc6cd90-7b23-4dde-bb07-bca0de9fa509
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '215'
 ht-degree: 5%
 
 ---
-
 
 # AEM 및 Adobe Target
 
@@ -47,5 +47,3 @@ Adobe Experience Manager(AEM) 및 Adobe Target은 경쟁업체로 잘못 간주�
    1. [AEM 웹 사이트에 Adobe Target 추가](./add-target-launch-extension.md)
    1. [Launch에서 Adobe Target 호출 트리거](./load-and-fire-target.md)
    1. [전체 웹 페이지 경험 개인화](./personalization-web-page.md)
-
-

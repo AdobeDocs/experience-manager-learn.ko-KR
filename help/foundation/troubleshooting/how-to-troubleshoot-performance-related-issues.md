@@ -4,17 +4,17 @@ description: 성과 관련 문제를 조사하는 절차
 type: Troubleshooting
 role: Admin
 level: Intermediate
-version: 6.5, cloud-service
-feature: 개발자 도구
-topic: 관리
+version: 6.5, Cloud Service
+feature: Developer Tools
+topic: Administration
 index: y
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 6cb60f32-d366-4677-8745-9da7176b782f
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '39'
-ht-degree: 7%
+source-wordcount: '36'
+ht-degree: 0%
 
 ---
-
 
 # AEM의 성능 관련 문제를 해결하는 방법
 

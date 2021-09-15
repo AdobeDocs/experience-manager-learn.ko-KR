@@ -1,21 +1,21 @@
 ---
 title: 프로젝트 만들기 | AEM SPA 편집기 및 반응 시작하기
 description: AEM SPA 편집기와 통합된 반응형 응용 프로그램의 시작점으로 Adobe Experience Manager(AEM) Maven 프로젝트를 생성하는 방법을 알아봅니다.
-sub-product: 사이트
-feature: SPA 편집기, AEM 프로젝트 원형
-version: cloud-service
+sub-product: sites
+feature: SPA Editor, AEM Project Archetype
+version: Cloud Service
 kt: 413
 thumbnail: 413-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: 24d70ebaa6a63cfd4a73f43188f25b375dc702ec
+exl-id: 57c8fc16-fed5-4af4-b98b-5c3f0350b240
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '1096'
+source-wordcount: '1089'
 ht-degree: 1%
 
 ---
-
 
 # 프로젝트 만들기 {#spa-editor-project}
 
@@ -26,7 +26,7 @@ AEM SPA 편집기와 통합된 반응형 응용 프로그램의 시작점으로 
 1. AEM 프로젝트 원형 을 사용하여 SPA 편집기 지원 프로젝트를 생성합니다.
 2. 시작 프로젝트를 AEM의 로컬 인스턴스에 배포합니다.
 
-## {#what-build} 빌드할 내용
+## 빌드할 내용 {#what-build}
 
 이 장에서는 [AEM Project Archetype](https://github.com/adobe/aem-project-archetype)을 기반으로 새 AEM 프로젝트가 생성됩니다. AEM 프로젝트는 React SPA에 대한 매우 간단한 시작점으로 부트스트릿이 됩니다.
 
@@ -133,7 +133,7 @@ AEM SPA 편집기와 통합된 반응형 응용 프로그램의 시작점으로 
 
    Maven 프로필 `autoInstallSinglePackage`은 프로젝트의 개별 모듈을 컴파일하고 단일 패키지를 AEM 인스턴스에 배포합니다. 기본적으로 이 패키지는 **4502** 포트에서 로컬로 실행되고 `admin:admin` 자격 증명과 함께 AEM 인스턴스에 배포됩니다.
 
-1. 로컬 AEM 인스턴스에서 **패키지 관리자**&#x200B;로 이동합니다.[http://localhost:4502/crx/packmgr/index.jsp](http://localhost:4502/crx/packmgr/index.jsp)
+1. 로컬 AEM 인스턴스에서 **패키지 관리자**&#x200B;로 이동합니다. [http://localhost:4502/crx/packmgr/index.jsp](http://localhost:4502/crx/packmgr/index.jsp)
 
 1. `aem-guides-wknd-spa.react` 접두사가 있는 여러 패키지가 표시됩니다.
 
@@ -147,7 +147,7 @@ AEM SPA 편집기와 통합된 반응형 응용 프로그램의 시작점으로 
 
 그런 다음 원형에서 생성된 시작 SPA을 열고 일부 컨텐츠를 업데이트합니다.
 
-1. **사이트** 콘솔로 이동합니다.[http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content)
+1. **사이트** 콘솔로 이동합니다. [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content)
 
    WKND SPA에는 국가, 언어 및 홈 페이지가 포함된 기본 사이트 구조가 포함되어 있습니다. 이 계층 구조는 `language_country` 및 `isSingleCountryWebsite`에 대한 원형 유형의 기본값을 기반으로 합니다. 이러한 값은 프로젝트를 생성할 때 [사용 가능한 속성](https://github.com/adobe/aem-project-archetype#available-properties)을 업데이트하여 덮어쓸 수 있습니다.
 
@@ -171,7 +171,7 @@ AEM SPA 편집기와 통합된 반응형 응용 프로그램의 시작점으로 
 
    ![게시됨으로 보기 단추](./assets/create-project/view-as-published.png)
 
-   이렇게 하면 쿼리 매개 변수 `?wcmmode=disabled`을 사용하여 새 탭이 열리고 AEM 편집기가 효과적으로 꺼집니다.[http://localhost:4502/content/wknd-spa-react/us/en/home.html?wcmmode=disabled](http://localhost:4502/content/wknd-spa-react/us/en/home.html?wcmmode=disabled)
+   이렇게 하면 쿼리 매개 변수 `?wcmmode=disabled`을 사용하여 새 탭이 열리고 AEM 편집기가 효과적으로 꺼집니다. [http://localhost:4502/content/wknd-spa-react/us/en/home.html?wcmmode=disabled](http://localhost:4502/content/wknd-spa-react/us/en/home.html?wcmmode=disabled)
 
 2. 페이지의 소스를 보고 텍스트 콘텐츠 **[!DNL Hello World]** 또는 다른 콘텐츠를 찾을 수 없습니다. 대신 다음과 같은 HTML이 표시됩니다.
 
@@ -189,7 +189,7 @@ AEM SPA 편집기와 통합된 반응형 응용 프로그램의 시작점으로 
 
    그러나 *콘텐츠는 어디에서 오는 것입니까?*
 
-3. 탭으로 돌아갑니다.[http://localhost:4502/content/wknd-spa-react/us/en/home.html?wcmmode=disabled](http://localhost:4502/content/wknd-spa-react/us/en/home.html?wcmmode=disabled)
+3. 탭으로 돌아갑니다. [http://localhost:4502/content/wknd-spa-react/us/en/home.html?wcmmode=disabled](http://localhost:4502/content/wknd-spa-react/us/en/home.html?wcmmode=disabled)
 4. 새로 고침 중에 브라우저의 개발자 도구를 열고 페이지의 네트워크 트래픽을 검사합니다. **XHR** 요청을 봅니다.
 
    ![XHR 요청](./assets/create-project/xhr-requests.png)

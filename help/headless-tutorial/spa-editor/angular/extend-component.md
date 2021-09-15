@@ -1,11 +1,11 @@
 ---
 title: 구성 요소 확장 | AEM SPA 편집기 및 Angular 시작하기
 description: AEM SPA 편집기에서 사용할 기존 코어 구성 요소를 확장하는 방법을 알아봅니다. 기존 구성 요소에 속성 및 컨텐츠를 추가하는 방법을 이해하는 것은 AEM SPA 편집기 구현의 기능을 확장하는 강력한 방법입니다. Sling Model 및 Sling Resource Merger 기능을 확장하는 위임 패턴을 사용하는 방법을 알아봅니다.
-sub-product: 사이트
-feature: SPA 편집기, 핵심 구성 요소
+sub-product: sites
+feature: SPA Editor, Core Components
 doc-type: tutorial
 topics: development
-version: cloud-service
+version: Cloud Service
 activity: develop
 audience: developer
 kt: 5871
@@ -13,13 +13,13 @@ thumbnail: 5871-spa-angular.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 0265d3df-3de8-4a25-9611-ddf73d725f6e
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '1967'
-ht-degree: 0%
+source-wordcount: '1961'
+ht-degree: 1%
 
 ---
-
 
 # 코어 구성 요소 확장 {#extend-component}
 

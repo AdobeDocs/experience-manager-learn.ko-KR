@@ -1,24 +1,24 @@
 ---
 title: asset compute 작업자와 AEM 처리 프로필 통합
 description: AEM as a Cloud Service은 AEM Assets 처리 프로필을 통해 Adobe I/O Runtime에 배포된 Asset compute 작업자와 통합됩니다. 처리 프로필은 사용자 정의 작업자를 사용하여 특정 자산을 처리하고 작업자가 생성한 파일을 자산 변환으로 저장하도록 작성자 서비스에 구성됩니다.
-feature: asset compute 마이크로서비스
+feature: Asset Compute Microservices
 topics: renditions, development
-version: cloud-service
+version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
 kt: 6287
 thumbnail: KT-6287.jpg
-topic: 통합, 개발
+topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 1b398c8c-6b4e-4046-b61e-b44c45f973ef
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '635'
-ht-degree: 1%
+source-wordcount: '630'
+ht-degree: 2%
 
 ---
-
 
 # AEM 처리 프로필과 통합
 
@@ -85,7 +85,7 @@ asset compute 작업자가 AEM에서 Cloud Service으로 사용자 정의 렌디
 
 + [aem-guides-wknd-asset-compute](https://github.com/adobe/aem-guides-wknd-asset-compute)
 
-_Github 포함 은 프로젝트의 최종 상태이며, 작업자 및 테스트 사례로 완전히 채워지지만 자격 증명(예: )은 포함하지 않습니다. `.env`,  `.config.json` 또는  `.aio`._
+_Github 포함 은 프로젝트의 최종 상태이며, 작업자 및 테스트 사례로 완전히 채워지지만 자격 증명(예: )은 포함하지 않습니다. `.env`, `.config.json` 또는 `.aio`._
 
 ## 문제 해결
 

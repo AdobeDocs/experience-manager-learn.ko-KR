@@ -1,24 +1,24 @@
 ---
 title: 경험 조각 오퍼를 사용하여 Target 활동 생성
 description: AEM 경험 조각 오퍼를 사용하여 Adobe Target 활동을 만들고 테스트하는 방법을 알아봅니다.
-feature: 경험 구성요소
+feature: Experience Fragments
 topics: integrations, authoring, personalization, activity, offers
 audience: all
 doc-type: feature video
 activity: use
-version: cloud-service
+version: Cloud Service
 kt: 6351
 thumbnail: 41246.jpg
-topic: 통합
+topic: Integrations
 role: User
 level: Intermediate
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: f581a4fb-1182-44bb-8c46-4250cf37b55f
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '121'
-ht-degree: 9%
+source-wordcount: '118'
+ht-degree: 6%
 
 ---
-
 
 # 경험 조각 오퍼를 사용하여 Adobe Target 활동 생성 {#target-activity-experience-fragment}
 

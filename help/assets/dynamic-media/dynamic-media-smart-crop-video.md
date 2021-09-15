@@ -2,20 +2,20 @@
 title: 비디오용 Dynamic Media 스마트 자르기 사용
 description: Dynamic Media Smart Crop for video는 Adobe Sensei을 사용하여 비디오의 관심 영역을 지능적으로 추적하므로 모든 화면 크기에서 비디오가 가장 잘 보이도록 합니다.
 sub-product: dynamic-media
-feature: 스마트 자르기, 비디오 프로필, 뷰어 사전 설정
-version: cloud-service
+feature: Smart Crop, Video Profiles, Viewer Presets
+version: Cloud Service
 kt: 5977
 thumbnail: 37958.jpg
-topic: 컨텐츠 관리
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 15eb725c-d6f6-4ab9-8d39-dc05fbba1ff3
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '109'
-ht-degree: 1%
+source-wordcount: '100'
+ht-degree: 0%
 
 ---
-
 
 # 비디오용 Dynamic Media 스마트 자르기 사용 {#using-smart-crop-video}
 
@@ -26,4 +26,3 @@ Dynamic Media Smart Crop for video는 Adobe Sensei을 사용하여 비디오의 
 >[!NOTE]
 >
 >위의 비디오에서는 AEM 서비스가 Dynamic Media S7 모드에서 실행 중이라고 가정합니다. [Dynamic Media을 사용하여 AEM을 설정하는 방법은 여기에서 확인할 수 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html)
-

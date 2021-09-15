@@ -5,15 +5,16 @@ solution: Experience Manager Forms
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: cloud-service
-feature: 적응형 양식
-topic: 개발
+version: Cloud Service
+feature: Adaptive Forms
+topic: Development
 kt: 7428
 thumbnail: 332437.jpg
-source-git-commit: cb4f678be79ad39110cc199b8c66349f311a431d
+exl-id: a55773a5-0486-413f-ada6-bb589315f0b1
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '63'
-ht-degree: 4%
+source-wordcount: '60'
+ht-degree: 0%
 
 ---
 
@@ -24,4 +25,3 @@ AEM의 클라우드 서비스 구성을 사용하여 AEM과 다른 클라우드 
 다음 비디오에서는 AEM을 Adobe Sign과 통합하기 위해 클라우드 서비스 구성을 만드는 데 필요한 단계를 설명합니다
 
 >[!VIDEO](https://video.tv.adobe.com/v/332437?quality=12&learn=on)
-
