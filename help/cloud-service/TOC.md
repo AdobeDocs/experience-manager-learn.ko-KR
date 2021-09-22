@@ -4,10 +4,10 @@ user-guide-description: Adobe Experience Manager as a Cloud Service를 위한 �
 breadcrumb-title: AEM as a Cloud Service 튜토리얼
 sub-product: cloud-service
 team: TM
-source-git-commit: 4c9d836881ad7cccd31c55fa5eddc24dff1200cd
+source-git-commit: f22a37f80a9c9698718e1c75576b7ca705e658fc
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 21%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -50,7 +50,7 @@ ht-degree: 21%
    + 개발 기본 사항{#basics}
       + [AEM SDK](./developing/basics/aem-sdk.md)
       + [로컬 개발 환경](./developing/basics/local-development-environment.md)
-      + [AEM 프로젝트 전형](./developing/basics/aem-project-archetype.md)
+      + [AEM Project Archetype](./developing/basics/aem-project-archetype.md)
       + [AEM 프로젝트 구조](./developing/basics/project-structure.md)
       + [가변 콘텐츠와 가변 콘텐츠 비교](./developing/basics/mutable-immutable.md)
       + [저장소 구조 패키지](./developing/basics/repository-structure-package.md)
@@ -89,6 +89,24 @@ ht-degree: 21%
 + 마이그레이션 {#migration}
    + [컨텐츠 전송 도구](./migration/content-transfer-tool.md)
    + [자산의 벌크 가져오기](./migration/bulk-import.md)
+
+   + AEM as a Cloud Service로 이동 {#moving-to-aem-as-a-cloud-service}
+      + [소개](./migration/moving-to-aem-as-a-cloud-service/introduction.md)
+      + [BPA 및 CAM](./migration/moving-to-aem-as-a-cloud-service/bpa-and-cam.md)
+      + [AEM 현대화 도구](./migration/moving-to-aem-as-a-cloud-service/aem-modernization-tools.md)
+      + [저장소 현대화](./migration/moving-to-aem-as-a-cloud-service/repository-modernization.md)
+      + [온보딩](./migration/moving-to-aem-as-a-cloud-service/onboarding.md)
+      + [Cloud Manager](./migration/moving-to-aem-as-a-cloud-service/cloud-manager.md)
+      + [Dispatcher](./migration/moving-to-aem-as-a-cloud-service/dispatcher.md)
+      + 컨텐츠 마이그레이션 {#content-migration}
+         + [대량 가져오기 서비스](./migration/moving-to-aem-as-a-cloud-service/content-migration/bulk-import-service.md)
+         + [컨텐츠 전송 도구](./migration/moving-to-aem-as-a-cloud-service/content-migration/content-transfer-tool.md)
+      + [검색 및 색인 지정](./migration/moving-to-aem-as-a-cloud-service/search-and-indexing.md)
+      + [asset compute 마이크로서비스](./migration/moving-to-aem-as-a-cloud-service/asset-compute-microservices.md)
+      + AEM Forms as a Cloud Service {#aem-forms}
+         + [소개](./migration/moving-to-aem-as-a-cloud-service/aem-forms/introduction.md)
+         + [디지털 등록](./migration/moving-to-aem-as-a-cloud-service/aem-forms/digital-enrollment.md)
+         + [통신](./migration/moving-to-aem-as-a-cloud-service/aem-forms/communications.md)
    + Cloud Acceleration Manager {#cloud-acceleration-manager}
       + [소개](./migration/cloud-acceleration-manager/introduction.md)
       + [준비 및 모범 사례 분석기](./migration/cloud-acceleration-manager/readiness-and-best-practice-analyzer.md)
