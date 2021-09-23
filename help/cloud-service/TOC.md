@@ -4,10 +4,10 @@ user-guide-description: Adobe Experience Manager as a Cloud Service를 위한 �
 breadcrumb-title: AEM as a Cloud Service 튜토리얼
 sub-product: cloud-service
 team: TM
-source-git-commit: f22a37f80a9c9698718e1c75576b7ca705e658fc
+source-git-commit: 598d00578e5179f76b6f309c5c14dc7b1634f051
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '561'
+ht-degree: 22%
 
 ---
 
@@ -92,17 +92,18 @@ ht-degree: 0%
 
    + AEM as a Cloud Service로 이동 {#moving-to-aem-as-a-cloud-service}
       + [소개](./migration/moving-to-aem-as-a-cloud-service/introduction.md)
+      + [온보딩](./migration/moving-to-aem-as-a-cloud-service/onboarding.md)
+      + [Cloud Manager](./migration/moving-to-aem-as-a-cloud-service/cloud-manager.md)
       + [BPA 및 CAM](./migration/moving-to-aem-as-a-cloud-service/bpa-and-cam.md)
       + [AEM 현대화 도구](./migration/moving-to-aem-as-a-cloud-service/aem-modernization-tools.md)
       + [저장소 현대화](./migration/moving-to-aem-as-a-cloud-service/repository-modernization.md)
-      + [온보딩](./migration/moving-to-aem-as-a-cloud-service/onboarding.md)
-      + [Cloud Manager](./migration/moving-to-aem-as-a-cloud-service/cloud-manager.md)
+      + [asset compute 마이크로서비스](./migration/moving-to-aem-as-a-cloud-service/asset-compute-microservices.md)
       + [Dispatcher](./migration/moving-to-aem-as-a-cloud-service/dispatcher.md)
+      + [검색 및 색인 지정](./migration/moving-to-aem-as-a-cloud-service/search-and-indexing.md)
       + 컨텐츠 마이그레이션 {#content-migration}
          + [대량 가져오기 서비스](./migration/moving-to-aem-as-a-cloud-service/content-migration/bulk-import-service.md)
          + [컨텐츠 전송 도구](./migration/moving-to-aem-as-a-cloud-service/content-migration/content-transfer-tool.md)
-      + [검색 및 색인 지정](./migration/moving-to-aem-as-a-cloud-service/search-and-indexing.md)
-      + [asset compute 마이크로서비스](./migration/moving-to-aem-as-a-cloud-service/asset-compute-microservices.md)
+      + [문제 해결](./migration/moving-to-aem-as-a-cloud-service/troubleshooting.md)
       + AEM Forms as a Cloud Service {#aem-forms}
          + [소개](./migration/moving-to-aem-as-a-cloud-service/aem-forms/introduction.md)
          + [디지털 등록](./migration/moving-to-aem-as-a-cloud-service/aem-forms/digital-enrollment.md)
