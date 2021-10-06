@@ -14,9 +14,9 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 0265d3df-3de8-4a25-9611-ddf73d725f6e
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: 5452ab85523fc10d0aaa55e95d42c37ec33fd2ed
 workflow-type: tm+mt
-source-wordcount: '1961'
+source-wordcount: '1957'
 ht-degree: 1%
 
 ---
@@ -296,7 +296,7 @@ AEM SPA 편집기에서 사용할 기존 코어 구성 요소를 확장하는 �
    }
    ```
 
-   Sling 모델이 초기화되면 `@PostConstruct initModel()`은 항상 호출되므로 모델의 다른 메서드에서 사용할 수 있는 개체를 초기화하는 것이 좋습니다. `pageManager`은 `@ScriptVariable` 주석을 통해 Sling 모델에서 사용할 수 있는 [Java 지원 전역 개체](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/global-objects.html#java-backed-objects) 중 하나입니다. [getPage](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/PageManager.html#getPage-java.lang.String-) 메서드는 경로를 가져와 AEM [Page](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/Page.html) 개체를 반환하거나, 경로가 올바른 페이지를 가리키지 않으면 null을 반환합니다.
+   Sling 모델이 초기화되면 `@PostConstruct initModel()`은 항상 호출되므로 모델의 다른 메서드에서 사용할 수 있는 개체를 초기화하는 것이 좋습니다. `pageManager`은 `@ScriptVariable` 주석을 통해 Sling 모델에서 사용할 수 있는 [Java 지원 전역 개체](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/global-objects.html#java-backed-objects) 중 하나입니다. [getPage()](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/PageManager.html#getPage-java.lang.String-) 메서드는 경로를 가져와 AEM [Page](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/Page.html) 개체를 반환하거나, 경로가 올바른 페이지를 가리키지 않으면 null을 반환합니다.
 
    이렇게 하면 `cardPage` 변수가 초기화됩니다. 이 변수는 기본적으로 연결된 페이지에 대한 데이터를 반환하기 위해 다른 새로운 방법으로 사용됩니다.
 

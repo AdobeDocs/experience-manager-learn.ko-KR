@@ -4,10 +4,10 @@ user-guide-description: Adobe Experience Manager as a Cloud Service를 위한 �
 breadcrumb-title: AEM as a Cloud Service 튜토리얼
 sub-product: cloud-service
 team: TM
-source-git-commit: 598d00578e5179f76b6f309c5c14dc7b1634f051
+source-git-commit: 5452ab85523fc10d0aaa55e95d42c37ec33fd2ed
 workflow-type: tm+mt
-source-wordcount: '561'
-ht-degree: 22%
+source-wordcount: '564'
+ht-degree: 23%
 
 ---
 
@@ -64,6 +64,8 @@ ht-degree: 22%
       + [OSGi 구성 요소 라이프사이클](./developing/osgi-services/lifecycle.md)
       + [OSGi 구성 기본 사항](./developing/osgi-services/configurations.md)
       + [OCD를 사용한 OSGi 구성](./developing/osgi-services/configurations-ocd.md)
+   + 고급{#advanced}
+      + [서비스 사용자](./developing/advanced/service-users.md)
    + [AEM SDK API JavaDocs](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html)
 + AEM{#debugging} 디버깅
    + AEM SDK{#debugging-aem-sdk} 디버깅
@@ -73,7 +75,7 @@ ht-degree: 22%
       + [OSGi 웹 콘솔](./debugging/aem-sdk-local-quickstart/osgi-web-consoles.md)
       + [Dispatcher 도구](./debugging/aem-sdk-local-quickstart/dispatcher-tools.md)
       + [기타 도구](./debugging/aem-sdk-local-quickstart/other-tools.md)
-   + AEM을 Cloud Service{#debugging-aem-as-a-cloud-service}으로 디버깅
+   + AEM as a Cloud Service{#debugging-aem-as-a-cloud-service} 디버깅
       + [개요](./debugging/cloud-service/overview.md)
       + [로그](./debugging/cloud-service/logs.md)
       + [작성 및 배포](./debugging/cloud-service/build-and-deployment.md)
@@ -81,7 +83,7 @@ ht-degree: 22%
       + [CRXDE Lite](./debugging/cloud-service/crxde-lite.md)
 + AEM{#accessing}에 액세스
    + [개요](./accessing/overview.md)
-   + [IMS 사용자 Adobe](./accessing/adobe-ims-users.md)
+   + [Adobe IMS 사용자](./accessing/adobe-ims-users.md)
    + [Adobe IMS 사용자 그룹](./accessing/adobe-ims-user-groups.md)
    + [Adobe IMS 제품 프로필](./accessing/adobe-ims-product-profiles.md)
    + [AEM 사용자, 그룹 및 권한](./accessing/aem-users-groups-and-permissions.md)
