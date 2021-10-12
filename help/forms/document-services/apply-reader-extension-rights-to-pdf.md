@@ -1,18 +1,18 @@
 ---
-title: 사용 권한을 사용하여 XDP를 PDF로 렌더링
+title: 업로드된 pdf에 사용 권한 적용
 description: pdf에 사용 권한 적용
 version: 6.4,6.5
-feature: Reader 확장
-topic: 개발
+feature: Reader Extensions
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: ea433667-81db-40f7-870d-b16630128871
+source-git-commit: f1afccdad8d819604c510421204f59e7b3dc68e4
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '371'
 ht-degree: 0%
 
 ---
-
 
 # Reader 확장 적용
 
@@ -22,12 +22,11 @@ Reader 확장을 사용하면 PDF 문서에 대한 사용 권한을 조작할 �
 이 사용 사례를 수행하려면 다음을 수행해야 합니다.
 * [사용자에게 Reader 확장 ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) 인증서를  `fd-service` 추가합니다.
 
-* 문서에 사용 권한을 적용할 사용자 지정 OSGi 서비스를 만듭니다. 이를 수행할 코드는 다음과 같습니다
+## 사용자 지정 OSGi 서비스 만들기
+
+문서에 사용 권한을 적용할 사용자 지정 OSGi 서비스를 만듭니다. 이를 수행할 코드는 다음과 같습니다
 
 ```java
-import org.osgi.service.component.annotations.Component;
-import org.osgi.service.component.annotations.Reference;
-
 import com.adobe.aemfd.docmanager.Document;
 import com.adobe.fd.docassurance.client.api.DocAssuranceService;
 import com.adobe.fd.docassurance.client.api.ReaderExtensionOptions;
@@ -36,38 +35,47 @@ import com.adobe.fd.readerextensions.client.UsageRights;
 import com.adobe.fd.signatures.pdf.inputs.UnlockOptions;
 import com.aemforms.ares.core.ReaderExtendPDF;
 import com.mergeandfuse.getserviceuserresolver.GetResolver;
-@Component(service=ApplyUsageRights.class,immediate = true)
+@Component(service = ApplyUsageRights.class)
 public class ApplyUsageRights implements ReaderExtendPDF {
-@Reference
-DocAssuranceService docAssuranceService;
-@Reference
-GetResolver getResolver;
-@Override
-public Document applyUsageRights(Document pdfDocument,UsageRights usageRights) {
-      ReaderExtensionsOptionSpec reOptionsSpec = new ReaderExtensionsOptionSpec(usageRights, "Sample ARES");
-      UnlockOptions unlockOptions = null;
-      ReaderExtensionOptions reOptions = ReaderExtensionOptions.getInstance();
-      reOptions.setCredentialAlias("ares");
-      reOptions.setResourceResolver(getResolver.getFormsServiceResolver());
-      reOptions.setReOptions(reOptionsSpec);
-    try {
-          return docAssuranceService.secureDocument(pdfDocument, null, null, reOptions,
-          unlockOptions);
-        } catch (Exception e) {
-            e.printStackTrace();
+        @Reference
+        DocAssuranceService docAssuranceService;
+        @Reference
+        GetResolver getResolver;
+        Logger logger = LoggerFactory.getLogger(ApplyUsageRights.class);
+        @Override
+        public Document applyUsageRights(Document pdfDocument, UsageRights usageRights) {
+
+                ReaderExtensionsOptionSpec reOptionsSpec = new ReaderExtensionsOptionSpec(usageRights, "Sample ARES");
+                UnlockOptions unlockOptions = null;
+                ReaderExtensionOptions reOptions = ReaderExtensionOptions.getInstance();
+                reOptions.setCredentialAlias("ares");
+
+                reOptions.setResourceResolver(getResolver.getFormsServiceResolver());
+
+                reOptions.setReOptions(reOptionsSpec);
+                System.out.println("Applying Usage Rights");
+
+                try {
+                        Document readerExtended = docAssuranceService.secureDocument(pdfDocument, null, null, reOptions,
+                                unlockOptions);
+                        reOptions.getResourceResolver().close();
+                        return readerExtended;
+                } catch (Exception e) {
+                        // TODO Auto-generated catch block
+                        e.printStackTrace();
+                }
+                return null;
         }
-    return null;
-}
 
 }
 ```
 
-## PDF를 스트리밍할 서블릿 만들기 {#create-servlet-to-stream-the-pdf}
+## Reader 확장 PDF을 스트리밍할 서블릿 만들기
 
-다음 단계는 Reader 확장 PDF를 사용자에게 반환할 POST 방법이 있는 서블릿을 만드는 것입니다. 이 경우 사용자에게 PDF를 파일 시스템에 저장하라는 메시지가 표시됩니다. PDF가 동적 PDF로 렌더링되고 브라우저와 함께 제공되는 pdf 뷰어가 동적 pdf를 처리하지 않기 때문입니다.
+다음 단계는 POST 메서드를 사용하여 서블릿을 만들어 사용자에게 Reader 확장 PDF을 반환하는 것입니다. 이 경우 PDF을 파일 시스템에 저장하라는 메시지가 표시됩니다. 이것은 PDF이 동적 PDF으로 렌더링되고 브라우저와 함께 제공되는 pdf 뷰어가 동적 pdf를 처리하지 않기 때문입니다.
 
-다음은 서블릿에 대한 코드입니다. 서블릿은 적응형 양식의 **customersubmit** 작업에서 호출됩니다.
-서블릿은 UsageRights 개체를 만들고 적응형 양식에 사용자가 입력한 값을 기반으로 속성을 설정합니다. 그러면 서블릿은 이 목적으로 만들어진 서비스의 **applyUsageRights** 메서드를 호출합니다.
+다음은 서블릿에 대한 코드입니다. 서블릿은 적응형 양식의 사용자 지정 제출 작업에서 호출됩니다.
+서블릿은 UsageRights 개체를 만들고 적응형 양식에 사용자가 입력한 값을 기반으로 속성을 설정합니다. 그러면 서블릿은 이 목적으로 만들어진 서비스의 applyUsageRights 메서드를 호출합니다.
 
 ```java
 package com.aemforms.ares.core.servlets;
@@ -78,7 +86,6 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.StringReader;
 import java.util.Map;
-
 import javax.servlet.Servlet;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -106,6 +113,7 @@ import com.aemforms.ares.core.impl.ApplyUsageRights;
 
 public class GetReaderExtendedPDF extends SlingAllMethodsServlet {
 
+        private static final long serialVersionUID = -883724052368090823 L;
         @Reference
         ApplyUsageRights applyRights;
         Logger logger = LoggerFactory.getLogger(GetReaderExtendedPDF.class);
@@ -147,22 +155,25 @@ public class GetReaderExtendedPDF extends SlingAllMethodsServlet {
                 for (Map.Entry < String, RequestParameter[] > pairs: requestParameterMap.entrySet()) {
                         final org.apache.sling.api.request.RequestParameter[] pArr = pairs.getValue();
                         final org.apache.sling.api.request.RequestParameter param = pArr[0];
+
                         if (!param.isFormField()) {
                                 try {
-                                        System.out.println("Got attachment!!!!" + param.getFileName());
+                                        System.out.println("Got form attachment!!!!" + param.getFileName());
                                         logger.debug("Got attachment!!!!" + param.getFileName());
                                         InputStream is = param.getInputStream();
                                         Document documentToReaderExtend = new Document(is);
                                         documentToReaderExtend = applyRights.applyUsageRights(documentToReaderExtend, usageRights);
+                                        if (logger.isDebugEnabled()) {
+                                                documentToReaderExtend.copyToFile(new File(param.getFileName().split("/")[1]));
+                                        }
 
-                                        documentToReaderExtend.copyToFile(new File(param.getFileName().split("/")[1]));
-                                        documentToReaderExtend.close();
                                         InputStream fileInputStream = documentToReaderExtend.getInputStream();
-                                        documentToReaderExtend.close();
+
                                         response.setContentType("application/pdf");
-                                        response.addHeader("Content-Disposition", "attachment; filename=AemFormsRocks.pdf");
+                                        response.addHeader("Content-Disposition", "attachment; filename=" + param.getFileName().split("/")[1]);
                                         response.setContentLength((int) fileInputStream.available());
                                         OutputStream responseOutputStream = response.getOutputStream();
+                                        documentToReaderExtend.close();
                                         int bytes;
                                         while ((bytes = fileInputStream.read()) != -1) {
                                                 responseOutputStream.write(bytes);
@@ -187,9 +198,7 @@ public class GetReaderExtendedPDF extends SlingAllMethodsServlet {
 1. [ares.core-ares 번들을 다운로드하여 설치합니다](assets/ares.ares.core-ares.jar). 사용 권한을 적용하고 pdf를 다시 스트리밍할 사용자 지정 서비스 및 서블릿이 있습니다
 1. [클라이언트 라이브러리 및 사용자 지정 제출 가져오기](assets/applyaresdemo.zip)
 1. [적응형 양식 가져오기](assets/applyaresform.zip)
-1. &quot;fd-service&quot; 사용자에게 Reader 확장 인증서 추가
+1. &quot;fd-service&quot; 사용자에게 Reader 확장 인증서를 추가합니다. 별칭이 &quot;ares&quot;인지 확인합니다.
 1. [적응형 양식 미리 보기](http://localhost:4502/content/dam/formsanddocuments/applyreaderextensions/jcr:content?wcmmode=disabled)
 1. 적절한 권한을 선택하고 PDF 파일을 업로드합니다
-1. 제출 을 클릭하여 Reader 확장 PDF를 가져옵니다
-
-
+1. 제출 을 클릭하여 Reader 확장 PDF을 가져옵니다

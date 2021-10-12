@@ -1,23 +1,25 @@
 ---
 title: AEM Forms에서 서비스 사용자를 사용한 개발
 description: 이 문서에서는 AEM Forms에서 서비스 사용자를 만드는 프로세스를 안내합니다
-feature: 적응형 양식
-topic: 개발
+feature: Adaptive Forms
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 5fa3d52a-6a71-45c4-9b1a-0e6686dd29bc
+source-git-commit: f1afccdad8d819604c510421204f59e7b3dc68e4
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '445'
 ht-degree: 1%
 
 ---
-
 
 # AEM Forms에서 서비스 사용자를 사용한 개발
 
 이 문서에서는 AEM Forms에서 서비스 사용자를 만드는 프로세스를 안내합니다
 
 이전 버전의 Adobe Experience Manager(AEM)에서는 저장소에 액세스해야 하는 백엔드 처리에 관리 리소스 확인자가 사용되었습니다. 관리 리소스 확인자 사용은 AEM 6.3에서 더 이상 사용되지 않습니다. 대신 저장소에서 특정 권한이 있는 시스템 사용자가 사용됩니다.
+
+AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/advanced/service-users.html)에서 서비스 사용자를 만들고 사용하는 세부 사항에 대해 자세히 알아보십시오.[
 
 이 문서에서는 시스템 사용자 생성 및 사용자 매퍼 속성 구성에 대해 설명합니다.
 
@@ -53,60 +55,90 @@ fd 서비스 사용자를 대신하여 리소스 확인자를 가져올 수도 �
    1. &#39;content&#39; 폴더에 대한 &#39; 읽기 &#39; 액세스 권한을 제공합니다.
    1. 서비스 사용자를 사용하여 /content 폴더에 대한 액세스 권한을 얻으려면 다음 코드를 사용하십시오
 
-   ```java
-   com.mergeandfuse.getserviceuserresolver.GetResolver aemDemoListings = sling.getService(com.mergeandfuse.getserviceuserresolver.GetResolver.class);
-   
-   resourceResolver = aemDemoListings.getServiceResolver();
-   
-   // get the resource. This will succeed because we have given ' read ' access to the content node
-   
-   Resource contentResource = resourceResolver.getResource("/content/forms/af/sandbox/abc.pdf");
-   ```
 
-   번들에서 /content/dam/data.json 파일에 액세스하려면 다음 코드를 사용합니다. 이 코드에서는 /content/dam/ 노드의 &quot;data&quot; 사용자에게 읽기 권한을 부여했다고 가정합니다
 
-   ```java
-   @Reference
-   GetResolver getResolver;
-   .
-   .
-   .
+```java
+com.mergeandfuse.getserviceuserresolver.GetResolver aemDemoListings = sling.getService(com.mergeandfuse.getserviceuserresolver.GetResolver.class);
+   
+resourceResolver = aemDemoListings.getServiceResolver();
+   
+// get the resource. This will succeed because we have given ' read ' access to the content node
+   
+Resource contentResource = resourceResolver.getResource("/content/forms/af/sandbox/abc.pdf");
+```
+
+번들에서 /content/dam/data.json 파일에 액세스하려면 다음 코드를 사용합니다. 이 코드에서는 /content/dam/ 노드의 &quot;data&quot; 사용자에게 읽기 권한을 부여했다고 가정합니다
+
+```java
+@Reference
+GetResolver getResolver;
+.
+.
+.
+try {
    ResourceResolver serviceResolver = getResolver.getServiceResolver();
-   // to get resource resolver specific to fd-service user. This is for Document Services
+
+   // To get resource resolver specific to fd-service user. This is for Document Services
    ResourceResolver fdserviceResolver = getResolver.getFormsServiceResolver();
+
    Node resNode = getResolver.getServiceResolver().getResource("/content/dam/data.json").adaptTo(Node.class);
-   ```
+} catch(LoginException ex) {
+   // Unable to get the service user, handle this exception as needed
+} finally {
+  // Always close all ResourceResolvers you open!
+  
+  if (serviceResolver != null( { serviceResolver.close(); }
+  if (fdserviceResolver != null) { fdserviceResolver.close(); }
+}
+```
 
-   구현의 전체 코드는 아래에 나와 있습니다
+구현의 전체 코드는 아래에 나와 있습니다
 
-   ```java
-   package com.mergeandfuse.getserviceuserresolver.impl;
-   
-   import java.util.HashMap;
-   
-   import org.apache.sling.api.resource.LoginException;
-   import org.apache.sling.api.resource.ResourceResolver;
-   import org.apache.sling.api.resource.ResourceResolverFactory;
-   import org.osgi.service.component.annotations.Component;
-   import org.osgi.service.component.annotations.Reference;
-   import com.mergeandfuse.getserviceuserresolver.GetResolver;
-   
-   @Component(service = GetResolver.class)
-   public class GetResolverImpl implements GetResolver {
-    @Reference
-    ResourceResolverFactory resolverFactory;
-    @Override
-    public ResourceResolver getServiceResolver() {
-     HashMap<String, Object> param = new HashMap<String, Object>();
-     param.put(ResourceResolverFactory.SUBSERVICE, "getresourceresolver");
-     ResourceResolver resolver = null;
-     try {
-      resolver = resolverFactory.getServiceResourceResolver(param);
-     } catch (LoginException e) {
-      // TODO Auto-generated catch block
-      e.printStackTrace();
-     }
-     return resolver;
-    }
-   ```
+```java
+package com.mergeandfuse.getserviceuserresolver.impl;
+import java.util.HashMap;
+import org.apache.sling.api.resource.LoginException;
+import org.apache.sling.api.resource.ResourceResolver;
+import org.apache.sling.api.resource.ResourceResolverFactory;
+import org.osgi.service.component.annotations.Component;
+import org.osgi.service.component.annotations.Reference;
+import com.mergeandfuse.getserviceuserresolver.GetResolver;
+@Component(service = GetResolver.class)
+public class GetResolverImpl implements GetResolver {
+        @Reference
+        ResourceResolverFactory resolverFactory;
 
+        @Override
+        public ResourceResolver getServiceResolver() {
+                System.out.println("#### Trying to get service resource resolver ....  in my bundle");
+                HashMap < String, Object > param = new HashMap < String, Object > ();
+                param.put(ResourceResolverFactory.SUBSERVICE, "getresourceresolver");
+                ResourceResolver resolver = null;
+                try {
+                        resolver = resolverFactory.getServiceResourceResolver(param);
+                } catch (LoginException e) {
+
+                        System.out.println("Login Exception " + e.getMessage());
+                }
+                return resolver;
+
+        }
+
+        @Override
+        public ResourceResolver getFormsServiceResolver() {
+
+                System.out.println("#### Trying to get Resource Resolver for forms ....  in my bundle");
+                HashMap < String, Object > param = new HashMap < String, Object > ();
+                param.put(ResourceResolverFactory.SUBSERVICE, "getformsresourceresolver");
+                ResourceResolver resolver = null;
+                try {
+                        resolver = resolverFactory.getServiceResourceResolver(param);
+                } catch (LoginException e) {
+                        System.out.println("Login Exception ");
+                        System.out.println("The error message is " + e.getMessage());
+                }
+                return resolver;
+        }
+
+}
+```
