@@ -1,18 +1,18 @@
 ---
 title: AEM Forms과 Marketo(2부)
 description: AEM Forms 양식 데이터 모델을 사용하여 AEM Forms을 Marketo과 통합하는 자습서입니다.
-feature: 적응형 Forms, 양식 데이터 모델
+feature: Adaptive Forms, Form Data Model
 version: 6.3,6.4,6.5
-topic: 개발
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: f8ba3d5c-0b9f-4eb7-8609-3e540341d5c2
+source-git-commit: 020852f16de0cdb1e17e19ad989dabf37b7f61f5
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '356'
 ht-degree: 1%
 
 ---
-
 
 # Marketo 인증 서비스
 
@@ -128,7 +128,7 @@ MarketoConfigurationService config;
 
 아래 스크린샷은 설정해야 하는 구성 속성을 보여줍니다. 이러한 구성 속성은 access_token을 가져오려면 위에 나열된 코드에서 읽습니다
 
-![config](assets/marketoconfig.jfif)
+![config](assets/configuration-settings.png)
 
 ### 구성
 

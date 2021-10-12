@@ -1,18 +1,18 @@
 ---
 title: AEM Forms과 Marketo(4부)
 description: AEM Forms 양식 데이터 모델을 사용하여 AEM Forms을 Marketo과 통합하는 자습서입니다.
-feature: 적응형 Forms, 양식 데이터 모델
+feature: Adaptive Forms, Form Data Model
 version: 6.3,6.4,6.5
-topic: 개발
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 6b44e6b2-15f7-45b2-8d21-d47f122c809d
+source-git-commit: 020852f16de0cdb1e17e19ad989dabf37b7f61f5
 workflow-type: tm+mt
-source-wordcount: '296'
-ht-degree: 0%
+source-wordcount: '317'
+ht-degree: 1%
 
 ---
-
 
 # 양식 데이터 모델을 사용하여 적응형 양식 만들기
 
@@ -31,3 +31,10 @@ ht-degree: 0%
 다음 스크린샷에서는 규칙 편집기 설정에 대해 설명합니다
 
 ![규칙 편집기](assets/ruleeditor.jfif)
+
+## 디버깅
+
+이 문서와 함께 제공된 번들을 사용하는 경우 다음 클래스에 대해 [디버그 로그](http://localhost:4502/system/console/slinglog)를 활성화할 수 있습니다.
+
++ `com.marketoandforms.core.impl.MarketoServiceImpl`
++ `com.marketoandforms.core.MarketoConfigurationService`
