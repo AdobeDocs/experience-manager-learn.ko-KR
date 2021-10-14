@@ -1,21 +1,21 @@
 ---
 title: 업그레이드해야 하는 이유 이해하기
-description: 최신 버전의 Adobe Experience Manager으로 업그레이드하려는 고객을 위한 주요 기능에 대한 높은 수준의 분석입니다.
+description: 최신 버전의 Adobe Experience Manager 6으로 업그레이드하려는 고객을 위한 주요 기능에 대한 높은 수준의 분석입니다.
 version: 6.5
 topic: Upgrade
 role: Leader, Architect, Developer, Admin, User
 level: Beginner
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+exl-id: bf4030b0-67c4-4b00-af95-f63e6f79e995
+source-git-commit: 278433e7d9a2d524198efcebae336dca01a15259
 workflow-type: tm+mt
 source-wordcount: '3462'
 ht-degree: 3%
 
 ---
 
-
 # 업그레이드해야 하는 이유 이해하기
 
-최신 버전의 Adobe Experience Manager으로 업그레이드하려는 고객을 위한 주요 기능에 대한 높은 수준의 분석입니다.
+최신 버전의 Adobe Experience Manager 6으로 업그레이드하려는 고객을 위한 주요 기능에 대한 높은 수준의 분석입니다.
 
 ## AEM 6.5로 업그레이드하기 위한 주요 기능
 
@@ -62,7 +62,7 @@ AEM은 모든 경험을 향상시키기 위해 머신 러닝 및 인공 지능�
 
 ### 통합
 
-AEM은 다른 Adobe 서비스와 통합할 수 있습니다.
+AEM은 다른 Adobe 서비스와 통합할 수 있는 기능을 강화합니다.
 
 + **경험** 조각은 Adobe Target에 JSON으로 내보내기  **및** Adobe Target **에서 경험 조각 기반 오퍼를** 삭제하 **는 기능을 지원함으로써 Adobe Target과의 통합**   ****&#x200B;을 강화합니다.
 
@@ -407,7 +407,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있습니다.
     </tr>
     <tr>
         <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ims-config-and-admin-console.html" target="_blank">Adobe IMS 인증 </a><br>
- </strong>지원AMS(Adobe Managed Services)만 지원하며, Adobe IMS(Identity Management 시스템)를 통해 AEM 작성자 인스턴스에 대한 액세스를 중앙에서 관리합니다.</td>
+ </strong>지원AMS(Adobe Managed Services)를 독점하여 Adobe IMS(Identity Management 시스템)를 통해 AEM 작성자 인스턴스에 대한 액세스를 중앙에서 관리합니다.</td>
         <td> </td>
         <td> </td>
         <td> </td>
@@ -521,7 +521,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있습니다.
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/translation.html" target="_blank">컨텐츠 번역</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/6-5/sites/administering/using/translation.html" target="_blank">컨텐츠 번역</a>:</strong>
             플러그인 및 플레이 프레임워크는 업계 최고의 타사 번역 서비스와 통합됩니다.</td>
             <td></td>
             <td></td>
@@ -715,7 +715,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있습니다.
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/task-content.html" target="_blank"></a> 작업 및  <a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects-with-workflows.html" target="_blank"></a> 워크플로우 관리:</strong>
-             AEM 프로젝트를 활용하는 디지털 자산을 검토하고 승인하는 데 필요한 사전 빌드된 워크플로우 및 작업입니다.</td>
+             AEM 프로젝트를 활용하는 디지털 자산을 검토 및 승인하는 사전 빌드된 워크플로우 및 작업입니다.</td>
             <td> </td>
             <td>✔</td>
             <td>✔</td>
@@ -847,7 +847,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있습니다.
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/imaging-transcoding-library.html" target="_blank">Adobe 이미징 라이브러리</a>: </strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/imaging-transcoding-library.html" target="_blank">Adobe 이미징 라이브러리</a>:</strong>
                 <br> 고품질 파일 조작에 사용되는 Photoshop 및 Acrobat PDF 라이브러리입니다.</td>
             <td> </td>
             <td> </td>
@@ -907,10 +907,10 @@ AEM은 다른 Adobe 서비스와 통합할 수 있습니다.
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/managing-assets.html" target="_blank">이미징</a>:</strong>
             스마트 자르기를 포함하여 다양한 크기 및 형식으로 이미지를 동적으로 제공합니다.</td>
             <td> </td>
-            <td>✔</td>
-            <td>✔</td>
-            <td>✔</td>
-            <td>✔<sup>+</sup></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
             <td>✔<sup>+</sup></td>
             <td>✔</td>
         </tr>
@@ -1121,7 +1121,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있습니다.
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/aem-forms-app.html" target="_blank">AEM Forms 앱</a>:</strong>
-             iOS, Android 또는 Windows의 앱 내에서 온라인/오프라인 양식 처리를 허용합니다.</td>
+             iOS, Android 또는 Windows에서 앱 내에서 온라인/오프라인 양식 처리를 허용합니다.</td>
             <td> </td>
             <td>✔</td>
             <td>✔</td>
@@ -1154,7 +1154,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있습니다.
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/aem-forms/6-5/whats-new.html#EnhancedDocumentSecurity" target="_blank">AEM Forms 문서 보안</a>:</strong>
-            PDF 및 Office 문서의 안전한 액세스 및 권한 부여.
+            PDF 및 Office 문서에 대한 안전한 액세스 및 권한 부여.
             </td>
             <td> </td>
             <td>✔</td>
@@ -1292,7 +1292,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있습니다.
         </tr>
         <tr>
             <td rowspan="5">지원</td>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/catalog.html" target="_blank"></a> 카탈로그 및  <a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/resource.html" target="_blank">리소스 관리</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/catalog.html" target="_blank"></a> 카탈로그 및  <a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/resource.html" target="_blank">리소스 관리</a>: </strong>
             카탈로그에서 지원 리소스에 액세스합니다.</td>
             <td> </td>
             <td>✔<sup>+</sup></td>
@@ -1537,7 +1537,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있습니다.
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/activities.html" target="_blank"></a> 활동 및  <a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/notifications.html" target="_blank">알림</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/activities.html" target="_blank"></a> 활동 및  <a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/notifications.html" target="_blank">알림</a>: </strong>
             최근 활동 스트림을 보고 관심 이벤트에 대한 알림을 받습니다.</td>
             <td> </td>
             <td> </td>
