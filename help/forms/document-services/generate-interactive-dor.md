@@ -6,9 +6,10 @@ feature: Forms Service
 topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 72a9edb3edc73cf14f13bb53355a37e707ed4c79
+kt: 9226
+source-git-commit: 2ed78bb8b122acbe69e98d63caee1115615d568f
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '357'
 ht-degree: 0%
 
 ---
@@ -20,18 +21,21 @@ ht-degree: 0%
 
 이 사용 사례를 수행하려면 다음을 수행해야 합니다
 
-## xdp에 대한 샘플 데이터 생성
+## XDP용 샘플 데이터 생성
 
-AEM Forms 디자이너에서 XDP를 엽니다.
-파일 클릭 | 양식 속성 | 미리 보기 미리 보기 데이터 생성 클릭 생성 클릭 &quot;form-data.xml&quot;과 같은 의미 있는 파일 이름을 제공합니다
+* AEM Forms 디자이너에서 XDP를 엽니다.
+* 파일 클릭 | 양식 속성 | 미리 보기
+* 미리 보기 데이터 생성을 클릭합니다
+* 생성을 누릅니다
+* &quot;form-data.xml&quot;과 같은 의미 있는 파일 이름을 제공합니다
 
 ## xml 데이터에서 XSD 생성
 
 무료 온라인 도구를 사용하여 [xsd 생성](https://www.freeformatter.com/xsd-generator.html) 이전 단계에서 생성된 xml 데이터에서 생성합니다.
 
-## 적응형 만들기
+## 적응형 양식 만들기
 
-이전 단계의 xsd를 기반으로 적응형 양식을 만듭니다. 클라이언트 라이브러리 &quot;irs&quot;를 사용할 양식을 연결합니다. 이 클라이언트 라이브러리에는 호출 애플리케이션에 PDF을 반환하는 서블릿에 대한 POST 호출을 수행하는 코드가 있습니다. 다음 코드는 _다운로드 PDF_ 를 클릭합니다.
+이전 단계의 XSD를 기반으로 적응형 양식을 만듭니다. 클라이언트 라이브러리 &quot;irs&quot;를 사용할 양식을 연결합니다. 이 클라이언트 라이브러리에는 호출 애플리케이션에 PDF을 반환하는 서블릿에 대한 POST 호출을 수행하는 코드가 있습니다. 다음 코드는 _다운로드 PDF_ 를 클릭합니다.
 
 ```javascript
 $(document).ready(function() {
@@ -72,7 +76,7 @@ $(document).ready(function() {
 
 ## 사용자 지정 서블릿 만들기
 
-데이터를 xdp 템플릿과 병합하고 pdf를 반환하는 사용자 지정 서블릿을 만듭니다. 이를 수행할 코드는 아래에 나와 있습니다. 사용자 지정 서블릿은 [AEMFormsDocumentServices.core-1.0-SNAPSHOT 번들](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)).
+데이터를 XDP 템플릿과 병합하고 pdf를 반환하는 사용자 지정 서블릿을 만듭니다. 이를 수행할 코드는 아래에 나와 있습니다. 사용자 지정 서블릿은 [AEMFormsDocumentServices.core-1.0-SNAPSHOT 번들](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)).
 
 ```java
 package com.aemformssamples.documentservices.core.servlets;
@@ -191,13 +195,16 @@ public class GenerateIInteractiveDor extends SlingAllMethodsServlet {
 샘플 코드에서 템플릿 이름(f8918-r14e_redo-barcode_3 2.xdp)은 하드 코딩됩니다. 템플릿 이름을 서블릿에 쉽게 전달하여 이 코드가 모든 템플릿에 대해 작동하도록 만들 수 있습니다.
 
 
+## 서버에 샘플 배포
+
 로컬 서버에서 테스트하려면 다음 단계를 수행하십시오.
+
 1. [DevelopingWithServiceUser 번들 다운로드 및 설치](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 1. Apache Sling Service User Mapper Service DevelopingWithServiceUser.core:getformsresourceresresolver=fd-service에 다음 항목을 추가합니다.
 1. [사용자 지정 DocumentServices 번들을 다운로드하여 설치합니다](/hep/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar). 여기에 데이터를 XDP 템플릿과 병합하고 pdf를 다시 스트리밍할 서블릿이 있습니다
 1. [클라이언트 라이브러리 가져오기](assets/irs.zip)
 1. [적응형 양식 가져오기](assets/f8918complete.zip)
-! [XDP 템플릿 및 스키마 가져오기](assets/xdp-template-and-xsd.zip)
+1. [XDP 템플릿 및 스키마 가져오기](assets/xdp-template-and-xsd.zip)
 1. [적응형 양식 미리 보기](http://localhost:4502/content/dam/formsanddocuments/f8918complete/jcr:content?wcmmode=disabled)
 1. 양식 필드 몇 개 채우기
 1. PDF 다운로드 을 클릭하여 PDF을 가져옵니다
