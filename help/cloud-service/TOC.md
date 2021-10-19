@@ -4,9 +4,9 @@ user-guide-description: Adobe Experience Manager as a Cloud Service를 위한 �
 breadcrumb-title: AEM as a Cloud Service 튜토리얼
 sub-product: cloud-service
 team: TM
-source-git-commit: 5452ab85523fc10d0aaa55e95d42c37ec33fd2ed
+source-git-commit: bec04e6db13b80a8b5c4caa91acb8f2e684e70e9
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '567'
 ht-degree: 23%
 
 ---
@@ -67,21 +67,21 @@ ht-degree: 23%
    + 고급{#advanced}
       + [서비스 사용자](./developing/advanced/service-users.md)
    + [AEM SDK API JavaDocs](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html)
-+ AEM{#debugging} 디버깅
-   + AEM SDK{#debugging-aem-sdk} 디버깅
++ AEM 디버깅{#debugging}
+   + AEM SDK 디버깅{#debugging-aem-sdk}
       + [개요](./debugging/aem-sdk-local-quickstart/overview.md)
       + [로그](./debugging/aem-sdk-local-quickstart/logs.md)
       + [원격 디버깅](./debugging/aem-sdk-local-quickstart/remote-debugging.md)
       + [OSGi 웹 콘솔](./debugging/aem-sdk-local-quickstart/osgi-web-consoles.md)
       + [Dispatcher 도구](./debugging/aem-sdk-local-quickstart/dispatcher-tools.md)
       + [기타 도구](./debugging/aem-sdk-local-quickstart/other-tools.md)
-   + AEM as a Cloud Service{#debugging-aem-as-a-cloud-service} 디버깅
+   + AEM as a Cloud Service 디버깅{#debugging-aem-as-a-cloud-service}
       + [개요](./debugging/cloud-service/overview.md)
       + [로그](./debugging/cloud-service/logs.md)
       + [작성 및 배포](./debugging/cloud-service/build-and-deployment.md)
       + [개발자 콘솔](./debugging/cloud-service/developer-console.md)
       + [CRXDE Lite](./debugging/cloud-service/crxde-lite.md)
-+ AEM{#accessing}에 액세스
++ AEM 액세스{#accessing}
    + [개요](./accessing/overview.md)
    + [Adobe IMS 사용자](./accessing/adobe-ims-users.md)
    + [Adobe IMS 사용자 그룹](./accessing/adobe-ims-user-groups.md)
@@ -160,7 +160,7 @@ ht-degree: 23%
          + [Adobe Sign 클라우드 구성](./forms/forms-and-sign/create-adobe-sign-cloud-configuration.md)
          + [적응형 양식 만들기](./forms/forms-and-sign/create-adaptive-form.md)
          + [채우기 및 서명 구성](./forms/forms-and-sign/configure-form-fill-and-sign.md)
-      + Salesforce{#integrate-with-salesforce}와 통합
+      + Salesforce와 통합{#integrate-with-salesforce}
          + [소개](./forms/integrate-with-salesforce/introduction.md)
          + [연결된 앱 만들기](./forms/integrate-with-salesforce/create-connected-app.md)
          + [Swagger 파일 만들기](./forms/integrate-with-salesforce/describe-rest-api.md)
@@ -170,7 +170,7 @@ ht-degree: 23%
          + [테스트 클릭 이벤트](./forms/integrate-with-salesforce/create-lead-click-event.md)
 + asset compute 확장성{#asset-compute}
    + [개요](./asset-compute/overview.md)
-   + {#set-up} 설정
+   + 설정{#set-up}
       + [계정 및 서비스 프로비저닝](./asset-compute/set-up/accounts-and-services.md)
       + [로컬 개발 환경](./asset-compute/set-up/development-environment.md)
       + [Adobe 프로젝트 Firefly](./asset-compute/set-up/firefly.md)
@@ -189,8 +189,9 @@ ht-degree: 23%
    + 고급{#advanced}
       + [메타데이터 작업자](./asset-compute/advanced/metadata.md)
    + [문제 해결](./asset-compute/troubleshooting.md)
-+ 다중 단계 Tutorials{#multi-step-tutorials}
-   + [AEM Sites 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
++ [AEM Experts Series](./aem-experts-series.md)
++ 여러 단계 Tutorials{#multi-step-tutorials}
+   + [AEM Sites 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR)
    + [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)
    + [SPA 편집기(반응)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html)
    + [SPA 편집기(Angular)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-angular-tutorial/overview.html)
