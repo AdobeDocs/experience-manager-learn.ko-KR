@@ -1,8 +1,8 @@
 ---
-title: Adobe Experience Manager as a Cloud Service 전문가 시리즈
+title: Adobe Experience Manager as a Cloud Service Experts Series
 description: Adobe을 구축하는 전문 엔지니어의 Adobe Experience Manager(AEM) as a Cloud Service 및 이를 제공하는 전문 서비스에 대해 알아봅니다.
 sub-product: sites, cloud-manager, assets
-source-git-commit: bec04e6db13b80a8b5c4caa91acb8f2e684e70e9
+source-git-commit: 5b3dd38d1fa2e3c35bfa2a867f51c7295907ecc7
 workflow-type: tm+mt
 source-wordcount: '592'
 ht-degree: 2%
@@ -19,7 +19,7 @@ Adobe을 구축하는 전문 엔지니어의 AEM(Adobe Experience Manager) as a 
 <br/> 
 <br/>
 
-## AEM as a Cloud Service 시작하기
+## Getting started with AEM as a Cloud Service
 
 AEM as a Cloud Services의 기본 사항과 AEM 6과 어떻게 다른지 Adobe 엔지니어링 수석 클라우드 설계자와 학습합니다.
 
@@ -30,8 +30,8 @@ AEM as a Cloud Services의 기본 사항과 AEM 6과 어떻게 다른지 Adobe �
       <img alt="다르게 생각하는 것" src="./assets/experts-series/thinking-differently.png"/>
       </a>
       <div>
-         <a href="./migration/moving-to-aem-as-a-cloud-service/introduction.md"><strong>다르게 생각하는 것</strong></a>         
-         <br/><em>수석 클라우드 설계자인 Darin Muntze와 함께</em>
+         <a href="./migration/moving-to-aem-as-a-cloud-service/introduction.md"><strong>Thinking differently</strong></a>         
+         <br/><em>with Darin Kuntze, Senior Cloud Architect</em>
       </div>
       <p>
         <br/>
@@ -70,7 +70,7 @@ AEM as a Cloud Services의 기본 사항과 AEM 6과 어떻게 다른지 Adobe �
 
 ## AEM as a Cloud Service로 이동?
 
-AEM 6에서 AEM as a Cloud Service으로 이동할 계획입니까? AEM as a Cloud Service으로 전환하는 방법론과 원활한 전환을 제공하는 다양한 도구 및 기능에 대해 알아봅니다.
+Planning to move from AEM 6 to AEM as a Cloud Service? Learn about Adobe&#39;s methodology for moving to AEM as a Cloud Service, as well as the various tools and capabilities that make this a smooth transition.
 
 <table>
   <tr>
@@ -84,12 +84,12 @@ AEM 6에서 AEM as a Cloud Service으로 이동할 계획입니까? AEM as a Clo
       </div>
       <p>
         <br/>
-        AEM BPA(Best Practice Analyzer)와 CAM(Cloud Acceleration Manager)을 사용하여 AEM 6에서 AEM as a Cloud Service으로 이동하는 모범 사례 마이그레이션 방법을 살펴봅니다.
+        Take a look at the best practices migration methodology for moving from AEM 6 to AEM as a Cloud Service using AEM's Best Practice Analyzer (BPA) and Cloud Acceleration Manager (CAM).
       </p>
    </td>   
      <td>
       <a href="./migration/moving-to-aem-as-a-cloud-service/aem-modernization-tools.md" target="_aem-experts-series-video">
-      <img alt="콘텐츠 현대화" src="./assets/experts-series/aem-modernizer-tools.png"/>
+      <img alt="Modernizing your content" src="./assets/experts-series/aem-modernizer-tools.png"/>
       </a>
       <div>
          <a href="./migration/moving-to-aem-as-a-cloud-service/aem-modernization-tools.md" target="_aem-experts-series-video"><strong>콘텐츠 현대화</strong></a>
@@ -111,7 +111,7 @@ AEM 6에서 AEM as a Cloud Service으로 이동할 계획입니까? AEM as a Clo
       </div>
       <p>
         <br/>
-         사용자 정의 AEM 애플리케이션의 Maven 프로젝트 구조 및 조직을 AEM as a Cloud Service 호환으로 현대화하고 Adobe의 최신 모범 사례에 맞게 조정하는 방법을 알아봅니다.
+         Learn how to automatically modernize your custom AEM application's Maven project structure and organization to be AEM as a Cloud Service compatible and align with Adobe's latest best practices.
       </p>
    </td> 
   </tr>
@@ -126,16 +126,16 @@ AEM 6에서 AEM as a Cloud Service으로 이동할 계획입니까? AEM as a Clo
       </div>
       <p>
         <br/>
-        AEM 6 Oak 인덱스 정의를 AEM as a Cloud Service 호환으로 자동 변환하는 방법과 AEM을 위한 Oak 인덱스를 계속 유지 관리하는 방법as a Cloud Service을 알아봅니다.
+        Learn how to automatically convert AEM 6 Oak index definitions to be AEM as a Cloud Service compatible, as well as how to maintain Oak indexes for AEM as a Cloud Service going forward.
       </p>
    </td>   
      <td>
       <a href="./migration/moving-to-aem-as-a-cloud-service/dispatcher.md" target="_aem-experts-series-video">
-      <img alt="Dispatcher 구성 현대화" src="./assets/experts-series/dispatcher.png"/>
+      <img alt="Modernizing your Dispatcher configuration" src="./assets/experts-series/dispatcher.png"/>
       </a>
       <div>
-         <a href="./migration/moving-to-aem-as-a-cloud-service/dispatcher.md" target="_aem-experts-series-video"><strong>Dispatcher 구성 현대화</strong></a>
-         <br/><em>브라이언 스토프, 수석 클라우드 아키텍트</em>
+         <a href="./migration/moving-to-aem-as-a-cloud-service/dispatcher.md" target="_aem-experts-series-video"><strong>Modernizing your Dispatcher configuration</strong></a>
+         <br/><em>with Bryan Stopp, Senior Cloud Architect</em>
       </div>
       <p>
         <br/>
@@ -179,5 +179,7 @@ Adobe 전문가의 AEM as a Cloud Service의 고유한 기능에 대해 알아�
         AEM Assets의 Asset compute 마이크로서비스, AEM 6 자산 처리를 대체하는 방법 및 사용자 지정 자산 렌디션을 생성하기 위해 확장할 수 있는 방법에 대해 알아봅니다.
       </p>
    </td>   
+    <td></td>
+    <td></td>
   </tr>
 </table>
