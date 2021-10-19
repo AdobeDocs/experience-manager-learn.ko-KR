@@ -5,9 +5,9 @@ user-guide-title: AEM Forms 비디오 및 튜토리얼
 user-guide-description: 초보자 및 숙련된 AEM Forms 개발자를 위한 AEM Forms 리소스 모음입니다.
 breadcrumb-title: AEM Forms 튜토리얼
 index: y
-source-git-commit: e01d93591d1c00b2abec3430fdfa695b32165e54
+source-git-commit: 72a9edb3edc73cf14f13bb53355a37e707ed4c79
 workflow-type: tm+mt
-source-wordcount: '1601'
+source-wordcount: '1607'
 ht-degree: 3%
 
 ---
@@ -60,7 +60,7 @@ ht-degree: 3%
    + [GeoLocation API 사용](adaptive-forms/using-geolocation-api-in-aem-forms-article.md)
    + [트랜잭션 보고 사용](adaptive-forms/transaction-reporting-aem-forms-article-use.md)
    + [AEM Forms의 사용자 프로필 데이터 통합](adaptive-forms/user-profile-data-integration-feature-video-use.md)
-   + [Microsoft Dynamics와 AEM Forms](adaptive-forms/using-ms-dynamics-with-aem-forms.md)
+   + [AEM Forms과 Microsoft Dynamics](adaptive-forms/using-ms-dynamics-with-aem-forms.md)
    + [규칙 편집기 개선 사항](adaptive-forms/rule-editor-improvements-feature-video-use.md)
    + [규칙 편집기에 대한 액세스 제한](adaptive-forms/restricting-rule-editor-aem-forms-technical-video-use.md)
    + [테마 편집기 개선 사항](adaptive-forms/theme-editor-improvements-feature-video-use.md)
@@ -86,7 +86,7 @@ ht-degree: 3%
    + [재사용 가능 워크플로우 모델 만들기](adaptive-forms/re-usable-aem-forms-workflow-models-article.md)
    + [사용자 지정 프로세스 단계 AEM 워크플로우](adaptive-forms/custom-process-step-aem-workflow.md)
    + [데이터 소스 구성 수정](adaptive-forms/modify-data-source-configuration-settings-article.md)
-   + [HTML5 Forms 사전 채우기](adaptive-forms/prepopulating-html5-forms-in-aem-forms-article.md)
+   + [HTML 5 Forms 미리 채우기](adaptive-forms/prepopulating-html5-forms-in-aem-forms-article.md)
    + [Salesforce를 사용한 양식 데이터 모델](adaptive-forms/using-adaptive-forms-with-sales-force-integration-tutorial.md)
    + [선택 구성 요소에 동적으로 항목 추가](adaptive-forms/choice-group-items-adding-dynamically-article.md)
 + 양식 데이터 모델을 사용하여 적응형 양식 미리 채우기{#prefill-fdm-db}
@@ -116,7 +116,7 @@ ht-degree: 3%
    + [기본 양식 만들기](store-and-retrieve-af-with-2fa/create-the-main-adaptive-form.md)
    + [MyAccount 양식 만들기](store-and-retrieve-af-with-2fa/create-the-myaccount-form.md)
    + [샘플 배포](store-and-retrieve-af-with-2fa/deploy-this-sample.md)
-+ CSV 형식{#export-submitted-data-csv-format} 로 제출된 데이터 내보내기
++ CSV 형식으로 제출된 데이터 내보내기{#export-submitted-data-csv-format}
    + [제출된 데이터 내보내기](export-submitted-data-csv-format/export-submitted-data-csv.md)
 + HTML5 양식{#html5-forms}
    + [HTML5 양식 만들기](html5-forms/create-html5-form.md)
@@ -134,7 +134,7 @@ ht-degree: 3%
    + [PDF 양식을 적응형 양식으로 변환](aem-forms-and-adobe-sign/convert-pdf-form-into-adaptive-form.md)
    + [변환된 적응형 양식 구성](aem-forms-and-adobe-sign/configure-converted-adaptive-form.md)
    + [Adobe Sign에서 XDP 템플릿 사용](aem-forms-and-adobe-sign/using-xdp-templates-with-adobe-sign.md)
-+ 여러 Forms에 서명{#sign-multiple-documents}
++ 여러 Forms 서명{#sign-multiple-documents}
    + [소개](sign-multiple-documents/introduction.md)
    + [데이터 소스 구성](sign-multiple-documents/configure-data-source.md)
    + [OSGi 서비스 만들기](sign-multiple-documents/create-osgi-service.md)
@@ -146,7 +146,7 @@ ht-degree: 3%
    + [초기 양식 만들기](sign-multiple-documents/create-initial-form.md)
    + [서명을 위한 Forms 만들기](sign-multiple-documents/create-forms-for-signing.md)
    + [솔루션 테스트](sign-multiple-documents/testing-and-trouble-shooting.md)
-+ AEM Workflow{#variables-aem-workflow}의 변수
++ AEM 워크플로우의 변수{#variables-aem-workflow}
    + [소개 - 워크플로우의 변수](variables-aem-workflow/introduction.md)
    + [XML 변수](variables-aem-workflow/part1.md)
    + [JSON 변수](variables-aem-workflow/part2.md)
@@ -166,7 +166,7 @@ ht-degree: 3%
    + [소개](offline-mobile-form-submission/introduction.md)
    + [사용자 지정 프로필](offline-mobile-form-submission/part-one.md)
    + [PDF 제출 처리](offline-mobile-form-submission/part-two.md)
-   + [PDF 검토 워크플로우](offline-mobile-form-submission/part-three.md)
+   + [검토할 워크플로우 PDF](offline-mobile-form-submission/part-three.md)
    + [시스템에 배포](offline-mobile-form-submission/part-four.md)
 + 제출된 데이터 쿼리{#querying-submitted-data}
    + [소개](querying-submitted-data/introduction.md)
@@ -177,7 +177,7 @@ ht-degree: 3%
 + Forms Portal에서 사용자 지정 자산 유형 나열{#listing-custom-asset-types}
    + [Part1-사용자 지정 자산 유형 등록](listing-custom-asset-types/part1.md)
    + [2부 - 사용자 정의 템플릿 생성](listing-custom-asset-types/part2.md)
-+ Marketo이 있는 AEM Forms{#aem-forms-with-marketo}
++ AEM Forms과 Marketo{#aem-forms-with-marketo}
    + [1부 - 소개](aem-forms-with-marketo/part1.md)
    + [2부 - 사용자 정의 인증](aem-forms-with-marketo/part2.md)
    + [Part3 - 데이터 소스](aem-forms-with-marketo/part3.md)
@@ -198,8 +198,9 @@ ht-degree: 3%
    + [AEM Forms에서 PDFG 서비스 사용](document-services/using-pdfg-in-aem-forms.md)
    + [AEM Forms에서 출력 및 Forms 서비스 사용](document-services/output-and-forms-services-article-develop.md)
    + [하나의 데이터 파일에서 여러 pdf 생성](document-services/generate-multi-record-pdf.md)
-   + [모바일 양식 제출에서 PDF 생성](document-services/generate-pdf-from-mobile-form-submission-article.md)
+   + [모바일 양식 제출 시 PDF 생성](document-services/generate-pdf-from-mobile-form-submission-article.md)
    + [모바일 양식에서 대화형 PDF 생성](document-services/render-interactive-form-using-api.md)
+   + [적응형 양식에서 대화형 DoR 생성](document-services/generate-interactive-dor.md)
    + [Reader 확장 자격 증명 구성](document-services/configuring-reader-extension-osgi.md)
    + [XDP 표현물의 PDF에 사용 권한 적용](document-services/rendering-and-reader-extending-xdp-templates-article.md)
    + [업로드된 PDF에 사용 권한 적용](document-services/apply-reader-extension-rights-to-pdf.md)
@@ -229,7 +230,7 @@ ht-degree: 3%
    + [AEM Forms 인쇄 채널 문서에서 표 구성 요소 사용](interactive-communications/table-in-print-channel-documents-video-use.md)
    + [감시 폴더를 사용하여 인쇄 채널용 대화형 통신 문서 생성](interactive-communications/generating-interactive-communications-print-document-using-api-tutorial-use.md)
 
-+ 웹 채널에 대한 대화형 통신 {#ic-web-channel-tutorial}
++ 웹 채널을 위한 대화형 통신 {#ic-web-channel-tutorial}
    + [소개](ic-web-channel-tutorial/introduction.md)
    + [Tomcat 설정](ic-web-channel-tutorial/partone.md)
    + [데이터 소스 만들기](ic-web-channel-tutorial/parttwo.md)
