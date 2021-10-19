@@ -3,10 +3,10 @@ user-guide-title: AEM Sites 비디오 및 튜토리얼
 user-guide-description: Adobe Experience Manager Sites에 대한 비디오 및 튜토리얼 모음입니다.
 breadcrumb-title: AEM Sites 튜토리얼
 feature-set: Experience Manager, Experience Manager Sites
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: 5bdff2eafaa28aff722b12607b1278539072be62
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 21%
+source-wordcount: '441'
+ht-degree: 23%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 21%
    + [론치](page-authoring/launches.md)
 + 구성 요소 {#components}
    + [구성 요소 개발](components/component-development.md)
-   + [코어 구성 요소](components/core-components-feature-video-understand.md)
+   + [핵심 구성 요소](components/core-components-feature-video-understand.md)
    + [구성 요소 콘솔](components/components-console-feature-video-use.md)
 + 콘텐츠 조각 {#content-fragments}
    + [컨텐츠 조각 작성](content-fragments/content-fragments-feature-video-use.md)
@@ -47,8 +47,8 @@ ht-degree: 21%
    + [경험 조각을 사용하여 소셜 게시 설정](experience-fragments/experience-fragments-social-technical-video-setup.md)
    + [컨텐츠 조각과 경험 조각 비교](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html)
 + 개발 {#developing}
-   + [AEM 프로젝트 전형](developing/aem-project-archetype.md)
-   + [AEM Sites 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+   + [AEM Project Archetype](developing/aem-project-archetype.md)
+   + [AEM Sites 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR)
    + [AEM 헤드리스 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
    + [AEM SPA Editor 및 React 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
    + [AEM SPA 편집기 및 Angular 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html)
@@ -64,6 +64,8 @@ ht-degree: 21%
    + [경험 구성요소 및 Adobe Target 설정](personalization/experience-fragment-target-technical-video-setup.md)
    + [Adobe Target에서 경험 조각 사용](personalization/experience-fragment-target-offer-feature-video-use.md)
    + [ContextHub 설정](personalization/context-hub-technical-video-setup.md)
++ SEO {#seo}
+   + [Sitemap](./seo/sitemaps.md)
 + SPA(Single Page Applications){#spa-editor}
    + [SPA 편집기 사용](spa-editor/spa-editor-framework-feature-video-use.md)
    + [Hello World 자습서](spa-editor/spa-editor-helloworld-tutorial-use.md)
@@ -96,7 +98,7 @@ ht-degree: 21%
       + [Adobe I/O을 사용하여 AEM과 Launch 연결하기](integrations/experience-platform-launch/connect-aem-launch-adobe-io.md)
       + [Launch Cloud Service 만들기](integrations/experience-platform-launch/create-launch-cloud-service.md)
       + [Launch 구현 디버깅](integrations/experience-platform-launch/debug-launch-implementation.md)
-   + Adobe 클라이언트 데이터 계층 {#adobe-client-data-layer}
+   + Adobe 클라이언트 데이터 레이어 {#adobe-client-data-layer}
       + [Adobe 클라이언트 데이터 레이어 사용](integrations/adobe-client-data-layer/data-layer-overview.md)
       + [Adobe 클라이언트 데이터 레이어 사용자 지정](integrations/adobe-client-data-layer/data-layer-customize.md)
    + 분석 {#analytics}
