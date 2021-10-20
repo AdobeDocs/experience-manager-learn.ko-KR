@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Experienced
 kt: 9226
-source-git-commit: 2ed78bb8b122acbe69e98d63caee1115615d568f
+source-git-commit: d42fd02b06429be1b847958f23f273cf842d3e1b
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
@@ -201,10 +201,12 @@ public class GenerateIInteractiveDor extends SlingAllMethodsServlet {
 
 1. [DevelopingWithServiceUser 번들 다운로드 및 설치](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 1. Apache Sling Service User Mapper Service DevelopingWithServiceUser.core:getformsresourceresresolver=fd-service에 다음 항목을 추가합니다.
-1. [사용자 지정 DocumentServices 번들을 다운로드하여 설치합니다](/hep/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar). 여기에 데이터를 XDP 템플릿과 병합하고 pdf를 다시 스트리밍할 서블릿이 있습니다
+1. [사용자 지정 DocumentServices 번들을 다운로드하여 설치합니다](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar). 여기에 데이터를 XDP 템플릿과 병합하고 pdf를 다시 스트리밍할 서블릿이 있습니다
 1. [클라이언트 라이브러리 가져오기](assets/irs.zip)
 1. [적응형 양식 가져오기](assets/f8918complete.zip)
 1. [XDP 템플릿 및 스키마 가져오기](assets/xdp-template-and-xsd.zip)
 1. [적응형 양식 미리 보기](http://localhost:4502/content/dam/formsanddocuments/f8918complete/jcr:content?wcmmode=disabled)
 1. 양식 필드 몇 개 채우기
-1. PDF 다운로드 을 클릭하여 PDF을 가져옵니다
+1. PDF 다운로드 을 클릭하여 PDF을 가져옵니다. PDF이 다운로드될 때까지 몇 초 기다려야 할 수 있습니다
+
+

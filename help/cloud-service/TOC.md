@@ -4,9 +4,9 @@ user-guide-description: Adobe Experience Manager as a Cloud Service를 위한 �
 breadcrumb-title: AEM as a Cloud Service 튜토리얼
 sub-product: cloud-service
 team: TM
-source-git-commit: bec04e6db13b80a8b5c4caa91acb8f2e684e70e9
+source-git-commit: d42fd02b06429be1b847958f23f273cf842d3e1b
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '595'
 ht-degree: 23%
 
 ---
@@ -123,6 +123,15 @@ ht-degree: 23%
       + [Cloud Acceleration Manager 탐색](./migration/cloud-acceleration-manager/navigating.md)
       + [Cloud Acceleration Manager 사용](./migration/cloud-acceleration-manager/using.md)
 + 양식{#forms}
+
+   + Forms as a Cloud Service 개발{#developing-for-cloud-service}
+      + [시작하기](./forms/developing-for-cloud-service/getting-started.md)
+      + [IntelliJ 설치](./forms/developing-for-cloud-service/intellij-set-up.md)
+      + [Git 설정](./forms/developing-for-cloud-service/setup-git.md)
+      + [AEM과 IntelliJ 동기화](./forms/developing-for-cloud-service/intellij-and-aem-sync.md)
+      + [양식 작성](./forms/developing-for-cloud-service/deploy-your-first-form.md)
+      + [Cloud Manager로 푸시](./forms/developing-for-cloud-service/push-project-to-cloud-manager-git.md)
+      + [Cloud Services 및 FDM 포함](./forms/developing-for-cloud-service/azure-storage-fdm.md)
    + 적응형 양식 만들기{#create-first-af}
       + [소개](./forms/create-first-af/introduction.md)
       + [테마 만들기](./forms/create-first-af/create-theme.md)
@@ -137,8 +146,8 @@ ht-degree: 23%
       + [도구 모음 추가 및 구성](./forms/create-first-af/add-configure-toolbar.md)
    + Document Cloud API 및 AEM Forms CS{#doc-cloud-sdk}
       + [소개](./forms/doc-cloud-sdk/introduction.md)
-      + [Adobe I/O 프로젝트 만들기](./forms/doc-cloud-sdk/create-document-cloud-credentials.md)
-      + [OSGi 구성 만들기](./forms/doc-cloud-sdk/create-doc-cloud-configuration.md)
+      + [Adobe IO 프로젝트 만들기](./forms/doc-cloud-sdk/create-document-cloud-credentials.md)
+      + [OSGI 구성 만들기](./forms/doc-cloud-sdk/create-doc-cloud-configuration.md)
       + [인터페이스 정의](./forms/doc-cloud-sdk/create-interface.md)
       + [인터페이스 구현](./forms/doc-cloud-sdk/implement-interface.md)
       + [JSON 부분 만들기](./forms/doc-cloud-sdk/get-content-analyzer.md)
@@ -147,27 +156,25 @@ ht-degree: 23%
       + [소개](./forms/forms-cs-azure-portal/introduction.md)
       + [양식 데이터 모델 작성](./forms/forms-cs-azure-portal/create-fdm.md)
       + [Azure 저장소에 양식 데이터 저장](./forms/forms-cs-azure-portal/create-af.md)
-      + [미리 채우기 양식](./forms/forms-cs-azure-portal/prefill-af-storage.md)
+      + [양식 미리 채우기](./forms/forms-cs-azure-portal/prefill-af-storage.md)
       + [쿼리 제출](./forms/forms-cs-azure-portal/query-submitted-data.md)
-
-
-      + 검토 작업 과정 만들기{#create-aem-workflow}
-         + [워크플로우 모델 만들기](./forms/create-aem-workflow/create-workflow.md)
-         + [워크플로우 트리거](./forms/create-aem-workflow/configure-af.md)
-      + Adobe Sign과 AEM Forms{#forms-and-sign}
-         + [소개](./forms/forms-and-sign/introduction.md)
-         + [Adobe Sign API 애플리케이션](./forms/forms-and-sign/create-sign-api-application.md)
-         + [Adobe Sign 클라우드 구성](./forms/forms-and-sign/create-adobe-sign-cloud-configuration.md)
-         + [적응형 양식 만들기](./forms/forms-and-sign/create-adaptive-form.md)
-         + [채우기 및 서명 구성](./forms/forms-and-sign/configure-form-fill-and-sign.md)
-      + Salesforce와 통합{#integrate-with-salesforce}
-         + [소개](./forms/integrate-with-salesforce/introduction.md)
-         + [연결된 앱 만들기](./forms/integrate-with-salesforce/create-connected-app.md)
-         + [Swagger 파일 만들기](./forms/integrate-with-salesforce/describe-rest-api.md)
-         + [데이터 소스 만들기](./forms/integrate-with-salesforce/create-data-source.md)
-         + [양식 데이터 모델 만들기](./forms/integrate-with-salesforce/create-form-data-model.md)
-         + [테스트 양식 제출](./forms/integrate-with-salesforce/create-lead-submitting-form.md)
-         + [테스트 클릭 이벤트](./forms/integrate-with-salesforce/create-lead-click-event.md)
+   + 검토 작업 과정 만들기{#create-aem-workflow}
+      + [워크플로우 모델 만들기](./forms/create-aem-workflow/create-workflow.md)
+      + [워크플로우 트리거](./forms/create-aem-workflow/configure-af.md)
+   + Adobe Sign과 AEM Forms{#forms-and-sign}
+      + [소개](./forms/forms-and-sign/introduction.md)
+      + [Adobe Sign API 애플리케이션](./forms/forms-and-sign/create-sign-api-application.md)
+      + [Adobe Sign 클라우드 구성](./forms/forms-and-sign/create-adobe-sign-cloud-configuration.md)
+      + [적응형 양식 만들기](./forms/forms-and-sign/create-adaptive-form.md)
+      + [채우기 및 서명 구성](./forms/forms-and-sign/configure-form-fill-and-sign.md)
+   + Salesforce와 통합{#integrate-with-salesforce}
+      + [소개](./forms/integrate-with-salesforce/introduction.md)
+      + [연결된 앱 만들기](./forms/integrate-with-salesforce/create-connected-app.md)
+      + [Swagger 파일 만들기](./forms/integrate-with-salesforce/describe-rest-api.md)
+      + [데이터 소스 만들기](./forms/integrate-with-salesforce/create-data-source.md)
+      + [양식 데이터 모델 만들기](./forms/integrate-with-salesforce/create-form-data-model.md)
+      + [테스트 양식 제출](./forms/integrate-with-salesforce/create-lead-submitting-form.md)
+      + [테스트 클릭 이벤트](./forms/integrate-with-salesforce/create-lead-click-event.md)
 + asset compute 확장성{#asset-compute}
    + [개요](./asset-compute/overview.md)
    + 설정{#set-up}

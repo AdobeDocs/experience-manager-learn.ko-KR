@@ -2,7 +2,7 @@
 title: Adobe Experience Manager as a Cloud Service 전문가 시리즈
 description: Adobe을 구축하는 전문 엔지니어의 Adobe Experience Manager(AEM) as a Cloud Service 및 이를 제공하는 전문 서비스에 대해 알아봅니다.
 sub-product: sites, cloud-manager, assets
-source-git-commit: 1e52e29051e219c4cd5ea83e2325fdae62ff833a
+source-git-commit: d42fd02b06429be1b847958f23f273cf842d3e1b
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 2%
@@ -207,7 +207,7 @@ Adobe 전문가의 AEM as a Cloud Service의 고유한 기능에 대해 알아�
       <img alt="AEM 문제 해결 as a Cloud Service" src="./assets/experts-series/troubleshooting.png"/>
       </a>
       <div>
-         <a href="/migration/moving-to-aem-as-a-cloud-service/troubleshooting.md" 
+         <a href="./migration/moving-to-aem-as-a-cloud-service/troubleshooting.md" 
          target="_aem-experts-series-video"><strong>AEM 문제 해결 as a Cloud Service</strong></a>
          <br/><em>클라우드 아키텍트, Munwar Saluja 사용</em>
       </div>
