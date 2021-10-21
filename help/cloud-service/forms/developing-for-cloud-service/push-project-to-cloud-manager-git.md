@@ -8,7 +8,7 @@ level: Beginner, Intermediate
 version: Cloud Service
 topic: Development
 kt: 8851
-source-git-commit: d42fd02b06429be1b847958f23f273cf842d3e1b
+source-git-commit: d38da94bd4164163a16899b565c90b159194580a
 workflow-type: tm+mt
 source-wordcount: '141'
 ht-degree: 0%
@@ -16,11 +16,10 @@ ht-degree: 0%
 ---
 
 
-# cloud manager git rep에 AEM 프로젝트 푸시
+# Cloud Manager git 리포지토리에 AEM 프로젝트 푸시
 
 이전 단계에서는 AEM 프로젝트를 AEM 인스턴스에서 만든 적응형 Forms 및 테마와 동기화했습니다.
-이제 이러한 변경 사항을 로컬 git 리포지토리에 추가한 다음 로컬 git 리포지토리를 클라우드 관리자 git 리포지토리에 푸시해야 합니다
-
+이제 이러한 변경 사항을 로컬 Git 리포지토리에 추가한 다음 로컬 Git 리포지토리를 클라우드 관리자 git 리포지토리에 푸시해야 합니다.
 명령 프롬프트를 열고 c:\cloudmanager\aem-banking-app Execute the following commands으로 이동합니다.
 
 ```

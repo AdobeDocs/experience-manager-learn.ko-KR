@@ -8,18 +8,22 @@ level: Beginner, Intermediate
 version: cloud-service
 topic: Development
 kt: 8844
-source-git-commit: d42fd02b06429be1b847958f23f273cf842d3e1b
+source-git-commit: d38da94bd4164163a16899b565c90b159194580a
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '504'
 ht-degree: 3%
 
 ---
 
 # Cygwin 설치
 
+
+Cygwin은 Microsoft Windows에서 기본적으로 실행되는 POSIX 호환 프로그래밍 및 런타임 환경입니다.
 설치 [Cygwin](https://www.cygwin.com/). C:\cygwin64 folder에 을 설치했습니다.
->[메모]
+>[!NOTE]
 > zip, unzip, curl, rsync 패키지를 Win 설치와 함께 설치해야 합니다
+
+c:\cloudmanager 아래에 adoberepo 라는 폴더를 만듭니다.
 
 [보고 도구 설치].(https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo).Installing 보고 도구는 리포지토리 파일을 복사하여 c:\cloudmanger\adoberepo folder에 배치하는 것에만 해당됩니다.
 
@@ -27,7 +31,12 @@ ht-degree: 3%
 
 ## 외부 도구 설정
 
-IntelliJ Hit Ctrl+Alt+S 키를 눌러 설정 창을 시작합니다. 도구->외부 도구를 선택한 다음 + 기호를 클릭하고 스크린샷에 표시된 대로 다음을 입력합니다. 그룹 드롭다운 필드에 &quot;repo&quot;를 입력하여 repo라는 그룹을 만들고 생성한 모든 명령이 Repo에 속하는지 확인합니다 **repo** 그룹
+* IntelliJ 시작
+* 설정 창을 시작하려면 Ctrl+Alt+S 키를 누릅니다.
+* 도구->외부 도구 를 선택한 다음 + 기호를 클릭하고 스크린샷에 표시된 대로 다음을 입력합니다.
+   ![rep](assets/repo.png)
+* 그룹 드롭다운 필드에 &quot;repo&quot;를 입력하여 repo라는 그룹을 만들고 사용자가 만드는 모든 명령을 **repo** 그룹
+
 
 **Put 명령**
 **프로그램**: C:\cygwin64\bin\bash

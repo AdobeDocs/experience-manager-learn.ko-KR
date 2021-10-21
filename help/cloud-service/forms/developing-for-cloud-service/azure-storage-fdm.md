@@ -8,9 +8,9 @@ level: Beginner, Intermediate
 version: cloud-service
 topic: Development
 kt: 9006
-source-git-commit: d42fd02b06429be1b847958f23f273cf842d3e1b
+source-git-commit: d38da94bd4164163a16899b565c90b159194580a
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '202'
 ht-degree: 0%
 
 ---
@@ -42,10 +42,11 @@ ui.content 프로젝트의 filter.xml에 적절한 항목을 포함합니다
 <filter root="/content/dam/formsanddocuments-fdm/registrations" mode="replace"/>
 ```
 
-이제 프로젝트를 빌드하고 배포하면 프로젝트에서 클라우드 인스턴스에서 사용할 수 있는 클라우드 서비스 구성을 기반으로 양식 데이터 모델을 사용할 수 있습니다
 
->!![NOTE]
-이 클라우드 서비스 구성을 클라우드 인스턴스에 푸시할 때 AEM 사용자 인터페이스를 사용하여 Azure 키를 수동으로 업데이트해야 합니다.암호화된 값은 사용자 인터페이스를 사용하여 클라우드 인스턴스에서 업데이트해야 합니다.
+>[!NOTE]
+
+>이제 프로젝트를 빌드하고 배포하면 프로젝트에서 클라우드 인스턴스에서 사용할 수 있는 클라우드 서비스 구성을 기반으로 양식 데이터 모델을 사용할 수 있습니다
+
 
 
 
