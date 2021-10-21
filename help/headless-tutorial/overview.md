@@ -1,17 +1,17 @@
 ---
 title: AEM Headless 자습서
 description: Adobe Experience Manager을 헤드리스 CMS로 사용하는 방법에 대한 자습서 모음입니다.
-feature: 컨텐츠 조각, API
-topic: 헤드리스, 컨텐츠 관리
+feature: Content Fragments, APIs
+topic: Headless, Content Management
 role: Developer
 level: Beginner
-source-git-commit: 22829f532f7791af14919af24650b4593fe89ae8
+exl-id: 57f88d79-9879-4bb9-a3db-9fec95e3a0bd
+source-git-commit: 0ab14016c27d3b91252f3cbf5f97550d89d4a0c9
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '527'
 ht-degree: 0%
 
 ---
-
 
 # AEM Headless 자습서
 
@@ -19,7 +19,7 @@ Adobe Experience Manager(AEM)에는 헤드리스 엔드포인트를 정의하고
 
 >[!TIP]
 >
->이 자습서 컬렉션은&#x200B;**을(를) 수행하여**&#x200B;을 학습하려는 사용자를 위해 설계되었습니다. 처음부터 학습 개념을 선호하는 경우 [AEM Headless Developer 여정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/overview.html)를 확인하십시오. 이 자습서와 여정은 서로 보완합니다.
+>이 자습서 컬렉션은 다음과 같은 사용자를 위해 설계되었습니다 **다음을 통해 학습**. 처음부터 학습 개념을 선호하는 경우 다음을 확인하십시오 [AEM Headless Developer 여정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/overview.html). 이 자습서와 여정은 서로 보완합니다.
 
 ## API별 Tutorials
 
@@ -62,6 +62,54 @@ Adobe Experience Manager(AEM)에는 헤드리스 엔드포인트를 정의하고
     </div>
     <p>
     <em>애플리케이션에서 REST API를 사용하여 컨텐츠를 사용하는 방법을 알아봅니다.</em>
+    <p>
+  </td>
+</tr>
+</table>
+
+## 예제 애플리케이션
+
+예제 애플리케이션은 AEM(Adobe Experience Manager)의 헤드리스 기능을 살펴보는 좋은 방법입니다. 완료된 예제를 다운로드하여 설치하여 바로 시작하십시오.
+
+<table>
+<tr>
+  <td>
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/ios-swiftui-app.html">
+      <img alt="iOS 예" src="./assets/ios-example.png" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/ios-swiftui-app.html">
+    <strong>iOS SwiftUI 예</strong>
+    </a>
+    </div>
+    <p>
+    <em>AEM GraphQL API에서 제공하는 iOS 애플리케이션입니다.</em>
+    <p>
+  </td>
+  <td>
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/android-app.html">
+    <img alt="Android 예" src="./assets/android-example.png" />
+    </a>
+    <div>
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/android-app.html">
+    <strong>Android 예</strong>
+    </a>
+    </div>
+    <p>
+    <em>AEM GraphQL API에서 제공하는 Android 애플리케이션입니다.</em>
+    </p>
+  </td>
+  <td>
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/react-app.html">
+      <img alt="React 예" src="./assets/react-example.png" />
+    </a>
+     <div>
+      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/react-app.html">
+        <strong>React 예</strong>
+      </a>
+    </div>
+    <p>
+    <em>AEM GraphQL API에서 제공하는 React 애플리케이션입니다.</em>
     <p>
   </td>
 </tr>

@@ -9,10 +9,10 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
-source-git-commit: 9c1649247c65a1fa777b7574d1ab6ab49d0f722b
+source-git-commit: 0ab14016c27d3b91252f3cbf5f97550d89d4a0c9
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 5%
+source-wordcount: '994'
+ht-degree: 3%
 
 ---
 
@@ -122,4 +122,106 @@ function useGraphQL(query, path) {
 
 이 앱은 주로 모험 목록을 표시하며 사용자에게 모험의 세부 사항을 클릭하는 옵션을 제공합니다.
 
-`Adventures.js` - 모험카드 목록을 표시합니다.
+`Adventures.js` - 모험카드 목록을 표시합니다.  초기 상태는 [지속되는 쿼리](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/video-series/graphql-persisted-queries.html) 다음 중 [사전 패키지](https://github.com/adobe/aem-guides-wknd/tree/master/ui.content/src/main/content/jcr_root/conf/wknd/settings/graphql/persistentQueries/adventures-all/_jcr_content) WKND 참조 사이트 사용. 끝점은 다음과 같습니다. `/wknd/adventures-all`. 사용자가 활동을 기반으로 필터링 결과를 실험해 볼 수 있는 버튼이 몇 가지 있습니다.
+
+```javascript
+function filterQuery(activity) {
+  return `
+    {
+      adventureList (filter: {
+        adventureActivity: {
+          _expressions: [
+            {
+              value: "${activity}"
+            }
+          ]
+        }
+      }){
+        items {
+          _path
+        adventureTitle
+        adventurePrice
+        adventureTripLength
+        adventurePrimaryImage {
+          ... on ImageRef {
+            _path
+            mimeType
+            width
+            height
+          }
+        }
+      }
+    }
+  }
+  `;
+}
+```
+
+`AdventureDetail.js` - Adventure의 세부 보기를 표시합니다. url에서 구문 분석되는 모험의 경로를 기반으로 graphQL 쿼리를 만듭니다.
+
+```javascript
+//parse the content fragment from the url
+const contentFragmentPath = props.location.pathname.substring(props.match.url.length);
+...
+function adventureDetailQuery(_path) {
+  return `{
+    adventureByPath (_path: "${_path}") {
+      item {
+        _path
+          adventureTitle
+          adventureActivity
+          adventureType
+          adventurePrice
+          adventureTripLength
+          adventureGroupSize
+          adventureDifficulty
+          adventurePrice
+          adventurePrimaryImage {
+            ... on ImageRef {
+              _path
+              mimeType
+              width
+              height
+            }
+          }
+          adventureDescription {
+            html
+          }
+          adventureItinerary {
+            html
+          }
+      }
+    }
+  }
+  `;
+}
+```
+
+### 환경 변수
+
+몇 개 [환경 변수](https://create-react-app.dev/docs/adding-custom-environment-variables) 이 프로젝트에서 AEM 환경에 연결하는 데 사용됩니다. 기본값은 http://localhost:4502에서 실행되는 AEM 작성 환경에 연결합니다. 이 동작을 변경하려면 `.env.development` 이에 따라 다음을 수행합니다.
+
+* `REACT_APP_HOST_URI=http://localhost:4502` - AEM 타겟 호스트로 설정
+* `REACT_APP_GRAPHQL_ENDPOINT=/content/graphql/global/endpoint.json` - GraphQL 끝점 경로 설정
+* `REACT_APP_AUTH_METHOD=` - 기본 인증 방법입니다. 선택 사항이며, 기본적으로 인증이 사용되지 않습니다.
+   * `service-token` - Cloud Env PROD에 서비스 토큰 교환 사용
+   * `dev-token` - Cloud Env를 사용하여 로컬 개발에 개발 토큰 사용
+   * `basic` - 로컬 작성자 Env를 사용하여 로컬 개발에 사용자/전달 사용
+   * 인증 방법을 사용하지 않도록 하려면 비워 둡니다.
+* `REACT_APP_AUTHORIZATION=admin:admin` - AEM 작성자 환경에 연결하는 경우 사용할 기본 인증 자격 증명을 설정합니다(개발용). 게시 환경에 연결하는 경우에는 이 설정이 필요하지 않습니다.
+* `REACT_APP_DEV_TOKEN` - 개발 토큰 문자열입니다. 원격 인스턴스에 연결하려면 기본 인증(user:pass) 옆의 클라우드 콘솔에서 DEV 토큰과 함께 베어러 인증을 사용할 수 있습니다
+* `REACT_APP_SERVICE_TOKEN` - 서비스 토큰 파일의 경로입니다. 원격 인스턴스에 연결하기 위해 서비스 토큰으로 인증을 수행할 수도 있습니다(클라우드 콘솔에서 파일 다운로드)
+
+### 프록시 API 요청
+
+웹 팩 개발 서버 사용 시(`npm start`) 프로젝트에 [프록시 설정](https://create-react-app.dev/docs/proxying-api-requests-in-development/#configuring-the-proxy-manually) 사용 `http-proxy-middleware`. 파일은에서 구성됩니다. [src/setupProxy.js](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/react-app/src/setupProxy.js) 및은(는) `.env` 및 `.env.development`.
+
+AEM 작성 환경에 연결하는 경우 해당 인증 방법을 구성해야 합니다.
+
+### CORS - 원본 간 리소스 공유
+
+이 프로젝트는 target AEM 환경에서 실행되는 CORS 구성을 사용하며 개발 모드에서 앱이 http://localhost:3000에서 실행되고 있다고 가정합니다. 다음 [코어 구성](https://github.com/adobe/aem-guides-wknd/blob/master/ui.config/src/main/content/jcr_root/apps/wknd/osgiconfig/config.author/com.adobe.granite.cors.impl.CORSPolicyImpl~wknd-graphql.cfg.json) 의 일부입니다. [WKND 참조 사이트](https://github.com/adobe/aem-guides-wknd).
+
+![CORS 구성](assets/cross-origin-resource-sharing-configuration.png)
+
+*작성 환경에 대한 샘플 CORS 구성*
