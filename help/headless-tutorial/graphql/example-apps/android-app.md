@@ -9,17 +9,19 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
-source-git-commit: 0ab14016c27d3b91252f3cbf5f97550d89d4a0c9
+source-git-commit: 9b1e38c8d4a0301c124c6f1607a9e4362b0e9cd1
 workflow-type: tm+mt
-source-wordcount: '722'
+source-wordcount: '734'
 ht-degree: 4%
 
 ---
 
 
-# Android SwiftUI 앱
+# Android 앱
 
 예제 애플리케이션은 AEM(Adobe Experience Manager)의 헤드리스 기능을 살펴보는 좋은 방법입니다. AEM의 GraphQL API를 사용하여 컨텐츠를 쿼리하는 방법을 보여 주는 Android 애플리케이션이 제공됩니다. 다음 [Java용 AEM Headless 클라이언트](https://github.com/adobe/aem-headless-client-java) GraphQL 쿼리를 실행하고 데이터를 Java 개체에 매핑하여 앱을 실행하는 데 사용됩니다.
+
+보기 [GitHub의 소스 코드](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/android-app)
 
 >[!VIDEO](https://video.tv.adobe.com/v/338093/?quality=12&learn=on)
 
