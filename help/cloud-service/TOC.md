@@ -4,9 +4,9 @@ user-guide-description: Adobe Experience Manager as a Cloud Service를 위한 �
 breadcrumb-title: AEM as a Cloud Service 튜토리얼
 sub-product: cloud-service
 team: TM
-source-git-commit: d42fd02b06429be1b847958f23f273cf842d3e1b
+source-git-commit: 9063c3dfd9ab9ac537850694ce6545a3fdc840e9
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '599'
 ht-degree: 23%
 
 ---
@@ -130,8 +130,9 @@ ht-degree: 23%
       + [Git 설정](./forms/developing-for-cloud-service/setup-git.md)
       + [AEM과 IntelliJ 동기화](./forms/developing-for-cloud-service/intellij-and-aem-sync.md)
       + [양식 작성](./forms/developing-for-cloud-service/deploy-your-first-form.md)
-      + [Cloud Manager로 푸시](./forms/developing-for-cloud-service/push-project-to-cloud-manager-git.md)
       + [Cloud Services 및 FDM 포함](./forms/developing-for-cloud-service/azure-storage-fdm.md)
+      + [Cloud Manager로 푸시](./forms/developing-for-cloud-service/push-project-to-cloud-manager-git.md)
+      + [개발 환경에 배포](./forms/developing-for-cloud-service/deploy-to-dev-environment.md)
    + 적응형 양식 만들기{#create-first-af}
       + [소개](./forms/create-first-af/introduction.md)
       + [테마 만들기](./forms/create-first-af/create-theme.md)

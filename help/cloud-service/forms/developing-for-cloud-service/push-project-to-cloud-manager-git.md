@@ -8,9 +8,9 @@ level: Beginner, Intermediate
 version: Cloud Service
 topic: Development
 kt: 8851
-source-git-commit: d38da94bd4164163a16899b565c90b159194580a
+source-git-commit: 9063c3dfd9ab9ac537850694ce6545a3fdc840e9
 workflow-type: tm+mt
-source-wordcount: '141'
+source-wordcount: '139'
 ht-degree: 0%
 
 ---
@@ -35,10 +35,10 @@ git commit -m "My First AF"
 이렇게 하면 로컬 Git 저장소의 마스터 분기에 파일이 커밋됩니다
 
 ```
-git push -f bankingapp master:"My First AF"
+git push -f bankingapp master:"MyFirstAF"
 ```
 
-위의 명령에서는 로컬 git 리포지토리의 마스터 분기를 뱅킹앱 친숙한 이름으로 식별된 클라우드 관리자 리포지토리의 내 첫 번째 AF 분기로 푸시합니다
+위의 명령에서는 로컬 git 리포지토리의 마스터 분기를 뱅킹앱 친숙한 이름으로 식별된 클라우드 관리자 리포지토리의 MyFirstAF 분기로 푸시합니다.
 
 
 
