@@ -5,9 +5,9 @@ user-guide-title: AEM Forms 비디오 및 튜토리얼
 user-guide-description: 초보자 및 숙련된 AEM Forms 개발자를 위한 AEM Forms 리소스 모음입니다.
 breadcrumb-title: AEM Forms 튜토리얼
 index: y
-source-git-commit: 72a9edb3edc73cf14f13bb53355a37e707ed4c79
+source-git-commit: 280ea1ec8fc5da644320753958361488872359cc
 workflow-type: tm+mt
-source-wordcount: '1607'
+source-wordcount: '1611'
 ht-degree: 3%
 
 ---
@@ -50,6 +50,7 @@ ht-degree: 3%
    + [응용 Forms의 미리 채우기 서비스](adaptive-forms/prefill-service-adaptive-forms-article-use.md)
    + [적응형 Forms에서 사용자 지정 제출](adaptive-forms/custom-submit-aem-forms-article.md)
    + [응용 Forms의 Captcha](adaptive-forms/forms-captcha-feature-video-use.md)
+   + [몇 가지 유용한 UI 팁](adaptive-forms/forms-ui-tips.md)
    + [웹 페이지에 적응형 양식 포함](adaptive-forms/embed-af-web-page.md)
    + [문자열 배열 만들기](adaptive-forms/converting-comma-seperated-string-to-array.md)
    + [OSGI 워크플로우에서 XML에 값 설정 사용](adaptive-forms/setvalue-aem-forms-workflow-tutorial-use.md)
@@ -312,7 +313,6 @@ ht-degree: 3%
    + [일반: Steps-to-reset-default-password-for-users-in-AEM-Forms-JEE](troubleshooting/steps-to-reset-default-password-for-users-in-aem-forms-jee.md)
    + [일반: Steps-to-reset-default-password-for-users-in-AEM-Forms-OSGI](troubleshooting/steps-to-reset-default-password-for-users-in-aem-forms-osgi.md)
    + [일반: 클러스터에서 Gemfire 로케이터를 설정하고 관련 구성을 수행하는 절차](troubleshooting/steps-to-set-up-gemfire-locators-in-a-cluster-and-perform-related-configuration.md)
-
 
 
 
