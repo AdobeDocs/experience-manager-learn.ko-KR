@@ -5,9 +5,9 @@ user-guide-title: AEM Forms 비디오 및 튜토리얼
 user-guide-description: 초보자 및 숙련된 AEM Forms 개발자를 위한 AEM Forms 리소스 모음입니다.
 breadcrumb-title: AEM Forms 튜토리얼
 index: y
-source-git-commit: 280ea1ec8fc5da644320753958361488872359cc
+source-git-commit: 96b78ff5056bd9c2be39fb2cf21b4f92863af089
 workflow-type: tm+mt
-source-wordcount: '1611'
+source-wordcount: '1618'
 ht-degree: 3%
 
 ---
@@ -50,7 +50,6 @@ ht-degree: 3%
    + [응용 Forms의 미리 채우기 서비스](adaptive-forms/prefill-service-adaptive-forms-article-use.md)
    + [적응형 Forms에서 사용자 지정 제출](adaptive-forms/custom-submit-aem-forms-article.md)
    + [응용 Forms의 Captcha](adaptive-forms/forms-captcha-feature-video-use.md)
-   + [몇 가지 유용한 UI 팁](adaptive-forms/forms-ui-tips.md)
    + [웹 페이지에 적응형 양식 포함](adaptive-forms/embed-af-web-page.md)
    + [문자열 배열 만들기](adaptive-forms/converting-comma-seperated-string-to-array.md)
    + [OSGI 워크플로우에서 XML에 값 설정 사용](adaptive-forms/setvalue-aem-forms-workflow-tutorial-use.md)
@@ -96,6 +95,9 @@ ht-degree: 3%
    + [양식 데이터 모델 구성](prefill-fdm-db/configuring-form-data-model.md)
    + [요청 매개 변수 가져오기](prefill-fdm-db/get-request-parameter.md)
    + [적응형 양식 만들기](prefill-fdm-db/create-adaptive-form.md)
++ UI 팁과 트릭{#ui-tips-and-tricks}
+   + [암호 필드 텍스트 전환](ui-tips-tricks/toggle-password.md)
+   + [공간 도구 모음 단추](ui-tips-tricks/toolbar-buttons.md)
 + 받은 편지함 사용자 지정{#inbox-customization}
    + [소개](inbox-customization/introduction.md)
    + [사용자 지정 열 추가](inbox-customization/add-married-column.md)
