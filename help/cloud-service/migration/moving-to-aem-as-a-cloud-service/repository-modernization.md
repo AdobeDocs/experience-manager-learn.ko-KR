@@ -9,10 +9,10 @@ level: Experienced
 kt: 8630
 thumbnail: 336958.jpeg
 exl-id: e9bd9035-1f2d-4a34-a581-9c1ec2c7bc04
-source-git-commit: 53a314c5cd9eaad5a26a0992c750c159f8e3697f
+source-git-commit: 1ddf6154d50a341d9a0fd4234392c37ced878a73
 workflow-type: tm+mt
 source-wordcount: '161'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 5%
 
 ## Repository Modernizer 도구
 
-![Dispatcher 변환기](./assets/repository-modernizer.png)
+![Repository Modernizer](./assets/repository-modernizer.png)
 
 코드 베이스를 리팩터링하는 과정의 일부로, [Repository Modernizer 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/repo-modernizer.html) 6.x 코드 베이스를 보다 현대적인 구조로 재구성하는 방법을 설명합니다.
 
