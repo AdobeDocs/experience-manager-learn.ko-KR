@@ -1,20 +1,18 @@
 ---
 title: AEM Forms Tutorials 및 비디오
-seo-title: AEM Forms Tutorials and Videos
 description: 초보자 및 숙련된 AEM Forms 개발자를 위한 AEM Forms 리소스 모음입니다
-seo-description: Collection of AEM Forms resources for beginners and experienced AEM Forms developers
 sub-product: forms
 topic: Development
 role: Developer
 exl-id: c1972937-56c5-47af-9232-f31bdf69dfbe
-source-git-commit: 9063c3dfd9ab9ac537850694ce6545a3fdc840e9
+source-git-commit: eb669d1e2493d9b4a973314ab1323764920ba220
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 7%
+source-wordcount: '516'
+ht-degree: 6%
 
 ---
 
-# 개요 {#overview}
+# AEM Forms Tutorials 및 비디오 {#overview}
 
 Adobe Experience Manager(AEM)은 백엔드 프로세스, 비즈니스 규칙 및 데이터와 통합하면서도 복잡한 디지털 양식을 작성, 관리, 게시 및 업데이트하는 사용하기 쉬운 솔루션을 제공합니다. 이 사용자 안내서에는 AEM Forms의 다양한 기능과 성능에 대한 비디오 및 자습서가 포함되어 있습니다
 
@@ -26,7 +24,7 @@ Adobe Experience Manager(AEM)은 백엔드 프로세스, 비즈니스 규칙 및
 
 * **[대화형 통신 문서의 다중 시리즈 차트(비디오)](./interactive-communications/multiseriescharts.md)**
 
-   *동일한 차트에 둘 이상의 시리즈를 플롯합니다.여러 시리즈 차트는 일반적으로 Line,Bar,Column 차트 유형과 함께 사용됩니다.*
+   *동일한 차트에 둘 이상의 시리즈를 플롯합니다. 여러 시리즈 차트는 일반적으로 라인, 막대, 열 차트 유형과 연관되어 사용됩니다.*
 
 * **[재사용 가능한 워크플로우 모델 만들기](./adaptive-forms/re-usable-aem-forms-workflow-models-article.md)**
 
@@ -38,7 +36,7 @@ Adobe Experience Manager(AEM)은 백엔드 프로세스, 비즈니스 규칙 및
 <tr>
   <td>
     <a href="./creating-your-first-adaptive-form/introduction-and-setup.md">
-      <img alt="400 x 225px" src="./assets/afhero.png" />
+      <img alt="첫 번째 적응형 양식 만들기" src="./assets/afhero.png" />
     </a>
     <div>
       <a href="./creating-your-first-adaptive-form/introduction-and-setup.md">
@@ -51,7 +49,7 @@ Adobe Experience Manager(AEM)은 백엔드 프로세스, 비즈니스 규칙 및
   </td>
    <td>
     <a href="./ic-print-channel-tutorial/introduction.md">
-      <img alt="400 x 225px" src="./assets/correspondence-management1.png" />
+      <img alt="첫 번째 인쇄 채널 문서 만들기" src="./assets/correspondence-management1.png" />
     </a>
     <div>
       <a href="./ic-print-channel-tutorial/introduction.md">
@@ -64,7 +62,7 @@ Adobe Experience Manager(AEM)은 백엔드 프로세스, 비즈니스 규칙 및
   </td>
   <td>
     <a href="./adaptive-forms/form-data-model-service-as-step-in-workflow-video-use.md">
-      <img alt="400 x 225px" src="./assets/fdmlogo.png" />
+      <img alt="AEM Workflow에서 양식 데이터 모델 사용" src="./assets/fdmlogo.png" />
     </a>
     <div>
       <a href="./adaptive-forms/form-data-model-service-as-step-in-workflow-video-use.md">
@@ -80,7 +78,7 @@ Adobe Experience Manager(AEM)은 백엔드 프로세스, 비즈니스 규칙 및
 
 >[!TIP]
 >
->AEM Forms의 다양한 기능을 보여주는 이 샘플 모음입니다. .
+>AEM Forms의 다양한 기능을 보여주는 이 샘플 모음입니다.
 
 
 ## 적응형 양식 샘플
@@ -181,10 +179,10 @@ Adobe Experience Manager(AEM)은 백엔드 프로세스, 비즈니스 규칙 및
 ## 추가 리소스
 
 * [Experience League - AEM 살펴보기](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
-* [AEM Sites 작성 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/user-guide.html)
-* [AEM Sites 개발 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/developing/user-guide.html)
-* [AEM Sites 관리 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/administering/user-guide.html)
-* [AEM Sites 배포 설명서](https://helpx.adobe.com/kr/experience-manager/6-5/sites/deploying/user-guide.html)
+* [AEM Sites 작성 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html)
+* [AEM Sites 개발 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html)
+* [AEM Sites 관리 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/administering/home.html)
+* [AEM Sites 배포 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/home.html)
 * [AEM as a Cloud Service 튜토리얼](/help/cloud-service/overview.md)
 * [AEM Assets 튜토리얼](/help/assets/overview.md)
 * [AEM Forms 튜토리얼](/help/forms/overview.md)

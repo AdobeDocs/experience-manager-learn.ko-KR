@@ -2,21 +2,21 @@
 title: AEM Assets Essentials 비디오
 description: Adobe Experience Manager Assets Essentials용 비디오 모음입니다
 sub-product: assets
-source-git-commit: 21d6df065fe61614d3bbd68ce2f20d3dc23a9cef
+exl-id: 6a8534fa-bc99-438b-9107-2a428e06619c
+source-git-commit: eb669d1e2493d9b4a973314ab1323764920ba220
 workflow-type: tm+mt
-source-wordcount: '132'
+source-wordcount: '131'
 ht-degree: 0%
 
 ---
 
-
-# 개요
+# Assets Essentials 비디오
 
 ![Assets Essentials](./assets/overview/hero.png)
 
-Experience Manager Assets Essentials은 간단한 자산 관리 및 공동 작업을 위한 간소화된 사용자 인터페이스를 제공합니다.
+Experience Manager Assets Essentials는 간단한 자산 관리 및 공동 작업을 위한 간소화된 사용자 인터페이스를 제공합니다.
 
-Assets Essentials을 사용하여 자산을 관리하는 방법과 Adobe 여정 Orchestrator와 통합하는 방법에 대한 비디오를 확인하십시오!
+이 비디오에서 Assets Essentials을 사용하여 자산을 관리하는 방법, Adobe 여정 Orchestrator와 통합할 수 있는 방법에 대해 알아보십시오.
 
 ## Assets Essentials에 대해 자세히 알아보기
 
@@ -57,7 +57,7 @@ Assets Essentials을 사용하여 자산을 관리하는 방법과 Adobe 여정 
       </a>
    </div>
    <p>
-      <em>Assets Essentials과 Adobe Journey Optimizer이 통합하는 방법을 알아봅니다!</em>
+      <em>Assets Essentials을 Adobe Journey Optimizer과 통합하는 방법을 알아봅니다!</em>
    <p>
 </td>
 </table>

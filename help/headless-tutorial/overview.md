@@ -1,19 +1,19 @@
 ---
-title: AEM Headless 자습서
+title: AEM 헤드리스 Tutorials
 description: Adobe Experience Manager을 헤드리스 CMS로 사용하는 방법에 대한 자습서 모음입니다.
 feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 57f88d79-9879-4bb9-a3db-9fec95e3a0bd
-source-git-commit: 0ab14016c27d3b91252f3cbf5f97550d89d4a0c9
+source-git-commit: eb669d1e2493d9b4a973314ab1323764920ba220
 workflow-type: tm+mt
 source-wordcount: '527'
 ht-degree: 0%
 
 ---
 
-# AEM Headless 자습서
+# AEM 헤드리스 Tutorials
 
 Adobe Experience Manager(AEM)에는 헤드리스 엔드포인트를 정의하고 콘텐츠를 JSON으로 전달하는 여러 가지 옵션이 있습니다. 실습 위주의 자습서를 통해 다양한 옵션을 사용하는 방법을 탐색하고 사용자에게 적합한 옵션을 선택할 수 있습니다.
 
@@ -92,11 +92,11 @@ Adobe Experience Manager(AEM)에는 헤드리스 엔드포인트를 정의하고
     </a>
     <div>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/android-app.html">
-    <strong>Android 예</strong>
+    <strong>Android™ 예</strong>
     </a>
     </div>
     <p>
-    <em>AEM GraphQL API에서 제공하는 Android 애플리케이션입니다.</em>
+    <em>AEM GraphQL API에서 제공하는 Android™ 애플리케이션입니다.</em>
     </p>
   </td>
   <td>
@@ -185,7 +185,7 @@ Adobe Experience Manager(AEM)에는 헤드리스 엔드포인트를 정의하고
     </a>
     </div>
     <p>
-    <em>Content Services 및 REST 를 사용하여 모바일 Android 애플리케이션을 실행합니다.</em>
+    <em>Content Services 및 REST 를 사용하여 모바일 Android™ 애플리케이션을 실행합니다.</em>
     </p>
   </td>
   <td>

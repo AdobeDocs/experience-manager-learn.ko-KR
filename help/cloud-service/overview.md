@@ -1,19 +1,19 @@
 ---
-title: Adobe Experience Manager as Cloud Service 자습서
-description: Adobe Experience Manager (AEM) as a Cloud Service을 위한 자습서 모음입니다
-sub-product: 사이트, cloud manager, foundation, assets
+title: Adobe Experience Manager을 Cloud Service 비디오 및 Tutorials으로 사용
+description: Adobe Experience Manager(AEM) as a Cloud Service 자습서 모음입니다
+sub-product: sites, cloud-manager, foundation, assets
 kt: 3289
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 650ba2d9-6083-4772-84c5-1cdb97b5f0e9
+source-git-commit: eb669d1e2493d9b4a973314ab1323764920ba220
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 8%
+source-wordcount: '276'
+ht-degree: 7%
 
 ---
 
+# AEM as a Cloud Service 비디오 및 Tutorials {#overview}
 
-# 개요 {#overview}
-
-Adobe Experience Manager(AEM)는 이제 클라우드 서비스로 제공됩니다. AEM as a Cloud Service은 모든 사용 사례 및 기능을 유지 및 확장하면서 과거의 투자 및 혁신을 바탕으로 구축된 차세대 Experience Manager 제품군을 도입합니다.
+Adobe Experience Manager(AEM)는 이제 클라우드 서비스로 제공됩니다. AEM as a Cloud Service에서는 모든 사용 사례 및 기능을 유지 및 확장하면서 과거의 투자 및 혁신을 바탕으로 구축된 차세대 Experience Manager 제품군을 도입합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/31085/?quality=12&learn=on)
 
@@ -21,7 +21,7 @@ Adobe Experience Manager(AEM)는 이제 클라우드 서비스로 제공됩니�
 
 * **[토큰 기반 인증(자습서)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)**
 
-   *HTTP를 통해 토큰 기반 인증을 사용하여 AEM과 Cloud Service으로 상호 작용하는 방법을 알아봅니다*
+   *HTTP를 통해 AEM as a Cloud Service과 상호 작용하는 토큰 기반 인증을 사용하는 방법을 알아봅니다*
 
 * **[헤드리스 GraphQL(자습서)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)**
 
@@ -65,7 +65,7 @@ Adobe Experience Manager(AEM)는 이제 클라우드 서비스로 제공됩니�
          </a>
       </div>
       <p>
-         <em>로컬 개발 시스템을 AEM as a Cloud Service 개발용으로 준비하십시오!</em>
+         <em>AEM as a Cloud Service 개발을 위한 로컬 개발 컴퓨터를 준비하십시오!</em>
       <p>
    </td>   
    <td>
@@ -78,7 +78,7 @@ Adobe Experience Manager(AEM)는 이제 클라우드 서비스로 제공됩니�
          </a>
       </div>
       <p>
-         <em>AEM에서 Cloud Service SDK의 로컬 빠른 시작으로서 애플리케이션을 디버깅하는 데 사용되는 도구를 탐색합니다.</em>
+         <em>AEM as a Cloud Service SDK의 로컬 빠른 시작에서 애플리케이션을 디버깅하는 데 사용되는 도구를 탐색합니다.</em>
       <p>
    </td>
 </table>

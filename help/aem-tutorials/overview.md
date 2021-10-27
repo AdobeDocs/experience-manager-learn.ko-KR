@@ -1,15 +1,15 @@
 ---
 title: AEM 자습서
-description: 'Adobe Experience Manager을 위한 비디오 및 자습서 모음입니다. '
-source-git-commit: 23664bae44b74ee35ab7f7cb415d2ba017ea8752
+description: Adobe Experience Manager을 위한 비디오 및 자습서 모음입니다.
+exl-id: fe83a2dc-b43a-4e71-9b03-d31ec4f6a6ff
+source-git-commit: eb669d1e2493d9b4a973314ab1323764920ba220
 workflow-type: tm+mt
-source-wordcount: '174'
-ht-degree: 22%
+source-wordcount: '177'
+ht-degree: 26%
 
 ---
 
-
-# 개요 {#overview}
+# AEM 자습서 {#overview}
 
 Adobe Experience Manager(AEM)은 선도적인 경험 관리 플랫폼입니다. 이 사용 안내서에는 AEM에서 제공하는 가치를 극대화하는 데 도움이 되는 비디오 및 자습서가 포함되어 있습니다.
 
@@ -21,12 +21,12 @@ Adobe Experience Manager(AEM)은 선도적인 경험 관리 플랫폼입니다. 
 + [AEM as Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 + [AEM 기반 정보](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/overview.html)
 
-## AEM 다중 단계 Tutorials
+## AEM 여러 단계 Tutorials
 
 + [AEM Sites 시작하기 - WKND 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 + [AEM 헤드리스 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
 + [AEM SPA Editor 및 React 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html)
-+ [AEM SPA 편집기 및 Angular 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-angular-tutorial/overview.html)
++ [AEM SPA 편집기 및 Angular 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html)
 + [AEM 및 Adobe Target 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html)
 + [AEM 6.x Dispatcher 캐시 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/overview.html)
 + [AEM 6.x Dynamic Media Classic 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/dynamic-media-classic-tutorial/overview.html)

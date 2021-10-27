@@ -1,18 +1,18 @@
 ---
 title: AEM Assets 비디오 및 튜토리얼
 description: Adobe Experience Manager Assets에 대한 비디오 및 튜토리얼 모음입니다
-sub-product: 자산, dynamic media
-source-git-commit: d89cd051f9fc8800d94ad11851ceaf4212f3c797
+sub-product: assets, dynamic-media
+exl-id: 1d0b0183-25ee-4cb4-82a5-3506e7c1c908
+source-git-commit: eb669d1e2493d9b4a973314ab1323764920ba220
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 19%
+source-wordcount: '235'
+ht-degree: 18%
 
 ---
 
+# AEM Assets 비디오 및 튜토리얼 {#overview}
 
-# 개요 {#overview}
-
-Adobe Experience Manager Assets는 AEM Platform의 디지털 자산 관리 도구로, 사용자가 웹 기반 저장소에서 디지털 자산(이미지, 비디오, 문서 및 오디오 클립)을 만들고, 관리하고 공유할 수 있습니다. 이 사용자 안내서에는 AEM Assets의 다양한 기능과 성능에 대한 비디오 및 자습서가 포함되어 있습니다.
+Adobe Experience Manager(AEM) Assets는 AEM Platform의 디지털 자산 관리 도구로, 사용자가 웹 기반 저장소에서 디지털 자산(이미지, 비디오, 문서 및 오디오 클립)을 만들고, 관리하고 공유할 수 있도록 해줍니다. 이 사용자 안내서에는 AEM Assets의 다양한 기능과 성능에 대한 비디오 및 자습서가 포함되어 있습니다.
 
 ## 새로운 기능
 
@@ -26,7 +26,7 @@ Adobe Experience Manager Assets는 AEM Platform의 디지털 자산 관리 도�
 
 * **[워터마크(비디오)](./advanced/watermarks.md)**
 
-   *AEM as a Cloud Service에서 자산 표현물을 워터마크 지정하는 방법을 알아봅니다*
+   *AEM as a Cloud Service에서 자산 표현물을 워터마크 지정하는 방법 알아보기*
 
 * **[기본 권한(비디오)](./configuring/baseline-permissions.md)**
 
@@ -83,7 +83,7 @@ Adobe Experience Manager Assets는 AEM Platform의 디지털 자산 관리 도�
 ## 추가 리소스
 
 * [Experience League - AEM 살펴보기](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
-* [AEM Assets 설명서](https://helpx.adobe.com/kr/experience-manager/6-5/assets/user-guide.html)
+* [AEM Assets 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=en)
 * [AEM as a Cloud Service 튜토리얼](/help/cloud-service/overview.md)
 * [AEM Sites 튜토리얼](/help/sites/overview.md)
 * [AEM Forms 튜토리얼](/help/forms/overview.md)
