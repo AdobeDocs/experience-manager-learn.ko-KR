@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 7e4cb782-836d-4ec0-97d0-645b91ea43e0
-source-git-commit: 68c49f526146e2f2ba626dc2126fb96d4ae09854
+source-git-commit: d8738ef33940efc856e6fc00f6a57abb641598e5
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 7%
@@ -27,8 +27,9 @@ ht-degree: 7%
 
 HLS 브라우저 지원은 지원되지 않는 브라우저의 경우 점진적 비디오 게재로 폴백합니다
 
->!![NOTE]
-Dynamic Media Hybrid는 2022년 5월 이후 Internet Explorer 11을 지원하지 않습니다.
+>[!NOTE]
+>
+> Dynamic Media Hybrid는 2022년 5월 이후 Internet Explorer 11을 지원하지 않습니다.
 
 <table> 
  <thead> 
