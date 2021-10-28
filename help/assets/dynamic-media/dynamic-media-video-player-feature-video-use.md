@@ -2,18 +2,18 @@
 title: AEM Dynamic Media에서 비디오 플레이어 사용
 description: 데스크탑 클라이언트와 브라우저에서 적응형 비디오 스트리밍을 지원하기 위해 Flash 런타임을 사용하는 AEM Dynamic Media 비디오 플레이어가 플래시 기반 컨텐츠 스트리밍에서 더 적극적이 되었습니다. HLS(Apple의 HTTP Live 스트리밍 비디오 게재 프로토콜)의 도입으로 이제 플래시에 의존하지 않고 컨텐츠를 스트리밍할 수 있습니다.
 sub-product: dynamic-media
-feature: 비디오 프로필
+feature: Video Profiles
 version: 6.3, 6.4, 6.5
-topic: 컨텐츠 관리
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 7e4cb782-836d-4ec0-97d0-645b91ea43e0
+source-git-commit: 68c49f526146e2f2ba626dc2126fb96d4ae09854
 workflow-type: tm+mt
-source-wordcount: '218'
-ht-degree: 9%
+source-wordcount: '223'
+ht-degree: 7%
 
 ---
-
 
 # AEM Dynamic Media에서 비디오 플레이어 사용{#using-the-video-player-in-aem-dynamic-media}
 
@@ -26,6 +26,9 @@ ht-degree: 9%
 >[!VIDEO](https://video.tv.adobe.com/v/17429/?quality=9&learn=on)
 
 HLS 브라우저 지원은 지원되지 않는 브라우저의 경우 점진적 비디오 게재로 폴백합니다
+
+>!![NOTE]
+Dynamic Media Hybrid는 2022년 5월 이후 Internet Explorer 11을 지원하지 않습니다.
 
 <table> 
  <thead> 
