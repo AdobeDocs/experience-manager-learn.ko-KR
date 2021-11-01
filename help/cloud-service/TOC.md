@@ -4,10 +4,10 @@ user-guide-description: Adobe Experience Manager as a Cloud Service를 위한 �
 breadcrumb-title: AEM as a Cloud Service 튜토리얼
 sub-product: cloud-service
 team: TM
-source-git-commit: 9063c3dfd9ab9ac537850694ce6545a3fdc840e9
+source-git-commit: e8b3bcaeee40b4bfd4f967f929ad664e8d168cb0
 workflow-type: tm+mt
-source-wordcount: '599'
-ht-degree: 23%
+source-wordcount: '604'
+ht-degree: 22%
 
 ---
 
@@ -59,6 +59,7 @@ ht-degree: 23%
       + [Dispatcher 구성 마이그레이션](./developing/basics/dispatcher-configuration.md)
    + AEM 프로젝트{#aem-projects}
       + [AEM Maven 프로젝트](./developing/projects/maven-project-structure.md)
+      + [AEM Maven 프로젝트 정리](./developing/projects/remove-samples.md)
    + OSGi 서비스{#osgi-services}
       + [OSGi 서비스 기본 사항](./developing/osgi-services/basics.md)
       + [OSGi 구성 요소 라이프사이클](./developing/osgi-services/lifecycle.md)
