@@ -2,9 +2,9 @@
 user-guide-title: AEM Assets 비디오 및 튜토리얼
 user-guide-description: Adobe Experience Manager Assets에 대한 비디오 및 튜토리얼 모음입니다.
 breadcrumb-title: AEM Assets 튜토리얼
-feature-set: Experience Manager, Experience Manager Assets, Experience Manager Sites
+feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: 519047931bd4cbfb5dd2dd6f2b7b2871512992c5
+source-git-commit: 08146f57235f3de7fd5ab73754166cc85e1f7dda
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 26%
@@ -76,7 +76,7 @@ ht-degree: 26%
    + [연결된 자산](./sharing/connected-assets.md)
 
 
-+ Creative Workflows와 통합{#creative-workflows}
++ Creative 워크플로우와 통합{#creative-workflows}
    + [AEM Desktop App](./creative-workflows/aem-desktop-app.md)
    + [Adobe Asset Link](./creative-workflows/adobe-asset-link.md)
    + [Adobe Stock](./creative-workflows/adobe-stock.md)
@@ -101,7 +101,7 @@ ht-degree: 26%
 + Dynamic Media{#dynamic-media}
    + [Dynamic Media 개요](dynamic-media/dynamic-media-overview-feature-video-use.md)
    + [스마트 자르기](dynamic-media/smart-crop-feature-video-use.md)
-   + [경험 구성요소](dynamic-media/dynamic-media-experience-fragments-feature-video-use.md)
+   + [경험 조각](dynamic-media/dynamic-media-experience-fragments-feature-video-use.md)
    + [대화형 비디오](dynamic-media/dynamic-media-interactive-video-feature-video-use.md)
    + [비디오 플레이어](dynamic-media/dynamic-media-video-player-feature-video-use.md)
    + [360 비디오](dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.md)
