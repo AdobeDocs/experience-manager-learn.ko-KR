@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: d2da6efa-1f77-4391-adda-e3180c42addc
-source-git-commit: 9c1649247c65a1fa777b7574d1ab6ab49d0f722b
+source-git-commit: 846400cd3ac4eb1b04ece055dfcbbd677f11e88e
 workflow-type: tm+mt
-source-wordcount: '1814'
+source-wordcount: '1819'
 ht-degree: 1%
 
 ---
@@ -64,9 +64,9 @@ ht-degree: 1%
    $ java -jar aem-author-p4502.jar
    ```
 
-1. 다음과 같이 관리자 암호를 제공합니다. `admin`. 모든 관리자 암호는 사용할 수 있지만 로컬 개발에 기본값을 사용하여 다시 구성할 필요가 없습니다.
+1. 다음과 같이 관리자 암호를 제공합니다. `admin`. 모든 관리자 암호는 사용할 수 있지만 `admin` 를 사용하도록 선택할 수 있습니다.
 1. 몇 분 후에 AEM 인스턴스가 설치를 완료하고 새 브라우저 창이 다음에 열립니다. [http://localhost:4502](http://localhost:4502).
-1. 사용자 이름으로 로그인합니다. `admin` 및 암호 `admin`.
+1. 사용자 이름으로 로그인합니다. `admin` 및 AEM 초기 시작 중에 선택한 암호(일반적으로 `admin`).
 
 ## 샘플 컨텐츠 및 GraphQL 엔드포인트 설치 {#wknd-site-content-endpoints}
 
@@ -101,15 +101,15 @@ WKND 참조 사이트에는 [GraphQL 끝점](https://experienceleague.adobe.com/
 
    ![활강 스키 콘텐츠 조각](assets/setup/down-hillskiing-fragment.png)
 
-   Observe that various fields like **Title**, **Description**, and **Activity** define the fragment.
+   다음과 같은 다양한 필드를 관찰합니다 **제목**, **설명**, 및 **활동** 조각을 정의합니다.
 
-   **컨텐츠 조각** 는 AEM에서 컨텐츠를 관리할 수 있는 방법 중 하나입니다. 컨텐츠 조각은 텍스트, 리치 텍스트, 날짜 또는 다른 컨텐츠 조각에 대한 참조와 같은 구조화된 데이터 요소로 구성된 재사용 가능한 프레젠테이션에 관계 없는 컨텐츠입니다. Content Fragments will be explored in greater detail later in the tutorial.
+   **컨텐츠 조각** 는 AEM에서 컨텐츠를 관리할 수 있는 방법 중 하나입니다. 컨텐츠 조각은 텍스트, 리치 텍스트, 날짜 또는 다른 컨텐츠 조각에 대한 참조와 같은 구조화된 데이터 요소로 구성된 재사용 가능한 프레젠테이션에 관계 없는 컨텐츠입니다. 컨텐츠 조각은 튜토리얼의 후반부에 보다 자세히 탐색을 할 수 있습니다.
 
 1. 클릭 **취소** 조각을 닫습니다. 다른 폴더 중 일부를 자유롭게 탐색하고 다른 Adventure 컨텐츠를 탐색합니다.
 
 >[!NOTE]
 >
-> If using a Cloud Service environment see the documentation for how to [deploy a code base like the WKND Reference site to a Cloud Service environment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#coding-against-the-right-aem-version).
+> Cloud Service 환경을 사용하는 경우 방법에 대한 설명서를 참조하십시오. [WKND 참조 사이트와 같은 코드 베이스를 Cloud Service 환경에 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#coding-against-the-right-aem-version).
 
 ## 샘플 앱 설치{#sample-app}
 
@@ -213,9 +213,9 @@ React 앱이 실행 중이니 AEM에서 콘텐츠를 업데이트하고 앱에 �
 
 AEM은 기본적으로 보안을 유지하여 교차 도메인 요청을 차단하므로 허가되지 않은 응용 프로그램이 해당 내용에 연결되어 표시되지 않습니다.
 
-To allow this tutorial&#39;s React app to interact with AEM&#39;s GraphQL API endpoints, a cross-origin resource sharing configuration has been defined in the WKND Site reference project.
+이 자습서의 React 앱이 AEM GraphQL API 끝점과 상호 작용할 수 있도록 WKND 사이트 참조 프로젝트에 원본 간 리소스 공유 구성이 정의되어 있습니다.
 
-![Cross-Origin Resource Sharing Configuration](assets/setup/cross-origin-resource-sharing-configuration.png)
+![원본 간 리소스 공유 구성](assets/setup/cross-origin-resource-sharing-configuration.png)
 
 배포된 구성을 보려면
 
@@ -223,7 +223,7 @@ To allow this tutorial&#39;s React app to interact with AEM&#39;s GraphQL API en
 
    >[!NOTE]
    >
-   > The Web Console is only available on the SDK. AEM as a Cloud Service 환경에서는 [개발자 콘솔](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html).
+   > 웹 콘솔은 SDK에서만 사용할 수 있습니다. AEM as a Cloud Service 환경에서는 [개발자 콘솔](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html).
 
 1. 상단 메뉴에서 **OSGI** > **구성** 모든 것을 [OSGi 구성](http://localhost:4502/system/console/configMgr).
 1. 페이지를 아래로 스크롤합니다. **Granite CORS(원본 간 리소스 공유) Adobe**.
@@ -239,4 +239,4 @@ To allow this tutorial&#39;s React app to interact with AEM&#39;s GraphQL API en
    * 자격 증명 지원: `Yes`
       * React 앱이 AEM 작성자 서비스에서 보호된 GraphQL 종료 포인트와 통신하므로 필요합니다.
 
-This configuration and the GraphQL endpoints are a part of the AEM WKND project. 모든 [OSGi 구성은 여기에서](https://github.com/adobe/aem-guides-wknd/tree/master/ui.config/src/main/content/jcr_root/apps/wknd/osgiconfig).
+이 구성 및 GraphQL 종단점은 AEM WKND 프로젝트의 일부입니다. 모든 [OSGi 구성은 여기에서](https://github.com/adobe/aem-guides-wknd/tree/master/ui.config/src/main/content/jcr_root/apps/wknd/osgiconfig).
