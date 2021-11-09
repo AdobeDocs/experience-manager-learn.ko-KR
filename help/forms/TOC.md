@@ -5,9 +5,9 @@ user-guide-title: AEM Forms 비디오 및 튜토리얼
 user-guide-description: 초보자 및 숙련된 AEM Forms 개발자를 위한 AEM Forms 리소스 모음입니다.
 breadcrumb-title: AEM Forms 튜토리얼
 index: y
-source-git-commit: 08146f57235f3de7fd5ab73754166cc85e1f7dda
+source-git-commit: 84a0c78f89f78e161b460574b5927fc4aba2fe3a
 workflow-type: tm+mt
-source-wordcount: '1618'
+source-wordcount: '1623'
 ht-degree: 3%
 
 ---
@@ -98,6 +98,7 @@ ht-degree: 3%
 + UI 팁과 트릭{#ui-tips-and-tricks}
    + [암호 필드 텍스트 전환](ui-tips-tricks/toggle-password.md)
    + [공간 도구 모음 단추](ui-tips-tricks/toolbar-buttons.md)
+   + [중첩된 패널이 있는 탭 탐색](ui-tips-tricks/nested-panels.md)
 + 받은 편지함 사용자 지정{#inbox-customization}
    + [소개](inbox-customization/introduction.md)
    + [사용자 지정 열 추가](inbox-customization/add-married-column.md)
