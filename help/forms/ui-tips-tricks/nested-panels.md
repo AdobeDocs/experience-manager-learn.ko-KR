@@ -8,7 +8,7 @@ topic: Development
 role: Developer
 level: Beginner
 kt: 9335
-source-git-commit: 84a0c78f89f78e161b460574b5927fc4aba2fe3a
+source-git-commit: 20cae7a327131927f831ae9c49fb5eebfb00f5c4
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 0%
@@ -27,6 +27,7 @@ ht-degree: 0%
 ## 적응형 양식 만들기
 
 다음 구조로 적응형 양식을 만듭니다. 루트 패널에는 왼쪽에 탭으로 표시되는 하위 패널이 있습니다. 이러한 &quot;**탭**&quot;에는 추가 하위 패널이 있습니다. 예를 들어 가족 탭에는 배우자 및 1차 하위 구성요소라는 두 개의 하위 패널이 있습니다.
+
 도구 모음은 FormContainer 아래에 Prev 및 Next 단추와 함께 추가됩니다
 
 ![도구 모음 간격](assets/multiple-panels.png)
@@ -61,4 +62,5 @@ window.guideBridge.setFocus(null, 'prevItemDeep', true);
 >[!VIDEO](https://video.tv.adobe.com/v/338370?quality=9&learn=on)
 
 >[!NOTE]
-> 이 문서에 설명된 기능은 마지막 탭에서 작동하지 않습니다. 예를 들어 주소 탭에 하위 패널이 있는 경우 이 기능이 작동하지 않습니다.
+>
+>이 문서에 설명된 기능은 마지막 탭에서 작동하지 않습니다. 예를 들어 주소 탭에 하위 패널이 있는 경우 이 기능이 작동하지 않습니다.
