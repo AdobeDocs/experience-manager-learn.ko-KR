@@ -8,7 +8,7 @@ topic: Development
 role: Developer
 level: Beginner
 kt: 9335
-source-git-commit: 3bbd3e51ced1d990532a2cb3e309bf944bab8434
+source-git-commit: 458f1c2df6472be2b4704bb68eafb92b58f48a97
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 0%
@@ -61,10 +61,6 @@ window.guideBridge.setFocus(null, 'prevItemDeep', true);
 
 >[!VIDEO](https://video.tv.adobe.com/v/338370?quality=9&learn=on)
 
-이 문서에 설명된 기능은 마지막 탭에서 작동하지 않습니다. 예를 들어 주소 탭에 하위 패널이 있는 경우 이 기능이 작동하지 않습니다.
-
-<!--
 >[!NOTE]
 >
->The capability described in this article does not work in the last tab. For example if the Address tab had child panels this functionality would not work.
--->
+>이 문서에 설명된 기능은 마지막 탭에서 작동하지 않습니다. 예를 들어 주소 탭에 하위 패널이 있는 경우 이 기능이 작동하지 않습니다.
