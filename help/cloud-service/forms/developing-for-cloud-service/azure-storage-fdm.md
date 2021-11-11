@@ -8,7 +8,7 @@ level: Beginner, Intermediate
 version: cloud-service
 topic: Development
 kt: 9006
-source-git-commit: d38da94bd4164163a16899b565c90b159194580a
+source-git-commit: 8484897297940ab28619c4b1af5362a5937eadfa
 workflow-type: tm+mt
 source-wordcount: '202'
 ht-degree: 0%
@@ -44,10 +44,5 @@ ui.content 프로젝트의 filter.xml에 적절한 항목을 포함합니다
 
 
 >[!NOTE]
-
+>
 >이제 프로젝트를 빌드하고 배포하면 프로젝트에서 클라우드 인스턴스에서 사용할 수 있는 클라우드 서비스 구성을 기반으로 양식 데이터 모델을 사용할 수 있습니다
-
-
-
-
-
