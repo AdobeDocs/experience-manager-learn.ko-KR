@@ -16,9 +16,9 @@ role: Developer
 level: Beginner
 exl-id: 09a600f4-1ada-4fb7-ae44-586364cff389
 recommendations: disable
-source-git-commit: 08146f57235f3de7fd5ab73754166cc85e1f7dda
+source-git-commit: 04096fe3c99cdcce2d43b2b29899c2bbe37ac056
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '624'
 ht-degree: 6%
 
 ---
@@ -41,7 +41,7 @@ AEM Sites 프로젝트를 시작하는 데에는 두 가지 기본 접근 방법
 
 [AEM 프로젝트 원형 을 사용하여 자습서를 시작합니다](./project-archetype/overview.md)
 
-**AEM 사이트 템플릿** - 사전 정의된 사이트 템플릿을 사용하여 AEM 사이트를 생성하는 낮은 코드 접근 방법입니다. 즉시 사용 가능한 구성 요소 및 템플릿을 사용하여 사이트를 신속하게 설치 및 실행할 수 있습니다. CSS 및 JavaScript만 사용하여 브랜드별 스타일 및 사용자 지정을 적용하려면 테마 워크플로우를 사용하십시오. 새 프로젝트 및 개발자에게 권장됩니다. 현재 AEM as a Cloud Service에만 사용할 수 있습니다.
+**AEM 사이트 템플릿** - 사전 정의된 사이트 템플릿을 사용하여 AEM 사이트를 생성하는 낮은 코드 접근 방법인 빠른 사이트 작성이라고도 합니다. 즉시 사용 가능한 구성 요소 및 템플릿을 사용하여 사이트를 신속하게 설치 및 실행할 수 있습니다. CSS 및 JavaScript만 사용하여 브랜드별 스타일 및 사용자 지정을 적용하려면 테마 워크플로우를 사용하십시오. 새 프로젝트 및 개발자에게 권장됩니다. AEM as a Cloud Service에만 사용할 수 있습니다.
 
 [사이트 템플릿을 사용하여 자습서 시작](./site-template/create-site.md)
 
