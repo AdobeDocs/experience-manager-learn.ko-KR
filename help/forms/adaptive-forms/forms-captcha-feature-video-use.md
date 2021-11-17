@@ -1,24 +1,22 @@
 ---
 title: AEM Adaptive Forms에서 CAPTCHA 사용
 description: AEM Adaptive Forms이 있는 CAPTCHA 추가 및 사용.
-feature: 적응형 Forms,워크플로우
+feature: Adaptive Forms,Workflow
 version: 6.4,6.5
-topic: 개발
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 7e5dcc6e-fe56-49af-97e3-7dfaa9c8738f
+source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '204'
 ht-degree: 0%
 
 ---
 
-
 # AEM Adaptive Forms에서 CAPTCHA 사용{#using-captchas-with-aem-adaptive-forms}
 
 AEM Adaptive Forms이 있는 CAPTCHA 추가 및 사용.
-
-이 기능의 라이브 데모에 대한 링크는 [AEM Forms 샘플](https://forms.enablementadobe.com/content/samples/samples.html?query=0#collapse1) 페이지를 방문하십시오.
 
 >[!VIDEO](https://video.tv.adobe.com/v/18336/?quality=9&learn=on)
 
@@ -34,7 +32,7 @@ AEM Adaptive Forms이 있는 CAPTCHA 추가 및 사용.
 >
 >작성자 인스턴스에서 reCaptach 구성
 >
->작성자 인스턴스에서 Felix [웹 콘솔](http://localhost:4502/system/console/bundles)을 엽니다.
+>Felix 열기 [웹 콘솔](http://localhost:4502/system/console/bundles) 작성자 인스턴스에서
 >
 >com.adobe.granite.crypto.file bundle 검색
 >
@@ -44,8 +42,7 @@ AEM Adaptive Forms이 있는 CAPTCHA 추가 및 사용.
 >
 >* &lt;author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle20/data
 * HMAC 및 마스터 파일 복사
-
-게시 인스턴스에서 [felix 웹 콘솔](http://localhost:4502/system/console/bundles)을 엽니다. com.adobe.granite.crypto.file 번들을 검색합니다. 번들 ID를 확인합니다
+를 엽니다. [felix web console](http://localhost:4502/system/console/bundles) 게시 인스턴스에서 참조할 수 있습니다. com.adobe.granite.crypto.file 번들을 검색합니다. 번들 ID를 확인합니다
 게시 인스턴스의 파일 시스템에서 번들 ID로 이동합니다
 * &lt;publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle20/data
 * 기존 HMAC 및 마스터 파일을 삭제합니다.
@@ -56,4 +53,3 @@ AEM 게시 서버를 다시 시작합니다
 ## 지원 자료 {#supporting-materials}
 
 * [Google reCAPTCHA](https://www.google.com/recaptcha)
-

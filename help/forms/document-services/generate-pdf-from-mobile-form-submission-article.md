@@ -3,22 +3,21 @@ title: HTML5 양식 제출에서 PDF 생성
 description: 모바일 양식 제출에서 PDF 생성
 feature: Mobile Forms
 version: 6.4,6.5
-topic: 개발
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 91b4a134-44a7-474e-b769-fe45562105b2
+source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '544'
 ht-degree: 0%
 
 ---
 
-
 # HTML5 양식 제출에서 PDF 생성 {#generate-pdf-from-htm-form-submission}
 
-이 문서에서는 HTML5(모바일 Forms라고도 함) 양식 제출에서 pdf를 생성하는 단계를 안내합니다. 이 데모에서는 HTML5 양식에 이미지를 추가하고 이미지를 최종 pdf에 병합하는 데 필요한 단계도 설명합니다.
+이 문서는 HTML 5(일명 모바일 Forms) 양식 제출에서 pdf를 생성하는 단계를 안내합니다. 또한 이 데모에서는 HTML5 양식에 이미지를 추가하고 이미지를 최종 pdf에 병합하는 데 필요한 단계를 설명합니다.
 
-이 기능의 라이브 데모를 보려면 [샘플 서버](https://forms.enablementadobe.com/content/samples/samples.html?query=0)를 방문하여 &quot;Mobile Form To PDF&quot;를 검색하십시오.
 
 제출된 데이터를 xdp 템플릿에 병합하기 위해 다음을 수행합니다
 
@@ -115,9 +114,8 @@ function readURL(input) {
 
 * [이 문서와 연결된 패키지를 다운로드하여 설치합니다.](assets/pdf-from-mobile-form-submission.zip)
 
-* [xdp](http://localhost:4502/libs/fd/fm/gui/content/forms/formmetadataeditor.html/content/dam/formsanddocuments/schengen.xdp)의 속성 페이지를 보고 제출 URL 및 HTML Render 프로필이 올바르게 설정되었는지 확인하십시오
+* 의 속성 페이지를 보고 제출 URL 및 HTML 렌더링 프로필이 올바르게 설정되었는지 확인합니다.  [xdp](http://localhost:4502/libs/fd/fm/gui/content/forms/formmetadataeditor.html/content/dam/formsanddocuments/schengen.xdp)
 
 * [XDP를 html로 미리 보기](http://localhost:4502/content/dam/formsanddocuments/schengen.xdp/jcr:content)
 
-* 양식에 이미지를 추가하고 제출합니다. 이미지가 포함된 PDF를 다시 가져와야 합니다.
-
+* 양식에 이미지를 추가하고 제출합니다. 이미지를 사용하여 PDF을 다시 가져와야 합니다.

@@ -8,9 +8,9 @@ topic: Development
 role: Developer
 level: Beginner
 kt: 9335
-source-git-commit: 458f1c2df6472be2b4704bb68eafb92b58f48a97
+source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '247'
 ht-degree: 0%
 
 ---
@@ -18,11 +18,6 @@ ht-degree: 0%
 # 여러 패널이 있는 탐색 탭
 
 양식에 왼쪽 탐색 탭이 있고 탭 중 하나에 여러 패널이 있는 경우 하위 패널의 제목을 숨기고 이러한 탭의 하위 패널 간을 이동할 수 있습니다
-
-[이 기능은 이 양식에 포함되어 있습니다](https://forms.enablementadobe.com/content/forms/af/testnav1.html)
-
-
-
 
 ## 적응형 양식 만들기
 

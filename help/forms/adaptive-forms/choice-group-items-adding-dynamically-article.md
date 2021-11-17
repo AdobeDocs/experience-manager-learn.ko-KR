@@ -6,25 +6,22 @@ version: 6.5
 topic: Development
 role: User
 level: Beginner
-source-git-commit: 2b7f0f6c34803672cc57425811db89146b38a70a
+exl-id: 8fbea634-7949-417f-a4d6-9e551fff63f3
+source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '489'
 ht-degree: 0%
 
 ---
-
-
 
 # 선택 그룹 구성 요소에 동적으로 항목 추가
 
 AEM Forms 6.5에서는 CheckBox, 라디오 단추 및 이미지 목록과 같은 적응형 Forms 선택 그룹 구성 요소에 항목을 동적으로 추가하는 기능을 도입했습니다.
 
-[이 기능은 샘플 서버에서 실시간으로 사용할 수 있습니다](https://forms.enablementadobe.com/content/samples/samples.html?query=0#collapse1). 동적 확인란 항목 카드를 검색하고 &quot;시도&quot;를 클릭합니다.
-
 
 사용 사례에 따라 시각적 편집기와 코드 편집기를 사용하여 항목을 추가할 수 있습니다.
 
-**시각적 편집기 사용:**  함수 호출 또는 서비스 호출 결과에서 선택 그룹 항목을 채울 수 있습니다. 예를 들어 REST API 호출의 응답을 사용하여 선택 그룹의 항목을 설정할 수 있습니다.
+**시각적 편집기 사용:** 함수 호출 또는 서비스 호출 결과에서 선택 그룹 항목을 채울 수 있습니다. 예를 들어 REST API 호출의 응답을 사용하여 선택 그룹의 항목을 설정할 수 있습니다.
 
 아래 스크린샷에서는 getLoanPeriods라는 서비스 호출 결과로 대출 기간(년) 옵션을 설정하고 있습니다.
 

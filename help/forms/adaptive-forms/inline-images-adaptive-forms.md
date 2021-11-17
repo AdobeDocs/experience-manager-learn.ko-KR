@@ -1,25 +1,23 @@
 ---
 title: 응용 Forms에서 인라인 이미지 표시
 description: 적응형 Forms에서 업로드된 이미지 인라인 표시
-feature: 적응형 양식
+feature: Adaptive Forms
 topics: development
 version: 6.3,6.4,6.5
-topic: 개발
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 4a69513d-992c-435a-a520-feb9085820e7
+source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
 workflow-type: tm+mt
-source-wordcount: '240'
-ht-degree: 1%
+source-wordcount: '225'
+ht-degree: 0%
 
 ---
-
 
 # 응용 Forms의 인라인 이미지
 
 일반적인 사용 사례는 업로드된 이미지를 적응형 양식에 인라인 이미지로 표시하는 것입니다. 기본적으로 업로드된 이미지는 링크로 표시되며, 이미지를 적응형 양식으로 표시하여 이 경험을 향상시킬 수 있습니다. 이 문서는 인라인 이미지를 표시하는 단계를 안내합니다.
-
-[이 기능의 라이브 예](https://forms.enablementadobe.com/content/samples/samples.html?query=0#collapse1)
 
 ## 자리 표시자 이미지 추가
 
@@ -66,7 +64,7 @@ function consumeImage (file) {
 
 ### 서버에 배포
 
-* AEM 패키지 관리자를 사용하여 AEM 인스턴스에 [클라이언트 라이브러리](assets/inline-image-client-library.zip)를 다운로드하여 설치합니다.
-* AEM 패키지 관리자를 사용하여 [샘플 양식](assets/inline-image-af.zip)을 다운로드하여 AEM 인스턴스에 설치합니다.
-* 브라우저를 [인라인 이미지 추가](http://localhost:4502/content/dam/formsanddocuments/addinlineimage/jcr:content?wcmmode=disabled)로 보냅니다.
+* 를 다운로드하여 설치합니다. [클라이언트 라이브러리](assets/inline-image-client-library.zip) AEM 패키지 관리자를 사용하여 AEM 인스턴스에 로그인합니다.
+* 를 다운로드하여 설치합니다. [샘플 양식](assets/inline-image-af.zip) AEM 패키지 관리자를 사용하여 AEM 인스턴스에 로그인합니다.
+* 브라우저를 [인라인 이미지 추가](http://localhost:4502/content/dam/formsanddocuments/addinlineimage/jcr:content?wcmmode=disabled)
 * &quot;사진 첨부&quot; 단추를 클릭하여 이미지를 추가합니다

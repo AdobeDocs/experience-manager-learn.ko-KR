@@ -1,37 +1,34 @@
 ---
 title: 하나의 데이터 파일에서 여러 pdf 생성
 description: OutputService에서는 양식 디자인과 데이터를 사용하여 문서를 만드는 많은 방법을 양식 디자인에 병합합니다. 여러 개의 개별 레코드가 포함된 하나의 큰 xml에서 여러 pdf를 생성하는 방법을 알아봅니다.
-feature: 출력 서비스
+feature: Output Service
 version: 6.4,6.5
-topic: 개발
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 58582acd-cabb-4e28-9fd3-598d3cbac43c
+source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
 workflow-type: tm+mt
-source-wordcount: '526'
-ht-degree: 1%
+source-wordcount: '506'
+ht-degree: 0%
 
 ---
 
-
-# 하나의 xml 데이터 파일에서 PDF 문서 세트 생성
+# 하나의 xml 데이터 파일에서 PDF 문서 집합을 생성합니다.
 
 OutputService에서는 양식 디자인과 데이터를 사용하여 문서를 만드는 많은 방법을 양식 디자인에 병합합니다. 다음 문서에서는 여러 개의 개별 레코드가 포함된 하나의 큰 xml에서 여러 pdf를 생성하는 사용 사례에 대해 설명합니다.
 다음은 여러 레코드가 포함된 xml 파일의 스크린샷입니다.
 
 ![multi-record-xml](assets/multi-record-xml.PNG)
 
-데이터 xml에 2개의 레코드가 있습니다. 각 레코드는 form1 요소로 표시됩니다. 이 xml은 OutputService [generatePDFOutputBatch 메서드](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/OutputService.html)에 전달되며, pdf 문서 목록은 레코드당 하나씩 가져옵니다
-generatePDFOutputBatch 메서드의 서명은 다음 매개 변수를 사용합니다
+데이터 xml에 2개의 레코드가 있습니다. 각 레코드는 form1 요소로 표시됩니다. 이 xml은 OutputService에 전달됩니다 [generatePDFOutputBatch 메서드](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/OutputService.html) pdf 문서 목록(레코드당 1개)을 얻습니다. generatePDFOutputBatch 메서드의 서명은 다음 매개 변수를 사용합니다
 
 * 템플릿 - 키가 식별한 템플릿이 들어 있는 맵
 * 데이터 - 키로 식별되는 xml 데이터 문서가 포함된 매핑
 * pdfOutputOptions - pdf 생성을 구성하는 옵션
 * batchOptions - 일괄 처리를 구성하는 옵션
 
->[!NOTE]
->
->이 사용 사례는 이 [웹 사이트](https://forms.enablementadobe.com/content/samples/samples.html?query=0)에서 라이브 예제로 사용할 수 있습니다.
+
 
 ## 사용 사례 세부 사항{#use-case-details}
 
@@ -127,16 +124,15 @@ public Document generateMultiplePdfs(HashMap < String, String > templateMap, Has
 
 서버에서 이 기능을 테스트하려면 아래 지침을 따르십시오.
 
-* [zip 파일 내용을 다운로드하여 파일 시스템에 추출합니다](assets/mult-records-template-and-xml-file.zip). 이 zip 파일에는 템플릿과 xml 데이터 파일이 포함되어 있습니다.
+* [파일 시스템에 zip 파일 콘텐츠를 다운로드하고 추출합니다](assets/mult-records-template-and-xml-file.zip).이 zip 파일에는 템플릿과 xml 데이터 파일이 포함되어 있습니다.
 * [브라우저를 Felix 웹 콘솔로 보냅니다.](http://localhost:4502/system/console/bundles)
-* [DevelopingWithServiceUser 번들을 배포합니다](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar).
-* [OutputService API를 사용하여 pdf를 생성하는 사용자 지정 AEMFormsDocumentServices Bundle](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar).Custom 번들을 배포합니다
+* [DevelopingWithServiceUser 번들 배포](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar).
+* [사용자 지정 AEMFormsDocumentServices 번들 배포](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)OutputService API를 사용하여 pdf를 생성하는 .Custom 번들
 * [브라우저를 패키지 관리자로 보냅니다.](http://localhost:4502/crx/packmgr/index.jsp)
-* [패키지를 가져오고 설치합니다](assets/generate-multiple-pdf-from-xml.zip). 이 패키지에는 템플릿 및 데이터 파일을 삭제할 수 있는 html 페이지가 들어 있습니다.
+* [패키지 가져오기 및 설치](assets/generate-multiple-pdf-from-xml.zip). 이 패키지에는 템플릿 및 데이터 파일을 삭제할 수 있는 html 페이지가 들어 있습니다.
 * [브라우저를 MultiRecords.html에 보냅니다.](http://localhost:4502/content/DocumentServices/Multirecord.html?)
 * 템플릿과 xml 데이터 파일을 함께 끌어다 놓습니다
 * 만든 zip 파일을 다운로드합니다. 이 zip 파일에는 출력 서비스에서 생성한 pdf 파일이 포함되어 있습니다.
 
 >[!NOTE]
 >이 기능을 트리거하는 방법에는 여러 가지가 있습니다. 이 예제에서는 웹 인터페이스를 사용하여 템플릿과 데이터 파일을 삭제하고 기능을 보여 주었습니다.
-

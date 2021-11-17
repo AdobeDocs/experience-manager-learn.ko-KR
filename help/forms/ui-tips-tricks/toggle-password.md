@@ -8,9 +8,9 @@ topic: Development
 role: Developer
 level: Beginner
 kt: 9270
-source-git-commit: 96b78ff5056bd9c2be39fb2cf21b4f92863af089
+source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '167'
 ht-degree: 2%
 
 ---
@@ -20,9 +20,7 @@ ht-degree: 2%
 일반적인 사용 사례는 양식 필터가 암호 필드에 입력한 텍스트의 가시성으로 전환할 수 있도록 하는 것입니다.
 이 사용 사례를 수행하기 위해 [Font Awesome 라이브러리](https://fontawesome.com/). 필요한 CSS 및 eye.svg는 이 데모용으로 만든 클라이언트 라이브러리에 포함되어 있습니다.
 
-## 라이브 샘플
 
-[이 기능은 여기에서 테스트할 수 있습니다](https://forms.enablementadobe.com/content/dam/formsanddocuments/simpleuitips/jcr:content?wcmmode=disabled)
 
 ## 샘플 코드
 

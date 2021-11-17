@@ -1,31 +1,31 @@
 ---
 title: 적응형 Forms을 사용한 바코드 서비스
 description: 바코드 서비스를 사용하여 바코드를 디코딩하고 추출된 데이터에서 양식 필드를 채웁니다.
-feature: 바코드 Forms
+feature: Barcoded Forms
 version: 6.4,6.5
-topic: 개발
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: f89cd02d-3ffe-42c6-b547-c0445f912ee8
+source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '359'
 ht-degree: 0%
 
 ---
-
 
 # 적응형 Forms을 사용한 바코드 서비스{#barcode-service-with-adaptive-forms}
 
 이 문서에서는 바코드 서비스를 사용하여 적응형 양식을 채우는 방법을 보여 줍니다. 사용 사례는 다음과 같습니다.
 
-1. 사용자가 바코드가 있는 PDF를 적응형 양식 첨부 파일로 추가합니다
+1. 사용자가 적응형 양식 첨부 파일로 바코드가 있는 PDF 추가
 1. 첨부 파일의 경로가 서블릿으로 전송됩니다
 1. 서블릿은 바코드를 디코딩하고 데이터를 JSON 형식으로 반환합니다
 1. 그런 다음 디코딩된 데이터를 사용하여 적응형 양식을 채웁니다
 
 다음 코드는 바코드를 디코딩하고 JSON 개체를 디코딩된 값으로 채웁니다. 그러면 서블릿은 호출 애플리케이션에 대한 응답으로 JSON 개체를 반환합니다.
 
-이 기능을 실시간으로 볼 수 있습니다. [샘플 포털](https://forms.enablementadobe.com/content/samples/samples.html?query=0)을 방문하여 바코드 서비스 데모를 검색하십시오
+
 
 ```java
 public JSONObject extractBarCode(Document pdfDocument) {
@@ -140,11 +140,10 @@ $(document).ready(function()
 
 시스템에서 이 작업을 실행하려면 다음 단계를 수행하십시오
 
-1. [BarcodeService.](assets/barcodeservice.zip) zip을 다운로드하고 패키지 관리자를 사용하여 AEM으로 가져옵니다.
+1. [BarcodeService.zip 다운로드](assets/barcodeservice.zip) 패키지 관리자를 사용하여 AEM으로 가져옵니다.
 1. [사용자 지정 DocumentServices 번들 다운로드 및 설치](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
 1. [DevelopingWithServiceUser 번들 다운로드 및 설치](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 1. [샘플 PDF 양식 다운로드](assets/barcode.pdf)
-1. 브라우저를 [샘플 적응형 양식](http://localhost:4502/content/dam/formsanddocuments/barcodedemo/jcr:content?wcmmode=disabled)에 보냅니다.
+1. 브라우저를 [샘플 적응형 양식](http://localhost:4502/content/dam/formsanddocuments/barcodedemo/jcr:content?wcmmode=disabled)
 1. 제공된 샘플 PDF 업로드
 1. 데이터가 채워진 양식이 표시됩니다
-

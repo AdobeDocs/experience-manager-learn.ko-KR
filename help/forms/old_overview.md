@@ -7,8 +7,8 @@ role: Developer
 exl-id: c1972937-56c5-47af-9232-f31bdf69dfbe
 source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 10%
+source-wordcount: '516'
+ht-degree: 6%
 
 ---
 
@@ -76,6 +76,102 @@ Adobe Experience Manager(AEM)은 백엔드 프로세스, 비즈니스 규칙 및
 </tr>
 </table>
 
+>[!TIP]
+>
+>AEM Forms의 다양한 기능을 보여주는 이 샘플 모음입니다.
+
+
+## 적응형 양식 샘플
+
+<table>
+<tr>
+  <td>
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html">
+      <img alt= "AEM Forms의 캡처" src="./assets/captcha1.png" />
+    </a>
+    <div>
+      <a href="https://forms.enablementadobe.com/content/forms/af/registerfornewsletter.html">
+    <strong>적응형 양식의 Google Captcha</strong>
+    </a>
+    </div>
+    <p>
+    <em> 양식에 대한 인간과 자동 액세스 구분</em>
+    <p>
+  </td>
+  <td>
+    <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/summaryscreen/jcr:content?wcmmode=disabled">
+    <img alt="양식 데이터 미리 보기" src="./assets/preview.png" />
+    </a>
+    <div>
+    <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/summaryscreen/jcr:content?wcmmode=disabled">
+    <strong>양식 데이터 검토</strong>
+    </a>
+    </div>
+    <p>
+    <em>양식을 제출하기 전에 양식 데이터를 미리 봅니다.</em>
+    </p>
+  </td>
+  <td>
+    <a href="https://forms.enablementadobe.com/content/forms/af/addinlineimage.html">
+      <img alt=" 인라인 이미지" src="./assets/preview.png" />
+    </a>
+     <div>
+      <a href="https://forms.enablementadobe.com/content/forms/af/addinlineimage.html">
+        <strong>인라인 이미지 표시</strong>
+      </a>
+    </div>
+    <p>
+    <em>양식에 추가된 이미지를 표시합니다.</em>
+    <p>
+  </td>
+</tr>
+</table>
+
+## 적응형 양식 및 서명 샘플
+
+<table>
+<tr>
+  <td>
+    <a href="https://forms.enablementadobe.com/content/forms/af/rentalagreement.html">
+      <img alt="임대 계약" src="./assets/rental-agreement.png" />
+    </a>
+    <div>
+      <a href="https://forms.enablementadobe.com/content/forms/af/rentalagreement.html">
+    <strong>샘플 임대 계약 양식</strong>
+    </a>
+    </div>
+    <p>
+    <em>AEM Forms과 Adobe Sign을 사용하여 임차인과 임대인 간의 임대 계약을 작성하고 서명</em>
+    <p>
+  </td>
+  <td>
+    <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/ndawizard/jcr:content?wcmmode=disabled">
+    <img alt="NDA 계약" src="./assets/nda1.png" />
+    </a>
+    <div>
+    <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/ndawizard/jcr:content?wcmmode=disabled">
+    <strong>비공개 계약 생성</strong>
+    </a>
+    </div>
+    <p>
+    <em>Adobe Sign을 사용하여 동적으로 NDA를 만들고 서명을 위해 보냅니다.</em>
+    </p>
+  </td>
+  <td>
+    <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled">
+      <img alt="문서 패키지 서명" src="./assets/sign.png" />
+    </a>
+     <div>
+      <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled">
+        <strong>문서 패키지 서명</strong>
+      </a>
+    </div>
+    <p>
+    <em>Forms 및 Adobe Sign을 사용하여 여러 문서에 원활하게 서명</em>
+    <p>
+  </td>
+</tr>
+</table>
 
 
 
