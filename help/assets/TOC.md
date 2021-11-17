@@ -4,10 +4,10 @@ user-guide-description: Adobe Experience Manager Assets에 대한 비디오 및 
 breadcrumb-title: AEM Assets 튜토리얼
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: 08146f57235f3de7fd5ab73754166cc85e1f7dda
+source-git-commit: cd54cfbbded4e44f4850f9dac8ab17d179e7d498
 workflow-type: tm+mt
-source-wordcount: '347'
-ht-degree: 26%
+source-wordcount: '356'
+ht-degree: 25%
 
 ---
 
@@ -131,6 +131,11 @@ ht-degree: 26%
       + [Dynamic Media 구성 삭제](dynamic-media/tutorials/deleting-dynamic-media-configuration.md)
       + [Dynamic Media Classic 앱에서 자산 다운로드](dynamic-media/tutorials/how-to-download-asset-in-dynamic-media-classic-app.md)
       + [Dynamic Media Classic IPS API](dynamic-media/tutorials/introduction-to-dynamic-media-classic-ips-api.md)
+
++ Workfront 통합{#workfront}
+   + 향상된 커넥터{#enhanced-connector}
+      + [향상된 커넥터 기본 사항](./workfront/enhanced-connector/basics.md)
+      + [프로젝트 폴더](./workfront/enhanced-connector/project-folders.md)
 
 + 번역 {#translation}
    + [소스 파일 변환](translation/source-file-translation-feature-video-use.md)
