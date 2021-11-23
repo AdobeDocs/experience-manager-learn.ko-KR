@@ -4,10 +4,10 @@ user-guide-description: Adobe Experience Manager Assets에 대한 비디오 및 
 breadcrumb-title: AEM Assets 튜토리얼
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: cd54cfbbded4e44f4850f9dac8ab17d179e7d498
+source-git-commit: a5c128d92f4a4625279b6ef76c61f1afb6ed45d5
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 25%
+source-wordcount: '357'
+ht-degree: 26%
 
 ---
 
@@ -82,6 +82,7 @@ ht-degree: 25%
    + [Adobe Stock](./creative-workflows/adobe-stock.md)
 
 + Adobe Asset Link{#adobe-asset-link}
+   + [설정](./adobe-asset-link/setup.md)
    + [액세스 Adobe 자산 링크](./adobe-asset-link/launch-adobe-asset-link.md)
    + [패널 개요](./adobe-asset-link/panel-overview.md)
    + [파일 및 컬렉션](./adobe-asset-link/files-and-collections.md)
