@@ -8,7 +8,7 @@ level: Experienced
 kt: 8918
 thumbnail: 336969.jpeg
 exl-id: 4944d3d9-52a0-4255-9e6c-eb119160e400
-source-git-commit: 3657e7798774f9cc673ff6ccd8af1a555b1d4013
+source-git-commit: 1dcb66bc3535231c89f3e7fc127688fcf96f2b61
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 0%
@@ -27,13 +27,13 @@ AEM as a Cloud Services Bulk Import Service를 사용하여 비AEM 소스에서 
 
 벌크 가져오기 서비스는 Azure Blob 저장 공간 또는 Amazon S3 저장 공간에 저장된 파일을 AEM as a Cloud Service으로 전송하는 데 사용됩니다.
 
-### 주요 활동
+## 주요 활동
 
 + 파일을 업로드하여 클라우드 저장소 공급자(Azure Blob 저장소 또는 Amazon S3)에 가져옵니다.
 + AEM as a Cloud Service 작성자 서비스에서 대량 가져오기 서비스를 구성하고 실행합니다.
 + 벌크 서비스 임포터를 일회성 임포터로 실행하거나 주기적 임포트를 예약합니다.
 
-### 기타 리소스
+## 기타 리소스
 
 + [Adobe 개발자 라이브 세션(자산 수집)](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/feb2021/asset-bulk-ingestion.html?lang=en)
 

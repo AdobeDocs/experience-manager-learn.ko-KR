@@ -9,7 +9,7 @@ level: Experienced
 kt: 8630
 thumbnail: 336958.jpeg
 exl-id: e9bd9035-1f2d-4a34-a581-9c1ec2c7bc04
-source-git-commit: 1ddf6154d50a341d9a0fd4234392c37ced878a73
+source-git-commit: 1dcb66bc3535231c89f3e7fc127688fcf96f2b61
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 4%
@@ -28,7 +28,7 @@ ht-degree: 4%
 
 코드 베이스를 리팩터링하는 과정의 일부로, [Repository Modernizer 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/repo-modernizer.html) 6.x 코드 베이스를 보다 현대적인 구조로 재구성하는 방법을 설명합니다.
 
-### 주요 활동
+## 주요 활동
 
 * 를 사용하십시오 [Adobe I/O Repository Modernizer](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationrepository-modernizer) AEM as a Cloud Service 프로젝트의 예상 구조와 일치하도록 프로젝트를 재구성하는 도구입니다.
 * 업데이트된 코드 베이스에서 모든 빌드 오류를 수동으로 조정하고 수정합니다.
