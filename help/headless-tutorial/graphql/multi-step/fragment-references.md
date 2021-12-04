@@ -10,7 +10,7 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: d85b7ac3-42c1-4655-9394-29a797c0e1d7
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: 0dae6243f2a30147bed7079ad06144ad35b781d8
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 다른 컨텐츠 조각 내에서 컨텐츠 조각을 참조할 수 있습니다. 이렇게 하면 사용자가 조각 간의 관계가 있는 복잡한 데이터 모델을 작성할 수 있습니다.
 
-이 장에서는 **조각 참조** 필드를 사용하여 기여자 모델에 대한 참조를 포함하도록 Adventure 모델을 업데이트합니다. 또한 참조된 모델의 필드를 포함하도록 GraphQL 쿼리를 수정하는 방법을 알아봅니다.
+이 장에서는 **조각 참조** 필드. 또한 참조된 모델의 필드를 포함하도록 GraphQL 쿼리를 수정하는 방법을 알아봅니다.
 
 ## 전제 조건
 
@@ -39,39 +39,39 @@ ht-degree: 1%
 Adventure 컨텐츠 조각 모델을 업데이트하여 기여자 모델에 대한 참조를 추가합니다.
 
 1. 새 브라우저를 열고 AEM으로 이동합니다.
-1. **AEM 시작** 메뉴에서 **도구** > **자산** > **컨텐츠 조각 모델** > **WKND 사이트**&#x200B;로 이동합니다.
-1. **Adventure** 컨텐츠 조각 모델을 엽니다.
+1. 에서 **AEM 시작** 메뉴 탐색 **도구** > **자산** > **컨텐츠 조각 모델** > **WKND 사이트**.
+1. 를 엽니다. **모험** 컨텐츠 조각 모델
 
    ![Adventure 컨텐츠 조각 모델 열기](assets/fragment-references/adventure-content-fragment-edit.png)
 
-1. **데이터 유형**&#x200B;에서 **조각 참조** 필드를 기본 패널에 드래그하여 놓습니다.
+1. 아래 **데이터 유형**, 드래그 앤 드롭 **조각 참조** 필드를 기본 패널에 추가합니다.
 
    ![조각 참조 필드 추가](assets/fragment-references/add-fragment-reference-field.png)
 
-1. 이 필드에 대한 **속성**&#x200B;을 다음과 같이 업데이트합니다.
+1. 업데이트 **속성** 이 필드에 대해 다음을 수행합니다.
 
    * 렌더링 형식 - `fragmentreference`
    * 필드 레이블 - **Adventure Contributor**
    * 속성 이름 - `adventureContributor`
-   * 모델 유형 - **기여자** 모델을 선택합니다
+   * 모델 유형 - **기여자** 모델
    * 루트 경로 - `/content/dam/wknd`
 
    ![조각 참조 속성](assets/fragment-references/fragment-reference-properties.png)
 
-   이제 속성 이름 `adventureContributor`을 사용하여 기여자 컨텐츠 조각을 참조할 수 있습니다.
+   속성 이름 `adventureContributor` 이제 기여자 컨텐츠 조각을 참조하는 데 사용할 수 있습니다.
 
 1. 모델에 변경 사항을 저장합니다.
 
 ## 모험에 기여자 할당
 
-모험 컨텐츠 조각 모델이 업데이트되었으므로 이제 기존 조각을 편집하고 기여자를 참조할 수 있습니다. 컨텐츠 조각 모델 *을 편집하면*&#x200B;에서 생성된 기존 컨텐츠 조각에 영향을 준다는 점에 유의해야 합니다.
+모험 컨텐츠 조각 모델이 업데이트되었으므로 이제 기존 조각을 편집하고 기여자를 참조할 수 있습니다. 컨텐츠 조각 모델을 편집한다는 점에 유의해야 합니다 *영향* 조각에서 만들어진 기존 컨텐츠 조각.
 
-1. **자산** > **파일** > **WKND 사이트** > **영어** > **모험** > **[발리 서핑 캠프](http://localhost:4502/assets.html/content/dam/wknd/en/adventures/bali-surf-camp)**&#x200B;로 이동합니다.
+1. 다음으로 이동 **자산** > **파일** > **WKND 사이트** > **영어** > **모험** > **[발리 서프 캠프](http://localhost:4502/assets.html/content/dam/wknd/en/adventures/bali-surf-camp)**.
 
-   ![발리 서프 캠프 폴더](assets/setup/bali-surf-camp-folder.png)
+   ![발리 서프 캠프 폴더](../quick-setup/assets/setup/bali-surf-camp-folder.png)
 
-1. **Bali Surf Camp** 컨텐츠 조각을 클릭하여 컨텐츠 조각 편집기를 엽니다.
-1. **Adventure Contributor** 필드를 업데이트하고 폴더 아이콘을 클릭하여 Contributor를 선택합니다.
+1. 을(를) 클릭하여 **발리 서프 캠프** 컨텐츠 조각을 사용하여 컨텐츠 조각 편집기를 엽니다.
+1. 업데이트 **Adventure Contributor** 필드 를 선택하고 폴더 아이콘을 클릭하여 기여자 를 선택합니다.
 
    ![기여자로 Stacey Roswells 선택](assets/fragment-references/stacey-roswell-contributor.png)
 
@@ -79,11 +79,11 @@ Adventure 컨텐츠 조각 모델을 업데이트하여 기여자 모델에 대�
 
    ![참가자에게 채워진 경로](assets/fragment-references/populated-path.png)
 
-   **기여자** 모델을 사용하여 생성된 조각만 선택할 수 있습니다.
+   를 사용하여 생성된 조각만 확인합니다. **기여자** 모델을 선택할 수 있습니다.
 
 1. 조각에 변경 사항을 저장합니다.
 
-1. 위의 단계를 반복하여 [Yosemite Backpacking](http://localhost:4502/editor.html/content/dam/wknd/en/adventures/yosemite-backpacking/yosemite-backpacking) 및 [Colorado Rock Clipping](http://localhost:4502/editor.html/content/dam/wknd/en/adventures/colorado-rock-climbing/colorado-rock-climbing)과 같은 모험에 기여자를 할당합니다
+1. 위의 단계를 반복하여 참가자를 다음과 같은 모험에 할당합니다 [요세미티 백패킹](http://localhost:4502/editor.html/content/dam/wknd/en/adventures/yosemite-backpacking/yosemite-backpacking) 및 [콜로라도 록 클라이밍](http://localhost:4502/editor.html/content/dam/wknd/en/adventures/colorado-rock-climbing/colorado-rock-climbing)
 
 ## GraphiQL을 사용하여 중첩된 컨텐츠 조각 쿼리
 
@@ -113,7 +113,7 @@ Adventure 컨텐츠 조각 모델을 업데이트하여 기여자 모델에 대�
    }
    ```
 
-   위의 쿼리는 하나의 Adventure에 대한 것입니다. `adventureContributor` 속성은 기여자 모델을 참조하고 중첩된 컨텐츠 조각에서 속성을 요청할 수 있습니다.
+   위의 쿼리는 하나의 Adventure에 대한 것입니다. 다음 `adventureContributor` 속성은 기여자 모델을 참조하며 중첩된 컨텐츠 조각에서 속성을 요청할 수 있습니다.
 
 1. 쿼리를 실행하면 다음과 같은 결과가 표시됩니다.
 
@@ -137,7 +137,7 @@ Adventure 컨텐츠 조각 모델을 업데이트하여 기여자 모델에 대�
    }
    ```
 
-1. `adventureList` 같은 다른 쿼리로 테스트하고 `adventureContributor` 아래에 참조된 컨텐츠 조각에 대한 속성을 추가합니다.
+1. 다음과 같은 다른 쿼리 실험 `adventureList` 및 아래의 참조된 컨텐츠 조각에 대한 속성을 추가합니다 `adventureContributor`.
 
 ## React 앱을 업데이트하여 기여자 콘텐츠를 표시합니다
 
@@ -145,11 +145,11 @@ Adventure 컨텐츠 조각 모델을 업데이트하여 기여자 모델에 대�
 
 1. IDE에서 WKND GraphQL React 앱을 엽니다.
 
-1. `src/components/AdventureDetail.js` 파일을 엽니다.
+1. 파일을 엽니다. `src/components/AdventureDetail.js`.
 
    ![Adventure Detail 구성 IDE](assets/fragment-references/adventure-detail-ide.png)
 
-1. 함수 `adventureDetailQuery(_path)`을 찾습니다. `adventureDetailQuery(..)` 함수는 AEM `<modelName>ByPath` 구문을 사용하여 JCR 경로로 식별되는 단일 컨텐츠 조각을 쿼리하는 필터링 GraphQL 쿼리를 래핑합니다.
+1. 함수 찾기 `adventureDetailQuery(_path)`. 다음 `adventureDetailQuery(..)` 함수는 AEM을 사용하는 필터링 GraphQL 쿼리를 래핑합니다 `<modelName>ByPath` JCR 경로로 식별되는 단일 컨텐츠 조각을 쿼리하는 구문.
 
 1. 참조된 기여자에 대한 정보를 포함하도록 쿼리를 업데이트합니다.
 
@@ -197,11 +197,11 @@ Adventure 컨텐츠 조각 모델을 업데이트하여 기여자 모델에 대�
    }
    ```
 
-   이 업데이트를 통해 `adventureContributor`, `fullName`, `occupation` 및 `pictureReference`에 대한 추가 속성이 쿼리에 포함됩니다.
+   이 업데이트로 `adventureContributor`, `fullName`, `occupation`, 및 `pictureReference` 이 쿼리에 포함됩니다.
 
-1. Inspect은 `function Contributor(...)`의 `AdventureDetail.js` 파일에 포함된 `Contributor` 구성 요소를 만듭니다. 이 구성 요소는 속성이 있는 경우 기여자의 이름, 작업 및 사진을 렌더링합니다.
+1. Inspect `Contributor` 에 포함된 구성 요소 `AdventureDetail.js` 파일 위치 `function Contributor(...)`. 이 구성 요소는 속성이 있는 경우 기여자의 이름, 작업 및 사진을 렌더링합니다.
 
-   `Contributor` 구성 요소가 `AdventureDetail(...)` `return` 메서드에서 참조됩니다.
+   다음 `Contributor` 구성 요소는 `AdventureDetail(...)` `return` 메서드:
 
    ```javascript
    function AdventureDetail(props) {
@@ -228,14 +228,14 @@ Adventure 컨텐츠 조각 모델을 업데이트하여 기여자 모델에 대�
    $ npm start
    ```
 
-1. [http://localhost:3000](http://localhost:3000/)로 이동하고 참조된 기여자가 있는 Adventure를 클릭합니다. 이제 **일정** 아래에 기여자 정보가 표시됩니다.
+1. 다음으로 이동 [http://localhost:3000](http://localhost:3000/) 를 클릭한 다음 참조된 기여자가 있는 Adventure를 클릭합니다. 이제 아래에 기여자 정보가 표시됩니다 **일정**:
 
    ![앱에 추가된 기여자](assets/fragment-references/contributor-added-detail.png)
 
 ## 축하합니다!{#congratulations}
 
-축하합니다! 기존 컨텐츠 조각 모델을 업데이트하여 **조각 참조** 필드를 사용하여 중첩된 컨텐츠 조각을 참조합니다. 참조된 모델의 필드를 포함하도록 GraphQL 쿼리를 수정하는 방법도 알아보았습니다.
+축하합니다! 기존 컨텐츠 조각 모델을 업데이트하여 를 사용하여 중첩된 컨텐츠 조각을 참조합니다. **조각 참조** 필드. 참조된 모델의 필드를 포함하도록 GraphQL 쿼리를 수정하는 방법도 알아보았습니다.
 
 ## 다음 단계 {#next-steps}
 
-다음 장의 [AEM 게시 환경을 사용하는 프로덕션 배포에서 AEM 작성 및 게시 서비스 와 헤드리스 애플리케이션에 대한 권장 배포 패턴에 대해 알아보십시오](./production-deployment.md). 환경 변수를 사용하여 대상 환경을 기반으로 GraphQL 엔드포인트를 동적으로 변경하도록 기존 애플리케이션을 업데이트합니다. 또한 CORS(원본 간 리소스 공유)를 위해 AEM을 올바르게 구성하는 방법도 알아봅니다.
+다음 장에서 [AEM 게시 환경을 사용한 프로덕션 배포](./production-deployment.md), AEM 작성자 및 게시 서비스 및 헤드리스 애플리케이션에 대한 권장 배포 패턴에 대해 알아봅니다. 환경 변수를 사용하여 대상 환경을 기반으로 GraphQL 엔드포인트를 동적으로 변경하도록 기존 애플리케이션을 업데이트합니다. 또한 CORS(원본 간 리소스 공유)를 위해 AEM을 올바르게 구성하는 방법도 알아봅니다.

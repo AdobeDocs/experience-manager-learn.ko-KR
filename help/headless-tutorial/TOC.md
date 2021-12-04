@@ -6,9 +6,9 @@ version: Cloud Service
 feature-set: Experience Manager, Experience Manager Assets, Experience Manager Sites
 kt: 2963
 index: y
-source-git-commit: 0ab14016c27d3b91252f3cbf5f97550d89d4a0c9
+source-git-commit: 0dae6243f2a30147bed7079ad06144ad35b781d8
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '190'
 ht-degree: 20%
 
 ---
@@ -19,6 +19,8 @@ ht-degree: 20%
 + [AEM Headless 개요](./overview.md)
 + GraphQL {#graphql}
    + [개요](./graphql/overview.md)
+   + [빠른 설정](./graphql/quick-setup/cloud-service.md)
+   + [로컬 SDK를 빠르게 설정](./graphql/quick-setup/local-sdk.md)
    + 비디오 시리즈{#video-series}
       + [1 - 모델링 기본 사항](./graphql/video-series/modeling-basics.md)
       + [2 - 고급 모델링](./graphql/video-series/advanced-modeling.md)
@@ -29,13 +31,12 @@ ht-degree: 20%
       + [7 - GraphQL 지속적인 쿼리](./graphql/video-series/graphql-persisted-queries.md)
    + 여러 단계 자습서{#multi-step}
       + [개요](./graphql/multi-step/overview.md)
-      + [1 - 빠른 설정](./graphql/multi-step/setup.md)
-      + [2 - 컨텐츠 조각 모델 정의](./graphql/multi-step/content-fragment-models.md)
-      + [3 - 컨텐츠 조각 작성](./graphql/multi-step/author-content-fragments.md)
-      + [4 - GraphQL API 탐색](./graphql/multi-step/explore-graphql-api.md)
-      + [5 - 외부 앱에서 쿼리](./graphql/multi-step/graphql-and-external-app.md)
-      + [6 - 조각 참조를 사용한 고급 데이터 모델링](./graphql/multi-step/fragment-references.md)
-      + [7 - 프로덕션 배포](./graphql/multi-step/production-deployment.md)
+      + [1 - 컨텐츠 조각 모델 정의](./graphql/multi-step/content-fragment-models.md)
+      + [2 - 컨텐츠 조각 작성](./graphql/multi-step/author-content-fragments.md)
+      + [3 - GraphQL API 탐색](./graphql/multi-step/explore-graphql-api.md)
+      + [4 - 외부 앱에서 쿼리](./graphql/multi-step/graphql-and-external-app.md)
+      + [5 - 조각 참조를 사용한 고급 데이터 모델링](./graphql/multi-step/fragment-references.md)
+      + [6 - 프로덕션 배포](./graphql/multi-step/production-deployment.md)
    + 예 {#example-apps}
       + [React](./graphql/example-apps/react-app.md)
       + [iOS SwiftUI](./graphql/example-apps/ios-swiftui-app.md)

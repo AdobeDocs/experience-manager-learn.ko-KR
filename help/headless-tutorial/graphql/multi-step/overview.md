@@ -5,38 +5,39 @@ doc-type: tutorial
 mini-toc-levels: 1
 kt: 6678
 thumbnail: 328618.jpg
-feature: 컨텐츠 조각, GraphQL API
-topic: 헤드리스, 컨텐츠 관리
+feature: Content Fragments, GraphQL API
+topic: Headless, Content Management
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 41e15a2c-758b-4e7d-9d23-ef671c1dc155
+source-git-commit: 0dae6243f2a30147bed7079ad06144ad35b781d8
 workflow-type: tm+mt
-source-wordcount: '201'
+source-wordcount: '206'
 ht-degree: 0%
 
 ---
 
-
 # AEM 헤드리스 시작하기 - GraphQL
 
-AEM GraphQL API를 사용하여 컨텐츠를 작성하고 노출하고 헤드리스 CMS 시나리오에서 외부 앱에서 사용하는 방법을 소개하는 종단간 자습서입니다.
+An end-to-end tutorial illustrating how to build-out and expose content using AEM&#39;s GraphQL APIs and consumed by an external app, in a headless CMS scenario.
 
 이 자습서에서는 AEM GraphQL API 및 헤드리스 기능을 사용하여 외부 앱에서 노출되는 경험을 향상시키는 방법을 설명합니다.
 
-이 자습서에서는 다음 주제를 다룹니다.
+This tutorial will cover the following topics:
 
 * AEM에서 컨텐츠 조각 모델을 만들어 기여자를 모델링합니다.
-* 새로 만든 컨텐츠 조각 모델을 사용하여 기여자 컨텐츠 조각 작성
-* 통합 GraphiQL 개발 도구를 사용하여 AEM에서 컨텐츠 조각을 쿼리하는 방법을 알아봅니다.
-* 샘플 WKND GraphQL React 앱에서 AEM GraphQL API를 사용합니다
-* 조각 참조를 사용하여 고급 데이터 모델링 수행
+* Author Contributor Content Fragments using the newly created Content Fragment Model
+* Explore how how Content Fragments in AEM can be queried using the integrated GraphiQL development tool.
+* Consume AEM&#39;s GraphQL APIs from a sample WKND GraphQL React app
+* Perform advanced data modeling with Fragment References
 
 ## 시작해 보겠습니다!
 
-[빠른 설정](./setup.md) 장으로 이동하여 AEM GraphQL 자습서를 시작합니다.
+1. 을 사용하여 개발 환경 설정 [AEM as a Cloud Service](../quick-setup/cloud-service.md) 또는 [로컬 SDK](../quick-setup/local-sdk.md).
+2. Start the tutorial with [Defining Content Fragment Models](content-fragment-models.md).
 
 ## GitHub 프로젝트
 
-소스 코드 및 컨텐츠 패키지는 [AEM 안내서 - WKND GraphQL GitHub 프로젝트](https://github.com/adobe/aem-guides-wknd-graphql)에서 사용할 수 있습니다.
+The source code, and content packages are available on the [AEM Guides - WKND GraphQL GitHub Project](https://github.com/adobe/aem-guides-wknd-graphql).
 
-자습서나 코드에 문제가 있으면 [GitHub 문제](https://github.com/adobe/aem-guides-wknd-graphql/issues)를 그대로 두십시오.
+자습서나 코드에 문제가 있는 경우 [GitHub 문제](https://github.com/adobe/aem-guides-wknd-graphql/issues).

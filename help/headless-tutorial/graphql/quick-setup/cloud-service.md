@@ -8,10 +8,10 @@ role: Developer
 level: Beginner
 kt: 9442
 thumbnail: 339073.jpg
-source-git-commit: f13f32de11bda924a2d255678e58e7c982d0d004
+source-git-commit: 0dae6243f2a30147bed7079ad06144ad35b781d8
 workflow-type: tm+mt
-source-wordcount: '1073'
-ht-degree: 0%
+source-wordcount: '1075'
+ht-degree: 1%
 
 ---
 
@@ -193,5 +193,7 @@ _단계 화면_
 축하합니다! AEM Headless를 사용하여 React 앱을 작동했습니다!
 
 React 앱에서 AEM as a Cloud Service의 컨텐츠를 사용하는 방법을 자세히 이해하려면 다음을 확인하십시오 [AEM Headless 자습서](../multi-step/overview.md). 이 자습서에서는 생성된 AEM의 컨텐츠 조각과 이 React App이 컨텐츠를 JSON으로 사용하는 방법을 설명합니다.
+
+### 다음 단계
 
 + [AEM Headless 자습서 시작](../multi-step/overview.md)
