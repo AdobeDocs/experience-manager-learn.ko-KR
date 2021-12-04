@@ -6,10 +6,10 @@ version: Cloud Service
 feature-set: Experience Manager, Experience Manager Assets, Experience Manager Sites
 kt: 2963
 index: y
-source-git-commit: 0dae6243f2a30147bed7079ad06144ad35b781d8
+source-git-commit: f3f373b2bc553b0ebd570a65ddc526784e504198
 workflow-type: tm+mt
 source-wordcount: '190'
-ht-degree: 20%
+ht-degree: 22%
 
 ---
 
@@ -19,8 +19,9 @@ ht-degree: 20%
 + [AEM Headless 개요](./overview.md)
 + GraphQL {#graphql}
    + [개요](./graphql/overview.md)
-   + [빠른 설정](./graphql/quick-setup/cloud-service.md)
-   + [로컬 SDK를 빠르게 설정](./graphql/quick-setup/local-sdk.md)
+   + 빠른 설정 {#quick-setup}
+      + [클라우드 서비스](./graphql/quick-setup/cloud-service.md)
+      + [로컬 SDK](./graphql/quick-setup/local-sdk.md)
    + 비디오 시리즈{#video-series}
       + [1 - 모델링 기본 사항](./graphql/video-series/modeling-basics.md)
       + [2 - 고급 모델링](./graphql/video-series/advanced-modeling.md)
