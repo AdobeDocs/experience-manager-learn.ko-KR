@@ -8,13 +8,13 @@ role: Developer
 level: Beginner
 kt: 9442
 thumbnail: 339073.jpg
-source-git-commit: 0dae6243f2a30147bed7079ad06144ad35b781d8
+exl-id: 62e807b7-b1a4-4344-9b1e-2c626b869e10
+source-git-commit: 94a57490edb00da072446ee8ca07c12c413ce1ac
 workflow-type: tm+mt
-source-wordcount: '1075'
+source-wordcount: '1072'
 ht-degree: 1%
 
 ---
-
 
 # AEM as a Cloud Service AEM 헤드리스 빠른 설정
 
@@ -26,13 +26,13 @@ AEM 헤드리스 빠른 설정을 사용하면 WKND 사이트 샘플 프로젝�
 
 + AEM as a Cloud Service 샌드박스 환경(바람직하게는 개발)
 + AEM as a Cloud Service 및 Cloud Manager 액세스
-   + `AEM Administrator` AEM as a Cloud Service 액세스
-   + `Cloud Manager - Deployment Manager` cloud Manager 액세스
+   + __AEM 관리자__ AEM as a Cloud Service 액세스
+   + __Cloud Manager - 배포 관리자__ cloud Manager 액세스
 + 다음 도구는 로컬로 설치해야 합니다.
    + [Node.js v10+](https://nodejs.org/en/)
    + [npm 6+](https://www.npmjs.com/)
    + [Git](https://git-scm.com/)
-   + IDE(예: [Microsoft® Visual Studio 코드](https://code.visualstudio.com/)
+   + IDE(예: [Microsoft® Visual Studio 코드](https://code.visualstudio.com/))
 
 ## 1. Cloud Manager Git 리포지토리 만들기
 
@@ -74,15 +74,13 @@ _단계 화면_
       $ git remote add adobe https://git.cloudmanager.adobe.com/<YOUR ADOBE ORGANIZATION>/aem-headless-quick-setup/
       ```
 
-1. 샘플 프로젝트의 소스 코드를 Cloud Manager Git 저장소에 푸시
+1. 샘플 프로젝트의 소스 코드를 로컬 Git 리포지토리의 Cloud Manager Git 리포지토리에 푸시합니다
 
-   1. 로컬 Git 리포지토리의 코드를 Cloud Manager Git 리포지토리에 푸시합니다
+   ```shell
+   $ git push adobe master:main
+   ```
 
-      ```shell
-      $ git push adobe master:main
-      ```
-
-      자격 증명을 입력하라는 메시지가 표시되면 __사용자 이름__ 및 __암호__ Cloud Manager의 __저장소 정보__ 모달.
+   자격 증명을 입력하라는 메시지가 표시되면 __사용자 이름__ 및 __암호__ Cloud Manager의 __저장소 정보__ 모달.
 
 ## 3. AEM as a Cloud Service에 WKND 사이트 배포
 
