@@ -4,9 +4,9 @@ user-guide-description: Adobe Experience Manager as a Cloud Service를 위한 �
 breadcrumb-title: AEM as a Cloud Service 튜토리얼
 sub-product: cloud-service
 team: TM
-source-git-commit: e8b3bcaeee40b4bfd4f967f929ad664e8d168cb0
+source-git-commit: 6f047a76693bc05e64064fce6f25348037749f4c
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '636'
 ht-degree: 22%
 
 ---
@@ -89,6 +89,16 @@ ht-degree: 22%
    + [Adobe IMS 제품 프로필](./accessing/adobe-ims-product-profiles.md)
    + [AEM 사용자, 그룹 및 권한](./accessing/aem-users-groups-and-permissions.md)
    + [AEM 액세스 구성 둘러보기](./accessing/walk-through.md)
++ 고급 네트워킹{#networking}
+   + [개요](./networking/advanced-networking.md)
+   + [유연한 포트 송신](./networking/flexible-port-egress.md)
+   + [전용 송신 IP 주소](./networking/dedicated-egress-ip-address.md)
+   + [가상 사설 네트워크](./networking/vpn.md)
+   + 코드 예{#examples}
+      + [비표준 포트의 HTTP/HTTPS](./networking/examples/http-on-non-standard-ports.md)
+      + [DataSourcePool을 사용한 SQL 연결](./networking/examples/sql-datasourcepool.md)
+      + [Java SQL API를 사용한 SQL 연결](./networking/examples/sql-java-apis.md)
+      + [이메일 서비스](./networking/examples/email-service.md)
 + 마이그레이션 {#migration}
    + [컨텐츠 전송 도구](./migration/content-transfer-tool.md)
    + [자산의 벌크 가져오기](./migration/bulk-import.md)
@@ -103,7 +113,7 @@ ht-degree: 22%
       + [asset compute 마이크로서비스](./migration/moving-to-aem-as-a-cloud-service/asset-compute-microservices.md)
       + [Dispatcher](./migration/moving-to-aem-as-a-cloud-service/dispatcher.md)
       + [검색 및 색인 지정](./migration/moving-to-aem-as-a-cloud-service/search-and-indexing.md)
-      + 컨텐츠 마이그레이션 {#content-migration}
+      + 콘텐츠 마이그레이션 {#content-migration}
          + [대량 가져오기 서비스](./migration/moving-to-aem-as-a-cloud-service/content-migration/bulk-import-service.md)
          + [컨텐츠 전송 도구](./migration/moving-to-aem-as-a-cloud-service/content-migration/content-transfer-tool.md)
       + [문제 해결](./migration/moving-to-aem-as-a-cloud-service/troubleshooting.md)
