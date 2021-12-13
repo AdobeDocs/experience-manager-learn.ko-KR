@@ -8,13 +8,13 @@ role: Architect, Developer
 level: Intermediate
 kt: 9355
 thumbnail: KT-9355.jpeg
-source-git-commit: 6f047a76693bc05e64064fce6f25348037749f4c
+exl-id: c1a26dcb-b2ae-4015-b865-2ce32f4fa869
+source-git-commit: 6ed26e5c9bf8f5e6473961f667f9638e39d1ab0e
 workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 0%
 
 ---
-
 
 # JDBC DataSourcePool을 사용한 SQL 연결
 
@@ -32,7 +32,7 @@ SQL 데이터베이스(및 다른 비HTTP/HTTPS 서비스)에 대한 연결은 A
 
 OSGi 구성의 연결 문자열은 다음을 사용합니다.
 
-+ `AEM_PROXY_HOST` 를 통해 [OSGi 구성 환경 변수](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#environment-specific-configuration-values) `$[env:AEM_PROXY_HOST]` 연결 호스트
++ `AEM_PROXY_HOST` 를 통해 [OSGi 구성 환경 변수](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#environment-specific-configuration-values) `$[env:AEM_PROXY_HOST;default=proxy.tunnel]` 연결 호스트
 + `30001` 다음 중 `portOrig` Cloud Manager 포트 전달 매핑에 대한 값 `30001` → `mysql.example.com:3306`
 
 암호는 코드에 저장하지 않아야 하므로 AIO CLI 또는 Cloud Manager API를 사용하여 설정하는 OSGi 구성 변수를 통해 SQL 연결의 사용자 이름과 암호를 제공하는 것이 가장 좋습니다.
@@ -43,7 +43,7 @@ OSGi 구성의 연결 문자열은 다음을 사용합니다.
 {
   "datasource.name": "wknd-examples-mysql",
   "jdbc.driver.class": "com.mysql.jdbc.Driver",
-  "jdbc.connection.uri": "jdbc:mysql://$[env:AEM_PROXY_HOST]:30001/wknd-examples",
+  "jdbc.connection.uri": "jdbc:mysql://$[env:AEM_PROXY_HOST;default=proxy.tunnel]:30001/wknd-examples",
   "jdbc.username": "$[env:MYSQL_USERNAME;default=mysql-user]",
   "jdbc.password": "$[secret:MYSQL_PASSWORD]"
 }

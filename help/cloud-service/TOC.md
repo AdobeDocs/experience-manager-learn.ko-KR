@@ -4,10 +4,10 @@ user-guide-description: Adobe Experience Manager as a Cloud Service를 위한 �
 breadcrumb-title: AEM as a Cloud Service 튜토리얼
 sub-product: cloud-service
 team: TM
-source-git-commit: 6f047a76693bc05e64064fce6f25348037749f4c
+source-git-commit: 6ed26e5c9bf8f5e6473961f667f9638e39d1ab0e
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 22%
+source-wordcount: '651'
+ht-degree: 21%
 
 ---
 
@@ -95,7 +95,8 @@ ht-degree: 22%
    + [전용 송신 IP 주소](./networking/dedicated-egress-ip-address.md)
    + [가상 사설 네트워크](./networking/vpn.md)
    + 코드 예{#examples}
-      + [비표준 포트의 HTTP/HTTPS](./networking/examples/http-on-non-standard-ports.md)
+      + [유연한 포트 전송을 위한 비표준 포트에서 HTTP/HTTPS](./networking/examples/http-on-non-standard-ports-flexible-port-egress.md)
+      + [전용 송신 IP 주소/VPN에 대한 비표준 포트에서 HTTP/HTTPS](./networking/examples/http-on-non-standard-ports.md)
       + [DataSourcePool을 사용한 SQL 연결](./networking/examples/sql-datasourcepool.md)
       + [Java SQL API를 사용한 SQL 연결](./networking/examples/sql-java-apis.md)
       + [이메일 서비스](./networking/examples/email-service.md)

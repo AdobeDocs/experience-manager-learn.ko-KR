@@ -8,13 +8,13 @@ role: Architect, Developer
 level: Intermediate
 kt: 9353
 thumbnail: KT-9353.jpeg
-source-git-commit: 6f047a76693bc05e64064fce6f25348037749f4c
+exl-id: 5f919d7d-e51a-41e5-90eb-b1f6a9bf77ba
+source-git-commit: 6ed26e5c9bf8f5e6473961f667f9638e39d1ab0e
 workflow-type: tm+mt
 source-wordcount: '248'
 ht-degree: 0%
 
 ---
-
 
 # 이메일 서비스
 
@@ -22,7 +22,7 @@ AEM 구성을 통해 AEM as a Cloud Service에서 이메일 전송 `DefaultMailS
 
 (대부분의) 메일 서비스는 HTTP/HTTPS에서 실행되지 않으므로 AEM as a Cloud Service의 메일 서비스에 대한 연결은 프록시되어야 합니다.
 
-+ `smtp.host` 가 OSGi 환경 변수로 설정되어 있습니다 `$[env:AEM_PROXY_HOST]` 그래서 그것은 피난을 통과합니다.
++ `smtp.host` 가 OSGi 환경 변수로 설정되어 있습니다 `$[env:AEM_PROXY_HOST;default=proxy.tunnel]` 그래서 그것은 피난을 통과합니다.
 + `smtp.port` 이(가) `portForward.portOrig` 대상 이메일 서비스의 호스트 및 포트에 매핑되는 포트입니다. 이 예에서는 매핑을 사용합니다. `AEM_PROXY_HOST:30002` → `smtp.sendgrid.com:465`.
 
 암호는 코드에 저장하지 않아야 하므로 [보안 OSGi 구성 변수](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#secret-configuration-values), AIO CLI 또는 Cloud Manager API를 사용하여 설정합니다.
@@ -55,7 +55,7 @@ AEM 구성을 통해 AEM as a Cloud Service에서 이메일 전송 `DefaultMailS
 
 ```json
 {
-    "smtp.host": "$[env:AEM_PROXY_HOST]",
+    "smtp.host": "$[env:AEM_PROXY_HOST;default=proxy.tunnel]",
     "smtp.port": "30002",
     "smtp.user": "$[env:EMAIL_USERNAME;default=apikey]",
     "smtp.password": "$[secret:EMAIL_PASSWORD]",
