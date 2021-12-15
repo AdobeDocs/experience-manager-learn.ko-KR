@@ -3,10 +3,10 @@ user-guide-title: AEM Sites 비디오 및 튜토리얼
 user-guide-description: Adobe Experience Manager Sites에 대한 비디오 및 튜토리얼 모음입니다.
 breadcrumb-title: AEM Sites 튜토리얼
 feature-set: Experience Manager Sites, Experience Manager
-source-git-commit: 08146f57235f3de7fd5ab73754166cc85e1f7dda
+source-git-commit: 6f930acd0b51c1f398be7a84efa99944dd3ce704
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 23%
+source-wordcount: '435'
+ht-degree: 24%
 
 ---
 
@@ -44,7 +44,6 @@ ht-degree: 23%
 + 경험 구성요소 {#experience-fragments}
    + [경험 조각 사용](experience-fragments/experience-fragments-feature-video-use.md)
    + [빌딩 블록](experience-fragments/building-blocks.md)
-   + [경험 조각을 사용하여 소셜 게시 설정](experience-fragments/experience-fragments-social-technical-video-setup.md)
    + [컨텐츠 조각과 경험 조각 비교](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html)
 + 개발 {#developing}
    + [AEM Project Archetype](developing/aem-project-archetype.md)
