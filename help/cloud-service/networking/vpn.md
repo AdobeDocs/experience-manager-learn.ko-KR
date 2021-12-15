@@ -8,13 +8,13 @@ role: Architect, Developer
 level: Intermediate
 kt: 9352
 thumbnail: KT-9352.jpeg
-source-git-commit: 6f047a76693bc05e64064fce6f25348037749f4c
+exl-id: 74cca740-bf5e-4cbd-9660-b0579301a3b4
+source-git-commit: ba2c299baeda632d6ebeff0c6ee07de5ef29b9cb
 workflow-type: tm+mt
-source-wordcount: '1261'
+source-wordcount: '1259'
 ht-degree: 0%
 
 ---
-
 
 # 가상 사설 네트워크(VPN)
 
@@ -24,7 +24,7 @@ AEM을 VPN과 as a Cloud Service으로 연결하여 AEM과 내부 서비스 간�
 
 VPN(Virtual Private Network)을 사용하면 AEM as a Cloud Service 고객이 Cloud Manager 프로그램을 기존 [지원](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#vpn) VPN. 이렇게 하면 고객 네트워크 내에서 AEM as a Cloud Service과 서비스 간의 보안 및 제어 연결이 가능합니다.
 
-Cloud Manager 프로그램은 __단일__ 네트워크 인프라 유형. 가상 사설 네트워크가 가장 중요한지 확인합니다. [적절한 유형의 네트워크 인프라](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html%3Flang%3Dja#general-vpn-considerations) 다음 명령을 실행하기 전에 AEM as a Cloud Service에 대해 설명합니다.
+Cloud Manager 프로그램은 __단일__ 네트워크 인프라 유형. 가상 사설 네트워크가 가장 중요한지 확인합니다. [적절한 유형의 네트워크 인프라](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#general-vpn-considerations) 다음 명령을 실행하기 전에 AEM as a Cloud Service에 대해 설명합니다.
 
 >[!MORELIKETHIS]
 >
@@ -58,7 +58,7 @@ Cloud Manager 프로그램은 __단일__ 네트워크 인프라 유형. 가상 �
        -H 'x-gw-ims-org-id: <ORGANIZATION_ID>' \
        -H 'x-api-key: <CLIENT_ID>' \
        -H 'Authorization: Bearer <ACCESS_TOKEN>' \
-       -H 'Content-Type: application/json' 
+       -H 'Content-Type: application/json'
    ```
 
 1. Cloud Manager API를 사용하여 Cloud Manager 프로그램용 Virtual Private Network 활성화 [createNetworkInfrastructure](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure) 작업. 적절한 `region` Cloud Manager API에서 가져온 코드 `listRegions` 작업.
@@ -68,7 +68,7 @@ Cloud Manager 프로그램은 __단일__ 네트워크 인프라 유형. 가상 �
    ```shell
    $ curl -X POST https://cloudmanager.adobe.io/api/program/{programId}/networkInfrastructures \
        -H 'x-gw-ims-org-id: <ORGANIZATION_ID>' \
-       -H 'x-api-key: <CLIENT_ID>' \ 
+       -H 'x-api-key: <CLIENT_ID>' \
        -H 'Authorization: Bearer <ACCESS_TOKEN>' \
        -H 'Content-Type: application/json'
        -d @./vpn-create.json
@@ -79,15 +79,15 @@ Cloud Manager 프로그램은 __단일__ 네트워크 인프라 유형. 가상 �
 [vpn-create.json 예제 다운로드](./assets/vpn-create.json)
 
    ```json
-   { 
+   {
        "kind": "vpn",
        "region": "va7",
-       "addressSpace": [ 
+       "addressSpace": [
            "10.104.182.64/26"
        ],
        "dns": {
            "resolvers": [
-               "10.151.201.22", 
+               "10.151.201.22",
                "10.151.202.22",
                "10.154.155.22"
            ]
@@ -130,7 +130,7 @@ Cloud Manager 프로그램은 __단일__ 네트워크 인프라 유형. 가상 �
    ```shell
    $ curl -X GET https://cloudmanager.adobe.io/api/program/{programId}/networkInfrastructure/{networkInfrastructureId} \
        -H 'x-gw-ims-org-id: <ORGANIZATION_ID>' \
-       -H 'x-api-key: <CLIENT_ID>' \ 
+       -H 'x-api-key: <CLIENT_ID>' \
        -H 'Authorization: <YOUR_BEARER_TOKEN>' \
        -H 'Content-Type: application/json'
    ```
@@ -146,7 +146,7 @@ Cloud Manager 프로그램은 __단일__ 네트워크 인프라 유형. 가상 �
    ```shell
    $ curl -X PUT https://cloudmanager.adobe.io/api/program/{programId}/environment/{environmentId}/advancedNetworking \
        -H 'x-gw-ims-org-id: <ORGANIZATION_ID>' \
-       -H 'x-api-key: <CLIENT_ID>' \ 
+       -H 'x-api-key: <CLIENT_ID>' \
        -H 'Authorization: Bearer <ACCESS_TOKEN>' \
        -H 'Content-Type: application/json' \
        -d @./vpn-configure.json
@@ -241,9 +241,9 @@ HTTP/HTTPS 외부 서비스에 대한 요청은 AEM 프록시 호스트/포트 �
     <p>
         AEM에서 비 표준 HTTP/HTTPS 포트의 외부 서비스로 HTTP/HTTPS를 연결하는 Java™ 코드 예입니다.
     </p>
-</td>   
-<td></td>   
-<td></td>   
+</td>
+<td></td>
+<td></td>
 </tr>
 </table>
 
@@ -270,21 +270,21 @@ HTTP/HTTPS 외부 서비스에 대한 요청은 AEM 프록시 호스트/포트 �
       <p>
             AEM JDBC 데이터 소스 풀을 구성하여 외부 SQL 데이터베이스에 연결하는 Java™ 코드 예입니다.
       </p>
-    </td>   
+    </td>
    <td>
       <a  href="./examples/sql-java-apis.md"><img alt="Java API를 사용한 SQL 연결" src="./assets/code-examples__sql-java-api.png"/></a>
       <div><strong><a href="./examples/sql-java-apis.md">Java™ API를 사용한 SQL 연결</a></strong></div>
       <p>
             Java™의 SQL API를 사용하여 외부 SQL 데이터베이스에 연결하는 Java™ 코드 예입니다.
       </p>
-    </td>   
+    </td>
    <td>
       <a  href="./examples/email-service.md"><img alt="가상 사설 네트워크(VPN)" src="./assets/code-examples__email.png"/></a>
       <div><strong><a href="./examples/email-service.md">이메일 서비스</a></strong></div>
       <p>
         AEM을 사용하여 외부 이메일 서비스에 연결하는 OSGi 구성 예입니다.
       </p>
-    </td>   
+    </td>
 </tr></table>
 
 ### VPN을 통해 AEM as a Cloud Service에 대한 액세스 제한
@@ -300,7 +300,7 @@ HTTP/HTTPS 외부 서비스에 대한 요청은 AEM 프록시 호스트/포트 �
       <p>
             VPN 허용 목록에 추가하다 트래픽만 AEM에 액세스할 수 있도록 IP 트래픽을 구성합니다.
       </p>
-    </td>   
+    </td>
    <td>
       <a  href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#restrict-vpn-to-ingress-connections"><img alt="AEM 게시에 대한 경로 기반 VPN 액세스 제한" src="./assets/code_examples__vpn-path-allow-list.png"/></a>
       <div><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#restrict-vpn-to-ingress-connections">AEM 게시에 대한 경로 기반 VPN 액세스 제한</a></strong></div>
@@ -308,5 +308,5 @@ HTTP/HTTPS 외부 서비스에 대한 요청은 AEM 프록시 호스트/포트 �
             AEM 게시의 특정 경로에 대해 VPN 액세스 권한이 필요합니다.
       </p>
     </td>
-   <td></td>   
+   <td></td>
 </tr></table>
