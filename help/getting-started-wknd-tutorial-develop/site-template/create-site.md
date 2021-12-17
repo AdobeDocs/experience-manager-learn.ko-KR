@@ -11,18 +11,14 @@ level: Beginner
 kt: 7496
 thumbnail: KT-7496.jpg
 exl-id: 6d0fdc4d-d85f-4966-8f7d-d53506a7dd08
-source-git-commit: 04096fe3c99cdcce2d43b2b29899c2bbe37ac056
+source-git-commit: 0225b7f2e495d5c020ea5192302691e3466808ed
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '924'
 ht-degree: 0%
 
 ---
 
 # 사이트 만들기 {#create-site}
-
->[!CAUTION]
->
-> 빠른 사이트 만들기 도구는 현재 기술 미리 보기입니다. 테스트 및 평가 목적으로 사용할 수 있으며, Adobe 지원에 동의하지 않는 프로덕션 용도에는 사용할 수 없습니다.
 
 빠른 사이트 만들기의 일부로, AEM의 Adobe Experience Manager에서 사이트 만들기 마법사를 사용하여 새 웹 사이트를 생성합니다. Adobe이 제공하는 표준 사이트 템플릿은 새 사이트의 시작점으로 사용됩니다.
 

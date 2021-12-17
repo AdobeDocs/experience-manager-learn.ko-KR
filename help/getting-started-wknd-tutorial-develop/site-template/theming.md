@@ -11,18 +11,14 @@ level: Beginner
 kt: 7498
 thumbnail: KT-7498.jpg
 exl-id: 98946462-1536-45f9-94e2-9bc5d41902d4
-source-git-commit: 04096fe3c99cdcce2d43b2b29899c2bbe37ac056
+source-git-commit: 0225b7f2e495d5c020ea5192302691e3466808ed
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
 
 # 모니터링 워크플로우 {#theming}
-
->[!CAUTION]
->
-> 빠른 사이트 만들기 도구는 현재 기술 미리 보기입니다. 테스트 및 평가 목적으로 사용할 수 있으며, Adobe 지원에 동의하지 않는 프로덕션 용도에는 사용할 수 없습니다.
 
 이 장에서는 Adobe Experience Manager 사이트의 테마 소스를 업데이트하여 브랜드별 스타일을 적용합니다. 라이브 사이트에 대해 코드를 지정하는 동안 프록시 서버를 사용하여 CSS 및 Javascript 업데이트 미리 보기를 보는 방법을 배웁니다. 또한 이 자습서에서는 Adobe Cloud Manager의 프런트 엔드 파이프라인을 사용하여 AEM 사이트에 테마 업데이트를 배포하는 방법을 다룹니다.
 

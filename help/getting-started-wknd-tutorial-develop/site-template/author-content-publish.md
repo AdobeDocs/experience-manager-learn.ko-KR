@@ -11,18 +11,14 @@ level: Beginner
 kt: 7497
 thumbnail: KT-7497.jpg
 exl-id: 17ca57d1-2b9a-409c-b083-398d38cd6a19
-source-git-commit: 04096fe3c99cdcce2d43b2b29899c2bbe37ac056
+source-git-commit: 0225b7f2e495d5c020ea5192302691e3466808ed
 workflow-type: tm+mt
-source-wordcount: '1364'
+source-wordcount: '1333'
 ht-degree: 2%
 
 ---
 
 # 작성 및 게시 소개 {#author-content-publish}
-
->[!CAUTION]
->
-> 빠른 사이트 만들기 도구는 현재 기술 미리 보기입니다. 테스트 및 평가 목적으로 사용할 수 있으며, Adobe 지원에 동의하지 않는 프로덕션 용도에는 사용할 수 없습니다.
 
 사용자가 웹 사이트의 컨텐츠를 업데이트하는 방법을 이해하는 것이 중요합니다. 이 장에서는 **컨텐츠 작성자** 그리고 이전 장에서 생성된 사이트에 대한 편집 업데이트를 만듭니다. 이 장의 끝에 변경 사항을 게시하여 라이브 사이트가 어떻게 업데이트되는지 이해하겠습니다.
 

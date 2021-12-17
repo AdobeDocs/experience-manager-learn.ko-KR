@@ -11,18 +11,14 @@ level: Beginner
 kt: 7498
 thumbnail: KT-7498.jpg
 exl-id: 261ec68f-36f4-474f-a6e4-7a2f9cea691b
-source-git-commit: 04096fe3c99cdcce2d43b2b29899c2bbe37ac056
+source-git-commit: 0225b7f2e495d5c020ea5192302691e3466808ed
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 4%
+source-wordcount: '660'
+ht-degree: 5%
 
 ---
 
 # 페이지 템플릿 {#page-templates}
-
->[!CAUTION]
->
-> 빠른 사이트 만들기 도구는 현재 기술 미리 보기입니다. 테스트 및 평가 목적으로 사용할 수 있으며, Adobe 지원에 동의하지 않는 프로덕션 용도에는 사용할 수 없습니다.
 
 이 장에서는 페이지 템플릿과 페이지 간의 관계를 살펴봅니다. 우리는 다음의 몇 가지 모집단 추론을 바탕으로, 스타일이 지정되지 않은 잡지 기사 템플릿을 작성할 것입니다 [AdobeXD](https://www.adobe.com/products/xd.html). 템플릿을 작성하는 과정에서 핵심 구성 요소 및 고급 정책 구성이 다룹니다.
 
