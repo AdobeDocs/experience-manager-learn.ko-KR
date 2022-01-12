@@ -4,9 +4,9 @@ user-guide-description: Adobe Experience Manager as a Cloud Service를 위한 �
 breadcrumb-title: AEM as a Cloud Service 튜토리얼
 sub-product: cloud-service
 team: TM
-source-git-commit: 6ed26e5c9bf8f5e6473961f667f9638e39d1ab0e
+source-git-commit: f712e86600ed18aee43187a5fb105324b14b7b89
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '650'
 ht-degree: 21%
 
 ---
@@ -157,14 +157,14 @@ ht-degree: 21%
       + [자산 패널 구성](./forms/create-first-af/configure-assets-panel.md)
       + [시작 패널 구성](./forms/create-first-af/configure-start-panel.md)
       + [도구 모음 추가 및 구성](./forms/create-first-af/add-configure-toolbar.md)
-   + Document Cloud API 및 AEM Forms CS{#doc-cloud-sdk}
-      + [소개](./forms/doc-cloud-sdk/introduction.md)
-      + [Adobe IO 프로젝트 만들기](./forms/doc-cloud-sdk/create-document-cloud-credentials.md)
-      + [OSGI 구성 만들기](./forms/doc-cloud-sdk/create-doc-cloud-configuration.md)
-      + [인터페이스 정의](./forms/doc-cloud-sdk/create-interface.md)
-      + [인터페이스 구현](./forms/doc-cloud-sdk/implement-interface.md)
-      + [JSON 부분 만들기](./forms/doc-cloud-sdk/get-content-analyzer.md)
-      + [사용자 지정 프로세스 단계](./forms/doc-cloud-sdk/custom-process-step.md)
+   + AEM Forms CS에서 문서 생성{#doc-gen-formscs}
+      + [소개](./forms/doc-gen-forms-cs/introduction.md)
+      + [서비스 자격 증명 만들기](./forms/doc-gen-forms-cs/service-credentials.md)
+      + [JWT 토큰 만들기](./forms/doc-gen-forms-cs/create-jwt.md)
+      + [액세스 토큰 만들기](./forms/doc-gen-forms-cs/create-access-token.md)
+      + [템플릿과 데이터 병합](./forms/doc-gen-forms-cs/merge-data-with-template.md)
+      + [솔루션 테스트](./forms/doc-gen-forms-cs/test.md)
+      + [과제](./forms/doc-gen-forms-cs/challenge.md)
    + Azure 포털 저장소{#forms-cs-azure-portal}
       + [소개](./forms/forms-cs-azure-portal/introduction.md)
       + [양식 데이터 모델 작성](./forms/forms-cs-azure-portal/create-fdm.md)

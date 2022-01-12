@@ -5,11 +5,11 @@ type: Documentation
 role: Developer
 level: Beginner, Intermediate
 version: Cloud Service
-feature: Document Services
+feature: Output Service
 topic: Development
 kt: 8185
 thumbnail: 8185.jpg
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: f712e86600ed18aee43187a5fb105324b14b7b89
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 # 액세스 토큰용 Exchange JWT
 
 
-이전 단계에서 생성된 JWT는 Adobe IMS API와 액세스 토큰을 위한 액세스 토큰으로 교환된 다음 AEM을 Cloud Service으로 액세스하는 데 사용할 수 있습니다. 액세스 토큰을 요청하려면 JWT, client_id, client_secret이 포함된 POST 요청을 IMS 인증 서비스로 보냅니다.
+이전 단계에서 만든 JWT는 Adobe IMS API와 액세스 토큰으로 교환된 후 AEM as a Cloud Service에 액세스하는 데 사용할 수 있습니다. 액세스 토큰을 요청하려면 JWT, client_id, client_secret이 포함된 POST 요청을 IMS 인증 서비스로 보냅니다.
 
 다음 코드는 액세스 토큰용 Exchange JWT를 생성하는 데 사용되었습니다
 

@@ -7,9 +7,9 @@ level: Beginner, Intermediate
 version: Cloud Service
 feature: Adaptive Forms
 topic: Development
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: f712e86600ed18aee43187a5fb105324b14b7b89
 workflow-type: tm+mt
-source-wordcount: '208'
+source-wordcount: '210'
 ht-degree: 0%
 
 ---
@@ -17,17 +17,16 @@ ht-degree: 0%
 
 # Eclipse 프로젝트 가져오기
 
-[zip 파일](./assets/aem-forms-doc-gen.zip) 다운로드 및 압축 해제
+다운로드 및 압축 해제 [zip 파일](./assets/aem-forms-cs-doc-gen.zip)
 
-Eclipse를 실행하고 프로젝트를 Eclipse로 가져오기
-프로젝트는 리소스 폴더에 다음 파일을 포함합니다.
+Eclipse를 실행하고 프로젝트를 Eclipse로 가져오기 프로젝트에는 리소스 폴더에 다음 파일이 포함되어 있습니다.
 
-* DataFile1 및 DataFile2 - 최종 PDF 파일을 생성하기 위해 템플릿과 병합되는 샘플 xml 데이터 파일
-* address.xdp - XDP 템플릿
+* DataFile1, DataFile2 및 DataFile3 - 최종 PDF 파일을 생성하기 위해 템플릿과 병합되는 샘플 xml 데이터 파일입니다
+* custom_fonts.xdp - XDP 템플릿.
 * service_token.json - 이 파일의 내용을 계정별 자격 증명으로 바꾸어야 합니다
 * options.json - 이 파일에 지정된 옵션은 API에서 생성된 PDF 파일의 속성을 설정하는 데 사용됩니다
 
-![리소스 파일](./assets/resource-files.JPG)
+![리소스 파일](./assets/resource-files.png)
 
 ## 솔루션 테스트
 
@@ -37,7 +36,7 @@ Eclipse를 실행하고 프로젝트를 Eclipse로 가져오기
 * Main.java를 Java 응용 프로그램으로 실행
 
 >[!NOTE]
-> Java 프로그램을 처음 실행하면 HTTP 403 오류가 발생합니다. 이 작업을 마치려면 [AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem)에서 기술 계정 사용자에게 적절한 권한을 부여해야 합니다.
+> Java 프로그램을 처음 실행하면 HTTP 403 오류가 발생합니다. 이 작업을 통과하려면 다음을 수행하십시오 [AEM의 기술 계정 사용자에게 적합한 권한](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem).
 
-**AEM Forms** 사용자는 이 교육 과정에서 사용한 역할을 지정합니다.
+**AEM Forms 사용자** 이 강좌에서 제가 사용한 역할입니다.
 

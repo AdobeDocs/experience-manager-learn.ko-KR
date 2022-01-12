@@ -5,13 +5,13 @@ type: Documentation
 role: Developer
 level: Beginner, Intermediate
 version: Cloud Service
-feature: Document Services
+feature: Output Service
 topic: Development
 kt: 8185
 thumbnail: 332439.jpg
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: f712e86600ed18aee43187a5fb105324b14b7b89
 workflow-type: tm+mt
-source-wordcount: '101'
+source-wordcount: '138'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,9 @@ ht-degree: 0%
 # POST 호출 만들기
 
 
-다음 단계는 필요한 매개 변수를 사용하여 엔드포인트에 HTTP POST 호출을 하는 것입니다. 템플릿 및 데이터 파일은 리소스 파일로 제공됩니다. 생성된 pdf의 속성은 요청에 있는 옵션의 매개 변수를 통해 지정됩니다. 속성은 options.json 리소스 파일에 지정됩니다. 따라서 엔드포인트에는 토큰 기반 인증이 있으므로 요청 헤더에서 액세스 토큰을 전달합니다.
+다음 단계는 필요한 매개 변수를 사용하여 엔드포인트에 HTTP POST 호출을 하는 것입니다. 템플릿 및 데이터 파일은 리소스 파일로 제공됩니다. 생성된 pdf의 속성은 요청에 있는 옵션의 매개 변수를 통해 지정됩니다.property embedFonts는 생성된 pdf에 사용자 정의 글꼴을 포함하는 데 사용됩니다.[이 설명서에 따라 Forms 클라우드 인스턴스에 사용자 지정 글꼴을 배포하십시오.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-set-up.html?lang=en) 속성은 options.json 리소스 파일에 지정됩니다. 따라서 엔드포인트에는 토큰 기반 인증이 있으므로 요청 헤더에서 액세스 토큰을 전달합니다.
 
-다음 코드는 액세스 토큰용 Exchange JWT를 생성하는 데 사용되었습니다
+다음 코드는 데이터를 템플릿에 병합하여 pdf를 생성하는 데 사용되었습니다
 
 ```java
 public class DocumentGeneration
@@ -34,7 +34,7 @@ public class DocumentGeneration
                 String accessToken = cu.getAccessToken();
                 httpPost.addHeader("Authorization", "Bearer " + accessToken);
                 ClassLoader classLoader = DocumentGeneration.class.getClassLoader();
-                URL templateFile = classLoader.getResource("templates/address.xdp");
+                URL templateFile = classLoader.getResource("templates/custom_fonts.xdp");
                 File xdpTemplate = new File(templateFile.getPath());
                 URL url = classLoader.getResource("datafiles");
                 System.out.println(url.getPath());
@@ -45,7 +45,7 @@ public class DocumentGeneration
                         builder.setMode(HttpMultipartMode.BROWSER_COMPATIBLE);
                         builder.addBinaryBody("data", files[i]);
                         builder.addBinaryBody("template", xdpTemplate);
-                        builder.addTextBody("options", GetOptions.getPDFOptions(), ContentType.APPLICATION_JSON);
+                        builder.addBinaryBody("options",GetOptions.getPDFOptions().getBytes(),ContentType.APPLICATION_JSON,"options"
                         try {
                                 HttpEntity entity = builder.build();
                                 httpPost.setEntity(entity);
