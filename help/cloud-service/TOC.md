@@ -1,18 +1,18 @@
 ---
-user-guide-title: Adobe Experience Manager as a Cloud Service 자습서
+user-guide-title: Adobe Experience Manager as a Cloud Service 튜토리얼
 user-guide-description: Adobe Experience Manager as a Cloud Service를 위한 튜토리얼 모음입니다.
 breadcrumb-title: AEM as a Cloud Service 튜토리얼
 sub-product: cloud-service
 team: TM
-source-git-commit: f712e86600ed18aee43187a5fb105324b14b7b89
+source-git-commit: cea9a9dc003b76369db1b7fedb9549062885258d
 workflow-type: tm+mt
-source-wordcount: '650'
-ht-degree: 21%
+source-wordcount: '656'
+ht-degree: 22%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud Service 자습서 {#cloud-service}
+# Adobe Experience Manager as a Cloud Service 튜토리얼 {#cloud-service}
 
 + [개요](./overview.md)
 + AEM as a Cloud Service 소개{#introduction}
@@ -101,7 +101,7 @@ ht-degree: 21%
       + [Java SQL API를 사용한 SQL 연결](./networking/examples/sql-java-apis.md)
       + [이메일 서비스](./networking/examples/email-service.md)
 + 마이그레이션 {#migration}
-   + [컨텐츠 전송 도구](./migration/content-transfer-tool.md)
+   + [콘텐츠 전송 도구](./migration/content-transfer-tool.md)
    + [자산의 벌크 가져오기](./migration/bulk-import.md)
 
    + AEM as a Cloud Service로 이동 {#moving-to-aem-as-a-cloud-service}
@@ -116,7 +116,7 @@ ht-degree: 21%
       + [검색 및 색인 지정](./migration/moving-to-aem-as-a-cloud-service/search-and-indexing.md)
       + 콘텐츠 마이그레이션 {#content-migration}
          + [대량 가져오기 서비스](./migration/moving-to-aem-as-a-cloud-service/content-migration/bulk-import-service.md)
-         + [컨텐츠 전송 도구](./migration/moving-to-aem-as-a-cloud-service/content-migration/content-transfer-tool.md)
+         + [콘텐츠 전송 도구](./migration/moving-to-aem-as-a-cloud-service/content-migration/content-transfer-tool.md)
       + [문제 해결](./migration/moving-to-aem-as-a-cloud-service/troubleshooting.md)
       + AEM Forms as a Cloud Service {#aem-forms}
          + [소개](./migration/moving-to-aem-as-a-cloud-service/aem-forms/introduction.md)
@@ -126,12 +126,12 @@ ht-degree: 21%
       + [소개](./migration/cloud-acceleration-manager/introduction.md)
       + [준비 및 모범 사례 분석기](./migration/cloud-acceleration-manager/readiness-and-best-practice-analyzer.md)
       + [구현 단계](./migration/cloud-acceleration-manager/implementation-phase.md)
-      + [컨텐츠 전송 도구](./migration/cloud-acceleration-manager/content-transfer-tool.md)
+      + [콘텐츠 전송 도구](./migration/cloud-acceleration-manager/content-transfer-tool.md)
       + [코드 리팩터링 도구](./migration/cloud-acceleration-manager/code-refactoring-tools.md)
       + [코드 리포지토리 현대화](./migration/cloud-acceleration-manager/code-repository-modernizer.md)
       + [Dispatcher 변환기](./migration/cloud-acceleration-manager/dispatcher-converter.md)
       + [인덱스 변환기](./migration/cloud-acceleration-manager/index-converter.md)
-      + [자산 워크플로우 마이그레이션 도구](./migration/cloud-acceleration-manager/asset-workflow-migration-tool.md)
+      + [에셋 워크플로 마이그레이션 도구](./migration/cloud-acceleration-manager/asset-workflow-migration-tool.md)
       + [Cloud Acceleration Manager 탐색](./migration/cloud-acceleration-manager/navigating.md)
       + [Cloud Acceleration Manager 사용](./migration/cloud-acceleration-manager/using.md)
 + 양식{#forms}
@@ -145,6 +145,7 @@ ht-degree: 21%
       + [Cloud Services 및 FDM 포함](./forms/developing-for-cloud-service/azure-storage-fdm.md)
       + [Cloud Manager로 푸시](./forms/developing-for-cloud-service/push-project-to-cloud-manager-git.md)
       + [개발 환경에 배포](./forms/developing-for-cloud-service/deploy-to-dev-environment.md)
+      + [Maven 원형 업데이트](./forms/developing-for-cloud-service/updating-project-archetype.md)
    + 적응형 양식 만들기{#create-first-af}
       + [소개](./forms/create-first-af/introduction.md)
       + [테마 만들기](./forms/create-first-af/create-theme.md)
@@ -167,11 +168,12 @@ ht-degree: 21%
       + [과제](./forms/doc-gen-forms-cs/challenge.md)
    + Azure 포털 저장소{#forms-cs-azure-portal}
       + [소개](./forms/forms-cs-azure-portal/introduction.md)
-      + [양식 데이터 모델 작성](./forms/forms-cs-azure-portal/create-fdm.md)
+      + [양식 데이터 모델 만들기](./forms/forms-cs-azure-portal/create-fdm.md)
       + [Azure 저장소에 양식 데이터 저장](./forms/forms-cs-azure-portal/create-af.md)
       + [양식 미리 채우기](./forms/forms-cs-azure-portal/prefill-af-storage.md)
       + [쿼리 제출](./forms/forms-cs-azure-portal/query-submitted-data.md)
    + 검토 작업 과정 만들기{#create-aem-workflow}
+      + [워크플로우 저장소 표면화](./forms/create-aem-workflow/externalize-workflow.md)
       + [워크플로우 모델 만들기](./forms/create-aem-workflow/create-workflow.md)
       + [워크플로우 트리거](./forms/create-aem-workflow/configure-af.md)
    + Adobe Sign과 AEM Forms{#forms-and-sign}

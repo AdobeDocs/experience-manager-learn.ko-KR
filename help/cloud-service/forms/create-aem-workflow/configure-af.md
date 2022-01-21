@@ -11,15 +11,15 @@ topic: Development
 kt: 7425
 thumbnail: 332435.pg
 exl-id: 7e3d449f-f22e-4bf4-a20e-82f3d76004a2
-source-git-commit: 2f619bc6ebaae36c8b9d05d8c4ff5c1cc8c18332
+source-git-commit: cea9a9dc003b76369db1b7fedb9549062885258d
 workflow-type: tm+mt
-source-wordcount: '41'
+source-wordcount: '26'
 ht-degree: 0%
 
 ---
 
 # 워크플로우를 트리거할 적응형 양식 구성
 
-AEM Forms 워크플로우 구성 요소를 사용하여 워크플로우 모델을 만듭니다. 또는 분할 구성 요소를 사용하여 전체 소득 변수의 값을 기반으로 워크플로우를 분기합니다.
+검토 워크플로우를 트리거할 적응형 양식 구성
 
 >[!VIDEO](https://video.tv.adobe.com/v/332435?quality=12&learn=on)
