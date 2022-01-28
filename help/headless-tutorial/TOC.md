@@ -6,10 +6,10 @@ version: Cloud Service
 feature-set: Experience Manager, Experience Manager Assets, Experience Manager Sites
 kt: 2963
 index: y
-source-git-commit: 922248133a12e05ea9068a0646324f2370e743e9
+source-git-commit: 83e16ea87847182139982ea2378d8ff9f079c968
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 21%
+source-wordcount: '221'
+ht-degree: 19%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 21%
       + [5 - GraphQL 끝점](./graphql/video-series/graphql-endpoints.md)
       + [6 - 작성자 및 게시 아키텍처](./graphql/video-series/author-publish-architecture.md)
       + [7 - GraphQL 지속적인 쿼리](./graphql/video-series/graphql-persisted-queries.md)
-   + 여러 단계 자습서{#multi-step}
+   + 기본 자습서{#multi-step}
       + [개요](./graphql/multi-step/overview.md)
       + [1 - 컨텐츠 조각 모델 정의](./graphql/multi-step/content-fragment-models.md)
       + [2 - 컨텐츠 조각 작성](./graphql/multi-step/author-content-fragments.md)
@@ -39,6 +39,13 @@ ht-degree: 21%
       + [4 - 외부 앱에서 쿼리](./graphql/multi-step/graphql-and-external-app.md)
       + [5 - 조각 참조를 사용한 고급 데이터 모델링](./graphql/multi-step/fragment-references.md)
       + [6 - 프로덕션 배포](./graphql/multi-step/production-deployment.md)
+   + 고급 자습서{#advanced-tutorial}
+      + [개요](/help/headless-tutorial/graphql/advanced-graphql/overview.md)
+      + [1 - 컨텐츠 조각 모델 만들기](/help/headless-tutorial/graphql/advanced-graphql/create-content-fragment-models.md)
+      + [2 - 컨텐츠 조각 작성](/help/headless-tutorial/graphql/advanced-graphql/author-content-fragments.md)
+      + [3 - AEM GraphQL API 탐색](/help/headless-tutorial/graphql/advanced-graphql/explore-graphql-api.md)
+      + [4 - 지속되는 GraphQL 쿼리](/help/headless-tutorial/graphql/advanced-graphql/graphql-persisted-queries.md)
+      + [5 - 클라이언트 애플리케이션 통합](/help/headless-tutorial/graphql/advanced-graphql/client-application-integration.md)
    + 예 {#example-apps}
       + [React](./graphql/example-apps/react-app.md)
       + [iOS SwiftUI](./graphql/example-apps/ios-swiftui-app.md)
