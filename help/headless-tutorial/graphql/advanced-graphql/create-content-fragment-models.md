@@ -131,18 +131,18 @@ Adobe Experience Manager에는 몇 가지 내장된 유효성 검사 방법이 �
 
 10. 아래 **지정된 이미지 너비만 허용합니다**&#x200B;를 클릭하고 &quot;최대 너비&quot;를 선택합니다. 에서 **최대(픽셀)** 표시되는 필드에 &quot;500&quot;을 입력합니다. 에 대해 동일한 옵션을 선택합니다 **지정된 이미지 높이만 허용합니다**.
 
-   이러한 유효성 검사는 추가된 이미지가 지정된 값을 초과하지 않도록 합니다. 이제 유효성 검사 규칙은 다음과 같습니다.
-   ![컨텐츠 참조 유효성 검사 규칙](assets/define-content-fragment-models/content-reference-validation.png)
+    이러한 유효성 검사는 추가된 이미지가 지정된 값을 초과하지 않도록 합니다. 이제 유효성 검사 규칙은 다음과 같습니다.
+    ![컨텐츠 참조 유효성 검사 규칙](assets/define-content-fragment-models/content-reference-validation.png)
 
 11. 추가 **여러 줄 텍스트** 필드 및 **필드 레이블** &quot;전기&quot; 을(를) 종료하십시오. **기본 유형** 드롭다운을 기본 &quot;리치 텍스트&quot; 옵션으로 설정합니다.
 
-   ![전기 옵션](assets/define-content-fragment-models/biography.png)
+    ![전기 옵션](assets/define-content-fragment-models/biography.png)
 
 12. 로 이동합니다 **데이터 유형** 탭을 클릭한 다음 **열거형** 프로필 사진 아래의 필드입니다. 기본값 **다음으로 렌더링** 선택 **드롭다운**. Expert, Advanced, Intermediate와 같은 강사 경험 수준 옵션을 선택합니다.
 
 13. 그런 다음 다른 **열거형** &quot;강사 경험 수준&quot; 아래의 필드를 선택하고 **다음으로 렌더링** 선택 사항입니다. 암벽 등반, 서핑, 사이클링, 스키, 배낭 여행과 같은 다양한 기술을 사용해 보십시오. 옵션 레이블 및 옵션 값은 다음과 일치해야 합니다.
 
-   ![기술 열거형](assets/define-content-fragment-models/skills-enum.png)
+    ![기술 열거형](assets/define-content-fragment-models/skills-enum.png)
 
 14. 마지막으로 다음을 사용하여 &quot;관리자 세부 사항&quot; 필드 레이블을 만듭니다 **여러 줄 텍스트** 필드.
 
