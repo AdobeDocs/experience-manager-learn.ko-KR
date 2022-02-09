@@ -4,10 +4,10 @@ user-guide-description: Adobe Experience Manager as a Cloud Service를 위한 �
 breadcrumb-title: AEM as a Cloud Service 튜토리얼
 sub-product: cloud-service
 team: TM
-source-git-commit: cea9a9dc003b76369db1b7fedb9549062885258d
+source-git-commit: 228da29e7ac0d61359c2b94131495b5b433a09dc
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 22%
+source-wordcount: '674'
+ht-degree: 21%
 
 ---
 
@@ -166,6 +166,12 @@ ht-degree: 22%
       + [템플릿과 데이터 병합](./forms/doc-gen-forms-cs/merge-data-with-template.md)
       + [솔루션 테스트](./forms/doc-gen-forms-cs/test.md)
       + [과제](./forms/doc-gen-forms-cs/challenge.md)
+   + 배치 API를 사용하여 문서 생성{#formscs-batch-api}
+      + [소개](./forms/formscs-batch-api/introduction.md)
+      + [Azure 저장소 구성](./forms/formscs-batch-api/configure-azure-storage.md)
+      + [USC 배치 구성 만들기](./forms/formscs-batch-api/configure-usc-batch.md)
+      + [배치 구성 만들기](./forms/formscs-batch-api/create-batch-config.md)
+      + [배치 실행](./forms/formscs-batch-api/execute-batch-generate-documents.md)
    + Azure 포털 저장소{#forms-cs-azure-portal}
       + [소개](./forms/forms-cs-azure-portal/introduction.md)
       + [양식 데이터 모델 만들기](./forms/forms-cs-azure-portal/create-fdm.md)
