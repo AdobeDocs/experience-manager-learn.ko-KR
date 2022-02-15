@@ -5,9 +5,9 @@ user-guide-title: AEM Forms 비디오 및 튜토리얼
 user-guide-description: 초보자 및 숙련된 AEM Forms 개발자를 위한 AEM Forms 리소스 모음입니다.
 breadcrumb-title: AEM Forms 튜토리얼
 index: y
-source-git-commit: 7f9a7951b2d9bb780d5374f17bb289c38b2e2ae7
+source-git-commit: 15b57ec6792bc47d0041946014863b13867adf22
 workflow-type: tm+mt
-source-wordcount: '1633'
+source-wordcount: '1641'
 ht-degree: 3%
 
 ---
@@ -17,21 +17,21 @@ ht-degree: 3%
 
 + [개요](overview.md)
 + [따라야 할 모범 사례](adaptive-forms/best-practices-adaptive-forms.md)
-+ [AEM 작성자를 사용하여 OKTA 인증 설정](adaptive-forms/single-sign-on-with-okta.md)
++ [Setting up OKTA authentication with AEM Author](adaptive-forms/single-sign-on-with-okta.md)
 + 첫 번째 적응형 양식 만들기 {#creating-your-first-adaptive-form}
    + [소개 및 설정](creating-your-first-adaptive-form/introduction-and-setup.md)
-   + [적응형 양식 템플릿 만들기](creating-your-first-adaptive-form/create-adaptive-form-template.md)
-   + [양식 조각 만들기](creating-your-first-adaptive-form/create-form-fragment.md)
+   + [Create Adaptive Form template](creating-your-first-adaptive-form/create-adaptive-form-template.md)
+   + [Create form fragment](creating-your-first-adaptive-form/create-form-fragment.md)
    + [적응형 양식 만들기](creating-your-first-adaptive-form/create-adaptive-form.md)
-   + [루트 패널 구성 및 하위 패널 추가](creating-your-first-adaptive-form/configuring-root-panel-and-adding-child-panels.md)
+   + [Configuring root panel and adding child panels](creating-your-first-adaptive-form/configuring-root-panel-and-adding-child-panels.md)
    + [사람 패널에 구성 요소 추가](creating-your-first-adaptive-form/adding-components-to-people-panel.md)
    + [소득 패널에 테이블 추가](creating-your-first-adaptive-form/adding-table-to-income-panel.md)
    + [자산 패널 구성](creating-your-first-adaptive-form/configuring-assets-panel.md)
-   + [사용자 지정 함수 및 코드 편집기 사용](creating-your-first-adaptive-form/using-custom-functions-and-code-editor.md)
+   + [Using custom functions and code editor](creating-your-first-adaptive-form/using-custom-functions-and-code-editor.md)
 + 양식 제출 처리 {#handling-af-form-submissions}
    + [검토 워크플로우 만들기](handling-form-submissions/creating-a-review-workflow.md)
-   + [워크플로우를 트리거하는 적응형 양식 구성](handling-form-submissions/configuring-adaptive-form-to-trigger-workflow.md)
-   + [감사 인사 페이지 표시](handling-form-submissions/submitting-adaptive-forms-thank-you-page-article-use.md)
+   + [Configuring Adaptive form to trigger workflow](handling-form-submissions/configuring-adaptive-form-to-trigger-workflow.md)
+   + [Displaying Thank You Page](handling-form-submissions/submitting-adaptive-forms-thank-you-page-article-use.md)
    + [외부 끝점 전송](handling-form-submissions/submitting-adaptive-forms-to-external-server-article-use.md)
    + [이메일 보내기](handling-form-submissions/sending-email-on-adaptive-form-submission.md)
    + [유료 요청 워크플로우](handling-form-submissions/paid-time-off-request-workflow.md)
@@ -40,6 +40,7 @@ ht-degree: 3%
 + 유용한 통합{#some-useful-integrations}
    + [2단계 인증](some-useful-integrations/two-factor-authentication.md)
    + [OCR 데이터 추출](some-useful-integrations/ocr-data-extraction.md)
+   + [계단식 드롭다운 목록](some-useful-integrations/geonames-org.md)
 + OSGi 번들 만들기 {#creating-your-first-osgi-bundle}
    + [환경 설정](creating-your-first-osgi-bundle/create-your-first-osgi-bundle.md)
    + [OSGi 서비스 만들기](creating-your-first-osgi-bundle/create-osgi-service.md)
@@ -50,6 +51,7 @@ ht-degree: 3%
    + [응용 Forms의 미리 채우기 서비스](adaptive-forms/prefill-service-adaptive-forms-article-use.md)
    + [적응형 Forms에서 사용자 지정 제출](adaptive-forms/custom-submit-aem-forms-article.md)
    + [응용 Forms의 Captcha](adaptive-forms/forms-captcha-feature-video-use.md)
+   + [규칙 편집기의 사용자 지정 함수](adaptive-forms/custom-functions-aem-forms.md)
    + [웹 페이지에 적응형 양식 포함](adaptive-forms/embed-af-web-page.md)
    + [문자열 배열 만들기](adaptive-forms/converting-comma-seperated-string-to-array.md)
    + [OSGI 워크플로우에서 XML에 값 설정 사용](adaptive-forms/setvalue-aem-forms-workflow-tutorial-use.md)
@@ -70,9 +72,9 @@ ht-degree: 3%
    + [LDAP와 AEM Forms 통합](adaptive-forms/aem-forms-workflow-with-ldap-article-use.md)
    + [AEM Forms에서 서비스 사용자 사용](adaptive-forms/service-user-tutorial-develop.md)
    + [적응형 양식 제출 시 DoR 태깅 및 저장](adaptive-forms/tagging-and-saving-document-of-record-in-dam-article-use.md)
-   + [양식 데이터 모델 서비스 호출의 결과로 테이블 채우기](adaptive-forms/populatetable.md)
-   + [워크플로우 주석 캡처](adaptive-forms/capturing-workflow-comments-aem-workflow-article.md)
-   + [DB에 제출된 양식 데이터 저장](adaptive-forms/storing-adaptive-form-data-in-db.md)
+   + [Populating table with the results from Form Data Model Service Invocation](adaptive-forms/populatetable.md)
+   + [Capturing workflow comments](adaptive-forms/capturing-workflow-comments-aem-workflow-article.md)
+   + [Storing Submitted Form Data in DB](adaptive-forms/storing-adaptive-form-data-in-db.md)
    + [AEM 6.4 Workflow의 양식 데이터 모델 서비스](adaptive-forms/form-data-model-service-as-step-in-workflow-video-use.md)
    + [양식 데이터 모델 서비스 단계의 오류 메시지 처리](adaptive-forms/handling-error-messages-in-invoke-fdm-step.md)
    + [AEM 6.5.1 Workflow의 양식 데이터 모델 서비스](adaptive-forms/form-data-model-service-as-step-in-aem65-workflow-video-use.md)
@@ -84,9 +86,9 @@ ht-degree: 3%
    + [규칙 편집기에서 양식 데이터 모델의 호출 서비스 사용](adaptive-forms/service-data-model-technical-video-use.md)
    + [양식 데이터 모델을 사용하여 AEM DAM에 이진 데이터 게시](adaptive-forms/form-data-model-to-post-binary-data-tutorial-use.md)
    + [재사용 가능 워크플로우 모델 만들기](adaptive-forms/re-usable-aem-forms-workflow-models-article.md)
-   + [사용자 지정 프로세스 단계 AEM 워크플로우](adaptive-forms/custom-process-step-aem-workflow.md)
+   + [Custom Process Step AEM Workflow](adaptive-forms/custom-process-step-aem-workflow.md)
    + [데이터 소스 구성 수정](adaptive-forms/modify-data-source-configuration-settings-article.md)
-   + [HTML 5 Forms 미리 채우기](adaptive-forms/prepopulating-html5-forms-in-aem-forms-article.md)
+   + [Pre-Populating HTML5 Forms](adaptive-forms/prepopulating-html5-forms-in-aem-forms-article.md)
    + [Salesforce를 사용한 양식 데이터 모델](adaptive-forms/using-adaptive-forms-with-sales-force-integration-tutorial.md)
    + [선택 구성 요소에 동적으로 항목 추가](adaptive-forms/choice-group-items-adding-dynamically-article.md)
 + 양식 데이터 모델을 사용하여 적응형 양식 미리 채우기{#prefill-fdm-db}
@@ -133,18 +135,18 @@ ht-degree: 3%
    + [Adobe Sign Cloud 구성 만들기](aem-forms-and-adobe-sign/create-adobe-sign-cloud-configuration.md)
    + [서명을 위해 문서를 보낼 워크플로우 만들기](aem-forms-and-adobe-sign/create-workflow-to-send-document-for-signing.md)
    + [적응형 양식 만들기 및 구성](aem-forms-and-adobe-sign/create-and-configure-adaptive-form.md)
-   + [단일 서명자에 대한 적응형 양식 구성](aem-forms-and-adobe-sign/configure-adaptive-form-for-single-signer.md)
-   + [서명자 2명을 위한 적응형 양식 구성](aem-forms-and-adobe-sign/configure-adaptive-form-for-two-signers.md)
+   + [Configure Adaptive Form for single signer](aem-forms-and-adobe-sign/configure-adaptive-form-for-single-signer.md)
+   + [Configure Adaptive Form for two signers](aem-forms-and-adobe-sign/configure-adaptive-form-for-two-signers.md)
    + [automated forms conversion 서비스 구성](aem-forms-and-adobe-sign/configure-automated-forms-conversion-service.md)
    + [PDF 양식을 적응형 양식으로 변환](aem-forms-and-adobe-sign/convert-pdf-form-into-adaptive-form.md)
    + [변환된 적응형 양식 구성](aem-forms-and-adobe-sign/configure-converted-adaptive-form.md)
    + [Adobe Sign에서 XDP 템플릿 사용](aem-forms-and-adobe-sign/using-xdp-templates-with-adobe-sign.md)
-+ 여러 Forms 서명{#sign-multiple-documents}
++ Sign Multiple Forms{#sign-multiple-documents}
    + [소개](sign-multiple-documents/introduction.md)
    + [데이터 소스 구성](sign-multiple-documents/configure-data-source.md)
    + [OSGi 서비스 만들기](sign-multiple-documents/create-osgi-service.md)
-   + [기본 워크플로우 만들기](sign-multiple-documents/create-main-workflow.md)
-   + [서명 상태 업데이트 워크플로우](sign-multiple-documents/update-signature-status.md)
+   + [Create Main Workflow](sign-multiple-documents/create-main-workflow.md)
+   + [Update Signature Status Workflow](sign-multiple-documents/update-signature-status.md)
    + [요약 구성 요소 사용자 지정](sign-multiple-documents/customize-summary-component.md)
    + [클라이언트 라이브러리 만들기](sign-multiple-documents/create-client-lib.md)
    + [양식 템플릿 만들기](sign-multiple-documents/create-af-template.md)
@@ -191,7 +193,7 @@ ht-degree: 3%
 + AEM Forms과 Adobe Campaign Standard{#aem-forms-with-adobe-campaign}
    + [소개](aem-forms-with-adobe-campaign/aem-forms-with-campaign-standard-getting-started-tutorial.md)
    + [1부 - 토큰 생성](aem-forms-with-adobe-campaign/partone.md)
-   + [2부 - 양식 제출 시 ACS 프로파일 생성](aem-forms-with-adobe-campaign/parttwo.md)
+   + [Part2 - Creating ACS Profile on Form Submission](aem-forms-with-adobe-campaign/parttwo.md)
    + [Part3 - ACS 프로필 정보를 사용한 양식 미리 채우기](aem-forms-with-adobe-campaign/partthree.md)
    + [Part4 - 양식 데이터 모델을 사용하여 ACS 프로파일 생성](aem-forms-with-adobe-campaign/partfour.md)
 
@@ -203,12 +205,12 @@ ht-degree: 3%
    + [AEM Forms에서 바코드 서비스 사용](document-services/barcode-service-adaptive-forms-article.md)
    + [AEM Forms에서 PDFG 서비스 사용](document-services/using-pdfg-in-aem-forms.md)
    + [AEM Forms에서 출력 및 Forms 서비스 사용](document-services/output-and-forms-services-article-develop.md)
-   + [하나의 데이터 파일에서 여러 pdf 생성](document-services/generate-multi-record-pdf.md)
+   + [Generating multiple pdf&#39;s from one data file](document-services/generate-multi-record-pdf.md)
    + [모바일 양식 제출 시 PDF 생성](document-services/generate-pdf-from-mobile-form-submission-article.md)
    + [모바일 양식에서 대화형 PDF 생성](document-services/render-interactive-form-using-api.md)
    + [적응형 양식에서 대화형 DoR 생성](document-services/generate-interactive-dor.md)
-   + [Reader 확장 자격 증명 구성](document-services/configuring-reader-extension-osgi.md)
-   + [XDP 표현물의 PDF에 사용 권한 적용](document-services/rendering-and-reader-extending-xdp-templates-article.md)
+   + [Configure Reader Extensions Credential](document-services/configuring-reader-extension-osgi.md)
+   + [Apply Usage Rights to PDF on XDP Rendition](document-services/rendering-and-reader-extending-xdp-templates-article.md)
    + [업로드된 PDF에 사용 권한 적용](document-services/apply-reader-extension-rights-to-pdf.md)
    + [문서 인증](document-services/certifying-documents-aem-forms-tutorial.md)
    + [양식 첨부 파일 조합](document-services/assemble-form-attachments.md)
@@ -218,7 +220,7 @@ ht-degree: 3%
    + [소개](ic-print-channel-tutorial/introduction.md)
    + [Tomcat 설정](ic-print-channel-tutorial/set-up-tomcat.md)
    + [데이터 소스 만들기](ic-print-channel-tutorial/create-data-source.md)
-   + [양식 데이터 모델 작성](ic-print-channel-tutorial/create-form-data-model.md)
+   + [양식 데이터 모델 만들기](ic-print-channel-tutorial/create-form-data-model.md)
    + [Forms 디자이너를 사용하여 XDP 레이아웃 만들기](ic-print-channel-tutorial/create-xdp-layout-using-forms-designer.md)
    + [문서 조각 만들기](ic-print-channel-tutorial/create-document-fragment.md)
    + [인쇄 채널 문서 만들기](ic-print-channel-tutorial/create-print-channel-document.md)
@@ -240,7 +242,7 @@ ht-degree: 3%
    + [소개](ic-web-channel-tutorial/introduction.md)
    + [Tomcat 설정](ic-web-channel-tutorial/partone.md)
    + [데이터 소스 만들기](ic-web-channel-tutorial/parttwo.md)
-   + [양식 데이터 모델 작성](ic-web-channel-tutorial/partthree.md)
+   + [양식 데이터 모델 만들기](ic-web-channel-tutorial/partthree.md)
    + [웹 채널 문서 템플릿 만들기](ic-web-channel-tutorial/partfour.md)
    + [문서 조각 만들기](ic-web-channel-tutorial/partfive.md)
    + [대화형 통신 문서 만들기](ic-web-channel-tutorial/partsix.md)
@@ -255,12 +257,12 @@ ht-degree: 3%
 + 문제 해결 {#troubleshooting}
    + [문서 서비스: DDX 관련 문제를 해결하는 절차](troubleshooting/steps-to-capture-required-information-to-troubleshoot-ddx-related-issues.md)
    + [문서 서비스: PDFA 변환 문제를 해결하는 절차](troubleshooting/steps-to-capture-required-information-to-troubleshoot-pdfa-conversion-issues.md)
-   + [문서 서비스: Forms 및 출력 서비스에 대한 글꼴 관련 문제를 디버깅하는 방법](troubleshooting/how-to-debug-font-related-issue-for-forms-and-output-service.md)
+   + [Document Services: How to debug font related issue for Forms and Output Service](troubleshooting/how-to-debug-font-related-issue-for-forms-and-output-service.md)
    + [문서 서비스: Forms 및 출력 서비스용 글꼴을 포함하는 방법](troubleshooting/how-to-embed-fonts-for-forms-and-output-service.md)
    + [문서 서비스: 성능 로깅을 사용하여 Forms 및 출력 서비스를 디버깅하는 방법](troubleshooting/how-to-enable-performance-logging-to-debug-forms-and-output-service.md)
-   + [문서 서비스: 대용량 파일 변환을 위한 경로 트랜잭션 시간 제한을 늘리는 방법](troubleshooting/how-to-increase-aries-transaction-timeout-for-conversion-of-large-files.md)
+   + [Document Services: How to increase aries transaction timeout for conversion of large files](troubleshooting/how-to-increase-aries-transaction-timeout-for-conversion-of-large-files.md)
    + [문서 서비스: FormsIVS 및 OutputIVS를 사용하여 로드 테스트를 실행하는 방법](troubleshooting/how-to-run-load-tests-using-formsivs-and-outputivs.md)
-   + [문서 서비스: FormsIVS 및 OutputIVS에서 사용자 지정 XDP 및 데이터 파일을 업데이트하는 방법](troubleshooting/how-to-update-custom-xdps-and-data-files-in-formsivs-and-outputivs.md)
+   + [Document Services: How to update custom XDPs and data files in FormsIVS and OutputIVS](troubleshooting/how-to-update-custom-xdps-and-data-files-in-formsivs-and-outputivs.md)
    + [문서 서비스: 자세한 ORB 추적을 활성화하는 단계](troubleshooting/steps-to-enable-verbose-orb-trace.md)
    + [문서 서비스: XMLFormService part1에 대한 bmc 풀 크기를 조정하는 단계](troubleshooting/steps-to-tweak-bmc-pool-size-for-xmlformservice-1.md)
    + [문서 서비스: XMLFormService part2에 대한 bmc 풀 크기를 조정하는 단계](troubleshooting/steps-to-tweak-bmc-pool-size-for-xmlformservice-2.md)
@@ -299,8 +301,8 @@ ht-degree: 3%
    + [JEE Foundation: 작업 관리자 테이블에서 프로세스 레코드를 삭제하는 방법](troubleshooting/how-to-purge-process-records-from-the-job-manager-table.md)
    + [JEE Foundation: 명령줄에서 프로세스 삭제를 실행하는 방법](troubleshooting/how-to-run-process-purge-from-command-line.md)
    + [JEE Foundation: 수동으로 부트스트랩 단계](troubleshooting/steps-to-bootstrap-manually.md)
-   + [JEE Foundation: 모바일 양식에 대한 디버그 로그를 캡처하는 절차](troubleshooting/steps-to-capture-debug-logs-for-mobile-forms.md)
-   + [JEE Foundation: ForcedDisconnectException 완화 단계](troubleshooting/steps-to-mitigate-forceddisconnectexception.md)
+   + [JEE Foundation: Steps to capture debug logs for mobile forms](troubleshooting/steps-to-capture-debug-logs-for-mobile-forms.md)
+   + [JEE Foundation: Steps to mitigate ForcedDisconnectException](troubleshooting/steps-to-mitigate-forceddisconnectexception.md)
    + [일반: JBoss Admin Console용 관리 사용자를 추가하는 방법](troubleshooting/how-to-add-management-user-for-jboss-admin-console.md)
    + [일반: HAR 로그를 캡처하는 방법](troubleshooting/how-to-capture-har-logs.md)
    + [일반: unix 서버에서 JVM 힙을 캡처하는 방법](troubleshooting/how-to-capture-heap-dumps-of-a-jvm-on-a-unix-server.md)
