@@ -2,7 +2,7 @@
 title: AEM Sites 시작하기 - Project Archetype
 description: AEM Sites 시작하기 - Project Archetype WKND 자습서는 Adobe Experience Manager을 처음 사용하는 개발자를 위해 디자인된 여러 부분으로 된 자습서입니다. 이 자습서에서는 가상 라이프스타일 브랜드인 WKND에 대해 AEM 사이트를 구현하는 방법을 설명합니다. 이 자습서에서는 프로젝트 설정, maven 원형, 핵심 구성 요소, 편집 가능한 템플릿, 클라이언트 라이브러리 및 구성 요소 개발과 같은 기본 주제를 다룹니다.
 sub-product: sites
-version: 6.4, 6.5, Cloud Service
+version: 6.5, Cloud Service
 type: Tutorial
 feature: Core Components, Page Editor, Editable Templates, AEM Project Archetype
 topic: Content Management, Development
@@ -12,10 +12,10 @@ mini-toc-levels: 1
 index: y
 exl-id: 90d14734-f644-4a45-9361-1e47a5b52fff
 recommendations: disable
-source-git-commit: a366d485da3f473bd4c1ef31538231965acc825c
+source-git-commit: df9ff5e6811d35118d1beee6baaffa51081cb3c3
 workflow-type: tm+mt
-source-wordcount: '478'
-ht-degree: 7%
+source-wordcount: '475'
+ht-degree: 8%
 
 ---
 
@@ -25,10 +25,10 @@ AEM(Adobe Experience Manager)을 처음 사용하는 개발자를 위해 고안�
 
 이 튜토리얼은 [AEM 프로젝트 원형](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 새 프로젝트를 생성합니다.
 
-이 튜토리얼은 **AEM as a Cloud Service** 및 는 이전 버전과 호환됩니다. **AEM 6.5.5.0+** 및 **AEM 6.4.8.1+**. 사이트는 다음을 사용하여 구현됩니다.
+이 튜토리얼은 **AEM as a Cloud Service** 및 는 이전 버전과 호환됩니다. **AEM 6.5.10+**. 사이트는 다음을 사용하여 구현됩니다.
 
 * [Maven AEM 프로젝트 원형](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
-* [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)
+* [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html)
 * Sling 모델
 * [편집 가능한 템플릿](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html)
@@ -44,7 +44,7 @@ AEM(Adobe Experience Manager)을 처음 사용하는 개발자를 위해 고안�
 
 로컬에 설치해야 합니다.
 
-* [로컬 AEM **작성자** 인스턴스](https://experience.adobe.com/#/downloads) (Cloud Service SDK, 6.5.5+ 또는 6.4.8.1+)
+* [로컬 AEM **작성자** 인스턴스](https://experience.adobe.com/#/downloads) (Cloud Service SDK, 6.5.10+)
 * [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 * [Apache Maven](https://maven.apache.org/) (3.3.9 이상)
 * [Node.js](https://nodejs.org/en/) (LTS - 장기 지원)
