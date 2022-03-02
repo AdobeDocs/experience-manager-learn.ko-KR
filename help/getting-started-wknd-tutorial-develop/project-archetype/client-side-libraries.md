@@ -11,9 +11,9 @@ level: Beginner
 kt: 4083
 thumbnail: 30359.jpg
 exl-id: 8d3026e9-a7e2-4a76-8a16-a8197a5e04e3
-source-git-commit: df9ff5e6811d35118d1beee6baaffa51081cb3c3
+source-git-commit: 1a73d7ee1f71a5bd78114398f04e98a894847957
 workflow-type: tm+mt
-source-wordcount: '2889'
+source-wordcount: '2882'
 ht-degree: 1%
 
 ---
@@ -145,7 +145,7 @@ ht-degree: 1%
 
    각 파일은 와 같은 코어 구성 요소에 매핑됩니다 [아코디언 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/accordion.html?lang=en#components). 각 코어 구성 요소는 [블록 요소 수정자](https://getbem.com/) 또는 BEM 표기법을 사용하여 스타일 규칙을 사용하여 특정 CSS 클래스를 보다 쉽게 타깃팅할 수 있습니다. 아래의 파일 `/components` 은 각 구성 요소에 대해 다른 BEM 규칙을 사용하여 AEM Project Archetype에 의해 무시되었습니다.
 
-1. WKND 기본 스타일 다운로드 **[wknd-base-styles-src-v3.zip]/(help/getting-started-wknd-tutorial-develop/project-archetype/assets/client-side-libraries/wknd-base-styles-src-v3.zip)** 및 **unzip** 파일
+1. WKND 기본 스타일 다운로드 **[wknd-base-styles-src-v3.zip](/help/getting-started-wknd-tutorial-develop/project-archetype/assets/client-side-libraries/wknd-base-styles-src-v3.zip)** 및 **unzip** 파일
 
    ![WKND 기본 스타일](assets/client-side-libraries/wknd-base-styles-unzipped.png)
 
