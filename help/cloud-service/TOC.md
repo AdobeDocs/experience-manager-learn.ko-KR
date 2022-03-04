@@ -4,10 +4,10 @@ user-guide-description: Adobe Experience Manager as a Cloud Service를 위한 �
 breadcrumb-title: AEM as a Cloud Service 튜토리얼
 sub-product: cloud-service
 team: TM
-source-git-commit: 0848419e4da935787c351469925cc900d4eb21df
+source-git-commit: 5da75b172a7dda29452954990f6ab2374e7698d9
 workflow-type: tm+mt
-source-wordcount: '679'
-ht-degree: 24%
+source-wordcount: '697'
+ht-degree: 23%
 
 ---
 
@@ -188,6 +188,11 @@ ht-degree: 24%
       + [Adobe Sign 클라우드 구성](./forms/forms-and-sign/create-adobe-sign-cloud-configuration.md)
       + [적응형 양식 만들기](./forms/forms-and-sign/create-adaptive-form.md)
       + [채우기 및 서명 구성](./forms/forms-and-sign/configure-form-fill-and-sign.md)
+   + Microsoft Dynamics와 통합{#formscs-dynamics-crm}
+      + [Dynamics 응용 프로그램 만들기](./forms/formscs-dynamics-crm/create-dynamics-account.md)
+      + [데이터 소스 구성](./forms/formscs-dynamics-crm/configure-odata-data-source.md)
+      + [양식 데이터 모델 만들기](./forms/formscs-dynamics-crm/create-form-data-model.md)
+      + [적응형 양식 만들기](./forms/formscs-dynamics-crm/create-adaptive-form.md)
    + Salesforce와 통합{#integrate-with-salesforce}
       + [소개](./forms/integrate-with-salesforce/introduction.md)
       + [연결된 앱 만들기](./forms/integrate-with-salesforce/create-connected-app.md)
@@ -219,7 +224,8 @@ ht-degree: 24%
    + [문제 해결](./asset-compute/troubleshooting.md)
 + 클라우드 5{#cloud-5}
    + [소개](./cloud-5/cloud5-introduction.md)
-   + [CDN 심층 분석](./cloud-5/cloud5-aem-cdn-part1.md)
+   + [시즌 1](./cloud-5/cloud5-season-1.md)
+   + [AEM CDN 1부](./cloud-5/cloud5-aem-cdn-part1.md)
 + [AEM Experts Series](./aem-experts-series.md)
 + 여러 단계 Tutorials{#multi-step-tutorials}
    + [AEM Sites 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR)
