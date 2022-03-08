@@ -1,16 +1,22 @@
 ---
-title: Adobe Experience Manager as a Cloud Service Cloud 5 - 시즌 1
+title: 클라우드 5 - 시즌 1
 description: Adobe을 구축하는 전문 엔지니어의 Adobe Experience Manager(AEM) as a Cloud Service 및 이를 제공하는 전문 서비스에 대해 알아봅니다.
 sub-product: sites, cloud-manager, assets
-recommendations: noDisplay
-source-git-commit: 5da75b172a7dda29452954990f6ab2374e7698d9
+solution: Experience Manager as a Cloud Service, Experience Manager
+recommendations: noDisplay, noCatalog
+exl-id: 210e5483-d79e-47ac-aa09-b6956cca2e62
+source-git-commit: 4fc95c69f3c15122f9e4b87be469f8bc15097042
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '256'
 ht-degree: 1%
 
 ---
 
-# Cloud 5 소개
+# 클라우드 5
+
+![AEM Experts Series](./imgs/masthead.png)
+
+## 소개
 
 AEM Engineering의 Cloud 5 Series를 시작합니다. 제품의 구현 단계에서 주요 문제 중 하나는 샘플, 도구 또는 API에 대한 충분한 코드 샘플 및/또는 라이브 데모가 있다는 것입니다. 이 시리즈의 목표는 5분 이내에 AEM as a Cloud Service에 대한 유용한 정보를 제공하는 것입니다.
 
