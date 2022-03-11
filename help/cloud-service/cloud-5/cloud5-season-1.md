@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 210e5483-d79e-47ac-aa09-b6956cca2e62
-source-git-commit: 4fc95c69f3c15122f9e4b87be469f8bc15097042
+source-git-commit: 83757a34cc82159326d3e035b88f018972d5dc27
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '288'
 ht-degree: 1%
 
 ---
@@ -40,14 +40,16 @@ AEM Engineering의 Cloud 5 Series를 시작합니다. 제품의 구현 단계에
       </p>
      </td>   
      <td>
-      <img alt="AEM CDN Part 2" src="./imgs/coming-soon.png"/>
+      <a href="./cloud5-aem-cdn-part2.md">
+         <img alt="AEM CDN Part 2" src="./imgs/002-thumb.png"/>
+      </a>
       <div>
-         <strong>AEM CDN Deep Dive(2부)</strong>
+         <a href="./cloud5-aem-cdn-part2.md"><strong>AEM CDN Deep Dive(2부)</strong></a>
          <br/><em>Darin Muntze &amp; James Talbot과 함께, 수석 클라우드 설계자</em>
       </div>
       <p>
         <br/>
-         2022년 3월 11일 출시
+         2부는 AEM as a Cloud Service CDN을 계속 보는 것입니다. Adobe는 새로운 CDN을 사용하여 얻을 수 있는 기능에 대한 보다 일반적인 질문 및 신화를 몇 가지 해결합니다.
       </p>
    </td>     
    </td>   
