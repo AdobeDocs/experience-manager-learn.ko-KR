@@ -11,9 +11,9 @@ level: Beginner
 kt: 7498
 thumbnail: KT-7498.jpg
 exl-id: 98946462-1536-45f9-94e2-9bc5d41902d4
-source-git-commit: 0225b7f2e495d5c020ea5192302691e3466808ed
+source-git-commit: 25a1a40f42d37443db9edc0e09b1691b1c19e848
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '482'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,7 @@ Cloud Manager의 프런트 엔드 파이프라인을 사용하여 AEM 환경에 
 
 ## 축하합니다! {#congratulations}
 
-축하합니다. 방금 업데이트된 테마를 AEM에 배포했습니다!
+축하합니다. 이제 테마를 AEM에 업데이트하고 배포했습니다.
 
 ### 다음 단계 {#next-steps}
 

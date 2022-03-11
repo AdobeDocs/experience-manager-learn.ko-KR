@@ -1,5 +1,5 @@
 ---
-title: 가상 사설 네트워크(VPN)
+title: Virtual Private Network(VPN)
 description: AEM을 VPN과 as a Cloud Service으로 연결하여 AEM과 내부 서비스 간에 보안 통신 채널을 만드는 방법을 알아봅니다.
 version: Cloud Service
 feature: Security
@@ -9,22 +9,26 @@ level: Intermediate
 kt: 9352
 thumbnail: KT-9352.jpeg
 exl-id: 74cca740-bf5e-4cbd-9660-b0579301a3b4
-source-git-commit: ba2c299baeda632d6ebeff0c6ee07de5ef29b9cb
+source-git-commit: 25a1a40f42d37443db9edc0e09b1691b1c19e848
 workflow-type: tm+mt
-source-wordcount: '1259'
-ht-degree: 0%
+source-wordcount: '1321'
+ht-degree: 1%
 
 ---
 
-# 가상 사설 네트워크(VPN)
+# Virtual Private Network(VPN)
 
 AEM을 VPN과 as a Cloud Service으로 연결하여 AEM과 내부 서비스 간에 보안 통신 채널을 만드는 방법을 알아봅니다.
 
 ## 가상 개인 네트워크란 무엇입니까?
 
-VPN(Virtual Private Network)을 사용하면 AEM as a Cloud Service 고객이 Cloud Manager 프로그램을 기존 [지원](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#vpn) VPN. 이렇게 하면 고객 네트워크 내에서 AEM as a Cloud Service과 서비스 간의 보안 및 제어 연결이 가능합니다.
+VPN(가상 개인 네트워크)을 사용하면 AEM as a Cloud Service 고객이 연결할 수 있습니다 **AEM 환경** Cloud Manager 프로그램 내에서 기존 [지원](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#vpn) VPN. 이렇게 하면 고객 네트워크 내에서 AEM as a Cloud Service과 서비스 간의 보안 및 제어 연결이 가능합니다.
 
 Cloud Manager 프로그램은 __단일__ 네트워크 인프라 유형. 가상 사설 네트워크가 가장 중요한지 확인합니다. [적절한 유형의 네트워크 인프라](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#general-vpn-considerations) 다음 명령을 실행하기 전에 AEM as a Cloud Service에 대해 설명합니다.
+
+>[!NOTE]
+>
+>Cloud Manager에서 VPN에 빌드 환경을 연결하는 것은 지원되지 않습니다. 개인 저장소에서 이진 객체에 액세스해야 하는 경우 공용 인터넷에서 사용할 수 있는 URL을 사용하여 보안 및 암호로 보호된 리포지토리를 설정해야 합니다 [여기에 설명된 대로](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/setting-up-project.html#password-protected-maven-repositories).
 
 >[!MORELIKETHIS]
 >
@@ -279,7 +283,7 @@ HTTP/HTTPS 외부 서비스에 대한 요청은 AEM 프록시 호스트/포트 �
       </p>
     </td>
    <td>
-      <a  href="./examples/email-service.md"><img alt="가상 사설 네트워크(VPN)" src="./assets/code-examples__email.png"/></a>
+      <a  href="./examples/email-service.md"><img alt="Virtual Private Network(VPN)" src="./assets/code-examples__email.png"/></a>
       <div><strong><a href="./examples/email-service.md">이메일 서비스</a></strong></div>
       <p>
         AEM을 사용하여 외부 이메일 서비스에 연결하는 OSGi 구성 예입니다.

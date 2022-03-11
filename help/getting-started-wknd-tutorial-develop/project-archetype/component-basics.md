@@ -2,7 +2,7 @@
 title: AEM Sites 시작하기 - 구성 요소 기본 사항
 description: 간단한 'HelloWorld' 예를 통해 AEM(Adobe Experience Manager) 사이트 구성 요소의 기본 기술을 이해합니다. HTL, Sling 모델, 클라이언트측 라이브러리 및 작성자 대화 상자의 주제를 탐색합니다.
 sub-product: sites
-version: 6.4, 6.5, Cloud Service
+version: 6.5, Cloud Service
 type: Tutorial
 feature: Core Components, Developer Tools
 topic: Content Management, Development
@@ -12,7 +12,7 @@ mini-toc-levels: 1
 kt: 4081
 thumbnail: 30177.jpg
 exl-id: 7fd021ef-d221-4113-bda1-4908f3a8629f
-source-git-commit: df9ff5e6811d35118d1beee6baaffa51081cb3c3
+source-git-commit: 25a1a40f42d37443db9edc0e09b1691b1c19e848
 workflow-type: tm+mt
 source-wordcount: '1146'
 ht-degree: 1%
@@ -186,7 +186,7 @@ Sling 모델은 AEM 컨텍스트에서 개발 시 JCR에서 Java 변수로 데�
 1. 다음 가져오기 구문을 추가합니다.
 
    ```java
-   import org.apache.commons.lang.StringUtils;
+   import org.apache.commons.lang3.StringUtils;
    import org.apache.sling.models.annotations.DefaultInjectionStrategy;
    ```
 
