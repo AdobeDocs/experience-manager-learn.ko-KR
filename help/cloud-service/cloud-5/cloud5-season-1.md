@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 210e5483-d79e-47ac-aa09-b6956cca2e62
-source-git-commit: a8e6e863a4d236babdb1e2ae978240cd51631981
+source-git-commit: 187f13c5051237915fdc8a8c0e3280dd0f0702ce
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '362'
 ht-degree: 1%
 
 ---
@@ -53,14 +53,16 @@ AEM Engineering의 Cloud 5 Series를 시작합니다. 제품의 구현 단계에
       </p>
    </td>
      <td>
-      <img alt="로그 파일 및 로깅" src="./imgs/coming-soon.png"/>
+        <a href="./cloud5-aem-log-files.md">
+            <img alt="로그 파일 및 로깅" src="./imgs/003-thumb.png"/>
+        </a>
       <div>
-         <strong>로그 파일 및 로깅</strong>
+         <a href="./cloud5-aem-log-files.md"><strong>로그 파일 및 로깅</strong></a>
          <br/><em>Darin Muntze &amp; James Talbot과 함께, 수석 클라우드 설계자</em>
       </div>
       <p>
         <br/>
-         2022년 3월 18일 출시
+         다음은 API뿐만 아니라 사용자 인터페이스를 통해 AEM as a Cloud Service에서 로그에 액세스하는 방법을 빠르게 살펴봅니다.
       </p>
    </td> 
   </tr>
