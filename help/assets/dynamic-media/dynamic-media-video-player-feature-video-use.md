@@ -8,10 +8,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 7e4cb782-836d-4ec0-97d0-645b91ea43e0
-source-git-commit: 947c280f32b013a6ade76b2f3df1152b29108c6e
+source-git-commit: 697b2c11f91899c56869a24b06c690a8e278df0c
 workflow-type: tm+mt
-source-wordcount: '227'
-ht-degree: 7%
+source-wordcount: '246'
+ht-degree: 6%
 
 ---
 
@@ -30,7 +30,7 @@ HLS 브라우저 지원은 지원되지 않는 브라우저의 경우 점진적 
 
 >[!NOTE]
 >
-> Dynamic Media Hybrid는 2022년 3월 15일 이후 Internet Explorer 11에서 비디오 스트리밍을 지원하지 않습니다.
+> Dynamic Media Hybrid는 2022년 3월 15일 이후 Internet Explorer 11에서 비디오 스트리밍을 지원하지 않습니다. 점진적 재생으로 돌아가려면 6.5.12로 업그레이드하십시오.
 
 <table> 
  <thead> 
@@ -49,7 +49,9 @@ HLS 브라우저 지원은 지원되지 않는 브라우저의 경우 점진적 
   <tr>
    <td> <p>데스크톱</p> </td>
    <td> <p>Internet Explorer 11+</p> </td>
-   <td> <p>HLS 비디오 스트리밍</p> </td>
+   <td> <p>Dynamic Media - Scene 7 모드: HLS 비디오 스트리밍</p> 
+        <p>Dynamic Media - 하이브리드 모드: 점진적 다운로드</p>
+   </td>
   </tr>
   <tr>
    <td> <p>데스크톱</p> </td>
