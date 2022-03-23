@@ -1,30 +1,30 @@
 ---
-title: HTML5 양식 제출에서 AEM 워크플로우 트리거
-seo-title: HTML5 양식 제출에서 AEM 워크플로우 트리거
+title: HTML5 양식 제출에서 AEM 워크플로우 트리거 - PDF 제출 처리
+seo-title: Trigger AEM Workflow on HTML5 Form Submission
 description: 오프라인 모드에서 모바일 양식 채우기를 계속 수행하고 모바일 양식을 제출하여 AEM 워크플로우를 트리거합니다.
-seo-description: 오프라인 모드에서 모바일 양식 채우기를 계속 수행하고 모바일 양식을 제출하여 AEM 워크플로우를 트리거합니다.
+seo-description: Continue filling mobile form in offline mode and submit mobile form to trigger AEM workflow
 feature: Mobile Forms
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
-topic: 개발
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: eafeafe1-7a72-4023-b5bb-d83b056ba207
+source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
 workflow-type: tm+mt
-source-wordcount: '258'
-ht-degree: 1%
+source-wordcount: '236'
+ht-degree: 0%
 
 ---
 
-
 # PDF 제출 처리
 
-이 부분에서는 Acrobat/Reader에서 PDF 제출을 처리하기 위해 AEM Publish에서 실행되는 간단한 서블릿을 만듭니다. 그러면 이 서블릿은 제출된 데이터를 AEM 작성자 저장소의 `nt:file` 노드로 저장하는 작업을 담당하는 AEM 작성자 인스턴스에서 실행 중인 서블릿에 HTTP POST 요청을 작성합니다.
+이 부분에서는 Acrobat/Reader에서 PDF 제출을 처리하기 위해 AEM Publish에서 실행되는 간단한 서블릿을 만듭니다. 그러면 이 서블릿은 제출된 데이터를 다음으로 저장하는 AEM 작성자 인스턴스에서 실행되는 서블릿에 HTTP POST 요청을 작성합니다 `nt:file` 노드가 AEM 작성자 리포지토리에 있습니다.
 
-다음은 PDF 제출을 처리하는 서블릿의 코드입니다. 이 서블릿에서는 AEM 작성자 인스턴스의 **/bin/startworkflow**&#x200B;에 마운트된 서블릿에 POST 호출을 수행합니다. 이 서블릿은 AEM 작성자 리포지토리에 양식 데이터를 저장합니다.
+다음은 PDF 제출을 처리하는 서블릿의 코드입니다. 이 서블릿에서는 에 마운트된 서블릿에 대해 POST 호출을 수행합니다 **/bin/startworkflow** ( AEM 작성자 인스턴스)를 참조하십시오. 이 서블릿은 AEM 작성자 리포지토리에 양식 데이터를 저장합니다.
 
 
 ## AEM 게시 서블릿
@@ -104,7 +104,7 @@ public class HandlePDFSubmission extends SlingAllMethodsServlet {
 
 ## AEM 작성자 서블릿
 
-다음 단계는 제출된 데이터를 AEM 작성자 리포지토리에 저장하는 것입니다. `/bin/startworkflow`에 마운트된 서블릿은 제출된 데이터를 저장합니다.
+다음 단계는 제출된 데이터를 AEM 작성자 리포지토리에 저장하는 것입니다. 마운트된 서블릿 `/bin/startworkflow` 제출된 데이터를 저장합니다.
 
 ```java
 import java.io.BufferedReader;
@@ -202,7 +202,6 @@ public class StartWorkflow extends SlingAllMethodsServlet {
 }
 ```
 
-AEM 워크플로우 실행 프로그램은 `/content/pdfsubmissions` 노드 아래에 `nt:file` 유형의 새 리소스를 만들 때마다 트리거하도록 구성됩니다. 이 워크플로우는 제출된 데이터를 xdp 템플릿에 병합하여 비대화형 또는 정적 PDF를 만듭니다. 그런 다음 생성된 pdf가 검토 및 승인을 위해 사용자에게 할당됩니다.
+AEM 워크플로우 실행 프로그램은 새로운 유형의 리소스를 트리거할 때마다 구성됩니다 `nt:file` 는 `/content/pdfsubmissions` 노드 아래에 있어야 합니다. 이 워크플로우는 제출된 데이터를 xdp 템플릿과 병합하여 비대화형 또는 정적 PDF을 만듭니다. 그런 다음 생성된 pdf가 검토 및 승인을 위해 사용자에게 할당됩니다.
 
-제출된 데이터를 `/content/pdfsubmissions` 노드 아래에 저장하기 위해 `GetResolver` OSGi 서비스를 사용하면 모든 AEM Forms 설치에서 사용할 수 있는 `fd-service` 시스템 사용자를 사용하여 제출된 데이터를 저장할 수 있습니다.
-
+제출된 데이터를 저장하려면 `/content/pdfsubmissions` 노드, `GetResolver` OSGi 서비스를 통해 다음을 사용하여 제출된 데이터를 저장할 수 있습니다 `fd-service` 모든 AEM Forms 설치에서 사용할 수 있는 시스템 사용자.

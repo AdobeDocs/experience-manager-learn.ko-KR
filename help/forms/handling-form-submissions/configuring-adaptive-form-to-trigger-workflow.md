@@ -2,7 +2,7 @@
 title: AEM 워크플로우를 트리거하는 적응형 양식 구성
 description: 양식 제출 시 AEM 워크플로우를 트리거할 때 페이로드 옵션을 구성합니다
 sub-product: forms
-feature: 워크플로우
+feature: Workflow
 topics: integrations
 audience: developer
 doc-type: article
@@ -10,16 +10,16 @@ activity: setup
 version: 6.4,6.5
 kt: 5407
 thumbnail: 40258.jpg
-topic: 개발
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 9f1dbd02-774a-4b84-90fa-02d4e468cbac
+source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
 workflow-type: tm+mt
-source-wordcount: '168'
-ht-degree: 4%
+source-wordcount: '166'
+ht-degree: 3%
 
 ---
-
 
 # AEM 워크플로우를 트리거하는 적응형 양식 구성
 
@@ -29,16 +29,16 @@ ht-degree: 4%
 
 ### 적응형 양식 템플릿 가져오기
 
-* [적응형 양식 템플릿](assets/af-form-template.zip) 다운로드
+* 다운로드 [적응형 양식 템플릿](assets/af-form-template.zip)
 * [패키지 관리자를 사용하여 템플릿 가져오기](http://localhost:4502/crx/packmgr/index.jsp)
 * 적응형 양식 템플릿 업로드 및 설치
 
 ### 샘플 적응형 양식 가져오기
 
-* [적응형 양식](assets/peak-application-form.zip) 다운로드
-* [양식 및 문서](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)로 이동합니다.
+* 다운로드 [적응형 양식](assets/peak-application-form.zip)
+* 찾아보기 [양식 및 문서](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * 만들기 -> 파일 업로드 를 클릭합니다
-* 샘플 적응형 양식은 [Application Forms](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments/applicationforms)이라는 폴더에 배치됩니다
+* 샘플 적응형 양식은 [애플리케이션 Forms](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments/applicationforms)
 
 다음 비디오에서는 AEM 워크플로우를 트리거하기 위해 적응형 양식을 구성하는 방법을 설명합니다
 >[!VIDEO](https://video.tv.adobe.com/v/40258/?quality=9&learn=on)
@@ -46,5 +46,3 @@ ht-degree: 4%
 다음 비디오에서는 crx 저장소의 워크플로우 페이로드 및 기타 세부 사항을 보여줍니다
 
 >[!VIDEO](https://video.tv.adobe.com/v/40259/?quality=9&learn=on)
-
-

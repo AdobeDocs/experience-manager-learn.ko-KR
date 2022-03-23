@@ -1,19 +1,19 @@
 ---
-title: MySQL 데이터베이스에서 양식 데이터 저장 및 검색
+title: MySQL 데이터베이스에서 양식 데이터 저장 및 검색 - 양식 데이터를 저장할 서블릿
 description: 양식 데이터를 저장하고 검색하는 단계를 단계별로 안내하는 다중 부분 자습서입니다
-feature: 적응형 양식
+feature: Adaptive Forms
 type: Tutorial
 version: 6.3,6.4,6.5
-topic: 개발
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: dd82f309-dd4e-42ce-8856-e51c898024f5
+source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
 workflow-type: tm+mt
-source-wordcount: '94'
-ht-degree: 3%
+source-wordcount: '96'
+ht-degree: 0%
 
 ---
-
 
 # 양식 데이터를 저장할 서블릿
 

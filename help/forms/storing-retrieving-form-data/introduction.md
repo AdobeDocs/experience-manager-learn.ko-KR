@@ -1,19 +1,19 @@
 ---
-title: MySQL 데이터베이스에서 양식 데이터 저장 및 검색
+title: MySQL 데이터베이스 소개에서 양식 데이터 저장 및 검색
 description: 양식 데이터를 저장하고 검색하는 단계를 단계별로 안내하는 다중 부분 자습서입니다
-feature: 적응형 양식
+feature: Adaptive Forms
 type: Tutorial
 version: 6.3,6.4,6.5
-topic: 개발
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 95795102-4278-4556-8e0f-1b8a359ab093
+source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
 workflow-type: tm+mt
-source-wordcount: '167'
-ht-degree: 1%
+source-wordcount: '165'
+ht-degree: 0%
 
 ---
-
 
 # MySQL 데이터베이스에서 적응형 양식 데이터 저장 및 검색
 
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 * 서블릿에 POST 호출을 생성합니다. 이 서블릿은 데이터베이스에 데이터를 저장합니다. 저장된 데이터가 GUID와 연결되어 있습니다
 
-* 적응형 양식을 저장된 데이터로 채우려면 GUID와 연결된 데이터를 검색하고 **request.setAttribute** 메서드를 사용하여 적응형 양식을 채웁니다.
+* 저장된 데이터로 적응형 양식을 채우려면 GUID와 연결된 데이터를 검색하고 **request.setAttribute** 메서드를 사용합니다.
 
 ## 사용 사례 데모
 

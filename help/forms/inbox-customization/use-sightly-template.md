@@ -1,5 +1,5 @@
 ---
-title: 받은 편지함 사용자 지정
+title: sightly 템플릿을 사용하여 받은 편지함 데이터 표시
 description: sightly 템플릿을 사용하여 워크플로우의 추가 데이터를 표시하려면 사용자 지정 열을 추가합니다
 feature: Adaptive Forms
 topics: development
@@ -11,9 +11,10 @@ kt: 5830
 topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 0049c9fd864bd4dd4f8c33b1e40e94aad3ffc5b9
+exl-id: d09b46ed-3516-44cf-a616-4cb6e9dfdf41
+source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '294'
 ht-degree: 0%
 
 ---
@@ -21,13 +22,13 @@ ht-degree: 0%
 # sightly 템플릿을 사용하여 받은 편지함 데이터 표시
 
 sightly 템플릿을 사용하여 받은 편지함 열에 표시할 데이터의 형식을 지정할 수 있습니다. 이 예에서는 소득 열의 값에 따라 coral-ui 아이콘이 표시됩니다. 다음 스크린샷에서는 소득 열에서 아이콘 사용을 보여 줍니다
-![수입-icon](assets/income-column.PNG)
+![수입 아이콘](assets/income-column.PNG)
 
-[사용자 ](assets/sightly-template.zip) 지정 coral ui 아이콘을 표시하는 데 사용되는 sightly 템플릿은 이 문서의 일부로 제공됩니다.
+[sightly 템플릿](assets/sightly-template.zip) 사용자 지정 coral ui 아이콘을 표시하는 데 사용되는 이 문서의 일부로 제공됩니다.
 
 ## Sightly 템플릿
 
-다음은 sightly 템플릿입니다. 템플릿에 있는 코드는 수입에 따라 아이콘을 표시합니다. 아이콘은 AEM과 함께 제공되는 [coral ui 아이콘 라이브러리](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons)의 일부로 사용할 수 있습니다.
+다음은 sightly 템플릿입니다. 템플릿에 있는 코드는 수입에 따라 아이콘을 표시합니다. 아이콘은 [coral ui 아이콘 라이브러리](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) AEM과 함께 제공됩니다.
 
 ```java
 <template data-sly-template.incomeTemplate="${@ item}>">
@@ -81,7 +82,7 @@ return val;
 
 >[!NOTE]
 >
->이 문서에서는 사용자가 이 시리즈의 이전 문서](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/inbox-customization/add-married-column.html)에서 [샘플 워크플로우](assets/review-workflow.zip) 및 [샘플 양식](assets/snap-form.zip)을 설치했다고 가정합니다.[
+>이 문서에서는 사용자가 [샘플 워크플로우](assets/review-workflow.zip) 및 [샘플 양식](assets/snap-form.zip) 변환 전: [이전 문서](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/inbox-customization/add-married-column.html) 이 시리즈에 있습니다.
 
 * [관리 사용자로 crx에 로그인](http://localhost:4502/crx/de/index.jsp)
 * [sightly 템플릿 가져오기](assets/sightly-template.zip)
@@ -91,7 +92,7 @@ return val;
 * 만들기 단추 옆에 있는 목록 보기를 클릭하여 Admin Control을 엽니다.
 * 받은 편지함에 소득 열을 추가하고 변경 사항을 저장합니다
 * [양식 미리 보기](http://localhost:4502/content/dam/formsanddocuments/snapform/jcr:content?wcmmode=disabled)
-* _혼인 상태_&#x200B;를 선택하고 양식을 제출합니다
+* 을(를) 선택합니다 _혼인 여부_ 양식을 제출하고
 * [받은 편지함 보기](http://localhost:4502/aem/inbox)
 
 양식을 제출하면 워크플로우가 트리거되고 작업이 &quot;관리자&quot; 사용자에게 할당됩니다. 수입 열 아래에 적절한 아이콘이 표시됩니다

@@ -1,23 +1,23 @@
 ---
-title: 받은 편지함 사용자 지정
+title: 사용자 지정 열 추가
 description: 워크플로우의 추가 데이터를 표시하려면 사용자 지정 열을 추가하십시오
-feature: 적응형 양식
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.5.5
 kt: 5830
-topic: 개발
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 0b141b37-6041-4f87-bd50-dade8c0fee7d
+source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '307'
 ht-degree: 0%
 
 ---
-
 
 # 사용자 지정 열 추가
 
@@ -84,12 +84,12 @@ return isMarried(inboxItem);
 * [AEM 웹 콘솔에 로그인합니다.](http://localhost:4502/system/console/bundles)
 * [받은 편지함 사용자 지정 번들 배포 및 시작](assets/inboxcustomization.inboxcustomization.core-1.0-SNAPSHOT.jar)
 * [받은 편지함 열기](http://localhost:4502/aem/inbox)
-* _만들기_ 단추 옆에 있는 _목록 보기_ 아이콘을 클릭하여 관리 컨트롤을 엽니다
+* 다음을 클릭하여 Admin Control 열기 _목록 보기_ 아이콘 옆에 있는 아이콘 _만들기_ 버튼
 * 받은 편지함에 기여 열 추가 및 변경 내용 저장
 * [FormsAndDocuments UI로 이동](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* [Createmenu 메뉴](assets/snap-form.zip) 에서 파일 업로드 _를 선택하여 샘플_ 형식을  __ 가져옵니다
+* [샘플 양식 가져오기](assets/snap-form.zip) 선택 _파일 업로드_ 변환 전: _만들기_ 메뉴
 * [양식 미리 보기](http://localhost:4502/content/dam/formsanddocuments/snapform/jcr:content?wcmmode=disabled)
-* _혼인 상태_를 선택하고 양식을 제출합니다
+* 을(를) 선택합니다 _혼인 여부_ 양식을 제출하고
    [받은 편지함 보기](http://localhost:4502/aem/inbox)
 
 양식을 제출하면 워크플로우가 트리거되고 작업이 &quot;관리자&quot; 사용자에게 할당됩니다. 이 스크린샷에 표시된 대로 기별 열 아래에 값이 표시됩니다

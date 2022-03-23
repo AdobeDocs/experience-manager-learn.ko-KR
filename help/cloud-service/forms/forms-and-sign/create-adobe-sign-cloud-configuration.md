@@ -1,5 +1,5 @@
 ---
-title: Adobe Sign Cloud 구성 만들기
+title: Adobe Sign Cloud 구성 Cloud Service 만들기
 description: 클라우드 서비스 구성을 사용하여 AEM Forms 및 Adobe Sign 통합을 만듭니다.
 solution: Experience Manager,Experience Manager Forms
 type: Documentation
@@ -11,9 +11,9 @@ topic: Development
 kt: 7428
 thumbnail: 332437.jpg
 exl-id: a55773a5-0486-413f-ada6-bb589315f0b1
-source-git-commit: 2f619bc6ebaae36c8b9d05d8c4ff5c1cc8c18332
+source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
 workflow-type: tm+mt
-source-wordcount: '60'
+source-wordcount: '62'
 ht-degree: 0%
 
 ---

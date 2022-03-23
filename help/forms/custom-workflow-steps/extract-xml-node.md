@@ -1,5 +1,5 @@
 ---
-title: 페이로드 문서를 파일 시스템에 쓰기
+title: 제출된 데이터 xml에서 노드 추출
 description: 페이로드 폴더 아래에 있는 쓰기 문서를 파일 시스템에 추가하는 사용자 지정 프로세스 단계
 feature: Adaptive Forms
 version: 6.5
@@ -7,9 +7,10 @@ topic: Development
 role: Developer
 level: Beginner
 kt: kt-9860
-source-git-commit: 160471fdc34439da6c312d65b252eaa941b7c7a2
+exl-id: 5282034f-275a-479d-aacb-fc5387da793d
+source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '179'
 ht-degree: 0%
 
 ---
