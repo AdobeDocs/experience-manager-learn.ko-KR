@@ -4,9 +4,9 @@ user-guide-description: Adobe Experience Manager as a Cloud Service를 위한 �
 breadcrumb-title: AEM as a Cloud Service 튜토리얼
 sub-product: cloud-service
 team: TM
-source-git-commit: 7994860f6d0ea017aa48e326482bc8e77af6f555
+source-git-commit: b7ff98dccc1381abe057a80b96268742d0a0629b
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '725'
 ht-degree: 23%
 
 ---
@@ -172,6 +172,14 @@ ht-degree: 23%
       + [USC 배치 구성 만들기](./forms/formscs-batch-api/configure-usc-batch.md)
       + [배치 구성 만들기](./forms/formscs-batch-api/create-batch-config.md)
       + [배치 실행](./forms/formscs-batch-api/execute-batch-generate-documents.md)
+   + Forms CS의 PDF 조작{#forms-cs-assembler}
+      + [소개](./forms/forms-cs-assembler/introduction.md)
+      + [서비스 자격 증명 만들기](./forms/forms-cs-assembler/service-credentials.md)
+      + [JWT 토큰 만들기](./forms/forms-cs-assembler/create-jwt.md)
+      + [액세스 토큰 만들기](./forms/forms-cs-assembler/create-access-token.md)
+      + [PDF 파일 조합](./forms/forms-cs-assembler/assemble-pdf-files.md)
+      + [솔루션 테스트](./forms/forms-cs-assembler/test.md)
+      + [과제](./forms/forms-cs-assembler/challenge.md)
    + Azure 포털 저장소{#forms-cs-azure-portal}
       + [소개](./forms/forms-cs-azure-portal/introduction.md)
       + [양식 데이터 모델 만들기](./forms/forms-cs-azure-portal/create-fdm.md)
@@ -216,7 +224,7 @@ ht-degree: 23%
    + 테스트 및 디버그{#test-debug}
       + [작업자 테스트](./asset-compute/test-debug/test.md)
       + [작업자 디버깅](./asset-compute/test-debug/debug.md)
-   + 배포{#deploy}
+   + {#deploy} 배포
       + [Adobe I/O Runtime에 배포](./asset-compute/deploy/runtime.md)
       + [AEM과 통합](./asset-compute/deploy/processing-profiles.md)
    + 고급{#advanced}
