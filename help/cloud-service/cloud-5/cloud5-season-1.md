@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 210e5483-d79e-47ac-aa09-b6956cca2e62
-source-git-commit: 187f13c5051237915fdc8a8c0e3280dd0f0702ce
+source-git-commit: 4976bc72228b76c02609cf63c7067cc7bad65861
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '379'
 ht-degree: 1%
 
 ---
@@ -68,14 +68,16 @@ AEM Engineering의 Cloud 5 Series를 시작합니다. 제품의 구현 단계에
   </tr>
   <tr>
    <td>
-      <img alt="액세스 토큰" src="./imgs/coming-soon.png"/>
+        <a href="./cloud5-getting-login-token-integrations.md">
+            <img alt="액세스 토큰" src="./imgs/004-thumb.png"/>
+        </a>
       <div>
-        <strong>액세스 토큰과 통합</strong>        
+        <a href="./cloud5-getting-login-token-integrations.md"><strong>액세스 토큰과 통합</strong></a>        
          <br/><em>Darin Muntze &amp; James Talbot과 함께, 수석 클라우드 설계자</em>
       </div>
       <p>
         <br/>
-         2022년 3월 25일 출시
+         클라우드 서비스 환경에서 통합을 수행하기 위해 로그인 토큰과 상호 작용하는 방법에 대한 빠른 개요 및 데모입니다.
       </p>
      </td>   
      <td>
