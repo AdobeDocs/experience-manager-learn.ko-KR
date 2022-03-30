@@ -6,13 +6,13 @@ version: 6.5
 topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 2b7f0f6c34803672cc57425811db89146b38a70a
+exl-id: 879518db-3f05-4447-86e8-5802537584e5
+source-git-commit: 631fef25620c84e04c012c8337c9b76613e3ad46
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '813'
 ht-degree: 0%
 
 ---
-
 
 # 사용자 지정 프로세스 단계
 
@@ -27,18 +27,16 @@ ht-degree: 0%
 
 ## Maven 프로젝트 만들기
 
-첫 번째 단계는 적절한 Adobe Maven Archetype을 사용하여 maven 프로젝트를 만드는 것입니다. 자세한 단계는 이 [article](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)에 나열되어 있습니다. maven 프로젝트를 eclipse로 가져온 후에는 프로세스 단계에서 사용할 수 있는 첫 번째 OSGi 구성 요소 작성을 시작할 준비가 되었습니다.
+첫 번째 단계는 적절한 Adobe Maven Archetype을 사용하여 maven 프로젝트를 만드는 것입니다. 자세한 단계는 다음과 같습니다 [문서](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html). maven 프로젝트를 eclipse로 가져온 후에는 프로세스 단계에서 사용할 수 있는 첫 번째 OSGi 구성 요소 작성을 시작할 준비가 되었습니다.
 
 
 ### WorkflowProcess를 구현하는 클래스 만들기
 
-Eclipse IDE에서 maven 프로젝트를 엽니다. **projectname** > **core** 폴더를 확장합니다. src/main/java 폴더를 확장합니다. &quot;core&quot;로 끝나는 패키지가 표시됩니다. 이 패키지에서 WorkflowProcess를 구현하는 Java 클래스를 만듭니다. 실행 메서드를 재정의해야 합니다. execute 메서드의 서명은 다음과 같습니다
-public void execute(WorkItem, WorkflowSession workflowSession, MetaDataMap processArguments)는 WorkflowException을 발생합니다
-execute 메서드는 다음 3개 변수에 대한 액세스 권한을 제공합니다
+Eclipse IDE에서 maven 프로젝트를 엽니다. 확장 **projectname** > **코어** 폴더를 입력합니다. src/main/java 폴더를 확장합니다. &quot;core&quot;로 끝나는 패키지가 표시됩니다. 이 패키지에서 WorkflowProcess를 구현하는 Java 클래스를 만듭니다. 실행 메서드를 재정의해야 합니다. 실행 메서드의 서명은 다음의 공용 void execute(WorkItem, WorkflowSession, MetaDataMap processArguments)와 같습니다. WorkflowException 실행 메서드는 다음 3개의 변수에 대한 액세스를 제공합니다
 
-**작업 항목**: workItem 변수는 워크플로우와 관련된 데이터에 액세스할 수 있도록 합니다. 공용 API 설명서는 [여기에서 사용할 수 있습니다.](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
+**작업 항목**: workItem 변수는 워크플로우와 관련된 데이터에 액세스할 수 있도록 합니다. 공개 API 설명서를 사용할 수 있습니다 [여기 있습니다.](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
 
-**WorkflowSession**: 이 workflowSession 변수를 사용하면 워크플로우를 제어할 수 있습니다. 공개 API 설명서는 [여기](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)에서 사용할 수 있습니다
+**WorkflowSession**: 이 workflowSession 변수를 사용하면 워크플로우를 제어할 수 있습니다. 공개 API 설명서를 사용할 수 있습니다 [여기](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
 
 **MetaDataMap**: 워크플로우와 연관된 모든 메타데이터. 프로세스 단계로 전달되는 모든 프로세스 인수는 MetaDataMap 개체를 사용하여 사용할 수 있습니다.[API 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)
 
@@ -148,16 +146,15 @@ QueryBuilder 서비스는 attachmentsPath 폴더 아래에 있는 nt:file 유형
 
 #### 빌드 및 배포
 
-[여기에 설명된 대로 ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/create-your-first-osgi-bundle.html?lang=en#build-your-project)
-[번들을 빌드번들이 배포되어 있고 활성 상태인지 확인합니다](http://localhost:4502/system/console/bundles)
+[여기에 설명된 대로 번들을 빌드합니다.](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)
+[번들이 배포되어 활성 상태인지 확인합니다.](http://localhost:4502/system/console/bundles)
 
 워크플로우 모델을 만듭니다. 워크플로우 모델에서 프로세스 단계를 끌어서 놓습니다. 프로세스 단계를 &quot;파일 시스템에 적응형 양식 첨부 저장&quot;과 연관시킵니다.
 
 필요한 프로세스 인수를 쉼표로 구분하여 제공합니다. 첨부 파일(예: c:\\scrappp\\) 첫 번째 인수는 워크플로우 페이로드와 관련하여 적응형 양식 첨부 파일이 저장되는 폴더입니다. 적응형 양식의 제출 작업을 구성할 때 지정한 값과 같아야 합니다. 두 번째 인수는 첨부 파일을 저장할 위치입니다.
 
-적응형 양식을 만듭니다. 첨부 파일 구성 요소를 양식에 드래그하여 놓습니다. 이전 단계에서 만든 워크플로우를 호출하도록 양식의 제출 작업을 구성합니다. 적절한 첨부 경로를 제공합니다.
+적응형 양식 만들기. 첨부 파일 구성 요소를 양식에 드래그하여 놓습니다. 이전 단계에서 만든 워크플로우를 호출하도록 양식의 제출 작업을 구성합니다. 적절한 첨부 경로를 제공합니다.
 
 설정을 저장합니다.
 
 양식을 미리 봅니다. 첨부 파일 두 개를 추가하고 양식을 제출합니다. 첨부 파일은 워크플로우에서 지정한 위치의 파일 시스템에 저장해야 합니다.
-

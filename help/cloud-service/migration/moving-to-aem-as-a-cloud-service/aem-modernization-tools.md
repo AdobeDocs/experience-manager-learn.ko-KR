@@ -8,9 +8,9 @@ level: Experienced
 kt: 8629
 thumbnail: 336965.jpeg
 exl-id: 310f492c-0095-4015-81a4-27d76f288138
-source-git-commit: 1dcb66bc3535231c89f3e7fc127688fcf96f2b61
+source-git-commit: 631fef25620c84e04c012c8337c9b76613e3ad46
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '438'
 ht-degree: 2%
 
 ---
@@ -33,22 +33,18 @@ AEM 현대화 도구는 기존 정적 템플릿, 기초 구성 요소 및 parsys
 + AEM 6.x 프로덕션을 클론하여 AEM 현대화 도구 실행
 + 를 다운로드하여 설치합니다. [최신 AEM 현대화 도구](https://github.com/adobe/aem-modernize-tools/releases/latest) 패키지 관리자를 통해 AEM 6.x 운영 클론에 대해
 
-+ [페이지 구조 변환기](https://opensource.adobe.com/aem-modernize-tools/pages/tools/page-structure.html) 레이아웃 컨테이너를 사용하여 정적 템플릿에서 매핑된 편집 가능한 템플릿으로 기존 페이지 컨텐츠를 업데이트합니다
++ [페이지 구조 변환기](https://opensource.adobe.com/aem-modernize-tools/pages/structure/about.html) 레이아웃 컨테이너를 사용하여 정적 템플릿에서 매핑된 편집 가능한 템플릿으로 기존 페이지 컨텐츠를 업데이트합니다
    + OSGi 구성을 사용하여 전환 규칙 정의
    + 기존 페이지에 대해 페이지 구조 변환기 실행
 
-+ [구성 요소 변환기](https://opensource.adobe.com/aem-modernize-tools/pages/tools/component.html) 레이아웃 컨테이너를 사용하여 정적 템플릿에서 매핑된 편집 가능한 템플릿으로 기존 페이지 컨텐츠를 업데이트합니다
++ [구성 요소 변환기](https://opensource.adobe.com/aem-modernize-tools/pages/component/about.html) 레이아웃 컨테이너를 사용하여 정적 템플릿에서 매핑된 편집 가능한 템플릿으로 기존 페이지 컨텐츠를 업데이트합니다
    + JCR 노드 정의/XML을 통해 변환 규칙 정의
    + 기존 페이지에 대해 구성 요소 변환기 도구 실행
 
-+ [정책 가져오기](https://opensource.adobe.com/aem-modernize-tools/pages/tools/policy-importer.html) 디자인 구성에서 정책 만들기
++ [정책 가져오기](https://opensource.adobe.com/aem-modernize-tools/pages/policy/about.html) 디자인 구성에서 정책 만들기
    + JCR 노드 정의/XML을 사용하여 변환 규칙 정의
    + 기존 디자인 정의에 대해 정책 가져오기 실행
    + 가져온 정책을 AEM 구성 요소 및 컨테이너에 적용
-
-+ [대화 상자 변환기](https://opensource.adobe.com/aem-modernize-tools/pages/tools/dialog.html) 클래식(ExtJS) 및 CoralUI 2 기반 구성 요소 대화 상자를 CoralUI 3 TouchUI 기반 대화 상자로 변환.
-   + 기존 ExtJS 또는 Coral2 UI 기반 대화 상자에 대해 대화 상자 변환기 도구를 실행합니다
-   + 변환된 대화 상자를 Git 리포지토리에 다시 동기화
 
 ## 실습 운동
 
@@ -94,6 +90,5 @@ AEM 현대화 도구는 기존 정적 템플릿, 기초 구성 요소 및 parsys
 + [AEM Gems - AEM 현대화 세트 소개](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/Introducing-the-AEM-Modernization-Suite.html)
 
 
-
-1. 로컬 Cloud Service SDK에 새롭게 현대화된 wknd-legacy 사이트를 배포합니다. 여기에서 다운로드할 수 있습니다.
-+ [소프트웨어 배포 포털](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.htm).
+1. 로컬 AEM SDK에 새롭게 현대화된 wknd-legacy 사이트를 배포합니다. AEM ASK는 여기에서 다운로드할 수 있습니다.
++ [소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html).

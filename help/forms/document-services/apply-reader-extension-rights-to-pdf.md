@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: ea433667-81db-40f7-870d-b16630128871
-source-git-commit: f1afccdad8d819604c510421204f59e7b3dc68e4
+source-git-commit: 631fef25620c84e04c012c8337c9b76613e3ad46
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '356'
 ht-degree: 0%
 
 ---
@@ -17,10 +17,9 @@ ht-degree: 0%
 # Reader 확장 적용
 
 Reader 확장을 사용하면 PDF 문서에 대한 사용 권한을 조작할 수 있습니다. 사용 권한은 Acrobat에서 사용할 수 있지만 Adobe Reader에서는 사용할 수 없는 기능과 관련이 있습니다. Reader 확장에서 제어하는 기능에는 문서에 주석을 추가하고, 양식을 작성하고, 문서를 저장하는 기능이 포함되어 있습니다. 사용 권한이 추가된 PDF 문서를 권한 사용 문서라고 합니다. Adobe Reader에서 권한이 활성화된 PDF 문서를 여는 사용자는 해당 문서에 대해 활성화된 작업을 수행할 수 있습니다.
-이 기능을 테스트하기 위해 이 [링크](https://forms.enablementadobe.com/content/forms/af/applyreaderextensions.html)를 시도할 수 있습니다.
 
 이 사용 사례를 수행하려면 다음을 수행해야 합니다.
-* [사용자에게 Reader 확장 ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) 인증서를  `fd-service` 추가합니다.
+* [Reader 확장 인증서 추가](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) to `fd-service` 사용자.
 
 ## 사용자 지정 OSGi 서비스 만들기
 
@@ -195,7 +194,7 @@ public class GetReaderExtendedPDF extends SlingAllMethodsServlet {
 
 로컬 서버에서 테스트하려면 다음 단계를 수행하십시오.
 1. [DevelopingWithServiceUser 번들 다운로드 및 설치](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-1. [ares.core-ares 번들을 다운로드하여 설치합니다](assets/ares.ares.core-ares.jar). 사용 권한을 적용하고 pdf를 다시 스트리밍할 사용자 지정 서비스 및 서블릿이 있습니다
+1. [ares.core-ares 번들을 다운로드하여 설치합니다.](assets/ares.ares.core-ares.jar). 사용 권한을 적용하고 pdf를 다시 스트리밍할 사용자 지정 서비스 및 서블릿이 있습니다
 1. [클라이언트 라이브러리 및 사용자 지정 제출 가져오기](assets/applyaresdemo.zip)
 1. [적응형 양식 가져오기](assets/applyaresform.zip)
 1. &quot;fd-service&quot; 사용자에게 Reader 확장 인증서를 추가합니다. 별칭이 &quot;ares&quot;인지 확인합니다.
