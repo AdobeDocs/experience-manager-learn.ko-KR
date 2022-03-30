@@ -4,10 +4,10 @@ user-guide-description: Adobe Experience Manager as a Cloud Service를 위한 �
 breadcrumb-title: AEM as a Cloud Service 튜토리얼
 sub-product: cloud-service
 team: TM
-source-git-commit: 467b0c343a28eb573498a013b5490877e4497fe0
+source-git-commit: eb6a7ef343a43000855f8d5cc69bde0fae81d3e6
 workflow-type: tm+mt
-source-wordcount: '727'
-ht-degree: 22%
+source-wordcount: '726'
+ht-degree: 23%
 
 ---
 
@@ -214,7 +214,7 @@ ht-degree: 22%
    + 설정{#set-up}
       + [계정 및 서비스 프로비저닝](./asset-compute/set-up/accounts-and-services.md)
       + [로컬 개발 환경](./asset-compute/set-up/development-environment.md)
-      + [Adobe 프로젝트 Firefly](./asset-compute/set-up/firefly.md)
+      + [App Builder](./asset-compute/set-up/app-builder.md)
    + 개발{#develop}
       + [asset compute 프로젝트 만들기](./asset-compute/develop/project.md)
       + [환경 변수 구성](./asset-compute/develop/environment-variables.md)
