@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 210e5483-d79e-47ac-aa09-b6956cca2e62
-source-git-commit: 4976bc72228b76c02609cf63c7067cc7bad65861
+source-git-commit: cc434164a4474b71f23653f33cb7e3d99c271595
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '413'
 ht-degree: 1%
 
 ---
@@ -81,14 +81,16 @@ AEM Engineering의 Cloud 5 Series를 시작합니다. 제품의 구현 단계에
       </p>
      </td>   
      <td>
-      <img alt="클라우드의 디스패처" src="./imgs/coming-soon.png"/>
+      <a href="./cloud5-aem-dispatcher-cloud.md">
+      <img alt="클라우드의 디스패처" src="./imgs/005-thumb.png"/>
+       </a>  
       <div>
-         <strong>클라우드의 디스패처</strong>
+        <a href="./cloud5-aem-dispatcher-cloud.md"><strong>클라우드의 디스패처</strong></a>
          <br/><em>Darin Muntze &amp; James Talbot과 함께, 수석 클라우드 설계자</em>
       </div>
       <p>
         <br/>
-         2022년 4월 1일 출시
+        Darin과 James는 AMS/On-Prem의 몇 가지 우수 사례와 차이점을 포함하여 AEM Cloud에서 Dispatcher에 대해 설명합니다. 
       </p>
    </td>
      <td>
@@ -138,4 +140,18 @@ AEM Engineering의 Cloud 5 Series를 시작합니다. 제품의 구현 단계에
       </p>
    </td> 
   </tr>
+    <tr>
+        <td>
+            <img alt="Adobe 앱 빌더" src="./imgs/coming-soon.png"/>
+            <div>
+                <strong>마이그레이션(2부)</strong><br/>        
+                <em>Darin Muntze &amp; James Talbot, 수석 클라우드 설계자 및 특별 게스트</em>
+            </div>
+            <p><br/>
+                2022년 5월 6일 출시
+            </p>
+        </td>
+        <td></td>
+        <td></td>
+    </tr>
 </table>
