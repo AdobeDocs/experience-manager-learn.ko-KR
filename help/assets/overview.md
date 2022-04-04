@@ -3,10 +3,10 @@ title: AEM Assets 비디오 및 튜토리얼
 description: Adobe Experience Manager Assets에 대한 비디오 및 튜토리얼 모음입니다
 sub-product: assets, dynamic-media
 exl-id: 1d0b0183-25ee-4cb4-82a5-3506e7c1c908
-source-git-commit: eb669d1e2493d9b4a973314ab1323764920ba220
+source-git-commit: b7ff3e9abd22bb0c3d791ec3ac7da3562e849912
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 18%
+source-wordcount: '186'
+ht-degree: 24%
 
 ---
 
@@ -14,27 +14,11 @@ ht-degree: 18%
 
 Adobe Experience Manager(AEM) Assets는 AEM Platform의 디지털 자산 관리 도구로, 사용자가 웹 기반 저장소에서 디지털 자산(이미지, 비디오, 문서 및 오디오 클립)을 만들고, 관리하고 공유할 수 있도록 해줍니다. 이 사용자 안내서에는 AEM Assets의 다양한 기능과 성능에 대한 비디오 및 자습서가 포함되어 있습니다.
 
-## 새로운 기능
+## AEM Assets 둘러보기
 
-* **[관계 및 관계 없음(비디오)](./authoring/relate-unrelate.md)**
+AEM Assets이 무엇인지, 그리고 조직의 비즈니스 목표를 달성하는 데 어떻게 사용될 수 있는지를 설명하는 AEM Assets의 종합적인 개요를 살펴보십시오.
 
-   *AEM에서 자산 간 관계를 설정하고 관리하는 방법을 알아봅니다*
-
-* **[자산 게시(비디오)](./sharing/publish.md)**
-
-   *AEM Author에서 AEM Publish로 자산을 게시하는 방법에 대한 내외부를 알아봅니다*
-
-* **[워터마크(비디오)](./advanced/watermarks.md)**
-
-   *AEM as a Cloud Service에서 자산 표현물을 워터마크 지정하는 방법 알아보기*
-
-* **[기본 권한(비디오)](./configuring/baseline-permissions.md)**
-
-   *기본 권한으로 AEM Assets을 구성하는 방법 및 그 중요성을 알아보십시오*
-
-* **[자동 시작 워크플로우(비디오)](./configuring/auto-start-workflows.md)**
-
-   *업로드하거나 재처리된 자산에서 AEM 워크플로우를 자동으로 호출하는 방법을 알아봅니다*
+>[!VIDEO](https://video.tv.adobe.com/v/336196/?quality=12&learn=on)
 
 ## 직원 추천
 
