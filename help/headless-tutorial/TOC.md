@@ -6,10 +6,10 @@ version: Cloud Service
 feature-set: Experience Manager, Experience Manager Assets, Experience Manager Sites
 kt: 2963
 index: y
-source-git-commit: 83e16ea87847182139982ea2378d8ff9f079c968
+source-git-commit: 88797cf950dae46d0f856330df12c59a4efe6456
 workflow-type: tm+mt
-source-wordcount: '221'
-ht-degree: 19%
+source-wordcount: '227'
+ht-degree: 18%
 
 ---
 
@@ -46,6 +46,8 @@ ht-degree: 19%
       + [3 - AEM GraphQL API 탐색](/help/headless-tutorial/graphql/advanced-graphql/explore-graphql-api.md)
       + [4 - 지속되는 GraphQL 쿼리](/help/headless-tutorial/graphql/advanced-graphql/graphql-persisted-queries.md)
       + [5 - 클라이언트 애플리케이션 통합](/help/headless-tutorial/graphql/advanced-graphql/client-application-integration.md)
+   + 방법 {#how-to}
+      + [리치 텍스트 작업](./graphql/how-to/rich-text.md)
    + 예 {#example-apps}
       + [React](./graphql/example-apps/react-app.md)
       + [iOS SwiftUI](./graphql/example-apps/ios-swiftui-app.md)
@@ -87,4 +89,4 @@ ht-degree: 19%
    + [4 - 컨텐츠 서비스 템플릿 정의](./content-services/chapter-4.md)
    + [5 - 컨텐츠 서비스 페이지 작성](./content-services/chapter-5.md)
    + [6 - 전달을 위해 AEM 게시에서 컨텐츠 노출](./content-services/chapter-6.md)
-   + [7 - 모바일 앱에서 AEM Content Services 사용](./content-services/chapter-7.md)
+   + [7 - Mobile 앱에서 AEM 컨텐츠 서비스 소비](./content-services/chapter-7.md)
