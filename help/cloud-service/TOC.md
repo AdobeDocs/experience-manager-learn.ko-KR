@@ -4,9 +4,9 @@ user-guide-description: Adobe Experience Manager as a Cloud Service를 위한 �
 breadcrumb-title: AEM as a Cloud Service 튜토리얼
 sub-product: cloud-service
 team: TM
-source-git-commit: 8631d0b23e2befa22032d0b677e0f1c7122f2cb5
+source-git-commit: 0a52ea9f5a475814740bb0701a09f1a6735c6b72
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '731'
 ht-degree: 22%
 
 ---
@@ -178,6 +178,7 @@ ht-degree: 22%
       + [JWT 토큰 만들기](./forms/forms-cs-assembler/create-jwt.md)
       + [액세스 토큰 만들기](./forms/forms-cs-assembler/create-access-token.md)
       + [PDF 파일 조합](./forms/forms-cs-assembler/assemble-pdf-files.md)
+      + [PDF/A 유틸리티](./forms/forms-cs-assembler/pdfa-utilities.md)
       + [솔루션 테스트](./forms/forms-cs-assembler/test.md)
       + [과제](./forms/forms-cs-assembler/challenge.md)
    + Azure 포털 저장소{#forms-cs-azure-portal}

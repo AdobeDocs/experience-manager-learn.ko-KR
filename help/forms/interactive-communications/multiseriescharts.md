@@ -12,13 +12,13 @@ version: 6.5
 topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 0049c9fd864bd4dd4f8c33b1e40e94aad3ffc5b9
+exl-id: f4af7cb9-cc3b-4bec-9428-ab4f1a3cf41a
+source-git-commit: 0a52ea9f5a475814740bb0701a09f1a6735c6b72
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '281'
 ht-degree: 0%
 
 ---
-
 
 # 다중 시리즈 차트
 
@@ -47,6 +47,6 @@ AEM Forms에서 다중 시리즈 차트를 만들려면 필요한 엔티티와 �
 * [하드 드라이브에 SeriesChartSampleData.json을 다운로드합니다.](assets/serieschartsampledata.json) 차트를 채우는 데 사용할 샘플 데이터입니다.
 * [Forms 및 문서로 이동합니다.](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * &quot;MutualFundGrowthFactSheet&quot; 대화형 통신 템플릿을 부드럽게 선택합니다.
-* 미리 보기 클릭 | 샘플 데이터를 업로드합니다.
+* 미리 보기 클릭 | 인쇄 채널 | 샘플 데이터를 업로드합니다.
 * 이 문서의 일부로 제공된 샘플 데이터 파일을 찾습니다.
 * 이전 단계에서 다운로드한 샘플 데이터와 &quot;MutualFundGrowthFactSheet&quot; 대화형 커뮤니케이션의 인쇄 채널을 미리 봅니다.
