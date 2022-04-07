@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 210e5483-d79e-47ac-aa09-b6956cca2e62
-source-git-commit: b277fb0f0cfd19a8318cbf5311e2ded973c092ab
+source-git-commit: 62a1deda2a4fda56edb0c3d0f34a5e804f78887b
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '460'
 ht-degree: 1%
 
 ---
@@ -96,14 +96,14 @@ AEM Engineering의 Cloud 5 Series를 시작합니다. 제품의 구현 단계에
       </p>
    </td>
      <td>
-      <img alt="마이그레이션(1부)" src="./imgs/coming-soon.png"/>
+      <img alt="마이그레이션(1부)" src="./imgs/006-thumb.png"/>
       <div>
          <strong>마이그레이션(1부)</strong>
-         <br/><em>Darin Muntze &amp; James Talbot, 수석 클라우드 설계자 및 특별 게스트</em>
+         <br/><em>Darin Muntze &amp; James Talbot, 수석 클라우드 설계자 및 Dr. Applesmith 사용</em>
       </div>
       <p>
         <br/>
-         2022년 4월 8일 출시
+         클라우드로 마이그레이션하기 위한 팁과 트릭의 1부. 첫 번째 부분에서 Dell의 주요 초점은 마이그레이션할 준비를 하는 모범 사례와 예비 작업입니다.
       </p>
    </td> 
   </tr>
