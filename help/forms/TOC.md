@@ -5,7 +5,7 @@ user-guide-title: AEM Forms 비디오 및 튜토리얼
 user-guide-description: 초보자 및 숙련된 AEM Forms 개발자를 위한 AEM Forms 리소스 모음입니다.
 breadcrumb-title: AEM Forms 튜토리얼
 index: y
-source-git-commit: 0a52ea9f5a475814740bb0701a09f1a6735c6b72
+source-git-commit: db99787c48e49a9861de893e6cb7fbb7b31807b8
 workflow-type: tm+mt
 source-wordcount: '1667'
 ht-degree: 3%

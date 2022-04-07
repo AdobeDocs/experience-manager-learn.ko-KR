@@ -11,10 +11,11 @@ topic: Development
 role: Developer
 level: Intermediate
 kt: 10208
-source-git-commit: 0a52ea9f5a475814740bb0701a09f1a6735c6b72
+exl-id: 9053ee29-436a-439a-b592-c3fef9852ea4
+source-git-commit: db99787c48e49a9861de893e6cb7fbb7b31807b8
 workflow-type: tm+mt
-source-wordcount: '149'
-ht-degree: 0%
+source-wordcount: '165'
+ht-degree: 2%
 
 ---
 
@@ -22,13 +23,18 @@ ht-degree: 0%
 
 아래 지침에 따라 AEM Server에서 이 기능을 작동하십시오
 
-* c 드라이브에서 icdraft라는 폴더를 만듭니다.
 * [데이터베이스 스키마 만들기](assets/icdrafts.sql)
 * [클라이언트 라이브러리 가져오기](assets/icdrafts.zip)
 * [적응형 양식 가져오기](assets/SavedDraftsAdaptiveForm.zip)
 * 데이터 소스를 만듭니다. _SaveAndContinue_
 
 ![데이터 소스 만들기](assets/data-source.png)
+
+| 속성 이름 | 속성 값 |
+|---|---|
+| 데이터 소스 이름 | SaveAndContinue |
+| JDBC 드라이버 클래스 | com.mysql.cj.jdbc.Driver |
+| JDBC 연결 URL | jdbc:mysql://localhost:3306/aemformstutorial?autoReconnect=true&amp;useSSL=false&amp;characterEncoding=utf8&amp;useUnicode=true |
 
 * [icdraft 번들 배포](assets/icdrafts.icdrafts.core-1.0-SNAPSHOT.jar)
 * 반드시 _CCRDocumentInstanceService를 사용하여 저장 활성화_ 아래와 같이 OSGI 구성에서

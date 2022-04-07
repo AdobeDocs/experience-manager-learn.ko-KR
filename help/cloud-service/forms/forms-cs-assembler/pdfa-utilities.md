@@ -8,14 +8,15 @@ version: Cloud Service
 feature: Output Service
 topic: Development
 kt: 10105
-source-git-commit: 0a52ea9f5a475814740bb0701a09f1a6735c6b72
+exl-id: a4955104-8a87-4add-85c7-c3e3395f5f1a
+source-git-commit: db99787c48e49a9861de893e6cb7fbb7b31807b8
 workflow-type: tm+mt
-source-wordcount: '100'
-ht-degree: 4%
+source-wordcount: '102'
+ht-degree: 3%
 
 ---
 
-# POST 호출 만들기
+# PDF/A 문서 만들기 및 유효성 검사
 
 PDF/A는 전자 문서의 보관 및 장기 보관에 사용하기 위해 특화된 PDF(Portable Document Format)의 ISO 표준화된 버전입니다. PDF/A는 글꼴 연결(글꼴 포함 제외) 및 암호화 등 장기 보관에 적합하지 않은 기능을 금지하여 PDF과 다릅니다.
 
@@ -131,4 +132,3 @@ public void validatePDFA(String postURL) {
   }
 }
 ```
-
