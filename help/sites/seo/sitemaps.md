@@ -8,13 +8,13 @@ role: Developer
 level: Intermediate
 kt: 9165
 thumbnail: 337960.jpeg
-source-git-commit: 5bdff2eafaa28aff722b12607b1278539072be62
+exl-id: 40bb55f9-011d-4261-9f44-b1104a591252
+source-git-commit: 71f1d32c12742cdb644dec50050d147395c3f3b6
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 3%
+source-wordcount: '152'
+ht-degree: 1%
 
 ---
-
 
 # Sitemap
 
@@ -26,19 +26,17 @@ AEM Sites용 사이트 맵을 만들어 SEO를 높이는 방법을 알아봅니�
 
 + [AEM Sitemap 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/seo-and-url-management.html?lang=en#building-an-xml-sitemap-on-aem)
 + [Apache Sling Sitemap 설명서](https://github.com/apache/sling-org-apache-sling-sitemap#readme)
-+ [AEM 코어 WCM 구성 요소 Github](https://github.com/adobe/aem-core-wcm-components)
-   + v2.17.6에 추가된 Sitemap 기능
 + [Sitemap.org Sitemap 설명서](https://www.sitemaps.org/protocol.html)
 + [Sitemap.org Sitemap 인덱스 파일 설명서](https://www.sitemaps.org/protocol.html#index)
 + [Cronmaker](http://www.cronmaker.com/)
 
 ## 구성
 
-### org.apache.sling.sitemap.impl.SitemapScheduler~wknd.cfg.json
-
-`ui.config/src/main/jcr_content/apps/wknd/osgiconfig/config.publish`
+### Sitemap 스케줄러 OSGi 구성
 
 을(를) 정의합니다 [OSGi 공장 구성](http://localhost:4502/system/console/configMgr/org.apache.sling.sitemap.impl.SitemapScheduler) 빈도(사용 [cron 표현식](http://www.cronmaker.com)) 사이트 맵이 다시 생성되고 AEM에서 캐시됩니다.
+
+`ui.config/src/main/jcr_content/apps/wknd/osgiconfig/config.publish`
 
 ```json
 {
@@ -48,24 +46,24 @@ AEM Sites용 사이트 맵을 만들어 SEO를 높이는 방법을 알아봅니�
 }
 ```
 
-### filters.any
-
-`dispatcher/src/conf.dispatcher.d/filters/filters.any`
+### Dispatcher 허용 필터 규칙
 
 사이트 맵 인덱스 및 사이트 맵 파일에 대한 HTTP 요청을 허용합니다.
+
+`dispatcher/src/conf.dispatcher.d/filters/filters.any`
 
 ```
 ...
 
-# Allow AEM WCM Core Components sitemaps
+# Allow AEM sitemaps
 /0200 { /type "allow" /path "/content/*" /selectors '(sitemap-index|sitemap)' /extension "xml" }
 ```
 
-### rewrite.rules
-
-`dispatcher/src/conf.d/rewrites/rewrite.rules`
+### Apache 웹 서버 재작성 규칙
 
 확인 `.xml` sitemap HTTP 요청은 올바른 기본 AEM 페이지로 라우팅됩니다. URL 단축을 사용하지 않거나 Sling 매핑을 사용하여 URL 단축을 달성하는 경우 이 구성이 필요하지 않습니다.
+
+`dispatcher/src/conf.d/rewrites/rewrite.rules`
 
 ```
 ...
