@@ -9,10 +9,10 @@ level: Intermediate
 kt: 9350
 thumbnail: KT-9350.jpeg
 exl-id: 5c1ff98f-d1f6-42ac-a5d5-676a54ef683c
-source-git-commit: 6ed26e5c9bf8f5e6473961f667f9638e39d1ab0e
+source-git-commit: d00e47895d1b2b6fb629b8ee9bcf6b722c127fd3
 workflow-type: tm+mt
-source-wordcount: '1035'
-ht-degree: 0%
+source-wordcount: '1055'
+ht-degree: 1%
 
 ---
 
@@ -28,19 +28,23 @@ Cloud Manager 프로그램은 __단일__ 네트워크 인프라 유형. 전용 �
 
 >[!MORELIKETHIS]
 >
-> AEM as a Cloud Service 읽기 [고급 네트워크 구성 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#flexible-port-egress) 를 참조하십시오.
+> AEM as a Cloud Service 읽기 [고급 네트워크 구성 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html#flexible-port-egress) 를 참조하십시오.
 
 ## 전제 조건
 
 플렉서블 포트 포트를 설정할 때는 다음 사항이 필요합니다.
 
-+ Cloud Manager API가 활성화된 프로젝트 Adobe I/O 및 [Cloud Manager 비즈니스 소유자 권한](https://www.adobe.io/experience-cloud/cloud-manager/guides/getting-started/permissions/#cloud-manager-api-permissions)
-+ 액세스 권한 [Cloud Manager API의 인증 자격 증명](https://www.adobe.io/experience-cloud/cloud-manager/guides/getting-started/authentication/)
++ Cloud Manager API가 활성화된 Adobe Developer 콘솔 프로젝트 및 [Cloud Manager 비즈니스 소유자 권한](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/)
++ 액세스 권한 [Cloud Manager API의 인증 자격 증명](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/authentication/)
    + 조직 ID(IMS 조직 ID라고도 함)
    + 클라이언트 ID(API 키라고도 함)
    + 액세스 토큰(베어러 토큰이라고도 함)
 + Cloud Manager 프로그램 ID입니다
 + Cloud Manager 환경 ID
+
+자세한 내용은 Cloud Manager API 자격 증명을 설정, 구성 및 얻는 방법과 이를 사용하여 Cloud Manager API 호출을 만드는 방법에 대한 다음 연습을 참조하십시오.
+
+>[!VIDEO](https://video.tv.adobe.com/v/342235/?quality=12&learn=on)
 
 이 자습서에서는 을 사용합니다 `curl` 클라우드 관리자 API 구성을 설정하는 중입니다. 제공된 `curl` 명령은 Linux/macOS 구문을 가정합니다. Windows 명령 프롬프트를 사용하는 경우 `\` 줄 바꿈 문자 `^`.
 
@@ -48,7 +52,7 @@ Cloud Manager 프로그램은 __단일__ 네트워크 인프라 유형. 전용 �
 
 먼저 AEM as a Cloud Service에서 유연한 포트 포트를 활성화합니다.
 
-1. 먼저 Cloud Manager API를 사용하여 고급 네트워킹을 설정할 영역을 결정합니다 [listRegions](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/getProgramRegions) 작업. 다음 `region name` 후속 Cloud Manager API 호출을 수행하려면 가 필요합니다. 일반적으로 프로덕션 환경이 상주하는 영역이 사용됩니다.
+1. 먼저 Cloud Manager API를 사용하여 고급 네트워킹을 설정할 영역을 결정합니다 [listRegions](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) 작업. 다음 `region name` 는 후속 Cloud Manager API 호출을 위해 필요합니다. 일반적으로 프로덕션 환경이 상주하는 영역이 사용됩니다.
 
    __listRegions HTTP 요청__
 
@@ -60,7 +64,7 @@ Cloud Manager 프로그램은 __단일__ 네트워크 인프라 유형. 전용 �
        -H 'Content-Type: application/json' 
    ```
 
-1. Cloud Manager API를 사용하여 Cloud Manager 프로그램에 대해 유연한 포트 송신 활성화 [createNetworkInfrastructure](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure) 작업. 적절한 `region` Cloud Manager API에서 가져온 코드 `listRegions` 작업.
+1. Cloud Manager API를 사용하여 Cloud Manager 프로그램에 대해 유연한 포트 송신 활성화 [createNetworkInfrastructure](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) 작업. 적절한 `region` Cloud Manager API에서 가져온 코드 `listRegions` 작업.
 
    __createNetworkInfrastructure HTTP 요청__
 
@@ -91,7 +95,7 @@ Cloud Manager 프로그램은 __단일__ 네트워크 인프라 유형. 전용 �
 
 ## 환경에 따라 유연한 포트 송신 프록시 구성
 
-1. 활성화 및 구성 __유연한 포트 송신__ cloud Manager API를 사용하여 각 AEM as a Cloud Service 환경에서 구성 [enableEnvironmentAdvancedNetworkingConfiguration](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration) 작업.
+1. 활성화 및 구성 __유연한 포트 송신__ cloud Manager API를 사용하여 각 AEM as a Cloud Service 환경에서 구성 [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) 작업.
 
    __enableEnvironmentAdvancedNetworkingConfiguration HTTP 요청__
 
@@ -133,7 +137,7 @@ Cloud Manager 프로그램은 __단일__ 네트워크 인프라 유형. 전용 �
 
    AEM 배포인 경우 __전용__ 외부 서비스에 대한 HTTP/HTTPS 연결(포트 80/443)이 필요한 경우 `portForwards` 배열이 비어 있는 경우, 비HTTP/HTTPS 요청에만 이러한 규칙이 필요합니다.
 
-1. 각 환경에 대해 Cloud Manager API를 사용하여 송신 규칙이 적용되는지 확인합니다 [getEnvironmentAdvancedNetworkingConfiguration](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/getEnvironmentAdvancedNetworkingConfiguration) 작업.
+1. 각 환경에 대해 Cloud Manager API를 사용하여 송신 규칙이 적용되는지 확인합니다 [getEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) 작업.
 
    __getEnvironmentAdvancedNetworkingConfiguration HTTP 요청__
 
@@ -145,7 +149,7 @@ Cloud Manager 프로그램은 __단일__ 네트워크 인프라 유형. 전용 �
        -H 'Content-Type: application/json'
    ```
 
-1. Cloud Manager API를 사용하여 유연한 포트 송신 구성을 업데이트할 수 있습니다 [enableEnvironmentAdvancedNetworkingConfiguration](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration) 작업. 기억 `enableEnvironmentAdvancedNetworkingConfiguration` is `PUT` 작업을 수행하므로 이 작업의 모든 호출과 함께 모든 규칙을 제공해야 합니다.
+1. Cloud Manager API를 사용하여 유연한 포트 송신 구성을 업데이트할 수 있습니다 [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) 작업. 기억 `enableEnvironmentAdvancedNetworkingConfiguration` is `PUT` 작업을 수행하므로 이 작업의 모든 호출과 함께 모든 규칙을 제공해야 합니다.
 
 1. 이제 사용자 지정 AEM 코드 및 구성에서 유연한 포트 송신 구성을 사용할 수 있습니다.
 
@@ -174,7 +178,7 @@ AEM에서는 AEM HTTP/HTTPS 프록시에 매핑되는 두 개의 특별한 Java�
 
 >[!TIP]
 >
-> 에 대해서는 AEM as a Cloud Service의 유연한 포트 송신 설명서 를 참조하십시오 [전체 라우팅 규칙 세트](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#flexible-port-egress-traffic-routing).
+> 에 대해서는 AEM as a Cloud Service의 유연한 포트 송신 설명서 를 참조하십시오 [전체 라우팅 규칙 세트](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html#flexible-port-egress-traffic-routing).
 
 #### 코드 예
 
@@ -223,7 +227,7 @@ AEM에서는 AEM HTTP/HTTPS 프록시에 매핑되는 두 개의 특별한 Java�
       </p>
     </td>   
    <td>
-      <a  href="./examples/email-service.md"><img alt="가상 사설 네트워크(VPN)" src="./assets/code-examples__email.png"/></a>
+      <a  href="./examples/email-service.md"><img alt="Virtual Private Network(VPN)" src="./assets/code-examples__email.png"/></a>
       <div><strong><a href="./examples/email-service.md">이메일 서비스</a></strong></div>
       <p>
         AEM을 사용하여 외부 이메일 서비스에 연결하는 OSGi 구성 예입니다.

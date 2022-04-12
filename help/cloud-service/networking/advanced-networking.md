@@ -9,9 +9,9 @@ level: Intermediate
 kt: 9354
 thumbnail: KT-9354.jpeg
 exl-id: d1c1a3cf-989a-4693-9e0f-c1b545643e41
-source-git-commit: 6ec65dca77fff2f9da47607906088e694a656f68
+source-git-commit: d00e47895d1b2b6fb629b8ee9bcf6b722c127fd3
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '475'
 ht-degree: 3%
 
 ---
@@ -70,6 +70,8 @@ AEM 고급 네트워킹은 외부 서비스와의 연결을 관리하는 세 가
 ## 코드 예
 
 이 컬렉션은 특정 사용 사례에 고급 네트워킹 기능을 활용하는 데 필요한 구성 및 코드의 예를 제공합니다.
+
+적절한 [고급 네트워킹 구성](#advanced-networking) 은 다음 자습서를 수행하기 전에 설정되었습니다.
 
 <table><tr>
    <td>

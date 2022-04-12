@@ -8,13 +8,13 @@ role: Architect, Developer
 level: Intermediate
 kt: 9351
 thumbnail: KT-9351.jpeg
-source-git-commit: 6f047a76693bc05e64064fce6f25348037749f4c
+exl-id: 311cd70f-60d5-4c1d-9dc0-4dcd51cad9c7
+source-git-commit: d00e47895d1b2b6fb629b8ee9bcf6b722c127fd3
 workflow-type: tm+mt
-source-wordcount: '1186'
-ht-degree: 0%
+source-wordcount: '1204'
+ht-degree: 1%
 
 ---
-
 
 # 전용 송신 IP 주소
 
@@ -28,19 +28,23 @@ Cloud Manager 프로그램은 __단일__ 네트워크 인프라 유형. 전용 �
 
 >[!MORELIKETHIS]
 >
-> AEM as a Cloud Service 읽기 [고급 네트워크 구성 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#dedicated-egress-IP-address) 전용 송신 IP 주소에 대한 자세한 내용
+> AEM as a Cloud Service 읽기 [고급 네트워크 구성 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html#dedicated-egress-IP-address) 전용 송신 IP 주소에 대한 자세한 내용
 
 ## 전제 조건
 
 전용 송신 IP 주소를 설정할 때는 다음 사항이 필요합니다.
 
-+ Cloud Manager API [Cloud Manager 비즈니스 소유자 권한](https://www.adobe.io/experience-cloud/cloud-manager/guides/getting-started/permissions/#cloud-manager-api-permissions)
-+ 액세스 권한 [Cloud Manager API 인증 자격 증명](https://www.adobe.io/experience-cloud/cloud-manager/guides/getting-started/authentication/)
++ Cloud Manager API [Cloud Manager 비즈니스 소유자 권한](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/)
++ 액세스 권한 [Cloud Manager API 인증 자격 증명](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/authentication/)
    + 조직 ID(IMS 조직 ID라고도 함)
    + 클라이언트 ID(API 키라고도 함)
    + 액세스 토큰(베어러 토큰이라고도 함)
 + Cloud Manager 프로그램 ID입니다
 + Cloud Manager 환경 ID
+
+자세한 내용은 Cloud Manager API 자격 증명을 설정, 구성 및 얻는 방법과 이를 사용하여 Cloud Manager API 호출을 만드는 방법에 대한 다음 연습을 참조하십시오.
+
+>[!VIDEO](https://video.tv.adobe.com/v/342235/?quality=12&learn=on)
 
 이 자습서에서는 을 사용합니다 `curl` 클라우드 관리자 API 구성을 설정하는 중입니다. 제공된 `curl` 명령은 Linux/macOS 구문을 가정합니다. Windows 명령 프롬프트를 사용하는 경우 `\` 줄 바꿈 문자 `^`.
 
@@ -48,7 +52,7 @@ Cloud Manager 프로그램은 __단일__ 네트워크 인프라 유형. 전용 �
 
 먼저 AEM as a Cloud Service에서 전용 송신 IP 주소를 활성화하고 구성합니다.
 
-1. 먼저 Cloud Manager API를 사용하여 고급 네트워킹을 설정할 영역을 결정합니다 [listRegions](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/getProgramRegions) 작업. 다음 `region name` 후속 Cloud Manager API 호출을 수행하려면 가 필요합니다. 일반적으로 프로덕션 환경이 상주하는 영역이 사용됩니다.
+1. 먼저 Cloud Manager API를 사용하여 고급 네트워킹을 설정할 영역을 결정합니다 [listRegions](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) 작업. 다음 `region name` 는 후속 Cloud Manager API 호출을 위해 필요합니다. 일반적으로 프로덕션 환경이 상주하는 영역이 사용됩니다.
 
    __listRegions HTTP 요청__
 
@@ -60,7 +64,7 @@ Cloud Manager 프로그램은 __단일__ 네트워크 인프라 유형. 전용 �
        -H 'Content-Type: application/json' 
    ```
 
-1. Cloud Manager API를 사용하여 Cloud Manager 프로그램의 전용 송신 IP 주소 활성화 [createNetworkInfrastructure](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure) 작업. 적절한 `region` Cloud Manager API에서 가져온 코드 `listRegions` 작업.
+1. Cloud Manager API를 사용하여 Cloud Manager 프로그램의 전용 송신 IP 주소 활성화 [createNetworkInfrastructure](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) 작업. 적절한 `region` Cloud Manager API에서 가져온 코드 `listRegions` 작업.
 
    __createNetworkInfrastructure HTTP 요청__
 
@@ -91,7 +95,7 @@ Cloud Manager 프로그램은 __단일__ 네트워크 인프라 유형. 전용 �
 
 ## 환경당 전용 송신 IP 주소 프록시 구성
 
-1. 활성화 및 구성 __전용 송신 IP 주소__ cloud Manager API를 사용하여 각 AEM as a Cloud Service 환경에서 구성 [enableEnvironmentAdvancedNetworkingConfiguration](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration) 작업.
+1. 활성화 및 구성 __전용 송신 IP 주소__ cloud Manager API를 사용하여 각 AEM as a Cloud Service 환경에서 구성 [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) 작업.
 
    __enableEnvironmentAdvancedNetworkingConfiguration HTTP 요청__
 
@@ -131,7 +135,7 @@ Cloud Manager 프로그램은 __단일__ 네트워크 인프라 유형. 전용 �
 
    전용 송신 IP 주소 구성의 HTTP 서명만 다릅니다. [유연한 송신 포트](./flexible-port-egress.md#enable-dedicated-egress-ip-address-per-environment) 여기서 은 선택적 옵션도 지원합니다 `nonProxyHosts` 구성.
 
-   `nonProxyHosts` 는 전용 송신 IP가 아닌 기본 공유 IP 주소 범위를 통해 포트 80 또는 443을 라우팅해야 하는 호스트 집합을 선언합니다. 이 기능은 공유 IP를 통한 트래픽 추적이 Adobe에 의해 자동으로 최적화될 수 있으므로 유용할 수 있습니다.
+   `nonProxyHosts` 는 전용 송신 IP가 아닌 기본 공유 IP 주소 범위를 통해 포트 80 또는 443을 라우팅해야 하는 호스트 집합을 선언합니다. `nonProxyHosts` 공유 IP를 통한 트래픽 추적이 Adobe에 의해 자동으로 최적화될 수 있으므로 유용할 수 있습니다.
 
    각 `portForwards` 매핑 시 고급 네트워킹은 다음 전달 규칙을 정의합니다.
 
@@ -139,7 +143,7 @@ Cloud Manager 프로그램은 __단일__ 네트워크 인프라 유형. 전용 �
    |---------------------------------|----------|----------------|------------------|----------|
    | `AEM_PROXY_HOST` | `portForwards.portOrig` | → | `portForwards.name` | `portForwards.portDest` |
 
-1. 각 환경에 대해 Cloud Manager API를 사용하여 송신 규칙이 적용되는지 확인합니다 [getEnvironmentAdvancedNetworkingConfiguration](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/getEnvironmentAdvancedNetworkingConfiguration) 작업.
+1. 각 환경에 대해 Cloud Manager API를 사용하여 송신 규칙이 적용되는지 확인합니다 [getEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) 작업.
 
    __getEnvironmentAdvancedNetworkingConfiguration HTTP 요청__
 
@@ -151,7 +155,7 @@ Cloud Manager 프로그램은 __단일__ 네트워크 인프라 유형. 전용 �
        -H 'Content-Type: application/json'
    ```
 
-1. 전용 송신 IP 주소 구성은 Cloud Manager API를 사용하여 업데이트할 수 있습니다 [enableEnvironmentAdvancedNetworkingConfiguration](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration) 작업. 기억 `enableEnvironmentAdvancedNetworkingConfiguration` is `PUT` 작업을 수행하므로 이 작업의 모든 호출과 함께 모든 규칙을 제공해야 합니다.
+1. 전용 송신 IP 주소 구성은 Cloud Manager API를 사용하여 업데이트할 수 있습니다 [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) 작업. 기억 `enableEnvironmentAdvancedNetworkingConfiguration` is `PUT` 작업을 수행하므로 이 작업의 모든 호출과 함께 모든 규칙을 제공해야 합니다.
 
 1. 를 얻습니다. __전용 송신 IP 주소__ DNS Resolver 사용(예: [DNSChecker.org](https://dnschecker.org/)) 내의 아무 곳이나 지정합니다. `p{programId}.external.adobeaemcloud.com`또는 실행 `dig` 명령줄에서 을(를) 클릭합니다.
 
@@ -176,7 +180,7 @@ Cloud Manager 프로그램은 __단일__ 네트워크 인프라 유형. 전용 �
 
 >[!TIP]
 >
-> 에 대해서는 AEM as a Cloud Service의 전용 송신 IP 주소 설명서를 참조하십시오 [전체 라우팅 규칙 세트](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#dedcated-egress-ip-traffic-routing).
+> 에 대해서는 AEM as a Cloud Service의 전용 송신 IP 주소 설명서를 참조하십시오 [전체 라우팅 규칙 세트](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html#dedcated-egress-ip-traffic-routing=).
 
 
 ### 비표준 포트의 HTTP/HTTPS
@@ -238,7 +242,7 @@ HTTP/HTTPS 외부 서비스에 대한 요청은 AEM 프록시 호스트/포트 �
       </p>
     </td>   
    <td>
-      <a  href="./examples/email-service.md"><img alt="가상 사설 네트워크(VPN)" src="./assets/code-examples__email.png"/></a>
+      <a  href="./examples/email-service.md"><img alt="Virtual Private Network(VPN)" src="./assets/code-examples__email.png"/></a>
       <div><strong><a href="./examples/email-service.md">이메일 서비스</a></strong></div>
       <p>
         AEM을 사용하여 외부 이메일 서비스에 연결하는 OSGi 구성 예입니다.
