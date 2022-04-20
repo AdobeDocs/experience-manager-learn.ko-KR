@@ -1,27 +1,31 @@
 ---
-title: Cloud 5 AEM 검색 및 색인 지정
-description: 우리는 수색과 색인화를 하는 바다에 발가락을 담그고 있습니다
+title: Cloud 5 Adobe App Builder
+description: 이 에피소드는 Adobe 앱 빌더를 사용하는 외부 통합 패턴을 검색합니다
 version: Cloud Service
 role: Admin, Developer
 level: Intermediate
-kt: 10275
-thumbnail: 342374.jpeg
+kt: 10279
+thumbnail: 342375.jpeg
 hidefromtoc: true
 recommendations: noDisplay, noCatalog
-source-git-commit: 0b6e16d7263bc14c1824643b77678071694bcb7e
+exl-id: 799539ba-00aa-40c0-89de-cab38b0066a3
+source-git-commit: 3854deb12c2d5a5c91c3416939f3e4534cb0094f
 workflow-type: tm+mt
-source-wordcount: '71'
+source-wordcount: '94'
 ht-degree: 0%
 
 ---
 
-# Cloud 5 AEM 검색 및 색인 지정
+# Cloud 5 Adobe App Builder
 
 Amol Anand가 로그인하여 Adobe 앱 빌더와의 통합 및 사용 위치와 시간을 알려줍니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/342374)
+>[!VIDEO](https://video.tv.adobe.com/v/342375)
 
 ## 이 비디오에서 다루는 컨텐츠
 
-+ 검색 및 색인 [개요](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html)
-+ AEM [인덱스 변환기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/index-converter.html)
++ 개요 [App Builder](https://developer.adobe.com/app-builder/docs/overview/)
++ [Tutorials 및 코드 Labs](https://developer.adobe.com/app-builder/docs/resources/)
++ [로깅 및 모니터링](https://adobedocs.github.io/adobeio-runtime/guides/logging_monitoring.html#retrieving-activations-for-blocking-successful-calls)
++ 설정 [시스템 제한](https://adobedocs.github.io/adobeio-runtime/guides/system_settings.html)
++ [로컬 개발](https://developer.adobe.com/app-builder/docs/resources/debugging/) 팁
