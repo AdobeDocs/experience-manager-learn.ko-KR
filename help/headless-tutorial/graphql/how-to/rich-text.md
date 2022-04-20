@@ -1,5 +1,5 @@
 ---
-title: 리치 텍스트 작업 | AEM Headless
+title: AEM Headless에서 리치 텍스트 사용
 description: Adobe Experience Manager 컨텐츠 조각이 있는 여러 줄의 리치 텍스트 편집기를 사용하여 컨텐츠를 작성하고 참조된 컨텐츠를 포함하는 방법과 헤드리스 애플리케이션에서 사용하기 위해 AEM GraphQL API에서 리치 텍스트를 JSON으로 전달하는 방법을 알아봅니다.
 version: Cloud Service
 doc-type: article
@@ -7,22 +7,21 @@ kt: 9985
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
-source-git-commit: 88797cf950dae46d0f856330df12c59a4efe6456
+exl-id: 790a33a9-b4f4-4568-8dfe-7e473a5b68b6
+source-git-commit: 4966a48c29ae1b5d0664cb43feeb4ad94f43b4e1
 workflow-type: tm+mt
-source-wordcount: '1380'
+source-wordcount: '1376'
 ht-degree: 0%
 
 ---
 
-
-# Adobe Experience Manager Headless에서 리치 텍스트 작업
+# AEM Headless를 사용한 리치 텍스트
 
 여러 줄 텍스트 필드는 작성자가 리치 텍스트 컨텐츠를 만들 수 있는 컨텐츠 조각의 데이터 유형입니다. 이미지 또는 기타 컨텐츠 조각과 같은 다른 컨텐츠에 대한 참조는 텍스트 흐름 내에서 동적으로 인라인 삽입될 수 있습니다. AEM GraphQL API는 리치 텍스트를 HTML, 일반 텍스트 또는 순수 JSON으로 반환하는 강력한 기능을 제공합니다. JSON 표현은 클라이언트 애플리케이션에 컨텐츠를 렌더링하는 방법을 완전히 제어할 수 있으므로 강력합니다.
 
 ## 여러 줄 편집기
 
 >[!VIDEO](https://video.tv.adobe.com/v/342104/?quality=12&learn=on)
-
 
 컨텐츠 조각 편집기에서 여러 줄 텍스트 필드의 메뉴 막대는 작성자에게 다음과 같은 표준 리치 텍스트 형식 기능을 제공합니다 **굵게**, *기울임체*, 및 밑줄. 전체 화면 모드에서 여러 줄 필드를 열면 [단락 유형, 찾기 및 바꾸기, 맞춤법 검사 등과 같은 추가 서식 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-variations.html).
 
