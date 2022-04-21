@@ -5,10 +5,10 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 210e5483-d79e-47ac-aa09-b6956cca2e62
-source-git-commit: e9b88505ae47b32de8b198fa6fcd81e033e5d5ff
+source-git-commit: bd60205f5561cfc8d758a15e69bc26fa1d64bd4d
 workflow-type: tm+mt
-source-wordcount: '483'
-ht-degree: 1%
+source-wordcount: '504'
+ht-degree: 0%
 
 ---
 
@@ -124,14 +124,16 @@ AEM Engineering의 Cloud 5 Series를 시작합니다. 제품의 구현 단계에
       </p>
      </td>   
      <td>
-      <img alt="Dispatcher 유효성 검사기" src="./imgs/coming-soon.png"/>
+        <a href="./cloud5-aem-dispatcher-validator.md">
+            <img alt="Dispatcher 유효성 검사기" src="./imgs/008-thumb.png"/>
+        </a>
       <div>
-         <strong>Dispatcher 유효성 검사기</strong>
+         <a href="./cloud5-aem-dispatcher-validator.md"><strong>Dispatcher 유효성 검사기</strong></a>
          <br/><em>Darin Muntze &amp; James Talbot과 함께, 수석 클라우드 설계자</em>
       </div>
       <p>
         <br/>
-         2022년 4월 22일 출시
+         이전 마이그레이션 토론의 일부로서 Dispatcher 검사기와 이 작업이 수행할 수 있는 작업 중 일부를 살펴보겠습니다.
       </p>
    </td>
      <td>
