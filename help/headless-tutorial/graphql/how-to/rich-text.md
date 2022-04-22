@@ -8,16 +8,18 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 exl-id: 790a33a9-b4f4-4568-8dfe-7e473a5b68b6
-source-git-commit: 4966a48c29ae1b5d0664cb43feeb4ad94f43b4e1
+source-git-commit: 22d5aa7299ceacd93771bd73a6b89d1903edc561
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1460'
 ht-degree: 0%
 
 ---
 
 # AEM Headless를 사용한 리치 텍스트
 
-여러 줄 텍스트 필드는 작성자가 리치 텍스트 컨텐츠를 만들 수 있는 컨텐츠 조각의 데이터 유형입니다. 이미지 또는 기타 컨텐츠 조각과 같은 다른 컨텐츠에 대한 참조는 텍스트 흐름 내에서 동적으로 인라인 삽입될 수 있습니다. AEM GraphQL API는 리치 텍스트를 HTML, 일반 텍스트 또는 순수 JSON으로 반환하는 강력한 기능을 제공합니다. JSON 표현은 클라이언트 애플리케이션에 컨텐츠를 렌더링하는 방법을 완전히 제어할 수 있으므로 강력합니다.
+여러 줄 텍스트 필드는 작성자가 리치 텍스트 컨텐츠를 만들 수 있는 컨텐츠 조각의 데이터 유형입니다. 이미지 또는 기타 컨텐츠 조각과 같은 다른 컨텐츠에 대한 참조는 텍스트 흐름 내에서 동적으로 인라인 삽입될 수 있습니다. 단일 행 텍스트 필드는 단순 텍스트 요소에 사용해야 하는 컨텐츠 조각의 다른 데이터 유형입니다.
+
+AEM GraphQL API는 리치 텍스트를 HTML, 일반 텍스트 또는 순수 JSON으로 반환하는 강력한 기능을 제공합니다. JSON 표현은 클라이언트 애플리케이션에 컨텐츠를 렌더링하는 방법을 완전히 제어할 수 있으므로 강력합니다.
 
 ## 여러 줄 편집기
 
@@ -25,13 +27,25 @@ ht-degree: 0%
 
 컨텐츠 조각 편집기에서 여러 줄 텍스트 필드의 메뉴 막대는 작성자에게 다음과 같은 표준 리치 텍스트 형식 기능을 제공합니다 **굵게**, *기울임체*, 및 밑줄. 전체 화면 모드에서 여러 줄 필드를 열면 [단락 유형, 찾기 및 바꾸기, 맞춤법 검사 등과 같은 추가 서식 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-variations.html).
 
+>[!NOTE]
+>
+> 여러 줄 편집기의 리치 텍스트 플러그인은 사용자 지정할 수 없습니다.
+
 ## 여러 줄 텍스트 데이터 유형 {#multi-line-data-type}
 
 를 사용하십시오 **여러 줄 텍스트** 컨텐츠 조각 모델을 정의할 때 리치 텍스트 작성을 활성화할 때의 데이터 유형입니다.
 
 ![여러 줄 리치 텍스트 데이터 유형](assets/rich-text/multi-line-rich-text.png)
 
-여러 줄 텍스트 데이터 유형을 사용할 때 **기본 유형** 변환:
+여러 줄 필드의 여러 속성을 구성할 수 있습니다.
+
+다음 **렌더링** 속성을 다음과 같이 설정할 수 있습니다.
+
+* 텍스트 영역 - 단일 여러 줄 필드를 렌더링합니다.
+* 여러 필드 - 여러 개의 다중 행 필드를 렌더링합니다.
+
+
+다음 **기본 유형** 다음 위치로 설정할 수 있습니다.
 
 * 리치 텍스트
 * Markdown
@@ -40,6 +54,8 @@ ht-degree: 0%
 다음 **기본 유형** 옵션은 편집 환경에 직접 영향을 주며 리치 텍스트 도구가 있는지 확인합니다.
 
 다음을 수행할 수도 있습니다 [인라인 참조 활성화](#insert-fragment-references) 을 눌러 다른 컨텐츠 조각에 **조각 참조 허용** 및 구성 **허용된 컨텐츠 조각 모델**.
+
+콘텐츠를 현지화하려면 **번역 가능** 상자. 리치 텍스트 및 일반 텍스트만 현지화할 수 있습니다. 자세한 내용은 [자세한 내용은 현지화된 콘텐츠로 작업](./localized-content.md).
 
 ## GraphQL API를 사용한 리치 텍스트 응답
 
@@ -364,10 +380,12 @@ GraphQL API를 사용하면 개발자가 여러 줄 필드에 삽입된 참조�
         _path
         _publishUrl
         width
+        __typename
       }
       ...on ArticleModel {
         _path
         author
+        __typename
       }
       
     }
@@ -444,12 +462,14 @@ GraphQL API를 사용하면 개발자가 여러 줄 필드에 삽입된 참조�
       "_references": [
         {
           "_path": "/content/dam/wknd/en/activities/climbing/sport-climbing.jpg",
-          "_publishUrl": "http://localhost:4503/content/dam/wknd/en/activities/climbing/sport-climbing.jpg",
-          "width": 1920
+          "_publishUrl": "http://publish-p123-e456.adobeaemcloud.com/content/dam/wknd/en/activities/climbing/sport-climbing.jpg",
+          "width": 1920,
+          "__typename": "ImageRef"
         },
         {
           "_path": "/content/dam/wknd/en/magazine/la-skateparks/ultimate-guide-to-la-skateparks",
           "author": "Stacey Roswells",
+          "__typename": "ArticleModel"
         }
       ]
     }
@@ -498,11 +518,11 @@ const renderReference = {
     // node contains merged properties of the in-line reference and _references object
     'ImageRef': (node) => {
         // when __typename === ImageRef
-        return <img src={node._path} alt={'in-line reference'} /> 
+        return <img src={node._publishUrl} alt={'in-line reference'} /> 
     },
-    'AdventureModel': (node) => {
-        // when __typename === AdventureModel
-        return <Link to={`/adventure:${node._path}`}>{`${node.adventureTitle}: ${node.adventurePrice}`}</Link>;
+    'ArticleModel': (node) => {
+        // when __typename === ArticleModel
+        return <Link to={`/article:${node._path}`}>{`${node.value}`}</Link>;
     }
     ...
 }
