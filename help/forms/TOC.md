@@ -5,9 +5,9 @@ user-guide-title: AEM Forms 비디오 및 튜토리얼
 user-guide-description: 초보자 및 숙련된 AEM Forms 개발자를 위한 AEM Forms 리소스 모음입니다.
 breadcrumb-title: AEM Forms 튜토리얼
 index: y
-source-git-commit: db99787c48e49a9861de893e6cb7fbb7b31807b8
+source-git-commit: cb5b3eb77a57fa8a2918710b7dbcd1b0a58b74bd
 workflow-type: tm+mt
-source-wordcount: '1667'
+source-wordcount: '1671'
 ht-degree: 3%
 
 ---
@@ -204,6 +204,7 @@ ht-degree: 3%
 + 문서 서비스 {#document-services}
    + [PDF forms 유형](document-services/pdf-forms-and-documents.md)
    + [적응형 양식에 pdf 포함](document-services/embed-pdf-inline.md)
+   + [회전판 구성 요소의 PDF](document-services/display-pdf-in-carousel.md)
    + [AEM Forms에서 어셈블러 서비스 사용](document-services/using-assembler-service-in-aem-forms.md)
    + [AEM Forms에서 감시 폴더 사용](document-services/watched-folders-document-services-article-use.md)
    + [AEM Forms에서 바코드 서비스 사용](document-services/barcode-service-adaptive-forms-article.md)
