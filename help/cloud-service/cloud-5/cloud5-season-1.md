@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 210e5483-d79e-47ac-aa09-b6956cca2e62
-source-git-commit: bd60205f5561cfc8d758a15e69bc26fa1d64bd4d
+source-git-commit: 571f79cbcadff2161c3daa993ac833d9d4068f98
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -137,14 +137,16 @@ AEM Engineering의 Cloud 5 Series를 시작합니다. 제품의 구현 단계에
       </p>
    </td>
      <td>
-      <img alt="색인 지정 및 검색 팁" src="./imgs/coming-soon.png"/>
+        <a href="./cloud5-aem-search-and-indexing.md">
+            <img alt="색인 지정 및 검색 팁" src="./imgs/009-thumb.png"/>
+        </a>
       <div>
-         <strong>색인 지정 및 검색 팁</strong>
+         <a href="./cloud5-aem-search-and-indexing.md"><strong>색인 지정 및 검색 팁</strong></a>
          <br/><em>Darin Muntze &amp; James Talbot과 함께, 수석 클라우드 설계자</em>
       </div>
       <p>
         <br/>
-         2022년 4월 29일 출시
+         색인 지정 및 검색과 같이 복잡한 작업을 수행할 때 개발 시간을 최적화하고 문제가 되기 전에 문제를 해결하는 데 유용한 몇 가지 이점을 얻을 수 있습니다.
       </p>
    </td> 
   </tr>
