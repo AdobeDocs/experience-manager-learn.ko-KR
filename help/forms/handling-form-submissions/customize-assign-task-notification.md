@@ -2,7 +2,7 @@
 title: 작업 알림 할당 사용자 지정
 description: 작업 알림 할당 전자 메일에 양식 데이터를 포함합니다
 sub-product: forms
-feature: 워크플로우
+feature: Workflow
 topics: integrations
 audience: developer
 doc-type: article
@@ -10,30 +10,30 @@ activity: setup
 version: 6.4,6.5
 kt: 6279
 thumbnail: KT-6279.jpg
-topic: 개발
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 0cb74afd-87ff-4e79-a4f4-a4634ac48c51
+source-git-commit: eb2a807587ab918be82d00d50bf1b338df58e84c
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '489'
 ht-degree: 1%
 
 ---
 
-
 # 작업 알림 할당 사용자 지정
 
 작업 할당 구성 요소는 워크플로우 참가자에게 작업을 할당하는 데 사용됩니다. 작업이 사용자 또는 그룹에 할당되면 정의된 사용자 또는 그룹 구성원에게 전자 메일 알림이 전송됩니다.
-이 전자 메일 알림은 일반적으로 작업과 관련된 동적 데이터를 포함합니다. 시스템에서 생성한 [메타데이터 속성](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/use-metadata-in-email-notifications.html#using-system-generated-metadata-in-an-email-notification)을 사용하여 이 동적 데이터를 가져옵니다.
+이 전자 메일 알림은 일반적으로 작업과 관련된 동적 데이터를 포함합니다. 생성된 시스템을 사용하여 이 동적 데이터를 가져옵니다 [메타데이터 속성](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/use-metadata-in-email-notifications.html#using-system-generated-metadata-in-an-email-notification).
 전자 메일 알림에 제출된 양식 데이터의 값을 포함하려면 사용자 지정 메타데이터 속성을 만든 다음 전자 메일 템플릿에서 이러한 사용자 지정 메타데이터 속성을 사용해야 합니다
 
 
 
 ## 사용자 지정 메타데이터 속성 만들기
 
-권장되는 접근 방법은 [WorkitemUserMetadataService](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/workspace/service/external/WorkitemUserMetadataService.html#getUserMetadataMap--)의 getUserMetadata 메서드를 구현하는 OSGI 구성 요소를 만드는 것입니다
+권장되는 접근 방법은 의 getUserMetadata 메서드를 구현하는 OSGI 구성 요소를 만드는 것입니다 [WorkitemUserMetadataService](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/workspace/service/external/WorkitemUserMetadataService.html#getUserMetadataMap--)
 
-다음 코드는 4개의 메타데이터 속성(_firstName_,_lastName_,_reason_ 및 _amountRequested_)을 만들고 제출된 데이터에서 해당 값을 설정합니다. 예를 들어 메타데이터 속성 _firstName_ 값은 제출된 데이터에서 firstName이라는 요소의 값으로 설정됩니다. 다음 코드는 적응형 양식의 제출된 데이터가 xml 형식으로 되어 있다고 가정합니다. JSON 스키마 또는 양식 데이터 모델을 기반으로 하는 적응형 Forms은 JSON 형식으로 데이터를 생성합니다.
+다음 코드는 4개의 메타데이터 속성을 만듭니다(_firstName_,_lastName_,_이유_ 및 _amountRequested_)을 사용하여 제출된 데이터에서 해당 값을 설정합니다. 예: 메타데이터 속성 _firstName_&#x200B;의 값은 제출된 데이터에서 firstName이라는 요소의 값으로 설정됩니다. 다음 코드는 적응형 양식의 제출된 데이터가 xml 형식으로 되어 있다고 가정합니다. JSON 스키마 또는 양식 데이터 모델을 기반으로 하는 적응형 Forms은 JSON 형식으로 데이터를 생성합니다.
 
 
 ```java
@@ -115,7 +115,7 @@ return customMetadataMap;
 
 ## 작업 알림 전자 메일 템플릿에 사용자 지정 메타데이터 속성 사용
 
-이메일 템플릿에서 amountRequested가 메타데이터 속성 `${amountRequested}`인 다음 구문을 사용하여 메타데이터 속성을 포함할 수 있습니다.
+이메일 템플릿에서 amountRequested가 메타데이터 속성인 다음 구문을 사용하여 메타데이터 속성을 포함할 수 있습니다. `${amountRequested}`
 
 ## 사용자 지정 메타데이터 속성을 사용하도록 작업 할당 구성
 
@@ -131,10 +131,10 @@ OSGi 구성 요소가 빌드되어 AEM 서버에 배포되면 사용자 지정 �
 ## 서버에서 사용하려면 다음을 수행하십시오
 
 * [일 CQ 메일 서비스 구성](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)
-* 올바른 전자 메일 ID를 [관리 사용자](http://localhost:4502/security/users.html)와 연결
-* [패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp)를 사용하여 [Workflow-and-notification-template](assets/workflow-and-task-notification-template.zip)을 다운로드하여 설치합니다
-* [적응형 양식](assets/request-travel-authorization.zip)을 다운로드하고 [양식 및 문서 ui](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)에서 AEM으로 가져옵니다.
-* [웹 콘솔](http://localhost:4502/system/console/bundles)을 사용하여 [사용자 지정 번들](assets/work-items-user-service-bundle.jar)을 배포하고 시작합니다
+* 올바른 전자 메일 ID와 연결 [관리자 사용자](http://localhost:4502/security/users.html)
+* 를 다운로드하여 설치합니다. [워크플로우 및 알림 템플릿](assets/workflow-and-task-notification-template.zip) 사용 [패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp)
+* 다운로드 [적응형 양식](assets/request-travel-authorization.zip) 에서 AEM으로 가져오기 [양식 및 문서 ui](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
+* 배포 및 시작 [사용자 지정 번들](assets/work-items-user-service-bundle.jar) 사용 [웹 콘솔](http://localhost:4502/system/console/bundles)
 * [양식 미리 보기 및 제출](http://localhost:4502/content/dam/formsanddocuments/requestfortravelauhtorization/jcr:content?wcmmode=disabled)
 
 양식 제출 작업 할당 알림은 관리자 사용자와 연결된 전자 메일 ID로 전송됩니다. 다음 스크린샷에서는 작업 할당 알림 샘플을 보여 줍니다
@@ -147,3 +147,59 @@ OSGi 구성 요소가 빌드되어 AEM 서버에 배포되면 사용자 지정 �
 > subject=Task Assigned - `${workitem_title}`
 >
 > message=새 줄 문자가 없는 이메일 템플릿을 나타내는 문자열입니다.
+
+## 작업 전자 메일 알림 할당의 작업 설명
+
+경우에 따라 이전 작업 소유자의 설명을 후속 작업 알림에 포함할 수 있습니다. 작업의 마지막 주석을 캡처할 코드는 다음과 같습니다.
+
+```java
+package samples.aemforms.taskcomments.core;
+
+import org.osgi.service.component.annotations.Component;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import javax.jcr.Session;
+
+import org.osgi.framework.Constants;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import com.adobe.granite.workflow.WorkflowSession;
+import com.adobe.granite.workflow.exec.HistoryItem;
+import com.adobe.granite.workflow.exec.WorkItem;
+import com.adobe.granite.workflow.metadata.MetaDataMap;
+
+import com.adobe.fd.workspace.service.external.WorkitemUserMetadataService;
+@Component(property = {
+  Constants.SERVICE_DESCRIPTION + "=A sample implementation of a user metadata service.",
+  Constants.SERVICE_VENDOR + "=Adobe Systems",
+  "process.label" + "=Capture Workflow Comments"
+})
+
+public class CaptureTaskComments implements WorkitemUserMetadataService {
+  private static final Logger log = LoggerFactory.getLogger(CaptureTaskComments.class);
+  @Override
+  public Map <String, String> getUserMetadata(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap metadataMap) {
+    HashMap < String, String > customMetadataMap = new HashMap < String, String > ();
+    workflowSession.adaptTo(Session.class);
+    try {
+      List <HistoryItem> workItemsHistory = workflowSession.getHistory(workItem.getWorkflow());
+      int listSize = workItemsHistory.size();
+      HistoryItem lastItem = workItemsHistory.get(listSize - 1);
+      String reviewerComments = (String) lastItem.getWorkItem().getMetaDataMap().get("workitemComment");
+      log.debug("####The comment I got was ...." + reviewerComments);
+      customMetadataMap.put("comments", reviewerComments);
+      log.debug("Created  " + customMetadataMap.size() + " metadata  properties");
+
+    } catch (Exception e) {
+      log.debug(e.getMessage());
+    }
+    return customMetadataMap;
+  }
+
+}
+```
+
+위의 코드가 있는 번들은 [여기에서 다운로드](assets/samples.aemforms.taskcomments.taskcomments.core-1.0-SNAPSHOT.jar)
