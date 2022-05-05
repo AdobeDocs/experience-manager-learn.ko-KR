@@ -8,13 +8,13 @@ role: Developer
 level: Intermediate
 kt: 10253
 thumbnail: KT-10253.jpeg
-source-git-commit: 4966a48c29ae1b5d0664cb43feeb4ad94f43b4e1
+exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
+source-git-commit: cca9ea744f938470b82b61d11269c1f9e8250bbe
 workflow-type: tm+mt
 source-wordcount: '1084'
 ht-degree: 3%
 
 ---
-
 
 # AEM Headless를 사용한 이미지
 
@@ -90,7 +90,7 @@ GraphQL 쿼리에서 필드를 `ImageRef` 을 입력하고 적절한 필드를 �
 
 응용 프로그램에서 참조된 이미지를 로드하려면 적절한 필드를 사용합니다. `_path`, `_authorUrl`, 또는 `_publishUrl` 의 `adventurePrimaryImage` 를 이미지의 소스 URL로 바꿉니다.
 
-의 도메인 `_authorUrl` 및 `_publishUrl` 는 AEM as a Cloud Service에서 [외부화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/externalizer.htmli).
+의 도메인 `_authorUrl` 및 `_publishUrl` 는 AEM as a Cloud Service에서 [외부 도우미](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/externalizer.html).
 
 React에서 AEM Publish의 이미지를 표시하는 모습은 다음과 같습니다.
 
