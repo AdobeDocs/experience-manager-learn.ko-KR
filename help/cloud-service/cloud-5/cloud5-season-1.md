@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 210e5483-d79e-47ac-aa09-b6956cca2e62
-source-git-commit: 571f79cbcadff2161c3daa993ac833d9d4068f98
+source-git-commit: c6844750c2ef7c3471ce6a337002dde508d611f2
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '551'
 ht-degree: 0%
 
 ---
@@ -152,13 +152,15 @@ AEM Engineering의 Cloud 5 Series를 시작합니다. 제품의 구현 단계에
   </tr>
     <tr>
         <td>
-            <img alt="Adobe 앱 빌더" src="./imgs/coming-soon.png"/>
+            <a href="./cloud5-adobe-app-builder.md">
+                <img alt="Adobe 앱 빌더" src="./imgs/010-thumb.png"/>
+            </a>
             <div>
-                <strong>Adobe 앱 빌더</strong><br/>        
-                <em>Darin Muntze &amp; James Talbot, 수석 클라우드 설계자 및 특별 게스트</em>
+                <a href="./cloud5-adobe-app-builder.md"><strong>Adobe 앱 빌더</strong></a><br/>        
+                <em>Darin Muntze &amp; James Talbot, 수석 클라우드 설계자 및 Amol Anand와 함께</em>
             </div>
             <p><br/>
-                2022년 5월 6일 출시
+                Adobe App Builder로 수행할 수 있는 멋진 작업을 확인하고 클라우드에서 향후 사용자 정의에 대한 새로운 내용을 알아봅니다.
             </p>
         </td>
         <td></td>
