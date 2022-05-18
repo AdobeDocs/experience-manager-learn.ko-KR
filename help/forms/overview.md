@@ -1,14 +1,14 @@
 ---
 title: AEM Forms Tutorials 및 비디오
-description: 초보자 및 숙련된 AEM Forms 개발자를 위한 AEM Forms 리소스 모음입니다
+description: 질문에 답변할 리소스 및 설명서와 함께 AEM Forms에 대한 비디오 및 자습서를 찾아봅니다.
 sub-product: forms
 topic: Development
 role: Developer
 exl-id: c1972937-56c5-47af-9232-f31bdf69dfbe
-source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
+source-git-commit: efa33aa8cf8288d48ae56d2e96ed9d3a6c4e9627
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 10%
+source-wordcount: '306'
+ht-degree: 7%
 
 ---
 

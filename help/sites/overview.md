@@ -1,13 +1,13 @@
 ---
 title: AEM Sites 비디오 및 튜토리얼
-description: Adobe Experience Manager Sites에 대한 비디오 및 튜토리얼 모음입니다.
+description: Adobe Experience Manager Sites을 위한 비디오 및 자습서를 통해 AEM에 대해 자세히 알아보십시오.
 sub-product: sites, content-services
 topic: Content Management
 exl-id: cde4ce7f-0afe-4632-8c1c-354586f296d5
-source-git-commit: eb669d1e2493d9b4a973314ab1323764920ba220
+source-git-commit: efa33aa8cf8288d48ae56d2e96ed9d3a6c4e9627
 workflow-type: tm+mt
-source-wordcount: '345'
-ht-degree: 20%
+source-wordcount: '348'
+ht-degree: 23%
 
 ---
 
@@ -25,7 +25,7 @@ Adobe Experience Manager (AEM) Sites는 선도적인 경험 관리 플랫폼입�
 
    *사용자 지정 AEM 구성 요소의 컨텐츠로 Adobe 클라이언트 데이터 계층을 업데이트하는 방법을 알아봅니다.*
 
-* **[AEM Headless GraphQL 시작하기(자습서)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)**
+* **[AEM Headless GraphQL 시작하기(자습서)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ko-KR)**
 
    *AEM GraphQL API를 사용하여 기본 모바일 앱에서 사용할 AEM의 컨텐츠를 노출하는 방법입니다.*
 
@@ -55,7 +55,7 @@ Adobe Experience Manager (AEM) Sites는 선도적인 경험 관리 플랫폼입�
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ko-KR">
     <img alt="AEM 헤드리스 시작하기" src="./assets/aem-headless-tutorial.png" />
     </a>
     <div>
