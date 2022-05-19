@@ -4,7 +4,8 @@ description: 시즌 2를 통해 Adobe을 구축하는 Adobe Experience Manager(A
 sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
-source-git-commit: 99424ae98bd85a8d0203f8f5d4bf24a4e4d7cb53
+exl-id: e2fabf7c-7fda-4391-ae77-709aa9f7dc0a
+source-git-commit: c42e37c6bebb59189000d5382ccab2c8656455ee
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 2%
@@ -30,9 +31,9 @@ AEM Engineering의 시즌2의 클라우드 5 시리즈에 오신 것을 환영�
 <table>
   <tr>
    <td>
-      <img alt="Admin Console" src="./imgs/coming-soon.png"/>
+      <img alt="조각" src="./imgs/coming-soon.png"/>
       <div>
-         <strong>Admin Console</strong>        
+         <strong>조각</strong>        
          <br/><em>Darin Muntze &amp; James Talbot과 함께, 수석 클라우드 설계자</em>
       </div>
       <p>
@@ -41,9 +42,9 @@ AEM Engineering의 시즌2의 클라우드 5 시리즈에 오신 것을 환영�
       </p>
      </td>   
      <td>
-         <img alt="조각" src="./imgs/coming-soon.png"/>
+         <img alt="저장소 현대화 도구" src="./imgs/coming-soon.png"/>
       <div>
-         <strong>조각</strong>
+         <strong>Repository Modernizer</strong>
          <br/><em>Darin Muntze &amp; James Talbot과 함께, 수석 클라우드 설계자</em>
       </div>
       <p>
@@ -52,9 +53,9 @@ AEM Engineering의 시즌2의 클라우드 5 시리즈에 오신 것을 환영�
       </p>
    </td>
      <td>
-            <img alt="저장소 현대화 도구" src="./imgs/coming-soon.png"/>
+            <img alt="Admin Console" src="./imgs/coming-soon.png"/>
       <div>
-            <strong>Repository Modernizer</strong>
+            <strong>Admin Console</strong>
          <br/><em>Darin Muntze &amp; James Talbot과 함께, 수석 클라우드 설계자</em>
       </div>
       <p>
