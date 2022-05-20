@@ -4,9 +4,9 @@ user-guide-description: Adobe Experience Manager as a Cloud Service를 위한 �
 breadcrumb-title: AEM as a Cloud Service 튜토리얼
 sub-product: cloud-service
 team: TM
-source-git-commit: 99424ae98bd85a8d0203f8f5d4bf24a4e4d7cb53
+source-git-commit: e666e38d6b2a7057f7016b35ad1034a4487e9bc7
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '749'
 ht-degree: 22%
 
 ---
@@ -89,6 +89,9 @@ ht-degree: 22%
    + [Adobe IMS 제품 프로필](./accessing/adobe-ims-product-profiles.md)
    + [AEM 사용자, 그룹 및 권한](./accessing/aem-users-groups-and-permissions.md)
    + [AEM 액세스 구성 둘러보기](./accessing/walk-through.md)
++ 인증{#authentication}
+   + [개요](./authentication/authentication.md)
+   + [SAML 2.0](./authentication/saml-2-0.md)
 + 고급 네트워킹{#networking}
    + [개요](./networking/advanced-networking.md)
    + [유연한 포트 송신](./networking/flexible-port-egress.md)
