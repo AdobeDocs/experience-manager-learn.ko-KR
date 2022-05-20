@@ -8,7 +8,7 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: 1532a865-4664-40d9-964a-e64463b49587
-source-git-commit: 55583effd0400bac2e38756483d69f5bd114cb21
+source-git-commit: b918afdddf1f047b478e0521883a633f7b0610c6
 workflow-type: tm+mt
 source-wordcount: '709'
 ht-degree: 1%
@@ -43,7 +43,7 @@ OpenAPI Specification(이전 Swagger Specification)은 REST API에 대한 API �
 
 를 사용하십시오 [swagger 편집기](https://editor.swagger.io/) sms를 사용하여 보낸 OTP 코드를 보내고 확인하는 작업을 설명하는 swagger 파일을 만들려면 swagger 파일은 JSON 또는 YAML 형식으로 만들 수 있습니다. 완료된 swagger 파일은 [여기](assets/drivers-license-swagger.zip)
 
-## 스위치 파일을 정의할 때의 고려 사항
+## swagger 파일을 정의할 때의 고려 사항
 
 * 정의 필요
 * 메서드 정의에 $ref를 사용해야 합니다.

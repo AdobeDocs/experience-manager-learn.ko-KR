@@ -8,9 +8,9 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: 93a177b0-7852-44da-89cc-836d127be4e7
-source-git-commit: 81a15fb0182760aaac8cb58cccbfe28de7323492
+source-git-commit: b918afdddf1f047b478e0521883a633f7b0610c6
 workflow-type: tm+mt
-source-wordcount: '230'
+source-wordcount: '289'
 ht-degree: 2%
 
 ---
@@ -28,6 +28,7 @@ ht-degree: 2%
 ## 샘플 자산
 
 이 문서와 함께 제공되는 샘플 자산은 다음과 같습니다
+
 * 클라우드 서비스 구성
 * Swagger 파일을 사용하여 인시던트 만들기 및 모든 인시던트 가져오기
 * Swagger 파일을 기반으로 하는 양식 데이터 모델
@@ -37,8 +38,18 @@ ht-degree: 2%
 
 * 다운로드 [샘플 자산](assets/service-now.zip)
 * 을 사용하여 자산을 AEM에 가져오기 [패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp)
+* 이 통합에 사용된 Swagger 파일은 ```/conf/9957/settings/cloudconfigs/fdm``` crx 저장소의 폴더
 * 편집 [CreateIncident cloud service 구성](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2F9957%2Fsettings%2Fcloudconfigs%2Ffdm%2Fcreateincident)를 입력하여 ServiceNow 인스턴스와 일치시킬 수 있습니다.
-* 편집 [GetAllInsights 클라우드 서비스 구성](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2F9957%2Fsettings%2Fcloudconfigs%2Ffdm%2Fgetallincidents) ServiceNow 인스턴스와 일치시키려면
+* 편집 [GetAllInsights 클라우드 서비스 구성](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2F9957%2Fsettings%2Fcloudconfigs%2Ffdm%2Fgetallincidents) 를 입력하여 ServiceNow 인스턴스와 일치시킬 수 있습니다. ServiceNow 인스턴스 자격 증명과 일치하도록 호스트, 사용자 이름 및 암호를 변경해야 합니다.
+
+## ServiceNow 인스턴스 자격 증명 액세스
+
+* 사용자 프로필을 클릭합니다.
+   ![사용자 프로필 클릭](assets/snow-1.png)
+
+* 인스턴스 암호 관리를 클릭합니다.
+* 인스턴스 세부 사항이 아래와 같이 표시됩니다
+   ![인스턴스 세부 정보](assets/snow-3.png)
 
 ## 통합 테스트
 
