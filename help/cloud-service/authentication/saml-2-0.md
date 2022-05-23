@@ -8,13 +8,13 @@ role: Architect, Developer
 level: Intermediate
 kt: 9351
 thumbnail: 343040.jpeg
-source-git-commit: e666e38d6b2a7057f7016b35ad1034a4487e9bc7
+exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
+source-git-commit: e4cd87e5d2d78c3113ef860b9f357cfacb2c874a
 workflow-type: tm+mt
-source-wordcount: '2720'
+source-wordcount: '2775'
 ht-degree: 1%
 
 ---
-
 
 # SAML 2.0 인증{#saml-2-0-authentication}
 
@@ -398,6 +398,10 @@ IDP에 대한 인증이 성공하면 IDP는 HTTP POST을 다시 등록된 AEM에
 ```
 
 Apache 웹 서버에서 URL이 재작성되도록 구성된 경우(`dispatcher/src/conf.d/rewrites/rewrite.rules`)에 대한 요청이 `.../saml_login` 엔드포인트는 실수로 망쳐지지 않습니다.
+
+## 데이터 동기화 활성화
+
+SAML 인증 플로우가 AEM 게시에서 사용자를 만든 후 AEM 게시 계층에서 사용자 레코드를 동기화해야 합니다. 종료 [데이터 동기화 활성화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html#data-synchronization)를 통해 고객 지원 Adobe에 요청을 보냅니다. [AdminConsole](https://adminconsole.adobe.com) > 지원)을 활성화하도록 요청합니다.
 
 ## SAML 구성 배포
 
