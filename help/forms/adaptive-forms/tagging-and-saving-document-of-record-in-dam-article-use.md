@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 832f04b4-f22f-4cf9-8136-e3c1081de7a9
-source-git-commit: 55583effd0400bac2e38756483d69f5bd114cb21
+source-git-commit: 2ac0f6b3964590e5443700f730a3fc02cb3f63bc
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '611'
 ht-degree: 0%
 
 ---
@@ -160,14 +160,14 @@ public class TagAndStoreDoRinDAM implements WorkflowProcess
 
 * [setvalue 번들 다운로드 및 배포](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). 제출된 양식 데이터에서 태그를 설정하는 사용자 지정 OSGI 번들입니다.
 
-* [샘플 적응형 양식 다운로드](assets/tag-and-store-in-dam-assets.zip)
+* [샘플 적응형 양식 다운로드](assets/tag-and-store-in-dam-adaptive-form.zip)
 
 * [Forms 및 문서로 이동합니다.](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 
-* 만들기 를 클릭합니다. | 파일 업로드 및 samplleaptiveform.zip 업로드
+* 만들기 를 클릭합니다. | 파일 Tag-and-store-in-dam-adaptive-form.zip 업로드 및 업로드
 
 * [문서 자산 가져오기](assets/tag-and-store-in-dam-assets.zip) AEM 패키지 관리자 사용
-* 를 엽니다. [미리 보기 모드에서 샘플 양식](http://localhost:4502/content/dam/formsanddocuments/summit/peakform/jcr:content?wcmmode=disabled). 사람 섹션을 입력하고 양식을 제출합니다.
+* 를 엽니다. [미리 보기 모드에서 샘플 양식](http://localhost:4502/content/dam/formsanddocuments/tagandstoreindam/jcr:content?wcmmode=disabled). **모든 필드 채우기** 양식을 제출합니다.
 * [DAM의 Peak 폴더로 이동](http://localhost:4502/assets.html/content/dam/Peak). Peak 폴더에 DoR이 표시됩니다. 문서의 속성을 확인합니다. 태깅을 적절히 해야 합니다.
 축하합니다!! 시스템에 샘플을 설치했습니다.
 
