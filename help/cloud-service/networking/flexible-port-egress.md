@@ -9,9 +9,9 @@ level: Intermediate
 kt: 9350
 thumbnail: KT-9350.jpeg
 exl-id: 5c1ff98f-d1f6-42ac-a5d5-676a54ef683c
-source-git-commit: d00e47895d1b2b6fb629b8ee9bcf6b722c127fd3
+source-git-commit: 8c75e062d2de70c294f95e5c25040d8bb9badcce
 workflow-type: tm+mt
-source-wordcount: '1055'
+source-wordcount: '1080'
 ht-degree: 1%
 
 ---
@@ -110,7 +110,7 @@ Cloud Manager 프로그램은 __단일__ 네트워크 인프라 유형. 전용 �
 
    에서 JSON 매개 변수를 정의합니다 `flexible-port-egress.json` 컬을 통해 제공 `... -d @./flexible-port-egress.json`.
 
-[flexible-port-egress.json 예제 다운로드](./assets/flexible-port-egress.json)
+   [flexible-port-egress.json 예제 다운로드](./assets/flexible-port-egress.json). 이 파일은 예일 뿐입니다. 에 설명된 선택 사항/필수 필드를 기반으로 파일을 필요에 따라 구성합니다. [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/).
 
    ```json
    {
