@@ -9,9 +9,9 @@ level: Intermediate
 kt: 9352
 thumbnail: KT-9352.jpeg
 exl-id: 74cca740-bf5e-4cbd-9660-b0579301a3b4
-source-git-commit: d00e47895d1b2b6fb629b8ee9bcf6b722c127fd3
+source-git-commit: 52a2303f75c23c72e201b1f674f7f882db00710b
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1364'
 ht-degree: 1%
 
 ---
@@ -84,7 +84,7 @@ Cloud Manager 프로그램은 __단일__ 네트워크 인프라 유형. 가상 �
 
    에서 JSON 매개 변수를 정의합니다 `vpn-create.json` 컬을 통해 제공 `... -d @./vpn-create.json`.
 
-[vpn-create.json 예제 다운로드](./assets/vpn-create.json)
+   [vpn-create.json 예제 다운로드](./assets/vpn-create.json).  이 파일은 예일 뿐입니다. 에 설명된 선택 사항/필수 필드를 기반으로 파일을 필요에 따라 구성합니다. [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/).
 
    ```json
    {
