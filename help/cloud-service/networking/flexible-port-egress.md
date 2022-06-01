@@ -9,7 +9,7 @@ level: Intermediate
 kt: 9350
 thumbnail: KT-9350.jpeg
 exl-id: 5c1ff98f-d1f6-42ac-a5d5-676a54ef683c
-source-git-commit: 8c75e062d2de70c294f95e5c25040d8bb9badcce
+source-git-commit: a18bea7986062ff9cb731d794187760ff6e0339f
 workflow-type: tm+mt
 source-wordcount: '1080'
 ht-degree: 1%
@@ -185,7 +185,7 @@ AEM에서는 AEM HTTP/HTTPS 프록시에 매핑되는 두 개의 특별한 Java�
 <table>
 <tr>
 <td>
-    <a  href="./examples/http-on-non-standard-ports.md"><img alt="비표준 포트의 HTTP/HTTPS" src="./assets/code-examples__http.png"/></a>
+    <a  href="./examples/http-on-non-standard-ports-flexible-port-egress.md"><img alt="비표준 포트의 HTTP/HTTPS" src="./assets/code-examples__http.png"/></a>
     <div><strong><a href="./examples/http-on-non-standard-ports-flexible-port-egress.md">비표준 포트의 HTTP/HTTPS</a></strong></div>
     <p>
         AEM에서 비 표준 HTTP/HTTPS 포트의 외부 서비스로 HTTP/HTTPS를 연결하는 Java™ 코드 예입니다.

@@ -9,9 +9,9 @@ level: Intermediate
 kt: 9352
 thumbnail: KT-9352.jpeg
 exl-id: 74cca740-bf5e-4cbd-9660-b0579301a3b4
-source-git-commit: 52a2303f75c23c72e201b1f674f7f882db00710b
+source-git-commit: a18bea7986062ff9cb731d794187760ff6e0339f
 workflow-type: tm+mt
-source-wordcount: '1364'
+source-wordcount: '1370'
 ht-degree: 1%
 
 ---
@@ -220,16 +220,16 @@ Cloud Manager 프로그램은 __단일__ 네트워크 인프라 유형. 가상 �
 
 가상 사설 네트워크를 사용하도록 설정하면 AEM 코드 및 구성을 사용하여 VPN을 통해 외부 서비스를 호출할 수 있습니다. AEM에서 다르게 처리하는 외부 호출에는 두 가지 방식이 있습니다.
 
-1. 비표준 포트에서 외부 서비스에 대한 HTTP/HTTPS 호출
+1. 외부 서비스에 대한 HTTP/HTTPS 호출
    + 표준 80 또는 443 포트 이외의 포트에서 실행되는 서비스에 대한 HTTP/HTTPS 호출을 포함합니다.
 1. 외부 서비스에 대한 비HTTP/HTTPS 호출
    + 메일 서버와의 연결, SQL 데이터베이스 또는 다른 비HTTP/HTTPS 프로토콜에서 실행되는 서비스와 같은 HTTP가 아닌 모든 호출을 포함합니다.
 
-표준 (80/443)에 있는 AEM의 HTTP/HTTPS 요청은 기본적으로 허용되며 추가 구성 또는 고려 사항이 필요하지 않습니다.
+표준 (80/443)의 AEM에서 HTTP/HTTPS 요청은 기본적으로 허용되지만 아래 설명된 대로 적절히 구성되지 않은 경우 VPN 연결을 사용하지 않습니다.
 
-### 비표준 포트의 HTTP/HTTPS
+### HTTP/HTTPS
 
-AEM에서 비표준 포트(-80/443 아님)에 대한 HTTP/HTTPS 연결을 만들 때 자리 표시자를 통해 제공되는 특수 호스트 및 포트를 통해 연결을 만들어야 합니다.
+AEM에서 HTTP/HTTPS 연결을 만들 때 전용 송신 IP 주소를 가져오거나 VPN을 통해 라우팅하려면 자리 표시자를 통해 제공되는 특수 호스트 및 포트를 통해 연결을 만들어야 합니다.
 
 AEM에서는 AEM HTTP/HTTPS 프록시에 매핑되는 두 개의 특별한 Java™ 시스템 변수 세트를 제공합니다.
 
@@ -237,7 +237,7 @@ AEM에서는 AEM HTTP/HTTPS 프록시에 매핑되는 두 개의 특별한 Java�
 
 HTTP/HTTPS 외부 서비스에 대한 요청은 AEM 프록시 호스트/포트 값을 통해 Java™ HTTP 클라이언트의 프록시 구성을 구성하여 수행해야 합니다.
 
-비표준 포트에서 외부 서비스에 HTTP/HTTPS를 호출하는 경우 해당 항목이 없습니다 `portForwards` Cloud Manager API를 사용하여 정의해야 합니다 `__enableEnvironmentAdvancedNetworkingConfiguration` &quot;rules&quot;가 &quot;in code&quot;로 정의된 대로 작동합니다.
+포트에서 외부 서비스에 HTTP/HTTPS를 호출하는 경우 해당 서비스가 없습니다 `portForwards` Cloud Manager API를 사용하여 정의해야 합니다 `__enableEnvironmentAdvancedNetworkingConfiguration` &quot;rules&quot;가 &quot;in code&quot;로 정의된 대로 작동합니다.
 
 >[!TIP]
 >
@@ -248,10 +248,10 @@ HTTP/HTTPS 외부 서비스에 대한 요청은 AEM 프록시 호스트/포트 �
 <table>
 <tr>
 <td>
-    <a  href="./examples/http-on-non-standard-ports.md"><img alt="비표준 포트의 HTTP/HTTPS" src="./assets/code-examples__http.png"/></a>
-    <div><strong><a href="./examples/http-on-non-standard-ports.md">비표준 포트의 HTTP/HTTPS</a></strong></div>
+    <a  href="./examples/http-dedicated-egress-ip-vpn.md"><img alt="HTTP/HTTPS" src="./assets/code-examples__http.png"/></a>
+    <div><strong><a href="./examples/http-dedicated-egress-ip-vpn.md">HTTP/HTTPS</a></strong></div>
     <p>
-        AEM에서 비 표준 HTTP/HTTPS 포트의 외부 서비스로 HTTP/HTTPS를 연결하는 Java™ 코드 예입니다.
+        HTTP/HTTPS 프로토콜을 사용하여 AEM에서 as a Cloud Service으로 외부 서비스에 HTTP/HTTPS를 연결하는 Java™ 코드 예입니다.
     </p>
 </td>
 <td></td>
