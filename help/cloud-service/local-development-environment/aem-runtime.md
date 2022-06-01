@@ -9,9 +9,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 19f72254-2087-450b-909d-2d90c9821486
-source-git-commit: 1aba21ea777a58fe8efc8a6af455b0a8ba965b66
+source-git-commit: 3a9615177acb5475d9b2b4ef22907c11e7da2bf7
 workflow-type: tm+mt
-source-wordcount: '1734'
+source-wordcount: '1801'
 ht-degree: 2%
 
 ---
@@ -115,6 +115,18 @@ $ mkdir -p ~/aem-sdk/publish
 $ cp aem-sdk-Quickstart-XXX.jar ~/aem-sdk/publish/aem-publish-p4503.jar
 $ cd ~/aem-sdk/publish
 $ java -jar aem-publish-p4503.jar
+```
+
+## 사전 릴리스 모드에서 로컬 AEM 서비스 설정
+
+로컬 AEM 런타임은에서 시작할 수 있습니다. [사전 릴리스 모드](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html) 개발자가 AEM as a Cloud Service의 다음 릴리스의 기능에 대해 빌드할 수 있도록 허용합니다. 사전 릴리스는 다음을 전달하여 활성화됩니다 `-r prerelease` 로컬 AEM 런타임의 첫 번째 시작에 대한 인수입니다. 로컬 AEM 작성자 및 AEM 게시 서비스 모두에서 사용할 수 있습니다.
+
+```shell
+# For AEM Author service in prerelease mode
+$ java -jar aem-author-p4502.jar -r prerelease
+
+# For AEM Publish service in prerelease mode
+$ java -jar aem-publish-p4503.jar -r prerelease
 ```
 
 ## 컨텐츠 배포 시뮬레이션 {#content-distribution}
@@ -248,4 +260,4 @@ Java 11 SDK가 설치되면 명령줄에서 명령을 실행하여 활성 버전
 + [AEM SDK 다운로드](https://experience.adobe.com/#/downloads)
 + [Adobe Cloud Manager](https://my.cloudmanager.adobe.com/)
 + [Docker 다운로드](https://www.docker.com/)
-+ [Experience Manager Dispatcher 설명서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
++ [Experience Manager Dispatcher 설명서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko-KR)
