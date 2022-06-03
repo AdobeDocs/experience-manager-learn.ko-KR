@@ -8,10 +8,10 @@ thumbnail: 342375.jpeg
 hidefromtoc: true
 recommendations: noDisplay, noCatalog
 exl-id: bfd455c4-9a51-4537-ae6d-548d552e13e6
-source-git-commit: 63278aace1981aa9bfe69825e95dac5cc387b30a
+source-git-commit: 6b0e9039ab1e0a54678387b61cfe4dc2147921d5
 workflow-type: tm+mt
-source-wordcount: '65'
-ht-degree: 4%
+source-wordcount: '78'
+ht-degree: 3%
 
 ---
 
@@ -23,5 +23,6 @@ ht-degree: 4%
 
 ## 이 비디오에서 다루는 컨텐츠
 
-+ [컨텐츠 조각을 사용한 작업](https://experienceleague.adobe.com/docs/experience-manager-64/assets/fragments/content-fragments.html)
++ [컨텐츠 조각을 사용한 작업](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments.html)
 + [경험 조각 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html)
++ [경험 조각 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/experience-fragments.html)
