@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: e2fabf7c-7fda-4391-ae77-709aa9f7dc0a
-source-git-commit: abb26a995ec81332bb6ae3617b1a41b60c9dab96
+source-git-commit: 85e00a237c09867247a0b3ccffa0bf843826ee26
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '340'
 ht-degree: 2%
 
 ---
@@ -30,18 +30,20 @@ AEM Engineering의 시즌2의 클라우드 5 시리즈에 오신 것을 환영�
 각 시즌은 길이에 따라 다르며 정해진 일정에 따라 릴리스됩니다. 시즌 2의 주제는 주로 고객 및 파트너와의 일상적인 참여에 나타난 과거 요청에서 비롯되었습니다. 주간 업데이트를 보려면 이 페이지를 방문하거나 선택한 소셜 네트워크에서 당사를 팔로우하십시오.
 
 <table>
-  <tr>
-   <td>
-      <img alt="조각" src="./imgs/coming-soon.png"/>
-      <div>
-         <strong>조각</strong>        
-         <br/><em>Darin Muntze &amp; James Talbot과 함께, 수석 클라우드 설계자</em>
-      </div>
-      <p>
-        <br/>
-         2022년 6월 3일 출시
-      </p>
-     </td>   
+    <tr>
+        <td>
+            <a href="season-2/cloud5-experience-v-content-fragments.md">
+                <img alt="조각" src="./imgs/s2/000-thumb.png"/>
+            </a>
+            <div>
+                <a href="season-2/cloud5-experience-v-content-fragments.md"><strong>조각</strong></a>        
+                <br/><em>Darin Muntze &amp; James Talbot과 함께, 수석 클라우드 설계자</em>
+            </div>
+            <p>
+                <br/>
+                경험과 컨텐츠 조각 간의 차이점을 다채로운 방식으로 살펴봅니다. 스포일러: 모두가 이기죠
+            </p>
+        </td>   
      <td>
          <img alt="저장소 현대화 도구" src="./imgs/coming-soon.png"/>
       <div>
