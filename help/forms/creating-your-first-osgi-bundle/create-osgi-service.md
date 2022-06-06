@@ -1,18 +1,18 @@
 ---
 title: AEM Forms을 사용하여 첫 번째 OSGi 서비스 만들기
-description: 'AEM Forms을 사용하여 첫 번째 OSGi 서비스 구축 '
-feature: 적응형 양식
+description: AEM Forms을 사용하여 첫 번째 OSGi 서비스 구축
+feature: Adaptive Forms
 version: 6.4,6.5
-topic: 개발
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 2f15782e-b60d-40c6-b95b-6c7aa8290691
+source-git-commit: f4e86059d29acf402de5242f033a25f913febf36
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '349'
 ht-degree: 2%
 
 ---
-
 
 # OSGi 서비스
 
@@ -22,24 +22,26 @@ OSGi 서비스는 서비스 인터페이스에 의해 의미적으로 정의되�
 
 ## 인터페이스 정의
 
-데이터를 <span class="x x-first x-last">XDP</span> 템플릿과 병합하는 방법이 하나인 간단한 인터페이스입니다.
+데이터를 와 병합하는 하나의 방법이 있는 간단한 인터페이스 <span class="x x-first x-last">XDP</span> 템플릿.
 
 ```java
-package com.learningaemforms.adobe.core;
+package com.mysite.samples;
 
 import com.adobe.aemfd.docmanager.Document;
 
-public interface MyfirstInterface {
-  public Document mergeDataWithXDPTemplate(Document xdpTemplate, Document xmlDocument);
-} 
+public interface MyfirstInterface
+{
+	public Document mergeDataWithXDPTemplate(Document xdpTemplate, Document xmlDocument);
+}
+ 
 ```
 
 ## 인터페이스 구현
 
-인터페이스의 구현을 보류하기 위해 `com.learningaemforms.adobe.core.impl` 이라는 새 패키지를 만듭니다.
+라는 새 패키지를 만듭니다. `com.mysite.samples.impl` 를 눌러 인터페이스 구현을 보류합니다.
 
 ```java
-package com.learningaemforms.adobe.core.impl;
+package com.mysite.samples.impl;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 import org.slf4j.Logger;
@@ -47,7 +49,7 @@ import org.slf4j.LoggerFactory;
 import com.adobe.aemfd.docmanager.Document;
 import com.adobe.fd.output.api.OutputService;
 import com.adobe.fd.output.api.OutputServiceException;
-import com.learningaemforms.adobe.core.MyfirstInterface;
+import com.mysite.samples.MyfirstInterface;
 @Component(service = MyfirstInterface.class)
 public class MyfirstInterfaceImpl implements MyfirstInterface {
   @Reference
@@ -74,34 +76,36 @@ public class MyfirstInterfaceImpl implements MyfirstInterface {
 }
 ```
 
-10줄의 주석 `@Component(...)`은 이 Java 클래스를 OSGi 구성 요소로 표시하고 OSGi 서비스로 등록합니다.
+주석 `@Component(...)` 10줄에서는 이 Java 클래스를 OSGi 구성 요소로 표시하고 OSGi 서비스로 등록합니다.
 
-`@Reference` 주석은 OSGi 선언적 서비스의 일부이며, [Outputservice](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html)에 대한 참조를 변수 `outputService`에 주입하는 데 사용됩니다.
+다음 `@Reference` 주석은 OSGi 선언적 서비스의 일부이며 [Outputservice](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) 변수로 `outputService`.
 
 
 ## 번들 빌드 및 배포
 
-* **명령 프롬프트 창**&#x200B;을 엽니다.
-* 다음으로 이동 `c:\aemformsbundles\learningaemforms\core`
-* `mvn clean install -PautoInstallBundle` 명령을 실행합니다.
+* 열기 **명령 프롬프트 창**
+* 다음으로 이동 `c:\aemformsbundles\mysite\core`
+* 명령 실행 `mvn clean install -PautoInstallBundle`
 * 위의 명령은 localhost:4502에서 실행되는 AEM 인스턴스에 번들을 자동으로 빌드 및 배포합니다.
 
-이 번들은 `C:\AEMFormsBundles\learningaemforms\core\target` 위치에서도 사용할 수 있습니다. 이 번들은 [Felix 웹 콘솔을 사용하여 AEM에 배포할 수도 있습니다.](http://localhost:4502/system/console/bundles)
+이 번들은 다음 위치에서도 사용할 수 있습니다 `C:\AEMFormsBundles\mysite\core\target`. 번들은 을 사용하여 AEM에 배포할 수도 있습니다 [Felix 웹 콘솔.](http://localhost:4502/system/console/bundles)
 
 ## 서비스 사용
 
 이제 JSP 페이지에서 서비스를 사용할 수 있습니다. 다음 코드 조각은 서비스에 대한 액세스 권한을 가져오고 서비스에 의해 구현된 메서드를 사용하는 방법을 보여 줍니다
 
 ```java
-MyFirstAEMFormsService myFirstAEMFormsService = sling.getService(com.learningaemforms.adobe.core.MyFirstAEMFormsService.class);
+MyFirstAEMFormsService myFirstAEMFormsService = sling.getService(com.mysite.samples.MyFirstAEMFormsService.class);
 com.adobe.aemfd.docmanager.Document generatedDocument = myFirstAEMFormsService.mergeDataWithXDPTemplate(xdp_or_pdf_template,xmlDocument);
 ```
 
-JSP 페이지가 포함된 샘플 패키지는 ![여기에서 다운로드할 수 있습니다.](assets/learning-aem-forms.zip)
+JSP 페이지를 포함하는 샘플 패키지는 다음과 같습니다 [여기에서 다운로드](assets/learning_aem_forms.zip)
+
+[전체 번들을 다운로드할 수 있습니다](assets/mysite.core-1.0.0-SNAPSHOT.jar)
 
 ## 패키지 테스트
 
-[패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp)를 사용하여 패키지를 AEM에 가져와 설치합니다
+를 사용하여 패키지를 AEM에 가져오고 설치합니다 [패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp)
 
 postman을 사용하여 POST 호출을 만들고 아래 스크린샷에 표시된 대로 입력 매개 변수를 제공합니다
 ![postman](assets/test-service-postman.JPG)

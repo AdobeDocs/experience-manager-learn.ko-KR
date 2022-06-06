@@ -7,10 +7,10 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 307cc3b2-87e5-4429-8f21-5266cf03b78f
-source-git-commit: 631fef25620c84e04c012c8337c9b76613e3ad46
+source-git-commit: f4e86059d29acf402de5242f033a25f913febf36
 workflow-type: tm+mt
-source-wordcount: '835'
-ht-degree: 0%
+source-wordcount: '674'
+ht-degree: 1%
 
 ---
 
@@ -49,12 +49,6 @@ Maven은 주로 Java 프로젝트에 사용되는 빌드 자동화 도구입니�
 
 ![데이터 소스](assets/mvn-version.JPG)
 
-## Settings.xml
-
-A Maven `settings.xml` 파일은 다양한 방법으로 Maven 실행을 구성하는 값을 정의합니다. 일반적으로 로컬 저장소 위치, 대체 원격 저장소 서버 및 개인 리포지토리의 인증 정보를 정의하는 데 사용됩니다.
-
-다음으로 이동 `C:\Users\<username>\.m2 folder`
-의 내용을 추출합니다. [settings.zip](assets/settings.zip) 파일을 만든 후 `.m2` 폴더를 입력합니다.
 
 ## Eclipse 설치
 
@@ -68,24 +62,17 @@ Archetype은 Maven 프로젝트 템플릿 툴킷입니다. 원형은 같은 종�
 * 라는 새 폴더를 만듭니다. `aemformsbundles` C 드라이브에서
 * 명령 프롬프트를 열고 다음 위치로 이동합니다. `c:\aemformsbundles`
 * 명령 프롬프트에서 다음 명령을 실행합니다.
-* `mvn archetype:generate  -DarchetypeGroupId=com.adobe.granite.archetypes  -DarchetypeArtifactId=aem-project-archetype -DarchetypeVersion=19`
 
-Maven 프로젝트가 대화식으로 생성되며 다음과 같은 여러 속성에 값을 제공하라는 메시지가 표시됩니다.
+```java
+mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate -D archetypeGroupId=com.adobe.aem -D archetypeArtifactId=aem-project-archetype -D archetypeVersion=36 -D appTitle="My Site" -D appId="mysite" -D groupId="com.mysite" -D aemVersion=6.5.13
+```
 
-| 속성 이름 | 유의 | 값 |
-------------------------|---------------------------------------|---------------------
-| groupId | groupId는 모든 프로젝트에서 프로젝트를 고유하게 식별합니다 | com.learningaemforms.adobe |
-| appsFolderName | 프로젝트 구조를 유지할 폴더의 이름입니다 | 학습 양식 |
-| artifactId | artifactId는 버전이 없는 jar의 이름입니다. 생성한 경우 소문자 및 이상한 기호로 원하는 이름을 선택할 수 있습니다. | 학습 양식 |
-| 버전 | 배포하면 숫자와 점(1.0, 1.1, 1.0.1, ..)이 있는 일반적인 버전을 선택할 수 있습니다. | 1.0 |
-
-Enter 키를 눌러 다른 속성에 대한 기본값을 사용합니다.
-모든 것이 제대로 작동하면 명령 창에 빌드 성공 메시지가 표시됩니다
+성공적으로 완료되면 명령 창에 빌드 성공 메시지가 표시됩니다
 
 ## 전문 프로젝트에서 eclipse 프로젝트 만들기
 
-작업 디렉토리를 다음으로 변경 `learningaemforms`.
-실행 `mvn eclipse:eclipse` 명령줄에서 위의 명령은 pom 파일을 읽고 올바른 메타데이터로 Eclipse 프로젝트를 생성하므로 Eclipse는 프로젝트 유형, 관계, 클래스 경로 등을 이해할 수 있습니다.
+* 작업 디렉토리를 다음으로 변경 `mysite`
+* 실행 `mvn eclipse:eclipse` 명령줄에서 을(를) 클릭합니다. 이 명령은 pom 파일을 읽고 올바른 메타데이터로 Eclipse 프로젝트를 만들어 Eclipse가 프로젝트 유형, 관계, 클래스 경로 등을 이해할 수 있도록 합니다.
 
 ## 프로젝트를 eclipse로 가져오기
 
@@ -97,33 +84,24 @@ Launch **Eclipse**
 
 다음을 클릭합니다
 
-을(를) 선택합니다 `c:\aemformsbundles\learningaemform`s( **찾아보기** 버튼
+c:\aemformsbundles\mysite by clicking the 을 선택합니다. **찾아보기** 버튼
 
-![데이터 소스](assets/select-mvn-project.JPG)
+![데이터 소스](assets/mysite-eclipse-project.png)
 
 >[!NOTE]
 >필요에 따라 적절한 모듈을 가져오도록 선택할 수 있습니다. 프로젝트에서 Java 코드만 만들려는 경우에만 코어 모듈을 선택하고 가져옵니다.
 
 클릭 **완료** 가져오기 프로세스를 시작하려면
 
-프로젝트는 Eclipse로 가져오며, 많은 수가 표시됩니다 `learningaemforms.xxxx` 폴더
+프로젝트는 Eclipse로 가져오며, 많은 수가 표시됩니다 `mysite.xxxx` 폴더
 
-를 확장합니다. `src/main/java` 아래에 `learningaemforms.core` 폴더를 입력합니다. 대부분의 코드를 작성할 폴더입니다.
+를 확장합니다. `src/main/java` 아래에 `mysite.core` 폴더를 입력합니다. 대부분의 코드를 작성할 폴더입니다.
 
-![데이터 소스](assets/learning-core.JPG)
+![데이터 소스](assets/mysite-core-project.png)
 
-## 프로젝트 빌드
+## AEMFD 클라이언트 SDK 포함
 
-
-
-
-OSGi 서비스 또는 서블릿을 작성했으면 Felix 웹 콘솔을 사용하여 배포할 수 있는 OSGi 번들을 생성하기 위해 프로젝트를 빌드해야 합니다. 자세한 내용은 [AEMFD 클라이언트 SDK](https://search.maven.org/artifact/com.adobe.aemfd/aemfd-client-sdk) maven 프로젝트에 적절한 클라이언트 SDK를 포함하도록 업데이트되고 수정되었습니다. AEM FD 클라이언트 SDK를 의 종속성 섹션에 포함해야 합니다 `pom.xml` 아래와 같이 핵심 프로젝트의 목록을 표시합니다.
-
-
-
-
-
-
+AEM Forms과 함께 제공되는 다양한 서비스를 사용하려면 프로젝트에 AEMFD 클라이언트 sdk를 포함해야 합니다. 자세한 내용은 [AEMFD 클라이언트 SDK](https://mvnrepository.com/artifact/com.adobe.aemfd/aemfd-client-sdk) maven 프로젝트에 적절한 클라이언트 SDK를 포함하도록 업데이트되고 수정되었습니다. AEM FD 클라이언트 SDK를 의 종속성 섹션에 포함해야 합니다 `pom.xml` 아래와 같이 핵심 프로젝트의 목록을 표시합니다.
 
 ```xml
 <dependency>
@@ -136,7 +114,7 @@ OSGi 서비스 또는 서블릿을 작성했으면 Felix 웹 콘솔을 사용하
 프로젝트를 빌드하려면 다음 단계를 수행하십시오.
 
 * 열기 **명령 프롬프트 창**
-* 다음으로 이동 `c:\aemformsbundles\learningaemforms\core`
+* 다음으로 이동 `c:\aemformsbundles\mysite\core`
 * 명령 실행 `mvn clean install -PautoInstallBundle`
 위의 명령은 에서 실행되는 AEM 서버에 번들을 빌드하고 설치합니다 `http://localhost:4502`. 이 번들은 의 파일 시스템에서도 사용할 수 있습니다
-   `C:\AEMFormsBundles\learningaemforms\core\target` 및 은 [Felix 웹 콘솔](http://localhost:4502/system/console/bundles)
+   `C:\AEMFormsBundles\mysite\core\target` 및 은 [Felix 웹 콘솔](http://localhost:4502/system/console/bundles)

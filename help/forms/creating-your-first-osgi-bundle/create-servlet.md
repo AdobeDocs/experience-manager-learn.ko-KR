@@ -1,18 +1,18 @@
 ---
 title: AEM Forms에서 첫 번째 서블릿 만들기
 description: 데이터를 양식 템플릿과 병합하기 위해 첫 번째 sling 서블릿을 빌드합니다.
-feature: 적응형 양식
+feature: Adaptive Forms
 version: 6.4,6.5
-topic: 개발
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 72728ed7-80a2-48b5-ae7f-d744db8a524d
+source-git-commit: f4e86059d29acf402de5242f033a25f913febf36
 workflow-type: tm+mt
-source-wordcount: '210'
-ht-degree: 2%
+source-wordcount: '207'
+ht-degree: 0%
 
 ---
-
 
 # Sling 서블릿
 
@@ -25,8 +25,8 @@ AEM의 서블릿은 OSGi 서비스로 등록할 수 있습니다. 모든 RESTful
 ## 서블릿 코드
 
 ```java
+package com.mysite.core.servlets;
 import javax.servlet.Servlet;
-
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.SlingHttpServletResponse;
 import org.apache.sling.api.servlets.SlingAllMethodsServlet;
@@ -73,17 +73,17 @@ public class MyFirstAEMFormsServlet extends SlingAllMethodsServlet
 
 프로젝트를 빌드하려면 다음 단계를 수행하십시오.
 
-* **명령 프롬프트 창**&#x200B;을 엽니다.
-* 다음으로 이동 `c:\aemformsbundles\learningaemforms\core`
-* `mvn clean install -PautoInstallBundle` 명령을 실행합니다.
+* 열기 **명령 프롬프트 창**
+* 다음으로 이동 `c:\aemformsbundles\mysite\core`
+* 명령 실행 `mvn clean install -PautoInstallBundle`
 * 위의 명령은 localhost:4502에서 실행되는 AEM 인스턴스에 번들을 자동으로 빌드 및 배포합니다.
 
-이 번들은 `C:\AEMFormsBundles\learningaemforms\core\target` 위치에서도 사용할 수 있습니다. 이 번들은 [Felix 웹 콘솔을 사용하여 AEM에 배포할 수도 있습니다.](http://localhost:4502/system/console/bundles)
+이 번들은 다음 위치에서도 사용할 수 있습니다 `C:\AEMFormsBundles\mysite\core\target`. 번들은 을 사용하여 AEM에 배포할 수도 있습니다 [Felix 웹 콘솔.](http://localhost:4502/system/console/bundles)
 
 
 ## 서블릿 확인자 테스트
 
-브라우저를 [서블릿 확인자 URL](http://localhost:4502/system/console/servletresolver?url=%2Fbin%2FmergedataWithAcroform&amp;method=POST)에 보냅니다. 이렇게 하면 아래 스크린샷에 표시된 대로 지정된 경로에 대해 호출될 서블릿이 표시됩니다
+브라우저를 [servlet resolver URL](http://localhost:4502/system/console/servletresolver?url=%2Fbin%2FmergedataWithAcroform&amp;method=POST). 이렇게 하면 아래 스크린샷에 표시된 대로 지정된 경로에 대해 호출될 서블릿이 표시됩니다
 ![servlet-resolver](assets/servlet-resolver.JPG)
 
 ## Postman을 사용하여 서블릿 테스트

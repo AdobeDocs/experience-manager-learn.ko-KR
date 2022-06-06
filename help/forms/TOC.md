@@ -5,9 +5,9 @@ user-guide-title: AEM Forms 비디오 및 튜토리얼
 user-guide-description: 초보자 및 숙련된 AEM Forms 개발자를 위한 AEM Forms 리소스 모음입니다.
 breadcrumb-title: AEM Forms 튜토리얼
 index: y
-source-git-commit: cb5b3eb77a57fa8a2918710b7dbcd1b0a58b74bd
+source-git-commit: f4e86059d29acf402de5242f033a25f913febf36
 workflow-type: tm+mt
-source-wordcount: '1671'
+source-wordcount: '1676'
 ht-degree: 3%
 
 ---
@@ -76,6 +76,7 @@ ht-degree: 3%
    + [양식 데이터 모델 서비스 호출의 결과로 테이블 채우기](adaptive-forms/populatetable.md)
    + [워크플로우 주석 캡처](adaptive-forms/capturing-workflow-comments-aem-workflow-article.md)
    + [DB에 제출된 양식 데이터 저장](adaptive-forms/storing-adaptive-form-data-in-db.md)
+   + [DB에 양식 첨부 파일 삽입](adaptive-forms/inserting-form-attachment-in-db.md)
    + [AEM 6.4 Workflow의 양식 데이터 모델 서비스](adaptive-forms/form-data-model-service-as-step-in-workflow-video-use.md)
    + [양식 데이터 모델 서비스 단계의 오류 메시지 처리](adaptive-forms/handling-error-messages-in-invoke-fdm-step.md)
    + [AEM 6.5.1 Workflow의 양식 데이터 모델 서비스](adaptive-forms/form-data-model-service-as-step-in-aem65-workflow-video-use.md)
@@ -173,7 +174,7 @@ ht-degree: 3%
    + [클라이언트 라이브러리](storing-retrieving-form-data/part4.md)
    + [적응형 양식 템플릿](storing-retrieving-form-data/part5.md)
    + [샘플 자산 배포](storing-retrieving-form-data/part6.md)
-+ Mobile 양식 제출에서 AEM 워크플로우 트리거{#offline-mobile-form-submission}
++ 모바일 양식 제출에서 AEM 워크플로우 트리거{#offline-mobile-form-submission}
    + [소개](offline-mobile-form-submission/introduction.md)
    + [사용자 지정 프로필](offline-mobile-form-submission/part-one.md)
    + [PDF 제출 처리](offline-mobile-form-submission/part-two.md)
@@ -211,8 +212,8 @@ ht-degree: 3%
    + [AEM Forms에서 PDFG 서비스 사용](document-services/using-pdfg-in-aem-forms.md)
    + [AEM Forms에서 출력 및 Forms 서비스 사용](document-services/output-and-forms-services-article-develop.md)
    + [하나의 데이터 파일에서 여러 pdf 생성](document-services/generate-multi-record-pdf.md)
-   + [Mobile 양식 제출에서 PDF 생성](document-services/generate-pdf-from-mobile-form-submission-article.md)
-   + [Mobile 양식에서 대화형 PDF 생성](document-services/render-interactive-form-using-api.md)
+   + [모바일 양식 제출 시 PDF 생성](document-services/generate-pdf-from-mobile-form-submission-article.md)
+   + [모바일 양식에서 대화형 PDF 생성](document-services/render-interactive-form-using-api.md)
    + [적응형 양식에서 대화형 DoR 생성](document-services/generate-interactive-dor.md)
    + [Reader 확장 자격 증명 구성](document-services/configuring-reader-extension-osgi.md)
    + [XDP 표현물의 PDF에 사용 권한 적용](document-services/rendering-and-reader-extending-xdp-templates-article.md)
