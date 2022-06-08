@@ -4,9 +4,9 @@ user-guide-description: Adobe Experience Manager as a Cloud Service를 위한 �
 breadcrumb-title: AEM as a Cloud Service 튜토리얼
 sub-product: cloud-service
 team: TM
-source-git-commit: 726cf83f3cabe46c12abb79288368407ebf4d525
+source-git-commit: 45061581322e23efb936e91c11be48ceac64183b
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '763'
 ht-degree: 22%
 
 ---
@@ -82,6 +82,8 @@ ht-degree: 22%
       + [작성 및 배포](./debugging/cloud-service/build-and-deployment.md)
       + [개발자 콘솔](./debugging/cloud-service/developer-console.md)
       + [저장소 브라우저](./debugging/cloud-service/repository-browser.md)
+      + 위험{#risks}
+         + [탐색 경고](./debugging/cloud-service/risks/traversals.md)
 + AEM 액세스{#accessing}
    + [개요](./accessing/overview.md)
    + [Adobe IMS 사용자](./accessing/adobe-ims-users.md)
