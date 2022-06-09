@@ -5,10 +5,10 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: e2fabf7c-7fda-4391-ae77-709aa9f7dc0a
-source-git-commit: 85e00a237c09867247a0b3ccffa0bf843826ee26
+source-git-commit: 59bcd6f2501b324222de7e68f2f7c311cb595788
 workflow-type: tm+mt
-source-wordcount: '340'
-ht-degree: 2%
+source-wordcount: '360'
+ht-degree: 1%
 
 ---
 
@@ -44,17 +44,19 @@ AEM Engineering의 시즌2의 클라우드 5 시리즈에 오신 것을 환영�
                 경험과 컨텐츠 조각 간의 차이점을 다채로운 방식으로 살펴봅니다. 스포일러: 모두가 이기죠
             </p>
         </td>   
-     <td>
-         <img alt="저장소 현대화 도구" src="./imgs/coming-soon.png"/>
-      <div>
-         <strong>Repository Modernizer</strong>
-         <br/><em>Darin Muntze &amp; James Talbot과 함께, 수석 클라우드 설계자</em>
-      </div>
-      <p>
-        <br/>
-         2022년 6월 10일 출시
-      </p>
-   </td>
+         <td>
+            <a href="season-2/cloud5-repo-modernizer.md">
+                 <img alt="저장소 현대화 도구" src="./imgs/s2/001-thumb.png"/>
+            </a>
+            <div>
+                <a href="season-2/cloud5-repo-modernizer.md"><strong>Repository Modernizer</strong></a> 
+               <br/><em>Darin Muntze &amp; James Talbot과 함께, 수석 클라우드 설계자</em>
+            </div>
+            <p>
+                <br/>
+                Repository Modernizer를 사용하여 기존 프로젝트 패키지를 AEM as a cloud service와 호환되는 개별 패키지로 재구성하는 방법에 대한 빠른 통찰력을 제공합니다.
+            </p>
+         </td>
      <td>
             <img alt="Admin Console" src="./imgs/coming-soon.png"/>
       <div>
