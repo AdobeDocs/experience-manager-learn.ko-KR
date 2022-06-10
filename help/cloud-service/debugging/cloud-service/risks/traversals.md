@@ -10,15 +10,18 @@ hidefromtoc: true
 hide: true
 index: false
 thumbnail: kt-10427.jpg
-source-git-commit: 45061581322e23efb936e91c11be48ceac64183b
+exl-id: 8fcc9364-b84c-4458-82e2-66b47429cd4b
+source-git-commit: d30641b3a9565dd3b7121dfdf6b6969a2b401e92
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '834'
 ht-degree: 5%
 
 ---
 
-
 # 순회 경고
+
+>[!TIP]
+>나중에 참조할 수 있도록 이 페이지에 책갈피를 지정 합니다.
 
 _순회 경고란 무엇입니까?_
 
@@ -271,5 +274,3 @@ AEM 인덱스, 검색 및 순회 경고를 이해하려면 이러한 다른 유�
 </div>
 
 </div>
-
-
