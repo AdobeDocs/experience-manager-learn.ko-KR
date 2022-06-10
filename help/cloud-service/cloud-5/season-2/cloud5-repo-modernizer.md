@@ -8,14 +8,14 @@ thumbnail: 342865.jpeg
 hidefromtoc: true
 recommendations: noDisplay, noCatalog
 exl-id: de4c2a3b-e5a3-4b2c-aaa0-c0f7028dd61e
-source-git-commit: 726cf83f3cabe46c12abb79288368407ebf4d525
+source-git-commit: 87d19ba3388b4a2ac3db1d2cf3838ed12dbbd2bc
 workflow-type: tm+mt
-source-wordcount: '59'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# 클라우드 5 - 조각
+# Cloud 5 - Repository Modernizer
 
 이 두 사람은 Repository Modernizer를 사용하여 AEM이 작동하는 방식과 그 이유에 대한 유용한 개요를 사용하여 as a Cloud Service으로 전환하는 방법을 살펴봅니다.
 
