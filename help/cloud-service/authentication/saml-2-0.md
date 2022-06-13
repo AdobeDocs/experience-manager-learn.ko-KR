@@ -9,9 +9,9 @@ level: Intermediate
 kt: 9351
 thumbnail: 343040.jpeg
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
-source-git-commit: f2b5adea71ec8e772385b6e0ae068369798030e0
+source-git-commit: 6d5a531f44414887e8dc6568fa6f5dcb73bfb183
 workflow-type: tm+mt
-source-wordcount: '2774'
+source-wordcount: '2815'
 ht-degree: 1%
 
 ---
@@ -399,9 +399,14 @@ IDP에 대한 인증이 성공하면 IDP는 HTTP POST을 다시 등록된 AEM에
 
 Apache 웹 서버에서 URL이 재작성되도록 구성된 경우(`dispatcher/src/conf.d/rewrites/rewrite.rules`)에 대한 요청이 `.../saml_login` 엔드포인트는 실수로 망쳐지지 않습니다.
 
-## 데이터 동기화 활성화
+## 데이터 동기화 및 캡슐화 토큰 활성화
 
-SAML 인증 플로우가 AEM 게시에서 사용자를 만든 후 AEM 게시 계층에서 사용자 레코드를 동기화해야 합니다. 종료 [데이터 동기화 활성화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html#data-synchronization)를 통해 고객 지원 Adobe에 요청을 보냅니다. [AdminConsole](https://adminconsole.adobe.com) > 지원)을 활성화하도록 요청합니다.
+SAML 인증 플로우가 AEM 게시에서 사용자를 만들면 AEM 사용자 노드는 AEM 게시 서비스 계층에서 인증될 수 있습니다.
+이를 위해서는 [데이터 동기화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html#data-synchronization) 및 [캡슐화된 토큰](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html#sticky-sessions-and-encapsulated-tokens) AEM 게시 서비스의 Adobe 지원 을 통해 활성화될 예정입니다.
+
+고객 지원 Adobe(을 통해)에 요청 보내기 [AdminConsole](https://adminconsole.adobe.com) > 지원) 요청:
+
+> 데이터 동기화 및 캡슐화된 토큰은 프로그램 X 및 환경 Y용 AEM 게시 서비스에서 활성화됩니다.
 
 ## SAML 구성 배포
 
