@@ -5,9 +5,9 @@ user-guide-title: AEM Forms 비디오 및 튜토리얼
 user-guide-description: 초보자 및 숙련된 AEM Forms 개발자를 위한 AEM Forms 리소스 모음입니다.
 breadcrumb-title: AEM Forms 튜토리얼
 index: y
-source-git-commit: f4e86059d29acf402de5242f033a25f913febf36
+source-git-commit: 2cb08c584cb8dce27fd74314d7eba69ef4f8a875
 workflow-type: tm+mt
-source-wordcount: '1676'
+source-wordcount: '1680'
 ht-degree: 3%
 
 ---
@@ -68,7 +68,7 @@ ht-degree: 3%
    + [규칙 편집기에 대한 액세스 제한](adaptive-forms/restricting-rule-editor-aem-forms-technical-video-use.md)
    + [테마 편집기 개선 사항](adaptive-forms/theme-editor-improvements-feature-video-use.md)
    + [양식 편집기 개선 사항](adaptive-forms/form-editor-improvements-feature-video-use.md)
-   + [응용 Forms 비디오의 자동화된 테스트](adaptive-forms/calvin-sdk-test-adaptive-forms-feature-video.md)
+   + [적응형 Forms의 자동화된 테스트](adaptive-forms/calvin-sdk-test-adaptive-forms-feature-video.md)
    + [적응형 Forms의 자동화된 테스트](adaptive-forms/calvin-sdk-test-adaptive-forms-article-use.md)
    + [LDAP와 AEM Forms 통합](adaptive-forms/aem-forms-workflow-with-ldap-article-use.md)
    + [AEM Forms에서 서비스 사용자 사용](adaptive-forms/service-user-tutorial-develop.md)
@@ -77,6 +77,8 @@ ht-degree: 3%
    + [워크플로우 주석 캡처](adaptive-forms/capturing-workflow-comments-aem-workflow-article.md)
    + [DB에 제출된 양식 데이터 저장](adaptive-forms/storing-adaptive-form-data-in-db.md)
    + [DB에 양식 첨부 파일 삽입](adaptive-forms/inserting-form-attachment-in-db.md)
+   + [데이터 소스 구성 수정](adaptive-forms/modify-data-source-configuration-settings-article.md)
+   + [양식 데이터 모델 속성 재정의](adaptive-forms/override-fdm-values.md)
    + [AEM 6.4 Workflow의 양식 데이터 모델 서비스](adaptive-forms/form-data-model-service-as-step-in-workflow-video-use.md)
    + [양식 데이터 모델 서비스 단계의 오류 메시지 처리](adaptive-forms/handling-error-messages-in-invoke-fdm-step.md)
    + [AEM 6.5.1 Workflow의 양식 데이터 모델 서비스](adaptive-forms/form-data-model-service-as-step-in-aem65-workflow-video-use.md)
@@ -89,7 +91,6 @@ ht-degree: 3%
    + [양식 데이터 모델을 사용하여 AEM DAM에 이진 데이터 게시](adaptive-forms/form-data-model-to-post-binary-data-tutorial-use.md)
    + [재사용 가능 워크플로우 모델 만들기](adaptive-forms/re-usable-aem-forms-workflow-models-article.md)
    + [사용자 지정 프로세스 단계 AEM 워크플로우](adaptive-forms/custom-process-step-aem-workflow.md)
-   + [데이터 소스 구성 수정](adaptive-forms/modify-data-source-configuration-settings-article.md)
    + [HTML 5 Forms 미리 채우기](adaptive-forms/prepopulating-html5-forms-in-aem-forms-article.md)
    + [Salesforce를 사용한 양식 데이터 모델](adaptive-forms/using-adaptive-forms-with-sales-force-integration-tutorial.md)
    + [선택 구성 요소에 동적으로 항목 추가](adaptive-forms/choice-group-items-adding-dynamically-article.md)
