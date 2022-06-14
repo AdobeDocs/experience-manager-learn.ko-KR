@@ -1,18 +1,18 @@
 ---
 title: AEM Sites에서 연결된 자산 사용
 description: 연결된 자산 기능을 사용하여 AEM Sites 작성자는 AEM의 다른 인스턴스에서 호스팅되는 디지털 자산을 원활하게 공유할 수 있습니다.
-feature: 연결된 자산
+feature: Connected Assets
 version: 6.5
-topic: 컨텐츠 관리
+topic: Content Management
 role: Developer
 level: Intermediate
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 2eceb65f-362a-48e1-a8c6-e9f6954dc2a0
+source-git-commit: cdbfe994009437962385c7fe45698df9eead5ce4
 workflow-type: tm+mt
-source-wordcount: '105'
-ht-degree: 3%
+source-wordcount: '102'
+ht-degree: 0%
 
 ---
-
 
 # AEM Assets에서 연결된 자산 사용{#using-connected-assets-with-aem-assets}
 
@@ -25,4 +25,4 @@ ht-degree: 3%
 * 03:30 — 연결된 자산의 이미지 사용
 * 04:42 — 연결된 자산 기능을 활성화하기 위한 관리자 구성
 
-AEM 배포에서 연결된 자산을 지원할 수 있는지 확인하려면 연결된 자산에 대해 지원되는 배포 [을(를) 검토하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html#prerequisites)
+다음 문서를 검토하십시오 [연결된 자산에 대해 지원되는 배포](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html#prerequisites) AEM 배포에서 연결된 자산을 지원할 수 있는지 이해하기 위해 .

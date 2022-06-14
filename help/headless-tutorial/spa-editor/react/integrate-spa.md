@@ -10,7 +10,7 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 31416399-6a4e-47d1-8ed8-be842a01a727
-source-git-commit: 25a1a40f42d37443db9edc0e09b1691b1c19e848
+source-git-commit: 415ad1266925525a6b0954b4515bae3d152bb6ec
 workflow-type: tm+mt
 source-wordcount: '1840'
 ht-degree: 0%
@@ -128,7 +128,7 @@ AEM 프로젝트의 일부로 두 개의 모듈이 생성되었습니다. `ui.ap
 
    `index.js` 는 SPA의 시작점입니다. `ModelManager` 는 AEM SPA Editor JS SDK에서 제공합니다. 호출 및 주입 책임은 다음과 같습니다 `pageModel` (JSON 콘텐츠)를 애플리케이션에 추가합니다.
 
-1. Inspect 파일 `import-component.js` at `ui.frontend/src/import-components.js`. 이 파일은 즉시 가져옵니다 **React 코어 구성 요소** 프로젝트에 사용할 수 있도록 합니다. 다음 장에서는 AEM 컨텐츠가 SPA 구성 요소에 매핑되는지 검사합니다.
+1. Inspect 파일 `import-components.js` at `ui.frontend/src/components/import-components.js`. 이 파일은 즉시 가져옵니다 **React 코어 구성 요소** 프로젝트에 사용할 수 있도록 합니다. 다음 장에서는 AEM 컨텐츠가 SPA 구성 요소에 매핑되는지 검사합니다.
 
 ## 정적 SPA 구성 요소 추가 {#static-spa-component}
 
