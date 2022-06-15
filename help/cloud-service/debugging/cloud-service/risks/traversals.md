@@ -11,9 +11,9 @@ hide: true
 index: false
 thumbnail: kt-10427.jpg
 exl-id: 8fcc9364-b84c-4458-82e2-66b47429cd4b
-source-git-commit: d30641b3a9565dd3b7121dfdf6b6969a2b401e92
+source-git-commit: 48943df64d9793066f8f19497ef42f8aa80e5795
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '838'
 ht-degree: 5%
 
 ---
@@ -199,7 +199,7 @@ AEM 인덱스, 검색 및 순회 경고를 이해하려면 이러한 다른 유�
                <p class="headline is-size-6 has-text-weight-bold"><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-search-and-indexing.html" title="Cloud 5 - 검색 및 색인 지정">Cloud 5 - 검색 및 색인 지정</a></p>
                <p class="is-size-6">Cloud 5 팀에서는 AEM as a Cloud Service에서 검색 및 색인 생성에 대한 세부 사항을 살펴봅니다.</p>
                <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-search-and-indexing.html" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">보기</span>
+                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">추가 정보</span>
                </a>
            </div>
        </div>
@@ -222,7 +222,7 @@ AEM 인덱스, 검색 및 순회 경고를 이해하려면 이러한 다른 유�
                <p class="headline is-size-6 has-text-weight-bold"><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html" title="콘텐츠 검색 및 색인 지정">콘텐츠 검색 및 색인 지정 설명서</a></p>
                <p class="is-size-6">AEM as a Cloud Service에서 인덱스를 만들고 관리하는 방법을 알아봅니다.</p>
                <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">보기</span>
+                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">추가 정보</span>
                </a>
            </div>
        </div>
@@ -244,7 +244,7 @@ AEM 인덱스, 검색 및 순회 경고를 이해하려면 이러한 다른 유�
                <p class="headline is-size-6 has-text-weight-bold"><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/search-and-indexing.html" title="Oak 색인 현대화">Oak 색인 현대화</a></p>
                <p class="is-size-6">AEM 6 Oak 색인 정의를 AEM as a Cloud Service 호환으로 변환하고 인덱스를 계속 유지하는 방법을 알아봅니다.</p>
                <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/search-and-indexing.html" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">보기</span>
+                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">추가 정보</span>
                </a>
            </div>
        </div>
@@ -266,7 +266,7 @@ AEM 인덱스, 검색 및 순회 경고를 이해하려면 이러한 다른 유�
                <p class="headline is-size-6 has-text-weight-bold"><a href="https://jackrabbit.apache.org/oak/docs/query/lucene.html" title="색인 정의 설명서">Lucene 색인 설명서</a></p>
                <p class="has-ellipsis is-size-6">Apache Oak Jackrabbit Lucene 색인 참조는 지원되는 모든 Lucene 인덱스 구성을 문서화하는 데 사용됩니다.</p>
                <a href="https://jackrabbit.apache.org/oak/docs/query/lucene.html" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">보기</span>
+                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">추가 정보</span>
                </a>
            </div>
        </div>
