@@ -6,7 +6,7 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 5fa3d52a-6a71-45c4-9b1a-0e6686dd29bc
-source-git-commit: f1afccdad8d819604c510421204f59e7b3dc68e4
+source-git-commit: c462d48d26c9a7aa0e4cfc4f24005b41e8e82cb8
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 1%
@@ -19,18 +19,18 @@ ht-degree: 1%
 
 이전 버전의 Adobe Experience Manager(AEM)에서는 저장소에 액세스해야 하는 백엔드 처리에 관리 리소스 확인자가 사용되었습니다. 관리 리소스 확인자 사용은 AEM 6.3에서 더 이상 사용되지 않습니다. 대신 저장소에서 특정 권한이 있는 시스템 사용자가 사용됩니다.
 
-AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/advanced/service-users.html)에서 서비스 사용자를 만들고 사용하는 세부 사항에 대해 자세히 알아보십시오.[
+세부 사항에 대해 자세히 알아보기 [AEM에서 서비스 사용자 생성 및 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/advanced/service-users.html).
 
 이 문서에서는 시스템 사용자 생성 및 사용자 매퍼 속성 구성에 대해 설명합니다.
 
-1. [http://localhost:4502/crx/explorer/index.jsp](http://localhost:4502/crx/explorer/index.jsp)로 이동합니다.
+1. 다음으로 이동 [http://localhost:4502/crx/explorer/index.jsp](http://localhost:4502/crx/explorer/index.jsp)
 1. &#39; 관리자 &#39;(으)로 로그인합니다.
 1. &#39; 사용자 관리 &#39; 를 클릭합니다.
 1. &#39; 시스템 사용자 만들기 &#39; 를 클릭합니다.
 1. userid 유형을 &#39; data &#39; 로 설정하고 녹색 아이콘을 클릭하여 시스템 사용자 생성 프로세스를 완료합니다
 1. [configMgr 열기](http://localhost:4502/system/console/configMgr)
-1. &#39; Apache Sling Service User Mapper Service &#39; 를 검색하고 클릭하여 속성을 엽니다.
-1. *+* 아이콘(더하기)을 클릭하여 다음 서비스 매핑을 추가합니다
+1. 검색 대상 _Apache Sling Service User Mapper Service_ 를 클릭하여 속성을 엽니다
+1. 을(를) 클릭합니다. *+* 아이콘(더하기)을 클릭하여 다음 서비스 매핑을 추가합니다.
 
    * DevelopingWithServiceUser.core:getresourceresolver=data
    * DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
@@ -42,14 +42,14 @@ AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-serv
 fd 서비스 사용자를 대신하여 리소스 확인자를 가져올 수도 있습니다. 이 서비스 사용자는 문서 서비스에 사용됩니다. 예를 들어 사용 권한 등을 인증/적용하려면 fd 서비스 사용자의 리소스 확인자를 사용하여 작업을 수행합니다
 
 1. [이 문서와 연결된 zip 파일을 다운로드하여 압축을 해제합니다.](assets/developingwithserviceuser.zip)
-1. [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)로 이동합니다.
+1. 다음으로 이동 [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
 1. OSGi 번들을 업로드하고 시작합니다
 1. 번들이 활성 상태인지 확인합니다.
-1. 이제 *시스템 사용자*&#x200B;를 만들고 *서비스 사용자 번들*&#x200B;도 배포했습니다.
+1. 이제 을(를) 생성했습니다. *시스템 사용자* 또한 *서비스 사용자 번들*.
 
    /content에 대한 액세스 권한을 제공하려면 시스템 사용자(&#39; 데이터 &#39;)에게 컨텐츠 노드에 대한 읽기 권한을 제공합니다.
 
-   1. [http://localhost:4502/useradmin](http://localhost:4502/useradmin)로 이동합니다.
+   1. 다음으로 이동 [http://localhost:4502/useradmin](http://localhost:4502/useradmin)
    1. &#39; 데이터 &#39; 사용자를 검색합니다. 이전 단계에서 만든 시스템 사용자와 동일합니다.
    1. 사용자를 두 번 클릭한 다음 &#39; 권한 &#39; 탭을 클릭합니다
    1. &#39;content&#39; 폴더에 대한 &#39; 읽기 &#39; 액세스 권한을 제공합니다.
