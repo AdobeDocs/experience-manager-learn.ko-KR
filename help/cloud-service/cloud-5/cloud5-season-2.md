@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: e2fabf7c-7fda-4391-ae77-709aa9f7dc0a
-source-git-commit: 59bcd6f2501b324222de7e68f2f7c311cb595788
+source-git-commit: 7985a5b36523aa090a7a9c7599e36bc1b5a9bd6f
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '375'
 ht-degree: 1%
 
 ---
@@ -57,17 +57,19 @@ AEM Engineering의 시즌2의 클라우드 5 시리즈에 오신 것을 환영�
                 Repository Modernizer를 사용하여 기존 프로젝트 패키지를 AEM as a cloud service와 호환되는 개별 패키지로 재구성하는 방법에 대한 빠른 통찰력을 제공합니다.
             </p>
          </td>
-     <td>
-            <img alt="Admin Console" src="./imgs/coming-soon.png"/>
-      <div>
-            <strong>Admin Console</strong>
-         <br/><em>Darin Muntze &amp; James Talbot과 함께, 수석 클라우드 설계자</em>
-      </div>
-      <p>
-        <br/>
-         2022년 6월 16일 출시
-      </p>
-   </td> 
+         <td>
+            <a href="season-2/cloud5-admin-console.md">
+                 <img alt="Admin Console" src="./imgs/s2/002-thumb.png"/>
+            </a>
+            <div>
+                  <a href="season-2/cloud5-admin-console.md"><strong>Admin Console</strong></a>
+               <br/><em>Darin Muntze &amp; James Talbot과 함께, 수석 클라우드 설계자</em>
+            </div>
+            <p>
+            <br/>
+               Darin과 James는 Admin Console, 프로비저닝 및 액세스에 대해 사람들이 알고 있어야 하는 몇 가지 일반적인 사항에 대해 설명합니다.
+            </p>
+         </td> 
   </tr>
   <tr>
    <td>
