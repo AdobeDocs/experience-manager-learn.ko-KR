@@ -8,7 +8,8 @@ topic: Development
 role: Developer
 level: Intermediate
 kt: 10537
-source-git-commit: c462d48d26c9a7aa0e4cfc4f24005b41e8e82cb8
+exl-id: 570de1e6-7221-4b8d-b226-a43317bfc166
+source-git-commit: d38f970b1c32884189b0864f8f8bb3b7006a0a7f
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 0%
@@ -30,4 +31,3 @@ AEM Forms 6.5.13에서는 다른 서비스 종단점에 대해 양식 데이터 
 >[!NOTE]
 >이 비디오에 나와 있는 기능을 사용하려면 AEM Forms 6.5.13이 필요합니다
 >[!VIDEO](https://video.tv.adobe.com/v/343762?quality=9&learn=on)
-
