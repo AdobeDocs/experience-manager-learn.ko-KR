@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: e2fabf7c-7fda-4391-ae77-709aa9f7dc0a
-source-git-commit: 7985a5b36523aa090a7a9c7599e36bc1b5a9bd6f
+source-git-commit: e10617d81287a291d16aed3400ef0c01266586e6
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '394'
 ht-degree: 1%
 
 ---
@@ -72,17 +72,19 @@ AEM Engineering의 시즌2의 클라우드 5 시리즈에 오신 것을 환영�
          </td> 
   </tr>
   <tr>
-   <td>
-            <img alt="Sling 작업" src="./imgs/coming-soon.png"/>
-      <div>
-            <strong>Sling 작업</strong>       
-         <br/><em>Darin Muntze &amp; James Talbot과 함께, 수석 클라우드 설계자</em>
-      </div>
-      <p>
-        <br/>
-         2022년 6월 24일 출시
-      </p>
-     </td>   
+         <td>
+            <a href="season-2/cloud5-sling-job-scheduler.md">
+                 <img alt="Sling 작업" src="./imgs/s2/003-thumb.png"/>
+            </a>
+            <div>
+                  <a href="season-2/cloud5-sling-job-scheduler.md"><strong>Sling 작업</strong></a>
+               <br/><em>Darin Muntze &amp; James Talbot과 함께, 수석 클라우드 설계자</em>
+            </div>
+            <p>
+            <br/>
+               Darin과 James는 AEM as a cloud service에서 일자리 일정과 소비를 보기 위해 과제 및 사항에 대해 토론합니다.
+            </p>
+         </td>   
      <td>
         <img alt="리포지토리 이니셜라이저(포인터)" src="./imgs/coming-soon.png"/>
       <div>
