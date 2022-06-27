@@ -9,9 +9,9 @@ kt: 9720
 thumbnail: 340333.jpeg
 hidefromtoc: false
 exl-id: 520a75cd-757a-4ae9-acf6-3c1f5e1f3747
-source-git-commit: 485f968e6f8c508b5e81c54e03ca17996e4c1b63
+source-git-commit: 49707940e1a980ade97dab82270ab1263bef94d8
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '109'
 ht-degree: 0%
 
 ---
@@ -28,4 +28,4 @@ _3부 [Workfront for Experience Manager enhanced connector의 4가지 전문가 
 
 ## 수정 사항
 
-+ __@ 4:34__ AEM 태그 구문이 잘못되었습니다. 비디오 표시 `we-retail:apparel/footwear`. 올바른 구문은 다음과 같습니다. `["we-retail:apparel/footwear"]` 일반적으로 `["namespace:tag/childtag"]`.
++ __@ 4:34 및 6:20__ AEM 태그 구문이 잘못되었습니다. 비디오 표시 `we-retail:apparel/footwear`. 올바른 구문은 다음과 같습니다. `["we-retail:apparel/footwear"]` 일반적으로 `["namespace:tag/childtag"]`.

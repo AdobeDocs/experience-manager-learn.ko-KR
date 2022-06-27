@@ -9,10 +9,10 @@ level: Intermediate
 kt: 9165
 thumbnail: 337960.jpeg
 exl-id: 40bb55f9-011d-4261-9f44-b1104a591252
-source-git-commit: 71f1d32c12742cdb644dec50050d147395c3f3b6
+source-git-commit: 7cfc150989453eec776eb34eac9b4598c46b0d7c
 workflow-type: tm+mt
-source-wordcount: '152'
-ht-degree: 1%
+source-wordcount: '224'
+ht-degree: 5%
 
 ---
 
@@ -45,6 +45,23 @@ AEM Sites용 사이트 맵을 만들어 SEO를 높이는 방법을 알아봅니�
   "searchPath": "/content/wknd"
 }
 ```
+
+### 절대 사이트 맵 URL
+
+AEM 사이트 맵은 [Sling 매핑](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html). 이 작업은 사이트 맵을 생성하는 AEM 서비스에 매핑 노드를 만들어 수행됩니다.
+
+Sling 매핑 노드 정의의 예 `https://wknd.com` 은(는) `/etc/map/https` 아래와 같이 변경하는 것을 의미합니다.
+
+| 경로 | 속성 이름 | 속성 유형 | 속성 값 |
+|------|----------|---------------|-------|
+| `/etc/map/https/wknd-site` | `jcr:primaryType` | 문자열 | `nt:unstructured` |
+| `/etc/map/https/wknd-site` | `sling:internalRedirect` | 문자열 | `/content/wknd/(.*)` |
+| `/etc/map/https/wknd-site` | `sling:match` | 문자열 | `wknd.com/$1` |
+
+아래 스크린샷에서는 유사한 구성을 보여주지만 `http://wknd.local` (에서 실행되는 로컬 호스트 이름 매핑) `http`).
+
+![Sitemap 절대 URL 구성](../assets/sitemaps/sitemaps-absolute-urls.jpg)
+
 
 ### Dispatcher 허용 필터 규칙
 
