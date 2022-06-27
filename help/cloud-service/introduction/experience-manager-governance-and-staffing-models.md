@@ -3,9 +3,9 @@ title: 거버넌스 및 스태핑 모델 및 원형
 description: Adobe Experience Manager(AEM) 플랫폼을 운영하고 노력을 최대한 활용할 수 있는 방법을 살펴볼 수 있습니다.
 solution: Experience Manager
 exl-id: 808ab7a6-5ec5-4bbd-9a6e-cfc0b447430d
-source-git-commit: 89982f506a5e1ffc12f84a0f616aaa1dc2e00c5b
+source-git-commit: 471f0fe940abb8241428beb14896d83e140136b3
 workflow-type: tm+mt
-source-wordcount: '1115'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -132,3 +132,5 @@ AEM을 실행 및 운영하기 위해서는 다음 요소를 고려하십시오.
 **내부 리소스 활용** &quot; 예기치 않게 틈새가 생길 수 있습니다. 조직 외부에서 검색하는 것과 대조적으로 내부 팀 구성원을 소싱하여 보다 신속하게 작성할 수 있습니다.
 
 거버넌스 및 스태핑 모델 및 원형 관리에 대해 자세히 알아보려면 1시간 동안 진행되는 이 패널 토론을 들어보십시오. [역할 원형 및 운영 프레임워크 생성 [!DNL AEM Assets] 및 [!DNL Sites]](https://adobecustomersuccess.adobeconnect.com/p8ml5nmy0758mp4/)
+
+Adobe Analytics Mobile Apps에서 전략 및 사고 리더십에 대해 자세히 알아보십시오 [고객 성공](https://experienceleague.corp.adobe.com/docs/customer-success/customer-success/overview.html) 허브.

@@ -3,9 +3,9 @@ title: AEM 스타일 시스템을 사용하여 컨텐츠 속도 향상
 description: AEM 스타일 시스템을 사용하여 조직의 디자이너, 콘텐츠 작성자 및 개발자가 고객이 기대하는 속도와 규모에 따라 경험을 만들고 게재하는 방법을 알아봅니다.
 solution: Experience Manager
 exl-id: 449cd133-6ab6-456e-a0ad-30e3dea9b75b
-source-git-commit: 89982f506a5e1ffc12f84a0f616aaa1dc2e00c5b
+source-git-commit: 471f0fe940abb8241428beb14896d83e140136b3
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -91,3 +91,5 @@ AEM 스타일 시스템의 4가지 주요 이점은 다음과 같습니다.
 마지막으로, 스타일 시스템의 사용은 과학보다 더 예술적입니다. 설명한 대로 여러 가지 우수 사례가 있지만, 조직의 설정을 사용자 지정하는 방법에 대해서는 유연합니다.
 
 자세한 내용은 [고객 성공 웨비나](https://adobecustomersuccess.adobeconnect.com/pob610c9mffjmp4/) 윌 브리즈번과 조셉 반 부시커크와 함께.
+
+Adobe Analytics Mobile Apps에서 전략 및 사고 리더십에 대해 자세히 알아보십시오 [고객 성공](https://experienceleague.corp.adobe.com/docs/customer-success/customer-success/overview.html) 허브.

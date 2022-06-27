@@ -3,9 +3,9 @@ title: Adobe Experience Manager을 사용하여 컨텐츠 속도를 높이는 �
 description: 엔터프라이즈 조직 내의 컨텐츠 속도 및 그 가치에 대해 알아봅니다. 효과적인 구현의 4가지 원칙과 이 과정에서 고려해야 할 문제점을 살펴보십시오.
 solution: Experience Manager
 exl-id: 9d2e05c3-c8eb-4d92-bad0-931e63550438
-source-git-commit: 89982f506a5e1ffc12f84a0f616aaa1dc2e00c5b
+source-git-commit: 471f0fe940abb8241428beb14896d83e140136b3
 workflow-type: tm+mt
-source-wordcount: '2805'
+source-wordcount: '2823'
 ht-degree: 0%
 
 ---
@@ -176,3 +176,5 @@ AEM Sites: 기본 실행 및 운영
 * 분산된 방식으로 솔루션 보기 예를 들어, AEM 구현의 기술적 측면에 솔루션을 초점을 맞추는 것은 전반적인 비즈니스 이점을 실현하지 못합니다. 대신 비즈니스 사용 사례 및 시나리오를 검토하고 아키텍처와 디자인에 참여하면 AEM 기능에 대한 더 많은 보기를 제공할 것을 권장합니다. Adobe 주식의 아누란다 펜타레디: _&quot;구현하고 있는 플랫폼에 대한 가치 목표를 미리 살펴보는 것이 좋습니다.&quot;_
 
 컨텐츠 속도에 대한 심도 있는 설명이 필요하면 이 1시간 동안 의견을 들어 보십시오 [패널 토론](https://primetime.bluejeans.com/a2m/events/playback/e63686d4-158f-4f73-aea0-f03ebee4606d) 모니크 미사히(T-모바일), 에이미 버그스트롬(델로이트), Adobe의 아누라다 펜타레디가 주연으로 했다.
+
+Adobe Analytics Mobile Apps에서 전략 및 사고 리더십에 대해 자세히 알아보십시오 [고객 성공](https://experienceleague.corp.adobe.com/docs/customer-success/customer-success/overview.html) 허브.
