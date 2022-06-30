@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: e2fabf7c-7fda-4391-ae77-709aa9f7dc0a
-source-git-commit: e10617d81287a291d16aed3400ef0c01266586e6
+source-git-commit: c3d3eae47c17a7efed15f14e98e2f3ded719cef0
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '407'
 ht-degree: 1%
 
 ---
@@ -84,18 +84,20 @@ AEM Engineering의 시즌2의 클라우드 5 시리즈에 오신 것을 환영�
             <br/>
                Darin과 James는 AEM as a cloud service에서 일자리 일정과 소비를 보기 위해 과제 및 사항에 대해 토론합니다.
             </p>
+         </td> 
+         <td>
+            <a href="season-2/cloud5-repoinit.md">
+                 <img alt="리포지토리 이니셜라이저(포인터)" src="./imgs/s2/004-thumb.png"/>
+            </a>
+            <div>
+                  <a href="season-2/cloud5-repoinit.md"><strong>Sling 저장소 이니셜라이저</strong></a>
+               <br/><em>Darin Muntze &amp; James Talbot과 함께, 수석 클라우드 설계자</em>
+            </div>
+            <p>
+            <br/>
+              리포인트인 Sling Repository Initializer를 사용하는 기능을 해제하는 몇 가지 방법을 알아봅니다.
+            </p>
          </td>   
-     <td>
-        <img alt="리포지토리 이니셜라이저(포인터)" src="./imgs/coming-soon.png"/>
-      <div>
-        <strong>리포지토리 이니셜라이저(포인터)</strong>
-         <br/><em>Darin Muntze &amp; James Talbot과 함께, 수석 클라우드 설계자</em>
-      </div>
-      <p>
-        <br/>
-            2022년 7월 1일 출시
-      </p>
-   </td>
      <td>
             <img alt="수정... 캐시" src="./imgs/coming-soon.png"/>
       <div>
