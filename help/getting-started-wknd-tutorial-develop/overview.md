@@ -1,6 +1,6 @@
 ---
-title: AEM Sites 시작하기 - WKND 튜토리얼
-description: AEM Sites 시작하기 - WKND 튜토리얼. WKND 자습서는 Adobe Experience Manager을 처음 사용하는 개발자를 위해 디자인된 여러 부분으로 된 자습서입니다. 이 자습서에서는 가상 라이프스타일 브랜드인 WKND에 대해 AEM 사이트를 구현하는 방법을 설명합니다. 이 자습서에서는 프로젝트 설정, maven 원형, 핵심 구성 요소, 편집 가능한 템플릿, 클라이언트 라이브러리 및 구성 요소 개발과 같은 기본 주제를 다룹니다.
+title: AEM Sites 시작하기 - WKND 자습서
+description: WKND라는 가상 라이프스타일 브랜드에 AEM 사이트를 구현하는 방법을 알아봅니다. 프로젝트 설정, maven 원형, 핵심 구성 요소, 편집 가능한 템플릿, 클라이언트 라이브러리 및 구성 요소 개발과 같은 기본 Experience Manager 주제에 대한 연습을 수행할 수 있습니다.
 sub-product: sites
 topics: development
 version: Cloud Service
@@ -16,20 +16,20 @@ role: Developer
 level: Beginner
 exl-id: 09a600f4-1ada-4fb7-ae44-586364cff389
 recommendations: disable
-source-git-commit: 04096fe3c99cdcce2d43b2b29899c2bbe37ac056
+source-git-commit: 72abe1cddcf6a012403887203d38509bde8f2d23
 workflow-type: tm+mt
-source-wordcount: '624'
-ht-degree: 6%
+source-wordcount: '599'
+ht-degree: 3%
 
 ---
 
-# AEM Sites 시작하기 - WKND 튜토리얼 {#introduction}
+# AEM Sites 시작하기 - WKND 자습서 {#introduction}
 
-AEM(Adobe Experience Manager)을 처음 사용하는 개발자를 위해 고안된 다양한 자습서를 시작합니다. 이 자습서에서는 가상 라이프스타일 브랜드인 WKND에 대한 AEM 사이트 구현을 안내합니다. 이 자습서에서는 프로젝트 설정, 코어 구성 요소, 편집 가능한 템플릿, 클라이언트측 라이브러리 및 Adobe Experience Manager Sites을 사용한 구성 요소 개발과 같은 기본 주제를 다룹니다.
+AEM(Adobe Experience Manager)을 처음 사용하는 개발자를 위해 고안된 다양한 자습서를 시작합니다. 이 자습서에서는 가상 라이프스타일 브랜드인 WKND에 대해 AEM 사이트를 구현하는 방법을 설명합니다. 이 자습서에서는 프로젝트 설정, 코어 구성 요소, 편집 가능한 템플릿, 클라이언트측 라이브러리 및 Adobe Experience Manager Sites을 사용한 구성 요소 개발과 같은 기본 주제를 다룹니다.
 
 ## 개요 {#wknd-tutorial-overview}
 
-이 다중 부분 자습서의 목표는 AEM(Adobe Experience Manager)의 최신 표준 및 기술을 사용하여 웹 사이트를 구현하는 방법을 개발자에게 가르치는 것입니다. 이 자습서를 완료하고 개발자는 플랫폼의 기본 기반을 이해하고 AEM의 일반적인 디자인 패턴을 알고 있어야 합니다.
+이 다중 부분 자습서의 목표는 AEM(Adobe Experience Manager)의 최신 표준 및 기술을 사용하여 웹 사이트를 구현하는 방법을 개발자에게 가르치는 것입니다. 이 자습서를 완료하고 개발자는 플랫폼의 기본 기반과 AEM의 일반적인 디자인 패턴을 이해해야 합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/30476?quality=12&learn=on)
 
