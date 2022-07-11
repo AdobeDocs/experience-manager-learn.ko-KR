@@ -2,7 +2,7 @@
 title: Android 앱 - AEM Headless 예
 description: 예제 애플리케이션은 AEM(Adobe Experience Manager)의 헤드리스 기능을 살펴보는 좋은 방법입니다. 이 Android 애플리케이션은 AEM의 GraphQL API를 사용하여 컨텐츠를 쿼리하는 방법을 보여줍니다.
 version: Cloud Service
-mini-toc-levels: 1
+mini-toc-levels: 2
 kt: 9166
 thumbnail: KT-9166.jpg
 feature: Content Fragments, GraphQL API
@@ -10,7 +10,7 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 7873e263-b05a-4170-87a9-59e8b7c65faa
-source-git-commit: 0204d9aaf7b79b0745adbe749f44245716203b88
+source-git-commit: 8b2c116ceb6ab8c3a009dcec6629c2e97d815b7b
 workflow-type: tm+mt
 source-wordcount: '765'
 ht-degree: 4%
@@ -26,7 +26,7 @@ ht-degree: 4%
 
 보기 [GitHub의 소스 코드](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/android-app)
 
-## 전제 조건 {#prerequisites}
+## 사전 요구 사항 {#prerequisites}
 
 다음 도구는 로컬에 설치해야 합니다.
 
@@ -136,7 +136,7 @@ query($slug: String!) {
         slug: {
           _expressions: [ { value: $slug } ]
         }
-  	}) {
+      }) {
     items {
       _path
       title
@@ -178,7 +178,7 @@ query($slug: String!) {
 }
 ```
 
-## GraphQL 지속적인 쿼리 실행
+### GraphQL 지속적인 쿼리 실행
 
 AEM 지속적인 쿼리는 HTTP GET을 통해 실행되므로 [Java용 AEM Headless 클라이언트](https://github.com/adobe/aem-headless-client-java) AEM에 대해 지속된 GraphQL 쿼리를 실행하고 모험 컨텐츠를 앱에 로드하는 데 사용됩니다.
 
