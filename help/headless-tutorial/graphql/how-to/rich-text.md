@@ -8,9 +8,9 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 exl-id: 790a33a9-b4f4-4568-8dfe-7e473a5b68b6
-source-git-commit: 22d5aa7299ceacd93771bd73a6b89d1903edc561
+source-git-commit: 68970493802c7194bcb3ac3ac9ee10dbfb0fc55d
 workflow-type: tm+mt
-source-wordcount: '1460'
+source-wordcount: '1463'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ AEM GraphQL API는 리치 텍스트를 HTML, 일반 텍스트 또는 순수 JSON
 
 >[!VIDEO](https://video.tv.adobe.com/v/342104/?quality=12&learn=on)
 
-컨텐츠 조각 편집기에서 여러 줄 텍스트 필드의 메뉴 막대는 작성자에게 다음과 같은 표준 리치 텍스트 형식 기능을 제공합니다 **굵게**, *기울임체*, 및 밑줄. 전체 화면 모드에서 여러 줄 필드를 열면 [단락 유형, 찾기 및 바꾸기, 맞춤법 검사 등과 같은 추가 서식 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-variations.html).
+컨텐츠 조각 편집기에서 여러 줄 텍스트 필드의 메뉴 막대는 작성자에게 다음과 같은 표준 서식 있는 텍스트 형식 기능을 제공합니다 **굵게**, *기울임체*, 및 밑줄. 전체 화면 모드에서 여러 줄 필드를 열면 [단락 유형, 찾기 및 바꾸기, 맞춤법 검사 등과 같은 추가 서식 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-variations.html).
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ AEM GraphQL API는 리치 텍스트를 HTML, 일반 텍스트 또는 순수 JSON
 
 ![여러 줄 리치 텍스트 데이터 유형](assets/rich-text/multi-line-rich-text.png)
 
-여러 줄 필드의 여러 속성을 구성할 수 있습니다.
+여러 줄 필드의 속성을 구성할 수 있습니다.
 
 다음 **렌더링** 속성을 다음과 같이 설정할 수 있습니다.
 
@@ -55,7 +55,7 @@ AEM GraphQL API는 리치 텍스트를 HTML, 일반 텍스트 또는 순수 JSON
 
 다음을 수행할 수도 있습니다 [인라인 참조 활성화](#insert-fragment-references) 을 눌러 다른 컨텐츠 조각에 **조각 참조 허용** 및 구성 **허용된 컨텐츠 조각 모델**.
 
-콘텐츠를 현지화하려면 **번역 가능** 상자. 리치 텍스트 및 일반 텍스트만 현지화할 수 있습니다. 자세한 내용은 [자세한 내용은 현지화된 콘텐츠로 작업](./localized-content.md).
+을(를) 확인합니다. **번역 가능** 상자(컨텐츠를 현지화할 경우) 리치 텍스트 및 일반 텍스트만 현지화할 수 있습니다. 자세한 내용은 [자세한 내용은 현지화된 콘텐츠로 작업](./localized-content.md).
 
 ## GraphQL API를 사용한 리치 텍스트 응답
 
@@ -63,17 +63,15 @@ GraphQL 쿼리를 만들 때 개발자는 `html`, `plaintext`, `markdown`, 및 `
 
 개발자는 [JSON 미리 보기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html) GraphQL API를 사용하여 반환할 수 있는 현재 컨텐츠 조각의 모든 값을 표시하려면 컨텐츠 조각 편집기에서 을 클릭합니다.
 
-### JSON 예
+## GraphQL 지속적인 쿼리
 
-다음 `json` 이 응답에서는 리치 텍스트 컨텐츠로 작업할 때 프런트 엔드 개발자에게 가장 유연한 대응이 제공됩니다. 리치 텍스트 컨텐츠는 클라이언트 플랫폼을 기반으로 고유하게 처리할 수 있는 JSON 노드 유형의 배열로 전달됩니다.
+선택 `json` 여러 줄 필드의 응답 형식은 리치 텍스트 컨텐츠를 사용할 때 가장 유연합니다. 리치 텍스트 컨텐츠는 클라이언트 플랫폼을 기반으로 고유하게 처리할 수 있는 JSON 노드 유형의 배열로 전달됩니다.
 
 다음은 이름이 인 여러 줄 필드의 JSON 응답 유형입니다 `main` 단락이 포함되어 있습니다. &quot;*이 단락은&#x200B;**중요**컨텐츠 배포.*&quot;중요&quot;가 **굵게**.
 
-**GraphQL 쿼리:**
-
 ```graphql
-{
-  articleByPath(_path: "/content/dam/wknd/en/magazine/sample-article")
+query ($path: String!) {
+  articleByPath(_path: $path)
   {
     item {
       _path
@@ -84,6 +82,8 @@ GraphQL 쿼리를 만들 때 개발자는 `html`, `plaintext`, `markdown`, 및 `
   }
 }
 ```
+
+다음 `$path` 변수를에서 `_path` 필터를 사용하려면 컨텐츠 조각의 전체 경로(예: `/content/dam/wknd/en/magazine/sample-article`).
 
 **GraphQL 응답:**
 
@@ -131,11 +131,11 @@ GraphQL 쿼리를 만들 때 개발자는 `html`, `plaintext`, `markdown`, 및 `
 
 +++HTML 예
 
-**GraphQL 쿼리:**
+**GraphQL 지속적인 쿼리:**
 
 ```graphql
-{
-  articleByPath(_path: "/content/dam/wknd/en/magazine/sample-article")
+query ($path: String!) {
+  articleByPath(_path: $path)
   {
     item {
       _path
@@ -168,11 +168,11 @@ GraphQL 쿼리를 만들 때 개발자는 `html`, `plaintext`, `markdown`, 및 `
 
 +++Markdown 예
 
-**GraphQL 쿼리:**
+**GraphQL 지속적인 쿼리:**
 
 ```graphql
-{
-  articleByPath(_path: "/content/dam/wknd/en/magazine/sample-article")
+query ($path: String!) {
+  articleByPath(_path: $path)
   {
     item {
       _path
@@ -205,11 +205,11 @@ GraphQL 쿼리를 만들 때 개발자는 `html`, `plaintext`, `markdown`, 및 `
 
 +++Plaintext 예
 
-**GraphQL 쿼리:**
+**GraphQL 지속적인 쿼리:**
 
 ```graphql
-{
-  articleByPath(_path: "/content/dam/wknd/en/magazine/sample-article")
+query ($path: String!) {
+  articleByPath(_path: $path)
   {
     item {
       _path
@@ -245,7 +245,7 @@ GraphQL 쿼리를 만들 때 개발자는 `html`, `plaintext`, `markdown`, 및 `
 
 ## 리치 텍스트 JSON 응답 렌더링 {#render-multiline-json-richtext}
 
-다중 라인 필드의 리치 텍스트 JSON 응답은 계층 트리로 구조화됩니다. 각 개체나 노드는 리치 텍스트의 다른 HTML 블록을 나타냅니다.
+여러 줄 필드의 리치 텍스트 JSON 응답은 계층 트리로 구조화됩니다. 각 개체나 노드는 리치 텍스트의 다른 HTML 블록을 나타냅니다.
 
 다음은 여러 줄 텍스트 필드의 샘플 JSON 응답입니다. 각 개체 또는 노드가 `nodeType` 과 같은 서식 있는 텍스트의 HTML 블록을 나타냅니다. `paragraph`, `link`, 및 `text`. 각 노드는 선택적으로 포함할 수 있습니다 `content` 현재 노드의 하위 노드를 포함하는 하위 배열입니다.
 
@@ -279,7 +279,7 @@ GraphQL 쿼리를 만들 때 개발자는 `html`, `plaintext`, `markdown`, 및 `
 ]
 ```
 
-여러 선을 렌더링하는 가장 쉬운 방법 `json` 응답에서 각 개체 또는 노드를 처리한 다음 현재 노드의 모든 하위를 처리하는 응답입니다. 재귀 함수를 사용하여 JSON 트리를 트래버스할 수 있습니다.
+여러 줄을 렌더링하는 가장 쉬운 방법 `json` 응답에서 각 개체 또는 노드를 처리한 다음 현재 노드의 모든 하위를 처리하는 응답입니다. 재귀 함수를 사용하여 JSON 트리를 트래버스할 수 있습니다.
 
 다음은 재귀 순회 방법을 보여주는 샘플 코드입니다. 샘플은 JavaScript 기반이며 React의 [JSX](https://reactjs.org/docs/introducing-jsx.html)그러나 프로그래밍 개념은 모든 언어에 적용할 수 있습니다.
 
@@ -298,7 +298,7 @@ function renderNodeList(childNodes) {
 }
 ```
 
-다음 `renderNodeList` 함수는 재귀 알고리즘의 시작점입니다. 다음 `renderNodeList` 함수에는 `childNodes`. 그런 다음 배열의 각 노드가 함수에 전달됩니다 `renderNode`.
+`renderNodeList` 는 `childNodes`. 그런 다음 배열의 각 노드가 함수에 전달됩니다 `renderNode`: 차례차례 호출 `renderNodeList` 노드에 1차 하위 구성요소가 있는 경우
 
 ```javascript
 // renderNode - renders an individual node
@@ -331,25 +331,25 @@ const nodeMap = {
 
 ### 전체 코드 예
 
-다시 사용할 수 있는 리치 텍스트 렌더링 유틸리티는 [WKND GraphQL React 예](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app).
+재사용 가능한 리치 텍스트 렌더링 유틸리티는 [WKND GraphQL React 예](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app).
 
-* [renderRichText.js](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app/src/utils/renderRichText.js) - 함수를 노출하는 재사용 가능한 유틸리티 `mapJsonRichText`. 이 유틸리티는 리치 텍스트 JSON 응답을 React JSX로 렌더링하려는 구성 요소에서 사용할 수 있습니다.
+* [renderRichText.js](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/react-app/src/utils/renderRichText.js) - 함수를 노출하는 재사용 가능한 유틸리티 `mapJsonRichText`. 이 유틸리티는 리치 텍스트 JSON 응답을 React JSX로 렌더링하려는 구성 요소에서 사용할 수 있습니다.
 * [AdventureDetail.js](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/react-app/src/components/AdventureDetail.js) - 리치 텍스트를 포함하는 GraphQL 요청을 만드는 예제 구성 요소입니다. 구성 요소는 `mapJsonRichText` 리치 텍스트 및 참조를 렌더링하는 유틸리티입니다.
 
 
 ## 리치 텍스트에 인라인 참조 추가 {#insert-fragment-references}
 
-여러 줄 필드를 사용하면 작성자가 리치 텍스트 흐름에서 AEM Assets의 이미지 또는 기타 디지털 자산을 삽입할 수 있습니다.
+뮤틸린 필드를 사용하면 작성자가 리치 텍스트 흐름에 AEM Assets의 이미지 또는 기타 디지털 자산을 삽입할 수 있습니다.
 
 ![이미지 삽입](assets/rich-text/insert-image.png)
 
-위의 스크린샷은 여러 줄 필드에 삽입된 이미지를 **자산 삽입** 버튼을 클릭합니다.
+위의 스크린샷은 **자산 삽입** 버튼을 클릭합니다.
 
 다른 컨텐츠 조각에 대한 참조는 를 사용하여 여러 줄 필드에 연결하거나 삽입할 수도 있습니다. **컨텐츠 조각 삽입** 버튼을 클릭합니다.
 
 ![컨텐츠 조각 참조 삽입](assets/rich-text/insert-contentfragment.png)
 
-위의 스크린샷에는 다른 컨텐츠 조각, LA Skate Parks에 대한 Ultimate Guide가 여러 라인 필드에 삽입되어 있는 것이 나와 있습니다. 필드에 삽입할 수 있는 컨텐츠 조각 유형은 **허용된 컨텐츠 조각 모델** 의 구성 [여러 줄 데이터 유형](#multi-line-data-type) 컨텐츠 조각 모델에서 을 참조하십시오.
+위의 스크린샷에는 다른 컨텐츠 조각, LA Skate Parks에 대한 Ultimate Guide가 여러 라인 필드에 삽입되어 있는 것이 나와 있습니다. 필드에 삽입할 수 있는 컨텐츠 조각 유형은 **허용된 컨텐츠 조각 모델** 의 구성 [다중 행 데이터 유형](#multi-line-data-type) 컨텐츠 조각 모델에서 을 참조하십시오.
 
 ## GraphQL을 사용하여 인라인 참조 쿼리
 
@@ -363,11 +363,11 @@ GraphQL API를 사용하면 개발자가 여러 줄 필드에 삽입된 참조�
 
 를 사용하십시오 `json` 반환 유형 및 포함 `_references` GraphQL 쿼리를 구성할 때 객체를 생성합니다.
 
-**GraphQL 쿼리:**
+**GraphQL 지속적인 쿼리:**
 
 ```graphql
-{
-  articleByPath(_path: "/content/dam/wknd/en/magazine/sample-article")
+query ($path: String!) {
+  articleByPath(_path: $path)
   {
     item {
       _path
@@ -540,7 +540,7 @@ const renderReference = {
 
 앞의 비디오에는 종단 간 예제가 표시됩니다.
 
-1. 컨텐츠 조각 모델의 다중 라인 텍스트 필드를 업데이트하여 조각 참조를 허용합니다
+1. 조각 참조를 허용하도록 컨텐츠 조각 모델의 다중 행 텍스트 필드 업데이트
 1. 컨텐츠 조각 편집기를 사용하여 여러 줄 텍스트 필드의 이미지와 다른 조각에 대한 참조를 포함합니다.
 1. 여러 줄 텍스트 응답을 JSON 및 모든 항목으로 포함하는 GraphQL 쿼리 만들기 `_references` 사용됩니다.
 1. 리치 텍스트 응답의 인라인 참조를 렌더링하는 React SPA을 작성합니다.

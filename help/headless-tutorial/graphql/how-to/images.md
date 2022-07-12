@@ -9,16 +9,16 @@ level: Intermediate
 kt: 10253
 thumbnail: KT-10253.jpeg
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
-source-git-commit: cca9ea744f938470b82b61d11269c1f9e8250bbe
+source-git-commit: 68970493802c7194bcb3ac3ac9ee10dbfb0fc55d
 workflow-type: tm+mt
-source-wordcount: '1084'
-ht-degree: 3%
+source-wordcount: '1155'
+ht-degree: 2%
 
 ---
 
 # AEM Headless를 사용한 이미지
 
-이미지는 [풍부하고 매력적인 AEM 헤드리스 경험 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=ko-KR). AEM Headless는 이미지 자산 관리 및 최적화된 전달을 지원합니다.
+이미지는 [풍부하고 매력적인 AEM 헤드리스 환경 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=ko-KR). AEM Headless는 이미지 자산 관리 및 최적화된 전달을 지원합니다.
 
 AEM Headless 컨텐츠 모델링에서 사용되는 컨텐츠 조각으로서, 종종 헤드리스 경험에 표시하기 위한 이미지 자산을 참조합니다. AEM GraphQL 쿼리는 이미지가 참조되는 위치를 기반으로 이미지에 URL을 제공하도록 작성할 수 있습니다.
 
@@ -34,7 +34,7 @@ AEM Headless 컨텐츠 모델링에서 사용되는 컨텐츠 조각으로서, �
 
 | ImageRef 필드 | AEM에서 제공되는 클라이언트 웹 앱 | 클라이언트 앱 쿼리 AEM 작성자 | 클라이언트 앱 쿼리 AEM 게시 |
 |--------------------|:------------------------------:|:-----------------------------:|:------------------------------:|
-| `_path` | ✔ | ✘ | ✘ |
+| `_path` | ✔ | ✔ (앱은 URL에 호스트를 지정해야 함) | ✔ (앱은 URL에 호스트를 지정해야 함) |
 | `_authorUrl` | ✘ | ✔ | ✘ |
 | `_publishUrl` | ✘ | ✘ | ✔ |
 
@@ -48,25 +48,28 @@ AEM Headless 컨텐츠 모델링에서 사용되는 컨텐츠 조각으로서, �
 
 ![이미지에 대한 컨텐츠 참조가 있는 컨텐츠 조각 모델](./assets/images/content-fragment-model.jpeg)
 
-## GraphQL 쿼리
+## GraphQL 지속적인 쿼리
 
-GraphQL 쿼리에서 필드를 `ImageRef` 을 입력하고 적절한 필드를 요청합니다 `_path`, `_authorUrl`, 또는 `_publishUrl` 애플리케이션에 필요합니다.
+GraphQL 쿼리에서 필드를 `ImageRef` 을 입력하고 적절한 필드를 요청합니다 `_path`, `_authorUrl`, 또는 `_publishUrl` 애플리케이션에 필요합니다. 예를 들어, [WKND 참조 데모 프로젝트](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-site.html) 이미지 자산 참조에 대한 이미지 URL을 포함합니다 `primaryImage` 필드, 새 지속적인 쿼리로 수행할 수 있습니다 `wknd-shared/adventure-image-by-path` 다음으로 정의:
 
-```javascript
-{
-  adventureByPath(_path: "/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp") {
+```graphql
+query ($path: String!) {
+  adventureByPath(_path: $path) {
     item {
-      adventurePrimaryImage {
+      title,
+      primaryImage {
         ... on ImageRef {
-          _path,
-          _authorUrl,
+          _path
+          _authorUrl
           _publishUrl
         }
       }
     }
-  }  
+  }
 }
 ```
+
+다음 `$path` 변수를에서 `_path` 필터를 사용하려면 컨텐츠 조각의 전체 경로(예: `/content/dam/wknd-shared/en/adventures/bali-surf-camp/bali-surf-camp`).
 
 ## GraphQL 응답
 
@@ -78,9 +81,9 @@ GraphQL 쿼리에서 필드를 `ImageRef` 을 입력하고 적절한 필드를 �
     "adventureByPath": {
       "item": {
         "adventurePrimaryImage": {
-          "_path": "/content/dam/wknd/en/adventures/bali-surf-camp/AdobeStock_175749320.jpg",
-          "_authorUrl": "https://author-p123-e456.adobeaemcloud.com/content/dam/wknd/en/adventures/bali-surf-camp/AdobeStock_175749320.jpg",
-          "_publishUrl": "https://publish-p123-e789.adobeaemcloud.com/content/dam/wknd/en/adventures/bali-surf-camp/AdobeStock_175749320.jpg"
+          "_path": "/content/dam/wknd-shared/en/adventures/bali-surf-camp/adobestock-175749320.jpg",
+          "_authorUrl": "https://author-p123-e456.adobeaemcloud.com/content/dam/wknd-shared/en/adventures/bali-surf-camp/adobestock-175749320.jpg",
+          "_publishUrl": "https://publish-p123-e789.adobeaemcloud.com/content/dam/wknd-shared/en/adventures/bali-surf-camp/adobestock-175749320.jpg"
         }
       }
     }
@@ -95,7 +98,7 @@ GraphQL 쿼리에서 필드를 `ImageRef` 을 입력하고 적절한 필드를 �
 React에서 AEM Publish의 이미지를 표시하는 모습은 다음과 같습니다.
 
 ```html
-<img src={ data.adventureByPath.item.adventurePrimaryImage._publishUrl } />
+<img src={ data.adventureByPath.item.primaryImage._publishUrl } />
 ```
 
 ## 이미지 표현물
@@ -132,7 +135,7 @@ AEM Assets 관리자는 처리 프로필을 사용하여 사용자 지정 표현
 
 #### 자산 재처리{#reprocess-assets}
 
-처리 프로필이 만들어지거나 업데이트되면, 자산을 재처리하여 처리 프로필에 정의된 새 변환을 생성합니다. 자산이 새 표현물로 처리되지 않는 경우 존재하지 않습니다.
+처리 프로필이 만들어지거나 업데이트되면, 자산을 재처리하여 처리 프로필에 정의된 새 변환을 생성합니다. 자산이 처리 프로필로 처리될 때까지 새 표현물이 존재하지 않습니다.
 
 + 바람직하게는, [폴더에 처리 프로필 지정](../../../assets/configuring//processing-profiles.md) 따라서 이 폴더에 업로드된 모든 새 자산은 자동으로 표현물을 생성합니다. 기존 자산은 아래의 임시 방법을 사용하여 다시 처리해야 합니다.
 
@@ -156,9 +159,9 @@ AEM Assets 관리자는 처리 프로필을 사용하여 사용자 지정 표현
 
 | 에셋 URL | 표현물 하위 경로 | 표현물 이름 | 표현물 확장 |  | 표현물 URL |
 |-----------|:------------------:|:--------------:|--------------------:|:--:|---|
-| https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpg | /_jcr_content/renditions/ | 큼 | .jpeg | → | https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpg/_jcr_content/renditions/large.jpeg |
-| https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpg | /_jcr_content/renditions/ | 중간 | .jpeg | → | https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpg/_jcr_content/renditions/medium.jpeg |
-| https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpg | /_jcr_content/renditions/ | 작음 | .jpeg | → | https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpg/_jcr_content/renditions/small.jpeg |
+| https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg | /_jcr_content/renditions/ | 큼 | .jpeg | → | https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg/_jcr_content/renditions/large.jpeg |
+| https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg | /_jcr_content/renditions/ | 중간 | .jpeg | → | https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg/_jcr_content/renditions/medium.jpeg |
+| https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg | /_jcr_content/renditions/ | 작음 | .jpeg | → | https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg/_jcr_content/renditions/small.jpeg |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -210,7 +213,7 @@ export default function Image({ assetUrl, renditionName, renditionExtension, alt
 
 간단합니다 `App.js` AEM에서 Adventure 이미지를 쿼리하고 이미지의 세 가지 표현물을 표시합니다. 작은, 중간, 큰
 
-AEM에 대한 쿼리는 사용자 지정 React 후크에서 수행됩니다 [AEM Headless SDK를 사용하는 useGraphQL](./aem-headless-sdk.md#graphql-queries).
+AEM에 대한 쿼리는 사용자 지정 React 후크에서 수행됩니다 [AEM Headless SDK를 사용하는 useAdventureByPath](./aem-headless-sdk.md#graphql-persisted-queries).
 
 쿼리의 결과 및 특정 표현물 매개 변수가 [Image React 구성 요소](#react-example-image-component).
 
@@ -218,29 +221,14 @@ AEM에 대한 쿼리는 사용자 지정 React 후크에서 수행됩니다 [AEM
 // src/App.js
 
 import "./App.css";
-import { useGraphQL } from "./useGraphQL";
+import { useAdventureByPath } from './api/persistedQueries'
 import Image from "./Image";
 
 function App() {
 
-  // The GraphQL that returns an image
-  const adventureQuery = `{
-        adventureByPath(_path: "/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp") {
-          item {
-            adventureTitle,
-            adventurePrimaryImage {
-              ... on ImageRef {
-                _path,
-                _authorUrl,
-                _publishUrl
-              }
-            }
-          }
-        }  
-    }`;
-
-  // Get data from AEM using GraphQL
-  let { data } = useGraphQL(adventureQuery);
+  // Get data from AEM using GraphQL persisted query as defined above 
+  // The details of defining a React useEffect hook are explored in How to > AEM Headless SDK
+  let { data, error } = useAdventureByPath("/content/dam/wknd-shared/en/adventures/bali-surf-camp/bali-surf-camp");
 
   // Wait for GraphQL to provide data
   if (!data) { return <></> }
@@ -251,10 +239,10 @@ function App() {
       <h2>Small rendition</h2>
       {/* Render the small rendition for the Adventure Primary Image */}
       <Image
-        assetUrl={data.adventureByPath.item.adventurePrimaryImage._publishUrl}
+        assetUrl={data.adventureByPath.item.primaryImage._publishUrl}
         renditionName="small"
         renditionExtension="jpeg"
-        alt={data.adventureByPath.item.adventureTitle}
+        alt={data.adventureByPath.item.title}
       />
 
       <hr />
@@ -262,10 +250,10 @@ function App() {
       <h2>Medium rendition</h2>
       {/* Render the medium rendition for the Adventure Primary Image */}
       <Image
-        assetUrl={data.adventureByPath.item.adventurePrimaryImage._publishUrl}
+        assetUrl={data.adventureByPath.item.primaryImage._publishUrl}
         renditionName="medium"
         renditionExtension="jpeg"
-        alt={data.adventureByPath.item.adventureTitle}
+        alt={data.adventureByPath.item.title}
       />
 
       <hr />
@@ -273,10 +261,10 @@ function App() {
       <h2>Large rendition</h2>
       {/* Render the large rendition for the Adventure Primary Image */}
       <Image
-        assetUrl={data.adventureByPath.item.adventurePrimaryImage._publishUrl}
+        assetUrl={data.adventureByPath.item.primaryImage._publishUrl}
         renditionName="large"
         renditionExtension="jpeg"
-        alt={data.adventureByPath.item.adventureTitle}
+        alt={data.adventureByPath.item.title}
       />
     </div>
   );
