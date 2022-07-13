@@ -9,9 +9,9 @@ level: Intermediate
 kt: 9351
 thumbnail: KT-9351.jpeg
 exl-id: 311cd70f-60d5-4c1d-9dc0-4dcd51cad9c7
-source-git-commit: a18bea7986062ff9cb731d794187760ff6e0339f
+source-git-commit: e9aeb54f0e2b52ad2d1cc914820bd6e232e509a0
 workflow-type: tm+mt
-source-wordcount: '1238'
+source-wordcount: '1146'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ Cloud Manager 프로그램은 __단일__ 네트워크 인프라 유형. 전용 �
 >
 > AEM as a Cloud Service 읽기 [고급 네트워크 구성 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html#dedicated-egress-IP-address) 전용 송신 IP 주소에 대한 자세한 내용
 
-## 전제 조건
+## 사전 요구 사항
 
 전용 송신 IP 주소를 설정할 때는 다음 사항이 필요합니다.
 
@@ -185,15 +185,7 @@ Cloud Manager 프로그램은 __단일__ 네트워크 인프라 유형. 전용 �
 
 ### HTTP/HTTPS
 
-AEM에서 HTTP/HTTPS 연결을 만들 때 전용 송신 IP 주소를 가져오려면 자리 표시자를 통해 제공된 특수 호스트 및 포트를 통해 연결을 만들어야 합니다.
-
-AEM에서는 AEM HTTP/HTTPS 프록시에 매핑되는 두 개의 특별한 Java™ 시스템 변수 세트를 제공합니다.
-
-| 변수 이름 | 사용 | Java™ 코드 | OSGi 구성 | Apache 웹 서버 mod_proxy 구성 | | - | - | - | - | - | | `AEM_HTTP_PROXY_HOST` | HTTP 연결을 위한 프록시 호스트 | `System.getenv("AEM_HTTP_PROXY_HOST")` | `$[env:AEM_HTTP_PROXY_HOST]` | `${AEM_HTTP_PROXY_HOST}` | | `AEM_HTTP_PROXY_PORT` | HTTP 연결을 위한 프록시 포트 | `System.getenv("AEM_HTTP_PROXY_PORT")` | `$[env:AEM_HTTP_PROXY_PORT]` |  `${AEM_HTTP_PROXY_PORT}` | | `AEM_HTTPS_PROXY_HOST` | HTTPS 연결용 프록시 호스트 | `System.getenv("AEM_HTTPS_PROXY_HOST")` | `$[env:AEM_HTTPS_PROXY_HOST]` | `${AEM_HTTPS_PROXY_HOST}` | | `AEM_HTTPS_PROXY_PORT` | HTTPS 연결용 프록시 포트 | `System.getenv("AEM_HTTPS_PROXY_PORT")` | `$[env:AEM_HTTPS_PROXY_PORT]` | `${AEM_HTTPS_PROXY_PORT}` |
-
-HTTP/HTTPS 외부 서비스에 대한 요청은 AEM 프록시 호스트/포트 값을 사용하여 Java™ HTTP 클라이언트의 프록시 구성을 구성하여 수행해야 합니다.
-
-포트에서 외부 서비스에 HTTP/HTTPS를 호출하는 경우 해당 서비스가 없습니다 `portForwards` Cloud Manager API를 사용하여 정의해야 합니다 `enableEnvironmentAdvancedNetworkingConfiguration` &quot;rules&quot;가 &quot;in code&quot;로 정의된 대로 작동합니다.
+AEM에서 HTTP/HTTPS 연결을 만들 때 전용 송신 IP 주소를 사용할 때 전용 송신 IP 주소를 사용하여 HTTP/HTTPS 연결이 AEM에서 자동으로 프록시됩니다. HTTP/HTTPS 연결을 지원하려면 추가 코드나 구성이 필요하지 않습니다.
 
 #### 코드 예
 
