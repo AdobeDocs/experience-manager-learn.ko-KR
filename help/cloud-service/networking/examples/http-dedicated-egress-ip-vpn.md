@@ -9,22 +9,22 @@ level: Intermediate
 kt: 9354
 thumbnail: KT-9354.jpeg
 exl-id: a565bc3a-675f-4d5e-b83b-c14ad70a800b
-source-git-commit: aa2d0d4d6e0eb429baa37378907a9dd53edd837d
+source-git-commit: bdce84fdcc949c8f8d0690ee7110238d8e8d3e42
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '233'
 ht-degree: 0%
 
 ---
 
 # 전용 송신 IP 주소 및 VPN에 대한 HTTP/HTTPS 연결
 
-HTTP/HTTPS 연결은 AEM as a Cloud Service에서 프록시되어야 하지만 특별한 필요가 없습니다 `portForwards` 규칙 및 AEM 고급 네트워킹의 `AEM_HTTP_PROXY_HOST`, `AEM_HTTP_PROXY_PORT`, `AEM_HTTPS_PROXY_HOST`, 및 `AEM_HTTPS_PROXY_PORT`.
+HTTP/HTTPS 연결은 전용 송신 IP 주소 또는 VPN을 사용하여 AEM as a Cloud Service에서 자동으로 프록시되며 특별한 IP 주소는 필요하지 않습니다 `portForwards` 규칙.
 
 ## 고급 네트워킹 지원
 
 다음 코드 예는 다음과 같은 고급 네트워킹 옵션에서 지원됩니다.
 
-다음을 확인합니다. [적절하](../advanced-networking.md#advanced-networking) 이 자습서를 따르기 전에 고급 네트워킹 구성을 설정했습니다.
+다음을 확인합니다. [전용 송신 IP 주소 또는 VPN](../advanced-networking.md#advanced-networking) 이 자습서를 따르기 전에 고급 네트워킹 구성을 설정했습니다.
 
 | 고급 네트워킹 없음 | [유연한 포트 송신](../flexible-port-egress.md) | [전용 송신 IP 주소](../dedicated-egress-ip-address.md) | [가상 사설 네트워크](../vpn.md) |
 |:-----:|:-----:|:------:|:---------:|
@@ -36,7 +36,7 @@ HTTP/HTTPS 연결은 AEM as a Cloud Service에서 프록시되어야 하지만 �
 
 ## 코드 예
 
-이 Java™ 코드 예는 8080에서 외부 웹 서버에 HTTP 연결을 만드는 AEM as a Cloud Service에서 실행할 수 있는 OSGi 서비스의 예입니다. HTTPS 웹 서버에 대한 연결은 `AEM_HTTPS_PROXY_HOST` 및 `AEM_HTTPS_PROXY_PORT` 대신  `AEM_HTTP_PROXY_HOST` 및 `AEM_HTTP_PROXY_PORT`.
+이 Java™ 코드 예는 8080에서 외부 웹 서버에 HTTP 연결을 만드는 AEM as a Cloud Service에서 실행할 수 있는 OSGi 서비스의 예입니다. HTTPS(또는 HTTP) 연결은 AEM as a Cloud Service에서 자동으로 프록시되며 특별한 개발이 필요하지 않습니다.
 
 >[!NOTE]
 > 권장 사항 [Java™ 11 HTTP API](https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/package-summary.html) AEM에서 HTTP/HTTPS를 호출하는 데 사용됩니다.
