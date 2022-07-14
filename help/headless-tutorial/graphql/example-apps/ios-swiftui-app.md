@@ -10,7 +10,7 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 6c5373db-86ec-410b-8a3b-9d4f86e06812
-source-git-commit: 8b2c116ceb6ab8c3a009dcec6629c2e97d815b7b
+source-git-commit: 5d32899a58e591b535dab991f89a8f7467b7b435
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 3%
@@ -23,7 +23,7 @@ ht-degree: 3%
 
 ![AEM Headless를 사용한 iOS SwiftUI 앱](./assets/ios-swiftui-app/ios-app.png)
 
-보기 [GitHub의 소스 코드](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/ios-swiftui-app)
+보기 [GitHub의 소스 코드](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/ios-app)
 
 ## 사전 요구 사항 {#prerequisites}
 
@@ -50,7 +50,7 @@ iOS 애플리케이션은 __AEM 게시__ 그러나 iOS 애플리케이션의 구
    git clone git@github.com:adobe/aem-guides-wknd-graphql.git
    ```
 
-1. Launch [Xcode](https://developer.apple.com/xcode/) 폴더를 열고 `ios-swiftui-app`
+1. Launch [Xcode](https://developer.apple.com/xcode/) 폴더를 열고 `ios-app`
 1. 파일 수정 `Config.xcconfig` 파일 및 업데이트 `AEM_SCHEME` 및 `AEM_HOST` 를 사용하여 Target AEM 게시 서비스와 일치시킬 수 있습니다.
 
    ```plain
@@ -86,7 +86,7 @@ iOS 애플리케이션은 __AEM 게시__ 그러나 iOS 애플리케이션의 구
 
 ## 코드
 
-다음은 iOS 애플리케이션이 빌드되는 방법, GraphQL 지속적인 쿼리를 사용하여 컨텐츠를 검색하기 위해 AEM Headless에 연결하는 방법 및 해당 데이터가 표시되는 방법에 대한 요약입니다. 전체 코드는 [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/ios-swiftui-app).
+다음은 iOS 애플리케이션이 빌드되는 방법, GraphQL 지속적인 쿼리를 사용하여 컨텐츠를 검색하기 위해 AEM Headless에 연결하는 방법 및 해당 데이터가 표시되는 방법에 대한 요약입니다. 전체 코드는 [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/ios-app).
 
 ### 지속되는 쿼리
 
