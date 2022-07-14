@@ -10,112 +10,152 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 701fae92-f740-4eb6-8133-1bc45a472d0f
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: a49e56b6f47e477132a9eee128e62fe5a415b262
 workflow-type: tm+mt
-source-wordcount: '784'
-ht-degree: 0%
+source-wordcount: '897'
+ht-degree: 2%
 
 ---
 
 # 컨텐츠 조각 작성 {#authoring-content-fragments}
 
-이 장에서는 [새로 정의된 기여자 컨텐츠 조각 모델](./content-fragment-models.md)을 기반으로 새 컨텐츠 조각을 만들고 편집합니다. 컨텐츠 조각의 변형을 만드는 방법도 알아봅니다.
+이 장에서는 [새로 정의된 컨텐츠 조각 모델](./content-fragment-models.md). 컨텐츠 조각의 변형을 만드는 방법도 알아봅니다.
 
-## 전제 조건 {#prerequisites}
+## 사전 요구 사항 {#prerequisites}
 
-이 작업은 여러 부분으로 구성된 자습서이며 [컨텐츠 조각 모델 정의](./content-fragment-models.md)에 설명된 단계가 완료되었다고 가정합니다.
+이 내용은 여러 부분으로 구성된 자습서이며 [컨텐츠 조각 모델 정의](./content-fragment-models.md) 을(를) 완료했습니다.
 
 ## 목표 {#objectives}
 
 * 컨텐츠 조각 모델을 기반으로 컨텐츠 조각 작성
 * 컨텐츠 조각 변형 만들기
 
-## 컨텐츠 조각 작성 개요 {#overview}
+## 자산 폴더 만들기
 
->[!VIDEO](https://video.tv.adobe.com/v/22451/?quality=12&learn=on)
+컨텐츠 조각은 AEM Assets의 폴더에 저장됩니다. 이전 장에서 만든 모델에서 컨텐츠 조각을 생성하려면 해당 조각을 저장할 폴더를 만들어야 합니다. 특정 모델에서 조각을 만들려면 폴더에 구성이 필요합니다.
 
-위의 비디오에서는 컨텐츠 조각 작성에 대한 높은 수준의 개요를 제공합니다.
+1. AEM 시작 화면에서 로 이동합니다. **자산** > **파일**.
+
+   ![자산 파일로 이동](assets/author-content-fragments/navigate-assets-files.png)
+
+1. 탭 **만들기** 모퉁이에서 **폴더**. 결과 대화 상자에서 다음을 입력합니다.
+
+   * 제목*: **내 프로젝트**
+   * 이름: **내 프로젝트**
+
+   ![폴더 만들기 대화 상자](assets/author-content-fragments/create-folder-dialog.png)
+
+1. 을(를) 선택합니다 **내 폴더** 폴더 및 탭 **속성**.
+
+   ![폴더 속성 열기](assets/author-content-fragments/open-folder-properties.png)
+
+1. 탭하기 **Cloud Services** 탭. 아래 **클라우드 구성** 경로 파인더를 사용하여 **내 프로젝트** 구성. 값은 `/conf/my-project`.
+
+   ![클라우드 구성 설정](assets/author-content-fragments/set-cloud-config-my-project.png)
+
+   이 속성을 설정하면 이전 장에서 만든 모델을 사용하여 컨텐츠 조각을 만들 수 있습니다.
+
+1. 탭하기 **정책** 탭. 아래 **허용된 컨텐츠 조각 모델** 경로 파인더를 사용하여 **개인** 및 **팀** 앞에서 만든 모델.
+
+   ![허용된 컨텐츠 조각 모델](assets/author-content-fragments/allowed-content-fragment-models.png)
+
+   이러한 정책은 하위 폴더에서 자동으로 상속되며 재정의할 수 있습니다. 태그별 모델을 허용하거나 다른 프로젝트 구성(예: WKND 공유)의 모델을 활성화할 수도 있습니다. 이 메커니즘은 컨텐츠 계층 구조를 관리하는 강력한 방법을 제공합니다.
+
+1. 탭 **저장 및 닫기** 폴더 속성에 대한 변경 사항을 저장하려면 다음을 수행합니다.
+
+1. 내 탐색 **내 프로젝트** 폴더를 입력합니다.
+
+1. 다음 값으로 다른 폴더를 만듭니다.
+
+   * 제목*: **영어**
+   * 이름: **en**
+
+   가장 좋은 방법은 다국어 지원을 위한 프로젝트를 설정하는 것입니다. 자세한 내용은 [자세한 내용은 다음 문서 페이지를 참조하십시오](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html).
+
 
 ## 컨텐츠 조각 만들기 {#create-content-fragment}
 
-이전 장의 [컨텐츠 조각 모델 정의](./content-fragment-models.md)에서 **기여자** 모델이 생성되었습니다. 이 모델을 사용하여 새 컨텐츠 조각을 작성합니다.
+다음 여러 컨텐츠 조각은 **팀** 및 **개인** 모델.
 
-1. **AEM 시작** 메뉴에서 **자산** > **파일**&#x200B;로 이동합니다.
-1. 폴더를 클릭하여 **WKND 사이트** > **영어** > **기여자**&#x200B;로 이동합니다. 이 폴더에는 WKND 브랜드의 기여자를 위한 헤드샷 목록이 포함되어 있습니다.
+1. AEM 시작 화면에서 탭하기 **컨텐츠 조각** 컨텐츠 조각 UI를 엽니다.
 
-1. 오른쪽 상단에 있는 **만들기**&#x200B;를 클릭하고 **컨텐츠 조각**&#x200B;을 선택합니다.
+   ![컨텐츠 조각 UI](assets/author-content-fragments/cf-fragment-ui.png)
 
-   ![새 조각 만들기 를 클릭합니다](assets/author-content-fragments/create-content-fragment-menu.png)
+1. 왼쪽 레일에서 확장됩니다 **내 프로젝트** 탭 **영어**.
+1. 탭 **만들기** 그것을 끄다 **새 컨텐츠 조각** 대화 상자를 열고 다음 값을 입력합니다.
 
-1. **기여자** 모델을 선택하고 **다음**&#x200B;을 클릭합니다.
+   * 위치: `/content/dam/my-project/en`
+   * 컨텐츠 조각 모델: **개인**
+   * 제목: **존 도**
+   * 이름: `john-doe`
 
-   ![기여자 모델 선택](assets/author-content-fragments/select-contributor-model.png)
+   ![새 컨텐츠 조각](assets/author-content-fragments/new-content-fragment-john-doe.png)
+1. 탭 **만들기**.
+1. 위의 단계를 반복하여 을 나타내는 새 조각을 만듭니다 **앨리슨 스미스**:
 
-   이전 장에서 만든 동일한 **기여자** 모델입니다.
+   * 위치: `/content/dam/my-project/en`
+   * 컨텐츠 조각 모델: **개인**
+   * 제목: **앨리슨 스미스**
+   * 이름: `alison-smith`
 
-1. 제목에 대해 **Stacey Roswells**&#x200B;를 입력하고 **만들기**&#x200B;를 클릭합니다.
-1. **성공** 대화 상자에서 **열기**&#x200B;를 클릭하여 새로 만든 조각을 엽니다.
+   탭 **만들기** 새 개인 조각을 생성하려면 다음을 수행하십시오.
 
-   ![새 컨텐츠 조각 생성됨](assets/author-content-fragments/new-content-fragment.png)
+1. 그런 다음 단계를 반복하여 새 를 만듭니다 **팀** 을 나타내는 조각 **팀 알파**:
 
-   모델에 정의된 필드를 이제 컨텐츠 조각의 이 인스턴스를 작성할 수 있습니다.
+   * 위치: `/content/dam/my-project/en`
+   * 컨텐츠 조각 모델: **팀**
+   * 제목: **팀 알파**
+   * 이름: `team-alpha`
 
-1. **전체 이름**&#x200B;에 대해 다음을 입력합니다. **스테이시 로셀**
-1. **전기**&#x200B;에 간단한 전기를 입력합니다. 영감이 필요하십니까? 이 [텍스트 파일](assets/author-content-fragments/stacey-roswells-bio.txt)을 자유롭게 다시 사용할 수 있습니다.
-1. **그림 참조**&#x200B;에 대해 **폴더** 아이콘을 클릭하고 **WKND 사이트** > **영어** > **기여자** > **stacey-roswells.jpg**&#x200B;로 이동합니다. 이렇게 하면 경로가 평가됩니다. `/content/dam/wknd/en/contributors/stacey-roswells.jpg`
-1. **작업**&#x200B;에 대해 **사진**&#x200B;을 선택합니다.
+   탭 **만들기** 새 팀 조각을 만들려면
 
-   ![작성된 조각](assets/author-content-fragments/stacye-roswell-fragment-authored.png)
+1. 이제 세 개의 컨텐츠 조각이 아래에 있어야 합니다 **내 프로젝트** > **영어**:
 
-1. **저장**&#x200B;을 클릭하여 변경 내용을 저장합니다.
+   ![새 컨텐츠 조각](assets/author-content-fragments/new-content-fragments.png)
 
-## 컨텐츠 조각 변형 만들기
+## 개인 컨텐츠 조각 편집 {#edit-person-content-fragments}
 
-모든 컨텐츠 조각은 **기본** 변형으로 시작합니다. **기본** 변형은 조각의 *기본* 컨텐츠로 간주할 수 있으며, 컨텐츠가 GraphQL API를 통해 노출될 때 자동으로 사용됩니다. 컨텐츠 조각의 변형을 만들 수도 있습니다. 이 기능은 구현 디자인을 위한 추가적인 유연성을 제공합니다.
+그런 다음 새로 만든 조각을 데이터로 채웁니다.
 
-변형을 사용하여 특정 채널을 타깃팅할 수 있습니다. 예를 들어, 더 적은 양의 텍스트를 포함하거나 채널별 이미지를 참조하는 **mobile** 변형을 만들 수 있습니다. 변형을 사용하는 방법은 구현에 따라 다릅니다. 모든 기능과 마찬가지로 사용하기 전에 신중하게 계획해야 합니다.
+1. 옆에 있는 확인란을 누릅니다 **존 도** 탭 **열기**.
 
-그런 다음 새 변형을 만들어 사용 가능한 기능의 아이디어를 얻습니다.
+   ![컨텐츠 조각 열기](assets/author-content-fragments/open-fragment-for-editing.png)
 
-1. **Stacey Roswell** 컨텐츠 조각을 다시 엽니다.
-1. 왼쪽 사이드 레일에서 **변형 만들기**&#x200B;를 클릭합니다.
-1. **새 변형** 모달에 **요약**&#x200B;의 제목을 입력합니다.
+1. 컨텐츠 조각 편집기에는 컨텐츠 조각 모델을 기반으로 하는 양식이 포함되어 있습니다. 다양한 필드를 작성하여 컨텐츠를 **존 도** 조각. 프로필 그림의 경우 WKND 공유에서 이미지 중 하나를 선택하거나 자신의 이미지를 AEM Assets에 업로드할 수 있습니다.
 
-   ![새 변형 - 요약](assets/author-content-fragments/new-variation-summary.png)
+   ![컨텐츠 조각 편집기](assets/author-content-fragments/content-fragment-editor-jd.png)
 
-1. **전기** 여러 줄 필드를 클릭하고 **확장** 단추를 클릭하여 여러 줄 필드에 대한 전체 화면 보기를 입력합니다.
+1. 다음 을 누릅니다 **변형 만들기** 왼쪽 레일에 있습니다. 대화 상자에서 다음을 입력합니다. **대체** 변형의 이름입니다.
 
-   ![전체 화면 보기 입력](assets/author-content-fragments/enter-full-screen-view.png)
+1. 에서 일부 요소 변경 **대체** 변형이 가능합니다.
 
-1. 오른쪽 위 메뉴에서 **Summarize Text** 를 클릭합니다.
+   ![대체 버전](assets/author-content-fragments/alternate-variation-john-doe-fragment.png)
 
-1. **50**&#x200B;단어 중 **Target**&#x200B;을 입력하고 **시작**&#x200B;을 클릭합니다.
+   변형 기능을 사용하면 작성자가 동일한 컨텐츠 조각의 다른 버전을 만들 수 있습니다. 이렇게 하면 긴 양식 문서의 요약 버전을 제공하는 데 사용할 수 있습니다. 기본적으로 단일 **기본** 변형이 만들어집니다. 변형의 여러 줄 텍스트 필드 요소를 마스터 변형과 동기화할 수 있습니다.
 
-   ![요약 미리 보기](assets/author-content-fragments/summarize-text-preview.png)
+1. 탭 **저장 및 닫기** 를 눌러 John Doe 조각의 변경 사항을 저장합니다.
+1. 컨텐츠 조각 UI로 돌아가서 를 엽니다 **앨리슨 스미스** 편집할 파일입니다.
+1. 위의 단계를 반복하여 **앨리슨 스미스** 조각을 사용하여 컨텐츠를 보거나 편집하거나 삭제할 수 있습니다.
 
-   요약 미리 보기가 열립니다. AEM 컴퓨터 언어 프로세서는 대상 단어 수를 기반으로 텍스트를 요약하려고 합니다. 제거할 다른 문장을 선택할 수도 있습니다.
+## 팀 컨텐츠 조각 편집 {#edit-team-content-fragment}
 
-1. 요약 작업에 만족하면 **Summarize** 를 클릭합니다. 여러 줄 텍스트 필드를 클릭하고 **확장** 단추를 전환하여 기본 보기로 돌아갑니다.
+1. 를 엽니다. **팀 알파** 컨텐츠 조각 UI를 사용한 컨텐츠 조각.
+1. 다음 필드를 채웁니다 **제목**, **짧은 이름**, 및 **설명**.
+1. 을(를) 선택합니다 **존 도** 및 **앨리슨 스미스** 컨텐츠 조각을 추가하여 **팀 구성원** 필드:
 
-1. **저장**&#x200B;을 클릭하여 변경 내용을 저장합니다.
+   ![팀 구성원 설정](assets/author-content-fragments/select-team-members.png)
 
-## 추가 컨텐츠 조각 만들기
+   >[!NOTE]
+   >
+   >를 사용하여 새 컨텐츠 조각을 인라인 만들 수도 있습니다 **새 컨텐츠 조각** 버튼을 클릭합니다.
 
-[컨텐츠 조각 만들기](#create-content-fragment)에 설명된 단계를 반복하여 추가 **기여자**&#x200B;를 만듭니다. 다음 장에서 여러 조각을 쿼리하는 방법의 예로 사용됩니다.
+1. 탭 **저장 및 닫기** 팀 알파 조각에 대한 변경 사항을 저장하려면 을 클릭합니다.
 
-1. **기여자** 폴더에서 오른쪽 상단에 있는 **만들기**&#x200B;를 클릭하고 **컨텐츠 조각**&#x200B;을 선택합니다.
-1. **기여자** 모델을 선택하고 **다음**&#x200B;을 클릭합니다.
-1. 제목에 **Jacob Wester**&#x200B;을 입력하고 **만들기**&#x200B;를 클릭합니다.
-1. **성공** 대화 상자에서 **열기**&#x200B;를 클릭하여 새로 만든 조각을 엽니다.
-1. **전체 이름**&#x200B;에 대해 다음을 입력합니다. **Jacob Wester**
-1. **전기**&#x200B;에 간단한 전기를 입력합니다. 영감이 필요하십니까? 이 [텍스트 파일](assets/author-content-fragments/jacob-wester.txt)을 자유롭게 다시 사용할 수 있습니다.
-1. **그림 참조**&#x200B;에 대해 **폴더** 아이콘을 클릭하고 **WKND 사이트** > **영어** > **기여자** > **jacob_wester.jpg**&#x200B;로 이동합니다. 이렇게 하면 경로가 평가됩니다. `/content/dam/wknd/en/contributors/jacob_wester.jpg`
-1. **작업**&#x200B;에 대해 **작성기**&#x200B;를 선택합니다.
-1. **저장**&#x200B;을 클릭하여 변경 내용을 저장합니다. 원하는 경우가 아니면 변형을 만들 필요가 없습니다.
+## WKND 컨텐츠 조각 탐색(선택 사항) {#explore-wknd-content-fragments}
 
-   ![추가 컨텐츠 조각](assets/author-content-fragments/additional-content-fragment.png)
+만약 [WKND 공유 샘플 컨텐츠 설치](./overview.md#install-sample-content) 컨텐츠 조각에 대한 모험, 문서 및 작성자 모델을 검토하여 컨텐츠 만들기에 대한 더 많은 아이디어를 얻을 수 있습니다.
 
-   이제 두 개의 **기여자** 조각이 있어야 합니다.
+![WKND 컨텐츠 조각](assets/author-content-fragments/wknd-content-fragments.png)
 
 ## 축하합니다! {#congratulations}
 
@@ -123,4 +163,9 @@ ht-degree: 0%
 
 ## 다음 단계 {#next-steps}
 
-다음 장, [GraphQL API 탐색](explore-graphql-api.md)에서는 내장된 GraphicsQL 도구를 사용하여 AEM GraphQL API를 탐색합니다. AEM에서 컨텐츠 조각 모델을 기반으로 GraphQL 스키마를 자동으로 생성하는 방법을 알아봅니다. GraphQL 구문을 사용하여 기본 쿼리를 구성해 봅니다.
+다음 장에서 [GraphQL API 탐색](explore-graphql-api.md)기본 제공 GraphicsQL 도구를 사용하여 AEM GraphQL API를 탐색합니다. AEM에서 컨텐츠 조각 모델을 기반으로 GraphQL 스키마를 자동으로 생성하는 방법을 알아봅니다. GraphQL 구문을 사용하여 기본 쿼리를 구성해 봅니다.
+
+## 관련 설명서
+
+* [콘텐츠 조각 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing.html)
+* [변형 - 조각 콘텐츠 작성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-variations.html)

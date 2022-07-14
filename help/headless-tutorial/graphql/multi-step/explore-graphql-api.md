@@ -10,10 +10,10 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 508b0211-fa21-4a73-b8b4-c6c34e3ba696
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: a49e56b6f47e477132a9eee128e62fe5a415b262
 workflow-type: tm+mt
-source-wordcount: '1133'
-ht-degree: 1%
+source-wordcount: '1527'
+ht-degree: 7%
 
 ---
 
@@ -21,273 +21,365 @@ ht-degree: 1%
 
 AEM의 GraphQL API는 컨텐츠 조각의 데이터를 다운스트림 애플리케이션에 노출하는 강력한 쿼리 언어를 제공합니다. 컨텐츠 조각 모델은 컨텐츠 조각에서 사용하는 데이터 스키마를 정의합니다. 컨텐츠 조각 모델을 만들거나 업데이트할 때마다 스키마가 변환되어 GraphQL API를 구성하는 &quot;그래프&quot;에 추가됩니다.
 
-이 장에서는 [GraphiQL](https://github.com/graphql/graphiql)이라는 IDE를 사용하여 컨텐츠를 수집하기 위한 몇 가지 일반적인 GraphQL 쿼리를 살펴봅니다. GraphiQL IDE를 사용하면 반환된 쿼리 및 데이터를 빠르게 테스트하고 세분화할 수 있습니다. GraphiQL도 설명서에 쉽게 액세스할 수 있으므로 사용 가능한 방법을 쉽게 파악하고 이해할 수 있습니다.
+이 장에서는 다음과 같은 IDE를 사용하여 컨텐츠를 수집하기 위한 몇 가지 일반적인 GraphQL 쿼리를 살펴봅니다 [GraphiQL](https://github.com/graphql/graphiql). GraphiQL IDE를 사용하면 반환된 쿼리 및 데이터를 빠르게 테스트하고 세분화할 수 있습니다. 또한 GraphiQL은 설명서에 쉽게 액세스할 수 있어 사용 가능한 방법을 쉽게 배우고 이해할 수 있습니다.
 
-## 전제 조건 {#prerequisites}
+## 사전 요구 사항 {#prerequisites}
 
-이 작업은 여러 부분으로 구성된 자습서이며 [컨텐츠 조각 작성](./author-content-fragments.md)에 설명된 단계가 완료되었다고 가정합니다.
+이 내용은 여러 부분으로 구성된 자습서이며 [컨텐츠 조각 작성](./author-content-fragments.md) 을(를) 완료했습니다.
 
 ## 목표 {#objectives}
 
 * GraphQL 구문을 사용하여 쿼리를 구성하는 방법을 알아봅니다.
 * 컨텐츠 조각 목록 및 단일 컨텐츠 조각을 쿼리하는 방법을 알아봅니다.
 * 특정 데이터 특성을 필터링하고 요청하는 방법을 알아봅니다.
-* 컨텐츠 조각의 변형을 쿼리하는 방법을 알아봅니다.
 * 여러 컨텐츠 조각 모델 쿼리를 조인하는 방법을 알아봅니다
+* GraphQL 쿼리를 유지하는 방법을 알아봅니다.
 
-## GraphiQL 도구 설치 {#install-graphiql}
+## GraphQL 끝점 활성화 {#enable-graphql-endpoint}
 
-GraphiQL IDE는 개발 툴이며 개발이나 로컬 인스턴스와 같은 하위 수준 환경에서만 필요합니다. 따라서 AEM 프로젝트에는 포함되지 않지만, 임시로 설치할 수 있는 별도의 패키지로 제공됩니다.
+컨텐츠 조각에 대한 GraphQL API 쿼리를 활성화하려면 GraphQL 엔드포인트를 구성해야 합니다.
 
-1. **[소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)** > **AEM as a Cloud Service**&#x200B;로 이동합니다.
-1. &quot;GraphiQL&quot;을 검색합니다(**GraphiQL**&#x200B;에 **i**&#x200B;을 포함해야 합니다.).
-1. 최신 **GraphiQL 컨텐츠 패키지 v.x.x** 다운로드
+1. AEM 시작 화면에서 로 이동합니다. **도구** > **일반** > **GraphQL**.
 
-   ![GraphiQL 패키지 다운로드](assets/explore-graphql-api/software-distribution.png)
+   ![GraphQL 종단점으로 이동합니다](assets/explore-graphql-api/navigate-to-graphql-endpoint.png)
 
-   zip 파일은 직접 설치할 수 있는 AEM 패키지입니다.
+1. 탭 **만들기** 오른쪽 상단 모서리에서 대화 상자에서 다음 값을 입력합니다.
 
-1. **AEM 시작** 메뉴에서 **도구** > **배포** > **패키지**&#x200B;로 이동합니다.
-1. **패키지 업로드**&#x200B;를 클릭하고 이전 단계에서 다운로드한 패키지를 선택합니다. **설치**&#x200B;를 클릭하여 패키지를 설치합니다.
+   * 이름*: **내 프로젝트 끝점**.
+   * GraphQL 스키마를 사용하여 다음 방법으로 제공됩니다.. *: **내 프로젝트**
 
-   ![GraphiQL 패키지 설치](assets/explore-graphql-api/install-graphiql-package.png)
+   ![GraphQL 끝점 만들기](assets/explore-graphql-api/create-graphql-endpoint.png)
 
-## 컨텐츠 조각 목록 쿼리 {#query-list-cf}
+   탭 **만들기** 엔드포인트를 저장하려면 을 클릭합니다.
+
+   프로젝트 구성을 기반으로 만들어진 GraphQL 종단점은 해당 프로젝트에 속하는 모델에 대해서만 쿼리를 사용할 수 있습니다. 이 경우 **개인** 및 **팀** 모델을 사용할 수 있습니다.
+
+   >[!NOTE]
+   >
+   > 프로젝트 간 모델에 대한 쿼리를 활성화하는 글로벌 엔드포인트를 만들 수도 있습니다. 예를 들어, **WKND 공유** 프로젝트 및 **내 프로젝트**. 이 값은 추가 보안 취약점으로 환경을 열 가능성이 있으므로 필요한 경우에만 주의해서 사용해야 합니다.
+
+1. 이제 환경에 두 개의 GraphQL 엔드포인트가 활성화되어 있어야 합니다(WKND 공유 컨텐츠를 설치했다고 가정).
+
+   ![graphql 종단점 사용](assets/explore-graphql-api/enabled-graphql-endpoints.png)
+
+## GraphiQL IDE 사용
+
+다음 [GraphiQL 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html) 개발자가 현재 AEM 환경의 컨텐츠에 대한 쿼리를 만들고 테스트할 수 있도록 합니다. GraphiQL 도구를 사용하여 다음을 수행할 수도 있습니다 **persist** 또는 프로덕션 설정에서 클라이언트 응용 프로그램에서 사용할 쿼리를 저장합니다.
+
+이제 내장된 GraphiQL IDE를 사용하여 AEM GraphQL API의 강력한 기능을 탐색합니다.
+
+1. AEM 시작 화면에서 로 이동합니다. **도구** > **일반** > **GraphQL 쿼리 편집기**.
+
+   ![GraphiQL IDE로 이동합니다](assets/explore-graphql-api/navigate-graphql-query-editor.png)
+
+   >[!NOTE]
+   >
+   > 이전 버전의 AEM의 경우 GraphiQL IDE를 내장하지 않을 수 있습니다. 다음 지침에 따라 수동으로 설치할 수 있습니다 [지침](#install-graphiql).
+
+1. 오른쪽 상단 모서리에서 **끝점** to **내 프로젝트 끝점**.
+
+   ![GraphQL 끝점 설정](assets/explore-graphql-api/set-my-project-endpoint.png)
+
+   이렇게 하면 모든 쿼리가 **내 프로젝트** 프로젝트. 에 대한 엔드포인트가 있습니다 **WKND 공유**.
+
+### 컨텐츠 조각 목록 쿼리 {#query-list-cf}
 
 일반적인 요구 사항은 여러 컨텐츠 조각을 검색하는 것입니다.
 
-1. [http://localhost:4502/content/graphiql.html](http://localhost:4502/content/graphiql.html)에서 GraphiQL IDE로 이동합니다.
-1. 왼쪽 패널(주석 목록 아래)에 다음 쿼리를 붙여넣습니다.
+1. 기본 패널에 다음 쿼리를 붙여넣습니다(주석 목록 바꾸기).
 
    ```graphql
-   {
-     contributorList {
+   query allTeams {
+     teamList {
        items {
-           _path
-         }
+         _path
+         title
+       }
      }
-   }
+   } 
    ```
 
-1. 쿼리를 실행하려면 상단 메뉴에서 **Play** 단추를 누릅니다. 이전 장의 기여자 컨텐츠 조각의 결과가 표시됩니다.
+1. 누르기 **재생** 단추를 클릭하여 쿼리를 실행합니다. 이전 장의 컨텐츠 조각 결과가 표시됩니다.
 
-   ![기여자 목록 결과](assets/explore-graphql-api/contributorlist-results.png)
+   ![개인 목록 결과](assets/explore-graphql-api/all-teams-list.png)
 
-1. `_path` 텍스트 아래에 커서를 놓고 **Ctrl+Space**&#x200B;를 입력하여 코드 힌트를 트리거합니다. 쿼리에 `fullName` 및 `occupation` 를 추가합니다.
+1. 커서를 `title` 텍스트 및 입력 **CTRL+공백** 코드 힌트를 트리거하려면 다음을 수행하십시오. 추가 `shortname` 및 `description` 을 클릭합니다.
 
    ![코드 편집으로 쿼리 업데이트](assets/explore-graphql-api/update-query-codehinting.png)
 
-1. **Play** 단추를 눌러 쿼리를 다시 실행합니다. 그러면 `fullName` 및 `occupation`의 추가 속성이 포함된 결과가 표시됩니다.
+1. 쿼리를 다시 실행하려면 **재생** 버튼을 누르면 결과에는 `shortname` 및 `description`.
 
-   ![전체 이름 및 작업 결과](assets/explore-graphql-api/updated-query-fullname-occupation.png)
+   ![단축키 및 설명 결과](assets/explore-graphql-api/updated-query-shortname-description.png)
 
-   `fullName` 그리고 `occupation` 는 간단한 속성입니다. [컨텐츠 조각 모델 정의](./content-fragment-models.md) 장에서 `fullName` 및 `occupation`는 각 필드의 **속성 이름**&#x200B;을 정의할 때 사용되는 값입니다.
+   다음 `shortname` 는 간단한 자산이며 `description` 는 여러 줄 텍스트 필드이며 GraphQL API에서는 다음과 같은 결과에 대한 다양한 형식을 선택할 수 있습니다 `html`, `markdown`, `json` 또는 `plaintext`.
 
-1. `pictureReference` 그리고  `biographyText` 는 더 복잡한 필드를 나타냅니다. `pictureReference` 및 `biographyText` 필드에 대한 데이터를 반환하려면 쿼리를 다음과 같이 업데이트하십시오.
+### 중첩된 조각에 대한 쿼리
+
+다음으로, 쿼리를 사용하여 테스트하는 것은 중첩된 조각을 검색하는 것입니다. **팀** 모델 참조 **개인** 모델.
+
+1. 쿼리를 업데이트하여 `teamMembers` 속성을 사용합니다. 이건 **조각 참조** 필드를 개인 모델에 추가합니다. 개인 모델의 속성을 반환할 수 있습니다.
 
    ```graphql
-   {
-   contributorList {
-       items {
-         _path
-         fullName
-         occupation
-         biographyText {
-           html
-         }
-         pictureReference {
-           ... on ImageRef {
+   query allTeams {
+       teamList {
+           items {
                _path
-               width
-               height
+               title
+               shortName
+               description {
+                   plaintext
+               }
+               teamMembers {
+                   fullName
+                   occupation
                }
            }
        }
-     }
    }
    ```
 
-   `biographyText` 는 여러 줄 텍스트 필드이며 GraphQL API를 사용하면  `html`,  `markdown` `json` 또는  `plaintext`과 같은 결과에 대한 다양한 형식을 선택할 수 있습니다.
+   JSON 응답:
 
-   `pictureReference` 는 컨텐츠 참조이며 이미지여야 하므로 내장  `ImageRef` 개체가 사용됩니다. 이를 통해 `width` 및 `height`과 같은 참조할 이미지에 대한 추가 데이터를 요청할 수 있습니다.
-
-1. 다음으로 **Adventure** 목록을 쿼리하는 작업을 수행합니다. 다음 쿼리를 실행합니다.
-
-   ```graphql
+   ```json
    {
-     adventureList {
-       items {
-         adventureTitle
-         adventureType
-         adventurePrimaryImage {
-           ...on ImageRef {
-             _path
-             mimeType
+       "data": {
+           "teamList": {
+           "items": [
+               {
+               "_path": "/content/dam/my-project/en/team-alpha",
+               "title": "Team Alpha",
+               "shortName": "team-alpha",
+               "description": {
+                   "plaintext": "This is a description of Team Alpha!"
+               },
+               "teamMembers": [
+                   {
+                   "fullName": "John Doe",
+                   "occupation": [
+                       "Artist",
+                       "Influencer"
+                   ]
+                   },
+                   {
+                   "fullName": "Alison Smith",
+                   "occupation": [
+                       "Photographer"
+                   ]
+                   }
+                 ]
            }
-         }
+           ]
+           }
        }
-     }
    }
    ```
 
-   반환된 **Adventure** 목록이 표시됩니다. 쿼리에 필드를 추가하여 자유롭게 실험할 수 있습니다.
+   중첩된 조각에 대해 쿼리하는 기능은 AEM GraphQL API의 강력한 기능입니다. 이 간단한 예에서 중첩은 두 수준 깊이입니다. 그러나 조각을 더 멀리 중첩할 수 있습니다. 예를 들어 **주소** 와 연관된 모델 **개인** 단일 쿼리에서 세 모델 모두의 데이터를 반환할 수 있습니다.
 
-## 컨텐츠 조각 목록 필터링 {#filter-list-cf}
+### 컨텐츠 조각 목록 필터링 {#filter-list-cf}
 
 이제 속성 값을 기반으로 컨텐츠 조각의 하위 집합으로 결과를 필터링할 수 있는 방법을 살펴보겠습니다.
 
 1. GraphiQL UI에 다음 쿼리를 입력합니다.
 
    ```graphql
-   {
-   contributorList(filter: {
-     occupation: {
-       _expressions: {
-         value: "Photographer"
+   query personByName($name:String!){
+     personList(
+       filter:{
+         fullName:{
+           _expressions:[{
+             value:$name
+             _operator:EQUALS
+           }]
          }
        }
-     }) {
-       items {
+     ){
+       items{
          _path
          fullName
          occupation
        }
      }
-   }
+   }  
    ```
 
-   위의 쿼리는 시스템의 모든 기여자에 대해 검색을 수행합니다. 쿼리 시작 부분에 추가된 필터는 `occupation` 필드와 문자열 &quot;**Phototer**&quot;에 대한 비교를 수행합니다.
+   위의 쿼리는 시스템의 모든 개인 조각에 대해 검색을 수행합니다. 쿼리 시작 부분에 추가된 필터는 `name` 필드 및 변수 문자열 `$name`.
 
-1. 쿼리를 실행하면 하나의 **Contributor**&#x200B;만 반환됩니다.
-1. 다음 쿼리를 입력하여 **Adventure** 목록을 쿼리합니다. 여기서 `adventureActivity`가 **이**&quot;Surfing&quot;**과 같지 않습니다.**
+1. 에서 **쿼리 변수** 패널에 다음을 입력합니다.
+
+   ```json
+   {"name": "John Doe"}
+   ```
+
+1. 쿼리를 실행하면 **사람** 은 &quot;John Doe&quot; 값과 함께 반환됩니다.
+
+   ![쿼리 변수를 사용하여 필터링](assets/explore-graphql-api/using-query-variables-filter.png)
+
+   복잡한 쿼리를 필터링하고 만드는 다른 여러 옵션이 있습니다. [AEM에서 GraphQL을 사용하는 방법 학습 - 샘플 컨텐츠 및 쿼리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html?lang=ko-KR).
+
+1. 프로필 사진을 가져오도록 위의 쿼리 개선
 
    ```graphql
-   {
-     adventureList(filter: {
-       adventureActivity: {
-           _expressions: {
-               _operator: EQUALS_NOT
-               value: "Surfing"
+   query personByName($name:String!){
+     personList(
+       filter:{
+         fullName:{
+           _expressions:[{
+             value:$name
+             _operator:EQUALS
+           }]
+         }
+       }
+     ){
+       items{  
+         _path
+         fullName
+         occupation
+         profilePicture{
+           ... on ImageRef{
+             _path
+             _authorUrl
+             _publishUrl
+             height
+             width
+   
+           }
+         }
+       }
+     }
+   } 
+   ```
+
+   다음 `profilePicture` 는 컨텐츠 참조이며, 따라서 내장 이미지여야 합니다 `ImageRef` 개체가 사용됩니다. 이를 통해 다음과 같이 참조할 이미지에 대한 추가 데이터를 요청할 수 있습니다. `width` 및 `height`.
+
+### 단일 컨텐츠 조각 쿼리 {#query-single-cf}
+
+단일 컨텐츠 조각을 직접 쿼리할 수도 있습니다. AEM의 컨텐츠는 계층적 방식으로 저장되며 조각의 고유 식별자는 조각의 경로를 기반으로 합니다.
+
+1. GraphiQL 편집기에서 다음 쿼리를 입력합니다.
+
+   ```graphql
+   query personByPath($path: String!) {
+       personByPath(_path: $path) {
+           item {
+           fullName
+           occupation
            }
        }
-   }) {
-       items {
-       _path
-       adventureTitle
-       adventureActivity
-       }
-     }
    }
    ```
 
-1. 쿼리를 실행하고 결과를 검사합니다. 결과 중 어느 하나도 **&quot;Surfing&quot;**&#x200B;와 동일한 `adventureType`을 포함하지 않는지 확인합니다.
+1. 에 대해 다음을 입력합니다. **쿼리 변수**:
 
-복잡한 쿼리를 필터링하고 만드는 다른 여러 옵션이 있습니다. 위에 몇 가지 예제가 있습니다.
+   ```json
+   {"path": "/content/dam/my-project/en/alison-smith"}
+   ```
 
-## 단일 컨텐츠 조각 쿼리 {#query-single-cf}
+1. 쿼리를 실행하고 단일 결과가 반환되는지 확인합니다.
 
-단일 컨텐츠 조각을 직접 쿼리할 수도 있습니다. AEM의 컨텐츠는 계층적 방식으로 저장되며 조각의 고유 식별자는 조각의 경로를 기반으로 합니다. 목표가 단일 조각에 대한 데이터를 반환하는 경우 경로를 사용하고 모델을 직접 쿼리하는 것이 좋습니다. 이 구문을 사용하면 쿼리 복잡성이 매우 적고 더 빠른 결과를 생성할 수 있습니다.
+## 쿼리 유지 {#persist-queries}
 
-1. GraphiQL 편집기에서 다음 쿼리를 입력합니다.
+개발자가 반환된 쿼리 및 데이터에 만족하면 다음 단계는 쿼리를 AEM에 저장하거나 유지하는 것입니다. [지속되는 쿼리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html) 는 GraphQL API를 클라이언트 애플리케이션에 노출하기 위한 기본 메커니즘입니다. 쿼리가 유지되면 GET 요청을 사용하여 요청하고 Dispatcher 및 CDN 레이어에 캐시할 수 있습니다. 지속되는 쿼리의 성능이 훨씬 향상되었습니다. 성능 이점 외에도 지속적인 쿼리는 추가 데이터가 클라이언트 애플리케이션에 실수로 노출되지 않도록 합니다. 에 대한 자세한 내용 [여기에서 오래된 쿼리를 찾을 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html).
+
+그런 다음 두 개의 간단한 쿼리를 유지하면 다음 장에서 사용됩니다.
+
+1. GraphiQL IDE에서 다음 쿼리를 입력합니다.
 
    ```graphql
-   {
-    contributorByPath(_path: "/content/dam/wknd/en/contributors/stacey-roswells") {
-       item {
+   query allTeams {
+       teamList {
+           items {
+               _path
+               title
+               shortName
+               description {
+                   plaintext
+               }
+               teamMembers {
+                   fullName
+                   occupation
+               }
+           }
+       }
+   }
+   ```
+
+   쿼리가 작동하는지 확인합니다.
+
+1. 다음 탭 **다른 이름으로 저장** 을 입력합니다. `all-teams` 로서의 **쿼리 이름**.
+
+   이제 쿼리가 아래에 표시됩니다. **지속되는 쿼리** 왼쪽 레일에 있습니다.
+
+   ![모든 팀 지속된 쿼리](assets/explore-graphql-api/all-teams-persisted-query.png)
+1. 다음 단추를 누릅니다 **...** 영구적 쿼리 옆에 있는 를 탭하고 **URL 복사** 을 눌러 클립보드에 경로를 복사합니다.
+
+   ![영구 쿼리 URL 복사](assets/explore-graphql-api/copy-persistent-query-url.png)
+
+1. 새 탭을 열고 복사한 경로를 브라우저에 붙여넣습니다.
+
+   ```plain
+   https://$YOUR-AEMasCS-INSTANCEID$.adobeaemcloud.com/graphql/execute.json/my-project/all-teams
+   ```
+
+   위의 경로와 유사해야 합니다. 반환된 쿼리의 JSON 결과가 표시됩니다.
+
+   URL 분류:
+
+   | 이름 | 설명 |
+   | ---------|---------- |
+   | `/graphql/execute.json` | 영구 쿼리 끝점 |
+   | `/my-project` | 프로젝트 구성 대상 `/conf/my-project` |
+   | `/all-teams` | 기간 쿼리의 이름입니다 |
+
+1. GraphiQL IDE로 돌아가서 더하기 단추를 사용합니다 **+** 새 쿼리를 완성하려면
+
+   ```graphql
+   query personByName($name: String!) {
+     personList(
+       filter: {
+         fullName:{
+           _expressions: [{
+             value: $name
+             _operator:EQUALS
+           }]
+         }
+       }){
+       items {
          _path
          fullName
+         occupation
          biographyText {
-           html
+           json
+         }
+         profilePicture {
+           ... on ImageRef {
+             _path
+             _authorUrl
+             _publishUrl
+             width
+             height
+           }
          }
        }
      }
    }
    ```
 
-1. 쿼리를 실행하고 **Stacey Roswell** 조각의 단일 결과가 반환되는지 확인합니다.
+1. 쿼리를 다른 이름으로 저장: **이름별**.
+1. 2개의 지속적인 쿼리가 저장되어야 합니다.
 
-   이전 연습에서는 필터를 사용하여 결과 목록을 좁혔습니다. 비슷한 구문을 사용하여 경로에 따라 필터링할 수 있지만 성능상의 이유로 위의 구문이 선호됩니다.
+   ![최종 지속적인 쿼리](assets/explore-graphql-api/final-persisted-queries.png)
 
-1. [컨텐츠 조각 작성](./author-content-fragments.md) 장에서 **요약** 변형이 **스테이시 로셀**&#x200B;에 대해 만들어졌음을 상기하십시오. 쿼리를 업데이트하여 **Summary** 변형을 반환합니다.
+## 솔루션 파일 {#solution-files}
 
-   ```graphql
-   {
-   contributorByPath
-   (
-       _path: "/content/dam/wknd/en/contributors/stacey-roswells"
-       variation: "summary"
-   ) {
-       item {
-         _path
-         fullName
-         biographyText {
-           html
-         }
-       }
-     }
-   }
-   ```
+마지막 세 장에서 만든 콘텐츠, 모델 및 영구 쿼리를 다운로드합니다. [tutorial-solution-content.zip](assets/explore-graphql-api/tutorial-solution-content.zip)
 
-   변형의 이름이 **Summary**&#x200B;이지만 변형은 소문자로 유지되므로 `summary`가 사용됩니다.
+## WKND 지속적인 쿼리 탐색(선택 사항) {#explore-wknd-content-fragments}
 
-1. 쿼리를 실행하고 `biography` 필드에 훨씬 더 짧은 `html` 결과가 포함되어 있음을 관찰합니다.
+만약 [WKND 공유 샘플 컨텐츠 설치](./overview.md#install-sample-content) 모험-all, adventure-by-activity, adventure-by-path 등과 같은 지속적인 쿼리를 검토하고 실행할 수 있습니다.
 
-## 여러 컨텐츠 조각 모델에 대한 쿼리 {#query-multiple-models}
+![WKND 지속적인 쿼리](assets/explore-graphql-api/wknd-persisted-queries.png)
 
-또한 별도의 쿼리를 단일 쿼리로 결합할 수도 있습니다. 이 기능은 응용 프로그램을 구동하는 데 필요한 HTTP 요청 수를 최소화하는 데 유용합니다. 예를 들어 애플리케이션의 *홈* 보기는 **두 개의** 다른 컨텐츠 조각 모델을 기반으로 컨텐츠를 표시할 수 있습니다. **두 개의** 별도의 쿼리를 실행하지 않고 쿼리를 단일 요청으로 결합할 수 있습니다.
-
-1. GraphiQL 편집기에서 다음 쿼리를 입력합니다.
-
-   ```graphql
-   {
-     adventureList {
-       items {
-         _path
-         adventureTitle
-       }
-     }
-     contributorList {
-       items {
-         _path
-         fullName
-       }
-     }
-   }
-   ```
-
-1. 쿼리를 실행하고 결과 세트에 **Adventure** 및 **Contributors**&#x200B;의 데이터가 포함되어 있는지 확인합니다.
-
-```json
-{
-  "data": {
-    "adventureList": {
-      "items": [
-        {
-          "_path": "/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp",
-          "adventureTitle": "Bali Surf Camp"
-        },
-        {
-          "_path": "/content/dam/wknd/en/adventures/beervana-portland/beervana-in-portland",
-          "adventureTitle": "Beervana in Portland"
-        },
-        ...
-      ]
-    },
-    "contributorList": {
-      "items": [
-        {
-          "_path": "/content/dam/wknd/en/contributors/jacob-wester",
-          "fullName": "Jacob Wester"
-        },
-        {
-          "_path": "/content/dam/wknd/en/contributors/stacey-roswells",
-          "fullName": "Stacey Roswells"
-        }
-      ]
-    }
-  }
-}
-```
 
 ## 추가 리소스
 
@@ -299,4 +391,21 @@ GraphQL 쿼리의 많은 예는 다음을 참조하십시오. [AEM에서 GraphQL
 
 ## 다음 단계 {#next-steps}
 
-다음 장의 [React 앱에서 AEM 쿼리](./graphql-and-external-app.md)에서는 외부 애플리케이션이 AEM GraphQL 엔드포인트를 쿼리하는 방법을 알아봅니다. 외부 앱은 샘플 WKND GraphQL React 앱을 수정하여 필터링 GraphQL 쿼리를 추가하여 앱 사용자가 활동별로 모험을 필터링할 수 있도록 합니다. 또한 몇 가지 기본적인 오류 처리를 소개합니다.
+다음 장에서 [React 앱 빌드](./graphql-and-react-app.md)외부 애플리케이션이 AEM GraphQL 끝점을 쿼리하고 이러한 두 개의 지속적인 쿼리를 활용하는 방법을 살펴봅니다. 또한 몇 가지 기본적인 오류 처리를 소개합니다.
+
+## GraphiQL 도구 설치(선택 사항) {#install-graphiql}
+
+일부 AEM 버전의 경우 GraphiQL IDE 도구를 수동으로 설치해야 합니다. 아래 지침에 따라 수동으로 설치합니다.
+
+1. **[소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)** > **AEM as a Cloud Service**&#x200B;로 이동합니다.
+1. “GraphiQL”을 검색합니다(**GraphiQL**&#x200B;에 **i**&#x200B;를 반드시 포함하십시오).
+1. 최신 **GraphiQL 콘텐츠 패키지 v.x.x.x** 다운로드
+
+   ![GraphiQL 패키지 다운로드](assets/explore-graphql-api/software-distribution.png)
+
+   zip 파일은 직접 설치할 수 있는 AEM 패키지입니다.
+
+1. **AEM 시작** 메뉴에서 **도구** > **배포** > **패키지**&#x200B;로 이동합니다.
+1. **패키지 업로드**&#x200B;를 클릭하고 이전 단계에서 다운로드한 패키지를 선택합니다. **설치**&#x200B;를 클릭하여 패키지를 설치합니다.
+
+   ![GraphiQL 패키지 설치](assets/explore-graphql-api/install-graphiql-package.png)

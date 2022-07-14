@@ -6,10 +6,10 @@ version: Cloud Service
 feature-set: Experience Manager, Experience Manager Assets, Experience Manager Sites
 kt: 2963
 index: y
-source-git-commit: 68970493802c7194bcb3ac3ac9ee10dbfb0fc55d
+source-git-commit: a49e56b6f47e477132a9eee128e62fe5a415b262
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 20%
+source-wordcount: '221'
+ht-degree: 21%
 
 ---
 
@@ -36,9 +36,7 @@ ht-degree: 20%
       + [1 - 컨텐츠 조각 모델 정의](./graphql/multi-step/content-fragment-models.md)
       + [2 - 컨텐츠 조각 작성](./graphql/multi-step/author-content-fragments.md)
       + [3 - GraphQL API 탐색](./graphql/multi-step/explore-graphql-api.md)
-      + [4 - 외부 앱에서 쿼리](./graphql/multi-step/graphql-and-external-app.md)
-      + [5 - 조각 참조를 사용한 고급 데이터 모델링](./graphql/multi-step/fragment-references.md)
-      + [6 - 프로덕션 배포](./graphql/multi-step/production-deployment.md)
+      + [4 - React 앱 빌드](./graphql/multi-step/graphql-and-react-app.md)
    + 고급 자습서{#advanced-tutorial}
       + [개요](/help/headless-tutorial/graphql/advanced-graphql/overview.md)
       + [1 - 컨텐츠 조각 모델 만들기](/help/headless-tutorial/graphql/advanced-graphql/create-content-fragment-models.md)

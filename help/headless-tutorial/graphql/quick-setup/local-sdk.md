@@ -10,10 +10,10 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: d2da6efa-1f77-4391-adda-e3180c42addc
-source-git-commit: 0dae6243f2a30147bed7079ad06144ad35b781d8
+source-git-commit: a49e56b6f47e477132a9eee128e62fe5a415b262
 workflow-type: tm+mt
 source-wordcount: '1768'
-ht-degree: 2%
+ht-degree: 8%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 AEM 헤드리스 빠른 설정을 사용하면 WKND 사이트 샘플 프로젝트의 컨텐츠를 사용하여 AEM 헤드리스와 AEM Headless GraphQL API에서 컨텐츠를 사용하는 샘플 React 앱(SPA)을 직접 사용할 수 있습니다. 이 안내서에서는 [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#aem-as-a-cloud-service-sdk).
 
-## 전제 조건 {#prerequisites}
+## 사전 요구 사항 {#prerequisites}
 
 다음 도구는 로컬에 설치해야 합니다.
 
@@ -74,11 +74,11 @@ WKND 참조 사이트에는 [GraphQL 끝점](https://experienceleague.adobe.com/
    >
    > AEM as a Cloud Service 및 과 호환되는 표준 버전을 다운로드하십시오 **not** a `classic` 버전.
 
-1. 에서 **AEM 시작** 메뉴 탐색 **도구** > **배포** > **패키지**.
+1. **AEM 시작** 메뉴에서 **도구** > **배포** > **패키지**&#x200B;로 이동합니다.
 
    ![패키지로 이동](assets/setup/navigate-to-packages.png)
 
-1. 클릭 **패키지 업로드** 이전 단계에서 다운로드한 WKND 패키지를 선택합니다. 클릭 **설치** 를 클릭하여 패키지를 설치합니다.
+1. 클릭 **패키지 업로드** 이전 단계에서 다운로드한 WKND 패키지를 선택합니다. **설치**&#x200B;를 클릭하여 패키지를 설치합니다.
 
 1. 에서 **AEM 시작** 메뉴 탐색 **자산** > **파일**.
 1. 폴더를 클릭하여 이동합니다. **WKND 사이트** > **영어** > **모험**.
@@ -128,7 +128,7 @@ WKND 참조 사이트에는 [GraphQL 끝점](https://experienceleague.adobe.com/
 
    >[!NOTE]
    >
-   > 프로덕션 시나리오에서는 앱이 AEM에 연결됩니다 **게시** 환경. 자세한 내용은 [프로덕션 배포](../multi-step/production-deployment.md) 제2장.
+   > 프로덕션 시나리오에서는 앱이 AEM에 연결됩니다 **게시** 환경. 자세한 내용은 _프로덕션 배포_ 섹션을 참조하십시오.
 
 1. 로 이동합니다. `aem-guides-wknd-graphql/react-app` 폴더를 입력합니다. 앱을 설치하고 시작합니다.
 
@@ -175,18 +175,18 @@ React 앱이 실행 중이니 AEM에서 콘텐츠를 업데이트하고 앱에 �
 
 ## 5. GraphiQL 도구 설치 {#install-graphiql}
 
-[GraphiQL](https://github.com/graphql/graphiql) 는 개발 도구이며 개발 또는 로컬 인스턴스와 같은 하위 수준 환경에서만 필요합니다. GraphiQL IDE를 사용하면 반환된 쿼리 및 데이터를 빠르게 테스트하고 세분화할 수 있습니다. GraphiQL도 설명서에 쉽게 액세스할 수 있으므로 사용 가능한 방법을 쉽게 파악하고 이해할 수 있습니다.
+[GraphiQL](https://github.com/graphql/graphiql) 는 개발 도구이며 개발 또는 로컬 인스턴스와 같은 하위 수준 환경에서만 필요합니다. GraphiQL IDE를 사용하면 반환된 쿼리 및 데이터를 빠르게 테스트하고 세분화할 수 있습니다. 또한 GraphiQL은 설명서에 쉽게 액세스할 수 있어 사용 가능한 방법을 쉽게 배우고 이해할 수 있습니다.
 
-1. 로 이동합니다 **[소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)** > **AEM as a Cloud Service**.
-1. &quot;GraphiQL&quot;을 검색합니다(를). **i** in **GraphiQL**.
-1. 최신 다운로드 **GraphiQL 컨텐츠 패키지 v.x.x.x**
+1. **[소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)** > **AEM as a Cloud Service**&#x200B;로 이동합니다.
+1. “GraphiQL”을 검색합니다(**GraphiQL**&#x200B;에 **i**&#x200B;를 반드시 포함하십시오).
+1. 최신 **GraphiQL 콘텐츠 패키지 v.x.x.x** 다운로드
 
    ![GraphiQL 패키지 다운로드](../multi-step/assets/explore-graphql-api/software-distribution.png)
 
    zip 파일은 직접 설치할 수 있는 AEM 패키지입니다.
 
-1. 에서 **AEM 시작** 메뉴 탐색 **도구** > **배포** > **패키지**.
-1. 클릭 **패키지 업로드** 이전 단계에서 다운로드한 패키지를 선택합니다. 클릭 **설치** 를 클릭하여 패키지를 설치합니다.
+1. **AEM 시작** 메뉴에서 **도구** > **배포** > **패키지**&#x200B;로 이동합니다.
+1. **패키지 업로드**&#x200B;를 클릭하고 이전 단계에서 다운로드한 패키지를 선택합니다. **설치**&#x200B;를 클릭하여 패키지를 설치합니다.
 
    ![GraphiQL 패키지 설치](../multi-step/assets/explore-graphql-api/install-graphiql-package.png)
 1. GraphiQL IDE로 이동합니다. [http://localhost:4502/content/graphiql.html](http://localhost:4502/content/graphiql.html) GraphQL API 탐색을 시작합니다.
