@@ -5,13 +5,13 @@ version: 6.3, 6.4, 6.5
 topic: Content Management
 role: Developer
 level: Intermediate
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+exl-id: 5b764d86-8ced-46ed-838e-4bd2e75fd64c
+source-git-commit: 6dd7164f5ec045b4cffd7732fd83ad9a91fdd511
 workflow-type: tm+mt
-source-wordcount: '159'
+source-wordcount: '154'
 ht-degree: 0%
 
 ---
-
 
 # AEM Assets 및 InDesign Server을 사용하여 자산 템플릿 설정{#set-up-asset-templates-with-aem-assets-and-indesign-server}
 
@@ -21,11 +21,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->AEM **은(는) INDD 템플릿을 업로드할 때 실행 중인 InDesign 서버에 연결되어 있어야 합니다.** INDD 파일에서 초기 처리 과정의 일부에는 InDesign 서버가 필요합니다.
+>AEM **반드시** INDD 템플릿을 업로드할 때 실행 중인 InDesign 서버에 연결할 수 있습니다. INDD 파일에서 초기 처리 과정의 일부에는 InDesign 서버가 필요합니다.
 
 ## InDesign Server 체험판 다운로드 {#download-indesign-server-trial}
 
-[InDesign Server 평가판 다운로드 웹 사이트](https://www.adobe.com/devnet/premiere/sdk/cs5/indesign-server-trial-downloads.html) 다운로드
+다운로드 [InDesign Server 평가판 다운로드 웹 사이트](https://www.adobeprerelease.com/)
 
 ## 시작 InDesign Server {#starting-indesign-server}
 
