@@ -1,23 +1,23 @@
 ---
 title: AEM에서 인증 지원 이해
-description: 'AEM에서 지원하는 인증(및 때때로 권한 부여) 메커니즘에 대한 통합 보기. '
+description: AEM에서 지원하는 인증(및 때때로 권한 부여) 메커니즘에 대한 통합 보기.
 version: 6.3, 6.4, 6.5
-feature: 사용자 및 그룹
+feature: User and Groups
 topics: authentication, security
 activity: understand
 audience: architect, developer, implementer
 doc-type: article
 kt: 406
-topic: 아키텍처
+topic: Architecture
 role: Architect
 level: Experienced
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 96c542ae-6ab6-4d8a-94df-a58b03469320
+source-git-commit: 84d7230071544e7cdc63ecc0faa32c03ab337cd6
 workflow-type: tm+mt
-source-wordcount: '134'
-ht-degree: 3%
+source-wordcount: '130'
+ht-degree: 8%
 
 ---
-
 
 # AEM 6.x에서 인증 지원 이해
 
@@ -52,7 +52,7 @@ AEM에서 지원하는 인증(및 때때로 권한 부여) 메커니즘에 대�
             <td>✔</td>
         </tr>
         <tr>
-            <td>토큰 기반(<a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encapsulated-token.html" target="_blank">캡슐화된 토큰</a>포함)</td>
+            <td>토큰 기반(w/ <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encapsulated-token.html" target="_blank">캡슐형 토큰</a>)</td>
             <td>✔</td>
             <td>✔</td>
             <td>✔</td>
@@ -81,7 +81,7 @@ AEM에서 지원하는 인증(및 때때로 권한 부여) 메커니즘에 대�
                 <td>✔</td>
             </tr>
             <tr>
-                <td><a href="https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html" target="_blank">OAuth 1.0a 및 2.0</a></td>
+                <td><a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/assets/oauth-server-functionality-in-aem-7-23-14.pdf" target="_blank">OAuth 1.0a 및 2.0</a></td>
                 <td>✔</td>
                 <td>✔</td>
                 <td>✔</td>
@@ -95,4 +95,4 @@ AEM에서 지원하는 인증(및 때때로 권한 부여) 메커니즘에 대�
     </tbody>
 </table>
 
-*⁕ 커뮤니티 프로젝트를 통해 제공되지만, Adobe이 직접 지원하지 않습니다.*
+⁕ *커뮤니티 프로젝트를 통해 제공되지만 Adobe에서 직접 지원되지는 않습니다.*
