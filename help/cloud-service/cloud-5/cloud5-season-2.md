@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: e2fabf7c-7fda-4391-ae77-709aa9f7dc0a
-source-git-commit: c3d3eae47c17a7efed15f14e98e2f3ded719cef0
+source-git-commit: 52587c1131620d62428ecfc464a97dce00d8a1d8
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '423'
 ht-degree: 1%
 
 ---
@@ -99,14 +99,16 @@ AEM Engineering의 시즌2의 클라우드 5 시리즈에 오신 것을 환영�
             </p>
          </td>   
      <td>
-            <img alt="수정... 캐시" src="./imgs/coming-soon.png"/>
+            <a href="season-2/cloud5-fix-your-cache.md">
+               <img alt="캐시 수정" src="./imgs/s2/005-thumb.png"/>
+            </a>
       <div>
-         <strong>수정... 캐시</strong>
-         <br/><em>Darin Muntze &amp; James Talbot과 함께, 수석 클라우드 설계자</em>
+         <a href="season-2/cloud5-fix-your-cache.md"><strong>수정... 캐시</strong></a>
+         <br/><em>Damian Langsweirdt 및 James Talbot과 함께, 수석 클라우드 설계자</em>
       </div>
       <p>
-        <br/>
-         2022년 7월 15일 출시
+         <br/>
+             영역을 탐색하여 캐시를 최적화하고 AEM as a Cloud Service에서 실행되는 사이트의 속도를 높일 수 있습니다.
       </p>
    </td> 
   </tr>
