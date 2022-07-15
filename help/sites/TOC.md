@@ -6,7 +6,7 @@ feature-set: Experience Manager Sites, Experience Manager
 source-git-commit: 6f930acd0b51c1f398be7a84efa99944dd3ce704
 workflow-type: tm+mt
 source-wordcount: '435'
-ht-degree: 24%
+ht-degree: 27%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 24%
    + [컨텐츠 조각과 경험 조각 비교](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html)
 + 개발 {#developing}
    + [AEM Project Archetype](developing/aem-project-archetype.md)
-   + [AEM Sites 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR)
+   + [AEM Sites 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
    + [AEM 헤드리스 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
    + [AEM SPA Editor 및 React 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
    + [AEM SPA 편집기 및 Angular 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html)
@@ -58,7 +58,7 @@ ht-degree: 24%
    + [단순 검색 구현](developing/search-tutorial-develop.md)
    + [소셜 미디어 공유](developing/social-media-sharing-technical-video-use.md)
    + [구성 요소 아이콘 사용자 지정](developing/component-icons-technical-video-develop.md)
-+ 개인화 {#personalization}
++ 개인 맞춤화 {#personalization}
    + [Adobe Target과 통합](https://helpx.adobe.com/marketing-cloud/how-to/aem-target.html)
    + [경험 구성요소 및 Adobe Target 설정](personalization/experience-fragment-target-technical-video-setup.md)
    + [Adobe Target에서 경험 조각 사용](personalization/experience-fragment-target-offer-feature-video-use.md)
@@ -73,7 +73,7 @@ ht-degree: 24%
 + 다중 사이트 관리 {#multi-site-management}
    + [언어 사본 소개](./multi-site-management/language-copy-overview.md)
    + [Live Copy 및 블루프린트](./multi-site-management/live-copy-and-blueprint.md)
-   + [Live Copy 만들기](./multi-site-management/create-live-copy.md)
+   + [라이브 카피를 만듭니다](./multi-site-management/create-live-copy.md)
    + [구성 요소의 Live Copy 상속 관리](./multi-site-management/manage-component-inheritance-live-copy.md)
    + [페이지의 Live Copy 상속 관리](./multi-site-management/manage-page-inheritance-live-copy.md)
    + [Live Copy 개요 콘솔](./multi-site-management/live-copy-overview-console.md)
