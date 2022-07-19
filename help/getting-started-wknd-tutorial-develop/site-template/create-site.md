@@ -1,6 +1,6 @@
 ---
 title: 사이트 만들기 | AEM 빠른 사이트 만들기
-description: 빠른 사이트 만들기의 일부로, AEM의 Adobe Experience Manager에서 사이트 만들기 마법사를 사용하여 새 웹 사이트를 생성합니다. Adobe이 제공하는 표준 사이트 템플릿은 새 사이트의 시작점으로 사용됩니다.
+description: 사이트 만들기 마법사를 사용하여 새 웹 사이트를 생성하는 방법을 알아봅니다. Adobe이 제공하는 표준 사이트 템플릿은 새 사이트의 시작점입니다.
 sub-product: sites
 version: Cloud Service
 type: Tutorial
@@ -11,10 +11,10 @@ level: Beginner
 kt: 7496
 thumbnail: KT-7496.jpg
 exl-id: 6d0fdc4d-d85f-4966-8f7d-d53506a7dd08
-source-git-commit: 0225b7f2e495d5c020ea5192302691e3466808ed
+source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
 workflow-type: tm+mt
-source-wordcount: '924'
-ht-degree: 0%
+source-wordcount: '914'
+ht-degree: 1%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 빠른 사이트 만들기의 일부로, AEM의 Adobe Experience Manager에서 사이트 만들기 마법사를 사용하여 새 웹 사이트를 생성합니다. Adobe이 제공하는 표준 사이트 템플릿은 새 사이트의 시작점으로 사용됩니다.
 
-## 전제 조건 {#prerequisites}
+## 사전 요구 사항 {#prerequisites}
 
 이 장의 단계는 Adobe Experience Manager as a Cloud Service 환경에서 수행됩니다. AEM 환경에 대한 관리자 액세스 권한이 있는지 확인합니다. 을 사용하는 것이 좋습니다 [샌드박스 프로그램](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/sandbox-programs/introduction-sandbox-programs.html) 및 [개발 환경](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html) 이 자습서를 완료할 때.
 
@@ -78,7 +78,7 @@ ht-degree: 0%
 사이트 템플릿은 새 사이트의 시작점을 제공합니다. 사이트 템플릿에는 몇 가지 기본 테마, 페이지 템플릿, 구성 및 샘플 컨텐츠가 포함되어 있습니다. 사이트 템플릿에 포함된 것은 개발자에게 달려 있습니다. Adobe은 다음을 제공합니다 **기본 사이트 템플릿** 를 사용하십시오.
 
 1. 새 브라우저 탭을 열고 GitHub의 기본 사이트 템플릿 프로젝트로 이동합니다. [https://github.com/adobe/aem-site-template-standard](https://github.com/adobe/aem-site-template-standard). 이 프로젝트는 오픈 소싱되며 누구나 사용할 수 있는 라이센스가 부여됩니다.
-1. 클릭 **릴리스** 로 이동하여 [최신 릴리스](https://github.com/adobe/aem-site-template-standard/releases/latest).
+1. 클릭 **릴리스** 로 이동하여 [최신 릴리스](https://github.com/adobe/aem-site-template-standard/releases/최신).
 1. 를 확장합니다. **자산** 드롭다운 및 템플릿 zip 파일 다운로드:
 
    ![기본 사이트 템플릿 Zip](assets/create-site/template-basic-zip-file.png)

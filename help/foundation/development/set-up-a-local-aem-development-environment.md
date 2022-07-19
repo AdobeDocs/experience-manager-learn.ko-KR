@@ -1,6 +1,6 @@
 ---
 title: 로컬 AEM 개발 환경 설정
-description: AEM, Adobe Experience Manager에 대한 로컬 개발 설정에 대한 안내서입니다. 로컬 설치, Apache Maven, 통합 개발 환경 및 디버깅/문제 해결에 대한 중요한 항목을 다룹니다. Eclipse IDE, CRXDE-Lite, Visual Studio 코드 및 IntelliJ를 사용한 개발에 대해 설명합니다.
+description: 'Experience Manager을 위한 로컬 개발 환경을 설정하는 방법을 알아봅니다. 로컬 설치, Apache Maven, 통합 개발 환경, 디버깅 및 문제 해결을 숙지하십시오. Eclipse IDE, CRXDE-Lite, Visual Studio Code 및 IntelliJ를 사용합니다. '
 version: 6.4, 6.5
 feature: Developer Tools
 topics: development
@@ -10,9 +10,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 58851624-71c9-4745-aaaf-305acf6ccb14
-source-git-commit: 25a1a40f42d37443db9edc0e09b1691b1c19e848
+source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
 workflow-type: tm+mt
-source-wordcount: '2582'
+source-wordcount: '2579'
 ht-degree: 1%
 
 ---
@@ -170,7 +170,7 @@ IDE를 사용할 때는 반드시 확인하십시오 `classic` maven 프로필 �
 * [**다운로드**](https://code.visualstudio.com/Download) **Visual Studio 코드**
 * **[repo](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#integration-into-visual-studio-code)** - JCR 컨텐츠를 위한 FTP와 유사한 도구
 * **[aemfed](https://aemfed.io/)** - AEM 프런트엔드 워크플로우 속도 향상
-* **[AEM 동기화](https://marketplace.visualstudio.com/items?itemName=Yinkai15.aemsync)** - Visual Studio 코드에 대해 커뮤니티 지원* 확장
+* **[AEM 동기화](https://marketplace.visualstudio.com/items?itemName=Yinkai15.aemsync)** - 커뮤니티 지원&#42; visual Studio 코드를 위한 확장
 
 >[!VIDEO](https://video.tv.adobe.com/v/25907?quality=12&learn=on)
 

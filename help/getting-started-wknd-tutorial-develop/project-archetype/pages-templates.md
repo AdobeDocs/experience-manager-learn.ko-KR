@@ -1,6 +1,6 @@
 ---
 title: AEM Sites 시작하기 - 페이지 및 템플릿
-description: 기본 페이지 구성 요소와 편집 가능한 템플릿 간의 관계에 대해 알아봅니다. 핵심 구성 요소가 프로젝트에 프록시되는 방법을 이해하고 편집 가능한 템플릿의 고급 정책 구성을 배워서 Adobe XD의 모집단 을 기반으로 잘 구성된 문서 페이지 템플릿을 작성합니다.
+description: 기본 페이지 구성 요소와 편집 가능한 템플릿 간의 관계에 대해 알아봅니다. 핵심 구성 요소가 프로젝트에 프록시되는 방법을 이해합니다. Adobe XD의 샘플을 기반으로 잘 구성된 문서 페이지 템플릿을 작성하기 위한 편집 가능한 템플릿의 고급 정책 구성을 알아봅니다.
 feature: Core Components, Editable Templates, Page Editor
 topic: Content Management, Development
 role: Developer
@@ -9,9 +9,9 @@ mini-toc-levels: 1
 kt: 4082
 thumbnail: 30214.jpg
 exl-id: e9d06dc2-ac3b-48c5-ae00-fdaf5bb45b54
-source-git-commit: df9ff5e6811d35118d1beee6baaffa51081cb3c3
+source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
 workflow-type: tm+mt
-source-wordcount: '3082'
+source-wordcount: '3081'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 이 장에서는 기본 페이지 구성 요소와 편집 가능한 템플릿 간의 관계를 살펴봅니다. 다음의 몇 가지 모형들을 바탕으로 스타일이 지정되지 않은 기사 템플릿을 작성할 것입니다. [AdobeXD](https://www.adobe.com/products/xd.html). 템플릿을 작성하는 과정에서 편집 가능한 템플릿의 핵심 구성 요소 및 고급 정책 구성이 다룹니다.
 
-## 전제 조건 {#prerequisites}
+## 사전 요구 사항 {#prerequisites}
 
 설정에 필요한 도구 및 지침을 검토합니다. [로컬 개발 환경](overview.md#local-dev-environment).
 

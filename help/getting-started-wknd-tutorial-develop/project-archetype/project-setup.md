@@ -1,7 +1,6 @@
 ---
 title: AEM Sites 시작하기 - 프로젝트 설정
-seo-title: Getting Started with AEM Sites - Project Setup
-description: AEM 사이트에 대한 코드 및 구성을 관리할 Maven 다중 모듈 프로젝트 만들기를 다룹니다.
+description: Experience Manager 사이트에 대한 코드 및 구성을 관리하려면 Maven 다중 모듈 프로젝트를 만드십시오.
 sub-product: sites
 version: 6.5, Cloud Service
 type: Tutorial
@@ -13,10 +12,10 @@ mini-toc-levels: 1
 kt: 3418
 thumbnail: 30152.jpg
 exl-id: bb0cae58-79bd-427f-9116-d46afabdca59
-source-git-commit: df9ff5e6811d35118d1beee6baaffa51081cb3c3
+source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
 workflow-type: tm+mt
-source-wordcount: '1818'
-ht-degree: 3%
+source-wordcount: '1816'
+ht-degree: 4%
 
 ---
 
@@ -24,7 +23,7 @@ ht-degree: 3%
 
 이 자습서에서는 Adobe Experience Manager 사이트에 대한 코드 및 구성을 관리하기 위한 Maven 다중 모듈 프로젝트 만들기 를 다룹니다.
 
-## 전제 조건 {#prerequisites}
+## 사전 요구 사항 {#prerequisites}
 
 설정에 필요한 도구 및 지침을 검토합니다. [로컬 개발 환경](./overview.md#local-dev-environment). 로컬에서 사용할 수 있는 Adobe Experience Manager의 새 인스턴스가 있고 추가 샘플/데모 패키지가 설치되어 있지 않은지(필수 서비스 팩 제외) 확인하십시오.
 

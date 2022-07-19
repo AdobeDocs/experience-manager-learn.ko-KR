@@ -1,22 +1,21 @@
 ---
 title: AEM 헤드리스 시작하기 - GraphQL
-description: AEM GraphQL API 및 기능에 대한 개요입니다.
-feature: 컨텐츠 조각, GraphQL API, API
-topic: 헤드리스, 컨텐츠 관리
+description: Experience Manager GraphQL API 및 기능에 대해 알아봅니다.
+feature: Content Fragments, GraphQL API, APIs
+topic: Headless, Content Management
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 0056971f-2f89-43b3-bb6f-dd16c2a50370
+source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '246'
 ht-degree: 1%
 
 ---
 
-
 # AEM 헤드리스 시작하기 - GraphQL
 
-컨텐츠 조각용 AEM GraphQL API
-에서는 외부 클라이언트 애플리케이션이 AEM에서 관리되는 콘텐츠를 사용하여 경험을 렌더링하는 헤드리스 CMS 시나리오를 지원합니다.
+컨텐츠 조각용 AEM GraphQL API는 AEM에서 관리되는 컨텐츠를 사용하여 외부 클라이언트 애플리케이션이 경험을 렌더링하는 헤드리스 CMS 시나리오를 지원합니다.
 
 최신 콘텐츠 전달 API는 Javascript 기반 프런트 엔드 애플리케이션의 효율성 및 성능을 위한 키입니다. REST API 를 사용하면 다음과 같은 문제가 발생합니다.
 

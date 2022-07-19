@@ -1,6 +1,6 @@
 ---
 title: 단위 테스트
-description: 이 자습서에서는 사용자 지정 구성 요소 자습서에서 만든 타임라인 구성 요소의 Sling 모델의 동작을 확인하는 단위 테스트 구현에 대해 설명합니다.
+description: 사용자 지정 구성 요소 자습서에서 만든 라인 구성 요소의 Sling 모델의 동작을 확인하는 단위 테스트를 구현합니다.
 sub-product: sites
 version: 6.5, Cloud Service
 type: Tutorial
@@ -12,9 +12,9 @@ kt: 4089
 mini-toc-levels: 1
 thumbnail: 30207.jpg
 exl-id: b926c35e-64ad-4507-8b39-4eb97a67edda
-source-git-commit: df9ff5e6811d35118d1beee6baaffa51081cb3c3
+source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
 workflow-type: tm+mt
-source-wordcount: '3025'
+source-wordcount: '3020'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 이 자습서에서는 다음 위치에서 만든 라인 구성 요소의 Sling 모델의 동작을 확인하는 단위 테스트 구현을 다룹니다 [사용자 지정 구성 요소](./custom-component.md) 자습서입니다.
 
-## 전제 조건 {#prerequisites}
+## 사전 요구 사항 {#prerequisites}
 
 설정에 필요한 도구 및 지침을 검토합니다. [로컬 개발 환경](overview.md#local-dev-environment).
 
@@ -78,7 +78,7 @@ AEM 우수 사례를 사용하며, 다음과 같이 사용합니다.
 
 ## Cloud Manager 단위 테스트 및 Adobe {#unit-testing-and-adobe-cloud-manager}
 
-[Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=ko-KR) 단위 테스트 실행 통합 [코드 검사 보고](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html#code-quality-testing) 를 CI/CD 파이프라인으로 전환하여 AEM 코드의 단위 테스트 우수 사례를 권장하고 프로모션합니다.
+[Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) 단위 테스트 실행 통합 [코드 검사 보고](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html#code-quality-testing) 를 CI/CD 파이프라인으로 전환하여 AEM 코드의 단위 테스트 우수 사례를 권장하고 프로모션합니다.
 
 장치 테스트 코드는 모든 코드 베이스에 권장되지만 Cloud Manager를 사용할 때는 Cloud Manager를 실행할 단위 테스트를 제공하여 코드 품질 테스트 및 보고 기능을 활용하는 것이 중요합니다.
 

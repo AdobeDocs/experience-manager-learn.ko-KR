@@ -1,13 +1,13 @@
 ---
-title: AEM Sites 비디오 및 튜토리얼
-description: Adobe Experience Manager Sites을 위한 비디오 및 자습서를 통해 AEM에 대해 자세히 알아보십시오.
+title: AEM Sites 비디오 및 자습서
+description: 비디오 및 자습서에서 Experience Manager Sites에 대해 알아봅니다. Adobe의 직원들이 AEM Sites의 새로운 기능과 추천 사항을 소개합니다.
 sub-product: sites, content-services
 topic: Content Management
 exl-id: cde4ce7f-0afe-4632-8c1c-354586f296d5
-source-git-commit: efa33aa8cf8288d48ae56d2e96ed9d3a6c4e9627
+source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
 workflow-type: tm+mt
-source-wordcount: '348'
-ht-degree: 23%
+source-wordcount: '354'
+ht-degree: 21%
 
 ---
 
@@ -42,7 +42,7 @@ Adobe Experience Manager (AEM) Sites는 선도적인 경험 관리 플랫폼입�
 <table>
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html">
       <img alt="AEM Sites 시작하기 - WKND 튜토리얼" src="./assets/aem-wknd-tutorial.png" />
     </a>
     <div>
@@ -55,7 +55,7 @@ Adobe Experience Manager (AEM) Sites는 선도적인 경험 관리 플랫폼입�
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ko-KR">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html">
     <img alt="AEM 헤드리스 시작하기" src="./assets/aem-headless-tutorial.png" />
     </a>
     <div>

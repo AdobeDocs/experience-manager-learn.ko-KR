@@ -1,6 +1,6 @@
 ---
 title: 클라이언트 측 라이브러리 및 프런트 엔드 워크플로우
-description: 클라이언트측 라이브러리 또는 clientlibs를 사용하여 AEM(Adobe Experience Manager) 사이트 구현을 위한 CSS 및 Javascript를 배포하고 관리하는 방법을 알아봅니다. 또한 이 자습서에서는 웹 팩 프로젝트인 ui.frontend 모듈을 전체 빌드 프로세스에 통합하는 방법을 다룹니다.
+description: 클라이언트측 라이브러리 또는 clientlibs를 사용하여 AEM(Adobe Experience Manager) 사이트 구현을 위한 CSS 및 Javascript를 배포하고 관리하는 방법을 알아봅니다. 웹 팩 프로젝트인 ui.frontend 모듈을 전체 빌드 프로세스에 통합하는 방법을 알아봅니다.
 sub-product: sites
 version: 6.4, 6.5, Cloud Service
 type: Tutorial
@@ -11,10 +11,10 @@ level: Beginner
 kt: 4083
 thumbnail: 30359.jpg
 exl-id: 8d3026e9-a7e2-4a76-8a16-a8197a5e04e3
-source-git-commit: 1a73d7ee1f71a5bd78114398f04e98a894847957
+source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
 workflow-type: tm+mt
-source-wordcount: '2882'
-ht-degree: 1%
+source-wordcount: '2878'
+ht-degree: 2%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 클라이언트측 라이브러리 또는 clientlibs를 사용하여 AEM(Adobe Experience Manager) 사이트 구현을 위한 CSS 및 Javascript를 배포하고 관리하는 방법을 알아봅니다. 이 튜토리얼에서는 [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) 모듈, 탈결합 [웹 팩](https://webpack.js.org/) 프로젝트를 종단 간 빌드 프로세스에 통합할 수 있습니다.
 
-## 전제 조건 {#prerequisites}
+## 사전 요구 사항 {#prerequisites}
 
 설정에 필요한 도구 및 지침을 검토합니다. [로컬 개발 환경](overview.md#local-dev-environment).
 
