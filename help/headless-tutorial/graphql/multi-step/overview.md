@@ -10,10 +10,10 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 41e15a2c-758b-4e7d-9d23-ef671c1dc155
-source-git-commit: a49e56b6f47e477132a9eee128e62fe5a415b262
+source-git-commit: 879018d44cc63421d1c7185cce1c30fedbf526c9
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 2%
+source-wordcount: '440'
+ht-degree: 1%
 
 ---
 
@@ -52,8 +52,6 @@ AEM GraphQL API를 사용하여 컨텐츠를 작성하고 노출하고 헤드리
    * [AEM as a Cloud Service 및 Cloud Manager 액세스](/help/cloud-service/accessing/overview.md)
       * **AEM 관리자** AEM as a Cloud Service 액세스
       * **Cloud Manager - 개발자** cloud Manager 액세스
-* [로컬 AEM as a Cloud Service Quickstart SDK](/help/cloud-service/local-development-environment/aem-runtime.md).
-* [AEM 6.5.13+](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html)
 
 ### 샘플 컨텐츠 설치 {#install-sample-content}
 
@@ -65,6 +63,7 @@ AEM GraphQL API를 사용하여 컨텐츠를 작성하고 노출하고 헤드리
 1. AEM 시작 화면에서 로 이동합니다. **도구** > **배포** > **패키지**:
 
    ![패키지 관리자 탐색](assets/overview/navigate-package-manager.png)
+
 1. 탭 **패키지 업로드** 그리고 `aem-guides-wknd-shared.ui.content-x.x.x.zip` 이전에 다운로드한 파일입니다. 탭 **확인** 업로드합니다.
 1. 패키지 업로드를 마치면 를 누릅니다 **설치** 을 클릭하여 콘텐츠를 설치합니다.
 
