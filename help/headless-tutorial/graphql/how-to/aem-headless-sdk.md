@@ -9,7 +9,7 @@ level: Intermediate
 kt: 10269
 thumbnail: KT-10269.jpeg
 exl-id: 922a464a-2286-4132-9af8-f5a1fb5ce268
-source-git-commit: 68970493802c7194bcb3ac3ac9ee10dbfb0fc55d
+source-git-commit: 595d990b7d8ed3c801a085892fef38d780082a15
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 4%
@@ -25,10 +25,6 @@ AEM Headless SDK는 다음과 같은 다양한 플랫폼에서 사용할 수 있
 + [클라이언트측 브라우저용 AEM Headless SDK (JavaScript)](https://github.com/adobe/aem-headless-client-js)
 + [server-side/Node.js용 AEM Headless SDK (JavaScript)](https://github.com/adobe/aem-headless-client-nodejs)
 + [Java™용 AEM Headless SDK](https://github.com/adobe/aem-headless-client-java)
-
-## GraphQL 쿼리
-
-AEM은 클라이언트 정의 GraphQL 쿼리를 지원하지만 AEM에서 사용하는 가장 좋은 방법입니다 [지속된 GraphQL 쿼리](#persisted-graphql-queries).
 
 ## 지속 GraphQL 쿼리
 
@@ -202,3 +198,8 @@ let { data, errors } = useAdventureBySlug('bali-surf-camp');
 +++
 
 <p> </p>
+
+## GraphQL 쿼리
+
+AEM은 클라이언트 정의 GraphQL 쿼리를 지원하지만 AEM에서 사용하는 가장 좋은 방법입니다 [지속된 GraphQL 쿼리](#persisted-graphql-queries).
+
