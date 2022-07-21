@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: e2fabf7c-7fda-4391-ae77-709aa9f7dc0a
-source-git-commit: 52587c1131620d62428ecfc464a97dce00d8a1d8
+source-git-commit: c061ea9d08606052c4b2cf5b3c84d6f1df5a57fa
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '440'
 ht-degree: 1%
 
 ---
@@ -114,14 +114,16 @@ AEM Engineering의 시즌2의 클라우드 5 시리즈에 오신 것을 환영�
   </tr>
 <tr>
    <td>
-            <img alt="수정... Rewrites" src="./imgs/coming-soon.png"/>
+           <a href="season-2/cloud5-fix-your-rewrites.md">
+               <img alt="Rewrites 수정" src="./imgs/s2/006-thumb.png"/>
+            </a>
       <div>
-            <strong>수정... Rewrites</strong>
+            <a href="season-2/cloud5-fix-your-rewrites.md"><strong>수정... Rewrites</strong></a>
          <br/><em>Darin Muntze &amp; James Talbot과 함께, 수석 클라우드 설계자</em>
       </div>
       <p>
         <br/>
-         2022년 7월 22일 출시
+         AEM에서 다시 작성 개발 및 최적화를 가속화하는 데 도움이 되는 작업에 대한 빠른 통찰력 as a Cloud Service.
       </p>
      </td>   
      <td>
