@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 701fae92-f740-4eb6-8133-1bc45a472d0f
-source-git-commit: a49e56b6f47e477132a9eee128e62fe5a415b262
+source-git-commit: 410eb23534e083940bf716194576e099d22ca205
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '819'
 ht-degree: 2%
 
 ---
@@ -59,7 +59,7 @@ ht-degree: 2%
 
    ![허용된 컨텐츠 조각 모델](assets/author-content-fragments/allowed-content-fragment-models.png)
 
-   이러한 정책은 하위 폴더에서 자동으로 상속되며 재정의할 수 있습니다. 태그별 모델을 허용하거나 다른 프로젝트 구성(예: WKND 공유)의 모델을 활성화할 수도 있습니다. 이 메커니즘은 컨텐츠 계층 구조를 관리하는 강력한 방법을 제공합니다.
+   이러한 정책은 하위 폴더에서 자동으로 상속되며 재정의할 수 있습니다. 태그별 모델을 허용하거나 다른 프로젝트 구성의 모델을 활성화할 수도 있습니다. 이 메커니즘은 컨텐츠 계층 구조를 관리하는 강력한 방법을 제공합니다.
 
 1. 탭 **저장 및 닫기** 폴더 속성에 대한 변경 사항을 저장하려면 다음을 수행합니다.
 
@@ -121,17 +121,9 @@ ht-degree: 2%
 
    ![컨텐츠 조각 열기](assets/author-content-fragments/open-fragment-for-editing.png)
 
-1. 컨텐츠 조각 편집기에는 컨텐츠 조각 모델을 기반으로 하는 양식이 포함되어 있습니다. 다양한 필드를 작성하여 컨텐츠를 **존 도** 조각. 프로필 그림의 경우 WKND 공유에서 이미지 중 하나를 선택하거나 자신의 이미지를 AEM Assets에 업로드할 수 있습니다.
+1. 컨텐츠 조각 편집기에는 컨텐츠 조각 모델을 기반으로 하는 양식이 포함되어 있습니다. 다양한 필드를 작성하여 컨텐츠를 **존 도** 조각. 프로필 그림의 경우 자체 이미지를 AEM Assets에 업로드하십시오.
 
    ![컨텐츠 조각 편집기](assets/author-content-fragments/content-fragment-editor-jd.png)
-
-1. 다음 을 누릅니다 **변형 만들기** 왼쪽 레일에 있습니다. 대화 상자에서 다음을 입력합니다. **대체** 변형의 이름입니다.
-
-1. 에서 일부 요소 변경 **대체** 변형이 가능합니다.
-
-   ![대체 버전](assets/author-content-fragments/alternate-variation-john-doe-fragment.png)
-
-   변형 기능을 사용하면 작성자가 동일한 컨텐츠 조각의 다른 버전을 만들 수 있습니다. 이렇게 하면 긴 양식 문서의 요약 버전을 제공하는 데 사용할 수 있습니다. 기본적으로 단일 **기본** 변형이 만들어집니다. 변형의 여러 줄 텍스트 필드 요소를 마스터 변형과 동기화할 수 있습니다.
 
 1. 탭 **저장 및 닫기** 를 눌러 John Doe 조각의 변경 사항을 저장합니다.
 1. 컨텐츠 조각 UI로 돌아가서 를 엽니다 **앨리슨 스미스** 편집할 파일입니다.
@@ -151,11 +143,17 @@ ht-degree: 2%
 
 1. 탭 **저장 및 닫기** 팀 알파 조각에 대한 변경 사항을 저장하려면 을 클릭합니다.
 
-## WKND 컨텐츠 조각 탐색(선택 사항) {#explore-wknd-content-fragments}
+## 컨텐츠 조각 게시
 
-만약 [WKND 공유 샘플 컨텐츠 설치](./overview.md#install-sample-content) 컨텐츠 조각에 대한 모험, 문서 및 작성자 모델을 검토하여 컨텐츠 만들기에 대한 더 많은 아이디어를 얻을 수 있습니다.
+검토 및 확인 시 작성된 문서를 게시합니다 `Content Fragments`
 
-![WKND 컨텐츠 조각](assets/author-content-fragments/wknd-content-fragments.png)
+1. AEM 시작 화면에서 탭하기 **컨텐츠 조각** 컨텐츠 조각 UI를 엽니다.
+
+1. 왼쪽 레일에서 확장됩니다 **내 프로젝트** 탭 **영어**.
+
+1. 컨텐츠 조각 옆에 있는 확인란을 탭하고 탭합니다 **게시**
+
+   ![컨텐츠 조각 게시](assets/author-content-fragments/publish-content-fragment.png)
 
 ## 축하합니다! {#congratulations}
 

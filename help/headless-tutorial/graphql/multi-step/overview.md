@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 41e15a2c-758b-4e7d-9d23-ef671c1dc155
-source-git-commit: 879018d44cc63421d1c7185cce1c30fedbf526c9
+source-git-commit: 410eb23534e083940bf716194576e099d22ca205
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '291'
 ht-degree: 1%
 
 ---
@@ -51,25 +51,6 @@ AEM GraphQL API를 사용하여 컨텐츠를 작성하고 노출하고 헤드리
 * AEM as a Cloud Service 환경
    * [AEM as a Cloud Service 및 Cloud Manager 액세스](/help/cloud-service/accessing/overview.md)
       * **AEM 관리자** AEM as a Cloud Service 액세스
-      * **Cloud Manager - 개발자** cloud Manager 액세스
-
-### 샘플 컨텐츠 설치 {#install-sample-content}
-
-이렇게 하면 AEM 환경에서 이미 사용 가능한 샘플 컨텐츠를 참조로 사용할 수 있는 것이 도움이 될 수 있습니다.
-
-1. 로 이동합니다 [AEM WKND 공유 프로젝트](https://github.com/adobe/aem-guides-wknd-shared/releases).
-1. 최신 릴리스 자산을 다운로드합니다. `aem-guides-wknd-shared.ui.content-x.x.x.zip`.
-1. 자습서에 사용할 AEM 작성 환경에 로그인합니다.
-1. AEM 시작 화면에서 로 이동합니다. **도구** > **배포** > **패키지**:
-
-   ![패키지 관리자 탐색](assets/overview/navigate-package-manager.png)
-
-1. 탭 **패키지 업로드** 그리고 `aem-guides-wknd-shared.ui.content-x.x.x.zip` 이전에 다운로드한 파일입니다. 탭 **확인** 업로드합니다.
-1. 패키지 업로드를 마치면 를 누릅니다 **설치** 을 클릭하여 콘텐츠를 설치합니다.
-
-   ![샘플 컨텐츠 패키지 설치](assets/overview/install-sample-content-package.png)
-
-1. 샘플 컨텐츠 조각, 컨텐츠 조각 모델, 이미지 등이 매우 중요하므로 [WKND 브랜드](https://wknd.site/). 샘플 컨텐츠는 자습서에서 나중에 참조됩니다.
 
 ## 시작해 보겠습니다!
 
@@ -80,5 +61,3 @@ AEM GraphQL API를 사용하여 컨텐츠를 작성하고 노출하고 헤드리
 소스 코드 및 컨텐츠 패키지는 [AEM 안내서 - WKND GraphQL GitHub 프로젝트](https://github.com/adobe/aem-guides-wknd-graphql).
 
 자습서나 코드에 문제가 있는 경우 [GitHub 문제](https://github.com/adobe/aem-guides-wknd-graphql/issues).
-
-샘플 컨텐츠 조각, 모델 및 쿼리는 [AEM WKND 공유 프로젝트](https://github.com/adobe/aem-guides-wknd-shared)

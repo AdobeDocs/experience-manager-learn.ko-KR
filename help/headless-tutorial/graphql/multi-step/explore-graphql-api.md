@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 508b0211-fa21-4a73-b8b4-c6c34e3ba696
-source-git-commit: a49e56b6f47e477132a9eee128e62fe5a415b262
+source-git-commit: 410eb23534e083940bf716194576e099d22ca205
 workflow-type: tm+mt
-source-wordcount: '1527'
+source-wordcount: '1532'
 ht-degree: 7%
 
 ---
@@ -56,9 +56,9 @@ AEM의 GraphQL API는 컨텐츠 조각의 데이터를 다운스트림 애플리
 
    >[!NOTE]
    >
-   > 프로젝트 간 모델에 대한 쿼리를 활성화하는 글로벌 엔드포인트를 만들 수도 있습니다. 예를 들어, **WKND 공유** 프로젝트 및 **내 프로젝트**. 이 값은 추가 보안 취약점으로 환경을 열 가능성이 있으므로 필요한 경우에만 주의해서 사용해야 합니다.
+   > 여러 구성의 모델에 대한 쿼리를 활성화하도록 전역 끝점을 만들 수도 있습니다. 이 기능은 추가 보안 취약점으로 환경을 개방할 수 있으므로 주의해서 사용해야 하며, AEM 관리의 복잡도를 크게 향상시킬 수 있습니다.
 
-1. 이제 환경에 두 개의 GraphQL 엔드포인트가 활성화되어 있어야 합니다(WKND 공유 컨텐츠를 설치했다고 가정).
+1. 이제 환경에 GraphQL 엔드포인트가 한 개 활성화되어 있어야 합니다.
 
    ![graphql 종단점 사용](assets/explore-graphql-api/enabled-graphql-endpoints.png)
 
@@ -76,11 +76,11 @@ AEM의 GraphQL API는 컨텐츠 조각의 데이터를 다운스트림 애플리
    >
    > 이전 버전의 AEM의 경우 GraphiQL IDE를 내장하지 않을 수 있습니다. 다음 지침에 따라 수동으로 설치할 수 있습니다 [지침](#install-graphiql).
 
-1. 오른쪽 상단 모서리에서 **끝점** to **내 프로젝트 끝점**.
+1. 오른쪽 상단 모서리에서 **끝점** 가 로 설정되어 있습니다. **내 프로젝트 끝점**.
 
    ![GraphQL 끝점 설정](assets/explore-graphql-api/set-my-project-endpoint.png)
 
-   이렇게 하면 모든 쿼리가 **내 프로젝트** 프로젝트. 에 대한 엔드포인트가 있습니다 **WKND 공유**.
+이렇게 하면 모든 쿼리가 **내 프로젝트** 프로젝트.
 
 ### 컨텐츠 조각 목록 쿼리 {#query-list-cf}
 
@@ -370,16 +370,28 @@ AEM의 GraphQL API는 컨텐츠 조각의 데이터를 다운스트림 애플리
 
    ![최종 지속적인 쿼리](assets/explore-graphql-api/final-persisted-queries.png)
 
+
+## GraphQL 끝점 및 지속된 쿼리 게시
+
+검토 및 확인 시 를 게시합니다. `GraphQL Endpoint` &amp; `Persisted Queries`
+
+1. AEM 시작 화면에서 로 이동합니다. **도구** > **일반** > **GraphQL**.
+
+1. 옆에 있는 확인란을 누릅니다 **내 프로젝트 끝점** 탭 **게시**
+
+   ![GraphQL 끝점 게시](assets/explore-graphql-api/publish-graphql-endpoint.png)
+
+1. AEM 시작 화면에서 로 이동합니다. **도구** > **일반** > **GraphQL 쿼리 편집기**
+
+1. 탭하기 *모든 팀* 지속형 쿼리 패널에서 **게시**
+
+   ![지속되는 쿼리 게시](assets/explore-graphql-api/publish-persisted-query.png)
+
+1. 에 대해 위의 단계를 반복합니다. `person-by-name` 쿼리
+
 ## 솔루션 파일 {#solution-files}
 
 마지막 세 장에서 만든 콘텐츠, 모델 및 영구 쿼리를 다운로드합니다. [tutorial-solution-content.zip](assets/explore-graphql-api/tutorial-solution-content.zip)
-
-## WKND 지속적인 쿼리 탐색(선택 사항) {#explore-wknd-content-fragments}
-
-만약 [WKND 공유 샘플 컨텐츠 설치](./overview.md#install-sample-content) 모험-all, adventure-by-activity, adventure-by-path 등과 같은 지속적인 쿼리를 검토하고 실행할 수 있습니다.
-
-![WKND 지속적인 쿼리](assets/explore-graphql-api/wknd-persisted-queries.png)
-
 
 ## 추가 리소스
 

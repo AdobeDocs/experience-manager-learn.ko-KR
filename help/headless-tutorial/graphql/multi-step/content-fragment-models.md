@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 9400d9f2-f828-4180-95a7-2ac7b74cd3c9
-source-git-commit: a49e56b6f47e477132a9eee128e62fe5a415b262
+source-git-commit: 410eb23534e083940bf716194576e099d22ca205
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1134'
 ht-degree: 2%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 2%
 
 ## 사전 요구 사항 {#prerequisites}
 
-이 튜토리얼은 여러 부분으로 구성된 튜토리얼이며 [AEM 작성자 환경을 사용할 수 있습니다.](./overview.md#prerequisites) 원할 경우 [WKND 공유 샘플 콘텐츠가 설치되었습니다](./overview.md#install-sample-content).
+이 튜토리얼은 여러 부분으로 구성된 튜토리얼이며 [AEM 작성자 환경을 사용할 수 있습니다.](./overview.md#prerequisites)
 
 ## 목표 {#objectives}
 
@@ -39,7 +39,7 @@ ht-degree: 2%
 
 프로젝트 구성에는 특정 프로젝트와 연관된 모든 컨텐츠 조각 모델이 포함되어 있으며 모델을 구성하는 방법을 제공합니다. 하나 이상의 프로젝트를 만들어야 합니다 **이전** 새 컨텐츠 조각 모델 생성.
 
-1. AEM에 로그인합니다. **작성자** 환경.
+1. AEM에 로그인합니다. **작성자** 환경(예: `https://author-pYYYY-eXXXX.adobeaemcloud.com/`)
 1. AEM 시작 화면에서 로 이동합니다. **도구** > **일반** > **구성 브라우저**.
 
    ![구성 브라우저로 이동합니다.](assets/content-fragment-models/navigate-config-browser.png)
@@ -65,7 +65,6 @@ ht-degree: 2%
 
    ![컨텐츠 조각 모델로 이동합니다](assets/content-fragment-models/navigate-cf-models.png)
 
-   를 설치한 경우 [샘플 컨텐츠](overview.md#install-sample-content) 그러면 두 개의 폴더가 표시됩니다. **내 프로젝트** 및 **WKND 공유**.
 1. 로 이동합니다. **내 프로젝트** 폴더를 입력합니다.
 1. 탭 **만들기** 오른쪽 상단 모서리에서 **모델 만들기** 마법사
 1. 대상 **모델 제목** 다음을 입력합니다. **개인** 탭 **만들기**.
@@ -165,23 +164,23 @@ ht-degree: 2%
 
    ![두 가지 모델](assets/content-fragment-models/two-new-models.png)
 
-## WKND 컨텐츠 조각 모델을 Inspect 합니다(선택 사항)
+## 프로젝트 구성 및 컨텐츠 조각 모델 게시
 
-만약 [WKND 공유 샘플 컨텐츠 설치](./overview.md#install-sample-content) 모험, 문서 및 작성 모델을 검사하여 데이터 모델링 기술에 대한 더 많은 아이디어를 얻을 수 있습니다.
+검토 및 확인 시 를 게시합니다. `Project Configuration` &amp; `Content Fragment Model`
 
-1. 에서 **AEM 시작** 메뉴 탐색 **도구** > **일반** > **컨텐츠 조각 모델**.
+1. AEM 시작 화면에서 로 이동합니다. **도구** > **일반** > **구성 브라우저**.
 
-1. 로 이동합니다. **WKND 공유** 폴더 아래에 세 가지 모델이 표시됩니다. 기사, 모험 및 작가.
+1. 옆에 있는 확인란을 누릅니다 **내 프로젝트** 탭 **게시**
 
-1. 카드 위로 마우스를 이동하고 편집 아이콘(연필)을 탭하여 모델을 Inspect 할 수 있습니다
+   ![프로젝트 구성 게시](assets/content-fragment-models/publish-project-config.png)
 
-   ![WKND 모델](assets/content-fragment-models/wknd-shared-models.png)
+1. AEM 시작 화면에서 로 이동합니다. **도구** > **일반** > **컨텐츠 조각 모델**.
 
-1. 이렇게 하면 **컨텐츠 조각 모델 편집기** 모델의 경우 사용되는 다양한 데이터 유형을 검사할 수 있습니다.
+1. 로 이동합니다. **내 프로젝트** 폴더를 입력합니다.
 
-   >[!CAUTION]
-   >
-   > 모델 수정 **after** 컨텐츠 조각이 생성되었으며 다운스트림 효과가 있습니다. 기존 조각의 필드 값은 더 이상 참조되지 않으며 GraphQL에 의해 노출된 데이터 스키마가 변경되어 기존 애플리케이션에 영향을 줍니다.
+1. 탭 **개인** 및 **팀** 모델 및 탭 **게시**
+
+   ![컨텐츠 조각 모델 게시](assets/content-fragment-models/publish-content-fragment-model.png)
 
 ## 축하합니다! {#congratulations}
 
