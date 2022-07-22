@@ -9,7 +9,7 @@ level: Intermediate
 kt: 9354
 thumbnail: KT-9354.jpeg
 exl-id: c8cc0385-9e94-4120-9fb1-aeccbfcc8aa4
-source-git-commit: a18bea7986062ff9cb731d794187760ff6e0339f
+source-git-commit: 8e8991d128ff40f7873dd8666460e761356c2dd9
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # 유연한 포트 전송을 위한 비표준 포트에서 HTTP/HTTPS 연결
 
-비표준 포트(80/443 아님)에서 HTTP/HTTPS 연결은 AEM as a Cloud Service에서 프록시되어야 하지만 특별한 경우에는 필요하지 않습니다 `portForwards` 규칙 및 AEM 고급 네트워킹의 `AEM_PROXY_HOST` 예약된 프록시 포트 `AEM_HTTP_PROXY_HOST` 또는 `AEM_HTTPS_PROXY_HOST` 은 대상에 따라 HTTP/HTTPS입니다.
+비표준 포트(80/443 아님)에서 HTTP/HTTPS 연결은 AEM as a Cloud Service에서 프록시되어야 하지만 특별한 경우에는 필요하지 않습니다 `portForwards` 규칙 및 AEM 고급 네트워킹의 `AEM_PROXY_HOST` 예약된 프록시 포트 `AEM_HTTP_PROXY_PORT` 또는 `AEM_HTTPS_PROXY_PORT` 은 대상에 따라 HTTP/HTTPS입니다.
 
 ## 고급 네트워킹 지원
 
@@ -68,8 +68,8 @@ public class HttpExternalServiceImpl implements ExternalService {
     public boolean isAccessible() {
         HttpClient client;
 
-        // Use System.getenv("AEM_PROXY_HOST") and proxy port System.getenv("AEM_HTTP_PROXY_HOST") 
-        // or System.getenv("AEM_HTTPS_PROXY_HOST"), depending on if the destination requires HTTP/HTTPS
+        // Use System.getenv("AEM_PROXY_HOST") and proxy port System.getenv("AEM_HTTP_PROXY_PORT") 
+        // or System.getenv("AEM_HTTPS_PROXY_PORT"), depending on if the destination requires HTTP/HTTPS
 
         if (System.getenv("AEM_PROXY_HOST") != null) {
             // Create a ProxySelector that uses to AEM's provided AEM_PROXY_HOST, with a fallback of proxy.tunnel, and proxy port using the AEM_HTTP_PROXY_PORT variable. 
