@@ -13,14 +13,14 @@ topic: Architecture
 role: Architect, Developer, Admin
 level: Beginner
 exl-id: c4f5667a-0da2-490b-9d55-9fbde21db595
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: bca51ece7a9b249727b8746cc9654503059116fb
 workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 2%
 
 ---
 
-# Cloud Manager 사용 - CI/CD 프로덕션 파이프라인
+# Cloud Manager 사용 - CI/CD 프로덕션 파이프라인 {#using-adobe-cloud-manager-ci-cd-production-pipeline}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_devops_prodpipeline"
@@ -31,12 +31,12 @@ ht-degree: 2%
 
 ## 구성
 
-[CI/CD 프로덕션 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html) 구성은 파이프라인을 시작하는 트리거, 프로덕션 배포 및 성능 테스트 매개 변수를 제어하는 매개 변수를 정의합니다.
+다음 [CI/CD 프로덕션 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html) 구성은 파이프라인을 시작할 트리거, 프로덕션 배포 및 성능 테스트 매개 변수를 제어하는 매개 변수를 정의합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26314/?quality=12&learn=on)
 
 ### 파이프라인 실행
 
-[CI/CD 프로덕션 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)은 스테이지를 통해 코드를 작성하고 프로덕션 환경에 배포하는 데 사용되어 가치 창출 시간을 단축합니다.
+다음 [CI/CD 프로덕션 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) 는 스테이지를 통해 프로덕션 환경에 코드를 빌드 및 배포하는 데 사용되며 시간이 길어져 있어 가치 실현 시간이 단축됩니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26317/?quality=12&learn=on)
