@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 772b595d-2a25-4ae6-8c6e-69a646143147
-source-git-commit: a49e56b6f47e477132a9eee128e62fe5a415b262
+source-git-commit: 294ad688b17a5fc9559fea39fc99ebf5e95cad39
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1088'
 ht-degree: 1%
 
 ---
@@ -477,7 +477,7 @@ module.exports = function(app) {
   ...
 ```
 
-그러나 이 옵션은 프로덕션 배포에 적합한 옵션이 아니므로 자세한 내용은 _프로덕션 배포_ 섹션을 참조하십시오.
+그러나 이것은 적절한 선택이 아니다 **프로덕션 배포** 그러나 개발 중에는 제대로 작동하며 자세한 내용은 [_배포_](../deployment/spa.md) 섹션을 참조하십시오.
 
 ## 축하합니다!{#congratulations}
 
