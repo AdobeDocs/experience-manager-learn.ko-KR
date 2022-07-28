@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 41e15a2c-758b-4e7d-9d23-ef671c1dc155
-source-git-commit: 410eb23534e083940bf716194576e099d22ca205
+source-git-commit: 93d50e79853429f420803c28807ee8018d0ff78f
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '298'
 ht-degree: 1%
 
 ---
@@ -46,15 +46,11 @@ AEM GraphQL API를 사용하여 컨텐츠를 작성하고 노출하고 헤드리
 
 ### AEM 환경
 
-이 자습서를 완료하려면 Adobe Experience Manager 환경이 필요합니다. 다음 중 하나를 사용할 수 있습니다(스크린샷은 AEM as a Cloud Service 환경에서 기록됨).
-
-* AEM as a Cloud Service 환경
-   * [AEM as a Cloud Service 및 Cloud Manager 액세스](/help/cloud-service/accessing/overview.md)
-      * **AEM 관리자** AEM as a Cloud Service 액세스
+이 자습서를 완료하려면 AEM Administrator에서 AEM as a Cloud Service 환경에 액세스하는 것이 좋습니다.  AEM as a Cloud Service 환경에 대한 액세스 권한이 없는 경우 [로컬 AEM as a Cloud Service Quickstart SDK](/help/cloud-service/local-development-environment/aem-runtime.md). 하지만 컨텐츠 조각 탐색과 같은 일부 제품 UI 화면이 다르다는 것을 알고 있어야 합니다.
 
 ## 시작해 보겠습니다!
 
-1. 자습서를 다음으로 시작 [컨텐츠 조각 모델 정의](content-fragment-models.md).
+자습서를 다음으로 시작 [컨텐츠 조각 모델 정의](content-fragment-models.md).
 
 ## GitHub 프로젝트
 
