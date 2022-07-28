@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: e2fabf7c-7fda-4391-ae77-709aa9f7dc0a
-source-git-commit: c061ea9d08606052c4b2cf5b3c84d6f1df5a57fa
+source-git-commit: 6197a40888ff5a8f93cbe03fb42c85f06f324de0
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '447'
 ht-degree: 1%
 
 ---
@@ -127,14 +127,16 @@ AEM Engineering의 시즌2의 클라우드 5 시리즈에 오신 것을 환영�
       </p>
      </td>   
      <td>
-            <img alt="Cloud Manager의 미스터리... 경험 감사" src="./imgs/coming-soon.png"/>
+            <a href="season-2/cloud5-MoCM-experience-audit.md">
+               <img alt="Cloud Manager의 미스터리... 경험 감사" src="./imgs/s2/007-thumb.png"/>
+               </a>
       <div>
-            <strong>Cloud Manager의 미스터리... 경험 감사</strong>
-         <br/><em>Darin Muntze &amp; James Talbot과 함께, 수석 클라우드 설계자</em>
+            <a href="season-2/cloud5-MoCM-experience-audit.md"><strong>Cloud Manager의 미스터리... 경험 감사</strong></a>
+         <br/><em>수석 클라우드 설계자인 Darin Muntze와 함께</em>
       </div>
       <p>
         <br/>
-        2022년 7월 29일 출시
+        Cloud Manager 및 Experience Audit 기능의 기본 사항을 살펴보십시오.
       </p>
    </td>
      <td>
