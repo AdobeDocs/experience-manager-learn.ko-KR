@@ -10,10 +10,10 @@ kt: 10718
 thumbnail: KT-10718.jpeg
 mini-toc-levels: 1
 exl-id: 9e856dcc-f042-4e9d-bf97-dd4f72e837e3
-source-git-commit: 4a902d838c99b3452581066ee568876ad16ec1a3
+source-git-commit: fda7b74e7659daf61a9f5478d6bfabe439b923ae
 workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 11%
+source-wordcount: '873'
+ht-degree: 12%
 
 ---
 
@@ -81,12 +81,9 @@ Adobe Campaign Classic과 AEM as a Cloud Service을 통합하면 Adobe Campaign 
 
 ### AEM Sites
 
-+ [Adobe Campaign Classic 통합 구성](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaignonpremise.html)
-   + __AEM 6.5에 대한 설명서 링크가 있지만 단계는 AEM as a Cloud Service에서 동일합니다__
-+ [AEM Sites과 Adobe Campaign Classic 통합](https://github.com/adobe/aem-core-email-components/wiki/Integrating-AEM-with-ACC)
-+ [Adobe Campaign Classic을 사용하여 AEM Sites에서 이메일 보내기](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/aem-adobe-campaign/campaign.html)
++ [Adobe Campaign Classic과 통합](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-campaign-classic.html#configure-user)
++ [Adobe Experience Manager 뉴스레터 만들기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/creating-newsletter.html)
 + [AEM 이메일 핵심 구성 요소 설명서](https://github.com/adobe/aem-core-email-components#aem-email-core-components)
-
 
 ## Adobe Commerce
 
