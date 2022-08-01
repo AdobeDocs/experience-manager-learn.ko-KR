@@ -4,10 +4,10 @@ user-guide-description: Adobe Experience Manager as a Cloud Service를 위한 �
 breadcrumb-title: AEM as a Cloud Service 튜토리얼
 sub-product: cloud-service
 team: TM
-source-git-commit: 6197a40888ff5a8f93cbe03fb42c85f06f324de0
+source-git-commit: 80dfe87f372425014c22ccf4f2d1190b4c202b8a
 workflow-type: tm+mt
-source-wordcount: '806'
-ht-degree: 22%
+source-wordcount: '814'
+ht-degree: 21%
 
 ---
 
@@ -210,6 +210,8 @@ ht-degree: 22%
       + [Adobe Sign 클라우드 구성](./forms/forms-and-sign/create-adobe-sign-cloud-configuration.md)
       + [적응형 양식 만들기](./forms/forms-and-sign/create-adaptive-form.md)
       + [채우기 및 서명 구성](./forms/forms-and-sign/configure-form-fill-and-sign.md)
+   + Microsoft Power와 통합 자동화{#forms-cs-and-power-automate}
+      + [통합 구성](./forms/forms-cs-and-power-automate/integrate-formscs-power-automate.md)
    + Microsoft Dynamics와 통합{#formscs-dynamics-crm}
       + [Dynamics 응용 프로그램 만들기](./forms/formscs-dynamics-crm/create-dynamics-account.md)
       + [데이터 소스 구성](./forms/formscs-dynamics-crm/configure-odata-data-source.md)
