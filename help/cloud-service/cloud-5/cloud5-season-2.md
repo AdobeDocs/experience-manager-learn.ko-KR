@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: e2fabf7c-7fda-4391-ae77-709aa9f7dc0a
-source-git-commit: 6197a40888ff5a8f93cbe03fb42c85f06f324de0
+source-git-commit: 3fb0fb5b8f43dc925da2ffa05808f24bf6d5ada3
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '478'
 ht-degree: 1%
 
 ---
@@ -140,14 +140,16 @@ AEM Engineering의 시즌2의 클라우드 5 시리즈에 오신 것을 환영�
       </p>
    </td>
      <td>
-            <img alt="Cloud Manager의 미스터리... 단위 테스트" src="./imgs/coming-soon.png"/>
+            <a href="season-2/cloud5-MoCM-unit-tests.md">
+               <img alt="Cloud Manager의 미스터리... 단위 테스트" src="./imgs/s2/009-thumb.png"/>
+            </a>
       <div>
-            <strong>Cloud Manager의 미스터리... 단위 테스트</strong>
+            <a href="season-2/cloud5-MoCM-unit-tests.md"><strong>Cloud Manager의 미스터리... 단위 테스트</strong></a>
          <br/><em>Darin Muntze &amp; Bryan Stopp과 함께, 수석 클라우드 설계자</em>
       </div>
       <p>
         <br/>
-         2022년 8월 5일 출시
+        Darin 및 Bryan은 Cloud Manager가 단위 테스트 실행 및 코드 검사 보고를 CI/CD 파이프라인에 통합하여 AEM 코드의 모범 사례를 권장하고 홍보하는 방법에 대해 설명합니다.
       </p>
    </td> 
   </tr>
