@@ -4,9 +4,9 @@ user-guide-description: Adobe Experience Manager as a Cloud Service를 위한 �
 breadcrumb-title: AEM as a Cloud Service 튜토리얼
 sub-product: cloud-service
 team: TM
-source-git-commit: 3fb0fb5b8f43dc925da2ffa05808f24bf6d5ada3
+source-git-commit: 043842912132336a4ec52b54776fab1525b09d16
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '822'
 ht-degree: 21%
 
 ---
@@ -212,6 +212,7 @@ ht-degree: 21%
       + [채우기 및 서명 구성](./forms/forms-and-sign/configure-form-fill-and-sign.md)
    + Microsoft Power와 통합 자동화{#forms-cs-and-power-automate}
       + [통합 구성](./forms/forms-cs-and-power-automate/integrate-formscs-power-automate.md)
+      + [제출된 양식 데이터를 구문 분석합니다.](./forms/forms-cs-and-power-automate/send-email-notification.md)
    + Microsoft Dynamics와 통합{#formscs-dynamics-crm}
       + [Dynamics 응용 프로그램 만들기](./forms/formscs-dynamics-crm/create-dynamics-account.md)
       + [데이터 소스 구성](./forms/formscs-dynamics-crm/configure-odata-data-source.md)
@@ -273,7 +274,7 @@ ht-degree: 21%
 + [AEM Experts Series](./aem-experts-series.md)
 + 여러 단계 Tutorials{#multi-step-tutorials}
    + [AEM Sites 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
-   + [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ko-KR)
+   + [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)
    + [SPA 편집기(반응)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html)
    + [SPA 편집기(Angular)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-angular-tutorial/overview.html)
    + [AEM Sites 및 Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html)
