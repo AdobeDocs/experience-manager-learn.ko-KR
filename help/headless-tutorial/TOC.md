@@ -6,10 +6,10 @@ version: Cloud Service
 feature-set: Experience Manager, Experience Manager Assets, Experience Manager Sites
 kt: 2963
 index: y
-source-git-commit: a49e56b6f47e477132a9eee128e62fe5a415b262
+source-git-commit: b98f567e05839db78a1a0a593c106b87af931a49
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '238'
+ht-degree: 21%
 
 ---
 
@@ -44,15 +44,27 @@ ht-degree: 0%
       + [3 - AEM GraphQL API 탐색](/help/headless-tutorial/graphql/advanced-graphql/explore-graphql-api.md)
       + [4 - 지속되는 GraphQL 쿼리](/help/headless-tutorial/graphql/advanced-graphql/graphql-persisted-queries.md)
       + [5 - 클라이언트 애플리케이션 통합](/help/headless-tutorial/graphql/advanced-graphql/client-application-integration.md)
-   + 방법 {#how-to}
-      + [서식 있는 텍스트](./graphql/how-to/rich-text.md)
-      + [이미지](./graphql/how-to/images.md)
-      + [현지화된 콘텐츠](./graphql/how-to/localized-content.md)
-      + [AEM Headless SDK](./graphql/how-to/aem-headless-sdk.md)
++ 배포{#deployments}
+   + [개요](./graphql/deployment/overview.md)
+   + [단일 페이지 앱](./graphql/deployment/spa.md)
+   + [웹 구성 요소](./graphql/deployment/web-component.md)
+   + [모바일](./graphql/deployment/mobile.md)
+   + [서버 간](./graphql/deployment/server-to-server.md)
+   + 구성{#configurations}
+      + [AEM 호스트](./graphql/deployment/configurations/aem-hosts.md)
+      + [CORS](./graphql/deployment/configurations/cors.md)
+      + [디스패처 필터](./graphql/deployment/configurations/dispatcher-filters.md)
++ 방법 {#how-to}
+   + [서식 있는 텍스트](./graphql/how-to/rich-text.md)
+   + [이미지](./graphql/how-to/images.md)
+   + [현지화된 콘텐츠](./graphql/how-to/localized-content.md)
+   + [AEM Headless SDK](./graphql/how-to/aem-headless-sdk.md)
    + 예 {#example-apps}
       + [React](./graphql/example-apps/react-app.md)
+      + [웹 구성 요소](./graphql/example-apps/web-component.md)
       + [iOS](./graphql/example-apps/ios-swiftui-app.md)
       + [Android](./graphql/example-apps/android-app.md)
+      + [서버 간](./graphql/example-apps/server-to-server-app.md)
 + SPA 편집기{#spa-editor}
    + React{#react}
       + [개요](./spa-editor/react/overview.md)
