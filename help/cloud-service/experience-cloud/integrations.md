@@ -10,9 +10,9 @@ kt: 10718
 thumbnail: KT-10718.jpeg
 mini-toc-levels: 1
 exl-id: 9e856dcc-f042-4e9d-bf97-dd4f72e837e3
-source-git-commit: fda7b74e7659daf61a9f5478d6bfabe439b923ae
+source-git-commit: 663075723da207242309c08feed42657b9e5188b
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '958'
 ht-degree: 12%
 
 ---
@@ -25,6 +25,7 @@ AEM as a Cloud Service이 다른 Adobe Experience Cloud 제품과의 지원되�
 |  | AEM Sites | AEM Assets | AEM Forms |
 |-------------------------------------------------------------------|:---------:|:----------:|:---------:|
 | [Acrobat Sign](#adobe-acrobat-sign) |  |  | ✔ |
+| 광고 |  |  |  |
 | [분석](#adobe-analytics) | ✔ | ✔ | ✔ |
 | Audience Manager |  |  |  |
 | [Campaign Classic](#adobe-campaign-classic) | ✔ |  |  |
@@ -33,7 +34,7 @@ AEM as a Cloud Service이 다른 Adobe Experience Cloud 제품과의 지원되�
 | Customer Journey Analytics |  |  |  |
 | [Experience Platform 태그](#adobe-experience-platform-tags) | ✔ |  | ✔ |
 | [Journey Optimizer](#adobe-journey-optimizer) |  | ✔ |  |
-| Learning Manager |  |  |  |
+| [Learning Manager](#adobe-learning-manager) | ✔ |  |  |
 | Marketo Engage |  |  |  |
 | 실시간 CDP |  |  |  |
 | [Sensei](#adobe-sensei) | ✔ | ✔ | ✔ |
@@ -108,19 +109,21 @@ Adobe Experience Platform 태그(이전 Adobe Launch, DTM)가 AEM과 원활하�
 + [Experience Platform 태그 사용 안내서](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
 + [Experience Platform 태그 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html)
 
+## Adobe Journey Optimizer
 
-## Adobe Workfront
-
-Adobe Workfront과 AEM의 Cloud Service은 디지털 자산 생성, 공동 작업 및 라이프사이클 관리 프로세스를 간소화합니다.
+Adobe Journey Optimizer은 단일 애플리케이션에서 수백만 명의 고객을 대상으로 옴니채널 캠페인과 일대일 모멘트를 예약하는 데 도움이 되며 전체 여정은 지능형 의사 결정 및 인사이트로 최적화되어 있습니다.
 
 ### AEM Assets
 
-+ [Workfront 고급 커넥터 구성](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/workfront/configure.html)
-+ [Workfront 향상된 커넥터 비디오](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/workfront/enhanced-connector/basics.html)
-+ AEM Assets Essentials
++ [AEM Assets Essentials와 Adobe Journey Optimizer 통합](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-messages/create-email-content-with-the-message-editor.html?lang=ko-KR)
 
-   + [Adobe Workfront for Assets Essentials 사용 안내서](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&amp;topicId=Content%2FDocuments%2FAdobe_Workfront_for_Experience_Manager_Assets_Essentials%2F_workfront-for-aem-asset-essentials.htm)
-   + [Adobe Workfront 및 Assets Essentials 비디오](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/workfront/configure.html)
+## Adobe 학습 관리자
+
+Adobe Learning Manager(이전 Adobe Captivate Prime)은 고객 및 직원에게 개인화된 학습을 제공합니다.
+
+### AEM Sites
+
++ [AEM Sites과 Adobe Learning Manager 통합](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-learning-manager.html)
 
 ## Adobe Sensei
 
@@ -157,3 +160,16 @@ Adobe Target은 AEM as a Cloud Service과 통합되어 AEM의 컨텐츠를 기�
 
 + [Target에서 AEM Context Hub 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/audiences.html#creating-an-adobe-target-audience-using-the-audience-console)
 + [AEM Sites 및 Target 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/target/overview.html)
+
+## Adobe Workfront
+
+Adobe Workfront과 AEM의 Cloud Service은 디지털 자산 생성, 공동 작업 및 라이프사이클 관리 프로세스를 간소화합니다.
+
+### AEM Assets
+
++ [Workfront 고급 커넥터 구성](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/workfront/configure.html)
++ [Workfront 향상된 커넥터 비디오](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/workfront/enhanced-connector/basics.html)
++ AEM Assets Essentials
+
+   + [Adobe Workfront for Assets Essentials 사용 안내서](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&amp;topicId=Content%2FDocuments%2FAdobe_Workfront_for_Experience_Manager_Assets_Essentials%2F_workfront-for-aem-asset-essentials.htm)
+   + [Adobe Workfront 및 Assets Essentials 비디오](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/workfront/configure.html)
