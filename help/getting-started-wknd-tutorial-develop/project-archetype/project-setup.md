@@ -12,9 +12,9 @@ mini-toc-levels: 1
 kt: 3418
 thumbnail: 30152.jpg
 exl-id: bb0cae58-79bd-427f-9116-d46afabdca59
-source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
+source-git-commit: 819188cabb784a2bbfa097dc4c47f75e38231b53
 workflow-type: tm+mt
-source-wordcount: '1816'
+source-wordcount: '1848'
 ht-degree: 4%
 
 ---
@@ -332,3 +332,11 @@ Maven 명령을 빌드하는 데 사용되는 것과 동일한 **ui.apps** 모�
 ## 문제 해결
 
 AEM Project Archetype을 사용하여 프로젝트를 생성하는 데 문제가 있는 경우 [알려진 문제](https://github.com/adobe/aem-project-archetype#known-issues) 및 열기 목록 [문제](https://github.com/adobe/aem-project-archetype/issues).
+
+## 다시 축하합니다! {#congratulations-bonus}
+
+축하합니다, 보너스 자료를 검토하겠습니다.
+
+### 다음 단계 {#next-steps-bonus}
+
+간단한 방법을 통해 AEM(Adobe Experience Manager) 사이트 구성 요소의 기본 기술을 이해합니다 `HelloWorld` 예 [구성 요소 기본 사항](component-basics.md) 자습서입니다.
