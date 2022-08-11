@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: e2fabf7c-7fda-4391-ae77-709aa9f7dc0a
-source-git-commit: 3fb0fb5b8f43dc925da2ffa05808f24bf6d5ada3
+source-git-commit: 2cfa5039e69ef23e58428e17b45877170930820e
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '503'
 ht-degree: 1%
 
 ---
@@ -141,7 +141,7 @@ AEM Engineering의 시즌2의 클라우드 5 시리즈에 오신 것을 환영�
    </td>
      <td>
             <a href="season-2/cloud5-MoCM-unit-tests.md">
-               <img alt="Cloud Manager의 미스터리... 단위 테스트" src="./imgs/s2/009-thumb.png"/>
+               <img alt="Cloud Manager의 미스터리... 단위 테스트" src="./imgs/s2/008-thumb.png"/>
             </a>
       <div>
             <a href="season-2/cloud5-MoCM-unit-tests.md"><strong>Cloud Manager의 미스터리... 단위 테스트</strong></a>
@@ -155,13 +155,15 @@ AEM Engineering의 시즌2의 클라우드 5 시리즈에 오신 것을 환영�
   </tr>
     <tr>
         <td>
-                <img alt="Cloud Manager의 미스터리... 기능 테스트" src="./imgs/coming-soon.png"/>
+               <a href="season-2/cloud5-MoCM-functional-tests.md">
+                   <img alt="Cloud Manager의 미스터리... 기능 테스트" src="./imgs/s2/009-thumb.png"/>
+               </a>
             <div>
-                <strong>Cloud Manager의 미스터리... 기능 테스트</strong><br/>        
+                <a href="season-2/cloud5-MoCM-functional-tests.md"><strong>Cloud Manager의 미스터리... 기능 테스트</strong><br/></a>        
                 <em>Darin Muntze &amp; Bryan Stopp과 함께, 수석 클라우드 설계자</em>
             </div>
             <p><br/>
-                2022년 8월 12일 출시
+                Darin과 Bryan은 코드의 품질과 안정성을 보장하기 위해 AEM as a Cloud Service 배포 프로세스에 빌드된 다양한 유형의 기능 테스트에 대해 설명합니다.
             </p>
         </td>
         <td></td>
