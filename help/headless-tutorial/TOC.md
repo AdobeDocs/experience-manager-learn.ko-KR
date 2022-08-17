@@ -6,10 +6,10 @@ version: Cloud Service
 feature-set: Experience Manager, Experience Manager Assets, Experience Manager Sites
 kt: 2963
 index: y
-source-git-commit: b98f567e05839db78a1a0a593c106b87af931a49
+source-git-commit: 18a414b847a7353eebcfad4bcc125920258948b3
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 21%
+source-wordcount: '245'
+ht-degree: 20%
 
 ---
 
@@ -90,6 +90,8 @@ ht-degree: 21%
       + [3 - 고정 구성 요소](./spa-editor/remote-spa/spa-fixed-component.md)
       + [4 - 컨테이너 구성 요소](./spa-editor/remote-spa/spa-container-component.md)
       + [5 - 동적 경로](./spa-editor/remote-spa/spa-dynamic-routes.md)
+   + 방법{#how-to}
+      + [AEM React 편집 가능한 구성 요소 v2](./spa-editor/how-to/react-core-components-v2.md)
 + 토큰 기반 인증 {#authentication}
    + [개요](./authentication/overview.md)
    + [1 - 로컬 개발 액세스 토큰](./authentication/local-development-access-token.md)
