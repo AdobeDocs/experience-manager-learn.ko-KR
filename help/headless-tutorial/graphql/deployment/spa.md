@@ -9,9 +9,9 @@ level: Intermediate
 kt: 10587
 thumbnail: KT-10587.jpg
 mini-toc-levels: 2
-source-git-commit: b98f567e05839db78a1a0a593c106b87af931a49
+source-git-commit: 34fbb22916cf8a8df0e3240835c71e0979fd11bd
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '612'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 # AEM Headless SPA 배포
 
 
-AEM 헤드리스 단일 페이지 앱(SPA) 배포에는 헤드리스 방식으로 AEM에서 컨텐츠를 소비하고 상호 작용하는 React, Value 또는 Angular과 같은 프레임워크를 사용하여 작성된 JavaScript 기반 애플리케이션이 포함됩니다.
+AEM 헤드리스 단일 페이지 앱(SPA) 배포에는 헤드리스 방식으로 AEM에서 컨텐츠를 소비하고 상호 작용하는 React 또는 Value와 같은 프레임워크를 사용하여 작성된 JavaScript 기반 애플리케이션이 포함됩니다.
 
 헤드리스 방식으로 AEM을 상호 작용하는 SPA을 배포하려면 SPA을 호스팅하고 웹 브라우저를 통해 액세스할 수 있어야 합니다.
 

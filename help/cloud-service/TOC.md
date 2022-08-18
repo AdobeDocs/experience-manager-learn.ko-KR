@@ -4,9 +4,9 @@ user-guide-description: Adobe Experience Manager as a Cloud Service를 위한 �
 breadcrumb-title: AEM as a Cloud Service 튜토리얼
 sub-product: cloud-service
 team: TM
-source-git-commit: 2cfa5039e69ef23e58428e17b45877170930820e
+source-git-commit: 34fbb22916cf8a8df0e3240835c71e0979fd11bd
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '817'
 ht-degree: 21%
 
 ---
@@ -277,6 +277,5 @@ ht-degree: 21%
    + [AEM Sites 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
    + [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)
    + [SPA 편집기(반응)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html)
-   + [SPA 편집기(Angular)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-angular-tutorial/overview.html)
    + [AEM Sites 및 Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html)
    + [토큰 기반 인증](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)

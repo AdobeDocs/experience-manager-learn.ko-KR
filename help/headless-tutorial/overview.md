@@ -7,10 +7,10 @@ role: Developer
 level: Beginner
 recommendations: disable, exclude
 exl-id: 57f88d79-9879-4bb9-a3db-9fec95e3a0bd
-source-git-commit: 25a1a40f42d37443db9edc0e09b1691b1c19e848
+source-git-commit: 34fbb22916cf8a8df0e3240835c71e0979fd11bd
 workflow-type: tm+mt
-source-wordcount: '529'
-ht-degree: 6%
+source-wordcount: '496'
+ht-degree: 7%
 
 ---
 
@@ -27,7 +27,7 @@ Adobe Experience Manager(AEM)에는 헤드리스 엔드포인트를 정의하고
 <table>
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ko-KR">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html">
       <img alt="GraphQL API" src="./assets/graphql-icon.png" />
     </a>
     <div>
@@ -162,23 +162,10 @@ Adobe Experience Manager(AEM)에는 헤드리스 엔드포인트를 정의하고
     <p>
   </td>
 </tr>
-<tr>
-  <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html">
-      <img alt="React - 헤드리스" src="./assets/angular-spa-editor.png" />
-    </a>
-    <div>
-      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html">
-    <strong>Angular - SPA 편집기</strong>
-    </a>
-    </div>
-    <p>
-    <em>AEM SPA 편집기를 사용하여 전체 Angular 앱 경험을 관리합니다.</em>
-    <p>
-  </td>
+<tr>  
   <td>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html">
-    <img alt="Angular - 컨텐츠 서비스" src="./assets/android.png" />
+    <img alt="Android - 컨텐츠 서비스" src="./assets/android.png" />
     </a>
     <div>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html">
@@ -202,5 +189,6 @@ Adobe Experience Manager(AEM)에는 헤드리스 엔드포인트를 정의하고
     <em>개발자 및 서비스 토큰을 사용하여 Node.js 앱을 빌드하여 인증합니다.</em>
     <p>
   </td>
+  <td></td>
 </tr>
 </table>

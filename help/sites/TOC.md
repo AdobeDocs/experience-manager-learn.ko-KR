@@ -3,10 +3,10 @@ user-guide-title: AEM Sites 비디오 및 튜토리얼
 user-guide-description: Adobe Experience Manager Sites에 대한 비디오 및 튜토리얼 모음입니다.
 breadcrumb-title: AEM Sites 튜토리얼
 feature-set: Experience Manager Sites, Experience Manager
-source-git-commit: ce9966d48689cd153f5de9d20240644d96d10adf
+source-git-commit: 34fbb22916cf8a8df0e3240835c71e0979fd11bd
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 27%
+source-wordcount: '404'
+ht-degree: 29%
 
 ---
 
@@ -51,7 +51,6 @@ ht-degree: 27%
    + [AEM Sites 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
    + [AEM 헤드리스 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
    + [AEM SPA Editor 및 React 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
-   + [AEM SPA 편집기 및 Angular 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html)
    + [페이지 속성 확장](developing/page-properties-technical-video-develop.md)
    + [스타일 시스템을 사용한 개발](developing/style-system-technical-video-understand.md)
    + [스타일 시스템 우수 사례](developing/style-organization-style-system-understand-article.md)
@@ -68,9 +67,7 @@ ht-degree: 27%
    + [Sitemap](./seo/sitemaps.md)
 + SPA(Single Page Applications){#spa-editor}
    + [SPA 편집기 사용](spa-editor/spa-editor-framework-feature-video-use.md)
-   + [Hello World 자습서](spa-editor/spa-editor-helloworld-tutorial-use.md)
    + [AEM SPA Editor 및 React 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
-   + [AEM SPA 편집기 및 Angular 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html)
 + 다중 사이트 관리 {#multi-site-management}
    + [언어 사본 소개](./multi-site-management/language-copy-overview.md)
    + [Live Copy 및 블루프린트](./multi-site-management/live-copy-and-blueprint.md)

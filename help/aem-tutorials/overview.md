@@ -2,10 +2,10 @@
 title: AEM 자습서
 description: Adobe Experience Manager을 위한 비디오 및 자습서 모음입니다.
 exl-id: fe83a2dc-b43a-4e71-9b03-d31ec4f6a6ff
-source-git-commit: eb669d1e2493d9b4a973314ab1323764920ba220
+source-git-commit: 34fbb22916cf8a8df0e3240835c71e0979fd11bd
 workflow-type: tm+mt
-source-wordcount: '177'
-ht-degree: 26%
+source-wordcount: '161'
+ht-degree: 32%
 
 ---
 
@@ -26,7 +26,6 @@ Adobe Experience Manager(AEM)은 선도적인 경험 관리 플랫폼입니다. 
 + [AEM Sites 시작하기 - WKND 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 + [AEM 헤드리스 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
 + [AEM SPA Editor 및 React 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html)
-+ [AEM SPA 편집기 및 Angular 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html)
 + [AEM 및 Adobe Target 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html)
 + [AEM 6.x Dispatcher 캐시 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/overview.html)
 + [AEM 6.x Dynamic Media Classic 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/dynamic-media-classic-tutorial/overview.html)
