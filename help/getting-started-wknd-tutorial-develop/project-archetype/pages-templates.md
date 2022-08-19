@@ -9,7 +9,7 @@ mini-toc-levels: 1
 kt: 4082
 thumbnail: 30214.jpg
 exl-id: e9d06dc2-ac3b-48c5-ae00-fdaf5bb45b54
-source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
+source-git-commit: d49dbfae3292f93b7f63f424731966934dc6a5ba
 workflow-type: tm+mt
 source-wordcount: '3081'
 ht-degree: 1%
@@ -93,7 +93,7 @@ ht-degree: 1%
 
 >[!VIDEO](https://video.tv.adobe.com/v/330991/?quality=12&learn=on)
 
-아래 비디오에 대한 높은 수준의 단계:
+위의 비디오에 대한 높은 수준의 단계:
 
 ### 구조 구성
 
@@ -161,7 +161,7 @@ AEM 프로젝트 원형 이 머리글 및 바닥글을 생성했습니다. 그�
 
 >[!VIDEO](https://video.tv.adobe.com/v/330992/?quality=12&learn=on)
 
-아래 비디오에 대한 높은 수준의 단계:
+위의 비디오에 대한 높은 수준의 단계:
 
 1. 샘플 컨텐츠 패키지 다운로드 **[WKND-PagesTemplates-Content-Assets.zip](assets/pages-templates/WKND-PagesTemplates-Content-Assets-1.1.zip)**.
 1. 에서 패키지 관리자를 사용하여 컨텐츠 패키지를 업로드하고 설치합니다. [http://localhost:4502/crx/packmgr/index.jsp](http://localhost:4502/crx/packmgr/index.jsp)
@@ -207,7 +207,7 @@ AEM 프로젝트 원형 이 머리글 및 바닥글을 생성했습니다. 그�
 
 >[!VIDEO](https://video.tv.adobe.com/v/330993/?quality=12&learn=on)
 
-아래 비디오에 대한 높은 수준의 단계:
+위의 비디오에 대한 높은 수준의 단계:
 
 1. 의 사이트 콘솔로 이동합니다. [http://localhost:4502/sites.html/content/wknd/us/en/magazine](http://localhost:4502/sites.html/content/wknd/us/en/magazine).
 1. 아래에 새 페이지를 만듭니다 **WKND** > **미국** > **EN** > **잡지**.
@@ -257,7 +257,7 @@ AEM 프로젝트 원형 이 머리글 및 바닥글을 생성했습니다. 그�
 
    HTL 스크립트는 2개만 있습니다. `customfooterlibs.html` 및 `customheaderlibs.html` 페이지 구성 요소 아래에 표시됩니다. *그러면 이 구성 요소는 페이지를 어떻게 렌더링합니까?*
 
-   다음 `sling:resourceSuperType` 속성이 `core/wcm/components/page/v2/page`. 이 속성을 사용하면 WKND의 페이지 구성 요소를 상속할 수 있습니다 **모두** 핵심 구성 요소 페이지 구성 요소의 기능에 대해 자세히 알아보십시오. 이것이 바로 [프록시 구성 요소 패턴](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html#ProxyComponentPattern). 자세한 내용 [여기 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html).
+   다음 `sling:resourceSuperType` 속성이 `core/wcm/components/page/v2/page`. 이 속성을 사용하면 WKND의 페이지 구성 요소를 상속할 수 있습니다 **모두** 핵심 구성 요소 페이지 구성 요소의 기능에 대해 자세히 알아보십시오. 이것이 바로 [프록시 구성 요소 패턴](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html#ProxyComponentPattern). 자세한 내용 [여기](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html).
 
 1. Inspect은 WKND 구성 요소 내에서 `Breadcrumb` 구성 요소 위치: `/apps/wknd/components/breadcrumb`. 동일한 `sling:resourceSuperType` 속성을 찾을 수 있지만 이번에는 `core/wcm/components/breadcrumb/v2/breadcrumb`. 프록시 구성 요소 패턴을 사용하여 코어 구성 요소를 포함하는 다른 예입니다. 실제로 WKND 코드 베이스의 모든 구성 요소는 AEM 코어 구성 요소의 프록시입니다(유명한 HelloWorld 구성 요소 제외). 핵심 구성 요소의 기능을 최대한 재사용하는 것이 좋습니다 *이전* 사용자 지정 코드를 작성하는 중입니다.
 

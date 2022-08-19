@@ -11,7 +11,7 @@ level: Beginner
 kt: 4083
 thumbnail: 30359.jpg
 exl-id: 8d3026e9-a7e2-4a76-8a16-a8197a5e04e3
-source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
+source-git-commit: d49dbfae3292f93b7f63f424731966934dc6a5ba
 workflow-type: tm+mt
 source-wordcount: '2878'
 ht-degree: 2%
@@ -389,9 +389,9 @@ Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 �
 
 [**aemfed**](https://aemfed.io/) 는 프런트 엔드 개발 속도를 높이는 데 사용할 수 있는 오픈 소스 명령줄 툴입니다. 전원이 켜져 있습니다  [aemsync](https://www.npmjs.com/package/aemsync), [Browsersync](https://www.npmjs.com/package/browser-sync) 및 [Sling 로그 추적기](https://sling.apache.org/documentation/bundles/log-tracers.html).
 
-높은 수준에서 **aemfed** 는 내에서 파일 변경 사항을 수신하도록 설계되었습니다 **ui.apps** 모듈 을 실행하고 실행 중인 AEM 인스턴스에 직접 동기화합니다. 이러한 변경 사항에 따라 로컬 브라우저는 자동으로 새로 고쳐져 프런트 엔드 개발을 가속화합니다. 또한 Sling 로그 추적기와 연동하여 터미널에서 바로 서버측 오류를 자동으로 표시할 수도 있습니다.
+높은 수준에서 **aemfed** 는 내에서 파일 변경 사항을 수신하도록 설계되었습니다 **ui.apps** 모듈 및 실행 중인 AEM 인스턴스에 직접 자동으로 동기화합니다. 이러한 변경 사항에 따라 로컬 브라우저는 자동으로 새로 고쳐져 프런트 엔드 개발을 가속화합니다. 또한 Sling 로그 추적기와 연동하여 터미널에서 바로 서버측 오류를 자동으로 표시할 수도 있습니다.
 
-만약 당신이 그 안에서 많은 일을 하고 있다면 **ui.apps** 모듈, HTL 스크립트 수정 및 사용자 지정 구성 요소 만들기 **aemfed** 는 매우 강력한 사용 도구입니다. [전체 설명서는 여기에서 찾을 수 있습니다.](https://github.com/abmaonline/aemfed).
+만약 당신이 그 안에서 많은 일을 하고 있다면 **ui.apps** 모듈, HTL 스크립트 수정 및 사용자 지정 구성 요소 만들기 **aemfed** 는 매우 강력한 사용 도구입니다. [전체 설명서는 여기에서 찾을 수 있습니다](https://github.com/abmaonline/aemfed).
 
 ### 클라이언트 측 라이브러리 디버깅 {#debugging-clientlibs}
 
