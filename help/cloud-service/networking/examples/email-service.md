@@ -9,9 +9,9 @@ level: Intermediate
 kt: 9353
 thumbnail: KT-9353.jpeg
 exl-id: 5f919d7d-e51a-41e5-90eb-b1f6a9bf77ba
-source-git-commit: 8da6d5470c702620ee1121fd2688eb8756f0cebd
+source-git-commit: d6eddceb3f414e67b5b6e3fba071cd95597dc41c
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '367'
 ht-degree: 0%
 
 ---
@@ -25,12 +25,14 @@ AEM 구성을 통해 AEM as a Cloud Service에서 이메일 전송 `DefaultMailS
 + `smtp.host` 가 OSGi 환경 변수로 설정되어 있습니다 `$[env:AEM_PROXY_HOST;default=proxy.tunnel]` 그래서 그것은 피난을 통과합니다.
    + `$[env:AEM_PROXY_HOST]` AEM as a Cloud Service이 내부 변수에 매핑하는 예약된 변수입니다 `proxy.tunnel` 호스트.
    + 설정 안 함 `AEM_PROXY_HOST` Cloud Manager 사용.
-+ `smtp.port` 이(가) `portForward.portOrig` 대상 이메일 서비스의 호스트 및 포트에 매핑되는 포트입니다. 이 예에서는 매핑을 사용합니다. `AEM_PROXY_HOST:30002` → `smtp.sendgrid.com:465`.
++ `smtp.port` 이(가) `portForward.portOrig` 대상 이메일 서비스의 호스트 및 포트에 매핑되는 포트입니다. 이 예에서는 매핑을 사용합니다. `AEM_PROXY_HOST:30465` → `smtp.sendgrid.com:465`.
    + 다음 `smpt.port` 이(가) `portForward.portOrig` 포트 및 SMTP 서버의 실제 포트가 아님 간의 매핑 `smtp.port` 그리고 `portForward.portOrig` 포트는 Cloud Manager에 의해 설정됩니다 `portForwards` 규칙(아래에 설명되어 있음).
 
 암호는 코드에 저장하지 않아야 하므로 [보안 OSGi 구성 변수](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#secret-configuration-values), AIO CLI 또는 Cloud Manager API를 사용하여 설정합니다.
 
 일반적으로 [유연한 포트 송신](../flexible-port-egress.md) 는 `allowlist` Adobe IP(예: [전용 송신 ip 주소](../dedicated-egress-ip-address.md) 사용할 수 있습니다.
+
+또한, 다음 위치에서 AEM 설명서를 검토합니다 [전자 메일 보내기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
 
 ## 고급 네트워킹 지원
 
@@ -51,7 +53,7 @@ AEM 구성을 통해 AEM as a Cloud Service에서 이메일 전송 `DefaultMailS
 "portForwards": [{
     "name": "smtp.mymail.com",
     "portDest": 465,
-    "portOrig": 30002
+    "portOrig": 30465
 }]
 ...
 ```
@@ -63,7 +65,7 @@ AEM 구성 [기본 메일 서비스](https://experienceleague.adobe.com/docs/exp
 ```json
 {
     "smtp.host": "$[env:AEM_PROXY_HOST;default=proxy.tunnel]",
-    "smtp.port": "30002",
+    "smtp.port": "30465",
     "smtp.user": "$[env:EMAIL_USERNAME;default=myApiKey]",
     "smtp.password": "$[secret:EMAIL_PASSWORD]",
     "from.address": "noreply@wknd.site",
