@@ -2,12 +2,12 @@
 title: AEM Forms 및 Adobe Campaign Standard 시작하기
 description: AEM Forms 양식 데이터 모델을 사용하여 AEM Forms과 Adobe Campaign Standard을 통합하여 ACS 캠페인 프로필 정보 등을 가져옵니다.
 feature: Adaptive Forms, Form Data Model
-version: 6.3,6.4,6.5
+version: 6.4,6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: e028837b-13d8-4058-ac25-ed095f49524c
-source-git-commit: 5c53919dd038c0992e1fe5dd85053f26c03c5111
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 0%

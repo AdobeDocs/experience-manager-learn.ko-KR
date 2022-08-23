@@ -2,18 +2,18 @@
 title: AEM Dynamic Media에서 대화형 비디오 사용
 description: 이제 AEM Assets에는 대화형 비디오를 만들 수 있습니다. 이 기능을 통해 사용자는 비디오를 더 작은 세그먼트로 분할하거나 작은 세그먼트를 결합하여 큰 세그먼트를 만들 수 있으므로 사용자가 클릭유도자와 연결할 수 있습니다.
 sub-product: dynamic-media
-feature: 비디오 프로필, 뷰어 사전 설정, 혼합 미디어 세트
-version: 6.3, 6.4, 6.5
-topic: 컨텐츠 관리
+feature: Video Profiles, Viewer Presets, Mixed Media Sets
+version: 6.4, 6.5
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 2a27d8bc-ee7b-4d13-8512-8f3dc1eb8f13
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '92'
-ht-degree: 2%
+source-wordcount: '82'
+ht-degree: 0%
 
 ---
-
 
 # AEM Dynamic Media에서 대화형 비디오 사용{#using-interactive-video-with-aem-dynamic-media}
 

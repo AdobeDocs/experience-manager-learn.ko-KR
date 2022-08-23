@@ -1,30 +1,30 @@
 ---
 title: AEM Sites에서 다중 사이트 관리자 사용
-seo-title: Adobe Experience Manager에서 다중 사이트 관리자 터치 UI 인터페이스 사용
+seo-title: Using Multi Site Manager Touch UI Interfaces with Adobe Experience Manager
 description: Live Copy 개요 및 Blueprint Configuration Manager는 Multi Site Manager에서 사용하기 위한 Touch UI 사용 인터페이스입니다.
-seo-description: Live Copy 개요 및 Blueprint Configuration Manager는 Adobe Experience Manager을 사용하여 다중 사이트 관리자를 작업하는 Touch UI 사용 인터페이스입니다.
-feature: 다중 사이트 관리자
+seo-description: Live Copy Overview and Blueprint Configuration Manager are Touch UI Enabled interfaces for working with Multi Site Manager with Adobe Experience Manager.
+feature: Multi Site Manager
 topics: localization, authoring, content-architecture
 audience: all
 doc-type: feature video
 activity: use
-version: 6.3, 6.4, 6.5
+version: 6.4, 6.5
 uuid: 76f295d0-78dd-429c-9129-9182b3a706a6
 discoiquuid: a0dc581e-300f-45ef-916a-1cbac0429899
-topic: 로컬라이제이션
+topic: Localization
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 00746678-da23-4d0a-b775-e1de4ed87c56
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '175'
-ht-degree: 5%
+source-wordcount: '138'
+ht-degree: 12%
 
 ---
 
-
 # 다중 사이트 관리자 사용 {#using-multi-site-manager-with-aem-sites}
 
-[!UICONTROL Live Copy ] 개요 및  [!UICONTROL 블루프린트 구성 ] 관리자는 Adobe Experience Manager Sites의 다중 사이트 관리자 기능을 사용하기 위한 AEM 작성자 인터페이스입니다.
+[!UICONTROL Live Copy 개요] 및 [!UICONTROL 블루프린트 구성 관리자] Adobe Experience Manager Sites의 다중 사이트 관리자 기능 작업을 위한 AEM 작성자 인터페이스입니다.
 
 ## Live Copy 개요 {#live-copy-overview}
 
@@ -40,6 +40,6 @@ ht-degree: 5%
 
 ## 추가 리소스 {#additional-resources}
 
-* [Live Copy 개요 콘솔](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm-livecopy-overview.html)
-* [Live Copy 생성 및 동기화](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm-livecopy.html)
-* [MSM 우수 사례](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm-best-practices.html)
+* [라이브 카피 개요 콘솔](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm-livecopy-overview.html)
+* [라이브 카피 생성 및 동기화](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm-livecopy.html)
+* [MSM 모범 사례](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm-best-practices.html)

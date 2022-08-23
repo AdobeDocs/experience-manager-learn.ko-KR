@@ -1,23 +1,23 @@
 ---
 title: AEM Assets을 사용한 Dynamic Media 개요
-description: 이 비디오 시리즈는 컨텐츠 서비스 서비스로 Adobe Experience Manager Dynamic Media을 사용하여 미디어 컨텐츠를 관리하고 액세스하는 방법에 대한 개요를 제공합니다. Dynamic Media을 사용하면 Experience Manager 자산에 고유한 기능인 다이내믹 디지털 경험을 관리하고 게시할 수 있습니다. Adobe의 프레임워크 및 구성 요소 세트를 통해 마케터는 모든 장치에서 대화형 멀티미디어 경험을 사용자 지정하고 전달할 수 있습니다.
+description: 이 비디오 시리즈는 컨텐츠 서비스 서비스로 Adobe Experience Manager Dynamic Media을 사용하여 미디어 컨텐츠를 관리하고 액세스하는 방법에 대한 개요를 제공합니다. Dynamic Media을 사용하면 Experience Manager Assets에 고유한 기능인 다이내믹 디지털 경험을 관리하고 게시할 수 있습니다. Adobe의 프레임워크 및 구성 요소 세트를 통해 마케터는 모든 장치에서 대화형 멀티미디어 경험을 사용자 지정하고 전달할 수 있습니다.
 sub-product: dynamic-media
-feature: 스마트 자르기, 비디오 프로필, 이미지 프로필, 뷰어 사전 설정, 360 VR 비디오, 이미지 세트, 스핀 세트
-version: 6.3, 6.4, 6.5
-topic: 컨텐츠 관리
+feature: Smart Crop, Video Profiles, Image Profiles, Viewer Presets, 360 VR Video, Image Sets, Spin Sets
+version: 6.4, 6.5
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 59462cb4-d379-4e58-b786-ff8dbae6191c
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '888'
+source-wordcount: '871'
 ht-degree: 0%
 
 ---
 
-
 # AEM Assets에서 Dynamic Media 사용 {#understanding-aem-dynamic-media}
 
-이 다중 부분 비디오 시리즈는 컨텐츠 서비스 서비스로 Adobe Experience Manager Dynamic Media을 사용하여 미디어 컨텐츠를 관리하고 액세스하는 방법에 대한 개요를 제공합니다. Dynamic Media을 사용하면 Experience Manager 자산에 고유한 기능인 다이내믹 디지털 경험을 관리하고 게시할 수 있습니다. Adobe의 프레임워크 및 구성 요소 세트를 통해 마케터는 모든 장치에서 대화형 멀티미디어 경험을 사용자 지정하고 전달할 수 있습니다.
+이 다중 부분 비디오 시리즈는 컨텐츠 서비스 서비스로 Adobe Experience Manager Dynamic Media을 사용하여 미디어 컨텐츠를 관리하고 액세스하는 방법에 대한 개요를 제공합니다. Dynamic Media을 사용하면 Experience Manager Assets에 고유한 기능인 다이내믹 디지털 경험을 관리하고 게시할 수 있습니다. Adobe의 프레임워크 및 구성 요소 세트를 통해 마케터는 모든 장치에서 대화형 멀티미디어 경험을 사용자 지정하고 전달할 수 있습니다.
 
 ## Dynamic Media 개요
 
@@ -96,7 +96,7 @@ ht-degree: 0%
 >
 >이미지 품질은 역압축 백분율로 측정됩니다. 여기서 100% 품질은 압축되지 않아 고품질 이미지가 있지만 파일 크기는 상대적으로 큽니다. Jpeg 압축은 압축 설정이 이미지 품질과 파일 크기를 결정하는 손실 압축 구성표입니다.
 
-JPEG 이미지 품질을 결과 파일 크기(KB)와 비교하여 페이지 로드 속도를 향상시킵니다. 두 가지 명령을 사용하여 jpeg 압축 설정을 조정합니다. QLT는 jpeg 압축 품질 설정을 조정하여 이미지 품질을 정의합니다. [JPEG 크기] 명령을 사용하면 압축을 사용하여 수행해야 하는 파일 크기를 지정할 수 있습니다.
+JPEG 이미지 품질을 결과 파일 크기(KB)와 비교하여 페이지 로드 속도를 향상시킵니다. 두 가지 명령을 사용하여 jpeg 압축 설정을 조정합니다. QLT는 jpeg 압축 품질 설정을 조정하여 이미지 품질을 정의합니다. JPEG 크기 명령을 사용하면 압축을 사용하여 수행해야 하는 파일 크기를 지정할 수 있습니다.
 
 ## Dynamic Media 비디오에 CC 자막 추가
 

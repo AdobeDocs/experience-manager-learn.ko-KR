@@ -1,20 +1,20 @@
 ---
 title: AEM Sites의 페이지 속성 이해
 description: 다음 비디오에서는 Adobe Experience Manager의 페이지와 연결된 페이지 속성 메타데이터를 소개합니다.
-version: 6.3, 6.4, 6.5
+version: 6.4, 6.5
 topic: Content Management
 feature: Page Editor
 role: User
 level: Beginner
 kt: 4321
 thumbnail: 32192.jpg
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+exl-id: 41b40982-9796-418e-9bfc-af6fc720e9b8
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '138'
-ht-degree: 38%
+ht-degree: 42%
 
 ---
-
 
 # 페이지 속성 이해 {#understanding-page-properties-aem-sites}
 
@@ -48,10 +48,10 @@ ht-degree: 38%
    * 내보내기
 * 썸네일
 * 소셜 미디어 공유
-* Cloud Services 구성
+* 클라우드 서비스 구성
 * 개인화
    * ContextHub 구성
-   * 타깃팅 구성
+   * 타겟팅 구성
 * 권한
 
 ## 추가 리소스 {#additional-resources}
@@ -59,4 +59,3 @@ ht-degree: 38%
 * [페이지 속성 편집 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-page-properties.html)
 * [페이지 컨텐츠 편집 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html)
 * [페이지 작성에 대한 빠른 시작 안내서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)
-

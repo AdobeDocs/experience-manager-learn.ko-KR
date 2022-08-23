@@ -1,20 +1,20 @@
 ---
 title: AEM Assets에서 메타데이터 가져오기 및 내보내기 사용
 description: Adobe Experience Manager Assets의 메타데이터 기능을 가져오고 내보내는 방법을 알아봅니다. 컨텐츠 작성자는 가져오기 및 내보내기 기능을 사용하여 기존 자산에 대한 메타데이터를 벌크 업데이트할 수 있습니다.
-version: 6.3, 6.4, 6.5, Cloud Service
+version: 6.4, 6.5, Cloud Service
 topic: Content Management
 feature: Metadata
 role: Admin
 level: Intermediate
 kt: 647, 917
 thumbnail: 22132.jpg
-source-git-commit: ac93d6ba636e64ba6d8bbdb0840810b8f47a25c8
+exl-id: 0681e2c4-8661-436c-9170-9aa841a6fa27
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 3%
 
 ---
-
 
 # AEM Assets에서 메타데이터 가져오기 및 내보내기 사용 {#metadata-import-and-export}
 
@@ -37,23 +37,23 @@ Adobe Experience Manager Assets의 메타데이터 기능을 가져오고 내보
 ### 첫 행
 
 * CSV 파일의 첫 번째 행은 메타데이터 스키마를 정의합니다.
-* 첫 번째 열의 기본값은 `assetPath`로, 자산에 대한 절대 JCR 경로를 보유합니다.
+* 첫 번째 열의 기본값은 입니다. `assetPath`에는 자산에 대한 절대 JCR 경로가 포함됩니다.
 
 * 첫 번째 행의 후속 열은 자산의 다른 메타데이터 속성을 가리킵니다.
-   * 예를 들어,`dc:title, dc:description, jcr:title`
+   * 예 : `dc:title, dc:description, jcr:title`
 
 * 단일 값 속성 형식
 
    * `<metadata property name> {{<property type}}`
    * 속성 유형을 지정하지 않으면 기본값은 String입니다.
-   * 예를 들어,`dc:title {{String}}`
+   * 예를 들어`dc:title {{String}}`
 
 * 속성 이름은 대/소문자를 구분합니다
    * 올바른 : `dc:title {{String}}`
    * 잘못된: `Dc:Title {{String}}`
 
 * 속성 유형은 대/소문자를 구분하지 않습니다.
-* 모든 유효한 [JCR 속성 유형](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/PropertyType.html)이 지원됩니다
+* 모두 유효합니다. [JCR 속성 유형](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/PropertyType.html) 지원됨
 
 * 다중 값 속성 형식 - `<metadata property name> {{<property type : MULTI }}`
 

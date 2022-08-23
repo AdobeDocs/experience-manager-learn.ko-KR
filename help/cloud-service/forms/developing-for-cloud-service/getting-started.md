@@ -5,16 +5,16 @@ solution: Experience Manager
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: cloud-service
+version: Cloud Service
 topic: Development
 kt: 8842
-source-git-commit: d38da94bd4164163a16899b565c90b159194580a
+exl-id: 274018b9-91fe-45ad-80f2-e7826fddb37e
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '231'
 ht-degree: 0%
 
 ---
-
 
 # 필요한 소프트웨어 설치
 
@@ -34,8 +34,3 @@ ht-degree: 0%
 * 명령 프롬프트 창을 열고 다음 위치로 이동합니다. **c:\cloudmanager**
 * 의 컨텐츠를 복사하여 붙여넣습니다 [텍스트 파일](assets/creating-maven-project.txt) 명령 프롬프트 창에 DarchetypeVersion=30은 [최신 버전](https://github.com/adobe/aem-project-archetype/releases). 이 기사를 쓸 당시 최신 버전은 30이었다.
 * Enter 키를 눌러 명령을 실행합니다.모든 항목이 올바르게 작동하면 빌드 성공 메시지가 표시됩니다.
-
-
-
-
-

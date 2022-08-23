@@ -1,20 +1,20 @@
 ---
 title: AEM Desktop App
 description: AEM 데스크탑 앱을 사용하면 데스크탑에서 AEM으로 관리되는 모든 자산, 애플리케이션 및 파일 형식에 대한 액세스를 간소화할 수 있습니다.
-version: 6.5, 6.4, 6.3
-topic: 컨텐츠 관리
-feature: 데스크탑 앱
+version: 6.5, 6.4
+topic: Content Management
+feature: Desktop App
 role: User
 level: Beginner
 kt: 2551
 thumbnail: 28868.jpeg
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 6765758f-0719-4ed9-83be-8ed192a75b41
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 5%
+source-wordcount: '134'
+ht-degree: 4%
 
 ---
-
 
 # AEM 데스크탑 앱 사용
 
@@ -29,7 +29,7 @@ AEM 데스크탑 앱을 사용하면 데스크탑에서 AEM으로 관리되는 �
 
 >[!NOTE]
 >
-> [Adobe Asset ](./adobe-asset-link.md) Link는 Adobe Creative Cloud 애플리케이션 내에서 AEM 자산으로 작업하는 Adobe의 전용 솔루션입니다. Photoshop, Illustrator, InDesign 이러한 애플리케이션에서 AEM Assets을 사용하는 경우 AEM 데스크탑 앱보다 Adobe 자산 링크가 선호됩니다.
+> [Adobe 자산 링크](./adobe-asset-link.md) 는 Adobe Creative Cloud 애플리케이션 내에서 AEM 자산으로 작업하는 Adobe의 전용 솔루션입니다. Photoshop, Illustrator, InDesign 이러한 애플리케이션에서 AEM Assets을 사용하는 경우 AEM 데스크탑 앱보다 Adobe 자산 링크가 선호됩니다.
 
 ## 추가 리소스
 

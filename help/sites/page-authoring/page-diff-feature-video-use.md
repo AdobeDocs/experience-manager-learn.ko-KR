@@ -1,26 +1,26 @@
 ---
 title: AEM Sites에서 페이지 차이 사용
-seo-title: AEM Sites에서 페이지 차이 사용
+seo-title: Using Page Difference with AEM Sites
 description: AEM Sites의 페이지 차이점 기능 에서는 페이지에서 변경된 컨텐츠(버전, Live Copy, 실행, 언어 복사)에 대한 빠르고 색상으로 구분된 보기를 제공합니다.
-seo-description: AEM Sites의 페이지 차이점 기능 에서는 페이지에서 변경된 컨텐츠(버전, Live Copy, 실행, 언어 복사)에 대한 빠르고 색상으로 구분된 보기를 제공합니다.
+seo-description: AEM Sites' page difference capabilities show provides a quick, color-coded view of what content has changed in a page (version, live copy, launches, language copy).
 topics: authoring
 audience: author, marketer
 doc-type: feature video
 activity: use
-version: 6.3, 6.4, 6.5
+version: 6.4, 6.5
 uuid: e096a08b-528d-48c7-93fb-73b10c0a9259
 kt: 4633
 thumbnail: 32152.jpg
-topic: 컨텐츠 관리
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 4d365957-9a5a-44f8-a117-95c1c0dd757d
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '151'
-ht-degree: 2%
+source-wordcount: '118'
+ht-degree: 1%
 
 ---
-
 
 # 페이지 차이 기능 사용 {#using-page-difference-with-aem-sites}
 

@@ -1,18 +1,18 @@
 ---
 title: AEM Forms에서 Microsoft Dynamics 사용
-description: 이 비디오에서는 AEM Forms이 대화형, 개인화된 커뮤니케이션을 제공하기 위해 백엔드 데이터 소스로서 Microsoft Dynamics와 함께 작업하는 방법을 보여주는 워크플로우를 안내합니다.
-feature: 적응형 양식
-version: 6.3,6.4,6.5
-topic: 개발
+description: 이 비디오에서는 AEM Forms을 백엔드 데이터 소스로 사용하여 인터랙티브하고 개인화된 커뮤니케이션을 전달하는 방법을 보여주는 워크플로우를 안내합니다.
+feature: Adaptive Forms
+version: 6.4,6.5
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 3e51767b-3571-4af7-8f01-5b6c5c74734c
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '139'
-ht-degree: 2%
+source-wordcount: '136'
+ht-degree: 0%
 
 ---
-
 
 # AEM Forms에서 Microsoft Dynamics 사용{#using-microsoft-dynamics-with-aem-forms}
 
@@ -24,11 +24,10 @@ AEM Forms 데이터 통합을 사용하면 서로 다른 데이터 소스를 구
 1. SOAP 기반 웹 서비스
 1. OData 서비스
 
-이 비디오에서는 AEM Forms이 대화형, 개인화된 커뮤니케이션을 제공하기 위해 백엔드 데이터 소스로서 Microsoft Dynamics와 함께 작업하는 방법을 보여주는 워크플로우를 안내합니다.
+이 비디오에서는 AEM Forms을 백엔드 데이터 소스로 사용하여 인터랙티브하고 개인화된 커뮤니케이션을 전달하는 방법을 보여주는 워크플로우를 안내합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/20971?quality=9&learn=on)
 
 >[!NOTE]
 >
 >이 기능은 AEM 6.3 FP1 이상에서만 사용할 수 있습니다. 설정하기 전에 AEM Forms 추가 기능을 설치하십시오.
-

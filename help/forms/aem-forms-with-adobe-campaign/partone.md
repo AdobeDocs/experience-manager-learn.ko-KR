@@ -1,18 +1,18 @@
 ---
-title: 'JSON 웹 토큰 및 액세스 토큰 생성 '
+title: JSON 웹 토큰 및 액세스 토큰 생성
 description: 이 문서에서는 Adobe Campaign Standard에 REST 호출을 하는 데 필요한 JWT 및 액세스 토큰을 생성하는 데 필요한 코드를 설명합니다
-feature: 적응형 Forms, 양식 데이터 모델
-version: 6.3,6.4,6.5
-topic: 개발
+feature: Adaptive Forms, Form Data Model
+version: 6.4,6.5
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: a5e5aad4-064f-4638-a53a-88dfb1d27c8f
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '233'
 ht-degree: 0%
 
 ---
-
 
 # JSON 웹 토큰 및 액세스 토큰 생성 {#generating-json-web-token-and-access-token}
 
@@ -20,13 +20,13 @@ ht-degree: 0%
 
 ## JSON 웹 토큰 생성 {#generate-json-web-token}
 
-Adobe Campaign API를 사용하는 첫 번째 단계는 JWT를 생성하는 것입니다. ACS용 JWT를 생성하는 방법에 대한 다양한 코드 샘플이 있습니다. 이 [java 코드 샘플](https://github.com/AdobeDocs/adobeio-auth/tree/stage/JWT/samples/adobe-jwt-java)에 따라 JWT를 생성할 수 있습니다.
+Adobe Campaign API를 사용하는 첫 번째 단계는 JWT를 생성하는 것입니다. ACS용 JWT를 생성하는 방법에 대한 다양한 코드 샘플이 있습니다. 다음 동작을 수행합니다 [java 코드 샘플](https://github.com/AdobeDocs/adobeio-auth/tree/stage/JWT/samples/adobe-jwt-java) jwt를 생성합니다.
 
 AEM Forms에서 ACS API를 사용하려면 OSGi 번들 내에 JWT를 만들어야 합니다. 다음 코드 조각은 이 샘플 OSGI 번들에서 JWT를 생성하는 데 사용됩니다. ACS 인스턴스에 대한 세부 사항을 위에 표시된 대로 설정된 OSGI 구성 속성에서 가져옵니다.
 
 ![구성](assets/campaignconfiguration.gif)
 
-**A.**  여기에 표시된 값은 더미 값입니다
+**A.** 여기에 표시된 값은 더미 값입니다
 
 다음 코드는 OSGI 구성에서 Adobe Campaign 서버에 대한 세부 사항을 가져옵니다. 80-104행에서 개인 키를 만듭니다.
 

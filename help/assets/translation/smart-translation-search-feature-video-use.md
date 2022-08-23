@@ -1,18 +1,18 @@
 ---
 title: AEM Assets에서 스마트 번역 검색 사용
 description: Smart Translation Search를 사용하면 Assets와 Pages에서 AEM 컨텐츠 간에 자동으로 교차 언어 검색 및 검색을 수행할 수 있으므로 50개 이상의 언어를 지원하며 수동 컨텐츠 번역도 필요하지 않습니다.
-version: 6.3, 6.4, 6.5
-feature: 검색
-topic: 컨텐츠 관리
+version: 6.4, 6.5
+feature: Search
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 4f35e3f7-ae29-4f93-bba9-48c60b800238
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 1%
+source-wordcount: '266'
+ht-degree: 0%
 
 ---
-
 
 # AEM Assets에서 스마트 번역 검색 사용{#using-smart-translation-search-with-aem-assets}
 
@@ -24,7 +24,7 @@ AEM Smart Translation Search를 사용하면 영어 이외의 용어를 사용�
 
 스마트 번역 검색은 영어로 된 자산에 적용되는 AEM 스마트 태그를 완벽하게 보완합니다.
 
-이 비디오에서는 [AEM 스마트 번역 검색](smart-translation-search-technical-video-setup.md)이 설정되었다고 가정합니다.
+이 비디오에서는 을 가정합니다 [AEM Smart Translation Search](smart-translation-search-technical-video-setup.md) 이(가) 설정되었습니다.
 
 ## 스마트 번역 검색 작동 방식 {#how-smart-translation-search-works}
 

@@ -2,12 +2,12 @@
 title: AEM Forms과 Marketo(4부)
 description: AEM Forms 양식 데이터 모델을 사용하여 AEM Forms을 Marketo과 통합하는 자습서입니다.
 feature: Adaptive Forms, Form Data Model
-version: 6.3,6.4,6.5
+version: 6.4,6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 6b44e6b2-15f7-45b2-8d21-d47f122c809d
-source-git-commit: 020852f16de0cdb1e17e19ad989dabf37b7f61f5
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 1%
@@ -34,7 +34,7 @@ ht-degree: 1%
 
 ## 디버깅
 
-이 문서와 함께 제공된 번들을 사용하는 경우 다음 클래스에 대해 [디버그 로그](http://localhost:4502/system/console/slinglog)를 활성화할 수 있습니다.
+이 문서와 함께 제공된 번들을 사용하는 경우 [디버그 로그](http://localhost:4502/system/console/slinglog) 다음 클래스의 경우:
 
 + `com.marketoandforms.core.impl.MarketoServiceImpl`
 + `com.marketoandforms.core.MarketoConfigurationService`

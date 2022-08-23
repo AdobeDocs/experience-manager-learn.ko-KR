@@ -5,10 +5,11 @@ solution: Experience Manager
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: cloud-service
+version: Cloud Service
 topic: Development
 kt: 8844
-source-git-commit: d38da94bd4164163a16899b565c90b159194580a
+exl-id: 9a7ed792-ca0d-458f-b8dd-9129aba37df6
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 3%
@@ -21,7 +22,7 @@ ht-degree: 3%
 Cygwin은 Microsoft Windows에서 기본적으로 실행되는 POSIX 호환 프로그래밍 및 런타임 환경입니다.
 설치 [Cygwin](https://www.cygwin.com/). C:\cygwin64 folder에 을 설치했습니다.
 >[!NOTE]
-> zip, unzip, curl, rsync 패키지를 Win 설치와 함께 설치해야 합니다
+> zip, unzip, curl, rsync 패키지를 Win 설치 시 반드시 설치하십시오
 
 c:\cloudmanager 아래에 adoberepo 라는 폴더를 만듭니다.
 
@@ -84,22 +85,3 @@ ui.content와 같은 aem 뱅킹 애플리케이션 프로젝트 내에서 프로
 * 다음 폴더 구조를 만듭니다.C:\aemformscs\aem-sdk\author\crx-quickstart\install
 * aem-forms-addon-xxxxxx.far을 설치 폴더에 복사합니다.
 * 명령 프롬프트를 열고 c:\aemformscs\aem-sdk\author enter the following command java -jar aem-author-p4502.jar -gui로 이동합니다. 이렇게 하면 AEM 인스턴스에 패키지에 추가 양식이 배포됩니다.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

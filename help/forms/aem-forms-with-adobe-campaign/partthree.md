@@ -1,14 +1,15 @@
 ---
 title: ACS 프로필을 사용하여 적응형 양식 미리 채우기
 description: ACS 프로필을 사용하여 적응형 Forms 미리 채우기
-feature: 적응형 Forms, 양식 데이터 모델
-version: 6.3,6.4,6.5
-topic: 개발
+feature: Adaptive Forms, Form Data Model
+version: 6.4,6.5
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 502f4bdf-d4af-409f-a611-62b7a1a6065a
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '333'
 ht-degree: 0%
 
 ---
@@ -17,7 +18,7 @@ ht-degree: 0%
 
 이 부분에서는 ACS에서 가져온 프로필 정보로 적응형 양식 을 미리 채웁니다. AEM Forms에는 적응형 양식을 미리 채울 수 있는 강력한 기능이 있습니다.
 
-적응형 양식 미리 채우기에 대한 자세한 내용은 이 [자습서](https://helpx.adobe.com/experience-manager/kt/forms/using/prefill-service-adaptive-forms-article-use.html)를 참조하십시오.
+적응형 양식 미리 채우기에 대한 자세한 내용은 다음 문서를 참조하십시오 [튜토리얼](https://helpx.adobe.com/experience-manager/kt/forms/using/prefill-service-adaptive-forms-article-use.html).
 
 ACS에서 데이터를 가져와서 적응형 양식을 미리 채우려면 로그인된 AEM 사용자와 동일한 이메일이 있는 ACS에 프로필이 있다고 가정합니다. 예를 들어 AEM에 로그인한 사람의 이메일 ID가 csimms@adobe.com 인 경우 ACS에서 e-메일이 csimms@adobe.com 인 프로필을 찾을 수 있습니다.
 
@@ -232,5 +233,4 @@ return "Pre Fill Forms Using Campaign Profile";
 * [여기에 설명된 대로 단계를 따랐는지 확인합니다](aem-forms-with-campaign-standard-getting-started-tutorial.md)
 * [패키지 관리자를 사용하여 샘플 적응형 양식을 AEM에 가져오기](assets/pre-fill-af-from-campaign.zip)
 * Adobe Campaign에서 프로필로 공유된 이메일 ID의 사용자를 사용하여 AEM에 로그인해야 합니다. 예를 들어, AEM 사용자의 이메일 ID가 johndoe@adobe.com 인 경우, ACS에서 e-메일이 johndoe@adobe.com 인 프로필이 있어야 합니다.
-* [양식을 미리 봅니다](http://localhost:4502/content/dam/formsanddocuments/prefillfromcampaign/jcr:content?wcmmode=disabled).
-
+* [양식 미리 보기](http://localhost:4502/content/dam/formsanddocuments/prefillfromcampaign/jcr:content?wcmmode=disabled).

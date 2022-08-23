@@ -1,24 +1,24 @@
 ---
 title: JSON 스키마 및 데이터가 포함된 AEM Forms[Part3]
-seo-title: JSON 스키마 및 데이터가 포함된 AEM Forms[Part3]
+seo-title: AEM Forms with JSON Schema and Data[Part3]
 description: JSON 스키마로 적응형 양식을 만들고 제출된 데이터를 쿼리하는 단계를 설명하는 여러 부분 자습서입니다.
-seo-description: JSON 스키마로 적응형 양식을 만들고 제출된 데이터를 쿼리하는 단계를 설명하는 여러 부분 자습서입니다.
-feature: 적응형 양식
+seo-description: Multi-Part tutorial to walk you through the steps involved in creating Adaptive Form with JSON schema and querying the submitted data.
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
-version: 6.3,6.4,6.5
-topic: 개발
+version: 6.4,6.5
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 412eea77-3cf4-43bb-9d2f-ae860cd9d3be
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 1%
+source-wordcount: '253'
+ht-degree: 0%
 
 ---
-
 
 # 데이터베이스에 JSON 스키마 저장 {#storing-json-schema-in-database}
 
@@ -148,9 +148,7 @@ public void insertJsonSchema(JSONObject jsonSchema, String afForm) {
 요약하자면, 지금까지 우리는 다음과 같은 일을 해 왔다
 
 * JSON 스키마를 기반으로 하여 적응형 양식 만들기
-* 양식이 처음 제출될 경우 양식과 연결된 JSON 스키마를 데이터베이스에 저장합니다.
+* 양식이 처음 제출될 때 양식과 연결된 JSON 스키마를 데이터베이스에 저장할 수 있습니다.
 * 적응형 양식의 바인딩된 데이터를 데이터베이스에 저장합니다.
 
 다음 단계는 QueryBuilder 를 사용하여 JSON 스키마를 기반으로 검색할 필드를 표시하는 것입니다
-
-

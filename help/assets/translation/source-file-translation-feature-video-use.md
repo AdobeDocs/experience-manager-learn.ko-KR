@@ -1,17 +1,17 @@
 ---
 title: AEM Assets에서 소스 파일 변환 사용
 description: Adobe Experience Manager (AEM) Assets를 사용하면 공통 속성을 공유하는 자산을 식별하고 새로운 관련 자산 기능을 사용하여 관련 자산으로 표시할 수 있습니다. 또한 사용자가 자산 간의 소스/파생 관계를 정의할 수 있으므로 사용자가 자산의 출처를 쉽게 식별할 수 있습니다. 파생 자산에서 번역 워크플로우를 실행하면 소스 파일이 참조하는 모든 자산을 가져와서 번역을 위해 포함하므로 다중 사이트 유지 노력이 줄어듭니다.
-version: 6.3, 6.4, 6.5
-topic: 컨텐츠 관리
+version: 6.4, 6.5
+topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 19155d51-18a7-42ca-9a73-1b5fa1355d58
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '285'
 ht-degree: 0%
 
 ---
-
 
 # AEM Assets에서 소스 파일 변환 사용 {#using-source-file-translation-with-aem-assets}
 

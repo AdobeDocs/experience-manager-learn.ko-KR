@@ -1,42 +1,42 @@
 ---
 title: AEM Forms에서 사용자 지정 자산 유형 나열
-seo-title: AEM Forms에서 사용자 지정 자산 유형 나열
+seo-title: Listing Custom Asset Types in AEM Forms
 description: AEM Forms에서 사용자 지정 자산 유형 나열의 2부
-seo-description: AEM Forms에서 사용자 지정 자산 유형 나열의 2부
+seo-description: Part 2 of Listing Custom Asset Types in AEM Forms
 uuid: 6467ec34-e452-4c21-9bb5-504f9630466a
-feature: 적응형 양식
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
-version: 6.3,6.4,6.5
+version: 6.4,6.5
 discoiquuid: 4b940465-0bd7-45a2-8d01-e4d640c9aedf
-topic: 개발
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: f221d8ee-0452-4690-a936-74bab506d7ca
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '595'
 ht-degree: 0%
 
 ---
 
-
-# AEM Forms {#listing-custom-asset-types-in-aem-forms}에서 사용자 지정 자산 유형 나열
+# AEM Forms에서 사용자 지정 자산 유형 나열 {#listing-custom-asset-types-in-aem-forms}
 
 ## 사용자 지정 템플릿 만들기 {#creating-custom-template}
 
 
 이 문서의 목적에 따라 동일한 페이지에 사용자 지정 자산 유형과 OOTB 자산 유형을 표시하는 사용자 지정 템플릿을 만듭니다. 사용자 지정 템플릿을 만들려면 다음 지침을 따르십시오
 
-1. 슬링 만들기:/apps 아래의 폴더. 이름을 &quot; myportalcomponent &quot; 로 지정합니다.
-1. &quot;fpContentType&quot; 속성을 추가합니다. 값을 &quot;**/libs/fd/ fp/formTemplate&quot;로 설정합니다.**
+1. 슬링 만들기: /apps 아래의 폴더. 이름을 &quot; myportalcomponent &quot; 로 지정합니다.
+1. &quot;fpContentType&quot; 속성을 추가합니다. 값을 &quot;(으)로 설정합니다.**/libs/fd/ fp/formTemplate&quot;**
 1. &quot;title&quot; 속성을 추가하고 해당 값을 &quot;사용자 지정 템플릿&quot;으로 설정합니다. 검색 및 목록 구성 요소의 드롭다운 목록에 표시되는 이름입니다
 1. 이 폴더 아래에 &quot;template.html&quot;을 만듭니다. 이 파일에는 스타일을 지정할 코드가 있으며 다양한 자산 유형을 표시합니다.
 
 ![appsfolder](assets/appsfolder_.png)
 
-다음 코드는 검색 및 레지스트리 구성 요소를 사용하는 다양한 유형의 자산을 나열합니다. 데이터 유형 = &quot;videos&quot; 태그로 표시된 대로 각 자산 유형에 대해 별도의 html 요소를 만듭니다. &quot;비디오&quot;의 자산 유형의 경우, &lt;video> 요소를 사용하여 비디오 인라인을 재생합니다. &quot;worddocuments&quot;의 자산 유형에는 다른 html 마크업을 사용합니다.
+다음 코드는 검색 및 레지스트리 구성 요소를 사용하는 다양한 유형의 자산을 나열합니다. 데이터 유형 = &quot;videos&quot; 태그로 표시된 대로 각 자산 유형에 대해 별도의 html 요소를 만듭니다. 자산 유형 &quot;비디오&quot;의 경우 Adobe에서는 &lt;video> 요소를 사용하여 비디오 인라인으로 재생합니다. &quot;worddocuments&quot;의 자산 유형에는 다른 html 마크업을 사용합니다.
 
 ```html
 <div class="__FP_boxes-container __FP_single-color">
@@ -78,9 +78,9 @@ ht-degree: 0%
 >
 >이 템플릿에 적응형 Forms을 나열하려면 새 div를 만들고 해당 데이터 유형 속성을 &quot;안내서&quot;로 설정합니다. data-type=&quot;printForm&quot;인 div를 복사하여 붙여 넣고 새로 복사한 div의 data-type을 &quot;guide&quot;로 설정할 수 있습니다
 
-## 검색 및 레지스트리 구성 요소 {#configure-search-and-lister-component} 구성
+## 검색 및 목록 구성 요소 구성 {#configure-search-and-lister-component}
 
-사용자 지정 템플릿을 정의한 후에는 이제 이 사용자 지정 템플릿을 &quot;검색 및 목록&quot; 구성 요소와 연결해야 합니다. 브라우저 [을 이 url ](http://localhost:4502/editor.html/content/AemForms/CustomPortal.html)에 가리킵니다.
+사용자 지정 템플릿을 정의한 후에는 이제 이 사용자 지정 템플릿을 &quot;검색 및 목록&quot; 구성 요소와 연결해야 합니다. 브라우저를 가리킵니다 [이 url을 ](http://localhost:4502/editor.html/content/AemForms/CustomPortal.html).
 
 디자인 모드로 전환하고 허용된 구성 요소 그룹에 검색 및 목록 구성 요소를 포함하도록 단락 시스템을 구성합니다. 검색 및 목록 구성 요소는 문서 서비스 그룹의 일부입니다.
 
@@ -110,11 +110,11 @@ ht-degree: 0%
 
 ![assettype](assets/assettypes.png)
 
-이제 검색 및 클러스터 포털 구성 요소를 구성했으므로 이제 레지스트리를 확인할 차례입니다. 브라우저 [을 이 url ](http://localhost:4502/content/AemForms/CustomPortal.html?wcmmode=disabled)에 가리킵니다. 결과는 아래 표시된 이미지와 같아야 합니다.
+이제 검색 및 클러스터 포털 구성 요소를 구성했으므로 이제 레지스트리를 확인할 차례입니다. 브라우저를 가리킵니다 [이 url을 ](http://localhost:4502/content/AemForms/CustomPortal.html?wcmmode=disabled). 결과는 아래 표시된 이미지와 같아야 합니다.
 
 >[!NOTE]
 >
->포털에서 게시 서버에 사용자 지정 자산 유형을 나열하는 경우 노드 **/apps/fd/fp/extensions/querybuilder**&#x200B;에 &quot;fd-service&quot; 사용자에게 &quot;read&quot; 권한을 부여해야 합니다.
+>포털에서 게시 서버의 사용자 지정 자산 유형을 나열하는 경우 노드에 &quot;fd-service&quot; 사용자에게 &quot;읽기&quot; 권한을 부여해야 합니다 **/apps/fd/fp/extensions/querybuilder**
 
-![](assets/assettypeslistings.png)
-[자산 유형패키지 관리자를 사용하여 이 패키지를 다운로드하여 설치하십시오.](assets/customassettypekt1.zip) 여기에는 검색 및 라이브러리 구성 요소를 사용하여 나열하는 자산 유형으로 사용되는 샘플 mp4 및 word 문서와 xdp 파일이 포함되어 있습니다
+![assettype](assets/assettypeslistings.png)
+[패키지 관리자를 사용하여 이 패키지를 다운로드하여 설치하십시오.](assets/customassettypekt1.zip) 여기에는 검색 및 라이브러리 구성 요소를 사용하여 나열하는 자산 유형으로 사용되는 샘플 mp4 및 word 문서와 xdp 파일이 포함되어 있습니다

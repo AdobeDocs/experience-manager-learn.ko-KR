@@ -1,18 +1,18 @@
 ---
 title: 적응형 Forms Workflow에서 워크플로우 댓글 캡처
 description: AEM 워크플로우에서 워크플로우 주석 캡처
-feature: 워크플로우
-version: 6.3,6.4
-topic: 개발
+feature: Workflow
+version: 6.4
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 5c250bbb-bac6-427d-8aca-1fbb1229e02c
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
-
 
 # 적응형 Forms Workflow에서 워크플로우 댓글 캡처{#capturing-workflow-comments-in-adaptive-forms-workflow}
 
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 이 요구 사항을 충족하기 위해 주석을 캡처하고 이러한 주석을 워크플로우 메타데이터 속성으로 저장하는 데 사용할 수 있는 샘플 OSGi 번들이 제공됩니다.
 
-다음 스크린샷은 [AEM Workflow](http://localhost:4502/editor.html/conf/global/settings/workflow/models/CaptureComments.html)에서 프로세스 단계를 사용하여 주석을 캡처하고 메타데이터 속성으로 저장하는 방법을 보여줍니다. Capture Workflow Comments는 프로세스 단계에서 사용해야 하는 Java 클래스의 이름입니다. 주석이 포함될 메타데이터 속성 이름을 전달해야 합니다. 아래 스크린샷에서 managerComments는 주석을 저장할 메타데이터 속성입니다.
+다음 스크린샷에서는 의 프로세스 단계를 사용하는 방법을 보여 줍니다 [AEM 워크플로우](http://localhost:4502/editor.html/conf/global/settings/workflow/models/CaptureComments.html) 주석을 캡처하고 메타데이터 속성으로 저장합니다. Capture Workflow Comments는 프로세스 단계에서 사용해야 하는 Java 클래스의 이름입니다. 주석이 포함될 메타데이터 속성 이름을 전달해야 합니다. 아래 스크린샷에서 managerComments는 주석을 저장할 메타데이터 속성입니다.
 
 ![workflowcomments1](assets/workflowcomments1.gif)
 
@@ -31,9 +31,9 @@ ht-degree: 0%
 
 * [Developingwithserviceuser 번들 배포](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-* [SetValue 번들을 배포합니다](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). 이 번들에는 주석을 캡처하고 메타데이터 속성으로 저장하는 샘플 코드가 포함되어 있습니다
+* [SetValue 번들 배포](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). 이 번들에는 주석을 캡처하고 메타데이터 속성으로 저장하는 샘플 코드가 포함되어 있습니다
 
-* [이 문서와 관련된 자산을 파일 시스템에 다운로드하고 압축 해제자산](assets/capturecomments.zip) 에는 워크플로우 모델과 샘플 적응형 양식이 포함됩니다.
+* [이 문서와 관련된 자산을 파일 시스템에서 다운로드 및 압축 해제합니다](assets/capturecomments.zip) 자산에는 워크플로우 모델과 샘플 적응형 양식이 포함되어 있습니다.
 
 * 패키지 관리자를 사용하여 2개의 zip 파일을 AEM에 가져옵니다.
 
@@ -50,4 +50,3 @@ ht-degree: 0%
 /var/workflow/instances/server0
 
 적절한 워크플로우 인스턴스를 선택하고 메타데이터 노드에서 속성 managerComments를 확인합니다.
-

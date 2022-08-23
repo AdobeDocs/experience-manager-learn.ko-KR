@@ -1,26 +1,26 @@
 ---
 title: AEM Sites을 사용한 응답형 레이아웃 이해
-seo-title: AEM Sites을 사용한 응답형 레이아웃 이해
+seo-title: Understanding Responsive Layout with AEM Sites
 description: AEM에서는 레이아웃 컨테이너 구성 요소를 사용하여 사용자 페이지에 대한 응답형 레이아웃을 보유할 수 있습니다. 응답형 레이아웃을 사용하여 컨텐츠 작성자는 다양한 장치를 위한 응답형 컨텐츠를 만들고 AEM 내에서 최종 사용자 경험을 미리 볼 수 있습니다.
-seo-description: 다양한 장치에 대한 응답형 레이아웃을 작성하는 단계를 다룹니다
-feature: 페이지 편집기, 편집 가능한 템플릿
+seo-description: Covers the steps to author responsive layout for different devices
+feature: Page Editor, Editable Templates
 topics: authoring, responsive
 audience: author, marketer
 doc-type: feature video
 activity: use
-version: 6.3, 6.4, 6.5
+version: 6.4, 6.5
 kt: 4252
 thumbnail: 32012.jpg
-topic: 컨텐츠 관리
+topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: c125c0e0-1ed2-463e-bd34-767d009479eb
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '132'
-ht-degree: 15%
+source-wordcount: '110'
+ht-degree: 17%
 
 ---
-
 
 # 응답형 레이아웃 이해 {#understanding-responsive-layout-with-aem-sites}
 

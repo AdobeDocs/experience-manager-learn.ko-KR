@@ -1,18 +1,18 @@
 ---
 title: 워크플로우의 단계로 양식 데이터 모델 서비스에서 오류 메시지 캡처
-description: AEM Forms 6.5.1부터 이제 AEM Workflow의 단계로 양식 데이터 모델 서비스 호출을 사용하여 생성된 오류 메시지를 캡처할 수 있습니다. 워크플로우.
-feature: 워크플로우
-version: 6.5.1,6.5.2
-topic: 개발
+description: AEM Forms 6.5.1부터 이제 AEM Workflow의 단계로 양식 데이터 모델 서비스 호출을 사용하여 생성된 오류 메시지를 캡처할 수 있습니다. 워크플로.
+feature: Workflow
+version: 6.5
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 8cae155c-c393-4ac3-a412-bf14fc411aac
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 1%
+source-wordcount: '246'
+ht-degree: 0%
 
 ---
-
 
 # 양식 데이터 모델 호출 서비스 단계에서 오류 메시지 캡처
 
@@ -45,5 +45,3 @@ AEM Forms 6.5.1부터 이제 오류 메시지를 캡처하고 유효성 검사 �
 
 }
 ```
-
-

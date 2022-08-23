@@ -1,28 +1,28 @@
 ---
 title: 감사 인사 페이지에 제출
-seo-title: 감사 인사 페이지에 제출
+seo-title: Submitting To Thank You Page
 description: 적응형 양식 제출 시 감사 인사 페이지를 표시합니다
-seo-description: 적응형 양식 제출 시 감사 인사 페이지를 표시합니다
+seo-description: Display a thank you page on submitting Adaptive Form
 uuid: ec695b87-083a-47f6-92ac-c9a6dc2b85fb
-feature: 적응형 양식
+feature: Adaptive Forms
 topics: developing
 audience: implementer
 doc-type: article
 activity: setup
-version: 6.3,6.4,6.5
+version: 6.4,6.5
 discoiquuid: 58c6bf42-efe5-41a3-8023-d84f3675f689
-topic: 개발
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 85e1b450-39c0-4bb8-be5d-d7f50b102f3d
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 1%
+source-wordcount: '261'
+ht-degree: 0%
 
 ---
 
-
-# 감사 인사 페이지 {#submitting-to-thank-you-page} 제출
+# 감사 인사 페이지에 제출 {#submitting-to-thank-you-page}
 
 REST에 제출 끝점 옵션은 HTTP GET 요청의 일부로 양식에 입력된 데이터를 구성된 확인 페이지에 전달합니다. 요청할 필드의 이름을 추가할 수 있습니다. 요청 형식은 다음과 같습니다.
 
@@ -41,8 +41,7 @@ POST을 통해 외부 종단점에 제출할 수도 있습니다. 이를 위해�
 
 서버에서 이 기능을 테스트하려면 아래에 언급된 지침을 따르십시오.
 
-* 패키지 관리자](assets/submittingtorestendpoint.zip)를 사용하여 이 문서와 연결된 [자산 파일을 AEM에 가져옵니다
-* 브라우저를 [요청 시간 해제 양식](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)에 보냅니다.
+* 가져오기 [패키지 관리자를 사용하여 이 문서와 연결된 자산 파일을 AEM에 추가합니다](assets/submittingtorestendpoint.zip)
+* 브라우저를 [요청 시간 해제 양식](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
 * 필수 필드를 입력하고 양식을 제출합니다
 * 페이지에 정보가 채워져 감사 인사 페이지가 표시됩니다
-

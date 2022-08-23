@@ -1,14 +1,14 @@
 ---
 title: 적응형 양식 데이터 저장 및 검색
 description: 데이터베이스에서 적응형 양식 데이터를 저장하고 검색합니다. 이 기능을 사용하면 양식 작성자가 양식을 저장하고 나중에 양식을 계속 채울 수 있습니다.
-feature: 적응형 양식
-topic: 개발
+feature: Adaptive Forms
+topic: Development
 role: Developer
 type: Tutorial
-version: 6.3,6.4,6.5
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+version: 6.4,6.5
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: '612'
 ht-degree: 0%
 
 ---

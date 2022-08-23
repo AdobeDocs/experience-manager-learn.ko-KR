@@ -1,19 +1,19 @@
 ---
 title: 로컬 AEM에서 Asset Share Commons 설정
 description: Assets Share Commons의 기능 및 기술 이해를 위한 자료
-version: 6.3, 6.4, 6.5
-topic: 컨텐츠 관리
+version: 6.4, 6.5
+topic: Content Management
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: ab16d5e0-71d9-4518-a03b-4aa5d2ec95a7
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '77'
-ht-degree: 2%
+source-wordcount: '75'
+ht-degree: 0%
 
 ---
 
-
-# 로컬 AEM {#setup-asset-share-commons}에 Asset Share Commons 설정
+# 로컬 AEM에서 Asset Share Commons 설정 {#setup-asset-share-commons}
 
 로컬 AEM 인스턴스에서 실행 중인 Asset Share Commons를 가져오기 위한 간단한 안내서입니다.
 

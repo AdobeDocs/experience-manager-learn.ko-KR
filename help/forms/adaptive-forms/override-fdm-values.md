@@ -3,13 +3,13 @@ title: OSGi 구성을 사용하여 양식 데이터 모델 속성 재정의
 description: AEM Forms 6.5.13에서는 다른 종단점에 대해 한 양식 데이터 모델을 쉽게 테스트할 수 있도록 양식 데이터 모델 속성을 재정의하는 기능을 도입했습니다.
 feature: Adaptive Forms
 type: Tutorial
-version: 6.5.13
+version: 6.5
 topic: Development
 role: Developer
 level: Intermediate
 kt: 10537
 exl-id: 570de1e6-7221-4b8d-b226-a43317bfc166
-source-git-commit: d38f970b1c32884189b0864f8f8bb3b7006a0a7f
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 0%

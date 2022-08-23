@@ -1,18 +1,18 @@
 ---
 title: AEM Forms과 Marketo(1부)
 description: AEM Forms 양식 데이터 모델을 사용하여 AEM Forms을 Marketo과 통합하는 자습서입니다.
-feature: 적응형 Forms, 양식 데이터 모델
-version: 6.3,6.4,6.5
-topic: 개발
+feature: Adaptive Forms, Form Data Model
+version: 6.4,6.5
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 45047852-4fdb-4702-8a99-faaad7213b61
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
-
 
 # AEM Forms과 Marketo
 

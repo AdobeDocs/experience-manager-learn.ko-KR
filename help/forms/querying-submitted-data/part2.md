@@ -1,24 +1,24 @@
 ---
 title: JSON 스키마 및 데이터가 포함된 AEM Forms[Part2]
-seo-title: JSON 스키마 및 데이터가 포함된 AEM Forms[Part2]
+seo-title: AEM Forms with JSON Schema and Data[Part2]
 description: JSON 스키마로 적응형 양식을 만들고 제출된 데이터를 쿼리하는 단계를 설명하는 여러 부분 자습서입니다.
-seo-description: JSON 스키마로 적응형 양식을 만들고 제출된 데이터를 쿼리하는 단계를 설명하는 여러 부분 자습서입니다.
-feature: 적응형 양식
+seo-description: Multi-Part tutorial to walk you through the steps involved in creating Adaptive Form with JSON schema and querying the submitted data.
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
-version: 6.3,6.4,6.5
-topic: 개발
+version: 6.4,6.5
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 29195c70-af12-4a22-8484-3c87a1e07378
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '342'
 ht-degree: 0%
 
 ---
-
 
 # 데이터베이스에 제출된 데이터 저장
 
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 양식 제출을 처리하기 위해 사용자 정의 제출을 만들었습니다. 이 사용자 지정 제출의 post.POST.jsp에서 요청을 Adobe 서블릿에 전달합니다.
 
-사용자 지정 제출 서류에 대한 자세한 내용은 이 [article](https://helpx.adobe.com/experience-manager/kt/forms/using/custom-submit-aem-forms-article.html)을 참조하십시오
+사용자 지정 제출 서류에 대한 자세한 내용은 다음 문서를 참조하십시오 [문서](https://helpx.adobe.com/experience-manager/kt/forms/using/custom-submit-aem-forms-article.html)
 
 com.adobe.aemds.guide.utils.GuideSubmitUtils.setForwardPath(slingRequest,&quot;/bin/storeafsubmission&quot;,null,null);
 

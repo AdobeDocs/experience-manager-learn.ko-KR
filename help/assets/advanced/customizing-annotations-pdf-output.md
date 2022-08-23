@@ -1,26 +1,26 @@
 ---
 title: AEM Assets에서 주석 사용자 지정
-description: AEM 개발자가 PDF로 출력할 때 AEM Assets 형식 및 스타일을 구성할 수 있습니다.
-feature: 협업
-version: 6.3, 6.4, 6.5
-topic: 협업
+description: AEM 개발자가 PDF으로 출력할 때 AEM Assets 형식 및 스타일을 구성할 수 있습니다.
+feature: Collaboration
+version: 6.4, 6.5
+topic: Collaboration
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 972737dd-8ca6-47b4-a4ec-b73355c09cec
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '62'
-ht-degree: 3%
+source-wordcount: '60'
+ht-degree: 0%
 
 ---
 
+# AEM Assets에서 주석 사용자 지정{#using-annotations-in-aem-assets}
 
-# AEM Assets{#using-annotations-in-aem-assets}에서 주석 사용자 지정
-
-AEM에서는 주석 출력을 PDF로 사용자 지정할 수 있습니다.
+AEM에서는 PDF에 대한 주석의 출력 사용자 지정을 지원합니다.
 
 ## PDF 주석 sling:OsgiConfig 정의
 
-PDF 주석을 사용자 정의하려면 아래의 AEM 프로젝트에서 **sling:OsgiConfig** 노드를 만듭니다.
+PDF 주석을 사용자 정의하려면 **sling:OsgiConfig** 아래의 AEM 프로젝트의 노드
 
 `/apps/my-project/config.author/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig.xml` 필요에 따라 값을 조정합니다.
 

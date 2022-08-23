@@ -1,7 +1,7 @@
 ---
 user-guide-title: AEM Dispatcher 캐시 튜토리얼
 user-guide-description: Dispatcher 작동 방식과 사용 방법을 이해하는 데 도움이 되는 튜토리얼입니다.
-version: 6.x
+version: 6.4, 6.5
 sub-product: foundation
 doc-type: tutorial
 audience: architect, developer, implementer
@@ -9,10 +9,10 @@ activity: develop, understand
 kt: 2233
 index: y
 team: TM
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '36'
+ht-degree: 75%
 
 ---
 

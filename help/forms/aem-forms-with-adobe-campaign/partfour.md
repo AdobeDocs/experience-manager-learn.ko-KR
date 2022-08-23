@@ -1,18 +1,18 @@
 ---
 title: 양식 데이터 모델을 사용하여 Campaign 프로필 만들기
 description: AEM Forms 양식 데이터 모델을 사용하여 Adobe Campaign Standard 프로필을 만드는 단계입니다
-feature: 적응형 양식
-version: 6.3,6.4,6.5
-topic: 개발
+feature: Adaptive Forms
+version: 6.4,6.5
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 59d5ba6d-91c1-48c7-8c87-8e0caf4f2d7e
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '426'
 ht-degree: 3%
 
 ---
-
 
 # 양식 데이터 모델을 사용하여 Campaign 프로필 만들기 {#create-campaign-profile-using-form-data-model}
 
@@ -112,8 +112,7 @@ swagger 파일을 사용하여 데이터 소스가 생성됩니다. 데이터 �
 솔루션을 테스트하려면 다음 단계를 수행하십시오.
 * [여기에 설명된 대로 단계를 따랐는지 확인합니다](aem-forms-with-campaign-standard-getting-started-tutorial.md)
 * [Swagger 파일을 가져오려면 이 파일을 다운로드하고 압축 해제합니다.](assets/create-acs-profile-swagger-file.zip)
-* swagger 파일을 사용하여 데이터 소스 만들기
-양식 데이터 모델을 만들고 이전 단계에서 만든 데이터 소스를 기반으로 합니다
+* swagger 파일을 사용하여 데이터 소스 만들기 양식 데이터 모델 만들기 및 이전 단계에서 만든 데이터 소스를 기반으로 합니다
 * 이전 단계에서 만든 양식 데이터 모델을 기반으로 적응형 양식을 만듭니다.
 * 데이터 소스 탭에서 다음 요소를 적응형 양식으로 끌어다 놓습니다
 

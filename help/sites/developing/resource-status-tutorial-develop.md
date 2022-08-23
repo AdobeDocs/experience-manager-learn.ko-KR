@@ -5,8 +5,8 @@ topics: development
 audience: developer
 doc-type: tutorial
 activity: develop
-version: 6.3, 6.4, 6.5
-source-git-commit: 03db12de4d95ced8fabf36b8dc328581ec7a2749
+version: 6.4, 6.5
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 2%
@@ -36,36 +36,36 @@ Adobe Experience Manager의 리소스 상태 API는 AEM 다양한 편집기 웹 
 
 사용자 지정 리소스 상태를 개발할 때 개발 작업은 다음과 같이 구성됩니다.
 
-1. 상태가 필수인지 확인하는 책임이 있는 ResourceStatusProvider 구현과 상태에 대한 기본 정보:제목, 메시지, 우선 순위, 변형, 아이콘 및 사용 가능한 작업.
+1. 상태가 필수인지 확인하는 책임이 있는 ResourceStatusProvider 구현과 상태에 대한 기본 정보: 제목, 메시지, 우선 순위, 변형, 아이콘 및 사용 가능한 작업.
 2. 선택적으로, 사용 가능한 모든 작업의 기능을 구현하는 GraniteUI JavaScript입니다.
 
    ![리소스 상태 아키텍처](assets/sample-editor-resource-status-application-architecture.png)
 
-3. 페이지, 경험 조각 및 템플릿 편집기의 일부로 제공된 상태 리소스에는 &quot;[!DNL statusType]&quot; 리소스를 통해 유형이 제공됩니다.
+3. 페이지, 경험 조각 및 템플릿 편집기의 일부로 제공된 상태 리소스에는 &quot; 리소스를 통해 유형이 제공됩니다.[!DNL statusType]&quot; 속성을 사용합니다.
 
-   * 페이지 편집기:`editor`
-   * 경험 조각 편집기:`editor`
+   * 페이지 편집기: `editor`
+   * 경험 조각 편집기: `editor`
    * 템플릿 편집기: `template-editor`
 
-4. 상태 리소스의 `statusType`이(가) 등록된 `CompositeStatusType` OSGi에 대해 구성된 `name` 속성과 일치합니다.
+4. 상태 리소스의 `statusType` 등록됨 `CompositeStatusType` OSGi 구성 `name` 속성을 사용합니다.
 
-   모든 일치 항목에 대해 `CompositeStatusType's` 유형이 수집되고 `ResourceStatusProvider.getType()` 를 통해 이 유형이 있는 `ResourceStatusProvider` 구현을 수집하는 데 사용됩니다.
+   모든 일치 항목에 대해 `CompositeStatusType's` 유형은 수집되며 `ResourceStatusProvider` 이러한 유형을 갖는 구현 `ResourceStatusProvider.getType()`.
 
-5. 일치하는 `ResourceStatusProvider`이(가) 편집기의 `resource`에 전달되고 `resource`의 상태가 표시되어야 하는지 확인합니다. 상태가 필요한 경우 이 구현은 반환할 0개 또는 많은 `ResourceStatuses`을 작성하고 각각 표시할 상태를 나타냅니다.
+5. 일치 `ResourceStatusProvider` 이 전달됨 `resource` 편집기에서 그리고 가 `resource` 에 표시할 상태가 있습니다. 상태가 필요한 경우 이 구현은 0개 이상의 빌드를 담당합니다 `ResourceStatuses` 반환하려면 각각 표시할 상태를 나타냅니다.
 
-   일반적으로 `ResourceStatusProvider`은 `resource`당 0 또는 1 `ResourceStatus`을 반환합니다.
+   일반적으로 `ResourceStatusProvider` 0 또는 1 반환 `ResourceStatus` per `resource`.
 
-6. ResourceStatus 는 고객이 구현할 수 있는 인터페이스이거나 유용한 `com.day.cq.wcm.commons.status.EditorResourceStatus.Builder` 을 사용하여 상태를 구성할 수 있습니다. 상태는 다음과 같이 구성됩니다.
+6. ResourceStatus 는 고객이 구현하거나 유용한 `com.day.cq.wcm.commons.status.EditorResourceStatus.Builder` 상태를 구성하는 데 사용할 수 있습니다. 상태는 다음과 같이 구성됩니다.
 
    * 제목
    * 메시지
    * 아이콘
    * 변형
    * 우선 순위
-   * 작업
+   * 액션
    * 데이터
 
-7. 원할 경우 `ResourceStatus` 개체에 `Actions`이 제공된 경우, 지원 clientlibs가 작업 링크에 상태 표시줄에 기능을 바인딩해야 합니다.
+7. 원할 경우 `Actions` 다음 기간 동안 `ResourceStatus` 개체를 지원하는 clientlibs는 상태 표시줄에 작업 링크에 기능을 바인딩해야 합니다.
 
    ```js
    (function(jQuery, document) {
@@ -80,11 +80,11 @@ Adobe Experience Manager의 리소스 상태 API는 AEM 다양한 편집기 웹 
 
 8. 작업을 지원하기 위해 지원되는 모든 JavaScript 또는 CSS를 각 편집기의 각 클라이언트 라이브러리를 통해 프록시해야 편집기에서 프런트 엔드 코드를 사용할 수 있습니다.
 
-   * 페이지 편집기 카테고리:`cq.authoring.editor.sites.page`
-   * 경험 조각 편집기 카테고리:`cq.authoring.editor.sites.page`
-   * 템플릿 편집기 범주:`cq.authoring.editor.sites.template`
+   * 페이지 편집기 카테고리: `cq.authoring.editor.sites.page`
+   * 경험 조각 편집기 카테고리: `cq.authoring.editor.sites.page`
+   * 템플릿 편집기 범주: `cq.authoring.editor.sites.template`
 
-## 코드 {#view-the-code} 보기
+## 코드 보기 {#view-the-code}
 
 [GitHub에서 코드를 참조하십시오](https://github.com/Adobe-Consulting-Services/acs-aem-samples/tree/master/bundle/src/main/java/com/adobe/acs/samples/resourcestatus/impl/SampleEditorResourceStatusProvider.java)
 

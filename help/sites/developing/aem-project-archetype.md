@@ -1,28 +1,28 @@
 ---
-title: AEM 프로젝트 원형
-description: AEM 프로젝트 원형은 사용자 자신의 AEM 프로젝트의 시작점으로서 우수 사례 기반 Adobe Experience Manager 프로젝트를 생성합니다.
+title: AEM Project Archetype
+description: AEM Project Archetype은 사용자 자신의 AEM 프로젝트의 시작점으로서 모범 사례 기반 Adobe Experience Manager 프로젝트를 생성합니다.
 feature: AEM Project Archetype
 topics: development
 audience: developer
 doc-type: technical video
 activity: understand
-version: 6.3, 6.4, 6.5, Cloud Service
+version: 6.4, 6.5, Cloud Service
 kt: 4675
 thumbnail: 32550.jpg
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 9f46ce7e-9c6d-429d-9d8a-c93c274f70d7
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '75'
-ht-degree: 40%
+ht-degree: 50%
 
 ---
 
 # [!DNL AEM Project Archetype] {#aem-project-archetype}
 
-AEM 프로젝트에는 구현에 대한 모든 코드와 구성이 포함되어 있습니다. [!DNL AEM Project Archetype]은 고유한 AEM 프로젝트의 시작점으로 최소한의 우수 사례 기반 Adobe Experience Manager 프로젝트를 만듭니다.
+AEM 프로젝트에는 구현에 대한 모든 코드와 구성이 포함되어 있습니다. 다음 [!DNL AEM Project Archetype] 고유한 AEM 프로젝트의 시작점으로 최소한의 우수 사례 기반 Adobe Experience Manager 프로젝트를 만듭니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32550/?quality=12&learn=on)
 

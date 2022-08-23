@@ -2,7 +2,7 @@
 title: AEM Sites을 사용하여 페이지 게시
 description: Adobe Experience Manager Sites에서는 컨텐츠를 게시하고 게시 취소할 수 있는 여러 옵션을 제공합니다. 이 비디오에서는 다양한 방법 및 기능을 탐구합니다.
 feature-set: Experience Manager
-version: 6.3, 6.4, 6.5, Cloud Service
+version: 6.4, 6.5, Cloud Service
 kt: 4322
 thumbnail: 32193.jpg
 feature: Publishing
@@ -10,7 +10,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 6dc66195-f438-4366-a5e2-486145e4b6d7
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '134'
 ht-degree: 1%

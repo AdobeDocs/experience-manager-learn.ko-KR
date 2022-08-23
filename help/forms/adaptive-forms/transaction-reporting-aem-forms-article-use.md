@@ -1,18 +1,18 @@
 ---
 title: AEM Forms에서 거래 보고 사용
 description: AEM Forms의 트랜잭션 보고서를 사용하면 AEM Forms 배포에 지정된 날짜 이후 발생한 모든 트랜잭션 수를 유지할 수 있습니다.
-feature: 적응형 양식
-version: 6.4.1,6.5
-topic: 개발
+feature: Adaptive Forms
+version: 6.4,6.5
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 36c38cb6-6f6a-4328-abf5-7a30059b66ce
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 2%
+source-wordcount: '367'
+ht-degree: 1%
 
 ---
-
 
 # AEM Forms에서 거래 보고 사용{#using-transaction-reporting-in-aem-forms}
 
@@ -35,7 +35,7 @@ ht-degree: 2%
 
 도구 선택 | Forms | 트랜잭션 보고서 보기
 
-또는 [여기](http://localhost:4502/mnt/overlay/fd/transaction/gui/content/report.html)를 클릭하여 트랜잭션 보고서를 봅니다.
+또는 다음을 클릭하여 트랜잭션 보고서를 봅니다. [여기](http://localhost:4502/mnt/overlay/fd/transaction/gui/content/report.html)
 
 ![트랜잭션 보고](assets/transactionreporting.gif)
 
@@ -47,5 +47,4 @@ PDF 양식 제출, 에이전트 UI를 사용하여 대화형 커뮤니케이션�
 
 작성자 인스턴스에서 트랜잭션 보고서를 보는 경우, 역복제가 모든 게시 인스턴스에 구성되어 있는지 확인하십시오.
 
-트랜잭션 보고에 대한 자세한 내용을 보려면 [여기](https://helpx.adobe.com/experience-manager/6-4/forms/using/transaction-reports-overview.html)를 클릭하십시오.
-
+트랜잭션 보고에 대해 자세히 알아보려면 [여기를 클릭하세요.](https://helpx.adobe.com/experience-manager/6-4/forms/using/transaction-reports-overview.html)

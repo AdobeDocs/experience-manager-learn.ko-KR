@@ -3,21 +3,21 @@ title: AEM Forms 6.3 및 6.4에서 Salesforce로 DataSource 구성
 description: 양식 데이터 모델을 사용하여 AEM Forms과 Salesforce 통합
 feature: Adaptive Forms, Form Data Model
 topics: integrations
-version: 6.3,6.4,6.5
+version: 6.4,6.5
 topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 0049c9fd864bd4dd4f8c33b1e40e94aad3ffc5b9
+exl-id: 7a4fd109-514a-41a8-a3fe-53c1de32cb6d
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '900'
 ht-degree: 0%
 
 ---
 
-
 # AEM Forms 6.3 및 6.4에서 Salesforce로 DataSource 구성{#configuring-datasource-with-salesforce-in-aem-forms-and}
 
-## 전제 조건 {#prerequisites}
+## 사전 요구 사항 {#prerequisites}
 
 이 문서에서는 Salesforce를 사용하여 데이터 소스를 만드는 프로세스를 살펴봅니다
 
@@ -30,17 +30,17 @@ ht-degree: 0%
    * [AEM 6.4에서 SSL을 사용하기 위한 공식 설명서](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/ssl-by-default.html)
 
 * Salesforce 계정이 있어야 합니다.
-* 연결된 앱을 만들어야 합니다. 앱을 만들기 위한 Salesforce의 공식 설명서가 [여기](https://help.salesforce.com/articleView?id=connected_app_create.htm&amp;type=0)에 나열되어 있습니다.
+* 연결된 앱을 만들어야 합니다. 앱 작성을 위한 Salesforce의 공식 설명서가 나열됩니다 [여기](https://help.salesforce.com/articleView?id=connected_app_create.htm&amp;type=0).
 * 앱에 적절한 OAuth 범위를 제공합니다(테스트 목적으로 사용 가능한 모든 OAuth 범위를 선택함)
 * 콜백 URL을 제공합니다. 내 경우의 콜백 URL은
 
-   * **AEM Forms 6.3**&#x200B;을 사용하는 경우 콜백 URL은 https://gbedekar-w7-1:6443/etc/cloudservices/fdm/createlead.html입니다. 이 URL에서 createload는 내 양식 데이터 모델의 이름입니다.
+   * 사용 중인 경우 **AEM Forms 6.3**&#x200B;이면 콜백 URL은 https://gbedekar-w7-1:6443/etc/cloudservices/fdm/createlead.html입니다. 이 URL에서 createload는 내 양식 데이터 모델의 이름입니다.
 
    * ** AEM Forms 6.4**를 사용하는 경우 콜백 URL은 https://gbedekar-w7-:6443/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html입니다.
 
 이 예에서 gbedekar -w7-1:6443은 AEM이 실행 중인 서버 및 포트의 이름입니다.
 
-연결된 앱을 만들었으면 **소비자 키 및 비밀 키**&#x200B;를 메모하십시오. AEM Forms에서 데이터 소스를 만들 때 이러한 권한이 필요합니다.
+연결된 앱을 만들었으면 **소비자 키 및 비밀 키**. AEM Forms에서 데이터 소스를 만들 때 이러한 권한이 필요합니다.
 
 연결된 앱을 만들었으므로 이제 salesforce에서 수행해야 하는 작업을 위해 Swagger 파일을 만들어야 합니다. 다운로드 가능한 자산의 일부로 샘플 스웨거 파일이 포함됩니다. 이 Swagger 파일을 사용하면 적응형 양식 제출 시 &quot;Lead&quot; 개체를 만들 수 있습니다. 이 swagger 파일을 살펴보십시오.
 
@@ -49,7 +49,7 @@ ht-degree: 0%
 ## AEM Forms 6.3 {#aem-forms}
 
 * https 프로토콜을 사용하여 AEM Forms에 로그인합니다
-* https://&lt;servername>:&lt;serverport> /etc/cloudservices.html에 입력하여 클라우드 서비스로 이동합니다(예: https://gbedekar-w7-1:6443/etc/cloudservices.html).
+* https://에 입력하여 클라우드 서비스로 이동합니다.&lt;servername>:&lt;serverport> /etc/cloudservices.html, 예: https://gbedekar-w7-1:6443/etc/cloudservices.html
 * 아래로 스크롤하여 &quot;양식 데이터 모델&quot;로 이동합니다.
 * &quot;구성 표시&quot;를 클릭합니다.
 * 새 구성을 추가하려면 &quot;+&quot;를 클릭합니다
@@ -68,15 +68,15 @@ ht-degree: 0%
 * OAuth Url은 - **https://login.salesforce.com/services/oauth2/authorize**
 * 새로 고침 토큰 Url - **https://na5.salesforce.com/services/oauth2/token**
 * **액세스 토큰 Url - https://na5.salesforce.com/services/oauth2/token**
-* 권한 부여 범위: ** api   chatter_api 전체 id   openid   refresh_token visualforce web**
+* 권한 부여 범위: ** api chatter_api 전체 id openid refresh_token visualforce web**
 * 인증 처리기: 권한 부여 베어러
 * &quot;Connect To OAUTH&quot;를 클릭합니다.모든 것이 제대로 작동하면 오류가 표시되지 않습니다
 
-Salesforce를 사용하여 양식 데이터 모델을 만들었으면 방금 만든 데이터 소스를 사용하여 양식 데이터 통합을 만들 수 있습니다. 양식 데이터 통합을 만들기 위한 공식 설명서는 [여기](https://helpx.adobe.com/aem-forms/6-3/data-integration.html)입니다.
+Salesforce를 사용하여 양식 데이터 모델을 만들었으면 방금 만든 데이터 소스를 사용하여 양식 데이터 통합을 만들 수 있습니다. 양식 데이터 통합을 만들기 위한 공식 설명서는 다음과 같습니다 [여기](https://helpx.adobe.com/aem-forms/6-3/data-integration.html).
 
 SFDC에서 리드 개체를 만들기 위해 POST 서비스를 포함하도록 양식 데이터 모델을 구성해야 합니다.
 
-또한 리드 개체에 대해 읽기 및 쓰기 서비스를 구성해야 합니다. 이 페이지 하단에 있는 스크린샷을 참조하십시오.
+리드 개체에 대해 읽기 및 쓰기 서비스를 구성해야 합니다. 이 페이지 하단에 있는 스크린샷을 참조하십시오.
 
 양식 데이터 모델을 만든 후 이 모델을 기반으로 적응형 Forms을 만들고 양식 데이터 모델 제출 메서드를 사용하여 SFDC에서 리드를 만들 수 있습니다.
 
@@ -105,11 +105,11 @@ SFDC에서 리드 개체를 만들기 위해 POST 서비스를 포함하도록 �
    * &quot;OAuth에 연결&quot; 단추를 클릭합니다. 오류가 발생하면 이전 단계를 검토하여 모든 정보가 정확하게 입력되었는지 확인하십시오.
 
 
-SalesForce를 사용하여 데이터 소스를 만들고 나면 방금 만든 데이터 소스를 사용하여 양식 데이터 통합을 만들 수 있습니다. 에 대한 설명서 링크는 [여기](https://helpx.adobe.com/experience-manager/6-4/forms/using/create-form-data-models.html)입니다.
+SalesForce를 사용하여 데이터 소스를 만들고 나면 방금 만든 데이터 소스를 사용하여 양식 데이터 통합을 만들 수 있습니다. 에 대한 설명서 링크는 [여기](https://helpx.adobe.com/experience-manager/6-4/forms/using/create-form-data-models.html)
 
 SFDC에서 리드 개체를 만들기 위해 POST 서비스를 포함하도록 양식 데이터 모델을 구성해야 합니다.
 
-또한 리드 개체에 대해 읽기 및 쓰기 서비스를 구성해야 합니다. 이 페이지 하단에 있는 스크린샷을 참조하십시오.
+리드 개체에 대해 읽기 및 쓰기 서비스를 구성해야 합니다. 이 페이지 하단에 있는 스크린샷을 참조하십시오.
 
 양식 데이터 모델을 만든 후 이 모델을 기반으로 적응형 Forms을 만들고 양식 데이터 모델 제출 메서드를 사용하여 SFDC에서 리드를 만들 수 있습니다.
 

@@ -1,13 +1,13 @@
 ---
 title: MySQL 데이터베이스에서 양식 데이터 저장 및 검색 - 데이터 소스 구성
 description: 양식 데이터를 저장하고 검색하는 단계를 단계별로 안내하는 다중 부분 자습서입니다
-version: 6.3,6.4,6.5
+version: 6.4,6.5
 feature: Adaptive Forms
 topic: Development
 role: Developer
 level: Experienced
 exl-id: dccca658-3373-4de2-8589-21ccba2b7ba6
-source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '199'
 ht-degree: 4%

@@ -1,27 +1,27 @@
 ---
 title: AEM에서 컨텐츠 조각 제공
-seo-title: Adobe Experience Manager에서 컨텐츠 조각 제공
+seo-title: Delivering Content Fragments in Adobe Experience Manager
 description: 레이아웃과 관계없이 핵심 구성 요소를 사용하여 AEM Sites에서 직접 사용하거나, 헤드리스 방식으로 다운스트림 채널로 제공할 수 있습니다.
-seo-description: 레이아웃과 관계없이 핵심 구성 요소를 사용하여 AEM Sites에서 직접 사용하거나, 헤드리스 방식으로 다운스트림 채널로 제공할 수 있습니다.
-sub-product: 컨텐츠 서비스
-feature: 콘텐츠 조각
+seo-description: Content Fragments, independent of layout, can be used directly in AEM Sites with Core Components or can be delivered in a headless manner to downstream channels.
+sub-product: content-services
+feature: Content Fragments
 topics: authoring, content-architecture
 audience: all
 doc-type: feature video
 activity: use
-version: 6.3, 6.4, 6.5
+version: 6.4, 6.5
 uuid: 045473d2-5abe-4414-b91c-d369f3069ead
 discoiquuid: 912e0c41-83cf-49f7-b515-09519b6718c1
-topic: 컨텐츠 관리
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 525cd30c-05bf-4f17-b61b-90609ce757ea
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '586'
-ht-degree: 2%
+source-wordcount: '548'
+ht-degree: 5%
 
 ---
-
 
 # 컨텐츠 조각 제공 {#delivering-content-fragments}
 
@@ -29,7 +29,7 @@ Adobe Experience Manager(AEM) 컨텐츠 조각은 연관되지만 디자인이�
 
 레이아웃과 관계없이 핵심 구성 요소를 사용하여 AEM Sites에서 직접 사용하거나, 헤드리스 방식으로 다운스트림 채널로 제공할 수 있습니다.
 
-이 비디오 시리즈는 컨텐츠 조각을 사용하기 위한 게재 옵션을 다룹니다. 및 [컨텐츠 조각 작성에 대한 자세한 내용은 여기](content-fragments-feature-video-use.md)에서 확인할 수 있습니다.
+이 비디오 시리즈는 컨텐츠 조각을 사용하기 위한 게재 옵션을 다룹니다. 및 정의에 대한 세부 정보 [컨텐츠 조각 작성 은 여기에서 찾을 수 있습니다](content-fragments-feature-video-use.md).
 
 1. 웹 페이지에서 컨텐츠 조각 사용
 2. AEM Content Services를 사용하여 컨텐츠 조각을 JSON으로 노출
@@ -39,7 +39,7 @@ Adobe Experience Manager(AEM) 컨텐츠 조각은 연관되지만 디자인이�
 
 >[!VIDEO](https://video.tv.adobe.com/v/22449/?quality=12&learn=on)
 
-컨텐츠 조각은 AEM WCM 코어 구성 요소&#39; [컨텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)를 사용하여 AEM Sites 페이지나 유사한 방식으로 경험 조각에서 사용할 수 있습니다.
+컨텐츠 조각은 AEM WCM 코어 구성 요소 를 사용하여 AEM Sites 페이지나 유사한 방식으로 경험 조각에서 사용할 수 있습니다 [컨텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html).
 
 컨텐츠 조각 구성 요소는 필요에 따라 컨텐츠를 표시하기 위해 AEM 스타일 시스템을 사용하여 스타일을 지정할 수 있습니다.
 
@@ -49,7 +49,7 @@ Adobe Experience Manager(AEM) 컨텐츠 조각은 연관되지만 디자인이�
 
 AEM Content Services를 사용하면 컨텐츠를 정규화된 JSON 형식으로 변환하는 AEM 페이지 기반 HTTP 엔드포인트를 쉽게 만들 수 있습니다.
 
-위의 비디오에서는 [컨텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)를 사용하여 개별 컨텐츠 조각을 노출합니다. [컨텐츠 조각 목록 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-list.html)는 작성자가 컨텐츠 조각 목록으로 페이지를 동적으로 채우는 쿼리를 정의할 수 있는 새 구성 요소입니다. 여러 컨텐츠 조각을 노출해야 하는 경우 컨텐츠 조각 목록 구성 요소가 선호됩니다.
+위의 비디오에서는 을(를) 사용합니다 [컨텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) 개별 컨텐츠 조각을 노출하기 위해 다음 [컨텐츠 조각 목록 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-list.html) 는 작성자가 컨텐츠 조각 목록으로 페이지를 동적으로 채우는 쿼리를 정의할 수 있도록 해주는 새 구성 요소입니다. 여러 컨텐츠 조각을 노출해야 하는 경우 컨텐츠 조각 목록 구성 요소가 선호됩니다.
 
 *예제 Content Services 엔드포인트 JSON 페이로드:*\
 **[moathers.json](assets/athletes.json)**
@@ -69,7 +69,7 @@ AEM 6.5에서 처음 도입된 이 Assets HTTP API를 사용하는 컨텐츠 조
 
 웹 채널을 통해 컨텐츠 조각을 전달하는 방법은 AEM Sites과 함께 컨텐츠 조각 구성 요소를 사용하여 간단합니다.
 
-### 헤드리스
+### Headless
 
 헤드리스 사용 사례에서 타사 채널을 지원하기 위해 컨텐츠 조각을 JSON으로 노출하는 두 가지 옵션이 있습니다.
 
@@ -80,7 +80,7 @@ AEM 6.5에서 처음 도입된 이 Assets HTTP API를 사용하는 컨텐츠 조
 ## 추가 리소스 {#additional-resources}
 
 * [컨텐츠 조각 작성](content-fragments-feature-video-use.md)
-* [AEM WCM 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)
+* [AEM WCM 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [AEM WCM 코어 컨텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
 
 비디오 시리즈에서 최종 상태에 대한 AEM 6.4+ 인스턴스에 아래 패키지를 다운로드하여 설치하려면 다음을 수행하십시오.\
