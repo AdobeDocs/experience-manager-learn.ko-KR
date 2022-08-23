@@ -5,10 +5,10 @@ user-guide-title: AEM Forms 비디오 및 튜토리얼
 user-guide-description: 초보자 및 숙련된 AEM Forms 개발자를 위한 AEM Forms 리소스 모음입니다.
 breadcrumb-title: AEM Forms 튜토리얼
 index: y
-source-git-commit: 2cb08c584cb8dce27fd74314d7eba69ef4f8a875
+source-git-commit: 614db8b03a823b60846ab8ccfa8fbc29a41f7791
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1686'
+ht-degree: 3%
 
 ---
 
@@ -55,6 +55,7 @@ ht-degree: 0%
    + [규칙 편집기의 사용자 지정 함수](adaptive-forms/custom-functions-aem-forms.md)
    + [웹 페이지에 적응형 양식 포함](adaptive-forms/embed-af-web-page.md)
    + [문자열 배열 만들기](adaptive-forms/converting-comma-seperated-string-to-array.md)
+   + [AEM Forms의 항목 로드 경로](adaptive-forms/using-item-load-path.md)
    + [OSGI 워크플로우에서 XML에 값 설정 사용](adaptive-forms/setvalue-aem-forms-workflow-tutorial-use.md)
    + [OSGI 워크플로우에서 JSON에서 값 설정 사용](adaptive-forms/setvalue-json-data-in-aem-forms-workflow-article-use.md)
    + [AEM Forms 워크플로우에서 이메일 구성 요소 보내기](adaptive-forms/email-step-aem-workflow-video-use.md)
