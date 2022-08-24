@@ -2,14 +2,14 @@
 title: AEM Assets에서 이미지용 사용자 지정 스마트 태그
 description: 자산에 사용자 지정 용어를 적용하도록 AEM Assets의 스마트 태그를 학습하는 방법을 알아봅니다.
 feature: Smart Tags
-version: 6.4, 6.5, Cloud Services
+version: 6.4, 6.5, Cloud Service
 kt: 795
 thumbnail: 22254.jpg
 topic: Content Management
 role: Developer
 level: Intermediate
 exl-id: 06f2ae4d-c18e-45ed-96d7-ddc6f9c8d829
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: d7b1ab815d9c8a0d0342f7b57d1efb08fb39a26a
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 1%
@@ -26,9 +26,9 @@ ht-degree: 1%
 ## AEM 6.x 이미지용 사용자 지정 스마트 태그 설정{#set-up}
 
 >[!NOTE]
-> 이미지용 사용자 지정 스마트 태그는 AEM에 Cloud Service으로 자동으로 제공됩니다.
+> 이미지에 대한 사용자 지정 스마트 태그는 AEM as a Cloud Service에 자동으로 제공됩니다.
 
-이미지용 사용자 지정 스마트 태그에는 [이미지에 대한 스마트 태그를 설정해야 합니다](./image-smart-tags.md#set-up).
+이미지용 사용자 지정 스마트 태그에는 다음이 필요합니다 [설정할 이미지의 스마트 태그](./image-smart-tags.md#set-up).
 
 스마트 컨텐츠 서비스 및 Adobe I/O을 사용하여 AEM Assets에서 스마트 태그 교육을 구성하는 방법을 알아봅니다. 이미지용 사용자 지정 스마트 태그
 
@@ -36,4 +36,4 @@ ht-degree: 1%
 
 ## 추가 리소스
 
-* AEM 6.4에는 [최신 서비스 팩](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html#aem-64)이 필요합니다.
+* AEM 6.4를 사용하려면 [최신 서비스 팩](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html#aem-64).
