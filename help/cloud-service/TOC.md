@@ -4,9 +4,9 @@ user-guide-description: Adobe Experience Manager as a Cloud Service를 위한 �
 breadcrumb-title: AEM as a Cloud Service 튜토리얼
 sub-product: cloud-service
 team: TM
-source-git-commit: 34fbb22916cf8a8df0e3240835c71e0979fd11bd
+source-git-commit: b04e247c091634030e5377fdb8a159f8c7cce904
 workflow-type: tm+mt
-source-wordcount: '817'
+source-wordcount: '823'
 ht-degree: 21%
 
 ---
@@ -213,6 +213,7 @@ ht-degree: 21%
    + Microsoft Power와 통합 자동화{#forms-cs-and-power-automate}
       + [통합 구성](./forms/forms-cs-and-power-automate/integrate-formscs-power-automate.md)
       + [제출된 양식 데이터를 구문 분석합니다.](./forms/forms-cs-and-power-automate/send-email-notification.md)
+      + [전자 메일 첨부 파일로 DoR 보내기](./forms/forms-cs-and-power-automate/send-DoR-email-attachment.md)
    + Microsoft Dynamics와 통합{#formscs-dynamics-crm}
       + [Dynamics 응용 프로그램 만들기](./forms/formscs-dynamics-crm/create-dynamics-account.md)
       + [데이터 소스 구성](./forms/formscs-dynamics-crm/configure-odata-data-source.md)
