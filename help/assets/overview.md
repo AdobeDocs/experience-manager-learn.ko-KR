@@ -3,16 +3,22 @@ title: AEM Assets 비디오 및 튜토리얼
 description: 비디오를 시청하여 AEM 자산 지원 및 지원을 받으십시오.
 sub-product: assets, dynamic-media
 exl-id: 1d0b0183-25ee-4cb4-82a5-3506e7c1c908
-source-git-commit: efa33aa8cf8288d48ae56d2e96ed9d3a6c4e9627
+source-git-commit: 9aae58c3301a7067baca374d6499f1afc3c95b06
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 18%
+source-wordcount: '205'
+ht-degree: 19%
 
 ---
 
 # AEM Assets 비디오 및 튜토리얼 {#overview}
 
 Adobe Experience Manager(AEM) Assets는 AEM Platform의 디지털 자산 관리 도구로, 사용자가 웹 기반 저장소에서 디지털 자산(이미지, 비디오, 문서 및 오디오 클립)을 만들고, 관리하고 공유할 수 있도록 해줍니다. 이 사용자 안내서에는 AEM Assets의 다양한 기능과 성능에 대한 비디오 및 자습서가 포함되어 있습니다.
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_assets_overview"
+>title="AEM Assets"
+>abstract="필요한 자산을 빠르게 찾고 편집하는 방법을 배웁니다."
+>additional-url="https://video.tv.adobe.com/v/336196" text="AEM Assets 둘러보기"
 
 ## AEM Assets 둘러보기
 
