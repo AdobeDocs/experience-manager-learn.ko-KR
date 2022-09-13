@@ -10,7 +10,7 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: b1ab2a13-8b0e-4d7f-82b5-78b1dda248ba
-source-git-commit: b98f567e05839db78a1a0a593c106b87af931a49
+source-git-commit: b2bf2a8e454d7ccd09819f2a38e58f7c303cb066
 workflow-type: tm+mt
 source-wordcount: '912'
 ht-degree: 4%
@@ -48,7 +48,7 @@ React 응용 프로그램은 __AEM 게시__ 그러나 React 애플리케이션�
 
 ## 사용 방법
 
-1. 복제 `adobbe/aem-guides-wknd-graphql` 저장소:
+1. 복제 `adobe/aem-guides-wknd-graphql` 저장소:
 
    ```shell
    $ git clone git@github.com:adobe/aem-guides-wknd-graphql.git

@@ -9,16 +9,15 @@ level: Intermediate
 kt: 10587
 thumbnail: KT-10587.jpg
 mini-toc-levels: 2
-source-git-commit: 34fbb22916cf8a8df0e3240835c71e0979fd11bd
+source-git-commit: b2bf2a8e454d7ccd09819f2a38e58f7c303cb066
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '637'
 ht-degree: 1%
 
 ---
 
 
 # AEM Headless SPA 배포
-
 
 AEM 헤드리스 단일 페이지 앱(SPA) 배포에는 헤드리스 방식으로 AEM에서 컨텐츠를 소비하고 상호 작용하는 React 또는 Value와 같은 프레임워크를 사용하여 작성된 JavaScript 기반 애플리케이션이 포함됩니다.
 
@@ -110,6 +109,27 @@ Adobe은 React로 코딩된 단일 페이지 앱의 예를 제공합니다.
                <p class="headline is-size-6 has-text-weight-bold"><a href="../example-apps/react-app.md" title="React 앱">React 앱</a></p>
                <p class="is-size-6">AEM Headless GraphQL API의 컨텐츠를 사용하는 React로 작성된 단일 페이지 앱의 예입니다.</p>
                <a href="../example-apps/react-app.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
+                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">보기 예</span>
+               </a>
+           </div>
+       </div>
+   </div>
+</div>
+<!-- Next.js app -->
+<div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Next.js app" tabindex="0">
+   <div class="card">
+       <div class="card-image">
+           <figure class="image is-16by9">
+               <a href="../example-apps/next-js.md" title="Next.js 앱" tabindex="-1">
+                   <img class="is-bordered-r-small" src="../example-apps/assets/next-js/next-js-card.png" alt="Next.js 앱">
+               </a>
+           </figure>
+       </div>
+       <div class="card-content is-padded-small">
+           <div class="content">
+               <p class="headline is-size-6 has-text-weight-bold"><a href="../example-apps/next-js.md" title="Next.js 앱">Next.js 앱</a></p>
+               <p class="is-size-6">AEM Headless GraphQL API의 컨텐츠를 사용하는 Next.js에 작성된 단일 페이지 앱의 예입니다.</p>
+               <a href="../example-apps/next-js.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">보기 예</span>
                </a>
            </div>
