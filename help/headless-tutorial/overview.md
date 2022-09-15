@@ -7,20 +7,25 @@ role: Developer
 level: Beginner
 recommendations: disable, exclude
 exl-id: 57f88d79-9879-4bb9-a3db-9fec95e3a0bd
-source-git-commit: 34fbb22916cf8a8df0e3240835c71e0979fd11bd
+source-git-commit: b20a29e67da0bcbf53ae8089a7cde0dfde800214
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '517'
 ht-degree: 7%
 
 ---
 
-# AEM 헤드리스 Tutorials
+# AEM 헤드리스 Tutorials{#aem-headless-tutorials}
 
 Adobe Experience Manager(AEM)에는 헤드리스 엔드포인트를 정의하고 콘텐츠를 JSON으로 전달하는 여러 가지 옵션이 있습니다. 실습 위주의 자습서를 통해 다양한 옵션을 사용하는 방법을 탐색하고 사용자에게 적합한 옵션을 선택할 수 있습니다.
 
 >[!TIP]
 >
 >이 자습서 컬렉션은 다음과 같은 사용자를 위해 설계되었습니다 **다음을 통해 학습**. 처음부터 학습 개념을 선호하는 경우 다음을 확인하십시오 [AEM Headless Developer 여정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/developer/overview.html). 이 자습서와 여정은 서로 보완합니다.
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_edit_inline_content"
+>title="인라인 콘텐츠 편집"
+>abstract="헤드리스 기능 세트를 사용하여 참조되는 페이지에서 바로 컨텐츠를 편집하는 방법을 배웁니다."
 
 ## API별 Tutorials
 

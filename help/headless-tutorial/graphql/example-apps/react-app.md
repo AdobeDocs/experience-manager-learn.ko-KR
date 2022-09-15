@@ -10,14 +10,14 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: b1ab2a13-8b0e-4d7f-82b5-78b1dda248ba
-source-git-commit: b2bf2a8e454d7ccd09819f2a38e58f7c303cb066
+source-git-commit: b20a29e67da0bcbf53ae8089a7cde0dfde800214
 workflow-type: tm+mt
-source-wordcount: '912'
+source-wordcount: '941'
 ht-degree: 4%
 
 ---
 
-# React 앱
+# React 앱{#react-app}
 
 예제 애플리케이션은 AEM(Adobe Experience Manager)의 헤드리스 기능을 살펴보는 좋은 방법입니다. 이 React 응용 프로그램은 지속적인 쿼리를 사용하여 AEM GraphQL API를 사용하여 컨텐츠를 쿼리하는 방법을 보여 줍니다. JavaScript용 AEM 헤드리스 클라이언트는 앱을 구동하는 GraphQL 지속적인 쿼리를 실행하는 데 사용됩니다.
 
@@ -26,6 +26,11 @@ ht-degree: 4%
 보기 [GitHub의 소스 코드](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app)
 
 A [단계별 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=ko-KR) 이 React 앱이 빌드된 방법을 설명합니다.
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_react_app"
+>title="샘플 React 앱에서 컨텐츠 사용자 지정"
+>abstract="헤드리스 기능 세트를 사용하여 컨텐츠를 사용자 지정하는 방법을 배우는 데 사용할 수 있는 최신 React 앱을 설정했습니다."
 
 ## 사전 요구 사항 {#prerequisites}
 
