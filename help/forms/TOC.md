@@ -5,9 +5,9 @@ user-guide-title: AEM Forms 비디오 및 튜토리얼
 user-guide-description: 초보자 및 숙련된 AEM Forms 개발자를 위한 AEM Forms 리소스 모음입니다.
 breadcrumb-title: AEM Forms 튜토리얼
 index: y
-source-git-commit: 614db8b03a823b60846ab8ccfa8fbc29a41f7791
+source-git-commit: 164741ce5ae7d00f904365589438c2eaaf1e05db
 workflow-type: tm+mt
-source-wordcount: '1686'
+source-wordcount: '1695'
 ht-degree: 3%
 
 ---
@@ -279,6 +279,7 @@ ht-degree: 3%
    + [문서 서비스: XMLFormService part1에 대한 bmc 풀 크기를 조정하는 단계](troubleshooting/steps-to-tweak-bmc-pool-size-for-xmlformservice-1.md)
    + [문서 서비스: XMLFormService part2에 대한 bmc 풀 크기를 조정하는 단계](troubleshooting/steps-to-tweak-bmc-pool-size-for-xmlformservice-2.md)
    + [문서 서비스: JMX 콘솔에서 매개 변수를 수정하는 절차](troubleshooting/steps-to-tweak-parameters-on-jmx-console.md)
+   + [대형 xml 데이터 파일을 템플릿과 병합할 수 있습니다.](troubleshooting/fix-timeout-errors-when-merging-large-xml-wth-template.md)
    + [PDFG: PDFG에서 트랜잭션 시간 제한을 변경하는 방법](troubleshooting/how-to-change-the-transaction-timeout-in-pdfg.md)
    + [PDFG: PDFG에서 CORBA 시간 제한을 업데이트하는 방법](troubleshooting/how-to-update-corba-timeout-in-pdfg.md)
    + [PDFG: PDFG에서 시간 초과를 업데이트하는 방법](troubleshooting/how-to-update-the-timeouts-in-pdfg.md)
