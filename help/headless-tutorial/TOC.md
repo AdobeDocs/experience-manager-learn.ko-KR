@@ -6,10 +6,10 @@ version: Cloud Service
 feature-set: Experience Manager, Experience Manager Assets, Experience Manager Sites
 kt: 2963
 index: y
-source-git-commit: b2bf2a8e454d7ccd09819f2a38e58f7c303cb066
+source-git-commit: efb15b8eda84c68614e2fba9e4adc7680cb080f1
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 21%
+source-wordcount: '246'
+ht-degree: 20%
 
 ---
 
@@ -75,6 +75,14 @@ ht-degree: 21%
       + [4 - 탐색 및 라우팅](./spa-editor/react/navigation-routing.md)
       + [5 - 사용자 지정 구성 요소](./spa-editor/react/custom-component.md)
       + [6 - 구성 요소 확장](./spa-editor/react/extend-component.md)
+   + Angular{#angular}
+      + [개요](./spa-editor/angular/overview.md)
+      + [1 - SPA 편집기 프로젝트](./spa-editor/angular/create-project.md)
+      + [2 - SPA 통합](./spa-editor/angular/integrate-spa.md)
+      + [3 - SPA 구성 요소 매핑](./spa-editor/angular/map-components.md)
+      + [4 - 탐색 및 라우팅](./spa-editor/angular/navigation-routing.md)
+      + [5 - 사용자 지정 구성 요소](./spa-editor/angular/custom-component.md)
+      + [6 - 구성 요소 확장](./spa-editor/angular/extend-component.md)
    + 원격 SPA{#remote-spa}
       + [개요](./spa-editor/remote-spa/overview.md)
       + [빠른 설정](./spa-editor/remote-spa/quick-setup.md)
