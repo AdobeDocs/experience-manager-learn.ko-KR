@@ -5,10 +5,10 @@ version: Cloud Service
 activity: develop
 audience: developer
 user-guide-title: AEM Sites 시작하기 - WKND 튜토리얼
-user-guide-description: AEM을 처음 사용하는 개발자를 위한 다양한 튜토리얼입니다. 가상 라이프스타일 브랜드인 WKND에 AEM 사이트를 구현합니다.
+user-guide-description: AEM을 처음 사용하는 개발자를 위한 다양한 튜토리얼입니다. 가상 라이프스타일 브랜드인 WKND에 AEM 사이트를 구현합니다. 프런트 엔드 파이프라인을 활성화하여 개발 시간을 배포 주기에 맞게 단축할 수 있습니다.
 breadcrumb-title: AEM Sites WKND 튜토리얼
 index: y
-source-git-commit: 04096fe3c99cdcce2d43b2b29899c2bbe37ac056
+source-git-commit: 96e1c95b7cd672aa5d4f79707735abc86dae7b8a
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -33,5 +33,9 @@ ht-degree: 0%
    + [1 - 사이트 만들기](./site-template/create-site.md)
    + [2 - 작성 및 게시 소개](./site-template/author-content-publish.md)
    + [3 - Adobe XD을 사용한 UI 계획](./site-template/ui-planning-adobe-xd.md)
-   + [3 - 페이지 템플릿](./site-template/page-templates.md)
-   + [4 - 테마](./site-template/theming.md)
+   + [4 - 페이지 템플릿](./site-template/page-templates.md)
+   + [5 - 테마](./site-template/theming.md)
++ 프런트엔드 파이프라인 활성화 - DevOps{#enable-frontend-pipeline-devops}
+   + [개요](./enable-frontend-pipeline/overview.md)
+
+
