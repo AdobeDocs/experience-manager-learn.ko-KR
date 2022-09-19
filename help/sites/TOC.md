@@ -3,10 +3,10 @@ user-guide-title: AEM Sites 비디오 및 튜토리얼
 user-guide-description: Adobe Experience Manager Sites에 대한 비디오 및 튜토리얼 모음입니다.
 breadcrumb-title: AEM Sites 튜토리얼
 feature-set: Experience Manager Sites, Experience Manager
-source-git-commit: 552e5fbeb5dafc6d82763d5c3b31cc6d17131739
+source-git-commit: 798b366a5add2831bf60a8d89968bad16e48802c
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 29%
+source-wordcount: '434'
+ht-degree: 27%
 
 ---
 
@@ -48,6 +48,8 @@ ht-degree: 29%
    + [경험 조각 사용](experience-fragments/experience-fragments-feature-video-use.md)
    + [빌딩 블록](experience-fragments/building-blocks.md)
    + [컨텐츠 조각과 경험 조각 비교](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html)
+   + 전문가 조언 {#expert-advice}
+      + [컨텐츠 조각 팁](content-fragments/expert-advice/content-fragments.md)
 + 개발 {#developing}
    + [AEM Project Archetype](developing/aem-project-archetype.md)
    + [AEM Sites 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
@@ -113,3 +115,8 @@ ht-degree: 29%
       + [경험 조각 오퍼를 사용하여 Target 활동 생성](integrations/adobe-target/create-target-activity.md)
       + [Visual Experience Composer를 사용한 개인화](integrations/adobe-target/personalization-using-vec.md)
       + [전체 웹 페이지 경험의 개인화](integrations/adobe-target/personalization-web-page.md)
++ 전문가 리소스 {#expert-resources}
+   + [AEM Sites 성숙도 평가](expert-resources/maturity-assessment.md)
+   + [사이트 유지 관리](expert-resources/site-maintenance.md)
+   + [AEM Champion 팁과 트릭: 세션 1](expert-resources/champion-tips-1.md)
+   + [AEM Champion 팁과 트릭: 세션 2](expert-resources/champion-tips-2.md)
