@@ -3,7 +3,7 @@ title: 사이트 계층, 분류 및 태깅 팁
 description: 사이트 계층, 분류 및 태깅 팁 우수 사례
 hide: true
 hidefromtoc: true
-source-git-commit: 6f4d811e796b34985fa9d5af335239948e59c1ef
+source-git-commit: 3eb429039589ae26a81bc6d24f020a77517133e8
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 1%
@@ -34,3 +34,4 @@ AEM 성숙도 평가는 주로 온-프레미스 및 관리 서비스 구현을 �
 권장 AEM 성숙도 평가 영역 포커스: 설계 및 아키텍처, 제품 관리 및 전략, 디지털 자산 관리 및 제공, 분석, 테스트 및 보안.
 
 AEM 챔피언 Greg Dimeris는 Best Practice뿐만 아니라 여러 Experience League 문서에서 이 정보를 수집하기 위해 막대한 비용을 지출합니다.
+
