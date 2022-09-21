@@ -8,10 +8,10 @@ user-guide-title: AEM Sites 시작하기 - WKND 튜토리얼
 user-guide-description: AEM을 처음 사용하는 개발자를 위한 다양한 튜토리얼입니다. 가상 라이프스타일 브랜드인 WKND에 AEM 사이트를 구현합니다. 프런트 엔드 파이프라인을 활성화하여 개발 시간을 배포 주기에 맞게 단축할 수 있습니다.
 breadcrumb-title: AEM Sites WKND 튜토리얼
 index: y
-source-git-commit: 96e1c95b7cd672aa5d4f79707735abc86dae7b8a
+source-git-commit: 2e3615e9e9305165ca9c3c93b38ac7e9bdcc51fb
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '108'
+ht-degree: 37%
 
 ---
 
@@ -37,5 +37,8 @@ ht-degree: 0%
    + [5 - 테마](./site-template/theming.md)
 + 프런트엔드 파이프라인 활성화 - DevOps{#enable-frontend-pipeline-devops}
    + [개요](./enable-frontend-pipeline/overview.md)
-
+   + [1 - 전체 스택 프로젝트 검토](./enable-frontend-pipeline/review-uifrontend-module.md)
+   + [2 - 프런트엔드 파이프라인을 사용하도록 프로젝트 업데이트](./enable-frontend-pipeline/update-project.md)
+   + [3 - 프런트엔드 파이프라인을 사용하여 배포](./enable-frontend-pipeline/create-frontend-pipeline.md)
+   + [4 - 고려 사항](./enable-frontend-pipeline/considerations.md)
 
