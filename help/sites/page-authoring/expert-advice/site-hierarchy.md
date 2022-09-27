@@ -1,11 +1,24 @@
 ---
 title: 사이트 계층, 분류 및 태깅 팁
-description: 사이트 계층, 분류 및 태깅 팁 우수 사례
+seo-title: Overview of Authoring in AEM Sites
+description: 다음 비디오에서는 AEM 작성 환경에서 작성에 대한 기본 개념에 대한 개요를 제공합니다. 사이트 콘솔을 기본으로 사용합니다.
+seo-description: The following video provides an overview of basic concepts of authoring in an AEM author environment. It uses the Sites console as a basis.
+feature: Page Editor, Editable Templates
+topics: authoring, publishing
+audience: author, marketer
+doc-type: feature video
+activity: use
+version: 6.4, 6.5, Cloud Service
+kt: 4242
+thumbnail: 33594.jpg
+topic: Content Management
+role: User
+level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 3eb429039589ae26a81bc6d24f020a77517133e8
+source-git-commit: 3335069883db38a2748af114ab7505cc34dec270
 workflow-type: tm+mt
-source-wordcount: '2053'
+source-wordcount: '2033'
 ht-degree: 0%
 
 ---
@@ -16,8 +29,6 @@ ht-degree: 0%
 메타데이터와 태그는 AEM의 효율성을 높이는 핵심 요소입니다. 사용자, 리더, 관리자들은 전체적인 전략의 필요성을 인식하지만 진척이 어렵다는 것을 알게 됩니다. 종종 지식이 사용자 간에 분산되어 전체적인 전략을 어렵게 만들며 더 많은 문제를 야기합니다.
 
 메타데이터와 태그의 차이점은 무엇입니까? 전략을 실행할 때 고려해야 할 비즈니스 측면은 무엇입니까?
-
-보다 집중적인 요약 내용을 찾을 수 있습니다 [여기](https://adobe.sharepoint.com/:w:/r/sites/ACSSuccessServices/_layouts/15/Doc.aspx?sourcedoc=%7BFE5E873A-A3B6-4F40-BF22-A2C9F1269802%7D&amp;file=AEM_TagTaxonomyAndMetadata_BestPractice_en%20(2).docx&amp;action=default&amp;mobileredirect=true).
 
 ## 메타데이터의 목적은 무엇입니까?
 
