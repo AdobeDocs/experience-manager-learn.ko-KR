@@ -12,9 +12,9 @@ kt: 4089
 mini-toc-levels: 1
 thumbnail: 30207.jpg
 exl-id: b926c35e-64ad-4507-8b39-4eb97a67edda
-source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '3020'
+source-wordcount: '3014'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ _시스템에 Java 8과 Java 11이 모두 설치되어 있는 경우 VS 코드 �
 
 이 튜토리얼에서는 작성 방법을 살펴보겠습니다 [단위 테스트](https://en.wikipedia.org/wiki/Unit_testing) 을 참조하십시오. [Sling 모델](https://sling.apache.org/documentation/bundles/models.html) (에서 생성) [사용자 지정 AEM 구성 요소 만들기](custom-component.md)). 단위 테스트는 Java 코드의 예상 동작을 확인하는 Java로 작성된 빌드 시간 테스트입니다. 각 단위 테스트는 일반적으로 작으며, 예상 결과와 비교하여 메서드(또는 작업 단위)의 출력을 검증합니다.
 
-AEM 우수 사례를 사용하며, 다음과 같이 사용합니다.
+Adobe에서는 AEM 우수 사례를 사용하며, 다음과 같은 작업을 수행합니다.
 
 * [주닛트 5](https://junit.org/junit5/)
 * [Mockito 테스트 프레임워크](https://site.mockito.org/)
@@ -238,7 +238,7 @@ AEM에 대해 작성된 대부분의 코드는 JCR, Sling 또는 AEM API를 사�
 
    이 변수, `ctx`는 많은 AEM 및 Sling 추상을 제공하는 mock AEM 컨텍스트를 표시합니다.
 
-   * BylineImpl Sling 모델이 이 컨텍스트에 등록됩니다
+   * BylineImpl Sling Model이 이 컨텍스트에 등록됩니다
    * Mock JCR 컨텐츠 구조가 이 컨텍스트에서 생성됩니다
    * 사용자 지정 OSGi 서비스는 이 컨텍스트에서 등록할 수 있습니다
    * SlingHttpServletRequest 개체, ModelFactory, PageManager, Page, Template, ComponentManager, Component, TagManager, Tag 등과 같은 다양한 Mock Sling 및 AEM OSGi 서비스 등 일반적인 필수 Mock 객체 및 Help를 제공합니다.
@@ -382,7 +382,7 @@ AEM에 대해 작성된 대부분의 코드는 JCR, Sling 또는 AEM API를 사�
    * **`@ExtendWith({AemContextExtension.class, MockitoExtension.class})`** 는 [Mockito Jupiter Extension](https://www.javadoc.io/page/org.mockito/mockito-junit-jupiter/latest/org/mockito/junit/jupiter/MockitoExtension.html) @Mock 주석을 사용하여 클래스 수준에서 샘플 객체를 정의할 수 있습니다.
    * **`@Mock private Image`** 유형의 mock 객체를 만듭니다. `com.adobe.cq.wcm.core.components.models.Image`. 필요한 경우 클래스 레벨에서 정의됩니다. `@Test` 메서드는 필요에 따라 동작을 변경할 수 있습니다.
    * **`@Mock private ModelFactory`** ModelFactory 유형의 mock 개체를 만듭니다. 이것은 순수한 Mockito 조롱이며 여기에 구현된 방법이 없습니다. 필요한 경우 클래스 레벨에서 정의됩니다. `@Test`메서드는 필요에 따라 동작을 변경할 수 있습니다.
-   * **`when(modelFactory.getModelFromWrappedRequest(..)`** 다음 경우에 mock 동작을 등록합니다. `getModelFromWrappedRequest(..)` mock ModelFactory 개체에서 호출됩니다. 에 정의된 결과 `thenReturn (..)` 은 mock Image 객체를 반환하는 것입니다. 이 동작은 다음 경우에만 호출됩니다. 첫 번째 매개 변수는 `ctx`의 요청 개체인 두 번째 매개 변수는 모든 리소스 개체이고 세 번째 매개 변수는 핵심 구성 요소 이미지 클래스여야 합니다. Adobe에서는 테스트 내내 `ctx.currentResource(...)` 에 정의된 다양한 샘플 리소스로 **BylineImplTest.json**. 을(를) 추가합니다 **관대한()** 엄격해야 합니다. 나중에 ModelFactory의 이 동작을 재정의하려고 하기 때문입니다.
+   * **`when(modelFactory.getModelFromWrappedRequest(..)`** 다음 경우에 mock 동작을 등록합니다. `getModelFromWrappedRequest(..)` mock ModelFactory 개체에서 호출됩니다. 에 정의된 결과 `thenReturn (..)` 은 mock Image 객체를 반환하는 것입니다. 이 동작은 다음 경우에만 호출됩니다. 첫 번째 매개 변수는 `ctx`의 요청 개체인 두 번째 매개 변수는 모든 리소스 개체이고 세 번째 매개 변수는 핵심 구성 요소 이미지 클래스여야 합니다. Adobe에서는 테스트 전체에서 `ctx.currentResource(...)` 에 정의된 다양한 샘플 리소스로 **BylineImplTest.json**. 을(를) 추가합니다 **관대한()** 엄격해야 합니다. 나중에 ModelFactory의 이 동작을 재정의하려고 하기 때문입니다.
    * **`ctx.registerService(..)`.** mock ModelFactory 개체를 Aem Context에 등록하고 가장 높은 서비스 등급을 사용합니다. BylineImpl의 ModelFactory에서 사용되므로 이 작업은 필수입니다 `init()` 는 `@OSGiService ModelFactory model` 필드. AemContext가 주입되는 순서 **adobe** 호출을 처리하는 모의 개체 `getModelFromWrappedRequest(..)`를 지정하는 경우 해당 유형의 가장 높은 등급 서비스(ModelFactory)로 등록해야 합니다.
 
 1. 테스트를 다시 실행하면 다시 실패하지만, 이번에는 메시지가 실패한 이유를 확인합니다.
@@ -447,7 +447,7 @@ AEM에 대해 작성된 대부분의 코드는 JCR, Sling 또는 AEM API를 사�
 
 1. 기억하십시오, **`getName()`** 위에, **BylineImplTest.json** 직업을 정의하지 않기 때문에 테스트를 실행하면 이 테스트가 실패합니다. `byline.getOccupations()` 은 빈 목록을 반환합니다.
 
-   업데이트 **BylineImplTest.json** 직업 목록을 포함하기 위해, 이러한 분류는 기존의 항목순으로 설정되며, 이러한 분류가 해당 분야가 사전순으로 정렬되어 있는지 확인할 수 있습니다 **`getOccupations()`**.
+   업데이트 **BylineImplTest.json** 직업 목록을 포함하기 위해, 이러한 분류는 기존의 항목순으로 설정되어 있지 않게 설정되며, 이러한 분류는 해당 분야가 사전순으로 정렬되어 있는지 확인할 수 있도록 합니다 **`getOccupations()`**.
 
    ```json
    {

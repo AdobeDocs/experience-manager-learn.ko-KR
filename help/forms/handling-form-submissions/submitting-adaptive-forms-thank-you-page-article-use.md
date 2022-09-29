@@ -15,9 +15,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 85e1b450-39c0-4bb8-be5d-d7f50b102f3d
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
@@ -28,16 +28,15 @@ REST에 제출 끝점 옵션은 HTTP GET 요청의 일부로 양식에 입력된
 
 \{fieldName\} = \{parameterName\}. 예를 들어 submitterName은 적응형 양식 필드의 이름이고 submitter는 매개 변수의 이름입니다. 감사 인사 페이지에서 request.getParameter(&quot;submitter&quot;) 를 사용하여 제출자 매개 변수에 액세스하여 제출자 이름 필드의 값을 보유할 수 있습니다.
 
-submitterName=submitter
+`submitterName=submitter`
 
 아래 스크린샷에서는 /content/thank에 있는 감사 인사 페이지에 적응형 양식을 제출합니다. 감사 인사 페이지에 양식 필드 값을 포함하는 3개의 요청 속성을 전달합니다.
 
-![감사](assets/thankyoupage.gif)
+![감사 인사 페이지](assets/thankyoupage.gif)
 
 POST을 통해 외부 종단점에 제출할 수도 있습니다. 이를 위해서는 &quot;post 요청 활성화&quot; 확인란을 선택하고 외부 엔드포인트에 대한 URL을 제공해야 합니다. 양식을 제출하면 감사 인사 페이지가 표시되고 POST 종단점이 동시에 호출됩니다.
 
-![캡처](assets/capture.gif)
-
+![구성 캡처](assets/capture.gif)
 
 서버에서 이 기능을 테스트하려면 아래에 언급된 지침을 따르십시오.
 

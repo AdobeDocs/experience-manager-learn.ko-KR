@@ -7,7 +7,8 @@ level: Beginner, Intermediate
 version: Cloud Service
 feature: Output Service
 topic: Development
-source-git-commit: 228da29e7ac0d61359c2b94131495b5b433a09dc
+exl-id: 165e2884-4399-4970-81ff-1f2f8b041a10
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
 source-wordcount: '141'
 ht-degree: 0%
@@ -26,8 +27,4 @@ AEM Forms CS 배치 작업 API를 사용하려면 다음 구성이 필요합니�
 1. 배치 데이터 저장소 구성 만들기
 1. 배치 API 실행
 
-을 잘 알고 있는 것이 좋습니다 [API 설명서](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/assets/batch-api.yaml?lang=en) 계속 이 자습서를 사용하기 전에
-
-
-
-
+을 잘 알고 있는 것이 좋습니다 [API 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/batch-api.yaml?lang=en) 계속 이 자습서를 사용하기 전에

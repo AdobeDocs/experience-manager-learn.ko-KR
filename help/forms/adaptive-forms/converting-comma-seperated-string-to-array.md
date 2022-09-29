@@ -7,31 +7,31 @@ topic: Development
 role: Developer
 level: Intermediate
 kt: 8507
-source-git-commit: e01d93591d1c00b2abec3430fdfa695b32165e54
+exl-id: 9ad69407-2413-416f-9cec-43f88989b31d
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '340'
 ht-degree: 0%
 
 ---
 
-
 # 쉼표로 구분된 문자열을 문자열 배열로 변환 {#setting-value-of-json-data-element-in-aem-forms-workflow}
 
-양식의 문자열이 입력 매개 변수로서 배열된 양식 데이터 모델을 기반으로 하면 제출된 적응형 양식 데이터를 조작하여 문자열 배열을 삽입해야 합니다. 예를 들어, 확인란 필드를 유형 문자열 배열의 양식 데이터 모델 요소에 바인딩한 경우 확인란 필드의 데이터는 쉼표로 구분된 문자열 형식으로 표시됩니다. 아래 나열된 샘플 코드는 쉼표로 구분된 문자열을 문자열 배열로 바꾸는 방법을 보여 줍니다.
+양식의 문자열이 입력 매개 변수로서 배열된 양식 데이터 모델을 기반으로 하는 경우 제출된 적응형 양식 데이터를 조작하여 문자열 배열을 삽입해야 합니다. 예를 들어, 확인란 필드를 유형 문자열 배열의 양식 데이터 모델 요소에 바인딩한 경우 확인란 필드의 데이터는 쉼표로 구분된 문자열 형식으로 되어 있습니다. 아래 나열된 샘플 코드는 쉼표로 구분된 문자열을 문자열 배열로 바꾸는 방법을 보여 줍니다.
 
 ## 프로세스 단계 만들기
 
-프로세스 단계는 워크플로우를 특정 논리를 실행하려는 경우 AEM 워크플로우에서 사용됩니다. 프로세스 단계는 ECMA 스크립트 또는 OSGi 서비스와 연결할 수 있습니다. 사용자 지정 프로세스 단계에서는 OSGi 서비스를 실행합니다
+프로세스 단계는 워크플로우를 특정 논리를 실행하려는 경우 AEM 워크플로우에서 사용됩니다. 프로세스 단계는 ECMA 스크립트 또는 OSGi 서비스와 연결할 수 있습니다. 사용자 지정 프로세스 단계는 OSGi 서비스를 실행합니다.
 
 제출된 데이터는 다음 형식을 갖습니다. businessUnits 요소의 값은 쉼표로 구분된 문자열이며 문자열 배열로 변환해야 합니다.
 
 ![제출된 데이터](assets/submitted-data-string.png)
 
-양식 데이터 모델과 연결된 나머지 끝점에 대한 입력 데이터에는 이 스크린샷에 표시된 것처럼 문자열 배열이 필요합니다. 프로세스 단계의 사용자 지정 코드는 제출된 데이터를 올바른 형식으로 변환합니다.
+양식 데이터 모델과 연결된 나머지 끝점에 대한 입력 데이터에는 이 스크린샷에 표시된 것처럼 문자열 배열이 필요합니다. 프로세스 단계의 사용자 지정 코드는에서 제출된 데이터를 올바른 형식으로 변환합니다.
 
 ![fdm-string-array](assets/string-array-fdm.png)
 
-JSON 개체 경로와 요소 이름을 프로세스 단계에 전달합니다. 프로세스 단계의 코드는 쉼표로 구분된 요소의 값을 문자열 배열로 바꿉니다.
+JSON 개체 경로와 요소 이름을 프로세스 단계에 전달합니다. 프로세스 단계의 코드는 요소에서 쉼표로 구분된 값을 문자열 배열로 대체합니다.
 ![프로세스 단계](assets/create-string-array.png)
 
 >[!NOTE]
@@ -140,4 +140,4 @@ public class CreateStringArray implements WorkflowProcess {
 }
 ```
 
-샘플 번들은 여기에서 [다운로드할 수 있습니다.](assets/CreateStringArray.CreateStringArray.core-1.0-SNAPSHOT.jar)
+샘플 번들은 [여기에서 다운로드](assets/CreateStringArray.CreateStringArray.core-1.0-SNAPSHOT.jar)

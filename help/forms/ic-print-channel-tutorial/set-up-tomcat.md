@@ -1,8 +1,7 @@
 ---
 title: Tomcat 설치 및 구성 비디오
 seo-title: Install and Configure Tomcat
-description: 첫 번째 대화형 통신 문서를 만들기 위한 여러 단계의 자습서의 1부분입니다.이 부분에서는 TOMCAT을 설치하고 TOMCAT에 sampleRest.war 파일을 배포합니다. 이 WAR 파일에 의해 노출된 REST 종단점은 데이터 소스 및 양식 데이터 모델의 기반이 됩니다.
-seo-description: This is part 1 of multistep tutorial for creating your first interactive communications document.In this part, we will install TOMCAT and deploy the sampleRest.war file in TOMCAT. The REST endpoint exposed by this WAR file will be the basis for our Data Source and Form Data Model.
+description: 첫 번째 대화형 통신 문서를 만들기 위한 여러 단계의 자습서의 1부분입니다.
 uuid: 835e2342-82b6-4f0c-9a6b-467bbbd8527a
 feature: Interactive Communication
 topics: development
@@ -16,16 +15,16 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: faa9ca2d-6cfa-4abf-be5e-3e549202853a
-source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '235'
 ht-degree: 0%
 
 ---
 
 # Tomcat 설치 및 구성 {#install-and-configure-tomcat}
 
-이 부분에서는 TOMCAT을 설치하고 TOMCAT에 sampleRest.war 파일을 배포합니다. 이 WAR 파일에 의해 노출된 REST 종단점은 데이터 소스 및 양식 데이터 모델의 기반이 됩니다.
+이 부분에서는 TOMCAT을 설치하고 TOMCAT에 sampleRest.war 파일을 배포합니다. 이 WAR 파일에 의해 노출된 REST 엔드포인트는 데이터 소스 및 양식 데이터 모델의 기반입니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/37815/?quality=9&learn=on)
 
@@ -44,7 +43,7 @@ tomcat을 설정하려면 다음 지침을 따르십시오.
 11. tomcat이 시작되면 WAR 파일에 의해 노출된 종단점을 [여기 클릭](http://localhost:8080/SampleRest/webapi/getStatement/9586)
 12. 이 호출의 결과로 샘플 데이터를 가져와야 합니다.
 
-!!!. tomcat을 설정하고 SampleRest.war 파일을 배포했습니다.
+축하합니다 !!!. tomcat을 설정하고 SampleRest.war 파일을 배포했습니다.
 
 다음 비디오에서는 Tomcat에서 샘플 응용 프로그램을 배포하는 방법에 대해 설명합니다
 >[!VIDEO](https://video.tv.adobe.com/v/37815)

@@ -14,16 +14,16 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 9f1dbd02-774a-4b84-90fa-02d4e468cbac
-source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '166'
+source-wordcount: '165'
 ht-degree: 3%
 
 ---
 
 # AEM 워크플로우를 트리거하는 적응형 양식 구성
 
-## 전제 조건
+## 사전 요구 사항
 
 이 워크플로우에 사용되는 샘플 양식은 AEM 서버로 가져와야 하는 사용자 지정 적응형 양식 템플릿을 기반으로 합니다. 제공된 샘플 양식은 템플릿을 가져온 후 가져와야 합니다.
 

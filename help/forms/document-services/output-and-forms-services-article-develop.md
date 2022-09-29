@@ -7,10 +7,10 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: d268d5d6-f24f-4db9-b8e0-07dd769c6005
-source-git-commit: 228da29e7ac0d61359c2b94131495b5b433a09dc
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '601'
-ht-degree: 0%
+source-wordcount: '597'
+ht-degree: 1%
 
 ---
 
@@ -86,8 +86,8 @@ Line2는 요청에서 saveLocation을 추출합니다
 * **요청 매개 변수:**
 
    * **pdfile** : 데이터를 병합할 pdf 파일
-   * **xmlfile**: pdf 파일과 병합될 xml 데이터 파일
-   * **saveLocation**: 렌더링된 문서를 파일 시스템에 저장할 위치입니다. 예: c:\\outputsample.pdf
+   * **xmlfile**: pdf 파일과 병합되는 xml 데이터 파일
+   * **saveLocation**: 렌더링된 문서를 파일 시스템에 저장할 위치입니다. 예 `c:\\outputsample.pdf`.
 
 **PDF 파일에서 데이터 내보내기**
 * FormsService를 사용하여 PDF 파일에서 데이터를 내보냅니다

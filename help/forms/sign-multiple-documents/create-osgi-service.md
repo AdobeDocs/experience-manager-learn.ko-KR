@@ -1,20 +1,20 @@
 ---
 title: OSGi 서비스 만들기
 description: 서명할 양식을 저장할 OSGi 서비스 만들기
-feature: 워크플로우
+feature: Workflow
 version: 6.4,6.5
 thumbnail: 6886.jpg
 kt: 6886
-topic: 개발
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 49e7bd65-33fb-44d4-aaa2-50832dffffb0
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '354'
-ht-degree: 1%
+source-wordcount: '350'
+ht-degree: 0%
 
 ---
-
 
 # OSGi 서비스 만들기
 
@@ -130,7 +130,7 @@ public String getFormData(String guid) {
 
 ## 서명 상태 업데이트
 
-성공적으로 서명식을 완료하면 양식과 연결된 AEM 워크플로우가 트리거됩니다. 워크플로우의 첫 번째 단계는 guid 및 고객 ID로 식별된 행의 데이터베이스의 상태를 업데이트하는 프로세스 단계입니다. 또한 양식 데이터에서 서명된 요소의 값을 Y로 설정하여 양식이 채워지고 서명되었음을 나타냅니다. 적응형 양식은 이 데이터로 채워지고 xml 데이터에 있는 서명된 데이터 요소의 값은 해당 메시지를 표시하는 데 사용됩니다. updateSignatureStatus 코드는 사용자 지정 프로세스 단계에서 호출됩니다.
+성공적으로 서명식을 완료하면 양식과 연결된 AEM 워크플로우가 트리거됩니다. 워크플로우의 첫 번째 단계는 guid 및 고객 ID로 식별된 행의 데이터베이스의 상태를 업데이트하는 프로세스 단계입니다. 또한 양식 데이터에서 서명된 요소의 값을 Y로 설정하여 양식이 채워지고 서명되었음을 나타냅니다. 적응형 양식은 이 데이터로 채워지고 xml 데이터에 있는 서명된 데이터 요소의 값은 적절한 메시지를 표시하는 데 사용됩니다. updateSignatureStatus 코드는 사용자 지정 프로세스 단계에서 호출됩니다.
 
 
 ```java
@@ -164,7 +164,7 @@ public void updateSignatureStatus(String formData, String guid) {
 
 ## 서명할 다음 양식 받기
 
-다음 코드는 상태가 0인 지정된 customerID에 서명하는 다음 양식을 가져오는 데 사용되었습니다. sql 쿼리가 행을 반환하지 않으면 지정된 고객 ID에 서명할 양식이 더 이상 없음을 나타내는 **&quot;AllDone&quot;** 문자열을 반환합니다.
+다음 코드는 상태가 0인 지정된 customerID에 서명하는 다음 양식을 가져오는 데 사용되었습니다. sql 쿼리가 행을 반환하지 않으면 문자열을 반환합니다 **&quot;AllDone&quot;** 지정된 고객 id에 대해 더 이상 서명을 위한 양식이 없음을 나타냅니다.
 
 ```java
 @Override
@@ -202,6 +202,6 @@ public String getNextFormToSign(int customerID) {
 
 
 
-## 자산
+## 에셋
 
-위에 언급된 서비스와 함께 OSGi 번들은 여기에서 [다운로드할 수 있습니다.](assets/sign-multiple-forms.jar)
+위에 언급된 서비스와 함께 OSGi 번들을 사용할 수 있습니다 [여기에서 다운로드](assets/sign-multiple-forms.jar)

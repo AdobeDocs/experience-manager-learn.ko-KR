@@ -14,16 +14,16 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: f2cf4063-0b08-4b4f-91e6-70e5a148f931
-source-git-commit: 825124bc6c3be10e6822fb5fb8bd9645d242da76
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '645'
+ht-degree: 11%
 
 ---
 
 # AEM에서 첫 번째 Angular SPA 만들기 {#introduction}
 
-을(를) 처음 사용하는 개발자를 위해 디자인된 여러 부분으로 된 자습서를 시작합니다 **SPA 편집기** Adobe Experience Manager(AEM)의 기능입니다. 이 자습서에서는 가상 라이프스타일 브랜드인 WKND에 대한 Angular 애플리케이션 구현을 설명합니다. angular 앱은 개발 및 배포하도록 설계되며, Angular 구성 요소를 AEM 구성 요소에 매핑합니다. AEM에 배포된 완료된 SPA은 AEM의 기존 인라인 편집 도구를 사용하여 동적으로 작성할 수 있습니다.
+을(를) 처음 사용하는 개발자를 위해 디자인된 여러 부분으로 된 자습서를 시작합니다 **SPA 편집기** Adobe Experience Manager(AEM)의 기능입니다. 이 자습서에서는 가상 라이프스타일 브랜드인 WKND에 대한 Angular 애플리케이션 구현을 설명합니다. angular 앱은 Angular 구성 요소를 AEM 구성 요소에 매핑하는 AEM SPA 편집기로 개발 및 배포하도록 설계되었습니다. AEM에 배포된 완료된 SPA은 AEM의 기존 인라인 편집 도구를 사용하여 동적으로 작성할 수 있습니다.
 
 ![구현된 최종 SPA](assets/wknd-spa-implementation.png)
 
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 ## 정보
 
-이 다중 부분 자습서의 목표는 SPA의 편집기 기능을 사용하여 작업하는 Angular 애플리케이션을 구현하는 방법을 개발자에게 가르치는 것입니다. 실제 시나리오에서 개발 활동은 종종 다음을 포함하는 성향별로 분류됩니다 **프런트엔드 개발자** 그리고 **백엔드 개발자**. Adobe는 AEM SPA 편집기 프로젝트에 참여할 모든 개발자가 이 자습서를 완료하는 것이 유익하다고 생각합니다.
+이 다중 부분 자습서의 목표는 SPA의 편집기 기능을 사용하여 작업하는 Angular 애플리케이션을 구현하는 방법을 개발자에게 가르치는 것입니다. 실제 시나리오에서 개발 활동은 종종 다음을 포함하는 성향별로 분류됩니다 **프런트엔드 개발자** 그리고 **백엔드 개발자**. AEM SPA 편집기 프로젝트에 참여하는 모든 개발자가 이 자습서를 완료하는 것이 도움이 된다고 생각합니다.
 
 이 튜토리얼은 **AEM as a Cloud Service** 및 는 이전 버전과 호환됩니다. **AEM 6.5.4+** 및 **AEM 6.4.8+**. SPA은 다음을 사용하여 구현됩니다.
 

@@ -9,9 +9,9 @@ version: Cloud Service
 topic: Development
 kt: 9534
 exl-id: c2cd9c52-6f00-4cfe-a972-665093990e5d
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Archetype 30을 사용하여 만든 프로젝트를 Archetype 33 프로젝트로
 
 >[!NOTE]
 >
->이 새 프로젝트를 클라우드 서비스 인스턴스로 배포하는 경우 HandleFormSubmission 및 SubmitToAEMServlet이 없습니다. Cloud Manager를 사용하여 프로젝트를 배포할 때마다 앱 폴더 아래에 있는 모든 항목이 삭제되고 덮어쓰여지기 때문입니다.
+>이 새 프로젝트를 클라우드 서비스 인스턴스로 배포하는 경우 HandleFormSubmission 및 SubmitToAEMServlet이 없습니다. Cloud Manager를 사용하여 프로젝트를 배포할 때마다 `/apps` 폴더가 삭제되고 덮어씁니다.
 
 ## Java 코드 복사
 

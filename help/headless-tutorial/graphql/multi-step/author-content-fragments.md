@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 701fae92-f740-4eb6-8133-1bc45a472d0f
-source-git-commit: 410eb23534e083940bf716194576e099d22ca205
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '819'
+source-wordcount: '817'
 ht-degree: 2%
 
 ---
@@ -59,7 +59,7 @@ ht-degree: 2%
 
    ![허용된 컨텐츠 조각 모델](assets/author-content-fragments/allowed-content-fragment-models.png)
 
-   이러한 정책은 하위 폴더에서 자동으로 상속되며 재정의할 수 있습니다. 태그별 모델을 허용하거나 다른 프로젝트 구성의 모델을 활성화할 수도 있습니다. 이 메커니즘은 컨텐츠 계층 구조를 관리하는 강력한 방법을 제공합니다.
+   이러한 정책은 하위 폴더에 의해 자동으로 상속되며 재정의할 수 있습니다. 태그별 모델을 허용하거나 다른 프로젝트 구성의 모델을 활성화할 수도 있습니다. 이 메커니즘은 컨텐츠 계층 구조를 관리하는 강력한 방법을 제공합니다.
 
 1. 탭 **저장 및 닫기** 폴더 속성에 대한 변경 사항을 저장하려면 다음을 수행합니다.
 
@@ -89,7 +89,7 @@ ht-degree: 2%
    * 제목: **존 도**
    * 이름: `john-doe`
 
-   ![새 컨텐츠 조각](assets/author-content-fragments/new-content-fragment-john-doe.png)
+   ![새 콘텐츠 조각](assets/author-content-fragments/new-content-fragment-john-doe.png)
 1. 탭 **만들기**.
 1. 위의 단계를 반복하여 을 나타내는 새 조각을 만듭니다 **앨리슨 스미스**:
 

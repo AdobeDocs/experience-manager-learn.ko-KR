@@ -1,8 +1,6 @@
 ---
 title: AEM Forms에서 사용자 지정 자산 유형 나열
-seo-title: Listing Custom Asset Types in AEM Forms
 description: AEM Forms에서 사용자 지정 자산 유형 나열의 2부
-seo-description: Part 2 of Listing Custom Asset Types in AEM Forms
 uuid: 6467ec34-e452-4c21-9bb5-504f9630466a
 feature: Adaptive Forms
 topics: development
@@ -15,9 +13,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: f221d8ee-0452-4690-a936-74bab506d7ca
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '593'
 ht-degree: 0%
 
 ---
@@ -25,7 +23,6 @@ ht-degree: 0%
 # AEM Forms에서 사용자 지정 자산 유형 나열 {#listing-custom-asset-types-in-aem-forms}
 
 ## 사용자 지정 템플릿 만들기 {#creating-custom-template}
-
 
 이 문서의 목적에 따라 동일한 페이지에 사용자 지정 자산 유형과 OOTB 자산 유형을 표시하는 사용자 지정 템플릿을 만듭니다. 사용자 지정 템플릿을 만들려면 다음 지침을 따르십시오
 

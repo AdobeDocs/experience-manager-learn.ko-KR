@@ -7,9 +7,10 @@ kt: 9724
 topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 15b57ec6792bc47d0041946014863b13867adf22
+exl-id: f1f2cacc-9ec4-46d6-a6af-dac3f663de78
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
@@ -82,8 +83,3 @@ AEM Forms 데이터 통합은 을 만들고 작업할 수 있는 직관적인 �
 
 선택한 국가와 시/도를 기반으로 카운티와 시를 나열하기 위해 양식에 군 및 시라고 불리는 2개의 드롭다운 목록을 추가합니다.
 ![연습](assets/cascading-drop-down-exercise.png)
-
-
-
-
-

@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 508b0211-fa21-4a73-b8b4-c6c34e3ba696
-source-git-commit: 410eb23534e083940bf716194576e099d22ca205
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '1532'
+source-wordcount: '1529'
 ht-degree: 7%
 
 ---
@@ -84,7 +84,7 @@ AEM의 GraphQL API는 컨텐츠 조각의 데이터를 다운스트림 애플리
 
 ### 컨텐츠 조각 목록 쿼리 {#query-list-cf}
 
-일반적인 요구 사항은 여러 컨텐츠 조각을 검색하는 것입니다.
+일반적인 요구 사항은 여러 컨텐츠 조각을 쿼리하는 것입니다.
 
 1. 기본 패널에 다음 쿼리를 붙여넣습니다(주석 목록 바꾸기).
 
@@ -211,7 +211,7 @@ AEM의 GraphQL API는 컨텐츠 조각의 데이터를 다운스트림 애플리
    {"name": "John Doe"}
    ```
 
-1. 쿼리를 실행하면 **사람** 은 &quot;John Doe&quot; 값과 함께 반환됩니다.
+1. 쿼리를 실행하면 **사람** 가 &quot;John Doe&quot; 값과 함께 반환됩니다.
 
    ![쿼리 변수를 사용하여 필터링](assets/explore-graphql-api/using-query-variables-filter.png)
 
@@ -281,7 +281,7 @@ AEM의 GraphQL API는 컨텐츠 조각의 데이터를 다운스트림 애플리
 
 개발자가 반환된 쿼리 및 데이터에 만족하면 다음 단계는 쿼리를 AEM에 저장하거나 유지하는 것입니다. [지속되는 쿼리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html) 는 GraphQL API를 클라이언트 애플리케이션에 노출하기 위한 기본 메커니즘입니다. 쿼리가 유지되면 GET 요청을 사용하여 요청하고 Dispatcher 및 CDN 레이어에 캐시할 수 있습니다. 지속되는 쿼리의 성능이 훨씬 향상되었습니다. 성능 이점 외에도 지속적인 쿼리는 추가 데이터가 클라이언트 애플리케이션에 실수로 노출되지 않도록 합니다. 에 대한 자세한 내용 [여기에서 오래된 쿼리를 찾을 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html).
 
-그런 다음 두 개의 간단한 쿼리를 유지하면 다음 장에서 사용됩니다.
+그런 다음 두 개의 간단한 쿼리를 유지합니다. 다음 장에서 사용됩니다.
 
 1. GraphiQL IDE에서 다음 쿼리를 입력합니다.
 
@@ -327,7 +327,7 @@ AEM의 GraphQL API는 컨텐츠 조각의 데이터를 다운스트림 애플리
 
    | 이름 | 설명 |
    | ---------|---------- |
-   | `/graphql/execute.json` | 영구 쿼리 끝점 |
+   | `/graphql/execute.json` | 지속 쿼리 끝점 |
    | `/my-project` | 프로젝트 구성 대상 `/conf/my-project` |
    | `/all-teams` | 기간 쿼리의 이름입니다 |
 

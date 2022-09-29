@@ -1,17 +1,18 @@
 ---
 title: 제출된 양식 데이터를 CSV 형식으로 내보내기
 description: 제출된 적응형 양식 데이터를 CSV 형식으로 내보내기
-feature: 적응형 양식
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: article
 activity: implement
-topic: 개발
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 6cd892e4-82c5-4201-8b6a-40c2ae71afa9
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---
@@ -24,26 +25,28 @@ ht-degree: 0%
 >
 >이 샘플은 스키마 또는 양식 데이터 모델을 기반으로 하지 않는 응용 Forms에서만 작동합니다
 
-![테이블 ](assets/tablestructure.PNG)
-구조스키마의 이름을 볼 수 있으므로 스키마 내에 다음이 정의되어 있는 테이블 형식 제출이 있습니다
+![테이블 구조](assets/tablestructure.PNG)
+이 스키마 안에는 다음과 같은 열이 정의된 테이블 양식 제출이 있습니다
 
-* formdata:이 열에는 제출된 양식 데이터가 포함됩니다
-* 형식 이름:이 열에는 제출된 양식의 이름이 포함됩니다
-* id:기본 키이며 자동 증분으로 설정되어 있습니다
+* formdata: 이 열에는 제출된 양식 데이터가 포함됩니다
+* 형식 이름: 이 열에는 제출된 양식의 이름이 포함됩니다
+* id: 기본 키이며 자동 증분으로 설정되어 있습니다
 
 테이블 이름과 두 열 이름은 아래 스크린샷에 표시된 대로 OSGi 구성 속성으로 표시됩니다.
-![osgi-configuration](assets/configuration.PNG)
+![osgi 구성](assets/configuration.PNG)
 코드는 이러한 값을 읽고 실행할 적절한 SQL 쿼리를 구성합니다. 예를 들어 위의 값을 기준으로 다음 쿼리가 실행됩니다
-**양식 데이터를 FROM aemformstutorial.formsubmissions 여기서 formname=timeoffrequestform**
+
+`SELECT formdata FROM aemformstutorial.formsubmissions where formname=timeoffrequestform`
+
 위의 쿼리에서 양식(timeoffrequestform)의 이름이 요청 매개 변수로 서블릿에 전달됩니다.
 
 ## **OSGi 서비스 만들기**
 
 다음 OSGI 서비스가 생성되어 제출된 데이터를 CSV 형식으로 내보냅니다.
 
-* 37호선:Apache Sling 연결의 풀링된 데이터 소스에 액세스합니다.
+* 37호선: Apache Sling 연결의 풀링된 데이터 소스에 액세스합니다.
 
-* 89호선:서비스의 시작 지점입니다.메서드 `getCSVFile(..)`은 formName을 입력 매개 변수로 사용하고 제공된 양식 이름과 관련된 제출된 데이터를 가져옵니다.
+* 89호선: 서비스의 시작 지점입니다.메서드 `getCSVFile(..)` formName을 입력 매개 변수로 사용하고 제공된 양식 이름과 관련하여 제출된 데이터를 가져옵니다.
 
 >[!NOTE]
 >
@@ -263,7 +266,7 @@ public @interface StoreAndExportConfiguration {
 
 ## 서블릿
 
-다음은 서비스의 `getCSVFile(..)` 메서드를 호출하는 서블릿 코드입니다. 이 서비스는 호출 응용 프로그램으로 다시 스트리밍되는 StringBuffer 개체를 반환합니다
+다음은 를 호출하는 서블릿 코드입니다 `getCSVFile(..)` 서비스의 메서드입니다. 이 서비스는 호출 응용 프로그램으로 다시 스트리밍되는 StringBuffer 개체를 반환합니다
 
 ```java
 package com.aemforms.storeandexport.core.servlets;
@@ -305,6 +308,6 @@ public class StreamCSVFile extends SlingAllMethodsServlet {
 
 ### 서버에 배포
 
-* MySQL Workbench를 사용하여 [SQL 파일](assets/formsubmissions.sql)을 MySQL 서버로 가져옵니다. 이렇게 하면 **aemformstutorial**&#x200B;라는 스키마와 일부 샘플 데이터가 있는 **formsubmissions**&#x200B;라는 테이블이 만들어집니다.
-* Felix 웹 콘솔을 사용하여 [OSGi 번들](assets/store-export.jar)을 배포합니다.
+* 가져오기 [SQL 파일](assets/formsubmissions.sql) MySQL Workbench를 사용하여 MySQL 서버로 이동합니다. 이렇게 하면 라는 스키마가 만들어집니다 **aemformtutorial** 및 **서식 제출** 일부 샘플 데이터를 사용하여 매핑해야 합니다.
+* 배포 [OSGi 번들](assets/store-export.jar) felix 웹 콘솔 사용
 * [TimeOffRequest 제출을 가져오려면](http://localhost:4502/bin/streamformdata?formName=timeoffrequestform). 스트리밍된 CSV 파일을 다시 가져와야 합니다.

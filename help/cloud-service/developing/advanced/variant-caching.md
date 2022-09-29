@@ -4,9 +4,10 @@ description: 페이지 변형 캐싱을 지원하기 위해 AEM as a cloud servi
 role: Architect, Developer
 topic: Development
 feature: CDN Cache, Dispatcher
-source-git-commit: fa85f0270e21cc9857f95c541a06e87cf26d5798
+exl-id: fdf62074-1a16-437b-b5dc-5fb4e11f1355
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '559'
 ht-degree: 1%
 
 ---
@@ -27,7 +28,7 @@ ht-degree: 1%
 
 + AEM 코드는 쿠키를 설정해야 합니다. __&quot;x-aem-variant&quot;__ 방문자가 선호하는 상태(예: `Set-Cookie: x-aem-variant=NY`)을 설정하는 것이 좋습니다.
 
-+ 방문자의 후속 요청은 해당 쿠키(예: `“Cookie: x-aem-variant=NY”`)이고 쿠키는 CDN 수준에서 사전 정의된 헤더(즉, `x-aem-variant:NY`)에 전달될 수 있습니다.
++ 방문자의 후속 요청은 해당 쿠키(예: `"Cookie: x-aem-variant=NY"`)이고 쿠키가 CDN 수준에서 사전 정의된 헤더(즉, `x-aem-variant:NY`)에 전달될 수 있습니다.
 
 + Apache 재작성 규칙은 페이지 URL에 헤더 값을 Apache Sling 선택기(예: `/page.variant=NY.html`). 이렇게 하면 AEM 게시 가 선택기와 디스패처에 따라 서로 다른 컨텐츠를 제공하고 변형당 한 페이지를 캐시할 수 있습니다.
 

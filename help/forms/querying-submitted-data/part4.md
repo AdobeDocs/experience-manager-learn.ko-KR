@@ -13,9 +13,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: a8d8118d-f4a1-483f-83b4-77190f6a42a4
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '442'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 # 제출된 데이터 쿼리
 
 
-다음 단계는 제출된 데이터를 쿼리하고 결과를 테이블 형식으로 표시하는 것입니다. 이를 위해 다음 소프트웨어를 사용할 것입니다
+다음 단계는 제출된 데이터를 쿼리하고 결과를 테이블 형식으로 표시하는 것입니다. 이를 위해 다음 소프트웨어를 사용합니다.
 
 [QueryBuilder](https://querybuilder.js.org/) - 쿼리를 만들 UI 구성 요소
 
@@ -64,7 +64,7 @@ public JSONArray getData(String formName) throws SQLException, IOException {
  }
 ```
 
-GetResult 단추를 클릭하면 Get 호출이 수행됩니다 **&quot;/bin/querydata&quot;**. QueryBuilder UI로 작성된 쿼리를 쿼리 매개 변수를 통해 서블릿에 전달합니다. 그런 다음 서블릿은 이 쿼리를 SQL 쿼리로 마사지를 받으며 데이터베이스를 쿼리하는 데 사용할 수 있습니다. 예를 들어 &#39;Mouse&#39;라는 이름을 가진 모든 제품을 검색하려는 경우 Query Builder 쿼리 문자열은 $.productname = &#39;Mouse&#39;입니다. 그런 다음 이 쿼리는 다음과 같이 변환됩니다
+GetResult 단추를 클릭하면 Get 호출이 수행됩니다 **&quot;/bin/querydata&quot;**. QueryBuilder UI로 작성된 쿼리를 쿼리 매개 변수를 통해 서블릿에 전달합니다. 그런 다음 서블릿은 이 쿼리를 SQL 쿼리로 마사지를 받으며 데이터베이스를 쿼리하는 데 사용할 수 있습니다. 예를 들어 &#39;Mouse&#39;라는 모든 제품을 검색하려고 검색하는 경우 Query Builder 쿼리 문자열은 `$.productname = 'Mouse'`. 그런 다음 이 쿼리는 다음과 같이 변환됩니다
 
 선택 &#42; aemformswithjson에서 을 참조하십시오.  JSON_EXTRACT( formsubmissions.formdata,&quot;$.productName &quot;)= &#39;Mouse&#39;인 양식 제출
 

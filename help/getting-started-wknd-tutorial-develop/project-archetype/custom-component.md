@@ -12,9 +12,9 @@ kt: 4072
 mini-toc-levels: 1
 thumbnail: 30181.jpg
 exl-id: f54f3dc9-6ec6-4e55-9043-7a006840c905
-source-git-commit: 79d41d833ab0659f26f988678e124daa18b857f3
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '4138'
+source-wordcount: '4131'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,7 @@ WKND 자습서의 이 부분에서 아티클의 기여자에 대한 작성된 �
 
 먼저 부산물 구성 요소 노드 구조를 만들고 대화 상자를 정의합니다. 이 항목은 AEM의 구성 요소를 나타내며 JCR의 해당 위치별로 구성 요소의 리소스 유형을 암시적으로 정의합니다.
 
-이 대화 상자는 컨텐츠 작성자가 제공할 수 있는 인터페이스를 표시합니다. 이 구현의 경우 AEM WCM 코어 구성 요소의 **이미지** 구성 요소를 사용하여 필라인 이미지의 작성 및 렌더링을 처리할 수 있으므로 구성 요소의 이미지로 설정됩니다 `sling:resourceSuperType`.
+이 대화 상자는 컨텐츠 작성자가 제공할 수 있는 인터페이스를 표시합니다. 이 구현의 경우 AEM WCM 코어 구성 요소의 **이미지** 구성 요소는 필라인 이미지의 작성 및 렌더링을 처리하는 데 활용되므로 구성 요소의 이미지로 설정해야 합니다 `sling:resourceSuperType`.
 
 ### 구성 요소 정의 만들기 {#create-component-definition}
 
@@ -372,7 +372,7 @@ Sling 모델은 AEM에서 제공하는 여러 Java API를 사용합니다. 이�
    ...
    ```
 
-   다음 `uber-jar` 는 `classic` 프로필은 호출됩니다. `mvn clean install -PautoInstallSinglePackage -Pclassic`. 이 프로젝트에서도 고유합니다. AEM Project Archetype에서 생성된 실제 프로젝트에서 `uber-jar` 지정된 AEM 버전이 6.5 또는 6.4인 경우 기본값이 됩니다.
+   다음 `uber-jar` 는 `classic` 프로필은 호출됩니다. `mvn clean install -PautoInstallSinglePackage -Pclassic`. 이 프로젝트에서도 고유합니다. AEM Project Archetype에서 생성된 실제 프로젝트에서 `uber-jar` 은 지정된 AEM 버전이 6.5 또는 6.4인 경우 기본값입니다.
 
    다음 [uber-jar](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html#experience-manager-api-dependencies) AEM 6.x에 의해 노출된 모든 공개 Java API를 포함합니다. 버전은 프로젝트의 루트에 있는 상위 반응기 pom에서 유지 관리됩니다 `aem-guides-wknd/pom.xml`.
 
@@ -705,7 +705,7 @@ Adobe에서는 **second** 접근. 첫 번째 방법으로도 충분할 수 있�
 
    Sling 모델은 **NOT** OSGi 서비스, 따라서 클래스 상태를 유지하는 것이 안전합니다. 자주 `@PostConstruct` 일반 생성자가 수행하는 작업과 마찬가지로 나중에 사용할 수 있도록 Sling Model 클래스 상태를 파생하고 설정합니다.
 
-   다음의 경우 `@PostConstruct` 메서드에 예외가 발생하고, Sling 모델이 인스턴스화하지 않습니다(null임).
+   다음의 경우 `@PostConstruct` 메서드에서 예외가 발생하고, Sling 모델이 인스턴스화하지 않습니다(null).
 
 1. **getImage()** 이제 이미지 개체를 단순히 반환하도록 업데이트할 수 있습니다.
 
@@ -790,7 +790,7 @@ Adobe에서는 **second** 접근. 첫 번째 방법으로도 충분할 수 있�
        /**
        * @PostConstruct is immediately called after the class has been initialized
        * but BEFORE any of the other public methods. 
-       * It is a good method to initialize variables that will be used by methods in the rest of the model
+       * It is a good method to initialize variables that is used by methods in the rest of the model
        *
        */
        @PostConstruct

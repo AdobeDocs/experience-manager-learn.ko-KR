@@ -8,9 +8,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 7a4fd109-514a-41a8-a3fe-53c1de32cb6d
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '892'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 이 예에서 gbedekar -w7-1:6443은 AEM이 실행 중인 서버 및 포트의 이름입니다.
 
-연결된 앱을 만들었으면 **소비자 키 및 비밀 키**. AEM Forms에서 데이터 소스를 만들 때 이러한 권한이 필요합니다.
+연결된 앱을 만들었으면 **소비자 키 및 비밀 키**. AEM Forms에서 데이터 소스를 만들 때 필요합니다.
 
 연결된 앱을 만들었으므로 이제 salesforce에서 수행해야 하는 작업을 위해 Swagger 파일을 만들어야 합니다. 다운로드 가능한 자산의 일부로 샘플 스웨거 파일이 포함됩니다. 이 Swagger 파일을 사용하면 적응형 양식 제출 시 &quot;Lead&quot; 개체를 만들 수 있습니다. 이 swagger 파일을 살펴보십시오.
 

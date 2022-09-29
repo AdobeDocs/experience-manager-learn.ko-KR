@@ -4,7 +4,7 @@ user-guide-description: Adobe Experience Manager as a Cloud Service를 위한 �
 breadcrumb-title: AEM as a Cloud Service 튜토리얼
 sub-product: cloud-service
 team: TM
-source-git-commit: bc222867c937b7d498e7b56bebc0aac18289ad03
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
 source-wordcount: '830'
 ht-degree: 21%
@@ -214,7 +214,7 @@ ht-degree: 21%
    + Microsoft Power와 통합 자동화{#forms-cs-and-power-automate}
       + [통합 구성](./forms/forms-cs-and-power-automate/integrate-formscs-power-automate.md)
       + [제출된 양식 데이터를 구문 분석합니다.](./forms/forms-cs-and-power-automate/send-email-notification.md)
-      + [전자 메일 첨부 파일로 DoR 보내기](./forms/forms-cs-and-power-automate/send-DoR-email-attachment.md)
+      + [전자 메일 첨부 파일로 DoR 보내기](./forms/forms-cs-and-power-automate/send-dor-email-attachment.md)
       + [제출된 데이터에서 양식 첨부 파일 추출](./forms/forms-cs-and-power-automate/send-af-attachments-in-email.md)
    + Microsoft Dynamics와 통합{#formscs-dynamics-crm}
       + [Dynamics 응용 프로그램 만들기](./forms/formscs-dynamics-crm/create-dynamics-account.md)
@@ -272,9 +272,9 @@ ht-degree: 21%
       + [Sling 작업 스케줄러](./cloud-5/season-2/cloud5-sling-job-scheduler.md)
       + [캐시 수정](./cloud-5/season-2/cloud5-fix-your-cache.md)
       + [재작성 수정](./cloud-5/season-2/cloud5-fix-your-rewrites.md)
-      + [Cloud Manager - Experience Audit](./cloud-5/season-2/cloud5-MoCM-experience-audit.md)
-      + [Cloud Manager - 단위 테스트](./cloud-5/season-2/cloud5-MoCM-unit-tests.md)
-      + [Cloud Manager - 기능 테스트](./cloud-5/season-2/cloud5-MoCM-functional-tests.md)
+      + [Cloud Manager - Experience Audit](./cloud-5/season-2/cloud5-mocm-experience-audit.md)
+      + [Cloud Manager - 단위 테스트](./cloud-5/season-2/cloud5-mocm-unit-tests.md)
+      + [Cloud Manager - 기능 테스트](./cloud-5/season-2/cloud5-mocm-functional-tests.md)
 + [AEM Experts Series](./aem-experts-series.md)
 + 여러 단계 Tutorials{#multi-step-tutorials}
    + [AEM Sites 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)

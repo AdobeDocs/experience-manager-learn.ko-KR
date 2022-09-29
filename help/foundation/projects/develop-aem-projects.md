@@ -11,9 +11,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 9bfe3142-bfc1-4886-85ea-d1c6de903484
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '4582'
+source-wordcount: '4571'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ AEM Projects에는 다음과 같은 몇 가지가 있습니다 [OOTB 프로젝�
 
 ### 프로젝트 템플릿 루트
 
-프로젝트 템플릿의 루트 노드 유형은 다음과 같습니다 **cq:템플릿**. 이 노드에서 속성을 구성할 수 있습니다 **jcr:title** 및 **jcr:description** 프로젝트 만들기 마법사에 표시됩니다. 라는 속성도 있습니다 **마법사** 그러면 프로젝트의 속성 이 채워집니다. 기본값은 다음과 같습니다. **/libs/cq/core/content/projects/wizard/steps/defaultproject.html** 사용자는 기본 프로젝트 속성을 채우고 그룹 구성원을 추가할 수 있으므로 대부분의 경우 제대로 작동해야 합니다.
+프로젝트 템플릿의 루트 노드가 형식입니다 **cq:템플릿**. 이 노드에서 속성을 구성할 수 있습니다 **jcr:title** 및 **jcr:description** 프로젝트 만들기 마법사에 표시됩니다. 라는 속성도 있습니다 **마법사** 그러면 프로젝트의 속성 이 채워집니다. 기본값은 다음과 같습니다. **/libs/cq/core/content/projects/wizard/steps/defaultproject.html** 사용자는 기본 프로젝트 속성을 채우고 그룹 구성원을 추가할 수 있으므로 대부분의 경우 제대로 작동해야 합니다.
 
 *&#42;프로젝트 만들기 마법사는 Sling POST 서블릿을 사용하지 않습니다. 대신 값이 사용자 지정 서블릿에 게시됩니다.**com.adobe.cq.projects.impl.servlet.ProjectServlet**. 사용자 지정 필드를 추가할 때 이를 고려해야 합니다.*
 
@@ -92,7 +92,7 @@ AEM Projects에는 다음과 같은 몇 가지가 있습니다 [OOTB 프로젝�
 
 ## 프로젝트 템플릿 만들기 {#creating-project-template}
 
-주로 노드를 복사/구성하므로 CRXDE Lite을 사용합니다. 로컬 AEM 인스턴스에서 을 엽니다. [CRXDE Lite](http://localhost:4502/crx/de/index.jsp).
+주로 노드를 복사/구성하기 때문에 CRXDE Lite을 사용합니다. 로컬 AEM 인스턴스에서 을 엽니다. [CRXDE Lite](http://localhost:4502/crx/de/index.jsp).
 
 1. 먼저 아래에 새 폴더를 만듭니다 `/apps/&lt;your-app-folder&gt;` 명명된 이름 `projects`. 이름이 지정된 폴더 아래에 다른 폴더를 만듭니다. `templates`.
 
@@ -345,7 +345,7 @@ AEM Projects에는 다음과 같은 몇 가지가 있습니다 [OOTB 프로젝�
 
    AEM 받은 편지함에서 볼 수 있는 워크플로우 진행률 표시줄입니다.
 
-   선택적으로 를 업로드할 수 있습니다 **이미지** 사용자가 Workflow 축소판으로 사용할 Page Properties 를 선택합니다. 이미지 차원은 319x319픽셀이어야 합니다. 추가 **설명** 사용자가 워크플로우를 선택하면 페이지 속성 에도 표시됩니다.
+   선택적으로 를 업로드할 수 있습니다 **이미지** 사용자가 Workflow 축소판으로 사용할 페이지 등록 정보를 선택합니다. 이미지 차원은 319x319픽셀이어야 합니다. 추가 **설명** 사용자가 워크플로우를 선택하면 페이지 속성 에도 표시됩니다.
 
 1. 프로젝트 작업 만들기 워크플로우 프로세스는 워크플로우의 단계로 작업을 만들도록 설계되었습니다. 작업을 완료한 후에만 워크플로우가 앞으로 이동합니다. 프로젝트 작업 만들기 단계의 강력한 측면은 워크플로우 메타데이터 값을 읽고 이 값을 사용하여 작업을 동적으로 만들 수 있다는 것입니다.
 
@@ -418,7 +418,7 @@ AEM Projects에는 다음과 같은 몇 가지가 있습니다 [OOTB 프로젝�
    task.setProperty("taskPriority", taskPriority);
    ```
 
-1. 콘텐츠 승인 워크플로우로 돌아갑니다. Drag+Drop **또는 분할** 구성 요소(워크플로우 카테고리 아래의 사이드 킥에 있음) **작업 시작** 단계. 공통 대화 상자에서 3개의 분기 라디오 단추를 선택합니다. OR 분할은 워크플로우 메타데이터 값을 읽습니다 **&quot;lastTaskAction&quot;** 워크플로우의 경로를 결정합니다. 다음 **&quot;lastTaskAction&quot;** 속성은 4단계에서 구성된 라우팅 탭에서 값 중 하나로 설정됩니다. 각 분기 탭에 대해 **스크립트** 다음 값이 있는 텍스트 영역:
+1. 콘텐츠 승인 워크플로우로 돌아갑니다. Drag+Drop **또는 분할** 구성 요소(워크플로우 카테고리 아래의 사이드 킥에 있음) **작업 시작** 단계. 공통 대화 상자에서 3개의 분기 라디오 단추를 선택합니다. OR 분할은 워크플로우 메타데이터 값을 읽습니다 **&quot;lastTaskAction&quot;** 워크플로우의 경로를 결정합니다. 다음 **&quot;lastTaskAction&quot;** 등록 정보는 4단계에서 구성된 라우팅 탭에서 값 중 하나로 설정됩니다. 각 분기 탭에 대해 **스크립트** 다음 값이 있는 텍스트 영역:
 
    ```
    function check() {
@@ -635,7 +635,7 @@ task.setCurrentAssignee(projectApproverGrp);
 
    ![콘텐츠 승인 워크플로우 마법사](./assets/develop-aem-projects/content-approval-start-wizard.png)
 
-1. 워크플로우에서 첫 번째 작업의 담당자를 설정하는 데 사용할 추가 필드를 마법사에 추가합니다( 참조) [워크플로우 모델 만들기](#create-workflow-model): 5단계).
+1. 워크플로우에서 첫 번째 작업의 담당자를 설정하는 데 사용되는 추가 필드를 마법사에 추가합니다( 참조) [워크플로우 모델 만들기](#create-workflow-model): 5단계).
 
    아래 `../content-approval-start/jcr:content/items/column2/items` 유형의 새 노드 만들기 `nt:unstructured` 명명된 이름 **&quot;assign&quot;**. 프로젝트 사용자 선택기 구성 요소( [Granite 사용자 선택기 구성 요소](https://experienceleague.adobe.com/docs/)). 이 양식 필드를 사용하면 사용자 및 그룹 선택을 현재 프로젝트에 속하는 사용자만 쉽게 제한할 수 있습니다.
 

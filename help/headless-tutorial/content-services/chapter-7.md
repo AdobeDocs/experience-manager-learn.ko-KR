@@ -1,51 +1,51 @@
 ---
-title: 7장 - Mobile 앱에서 AEM 컨텐츠 서비스 사용 - 컨텐츠 서비스
-description: 자습서의 7장에서 AEM Content Services에서 작성된 콘텐츠를 소비하기 위해 Android Mobile 앱을 실행합니다.
+title: 7장 - 모바일 앱에서 AEM Content Services 사용 - Content Services
+description: 자습서의 7장에서 Android 모바일 앱을 실행하여 AEM Content Services에서 작성된 콘텐츠를 사용합니다.
 feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: d6b6d425-842a-43a9-9041-edf78e51d962
-source-git-commit: 631fef25620c84e04c012c8337c9b76613e3ad46
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '1392'
+source-wordcount: '1391'
 ht-degree: 0%
 
 ---
 
-# 7장 - Mobile 앱에서 AEM Content Services 사용
+# 7장 - 모바일 앱에서 AEM Content Services 사용
 
-이 자습서의 7장에서는 기본 Android Mobile 앱을 사용하여 AEM Content Services의 콘텐츠를 사용합니다.
+이 자습서의 7장에서는 기본 Android 모바일 앱을 사용하여 AEM Content Services의 콘텐츠를 사용합니다.
 
-## Android Mobile 앱
+## Android 모바일 앱
 
-이 자습서에서는 **간단한 기본 Android Mobile 앱** AEM Content Services에 의해 노출된 이벤트 컨텐츠를 사용하고 표시할 수 있습니다.
+이 자습서에서는 **간단한 기본 Android 모바일 앱** AEM Content Services에 의해 노출된 이벤트 컨텐츠를 사용하고 표시할 수 있습니다.
 
 의 사용 [Android](https://developer.android.com/) 은(는) 크게 중요하지 않으며, 소비되는 모바일 앱을 모바일 플랫폼용 프레임워크(예: iOS)에 쓸 수 있습니다.
 
 Android는 Windows, macOs 및 Linux에서 Android 에뮬레이터를 실행하는 기능, 인기도, AEM 개발자가 잘 이해하는 언어인 Java로 쓸 수 있기 때문에 자습서에 사용됩니다.
 
-*이 자습서의 Android Mobile 앱은&#x200B;**not**android Mobile 앱을 빌드하거나 Android 개발 우수 사례를 전달하는 방법을 지시하는 대신, Mobile 애플리케이션에서 AEM Content Services를 사용하는 방법을 설명하려고 합니다.*
+*이 자습서의 Android 모바일 앱은&#x200B;**not**Android 모바일 앱을 빌드하거나 Android 개발 우수 사례를 전달하는 방법을 지시하는 대신, 모바일 애플리케이션에서 AEM Content Services를 사용할 수 있는 방법을 보여 주기 위한 것입니다.*
 
-### AEM Content Services를 통해 Mobile 앱 경험을 구현하는 방법
+### AEM Content Services가 모바일 앱 경험을 구동하는 방법
 
-![Mobile 앱-컨텐츠 서비스 매핑](assets/chapter-7/content-services-mapping.png)
+![모바일 앱과 Content Services 매핑](assets/chapter-7/content-services-mapping.png)
 
 1. 다음 **로고** 에 의해 정의됨 [!DNL Events API] 페이지 **이미지 구성 요소**.
 1. 다음 **태그 라인** 에 정의된 대로 [!DNL Events API] 페이지 **텍스트 구성 요소**.
 1. 이 **이벤트 목록** 은 구성된 을 통해 노출된 이벤트 컨텐츠 조각의 직렬화에서 파생됩니다 **컨텐츠 조각 목록 구성 요소**.
 
-## Mobile 앱 데모
+## 모바일 앱 데모
 
 >[!VIDEO](https://video.tv.adobe.com/v/28345/?quality=12&learn=on)
 
-### 비로컬 호스트를 사용하도록 Mobile 앱 구성
+### 비로컬 호스트를 사용하도록 모바일 앱 구성
 
-AEM 게시가 실행되고 있지 않은 경우 **http://localhost:4503** 호스트 및 포트는 Mobile 앱의 [!DNL Settings] AEM 게시 호스트/포트를 가리킵니다.
+AEM 게시가 실행되고 있지 않은 경우 **http://localhost:4503** 호스트 및 포트는 모바일 앱의 [!DNL Settings] AEM 게시 호스트/포트를 가리킵니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28344/?quality=12&learn=on)
 
-## 로컬에서 Mobile 앱 실행
+## 로컬에서 모바일 앱 실행
 
 1. 를 다운로드하여 설치합니다. [Android Studio](https://developer.android.com/studio/install) android 에뮬레이터를 설치하려면 다음을 수행하십시오.
 1. **다운로드** android [!DNL APK] 파일 [GitHub > Assets > wknd-mobile.x.x.xapk](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
@@ -77,27 +77,27 @@ AEM 게시가 실행되고 있지 않은 경우 **http://localhost:4503** 호스
 
 >[!VIDEO](https://video.tv.adobe.com/v/28341/?quality=12&learn=on)
 
-## Mobile 앱 코드
+## 모바일 앱 코드
 
-이 섹션에서는 가장 상호 작용하며 AEM Content Services 및 JSON 출력에 따라 다른 Android Mobile 앱 코드를 강조 표시합니다.
+이 섹션에서는 가장 상호 작용하며 AEM Content Services 및 JSON 출력에 따라 다른 Android 모바일 앱 코드를 강조 표시합니다.
 
-로드 시 Mobile 앱은 다음을 수행합니다 `HTTP GET` to `/content/wknd-mobile/en/api/events.model.json` Mobile 앱을 구동할 컨텐츠를 제공하도록 구성된 AEM 컨텐츠 서비스 종료 지점입니다.
+로드 시 모바일 앱에서 다음을 수행합니다 `HTTP GET` to `/content/wknd-mobile/en/api/events.model.json` 모바일 앱을 구동할 컨텐츠를 제공하도록 구성된 AEM Content Services 끝점입니다.
 
-이벤트 API(`/content/wknd-mobile/en/api/events.model.json`가 잠겨 있는 경우 Mobile 앱을 코딩하여 JSON 응답의 특정 위치에서 특정 정보를 찾을 수 있습니다.
+이벤트 API(`/content/wknd-mobile/en/api/events.model.json`가 잠겨 있는 경우 모바일 앱을 코딩하여 JSON 응답의 특정 위치에서 특정 정보를 찾을 수 있습니다.
 
 ### 높은 수준 코드 흐름
 
-1. 열기 [!DNL WKND Mobile] 앱이 을 호출합니다 `HTTP GET` 의 AEM Publish에 요청 `/content/wknd-mobile/en/api/events.model.json` 콘텐츠를 수집하여 Mobile 앱의 UI를 채웁니다.
-2. AEM에서 콘텐츠를 받으면 Mobile 앱의 세 가지 보기 요소, 즉 **로고, 태그 라인 및 이벤트 목록**&#x200B;는 AEM의 콘텐츠로 초기화됩니다.
-   * AEM 컨텐츠에 Mobile 앱의 보기 요소에 바인딩하기 위해 각 AEM 구성 요소를 나타내는 JSON은 Java POJO에 매핑된 개체이며, 이 개체는 Android 보기 요소에 바인딩됩니다.
+1. 열기 [!DNL WKND Mobile] 앱이 을 호출합니다 `HTTP GET` 의 AEM Publish에 요청 `/content/wknd-mobile/en/api/events.model.json` 콘텐츠를 수집하여 모바일 앱의 UI를 채우십시오.
+2. AEM에서 콘텐츠를 받으면 모바일 앱의 세 가지 보기 요소 각각인 **로고, 태그 라인 및 이벤트 목록**&#x200B;는 AEM의 콘텐츠로 초기화됩니다.
+   * AEM 컨텐츠에 모바일 앱의 보기 요소에 바인딩하기 위해 각 AEM 구성 요소를 나타내는 JSON은 Java POJO에 매핑된 개체이며, 이 개체는 Android 보기 요소에 바인딩됩니다.
       * 이미지 구성 요소 JSON → 로고 POJO → 로고 ImageView
       * 텍스트 구성 요소 JSON → TagLine POJO → 텍스트 이미지 보기
       * 컨텐츠 조각 목록 JSON → 이벤트 POJO →Events RecyclerView
-   * *보다 큰 JSON 응답 내에서 잘 알려진 위치 때문에 Mobile 앱 코드는 JSON을 POJO에 매핑할 수 있습니다. &quot;image&quot;, &quot;text&quot; 및 &quot;contentfragmentlist&quot;의 JSON 키는 지원되는 AEM 구성 요소의 노드 이름에 의해 결정됩니다. 이러한 노드 이름이 변경되면 JSON 데이터에서 필수 콘텐츠를 소싱하는 방법을 알 수 없으므로 Mobile 앱이 중단됩니다.*
+   * *더 큰 JSON 응답 내에서 잘 알려진 위치 때문에 모바일 앱 코드는 JSON을 POJO에 매핑할 수 있습니다. &quot;image&quot;, &quot;text&quot; 및 &quot;contentfragmentlist&quot;의 JSON 키는 지원되는 AEM 구성 요소의 노드 이름에 의해 결정됩니다. 이러한 노드 이름이 변경되면 JSON 데이터에서 필수 콘텐츠를 소싱하는 방법을 알 수 없으므로 모바일 앱이 중단됩니다.*
 
 #### AEM Content Services 끝점 호출
 
-다음은 Mobile 앱의 코드를 증류하는 것입니다 `MainActivity` Mobile 앱 경험을 구동하는 컨텐츠를 수집하기 위해 AEM 컨텐츠 서비스를 호출하는 책임이 있습니다.
+다음은 모바일 앱의 코드를 증류하는 것입니다 `MainActivity` 는 모바일 앱 경험을 구동하는 컨텐츠를 수집하기 위해 AEM Content Services를 호출해야 합니다.
 
 ```
 protected void onCreate(Bundle savedInstanceState) {
@@ -128,7 +128,7 @@ private void initApp(final List<ViewBinder> viewBinders) {
 }
 ```
 
-`onCreate(..)` 는 Mobile 앱에 대한 초기화 후크이며 3개의 사용자 지정을 등록합니다 `ViewBinders` json을 구문 분석하고 값을 `View` 요소를 생성하지 않습니다.
+`onCreate(..)` 는 모바일 앱에 대한 초기화 후크이며 3개의 사용자 지정을 등록합니다 `ViewBinders` json을 구문 분석하고 값을 `View` 요소를 생성하지 않습니다.
 
 `initApp(...)` 그런 다음 이 호출됩니다. 이 호출되면 AEM Publish에서 AEM Content Services 종단점에 HTTP GET을 요청하여 컨텐츠를 수집합니다. 유효한 JSON 응답을 수신하면 JSON 응답이 각 JSON에 전달됩니다 `ViewBinder` JSON을 구문 분석하고 모바일에 바인딩하는 책임이 있습니다 `View` 요소를 생성하지 않습니다.
 
@@ -183,11 +183,11 @@ public class Image {
 
 JSON 개체에서 더 많은 데이터 포인트를 선택해야 하는 이벤트 POJO는 간단한 이미지보다 이 기법의 이점을 더 많이 활용하며 우리가 원하는 것은 `src`.
 
-## Mobile 앱 경험 살펴보기
+## 모바일 앱 경험 살펴보기
 
-이제 AEM Content Services에서 기본 Mobile 경험을 구현하는 방법을 이해했으므로 다음 단계를 수행하고 Mobile 앱에 반영된 변경 사항을 볼 수 있습니다.
+이제 AEM Content Services에서 기본 모바일 경험을 구현하는 방법을 이해했으므로 다음 단계를 수행하고 모바일 앱에 반영된 변경 사항을 볼 수 있습니다.
 
-각 단계 후에 Mobile 앱을 새로 고침하고 모바일 경험에 대한 업데이트를 확인합니다.
+각 단계 후에 모바일 앱을 새로 고침하고 모바일 경험에 대한 업데이트를 확인합니다.
 
 1. 만들기 및 게시 **새 [!DNL Event] 컨텐츠 조각**
 1. 게시 취소 **기존 [!DNL Event] 컨텐츠 조각**
@@ -200,7 +200,7 @@ JSON 개체에서 더 많은 데이터 포인트를 선택해야 하는 이벤�
 AEM Content Services 및 AEM as a Headless CMS에 대해 자세히 알아보려면 Adobe의 다른 설명서 및 지원 자료를 참조하십시오.
 
 * [컨텐츠 조각 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html)
-* [AEM WCM 코어 구성 요소 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)
+* [AEM WCM 코어 구성 요소 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [AEM WCM 코어 구성 요소 구성 요소 라이브러리](https://opensource.adobe.com/aem-core-wcm-components/library.html)
 * [AEM WCM 코어 구성 요소 GitHub 프로젝트](https://github.com/adobe/aem-core-wcm-components)
 * [구성 요소 익스포터의 코드 샘플](https://github.com/Adobe-Consulting-Services/acs-aem-samples/blob/master/core/src/main/java/com/adobe/acs/samples/models/SampleComponentExporter.java)

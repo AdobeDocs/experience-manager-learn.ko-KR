@@ -10,9 +10,9 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 31416399-6a4e-47d1-8ed8-be842a01a727
-source-git-commit: 415ad1266925525a6b0954b4515bae3d152bb6ec
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '1840'
+source-wordcount: '1835'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ React에 작성된 SPA(단일 페이지 애플리케이션)의 소스 코드를 
 
 *SPA이 확장되어 정적 추가 `Header` 구성 요소*
 
-## 전제 조건
+## 사전 요구 사항
 
 설정에 필요한 도구 및 지침을 검토합니다. [로컬 개발 환경](overview.md#local-dev-environment). 이 장은 ...의 연속이다 [프로젝트 만들기](create-project.md) 그러나 필요한 모든 작업을 수행하는 데는 SPA 지원 AEM 프로젝트가 있습니다.
 
@@ -132,7 +132,7 @@ AEM 프로젝트의 일부로 두 개의 모듈이 생성되었습니다. `ui.ap
 
 ## 정적 SPA 구성 요소 추가 {#static-spa-component}
 
-그런 다음, SPA에 새 구성 요소를 추가하고 변경 사항을 로컬 AEM 인스턴스에 배포합니다. 이는 SPA 업데이트 방식을 보여주는 간단한 변경 사항입니다.
+그런 다음, SPA에 새 구성 요소를 추가하고 변경 사항을 로컬 AEM 인스턴스에 배포합니다. 이는 SPA이 업데이트된 방식을 보여주는 간단한 변경 사항입니다.
 
 1. 에서 `ui.frontend` 모듈, 아래 `ui.frontend/src/components` 이름이 인 새 폴더 만들기 `Header`.
 1. 이름이 인 파일 만들기 `Header.js` 아래 `Header` 폴더를 입력합니다.
@@ -237,7 +237,7 @@ A [webpack-dev-server](https://webpack.js.org/configuration/dev-server/) 는 SPA
    "proxy": "http://localhost:4502",
    ```
 
-   다음 [React 앱 만들기](https://create-react-app.dev/docs/proxying-api-requests-in-development) 는 API 요청을 프록시하기 위한 쉬운 메커니즘을 제공합니다. 알 수 없는 모든 요청은 를 통해 프록시됩니다 `localhost:4502`: 로컬 AEM 빠른 시작입니다.
+   다음 [React 앱 만들기](https://create-react-app.dev/docs/proxying-api-requests-in-development) 는 API 요청을 프록시하기 위한 쉬운 메커니즘을 제공합니다. 알 수 없는 모든 요청은 프록시됩니다 `localhost:4502`: 로컬 AEM 빠른 시작입니다.
 
 1. 터미널 창을 열고 `ui.frontend` 폴더를 입력합니다. 명령 실행 `npm start`:
 

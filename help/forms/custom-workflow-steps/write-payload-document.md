@@ -7,9 +7,10 @@ topic: Development
 role: Developer
 level: Beginner
 kt: kt-9859
-source-git-commit: 160471fdc34439da6c312d65b252eaa941b7c7a2
+exl-id: bab7c403-ba42-4a91-8c86-90b43ca6026c
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '144'
+source-wordcount: '140'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ ht-degree: 0%
 ChangeBeneficiary.pdf,c:\confirmation
 ```
 
-첫 번째 인수는 파일 시스템에 저장할 문서의 이름입니다. 두 번째 인수는 문서를 저장할 폴더 위치입니다. 예를 들어, 위의 사용 사례에서는 문서가 c:\confirmation\ChangeBeneficiary.pdf에 작성됩니다
+첫 번째 인수는 파일 시스템에 저장할 문서의 이름입니다. 두 번째 인수는 문서를 저장할 폴더 위치입니다. 예를 들어 위의 사용 사례에서 문서가 `c:\confirmation\ChangeBeneficiary.pdf`
 
 다음 스크린샷은 사용자 지정 프로세스 단계에 전달해야 하는 인수를 보여 줍니다
 ![write-payload-file-system](assets/write-payload-file-system.png)

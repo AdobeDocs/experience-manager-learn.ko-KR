@@ -1,26 +1,26 @@
 ---
 title: AEM Forms Workflow에서 Json 데이터 요소의 값 설정
-description: 적응형 양식이 AEM Workflow의 다른 사용자에게 라우팅되므로 양식을 검토하는 사용자를 기반으로 특정 필드 또는 패널을 숨기거나 비활성화하는 요구 사항이 있습니다. 이러한 사용 사례를 충족하기 위해 일반적으로 숨김 필드의 값을 설정합니다. 이 숨김 필드의 값 비즈니스 규칙을 기반으로 적절한 패널이나 필드를 숨기거나 비활성화하도록 작성할 수 있습니다.
-feature: 적응형 양식
+description: 적응형 양식이 AEM Workflow의 다른 사용자에게 라우팅되므로 양식을 검토하는 사용자를 기반으로 특정 필드나 패널을 숨기거나 비활성화해야 하는 요구 사항이 있습니다. 이러한 사용 사례를 충족하기 위해 일반적으로 숨김 필드의 값을 설정합니다. 이 숨김 필드의 값 비즈니스 규칙을 기반으로 적절한 패널이나 필드를 숨기거나 비활성화하도록 작성할 수 있습니다.
+feature: Adaptive Forms
 version: 6.4
-topic: 개발
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: fbe6d341-7941-46f5-bcd8-58b99396d351
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '685'
 ht-degree: 1%
 
 ---
 
-
 # AEM Forms Workflow에서 JSON 데이터 요소의 값 설정 {#setting-value-of-json-data-element-in-aem-forms-workflow}
 
-적응형 양식이 AEM Workflow의 다른 사용자에게 라우팅되므로 양식을 검토하는 사용자를 기반으로 특정 필드 또는 패널을 숨기거나 비활성화하는 요구 사항이 있습니다. 이러한 사용 사례를 충족하기 위해 일반적으로 숨김 필드의 값을 설정합니다. 이 숨김 필드의 값 비즈니스 규칙을 기반으로 적절한 패널이나 필드를 숨기거나 비활성화하도록 작성할 수 있습니다.
+적응형 양식이 AEM Workflow의 다른 사용자에게 라우팅되므로 양식을 검토하는 사용자를 기반으로 특정 필드나 패널을 숨기거나 비활성화해야 하는 요구 사항이 있습니다. 이러한 사용 사례를 충족하기 위해 일반적으로 숨김 필드의 값을 설정합니다. 이 숨김 필드의 값 비즈니스 규칙을 기반으로 적절한 패널이나 필드를 숨기거나 비활성화하도록 작성할 수 있습니다.
 
 ![json 데이터에 요소의 값 설정](assets/capture-3.gif)
 
-AEM Forms OSGI에서 JSON 데이터 요소의 값을 설정하려면 사용자 지정 OSGi 번들을 작성해야 합니다. 이 자습서의 일부로 번들이 제공됩니다.
+AEM Forms OSGi에서 - JSON 데이터 요소의 값을 설정하려면 사용자 지정 OSGi 번들을 만들어야 합니다. 이 자습서의 일부로 번들이 제공됩니다.
 
 AEM 워크플로우에서는 프로세스 단계를 사용합니다. Adobe는 &quot;Json에서 요소 값 설정&quot; OSGi 번들을 이 프로세스 단계에 연결합니다.
 
@@ -40,27 +40,27 @@ afData.afUnboundData.data.initialStep,N
 
 * [DevelopingWithServiceUserBundle 다운로드 및 배포](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-* [setvalue 번들을 다운로드하여 배포합니다](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). 제출된 json 데이터에 있는 요소의 값을 설정할 수 있는 사용자 지정 OSGI 번들입니다.
+* [setvalue 번들 다운로드 및 배포](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). 제출된 json 데이터에 있는 요소의 값을 설정할 수 있는 사용자 지정 OSGI 번들입니다.
 
 * [zip 파일의 컨텐츠를 다운로드하고 추출합니다](assets/set-value-jsondata.zip)
-   * 브라우저를 [패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp)로 보냅니다.
+   * 브라우저를 [패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp)
       * SetValueOfElementInJSONDataWorkflow.zip을 가져와 설치합니다.이 패키지에는 양식과 연결된 샘플 워크플로우 모델과 양식 데이터 모델이 있습니다.
 
-* 브라우저를 [Forms 및 문서](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)로 보냅니다.
+* 브라우저를 [Forms 및 문서](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * 만들기 를 클릭합니다 | 파일 업로드
 * TimeOffRequestForm.zip 파일 업로드
    **이 양식은 AEM Forms 6.4를 사용하여 빌드되었습니다. AEM Forms 6.4 이상을 사용하는지 확인하십시오**
-* [양식](http://localhost:4502/content/dam/formsanddocuments/timeoffrequest/jcr:content?wcmmode=disabled)을 엽니다.
+* 를 엽니다. [양식](http://localhost:4502/content/dam/formsanddocuments/timeoffrequest/jcr:content?wcmmode=disabled)
 * 시작 및 종료 날짜 를 입력하고 양식을 제출합니다.
-* [&quot;받은 편지함&quot;](http://localhost:4502/aem/inbox)으로 이동합니다.
+* 이동 [&quot;받은 편지함&quot;](http://localhost:4502/aem/inbox)
 * 작업과 연결된 양식을 엽니다.
 * 첫 번째 패널의 필드가 비활성화되어 있습니다.
 * 이제 요청을 승인하거나 거절하는 패널이 표시됩니다.
 
 >[!NOTE]
 >
->사용자 프로필을 사용하여 적응형 양식을 미리 채우므로 관리 [사용자 프로필 정보 ](http://localhost:4502/security/users.html)를 확인하십시오. 최소한으로 FirstName,LastName 및 Email 필드 값을 설정했는지 확인합니다.
->여기에서 com.aemforms.setvalue.core.SetValueInJson [에 대한 로거를 활성화하여 디버그 로깅을 활성화할 수 있습니다.](http://localhost:4502/system/console/slinglog)
+>사용자 프로필을 사용하여 적응형 양식을 미리 채우므로 관리자에게 문의하십시오 [사용자 프로필 정보 ](http://localhost:4502/security/users.html). 최소한으로 FirstName,LastName 및 Email 필드 값을 설정했는지 확인합니다.
+>com.aemforms.setvalue.core.SetValueInJson에 대한 로거를 활성화하여 디버그 로깅을 활성화할 수 있습니다 [여기에서](http://localhost:4502/system/console/slinglog)
 
 >[!NOTE]
 >

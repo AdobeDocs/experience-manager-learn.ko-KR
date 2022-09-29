@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 45047852-4fdb-4702-8a99-faaad7213b61
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '369'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Marketo과 AEM Forms을 통합하려면 API를 사용하여 REST 호출을 수�
 1. client_id
 1. client_secret
 1. identity_endpoint
-1. 인증 URL.
+1. 인증 URL
 
 [위에 언급된 속성을 보려면 공식 Marketo 설명서에 따르십시오.](https://developers.marketo.com/rest-api/) 또는 Marketo 인스턴스의 관리자에게 문의할 수도 있습니다.
 
@@ -52,5 +52,5 @@ Marketo과 AEM Forms을 통합하려면 API를 사용하여 REST 호출을 수�
 [이 문서와 관련된 자산을 다운로드하여 압축을 해제합니다.](assets/aemformsandmarketo.zip) zip 파일에는 다음 항목이 포함되어 있습니다.
 
 1. BlankTemplatePackage.zip - 적응형 양식 템플릿입니다. 패키지 관리자를 사용하여 가져옵니다.
-1. marketo.json - 데이터 소스를 구성하는 데 사용할 swagger 파일입니다.
+1. marketo.json - 데이터 소스를 구성하는 데 사용되는 swagger 파일입니다.
 1. MarketoAndForms.MarketoAndForms.core-1.0-SNAPSHOT.jar - 사용자 지정 인증을 수행하는 번들입니다. 자습서를 완료할 수 없거나 번들이 예상대로 작동하지 않는 경우 이 설정을 자유롭게 사용하십시오.

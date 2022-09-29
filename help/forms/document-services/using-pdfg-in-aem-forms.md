@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: bc79fcbf-b8b3-4d3a-9cd6-0bcd9321c7d5
-source-git-commit: 8d83d01fca3bfc9e6f674f7d73298b42f98a5d46
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '269'
 ht-degree: 2%
 
 ---
@@ -31,9 +31,9 @@ PDFG는 PDF 생성을 의미합니다. 즉, 다양한 파일 형식을 PDF으로
 1. [post.jsp로 이동합니다.](http://localhost:4502/apps/AemFormsSamples/components/createPDF/POST.jsp) CRX에서
 1. 기본 설정에 따라 저장 위치 변경(9행)
 1. 변경 사항을 저장합니다.
-1. 를 엽니다. [  html 페이지](http://localhost:4502/content/DocumentServices/CreatePDFG.html) 변환하기 위해 파일을 드래그 앤 드롭할 수 있습니다.
+1. 를 엽니다. [html 페이지](http://localhost:4502/content/DocumentServices/CreatePDFG.html) 변환하기 위해 파일을 드래그 앤 드롭할 수 있습니다.
 1. 단어 파일 또는 jpg를 드롭 영역에 놓습니다.
-1. 입력 문서는 PDF으로 변환되어 4번 지점에 지정된 것과 동일한 위치에 저장됩니다.
+1. 입력 문서는 PDF으로 변환되어 점 4에 지정된 동일한 위치에 저장됩니다.
 
 다음 코드 조각은 PDFG 서비스를 사용하여 파일을 PDF으로 변환하는 방법을 보여 줍니다
 

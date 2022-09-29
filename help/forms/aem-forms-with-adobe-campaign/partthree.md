@@ -7,20 +7,20 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 502f4bdf-d4af-409f-a611-62b7a1a6065a
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '330'
 ht-degree: 0%
 
 ---
 
 # ACS 프로필을 사용하여 적응형 양식 미리 채우기 {#prefilling-adaptive-form-using-acs-profile}
 
-이 부분에서는 ACS에서 가져온 프로필 정보로 적응형 양식 을 미리 채웁니다. AEM Forms에는 적응형 양식을 미리 채울 수 있는 강력한 기능이 있습니다.
+이 부분에서는 ACS에서 가져온 프로필 정보로 적응형 양식을 미리 채웁니다. AEM Forms에는 적응형 양식을 미리 채울 수 있는 강력한 기능이 있습니다.
 
 적응형 양식 미리 채우기에 대한 자세한 내용은 다음 문서를 참조하십시오 [튜토리얼](https://helpx.adobe.com/experience-manager/kt/forms/using/prefill-service-adaptive-forms-article-use.html).
 
-ACS에서 데이터를 가져와서 적응형 양식을 미리 채우려면 로그인된 AEM 사용자와 동일한 이메일이 있는 ACS에 프로필이 있다고 가정합니다. 예를 들어 AEM에 로그인한 사람의 이메일 ID가 csimms@adobe.com 인 경우 ACS에서 e-메일이 csimms@adobe.com 인 프로필을 찾을 수 있습니다.
+ACS에서 데이터를 가져와 적응형 양식을 미리 채우려면 로그인한 AEM 사용자와 동일한 이메일을 사용하는 ACS에 프로필이 있다고 가정합니다. 예를 들어 AEM에 로그인한 사람의 이메일 ID가 csimms@adobe.com 인 경우 ACS에서 e-메일이 csimms@adobe.com 인 프로필을 찾을 수 있습니다.
 
 REST API를 사용하여 ACS에서 프로필 정보를 가져오려면 다음 단계가 필요합니다
 
@@ -28,7 +28,7 @@ REST API를 사용하여 ACS에서 프로필 정보를 가져오려면 다음 �
 * 액세스 토큰용 Exchange JWT
 * ACS에 REST 호출을 수행하고 이메일로 프로필 가져오기
 * 프로필 정보를 사용하여 XML 문서 작성
-* AEM Forms에서 사용할 XML 문서의 InputStream 반환
+* AEM Forms에서 사용하는 XML 문서의 InputStream 반환
 
 ![프리플서비스](assets/prefillserviceaf.gif)
 

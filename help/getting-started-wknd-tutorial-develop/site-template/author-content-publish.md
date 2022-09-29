@@ -11,10 +11,10 @@ level: Beginner
 kt: 7497
 thumbnail: KT-7497.jpg
 exl-id: 17ca57d1-2b9a-409c-b083-398d38cd6a19
-source-git-commit: 0225b7f2e495d5c020ea5192302691e3466808ed
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '1333'
-ht-degree: 2%
+source-wordcount: '1330'
+ht-degree: 3%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 사용자가 웹 사이트의 컨텐츠를 업데이트하는 방법을 이해하는 것이 중요합니다. 이 장에서는 **컨텐츠 작성자** 그리고 이전 장에서 생성된 사이트에 대한 편집 업데이트를 만듭니다. 이 장의 끝에 변경 사항을 게시하여 라이브 사이트가 어떻게 업데이트되는지 이해하겠습니다.
 
-## 전제 조건 {#prerequisites}
+## 사전 요구 사항 {#prerequisites}
 
 이 내용은 여러 부분으로 구성된 자습서이며 [사이트 만들기](./create-site.md) 장이 완료되었습니다.
 
@@ -59,7 +59,7 @@ ht-degree: 2%
 
 AEM 구성 요소는 웹 페이지의 작은 모듈식 빌딩 블록으로 생각할 수 있습니다. UI를 논리 청크 또는 구성 요소로 분할하여 관리하는 것이 훨씬 쉬워집니다. 구성 요소를 다시 사용하려면 구성 요소를 구성해야 합니다. 이 작업은 작성 대화 상자를 통해 수행됩니다.
 
-AEM에서는 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR) 프로덕션 준비 단계입니다. 다음 **핵심 구성 요소** 다음과 같은 기본 요소에서 범위 확장 [텍스트](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html) 및 [이미지](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) 와 같은 더 복잡한 UI 요소를 [회전판](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html).
+AEM에서는 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 프로덕션 준비 단계입니다. 다음 **핵심 구성 요소** 다음과 같은 기본 요소에서 범위 확장 [텍스트](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html) 및 [이미지](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) 와 같은 더 복잡한 UI 요소를 [회전판](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html).
 
 다음으로, AEM 페이지 편집기를 사용하여 몇 가지 구성 요소를 작성합니다.
 
@@ -87,7 +87,7 @@ AEM에서는 [핵심 구성 요소](https://experienceleague.adobe.com/docs/expe
 
    ![대화 상자에 자산 추가](assets/author-content-publish/add-asset-dialog.png)
 
-1. 다음과 같은 구성 요소가 페이지에 있는지 확인합니다. **제목**, **탐색**, **검색** 수정되었습니다. 이러한 영역은 페이지 템플릿의 일부로 구성되며 개별 페이지에서 수정할 수 없습니다. 다음 장에서 더 많은 연구가 있을 것이다.
+1. 다음과 같은 구성 요소가 페이지에 있는지 확인합니다. **제목**, **탐색**, **검색** 수정되었습니다. 이러한 영역은 페이지 템플릿의 일부로 구성되며 개별 페이지에서 수정할 수 없습니다. 이것은 다음 장에서 더 많은 것을 탐구하고 있다.
 
 다른 구성 요소를 자유롭게 사용해 보십시오. 각각에 대한 설명서 [코어 구성 요소는 여기에서 찾을 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html). 에 대한 자세한 비디오 시리즈 [페이지 작성은 여기에서 찾을 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/aem-sites-authoring-overview.html).
 
@@ -112,7 +112,7 @@ AEM 환경은 **작성자 서비스** 그리고 **게시 서비스**. 이 장에
 1. AEM 시작 화면에서 로 이동합니다. **Sites** 을(를) 선택하고 을(를) 선택합니다. **WKND 사이트**.
 1. 을(를) 클릭합니다. **게시 관리** 메뉴 모음에서 를 클릭합니다.
 
-   ![게시물 관리](assets/author-content-publish/click-manage-publiciation.png)
+   ![게시 관리](assets/author-content-publish/click-manage-publiciation.png)
 
    이 사이트에서는 완전히 새로운 사이트이므로 모든 페이지를 게시하려고 하며 게시 관리 마법사를 사용하여 게시해야 하는 사항을 정확하게 정의할 수 있습니다.
 

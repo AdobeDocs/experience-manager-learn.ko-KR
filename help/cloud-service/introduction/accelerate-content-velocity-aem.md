@@ -3,9 +3,9 @@ title: AEM 스타일 시스템을 사용하여 컨텐츠 속도 향상
 description: AEM 스타일 시스템을 사용하여 조직의 디자이너, 콘텐츠 작성자 및 개발자가 고객이 기대하는 속도와 규모에 따라 경험을 만들고 게재하는 방법을 알아봅니다.
 solution: Experience Manager
 exl-id: 449cd133-6ab6-456e-a0ad-30e3dea9b75b
-source-git-commit: 471f0fe940abb8241428beb14896d83e140136b3
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '830'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ AEM 스타일 시스템의 4가지 주요 이점은 다음과 같습니다.
 
 5단계 설정은 표준 구성 요소 개발 워크플로우와 매우 유사합니다.
 
-| **리더십** | **디자이너** | **개발자 / 아키텍트** | **템플릿 작성자** | **컨텐츠 작성자** |
+| **리더십** | **디자이너** | **개발자 / 아키텍트** | **템플릿 작성자** | **콘텐츠 작성자** |
 | --- | --- | --- | --- | --- |
 | 해당 구성 요소에 대한 컨텐츠 및 목표를 결정합니다 | 컨텐츠의 시각적 및 경험적 표현 결정 | 경험을 지원하도록 CSS 및 JS를 개발합니다. 사용할 클래스 이름을 정의하고 제공합니다. | 개발자가 정의한 CSS 클래스 이름을 추가하여 스타일이 지정된 구성 요소에 대한 템플릿 정책을 구성합니다. 사용자에게 친숙한 이름은 각 스타일에 대해 활용해야 합니다. | 페이지를 작성하는 동안 필요에 따라 스타일을 적용하여 원하는 모양과 느낌을 얻을 수 있습니다 |
 
@@ -92,4 +92,4 @@ AEM 스타일 시스템의 4가지 주요 이점은 다음과 같습니다.
 
 자세한 내용은 [고객 성공 웨비나](https://adobecustomersuccess.adobeconnect.com/pob610c9mffjmp4/) 윌 브리즈번과 조셉 반 부시커크와 함께.
 
-Adobe Analytics Mobile Apps에서 전략 및 사고 리더십에 대해 자세히 알아보십시오 [고객 성공](https://experienceleague.corp.adobe.com/docs/customer-success/customer-success/overview.html) 허브.
+Adobe Analytics Mobile Apps에서 전략 및 사고 리더십에 대해 자세히 알아보십시오 [고객 성공](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html) 허브.

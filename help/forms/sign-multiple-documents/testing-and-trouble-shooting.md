@@ -1,33 +1,33 @@
 ---
 title: 여러 문서 솔루션 서명 문제 해결
 description: 해결 방법을 테스트하고 문제 발생
-feature: 적응형 양식
+feature: Adaptive Forms
 version: 6.4,6.5
 kt: 6960
 thumbnail: 6960.jpg
-topic: 개발
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 99cba29e-4ae3-4160-a4c7-a5b6579618c0
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 1%
+source-wordcount: '388'
+ht-degree: 0%
 
 ---
-
 
 # 테스트 및 문제 해결
 
 
 ## 재재무 양식 미리 보기
 
-사용 사례는 고객 서비스 에이전트가 [재재무 양식](http://localhost:4502/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled)을 작성하고 제출하면 트리거됩니다.
+사용 사례는 고객 서비스 에이전트가 채우고 제출하면 트리거됩니다 [재무 양식](http://localhost:4502/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled).
 
 여러 Forms 서명 워크플로우는 이 양식 제출에서 트리거되고 고객은 양식 작성 및 서명 프로세스를 시작할 수 있는 링크가 포함된 이메일 알림을 받게 됩니다.
 
 ## 패키지에 양식 작성
 
-고객이 패키지의 첫 양식을 작성하고 서명하도록 표시됩니다. 양식 서명에 성공하면 고객이 패키지의 다음 양식으로 이동할 수 있습니다. 모든 양식을 작성하고 서명하면 고객에게 &quot;**AllDone**&quot; 양식이 표시됩니다.
+고객이 패키지의 첫 양식을 작성하고 서명하도록 표시됩니다. 양식 서명에 성공하면 고객이 패키지의 다음 양식으로 이동할 수 있습니다. 모든 양식을 작성하고 서명하면 고객에게 &quot;**모두 완료**&quot; 양식&quot;을 참조하십시오.
 
 ## 문제 해결
 
@@ -49,15 +49,4 @@ ht-degree: 1%
 
 ### AllDone 양식이 표시되지 않음
 
-패키지에 로그인할 양식이 더 없으면 AllDone 양식이 사용자에게 표시됩니다.AllDone 양식이 표시되지 않으면 **getnextform** 클라이언트 라이브러리의 일부인 GetNextFormToSign.js 파일의 33행에 사용된 URL을 확인하십시오.
-
-
-
-
-
-
-
-
-
-
-
+패키지에 로그인할 양식이 더 이상 없으면 AllDone 양식이 사용자에게 표시됩니다.AllDone 양식이 표시되지 않으면 GetNextFormToSign.js 파일의 33행에 사용된 URL을 확인하십시오 **getnextform** client lib.

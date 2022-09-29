@@ -11,9 +11,9 @@ topic: Security
 role: Developer
 level: Intermediate
 exl-id: 6009d9cf-8aeb-4092-9e8c-e2e6eec46435
-source-git-commit: 41be8c934bba16857d503398b5c7e327acd8d20b
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '910'
 ht-degree: 1%
 
 ---
@@ -39,9 +39,9 @@ CORS 구성은 AEM에서 OSGi 구성 팩토리로 관리되며 각 정책은 팩
 * `Allowed Origin` 사용 `Origin` 요청 헤더
 * 및 `Allowed Paths` 를 요청 경로로 사용합니다.
 
-이러한 값과 일치하는 첫 번째 정책이 사용됩니다. 찾을 수 없으면 아무 것도 없습니다. [!DNL CORS] 요청이 거부됩니다.
+이러한 값과 일치하는 첫 번째 정책이 사용됩니다. 찾을 수 없으면 아무 것도 없습니다. [!DNL CORS] 요청이 거부되었습니다.
 
-구성된 정책이 없으면 [!DNL CORS] 처리기가 비활성화되므로 서버의 다른 모듈이 [!DNL CORS].
+구성된 정책이 없으면 [!DNL CORS] 처리기가 비활성화되어 있으므로 서버의 다른 모듈이 [!DNL CORS].
 
 ### 정책 속성
 
@@ -155,7 +155,7 @@ CORS 헤더의 캐싱을 허용하려면 다음 구성을 모든 지원 AEM Publ
 
 잊지 말고 **웹 서버 응용 프로그램 다시 시작** 변경한 후 `dispatcher.any` 파일.
 
-따라서 캐시가 완전히 지워지려면 헤더가 다음 요청 시 적절히 캐시되도록 해야 할 것입니다. `/cache/headers` 구성 업데이트.
+따라서, 다음 요청 시 헤더가 적절하게 캐시되도록 하려면 캐시를 완전히 지우는 것이 필요할 수 있습니다. `/cache/headers` 구성 업데이트.
 
 ## CORS 문제 해결
 

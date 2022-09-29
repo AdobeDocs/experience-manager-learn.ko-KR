@@ -2,18 +2,18 @@
 title: AEM Assets Dynamic Media에서 파노라마 및 세로 이미지 뷰어 사용
 description: AEM 6.4의 Dynamic Media 뷰어 개선 사항에는 파노라마 이미지 뷰어, 파노라마 가상 실제 이미지 뷰어 및 세로 이미지 뷰어가 추가되었습니다. 파노라마 뷰어를 사용하면 사용자 정의 개발 없이 공간, 속성, 위치 또는 조경에 대한 매력적인 경험을 손쉽게 전달할 수 있습니다.
 sub-product: dynamic-media
-feature: 비디오 프로필, 비디오 프로필, 360 VR 비디오
+feature: Video Profiles, Video Profiles, 360 VR Video
 version: 6.4, 6.5
-topic: 컨텐츠 관리
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 6b2f7533-8ce0-4134-b1ae-b3c5d15a05e6
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 3%
+source-wordcount: '533'
+ht-degree: 2%
 
 ---
-
 
 # AEM Assets Dynamic Media에서 파노라마 및 세로 이미지 뷰어 사용{#using-panorama-and-vertical-image-viewer-with-aem-assets-dynamic-media}
 
@@ -27,7 +27,7 @@ AEM 6.4의 Dynamic Media 뷰어 개선 사항에는 파노라마 이미지 뷰�
 
 ## 파노라마 및 파노라마 VR 뷰어
 
-이미지는 종횡비나 키워드에 따라 파노라마로 간주됩니다. 기본적으로 종횡비가 2인 이미지는 파노라마 이미지로 간주됩니다. 위의 기준을 충족하면 이미지 미리 보기에 파노라마 이미지 뷰어 사전 설정을 사용할 수 있습니다. 파노라마 이미지 종횡비 기준은 /conf/global/settings/cloudconfigs/dmscene7/jcr:content에서 이중 속성 s7PanasonicAR을 지정하여 회사의 DMS7 구성에서 수정할 수 있습니다. 키워드는 자산 메타데이터 노드의 dc:keyword 속성에 저장됩니다. 키워드에 다음 조합 중 하나가 포함되어 있는 경우:
+이미지는 종횡비나 키워드에 따라 파노라마로 간주됩니다. 기본적으로 종횡비가 2인 이미지는 파노라마 이미지로 간주됩니다. 파노라마 이미지 뷰어 사전 설정이 위의 기준을 충족하는 경우 이미지 미리 보기에 사용할 수 있게 됩니다. 파노라마 이미지 종횡비 기준은 /conf/global/settings/cloudconfigs/dmscene7/jcr:content에서 이중 속성 s7PanasonicAR을 지정하여 회사의 DMS7 구성에서 수정할 수 있습니다. 키워드는 자산 메타데이터 노드의 dc:keyword 속성에 저장됩니다. 키워드에 다음 조합 중 하나가 포함되어 있는 경우:
 
 * 정사각형,
 * 구형 + 파노라마

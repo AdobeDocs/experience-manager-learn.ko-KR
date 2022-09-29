@@ -8,9 +8,9 @@ level: Beginner
 kt: 7635
 thumbnail: kt-7635.jpeg
 exl-id: e5e6204c-d88c-4e79-a7f4-0cfc140bc51c
-source-git-commit: fe056006ab59a3955e5f16a23e96e9e208408cf5
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '1169'
+source-wordcount: '1167'
 ht-degree: 2%
 
 ---
@@ -323,4 +323,4 @@ SPA이 업데이트되어 가 포함된 후 `<AEMResponsiveGrid...>`, 3개의 AE
 
 ## 다음 단계
 
-다음 단계에서는 다음과 같은 기술을 사용하여 [Adventure Details 경로에 편집 가능한 구성 요소 추가](./spa-dynamic-routes.md) SPA에서 확인하십시오.
+다음 단계에서는 다음과 같은 기술을 사용하여 다음을 수행합니다 [Adventure Details 경로에 편집 가능한 구성 요소 추가](./spa-dynamic-routes.md) SPA에서 확인하십시오.

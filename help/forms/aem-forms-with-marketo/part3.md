@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 7096340b-8ccf-4f5e-b264-9157232e96ba
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '378'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ AEM Forms 데이터 통합을 사용하면 서로 다른 데이터 소스를 구
 1. SOAP 기반 웹 서비스
 1. OData 서비스
 
-AEM Forms과 Marketo을 통합하기 위해 RESTful 웹 서비스를 사용할 것입니다. 통합에서 첫 번째 단계는 [데이터 소스.](https://helpx.adobe.com/experience-manager/6-4/forms/using/configure-data-sources.html#ConfigureRESTfulwebservices) 이 자습서의 일부로 제공된 swagger 파일을 사용하십시오. 다음 스크린샷은 데이터 소스를 구성하는 동안 지정해야 하는 중요한 속성을 보여줍니다.
+AEM Forms과 Marketo을 통합하기 위해 RESTful 웹 서비스를 사용합니다. 통합에서 첫 번째 단계는 [데이터 소스.](https://helpx.adobe.com/experience-manager/6-4/forms/using/configure-data-sources.html#ConfigureRESTfulwebservices) 이 자습서의 일부로 제공된 swagger 파일을 사용하십시오. 다음 스크린샷은 데이터 소스를 구성하는 동안 지정해야 하는 중요한 속성을 보여줍니다.
 ![데이터 소스](assets/datasource.jfif)
 
 &quot;marketo.json&quot;은 swagger 파일이며 이 자습서 자산의 일부로 제공됩니다.

@@ -10,10 +10,10 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 6c5373db-86ec-410b-8a3b-9d4f86e06812
-source-git-commit: cd7cb89f407f5e0c465544593563534472daf928
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
 source-wordcount: '981'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -183,7 +183,7 @@ AEM 지속적인 쿼리는 HTTP GET을 통해 실행되므로 Apollo와 같은 H
 1. 공용 함수는 전용 함수를 호출합니다 `makeRequest(..)` 는 AEM Headless에 대한 비동기 HTTP GET 요청을 호출하고 JSON 데이터를 반환합니다.
 1. 각 공용 함수는 JSON 데이터를 디코딩하고 필요한 검사나 변형을 수행한 후 Adventure 데이터를 보기로 반환합니다.
 
-+ AEM GraphQL JSON 데이터는 `AEM/Models.swift`: JSON 개체에 매핑되어 내 AEM Headless를 반환했습니다.
+   + AEM GraphQL JSON 데이터는 `AEM/Models.swift`: JSON 개체에 매핑되어 내 AEM Headless를 반환했습니다.
 
 ```swift
     /// # getAdventures(..)

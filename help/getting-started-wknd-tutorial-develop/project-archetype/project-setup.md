@@ -12,9 +12,9 @@ mini-toc-levels: 1
 kt: 3418
 thumbnail: 30152.jpg
 exl-id: bb0cae58-79bd-427f-9116-d46afabdca59
-source-git-commit: d49dbfae3292f93b7f63f424731966934dc6a5ba
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '1847'
+source-wordcount: '1838'
 ht-degree: 4%
 
 ---
@@ -159,7 +159,7 @@ AEM용 Maven 다중 모듈 프로젝트를 만드는 두 가지 옵션이 있습
 
 1. 로컬 AEM 인스턴스의 패키지 관리자로 이동합니다. [http://localhost:4502/crx/packmgr/index.jsp](http://localhost:4502/crx/packmgr/index.jsp). 에 대한 패키지가 표시됩니다. `aem-guides-wknd.ui.apps`, `aem-guides-wknd.ui.config`, `aem-guides-wknd.ui.content`, 및 `aem-guides-wknd.all`.
 
-1. 사이트 콘솔로 이동합니다. [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content). WKND 사이트가 사이트 중 하나가 됩니다. 여기에는 미국 및 언어 마스터 계층 구조를 가진 사이트 구조가 포함됩니다. 이 사이트 계층 은 `language_country` 및 `isSingleCountryWebsite` 원형 을 사용하여 프로젝트를 생성하는 경우
+1. 사이트 콘솔로 이동합니다. [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content). WKND 사이트는 사이트 중 하나입니다. 여기에는 미국 및 언어 마스터 계층 구조를 가진 사이트 구조가 포함됩니다. 이 사이트 계층 은 `language_country` 및 `isSingleCountryWebsite` 원형 을 사용하여 프로젝트를 생성하는 경우
 
 1. 를 엽니다. **미국** `>` **영어** 페이지를 선택하고 **편집** 메뉴 모음의 단추:
 
@@ -254,7 +254,7 @@ AEM 프로젝트 원형 은 샘플을 생성합니다 `.gitignore` 파일을 안
 
 ### Ui.apps 및 Ui.content 모듈 {#apps-content-module}
 
-다음 **[ui.apps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uiapps.html)** maven 모듈에는 아래의 사이트에 필요한 모든 렌더링 코드가 포함되어 있습니다 `/apps`. [clientlib이라는 AEM 포맷으로 저장되는 CSS/JS가 여기에 포함됩니다](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html). 여기에는 다음과 같은 항목이 포함되어 있습니다 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=ko-KR) 동적 HTML 렌더링용 스크립트 이 경우 **ui.apps** 모듈이 JCR의 구조에 매핑되지만 파일 시스템에 저장하고 소스 제어에 커밋할 수 있는 형식으로 매핑됩니다. 다음 **ui.apps** 모듈에는 코드만 포함되어 있습니다.
+다음 **[ui.apps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uiapps.html)** maven 모듈에는 아래의 사이트에 필요한 모든 렌더링 코드가 포함되어 있습니다 `/apps`. 여기에는 다음과 같은 AEM 형식으로 저장된 CSS/JS가 포함됩니다 [clientlibs](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html). 여기에는 다음과 같은 항목이 포함되어 있습니다 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=ko-KR) 동적 HTML 렌더링용 스크립트 이 경우 **ui.apps** 모듈이 JCR의 구조에 매핑되지만 파일 시스템에 저장하고 소스 제어에 커밋할 수 있는 형식으로 매핑됩니다. 다음 **ui.apps** 모듈에는 코드만 포함되어 있습니다.
 
 이 모듈만 빌드하려면
 
@@ -325,7 +325,7 @@ AEM 프로젝트 원형 은 샘플을 생성합니다 `.gitignore` 파일을 안
 
    포트에서 실행 중인 AEM 인스턴스가 없을 경우 다시 빌드 오류가 발생합니다 **4504년** 사용할 수 있습니다. 매개 변수 `aem.port` 의 POM 파일에 정의됩니다 `aem-guides-wknd/pom.xml`.
 
-다음 **[ui.content](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.html)** 모듈은 과 같은 방식으로 구조화됩니다 **ui.apps** 모듈. 유일한 차이점은 **ui.content** 모듈에는 **가변 가능** 컨텐츠 배포. **가변 가능** 컨텐츠는 기본적으로 소스 제어에 저장된 템플릿, 정책 또는 폴더 구조와 같은 비코드 구성을 나타냅니다 **그러나** AEM 인스턴스에서 직접 수정할 수 있습니다. 이 내용은 페이지 및 템플릿 장의 훨씬 더 자세히 살펴보겠습니다.
+다음 **[ui.content](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.html)** 모듈은 과 같은 방식으로 구조화됩니다 **ui.apps** 모듈. 유일한 차이점은 **ui.content** 모듈에는 **가변 가능** 컨텐츠 배포. **가변 가능** 컨텐츠는 기본적으로 소스 제어에 저장된 템플릿, 정책 또는 폴더 구조와 같은 비코드 구성을 나타냅니다 **그러나** AEM 인스턴스에서 직접 수정할 수 있습니다. 이는 페이지 및 템플릿 장의 보다 자세한 내용을 살펴봅니다.
 
 Maven 명령을 빌드하는 데 사용되는 것과 동일한 **ui.apps** 모듈을 사용하여 **ui.content** 모듈. 에서 위의 단계를 자유롭게 반복할 수 있습니다. **ui.content** 폴더를 입력합니다.
 

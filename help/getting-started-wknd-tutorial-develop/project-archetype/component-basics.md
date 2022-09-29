@@ -12,10 +12,10 @@ mini-toc-levels: 1
 kt: 4081
 thumbnail: 30177.jpg
 exl-id: 7fd021ef-d221-4113-bda1-4908f3a8629f
-source-git-commit: 25a1a40f42d37443db9edc0e09b1691b1c19e848
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '1146'
-ht-degree: 1%
+source-wordcount: '1145'
+ht-degree: 2%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 이 장에서는 간단한 방법을 통해 AEM(Adobe Experience Manager) 사이트 구성 요소의 기본 기술을 살펴봅니다 `HelloWorld` 예. 작성, HTL, Sling 모델, 클라이언트 측 라이브러리에 대한 주제를 다루는 기존 구성 요소에 대해 약간 수정됩니다.
 
-## 전제 조건 {#prerequisites}
+## 사전 요구 사항 {#prerequisites}
 
 설정에 필요한 도구 및 지침을 검토합니다. [로컬 개발 환경](./overview.md#local-dev-environment).
 
@@ -282,7 +282,7 @@ Sling 모델은 AEM 컨텍스트에서 개발 시 JCR에서 Java 변수로 데�
 
 클라이언트측 라이브러리인 clientlibs는 짧게 설명하며, AEM Sites 구현에 필요한 CSS 및 JavaScript 파일을 구성하고 관리하는 메커니즘을 제공합니다. 클라이언트측 라이브러리는 AEM의 페이지에 CSS 및 JavaScript를 포함하는 표준 방법입니다.
 
-다음 [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) 모듈이 탈결합되어 있다 [웹 팩](https://webpack.js.org/) 빌드 프로세스에 통합된 프로젝트입니다. 이를 통해 Sass, LESS 및 TypeScript와 같은 인기 있는 프런트 엔드 라이브러리를 사용할 수 있습니다. 다음 `ui.frontend` 모듈은 보다 깊이 탐색됩니다 [클라이언트 측 라이브러리 장](/help/getting-started-wknd-tutorial-develop/project-archetype/client-side-libraries.md).
+다음 [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) 모듈이 탈결합되어 있다 [웹 팩](https://webpack.js.org/) 빌드 프로세스에 통합된 프로젝트입니다. 이를 통해 Sass, LESS 및 TypeScript와 같은 인기 있는 프런트 엔드 라이브러리를 사용할 수 있습니다. 다음 `ui.frontend` 모듈은 [클라이언트 측 라이브러리 장](/help/getting-started-wknd-tutorial-develop/project-archetype/client-side-libraries.md).
 
 다음으로, 의 CSS 스타일을 업데이트합니다 `HelloWorld` 구성 요소.
 

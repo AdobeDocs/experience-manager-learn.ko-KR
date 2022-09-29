@@ -14,10 +14,10 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 19a8917c-a1e7-4293-9ce1-9f4c1a565861
-source-git-commit: 631fef25620c84e04c012c8337c9b76613e3ad46
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '2380'
-ht-degree: 0%
+source-wordcount: '2372'
+ht-degree: 1%
 
 ---
 
@@ -35,11 +35,11 @@ AEM SPA Editor JS SDK를 사용하여 AEM(Adobe Experience Manager) 구성 요�
 
 ## 빌드할 내용
 
-이 장에서는 `Text` SPA 구성 요소가 AEM에 매핑됩니다 `Text`구성 요소. 새로운 `Image` SPA에서 사용하고 AEM에서 작성할 수 있는 SPA 구성 요소가 만들어집니다. 기본 제공되는 **레이아웃 컨테이너** 및 **템플릿 편집기** 모양새가 조금씩 다르다.
+이 장에서는 `Text` SPA 구성 요소가 AEM에 매핑됩니다 `Text`구성 요소. 새로운 `Image` SPA 구성 요소는 SPA에서 사용할 수 있고 AEM에서 작성할 수 있습니다. 기본 제공되는 **레이아웃 컨테이너** 및 **템플릿 편집기** 모양새가 조금씩 다르다.
 
 ![장 샘플 최종 작성](./assets/map-components/final-page.png)
 
-## 전제 조건
+## 사전 요구 사항
 
 설정에 필요한 도구 및 지침을 검토합니다. [로컬 개발 환경](overview.md#local-dev-environment).
 
@@ -86,15 +86,15 @@ AEM SPA Editor JS SDK를 사용하여 AEM(Adobe Experience Manager) 구성 요�
 1. SPA 코드로 이동하기 전에 AEM에서 제공하는 JSON 모델을 이해하는 것이 중요합니다. 로 이동합니다 [코어 구성 요소 라이브러리](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/text.html) 텍스트 구성 요소의 페이지를 확인합니다. 코어 구성 요소 라이브러리는 모든 AEM 코어 구성 요소의 예를 제공합니다.
 2. 을(를) 선택합니다 **JSON** 탭 - 예제 중 하나에 대해
 
-   ![Text JSON model](./assets/map-components/text-json.png)
+   ![텍스트 JSON 모델](./assets/map-components/text-json.png)
 
    다음 세 가지 속성이 표시됩니다. `text`, `richText`, 및 `:type`.
 
    `:type` 는 `sling:resourceType` AEM 구성 요소의 (또는 경로). 다음 값 `:type` 는 AEM 구성 요소를 SPA 구성 요소에 매핑하는 데 사용되는 것입니다.
 
-   `text` and `richText` are additional properties that will be exposed to the SPA component.
+   `text` 및 `richText` SPA 구성 요소에 노출되는 추가 속성입니다.
 
-### Inspect the Text component
+### 텍스트 구성 요소의 Inspect
 
 1. 새 터미널을 열고 `ui.frontend` 폴더 아래에 표시됩니다. 실행 `npm install` 그리고 `npm start` 시작하려면 **웹 팩 개발 서버**:
 
@@ -103,13 +103,13 @@ AEM SPA Editor JS SDK를 사용하여 AEM(Adobe Experience Manager) 구성 요�
    $ npm run start:mock
    ```
 
-   The `ui.frontend` module is currently set up to use the [mock JSON model](./integrate-spa.md#mock-json).
+   다음 `ui.frontend` 모듈이 현재 를 사용하도록 설정되어 있습니다. [샘플 JSON 모델](./integrate-spa.md#mock-json).
 
 2. 에 새 브라우저 창이 열려 있어야 합니다. [http://localhost:4200/content/wknd-spa-angular/us/en/home.html](http://localhost:4200/content/wknd-spa-angular/us/en/home.html)
 
    ![샘플 컨텐츠가 있는 웹 팩 개발 서버](assets/map-components/initial-start.png)
 
-3. In the IDE of your choice open up the AEM Project for the WKND SPA. 를 확장합니다. `ui.frontend` 모듈 및 파일 열기 **text.component.ts** 아래에 `ui.frontend/src/app/components/text/text.component.ts`:
+3. 선택한 IDE에서 WKND SPA용 AEM 프로젝트를 엽니다. 를 확장합니다. `ui.frontend` 모듈 및 파일 열기 **text.component.ts** 아래에 `ui.frontend/src/app/components/text/text.component.ts`:
 
    ![Text.js Angular 구성 요소 소스 코드](assets/map-components/vscode-ide-text-js.png)
 
@@ -146,7 +146,7 @@ AEM SPA Editor JS SDK를 사용하여 AEM(Adobe Experience Manager) 구성 요�
    };
    ```
 
-   The above code is responsible for determining when to render the placeholder in the AEM author environment. 만약 `isEmpty` 메서드 반환 **true** 그러면 자리 표시자가 렌더링됩니다.
+   위의 코드는 AEM 작성 환경에서 자리 표시자를 렌더링할 시기를 결정합니다. 만약 `isEmpty` 메서드 반환 **true** 그러면 자리 표시자가 렌더링됩니다.
 
 6. 마지막으로 `MapTo` ~line 53에서 호출:
 
@@ -154,7 +154,7 @@ AEM SPA Editor JS SDK를 사용하여 AEM(Adobe Experience Manager) 구성 요�
    MapTo('wknd-spa-angular/components/text')(TextComponent, TextEditConfig );
    ```
 
-   **MapTo** is provided by the AEM SPA Editor JS SDK (`@adobe/cq-angular-editable-components`). 경로 `wknd-spa-angular/components/text` 는 를 나타냅니다 `sling:resourceType` AEM 구성 요소의 일부입니다. 이 경로는 `:type` 이전에 살펴본 JSON 모델에 의해 노출됩니다. **MapTo** 는 JSON 모델 응답을 구문 분석하고 올바른 값을 `@Input()` SPA 구성 요소의 변수입니다.
+   **MapTo** 는 AEM SPA Editor JS SDK(`@adobe/cq-angular-editable-components`). 경로 `wknd-spa-angular/components/text` 는 를 나타냅니다 `sling:resourceType` AEM 구성 요소의 일부입니다. 이 경로는 `:type` 이전에 살펴본 JSON 모델에 의해 노출됩니다. **MapTo** 는 JSON 모델 응답을 구문 분석하고 올바른 값을 `@Input()` SPA 구성 요소의 변수입니다.
 
    AEM을 찾을 수 있습니다 `Text` 구성 요소 정의 `ui.apps/src/main/content/jcr_root/apps/wknd-spa-angular/components/text`.
 
@@ -211,11 +211,11 @@ SPA 코드로 이동하기 전에 AEM에서 제공하는 JSON 모델을 검사�
 
    ![이미지 코어 구성 요소 JSON](./assets/map-components/image-json.png)
 
-   속성 `src`, `alt`, 및 `title` 는 SPA을 채우는 데 사용됩니다. `Image` 구성 요소.
+   속성 `src`, `alt`, 및 `title` 는 SPA을 채우는 데 사용됩니다 `Image` 구성 요소.
 
    >[!NOTE]
    >
-   > 다른 이미지 속성이 노출되어 있습니다(`lazyEnabled`, `widths`)을 클릭하여 개발자가 적응형 및 지연 로드 구성 요소를 만들 수 있습니다. 이 자습서에 포함된 구성 요소는 간단하며 **not** 이러한 고급 속성을 사용합니다.
+   > 다른 이미지 속성이 노출되어 있습니다(`lazyEnabled`, `widths`)을 클릭하여 개발자가 적응형 및 지연 로드 구성 요소를 만들 수 있습니다. 이 자습서에 포함된 구성 요소는 간단하며 수행합니다 **not** 이러한 고급 속성을 사용합니다.
 
 2. IDE로 돌아가서 `en.model.json` at `ui.frontend/src/mocks/json/en.model.json`. 이 구성 요소는 프로젝트용 net-new 구성 요소이므로 이미지 JSON을 &quot;mock&quot;해야 합니다.
 
@@ -246,7 +246,7 @@ SPA 코드로 이동하기 전에 AEM에서 제공하는 JSON 모델을 검사�
 
    프로젝트에는 샘플 이미지가 포함되어 있습니다. `/mock-content/adobestock-140634652.jpeg` 와 함께 사용됩니다 **웹 팩 개발 서버**.
 
-   You can view the full [en.model.json here](https://github.com/adobe/aem-guides-wknd-spa/blob/Angular/map-components-solution/ui.frontend/src/mocks/json/en.model.json).
+   전체 항목을 볼 수 있습니다 [en.model.json 여기](https://github.com/adobe/aem-guides-wknd-spa/blob/Angular/map-components-solution/ui.frontend/src/mocks/json/en.model.json).
 
 3. 구성 요소에서 표시할 스톡 사진을 추가합니다.
 
@@ -332,13 +332,13 @@ SPA 코드로 이동하기 전에 AEM에서 제공하는 JSON 모델을 검사�
    >
    > 다음 `:host-context` 규칙: **중요** AEM SPA 편집기 자리 표시자가 올바르게 작동하도록 합니다. AEM 페이지 편집기에서 작성되기 위한 모든 SPA 구성 요소는 최소한으로 이 규칙이 필요합니다.
 
-6. Open `app.module.ts` and add the `ImageComponent` to the `entryComponents` array:
+6. 열기 `app.module.ts` 그리고 `ImageComponent` 변환 후 `entryComponents` 배열:
 
    ```js
    entryComponents: [TextComponent, PageComponent, ImageComponent],
    ```
 
-   Like the `TextComponent`, the `ImageComponent` is dynamically loaded, and must be included in the `entryComponents` array.
+   좋아요 `TextComponent`, `ImageComponent` 는 동적으로 로드되며, `entryComponents` 배열입니다.
 
 7. 시작 **웹 팩 개발 서버** 다음을 참조하십시오 `ImageComponent` 렌더링.
 
@@ -352,11 +352,11 @@ SPA 코드로 이동하기 전에 AEM에서 제공하는 JSON 모델을 검사�
 
    >[!NOTE]
    >
-   > **Bonus challenge**: Implement a new method to display the value of `title` as a caption beneath the image.
+   > **보너스 도전**: 새 메서드를 구현하여 값을 표시합니다. `title` 이미지 아래에 있는 캡션으로 사용됩니다.
 
 ## AEM에서 정책 업데이트
 
-The `ImageComponent` component is only visible in the **webpack dev server**. Next, deploy the updated SPA to AEM and update the template policies.
+다음 `ImageComponent` 구성 요소는 **웹 팩 개발 서버**. 그런 다음 업데이트된 SPA을 AEM에 배포하고 템플릿 정책을 업데이트합니다.
 
 1. 를 중지합니다. **웹 팩 개발 서버** 그리고 **루트** 프로젝트 중 Maven 기술을 사용하여 AEM에 변경 사항을 배포합니다.
 
@@ -369,19 +369,19 @@ The `ImageComponent` component is only visible in the **webpack dev server**. Ne
 
    을(를) 선택하고 편집합니다 **SPA 페이지**:
 
-   ![Edit SPA Page Template](assets/map-components/edit-spa-page-template.png)
+   ![SPA 페이지 템플릿 편집](assets/map-components/edit-spa-page-template.png)
 
-3. Select the **Layout Container** and click it&#39;s **policy** icon to edit the policy:
+3. 을(를) 선택합니다 **레이아웃 컨테이너** 그리고 **정책** 아이콘을 사용하여 정책을 편집합니다.
 
-   ![Layout Container Policy](./assets/map-components/layout-container-policy.png)
+   ![레이아웃 컨테이너 정책](./assets/map-components/layout-container-policy.png)
 
 4. 아래 **허용된 구성 요소** > **WKND SPA Angular - 컨텐츠** > check **이미지** 구성 요소:
 
    ![이미지 구성 요소 선택](assets/map-components/check-image-component.png)
 
-   Under **Default Components** > **Add mapping** and choose the **Image - WKND SPA Angular - Content** component:
+   아래 **기본 구성 요소** > **매핑 추가** 그리고 **이미지 - WKND SPA Angular - 컨텐츠** 구성 요소:
 
-   ![Set default components](assets/map-components/default-components.png)
+   ![기본 구성 요소 설정](assets/map-components/default-components.png)
 
    을(를) 입력합니다. **mime 유형** 의 `image/*`.
 
@@ -465,11 +465,11 @@ The `ImageComponent` component is only visible in the **webpack dev server**. Ne
 
 ### 다음 단계 {#next-steps}
 
-[탐색 및 라우팅](navigation-routing.md) - SPA Editor SDK를 사용하여 AEM 페이지에 매핑하여 SPA에서 여러 개의 보기를 지원하는 방법을 알아봅니다. Dynamic navigation is implemented using Angular Router and added to an existing Header component.
+[탐색 및 라우팅](navigation-routing.md) - SPA Editor SDK를 사용하여 AEM 페이지에 매핑하여 SPA에서 여러 개의 보기를 지원하는 방법을 알아봅니다. 동적 탐색은 Angular 라우터를 사용하여 구현되고 기존 헤더 구성 요소에 추가됩니다.
 
 ## 보너스 - 소스 제어에 구성 유지 {#bonus}
 
-대부분의 경우, 특히 AEM 프로젝트 시작 시 템플릿 및 관련 컨텐츠 정책과 같은 구성을 소스 제어에 유지하는 것이 중요합니다. 이렇게 하면 모든 개발자가 동일한 컨텐츠 및 구성 세트에 대해 작업하고 있으므로 환경 간에 추가적인 일관성을 유지할 수 있습니다. Once a project reaches a certain level of maturity, the practice of managing templates can be turned over to a special group of power users.
+대부분의 경우, 특히 AEM 프로젝트 시작 시 템플릿 및 관련 컨텐츠 정책과 같은 구성을 소스 제어에 유지하는 것이 중요합니다. 이렇게 하면 모든 개발자가 동일한 컨텐츠 및 구성 세트에 대해 작업하고 있으므로 환경 간에 추가적인 일관성을 유지할 수 있습니다. 프로젝트가 일정 수준의 성숙기에 도달하면 템플릿 관리 방법을 특수 사용자 그룹으로 전환할 수 있습니다.
 
 다음 몇 단계는 Visual Studio 코드 IDE를 사용하여 수행됩니다. [VSCode AEM 동기화](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync) 그러나 사용자가 구성했던 모든 도구 및 IDE를 사용하여 **가져오기** 또는 **가져오기** AEM의 로컬 인스턴스에 있는 컨텐츠입니다.
 
@@ -485,7 +485,7 @@ The `ImageComponent` component is only visible in the **webpack dev server**. Ne
 
 4. 단계를 반복하여 컨텐츠를 가져오지만 **정책** 폴더 위치 `/conf/wknd-spa-angular/settings/wcm/policies`.
 
-5. Inspect the `filter.xml` file located at `ui.content/src/main/content/META-INF/vault/filter.xml`.
+5. Inspect `filter.xml` 에 있는 파일 `ui.content/src/main/content/META-INF/vault/filter.xml`.
 
    ```xml
    <!--ui.content filter.xml-->
@@ -498,6 +498,6 @@ The `ImageComponent` component is only visible in the **webpack dev server**. Ne
     </workspaceFilter>
    ```
 
-   The `filter.xml` file is responsible for identifying the paths of nodes that will be installed with the package. Notice the `mode="merge"` on each of the filters which indicates that existing content will not be modified, only new content is added. Since content authors may be updating these paths, it is important that a code deployment does **not** overwrite content. See the [FileVault documentation](https://jackrabbit.apache.org/filevault/filter.html) for more details on working with filter elements.
+   다음 `filter.xml` 파일은 패키지와 함께 설치된 노드의 경로를 식별해야 합니다. 다음 사항에 주의하십시오. `mode="merge"` 기존 컨텐츠가 수정되지 않음을 나타내는 각 필터에 새 컨텐츠만 추가됩니다. 컨텐츠 작성자는 이러한 경로를 업데이트할 수 있으므로 코드 배포가 수행하는 것이 중요합니다 **not** 콘텐츠를 덮어씁니다. 자세한 내용은 [FileVault 설명서](https://jackrabbit.apache.org/filevault/filter.html) 를 참조하십시오.
 
    비교 `ui.content/src/main/content/META-INF/vault/filter.xml` 및 `ui.apps/src/main/content/META-INF/vault/filter.xml` 각 모듈에서 관리하는 서로 다른 노드를 이해하기 위해

@@ -10,10 +10,11 @@ role: Developer
 level: Beginner
 kt: 9371
 thumbnail: 338680.jpg
-source-git-commit: 04096fe3c99cdcce2d43b2b29899c2bbe37ac056
+exl-id: 3155e0fa-56b7-4a52-8eef-fee488e95f68
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 1%
+source-wordcount: '405'
+ht-degree: 3%
 
 ---
 
@@ -21,7 +22,7 @@ ht-degree: 1%
 
 대부분의 경우, 새 웹 사이트를 계획하는 것은 모집단 및 정적 디자인부터 시작합니다. [Adobe XD](https://www.adobe.com/products/xd.html) 는 사용자 경험을 구축하기 위한 최상의 디자인 도구입니다. Adobe은 Adobe XD 또는 기타 도구를 사용하여 UI 조회 사용을 통해 사이트 구현을 계획하는 것을 권장합니다.
 
-## 전제 조건 {#prerequisites}
+## 사전 요구 사항 {#prerequisites}
 
 이 작업은 여러 부분으로 구성된 자습서이며 이전 장에 설명된 단계가 완료되었다고 가정합니다. 이 장은 단순히 보기 및 학습 부분일 뿐이며, 이후 장을 진행할 수 있는 조치를 취할 필요가 없습니다.
 
@@ -35,7 +36,7 @@ ht-degree: 1%
 
 ## 빌드할 내용 {#what-you-will-build}
 
-이 장에서는 두 개의 Adobe XD 파일을 검사하고, 하나는에서 검사할 것입니다 [표준 사이트 템플릿](https://github.com/adobe/aem-site-template-standard) 및 를 사용할 수 있습니다. The
+이 장에서는 두 Adobe XD 파일이 검사되며, 하나는에 사용됩니다 [표준 사이트 템플릿](https://github.com/adobe/aem-site-template-standard) 및 를 사용할 수 있습니다. The
 
 ## 표준 사이트 템플릿 UI 키트 {#standard-site-template-uikit}
 
@@ -66,4 +67,4 @@ ht-degree: 1%
 
 다음 장에서는 WKND 문서 디자인을 기반으로 새 페이지 템플릿을 만듭니다.
 
-만들기 및 수정 방법을 알아봅니다 [페이지 템플릿](./page-templates.md). 페이지 템플릿과 페이지 간의 관계를 이해합니다. 컨텐츠에 대한 세부적인 거버넌스 및 브랜드 일관성을 제공하기 위해 페이지 템플릿의 정책을 구성하는 방법을 알아봅니다.  잘 구성된 잡지 기사 템플릿은 Adobe XD의 모집단 을 기반으로 만들어집니다.
+만들기 및 수정 방법을 알아봅니다 [페이지 템플릿](./page-templates.md). 페이지 템플릿과 페이지 간의 관계를 이해합니다. 컨텐츠에 대한 세부적인 거버넌스 및 브랜드 일관성을 제공하기 위해 페이지 템플릿의 정책을 구성하는 방법을 알아봅니다.  잘 구성된 잡지 기사 템플릿은 Adobe XD의 모집단 을 기반으로 합니다.

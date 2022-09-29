@@ -8,16 +8,16 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: dd82f309-dd4e-42ce-8856-e51c898024f5
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '96'
+source-wordcount: '95'
 ht-degree: 0%
 
 ---
 
 # 양식 데이터를 저장할 서블릿
 
-다음 단계는 양식 데이터를 삽입하거나 업데이트할 서블릿을 만드는 것입니다. 서블릿은 데이터베이스를 삽입하거나 업데이트하기 위해 OSGi 서비스의 적절한 메서드를 호출합니다. 저장된 적응형 양식 데이터는 GUID와 연결됩니다. 그런 다음 양식 데이터를 업데이트하는 데 동일한 GUID를 사용합니다. 이 서블릿은 &quot;SaveAndContinueLater&quot; 단추를 클릭하면 호출됩니다.
+다음 단계는 양식 데이터를 삽입하거나 업데이트할 서블릿을 만드는 것입니다. 서블릿은 데이터베이스를 삽입하거나 업데이트하기 위해 OSGi 서비스의 적절한 메서드를 호출합니다. 저장된 적응형 양식 데이터는 GUID와 연결됩니다. 그런 다음 양식 데이터를 업데이트하는 데 동일한 GUID를 사용합니다. 이 서블릿은 &quot;SaveAndContinueLater&quot; 단추를 클릭할 때 호출됩니다.
 
 ```java
 package com.aemforms.saveandcontinue.core.servlets;

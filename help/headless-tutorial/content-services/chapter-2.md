@@ -8,9 +8,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 8b05fc02-c0c5-48ad-a53e-d73b805ee91f
-source-git-commit: cfb7ed39ecb85998192ba854b34161f7e1dba19a
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '962'
 ht-degree: 10%
 
 ---
@@ -84,7 +84,7 @@ AEM 컨텐츠 조각 모델은 AEM 작성자가 원시 컨텐츠 만들기를 �
 
 ![컨텐츠 조각 모델 만들기](assets/chapter-2/design-to-model-mapping.png)
 
-매핑을 사용하여 최종적으로 이벤트 데이터를 수집하고 표시하는 데 사용할 컨텐츠 조각을 정의할 수 있습니다.
+매핑을 사용하여 최종적으로 이벤트 데이터를 수집하고 표시하는 데 사용되는 컨텐츠 조각을 정의할 수 있습니다.
 
 ## 컨텐츠 조각 모델 만들기
 
@@ -173,7 +173,7 @@ AEM 컨텐츠 조각 모델은 AEM 작성자가 원시 컨텐츠 만들기를 �
 
 >[!NOTE]
 >
->다음 **[!UICONTROL 속성 이름]** 는 **둘 다** 이 값이 저장되는 JCR 속성 이름과 JSON 파일에 있는 키가 여기에 저장됩니다. 컨텐츠 조각 모델의 수명 동안 변경되지 않는 의미 있는 이름이어야 합니다.
+>다음 **[!UICONTROL 속성 이름]** 는 **둘 다** 이 값이 저장되는 JCR 속성 이름과 JSON 파일에 있는 키가 여기에 포함됩니다. 컨텐츠 조각 모델의 수명 동안 변경되지 않는 의미 있는 이름이어야 합니다.
 
 컨텐츠 조각 모델 만들기를 완료한 후에는 다음과 같은 정의가 표시됩니다.
 

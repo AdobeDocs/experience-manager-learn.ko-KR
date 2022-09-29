@@ -8,9 +8,9 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 exl-id: 790a33a9-b4f4-4568-8dfe-7e473a5b68b6
-source-git-commit: 68970493802c7194bcb3ac3ac9ee10dbfb0fc55d
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '1463'
+source-wordcount: '1464'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ AEM GraphQL API는 리치 텍스트를 HTML, 일반 텍스트 또는 순수 JSON
 
 다음을 수행할 수도 있습니다 [인라인 참조 활성화](#insert-fragment-references) 을 눌러 다른 컨텐츠 조각에 **조각 참조 허용** 및 구성 **허용된 컨텐츠 조각 모델**.
 
-을(를) 확인합니다. **번역 가능** 상자(컨텐츠를 현지화할 경우) 리치 텍스트 및 일반 텍스트만 현지화할 수 있습니다. 자세한 내용은 [자세한 내용은 현지화된 콘텐츠로 작업](./localized-content.md).
+을(를) 확인합니다. **번역 가능** 상자를 엽니다. 리치 텍스트 및 일반 텍스트만 현지화할 수 있습니다. 자세한 내용은 [자세한 내용은 현지화된 콘텐츠로 작업](./localized-content.md).
 
 ## GraphQL API를 사용한 리치 텍스트 응답
 
@@ -345,7 +345,7 @@ const nodeMap = {
 
 위의 스크린샷은 **자산 삽입** 버튼을 클릭합니다.
 
-다른 컨텐츠 조각에 대한 참조는 를 사용하여 여러 줄 필드에 연결하거나 삽입할 수도 있습니다. **컨텐츠 조각 삽입** 버튼을 클릭합니다.
+다른 컨텐츠 조각에 대한 참조는 를 사용하여 여러 줄 필드에 연결하거나 삽입할 수도 있습니다 **컨텐츠 조각 삽입** 버튼을 클릭합니다.
 
 ![컨텐츠 조각 참조 삽입](assets/rich-text/insert-contentfragment.png)
 

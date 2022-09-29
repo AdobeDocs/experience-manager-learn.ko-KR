@@ -15,9 +15,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: da613092-e03b-467c-9b9e-668142df4634
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '645'
 ht-degree: 2%
 
 ---
@@ -66,7 +66,7 @@ AEMForms Portal에서 목록에 대한 사용자 지정 자산 유형 활성화
 1. 의 오버레이 노드 만들기 **/libs/fd/fp/extensions/querybuilder/assettypes**
 
 1. 오버레이 위치를 &quot;/apps&quot;로 설정합니다.
-1. **/apps/fd/fp/extensions/querybuilder/assets 유형에서 만든 새 구조로 **
+1. 에서 만든 새 구조로 이동합니다. `/apps/fd/fp/extensions/querybuilder/assettypes`
 
 1. 이 위치에서 등록할 유형에 대해 &#39;nt:un구조화되지 않음&#39; 노드를 만들고 노드 이름을 지정합니다 **mp4파일. 이 mp4files 노드에 다음 두 속성을 추가합니다**
 
@@ -81,7 +81,7 @@ AEMForms Portal에서 목록에 대한 사용자 지정 자산 유형 활성화
    1. 이름: ./jcr:content/metadata/dc:format
    1. 값: video/mp4
 
-1. 즉, dc:format 속성이 비디오/mp4와 같은 속성을 갖는 자산은 &quot;Mp4 비디오&quot; 자산 유형으로 간주됩니다. 검색 기준에 대해 &quot;jcr:content/metadata&quot; 노드에 나열된 모든 속성을 사용할 수 있습니다
+1. 즉, dc:format 속성이 비디오/mp4와 동일한 자산을 자산 유형인 &quot;Mp4 비디오&quot;로 간주됩니다. 검색 기준에 대해 &quot;jcr:content/metadata&quot; 노드에 나열된 모든 속성을 사용할 수 있습니다
 
 1. **작업 내용을 저장해야 합니다**
 
@@ -91,4 +91,4 @@ AEMForms Portal에서 목록에 대한 사용자 지정 자산 유형 활성화
 
 [이 작업을 수행하는 데 문제가 있는 경우 다음 패키지를 가져올 수 있습니다.](assets/assettypeskt1.zip) 패키지에는 두 개의 사용자 지정 자산 유형이 정의되어 있습니다. Mp4 파일 및 Worddocuments. 다음을 살펴보십시오 **/apps/fd/fp/extensions/querybuilder/assettypes**
 
-[사용자 지정 포털 패키지 설치](assets/customportalpage.zip). 이 패키지에는 샘플 포털 페이지가 들어 있습니다. 이 페이지는 이 자습서의 2부에서 사용됩니다
+[사용자 지정 포털 패키지 설치](assets/customportalpage.zip). 이 패키지에는 샘플 포털 페이지가 들어 있습니다. 이 페이지는 이 자습서의 2부분에서 사용됩니다

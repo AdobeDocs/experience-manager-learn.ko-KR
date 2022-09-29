@@ -1,6 +1,6 @@
 ---
 title: 로컬 AEM 개발 환경 설정
-description: 'Experience Manager을 위한 로컬 개발 환경을 설정하는 방법을 알아봅니다. 로컬 설치, Apache Maven, 통합 개발 환경, 디버깅 및 문제 해결을 숙지하십시오. Eclipse IDE, CRXDE-Lite, Visual Studio Code 및 IntelliJ를 사용합니다. '
+description: Experience Manager을 위한 로컬 개발 환경을 설정하는 방법을 알아봅니다. 로컬 설치, Apache Maven, 통합 개발 환경, 디버깅 및 문제 해결을 숙지하십시오. Eclipse IDE, CRXDE-Lite, Visual Studio Code 및 IntelliJ를 사용합니다.
 version: 6.4, 6.5
 feature: Developer Tools
 topics: development
@@ -10,9 +10,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 58851624-71c9-4745-aaaf-305acf6ccb14
-source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '2579'
+source-wordcount: '2576'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ AEM, Adobe Experience Manager에 대한 로컬 개발 설정에 대한 안내서
 
 로컬 AEM 인스턴스를 참조할 때 개발자의 개인 컴퓨터에서 실행 중인 Adobe Experience Manager 사본에 대해 이야기하고 있습니다. ***모두*** AEM 개발은 로컬 AEM 인스턴스에 대해 코드를 작성하고 실행하는 것으로 시작해야 합니다.
 
-AEM을 처음 사용하는 경우 두 가지 기본 실행 모드를 설치할 수 있습니다. ***작성자*** 및 ***게시***. 다음 ***작성자*** [runmode](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/configure-runmodes.html)  는 디지털 마케터가 컨텐츠를 만들고 관리하는 데 사용할 환경입니다. 개발 시 **가장** 작성자 인스턴스에 코드를 배포할 때입니다. 구성 요소를 추가 및 구성할 수 있을 뿐만 아니라 새 페이지를 만들 수도 있습니다. AEM Sites은 WYSIWYG 작성 CMS이므로 대부분의 CSS 및 JavaScript를 작성 인스턴스에 대해 테스트할 수 있습니다.
+AEM을 처음 사용하는 경우 두 가지 기본 실행 모드를 설치할 수 있습니다. ***작성자*** 및 ***게시***. 다음 ***작성자*** [runmode](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/configure-runmodes.html)  는 디지털 마케터가 컨텐츠를 만들고 관리하는 데 사용할 환경입니다. 개발 시 **가장** 작성자 인스턴스에 코드를 배포하는 시간의 일부입니다. 구성 요소를 추가 및 구성할 수 있을 뿐만 아니라 새 페이지를 만들 수도 있습니다. AEM Sites은 WYSIWYG 작성 CMS이므로 대부분의 CSS 및 JavaScript를 작성 인스턴스에 대해 테스트할 수 있습니다.
 
 또한 *중요* 로컬 테스트 코드 ***게시*** 인스턴스. 다음 ***게시*** 인스턴스는 웹 사이트 방문자가 상호 작용하는 AEM 환경입니다. 반면에 ***게시*** 인스턴스는 ***작성자*** 예를 들어 구성 및 권한과 관련된 몇 가지 주요 차이점이 있습니다. 코드가 *항상* 그 지역에 대해 시험하다 ***게시*** 더 높은 수준 환경으로 승격되기 전의 인스턴스입니다.
 
@@ -191,7 +191,7 @@ IDE를 사용할 때는 반드시 확인하십시오 `classic` maven 프로필 �
 
 ## 문제 해결
 
-***도움말!*** 코드가 작동하지 않습니다! 모든 개발 상태에서 마찬가지로 코드가 예상대로 작동하지 않는 경우가 있을 수 있습니다. AEM은 강력한 플랫폼이지만 강력한 성능을 갖춘 매우 복잡한 플랫폼입니다. 다음은 문제 해결 및 추적 측면에서 볼 때 몇 가지 높은 수준의 시작 지점입니다(하지만 잘못될 수 있는 완전한 목록은 아님).
+***도움말!*** 코드가 작동하지 않습니다! 모든 개발에서 그렇듯이, 코드가 예상대로 작동하지 않는 경우가 가끔(아마도 많음) 있습니다. AEM은 강력한 플랫폼이지만 강력한 성능을 갖춘 매우 복잡한 플랫폼입니다. 다음은 문제 해결 및 추적 측면에서 볼 때 몇 가지 높은 수준의 시작 지점입니다(하지만 잘못될 수 있는 완전한 목록은 아님).
 
 ### 코드 배포 확인
 

@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: 8cae155c-c393-4ac3-a412-bf14fc411aac
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '243'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ AEM Forms 6.5.1부터 이제 오류 메시지를 캡처하고 유효성 검사 �
 * 양식 데이터 모델 서비스를 호출할 때 발생한 예외를 처리할 3개의 계층 유효성 검사(&quot;OFF&quot;, &quot;BASIC&quot; 및 &quot;FULL&quot;)에 대한 옵션을 제공합니다. 세 옵션은 데이터베이스 특정 요구 사항을 확인하는 더 엄격한 버전을 나타냅니다.
    ![유효성 검사 수준](assets/validation-level.PNG)
 
-* 워크플로우 실행 사용자 지정을 위한 확인란을 제공합니다. 따라서 양식 데이터 모델 호출 단계에서 예외가 발생하더라도 사용자는 워크플로우 실행을 계속 진행할 수 있습니다.
+* 워크플로우 실행 사용자 지정을 위한 확인란을 제공합니다. 따라서 이제 양식 데이터 모델 호출 단계에서 예외가 발생하는 경우에도 워크플로우 실행을 계속 진행할 수 있습니다.
 
 * 검증 예외로 인해 발생하는 오류에 대한 중요한 정보를 저장합니다. ErrorCode(String), ErrorMessage(String) 및 ErrorDetails(JSON)를 저장할 관련 변수를 선택하는 3개의 Autocomplete 유형 변수 선택기가 추가되었습니다. DermisValidationException이 아닌 경우 ErrorDetails는 null로 설정됩니다.
    ![오류 메시지 캡처](assets/fdm-error-details.PNG)
@@ -30,18 +30,11 @@ AEM Forms 6.5.1부터 이제 오류 메시지를 캡처하고 유효성 검사 �
 
 ```json
 {
-
-"errorCode": "AEM-FDM-001-049"
-
-"errorMessage": "Input validations failed during operation execution"
-
-"violations": {
-
-"/accountId": ["numeric instance is greater than the required maximum (maximum: 20, found: 97)"],
-
-"/newAccount/balance": ["instance type (string) does not match any allowed primitive type (allowed: [\"integer\",\"number\"])"]
-
-}
-
+    "errorCode": "AEM-FDM-001-049"
+    "errorMessage": "Input validations failed during operation execution"
+    "violations": {
+        "/accountId": ["numeric instance is greater than the required maximum (maximum: 20, found: 97)"],
+        "/newAccount/balance": ["instance type (string) does not match any allowed primitive type (allowed: [\"integer\",\"number\"])"]
+    }   
 }
 ```

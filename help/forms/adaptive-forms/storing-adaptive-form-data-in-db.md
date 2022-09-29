@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 3dd552da-fc7c-4fc7-97ec-f20b6cc33df0
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '414'
 ht-degree: 2%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 2%
 
    * &quot;JDBC 접속 풀&quot;을 검색합니다. 새 Day Commons JDBC 접속 풀을 생성합니다. 데이터베이스에 대한 설정을 지정합니다.
 
-   * ![jdbc 접속 풀](assets/aemformstutorial-jdbc.png)
+   * ![JDBC 연결 풀 OSGi 구성](assets/aemformstutorial-jdbc.png)
 
 ## 데이터베이스 세부 정보 지정
 
@@ -38,7 +38,7 @@ ht-degree: 2%
    * FormName - Form의 이름을 사용할 열 이름입니다.
    * ColumnName - AF 데이터를 저장할 열 이름
 
-![insertdata](assets/specify-database-details.png)
+   ![데이터베이스 세부 정보 OSGi 구성 지정](assets/specify-database-details.png)
 
 
 

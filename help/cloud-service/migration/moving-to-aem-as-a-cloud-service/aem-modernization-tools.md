@@ -8,10 +8,10 @@ level: Experienced
 kt: 8629
 thumbnail: 336965.jpeg
 exl-id: 310f492c-0095-4015-81a4-27d76f288138
-source-git-commit: 631fef25620c84e04c012c8337c9b76613e3ad46
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
 source-wordcount: '438'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 
@@ -91,4 +91,4 @@ AEM 현대화 도구는 기존 정적 템플릿, 기초 구성 요소 및 parsys
 
 
 1. 로컬 AEM SDK에 새롭게 현대화된 wknd-legacy 사이트를 배포합니다. AEM ASK는 여기에서 다운로드할 수 있습니다.
-+ [소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html).
+   + [소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html).

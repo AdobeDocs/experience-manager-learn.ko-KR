@@ -14,9 +14,9 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 197a0c1f-4d0a-4b99-ba89-cdff2e6ac4ec
-source-git-commit: 631fef25620c84e04c012c8337c9b76613e3ad46
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '2713'
+source-wordcount: '2712'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ AEM 페이지 및 SPA Editor SDK를 사용하여 SPA에서 여러 개의 보기�
 
 ![구현된 탐색](assets/navigation-routing/final-navigation-implemented.gif)
 
-## 전제 조건
+## 사전 요구 사항
 
 설정에 필요한 도구 및 지침을 검토합니다. [로컬 개발 환경](overview.md#local-dev-environment).
 
@@ -213,7 +213,7 @@ AEM 페이지 및 SPA Editor SDK를 사용하여 SPA에서 여러 개의 보기�
    }
    ```
 
-   아래 `:children` 만들어진 각 페이지에 대한 항목이 표시됩니다. 모든 페이지의 컨텐츠는 이 초기 JSON 요청에 있습니다. 탐색 라우팅이 구현되면 콘텐츠를 이미 클라이언트측에서 사용할 수 있으므로 SPA의 후속 보기가 빠르게 로드됩니다.
+   아래 `:children` 만들어진 각 페이지에 대한 항목이 표시됩니다. 모든 페이지의 컨텐츠는 이 초기 JSON 요청에 있습니다. 탐색 라우팅이 구현되면 컨텐츠를 이미 클라이언트측에서 사용할 수 있으므로 SPA의 후속 보기가 빠르게 로드됩니다.
 
    적재하는 것은 현명하지 않다 **모두** 초기 JSON 요청에 있는 SPA의 컨텐츠가 처리되면 초기 페이지 로드 속도가 느려집니다. 다음으로, 페이지의 계층 깊이가 수집되는 방식을 살펴보겠습니다.
 
@@ -313,7 +313,7 @@ AEM 페이지 및 SPA Editor SDK를 사용하여 SPA에서 여러 개의 보기�
    ":type": "wknd-spa-angular/components/header"
    ```
 
-   AEM 페이지의 계층 특성은 JSON에서 모델링되며 탐색 메뉴를 채우는 데 사용할 수 있습니다. 이 사실을 상기시켜 `Header` 구성 요소는 [탐색 코어 구성 요소](https://www.aemcomponents.dev/content/core-components-examples/library/core-structure/navigation.html) JSON을 통해 노출된 컨텐츠는 자동으로 Angular에 매핑됩니다 `@Input` 주석.
+   AEM 페이지의 계층 특성은 JSON에서 모델링되며 탐색 메뉴를 채우는 데 사용할 수 있습니다. 이 사실을 상기시켜 `Header` 구성 요소는 [탐색 코어 구성 요소](https://www.aemcomponents.dev/content/core-components-examples/library/core-structure/navigation.html) JSON을 통해 노출된 컨텐츠가 Angular에 자동으로 매핑됩니다 `@Input` 주석.
 
 2. 새 터미널 창을 열고 `ui.frontend` SPA 프로젝트의 폴더입니다. 새 만들기 `NavigationComponent` angular CLI 툴 사용:
 
@@ -637,7 +637,7 @@ AEM 페이지 및 SPA Editor SDK를 사용하여 SPA에서 여러 개의 보기�
 
    `AemPageMatcher` 사용자 지정 Angular 라우터입니다. [UrlMatcher](https://angular.io/api/router/UrlMatcher)를 검색하는 경우, 은 이 Angular 애플리케이션의 일부인 AEM의 페이지에 &quot;유사&quot;인 모든 항목에 일치합니다.
 
-   `PageComponent` 는 AEM의 페이지를 나타내는 Angular 구성 요소이며 일치하는 경로가 호출됩니다. 다음 `PageComponent` 추가 검사를 받게 됩니다.
+   `PageComponent` 은 AEM의 페이지를 나타내며 일치하는 경로를 렌더링하는 데 사용되는 Angular 구성 요소입니다. 다음 `PageComponent` 는 나중에 자습서에서 검토됩니다.
 
    `AemPageDataResolver`는 AEM SPA Editor JS SDK에서 제공하며, 사용자 지정 항목입니다. [Angular 라우터 확인자](https://angular.io/api/router/Resolve) .html 확장을 포함하여 AEM의 경로인 경로 URL을 확장이 없는 페이지 경로인 AEM의 리소스 경로로 변환하는 데 사용됩니다.
 

@@ -1,14 +1,14 @@
 ---
-title: '"1장 - 디스패처 개념, 패턴 및 안티패턴"'
+title: "1장 - 디스패처 개념, 패턴 및 안티패턴"
 description: 이 장에서는 Dispatcher의 역사와 역학에 대해 간략하게 설명하고 AEM 개발자가 어떻게 구성 요소를 설계하는지에 대해 설명합니다.
 feature: Dispatcher
 topic: Architecture
 role: Architect
 level: Beginner
 exl-id: 3bdb6e36-4174-44b5-ba05-efbc870c3520
-source-git-commit: 631fef25620c84e04c012c8337c9b76613e3ad46
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '17468'
+source-wordcount: '17460'
 ht-degree: 0%
 
 ---
@@ -198,7 +198,7 @@ URL에 접미사가 있을 때에도 동일한 규칙이 적용됩니다. 접미
 
 `http://domain.com/home.html/suffix.html`
 
-AEM에서는 절대적으로 유효합니다. 로컬 개발 시스템에서 Dispatcher가 없으면 문제가 표시되지 않습니다. UAT 또는 로드 테스트에서도 문제가 발생하지 않을 가능성이 높습니다. 우리가 직면하고 있는 문제는 너무 미묘하여 대부분의 시험을 통과한다.  가장 바쁜 시간에 가장 많은 영향을 받게 되며, 문제를 해결할 수 있는 시간이 제한되며, 서버 액세스 권한이 없거나 수정할 리소스가 없을 수 있습니다. 우린 계속..
+AEM에서는 절대적으로 유효합니다. 로컬 개발 시스템에서 Dispatcher가 없으면 문제가 표시되지 않습니다. UAT 또는 로드 테스트에서도 문제가 발생하지 않을 가능성이 높습니다. 우리가 직면하고 있는 문제는 너무 미묘하여 대부분의 시험을 통과한다.  처리 시간이 제한되어 있고 서버 액세스 권한이 없거나 수정할 리소스가 없을 때 문제를 해결할 수 있습니다. 우린 계속..
 
 그래서.. 뭐가 문제죠?
 
@@ -582,7 +582,7 @@ Dispatcher는 자동 무효화 스키마를 적용할지 여부를 파일 확장
 
 AEM 개발자의 관점에서 보면 그 패턴은 매우 우아해 보였다. 그러나 Dispatcher가 방정식을 취함에 따라 순진하게 대처하는 것으로는 충분하지 않을 수 있다는 것에 동의할지도 모릅니다.
 
-우리는 이것이 하나의 패턴인지 아니면 반패턴인지 결정하는 것을 여러분에게 맡깁니다. 그리고 아마도 여러분은 이미 위에서 설명한 문제들을 어떻게 완화시킬 수 있는지 염두에 두고 좋은 생각들을 가지고 있을 지도 모릅니다. 좋아 그럼 다른 프로젝트들이 이 문제를 어떻게 해결했는지 보고 싶어하실 겁니다.
+우리는 이것이 하나의 패턴인지 아니면 반패턴인지 결정하는 것을 여러분에게 맡깁니다. 그리고 아마도 여러분은 이미 위에서 설명한 문제들을 어떻게 완화시킬 수 있는지 염두에 두고 좋은 생각들을 가지고 있을 지도 모릅니다. 좋아 그렇다면 다른 프로젝트들이 이런 문제를 어떻게 해결했는지에 대해 열심히 해야 한다.
 
 ### 일반적인 Dispatcher 문제 해결
 
@@ -974,7 +974,7 @@ Allow: /content/dam/(-\_/a-z0-9)+/(-\_a-z0-9)+
 
 웹 보안을 위해 설계된 웹 응용 프로그램 방화벽 기기 또는 &quot;WAF&quot;가 있는 경우 이러한 기능을 반드시 활용해야 합니다. 그러나 WAF는 컨텐츠 애플리케이션에 대해 제한된 지식만 있는 사람이 운영하고 있으며 유효한 요청을 필터링하거나 너무 많은 유해 요청을 전달한다는 사실을 알게 될 수도 있습니다. 아마 WAF를 운영하는 사람들이 서로 다른 근무조와 릴리스 일정이 있는 다른 부서에 할당되어 있다는 사실을 알게 될 것입니다. 즉, 직접 팀원들과 커뮤니케이션이 그리 긴밀하지 않을 수도 있고, 시간에 따른 변화가 항상 일어나는 것은 아니라는 사실을 알게 될 것입니다. 즉, 사용자의 개발 및 컨텐츠 속도가 문제가 된다는 의미입니다.
 
-어떤 일반적인 규칙이나 심지어 여러분의 직감에서 말하는 차단 목록에 추가하다, 여러분의 확신 또한 강화될 수 있는 것으로 끝날 것입니다.
+어떤 일반적인 규칙이나 심지어 여러분의 직감에서 말하는 차단 목록에 추가하다, 여러분의 확신 또한 강화될 수 있습니다.
 
 #### 디스패처 및 게시 필터링
 
@@ -1526,7 +1526,7 @@ Dispatcher는 기본적으로 리소스를 제공할 때 권한을 확인하지 
 
 Dispatcher가 `grace period` 자동 무효화용. 이렇게 하면 내부적으로 `statfiles` 수정 날짜
 
-예를 들어, `statfile` 는 오늘 12:00의 수정 시간과 `gracePeriod` 이 2분으로 설정되어 있습니다. 그러면 모든 자동 무효화된 파일은 12:01과 12:02에 유효한 것으로 간주됩니다. 12시 2분 후에 다시 렌더링됩니다.
+예를 들어, `statfile` 는 오늘 12:00의 수정 시간과 `gracePeriod` 이 2분으로 설정되어 있습니다. 그러면 모든 자동 무효화된 파일은 12:01과 12:02에 유효한 것으로 간주됩니다. 12:02 이후에 다시 렌더링됩니다.
 
 참조 구성에서는 `gracePeriod` 2분 정도 있어야 합니다. &quot;2분? 거의 아무것도 아냐 컨텐츠가 표시될 때까지 10분을 쉽게 기다릴 수 있습니다...&quot;  따라서 컨텐츠가 10분 이상 후에 적어도 나타난다고 가정할 때 더 긴 기간을 설정하고 싶은 생각이 있을 수 있습니다. 예를 들어 10분.
 
@@ -1909,7 +1909,7 @@ Dispatcher 캐싱에 대한 좋은 개요 및 소개입니다. [https://helpx.ad
 
 모든 지시어가 포함된 Dispatcher 설명서 설명: [https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html)
 
-FAQ: [https://helpx.adobe.com/experience-manager/using/dispatcher-faq.html](https://helpx.adobe.com/kr/experience-manager/using/dispatcher-faq.html)
+FAQ: [https://helpx.adobe.com/experience-manager/using/dispatcher-faq.html](https://helpx.adobe.com/experience-manager/using/dispatcher-faq.html)
 
 Dispatcher 최적화에 대한 웨비나 기록 - 적극 권장: [https://my.adobeconnect.com/p7th2gf8k43?proto=true](https://my.adobeconnect.com/p7th2gf8k43?proto=true)
 

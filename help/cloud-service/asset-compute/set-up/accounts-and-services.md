@@ -13,9 +13,9 @@ topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 707657ad-221e-4dab-ac2a-46a4fcbc55bc
-source-git-commit: eb6a7ef343a43000855f8d5cc69bde0fae81d3e6
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '621'
 ht-degree: 1%
 
 ---
@@ -55,7 +55,7 @@ App Builder에 액세스하려면 미리 보기에 등록하십시오.
 
 1. [App Builder 체험판 등록](https://developer.adobe.com/app-builder/trial/).
 1. 자습서를 계속하기 전에 제공된다는 전자 메일을 통해 알림을 받을 때까지 약 2~10일을 기다립니다.
-   + 프로비저닝되었는지 확실하지 않은 경우 다음 단계를 계속 진행하여 대상자를 만들 수 없는 경우 __App Builder__ 프로젝트 [Adobe 개발자 콘솔](https://developer.adobe.com/console/) 아직 제공되지 않았습니다.
+   + 프로비저닝되었는지 확실하지 않은 경우 다음 단계를 계속 진행하여 대상자를 만들 수 없는 경우 __App Builder__ 프로젝트 [Adobe Developer 콘솔](https://developer.adobe.com/console/) 아직 제공되지 않았습니다.
 
 ## 클라우드 스토리지
 
@@ -78,7 +78,7 @@ _Azure Blob 저장소 프로비저닝의 클릭스루(오디오 없음)_
 1. 탭 __+ 추가__ 새 Blob 저장소 계정을 만들려면
 1. 새 만들기 __리소스 그룹__ 필요에 따라 다음을 수행합니다. 예를 들면 다음과 같습니다. `aem-as-a-cloud-service`
 1. 다음을 제공합니다. __저장소 계정 이름__, 예: `aemguideswkndassetcomput`
-   + 다음 __저장소 계정 이름__ 에 사용됩니다. [cloud 저장소 구성](../develop/environment-variables.md) 로컬 Asset compute 개발 도구
+   + 다음 __저장소 계정 이름__  사용됨 [cloud 저장소 구성](../develop/environment-variables.md) 로컬 Asset compute 개발 도구
    + 다음 __액세스 키__ 또한 스토리지 계정과 연결된 [cloud 저장소 구성](../develop/environment-variables.md).
 1. 다른 모든 항목을 기본값으로 두고 __검토 + 만들기__ 버튼
    + 원할 경우, __위치__ 가까이 있습니다.

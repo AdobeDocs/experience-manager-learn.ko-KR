@@ -8,9 +8,9 @@ level: Beginner
 kt: 7636
 thumbnail: kt-7636.jpeg
 exl-id: 4accc1ca-6f4b-449e-bf2e-06f19d2fe17d
-source-git-commit: fe056006ab59a3955e5f16a23e96e9e208408cf5
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '916'
 ht-degree: 1%
 
 ---
@@ -176,8 +176,3 @@ function AdventureDetail(props) {
 + 동적 발리 서프 캠프 경로에서 컨텐츠를 작성합니다!
 
 이제 AEM SPA Editor를 사용하여 특정 편집 가능한 영역을 Remote SPA에 추가하는 방법의 첫 번째 단계 탐색을 완료했습니다!
-
-
->[!NOTE]
->
->채널을 고정하세요! 이 자습서는 SPA 편집기 솔루션을 AEM as a Cloud Service 및 프로덕션 환경에 배포하는 방법에 대한 Adobe의 우수 사례 및 권장 사항을 포함하도록 확장됩니다.

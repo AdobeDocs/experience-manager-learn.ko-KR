@@ -7,10 +7,10 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: ce1793d1-f727-4bc4-9994-f495b469d1e3
-source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
 source-wordcount: '425'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -23,13 +23,13 @@ ht-degree: 0%
 
 이 사용 사례를 수행하려면 다음을 수행해야 합니다.
 
-* Reader 확장 인증서를 &quot;fd-service&quot; 사용자에게 추가합니다. Reader 확장 자격 증명을 추가하는 단계는 다음과 같습니다 [여기](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html?lang=en)
+* Reader 확장 인증서를 &quot;fd-service&quot; 사용자에게 추가합니다. Reader 확장 자격 증명을 추가하는 단계는 다음과 같습니다 [여기](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html?lang=ko)
 
 
 * 비디오에서 을 참조할 수도 있습니다 [확장 Reader 자격 증명 구성](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html)
 
 
-* 사용 권한을 렌더링하고 적용할 사용자 지정 OSGi 서비스를 만듭니다. 이를 수행할 코드는 다음과 같습니다
+* 사용 권한을 렌더링하고 적용하는 사용자 지정 OSGi 서비스를 만듭니다. 이를 수행할 코드는 다음과 같습니다
 
 ## XDP 렌더링 및 사용 권한 적용 {#render-xdp-and-apply-usage-rights}
 
@@ -83,7 +83,7 @@ ht-degree: 0%
 
 다음 스크린샷에서는 노출된 구성 속성을 보여줍니다. 대부분의 일반적인 사용 권한은 이 구성을 통해 노출됩니다.
 
-![](assets/configurationproperties.gif)
+![구성 속성](assets/configurationproperties.gif)
 
 다음 코드는 OSGi 구성 설정을 작성하는 데 사용되는 코드를 보여 줍니다
 

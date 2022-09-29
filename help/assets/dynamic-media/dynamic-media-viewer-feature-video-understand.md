@@ -1,6 +1,6 @@
 ---
 title: AEM Dynamic Media을 사용한 자산 뷰어 이해
-description: AEM Dynamic Media 뷰어 개선 사항을 사용하면 AEM 작성자가 경험 자산을 정의하고 사용자 정의할 수 있으며 웹 사이트 사용자에게 표시됩니다.
+description: AEM Dynamic Media 뷰어 개선 사항을 사용하면 AEM 작성자가 웹 사이트 사용자에게 자산을 표시하는 방법을 정의하고 사용자 지정할 수 있습니다.
 sub-product: dynamic media classic
 feature: Viewer Presets, Image Profiles
 version: 6.4, 6.5
@@ -8,16 +8,16 @@ topic: Content Management
 role: Developer
 level: Intermediate
 exl-id: db4fc561-2368-4df8-9b02-fc08afa00805
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '121'
+source-wordcount: '119'
 ht-degree: 0%
 
 ---
 
 # AEM Dynamic Media을 사용한 자산 뷰어 이해{#understanding-the-asset-viewer-with-aem-dynamic-media}
 
-AEM Dynamic Media 뷰어 개선 사항을 사용하면 AEM 작성자가 경험 자산을 정의하고 사용자 정의할 수 있으며 웹 사이트 사용자에게 표시됩니다.
+AEM Dynamic Media 뷰어 개선 사항을 사용하면 AEM 작성자가 웹 사이트 사용자에게 자산을 표시하는 방법을 정의하고 사용자 지정할 수 있습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17783/?quality=9&learn=on)
 

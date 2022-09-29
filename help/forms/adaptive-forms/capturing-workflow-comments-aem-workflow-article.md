@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 5c250bbb-bac6-427d-8aca-1fbb1229e02c
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '375'
 ht-degree: 0%
 
 ---
@@ -45,8 +45,8 @@ ht-degree: 0%
 
 * 받은 편지함에서 작업을 열고 양식을 제출합니다. 메시지가 표시되면 몇 가지 주석을 입력하십시오.
 
-주석은 crx에서 managerComments라는 메타데이터 속성에 저장됩니다. 주석이 crx에 관리자로 로그인하는지 확인하려면 다음을 수행하십시오. 워크플로우 인스턴스는 다음 경로에 저장됩니다
+주석은 `managerComments` AEM 저장소 내 아래에 표시됩니다. 주석이 crx에 관리자로 로그인하는지 확인하려면 다음을 수행하십시오. 워크플로우 인스턴스는 다음 경로에 저장됩니다.
 
-/var/workflow/instances/server0
+`/var/workflow/instances/server0`
 
 적절한 워크플로우 인스턴스를 선택하고 메타데이터 노드에서 속성 managerComments를 확인합니다.

@@ -1,22 +1,22 @@
 ---
 title: 폴더 구조 및 파일 이름 지정 규칙을 결정합니다
-description: Dynamic Media Classic을 구현할 때 파일 이름이 가장 중요한 결정일 수 있습니다. 폴더 구조도 마찬가지로 중요합니다. 폴더 구조 및 파일 이름에 적용할 수 있는 매우 중요하고 가능한 방법을 알아봅니다.
+description: 파일 이름 지정은 Dynamic Media Classic을 구현할 때 가장 중요한 결정일 수 있습니다. 폴더 구조도 마찬가지로 중요합니다. 폴더 구조 및 파일 이름에 적용할 수 있는 매우 중요하고 가능한 방법을 알아봅니다.
 sub-product: dynamic-media
 feature: Dynamic Media Classic
 doc-type: tutorial
 activity: develop
 topics: development, authoring, configuring, architecture
 audience: all
-topic: 컨텐츠 관리
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 15121896-9196-4ce0-aff2-9178563326b4
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1207'
 ht-degree: 0%
 
 ---
-
 
 # 폴더 구조 및 파일 이름 지정 규칙을 결정합니다 {#folder-structure-filenaming}
 
@@ -24,17 +24,17 @@ ht-degree: 0%
 
 ## 폴더 계층 구조 및 파일 이름 지정 규칙
 
-파일 이름은 일반적으로 Dynamic Media Classic 구현과 관련하여 결정하는 가장 중요한 사항입니다. 하지만 중요한 이유를 이해하려면 먼저 폴더 구조에 대해 이야기해 보겠습니다.
+파일 이름 지정은 일반적으로 Dynamic Media Classic 구현과 관련하여 가장 중요한 결정입니다. 하지만 중요한 이유를 이해하려면 먼저 폴더 구조에 대해 이야기해 보겠습니다.
 
 ### 폴더 계층
 
-폴더 계층 구조가 본인과 귀사에 조직적 목적으로만 중요합니다. Dynamic Media Classic URL은 폴더 또는 경로가 아닌 자산 이름만 참조합니다. 파일을 업로드하는 위치에 관계없이 URL은 동일합니다. 이는 대부분의 사람들이 웹용 이미지와 콘텐츠를 구성하는 방법과 매우 다르지만 Dynamic Media Classic을 사용하면 별 차이가 없습니다.
+폴더 계층 구조가 본인과 귀사에 조직적 목적으로만 중요합니다. Dynamic Media Classic URL은 폴더나 경로가 아닌 자산 이름만 참조합니다. 파일을 업로드하는 위치에 관계없이 URL은 동일합니다. 이는 대부분의 사람들이 웹을 위해 이미지와 콘텐츠를 구성하는 방법과 꽤 다르지만 Dynamic Media Classic을 사용하면 별 차이가 없습니다.
 
 다른 중요한 고려 사항은 각 폴더에 저장할 자산 또는 폴더의 수입니다. 많은 자산이 폴더에 저장되는 경우 Dynamic Media Classic에서 자산을 볼 때 성능이 저하됩니다. 폴더에 수천 개의 자산을 저장하지 마십시오. 대신, 계층 구조의 지정된 분기 내에서 약 500개 미만의 자산 또는 폴더를 사용하는 조직 계층을 개발하십시오. 이는 엄격한 요구 사항이 아니지만 자산을 보거나 검색할 때 허용 가능한 응답 시간을 유지하는 데 도움이 됩니다. 따라서 좁고 깊이가 아닌 넓고 얕은 계층을 만드는 것이 좋습니다.
 
-폴더를 만드는 가장 쉬운 방법은 FTP를 사용하여 전체 폴더 구조를 업로드하고 **하위 폴더 포함** 옵션을 활성화하는 것입니다. 이 옵션을 사용하면 Dynamic Media Classic에서 Dynamic Media Classic의 FTP 사이트에서 폴더 구조를 다시 만들 수 있습니다.
+폴더를 만드는 가장 쉬운 방법은 FTP를 사용하여 전체 폴더 구조를 업로드하고 옵션을 활성화하는 것입니다 **하위 폴더 포함**. 이 옵션을 사용하면 Dynamic Media Classic이 Dynamic Media Classic의 FTP 사이트에서 폴더 구조를 다시 만듭니다.
 
-Dynamic Media Classic보다 컴퓨터에서 파일 및 폴더를 로컬로 구성 및 관리하는 것이 훨씬 쉽기 때문에 모든 파일 업로드를 시작하기 전에 폴더 구조를 고려해 보십시오. 예를 들어 Dynamic Media Classic 내에서 파일을 드래그 앤 드롭할 수만 있고 전체 폴더는 삭제할 수 없습니다.
+Dynamic Media Classic 내부보다 컴퓨터에서 파일과 폴더를 로컬로 구성 및 관리하는 것이 훨씬 쉽기 때문에 모든 파일 업로드를 시작하기 전에 폴더 구조를 고려해 보십시오. 예를 들어 Dynamic Media Classic 내에서 파일을 드래그 앤 드롭할 수만 있고 전체 폴더는 삭제할 수 없습니다.
 
 ### 폴더 전략
 
@@ -46,9 +46,9 @@ Dynamic Media Classic보다 컴퓨터에서 파일 및 폴더를 로컬로 구�
 
 ## 파일 이름 지정 규칙
 
-Dynamic Media Classic에 대해 파일 이름을 지정하도록 선택하는 방법은 가장 중요한 초기 결정입니다. 이는 Dynamic Media Classic의 모든 자산에는 계정에 저장된 위치에 관계없이 고유한 이름이 있어야 하기 때문입니다.
+파일 이름을 지정하는 방법이 Dynamic Media Classic과 관련하여 가장 중요한 조기 결정일 수 있습니다. 이는 Dynamic Media Classic의 모든 자산에는 계정에 저장된 위치에 관계없이 고유한 이름이 있어야 하기 때문입니다.
 
-Dynamic Media Classic의 모든 URL 및 트랜잭션은 데이터베이스에서 자산의 고유 식별자인 자산 ID에 의해 파생됩니다. 파일을 업로드할 때 파일 이름을 가져와 확장을 제거하여 자산 ID가 만들어집니다. 예를 들어 _896649.jpg_&#x200B;은 자산 _ID 896649_&#x200B;을 가져옵니다.
+Dynamic Media Classic의 모든 URL 및 트랜잭션은 데이터베이스에서 자산의 고유 식별자인 자산 ID에 의해 파생됩니다. 파일을 업로드할 때 파일 이름을 가져와 확장을 제거하여 자산 ID가 만들어집니다. 예, _896649.jpg_ 자산 가져오기 _ID 896649_.
 
 자산 ID에 대한 규칙:
 
@@ -56,7 +56,7 @@ Dynamic Media Classic의 모든 URL 및 트랜잭션은 데이터베이스에서
 - 이름은 대/소문자를 구분합니다. 예를 들어, Chair.jpg, chair.jpg 및 CHAIR.jpg는 세 개의 다른 자산 ID를 만듭니다.
 - 자산 ID에는 공백 또는 기호가 포함되면 안 됩니다. 공백과 기호를 사용하면 이러한 문자를 URL로 인코딩해야 하므로 구현이 더 어렵습니다. 예를 들어 &quot; &quot; &quot; 공백은 &quot;%20&quot;이 됩니다.
 
-이름 지정 규칙은 기본적으로 Dynamic Media Classic과 통합하는 방법입니다. 일반적으로 백엔드 시스템은 폐쇄된 시스템이므로 Dynamic Media Classic에 통합하지 않습니다. URL 형식의 지침을 기다리는 수동 파트너입니다.
+이름 지정 규칙은 기본적으로 Dynamic Media Classic과 통합하는 방법입니다. 백오피스 시스템은 폐쇄된 시스템이므로 일반적으로 Dynamic Media Classic에 통합하지 않습니다. URL 형식의 지침을 기다리는 수동 파트너입니다.
 
 대부분의 사용자는 내부 SKU 또는 제품 ID를 기반으로 이름 지정 규칙을 만들어 웹 페이지가 해당 SKU에 대한 정보로 호출될 때 페이지가 유사한 이름이 있는 이미지를 자동으로 찾을 수 있도록 합니다. 파일 이름과 SKU 또는 ID가 연결되어 있지 않은 경우 백오피스 시스템은 각 파일 이름을 수동으로 추적해야 하며 사용자가 해당 연결을 유지 관리해야 합니다. 즉, IT와 콘텐츠 팀 모두에서 많은 작업을 수행해야 합니다.
 
@@ -75,7 +75,7 @@ Dynamic Media Classic의 모든 URL 및 트랜잭션은 데이터베이스에서
 
 **이미지 사용, 대체 보기, 색상 버전, 색상 견본** 이 전략은 대체 보기 및/또는 색상 보기가 있는 경우 이를 허용합니다. SKU만 이름을 지정한 후에 이미지의 이름을 지정하는 대신 대체 보기에 대해 &quot;_1&quot; 및 &quot;_2&quot;와 같은 수정자와 색상 보기에 대해 &quot;_RED&quot; 또는 &quot;_BLU&quot;의 색상 코드를 추가합니다. 동일한 제품에 대한 색상 이미지와 대체 보기가 모두 있는 경우 첫 번째 및 두 번째 빨간색 보기에 대해 &quot;_RED_1&quot; 및 &quot;_RED_2&quot;를 추가할 수 있습니다. 색상 견본은 SKU, 색상 코드 및 &quot;_SW&quot; 확장으로 이름이 지정됩니다.
 
-| SKU/PID | 카테고리 | 파일 이름 | 자산 ID |
+| SKU/PID | 범주 | 파일 이름 | 자산 ID |
 | ------- | ----------------------- | ------------------------------------------- | ------------------------------- |
 | AA123 | 대체 보기 | AA123_1.tif AA123_2.tif AA123_3.tif | AA123_1 AA123_2 AA123_3 |
 |  | 색상 보기 | AA123_BLU.tif AA123_RED.tif AA123_BROWN.tif | AA123_BLU AA123_RED AA123_BROWN |

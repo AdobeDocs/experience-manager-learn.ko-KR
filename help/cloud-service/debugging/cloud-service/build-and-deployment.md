@@ -13,9 +13,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: b4985c30-3e5e-470e-b68d-0f6c5cbf4690
-source-git-commit: 7a4585146b52d14f32645c6889c9c015e9991809
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '2524'
+source-wordcount: '2523'
 ht-degree: 0%
 
 ---
@@ -92,8 +92,8 @@ Adobe Cloud Manager를 사용하면 AEM as a Cloud Service에 대한 코드 작�
 
 ```
 [ERROR] Unable to convert content-package [/tmp/packages/enduser.all-1.0-SNAPSHOT.zip]: 
-Configuration ‘com.example.ExampleComponent’ already defined in Feature Model ‘com.example.groupId:example.all:slingosgifeature:xxxxx:X.X’, 
-set the ‘mergeConfigurations’ flag to ‘true’ if you want to merge multiple configurations with same PID
+Configuration 'com.example.ExampleComponent' already defined in Feature Model 'com.example.groupId:example.all:slingosgifeature:xxxxx:X.X', 
+set the 'mergeConfigurations' flag to 'true' if you want to merge multiple configurations with same PID
 ```
 
 #### 원인 1
@@ -110,7 +110,7 @@ set the ‘mergeConfigurations’ flag to ‘true’ if you want to merge multip
 
 보고서 스크립트는 기본 컨텐츠, 사용자, ACL 등을 정의합니다. AEM as a Cloud Service에서는 포인트 스크립트가 이미지 작성 중에 적용되지만 AEM SDK의 로컬 빠른 시작에서는 OSGi 보고서 팩토리 구성이 활성화될 때 적용됩니다. 이로 인해 Repointet 스크립트는 AEM SDK의 로컬 빠른 시작에서 조용히 실패할 수 있지만 Build Image 단계가 실패하여 배포를 중단합니다.
 
-+ __원인:__ 추천 스크립트의 형식이 잘못되었습니다. 실패한 스크립트가 리포지토리에 대해 실행된 후 리포인트 스크립트로 리포지토리를 불완전한 상태로 유지할 수 있습니다.
++ __원인:__ 추천 스크립트의 형식이 잘못되었습니다. 실패한 스크립트가 저장소에 대해 실행되지 않은 후 리포지토리를 리포인트 스크립트로 불완전한 상태로 둘 수 있습니다.
 + __해결 방법:__ 원격 스크립트 OSGi 구성이 배포될 때 AEM SDK의 로컬 빠른 시작을 검토하여 오류가 무엇인지 및 무엇인지 확인합니다.
 
 ### 충족되지 않은 컨텐츠 종속성

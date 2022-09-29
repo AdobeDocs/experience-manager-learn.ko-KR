@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 307cc3b2-87e5-4429-8f21-5266cf03b78f
-source-git-commit: f4e86059d29acf402de5242f033a25f913febf36
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '667'
 ht-degree: 1%
 
 ---
@@ -72,7 +72,7 @@ mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate -D archety
 ## 전문 프로젝트에서 eclipse 프로젝트 만들기
 
 * 작업 디렉토리를 다음으로 변경 `mysite`
-* 실행 `mvn eclipse:eclipse` 명령줄에서 을(를) 클릭합니다. 이 명령은 pom 파일을 읽고 올바른 메타데이터로 Eclipse 프로젝트를 만들어 Eclipse가 프로젝트 유형, 관계, 클래스 경로 등을 이해할 수 있도록 합니다.
+* 실행 `mvn eclipse:eclipse` 명령줄에서 을(를) 클릭합니다. 이 명령은 pom 파일을 읽고 올바른 메타데이터로 Eclipse 프로젝트를 만들어 Eclipse가 프로젝트 유형, 관계, 클래스 경로 등을 이해하도록 합니다.
 
 ## 프로젝트를 eclipse로 가져오기
 
@@ -93,9 +93,9 @@ c:\aemformsbundles\mysite by clicking the 을 선택합니다. **찾아보기** 
 
 클릭 **완료** 가져오기 프로세스를 시작하려면
 
-프로젝트는 Eclipse로 가져오며, 많은 수가 표시됩니다 `mysite.xxxx` 폴더
+프로젝트는 Eclipse로 가져오며, 많은 항목이 표시됩니다 `mysite.xxxx` 폴더
 
-를 확장합니다. `src/main/java` 아래에 `mysite.core` 폴더를 입력합니다. 대부분의 코드를 작성할 폴더입니다.
+를 확장합니다. `src/main/java` 아래에 `mysite.core` 폴더를 입력합니다. 대부분의 코드를 쓰는 폴더입니다.
 
 ![데이터 소스](assets/mysite-core-project.png)
 

@@ -9,9 +9,9 @@ level: Intermediate
 kt: 9165
 thumbnail: 337960.jpeg
 exl-id: 40bb55f9-011d-4261-9f44-b1104a591252
-source-git-commit: 7cfc150989453eec776eb34eac9b4598c46b0d7c
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '223'
 ht-degree: 5%
 
 ---
@@ -34,7 +34,7 @@ AEM Sites용 사이트 맵을 만들어 SEO를 높이는 방법을 알아봅니�
 
 ### Sitemap 스케줄러 OSGi 구성
 
-을(를) 정의합니다 [OSGi 공장 구성](http://localhost:4502/system/console/configMgr/org.apache.sling.sitemap.impl.SitemapScheduler) 빈도(사용 [cron 표현식](http://www.cronmaker.com)) 사이트 맵이 다시 생성되고 AEM에서 캐시됩니다.
+을(를) 정의합니다 [OSGi 공장 구성](http://localhost:4502/system/console/configMgr/org.apache.sling.sitemap.impl.SitemapScheduler) 빈도(사용 [cron 표현식](http://www.cronmaker.com)) 사이트 맵은 AEM에서 다시 생성되고 캐시됩니다.
 
 `ui.config/src/main/jcr_content/apps/wknd/osgiconfig/config.publish`
 

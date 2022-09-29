@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: e2fabf7c-7fda-4391-ae77-709aa9f7dc0a
-source-git-commit: 197f7e18f0d229698048cb06c2a49c019d420217
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '502'
 ht-degree: 1%
 
 ---
@@ -127,11 +127,11 @@ AEM Engineering의 시즌2의 클라우드 5 시리즈에 오신 것을 환영�
       </p>
      </td>   
      <td>
-            <a href="season-2/cloud5-MoCM-experience-audit.md">
+            <a href="season-2/cloud5-mocm-experience-audit.md">
                <img alt="Cloud Manager의 미스터리... 경험 감사" src="./imgs/s2/007-thumb.png"/>
                </a>
       <div>
-            <a href="season-2/cloud5-MoCM-experience-audit.md"><strong>Cloud Manager의 미스터리... 경험 감사</strong></a>
+            <a href="season-2/cloud5-mocm-experience-audit.md"><strong>Cloud Manager의 미스터리... 경험 감사</strong></a>
          <br/><em>수석 클라우드 설계자인 Darin Muntze와 함께</em>
       </div>
       <p>
@@ -140,11 +140,11 @@ AEM Engineering의 시즌2의 클라우드 5 시리즈에 오신 것을 환영�
       </p>
    </td>
      <td>
-            <a href="season-2/cloud5-MoCM-unit-tests.md">
+            <a href="season-2/cloud5-mocm-unit-tests.md">
                <img alt="Cloud Manager의 미스터리... 단위 테스트" src="./imgs/s2/008-thumb.png"/>
             </a>
       <div>
-            <a href="season-2/cloud5-MoCM-unit-tests.md"><strong>Cloud Manager의 미스터리... 단위 테스트</strong></a>
+            <a href="season-2/cloud5-mocm-unit-tests.md"><strong>Cloud Manager의 미스터리... 단위 테스트</strong></a>
          <br/><em>Darin Muntze &amp; Bryan Stopp과 함께, 수석 클라우드 설계자</em>
       </div>
       <p>
@@ -155,11 +155,11 @@ AEM Engineering의 시즌2의 클라우드 5 시리즈에 오신 것을 환영�
   </tr>
     <tr>
         <td>
-               <a href="season-2/cloud5-MoCM-functional-tests.md">
+               <a href="season-2/cloud5-mocm-functional-tests.md">
                    <img alt="Cloud Manager의 미스터리... 기능 테스트" src="./imgs/s2/009-thumb.png"/>
                </a>
             <div>
-                <a href="season-2/cloud5-MoCM-functional-tests.md"><strong>Cloud Manager의 미스터리... 기능 테스트</strong><br/></a>        
+                <a href="season-2/cloud5-mocm-functional-tests.md"><strong>Cloud Manager의 미스터리... 기능 테스트</strong><br/></a>        
                 <em>Darin Muntze &amp; Bryan Stopp과 함께, 수석 클라우드 설계자</em>
             </div>
             <p><br/>

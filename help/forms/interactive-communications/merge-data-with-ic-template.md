@@ -1,27 +1,26 @@
 ---
 title: 데이터를 병합하여 인쇄 채널 문서 생성
-seo-title: 데이터를 병합하여 인쇄 채널 문서 생성
 description: 입력 스트림에 포함된 데이터를 병합하여 인쇄 채널 문서를 생성하는 방법을 알아봅니다
-seo-description: 입력 스트림에 포함된 데이터를 병합하여 인쇄 채널 문서를 생성하는 방법을 알아봅니다
-feature: 대화형 통신
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
-topic: 개발
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 3bfbb4ef-0c51-445a-8d7b-43543a5fa191
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '479'
 ht-degree: 1%
 
 ---
 
 # 제출된 데이터를 사용하여 인쇄 채널 문서 생성
 
-인쇄 채널 문서는 일반적으로 양식 데이터 모델의 get 서비스를 통해 백엔드 데이터 소스에서 데이터를 가져와 생성됩니다. 경우에 따라 제공된 데이터로 인쇄 채널 문서를 생성해야 합니다. 예를 들어, 고객이 수익자 양식의 변경 사항을 기입하고 제출된 양식의 데이터가 있는 인쇄 채널 문서를 생성할 수 있습니다. 이 사용 사례를 수행하려면 다음 단계를 수행해야 합니다
+인쇄 채널 문서는 일반적으로 양식 데이터 모델의 가져오기 서비스를 통해 백엔드 데이터 소스에서 데이터를 가져와 생성됩니다. 경우에 따라 제공된 데이터로 인쇄 채널 문서를 생성해야 합니다. 예를 들어, 고객이 수익자 양식의 변경 사항을 기입하고 제출된 양식의 데이터가 있는 인쇄 채널 문서를 생성할 수 있습니다. 이 사용 사례를 수행하려면 다음 단계를 수행해야 합니다
 
 ## 미리 채우기 서비스 만들기
 

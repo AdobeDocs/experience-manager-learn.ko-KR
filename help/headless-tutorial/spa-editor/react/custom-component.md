@@ -12,48 +12,48 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 82466e0e-b573-440d-b806-920f3585b638
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '1224'
-ht-degree: 2%
+source-wordcount: '1216'
+ht-degree: 3%
 
 ---
 
 # 사용자 지정 날씨 구성 요소 만들기 {#custom-component}
 
-AEM SPA 편집기에 사용할 사용자 지정 날씨 구성 요소를 만드는 방법을 알아봅니다. 작성자 대화 상자 및 Sling 모델을 개발하여 JSON 모델을 확장하여 사용자 지정 구성 요소를 채우는 방법을 알아봅니다. [Open Weather API](https://openweathermap.org) 및 [React Open Weather 구성 요소](https://www.npmjs.com/package/react-open-weather)가 사용됩니다.
+AEM SPA 편집기에 사용할 사용자 지정 날씨 구성 요소를 만드는 방법을 알아봅니다. 작성자 대화 상자 및 Sling 모델을 개발하여 JSON 모델을 확장하여 사용자 지정 구성 요소를 채우는 방법을 알아봅니다. 다음 [Open Weather API](https://openweathermap.org) 및 [React Open Weather 구성 요소](https://www.npmjs.com/package/react-open-weather) 이 사용됩니다.
 
 ## 목표
 
 1. AEM에서 제공하는 JSON 모델 API를 조작할 때 Sling 모델의 역할을 이해합니다.
 2. 새 AEM 구성 요소 대화 상자를 만드는 방법을 이해합니다.
-3. SPA 편집기 프레임워크와 호환되는 **사용자 지정** AEM 구성 요소를 만드는 방법을 알아봅니다.
+3. 만들기 알아보기 **사용자 지정** SPA 편집기 프레임워크와 호환되는 AEM 구성 요소입니다.
 
 ## 빌드할 내용
 
-간단한 날씨 구성 요소가 구축될 것입니다. 이 구성 요소는 컨텐츠 작성자가 SPA에 추가할 수 있습니다. 작성자는 AEM 대화 상자를 사용하여 날씨를 표시할 위치를 설정할 수 있습니다.  이 구성 요소의 구현은 AEM SPA Editor 프레임워크와 호환되는 net-new AEM 구성 요소를 만드는 데 필요한 단계를 보여줍니다.
+간단한 날씨 구성 요소가 구축되었습니다. 이 구성 요소는 컨텐츠 작성자가 SPA에 추가할 수 있습니다. 작성자는 AEM 대화 상자를 사용하여 날씨를 표시할 위치를 설정할 수 있습니다.  이 구성 요소의 구현은 AEM SPA Editor 프레임워크와 호환되는 net-new AEM 구성 요소를 만드는 데 필요한 단계를 보여줍니다.
 
 ![Open Weather 구성](assets/custom-component/enter-dialog.png)
 
-## 전제 조건
+## 사전 요구 사항
 
-[로컬 개발 환경](overview.md#local-dev-environment)을 설정하는 데 필요한 도구 및 지침을 검토하십시오. 이 장은 [탐색 및 라우팅](navigation-routing.md) 장의 연속이지만, 필요한 모든 작업을 수행하려면 로컬 AEM 인스턴스에 배포된 SPA 사용 AEM 프로젝트가 있습니다.
+설정에 필요한 도구 및 지침을 검토합니다. [로컬 개발 환경](overview.md#local-dev-environment). 이 장은 ...의 연속이다 [탐색 및 라우팅](navigation-routing.md) 그러나 필요한 모든 작업을 수행하려면 로컬 AEM 인스턴스에 배포된 SPA 지원 AEM 프로젝트가 있습니다.
 
 ### Open Weather API 키
 
-자습서와 함께 [Open Weather](https://openweathermap.org/)의 API 키가 필요합니다. [등록은 제한된 ](https://home.openweathermap.org/users/sign_up) 양의 API 호출을 무료로 제공합니다.
+의 API 키 [Open Weather](https://openweathermap.org/) 는 자습서와 함께 따라야 합니다. [무료 등록](https://home.openweathermap.org/users/sign_up) ( 제한된 양의 API 호출).
 
 ## AEM 구성 요소 정의
 
-AEM 구성 요소는 노드 및 속성으로 정의됩니다. 프로젝트에서 이러한 노드 및 속성은 `ui.apps` 모듈에서 XML 파일로 표시됩니다. 그런 다음 `ui.apps` 모듈에서 AEM 구성 요소를 만듭니다.
+AEM 구성 요소는 노드 및 속성으로 정의됩니다. 프로젝트에서 이러한 노드 및 속성은 `ui.apps` 모듈. 다음으로, AEM 구성 요소를 `ui.apps` 모듈.
 
 >[!NOTE]
 >
-> AEM 구성 요소의 [기본 사항에 대한 빠른 재료는](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html)에 도움이 될 수 있습니다.
+> 에 대한 빠른 재교육 [AEM 구성 요소의 기본 사항이 도움이 될 수 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html).
 
-1. 선택한 IDE에서 `ui.apps` 폴더를 엽니다.
-2. `ui.apps/src/main/content/jcr_root/apps/wknd-spa-react/components` 로 이동하여 `open-weather` 라는 새 폴더를 만듭니다.
-3. `open-weather` 폴더 아래에 `.content.xml` 라는 새 파일을 만듭니다. `open-weather/.content.xml`을(를) 다음 값으로 채웁니다.
+1. 선택한 IDE에서 `ui.apps` 폴더를 입력합니다.
+2. 다음으로 이동 `ui.apps/src/main/content/jcr_root/apps/wknd-spa-react/components` 새 폴더를 만들고 `open-weather`.
+3. 이름이 인 새 파일 만들기 `.content.xml` 아래 `open-weather` 폴더를 입력합니다. 을(를) 채우기 `open-weather/.content.xml` 사용:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -67,10 +67,10 @@ AEM 구성 요소는 노드 및 속성으로 정의됩니다. 프로젝트에서
 
    `jcr:primaryType="cq:Component"` - 이 노드가 AEM 구성 요소임을 식별합니다.
 
-   `jcr:title` 는 컨텐츠 작성자에게 표시될 값이며 작성 UI의 구성 요소  `componentGroup` 그룹을 결정합니다.
+   `jcr:title` 컨텐츠 작성자와 `componentGroup` 작성 UI에서 구성 요소 그룹을 결정합니다.
 
-4. `custom-component` 폴더 아래에서 `_cq_dialog` 라는 다른 폴더를 만듭니다.
-5. `_cq_dialog` 폴더 아래에 `.content.xml` 라는 새 파일을 만들고 다음 파일로 채웁니다.
+4. 아래 `custom-component` 폴더, 이름이 지정된 다른 폴더 만들기 `_cq_dialog`.
+5. 아래 `_cq_dialog` 폴더 이름이 인 새 파일 만들기 `.content.xml` 그리고 다음과 같이 채웁니다.
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -137,25 +137,25 @@ AEM 구성 요소는 노드 및 속성으로 정의됩니다. 프로젝트에서
 
    ![사용자 지정 구성 요소 정의](assets/custom-component/dialog-custom-component-defintion.png)
 
-   위의 XML 파일은 `Weather Component`에 대한 매우 간단한 대화 상자를 생성합니다. 파일의 중요한 부분은 내부 `<label>`, `<lat>` 및 `<lon>` 노드입니다. 이 대화 상자에는 사용자가 날씨를 표시할 수 있도록 구성하는 두 개의 `numberfield`과 `textfield`이 포함됩니다.
+   위의 XML 파일은 `Weather Component`. 파일의 중요한 부분은 내부입니다 `<label>`, `<lat>` 및 `<lon>` 노드 아래에 나열됩니다. 이 대화 상자에는 다음 두 가지가 있습니다 `numberfield`s 및 `textfield` 이렇게 하면 사용자가 날씨를 표시하도록 구성할 수 있습니다.
 
-   JSON 모델을 통해 `label`,`lat` 및 `long` 속성의 값을 노출하는 옆에 Sling 모델이 만들어집니다.
+   Sling 모델 은 의 값을 표시하는 옆에 만들어집니다 `label`,`lat` 및 `long` JSON 모델을 통한 속성.
 
    >[!NOTE]
    >
-   > 코어 구성 요소 정의](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components)를 보면 대화 상자의 예제를 훨씬 더 많이 볼 수 있습니다. [ [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/libs/granite/ui/components/coral/foundation/form)에서 `/libs/granite/ui/components/coral/foundation/form` 아래에 있는 `select`, `textarea`, `pathfield` 등의 추가 양식 필드를 볼 수도 있습니다.
+   > 훨씬 더 많이 볼 수 있습니다 [핵심 구성 요소 정의를 보는 대화 상자 예](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components). 다음과 같은 추가 양식 필드를 볼 수도 있습니다 `select`, `textarea`, `pathfield`, 아래에 있음 `/libs/granite/ui/components/coral/foundation/form` in [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/libs/granite/ui/components/coral/foundation/form).
 
-   기존 AEM 구성 요소를 사용하는 경우 일반적으로 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=ko-KR) 스크립트가 필요합니다. SPA이 구성 요소를 렌더링하므로 HTL 스크립트가 필요하지 않습니다.
+   기존 AEM 구성 요소 사용, [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=ko-KR) 스크립트는 일반적으로 필요합니다. SPA이 구성 요소를 렌더링하므로 HTL 스크립트가 필요하지 않습니다.
 
 ## Sling 모델 만들기
 
-Sling 모델은 JCR에서 Java 변수에 데이터를 쉽게 매핑하는 주석 기반의 Java &quot;POJO&quot;(일반 이전 Java 개체)입니다. [AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html?lang=en#sling-models) 구성 요소에 대한 복잡한 서버측 비즈니스 로직을 캡슐화하는 Sling Modelstically 함수
+Sling 모델은 JCR에서 Java 변수에 데이터를 쉽게 매핑하는 주석 기반의 Java &quot;POJO&quot;(일반 이전 Java 개체)입니다. [Sling 모델](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html?lang=en#sling-models) 일반적으로 AEM 구성 요소에 대한 복잡한 서버측 비즈니스 로직을 캡슐화하는 데 사용됩니다.
 
-SPA Editor 컨텍스트에서 Sling Models는 [Sling Model Exporter](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html)를 사용하는 기능을 통해 JSON 모델을 통해 구성 요소의 컨텐츠를 제공합니다.
+SPA 편집기의 컨텍스트에서 Sling 모델은 를 사용하여 기능을 통해 JSON 모델을 통해 구성 요소의 콘텐츠를 노출합니다 [Sling 모델 내보내기](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html).
 
-1. 선택한 IDE에서 `aem-guides-wknd-spa.react/core`에 있는 `core` 모듈을 엽니다.
-1. `core/src/main/java/com/adobe/aem/guides/wkndspa/react/core/models`에서 `OpenWeatherModel.java`에 이름이 지정된 파일을 만듭니다.
-1. `OpenWeatherModel.java` 을 다음과 같이 채웁니다.
+1. 선택한 IDE에서 `core` 모듈 `aem-guides-wknd-spa.react/core`.
+1. 이름이 인 파일을 만듭니다. `OpenWeatherModel.java` at `core/src/main/java/com/adobe/aem/guides/wkndspa/react/core/models`.
+1. 채우기 `OpenWeatherModel.java` 사용:
 
    ```java
    package com.adobe.aem.guides.wkndspa.react.core.models;
@@ -174,10 +174,10 @@ SPA Editor 컨텍스트에서 Sling Models는 [Sling Model Exporter](https://exp
    }
    ```
 
-   구성 요소의 Java 인터페이스입니다. Sling 모델을 SPA Editor 프레임워크와 호환하려면 `ComponentExporter` 클래스를 확장해야 합니다.
+   구성 요소의 Java 인터페이스입니다. Sling 모델을 SPA Editor 프레임워크와 호환하려면 다음을 확장해야 합니다 `ComponentExporter` 클래스 이름을 지정합니다.
 
-1. `core/src/main/java/com/adobe/aem/guides/wkndspa/react/core/models` 아래에 `impl` 폴더를 만듭니다.
-1. `impl` 아래에 `OpenWeatherModelImpl.java` 파일을 만들고 다음 파일로 채웁니다.
+1. 이름이 인 폴더 만들기 `impl` 아래 `core/src/main/java/com/adobe/aem/guides/wkndspa/react/core/models`.
+1. 이름이 인 파일 만들기 `OpenWeatherModelImpl.java` 아래 `impl` 를 채울 수 있습니다.
 
    ```java
    package com.adobe.aem.guides.wkndspa.react.core.models.impl;
@@ -244,21 +244,21 @@ SPA Editor 컨텍스트에서 Sling Models는 [Sling Model Exporter](https://exp
    } 
    ```
 
-   정적 변수 `RESOURCE_TYPE`은(는) 구성 요소의 `ui.apps`에 있는 경로를 가리켜야 합니다. `getExportedType()` 은 `MapTo` 을 통해 JSON 속성을 SPA 구성 요소에 매핑하는 데 사용됩니다. `@ValueMapValue` 는 대화 상자에 저장된 jcr 속성을 읽는 주석입니다.
+   정적 변수 `RESOURCE_TYPE` 의 경로를 가리켜야 합니다. `ui.apps` Analytics JavaScript에서 JavaScript를 분류했습니다. 다음 `getExportedType()` 는 를 통해 SPA 구성 요소에 JSON 속성을 매핑하는 데 사용됩니다 `MapTo`. `@ValueMapValue` 는 대화 상자에 저장된 jcr 속성을 읽는 주석입니다.
 
 ## SPA 업데이트
 
-그런 다음 React 코드를 업데이트하여 [React Open Weather 구성 요소](https://www.npmjs.com/package/react-open-weather)를 포함하고 이전 단계에서 만든 AEM 구성 요소에 매핑하도록 합니다.
+다음으로, React 코드를 업데이트하여 [React Open Weather 구성 요소](https://www.npmjs.com/package/react-open-weather) 이전 단계에서 만든 AEM 구성 요소에 매핑하도록 합니다.
 
-1. React Open Weather 구성 요소를 **npm** 종속으로 설치합니다.
+1. React Open Weather 구성 요소를 **npm** 종속성:
 
    ```shell
    $ cd aem-guides-wknd-spa.react/ui.frontend
    $ npm i react-open-weather
    ```
 
-1. `ui.frontend/src/components/OpenWeather`에 `OpenWeather` 라는 새 폴더를 만듭니다.
-1. `OpenWeather.js` 파일을 추가하고 다음 파일로 채웁니다.
+1. 이름이 인 새 폴더 만들기 `OpenWeather` at `ui.frontend/src/components/OpenWeather`.
+1. 이름이 인 파일 추가 `OpenWeather.js` 그리고 다음과 같이 채웁니다.
 
    ```js
    import React from 'react';
@@ -320,7 +320,7 @@ SPA Editor 컨텍스트에서 Sling Models는 [Sling Model Exporter](https://exp
    MapTo('wknd-spa-react/components/open-weather')(OpenWeather, OpenWeatherEditConfig);
    ```
 
-1. `OpenWeather` 구성 요소를 포함하도록 `ui.frontend/src/components/import-components.js`에서 `import-components.js`을 업데이트합니다.
+1. 업데이트 `import-components.js` at `ui.frontend/src/components/import-components.js` 를 `OpenWeather` 구성 요소:
 
    ```diff
      // import-component.js
@@ -338,9 +338,9 @@ SPA Editor 컨텍스트에서 Sling Models는 [Sling Model Exporter](https://exp
 
 ## 템플릿 정책 업데이트
 
-다음으로 AEM으로 이동하여 업데이트를 확인하고 `OpenWeather` 구성 요소를 SPA에 추가할 수 있도록 합니다.
+다음으로 AEM으로 이동하여 업데이트를 확인하고 다음을 허용합니다 `OpenWeather` SPA에 추가할 구성 요소입니다.
 
-1. [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)로 이동하여 새 Sling 모델의 등록을 확인합니다.
+1. 로 이동하여 새 Sling 모델의 등록을 확인합니다. [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels).
 
    ```plain
    com.adobe.aem.guides.wkndspa.react.core.models.impl.OpenWeatherModelImpl - wknd-spa-react/components/open-weather
@@ -348,37 +348,37 @@ SPA Editor 컨텍스트에서 Sling Models는 [Sling Model Exporter](https://exp
    com.adobe.aem.guides.wkndspa.react.core.models.impl.OpenWeatherModelImpl exports 'wknd-spa-react/components/open-weather' with selector 'model' and extension '[Ljava.lang.String;@2fd80fc5' with exporter 'jackson'
    ```
 
-   위의 두 행이 표시되고 `OpenWeatherModelImpl` 구성 요소가 `wknd-spa-react/components/open-weather` 구성 요소와 연결되며 Sling 모델 익스포터를 통해 등록되었음을 나타냅니다.
+   위의 두 행이 표시되고 `OpenWeatherModelImpl` 은 `wknd-spa-react/components/open-weather` Sling Model Exporter를 통해 등록되고 구성 요소를 생성하지 않습니다.
 
-1. [http://localhost:4502/editor.html/conf/wknd-spa-react/settings/wcm/templates/spa-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd-spa-react/settings/wcm/templates/spa-page-template/structure.html)의 SPA 페이지 템플릿으로 이동합니다.
-1. 레이아웃 컨테이너의 정책을 업데이트하여 새 `Open Weather`을 허용된 구성 요소로 추가합니다.
+1. 의 SPA 페이지 템플릿으로 이동합니다. [http://localhost:4502/editor.html/conf/wknd-spa-react/settings/wcm/templates/spa-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd-spa-react/settings/wcm/templates/spa-page-template/structure.html).
+1. 레이아웃 컨테이너의 정책을 업데이트하여 새 `Open Weather` 허용된 구성 요소로:
 
    ![레이아웃 컨테이너 정책 업데이트](assets/custom-component/custom-component-allowed.png)
 
-   정책에 대한 변경 사항을 저장하고 `Open Weather` 을 허용된 구성 요소로 관찰합니다.
+   정책에 대한 변경 사항을 저장하고 `Open Weather` 허용된 구성 요소로:
 
    ![허용된 구성 요소로서의 사용자 지정 구성 요소](assets/custom-component/custom-component-allowed-layout-container.png)
 
 ## Open Weather 구성 요소 작성
 
-그런 다음 AEM SPA 편집기를 사용하여 `Open Weather` 구성 요소를 작성합니다.
+다음으로, `Open Weather` 구성 요소를 생성하지 않습니다.
 
-1. [http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html)로 이동합니다.
-1. `Edit` 모드에서 `Open Weather`을 `Layout Container`에 추가합니다.
+1. 다음으로 이동 [http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html).
+1. in `Edit` 모드, 추가 `Open Weather` 변환 후 `Layout Container`:
 
    ![새 구성 요소 삽입](assets/custom-component/insert-custom-component.png)
 
-1. 구성 요소의 대화 상자를 열고 **Label**, **Latitude** 및 **Longitude**&#x200B;를 입력합니다. 예: **San Diego**, **32.7157** 및 **-117.1611** 북반구와 남반구의 숫자는 Open Weather API로 음수로 표시됩니다
+1. 구성 요소의 대화 상자를 열고 **레이블**, **위도**, 및 **경도**. 예 **샌디에이고**, **32.7157**, 및 **-117.1611**. 북반구와 남반구의 숫자는 Open Weather API로 음수로 표시됩니다
 
    ![Open Weather 구성](assets/custom-component/enter-dialog.png)
 
    이 대화 상자는 장의 앞부분에 있는 XML 파일을 기반으로 작성된 것입니다.
 
-1. 변경 사항을 저장합니다. 이제 **San Diego**&#x200B;의 날씨가 표시됩니다.
+1. 변경 사항을 저장합니다. 일기예보가 **샌디에이고** 이제 이 표시됩니다.
 
    ![날씨 구성 요소 업데이트됨](assets/custom-component/weather-updated.png)
 
-1. [http://localhost:4502/content/wknd-spa-react/us/en.model.json](http://localhost:4502/content/wknd-spa-react/us/en.model.json)로 이동하여 JSON 모델을 봅니다. `wknd-spa-react/components/open-weather` 검색:
+1. 로 이동하여 JSON 모델 보기 [http://localhost:4502/content/wknd-spa-react/us/en.model.json](http://localhost:4502/content/wknd-spa-react/us/en.model.json). 검색 대상 `wknd-spa-react/components/open-weather`:
 
    ```json
    "open_weather": {
@@ -397,4 +397,4 @@ SPA Editor 컨텍스트에서 Sling Models는 [Sling Model Exporter](https://exp
 
 ### 다음 단계 {#next-steps}
 
-[코어 구성 요소 확장](extend-component.md)  - AEM SPA 편집기와 함께 사용할 기존 AEM 코어 구성 요소를 확장하는 방법을 알아봅니다. 기존 구성 요소에 속성 및 컨텐츠를 추가하는 방법을 이해하는 것은 AEM SPA 편집기 구현의 기능을 확장하는 강력한 방법입니다.
+[코어 구성 요소 확장](extend-component.md) - AEM SPA 편집기와 함께 사용할 기존 AEM 코어 구성 요소를 확장하는 방법을 알아봅니다. 기존 구성 요소에 속성 및 컨텐츠를 추가하는 방법을 이해하는 것은 AEM SPA 편집기 구현의 기능을 확장하는 강력한 방법입니다.

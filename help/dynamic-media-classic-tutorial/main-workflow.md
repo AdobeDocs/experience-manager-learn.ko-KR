@@ -1,6 +1,6 @@
 ---
 title: Dynamic Media Classic 기본 워크플로우 및 자산 미리 보기
-description: 만들기(및 업로드), 작성자(및 게시) 및 게재의 세 단계를 포함하는 Dynamic Media Classic의 기본 워크플로우에 대해 알아봅니다. 그런 다음 Dynamic Media Classic에서 자산을 미리 보는 방법을 알아봅니다.
+description: 만들기(및 업로드), 작성자(및 게시) 및 게재의 3단계를 포함하는 Dynamic Media Classic의 기본 워크플로우에 대해 알아봅니다. 그런 다음 Dynamic Media Classic에서 자산을 미리 보는 방법을 알아봅니다.
 sub-product: dynamic-media
 feature: Dynamic Media Classic
 doc-type: tutorial
@@ -10,13 +10,13 @@ activity: use
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+exl-id: 04aacd81-bbb2-4742-9306-f0eabc665a41
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '2710'
-ht-degree: 0%
+source-wordcount: '2703'
+ht-degree: 1%
 
 ---
-
 
 # Dynamic Media Classic 기본 워크플로우 및 자산 미리 보기 {#main-workflow}
 
@@ -34,56 +34,56 @@ Dynamic Media Classic 솔루션의 워크플로우는 다음 세 가지 주요 �
 
 워크플로우의 시작입니다. 이 단계에서는 사용 중인 워크플로우에 맞는 소스 컨텐츠를 수집하거나 만들어 Dynamic Media Classic에 업로드합니다. 이 시스템은 이미지, 비디오 및 글꼴에 대한 여러 파일 유형을 지원하지만 PDF, Adobe Illustrator 및 Adobe InDesign에 대해서도 지원합니다.
 
-[지원되는 파일 형식](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#supported-asset-file-formats)의 전체 목록을 참조하십시오.
+전체 목록 보기 [지원되는 파일 형식](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#supported-asset-file-formats).
 
 다음과 같은 여러 가지 방법으로 소스 컨텐츠를 업로드할 수 있습니다.
 
-- 데스크탑 또는 로컬 네트워크에서 직접 액세스 [방법](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-sps-desktop-application) 알아보기.
-- Dynamic Media Classic FTP 서버에서 가져옵니다. [방법](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-via-ftp) 알아보기.
+- 데스크탑 또는 로컬 네트워크에서 직접 액세스 [방법 알아보기](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-sps-desktop-application).
+- Dynamic Media Classic FTP 서버. [방법 알아보기](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-via-ftp).
 
-기본 모드는 바탕 화면에서 로컬 네트워크에서 파일을 검색하고 업로드를 시작하는 것입니다.
+기본 모드는 바탕 화면에서 로컬 네트워크에서 파일을 찾아 업로드를 시작하는 것입니다.
 
 ![이미지](assets/main-workflow/upload.jpg)
 
 >[!TIP]
 >
->폴더를 수동으로 추가하지 마십시오. 대신 FTP에서 업로드를 실행하고 **하위 폴더 포함** 옵션을 사용하여 Dynamic Media Classic 내에서 폴더 구조를 다시 만듭니다.
+>폴더를 수동으로 추가하지 마십시오. 대신 FTP에서 업로드를 실행하고 를 사용합니다. **하위 폴더 포함** Dynamic Media Classic 내에서 폴더 구조를 다시 만드는 옵션입니다.
 
-가장 중요한 두 업로드 옵션은 기본적으로 활성화되어 있습니다. **이전에 설명한 게시**&#x200B;에 표시 와 **덮어쓰기**. 덮어쓰기 는 업로드되는 파일의 이름이 시스템에 있는 파일과 동일한 경우 새 파일이 기존 버전을 대체함을 의미합니다. 이 옵션을 선택 취소하면 파일이 업로드되지 않을 수 있습니다.
+가장 중요한 두 업로드 옵션은 기본적으로 활성화되어 있습니다. **게시로 표시**&#x200B;앞서 말씀드린 바와 같이 **덮어쓰기**. 덮어쓰기 는 업로드되는 파일의 이름이 시스템에 있는 파일과 동일한 경우 새 파일이 기존 버전을 대체함을 의미합니다. 이 옵션을 선택 취소하면 파일이 업로드되지 않을 수 있습니다.
 
 ### 이미지를 업로드할 때 옵션 덮어쓰기
 
 이미지 덮어쓰기 옵션은 회사 전체에 대해 설정할 수 있는 네 가지 변형이며, 일반적으로 잘못 인식됩니다. 즉, 동일한 이름의 자산을 더 자주 덮어쓰게 하거나 덮어쓰기를 덜 자주 수행하도록 규칙을 설정합니다(이 경우 새 이미지의 이름이 &quot;-1&quot; 또는 &quot;-2&quot; 확장으로 변경됨).
 
-- **현재 폴더에 동일한 기본 이미지 이름/확장명을 덮어씁니다**.
+- **현재 폴더에 동일한 기본 이미지 이름/확장명으로 덮어쓰기**.
 이 옵션은 교체에 대한 가장 엄격한 규칙입니다. 교체 이미지를 원본과 동일한 폴더에 업로드하고 교체 이미지의 파일 확장명이 원본과 동일해야 합니다. 이러한 요구 사항을 충족하지 않으면 복제본이 만들어집니다.
 
-- **확장자에 관계없이 동일한 기본 자산 이름으로 현재 폴더에 덮어씁니다**.
+- **확장자에 관계없이 동일한 기본 자산 이름으로 현재 폴더에 덮어쓰기**.
 교체 이미지를 원본과 동일한 폴더로 업로드해야 하지만 파일 이름 확장명은 원본과 다를 수 있습니다. 예를 들어 chair.tif는 chair.jpg를 대체합니다.
 
-- **동일한 기본 자산 이름/확장에 있는 임의의 폴더에 덮어씁니다**.
+- **동일한 기본 에셋 이름/확장명으로 모든 폴더에 덮어쓰기**.
 교체 이미지의 파일 확장명이 원본 이미지와 동일해야 합니다(예: chair.jpg는 chair.tif가 아니라 chair.jpg로 대체해야 함). 그러나 대체 이미지를 원본과 다른 폴더에 업로드할 수 있습니다. 업데이트된 이미지는 새 폴더에 있습니다. 파일을 원래 위치에서 더 이상 찾을 수 없습니다.
 
-- **확장에 관계없이 동일한 기본 자산 이름으로 모든 폴더에 덮어씁니다**.
+- **확장명에 상관없이 동일한 기본 에셋 이름으로 모든 폴더에 덮어쓰기**.
 이 옵션은 가장 포괄적인 대체 규칙입니다. 대체 이미지를 원본과 다른 폴더에 업로드하고, 다른 파일 확장자를 가진 파일을 업로드하고, 원래 파일을 바꿀 수 있습니다. 원본 파일이 다른 폴더에 있는 경우 대체 이미지는 업로드된 새 폴더에 있습니다.
 
-[이미지 덮어쓰기 옵션](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#using-the-overwrite-images-option)에 대해 자세히 알아보십시오.
+추가 정보 [이미지 덮어쓰기 옵션](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#using-the-overwrite-images-option).
 
-필요하지 않지만 위의 두 방법 중 하나를 사용하여 업로드하는 동안 해당 특정 업로드에 대한 작업 옵션 을 지정할 수 있습니다. 예를 들어, 반복 업로드를 예약하고 업로드 시 자르기 옵션을 설정하는 등 많은 작업이 가능합니다. 이는 일부 워크플로우에서 유용할 수 있으므로 귀사에 유용할 수 있는지 고려해 볼 가치가 있습니다.
+필요하지 않지만 위의 두 방법 중 하나를 사용하여 업로드하는 동안 해당 특정 업로드에 대한 작업 옵션 을 지정할 수 있습니다. 예를 들어, 반복 업로드를 예약하고, 업로드 시 자르기 옵션을 설정하는 등의 작업이 가능합니다. 이는 일부 워크플로우에서 유용할 수 있으므로 귀사에 유용할 수 있는지 고려해 볼 가치가 있습니다.
 
-[작업 옵션](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-options)에 대해 자세히 알아보십시오.
+추가 정보 [작업 옵션](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-options).
 
-Dynamic Media Classic은 해당 시스템에 아직 없는 콘텐츠에서는 작동할 수 없으므로 워크플로우에서 업로드는 첫 번째 필수 단계입니다. 업로드 중에 백그라운드에서 시스템은 업로드된 모든 자산을 중앙 집중식 Dynamic Media Classic 데이터베이스에 등록하고 ID를 지정한 다음 저장소에 복사합니다. 또한, 영상 파일을 다이내믹 크기 조정 및 확대/축소를 가능하게 하는 포맷으로 변환하고, 영상 파일을 MP4 웹에 친숙한 형식으로 변환한다.
+Dynamic Media Classic이 시스템에 아직 없는 콘텐츠는 사용할 수 없으므로 업로드는 모든 워크플로우에서 첫 번째 필요한 단계입니다. 업로드 중에 백그라운드에서 시스템은 업로드된 모든 자산을 중앙 집중식 Dynamic Media Classic 데이터베이스에 등록하고 ID를 지정한 다음 저장소에 복사합니다. 또한, 영상 파일을 다이내믹 크기 조정 및 확대/축소를 가능하게 하는 포맷으로 변환하고, 영상 파일을 MP4 웹에 친숙한 형식으로 변환한다.
 
 ### 개념: 다음은 Dynamic Media Classic에 업로드할 때 이미지에 발생하는 작업입니다
 
-모든 유형의 이미지를 Dynamic Media Classic에 업로드하면 Pyramid TIFF 또는 P-TIFF라는 마스터 이미지 형식으로 변환됩니다. P-TIFF는 서로 다른 레이어 대신 동일한 이미지의 여러 크기(해상도)를 파일에 포함한다는 점을 제외하면 계층화된 TIFF 비트맵 이미지의 형식과 유사합니다.
+모든 유형의 이미지를 Dynamic Media Classic에 업로드하면 Pyramid TIFF 또는 P-TIFF라는 마스터 이미지 형식으로 변환됩니다. P-TIFF은 레이어된 TIFF 비트맵 이미지의 형식과 유사하며, 다른 레이어 대신 동일한 이미지의 여러 크기(해상도)를 파일에 포함한다는 점을 제외하면,
 
 ![이미지](assets/main-workflow/pyramid-p-tiff.png)
 
-이미지가 변환되면 Dynamic Media Classic에서는 이미지의 전체 크기에 대한 &quot;스냅샷&quot;을 만들어 크기가 절반으로 조절되어 저장하고, 다시 절반으로 크기를 조절하여 저장합니다. 이렇게 하면 원래 크기의 여러 배까지 채워질 때까지 계속됩니다. 예를 들어, 2000픽셀 P-TIFF는 동일한 파일에 1000-500-250-125픽셀 크기(및 작은 크기)를 갖게 됩니다. P-TIFF 파일은 Dynamic Media Classic에서 &quot;마스터 이미지&quot;라고 하는 파일의 형식입니다.
+이미지가 변환되면 Dynamic Media Classic은 이미지의 전체 크기에 대한 &quot;스냅샷&quot;을 만들어 크기가 절반으로 조절되어 저장하고, 다시 절반으로 크기를 조절하여 저장합니다. 이렇게 하면 원래 크기의 여러 배까지 채워질 때까지 됩니다. 예를 들어, 2000픽셀 P-TIFF은 동일한 파일에 1000 - 500 -, 250 - 및 125픽셀 크기(및 더 작음)를 갖습니다. P-TIFF 파일은 Dynamic Media Classic에서 &quot;마스터 이미지&quot;라고 하는 파일의 형식입니다.
 
-특정 크기 이미지를 요청할 때 P-TIFF를 만들면 Dynamic Media Classic용 이미지 서버에서 다음 큰 크기를 빨리 찾아 축소할 수 있습니다. 예를 들어, 2000픽셀 이미지를 업로드하고 100픽셀 이미지를 요청하는 경우 Dynamic Media Classic은 125픽셀 버전을 찾아 2000픽셀에서 100픽셀까지의 크기 조절이 아닌 100픽셀로 축소합니다. 이것은 그 수술을 매우 빠르게 한다. 또한 이미지를 확대/축소하면 확대/축소 뷰어가 전체 해상도 이미지가 아닌 확대/축소 이미지 타일만 요청할 수 있습니다. 마스터 이미지 형식인 P-TIFF 파일이 동적 크기 및 확대/축소를 모두 지원하는 방식입니다.
+특정 크기 이미지를 요청할 때 P-TIFF을 만들면 Dynamic Media Classic용 이미지 서버에서 더 큰 다음 크기를 빠르게 찾아 축소할 수 있습니다. 예를 들어, 2000픽셀 이미지를 업로드하고 100픽셀 이미지를 요청하는 경우 Dynamic Media Classic은 125픽셀 버전을 찾아 2000픽셀에서 100픽셀까지의 크기 조절이 아닌 100픽셀로 축소합니다. 이것은 그 수술을 매우 빠르게 한다. 또한 이미지를 확대/축소하면 확대/축소 뷰어가 전체 해상도 이미지가 아닌 확대/축소 이미지 타일만 요청할 수 있습니다. 마스터 이미지 형식인 P TIFF 파일이 동적 크기 및 확대/축소를 모두 지원하는 방식입니다.
 
 마찬가지로 마스터 소스 비디오를 Dynamic Media Classic에 업로드할 수 있으며 Dynamic Media Classic 업로드 시 자동으로 크기를 조정하여 MP4 웹에 친숙한 형식으로 변환할 수 있습니다.
 
@@ -91,16 +91,16 @@ Dynamic Media Classic은 해당 시스템에 아직 없는 콘텐츠에서는 �
 
 **필요한 가장 큰 크기로 이미지를 업로드합니다.**
 
-- 확대해야 하는 경우 가장 긴 차원에서 1500-2500픽셀 범위의 고해상도 이미지를 업로드합니다. 제공하려는 세부 사항, 소스 이미지의 품질 및 표시되는 제품의 크기를 고려합니다. 예를 들어, 작은 링에는 1000픽셀 이미지를 업로드하고, 전체 룸마다 3000픽셀 이미지를 업로드합니다.
-- 확대하지 않아도 되는 경우 표시되는 정확한 크기로 업로드하십시오. 예를 들어 페이지에 배치할 로고나 스플래시/배너 이미지가 있는 경우 1:1 크기로 정확히 업로드한 다음 해당 크기로 호출하십시오.
+- 확대해야 하는 경우 가장 긴 차원에 있는 1500-2500픽셀 범위의 고해상도 이미지를 업로드합니다. 제공하려는 세부 사항, 소스 이미지의 품질 및 표시되는 제품의 크기를 고려합니다. 예를 들어, 작은 링에는 1000픽셀 이미지를 업로드하고, 공간 전체 장면에 대해 3000픽셀 이미지를 업로드합니다.
+- 확대하지 않아도 되는 경우 표시되는 정확한 크기로 업로드합니다. 예를 들어 페이지에 배치할 로고나 스플래시/배너 이미지가 있는 경우 1:1 크기로 정확히 업로드한 다음 해당 크기로 호출하십시오.
 
 **Dynamic Media Classic에 업로드하기 전에 이미지를 업로드하거나 팝업하지 마십시오.** 예를 들어 더 작은 이미지를 업샘플링하여 2000픽셀 이미지로 만듭니다. 안 좋아 보일 거예요 업로드하기 전에 이미지를 최대한 완벽한 상태로 만듭니다.
 
-**최소 확대/축소 크기는 없지만 기본적으로 뷰어는 100% 이상 확대/축소를 수행하지 않습니다.** 이미지가 너무 작으면 전혀 확대/축소되지 않거나 아주 작은 양만 확대/축소하여 이미지가 나쁘게 보이지 않게 됩니다.
+**최소 확대/축소 크기는 없지만 기본적으로 뷰어는 100% 이상 확대/축소를 수행하지 않습니다.** 이미지가 너무 작으면 확대/축소되지 않거나 아주 작은 양만 확대하여 이미지가 나쁘게 보이지 않게 됩니다.
 
-**이미지 크기에 대한 최소 크기는 아니지만 큰 이미지를 업로드하는 것은 권장되지 않습니다.** 대형 이미지는 4000픽셀 이상으로 간주됩니다. 이 크기의 이미지를 업로드하는 것은 이미지에 있는 먼지나 머리카락 같은 잠재적인 결함을 보여줄 수 있습니다. 이러한 이미지는 Dynamic Media Classic 서버의 공간을 더 많이 차지하게 되므로 축소된 저장소 제한을 초과할 수 있습니다.
+**이미지 크기에 대한 최소 크기는 아니지만 큰 이미지를 업로드하는 것은 권장되지 않습니다.** 대형 이미지는 4000픽셀 이상으로 간주됩니다. 이 크기의 이미지를 업로드하는 것은 이미지에 있는 먼지나 머리카락 같은 잠재적인 결함을 보여줄 수 있습니다. 이러한 이미지는 Dynamic Media Classic 서버의 공간을 더 많이 차지하므로 수축된 저장소 제한을 초과할 수 있습니다.
 
-[파일 업로드](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#uploading-your-files)에 대해 자세히 알아보십시오.
+추가 정보 [파일 업로드](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#uploading-your-files).
 
 ## 2단계: 작성자(및 게시)
 
@@ -110,7 +110,7 @@ Dynamic Media Classic은 해당 시스템에 아직 없는 콘텐츠에서는 �
 >
 >모든 자산이 게시용으로 표시되었는지 확인합니다. 기본적으로 업로드 시 게시하도록 모든 자산이 자동으로 표시되지만, 업로드된 컨텐츠에서 새로 작성된 자산은 모두 게시용으로 표시되어야 합니다.
 
-새 자산을 빌드하면 게시 작업이 실행됩니다. 수동으로 수행하거나 자동으로 실행되는 게시 작업을 예약할 수 있습니다. 게시하면 비공개 Dynamic Media Classic 구형에서 방정식의 게시 서버 구면으로 모든 컨텐츠가 복사됩니다. Dynamic Media 게시 작업의 제품은 게시된 각 자산에 대한 고유 URL입니다.
+새 자산을 빌드하면 게시 작업이 실행됩니다. 수동으로 수행하거나 자동으로 실행되는 게시 작업을 예약할 수 있습니다. 게시하면 비공개 Dynamic Media Classic 구의 모든 컨텐츠가 방정식의 게시 서버 구로 복사됩니다. Dynamic Media 게시 작업의 제품은 게시된 각 자산에 대한 고유 URL입니다.
 
 게시할 서버는 컨텐츠 및 워크플로우의 유형에 따라 다릅니다. 예를 들어 모든 이미지는 이미지 서버로 이동하고 FMS 서버로 비디오를 스트리밍합니다. 편의상 단일 서버에 단일 이벤트로 &quot;게시&quot;를 알려줍니다.
 
@@ -122,7 +122,7 @@ Dynamic Media Classic은 해당 시스템에 아직 없는 콘텐츠에서는 �
 
 ### 개념: Dynamic Media Classic URL 이해
 
-Dynamic Media Classic 워크플로우의 최종 제품은 자산(이미지 세트 또는 응용 비디오 세트)을 가리키는 URL입니다. 이러한 URL은 매우 예측 가능하고 동일한 패턴을 따릅니다. 이미지의 경우 각 이미지가 P-TIFF 마스터 이미지에서 생성됩니다.
+Dynamic Media Classic 워크플로우의 최종 제품은 자산(이미지 세트 또는 응용 비디오 세트)을 가리키는 URL입니다. 이러한 URL은 매우 예측 가능하고 동일한 패턴을 따릅니다. 이미지의 경우, 각 이미지는 P-TIFF 마스터 이미지에서 생성됩니다.
 
 다음은 두 가지 예제가 있는 이미지의 URL 구문입니다.
 
@@ -130,30 +130,30 @@ Dynamic Media Classic 워크플로우의 최종 제품은 자산(이미지 세�
 
 URL에서 물음표의 왼쪽에 있는 모든 항목은 특정 이미지에 대한 가상 경로입니다. 물음표의 오른쪽에는 이미지 서버 수정자인 이미지 서버 수정자가 있으며, 이는 이미지를 처리하는 방법에 대한 명령입니다. 수정자가 여러 개인 경우 앰퍼샌드로 구분됩니다.
 
-첫 번째 예에서 &quot;Backpack_A&quot; 이미지의 가상 경로는 `http://sample.scene7.com/is/image/s7train/BackpackA`입니다. 이미지 서버 한정자는 이미지 크기를 250픽셀(wid=250)의 너비로 조정하고 크기를 조정할 때(resMode=sharp2)에 따라 선명하게 하는 Lanczos 보간 알고리즘을 사용하여 이미지를 조정합니다.
+첫 번째 예에서는 &quot;Backpack_A&quot; 이미지의 가상 경로가 입니다 `http://sample.scene7.com/is/image/s7train/BackpackA`. 이미지 서버 한정자는 이미지 크기를 250픽셀(wid=250)의 너비로 조정하고 크기를 조정할 때(resMode=sharp2)에 따라 선명하게 하는 Lanczos 보간 알고리즘을 사용하여 이미지를 조정합니다.
 
 두 번째 예에서는 $!_template300$. 표현식의 양쪽에 있는 $ 기호는 패키지된 이미지 수정자 세트인 이미지 사전 설정이 이미지에 적용되어 있음을 나타냅니다.
 
-Dynamic Media Classic URL을 통합하는 방법을 이해하면 프로그래밍 방식으로 변경하는 방법과 이들을 사이트 및 백엔드 시스템에 더 많이 통합하는 방법을 이해할 수 있습니다.
+Dynamic Media Classic URL을 통합하는 방법을 이해하면 프로그래밍 방식으로 변경하는 방법과 이들을 사이트 및 백엔드 시스템에 통합하는 방법을 이해할 수 있습니다.
 
 ### 개념: 캐싱 지연 이해
 
-새로 업로드하고 게시된 자산이 바로 표시되지만, 업데이트된 자산은 캐싱 지연 10시간이 걸릴 수 있습니다. 기본적으로 게시된 모든 자산은 만료되기 최소 10시간 전에 만료됩니다. 최소라고 합니다. 이미지를 볼 때마다, 10시간이 지나도 아무도 해당 이미지를 보지 못한 시간까지 만료되지 않는 시계가 시작됩니다. 이 10시간 기간은 자산의 &quot;Time to Live&quot;입니다. 해당 자산에 대한 캐시가 만료되면 업데이트된 버전이 배달될 수 있습니다.
+새로 업로드하고 게시된 자산이 바로 표시되지만, 업데이트된 자산은 캐싱 지연 10시간이 걸릴 수 있습니다. 기본적으로 게시된 모든 자산은 만료되기 최소 10시간 전에 만료됩니다. 최소라고 합니다. 왜냐하면 이미지를 볼 때마다, 10시간이 지나도 아무도 해당 이미지를 보지 못한 시간이 경과하기 전까지는 만료되지 않는 시계가 시작됩니다. 이 10시간 기간은 자산의 &quot;Time to Live&quot;입니다. 해당 자산에 대한 캐시가 만료되면 업데이트된 버전이 배달될 수 있습니다.
 
 일반적으로 오류가 발생하지 않고 이미지/자산의 이름이 이전에 게시된 버전과 동일하지만 이미지에 문제가 있습니다. 예를 들어 실수로 저해상도 버전을 업로드했거나 아트 디렉터가 이미지를 승인하지 않았습니다. 이 경우 원본 이미지를 회수하여 동일한 자산 ID를 사용하여 새 버전으로 바꾸려고 합니다.
 
-[업데이트해야 하는 URL에 대한 캐시를 수동으로 지우는 방법을 알아봅니다](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/invalidate-cdn-cache-dynamic-media.html?lang=en).
+방법 알아보기 [업데이트해야 하는 URL의 캐시를 수동으로 지웁니다.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/invalidate-cdn-cache-dynamic-media.html?lang=ko-KR).
 
 >[!TIP]
 >
 >캐싱 지연과 관련된 문제를 방지하려면 항상 저녁, 하루, 2주 등 미리 작업하십시오. 대중에게 공개되기 전에 작업을 입증할 내부 당사자에 대한 QA/수락에 대한 시간을 작성하십시오. 전날 저녁에 작업하더라도 변경 작업을 수행하고 그날 저녁에 다시 게시할 수 있습니다. 아침까지, 10시간이 경과했고 캐시는 올바른 이미지로 업데이트됩니다.
 
-- [게시 작업 만들기](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/publishing-files.html#creating-a-publish-job)에 대해 자세히 알아보십시오.
-- [게시](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/publishing-files.html)에 대해 자세히 알아보십시오.
+- 추가 정보 [게시 작업 만들기](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/publishing-files.html#creating-a-publish-job).
+- 추가 정보 [게시](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/publishing-files.html).
 
 ## 3단계: 배달
 
-Dynamic Media Classic 워크플로우의 최종 제품은 자산을 가리키는 URL입니다. 이 URL은 개별 이미지, 이미지 세트, 스핀 세트 또는 기타 이미지 세트 컬렉션이나 비디오를 가리킬 수 있습니다. 해당 URL을 가져와서 `<IMG>` 태그가 현재 사이트에서 오는 이미지를 가리키는 대신 Dynamic Media Classic 이미지를 가리키도록 HTML을 편집하는 등의 작업을 수행해야 합니다.
+Dynamic Media Classic 워크플로우의 최종 제품은 자산을 가리키는 URL입니다. 이 URL은 개별 이미지, 이미지 세트, 스핀 세트 또는 기타 이미지 세트 컬렉션이나 비디오를 가리킬 수 있습니다. 해당 URL을 사용하여 다음을 수행할 수 있도록 HTML 편집 등의 작업을 수행해야 합니다. `<IMG>` 태그는 현재 사이트에서 오는 이미지를 가리키는 대신 Dynamic Media Classic 이미지를 가리킵니다.
 
 게재 단계에서 이러한 URL을 웹 사이트, 모바일 앱, 이메일 캠페인 또는 자산을 표시할 기타 모든 디지털 터치 포인트에 통합해야 합니다.
 
@@ -163,9 +163,9 @@ Dynamic Media Classic 워크플로우의 최종 제품은 자산을 가리키는
 
 빨간색 URL은 Dynamic Media Classic에 고유한 유일한 요소입니다.
 
-IT 팀이나 통합 파트너는 Dynamic Media Classic URL을 사이트에 통합하기 위해 코드 작성 및 변경을 주도할 수 있습니다. Adobe에는 기술, 크리에이티브 또는 일반 지침을 제공하여 이러한 작업에 도움이 되는 컨설팅 팀이 있습니다.
+IT 팀이나 통합 파트너는 코드 작성 및 변경을 주도하여 Dynamic Media Classic URL을 사이트에 통합할 수 있습니다. Adobe에는 기술, 크리에이티브 또는 일반 지침을 제공하여 이러한 작업에 도움이 되는 컨설팅 팀이 있습니다.
 
-확대/축소 뷰어나 확대/축소 및 대체 보기를 결합하는 뷰어와 같은 보다 복잡한 솔루션의 경우, 일반적으로 URL은 Dynamic Media Classic에서 호스팅되는 뷰어를 가리키며, 해당 URL 내에서도 자산 ID에 대한 참조입니다.
+확대/축소 뷰어나 확대/축소 및 대체 보기를 결합하는 뷰어와 같은 보다 복잡한 솔루션의 경우, 일반적으로 URL은 Dynamic Media Classic에서 호스팅하는 뷰어를 가리키며, 해당 URL 내에서도 자산 ID에 대한 참조입니다.
 
 새 팝업 창에서 뷰어에서 이미지 세트를 여는 링크의 예(빨간색):
 
@@ -177,14 +177,14 @@ IT 팀이나 통합 파트너는 Dynamic Media Classic URL을 사이트에 통�
 
 ## 자산 미리 보기
 
-업로드한 자산을 미리 보거나 만들거나 편집하고 있는 자산을 고객이 볼 때 원하는 대로 표시되도록 하려는 경우 자산의 축소판 그림, **찾아보기/빌드 패널**&#x200B;의 맨 위에 있는 **미리 보기** 단추를 클릭하거나 **파일 > 미리 보기**&#x200B;로 이동하여 미리 보기 창에 액세스할 수 있습니다. 브라우저 창에서, 이미지 세트이든, 비디오 자산이든, 이미지 세트이든, 현재 패널에 있는 자산이든 미리 봅니다.
+업로드한 자산을 미리 보거나 만들거나 편집하고 있는 자산을 고객이 볼 때 원하는 대로 표시되도록 하려는 경우 임의의 **미리 보기** 자산의 축소판 위에 있는 단추와 **찾아보기/빌드 패널**&#x200B;또는 **파일 > 미리 보기**. 브라우저 창에서, 이미지 세트이든, 비디오 자산이든, 이미지 세트이든, 현재 패널에 있는 자산이든 미리 봅니다.
 
 ### 동적 크기 미리 보기(이미지 사전 설정)
 
-**크기** 미리 보기를 사용하여 여러 크기로 이미지를 미리 볼 수 있습니다. 사용 가능한 이미지 사전 설정 목록이 로드됩니다. 나중에 이미지 사전 설정에 대해 설명하겠지만 특정 양의 선명하게 하기 및 이미지 품질로 명명된 크기로 이미지를 로드하는 &quot;레서피&quot;로 간주합니다.
+이미지를 **크기** 미리 보기. 사용 가능한 이미지 사전 설정 목록이 로드됩니다. 나중에 이미지 사전 설정에 대해 설명하겠지만 특정 양의 선명하게 하기 및 이미지 품질로 명명된 크기로 이미지를 로드하는 &quot;레서피&quot;로 간주합니다.
 
 ### 확대/축소 미리 보기
 
-**확대/축소** 옵션을 사용하여 포함된 다른 확대/축소 뷰어를 기반으로 하는 미리 만들어진 확대/축소 사전 설정 중 하나에서 이미지를 미리 볼 수도 있습니다.
+를 사용할 수도 있습니다 **확대/축소** 포함된 다양한 확대/축소 뷰어를 기반으로 하는 다양한 사전 설정 중 하나에서 이미지를 미리 보는 옵션.
 
-[자산 미리 보기](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/managing-assets/previewing-asset.html)에 대해 자세히 알아보십시오.
+추가 정보 [자산 미리 보기](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/managing-assets/previewing-asset.html).

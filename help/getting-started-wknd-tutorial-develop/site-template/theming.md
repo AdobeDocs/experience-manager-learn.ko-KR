@@ -11,20 +11,20 @@ level: Beginner
 kt: 7498
 thumbnail: KT-7498.jpg
 exl-id: 98946462-1536-45f9-94e2-9bc5d41902d4
-source-git-commit: 25a1a40f42d37443db9edc0e09b1691b1c19e848
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '482'
-ht-degree: 0%
+source-wordcount: '479'
+ht-degree: 1%
 
 ---
 
 # 모니터링 워크플로우 {#theming}
 
-이 장에서는 Adobe Experience Manager 사이트의 테마 소스를 업데이트하여 브랜드별 스타일을 적용합니다. 라이브 사이트에 대해 코드를 지정하는 동안 프록시 서버를 사용하여 CSS 및 Javascript 업데이트 미리 보기를 보는 방법을 배웁니다. 또한 이 자습서에서는 Adobe Cloud Manager의 프런트 엔드 파이프라인을 사용하여 AEM 사이트에 테마 업데이트를 배포하는 방법을 다룹니다.
+이 장에서는 Adobe Experience Manager 사이트의 테마 소스를 업데이트하여 브랜드별 스타일을 적용합니다. 라이브 사이트에 대해 코드를 지정할 때 프록시 서버를 사용하여 CSS 및 Javascript 업데이트 미리 보기를 보는 방법을 알아봅니다. 또한 이 자습서에서는 Adobe Cloud Manager의 프런트 엔드 파이프라인을 사용하여 AEM 사이트에 테마 업데이트를 배포하는 방법을 다룹니다.
 
 마지막에 WKND 브랜드에 일치하는 스타일을 포함하도록 사이트가 업데이트됩니다.
 
-## 전제 조건 {#prerequisites}
+## 사전 요구 사항 {#prerequisites}
 
 이 내용은 여러 부분으로 구성된 자습서이며 [페이지 템플릿](./page-templates.md) 장이 완료되었습니다.
 

@@ -13,10 +13,10 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 497ce6d7-cd39-4fb3-b5e0-6c60845f7648
-source-git-commit: 631fef25620c84e04c012c8337c9b76613e3ad46
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '2263'
-ht-degree: 0%
+source-wordcount: '2256'
+ht-degree: 1%
 
 ---
 
@@ -34,11 +34,11 @@ AEM SPA Editor JS SDK를 사용하여 AEM(Adobe Experience Manager) 구성 요�
 
 ## 빌드할 내용
 
-이 장에서는 `Text` SPA 구성 요소가 AEM에 매핑됩니다 `Text`구성 요소. 다음과 같은 React 코어 구성 요소 `Image` SPA 구성 요소는 SPA에서 사용되고 AEM에서 작성됩니다. 기본 제공되는 **레이아웃 컨테이너** 및 **템플릿 편집기** 모양새가 조금씩 다르다.
+이 장에서는 제공되는 방법을 검사합니다 `Text` SPA 구성 요소가 AEM에 매핑됩니다 `Text`구성 요소. 다음과 같은 React 코어 구성 요소 `Image` SPA 구성 요소는 SPA에서 사용되고 AEM에서 작성됩니다. 기본 제공되는 **레이아웃 컨테이너** 및 **템플릿 편집기** 모양새가 조금씩 다르다.
 
 ![장 샘플 최종 작성](./assets/map-components/final-page.png)
 
-## 전제 조건
+## 사전 요구 사항
 
 설정에 필요한 도구 및 지침을 검토합니다. [로컬 개발 환경](overview.md#local-dev-environment). 이 장은 ...의 연속이다 [SPA 통합](integrate-spa.md) 이 장에서는 SPA을 사용할 수 있는 AEM 프로젝트를 설명합니다.
 
@@ -67,7 +67,7 @@ AEM SPA Editor JS SDK를 사용하여 AEM(Adobe Experience Manager) 구성 요�
 
    `:type` 는 `sling:resourceType` AEM 구성 요소의 (또는 경로). 다음 값 `:type` 는 AEM 구성 요소를 SPA 구성 요소에 매핑하는 데 사용되는 것입니다.
 
-   `text` 및 `richText` SPA 구성 요소에 노출될 추가 속성입니다.
+   `text` 및 `richText` SPA 구성 요소에 노출되는 추가 속성입니다.
 
 1. 에서 JSON 출력을 봅니다. [http://localhost:4502/content/wknd-spa-react/us/en.model.json](http://localhost:4502/content/wknd-spa-react/us/en.model.json). 다음과 유사한 항목을 찾을 수 있습니다.
 
@@ -282,7 +282,7 @@ AEM SPA Editor JS SDK를 사용하여 AEM(Adobe Experience Manager) 구성 요�
     </workspaceFilter>
    ```
 
-   다음 `filter.xml` 파일은 패키지와 함께 설치할 노드의 경로를 식별해야 합니다. 다음 사항에 주의하십시오. `mode="merge"` 기존 컨텐츠가 수정되지 않음을 나타내는 각 필터에 새 컨텐츠만 추가됩니다. 컨텐츠 작성자는 이러한 경로를 업데이트할 수 있으므로 코드 배포가 수행하는 것이 중요합니다 **not** 콘텐츠를 덮어씁니다. 자세한 내용은 [FileVault 설명서](https://jackrabbit.apache.org/filevault/filter.html) 를 참조하십시오.
+   다음 `filter.xml` 파일은 패키지와 함께 설치된 노드의 경로를 식별해야 합니다. 다음 사항에 주의하십시오. `mode="merge"` 기존 컨텐츠가 수정되지 않음을 나타내는 각 필터에 새 컨텐츠만 추가됩니다. 컨텐츠 작성자는 이러한 경로를 업데이트할 수 있으므로 코드 배포가 수행하는 것이 중요합니다 **not** 콘텐츠를 덮어씁니다. 자세한 내용은 [FileVault 설명서](https://jackrabbit.apache.org/filevault/filter.html) 를 참조하십시오.
 
    비교 `ui.content/src/main/content/META-INF/vault/filter.xml` 및 `ui.apps/src/main/content/META-INF/vault/filter.xml` 각 모듈에서 관리하는 서로 다른 노드를 이해하기 위해
 
@@ -298,11 +298,11 @@ SPA 코드로 이동하기 전에 AEM에서 제공하는 JSON 모델을 검사�
 
    ![이미지 코어 구성 요소 JSON](./assets/map-components/image-json.png)
 
-   속성 `src`, `alt`, 및 `title` 는 SPA을 채우는 데 사용됩니다. `Image` 구성 요소.
+   속성 `src`, `alt`, 및 `title` 는 SPA을 채우는 데 사용됩니다 `Image` 구성 요소.
 
    >[!NOTE]
    >
-   > 다른 이미지 속성이 노출되어 있습니다(`lazyEnabled`, `widths`)을 클릭하여 개발자가 적응형 및 지연 로드 구성 요소를 만들 수 있습니다. 이 자습서에 포함된 구성 요소는 간단하며 **not** 이러한 고급 속성을 사용합니다.
+   > 다른 이미지 속성이 노출되어 있습니다(`lazyEnabled`, `widths`)을 클릭하여 개발자가 적응형 및 지연 로드 구성 요소를 만들 수 있습니다. 이 자습서에 포함된 구성 요소는 간단하며 수행합니다 **not** 이러한 고급 속성을 사용합니다.
 
 ### 이미지 구성 요소 구현
 

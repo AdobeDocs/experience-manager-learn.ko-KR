@@ -13,9 +13,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: d0bd64bd-9e6c-4a28-a8d9-52bb37b27a09
-source-git-commit: 2685f2553349d6f0b48e03f2ed24dcea7ad9ac70
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '999'
+source-wordcount: '998'
 ht-degree: 2%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 2%
 Pod Id는 각 로그 문에 제공되며 로그 문을 필터링하거나 수집할 수 있습니다. Pod Id의 형식은 다음과 같습니다.
 
 + `cm-p<PROGRAM ID>-e<ENVIRONMENT ID>-aem-<author|publish>-<POD NAME>`
-+ 예: `cm-p12345-e56789-aem-author-abcdefabde-98765`
++ 예제: `cm-p12345-e56789-aem-author-abcdefabde-98765`
 
 ## 사용자 지정 로그 파일
 
@@ -144,7 +144,7 @@ $ aio cloudmanager:download-logs <ENVIRONMENT> <SERVICE> <NAME> <DAYS>
 
 ## 로그 이해
 
-AEM에 로그인하면 as a Cloud Service으로 로그 명령문을 작성하는 여러 pod가 있습니다. 여러 AEM 인스턴스가 동일한 로그 파일에 쓰기 때문에 디버깅하는 동안 분석을 이해하고 노이즈를 줄이는 방법을 이해하는 것이 중요합니다. 설명하기 위해 다음을 수행합니다 `aemerror` 로그 조각이 사용됩니다.
+AEM에 로그인하면 as a Cloud Service으로 로그 명령문을 작성하는 여러 pod가 있습니다. 여러 AEM 인스턴스가 동일한 로그 파일에 쓰기 때문에 디버깅하는 동안 분석을 이해하고 노이즈를 줄이는 방법을 이해하는 것이 중요합니다. 설명하기 위해 다음을 수행합니다 `aemerror` 로그 코드 조각 사용:
 
 ```
 01.01.2020 12:00:00.000 [cm-p12345-e56789-aem-author-abcdefg-1111] *DEBUG* [qtp2078364989-269] com.example.components.impl.ExampleModelImpl Preparing to collect resources

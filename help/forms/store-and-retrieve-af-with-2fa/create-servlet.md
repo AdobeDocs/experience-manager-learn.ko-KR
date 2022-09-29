@@ -1,26 +1,27 @@
 ---
 title: 서블릿 만들기
 description: 양식 데이터를 저장할 POST 요청을 처리할 서블릿 만들기
-feature: 적응형 양식
+feature: Adaptive Forms
 type: Tutorial
 version: 6.4,6.5
 kt: 6539
 thumbnail: 6539.pg
-topic: 개발
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: a24ea445-3997-4324-99c4-926b17c8d2ac
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '86'
-ht-degree: 3%
+source-wordcount: '80'
+ht-degree: 0%
 
 ---
 
 # 서블릿 만들기
 
-다음 단계는 사용자 지정 OSGi 서비스의 적절한 메서드를 호출할 서블릿을 만드는 것입니다. 서블릿은 적응형 양식 데이터, 파일 첨부 정보에 액세스할 수 있습니다. 서블릿은 부분적으로 완료된 적응형 양식을 검색하는 데 사용할 수 있는 고유한 애플리케이션 ID를 반환합니다.
+다음 단계는 사용자 지정 OSGi 서비스의 적절한 메서드를 호출하는 서블릿을 만드는 것입니다. 서블릿은 적응형 양식 데이터, 파일 첨부 정보에 액세스할 수 있습니다. 서블릿은 부분적으로 완료된 적응형 양식을 검색하는 데 사용할 수 있는 고유한 애플리케이션 ID를 반환합니다.
 
-사용자가 적응형 양식의 저장 및 종료 단추를 클릭하면 이 서블릿이 호출됩니다
+이 서블릿은 사용자가 적응형 양식에서 저장 및 종료 단추를 클릭하면 호출됩니다
 
 ```java
 package com.techmarketing.core.servlets;

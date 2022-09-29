@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: f89cd02d-3ffe-42c6-b547-c0445f912ee8
-source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '358'
 ht-degree: 0%
 
 ---
@@ -89,15 +89,13 @@ public class DecodeBarCode extends SlingSafeMethodsServlet {
    // TODO Auto-generated catch block
    e1.printStackTrace();
   }
-
  }
-
 }
 ```
 
 다음 코드는 적응형 양식에서 참조하는 클라이언트 라이브러리의 일부입니다. 사용자가 적응형 양식에 첨부 파일을 추가하면 이 코드가 트리거됩니다. 이 코드는 요청 매개 변수에서 전달된 첨부 파일의 경로를 사용하여 서블릿을 GET으로 호출합니다. 그런 다음 서블릿 호출에서 수신한 데이터를 사용하여 적응형 양식을 채웁니다.
 
-```
+```javascript
 $(document).ready(function()
    {
        guideBridge.on("elementValueChanged",function(event,data){
@@ -138,7 +136,7 @@ $(document).ready(function()
 
 23행 - DocumentServices extractBarCode 메서드를 호출하여 디코딩된 데이터로 JSON 개체를 채웁니다
 
-시스템에서 이 작업을 실행하려면 다음 단계를 수행하십시오
+시스템에서 이 작업을 실행하려면 다음 단계를 수행하십시오.
 
 1. [BarcodeService.zip 다운로드](assets/barcodeservice.zip) 패키지 관리자를 사용하여 AEM으로 가져옵니다.
 1. [사용자 지정 DocumentServices 번들 다운로드 및 설치](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
