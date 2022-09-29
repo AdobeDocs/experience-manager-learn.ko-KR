@@ -5,9 +5,9 @@ user-guide-title: AEM Forms 비디오 및 튜토리얼
 user-guide-description: 초보자 및 숙련된 AEM Forms 개발자를 위한 AEM Forms 리소스 모음입니다.
 breadcrumb-title: AEM Forms 튜토리얼
 index: y
-source-git-commit: 164741ce5ae7d00f904365589438c2eaaf1e05db
+source-git-commit: 5277b7a6ceba4473ab2808f980c8faa5bf69c757
 workflow-type: tm+mt
-source-wordcount: '1695'
+source-wordcount: '1701'
 ht-degree: 3%
 
 ---
@@ -155,11 +155,12 @@ ht-degree: 3%
    + [클라이언트 라이브러리 만들기](sign-multiple-documents/create-client-lib.md)
    + [양식 템플릿 만들기](sign-multiple-documents/create-af-template.md)
    + [초기 양식 만들기](sign-multiple-documents/create-initial-form.md)
-   + [서명을 위한 Forms 만들기](sign-multiple-documents/create-forms-for-signing.md)
+   + [서명을 위한 양식 만들기](sign-multiple-documents/create-forms-for-signing.md)
    + [솔루션 테스트](sign-multiple-documents/testing-and-trouble-shooting.md)
 + 사용자 지정 워크플로우 단계{#custom-workflow-steps}
    + [xml 문서에서 노드 추출](custom-workflow-steps/extract-xml-node.md)
    + [파일 시스템에 문서 저장](custom-workflow-steps/write-payload-document.md)
+   + [제출된 데이터를 문자열 변수로 저장](custom-workflow-steps/save-submitted-data-in-string-variable.md)
 + AEM 워크플로우의 변수{#variables-aem-workflow}
    + [소개 - 워크플로우의 변수](variables-aem-workflow/introduction.md)
    + [XML 변수](variables-aem-workflow/part1.md)
