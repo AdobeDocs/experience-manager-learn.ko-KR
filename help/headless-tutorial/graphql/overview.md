@@ -6,14 +6,14 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 0056971f-2f89-43b3-bb6f-dd16c2a50370
-source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
+source-git-commit: 332ad831b6c49e8599aa2181caf978d5626c1aba
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 1%
+source-wordcount: '267'
+ht-degree: 2%
 
 ---
 
-# AEM 헤드리스 시작하기 - GraphQL
+# AEM 헤드리스 시작하기 - GraphQL {#getting-started-with-aem-headless}
 
 컨텐츠 조각용 AEM GraphQL API는 AEM에서 관리되는 컨텐츠를 사용하여 외부 클라이언트 애플리케이션이 경험을 렌더링하는 헤드리스 CMS 시나리오를 지원합니다.
 
@@ -27,6 +27,12 @@ ht-degree: 1%
 >[!VIDEO](https://video.tv.adobe.com/v/328618/?quality=12&learn=on)
 
 이 비디오는 AEM에서 구현된 GraphQL API에 대한 개요입니다. AEM의 GraphQL API는 헤드리스 배포의 일부로서 다운스트림 애플리케이션에 AEM 컨텐츠 조각을 제공하도록 설계되었습니다.
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_learn_headless_graphql_overview"
+>title="AEM 헤드리스 시작"
+>abstract="GraphQL을 사용하여 컨텐츠 조각을 제공하는 방법을 알아봅니다."
+>additional-url="https://video.tv.adobe.com/v/328618" text="AEM의 GraphQL 개요"
 
 ## AEM 헤드리스 GraphQL 비디오 시리즈
 
