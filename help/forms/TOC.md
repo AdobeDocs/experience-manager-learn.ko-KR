@@ -5,9 +5,9 @@ user-guide-title: AEM Forms 비디오 및 튜토리얼
 user-guide-description: 초보자 및 숙련된 AEM Forms 개발자를 위한 AEM Forms 리소스 모음입니다.
 breadcrumb-title: AEM Forms 튜토리얼
 index: y
-source-git-commit: 5277b7a6ceba4473ab2808f980c8faa5bf69c757
+source-git-commit: 747d1823ce1bc6670d1e80abcf6483ac921c0a01
 workflow-type: tm+mt
-source-wordcount: '1701'
+source-wordcount: '1707'
 ht-degree: 3%
 
 ---
@@ -214,6 +214,7 @@ ht-degree: 3%
    + [AEM Forms에서 바코드 서비스 사용](document-services/barcode-service-adaptive-forms-article.md)
    + [AEM Forms에서 PDFG 서비스 사용](document-services/using-pdfg-in-aem-forms.md)
    + [AEM Forms에서 출력 및 Forms 서비스 사용](document-services/output-and-forms-services-article-develop.md)
+   + [출력 서비스에서 xdp 조각 사용](document-services/using-fragments-in-output-service.md)
    + [하나의 데이터 파일에서 여러 pdf 생성](document-services/generate-multi-record-pdf.md)
    + [모바일 양식 제출 시 PDF 생성](document-services/generate-pdf-from-mobile-form-submission-article.md)
    + [모바일 양식에서 대화형 PDF 생성](document-services/render-interactive-form-using-api.md)
