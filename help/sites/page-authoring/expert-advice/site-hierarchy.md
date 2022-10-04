@@ -1,24 +1,12 @@
 ---
-title: 사이트 계층, 분류 및 태깅 팁
-seo-title: Overview of Authoring in AEM Sites
-description: 다음 비디오에서는 AEM 작성 환경에서 작성에 대한 기본 개념에 대한 개요를 제공합니다. 사이트 콘솔을 기본으로 사용합니다.
-seo-description: The following video provides an overview of basic concepts of authoring in an AEM author environment. It uses the Sites console as a basis.
-feature: Page Editor, Editable Templates
-topics: authoring, publishing
+title: 사이트 계층, 분류 및 태깅 안내서
+seo-title: AEM Sites Site Hierarchy, Taxonomy, and Tagging Guide
+description: AEM Sites 메타데이터, 태깅, 분류 및 계층에 대한 전체 개요입니다. 이 안내서를 사용하여 컨텐츠 전략이 일관되고 우수 사례를 따를 수 있습니다
+seo-description: A full overview of AEM Sites metadata, tagging, taxonomy, and hierarchy. Use this guide to ensure your content strategy is consistent and following best practices
 audience: author, marketer
-doc-type: feature video
-activity: use
-version: 6.4, 6.5, Cloud Service
-kt: 4242
-thumbnail: 33594.jpg
-topic: Content Management
-role: User
-level: Beginner
-hide: true
-hidefromtoc: true
-source-git-commit: 3335069883db38a2748af114ab7505cc34dec270
+source-git-commit: d545e7bb5e937959e2ede2b3c1ecfc312df5a044
 workflow-type: tm+mt
-source-wordcount: '2033'
+source-wordcount: '2034'
 ht-degree: 0%
 
 ---

@@ -1,11 +1,12 @@
 ---
-title: 사이트 유지 관리 팁과 트릭
-description: 사이트 유지 관리 팁과 트릭
-hide: true
-hidefromtoc: true
-source-git-commit: 3eb429039589ae26a81bc6d24f020a77517133e8
+title: 일상적인 사이트 유지 관리 가이드
+seo-title: Your Routine Site Maintenance Guide
+description: 관리자, 작성자 또는 개발자 등 모든 사이트 유지 관리는 AEM Sites 인스턴스의 모든 측면을 다룹니다. 이 안내서를 사용하여 전략이 성공하도록 합니다.
+seo-description: Whether you're an admin, author, or developer, site maintenance touches every aspect of your AEM Sites instance. Use this guide to ensure your strategy is set up for success.
+audience: author, marketer, developer
+source-git-commit: d545e7bb5e937959e2ede2b3c1ecfc312df5a044
 workflow-type: tm+mt
-source-wordcount: '1070'
+source-wordcount: '1094'
 ht-degree: 5%
 
 ---
