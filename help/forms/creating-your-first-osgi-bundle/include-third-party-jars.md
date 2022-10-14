@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Beginner
 kt: kt-11245
-source-git-commit: 061077fb6cd8ac7b760aa30b884ced6d4d3c3b20
+source-git-commit: 8944a4feaefbc4cf0db52011a0d49b22341780c0
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '268'
 ht-degree: 0%
 
 ---
@@ -59,6 +59,6 @@ mvn clean install -pAutoInstallSinglePackage
 
 모든 것이 제대로 작동하면 패키지가 타사 번들과 함께 AEM 인스턴스에 설치됩니다. 을 사용하여 번들을 확인할 수 있습니다 [felix web console](http://localhost:4502/system/console/bundles). 타사 번들은 의 /apps 폴더에서 사용할 수 있습니다 `crx` 아래와 같이 저장소
 ![서드파티](assets/custom-bundle1.png)
-![서드파티](assets/custom-bundle1.png)
+
 
 
