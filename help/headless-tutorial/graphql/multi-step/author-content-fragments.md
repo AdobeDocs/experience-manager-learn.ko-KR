@@ -10,16 +10,16 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 701fae92-f740-4eb6-8133-1bc45a472d0f
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 25c289b093297e870c52028a759d05628d77f634
 workflow-type: tm+mt
-source-wordcount: '817'
+source-wordcount: '810'
 ht-degree: 2%
 
 ---
 
 # 컨텐츠 조각 작성 {#authoring-content-fragments}
 
-이 장에서는 [새로 정의된 컨텐츠 조각 모델](./content-fragment-models.md). 컨텐츠 조각의 변형을 만드는 방법도 알아봅니다.
+이 장에서는 다음을 기반으로 새 컨텐츠 조각을 만들고 편집합니다 [새로 정의된 컨텐츠 조각 모델](./content-fragment-models.md). 컨텐츠 조각의 변형을 만드는 방법도 알아봅니다.
 
 ## 사전 요구 사항 {#prerequisites}
 
@@ -38,7 +38,7 @@ ht-degree: 2%
 
    ![자산 파일로 이동](assets/author-content-fragments/navigate-assets-files.png)
 
-1. 탭 **만들기** 모퉁이에서 **폴더**. 결과 대화 상자에서 다음을 입력합니다.
+1. 탭 **만들기** 오른쪽 상단 모서리에서 **폴더**. 결과 대화 상자에서 다음을 입력합니다.
 
    * 제목*: **내 프로젝트**
    * 이름: **내 프로젝트**
@@ -49,13 +49,13 @@ ht-degree: 2%
 
    ![폴더 속성 열기](assets/author-content-fragments/open-folder-properties.png)
 
-1. 탭하기 **Cloud Services** 탭. 아래 **클라우드 구성** 경로 파인더를 사용하여 **내 프로젝트** 구성. 값은 `/conf/my-project`.
+1. 탭하기 **Cloud Services** 탭. 클라우드 구성 탭에서 경로 파인더를 사용하여 **내 프로젝트** 구성. 값은 `/conf/my-project`.
 
    ![클라우드 구성 설정](assets/author-content-fragments/set-cloud-config-my-project.png)
 
    이 속성을 설정하면 이전 장에서 만든 모델을 사용하여 컨텐츠 조각을 만들 수 있습니다.
 
-1. 탭하기 **정책** 탭. 아래 **허용된 컨텐츠 조각 모델** 경로 파인더를 사용하여 **개인** 및 **팀** 앞에서 만든 모델.
+1. 탭하기 **정책** 탭, 아래 **허용된 컨텐츠 조각 모델** 필드 경로 파인더를 사용하여 **개인** 및 **팀** 앞에서 만든 모델.
 
    ![허용된 컨텐츠 조각 모델](assets/author-content-fragments/allowed-content-fragment-models.png)
 
@@ -77,11 +77,11 @@ ht-degree: 2%
 
 다음 여러 컨텐츠 조각은 **팀** 및 **개인** 모델.
 
-1. AEM 시작 화면에서 탭하기 **컨텐츠 조각** 컨텐츠 조각 UI를 엽니다.
+1. AEM 시작 화면에서 **컨텐츠 조각** 컨텐츠 조각 UI를 엽니다.
 
    ![컨텐츠 조각 UI](assets/author-content-fragments/cf-fragment-ui.png)
 
-1. 왼쪽 레일에서 확장됩니다 **내 프로젝트** 탭 **영어**.
+1. 왼쪽 레일에서 를 확장합니다. **내 프로젝트** 탭 **영어**.
 1. 탭 **만들기** 그것을 끄다 **새 컨텐츠 조각** 대화 상자를 열고 다음 값을 입력합니다.
 
    * 위치: `/content/dam/my-project/en`
@@ -91,25 +91,25 @@ ht-degree: 2%
 
    ![새 콘텐츠 조각](assets/author-content-fragments/new-content-fragment-john-doe.png)
 1. 탭 **만들기**.
-1. 위의 단계를 반복하여 을 나타내는 새 조각을 만듭니다 **앨리슨 스미스**:
+1. 위의 단계를 반복하여 을 나타내는 조각을 만듭니다 **앨리슨 스미스**:
 
    * 위치: `/content/dam/my-project/en`
    * 컨텐츠 조각 모델: **개인**
    * 제목: **앨리슨 스미스**
    * 이름: `alison-smith`
 
-   탭 **만들기** 새 개인 조각을 생성하려면 다음을 수행하십시오.
+   탭 **만들기** 개인 조각을 생성합니다.
 
-1. 그런 다음 단계를 반복하여 새 를 만듭니다 **팀** 을 나타내는 조각 **팀 알파**:
+1. 그런 다음 단계를 반복하여 를 만듭니다 **팀** 을 나타내는 조각 **팀 알파**:
 
    * 위치: `/content/dam/my-project/en`
    * 컨텐츠 조각 모델: **팀**
    * 제목: **팀 알파**
    * 이름: `team-alpha`
 
-   탭 **만들기** 새 팀 조각을 만들려면
+   탭 **만들기** 팀 조각을 만들려면
 
-1. 이제 세 개의 컨텐츠 조각이 아래에 있어야 합니다 **내 프로젝트** > **영어**:
+1. 아래에 세 개의 컨텐츠 조각이 있어야 합니다 **내 프로젝트** > **영어**:
 
    ![새 컨텐츠 조각](assets/author-content-fragments/new-content-fragments.png)
 
@@ -139,7 +139,7 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >를 사용하여 새 컨텐츠 조각을 인라인 만들 수도 있습니다 **새 컨텐츠 조각** 버튼을 클릭합니다.
+   >를 사용하여 컨텐츠 조각을 인라인 만들 수도 있습니다 **새 컨텐츠 조각** 버튼을 클릭합니다.
 
 1. 탭 **저장 및 닫기** 팀 알파 조각에 대한 변경 사항을 저장하려면 을 클릭합니다.
 
@@ -147,12 +147,11 @@ ht-degree: 2%
 
 검토 및 확인 시 작성된 문서를 게시합니다 `Content Fragments`
 
-1. AEM 시작 화면에서 탭하기 **컨텐츠 조각** 컨텐츠 조각 UI를 엽니다.
+1. AEM 시작 화면에서 **컨텐츠 조각** 컨텐츠 조각 UI를 엽니다.
 
-1. 왼쪽 레일에서 확장됩니다 **내 프로젝트** 탭 **영어**.
+1. 왼쪽 레일에서 를 확장합니다. **내 프로젝트** 탭 **영어**.
 
-1. 컨텐츠 조각 옆에 있는 확인란을 탭하고 탭합니다 **게시**
-
+1. 컨텐츠 조각 옆에 있는 확인란을 탭하고 탭합니다 **게시**.
    ![컨텐츠 조각 게시](assets/author-content-fragments/publish-content-fragment.png)
 
 ## 축하합니다! {#congratulations}

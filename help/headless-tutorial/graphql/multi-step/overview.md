@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 41e15a2c-758b-4e7d-9d23-ef671c1dc155
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 25c289b093297e870c52028a759d05628d77f634
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '292'
 ht-degree: 1%
 
 ---
@@ -25,9 +25,9 @@ AEM GraphQL API를 사용하여 컨텐츠를 작성하고 노출하고 헤드리
 
 이 자습서에서는 다음 주제를 다룹니다.
 
-* 새 프로젝트 구성 만들기
-* 새 컨텐츠 조각 모델을 만들어 데이터를 모델링합니다
-* 이전에 만든 모델을 기반으로 새 컨텐츠 조각을 만듭니다.
+* 프로젝트 구성 만들기
+* 컨텐츠 조각 모델을 만들어 데이터를 모델링합니다
+* 이전에 만든 모델을 기반으로 컨텐츠 조각을 만듭니다.
 * 통합 GraphiQL 개발 도구를 사용하여 AEM에서 컨텐츠 조각을 쿼리할 수 있는 방법을 알아봅니다.
 * GraphQL 쿼리를 AEM에 저장하거나 유지하려면
 * 샘플 React 앱에서 지속적인 GraphQL 쿼리 사용
@@ -39,14 +39,14 @@ AEM GraphQL API를 사용하여 컨텐츠를 작성하고 노출하고 헤드리
 
 * 기본 HTML 및 JavaScript 기술
 * 다음 도구는 로컬로 설치해야 합니다.
-   * [Node.js v10+](https://nodejs.org/en/)
+   * [Node.js v14+](https://nodejs.org/en/)
    * [npm 6+](https://www.npmjs.com/)
    * [Git](https://git-scm.com/)
    * IDE(예: [Microsoft® Visual Studio 코드](https://code.visualstudio.com/))
 
 ### AEM 환경
 
-이 자습서를 완료하려면 AEM Administrator에서 AEM as a Cloud Service 환경에 액세스하는 것이 좋습니다.  AEM as a Cloud Service 환경에 대한 액세스 권한이 없는 경우 [로컬 AEM as a Cloud Service Quickstart SDK](/help/cloud-service/local-development-environment/aem-runtime.md). 하지만 컨텐츠 조각 탐색과 같은 일부 제품 UI 화면이 다르다는 것을 알고 있어야 합니다.
+이 자습서를 완료하려면 AEM Administrator에서 AEM as a Cloud Service 환경에 액세스하는 것이 좋습니다. AEM as a Cloud Service 환경에 대한 액세스 권한이 없는 경우 [로컬 AEM as a Cloud Service Quickstart SDK](/help/cloud-service/local-development-environment/aem-runtime.md). 하지만 컨텐츠 조각 탐색과 같은 일부 제품 UI 화면이 다르다는 점에 유의해야 합니다.
 
 ## 시작해 보겠습니다!
 
