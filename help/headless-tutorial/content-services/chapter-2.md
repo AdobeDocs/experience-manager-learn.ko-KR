@@ -8,7 +8,7 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 8b05fc02-c0c5-48ad-a53e-d73b805ee91f
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 30c882da3a89820b5e11bc2902bb92dd0629efe9
 workflow-type: tm+mt
 source-wordcount: '962'
 ht-degree: 10%
@@ -78,7 +78,7 @@ AEM 컨텐츠 조각 모델은 AEM 작성자가 원시 컨텐츠 만들기를 �
 
 ## 만들 컨텐츠 조각 모델 이해
 
-컨텐츠 조각 모델을 정의하기에 앞서 필요한 모든 데이터 포인트를 캡처하도록 구동할 경험을 살펴보겠습니다. 이를 위해 모바일 애플리케이션 디자인을 검토하고 디자인 요소를 콘텐츠 수집 대상에 매핑하겠습니다.
+컨텐츠 조각 모델을 정의하기 전에 필요한 모든 데이터 포인트를 캡처하도록 구동할 경험을 검토하겠습니다. 이를 위해 모바일 애플리케이션 디자인을 검토하고 디자인 요소를 콘텐츠 수집 대상에 매핑하겠습니다.
 
 다음과 같이 이벤트를 정의하는 데이터 포인트를 분류할 수 있습니다.
 
