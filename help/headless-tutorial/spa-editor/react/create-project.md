@@ -10,7 +10,7 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 57c8fc16-fed5-4af4-b98b-5c3f0350b240
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 09f6c4b0bec10edd306270a7416fcaff8a584e76
 workflow-type: tm+mt
 source-wordcount: '1082'
 ht-degree: 2%
@@ -42,7 +42,7 @@ AEM SPA 편집기와 통합된 반응형 응용 프로그램의 시작점으로 
 
 >[!NOTE]
 >
->이 자습서에서는 버전을 사용합니다 **27년** 원형. 항상 을 사용하는 것이 가장 좋습니다 **최신** 새 프로젝트를 생성할 원형 버전입니다.
+>이 자습서에서는 버전을 사용합니다 **39** 원형. 항상 을 사용하는 것이 가장 좋습니다 **최신** 새 프로젝트를 생성할 원형 버전입니다.
 
 1. 명령줄 터미널을 열고 다음 Maven 명령을 입력합니다.
 
@@ -50,7 +50,7 @@ AEM SPA 편집기와 통합된 반응형 응용 프로그램의 시작점으로 
    mvn -B archetype:generate \
     -D archetypeGroupId=com.adobe.aem \
     -D archetypeArtifactId=aem-project-archetype \
-    -D archetypeVersion=27 \
+    -D archetypeVersion=39 \
     -D appTitle="WKND SPA React" \
     -D appId="wknd-spa-react" \
     -D artifactId="aem-guides-wknd-spa.react" \
@@ -71,18 +71,20 @@ AEM SPA 편집기와 통합된 반응형 응용 프로그램의 시작점으로 
 
    ```plain
    |--- aem-guides-wknd-spa.react/
+       |--- LICENSE
+       |--- README.md
        |--- all/
+       |--- archetype.properties
        |--- core/
+       |--- dispatcher/
+       |--- it.tests/
+       |--- pom.xml
        |--- ui.apps/
        |--- ui.apps.structure/
        |--- ui.config/
        |--- ui.content/
        |--- ui.frontend/
        |--- ui.tests /
-       |--- it.tests/
-       |--- dispatcher/
-       |--- pom.xml
-       |--- README.md
        |--- .gitignore
    ```
 
@@ -159,7 +161,7 @@ AEM SPA 편집기와 통합된 반응형 응용 프로그램의 시작점으로 
 
 4. 추가 **텍스트** 구성 요소를 생성하지 않습니다.
 
-   작성 경험은 기존 AEM Sites 페이지의 경험과 유사합니다. 현재 사용할 수 있는 구성 요소 수는 제한되어 있습니다. 자습서의 교육 과정에 더 많은 정보가 추가됩니다.
+   작성 경험은 기존 AEM Sites 페이지의 경험과 유사합니다. 현재 사용할 수 있는 구성 요소 수는 제한되어 있습니다. 자습서의 교육 과정에 더 많은 항목이 추가됩니다.
 
 ## 단일 페이지 애플리케이션 Inspect
 

@@ -8,9 +8,9 @@ level: Experienced
 kt: 8629
 thumbnail: 336965.jpeg
 exl-id: 310f492c-0095-4015-81a4-27d76f288138
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 09f6c4b0bec10edd306270a7416fcaff8a584e76
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '446'
 ht-degree: 5%
 
 ---
@@ -20,7 +20,21 @@ ht-degree: 5%
 
 AEM 현대화 도구 를 사용하여 기존 AEM Sites 컨텐츠를 AEM과 호환되고 모범 사례에 맞게 업그레이드하는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/336965/?quality=12&learn=on)
+## 올인원 변환기
+
+>[!VIDEO](https://video.tv.adobe.com/v/338802/?quality=12&learn=on)
+
+## 페이지 전환
+
+>[!VIDEO](https://video.tv.adobe.com/v/338799/?quality=12&learn=on)
+
+## 구성 요소 전환
+
+>[!VIDEO](https://video.tv.adobe.com/v/338788/?quality=12&learn=on)
+
+## 정책 가져오기
+
+>[!VIDEO](https://video.tv.adobe.com/v/338797/?quality=12&learn=on)
 
 ## AEM 현대화 도구 사용
 
@@ -88,7 +102,6 @@ AEM 현대화 도구는 기존 정적 템플릿, 기초 구성 요소 및 parsys
 + [AEM Modernize 도구 다운로드](https://github.com/adobe/aem-modernize-tools/releases/latest)
 + [AEM 현대화 도구 설명서](https://opensource.adobe.com/aem-modernize-tools/)
 + [AEM Gems - AEM 현대화 세트 소개](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/Introducing-the-AEM-Modernization-Suite.html)
-
 
 1. 로컬 AEM SDK에 새롭게 현대화된 wknd-legacy 사이트를 배포합니다. AEM ASK는 여기에서 다운로드할 수 있습니다.
    + [소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html).

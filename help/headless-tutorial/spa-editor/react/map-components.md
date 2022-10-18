@@ -13,9 +13,9 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 497ce6d7-cd39-4fb3-b5e0-6c60845f7648
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 09f6c4b0bec10edd306270a7416fcaff8a584e76
 workflow-type: tm+mt
-source-wordcount: '2256'
+source-wordcount: '2257'
 ht-degree: 1%
 
 ---
@@ -112,7 +112,7 @@ AEM SPA Editor JS SDK를 사용하여 AEM(Adobe Experience Manager) 구성 요�
 
    잠재적인 XSS 공격을 방지하기 위해 서식 있는 텍스트는 을 통해 이스케이프 처리합니다 `DOMPurify` 사용 전 [dangerouslySetInnerHTML](https://reactjs.org/docs/dom-elements.html#dangerouslysetinnerhtml) 컨텐츠를 렌더링합니다. 다음 사항을 기억하십시오 `richText` 및 `text` 연습의 앞부분에서 JSON 모델의 속성을 보여줍니다.
 
-1. 다음에 다음을 보십시오 `TextEditConfig` ~29행:
+1. 다음, 엽니다. `ui.frontend/src/components/import-components.js` 이 `TextEditConfig` ~86행:
 
    ```js
    const TextEditConfig = {
@@ -126,10 +126,10 @@ AEM SPA Editor JS SDK를 사용하여 AEM(Adobe Experience Manager) 구성 요�
 
    위의 코드는 AEM 작성 환경에서 자리 표시자를 렌더링할 시기를 결정합니다. 만약 `isEmpty` 메서드 반환 **true** 그러면 자리 표시자가 렌더링됩니다.
 
-1. 마지막으로 `MapTo` ~line 62에서 호출:
+1. 마지막으로 `MapTo` ~line 94에서 호출:
 
    ```js
-   export default MapTo('wknd-spa-react/components/text')(Text, TextEditConfig);
+   export default MapTo('wknd-spa-react/components/text')(LazyTextComponent, TextEditConfig);
    ```
 
    `MapTo` 는 AEM SPA Editor JS SDK(`@adobe/aem-react-editable-components`). 경로 `wknd-spa-react/components/text` 는 를 나타냅니다 `sling:resourceType` AEM 구성 요소의 일부입니다. 이 경로는 `:type` 이전에 살펴본 JSON 모델에 의해 노출됩니다. `MapTo` 에서는 JSON 모델 응답을 구문 분석하고 올바른 값을 다음으로 전달합니다 `props` SPA 구성 요소에 매핑됩니다.

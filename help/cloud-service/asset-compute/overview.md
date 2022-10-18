@@ -13,7 +13,7 @@ topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 575b12f9-b57f-41f7-bd39-56d242de4747
-source-git-commit: eb6a7ef343a43000855f8d5cc69bde0fae81d3e6
+source-git-commit: 09f6c4b0bec10edd306270a7416fcaff8a584e76
 workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 0%
@@ -36,7 +36,7 @@ AEM 6.x 사용자 지정 AEM 워크플로우 프로세스는 자산 표현물을
 
 1. asset compute 작업자를 구축하고 배포하기 위해 필요한 계정 및 서비스를 제공 및 설정합니다
 1. asset compute 프로젝트 만들기 및 구성
-1. 사용자 정의 렌디션을 생성하는 aem Asset compute 작업자 개발
+1. 사용자 정의 렌디션을 생성하는 Asset compute 작업자 개발
 1. 테스트를 작성하고 사용자 지정 Asset compute 작업자를 디버깅하는 방법을 알아봅니다
 1. asset compute 작업자를 배포하고 처리 프로필을 통해 AEM as a Cloud Service 작성자 서비스를 통합합니다
 
@@ -58,7 +58,7 @@ asset compute 프로젝트의 로컬 개발에는 다음과 같은 기존 AEM �
 
 ### App Builder
 
-asset compute 프로젝트는 특별히 정의된 App Builder 프로젝트로서, 설정 및 배포하려면 Adobe 개발자 콘솔에서 App Builder에 액세스해야 합니다.
+asset compute 프로젝트는 특별히 정의된 App Builder 프로젝트로서, 설정 및 배포하려면 Adobe Developer 콘솔에서 App Builder에 액세스해야 합니다.
 
 + [앱 빌더 설정](./set-up/app-builder.md)
 
@@ -112,7 +112,7 @@ asset compute 작업자는 기존의 방식에서 다양한 수준의 디버깅 
 
 + [작업자 디버깅](./test-debug/debug.md)
 
-##  배포
+## 배포
 
 사용자 지정 Asset compute 작업자를 AEM as a Cloud Service과 통합하는 방법에 대해 알아봅니다. 먼저 사용자 지정 as a Cloud Service 작업자를 Adobe I/O Runtime에 배포한 다음 AEM Assets의 처리 프로필을 통해 AEM 작성기에서 호출됩니다.
 

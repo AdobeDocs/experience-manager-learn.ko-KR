@@ -8,9 +8,9 @@ topic: Development
 role: Admin
 level: Beginner
 exl-id: 80288765-0b51-44a9-95d3-3bdb2da38615
-source-git-commit: 5c53919dd038c0992e1fe5dd85053f26c03c5111
+source-git-commit: 09f6c4b0bec10edd306270a7416fcaff8a584e76
 workflow-type: tm+mt
-source-wordcount: '586'
+source-wordcount: '578'
 ht-degree: 6%
 
 ---
@@ -53,7 +53,8 @@ ht-degree: 6%
 * AEMQuickStart.Jar를 찾아 AEMForms 폴더로 이동합니다
 * license.properties 파일을 이 AEMForms 폴더에 복사합니다.
 * 다음 컨텐츠로 &quot;StartAemForms.bat&quot;라는 배치 파일을 만듭니다.
-   * java -d64 -Xmx2048M -jar AEM_6.5_Quickstart.jar -gui 여기서 AEM_6.5_Quickstart.jar는 내 AEM quickstart jar의 이름입니다.
+   * `java -d64 -Xmx2048M -jar AEM_6.5_Quickstart.jar -gui`
+      * 여기서 AEM_6.5_Quickstart.jar는 내 AEM quickstart jar의 이름입니다.
    * jar 이름을 원하는 이름으로 바꿀 수 있지만 배치 파일에 이름이 반영되었는지 확인하십시오. 배치 파일을 AEMForms 폴더에 저장합니다.
 
 * 새 명령 프롬프트를 열고 다음 위치로 이동합니다. _c:\aemforms_.
