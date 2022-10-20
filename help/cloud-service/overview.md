@@ -1,21 +1,23 @@
 ---
-title: Adobe Experience Manager을 Cloud Service 비디오 및 Tutorials으로 사용
+title: Adobe Experience Manager as a Cloud Service 비디오 및 자습서
 description: Adobe Experience Manager(AEM) as a Cloud Service 자습서 모음입니다
 sub-product: sites, cloud-manager, foundation, assets
 kt: 3289
 exl-id: 650ba2d9-6083-4772-84c5-1cdb97b5f0e9
-source-git-commit: eb669d1e2493d9b4a973314ab1323764920ba220
+source-git-commit: c6ee6681775847b3c1168bc18f0f0e973f2daa83
 workflow-type: tm+mt
 source-wordcount: '276'
-ht-degree: 7%
+ht-degree: 14%
 
 ---
 
-# AEM as a Cloud Service 비디오 및 Tutorials {#overview}
+# AEM as a Cloud Service 비디오 및 자습서 {#overview}
 
 Adobe Experience Manager(AEM)는 이제 클라우드 서비스로 제공됩니다. AEM as a Cloud Service에서는 모든 사용 사례 및 기능을 유지 및 확장하면서 과거의 투자 및 혁신을 바탕으로 구축된 차세대 Experience Manager 제품군을 도입합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/31085/?quality=12&learn=on)
+
+<div id="whats-new-section">
 
 ## 새로운 기능
 
@@ -38,6 +40,17 @@ Adobe Experience Manager(AEM)는 이제 클라우드 서비스로 제공됩니�
 * **[asset compute 마이크로 서비스 확장성(튜토리얼)](./asset-compute/overview.md)**
 
    *asset compute 작업자를 개발하여 사용자 정의 자산 표현물을 생성하는 방법을 알아봅니다*
+
+</div>
+
+<div id="recs-overview-body-1"></div>
+<div id="recs-overview-body-2"></div>
+<div id="recs-overview-body-3"></div>
+<div id="recs-overview-body-4"></div>
+<div id="recs-overview-body-5"></div>
+<div id="recs-overview-body-6"></div>
+
+<div id="staff-picks-section">
 
 ## 직원 추천
 
@@ -83,7 +96,9 @@ Adobe Experience Manager(AEM)는 이제 클라우드 서비스로 제공됩니�
    </td>
 </table>
 
+</div>
+
 ## 추가 리소스
 
 * [Experience League - Adobe Experience Manager 탐색](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
-* [Adobe Experience Manager as a Cloud Service 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html)
+* [Adobe Experience Manager as a Cloud Service 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html?lang=ko-KR)

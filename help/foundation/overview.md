@@ -1,19 +1,21 @@
 ---
-title: AEM Foundation 비디오 및 튜토리얼
+title: AEM Foundation 비디오 및 자습서
 description: Adobe Experience Manager Foundation에 대한 지원을 받으려면 비디오 및 자습서를 시청하십시오.
 role: Leader, Architect, Developer, Admin, User
 level: Beginner
 exl-id: af0fe7fb-873b-4d2d-a5a3-59a5a3da9b96
-source-git-commit: efa33aa8cf8288d48ae56d2e96ed9d3a6c4e9627
+source-git-commit: c6ee6681775847b3c1168bc18f0f0e973f2daa83
 workflow-type: tm+mt
 source-wordcount: '253'
-ht-degree: 15%
+ht-degree: 2%
 
 ---
 
-# AEM Foundation 비디오 및 튜토리얼 {#overview}
+# AEM Foundation 비디오 및 자습서 {#overview}
 
 Adobe Experience Manager은 AEM Sites, Assets 및 Forms 사용자가 사용할 수 있는 공통 기능 세트를 제공합니다.
+
+<div id="whats-new-section">
 
 ## 새로운 기능
 
@@ -29,6 +31,17 @@ Adobe Experience Manager은 AEM Sites, Assets 및 Forms 사용자가 사용할 �
 
 * **[Cloud Manager CI/CD 파이프라인 사용(비디오)](./cloud-manager/use-the-cicd-pipeline-in-cloud-manager-for-aem.md)**\
    *Cloud Manager의 CI/CD 파이프라인을 사용하여 안전하고 일관된 배포를 보장하는 방법을 알아봅니다.*
+
+</div>
+
+<div id="recs-overview-body-1"></div>
+<div id="recs-overview-body-2"></div>
+<div id="recs-overview-body-3"></div>
+<div id="recs-overview-body-4"></div>
+<div id="recs-overview-body-5"></div>
+<div id="recs-overview-body-6"></div>
+
+<div id="staff-picks-section">
 
 ## 직원 추천
 
@@ -76,10 +89,12 @@ Adobe Experience Manager은 AEM Sites, Assets 및 Forms 사용자가 사용할 �
 </tr>
 </table>
 
+</div>
+
 ## 추가 리소스
 
 * [Experience League - AEM 살펴보기](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
-* [AEM as a Cloud Service 튜토리얼](/help/cloud-service/overview.md)
-* [AEM Sites 비디오 및 튜토리얼](/help/sites/overview.md)
-* [AEM Assets 비디오 및 튜토리얼](/help/assets/overview.md)
-* [AEM Forms 비디오 및 튜토리얼](/help/forms/overview.md)
+* [AEM as a Cloud Service 자습서](/help/cloud-service/overview.md)
+* [AEM Sites 비디오 및 자습서](/help/sites/overview.md)
+* [AEM Assets 비디오 및 자습서](/help/assets/overview.md)
+* [AEM Forms 비디오 및 자습서](/help/forms/overview.md)

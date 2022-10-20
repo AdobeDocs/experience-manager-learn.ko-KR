@@ -1,20 +1,22 @@
 ---
-title: AEM Forms Tutorials 및 비디오
+title: AEM Forms 자습서 및 비디오
 description: 질문에 답변할 리소스 및 설명서와 함께 AEM Forms에 대한 비디오 및 자습서를 찾아봅니다.
 sub-product: forms
 topic: Development
 role: Developer
 exl-id: c1972937-56c5-47af-9232-f31bdf69dfbe
-source-git-commit: efa33aa8cf8288d48ae56d2e96ed9d3a6c4e9627
+source-git-commit: c6ee6681775847b3c1168bc18f0f0e973f2daa83
 workflow-type: tm+mt
 source-wordcount: '306'
-ht-degree: 7%
+ht-degree: 2%
 
 ---
 
-# AEM Forms Tutorials 및 비디오 {#overview}
+# AEM Forms 자습서 및 비디오 {#overview}
 
 Adobe Experience Manager(AEM)은 백엔드 프로세스, 비즈니스 규칙 및 데이터와 통합하면서도 복잡한 디지털 양식을 작성, 관리, 게시 및 업데이트하는 사용하기 쉬운 솔루션을 제공합니다. 이 사용자 안내서에는 AEM Forms의 다양한 기능과 성능에 대한 비디오 및 자습서가 포함되어 있습니다
+
+<div id="whats-new-section">
 
 ## 새로운 기능
 
@@ -29,6 +31,17 @@ Adobe Experience Manager(AEM)은 백엔드 프로세스, 비즈니스 규칙 및
 * **[재사용 가능한 워크플로우 모델 만들기](./adaptive-forms/re-usable-aem-forms-workflow-models-article.md)**
 
    *특정 양식에 연결되어 있지 않은 워크플로우 모델 만들기*
+
+</div>
+
+<div id="recs-overview-body-1"></div>
+<div id="recs-overview-body-2"></div>
+<div id="recs-overview-body-3"></div>
+<div id="recs-overview-body-4"></div>
+<div id="recs-overview-body-5"></div>
+<div id="recs-overview-body-6"></div>
+
+<div id="staff-picks-section">
 
 ## 직원 추천
 
@@ -76,6 +89,7 @@ Adobe Experience Manager(AEM)은 백엔드 프로세스, 비즈니스 규칙 및
 </tr>
 </table>
 
+</div>
 
 
 
@@ -87,7 +101,7 @@ Adobe Experience Manager(AEM)은 백엔드 프로세스, 비즈니스 규칙 및
 * [AEM Sites 개발 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html)
 * [AEM Sites 관리 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/administering/home.html)
 * [AEM Sites 배포 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/home.html)
-* [AEM as a Cloud Service 튜토리얼](/help/cloud-service/overview.md)
-* [AEM Assets 튜토리얼](/help/assets/overview.md)
-* [AEM Forms 튜토리얼](/help/forms/overview.md)
-* [AEM Foundation 튜토리얼](/help/foundation/overview.md)
+* [AEM as a Cloud Service 자습서](/help/cloud-service/overview.md)
+* [AEM Assets 자습서](/help/assets/overview.md)
+* [AEM Forms 자습서](/help/forms/overview.md)
+* [AEM Foundation 자습서](/help/foundation/overview.md)
