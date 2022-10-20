@@ -4,10 +4,10 @@ description: Adobe Experience Manager Foundation에 대한 지원을 받으려�
 role: Leader, Architect, Developer, Admin, User
 level: Beginner
 exl-id: af0fe7fb-873b-4d2d-a5a3-59a5a3da9b96
-source-git-commit: c6ee6681775847b3c1168bc18f0f0e973f2daa83
+source-git-commit: d712fb988dc554b4f95ab2298ffc0f54df48f6f3
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 2%
+source-wordcount: '244'
+ht-degree: 0%
 
 ---
 
@@ -93,7 +93,6 @@ Adobe Experience Manager은 AEM Sites, Assets 및 Forms 사용자가 사용할 �
 
 ## 추가 리소스
 
-* [Experience League - AEM 살펴보기](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
 * [AEM as a Cloud Service 자습서](/help/cloud-service/overview.md)
 * [AEM Sites 비디오 및 자습서](/help/sites/overview.md)
 * [AEM Assets 비디오 및 자습서](/help/assets/overview.md)

@@ -4,10 +4,10 @@ description: 비디오 및 자습서에서 Experience Manager Sites에 대해 �
 sub-product: sites, content-services
 topic: Content Management
 exl-id: cde4ce7f-0afe-4632-8c1c-354586f296d5
-source-git-commit: d6366d1e3f4d575eb78b8af38a59a7fb9413f43d
+source-git-commit: d712fb988dc554b4f95ab2298ffc0f54df48f6f3
 workflow-type: tm+mt
-source-wordcount: '354'
-ht-degree: 19%
+source-wordcount: '345'
+ht-degree: 14%
 
 ---
 
@@ -101,12 +101,11 @@ Adobe Experience Manager (AEM) Sites는 선도적인 경험 관리 플랫폼입�
 
 ## 추가 리소스
 
-* [Experience League - AEM 살펴보기](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
 * [AEM Sites 작성 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html)
 * [AEM Sites 개발 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html)
 * [AEM Sites 관리 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/administering/home.html)
 * [AEM Sites 배포 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/home.html)
-* [AEM as a Cloud Service 튜토리얼](/help/cloud-service/overview.md)
-* [AEM Assets 튜토리얼](/help/assets/overview.md)
-* [AEM Forms 튜토리얼](/help/forms/overview.md)
-* [AEM Foundation 튜토리얼](/help/foundation/overview.md)
+* [AEM as a Cloud Service 자습서](/help/cloud-service/overview.md)
+* [AEM Assets 자습서](/help/assets/overview.md)
+* [AEM Forms 자습서](/help/forms/overview.md)
+* [AEM Foundation 자습서](/help/foundation/overview.md)

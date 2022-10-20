@@ -3,10 +3,10 @@ title: AEM Assets 비디오 및 자습서
 description: 비디오를 시청하여 AEM 자산 지원 및 지원을 받으십시오.
 sub-product: assets, dynamic-media
 exl-id: 1d0b0183-25ee-4cb4-82a5-3506e7c1c908
-source-git-commit: c6ee6681775847b3c1168bc18f0f0e973f2daa83
+source-git-commit: d712fb988dc554b4f95ab2298ffc0f54df48f6f3
 workflow-type: tm+mt
-source-wordcount: '205'
-ht-degree: 7%
+source-wordcount: '185'
+ht-degree: 5%
 
 ---
 
@@ -22,7 +22,7 @@ Adobe Experience Manager(AEM) Assets는 AEM Platform의 디지털 자산 관리 
 
 ## AEM Assets 둘러보기
 
-AEM Assets이 무엇인지, 그리고 조직의 비즈니스 목표를 달성하는 데 어떻게 사용될 수 있는지를 설명하는 AEM Assets의 종합적인 개요를 살펴보십시오.
+AEM Assets이 무엇인지, 그리고 조직의 비즈니스 목표를 달성하는 데 어떻게 사용될 수 있는지 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336196/?quality=12&learn=on)
 
@@ -83,7 +83,6 @@ AEM Assets이 무엇인지, 그리고 조직의 비즈니스 목표를 달성하
 
 ## 추가 리소스
 
-* [Experience League - AEM 살펴보기](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
 * [AEM Assets 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=en)
 * [AEM as a Cloud Service 자습서](/help/cloud-service/overview.md)
 * [AEM Sites 자습서](/help/sites/overview.md)
