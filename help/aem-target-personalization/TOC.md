@@ -1,5 +1,5 @@
 ---
-user-guide-title: 'AEM 및 Adobe Target 시작하기 '
+user-guide-title: AEM 및 Adobe Target 시작하기
 user-guide-description: Experience Manager 및 Target을 사용하여 개인화된 경험을 전달하는 방법을 보여 주는 종단간 튜토리얼입니다.
 product: experience manager
 version: 6.5
@@ -8,8 +8,8 @@ index: y
 kt: 2214
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '64'
+ht-degree: 46%
 
 ---
 

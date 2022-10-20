@@ -6,8 +6,8 @@ feature-set: Experience Manager Assets, Experience Manager Sites, Experience Man
 team: TM
 source-git-commit: c6caa39075bc3c26dedeca4246e7e1f85887b124
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '378'
+ht-degree: 27%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 + 구성{#configuring}
    + [기준선 폴더](configuring/baseline-folders.md)
    + [기본 권한](configuring/baseline-permissions.md)
-   + [태깅](configuring/tagging.md)
+   + [태그 지정](configuring/tagging.md)
    + [메타데이터 스키마](configuring/metadata-schemas.md)
    + [메타데이터 프로필](configuring/metadata-profiles.md)
    + [메타데이터 폴더 스키마](configuring/metadata-folder-schemas.md)
@@ -158,4 +158,4 @@ ht-degree: 0%
 + 배포{#deployment}
    + [멀티 테넌트 관리 및 동시 개발](deployment/multitenancy-concurrent-article-understand.md)
 
-+ [Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/overview.html)
++ [Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/overview.html?lang=ko-KR)

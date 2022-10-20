@@ -17,7 +17,7 @@ exl-id: 38802296-8988-4300-a04a-fcbbe98ac810
 source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
 source-wordcount: '465'
-ht-degree: 22%
+ht-degree: 23%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 22%
 * HTML, CSS 및 JavaScript에 대한 기본 지식입니다
 * 에 대한 기본 정보 [React](https://reactjs.org/tutorial/tutorial.html)
 
-*필수는 아니지만, 기본적인 이해를 하는 것이 유익하다 [기존 AEM Sites 구성 요소 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html).*
+*필수는 아니지만, 기본적인 이해를 하는 것이 유익하다 [기존 AEM Sites 구성 요소 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR).*
 
 ## 로컬 개발 환경 {#local-dev-environment}
 
@@ -63,7 +63,7 @@ ht-degree: 22%
 >
 > **AEM as a Cloud Service을 처음 사용하십니까?** 다음을 확인하십시오 [AEM as a Cloud Service SDK를 사용하여 로컬 개발 환경을 설정하는 데 대한 다음 안내서](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
 >
-> **AEM 6.5를 처음 사용하십니까?** 다음을 확인하십시오 [로컬 개발 환경 설정에 대한 다음 안내서](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html).
+> **AEM 6.5를 처음 사용하십니까?** 다음을 확인하십시오 [로컬 개발 환경 설정에 대한 다음 안내서](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=ko-KR).
 
 ## 다음 단계 {#next-steps}
 

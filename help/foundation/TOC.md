@@ -1,13 +1,13 @@
 ---
 user-guide-title: AEM Foundation 비디오 및 튜토리얼
 breadcrumb-title: AEM Foundation 튜토리얼
-user-guide-description: 'Adobe Experience Manager Foundation에 대한 비디오 및 튜토리얼 모음입니다. '
+user-guide-description: Adobe Experience Manager Foundation에 대한 비디오 및 튜토리얼 모음입니다.
 sub-product: foundation
 index: y
 source-git-commit: 65a40826d3be322673e116d98124c3cbfb1d6eb4
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '220'
+ht-degree: 14%
 
 ---
 
