@@ -10,9 +10,9 @@ kt: 9165
 thumbnail: 337960.jpeg
 last-substantial-update: 2022-11-03T00:00:00Z
 exl-id: 40bb55f9-011d-4261-9f44-b1104a591252
-source-git-commit: 835657082c0c6bf7b2822b53ef2b99039d77f249
+source-git-commit: f4d4bcc836123ba4320710c3024e03a82a36cfb9
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '228'
 ht-degree: 5%
 
 ---
@@ -49,7 +49,7 @@ AEM Sites용 사이트 맵을 만들어 SEO를 높이는 방법을 알아봅니�
 
 ### 절대 사이트 맵 URL
 
-AEM 사이트 맵은 [Sling 매핑](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html). 이 작업은 사이트 맵을 생성하는 AEM 서비스에 매핑 노드를 만들어 수행됩니다.
+AEM 사이트 맵은 [Sling 매핑](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html). 이 작업은 사이트 맵(일반적으로 AEM 게시 서비스)을 생성하는 AEM 서비스에 매핑 노드를 만들어 수행됩니다.
 
 Sling 매핑 노드 정의의 예 `https://wknd.com` 은(는) `/etc/map/https` 아래와 같이 변경하는 것을 의미합니다.
 
