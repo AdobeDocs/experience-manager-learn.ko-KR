@@ -4,14 +4,14 @@ description: 비디오 및 자습서에서 Experience Manager Sites에 대해 �
 sub-product: sites, content-services
 topic: Content Management
 exl-id: cde4ce7f-0afe-4632-8c1c-354586f296d5
-source-git-commit: 5dbad9101ce73c2e0370592336d37338e45825ef
+source-git-commit: d6366d1e3f4d575eb78b8af38a59a7fb9413f43d
 workflow-type: tm+mt
 source-wordcount: '354'
-ht-degree: 21%
+ht-degree: 19%
 
 ---
 
-# AEM Sites 비디오 및 튜토리얼 {#overview}
+# AEM Sites 비디오 및 자습서 {#overview}
 
 Adobe Experience Manager (AEM) Sites는 선도적인 경험 관리 플랫폼입니다. 이 사용자 안내서에는 AEM Sites의 다양한 기능과 성능에 대한 비디오 및 자습서가 포함되어 있습니다.
 
@@ -56,7 +56,7 @@ Adobe Experience Manager (AEM) Sites는 선도적인 경험 관리 플랫폼입�
 <table>
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR">
       <img alt="AEM Sites 시작하기 - WKND 튜토리얼" src="./assets/aem-wknd-tutorial.png" />
     </a>
     <div>
