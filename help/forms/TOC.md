@@ -5,9 +5,9 @@ user-guide-title: AEM Forms 비디오 및 튜토리얼
 user-guide-description: 초보자 및 숙련된 AEM Forms 개발자를 위한 AEM Forms 리소스 모음입니다.
 breadcrumb-title: AEM Forms 튜토리얼
 index: y
-source-git-commit: 061077fb6cd8ac7b760aa30b884ced6d4d3c3b20
+source-git-commit: 853c4fedd4b8db594aa0b53fd2d27d996811f14e
 workflow-type: tm+mt
-source-wordcount: '1718'
+source-wordcount: '1722'
 ht-degree: 3%
 
 ---
@@ -62,6 +62,7 @@ ht-degree: 3%
    + [AEM Forms 워크플로우에서 이메일 구성 요소 보내기](adaptive-forms/email-step-aem-workflow-video-use.md)
    + [API를 사용하여 DocumentOfRecord 생성](adaptive-forms/document-of-record-api-tutorial-use.md)
    + [인라인 이미지 표시](adaptive-forms/inline-images-adaptive-forms.md)
+   + [DAM 이미지 인라인 표시](adaptive-forms/inline-images-from-dam.md)
    + [GeoLocation API 사용](adaptive-forms/using-geolocation-api-in-aem-forms-article.md)
    + [트랜잭션 보고 사용](adaptive-forms/transaction-reporting-aem-forms-article-use.md)
    + [AEM Forms의 사용자 프로필 데이터 통합](adaptive-forms/user-profile-data-integration-feature-video-use.md)
