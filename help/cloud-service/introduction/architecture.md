@@ -1,22 +1,23 @@
 ---
 title: AEM as a Cloud Service 아키텍처
-description: 기본 아키텍처와 AEM as a Cloud Service의 중요한 부분을 살펴보십시오. Cloud Manager 및 API에 대해 자세히 설명합니다.
+description: 기본 아키텍처와 AEM as a Cloud Service의 중요한 조각을 살펴보십시오. Cloud Manager 및 API에 대해 자세히 설명합니다.
 role: Architect, Developer
 level: Beginner
 type: Tutorial
-topic: 아키텍처
+topic: Architecture
 kt: 6919
 thumbnail: 330542.jpg
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+last-substantial-update: 2022-01-01T00:00:00Z
+exl-id: c7ccfee6-c252-4ba4-831a-1c37b36ac964
+source-git-commit: d0b13fd37f1ed42042431246f755a913b56625ec
 workflow-type: tm+mt
-source-wordcount: '57'
-ht-degree: 26%
+source-wordcount: '56'
+ht-degree: 25%
 
 ---
 
-
 # AEM as a Cloud Service 아키텍처
 
-기본 아키텍처와 AEM as a Cloud Service의 중요한 부분을 살펴보십시오. Cloud Manager 및 API에 대해 자세히 설명합니다.
+기본 아키텍처와 AEM as a Cloud Service의 중요한 조각을 살펴보십시오. Cloud Manager 및 API에 대해 자세히 설명합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330542/?quality=12&learn=on)

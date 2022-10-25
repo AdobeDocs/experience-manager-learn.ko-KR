@@ -1,19 +1,20 @@
 ---
-title: 'AEM에서 Cloud Manager의 중요성 살펴보기 '
+title: AEM에서 Cloud Manager의 중요성 살펴보기
 description: Cloud Manager의 목적과 AEM as a Cloud Service에서 작동하는 방식을 살펴보십시오.
 role: Architect, Developer
 level: Beginner
 type: Tutorial
-topic: 아키텍처
+topic: Architecture
 kt: 6922
 thumbnail: 330545.jpg
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+last-substantial-update: 2022-01-01T00:00:00Z
+exl-id: 072f8b81-54b8-4980-9758-b8cd7ceebd6b
+source-git-commit: d0b13fd37f1ed42042431246f755a913b56625ec
 workflow-type: tm+mt
-source-wordcount: '49'
-ht-degree: 2%
+source-wordcount: '48'
+ht-degree: 0%
 
 ---
-
 
 # Cloud Manager 및 AEM as a Cloud Service
 

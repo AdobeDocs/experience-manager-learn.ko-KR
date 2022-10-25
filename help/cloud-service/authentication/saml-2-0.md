@@ -8,11 +8,12 @@ role: Architect, Developer
 level: Intermediate
 kt: 9351
 thumbnail: 343040.jpeg
+last-substantial-update: 2022-10-17T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
-source-git-commit: 6d5a531f44414887e8dc6568fa6f5dcb73bfb183
+source-git-commit: d0b13fd37f1ed42042431246f755a913b56625ec
 workflow-type: tm+mt
 source-wordcount: '2815'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -58,7 +59,7 @@ AEM 게시 SAML 통합의 일반적인 흐름은 다음과 같습니다.
 
 이 비디오에서는 AEM as a Cloud Service 게시 서비스와의 SAML 2.0 통합을 설정하고 Okta를 IDP로 사용하는 과정을 안내합니다.
 
-## 전제 조건
+## 사전 요구 사항
 
 SAML 2.0 인증을 설정할 때에는 다음 항목이 필요합니다.
 
@@ -115,7 +116,7 @@ IDP의 공개 인증서가 AEM 전역 트러스트 저장소에 추가되었으�
 
 ![AEM 게시에 글로벌 트러스트 저장소 복제](./assets/saml-2-0/global-trust-store-replicate.png)
 
-1. 다음으로 이동 __도구 > 배포 > 패키지__.
+1. __도구 > 배포 > 패키지__&#x200B;로 이동합니다.
 1. 패키지 만들기
    + 패키지 이름: `Global Trust Store`
    + 버전: `1.0.0`

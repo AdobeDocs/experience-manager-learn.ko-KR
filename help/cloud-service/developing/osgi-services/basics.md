@@ -1,19 +1,20 @@
 ---
 title: OSGi 서비스 개발 기본 사항
-description: 'OSGi 서비스 개발에 대한 기본 사항에 대해 알아봅니다 '
+description: OSGi 서비스 개발에 대한 기본 사항에 대해 알아봅니다
 role: Developer
 level: Beginner
-topic: 개발
+topic: Development
 feature: OSGI
 kt: 8227
 thumbnail: 335476.jpeg
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+last-substantial-update: 2022-09-16T00:00:00Z
+exl-id: a3a9bf59-e9a2-4322-ac93-9c12c70b9a75
+source-git-commit: d0b13fd37f1ed42042431246f755a913b56625ec
 workflow-type: tm+mt
-source-wordcount: '90'
-ht-degree: 3%
+source-wordcount: '88'
+ht-degree: 1%
 
 ---
-
 
 # OSGi 서비스
 
