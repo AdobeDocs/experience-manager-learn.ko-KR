@@ -3,9 +3,9 @@ user-guide-title: AEM Sites 비디오 및 튜토리얼
 user-guide-description: Adobe Experience Manager Sites에 대한 비디오 및 튜토리얼 모음입니다.
 breadcrumb-title: AEM Sites 튜토리얼
 feature-set: Experience Manager Sites, Experience Manager
-source-git-commit: 8343ce6e3c9f144dddfc9f5bc80b436542f5be02
+source-git-commit: d1e105a4083b34e7a3f220a59d4608ef39d39032
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '436'
 ht-degree: 27%
 
 ---
@@ -93,6 +93,8 @@ ht-degree: 27%
    + [번역 규칙 설정](translation/translation-rules-editor-technical-video-setup.md)
    + [번역 개선 사항](translation/translation-enhancements-feature-video-use.md)
 + 통합 {#integrations}
+   + Experience Platform {#experience-platform}
+      + [FPID 생성](integrations/platform/fpid.md)
    + Experience Platform Launch {#experience-platform-launch}
       + [개요](integrations/experience-platform-launch/overview.md)
       + [Launch 속성 만들기](integrations/experience-platform-launch/create-launch-property.md)
