@@ -9,9 +9,9 @@ level: Intermediate
 kt: 10253
 thumbnail: KT-10253.jpeg
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
-source-git-commit: 332ad831b6c49e8599aa2181caf978d5626c1aba
+source-git-commit: 129dedd4cd6973d5d576bed5f714ce62152923de
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1173'
 ht-degree: 2%
 
 ---
@@ -42,7 +42,7 @@ AEM Headless 컨텐츠 모델링에서 사용되는 컨텐츠 조각으로서, �
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_learn_headless_graphql_images"
->title="이미지 사용"
+>title="AEM Headless를 사용한 이미지"
 >abstract="AEM Headless에서 이미지 자산 관리 및 최적화된 전달을 지원하는 방법을 알아봅니다."
 
 ## 콘텐츠 조각 모델
