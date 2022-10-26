@@ -1,7 +1,6 @@
 ---
 title: AEM에서 컨텐츠 조각 작성
 description: 컨텐츠 조각은 AEM에서 지원하는 채널과 관계없이 텍스트 기반 컨텐츠를 작성 및 관리할 수 있도록 하는 컨텐츠 추상화입니다.
-sub-product: content-services
 feature: Content Fragments
 topics: authoring, content-architecture
 audience: all
@@ -12,7 +11,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: d33c033a-9577-4d4e-99be-f3c7e2a4ce73
-source-git-commit: 9aae58c3301a7067baca374d6499f1afc3c95b06
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 9%

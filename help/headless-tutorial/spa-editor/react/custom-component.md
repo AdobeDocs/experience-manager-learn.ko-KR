@@ -1,7 +1,6 @@
 ---
 title: 사용자 지정 날씨 구성 요소 만들기 | AEM SPA 편집기 및 반응 시작하기
 description: AEM SPA 편집기에 사용할 사용자 지정 날씨 구성 요소를 만드는 방법을 알아봅니다. 작성자 대화 상자 및 Sling 모델을 개발하여 JSON 모델을 확장하여 사용자 지정 구성 요소를 채우는 방법을 알아봅니다. Open Weather API 및 React Open Weather 구성 요소가 사용됩니다.
-sub-product: sites
 feature: SPA Editor
 doc-type: tutorial
 topics: development
@@ -12,7 +11,7 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 82466e0e-b573-440d-b806-920f3585b638
-source-git-commit: 09f6c4b0bec10edd306270a7416fcaff8a584e76
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '1216'
 ht-degree: 3%
@@ -151,7 +150,7 @@ AEM 구성 요소는 노드 및 속성으로 정의됩니다. 프로젝트에서
 
 Sling 모델은 JCR에서 Java 변수에 데이터를 쉽게 매핑하는 주석 기반의 Java &quot;POJO&quot;(일반 이전 Java 개체)입니다. [Sling 모델](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html?lang=en#sling-models) 일반적으로 AEM 구성 요소에 대한 복잡한 서버측 비즈니스 로직을 캡슐화하는 데 사용됩니다.
 
-SPA 편집기의 컨텍스트에서 Sling 모델은 를 사용하여 기능을 통해 JSON 모델을 통해 구성 요소의 콘텐츠를 노출합니다 [Sling 모델 내보내기](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html).
+SPA 편집기의 컨텍스트에서 Sling 모델은 를 사용하여 기능을 통해 JSON 모델을 통해 구성 요소의 콘텐츠를 노출합니다 [Sling 모델 내보내기](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=ko-KR).
 
 1. 선택한 IDE에서 `core` 모듈 `aem-guides-wknd-spa.react/core`.
 1. 이름이 인 파일을 만듭니다. `OpenWeatherModel.java` at `core/src/main/java/com/adobe/aem/guides/wkndspa/react/core/models`.

@@ -1,7 +1,6 @@
 ---
 title: 사용자 지정 구성 요소
 description: 작성된 컨텐츠를 표시하는 사용자 지정 개별 라인 구성 요소의 만들기 종단까지 다룹니다. Sling 모델 개발을 포함하여 비즈니스 로직을 캡슐화하여 byline 구성 요소와 해당 HTL를 캡슐화하여 구성 요소를 렌더링합니다.
-sub-product: sites
 version: 6.5, Cloud Service
 type: Tutorial
 feature: Core Components, APIs
@@ -12,7 +11,7 @@ kt: 4072
 mini-toc-levels: 1
 thumbnail: 30181.jpg
 exl-id: f54f3dc9-6ec6-4e55-9043-7a006840c905
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '4131'
 ht-degree: 0%

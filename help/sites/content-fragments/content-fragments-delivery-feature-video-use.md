@@ -3,7 +3,6 @@ title: AEM에서 컨텐츠 조각 제공
 seo-title: Delivering Content Fragments in Adobe Experience Manager
 description: 레이아웃과 관계없이 핵심 구성 요소를 사용하여 AEM Sites에서 직접 사용하거나, 헤드리스 방식으로 다운스트림 채널로 제공할 수 있습니다.
 seo-description: Content Fragments, independent of layout, can be used directly in AEM Sites with Core Components or can be delivered in a headless manner to downstream channels.
-sub-product: content-services
 feature: Content Fragments
 topics: authoring, content-architecture
 audience: all
@@ -16,7 +15,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 525cd30c-05bf-4f17-b61b-90609ce757ea
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 5%

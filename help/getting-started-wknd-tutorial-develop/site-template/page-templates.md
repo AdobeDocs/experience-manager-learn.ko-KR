@@ -1,7 +1,6 @@
 ---
 title: 페이지 템플릿
 description: 페이지 템플릿을 만들고 수정하는 방법을 알아봅니다. 페이지 템플릿과 페이지 간의 관계를 이해합니다. 컨텐츠에 대한 세부적인 거버넌스 및 브랜드 일관성을 제공하기 위해 페이지 템플릿의 정책을 구성하는 방법을 알아봅니다.  잘 구성된 잡지 기사 템플릿은 Adobe XD의 모집단 을 기반으로 합니다.
-sub-product: sites
 version: Cloud Service
 type: Tutorial
 topic: Content Management
@@ -11,7 +10,7 @@ level: Beginner
 kt: 7498
 thumbnail: KT-7498.jpg
 exl-id: 261ec68f-36f4-474f-a6e4-7a2f9cea691b
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 1%
@@ -40,7 +39,7 @@ ht-degree: 1%
 
 페이지를 생성할 때 새 페이지를 만드는 기준으로 사용되는 템플릿을 선택해야 합니다. 템플릿은 결과 페이지, 초기 컨텐츠 및 허용된 구성 요소의 구조를 정의합니다.
 
-3개의 주요 지역이 있습니다 [페이지 템플릿](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html):
+3개의 주요 지역이 있습니다 [페이지 템플릿](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=ko-KR):
 
 1. **구조** - 템플릿의 일부인 구성 요소를 정의합니다. 이러한 템플릿은 컨텐츠 작성자가 편집할 수 없습니다.
 1. **초기 컨텐츠** - 템플릿으로 시작하는 구성 요소를 정의하고 컨텐츠 작성자가 편집 및/또는 삭제할 수 있습니다

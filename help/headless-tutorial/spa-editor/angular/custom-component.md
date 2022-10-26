@@ -1,7 +1,6 @@
 ---
 title: 사용자 지정 구성 요소 만들기 | AEM SPA 편집기 및 Angular 시작하기
 description: AEM SPA 편집기에 사용할 사용자 지정 구성 요소를 만드는 방법을 알아봅니다. 작성자 대화 상자 및 Sling 모델을 개발하여 JSON 모델을 확장하여 사용자 지정 구성 요소를 채우는 방법을 알아봅니다.
-sub-product: sites
 feature: SPA Editor
 doc-type: tutorial
 topics: development
@@ -14,7 +13,7 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 6c1c7f2b-f574-458c-b744-b92419c46f23
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '1471'
 ht-degree: 2%
@@ -165,7 +164,7 @@ AEM 구성 요소는 노드 및 속성으로 정의됩니다. 프로젝트에서
 
 Sling 모델은 JCR에서 Java™ 변수로 데이터를 쉽게 매핑하는 주석 기반의 Java™ &quot;POJO&quot;(일반 이전 Java™ 개체)입니다. [Sling 모델](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html#sling-models) 일반적으로 AEM 구성 요소에 대한 복잡한 서버측 비즈니스 로직을 캡슐화하는 데 사용됩니다.
 
-SPA 편집기의 컨텍스트에서 Sling 모델은 를 사용하여 기능을 통해 JSON 모델을 통해 구성 요소의 콘텐츠를 노출합니다 [Sling 모델 내보내기](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html).
+SPA 편집기의 컨텍스트에서 Sling 모델은 를 사용하여 기능을 통해 JSON 모델을 통해 구성 요소의 콘텐츠를 노출합니다 [Sling 모델 내보내기](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=ko-KR).
 
 1. 선택한 IDE에서 `core` 모듈. `CustomComponent.java` 및 `CustomComponentImpl.java` 는 이미 장 스타터 코드의 일부로 작성되고 게시되었습니다.
 

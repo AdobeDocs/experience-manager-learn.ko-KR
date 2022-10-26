@@ -1,7 +1,6 @@
 ---
 title: 표준 AEM 프로젝트 Archetype에 대한 프런트엔드 파이프라인 활성화
 description: CSS, JavaScript, 글꼴, 아이콘과 같은 정적 리소스를 신속하게 배포하기 위해 표준 AEM 프로젝트용 프런트 엔드 파이프라인을 활성화하는 방법을 알아봅니다. 또한 AEM에서 전체 스택 백엔드 개발에서 프런트엔드 개발을 분리합니다.
-sub-product: sites
 version: Cloud Service
 type: Tutorial
 feature: AEM Project Archetype, Cloud Manager, CI-CD Pipeline
@@ -12,7 +11,9 @@ kt: 10689
 mini-toc-levels: 1
 index: y
 recommendations: disable
-source-git-commit: 2e3615e9e9305165ca9c3c93b38ac7e9bdcc51fb
+thumbnail: 53409343.jpg
+last-substantial-update: 2022-09-23T00:00:00Z
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 3%

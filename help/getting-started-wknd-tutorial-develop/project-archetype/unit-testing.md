@@ -1,7 +1,6 @@
 ---
 title: 단위 테스트
 description: 사용자 지정 구성 요소 자습서에서 만든 라인 구성 요소의 Sling 모델의 동작을 확인하는 단위 테스트를 구현합니다.
-sub-product: sites
 version: 6.5, Cloud Service
 type: Tutorial
 feature: APIs, AEM Project Archetype
@@ -12,7 +11,7 @@ kt: 4089
 mini-toc-levels: 1
 thumbnail: 30207.jpg
 exl-id: b926c35e-64ad-4507-8b39-4eb97a67edda
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '3014'
 ht-degree: 0%

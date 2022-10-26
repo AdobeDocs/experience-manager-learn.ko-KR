@@ -1,7 +1,6 @@
 ---
 title: 작성 및 게시 소개 | AEM 빠른 사이트 만들기
 description: AEM, Adobe Experience Manager의 페이지 편집기를 사용하여 웹 사이트의 컨텐츠를 업데이트합니다. 작성을 용이하게 하는 데 구성 요소를 사용하는 방법을 알아봅니다. AEM 작성자 및 게시 환경의 차이점을 파악하고 변경 사항을 라이브 사이트에 게시하는 방법을 알아봅니다.
-sub-product: sites
 version: Cloud Service
 type: Tutorial
 topic: Content Management
@@ -11,7 +10,7 @@ level: Beginner
 kt: 7497
 thumbnail: KT-7497.jpg
 exl-id: 17ca57d1-2b9a-409c-b083-398d38cd6a19
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '1330'
 ht-degree: 3%

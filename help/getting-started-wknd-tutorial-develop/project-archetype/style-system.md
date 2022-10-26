@@ -2,7 +2,6 @@
 title: 스타일 시스템을 사용한 개발
 seo-title: Developing with the Style System
 description: Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 구현하고 핵심 구성 요소를 다시 사용하는 방법을 알아봅니다. 이 자습서에서는 템플릿 편집기의 브랜드별 CSS 및 고급 정책 구성으로 코어 구성 요소를 확장하는 스타일 시스템 개발에 대해 설명합니다.
-sub-product: sites
 version: 6.5, Cloud Service
 type: Tutorial
 feature: Core Components, Style System
@@ -13,10 +12,10 @@ kt: 4128
 mini-toc-levels: 1
 thumbnail: 30386.jpg
 exl-id: 5b490132-cddc-4024-92f1-e5c549afd6f1
-source-git-commit: df9ff5e6811d35118d1beee6baaffa51081cb3c3
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '1681'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -24,7 +23,7 @@ ht-degree: 0%
 
 Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 구현하고 핵심 구성 요소를 다시 사용하는 방법을 알아봅니다. 이 자습서에서는 템플릿 편집기의 브랜드별 CSS 및 고급 정책 구성으로 코어 구성 요소를 확장하는 스타일 시스템 개발에 대해 설명합니다.
 
-## 전제 조건 {#prerequisites}
+## 사전 요구 사항 {#prerequisites}
 
 설정에 필요한 도구 및 지침을 검토합니다. [로컬 개발 환경](overview.md#local-dev-environment).
 
@@ -81,7 +80,7 @@ Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 �
 
 스타일 시스템을 사용하는 일반적인 아이디어는 작성자가 구성 요소가 표시되는 다양한 스타일을 선택할 수 있다는 것입니다. &quot;스타일&quot;은 구성 요소의 외부 div에 삽입되는 추가 CSS 클래스로 지원됩니다. 클라이언트 라이브러리에서 CSS 규칙은 구성 요소가 모양을 변경하도록 이러한 스타일 클래스를 기반으로 추가됩니다.
 
-찾을 수 있습니다. [스타일 시스템에 대한 자세한 설명서는 여기에 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html?lang=ko-KR). 멋진 것도 있습니다 [스타일 시스템 이해 기술 비디오](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/style-system-technical-video-understand.html).
+찾을 수 있습니다. [스타일 시스템에 대한 자세한 설명서는 여기에 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html?lang=ko). 멋진 것도 있습니다 [스타일 시스템 이해 기술 비디오](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/style-system-technical-video-understand.html).
 
 ## 밑줄 스타일 - 제목 {#underline-style}
 
@@ -103,7 +102,7 @@ Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 �
 
 1. 다음 값으로 제목 구성 요소에 대한 새 정책을 만듭니다.
 
-   *정책 제목 **: **WKND 제목**
+   *정책 제목&#42;*: **WKND 제목**
 
    *속성* > *스타일 탭* > *새 스타일 추가*
 
@@ -213,7 +212,7 @@ Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 �
 
 1. 텍스트 구성 요소 정책을 다음 값으로 업데이트합니다.
 
-   *정책 제목 **: **컨텐츠 텍스트**
+   *정책 제목&#42;*: **컨텐츠 텍스트**
 
    *Plugins* > *단락 스타일* > *단락 스타일 활성화*
 

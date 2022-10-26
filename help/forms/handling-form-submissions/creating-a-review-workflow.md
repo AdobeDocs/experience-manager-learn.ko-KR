@@ -1,8 +1,7 @@
 ---
 title: 제출된 데이터를 검토하는 워크플로우 만들기
 description: AEM Forms 워크플로우 구성 요소를 사용하여 제출된 데이터를 검토하는 AEM 워크플로우 모델 만들기
-sub-product: forms
-feature: 워크플로우
+feature: Workflow
 topics: integrations
 audience: developer
 doc-type: article
@@ -10,16 +9,16 @@ activity: setup
 version: 6.4,6.5
 kt: 4271
 thumbnail: 40242.jpg
-topic: 개발
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 0aafd97a-2e72-4257-ad4d-e0993263b11f
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
-source-wordcount: '141'
-ht-degree: 5%
+source-wordcount: '138'
+ht-degree: 4%
 
 ---
-
 
 # 제출된 데이터를 검토하는 워크플로우 만들기
 
@@ -27,13 +26,10 @@ ht-degree: 5%
 
 ## 전제 조건
 
-AEM Forms의 작업 인스턴스가 있는지 확인하십시오. AEM Forms을 설치 및 구성하려면 [설치 안내서](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html)에 따르십시오
+AEM Forms의 작업 인스턴스가 있는지 확인하십시오. 다음 내용을 따르십시오 [설치 안내서](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html) AEM Forms 설치 및 구성
 
 다음 비디오에서는 AEM Forms 구성 요소를 사용하여 검토 및 승인 작업 과정을 만드는 방법에 대해 설명합니다
 >[!VIDEO](https://video.tv.adobe.com/v/40242/?quality=9&learn=on)
 
 
-일부 이유로 워크플로우를 빌드할 수 없는 경우 완료된 워크플로우를 [여기](assets/review-submitted-data-workflow.zip)에서 다운로드하고 [패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp)를 사용하여 AEM 인스턴스로 가져올 수 있습니다.
-
-
-
+일부 이유로 워크플로우를 작성할 수 없는 경우, 완료된 워크플로우를에서 다운로드할 수 있습니다. [여기](assets/review-submitted-data-workflow.zip) 및 를 사용하여 동일하게 가져오기 [패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp) 참조하십시오.

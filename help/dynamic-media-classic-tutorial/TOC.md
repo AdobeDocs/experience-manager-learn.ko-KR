@@ -1,15 +1,11 @@
 ---
-sub-product: assets
-topics: development
-version: Cloud Service
-doc-type: tutorial
-activity: develop
-audience: developer
 user-guide-title: Dynamic Media Classic 소개
 user-guide-description: 이 튜토리얼에서는 Dynamic Media Classic을 사용하여 리치 미디어 콘텐츠를 제작, 작성 및 제공하는 방법을 설명합니다.
 breadcrumb-title: Dynamic Media Classic 튜토리얼
+sub-product: Experience Manager Assets
+version: 6.4, 6.5
 index: y
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '75'
 ht-degree: 49%

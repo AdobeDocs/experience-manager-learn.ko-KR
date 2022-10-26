@@ -1,7 +1,6 @@
 ---
 title: 기본 템플릿 소개
 description: 이미지 서버에서 호출되는 이미지 기반 템플릿과 이미지 및 렌더링된 텍스트로 구성된 Dynamic Media Classic의 기본 템플릿에 대해 알아봅니다. 템플릿이 게시된 후 URL을 통해 템플릿을 동적으로 변경할 수 있습니다. Photoshop PSD을 Dynamic Media Classic에 업로드하여 템플릿의 기반으로 사용하는 방법을 알아봅니다. 이미지 레이어로 구성된 간단한 머천다이징 기본 템플릿을 만듭니다. 텍스트 레이어를 추가하고 매개 변수를 사용하여 변수로 만듭니다. 템플릿 URL을 구성하고 웹 브라우저를 통해 이미지를 동적으로 조작할 수 있습니다.
-sub-product: dynamic-media
 feature: Dynamic Media Classic
 doc-type: tutorial
 topics: development, authoring, configuring
@@ -11,7 +10,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: d4e16b45-0095-44b4-8c16-89adc15e0cf9
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '6260'
 ht-degree: 0%

@@ -1,7 +1,6 @@
 ---
 title: Dynamic Media Classic 우수 사례 자습서
 description: Dynamic Media Classic은 고객이 리치 미디어 컨텐츠를 작성, 작성 및 제공하는 중심지입니다. Dynamic Media Classic의 현재 및 새 사용자가 Adobe의 이 강력한 리치 미디어 솔루션을 사용하여 수행할 수 있는 작업을 보다 완벽하게 이해할 수 있도록 이 모범 사례 자습서가 만들어졌습니다. 이 자습서 부분에서는 Dynamic Media Classic이 무엇인지 알아보고 핵심 기능 및 사용자 인터페이스를 간략하게 살펴봅니다.
-sub-product: dynamic-media
 doc-type: tutorial
 topics: best-practices, development, authoring, configuring
 audience: all
@@ -11,7 +10,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 975b85af-ca6a-419e-ab2a-6e1781bfee4a
-source-git-commit: eb669d1e2493d9b4a973314ab1323764920ba220
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '885'
 ht-degree: 1%

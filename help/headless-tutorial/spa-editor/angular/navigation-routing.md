@@ -1,7 +1,6 @@
 ---
 title: 탐색 및 라우팅 추가 | AEM SPA 편집기 및 Angular 시작하기
 description: AEM 페이지 및 SPA Editor SDK를 사용하여 SPA에서 여러 개의 보기가 지원되는 방법을 알아봅니다. 동적 탐색은 Angular 경로를 사용하여 구현되고 기존 헤더 구성 요소에 추가됩니다.
-sub-product: sites
 feature: SPA Editor
 topics: development
 doc-type: tutorial
@@ -14,7 +13,7 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 197a0c1f-4d0a-4b99-ba89-cdff2e6ac4ec
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '2712'
 ht-degree: 0%
@@ -71,7 +70,7 @@ AEM 페이지 및 SPA Editor SDK를 사용하여 SPA에서 여러 개의 보기�
 
 ## Inspect HeaderComponent 업데이트 {#inspect-header}
 
-이전 장에서는 `HeaderComponent` 구성 요소는 를 통해 포함된 순수 Angular 구성 요소로 추가됩니다. `app.component.html`. 이 장에서는 `HeaderComponent` 구성 요소는 앱에서 제거되고 를 통해 추가됩니다. [템플릿 편집기](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html). 이를 통해 사용자가 `HeaderComponent` AEM 내에서 사용할 수 있습니다.
+이전 장에서는 `HeaderComponent` 구성 요소는 를 통해 포함된 순수 Angular 구성 요소로 추가됩니다. `app.component.html`. 이 장에서는 `HeaderComponent` 구성 요소는 앱에서 제거되고 를 통해 추가됩니다. [템플릿 편집기](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=ko-KR). 이를 통해 사용자가 `HeaderComponent` AEM 내에서 사용할 수 있습니다.
 
 >[!NOTE]
 >
@@ -702,7 +701,7 @@ AEM 페이지 및 SPA Editor SDK를 사용하여 SPA에서 여러 개의 보기�
 
    >[!CAUTION]
    >
-   > angular 프로젝트에 매우 엄격한 라인 지정 규칙이 활성화되어 있습니다. Maven 빌드가 실패하면 오류를 확인하고 다음을 찾습니다 **나열된 파일에 오류가 있습니다.**. Linter에서 발견된 문제를 해결하고 Maven 명령을 다시 실행하십시오.
+   > angular 프로젝트에 매우 엄격한 라인 지정 규칙이 활성화되어 있습니다. Maven 빌드가 실패하면 오류를 확인하고 다음을 찾습니다 **나열된 파일에 오류가 있습니다.**&#x200B;을 따르지 않는 경우입니다. Linter에서 발견된 문제를 해결하고 Maven 명령을 다시 실행하십시오.
 
 2. AEM에서 SPA 홈 페이지로 이동합니다. [http://localhost:4502/content/wknd-spa-angular/us/en/home.html](http://localhost:4502/content/wknd-spa-angular/us/en/home.html) 브라우저의 개발자 도구를 엽니다. 아래 스크린샷은 Google Chrome 브라우저에서 촬영됩니다.
 

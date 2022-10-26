@@ -1,7 +1,6 @@
 ---
 title: 이미지 사전 설정
 description: Dynamic Media Classic의 이미지 사전 설정에는 특정 크기, 형식, 품질 및 선명하게 만드는 데 필요한 모든 설정이 포함되어 있습니다. 이미지 사전 설정은 동적 크기 조절의 주요 구성 요소입니다. Dynamic Media Classic에서 URL을 보면 이미지 사전 설정이 사용 중인지 쉽게 확인할 수 있습니다. 이미지 사전 설정, 이미지 사전 설정이 유용한 이유 및 이미지 사전 설정을 만드는 방법에 대해 알아봅니다.
-sub-product: dynamic-media
 feature: Dynamic Media Classic, Image Presets
 doc-type: tutorial
 topics: development, authoring, configuring
@@ -10,21 +9,21 @@ activity: use
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+exl-id: e472db7c-ac3f-4f66-85af-5a4c68ba609e
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '670'
 ht-degree: 1%
 
 ---
 
-
 # 이미지 사전 설정 {#image-presets}
 
 이미지 사전 설정은 특정 크기, 형식, 품질 및 선명하게 하는 데 필요한 모든 설정을 포함하는 레서피입니다. 이미지 사전 설정은 동적 크기 조절의 주요 구성 요소입니다.
 
-Dynamic Media Classic 고객의 URL을 보면 사용 중인 이미지 사전 설정이 표시될 수 있습니다. URL의 끝에서 $name$를 찾습니다(이름에 사용할 단어 또는 단어가 대체됨).
+Dynamic Media Classic 고객에 대한 URL을 보면 사용 중인 이미지 사전 설정이 표시될 수 있습니다. URL의 끝에서 $name$를 찾습니다(이름에 사용할 단어 또는 단어가 대체됨).
 
-이미지 사전 설정은 URL을 단축하므로 요청당 여러 이미지 제공 지침을 작성하는 대신 단일 이미지 사전 설정을 작성할 수 있습니다. 예를 들어 이 두 URL은 선명하게 하는 동일한 300 x 300 JPEG 이미지를 생성하지만, 두 번째 URL은 이미지 사전 설정을 사용합니다.
+이미지 사전 설정은 URL을 단축하므로 요청당 여러 이미지 제공 지침을 작성하는 대신 단일 이미지 사전 설정을 작성할 수 있습니다. 예를 들어, 이 두 URL은 선명하게 하는 동일한 300 x 300 JPEG 이미지를 생성하지만, 두 번째 URL은 이미지 사전 설정을 사용합니다.
 
 ![이미지](assets/image-presets/image-preset-2.png)
 
@@ -40,14 +39,14 @@ Dynamic Media Classic 고객의 URL을 보면 사용 중인 이미지 사전 설
 >
 >사이트에서 고유한 이미지 크기당 하나의 이미지 사전 설정을 만듭니다. 예를 들어 제품 세부 사항 페이지에 350 X 350 이미지, 찾아보기/검색 페이지에 120 X 120 이미지, 크로스셀/주요 항목에 대해 90 X 90 이미지가 필요한 경우 500개 이미지 또는 500,000개 이미지 중 어떤 이미지 사전 설정이 있더라도 3개의 이미지 사전 설정이 필요합니다.
 
-- [이미지 사전 설정](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sizing/setting-image-presets.html)에 대해 자세히 알아보십시오.
-- [이미지 사전 설정을 만드는 방법을 알아봅니다](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sizing/setting-image-presets.html#creating-an-image-preset).
+- 추가 정보 [이미지 사전 설정](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sizing/setting-image-presets.html).
+- 방법 알아보기 [이미지 사전 설정 만들기](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sizing/setting-image-presets.html#creating-an-image-preset).
 
 ## 이미지 사전 설정 및 선명하게 하기
 
 이미지 사전 설정은 일반적으로 이미지의 크기를 조정하고, 언제든지 원래 크기를 기준으로 이미지의 크기를 조정하면 선명하게 하는 기능을 추가해야 합니다. 크기를 변경하면 많은 픽셀이 병합되어 더 작은 공간으로 혼합되어 이미지가 부드럽고 흐릿하게 보이기 때문입니다. 선명하게 하면 이미지에서 가장자리 및 높은 대비 영역의 대비가 증가합니다.
 
-Dynamic Media Classic에 업로드하는 고해상도 이미지는 확대하면 전체 크기로 볼 때 선명하게 하지 않아도 됩니다. 그러나 어떤 작은 크기라도, 어떤 선명하게 하는 것이 일반적으로 바람직하다.
+Dynamic Media Classic에 업로드하는 고해상도 이미지는 확대했을 때 전체 크기로 볼 때 선명하게 하지 않아도 됩니다. 그러나 어떤 작은 크기라도, 어떤 선명하게 하는 것이 일반적으로 바람직하다.
 
 >[!TIP]
 >
@@ -63,7 +62,7 @@ Dynamic Media Classic에 업로드하는 고해상도 이미지는 확대하면 
 
 Dynamic Media Classic에서는 세 가지 유형의 선명하게 하기를 사용할 수 있습니다. 간단한 선명도, 리샘플 모드 및 언샵 마스크
 
-[Dynamic Media Classic 선명하게 하기 옵션](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/sharpening-image.html#sharpening_an_image)에 대해 자세히 알아보십시오.
+추가 정보 [Dynamic Media Classic 선명하게 하기 옵션](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/sharpening-image.html#sharpening_an_image).
 
 ## 추가 리소스
 

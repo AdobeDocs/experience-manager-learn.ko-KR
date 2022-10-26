@@ -1,7 +1,6 @@
 ---
 title: 태그 지정
 description: 태그는 자산의 폴더 계층 구조에서 자산을 관리하기 위한 필수 도구입니다. 태그 지정 분류 설정은 사용자가 AEM에서 자산을 검색하고 구성할 수 있도록 하는 데 매우 중요합니다.
-sub-product: assets
 feature: Asset Management
 version: Cloud Service
 kt: 4871
@@ -11,7 +10,7 @@ role: User
 level: Beginner
 last-substantial-update: 2022-09-16T00:00:00Z
 exl-id: e80f4289-8199-481b-85ba-2252e84b9753
-source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '62'
 ht-degree: 3%

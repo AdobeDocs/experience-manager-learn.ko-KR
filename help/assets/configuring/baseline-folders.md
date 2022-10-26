@@ -1,7 +1,6 @@
 ---
 title: 기준선 폴더
 description: AEM Assets에서 기준선 폴더를 정의하면 디지털 자산 관리를 위한 탄탄한 컨텐츠 아키텍처와 기반을 구축할 수 있습니다.
-sub-product: assets
 feature: Asset Management
 version: Cloud Service
 kt: 4870
@@ -11,7 +10,7 @@ role: User
 level: Beginner
 last-substantial-update: 2021-09-14T00:00:00Z
 exl-id: 9d11156d-1ea4-42a6-8e0d-cbc4aae4e34c
-source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '42'
 ht-degree: 0%

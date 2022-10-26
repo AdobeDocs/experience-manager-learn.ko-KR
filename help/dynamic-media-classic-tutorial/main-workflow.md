@@ -1,7 +1,6 @@
 ---
 title: Dynamic Media Classic 기본 워크플로우 및 자산 미리 보기
 description: 만들기(및 업로드), 작성자(및 게시) 및 게재의 3단계를 포함하는 Dynamic Media Classic의 기본 워크플로우에 대해 알아봅니다. 그런 다음 Dynamic Media Classic에서 자산을 미리 보는 방법을 알아봅니다.
-sub-product: dynamic-media
 feature: Dynamic Media Classic
 doc-type: tutorial
 topics: development, authoring, configuring, architecture, publishing
@@ -11,7 +10,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 04aacd81-bbb2-4742-9306-f0eabc665a41
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '2703'
 ht-degree: 1%
