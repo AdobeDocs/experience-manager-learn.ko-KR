@@ -9,7 +9,7 @@ level: Beginner
 last-substantial-update: 2022-10-20T00:00:00Z
 kt: 11336
 thumbnail: kt-11336.jpeg
-source-git-commit: d1e105a4083b34e7a3f220a59d4608ef39d39032
+source-git-commit: aeeed85ec05de9538b78edee67db4d632cffaaab
 workflow-type: tm+mt
 source-wordcount: '1027'
 ht-degree: 0%
@@ -42,7 +42,7 @@ FPID의 고유성 요구 사항을 조합하면 이러한 리소스를 캐시할
 1. CDN이나 AEM Dispatcher 캐시에서 웹 페이지를 제공할 수 없는 경우 요청이 AEM Publish 서비스에 도달하여 요청된 웹 페이지를 생성합니다.
 1. 그런 다음 웹 페이지가 웹 브라우저로 반환되어 요청을 처리할 수 없는 캐시를 채웁니다. AEM에서는 CDN 및 AEM Dispatcher 캐시 적중률이 90%보다 클 것으로 예상됩니다.
 1. 웹 페이지에는 AEM Publish 서비스의 사용자 지정 FPID 서블릿에 대해 실행 취소할 수 있는 비동기 XHR(AJAX) 요청을 만드는 JavaScript가 포함되어 있습니다. 이 요청은 취소할 수 없는 요청(임의 쿼리 매개 변수 및 캐시 제어 헤더에 의해)이므로 CDN 또는 AEM Dispatcher에 의해 캐시되지 않고 항상 AEM Publish 서비스에 도달하여 응답을 생성합니다.
-1. AEM 게시 서비스의 사용자 지정 FPID 서블릿은 요청을 처리하고, 기존 FPID 쿠키를 찾을 수 없을 때 새 FPID를 생성하거나, 기존 FPID 쿠키의 라이브를 확장합니다. 또한 서블릿은 클라이언트측 JavaScript에서 사용하기 위해 응답 본문에 FPID를 반환합니다. 다행히 사용자 지정 FPID 서블릿 로직이 가벼우므로 이 요청이 AEM 게시 서비스 성능에 영향을 주지 않습니다.
+1. AEM 게시 서비스의 사용자 지정 FPID 서블릿은 요청을 처리하고, 기존 FPID 쿠키를 찾을 수 없을 때 새 FPID를 생성하거나, 기존 FPID 쿠키의 수명을 확장합니다. 또한 서블릿은 클라이언트측 JavaScript에서 사용하기 위해 응답 본문에 FPID를 반환합니다. 다행히 사용자 지정 FPID 서블릿 로직이 가벼우므로 이 요청이 AEM 게시 서비스 성능에 영향을 주지 않습니다.
 1. XHR 요청에 대한 응답은 Platform Web SDK에서 사용하기 위해 응답 본문에 FPID 쿠키와 FPID가 JSON인 브라우저로 돌아갑니다.
 
 ## 코드 샘플
@@ -62,7 +62,9 @@ HTTP 요청이 서블릿에 도달하면 서블릿은 요청에 FPID 쿠키가 �
 + FPID 쿠키가 없는 경우 새 FPID 쿠키를 생성하고 값을 저장하여 응답에 씁니다.
 
 그러면 서블릿은 응답에 FPID를 양식의 JSON 개체로 기록합니다. `{ fpid: "<FPID VALUE>" }`.
+
 FPID 쿠키가 표시되어 있으므로 바디의 클라이언트에 FPID를 제공하는 것이 중요합니다 `HttpOnly`: 서버만 해당 값을 읽을 수 있고 클라이언트측 JavaScript는 읽을 수 없음을 의미합니다.
+
 응답 본문의 FPID 값은 Platform Web SDK를 사용하여 호출을 매개 변수화하는 데 사용됩니다.
 
 다음은 AEM 서블릿 엔드포인트(을 통해 사용 가능)의 예제 코드입니다 `HTTP GET /bin/aep/fpid`)가 FPID 쿠키를 생성하거나 새로 고침하고 FPID를 JSON으로 반환합니다.
