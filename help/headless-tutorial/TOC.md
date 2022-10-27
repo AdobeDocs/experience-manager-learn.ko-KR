@@ -2,14 +2,15 @@
 user-guide-title: AEM 헤드리스 시작하기
 user-guide-description: AEM Headless를 사용하여 콘텐츠를 작성하고 노출하는 방법을 소개하는 종단간 튜토리얼입니다.
 breadcrumb-title: AEM 헤드리스 튜토리얼
-version: Cloud Service
 feature-set: Experience Manager, Experience Manager Assets, Experience Manager Sites
+sub-product: Experience Manager Sites
+version: 6.5, Cloud Service
 kt: 2963
 index: y
-source-git-commit: 680ed62141b853daf104a827067ca6d5a209796d
+source-git-commit: 74510a4b075d2dba9b3f27018ba05f15dcad9562
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 20%
+source-wordcount: '268'
+ht-degree: 19%
 
 ---
 
@@ -107,7 +108,9 @@ ht-degree: 20%
    + [6 - 전달을 위해 AEM 게시에서 컨텐츠 노출](./content-services/chapter-6.md)
    + [7 - 모바일 앱에서 AEM Content Services 사용](./content-services/chapter-7.md)
 + 코드 샘플 {#code-samples}
-   + [React 앱](./graphql/code-samples/react-app.md)
-   + [Angular 앱](./graphql/code-samples/angular-app.md)
-   + [React 구성 요소](./graphql/code-samples/react-component.md)
-   + [JavaScript 필터](./graphql/code-samples/javascript-filter.md)
+   + [React 앱 필터링](./graphql/code-samples/filtering-react-app.md)
+   + [angular 앱 필터링](./graphql/code-samples/filtering-angular-app.md)
+   + [값 앱 필터링](./graphql/code-samples/filtering-vue-app.md)
+   + [jQuery 및 Handlebars를 사용한 필터링](./graphql/code-samples/filtering-jquery-handlebars.md)
+   + [기본 React 앱](./graphql/code-samples/basic-react-app.md)
+   + [기본 Next.js 앱](./graphql/code-samples/basic-nextjs-app.md)
