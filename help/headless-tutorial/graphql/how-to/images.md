@@ -9,10 +9,10 @@ level: Intermediate
 kt: 10253
 thumbnail: KT-10253.jpeg
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
-source-git-commit: 129dedd4cd6973d5d576bed5f714ce62152923de
+source-git-commit: 3a7c04dfe465c1eff29ba6b4e4b7e24f047e5b42
 workflow-type: tm+mt
-source-wordcount: '1173'
-ht-degree: 2%
+source-wordcount: '1182'
+ht-degree: 1%
 
 ---
 
@@ -116,31 +116,31 @@ AEM Assets 관리자는 처리 프로필을 사용하여 사용자 지정 표현
 
 #### 처리 프로필
 
-자산 표현물 사양은 [처리 프로필](../../../assets/configuring//processing-profiles.md) AEM Assets 관리자
+자산 표현물 사양은 [처리 프로필](../../../assets/configuring/processing-profiles.md) AEM Assets 관리자
 
 처리 프로필을 만들거나 업데이트하고 헤드리스 애플리케이션에 필요한 이미지 크기에 대한 변환 정의를 추가합니다. 표현물의 이름은 무엇이든 지정할 수 있지만 의미상 이름을 지정해야 합니다.
 
-![AEM Headless 최적화된 표현물](./assets/images/processing-profiles.jpg)
+![AEM Headless 최적화된 표현물](./assets/images/processing-profiles.png)
 
 이 예제에서는 다음 세 가지 표현물이 만들어집니다.
 
 | 표현물 이름 | 확장 | 최대 너비 |
-|----------------|:---------:|----------:|
-| 큼 | jpeg | 1200px |
-| 중간 | jpeg | 900px |
-| 작음 | jpeg | 600px |
+|-----------------------|:---------:|----------:|
+| 웹에 최적화된 대형 | webp | 1200px |
+| 웹 최적화 매체 | webp | 900px |
+| 웹에 최적화된 소규모 | webp | 600px |
 
 위의 표에서 호출된 속성은 중요합니다.
 
 + __표현물 이름__ 은 변환을 요청하는 데 사용됩니다.
-+ __확장__ 는 를 요청하는 데 사용되는 확장입니다 __변환 이름__.
++ __확장__ 는 를 요청하는 데 사용되는 확장입니다 __변환 이름__. 기본 설정 `webp` 렌디션은 웹 게재에 최적화되어 있습니다.
 + __최대 너비__ 헤드리스 애플리케이션에서 사용하는 렌디션을 기반으로 사용해야 하는 렌디션을 개발자에게 알려주는 데 사용됩니다.
 
 표현물 정의는 헤드리스 애플리케이션의 필요에 따라 다르므로 사용 사례에 대한 최적의 표현물 세트를 정의하며, 사용 방식에 대해 의미적으로 이름이 지정됩니다.
 
 #### 자산 재처리{#reprocess-assets}
 
-처리 프로필이 만들어지거나 업데이트되면, 자산을 재처리하여 처리 프로필에 정의된 새 변환을 생성합니다. 자산이 처리 프로필로 처리될 때까지 새 표현물이 존재하지 않습니다.
+처리 프로필이 만들어지거나 업데이트되면, 자산을 재처리하여 처리 프로필에 정의된 새 변환을 생성합니다. 자산이 처리 프로필로 처리될 때까지 새 표현물이 없습니다.
 
 + 바람직하게는, [폴더에 처리 프로필 지정](../../../assets/configuring//processing-profiles.md) 따라서 이 폴더에 업로드된 모든 새 자산은 자동으로 표현물을 생성합니다. 기존 자산은 아래의 임시 방법을 사용하여 다시 처리해야 합니다.
 
@@ -152,7 +152,7 @@ AEM Assets 관리자는 처리 프로필을 사용하여 사용자 지정 표현
 
 변환은 [자산의 표현물 보기 열기](../../../assets/authoring/renditions.md)를 클릭하고 표현물 레일에서 미리 볼 새 표현물을 선택합니다. 표현물이 누락된 경우 [처리 프로필을 사용하여 자산이 처리되는지 확인합니다](#reprocess-assets).
 
-![표현물 검토](./assets/images/review-renditions.jpg)
+![표현물 검토](./assets/images/review-renditions.png)
 
 #### 자산 게시
 
@@ -164,9 +164,9 @@ AEM Assets 관리자는 처리 프로필을 사용하여 사용자 지정 표현
 
 | 에셋 URL | 표현물 하위 경로 | 표현물 이름 | 표현물 확장 |  | 표현물 URL |
 |-----------|:------------------:|:--------------:|--------------------:|:--:|---|
-| https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg | /_jcr_content/renditions/ | 큼 | .jpeg | → | https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg/_jcr_content/renditions/large.jpeg |
-| https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg | /_jcr_content/renditions/ | 중간 | .jpeg | → | https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg/_jcr_content/renditions/medium.jpeg |
-| https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg | /_jcr_content/renditions/ | 작음 | .jpeg | → | https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg/_jcr_content/renditions/small.jpeg |
+| https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg | /_jcr_content/renditions/ | 웹에 최적화된 대형 | .webp | → | https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg/_jcr_content/renditions/web-optimized-large.webp |
+| https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg | /_jcr_content/renditions/ | 웹 최적화 매체 | .webp | → | https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg/_jcr_content/renditions/web-optimized-medium.webp |
+| https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg | /_jcr_content/renditions/ | 웹에 최적화된 소규모 | .webp | → | https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg/_jcr_content/renditions/web-optimized-small.webp |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -176,7 +176,7 @@ AEM GraphQL에는 이미지 표현물 요청에 추가 구문이 필요합니다
 
 ### React 예
 
-단일 이미지 자산의 세 가지 표현물, 중소기업 및 큰 표현물을 표시하는 간단한 React 애플리케이션을 만들겠습니다.
+웹 최적화, 웹 최적화, 웹 최적화, 미디어 및 웹 최적화, 대규모 단일 이미지 자산 3가지 표현물을 표시하는 간단한 React 애플리케이션을 만들겠습니다.
 
 ![이미지 자산 표현물 반응 예](./assets/images/react-example-renditions.jpg)
 
@@ -216,7 +216,7 @@ export default function Image({ assetUrl, renditionName, renditionExtension, alt
 
 #### 을(를) 정의합니다 `App.js`{#app-js}
 
-간단합니다 `App.js` AEM에서 Adventure 이미지를 쿼리하고 이미지의 세 가지 표현물을 표시합니다. 작은, 중간, 큰
+간단합니다 `App.js` AEM에서 Adventure 이미지를 쿼리하고 이미지의 세 가지 표현물을 표시합니다. 웹 최적화(web-optimized-small, web-optimized-medium, web-optimized-large)
 
 AEM에 대한 쿼리는 사용자 지정 React 후크에서 수행됩니다 [AEM Headless SDK를 사용하는 useAdventureByPath](./aem-headless-sdk.md#graphql-persisted-queries).
 
@@ -242,33 +242,33 @@ function App() {
     <div className="app">
       
       <h2>Small rendition</h2>
-      {/* Render the small rendition for the Adventure Primary Image */}
+      {/* Render the web-optimized-small rendition for the Adventure Primary Image */}
       <Image
         assetUrl={data.adventureByPath.item.primaryImage._publishUrl}
-        renditionName="small"
-        renditionExtension="jpeg"
+        renditionName="web-optimized-small"
+        renditionExtension="webp"
         alt={data.adventureByPath.item.title}
       />
 
       <hr />
 
       <h2>Medium rendition</h2>
-      {/* Render the medium rendition for the Adventure Primary Image */}
+      {/* Render the web-optimized-medium rendition for the Adventure Primary Image */}
       <Image
         assetUrl={data.adventureByPath.item.primaryImage._publishUrl}
-        renditionName="medium"
-        renditionExtension="jpeg"
+        renditionName="web-optimized-medium"
+        renditionExtension="webp"
         alt={data.adventureByPath.item.title}
       />
 
       <hr />
 
       <h2>Large rendition</h2>
-      {/* Render the large rendition for the Adventure Primary Image */}
+      {/* Render the web-optimized-large rendition for the Adventure Primary Image */}
       <Image
         assetUrl={data.adventureByPath.item.primaryImage._publishUrl}
-        renditionName="large"
-        renditionExtension="jpeg"
+        renditionName="web-optimized-large"
+        renditionExtension="webp"
         alt={data.adventureByPath.item.title}
       />
     </div>
