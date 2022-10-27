@@ -1,24 +1,25 @@
 ---
 title: 인쇄 채널 문서를 위한 두 개의 열 레이아웃 만들기
-seo-title: 인쇄 채널 문서를 위한 두 개의 열 레이아웃 만들기
+seo-title: Creating two column layouts for print channel documents
 description: 인쇄 채널 문서용 2열 레이아웃 만들기
-seo-description: 인쇄 채널 문서용 2열 레이아웃 만들기
-feature: 대화형 통신
+seo-description: Create 2 column layouts for print channel document
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
-topic: 개발
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 416e3401-ba9f-4da3-8b07-2d39f9128571
+last-substantial-update: 2019-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '241'
-ht-degree: 2%
+source-wordcount: '223'
+ht-degree: 0%
 
 ---
-
 
 # 인쇄 채널 문서의 두 열 레이아웃
 

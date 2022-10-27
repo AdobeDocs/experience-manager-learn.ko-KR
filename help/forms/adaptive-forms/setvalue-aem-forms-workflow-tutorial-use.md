@@ -1,17 +1,18 @@
 ---
 title: AEM Forms 워크플로우에서 setvalue 사용
 description: AEM Forms OSGI에서 제출된 적응형 Forms의 요소 값 설정
-feature: 적응형 양식
-topic: 개발
+feature: Adaptive Forms
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 3919efee-6998-48e8-85d7-91b6943d23f9
+last-substantial-update: 2020-01-09T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '531'
-ht-degree: 1%
+source-wordcount: '528'
+ht-degree: 0%
 
 ---
-
 
 # AEM Forms 워크플로우에서 setvalue 사용
 
@@ -38,18 +39,18 @@ AEM 워크플로우에서는 프로세스 단계를 사용합니다. &quot;XML�
 
 * [Developingwithserviceuser 번들 배포](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-* [샘플 번들을 배포합니다](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). 제출된 xml 데이터에 있는 요소의 값을 설정할 수 있는 사용자 지정 OSGI 번들입니다
+* [샘플 번들 배포](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). 제출된 xml 데이터에 있는 요소의 값을 설정할 수 있는 사용자 지정 OSGI 번들입니다
 
 * [zip 파일의 컨텐츠를 다운로드하고 추출합니다](assets/setvalueassets.zip)
-* 브라우저를 [패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp)로 보냅니다.
+* 브라우저를 [패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp)
 * setValueWorkflow.zip을 가져와 설치합니다. 여기에는 샘플 워크플로우 모델이 있습니다.
-* 브라우저를 [Forms 및 문서](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)로 보냅니다.
+* 브라우저를 [Forms 및 문서](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * 만들기 를 클릭합니다 | 파일 업로드
 * TimeOfRequestForm.zip 업로드
-* [TimeOffRequestform](http://localhost:4502/content/dam/formsanddocuments/timeoffapplication/jcr:content?wcmmode=disabled)을 엽니다.
+* 를 엽니다. [TimeOffRequestform](http://localhost:4502/content/dam/formsanddocuments/timeoffapplication/jcr:content?wcmmode=disabled)
 * 3개의 필수 필드를 작성하고 제출합니다.
 * AEM에 &#39;admin&#39;으로 로그인합니다(아직 로그인하지 않은 경우)
-* [&quot;AEM 받은 편지함&quot;](http://localhost:4502/aem/inbox)으로 이동합니다.
+* 이동 [&quot;AEM 받은 편지함&quot;](http://localhost:4502/aem/inbox)
 * Review Time Off Request 양식 열기
 * 첫 번째 패널의 필드가 비활성화되어 있습니다. 검토자가 양식을 열고 있기 때문입니다. 또한 요청을 승인하거나 거절하는 패널이 표시되는 것을 확인합니다
 

@@ -1,28 +1,29 @@
 ---
 title: 차트에서 환원 함수 사용
-seo-title: AEM Forms에서 리덕터 함수 사용 - 차트
+seo-title: Using Reducer Functions in AEM Forms - Charts
 description: 환원 함수는 차트에 표시된 값을 집계하거나 그룹화하는 데 사용됩니다.다음 비디오에서는 환원 함수를 사용하는 단계를 안내합니다.
-seo-description: 환원 함수는 차트에 표시된 값을 집계하거나 그룹화하는 데 사용됩니다.다음 비디오에서는 환원 함수를 사용하는 단계를 안내합니다.
+seo-description: Reducer functions are used to aggregate or group values that are displayed in the chart.The following video walks through the steps involved in using reducer functions.
 uuid: e9bd8bda-48ea-4a02-95c4-02aedafdb640
 discoiquuid: 6fef8341-8fd5-4d82-9f69-2b8be7cd22db
-feature: 대화형 통신
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: technical video
 activity: use
 version: 6.4,6.5
-topic: 개발
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 866749d9-0f62-470b-afeb-4dece4e0b169
+last-substantial-update: 2019-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '130'
-ht-degree: 2%
+source-wordcount: '94'
+ht-degree: 0%
 
 ---
 
-
-# AEM Forms에서 환원 함수 사용 - 차트{#using-reducer-functions-in-aem-forms-charts}
+# AEM Forms에서 리덕터 함수 사용 - 차트{#using-reducer-functions-in-aem-forms-charts}
 
 환원 함수는 차트에 표시된 값을 집계하거나 그룹화하는 데 사용됩니다.
 
@@ -64,4 +65,3 @@ ht-degree: 2%
 다음 비디오에서는 리덕터 기능을 사용하는 단계를 설명합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/21368/?quality=9&learn=on)
-

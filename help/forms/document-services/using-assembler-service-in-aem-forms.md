@@ -1,18 +1,19 @@
 ---
 title: AEM Forms에서 어셈블러 서비스 사용
 description: AEM Forms의 어셈블러 서비스를 사용하여 여러 pdf 파일 조합
-feature: 어셈블러
+feature: Assembler
 version: 6.4,6.5
-topic: 개발
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 18da12ea-b1ea-48e4-979e-3cb59584dfbd
+last-substantial-update: 2020-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 3%
+source-wordcount: '207'
+ht-degree: 2%
 
 ---
-
 
 # AEM Forms에서 어셈블러 서비스 사용{#using-assembler-service-in-aem-forms}
 
@@ -101,32 +102,25 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 
 AEM 서버에서 이 기능을 사용하려면
 
-* [AssembleMultipleFiles.zip](assets/assemble-multiple-files.zip)을 로컬 시스템에 다운로드합니다.
-* [패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp)를 사용하여 패키지를 업로드하고 설치합니다
-* [사용자 지정 문서 서비스 번들 다운로드](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
-* [서비스 사용자 번들로 개발](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar) 다운로드
-* [felix 웹 콘솔](http://localhost:4502/system/console/bundles)을 사용하여 번들을 배포하고 시작합니다
-* 브라우저를 [AssemblePdfs.html](http://localhost:4502/content/DocumentServices/AssemblePdfs.html)로 가리킵니다.
-* PDF 파일 두 개를 끌어다 놓기
+* 다운로드 [AssembleMultipleFiles.zip](assets/assemble-multiple-files.zip) 로컬 시스템으로 이동합니다.
+* 를 사용하여 패키지를 업로드하고 설치합니다 [패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp)
+* 다운로드[사용자 정의 문서 서비스 번들](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
+* 다운로드 [서비스 사용자 번들로 개발](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
+* 를 사용하여 번들을 배포하고 시작합니다 [felix web console](http://localhost:4502/system/console/bundles)
+* 브라우저를 [AssemblePdf.html](http://localhost:4502/content/DocumentServices/AssemblePdfs.html)
+* PDF 파일 두 개 끌어다 놓기
 
 >[!NOTE]
 >
 >AEM Forms 설치가 완료되었는지 확인합니다. 모든 번들은 활성 상태여야 합니다.
 >
->이 [AEM Forms 설치](https://helpx.adobe.com/aem-forms/6-3/installing-configuring-aem-forms-osgi.html)에 설명된 대로 부팅 위임 RSA 및 BouncyCastle 라이브러리가 추가되었는지 확인하십시오.
+>추가되었는지 확인합니다. - 여기에 언급된 대로 부팅 위임 RSA 및 BouncyCastle 라이브러리 [AEM Forms 설치](https://helpx.adobe.com/aem-forms/6-3/installing-configuring-aem-forms-osgi.html)
 >
 >**이 데모 경고**
 >
 > * 코드가 XFA 기반 PDF 문서를 처리하지 않습니다
-   >
-   > 
-* PDF 파일만 끌어서 놓습니다
+>
+> * PDF 파일만 끌어서 놓습니다
 >
 >
-
-
-
-
-
-
 

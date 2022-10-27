@@ -9,7 +9,8 @@ topic: Development
 role: User
 level: Intermediate
 exl-id: be519d58-1caa-42ea-97a9-7cd38ce8faca
-source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
+last-substantial-update: 2021-01-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
 source-wordcount: '106'
 ht-degree: 0%
@@ -29,7 +30,7 @@ ht-degree: 0%
 다음 비디오에서는 교육 과정에 대한 개요를 제공합니다
 >[!VIDEO](https://video.tv.adobe.com/v/36387/quality=9)
 
-## 전제 조건
+## 사전 요구 사항
 
 * AEM Forms 작업 인스턴스
 * MySQL 데이터베이스 및 MySQL Workbench에 익숙함

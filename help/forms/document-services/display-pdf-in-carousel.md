@@ -1,13 +1,15 @@
 ---
-title: Display multiple pdf documents
-description: Cycle through multiple pdf documents in an adaptive form.
+title: 여러 pdf 문서 표시
+description: 적응형 양식으로 여러 pdf 문서를 순환합니다.
 version: 6.5
 feature: Adaptive Forms
 topic: Development
 role: Developer
 level: Experienced
 kt: 10292
-source-git-commit: cb5b3eb77a57fa8a2918710b7dbcd1b0a58b74bd
+exl-id: c1d248c3-8208-476e-b0ae-cab25575cd6a
+last-substantial-update: 2021-10-12T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 4%
@@ -20,7 +22,7 @@ ht-degree: 4%
 
 이 사용 사례를 달성하기 위해 [Adobe PDF 포함 API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html).
 
-[A live demo of this sample can be experienced here.](https://forms.enablementadobe.com/content/dam/formsanddocuments/wefinancecreditcard/jcr:content?wcmmode=disabled)
+[여기서는 이 샘플의 라이브 데모를 확인할 수 있습니다.](https://forms.enablementadobe.com/content/dam/formsanddocuments/wefinancecreditcard/jcr:content?wcmmode=disabled)
 
 통합을 완료하기 위해 다음 단계가 수행되었습니다
 
@@ -32,15 +34,12 @@ pdf 문서를 순환하기 위해 사용자 정의 구성 요소(pdf-carousel)�
 
 Adobe PDF 포함 API를 사용하여 PDF을 표시하기 위해 클라이언트 라이브러리가 생성되었습니다. 표시할 PDF은 pdf 회전 구성 요소에 지정됩니다.
 
-## Create Adaptive Form
+## 적응형 양식 만들기
 
-Create an adaptive form based with some tabs (This sample has 3 tabs)
-Add some adaptive form components in the first two tabs
-Add the pdf carousel component in the third tab
-Configure the pdf-carousel component as shown in the screenshot below
+일부 탭을 기반으로 적응형 양식 만들기(이 샘플에는 3개의 탭이 있음) 처음 두 개의 탭에 몇 가지 적응형 양식 구성 요소를 추가합니다. 세 번째 탭에서 pdf 회전 구성 요소 추가 아래 스크린샷에 표시된 대로 pdf 회전 구성 요소 구성
 ![pdf-carousel](assets/pdf-carousel-af-component.png)
 
-**포함 PDF API 키** - pdf를 포함하는 데 사용할 수 있는 키입니다. This key will only work with localhost. You can create [your own key](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) and associate it with other domain.
+**포함 PDF API 키** - pdf를 포함하는 데 사용할 수 있는 키입니다. 이 키는 localhost에서만 작동합니다. 다음을 만들 수 있습니다 [개인 키](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) 다른 도메인과 연결합니다.
 
 **PDF 문서 지정** - 여기서는 회전판에 표시할 pdf 문서를 지정할 수 있습니다.
 
@@ -54,4 +53,4 @@ Configure the pdf-carousel component as shown in the screenshot below
 1. [적응형 양식 가져오기 ](assets/adaptive-form-pdf-carousel.zip) 로컬 AEM 인스턴스에 추가 [패키지 관리자 사용](http://localhost:4502/crx/packmgr/index.jsp)
 1. [표시할 샘플 pdf를 가져옵니다](assets/pdf-carousel-sample-documents.zip) 로컬 AEM 인스턴스에 추가 [자산 파일 업로드 링크 사용](http://localhost:4502/assets.html/content/dam)
 1. [적응형 양식 미리 보기](http://localhost:4502/content/dam/formsanddocuments/wefinancecreditcard/jcr:content?wcmmode=disabled)
-1. Tab to the Documents to Review tab. 회전판 구성 요소에 3개의 PDF 문서가 표시됩니다.
+1. 검토할 문서 탭으로 이동합니다. 회전판 구성 요소에 3개의 PDF 문서가 표시됩니다.

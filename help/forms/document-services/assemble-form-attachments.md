@@ -1,20 +1,21 @@
 ---
 title: 양식 첨부 파일 조합
 description: 지정된 순서로 양식 첨부 파일 조합
-feature: 어셈블러
+feature: Assembler
 version: 6.4,6.5
 kt: 6406
 thumbnail: kt-6406.jpg
-topic: 개발
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: a5df8780-b7ab-4b91-86f6-a24392752107
+last-substantial-update: 2021-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '633'
 ht-degree: 0%
 
 ---
-
 
 # 양식 첨부 파일 조합
 
@@ -24,7 +25,7 @@ ht-degree: 0%
 
 ## WorkflowProcess 인터페이스를 구현하는 OSGi 구성 요소 만들기
 
-[com.adobe.granite.workflow.exec.WorkflowProcess 인터페이스](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowProcess.html)를 구현하는 OSGi 구성 요소를 만듭니다. 이 구성 요소의 코드는 AEM 워크플로우의 프로세스 단계 구성 요소와 연결할 수 있습니다. 인터페이스 com.adobe.granite.workflow.exec.WorkflowProcess의 execute 메서드는 이 구성 요소에 구현됩니다.
+를 구현하는 OSGi 구성 요소 만들기 [com.adobe.granite.workflow.exec.WorkflowProcess 인터페이스](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowProcess.html). 이 구성 요소의 코드는 AEM 워크플로우의 프로세스 단계 구성 요소와 연결할 수 있습니다. 인터페이스 com.adobe.granite.workflow.exec.WorkflowProcess의 execute 메서드는 이 구성 요소에 구현됩니다.
 
 적응형 양식이 제출되어 AEM 워크플로우를 트리거하면 제출된 데이터가 페이로드 폴더 아래에 지정된 파일에 저장됩니다. 예를 들어 제출된 데이터 파일입니다. id카드와 bankstatements 태그에 지정된 첨부 파일을 취합해야 합니다.
 ![제출된 데이터](assets/submitted-data.JPG).
@@ -43,7 +44,7 @@ String  []attachmentNames  = arg2.get("PROCESS_ARGS","string").toString().split(
 
 ### 첨부 파일에서 DDX 만들기
 
-그런 다음 어셈블러 서비스에서 문서를 어셈블하기 위해 사용하는 [문서 설명 XML(DDX)](https://helpx.adobe.com/pdf/aem-forms/6-2/ddxRef.pdf) 문서를 만들어야 합니다. 다음은 프로세스 인수로 생성된 DDX입니다. NoForms 요소를 사용하면 XFA 기반 문서를 어셈블하기 전에 평면화할 수 있습니다. PDF 소스 요소는 프로세스 인수에 지정된 순서대로 표시됩니다.
+그런 다음 [문서 설명 XML(DDX)](https://helpx.adobe.com/pdf/aem-forms/6-2/ddxRef.pdf) 어셈블러 서비스에서 문서를 어셈블하는 데 사용하는 문서입니다. 다음은 프로세스 인수로 생성된 DDX입니다. NoForms 요소를 사용하면 XFA 기반 문서를 어셈블하기 전에 평면화할 수 있습니다. PDF 소스 요소가 프로세스 인수에 지정된 순서대로 오른쪽에 있습니다.
 
 ![ddx-xml](assets/ddx.PNG)
 
@@ -132,16 +133,15 @@ session.save();
 
 ### AEM 서버에서 이 기능을 사용하려면
 
-* [양식 첨부 파일 조합 양식](assets/assemble-form-attachments-af.zip)을 로컬 시스템에 다운로드합니다.
-* [Forms 및 문서](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments) 페이지에서 양식을 가져옵니다.
-* [workflow](assets/assemble-form-attachments.zip)를 다운로드하고 패키지 관리자를 사용하여 AEM으로 가져옵니다.
-* [사용자 지정 번들](assets/assembletaskattachments.assembletaskattachments.core-1.0-SNAPSHOT.jar) 다운로드
-* [웹 콘솔](http://localhost:4502/system/console/bundles)을 사용하여 번들을 배포하고 시작합니다
-* 브라우저를 [AssembleAttachments 양식](http://localhost:4502/content/dam/formsanddocuments/assembleattachments/jcr:content?wcmmode=disabled)으로 보냅니다.
+* 다운로드 [양식 첨부 파일 양식 조합](assets/assemble-form-attachments-af.zip) 로컬 시스템으로 이동합니다.
+* 에서 양식 가져오기[Forms 및 문서](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments) 페이지.
+* 다운로드 [워크플로우](assets/assemble-form-attachments.zip) 패키지 관리자를 사용하여 AEM으로 가져옵니다.
+* 다운로드 [사용자 지정 번들](assets/assembletaskattachments.assembletaskattachments.core-1.0-SNAPSHOT.jar)
+* 를 사용하여 번들을 배포하고 시작합니다 [웹 콘솔](http://localhost:4502/system/console/bundles)
+* 브라우저를 [첨부 파일 조합 양식](http://localhost:4502/content/dam/formsanddocuments/assembleattachments/jcr:content?wcmmode=disabled)
 * ID 문서에 첨부 파일을 추가하고 은행 거래 명세서 섹션에 pdf 문서 두 개를 추가합니다
 * 워크플로우를 트리거할 양식 제출
-* crx](http://localhost:4502/crx/de/index.jsp#/var/fd/dashboard/payload)에 있는 워크플로우의 [페이로드 폴더에서 어셈블된 pdf를 확인합니다
+* 워크플로우의 [crx의 페이로드 폴더](http://localhost:4502/crx/de/index.jsp#/var/fd/dashboard/payload) 어셈블된 pdf용
 
 >[!NOTE]
 > 사용자 지정 번들에 대한 로거를 활성화한 경우 DDX 및 어셈블된 파일이 AEM 설치 폴더에 기록됩니다.
-

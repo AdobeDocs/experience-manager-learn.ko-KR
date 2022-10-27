@@ -8,10 +8,12 @@ topic: Development
 role: Developer
 level: Beginner
 kt: 9359
-source-git-commit: bbb2c352e8a4297496f248bbbc86252ac7118999
+exl-id: f7c1f991-0486-4355-8502-cd5b038537e3
+last-substantial-update: 2019-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
 source-wordcount: '326'
-ht-degree: 14%
+ht-degree: 15%
 
 ---
 
@@ -41,7 +43,7 @@ ht-degree: 14%
 
 활성 상태인지 확인하고 다음 CSS 속성 스타일을 지정합니다
 
-| 카테고리 | 속성 이름 | 속성 값 |
+| 범주 | 속성 이름 | 속성 값 |
 |:---|:---|:---|
 | Dimension 및 위치 | 너비 | 50px |
 | 텍스트 | 글꼴 두께 | 볼드체 |
@@ -62,7 +64,7 @@ ht-degree: 14%
 
 방문 상태인지 확인하고 다음 속성 스타일을 지정합니다
 
-| 카테고리 | 속성 이름 | 속성 값 |
+| 범주 | 속성 이름 | 속성 값 |
 |:---|:---|:---|
 | Dimension 및 위치 | 너비 | 50px |
 | 텍스트 | 글꼴 두께 | 볼드체 |

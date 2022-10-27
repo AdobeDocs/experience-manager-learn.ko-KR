@@ -8,7 +8,8 @@ topic: Development
 role: Admin
 level: Beginner
 exl-id: 80288765-0b51-44a9-95d3-3bdb2da38615
-source-git-commit: 09f6c4b0bec10edd306270a7416fcaff8a584e76
+last-substantial-update: 2020-06-09T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
 source-wordcount: '578'
 ht-degree: 6%
@@ -42,7 +43,7 @@ ht-degree: 6%
 * 
    * AEM 6.3과 AEM 6.4 다음 요구 사항: Oracle SE 8 JDK 1.8.x(64비트)
 * AEM 6.5 JDK 8 또는 JDK 11이 필요합니다.
-* [공식 JDK 요구 사항](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/introduction/technical-requirements.html?lang=ko) 여기에 나열되어 있습니다.
+* [공식 JDK 요구 사항](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/introduction/technical-requirements.html?lang=ko-KR) 여기에 나열되어 있습니다.
 * JAVA_HOME이 설치된 JDK를 가리키도록 설정되어 있는지 확인합니다.
    * Windows에서 JAVA_HOME 변수를 만들려면 아래 단계를 수행하십시오.
       * 내 컴퓨터 를 마우스 오른쪽 단추로 클릭하고 속성 을 선택합니다

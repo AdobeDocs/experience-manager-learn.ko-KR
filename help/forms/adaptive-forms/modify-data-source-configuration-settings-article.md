@@ -1,18 +1,19 @@
 ---
 title: 데이터 소스 구성 설정을 수정합니다.
 description: 데이터 소스 구성 설정에서 호스트 이름 및 기타 설정을 수정합니다.
-feature: 적응형 양식
+feature: Adaptive Forms
 version: 6.5
-topic: 개발
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 6c63787c-e511-4764-9a03-2c85c394bcc0
+last-substantial-update: 2019-06-09T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '142'
-ht-degree: 2%
+source-wordcount: '139'
+ht-degree: 0%
 
 ---
-
 
 # 데이터 소스 구성 설정을 수정하는 기능{#ability-to-modify-data-source-configuration-settings}
 
@@ -24,7 +25,6 @@ AEM Forms 6.4 릴리스까지 데이터 소스가 구성되면 RESTful 서비스
 
 **AEM 6.4의 데이터 소스 구성**
 
-![64AEM ](assets/64release.gif)
-**6.5 이상**
-![ 65DataSource 구성에서 DataSource ConfigurationEditable Data Source 구성](assets/modifiabledatasource.jfif)
-
+![64DataSource 구성](assets/64release.gif)
+**AEM 6.5 이상에서 편집 가능한 데이터 소스 구성**
+![65DataSource 구성](assets/modifiabledatasource.jfif)

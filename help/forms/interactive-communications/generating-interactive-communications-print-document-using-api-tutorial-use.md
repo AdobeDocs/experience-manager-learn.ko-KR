@@ -1,24 +1,25 @@
 ---
 title: 감시 폴더 메커니즘을 사용하여 인쇄 채널용 대화형 통신 문서 생성
-seo-title: 감시 폴더 메커니즘을 사용하여 인쇄 채널용 대화형 통신 문서 생성
+seo-title: Generating Interactive Communications Document for print channel using watch folder mechanism
 description: 감시 폴더를 사용하여 인쇄 채널 문서를 생성합니다
-seo-description: 감시 폴더를 사용하여 인쇄 채널 문서를 생성합니다
-feature: 대화형 통신
+seo-description: Use watched folder to generate print channel documents
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
-topic: 개발
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: f5ab4801-cde5-426d-bfe4-ce0a985e25e8
+last-substantial-update: 2019-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 1%
+source-wordcount: '463'
+ht-degree: 0%
 
 ---
-
 
 # 감시 폴더 메커니즘을 사용하여 인쇄 채널용 대화형 통신 문서 생성
 
@@ -46,15 +47,15 @@ ht-degree: 1%
 
 1행 - InteractiveCommunicationsDocument 경로
 
-15-20행:감시 폴더에 드롭된 XML 문서에서 계정 번호 목록을 가져옵니다.
+15-20행: 감시 폴더에 드롭된 XML 문서에서 계정 번호 목록을 가져옵니다.
 
-24-25행:문서와 연결된 PrintChannelService 및 인쇄 채널을 가져옵니다.
+24-25행: 문서와 연결된 PrintChannelService 및 인쇄 채널을 가져옵니다.
 
-30호선:계정 번호를 양식 데이터 모델에 키 요소로 전달합니다.
+30호선: 계정 번호를 양식 데이터 모델에 키 요소로 전달합니다.
 
-32-36호선:생성할 문서의 데이터 옵션을 설정합니다.
+32-36호선: 생성할 문서의 데이터 옵션을 설정합니다.
 
-38호선:문서를 렌더링합니다.
+38호선: 문서를 렌더링합니다.
 
 39-40행 - 생성된 문서를 파일 시스템에 저장합니다.
 
@@ -112,9 +113,9 @@ resourceResolverHelper.callWith(resourceResolver, {call: function()
 
 **로컬 시스템에서 테스트하려면 다음 지침을 따르십시오.**
 
-* 이 [문서에 설명된 대로 Tomcat을 설정합니다.](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md) Tomcat에는 샘플 데이터를 생성하는 전쟁 파일이 있습니다.
-* 이 [article](/help/forms/adaptive-forms/service-user-tutorial-develop.md)에 설명된 대로 시스템 사용자라는 서비스를 설정하십시오.
-이 시스템 사용자에게 다음 노드에 대한 읽기 권한이 있는지 확인합니다. 권한을 [사용자 관리자](https://localhost:4502/useradmin)에 로그인하고 시스템 사용자 &quot;데이터&quot;를 검색하고 권한 탭으로 이동하여 다음 노드에 대한 읽기 권한을 제공합니다
+* 여기에 설명된 대로 Tomcat을 설정합니다. [문서.](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md) Tomcat에는 샘플 데이터를 생성하는 전쟁 파일이 있습니다.
+* 다음에 설명된 대로 시스템 사용자라고도 하는 서비스를 설정합니다 [문서](/help/forms/adaptive-forms/service-user-tutorial-develop.md).
+이 시스템 사용자에게 다음 노드에 대한 읽기 권한이 있는지 확인합니다. 권한을 부여하려면 [사용자 관리자](https://localhost:4502/useradmin) 시스템 사용자 &quot;data&quot;를 검색하고 권한 탭으로 이동하여 다음 노드에 대한 읽기 권한을 제공합니다
    * /content/dam/formsanddocuments
    * /content/dam/formsanddocuments-fdm
    * /content/forms/af
@@ -152,4 +153,3 @@ resourceResolverHelper.callWith(resourceResolver, {call: function()
 >Windows가 아닌 운영 체제에서 사용할 계획이라면 다음 위치로 이동하십시오.
 >
 >/etc/fd/watchfolder /config/PrintChannelDocument 및 기본 설정에 따라 folderPath를 변경합니다
-

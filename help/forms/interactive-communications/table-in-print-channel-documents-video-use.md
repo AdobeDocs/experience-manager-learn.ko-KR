@@ -1,23 +1,24 @@
 ---
 title: AEM Forms 인쇄 채널 문서에서 표 구성 요소 사용
-seo-title: AEM Forms 인쇄 채널 문서에서 표 구성 요소 사용
+seo-title: Using Table Component in AEM Forms Print Channel Document
 description: 다음 비디오에서는 Interactive Communications에서 인쇄 채널 문서에 테이블 구성 요소를 사용하는 데 필요한 단계를 안내합니다.
-feature: 대화형 통신
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: technical video
 activity: implement
 version: 6.4,6.5
-topic: 개발
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 54afd047-c6e6-4557-9336-39420f30df88
+last-substantial-update: 2019-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '279'
-ht-degree: 1%
+source-wordcount: '267'
+ht-degree: 0%
 
 ---
-
 
 # AEM Forms 인쇄 채널 문서에서 표 구성 요소 사용 {#using-table-component-in-aem-forms-print-channel-document}
 
@@ -46,10 +47,9 @@ ht-degree: 1%
    * 대화형 통신 문서
    * sampleretirementaccountdata.json
 
-* [편집 모드](http://localhost:4502/editor.html/content/forms/af/401kstatement/tablesinprintdocument/channels/print.html)에서 대화형 통신 문서를 엽니다.
+* Interactive Communication 문서 열기 [편집 모드](http://localhost:4502/editor.html/content/forms/af/401kstatement/tablesinprintdocument/channels/print.html).
 
 * TableDemo 레이아웃 조각을 기여도 섹션에 추가합니다.
 * 표 셀을 비디오에 표시된 대로 적절한 양식 데이터 모델 요소에 바인딩합니다
 
 * 제공된 샘플 json 데이터 파일을 사용하여 대화형 통신 문서 미리 보기
-

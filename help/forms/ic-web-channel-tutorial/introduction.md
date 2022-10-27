@@ -13,7 +13,8 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 65b1af30-9e22-4df0-ab91-479d5406df61
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+last-substantial-update: 2019-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 3%
@@ -26,7 +27,7 @@ ht-degree: 3%
 
 ## 사전 요구 사항 {#prerequistes}
 
-[패키지 관리자를 사용하여 이 자습서와 관련된 자산을 AEM으로 다운로드하여 가져옵니다.](assets/gettingstartedassets.zip). 이 zip 파일에는 이 자습서에서 사용되는 이미지 및 문서 조각이 포함되어 있습니다
+[패키지 관리자를 사용하여 이 자습서와 관련된 자산을 AEM으로 다운로드하여 가져옵니다.](assets/gettingstartedassets.zip)을 따르지 않는 경우입니다. 이 zip 파일에는 이 자습서에서 사용되는 이미지 및 문서 조각이 포함되어 있습니다
 
 [이 파일을 다운로드하여 압축을 해제합니다.](assets/warfileandswaggerfile.zip) 이 파일에는 데이터 소스를 구성하는 데 사용해야 하는 Tomcat 및 swagger 파일에 배포해야 하는 SampleRest.war 파일이 포함되어 있습니다.
 

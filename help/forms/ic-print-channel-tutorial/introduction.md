@@ -13,7 +13,8 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 1949aeff-ae56-4abd-8e63-23c2fb4859f2
-source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
+last-substantial-update: 2019-08-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 2%
@@ -24,7 +25,7 @@ ht-degree: 2%
 
 Interactive Communications는 AEM Forms 6.4의 새로운 기능입니다. 이 문서는 인쇄 채널용 대화형 커뮤니케이션을 만드는 데 필요한 단계를 안내합니다.
 
-## 전제 조건 {#prerequistes}
+## 사전 요구 사항 {#prerequistes}
 
 [패키지 관리자를 사용하여 이 자습서와 관련된 자산을 AEM으로 다운로드하여 가져옵니다.](assets/gettingstartedassets.zip)이 zip 파일에는 자산 패키지의 일부로 이미지, 문서 조각, 감시 폴더 구성 및 레이아웃 파일(xdp)이 포함되어 있습니다
 
@@ -33,7 +34,7 @@ Interactive Communications는 AEM Forms 6.4의 새로운 기능입니다. 이 �
 이 자습서를 완료하면 다음 사항을 알 수 있습니다.
 
 * 데이터 소스 만들기
-* 양식 데이터 모델 작성
+* 양식 데이터 모델 만들기
 * 문서 조각 만들기
 * 테이블 및 차트 구성
 * 감시 폴더를 사용하여 일괄 처리 모드에서 문서를 생성합니다.

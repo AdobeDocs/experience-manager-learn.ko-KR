@@ -1,20 +1,21 @@
 ---
 title: AEM Forms OSGi에서 Reader 확장 구성
 description: AEM Forms OSGi의 신뢰 저장소에 Reader 확장 자격 증명을 추가합니다
-feature: Reader 확장
+feature: Reader Extensions
 audience: developer
 type: Tutorial
 version: 6.4,6.5
-topic: 관리
+topic: Administration
 role: Admin
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 1f16acfd-e8fd-4b0d-85c4-ed860def6d02
+last-substantial-update: 2020-08-01T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '209'
 ht-degree: 0%
 
 ---
-
 
 # Reader 확장 자격 증명 추가{#configuring-reader-extension-osgi}
 
@@ -41,19 +42,6 @@ DocAssurance 서비스는 PDF 문서에 사용 권한을 적용할 수 있습니
 
 pfx 파일의 세부 정보를 나열하는 명령은 입니다. 다음 명령은 사용자가 pfx 파일 과 동일한 디렉터리에 있다고 가정합니다.
 
-**keytool -v -list -storetype pkcs12 -keystore  &lt;name of=&quot;&quot; your=&quot;&quot;>**
+**keytool -v -list -storetype pkcs12 -keystore &lt;name of=&quot;&quot; your=&quot;&quot; pfx=&quot;&quot; file=&quot;&quot;>**
 
 예: keytool -v -list -storetype pkcs12 -keystore 1005566.pfx 여기서 1005566.pfx는 내 pfx 파일의 이름입니다.
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,24 +1,25 @@
 ---
 title: 응용 Forms의 미리 채우기 서비스
 description: 백엔드 데이터 소스에서 데이터를 가져와 적응형 양식을 미리 채웁니다.
-feature: 적응형 양식
+feature: Adaptive Forms
 version: 6.4,6.5
-topic: 개발
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: f2c324a3-cbfa-4942-b3bd-dc47d8a3f7b5
+last-substantial-update: 2019-06-09T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '462'
 ht-degree: 0%
 
 ---
-
 
 # 적응형 Forms에서 미리 채우기 서비스 사용
 
 기존 데이터를 사용하여 적응형 양식의 필드를 미리 채울 수 있습니다. 사용자가 양식을 열면 해당 필드의 값이 미리 채워집니다. 적응형 양식 필드를 미리 채우는 방법에는 여러 가지가 있습니다. 이 문서에서는 AEM Forms 미리 채우기 서비스를 사용하여 적응형 양식 미리 채우기를 살펴봅니다.
 
-적응형 양식을 미리 채우는 다양한 방법에 대해 알아보려면 [이 설명서를 따르십시오](https://helpx.adobe.com/experience-manager/6-4/forms/using/prepopulate-adaptive-form-fields.html#AEMFormsprefillservice)
+적응형 양식을 미리 채우는 다양한 방법에 대해 자세히 알아보려면, [이 설명서를 따르십시오](https://helpx.adobe.com/experience-manager/6-4/forms/using/prepopulate-adaptive-form-fields.html#AEMFormsprefillservice)
 
 미리 채우기 서비스를 사용하여 적응형 양식을 미리 채우려면 DataProvider 인터페이스를 구현하는 클래스를 만들어야 합니다. getPrefillData 메서드는 적응형 양식이 필드를 미리 채우기 위해 사용하는 데이터를 작성하고 반환하는 논리를 갖습니다. 이 방법에서는 소스에서 데이터를 가져온 다음 데이터 문서의 입력 스트림을 반환할 수 있습니다. 다음 샘플 코드는 로그인한 사용자의 사용자 프로필 정보를 가져오고 적응형 양식에 의해 입력 스트림을 사용하도록 반환되는 XML 문서를 구성합니다.
 
@@ -81,8 +82,8 @@ public class PrefillAdaptiveForm implements DataProvider {
 서버에서 이 기능을 테스트하려면 다음을 수행하십시오
 
 * [컴퓨터에 zip 파일의 내용을 다운로드하고 추출합니다](assets/prefillservice.zip)
-* 로그인한 [사용자의 프로필](http://localhost:4502/libs/granite/security/content/useradmin) 정보가 완전히 입력되었는지 확인하십시오. 이것은 샘플이 작동하는 데 필요합니다. 샘플에 누락된 사용자 프로필 속성을 확인하는 오류 검사가 없습니다.
-* [AEM 웹 콘솔](http://localhost:4502/system/console/bundles)을 사용하여 번들을 배포합니다
+* 로그인되어 있는지 확인하십시오. [사용자 프로필](http://localhost:4502/libs/granite/security/content/useradmin) 정보가 완전히 입력되어 있습니다. 이것은 샘플이 작동하는 데 필요합니다. 샘플에 누락된 사용자 프로필 속성을 확인하는 오류 검사가 없습니다.
+* 를 사용하여 번들 배포 [AEM 웹 콘솔](http://localhost:4502/system/console/bundles)
 * XSD를 사용하여 적응형 양식 만들기
 * 적응형 양식의 미리 채우기 서비스로 &quot;사용자 지정 Aem 양식 미리 채우기 서비스&quot;를 연결
 * 스키마 요소를 양식에 드래그하여 놓습니다
@@ -92,5 +93,4 @@ public class PrefillAdaptiveForm implements DataProvider {
 >
 >적응형 양식이 XSD를 기반으로 하는 경우 미리 채우기 서비스에서 반환한 XML 문서가 적응형 양식을 기반으로 하는 XSD와 일치하는지 확인하십시오.
 >
->적응형 양식이 XSD를 기반으로 하지 않으면 필드를 수동으로 바인딩해야 합니다. 예를 들어 적응형 양식 필드를 XML 데이터의 fname 요소에 바인딩하려면 적응형 양식 필드의 바인딩 참조에서 `/data/fname` 을 사용합니다.
-
+>적응형 양식이 XSD를 기반으로 하지 않으면 필드를 수동으로 바인딩해야 합니다. 예를 들어, 사용할 XML 데이터의 fname 요소에 적응형 양식 필드를 바인딩합니다 `/data/fname`  적응형 양식 필드의 바인딩 참조
