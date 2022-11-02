@@ -7,9 +7,9 @@ sub-product: Experience Manager Sites
 version: 6.5, Cloud Service
 kt: 2963
 index: y
-source-git-commit: 74510a4b075d2dba9b3f27018ba05f15dcad9562
+source-git-commit: a21b78456354c18ad137e69a5d18258d652169b1
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '271'
 ht-degree: 19%
 
 ---
@@ -109,6 +109,7 @@ ht-degree: 19%
    + [7 - 모바일 앱에서 AEM Content Services 사용](./content-services/chapter-7.md)
 + 코드 샘플 {#code-samples}
    + [React 앱 필터링](./graphql/code-samples/filtering-react-app.md)
+   + [사전 실행 앱 필터링](./graphql/code-samples/filtering-preact-app.md)
    + [angular 앱 필터링](./graphql/code-samples/filtering-angular-app.md)
    + [값 앱 필터링](./graphql/code-samples/filtering-vue-app.md)
    + [jQuery 및 Handlebars를 사용한 필터링](./graphql/code-samples/filtering-jquery-handlebars.md)
