@@ -1,6 +1,6 @@
 ---
-title: 응용 Forms에서 인라인 이미지 표시
-description: 적응형 Forms에서 업로드된 이미지 인라인 표시
+title: 적응형 Forms에서 DAM 이미지 인라인 표시
+description: 적응형 Forms에서 DAM 이미지 인라인 표시
 feature: Adaptive Forms
 topics: development
 version: 6.4,6.5
@@ -10,9 +10,9 @@ level: Experienced
 last-substantial-update: 2022-10-20T00:00:00Z
 thumbnail: inline-dam.jpg
 kt: kt-11307
-source-git-commit: e1c16ff347f5f398c7bc47233049427eeffa2aab
+source-git-commit: 9229a92a0d33c49526d10362ac4a5f14823294ed
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '210'
 ht-degree: 0%
 
 ---

@@ -7,9 +7,9 @@ breadcrumb-title: AEM Forms 튜토리얼
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
+source-git-commit: 9229a92a0d33c49526d10362ac4a5f14823294ed
 workflow-type: tm+mt
-source-wordcount: '1722'
+source-wordcount: '1725'
 ht-degree: 3%
 
 ---
@@ -110,6 +110,7 @@ ht-degree: 3%
    + [공간 도구 모음 단추](ui-tips-tricks/toolbar-buttons.md)
    + [중첩된 패널이 있는 탭 탐색](ui-tips-tricks/nested-panels.md)
    + [탐색 탭에 아이콘 추가](ui-tips-tricks/active-complete.md)
+   + [자동 완료 필드](ui-tips-tricks/auto-complete.md)
 + 받은 편지함 사용자 지정{#inbox-customization}
    + [소개](inbox-customization/introduction.md)
    + [사용자 지정 열 추가](inbox-customization/add-married-column.md)

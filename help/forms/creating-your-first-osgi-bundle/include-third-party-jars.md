@@ -1,6 +1,6 @@
 ---
-title: AEM Forms으로 첫 번째 OSGi 번들 만들기
-description: Maven 및 Eclipse를 사용하여 첫 번째 OSGi 번들 구축
+title: 제3자 항아리 포함
+description: AEM 프로젝트에서 타사 jar 파일을 사용하는 방법을 알아봅니다
 version: 6.4,6.5
 feature: Adaptive Forms
 topic: Development
@@ -9,9 +9,9 @@ level: Beginner
 kt: 11245
 last-substantial-update: 2022-10-15T00:00:00Z
 thumbnail: third-party.jpg
-source-git-commit: e1c16ff347f5f398c7bc47233049427eeffa2aab
+source-git-commit: 9229a92a0d33c49526d10362ac4a5f14823294ed
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '282'
 ht-degree: 0%
 
 ---
