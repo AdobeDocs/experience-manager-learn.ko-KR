@@ -1,7 +1,7 @@
 ---
 title: Cloud Manager Adobe 이해
 description: Adobe Cloud Manager는 AEM 환경을 손쉽게 관리, 소개 및 셀프 서비스를 제공할 수 있는 간단하면서도 강력한 솔루션을 제공합니다.
-sub-product: cloud-manager, foundation
+sub-product: Experience Manager Cloud Manager, Experience Manager
 topics: best-practices, cicd, development, operations, governance
 doc-type: feature video
 activity: understand
@@ -12,7 +12,7 @@ level: Beginner
 exl-id: 53279cbb-70c8-4319-b5bb-9a7d350a7f72
 last-substantial-update: 2022-05-10T00:00:00Z
 thumbnail: understand-cloud-manager.jpg
-source-git-commit: a156877ff4439ad21fb79f231d273b8983924199
+source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
 workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 2%

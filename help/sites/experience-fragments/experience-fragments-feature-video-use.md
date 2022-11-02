@@ -1,7 +1,7 @@
 ---
 title: AEM 경험 구성요소 사용
 description: 경험 조각을 사용하면 컨텐츠 작성자가 사이트 페이지 및 타사 시스템을 포함한 채널 간에 컨텐츠를 재사용할 수 있습니다.
-sub-product: sites, content-services
+sub-product: Experience Manager Sites
 feature: Experience Fragments
 topic: Content Management
 role: Architect, Developer, Admin, User
@@ -12,7 +12,7 @@ kt: 194
 thumbnail: 331785.jpg
 last-substantial-update: 2021-06-09T00:00:00Z
 exl-id: 84d2b240-5ecc-4230-97a0-6c2faead8d1a
-source-git-commit: db76980966ece967af23c1e6423c5773c851f469
+source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 2%

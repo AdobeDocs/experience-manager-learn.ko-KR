@@ -2,7 +2,7 @@
 title: AEM에서 Sling 모델 내보내기 개발
 description: 이 기술에서는 Sling Model Exporter에서 사용할 AEM 설정, Exporter 프레임워크를 사용하여 JSON으로 렌디션을 향상하고 Exporter 옵션 및 Jackson 주석을 사용하여 출력을 추가로 사용자 지정하는 방법에 대해 설명합니다.
 version: 6.4, 6.5
-sub-product: foundation, content-services
+sub-product: Experience Manager, Experience Manager Sites
 feature: APIs
 topics: content-delivery, development, headless
 activity: develop
@@ -12,7 +12,7 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: fc321ed1-5cf7-4bbe-adc6-c4905af7b43c
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 0%
