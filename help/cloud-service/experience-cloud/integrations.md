@@ -11,7 +11,7 @@ thumbnail: KT-10718.png
 last-substantial-update: 2022-10-02T00:00:00Z
 mini-toc-levels: 1
 exl-id: 9e856dcc-f042-4e9d-bf97-dd4f72e837e3
-source-git-commit: d0b13fd37f1ed42042431246f755a913b56625ec
+source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
 workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 15%
@@ -45,7 +45,7 @@ AEM as a Cloud Service이 다른 Adobe Experience Cloud 제품과의 지원되�
 
 ## Adobe Acrobat Sign
 
-Adobe Acrobat Sign(이전 Adobe Sign)을 사용하면 법률, 판매, 급여, HR 및 기타 영역에 대한 문서를 처리하는 워크플로우를 개선하여 AEM Forms의 적응형 양식에 대해 전자 서명 워크플로우를 사용할 수 있습니다.
+Adobe Acrobat Sign(이전 Acrobat Sign)을 사용하면 법률, 판매, 급여, HR 및 기타 영역에 대한 문서를 처리하는 워크플로우를 개선하여 AEM Forms의 적응형 양식에 대해 전자 서명 워크플로우를 사용할 수 있습니다.
 
 ### AEM Forms
 

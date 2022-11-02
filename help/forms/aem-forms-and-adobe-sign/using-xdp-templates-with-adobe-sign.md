@@ -1,20 +1,21 @@
 ---
-title: AEM Forms 및 Adobe Sign에서 XDP 템플릿 사용
-description: AEM Forms 및 Adobe Sign에서 XDP 템플릿 사용. AEM Forms 및 Sign 통합을 통해 기존 XDP 템플릿을 활용하는 방법을 자세히 설명하는 비디오입니다.
-feature: 적응형 양식
+title: AEM Forms 및 Acrobat Sign에서 XDP 템플릿 사용
+description: AEM Forms 및 Acrobat Sign에서 XDP 템플릿 사용. AEM Forms 및 Sign 통합을 통해 기존 XDP 템플릿을 활용하는 방법을 자세히 설명하는 비디오입니다.
+feature: Adaptive Forms
 thumbnail: 39705.jpg
 kt: 6143
-topic: 개발
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: faf0143a-0944-41fb-a211-0d83ae1978d4
+source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
 workflow-type: tm+mt
-source-wordcount: '70'
-ht-degree: 7%
+source-wordcount: '67'
+ht-degree: 2%
 
 ---
 
-# AEM Forms 및 Adobe Sign에서 XDP 템플릿 사용
+# AEM Forms 및 Acrobat Sign에서 XDP 템플릿 사용
 
 AEM Forms 및 Sign 통합을 통해 기존 XDP 템플릿 활용
 

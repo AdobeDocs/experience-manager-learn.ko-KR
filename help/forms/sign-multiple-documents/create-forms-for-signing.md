@@ -9,7 +9,7 @@ topic: Development
 role: User
 level: Beginner
 exl-id: 565d81a4-2918-44ea-a3e9-ed79f246f08a
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 * 양식이 **SignMultipleForms** 템플릿. 이렇게 하면 양식은 데이터베이스에서 가져온 데이터로 미리 채워집니다.
 
-* Adobe Sign을 사용하도록 양식을 구성해야 하며, signer1 필드를 고객 이메일 필드와 연결해야 합니다
+* Acrobat Sign을 사용하도록 양식을 구성해야 하며, signer1 필드를 고객 이메일 필드와 연결해야 합니다
 * 또한 양식을 clientLib과 연결해야 합니다. **getnextform**
 * 양식은 서명 단계 구성 요소를 사용해야 합니다.
 * 양식에서는 사용자 지정 값도 사용해야 합니다 **여러 양식 서명** 구성 요소. 이 구성 요소로 다음 양식으로 이동하여 패키지에 로그인할 수 있습니다.
@@ -44,6 +44,6 @@ ht-degree: 0%
 
 패키지의 모든 양식을 작성하고 서명하면 적절한 메시지를 표시해야 합니다. 이 메시지는 Alldone 양식의 도움말과 함께 표시됩니다. Alldone 양식은 샘플 양식에 포함되어 있습니다.
 
-## 에셋
+## Assets
 
 이 자습서에서 사용되는 을 포함하는 샘플 양식은 다음과 같습니다 [여기에서 다운로드](assets/forms-for-signing.zip)

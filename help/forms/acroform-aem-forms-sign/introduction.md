@@ -1,13 +1,13 @@
 ---
 title: AEM Forms을 사용한 Acrobat
-description: Acroform을 사용하여 적응형 양식을 만들고 데이터를 병합하여 PDF을 가져오는 과정을 단계별로 설명하는 자습서입니다. 병합된 데이터가 있는 PDF을 Adobe Sign을 사용하여 서명을 위해 보낼 수 있습니다.
+description: Acroform을 사용하여 적응형 양식을 만들고 데이터를 병합하여 PDF을 가져오는 과정을 단계별로 설명하는 자습서입니다. 병합된 데이터가 있는 PDF을 Acrobat Sign을 사용하여 서명을 위해 보낼 수 있습니다.
 feature: adaptive-forms
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 2%
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 # Acrobat에서 적응형 Forms 만들기
 
-조직에는 다양한 형태가 있습니다. 이러한 양식 중 일부는 Microsoft Word에서 만들어지고 PDF으로 변환됩니다. 이러한 양식은 기본적으로 Adobe Reader 또는 Acrobat을 사용하여 채울 수 없습니다. Acrobat 또는 Reader을 사용하여 이러한 양식을 채울 수 있도록 하려면 이러한 양식을 Acroform으로 변환해야 합니다. Acrobat은 Acrobat을 사용하여 만든 양식입니다. 이 문서에서는 Acrobat에서 적응형 양식을 만들고 데이터를 다시 Acroform으로 병합하여 PDF을 가져오는 과정을 안내합니다. 병합된 데이터가 있는 PDF을 Adobe Sign을 사용하여 서명하도록 보낼 수도 있습니다.
+조직에는 다양한 형태가 있습니다. 이러한 양식 중 일부는 Microsoft Word에서 만들어지고 PDF으로 변환됩니다. 이러한 양식은 기본적으로 Adobe Reader 또는 Acrobat을 사용하여 채울 수 없습니다. Acrobat 또는 Reader을 사용하여 이러한 양식을 채울 수 있도록 하려면 이러한 양식을 Acroform으로 변환해야 합니다. Acrobat은 Acrobat을 사용하여 만든 양식입니다. 이 문서에서는 Acrobat에서 적응형 양식을 만들고 데이터를 다시 Acroform으로 병합하여 PDF을 가져오는 과정을 안내합니다. 병합된 데이터가 있는 PDF을 Acrobat Sign을 사용하여 서명하도록 보낼 수도 있습니다.
 
 >[!NOTE]
 >

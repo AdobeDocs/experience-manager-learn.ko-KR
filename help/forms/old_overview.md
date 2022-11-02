@@ -4,7 +4,7 @@ description: 초보자 및 숙련된 AEM Forms 개발자를 위한 AEM Forms 리
 topic: Development
 role: Developer
 exl-id: c1972937-56c5-47af-9232-f31bdf69dfbe
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
 workflow-type: tm+mt
 source-wordcount: '516'
 ht-degree: 8%
@@ -140,7 +140,7 @@ Adobe Experience Manager(AEM)은 백엔드 프로세스, 비즈니스 규칙 및
     </a>
     </div>
     <p>
-    <em>AEM Forms과 Adobe Sign을 사용하여 임차인과 임대인 간의 임대 계약을 작성하고 서명</em>
+    <em>AEM Forms과 Acrobat Sign을 사용하여 임차인과 임대인 간의 임대 계약을 작성하고 서명</em>
     <p>
   </td>
   <td>
@@ -153,7 +153,7 @@ Adobe Experience Manager(AEM)은 백엔드 프로세스, 비즈니스 규칙 및
     </a>
     </div>
     <p>
-    <em>Adobe Sign을 사용하여 동적으로 NDA를 만들고 서명을 위해 보냅니다.</em>
+    <em>Acrobat Sign을 사용하여 동적으로 NDA를 만들고 서명을 위해 보냅니다.</em>
     </p>
   </td>
   <td>
@@ -166,7 +166,7 @@ Adobe Experience Manager(AEM)은 백엔드 프로세스, 비즈니스 규칙 및
       </a>
     </div>
     <p>
-    <em>Forms 및 Adobe Sign을 사용하여 여러 문서에 원활하게 서명</em>
+    <em>Forms 및 Acrobat Sign을 사용하여 여러 문서에 원활하게 서명</em>
     <p>
   </td>
 </tr>

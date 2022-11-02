@@ -5,7 +5,7 @@ breadcrumb-title: AEM as a Cloud Service 튜토리얼
 sub-product: Experience Manager
 version: Cloud Service
 team: TM
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
 workflow-type: tm+mt
 source-wordcount: '830'
 ht-degree: 21%
@@ -206,10 +206,10 @@ ht-degree: 21%
       + [워크플로우 저장소 표면화](./forms/create-aem-workflow/externalize-workflow.md)
       + [워크플로우 모델 만들기](./forms/create-aem-workflow/create-workflow.md)
       + [워크플로우 트리거](./forms/create-aem-workflow/configure-af.md)
-   + Adobe Sign과 AEM Forms{#forms-and-sign}
+   + Acrobat Sign과 AEM Forms{#forms-and-sign}
       + [소개](./forms/forms-and-sign/introduction.md)
-      + [Adobe Sign API 애플리케이션](./forms/forms-and-sign/create-sign-api-application.md)
-      + [Adobe Sign 클라우드 구성](./forms/forms-and-sign/create-adobe-sign-cloud-configuration.md)
+      + [Acrobat Sign API 애플리케이션](./forms/forms-and-sign/create-sign-api-application.md)
+      + [Acrobat Sign Cloud 구성](./forms/forms-and-sign/create-adobe-sign-cloud-configuration.md)
       + [적응형 양식 만들기](./forms/forms-and-sign/create-adaptive-form.md)
       + [채우기 및 서명 구성](./forms/forms-and-sign/configure-form-fill-and-sign.md)
    + Microsoft Power와 통합 자동화{#forms-cs-and-power-automate}

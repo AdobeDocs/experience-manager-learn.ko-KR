@@ -1,7 +1,7 @@
 ---
-title: AEM Forms에서 Adobe Sign 사용
-description: AEM Forms에서 Adobe Sign 사용
-feature: Adobe Sign
+title: AEM Forms에서 Acrobat Sign 사용
+description: AEM Forms에서 Acrobat Sign 사용
+feature: Acrobat Sign
 role: Admin
 level: Beginner
 uuid: cbccea0f-969c-445d-9390-a236bb1fd2c4
@@ -14,7 +14,7 @@ index: y
 internal: n
 snippet: y
 last-substantial-update: 2020-10-20T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
 workflow-type: tm+mt
 source-wordcount: '80'
 ht-degree: 0%
@@ -22,13 +22,13 @@ ht-degree: 0%
 ---
 
 
-# AEM Forms에서 Adobe Sign 사용{#using-adobe-sign-with-aem-forms}
+# AEM Forms에서 Acrobat Sign 사용{#using-adobe-sign-with-aem-forms}
 
-AEM Forms에서 Adobe Sign 사용
+AEM Forms에서 Acrobat Sign 사용
 
 >[!VIDEO](https://video.tv.adobe.com/v/18696?quality=9&learn=on)
 
-*이 비디오에서는 Adobe Sign 클라우드 서비스를 설정하고 AEM 적응형 양식에 여러 서명 필드를 추가하는 프로세스를 안내합니다.*
+*이 비디오에서는 Acrobat Sign 클라우드 서비스를 설정하고 AEM 적응형 양식에 여러 서명 필드를 추가하는 프로세스를 안내합니다.*
 
 >[!NOTE]
 >

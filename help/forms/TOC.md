@@ -7,7 +7,7 @@ breadcrumb-title: AEM Forms 튜토리얼
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
 workflow-type: tm+mt
 source-wordcount: '1722'
 ht-degree: 3%
@@ -136,11 +136,11 @@ ht-degree: 3%
 + HTML5 양식{#html5-forms}
    + [HTML5 양식 만들기](html5-forms/create-html5-form.md)
    + [HTML5 양식 제출 처리](html5-forms/handle-html5-form-submission.md)
-+ AEM Forms 및 Adobe Sign{#forms-and-sign}
++ AEM Forms 및 Acrobat Sign{#forms-and-sign}
    + [소개](aem-forms-and-adobe-sign/introduction.md)
    + [SSL 설정](aem-forms-and-adobe-sign/set-up-ssl.md)
-   + [Adobe Sign API 애플리케이션 만들기](aem-forms-and-adobe-sign/create-adobe-sign-api-application.md)
-   + [Adobe Sign Cloud 구성 만들기](aem-forms-and-adobe-sign/create-adobe-sign-cloud-configuration.md)
+   + [Acrobat Sign API 애플리케이션 만들기](aem-forms-and-adobe-sign/create-adobe-sign-api-application.md)
+   + [Acrobat Sign Cloud 구성 만들기](aem-forms-and-adobe-sign/create-adobe-sign-cloud-configuration.md)
    + [서명을 위해 문서를 보낼 워크플로우 만들기](aem-forms-and-adobe-sign/create-workflow-to-send-document-for-signing.md)
    + [적응형 양식 만들기 및 구성](aem-forms-and-adobe-sign/create-and-configure-adaptive-form.md)
    + [단일 서명자에 대한 적응형 양식 구성](aem-forms-and-adobe-sign/configure-adaptive-form-for-single-signer.md)
@@ -148,7 +148,7 @@ ht-degree: 3%
    + [automated forms conversion 서비스 구성](aem-forms-and-adobe-sign/configure-automated-forms-conversion-service.md)
    + [PDF 양식을 적응형 양식으로 변환](aem-forms-and-adobe-sign/convert-pdf-form-into-adaptive-form.md)
    + [변환된 적응형 양식 구성](aem-forms-and-adobe-sign/configure-converted-adaptive-form.md)
-   + [Adobe Sign에서 XDP 템플릿 사용](aem-forms-and-adobe-sign/using-xdp-templates-with-adobe-sign.md)
+   + [Acrobat Sign에서 XDP 템플릿 사용](aem-forms-and-adobe-sign/using-xdp-templates-with-adobe-sign.md)
 + 여러 Forms 서명{#sign-multiple-documents}
    + [소개](sign-multiple-documents/introduction.md)
    + [데이터 소스 구성](sign-multiple-documents/configure-data-source.md)
