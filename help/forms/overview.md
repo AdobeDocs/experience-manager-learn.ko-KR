@@ -3,8 +3,9 @@ title: AEM Forms 자습서 및 비디오
 description: 질문에 답변할 리소스 및 설명서와 함께 AEM Forms에 대한 비디오 및 자습서를 찾아봅니다.
 topic: Development
 role: Developer
+sub-product: Experience Manager Forms
 exl-id: c1972937-56c5-47af-9232-f31bdf69dfbe
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 96ff44c4b9806205682ab305d391614f92bb2536
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 0%
