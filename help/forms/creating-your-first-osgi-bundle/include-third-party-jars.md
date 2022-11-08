@@ -9,7 +9,7 @@ level: Beginner
 kt: 11245
 last-substantial-update: 2022-10-15T00:00:00Z
 thumbnail: third-party.jpg
-source-git-commit: 9229a92a0d33c49526d10362ac4a5f14823294ed
+source-git-commit: 4af14b7d72ebdbea04e68a9a64afa1a96d1c1aeb
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 0%
@@ -56,7 +56,7 @@ OSGi 번들이 파일 시스템에 있는 경우 **localjar** 프로젝트의 �
 * 명령 프롬프트를 엽니다. 내 경우 프로젝트의 폴더(c:\aemformsbundles\AEMFormsProcessStep)으로 이동합니다. 다음 명령을 실행합니다
 
 ```java
-mvn clean install -pAutoInstallSinglePackage
+mvn clean install -PautoInstallSinglePackage
 ```
 
 모든 것이 제대로 작동하면 패키지가 타사 번들과 함께 AEM 인스턴스에 설치됩니다. 을 사용하여 번들을 확인할 수 있습니다 [felix web console](http://localhost:4502/system/console/bundles). 타사 번들은 의 /apps 폴더에서 사용할 수 있습니다 `crx` 아래와 같이 저장소

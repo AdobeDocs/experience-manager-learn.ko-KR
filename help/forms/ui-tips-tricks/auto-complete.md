@@ -9,9 +9,9 @@ role: Developer
 level: Beginner
 kt: 11374
 last-substantial-update: 2022-11-01T00:00:00Z
-source-git-commit: 9229a92a0d33c49526d10362ac4a5f14823294ed
+source-git-commit: 4af14b7d72ebdbea04e68a9a64afa1a96d1c1aeb
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '177'
 ht-degree: 0%
 
 ---
@@ -23,14 +23,11 @@ jquery의 자동 완료 기능을 사용하여 AEM Forms에서 자동 완료 기
 
 자동 완료 기능을 수행하는 데 사용되는 코드는 필드의 초기화 이벤트와 연결됩니다.
 
-
-## 국가 이름에 대한 제안 제공
-
-![국가 제안](assets/auto-complete1.png)
-
 ## 주소 제안
 
 ![국가 제안](assets/auto-complete2.png)
+
+
 
 다음은 주소 제안을 제공하는 데 사용되는 코드입니다
 
@@ -60,6 +57,10 @@ $(".streetAddress input").autocomplete({
 
 });
 ```
+
+
+
+
 
 ## 이모지가 있는 추천
 
