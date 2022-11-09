@@ -2,13 +2,13 @@
 title: AEM React 편집 가능한 구성 요소 v2를 사용하는 방법
 description: AEM React 편집 가능한 구성 요소 v2를 사용하여 React 앱을 지원하는 방법을 알아봅니다.
 version: Cloud Service
-feature: SPA Editor
 topic: Headless
+feature: SPA Editor
 role: Developer
 level: Intermediate
 kt: 10900
 thumbnail: kt-10900.jpeg
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: f02d5e01388ee61228254951b05c37c336423348
 workflow-type: tm+mt
 source-wordcount: '586'
 ht-degree: 1%
