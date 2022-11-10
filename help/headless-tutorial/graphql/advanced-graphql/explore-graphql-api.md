@@ -6,22 +6,23 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Intermediate
-source-git-commit: 83e16ea87847182139982ea2378d8ff9f079c968
+exl-id: bd7916be-8caa-4321-add0-4c9031306d60
+source-git-commit: a500c88091d87e34c12d4092c71241983b166af8
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1322'
 ht-degree: 0%
 
 ---
 
 # AEM GraphQL API 탐색
 
-AEM의 GraphQL API를 사용하면 컨텐츠 조각 데이터를 다운스트림 애플리케이션에 노출할 수 있습니다. 이전 [여러 단계 GraphQL 자습서](../multi-step/explore-graphql-api.md)를 검색하는 경우, 몇 가지 일반적인 GraphQL 쿼리를 테스트하고 정교화한 GraphiQL IDE(통합 개발 환경)입니다. 이 장에서는 GraphiQL IDE를 사용하여 이전 장에서 만든 컨텐츠 조각의 데이터를 수집하기 위해 고급 쿼리를 살펴봅니다.
+AEM의 GraphQL API를 사용하면 컨텐츠 조각 데이터를 다운스트림 애플리케이션에 노출할 수 있습니다. 기본 자습서에서 [여러 단계 GraphQL 자습서](../multi-step/explore-graphql-api.md)GraphiQL 탐색기를 사용하여 GraphQL 쿼리를 테스트하고 세분화했습니다.
 
-## 전제 조건 {#prerequisites}
+이 장에서는 GraphiQL 탐색기를 사용하여 GraphiQL 탐색기에서 생성한 컨텐츠 조각의 데이터를 수집하는 고급 쿼리를 정의합니다 [이전 장](../advanced-graphql/author-content-fragments.md).
+
+## 사전 요구 사항 {#prerequisites}
 
 이 문서는 여러 부분으로 구성된 자습서의 일부입니다. 이 장을 진행하기 전에 이전 장이 완료되었는지 확인하십시오.
-
-이 장을 완료하려면 GraphiQL IDE를 설치해야 합니다. 앞의 설치 지침을 따르십시오 [여러 단계 GraphQL 자습서](../multi-step/explore-graphql-api.md) 추가 정보.
 
 ## 목표 {#objectives}
 
@@ -33,11 +34,33 @@ AEM의 GraphQL API를 사용하면 컨텐츠 조각 데이터를 다운스트림
 * 지시어를 사용하여 쿼리
 * JSON Object 컨텐츠 유형에 대한 쿼리
 
+## GraphiQL 탐색기 사용
+
+
+다음 [GraphiQL 탐색기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html) 도구를 사용하여 개발자가 현재 AEM 환경의 컨텐츠에 대한 쿼리를 만들고 테스트할 수 있습니다. GraphiQL 도구를 사용하여 다음을 수행할 수도 있습니다 **유지 또는 저장** 프로덕션 설정에서 클라이언트 응용 프로그램에서 사용할 쿼리입니다.
+
+이제 내장된 GraphiQL 탐색기를 사용하여 AEM GraphQL API의 강력한 기능을 탐색합니다.
+
+1. AEM 시작 화면에서 로 이동합니다. **도구** > **일반** > **GraphQL 쿼리 편집기**.
+
+   ![GraphiQL IDE로 이동합니다](assets/explore-graphql-api/navigate-graphql-query-editor.png)
+
+>[!IMPORTANT]
+>
+>에서 GraphiQL IDE라고도 하는 AEM(6.X.X) 도구의 일부 버전을 수동으로 설치해야 합니다. [여기에서 제공하는 지침](../multi-step/explore-graphql-api.md#install-the-graphiql-tool-optional).
+
+1. 오른쪽 상단 모서리에서 끝점이 **WKND 공유 끝점**. 변경 _끝점_ 드롭다운 값 여기에 기존 값이 표시됩니다. _지속되는 쿼리_ 왼쪽 상단 모서리에서
+
+   ![GraphQL 끝점 설정](assets/explore-graphql-api/set-wknd-shared-endpoint.png)
+
+이렇게 하면 모든 쿼리가 **WKND 공유** 프로젝트.
+
+
 ## 쿼리 변수를 사용하여 컨텐츠 조각 목록 필터링
 
-이전 [여러 단계 GraphQL 자습서](../multi-step/explore-graphql-api.md)를 사용하여 콘텐츠 조각 목록을 필터링하는 방법을 알아보았습니다. 여기에서 이 지식을 확장하고 변수를 사용하여 필터링합니다.
+이전 [여러 단계 GraphQL 자습서](../multi-step/explore-graphql-api.md)컨텐츠 조각 데이터를 가져오기 위해 기본 지속적인 쿼리를 정의하고 사용했습니다. 여기에서 이 지식을 확장하고 변수를 지속된 쿼리에 전달하여 컨텐츠 조각 데이터를 필터링합니다.
 
-클라이언트 응용 프로그램을 개발할 때 대부분의 경우 동적 인수를 기반으로 컨텐츠 조각을 필터링해야 합니다. AEM GraphQL API를 사용하면 런타임 시 클라이언트 측에서 문자열을 작성하지 않도록 이러한 인수를 쿼리에 변수로 전달할 수 있습니다. GraphQL 변수에 대한 자세한 내용은 [GraphQL 설명서](https://graphql.org/learn/queries/#variables).
+클라이언트 응용 프로그램을 개발할 때 일반적으로 동적 인수를 기반으로 컨텐츠 조각을 필터링해야 합니다. AEM GraphQL API를 사용하면 런타임 시 클라이언트 측에서 문자열을 작성하지 않도록 이러한 인수를 쿼리에 변수로 전달할 수 있습니다. GraphQL 변수에 대한 자세한 내용은 [GraphQL 설명서](https://graphql.org/learn/queries/#variables).
 
 이 예에서는 특정 기술을 가진 모든 강사를 질의합니다.
 
@@ -72,7 +95,7 @@ AEM의 GraphQL API를 사용하면 컨텐츠 조각 데이터를 다운스트림
 
    다음 `listPersonBySkill` 위의 쿼리는 하나의 변수(`skillFilter`) `String`. 이 쿼리는 모든 개인 컨텐츠 조각에 대해 검색을 수행하고 을 기준으로 필터링합니다. `skills` 필드 및 전달된 문자열 `skillFilter`.
 
-   참고 사항 `listPersonBySkill` include `contactInfo` 등록 정보 - 이전 장에 정의된 연락처 정보 모델에 대한 조각 참조입니다. 연락처 정보 모델에는 다음이 포함되어 있습니다 `phone` 및 `email` 필드. 이 필드를 올바르게 수행하려면 쿼리에 이러한 필드 중 하나 이상을 포함해야 합니다.
+   다음 `listPersonBySkill` include `contactInfo` 등록 정보 - 이전 장에 정의된 연락처 정보 모델에 대한 조각 참조입니다. 연락처 정보 모델에는 다음이 포함되어 있습니다 `phone` 및 `email` 필드. 이 필드를 올바르게 수행하려면 쿼리에 이러한 필드 중 하나 이상이 있어야 합니다.
 
    ```graphql
    contactInfo {
@@ -85,7 +108,7 @@ AEM의 GraphQL API를 사용하면 컨텐츠 조각 데이터를 다운스트림
 
    ```json
    {
-   	    "skillFilter": "Skiing"
+       "skillFilter": "Skiing"
    }
    ```
 
@@ -103,10 +126,10 @@ AEM의 GraphQL API를 사용하면 컨텐츠 조각 데이터를 다운스트림
                "email": "sroswells@wknd.com"
              },
              "profilePicture": {
-               "_path": "/content/dam/wknd/en/contributors/stacey-roswells.jpg"
+               "_path": "/content/dam/wknd-shared/en/contributors/stacey-roswells.jpg"
              },
              "biography": {
-               "plaintext": "Stacey Roswells is an accomplished rock climber and alpine adventurer.\nBorn in Baltimore, Maryland, Stacey is the youngest of six children. Her father was a lieutenant colonel in the US Navy and her mother was a modern dance instructor. Her family moved frequently with her father’s duty assignments, and she took her first pictures when he was stationed in Thailand. This is also where Stacey learned to rock climb."
+               "plaintext": "Stacey Roswells is an accomplished rock climber and alpine adventurer. Born in Baltimore, Maryland, Stacey is the youngest of six children. Stacey's father was a lieutenant colonel in the US Navy and mother was a modern dance instructor. Stacey's family moved frequently with father's duty assignments and took the first pictures when father was stationed in Thailand. This is also where Stacey learned to rock climb."
              },
              "instructorExperienceLevel": "Advanced",
              "skills": [
@@ -120,6 +143,10 @@ AEM의 GraphQL API를 사용하면 컨텐츠 조각 데이터를 다운스트림
      }
    }
    ```
+
+누르기 **재생** 단추를 클릭하여 쿼리를 실행합니다. 이전 장의 컨텐츠 조각 결과가 표시됩니다.
+
+![기능별 개인 결과](assets/explore-graphql-api/person-by-skill.png)
 
 ## 조각 참조 내의 컨텐츠 필터링
 
@@ -138,7 +165,7 @@ AEM GraphQL API를 사용하면 중첩된 컨텐츠 조각을 쿼리할 수 있�
        filter: {administrator: {fullName: {_expressions: [{value: $name}]}}}
      ) {
        items {
-         adventureTitle
+         title
          administrator {
            fullName
            contactInfo {
@@ -158,7 +185,7 @@ AEM GraphQL API를 사용하면 중첩된 컨텐츠 조각을 쿼리할 수 있�
 
    ```json
    {
-   	    "name": "Jacob Wester"
+       "name": "Jacob Wester"
    }
    ```
 
@@ -172,7 +199,7 @@ AEM GraphQL API를 사용하면 중첩된 컨텐츠 조각을 쿼리할 수 있�
        "adventureList": {
          "items": [
            {
-             "adventureTitle": "Yosemite Backpacking",
+             "title": "Yosemite Backpacking",
              "administrator": {
                "fullName": "Jacob Wester",
                "contactInfo": {
@@ -186,7 +213,7 @@ AEM GraphQL API를 사용하면 중첩된 컨텐츠 조각을 쿼리할 수 있�
                      "content": [
                        {
                          "nodeType": "text",
-                         "value": "Jacob Wester has been coordinating backpacking adventures for 3 years."
+                         "value": "Jacob Wester has been coordinating backpacking adventures for three years."
                        }
                      ]
                    }
@@ -260,7 +287,7 @@ AEM GraphQL API를 사용하면 여러 줄 텍스트 필드 내에서 컨텐츠 
 
    ```json
    {
-   	    "fragmentPath": "/content/dam/wknd/en/adventures/yosemite-backpacking/yosemite-backpacking"
+       "fragmentPath": "/content/dam/wknd-shared/en/adventures/yosemite-backpacking/yosemite-backpacking"
    }
    ```
 
@@ -293,7 +320,7 @@ AEM GraphQL API를 사용하면 여러 줄 텍스트 필드 내에서 컨텐츠 
          "_references": [
            {
              "__typename": "LocationModel",
-             "_path": "/content/dam/wknd/en/adventures/locations/yosemite-valley-lodge/yosemite-valley-lodge",
+             "_path": "/content/dam/wknd-shared/en/adventures/locations/yosemite-valley-lodge/yosemite-valley-lodge",
              "name": "Yosemite Valley Lodge",
              "address": {
                "streetAddress": "9006 Yosemite Lodge Drive",
@@ -308,7 +335,7 @@ AEM GraphQL API를 사용하면 여러 줄 텍스트 필드 내에서 컨텐츠 
            },
            {
              "__typename": "ImageRef",
-             "_path": "/content/dam/wknd/en/adventures/teams/yosemite-team/team-yosemite-logo.png"
+             "_path": "/content/dam/wknd-shared/en/adventures/teams/yosemite-team/team-yosemite-logo.png"
            }
          ]
        }
@@ -316,14 +343,14 @@ AEM GraphQL API를 사용하면 여러 줄 텍스트 필드 내에서 컨텐츠 
    }
    ```
 
-   다음 사항에 유의하십시오. `_references` 이 필드는 로고 이미지와 Yosemite Valley Lodge Content Fragment에 삽입된 로고 이미지를 모두 나타냅니다. **설명** 필드.
+   다음 `_references` 이 필드는 로고 이미지와 Yosemite Valley Lodge Content Fragment에 삽입된 로고 이미지를 모두 나타냅니다. **설명** 필드.
 
 
 ## 지시어를 사용하여 쿼리
 
 클라이언트 응용 프로그램을 개발할 때 조건부로 쿼리의 구조를 변경해야 하는 경우가 있습니다. 이 경우 AEM GraphQL API를 사용하면 제공된 기준에 따라 쿼리의 동작을 변경하기 위해 GraphQL 지시어를 사용할 수 있습니다. GraphQL 지시어에 대한 자세한 내용은 [GraphQL 설명서](https://graphql.org/learn/queries/#directives).
 
-에서 [이전 섹션](#query-rte-reference)여러 줄 텍스트 필드 내에서 인라인 참조를 쿼리하는 방법을 알아보았습니다. 컨텐츠는 `description` 에 `plaintext` 형식 지정 다음으로, 해당 쿼리를 확장하고 지시문을 사용하여 조건부로 검색합니다 `description` 에서 `json` 형식도 포함되어 있습니다.
+에서 [이전 섹션](#query-rte-reference)여러 줄 텍스트 필드 내에서 인라인 참조를 쿼리하는 방법을 알아보았습니다. 컨텐츠가 `description` 에 `plaintext` 형식 지정 다음으로, 해당 쿼리를 확장하고 지시문을 사용하여 조건부로 검색합니다 `description` 에서 `json` 형식도 포함되어 있습니다.
 
 1. GraphiQL IDE에서 왼쪽 패널에 다음 쿼리를 붙여 넣습니다.
 
@@ -376,7 +403,7 @@ AEM GraphQL API를 사용하면 여러 줄 텍스트 필드 내에서 컨텐츠 
 
    ```json
    {
-     "fragmentPath": "/content/dam/wknd/en/adventures/yosemite-backpacking/yosemite-backpacking",
+     "fragmentPath": "/content/dam/wknd-shared/en/adventures/yosemite-backpacking/yosemite-backpacking",
      "includeJson": false
    }
    ```
@@ -413,7 +440,7 @@ AEM GraphQL API를 사용하면 여러 줄 텍스트 필드 내에서 컨텐츠 
                      {
                        "nodeType": "reference",
                        "data": {
-                         "path": "/content/dam/wknd/en/adventures/teams/yosemite-team/team-yosemite-logo.png",
+                         "path": "/content/dam/wknd-shared/en/adventures/teams/yosemite-team/team-yosemite-logo.png",
                          "mimetype": "image/png"
                        }
                      }
@@ -434,7 +461,7 @@ AEM GraphQL API를 사용하면 여러 줄 텍스트 필드 내에서 컨텐츠 
                      {
                        "nodeType": "reference",
                        "data": {
-                         "href": "/content/dam/wknd/en/adventures/locations/yosemite-valley-lodge/yosemite-valley-lodge",
+                         "href": "/content/dam/wknd-shared/en/adventures/locations/yosemite-valley-lodge/yosemite-valley-lodge",
                          "type": "fragment"
                        },
                        "value": "Yosemite Valley Lodge"
@@ -448,7 +475,7 @@ AEM GraphQL API를 사용하면 여러 줄 텍스트 필드 내에서 컨텐츠 
          "_references": [
            {
              "__typename": "LocationModel",
-             "_path": "/content/dam/wknd/en/adventures/locations/yosemite-valley-lodge/yosemite-valley-lodge",
+             "_path": "/content/dam/wknd-shared/en/adventures/locations/yosemite-valley-lodge/yosemite-valley-lodge",
              "name": "Yosemite Valley Lodge",
              "address": {
                "streetAddress": "9006 Yosemite Lodge Drive",
@@ -463,7 +490,7 @@ AEM GraphQL API를 사용하면 여러 줄 텍스트 필드 내에서 컨텐츠 
            },
            {
              "__typename": "ImageRef",
-             "_path": "/content/dam/wknd/en/adventures/teams/yosemite-team/team-yosemite-logo.png"
+             "_path": "/content/dam/wknd-shared/en/adventures/teams/yosemite-team/team-yosemite-logo.png"
            }
          ]
        }
@@ -511,7 +538,7 @@ AEM GraphQL API를 사용하면 여러 줄 텍스트 필드 내에서 컨텐츠 
 
    ```json
    {
-     "fragmentPath": "/content/dam/wknd/en/adventures/locations/yosemite-national-park/yosemite-national-park"
+     "fragmentPath": "/content/dam/wknd-shared/en/adventures/locations/yosemite-national-park/yosemite-national-park"
    }
    ```
 
@@ -530,7 +557,7 @@ AEM GraphQL API를 사용하면 여러 줄 텍스트 필드 내에서 컨텐츠 
                  "content": [
                    {
                      "nodeType": "text",
-                     "value": "Yosemite National Park is in California’s Sierra Nevada mountains. It’s famous for its gorgeous waterfalls, giant sequoia trees, and iconic views of El Capitan and Half Dome cliffs."
+                     "value": "Yosemite National Park is in California's Sierra Nevada mountains. It's famous for its gorgeous waterfalls, giant sequoia trees, and iconic views of El Capitan and Half Dome cliffs."
                    }
                  ]
                },
@@ -550,7 +577,7 @@ AEM GraphQL API를 사용하면 여러 줄 텍스트 필드 내에서 컨텐츠 
              "email": "yosemite@wknd.com"
            },
            "locationImage": {
-             "_path": "/content/dam/wknd/en/adventures/locations/yosemite-national-park/yosemite-national-park.jpeg"
+             "_path": "/content/dam/wknd-shared/en/adventures/locations/yosemite-national-park/yosemite-national-park.jpeg"
            },
            "weatherBySeason": {
              "summer": "81 / 89°F",
@@ -571,38 +598,39 @@ AEM GraphQL API를 사용하면 여러 줄 텍스트 필드 내에서 컨텐츠 
    }
    ```
 
-   다음 사항에 유의하십시오. `weatherBySeason` 필드에는 이전 장에 추가된 JSON 개체가 포함되어 있습니다.
+   다음 `weatherBySeason` 필드에는 이전 장에 추가된 JSON 개체가 포함되어 있습니다.
 
 ## 모든 컨텐츠를 한 번에 쿼리
 
-지금까지 AEM GraphQL API의 기능을 설명하기 위해 여러 쿼리가 실행되었습니다. 동일한 데이터는 단일 쿼리만 사용하여 검색할 수 있습니다.
+지금까지 AEM GraphQL API의 기능을 설명하기 위해 여러 쿼리가 실행되었습니다.
+
+동일한 데이터를 단일 쿼리로 검색할 수 있으며 이 쿼리는 나중에 클라이언트 응용 프로그램에서 사용하여 위치, 팀 이름, 모험 팀 구성원 등의 추가 정보를 검색합니다.
 
 ```graphql
-query getAllAdventureDetails($fragmentPath: String!) {
-  adventureByPath(_path: $fragmentPath){
-    item {
+query getAdventureDetailsBySlug($slug: String!) {
+  adventureList(filter: {slug: {_expressions: [{value: $slug}]}}) {
+    items {
       _path
-      adventureTitle
-      adventureActivity
+      title
+      activity
       adventureType
-      adventurePrice
-      adventureTripLength
-      adventureGroupSize
-      adventureDifficulty
-      adventurePrice
-      adventurePrimaryImage{
-        ...on ImageRef{
+      price
+      tripLength
+      groupSize
+      difficulty
+      primaryImage {
+        ... on ImageRef {
           _path
           mimeType
           width
           height
         }
       }
-      adventureDescription {
+      description {
         html
         json
       }
-      adventureItinerary {
+      itinerary {
         html
         json
       }
@@ -613,171 +641,83 @@ query getAllAdventureDetails($fragmentPath: String!) {
           html
           json
         }
-        contactInfo{
+        contactInfo {
           phone
           email
         }
-        locationImage{
-          ...on ImageRef{
+        locationImage {
+          ... on ImageRef {
             _path
           }
         }
         weatherBySeason
-        address{
-            streetAddress
-            city
-            state
-            zipCode
-            country
+        address {
+          streetAddress
+          city
+          state
+          zipCode
+          country
         }
       }
       instructorTeam {
-        _metadata{
-            stringMetadata{
-                name
-                value
-            }
-        }        
+        _metadata {
+          stringMetadata {
+            name
+            value
+          }
+        }
         teamFoundingDate
         description {
-            json
+          json
         }
         teamMembers {
-            fullName
-            contactInfo {
-                phone
-                email
+          fullName
+          contactInfo {
+            phone
+            email
+          }
+          profilePicture {
+            ... on ImageRef {
+              _path
             }
-            profilePicture{
-                ...on ImageRef {
-                    _path
-                }
-            }
-            instructorExperienceLevel
-            skills
-            biography {
-                html
-            }
-        }       
-     }
-      administrator {
-            fullName
-            contactInfo {
-                phone
-                email
-            }
-            biography {
-                html
-            }
+          }
+          instructorExperienceLevel
+          skills
+          biography {
+            html
+          }
         }
+      }
+      administrator {
+        fullName
+        contactInfo {
+          phone
+          email
+        }
+        biography {
+          html
+        }
+      }
     }
     _references {
-        ...on ImageRef {
-            _path
+      ... on ImageRef {
+        _path
         mimeType
-        }
-        ...on LocationModel {
-            _path
-                __typename
-        }
+      }
+      ... on LocationModel {
+        _path
+        __typename
+      }
     }
   }
 }
 
+
 # in Query Variables
 {
-  "fragmentPath": "/content/dam/wknd/en/adventures/yosemite-backpacking/yosemite-backpacking"
+  "slug": "yosemite-backpacking"
 }
 ```
-
-## WKND 앱에 대한 추가 쿼리
-
-WKND 앱에서 필요한 모든 데이터를 검색하기 위해 다음 쿼리가 나열됩니다. 이러한 쿼리는 새로운 개념을 설명하지 않으며 구현을 빌드하는 데 도움이 되는 참조용으로만 제공됩니다.
-
-1. **특정 모험에 대한 팀 구성원 얻기**:
-
-   ```graphql
-   query getTeamMembersByAdventurePath ($fragmentPath: String!){
-     adventureByPath (_path: $fragmentPath ) {
-       item {
-         instructorTeam {
-           teamMembers{
-             fullName
-             contactInfo{
-               phone
-               email
-             }
-           profilePicture {
-               ... on ImageRef {
-                 _path
-               }
-           }
-             instructorExperienceLevel
-             skills
-             biography{
-               plaintext
-             }
-           }
-         }
-       }
-     }
-   }
-   
-   # in Query Variables
-   {
-     "fragmentPath": "/content/dam/wknd/en/adventures/yosemite-backpacking/yosemite-backpacking"
-   }
-   ```
-
-1. **특정 모험의 위치 경로 가져오기**
-
-   ```graphql
-   query getLocationPathByAdventurePath ($fragmentPath: String!){
-     adventureByPath (_path: $fragmentPath){
-       item {
-         location{
-           _path  
-         } 
-       }
-     }
-   }
-   
-   # in Query Variables
-   {
-     "fragmentPath": "/content/dam/wknd/en/adventures/yosemite-backpacking/yosemite-backpacking"
-   }
-   ```
-
-1. **경로로 팀 위치 가져오기**
-
-   ```graphql
-   query getTeamLocationByLocationPath ($fragmentPath: String!){
-     locationByPath (_path: $fragmentPath) {
-       item {
-         name
-         description{
-           json
-         }
-         contactInfo{
-           phone
-           email
-         }
-           address{
-           streetAddress
-           city
-           state
-           zipCode
-           country
-         }
-       }
-     }
-   }
-   
-   # in Query Variables
-   {
-     "fragmentPath": "/content/dam/wknd/en/adventures/locations/yosemite-valley-lodge/yosemite-valley-lodge"
-   }
-   ```
 
 ## 축하합니다!
 
