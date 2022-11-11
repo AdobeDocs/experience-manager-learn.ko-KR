@@ -9,11 +9,12 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
+last-substantial-update: 2022-11-09T00:00:00Z
 exl-id: b1ab2a13-8b0e-4d7f-82b5-78b1dda248ba
-source-git-commit: b20a29e67da0bcbf53ae8089a7cde0dfde800214
+source-git-commit: c5f94b12a9af50bc4e7db693d6560d120ab8bf3b
 workflow-type: tm+mt
-source-wordcount: '941'
-ht-degree: 4%
+source-wordcount: '948'
+ht-degree: 5%
 
 ---
 
@@ -25,7 +26,7 @@ ht-degree: 4%
 
 보기 [GitHub의 소스 코드](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app)
 
-A [단계별 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=ko-KR) 이 React 앱이 빌드된 방법을 설명합니다.
+A [전체 단계별 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=ko-KR) 이 React 앱이 빌드된 방법을 설명합니다.
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app"
@@ -43,11 +44,11 @@ A [단계별 자습서](https://experienceleague.adobe.com/docs/experience-manag
 
 ## AEM 요구 사항
 
-React 응용 프로그램은 다음 AEM 배포 옵션과 함께 작동합니다. 모든 배포에는 [WKND 사이트 v2.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) 설치
+React 응용 프로그램은 다음 AEM 배포 옵션과 함께 작동합니다. 모든 배포에는 [WKND 사이트 v2.0.0+](https://github.com/adobe/aem-guides-wknd/releases/tag/aem-guides-wknd-2.1.0) 설치
 
 + [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
-+ 를 사용하여 로컬 설정 [AEM Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
-+ [AEM 6.5 SP13+ QuickStart](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=en#install-local-aem-instances)
++ 를 사용하여 로컬 설정 [AEM Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=ko-KR)
++ [AEM 6.5 SP13+ QuickStart](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=ko-KR?lang=en#install-local-aem-instances)
 
 React 응용 프로그램은 __AEM 게시__ 그러나 React 애플리케이션의 구성에 인증이 제공된 경우 컨텐츠를 AEM Author에서 소스화할 수 있습니다.
 
@@ -141,7 +142,7 @@ query($slug: String!) {
         slug: {
           _expressions: [ { value: $slug } ]
         }
-  	}) {
+      }) {
     items {
       _path
       title
@@ -187,46 +188,67 @@ query($slug: String!) {
 
 AEM 지속적인 쿼리는 HTTP GET을 통해 실행되므로 [JavaScript용 AEM Headless 클라이언트](https://github.com/adobe/aem-headless-client-js) 에 사용됩니다. [지속된 GraphQL 쿼리 실행](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md#aemheadlessrunpersistedquerypath-variables-options--promiseany) AEM에 대해 를 설정하고 모험 컨텐츠를 앱에 로드합니다.
 
-지속되는 각 쿼리에는 `src/api/persistedQueries.js`를 비동기적으로 호출하는 경우 AEM HTTP GET 종료 지점이 표시되고 모험 데이터가 반환됩니다.
+지속되는 각 쿼리에는 해당하는 React가 있습니다 [useEffect](https://reactjs.org/docs/hooks-effect.html) 후크 `src/api/usePersistedQueries.js`를 비동기적으로 호출하는 AEM HTTP GET의 지속된 쿼리 종료 지점을 호출하고 모험 데이터를 반환합니다.
 
 각 함수는 `aemHeadlessClient.runPersistedQuery(...)`, 지속형 GraphQL 쿼리를 실행합니다.
 
 ```js
-// src/api/persistedQueries.js
+// src/api/usePersistedQueries.js
 
 /**
- * Queries a list of all Adventures using the persisted path "wknd-shared/adventures-all"
- * @returns {data, errors}
+ * React custom hook that returns a list of adevntures by activity. If no activity is provided, all adventures are returned.
+ * 
+ * Custom hook that calls the 'wknd-shared/adventures-all' or 'wknd-shared/adventures-by-activity' persisted query.
+ *
+ * @returns an array of Adventure JSON objects, and array of errors
  */
-export const getAllAdventures = async function() {
-    return executePersistedQuery('wknd-shared/adventures-all');
+export function useAdventuresByActivity(adventureActivity) {
+  ...
+  // If an activity is provided (i.e "Camping", "Hiking"...) call wknd-shared/adventures-by-activity query
+  if (adventureActivity) {
+    // The key is 'activity' as defined in the persisted query
+    const queryParameters = { activity: adventureActivity };
+
+    // Call the AEM GraphQL persisted query named "wknd-shared/adventures-by-activity" with parameters
+    response = await fetchPersistedQuery("wknd-shared/adventures-by-activity", queryParameters);
+  } else {
+    // Else call the AEM GraphQL persisted query named "wknd-shared/adventures-all" to get all adventures
+    response = await fetchPersistedQuery("wknd-shared/adventures-all");
+  }
+  
+  ... 
 }
 
 ...
-
 /**
- * Uses the AEM Headless SDK to execute a query besed on a persistedQueryPath and optional query variables
- * @param {*} persistedQueryPath 
- * @param {*} queryVariables 
- * @returns 
+ * Private function that invokes the AEM Headless client.
+ * 
+ * @param {String} persistedQueryName the fully qualified name of the persisted query
+ * @param {*} queryParameters an optional JavaScript object containing query parameters
+ * @returns the GraphQL data or an error message 
  */
- const executePersistedQuery = async function(persistedQueryPath, queryVariables) {
+async function fetchPersistedQuery(persistedQueryName, queryParameters) {
+  let data;
+  let err;
 
-    let data;
-    let errors;
+  try {
+    // AEM GraphQL queries are asynchronous, either await their return or use Promise-based .then(..) { ... } syntax
+    const response = await aemHeadlessClient.runPersistedQuery(
+      persistedQueryName,
+      queryParameters
+    );
+    // The GraphQL data is stored on the response's data field
+    data = response?.data;
+  } catch (e) {
+    // An error occurred, return the error messages
+    err = e
+      .toJSON()
+      ?.map((error) => error.message)
+      ?.join(", ");
+    console.error(e.toJSON());
+  }
 
-    try {
-        // AEM GraphQL queries are asynchronous, either await their return or use Promise-based .then(..) { ... } syntax
-        const response = await aemHeadlessClient.runPersistedQuery(persistedQueryPath, queryVariables);
-        // The GraphQL data is stored on the response's data field
-        data = response.data;
-        errors = response.errors ? mapErrors(response.errors) : undefined;
-    } catch (e) {
-        console.error(e.toJSON());
-        errors = e;
-    }
-
-    return {data, errors}; 
+  return { data, err };
 }
 ```
 
@@ -236,16 +258,15 @@ React 응용 프로그램은 두 개의 보기를 사용하여 웹 경험에 모
 
 + `src/components/Adventures.js`
 
-   호출 `getAllAdventures()` 변환 전: `src/api/persistedQueries.js`  및 은 반환된 모험을 목록에 표시합니다.
+   호출 `getAdventuresByActivity(..)` 변환 전: `src/api/usePersistedQueries.js` 및 은 반환된 모험을 목록에 표시합니다.
 
 + `src/components/AdventureDetail.js`
 
    를 호출합니다 `getAdventureBySlug(..)` 사용 `slug` 매개 변수 `Adventures` 구성 요소로, 단일 모험의 세부 사항을 표시합니다.
 
-
 ### 환경 변수
 
-몇 개 [환경 변수](https://create-react-app.dev/docs/adding-custom-environment-variables) AEM 환경에 연결하는 데 사용됩니다. 다음에서 실행되는 AEM Publish에 기본 연결 `http://localhost:4503`. AEM 연결을 변경하려면 `.env.development` 파일:
+몇 개 [환경 변수](https://create-react-app.dev/docs/adding-custom-environment-variables) AEM 환경에 연결하는 데 사용됩니다. 다음에서 실행되는 AEM Publish에 기본 연결 `http://localhost:4503`. 업데이트 `.env.development` 파일, AEM 연결을 변경하려면:
 
 + `REACT_APP_HOST_URI=http://localhost:4502`: AEM 타겟 호스트로 설정
 + `REACT_APP_GRAPHQL_ENDPOINT=/content/graphql/global/endpoint.json`: GraphQL 끝점 경로를 설정합니다. 이 앱은 지속된 쿼리만 사용하므로 이 React 앱에서 사용되지 않습니다.
@@ -255,7 +276,7 @@ React 응용 프로그램은 두 개의 보기를 사용하여 웹 경험에 모
    + `basic`: 로컬 AEM 작성자를 통해 로컬 개발에 사용자/전달 사용
    + 인증 없이 AEM에 연결하려면 비워 두십시오
 + `REACT_APP_AUTHORIZATION=admin:admin`: AEM 작성자 환경에 연결하는 경우 사용할 기본 인증 자격 증명을 설정합니다(개발용). 게시 환경에 연결하는 경우에는 이 설정이 필요하지 않습니다.
-+ `REACT_APP_DEV_TOKEN`: 개발 토큰 문자열입니다. 원격 인스턴스에 연결하려면 기본 인증(user:pass) 옆의 클라우드 콘솔에서 DEV 토큰과 함께 베어러 인증을 사용할 수 있습니다
++ `REACT_APP_DEV_TOKEN`: 개발 토큰 문자열입니다. 원격 인스턴스에 연결하려면 기본 인증(user:pass) 외에 클라우드 콘솔의 개발 토큰과 함께 베어러 인증을 사용할 수 있습니다
 + `REACT_APP_SERVICE_TOKEN`: 서비스 자격 증명 파일의 경로입니다. 원격 인스턴스에 연결하기 위해 서비스 토큰으로 인증을 수행할 수도 있습니다(개발자 콘솔에서 파일 다운로드).
 
 ### 프록시 AEM 요청
@@ -266,6 +287,6 @@ AEM 작성 환경에 연결하는 경우 해당 [인증 방법을 구성해야 �
 
 ### CORS(원본 간 리소스 공유)
 
-이 React 애플리케이션은 대상 AEM 환경에서 실행되는 AEM 기반 CORS 구성을 사용하며 React 앱이 실행된다고 가정합니다 `http://localhost:3000` 개발 모드. 다음 [CORS 구성](https://github.com/adobe/aem-guides-wknd/blob/master/ui.config/src/main/content/jcr_root/apps/wknd/osgiconfig/config.author/com.adobe.granite.cors.impl.CORSPolicyImpl~wknd-graphql.cfg.json) 의 일부입니다. [WKND 사이트](https://github.com/adobe/aem-guides-wknd).
+이 React 애플리케이션은 대상 AEM 환경에서 실행되는 AEM 기반 CORS 구성을 사용하며 React 앱이 실행된다고 가정합니다 `http://localhost:3000` 개발 모드. 다음 [CORS 구성](https://github.com/adobe/aem-guides-wknd/blob/main/ui.config/src/main/content/jcr_root/apps/wknd/osgiconfig/config.author/com.adobe.granite.cors.impl.CORSPolicyImpl~wknd-graphql.cfg.json) 의 일부입니다. [WKND 사이트](https://github.com/adobe/aem-guides-wknd).
 
 ![CORS 구성](assets/react-app/cross-origin-resource-sharing-configuration.png)
