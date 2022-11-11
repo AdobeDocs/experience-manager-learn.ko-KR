@@ -7,10 +7,12 @@ role: Developer, Architect
 level: Beginner
 kt: 7634
 thumbnail: kt-7634.jpeg
+last-substantial-update: 2022-11-11T00:00:00Z
+recommendations: noDisplay, noCatalog
 exl-id: edd18f2f-6f24-4299-a31a-54ccc4f6d86e
-source-git-commit: fe056006ab59a3955e5f16a23e96e9e208408cf5
+source-git-commit: ece15ba61124972bed0667738ccb37575d43de13
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '536'
 ht-degree: 1%
 
 ---
@@ -27,87 +29,127 @@ ht-degree: 1%
 
 을(를) 추가하려면 __고정__ 구성 요소를 홈 보기에 추가합니다.
 
-+ AEM React 코어 구성 요소 제목 구성 요소를 가져와 프로젝트의 제목 리소스 유형에 등록합니다
++ 사용자 지정 편집 가능한 제목 구성 요소를 만들어 프로젝트의 제목 리소스 유형에 등록합니다
 + 편집 가능한 제목 구성 요소를 SPA 홈 보기에 배치합니다
 
-### AEM React 코어 구성 요소의 제목 구성 요소에서 가져오기
+### 편집 가능한 React 제목 구성 요소 만들기
 
-SPA 홈 보기에서 하드 코딩된 텍스트를 바꿉니다 `<h2>Current Adventures</h2>` (AEM React 코어 구성 요소의 제목 구성 요소 사용) 제목 구성 요소를 사용하려면 먼저 다음을 수행해야 합니다.
+SPA 홈 보기에서 하드 코딩된 텍스트를 바꿉니다 `<h2>Current Adventures</h2>` 편집 가능한 사용자 지정 제목 구성 요소에 사용할 수 있습니다. 제목 구성 요소를 사용하려면 먼저 다음을 수행해야 합니다.
 
-1. 제목 구성 요소를 가져올 위치 `@adobe/aem-core-components-react-base`
-1. 다음을 사용하여 등록 `withMappable` 개발자가 SPA에 배치할 수 있도록
-1. 또한 `MapTo` 따라서 [나중에 컨테이너 구성 요소](./spa-container-component.md).
+1. 사용자 지정 Title React 구성 요소 만들기
+1. 다음 방법으로 사용자 지정 제목 구성 요소 장식 `@adobe/aem-react-editable-components` 편집 가능하게 만듭니다.
+1. 편집 가능한 제목 구성 요소를 `MapTo` 따라서 [나중에 컨테이너 구성 요소](./spa-container-component.md).
 
 이를 위해 진행되는 작업:
 
-1. 원격 SPA 프로젝트 열기 위치 `~/Code/wknd-app/aem-guides-wknd-graphql/react-app` IDE에서
-1. 에서 React 구성 요소 만들기 `react-app/src/components/aem/AEMTitle.js`
-1. 다음 코드를 `AEMTitle.js`.
+1. 원격 SPA 프로젝트 열기 위치 `~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/react-app` IDE에서
+1. 에서 React 구성 요소 만들기 `react-app/src/components/editable/core/Title.js`
+1. 다음 코드를 `Title.js`.
 
+   ```javascript
+   import React from 'react'
+   import { RoutedLink } from "./RoutedLink";
+   
+   const TitleLink = (props) => {
+   return (
+       <RoutedLink className={props.baseCssClass + (props.nested ? '-' : '__') + 'link'} 
+           isRouted={props.routed} 
+           to={props.linkURL}>
+       {props.text}
+       </RoutedLink>
+   );
+   };
+   
+   const TitleV2Contents = (props) => {
+       if (!props.linkDisabled) {
+           return <TitleLink {...props} />
+       }
+   
+       return <>{props.text}</>
+   };
+   
+   export const Title = (props) => {
+       if (!props.baseCssClass) {
+           props.baseCssClass = 'cmp-title'
+       }
+   
+       const elementType = (!!props.type) ? props.type.toString() : 'h3';
+       return (<div className={props.baseCssClass}>
+           {
+               React.createElement(elementType, {
+                       className: props.baseCssClass + (props.nested ? '-' : '__') + 'text',
+                   },
+                   <TitleV2Contents {...props} />
+               )
+           }
+   
+           </div>)
+   }
+   
+   export const titleIsEmpty = (props) => props.text == null || props.text.trim().length === 0
    ```
-   // Import the withMappable API provided by the AEM SPA Editor JS SDK
-   import { withMappable, MapTo } from '@adobe/aem-react-editable-components';
+
+   이 React 구성 요소는 아직 AEM SPA Editor를 사용하여 편집할 수 없습니다. 이 기본 구성 요소는 다음 단계에서 편집할 수 있게 됩니다.
+
+   구현 세부 사항에 대해서는 코드의 주석을 참조하십시오.
+
+1. 에서 React 구성 요소 만들기 `react-app/src/components/editable/EditableTitle.js`
+1. 다음 코드를 `EditableTitle.js`.
+
+   ```javascript
+   // Import the withMappable API provided bu the AEM SPA Editor JS SDK
+   import { EditableComponent, MapTo } from '@adobe/aem-react-editable-components';
+   import React from 'react'
    
-   // Import the AEM React Core Components' Title component implementation and it's Empty Function 
-   import { TitleV2, TitleV2IsEmptyFn } from "@adobe/aem-core-components-react-base";
+   // Import the AEM the Title component implementation and it's Empty Function
+   import { Title, titleIsEmpty } from "./core/Title";
+   import { withConditionalPlaceHolder } from "./core/util/withConditionalPlaceholder";
+   import { withStandardBaseCssClass } from "./core/util/withStandardBaseCssClass";
    
-   // The sling:resourceType for which this Core Component is registered with in AEM
+   // The sling:resourceType of the AEM component used to collected and serialize the data this React component displays
    const RESOURCE_TYPE = "wknd-app/components/title";
    
    // Create an EditConfig to allow the AEM SPA Editor to properly render the component in the Editor's context
-   const EditConfig = {    
-       emptyLabel: "Title",  // The component placeholder in AEM SPA Editor
-       isEmpty: TitleV2IsEmptyFn, // The function to determine if this component has been authored
+   const EditConfig = {
+       emptyLabel: "Title",        // The component placeholder in AEM SPA Editor
+       isEmpty: titleIsEmpty,      // The function to determine if this component has been authored
        resourceType: RESOURCE_TYPE // The sling:resourceType this component is mapped to
    };
    
+   export const WrappedTitle = (props) => {
+       const Wrapped = withConditionalPlaceHolder(withStandardBaseCssClass(Title, "cmp-title"), titleIsEmpty, "TitleV2")
+       return <Wrapped {...props} />
+   }
+   
+   // EditableComponent makes the component editable by the AEM editor, either rendered statically or in a container
+   const EditableTitle = (props) => <EditableComponent config={EditConfig} {...props}><WrappedTitle /></EditableComponent>
+   
    // MapTo allows the AEM SPA Editor JS SDK to dynamically render components added to SPA Editor Containers
-   MapTo(RESOURCE_TYPE)(TitleV2, EditConfig);
+   MapTo(RESOURCE_TYPE)(EditableTitle);
    
-   // withMappable allows the component to be hardcoded into the SPA; <AEMTitle .../>
-   const AEMTitle = withMappable(TitleV2, EditConfig);
-   
-   export default AEMTitle;
+   export default EditableTitle;
    ```
 
-구현 세부 사항에 대해서는 코드의 주석을 참조하십시오.
+   이 `EditableTitle` React 구성 요소는 다음과 같이 래핑됩니다. `Title` React 구성 요소, 포장 및 장식용으로 AEM SPA Editor에서 편집할 수 있습니다.
 
-다음 `AEMTitle.js` 파일 형식은 다음과 같습니다.
+### React EditableTitle 구성 요소 사용
 
-![AEMitle.js](./assets/spa-fixed-component/aem-title-js.png)
+EditableTitle React 구성 요소가에 등록되었으며 React 앱 내에서 사용할 수 있으므로, 홈 보기에서 하드 코딩된 제목 텍스트를 대체합니다.
 
-### React AEMitle 구성 요소 사용
+1. 편집 `react-app/src/components/Home.js`
+1. 에서 `Home()` 맨 아래에 있는 가져오기 `EditableTitle` 하드 코딩된 제목을 `AEMTitle` 구성 요소:
 
-AEM React 코어 구성 요소의 제목 구성 요소가에 등록되었으며 React 앱 내에서 사용할 수 있으므로, 홈 보기에서 하드 코딩된 제목 텍스트를 대체합니다.
-
-1. 편집 `react-app/src/Home.js`
-1. 에서 `Home()` 아래에서 하드 코딩된 제목을 새 이름으로 바꿉니다 `AEMTitle` 구성 요소:
-
-   ```
-   <h2>Current Adventures</h2>
-   ```
-
-   with
-
-   ```
-   <AEMTitle
-       pagePath='/content/wknd-app/us/en/home' 
-       itemPath='root/title'/>
-   ```
-
-   업데이트 `Home.js` 다음 코드와 함께 사용할 수 있습니다.
-
-   ```
+   ```javascript
    ...
-   import { AEMTitle } from './aem/AEMTitle';
+   import EditableTitle from './editable/EditableTitle';
    ...
    function Home() {
        return (
            <div className="Home">
    
-               <AEMTitle
-                   pagePath='/content/wknd-app/us/en/home' 
-                   itemPath='root/title'/>
+           <EditableTitle
+               pagePath='/content/wknd-app/us/en/home'
+               itemPath='root/title'/>
    
                <Adventures />
            </div>
@@ -117,7 +159,7 @@ AEM React 코어 구성 요소의 제목 구성 요소가에 등록되었으며 
 
 다음 `Home.js` 파일 형식은 다음과 같습니다.
 
-![Home.js](./assets/spa-fixed-component/home-js.png)
+![Home.js](./assets/spa-fixed-component/home-js-update.png)
 
 ## AEM에서 제목 구성 요소 작성
 
@@ -146,8 +188,7 @@ AEM React 코어 구성 요소의 제목 구성 요소가에 등록되었으며 
 
 WKND 앱에 고정 편집 가능한 구성 요소를 추가했습니다. 이제 방법을 알 수 있습니다.
 
-+ SPA에서 AEM React 코어 구성 요소를 가져와 재사용합니다
-+ 고정되었지만 편집 가능한 구성 요소를 SPA에 추가합니다
++ SPA에 고정되었지만 편집 가능한 구성 요소를 만들었습니다.
 + AEM에서 고정 구성 요소 작성
 + Remote SPA에서 작성된 컨텐츠를 참조하십시오
 

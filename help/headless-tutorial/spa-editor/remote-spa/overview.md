@@ -7,11 +7,12 @@ role: Developer, Architect
 level: Beginner
 kt: 7630
 thumbnail: 333272.jpeg
+last-substantial-update: 2022-11-11T00:00:00Z
 exl-id: c5f933eb-c409-41dc-bb6a-6b2220dfbb47
-source-git-commit: fe056006ab59a3955e5f16a23e96e9e208408cf5
+source-git-commit: ece15ba61124972bed0667738ccb37575d43de13
 workflow-type: tm+mt
-source-wordcount: '693'
-ht-degree: 4%
+source-wordcount: '618'
+ht-degree: 5%
 
 ---
 
@@ -36,7 +37,7 @@ AEM 컨텍스트 외부에서 실행 중인 Remote SPA 또는 SPA을 업데이�
 
 ## 최신 코드
 
-+ 이 자습서의 코드는 [GitHub](https://github.com/adobe/aem-guides-wknd-graphql) on `feature/spa-editor` 분기
++ 이 자습서 코드의 시작점은 [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/remote-spa) 에서 `remote-spa-tutorial` 폴더를 입력합니다.
 
 ## 사전 요구 사항
 
@@ -49,26 +50,19 @@ AEM 컨텍스트 외부에서 실행 중인 Remote SPA 또는 SPA을 업데이�
 + [Maven 3.6+](https://maven.apache.org/)
 + [Git](https://git-scm.com/downloads)
 + [aem-guides-wknd.all-2.1.0.zip 이상](https://github.com/adobe/aem-guides-wknd/releases)
-+ [aem-guides-wknd-graphql 소스 코드(분기: feature/spa-editor)](https://github.com/adobe/aem-guides-wknd-graphql/tree/feature/spa-editor)
++ [aem-guides-wknd-graphql 소스 코드](https://github.com/adobe/aem-guides-wknd-graphql/tree/main)
 
 이 자습서에서는 다음을 가정합니다.
 
 + [Microsoft® Visual Studio 코드](https://visualstudio.microsoft.com/) IDE로
-+ 의 작업 디렉토리 `~/Code/wknd-app`
++ 의 작업 디렉토리 `~/Code/aem-guides-wknd-graphql/remote-spa-tutorial`
 + 에서 작성자 서비스로 AEM SDK 실행 `http://localhost:4502`
 + 로컬에서 AEM SDK 실행 `admin` 암호가 있는 계정 `admin`
 + SPA 실행 `http://localhost:3000`
 
 >[!NOTE]
 >
-> **로컬 개발 환경 설정에 대한 도움이 필요하십니까?** 다음을 확인하십시오 [AEM as a Cloud Service SDK를 사용하여 로컬 개발 환경을 설정하는 데 대한 다음 안내서](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
-
-
-## 빠른 설정
-
-빠른 설정을 사용하면 WKND App SPA 및 AEM SPA Editor를 15분 내에 사용하여 보고서를 작성하고 실행할 수 있습니다. 이 가속 설정을 사용하면 자습서의 끝 상태로 바로 이동하여 AEM SPA 편집기에서 SPA을 작성하는 것을 탐색할 수 있습니다.
-
-+ [빠른 설정에 대해 알아보기](./quick-setup.md)
+> **로컬 개발 환경 설정에 대한 도움이 필요하십니까?** 다음을 확인하십시오 [AEM as a Cloud Service SDK를 사용하여 로컬 개발 환경을 설정하는 데 대한 다음 안내서](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=ko-KR).
 
 ## 1. AEM for SPA 편집기 구성
 
@@ -102,6 +96,4 @@ AEM SPA Editor를 SPA의 작성 컨텍스트에 통합하려면 SPA에 몇 가�
 
 ## 추가 리소스
 
-+ [AEM 문서에서 외부 SPA 편집](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/hybrid/editing-external-spa.html)
-+ [AEM WCM 구성 요소 - React Core 구현](https://www.npmjs.com/package/@adobe/aem-core-components-react-base)
-+ [AEM WCM 구성 요소 - Spa 편집기 - React Core 구현](https://www.npmjs.com/package/@adobe/aem-core-components-react-spa)
++ [AEM SPA React 편집 가능한 구성 요소](https://www.npmjs.com/package/@adobe/aem-react-editable-components)

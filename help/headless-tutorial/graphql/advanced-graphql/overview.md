@@ -7,7 +7,7 @@ topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: daae6145-5267-4958-9abe-f6b7f469f803
-source-git-commit: a500c88091d87e34c12d4092c71241983b166af8
+source-git-commit: ee6f65fba8db5ae30cc14aacdefbeba39803527b
 workflow-type: tm+mt
 source-wordcount: '1076'
 ht-degree: 1%
@@ -125,7 +125,7 @@ AEM에서 새 프로젝트를 시작하는 첫 번째 단계는 작업 공간으
 * [Advanced-GraphQL-Tutorial-Solution-Package-1.2.zip](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/Advanced-GraphQL-Tutorial-Solution-Package-1.2.zip) 에는 새 컨텐츠 조각 모델, 컨텐츠 조각 및 지속적인 GraphQL 쿼리를 포함하여 1-4장에 대해 완료된 솔루션이 포함되어 있습니다. 바로 을 건너뛸 사용자에게 유용합니다. [클라이언트 애플리케이션 통합](/help/headless-tutorial/graphql/advanced-graphql/client-application-integration.md) 제2장.
 
 
-다음 **React 앱 - 고급 자습서 - WKND Adventures**(https://github.com/adobe/aem-guides-wknd-graphql/blob/main/advanced-tutorial/README.md) 프로젝트를 사용하여 샘플 애플리케이션을 검토하고 탐색할 수 있습니다. 이 샘플 애플리케이션은 지속된 GraphQL 쿼리를 호출하여 AEM에서 컨텐츠를 검색하고 몰입형 환경에서 렌더링합니다.
+다음 [React 앱 - 고급 자습서 - WKND Adventures](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/advanced-tutorial/README.md) 샘플 애플리케이션을 검토하고 탐색하는 데 프로젝트를 사용할 수 있습니다. 이 샘플 애플리케이션은 지속된 GraphQL 쿼리를 호출하여 AEM에서 컨텐츠를 검색하고 몰입형 환경에서 렌더링합니다.
 
 ## 시작하기
 

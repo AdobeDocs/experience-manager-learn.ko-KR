@@ -7,10 +7,12 @@ role: Developer, Architect
 level: Beginner
 kt: 7631
 thumbnail: kt-7631.jpeg
+last-substantial-update: 2022-11-11T00:00:00Z
+recommendations: noDisplay, noCatalog
 exl-id: 0bdb93c9-5070-483c-a34c-f2b348bfe5ae
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: ece15ba61124972bed0667738ccb37575d43de13
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1246'
 ht-degree: 1%
 
 ---
@@ -26,26 +28,34 @@ SPA 코드 베이스는 AEM 외부에서 관리되지만, 지원 구성 및 컨�
 + SPA-AEM URL 매핑을 정의하는 하위 프로젝트
 + OSGi 구성 폴더
 
+## GitHub에서 기본 프로젝트 다운로드
+
+다운로드 `aem-guides-wknd-graphql` project from Github.com. 이 프로젝트에는 이 프로젝트에 사용되는 몇 가지 기준 파일이 포함됩니다.
+
+```
+$ mkdir -p ~/Code
+$ git clone https://github.com/adobe/aem-guides-wknd-graphql.git
+$ cd remote-spa-tutorial
+```
+
 ## AEM 프로젝트 만들기
 
-구성 및 기준 컨텐츠를 관리하는 AEM 프로젝트를 만듭니다.
+구성 및 기준 컨텐츠를 관리하는 AEM 프로젝트를 만듭니다. 이 프로젝트는 복제된 내에서 생성됩니다 `aem-guides-wknd-graphql` 프로젝트 `remote-spa-tutorial` 폴더를 입력합니다.
 
 _항상 최신 버전의 를 사용하십시오 [AEM Archetype](https://github.com/adobe/aem-project-archetype)._
 
-
 ```
-$ mkdir -p ~/Code/wknd-app
-$ cd ~/Code/wknd-app
+$ cd ~/Code/aem-guides-wknd-graphql/remote-spa-tutorial
 $ mvn -B archetype:generate \
  -D archetypeGroupId=com.adobe.aem \
  -D archetypeArtifactId=aem-project-archetype \
- -D archetypeVersion=27 \
+ -D archetypeVersion=39 \
  -D aemVersion=cloud \
  -D appTitle="WKND App" \
  -D appId="wknd-app" \
  -D groupId="com.adobe.aem.guides.wkndapp" \
  -D frontendModule="react"
-$ mv ~/Code/wknd-app/wknd-app ~/Code/wknd-app/com.adobe.aem.guides.wknd-app
+$ mv ~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/wknd-app ~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/com.adobe.aem.guides.wknd-app
 ```
 
 _마지막 명령은 AEM 프로젝트 폴더의 이름을 변경하기만 하면 됩니다. 따라서 AEM 프로젝트이고 원격 SPA과 혼동하지 않도록 합니다__
@@ -67,7 +77,7 @@ AEM 프로젝트 원형 은 SPA과의 통합을 위해 AEM을 구성하는 데 �
 
 SPA은 원격 SPA이므로 AEM 프로젝트 외부에서 개발 및 관리된다고 가정합니다. 충돌을 방지하려면 다음을 제거합니다 `ui.frontend` 프로젝트를 배포에서 가져옵니다. 만약 `ui.frontend` 프로젝트가 제거되지 않고 두 개의 SPA이 있으며 이 두 개는 `ui.frontend` 프로젝트 및 원격 SPA이 AEM SPA 편집기에서 동시에 로드됩니다.
 
-1. AEM 프로젝트를 엽니다(`~/Code/wknd-app/com.adobe.aem.guides.wknd-app`) 내의 IDE에 있어야 합니다
+1. AEM 프로젝트를 엽니다(`~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/com.adobe.aem.guides.wknd-app`) 내의 IDE에 있어야 합니다
 1. 루트 열기 `pom.xml`
 1. 댓글 달기 `<module>ui.frontend</module` 밖으로 `<modules>` list
 

@@ -1,5 +1,5 @@
 ---
-title: 원격 SPA에 편집 가능한 컨테이너 구성 요소 추가
+title: 원격 SPA에 편집 가능한 React 컨테이너 구성 요소 추가
 description: AEM 작성자가 구성 요소를 드래그하여 놓을 수 있는 원격 SPA에 편집 가능한 컨테이너 구성 요소를 추가하는 방법을 알아봅니다.
 topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
@@ -7,10 +7,12 @@ role: Developer, Architect
 level: Beginner
 kt: 7635
 thumbnail: kt-7635.jpeg
+last-substantial-update: 2022-11-11T00:00:00Z
+recommendations: noDisplay, noCatalog
 exl-id: e5e6204c-d88c-4e79-a7f4-0cfc140bc51c
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: ece15ba61124972bed0667738ccb37575d43de13
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1109'
 ht-degree: 2%
 
 ---
@@ -21,97 +23,49 @@ ht-degree: 2%
 
 ![편집 가능한 컨테이너 구성 요소](./assets/spa-container-component/intro.png)
 
-이 장에서는 SPA에서 직접 AEM React 코어 구성 요소를 사용하여 리치 컨텐츠 경험을 작성하고 레이아웃할 수 있는 편집 가능한 컨테이너를 홈 보기에 추가합니다.
+이 장에서는 SPA에서 직접 편집 가능한 React 구성 요소를 사용하여 리치 컨텐츠 경험을 작성하고 레이아웃할 수 있는 편집 가능한 컨테이너를 홈 보기에 추가합니다.
 
 ## WKND 앱 업데이트
 
 홈 보기에 컨테이너 구성 요소를 추가하려면
 
-+ AEM React 편집 가능한 구성 요소의 ResponsiveGrid 구성 요소 가져오기
-+ 컨테이너 구성 요소에서 사용할 AEM React 코어 구성 요소(텍스트 및 이미지)를 가져오고 등록합니다
++ AEM React 편집 가능한 구성 요소의 `ResponsiveGrid` 구성 요소
++ ResponsiveGrid 구성 요소에서 사용할 사용자 지정 편집 가능한 React 구성 요소(텍스트 및 이미지)를 가져와 등록합니다
 
-### ResponsiveGrid 컨테이너 구성 요소에서 가져오기
+### ResponsiveGrid 구성 요소 사용
 
-편집 가능한 영역을 홈 보기에 배치하려면 다음을 수행해야 합니다.
+홈 보기에 편집 가능한 영역을 추가하려면
 
-1. ResponsiveGrid 구성 요소를 가져올 위치 `@adobe/aem-react-editable-components`
-1. 다음을 사용하여 등록 `withMappable` 개발자가 SPA에 배치할 수 있도록
-1. 또한 `MapTo` 따라서 다른 컨테이너 구성 요소에서 재사용할 수 있으므로 컨테이너를 효과적으로 중첩합니다.
-
-이를 위해 진행되는 작업:
-
-1. IDE에서 SPA 프로젝트를 엽니다.
-1. 에서 React 구성 요소 만들기 `src/components/aem/AEMResponsiveGrid.js`
-1. 다음 코드를 `AEMResponsiveGrid.js`
-
-   ```
-   // Import the withMappable API provided bu the AEM SPA Editor JS SDK
-   import { withMappable, MapTo } from '@adobe/aem-react-editable-components';
-   
-   // Import the base ResponsiveGrid component
-   import { ResponsiveGrid } from "@adobe/aem-react-editable-components";
-   
-   // The sling:resourceType for which this Core Component is registered with in AEM
-   const RESOURCE_TYPE = "wcm/foundation/components/responsivegrid";
-   
-   // Create an EditConfig to allow the AEM SPA Editor to properly render the component in the Editor's context
-   const EditConfig = {
-       emptyLabel: "Layout Container",  // The component placeholder in AEM SPA Editor
-       isEmpty: function(props) { 
-           return props.cqItemsOrder == null || props.cqItemsOrder.length === 0;
-       },                              // The function to determine if this component has been authored
-       resourceType: RESOURCE_TYPE     // The sling:resourceType this SPA component is mapped to
-   };
-   
-   // MapTo allows the AEM SPA Editor JS SDK to dynamically render components added to SPA Editor Containers
-   MapTo(RESOURCE_TYPE)(ResponsiveGrid, EditConfig);
-   
-   // withMappable allows the component to be hardcoded into the SPA; <AEMResponsiveGrid .../>
-   const AEMResponsiveGrid = withMappable(ResponsiveGrid, EditConfig);
-   
-   export default AEMResponsiveGrid;
-   ```
-
-코드는 유사합니다 `AEMTitle.js` 그게 [AEM Reach 코어 구성 요소의 제목 구성 요소를 가져왔습니다](./spa-fixed-component.md).
-
-
-다음 `AEMResponsiveGrid.js` 파일 형식은 다음과 같습니다.
-
-![AEMRresponsiveGrid.js](./assets/spa-container-component/aem-responsive-grid-js.png)
-
-### AEMRresponsiveGrid SPA 구성 요소 사용
-
-이제 AEM ResponsiveGrid 구성 요소가에 등록되었으며 SPA 내에서 사용할 수 있으므로 홈 보기에 배치할 수 있습니다.
-
-1. 열기 및 편집 `react-app/src/Home.js`
-1. 가져오기 `AEMResponsiveGrid` 구성 요소를 위에 배치하여 `<AEMTitle ...>` 구성 요소.
-1. 에서 다음 속성을 설정합니다. `<AEMResponsiveGrid...>` 구성 요소
+1. 열기 및 편집 `react-app/src/components/Home.js`
+1. 가져오기 `ResponsiveGrid` 구성 요소 `@adobe/aem-react-editable-components` 그리고 거기에 `Home` 구성 요소.
+1. 에서 다음 속성을 설정합니다. `<ResponsiveGrid...>` 구성 요소
    + `pagePath = '/content/wknd-app/us/en/home'`
    + `itemPath = 'root/responsivegrid'`
 
-   이를 통해 `AEMResponsiveGrid` AEM 리소스에서 컨텐츠를 검색하는 구성 요소입니다.
+   이를 통해 `ResponsiveGrid` AEM 리소스에서 컨텐츠를 검색하는 구성 요소입니다.
 
    + `/content/wknd-app/us/en/home/jcr:content/root/responsivegrid`
 
    다음 `itemPath` 지도 `responsivegrid` 에 정의된 노드 `Remote SPA Page` AEM 템플릿 및 은(는) `Remote SPA Page` AEM 템플릿.
 
-   업데이트 `Home.js` 를 추가하려면 `<AEMResponsiveGrid...>` 구성 요소.
+   업데이트 `Home.js` 를 추가하려면 `<ResponsiveGrid...>` 구성 요소.
 
-   ```
+   ```javascript
    ...
-   import AEMResponsiveGrid from './aem/AEMResponsiveGrid';
+   import { ResponsiveGrid } from '@adobe/aem-react-editable-components';
    ...
    
    function Home() {
        return (
            <div className="Home">
-               <AEMResponsiveGrid
+               <ResponsiveGrid
                    pagePath='/content/wknd-app/us/en/home' 
                    itemPath='root/responsivegrid'/>
    
-               <AEMTitle
+               <EditableTitle
                    pagePath='/content/wknd-app/us/en/home' 
                    itemPath='title'/>
+   
                <Adventures />
            </div>
        );
@@ -124,66 +78,164 @@ ht-degree: 2%
 
 ## 편집 가능한 구성 요소 만들기
 
-SPA Editor에서 제공하는 유연한 작성 경험 컨테이너의 전체 효과를 얻을 수 있습니다. 이미 편집 가능한 제목 구성 요소를 만들었지만 작성자가 새로 추가된 컨테이너 구성 요소에서 텍스트 및 이미지 AEM WCM 핵심 구성 요소를 사용할 수 있도록 몇 가지 더 추가하겠습니다.
+SPA Editor에서 제공하는 유연한 작성 경험 컨테이너의 전체 효과를 얻을 수 있습니다. 이미 편집 가능한 제목 구성 요소를 만들었지만, 작성자가 새로 추가된 응답형 그리드 구성 요소에서 편집 가능한 텍스트 및 이미지 구성 요소를 사용할 수 있도록 몇 가지 더 만들어 보겠습니다.
 
-### 텍스트 구성 요소
+편집 가능한 새로운 텍스트 및 이미지 반응 구성 요소는 다음과 같이 표시되는 편집 가능한 구성 요소 정의 패턴을 사용하여 만듭니다 [편집 가능한 고정 구성 요소](./spa-fixed-component.md).
+
+### 편집 가능한 텍스트 구성 요소
 
 1. IDE에서 SPA 프로젝트를 엽니다.
-1. 에서 React 구성 요소 만들기 `src/components/aem/AEMText.js`
-1. 다음 코드를 `AEMText.js`
+1. 에서 React 구성 요소 만들기 `src/components/editable/core/Text.js`
+1. 다음 코드를 `Text.js`
 
+   ```javascript
+   import React from 'react'
+   
+   const TextPlain = (props) => <div className={props.baseCssClass}><p className="cmp-text__paragraph">{props.text}</p></div>;
+   const TextRich = (props) => {
+   const text = props.text;
+   const id = (props.id) ? props.id : (props.cqPath ? props.cqPath.substr(props.cqPath.lastIndexOf('/') + 1) : "");
+       return <div className={props.baseCssClass} id={id} data-rte-editelement dangerouslySetInnerHTML={{ __html: text }} />
+   };
+   
+   export const Text = (props) => {
+       if (!props.baseCssClass) {
+           props.baseCssClass = 'cmp-text'
+       }
+   
+       const { richText = false } = props
+   
+       return richText ? <TextRich {...props} /> : <TextPlain {...props} />
+       }
+   
+       export function textIsEmpty(props) {
+       return props.text == null || props.text.length === 0;
+   }
    ```
-   import { withMappable, MapTo } from '@adobe/aem-react-editable-components';
-   import { TextV2, TextV2IsEmptyFn } from "@adobe/aem-core-components-react-base";
+
+1. 편집 가능한 React 구성 요소를 만들 위치 `src/components/editable/EditableText.js`
+1. 다음 코드를 `EditableText.js`
+
+   ```javascript
+   import React from 'react'
+   import { EditableComponent, MapTo } from '@adobe/aem-react-editable-components';
+   import { Text, textIsEmpty } from "./core/Text";
+   import { withConditionalPlaceHolder } from "./core/util/withConditionalPlaceholder";
+   import { withStandardBaseCssClass } from "./core/util/withStandardBaseCssClass";
    
    const RESOURCE_TYPE = "wknd-app/components/text";
    
-   const EditConfig = {    
+   const EditConfig = {
        emptyLabel: "Text",
-       isEmpty: TextV2IsEmptyFn,
+       isEmpty: textIsEmpty,
        resourceType: RESOURCE_TYPE
    };
    
-   MapTo(RESOURCE_TYPE)(TextV2, EditConfig);
+   export const WrappedText = (props) => {
+       const Wrapped = withConditionalPlaceHolder(withStandardBaseCssClass(Text, "cmp-text"), textIsEmpty, "Text V2")
+       return <Wrapped {...props} />
+   };
    
-   const AEMText = withMappable(TextV2, EditConfig);
+   const EditableText = (props) => <EditableComponent config={EditConfig} {...props}><WrappedText /></EditableComponent>
    
-   export default AEMText;
+   MapTo(RESOURCE_TYPE)(EditableText);
+   
+   export default EditableText;
    ```
 
-다음 `AEMText.js` 파일 형식은 다음과 같습니다.
+편집 가능한 텍스트 구성 요소 구현은 다음과 같습니다.
 
-![AEMText.js](./assets/spa-container-component/aem-text-js.png)
+![편집 가능한 텍스트 구성 요소](./assets/spa-container-component/text-js.png)
 
 ### 이미지 구성 요소
 
 1. IDE에서 SPA 프로젝트를 엽니다.
-1. 에서 React 구성 요소 만들기 `src/components/aem/AEMImage.js`
-1. 다음 코드를 `AEMImage.js`
+1. 에서 React 구성 요소 만들기 `src/components/editable/core/Image.js`
+1. 다음 코드를 `Image.js`
 
-   ```
-   import { withMappable, MapTo } from '@adobe/aem-react-editable-components';
-   import { ImageV2, ImageV2IsEmptyFn } from "@adobe/aem-core-components-react-base";
+   ```javascript
+   import React from 'react'
+   import { RoutedLink } from "./RoutedLink";
    
-   const RESOURCE_TYPE = "wknd-app/components/image";
+   export const imageIsEmpty = (props) => (!props.src) || props.src.trim().length === 0
    
-   const EditConfig = {    
-       emptyLabel: "Image",
-       isEmpty: ImageV2IsEmptyFn,
-       resourceType: RESOURCE_TYPE
+   const ImageInnerContents = (props) => {
+   return (<>
+       <img src={props.src}
+           className={props.baseCssClass + '__image'}
+           alt={props.alt} />
+       {
+           !!(props.title) && <span className={props.baseCssClass + '__title'} itemProp="caption">{props.title}</span>
+       }
+       {
+           props.displayPopupTitle && (!!props.title) && <meta itemProp="caption" content={props.title} />
+       }
+       </>);
    };
    
-   MapTo(RESOURCE_TYPE)(ImageV2, EditConfig);
+   const ImageContents = (props) => {
+       if (props.link && props.link.trim().length > 0) {
+           return (
+           <RoutedLink className={props.baseCssClass + '__link'} isRouted={props.routed} to={props.link}>
+               <ImageInnerContents {...props} />
+           </RoutedLink>
+           )
+       }
+       return <ImageInnerContents {...props} />
+   };
    
-   const AEMImage = withMappable(ImageV2, EditConfig);
+   export const Image = (props) => {
+       if (!props.baseCssClass) {
+           props.baseCssClass = 'cmp-image'
+       }
    
-   export default AEMImage;
+       const { isInEditor = false } = props;
+       const cssClassName = (isInEditor) ? props.baseCssClass + ' cq-dd-image' : props.baseCssClass;
+   
+       return (
+           <div className={cssClassName}>
+               <ImageContents {...props} />
+           </div>
+       )
+   };
    ```
 
-1. SCSS 파일 만들기 `src/components/aem/AEMImage.scss` 에 대한 사용자 지정 스타일을 제공합니다 `AEMImage.scss`. 이러한 스타일은 AEM React 코어 구성 요소의 BEM 표기법 CSS 클래스를 타깃팅합니다.
-1. 다음 SCSS를에 추가합니다 `AEMImage.scss`
+1. 편집 가능한 React 구성 요소를 만들 위치 `src/components/editable/EditableImage.js`
+1. 다음 코드를 `EditableImage.js`
 
-   ```
+```javascript
+import { EditableComponent, MapTo } from '@adobe/aem-react-editable-components';
+import { Image, imageIsEmpty } from "./core/Image";
+import React from 'react'
+
+import { withConditionalPlaceHolder } from "./core/util/withConditionalPlaceholder";
+import { withStandardBaseCssClass } from "./core/util/withStandardBaseCssClass";
+
+const RESOURCE_TYPE = "wknd-app/components/image";
+
+const EditConfig = {
+    emptyLabel: "Image",
+    isEmpty: imageIsEmpty,
+    resourceType: RESOURCE_TYPE
+};
+
+const WrappedImage = (props) => {
+    const Wrapped = withConditionalPlaceHolder(withStandardBaseCssClass(Image, "cmp-image"), imageIsEmpty, "Image V2");
+    return <Wrapped {...props}/>
+}
+
+const EditableImage = (props) => <EditableComponent config={EditConfig} {...props}><WrappedImage /></EditableComponent>
+
+MapTo(RESOURCE_TYPE)(EditableImage);
+
+export default EditableImage;
+```
+
+
+1. SCSS 파일 만들기 `src/components/editable/EditableImage.scss` 에 대한 사용자 지정 스타일을 제공합니다 `EditableImage.scss`. 이러한 스타일은 편집 가능한 React 구성 요소의 CSS 클래스를 대상으로 합니다.
+1. 다음 SCSS를에 추가합니다 `EditableImage.scss`
+
+   ```css
    .cmp-image__image {
        margin: 1rem 0;
        width: 100%;
@@ -191,47 +243,48 @@ SPA Editor에서 제공하는 유연한 작성 경험 컨테이너의 전체 효
     }
    ```
 
-1. 가져오기 `AEMImage.scss` in `AEMImage.js`
+1. 가져오기 `EditableImage.scss` in `EditableImage.js`
 
-   ```
+   ```javascript
    ...
-   import './AEMImage.scss';
+   import './EditableImage.scss';
    ...
    ```
 
-다음 `AEMImage.js` 및 `AEMImage.scss` 다음과 같이 표시됩니다.
+편집 가능한 이미지 구성 요소 구현은 다음과 같아야 합니다.
 
-![AEMImage.js 및 AEMImage.scss](./assets/spa-container-component/aem-image-js-scss.png)
+![편집 가능한 이미지 구성 요소](./assets/spa-container-component/image-js.png)
+
 
 ### 편집 가능한 구성 요소 가져오기
 
-새로 만든 `AEMText` 및 `AEMImage` SPA 구성 요소는 SPA에서 참조되며, AEM에서 반환되는 JSON을 기반으로 동적으로 인스턴스화됩니다. 이러한 구성 요소를 SPA에서 사용할 수 있도록 하려면,에서 해당 구성 요소에 대한 가져오기 구문을 만듭니다. `Home.js`
+새로 만든 `EditableText` 및 `EditableImage` React 구성 요소는 SPA에서 참조되며, AEM에서 반환된 JSON을 기반으로 동적으로 인스턴스화됩니다. 이러한 구성 요소를 SPA에서 사용할 수 있도록 하려면,에서 해당 구성 요소에 대한 가져오기 구문을 만듭니다. `Home.js`
 
 1. IDE에서 SPA 프로젝트를 엽니다.
 1. 파일을 엽니다. `src/Home.js`
 1. 에 대한 가져오기 구문 추가 `AEMText` 및 `AEMImage`
 
-   ```
+   ```javascript
    ...
-   import AEMText from './components/aem/AEMText';
-   import AEMImage from './components/aem/AEMImage';
+   // The following need to be imported, so that MapTo is run for the components
+   import EditableText from './editable/EditableText';
+   import EditableImage from './editable/EditableImage';
    ...
    ```
-
 
 결과는 다음과 같습니다.
 
 ![Home.js](./assets/spa-container-component/home-js-imports.png)
 
-이러한 가져오기가 _not_ 추가됨, `AEMText` 및 `AEMImage` 코드가 SPA에 의해 호출되지 않으므로 제공된 리소스 유형에 대해 구성 요소가 등록되지 않습니다.
+이러한 가져오기가 _not_ 추가됨, `EditableText` 및 `EditableImage` 코드가 SPA에 의해 호출되지 않으므로 구성 요소는 제공된 리소스 유형에 매핑되지 않습니다.
 
 ## AEM에서 컨테이너 구성
 
-AEM 컨테이너 구성 요소는 정책을 사용하여 허용된 구성 요소를 나타냅니다. SPA 구성 요소 옆에 매핑된 AEM WCM 코어 구성 요소만 SPA에서 렌더링할 수 있으므로 SPA 편집기를 사용할 때 중요한 구성입니다. 에 SPA 구현을 제공한 구성 요소만 허용됩니다.
+AEM 컨테이너 구성 요소는 정책을 사용하여 허용된 구성 요소를 나타냅니다. SPA 구성 요소 옆에 매핑된 AEM 구성 요소만 SPA에서 렌더링할 수 있으므로 SPA 편집기를 사용할 때 중요한 구성입니다. 에 SPA 구현을 제공한 구성 요소만 허용됩니다.
 
-+ `AEMTitle` 매핑된 대상 `wknd-app/components/title`
-+ `AEMText` 매핑된 대상 `wknd-app/components/text`
-+ `AEMImage` 매핑된 대상 `wknd-app/components/image`
++ `EditableTitle` 매핑된 대상 `wknd-app/components/title`
++ `EditableText` 매핑된 대상 `wknd-app/components/text`
++ `EditableImage` 매핑된 대상 `wknd-app/components/image`
 
 원격 SPA 페이지 템플릿의 Reponsivegrid 컨테이너를 구성하려면 다음을 수행합니다.
 
@@ -259,7 +312,7 @@ AEM 컨테이너 구성 요소는 정책을 사용하여 허용된 구성 요소
 
 ## AEM에서 컨테이너 작성
 
-SPA이 업데이트되어 가 포함된 후 `<AEMResponsiveGrid...>`, 3개의 AEM React 코어 구성 요소에 대한 래퍼(`AEMTitle`, `AEMText`, 및 `AEMImage`)이고 AEM이 일치하는 템플릿 정책으로 업데이트되므로 컨테이너 구성 요소에서 컨텐츠 작성을 시작할 수 있습니다.
+SPA이 업데이트되어 가 포함된 후 `<ResponsiveGrid...>`, 3개의 편집 가능한 React 구성 요소에 대한 래퍼(`EditableTitle`, `EditableText`, 및 `EditableImage`)이고 AEM이 일치하는 템플릿 정책으로 업데이트되므로 컨테이너 구성 요소에서 컨텐츠 작성을 시작할 수 있습니다.
 
 1. AEM 작성자에 로그인
 1. 다음으로 이동 __Sites > WKND 앱__
@@ -296,7 +349,7 @@ SPA이 업데이트되어 가 포함된 후 `<AEMResponsiveGrid...>`, 3개의 AE
 
    ![작성된 구성 요소](./assets/spa-container-component/authored-components.png)
 
-   구성 요소의 크기 및 레이아웃을 조정할 수 있도록 하려면 AEM 레이아웃 모드 를 사용하십시오.
+구성 요소의 크기 및 레이아웃을 조정할 수 있도록 하려면 AEM 레이아웃 모드 를 사용하십시오.
 
 1. 다음으로 전환 __레이아웃 모드__ 오른쪽 상단에서 모드 선택기 사용
 1. __크기 조정__ 이미지 및 텍스트 구성 요소가 나란히 표시되도록 합니다
@@ -315,9 +368,9 @@ SPA이 업데이트되어 가 포함된 후 `<AEMResponsiveGrid...>`, 3개의 AE
 
 작성자가 편집 가능한 구성 요소를 WKND 앱에 추가할 수 있는 컨테이너 구성 요소를 추가했습니다. 이제 방법을 알 수 있습니다.
 
-+ SPA에서 AEM React 편집 가능한 구성 요소의 ResponsiveGrid 구성 요소를 사용합니다
-+ 컨테이너 구성 요소를 통해 SPA에서 사용할 AEM React 코어 구성 요소(텍스트 및 이미지)를 등록합니다
-+ SPA이 활성화된 핵심 구성 요소를 허용하도록 원격 SPA 페이지 템플릿을 구성합니다
++ AEM React 편집 가능한 구성 요소의 `ResponsiveGrid` SPA의 구성 요소
++ 컨테이너 구성 요소를 통해 SPA에서 사용할 편집 가능한 React 구성 요소(텍스트 및 이미지)를 만들고 등록합니다
++ SPA이 활성화된 구성 요소를 허용하도록 원격 SPA 페이지 템플릿을 구성합니다
 + 컨테이너 구성 요소에 편집 가능한 구성 요소 추가
 + SPA 편집기의 작성자 및 레이아웃 구성 요소
 

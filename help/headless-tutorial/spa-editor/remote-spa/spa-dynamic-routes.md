@@ -7,10 +7,12 @@ role: Developer, Architect
 level: Beginner
 kt: 7636
 thumbnail: kt-7636.jpeg
+last-substantial-update: 2022-11-11T00:00:00Z
+recommendations: noDisplay, noCatalog
 exl-id: 4accc1ca-6f4b-449e-bf2e-06f19d2fe17d
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: ece15ba61124972bed0667738ccb37575d43de13
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '901'
 ht-degree: 1%
 
 ---
@@ -21,7 +23,7 @@ ht-degree: 1%
 
 ![동적 경로 및 편집 가능한 구성 요소](./assets/spa-dynamic-routes/intro.png)
 
-Adventure Detail SPA 경로는 다음과 같이 정의됩니다. `/adventure:path` 여기서 `path` 은 WKND Adventure(컨텐츠 조각)에 대한 세부 사항을 표시하는 경로입니다.
+Adventure Detail SPA 경로는 다음과 같이 정의됩니다. `/adventure/:slug` 여기서 `slug` 은 Adventure 컨텐츠 조각의 고유 식별자 속성입니다.
 
 ## AEM 페이지에 SPA URL 매핑
 
@@ -34,8 +36,8 @@ SPA 동적 경로의 편집 가능한 구성 요소에 대한 매핑을 정의�
 | 원격 SPA 경로 | AEM 페이지 경로 |
 |------------------------------------|--------------------------------------------|
 | / | /content/wknd-app/us/en/home |
-| /adventure:/content/dam/wknd/en/adventures/bali-surf-camp/__발리 서핑 캠프__ | /content/wknd-app/us/en/home/adventure/__발리 서핑 캠프__ |
-| /adventure:/content/dam/wknd/en/adventures/beervanna-portland/__베어바나 포틀랜드__ | /content/wknd-app/us/en/home/adventure/__베어바나 인 포틀랜드__ |
+| /adventure/__발리 서핑 캠프__ | /content/wknd-app/us/en/home/adventure/__발리 서핑 캠프__ |
+| /adventure/__베어바나 포틀랜드__ | /content/wknd-app/us/en/home/adventure/__베어바나 인 포틀랜드__ |
 
 따라서 이 매핑을 기반으로 에서는 두 개의 새 AEM 페이지를 만들어야 합니다.
 
@@ -84,52 +86,51 @@ AEM SPA Editor를 통해 SPA이 열릴 때 SPA 요청에 대한 매핑은에서 
 
 ## WKND 앱 업데이트
 
-그럼 `<AEMResponsiveGrid...>` 에서 만들어진 구성 요소 [마지막 장](./spa-container-component.md)에 대해 `AdventureDetail` SPA 구성 요소, 편집 가능한 컨테이너 만들기
+그럼 `<ResponsiveGrid...>` 에서 만들어진 구성 요소 [마지막 장](./spa-container-component.md)에 대해 `AdventureDetail` SPA 구성 요소, 편집 가능한 컨테이너 만들기
 
-### AEMRresponsiveGrid SPA 구성 요소 배치
+### ResponsiveGrid SPA 구성 요소 배치
 
-배치 `<AEMResponsiveGrid...>` 에서 `AdventureDetail` 구성 요소는 해당 경로에 편집 가능한 컨테이너를 만듭니다. 방법은 여러 경로에서 `AdventureDetail` 렌더링할 구성 요소는 동적으로 조정해야 합니다  `<AEMResponsiveGrid...>'s pagePath` 속성을 사용합니다. 다음 `pagePath` 경로 인스턴스가 표시되는 탐색을 기반으로 해당 AEM 페이지를 가리키도록 파생되어야 합니다.
+배치 `<ResponsiveGrid...>` 에서 `AdventureDetail` 구성 요소는 해당 경로에 편집 가능한 컨테이너를 만듭니다. 방법은 여러 경로에서 `AdventureDetail` 렌더링할 구성 요소는 동적으로 조정해야 합니다  `<ResponsiveGrid...>'s pagePath` 속성을 사용합니다. 다음 `pagePath` 경로 인스턴스가 표시되는 탐색을 기반으로 해당 AEM 페이지를 가리키도록 파생되어야 합니다.
 
-1. 열기 및 편집 `react-app/src/components/AdventureDetail.js`
-1. 앞에 다음 줄을 추가합니다 `AdventureDetail(..)'s` second `return(..)` 컨텐츠 조각 경로에서 모험 이름을 파생시키는 문입니다.
-
-   ```
-   ...
-   // Get the last segment of the Adventure Content Fragment path to used to generate the pagePath for the AEMResponsiveGrid
-   const adventureName = _path.split('/').pop();
-   ...
-   ```
-
-1. 가져오기 `AEMResponsiveGrid` 구성 요소를 위에 배치하여 `<h2>Itinerary</h2>` 구성 요소.
-1. 에서 다음 속성을 설정합니다. `<AEMResponsiveGrid...>` 구성 요소
-   + `pagePath = '/content/wknd-app/us/en/home/adventure/${adventureName}'`
+1. 열기 및 편집 `react-app-/src/components/AdventureDetail.js`
+1. 가져오기 `ResponsiveGrid` 구성 요소를 위에 배치하여 `<h2>Itinerary</h2>` 구성 요소.
+1. 에서 다음 속성을 설정합니다. `<ResponsiveGrid...>` 구성 요소. 참고 사항 `pagePath` 속성이 현재 속성을 추가합니다 `slug` 위에 정의된 매핑에 따라 어드벤처 페이지에 매핑됩니다.
+   + `pagePath = '/content/wknd-app/us/en/home/adventure/${slug}'`
    + `itemPath = 'root/responsivegrid'`
 
-   이를 통해 `AEMResponsiveGrid` AEM 리소스에서 컨텐츠를 검색하는 구성 요소입니다.
+   이를 통해 `ResponsiveGrid` AEM 리소스에서 컨텐츠를 검색하는 구성 요소입니다.
 
-   + `/content/wknd-app/us/en/home/adventure/${adventureName}/jcr:content/root/responsivegrid`
+   + `/content/wknd-app/us/en/home/adventure/${slug}/jcr:content/root/responsivegrid`
 
 
 업데이트 `AdventureDetail.js` 다음 줄 사용:
 
-```
+```javascript
 ...
-import AEMResponsiveGrid from '../components/aem/AEMResponsiveGrid';
+import { ResponsiveGrid } from '@adobe/aem-react-editable-components';
 ...
 
-function AdventureDetail(props) {
+function AdventureDetailRender(props) {
     ...
-    // Get the last segment of the Adventure Content Fragment path to used to generate the pagePath for the AEMResponsiveGrid
-    const adventureName = _path.split('/').pop();
+    // Get the slug from the React route parameter, this will be used to specify the AEM Page to store/read editable content from
+    const { slug } = useParams();
 
     return(
         ...
-        <AEMResponsiveGrid 
-            pagePath={`/content/wknd-app/us/en/home/adventure/${adventureName}`}
-            itemPath="root/responsivegrid"/>
-            
-        <h2>Itinerary</h2>
-        ...
+        // Pass the slug in
+        function AdventureDetailRender({ title, primaryImage, activity, adventureType, tripLength, 
+                groupSize, difficulty, price, description, itinerary, references, slug }) {
+            ...
+            return (
+                ...
+                <ResponsiveGrid 
+                    pagePath={`/content/wknd-app/us/en/home/adventure/${slug}`}
+                    itemPath="root/responsivegrid"/>
+                    
+                <h2>Itinerary</h2>
+                ...
+            )
+        }
     )
 }
 ```
@@ -140,7 +141,7 @@ function AdventureDetail(props) {
 
 ## AEM에서 컨테이너 작성
 
-사용 `<AEMResponsiveGrid...>` 제자리에 `pagePath` 렌더링되는 모험에 따라 동적으로 설정하면 컨텐츠를 작성하려고 합니다.
+사용 `<ResponsiveGrid...>` 제자리에 `pagePath` 렌더링되는 모험에 따라 동적으로 설정하면 컨텐츠를 작성하려고 합니다.
 
 1. AEM 작성자에 로그인
 1. 다음으로 이동 __사이트 > WKND 앱 > us > en__
