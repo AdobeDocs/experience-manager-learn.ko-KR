@@ -9,9 +9,9 @@ level: Intermediate
 kt: 9351
 thumbnail: KT-9351.jpeg
 exl-id: 311cd70f-60d5-4c1d-9dc0-4dcd51cad9c7
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b74dc2693071313a80ccaaea839b8e2087c9edaa
 workflow-type: tm+mt
-source-wordcount: '1144'
+source-wordcount: '1161'
 ht-degree: 4%
 
 ---
@@ -79,7 +79,7 @@ Cloud Manager 프로그램은 __단일__ 네트워크 인프라 유형. 전용 �
 
    Cloud Manager 프로그램이 네트워크 인프라를 프로비저닝할 때까지 15분을 기다립니다.
 
-1. 환경이 완료되었는지 확인합니다 __전용 송신 IP 주소__ cloud Manager API를 사용한 구성 [getNetworkInfrastructure](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) 작업, `id` 이전 단계의 createNetworkInfrastructure HTTP 요청에서 반환됩니다.
+1. 프로그램이 완료되었는지 확인 __전용 송신 IP 주소__ cloud Manager API를 사용한 구성 [getNetworkInfrastructure](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) 작업, `id` 이전 단계의 createNetworkInfrastructure HTTP 요청에서 반환됩니다.
 
    __getNetworkInfrastructure HTTP 요청__
 
@@ -95,7 +95,7 @@ Cloud Manager 프로그램은 __단일__ 네트워크 인프라 유형. 전용 �
 
 ## 환경당 전용 송신 IP 주소 프록시 구성
 
-1. 활성화 및 구성 __전용 송신 IP 주소__ cloud Manager API를 사용하여 각 AEM as a Cloud Service 환경에서 구성 [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) 작업.
+1. 구성 __전용 송신 IP 주소__ cloud Manager API를 사용하여 각 AEM as a Cloud Service 환경에서 구성 [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) 작업.
 
    __enableEnvironmentAdvancedNetworkingConfiguration HTTP 요청__
 
@@ -164,6 +164,8 @@ Cloud Manager 프로그램은 __단일__ 네트워크 인프라 유형. 전용 �
    ```
 
    호스트 이름은 다음 중 하나일 수 없습니다 `pinged`- 송신 및 _not_ 그리고 강박.
+
+   참고 사항 __전용 송신 IP 주소__ 는 프로그램의 모든 AEM as a Cloud Service 환경에서 공유됩니다.
 
 1. 이제 사용자 지정 AEM 코드 및 구성에서 전용 송신 IP 주소를 사용할 수 있습니다. 종종 전용 송신 IP 주소를 사용할 때, 외부 서비스 AEM as a Cloud Service 연결이 이 전용 IP 주소의 트래픽만 허용하도록 구성됩니다.
 
