@@ -13,9 +13,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 0499ff9f-d452-459f-b1a2-2853a228efd1
-source-git-commit: 751aed9b8659d6a600429efb2bf60825b6d39144
+source-git-commit: e8e5c67f6e9f057fd7472b76ee09d7f87b133c89
 workflow-type: tm+mt
-source-wordcount: '1396'
+source-wordcount: '1414'
 ht-degree: 0%
 
 ---
@@ -31,9 +31,9 @@ AEM as a Cloud Service은 디버깅에 유용한 실행 중인 AEM 서비스의 
 개발자 콘솔에 액세스하고 사용하려면 다음을 통해 개발자의 Adobe ID에 다음 권한을 부여해야 합니다. [Adobe Admin Console](https://adminconsole.adobe.com).
 
 1. Cloud Manager 및 AEM as a Cloud Service 제품에 영향을 준 Adobe 조직이 Adobe 조직 전환기에서 활성화되어 있는지 확인합니다.
-1. 개발자는 Cloud Manager 제품의 구성원이어야 합니다 __개발자 - Cloud Service__ 제품 프로필.
+1. 개발자는 [Cloud Manager 제품 __개발자 - Cloud Service__ 제품 프로필](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-cloud-manager.html#assign-developer).
    + 이 멤버십이 없으면 개발자는 개발자 콘솔에 로그인할 수 없습니다.
-1. 개발자는 __AEM 사용자__ 또는 __AEM 관리자__ AEM 작성자 및/또는 게시의 제품 프로필.
+1. 개발자는 [__AEM 사용자__ 또는 __AEM 관리자__ AEM 작성자 및/또는 게시의 제품 프로필](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html#aem-product-profiles).
    + 이 멤버십이 없으면 [상태](#status) 덤프는 401 권한 없는 오류로 인해 시간 초과됩니다.
 
 ### 개발자 콘솔 액세스 문제 해결
