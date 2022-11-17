@@ -8,12 +8,12 @@ role: Leader, Architect, Admin, Developer
 level: Beginner
 kt: 10718
 thumbnail: KT-10718.png
-last-substantial-update: 2022-10-02T00:00:00Z
+last-substantial-update: 2022-11-17T00:00:00Z
 mini-toc-levels: 1
 exl-id: 9e856dcc-f042-4e9d-bf97-dd4f72e837e3
-source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
+source-git-commit: 064a64b1cc9b14f4aee2c0b00ce24bd447eb715e
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '922'
 ht-degree: 15%
 
 ---
@@ -29,7 +29,7 @@ AEM as a Cloud Service이 다른 Adobe Experience Cloud 제품과의 지원되�
 | 광고 |  |  |  |
 | [분석](#adobe-analytics) | ✔ | ✔ | ✔ |
 | Audience Manager |  |  |  |
-| [Campaign Classic](#adobe-campaign-classic) | ✔ |  |  |
+| Campaign Classic |  |  |  |
 | Campaign Standard |  |  |  |
 | [상거래](#adobe-commerce) | ✔ | ✔ |  |
 | Customer Journey Analytics |  |  |  |
@@ -76,10 +76,6 @@ Adobe Analytics과 AEM as a Cloud Service을 통합하여 컨텐츠 활동을 �
 ### AEM Forms
 
 + [Adobe Analytics 통합 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate-aem-forms-with-adobe-analytics.html)
-
-## Adobe Campaign Classic
-
-Adobe Campaign Classic과 AEM as a Cloud Service을 통합하면 Adobe Campaign Classic을 사용하여 이메일을 개인화하고 전달하는 동안 Adobe Experience Manager에서 직접 이메일 게재 콘텐츠 및 양식을 관리할 수 있습니다.
 
 ### AEM Sites
 
