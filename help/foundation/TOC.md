@@ -4,9 +4,9 @@ breadcrumb-title: AEM Foundation 튜토리얼
 user-guide-description: Adobe Experience Manager Foundation에 대한 비디오 및 튜토리얼 모음입니다.
 sub-product: Experience Manager
 index: y
-source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
+source-git-commit: d5645e975aa290392348cc69d078b24921a7d13a
 workflow-type: tm+mt
-source-wordcount: '220'
+source-wordcount: '222'
 ht-degree: 14%
 
 ---
@@ -20,6 +20,7 @@ ht-degree: 14%
    + [oak-run.jar를 사용하여 인덱스 관리](./administration/use-oak-run-jar-to-manage-indexes.md)
    + [온라인 개정 정리 사용](./administration/use-online-revision-clean-up.md)
    + [시스템 개요 대시보드 사용](./administration/use-the-system-overview-dashboard.md)
+   + [URL 리디렉션](./administration/url-redirection.md)
 + 인증 {#authentication}
    + [OAuth 인증](authentication/oauth-code-sample-develop.md)
    + [Adobe I/O에 사용할 공개/개인 키 설정](authentication/set-up-public-private-keys-for-use-with-aem-and-adobe-io.md)
