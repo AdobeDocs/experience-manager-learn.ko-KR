@@ -9,9 +9,9 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 57c8fc16-fed5-4af4-b98b-5c3f0350b240
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: c489a033f34aecaa0af10e3868c258feba6aaae6
 workflow-type: tm+mt
-source-wordcount: '1082'
+source-wordcount: '1063'
 ht-degree: 2%
 
 ---
@@ -41,15 +41,15 @@ AEM SPA 편집기와 통합된 반응형 응용 프로그램의 시작점으로 
 
 >[!NOTE]
 >
->이 자습서에서는 버전을 사용합니다 **39** 원형. 항상 을 사용하는 것이 가장 좋습니다 **최신** 새 프로젝트를 생성할 원형 버전입니다.
+>이 자습서에서는 버전을 사용합니다 **35** 원형.
 
 1. 명령줄 터미널을 열고 다음 Maven 명령을 입력합니다.
 
    ```shell
-   mvn -B archetype:generate \
+   mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate \
     -D archetypeGroupId=com.adobe.aem \
     -D archetypeArtifactId=aem-project-archetype \
-    -D archetypeVersion=39 \
+    -D archetypeVersion=35 \
     -D appTitle="WKND SPA React" \
     -D appId="wknd-spa-react" \
     -D artifactId="aem-guides-wknd-spa.react" \
