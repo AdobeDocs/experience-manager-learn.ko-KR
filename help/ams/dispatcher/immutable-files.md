@@ -7,9 +7,9 @@ feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
-source-git-commit: 04cd4002af7028ee9e3b1e1455b6346c56446245
+source-git-commit: d6b7d63ba02ca73d6c1674d90db53c6eebab3bd2
 workflow-type: tm+mt
-source-wordcount: '822'
+source-wordcount: '826'
 ht-degree: 1%
 
 ---
@@ -311,3 +311,5 @@ $ cd /etc/httpd/conf.dispatcher.d/enabled_farms/; ln -s ../available_farms/400_w
 
 기본 구성 파일과 함께 제공된 기존 포함 및 코드를 변경하고 활용하는 데 필요한 부분만 변경했습니다.  우리는 우리가 변경해야 하는 요소에 대해서만 설명을 해야 한다.  작업을 훨씬 쉽게 만들고 더 적은 코드를 유지할 수 있도록 합니다
 </div>
+
+[다음 -> Dispatcher 상태 확인](./health-check.md)
