@@ -7,9 +7,9 @@ feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
-source-git-commit: d6b7d63ba02ca73d6c1674d90db53c6eebab3bd2
+source-git-commit: df3afc60f765c18915eca3bb2d3556379383fafc
 workflow-type: tm+mt
-source-wordcount: '1136'
+source-wordcount: '1139'
 ht-degree: 1%
 
 ---
@@ -209,3 +209,5 @@ CSE가 로드 밸런서에서 Dispatcher를 끌어와야 할 때 동작 또는 �
 이 스크립트를 사용하면 프론트팅된 모든 인스턴스를 확인하고 로깅하지만 AEM에서 오류를 반환하는지 여부에 관계없이 정상 상태로 반환됩니다.
 
 > `Note:` 이 스크립트는 상태 검사가 원하는 대로 작동하지 않고 로드 밸런서에서 AEM 인스턴스를 유지할 수 있도록 하는 경우에 사용됩니다.
+
+[다음 -> GIT Symlink](./git-symlinks.md)
