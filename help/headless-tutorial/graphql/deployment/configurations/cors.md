@@ -8,9 +8,9 @@ role: Developer, Architect
 level: Intermediate
 kt: 10830
 thumbnail: KT-10830.jpg
-source-git-commit: b98f567e05839db78a1a0a593c106b87af931a49
+source-git-commit: 6f1000db880c3126a01fa0b74abdb39ffc38a227
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '572'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # CORS(원본 간 리소스 공유)
 
-Adobe Experience Manager as a Cloud Service의 CORS(Cross-Origin Resource Sharing)를 사용하면 AEM이 아닌 웹 속성을 사용하여 AEM GraphQL API를 브라우저 기반의 클라이언트측 호출로 수행할 수 있습니다.
+Adobe Experience Manager as a Cloud Service의 CORS(Cross-Origin Resource Sharing)를 사용하면 AEM GraphQL API를 통해 브라우저 기반 클라이언트측 호출을 수행할 수 있도록 AEM이 아닌 웹 속성을 사용할 수 있습니다.
 
 >[!TIP]
 >
@@ -46,13 +46,14 @@ AEM CORS OSGi 구성 팩토리는 CORS HTTP 요청을 수락하기 위한 허용
 주요 구성 속성은 다음과 같습니다.
 
 + `alloworigin` 및/또는 `alloworiginregexp` AEM 웹에 연결된 클라이언트가 실행되는 원본을 지정합니다.
-+ `allowedpaths` 지정된 원본에서 허용되는 URL 경로 패턴을 지정합니다. AEM GraphQL 지속적인 쿼리를 지원하려면 다음 패턴을 사용합니다. `"/graphql/execute.json.*"`
-+ `supportedmethods` cors 요청에 대해 허용되는 HTTP 메서드를 지정합니다. 추가 `GET`를 사용하여 AEM GraphQL 지속적인 쿼리를 지원할 수 있습니다.
++ `allowedpaths` 지정된 원본에서 허용되는 URL 경로 패턴을 지정합니다.
+   + AEM GraphQL 지속적인 쿼리를 지원하려면 다음 패턴을 추가합니다. `/graphql/execute.json.*`
+   + 경험 조각을 지원하려면 다음 패턴을 추가합니다. `/content/experience-fragments/.*`
++ `supportedmethods` cors 요청에 대해 허용되는 HTTP 메서드를 지정합니다. 추가 `GET`: AEM GraphQL 지속된 쿼리(및 경험 조각)를 지원합니다.
 
 [CORS OSGi 구성에 대해 자세히 알아보십시오 .](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)
 
-
-이 예제 구성은 AEM GraphQL 지속적인 쿼리 사용을 지원합니다. 클라이언트 정의 GraphQL 쿼리를 사용하려면 GraphQL 엔드포인트 URL을 `allowedpaths` 및 `POST` to `supportedmethods`.
+이 예제 구성은 AEM GraphQL 지속적인 쿼리 사용을 지원합니다. 클라이언트 정의 GraphQL 쿼리를 사용하려면 다음에 GraphQL 끝점 URL을 추가하십시오. `allowedpaths` 및 `POST` to `supportedmethods`.
 
 + `/ui.config/src/main/content/jcr_root/apps/wknd-examples/osgiconfig/config.publish/com.adobe.granite.cors.impl.CORSPolicyImpl~graphql.cfg.json`
 
@@ -65,7 +66,8 @@ AEM CORS OSGi 구성 팩토리는 CORS HTTP 요청을 수락하기 위한 허용
     "http://localhost:.*"
   ],
   "allowedpaths": [
-    "/graphql/execute.json.*"
+    "/graphql/execute.json.*",
+    "/content/experience-fragments/.*"
   ],
   "supportedheaders": [
     "Origin",
@@ -77,7 +79,8 @@ AEM CORS OSGi 구성 팩토리는 CORS HTTP 요청을 수락하기 위한 허용
   ],
   "supportedmethods":[
     "GET",
-    "HEAD"
+    "HEAD",
+    "OPTIONS"
   ],
   "maxage:Integer": 1800,
   "supportscredentials": false,
@@ -92,7 +95,7 @@ AEM CORS OSGi 구성 팩토리는 CORS HTTP 요청을 수락하기 위한 허용
 + `supportedheaders` 또한 목록 `"Authorization"`
 + `supportscredentials` 가 로 설정되어 있습니다. `true`
 
-CORS 구성이 필요한 AEM GraphQL API에 대한 인증된 요청은 일반적으로 다음의 컨텍스트에서 발생하므로 드문 경우입니다 [서버 간 앱](../server-to-server.md) 따라서 CORS 구성이 필요하지 않습니다. 다음과 같이 CORS 구성이 필요한 브라우저 기반 앱 [단일 페이지 앱](../spa.md) 또는 [웹 구성 요소](../web-component.md)인 경우 일반적으로 자격 증명 의 보안을 유지하는 것이 어려우므로 권한 부여를 사용합니다.
+CORS 구성이 필요한 AEM GraphQL API에 대한 인증된 요청은 일반적으로 [서버 간 앱](../server-to-server.md) 따라서 CORS 구성이 필요하지 않습니다. 다음과 같이 CORS 구성이 필요한 브라우저 기반 앱 [단일 페이지 앱](../spa.md) 또는 [웹 구성 요소](../web-component.md)인 경우 일반적으로 자격 증명 의 보안을 유지하는 것이 어려우므로 권한 부여를 사용합니다.
 
 예를 들어, 이 두 설정은 `CORSPolicyImpl` OSGi 공장 구성:
 
@@ -152,7 +155,7 @@ $include "./default_clientheaders.any"
 
 ### CORS HTTP 응답 헤더 전달
 
-캐싱하도록 Dispatcher 팜 구성 **CORS HTTP 응답 헤더** 를 추가하여 AEM GraphQL 지속적인 쿼리가 Dispatcher 캐시에서 제공될 때 이러한 쿼리가 포함되어 있는지 확인합니다. `Access-Control-...` 헤더 목록에 헤더를 추가합니다.
+캐싱하도록 Dispatcher 팜 구성 **CORS HTTP 응답 헤더** 를 추가하여 AEM GraphQL 지속적인 쿼리를 Dispatcher 캐시에서 처리할 때 이러한 쿼리가 포함되어 있는지 확인합니다. `Access-Control-...` 헤더 목록에 헤더를 추가합니다.
 
 + `dispatcher/src/conf.dispatcher.d/available_farms/wknd.farm`
 
