@@ -1,20 +1,20 @@
 ---
-title: AEM 헤드리스 Tutorials
-description: Adobe Experience Manager을 헤드리스 CMS로 사용하는 방법에 대한 자습서 모음입니다.
+title: AEM에서 헤드리스에 대한 Tutorials
+description: Adobe Experience Manager을 위한 헤드리스 CMS 자습서 모음입니다. API, 프레임워크 및 예제 애플리케이션별로 자습서를 살펴보십시오.
 feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
 recommendations: disable, exclude
 exl-id: 57f88d79-9879-4bb9-a3db-9fec95e3a0bd
-source-git-commit: b20a29e67da0bcbf53ae8089a7cde0dfde800214
+source-git-commit: 567f0ae80d79796fc50994d31a64fb0ca79879f6
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '524'
 ht-degree: 7%
 
 ---
 
-# AEM 헤드리스 Tutorials{#aem-headless-tutorials}
+# AEM에서 헤드리스에 대한 Tutorials{#aem-headless-tutorials}
 
 Adobe Experience Manager(AEM)에는 헤드리스 엔드포인트를 정의하고 콘텐츠를 JSON으로 전달하는 여러 가지 옵션이 있습니다. 실습 위주의 자습서를 통해 다양한 옵션을 사용하는 방법을 탐색하고 사용자에게 적합한 옵션을 선택할 수 있습니다.
 
