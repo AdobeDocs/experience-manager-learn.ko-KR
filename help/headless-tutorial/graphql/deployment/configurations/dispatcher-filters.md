@@ -1,5 +1,5 @@
 ---
-title: AEM GraphQL에 대한 디스패처 필터
+title: AEM GraphQL용 Dispatcher 필터
 description: AEM GraphQL에서 사용할 AEM Publish Dispatcher 필터를 구성하는 방법을 알아봅니다.
 version: Cloud Service
 feature: GraphQL API
@@ -8,9 +8,9 @@ role: Developer, Architect
 level: Intermediate
 kt: 10829
 thumbnail: kt-10829.jpg
-source-git-commit: b98f567e05839db78a1a0a593c106b87af931a49
+source-git-commit: 442020d854d8f42c5d8a1340afd907548875866e
 workflow-type: tm+mt
-source-wordcount: '196'
+source-wordcount: '211'
 ht-degree: 2%
 
 ---
@@ -39,11 +39,16 @@ AEM 게시 디스패처 필터 구성은 AEM에 도달하기 위해 허용되는
 추가 `allow` url 패턴을 사용하는 규칙 `/graphql/execute.json/*`, 및 파일 ID(예: `/0600`는 예제 팜 파일에서 고유합니다.)
 이렇게 하면 다음과 같이 지속된 쿼리 종단점에 HTTP GET 요청을 수행할 수 있습니다 `HTTP GET /graphql/execute.json/wknd-shared/adventures-all` 를 통해 AEM Publish에 연결할 수 있습니다.
 
+AEM 헤드리스 경험에서 경험 조각을 사용하는 경우 이러한 경로에 대해 동일한 작업을 수행합니다.
+
 + `dispatcher/src/conf.dispatcher.d/filters/filters.any`
 
 ```
 ...
-/0600 { /type "allow" /url "/graphql/execute.json/*" }
+# Allow headless requests for Persisted Query endpoints
+/0600 { /type "allow" /method '(POST|OPTIONS)' /url "/graphql/execute.json/*" }
+# Allow headless requests for Experience Fragments
+/0601 { /type "allow" /method '(GET|OPTIONS)' /url "/content/experience-fragments/*" }
 ...
 ```
 
