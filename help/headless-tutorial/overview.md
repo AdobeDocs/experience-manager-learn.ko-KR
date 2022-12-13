@@ -7,9 +7,9 @@ role: Developer
 level: Beginner
 recommendations: disable, exclude
 exl-id: 57f88d79-9879-4bb9-a3db-9fec95e3a0bd
-source-git-commit: 567f0ae80d79796fc50994d31a64fb0ca79879f6
+source-git-commit: 758fa40240b12f5bfa83ac5c0300b71f41e2326d
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '503'
 ht-degree: 7%
 
 ---
@@ -21,11 +21,6 @@ Adobe Experience Manager(AEM)에는 헤드리스 엔드포인트를 정의하고
 >[!TIP]
 >
 >이 자습서 컬렉션은 다음과 같은 사용자를 위해 설계되었습니다 **다음을 통해 학습**. 처음부터 학습 개념을 선호하는 경우 다음을 확인하십시오 [AEM Headless Developer 여정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/developer/overview.html). 이 자습서와 여정은 서로 보완합니다.
-
->[!CONTEXTUALHELP]
->id="aemcloud_sites_trial_admin_content_fragments_edit_inline_content"
->title="인라인 콘텐츠 편집"
->abstract="헤드리스 기능 세트를 사용하여 참조되는 페이지에서 바로 컨텐츠를 편집하는 방법을 배웁니다."
 
 ## API별 Tutorials
 

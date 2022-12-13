@@ -1,6 +1,6 @@
 ---
 title: React 앱 - AEM Headless 예
-description: 예제 애플리케이션은 AEM(Adobe Experience Manager)의 헤드리스 기능을 살펴보는 좋은 방법입니다. 이 React 응용 프로그램은 지속적인 쿼리를 사용하여 AEM GraphQL API를 사용하여 컨텐츠를 쿼리하는 방법을 보여 줍니다.
+description: 예제 애플리케이션은 AEM(Adobe Experience Manager)의 헤드리스 기능을 살펴보는 좋은 방법입니다. 이 React 애플리케이션은 지속되는 쿼리를 사용하여 AEM GraphQL API를 사용하여 컨텐츠를 쿼리하는 방법을 보여줍니다.
 version: Cloud Service
 mini-toc-levels: 1
 kt: 10715
@@ -11,27 +11,22 @@ role: Developer
 level: Beginner
 last-substantial-update: 2022-11-09T00:00:00Z
 exl-id: b1ab2a13-8b0e-4d7f-82b5-78b1dda248ba
-source-git-commit: c5f94b12a9af50bc4e7db693d6560d120ab8bf3b
+source-git-commit: 758fa40240b12f5bfa83ac5c0300b71f41e2326d
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '919'
 ht-degree: 5%
 
 ---
 
 # React 앱{#react-app}
 
-예제 애플리케이션은 AEM(Adobe Experience Manager)의 헤드리스 기능을 살펴보는 좋은 방법입니다. 이 React 응용 프로그램은 지속적인 쿼리를 사용하여 AEM GraphQL API를 사용하여 컨텐츠를 쿼리하는 방법을 보여 줍니다. JavaScript용 AEM 헤드리스 클라이언트는 앱을 구동하는 GraphQL 지속적인 쿼리를 실행하는 데 사용됩니다.
+예제 애플리케이션은 AEM(Adobe Experience Manager)의 헤드리스 기능을 살펴보는 좋은 방법입니다. 이 React 애플리케이션은 지속되는 쿼리를 사용하여 AEM GraphQL API를 사용하여 컨텐츠를 쿼리하는 방법을 보여줍니다. JavaScript용 AEM Headless Client는 앱을 구동하는 GraphQL 지속적인 쿼리를 실행하는 데 사용됩니다.
 
 ![AEM Headless를 사용하여 반응형 앱](./assets/react-app/react-app.png)
 
 보기 [GitHub의 소스 코드](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app)
 
 A [전체 단계별 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=ko-KR) 이 React 앱이 빌드된 방법을 설명합니다.
-
->[!CONTEXTUALHELP]
->id="aemcloud_sites_trial_admin_content_fragments_react_app"
->title="샘플 React 앱에서 컨텐츠 사용자 지정"
->abstract="헤드리스 기능 세트를 사용하여 컨텐츠를 사용자 지정하는 방법을 배우는 데 사용할 수 있는 최신 React 앱을 설정했습니다."
 
 ## 사전 요구 사항 {#prerequisites}
 
@@ -96,12 +91,12 @@ React 응용 프로그램은 __AEM 게시__ 그러나 React 애플리케이션�
 
 ## 코드
 
-다음은 React 애플리케이션이 빌드되는 방법, GraphQL 지속적인 쿼리를 사용하여 컨텐츠를 검색하기 위해 AEM 헤드리스에 연결하는 방법 및 데이터가 표시되는 방법에 대한 요약입니다. 전체 코드는 [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app).
+다음은 React 애플리케이션이 빌드되는 방법, AEM Headless에 연결하여 GraphQL 지속적인 쿼리를 사용하여 컨텐츠를 검색하는 방법 및 데이터가 표시되는 방법에 대한 요약입니다. 전체 코드는 [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app).
 
 
 ### 지속되는 쿼리
 
-AEM Headless 우수 사례에 따라 React 애플리케이션은 AEM GraphQL 지속적인 쿼리를 사용하여 모험 데이터를 쿼리합니다. 이 응용 프로그램에서는 다음과 같은 두 가지 지속적인 쿼리를 사용합니다.
+AEM Headless 우수 사례에 따라 React 애플리케이션은 AEM GraphQL 지속된 쿼리를 사용하여 모험 데이터를 쿼리합니다. 이 응용 프로그램에서는 다음과 같은 두 가지 지속적인 쿼리를 사용합니다.
 
 + `wknd/adventures-all` AEM의 모든 모험을 반환하는 질의가 완료된 속성 집합을 사용하여 유지됩니다. 이렇게 지속된 쿼리가 초기 보기의 모험 목록을 구동합니다.
 
@@ -186,11 +181,11 @@ query($slug: String!) {
 
 ### GraphQL 지속적인 쿼리 실행
 
-AEM 지속적인 쿼리는 HTTP GET을 통해 실행되므로 [JavaScript용 AEM Headless 클라이언트](https://github.com/adobe/aem-headless-client-js) 에 사용됩니다. [지속된 GraphQL 쿼리 실행](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md#aemheadlessrunpersistedquerypath-variables-options--promiseany) AEM에 대해 를 설정하고 모험 컨텐츠를 앱에 로드합니다.
+AEM 지속적인 쿼리는 HTTP GET을 통해 실행되므로 [JavaScript용 AEM Headless 클라이언트](https://github.com/adobe/aem-headless-client-js) 에 사용됩니다. [지속되는 GraphQL 쿼리 실행](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md#aemheadlessrunpersistedquerypath-variables-options--promiseany) AEM에 대해 를 설정하고 모험 컨텐츠를 앱에 로드합니다.
 
 지속되는 각 쿼리에는 해당하는 React가 있습니다 [useEffect](https://reactjs.org/docs/hooks-effect.html) 후크 `src/api/usePersistedQueries.js`를 비동기적으로 호출하는 AEM HTTP GET의 지속된 쿼리 종료 지점을 호출하고 모험 데이터를 반환합니다.
 
-각 함수는 `aemHeadlessClient.runPersistedQuery(...)`, 지속형 GraphQL 쿼리를 실행합니다.
+각 함수는 `aemHeadlessClient.runPersistedQuery(...)`: 지속형 GraphQL 쿼리를 실행합니다.
 
 ```js
 // src/api/usePersistedQueries.js
