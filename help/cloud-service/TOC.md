@@ -5,9 +5,9 @@ breadcrumb-title: AEM as a Cloud Service 튜토리얼
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: d5645e975aa290392348cc69d078b24921a7d13a
+source-git-commit: a7b32982b547eb292384d2ebde80ba745091702a
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '866'
 ht-degree: 21%
 
 ---
@@ -53,6 +53,18 @@ ht-degree: 21%
    + [로컬 AEM 런타임](./local-development-environment/aem-runtime.md)
    + [로컬 Dispatcher 도구](./local-development-environment/dispatcher-tools.md)
 + 개발{#developing}
+   + 확장성{#extensibility}
+      + 컨텐츠 조각 콘솔{#content-fragments}
+         + [개요](./developing/extensibility/content-fragments/overview.md)
+         + [확장 등록](./developing/extensibility/content-fragments/extension-registration.md)
+         + [헤더 메뉴](./developing/extensibility/content-fragments/header-menu.md)
+         + [작업 표시줄](./developing/extensibility/content-fragments/action-bar.md)
+         + [양식](./developing/extensibility/content-fragments/modal.md)
+         + [Adobe I/O Runtime 작업](./developing/extensibility/content-fragments/runtime-action.md)
+         + [테스트](./developing/extensibility/content-fragments/test.md)
+         + [배포](./developing/extensibility/content-fragments/deploy.md)
+         + 예시 확장{#example-extensions}
+            + [벌크 속성 업데이트 확장](./developing/extensibility/content-fragments/example-extensions/bulk-property-update.md)
    + 개발 기본 사항{#basics}
       + [AEM SDK](./developing/basics/aem-sdk.md)
       + [로컬 개발 환경](./developing/basics/local-development-environment.md)
