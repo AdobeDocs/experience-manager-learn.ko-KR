@@ -5,7 +5,7 @@ breadcrumb-title: AEM as a Cloud Service 튜토리얼
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 79804ac1ec18f8ac4815bd5ee6f309ef85110cb9
+source-git-commit: 9fd2240cace83c27083f8209e9cec21640718989
 workflow-type: tm+mt
 source-wordcount: '868'
 ht-degree: 20%
@@ -85,7 +85,7 @@ ht-degree: 20%
       + [OCD를 사용한 OSGi 구성](./developing/osgi-services/configurations-ocd.md)
    + 고급{#advanced}
       + [서비스 사용자](./developing/advanced/service-users.md)
-      + [고객 네임스페이스](./developing/advanced/custom-namespaces.md)
+      + [사용자 지정 네임스페이스](./developing/advanced/custom-namespaces.md)
       + [페이지 변형 캐싱](./developing/advanced/variant-caching.md)
    + [AEM SDK API JavaDocs](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html)
 + AEM 디버깅{#debugging}
@@ -162,7 +162,6 @@ ht-degree: 20%
       + [Cloud Acceleration Manager 탐색](./migration/cloud-acceleration-manager/navigating.md)
       + [Cloud Acceleration Manager 사용](./migration/cloud-acceleration-manager/using.md)
 + 양식{#forms}
-
    + Forms as a Cloud Service 개발{#developing-for-cloud-service}
       + [시작하기](./forms/developing-for-cloud-service/getting-started.md)
       + [IntelliJ 설치](./forms/developing-for-cloud-service/intellij-set-up.md)
