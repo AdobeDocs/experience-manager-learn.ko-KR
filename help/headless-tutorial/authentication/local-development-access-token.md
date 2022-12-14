@@ -1,6 +1,6 @@
 ---
 title: 로컬 개발 액세스 토큰
-description: AEM 로컬 개발 액세스 토큰은 HTTP를 통해 AEM Author 또는 Publish 서비스와 프로그래밍 방식으로 상호 작용하는 AEM as a Cloud Service와의 통합 개발을 가속화하는 데 사용됩니다.
+description: AEM 로컬 개발 액세스 토큰은 HTTP를 통해 AEM 작성자 또는 게시 서비스와 프로그래밍 방식으로 상호 작용하는 AEM as a Cloud Service와의 통합 개발을 가속화하는 데 사용됩니다.
 version: Cloud Service
 doc-type: tutorial
 topics: Development, Security
@@ -13,9 +13,9 @@ topic: Headless, Integrations
 role: Developer
 level: Intermediate, Experienced
 exl-id: 197444cb-a68f-4d09-9120-7b6603e1f47d
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: ef11609fe6ab266102bdf767a149284b9b912f98
 workflow-type: tm+mt
-source-wordcount: '1068'
+source-wordcount: '1062'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ AEM as a Cloud Service에 프로그래밍 방식으로 액세스해야 하는 �
 
 로컬 개발 액세스 토큰은 해당 권한과 함께 토큰을 생성한 사용자로 AEM 작성자 및 게시 서비스에 대한 액세스를 제공합니다. 개발 토큰이지만 이 토큰을 공유하거나 소스 제어에 저장하지 마십시오.
 
-1. in [Adobe AdminConsole](https://adminconsole.adobe.com/) 개발자인 사용자가
+1. in [Adobe Admin Console](https://adminconsole.adobe.com/) 개발자인 사용자가
    + __Cloud Manager - 개발자__ IMS 제품 프로필 (AEM 개발자 콘솔에 대한 액세스 권한을 부여합니다)
    + 다음 중 하나를 수행합니다. __AEM 관리자__ 또는 __AEM 사용자__ 액세스 토큰이 통합되는 AEM 환경의 서비스용 IMS 제품 프로필
    + Sandbox AEM as a Cloud Service 환경에는 __AEM 관리자__ 또는 __AEM 사용자__ 제품 프로필
@@ -59,7 +59,7 @@ AEM as a Cloud Service에 프로그래밍 방식으로 액세스해야 하는 �
 
 ### 샘플 외부 애플리케이션
 
-간단한 외부 JavaScript 응용 프로그램을 만들어 로컬 개발자 액세스 토큰을 사용하여 HTTPS를 통해 AEM as a Cloud Service에 프로그래밍 방식으로 액세스하는 방법을 설명하겠습니다. 이는 _임의_ 프레임워크나 언어와 관계없이 AEM 외부에서 실행되는 응용 프로그램 또는 시스템은 액세스 토큰을 사용하여 프로그래밍 방식으로 AEM as a Cloud Service에 인증하고 액세스할 수 있습니다. 에서 [다음 섹션](./service-credentials.md) 프로덕션 사용을 위한 토큰을 생성하는 방법을 지원하도록 이 응용 프로그램 코드를 업데이트합니다.
+간단한 외부 JavaScript 응용 프로그램을 만들어 로컬 개발자 액세스 토큰을 사용하여 HTTPS를 통해 AEM as a Cloud Service에 프로그래밍 방식으로 액세스하는 방법을 설명하겠습니다. 이는 _임의_ 프레임워크나 언어와 관계없이 AEM 외부에서 실행되는 응용 프로그램 또는 시스템은 액세스 토큰을 사용하여 프로그래밍 방식으로 AEM as a Cloud Service에 인증하고 액세스할 수 있습니다. 에서 [다음 섹션](./service-credentials.md), 이 애플리케이션 코드를 업데이트하여 프로덕션에서 사용할 토큰을 생성하는 방법을 지원합니다.
 
 이 샘플 애플리케이션은 명령줄에서 실행되며 AEM Assets HTTP API를 사용하여 AEM 자산 메타데이터를 다음 플로우를 사용하여 업데이트합니다.
 
@@ -96,7 +96,7 @@ AEM as a Cloud Service에 프로그래밍 방식으로 액세스해야 하는 �
    * Application entry point function
    */
    (async () => {
-       console.log('Example usage: node index.js aem=https://author-p1234-e5678.adobeaemcloud.com propertyName=metadata/dc:rights "propertyValue=WKND Limited Use" folder=/wknd/en/adventures/napa-wine-tasting file=credentials-file.json' );
+       console.log('Example usage: node index.js aem=https://author-p1234-e5678.adobeaemcloud.com propertyName=metadata/dc:rights "propertyValue=WKND Limited Use" folder=/wknd-shared/en/adventures/napa-wine-tasting file=credentials-file.json' );
    
        // Parse the command line parameters
        params = getCommandLineParams();
@@ -173,7 +173,7 @@ AEM as a Cloud Service에 프로그래밍 방식으로 액세스해야 하는 �
    * - aem = The AEM as a Cloud Service hostname to connect to.
    *              Example: https://author-p12345-e67890.adobeaemcloud.com
    * - folder = The asset folder to update assets in. Note that the Assets HTTP API do NOT use the JCR `/content/dam` path prefix.
-   *              Example: '/wknd/en/adventures/napa-wine-tasting'
+   *              Example: '/wknd-shared/en/adventures/napa-wine-tasting'
    * - propertyName = The asset property name to update. Note this is relative to the [dam:Asset]/jcr:content node of the asset.
    *              Example: metadata/dc:rights
    * - propertyValue = The value to update the asset property (specified by propertyName) with.
@@ -223,14 +223,14 @@ AEM as a Cloud Service에 프로그래밍 방식으로 액세스해야 하는 �
    })...
    ```
 
-   AEM as a Cloud Service에 대한 모든 HTTP 요청은 Authorization 헤더에서 Bearer 액세스 토큰을 설정해야 합니다. 각 AEM as a Cloud Service 환경에는 자체 액세스 토큰이 필요합니다. 개발 액세스 토큰은 스테이지나 프로덕션에서 작동하지 않으며, 스테이지는 개발 또는 프로덕션에서 작동하지 않으며, 프로덕션은 개발 또는 스테이지에서 작동하지 않습니다!
+   AEM as a Cloud Service에 대한 모든 HTTP 요청은 Authorization 헤더에서 Bearer 액세스 토큰을 설정해야 합니다. 각 AEM as a Cloud Service 환경에는 자체 액세스 토큰이 필요합니다. 개발 액세스 토큰이 스테이지나 프로덕션에서 작동하지 않으며, 스테이지의 액세스 토큰이 개발 또는 프로덕션에서 작동하지 않으며, 프로덕션의 기능이 개발 또는 스테이지에서 작동하지 않습니다!
 
 1. 명령줄을 사용하여 프로젝트의 루트에서 응용 프로그램을 실행하여 다음 매개 변수를 전달합니다.
 
    ```shell
    $ node index.js \
        aem=https://author-p1234-e5678.adobeaemcloud.com \
-       folder=/wknd/en/adventures/napa-wine-tasting \
+       folder=/wknd-shared/en/adventures/napa-wine-tasting \
        propertyName=metadata/dc:rights \
        propertyValue="WKND Limited Use" \
        file=local_development_token.json
@@ -238,8 +238,8 @@ AEM as a Cloud Service에 프로그래밍 방식으로 액세스해야 하는 �
 
    다음 매개 변수가 전달됩니다.
 
-   + `aem`: 애플리케이션이 상호 작용하는 AEM as a Cloud Service 환경의 구성표 및 호스트 이름(예: `https://author-p1234-e5678.adobeaemcloud.com`).
-   + `folder`: 자산이 로 업데이트된 자산 폴더 경로 `propertyValue`; 추가 안 함 `/content/dam` 접두어(예: `/wknd/en/adventures/napa-wine-tasting`)
+   + `aem`: 애플리케이션이 와 상호 작용하는 AEM as a Cloud Service 환경의 구성표 및 호스트 이름(예: `https://author-p1234-e5678.adobeaemcloud.com`).
+   + `folder`: 자산이 로 업데이트된 자산 폴더 경로 `propertyValue`; 추가 안 함 `/content/dam` 접두어(예: `/wknd-shared/en/adventures/napa-wine-tasting`)
    + `propertyName`: 업데이트할 자산 속성 이름(상대적) `[dam:Asset]/jcr:content` (예) `metadata/dc:rights`).
    + `propertyValue`: 값을 설정할 값 `propertyName` 대상 공백이 있는 값은 `"` (예) `"WKND Limited Use"`)
    + `file`: AEM 개발자 콘솔에서 다운로드한 JSON 파일의 상대 파일 경로입니다.
@@ -247,11 +247,11 @@ AEM as a Cloud Service에 프로그래밍 방식으로 액세스해야 하는 �
    업데이트된 각 자산에 대한 애플리케이션 결과 출력을 성공적으로 실행합니다.
 
    ```shell
-   200 - OK @ https://author-p1234-e5678.adobeaemcloud.com/api/assets/wknd/en/adventures/napa-wine-tasting.json
-   200 - OK @ https://author-p1234-e5678.adobeaemcloud.com/api/assets/wknd/en/adventures/napa-wine-tasting/AdobeStock_277654931.jpg.json
-   200 - OK @ https://author-p1234-e5678.adobeaemcloud.com/api/assets/wknd/en/adventures/napa-wine-tasting/AdobeStock_239751461.jpg.json
-   200 - OK @ https://author-p1234-e5678.adobeaemcloud.com/api/assets/wknd/en/adventures/napa-wine-tasting/AdobeStock_280313729.jpg.json
-   200 - OK @ https://author-p1234-e5678.adobeaemcloud.com/api/assets/wknd/en/adventures/napa-wine-tasting/AdobeStock_286664352.jpg.json
+   200 - OK @ https://author-p1234-e5678.adobeaemcloud.com/api/assets/wknd-shared/en/adventures/napa-wine-tasting.json
+   200 - OK @ https://author-p1234-e5678.adobeaemcloud.com/api/assets/wknd-shared/en/adventures/napa-wine-tasting/AdobeStock_277654931.jpg.json
+   200 - OK @ https://author-p1234-e5678.adobeaemcloud.com/api/assets/wknd-shared/en/adventures/napa-wine-tasting/AdobeStock_239751461.jpg.json
+   200 - OK @ https://author-p1234-e5678.adobeaemcloud.com/api/assets/wknd-shared/en/adventures/napa-wine-tasting/AdobeStock_280313729.jpg.json
+   200 - OK @ https://author-p1234-e5678.adobeaemcloud.com/api/assets/wknd-shared/en/adventures/napa-wine-tasting/AdobeStock_286664352.jpg.json
    ```
 
 ### AEM에서 메타데이터 업데이트 확인
@@ -269,6 +269,6 @@ AEM as a Cloud Service 환경에 로그인하여 메타데이터가 업데이트
 
 ## 다음 단계
 
-로컬 개발 토큰을 사용하여 AEM as a Cloud Service에 프로그래밍 방식으로 액세스했으므로 서비스 자격 증명을 사용하여 처리할 애플리케이션을 업데이트해야 프로덕션 컨텍스트에서 사용할 수 있습니다.
+이제 로컬 개발 토큰을 사용하여 프로그래밍 방식으로 AEM as a Cloud Service에 액세스했습니다. 그런 다음 서비스 자격 증명을 사용하여 처리할 애플리케이션을 업데이트해야 프로덕션 컨텍스트에서 사용할 수 있습니다.
 
 + [서비스 자격 증명을 사용하는 방법](./service-credentials.md)
