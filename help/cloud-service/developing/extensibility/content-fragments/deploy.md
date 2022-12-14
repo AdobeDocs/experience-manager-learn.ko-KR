@@ -9,9 +9,9 @@ level: Beginner
 recommendations: noDisplay, noCatalog
 kt: 11603
 last-substantial-update: 2022-12-01T00:00:00Z
-source-git-commit: a7b32982b547eb292384d2ebde80ba745091702a
+source-git-commit: f19cdc7d551f20b35550e7d25bd168a2eaa43b6a
 workflow-type: tm+mt
-source-wordcount: '802'
+source-wordcount: '804'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ Adobe Developer 콘솔 작업 공간에는 AEM as a Cloud Service 환경 유형�
 1. 선택 __승인을 위한 제출__
 1. 양식을 작성하여 제출하면 필요에 따라 필드를 업데이트합니다.
 
-+ 아이콘이 필요합니다. 아이콘이 없는 경우 [이 아이콘](./assets/deploy/icon.png).
+아이콘이 필요합니다. 아이콘이 없는 경우 [이 아이콘](./assets/deploy/icon.png).
 
 ### 배포 요청 승인
 

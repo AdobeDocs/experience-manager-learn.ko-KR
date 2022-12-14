@@ -9,7 +9,7 @@ level: Beginner
 recommendations: noDisplay, noCatalog
 kt: 11603
 last-substantial-update: 2022-12-01T00:00:00Z
-source-git-commit: a7b32982b547eb292384d2ebde80ba745091702a
+source-git-commit: f19cdc7d551f20b35550e7d25bd168a2eaa43b6a
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 0%
@@ -55,15 +55,15 @@ function App(props) {
 `ExtensionRegistration.js` 확장의 색인 경로를 통해 즉시 로드되어야 하며 다음을 정의하여 확장의 등록 지점을 수행해야 합니다.
 
 1. 확장 유형; a [헤더 메뉴](./header-menu.md) 또는 [작업 표시줄](./action-bar.md) 버튼을 클릭합니다.
-   + [헤더 메뉴](./header-menu.md) 확장은 `headerMenu` 속성 `methods`.
-   + [작업 표시줄](./action-bar.md) 확장은 `actionBar` 속성 `methods`.
+   + [헤더 메뉴](./header-menu.md#extension-registration) 확장은 `headerMenu` 속성 `methods`.
+   + [작업 표시줄](./action-bar.md#extension-registration) 확장은 `actionBar` 속성 `methods`.
 1. 확장 버튼의 정의(에서) `getButton()` 함수 위에 있어야 합니다. 이 함수는 필드가 있는 개체를 반환합니다.
    + `id` 는 버튼의 고유 ID입니다
    + `label` AEM 컨텐츠 조각 콘솔에서 확장 단추의 레이블입니다.
    + `icon` 는 AEM 컨텐츠 조각 콘솔에서 확장 단추의 아이콘입니다. 아이콘은 다음과 같습니다 [React 스펙트럼](https://spectrum.adobe.com/page/icons/) 아이콘 이름. 공백이 제거됨.
 1. 에 정의된 단추의 클릭 처리기입니다. `onClick()` 함수 위에 있어야 합니다.
-   + [헤더 메뉴](./header-menu.md) 확장은 클릭 처리기에 매개 변수를 전달하지 않습니다.
-   + [작업 표시줄](./action-bar.md) 확장은 `selections` 매개 변수.
+   + [헤더 메뉴](./header-menu.md#extension-registration) 확장은 클릭 처리기에 매개 변수를 전달하지 않습니다.
+   + [작업 표시줄](./action-bar.md#extension-registration) 확장은 `selections` 매개 변수.
 
 ### 헤더 메뉴 확장
 

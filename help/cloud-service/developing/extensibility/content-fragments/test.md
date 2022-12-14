@@ -9,7 +9,7 @@ level: Beginner
 recommendations: noDisplay, noCatalog
 kt: 11603
 last-substantial-update: 2022-12-01T00:00:00Z
-source-git-commit: a7b32982b547eb292384d2ebde80ba745091702a
+source-git-commit: f19cdc7d551f20b35550e7d25bd168a2eaa43b6a
 workflow-type: tm+mt
 source-wordcount: '514'
 ht-degree: 0%
@@ -78,7 +78,10 @@ AEM 컨텐츠 조각 콘솔 확장은 확장이 속한 Adobe 조직의 AEM as a 
 
 1. AEM 컨텐츠 조각 콘솔은 로컬 App Builder 앱이 실행 중인 한 테스트를 위해 확장에 삽입된 로컬 버전과 함께 로드되고, 핫 재로드 변경 사항이 제공됩니다.
 
-이 방법을 사용하는 경우 개발 중인 확장은 경험에만 영향을 주며 AEM 컨텐츠 조각 콘솔의 다른 모든 사용자는 삽입된 확장 없이 경험에 액세스할 수 있습니다.
+>[!IMPORTANT]
+>
+>이 방법을 사용하는 경우 개발 중인 확장은 경험에만 영향을 주며 AEM 컨텐츠 조각 콘솔의 다른 모든 사용자는 삽입된 확장 없이 경험에 액세스할 수 있습니다.
+
 
 ## 테스트 단계 빌드
 

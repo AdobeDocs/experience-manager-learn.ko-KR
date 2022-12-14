@@ -10,9 +10,9 @@ recommendations: noDisplay
 kt: 11603
 thumbnail: KT-11603.png
 last-substantial-update: 2022-12-09T00:00:00Z
-source-git-commit: a7b32982b547eb292384d2ebde80ba745091702a
+source-git-commit: f19cdc7d551f20b35550e7d25bd168a2eaa43b6a
 workflow-type: tm+mt
-source-wordcount: '725'
+source-wordcount: '726'
 ht-degree: 4%
 
 ---
@@ -51,7 +51,7 @@ Adobe Developer에는 AEM 컨텐츠 조각 콘솔 확장에 대한 개발자 세
 
 ## 확장 개발
 
-AEM as a Cloud Service용 AEM 컨텐츠 조각 콘솔 확장을 생성, 개발 및 배포하는 방법에 대해 알아보려면 아래 설명된 단계를 따르십시오.
+AEM as a Cloud Service용 AEM 컨텐츠 조각 콘솔 확장을 생성, 개발 및 배포하는 방법을 배우려면 아래 설명된 단계를 따르십시오.
 
 <div class="columns is-multiline">
     <!-- Create Adobe Developer Project -->
