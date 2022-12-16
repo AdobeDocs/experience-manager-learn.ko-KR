@@ -7,9 +7,9 @@ breadcrumb-title: AEM Forms 튜토리얼
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: 09b00a7edf2f4c90c6cb2178161c6d7e0c9432e8
+source-git-commit: 0e27907066c7d688549a980ccd17b3f17d74b60b
 workflow-type: tm+mt
-source-wordcount: '1741'
+source-wordcount: '1754'
 ht-degree: 3%
 
 ---
@@ -214,6 +214,13 @@ ht-degree: 3%
    + [2부 - 양식 제출 시 ACS 프로파일 생성](aem-forms-with-adobe-campaign/parttwo.md)
    + [Part3 - ACS 프로필 정보를 사용한 양식 미리 채우기](aem-forms-with-adobe-campaign/partthree.md)
    + [Part4 - 양식 데이터 모델을 사용하여 ACS 프로파일 생성](aem-forms-with-adobe-campaign/partfour.md)
+
++ 시작 키트 {#welcome-kit}
+   + [소개](welcome-kit/introduction.md)
+   + [시작 키트 구성 요소 만들기](welcome-kit/create-welcomekit-component.md)
+   + [워크플로우 구성 요소 만들기](welcome-kit/create-workflow-component.md)
+   + [솔루션 테스트](welcome-kit/testing-the-solution.md)
+
 
 + 문서 서비스 {#document-services}
    + [PDF forms 유형](document-services/pdf-forms-and-documents.md)
