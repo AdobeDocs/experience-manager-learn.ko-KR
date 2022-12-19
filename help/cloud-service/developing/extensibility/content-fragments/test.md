@@ -9,9 +9,9 @@ level: Beginner
 recommendations: noDisplay, noCatalog
 kt: 11603
 last-substantial-update: 2022-12-01T00:00:00Z
-source-git-commit: f19cdc7d551f20b35550e7d25bd168a2eaa43b6a
+source-git-commit: 56e2cbadaceb9961de28454bfbed56a98df34c44
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '582'
 ht-degree: 0%
 
 ---
@@ -66,10 +66,12 @@ AEM 컨텐츠 조각 콘솔 확장은 확장이 속한 Adobe 조직의 AEM as a 
    + `&devMode=true`
    + `&ext=<LOCAL APPLICATION URL>`일반적으로 `&ext=https://localhost:9080`.
 
+   위의 두 쿼리 매개 변수(`devMode` 및 `ext`) __첫 번째__ 컨텐츠 조각 콘솔에서 해시 경로( )를 사용하므로 URL의 쿼리 매개 변수`#/@wknd/aem/...`). `#` 작동하지 않습니다.
+
    테스트 URL은 다음과 같아야 합니다.
 
    ```
-   https://experience.adobe.com/?repo=author-p1234-e5678.adobeaemcloud.com#/@wknd/aem/cf/admin&devMode=true&ext=https://localhost:9080
+   https://experience.adobe.com/?devMode=true&ext=https://localhost:9080&repo=author-p1234-e5678.adobeaemcloud.com#/@wknd/aem/cf/admin
    ```
 
 1. 테스트 URL을 복사하여 브라우저에 붙여넣습니다.
@@ -112,10 +114,12 @@ AEM 컨텐츠 조각 콘솔 확장은 확장이 속한 Adobe 조직의 AEM as a 
    + `&devMode=true`
    + `&ext=<DEPLOYED APPLICATION URL>`
 
+   위의 두 쿼리 매개 변수(`devMode` 및 `ext`) __첫 번째__ 컨텐츠 조각 콘솔에서 해시 경로( )를 사용하므로 URL의 쿼리 매개 변수`#/@wknd/aem/...`). `#` 작동하지 않습니다.
+
    테스트 URL은 다음과 같아야 합니다.
 
    ```
-   https://experience.adobe.com/?repo=author-p1234-e5678.adobeaemcloud.com#/@wknd/aem/cf/admin&devMode=true&ext=https://98765-123aquarat.adobeio-static.net/index.html
+   https://experience.adobe.com/?devMode=true&ext=https://98765-123aquarat.adobeio-static.net/index.html&repo=author-p1234-e5678.adobeaemcloud.com#/@wknd/aem/cf/admin
    ```
 
 1. 테스트 URL을 복사하여 브라우저에 붙여넣습니다.
