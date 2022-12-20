@@ -7,9 +7,9 @@ breadcrumb-title: AEM Forms 튜토리얼
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: 0e27907066c7d688549a980ccd17b3f17d74b60b
+source-git-commit: 8f17e98c56c78824e8850402e3b79b3d47901c0b
 workflow-type: tm+mt
-source-wordcount: '1754'
+source-wordcount: '1759'
 ht-degree: 3%
 
 ---
@@ -227,6 +227,7 @@ ht-degree: 3%
    + [적응형 양식에 pdf 포함](document-services/embed-pdf-inline.md)
    + [회전판 구성 요소의 PDF](document-services/display-pdf-in-carousel.md)
    + [AEM Forms에서 어셈블러 서비스 사용](document-services/using-assembler-service-in-aem-forms.md)
+   + [XDP 결합과 어셈블러 서비스](document-services/xdp-stitching-using-assembler-service.md)
    + [AEM Forms에서 감시 폴더 사용](document-services/watched-folders-document-services-article-use.md)
    + [AEM Forms에서 바코드 서비스 사용](document-services/barcode-service-adaptive-forms-article.md)
    + [AEM Forms에서 PDFG 서비스 사용](document-services/using-pdfg-in-aem-forms.md)
