@@ -9,7 +9,7 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 31416399-6a4e-47d1-8ed8-be842a01a727
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: c34c27955dbc084620ac4dd811ba4051ea83f447
 workflow-type: tm+mt
 source-wordcount: '1835'
 ht-degree: 0%
@@ -344,7 +344,7 @@ A [webpack-dev-server](https://webpack.js.org/configuration/dev-server/) 는 SPA
 
 ## 축하합니다! {#congratulations}
 
-축하합니다. SPA을 업데이트하고 AEM와의 통합을 탐색했습니다! 를 사용하여 AEM JSON 모델 API에 대해 SPA을 개발하는 방법을 알고 있습니다. **webpack-dev-server**.
+축하합니다. SPA을 업데이트하고 AEM와의 통합을 탐색했습니다! 이제 를 사용하여 AEM JSON 모델 API에 대해 SPA을 개발하는 방법을 알 수 있습니다. **webpack-dev-server**.
 
 ### 다음 단계 {#next-steps}
 
