@@ -10,9 +10,9 @@ recommendations: noDisplay
 kt: 11603
 thumbnail: KT-11603.png
 last-substantial-update: 2022-12-09T00:00:00Z
-source-git-commit: f19cdc7d551f20b35550e7d25bd168a2eaa43b6a
+source-git-commit: 8b683fdcea05859151b929389f7673075c359141
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '774'
 ht-degree: 4%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 4%
 
 AEM 컨텐츠 조각 콘솔 확장 기능, [Adobe Developer 콘솔 프로젝트](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#create-a-project-in-adobe-developer-console) 그리고 [App Builder 앱](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/code-generation) 사용 `@adobe/aem-cf-admin-ui-ext-tpl` Adobe Developer 콘솔 프로젝트와 연결된 템플릿입니다.
 
-확장에서 수행할 작업을 기반으로 App Builder 앱을 생성할 때 다음 기능 중에서 선택합니다. 확장에서는 모든 옵션 조합을 사용할 수 있습니다.
+확장의 기능을 기반으로 App Builder 앱을 생성할 때 다음 기능 중에서 선택합니다. 확장에서는 모든 옵션 조합을 사용할 수 있습니다.
 
 |  | 에 단추 추가 [헤더 메뉴](./header-menu.md) | 에 단추 추가 [작업 표시줄](./action-bar.md) | 표시 [모달](./modal.md) | 추가 [서버측 처리기](./runtime-action.md) |
 | ------------------------------------------ | :-----------------------: | :----------------------: | :--------: | :--------------------:  |
@@ -67,7 +67,7 @@ AEM as a Cloud Service용 AEM 컨텐츠 조각 콘솔 확장을 생성, 개발 �
             <div class="card-content is-padded-small">
                 <div class="content">
                     <p class="headline is-size-5 has-text-weight-bold">1. 프로젝트 만들기</p>
-                    <p class="is-size-6">다른 Adobe 서비스에 대한 액세스 권한을 정의하고 해당 배포를 관리하는 Adobe Developer 콘솔 프로젝트를 만듭니다.</p>
+                    <p class="is-size-6">다른 Adobe 서비스에 대한 액세스를 정의하고 해당 배포를 관리하는 Adobe Developer 콘솔 프로젝트를 만듭니다.</p>
                     <a href="https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#create-a-project-in-adobe-developer-console" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" target="_adobe-developer-com">
                         <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Adobe Developer 프로젝트 만들기</span>
                     </a>
@@ -193,7 +193,7 @@ AEM as a Cloud Service용 AEM 컨텐츠 조각 콘솔 확장을 생성, 개발 �
             <div class="card-content is-padded-small">
                 <div class="content">
                     <p class="headline is-size-5 has-text-weight-bold">6. Adobe I/O Runtime 작업</p>
-                    <p class="is-size-6">확장 프로그램이 컨텐츠 조각 및 AEM과 상호 작용하기 위해 호출할 수 있는 서버를 사용하지 않는 Adobe I/O Runtime 작업을 추가하여 사용자 지정 비즈니스 작업을 수행합니다.</p>
+                    <p class="is-size-6">확장이 컨텐츠 조각 및 AEM과 상호 작용하여 사용자 지정 비즈니스 작업을 수행하기 위해 호출할 수 있는 서버를 사용하지 않는 Adobe I/O Runtime 작업을 추가합니다.</p>
                     <a href="./runtime-action.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                         <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Adobe I/O Runtime 작업 추가</span>
                     </a>
@@ -214,7 +214,7 @@ AEM as a Cloud Service용 AEM 컨텐츠 조각 콘솔 확장을 생성, 개발 �
             <div class="card-content is-padded-small">
                 <div class="content">
                     <p class="headline is-size-5 has-text-weight-bold">7. 테스트</p>
-                    <p class="is-size-6">개발 중에 확장을 테스트하고, 특수 URL을 사용하여 QA 또는 UAT 테스터에 완료된 확장을 공유할 수 있습니다.</p>
+                    <p class="is-size-6">개발 중에 확장을 테스트하고, 완료된 확장을 특수 URL을 사용하여 QA 또는 UAT 테스터에 공유합니다.</p>
                     <a href="./test.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                         <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">확장 테스트</span>
                     </a>
@@ -271,4 +271,28 @@ AEM 컨텐츠 조각 콘솔 확장 예제 .
             </div>
         </div>
     </div>
+    <!-- Bulk property update extension -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Image generation and upload to AEM extension">
+        <div class="card">
+            <div class="card-image">
+                <figure class="image is-16by9">
+                    <a href="./example-extensions/image-generation-and-image-upload.md" title="이미지 생성 및 AEM 확장에 업로드" tabindex="-1">
+                        <img class="is-bordered-r-small" src="./example-extensions/assets/digital-image-generation/screenshot.png" alt="이미지 생성 및 AEM 확장에 업로드">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small">
+                <div class="content">
+                    <p class="headline is-size-5 has-text-weight-bold">이미지 생성 및 AEM 확장에 업로드</p>
+                    <p class="is-size-6">OpenAI를 사용하여 이미지를 생성하고 AEM에 업로드하며 선택한 컨텐츠 조각에서 이미지 속성을 업데이트하는 예제 작업 표시줄 확장을 탐색합니다.</p>
+                    <a href="./example-extensions/image-generation-and-image-upload.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
+                        <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">예제 확장 살펴보기</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 </div>
