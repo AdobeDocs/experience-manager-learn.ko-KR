@@ -9,7 +9,7 @@ level: Beginner
 recommendations: noDisplay, noCatalog
 kt: 11603
 last-substantial-update: 2022-12-01T00:00:00Z
-source-git-commit: 56e2cbadaceb9961de28454bfbed56a98df34c44
+source-git-commit: fbc8c11841f5b5e04a99ba74fac6f01dc3e3a2da
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 0%
@@ -22,6 +22,8 @@ ht-degree: 0%
 AEM 컨텐츠 조각 콘솔 확장은 확장이 속한 Adobe 조직의 AEM as a Cloud Service 환경에 대해 테스트할 수 있습니다.
 
 확장 테스트는 AEM 컨텐츠 조각 콘솔에서 확장을 로드하도록 지시하는 특별히 제작된 URL을 통해 수행됩니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3412877/?quality=12&learn=on)
 
 ## AEM 컨텐츠 조각 콘솔 URL
 

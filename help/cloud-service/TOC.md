@@ -5,9 +5,9 @@ breadcrumb-title: AEM as a Cloud Service 튜토리얼
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 8b683fdcea05859151b929389f7673075c359141
+source-git-commit: fbc8c11841f5b5e04a99ba74fac6f01dc3e3a2da
 workflow-type: tm+mt
-source-wordcount: '874'
+source-wordcount: '880'
 ht-degree: 20%
 
 ---
@@ -56,6 +56,8 @@ ht-degree: 20%
    + 확장성{#extensibility}
       + 컨텐츠 조각 콘솔{#content-fragments}
          + [개요](./developing/extensibility/content-fragments/overview.md)
+         + [Adobe Developer 콘솔 프로젝트](./developing/extensibility/content-fragments/adobe-developer-console-project.md)
+         + [앱 초기화](./developing/extensibility/content-fragments/app-initialization.md)
          + [확장 등록](./developing/extensibility/content-fragments/extension-registration.md)
          + [헤더 메뉴](./developing/extensibility/content-fragments/header-menu.md)
          + [작업 표시줄](./developing/extensibility/content-fragments/action-bar.md)

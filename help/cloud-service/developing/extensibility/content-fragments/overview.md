@@ -10,9 +10,9 @@ recommendations: noDisplay
 kt: 11603
 thumbnail: KT-11603.png
 last-substantial-update: 2022-12-09T00:00:00Z
-source-git-commit: 8b683fdcea05859151b929389f7673075c359141
+source-git-commit: fbc8c11841f5b5e04a99ba74fac6f01dc3e3a2da
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '742'
 ht-degree: 4%
 
 ---
@@ -59,7 +59,7 @@ AEM as a Cloud Service용 AEM 컨텐츠 조각 콘솔 확장을 생성, 개발 �
         <div class="card">
             <div class="card-image">
                 <figure class="image is-16by9">
-                    <a href="https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#create-a-project-in-adobe-developer-console" title="Adobe Developer 프로젝트 만들기" tabindex="-1" target="_adobe-developer-com">
+                    <a href="./adobe-developer-console-project.md" title="Adobe Developer 프로젝트 만들기" tabindex="-1">
                         <img class="is-bordered-r-small" src="./assets/project/card.png" alt="Adobe Developer 프로젝트 만들기">
                     </a>
                 </figure>
@@ -67,8 +67,8 @@ AEM as a Cloud Service용 AEM 컨텐츠 조각 콘솔 확장을 생성, 개발 �
             <div class="card-content is-padded-small">
                 <div class="content">
                     <p class="headline is-size-5 has-text-weight-bold">1. 프로젝트 만들기</p>
-                    <p class="is-size-6">다른 Adobe 서비스에 대한 액세스를 정의하고 해당 배포를 관리하는 Adobe Developer 콘솔 프로젝트를 만듭니다.</p>
-                    <a href="https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#create-a-project-in-adobe-developer-console" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" target="_adobe-developer-com">
+                    <p class="is-size-6">다른 Adobe 서비스에 대한 액세스 권한을 정의하고 해당 배포를 관리하는 Adobe Developer 콘솔 프로젝트를 만듭니다.</p>
+                    <a href="./adobe-developer-console-project.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                         <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Adobe Developer 프로젝트 만들기</span>
                     </a>
                 </div>
@@ -80,7 +80,7 @@ AEM as a Cloud Service용 AEM 컨텐츠 조각 콘솔 확장을 생성, 개발 �
         <div class="card">
             <div class="card-image">
                 <figure class="image is-16by9">
-                    <a href="https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/code-generation/#launch-code-generation-during-project-initialization" title="확장 앱 생성" tabindex="-1" target="_adobe-developer-com">
+                    <a href="./app-initialization.md" title="확장 앱 생성" tabindex="-1">
                         <img class="is-bordered-r-small" src="./assets/initialize-app/card.png" alt="확장 앱 초기화">
                     </a>
                 </figure>
@@ -89,7 +89,7 @@ AEM as a Cloud Service용 AEM 컨텐츠 조각 콘솔 확장을 생성, 개발 �
                 <div class="content">
                     <p class="headline is-size-5 has-text-weight-bold">2. 확장 앱 초기화</p>
                     <p class="is-size-6">확장이 표시되는 위치와 이 확장이 수행하는 작업을 정의하는 AEM 컨텐츠 조각 콘솔 확장 App Builder 앱을 초기화합니다.</p>
-                    <a href="https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/code-generation/#launch-code-generation-during-project-initialization" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" target="_adobe-developer-com">
+                    <a href="./app-initialization.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                         <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">확장 앱 초기화</span>
                     </a>
                 </div>
