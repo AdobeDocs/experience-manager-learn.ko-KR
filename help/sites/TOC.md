@@ -5,9 +5,9 @@ breadcrumb-title: AEM Sites 튜토리얼
 feature-set: Experience Manager Sites, Experience Manager
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: c82965636ddeef7dc165e0bea079c99f1a16e0ca
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '438'
 ht-degree: 27%
 
 ---
@@ -58,6 +58,7 @@ ht-degree: 27%
    + [AEM 헤드리스 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
    + [AEM SPA Editor 및 React 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
    + [페이지 속성 확장](developing/page-properties-technical-video-develop.md)
+   + [응답형 중단점](developing/responsive-breakpoints.md)
    + [스타일 시스템을 사용한 개발](developing/style-system-technical-video-understand.md)
    + [스타일 시스템 우수 사례](developing/style-organization-style-system-understand-article.md)
    + [페이지 차이를 위한 개발](developing/page-diff-technical-video-develop.md)
