@@ -1,6 +1,6 @@
 ---
 title: 로컬 SDK를 사용하여 AEM Headless 빠른 설정
-description: Adobe Experience Manager(AEM) 및 GraphQL을 시작합니다. GraphQL API를 사용하여 AEM SDK를 설치하고 샘플 컨텐츠를 추가하고 AEM의 컨텐츠를 사용하는 애플리케이션을 배포합니다. AEM이 옴니채널 경험을 가능하게 하는 방법을 참조하십시오.
+description: Adobe Experience Manager(AEM) 및 GraphQL을 시작합니다. AEM SDK를 설치하고, 샘플 컨텐츠를 추가하고, GraphQL API를 사용하여 AEM의 컨텐츠를 사용하는 애플리케이션을 배포합니다. AEM이 옴니채널 경험을 가능하게 하는 방법을 참조하십시오.
 version: Cloud Service
 mini-toc-levels: 1
 kt: 6386
@@ -10,29 +10,28 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: d2da6efa-1f77-4391-adda-e3180c42addc
-source-git-commit: 64086f3f7b340b143bd281e2f6f802af07554ecf
+source-git-commit: f63ed212a5a8a6689b25bd0bc9438c605a129729
 workflow-type: tm+mt
-source-wordcount: '1258'
+source-wordcount: '1256'
 ht-degree: 1%
 
 ---
 
 # 로컬 SDK를 사용하여 AEM Headless 빠른 설정 {#setup}
 
-AEM 헤드리스 빠른 설정을 사용하면 WKND 사이트 샘플 프로젝트의 컨텐츠를 사용하여 AEM 헤드리스와 AEM Headless GraphQL API에서 컨텐츠를 사용하는 샘플 React 앱(SPA)을 직접 사용할 수 있습니다. 이 안내서에서는 [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html).
+AEM Headless 빠른 설정을 사용하면 WKND Site 샘플 프로젝트의 컨텐츠와 AEM Headless GraphQL API를 통해 컨텐츠를 소비하는 샘플 React App (a SPA)을 직접 사용할 수 있습니다. 이 안내서에서는 [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html).
 
 ## 사전 요구 사항 {#prerequisites}
 
 다음 도구는 로컬에 설치해야 합니다.
 
 * [JDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atologing&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%3AlastModified&amp;orderby.sort=desc&amp;layout=0&amp;p.offset=0&amp;p.limit=0&amp;limit=1)
-* [Node.js v10+](https://nodejs.org/en/)
-* [npm 6+](https://www.npmjs.com/)
+* [Node.js v14.x](https://nodejs.org/en/)
 * [Git](https://git-scm.com/)
 
 ## 1. AEM SDK를 설치합니다. {#aem-sdk}
 
-이 설정에서는 [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?#aem-as-a-cloud-service-sdk) AEM GraphQL API를 탐색합니다. 이 섹션에서는 AEM SDK를 설치하고 작성자 모드에서 실행하는 빠른 안내서를 제공합니다. 로컬 개발 환경 설정에 대한 자세한 안내서 [여기에서 찾을 수 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html#local-development-environment-set-up).
+이 설정에서는 [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?#aem-as-a-cloud-service-sdk) AEM GraphQL API를 살펴보십시오. 이 섹션에서는 AEM SDK를 설치하고 작성자 모드에서 실행하는 빠른 안내서를 제공합니다. 로컬 개발 환경 설정에 대한 자세한 안내서 [여기에서 찾을 수 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html#local-development-environment-set-up).
 
 >[!NOTE]
 >
@@ -88,7 +87,7 @@ WKND 사이트에는 [GraphQL 끝점](https://experienceleague.adobe.com/docs/ex
 
 1. 콘텐츠 조각 편집기가 Wyoming의 Designing Screens 어드벤처에 열립니다.
 
-   ![컨텐츠 조각 편집기](assets/quick-setup/aem-sdk/aem-sdk__content-fragment-editor.png)
+   ![콘텐츠 조각 편집기](assets/quick-setup/aem-sdk/aem-sdk__content-fragment-editor.png)
 
    다음과 같은 다양한 필드를 관찰합니다 **제목**, **설명**, 및 **활동** 조각을 정의합니다.
 
@@ -102,7 +101,7 @@ WKND 사이트에는 [GraphQL 끝점](https://experienceleague.adobe.com/docs/ex
 
 ## 3. WKND React 앱을 다운로드하여 실행합니다. {#sample-app}
 
-이 자습서의 목표 중 하나는 GraphQL API를 사용하여 외부 애플리케이션에서 AEM 컨텐츠를 사용하는 방법을 보여주는 것입니다. 이 자습서에서는 React App 예를 사용합니다. React 앱은 AEM GraphQL API와의 통합에 중점을 두기 위해 의도적으로 간단합니다.
+이 자습서의 목표 중 하나는 GraphQL API를 사용하여 외부 애플리케이션에서 AEM 컨텐츠를 사용하는 방법을 보여주는 것입니다. 이 자습서에서는 React App 예를 사용합니다. React 앱은 AEM GraphQL API와의 통합에 중점을 둘 때, 의도적으로 간단합니다.
 
 1. 새 명령 프롬프트를 열고 GitHub에서 샘플 React 앱을 복제합니다.
 
@@ -180,7 +179,7 @@ React 앱이 실행 중이면 AEM의 콘텐츠를 업데이트하고 변경 사�
 
 ## 축하합니다!{#congratulations}
 
-축하합니다. 이제 GraphQL에서 AEM 컨텐츠를 사용하는 외부 애플리케이션이 있습니다. 언제든지 React 앱에서 코드를 검사하고 기존 컨텐츠 조각 수정을 계속 실험할 수 있습니다.
+축하합니다. 이제 GraphQL에서 AEM 콘텐츠를 사용하는 외부 애플리케이션이 있습니다. 언제든지 React 앱에서 코드를 검사하고 기존 컨텐츠 조각 수정을 계속 실험할 수 있습니다.
 
 ### 다음 단계
 
