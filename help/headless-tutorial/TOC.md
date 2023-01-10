@@ -10,7 +10,7 @@ index: y
 source-git-commit: ece15ba61124972bed0667738ccb37575d43de13
 workflow-type: tm+mt
 source-wordcount: '269'
-ht-degree: 19%
+ht-degree: 21%
 
 ---
 
@@ -29,20 +29,20 @@ ht-degree: 19%
       + [2 - 고급 모델링](./graphql/video-series/advanced-modeling.md)
       + [3 - GraphQL 쿼리 만들기](./graphql/video-series/creating-graphql-queries.md)
       + [4 - 컨텐츠 조각 변형](./graphql/video-series/content-fragment-variations.md)
-      + [5 - GraphQL 끝점](./graphql/video-series/graphql-endpoints.md)
+      + [5 - GraphQL 엔드포인트](./graphql/video-series/graphql-endpoints.md)
       + [6 - 작성자 및 게시 아키텍처](./graphql/video-series/author-publish-architecture.md)
       + [7 - GraphQL 지속적인 쿼리](./graphql/video-series/graphql-persisted-queries.md)
    + 기본 자습서{#multi-step}
       + [개요](./graphql/multi-step/overview.md)
       + [1 - 컨텐츠 조각 모델 정의](./graphql/multi-step/content-fragment-models.md)
       + [2 - 컨텐츠 조각 작성](./graphql/multi-step/author-content-fragments.md)
-      + [3 - GraphQL API 탐색](./graphql/multi-step/explore-graphql-api.md)
+      + [3 - GraphQL API 살펴보기](./graphql/multi-step/explore-graphql-api.md)
       + [4 - React 앱 빌드](./graphql/multi-step/graphql-and-react-app.md)
    + 고급 자습서{#advanced-tutorial}
       + [개요](/help/headless-tutorial/graphql/advanced-graphql/overview.md)
       + [1 - 컨텐츠 조각 모델 만들기](/help/headless-tutorial/graphql/advanced-graphql/create-content-fragment-models.md)
       + [2 - 컨텐츠 조각 작성](/help/headless-tutorial/graphql/advanced-graphql/author-content-fragments.md)
-      + [3 - AEM GraphQL API 탐색](/help/headless-tutorial/graphql/advanced-graphql/explore-graphql-api.md)
+      + [3 - AEM GraphQL API 살펴보기](/help/headless-tutorial/graphql/advanced-graphql/explore-graphql-api.md)
       + [4 - 지속되는 GraphQL 쿼리](/help/headless-tutorial/graphql/advanced-graphql/graphql-persisted-queries.md)
       + [5 - 클라이언트 애플리케이션 통합](/help/headless-tutorial/graphql/advanced-graphql/client-application-integration.md)
 + 배포{#deployments}

@@ -23,7 +23,7 @@ ht-degree: 33%
 + [AEM 기반 정보](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 + [AEM 안내서](https://experienceleague.adobe.com/docs/experience-manager-guides-learn/tutorials/overview.html)
 + 여러 단계 Tutorials {#multi}
-   + [AEM Sites 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+   + [AEM Sites 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR)
    + [AEM SPA Editor 및 React 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html)
    + [AEM 및 Adobe Target 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html)
    + [AEM 6.x Dynamic Media Classic 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/dynamic-media-classic-tutorial/overview.html)
