@@ -9,15 +9,15 @@ level: Beginner
 kt: 11649
 thumbnail: KT-11649.png
 last-substantial-update: 2023-01-04T00:00:00Z
-source-git-commit: 8b683fdcea05859151b929389f7673075c359141
+source-git-commit: d902eb9a8d497a43c8d4ca63767f81a35eadf139
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1314'
 ht-degree: 1%
 
 ---
 
 
-# AEM 예제 확장으로 업로드하는 디지털 이미지 생성
+# OpenAI 기반 디지털 이미지 생성, AEM 예제 확장에 업로드
 
 ![디지털 이미지 생성](./assets/digital-image-generation/screenshot.png){align="center"}
 
@@ -43,6 +43,10 @@ ht-degree: 1%
 1. 그런 다음 사전 정의된 경로 아래에 App Builder 런타임에서 AEM DAM으로 이미지 업로드를 시작합니다.
 1. AEM은 이미지를 DAM에 as a Cloud Service으로 저장하고 Adobe I/O Runtime 작업에 대한 성공 또는 실패 응답을 반환합니다. 성공적인 업로드 응답은 Adobe I/O Runtime 작업에서 AEM에 대한 다른 HTTP 요청을 사용하여 선택한 컨텐츠 조각의 이미지 속성 값을 업데이트합니다.
 1. 모달은 Adobe I/O Runtime 작업으로부터 응답을 수신하고, 새로 생성된 업로드된 이미지의 AEM 자산 세부 정보 링크를 제공합니다.
+
+이 비디오에서는 OpenAI 또는 DALL.E 2 확장을 사용하여 이미지를 생성하는 예와 이미지 생성, 작동 방법 및 개발 방법을 검토합니다. 비디오에는 다음과 같은 장 표시가 있습니다. __기능 데모, 설정 및 기술 코드__ 관련 작품을 빨리 보기 위해서.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3413093/?quality=12&learn=on)
 
 
 ## App Builder 확장 앱

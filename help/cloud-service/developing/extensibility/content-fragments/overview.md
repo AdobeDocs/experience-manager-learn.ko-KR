@@ -10,9 +10,9 @@ recommendations: noDisplay
 kt: 11603
 thumbnail: KT-11603.png
 last-substantial-update: 2022-12-09T00:00:00Z
-source-git-commit: fbc8c11841f5b5e04a99ba74fac6f01dc3e3a2da
+source-git-commit: d902eb9a8d497a43c8d4ca63767f81a35eadf139
 workflow-type: tm+mt
-source-wordcount: '742'
+source-wordcount: '745'
 ht-degree: 4%
 
 ---
@@ -271,19 +271,19 @@ AEM 컨텐츠 조각 콘솔 확장 예제 .
             </div>
         </div>
     </div>
-    <!-- Bulk property update extension -->
-    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Image generation and upload to AEM extension">
+    <!-- Image Generartion update extension -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="OpenAI-based image generation and upload to AEM extension">
         <div class="card">
             <div class="card-image">
                 <figure class="image is-16by9">
-                    <a href="./example-extensions/image-generation-and-image-upload.md" title="이미지 생성 및 AEM 확장에 업로드" tabindex="-1">
-                        <img class="is-bordered-r-small" src="./example-extensions/assets/digital-image-generation/screenshot.png" alt="이미지 생성 및 AEM 확장에 업로드">
+                    <a href="./example-extensions/image-generation-and-image-upload.md" title="OpenAI 기반 이미지 생성 및 AEM 확장에 업로드" tabindex="-1">
+                        <img class="is-bordered-r-small" src="./example-extensions/assets/digital-image-generation/screenshot.png" alt="OpenAI 기반 이미지 생성 및 AEM 확장에 업로드">
                     </a>
                 </figure>
             </div>
             <div class="card-content is-padded-small">
                 <div class="content">
-                    <p class="headline is-size-5 has-text-weight-bold">이미지 생성 및 AEM 확장에 업로드</p>
+                    <p class="headline is-size-5 has-text-weight-bold">OpenAI 기반 이미지 생성 및 AEM 확장에 업로드</p>
                     <p class="is-size-6">OpenAI를 사용하여 이미지를 생성하고 AEM에 업로드하며 선택한 컨텐츠 조각에서 이미지 속성을 업데이트하는 예제 작업 표시줄 확장을 탐색합니다.</p>
                     <a href="./example-extensions/image-generation-and-image-upload.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                         <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">예제 확장 살펴보기</span>
