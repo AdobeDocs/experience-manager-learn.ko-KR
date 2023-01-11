@@ -5,9 +5,9 @@ breadcrumb-title: AEM as a Cloud Service 튜토리얼
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: fbc8c11841f5b5e04a99ba74fac6f01dc3e3a2da
+source-git-commit: 3a77f99de25ad6dab37d4ee12b31f12b94f0ec73
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '879'
 ht-degree: 20%
 
 ---
@@ -66,8 +66,8 @@ ht-degree: 20%
          + [테스트](./developing/extensibility/content-fragments/test.md)
          + [배포](./developing/extensibility/content-fragments/deploy.md)
          + 예시 확장{#example-extensions}
-            + [벌크 속성 업데이트 확장](./developing/extensibility/content-fragments/example-extensions/bulk-property-update.md)
-            + [이미지 생성 및 AEM에 업로드](./developing/extensibility/content-fragments/example-extensions/image-generation-and-image-upload.md)
+            + [벌크 속성 업데이트](./developing/extensibility/content-fragments/example-extensions/bulk-property-update.md)
+            + [OpenAI를 사용한 AEM 이미지 자산 생성](./developing/extensibility/content-fragments/example-extensions/image-generation-and-image-upload.md)
    + 개발 기본 사항{#basics}
       + [AEM SDK](./developing/basics/aem-sdk.md)
       + [로컬 개발 환경](./developing/basics/local-development-environment.md)
