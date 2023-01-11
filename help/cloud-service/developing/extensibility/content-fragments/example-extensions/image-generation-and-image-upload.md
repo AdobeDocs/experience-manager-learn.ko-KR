@@ -1,5 +1,5 @@
 ---
-title: 컨텐츠 조각 콘솔 확장을 통한 OpenAI 기반 이미지 생성
+title: 사용자 지정 컨텐츠 조각 콘솔 확장을 통해 OpenAI 이미지 생성
 description: OpenAI 또는 DALL-E 2를 사용하여 자연어 설명에서 디지털 이미지를 생성하고 생성된 이미지를 AEM에 업로드하고 컨텐츠 조각에 연결하는 예제 AEM 컨텐츠 조각 콘솔 확장입니다.
 feature: Developer Tools
 version: Cloud Service
@@ -9,15 +9,15 @@ level: Beginner
 kt: 11649
 thumbnail: KT-11649.png
 last-substantial-update: 2023-01-04T00:00:00Z
-source-git-commit: d902eb9a8d497a43c8d4ca63767f81a35eadf139
+source-git-commit: 06c09affd427a4818f5a916a84490f9ed09d372c
 workflow-type: tm+mt
-source-wordcount: '1314'
+source-wordcount: '1313'
 ht-degree: 1%
 
 ---
 
 
-# OpenAI 기반 디지털 이미지 생성, AEM 예제 확장에 업로드
+# OpenAI를 사용한 AEM 이미지 자산 생성
 
 ![디지털 이미지 생성](./assets/digital-image-generation/screenshot.png){align="center"}
 
