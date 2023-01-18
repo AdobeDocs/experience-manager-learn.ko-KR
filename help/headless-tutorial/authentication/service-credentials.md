@@ -12,10 +12,11 @@ thumbnail: 330519.jpg
 topic: Headless, Integrations
 role: Developer
 level: Intermediate, Experienced
+last-substantial-update: 2023-01-12T00:00:00Z
 exl-id: e2922278-4d0b-4f28-a999-90551ed65fb4
-source-git-commit: ef11609fe6ab266102bdf767a149284b9b912f98
+source-git-commit: 8b6d8d99c806e782a1ddce2b300211f8d4c9da56
 workflow-type: tm+mt
-source-wordcount: '1895'
+source-wordcount: '1931'
 ht-degree: 0%
 
 ---
@@ -28,10 +29,11 @@ AEM(Adobe Experience Manager) as a Cloud Service와의 통합에서는 AEM 서�
 
 서비스 자격 증명은 유사한 것으로 나타날 수 있습니다 [로컬 개발 액세스 토큰](./local-development-access-token.md) 그러나 몇 가지 주요 방식에서는 다릅니다.
 
++ 서비스 자격 증명이 기술 계정과 연결됩니다. 기술 계정에 대해 여러 서비스 자격 증명을 활성화할 수 있습니다.
 + 서비스 자격 증명은 _not_ 액세스 토큰, 대신 _get_ 토큰에 액세스합니다.
-+ 서비스 자격 증명은 보다 영구적(365일마다 만료)이며, 취소되지 않는 한 변경되지 않지만, 로컬 개발 액세스 토큰은 매일 만료됩니다.
++ 서비스 자격 증명은 더 영구적이므로(365일마다 인증서가 만료됨) 해지되지 않으면 변경되지 않지만, 로컬 개발 액세스 토큰은 매일 만료됩니다.
 + AEM as a Cloud Service 환경에 대한 서비스 자격 증명은 단일 AEM 기술 계정 사용자에게 매핑되지만, 로컬 개발 액세스 토큰은 액세스 토큰을 생성한 AEM 사용자로 인증됩니다.
-+ AEM as a Cloud Service 환경에는 하나의 기술 계정 AEM 사용자에게 매핑되는 하나의 서비스 자격 증명이 있습니다. 서비스 자격 증명을 사용하여 다른 기술 계정 AEM 사용자와 동일한 AEM as a Cloud Service 환경을 인증할 수 없습니다.
++ AEM as a Cloud Service 환경에는 각각 고유한 서비스 자격 증명이 있는 최대 10개의 기술 계정이 있을 수 있으며 각 계정은 개별 기술 계정 AEM 사용자에게 매핑됩니다.
 
 서비스 자격 증명과 사용자가 생성하는 액세스 토큰 및 로컬 개발 액세스 토큰은 모두 비밀로 유지됩니다. 세 가지 모두 를 사용하여 각각의 AEM as a Cloud Service 환경에 액세스할 수 있습니다.
 
@@ -39,27 +41,27 @@ AEM(Adobe Experience Manager) as a Cloud Service와의 통합에서는 AEM 서�
 
 서비스 자격 증명 생성은 다음 두 단계로 구분됩니다.
 
-1. Adobe IMS 조직 관리자가 1회 서비스 자격 증명 초기화
-1. 서비스 자격 증명 JSON의 다운로드 및 사용
+1. Adobe IMS 조직 관리자가 일회성 기술 계정 생성
+1. 기술 계정의 서비스 자격 증명 JSON을 다운로드하고 사용합니다
 
-### 서비스 자격 증명 초기화
+### 기술 계정 만들기
 
-서비스 자격 증명은 로컬 개발 액세스 토큰과 달리 _1회 초기화_ Adobe 조직 IMS 관리자에 의해 다운로드됩니다.
+서비스 자격 증명은 로컬 개발 액세스 토큰과 달리 Adobe 조직 IMS 관리자가 기술 계정을 만들어야 다운로드하여 다운로드할 수 있습니다. AEM에 프로그래밍 방식으로 액세스해야 하는 각 클라이언트에 대해 개별 기술 계정을 만들어야 합니다.
 
-![서비스 자격 증명 초기화](assets/service-credentials/initialize-service-credentials.png)
+![기술 계정 만들기](assets/service-credentials/initialize-service-credentials.png)
 
-__AEM as a Cloud Service 환경당 1회 초기화입니다__
+기술 계정은 한 번 생성되지만 개인 키가 기술 계정과 연결된 서비스 자격 증명을 관리하는 데 사용하는 경우 시간이 지남에 따라 관리할 수 있습니다. 예를 들어, 서비스 자격 증명을 사용하는 사용자가 중단 없이 액세스할 수 있도록 현재 개인 키가 만료되기 전에 새 개인 키/서비스 자격 증명을 생성해야 합니다.
 
-1. 다음과 같이 로그인되어 있는지 확인하십시오.
-   + Adobe IMS 조직의 관리자
-   + 의 멤버 __Cloud Manager - 개발자__ IMS 제품 프로필
-   + 의 멤버 __AEM 사용__ 또는 __AEM 관리자__ 의 IMS 제품 프로필 __AEM 작성자__
+1. 로 로그인했는지 확인합니다.
+   + __Adobe IMS 조직 관리자__
+   + 의 멤버 __AEM 관리자__ 의 IMS 제품 프로필 __AEM 작성자__
 1. 에 로그인합니다. [Adobe Cloud Manager](https://my.cloudmanager.adobe.com)
 1. AEM as a Cloud Service 환경이 포함된 프로그램을 열어 서비스 자격 증명 설정을 통합합니다.
 1. 의 환경 옆에 있는 줄임표를 탭합니다 __환경__ 섹션을 선택하고 __개발자 콘솔__
 1. 탭하기 __통합__ 탭
-1. 탭 __서비스 자격 증명 가져오기__ 버튼
-1. 서비스 자격 증명이 초기화되어 JSON으로 표시됩니다
+1. 탭하기 __기술 계정__ 탭
+1. 탭 __새 기술 계정 만들기__ 버튼
+1. 기술 계정의 서비스 자격 증명이 초기화되어 JSON으로 표시됩니다
 
 ![AEM 개발자 콘솔 - 통합 - 서비스 자격 증명 가져오기](./assets/service-credentials/developer-console.png)
 
@@ -69,20 +71,20 @@ Cloud Service 환경의 서비스 자격 증명이 초기화되면 Adobe IMS 조
 
 ![서비스 자격 증명 다운로드](assets/service-credentials/download-service-credentials.png)
 
-서비스 자격 증명을 다운로드하는 방법은 초기화와 동일한 단계를 따릅니다. 초기화가 아직 발생하지 않은 경우 을 탭하면 오류가 표시됩니다 __서비스 자격 증명 가져오기__ 버튼을 클릭합니다.
+서비스 자격 증명을 다운로드하는 방법은 초기화와 유사한 단계를 따릅니다.
 
 1. 로 로그인했는지 확인합니다.
-   + 의 멤버 __Cloud Manager - 개발자__ IMS 제품 프로필 (AEM 개발자 콘솔에 대한 액세스 권한을 부여합니다)
-      + Sandbox AEM as a Cloud Service 환경에는 다음이 필요하지 않습니다  __Cloud Manager - 개발자__ 멤버십
-   + 의 멤버 __AEM 사용__ 또는 __AEM 관리자__ 의 IMS 제품 프로필 __AEM 작성자__
+   + __Adobe IMS 조직 관리자__
+   + 의 멤버 __AEM 관리자__ 의 IMS 제품 프로필 __AEM 작성자__
 1. 에 로그인합니다. [Adobe Cloud Manager](https://my.cloudmanager.adobe.com)
 1. AEM as a Cloud Service 환경이 포함된 프로그램을 열어
 1. 의 환경 옆에 있는 줄임표를 탭합니다 __환경__ 섹션을 선택하고 __개발자 콘솔__
 1. 탭하기 __통합__ 탭
-1. 탭 __서비스 자격 증명 가져오기__ 버튼
-1. 왼쪽 상단 모서리에서 다운로드 단추를 눌러 서비스 자격 증명 값이 포함된 JSON 파일을 다운로드하고 파일을 안전한 위치에 저장합니다.
-
-+ _서비스 자격 증명이 손상되면 즉시 Adobe 지원 팀에 문의하여 자격 증명을 취소하십시오_
+1. 탭하기 __기술 계정__ 탭
+1. 를 확장합니다. __기술 계정__ 사용
+1. 를 확장합니다. __개인 키__ 서비스 자격 증명을 다운로드할 사용자를 확인하고 상태가 __활성__
+1. 을(를) 탭합니다. __...__ > __보기__ 관련 __개인 키__- 서비스 자격 증명 JSON을 표시하는 경우
+1. 왼쪽 상단 모서리에서 다운로드 단추를 눌러 서비스 자격 증명 값이 포함된 JSON 파일을 다운로드하고 파일을 안전한 위치에 저장합니다
 
 ## 서비스 자격 증명 설치
 
@@ -91,7 +93,7 @@ Cloud Service 환경의 서비스 자격 증명이 초기화되면 Adobe IMS 조
 간단히 하기 위해 이 자습서에서는 명령줄을 통해 서비스 자격 증명을 전달합니다. 그러나 IT 보안 팀과 협력하여 조직의 보안 지침에 따라 이러한 자격 증명을 저장하고 액세스하는 방법을 이해합니다.
 
 1. 를 복사합니다. [서비스 자격 증명 JSON을 다운로드했습니다.](#download-service-credentials) 라는 파일에 `service_token.json` 프로젝트의 루트에서
-   + 그러나 Git에 자격 증명을 커밋하지 마십시오!
+   + 절대 커밋하지 마십시오 _모든 자격 증명_ Git으로 이동!
 
 ## 서비스 자격 증명 사용
 
@@ -115,7 +117,7 @@ Cloud Service 환경의 서비스 자격 증명이 초기화되면 Adobe IMS 조
 
 1. 서비스 자격 증명에서 읽기
 
-+ 간단히 하기 위해 다운로드한 JSON 파일에서 이러한 내용을 읽지만 실제 사용 시나리오에서 서비스 자격 증명은 조직의 보안 지침에 따라 안전하게 저장해야 합니다
++ 간단히 말하면 서비스 자격 증명은 다운로드한 JSON 파일에서 읽히지만 실제 사용 시나리오에서는 서비스 자격 증명이 조직의 보안 지침에 따라 안전하게 저장되어야 합니다
 
 1. 서비스 자격 증명에서 JWT 생성
 1. 액세스 토큰에 대해 JWT 교환
@@ -126,7 +128,7 @@ Cloud Service 환경의 서비스 자격 증명이 초기화되면 Adobe IMS 조
 
 ## 서비스 자격 증명 읽기
 
-를 검토합니다. `getCommandLineParams()` 로컬 개발 액세스 토큰 JSON에서 읽는 데 사용되는 것과 동일한 코드를 사용하여 서비스 자격 증명 JSON 파일에서 읽을 수 있는지 확인하십시오.
+를 검토합니다. `getCommandLineParams()` 따라서 로컬 개발 액세스 토큰 JSON에서 읽는 데 사용되는 것과 동일한 코드를 사용하여 서비스 자격 증명 JSON 파일을 읽는 방법을 참조하십시오.
 
 ```javascript
 function getCommandLineParams() {
@@ -151,7 +153,7 @@ function getCommandLineParams() {
 
 1. 업데이트 `getAccessToken(..)` JSON 파일 내용을 검사하고 로컬 개발 액세스 토큰 또는 서비스 자격 증명을 나타내는지 확인합니다. 이 기능은 `.accessToken` 속성(로컬 개발 액세스 토큰 JSON에만 있음)을 참조하십시오.
 
-   서비스 자격 증명이 제공되면 애플리케이션이 JWT를 생성하고 액세스 토큰을 위해 Adobe IMS와 바꿉니다. Adobe에서는 [@adobe/jwt-auth](https://www.npmjs.com/package/@adobe/jwt-auth)s `auth(...)` JWT를 생성하고 단일 함수 호출에서 액세스 토큰에 대해 교환하는 함수입니다. 매개 변수 `auth(..)` 메서드 [특정 정보로 구성된 JSON 개체](https://www.npmjs.com/package/@adobe/jwt-auth#config-object) 코드에 설명된 대로 서비스 자격 증명 JSON에서 사용할 수 있습니다.
+   서비스 자격 증명이 제공되면 애플리케이션이 JWT를 생성하고 액세스 토큰을 위해 Adobe IMS와 바꿉니다. 를 사용하십시오 [@adobe/jwt-auth](https://www.npmjs.com/package/@adobe/jwt-auth)s `auth(...)` JWT를 생성하고 단일 함수 호출에서 액세스 토큰에 대해 교환하는 함수입니다. 매개 변수 `auth(..)` 메서드 [특정 정보로 구성된 JSON 개체](https://www.npmjs.com/package/@adobe/jwt-auth#config-object) 코드에 설명된 대로 서비스 자격 증명 JSON에서 사용할 수 있습니다.
 
 ```javascript
  async function getAccessToken(developerConsoleCredentials) {
@@ -211,7 +213,7 @@ function getCommandLineParams() {
 
 ## AEM에서 액세스 구성
 
-서비스 자격 증명 파생 액세스 토큰은 기여자 AEM 사용자 그룹의 구성원이 있는 기술 계정 AEM 사용자를 사용합니다.
+서비스 자격 증명 파생 액세스 토큰은 __기여자__ AEM 사용자 그룹 을 참조하십시오.
 
 ![서비스 자격 증명 - 기술 계정 AEM 사용자](./assets/service-credentials/technical-account-user.png)
 

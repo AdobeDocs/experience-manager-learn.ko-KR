@@ -12,10 +12,11 @@ thumbnail: 330477.jpg
 topic: Headless, Integrations
 role: Developer
 level: Intermediate, Experienced
+last-substantial-update: 2023-01-12T00:00:00Z
 exl-id: 197444cb-a68f-4d09-9120-7b6603e1f47d
-source-git-commit: ef11609fe6ab266102bdf767a149284b9b912f98
+source-git-commit: 8b6d8d99c806e782a1ddce2b300211f8d4c9da56
 workflow-type: tm+mt
-source-wordcount: '1062'
+source-wordcount: '1067'
 ht-degree: 0%
 
 ---
@@ -40,6 +41,7 @@ AEM as a Cloud Service에 프로그래밍 방식으로 액세스해야 하는 �
 1. AEM as a Cloud Service 환경이 포함된 프로그램을 열어
 1. 탭하기 __줄임표__ 의 환경 옆에 __환경__ 섹션을 선택하고 __개발자 콘솔__
 1. 탭하기 __통합__ 탭
+1. 탭하기 __로컬 토큰__ 탭
 1. 탭 __로컬 개발 토큰 가져오기__ 버튼
 1. 을(를) 탭합니다. __다운로드 단추__ 왼쪽 상단 모서리에서 이(가) 포함된 JSON 파일을 다운로드합니다. `accessToken` 값을 설정하고, JSON 파일을 개발 시스템의 안전한 위치에 저장합니다.
    + 24시간 AEM as a Cloud Service 환경에 대한 개발자 액세스 토큰입니다.
