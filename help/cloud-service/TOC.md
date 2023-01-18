@@ -5,9 +5,9 @@ breadcrumb-title: AEM as a Cloud Service 튜토리얼
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 3a77f99de25ad6dab37d4ee12b31f12b94f0ec73
+source-git-commit: 0990fc230e2a36841380b5b0c6cd94dca24614fa
 workflow-type: tm+mt
-source-wordcount: '879'
+source-wordcount: '884'
 ht-degree: 20%
 
 ---
@@ -54,6 +54,8 @@ ht-degree: 20%
    + [로컬 Dispatcher 도구](./local-development-environment/dispatcher-tools.md)
 + 개발{#developing}
    + 확장성{#extensibility}
+      + App Builder{#app-builder}
+         + [액세스 토큰 생성](./developing/extensibility/app-builder/jwt-auth.md)
       + 컨텐츠 조각 콘솔{#content-fragments}
          + [개요](./developing/extensibility/content-fragments/overview.md)
          + [Adobe Developer 콘솔 프로젝트](./developing/extensibility/content-fragments/adobe-developer-console-project.md)
