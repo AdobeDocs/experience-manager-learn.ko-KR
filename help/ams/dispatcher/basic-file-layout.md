@@ -7,9 +7,9 @@ feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
-source-git-commit: 04cd4002af7028ee9e3b1e1455b6346c56446245
+source-git-commit: 7815b1a78949c433f2c53ff752bf39dd55f9ac94
 workflow-type: tm+mt
-source-wordcount: '1163'
+source-wordcount: '1161'
 ht-degree: 1%
 
 ---
@@ -146,7 +146,7 @@ Dispatcher 팜 파일 구성의 하위 섹션인 추가 항목이 있으며 한 
 
 #### 클라이언트 헤더 디렉토리
 
-이 디렉토리는 `_clientheaders.any` 요청이 들어올 때 AEM에 전달할 클라이언트 헤더 목록이 들어 있는 파일을 만듭니다.  이 섹션에 대한 자세한 내용은 [여기](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders)
+이 디렉토리는 `_clientheaders.any` 요청이 들어올 때 AEM에 전달할 클라이언트 헤더 목록이 들어 있는 파일을 만듭니다.  이 섹션에 대한 자세한 내용은 다음과 같습니다 [여기](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko)
 
 - `/etc/httpd/conf.dispatcher.d/clientheaders/`
 

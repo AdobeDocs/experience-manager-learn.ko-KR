@@ -7,7 +7,7 @@ feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
-source-git-commit: 04cd4002af7028ee9e3b1e1455b6346c56446245
+source-git-commit: 7815b1a78949c433f2c53ff752bf39dd55f9ac94
 workflow-type: tm+mt
 source-wordcount: '1705'
 ht-degree: 0%
@@ -251,7 +251,7 @@ RewriteRule ^/logo.jpg$ /content/dam/weretail/general/logo.jpg [NC,PT]
 
 FILENAME_farm.any 파일이 있는 경우 `/etc/httpd/conf.dispatcher.d/available_farms/` 디렉토리 `/etc/httpd/conf.dispatcher.d/enabled_farms/` 디렉토리 설정은 실행 중인 구성에서 사용됩니다.
 
-팜 파일은 [팜의 최상위 섹션](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-farms-farms) cache, clientheaders, filters, renders 및 vhosts와 같습니다.
+팜 파일은 [팜의 최상위 섹션](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#defining-farms-farms) cache, clientheaders, filters, renders 및 vhosts와 같습니다.
 
 다음 `FILENAME_farm.any` 파일에는 팜 파일에 포함해야 하는 위치를 기반으로 각 파일에 대한 include 문이 있습니다.  다음은 의 구문 예입니다 `FILENAME_farm.any` 파일 참조:
 

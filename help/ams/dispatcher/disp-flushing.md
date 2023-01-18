@@ -7,9 +7,9 @@ feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
-source-git-commit: 04cd4002af7028ee9e3b1e1455b6346c56446245
+source-git-commit: 7815b1a78949c433f2c53ff752bf39dd55f9ac94
 workflow-type: tm+mt
-source-wordcount: '2225'
+source-wordcount: '2223'
 ht-degree: 0%
 
 ---
@@ -172,7 +172,7 @@ stat 파일 레벨 설정이 너무 높게 설정된 경우 각 초기화 요청
 
 ## 팜 파일 설정
 
-구성 옵션의 전체 세트에 대한 설명서는 여기에 있습니다. [https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-dispatcher_configuring-the-dispatcher-cache-cache](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-dispatcher_configuring-the-dispatcher-cache-cache)
+구성 옵션의 전체 세트에 대한 설명서는 여기에 있습니다. [https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-dispatcher_configuring-the-dispatcher-cache-cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko)
 
 캐시 플러싱과 관련된 몇 가지 항목을 강조하려고 합니다
 
@@ -187,29 +187,29 @@ stat 파일 레벨 설정이 너무 높게 설정된 경우 각 초기화 요청
 
 ```
 /publishflushfarm {  
-	/virtualhosts {
-		"flush"
-	}
-	/cache {
-		/docroot "${PUBLISH_DOCROOT}"
-		/statfileslevel "${DEFAULT_STAT_LEVEL}"
-		/rules {
-			$include "/etc/httpd/conf.dispatcher.d/cache/ams_publish_cache.any"
-		}
-		/invalidate {
-			/0000 {
-				/glob "*"
-				/type "allow"
-			}
-		}
-		/allowedClients {
-			/0000 {
-				/glob "*.*.*.*"
-				/type "deny"
-			}
-			$include "/etc/httpd/conf.dispatcher.d/cache/ams_publish_invalidate_allowed.any"
-		}
-	}
+    /virtualhosts {
+        "flush"
+    }
+    /cache {
+        /docroot "${PUBLISH_DOCROOT}"
+        /statfileslevel "${DEFAULT_STAT_LEVEL}"
+        /rules {
+            $include "/etc/httpd/conf.dispatcher.d/cache/ams_publish_cache.any"
+        }
+        /invalidate {
+            /0000 {
+                /glob "*"
+                /type "allow"
+            }
+        }
+        /allowedClients {
+            /0000 {
+                /glob "*.*.*.*"
+                /type "deny"
+            }
+            $include "/etc/httpd/conf.dispatcher.d/cache/ams_publish_invalidate_allowed.any"
+        }
+    }
 }
 ```
 
