@@ -1,20 +1,20 @@
 ---
-title: AEM GraphQL API - AEM 헤드리스 - GraphQL의 고급 개념 살펴보기
-description: GraphiQL IDE를 사용하여 GraphQL 쿼리를 전송합니다. 필터, 변수 및 지시어를 사용하는 고급 쿼리에 대해 알아봅니다. 여러 줄 텍스트 필드의 참조를 포함하는 조각 및 컨텐츠 참조를 쿼리합니다.
+title: AEM GraphQL API - AEM Headless의 고급 개념 - GraphQL
+description: GraphiQL IDE를 사용하여 GraphQL 쿼리를 보냅니다. 필터, 변수 및 지시어를 사용하는 고급 쿼리에 대해 알아봅니다. 여러 줄 텍스트 필드의 참조를 포함하는 조각 및 컨텐츠 참조를 쿼리합니다.
 version: Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: bd7916be-8caa-4321-add0-4c9031306d60
-source-git-commit: a500c88091d87e34c12d4092c71241983b166af8
+source-git-commit: ae27cbc50fc5c4c2e8215d7946887b99d480d668
 workflow-type: tm+mt
 source-wordcount: '1322'
 ht-degree: 0%
 
 ---
 
-# AEM GraphQL API 탐색
+# AEM GraphQL API 살펴보기
 
 AEM의 GraphQL API를 사용하면 컨텐츠 조각 데이터를 다운스트림 애플리케이션에 노출할 수 있습니다. 기본 자습서에서 [여러 단계 GraphQL 자습서](../multi-step/explore-graphql-api.md)GraphiQL 탐색기를 사용하여 GraphQL 쿼리를 테스트하고 세분화했습니다.
 
@@ -39,7 +39,7 @@ AEM의 GraphQL API를 사용하면 컨텐츠 조각 데이터를 다운스트림
 
 다음 [GraphiQL 탐색기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html) 도구를 사용하여 개발자가 현재 AEM 환경의 컨텐츠에 대한 쿼리를 만들고 테스트할 수 있습니다. GraphiQL 도구를 사용하여 다음을 수행할 수도 있습니다 **유지 또는 저장** 프로덕션 설정에서 클라이언트 응용 프로그램에서 사용할 쿼리입니다.
 
-이제 내장된 GraphiQL 탐색기를 사용하여 AEM GraphQL API의 강력한 기능을 탐색합니다.
+이제 내장된 GraphiQL 탐색기를 사용하여 AEM GraphQL API의 기능을 살펴보십시오.
 
 1. AEM 시작 화면에서 로 이동합니다. **도구** > **일반** > **GraphQL 쿼리 편집기**.
 
@@ -47,7 +47,7 @@ AEM의 GraphQL API를 사용하면 컨텐츠 조각 데이터를 다운스트림
 
 >[!IMPORTANT]
 >
->에서 GraphiQL IDE라고도 하는 AEM(6.X.X) 도구의 일부 버전을 수동으로 설치해야 합니다. [여기에서 제공하는 지침](../multi-step/explore-graphql-api.md#install-the-graphiql-tool-optional).
+>에서 GraphiQL IDE라고도 하는 AEM(6.X.X) 도구의 일부 버전을 수동으로 설치해야 합니다. [여기에서 제공하는 지침](../how-to/install-graphiql-aem-6-5.md).
 
 1. 오른쪽 상단 모서리에서 끝점이 **WKND 공유 끝점**. 변경 _끝점_ 드롭다운 값 여기에 기존 값이 표시됩니다. _지속되는 쿼리_ 왼쪽 상단 모서리에서
 
@@ -60,7 +60,7 @@ AEM의 GraphQL API를 사용하면 컨텐츠 조각 데이터를 다운스트림
 
 이전 [여러 단계 GraphQL 자습서](../multi-step/explore-graphql-api.md)컨텐츠 조각 데이터를 가져오기 위해 기본 지속적인 쿼리를 정의하고 사용했습니다. 여기에서 이 지식을 확장하고 변수를 지속된 쿼리에 전달하여 컨텐츠 조각 데이터를 필터링합니다.
 
-클라이언트 응용 프로그램을 개발할 때 일반적으로 동적 인수를 기반으로 컨텐츠 조각을 필터링해야 합니다. AEM GraphQL API를 사용하면 런타임 시 클라이언트 측에서 문자열을 작성하지 않도록 이러한 인수를 쿼리에 변수로 전달할 수 있습니다. GraphQL 변수에 대한 자세한 내용은 [GraphQL 설명서](https://graphql.org/learn/queries/#variables).
+클라이언트 응용 프로그램을 개발할 때 일반적으로 동적 인수를 기반으로 컨텐츠 조각을 필터링해야 합니다. AEM GraphQL API를 사용하면 런타임 시 클라이언트 측에서 문자열 구성을 방지하기 위해 이러한 인수를 쿼리에 변수로 전달할 수 있습니다. GraphQL 변수에 대한 자세한 내용은 [GraphQL 설명서](https://graphql.org/learn/queries/#variables).
 
 이 예에서는 특정 기술을 가진 모든 강사를 질의합니다.
 
@@ -348,7 +348,7 @@ AEM GraphQL API를 사용하면 여러 줄 텍스트 필드 내에서 컨텐츠 
 
 ## 지시어를 사용하여 쿼리
 
-클라이언트 응용 프로그램을 개발할 때 조건부로 쿼리의 구조를 변경해야 하는 경우가 있습니다. 이 경우 AEM GraphQL API를 사용하면 제공된 기준에 따라 쿼리의 동작을 변경하기 위해 GraphQL 지시어를 사용할 수 있습니다. GraphQL 지시어에 대한 자세한 내용은 [GraphQL 설명서](https://graphql.org/learn/queries/#directives).
+클라이언트 응용 프로그램을 개발할 때 조건부로 쿼리의 구조를 변경해야 하는 경우가 있습니다. 이 경우 AEM GraphQL API를 사용하면 제공된 기준에 따라 쿼리의 동작을 변경하기 위해 GraphQL 지시문을 사용할 수 있습니다. GraphQL 지시문에 대한 자세한 내용은 [GraphQL 설명서](https://graphql.org/learn/queries/#directives).
 
 에서 [이전 섹션](#query-rte-reference)여러 줄 텍스트 필드 내에서 인라인 참조를 쿼리하는 방법을 알아보았습니다. 컨텐츠가 `description` 에 `plaintext` 형식 지정 다음으로, 해당 쿼리를 확장하고 지시문을 사용하여 조건부로 검색합니다 `description` 에서 `json` 형식도 포함되어 있습니다.
 
@@ -602,7 +602,7 @@ AEM GraphQL API를 사용하면 여러 줄 텍스트 필드 내에서 컨텐츠 
 
 ## 모든 컨텐츠를 한 번에 쿼리
 
-지금까지 AEM GraphQL API의 기능을 설명하기 위해 여러 쿼리가 실행되었습니다.
+지금까지 AEM GraphQL API의 기능을 보여주기 위해 여러 쿼리가 실행되었습니다.
 
 동일한 데이터를 단일 쿼리로 검색할 수 있으며 이 쿼리는 나중에 클라이언트 응용 프로그램에서 사용하여 위치, 팀 이름, 모험 팀 구성원 등의 추가 정보를 검색합니다.
 
@@ -725,4 +725,4 @@ query getAdventureDetailsBySlug($slug: String!) {
 
 ## 다음 단계
 
-에서 [다음 장](/help/headless-tutorial/graphql/advanced-graphql/graphql-persisted-queries.md)에서는 GraphQL 쿼리를 유지하는 방법과 응용 프로그램에서 지속되는 쿼리를 사용하는 것이 가장 좋은 이유를 알아봅니다.
+에서 [다음 장](/help/headless-tutorial/graphql/advanced-graphql/graphql-persisted-queries.md), GraphQL 쿼리를 유지하는 방법과 애플리케이션에서 지속되는 쿼리를 사용하는 것이 가장 좋은 이유를 알아봅니다.

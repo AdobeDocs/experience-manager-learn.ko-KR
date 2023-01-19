@@ -7,9 +7,9 @@ sub-product: Experience Manager Sites
 version: 6.5, Cloud Service
 kt: 2963
 index: y
-source-git-commit: ece15ba61124972bed0667738ccb37575d43de13
+source-git-commit: ae27cbc50fc5c4c2e8215d7946887b99d480d668
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '273'
 ht-degree: 21%
 
 ---
@@ -60,6 +60,7 @@ ht-degree: 21%
    + [이미지](./graphql/how-to/images.md)
    + [현지화된 콘텐츠](./graphql/how-to/localized-content.md)
    + [AEM Headless SDK](./graphql/how-to/aem-headless-sdk.md)
+   + [AEM 6.5에 GraphiQL 설치](./graphql/how-to/install-graphiql-aem-6-5.md)
    + 예 {#example-apps}
       + [React](./graphql/example-apps/react-app.md)
       + [Next.js](./graphql/example-apps/next-js.md)

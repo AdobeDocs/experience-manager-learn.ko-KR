@@ -1,5 +1,5 @@
 ---
-title: GraphQL API 탐색 - AEM 헤드리스 시작하기 - GraphQL
+title: GraphQL API 살펴보기 - AEM Headless 시작하기 - GraphQL
 description: Adobe Experience Manager(AEM) 및 GraphQL을 시작합니다. 내장된 GraphicsQL IDE를 사용하여 AEM GraphQL API를 탐색합니다. AEM에서 컨텐츠 조각 모델을 기반으로 GraphQL 스키마를 자동으로 생성하는 방법을 알아봅니다. GraphQL 구문을 사용하여 기본 쿼리를 구성해 봅니다.
 version: Cloud Service
 mini-toc-levels: 1
@@ -10,18 +10,18 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 508b0211-fa21-4a73-b8b4-c6c34e3ba696
-source-git-commit: 25c289b093297e870c52028a759d05628d77f634
+source-git-commit: ae27cbc50fc5c4c2e8215d7946887b99d480d668
 workflow-type: tm+mt
-source-wordcount: '1535'
-ht-degree: 4%
+source-wordcount: '1454'
+ht-degree: 2%
 
 ---
 
-# GraphQL API 탐색 {#explore-graphql-apis}
+# GraphQL API 살펴보기 {#explore-graphql-apis}
 
 AEM의 GraphQL API는 컨텐츠 조각의 데이터를 다운스트림 애플리케이션에 노출하는 강력한 쿼리 언어를 제공합니다. 컨텐츠 조각 모델은 컨텐츠 조각에서 사용하는 데이터 스키마를 정의합니다. 컨텐츠 조각 모델을 만들거나 업데이트할 때마다 스키마가 변환되어 GraphQL API를 구성하는 &quot;그래프&quot;에 추가됩니다.
 
-이 장에서는 다음과 같은 IDE를 사용하여 컨텐츠를 수집하는 몇 가지 일반적인 GraphQL 쿼리를 살펴봅니다 [GraphiQL](https://github.com/graphql/graphiql). GraphiQL IDE를 사용하면 반환된 쿼리 및 데이터를 빠르게 테스트하고 세분화할 수 있습니다. 또한 설명서에 쉽게 액세스할 수 있으므로 사용 가능한 방법을 쉽게 배우고 이해할 수 있습니다.
+이 장에서 다음과 같은 IDE를 사용하여 컨텐츠를 수집하기 위한 몇 가지 일반적인 GraphQL 쿼리를 살펴보겠습니다 [GraphiQL](https://github.com/graphql/graphiql). GraphiQL IDE를 사용하면 반환된 쿼리 및 데이터를 빠르게 테스트하고 세분화할 수 있습니다. 또한 설명서에 쉽게 액세스할 수 있으므로 사용 가능한 방법을 쉽게 배우고 이해할 수 있습니다.
 
 ## 사전 요구 사항 {#prerequisites}
 
@@ -29,7 +29,7 @@ AEM의 GraphQL API는 컨텐츠 조각의 데이터를 다운스트림 애플리
 
 ## 목표 {#objectives}
 
-* GraphQL 구문을 사용하여 쿼리를 구성하는 방법을 알아봅니다.
+* GraphiQL 도구를 사용하여 GraphQL 구문을 사용하여 쿼리를 구성하는 방법을 알아봅니다.
 * 컨텐츠 조각 목록 및 단일 컨텐츠 조각을 쿼리하는 방법을 알아봅니다.
 * 특정 데이터 특성을 필터링하고 요청하는 방법을 알아봅니다.
 * 여러 컨텐츠 조각 모델 쿼리를 조인하는 방법을 알아봅니다
@@ -37,7 +37,7 @@ AEM의 GraphQL API는 컨텐츠 조각의 데이터를 다운스트림 애플리
 
 ## GraphQL 끝점 활성화 {#enable-graphql-endpoint}
 
-GraphQL 종단점은 컨텐츠 조각에 대한 GraphQL API 쿼리를 사용하도록 구성해야 합니다.
+컨텐츠 조각에 대해 GraphQL API 쿼리를 활성화하려면 GraphQL 종단점을 구성해야 합니다.
 
 1. AEM 시작 화면에서 로 이동합니다. **도구** > **일반** > **GraphQL**.
 
@@ -46,19 +46,19 @@ GraphQL 종단점은 컨텐츠 조각에 대한 GraphQL API 쿼리를 사용하�
 1. 탭 **만들기** 오른쪽 상단 모서리의 결과 대화 상자에서 다음 값을 입력합니다.
 
    * 이름*: **내 프로젝트 끝점**.
-   * GraphQL 스키마를 사용하여 다음 방법으로 제공됩니다.. *: **내 프로젝트**
+   * 에서 제공하는 GraphQL 스키마 사용.. *: **내 프로젝트**
 
    ![GraphQL 끝점 만들기](assets/explore-graphql-api/create-graphql-endpoint.png)
 
    탭 **만들기** 엔드포인트를 저장하려면 을 클릭합니다.
 
-   프로젝트 구성을 기반으로 만들어진 GraphQL 끝점은 해당 프로젝트에 속하는 모델에 대해서만 쿼리를 사용할 수 있습니다. 이 경우 **개인** 및 **팀** 모델을 사용할 수 있습니다.
+   프로젝트 구성을 기반으로 만들어진 GraphQL 종단점은 해당 프로젝트에 속하는 모델에 대해서만 쿼리를 사용할 수 있습니다. 이 경우 **개인** 및 **팀** 모델을 사용할 수 있습니다.
 
    >[!NOTE]
    >
    > 여러 구성의 모델에 대한 쿼리를 활성화하도록 전역 끝점을 만들 수도 있습니다. 이 기능은 추가 보안 취약점으로 환경을 개방할 수 있으므로 주의해서 사용해야 하며, AEM 관리의 복잡도를 크게 향상시킬 수 있습니다.
 
-1. 이제 환경에 GraphQL 엔드포인트가 하나 활성화되어 있어야 합니다.
+1. 이제 환경에 하나의 GraphQL 종단점이 활성화되어 있어야 합니다.
 
    ![graphql 종단점 사용](assets/explore-graphql-api/enabled-graphql-endpoints.png)
 
@@ -66,7 +66,7 @@ GraphQL 종단점은 컨텐츠 조각에 대한 GraphQL API 쿼리를 사용하�
 
 다음 [GraphiQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html) 도구를 사용하여 개발자가 현재 AEM 환경의 컨텐츠에 대한 쿼리를 만들고 테스트할 수 있습니다. GraphiQL 도구를 사용하여 다음을 수행할 수도 있습니다 **유지 또는 저장** 프로덕션 설정에서 클라이언트 응용 프로그램에서 사용할 쿼리입니다.
 
-이제 내장된 GraphiQL IDE를 사용하여 AEM GraphQL API의 강력한 기능을 탐색합니다.
+이제 내장된 GraphiQL IDE를 사용하여 AEM GraphQL API의 기능을 살펴보십시오.
 
 1. AEM 시작 화면에서 로 이동합니다. **도구** > **일반** > **GraphQL 쿼리 편집기**.
 
@@ -111,7 +111,7 @@ GraphQL 종단점은 컨텐츠 조각에 대한 GraphQL API 쿼리를 사용하�
 
    ![단축키 및 설명 결과](assets/explore-graphql-api/updated-query-shortname-description.png)
 
-   다음 `shortname` 는 간단한 자산이며 `description` 는 여러 줄 텍스트 필드이며 GraphQL API에서는 다음과 같은 결과에 대한 다양한 형식을 선택할 수 있습니다 `html`, `markdown`, `json`, 또는 `plaintext`.
+   다음 `shortname` 는 간단한 자산이며 `description` 는 여러 줄 텍스트 필드이며 GraphQL API를 사용하면 다음과 같은 결과에 대한 다양한 형식을 선택할 수 있습니다 `html`, `markdown`, `json`, 또는 `plaintext`.
 
 ### 중첩된 조각에 대한 쿼리
 
@@ -215,7 +215,7 @@ GraphQL 종단점은 컨텐츠 조각에 대한 GraphQL API 쿼리를 사용하�
 
    ![쿼리 변수를 사용하여 필터링](assets/explore-graphql-api/using-query-variables-filter.png)
 
-   복잡한 쿼리를 필터링하고 만드는 다른 여러 옵션이 있습니다. [AEM에서 GraphQL을 사용하는 방법 학습 - 샘플 컨텐츠 및 쿼리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html).
+   복잡한 쿼리를 필터링하고 만드는 다른 여러 옵션이 있습니다. [AEM에서 GraphQL 사용 방법 학습 - 샘플 컨텐츠 및 쿼리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html).
 
 1. 프로필 사진을 가져오도록 위의 쿼리 개선
 
@@ -279,7 +279,7 @@ GraphQL 종단점은 컨텐츠 조각에 대한 GraphQL API 쿼리를 사용하�
 
 ## 쿼리 유지 {#persist-queries}
 
-개발자가 쿼리에서 반환된 쿼리 및 결과 데이터에 만족하면 다음 단계는 쿼리를 AEM에 저장하거나 유지하는 것입니다. 다음 [지속되는 쿼리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html) 는 GraphQL API를 클라이언트 애플리케이션에 노출하기 위한 기본 메커니즘입니다. 쿼리가 유지되면 GET 요청을 사용하여 요청하고 Dispatcher 및 CDN 레이어에 캐시할 수 있습니다. 지속되는 쿼리의 성능이 훨씬 향상되었습니다. 성능 이점 외에도 지속적인 쿼리는 추가 데이터가 클라이언트 애플리케이션에 실수로 노출되지 않도록 합니다. 에 대한 자세한 내용 [지속되는 쿼리는 여기에서 찾을 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html).
+개발자가 쿼리에서 반환된 쿼리 및 결과 데이터에 만족하면 다음 단계는 쿼리를 AEM에 저장하거나 유지하는 것입니다. 다음 [지속되는 쿼리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html) 은 GraphQL API를 클라이언트 애플리케이션에 노출하기 위해 선호되는 메커니즘입니다. 쿼리가 유지되면 GET 요청을 사용하여 요청하고 Dispatcher 및 CDN 레이어에 캐시할 수 있습니다. 지속되는 쿼리의 성능이 훨씬 향상되었습니다. 성능 이점 외에도 지속적인 쿼리는 추가 데이터가 클라이언트 애플리케이션에 실수로 노출되지 않도록 합니다. 에 대한 자세한 내용 [지속되는 쿼리는 여기에서 찾을 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html).
 
 그런 다음 두 개의 간단한 쿼리를 유지합니다. 다음 장에서 사용됩니다.
 
@@ -371,7 +371,7 @@ GraphQL 종단점은 컨텐츠 조각에 대한 GraphQL API 쿼리를 사용하�
    ![최종 지속적인 쿼리](assets/explore-graphql-api/final-persisted-queries.png)
 
 
-## GraphQL 끝점 및 지속된 쿼리 게시
+## GraphQL 끝점 및 지속적인 쿼리 게시
 
 검토 및 확인 시 를 게시합니다. `GraphQL Endpoint` &amp; `Persisted Queries`
 
@@ -395,29 +395,17 @@ GraphQL 종단점은 컨텐츠 조각에 대한 GraphQL API 쿼리를 사용하�
 
 ## 추가 리소스
 
-GraphQL 쿼리에 대해 자세히 알아보기 [AEM에서 GraphQL을 사용하는 방법 학습 - 샘플 컨텐츠 및 쿼리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html).
+의 GraphQL 쿼리에 대해 자세히 알아보십시오 [AEM에서 GraphQL 사용 방법 학습 - 샘플 컨텐츠 및 쿼리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html).
 
 ## 축하합니다! {#congratulations}
 
-축하합니다. 여러 GraphQL 쿼리를 만들고 실행했습니다.
+축하합니다. 여러 GraphQL 쿼리를 만들고 실행했습니다!
 
 ## 다음 단계 {#next-steps}
 
-다음 장에서 [React 앱 빌드](./graphql-and-react-app.md)외부 애플리케이션이 AEM GraphQL 끝점을 쿼리하고 이러한 두 개의 지속적인 쿼리를 사용하는 방법을 살펴봅니다. GraphQL 쿼리 실행 중에 몇 가지 기본적인 오류 처리가 도입되었습니다.
+다음 장에서 [React 앱 빌드](./graphql-and-react-app.md), 외부 애플리케이션이 AEM GraphQL 종단점을 쿼리하고 이러한 두 개의 지속적인 쿼리를 사용하는 방법을 살펴봅니다. GraphQL 쿼리 실행 중에 몇 가지 기본적인 오류 처리가 도입되었습니다.
 
 ## GraphiQL 도구 설치(선택 사항) {#install-graphiql}
 
-GraphiQL IDE 도구의 일부 버전의 AEM(6.X.X)에서는 다음 지침을 사용하여 수동으로 설치해야 합니다.
+GraphiQL IDE 도구를 수동으로 설치해야 하는 AEM(6.X.X) 버전 [지침](../how-to/install-graphiql-aem-6-5.md).
 
-1. **[소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)** > **AEM as a Cloud Service**&#x200B;로 이동합니다.
-1. “GraphiQL”을 검색합니다(**GraphiQL**&#x200B;에 **i**&#x200B;를 반드시 포함하십시오).
-1. 최신 **GraphiQL 콘텐츠 패키지 v.x.x.x** 다운로드
-
-   ![GraphiQL 패키지 다운로드](assets/explore-graphql-api/software-distribution.png)
-
-   zip 파일은 직접 설치할 수 있는 AEM 패키지입니다.
-
-1. AEM 시작 메뉴에서 **도구** > **배포** > **패키지**.
-1. **패키지 업로드**&#x200B;를 클릭하고 이전 단계에서 다운로드한 패키지를 선택합니다. **설치**&#x200B;를 클릭하여 패키지를 설치합니다.
-
-   ![GraphiQL 패키지 설치](assets/explore-graphql-api/install-graphiql-package.png)
