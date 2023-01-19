@@ -12,9 +12,9 @@ level: Beginner
 exl-id: 58851624-71c9-4745-aaaf-305acf6ccb14
 last-substantial-update: 2022-07-20T00:00:00Z
 thumbnail: aem-local-dev-env.jpg
-source-git-commit: a156877ff4439ad21fb79f231d273b8983924199
+source-git-commit: 2b188cbe0ba968b553a20629b89edf5ed377f300
 workflow-type: tm+mt
-source-wordcount: '2538'
+source-wordcount: '2603'
 ht-degree: 1%
 
 ---
@@ -45,37 +45,46 @@ AEM을 처음 사용하는 경우 두 가지 기본 실행 모드를 설치할 �
 1. Java™이 설치되어 있는지 확인합니다.
    * 기본 설정 [Java™ JDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atologing&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14) AEM 6.5+
    * [Java™ JDK 8](https://www.oracle.com/java/technologies/downloads/) AEM 6.5 이전 AEM 버전
-2. 의 사본 가져오기 [AEM QuickStart Jar 및 [!DNL license.properties]](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html).
-3. 다음과 같이 컴퓨터에 폴더 구조를 만듭니다.
+1. 의 사본 가져오기 [AEM QuickStart Jar 및 [!DNL license.properties]](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html).
+1. 다음과 같이 컴퓨터에 폴더 구조를 만듭니다.
 
-   ```plain
-   ~/aem-sdk
-       /author
-       /publish
-   ```
+```plain
+~/aem-sdk
+    /author
+    /publish
+```
 
-4. 이름 바꾸기 [!DNL QuickStart] JAR에서 로 ***aem-author-p4502.jar*** 그리고 그 밑에 놓으시면 `/author` 디렉토리. 추가 ***[!DNL license.properties]*** 파일 아래 `/author` 디렉토리.
-5. 의 사본 만들기 [!DNL QuickStart] JAR, 이름을 로 변경합니다. ***aem-publish-p4503.jar*** 그리고 그 밑에 놓으시면 `/publish` 디렉토리. 의 사본 추가 ***[!DNL license.properties]*** 파일 아래 `/publish` 디렉토리.
+1. 이름 바꾸기 [!DNL QuickStart] JAR에서 로 ***aem-author-p4502.jar*** 그리고 그 밑에 놓으시면 `/author` 디렉토리. 추가 ***[!DNL license.properties]*** 파일 아래 `/author` 디렉토리.
 
-   ```plain
-   ~/aem-sdk
-       /author
-           + aem-author-p4502.jar
-           + license.properties
-       /publish
-           + aem-publish-p4503.jar
-           + license.properties
-   ```
+1. 의 사본 만들기 [!DNL QuickStart] JAR, 이름을 로 변경합니다. ***aem-publish-p4503.jar*** 그리고 그 밑에 놓으시면 `/publish` 디렉토리. 의 사본 추가 ***[!DNL license.properties]*** 파일 아래 `/publish` 디렉토리.
 
-6. 를 두 번 클릭합니다. ***aem-author-p4502.jar*** 설치할 파일 **작성자** 인스턴스. 포트에서 실행되는 작성자 인스턴스가 시작됩니다 **4502년** 로컬 컴퓨터에 있는 Analytics Mobile Apps 또는 Analytics Premium에서 사용할 수 없습니다.
+```plain
+~/aem-sdk
+    /author
+        + aem-author-p4502.jar
+        + license.properties
+    /publish
+        + aem-publish-p4503.jar
+        + license.properties
+```
 
-   를 두 번 클릭합니다. ***aem-publish-p4503.jar*** 설치할 파일 **게시** 인스턴스. 포트에서 실행되는 게시 인스턴스가 시작됩니다 **4503년** 로컬 컴퓨터에 있는 Analytics Mobile Apps 또는 Analytics Premium에서 사용할 수 없습니다.
+1. 를 두 번 클릭합니다. ***aem-author-p4502.jar*** 설치할 파일 **작성자** 인스턴스. 포트에서 실행되는 작성자 인스턴스가 시작됩니다 **4502년** 로컬 컴퓨터에 있는 Analytics Mobile Apps 또는 Analytics Premium에서 사용할 수 없습니다.
 
-   >[!NOTE]
-   >
-   >개발 시스템의 하드웨어에 따라 두 가지 모두 **작성자 및 게시** 인스턴스가 동시에 실행됩니다. 로컬 설정에서 둘 다 동시에 실행할 필요가 거의 없습니다.
+를 두 번 클릭합니다. ***aem-publish-p4503.jar*** 설치할 파일 **게시** 인스턴스. 포트에서 실행되는 게시 인스턴스가 시작됩니다 **4503년** 로컬 컴퓨터에 있는 Analytics Mobile Apps 또는 Analytics Premium에서 사용할 수 없습니다.
 
-   자세한 내용은 [AEM 인스턴스 배포 및 유지 관리](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html).
+>[!NOTE]
+>
+>개발 시스템의 하드웨어에 따라 두 가지 모두 **작성자 및 게시** 인스턴스가 동시에 실행됩니다. 로컬 설정에서 둘 다 동시에 실행할 필요가 거의 없습니다.
+
+### 명령줄 사용
+
+JAR 파일을 두 번 클릭하는 대신 명령줄에서 AEM을 시작하거나 스크립트를 만드는 것입니다(`.bat` 또는 `.sh`)을 사용할 수 있습니다. 다음은 샘플 명령의 예입니다.
+
+```shell
+$ java -Xmx2048M -Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=30303 -jar aem-author-p4502.jar -gui -r"author,localdev"
+```
+
+여기, `-X` JVM 옵션 및 `-D` 자세한 내용은 추가적인 프레임워크 속성을 참조하십시오. [AEM 인스턴스 배포 및 유지 관리](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html) 및 [Quickstart 파일에서 추가 옵션을 사용할 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/custom-standalone-install.html#further-options-available-from-the-quickstart-file).
 
 ## Apache Maven 설치
 
@@ -94,18 +103,18 @@ AEM을 처음 사용하는 경우 두 가지 기본 실행 모드를 설치할 �
    * [!DNL macOS] 사용자는 [홈브루](https://brew.sh/)
 3. 확인 **[!DNL Maven]** 는 새 명령줄 터미널을 열고 다음을 실행하여 설치됩니다.
 
-   ```shell
-   $ mvn --version
-   Apache Maven 3.3.9
-   Maven home: /Library/apache-maven-3.3.9
-   Java version: 1.8.0_111, vendor: Oracle Corporation
-   Java home: /Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre
-   Default locale: en_US, platform encoding: UTF-8
-   ```
+```shell
+$ mvn --version
+Apache Maven 3.3.9
+Maven home: /Library/apache-maven-3.3.9
+Java version: 1.8.0_111, vendor: Oracle Corporation
+Java home: /Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre
+Default locale: en_US, platform encoding: UTF-8
+```
 
-   >[!NOTE]
-   >
-   > In, the last adding of `adobe-public` Maven 프로필을 가리키는 데 필요합니다. `nexus.adobe.com` AEM 객체를 다운로드하려면 다음을 수행하십시오. 이제 Maven Central 및 `adobe-public` 프로필이 필요하지 않습니다.
+>[!NOTE]
+>
+> In, the last adding of `adobe-public` Maven 프로필을 가리키는 데 필요합니다. `nexus.adobe.com` AEM 객체를 다운로드하려면 다음을 수행하십시오. 이제 Maven Central 및 `adobe-public` 프로필이 필요하지 않습니다.
 
 ## 통합 개발 환경 설정
 
@@ -133,7 +142,7 @@ IDE를 사용하는 경우 반드시 확인하십시오 `classic` maven 프로�
 
 #### 설치 및 설정
 
-1. 를 다운로드하여 설치합니다. [!DNL Eclipse] IDE 대상 [!DNL Java™™™™™™™™ EE Developers]: [https://www.eclipse.org](https://www.eclipse.org/)
+1. 를 다운로드하여 설치합니다. [!DNL Eclipse] IDE 대상 [!DNL Java™ EE Developers]: [https://www.eclipse.org](https://www.eclipse.org/)
 1. 지침에 따라 을 설치합니다 [!DNL AEM Developer Tools] 플러그인: [https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html)
 
 >[!VIDEO](https://video.tv.adobe.com/v/25906?quality=12&learn=on)
