@@ -8,9 +8,9 @@ role: Developer
 level: Intermediate
 kt: 11743
 last-substantial-update: 2023-01-17T00:00:00Z
-source-git-commit: de2788d8f3971a47fca53e35ee84cbbaa0137140
+source-git-commit: 643a9844f19aa1bd153661540ec7f7398a35118e
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '469'
 ht-degree: 1%
 
 ---
@@ -69,21 +69,24 @@ JWT_METASCOPES=https://ims-na1.adobelogin.com/s/ent_analytics_bulk_ingest_sdk,ht
 >[!TAB macOS]
 
 1. 열기 `Terminal`
-1. `$ base64 -i /path/to/private.key | pbcopy`
+1. 명령 실행 `base64 -i /path/to/private.key | pbcopy`
 1. base64 출력은 클립보드에 자동으로 복사됩니다
+1. 에 붙여넣기 `.env` 해당 키의 값으로
 
 >[!TAB Windows]
 
 1. 열기 `Command Prompt`
-1. `$ certutil -encode C:\path\to\private.key C:\path\to\encoded-private.key`
-1. `$ findstr /v CERTIFICATE C:\path\to\encoded-private.key`
+1. 명령 실행 `certutil -encode C:\path\to\private.key C:\path\to\encoded-private.key`
+1. 명령 실행 `findstr /v CERTIFICATE C:\path\to\encoded-private.key`
 1. 클립보드에 base64 출력 복사
+1. 에 붙여넣기 `.env` 해당 키의 값으로
 
 >[!TAB Linux®]
 
 1. 터미널 열기
-1. `$ base64 private.key`
+1. 명령 실행 `base64 private.key`
 1. 클립보드에 base64 출력 복사
+1. 에 붙여넣기 `.env` 해당 키의 값으로
 
 >[!ENDTABS]
 
