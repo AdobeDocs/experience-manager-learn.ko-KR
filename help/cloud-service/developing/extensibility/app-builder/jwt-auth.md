@@ -8,9 +8,9 @@ role: Developer
 level: Intermediate
 kt: 11743
 last-substantial-update: 2023-01-17T00:00:00Z
-source-git-commit: 0990fc230e2a36841380b5b0c6cd94dca24614fa
+source-git-commit: de2788d8f3971a47fca53e35ee84cbbaa0137140
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '436'
 ht-degree: 1%
 
 ---
@@ -70,14 +70,14 @@ JWT_METASCOPES=https://ims-na1.adobelogin.com/s/ent_analytics_bulk_ingest_sdk,ht
 
 1. 열기 `Terminal`
 1. `$ base64 -i /path/to/private.key | pbcopy`
-
-base64 출력은 클립보드에 자동으로 복사됩니다
+1. base64 출력은 클립보드에 자동으로 복사됩니다
 
 >[!TAB Windows]
 
 1. 열기 `Command Prompt`
 1. `$ certutil -encode C:\path\to\private.key C:\path\to\encoded-private.key`
-1. 의 내용 복사 `encoded-private.key` 클립보드에
+1. `$ findstr /v CERTIFICATE C:\path\to\encoded-private.key`
+1. 클립보드에 base64 출력 복사
 
 >[!TAB Linux®]
 
@@ -87,14 +87,14 @@ base64 출력은 클립보드에 자동으로 복사됩니다
 
 >[!ENDTABS]
 
-예를 들어 다음 값을 `JWT_PRIVATE_KEY` 키 `.env`:
+예를 들어 다음 base64로 인코딩된 개인 키가 `JWT_PRIVATE_KEY` 키 `.env`:
 
 ```
 ...
 JWT_PRIVATE_KEY=LS0tLS1C..kQgUFJJVkFURSBLRVktLS0tLQ==
 ```
 
-## 확장 구성
+## 입력 매핑
 
 JWT 자격 증명 값을 `.env` 파일에서 읽을 수 있도록 AppBuilder 작업 입력에 매핑해야 합니다. 이렇게 하려면 `ext.config.yaml` 작업 `inputs` 형식으로: `INPUT_NAME=$ENV_KEY`.
 
@@ -130,7 +130,7 @@ runtimeManifest:
 아래에 정의된 키 `inputs` 다음 위치에서 사용 가능 `params` App Builder 작업에 제공된 개체입니다.
 
 
-## JWT 자격 증명을 액세스 토큰으로 변환
+## 토큰에 액세스할 JWT 자격 증명
 
 앱 빌더 작업에서 JWT 자격 증명은 `params` 개체 및 사용 가능 [`@adobe/jwt-auth`](https://www.npmjs.com/package/@adobe/jwt-auth) 액세스 토큰을 생성하여 다른 Adobe API 및 서비스에 액세스할 수 있습니다.
 
