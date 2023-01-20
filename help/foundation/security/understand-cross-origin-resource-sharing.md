@@ -11,9 +11,9 @@ topic: Security
 role: Developer
 level: Intermediate
 exl-id: 6009d9cf-8aeb-4092-9e8c-e2e6eec46435
-source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
+source-git-commit: 7c2115945e2d62f52c777bba4d736ecd3262eecc
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '913'
 ht-degree: 1%
 
 ---
@@ -89,38 +89,84 @@ CORS 구성은 AEM에서 OSGi 구성 팩토리로 관리되며 각 정책은 팩
 
 사이트 1은 컨텐츠를 사용하는 기본적이고 익명으로 액세스할 수 있는 읽기 전용 시나리오입니다 [!DNL GET] 요청:
 
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
-    jcr:primaryType="sling:OsgiConfig"
-    alloworigin="[https://site1.com]"
-    alloworiginregexp="[]"
-    allowedpaths="[/content/site1/.*]"
-    exposedheaders="[]"
-    maxage="{Long}1800"
-    supportedheaders="[Origin,Accept,X-Requested-With,Content-Type,
-Access-Control-Request-Method,Access-Control-Request-Headers]"
-    supportedmethods="[GET]"
-    supportscredentials="{Boolean}false"
-/>
+```json
+{
+  "supportscredentials":false,
+  "exposedheaders":[
+    ""
+  ],
+  "supportedmethods":[
+    "GET",
+    "HEAD",
+    "OPTIONS"
+  ],
+  "alloworigin":[
+    "http://127.0.0.1:3000",
+    "https://site1.com"
+    
+  ],
+  "maxage:Integer": 1800,
+  "alloworiginregexp":[
+    "http://localhost:.*"
+    "https://.*\.site1\.com"
+  ],
+  "allowedpaths":[
+    "/content/_cq_graphql/site1/endpoint.json",
+    "/graphql/execute.json.*",
+    "/content/site1/.*"
+  ],
+  "supportedheaders":[
+    "Origin",
+    "Accept",
+    "X-Requested-With",
+    "Content-Type",
+    "Access-Control-Request-Method",
+    "Access-Control-Request-Headers",
+  ]
+}
 ```
 
-사이트 2가 더 복잡하며 승인되고 안전하지 않은 요청이 필요합니다.
+사이트 2가 더 복잡하며 승인되고 뮤팅(POST, PUT, DELETE) 요청이 필요합니다.
 
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
-    jcr:primaryType="sling:OsgiConfig"
-    alloworigin="[https://site2.com]"
-    alloworiginregexp="[]"
-    allowedpaths="[/content/site2/.*,/libs/granite/csrf/token.json]"
-    exposedheaders="[]"
-    maxage="{Long}1800"
-    supportedheaders="[Origin,Accept,X-Requested-With,Content-Type,
-Access-Control-Request-Method,Access-Control-Request-Headers,Authorization,CSRF-Token]"
-    supportedmethods="[GET,HEAD,POST,DELETE,OPTIONS,PUT]"
-    supportscredentials="{Boolean}true"
-/>
+```json
+{
+  "supportscredentials":true,
+  "exposedheaders":[
+    ""
+  ],
+  "supportedmethods":[
+    "GET",
+    "HEAD"
+    "POST",
+    "DELETE",
+    "OPTIONS",
+    "PUT"
+  ],
+  "alloworigin":[
+    "http://127.0.0.1:3000",
+    "https://site2.com"
+    
+  ],
+  "maxage:Integer": 1800,
+  "alloworiginregexp":[
+    "http://localhost:.*"
+    "https://.*\.site2\.com"
+  ],
+  "allowedpaths":[
+    "/content/site2/.*",
+    "/libs/granite/csrf/token.json",
+  ],
+  "supportedheaders":[
+    "Origin",
+    "Accept",
+    "X-Requested-With",
+    "Content-Type",
+    "Access-Control-Request-Method",
+    "Access-Control-Request-Headers",
+    "Authorization",
+    "CSRF-Token"
+  ]
+}
 ```
 
 ## Dispatcher 캐싱 문제 및 구성 {#dispatcher-caching-concerns-and-configuration}
