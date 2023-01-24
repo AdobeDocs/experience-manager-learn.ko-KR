@@ -12,10 +12,10 @@ kt: 3418
 thumbnail: 30152.jpg
 exl-id: bb0cae58-79bd-427f-9116-d46afabdca59
 recommendations: noDisplay, noCatalog
-source-git-commit: de2fa2e4c29ce6db31233ddb1abc66a48d2397a6
+source-git-commit: bbdb045edf5f2c68eec5094e55c1688e725378dc
 workflow-type: tm+mt
-source-wordcount: '1838'
-ht-degree: 4%
+source-wordcount: '1820'
+ht-degree: 3%
 
 ---
 
@@ -37,21 +37,21 @@ ht-degree: 4%
 
 >[!VIDEO](https://video.tv.adobe.com/v/30152/?quality=12&learn=on)
 
-이 장에서는 [AEM 프로젝트 원형](https://github.com/adobe/aem-project-archetype). AEM 프로젝트에는 Sites 구현에 사용되는 모든 코드, 콘텐츠 및 구성이 포함되어 있습니다. 이 장에서 생성된 프로젝트는 WKND Site의 구현 기반 역할을 하며, 향후 장에 구축됩니다.
+이 장에서는 [AEM 프로젝트 원형](https://github.com/adobe/aem-project-archetype). AEM 프로젝트에는 Sites 구현에 사용되는 전체 코드, 콘텐츠 및 구성이 포함되어 있습니다. 이 장에서 생성된 프로젝트는 WKND Site의 구현 기반 역할을 하며, 향후 장에 구축됩니다.
 
-**Maven 프로젝트란?** - [Apache Maven](https://maven.apache.org/) 는 프로젝트를 빌드하기 위한 소프트웨어 관리 도구입니다. *모든 Adobe Experience Manager* 구현에서는 Maven 프로젝트를 사용하여 AEM 맨 위에 사용자 지정 코드를 작성, 관리 및 배포합니다.
+**Maven 프로젝트란?** - [Apache Maven](https://maven.apache.org/) 는 프로젝트를 빌드하기 위한 소프트웨어 관리 도구입니다. *모든 Adobe Experience Manager* 구현에서는 Maven 프로젝트를 사용하여 AEM 맨 위에 사용자 지정 코드를 작성, 관리 및 배포할 수 있습니다.
 
-**Maven 원형은 무엇입니까?** - A [Maven 원형](https://maven.apache.org/archetype/index.html) 는 새 프로젝트를 생성하기 위한 템플릿 또는 패턴입니다. AEM 프로젝트 원형을 사용하면 사용자 지정 네임스페이스로 새 프로젝트를 생성하고 우수 사례를 따르는 프로젝트 구조를 포함하여 프로젝트를 크게 가속화할 수 있습니다.
+**Maven 원형은 무엇입니까?** - A [Maven 원형](https://maven.apache.org/archetype/index.html) 는 새 프로젝트를 생성하기 위한 템플릿 또는 패턴입니다. AEM 프로젝트 원형은 사용자 지정 네임스페이스로 새 프로젝트를 생성하고 우수 사례를 따르는 프로젝트 구조를 포함하므로 프로젝트 개발을 크게 가속화합니다.
 
 ## 프로젝트를 만듭니다 {#create}
 
-AEM용 Maven 다중 모듈 프로젝트를 만드는 두 가지 옵션이 있습니다. 이 자습서에서는 [Maven AEM 프로젝트 원형 **35**](https://github.com/adobe/aem-project-archetype). Cloud Manager도 [ui 마법사 제공](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/create-application-project/using-the-wizard.html) AEM 응용 프로그램 프로젝트 생성을 시작하기 위해 Cloud Manager UI에서 생성한 기본 프로젝트는 원형 그대로 사용하는 구조와 같습니다.
+AEM용 Maven 다중 모듈 프로젝트를 만드는 두 가지 옵션이 있습니다. 이 자습서에서는 [Maven AEM 프로젝트 원형 **35**](https://github.com/adobe/aem-project-archetype). Cloud Manager도 [ui 마법사 제공](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/project-creation/using-the-wizard.html) AEM 응용 프로그램 프로젝트 생성을 시작하기 위해 Cloud Manager UI에서 생성한 기본 프로젝트는 원형 그대로 사용하는 구조와 같습니다.
 
 >[!NOTE]
 >
 >이 자습서에서는 버전을 사용합니다 **35** 원형. 항상 을 사용하는 것이 가장 좋습니다 **최신** 새 프로젝트를 생성할 원형 버전입니다.
 
-다음 일련의 단계는 UNIX 기반 명령줄 단말을 사용하여 수행되지만 Windows 단말을 사용하는 경우에는 유사해야 합니다.
+다음 일련의 단계는 UNIX® 기반 명령줄 터미널을 사용하여 수행되지만 Windows 터미널을 사용하는 경우 유사해야 합니다.
 
 1. 명령줄 터미널을 엽니다. Maven이 설치되어 있는지 확인합니다.
 
@@ -62,7 +62,7 @@ AEM용 Maven 다중 모듈 프로젝트를 만드는 두 가지 옵션이 있습
    Java version: 11.0.4, vendor: Oracle Corporation, runtime: /Library/Java/JavaVirtualMachines/jdk-11.0.4.jdk/Contents/Home
    ```
 
-1. AEM 프로젝트를 생성할 디렉토리로 이동합니다. 이 디렉토리는 프로젝트의 소스 코드를 유지 관리할 모든 디렉토리일 수 있습니다. 예를 들어 이름이 인 디렉토리 `code` 사용자의 홈 디렉토리 아래
+1. AEM 프로젝트를 생성할 디렉토리로 이동합니다. 이 디렉토리는 프로젝트의 소스 코드를 유지 관리할 모든 디렉토리일 수 있습니다. 예를 들어 이름이 인 디렉토리는 `code` 사용자의 홈 디렉토리 아래
 
    ```shell
    $ cd ~/code
@@ -74,7 +74,7 @@ AEM용 Maven 다중 모듈 프로젝트를 만드는 두 가지 옵션이 있습
    mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate \
        -D archetypeGroupId=com.adobe.aem \
        -D archetypeArtifactId=aem-project-archetype \
-       -D archetypeVersion=35 \
+       -D archetypeVersion=39 \
        -D appTitle="WKND Sites Project" \
        -D appId="wknd" \
        -D groupId="com.adobe.aem.guides" \
@@ -86,7 +86,7 @@ AEM용 Maven 다중 모듈 프로젝트를 만드는 두 가지 옵션이 있습
 
    >[!NOTE]
    >
-   > AEM 6.5.10+를 타깃팅하는 경우 `aemVersion="cloud"` with `aemVersion="6.5.10"`.
+   > AEM 6.5.14+ 바꾸기를 타깃팅하려면 다음을 수행하십시오 `aemVersion="cloud"` with `aemVersion="6.5.14"`.
 
    프로젝트 구성에 사용 가능한 속성의 전체 목록입니다 [여기에서 찾을 수 있습니다.](https://github.com/adobe/aem-project-archetype#available-properties).
 
@@ -105,7 +105,6 @@ AEM용 Maven 다중 모듈 프로젝트를 만드는 두 가지 옵션이 있습
            |--- ui.tests /
            |--- it.tests/
            |--- dispatcher/
-           |--- analyse/
            |--- pom.xml
            |--- README.md
            |--- .gitignore
@@ -133,33 +132,32 @@ AEM용 Maven 다중 모듈 프로젝트를 만드는 두 가지 옵션이 있습
    ```
    ...
    [INFO] ------------------------------------------------------------------------
-   [INFO] Reactor Summary for aem-guides-wknd 0.0.1-SNAPSHOT:
-   [INFO]
-   [INFO] aem-guides-wknd .................................... SUCCESS [  0.269 s]
-   [INFO] WKND Sites Project - Core .......................... SUCCESS [  8.047 s]
-   [INFO] WKND Sites Project - UI Frontend ................... SUCCESS [01:02 min]
-   [INFO] WKND Sites Project - Repository Structure Package .. SUCCESS [  1.985 s]
-   [INFO] WKND Sites Project - UI apps ....................... SUCCESS [  8.037 s]
-   [INFO] WKND Sites Project - UI content .................... SUCCESS [  4.672 s]
-   [INFO] WKND Sites Project - UI config ..................... SUCCESS [  0.313 s]
-   [INFO] WKND Sites Project - All ........................... SUCCESS [  0.270 s]
-   [INFO] WKND Sites Project - Integration Tests ............. SUCCESS [ 15.571 s]
-   [INFO] WKND Sites Project - Dispatcher .................... SUCCESS [  0.232 s]
-   [INFO] WKND Sites Project - UI Tests ...................... SUCCESS [  0.728 s]
-   [INFO] WKND Sites Project - Project Analyser .............. SUCCESS [ 33.398 s]
+   [INFO] Reactor Summary for WKND Sites Project 0.0.1-SNAPSHOT:
+   [INFO] 
+   [INFO] WKND Sites Project ................................. SUCCESS [  0.113 s]
+   [INFO] WKND Sites Project - Core .......................... SUCCESS [  3.136 s]
+   [INFO] WKND Sites Project - UI Frontend ................... SUCCESS [  4.461 s]
+   [INFO] WKND Sites Project - Repository Structure Package .. SUCCESS [  0.359 s]
+   [INFO] WKND Sites Project - UI apps ....................... SUCCESS [  1.732 s]
+   [INFO] WKND Sites Project - UI content .................... SUCCESS [  0.956 s]
+   [INFO] WKND Sites Project - UI config ..................... SUCCESS [  0.064 s]
+   [INFO] WKND Sites Project - All ........................... SUCCESS [  8.229 s]
+   [INFO] WKND Sites Project - Integration Tests ............. SUCCESS [  3.329 s]
+   [INFO] WKND Sites Project - Dispatcher .................... SUCCESS [  0.027 s]
+   [INFO] WKND Sites Project - UI Tests ...................... SUCCESS [  0.032 s]
    [INFO] ------------------------------------------------------------------------
    [INFO] BUILD SUCCESS
    [INFO] ------------------------------------------------------------------------
-   [INFO] Total time:  02:18 min
-   [INFO] Finished at: 2021-01-31T12:33:56-08:00
-   [INFO] ------------------------------------------------------------------------
+   [INFO] Total time:  23.189 s
+   [INFO] Finished at: 2023-01-10T11:12:23-05:00
+   [INFO] ------------------------------------------------------------------------    
    ```
 
    Maven 프로필 `autoInstallSinglePackage` 프로젝트의 개별 모듈을 컴파일하고 단일 패키지를 AEM 인스턴스에 배포합니다. 기본적으로 이 패키지는 포트에서 로컬로 실행되는 AEM 인스턴스에 배포됩니다 **4502년** 그리고 `admin:admin`.
 
 1. 로컬 AEM 인스턴스의 패키지 관리자로 이동합니다. [http://localhost:4502/crx/packmgr/index.jsp](http://localhost:4502/crx/packmgr/index.jsp). 에 대한 패키지가 표시됩니다. `aem-guides-wknd.ui.apps`, `aem-guides-wknd.ui.config`, `aem-guides-wknd.ui.content`, 및 `aem-guides-wknd.all`.
 
-1. 사이트 콘솔로 이동합니다. [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content). WKND 사이트는 사이트 중 하나입니다. 여기에는 미국 및 언어 마스터 계층 구조를 가진 사이트 구조가 포함됩니다. 이 사이트 계층 은 `language_country` 및 `isSingleCountryWebsite` 원형 을 사용하여 프로젝트를 생성하는 경우
+1. 사이트 콘솔로 이동합니다. [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content). WKND 사이트는 사이트 중 하나입니다. 여기에는 미국 및 언어 마스터 계층 구조의 사이트 구조가 포함됩니다. 이 사이트 계층 은 `language_country` 및 `isSingleCountryWebsite` 원형 을 사용하여 프로젝트를 생성하는 경우
 
 1. 를 엽니다. **미국** `>` **영어** 페이지를 선택하고 **편집** 메뉴 모음의 단추:
 
@@ -173,10 +171,10 @@ AEM용 Maven 다중 모듈 프로젝트를 만드는 두 가지 옵션이 있습
 
 ## Inspect 프로젝트 {#project-structure}
 
-생성된 AEM 프로젝트는 각각 다른 역할을 가진 개별 Maven 모듈로 구성됩니다. 이 자습서와 대부분의 개발 팀은 다음 모듈에 중점을 둡니다.
+생성된 AEM 프로젝트는 각각 다른 역할을 가진 개별 Maven 모듈로 구성됩니다. 이 자습서와 대부분의 개발에서는 다음 모듈에 중점을 둡니다.
 
 * [코어](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/core.html) - Java 코드, 주로 백엔드 개발자입니다.
-* [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) - CSS, JavaScript, Sas, Type Script에 대한 소스 코드를 주로 프런트엔드 개발자에게 포함합니다.
+* [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) - CSS, JavaScript, Sas, TypeScript에 대한 소스 코드를 주로 프런트엔드 개발자에게 포함합니다.
 * [ui.apps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uiapps.html) - 구성 요소 및 대화 상자 정의를 포함하고, 컴파일된 CSS 및 JavaScript를 클라이언트 라이브러리로 포함합니다.
 * [ui.content](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.html) - 편집 가능한 템플릿, 메타데이터 스키마(/content, /conf)와 같은 구조적 컨텐츠 및 구성을 포함합니다.
 
@@ -188,7 +186,7 @@ AEM용 Maven 다중 모듈 프로젝트를 만드는 두 가지 옵션이 있습
 
 ### 핵심 구성 요소 포함 {#core-components}
 
-[AEM 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 는 AEM용 WCM(표준화된 웹 컨텐츠 관리) 구성 요소 세트입니다. 이러한 구성 요소는 기본적인 기능 세트를 제공하며 개별 프로젝트에 대해 스타일 지정, 사용자 지정 및 확장되도록 디자인되었습니다.
+[AEM 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 는 AEM용 WCM(표준화된 웹 컨텐츠 관리) 구성 요소 세트입니다. 이러한 구성 요소는 기능의 기본 세트를 제공하며 개별 프로젝트에 대해 스타일 지정, 사용자 지정 및 확장됩니다.
 
 AEM as a Cloud Service 환경에는 최신 버전의 [AEM 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html). 따라서 AEM as a Cloud Service에 대해 생성된 프로젝트 **not** AEM 코어 구성 요소 포함.
 
@@ -200,9 +198,9 @@ AEM 6.5/6.4 생성 프로젝트의 경우 원형 이 자동으로 포함됩니�
 
 Maven은 코드 패키지를 작성하고 설치할 때마다 대상 폴더를 만듭니다. 대상 폴더 및 콘텐츠는 SCM에서 제외해야 합니다.
 
-아래 `ui.apps` 많은 사람들이 `.content.xml` 파일이 만들어집니다. 이러한 XML 파일은 JCR에 설치된 컨텐츠의 노드 유형과 속성을 매핑합니다. 이러한 파일은 매우 중요하므로 **not** 무시하십시오.
+아래에 있는 `ui.apps` 모듈은 많은 것을 관찰합니다 `.content.xml` 파일이 만들어집니다. 이러한 XML 파일은 JCR에 설치된 컨텐츠의 노드 유형과 속성을 매핑합니다. 이러한 파일은 매우 중요하며 **사용할 수 없음** 무시하십시오.
 
-AEM 프로젝트 원형 은 샘플을 생성합니다 `.gitignore` 파일을 안전하게 무시할 수 있는 시작점으로 사용할 수 있는 파일입니다. 파일은 다음 위치에 생성됩니다 `<src>/aem-guides-wknd/.gitignore`.
+AEM 프로젝트 원형은 샘플을 생성합니다 `.gitignore` 파일을 안전하게 무시할 수 있는 시작점으로 사용할 수 있는 파일입니다. 파일은 다음 위치에 생성됩니다 `<src>/aem-guides-wknd/.gitignore`.
 
 ## 축하합니다! {#congratulations}
 
@@ -214,13 +212,13 @@ AEM 프로젝트 원형 은 샘플을 생성합니다 `.gitignore` 파일을 안
 
 ## 고급 Maven 명령(보너스) {#advanced-maven-commands}
 
-개발 중에는 모듈 중 하나만으로 작업하고 시간을 절약하기 위해 전체 프로젝트를 빌드하지 않으려는 경우가 있을 수 있습니다. AEM 게시 인스턴스에 직접 배포하거나 포트 4502에서 실행되지 않는 AEM 인스턴스에 배포할 수도 있습니다.
+개발 중에는 모듈 중 하나만으로 작업하고 있으므로 시간을 절약하기 위해 전체 프로젝트를 빌드하지 않으려고 할 수 있습니다. AEM 게시 인스턴스에 직접 배포하거나 포트 4502에서 실행되지 않는 AEM 인스턴스에 배포할 수도 있습니다.
 
 다음으로 개발 중에 보다 유연하게 사용할 수 있는 몇 가지 추가 Maven 프로필 및 명령을 살펴보겠습니다.
 
 ### 코어 모듈 {#core-module}
 
-다음 **[코어](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/core.html)** 모듈에는 프로젝트와 연결된 모든 Java 코드가 포함되어 있습니다. 빌드되면 AEM에 OSGi 번들을 배포합니다. 이 모듈만 빌드하려면
+다음 **[코어](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/core.html)** 모듈에는 프로젝트와 연결된 모든 Java™ 코드가 포함되어 있습니다. 빌드 **코어** 모듈이 AEM에 OSGi 번들을 배포합니다. 이 모듈만 빌드하려면
 
 1. 로 이동합니다. `core` 폴더(아래) `aem-guides-wknd`):
 
@@ -254,7 +252,7 @@ AEM 프로젝트 원형 은 샘플을 생성합니다 `.gitignore` 파일을 안
 
 ### Ui.apps 및 Ui.content 모듈 {#apps-content-module}
 
-다음 **[ui.apps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uiapps.html)** maven 모듈에는 아래의 사이트에 필요한 모든 렌더링 코드가 포함되어 있습니다 `/apps`. 여기에는 다음과 같은 AEM 형식으로 저장된 CSS/JS가 포함됩니다 [clientlibs](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html). 여기에는 다음과 같은 항목이 포함되어 있습니다 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=ko-KR) 동적 HTML 렌더링용 스크립트 이 경우 **ui.apps** 모듈이 JCR의 구조에 매핑되지만 파일 시스템에 저장하고 소스 제어에 커밋할 수 있는 형식으로 매핑됩니다. 다음 **ui.apps** 모듈에는 코드만 포함되어 있습니다.
+다음 **[ui.apps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uiapps.html)** maven 모듈에는 아래의 사이트에 필요한 모든 렌더링 코드가 포함되어 있습니다 `/apps`. 여기에는 다음과 같은 AEM 형식으로 저장된 CSS/JS가 포함됩니다 [clientlibs](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html). 여기에는 다음과 같은 항목이 포함되어 있습니다 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) 동적 HTML 렌더링용 스크립트 이 경우 **ui.apps** 모듈이 JCR의 구조에 매핑되지만 파일 시스템에 저장하고 소스 제어에 커밋할 수 있는 형식으로 매핑됩니다. 다음 **ui.apps** 모듈에는 코드만 포함되어 있습니다.
 
 이 모듈만 빌드하려면
 
@@ -269,12 +267,12 @@ AEM 프로젝트 원형 은 샘플을 생성합니다 `.gitignore` 파일을 안
    ```shell
    $ mvn clean install -PautoInstallPackage
    ...
-   Package installed in 122ms.
+   Package installed in 70ms.
    [INFO] ------------------------------------------------------------------------
    [INFO] BUILD SUCCESS
    [INFO] ------------------------------------------------------------------------
-   [INFO] Total time:  6.972 s
-   [INFO] Finished at: 2019-12-06T14:44:12-08:00
+   [INFO] Total time:  2.987 s
+   [INFO] Finished at: 2023-01-10T11:35:28-05:00
    [INFO] ------------------------------------------------------------------------
    ```
 
@@ -288,7 +286,7 @@ AEM 프로젝트 원형 은 샘플을 생성합니다 `.gitignore` 파일을 안
    $ mvn -PautoInstallPackagePublish clean install
    ...
    [INFO] --- content-package-maven-plugin:1.0.2:install (install-package-publish) @ aem-guides-wknd.ui.apps ---
-   [INFO] Installing aem-guides-wknd.ui.apps (/Users/dgordon/code/aem-guides-wknd/ui.apps/target/aem-guides-wknd.ui.apps-0.0.1-SNAPSHOT.zip) to http://localhost:4503/crx/packmgr/service.jsp
+   [INFO] Installing aem-guides-wknd.ui.apps (/Users/sachinmali/Desktop/code/wknd-tutorial/aem-guides-wknd/ui.apps/target/aem-guides-wknd.ui.apps-0.0.1-SNAPSHOT.zip) to http://localhost:4503/crx/packmgr/service.jsp
    [INFO] I/O exception (java.net.ConnectException) caught when processing request: Connection refused (Connection refused)
    [INFO] Retrying request
    [INFO] I/O exception (java.net.ConnectException) caught when processing request: Connection refused (Connection refused)
@@ -298,9 +296,10 @@ AEM 프로젝트 원형 은 샘플을 생성합니다 `.gitignore` 파일을 안
    [INFO] ------------------------------------------------------------------------
    [INFO] BUILD FAILURE
    [INFO] ------------------------------------------------------------------------
-   [INFO] Total time:  6.717 s
-   [INFO] Finished at: 2019-12-06T14:51:45-08:00
+   [INFO] Total time:  2.812 s
+   [INFO] Finished at: 2023-01-10T11:37:28-05:00
    [INFO] ------------------------------------------------------------------------
+   [ERROR] Failed to execute goal com.day.jcr.vault:content-package-maven-plugin:1.0.2:install (install-package-publish) on project aem-guides-wknd.ui.apps: Connection refused (Connection refused) -> [Help 1]
    ```
 
    프로필 `autoInstallPackagePublish` 은 포트에서 실행 중인 게시 환경에 패키지를 배포하기 위한 것입니다 **4503년**. http://localhost:4503에서 실행 중인 AEM 인스턴스를 찾을 수 없는 경우 위의 오류가 발생합니다.

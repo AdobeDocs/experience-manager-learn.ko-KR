@@ -12,9 +12,9 @@ mini-toc-levels: 1
 thumbnail: 30207.jpg
 exl-id: b926c35e-64ad-4507-8b39-4eb97a67edda
 recommendations: noDisplay, noCatalog
-source-git-commit: de2fa2e4c29ce6db31233ddb1abc66a48d2397a6
+source-git-commit: bbdb045edf5f2c68eec5094e55c1688e725378dc
 workflow-type: tm+mt
-source-wordcount: '3014'
+source-wordcount: '2980'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 설정에 필요한 도구 및 지침을 검토합니다. [로컬 개발 환경](overview.md#local-dev-environment).
 
-_시스템에 Java 8과 Java 11이 모두 설치되어 있는 경우 VS 코드 테스트 실행자는 테스트를 실행할 때 낮은 Java 런타임을 선택하여 테스트 실패를 초래할 수 있습니다. 이 경우 Java 8을 제거합니다._
+_시스템에 Java™ 8 및 Java™ 11이 모두 설치되어 있는 경우 VS 코드 테스트 수행자가 테스트를 실행할 때 낮은 Java™ 런타임을 선택하여 테스트 오류가 발생할 수 있습니다. 이 경우 Java™ 8을 제거합니다._
 
 ### 스타터 프로젝트
 
@@ -68,7 +68,7 @@ _시스템에 Java 8과 Java 11이 모두 설치되어 있는 경우 VS 코드 �
 
 ## 배경 {#unit-testing-background}
 
-이 튜토리얼에서는 작성 방법을 살펴보겠습니다 [단위 테스트](https://en.wikipedia.org/wiki/Unit_testing) 을 참조하십시오. [Sling 모델](https://sling.apache.org/documentation/bundles/models.html) (에서 생성) [사용자 지정 AEM 구성 요소 만들기](custom-component.md)). 단위 테스트는 Java 코드의 예상 동작을 확인하는 Java로 작성된 빌드 시간 테스트입니다. 각 단위 테스트는 일반적으로 작으며, 예상 결과와 비교하여 메서드(또는 작업 단위)의 출력을 검증합니다.
+이 튜토리얼에서는 작성 방법을 살펴보겠습니다 [단위 테스트](https://en.wikipedia.org/wiki/Unit_testing) 을 참조하십시오. [Sling 모델](https://sling.apache.org/documentation/bundles/models.html) (에서 생성) [사용자 지정 AEM 구성 요소 만들기](custom-component.md)). 단위 테스트는 Java™ 코드의 예상 동작을 확인하는 빌드 시간 테스트입니다. 각 단위 테스트는 일반적으로 작으며, 예상 결과와 비교하여 메서드(또는 작업 단위)의 출력을 검증합니다.
 
 Adobe에서는 AEM 우수 사례를 사용하며, 다음과 같은 작업을 수행합니다.
 
@@ -78,7 +78,7 @@ Adobe에서는 AEM 우수 사례를 사용하며, 다음과 같은 작업을 수
 
 ## Cloud Manager 단위 테스트 및 Adobe {#unit-testing-and-adobe-cloud-manager}
 
-[Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) 단위 테스트 실행 통합 [코드 검사 보고](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html#code-quality-testing) 를 CI/CD 파이프라인으로 전환하여 AEM 코드의 단위 테스트 우수 사례를 권장하고 프로모션합니다.
+[Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html) 단위 테스트 실행 통합 [코드 검사 보고](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-quality-testing.html) 를 CI/CD 파이프라인으로 전환하여 AEM 코드의 단위 테스트 우수 사례를 권장하고 프로모션합니다.
 
 장치 테스트 코드는 모든 코드 베이스에 권장되지만 Cloud Manager를 사용할 때는 Cloud Manager를 실행할 단위 테스트를 제공하여 코드 품질 테스트 및 보고 기능을 활용하는 것이 중요합니다.
 
@@ -91,7 +91,7 @@ Adobe에서는 AEM 우수 사례를 사용하며, 다음과 같은 작업을 수
 1. Apache Sling이 Android
 1. AEM Android Test Framework (io.wcm)
 
-다음 **JUnit5**, **모키토** 및 **AEM Android** 설치 중에 테스트 종속성이 프로젝트에 자동으로 추가됩니다. [AEM Maven 원형](project-setup.md).
+다음 **JUnit5**, **Mockito 및 **AEM Android** 설치 중에 테스트 종속성이 프로젝트에 자동으로 추가됩니다. [AEM Maven 원형](project-setup.md).
 
 1. 이러한 종속성을 보려면 다음 위치에서 상위 Reactor POM을 엽니다. **aem-guides-wknd/pom.xml**&#x200B;로 이동합니다. `<dependencies>..</dependencies>` 및에서 JUnit, Mockito, Apache Sling Android 및 AEM Mock Tests에 대한 종속성을 i/o.wcm별로 확인합니다. `<!-- Testing -->`.
 1. 확인 `io.wcm.testing.aem-mock.junit5` 가 로 설정되어 있습니다. **4.1.0**:
@@ -115,13 +115,13 @@ Adobe에서는 AEM 우수 사례를 사용하며, 다음과 같은 작업을 수
 
 ## 주 테스트 만들기 {#creating-the-junit-test}
 
-단위 테스트는 일반적으로 Java 클래스에 1에서 1로 매핑됩니다. 이 장에서는 **BylineImpl.java**- Byline 구성 요소를 지원하는 Sling Model입니다.
+단위 테스트는 일반적으로 Java™ 클래스에 1~1을 매핑합니다. 이 장에서는 **BylineImpl.java**- Byline 구성 요소를 지원하는 Sling Model입니다.
 
 ![단위 테스트 src 폴더](assets/unit-testing/core-src-test-folder.png)
 
 *단위 테스트가 저장되는 위치입니다.*
 
-1. 에 대한 단위 테스트를 만듭니다. `BylineImpl.java` 새 Java 클래스를 `src/test/java` 를 클릭합니다.
+1. 에 대한 단위 테스트를 만듭니다. `BylineImpl.java` 새 Java™ 클래스를 `src/test/java` 를 클릭합니다.
 
    ![새 BylineImplTest.java 파일 만들기](assets/unit-testing/new-bylineimpltest.png)
 
@@ -129,7 +129,7 @@ Adobe에서는 AEM 우수 사례를 사용하며, 다음과 같은 작업을 수
 
    * `src/main/java/com/adobe/aem/guides/wknd/core/models/impl/BylineImpl.java`
 
-   에서 해당 단위 테스트 Java 클래스를 생성합니다.
+   에서 해당 단위 테스트 Java™ 클래스를 만듭니다.
 
    * `src/test/java/com/adobe/aem/guides/wknd/core/models/impl/BylineImplTest.java`
 
@@ -142,7 +142,7 @@ Adobe에서는 AEM 우수 사례를 사용하며, 다음과 같은 작업을 수
 
 ## BylineImplTest.java 검토 {#reviewing-bylineimpltest-java}
 
-이때 JUnit 테스트 파일은 빈 Java 클래스입니다.
+이때 JUnit 테스트 파일은 빈 Java™ 클래스입니다.
 
 1. 파일을 다음 코드로 업데이트합니다.
 
@@ -236,12 +236,12 @@ AEM에 대해 작성된 대부분의 코드는 JCR, Sling 또는 AEM API를 사�
        private final AemContext ctx = new AemContext();
    ```
 
-   이 변수, `ctx`는 많은 AEM 및 Sling 추상을 제공하는 mock AEM 컨텍스트를 표시합니다.
+   이 변수, `ctx`에서는 일부 AEM 및 Sling 추상을 제공하는 mock AEM 컨텍스트를 표시합니다.
 
    * BylineImpl Sling Model이 이 컨텍스트에 등록됩니다
    * Mock JCR 컨텐츠 구조가 이 컨텍스트에서 생성됩니다
    * 사용자 지정 OSGi 서비스는 이 컨텍스트에서 등록할 수 있습니다
-   * SlingHttpServletRequest 개체, ModelFactory, PageManager, Page, Template, ComponentManager, Component, TagManager, Tag 등과 같은 다양한 Mock Sling 및 AEM OSGi 서비스 등 일반적인 필수 Mock 객체 및 Help를 제공합니다.
+   * SlingHttpServletRequest 개체, 다양한 Mock Sling 및 AEM OSGi 서비스(예: ModelFactory, PageManager, Page, Template, ComponentManager, Component, TagManager, TagManager, Tag 등)와 같은 일반적인 필수 Mock 객체 및 Help를 제공합니다.
       * *이러한 개체의 모든 메서드가 구현되지는 않습니다!*
    * 및 [훨씬 더](https://wcm.io/testing/aem-mock/usage.html)!
 
@@ -261,9 +261,9 @@ AEM에 대해 작성된 대부분의 코드는 JCR, Sling 또는 AEM API를 사�
    * **`load().json`** 리소스 구조를 샘플 컨텍스트에 로드하여 코드가 실제 저장소에서 제공한 것처럼 리소스와 상호 작용할 수 있습니다. 파일의 리소스 정의 **`BylineImplTest.json`** 는 아래의 샘플 JCR 컨텍스트에 로드됩니다 **/content**.
    * **`BylineImplTest.json`** 아직 존재하지 않으므로, 만들고 테스트에 필요한 JCR 리소스 구조를 정의하겠습니다.
 
-1. 샘플 리소스 구조를 나타내는 JSON 파일은 아래에 저장됩니다 **core/src/test/resources** 참고 Java 테스트 파일과 같은 패키지 경로 지정
+1. 샘플 리소스 구조를 나타내는 JSON 파일은 아래에 저장됩니다 **core/src/test/resources** 참고 Java™ 테스트 파일과 같은 패키지 경로 지정
 
-   에서 새 JSON 파일을 만듭니다. `core/test/resources/com/adobe/aem/guides/wknd/core/models/impl` 명명된 이름 **BylineImplTest.json** 다음 컨텐츠와 함께 사용할 수 있습니다.
+   에서 JSON 파일 만들기 `core/test/resources/com/adobe/aem/guides/wknd/core/models/impl` 명명된 이름 **BylineImplTest.json** 다음 컨텐츠와 함께 사용할 수 있습니다.
 
    ```json
    {
@@ -312,7 +312,7 @@ AEM에 대해 작성된 대부분의 코드는 JCR, Sling 또는 AEM API를 사�
 
 1. 테스트 실행... 을 실행하면 `NullPointerException`.
 
-   테스트를 정의하지 않았으므로 이 테스트가 실패하지는 않습니다 `name` mock JSON의 속성에 있는 경우, 테스트가 실패하지만 테스트 실행이 해당 시점에 도달하지 않았습니다. 다음 이유로 인해 이 테스트가 실패합니다. `NullPointerException` 를 클릭합니다.
+   테스트를 정의하지 않았기 때문에 이 테스트가 실패하지 않습니다 `name` mock JSON의 속성에 있는 경우, 테스트가 실패하지만 테스트 실행이 해당 시점에 도달하지 않았습니다. 다음 이유로 인해 이 테스트가 실패합니다. `NullPointerException` 를 클릭합니다.
 
 1. 에서 `BylineImpl.java`이면 `@PostConstruct init()` 예외가 발생하여 Sling Model이 인스턴스화할 수 없으며 Sling Model 개체가 null이 됩니다.
 
@@ -379,13 +379,13 @@ AEM에 대해 작성된 대부분의 코드는 JCR, Sling 또는 AEM API를 사�
    }
    ```
 
-   * **`@ExtendWith({AemContextExtension.class, MockitoExtension.class})`** 는 [Mockito Jupiter Extension](https://www.javadoc.io/page/org.mockito/mockito-junit-jupiter/latest/org/mockito/junit/jupiter/MockitoExtension.html) @Mock 주석을 사용하여 클래스 수준에서 샘플 객체를 정의할 수 있습니다.
-   * **`@Mock private Image`** 유형의 mock 객체를 만듭니다. `com.adobe.cq.wcm.core.components.models.Image`. 필요한 경우 클래스 레벨에서 정의됩니다. `@Test` 메서드는 필요에 따라 동작을 변경할 수 있습니다.
-   * **`@Mock private ModelFactory`** ModelFactory 유형의 mock 개체를 만듭니다. 이것은 순수한 Mockito 조롱이며 여기에 구현된 방법이 없습니다. 필요한 경우 클래스 레벨에서 정의됩니다. `@Test`메서드는 필요에 따라 동작을 변경할 수 있습니다.
-   * **`when(modelFactory.getModelFromWrappedRequest(..)`** 다음 경우에 mock 동작을 등록합니다. `getModelFromWrappedRequest(..)` mock ModelFactory 개체에서 호출됩니다. 에 정의된 결과 `thenReturn (..)` 은 mock Image 객체를 반환하는 것입니다. 이 동작은 다음 경우에만 호출됩니다. 첫 번째 매개 변수는 `ctx`의 요청 개체인 두 번째 매개 변수는 모든 리소스 개체이고 세 번째 매개 변수는 핵심 구성 요소 이미지 클래스여야 합니다. Adobe에서는 테스트 전체에서 `ctx.currentResource(...)` 에 정의된 다양한 샘플 리소스로 **BylineImplTest.json**. 을(를) 추가합니다 **관대한()** 엄격해야 합니다. 나중에 ModelFactory의 이 동작을 재정의하려고 하기 때문입니다.
-   * **`ctx.registerService(..)`.** mock ModelFactory 개체를 Aem Context에 등록하고 가장 높은 서비스 등급을 사용합니다. BylineImpl의 ModelFactory에서 사용되므로 이 작업은 필수입니다 `init()` 는 `@OSGiService ModelFactory model` 필드. AemContext가 주입되는 순서 **adobe** 호출을 처리하는 모의 개체 `getModelFromWrappedRequest(..)`를 지정하는 경우 해당 유형의 가장 높은 등급 서비스(ModelFactory)로 등록해야 합니다.
+   * **`@ExtendWith({AemContextExtension.class, MockitoExtension.class})`** 는 [Mockito Jupiter Extension](https://www.javadoc.io/static/org.mockito/mockito-junit-jupiter/4.11.0/org/mockito/junit/jupiter/MockitoExtension.html) @Mock 주석을 사용하여 클래스 수준에서 샘플 객체를 정의할 수 있습니다.
+   * **`@Mock private Image`** 유형의 mock 객체를 만듭니다. `com.adobe.cq.wcm.core.components.models.Image`. 이는 클래스 수준에서 정의되므로 필요한 경우 `@Test` 메서드는 필요에 따라 동작을 변경할 수 있습니다.
+   * **`@Mock private ModelFactory`** ModelFactory 유형의 mock 개체를 만듭니다. 이것은 순수한 Mockito 조롱이며 여기에 구현된 방법이 없습니다. 이는 클래스 수준에서 정의되므로 필요한 경우 `@Test`메서드는 필요에 따라 동작을 변경할 수 있습니다.
+   * **`when(modelFactory.getModelFromWrappedRequest(..)`** 다음 경우에 mock 동작을 등록합니다. `getModelFromWrappedRequest(..)` mock ModelFactory 개체에서 호출됩니다. 에 정의된 결과 `thenReturn (..)` 은 mock Image 객체를 반환하는 것입니다. 이 동작은 다음 경우에만 호출됩니다. 첫 번째 매개 변수는 `ctx`의 요청 개체인 두 번째 매개 변수는 임의의 리소스 개체이고 세 번째 매개 변수는 핵심 구성 요소 이미지 클래스여야 합니다. Adobe에서는 테스트 전체에서 `ctx.currentResource(...)` 에 정의된 다양한 샘플 리소스로 **BylineImplTest.json**. 을(를) 추가합니다 **관대한()** 엄격해야 합니다. 나중에 ModelFactory의 이 동작을 재정의하려고 하기 때문입니다.
+   * **`ctx.registerService(..)`.** mock ModelFactory 개체를 Aem Context에 등록하고 가장 높은 서비스 등급을 사용합니다. BylineImpl의 ModelFactory에서 사용되므로 이 작업은 필수입니다 `init()` 는 `@OSGiService ModelFactory model` 필드. AemContext를 주입하는 경우 **adobe** 호출을 처리하는 모의 개체 `getModelFromWrappedRequest(..)`를 지정하는 경우 해당 유형의 가장 높은 등급 서비스(ModelFactory)로 등록해야 합니다.
 
-1. 테스트를 다시 실행하면 다시 실패하지만, 이번에는 메시지가 실패한 이유를 확인합니다.
+1. 테스트를 다시 실행하고 다시 실패하지만, 이번에는 메시지가 실패한 이유를 확인합니다.
 
    ![테스트 이름 실패 검증](assets/unit-testing/testgetname-failure-assertion.png)
 
@@ -412,7 +412,7 @@ AEM에 대해 작성된 대부분의 코드는 JCR, Sling 또는 AEM API를 사�
 
 ## getTowals() 테스트 {#testing-get-occupations}
 
-좋아! 우리의 첫 번째 시험이 합격했어! 계속 진행하고 테스트해 봅시다 `getOccupations()`. 모의 컨텍스트의 초기화가 `@Before setUp()`메서드, 모든 사용자가 사용할 수 있습니다. `@Test` 다음을 포함한 이 테스트 케이스의 메서드 `getOccupations()`.
+좋아! 첫 번째 테스트가 통과되었습니다! 계속 진행하고 테스트해 봅시다 `getOccupations()`. 모의 컨텍스트의 초기화가 `@Before setUp()`메서드, 모든 사용자가 사용할 수 있습니다. `@Test` 다음을 포함한 이 테스트 케이스의 메서드 `getOccupations()`.
 
 이 방법은 직업 등록 정보에 저장된 알파벳순으로 정렬된 직업 목록(내림차순)을 반환해야 합니다.
 
@@ -477,9 +477,9 @@ AEM에 대해 작성된 대부분의 코드는 JCR, Sling 또는 AEM API를 사�
 * 이미지가 null이거나 src URL이 없으면 true를 반환합니다
 * 이름, 직업 및 이미지(src URL 사용)가 있으면 false를 반환합니다
 
-이를 위해서는 새로운 테스트 방법을 만들어야 하며, 각 테스트 방법에서는 특정 조건과 의 새 샘플 리소스 구조를 테스트해야 합니다 `BylineImplTest.json` 테스트 수행
+이를 위해서는 테스트 방법을 만들어야 하며, 각 테스트에서는 특정 조건과 새 mock 리소스 구조를 `BylineImplTest.json` 테스트 수행
 
-이 확인에서는 다음에 대한 테스트를 건너뛸 수 있었습니다 `getName()`, `getOccupations()` 및 `getImage()` 는 해당 상태의 예상 동작이 `isEmpty()`.
+이 검사를 통해 다음에 대한 테스트를 건너뛸 수 있습니다 `getName()`, `getOccupations()` 및 `getImage()` 는 해당 상태의 예상 동작이 `isEmpty()`.
 
 1. 첫 번째 테스트에서는 설정된 속성이 없는 새 구성 요소의 조건을 테스트합니다.
 
@@ -608,11 +608,11 @@ AEM에 대해 작성된 대부분의 코드는 JCR, Sling 또는 AEM API를 사�
 
    **`testIsEmpty_WithoutOccupations()`** 이름은 있지만 직업이 없는 모의 리소스 정의에 대해 테스트합니다.
 
-   **`testIsEmpty_WithoutImage()`** 이름과 직업을 사용하여 샘플 리소스 정의에 대해 테스트하지만 mock Image를 null로 반환하도록 설정합니다. 을(를) 재정의하려고 합니다 `modelFactory.getModelFromWrappedRequest(..)`에 정의된 동작 `setUp()` 이 호출에서 반환된 이미지 개체가 null인지 확인합니다. Mockito에 관한 Stub는 엄격하고 중복된 코드를 원하지 않습니다. 따라서 Mock을 **`lenient`** 명시적으로 표시할 설정 `setUp()` 메서드를 사용합니다.
+   **`testIsEmpty_WithoutImage()`** 이름과 직업을 사용하여 샘플 리소스 정의에 대해 테스트하지만 mock Image를 null로 반환하도록 설정합니다. 을(를) 재정의하려고 합니다 `modelFactory.getModelFromWrappedRequest(..)`에 정의된 동작 `setUp()` 이 호출에서 반환된 이미지 개체가 null인지 확인합니다. Mockito Stub 기능은 엄격하며 중복 코드를 원하지 않습니다. 따라서 Mock을 **`lenient`** 명시적으로 표시할 설정 `setUp()` 메서드를 사용합니다.
 
    **`testIsEmpty_WithoutImageSrc()`** 이름과 직업을 사용하여 샘플 리소스 정의에 대해 테스트하지만 mock Image를 설정하면 빈 문자열이 반환됩니다 `getSrc()` 이 호출됩니다.
 
-1. 마지막으로, 테스트를 작성하여 **isEmpty()** 구성 요소가 올바르게 구성되면 false를 반환합니다. 이 조건의 경우 다시 사용할 수 있습니다 **/content/byline** 전체 구성된 부산물 구성 요소를 나타냅니다.
+1. 마지막으로, 테스트를 작성하여 **isEmpty()** 구성 요소가 올바르게 구성되면 false를 반환합니다. 이 경우 다시 사용할 수 있습니다 **/content/byline** 전체 구성된 부산물 구성 요소를 나타냅니다.
 
    ```java
    @Test
@@ -626,13 +626,13 @@ AEM에 대해 작성된 대부분의 코드는 JCR, Sling 또는 AEM API를 사�
    }
    ```
 
-1. 이제 BylineImplTest.java 파일에서 모든 단위 테스트를 실행하고 Java 테스트 보고서 출력을 검토합니다.
+1. 이제 BylineImplTest.java 파일에서 모든 단위 테스트를 실행하고 Java™ 테스트 보고서 출력을 검토합니다.
 
 ![모든 테스트 통과](./assets/unit-testing/all-tests-pass.png)
 
 ## 빌드의 일부로 단위 테스트 실행 {#running-unit-tests-as-part-of-the-build}
 
-maven 빌드의 일부로 전달하려면 단위 테스트가 실행됩니다. 이렇게 하면 응용 프로그램을 배포하기 전에 모든 테스트가 성공적으로 전달됩니다. 패키지 또는 설치와 같은 Maven 목표를 실행하면 자동으로 호출되고 프로젝트의 모든 단위 테스트를 통과해야 합니다.
+단위 테스트가 실행되며 maven 빌드의 일부로 전달되어야 합니다. 따라서 응용 프로그램을 배포하기 전에 모든 테스트가 성공적으로 통과됩니다. 패키지 또는 설치와 같은 Maven 목표를 실행하면 자동으로 호출되고 프로젝트의 모든 단위 테스트를 통과해야 합니다.
 
 ```shell
 $ mvn package
@@ -650,4 +650,4 @@ $ mvn package
 
 ## 코드 검토 {#review-the-code}
 
-에서 완성된 코드 보기 [GitHub](https://github.com/adobe/aem-guides-wknd) 코드를 Git Brach에서 로컬로 검토하고 배포합니다 `tutorial/unit-testing-solution`.
+에서 완성된 코드 보기 [GitHub](https://github.com/adobe/aem-guides-wknd) 코드를 Git 분기에서 로컬로 검토하고 배포합니다 `tutorial/unit-testing-solution`.
