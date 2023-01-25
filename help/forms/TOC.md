@@ -7,9 +7,9 @@ breadcrumb-title: AEM Forms 튜토리얼
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: a2bbb26751c9182056b4fe6d36eeeec964001df8
+source-git-commit: d3531e76d3341e0964e5ed878fc72037024a11fd
 workflow-type: tm+mt
-source-wordcount: '1776'
+source-wordcount: '1784'
 ht-degree: 3%
 
 ---
@@ -184,6 +184,10 @@ ht-degree: 3%
    + [ArrayList 변수](variables-aem-workflow/part4.md)
    + [양식 데이터 모델 변수](variables-aem-workflow/form-data-model.md)
    + [AEM Workflow의 규칙 편집기](variables-aem-workflow/part5.md)
++ 양식 데이터 검토{#review-form-data}
+   + [소개](review-form-data/introduction.md)
+   + [구성 요소 만들기](review-form-data/create-component.md)
+   + [자산 배포](review-form-data/deploy-on-your-system.md)
 + MySQL DB에서 양식 데이터 저장 및 검색{#storing-and-retrieving-form-data}
    + [소개](storing-retrieving-form-data/introduction.md)
    + [데이터 소스 구성](storing-retrieving-form-data/part1.md)
