@@ -7,10 +7,10 @@ sub-product: Experience Manager Sites
 version: 6.5, Cloud Service
 kt: 2963
 index: y
-source-git-commit: ae27cbc50fc5c4c2e8215d7946887b99d480d668
+source-git-commit: c96b8c9761ff9477fda40d641db5021994b32754
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 21%
+source-wordcount: '281'
+ht-degree: 20%
 
 ---
 
@@ -113,5 +113,8 @@ ht-degree: 21%
    + [angular 앱 필터링](./graphql/code-samples/filtering-angular-app.md)
    + [값 앱 필터링](./graphql/code-samples/filtering-vue-app.md)
    + [jQuery 및 Handlebars를 사용한 필터링](./graphql/code-samples/filtering-jquery-handlebars.md)
+   + [SvelteKit 앱 필터링](./graphql/code-samples/filtering-sveltekit-app.md)
+   + [ExpressJS 및 Pug 앱 필터링](./graphql/code-samples/filtering-express-pug-app.md)
    + [기본 React 앱](./graphql/code-samples/basic-react-app.md)
    + [기본 Next.js 앱](./graphql/code-samples/basic-nextjs-app.md)
+
