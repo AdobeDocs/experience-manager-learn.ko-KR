@@ -7,10 +7,10 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 9a3b2128-a383-46ea-bcdc-6015105c70cc
-last-substantial-update: 2020-06-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+last-substantial-update: 2023-01-26T00:00:00Z
+source-git-commit: ddef90067d3ae4a3c6a705b5e109e474bab34f6d
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '261'
 ht-degree: 1%
 
 ---
@@ -26,15 +26,40 @@ ht-degree: 1%
 1. DoRService의 render 메서드를 호출하고 DoROptions 개체를 render 메서드에 전달합니다
 
 ```java
+String dataXml = request.getParameter("data");
+System.out.println("Got " + dataXml);
+Session session;
 com.adobe.aemds.guide.addon.dor.DoRService dorService = sling.getService(com.adobe.aemds.guide.addon.dor.DoRService.class);
-com.adobe.aemds.guide.addon.dor.DoROptions dorOptions =  new com.adobe.aemds.guide.addon.dor.DoROptions();
- dorOptions.setData(dataXml);
- dorOptions.setFormResource(resource);
- java.util.Locale locale = new java.util.Locale("en");
- dorOptions.setLocale(locale);
- com.adobe.aemds.guide.addon.dor.DoRResult dorResult = dorService.render(dorOptions);
- byte[] fileBytes = dorResult.getContent();
- com.adobe.aemfd.docmanager.Document dorDocument = new com.adobe.aemfd.docmanager.Document(fileBytes);
+System.out.println("Got ... DOR Service");
+com.mergeandfuse.getserviceuserresolver.GetResolver aemDemoListings = sling.getService(com.mergeandfuse.getserviceuserresolver.GetResolver.class);
+System.out.println("Got aem DemoListings");
+resourceResolver = aemDemoListings.getFormsServiceResolver();
+session = resourceResolver.adaptTo(Session.class);
+resource = resourceResolver.getResource("/content/forms/af/sandbox/1201-borrower-payments");
+com.adobe.aemds.guide.addon.dor.DoROptions dorOptions = new com.adobe.aemds.guide.addon.dor.DoROptions();
+dorOptions.setData(dataXml);
+dorOptions.setFormResource(resource);
+java.util.Locale locale = new java.util.Locale("en");
+dorOptions.setLocale(locale);
+com.adobe.aemds.guide.addon.dor.DoRResult dorResult = dorService.render(dorOptions);
+byte[] fileBytes = dorResult.getContent();
+com.adobe.aemfd.docmanager.Document dorDocument = new com.adobe.aemfd.docmanager.Document(fileBytes);
+resource = resourceResolver.getResource("/content/usergenerated/content/aemformsenablement");
+Node paydotgov = resource.adaptTo(Node.class);
+java.util.Random r = new java.util.Random();
+String nodeName = Long.toString(Math.abs(r.nextLong()), 36);
+Node fileNode = paydotgov.addNode(nodeName + ".pdf", "nt:file");
+
+System.out.println("Created file Node...." + fileNode.getPath());
+Node contentNode = fileNode.addNode("jcr:content", "nt:resource");
+Binary binary = session.getValueFactory().createBinary(dorDocument.getInputStream());
+contentNode.setProperty("jcr:data", binary);
+JSONWriter writer = new JSONWriter(response.getWriter());
+writer.object();
+writer.key("filePath");
+writer.value(fileNode.getPath());
+writer.endObject();
+session.save();
 ```
 
 로컬 시스템에서 이 작업을 수행하려면 다음 단계를 수행하십시오
@@ -54,6 +79,6 @@ com.adobe.aemds.guide.addon.dor.DoROptions dorOptions =  new com.adobe.aemds.gui
 PDF이 새 브라우저 탭에 표시되지 않습니다.
 
 1. 브라우저에서 팝업을 차단하지 않는지 확인합니다
-1. 이에 설명된 단계를 따르도록 하십시오 [문서](service-user-tutorial-develop.md)
+1. AEM 서버를 관리자로 시작하는지 확인합니다(최소한 windows에서는).
 1. &#39;DevelopingWithServiceUser&#39; 번들이 *활성 상태*
-1. 시스템 사용자 &#39; 데이터 &#39;에 다음 노드에 대한 읽기, 수정 및 만들기 권한이 있는지 확인합니다. `/content/usergenerated/content/aemformsenablement`
+1. [시스템 사용자가](http://localhost:4502/useradmin) &#39; fd-service&#39;에는 다음 노드에 대한 읽기, 수정 및 생성 권한이 있습니다 `/content/usergenerated/content/aemformsenablement`

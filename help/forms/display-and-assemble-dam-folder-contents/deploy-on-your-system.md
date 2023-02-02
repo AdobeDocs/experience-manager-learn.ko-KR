@@ -7,10 +7,10 @@ topic: Development
 role: Developer
 level: Beginner
 last-substantial-update: 2023-01-04T00:00:00Z
-source-git-commit: 7815b1a78949c433f2c53ff752bf39dd55f9ac94
+source-git-commit: ddef90067d3ae4a3c6a705b5e109e474bab34f6d
 workflow-type: tm+mt
-source-wordcount: '150'
-ht-degree: 0%
+source-wordcount: '158'
+ht-degree: 3%
 
 ---
 
@@ -18,7 +18,9 @@ ht-degree: 0%
 
 로컬 AEM 인스턴스에서 작동하는 이 사용 사례를 가져오려면 아래 나열된 단계를 따르십시오.
 
-* [이 문서에 언급된 단계에 따라 fd-service 사용자를 사용하도록 을 구성합니다](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/service-user-tutorial-develop.html?lang=en). DevelopingWithServiceUser 번들을 배포했는지 확인합니다.
+* [DevelopingWithServiceUser 번들 배포](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip) zip 파일에 들어 있습니다.
+
+* Apache Sling Service User Mapper 서비스에 다음 항목을 추가합니다 **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service** 사용 [configMgr](http://localhost:4502/system/console/configMgr).
 
 * [Newsletter 번들 배포](assets/Newsletters.core-1.0.0-SNAPSHOT.jar). 이 번들에는 폴더 컨텐츠를 나열하고 선택한 뉴스레터를 어셈블하는 코드가 포함되어 있습니다.
 
