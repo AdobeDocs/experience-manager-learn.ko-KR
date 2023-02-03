@@ -9,9 +9,9 @@ level: Intermediate
 kt: 9350
 thumbnail: KT-9350.jpeg
 exl-id: 5c1ff98f-d1f6-42ac-a5d5-676a54ef683c
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 6ae98ce749f8a485bdaa4c6c6232e52d8d6246b3
 workflow-type: tm+mt
-source-wordcount: '1076'
+source-wordcount: '1133'
 ht-degree: 5%
 
 ---
@@ -53,6 +53,8 @@ Cloud Manager 프로그램은 __단일__ 네트워크 인프라 유형. 전용 �
 먼저 AEM as a Cloud Service에서 유연한 포트 포트를 활성화합니다.
 
 1. 먼저 Cloud Manager API를 사용하여에서 고급 네트워킹이 설정되는 영역을 결정합니다 [listRegions](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) 작업. 다음 `region name` 는 후속 Cloud Manager API 호출을 위해 필요합니다. 일반적으로 프로덕션 환경이 상주하는 영역이 사용됩니다.
+
+   에서 AEM as a Cloud Service 환경의 지역을 찾습니다. [Cloud Manager](https://my.cloudmanager.adobe.com) 아래에 [환경 세부 사항](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en#viewing-environment). Cloud Manager에 표시되는 지역 이름은 [지역 코드에 매핑됨](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) Cloud Manager API에서 사용됩니다.
 
    __listRegions HTTP 요청__
 
