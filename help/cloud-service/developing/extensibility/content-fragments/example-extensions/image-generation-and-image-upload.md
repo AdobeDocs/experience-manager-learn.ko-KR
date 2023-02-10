@@ -1,6 +1,6 @@
 ---
 title: 사용자 지정 컨텐츠 조각 콘솔 확장을 통해 OpenAI 이미지 생성
-description: OpenAI 또는 DALL-E 2를 사용하여 자연어 설명에서 디지털 이미지를 생성하고 생성된 이미지를 AEM에 업로드하고 컨텐츠 조각에 연결하는 예제 AEM 컨텐츠 조각 콘솔 확장입니다.
+description: OpenAI 또는 DALL-E 2를 사용하여 자연어 설명에서 디지털 이미지를 생성하고 사용자 지정 컨텐츠 조각 콘솔 확장을 사용하여 생성된 이미지를 AEM에 업로드하는 방법을 알아봅니다.
 feature: Developer Tools
 version: Cloud Service
 topic: Development
@@ -10,9 +10,9 @@ kt: 11649
 thumbnail: KT-11649.png
 doc-type: article
 last-substantial-update: 2023-01-04T00:00:00Z
-source-git-commit: a298dbd27dfda00c80d2098199eb418200af0233
+source-git-commit: 5f0464d7bb8ffde9a9b3bd7fd67dc0e341970a6f
 workflow-type: tm+mt
-source-wordcount: '1313'
+source-wordcount: '1399'
 ht-degree: 1%
 
 ---
@@ -20,9 +20,11 @@ ht-degree: 1%
 
 # OpenAI를 사용한 AEM 이미지 자산 생성
 
-![디지털 이미지 생성](./assets/digital-image-generation/screenshot.png){align="center"}
+OpenAI 또는 DALL.E 2를 사용하여 이미지를 생성하고 컨텐츠 속도를 위해 AEM DAM에 업로드하는 방법을 알아봅니다.
 
-이 예 AEM 컨텐츠 조각 콘솔 확장은 [작업 표시줄](../action-bar.md) 자연어 입력에서 디지털 이미지를 생성하는 확장을 사용하여 [OpenAI API](https://openai.com/api/) 또는 [DALL.E 2](https://openai.com/dall-e-2/). 생성된 이미지가 AEM DAM에 업로드되고 선택한 컨텐츠 조각의 이미지 속성이 업데이트되어 DAM에서 새로 생성된 업로드 이미지를 참조합니다.
+![디지털 이미지 생성](./assets/digital-image-generation/screenshot.png){width="500" zoomable="yes"}
+
+이 예 AEM 컨텐츠 조각 콘솔 확장은 [작업 표시줄](../action-bar.md) 자연어 입력에서 디지털 이미지를 생성하는 [OpenAI API](https://openai.com/api/) 또는 [DALL.E 2](https://openai.com/dall-e-2/). 생성된 이미지가 AEM DAM에 업로드되고 선택한 컨텐츠 조각의 이미지 속성이 업데이트되어 DAM에서 새로 생성된 업로드 이미지를 참조합니다.
 
 이 예제에서는 다음을 학습합니다.
 
@@ -108,6 +110,12 @@ ht-degree: 1%
 1. Node.js 라이브러리 아래에 설치
    1. [OpenAI Node.js 라이브러리](https://github.com/openai/openai-node#installation) - OpenAI API를 쉽게 호출하려면
    1. [AEM 업로드](https://github.com/adobe/aem-upload#install) - AEM-CS 인스턴스에 이미지를 업로드합니다.
+
+
+>[!TIP]
+>
+>다음 섹션에서는 주요 React 및 Adobe I/O Runtime 작업 JavaScript 파일에 대해 알아봅니다. 를 참조하려면 `web-src` 및  `actions` AppBuilder 프로젝트의 폴더가 제공됩니다. 자세한 내용은 [adobe-appbuilder-cfc-ext-image-generation-code.zip](./assets/digital-image-generation/adobe-appbuilder-cfc-ext-image-generation-code.zip).
+
 
 ## 앱 경로{#app-routes}
 
@@ -198,7 +206,7 @@ function ExtensionRegistration() {
 1. 새로 생성된 업로드된 이미지의 AEM 자산 세부 정보 링크를 제공하는 이미지 생성 작업의 응답입니다.
 
 중요한 것은 확장에서 AEM과의 모든 상호 작용은 [AppBuilder Adobe I/O Runtime 작업](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/)에서 실행되는 별도의 서버리스 프로세스입니다 [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/).
-CORS(원본 간 리소스 공유) 연결 문제를 방지하기 위해 Adobe I/O Runtime 작업을 AEM과 통신하는 데 사용합니다.
+Adobe I/O Runtime 작업을 사용하여 AEM과 통신하며 CORS(원본 간 리소스 공유) 연결 문제를 방지하기 위한 것입니다.
 
 이 _이미지 생성_ 양식을 제출하면 사용자 지정 양식이 전송됩니다 `onSubmitHandler()` 이미지 설명, 현재 AEM 호스트(도메인) 및 사용자의 AEM 액세스 토큰을 전달하여 Adobe I/O Runtime 작업을 호출합니다. 그러면 작업이 OpenAI의 [이미지 생성](https://beta.openai.com/docs/guides/images/image-generation-beta) 제출된 이미지 설명을 사용하여 이미지를 생성하기 위한 API입니다. 다음 사용 [AEM 업로드](https://github.com/adobe/aem-upload) 노드 모듈 `DirectBinaryUpload` 이 클래스는 생성된 이미지를 AEM에 업로드하고 마지막으로 사용합니다 [AEM 컨텐츠 조각 API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html) 컨텐츠 조각을 업데이트하려면
 
@@ -458,6 +466,11 @@ export default function GenerateImageModal() {
   }
 }
 ```
+
+>[!NOTE]
+>
+>에서 `buildAssetDetailsURL()` 함수, `aemAssetdetailsURL` 변수 값은 [통합 셸](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html#overview) 이 활성화되어 있습니다. 통합 셸을 비활성화한 경우 `/ui#/aem` 변수 값에서 생성합니다.
+
 
 ## Adobe I/O Runtime 작업
 
