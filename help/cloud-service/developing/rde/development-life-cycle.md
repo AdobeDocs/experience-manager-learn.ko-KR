@@ -9,9 +9,9 @@ level: Beginner
 jira: KT-11863
 thumbnail: KT-11863.png
 last-substantial-update: 2023-02-15T00:00:00Z
-source-git-commit: 1a7b4c9c4575407467856d795ad3b6dde8e10532
+source-git-commit: 674407637c475ea9b70ecbc81f9e9bfece0fe9df
 workflow-type: tm+mt
-source-wordcount: '123'
+source-wordcount: '136'
 ht-degree: 5%
 
 ---
@@ -40,6 +40,9 @@ RDE의 주요 이점은 개발 속도를 유지하는 것입니다.
 
 
 ## 추가 리소스
+
+
+[여러 개발자 공동 작업 시나리오](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html#multiple-developers-collaborating-on-the-same-rde)
 
 [로컬 개발 환경 설정](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=ko-KR)
 
