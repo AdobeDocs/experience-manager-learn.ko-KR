@@ -5,9 +5,9 @@ breadcrumb-title: AEM as a Cloud Service 튜토리얼
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 0990fc230e2a36841380b5b0c6cd94dca24614fa
+source-git-commit: 1a7b4c9c4575407467856d795ad3b6dde8e10532
 workflow-type: tm+mt
-source-wordcount: '884'
+source-wordcount: '897'
 ht-degree: 20%
 
 ---
@@ -92,6 +92,11 @@ ht-degree: 20%
       + [서비스 사용자](./developing/advanced/service-users.md)
       + [사용자 지정 네임스페이스](./developing/advanced/custom-namespaces.md)
       + [페이지 변형 캐싱](./developing/advanced/variant-caching.md)
+   + 신속한 개발 환경{#rde}
+      + [개요](./developing/rde/overview.md)
+      + [설정 방법](./developing/rde/how-to-setup.md)
+      + [사용 방법](./developing/rde/how-to-use.md)
+      + [개발 수명 주기](./developing/rde/development-life-cycle.md)
    + [AEM SDK API JavaDocs](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html)
 + AEM 디버깅{#debugging}
    + AEM SDK 디버깅{#debugging-aem-sdk}
