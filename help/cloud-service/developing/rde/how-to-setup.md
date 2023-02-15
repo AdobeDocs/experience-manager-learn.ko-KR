@@ -9,7 +9,7 @@ level: Beginner
 jira: KT-11861
 thumbnail: KT-11861.png
 last-substantial-update: 2023-02-15T00:00:00Z
-source-git-commit: 9123771fed25cf2c5c3443c92dcc0e6704476bb0
+source-git-commit: 4ff15fb482d31b984775ca691b53d117a2eba23c
 workflow-type: tm+mt
 source-wordcount: '202'
 ht-degree: 2%
@@ -30,6 +30,11 @@ ht-degree: 2%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415490/?quality=12&learn=on)
 
+## 다음 단계
+
+학습 [사용 방법](./how-to-use.md) 개발 주기를 단축하기 위해 자주 사용하는 IDE(Integrated Development Environment)의 코드와 컨텐츠를 배포하는 RDE입니다.
+
+
 ## 추가 리소스
 
 [프로그램 설명서에서 RDE 활성화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html#enabling-rde-in-a-program)
@@ -41,7 +46,3 @@ ht-degree: 2%
 [AEM Rapid Development Environments와의 상호 작용을 위한 Adobe I/O Runtime CLI 플러그인](https://github.com/adobe/aio-cli-plugin-aem-rde#aio-cli-plugin-aem-rde)
 
 [Cloud Manager AIO CLI 플러그인](https://github.com/adobe/aio-cli-plugin-cloudmanager)
-
-## 다음 단계
-
-학습 [사용 방법](./how-to-use.md) 개발 주기를 단축하기 위해 자주 사용하는 IDE(Integrated Development Environment)의 코드와 컨텐츠를 배포하는 RDE입니다.
