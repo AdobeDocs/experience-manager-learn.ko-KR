@@ -9,10 +9,10 @@ level: Beginner
 jira: KT-11862
 thumbnail: KT-11862.png
 last-substantial-update: 2023-02-15T00:00:00Z
-source-git-commit: 674407637c475ea9b70ecbc81f9e9bfece0fe9df
+source-git-commit: 9123771fed25cf2c5c3443c92dcc0e6704476bb0
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 0%
+source-wordcount: '186'
+ht-degree: 1%
 
 ---
 
@@ -33,9 +33,12 @@ ht-degree: 0%
 
 ## 추가 리소스
 
-
 [RDE 명령 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html#rde-cli-commands)
 
 [AEM Rapid Development Environments와의 상호 작용을 위한 Adobe I/O Runtime CLI 플러그인](https://github.com/adobe/aio-cli-plugin-aem-rde#aio-cli-plugin-aem-rde)
 
 [AEM 프로젝트 설정](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html)
+
+## 다음 단계
+
+에 대해 알아보기 [RDE를 사용한 개발/배포 수명 주기](./development-life-cycle.md) 을 신속하게 기능을 제공할 수 있습니다.
