@@ -9,9 +9,9 @@ level: Beginner
 jira: KT-11862
 thumbnail: KT-11862.png
 last-substantial-update: 2023-02-15T00:00:00Z
-source-git-commit: 81e1e2bf0382f6a577c1037dcd0d58ebc73366cd
+source-git-commit: 65d54f0137786c7e8ac9ac962c424dd20bf5f3dd
 workflow-type: tm+mt
-source-wordcount: '862'
+source-wordcount: '703'
 ht-degree: 0%
 
 ---
@@ -35,16 +35,16 @@ ht-degree: 0%
 
 복제 [WKND Sites](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) 프로젝트를 생성하고 즐겨찾는 IDE에서 열어 AEM 아티팩트를 RDE에 배포합니다.
 
-    &quot;셸&quot;
-    $ git clone git@github.com:adobe/aem-guides-wknd.git
-    &quot;
+```shell
+$ git clone git@github.com:adobe/aem-guides-wknd.git
+```
 
 그런 다음 다음 다음 maven 명령을 실행하여 로컬 AEM-SDK에 빌드하고 배포합니다.
 
-    &quot;
-    $ cd aem-guides-wknd/
-    $ mvn clean install -PautoInstallSinglePackage
-    &quot;
+```
+$ cd aem-guides-wknd/
+$ mvn clean install -PautoInstallSinglePackage
+```
 
 ## AEM-RDE 플러그인을 사용하여 AEM 객체 배포
 
@@ -54,13 +54,13 @@ ht-degree: 0%
 
 일반적인 시작점은 먼저 `all` 및 `dispatcher` 다음 명령을 실행하여 패키지 생성
 
-    &quot;셸&quot;
-    # &#39;all&#39; 패키지 설치
-    $ aio aem:rde:설치 all/target/aem-guides-wknd.all-2.1.3-SNAPSHOT.zip
-    
-    # &#39;dispatcher&#39; zip 설치
-    $ aio aem:rde:설치 dispatcher/target/aem-guides-wknd.dispatcher.cloud-2.1.3-SNAPSHOT.zip
-    &quot;
+```shell
+# Install the 'all' package
+$ aio aem:rde:install all/target/aem-guides-wknd.all-2.1.3-SNAPSHOT.zip
+
+# Install the 'dispatcher' zip
+$ aio aem:rde:install dispatcher/target/aem-guides-wknd.dispatcher.cloud-2.1.3-SNAPSHOT.zip
+```
 
 성공적으로 배포한 경우 작성 및 게시 서비스 모두에서 WKND 사이트를 확인합니다. WKND 사이트 페이지에서 컨텐츠를 추가 및 편집하고 게시할 수 있습니다.
 
@@ -118,9 +118,9 @@ ht-degree: 0%
 
 위의 개별 파일 배포 명령 예제에서 `-t` 및 `-p` 플래그는 각각 JCR 경로의 유형과 대상을 나타내는 데 사용됩니다. 사용 가능한 사항을 검토하겠습니다 `install` 다음 명령을 실행하여 명령 옵션을 선택합니다.
 
-    &quot;셸&quot;
-    $ aio aem:rde:설치 —도움말
-    &quot;
+```shell
+$ aio aem:rde:install --help
+```
 
 깃발은 자기 설명이고 `-s` 플래그는 작성자 또는 게시 서비스에만 배포를 타깃팅하는 데 유용합니다. 를 사용하십시오 `-t` 배포할 때 플래그 지정 **content-file 또는 content-xml** 와 함께 파일 `-p` AEM RDE 환경에서 대상 JCR 경로를 지정하는 플래그입니다.
 
@@ -155,15 +155,15 @@ OSGi 번들을 배포하는 방법을 배우려면 다음을 강화하겠습니�
 
 개별 구성 파일 또는 전체 구성 패키지를 배포할 수 있습니다. 예를 들면 다음과 같습니다.
 
-    &quot;셸&quot;
-    # 개별 구성 파일 배포
-    $ aio aem:rde:install ui.config/src/main/content/jcr_root/apps/wknd/osgiconfig/config/org.apache.sling.commons.log.LogManager.factory.config~wknd.cfg.json
-    
-    # 또는 전체 구성 패키지 배포
-    $ cd ui.config
-    $ mvn 청소 패키지
-    $ aio aem:rde:설치 target/aem-guides-wknd.ui.config-2.1.3-SNAPSHOT.zip
-    &quot;
+```shell
+# Deploy individual config file
+$ aio aem:rde:install ui.config/src/main/content/jcr_root/apps/wknd/osgiconfig/config/org.apache.sling.commons.log.LogManager.factory.config~wknd.cfg.json
+
+# Or deploy the complete config package
+$ cd ui.config
+$ mvn clean package
+$ aio aem:rde:install target/aem-guides-wknd.ui.config-2.1.3-SNAPSHOT.zip
+```
 
 >[!TIP]
 >
@@ -202,21 +202,21 @@ Apache 또는 Dispatcher 구성 파일 **개별적으로 배포할 수 없음**&
 
 추가 AEM RDE 플러그인 명령을 검토하여 관리하고 로컬 시스템에서 RDE와 상호 작용하겠습니다.
 
-    &quot;셸&quot;
-    $ aio aem:rde —help
-    RapidDev 환경과 상호 작용합니다.
-    
-    사용
-    $ aio aem rde COMMAND
-    
-    명령
-    aem에서 현재 rde에서 삭제 번들을 삭제하고 구성합니다.
-    aem rde 내역 현재 rde에 대해 수행된 업데이트 목록을 가져옵니다.
-    aem rde는 설치/업데이트 번들, 구성 및 컨텐츠 패키지를 설치합니다.
-    aem rde 재설정 RDE 재설정
-    aem rde 다시 시작 RDE의 작성자 및 게시 다시 시작
-    aem rde 상태 현재 rde에 배포된 번들 및 구성 목록을 가져옵니다.
-    &quot;
+```shell
+$ aio aem:rde --help
+Interact with RapidDev Environments.
+
+USAGE
+$ aio aem rde COMMAND
+
+COMMANDS
+aem rde delete   Delete bundles and configs from the current rde.
+aem rde history  Get a list of the updates done to the current rde.
+aem rde install  Install/update bundles, configs, and content-packages.
+aem rde reset    Reset the RDE
+aem rde restart  Restart the author and publish of an RDE
+aem rde status   Get a list of the bundles and configs deployed to the current rde.
+```
 
 위의 명령을 사용하면 자주 사용하는 IDE에서 RDE를 관리할 수 있으므로 개발/배포 수명 주기가 빨라집니다.
 
