@@ -9,10 +9,10 @@ level: Beginner
 jira: KT-11861
 thumbnail: KT-11861.png
 last-substantial-update: 2023-02-15T00:00:00Z
-source-git-commit: 4ff15fb482d31b984775ca691b53d117a2eba23c
+source-git-commit: 81e1e2bf0382f6a577c1037dcd0d58ebc73366cd
 workflow-type: tm+mt
-source-wordcount: '202'
-ht-degree: 2%
+source-wordcount: '520'
+ht-degree: 1%
 
 ---
 
@@ -29,6 +29,87 @@ ht-degree: 2%
 - AEM RDE 및 Cloud Manager 설정 및 구성 `aio CLI` 플러그인
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415490/?quality=12&learn=on)
+
+## 전제 조건
+
+로컬에 설치해야 합니다.
+
+- [Node.js](https://nodejs.org/en/) (LTS - 장기 지원)
+- [npm 8+](https://docs.npmjs.com/)
+
+## 로컬 설정
+
+를 배포하려면 [WKND Sites 프로젝트](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) 코드 및 컨텐츠를 로컬 시스템의 RDE에 삽입하고 다음 단계를 완료합니다.
+
+### Adobe I/O Runtime 확장 가능 CLI
+
+Adobe I/O Runtime Extensible CLI( `aio CLI` 명령줄에서 다음 명령을 실행하면
+
+    &quot;셸&quot;
+    $ npm 설치 -g @adobe/aio-cli
+    &quot;
+
+### AEM 플러그인
+
+를 사용하여 Cloud Manager 및 AEM RDE 플러그인 설치 `aio cli`s `plugins:install` 명령.
+
+    &quot;셸&quot;
+    $ aio 플러그인:install @adobe/aio-cli-plugin-cloudmanager
+    
+    $ aio plugins:install @adobe/aio-cli-plugin-aem-rde
+    &quot;
+
+Cloud Manager 플러그인을 사용하면 개발자가 명령줄에서 Cloud Manager와 상호 작용할 수 있습니다.
+
+AEM RDE 플러그인을 사용하면 개발자가 로컬 시스템에서 코드와 컨텐츠를 배포할 수 있습니다.
+
+또한 플러그인을 업데이트하려면 `aio plugins:update` 명령.
+
+## AEM 플러그인 구성
+
+AEM 플러그인은 RDE와 상호 작용하도록 구성해야 합니다. 먼저 Cloud Manager UI를 사용하여 조직, 프로그램 및 환경 ID의 값을 복사합니다.
+
+1. 조직 ID: 다음에서 값 복사 **프로필 사진 > 계정 정보(내부) > 모달 창 > 현재 조직 ID**
+
+   ![조직 ID](./assets/Org-ID.png)
+
+1. 프로그램 ID: 다음에서 값 복사 **프로그램 개요 > 환경 > {ProgramName}-rde > 브라우저 URI > 다음 사이 숫자 `program/` 및`/environment`**
+
+1. 환경 ID: 다음에서 값 복사 **프로그램 개요 > 환경 > {ProgramName}-rde > 브라우저 URI > 다음 번호`environment/`**
+
+   ![프로그램 및 환경 ID](./assets/Program-Environment-Id.png)
+
+1. 그런 다음 `aio cli`s `config:set` 명령을 실행하면 다음 명령을 실행하여 이러한 값을 설정합니다.
+
+   ```shell
+   $ aio config:set cloudmanager_orgid <org-id>
+   
+   $ aio config:set cloudmanager_programid <program-id>
+   
+   $ aio config:set cloudmanager_environmentid <env-id>
+   ```
+
+다음 명령을 실행하여 현재 구성 값을 확인할 수 있습니다.
+
+    &quot;셸&quot;
+    $ aio 구성:list
+    &quot;
+
+또한 현재 로그인되어 있는 조직을 전환하거나 확인하려면 아래 명령을 사용할 수 있습니다.
+
+    &quot;셸&quot;
+    $ aio 위치
+    &quot;
+
+## RDE 액세스 확인
+
+다음 명령을 실행하여 AEM RDE 플러그인 설치 및 구성을 확인합니다.
+
+    &quot;셸&quot;
+    $ aio aem:rde:상태
+    &quot;
+
+RDE 상태 정보는 다음과 같이 표시됩니다. _AEM 프로젝트_ 작성 및 게시 서비스의 번들 및 구성.
 
 ## 다음 단계
 
