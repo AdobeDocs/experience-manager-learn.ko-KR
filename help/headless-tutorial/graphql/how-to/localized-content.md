@@ -8,17 +8,17 @@ role: Developer
 level: Intermediate
 kt: 10254
 thumbnail: KT-10254.jpeg
-source-git-commit: 4fa84b0461cbdf2e25336259c4128be5585b8787
+source-git-commit: ae49fb45db6f075a34ae67475f2fcc5658cb0413
 workflow-type: tm+mt
-source-wordcount: '513'
-ht-degree: 2%
+source-wordcount: '508'
+ht-degree: 3%
 
 ---
 
 
 # AEM Headless를 사용하여 지역화된 컨텐츠
 
-AEM에서 제공 [번역 통합 프레임워크](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/translation/integration-framework.html) 헤드리스 컨텐츠의 경우 컨텐츠 조각 및 지원 자산을 로케일 간에 사용할 수 있도록 쉽게 변환할 수 있습니다. 페이지, 경험 조각, 자산 및 Forms과 같은 다른 AEM 컨텐츠를 변환하는 데 사용되는 것과 동일한 프레임워크입니다. 한 번 [헤드리스 컨텐츠가 번역됨](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html?lang=ko), 및 게시하면 헤드리스 애플리케이션에서 소비할 수 있습니다.
+AEM에서 제공 [번역 통합 프레임워크](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/translation/integration-framework.html) 헤드리스 컨텐츠의 경우 컨텐츠 조각 및 지원 자산을 로케일 간에 사용할 수 있도록 쉽게 변환할 수 있습니다. 페이지, 경험 조각, 자산 및 Forms과 같은 다른 AEM 컨텐츠를 변환하는 데 사용되는 것과 동일한 프레임워크입니다. 한 번 [헤드리스 컨텐츠가 번역됨](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html), 및 게시하면 헤드리스 애플리케이션에서 소비할 수 있습니다.
 
 ## 자산 폴더 구조{#assets-folder-structure}
 
@@ -28,7 +28,7 @@ AEM의 현지화된 컨텐츠 조각이 [권장 로컬라이제이션 구조](ht
 
 로케일 폴더는 동일한 항목이어야 하며 제목 대신 폴더 이름이 유효해야 합니다 [ISO 639-1 코드](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) 폴더에 포함된 컨텐츠의 로케일을 나타냅니다.
 
-로케일 코드는 GraphQL 쿼리에서 반환되는 컨텐츠 조각을 필터링하는 데 사용되는 값이기도 합니다.
+로케일 코드는 GraphQL 쿼리에서 반환되는 컨텐츠 조각을 필터링하는 데 사용되는 값입니다.
 
 | 로케일 코드 | AEM 경로 | 콘텐츠 로케일 |
 |--------------------------------|----------|----------|
@@ -38,7 +38,7 @@ AEM의 현지화된 컨텐츠 조각이 [권장 로컬라이제이션 구조](ht
 
 ## GraphQL 지속적인 쿼리
 
-AEM에서 제공 `_locale` 로케일 코드 별로 컨텐츠를 자동으로 필터링하는 GraphQL 필터 . 예를 들어 [WKND 참조 데모 프로젝트](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-site.html) 새 지속적인 쿼리로 수행할 수 있습니다 `wknd-shared/adventures-by-locale` 다음으로 정의:
+AEM에서 제공 `_locale` 로케일 코드별로 컨텐츠를 자동으로 필터링하는 GraphQL 필터. 예를 들어 [WKND 사이트 프로젝트](https://github.com/adobe/aem-guides-wknd) 새 지속적인 쿼리로 수행할 수 있습니다 `wknd-shared/adventures-by-locale` 다음으로 정의:
 
 ```graphql
 query($locale: String!) {
@@ -84,7 +84,7 @@ export default LocaleContext;
 
 다음으로, [로케일 컨텍스트](#locale-context) 값을 지정한 경우 이해할 수 있도록 해줍니다.
 
-이 로케일 값은 GraphQL 쿼리를 구동하는 데 사용되며 선택한 로케일과 일치하는 컨텐츠만 반환하도록 합니다.
+이 로케일 값은 GraphQL 쿼리를 구동하는 데 사용되며 선택한 로케일과 일치하는 콘텐츠만 반환합니다.
 
 ```javascript
 // src/LocaleSwitcher.js
@@ -112,7 +112,7 @@ export default function LocaleSwitcher() {
 
 이 접근 방식은 응용 프로그램의 다른 쿼리로 확장될 수 있으므로 모든 쿼리에 사용자의 로케일 선택에 의해 지정된 콘텐츠만 포함되도록 할 수 있습니다.
 
-AEM에 대한 쿼리는 사용자 지정 React 후크에서 수행됩니다 [getAdventureByLocale을 참조하십시오. AEM GraphQL 쿼리 설명서에 대해 자세히 설명합니다](./aem-headless-sdk.md).
+AEM에 대한 쿼리는 사용자 지정 React 후크에서 수행됩니다 [getAdventureByLocale, AEM GraphQL 쿼리 설명서에 대해 자세히 설명합니다.](./aem-headless-sdk.md).
 
 ```javascript
 // src/Adventures.js

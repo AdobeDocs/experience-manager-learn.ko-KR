@@ -10,16 +10,16 @@ level: Beginner
 kt: 10721
 thumbnail: KT-10721.jpg
 last-substantial-update: 2022-10-03T00:00:00Z
-source-git-commit: 1ecd3c761ea7c79036b263ff8528a6cd01af0e76
+source-git-commit: ae49fb45db6f075a34ae67475f2fcc5658cb0413
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '806'
 ht-degree: 1%
 
 ---
 
 # Next.js 앱
 
-예제 애플리케이션은 AEM(Adobe Experience Manager)의 헤드리스 기능을 살펴보는 좋은 방법입니다. 이 Next.js 애플리케이션은 지속적인 쿼리를 사용하여 AEM GraphQL API를 사용하여 컨텐츠를 쿼리하는 방법을 보여줍니다. JavaScript용 AEM 헤드리스 클라이언트는 앱을 구동하는 GraphQL 지속적인 쿼리를 실행하는 데 사용됩니다.
+예제 애플리케이션은 AEM(Adobe Experience Manager)의 헤드리스 기능을 살펴보는 좋은 방법입니다. 이 Next.js 애플리케이션은 지속적인 쿼리를 사용하여 AEM GraphQL API를 사용하여 컨텐츠를 쿼리하는 방법을 보여줍니다. JavaScript용 AEM Headless Client는 앱을 구동하는 GraphQL 지속적인 쿼리를 실행하는 데 사용됩니다.
 
 ![AEM Headless를 사용한 Next.js 앱](./assets/next-js/next-js.png)
 
@@ -35,7 +35,7 @@ ht-degree: 1%
 
 ## AEM 요구 사항
 
-Next.js 앱은 다음 AEM 배포 옵션과 함께 작동합니다. 모든 배포에는 [WKND 공유 v2.1.0+](https://github.com/adobe/aem-guides-wknd-shared/releases/latest), [WKND 사이트 v2.1.0+](https://github.com/adobe/aem-guides-wknd/releases/latest)또는 [참조 데모 추가 기능](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/overview.html) AEM as a Cloud Service 환경에 설치됩니다.
+Next.js 앱은 다음 AEM 배포 옵션과 함께 작동합니다. 모든 배포에는 [WKND 공유 v2.1.0+](https://github.com/adobe/aem-guides-wknd-shared/releases/latest) 또는 [WKND 사이트 v2.1.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) AEM as a Cloud Service 환경에 설치됩니다.
 
 이 예제 Next.js 앱은 다음에 연결하도록 설계되었습니다 __AEM 게시__ 서비스.
 
@@ -80,21 +80,13 @@ Next.js는 다음에 연결하도록 설계되었습니다 __AEM 게시__ 서비
    AEM_AUTH_DEV_TOKEN=my-dev-token
    ```
 
-1. 편집 `aem-guides-wknd-graphql/next-js/.env.local` 파일 및 유효성 검사  `NEXT_PUBLIC_AEM_GRAPHQL_ENDPOINT` 이 적절한 AEM GraphQL 종단점으로 설정됩니다.
+1. 편집 `aem-guides-wknd-graphql/next-js/.env.local` 파일 및 유효성 검사  `NEXT_PUBLIC_AEM_GRAPHQL_ENDPOINT` 은 적절한 AEM GraphQL 종단점으로 설정됩니다.
 
    사용 시 [WKND 공유](https://github.com/adobe/aem-guides-wknd-shared/releases/latest) 또는 [WKND 사이트](https://github.com/adobe/aem-guides-wknd/releases/latest)를 사용하려면 `wknd-shared` GraphQL API 엔드포인트.
 
    ```plain
    ...
    NEXT_PUBLIC_AEM_GRAPHQL_ENDPOINT=wknd-shared
-   ...
-   ```
-
-   사용 시 [참조 데모 추가 기능](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/overview.html)를 사용하려면 `aem-demo-assets` GraphQL API 엔드포인트.
-
-   ```plain
-   ...
-   NEXT_PUBLIC_AEM_GRAPHQL_ENDPOINT=aem-demo-assets
    ...
    ```
 
@@ -111,11 +103,11 @@ Next.js는 다음에 연결하도록 설계되었습니다 __AEM 게시__ 서비
 
 ## 코드
 
-다음은 Next.js 앱이 빌드되는 방법, GraphQL 지속적인 쿼리를 사용하여 콘텐츠를 검색하기 위해 AEM 헤드리스에 연결하는 방법 및 데이터가 표시되는 방법에 대한 요약입니다. 전체 코드는 [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/next-js).
+다음은 Next.js 앱이 빌드되는 방법, GraphQL 지속적인 쿼리를 사용하여 콘텐츠를 검색하기 위해 AEM Headless에 연결하는 방법 및 데이터가 표시되는 방법에 대한 요약입니다. 전체 코드는 [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/next-js).
 
 ### 지속되는 쿼리
 
-AEM 헤드리스 우수 사례에 따라 Next.js 앱에서는 AEM GraphQL 지속적인 쿼리를 사용하여 모험 데이터를 쿼리합니다. 앱에서는 두 개의 지속적인 쿼리를 사용합니다.
+AEM Headless 우수 사례에 따라 Next.js 앱에서는 AEM GraphQL 지속적인 쿼리를 사용하여 모험 데이터를 쿼리합니다. 앱에서는 두 개의 지속적인 쿼리를 사용합니다.
 
 + `wknd/adventures-all` AEM의 모든 모험을 반환하는 질의가 완료된 속성 집합을 사용하여 유지됩니다. 이렇게 지속된 쿼리가 초기 보기의 모험 목록을 구동합니다.
 
@@ -200,11 +192,11 @@ query($slug: String!) {
 
 ### GraphQL 지속적인 쿼리 실행
 
-AEM 지속적인 쿼리는 HTTP GET을 통해 실행되므로 [JavaScript용 AEM Headless 클라이언트](https://github.com/adobe/aem-headless-client-js) 에 사용됩니다. [지속된 GraphQL 쿼리 실행](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md#aemheadlessrunpersistedquerypath-variables-options--promiseany) AEM에 대해 를 설정하고 모험 컨텐츠를 앱에 로드합니다.
+AEM 지속적인 쿼리는 HTTP GET을 통해 실행되므로 [JavaScript용 AEM Headless 클라이언트](https://github.com/adobe/aem-headless-client-js) 에 사용됩니다. [지속되는 GraphQL 쿼리 실행](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md#aemheadlessrunpersistedquerypath-variables-options--promiseany) AEM에 대해 를 설정하고 모험 컨텐츠를 앱에 로드합니다.
 
-지속되는 각 쿼리에는 `src/lib//aem-headless-client.js`를 호출하면 AEM GraphQL 종료 포인트가 호출되고 모험 데이터가 반환됩니다.
+지속되는 각 쿼리에는 `src/lib//aem-headless-client.js`를 호출하면 AEM GraphQL 종단점이 호출되고 모험 데이터가 반환됩니다.
 
-각 함수는 `aemHeadlessClient.runPersistedQuery(...)`, 지속형 GraphQL 쿼리를 실행합니다.
+각 함수는 `aemHeadlessClient.runPersistedQuery(...)`: 지속형 GraphQL 쿼리를 실행합니다.
 
 ```js
 // src/lib/aem-headless-client.js

@@ -9,10 +9,10 @@ level: Intermediate
 kt: 10253
 thumbnail: KT-10253.jpeg
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
-source-git-commit: 3a7c04dfe465c1eff29ba6b4e4b7e24f047e5b42
+source-git-commit: ae49fb45db6f075a34ae67475f2fcc5658cb0413
 workflow-type: tm+mt
-source-wordcount: '1182'
-ht-degree: 1%
+source-wordcount: '1177'
+ht-degree: 2%
 
 ---
 
@@ -55,7 +55,7 @@ AEM Headless 컨텐츠 모델링에서 사용되는 컨텐츠 조각으로서, �
 
 ## GraphQL 지속적인 쿼리
 
-GraphQL 쿼리에서 필드를 `ImageRef` 을 입력하고 적절한 필드를 요청합니다 `_path`, `_authorUrl`, 또는 `_publishUrl` 애플리케이션에 필요합니다. 예를 들어, [WKND 참조 데모 프로젝트](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-site.html) 이미지 자산 참조에 대한 이미지 URL을 포함합니다 `primaryImage` 필드, 새 지속적인 쿼리로 수행할 수 있습니다 `wknd-shared/adventure-image-by-path` 다음으로 정의:
+GraphQL 쿼리에서 필드를 `ImageRef` 을 입력하고 적절한 필드를 요청합니다 `_path`, `_authorUrl`, 또는 `_publishUrl` 애플리케이션에 필요합니다. 예를 들어, [WKND 사이트 프로젝트](https://github.com/adobe/aem-guides-wknd) 이미지 자산 참조에 대한 이미지 URL을 포함합니다 `primaryImage` 필드, 새 지속적인 쿼리로 수행할 수 있습니다 `wknd-shared/adventure-image-by-path` 다음으로 정의:
 
 ```graphql
 query ($path: String!) {
@@ -172,7 +172,7 @@ AEM Assets 관리자는 처리 프로필을 사용하여 사용자 지정 표현
 
 ### GraphQL 쿼리{#renditions-graphl-query}
 
-AEM GraphQL에는 이미지 표현물 요청에 추가 구문이 필요합니다. 대신 [이미지를 쿼리합니다.](#images-graphql-query) 일반적인 방법으로, 원하는 표현물이 코드 내에 지정됩니다. 중요한 사항 [헤드리스 애플리케이션에서 사용하는 이미지 자산에 이름이 같은 표현물이 있는지 확인합니다](#reprocess-assets).
+AEM GraphQL에는 이미지 표현물 요청에 대한 추가 구문이 필요합니다. 대신 [이미지를 쿼리합니다.](#images-graphql-query) 일반적인 방법으로, 원하는 표현물이 코드 내에 지정됩니다. 중요한 사항 [헤드리스 애플리케이션에서 사용하는 이미지 자산에 이름이 같은 표현물이 있는지 확인합니다](#reprocess-assets).
 
 ### React 예
 
@@ -184,7 +184,7 @@ AEM GraphQL에는 이미지 표현물 요청에 추가 구문이 필요합니다
 
 이미지를 렌더링하는 React 구성 요소를 만듭니다. 이 구성 요소는 다음 네 가지 속성을 허용합니다.
 
-+ `assetUrl`: GraphQL 쿼리 응답을 통해 제공되는 이미지 자산 URL입니다.
++ `assetUrl`: GraphQL 쿼리의 응답을 통해 제공된 이미지 자산 URL입니다.
 + `renditionName`: 로드할 표현물의 이름입니다.
 + `renditionExtension`: 로드할 표현물의 확장.
 + `alt`: 이미지의 대체 텍스트 접근성이 중요합니다!
