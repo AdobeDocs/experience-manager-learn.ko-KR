@@ -8,7 +8,7 @@ role: Developer
 level: Intermediate
 kt: 11743
 last-substantial-update: 2023-01-17T00:00:00Z
-source-git-commit: 643a9844f19aa1bd153661540ec7f7398a35118e
+source-git-commit: 40679e80fd9270dd9fad8174a986fd1fdd5e3d29
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 1%
@@ -99,7 +99,7 @@ JWT_PRIVATE_KEY=LS0tLS1C..kQgUFJJVkFURSBLRVktLS0tLQ==
 
 ## 입력 매핑
 
-JWT 자격 증명 값을 `.env` 파일에서 읽을 수 있도록 AppBuilder 작업 입력에 매핑해야 합니다. 이렇게 하려면 `ext.config.yaml` 작업 `inputs` 형식으로: `INPUT_NAME=$ENV_KEY`.
+JWT 자격 증명 값을 `.env` 파일에서 읽을 수 있도록 AppBuilder 작업 입력에 매핑해야 합니다. 이렇게 하려면 `ext.config.yaml` 작업 `inputs` 형식으로: `PARAMS_INPUT_NAME: $ENV_KEY`.
 
 예:
 
