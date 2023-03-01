@@ -7,7 +7,7 @@ index: y
 source-git-commit: d5645e975aa290392348cc69d078b24921a7d13a
 workflow-type: tm+mt
 source-wordcount: '222'
-ht-degree: 14%
+ht-degree: 16%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 14%
 + 보안 {#security}
    + [AEM 보안 알림(2018년 11월)](./security/aem-security-notification-2018-11.md)
    + [CORS(원본 간 리소스 공유)를 위한 개발](./security/develop-for-cross-origin-resource-sharing.md)
-   + [CORS(원본 간 리소스 공유) 이해](./security/understand-cross-origin-resource-sharing.md)
+   + [원본 간 리소스 공유(CORS) 이해](./security/understand-cross-origin-resource-sharing.md)
    + [SSL 마법사 사용](./security/use-the-ssl-wizard.md)
 + 워크플로 {#workflow}
    + [워크플로우 편집기 사용](./workflow/use-the-workflow-editor.md)

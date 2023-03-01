@@ -8,7 +8,7 @@ team: TM
 source-git-commit: 1a7b4c9c4575407467856d795ad3b6dde8e10532
 workflow-type: tm+mt
 source-wordcount: '897'
-ht-degree: 20%
+ht-degree: 21%
 
 ---
 
@@ -158,7 +158,7 @@ ht-degree: 20%
       + AEM Forms as a Cloud Service {#aem-forms}
          + [소개](./migration/moving-to-aem-as-a-cloud-service/aem-forms/introduction.md)
          + [디지털 등록](./migration/moving-to-aem-as-a-cloud-service/aem-forms/digital-enrollment.md)
-         + [통신](./migration/moving-to-aem-as-a-cloud-service/aem-forms/communications.md)
+         + [커뮤니케이션](./migration/moving-to-aem-as-a-cloud-service/aem-forms/communications.md)
    + Cloud Acceleration Manager {#cloud-acceleration-manager}
       + [소개](./migration/cloud-acceleration-manager/introduction.md)
       + [준비 및 모범 사례 분석기](./migration/cloud-acceleration-manager/readiness-and-best-practice-analyzer.md)

@@ -8,7 +8,7 @@ version: 6.4, 6.5, Cloud Service
 source-git-commit: c82965636ddeef7dc165e0bea079c99f1a16e0ca
 workflow-type: tm+mt
 source-wordcount: '438'
-ht-degree: 27%
+ht-degree: 28%
 
 ---
 
@@ -42,8 +42,8 @@ ht-degree: 27%
    + [웹에 최적화된 이미지 제공](components/web-optimized-image-delivery.md)
    + [구성 요소 콘솔](components/components-console-feature-video-use.md)
 + 콘텐츠 조각 {#content-fragments}
-   + [컨텐츠 조각 콘솔](content-fragments/content-fragments-console.md)
-   + [컨텐츠 조각 작성](content-fragments/content-fragments-feature-video-use.md)
+   + [콘텐츠 조각 콘솔](content-fragments/content-fragments-console.md)
+   + [콘텐츠 조각 작성](content-fragments/content-fragments-feature-video-use.md)
    + [컨텐츠 조각 제공](content-fragments/content-fragments-delivery-feature-video-use.md)
    + [컨텐츠 조각 번역](content-fragments/content-fragments-translation-feature-video-use.md)
    + [컨텐츠 조각과 경험 조각 비교](content-fragments/understand-content-fragments-and-experience-fragments.md)
