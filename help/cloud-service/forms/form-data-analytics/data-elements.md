@@ -1,5 +1,5 @@
 ---
-title: Adobe 분석을 사용하여 제출된 양식 데이터 필드에 대한 보고서
+title: Adobe Analytics을 사용하여 제출된 양식 데이터 필드에 대한 보고서
 description: AEM Forms CS와 Adobe Analytics을 통합하여 양식 데이터 필드에 대해 보고합니다
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
@@ -9,7 +9,7 @@ version: Cloud Service
 feature: Adaptive Forms
 topic: Development
 kt: 12557
-source-git-commit: 4100061624bd8955bee392f1eced20f388f2902c
+source-git-commit: 439167be96959baea54f50a221c6d26f8fab78b2
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # 적절한 데이터 요소 만들기
 
-태그 속성에서 두 개의 새 데이터 요소(AppliancesStateOfResidence 및 validationError)를 추가했습니다.
+Tags 속성에서 두 개의 새 데이터 요소(AppliancesStateOfResidence 및 validationError)를 추가했습니다.
 ![적응형 양식](assets/data_elements.png)
 
 ## 지원자주국

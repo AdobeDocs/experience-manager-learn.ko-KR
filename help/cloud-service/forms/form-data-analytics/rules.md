@@ -1,5 +1,5 @@
 ---
-title: Adobe 분석을 사용하여 제출된 양식 데이터 필드에 대한 보고서
+title: Adobe Analytics을 사용하여 제출된 양식 데이터 필드에 대한 보고서
 description: AEM Forms CS와 Adobe Analytics을 통합하여 양식 데이터 필드에 대해 보고합니다
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
@@ -9,9 +9,9 @@ version: Cloud Service
 feature: Adaptive Forms
 topic: Development
 kt: 12557
-source-git-commit: 4100061624bd8955bee392f1eced20f388f2902c
+source-git-commit: 439167be96959baea54f50a221c6d26f8fab78b2
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '220'
 ht-degree: 0%
 
 ---
