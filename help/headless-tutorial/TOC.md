@@ -7,9 +7,9 @@ sub-product: Experience Manager Sites
 version: 6.5, Cloud Service
 kt: 2963
 index: y
-source-git-commit: c96b8c9761ff9477fda40d641db5021994b32754
+source-git-commit: ea7cd118d9cba97d2b497f6659f74d2fe8331c66
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '282'
 ht-degree: 20%
 
 ---
@@ -59,6 +59,7 @@ ht-degree: 20%
    + [서식 있는 텍스트](./graphql/how-to/rich-text.md)
    + [이미지](./graphql/how-to/images.md)
    + [현지화된 콘텐츠](./graphql/how-to/localized-content.md)
+   + [미리보기](./graphql/how-to/preview.md)
    + [AEM Headless SDK](./graphql/how-to/aem-headless-sdk.md)
    + [AEM 6.5에 GraphiQL 설치](./graphql/how-to/install-graphiql-aem-6-5.md)
    + 예 {#example-apps}
@@ -98,7 +99,7 @@ ht-degree: 20%
    + [개요](./authentication/overview.md)
    + [1 - 로컬 개발 액세스 토큰](./authentication/local-development-access-token.md)
    + [2 - 서비스 자격 증명](./authentication/service-credentials.md)
-+ 컨텐츠 서비스 {#content-services}
++ Content Services {#content-services}
    + [개요](./content-services/overview.md)
    + [1 - 자습서 설정](./content-services/chapter-1.md)
    + [2 - 이벤트 컨텐츠 조각 모델 정의](./content-services/chapter-2.md)
