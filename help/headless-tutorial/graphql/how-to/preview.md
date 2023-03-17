@@ -10,7 +10,7 @@ doc-type: Tutorial
 last-substantial-update: 2023-03-17T00:00:00Z
 jira: KT-10841
 thumbnail: 3416906.jpeg
-source-git-commit: ea7cd118d9cba97d2b497f6659f74d2fe8331c66
+source-git-commit: 024b2faac2e5a1a8d4bac64d1f70f292aac75dd0
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 0%
@@ -71,7 +71,7 @@ AEM Headless 애플리케이션은 통합 작성 미리 보기를 지원합니�
 
 AEM Headless GraphQL API를 사용하여 AEM의 모험을 표시하는 간단한 React 애플리케이션인 WKND 앱을 살펴보겠습니다.
 
-예제 코드는에서 사용할 수 있습니다. [Github.com](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/preview-app).
+예제 코드는에서 사용할 수 있습니다. [Github.com](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/preview-tutorial).
 
 ## URL 및 경로
 
