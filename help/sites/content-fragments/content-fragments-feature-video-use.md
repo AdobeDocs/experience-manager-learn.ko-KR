@@ -14,11 +14,11 @@ exl-id: d33c033a-9577-4d4e-99be-f3c7e2a4ce73
 source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '383'
-ht-degree: 9%
+ht-degree: 13%
 
 ---
 
-# 컨텐츠 조각 작성 {#authoring-content-fragments}
+# 콘텐츠 조각 작성 {#authoring-content-fragments}
 
 컨텐츠 조각은 AEM에서 지원하는 채널과 관계없이 텍스트 기반 컨텐츠를 작성 및 관리할 수 있도록 하는 컨텐츠 추상화입니다.
 
@@ -27,7 +27,7 @@ AEM 컨텐츠 조각은 연관되지만 디자인이나 레이아웃 정보 없�
 이 비디오 시리즈는 AEM에서 컨텐츠 조각 작성 수명 주기를 다룹니다. 세부 정보 [컨텐츠 조각 전달은 여기에서 찾을 수 있습니다.](content-fragments-delivery-feature-video-use.md).
 
 1. 컨텐츠 조각 모델 활성화 및 정의
-2. 컨텐츠 조각 작성
+2. 콘텐츠 조각 작성
 3. 컨텐츠 조각 다운로드
 4. 편집 기능
 
@@ -36,7 +36,7 @@ AEM 컨텐츠 조각은 연관되지만 디자인이나 레이아웃 정보 없�
 >title="조각 관리"
 >abstract="컨텐츠 조각을 사용하여 페이지에 구애받지 않고 컨텐츠를 디자인, 작성, 조정 및 사용할 수 있는 방법을 알아봅니다."
 
-## 컨텐츠 조각 모델 정의 {#defining-content-fragment-models}
+## 콘텐츠 조각 모델 정의 {#defining-content-fragment-models}
 
 >[!VIDEO](https://video.tv.adobe.com/v/22452/?quality=12&learn=on)
 
@@ -77,7 +77,7 @@ AEM 컨텐츠 조각은 AEM Author에서 변형, 요소 및 메타데이터를 �
 ## 추가 리소스 {#additional-resources}
 
 * [컨텐츠 조각 제공](content-fragments-delivery-feature-video-use.md)
-* [AEM WCM 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [AEM WCM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [AEM WCM 코어 컨텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
 
 비디오 시리즈에서 최종 상태에 대한 AEM 6.4+ 인스턴스에 아래 패키지를 다운로드하여 설치하려면 다음을 수행하십시오.

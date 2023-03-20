@@ -12,7 +12,7 @@ exl-id: d35a7892-d707-4a5c-9e97-ec3abba0f30c
 source-git-commit: bca51ece7a9b249727b8746cc9654503059116fb
 workflow-type: tm+mt
 source-wordcount: '172'
-ht-degree: 6%
+ht-degree: 13%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 6%
 >title="Adobe IMS 사용자"
 >abstract="AEM 작성자 서비스에 액세스해야 하는 사용자는 Adobe의 Admin Console에서 Adobe IMS 사용자로 관리됩니다. Adobe IMS 사용자의 유형, Admin Console에서 액세스 및 관리되는 방법에 대해 알아봅니다."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#how-to-set-up" text="Admin Console에서 사용자 온보딩"
->additional-url="https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/identity.ug.html" text="Adobe Admin Console ID 개요"
+>additional-url="https://helpx.adobe.com/kr/enterprise/admin-guide.html/enterprise/using/identity.ug.html" text="Adobe Admin Console ID 개요"
 
 AEM 작성자 서비스에 액세스해야 하는 사용자는 [Adobe IMS 사용자](https://helpx.adobe.com/kr/enterprise/using/set-up-identity.html) in [Adobe Admin Console](https://adminconsole.adobe.com). Adobe IMS 사용자의 유형, Admin Console에서 액세스 및 관리되는 방법에 대해 알아봅니다.
 
@@ -32,4 +32,4 @@ AEM 작성자 서비스에 액세스해야 하는 사용자는 [Adobe IMS 사용
 ## 추가 리소스
 
 + [Admin Console 설명서에서 사용자 온보딩](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html#onboarding-users-in-admin-console)
-+ [Adobe Admin Console ID 개요 설명서](https://helpx.adobe.com/enterprise/using/identity.html)
++ [Adobe Admin Console ID 개요 설명서](https://helpx.adobe.com/kr/enterprise/using/identity.html)

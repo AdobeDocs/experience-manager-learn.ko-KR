@@ -1,6 +1,6 @@
 ---
-title: AEM 헤드리스 시작하기 - GraphQL
-description: Experience Manager GraphQL API 및 기능에 대해 알아봅니다.
+title: AEM Headless 시작하기 - GraphQL
+description: GraphQL API Experience Manager 및 기능에 대해 알아봅니다.
 feature: Content Fragments, GraphQL API, APIs
 topic: Headless, Content Management
 role: Developer
@@ -15,9 +15,9 @@ ht-degree: 2%
 
 ---
 
-# AEM 헤드리스 시작하기 - GraphQL {#getting-started-with-aem-headless}
+# AEM Headless 시작하기 - GraphQL {#getting-started-with-aem-headless}
 
-컨텐츠 조각용 AEM GraphQL API는 AEM에서 관리되는 컨텐츠를 사용하여 외부 클라이언트 애플리케이션이 경험을 렌더링하는 헤드리스 CMS 시나리오를 지원합니다.
+컨텐츠 조각용 AEM GraphQL API는 외부 클라이언트 애플리케이션이 AEM에서 관리되는 컨텐츠를 사용하여 경험을 렌더링하는 헤드리스 CMS 시나리오를 지원합니다.
 
 최신 콘텐츠 전달 API는 Javascript 기반 프런트 엔드 애플리케이션의 효율성 및 성능을 위한 키입니다. REST API 를 사용하면 다음과 같은 문제가 발생합니다.
 
@@ -32,15 +32,15 @@ ht-degree: 2%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_learn_headless_graphql_overview"
->title="AEM 헤드리스 시작하기 - GraphQL"
->abstract="GraphQL을 사용하여 컨텐츠 조각을 제공하는 방법을 알아봅니다."
+>title="AEM Headless 시작하기 - GraphQL"
+>abstract="GraphQL을 사용하여 컨텐츠 조각을 전달하는 방법을 알아봅니다."
 >additional-url="https://video.tv.adobe.com/v/328618" text="AEM의 GraphQL 개요"
 
-## AEM 헤드리스 GraphQL 비디오 시리즈
+## AEM Headless GraphQL 비디오 시리즈
 
-컨텐츠 조각 및 AEM GraphQL API 및 개발 도구에 대한 심층적인 개요를 통해 AEM GraphQL 기능에 대해 알아봅니다.
+컨텐츠 조각 및 AEM GraphQL API 및 개발 도구에 대한 세부 절차를 통해 AEM GraphQL 기능에 대해 알아보십시오.
 
-* [AEM 헤드리스 GraphQL 비디오 시리즈](./video-series/modeling-basics.md)
+* [AEM Headless GraphQL 비디오 시리즈](./video-series/modeling-basics.md)
 
 ## AEM Headless GraphQL 실습 자습서
 
@@ -48,11 +48,11 @@ AEM GraphQL API를 통해 컨텐츠 조각을 사용하는 React 앱을 빌드�
 
 * [AEM Headless GraphQL 실습 자습서](./multi-step/overview.md)
 
-## AEM GraphQL과 AEM 컨텐츠 서비스 비교
+## AEM GraphQL과 AEM Content Services
 
-|  | AEM GraphQL APIs | AEM 컨텐츠 서비스 |
+|  | AEM GraphQL API | AEM 컨텐츠 서비스 |
 |--------------------------------|:-----------------|:---------------------|
 | 스키마 정의 | 구조화된 컨텐츠 조각 모델 | AEM 구성 요소 |
-| 컨텐트 | 콘텐츠 조각 | AEM 구성 요소 |
+| 콘텐츠 | 콘텐츠 조각 | AEM 구성 요소 |
 | 컨텐츠 검색 | GraphQL 쿼리별 | AEM 페이지별 |
 | 배달 형식 | GraphQL JSON | AEM ComponentExporter JSON |

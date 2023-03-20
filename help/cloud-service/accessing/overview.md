@@ -67,6 +67,6 @@ Admin Console에서 Adobe IMS 사용자, 사용자 그룹 및 제품 프로필�
 
 다음 설명서 [Adobe Admin Console](https://adminconsole.adobe.com)Adobe Admin Console을 더 잘 이해하고 이를 사용하여 Experience Cloud 제품 간에 사용자를 관리하고 액세스할 수 있는 데 도움이 되는 특정 세부 사항 및 문제입니다.
 
-+ [Adobe Admin Console ID 개요](https://helpx.adobe.com/enterprise/using/identity.html)
++ [Adobe Admin Console ID 개요](https://helpx.adobe.com/kr/enterprise/using/identity.html)
 + [Adobe Admin Console 관리자 역할](https://helpx.adobe.com/enterprise/using/admin-roles.html)
 + [Adobe Admin Console 개발자 역할](https://helpx.adobe.com/enterprise/using/manage-developers.html)

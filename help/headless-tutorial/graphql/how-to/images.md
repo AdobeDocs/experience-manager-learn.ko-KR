@@ -11,8 +11,8 @@ thumbnail: KT-10253.jpeg
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
 source-git-commit: ae49fb45db6f075a34ae67475f2fcc5658cb0413
 workflow-type: tm+mt
-source-wordcount: '1177'
-ht-degree: 2%
+source-wordcount: '1174'
+ht-degree: 1%
 
 ---
 
@@ -168,7 +168,7 @@ AEM Assets 관리자는 처리 프로필을 사용하여 사용자 지정 표현
 | https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg | /_jcr_content/renditions/ | 웹 최적화 매체 | .webp | → | https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg/_jcr_content/renditions/web-optimized-medium.webp |
 | https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg | /_jcr_content/renditions/ | 웹에 최적화된 소규모 | .webp | → | https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg/_jcr_content/renditions/web-optimized-small.webp |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### GraphQL 쿼리{#renditions-graphl-query}
 
