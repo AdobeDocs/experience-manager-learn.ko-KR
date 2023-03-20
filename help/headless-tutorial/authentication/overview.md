@@ -13,22 +13,22 @@ topic: Headless, Integrations
 role: Developer
 level: Intermediate, Experienced
 exl-id: 63c23f22-533d-486c-846b-fae22a4d68db
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 8fc36698f06fea0eaaf818867c7e713453e0452d
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '641'
 ht-degree: 0%
 
 ---
 
 # AEM as a Cloud Service에 대한 토큰 기반 인증
 
-AEM은 GraphQL, AEM Content Services에서 Assets HTTP API에 헤드리스 방식으로 상호 작용할 수 있는 다양한 HTTP 엔드포인트를 제공합니다. 종종 이러한 헤드리스 소비자는 보호된 컨텐츠 또는 작업에 액세스하려면 AEM을 인증해야 할 수 있습니다. 이를 위해 AEM에서는 외부 애플리케이션, 서비스 또는 시스템에서 HTTP 요청에 대한 토큰 기반 인증을 지원합니다.
+AEM은 GraphQL, AEM Content Services에서 Assets HTTP API에 이르기까지 헤드리스 방식으로 상호 작용할 수 있는 다양한 HTTP 엔드포인트를 제공합니다. 종종 이러한 헤드리스 소비자는 보호된 컨텐츠 또는 작업에 액세스하려면 AEM을 인증해야 할 수 있습니다. 이를 위해 AEM에서는 외부 애플리케이션, 서비스 또는 시스템에서 HTTP 요청에 대한 토큰 기반 인증을 지원합니다.
 
 이 자습서에서는 액세스 토큰을 사용하여 외부 애플리케이션이 HTTP를 통해 AEM as a Cloud Service을 프로그래밍 방식으로 인증하고 상호 작용하는 방법을 살펴봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330460/?quality=12&learn=on)
 
-## 전제 조건
+## 사전 요구 사항
 
 이 자습서와 함께 다음 작업을 수행하기 전에 다음 사항을 준비하십시오.
 
@@ -75,5 +75,5 @@ Node.js 애플리케이션의 실행 흐름은 다음과 같습니다.
 
 + [예제 응용 프로그램을 다운로드합니다](./assets/aem-guides_token-authentication-external-application.zip)
 + JWT 작성 및 교환의 기타 코드 샘플
-   + [Node.js, Java, Python, C#.NET 및 PHP 코드 샘플](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/samples/samples.md)
+   + [Node.js, Java, Python, C#.NET 및 PHP 코드 샘플](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/samples/)
    + [JavaScript/Axos 기반 코드 샘플](https://github.com/adobe/aemcs-api-client-lib)

@@ -14,9 +14,9 @@ role: Developer
 level: Intermediate, Experienced
 last-substantial-update: 2023-01-12T00:00:00Z
 exl-id: e2922278-4d0b-4f28-a999-90551ed65fb4
-source-git-commit: 8b6d8d99c806e782a1ddce2b300211f8d4c9da56
+source-git-commit: 1401710c19ae6ee6a2822ae06286bef4f92cda45
 workflow-type: tm+mt
-source-wordcount: '1931'
+source-wordcount: '1937'
 ht-degree: 0%
 
 ---
@@ -124,7 +124,7 @@ Cloud Service 환경의 서비스 자격 증명이 초기화되면 Adobe IMS 조
 
 + 서비스 자격 증명이 있으면 외부 응용 프로그램은 AEM as a Cloud Service에 액세스할 때 로컬 개발 액세스 토큰 대신 이 액세스 토큰을 사용합니다
 
-이 자습서에서는 Adobe의 `@adobe/jwt-auth` npm 모듈은 두 가지 모두를 위해 사용되고, (1) 서비스 자격 증명에서 JWT를 생성하고, (2) 단일 함수 호출에서 액세스 토큰으로 교환합니다. 애플리케이션이 JavaScript 기반이 아닌 경우 [다른 언어로 샘플 코드](https://developer.adobe.com/developer-console/docs/guides/) 서비스 자격 증명에서 JWT를 만들고 Adobe IMS와 액세스 토큰으로 교환하는 방법에 대해 설명합니다.
+이 자습서에서는 Adobe의 `@adobe/jwt-auth` npm 모듈은 두 가지 모두를 위해 사용되고, (1) 서비스 자격 증명에서 JWT를 생성하고, (2) 단일 함수 호출에서 액세스 토큰으로 교환합니다. 애플리케이션이 JavaScript 기반이 아닌 경우 [다른 언어로 샘플 코드](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/samples/) 서비스 자격 증명에서 JWT를 만들고 Adobe IMS와 액세스 토큰으로 교환하는 방법에 대해 설명합니다.
 
 ## 서비스 자격 증명 읽기
 
@@ -149,7 +149,7 @@ function getCommandLineParams() {
 
 서비스 자격 증명을 읽고 나면 액세스 토큰을 위해 Adobe IMS API와 교환하는 JWT를 생성하는 데 사용됩니다. 그런 다음 이 액세스 토큰을 사용하여 AEM as a Cloud Service에 액세스할 수 있습니다.
 
-이 예제 애플리케이션은 Node.js 기반이므로 가장 적합한 [@adobe/jwt-auth](https://www.npmjs.com/package/@adobe/jwt-auth) (1) JWT 생성 및 (Adobe IMS와 20개의 교환을 용이하게 하는 npm 모듈입니다. 응용 프로그램이 다른 언어를 사용하여 개발된 경우 [적절한 코드 샘플](https://developer.adobe.com/developer-console/docs/guides/) 다른 프로그래밍 언어를 사용하여 Adobe IMS에 HTTP 요청을 구성하는 방법에 대해 설명합니다.
+이 예제 애플리케이션은 Node.js 기반이므로 가장 적합한 [@adobe/jwt-auth](https://www.npmjs.com/package/@adobe/jwt-auth) (1) JWT 생성 및 (Adobe IMS와 20개의 교환을 용이하게 하는 npm 모듈입니다. 응용 프로그램이 다른 언어를 사용하여 개발된 경우 [적절한 코드 샘플](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/samples/) 다른 프로그래밍 언어를 사용하여 Adobe IMS에 HTTP 요청을 구성하는 방법에 대해 설명합니다.
 
 1. 업데이트 `getAccessToken(..)` JSON 파일 내용을 검사하고 로컬 개발 액세스 토큰 또는 서비스 자격 증명을 나타내는지 확인합니다. 이 기능은 `.accessToken` 속성(로컬 개발 액세스 토큰 JSON에만 있음)을 참조하십시오.
 
