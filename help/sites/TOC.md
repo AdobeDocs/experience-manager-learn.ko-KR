@@ -5,10 +5,10 @@ breadcrumb-title: AEM Sites 튜토리얼
 feature-set: Experience Manager Sites, Experience Manager
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: c82965636ddeef7dc165e0bea079c99f1a16e0ca
+source-git-commit: ef1fe712921bd5516cb389862cacf226a71aa193
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 28%
+source-wordcount: '441'
+ht-degree: 27%
 
 ---
 
@@ -98,12 +98,12 @@ ht-degree: 28%
 + 통합 {#integrations}
    + Experience Platform {#experience-platform}
       + [FPID 생성](integrations/platform/fpid.md)
-   + Experience Platform Launch {#experience-platform-launch}
-      + [개요](integrations/experience-platform-launch/overview.md)
-      + [Launch 속성 만들기](integrations/experience-platform-launch/create-launch-property.md)
-      + [Adobe I/O을 사용하여 AEM과 Launch 연결하기](integrations/experience-platform-launch/connect-aem-launch-adobe-io.md)
-      + [Launch Cloud Service 만들기](integrations/experience-platform-launch/create-launch-cloud-service.md)
-      + [Launch 구현 디버깅](integrations/experience-platform-launch/debug-launch-implementation.md)
+   + Experience Platform 데이터 수집 태그(시작) {#experience-platform-data-collection-tags}
+      + [개요](integrations/experience-platform/data-collection/tags/overview.md)
+      + [태그 속성 만들기](integrations/experience-platform/data-collection/tags/create-tag-property.md)
+      + [개발자 콘솔을 사용하여 AEM과 태그 연결](integrations/experience-platform/data-collection/tags/connect-aem-tags-using-developer-console.md)
+      + [AEM Launch Cloud Service 만들기](integrations/experience-platform/data-collection/tags/create-aem-launch-cloud-service.md)
+      + [태그(Launch) 구현 디버깅](integrations/experience-platform/data-collection/tags/debug-tags-implementation.md)
    + Adobe 클라이언트 데이터 레이어 {#adobe-client-data-layer}
       + [Adobe 클라이언트 데이터 레이어 사용](integrations/adobe-client-data-layer/data-layer-overview.md)
       + [Adobe 클라이언트 데이터 레이어 사용자 지정](integrations/adobe-client-data-layer/data-layer-customize.md)

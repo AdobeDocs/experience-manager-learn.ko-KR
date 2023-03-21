@@ -12,7 +12,7 @@ topic: Integrations
 role: Developer
 level: Intermediate
 exl-id: aa48ffef-1105-4d0d-b4b4-12ac5d2eea23
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: ef1fe712921bd5516cb389862cacf226a71aa193
 workflow-type: tm+mt
 source-wordcount: '106'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 # Launch 속성에 Target 확장 프로그램 추가 {#adobe-target-extension}
 
-이 비디오를 계속 진행하려면 이미 [AEM](../experience-platform-launch/overview.md)과 통합된 Experience Platform Launch이 있어야 합니다.
+이 비디오를 계속 사용하려면 이미 [AEM과 통합된 Experience Platform Launch](../experience-platform/data-collection/tags/overview.md).
 
 Experience Platform Launch을 사용하여 AEM 웹 사이트에 Adobe Target을 활성화하는 방법을 알아봅니다.
 

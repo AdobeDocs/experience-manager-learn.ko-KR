@@ -9,7 +9,7 @@ level: Intermediate
 kt: 5332
 thumbnail: 5332-collect-data-analytics.jpg
 exl-id: 33f2fd25-8696-42fd-b496-dd21b88397b2
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: ef1fe712921bd5516cb389862cacf226a71aa193
 workflow-type: tm+mt
 source-wordcount: '2371'
 ht-degree: 2%
@@ -43,11 +43,11 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-> Launch와 AEM 사이트를 통합하는 데 도움이 필요하십니까? [이 비디오 시리즈 보기](../experience-platform-launch/overview.md).
+> Launch와 AEM 사이트를 통합하는 데 도움이 필요하십니까? [이 비디오 시리즈 보기](../experience-platform/data-collection/tags/overview.md).
 
 ## WKND 사이트를 위한 Launch 환경 전환
 
-[https://wknd.site](https://wknd.site) 는 [오픈 소스 프로젝트](https://github.com/adobe/aem-guides-wknd) 참조 및 [튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) AEM 구현의 경우.
+[https://wknd.site](https://wknd.site) 는 [오픈 소스 프로젝트](https://github.com/adobe/aem-guides-wknd) 참조 및 [튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR) AEM 구현의 경우.
 
 AEM 환경을 설정하고 WKND 코드 베이스를 설치하는 대신 Experience Platform 디버거를 사용하여 다음을 수행할 수 있습니다. **스위치** 라이브 [https://wknd.site/](https://wknd.site/) to *your* Launch 속성. 물론 AEM 사이트가 이미 있는 경우 자체 사이트를 사용할 수 있습니다 [Adobe 클라이언트 데이터 레이어 사용](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation)
 
