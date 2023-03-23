@@ -12,7 +12,7 @@ exl-id: 2ddd241a-0e8a-4397-8006-6f807be4fb12
 source-git-commit: bca51ece7a9b249727b8746cc9654503059116fb
 workflow-type: tm+mt
 source-wordcount: '81'
-ht-degree: 4%
+ht-degree: 51%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 4%
 >[!CONTEXTUALHELP]
 >id="aemcloud_devops_testresult"
 >title="테스트 결과 분석"
->abstract="코드에서 모든 컴파일 오류를 표시하고 이 코드가 AEM as a Cloud Service에 대한 우수 사례를 따르는지 여부를 확인하십시오"
+>abstract="코드에 있는 컴파일 오류와 이 코드가 AEM as a Cloud Service의 모범 사례를 준수하는지 여부를 살펴봅니다."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html?lang=en#how-to-use" text="테스트 결과 이해"
 
 코드에서 컴파일 오류를 살펴보고 이 코드가 AEM as a Cloud Service에 대한 우수 사례를 따르는지 여부를 확인하십시오.

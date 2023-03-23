@@ -13,7 +13,7 @@ exl-id: 4846a394-cf8e-4d52-8f8b-9e874f2f457b
 source-git-commit: d0b13fd37f1ed42042431246f755a913b56625ec
 workflow-type: tm+mt
 source-wordcount: '598'
-ht-degree: 6%
+ht-degree: 27%
 
 ---
 
@@ -22,13 +22,13 @@ ht-degree: 6%
 >[!CONTEXTUALHELP]
 >id="aemcloud_adobeims_overview"
 >title="Adobe IMS 소개"
->abstract="AEM as a Cloud Service은 Adobe IMS(Identity Management System)를 활용하여 관리자와 일반 사용자 모두 AEM 작성자 서비스에 쉽게 로그인할 수 있습니다. Adobe IMS 사용자, 그룹 및 제품 프로필을 AEM 그룹 및 권한과 함께 사용하여 AEM 작성자 서비스에 세밀하게 액세스하는 방법을 알아봅니다."
+>abstract="AEM as a Cloud Service가 Adobe IMS(Identity Management System)를 활용하면 사용자, 관리자와 일반 사용자 모두 원활하게 AEM Author 서비스에 로그인할 수 있습니다. AEM Author 서비스에 세분화된 액세스를 제공할 수 있도록 AEM 그룹 및 권한과 연동하여 Adobe IMS 사용자, 그룹 및 제품 프로필을 사용하는 방법에 대해 알아봅니다."
 
 AEM as a Cloud Service 은 AEM 애플리케이션을 활용하는 클라우드 기반의 방법이며, 이와 같이 는 Adobe IMS(Identity Management System)를 활용하여 사용자와 관리자 및 일반 사용자 모두 AEM 작성자 서비스에 쉽게 로그인할 수 있습니다.
 
 ![Adobe Admin Console](./assets/hero.png)
 
-Adobe IMS 사용자, 그룹 및 제품 프로필을 AEM 그룹 및 권한과 함께 사용하여 AEM 작성자 서비스에 세밀하게 액세스하는 방법을 알아봅니다.
+AEM Author 서비스에 세분화된 액세스를 제공할 수 있도록 AEM 그룹 및 권한과 연동하여 Adobe IMS 사용자, 그룹 및 제품 프로필을 사용하는 방법에 대해 알아봅니다.
 
 ## Adobe IMS 사용자
 
@@ -53,7 +53,7 @@ AEM 작성자 서비스에 액세스하는 사용자는 [Adobe IMS 사용자 그
 
 ## AEM 사용자 그룹 및 권한
 
-Adobe Experience Manager은 사용자가 AEM에 사용자 정의 가능한 액세스를 제공하기 위해 Adobe IMS 사용자, 사용자 그룹 및 제품 프로필을 기반으로 합니다. AEM 그룹 및 권한을 구성하는 방법과 Adobe IMS 추상화와 연동하여 AEM에 매끄럽고 사용자 정의 가능한 액세스를 제공하는 방법을 알아봅니다.
+Adobe Experience Manager는 Adobe IMS 사용자, 사용자 그룹 및 제품 프로필을 기반으로 AEM에 사용자 정의 가능한 액세스를 제공합니다. AEM 그룹 및 권한을 구성하는 방법과 Adobe IMS 추상화와 연동하여 AEM에 매끄럽고 사용자 정의 가능한 액세스를 제공하는 방법을 알아봅니다.
 
 [AEM 사용자, 그룹 및 권한에 대해 알아보기](./aem-users-groups-and-permissions.md)
 

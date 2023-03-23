@@ -14,7 +14,7 @@ exl-id: d33c033a-9577-4d4e-99be-f3c7e2a4ce73
 source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '383'
-ht-degree: 13%
+ht-degree: 17%
 
 ---
 
@@ -34,7 +34,7 @@ AEM 컨텐츠 조각은 연관되지만 디자인이나 레이아웃 정보 없�
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_admin_content_fragments"
 >title="조각 관리"
->abstract="컨텐츠 조각을 사용하여 페이지에 구애받지 않고 컨텐츠를 디자인, 작성, 조정 및 사용할 수 있는 방법을 알아봅니다."
+>abstract="콘텐츠 조각을 통해 페이지에 구애받지 않고 콘텐츠를 디자인, 작성, 조정 및 사용할 수 있는 방법에 대해 알아봅니다."
 
 ## 콘텐츠 조각 모델 정의 {#defining-content-fragment-models}
 

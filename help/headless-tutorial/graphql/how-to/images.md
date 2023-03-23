@@ -12,7 +12,7 @@ exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
 source-git-commit: ae49fb45db6f075a34ae67475f2fcc5658cb0413
 workflow-type: tm+mt
 source-wordcount: '1174'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -43,7 +43,7 @@ AEM Headless 컨텐츠 모델링에서 사용되는 컨텐츠 조각으로서, �
 >[!CONTEXTUALHELP]
 >id="aemcloud_learn_headless_graphql_images"
 >title="AEM Headless를 사용한 이미지"
->abstract="AEM Headless에서 이미지 자산 관리 및 최적화된 전달을 지원하는 방법을 알아봅니다."
+>abstract="AEM Headless가 이미지 에셋 관리와 최적화된 에셋 게재를 지원하는 방법에 대해 알아봅니다."
 
 ## 콘텐츠 조각 모델
 

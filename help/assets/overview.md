@@ -7,7 +7,7 @@ exl-id: 1d0b0183-25ee-4cb4-82a5-3506e7c1c908
 source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '185'
-ht-degree: 5%
+ht-degree: 15%
 
 ---
 
@@ -18,7 +18,7 @@ Adobe Experience Manager(AEM) Assets는 AEM Platform의 디지털 자산 관리 
 >[!CONTEXTUALHELP]
 >id="aemcloud_assets_overview"
 >title="AEM Assets"
->abstract="필요한 자산을 빠르게 찾고 편집하는 방법을 배웁니다."
+>abstract="필요한 에셋을 빠르게 찾고 편집하는 방법에 대해 알아봅니다."
 >additional-url="https://video.tv.adobe.com/v/336196" text="AEM Assets 둘러보기"
 
 ## AEM Assets 둘러보기

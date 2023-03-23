@@ -11,7 +11,7 @@ last-substantial-update: 2022-07-20T00:00:00Z
 source-git-commit: 1ecd3c761ea7c79036b263ff8528a6cd01af0e76
 workflow-type: tm+mt
 source-wordcount: '268'
-ht-degree: 2%
+ht-degree: 11%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 2%
 >[!CONTEXTUALHELP]
 >id="aemcloud_learn_headless_graphql_overview"
 >title="AEM Headless 시작하기 - GraphQL"
->abstract="GraphQL을 사용하여 컨텐츠 조각을 전달하는 방법을 알아봅니다."
+>abstract="GraphQL을 사용하여 콘텐츠 조각을 게재하는 방법에 대해 알아봅니다."
 >additional-url="https://video.tv.adobe.com/v/328618" text="AEM의 GraphQL 개요"
 
 ## AEM Headless GraphQL 비디오 시리즈

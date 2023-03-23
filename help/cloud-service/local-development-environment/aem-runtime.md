@@ -13,7 +13,7 @@ exl-id: 19f72254-2087-450b-909d-2d90c9821486
 source-git-commit: d0b13fd37f1ed42042431246f755a913b56625ec
 workflow-type: tm+mt
 source-wordcount: '1800'
-ht-degree: 3%
+ht-degree: 9%
 
 ---
 
@@ -22,11 +22,11 @@ ht-degree: 3%
 >[!CONTEXTUALHELP]
 >id="aemcloud_localdev_aemruntime"
 >title="로컬 AEM 런타임"
->abstract="AEM(Adobe Experience Manager)은 AEM as a Cloud Service SDK의 Quickstart Jar를 사용하여 로컬에서 실행할 수 있습니다. 이 경우 개발자는 소스 제어에 커밋하기 전에 사용자 지정 코드, 구성 및 콘텐츠를 배포하고 테스트하고, AEM as a Cloud Service 환경에 배포할 수 있습니다."
+>abstract="AEM(Adobe Experience Manager)은 AEM as a Cloud Service SDK의 QuickStart Jar로 사용하여 로컬에서 실행할 수 있습니다. 이 경우 개발자는 소스 제어에 커밋하기 전에 사용자 정의 코드, 구성 및 콘텐츠를 배포하고 테스트하고, AEM as a Cloud Service 환경으로 배포할 수 있습니다."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html" text="AEM as a Cloud Service SDK"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="AEM as a Cloud Service SDK 다운로드"
 
-AEM(Adobe Experience Manager)은 AEM as a Cloud Service SDK의 Quickstart Jar를 사용하여 로컬에서 실행할 수 있습니다. 이 경우 개발자는 소스 제어에 커밋하기 전에 사용자 지정 코드, 구성 및 콘텐츠를 배포하고 테스트하고, AEM as a Cloud Service 환경에 배포할 수 있습니다.
+AEM(Adobe Experience Manager)은 AEM as a Cloud Service SDK의 QuickStart Jar로 사용하여 로컬에서 실행할 수 있습니다. 이 경우 개발자는 소스 제어에 커밋하기 전에 사용자 정의 코드, 구성 및 콘텐츠를 배포하고 테스트하고, AEM as a Cloud Service 환경으로 배포할 수 있습니다.
 
 참고 사항 `~` 는 사용자 디렉토리의 축약어로 사용됩니다. Windows에서는 다음과 같습니다 `%HOMEPATH%`.
 
