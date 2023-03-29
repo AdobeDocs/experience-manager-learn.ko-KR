@@ -5,7 +5,7 @@ breadcrumb-title: AEM Sites 튜토리얼
 feature-set: Experience Manager Sites, Experience Manager
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: ef1fe712921bd5516cb389862cacf226a71aa193
+source-git-commit: 2b37ba961e194b47e034963ceff63a0b8e8458ae
 workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 27%
@@ -101,7 +101,7 @@ ht-degree: 27%
    + Experience Platform 데이터 수집 태그(시작) {#experience-platform-data-collection-tags}
       + [개요](integrations/experience-platform/data-collection/tags/overview.md)
       + [태그 속성 만들기](integrations/experience-platform/data-collection/tags/create-tag-property.md)
-      + [개발자 콘솔을 사용하여 AEM과 태그 연결](integrations/experience-platform/data-collection/tags/connect-aem-tags-using-developer-console.md)
+      + [IMS를 사용하여 AEM 및 태그 속성에 연결](integrations/experience-platform/data-collection/tags/connect-aem-tag-property-using-ims.md)
       + [AEM Launch Cloud Service 만들기](integrations/experience-platform/data-collection/tags/create-aem-launch-cloud-service.md)
       + [태그(Launch) 구현 디버깅](integrations/experience-platform/data-collection/tags/debug-tags-implementation.md)
    + Adobe 클라이언트 데이터 레이어 {#adobe-client-data-layer}

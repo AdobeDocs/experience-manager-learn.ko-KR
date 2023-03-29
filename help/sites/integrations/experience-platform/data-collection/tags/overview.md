@@ -13,10 +13,10 @@ role: Developer
 level: Intermediate
 last-substantial-update: 2022-07-10T00:00:00Z
 exl-id: bdae56d8-96e7-4b05-9b8b-3c6c2e998bd8
-source-git-commit: ef1fe712921bd5516cb389862cacf226a71aa193
+source-git-commit: 2b37ba961e194b47e034963ceff63a0b8e8458ae
 workflow-type: tm+mt
-source-wordcount: '258'
-ht-degree: 3%
+source-wordcount: '336'
+ht-degree: 2%
 
 ---
 
@@ -31,21 +31,28 @@ Experience Platform 통합 방법 알아보기 _데이터 수집 태그_ (이전
 
 태그는 Adobe Experience Platform의 차세대 태그 관리 기술입니다. 태그는 Adobe Analytics, Target, Audience Manager 및 다양한 솔루션을 배포하는 가장 간단한 방법을 제공합니다. 태그 개요 및 Adobe Experience Manager와의 권장 통합을 확인하십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/39090?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417061?quality=12&learn=on)
 
 
 ## 사전 요구 사항
 
-Experience Platform 데이터 수집 태그를 통합할 때 다음이 필요합니다
+Experience Platform 데이터 수집 태그를 통합할 때 다음이 필요합니다.
 
 + AEM as a Cloud Service 환경에 대한 AEM 관리자 액세스 권한
 + 과 같은 참조 사이트 [WKND](https://github.com/adobe/aem-guides-wknd) 배포
++ Adobe Experience Platform 데이터 수집 솔루션에 대한 액세스
 + 시스템 관리자 액세스 권한 [Adobe Developer 콘솔](https://developer.adobe.com/developer-console/)
 
 
+## 고급 단계
+
++ Adobe Experience Platform 데이터 수집에서 태그 속성을 만들어 _규칙 추가_. Then _라이브러리 추가_&#x200B;로 지정하는 경우 새로 추가된 규칙을 선택하고 승인하고 게시합니다.
++ 기존(또는 새로운) IMS 구성을 사용하여 AEM 및 태그 연결
++ AEM에서 Launch 클라우드 서비스 구성을 만든 다음 기존 사이트에 적용하고 게시됨 또는 작성자 사이트에서 태그 속성 및 해당 라이브러리가 로드되었는지 확인합니다.
+
 ## 다음 단계
 
-[태그(Launch) 속성 만들기](create-tag-property.md)
+[태그 속성 만들기](create-tag-property.md)
 
 ## 추가 리소스 {#additional-resources}
 
