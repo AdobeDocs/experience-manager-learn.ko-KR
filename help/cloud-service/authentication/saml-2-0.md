@@ -10,10 +10,10 @@ kt: 9351
 thumbnail: 343040.jpeg
 last-substantial-update: 2022-10-17T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
-source-git-commit: d0b13fd37f1ed42042431246f755a913b56625ec
+source-git-commit: 5522a22cc3ac12ce54297ee9f30570c29cfd5ce7
 workflow-type: tm+mt
-source-wordcount: '2815'
-ht-degree: 2%
+source-wordcount: '2961'
+ht-degree: 1%
 
 ---
 
@@ -107,7 +107,7 @@ IDP의 공개 인증서가 AEM 전역 트러스트 저장소에 추가되었으�
 1. 확장 __CER 파일에서 인증서 추가__.
 1. 선택 __인증서 파일 선택__, 그리고 IDP에서 제공한 인증서 파일을 업로드합니다.
 1. Leave __사용자에게 인증서 매핑__ 비어 있습니다.
-1. __제출__&#x200B;을 선택합니다.
+1. 선택 __제출__.
 1. 새로 추가된 인증서는 __CRT 파일에서 인증서 추가__ 섹션을 참조하십시오.
 1. 다음 사항에 주의하십시오. __별칭__&#x200B;에 이 값이 사용되면 [SAML 2.0 인증 핸들러 OSGi 구성](#saml-2-0-authentication-handler-osgi-configuration).
 1. 선택 __저장 및 닫기__.
@@ -126,6 +126,21 @@ IDP의 공개 인증서가 AEM 전역 트러스트 저장소에 추가되었으�
 1. 선택 __완료__ 그리고 __저장__.
 1. 을(를) 선택합니다 __빌드__ 버튼 __글로벌 트러스트 저장소__ 패키지.
 1. 빌드했으면 을 선택합니다 __자세히__ > __복제__ 글로벌 신뢰 저장소 노드를 활성화하려면(`/etc/truststore`)을 AEM Publish에 게시하는 경우.
+
+## 인증 서비스 키 저장소 만들기{#authentication-service-keystore}
+
+_를 만들 때 [SAML 2.0 인증 핸들러 OSGi 구성 속성 `handleLogout` 가 로 설정되어 있습니다. `true`](#saml-20-authenticationsaml-2-0-authentication) 또는 [인증 요청 서명/SAML 검증 암호화](#install-aem-public-private-key-pair) 필수 여부_
+
+1. 개인 키를 업로드하려면 AEM Author as a AEM Administrator에 로그인합니다.
+1. 다음으로 이동 __도구 > 보안 > Trust Store__, 을(를) 선택하고 을(를) 선택합니다. __인증 서비스__ 사용자 및 선택 __속성__ 를 클릭합니다.
+1. 다음으로 이동 __도구 > 보안 > 사용자__, 을(를) 선택하고 을(를) 선택합니다. __인증 서비스__ 사용자 및 선택 __속성__ 를 클릭합니다.
+1. 을(를) 선택합니다 __키 저장소__ 탭.
+1. 키 저장소를 만들거나 엽니다. 키 저장소를 만들 경우 암호를 안전하게 유지합니다.
+   + A [공용/개인 키 저장소가 이 키 저장소에 설치되어 있습니다.](#install-aem-public-private-key-pair) AuthnRequest 서명/SAML 검증 암호화가 필요한 경우에만 가능합니다.
+   + 이 SAML 통합이 로그아웃을 지원하지만 AuthnRequest 서명/SAML 검증이 아닌 경우 빈 키 저장소가 충분합니다.
+1. 선택 __저장 및 닫기__.
+1. 선택 __인증 서비스__ 사용자 및 선택 __활성화__ 를 클릭합니다.
+
 
 ## AEM 공개/개인 키 쌍 설치{#install-aem-public-private-key-pair}
 
@@ -194,7 +209,7 @@ AuthnRequest 서명 및 SAML 검증 암호화는 모두 선택 사항이지만, 
       + 사용 `openssl` 위의 방법, 다음과 같습니다. `aem-private-pkcs8.der` 파일
    + __인증서 체인 파일 선택__: 함께 제공되는 체인 파일을 업로드합니다(공개 키일 수 있음).
       + 사용 `openssl` 위의 방법, 다음과 같습니다. `aem-public.crt` 파일
-   + __제출__&#x200B;을 선택합니다
+   + 선택 __제출__
 1. 새로 추가된 인증서는 __CRT 파일에서 인증서 추가__ 섹션을 참조하십시오.
    + 다음 사항에 주의하십시오. __별칭__ 다음에서 사용 [SAML 2.0 인증 핸들러 OSGi 구성](#saml-20-authentication-handler-osgi-configuration)
 1. 선택 __저장 및 닫기__.
