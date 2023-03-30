@@ -10,10 +10,10 @@ kt: 6265
 thumbnail: KT-6265.jpg
 last-substantial-update: 2022-09-20T00:00:00Z
 exl-id: 80e4cf2e-dff6-41e8-b09b-187cf2e18e00
-source-git-commit: 1ecd3c761ea7c79036b263ff8528a6cd01af0e76
+source-git-commit: 99b3ecf7823ff9a116c47c88abc901f8878bbd7a
 workflow-type: tm+mt
-source-wordcount: '2016'
-ht-degree: 2%
+source-wordcount: '2008'
+ht-degree: 1%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 2%
 
 ![개별 데이터 계층](assets/adobe-client-data-layer/byline-data-layer-html.png)
 
-이 자습서에서는 WKND를 업데이트하여 Adobe 클라이언트 데이터 레이어를 확장하는 다양한 옵션을 살펴봅니다 [필자 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/custom-component.html). 이 구성 요소는 사용자 지정 구성 요소이며 이 자습서에서 배운 단원은 다른 사용자 지정 구성 요소에 적용할 수 있습니다.
+이 자습서에서는 WKND를 업데이트하여 Adobe 클라이언트 데이터 레이어를 확장하는 다양한 옵션을 살펴보겠습니다 [필자 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/custom-component.html). 다음 _필자_ 구성 요소는 다음과 같습니다 **사용자 지정 구성 요소** 이 자습서에서 학습한 단원은 다른 사용자 지정 구성 요소에 적용할 수 있습니다.
 
 ### 목표 {#objective}
 
@@ -61,7 +61,7 @@ A **로컬 개발 환경** 은 이 자습서를 완료해야 합니다. 스크�
 
    >[!NOTE]
    >
-   > AEM 6.5와 최신 서비스 팩을 사용하는 경우 `classic` profile to Maven 명령:
+   > AEM 6.5 및 최신 서비스 팩의 경우 `classic` profile to Maven 명령:
    >
    > `mvn clean install -PautoInstallSinglePackage -Pclassic`
 
@@ -76,7 +76,7 @@ A **로컬 개발 환경** 은 이 자습서를 완료해야 합니다. 스크�
    window.adobeDataLayer.getState();
    ```
 
-   AEM 사이트에서 데이터 레이어의 현재 상태를 보는 Inspect 응답입니다. 페이지 및 개별 구성 요소에 대한 정보가 표시됩니다.
+   AEM 사이트에 있는 데이터 레이어의 현재 상태를 보려면 응답을 검사합니다. 페이지 및 개별 구성 요소에 대한 정보가 표시됩니다.
 
    ![Adobe 데이터 레이어 응답](assets/data-layer-state-response.png)
 
@@ -84,14 +84,14 @@ A **로컬 개발 환경** 은 이 자습서를 완료해야 합니다. 스크�
 
 ## 라인 Sling 모델 업데이트 {#sling-model}
 
-데이터 계층에 구성 요소에 대한 데이터를 주입하려면 먼저 구성 요소의 Sling 모델을 업데이트해야 합니다. 다음으로, Byline의 Java 인터페이스와 Sling 모델 구현을 업데이트하여 새 메서드를 추가합니다 `getData()`. 이 메서드에는 데이터 계층에 삽입할 속성이 포함됩니다.
+데이터 계층에 구성 요소에 대한 데이터를 주입하려면 먼저 구성 요소의 Sling 모델을 업데이트해 보겠습니다. 다음으로, Byline의 Java™ 인터페이스와 Sling 모델 구현을 업데이트하여 새로운 방법을 만듭니다 `getData()`. 이 메서드에는 데이터 계층에 삽입할 속성이 포함되어 있습니다.
 
-1. 선택한 IDE에서 `aem-guides-wknd` 프로젝트. 로 이동합니다 `core` 모듈.
+1. 를 엽니다. `aem-guides-wknd` 원하는 IDE에서 프로젝트를 수행할 수 있습니다. 로 이동합니다 `core` 모듈.
 1. 파일을 엽니다. `Byline.java` at `core/src/main/java/com/adobe/aem/guides/wknd/core/models/Byline.java`.
 
    ![개별 Java 인터페이스](assets/adobe-client-data-layer/byline-java-interface.png)
 
-1. 인터페이스에 새 메서드를 추가합니다.
+1. 인터페이스에 아래 메서드를 추가합니다.
 
    ```java
    public interface Byline {
@@ -104,9 +104,7 @@ A **로컬 개발 환경** 은 이 자습서를 완료해야 합니다. 스크�
    }
    ```
 
-1. 파일을 엽니다. `BylineImpl.java` at `core/src/main/java/com/adobe/aem/guides/wknd/core/models/impl/BylineImpl.java`.
-
-   구현은 다음과 같습니다 `Byline` 인터페이스 및 를 Sling 모델로 구현됩니다.
+1. 파일을 엽니다. `BylineImpl.java` at `core/src/main/java/com/adobe/aem/guides/wknd/core/models/impl/BylineImpl.java`. 구현입니다 `Byline` 인터페이스 및 를 Sling 모델로 구현됩니다.
 
 1. 파일의 시작 부분에 다음 가져오기 구문을 추가합니다.
 
@@ -119,7 +117,7 @@ A **로컬 개발 환경** 은 이 자습서를 완료해야 합니다. 스크�
    import com.adobe.cq.wcm.core.components.util.ComponentUtils;
    ```
 
-   다음 `fasterxml.jackson` API는 노출할 데이터를 JSON으로 직렬화하는 데 사용됩니다. 다음 `ComponentUtils` AEM 코어 구성 요소 의 데이터 레이어가 활성화되어 있는지 확인하는 데 사용됩니다.
+   다음 `fasterxml.jackson` API는 JSON으로 노출되는 데이터를 직렬화하는 데 사용됩니다. 다음 `ComponentUtils` AEM 코어 구성 요소 의 데이터 레이어가 활성화되어 있는지 확인하는 데 사용됩니다.
 
 1. 구현되지 않은 메서드 추가 `getData()` to `BylineImple.java`:
 
@@ -160,7 +158,7 @@ A **로컬 개발 환경** 은 이 자습서를 완료해야 합니다. 스크�
    }
    ```
 
-   위의 메서드에서 새 항목이 `HashMap` 는 JSON으로 노출할 속성을 캡처하는 데 사용됩니다. 다음과 같은 기존 메서드를 확인합니다. `getName()` 및 `getOccupations()` 이 사용됩니다. `@type` 구성 요소의 고유한 리소스 유형을 나타냅니다. 이렇게 하면 클라이언트가 구성 요소 유형에 따라 이벤트 및/또는 트리거를 쉽게 식별할 수 있습니다.
+   위의 메서드에서 새 항목이 `HashMap` 는 JSON으로 노출되는 속성을 캡처하는 데 사용됩니다. 다음과 같은 기존 메서드를 확인합니다. `getName()` 및 `getOccupations()` 이 사용됩니다. 다음 `@type` 구성 요소의 고유한 리소스 유형을 나타내며, 클라이언트가 구성 요소 유형에 따라 이벤트 및/또는 트리거를 쉽게 식별할 수 있습니다.
 
    다음 `ObjectMapper` 속성을 serialize하고 JSON 문자열을 반환하는 데 사용됩니다. 그런 다음 이 JSON 문자열을 데이터 레이어에 삽입할 수 있습니다.
 
@@ -173,11 +171,11 @@ A **로컬 개발 환경** 은 이 자습서를 완료해야 합니다. 스크�
 
 ## Byline HTL 업데이트 {#htl}
 
-다음으로, `Byline` [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/block-statements.html?lang=en#htl). HTL(HTML 템플릿 언어)은 구성 요소의 HTML을 렌더링하는 데 사용되는 템플릿입니다.
+다음으로, `Byline` [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html?lang=en). HTL(HTML 템플릿 언어)은 구성 요소의 HTML을 렌더링하는 데 사용되는 템플릿입니다.
 
-특수 데이터 속성 `data-cmp-data-layer` 각 AEM 구성 요소에서 는 해당 데이터 계층을 표시하는 데 사용됩니다.  AEM 코어 구성 요소에서 제공하는 JavaScript는 이 데이터 속성을 찾습니다. 이 데이터 속성은 해당 값이 Sling 모델의 byline Sling에 의해 반환된 JSON 문자열로 채워집니다 `getData()` 메서드를 사용하여 값을 Adobe 클라이언트 데이터 레이어에 삽입합니다.
+특수 데이터 속성 `data-cmp-data-layer` 각 AEM 구성 요소에서 는 해당 데이터 계층을 표시하는 데 사용됩니다. AEM 코어 구성 요소에서 제공하는 JavaScript가 이 데이터 속성을 찾습니다. 이 데이터 속성의 값은 Sling 모델의 byline Sling 모델에서 반환되는 JSON 문자열로 채워집니다 `getData()` Adobe 클라이언트 데이터 계층에 삽입된 메서드를 사용합니다.
 
-1. IDE에서 `aem-guides-wknd` 프로젝트. 로 이동합니다 `ui.apps` 모듈.
+1. 를 엽니다. `aem-guides-wknd` IDE에 프로젝트를 추가합니다. 로 이동합니다 `ui.apps` 모듈.
 1. 파일을 엽니다. `byline.html` at `ui.apps/src/main/content/jcr_root/apps/wknd/components/byline/byline.html`.
 
    ![필자 HTML](assets/adobe-client-data-layer/byline-html-template.png)
@@ -193,7 +191,7 @@ A **로컬 개발 환경** 은 이 자습서를 완료해야 합니다. 스크�
        ...
    ```
 
-   다음 값 `data-cmp-data-layer` 이(가) `"${byline.data}"` 여기서 `byline` 는 Sling 모델이 이전에 업데이트된 것입니다. `.data` 는 HTL에서 Java Getter 메서드를 호출하기 위한 표준 표기법입니다 `getData()` 이전 연습에서 구현되었습니다.
+   다음 값 `data-cmp-data-layer` 이(가) `"${byline.data}"` 여기서 `byline` 는 Sling 모델이 이전에 업데이트된 것입니다. `.data` 는 HTL에서 Java™ Getter 메서드를 호출하기 위한 표준 표기법입니다 `getData()` 이전 연습에서 구현되었습니다.
 
 1. 터미널 창을 엽니다. 빌드 및 배포 `ui.apps` maven 기술을 사용한 모듈:
 
@@ -202,7 +200,7 @@ A **로컬 개발 환경** 은 이 자습서를 완료해야 합니다. 스크�
    $ mvn clean install -PautoInstallPackage
    ```
 
-1. 브라우저로 돌아가서 개별 구성 요소로 페이지를 다시 엽니다. [http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html).
+1. 브라우저로 돌아가서 타임라인 구성 요소로 페이지를 다시 엽니다. [http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html).
 
 1. 개발자 도구를 열고 페이지의 HTML 소스에서 Byline 구성 요소 검사:
 
@@ -237,7 +235,7 @@ A **로컬 개발 환경** 은 이 자습서를 완료해야 합니다. 스크�
 
 Adobe 클라이언트 데이터 계층은 이벤트를 기반으로 하며 작업을 트리거하는 가장 일반적인 이벤트 중 하나는 입니다 `cmp:click` 이벤트. AEM 코어 구성 요소를 사용하면 데이터 요소의 도움을 받아 구성 요소를 쉽게 등록할 수 있습니다. `data-cmp-clickable`.
 
-클릭 가능한 요소는 일반적으로 CTA 단추 또는 탐색 링크입니다. 안타깝게도 Byline 구성 요소에는 이러한 구성 요소가 없지만 다른 사용자 지정 구성 요소에 공통인 경우 등록하게 됩니다.
+클릭 가능한 요소는 일반적으로 CTA 단추 또는 탐색 링크입니다. 안타깝게도 Byline 구성 요소에는 이러한 구성 요소가 없지만 다른 사용자 지정 구성 요소에 공통일 수 있으므로 등록하겠습니다.
 
 1. 를 엽니다. `ui.apps` IDE의 모듈
 1. 파일을 엽니다. `byline.html` at `ui.apps/src/main/content/jcr_root/apps/wknd/components/byline/byline.html`.
@@ -258,7 +256,7 @@ Adobe 클라이언트 데이터 계층은 이벤트를 기반으로 하며 작�
    $ mvn clean install -PautoInstallPackage
    ```
 
-1. 브라우저로 돌아가서 라인 구성 요소가 추가된 상태로 페이지를 다시 엽니다. [http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html).
+1. 브라우저로 돌아가서 타임라인 구성 요소가 추가된 상태로 페이지를 다시 엽니다. [http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html).
 
    이벤트를 테스트하기 위해 개발자 콘솔을 사용하여 일부 JavaScript를 수동으로 추가합니다. 자세한 내용은 [AEM 핵심 구성 요소에서 Adobe 클라이언트 데이터 레이어 사용](data-layer-overview.md) 을 참조하십시오.
 
@@ -296,7 +294,7 @@ Adobe 클라이언트 데이터 계층은 이벤트를 기반으로 하며 작�
 
    콘솔 메시지가 표시됩니다 `Byline Clicked!` 및 Byline 이름
 
-   다음 `cmp:click` 이벤트는 에 연결하는 가장 쉬운 방법입니다. 더 복잡한 구성 요소와 다른 동작을 추적하려면 사용자 지정 Javascript를 추가하여 새 이벤트를 추가하고 등록할 수 있습니다. 가장 좋은 예는 를 트리거하는 회전 메뉴 구성 요소입니다 `cmp:show` 슬라이드가 전환될 때마다 발생합니다. 자세한 내용은 [자세한 내용은 소스 코드 를 참조하십시오.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/carousel/v1/carousel/clientlibs/site/js/carousel.js#L219).
+   다음 `cmp:click` 이벤트는 에 연결하는 가장 쉬운 방법입니다. 더 복잡한 구성 요소와 다른 동작을 추적하려면 사용자 지정 JavaScript를 추가하여 새 이벤트를 추가하고 등록할 수 있습니다. 가장 좋은 예는 를 트리거하는 회전 메뉴 구성 요소입니다 `cmp:show` 슬라이드가 전환될 때마다 발생합니다. 자세한 내용은 [자세한 내용은 소스 코드 를 참조하십시오.](https://github.com/adobe/aem-core-wcm-components/blob/main/content/src/content/jcr_root/apps/core/wcm/components/carousel/v1/carousel/clientlibs/site/js/carousel.js).
 
 ## DataLayerBuilder 유틸리티 사용 {#data-layer-builder}
 
@@ -351,7 +349,7 @@ Sling 모델이 [업데이트됨](#sling-model) 이 장의 앞부분에서 `Hash
    }
    ```
 
-   필자 구성 요소는 이미지 코어 구성 요소 의 일부를 다시 사용하여 작성자를 나타내는 이미지를 표시합니다. 위의 코드 조각에서 [DataLayerBuilder](https://javadoc.io/doc/com.adobe.cq/core.wcm.components.core/latest/com/adobe/cq/wcm/core/components/models/datalayer/builder/ComponentDataBuilder.html) 는 페이지의 `Image` 구성 요소. 이렇게 하면 JSON 개체가 사용된 이미지에 대한 모든 데이터로 미리 채워집니다. 그것은 또한 를 설정하는 것과 같은 몇 가지 일상적인 기능을 합니다 `@type` 및 구성 요소의 고유 식별자입니다. 방법이 정말 작아!
+   필자 구성 요소는 이미지 코어 구성 요소의 일부를 다시 사용하여 작성자를 나타내는 이미지를 표시합니다. 위의 코드 조각에서 [DataLayerBuilder](https://javadoc.io/doc/com.adobe.cq/core.wcm.components.core/latest/com/adobe/cq/wcm/core/components/models/datalayer/builder/ComponentDataBuilder.html) 는 페이지의 `Image` 구성 요소. 이렇게 하면 JSON 개체가 사용된 이미지에 대한 모든 데이터로 미리 채워집니다. 그것은 또한 를 설정하는 것과 같은 몇 가지 일상적인 기능을 합니다 `@type` 및 구성 요소의 고유 식별자입니다. 방법은 작습니다.
 
    유일한 속성은 `withTitle` 이 값은 `getName()`.
 
@@ -382,7 +380,7 @@ Sling 모델이 [업데이트됨](#sling-model) 이 장의 앞부분에서 `Hash
    $ mvn clean install -PautoInstallPackage
    ```
 
-1. 브라우저로 돌아가서 라인 구성 요소가 추가된 상태로 페이지를 다시 엽니다. [http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html).
+1. 브라우저로 돌아가서 타임라인 구성 요소가 추가된 상태로 페이지를 다시 엽니다. [http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html).
 1. 브라우저의 개발자 도구를 열고 다음 명령을 **콘솔**:
 
    ```js
@@ -409,7 +407,7 @@ Sling 모델이 [업데이트됨](#sling-model) 이 장의 앞부분에서 `Hash
        repo:modifyDate: "2019-10-18T20:17:24Z"
    ```
 
-   이제 `image` 내의 개체 `byline` 구성 요소 항목입니다. 여기에는 DAM의 자산에 대한 자세한 정보가 있습니다. 또한 `@type` 및 고유 id(이 경우 `byline-136073cfcb`)을 자동으로 채울 수 있을 뿐만 아니라 `repo:modifyDate` 구성 요소를 수정한 시기를 나타냅니다.
+   이제 `image` 내의 개체 `byline` 구성 요소 항목입니다. 여기에는 DAM의 자산에 대한 자세한 정보가 있습니다. 또한 `@type` 및 고유 id(이 경우 `byline-136073cfcb`)이 자동으로 채워지고, `repo:modifyDate` 구성 요소가 수정된 시기를 나타냅니다.
 
 ## 추가 예 {#additional-examples}
 
@@ -424,7 +422,7 @@ Sling 모델이 [업데이트됨](#sling-model) 이 장의 앞부분에서 `Hash
 
    >[!NOTE]
    >
-   > 구현 전체에서 객체에 대한 고급 데이터 레이어를 다시 사용하는 경우 데이터 레이어 요소를 해당 Java 객체에 대한 자체 데이터 레이어로 추출하는 것이 좋습니다. 예를 들어 상거래 코어 구성 요소에 `ProductData` 및 `CategoryData` 이러한 매개 변수는 상거래 구현 내의 많은 구성 요소에서 사용할 수 있으므로 검토 [aem-cif-core-components 리포지토리의 코드](https://github.com/adobe/aem-core-cif-components/tree/master/bundles/core/src/main/java/com/adobe/cq/commerce/core/components/datalayer) 자세한 내용
+   > 구현 전체에서 재사용되는 객체에 대한 고급 데이터 계층을 만드는 경우 데이터 레이어 요소를 자체 데이터 계층별 Java™ 객체로 추출하는 것이 좋습니다. 예를 들어 상거래 코어 구성 요소에 `ProductData` 및 `CategoryData` 이러한 매개 변수는 상거래 구현 내의 많은 구성 요소에서 사용할 수 있으므로 검토 [aem-cif-core-components 리포지토리의 코드](https://github.com/adobe/aem-core-cif-components/tree/master/bundles/core/src/main/java/com/adobe/cq/commerce/core/components/datalayer) 자세한 내용
 
 ## 축하합니다! {#congratulations}
 
@@ -433,5 +431,5 @@ AEM 구성 요소를 사용하여 Adobe 클라이언트 데이터 레이어를 �
 ## 추가 리소스 {#additional-resources}
 
 * [Adobe 클라이언트 데이터 레이어 설명서](https://github.com/adobe/adobe-client-data-layer/wiki)
-* [핵심 구성 요소와 데이터 레이어 통합](https://github.com/adobe/aem-core-wcm-components/blob/master/DATA_LAYER_INTEGRATION.md)
+* [핵심 구성 요소와 데이터 레이어 통합](https://github.com/adobe/aem-core-wcm-components/blob/main/DATA_LAYER_INTEGRATION.md)
 * [Adobe 클라이언트 데이터 레이어 및 핵심 구성 요소 설명서 사용](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)
