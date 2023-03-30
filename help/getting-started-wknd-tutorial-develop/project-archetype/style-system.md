@@ -13,10 +13,10 @@ mini-toc-levels: 1
 thumbnail: 30386.jpg
 exl-id: 5b490132-cddc-4024-92f1-e5c549afd6f1
 recommendations: noDisplay, noCatalog
-source-git-commit: bbdb045edf5f2c68eec5094e55c1688e725378dc
+source-git-commit: 68a7f263284fdf9cfcf82572b8e1e1c0c01e4b55
 workflow-type: tm+mt
-source-wordcount: '1677'
-ht-degree: 1%
+source-wordcount: '1678'
+ht-degree: 2%
 
 ---
 
@@ -81,7 +81,7 @@ Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 �
 
 스타일 시스템을 사용하는 일반적인 아이디어는 작성자가 구성 요소가 표시되는 다양한 스타일을 선택할 수 있다는 것입니다. &quot;스타일&quot;은 구성 요소의 외부 div에 삽입되는 추가 CSS 클래스로 지원됩니다. 클라이언트 라이브러리에서 CSS 규칙은 구성 요소가 모양을 변경하도록 이러한 스타일 클래스를 기반으로 추가됩니다.
 
-찾을 수 있습니다. [스타일 시스템에 대한 자세한 설명서는 여기에 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/style-system.html?lang=ko-KR). 멋진 것도 있습니다 [스타일 시스템 이해 기술 비디오](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/style-system-technical-video-understand.html).
+찾을 수 있습니다. [스타일 시스템에 대한 자세한 설명서는 여기에 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/style-system.html). 멋진 것도 있습니다 [스타일 시스템 이해 기술 비디오](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/style-system-technical-video-understand.html).
 
 ## 밑줄 스타일 - 제목 {#underline-style}
 

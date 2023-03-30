@@ -12,10 +12,10 @@ kt: 3418
 thumbnail: 30152.jpg
 exl-id: bb0cae58-79bd-427f-9116-d46afabdca59
 recommendations: noDisplay, noCatalog
-source-git-commit: bbdb045edf5f2c68eec5094e55c1688e725378dc
+source-git-commit: 68a7f263284fdf9cfcf82572b8e1e1c0c01e4b55
 workflow-type: tm+mt
-source-wordcount: '1820'
-ht-degree: 3%
+source-wordcount: '1821'
+ht-degree: 4%
 
 ---
 
@@ -188,9 +188,9 @@ AEM용 Maven 다중 모듈 프로젝트를 만드는 두 가지 옵션이 있습
 
 [AEM 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 는 AEM용 WCM(표준화된 웹 컨텐츠 관리) 구성 요소 세트입니다. 이러한 구성 요소는 기능의 기본 세트를 제공하며 개별 프로젝트에 대해 스타일 지정, 사용자 지정 및 확장됩니다.
 
-AEM as a Cloud Service 환경에는 최신 버전의 [AEM 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html). 따라서 AEM as a Cloud Service에 대해 생성된 프로젝트 **not** AEM 코어 구성 요소 포함.
+AEM as a Cloud Service 환경에는 최신 버전의 [AEM 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko). 따라서 AEM as a Cloud Service에 대해 생성된 프로젝트 **not** AEM 코어 구성 요소 포함.
 
-AEM 6.5/6.4 생성 프로젝트의 경우 원형 이 자동으로 포함됩니다 [AEM 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 를 입력합니다. AEM 6.5/6.4에서 AEM 코어 구성 요소를 포함하여 최신 버전이 프로젝트와 함께 배포되도록 하는 것이 좋습니다. 핵심 구성 요소 구성 요소에 대한 자세한 정보 [프로젝트에 포함된 내용은 여기에서 확인할 수 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#core-components).
+AEM 6.5/6.4 생성 프로젝트의 경우 원형 이 자동으로 포함됩니다 [AEM 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko) 를 입력합니다. AEM 6.5/6.4에서 AEM 코어 구성 요소를 포함하여 최신 버전이 프로젝트와 함께 배포되도록 하는 것이 좋습니다. 핵심 구성 요소 구성 요소에 대한 자세한 정보 [프로젝트에 포함된 내용은 여기에서 확인할 수 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#core-components).
 
 ## 소스 제어 관리 {#source-control}
 
