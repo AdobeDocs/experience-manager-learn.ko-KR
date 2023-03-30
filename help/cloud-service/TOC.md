@@ -5,10 +5,10 @@ breadcrumb-title: AEM as a Cloud Service 튜토리얼
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 672941b4047bb0cfe8c602e3b1ab75866c10216a
+source-git-commit: 9917b16248ef1f0a9c86f03a024c634636b2304e
 workflow-type: tm+mt
-source-wordcount: '910'
-ht-degree: 21%
+source-wordcount: '913'
+ht-degree: 23%
 
 ---
 
@@ -89,6 +89,7 @@ ht-degree: 21%
       + [OSGi 구성 기본 사항](./developing/osgi-services/configurations.md)
       + [OCD를 사용한 OSGi 구성](./developing/osgi-services/configurations-ocd.md)
    + 고급{#advanced}
+      + [웹에 최적화된 이미지 API](./developing/advanced/web-optimized-image-delivery-java-apis.md)
       + [서비스 사용자](./developing/advanced/service-users.md)
       + [사용자 지정 네임스페이스](./developing/advanced/custom-namespaces.md)
       + [페이지 변형 캐싱](./developing/advanced/variant-caching.md)
