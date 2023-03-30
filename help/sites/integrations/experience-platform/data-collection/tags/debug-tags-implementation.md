@@ -3,6 +3,7 @@ title: 태그 구현 디버깅
 description: 태그 구현을 디버깅하는 몇 가지 일반적인 도구와 기술을 소개합니다. 브라우저의 개발자 콘솔 및 Experience Platform 디버거 확장 기능을 사용하여 태그 구현의 주요 측면을 식별하고 해결하는 방법을 알아봅니다.
 topics: integrations
 audience: administrator
+solution: Experience Manager, Data Collection, Experience Platform
 doc-type: technical video
 activity: setup
 version: Cloud Service
@@ -12,7 +13,7 @@ topic: Integrations
 role: Developer
 level: Intermediate
 exl-id: 647447ca-3c29-4efe-bb3a-d3f53a936a2a
-source-git-commit: 2b37ba961e194b47e034963ceff63a0b8e8458ae
+source-git-commit: 18a72187290d26007cdc09c45a050df8f152833b
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 0%

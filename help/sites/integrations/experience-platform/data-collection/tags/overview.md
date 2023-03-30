@@ -3,6 +3,7 @@ title: Experience Platform 데이터 수집 태그(Launch)와 AEM 통합
 description: Experience Platform 데이터 수집의 태그는 Adobe의 차세대 태그 관리 솔루션이며, Adobe Analytics, Target, Audience Manager 및 다양한 솔루션을 배포하는 최고의 방법입니다. 태그(이전의 Launch)에 대한 개요 및 Adobe Experience Manager와의 권장 통합을 확인하십시오.
 topics: integrations
 audience: administrator
+solution: Experience Manager, Data Collection, Experience Platform
 doc-type: technical video
 activity: setup
 version: Cloud Service
@@ -13,7 +14,7 @@ role: Developer
 level: Intermediate
 last-substantial-update: 2022-07-10T00:00:00Z
 exl-id: bdae56d8-96e7-4b05-9b8b-3c6c2e998bd8
-source-git-commit: 2b37ba961e194b47e034963ceff63a0b8e8458ae
+source-git-commit: 18a72187290d26007cdc09c45a050df8f152833b
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 2%
