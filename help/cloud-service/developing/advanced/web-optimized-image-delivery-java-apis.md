@@ -1,5 +1,5 @@
 ---
-title: 웹에 최적화된 전달 Java&trade; API
+title: 웹에 최적화된 이미지 제공 Java&Trade; API
 description: AEM as a Cloud Service의 웹에 최적화된 이미지 제공 Java&Trade를 사용하는 방법을 알아봅니다. 뛰어난 성능을 제공하는 웹 경험을 개발하기 위한 API
 version: Cloud Service
 feature: APIs, Sling Model, OSGI, HTL or HTML Template Language
@@ -10,15 +10,15 @@ doc-type: Code Sample
 last-substantial-update: 2023-03-30T00:00:00Z
 jira: KT-13014
 thumbnail: KT-13014.jpeg
-source-git-commit: 9917b16248ef1f0a9c86f03a024c634636b2304e
+source-git-commit: 14d89d1a3c424de044df4f6d74546788256fa383
 workflow-type: tm+mt
-source-wordcount: '810'
+source-wordcount: '849'
 ht-degree: 2%
 
 ---
 
 
-# 웹에 최적화된 배달 Java™ API
+# 웹에 최적화된 이미지 제공 Java™ API
 
 AEM as a Cloud Service의 웹 최적화 이미지 제공 Java™ API를 사용하여 뛰어난 성능의 웹 경험을 개발하는 방법을 알아봅니다.
 
@@ -30,34 +30,38 @@ AEM as a Cloud Service 지원 [웹에 최적화된 이미지 제공](https://exp
 
 이 문서에서는 사용자 지정 구성 요소에서 AEM as a Cloud Service 및 AEM SDK에서 코드 기반의 기능을 사용할 수 있도록 해주는 방식으로 웹에 최적화된 이미지 Java™ API를 사용하여 탐색합니다.
 
-## API
+## Java™ API
 
 다음 [AssetDelivery API](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/adobe/cq/wcm/spi/AssetDelivery.html) 는 이미지 자산에 대한 웹 최적화 게재 URL을 생성하는 OSGi 서비스입니다. `AssetDelivery.getDeliveryURL(...)` 허용된 옵션 [여기](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html#can-i-use-web-optimized-image-delivery-with-my-own-component%3F).
 
 다음 `AssetDelivery` OSGi 서비스는 AEM as a Cloud Service에서 실행될 때만 만족합니다. AEM SDK에서 `AssetDelivery` OSGi 서비스 반환 `null`. AEM as a Cloud Service에서 실행될 때 조건부로 웹에 최적화된 URL을 사용하고, AEM SDK에서 대체 이미지 URL을 사용하는 것이 가장 좋습니다. 일반적으로 자산의 웹 렌디션은 충분한 폴백입니다.
 
 
-### OSGi 서비스
+### OSGi 서비스에서 API 사용
 
 표시`AssetDelivery` 사용자 지정 OSGi 서비스에서 선택 사항으로 참조되므로 사용자 지정 OSGi 서비스를 AEM SDK에서 사용할 수 있습니다.
 
 ```java
+import com.adobe.cq.wcm.spi.AssetDelivery;
+...
 @Reference(cardinality = ReferenceCardinality.OPTIONAL)
 private volatile AssetDelivery assetDelivery;
 ```
 
-### Sling 모델
+### Sling 모델의 API 사용
 
 표시`AssetDelivery` 를 사용자 지정 Sling 모델에서 선택 사항으로 참조하므로 사용자 지정 Sling 모델을 AEM SDK에서 사용할 수 있습니다.
 
 ```java
+import com.adobe.cq.wcm.spi.AssetDelivery;
+...
 @OSGiService(injectionStrategy = InjectionStrategy.OPTIONAL)
 private AssetDelivery assetDelivery;
 ```
 
-### AssetDelivery 조건부 사용
+### API 조건부 사용
 
-조건부로 웹 기반 이미지 URL 또는 대체 URL을 반환하는 경우 `AssetDelivery` 서비스가 제공됩니다. 조건부 사용을 사용하면 AEM SDK에서 코드를 실행할 때 끊김 없는 경험을 만들 수 있습니다.
+조건부로 웹에 최적화된 이미지 URL 또는 `AssetDelivery` OSGi 서비스 가용성. 조건부 사용을 사용하면 AEM SDK에서 코드를 실행할 때 코드가 작동할 수 있습니다.
 
 ```java
 if (assetDelivery != null ) {
@@ -78,15 +82,19 @@ if (assetDelivery != null ) {
 
 ![AEM as a Cloud Service의 웹에 최적화된 이미지](./assets/web-optimized-image-delivery-java-apis/cloud-service.png)
 
+_AEM as a Cloud Service은 AssetDelivery API를 지원하므로 웹에 최적화된 웹 p 렌디션이 사용됩니다_
+
 AEM SDK에서 코드가 실행되면 최적 정적 웹 표현물이 사용되지 않으므로 로컬 개발 중에 구성 요소가 작동할 수 있습니다.
 
-![AEM as a Cloud Service의 웹에 최적화된 대체 이미지](./assets/web-optimized-image-delivery-java-apis/aem-sdk.png)
+![AEM SDK의 웹에 최적화된 대체 이미지](./assets/web-optimized-image-delivery-java-apis/aem-sdk.png)
+
+_AEM SDK는 AssetDelivery API를 지원하지 않으므로 정적 웹 렌디션(PNG 또는 JPEG)에 대체 기능이 사용됩니다_
 
 구현은 다음 세 가지 논리 조각으로 나누어집니다.
 
 1. 다음 `WebOptimizedImage` OSGi 서비스는 AEM에서 제공하는 &quot;스마트 프록시&quot; 역할을 합니다 `AssetDelivery` AEM as a Cloud Service 및 AEM SDK에서 모두 실행할 수 있는 OSGi 서비스.
 2. 다음 `ExampleWebOptimizedImages` Sling Model은 표시할 이미지 자산 목록 및 웹 최적화 url을 수집하는 비즈니스 로직을 제공합니다.
-3. 다음 `example-web-optimized-images` HTL을 구현하여 웹에 최적화된 이미지 목록을 표시하는 AEM 구성 요소입니다.
+3. 다음 `example-web-optimized-images` AEM 구성 요소에서는 HTL을 구현하여 웹에 최적화된 이미지 목록을 표시합니다.
 
 아래 예제 코드는 코드 베이스에 복사하여 필요에 따라 업데이트할 수 있습니다.
 
