@@ -13,9 +13,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 0499ff9f-d452-459f-b1a2-2853a228efd1
-source-git-commit: e8e5c67f6e9f057fd7472b76ee09d7f87b133c89
+source-git-commit: 8ca9535866cc1a673a59ac3743847e68dfedd156
 workflow-type: tm+mt
-source-wordcount: '1414'
+source-wordcount: '1471'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,18 @@ ht-degree: 0%
 AEM as a Cloud Service은 디버깅에 유용한 실행 중인 AEM 서비스의 다양한 세부 사항을 표시하는 각 환경에 대한 개발자 콘솔을 제공합니다.
 
 각 AEM as a Cloud Service 환경에는 자체 개발자 콘솔이 있습니다.
+
+## 개발자 콘솔로 이동
+
+개발자 콘솔은 Cloud Manager를 통해 AEM as a Cloud Service 환경별로 액세스됩니다.
+
+![개발자 콘솔로 이동](./assets/developer-console/navigate.png)
+
+1. 다음으로 이동 __[Cloud Manager](https://my.cloudmanager.adobe.com/)__
+2. 를 엽니다. __프로그램__ 여기에는 개발자 콘솔을 여는 AEM as a Cloud Service 환경이 포함되어 있습니다.
+3. 을(를) 찾습니다 __환경__, 을(를) 선택하고 을(를) 선택합니다. `...`.
+4. 선택 __개발자 콘솔__ 드롭다운 목록에서 을 선택합니다.
+
 
 ## 개발자 콘솔 액세스
 
