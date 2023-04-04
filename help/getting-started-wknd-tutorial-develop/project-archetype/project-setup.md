@@ -12,9 +12,9 @@ kt: 3418
 thumbnail: 30152.jpg
 exl-id: bb0cae58-79bd-427f-9116-d46afabdca59
 recommendations: noDisplay, noCatalog
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 4c91ab68f6e31f0eb549689c7ecfd0ee009801d9
 workflow-type: tm+mt
-source-wordcount: '1821'
+source-wordcount: '1839'
 ht-degree: 4%
 
 ---
@@ -87,6 +87,8 @@ AEM용 Maven 다중 모듈 프로젝트를 만드는 두 가지 옵션이 있습
    >[!NOTE]
    >
    > AEM 6.5.14+ 바꾸기를 타깃팅하려면 다음을 수행하십시오 `aemVersion="cloud"` with `aemVersion="6.5.14"`.
+   >
+   > 또한 항상 최신 `archetypeVersion` 을 참조하여 [AEM 프로젝트 원형 > 사용](https://github.com/adobe/aem-project-archetype#usage)
 
    프로젝트 구성에 사용 가능한 속성의 전체 목록입니다 [여기에서 찾을 수 있습니다.](https://github.com/adobe/aem-project-archetype#available-properties).
 

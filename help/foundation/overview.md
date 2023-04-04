@@ -4,9 +4,9 @@ description: Adobe Experience Manager Foundation에 대한 지원을 받으려�
 role: Leader, Architect, Developer, Admin, User
 level: Beginner
 exl-id: af0fe7fb-873b-4d2d-a5a3-59a5a3da9b96
-source-git-commit: d712fb988dc554b4f95ab2298ffc0f54df48f6f3
+source-git-commit: 4c91ab68f6e31f0eb549689c7ecfd0ee009801d9
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '215'
 ht-degree: 0%
 
 ---
@@ -25,9 +25,6 @@ Adobe Experience Manager은 AEM Sites, Assets 및 Forms 사용자가 사용할 �
 
 * **[AEM용 Cloud Manager 이해(비디오)](./cloud-manager/understand-cloud-manager-for-aem.md)**\
    *AEM용 Cloud Manager를 사용하면 AEM 환경을 손쉽게 관리, 검사 및 셀프 서비스를 수행할 수 있습니다.*
-
-* **[Adobe I/O에 사용할 공개 및 개인 키 설정(자습서)](./authentication/set-up-public-private-keys-for-use-with-aem-and-adobe-io.md)**\
-   *키 및 키 저장소를 [!DNL openssl] AEM과 Adobe I/O에서 작동합니다.*
 
 * **[Cloud Manager CI/CD 파이프라인 사용(비디오)](./cloud-manager/use-the-cicd-pipeline-in-cloud-manager-for-aem.md)**\
    *Cloud Manager의 CI/CD 파이프라인을 사용하여 안전하고 일관된 배포를 보장하는 방법을 알아봅니다.*

@@ -10,10 +10,10 @@ kt: 5882
 thumbnail: KT-5882.jpg
 last-substantial-update: 2022-10-06T00:00:00Z
 exl-id: 4846a394-cf8e-4d52-8f8b-9e874f2f457b
-source-git-commit: d0b13fd37f1ed42042431246f755a913b56625ec
+source-git-commit: 4c91ab68f6e31f0eb549689c7ecfd0ee009801d9
 workflow-type: tm+mt
-source-wordcount: '598'
-ht-degree: 27%
+source-wordcount: '626'
+ht-degree: 26%
 
 ---
 
@@ -33,6 +33,11 @@ AEM Author 서비스에 세분화된 액세스를 제공할 수 있도록 AEM �
 ## Adobe IMS 사용자
 
 AEM 작성자 서비스에 액세스해야 하는 사용자는 [Adobe IMS 사용자](https://helpx.adobe.com/kr/enterprise/using/set-up-identity.html) in [Adobe의 AdminConsole](https://adminconsole.adobe.com). Adobe IMS 사용자의 유형, Admin Console에서 액세스 및 관리되는 방법에 대해 알아봅니다.
+
+>[!NOTE]
+>
+>Admin Console에서 IMS 사용자가 삭제되면 AEM에서 자동으로 삭제되지 않지만, 일단 AEM session(토큰)이 만료되면 AEM에 로그인할 수 없습니다.
+
 
 [Adobe IMS 사용자에 대해 알아보기](./adobe-ims-users.md)
 

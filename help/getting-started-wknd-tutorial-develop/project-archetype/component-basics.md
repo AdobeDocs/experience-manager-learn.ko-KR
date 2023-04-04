@@ -12,9 +12,9 @@ kt: 4081
 thumbnail: 30177.jpg
 exl-id: 7fd021ef-d221-4113-bda1-4908f3a8629f
 recommendations: noDisplay, noCatalog
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 4c91ab68f6e31f0eb549689c7ecfd0ee009801d9
 workflow-type: tm+mt
-source-wordcount: '1152'
+source-wordcount: '1226'
 ht-degree: 1%
 
 ---
@@ -255,11 +255,17 @@ Sling 모델은 JCR에서 Java™ 변수로 데이터를 쉽게 매핑하는 주
    >
    > AEM 6.4/6.5의 경우 `mvn clean install -PautoInstallBundle -Pclassic`
 
-1. 파일 업데이트 `helloworld.html` at `aem-guides-wknd.ui.apps/src/main/content/jcr_root/apps/wknd/components/content/helloworld/helloworld.html` 새로 만든 `HelloWorld` 모델:
+1. 파일 업데이트 `helloworld.html` at `aem-guides-wknd.ui.apps/src/main/content/jcr_root/apps/wknd/components/content/helloworld/helloworld.html` 새로 만든 `HelloWorld` 모델.
+
+   다음 `HelloWorld` 모델이 HTL 지시문을 통해 이 구성 요소 인스턴스에 대해 인스턴스화됩니다. `data-sly-use.model="com.adobe.aem.guides.wknd.core.models.HelloWorldModel"`를 눌러 변수에 인스턴스를 저장합니다 `model`.
+
+   다음 `HelloWorld` 이제 모델 인스턴스를 HTL에서 를 통해 사용할 수 있습니다. `model` 변수를 `HelloWord`. 이러한 메서드 호출에서는 축약된 메서드 구문을 사용할 수 있습니다. 예를 들면 다음과 같습니다. `${model.getTitle()}` 을(를) `${model.title}`.
+
+   마찬가지로 모든 HTL 스크립트는 [전역 개체](https://experienceleague.adobe.com/docs/experience-manager-htl/content/global-objects.html) Sling 모델 개체와 동일한 구문을 사용하여 액세스할 수 있습니다.
 
    ```html
-   <div class="cmp-helloworld" data-cmp-is="helloworld"
-   data-sly-use.model="com.adobe.aem.guides.wknd.core.models.HelloWorldModel">
+   <div class="cmp-helloworld" data-cmp-is="helloworld" 
+       data-sly-use.model="com.adobe.aem.guides.wknd.core.models.HelloWorldModel">
        <h1 class="cmp-helloworld__title">${model.title}</h1>
        <div class="cmp-helloworld__item" data-sly-test="${properties.text}">
            <p class="cmp-helloworld__item-label">Text property:</p>
@@ -268,10 +274,6 @@ Sling 모델은 JCR에서 Java™ 변수로 데이터를 쉽게 매핑하는 주
        <div class="cmp-helloworld__item" data-sly-test="${model.text}">
            <p class="cmp-helloworld__item-label">Sling Model getText() property:</p>
            <pre class="cmp-helloworld__item-output" data-cmp-hook-helloworld="property">${model.text}</pre>
-       </div>
-       <div class="cmp-helloworld__item"  data-sly-test="${model.message}">
-           <p class="cmp-helloworld__item-label">Model message:</p>
-           <pre class="cmp-helloworld__item-output"data-cmp-hook-helloworld="model">${model.message}</pre>
        </div>
    </div>
    ```

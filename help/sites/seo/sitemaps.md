@@ -10,10 +10,10 @@ kt: 9165
 thumbnail: 337960.jpeg
 last-substantial-update: 2022-10-03T00:00:00Z
 exl-id: 40bb55f9-011d-4261-9f44-b1104a591252
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 4c91ab68f6e31f0eb549689c7ecfd0ee009801d9
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 5%
+source-wordcount: '263'
+ht-degree: 4%
 
 ---
 
@@ -21,33 +21,15 @@ ht-degree: 5%
 
 AEM Sites용 사이트 맵을 만들어 SEO를 높이는 방법을 알아봅니다.
 
+>[!WARNING]
+>
+>이 비디오에서는 사이트 맵에서 상대 URL을 사용하는 방법을 보여 줍니다. Sitemap [절대 URL을 사용해야 합니다.](https://sitemaps.org/protocol.html). 자세한 내용은 [구성](#absolute-sitemap-urls) 에서는 아래 비디오에서 다루지 않으므로 절대 URL을 활성화하는 방법을 설명합니다.
+
 >[!VIDEO](https://video.tv.adobe.com/v/337960?quality=12&learn=on)
-
-## 리소스
-
-+ [AEM Sitemap 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/seo-and-url-management.html?lang=en#building-an-xml-sitemap-on-aem)
-+ [Apache Sling Sitemap 설명서](https://github.com/apache/sling-org-apache-sling-sitemap#readme)
-+ [Sitemap.org Sitemap 설명서](https://www.sitemaps.org/protocol.html)
-+ [Sitemap.org Sitemap 인덱스 파일 설명서](https://www.sitemaps.org/protocol.html#index)
-+ [Cronmaker](http://www.cronmaker.com/)
 
 ## 구성
 
-### Sitemap 스케줄러 OSGi 구성
-
-을(를) 정의합니다 [OSGi 공장 구성](http://localhost:4502/system/console/configMgr/org.apache.sling.sitemap.impl.SitemapScheduler) 빈도(사용 [cron 표현식](http://www.cronmaker.com)) 사이트 맵은 AEM에서 다시 생성되고 캐시됩니다.
-
-`ui.config/src/main/jcr_content/apps/wknd/osgiconfig/config.publish`
-
-```json
-{
-  "scheduler.name": "WKND Sitemaps",
-  "scheduler.expression": "0 0 2 1/1 * ? *",
-  "searchPath": "/content/wknd"
-}
-```
-
-### 절대 사이트 맵 URL
+### 절대 사이트 맵 URL{#absolute-sitemap-urls}
 
 AEM 사이트 맵은 [Sling 매핑](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html). 이 작업은 사이트 맵(일반적으로 AEM 게시 서비스)을 생성하는 AEM 서비스에 매핑 노드를 만들어 수행됩니다.
 
@@ -63,6 +45,20 @@ Sling 매핑 노드 정의의 예 `https://wknd.com` 은(는) `/etc/map/https` �
 
 ![Sitemap 절대 URL 구성](../assets/sitemaps/sitemaps-absolute-urls.jpg)
 
+
+### Sitemap 스케줄러 OSGi 구성
+
+을(를) 정의합니다 [OSGi 공장 구성](http://localhost:4502/system/console/configMgr/org.apache.sling.sitemap.impl.SitemapScheduler) 빈도(사용 [cron 표현식](http://www.cronmaker.com)) 사이트 맵은 AEM에서 다시 생성되고 캐시됩니다.
+
+`ui.config/src/main/jcr_content/apps/wknd/osgiconfig/config.publish`
+
+```json
+{
+  "scheduler.name": "WKND Sitemaps",
+  "scheduler.expression": "0 0 2 1/1 * ? *",
+  "searchPath": "/content/wknd"
+}
+```
 
 ### Dispatcher 허용 필터 규칙
 
@@ -88,3 +84,11 @@ Sling 매핑 노드 정의의 예 `https://wknd.com` 은(는) `/etc/map/https` �
 RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.xml)$
 RewriteRule ^/(.*)$ /content/${CONTENT_FOLDER_NAME}/$1 [PT,L]
 ```
+
+## 리소스
+
++ [AEM Sitemap 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/seo-and-url-management.html?lang=en#building-an-xml-sitemap-on-aem)
++ [Apache Sling Sitemap 설명서](https://github.com/apache/sling-org-apache-sling-sitemap#readme)
++ [Sitemap.org Sitemap 설명서](https://www.sitemaps.org/protocol.html)
++ [Sitemap.org Sitemap 인덱스 파일 설명서](https://www.sitemaps.org/protocol.html#index)
++ [Cronmaker](http://www.cronmaker.com/)

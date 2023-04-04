@@ -15,16 +15,16 @@ topic: Localization
 role: User
 level: Beginner
 exl-id: 00746678-da23-4d0a-b775-e1de4ed87c56
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 4c91ab68f6e31f0eb549689c7ecfd0ee009801d9
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 12%
+source-wordcount: '148'
+ht-degree: 17%
 
 ---
 
 # 다중 사이트 관리자 사용 {#using-multi-site-manager-with-aem-sites}
 
-[!UICONTROL Live Copy 개요] 및 [!UICONTROL 블루프린트 구성 관리자] Adobe Experience Manager Sites의 다중 사이트 관리자 기능 작업을 위한 AEM 작성자 인터페이스입니다.
+Live Copy 개요 및 블루프린트 구성 관리자는 작업을 위한 AEM 작성자 인터페이스입니다 [다중 사이트 관리자](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/msm-and-translation.html) Adobe Experience Manager Sites.
 
 ## Live Copy 개요 {#live-copy-overview}
 
