@@ -15,10 +15,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 525cd30c-05bf-4f17-b61b-90609ce757ea
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '548'
-ht-degree: 5%
+ht-degree: 7%
 
 ---
 
@@ -36,7 +36,7 @@ Adobe Experience Manager(AEM) 컨텐츠 조각은 연관되지만 디자인이�
 
 ## 웹 페이지에서 컨텐츠 조각 사용 {#using-content-fragments-in-web-pages}
 
->[!VIDEO](https://video.tv.adobe.com/v/22449/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/22449?quality=12&learn=on)
 
 컨텐츠 조각은 AEM WCM 코어 구성 요소 를 사용하여 AEM Sites 페이지나 유사한 방식으로 경험 조각에서 사용할 수 있습니다 [컨텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html).
 
@@ -44,7 +44,7 @@ Adobe Experience Manager(AEM) 컨텐츠 조각은 연관되지만 디자인이�
 
 ## 컨텐츠 조각을 JSON으로 노출 {#exposing-content-fragments-as-json}
 
->[!VIDEO](https://video.tv.adobe.com/v/22448/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/22448?quality=12&learn=on)
 
 AEM Content Services를 사용하면 컨텐츠를 정규화된 JSON 형식으로 변환하는 AEM 페이지 기반 HTTP 엔드포인트를 쉽게 만들 수 있습니다.
 
@@ -55,7 +55,7 @@ AEM Content Services를 사용하면 컨텐츠를 정규화된 JSON 형식으로
 
 ## Assets HTTP API 사용
 
->[!VIDEO](https://video.tv.adobe.com/v/26390/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26390?quality=12&learn=on)
 
 AEM 6.5에서 처음 도입된 이 Assets HTTP API를 사용하는 컨텐츠 조각에 대한 지원이 향상되었습니다. 따라서 개발자가 컨텐츠 조각에 대해 CRUD(Create, Read, Update and Delete) 작업을 쉽게 수행할 수 있습니다.
 
@@ -78,8 +78,8 @@ AEM 6.5에서 처음 도입된 이 Assets HTTP API를 사용하는 컨텐츠 조
 
 ## 추가 리소스 {#additional-resources}
 
-* [컨텐츠 조각 작성](content-fragments-feature-video-use.md)
-* [AEM WCM 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [콘텐츠 조각 작성](content-fragments-feature-video-use.md)
+* [AEM WCM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)
 * [AEM WCM 코어 컨텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
 
 비디오 시리즈에서 최종 상태에 대한 AEM 6.4+ 인스턴스에 아래 패키지를 다운로드하여 설치하려면 다음을 수행하십시오.\

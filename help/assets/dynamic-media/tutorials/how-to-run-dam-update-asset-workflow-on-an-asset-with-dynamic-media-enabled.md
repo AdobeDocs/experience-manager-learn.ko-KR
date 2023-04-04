@@ -1,22 +1,22 @@
 ---
 title: AEM Dynamic Media용 자산 처리
-description: 'Dynamic Media이 활성화된 자산에서 DAM 자산 업데이트 워크플로우를 실행하는 단계입니다.  '
+description: Dynamic Media이 활성화된 자산에서 DAM 자산 업데이트 워크플로우를 실행하는 단계입니다.
 role: Developer
 level: Intermediate
 version: 6.5
-feature: 워크플로우
-topic: 개발
+feature: Workflow
+topic: Development
 index: y
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 4e55d3fe-68fd-4d41-a4b1-e73290e0934b
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '48'
-ht-degree: 4%
+source-wordcount: '46'
+ht-degree: 0%
 
 ---
-
 
 # AEM Dynamic Media용 자산 처리
 
 이 비디오에서는 Dynamic Media이 활성화된 자산에서 DAM 자산 업데이트 워크플로우를 실행하는 프로세스를 안내합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/335456?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/335456?quality=12&learn=on)

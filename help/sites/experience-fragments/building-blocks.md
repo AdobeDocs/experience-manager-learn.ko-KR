@@ -11,7 +11,7 @@ doc-type: feature video
 kt: 660
 thumbnail: 331786.jpg
 exl-id: cc758602-3c20-4eca-9b87-f04b6dc96bfe
-source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '98'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 빌딩 블록은 경험 조각의 하위 기능입니다. 빌딩 블록을 사용하면 컨텐츠 작성자가 경험 조각의 다양한 변형에서 구성 요소를 재사용할 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/331786/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/331786?quality=12&learn=on)
 
 >[!NOTE]
 >

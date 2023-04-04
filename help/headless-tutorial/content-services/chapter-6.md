@@ -6,7 +6,7 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: b33d1509-531d-40c3-9b26-1d18c8d86a97
-source-git-commit: 25a1a40f42d37443db9edc0e09b1691b1c19e848
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 0%
@@ -55,7 +55,7 @@ AEM Content Services는 구성(컨텐츠 조각 모델, 편집 가능한 템플�
    1. 을(를) 선택합니다 **[!DNL Events]** 페이지
    1. 탭 **[!DNL Publish]** 상단 작업 모음에서
 
->[!VIDEO](https://video.tv.adobe.com/v/28343/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28343?quality=12&learn=on)
 
 ## AEM 게시 확인
 

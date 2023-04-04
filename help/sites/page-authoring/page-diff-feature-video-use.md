@@ -15,7 +15,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 4d365957-9a5a-44f8-a117-95c1c0dd757d
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 1%
@@ -28,7 +28,7 @@ AEM Sites의 페이지 차이점 기능 에서는 페이지에서 변경된 컨�
 
 ## 페이지 버전 비교 {#comparing-page-versions}
 
->[!VIDEO](https://video.tv.adobe.com/v/32152?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32152?quality=12&learn=on)
 
 **HTML 변경 사항**
 
@@ -43,7 +43,7 @@ AEM Sites의 페이지 차이점 기능 에서는 페이지에서 변경된 컨�
 
 ## 론치 페이지 비교 {#comparing-launch-pages}
 
->[!VIDEO](https://video.tv.adobe.com/v/17746/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/17746?quality=12&learn=on)
 
 페이지 차이 기능을 사용하여 블루프린트와 라이브 카피, 블루프린트 및 언어 사본 간의 차이를 식별할 수도 있습니다.
 

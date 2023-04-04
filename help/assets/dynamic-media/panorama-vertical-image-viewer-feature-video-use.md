@@ -7,7 +7,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 6b2f7533-8ce0-4134-b1ae-b3c5d15a05e6
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 2%
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 AEM 6.4의 Dynamic Media 뷰어 개선 사항에는 파노라마 이미지 뷰어, 파노라마 가상 실제 이미지 뷰어 및 세로 이미지 뷰어가 추가되었습니다. 파노라마 뷰어를 사용하면 사용자 정의 개발 없이 공간, 속성, 위치 또는 조경에 대한 매력적인 경험을 손쉽게 전달할 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/24156/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/24156?quality=12&learn=on)
 
 >[!NOTE]
 >

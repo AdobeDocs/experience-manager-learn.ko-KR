@@ -9,7 +9,7 @@ version: 6.4, 6.5, Cloud Service
 kt: 3307
 thumbnail: 17453.jpg
 exl-id: 12d8c0c6-c556-49f4-a6fe-84fccfccf95e
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '80'
 ht-degree: 2%
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 타임워프는 작성자가 과거의 특정 시점에 페이지의 상태를 빠르게 검토할 수 있도록 해주는 Adobe Experience Manager Sites의 기능입니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/17453/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/17453?quality=12&learn=on)
 
 ## 추가 리소스 {#more-resources}
 

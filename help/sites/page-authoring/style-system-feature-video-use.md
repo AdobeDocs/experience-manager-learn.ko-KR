@@ -15,10 +15,10 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 12490c29-91f4-4bb7-b7b6-7ed7cd3fb76d
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '196'
-ht-degree: 1%
+ht-degree: 6%
 
 ---
 
@@ -26,11 +26,11 @@ ht-degree: 1%
 
 Adobe Experience Manager의 스타일 시스템을 사용하면 백엔드 개발 없이 구성 요소를 시각적으로 변형할 수 있으므로, AEM 구성 요소를 더 잘 재사용할 수 있고 보다 다용도 및 효율적인 컨텐츠 작성을 수행할 수 있습니다. 스타일 시스템을 AEM 코어 구성 요소, 템플릿 편집기 및 응답형 레이아웃과 함께 사용하면 풍부한 경험을 빠르게 구성할 수 있는 강력한 기능을 제공합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/21750/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/21750?quality=12&learn=on)
 
 이 비디오에서는 스타일 시스템을 활용하여 CSS만 사용하여 단일 구성 요소에 대해 매우 다른 시각적 모양을 만드는 방법을 보여줍니다.
 
-표시된 스타일은 [WKND 응용 프로그램](https://github.com/adobe/aem-guides-wknd)에서 제공합니다. 이러한 스타일은 CSS로 정의되며, 구성 요소의 백엔드 로직, HTL 스크립트 또는 Sling 모델을 변경할 필요가 없습니다.
+표시된 스타일은 [WKND 애플리케이션](https://github.com/adobe/aem-guides-wknd). 이러한 스타일은 CSS로 정의되며, 구성 요소의 백엔드 로직, HTL 스크립트 또는 Sling 모델을 변경할 필요가 없습니다.
 
 ## 추가 리소스 {#additional-resources}
 

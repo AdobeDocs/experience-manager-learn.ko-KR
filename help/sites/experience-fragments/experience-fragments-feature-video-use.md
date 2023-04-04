@@ -12,7 +12,7 @@ kt: 194
 thumbnail: 331785.jpg
 last-substantial-update: 2021-06-09T00:00:00Z
 exl-id: 84d2b240-5ecc-4230-97a0-6c2faead8d1a
-source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 2%
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 경험 조각을 사용하면 컨텐츠 작성자가 사이트 페이지 및 타사 시스템을 포함한 채널 간에 컨텐츠를 재사용할 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/331785/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/331785?quality=12&learn=on)
 
 경험 조각 은 결합할 때 경험을 만드는 그룹화된 구성 요소 세트입니다. 예: *제목*, *이미지*, *설명*, 및 *클릭유도문안 단추* 를 결합하여 티저 경험을 형성할 수 있습니다.
 

@@ -1,6 +1,6 @@
 ---
 title: Cloud Acceleration Manager 도구 사용
-description: 내레이션이 있는 사용 연습  Cloud Acceleration Manager의 도구.
+description: Cloud Acceleration Manager의 도구를 사용하는 내레이션이 포함된 연습입니다.
 version: Cloud Service
 feature: Migration
 topic: Migration, Upgrade
@@ -8,16 +8,16 @@ role: Architect, Developer
 level: Intermediate
 kt: 8668
 thumbnail: 336699.jpeg
-source-git-commit: 4c9d836881ad7cccd31c55fa5eddc24dff1200cd
+exl-id: 88b4b688-ed71-40e8-bb65-12d3f20cdb6a
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '28'
 ht-degree: 0%
 
 ---
 
-
 # Cloud Acceleration Manager 도구 사용
 
 Cloud Acceleration Manager의 도구를 사용하는 내레이션이 포함된 연습입니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/336699/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/336699?quality=12&learn=on)

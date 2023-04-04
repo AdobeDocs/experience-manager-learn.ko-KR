@@ -8,7 +8,7 @@ role: User
 level: Beginner
 exl-id: a2d21f2e-3dbb-454f-8a02-101dc3af9b1e
 last-substantial-update: 2020-02-09T00:00:00Z
-source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 AEM 6.3에서는 적응형 양식 및 문서의 작성 환경을 단순화하기 위해 이 릴리스의 몇 가지 새로운 기능과 개선 사항을 도입했습니다. 향상된 기능을 통해 출시 시간을 단축하고 비즈니스 사용자가 양식 및 문서를 사용할 수 있습니다
 
->[!VIDEO](https://video.tv.adobe.com/v/19500/)
+>[!VIDEO](https://video.tv.adobe.com/v/19500?quality=12&learn=on)
 
 **적응형 양식 편집기의 몇 가지 주요 개선 사항은 다음과 같습니다.**
 

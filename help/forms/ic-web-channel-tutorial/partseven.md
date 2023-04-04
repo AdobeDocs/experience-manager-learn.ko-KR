@@ -1,26 +1,26 @@
 ---
 title: 웹 채널 문서에 텍스트 및 이미지 컨텐츠 추가
-seo-title: 웹 채널 문서에 텍스트 및 이미지 컨텐츠 추가
-description: '첫 번째 대화형 통신 문서를 만들기 위한 여러 단계 자습서의 7부분입니다. 이 부분에서는 이미지 및 텍스트 컨텐츠를 헤더 패널에 추가합니다. '
-seo-description: '첫 번째 대화형 통신 문서를 만들기 위한 여러 단계 자습서의 7부분입니다. 이 부분에서는 이미지 및 텍스트 컨텐츠를 헤더 패널에 추가합니다. '
+seo-title: Adding text and image content to web channel document
+description: 첫 번째 대화형 통신 문서를 만들기 위한 여러 단계 자습서의 7부분입니다. 이 부분에서는 이미지 및 텍스트 컨텐츠를 헤더 패널에 추가합니다.
+seo-description: This is part 7 of a multi-step tutorial for creating your first interactive communications document. In this part, we will add images and text content to the header panel.
 uuid: 440f8b74-3be7-4e58-a46e-4110065b7705
-feature: 대화형 통신
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 discoiquuid: 3dd64e7d-3f13-4022-bb75-c9dc1884bc19
-topic: 개발
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 3babebd8-3c17-4583-9201-d93bae82f134
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '184'
-ht-degree: 1%
+source-wordcount: '144'
+ht-degree: 0%
 
 ---
-
 
 # 웹 채널 문서에 텍스트 및 이미지 컨텐츠 추가
 
@@ -34,5 +34,4 @@ ht-degree: 1%
 
 비디오에서는 웹 채널 문서의 적절한 대상 영역에 컨텐츠를 추가하는 단계를 안내합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/22359/?quality=9&learn=on)
-
+>[!VIDEO](https://video.tv.adobe.com/v/22359?quality=12&learn=on)

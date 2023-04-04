@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 45daa8e3-ce3b-43de-b3d6-276107215dd4
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 AEM 6.4 카탈로그 개선에서는 AEM 자산 템플릿 및 InDesign Server을 사용하여 카탈로그 페이지를 만드는 기능을 제공합니다.  사용자는 InDesign 템플릿을 사용하여 카탈로그 페이지를 만들고 제품 속성을 편집 가능한 필드에 매핑할 수 있으며 나중에 다른 제품에 대한 유사한 페이지를 만드는 데 사용할 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/22540/)
+>[!VIDEO](https://video.tv.adobe.com/v/22540?quality=12&learn=on)
 
 >[!NOTE]
 >

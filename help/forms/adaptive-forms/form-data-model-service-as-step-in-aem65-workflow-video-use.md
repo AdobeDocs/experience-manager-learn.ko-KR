@@ -9,7 +9,7 @@ role: Developer
 level: Intermediate
 exl-id: 1f13d82e-c1d0-4c8c-8468-b4a4c5897c71
 last-substantial-update: 2021-02-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 0%
@@ -23,7 +23,7 @@ AEM Forms 6.4부터 이제 양식 데이터 모델 서비스를 AEM Workflow의 
 >!![NOTE]이 비디오에 나와 있는 기능을 사용하려면 AEM Forms 6.5.1이 필요합니다
 
 
->[!VIDEO](https://video.tv.adobe.com/v/28145?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28145?quality=12&learn=on)
 
 서버에서 이 기능을 테스트하려면 아래 지침을 따르십시오
 
@@ -37,5 +37,5 @@ AEM Forms 6.4부터 이제 양식 데이터 모델 서비스를 AEM Workflow의 
    * 제출 시 워크플로우를 트리거하는 적응형 양식입니다.
 * 를 엽니다. [MortgageApplicationForm](http://localhost:4502/content/dam/formsanddocuments/loanapplication/jcr:content?wcmmode=disabled). 세부 사항을 입력하고 제출하십시오. 양식 제출에서 [응용 프로그램 워크플로우](http://http://localhost:4502/editor.html/conf/global/settings/workflow/models/LoanApplication2.html) 가 트리거됩니다.
 
-![ workflow ](assets/invokefdm651.PNG).
+![ 워크플로우 ](assets/invokefdm651.PNG).
 워크플로우는 신용 점수가 500을 초과하는 경우 애플리케이션을 관리자에게 라우팅하기 위해 또는 분할 구성 요소를 사용합니다. 신용 점수가 500점 미만인 경우, 응용 프로그램이 게시에 라우팅됩니다.

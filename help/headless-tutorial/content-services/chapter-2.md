@@ -8,7 +8,7 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 8b05fc02-c0c5-48ad-a53e-d73b805ee91f
-source-git-commit: 30c882da3a89820b5e11bc2902bb92dd0629efe9
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '962'
 ht-degree: 10%
@@ -70,7 +70,7 @@ AEM 컨텐츠 조각 모델은 AEM 작성자가 원시 컨텐츠 만들기를 �
    1. 확인 **[!UICONTROL 클라우드 구성]** 필드가 **/conf/wknd-mobile**
    1. 탭 **[!UICONTROL 저장 및 닫기]** 오른쪽 상단에서 변경 사항을 유지합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/28336/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28336?quality=12&learn=on)
 
 >[!WARNING]
 >
@@ -93,7 +93,7 @@ AEM 컨텐츠 조각 모델은 AEM 작성자가 원시 컨텐츠 만들기를 �
 1. 탭 **[!UICONTROL 만들기]** 컨텐츠 조각 모델 생성 마법사를 엽니다.
 1. Enter 키 **[!DNL Event]** 로서의 **[!UICONTROL 모델 제목]** *(설명은 선택 사항입니다)* 탭 **[!UICONTROL 만들기]** 저장
 
->[!VIDEO](https://video.tv.adobe.com/v/28337/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28337?quality=12&learn=on)
 
 ## 컨텐츠 조각 모델의 구조 정의
 
@@ -169,7 +169,7 @@ AEM 컨텐츠 조각 모델은 AEM 작성자가 원시 컨텐츠 만들기를 �
 * [!UICONTROL 속성 이름] : `venueCity`
 * [!UICONTROL 옵션] : `Basel,London,Los Angeles,Paris,New York,Tokyo`
 
->[!VIDEO](https://video.tv.adobe.com/v/28335/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28335?quality=12&learn=on)
 
 >[!NOTE]
 >

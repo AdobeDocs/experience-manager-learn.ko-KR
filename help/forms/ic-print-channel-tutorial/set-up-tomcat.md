@@ -15,7 +15,7 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: faa9ca2d-6cfa-4abf-be5e-3e549202853a
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 이 부분에서는 TOMCAT을 설치하고 TOMCAT에 sampleRest.war 파일을 배포합니다. 이 WAR 파일에 의해 노출된 REST 엔드포인트는 데이터 소스 및 양식 데이터 모델의 기반입니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/37815/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37815?quality=12&learn=on)
 
 tomcat을 설정하려면 다음 지침을 따르십시오.
 
@@ -46,4 +46,4 @@ tomcat을 설정하려면 다음 지침을 따르십시오.
 축하합니다 !!!. tomcat을 설정하고 SampleRest.war 파일을 배포했습니다.
 
 다음 비디오에서는 Tomcat에서 샘플 응용 프로그램을 배포하는 방법에 대해 설명합니다
->[!VIDEO](https://video.tv.adobe.com/v/37815)
+>[!VIDEO](https://video.tv.adobe.com/v/37815?quality=12&learn=on)

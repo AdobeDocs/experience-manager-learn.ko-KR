@@ -1,23 +1,23 @@
 ---
 title: 문자열 추적을 활성화하는 단계(Unix 설정)
-description: 'PDF Generator 문제 해결을 위한 로그 구성 '
+description: PDF 생성기 문제 해결을 위한 문자열 로그 구성
 type: Troubleshooting
 role: Admin
 level: Intermediate
 version: 6.5
-feature: PDF 생성기
-topic: '관리  '
+feature: PDF Generator
+topic: Administration
 index: y
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: e7a3f63e-549a-493c-a8f1-cb0bca2c07e0
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '42'
-ht-degree: 7%
+source-wordcount: '39'
+ht-degree: 0%
 
 ---
-
 
 # Unix 설정에서 문자열 추적을 활성화하는 단계
 
 *이 비디오에서는 AEM Forms PDFG용 Unix 설정에서 문자열 추적을 활성화하는 단계를 안내합니다.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335525?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/335525?quality=12&learn=on)

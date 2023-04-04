@@ -7,7 +7,7 @@ version: Cloud Service
 topic: Development
 index: y
 exl-id: 2df133dc-8c9d-445c-895b-d2fb43cbd39e
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '46'
 ht-degree: 0%
@@ -18,4 +18,4 @@ ht-degree: 0%
 
 이 비디오에서는 작업 작업 작업 매개 변수 제출 중에 Dynamic Media에서 내보내기 작업을 트리거하는 단계를 안내합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/335454?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/335454?quality=12&learn=on)

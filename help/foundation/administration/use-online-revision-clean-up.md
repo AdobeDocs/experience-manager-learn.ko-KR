@@ -10,10 +10,10 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 62a36ab1-3245-43ac-b943-e28ff95661bf
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '74'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 자주 오프라인 개정 정리를 해야 하는 필요성을 완화시키는 온라인 개정 정리 를 간략하게 소개합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/17004/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/17004?quality=12&learn=on)
 
 ## 지원 자료
 

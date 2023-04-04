@@ -3,23 +3,23 @@ title: OSGi 구성 속성
 description: OSGi 구성 속성의 기본 사항과 OSGi 서비스에서 이러한 속성을 사용하는 방법을 알아봅니다.
 role: Developer
 level: Beginner
-topic: 개발
+topic: Development
 feature: OSGI
 kt: 8268
 thumbnail: 335729.jpeg
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 096b0a95-7039-4570-b567-ba316bfc8709
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '77'
-ht-degree: 3%
+source-wordcount: '75'
+ht-degree: 1%
 
 ---
-
 
 # OSGi 구성 속성
 
 OSGi 구성 키/값 쌍을 사용하여 OSGi 구성 데이터를 정의하고 OSGi 서비스에 표시하는 낮은 수준의 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/335729/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/335729?quality=12&learn=on)
 
 ## 리소스
 

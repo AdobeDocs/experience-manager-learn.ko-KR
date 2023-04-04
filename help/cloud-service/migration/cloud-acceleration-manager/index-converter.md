@@ -1,6 +1,6 @@
 ---
 title: 인덱스 변환기
-description: Index Converter에서 기존 AEM 색인 정의를 Cloud Service 호환으로 자동 변환하는 방법을 알아봅니다.
+description: Index Converter에서 기존 AEM 인덱스 정의를 AEM as a Cloud Service 호환으로 자동 변환하는 방법을 알아봅니다.
 version: Cloud Service
 feature: Migration
 topic: Migration, Upgrade
@@ -8,16 +8,16 @@ role: Architect, Developer
 level: Intermediate
 kt: 8665
 thumbnail: 336696.jpeg
-source-git-commit: 4c9d836881ad7cccd31c55fa5eddc24dff1200cd
+exl-id: fbcb7ae8-0452-4632-a1fc-896187bb6695
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '42'
-ht-degree: 0%
+ht-degree: 9%
 
 ---
 
-
 # 인덱스 변환기
 
-Index Converter에서 기존 AEM 색인 정의를 Cloud Service 호환으로 자동 변환하는 방법을 알아봅니다.
+Index Converter에서 기존 AEM 인덱스 정의를 AEM as a Cloud Service 호환으로 자동 변환하는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/336696/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/336696?quality=12&learn=on)

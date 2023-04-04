@@ -9,7 +9,7 @@ level: Beginner
 thumbnail: 28988.jpg
 last-substantial-update: 2022-06-25T00:00:00Z
 exl-id: 6c49f8c2-f468-4b29-b7b6-029c8ab39ce9
-source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1051'
 ht-degree: 1%
@@ -30,7 +30,7 @@ Adobe Creative Cloud for enterprise에 대한 AEM Asset Link 확장 기능은 Cr
 
 다음 비디오에서는 Adobe Creative Cloud 애플리케이션에서 작업하는 크리에이티브가 사용하는 일반적인 워크플로우를 보여주고, Adobe 자산 링크를 사용하여 AEM과 직접 통합합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/335927/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/335927?quality=12&learn=on)
 
 ## 자산 링크 기능 Adobe
 
@@ -61,7 +61,7 @@ Adobe Creative Cloud for enterprise에 대한 AEM Asset Link 확장 기능은 Cr
 
 Adobe 자산 링크는 Adobe 자산 링크와 AEM 간에 InDesign 직접 연결 지원을 제공합니다. InDesign 직접 연결 지원을 통해 다음을 배치할 수 있습니다(__연결 배치__ 또는 __복사 배치__)하거나 Adobe Asset Link 패널을 통해 디지털 자산을 AEM의 InDesign으로 드래그하여 놓습니다. 또한 에서는 *배치만+(FPO) 변환을 소개합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/28988/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28988?quality=12&learn=on)
 
 >[!NOTE]
 >

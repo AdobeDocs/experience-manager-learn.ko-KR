@@ -9,7 +9,7 @@ hidefromtoc: true
 recommendations: noDisplay, noCatalog
 thumbnail: 342133.jpeg
 exl-id: 817ea20d-d902-4497-83d3-5800ed6aaa8f
-source-git-commit: 62a1deda2a4fda56edb0c3d0f34a5e804f78887b
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 5%
@@ -20,7 +20,7 @@ ht-degree: 5%
 
 Darin과 James는 AMS/On-Prem의 몇 가지 우수 사례와 차이점을 포함하여 AEM Cloud에서 Dispatcher에 대해 설명합니다. 또한 클라우드로 마이그레이션 시 터치합니다. 특별 손님과 클라우드 전문가, [Applesmith 박사](https://twitter.com/DrApplesmith) 모양을 만듭니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/342133/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342133?quality=12&learn=on)
 
 ## 이 비디오에서 다루는 컨텐츠
 

@@ -7,7 +7,7 @@ role: Developer
 level: Intermediate
 last-substantial-update: 2022-06-21T00:00:00Z
 exl-id: ab16d5e0-71d9-4518-a03b-4aa5d2ec95a7
-source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '75'
 ht-degree: 0%
@@ -22,6 +22,6 @@ ht-degree: 0%
 >
 >Asset Share Commons에는 SP1(서비스 팩 1)이 설치된 최소 AEM 6.3이 필요합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/20499/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/20499?quality=12&learn=on)
 
 로컬 AEM 인스턴스에 샘플 컨텐츠와 함께 Asset Share Commons 다운로드 및 설치에 대한 간단한 비디오 개요입니다.

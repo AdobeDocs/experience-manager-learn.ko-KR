@@ -11,7 +11,7 @@ topic: Content Management
 role: Developer
 level: Intermediate
 exl-id: 569069e8-7964-49f1-96ed-7dfa4f8ed96c
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 8%
@@ -22,9 +22,9 @@ ht-degree: 8%
 
 소셜 미디어 공유 구성 요소 설정 및 사용을 살펴보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/18897/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/18897?quality=12&learn=on)
 
-이 비디오에서는 Social Media 공유 구성 요소의 다음 시설을 살펴보십시오( [AEM 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)) [We.Retail](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail#weretail) 샘플 웹 사이트.
+이 비디오에서는 Social Media 공유 구성 요소의 다음 시설을 살펴보십시오( [AEM 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)) [We.Retail](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail#weretail) 샘플 웹 사이트.
 
 * 0:00 - 소셜 미디어 공유 구성 요소 추가 및 구성
 * 1:00 - Facebook에 공유

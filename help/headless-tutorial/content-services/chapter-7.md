@@ -6,7 +6,7 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: d6b6d425-842a-43a9-9041-edf78e51d962
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1391'
 ht-degree: 0%
@@ -37,13 +37,13 @@ Android는 Windows, macOs 및 Linux에서 Android 에뮬레이터를 실행하�
 
 ## 모바일 앱 데모
 
->[!VIDEO](https://video.tv.adobe.com/v/28345/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28345?quality=12&learn=on)
 
 ### 비로컬 호스트를 사용하도록 모바일 앱 구성
 
 AEM 게시가 실행되고 있지 않은 경우 **http://localhost:4503** 호스트 및 포트는 모바일 앱의 [!DNL Settings] AEM 게시 호스트/포트를 가리킵니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/28344/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28344?quality=12&learn=on)
 
 ## 로컬에서 모바일 앱 실행
 
@@ -75,7 +75,7 @@ AEM 게시가 실행되고 있지 않은 경우 **http://localhost:4503** 호스
    * 가상 장치 내에서 스크롤하려면 마우스 오른쪽 단추를 누르고 드래그합니다.
    * AEM에서 컨텐츠를 새로 고치려면 새로 고침 아이콘이 표시되고 릴리스가 표시될 때까지 맨 위에서 아래로 당기십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/28341/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28341?quality=12&learn=on)
 
 ## 모바일 앱 코드
 
@@ -200,7 +200,7 @@ JSON 개체에서 더 많은 데이터 포인트를 선택해야 하는 이벤�
 AEM Content Services 및 AEM as a Headless CMS에 대해 자세히 알아보려면 Adobe의 다른 설명서 및 지원 자료를 참조하십시오.
 
 * [컨텐츠 조각 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html)
-* [AEM WCM 코어 구성 요소 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [AEM WCM 코어 구성 요소 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)
 * [AEM WCM 코어 구성 요소 구성 요소 라이브러리](https://opensource.adobe.com/aem-core-wcm-components/library.html)
 * [AEM WCM 코어 구성 요소 GitHub 프로젝트](https://github.com/adobe/aem-core-wcm-components)
 * [구성 요소 익스포터의 코드 샘플](https://github.com/Adobe-Consulting-Services/acs-aem-samples/blob/master/core/src/main/java/com/adobe/acs/samples/models/SampleComponentExporter.java)

@@ -7,7 +7,7 @@ topic: Content Management
 role: Developer
 level: Beginner
 exl-id: 7be8c3d5-b944-4421-97b3-bd5766c1b1b5
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '867'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 스마트 번역 검색을 사용하면 영어 이외의 검색어를 사용하여 영어 콘텐츠로 확인할 수 있습니다. Smart Translation Search용 AEM을 설정하려면 Apache Oak Search Machine Translation OSGi 번들을 설치 및 구성하고 번역 규칙이 포함된 관련 무료 및 오픈 소스 Apache Joshua 언어 팩을 설치해야 합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/21291/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/21291?quality=12&learn=on)
 
 >[!NOTE]
 >

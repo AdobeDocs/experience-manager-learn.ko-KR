@@ -10,7 +10,7 @@ topic: Integrations
 thumbnail: 335717.jpg
 kt: 8370
 exl-id: 45738615-4f15-43b0-bdaa-8b72288925ee
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '49'
 ht-degree: 0%
@@ -21,4 +21,4 @@ ht-degree: 0%
 
 AEM Forms의 메타데이터 서비스를 사용하여 Azure Blob 저장소에서 적응형 양식 데이터를 쿼리하는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/335717/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/335717?quality=12&learn=on)

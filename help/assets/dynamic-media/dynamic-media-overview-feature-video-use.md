@@ -7,7 +7,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 59462cb4-d379-4e58-b786-ff8dbae6191c
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '871'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## Dynamic Media 개요
 
->[!VIDEO](https://video.tv.adobe.com/v/27144/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27144?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 ## AEM Sites 및 기타 CMS가 포함된 Dynamic Media
 
->[!VIDEO](https://video.tv.adobe.com/v/27145/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27145?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 ## Dynamic Media에서 혼합 미디어 컬렉션 및 사용자 정의 뷰어를 빌드할 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/27146/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27146?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -65,7 +65,7 @@ ht-degree: 0%
 
 ## Dynamic Media 이미지 사전 설정
 
->[!VIDEO](https://video.tv.adobe.com/v/27320/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27320?quality=12&learn=on)
 
 이 비디오에서는 이미지 사전 설정이 만들어지는 방식과 이미지 사전 설정인 URL이 요청할 때마다 이미지에서 작동하는 일련의 Image Server 인수에 URL이 짧은 방법을 설명합니다. 이미지 사전 설정을 확장 및 편집하는 중요한 기술을 알아봅니다.
 
@@ -76,7 +76,7 @@ ht-degree: 0%
 
 ## Dynamic Media 고급 URL 수정자
 
->[!VIDEO](https://video.tv.adobe.com/v/27319/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27319?quality=12&learn=on)
 
 이 비디오에서는 Dynamic Media의 URL 수정자를 사용하여 소스 파일 자체의 기능인 배경 투명도, 클리핑 패스에 내장, 자르기 및 텍스트를 변수로 자르는 기능을 활용하기 위해 이미지 크기를 조정하는 것 이상의 방법을 설명합니다.
 
@@ -88,7 +88,7 @@ ht-degree: 0%
 
 ## Dynamic Media JPEG 파일 크기(KB) 제어
 
->[!VIDEO](https://video.tv.adobe.com/v/27404/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27404?quality=12&learn=on)
 
 
 >[!NOTE]
@@ -99,7 +99,7 @@ JPEG 이미지 품질을 결과 파일 크기(KB)와 비교하여 페이지 로�
 
 ## Dynamic Media 비디오에 CC 자막 추가
 
->[!VIDEO](https://video.tv.adobe.com/v/28074/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28074?quality=12&learn=on)
 
 Dynamic Media 비디오에 CC 정보를 포함하는 추가 자막 파일 문서인 web.VTT 사이드카 파일을 가리키도록 복사 URL을 추가하여 자막을 쉽게 추가할 수 있습니다.
 

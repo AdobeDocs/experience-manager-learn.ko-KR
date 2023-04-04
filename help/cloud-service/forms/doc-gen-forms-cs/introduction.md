@@ -9,7 +9,8 @@ feature: Output Service
 topic: Development
 kt: 7432
 thumbnail: 334859.jpg
-source-git-commit: f712e86600ed18aee43187a5fb105324b14b7b89
+exl-id: 08dd141d-9d25-4dd5-a810-70e3835deae4
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '91'
 ht-degree: 1%
@@ -25,4 +26,4 @@ ht-degree: 1%
 1. AEM에서 기술 계정에 대한 액세스 구성
 1. 액세스 토큰을 사용하여 HTTP 호출 만들기
 
->[!VIDEO](https://video.tv.adobe.com/v/334859/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/334859?quality=12&learn=on)

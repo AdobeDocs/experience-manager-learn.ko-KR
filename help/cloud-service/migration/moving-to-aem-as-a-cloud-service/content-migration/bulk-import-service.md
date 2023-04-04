@@ -8,7 +8,7 @@ level: Experienced
 kt: 8918
 thumbnail: 336969.jpeg
 exl-id: 4944d3d9-52a0-4255-9e6c-eb119160e400
-source-git-commit: 1dcb66bc3535231c89f3e7fc127688fcf96f2b61
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 AEM as a Cloud Services Bulk Import Service를 사용하여 비AEM 소스에서 자산을 가져오는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/336969/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/336969?quality=12&learn=on)
 
 ## 대량 가져오기 서비스 사용
 
@@ -35,5 +35,5 @@ AEM as a Cloud Services Bulk Import Service를 사용하여 비AEM 소스에서 
 
 ## 기타 리소스
 
-+ [Adobe 개발자 라이브 세션(자산 수집)](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/feb2021/asset-bulk-ingestion.html?lang=en)
++ [자산 수집의 Adobe Developers Live 세션](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/feb2021/asset-bulk-ingestion.html?lang=en)
 

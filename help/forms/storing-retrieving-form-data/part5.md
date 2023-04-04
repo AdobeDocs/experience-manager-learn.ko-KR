@@ -9,7 +9,7 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: fcef5adc-10fb-42b2-ab46-c7674e94e805
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '88'
 ht-degree: 0%
@@ -20,4 +20,4 @@ ht-degree: 0%
 
 이제 이 사용 사례를 테스트할 새 적응형 양식 템플릿 및 페이지 구성 요소를 만듭니다. 이 새 템플릿으로 만든 모든 적응형 양식에는 양식 데이터를 저장하고 검색할 수 있는 기능이 있습니다.
 다음 비디오에서는 새 적응형 양식 템플릿을 만드는 데 필요한 단계를 안내합니다
->[!VIDEO](https://video.tv.adobe.com/v/27828?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27828?quality=12&learn=on)

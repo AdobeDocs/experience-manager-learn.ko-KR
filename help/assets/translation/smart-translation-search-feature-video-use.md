@@ -9,7 +9,7 @@ level: Beginner
 last-substantial-update: 2022-09-03T00:00:00Z
 thumbnail: 21297.jpg
 exl-id: 4f35e3f7-ae29-4f93-bba9-48c60b800238
-source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Smart Translation Search를 사용하면 Assets와 Pages에서 AEM 컨텐츠 간에 자동으로 교차 언어 검색 및 검색을 수행할 수 있으므로 50개 이상의 언어를 지원하며 수동 컨텐츠 번역도 필요하지 않습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/21297/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/21297?quality=12&learn=on)
 
 AEM Smart Translation Search를 사용하면 영어 이외의 용어를 사용하여 AEM에서 컨텐츠를 검색할 수 있으며, 영어 용어가 동일한 AEM의 자산과 일치합니다.
 

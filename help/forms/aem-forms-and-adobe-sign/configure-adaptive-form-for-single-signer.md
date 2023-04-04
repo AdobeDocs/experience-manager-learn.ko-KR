@@ -8,7 +8,7 @@ topic: Development
 role: User
 level: Beginner
 exl-id: b90c5c00-ec62-4809-9ab6-047eba2f2bb0
-source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '61'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 이 비디오에서는 단일 서명자로 적응형 양식을 구성하는 데 필요한 다양한 단계를 설명합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/39475/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/39475?quality=12&learn=on)
 
 이 비디오와 관련된 자산은 다음 링크에서 다운로드할 수 있습니다
 

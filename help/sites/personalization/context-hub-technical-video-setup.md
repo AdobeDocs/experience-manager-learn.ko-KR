@@ -1,6 +1,6 @@
 ---
-title: Setup ContextHub for Personalization with AEM Sites
-description: ContextHub is a framework for storing, manipulating, and presenting context data. The ContextHub Javascript API enables you to access stores to create, update, and delete data as necessary. As such, ContextHub represents a data layer on your pages. This page describes how to add context hub to your AEM site pages.
+title: AEM Sites을 통한 개인화를 위한 ContextHub 설정
+description: ContextHub는 컨텍스트 데이터를 저장, 조작 및 제공하기 위한 프레임워크입니다. ContextHub Javascript API를 사용하면 필요에 따라 데이터를 생성, 업데이트 및 삭제하기 위해 저장소에 액세스할 수 있습니다. 이와 같이 ContextHub는 페이지의 데이터 계층을 나타냅니다. 이 페이지에서는 AEM 사이트 페이지에 Context Hub를 추가하는 방법에 대해 설명합니다.
 feature: Context Hub
 topics: personalization
 audience: developer, architect
@@ -11,51 +11,51 @@ topic: Personalization
 role: Developer
 level: Intermediate
 exl-id: 89308dd3-a7e5-4fec-bffb-5f0974125c0a
-source-git-commit: 9e4b01173f5d89075ad64adfb8b982b2297e2c39
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '424'
-ht-degree: 9%
+ht-degree: 4%
 
 ---
 
-# Setup ContextHub for Personalization {#set-up-contexthub}
+# 개인화를 위한 ContextHub 설정 {#set-up-contexthub}
 
-ContextHub is a framework for storing, manipulating, and presenting context data. The ContextHub Javascript API enables you to access stores to create, update, and delete data as necessary. As such, ContextHub represents a data layer on your pages. This page describes how to add context hub to your AEM site pages.
+ContextHub는 컨텍스트 데이터를 저장, 조작 및 제공하기 위한 프레임워크입니다. ContextHub Javascript API를 사용하면 필요에 따라 데이터를 생성, 업데이트 및 삭제하기 위해 저장소에 액세스할 수 있습니다. 이와 같이 ContextHub는 페이지의 데이터 계층을 나타냅니다. 이 페이지에서는 AEM 사이트 페이지에 Context Hub를 추가하는 방법에 대해 설명합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/23765/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/23765?quality=12&learn=on)
 
 >[!NOTE]
 >
->We use the WKND reference site for this video and it is not part of AEM release. [](https://github.com/adobe/aem-guides-wknd/releases)
+>이 비디오에는 WKND 참조 사이트를 사용하므로 AEM 릴리스의 일부가 아닙니다. 을 다운로드할 수 있습니다 [최신 버전 여기](https://github.com/adobe/aem-guides-wknd/releases).
 
-Add ContextHub to your pages to enable the ContextHub features and to link to the ContextHub JavaScript libraries. The ContextHub JavaScript API provides access to the context data that ContextHub manages.
+페이지에 ContextHub를 추가하여 ContextHub 기능을 활성화하고 ContextHub JavaScript 라이브러리에 연결합니다. ContextHub JavaScript API는 ContextHub에서 관리하는 컨텍스트 데이터에 대한 액세스를 제공합니다.
 
-## Adding ContextHub to a Page Component {#adding-contexthub-to-a-page-component}
+## 페이지 구성 요소에 ContextHub 추가 {#adding-contexthub-to-a-page-component}
 
-`contexthub``<head>` The HTL code for your page component resembles the following example:
+ContextHub 기능을 활성화하고 ContextHub JavaScript 라이브러리에 연결하려면 다음을 포함합니다. `contexthub` 의 구성 요소 `<head>` 섹션을 참조하십시오. 페이지 구성 요소에 대한 HTL 코드는 다음 예와 유사합니다.
 
 ```java
 <!--/* Include Context Hub */-->
 <sly data-sly-resource="${'contexthub' @ resourceType='granite/contexthub/components/contexthub'}"/>
 ```
 
-## Site Configuration and ContextHub Segments {#site-configuration-and-contexthub-segments}
+## 사이트 구성 및 ContextHub 세그먼트 {#site-configuration-and-contexthub-segments}
 
-ContextHub includes a segmentation engine that manages segments and determines which segments are resolved for the current context. Several segments are defined. [](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/ch-adding.html#DeterminingResolvedContextHubSegments) [](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html)
+ContextHub에는 세그먼트를 관리하고 현재 컨텍스트에 대해 해결된 세그먼트를 결정하는 세그멘테이션 엔진이 포함되어 있습니다. 여러 세그먼트가 정의됩니다. Javascript API를 사용하여 다음을 수행할 수 있습니다 [해결된 세그먼트 확인](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/ch-adding.html#DeterminingResolvedContextHubSegments). 아래에서 사이트에 대한 ContextHub 세그먼트 활성화 [[!UICONTROL 구성 브라우저]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html).
 
-## Create Segments {#create-segments}
+## 세그먼트 만들기 {#create-segments}
 
-Create AEM segments that act as rules for the teasers. That is, they define when content within a teaser appears on a web page. 그런 후 방문자의 필요 및 관심사와 일치하는 세그먼트에 따라, 이러한 항목을 컨텐츠의 대상으로 구체적으로 지정할 수 있습니다.
+Teaser에 대한 규칙으로 작동하는 AEM 세그먼트를 만듭니다. 즉, 티저 내의 컨텐츠가 웹 페이지에 표시되는 경우를 정의합니다. 그런 다음 방문자가 일치하는 세그먼트에 따라 방문자의 요구 사항과 관심사에 맞는 콘텐츠를 특별히 타깃팅할 수 있습니다.
 
-## Assigning Cloud Configuration, Segment path and ContextHub path to your site {#assigning-cloud-configuration-segment-path-and-contexthub-path-to-your-site}
+## 사이트에 클라우드 구성, 세그먼트 경로 및 ContextHub 경로 할당 {#assigning-cloud-configuration-segment-path-and-contexthub-path-to-your-site}
 
-Assigning the Cloud configuration path, segmentation path and ContextHub path to your site root node so you can create a personalized experience for your audience. Using the ContextHub, you can manipulate the context data and test your resolved segments.
+대상을 위해 개인화된 경험을 만들 수 있도록 클라우드 구성 경로, 세그멘테이션 경로 및 ContextHub 경로를 사이트 루트 노드에 할당합니다. ContextHub를 사용하여 컨텍스트 데이터를 조작하고 해결된 세그먼트를 테스트할 수 있습니다.
 
 ![CRXDE Lite](assets/crx-de-properties.png)
 
-You can read more about ContextHub and segmentation below:
+아래에서 ContextHub 및 세그멘테이션에 대해 자세히 알아보십시오.
 
 * [ContextHub](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/contexthub.html)
-* [](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/ch-adding.html)
+* [페이지에 Context Hub 추가 및 저장소 액세스](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/ch-adding.html)
 * [세그멘테이션 이해](https://helpx.adobe.com/experience-manager/6-5/sites/classic-ui-authoring/using/classic-personalization-campaigns-segmentation.html)
 * [ContextHub를 사용하여 세그먼테이션 구성](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/segmentation.html)

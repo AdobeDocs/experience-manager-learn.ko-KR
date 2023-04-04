@@ -9,7 +9,7 @@ kt: 7630
 thumbnail: 333272.jpeg
 last-substantial-update: 2022-11-11T00:00:00Z
 exl-id: c5f933eb-c409-41dc-bb6a-6b2220dfbb47
-source-git-commit: ece15ba61124972bed0667738ccb37575d43de13
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '618'
 ht-degree: 5%
@@ -20,9 +20,9 @@ ht-degree: 5%
 
 SPA Editor를 사용하여 편집 가능한 AEM 컨텐츠으로 기존 React 기반(또는 Next.js) Remote SPA을 보강하려는 개발자를 위한 다중 부분 자습서를 시작합니다.
 
-이 자습서는 [WKND GraphQL 앱](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html): AEM GraphQL API를 통해 AEM 컨텐츠 조각 컨텐츠를 소비하는 React 앱이지만 SPA 컨텐츠를 컨텍스트 내에서 작성할 수 없습니다.
+이 자습서는 [WKND GraphQL 앱](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html): AEM GraphQL API를 통해 AEM 컨텐츠 조각 컨텐츠를 소비하는 React 앱이지만 SPA 컨텐츠의 컨텍스트 내 작성은 제공하지 않습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/333272/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/333272?quality=12&learn=on)
 
 ## 자습서 정보
 

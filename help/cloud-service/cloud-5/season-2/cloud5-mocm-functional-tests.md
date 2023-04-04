@@ -7,10 +7,10 @@ level: Intermediate
 thumbnail: 343624.jpeg
 hidefromtoc: true
 recommendations: noDisplay, noCatalog
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '90'
-ht-degree: 2%
+ht-degree: 6%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 AEM은 애플리케이션을 맨 위에 구축된 상태로 기본적으로 많은 기능 테스트를 마칩니다. 그러나 이러한 테스트에서는 필요한 모든 테스트를 다루지 않을 수 있습니다. 맞춤형 기능 검사가 구조대에 온다.
 
->[!VIDEO](https://video.tv.adobe.com/v/343624)
+>[!VIDEO](https://video.tv.adobe.com/v/343624?quality=12&learn=on)
 
 ## 이 비디오에서 다루는 컨텐츠
 

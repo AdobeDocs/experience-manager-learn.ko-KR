@@ -8,7 +8,7 @@ role: User
 level: Beginner
 last-substantial-update: 2022-06-26T00:00:00Z
 exl-id: a3c3a01e-97a6-494f-b7a9-22057e91f4eb
-source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '977'
 ht-degree: 3%
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 AEM 6.4.2는 AEM에서 직접 Adobe Stock 자산을 검색, 미리 보기, 저장 및 라이선스를 제공할 수 있는 기능을 제공합니다. 이제 조직은 Adobe Stock Enterprise 플랜을 AEM Assets과 통합하여 라이선스가 있는 자산이 이제 AEM의 강력한 자산 관리 기능과 함께 광고 및 마케팅 프로젝트에 폭넓게 사용 가능한지 확인할 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/24678/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/24678?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -65,7 +65,7 @@ Adobe Stock과 AEM Assets 통합을 통해 컨텐츠 작성자와 마케터는 �
 
 AEM 6.4.2는 AEM에서 직접 Adobe Stock 자산을 검색, 미리 보기, 저장 및 라이선스를 제공할 수 있는 기능을 제공합니다. 이 비디오에서는 Adobe I/O 콘솔을 사용하여 AEM Assets으로 Adobe 주식을 설정하는 방법에 대한 간단한 연습을 다룹니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/25043/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/25043?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -73,7 +73,7 @@ AEM 6.4.2는 AEM에서 직접 Adobe Stock 자산을 검색, 미리 보기, 저�
 
 >[!NOTE]
 >
->통합에는 다음이 필요합니다 [엔터프라이즈 Adobe Stock 플랜](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html) 및 AEM 6.4(최소 포함) [서비스 팩 2](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=AEM*+6*+4*+Service*+Pack*&amp;2_group.propertyvalues.property=%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Repeat&amp;2_group.propertyvalues.operation=equals&amp;2_group.propertyvalues.0_values=target-version%3Aem%2F6-4&amp;3_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;3_group.propertyvalues.operation=equals&amp;3_group.propertyvalues.0_values=software-type%3Aservice-and-cumulative-fix&amp;orderby=%40jcr%3Acontent%2Fmetadata%2Fdc%3Attribute&amp;orderby.sort=asc&amp;layout=list&amp;p.offset=0&amp;p.limit=24) 배포됩니다. AEM 6.4 서비스 팩 세부 사항에 대해서는 다음 내용을 참조하십시오 [릴리스 노트](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html). 또한 [Adobe I/O 콘솔](https://console.adobe.io/), [Adobe Admin Console](https://adminconsole.adobe.com/) 및 Adobe Experience Manager이 통합을 설정할 수 있습니다.
+>통합에는 다음이 필요합니다 [엔터프라이즈 Adobe Stock 플랜](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html) 및 AEM 6.4(최소 포함) [서비스 팩 2](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=AEM*+6*+4*+Service*+Pack*&amp;2_group.propertyvalues.property=%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Repeat&amp;2_group.propertyvalues.operation=equals&amp;2_group.propertyvalues.0_values=target-version%3Aem%2F6-4&amp;3_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;3_group.propertyvalues.operation=equals&amp;3_group.propertyvalues.0_values=software-type%3Aservice-and-cumulative-fix&amp;orderby=%40jcr%3Acontent%2Fmetadata%2Fdc%3Attribute&amp;orderby.sort=asc&amp;layout=list&amp;p.offset=0&amp;p.limit=24) 배포됩니다. AEM 6.4 서비스 팩 세부 사항에 대해서는 다음 내용을 참조하십시오 [릴리스 노트](https://helpx.adobe.com/kr/experience-manager/6-4/release-notes/sp-release-notes.html). 또한 [Adobe I/O 콘솔](https://console.adobe.io/), [Adobe Admin Console](https://adminconsole.adobe.com/) 및 Adobe Experience Manager이 통합을 설정할 수 있습니다.
 
 ### 설치 {#installations}
 
@@ -107,7 +107,7 @@ AEM 6.4.2는 AEM에서 직접 Adobe Stock 자산을 검색, 미리 보기, 저�
 ### 추가 리소스
 
 * [Enterprise Stock 계획](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html)
-* [AEM 6.4 서비스 팩 2 릴리스 노트](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/sp-release-notes.html?lang=ko-KR)
+* [AEM 6.4 서비스 팩 2 릴리스 노트](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/sp-release-notes.html?lang=ko)
 * [AEM 및 Adobe Stock 통합](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/aem-assets-adobe-stock.html)
 * [Adobe I/O 콘솔 통합 API](https://www.adobe.io/apis/cloudplatform/console/authentication/gettingstarted.html)
 * [Adobe Stock API 문서](https://www.adobe.io/apis/creativecloud/stock/docs.html)

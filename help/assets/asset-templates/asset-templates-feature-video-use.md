@@ -8,7 +8,7 @@ level: Beginner
 last-substantial-update: 2022-09-01T00:00:00Z
 thumbnail: 25170.jpg
 exl-id: 45e0f3d5-db56-44e7-ad68-4d60991a6d77
-source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 0%
@@ -33,4 +33,4 @@ AEM Assets 템플릿을 사용하면 마케터가 디지털 및 인쇄용 디지
 
 이 비디오에서는 AEM Assets Assert 템플릿 기능에 대한 보다 기술적인 개요를 제공하며 AEM을 통해 AEM Assets 및 콘텐츠를 InDesign으로 쉽게 구성하여 풍부하고 매력적인 인쇄 경험을 만드는 방법을 소개합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/17071/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/17071?quality=12&learn=on)

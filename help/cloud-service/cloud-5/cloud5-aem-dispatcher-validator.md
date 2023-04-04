@@ -8,10 +8,11 @@ kt: 10271
 thumbnail: 342358.jpeg
 hidefromtoc: true
 recommendations: noDisplay, noCatalog
-source-git-commit: 0b6e16d7263bc14c1824643b77678071694bcb7e
+exl-id: e95e7530-100d-4495-abae-4c568e7978b3
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '69'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -19,7 +20,7 @@ ht-degree: 0%
 
 AEM 개발 워크플로우에서 dispatcher 검사기를 사용하는 방법에 대한 간단한 예입니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/342358)
+>[!VIDEO](https://video.tv.adobe.com/v/342358?quality=12&learn=on)
 
 ## 이 비디오에서 다루는 컨텐츠
 

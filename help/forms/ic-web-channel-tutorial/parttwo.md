@@ -15,7 +15,7 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 11145e87-7eef-4183-ac6f-efc8d35d0670
-source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '98'
 ht-degree: 0%
@@ -26,6 +26,6 @@ ht-degree: 0%
 
 이 부분에서는 REST 지원 데이터 소스를 만듭니다.  다음 비디오는 데이터 소스를 만드는 단계를 안내합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/22344/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/22344?quality=12&learn=on)
 
 이 자습서와 관련된 자산의 일부로 제공된 swagger 파일을 사용하십시오. 자산은에서 사용할 수 있습니다. [소개](introduction.md) 참조하십시오.

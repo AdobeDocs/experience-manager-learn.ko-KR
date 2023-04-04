@@ -14,7 +14,7 @@ role: Architect, Developer
 level: Beginner
 last-substantial-update: 2022-10-05T00:00:00Z
 exl-id: 28644af8-babc-467d-afdb-8538728dc176
-source-git-commit: d0b13fd37f1ed42042431246f755a913b56625ec
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 관리자는 AEM as a Cloud Service의 벌크 가져오기 도구를 사용하여 안전하고 효율적인 방식으로 클라우드 저장소(Azure Blob 저장소 또는 Amazon S3)에서 자산을 일괄적으로 가져올 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/329680?quality=12&learn=on)
 
 ## 대량 가져오기 예약
 

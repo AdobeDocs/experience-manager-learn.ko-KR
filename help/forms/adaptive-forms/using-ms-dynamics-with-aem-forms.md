@@ -8,7 +8,7 @@ role: Developer
 level: Intermediate
 exl-id: 3e51767b-3571-4af7-8f01-5b6c5c74734c
 last-substantial-update: 2021-03-20T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '136'
 ht-degree: 0%
@@ -27,7 +27,7 @@ AEM Forms 데이터 통합을 사용하면 서로 다른 데이터 소스를 구
 
 이 비디오에서는 AEM Forms을 백엔드 데이터 소스로 사용하여 인터랙티브하고 개인화된 커뮤니케이션을 전달하는 방법을 보여주는 워크플로우를 안내합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/20971?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/20971?quality=12&learn=on)
 
 >[!NOTE]
 >

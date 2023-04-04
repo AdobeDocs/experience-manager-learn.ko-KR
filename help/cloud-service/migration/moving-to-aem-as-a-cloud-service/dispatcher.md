@@ -9,10 +9,10 @@ level: Experienced
 kt: 8633
 thumbnail: 336962.jpeg
 exl-id: 81397b21-b4f3-4024-a6da-a9b681453eff
-source-git-commit: 1dcb66bc3535231c89f3e7fc127688fcf96f2b61
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '277'
-ht-degree: 3%
+ht-degree: 6%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 3%
 
 Dispatcher for AEM 6, Dispatcher 전환 도구 및 Dispatcher 도구 SDK를 사용하는 방법에 중점을 두고 AEM용 AEM Dispatcher as a Cloud Service에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/336962/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/336962?quality=12&learn=on)
 
 ## Dispatcher 변환기
 

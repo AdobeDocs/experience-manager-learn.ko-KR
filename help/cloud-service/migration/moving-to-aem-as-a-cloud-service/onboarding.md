@@ -9,10 +9,10 @@ level: Experienced
 kt: 8631
 thumbnail: 336959.jpeg
 exl-id: 9d2004e5-e928-4190-8298-695635c8e92c
-source-git-commit: 1dcb66bc3535231c89f3e7fc127688fcf96f2b61
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '326'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 6%
 
 Cloud Manager를 사용하여 환경을 설정하는 과정을 거쳐 계약 단계부터 AEM as a Cloud Service으로 온보딩에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/336959/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/336959?quality=12&learn=on)
 
 ## Cloud Manager 및 Admin Console
 
@@ -31,7 +31,7 @@ Cloud Manager를 사용하여 환경을 설정하는 과정을 거쳐 계약 단
 ## 주요 활동
 
 + 시스템 관리자는 [Admin Console](https://adminconsole.adobe.com/) 하나 이상의 사용자를 [Cloud Manager - 비즈니스 소유자](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) 제품 프로필 .
-+ 비즈니스 소유자 제품 프로필에 지정된 사용자는 [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=ko-KR) to [프로그램 만들기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/creating-production-program.html) 및 [환경 추가](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html)
++ 비즈니스 소유자 제품 프로필에 지정된 사용자는 [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) to [프로그램 만들기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/creating-production-program.html) 및 [환경 추가](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html)
 + 를 사용하십시오 [Admin Console](https://adminconsole.adobe.com/) 개발자와 사용자를 다른 [Cloud Manager 역할](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) 다양한 AEM 환경에 대한 권한을 부여합니다.
 
 ## 실습 운동

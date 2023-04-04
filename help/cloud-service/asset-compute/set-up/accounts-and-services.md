@@ -13,7 +13,7 @@ topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 707657ad-221e-4dab-ac2a-46a4fcbc55bc
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '621'
 ht-degree: 1%
@@ -69,7 +69,7 @@ Microsoft Azure Blob 저장 공간에 대한 액세스 권한이 없는 경우 [
 
 하지만 이 자습서에서는 Azure Blob 저장소를 사용합니다 [Amazon S3](#amazon-s3) 은 자습서에 약간의 변형만 사용할 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/40377/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/40377?quality=12&learn=on)
 
 _Azure Blob 저장소 프로비저닝의 클릭스루(오디오 없음)_
 

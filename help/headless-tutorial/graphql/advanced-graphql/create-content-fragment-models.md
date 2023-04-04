@@ -1,5 +1,5 @@
 ---
-title: 컨텐츠 조각 모델 만들기 - AEM 헤드리스 - GraphQL의 고급 개념
+title: 컨텐츠 조각 모델 만들기 - AEM Headless의 고급 개념 - GraphQL
 description: Adobe Experience Manager(AEM) 헤드리스의 고급 개념 장에서 탭 자리 표시자, 날짜 및 시간, JSON 개체, 조각 참조 및 컨텐츠 참조를 추가하여 컨텐츠 조각 모델을 편집하는 방법을 알아봅니다.
 version: Cloud Service
 feature: Content Fragments, GraphQL API
@@ -7,14 +7,14 @@ topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: 2122ab13-f9df-4f36-9c7e-8980033c3b10
-source-git-commit: a500c88091d87e34c12d4092c71241983b166af8
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1989'
 ht-degree: 1%
 
 ---
 
-# 컨텐츠 조각 모델 만들기 {#create-content-fragment-models}
+# 콘텐츠 조각 모델 만들기 {#create-content-fragment-models}
 
 이 장에서는 5개의 컨텐츠 조각 모델을 만드는 단계를 안내합니다.
 
@@ -34,7 +34,7 @@ ht-degree: 1%
 
 ## 목표 {#objectives}
 
-* 컨텐츠 조각 모델을 만듭니다.
+* 콘텐츠 조각 모델 만들기.
 * 탭 자리 표시자, 날짜 및 시간, JSON 개체, 조각 참조 및 컨텐츠 참조를 모델에 추가합니다.
 * 컨텐츠 참조에 유효성 검사를 추가합니다.
 
@@ -42,9 +42,9 @@ ht-degree: 1%
 
 다음 비디오에서는 컨텐츠 조각 모델 및 이 자습서에서 사용하는 방법에 대해 간략하게 소개합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/340037/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/340037?quality=12&learn=on)
 
-## 컨텐츠 조각 모델 만들기 {#create-models}
+## 콘텐츠 조각 모델 만들기 {#create-models}
 
 WKND 앱에 대한 컨텐츠 조각 모델을 만들어 보겠습니다. 컨텐츠 조각 모델 생성에 대한 기본 소개가 필요한 경우, [기본 자습서](../multi-step/content-fragment-models.md).
 
@@ -236,4 +236,4 @@ Adobe Experience Manager에는 몇 가지 내장된 유효성 검사 방법이 �
 이 시리즈의 다음 장에서는 [컨텐츠 조각 작성](/help/headless-tutorial/graphql/advanced-graphql/author-content-fragments.md) 이 장에서 생성한 모델에서 이 장에 도입된 데이터 유형을 사용하고 폴더 정책을 만들어 자산 폴더에서 만들 수 있는 컨텐츠 조각 모델을 제한하는 방법을 알아봅니다.
 
 이 자습서에서는 선택 사항이지만 실제 프로덕션 상황에서 모든 콘텐츠를 게시해야 합니다. AEM의 작성 및 게시 환경에 대한 검토는 다음을 참조하십시오.
-[AEM 헤드리스 및 GraphQL 비디오 시리즈](/help/headless-tutorial/graphql/video-series/author-publish-architecture.md).
+[AEM Headless 및 GraphQL 비디오 시리즈](/help/headless-tutorial/graphql/video-series/author-publish-architecture.md).

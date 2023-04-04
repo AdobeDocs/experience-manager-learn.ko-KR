@@ -9,7 +9,7 @@ level: Beginner
 kt: 6060
 thumbnail: 39151.jpg
 exl-id: 7d7942ae-7e38-4abd-9900-5b8e3542f5e1
-source-git-commit: bca51ece7a9b249727b8746cc9654503059116fb
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '221'
 ht-degree: 90%
@@ -27,7 +27,7 @@ ht-degree: 90%
 
 Adobe Experience Manager는 Adobe IMS 사용자, 사용자 그룹 및 제품 프로필을 기반으로 AEM에 사용자 정의 가능한 액세스를 제공합니다. AEM 그룹 및 권한을 정의하는 방법과 Adobe IMS 추상화와 연동하여 AEM에 매끄럽고 사용자 정의 가능한 액세스를 제공하는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/39151/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/39151?quality=12&learn=on)
 
 ## 추가 리소스
 

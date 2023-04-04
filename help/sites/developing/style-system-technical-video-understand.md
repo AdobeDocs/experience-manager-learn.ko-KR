@@ -7,7 +7,7 @@ topic: Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 8fbc3819-3214-4c58-8629-a27eb6f0c545
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1090'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 ## 스타일 시스템에 대한 코드 지정 방법 이해 {#understanding-how-to-code-for-the-style-system}
 
->[!VIDEO](https://video.tv.adobe.com/v/21538/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/21538?quality=12&learn=on)
 
 제공된 AEM 패키지(**technical-review.sites.style-system-1.0.0.zip**)에서 예제 제목 스타일, We.Retail 레이아웃 컨테이너 및 제목 구성 요소에 대한 샘플 정책 및 샘플 페이지를 설치합니다.
 

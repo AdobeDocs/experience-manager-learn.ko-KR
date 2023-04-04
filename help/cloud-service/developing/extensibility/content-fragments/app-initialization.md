@@ -11,7 +11,7 @@ recommendations: noDisplay, noCatalog
 last-substantial-update: 2023-01-04T00:00:00Z
 kt: 11659
 thumbnail: 3412876.jpeg
-source-git-commit: fbc8c11841f5b5e04a99ba74fac6f01dc3e3a2da
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '79'
 ht-degree: 0%
@@ -23,6 +23,6 @@ ht-degree: 0%
 
 확장이 표시되는 위치와 이 확장이 수행하는 작업을 정의하는 AEM 컨텐츠 조각 콘솔 확장 App Builder 앱을 초기화합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3412876/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3412876?quality=12&learn=on)
 
 에 대해서는 Adobe Developer 설명서 을 참조하십시오. [앱 초기화 프로세스의 세부 안내](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/code-generation/#launch-code-generation-during-project-initialization).

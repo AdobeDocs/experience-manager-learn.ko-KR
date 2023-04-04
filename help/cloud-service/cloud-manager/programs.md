@@ -12,7 +12,7 @@ topic: Architecture
 role: Architect, Developer, Admin
 level: Beginner
 exl-id: 1dcbd6b5-3261-4cb1-ab20-d8812c0d070a
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 0%
@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Cloud Manager **프로그램** 는 일반적으로 구매한 SLA(서비스 수준 계약)에 해당하는 비즈니스 이니셔티브의 논리적 집합을 지원하는 AEM 환경의 집합입니다. 예를 들어, 하나의 프로그램은 전역 공용 웹 사이트를 지원하는 AEM 리소스를 나타내고, 다른 프로그램은 내부 중앙 DAM을 나타냅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/26313/?quality=12&learn=on&hidetitle=true)
+>[!VIDEO](https://video.tv.adobe.com/v/26313?quality=12&learn=on)

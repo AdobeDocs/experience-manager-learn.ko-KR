@@ -14,7 +14,7 @@ role: Developer
 level: Intermediate, Experienced
 last-substantial-update: 2023-01-12T00:00:00Z
 exl-id: 197444cb-a68f-4d09-9120-7b6603e1f47d
-source-git-commit: 8b6d8d99c806e782a1ddce2b300211f8d4c9da56
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1067'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 AEM as a Cloud Service에 프로그래밍 방식으로 액세스해야 하는 통합을 구축하는 개발자는 로컬 개발 활동을 용이하게 하기 위해 AEM에 대한 임시 액세스 토큰을 가져오는 간단하고 빠른 방법이 필요합니다. 이러한 요구 사항을 충족하기 위해 AEM 개발자 콘솔을 사용하여 개발자가 프로그래밍 방식으로 AEM에 액세스하는 데 사용할 수 있는 임시 액세스 토큰을 자동으로 생성할 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/330477/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330477?quality=12&learn=on)
 
 ## 로컬 개발 액세스 토큰 생성
 

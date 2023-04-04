@@ -12,10 +12,10 @@ level: Beginner
 exl-id: d5d59ef5-9343-4ac2-9053-a010decdb9b6
 last-substantial-update: 2022-08-15T00:00:00Z
 thumbnail: cm-pipeline.jpg
-source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '312'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -31,19 +31,19 @@ Cloud Manager 및 Cloud Manager 프로그램을 간략하게 소개합니다.
 >
 >이 비디오에서 빌드, 테스트 및 배포 시간이 빨라져 비디오 시간이 단축되었습니다. 전체 파이프라인 실행은 일반적으로 프로젝트 크기, AEM 인스턴스 수 및 UAT 프로세스에 따라 45분 이상(필수 30분 성능 테스트 포함) 소요됩니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/23082/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/23082?quality=12&learn=on)
 
 ## CI/CD 파이프라인 설정
 
 이 비디오에서는 Cloud Manager에서 프로그램에 대한 파이프라인 설정을 설명합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/23083/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/23083?quality=12&learn=on)
 
 ## 실패한 파이프라인 실행
 
 이 비디오에서는 다음을 사용하여 Cloud Manager의 필수 품질 검사에 실패한 코드를 사용하여 CI/CD 파이프라인의 실행을 탐구합니다. **[!DNL yellow]** 저장소 분기.
 
->[!VIDEO](https://video.tv.adobe.com/v/23084/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/23084?quality=12&learn=on)
 
 ## 성공적인 파이프라인 실행
 
@@ -51,7 +51,7 @@ Cloud Manager 및 Cloud Manager 프로그램을 간략하게 소개합니다.
 
 이 비디오에서는 [!UICONTROL 활동] Cloud Manager의 콘솔로 전환하여 활성 실행을 다시 적용하거나 완료 또는 실패한 실행을 검토할 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/23085/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/23085?quality=12&learn=on)
 
 ## 지원 자료
 

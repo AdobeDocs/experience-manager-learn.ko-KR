@@ -8,7 +8,7 @@ level: Experienced
 kt: 8919
 thumbnail: 336970.jpeg
 exl-id: c51ce8e3-e83c-4f8b-a835-70335ed3a5b9
-source-git-commit: 1dcb66bc3535231c89f3e7fc127688fcf96f2b61
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 2%
@@ -16,11 +16,11 @@ ht-degree: 2%
 ---
 
 
-# 컨텐츠 전송 도구
+# 콘텐츠 전송 도구
 
 컨텐츠 전송 도구를 사용하여 컨텐츠를 AEM 6.3 이상에서 AEM as a Cloud Service으로 마이그레이션하는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/336970/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/336970?quality=12&learn=on)
 
 ## 컨텐츠 전송 도구 사용
 

@@ -1,20 +1,20 @@
 ---
 title: 소득 패널에 구성 요소 추가
 description: '[수입] 패널에 테이블을 추가하겠습니다. 테이블 행을 구성하고 규칙 편집기를 사용하여 총계를 계산합니다.'
-feature: 적응형 양식
+feature: Adaptive Forms
 version: 6.4,6.5
 thumbnail: 22198.jpg
 kt: 4211
-topic: 개발
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: e7674c46-259f-4dbd-96db-c40369534911
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 1%
+source-wordcount: '183'
+ht-degree: 0%
 
 ---
-
 
 # 소득 패널에 구성 요소 추가 {#adding-components-to-income-panel}
 
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 **테이블 구성 요소 추가 및 구성**
 
->[!VIDEO](https://video.tv.adobe.com/v/22198?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/22198?quality=12&learn=on)
 
 
 
@@ -43,6 +43,4 @@ ht-degree: 1%
 ## 규칙을 만들어 총계 계산 {#create-rule-to-calculate-grand-total}
 
 
->[!VIDEO](https://video.tv.adobe.com/v/22197?quality=9&learn=on)
-
-
+>[!VIDEO](https://video.tv.adobe.com/v/22197?quality=12&learn=on)

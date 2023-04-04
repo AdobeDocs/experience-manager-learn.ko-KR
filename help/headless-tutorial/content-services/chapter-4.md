@@ -6,7 +6,7 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: ece0bf0d-c4af-4962-9c00-f2849c2d8f6f
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '785'
 ht-degree: 0%
@@ -89,7 +89,7 @@ API 종단점을 구성하는 방법을 이해하고 API에 어떤 콘텐츠를 
 1. 그러나 **레이아웃 컨테이너** is **잠김** 다른 구성 요소가 추가되지 않거나 이 세 구성 요소가 제거되지 않도록 합니다.
 1. 탭 **[!UICONTROL 페이지 정보] > [!UICONTROL 관리자로 보기]** 로 돌아가기 [!DNL WKND Mobile] 템플릿 목록. 새로 만든 항목을 선택합니다 **[!DNL Events API]** 템플릿 및 탭 **[!UICONTROL 활성화]** 를 클릭합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/28342/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28342?quality=12&learn=on)
 
 >[!NOTE]
 >

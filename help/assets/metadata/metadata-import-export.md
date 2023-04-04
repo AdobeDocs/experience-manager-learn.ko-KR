@@ -10,7 +10,7 @@ kt: 647, 917
 thumbnail: 22132.jpg
 last-substantial-update: 2022-06-13T00:00:00Z
 exl-id: 0681e2c4-8661-436c-9170-9aa841a6fa27
-source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 3%
@@ -23,11 +23,11 @@ Adobe Experience Manager Assets의 메타데이터 기능을 가져오고 내보
 
 ## 메타데이터 내보내기 {#metadata-export}
 
->[!VIDEO](https://video.tv.adobe.com/v/22132/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/22132?quality=12&learn=on)
 
 ## 메타데이터 가져오기 {#metadata-import}
 
->[!VIDEO](https://video.tv.adobe.com/v/21374/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/21374?quality=12&learn=on)
 
 >[!NOTE]
 >

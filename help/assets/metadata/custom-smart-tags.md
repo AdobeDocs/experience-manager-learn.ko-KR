@@ -9,7 +9,7 @@ topic: Content Management
 role: Developer
 level: Intermediate
 exl-id: 06f2ae4d-c18e-45ed-96d7-ddc6f9c8d829
-source-git-commit: d7b1ab815d9c8a0d0342f7b57d1efb08fb39a26a
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 이미지용 사용자 지정 스마트 태그를 사용하면 스마트 태그 지정을 고객별 용어로 교육할 수 있습니다.
 그런 다음 사용자 지정 스마트 태그 또는 향상된 스마트 태그를 활용하여 사용자 검색 경험을 개선하고 자산을 적시에 찾을 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/22254/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/22254?quality=12&learn=on)
 
 ## AEM 6.x 이미지용 사용자 지정 스마트 태그 설정{#set-up}
 
@@ -32,7 +32,7 @@ ht-degree: 1%
 
 스마트 컨텐츠 서비스 및 Adobe I/O을 사용하여 AEM Assets에서 스마트 태그 교육을 구성하는 방법을 알아봅니다. 이미지용 사용자 지정 스마트 태그
 
->[!VIDEO](https://video.tv.adobe.com/v/23405/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/23405?quality=12&learn=on)
 
 ## 추가 리소스
 

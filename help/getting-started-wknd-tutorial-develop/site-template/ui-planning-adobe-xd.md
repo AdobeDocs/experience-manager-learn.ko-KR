@@ -11,7 +11,7 @@ kt: 9371
 thumbnail: 338680.jpg
 exl-id: 3155e0fa-56b7-4a52-8eef-fee488e95f68
 recommendations: noDisplay, noCatalog
-source-git-commit: de2fa2e4c29ce6db31233ddb1abc66a48d2397a6
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 3%
@@ -36,11 +36,11 @@ ht-degree: 3%
 
 ## 빌드할 내용 {#what-you-will-build}
 
-이 장에서는 두 Adobe XD 파일이 검사되며, 하나는에 사용됩니다 [표준 사이트 템플릿](https://github.com/adobe/aem-site-template-standard) 및 를 사용할 수 있습니다. The
+이 장에서는 두 Adobe XD 파일이 검사되며, 하나는에 사용됩니다 [표준 사이트 템플릿](https://github.com/adobe/aem-site-template-standard) 및 를 사용할 수 있습니다. 다음
 
 ## 표준 사이트 템플릿 UI 키트 {#standard-site-template-uikit}
 
->[!VIDEO](https://video.tv.adobe.com/v/338680/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/338680?quality=12&learn=on)
 
 높은 수준 단계:
 
@@ -50,7 +50,7 @@ ht-degree: 3%
 
 ## WKND UI 키트 {#wknd-ui-kit}
 
->[!VIDEO](https://video.tv.adobe.com/v/30214/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/30214?quality=12&learn=on)
 
 높은 수준 단계:
 

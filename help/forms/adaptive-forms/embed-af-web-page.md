@@ -10,7 +10,7 @@ level: Beginner
 kt: 8390
 exl-id: 068e38df-9c71-4f55-b6d6-e1486c29d0a9
 last-substantial-update: 2020-06-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '146'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 다음 비디오에서는 웹 페이지에 적응형 또는 HTML5 양식을 포함하는 데 필요한 단계에 대해 설명합니다.
 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-manager-64/forms/adaptive-forms-basic-authoring/embed-adaptive-form-external-web-page.html?lang=en) 를 참조하십시오.
->[!VIDEO](https://video.tv.adobe.com/v/335893?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/335893?quality=12&learn=on)
 
 비디오에 사용된 샘플 파일을 다운로드할 수 있습니다 [여기에서](assets/embedding-af-web-page.zip)
 

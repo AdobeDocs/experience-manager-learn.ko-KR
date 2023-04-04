@@ -4,10 +4,10 @@ description: Adobe Experience Manager(AEM) as a Cloud Service 자습서 모음�
 sub-product: Experience Manager as a Cloud Service
 kt: 3289
 exl-id: 650ba2d9-6083-4772-84c5-1cdb97b5f0e9
-source-git-commit: 757749305a017d682322b2c2e024c2fbb3604fc2
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '267'
-ht-degree: 12%
+ht-degree: 11%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 12%
 
 Adobe Experience Manager(AEM)는 이제 클라우드 서비스로 제공됩니다. AEM as a Cloud Service에서는 모든 사용 사례 및 기능을 유지 및 확장하면서 과거의 투자 및 혁신을 바탕으로 구축된 차세대 Experience Manager 제품군을 도입합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/31085/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/31085?quality=12&learn=on)
 
 <div id="whats-new-section">
 
@@ -25,7 +25,7 @@ Adobe Experience Manager(AEM)는 이제 클라우드 서비스로 제공됩니�
 
    *HTTP를 통해 AEM as a Cloud Service과 상호 작용하는 토큰 기반 인증을 사용하는 방법을 알아봅니다*
 
-* **[헤드리스 GraphQL(자습서)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)**
+* **[헤드리스 GraphQL(튜토리얼)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)**
 
    *AEM GraphQL API를 사용하여 외부 애플리케이션에서 경험을 제공하는 방법을 알아봅니다.*
 

@@ -1,10 +1,10 @@
 ---
 title: 인쇄 채널 문서에 텍스트 및 이미지 컨텐츠 추가
-seo-title: 인쇄 채널 문서에 텍스트 및 이미지 컨텐츠 추가
-description: '첫 번째 대화형 통신 문서를 만들기 위한 여러 단계 자습서의 7부분입니다. 이 부분에서는 레이아웃(xdp)에 정의된 대상 영역에 이미지와 텍스트 컨텐츠를 추가합니다. '
-seo-description: '첫 번째 대화형 통신 문서를 만들기 위한 여러 단계 자습서의 7부분입니다. 이 부분에서는 레이아웃(xdp)에 정의된 대상 영역에 이미지와 텍스트 컨텐츠를 추가합니다. '
+seo-title: Adding text and image content to print channel document
+description: 첫 번째 대화형 통신 문서를 만들기 위한 여러 단계 자습서의 7부분입니다. 이 부분에서는 레이아웃(xdp)에 정의된 대상 영역에 이미지와 텍스트 컨텐츠를 추가합니다.
+seo-description: This is part 7 of a multi-step tutorial for creating your first interactive communications document. In this part, we will add images and text content to the target areas defined in the layout(xdp).
 uuid: f20d6974-6faf-4b90-a7ff-8aa8a620fcaa
-feature: 대화형 통신
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: tutorial
@@ -13,16 +13,16 @@ version: 6.4,6.5
 discoiquuid: a79bf219-2423-4819-89fc-dcfe976e08b7
 kt: 5992
 thumbnail: 22379.jpg
-topic: 개발
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 49080c16-617f-4840-8bb4-7b080fa291c4
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 1%
+source-wordcount: '154'
+ht-degree: 0%
 
 ---
-
 
 # 인쇄 채널 문서에 텍스트 및 이미지 컨텐츠 추가
 
@@ -36,5 +36,4 @@ ht-degree: 1%
 
 비디오에서는 인쇄 채널 문서의 적절한 대상 영역에 컨텐츠를 추가하는 단계를 안내합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/22379t2/?quality=9&learn=on)
-
+>[!VIDEO](https://video.tv.adobe.com/v/22379?quality=12&learn=on)

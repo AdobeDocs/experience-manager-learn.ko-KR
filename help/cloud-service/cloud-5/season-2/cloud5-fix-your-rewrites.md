@@ -7,10 +7,11 @@ level: Intermediate
 thumbnail: 343600.jpeg
 hidefromtoc: true
 recommendations: noDisplay, noCatalog
-source-git-commit: 87d19ba3388b4a2ac3db1d2cf3838ed12dbbd2bc
+exl-id: 38580af1-e5ad-431a-b41d-634fb136ce64
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '67'
+ht-degree: 10%
 
 ---
 
@@ -18,7 +19,7 @@ ht-degree: 0%
 
 시리즈 2부에서는 AEM as a Cloud Service에서 재작성 개발 및 최적화를 가속화하는 몇 가지 사항을 살펴봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/343600)
+>[!VIDEO](https://video.tv.adobe.com/v/343600?quality=12&learn=on)
 
 ## 이 비디오에서 다루는 컨텐츠
 

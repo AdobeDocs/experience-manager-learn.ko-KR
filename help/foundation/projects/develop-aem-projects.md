@@ -11,7 +11,7 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 9bfe3142-bfc1-4886-85ea-d1c6de903484
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '4571'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 에서 개발하는 방법을 보여주는 개발 자습서입니다 [!DNL AEM Projects].  이 자습서에서는 컨텐츠 작성 워크플로우 및 작업을 관리하기 위해 AEM 내에서 새 프로젝트를 만드는 데 사용할 수 있는 사용자 지정 프로젝트 템플릿을 만듭니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/16904/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/16904?quality=12&learn=on)
 
 *이 비디오에서는 아래 자습서에서 만든 완료된 워크플로우에 대한 간단한 데모를 제공합니다.*
 

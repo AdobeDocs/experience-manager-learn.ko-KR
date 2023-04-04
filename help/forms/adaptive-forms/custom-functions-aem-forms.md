@@ -9,7 +9,7 @@ level: Beginner
 kt: 9685
 exl-id: 07fed661-0995-41ab-90c4-abde35a14a4c
 last-substantial-update: 2021-06-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 0%
@@ -91,4 +91,4 @@ functions.js
 ## 사용자 지정 함수 사용
 
 다음 비디오에서는 적응형 양식의 규칙 편집기에서 사용자 지정 함수를 사용하는 것과 관련된 단계를 안내합니다
->[!VIDEO](https://video.tv.adobe.com/v/340305?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/340305?quality=12&learn=on)

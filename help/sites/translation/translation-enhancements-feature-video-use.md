@@ -7,7 +7,7 @@ feature: Multi Site Manager, Language Copy
 role: User
 level: Beginner
 exl-id: 21633308-ffe4-4023-affe-59269504da69
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 5%
@@ -20,7 +20,7 @@ AEM의 강력한 번역 프레임워크를 사용하면 지원되는 번역 공�
 
 ## AEM 6.5의 번역 개선 사항
 
->[!VIDEO](https://video.tv.adobe.com/v/27405?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27405?quality=12&learn=on)
 
 AEM 6.5 번역 개선 사항은 다음과 같습니다.
 
@@ -34,7 +34,7 @@ AEM 6.5 번역 개선 사항은 다음과 같습니다.
 
 ## AEM 6.4의 번역 개선 사항
 
->[!VIDEO](https://video.tv.adobe.com/v/21309?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/21309?quality=12&learn=on)
 
 작성자는 이제 Sites 관리자나 프로젝트 관리자로부터 직접 다국어 번역 프로젝트를 빠르고 쉽게 만들 수 있고, 론치를 자동으로 홍보할 수 있도록 이러한 프로젝트를 설정하고, 자동화를 위한 일정을 설정할 수 있습니다.
 

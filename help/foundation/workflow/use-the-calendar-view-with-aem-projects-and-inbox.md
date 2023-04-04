@@ -1,7 +1,7 @@
 ---
 title: AEM 프로젝트 및 받은 편지함에서 달력 보기 사용
 seo-title: Use Calendar View with AEM Projects and Inbox
-description: 'AEM 달력 보기는 보다 쉬운 프로젝트 관리 및 예약을 위해 달력 보기에서 프로젝트 및 작업을 추적합니다. 달력 보기를 사용하면 사용자는 현재 진행 중인 프로젝트 및 작업에 대한 전체 가시성을 가질 수 있으며, 계획, 곧 및 기한 초과 작업을 수행할 수 있습니다. '
+description: AEM 달력 보기는 보다 쉬운 프로젝트 관리 및 예약을 위해 달력 보기에서 프로젝트 및 작업을 추적합니다. 달력 보기를 사용하면 사용자는 현재 진행 중인 프로젝트 및 작업에 대한 전체 가시성을 가질 수 있으며, 계획, 곧 및 기한 초과 작업을 수행할 수 있습니다.
 seo-description: AEM's Calendar View tracks projects and tasks in a calendar view for easier project management and scheduling. With Calendar view, user would have an overall visibility over projects and tasks that are currently in progress, planned, due soon and past due.
 version: 6.4, 6.5
 feature: Workflow, Projects
@@ -14,7 +14,7 @@ discoiquuid: 5ad21858-a4a2-486c-98dc-4f5ba46a3bc1
 topic: Collaboration
 role: User
 level: Beginner
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '185'
 ht-degree: 0%
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 AEM 달력 보기는 보다 쉬운 프로젝트 관리 및 예약을 위해 달력 보기에서 프로젝트 및 작업을 추적합니다. 달력 보기를 사용하면 사용자는 현재 진행 중인 프로젝트 및 작업에 대한 전체 가시성을 가질 수 있으며, 계획, 곧 및 기한 초과 작업을 수행할 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/16804/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/16804?quality=12&learn=on)
 
 달력 보기는 다음 기능을 사용하여 프로젝트와 작업을 더 잘 관리하는 데 도움이 됩니다.
 

@@ -14,7 +14,7 @@ index: y
 internal: n
 snippet: y
 last-substantial-update: 2020-10-20T00:00:00Z
-source-git-commit: 9229a92a0d33c49526d10362ac4a5f14823294ed
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '80'
 ht-degree: 0%
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 AEM Forms에서 Acrobat Sign 사용
 
->[!VIDEO](https://video.tv.adobe.com/v/18696?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/18696?quality=12&learn=on)
 
 *이 비디오에서는 Acrobat Sign 클라우드 서비스를 설정하고 AEM 적응형 양식에 여러 서명 필드를 추가하는 프로세스를 안내합니다.*
 

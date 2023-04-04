@@ -1,6 +1,6 @@
 ---
 title: asset compute 확장성을 위한 App Builder 설정
-description: asset compute 프로젝트는 특별히 정의된 App Builder 프로젝트로서, 설정 및 배포하려면 Adobe 개발자 콘솔에서 App Builder에 액세스해야 합니다.
+description: asset compute 프로젝트는 특별히 정의된 App Builder 프로젝트로서, 설정 및 배포하려면 Adobe Developer 콘솔에서 App Builder에 액세스해야 합니다.
 feature: Asset Compute Microservices
 topics: renditions, development
 version: Cloud Service
@@ -13,7 +13,7 @@ topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 2b1d8786-592e-41f2-80cc-bc0b1c7e1b49
-source-git-commit: eb6a7ef343a43000855f8d5cc69bde0fae81d3e6
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '539'
 ht-degree: 0%
@@ -22,15 +22,15 @@ ht-degree: 0%
 
 # 앱 빌더 설정
 
-asset compute 프로젝트는 특별히 정의된 App Builder 프로젝트로서, 설정 및 배포하려면 Adobe 개발자 콘솔에서 App Builder에 액세스해야 합니다.
+asset compute 프로젝트는 특별히 정의된 App Builder 프로젝트로서, 설정 및 배포하려면 Adobe Developer 콘솔에서 App Builder에 액세스해야 합니다.
 
-## Adobe 개발자 콘솔에서 App Builder 만들기 및 설정{#set-up}
+## Adobe Developer 콘솔에서 App Builder 만들기 및 설정{#set-up}
 
->[!VIDEO](https://video.tv.adobe.com/v/40183/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/40183?quality=12&learn=on)
 
 _앱 빌더 설정 클릭스루(오디오 없음)_
 
-1. 에 로그인합니다. [Adobe 개발자 콘솔](https://console.adobe.io) 프로비저닝된 사용자와 연결된 Adobe ID 사용 [계정 및 서비스](./accounts-and-services.md). 자신이 __시스템 관리자__ 또는 __개발자 역할__ 를 입력합니다.
+1. 에 로그인합니다. [Adobe Developer 콘솔](https://console.adobe.io) 프로비저닝된 사용자와 연결된 Adobe ID 사용 [계정 및 서비스](./accounts-and-services.md). 자신이 __시스템 관리자__ 또는 __개발자 역할__ 를 입력합니다.
 1. 탭하여 App Builder 프로젝트 만들기 __새 프로젝트 만들기 > 템플릿에서 프로젝트 > 앱 빌더__
 
    _다음 중 한 경우__&#x200B;새 프로젝트 만들기&#x200B;__버튼 또는__ App Builder __유형을 사용할 수 없습니다. 이는 Adobe 조직이 [App Builder로 프로비저닝됨](#request-adobe-project-app-builder)._
@@ -63,7 +63,7 @@ _앱 빌더 설정 클릭스루(오디오 없음)_
 
 이 Adobe I/O 프로젝트의 자격 증명은 로컬 [asset compute 개발 도구](../develop/development-tool.md) Adobe I/O Runtime과 상호 작용하려면 및 을 Asset compute 프로젝트에 통합해야 합니다. 서비스 계정(JWT) 자격 증명에 대해 숙지하십시오.
 
-![Adobe 개발자 서비스 계정 자격 증명](./assets/app-builder/service-account.png)
+![Adobe Developer 서비스 계정 자격 증명](./assets/app-builder/service-account.png)
 
 1. Adobe I/O 프로젝트 앱 빌더 프로젝트에서 다음을 확인합니다. `Development` 작업 영역이 선택되어 있습니다.
 1. 탭 __서비스 계정(JWT)__ 아래에 __자격 증명__

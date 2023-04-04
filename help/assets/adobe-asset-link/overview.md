@@ -7,7 +7,7 @@ topic: Content Management
 role: User
 level: Beginner
 thumbnail: 28988.jpg
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '990'
 ht-degree: 1%
@@ -50,7 +50,7 @@ Adobe Creative Cloud for enterprise에 대한 AEM Asset Link 확장 기능은 Cr
 
 Adobe 자산 링크는 Adobe 자산 링크와 AEM 간에 InDesign 직접 연결 지원을 제공합니다. InDesign 직접 연결 지원을 통해 다음을 배치할 수 있습니다(__연결 배치__ 또는 __복사 배치__)하거나 Adobe Asset Link 패널을 통해 디지털 자산을 AEM의 InDesign으로 드래그하여 놓습니다. 또한 에서는 *배치만+(FPO) 변환을 소개합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/28988/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28988?quality=12&learn=on)
 
 >[!NOTE]
 >

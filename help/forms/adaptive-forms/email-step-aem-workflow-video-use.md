@@ -8,7 +8,7 @@ role: Developer
 level: Beginner
 exl-id: 21e58bbc-c1d6-4d41-a4d4-f522a3a5d4a7
 last-substantial-update: 2020-06-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 전자 메일 보내기 단계는 AEM Forms 6.4에 도입되었습니다. 이 단계를 사용하여 첨부 파일이 있거나 없는 전자 메일을 보낼 수 있는 비즈니스 프로세스 또는 워크플로우를 빌드할 수 있습니다. 다음 비디오에서는 이메일 전송 구성 요소를 구성하는 단계를 안내합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/21499/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/21499?quality=12&learn=on)
 
 이 문서의 일부로, 다음 사용 사례를 안내할 것입니다.
 

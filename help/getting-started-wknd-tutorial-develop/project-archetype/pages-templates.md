@@ -10,7 +10,7 @@ kt: 4082
 thumbnail: 30214.jpg
 exl-id: e9d06dc2-ac3b-48c5-ae00-fdaf5bb45b54
 recommendations: noDisplay, noCatalog
-source-git-commit: 68a7f263284fdf9cfcf82572b8e1e1c0c01e4b55
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '3040'
 ht-degree: 1%
@@ -72,7 +72,7 @@ ht-degree: 1%
 
 일반적으로, 새 웹 사이트를 계획하는 것은 모집단 및 정적 디자인부터 시작됩니다. [Adobe XD](https://helpx.adobe.com/support/xd.html) 사용자 경험을 구축하는 디자인 도구입니다. 다음으로 문서 페이지 템플릿의 구조를 계획하는 데 도움이 되도록 UI 키트 및 샘플을 살펴보겠습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/30214/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/30214?quality=12&learn=on)
 
 **다운로드 [WKND 문서 디자인 파일](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-0.0.2/AEM_UI-kit-WKND-article-design.xd)**.
 
@@ -92,7 +92,7 @@ ht-degree: 1%
 
 다음으로, 모집단 구조와 일치하는 템플릿을 AEM에서 생성합니다. 이 이벤트는 AEM의 로컬 인스턴스에서 발생합니다. 아래 비디오에서 절차를 따르십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/330991/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330991?quality=12&learn=on)
 
 위의 비디오에 대한 높은 수준의 단계:
 
@@ -160,7 +160,7 @@ ht-degree: 1%
 
 AEM 프로젝트 원형 이 머리글 및 바닥글을 생성했습니다. 그런 다음 경험 조각을 업데이트하여 비웃는 내용과 일치시킵니다. 아래 비디오에서 절차를 따르십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/330992/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330992?quality=12&learn=on)
 
 위의 비디오에 대한 높은 수준의 단계:
 
@@ -206,7 +206,7 @@ AEM 프로젝트 원형 이 머리글 및 바닥글을 생성했습니다. 그�
 
 그런 다음 문서 페이지 템플릿을 사용하여 페이지를 만듭니다. 사이트의 컨텐츠를 작성하여 사이트 모집단 과 일치시킵니다. 아래 비디오에서 절차를 따르십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/330993/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330993?quality=12&learn=on)
 
 위의 비디오에 대한 높은 수준의 단계:
 

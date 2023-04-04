@@ -5,18 +5,18 @@ type: Troubleshooting
 role: Developer
 level: Intermediate
 version: 6.5
-topic: 개발
+topic: Development
 index: y
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 1f539f1c-b3be-4e21-b0fe-6f523a453c5f
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '49'
-ht-degree: 2%
+source-wordcount: '48'
+ht-degree: 0%
 
 ---
-
 
 # 명령줄에서 프로세스 제거 도구를 실행하는 방법
 
 *이 비디오에서는 명령줄에서 프로세스 제거 도구를 실행하는 단계를 안내합니다.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335508?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/335508?quality=12&learn=on)

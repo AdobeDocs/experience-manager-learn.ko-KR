@@ -10,7 +10,7 @@ thumbnail: 340333.jpeg
 hidefromtoc: false
 last-substantial-update: 2022-09-02T00:00:00Z
 exl-id: 520a75cd-757a-4ae9-acf6-3c1f5e1f3747
-source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '109'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Workfront 데이터를 통해 자산에서 AEM 태그를 사용하도록 유도하고, 프로젝트 연결 폴더를 설정 및 사용하고, Workfront 데이터를 AEM 자산 폴더 메타데이터 스키마로 설정하는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/340333/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/340333?quality=12&learn=on)
 
 _3부 [Workfront for Experience Manager enhanced connector의 4가지 전문가 시리즈](./overview.md)_
 

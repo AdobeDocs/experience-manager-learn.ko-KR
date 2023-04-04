@@ -1,6 +1,6 @@
 ---
 title: AEM as a Cloud Service 개발을 위한 개발 도구 설정
-description: 로컬에서 AEM에 대해 개발하는 데 필요한 모든 베이스라인 도구를 사용하여 로컬 개발 컴퓨터를 설정합니다.
+description: 로컬에서 AEM에 대해 개발하는 데 필요한 모든 기준 툴을 사용하여 로컬 개발 시스템을 설정합니다.
 feature: Developer Tools
 version: Cloud Service
 kt: 4267
@@ -10,7 +10,7 @@ role: Developer
 level: Beginner
 last-substantial-update: 2022-09-03T00:00:00Z
 exl-id: 6fb3199a-02c9-48bc-a6fa-1f767cfd2f2a
-source-git-commit: e82c30e7f1a1fe04fd43ee639d74788f9bf100f6
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1502'
 ht-degree: 7%
@@ -175,7 +175,7 @@ AEM 개발은 주로 Java 및 프런트 엔드(JavaScript, CSS 등) 개발 및 X
 
 __[IntelliJ IDEA](https://www.jetbrains.com/idea/)__ 는 Java 개발을 위한 강력한 IDE입니다. IntelliJ IDEA는 무료 커뮤니티 에디션과 상업용(유료) Ultimate 버전 두 가지 버전으로 제공됩니다. 무료 커뮤니티 버전은 AEM 개발에 충분하지만 Ultimate에서는 사용할 수 있습니다 [기능 집합을 확장합니다.](https://www.jetbrains.com/idea/download).
 
->[!VIDEO](https://video.tv.adobe.com/v/26089/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26089?quality=12&learn=on)
 
 + [IntelliJ IDEA 다운로드](https://www.jetbrains.com/idea/download)
 + [Repo Tool 다운로드](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#installation)

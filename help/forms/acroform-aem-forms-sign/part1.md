@@ -8,7 +8,7 @@ audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4
-source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Acrobat은 Acrobat을 사용하여 만든 양식입니다. Acrobat을 사용하�
 * pdf를 저장합니다. 파일 이름에 공백이 없는지 확인하십시오.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/22575?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/22575?quality=12&learn=on)
 
 >[!NOTE]
 >

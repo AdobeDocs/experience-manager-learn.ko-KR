@@ -8,7 +8,7 @@ role: User
 level: Beginner
 exl-id: 86ef4a13-5540-40c6-8d91-2e8b64341f5b
 last-substantial-update: 2019-06-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '68'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 적응형 양식 규칙 편집기를 AEM의 특정 그룹으로 제한
 
->[!VIDEO](https://video.tv.adobe.com/v/19470?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/19470?quality=12&learn=on)
 
 *이 비디오에서는 적응형 양식 규칙 편집기를 AEM의 특정 그룹으로 제한하는 프로세스를 안내합니다.*
 

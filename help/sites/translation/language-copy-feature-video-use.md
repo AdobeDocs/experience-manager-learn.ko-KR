@@ -11,7 +11,7 @@ topic: Localization
 role: User
 level: Beginner
 exl-id: 49613808-6369-4e43-bc26-fd3041265339
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 5%
@@ -22,7 +22,7 @@ ht-degree: 5%
 
 AEM 6.3 언어 사본 만들기 마법사 사이트 번역 기능을 통해 사용자는 루트 페이지를 만들지 않고도 마스터 언어로 언어 사본을 만들 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/17116/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/17116?quality=12&learn=on)
 
 ## 추가 리소스 {#additional-resources}
 

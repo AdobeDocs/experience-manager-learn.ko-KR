@@ -10,7 +10,7 @@ topic: Integrations
 thumbnail: 331891.jpg
 kt: 8474
 exl-id: 1761736c-5e36-4f30-aa42-9caa49d589f9
-source-git-commit: cea9a9dc003b76369db1b7fedb9549062885258d
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '42'
 ht-degree: 2%
@@ -21,4 +21,4 @@ ht-degree: 2%
 
 AEM Forms as a Cloud Service 제출 데이터를 Azure 저장 공간 계정에 저장하는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/336028/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/336028?quality=12&learn=on)

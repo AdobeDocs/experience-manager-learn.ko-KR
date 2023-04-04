@@ -12,7 +12,7 @@ topic: Development
 role: Developer
 level: Beginner, Intermediate
 exl-id: 0929bc1a-376c-4e16-a540-a276fd5af164
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '393'
 ht-degree: 0%
@@ -27,7 +27,7 @@ AEM에서는 많은 OSGi 콘솔을 제공하며, 각 콘솔은 AEM의 다른 측
 
 ## 번들
 
->[!VIDEO](https://video.tv.adobe.com/v/34335/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34335?quality=12&learn=on)
 
 번들 콘솔은 OSGi 번들 및 해당 세부 정보가 시작 및 중지할 수 있는 임시 기능과 함께 AEM에 배포되는 OSGi 번들 카탈로그입니다.
 
@@ -44,7 +44,7 @@ AEM에서는 많은 OSGi 콘솔을 제공하며, 각 콘솔은 AEM의 다른 측
 
 ## 구성 요소
 
->[!VIDEO](https://video.tv.adobe.com/v/34336/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34336?quality=12&learn=on)
 
 구성 요소 콘솔은 AEM에 배포된 모든 OSGi 구성 요소의 카탈로그이며, 정의된 OSGi 구성 요소 수명 주기에서 구성 요소가 참조할 수 있는 OSGi 서비스에 대한 모든 정보를 제공합니다
 
@@ -63,7 +63,7 @@ AEM에서는 많은 OSGi 콘솔을 제공하며, 각 콘솔은 AEM의 다른 측
 
 ## Sling 모델
 
->[!VIDEO](https://video.tv.adobe.com/v/34337/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34337?quality=12&learn=on)
 
 Sling 모델 콘솔은 다음 위치에 있습니다.
 

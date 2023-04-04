@@ -7,10 +7,11 @@ level: Intermediate
 thumbnail: 343475.jpeg
 hidefromtoc: true
 recommendations: noDisplay, noCatalog
-source-git-commit: 87d19ba3388b4a2ac3db1d2cf3838ed12dbbd2bc
+exl-id: 591ed430-80b3-49fa-b52f-0d07a2e5ac0e
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '70'
+ht-degree: 11%
 
 ---
 
@@ -18,7 +19,7 @@ ht-degree: 0%
 
 두 부분으로 된 시즌 2 시리즈에서는 AEM as a Cloud Service에서 캐싱 속도를 높일 수 있는 몇 가지 사항을 살펴봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/343475)
+>[!VIDEO](https://video.tv.adobe.com/v/343475?quality=12&learn=on)
 
 ## 이 비디오에서 다루는 컨텐츠
 

@@ -12,7 +12,7 @@ level: Beginner
 exl-id: 58851624-71c9-4745-aaaf-305acf6ccb14
 last-substantial-update: 2022-07-20T00:00:00Z
 thumbnail: aem-local-dev-env.jpg
-source-git-commit: 2b188cbe0ba968b553a20629b89edf5ed377f300
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '2603'
 ht-degree: 1%
@@ -162,7 +162,7 @@ IDE를 사용하는 경우 반드시 확인하십시오 `classic` maven 프로�
 1. 를 다운로드하여 설치합니다. [!DNL IntelliJ IDEA]: [https://www.jetbrains.com/idea/download](https://www.jetbrains.com/idea/download)
 1. 설치 [!DNL Repo] (명령줄 도구): [https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#installation)
 
->[!VIDEO](https://video.tv.adobe.com/v/26089/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26089?quality=12&learn=on)
 
 * 00:00 - Maven 프로젝트 가져오기
 * 05:47 - Maven을 사용하여 소스 코드 빌드 및 배포
@@ -250,7 +250,7 @@ public class MyClass {
 
 사용할 수 있는 유용한 도구는 [!UICONTROL 종속성 파인더]: [http://localhost:4502/system/console/depfinder](http://localhost:4502/system/console/depfinder). Java™ 패키지 이름을 추가하여 AEM 인스턴스에서 사용할 수 있는 버전을 검사합니다.
 
-![코어 구성 요소](assets/set-up-a-local-aem-development-environment/core-components.png)
+![핵심 구성 요소](assets/set-up-a-local-aem-development-environment/core-components.png)
 
 위의 예를 계속 선택하면 AEM 인스턴스에 설치된 버전이 **12.2** vs **12.6** 그 다발이 기대되어있는 것. 여기서 뒤로 이동하여 [!DNL Maven] AEM에 대한 종속성이 일치함 [!DNL Maven] AEM 프로젝트에 대한 종속성. 에서 위의 예에서 [!DNL Core Components] **v2.2.0** 가 AEM 인스턴스에 설치되어 있지만 코드 번들은 **v2.2.2**&#x200B;따라서 종속성 문제의 원인이 됩니다.
 

@@ -7,7 +7,7 @@ role: Developer
 level: Intermediate
 last-substantial-update: 2022-06-22T00:00:00Z
 exl-id: b7d0b6b1-145a-4987-a9dc-7263efa4d9fb
-source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '112'
 ht-degree: 1%
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 Asset Share Commons에서 이러한 내용을 간략하게 소개합니다. 이 비디오는 사용자 지정 색상 구성표를 사용하여 새 테마를 만드는 과정을 거칩니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/20572/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/20572?quality=12&learn=on)
 
 이 비디오에서는 Asset Share Commons Dark 테마를 기반으로 새 테마가 만들어집니다. 색상 구성표는 사용자 지정 로고와 일치하여 사이트에 일관된 모양과 느낌을 줍니다.
 

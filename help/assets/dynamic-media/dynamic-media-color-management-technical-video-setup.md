@@ -7,7 +7,7 @@ topic: Content Management
 role: Developer
 level: Intermediate
 exl-id: a733532b-db64-43f6-bc43-f7d422d5071a
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 17%
@@ -18,7 +18,7 @@ ht-degree: 17%
 
 이 비디오에서는 Dynamic Media 색상 관리를 살펴보고 AEM Assets용 의 색상 수정 미리 보기 기능을 제공하는 데 사용할 수 있는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/16792/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/16792?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -103,7 +103,7 @@ ht-degree: 17%
 | JapanColorUncoated | CMYK | 일본 컬러 2001 미코팅 |
 | JapanColorWebCoated | CMYK | 일본 컬러 2003 웹 코팅 |
 | JapanWebCoated | CMYK | 일본 웹 코팅(광고) |
-| NewslettrintSNAP2007 | CMYK | 미국 신문(SNAP 2007) |
+| NewsprintSNAP2007 | CMYK | 미국 신문(SNAP 2007) |
 | NTSC | RGB | NTSC (1953) |
 | PAL | RGB | PAL/SECAM |
 | ProPhoto | RGB | ProPhoto RGB |

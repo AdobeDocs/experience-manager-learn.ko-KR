@@ -2,16 +2,16 @@
 title: AEM Workflow[Part5]의 변수
 description: AEM 워크플로우에서 XML, JSON, ArrayList, Document 유형의 변수 사용
 version: 6.5
-topic: 개발
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: ecd43765-455c-4f8b-acf2-6ea34495c311
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '92'
-ht-degree: 1%
+source-wordcount: '91'
+ht-degree: 0%
 
 ---
-
 
 # AEM Workflow의 규칙 편집기
 
@@ -19,4 +19,4 @@ ht-degree: 1%
 
 다음 비디오에서는 규칙 편집기를 사용하여 AEM 워크플로우에서 조건부 처리를 수행하는 기능을 보여줍니다
 
->[!VIDEO](https://video.tv.adobe.com/v/26362/quality=9)
+>[!VIDEO](https://video.tv.adobe.com/v/26362?quality=12&learn=on)

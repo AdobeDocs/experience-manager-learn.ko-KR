@@ -11,7 +11,7 @@ topic: Development
 role: User
 level: Intermediate
 exl-id: 37dc26aa-0773-4749-8c8b-4544bd4d5e5f
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 1%
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 구성 요소 아이콘을 사용하면 작성자가 아이콘이나 의미 있는 약자로 구성 요소를 빠르게 식별할 수 있습니다. 이제 작성자가 웹 경험을 보다 빠르게 작성하는 데 필요한 구성 요소를 찾을 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/16778/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/16778?quality=12&learn=on)
 
 이제 구성 요소 브라우저가 일관된 회색 테마에 표시되어 다음을 표시합니다.
 

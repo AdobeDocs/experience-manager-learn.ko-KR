@@ -12,7 +12,7 @@ topic: Architecture
 role: Architect, Developer, Admin
 level: Beginner
 exl-id: 82a9d00f-abe6-4600-92b1-41b5f0b5e352
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '108'
 ht-degree: 0%
@@ -25,4 +25,4 @@ Cloud Manager는 프로그램의 활동에 대한 통합 보기를 제공하여 
 
 Cloud Manager는 또한 [Adobe Experience Cloud 알림](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/notifications.html), 관심 있는 이벤트 및 작업에 대한 포괄적인 보기를 제공합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/26319/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26319?quality=12&learn=on)

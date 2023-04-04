@@ -13,7 +13,7 @@ index: y
 recommendations: disable
 thumbnail: 53409343.jpg
 last-substantial-update: 2022-09-23T00:00:00Z
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 3%
@@ -39,7 +39,7 @@ ht-degree: 3%
 
 ## 프런트엔드 파이프라인에 대한 개요, 이점 및 고려 사항
 
->[!VIDEO](https://video.tv.adobe.com/v/3409343/)
+>[!VIDEO](https://video.tv.adobe.com/v/3409343?quality=12&learn=on)
 
 
 >[!NOTE]

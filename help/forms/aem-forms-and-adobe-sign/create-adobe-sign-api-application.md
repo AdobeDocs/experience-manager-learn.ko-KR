@@ -8,7 +8,7 @@ topic: Development
 role: Admin
 level: Beginner
 exl-id: 0fea826c-b481-4c8f-872f-e429430ed3a6
-source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '82'
 ht-degree: 0%
@@ -21,4 +21,4 @@ Acrobat Sign 플랫폼과 통합하려면 Acrobat Sign에서 API 애플리케이
 
 다음 비디오에서는 Acrobat Sign API 애플리케이션을 만드는 데 필요한 단계에 대해 설명합니다
 
->[!VIDEO](https://video.tv.adobe.com/v/38178/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38178?quality=12&learn=on)

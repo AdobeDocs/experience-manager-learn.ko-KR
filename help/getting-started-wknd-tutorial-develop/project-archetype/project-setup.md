@@ -12,7 +12,7 @@ kt: 3418
 thumbnail: 30152.jpg
 exl-id: bb0cae58-79bd-427f-9116-d46afabdca59
 recommendations: noDisplay, noCatalog
-source-git-commit: 68a7f263284fdf9cfcf82572b8e1e1c0c01e4b55
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1821'
 ht-degree: 4%
@@ -35,7 +35,7 @@ ht-degree: 4%
 
 ## 빌드할 내용 {#what-build}
 
->[!VIDEO](https://video.tv.adobe.com/v/30152/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/30152?quality=12&learn=on)
 
 이 장에서는 [AEM 프로젝트 원형](https://github.com/adobe/aem-project-archetype). AEM 프로젝트에는 Sites 구현에 사용되는 전체 코드, 콘텐츠 및 구성이 포함되어 있습니다. 이 장에서 생성된 프로젝트는 WKND Site의 구현 기반 역할을 하며, 향후 장에 구축됩니다.
 

@@ -10,7 +10,7 @@ kt: 648
 thumbnail: 22140.jpg
 last-substantial-update: 2022-06-05T00:00:00Z
 exl-id: 8ac84d4e-59c1-4dde-a06e-a94458664ba7
-source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '43'
 ht-degree: 0%
@@ -21,4 +21,4 @@ ht-degree: 0%
 
 AEM Assets은 직관적인 사용자 환경을 통해 대용량 저장소에 사용할 수 있도록 확장되는 엔터프라이즈 수준 보고 프레임워크를 제공합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/22140/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/22140?quality=12&learn=on)

@@ -12,7 +12,7 @@ topic: Architecture
 role: Architect, Developer
 level: Beginner
 exl-id: 92afc9c4-3d58-4787-86f6-46495d89c4d4
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '41'
 ht-degree: 4%
@@ -21,6 +21,6 @@ ht-degree: 4%
 
 # [!DNL Sling] 소개 {#introduction-sling}
 
-Adobe Experience Manager의 기본 기술 스택에 포함된 오픈 소스 [!DNL RESTful] 웹 프레임워크인 [!DNL Sling]을 소개합니다.
+소개 [!DNL Sling], 오픈 소스 [!DNL RESTful] Adobe Experience Manager의 기본 기술 스택에 포함된 웹 프레임워크입니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/32032/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32032?quality=12&learn=on)

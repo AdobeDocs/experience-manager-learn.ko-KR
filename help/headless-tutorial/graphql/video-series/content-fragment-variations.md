@@ -1,5 +1,5 @@
 ---
-title: 컨텐츠 조각 변형
+title: 콘텐츠 조각 변형
 description: 컨텐츠 조각의 변형을 만들고 몇 가지 일반적인 사용 사례를 탐색하는 방법을 알아봅니다.
 version: Cloud Service
 topic: Headless, Content Management
@@ -9,14 +9,14 @@ level: Beginner
 kt: 7874
 thumbnail: 333295.jpg
 exl-id: c7fb28b8-494f-47d6-95b7-01ef444abe99
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '79'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 
-# 컨텐츠 조각 변형
+# 콘텐츠 조각 변형
 
 컨텐츠 조각의 변형을 만들고 몇 가지 일반적인 사용 사례를 탐색하는 방법을 알아봅니다.
 
@@ -26,6 +26,6 @@ ht-degree: 0%
 + 실제 시나리오에서 변형을 사용하는 방법을 알아봅니다
 + 특정 변형을 요청하려면 GraphQL 구문을 검토하십시오
 
->[!VIDEO](https://video.tv.adobe.com/v/333295/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/333295?quality=12&learn=on)
 
-_AEM  [Headless ](./assets/aem-headless-video-series.postman_collection.json) 비디오 시리즈 전체에서 사용되는 Postman Collection을 다운로드합니다._
+_다운로드 [Postman Collection](./assets/aem-headless-video-series.postman_collection.json) AEM Headless 비디오 시리즈 전체에서 사용됩니다._

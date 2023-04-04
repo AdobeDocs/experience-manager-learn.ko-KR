@@ -8,7 +8,8 @@ version: Cloud Service
 feature: Output Service
 topic: Development
 kt: 9673
-source-git-commit: 228da29e7ac0d61359c2b94131495b5b433a09dc
+exl-id: db25e5a2-e1a8-40ad-af97-35604d515450
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 0%
@@ -23,7 +24,7 @@ ht-degree: 0%
 >AEM 사용자가 속하는지 확인하십시오 ```forms-users``` 그룹에 속해 있어야 합니다.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/340241/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/340241?quality=12&learn=on)
 
 ## 배치 구성 만들기
 
@@ -57,4 +58,3 @@ ht-degree: 0%
 ```
 
 HTTP 요청 본문에 빈 JSON 개체를 전달하기만 하면 됩니다
-

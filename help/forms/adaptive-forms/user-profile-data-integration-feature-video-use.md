@@ -8,7 +8,7 @@ role: Developer
 level: Beginner
 exl-id: 4f2b6669-d61e-400d-8657-dddb28ae35f4
 last-substantial-update: 2019-03-20T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 0%
@@ -26,7 +26,7 @@ AEM Forms 데이터 통합을 사용하면 서로 다른 데이터 소스를 구
 1. SOAP 기반 웹 서비스
 1. OData 서비스 이 문서에서는 AEM 사용자 프로필 정보와 적응형 Forms 통합 을 강조 표시합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/17432/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/17432?quality=12&learn=on)
 
 >[!NOTE]
 >

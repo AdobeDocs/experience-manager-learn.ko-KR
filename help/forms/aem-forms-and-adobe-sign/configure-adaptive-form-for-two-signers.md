@@ -8,7 +8,7 @@ topic: Development
 role: Admin
 level: Beginner
 exl-id: 5d450605-31bb-4c2e-a500-e9219f55b7c7
-source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '58'
 ht-degree: 5%
@@ -19,7 +19,7 @@ ht-degree: 5%
 
 이 비디오에서는 서명자 2명을 사용하여 적응형 양식을 구성하는 데 필요한 다양한 단계에 대해 설명합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/39294/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/39294?quality=12&learn=on)
 
 이 비디오와 관련된 자산은 다음 링크에서 다운로드할 수 있습니다
 

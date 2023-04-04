@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: c418e94a-b18e-429a-b41c-2bf32e158598
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## InDesign 템플릿 파일 구성 {#constructing-the-indesign-template-file}
 
->[!VIDEO](https://video.tv.adobe.com/v/19293/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/19293?quality=12&learn=on)
 
 1. 다운로드 및 열기 [**InDesign 파일 템플릿**](assets/asset-templates-tutorial-video--supporting-files.zip)
 2. **태그 패널을 열고,** 태그 이름 지정 규칙을 검토하고 InDesign 파일의 작성 가능한 요소에 이미 태그가 지정되어 있습니다. AEM에서는 태그가 지정된 요소만 편집할 수 있습니다.
@@ -51,7 +51,7 @@ ht-degree: 1%
 
 ## AEM Assets에서 자산 템플릿 만들기 및 작성 {#creating-and-authoring-an-asset-template-in-aem-assets}
 
->[!VIDEO](https://video.tv.adobe.com/v/19294/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/19294?quality=12&learn=on)
 
 1. **InDesign Server 시작** 8080번 항구에 있습니다.
 2. 다음을 확인합니다. **AEM 작성자 인스턴스가 InDesign Server과 상호 작용하도록 구성되었습니다**(또는 그 반대로)

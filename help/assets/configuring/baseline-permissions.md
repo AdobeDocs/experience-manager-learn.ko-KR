@@ -10,7 +10,7 @@ role: User
 level: Beginner
 last-substantial-update: 2021-09-15T00:00:00Z
 exl-id: b2ac2332-4d98-4866-8688-831f0282a736
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '48'
 ht-degree: 0%
@@ -21,4 +21,4 @@ ht-degree: 0%
 
 에 대한 사용자 액세스 관리 [베이스라인 자산 폴더](./baseline-folders.md) 는 거버넌스의 중요한 측면이며 프로세스가 제대로 지원되도록 합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/37696/?quality=12&learn=on&hidetitle=true)
+>[!VIDEO](https://video.tv.adobe.com/v/37696?quality=12&learn=on)

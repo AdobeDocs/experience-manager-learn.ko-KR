@@ -11,7 +11,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: d33c033a-9577-4d4e-99be-f3c7e2a4ce73
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 17%
@@ -38,13 +38,13 @@ AEM 컨텐츠 조각은 연관되지만 디자인이나 레이아웃 정보 없�
 
 ## 콘텐츠 조각 모델 정의 {#defining-content-fragment-models}
 
->[!VIDEO](https://video.tv.adobe.com/v/22452/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/22452?quality=12&learn=on)
 
 컨텐츠 조각의 데이터 스키마인 AEM 컨텐츠 조각 모델은 AEM을 통해 활성화되어야 합니다 [[!UICONTROL 구성 브라우저]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html)- 컨텐츠 조각 모델을 구성 기반으로 정의할 수 있습니다.
 
 ## 콘텐츠 조각 만들기 {#creating-content-fragments}
 
->[!VIDEO](https://video.tv.adobe.com/v/22451/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/22451?quality=12&learn=on)
 
 AEM 구성은 컨텐츠 조각 모델을 컨텐츠 조각으로 만들 수 있도록 AEM Assets 폴더 계층 구조에 적용됩니다. 컨텐츠 조각은 컨텐츠를 요소 컬렉션으로 모델링할 수 있는 풍부한 양식 기반 작성 환경을 지원합니다.
 
@@ -55,7 +55,7 @@ AEM 구성은 컨텐츠 조각 모델을 컨텐츠 조각으로 만들 수 있�
 
 ## 컨텐츠 조각 다운로드 {#downloading-content-fragments}
 
->[!VIDEO](https://video.tv.adobe.com/v/22450/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/22450?quality=12&learn=on)
 
 AEM 컨텐츠 조각은 AEM Author에서 변형, 요소 및 메타데이터를 포함하는 Zip 파일로 다운로드할 수 있습니다.
 
@@ -64,7 +64,7 @@ AEM 컨텐츠 조각은 AEM Author에서 변형, 요소 및 메타데이터를 �
 
 ## 컨텐츠 조각 편집 기능 {#editorial-capabilities}
 
->[!VIDEO](https://video.tv.adobe.com/v/25891/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/25891?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -77,7 +77,7 @@ AEM 컨텐츠 조각은 AEM Author에서 변형, 요소 및 메타데이터를 �
 ## 추가 리소스 {#additional-resources}
 
 * [컨텐츠 조각 제공](content-fragments-delivery-feature-video-use.md)
-* [AEM WCM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [AEM WCM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)
 * [AEM WCM 코어 컨텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
 
 비디오 시리즈에서 최종 상태에 대한 AEM 6.4+ 인스턴스에 아래 패키지를 다운로드하여 설치하려면 다음을 수행하십시오.

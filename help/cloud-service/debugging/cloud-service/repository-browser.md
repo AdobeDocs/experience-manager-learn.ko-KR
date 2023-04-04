@@ -12,19 +12,19 @@ thumbnail: 341464.jpg
 topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 467b0c343a28eb573498a013b5490877e4497fe0
+exl-id: 88af40fc-deff-4b92-84b1-88df2dbdd90b
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 0%
 
 ---
 
-
 # 저장소 브라우저를 사용하여 AEM as a Cloud Service 디버깅
 
 저장소 브라우저는 AEM 기본 데이터 저장소에 대한 가시성을 제공하는 강력한 도구로, AEM as a Cloud Service 환경을 쉽게 디버깅할 수 있습니다. 저장소 브라우저는 프로덕션, 스테이지 및 개발 중인 AEM의 리소스 및 속성과 작성, 게시 및 미리 보기 서비스에 대한 읽기 전용 보기를 지원합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/341464/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/341464?quality=12&learn=on)
 
 리포지토리 브라우저가 __전용__ AEM as a Cloud Service 환경에서 사용 가능(사용) [CRXDE Lite](../aem-sdk-local-quickstart/other-tools.md#crxde-lite) 로컬 AEM SDK를 디버깅하는 방법)입니다.
 
@@ -48,4 +48,3 @@ AEM as a Cloud Service에서 저장소 브라우저에 액세스하려면
 ## 게시 및 미리 보기 액세스
 
 기본적으로 게시 또는 미리 보기에 대한 액세스가 제한되어 저장소 브라우저의 사용 가능한 리소스가 줄어듭니다. [게시(또는 미리 보기)에서 모든 리소스를 보려면 사용자를 게시(또는 미리 보기) 관리자 역할에 추가하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/repository-browser.html#navigate-the-hierarchy)
-

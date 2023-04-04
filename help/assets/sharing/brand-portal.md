@@ -8,7 +8,7 @@ role: User
 level: Beginner
 last-substantial-update: 2022-06-15T00:00:00Z
 exl-id: 42f13a19-52bf-413d-a141-63f1f0910dce
-source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1764'
 ht-degree: 2%
@@ -27,7 +27,7 @@ Brand Portal의 2019년 9월 가장 주목할 만한 것은 컨텐츠 속도를 
 
 Brand Portal의 자산 소싱은 타사 에이전시 및 팀에서 자산을 수집하여 검토 및 사용하기 위해 Experience Manager 작성자에게 다시 원활하게 동기화하는 데 사용됩니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/29365/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29365?quality=12&learn=on)
 
 *자산 소싱을 사용하려면 Experience Manager 작성자 6.5 SP2(6.5.2) 이상이 필요합니다*
 
@@ -35,7 +35,7 @@ Brand Portal의 자산 소싱은 타사 에이전시 및 팀에서 자산을 수
 
 ## Brand Portal 2019년 2월 기능 및 개선 사항{#brand-portal-features-and-enhancements-644}
 
->[!VIDEO](https://video.tv.adobe.com/v/26354/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26354?quality=12&learn=on)
 
 Brand Portal의 2019년 2월 릴리스는 텍스트 검색 개선 사항과 상위 고객 요청에 중점을 둡니다.
 
@@ -116,7 +116,7 @@ Brand Portal URL의 접두사만 사용자 지정할 수 있으며 전체 URL은
 
 ## Brand Portal 2018년 12월 기능 및 개선 사항{#brand-portal-features-and-enhancements-642}
 
->[!VIDEO](https://video.tv.adobe.com/v/23707/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/23707?quality=12&learn=on)
 
 ### 게스트 액세스
 
@@ -163,7 +163,7 @@ Brand Portal에서 Adobe I/O 사용 [https://legacy-oauth.cloud.adobe.io/](https
 
 Brand Portal과 AEM을 정렬하는 데 초점을 맞춘 새로운 기능이 향상되었습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/26354/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26354?quality=12&learn=on)
 
 ### 탐색 개선 사항
 
@@ -203,8 +203,8 @@ Brand Portal과 AEM을 정렬하는 데 초점을 맞춘 새로운 기능이 향
 
 ## 추가 리소스{#additional-resources}
 
-* [Brand Portal의 새로운 기능](https://helpx.adobe.com/experience-manager/brand-portal/using/whats-new.html)
-* [AEM 작성자 복제 에이전트](https://helpx.adobe.com/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html)
+* [Brand Portal의 새로운 기능](https://helpx.adobe.com/kr/experience-manager/brand-portal/using/whats-new.html)
+* [AEM 작성자 복제 에이전트](https://helpx.adobe.com/kr/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html)
 * [가속 다운로드 안내서](https://helpx.adobe.com/experience-manager/brand-portal/using/accelerated-download.html#main-pars_header)
 * [AEM Assets Brand Portal Adobe 문서](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal.html)
 * [AEM Assets Dynamic Media Adobe 문서](https://experienceleague.adobe.com/docs/)

@@ -8,7 +8,7 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 exl-id: 790a33a9-b4f4-4568-8dfe-7e473a5b68b6
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1464'
 ht-degree: 0%
@@ -23,7 +23,7 @@ AEM GraphQL API는 리치 텍스트를 HTML, 일반 텍스트 또는 순수 JSON
 
 ## 여러 줄 편집기
 
->[!VIDEO](https://video.tv.adobe.com/v/342104/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342104?quality=12&learn=on)
 
 컨텐츠 조각 편집기에서 여러 줄 텍스트 필드의 메뉴 막대는 작성자에게 다음과 같은 표준 서식 있는 텍스트 형식 기능을 제공합니다 **굵게**, *기울임체*, 및 밑줄. 전체 화면 모드에서 여러 줄 필드를 열면 [단락 유형, 찾기 및 바꾸기, 맞춤법 검사 등과 같은 추가 서식 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-variations.html).
 
@@ -57,11 +57,11 @@ AEM GraphQL API는 리치 텍스트를 HTML, 일반 텍스트 또는 순수 JSON
 
 을(를) 확인합니다. **번역 가능** 상자를 엽니다. 리치 텍스트 및 일반 텍스트만 현지화할 수 있습니다. 자세한 내용은 [자세한 내용은 현지화된 콘텐츠로 작업](./localized-content.md).
 
-## GraphQL API를 사용한 리치 텍스트 응답
+## GraphQL API의 리치 텍스트 응답
 
 GraphQL 쿼리를 만들 때 개발자는 `html`, `plaintext`, `markdown`, 및 `json` 여러 줄 필드에서 공유할 수 있습니다.
 
-개발자는 [JSON 미리 보기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html) GraphQL API를 사용하여 반환할 수 있는 현재 컨텐츠 조각의 모든 값을 표시하려면 컨텐츠 조각 편집기에서 을 클릭합니다.
+개발자는 [JSON 미리 보기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html) 컨텐츠 조각 편집기에서 GraphQL API를 사용하여 반환할 수 있는 현재 컨텐츠 조각의 모든 값을 표시합니다.
 
 ## GraphQL 지속적인 쿼리
 
@@ -345,7 +345,7 @@ const nodeMap = {
 
 위의 스크린샷은 **자산 삽입** 버튼을 클릭합니다.
 
-다른 컨텐츠 조각에 대한 참조는 를 사용하여 여러 줄 필드에 연결하거나 삽입할 수도 있습니다 **컨텐츠 조각 삽입** 버튼을 클릭합니다.
+다른 컨텐츠 조각에 대한 참조는 를 사용하여 여러 줄 필드에 연결하거나 삽입할 수도 있습니다. **컨텐츠 조각 삽입** 버튼을 클릭합니다.
 
 ![컨텐츠 조각 참조 삽입](assets/rich-text/insert-contentfragment.png)
 
@@ -353,7 +353,7 @@ const nodeMap = {
 
 ## GraphQL을 사용하여 인라인 참조 쿼리
 
-GraphQL API를 사용하면 개발자가 여러 줄 필드에 삽입된 참조에 대한 추가 속성을 포함하는 쿼리를 만들 수 있습니다. JSON 응답에는 별도의 가 포함되어 있습니다 `_references` 이러한 추가 속성을 나열하는 개체입니다. JSON 응답에서는 개발자가 주장된 HTML을 처리할 필요 없이 참조 또는 링크를 렌더링하는 방법을 완전히 제어할 수 있습니다.
+GraphQL API를 사용하여 개발자는 여러 줄 필드에 삽입된 참조에 대한 추가 속성을 포함하는 쿼리를 만들 수 있습니다. JSON 응답에는 별도의 가 포함되어 있습니다 `_references` 이러한 추가 속성을 나열하는 개체입니다. JSON 응답에서는 개발자가 주장된 HTML을 처리할 필요 없이 참조 또는 링크를 렌더링하는 방법을 완전히 제어할 수 있습니다.
 
 예를 들어 다음 작업을 수행할 수 있습니다.
 
@@ -361,7 +361,7 @@ GraphQL API를 사용하면 개발자가 여러 줄 필드에 삽입된 참조�
 * AEM 게시 환경에 대한 절대 경로를 로 사용하여 인라인 이미지를 렌더링합니다. `src` 값.
 * 추가 사용자 지정 속성을 사용하여 다른 컨텐츠 조각에 포함된 참조를 렌더링하는 방법을 결정합니다.
 
-를 사용하십시오 `json` 반환 유형 및 포함 `_references` GraphQL 쿼리를 구성할 때 객체를 생성합니다.
+를 사용하십시오 `json` 반환 유형 및 포함 `_references` GraphQL 쿼리를 구성할 때 개체를 작성합니다.
 
 **GraphQL 지속적인 쿼리:**
 
@@ -509,7 +509,7 @@ const nodeMap = {
     }
 ```
 
-높은 수준의 접근 방식은 `nodeType` 다음과 같음 `reference` mute Line JSON 응답에서 을 참조하십시오. 그런 다음 를 포함하는 사용자 지정 렌더링 함수를 호출할 수 있습니다 `_references` GraphQL 응답에서 반환되는 객체입니다.
+높은 수준의 접근 방식은 `nodeType` 다음과 같음 `reference` mute Line JSON 응답에서 을 참조하십시오. 그런 다음 를 포함하는 사용자 지정 렌더링 함수를 호출할 수 있습니다 `_references` GraphQL 응답에서 반환되는 개체.
 
 그러면 인라인 참조 경로를 의 해당 항목과 비교할 수 있습니다 `_references` 개체 및 다른 사용자 지정 맵 `renderReference` 를 호출할 수 있습니다.
 
@@ -536,7 +536,7 @@ const renderReference = {
 
 ## 종단 간 예
 
->[!VIDEO](https://video.tv.adobe.com/v/342105/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342105?quality=12&learn=on)
 
 앞의 비디오에는 종단 간 예제가 표시됩니다.
 

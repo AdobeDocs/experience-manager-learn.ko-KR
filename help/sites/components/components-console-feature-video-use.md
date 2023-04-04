@@ -11,7 +11,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 6f33f121-5564-4c46-ab56-7ea382a0ab5a
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '174'
 ht-degree: 1%
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 구성 요소 콘솔은 사이트 구현에서 모든 다양한 구성 요소를 관리할 중앙 위치를 개발자와 관리자에게 제공합니다. 다음 비디오에서는 구성 요소 콘솔의 기능에 대해 자세히 설명합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/17417/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/17417?quality=12&learn=on)
 
 구성 요소 콘솔은 다음 기능을 제공합니다.
 

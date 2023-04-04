@@ -9,7 +9,7 @@ level: Beginner
 kt: 7873
 thumbnail: 333296.jpg
 exl-id: 7d5f5edb-10e7-43ec-a4e7-4cee8ddba685
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '96'
 ht-degree: 0%
@@ -26,6 +26,6 @@ AEM GraphQL API를 사용할 때 AEM 작성자 및 게시 환경을 활용하는
 + AEM 게시 환경을 사용한 헤드리스 게재에 대한 우수 사례를 알아봅니다
 + 작성자 환경을 응용 프로그램의 미리 보기로 사용하는 방법을 알아봅니다
 
->[!VIDEO](https://video.tv.adobe.com/v/333296/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/333296?quality=12&learn=on)
 
-_AEM  [Headless ](./assets/aem-headless-video-series.postman_collection.json) 비디오 시리즈 전체에서 사용되는 Postman Collection을 다운로드합니다._
+_다운로드 [Postman Collection](./assets/aem-headless-video-series.postman_collection.json) AEM Headless 비디오 시리즈 전체에서 사용됩니다._

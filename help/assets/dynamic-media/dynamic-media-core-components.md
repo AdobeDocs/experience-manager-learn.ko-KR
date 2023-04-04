@@ -8,7 +8,7 @@ role: User
 level: Beginner
 kt: 6630
 exl-id: 12fa3622-428a-40c1-b47f-fa55c2858896
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '141'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 Experience Manager 코어 구성 요소에 포함된 이미지 구성 요소는 Dynamic Media에 대한 내장된 지원을 제공합니다. 컨텐츠 작성자는 이미지 구성 요소를 사용하여 AEM Sites 페이지에서 이미지 사전 설정, 스마트 자르기 및 이미지 수정자와 같은 Dynamic Media 기능을 사용할 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/329331/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/329331?quality=12&learn=on)
 
 ## 추가 리소스
 

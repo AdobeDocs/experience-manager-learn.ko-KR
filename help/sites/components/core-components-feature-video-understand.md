@@ -13,7 +13,7 @@ topic: Development
 role: User
 level: Beginner
 exl-id: 097216b7-b345-4fcb-bab3-e660d74252a6
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 42%
@@ -30,10 +30,10 @@ ht-degree: 42%
 
 AEM 코어 구성 요소 는 Adobe Experience Manager에서 사용할 표준 구성 요소 세트입니다. Adobe의 우수 사례 및 표준을 기반으로 구축된 핵심 구성 요소는 모든 사이트 구현에 대한 기본 기능 세트를 제공합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/18926/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/18926?quality=12&learn=on)
 
 ## 추가 리소스 {#additional-resources}
 
 * [GitHub 프로젝트](https://github.com/adobe/aem-core-wcm-components)
 * [코어 구성 요소 예](https://www.aemcomponents.dev/)
-* [핵심 구성 요소 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [핵심 구성 요소 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)

@@ -10,7 +10,7 @@ kt: 11649
 thumbnail: KT-11649.png
 doc-type: article
 last-substantial-update: 2023-01-04T00:00:00Z
-source-git-commit: 5f0464d7bb8ffde9a9b3bd7fd67dc0e341970a6f
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1399'
 ht-degree: 1%
@@ -49,7 +49,7 @@ OpenAI 또는 DALL.E 2를 사용하여 이미지를 생성하고 컨텐츠 속�
 
 이 비디오에서는 OpenAI 또는 DALL.E 2 확장을 사용하여 이미지를 생성하는 예와 이미지 생성, 작동 방법 및 개발 방법을 검토합니다. 비디오에는 다음과 같은 장 표시가 있습니다. __기능 데모, 설정 및 기술 코드__ 관련 작품을 빨리 보기 위해서.
 
->[!VIDEO](https://video.tv.adobe.com/v/3413093/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3413093?quality=12&learn=on)
 
 
 ## App Builder 확장 앱

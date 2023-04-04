@@ -8,19 +8,19 @@ kt: 10258
 hidefromtoc: true
 recommendations: noDisplay, noCatalog
 thumbnail: 342268.jpeg
-source-git-commit: a2874d2e00680137d1de305edfa6a447bf1576dd
+exl-id: 8b31c415-bf12-420f-a81a-6065c56ccbed
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '115'
 ht-degree: 5%
 
 ---
 
-
 # 클라우드로 마이그레이션 - 2부
 
 컨텐츠 마이그레이션을 다루는 두 번째 비디오에서 James와 Darin은 CTT(Content Transfer Tool)를 사용하여 AEM as a Cloud Service으로 마이그레이션하는 데 대해 설명합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/342268/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342268?quality=12&learn=on)
 
 ## 이 비디오에서 다루는 컨텐츠
 

@@ -10,7 +10,7 @@ kt: 9165
 thumbnail: 337960.jpeg
 last-substantial-update: 2022-10-03T00:00:00Z
 exl-id: 40bb55f9-011d-4261-9f44-b1104a591252
-source-git-commit: 1ecd3c761ea7c79036b263ff8528a6cd01af0e76
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 5%
@@ -21,7 +21,7 @@ ht-degree: 5%
 
 AEM Sites용 사이트 맵을 만들어 SEO를 높이는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/337960/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/337960?quality=12&learn=on)
 
 ## 리소스
 

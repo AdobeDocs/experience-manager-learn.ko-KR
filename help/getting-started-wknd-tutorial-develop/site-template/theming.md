@@ -11,7 +11,7 @@ kt: 7498
 thumbnail: KT-7498.jpg
 exl-id: 98946462-1536-45f9-94e2-9bc5d41902d4
 recommendations: noDisplay, noCatalog
-source-git-commit: de2fa2e4c29ce6db31233ddb1abc66a48d2397a6
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '479'
 ht-degree: 1%
@@ -38,7 +38,7 @@ ht-degree: 1%
 
 다음으로, 사이트가 WKND 브랜드의 모양과 느낌과 일치하도록 테마 소스를 변경합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/332918/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/332918?quality=12&learn=on)
 
 비디오에 대한 높은 수준 단계:
 
@@ -55,7 +55,7 @@ ht-degree: 1%
 
 Cloud Manager의 프런트 엔드 파이프라인을 사용하여 AEM 환경에 테마에 대한 업데이트를 배포합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/338722/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/338722?quality=12&learn=on)
 
 비디오에 대한 높은 수준 단계:
 

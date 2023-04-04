@@ -7,7 +7,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 4ee0b68f-3897-4104-8615-9de8dbb8f327
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 4%
@@ -18,7 +18,7 @@ ht-degree: 4%
 
 AEM 6.5의 Dynamic Media 뷰어 개선 기능에는 360개의 비디오 렌더링 지원, 360개의 미디어 뷰어(video360Social 및 video360VR) 지원 추가, 사용자 정의 비디오 축소판 선택 기능이 포함되어 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/26391?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26391?quality=12&learn=on)
 
 >[!NOTE]
 >

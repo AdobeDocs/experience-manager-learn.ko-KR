@@ -10,7 +10,7 @@ kt: 2551
 thumbnail: 28868.jpeg
 last-substantial-update: 2022-06-24T00:00:00Z
 exl-id: 6765758f-0719-4ed9-83be-8ed192a75b41
-source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '134'
 ht-degree: 4%
@@ -21,7 +21,7 @@ ht-degree: 4%
 
 AEM 데스크탑 앱을 사용하면 데스크탑에서 AEM으로 관리되는 모든 자산, 애플리케이션 및 파일 형식에 대한 액세스를 간소화할 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/28868/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28868?quality=12&learn=on)
 
 + 전용 데스크탑 애플리케이션을 사용하여 검색 및 검색을 통해 AEM에서 자산을 검색할 수 있습니다
 + 최적화된 대역폭 관리를 통해 많은 대규모 자산을 업로드하고 다운로드할 수 있습니다

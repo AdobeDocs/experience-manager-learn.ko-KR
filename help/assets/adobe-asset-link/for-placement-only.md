@@ -10,7 +10,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 940608db-6e84-441a-b031-e8cf52459597
-source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 0%
@@ -21,4 +21,4 @@ ht-degree: 0%
 
 AEM Assets에 대한 FPO(For Placement Only) 변환을 만들고 사용하는 방법을 살펴봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/34259/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/34259?quality=12&learn=on)

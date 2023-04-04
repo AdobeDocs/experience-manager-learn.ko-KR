@@ -11,7 +11,7 @@ role: Developer
 level: Beginner
 last-substantial-update: 2022-09-01T00:00:00Z
 exl-id: 8b12f34c-be98-4f47-853c-411bb601990c
-source-git-commit: d0b13fd37f1ed42042431246f755a913b56625ec
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 14%
@@ -29,7 +29,7 @@ ht-degree: 14%
 
 이 자습서에서는 AEM as a Cloud Service SDK를 사용하여 AEM(Adobe Experience Manager)용 로컬 개발 환경을 설정하는 과정을 안내합니다. AEM Projects를 개발, 빌드 및 컴파일하는 데 필요한 개발 도구와 로컬 실행 시간을 통해 개발자가 Cloud Manager를 통해 AEM as a Cloud Service에 배포하기 전에 새로운 기능을 로컬에서 신속하게 확인할 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/32565/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32565?quality=12&learn=on)
 
 ![AEM as a Cloud Service 로컬 개발 환경 기술 스택](./assets/overview/aem-sdk-technology-stack.png)
 

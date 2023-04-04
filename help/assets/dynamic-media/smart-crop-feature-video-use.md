@@ -7,7 +7,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 295bbfb6-241f-41c0-972d-d9688863cea1
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 2%
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 스마트 자르기는 Adobe Sensei을 사용하여 반응형 디자인을 위해 콘텐츠를 자르는데 시간이 오래 걸리고 비용이 많이 드는 작업을 제거합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/21519/)
+>[!VIDEO](https://video.tv.adobe.com/v/21519?quality=12&learn=on)
 
 >[!NOTE]
 >

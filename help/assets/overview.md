@@ -4,7 +4,7 @@ description: 비디오를 시청하여 AEM 자산 지원 및 지원을 받으십
 sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 exl-id: 1d0b0183-25ee-4cb4-82a5-3506e7c1c908
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '185'
 ht-degree: 15%
@@ -25,7 +25,7 @@ Adobe Experience Manager(AEM) Assets는 AEM Platform의 디지털 자산 관리 
 
 AEM Assets이 무엇인지, 그리고 조직의 비즈니스 목표를 달성하는 데 어떻게 사용될 수 있는지 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/336196/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/336196?quality=12&learn=on)
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>

@@ -1,20 +1,21 @@
 ---
-title: automated forms conversion 서비스
-description: automated forms conversion 서비스. 이 문서에서는 AEM 관리자가 PDF forms을 적응형 양식으로 자동 전환하도록 Automated forms conversion 서비스를 구성하는 방법에 대해 설명합니다. 이 도움말은 조직의 IT 및 AEM 관리자를 위한 것입니다.
-feature: 적응형 양식
+title: 자동화된 양식 전환 서비스
+description: 자동화된 양식 전환 서비스. 이 문서에서는 AEM 관리자가 PDF forms을 적응형 양식으로 자동 전환하도록 Automated forms conversion 서비스를 구성하는 방법에 대해 설명합니다. 이 도움말은 조직의 IT 및 AEM 관리자를 위한 것입니다.
+feature: Adaptive Forms
 thumbnail: 39493.jpg
 kt: 6114
-topic: 개발
+topic: Development
 role: Admin
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 0715a2cc-c042-4ddc-85a1-7720f420351b
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 15%
+source-wordcount: '253'
+ht-degree: 19%
 
 ---
 
-# automated forms conversion 서비스
+# 자동화된 양식 전환 서비스
 
 이 문서에서는 AEM 관리자가 PDF forms을 적응형 양식으로 자동 전환하도록 Automated forms conversion 서비스를 구성하는 방법에 대해 설명합니다. 이 도움말은 조직의 IT 및 AEM 관리자를 위한 것입니다. 제공된 정보는 이 도움말을 읽는 사람이 다음 기술을 잘 알고 있다는 가정을 기반으로 합니다.
 
@@ -22,7 +23,7 @@ ht-degree: 15%
 * Linux 및 Microsoft Windows 운영 체제 사용,
 * SMTP 메일 서버 구성
 
-## 전제 조건:
+## 사전 요구 사항:
 
 automated forms conversion 서비스를 사용하려면 다음 항목이 필요합니다.
 
@@ -36,5 +37,4 @@ automated forms conversion 서비스를 사용하려면 다음 항목이 필요�
 
 * 이 비디오에서는 로컬 AEM Forms 인스턴스를 Adobe Cloud의 Automated forms conversion 서비스에 연결하는 데 필요한 단계에 대해 설명합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/39493/?quality=9&learn=on)
-
+>[!VIDEO](https://video.tv.adobe.com/v/39493?quality=12&learn=on)

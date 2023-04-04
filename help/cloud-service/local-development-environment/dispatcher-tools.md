@@ -10,7 +10,7 @@ kt: 4679
 thumbnail: 30603.jpg
 last-substantial-update: 2023-03-14T00:00:00Z
 exl-id: 9320e07f-be5c-42dc-a4e3-aab80089c8f7
-source-git-commit: eb31c5fb79e01e1c363fc153355e8d92d1a54021
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1612'
 ht-degree: 9%
@@ -79,7 +79,7 @@ Dispatcher 도구 버전은 AEM SDK의 버전과 다릅니다. Dispatcher 도구
 
 아래 실행된 모든 명령은 현재 작업 디렉터리에 확장된 Dispatcher 도구 콘텐츠가 포함되어 있다고 가정합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/30601/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/30601?quality=12&learn=on)
 
 *이 비디오에서는 macOS을 예시적인 용도로 사용합니다. 동등한 Windows/Linux 명령을 사용하여 유사한 결과를 얻을 수 있습니다.*
 
@@ -188,7 +188,7 @@ Dispatcher 도구 버전은 Experience Manager보다 자주 증가하지 않으�
 
 Apache 및 Dispatcher 구성의 기본 세트가 정기적으로 향상되며 AEM as a Cloud Service SDK 버전과 함께 릴리스됩니다. 기본 구성 개선 사항을 AEM 프로젝트에 통합하고 방지하는 것이 가장 좋습니다 [로컬 유효성 검사](#validate-configurations) 및 Cloud Manager 파이프라인 오류가 발생했습니다. 를 사용하여 업데이트합니다. `update_maven.sh` 스크립트에서 `.../dispatcher-sdk-x.x.x/bin` 폴더를 입력합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3416744/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3416744?quality=12&learn=on)
 
 *이 비디오에서는 macOS을 예시적인 용도로 사용합니다. 동등한 Windows/Linux 명령을 사용하여 유사한 결과를 얻을 수 있습니다.*
 

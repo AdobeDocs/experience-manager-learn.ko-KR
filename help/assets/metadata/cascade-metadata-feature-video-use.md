@@ -10,7 +10,7 @@ kt: 616
 thumbnail: 20702.jpg
 last-substantial-update: 2022-06-08T00:00:00Z
 exl-id: 73e793e0-a20e-4954-ba1a-471b2cd85120
-source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '190'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 고급 메타데이터 관리를 사용하여 사용자가 CSS(Cascading Field) 규칙을 만들어 AEM Assets에서 메타데이터 간의 컨텍스트 관계를 만들 수 있습니다. 아래 비디오에서는 필드 요구 사항, 가시성 및 상황별 선택 사항에 대한 새로운 동적 규칙을 보여줍니다. 또한 관리자가 사용자 지정 메타데이터 스키마에 이러한 규칙을 적용하는 데 필요한 단계를 자세히 설명합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/20702/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/20702?quality=12&learn=on)
 
 주어진 메타데이터 필드에 대해 활성화할 수 있는 세 개의 동적 규칙 세트가 있습니다.
 

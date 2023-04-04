@@ -10,7 +10,7 @@ role: User
 level: Beginner
 last-substantial-update: 2021-09-30T00:00:00Z
 exl-id: fe8794b6-3fa7-4268-8352-758882705587
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '44'
 ht-degree: 0%
@@ -21,4 +21,4 @@ ht-degree: 0%
 
 자산에 대한 여러 사용자 공동 작업을 용이하게 하기 위해 AEM 체크인 및 체크아웃 기능을 사용하는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/32048/?quality=12&learn=on&hidetitle=true)
+>[!VIDEO](https://video.tv.adobe.com/v/32048?quality=12&learn=on)

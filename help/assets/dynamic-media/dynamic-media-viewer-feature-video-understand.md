@@ -8,7 +8,7 @@ topic: Content Management
 role: Developer
 level: Intermediate
 exl-id: db4fc561-2368-4df8-9b02-fc08afa00805
-source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 AEM Dynamic Media 뷰어 개선 사항을 사용하면 AEM 작성자가 웹 사이트 사용자에게 자산을 표시하는 방법을 정의하고 사용자 지정할 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/17783/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/17783?quality=12&learn=on)
 
 몇 가지 주요 개선 사항은 다음과 같습니다.
 

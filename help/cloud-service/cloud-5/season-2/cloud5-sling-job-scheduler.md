@@ -7,7 +7,8 @@ level: Intermediate
 thumbnail: 343473.jpeg
 hidefromtoc: true
 recommendations: noDisplay, noCatalog
-source-git-commit: 726cf83f3cabe46c12abb79288368407ebf4d525
+exl-id: 8784d77f-1c70-4694-bd08-79b71adbda48
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '57'
 ht-degree: 0%
@@ -18,7 +19,7 @@ ht-degree: 0%
 
 작업 예약 및 소비는 클러스터되지 않은 AEM 배포과 다릅니다. 이 비디오에서는 이러한 작업을 실행할 때 주의해야 할 몇 가지 과제 및 사항을 보여줍니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/343473)
+>[!VIDEO](https://video.tv.adobe.com/v/343473?quality=12&learn=on)
 
 ## 이 비디오에서 다루는 컨텐츠
 

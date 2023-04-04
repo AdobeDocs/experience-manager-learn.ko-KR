@@ -8,10 +8,10 @@ feature: Asset Compute Microservices
 role: Developer
 level: Intermediate, Experienced
 exl-id: ebb11eab-1412-4af5-bc09-e965b9116ac9
-source-git-commit: 839152aa67ba7ab2929f2c8093bfdc873761a645
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '589'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -21,7 +21,7 @@ asset compute 프로젝트는 Adobe I/O CLI를 사용하여 생성된 Node.js �
 
 ## 프로젝트 생성
 
->[!VIDEO](https://video.tv.adobe.com/v/40197/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/40197?quality=12&learn=on)
 
 _asset compute 프로젝트를 생성하는 클릭스루(오디오 없음)_
 
@@ -54,7 +54,7 @@ _asset compute 프로젝트를 생성하는 클릭스루(오디오 없음)_
 1. 다운로드할 프로젝트 작업 영역을 선택합니다 `console.json` 에 대한 자격 증명. 이 경우 `Development`
 1. Adobe I/O 프로젝트의 루트로 이동하여 를 탭합니다 __모두 다운로드__ 오른쪽 상단 모서리에서
 1. 파일은 로 다운로드됩니다. `.json` 프로젝트 및 작업 공간 접두사가 있는 파일(예: `wkndAemAssetCompute-81368-Development.json`
-1. 다음 중 하나를 수행할 수 있습니다.
+1. 다음 중 하나를 수행할 수 있습니다
    + 파일 이름을 다음으로 변경합니다. `console.json` asset compute 작업자 프로젝트의 루트로 이동합니다. 이 자습서의 접근 방식입니다.
    + 임의의 폴더로 이동하고 `.env` 구성 항목이 있는 파일 `ASSET_COMPUTE_INTEGRATION_FILE_PATH`. 파일 경로는 프로젝트의 루트에 대해 절대 또는 상대적일 수 있습니다. 예:
       + `ASSET_COMPUTE_INTEGRATION_FILE_PATH=/Users/example-user/secrets/wkndAemAssetCompute-81368-Development.json`

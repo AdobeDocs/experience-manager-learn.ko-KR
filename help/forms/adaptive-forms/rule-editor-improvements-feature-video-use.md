@@ -16,7 +16,7 @@ role: Developer
 level: Beginner
 exl-id: 98a35bd9-a659-41f9-a772-267730c1f579
 last-substantial-update: 2019-06-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 0%
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 규칙 편집기를 사용하면 사용자가 AEM Adaptive Forms에 논리를 추가할 수 있습니다. AEM 6.3은 기술 사용자와 기술 전문가가 아닌 사용자 모두가 인텔리전스를 추가할 수 있도록 여러 가지 방식으로 규칙 편집기를 개선했습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/19653?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/19653?quality=12&learn=on)
 
 **규칙 편집기의 몇 가지 개선 사항은 다음과 같습니다.**
 

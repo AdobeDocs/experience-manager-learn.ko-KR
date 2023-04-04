@@ -14,7 +14,7 @@ role: Developer
 level: Beginner
 exl-id: 9f1dbd02-774a-4b84-90fa-02d4e468cbac
 last-substantial-update: 2020-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 3%
@@ -41,8 +41,8 @@ ht-degree: 3%
 * 샘플 적응형 양식은 [애플리케이션 Forms](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments/applicationforms)
 
 다음 비디오에서는 AEM 워크플로우를 트리거하기 위해 적응형 양식을 구성하는 방법을 설명합니다
->[!VIDEO](https://video.tv.adobe.com/v/40258/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/40258?quality=12&learn=on)
 
 다음 비디오에서는 crx 저장소의 워크플로우 페이로드 및 기타 세부 사항을 보여줍니다
 
->[!VIDEO](https://video.tv.adobe.com/v/40259/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/40259?quality=12&learn=on)

@@ -8,7 +8,7 @@ role: Developer
 level: Intermediate
 last-substantial-update: 2022-06-04T00:00:00Z
 exl-id: 00125fe1-3bb9-4b1a-a83c-61c413403ae2
-source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '821'
 ht-degree: 1%
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 자산 통찰력 개요. 핵심 구성 요소, 샘플 이미지 구성 요소 및 기타 컨텐츠 패키지를 설치하여 환경을 준비하십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/25943/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/25943?quality=12&learn=on)
 
 ### 아키텍처 다이어그램 {#architecture-diagram}
 
@@ -42,7 +42,7 @@ ht-degree: 1%
 
 자산 통찰력을 위한 코어 구성 요소 및 프록시 구성 요소(샘플 이미지 구성 요소) 사용 개선 사항. 참조 사이트에 대한 샘플 이미지 구성 요소를 활성화하기 위해 컨텐츠 페이지 템플릿 정책을 편집합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/25944/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/25944?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -63,7 +63,7 @@ ht-degree: 1%
 
 자산 추적을 위해 실시간 데이터 수집이 있는 보고서 세트가 만들어집니다. AEM Assets 통찰력 구성은 Adobe Analytics 자격 증명을 사용하여 설정됩니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/25945/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/25945?quality=12&learn=on)
 
 >[!NOTE]
 Adobe Analytics 보고서 세트에 대해 실시간 데이터 수집 및 AEM 자산 보고를 활성화해야 합니다. AEM 자산 보고를 활성화하면 자산 통찰력을 추적하기 위한 분석 변수가 예약됩니다.
@@ -80,7 +80,7 @@ AEM Assets Insights 구성의 경우 다음 자격 증명이 필요합니다
 
 Adobe Analytics 확장 추가, 페이지 로드 규칙 만들기 및 Adobe IMS 기술 계정과 AEM 통합.
 
->[!VIDEO](https://video.tv.adobe.com/v/25946/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/25946?quality=12&learn=on)
 
 >[!NOTE]
 작성자 인스턴스에서 게시 인스턴스로 모든 변경 사항을 복제해야 합니다.
@@ -193,4 +193,4 @@ document.querySelectorAll(".cmp-image__image");
 
 AEM 자산 보고 동기화 작업 스케줄러 및 자산 통찰력 보고서 구성
 
->[!VIDEO](https://video.tv.adobe.com/v/25947/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/25947?quality=12&learn=on)

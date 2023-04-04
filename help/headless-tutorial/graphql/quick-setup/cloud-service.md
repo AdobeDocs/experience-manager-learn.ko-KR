@@ -1,6 +1,6 @@
 ---
 title: AEM as a Cloud Service AEM 헤드리스 빠른 설정
-description: AEM 헤드리스 빠른 설정을 사용하면 WKND 사이트 샘플 프로젝트의 콘텐츠를 사용하여 AEM 헤드리스와 AEM Headless GraphQL API에서 컨텐츠를 사용하는 React 앱을 직접 사용할 수 있습니다.
+description: AEM 헤드리스 빠른 설정을 사용하면 WKND Site 샘플 프로젝트의 콘텐츠를 사용하여 AEM Headless를 직접 사용하고 AEM Headless GraphQL API를 통해 컨텐츠를 소비하는 React 앱을 사용할 수 있습니다.
 version: Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
@@ -9,7 +9,7 @@ level: Beginner
 kt: 9442
 thumbnail: 339073.jpg
 exl-id: 62e807b7-b1a4-4344-9b1e-2c626b869e10
-source-git-commit: b4c04a9ef7d8cfdaa5675fdfe259ab9d813fb7e0
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1084'
 ht-degree: 2%
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 # AEM as a Cloud Service AEM 헤드리스 빠른 설정
 
-AEM 헤드리스 빠른 설정을 사용하면 WKND 사이트 샘플 프로젝트의 컨텐츠를 사용하여 AEM 헤드리스와 AEM Headless GraphQL API에서 컨텐츠를 사용하는 샘플 React 앱(SPA)을 직접 사용할 수 있습니다.
+AEM Headless 빠른 설정을 사용하면 WKND Site 샘플 프로젝트의 컨텐츠와 AEM Headless GraphQL API를 통해 컨텐츠를 소비하는 샘플 React App (a SPA)을 직접 사용할 수 있습니다.
 
 ## 사전 요구 사항
 
@@ -36,10 +36,10 @@ AEM 헤드리스 빠른 설정을 사용하면 WKND 사이트 샘플 프로젝�
 
 ## 1. Cloud Manager Git 리포지토리 만들기
 
-먼저 WKND 사이트를 배포하는 데 사용되는 Cloud Manager Git 리포지토리를 만듭니다. WKND 사이트는 컨텐츠(컨텐츠 조각)와 빠른 설정의 React 앱에서 사용하는 GraphQL AEM 종단점이 포함된 샘플 AEM 웹 사이트 프로젝트입니다.
+먼저 WKND 사이트를 배포하는 데 사용되는 Cloud Manager Git 리포지토리를 만듭니다. WKND 사이트는 컨텐츠(컨텐츠 조각)와 빠른 설정의 React App에서 사용하는 GraphQL AEM 엔드포인트를 포함하는 샘플 AEM 웹 사이트 프로젝트입니다.
 
 _단계 화면_
->[!VIDEO](https://video.tv.adobe.com/v/339073/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/339073?quality=12&learn=on)
 
 1. 다음으로 이동 [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)
 1. Cloud Manager 선택 __프로그램__ 여기에는 이 빠른 설정에 사용할 AEM as a Cloud Service 환경이 포함되어 있습니다
@@ -55,7 +55,7 @@ _단계 화면_
 만든 Cloud Manager Git 리포지토리를 사용하여 GitHub에서 WKND Site 프로젝트의 소스 코드를 복제하고 Cloud Manager Git 리포지토리에 푸시합니다. 이제 Cloud Manager가 WKND 사이트 프로젝트에 액세스하고 AEM as a Cloud Service 환경에 배포할 수 있습니다.
 
 _단계 화면_
->[!VIDEO](https://video.tv.adobe.com/v/339074/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/339074?quality=12&learn=on)
 
 1. 명령줄에서 GitHub에서 샘플 WKND Site 프로젝트의 소스 코드를 복제합니다
 
@@ -87,10 +87,10 @@ _단계 화면_
 
 WKND 사이트 프로젝트가 Cloud Manager Git 리포지토리에 푸시되어 Cloud Manager 파이프라인을 사용하여 AEM as a Cloud Service에 배포할 수 없습니다.
 
-WKND 사이트 프로젝트는 AEM Headless GraphQL API에서 React 앱이 사용하는 샘플 컨텐츠를 제공합니다.
+WKND Site 프로젝트는 AEM Headless GraphQL API보다 React 앱이 사용하는 샘플 컨텐츠를 제공합니다.
 
 _단계 화면_
->[!VIDEO](https://video.tv.adobe.com/v/339075/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/339075?quality=12&learn=on)
 
 1. 첨부 __비프로덕션 배포 파이프라인__ 새 Git 리포지토리에
    1. 선택 __파이프라인__ 위쪽 탐색에서
@@ -118,10 +118,10 @@ _단계 화면_
 
 ## 4. WKND React 앱을 다운로드하여 실행합니다.
 
-WKND Site 프로젝트의 컨텐츠와 AEM as a Cloud Service으로 부트된 상태로 AEM Headless GraphQL API를 통해 WKND Site의 컨텐츠를 사용하는 샘플 WKND React 앱을 다운로드하여 시작합니다.
+AEM이 WKND Site 프로젝트의 컨텐츠와 as a Cloud Service으로 부트된 상태에서 AEM Headless GraphQL API를 통해 WKND Site의 컨텐츠를 소비하는 샘플 WKND React 앱을 다운로드하여 시작합니다.
 
 _단계 화면_
->[!VIDEO](https://video.tv.adobe.com/v/339076/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/339076?quality=12&learn=on)
 
 1. 명령줄에서 GitHub에서 React 앱의 소스 코드를 복제합니다.
 
@@ -159,10 +159,10 @@ _단계 화면_
 
 ## 5. AEM에서 컨텐츠 편집
 
-AEM Headless GraphQL API에서 컨텐츠에 연결하고 소비하는 샘플 WKND React 앱과 함께 AEM Author 서비스의 컨텐츠를 작성하고 React 앱의 경험이 함께 어떻게 업데이트되는지 확인하십시오.
+AEM Headless GraphQL API의 컨텐츠에 연결하고 소비하는 샘플 WKND React 앱과 함께 AEM Author Service에서 컨텐츠를 작성하고 React App의 경험이 함께 어떻게 업데이트되는지 확인합니다.
 
 _단계 화면_
->[!VIDEO](https://video.tv.adobe.com/v/339077/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/339077?quality=12&learn=on)
 
 1. AEM as a Cloud Service 작성자 서비스에 로그인합니다.
 1. 다음으로 이동 __자산 > 파일 > WKND 공유 > 영어 > 모험__

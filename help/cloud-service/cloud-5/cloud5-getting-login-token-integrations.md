@@ -7,19 +7,19 @@ level: Intermediate
 kt: 9981
 hidefromtoc: true
 thumbnail: 341277.jpeg
-source-git-commit: 4976bc72228b76c02609cf63c7067cc7bad65861
+exl-id: 41d78e6b-7076-4f4f-8d2c-4bf969b61024
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '103'
 ht-degree: 0%
 
 ---
 
-
 # 통합을 위한 로그인 토큰 가져오기
 
 Cloud Service 통합을 위한 로그인 토큰을 가져오는 방법과 이를 위한 일부 사용 사례에 대한 깊이 안내서입니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/341277/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/341277?quality=12&learn=on)
 
 ## 이 비디오에서 다루는 컨텐츠
 

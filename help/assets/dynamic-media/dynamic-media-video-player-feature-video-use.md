@@ -7,7 +7,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 7e4cb782-836d-4ec0-97d0-645b91ea43e0
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 6%
@@ -19,11 +19,11 @@ ht-degree: 6%
 
 데스크탑 클라이언트와 브라우저에서 적응형 비디오 스트리밍을 지원하기 위해 Flash 런타임을 사용하는 AEM Dynamic Media 비디오 플레이어가 플래시 기반 컨텐츠 스트리밍에서 더 적극적이 되었습니다. HLS(Apple의 HTTP Live 스트리밍 비디오 게재 프로토콜)의 도입으로 이제 플래시에 의존하지 않고 컨텐츠를 스트리밍할 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/16791/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/16791?quality=12&learn=on)
 
 ## 비Flash 비디오 플레이어에 대한 빠른 검색 {#quick-look-into-non-flash-video-player}
 
->[!VIDEO](https://video.tv.adobe.com/v/17429/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/17429?quality=12&learn=on)
 
 HLS 브라우저 지원은 지원되지 않는 브라우저의 경우 점진적 비디오 게재로 폴백합니다
 
@@ -41,34 +41,34 @@ HLS 브라우저 지원은 지원되지 않는 브라우저의 경우 점진적 
  </thead>
  <tbody>
   <tr> 
-   <td> <p>데스크톱</p> </td>
+   <td> <p>데스크탑</p> </td>
    <td> <p>Internet Explorer 9 및 10</p> </td>
    <td> <p>점진적 다운로드</p> </td>
   </tr>
   <tr>
-   <td> <p>데스크톱</p> </td>
+   <td> <p>데스크탑</p> </td>
    <td> <p>Internet Explorer 11+</p> </td>
    <td> <p>Dynamic Media - Scene 7 모드: HLS 비디오 스트리밍</p> 
         <p>Dynamic Media - 하이브리드 모드: 점진적 다운로드</p>
    </td>
   </tr>
   <tr>
-   <td> <p>데스크톱</p> </td>
+   <td> <p>데스크탑</p> </td>
    <td> <p>Firefox 23-44</p> </td>
    <td> <p>점진적 다운로드</p> </td>
   </tr>
   <tr> 
-   <td> <p>데스크톱</p> </td>
+   <td> <p>데스크탑</p> </td>
    <td> <p>Firefox 45 이상</p> </td>
    <td> <p>HLS 비디오 스트리밍</p> </td>
   </tr>
   <tr> 
-   <td> <p>데스크톱</p> </td>
+   <td> <p>데스크탑</p> </td>
    <td> <p>Chrome</p> </td>
    <td> <p>HLS 비디오 스트리밍</p> </td>
   </tr>
   <tr> 
-   <td> <p>데스크톱</p> </td>
+   <td> <p>데스크탑</p> </td>
    <td> <p>Safari(Mac)</p> </td>
    <td> <p>HLS 비디오 스트리밍</p> </td>
   </tr>

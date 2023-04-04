@@ -11,7 +11,7 @@ kt: 10689
 mini-toc-levels: 1
 index: y
 recommendations: noDisplay, noCatalog
-source-git-commit: de2fa2e4c29ce6db31233ddb1abc66a48d2397a6
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 2%
@@ -36,7 +36,7 @@ ht-degree: 2%
 >
 >이 비디오에서는 두 가지 모두에 대한 프런트엔드 흐름을 설명하고 보여 줍니다 **전체 스택 및 빠른 사이트 작성** 프런트 엔드 리소스 빌드, 배포 및 제공 모델의 미묘한 차이를 설명하는 프로젝트입니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3409344/)
+>[!VIDEO](https://video.tv.adobe.com/v/3409344?quality=12&learn=on)
 
 ## 사전 요구 사항 {#prerequisites}
 

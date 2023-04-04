@@ -7,7 +7,7 @@ role: User
 level: Intermediate
 last-substantial-update: 2022-06-20T00:00:00Z
 exl-id: 500a9b10-462a-4f41-9b07-67138955cc3d
-source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '128'
 ht-degree: 1%
@@ -20,13 +20,13 @@ Asset Share Commons의 사용자 및 작성 환경에 대한 체계적인 소개
 
 ## 사용자 경험
 
->[!VIDEO](https://video.tv.adobe.com/v/20497/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/20497?quality=12&learn=on)
 
 이 비디오에서는 Asset Share Commons에 대한 사용자 경험을 간략하게 설명합니다. 이 검토에서는 검색 페이지, 자산 세부 사항 페이지의 기능과 다운로드, 공유 및 장바구니에 추가 와 같은 몇 가지 작업을 터치 합니다.
 
 ## 작성 경험
 
->[!VIDEO](https://video.tv.adobe.com/v/20498/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/20498?quality=12&learn=on)
 
 이 비디오에서는 작성 기능의 수준을 제공하기 위해 Asset Share Commons의 기본 구성 요소 작성 기능에 대한 개요를 제공합니다.
 

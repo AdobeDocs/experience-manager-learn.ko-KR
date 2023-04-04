@@ -10,7 +10,7 @@ doc-type: Tutorial
 last-substantial-update: 2023-03-17T00:00:00Z
 jira: KT-10841
 thumbnail: 3416906.jpeg
-source-git-commit: 024b2faac2e5a1a8d4bac64d1f70f292aac75dd0
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 AEM Headless 애플리케이션은 통합 작성 미리 보기를 지원합니다. 미리 보기 경험은 AEM Author의 컨텐츠 조각 편집기를 사용자 지정 앱(HTTP를 통해 주소 지정 가능)과 연결하여 미리 보기 중인 컨텐츠 조각을 렌더링하는 앱에 딥 링크를 허용합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3416906/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3416906?quality=12&learn=on)
 
 컨텐츠 조각 미리 보기를 사용하려면 몇 가지 조건을 충족해야 합니다.
 

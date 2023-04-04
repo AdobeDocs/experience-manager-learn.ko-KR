@@ -9,7 +9,7 @@ level: Beginner
 jira: KT-11863
 thumbnail: KT-11863.png
 last-substantial-update: 2023-02-15T00:00:00Z
-source-git-commit: 9123771fed25cf2c5c3443c92dcc0e6704476bb0
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '136'
 ht-degree: 5%
@@ -23,7 +23,7 @@ RDE를 사용한 개발/배포 라이프 사이클과 이 라이프 사이클이
 
 아래 비디오에서는 RDE 기반 개발-배포 수명 주기를 설명합니다. 이 비디오에서는 RDE를 효율적으로 사용하기 위한 주요 하위 작업 및 개발 흐름에 대해 간략하게 설명합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3415492/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3415492?quality=12&learn=on)
 
 
 ## RDE의 이점
@@ -36,7 +36,7 @@ RDE의 주요 이점은 개발 속도를 유지하는 것입니다.
 - 향상된 공동 작업
 - 생산성 향상
 
->[!VIDEO](https://video.tv.adobe.com/v/3415493/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3415493?quality=12&learn=on)
 
 ## 추가 리소스
 

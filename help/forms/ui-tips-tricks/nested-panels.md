@@ -10,7 +10,7 @@ level: Beginner
 kt: 9335
 exl-id: c60d019e-da26-4f67-8579-ef707e2348bb
 last-substantial-update: 2019-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '247'
 ht-degree: 0%
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 이 기본 동작을 변경하려면 다음을 수행해야 합니다
 
->[!VIDEO](https://video.tv.adobe.com/v/338369?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/338369?quality=12&learn=on)
 
 
 다음 코드를 페이지의 클릭 이벤트에 추가합니다. **다음** 코드 편집기를 사용한 단추
@@ -56,7 +56,7 @@ window.guideBridge.setFocus(null, 'prevItemDeep', true);
 
 스타일 편집기를 사용하여 하위 패널의 탭 제목을 숨깁니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/338370?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/338370?quality=12&learn=on)
 
 >[!NOTE]
 >

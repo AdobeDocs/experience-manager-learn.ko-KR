@@ -15,7 +15,7 @@ topic: Personalization
 role: Admin, Developer
 level: Intermediate
 exl-id: 9c139a36-e3c5-407e-af5d-b4fb8860f5a2
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 2%
@@ -26,7 +26,7 @@ ht-degree: 2%
 
 Adobe Experience Manager 6.4는 AEM과 Target 간의 개인화 워크플로우를 재설계합니다. 이제 AEM 내에서 만든 경험을 HTML 오퍼으로 Adobe Target에 직접 전달할 수 있습니다. 이를 통해 마케터는 다양한 채널에서 컨텐츠를 원활하게 테스트 및 개인화할 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/22380/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/22380?quality=12&learn=on)
 
 >[!NOTE]
 >

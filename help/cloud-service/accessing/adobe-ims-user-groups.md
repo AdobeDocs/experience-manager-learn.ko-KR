@@ -9,10 +9,10 @@ level: Beginner
 kt: 4999
 thumbnail: 39150.jpg
 exl-id: 40ba2368-edb7-4348-9aff-91194200092e
-source-git-commit: bca51ece7a9b249727b8746cc9654503059116fb
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '92'
-ht-degree: 0%
+ht-degree: 89%
 
 ---
 
@@ -25,4 +25,4 @@ ht-degree: 0%
 
  Adobe IMS 사용자 그룹은 AEM에 노출되는 사용자의 논리적 집합을 설정하며, 이를 활용하여 AEM 사용자에 대한 세부 조정 권한을 정의할 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/39150/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/39150?quality=12&learn=on)

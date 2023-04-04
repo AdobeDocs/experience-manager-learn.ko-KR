@@ -8,7 +8,7 @@ role: Developer
 level: Intermediate
 exl-id: 7e5dcc6e-fe56-49af-97e3-7dfaa9c8738f
 last-substantial-update: 2019-06-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '204'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 AEM Adaptive Forms이 있는 CAPTCHA 추가 및 사용.
 
->[!VIDEO](https://video.tv.adobe.com/v/18336/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/18336?quality=12&learn=on)
 
 *이 비디오에서는 Google의 reCAPTCHA 서비스뿐만 아니라 내장된 AEM CAPTCHA 서비스를 모두 사용하여 AEM 적응형 양식에 CAPTCHA를 추가하는 프로세스를 안내합니다.*
 

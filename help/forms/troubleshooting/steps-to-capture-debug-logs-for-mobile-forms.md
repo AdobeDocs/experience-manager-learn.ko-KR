@@ -1,23 +1,23 @@
 ---
 title: 모바일 양식에 대한 디버그 로그를 캡처하는 절차
-description: 'Mobile Forms와 관련된 디버깅 문제에 대한 디버그 로그를 구성합니다 '
+description: Mobile Forms와 관련된 디버깅 문제에 대한 디버그 로그를 구성합니다
 type: Troubleshooting
 role: Admin
 level: Beginner
 version: 6.5
 feature: Mobile Forms
-topic: '관리 '
+topic: Administration
 index: y
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 0fdfa72d-0e96-4389-86b4-826c37d64982
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '42'
-ht-degree: 7%
+source-wordcount: '39'
+ht-degree: 0%
 
 ---
-
 
 # 모바일 양식에 대한 디버그 로그를 캡처하는 절차
 
 *이 비디오에서는 모바일 양식에 대한 디버그 로그를 캡처하는 단계를 안내합니다.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335516?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/335516?quality=12&learn=on)

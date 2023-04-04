@@ -1,19 +1,19 @@
 ---
 title: AEM Headless 시작하기 - 컨텐츠 서비스
 description: AEM Headless를 사용하여 콘텐츠를 작성하고 노출하는 방법을 소개하는 종단간 튜토리얼입니다.
-feature: 컨텐츠 조각, API
-topic: 헤드리스, 컨텐츠 관리
+feature: Content Fragments, APIs
+topic: Headless, Content Management
 role: Developer
 level: Beginner
-source-git-commit: 22829f532f7791af14919af24650b4593fe89ae8
+exl-id: 5aa32791-861a-48e3-913c-36028373b788
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '340'
-ht-degree: 4%
+source-wordcount: '334'
+ht-degree: 6%
 
 ---
 
-
-# AEM Headless 시작하기 - 컨텐츠 서비스
+# AEM 헤드리스 시작하기 - Content Services
 
 AEM Content Services는 기존 AEM 페이지를 활용하여 헤드리스 REST API 엔드포인트를 작성하고 AEM 구성 요소가 이러한 엔드포인트에 표시할 컨텐츠를 정의하거나 참조합니다.
 
@@ -23,7 +23,7 @@ AEM Content Services를 사용하면 AEM Sites에서 웹 페이지를 작성하�
 
 헤드리스 CMS 시나리오에서 AEM을 사용하여 컨텐츠를 작성하고 노출하는 방법을 소개하는 종단간 자습서입니다. 기본 모바일 앱에서 사용했습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/28315/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28315?quality=12&learn=on)
 
 이 자습서에서는 이벤트 정보(음악, 성능, 아트 등)를 표시하는 모바일 앱의 경험을 향상시키기 위해 AEM Content Services를 사용하는 방법을 설명합니다 그것은 WKND 팀에 의해 조정되었습니다.
 
@@ -37,15 +37,15 @@ AEM Content Services를 사용하면 AEM Sites에서 웹 페이지를 작성하�
 
 ## GitHub 프로젝트
 
-소스 코드 및 컨텐츠 패키지는 [AEM 안내서 - WKND Mobile GitHub Project](https://github.com/adobe/aem-guides-wknd-mobile)에서 사용할 수 있습니다.
+소스 코드 및 컨텐츠 패키지는 [AEM 안내서 - WKND Mobile GitHub 프로젝트](https://github.com/adobe/aem-guides-wknd-mobile).
 
-자습서나 코드에 문제가 있으면 [GitHub 문제](https://github.com/adobe/aem-guides-wknd-mobile/issues)를 그대로 두십시오.
+자습서나 코드에 문제가 있는 경우 [GitHub 문제](https://github.com/adobe/aem-guides-wknd-mobile/issues).
 
-## AEM GraphQL과 AEM 컨텐츠 서비스 비교
+## AEM GraphQL과 AEM Content Services
 
-|  | AEM GraphQL APIs | AEM 컨텐츠 서비스 |
+|  | AEM GraphQL API | AEM 컨텐츠 서비스 |
 |--------------------------------|:-----------------|:---------------------|
 | 스키마 정의 | 구조화된 컨텐츠 조각 모델 | AEM 구성 요소 |
-| 컨텐트 | 콘텐츠 조각 | AEM 구성 요소 |
+| 콘텐츠 | 콘텐츠 조각 | AEM 구성 요소 |
 | 컨텐츠 검색 | GraphQL 쿼리별 | AEM 페이지별 |
 | 배달 형식 | GraphQL JSON | AEM ComponentExporter JSON |

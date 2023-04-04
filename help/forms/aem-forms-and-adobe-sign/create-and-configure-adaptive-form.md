@@ -8,7 +8,7 @@ topic: Development
 role: User
 level: Beginner
 exl-id: ee3dc77d-a888-473f-b2a6-7f7a4e969358
-source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '85'
 ht-degree: 0%
@@ -19,4 +19,4 @@ ht-degree: 0%
 
 다음 비디오에서는 DoR을 자동으로 생성하도록 적응형 양식을 만들고 구성하는 데 필요한 단계를 강조 표시합니다. 또한 AEM 워크플로우를 트리거하기 위해 적응형 양식을 구성하는 데 필요한 단계를 안내합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/38348/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38348?quality=12&learn=on)

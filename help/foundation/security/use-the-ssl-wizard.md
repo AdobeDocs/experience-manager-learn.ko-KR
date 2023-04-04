@@ -13,7 +13,7 @@ topic: Security
 role: Developer
 level: Beginner
 exl-id: 4e69e115-12a6-4a57-90da-b91e345c6723
-source-git-commit: 41be8c934bba16857d503398b5c7e327acd8d20b
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 0%
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 Adobe Experience Manager의 SSL 설정 마법사를 사용하여 HTTPS에서 실행할 AEM 인스턴스를 쉽게 설정할 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/17993/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/17993?quality=12&learn=on)
 
 를 엽니다. __SSL 구성 마법사__ 로 이동하여 직접 열 수 있습니다. __AEM 작성자 > 도구 > 보안 > SSL 구성__.
 

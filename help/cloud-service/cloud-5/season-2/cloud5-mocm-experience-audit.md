@@ -7,7 +7,7 @@ level: Intermediate
 thumbnail: 343620.jpeg
 hidefromtoc: true
 recommendations: noDisplay, noCatalog
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '57'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 세 부분으로 구성된 시리즈 중 하나에서 Cloud Manager의 기본 사항을 살펴보고 Experience Audit 기능에 집중합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/343620)
+>[!VIDEO](https://video.tv.adobe.com/v/343620?quality=12&learn=on)
 
 ## 이 비디오에서 다루는 컨텐츠
 

@@ -9,7 +9,7 @@ version: Cloud Service
 feature: Adaptive Forms
 topic: Development
 kt: 11019
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '50'
 ht-degree: 0%
@@ -20,4 +20,4 @@ ht-degree: 0%
 
 DoR을 추출하여 e-메일 첨부 파일로 전송 기능을 통해 자동 작업 과정을 수행할 수 있습니다.
 다음 비디오에서는 제출된 데이터에서 DoR을 추출하는 데 필요한 단계를 설명합니다
->[!VIDEO](https://video.tv.adobe.com/v/346731/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/346731?quality=12&learn=on)

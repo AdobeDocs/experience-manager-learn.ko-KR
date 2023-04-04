@@ -11,7 +11,7 @@ kt: 7498
 thumbnail: KT-7498.jpg
 exl-id: 261ec68f-36f4-474f-a6e4-7a2f9cea691b
 recommendations: noDisplay, noCatalog
-source-git-commit: de2fa2e4c29ce6db31233ddb1abc66a48d2397a6
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 1%
@@ -48,7 +48,7 @@ ht-degree: 1%
 
 다음으로, 모집단 구조와 일치하는 새 템플릿을 AEM에서 생성합니다. 이 문제는 AEM의 로컬 인스턴스에서 발생합니다. 아래 비디오에서 절차를 따르십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/332915/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/332915?quality=12&learn=on)
 
 다음 축소판을 사용하여 템플릿을 식별할 수 있습니다(또는 직접 업로드).
 
@@ -65,7 +65,7 @@ ht-degree: 1%
 
 사이트 템플릿에서 머리글 및 바닥글을 생성했습니다. 그런 다음 경험 조각을 업데이트하여 비웃는 내용과 일치시킵니다. 아래 비디오에서 절차를 따르십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/332916/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/332916?quality=12&learn=on)
 
 아래 비디오에 대한 높은 수준의 단계:
 
@@ -77,7 +77,7 @@ ht-degree: 1%
 
 그런 다음 Magazine Article Page 템플릿을 사용하여 새 페이지를 만듭니다. 사이트의 컨텐츠를 작성하여 사이트 모집단 과 일치시킵니다. 아래 비디오에서 절차를 따르십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/332917/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/332917?quality=12&learn=on)
 
 를 사용하십시오 [제공된 텍스트](./assets/page-templates/la-skateparks-copy.txt) 을 눌러 문서 본문을 채웁니다.
 

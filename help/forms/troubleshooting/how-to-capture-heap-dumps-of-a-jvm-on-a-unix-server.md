@@ -5,18 +5,18 @@ type: Troubleshooting
 role: Admin
 level: Intermediate
 version: 6.5
-topic: 관리
+topic: Administration
 index: y
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 6bb1d501-80c5-4f4d-af09-bbfcfcf51aa6
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '54'
-ht-degree: 1%
+source-wordcount: '53'
+ht-degree: 0%
 
 ---
-
 
 # unix 서버에서 JVM 힙을 캡처하는 방법
 
 *이 비디오에서는 unix 서버에서 JVM 힙을 캡처하는 단계를 안내합니다.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335489?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/335489?quality=12&learn=on)

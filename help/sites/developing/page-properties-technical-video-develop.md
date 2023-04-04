@@ -8,7 +8,7 @@ version: Cloud Service
 kt: 243
 thumbnail: 25173.jpg
 exl-id: 500f4e07-2686-42a2-8e44-d96dde02a112
-source-git-commit: 94a29a78edff17ec8089f7056dc118fd335ae484
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 사이트 구현에서는 페이지 속성에 대한 메타데이터 필드를 사용자 지정하는 것이 일반적인 요구 사항입니다. 이 비디오에서는 Sling Resource Merger 기능을 사용하여 이 작업을 수행하는 가장 효과적인 방법을 자세히 설명합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/25173?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/25173?quality=12&learn=on)
 
 위의 비디오에서는 [WKND 참조 사이트](https://github.com/adobe/aem-guides-wknd).
 

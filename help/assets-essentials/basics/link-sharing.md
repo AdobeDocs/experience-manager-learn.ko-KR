@@ -10,7 +10,7 @@ kt: 9763
 thumbnail: 341025.jpeg
 last-substantial-update: 2022-10-08T00:00:00Z
 exl-id: 719d3101-2c27-4165-a9d7-97e6f637d71f
-source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '64'
 ht-degree: 0%
@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Assets Essentials 공유 링크를 통해 사용자가 잘못된 자산 또는 정보를 공유하는 위험을 최소화하면서 내부 및 외부 이해 관계자와 자산을 공유할 수 있는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/341025/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/341025?quality=12&learn=on)

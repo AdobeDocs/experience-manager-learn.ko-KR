@@ -12,7 +12,7 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: fc321ed1-5cf7-4bbe-adc6-c4905af7b43c
-source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 0%
@@ -29,25 +29,25 @@ Apache Sling은 다른 웹 서비스 및 JavaScript 애플리케이션과 같은
 
 ## Sling 모델 익스포터에 대한 AEM 구성
 
->[!VIDEO](https://video.tv.adobe.com/v/16862/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/16862?quality=12&learn=on)
 
 [!DNL Sling Model Exporter] 는 의 기능입니다 [!DNL Apache Sling] AEM 제품 릴리스 주기에 직접 연결되지 않은 프로젝트 . [!DNL Sling Model Exporter] 는 AEM 6.3 이상과 호환됩니다.
 
 ## 용 사용 사례 [!DNL Sling Model Exporter]
 
->[!VIDEO](https://video.tv.adobe.com/v/16863/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/16863?quality=12&learn=on)
 
 [!DNL Sling Model Exporter] HTL(또는 이전 JSP)을 통해 HTML 변환을 지원하는 비즈니스 로직이 이미 포함되어 있으며 프로그래밍 방식의 웹 서비스 또는 JavaScript 애플리케이션에서 소비할 JSON과 동일한 비즈니스 표현을 표시하는 Sling 모델을 활용할 수 있습니다.
 
 ## Sling 모델 내보내기 만들기
 
->[!VIDEO](https://video.tv.adobe.com/v/16864/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/16864?quality=12&learn=on)
 
 활성화 [!DNL Exporter] 지원 [!DNL Sling Model] 는 `@Exporter` Java 클래스에 대한 주석.
 
 ## Sling 모델 내보내기 옵션 적용
 
->[!VIDEO](https://video.tv.adobe.com/v/16865/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/16865?quality=12&learn=on)
 
 [!DNL Sling Model Exporter] 는 내보내기 구현에 모델별 내보내기 옵션 전달을 지원하여 [!DNL Sling Model] 가 마지막으로 내보내집니다. 이러한 옵션은 일반적으로 [!DNL Sling Model] 를 내보내는 경우와 아래에 설명된 인라인 주석을 통해 수행할 수 있는 데이터 포인트마다 다릅니다.
 
@@ -58,7 +58,7 @@ Apache Sling은 다른 웹 서비스 및 JavaScript 애플리케이션과 같은
 
 ## 적용 중 [!DNL Jackson] 주석
 
->[!VIDEO](https://video.tv.adobe.com/v/16866/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/16866?quality=12&learn=on)
 
 내보내기 구현은 또한 보고서에서 인라인으로 적용할 수 있는 주석을 지원할 수 있습니다 [!DNL Sling Model] 클래스를 사용하면 데이터를 내보내는 방법을 보다 세밀하게 제어할 수 있습니다.
 

@@ -7,7 +7,7 @@ role: Developer
 level: Beginner
 kt: 5859
 thumbnail: 37324.jpg
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 3%
@@ -21,7 +21,7 @@ ht-degree: 3%
 여기서 만든 템플릿은 앞으로 적응형 양식의 기반이 됩니다.
 다음 비디오에서는 적응형 양식 템플릿을 만드는 기본 프로세스를 보여줍니다
 
->[!VIDEO](https://video.tv.adobe.com/v/37324/quality=9)
+>[!VIDEO](https://video.tv.adobe.com/v/37324?quality=12&learn=on)
 
 자세한 내용은 [적응형 양식 템플릿 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html) 자세한 내용
 

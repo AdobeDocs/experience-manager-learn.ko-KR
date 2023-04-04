@@ -14,7 +14,7 @@ role: Developer
 level: Intermediate, Experienced
 last-substantial-update: 2023-01-12T00:00:00Z
 exl-id: e2922278-4d0b-4f28-a999-90551ed65fb4
-source-git-commit: 1401710c19ae6ee6a2822ae06286bef4f92cda45
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1937'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 AEM(Adobe Experience Manager) as a Cloud Service와의 통합에서는 AEM 서비스를 안전하게 인증할 수 있어야 합니다. AEM 개발자 콘솔에서는 HTTP를 통해 AEM 작성자 또는 게시 서비스와 프로그래밍 방식으로 상호 작용할 수 있도록 외부 애플리케이션, 시스템 및 서비스를 제공하는 데 사용되는 서비스 자격 증명에 대한 액세스 권한을 부여합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/330519/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330519?quality=12&learn=on)
 
 서비스 자격 증명은 유사한 것으로 나타날 수 있습니다 [로컬 개발 액세스 토큰](./local-development-access-token.md) 그러나 몇 가지 주요 방식에서는 다릅니다.
 
