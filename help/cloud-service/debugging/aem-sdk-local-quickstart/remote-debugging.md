@@ -8,9 +8,9 @@ role: Developer
 level: Beginner, Intermediate
 thumbnail: 34338.jpeg
 exl-id: beac60c6-11ae-4d0c-a055-cd3d05aeb126
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 45e7c58efd1d89537752fe7f890c0e80f7be7d67
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '280'
 ht-degree: 0%
 
 ---
@@ -24,11 +24,13 @@ AEM SDK의 로컬 빠른 시작을 사용하면 IDE에서 원격 Java 디버깅�
 원격 디버거를 AEM에 연결하려면 AEM SDK의 로컬 빠른 시작을 특정 매개 변수( )로 시작해야 합니다`-agentlib:...`) IDE에서 연결할 수 있도록 허용합니다.
 
 ```
-$ java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005 -jar aem-author-p4502.jar   
+$ java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005 -jar aem-author-p4502.jar   
 ```
 
++ AEM SDK는 Java 11만 지원합니다
 + `address` AEM이 원격 디버그 연결을 위해 수신 대기하는 포트를 지정하고 로컬 개발 시스템에서 사용 가능한 포트로 변경할 수 있습니다.
 + 마지막 매개 변수(예: `aem-author-p4502.jar`)은 AEM SKD Quickstart Jar입니다. AEM 작성자 서비스(`aem-author-p4502.jar`) 또는 AEM 게시 서비스(`aem-publish-p4503.jar`).
+
 
 ## IDE 설정 지침
 
