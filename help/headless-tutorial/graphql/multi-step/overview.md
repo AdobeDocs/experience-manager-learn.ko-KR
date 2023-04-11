@@ -1,5 +1,5 @@
 ---
-title: AEM 헤드리스 실습 자습서 - GraphQL 시작하기
+title: AEM 헤드리스 실습 자습서 - GraphQL
 description: AEM GraphQL API를 사용하여 컨텐츠를 작성하고 노출하는 방법을 소개하는 종단간 자습서입니다.
 doc-type: tutorial
 mini-toc-levels: 1
@@ -11,18 +11,18 @@ role: Developer
 level: Beginner
 last-substantial-update: 2022-10-17T00:00:00Z
 exl-id: 41e15a2c-758b-4e7d-9d23-ef671c1dc155
-source-git-commit: 1ecd3c761ea7c79036b263ff8528a6cd01af0e76
+source-git-commit: 38a35fe6b02e9aa8c448724d2e83d1aefd8180e7
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 1%
+source-wordcount: '287'
+ht-degree: 4%
 
 ---
 
-# AEM 헤드리스 시작하기 - GraphQL
+# AEM Headless 시작하기 - GraphQL
 
-AEM GraphQL API를 사용하여 컨텐츠를 작성하고 노출하고 헤드리스 CMS 시나리오에서 외부 앱에서 사용하는 방법을 소개하는 종단간 자습서입니다.
+헤드리스 CMS 시나리오에서 AEM GraphQL API를 사용하여 콘텐츠를 작성하고 노출하고 외부 앱에서 사용하는 방법을 소개하는 종단간 자습서입니다.
 
-이 자습서에서는 AEM GraphQL API 및 헤드리스 기능을 사용하여 외부 앱에서 노출되는 경험을 향상시키는 방법을 설명합니다.
+이 자습서에서는 AEM GraphQL API 및 헤드리스 기능을 사용하여 외부 앱에서 보이는 경험을 제공하는 방법을 설명합니다.
 
 이 자습서에서는 다음 주제를 다룹니다.
 
@@ -30,9 +30,8 @@ AEM GraphQL API를 사용하여 컨텐츠를 작성하고 노출하고 헤드리
 * 컨텐츠 조각 모델을 만들어 데이터를 모델링합니다
 * 이전에 만든 모델을 기반으로 컨텐츠 조각을 만듭니다.
 * 통합 GraphiQL 개발 도구를 사용하여 AEM에서 컨텐츠 조각을 쿼리할 수 있는 방법을 알아봅니다.
-* GraphQL 쿼리를 AEM에 저장하거나 유지하려면
-* 샘플 React 앱에서 지속적인 GraphQL 쿼리 사용
-
+* AEM에 GraphQL 쿼리를 저장하거나 유지하려면
+* 샘플 React 앱에서 지속된 GraphQL 쿼리 사용
 
 ## 사전 요구 사항 {#prerequisites}
 
@@ -40,8 +39,7 @@ AEM GraphQL API를 사용하여 컨텐츠를 작성하고 노출하고 헤드리
 
 * 기본 HTML 및 JavaScript 기술
 * 다음 도구는 로컬로 설치해야 합니다.
-   * [Node.js v14+](https://nodejs.org/en/)
-   * [npm 6+](https://www.npmjs.com/)
+   * [Node.js v18](https://nodejs.org/)
    * [Git](https://git-scm.com/)
    * IDE(예: [Microsoft® Visual Studio 코드](https://code.visualstudio.com/))
 

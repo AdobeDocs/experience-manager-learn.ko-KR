@@ -1,5 +1,5 @@
 ---
-title: 로컬 SDK를 사용하여 AEM Headless 빠른 설정
+title: 로컬 AEM SDK를 사용하여 AEM 헤드리스 빠른 설정
 description: Adobe Experience Manager(AEM) 및 GraphQL을 시작합니다. AEM SDK를 설치하고, 샘플 컨텐츠를 추가하고, GraphQL API를 사용하여 AEM의 컨텐츠를 사용하는 애플리케이션을 배포합니다. AEM이 옴니채널 경험을 가능하게 하는 방법을 참조하십시오.
 version: Cloud Service
 mini-toc-levels: 1
@@ -10,14 +10,14 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: d2da6efa-1f77-4391-adda-e3180c42addc
-source-git-commit: f63ed212a5a8a6689b25bd0bc9438c605a129729
+source-git-commit: 38a35fe6b02e9aa8c448724d2e83d1aefd8180e7
 workflow-type: tm+mt
-source-wordcount: '1256'
-ht-degree: 1%
+source-wordcount: '1257'
+ht-degree: 2%
 
 ---
 
-# 로컬 SDK를 사용하여 AEM Headless 빠른 설정 {#setup}
+# 로컬 AEM SDK를 사용하여 AEM 헤드리스 빠른 설정 {#setup}
 
 AEM Headless 빠른 설정을 사용하면 WKND Site 샘플 프로젝트의 컨텐츠와 AEM Headless GraphQL API를 통해 컨텐츠를 소비하는 샘플 React App (a SPA)을 직접 사용할 수 있습니다. 이 안내서에서는 [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html).
 
@@ -26,7 +26,7 @@ AEM Headless 빠른 설정을 사용하면 WKND Site 샘플 프로젝트의 컨�
 다음 도구는 로컬에 설치해야 합니다.
 
 * [JDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atologing&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%3AlastModified&amp;orderby.sort=desc&amp;layout=0&amp;p.offset=0&amp;p.limit=0&amp;limit=1)
-* [Node.js v14.x](https://nodejs.org/en/)
+* [Node.js v18](https://nodejs.org/en/)
 * [Git](https://git-scm.com/)
 
 ## 1. AEM SDK를 설치합니다. {#aem-sdk}

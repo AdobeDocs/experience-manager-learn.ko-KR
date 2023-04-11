@@ -1,6 +1,6 @@
 ---
 title: iOS 앱 - AEM Headless 예
-description: 예제 애플리케이션은 AEM(Adobe Experience Manager)의 헤드리스 기능을 살펴보는 좋은 방법입니다. 이 iOS 응용 프로그램은 지속적인 쿼리를 사용하여 AEM GraphQL API를 사용하여 콘텐츠를 쿼리하는 방법을 보여 줍니다.
+description: 예제 애플리케이션은 AEM(Adobe Experience Manager)의 헤드리스 기능을 살펴보는 좋은 방법입니다. 이 iOS 애플리케이션은 지속된 쿼리를 사용하여 AEM GraphQL API를 사용하여 컨텐츠를 쿼리하는 방법을 보여줍니다.
 version: Cloud Service
 mini-toc-levels: 2
 kt: 10587
@@ -10,7 +10,7 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 6c5373db-86ec-410b-8a3b-9d4f86e06812
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 38a35fe6b02e9aa8c448724d2e83d1aefd8180e7
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 4%
@@ -19,7 +19,7 @@ ht-degree: 4%
 
 # iOS 앱
 
-예제 애플리케이션은 AEM(Adobe Experience Manager)의 헤드리스 기능을 살펴보는 좋은 방법입니다. 이 iOS 응용 프로그램은 지속적인 쿼리를 사용하여 AEM GraphQL API를 사용하여 콘텐츠를 쿼리하는 방법을 보여 줍니다.
+예제 애플리케이션은 AEM(Adobe Experience Manager)의 헤드리스 기능을 살펴보는 좋은 방법입니다. 이 iOS 애플리케이션은 지속된 쿼리를 사용하여 AEM GraphQL API를 사용하여 컨텐츠를 쿼리하는 방법을 보여줍니다.
 
 ![AEM Headless를 사용한 iOS SwiftUI 앱](./assets/ios-swiftui-app/ios-app.png)
 
@@ -29,7 +29,7 @@ ht-degree: 4%
 
 다음 도구는 로컬에 설치해야 합니다.
 
-+ [Xcode 9.3+](https://developer.apple.com/xcode/) (macOS 필요)
++ [Xcode](https://developer.apple.com/xcode/) (macOS 필요)
 + [Git](https://git-scm.com/)
 
 ## AEM 요구 사항
@@ -37,8 +37,8 @@ ht-degree: 4%
 iOS 애플리케이션은 다음 AEM 배포 옵션을 사용하여 작동합니다. 모든 배포에는 [WKND 사이트 v2.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) 설치
 
 + [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
-+ 를 사용하여 로컬 설정 [AEM Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
-+ [AEM 6.5 SP13+ QuickStart](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=en#install-local-aem-instances)
++ 를 사용하여 로컬 설정 [AEM Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=ko-KR)
++ [AEM 6.5 SP13+ QuickStart](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=ko-KR?lang=en#install-local-aem-instances)
 
 iOS 애플리케이션은 __AEM 게시__ 그러나 iOS 애플리케이션의 구성에 인증이 제공되면 AEM 작성자의 컨텐츠를 소스 지정할 수 있습니다.
 
@@ -64,7 +64,7 @@ iOS 애플리케이션은 __AEM 게시__ 그러나 iOS 애플리케이션의 구
 
    __기본 인증__
 
-   다음 `AEM_USERNAME` 및 `AEM_PASSWORD` WKND GraphQL 컨텐츠에 액세스할 수 있는 로컬 AEM 사용자를 인증합니다.
+   다음 `AEM_USERNAME` 및 `AEM_PASSWORD` WKND GraphQL 컨텐츠에 대한 액세스 권한을 사용하여 로컬 AEM 사용자를 인증합니다.
 
    ```plain
    AEM_AUTH_TYPE = basic
@@ -86,7 +86,7 @@ iOS 애플리케이션은 __AEM 게시__ 그러나 iOS 애플리케이션의 구
 
 ## 코드
 
-다음은 iOS 애플리케이션이 빌드되는 방법, GraphQL 지속적인 쿼리를 사용하여 컨텐츠를 검색하기 위해 AEM Headless에 연결하는 방법 및 해당 데이터가 표시되는 방법에 대한 요약입니다. 전체 코드는 [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/ios-app).
+다음은 iOS 애플리케이션이 빌드되는 방법, AEM Headless에 연결하여 GraphQL 지속적인 쿼리를 사용하여 컨텐츠를 검색하는 방법 및 데이터가 표시되는 방법에 대한 요약입니다. 전체 코드는 [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/ios-app).
 
 ### 지속되는 쿼리
 
@@ -268,7 +268,7 @@ SwiftUI는 애플리케이션의 다양한 보기에 사용됩니다. Apple은 �
 
 ### 원격 이미지
 
-모험 컨텐츠 조각에서 참조하는 이미지는 AEM에서 제공합니다. 이 iOS 앱에서는 경로를 사용합니다 `_path` GraphQL 응답의 필드를 작성하고 접두사를 지정합니다 `AEM_SCHEME` 및 `AEM_HOST` 를 입력하여 정규화된 URL을 생성합니다.
+모험 컨텐츠 조각에서 참조하는 이미지는 AEM에서 제공합니다. 이 iOS 앱에서는 경로를 사용합니다 `_path` GraphQL 응답의 필드 및 접두사 `AEM_SCHEME` 및 `AEM_HOST` 를 입력하여 정규화된 URL을 생성합니다.
 
 인증이 필요한 AEM에서 보호된 리소스에 연결하는 경우 이미지 요청에도 자격 증명을 추가해야 합니다.
 
@@ -324,5 +324,5 @@ SwiftUI 기반의 네이티브 와 유사한 접근 방식을 사용할 수 있�
 
 ## 추가 리소스
 
-+ [AEM 헤드리스 시작하기 - GraphQL 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html)
++ [AEM Headless 시작하기 - GraphQL 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=ko-KR)
 + [SwiftUI 목록 및 탐색 자습서](https://developer.apple.com/tutorials/swiftui/building-lists-and-navigation)

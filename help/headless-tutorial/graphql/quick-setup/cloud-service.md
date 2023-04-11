@@ -9,9 +9,9 @@ level: Beginner
 kt: 9442
 thumbnail: 339073.jpg
 exl-id: 62e807b7-b1a4-4344-9b1e-2c626b869e10
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 38a35fe6b02e9aa8c448724d2e83d1aefd8180e7
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1081'
 ht-degree: 2%
 
 ---
@@ -29,8 +29,7 @@ AEM Headless 빠른 설정을 사용하면 WKND Site 샘플 프로젝트의 컨�
    + __AEM 관리자__ AEM as a Cloud Service 액세스
    + __Cloud Manager - 배포 관리자__ cloud Manager 액세스
 + 다음 도구는 로컬로 설치해야 합니다.
-   + [Node.js v10+](https://nodejs.org/en/)
-   + [npm 6+](https://www.npmjs.com/)
+   + [Node.js v18](https://nodejs.org/en/)
    + [Git](https://git-scm.com/)
    + IDE(예: [Microsoft® Visual Studio 코드](https://code.visualstudio.com/))
 

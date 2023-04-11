@@ -8,16 +8,16 @@ role: Developer
 level: Beginner
 kt: 10798
 thumbnail: KT-10798.jpg
-source-git-commit: b98f567e05839db78a1a0a593c106b87af931a49
+source-git-commit: 38a35fe6b02e9aa8c448724d2e83d1aefd8180e7
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 3%
+source-wordcount: '472'
+ht-degree: 5%
 
 ---
 
 # 서버 간 Node.js 앱
 
-예제 애플리케이션은 AEM(Adobe Experience Manager)의 헤드리스 기능을 살펴보는 좋은 방법입니다. 이 서버 간 응용 프로그램은 지속적인 쿼리를 사용하여 AEM GraphQL API를 사용하여 컨텐츠를 쿼리하고 터미널에서 인쇄하는 방법을 보여 줍니다.
+예제 애플리케이션은 AEM(Adobe Experience Manager)의 헤드리스 기능을 살펴보는 좋은 방법입니다. 이 서버 간 응용 프로그램은 지속적인 쿼리를 사용하여 AEM GraphQL API를 사용하여 콘텐츠를 쿼리하고 터미널에서 인쇄하는 방법을 보여줍니다.
 
 ![AEM Headless를 사용한 서버 간 Node.js 앱](./assets/server-to-server-app/server-to-server-app.png)
 
@@ -27,8 +27,7 @@ ht-degree: 3%
 
 다음 도구는 로컬에 설치해야 합니다.
 
-+ [Node.js v10+](https://nodejs.org/en/)
-+ [npm 6+](https://www.npmjs.com/)
++ [Node.js v18](https://nodejs.org/en/)
 + [Git](https://git-scm.com/)
 
 ## AEM 요구 사항
@@ -77,13 +76,13 @@ Node.js 응용 프로그램은 다음 AEM 배포 옵션과 함께 작동합니�
 
 ## 코드
 
-다음은 서버 간 Node.js 애플리케이션이 빌드되는 방법, GraphQL 지속적인 쿼리를 사용하여 컨텐츠를 검색하기 위해 AEM Headless에 연결되는 방법 및 데이터가 표시되는 방법에 대한 요약입니다. 전체 코드는 [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/server-to-server-app).
+다음은 서버 간 Node.js 애플리케이션 작성 방법, GraphQL 지속적인 쿼리를 사용하여 컨텐츠를 검색하기 위해 AEM Headless에 연결하는 방법 및 데이터가 표시되는 방법에 대한 요약입니다. 전체 코드는 [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/server-to-server-app).
 
 서버 간 AEM 헤드리스 앱의 일반적인 사용 사례는 AEM의 컨텐츠 조각 데이터를 다른 시스템으로 동기화하는 것입니다. 그러나 이 애플리케이션은 의도적으로 간단하며 지속된 쿼리의 JSON 결과를 인쇄합니다.
 
 ### 지속되는 쿼리
 
-AEM 헤드리스 우수 사례에 따라 이 애플리케이션은 AEM GraphQL 지속적인 쿼리를 사용하여 모험 데이터를 쿼리합니다. 이 응용 프로그램에서는 다음과 같은 두 가지 지속적인 쿼리를 사용합니다.
+AEM Headless 우수 사례에 따라 이 애플리케이션은 AEM GraphQL 지속된 쿼리를 사용하여 모험 데이터를 쿼리합니다. 이 응용 프로그램에서는 다음과 같은 두 가지 지속적인 쿼리를 사용합니다.
 
 + `wknd/adventures-all` AEM의 모든 모험을 반환하는 질의가 완료된 속성 집합을 사용하여 유지됩니다. 이렇게 지속된 쿼리가 초기 보기의 모험 목록을 구동합니다.
 
@@ -143,9 +142,9 @@ async function run() {
 
 ### GraphQL 지속적인 쿼리 실행
 
-AEM 지속적인 쿼리는 HTTP GET을 통해 실행되므로 [Node.js용 AEM Headless 클라이언트](https://github.com/adobe/aem-headless-client-nodejs) 에 사용됩니다. [지속된 GraphQL 쿼리 실행](https://github.com/adobe/aem-headless-client-nodejs#within-asyncawait) AEM에 대해 를 검색하고 모험 컨텐츠를 검색합니다.
+AEM 지속적인 쿼리는 HTTP GET을 통해 실행되므로 [Node.js용 AEM Headless 클라이언트](https://github.com/adobe/aem-headless-client-nodejs) 에 사용됩니다. [지속되는 GraphQL 쿼리 실행](https://github.com/adobe/aem-headless-client-nodejs#within-asyncawait) AEM에 대해 를 검색하고 모험 컨텐츠를 검색합니다.
 
-지속형 쿼리는 `aemHeadlessClient.runPersistedQuery(...)`, 그리고 지속형 GraphQL 쿼리 이름을 전달합니다. GraphQL이 데이터를 반환하면 간소화된 `doSomethingWithDataFromAEM(..)` 이 함수는 결과를 출력하지만 일반적으로 데이터를 다른 시스템으로 보내거나 검색된 데이터를 기반으로 일부 출력을 생성합니다.
+지속형 쿼리는 `aemHeadlessClient.runPersistedQuery(...)`, 지속형 GraphQL 쿼리 이름을 전달합니다. GraphQL이 데이터를 반환하면 간소화된 `doSomethingWithDataFromAEM(..)` 이 함수는 결과를 출력하지만 일반적으로 데이터를 다른 시스템으로 보내거나 검색된 데이터를 기반으로 일부 출력을 생성합니다.
 
 ```js
 // index.js
