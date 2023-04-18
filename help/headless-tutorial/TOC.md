@@ -1,7 +1,7 @@
 ---
-user-guide-title: AEM 헤드리스 시작하기
+user-guide-title: AEM Headless 시작하기
 user-guide-description: AEM Headless를 사용하여 콘텐츠를 작성하고 노출하는 방법을 소개하는 종단간 튜토리얼입니다.
-breadcrumb-title: AEM 헤드리스 튜토리얼
+breadcrumb-title: AEM Headless 튜토리얼
 feature-set: Experience Manager, Experience Manager Assets, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.5, Cloud Service
@@ -15,7 +15,7 @@ ht-degree: 20%
 ---
 
 
-# AEM 헤드리스 시작하기{#getting-started-with-aem-headless}
+# AEM Headless 시작하기{#getting-started-with-aem-headless}
 
 + [AEM Headless 개요](./overview.md)
 + GraphQL {#graphql}
