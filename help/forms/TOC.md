@@ -7,10 +7,10 @@ breadcrumb-title: AEM Forms 튜토리얼
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: d3531e76d3341e0964e5ed878fc72037024a11fd
+source-git-commit: 155e6e42d4251b731d00e2b456004016152f81fe
 workflow-type: tm+mt
-source-wordcount: '1784'
-ht-degree: 3%
+source-wordcount: '1806'
+ht-degree: 4%
 
 ---
 
@@ -152,7 +152,7 @@ ht-degree: 3%
    + [적응형 양식 만들기 및 구성](aem-forms-and-adobe-sign/create-and-configure-adaptive-form.md)
    + [단일 서명자에 대한 적응형 양식 구성](aem-forms-and-adobe-sign/configure-adaptive-form-for-single-signer.md)
    + [서명자 2명을 위한 적응형 양식 구성](aem-forms-and-adobe-sign/configure-adaptive-form-for-two-signers.md)
-   + [automated forms conversion 서비스 구성](aem-forms-and-adobe-sign/configure-automated-forms-conversion-service.md)
+   + [자동 양식 전환 서비스 구성](aem-forms-and-adobe-sign/configure-automated-forms-conversion-service.md)
    + [PDF 양식을 적응형 양식으로 변환](aem-forms-and-adobe-sign/convert-pdf-form-into-adaptive-form.md)
    + [변환된 적응형 양식 구성](aem-forms-and-adobe-sign/configure-converted-adaptive-form.md)
    + [Acrobat Sign에서 XDP 템플릿 사용](aem-forms-and-adobe-sign/using-xdp-templates-with-adobe-sign.md)
@@ -230,7 +230,12 @@ ht-degree: 3%
    + [워크플로우 구성 요소 만들기](welcome-kit/create-workflow-component.md)
    + [솔루션 테스트](welcome-kit/testing-the-solution.md)
 
-
++ Forms 및 Acrobat Sign과 반응형 앱 {#react-ic-sign}
+   + [소개](react-ic-sign/introduction.md)
+   + [IC 문서 생성](react-ic-sign/create-ic-document.md)
+   + [Acrobat Sign API 래퍼](react-ic-sign/wrapper-sign-api.md)
+   + [서명 위젯 생성](react-ic-sign/create-servlet-to-expose-endpoint.md)
+   + [샘플 자산 배포](react-ic-sign/deploy-assets-on-your-server.md)
 + 문서 서비스 {#document-services}
    + [PDF forms 유형](document-services/pdf-forms-and-documents.md)
    + [적응형 양식에 pdf 포함](document-services/embed-pdf-inline.md)
