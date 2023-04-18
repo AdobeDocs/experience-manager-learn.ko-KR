@@ -8,7 +8,7 @@ role: Developer
 level: Beginner
 kt: 13099
 last-substantial-update: 2023-04-13T00:00:00Z
-source-git-commit: 155e6e42d4251b731d00e2b456004016152f81fe
+source-git-commit: 1011c700a33b932c3c0a766727fc1d90bf2940f4
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 0%
@@ -26,7 +26,8 @@ ht-degree: 0%
 ## Acrobat Sign OSGi 구성 만들기
 
 Acrobat Sign REST API에는 통합 키와 연결된 통합 키 및 이메일이 필요합니다. 이 두 값은 아래 표시된 대로 OSGi 구성 속성으로 제공됩니다
-![sign-configuration](assets/sign-configuration.jpg)
+
+![sign-configuration](assets/sign-configuration.png)
 
 ```java
 package com.acrobatsign.core.configuration;

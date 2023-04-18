@@ -5,10 +5,10 @@ breadcrumb-title: AEM as a Cloud Service 튜토리얼
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 9917b16248ef1f0a9c86f03a024c634636b2304e
+source-git-commit: 1011c700a33b932c3c0a766727fc1d90bf2940f4
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 23%
+source-wordcount: '932'
+ht-degree: 22%
 
 ---
 
@@ -114,7 +114,7 @@ ht-degree: 23%
       + [개발자 콘솔](./debugging/cloud-service/developer-console.md)
       + [저장소 브라우저](./debugging/cloud-service/repository-browser.md)
       + 위험{#risks}
-         + [탐색 경고](./debugging/cloud-service/risks/traversals.md)
+         + [순회 경고](./debugging/cloud-service/risks/traversals.md)
 + 컨텐츠 전달{#content-delivery}
    + [URL 리디렉션](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/url-redirection.html)
 + AEM 액세스{#accessing}
@@ -259,6 +259,9 @@ ht-degree: 23%
       + [양식 데이터 모델 만들기](./forms/integrate-with-salesforce/create-form-data-model.md)
       + [테스트 양식 제출](./forms/integrate-with-salesforce/create-lead-submitting-form.md)
       + [테스트 클릭 이벤트](./forms/integrate-with-salesforce/create-lead-click-event.md)
+   + 하나의 드라이브 및 Sharepoint에 양식 제출을 저장합니다.{#one-drive}
+      + [한 드라이브에 양식 데이터 저장](./forms/forms-cs-one-drive/store-form-submission-one-drive.md)
+      + [Sharepoint에 양식 데이터 저장](./forms/forms-cs-sharepoint/store-form-submission-in-sharepoint.md)
 + asset compute 확장성{#asset-compute}
    + [개요](./asset-compute/overview.md)
    + 설정{#set-up}
