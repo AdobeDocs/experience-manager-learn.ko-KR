@@ -8,9 +8,9 @@ role: Developer, Architect
 level: Intermediate
 kt: 10830
 thumbnail: KT-10830.jpg
-source-git-commit: 6f1000db880c3126a01fa0b74abdb39ffc38a227
+source-git-commit: cc78e59fe70686e909928e407899fcf629a651b9
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '619'
 ht-degree: 1%
 
 ---
@@ -19,6 +19,8 @@ ht-degree: 1%
 # CORS(원본 간 리소스 공유)
 
 Adobe Experience Manager as a Cloud Service의 CORS(Cross-Origin Resource Sharing)를 사용하면 AEM GraphQL API를 통해 브라우저 기반 클라이언트측 호출을 수행할 수 있도록 AEM이 아닌 웹 속성을 사용할 수 있습니다.
+
+다음 문서에서는 _단일 원본_ CORS를 통해 AEM 헤드리스 특정 엔드포인트 세트에 대한 액세스. 단일 원본은 AEM이 아닌 단일 도메인만 AEM에 액세스함을 의미합니다(예: https://app.example.com에 연결 https://www.example.com). 캐싱 문제로 인해 이 방법을 사용하면 다중 원본 액세스가 작동하지 않을 수 있습니다.
 
 >[!TIP]
 >
@@ -63,7 +65,6 @@ AEM CORS OSGi 구성 팩토리는 CORS HTTP 요청을 수락하기 위한 허용
     "https://spa.external.com/"
   ],
   "alloworiginregexp":[
-    "http://localhost:.*"
   ],
   "allowedpaths": [
     "/graphql/execute.json.*",
@@ -127,7 +128,7 @@ CORS 구성이 필요한 AEM GraphQL API에 대한 인증된 요청은 일반적
 
 AEM 게시(및 미리 보기) 서비스의 Dispatcher는 CORS를 지원하도록 구성해야 합니다.
 
-| 클라이언트 연결 대상 | AEM 작성자 | AEM 게시 | AEM 미리 보기 |
+| 클라이언트 연결 대상 | AEM Author | AEM 게시 | AEM 미리 보기 |
 |-------------------------------------:|:----------:|:-------------:|:-------------:|
 | Dispatcher CORS 구성 필요 | ✘ | ✔ | ✔ |
 
