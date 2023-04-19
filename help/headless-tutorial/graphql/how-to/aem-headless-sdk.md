@@ -9,10 +9,10 @@ level: Intermediate
 kt: 10269
 thumbnail: KT-10269.jpeg
 exl-id: 922a464a-2286-4132-9af8-f5a1fb5ce268
-source-git-commit: 595d990b7d8ed3c801a085892fef38d780082a15
+source-git-commit: 31948793786a2c430533d433ae2b9df149ec5fc0
 workflow-type: tm+mt
-source-wordcount: '415'
-ht-degree: 4%
+source-wordcount: '454'
+ht-degree: 10%
 
 ---
 
@@ -23,12 +23,12 @@ AEM Headless SDK는 클라이언트가 HTTP를 통해 AEM Headless API와 빠르
 AEM Headless SDK는 다음과 같은 다양한 플랫폼에서 사용할 수 있습니다.
 
 + [클라이언트측 브라우저용 AEM Headless SDK (JavaScript)](https://github.com/adobe/aem-headless-client-js)
-+ [server-side/Node.js용 AEM Headless SDK (JavaScript)](https://github.com/adobe/aem-headless-client-nodejs)
++ [서버측/Node.js용 AEM Headless SDK (JavaScript)](https://github.com/adobe/aem-headless-client-nodejs)
 + [Java™용 AEM Headless SDK](https://github.com/adobe/aem-headless-client-java)
 
 ## 지속 GraphQL 쿼리
 
-지속형 쿼리를 사용하여 AEM 쿼리(과 대조적으로) [클라이언트 정의 GraphQL 쿼리](#graphl-queries))을 사용하면 개발자가 AEM에서 쿼리(결과가 아님)를 지속한 다음 이름별로 쿼리 실행을 요청할 수 있습니다. 지속되는 쿼리는 SQL 데이터베이스의 저장 프로시저 개념과 유사합니다.
+지속되는 쿼리를 사용하여 AEM 쿼리(과 대조적으로) [클라이언트 정의 GraphQL 쿼리](#graphl-queries))을 사용하면 개발자가 AEM에서 쿼리(결과가 아님)를 지속한 다음 이름별로 쿼리 실행을 요청할 수 있습니다. 지속되는 쿼리는 SQL 데이터베이스의 저장 프로시저 개념과 유사합니다.
 
 지속되는 쿼리는 CDN 및 AEM Dispatcher 계층에서 캐시 가능한 HTTP GET을 사용하여 실행되므로 클라이언트 정의 GraphQL 쿼리보다 성능이 향상됩니다. 지속형 쿼리는 적용되며 API를 정의하고 개발자가 각 컨텐츠 조각 모델의 세부 사항을 이해할 필요가 있음을 설명합니다.
 
@@ -95,9 +95,9 @@ let { data, errors } = executePersistedQuery('wknd-shared/adventures-by-slug', {
 $ npm i @adobe/aem-headless-client-js
 ```
 
-이 코드 예는 를 사용하는 방법을 보여줍니다. [React useEffect(..) 후크](https://reactjs.org/docs/hooks-effect.html) AEM GraphQL에 대한 비동기 호출을 실행할 수 있습니다.
+이 코드 예는 를 사용하는 방법을 보여줍니다. [React useEffect(..) 후크](https://reactjs.org/docs/hooks-effect.html) AEM GraphQL에 대한 비동기 호출을 실행하려면
 
-사용 `useEffect` React의 비동기 GraphQL 호출이 유용하게 사용될 수 있는 방법은 다음과 같습니다.
+사용 `useEffect` React의 비동기 GraphQL 호출을 사용하면 다음과 같은 이유로 유용합니다.
 
 1. AEM에 대한 비동기 호출의 동기 래퍼를 제공합니다.
 1. AEM에 불필요한 요청을 줄여줍니다.
@@ -201,5 +201,39 @@ let { data, errors } = useAdventureBySlug('bali-surf-camp');
 
 ## GraphQL 쿼리
 
-AEM은 클라이언트 정의 GraphQL 쿼리를 지원하지만 AEM에서 사용하는 가장 좋은 방법입니다 [지속된 GraphQL 쿼리](#persisted-graphql-queries).
+AEM은 클라이언트 정의 GraphQL 쿼리를 지원하지만, 사용하는 것은 AEM 우수 사례입니다 [지속된 GraphQL 쿼리](#persisted-graphql-queries).
 
+## 웹 팩 5+
+
+AEM Headless JS SDK는 `util` 기본적으로 웹 팩 5+에 포함되지 않은 버전입니다. Webpack 5 이상을 사용 중인 경우 다음 오류를 수신하십시오.
+
+```
+Compiled with problems:
+× ERROR in ./node_modules/@adobe/aio-lib-core-errors/src/AioCoreSDKErrorWrapper.js 12:13-28
+Module not found: Error: Can't resolve 'util' in '/Users/me/Code/wknd-headless-examples/node_modules/@adobe/aio-lib-core-errors/src'
+
+BREAKING CHANGE: webpack < 5 used to include polyfills for node.js core modules by default.
+This is no longer the case. Verify if you need this module and configure a polyfill for it.
+
+If you want to include a polyfill, you need to:
+    - add a fallback 'resolve.fallback: { "util": require.resolve("util/") }'
+    - install 'util'
+If you don't want to include a polyfill, you can use an empty module like this:
+    resolve.fallback: { "util": false }
+```
+
+다음을 추가합니다 `devDependencies` 아래와 같이 `package.json` 파일:
+
+```json
+  "devDependencies": {
+    "buffer": "npm:buffer@^6.0.3",
+    "crypto": "npm:crypto-browserify@^3.12.0",
+    "http": "npm:stream-http@^3.2.0",
+    "https": "npm:https-browserify@^1.0.0",
+    "stream": "npm:stream-browserify@^3.0.0",
+    "util": "npm:util@^0.12.5",
+    "zlib": "npm:browserify-zlib@^0.2.0"
+  },
+```
+
+그런 다음 를 실행합니다 `npm install` 종속성을 설치하려면 다음을 수행하십시오.
