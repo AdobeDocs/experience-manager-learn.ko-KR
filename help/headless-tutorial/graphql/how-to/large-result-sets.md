@@ -10,10 +10,10 @@ doc-type: Article
 last-substantial-update: 2023-04-14T00:00:00Z
 jira: KT-13102
 thumbnail: 3418381.jpeg
-source-git-commit: 31948793786a2c430533d433ae2b9df149ec5fc0
+source-git-commit: 9eb706e49f12a3ebd5222e733f540db4cf2c8748
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -34,9 +34,11 @@ AEM Headless는 [오프셋/한도](#list-query) 및 [커서 기반 페이지 매
 
 큰 데이터 세트로 작업할 때 오프셋과 제한 및 커서 기반 페이지 매김 모두를 사용하여 데이터의 특정 하위 집합을 검색할 수 있습니다. 그러나 특정 상황에서 한 가지 더 적절한 방법을 만들 수 있는 두 기법 간에는 몇 가지 차이점이 있습니다.
 
-### 목록 쿼리
+### 오프셋/제한
 
 쿼리 나열, `limit` 및 `offset` 시작 지점(`offset`) 및 검색할 레코드 수(`limit`). 이 방법을 사용하면 특정 결과 페이지로 이동하는 것과 같이 전체 결과 세트 내의 어디에서든지 결과 하위 집합을 선택할 수 있습니다. 구현이 쉽지만 많은 레코드를 검색하려면 이전 기록을 모두 검색해야 하므로 많은 결과를 처리할 때 속도가 느리고 비효율적일 수 있습니다. 이 접근 방식을 사용하면 오프셋 값이 높으면 많은 결과를 검색하고 폐기해야 하므로 성능 문제가 발생할 수도 있습니다.
+
+#### GraphQL 쿼리
 
 ```graphql
 # Retrieves a list of Adventures sorted price descending, and title ascending if there is the prices are the same.
@@ -51,7 +53,7 @@ query adventuresByOffetAndLimit($offset:Int!, $limit:Int) {
   }
 ```
 
-#### 쿼리 변수
+##### 쿼리 변수
 
 ```json
 {
@@ -60,7 +62,7 @@ query adventuresByOffetAndLimit($offset:Int!, $limit:Int) {
 }
 ```
 
-### 목록 응답
+#### GraphQL 응답
 
 그 결과 JSON 응답에는 두 번째, 세 번째, 네 번째 및 다섯 번째 가장 비싼 모험이 포함되어 있습니다. 그 결과 처음 두 번의 모험은 같은 가격입니다(`4500` 그래서 [목록 쿼리](#list-queries) 동일한 가격의 모험을 지정한 다음 제목별로 오름차순으로 정렬됩니다.
 
@@ -99,10 +101,11 @@ query adventuresByOffetAndLimit($offset:Int!, $limit:Int) {
 
 페이지 매김에서 사용할 수 있는 커서 기반 페이지 매김에는 커서(특정 레코드에 대한 참조)를 사용하여 다음 결과 세트를 검색하는 작업이 포함됩니다. 이러한 접근 방식은 필요한 데이터 하위 집합을 검색하기 위해 이전 모든 레코드를 검사하지 않아도 되므로 더욱 효율적입니다. 페이지 매김된 쿼리는 시작 부분부터 중간 부분까지 또는 끝 부분까지 큰 결과 세트를 반복하는 데 유용합니다. 쿼리 나열, `limit` 및 `offset` 시작 지점(`offset`) 및 검색할 레코드 수(`limit`). 이 방법을 사용하면 특정 결과 페이지로 이동하는 것과 같이 전체 결과 세트 내의 어디에서든지 결과 하위 집합을 선택할 수 있습니다. 구현이 쉽지만 많은 레코드를 검색하려면 이전 기록을 모두 검색해야 하므로 많은 결과를 처리할 때 속도가 느리고 비효율적일 수 있습니다. 이 접근 방식을 사용하면 오프셋 값이 높으면 많은 결과를 검색하고 폐기해야 하므로 성능 문제가 발생할 수도 있습니다.
 
+#### GraphQL 쿼리
 
 ```graphql
 # Retrieves the most expensive Adventures (sorted by title ascending if there is the prices are the same)
-query adventuresByPaginated($first:Int!, $after:String) {
+query adventuresByPaginated($first:Int, $after:String) {
  adventurePaginated(first: $first, after: $after, sort: "price DESC, title ASC") {
        edges {
           cursor
@@ -120,7 +123,7 @@ query adventuresByPaginated($first:Int!, $after:String) {
   }
 ```
 
-#### 쿼리 변수
+##### 쿼리 변수
 
 ```json
 {
@@ -128,7 +131,7 @@ query adventuresByPaginated($first:Int!, $after:String) {
 }
 ```
 
-### 페이지 매김된 응답
+#### GraphQL 응답
 
 그 결과 JSON 응답에는 두 번째, 세 번째, 네 번째 및 다섯 번째 가장 비싼 모험이 포함되어 있습니다. 그 결과 처음 두 번의 모험은 같은 가격입니다(`4500` 그래서 [목록 쿼리](#list-queries) 동일한 가격의 모험을 지정한 다음 제목별로 오름차순으로 정렬됩니다.
 
@@ -171,11 +174,11 @@ query adventuresByPaginated($first:Int!, $after:String) {
 }
 ```
 
-### 페이지 매김된 다음 결과 세트
+#### 페이지 매김된 다음 결과 세트
 
 다음 결과 집합은 `after` 매개 변수와 `endCursor` 이전 쿼리의 값입니다. 가져올 결과가 더 없으면 `hasNextPage` is `false`.
 
-#### 쿼리 변수
+##### 쿼리 변수
 
 ```json
 {
