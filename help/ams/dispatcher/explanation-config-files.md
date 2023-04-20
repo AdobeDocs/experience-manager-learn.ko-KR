@@ -7,7 +7,7 @@ feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
-source-git-commit: 7815b1a78949c433f2c53ff752bf39dd55f9ac94
+source-git-commit: cc085af90b9b8ea0e650546c251fbf14cc222989
 workflow-type: tm+mt
 source-wordcount: '1705'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Apache Web Server는 실제로 파일을 로 타깃팅할 때 파일 확장자�
 | 파일 이름`_rewrite.rules` | `/etc/httpd/conf.d/rewrites/` | `*_rewrite.rules` 파일 저장 `mod_rewrite` 에 의해 명시적으로 포함 및 소비되는 규칙 `vhost` 파일 |
 | 파일 이름`_whitelist.rules` | `/etc/httpd/conf.d/whitelists/` | `*_ipwhitelist.rules` 파일은 `*.vhost` 파일. 여기에는 IP regex 또는 허용 거부 규칙이 포함되어 있어 IP를 화이트리스트에 추가할 수 있습니다. IP 주소를 기반으로 가상 호스트 보기를 제한하려는 경우 이러한 파일 중 하나를 생성하여 `*.vhost` 파일 |
 
-## conf.modules.d/에 포함된 파일
+## conf.dispatcher.d/에 포함된 파일
 
 | 파일 | 파일 대상 | 설명 |
 | --- | --- | --- |
