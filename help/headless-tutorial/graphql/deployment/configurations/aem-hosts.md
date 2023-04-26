@@ -8,22 +8,22 @@ role: Developer, Architect
 level: Intermediate
 kt: 10831
 thumbnail: KT-10831.jpg
-source-git-commit: b98f567e05839db78a1a0a593c106b87af931a49
+exl-id: a932147c-2245-4488-ba1a-99c58045ee2b
+source-git-commit: 117b67bd185ce5af9c83bd0c343010fab6cd0982
 workflow-type: tm+mt
-source-wordcount: '1712'
-ht-degree: 0%
+source-wordcount: '1669'
+ht-degree: 1%
 
 ---
-
 
 # AEM 호스트 관리
 
 AEM Headless 애플리케이션을 배포하려면 올바른 AEM 호스트/도메인이 사용되도록 AEM URL을 구성하는 방법에 주의를 기울여야 합니다. 알고 있어야 하는 기본 URL/요청 유형은 다음과 같습니다.
 
-+ 에 대한 HTTP 요청 __[AEM GraphQL APIs](#aem-graphql-api-requests)__
++ 에 대한 HTTP 요청 __[AEM GraphQL API](#aem-graphql-api-requests)__
 + __[이미지 URL](#aem-image-urls)__ 컨텐츠 조각에서 참조되고 AEM에서 전달하는 이미지 자산
 
-일반적으로 AEM 헤드리스 앱은 GraphQL API 및 이미지 요청 모두에 대한 단일 AEM 서비스와 상호 작용합니다. AEM 서비스는 AEM Headless 앱 배포에 따라 변경됩니다.
+일반적으로 AEM Headless 앱은 GraphQL API 및 이미지 요청 모두에 대한 단일 AEM 서비스와 상호 작용합니다. AEM 서비스는 AEM Headless 앱 배포에 따라 변경됩니다.
 
 | AEM Headless 배포 유형 | AEM 환경 | AEM 서비스 |
 |-------------------------------|:---------------------:|:----------------:|
@@ -41,7 +41,7 @@ AEM Headless 애플리케이션을 배포하려면 올바른 AEM 호스트/도�
 
 ## AEM GraphQL API 요청
 
-헤드리스 앱에서 AEM GraphQL API로의 HTTP GET 요청은 [위 표](#managing-aem-hosts).
+헤드리스 앱에서 AEM GraphQL API로 연결되는 HTTP GET 요청은 다음에 설명된 대로 올바른 AEM 서비스와 상호 작용하도록 구성해야 합니다 [위 표](#managing-aem-hosts).
 
 사용 시 [AEM Headless SDK](../../how-to/aem-headless-sdk.md) (브라우저 기반 JavaScript, 서버 기반 JavaScript 및 Java™에 사용 가능), AEM 호스트는 연결할 AEM Service로 AEM Headless 클라이언트 개체를 초기화할 수 있습니다.
 
@@ -49,13 +49,13 @@ AEM Headless 애플리케이션을 배포하려면 올바른 AEM 호스트/도�
 
 ### 예
 
-다음은 AEM GraphQL API 요청에 다양한 헤드리스 앱 프레임워크에 대해 AEM 호스트 값을 구성할 수 있는 방법의 예입니다.
+다음은 AEM GraphQL API 요청이 다양한 헤드리스 앱 프레임워크에 대해 AEM 호스트 값을 구성할 수 있는 방법의 예입니다.
 
 +++ React 예
 
 이 예제는 [AEM Headless React 앱](../../example-apps/react-app.md)에서는 환경 변수를 기반으로 다른 AEM 서비스에 연결하도록 AEM GraphQL API 요청을 구성하는 방법을 보여줍니다.
 
-React 앱은 [JavaScript용 AEM Headless 클라이언트](../../how-to/aem-headless-sdk.md) AEM GraphQL API와 상호 작용합니다. JavaScript용 AEM Headless 클라이언트가 제공하는 AEM Headless 클라이언트는 JavaScript가 연결되는 AEM 서비스 호스트로 초기화해야 합니다.
+React 앱은 [JavaScript용 AEM Headless 클라이언트](../../how-to/aem-headless-sdk.md) AEM GraphQL API와 상호 작용할 수 있습니다. JavaScript용 AEM Headless 클라이언트가 제공하는 AEM Headless 클라이언트는 JavaScript가 연결되는 AEM 서비스 호스트로 초기화해야 합니다.
 
 #### React 환경 파일
 
@@ -87,7 +87,7 @@ REACT_APP_AEM_HOST=https://publish-p123-e456.adobeaemcloud.com
 
 #### AEM 헤드리스 클라이언트
 
-다음 [JavaScript용 AEM Headless 클라이언트](../../how-to/aem-headless-sdk.md) AEM GraphQL API에 대한 HTTP 요청을 수행하는 AEM 헤드리스 클라이언트를 포함합니다. AEM Headless 클라이언트는 활성 상태의 값을 사용하여 상호 작용하는 AEM 호스트로 초기화해야 합니다 `.env` 파일.
+다음 [JavaScript용 AEM Headless 클라이언트](../../how-to/aem-headless-sdk.md) AEM GraphQL API에 대한 HTTP 요청을 수행하는 AEM Headless 클라이언트를 포함합니다. AEM Headless 클라이언트는 활성 상태의 값을 사용하여 상호 작용하는 AEM 호스트로 초기화해야 합니다 `.env` 파일.
 
 + `src/api/headlessClient.js`
 
@@ -163,9 +163,9 @@ let { data, error } = useAdventureByPath('/content/dam/wknd-shared/en/adventures
 
 +++ iOS™ 예
 
-이 예제는 [예제 AEM Headless iOS™ 앱](../../example-apps/ios-swiftui-app.md)에서는 AEM GraphQL API 요청을 다음 기준에 따라 다른 AEM 호스트에 연결하도록 구성하는 방법을 보여줍니다 [빌드별 구성 변수](https://developer.apple.com/documentation/xcode/adding-a-build-configuration-file-to-your-project?changes=l_3).
+이 예제는 [예제 AEM Headless iOS™ 앱](../../example-apps/ios-swiftui-app.md)는 AEM GraphQL API 요청을 다음 기준에 따라 다른 AEM 호스트에 연결하도록 구성하는 방법을 보여줍니다 [빌드별 구성 변수](https://developer.apple.com/documentation/xcode/adding-a-build-configuration-file-to-your-project?changes=l_3).
 
-iOS™ 앱에서는 AEM GraphQL API와 상호 작용하려면 사용자 지정 AEM 헤드리스 클라이언트가 필요합니다. AEM Headless 클라이언트를 작성해야 AEM 서비스 호스트를 구성할 수 있습니다.
+iOS™ 앱에서는 AEM GraphQL API와 상호 작용하려면 사용자 지정 AEM Headless 클라이언트가 필요합니다. AEM Headless 클라이언트를 작성해야 AEM 서비스 호스트를 구성할 수 있습니다.
 
 #### 구성 작성
 
@@ -194,7 +194,7 @@ let aemHost: String = try Configuration.value(for: "AEM_HOST")      // publish-p
 let aemHeadlessClient = Aem(scheme: aemScheme, host: aemHost);
 ```
 
-사용자 지정 AEM 헤드리스 클라이언트(`api/Aem.swift`)에 메서드가 포함되어 있습니다. `makeRequest(..)` 이 접두사는 구성된 AEM을 사용하여 AEM GraphQL API 요청의 접두사를 지정합니다 `scheme` 및 `host`.
+사용자 지정 AEM 헤드리스 클라이언트(`api/Aem.swift`)에 메서드가 포함되어 있습니다. `makeRequest(..)` 이 접두사는 구성된 AEM으로 AEM GraphQL API 요청의 접두사를 지정합니다 `scheme` 및 `host`.
 
 + `api/Aem.swift`
 
@@ -222,9 +222,9 @@ private func makeRequest(persistedQueryName: String, params: [String: String] = 
 
 +++ Android™ 예
 
-이 예제는 [예제 AEM Headless Android™ 앱](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/android-app)에서는 빌드별(또는 향) 구성 변수를 기반으로 다른 AEM 서비스에 연결하도록 AEM GraphQL API 요청을 구성하는 방법을 보여줍니다.
+이 예제는 [예제 AEM Headless Android™ 앱](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/android-app)에서는 빌드별(또는 향) 구성 변수를 기반으로 다른 AEM Services에 연결하도록 AEM GraphQL API 요청을 구성하는 방법을 보여줍니다.
 
-Android™ 앱(Java™으로 작성된 경우)은 [Java™용 AEM Headless 클라이언트](https://github.com/adobe/aem-headless-client-java) AEM GraphQL API와 상호 작용합니다. Java™용 AEM Headless 클라이언트가 제공하는 AEM Headless 클라이언트는 연결된 AEM 서비스 호스트로 초기화해야 합니다.
+Android™ 앱(Java™으로 작성된 경우)은 [Java™용 AEM Headless 클라이언트](https://github.com/adobe/aem-headless-client-java) AEM GraphQL API와 상호 작용할 수 있습니다. Java™용 AEM Headless 클라이언트가 제공하는 AEM Headless 클라이언트는 연결된 AEM 서비스 호스트로 초기화해야 합니다.
 
 #### 구성 파일 작성
 
@@ -289,21 +289,25 @@ public class AdventuresLoader extends AsyncTaskLoader<AdventureList> {
 
 헤드리스 앱에서 AEM으로 이미지 요청은 다음 설명서에 설명된 대로 올바른 AEM 서비스와 상호 작용하도록 구성해야 합니다. [위 표](#managing-aem-hosts).
 
-AEM GraphQL에서 `... on ImageRef` 필드 제공 `_authorUrl` 및 `_publishUrl` 각 AEM 서비스에 대한 절대 URL을 포함하는 경우, 일반적으로 직접 `_path` AEM GraphQL API를 쿼리하는 데 사용되는 AEM 서비스 호스트의 필드에 접두사를 추가합니다.
+Adobe은 [최적화된 이미지](../../how-to/images.md) 사용 가능한 `_dynamicUrl` AEM GraphQL API의 필드. 다음 `_dynamicUrl` 필드는 AEM GraphQL API를 쿼리하는 데 사용되는 AEM 서비스 호스트 접두사로 사용할 수 있는 호스트가 없는 URL을 반환합니다. 대상 `_dynamicUrl` GraphQL 응답의 필드는 다음과 같습니다.
 
-사용 `_path` 헤드리스 앱이 배포 컨텍스트를 기반으로 하여 AEM 작성자 또는 AEM 게시에 연결할 수 있는 경우 특히 유용합니다.
-
-헤드리스 앱이 AEM 작성자 또는 게시와 독점적으로 상호 작용하는 경우, `_authorUrl` 또는 `_publishUrl` 필드를 사용하여 구현을 단순화할 수 있으며, 아래 예제의 지침은 무시할 수 있습니다.
+```json
+{
+    ...
+    "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--dd42d814-88ec-4c4d-b5ef-e3dc4bc0cb42/example.jpg?preferwebp=true",
+    ...
+}
+```
 
 ### 예
 
-다음은 이미지 URL이 다양한 헤드리스 앱 프레임워크에 대해 구성할 수 있는 AEM 호스트 값에 접두사를 추가할 수 있는 방법의 예입니다. 이 예제에서는 `_path` 필드.
+다음은 이미지 URL이 다양한 헤드리스 앱 프레임워크에 대해 구성할 수 있는 AEM 호스트 값에 접두사를 추가할 수 있는 방법의 예입니다. 이 예제에서는 `_dynamicUrl` 필드.
 
 예:
 
 #### GraphQL 지속적인 쿼리
 
-이 GraphQL 쿼리는 이미지 참조를 반환합니다 `_path`. 에 표시됨 [GraphQL 응답](#examples-react-graphql-response) 호스트를 제외합니다.
+이 GraphQL 쿼리는 이미지 참조의 `_dynamicUrl`. 에 표시됨 [GraphQL 응답](#examples-react-graphql-response) 호스트를 제외합니다.
 
 ```graphql
 query ($path: String!) {
@@ -312,7 +316,7 @@ query ($path: String!) {
       title,
       primaryImage {
         ... on ImageRef {
-          _path
+          _dynamicUrl
         }
       }
     }
@@ -322,7 +326,7 @@ query ($path: String!) {
 
 #### GraphQL 응답
 
-이 GraphQL 응답은 이미지 참조의 `_path` 호스트를 제외합니다.
+이 GraphQL 응답은 이미지 참조의 `_dynamicUrl` 호스트를 제외합니다.
 
 ```json
 {
@@ -330,7 +334,7 @@ query ($path: String!) {
     "adventureByPath": {
       "item": {
         "adventurePrimaryImage": {
-          "_path": "/content/dam/wknd-shared/en/adventures/bali-surf-camp/adobestock-175749320.jpg",
+          "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--de43411-88ec-4c4d-b5ef-e3dc4bc0cb42/adobestock-175749320.jpg",
         }
       }
     }
@@ -342,7 +346,7 @@ query ($path: String!) {
 
 이 예제는 [AEM Headless React 앱 예](../../example-apps/react-app.md)에서는 환경 변수를 기반으로 올바른 AEM 서비스에 연결하도록 이미지 URL을 구성할 수 있는 방법을 보여줍니다.
 
-다음 예에서는 이미지 참조의 접두사를 보여 줍니다 `_path` 필드, 구성 가능 `REACT_APP_AEM_HOST` React 환경 변수.
+다음 예에서는 이미지 참조의 접두사를 보여 줍니다 `_dynamicUrl` 필드, 구성 가능 `REACT_APP_AEM_HOST` React 환경 변수.
 
 #### React 환경 파일
 
@@ -374,9 +378,9 @@ REACT_APP_AEM_HOST=https://publish-p123-e456.adobeaemcloud.com
 
 #### React 구성 요소
 
-React 구성 요소는 `REACT_APP_AEM_HOST` 환경 변수 및 접두사 `_path` 값을 사용하여 이미지 URL을 확인합니다.
+React 구성 요소는 `REACT_APP_AEM_HOST` 환경 변수 및 접두사 `_dynamicUrl` 값을 사용하여 이미지 URL을 확인합니다.
 
-동일한 항목 `REACT_APP_AEM_HOST` 환경 변수는 `useAdventureByPath(..)` AEM에서 GraphQL 데이터를 가져오는 데 사용되는 사용자 지정 useEffect 후크. 동일한 변수를 사용하여 GraphQL API 요청을 이미지 URL로 구성하는 경우 두 사용 사례 모두에 대해 React 앱이 동일한 AEM 서비스와 상호 작용하는지 확인하십시오.
+동일한 항목 `REACT_APP_AEM_HOST` 환경 변수는 `useAdventureByPath(..)` AEM에서 GraphQL 데이터를 가져오는 데 사용되는 사용자 지정 useEffect 후크입니다. 동일한 변수를 사용하여 GraphQL API 요청을 이미지 URL로 구성하려면 React 앱이 두 사용 사례 모두에 대해 동일한 AEM 서비스와 상호 작용하는지 확인하십시오.
 
 + &#39;src/components/AdventureDetail.js&#39;
 
@@ -385,12 +389,12 @@ React 구성 요소는 `REACT_APP_AEM_HOST` 환경 변수 및 접두사 `_path` 
 // Import the AEM origin from the app's environment configuration
 const AEM_HOST = env.process.REACT_APP_AEM_HOST; // https://publish-p123-e456.adobeaemcloud.com
 
-let { data, error } = useAdventureByPath('/content/dam/wknd-shared/en/adventures/bali-surf-camp/adobestock-175749320.jpg')
+let { data, error } = useAdventureByPath('/content/dam/wknd-shared/en/adventures/bali-surf-camp/bali-surf-camp')
 
 return (
     // Prefix the image src URL with the AEM host
-    <img src={AEM_HOST + data.adventureByPath.item.primaryImage._path }>
-    {/* Resulting in: <img src="https://publish-p123-e456.adobeaemcloud.com/content/dam/wknd-shared/en/adventures/bali-surf-camp/adobestock-175749320.jpg"/>  */}
+    <img src={AEM_HOST + data.adventureByPath.item.primaryImage._dynamicUrl }>
+    {/* Resulting in: <img src="https://publish-p123-e456.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--de43411-88ec-4c4d-b5ef-e3dc4bc0cb42/adobestock-175749320.jpg"/>  */}
 )
 ```
 
@@ -417,7 +421,7 @@ AEM_HOST = publish-p123-e789.adobeaemcloud.com
 
 #### 이미지 URL 생성기
 
-in `Aem.swift`, 사용자 지정 AEM 헤드리스 클라이언트 구현, 사용자 지정 함수 `imageUrl(..)` 에서 제공하는 대로 이미지 경로를 취합니다. `_path` GraphLQ 응답에 있는 필드에 값을 지정한 후 AEM 호스트를 사용합니다. 이 함수는 이미지를 렌더링할 때마다 iOS 보기에서 호출됩니다.
+in `Aem.swift`, 사용자 지정 AEM 헤드리스 클라이언트 구현, 사용자 지정 함수 `imageUrl(..)` 에서 제공하는 대로 이미지 경로를 취합니다. `_dynamicUrl` 필드를 GraphQL 응답에 추가하고 AEM 호스트에 추가합니다. 이 함수는 이미지를 렌더링할 때마다 iOS 보기에서 호출됩니다.
 
 + `WKNDAdventures/AEM/Aem.swift`
 
@@ -431,9 +435,9 @@ class Aem: ObservableObject {
         self.host = host
     }
     ...
-    /// Prefixes AEM image paths wit the AEM scheme/host
-    func imageUrl(path: String) -> URL {
-        return URL(string: "\(self.scheme)://\(self.host)\(path)")!
+    /// Prefixes AEM image dynamicUrl with the AEM scheme/host
+    func imageUrl(dynamicUrl: String) -> URL {
+        return URL(string: "\(self.scheme)://\(self.host)\(dynamicUrl)")!
     }
     ...
 }
@@ -441,7 +445,7 @@ class Aem: ObservableObject {
 
 #### iOS 보기
 
-iOS 보기와 접두사가 이미지에 적용됩니다 `_path` 값을 사용하여 이미지 URL을 확인합니다.
+iOS 보기와 접두사가 이미지에 적용됩니다 `_dynamicUrl` 값을 사용하여 이미지 URL을 확인합니다.
 
 + `WKNDAdventures/Views/AdventureListItemView.swift`
 
@@ -455,8 +459,8 @@ struct AdventureListItemView: View {
     
     var body: some View {
         HStack {
-            // Path the image path to `aem.imageUrl(..)` to prepend the AEM service host     
-            AdventureRowImage(imageUrl: aem.imageUrl(path: adventure.image()))
+            // Path the image dynamicUrl to `aem.imageUrl(..)` to prepend the AEM service host     
+            AdventureRowImage(imageUrl: aem.imageUrl(dynamicUrl: adventure.image()))
             Text(adventure.title)
             Spacer()
         }
@@ -534,17 +538,16 @@ public class RemoteImagesCache implements Html.ImageGetter {
     }
 
     @Override
-    public Drawable getDrawable(String path) {
-        // Get the image data from the cache using the path as the key
-        Drawable drawable = drawablesByPath.get(path);
-        return drawable;
+    public Drawable getDrawable(String dynamicUrl) {
+        // Get the image data from the cache using the dynamicUrl as the key
+        return drawablesByPath.get(dynamicUrl);
     }
 }
 ```
 
 #### Android™ 보기
 
-Android™ 보기는 다음을 통해 이미지 데이터를 가져옵니다 `RemoteImagesCache` 사용 `_path` GraphQL 응답의 값입니다.
+Android™ 보기는 다음을 통해 이미지 데이터를 가져옵니다 `RemoteImagesCache` 사용 `_dynamicUrl` 값을 생성합니다.
 
 + `app/src/main/java/com/adobe/wknd/androidapp/AdventureDetailFragment.java`
 
@@ -557,7 +560,7 @@ public class AdventureDetailFragment extends Fragment implements LoaderManager.L
 
     private void updateContent() {
         ...
-        adventureDetailImage.setImageDrawable(RemoteImagesCache.getInstance().getDrawable(adventure.getPrimaryImagePath()));
+        adventureDetailImage.setImageDrawable(RemoteImagesCache.getInstance().getDrawable(adventure.getPrimaryImageDynamicUrl()));
         ...
     }
 ...

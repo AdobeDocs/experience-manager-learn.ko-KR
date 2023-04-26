@@ -8,9 +8,9 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 exl-id: 790a33a9-b4f4-4568-8dfe-7e473a5b68b6
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 117b67bd185ce5af9c83bd0c343010fab6cd0982
 workflow-type: tm+mt
-source-wordcount: '1464'
+source-wordcount: '1465'
 ht-degree: 0%
 
 ---
@@ -367,7 +367,7 @@ GraphQL API를 사용하여 개발자는 여러 줄 필드에 삽입된 참조�
 
 ```graphql
 query ($path: String!) {
-  articleByPath(_path: $path)
+  articleByPath(_path: $path, _assetTransform: { format: JPG, preferWebp: true })
   {
     item {
       _path
@@ -377,17 +377,14 @@ query ($path: String!) {
     }
     _references {
       ...on ImageRef {
-        _path
-        _publishUrl
-        width
+        _dynamicUrl
         __typename
       }
       ...on ArticleModel {
         _path
         author
         __typename
-      }
-      
+      }  
     }
   }
 }
@@ -461,9 +458,7 @@ query ($path: String!) {
       },
       "_references": [
         {
-          "_path": "/content/dam/wknd/en/activities/climbing/sport-climbing.jpg",
-          "_publishUrl": "http://publish-p123-e456.adobeaemcloud.com/content/dam/wknd/en/activities/climbing/sport-climbing.jpg",
-          "width": 1920,
+          "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--dd42d814-88ec-4c4d-b5ef-e3dc4bc0cb42/sport-climbing.jpg?preferwebp=true",
           "__typename": "ImageRef"
         },
         {
@@ -477,7 +472,7 @@ query ($path: String!) {
 }
 ```
 
-JSON 응답에는 가 있는 리치 텍스트에 참조가 삽입된 위치가 포함됩니다 `"nodeType": "reference"`. 다음 `_references` 그런 다음 요청된 추가 속성과 함께 각 참조를 포함합니다. 예: `ImageRef` 반환 `width` 섹션에 있는 마지막 항목이 될 필요가 없습니다.
+JSON 응답에는 가 있는 리치 텍스트에 참조가 삽입된 위치가 포함됩니다 `"nodeType": "reference"`. 다음 `_references` 그러면 각 참조가 포함됩니다.
 
 ## 리치 텍스트로 인라인 참조 렌더링
 
@@ -493,12 +488,12 @@ const nodeMap = {
             let reference;
             
             // asset reference
-            if(node.data.path) {
+            if (node.data.path) {
                 // find reference based on path
                 reference = references.find( ref => ref._path === node.data.path);
             }
             // Fragment Reference
-            if(node.data.href) {
+            if (node.data.href) {
                 // find in-line reference within _references array based on href and _path properties
                 reference = references.find( ref => ref._path === node.data.href);
             }
@@ -518,7 +513,7 @@ const renderReference = {
     // node contains merged properties of the in-line reference and _references object
     'ImageRef': (node) => {
         // when __typename === ImageRef
-        return <img src={node._publishUrl} alt={'in-line reference'} /> 
+        return <img src={node._dynamicUrl} alt={'in-line reference'} /> 
     },
     'ArticleModel': (node) => {
         // when __typename === ArticleModel
@@ -538,9 +533,14 @@ const renderReference = {
 
 >[!VIDEO](https://video.tv.adobe.com/v/342105?quality=12&learn=on)
 
+>[!NOTE]
+>
+> 위의 비디오에서는 을 사용합니다 `_publishUrl` 이미지 참조를 렌더링하려면 다음을 수행하십시오. 대신, `_dynamicUrl` 에 설명된 대로 [웹에 최적화된 이미지 방법](./images.md);
+
+
 앞의 비디오에는 종단 간 예제가 표시됩니다.
 
 1. 조각 참조를 허용하도록 컨텐츠 조각 모델의 다중 행 텍스트 필드 업데이트
-1. 컨텐츠 조각 편집기를 사용하여 여러 줄 텍스트 필드의 이미지와 다른 조각에 대한 참조를 포함합니다.
-1. 여러 줄 텍스트 응답을 JSON 및 모든 항목으로 포함하는 GraphQL 쿼리 만들기 `_references` 사용됩니다.
-1. 리치 텍스트 응답의 인라인 참조를 렌더링하는 React SPA을 작성합니다.
+2. 컨텐츠 조각 편집기를 사용하여 여러 줄 텍스트 필드의 이미지와 다른 조각에 대한 참조를 포함합니다.
+3. 여러 줄 텍스트 응답을 JSON 및 모든 항목으로 포함하는 GraphQL 쿼리 만들기 `_references` 사용됩니다.
+4. 리치 텍스트 응답의 인라인 참조를 렌더링하는 React SPA을 작성합니다.
