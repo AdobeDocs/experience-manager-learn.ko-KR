@@ -10,9 +10,9 @@ kt: 10253
 thumbnail: KT-10253.jpeg
 last-substantial-update: 2023-04-19T00:00:00Z
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
-source-git-commit: 71b2dc0e8ebec1157694ae55118f2426558566e3
+source-git-commit: ec2609ed256ebe6cdd7935f3e8d476c1ff53b500
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '932'
 ht-degree: 6%
 
 ---
@@ -58,10 +58,15 @@ AEM Headless 컨텐츠 모델링에서 사용되는 컨텐츠 조각으로서, �
 GraphQL 쿼리에서 필드를 `ImageRef` 를 입력하고 `_dynamicUrl` 필드. 예를 들어, [WKND 사이트 프로젝트](https://github.com/adobe/aem-guides-wknd) 이미지 자산 참조에 대한 이미지 URL을 포함합니다 `primaryImage` 필드, 새 지속적인 쿼리로 수행할 수 있습니다 `wknd-shared/adventure-image-by-path` 다음으로 정의:
 
 ```graphql {highlight="11"}
-query($path: String!, $assetTransform: AssetTransform!) {
+query($path: String!, $imageFormat: AssetTransformFormat=JPG, $imageSeoName: String, $imageWidth: Int, $imageQuality: Int) {
   adventureByPath(
     _path: $path
-    _assetTransform: $assetTransform
+    _assetTransform: {
+      format: $imageFormat
+      width: $imageWidth
+      quality: $imageQuality
+      preferWebp: true
+    }
   ) {
     item {
       _path
@@ -81,7 +86,8 @@ query($path: String!, $assetTransform: AssetTransform!) {
 ```json
 { 
   "path": "/content/dam/wknd-shared/en/adventures/bali-surf-camp/bali-surf-camp",
-  "assetTransform": { "format": "JPG", "quality": 80, "preferWebp": true}
+  "imageFormat": "JPG",
+  "imageWidth": 1000,
 }
 ```
 
@@ -89,17 +95,17 @@ query($path: String!, $assetTransform: AssetTransform!) {
 
 다음 `_assetTransform` 정의 방법 `_dynamicUrl` 는 제공된 이미지 표현물을 최적화하기 위해 작성됩니다. 또한, 웹에 최적화된 이미지 URL은 URL의 쿼리 매개 변수를 변경하여 클라이언트에서 조정할 수 있습니다.
 
-| GraphQL 매개 변수 | URL 매개 변수 | 설명 | 필수 | GraphQL 변수 값 | URL 매개 변수 값 | 예제 GraphQL 변수 | 예제 URL 매개 변수 |
-|:---------|:----------|:-------------------------------|:--:|:--------------------------|:---|:---|:--|
-| `format` | `format` | 이미지 자산의 형식입니다. | ✔ | `GIF`, `PNG`, `PNG8`, `JPG`, `PJPG`, `BJPG`,  `WEBP`, `WEBPLL`, `WEBPLY` | N/A | `{ format: JPG }` | N/A |
-| `seoName` | N/A | URL에 있는 파일 세그먼트 이름입니다. 제공하지 않은 경우 이미지 자산 이름이 사용됩니다. | ✘ | 영숫자, `-`, 또는 `_` | N/A | `{ seoName: "bali-surf-camp" }` | N/A |
-| `crop` | `crop` | 이미지에서 꺼낸 자르기 프레임은 이미지 크기 내에 있어야 합니다 | ✘ | 원본 이미지 차원의 경계 내에서 자르기 영역을 정의하는 양의 정수 | 쉼표로 구분된 숫자 좌표 문자열 `<X_ORIGIN>,<Y_ORIGIN>,<CROP_WIDTH>,<CROP_HEIGHT>` | `{ crop: { xOrigin: 10, yOrigin: 20, width: 300, height: 400} }` | `?crop=10,20,300,400` |
-| `size` | `size` | 출력 이미지의 크기(높이 및 너비 모두)입니다(픽셀 단위). | ✘ | 양의 정수 | 순서의 쉼표로 구분된 양의 정수 `<WIDTH>,<HEIGHT>` | `{ size: { width: 1200, height: 800 } }` | `?size=1200,800` |
-| `rotation` | `rotate` | 이미지의 회전 각도. | ✘ | `R90`, `R180`, `R270` | `90`, `180`, `270` | `{ rotation: R90 }` | `?rotate=90` |
-| `flip` | `flip` | 이미지를 뒤집습니다. | ✘ | `HORIZONTAL`, `VERTICAL`, `HORIZONTAL_AND_VERTICAL` | `h`, `v`, `hv` | `{ flip: horizontal }` | `?flip=h` |
-| `quality` | `quality` | 원본 품질의 퍼센트 이미지 품질. | ✘ | 1-100 | 1-100 | `{ quality: 80 }` | `?quality=80` |
-| `width` | `width` | 출력 이미지의 너비(픽셀 단위)입니다. When `size` 가 제공됩니다 `width` 은 무시됩니다. | ✘ | 양의 정수 | 양의 정수 | `{ width: 1600 }` | `?width=1600` |
-| `preferWebP` | `preferwebp` | If `true` 및 AEM은 브라우저가 WebP를 지원하는 경우 `format`. | ✘ | `true`, `false` | `true`, `false` | `{ preferWebp: true }` | `?preferwebp=true` |
+| GraphQL 매개 변수 | URL 매개 변수 | 설명 | 필수 | GraphQL 변수 값 | URL 매개 변수 값 | 예제 URL 매개 변수 |
+|:---------|:----------|:-------------------------------|:--:|:--------------------------|:---|:--|
+| `format` | `format` | 이미지 자산의 형식입니다. | ✔ | `GIF`, `PNG`, `PNG8`, `JPG`, `PJPG`, `BJPG`,  `WEBP`, `WEBPLL`, `WEBPLY` | N/A | N/A |
+| `seoName` | N/A | URL에 있는 파일 세그먼트 이름입니다. 제공하지 않은 경우 이미지 자산 이름이 사용됩니다. | ✘ | 영숫자, `-`, 또는 `_` | N/A | N/A |
+| `crop` | `crop` | 이미지에서 꺼낸 자르기 프레임은 이미지 크기 내에 있어야 합니다 | ✘ | 원본 이미지 차원의 경계 내에서 자르기 영역을 정의하는 양의 정수 | 쉼표로 구분된 숫자 좌표 문자열 `<X_ORIGIN>,<Y_ORIGIN>,<CROP_WIDTH>,<CROP_HEIGHT>` | `?crop=10,20,300,400` |
+| `size` | `size` | 출력 이미지의 크기(높이 및 너비 모두)입니다(픽셀 단위). | ✘ | 양의 정수 | 순서의 쉼표로 구분된 양의 정수 `<WIDTH>,<HEIGHT>` | `?size=1200,800` |
+| `rotation` | `rotate` | 이미지의 회전 각도. | ✘ | `R90`, `R180`, `R270` | `90`, `180`, `270` | `?rotate=90` |
+| `flip` | `flip` | 이미지를 뒤집습니다. | ✘ | `HORIZONTAL`, `VERTICAL`, `HORIZONTAL_AND_VERTICAL` | `h`, `v`, `hv` | `?flip=h` |
+| `quality` | `quality` | 원본 품질의 퍼센트 이미지 품질. | ✘ | 1-100 | 1-100 | `?quality=80` |
+| `width` | `width` | 출력 이미지의 너비(픽셀 단위)입니다. When `size` 가 제공됩니다 `width` 은 무시됩니다. | ✘ | 양의 정수 | 양의 정수 | `?width=1600` |
+| `preferWebP` | `preferwebp` | If `true` 및 AEM은 브라우저가 WebP를 지원하는 경우 `format`. | ✘ | `true`, `false` | `true`, `false` | `?preferwebp=true` |
 
 ## GraphQL 응답
 
@@ -113,7 +119,7 @@ query($path: String!, $assetTransform: AssetTransform!) {
         "_path": "/content/dam/wknd-shared/en/adventures/bali-surf-camp/bali-surf-camp",
         "title": "Bali Surf Camp",
         "primaryImage": {
-          "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--a38886f7-4537-4791-aa20-3f6ef0ac3fcd/adobestock_175749320.jpg?preferwebp=true&quality=80"
+          "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--a38886f7-4537-4791-aa20-3f6ef0ac3fcd/adobestock_175749320.jpg?preferwebp=true&width=1000&quality=80"
         }
       }
     }
@@ -219,7 +225,7 @@ function App() {
   // The 2nd parameter define the base GraphQL query parameters used to request the web-optimized image
   let { data, error } = useAdventureByPath(
         "/content/dam/wknd-shared/en/adventures/bali-surf-camp/bali-surf-camp", 
-        { assetTransform: { format: "JPG", preferWebp: true } }
+        { imageFormat: "JPG" }
       );
 
   // Wait for AEM Headless APIs to provide data
