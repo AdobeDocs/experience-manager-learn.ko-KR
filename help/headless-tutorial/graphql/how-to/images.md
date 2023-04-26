@@ -10,7 +10,7 @@ kt: 10253
 thumbnail: KT-10253.jpeg
 last-substantial-update: 2023-04-19T00:00:00Z
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
-source-git-commit: 09f9530cab0ec651b7c37c8c078631c79e8cfe4a
+source-git-commit: 97a311e043d3903070cd249d993036b5d88a21dd
 workflow-type: tm+mt
 source-wordcount: '934'
 ht-degree: 6%
@@ -141,7 +141,7 @@ let dynamicUrl = AEM_HOST + data.adventureByPath.item.primaryImage._dynamicUrl;
 
 기억해 `_dynamicUrl` 에는 AEM 도메인이 포함되어 있지 않으므로 이미지 URL을 확인할 위치에 원하는 위치를 제공해야 합니다.
 
-### 응답형 URL
+## 응답형 URL
 
 위의 예에서는 단일 크기 이미지를 사용하는 것을 보여주지만 웹 경험에서는 종종 응답형 이미지 세트가 필요합니다. 응답형 이미지는 [img srcsets](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset) 또는 [그림 요소](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset). 다음 코드 조각은 `_dynamicUrl` 를 기반으로 하여 다양한 너비 매개 변수를 추가하여 다양한 응답형 보기를 지원합니다. 뿐만 아니라 `width` 쿼리 매개 변수를 사용하지만 클라이언트가 다른 쿼리 매개 변수를 추가하여 필요에 따라 이미지 자산을 추가로 최적화할 수 있습니다.
 
@@ -155,7 +155,7 @@ let alt = data.adventureByPath.item.title;
 {/*-- Example img srcset --*/}
 document.body.innerHTML=`<img>
     alt="${alt}"
-    src="${${dynamicUrl}&width=1000}"
+    src="${dynamicUrl}&width=1000}"
     srcset="`
       ${dynamicUrl}&width=1000 1000w,
       ${dynamicUrl}&width=1600 1600w,
@@ -171,26 +171,26 @@ document.body.innerHTML=`<picture>
     </picture>`;
 ```
 
-### React 예
+## React 예
 
 웹에 최적화된 이미지를 표시하는 간단한 React 응용 프로그램을 만들겠습니다 [반응형 이미지 패턴](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/). 응답형 이미지에 대한 두 가지 기본 패턴이 있습니다.
 
 + [srcset이 있는 Img 요소](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset) 성능 향상
 + [그림 요소](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-picture) 디자인 컨트롤
 
-#### srcset이 있는 Img 요소
+### srcset이 있는 Img 요소
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418556/?quality=12&learn=on)
 
 [srcset을 사용하는 Img 요소](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset) 와 함께 사용됩니다 `sizes` 속성 을 사용하십시오. Img 세트는 다른 화면 크기에 대해 다른 이미지 자산을 제공할 때 유용합니다.
 
-#### 그림 요소
+### 그림 요소
 
 [그림 요소](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-picture) 여러 `source` 다양한 화면 크기에 대해 다른 이미지 자산을 제공하는 요소입니다. 그림 요소는 다양한 화면 크기에 대해 서로 다른 이미지 표현물을 제공할 때 유용합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418555/?quality=12&learn=on)
 
-#### 예제 코드
+### 예제 코드
 
 이 간단한 React 앱에서는 [AEM Headless SDK](./aem-headless-sdk.md) 모험 컨텐츠에 대해 AEM Headless API를 쿼리하려면 다음을 사용하여 웹에 최적화된 이미지를 표시합니다. [srcset가 있는 img 요소](#img-element-with-srcset) 및 [그림 요소](#picture-element). 다음 `srcset` 및 `sources` 사용자 지정 사용 `setParams` 웹 최적화 게재 쿼리 매개 변수를 `_dynamicUrl` 이미지 속성을 변경하여 웹 클라이언트의 요구 사항에 따라 전달되는 이미지 표현물을 변경합니다.
 
