@@ -5,9 +5,9 @@ breadcrumb-title: AEM as a Cloud Service 튜토리얼
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: fc6c225f30132baec6245955318c7ca180d3ad62
+source-git-commit: e9422231b8237abe7e2e3703764b2fdc253f33d3
 workflow-type: tm+mt
-source-wordcount: '934'
+source-wordcount: '935'
 ht-degree: 22%
 
 ---
@@ -16,7 +16,8 @@ ht-degree: 22%
 # Adobe Experience Manager as a Cloud Service 튜토리얼 {#cloud-service}
 
 + [개요](./overview.md)
-+ [AEM 평가판](./aem-trials/index.md)
++ AEM 평가판 {#aem-trials}
+   + [이미지](./aem-trials/images.md)
 + AEM as a Cloud Service 소개{#introduction}
    + [AEM as a Cloud Service 소개](./introduction/what-is-aem-as-a-cloud-service.md)
    + [진화](./introduction/evolution.md)
