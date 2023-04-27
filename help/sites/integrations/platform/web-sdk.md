@@ -10,9 +10,9 @@ doc-type: Tutorial
 last-substantial-update: 2023-04-26T00:00:00Z
 jira: KT-13156
 thumbnail: KT-13156.jpeg
-source-git-commit: 3f129fb4fc53e55d118802d3a0e566a9a9bcb9a2
+source-git-commit: 1597fd87e11a27292b2b8897cf58c1670488b632
 workflow-type: tm+mt
-source-wordcount: '1153'
+source-wordcount: '1150'
 ht-degree: 3%
 
 ---
@@ -61,7 +61,7 @@ XDM 스키마 및 필드 그룹, 유형, 클래스 및 데이터 유형과 같�
 
 ## 데이터 스트림 만들기 - Experience Platform
 
-DataStream은 Platform Edge Network에서 수집된 데이터를 전송할 위치를 지시합니다. 예를 들어 Experience Platform, Analytics 또는 Adobe Target으로 전송할 수 있습니다.
+데이터 스트림은 수집된 데이터를 보낼 플랫폼 에지 네트워크에 지시합니다. 예를 들어 Experience Platform, Analytics 또는 Adobe Target으로 전송할 수 있습니다.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418895?quality=12&learn=on)
@@ -196,7 +196,7 @@ AEM, 특히 WKND 사이트에서를 사용하여 웹 SDK를 설정한 후에는 
 
 ## 요약
 
-좋습니다! 웹 사이트에서 데이터를 수집하고 수집하기 위해 Adobe Experience Platform(Experience Platform) Web SDK와 함께 AEM 설정을 완료했습니다. 이제 이 기반을 통해 Analytics, Target, CJA(Customer Journey Analytics) 및 기타 여러 제품과 같은 제품을 개선하고 통합하여 고객을 위한 개인화된 풍부한 경험을 만들 수 있습니다. 계속해서 Adobe Experience Cloud의 잠재력을 최대한 발휘하기 위해 학습하고 탐구하십시오.
+좋습니다! 웹 사이트에서 데이터를 수집하고 수집하기 위해 Experience Platform Web SDK와 함께 AEM 설정을 완료했습니다. 이제 이 기반을 통해 Analytics, Target, CJA(Customer Journey Analytics) 및 기타 여러 제품과 같은 제품을 개선하고 통합하여 고객을 위한 개인화된 풍부한 경험을 만들 수 있습니다. 계속해서 Adobe Experience Cloud의 잠재력을 최대한 발휘하기 위해 학습하고 탐구하십시오.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418900?quality=12&learn=on)
 
