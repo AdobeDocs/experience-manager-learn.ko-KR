@@ -5,9 +5,9 @@ breadcrumb-title: AEM Sites 튜토리얼
 feature-set: Experience Manager Sites, Experience Manager
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: 2b37ba961e194b47e034963ceff63a0b8e8458ae
+source-git-commit: 593ef5767a5f2321c689e391f9c9019de7c94672
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '443'
 ht-degree: 27%
 
 ---
@@ -55,7 +55,7 @@ ht-degree: 27%
 + 개발 {#developing}
    + [AEM Project Archetype](developing/aem-project-archetype.md)
    + [AEM Sites 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR)
-   + [AEM 헤드리스 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+   + [AEM Headless 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
    + [AEM SPA Editor 및 React 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
    + [페이지 속성 확장](developing/page-properties-technical-video-develop.md)
    + [응답형 중단점](developing/responsive-breakpoints.md)
@@ -98,6 +98,7 @@ ht-degree: 27%
 + 통합 {#integrations}
    + Experience Platform {#experience-platform}
       + [FPID 생성](integrations/platform/fpid.md)
+      + [웹 SDK](integrations/platform/web-sdk.md)
    + Experience Platform 데이터 수집 태그(시작) {#experience-platform-data-collection-tags}
       + [개요](integrations/experience-platform/data-collection/tags/overview.md)
       + [태그 속성 만들기](integrations/experience-platform/data-collection/tags/create-tag-property.md)
