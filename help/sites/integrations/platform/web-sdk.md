@@ -10,10 +10,10 @@ doc-type: Tutorial
 last-substantial-update: 2023-04-26T00:00:00Z
 jira: KT-13156
 thumbnail: KT-13156.jpeg
-source-git-commit: 593ef5767a5f2321c689e391f9c9019de7c94672
+source-git-commit: 3f129fb4fc53e55d118802d3a0e566a9a9bcb9a2
 workflow-type: tm+mt
-source-wordcount: '1060'
-ht-degree: 1%
+source-wordcount: '1153'
+ht-degree: 3%
 
 ---
 
@@ -79,6 +79,84 @@ DataStream은 Platform Edge Network에서 수집된 데이터를 전송할 위�
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418896?quality=12&learn=on)
 
+
++++ 데이터 요소 및 규칙-이벤트 코드
+
++ 다음 `Page Name` 데이터 요소 코드.
+
+   ```javascript
+   if(event && event.component && event.component.hasOwnProperty('dc:title')) {
+       // return value of 'dc:title' from the data layer Page object, which is propogated via 'cmp:show` event
+       return event.component['dc:title'];
+   }
+   ```
+
++ 다음 `Site Section` 데이터 요소 코드.
+
+   ```javascript
+   if(event && event.component && event.component.hasOwnProperty('repo:path')) {
+   let pagePath = event.component['repo:path'];
+   
+   let siteSection = '';
+   
+   //Check of html String in URL.
+   if (pagePath.indexOf('.html') > -1) { 
+    siteSection = pagePath.substring(0, pagePath.lastIndexOf('.html'));
+   
+    //replace slash with colon
+    siteSection = siteSection.replaceAll('/', ':');
+   
+    //remove `:content`
+    siteSection = siteSection.replaceAll(':content:','');
+   }
+   
+       return siteSection 
+   }
+   ```
+
++ 다음 `Host Name` 데이터 요소 코드.
+
+   ```javascript
+   if(window && window.location && window.location.hostname) {
+       return window.location.hostname;
+   }
+   ```
+
++ 다음 `all pages - on load` 규칙-이벤트 코드
+
+   ```javascript
+   var pageShownEventHandler = function(evt) {
+   // defensive coding to avoid a null pointer exception
+   if(evt.hasOwnProperty("eventInfo") && evt.eventInfo.hasOwnProperty("path")) {
+       //trigger Launch Rule and pass event
+       console.debug("cmp:show event: " + evt.eventInfo.path);
+       var event = {
+           //include the path of the component that triggered the event
+           path: evt.eventInfo.path,
+           //get the state of the component that triggered the event
+           component: window.adobeDataLayer.getState(evt.eventInfo.path)
+       };
+   
+       //Trigger the Launch Rule, passing in the new 'event' object
+       // the 'event' obj can now be referenced by the reserved name 'event' by other Launch data elements
+       // i.e 'event.component['someKey']'
+       trigger(event);
+       }
+   }
+   
+   //set the namespace to avoid a potential race condition
+   window.adobeDataLayer = window.adobeDataLayer || [];
+   
+   //push the event listener for cmp:show into the data layer
+   window.adobeDataLayer.push(function (dl) {
+       //add event listener for 'cmp:show' and callback to the 'pageShownEventHandler' function
+       dl.addEventListener("cmp:show", pageShownEventHandler);
+   });
+   ```
+
++++
+
+
 다음 [태그 개요](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) 는 데이터 요소, 규칙 및 확장과 같은 중요한 개념에 대한 심층적인 지식을 제공합니다.
 
 AEM 코어 구성 요소와 Adobe 클라이언트 데이터 레이어 통합에 대한 자세한 내용은 [AEM 핵심 구성 요소로 Adobe 클라이언트 데이터 레이어 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html).
@@ -121,3 +199,12 @@ AEM, 특히 WKND 사이트에서를 사용하여 웹 SDK를 설정한 후에는 
 좋습니다! 웹 사이트에서 데이터를 수집하고 수집하기 위해 Adobe Experience Platform(Experience Platform) Web SDK와 함께 AEM 설정을 완료했습니다. 이제 이 기반을 통해 Analytics, Target, CJA(Customer Journey Analytics) 및 기타 여러 제품과 같은 제품을 개선하고 통합하여 고객을 위한 개인화된 풍부한 경험을 만들 수 있습니다. 계속해서 Adobe Experience Cloud의 잠재력을 최대한 발휘하기 위해 학습하고 탐구하십시오.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418900?quality=12&learn=on)
+
+## 추가 리소스
+
++ [핵심 구성 요소로 함께 Adobe 클라이언트 데이터 레이어 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html)
++ [Experience Platform 데이터 수집 태그와 AEM 통합](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)
++ [Adobe Experience Platform Web SDK 및 Edge 네트워크 개요](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html)
++ [데이터 수집 튜토리얼](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html)
++ [Adobe Experience Platform Debugger 개요](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)
+
