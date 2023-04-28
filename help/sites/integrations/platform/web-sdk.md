@@ -10,13 +10,13 @@ doc-type: Tutorial
 last-substantial-update: 2023-04-26T00:00:00Z
 jira: KT-13156
 thumbnail: KT-13156.jpeg
-source-git-commit: 1597fd87e11a27292b2b8897cf58c1670488b632
+exl-id: b5182d35-ec38-4ffd-ae5a-ade2dd3f856d
+source-git-commit: 63afa03de70d6f8f695d552018344d53a5cec6f5
 workflow-type: tm+mt
-source-wordcount: '1150'
+source-wordcount: '1315'
 ht-degree: 3%
 
 ---
-
 
 # Experience Platform 웹 SDK 통합
 
@@ -24,7 +24,7 @@ AEM as a Cloud Service을 Experience Platform과 통합하는 방법을 알아�
 
 또한 수집 및 전송 방법을 학습합니다 [WKND - 샘플 Adobe Experience Manager 프로젝트](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) 페이지 보기 데이터의 [Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html).
 
-이 설정을 완료한 후 앞으로 이동하여 다음과 같은 Experience Platform 및 관련 애플리케이션을 구현할 수 있습니다. [Real-time Customer Data Platform (Real-Time CDP)](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html?lang=ko), [Customer Journey Analytics(CJA)](https://experienceleague.adobe.com/docs/customer-journey-analytics.html) 및 [Adobe Journey Optimizer (AJO)](https://experienceleague.adobe.com/docs/journey-optimizer.html). 웹 및 고객 데이터를 표준화하여 고객 참여를 향상하기 위한 것입니다.
+이 설정을 완료한 후 솔리드 파운데이션을 구현했습니다. 또한 와 같은 애플리케이션을 사용하여 Experience Platform 구현을 개선할 준비가 되어 있습니다. [Real-time Customer Data Platform (Real-Time CDP)](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html?lang=ko), [Customer Journey Analytics(CJA)](https://experienceleague.adobe.com/docs/customer-journey-analytics.html), 및 [Adobe Journey Optimizer (AJO)](https://experienceleague.adobe.com/docs/journey-optimizer.html). 고급 구현은 웹 및 고객 데이터를 표준화하여 고객 참여를 높이는 데 도움이 됩니다.
 
 ## 사전 요구 사항
 
@@ -52,6 +52,8 @@ in **Experience Platform**:
 
 XDM(경험 데이터 모델) 스키마를 사용하면 고객 경험 데이터를 표준화할 수 있습니다. 를 수집하려면 **WKND 페이지 보기** 데이터, XDM 스키마 만들기 및 Adobe 제공 필드 그룹 사용 `AEP Web SDK ExperienceEvent` 을 참조하십시오.
 
+소매, 금융 서비스, 의료 등 특정 범용 및 산업마다 참조 데이터 모델 세트가 있습니다. [업계 데이터 모델 개요](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/industries/overview.html) 추가 정보.
+
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418894?quality=12&learn=on)
 
@@ -76,8 +78,14 @@ XDM 스키마 및 필드 그룹, 유형, 클래스 및 데이터 유형과 같�
 + 데이터 요소: WKND 사이트의 Adobe 클라이언트 데이터 레이어를 사용하여 페이지 이름, 사이트 섹션 및 호스트 이름을 추출하는 사용자 지정 코드 유형의 데이터 요소입니다. 또한, 이전에 새로 만든 WKND XDM 스키마 빌드를 따르는 XDM 개체 유형 데이터 요소입니다 [XDM 스키마 만들기](#create-xdm-schema---experience-platform) 단계.
 + 규칙: 트리거된 Adobe 클라이언트 데이터 레이어를 사용하여 WKND 웹 페이지를 방문할 때마다 Platform Edge Network에 데이터를 보냅니다 `cmp:show` 이벤트.
 
+를 사용하여 태그 라이브러리를 빌드하고 게시하는 동안 **게시 흐름**&#x200B;를 사용하여 다음을 수행할 수 있습니다. **변경된 모든 리소스 추가** 버튼을 클릭합니다. 개별 리소스를 식별하고 선택하는 대신 데이터 요소, 규칙 및 태그 확장과 같은 모든 리소스를 선택합니다. 또한 개발 단계 동안 라이브러리를에 게시할 수 있습니다. _개발_ 환경을 확인한 다음 을(를) 확인 및 프로모션합니다 _단계_ 또는 _프로덕션_ 환경.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418896?quality=12&learn=on)
+
+
+>[!TIP]
+>
+>비디오에 표시된 데이터 요소 및 규칙 이벤트 코드를 참조에 사용할 수 있습니다. **아래 아코디언 요소를 확장합니다.**. 그러나 Adobe 클라이언트 데이터 계층을 사용하지 않는 경우에는 아래 코드를 수정해야 하지만, 데이터 요소를 정의하고 규칙 정의에서 사용하는 개념이 계속 적용됩니다.
 
 
 +++ 데이터 요소 및 규칙-이벤트 코드
@@ -207,4 +215,3 @@ AEM, 특히 WKND 사이트에서를 사용하여 웹 SDK를 설정한 후에는 
 + [Adobe Experience Platform Web SDK 및 Edge 네트워크 개요](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html)
 + [데이터 수집 튜토리얼](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html)
 + [Adobe Experience Platform Debugger 개요](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)
-
