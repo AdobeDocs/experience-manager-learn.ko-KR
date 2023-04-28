@@ -8,14 +8,15 @@ role: Developer
 level: Beginner
 kt: 13099
 last-substantial-update: 2023-04-13T00:00:00Z
-source-git-commit: 155e6e42d4251b731d00e2b456004016152f81fe
+exl-id: d970d58b-77a4-4012-9e72-b97d60ef028a
+source-git-commit: 4709035983a5c6705c4e807d877ee71145f48987
 workflow-type: tm+mt
-source-wordcount: '56'
-ht-degree: 0%
+source-wordcount: '70'
+ht-degree: 2%
 
 ---
 
-# 서블릿 만들기
+# Acrobat Sign 웹 양식 URL 만들기
 
 POST 종단점을 노출하기 위해 다음 코드가 작성됩니다. 이 종단점은 제출된 데이터에서 icTemplateName을 추출하고 최종 사용자가 서명할 Acrobat Sign 웹 양식 URL을 반환합니다.
 
@@ -85,3 +86,8 @@ public class GetWidgetUrl extends SlingAllMethodsServlet {
 
 }
 ```
+
+## 다음 단계
+
+[로컬 시스템에 자습서 자산 배포](./deploy-assets-on-your-server.md)
+

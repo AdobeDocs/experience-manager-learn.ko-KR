@@ -7,9 +7,9 @@ breadcrumb-title: AEM Forms 튜토리얼
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: edba74f5ff5611687c05812de184243997ee7a35
+source-git-commit: 4709035983a5c6705c4e807d877ee71145f48987
 workflow-type: tm+mt
-source-wordcount: '1809'
+source-wordcount: '1808'
 ht-degree: 4%
 
 ---
@@ -231,11 +231,11 @@ ht-degree: 4%
    + [솔루션 테스트](welcome-kit/testing-the-solution.md)
 
 + Forms 및 Acrobat Sign과 반응형 앱 {#react-ic-sign}
-   + [소개](react-ic-sign/introduction.md)
-   + [IC 문서 생성](react-ic-sign/create-ic-document.md)
-   + [Acrobat Sign API 래퍼](react-ic-sign/wrapper-sign-api.md)
-   + [서명 위젯 생성](react-ic-sign/create-servlet-to-expose-endpoint.md)
-   + [샘플 자산 배포](react-ic-sign/deploy-assets-on-your-server.md)
+   + [1-소개](react-ic-sign/introduction.md)
+   + [2-문서 생성](react-ic-sign/create-ic-document.md)
+   + [3-Acrobat Sign API 래퍼](react-ic-sign/wrapper-sign-api.md)
+   + [4-생성 기호 위젯](react-ic-sign/create-servlet-to-expose-endpoint.md)
+   + [5-샘플 자산 배포](react-ic-sign/deploy-assets-on-your-server.md)
 + 문서 서비스 {#document-services}
    + [PDF forms 유형](document-services/pdf-forms-and-documents.md)
    + [적응형 양식에 pdf 포함](document-services/embed-pdf-inline.md)

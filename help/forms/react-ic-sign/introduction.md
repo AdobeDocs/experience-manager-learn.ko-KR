@@ -8,10 +8,11 @@ role: Developer
 level: Beginner
 kt: 13099
 last-substantial-update: 2023-04-13T00:00:00Z
-source-git-commit: 155e6e42d4251b731d00e2b456004016152f81fe
+exl-id: 2ff7be5b-884c-420d-9a06-f0e2a99d3ef3
+source-git-commit: 4709035983a5c6705c4e807d877ee71145f48987
 workflow-type: tm+mt
-source-wordcount: '159'
-ht-degree: 0%
+source-wordcount: '174'
+ht-degree: 1%
 
 ---
 
@@ -34,3 +35,6 @@ ht-degree: 0%
 * Forms이 패키지에 추가된 AEM 서버
 * An [Acrobat Sign 애플리케이션용 통합 키](https://helpx.adobe.com/sign/kb/how-to-create-an-integration-key.html)
 
+## 다음 단계
+
+쓰기 [사용자 정의 OSGi 서비스를 사용하여 Interactive Communication 문서 생성](./create-ic-document.md) 문서화된 API 사용
