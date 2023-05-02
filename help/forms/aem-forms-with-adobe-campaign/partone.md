@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: a5e5aad4-064f-4638-a53a-88dfb1d27c8f
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '243'
 ht-degree: 0%
 
 ---
@@ -242,3 +242,7 @@ public class CampaignServiceImpl implements CampaignService {
 ## 액세스 토큰 생성 {#generate-access-token}
 
 그런 다음 POST 호출을 수행하여 생성된 JWT를 액세스 토큰과 교환합니다. 그러면 이 액세스 토큰은 후속 REST 호출을 위해 HTTP 헤더에서 인증 키로 전송됩니다
+
+## 다음 단계
+
+[양식 제출 시 ACS에서 프로필 만들기](./parttwo.md)

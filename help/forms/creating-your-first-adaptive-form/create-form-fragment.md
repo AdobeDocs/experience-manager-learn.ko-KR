@@ -8,10 +8,10 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 86a67f43-882f-4e97-b528-17492689fcfc
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
 workflow-type: tm+mt
-source-wordcount: '105'
-ht-degree: 4%
+source-wordcount: '110'
+ht-degree: 6%
 
 ---
 
@@ -27,3 +27,7 @@ ht-degree: 4%
 자세한 내용은 [적응형 양식 템플릿 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html) 자세한 내용
 
 필요한 경우 [배우자-세부 사항-조각 ](assets/spouse-details-fragment.zip) 을 사용하여 AEM으로 가져옵니다. [패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp)
+
+## 다음 단계
+
+[적응형 양식 만들기](./create-adaptive-form.md)

@@ -8,9 +8,9 @@ role: Developer
 level: Experienced
 last-substantial-update: 2021-06-09T00:00:00Z
 exl-id: 149d2c8c-bf44-4318-bba8-bec7e25da01b
-source-git-commit: 00257efe045eb85fb192bbb47f8e178cf909eb86
+source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '462'
 ht-degree: 0%
 
 ---
@@ -143,3 +143,8 @@ QueryBuilder 서비스는 attachmentsPath 폴더 아래에 있는 nt:file 유형
 
 [여기에 설명된 대로 번들을 빌드합니다.](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)
 [번들이 배포되어 활성 상태인지 확인합니다.](http://localhost:4502/system/console/bundles)
+
+## 다음 단계
+
+만들기 [사용자 지정 워크플로우 구성 요소](./custom-workflow-component.md)
+

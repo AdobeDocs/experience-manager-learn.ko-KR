@@ -7,10 +7,10 @@ breadcrumb-title: AEM Forms 튜토리얼
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: 4709035983a5c6705c4e807d877ee71145f48987
+source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
 workflow-type: tm+mt
-source-wordcount: '1808'
-ht-degree: 4%
+source-wordcount: '1804'
+ht-degree: 3%
 
 ---
 
@@ -21,15 +21,15 @@ ht-degree: 4%
 + [따라야 할 모범 사례](adaptive-forms/best-practices-adaptive-forms.md)
 + [AEM 작성자를 사용하여 OKTA 인증 설정](adaptive-forms/single-sign-on-with-okta.md)
 + 첫 번째 적응형 양식 만들기 {#creating-your-first-adaptive-form}
-   + [소개 및 설정](creating-your-first-adaptive-form/introduction-and-setup.md)
-   + [적응형 양식 템플릿 만들기](creating-your-first-adaptive-form/create-adaptive-form-template.md)
-   + [양식 조각 만들기](creating-your-first-adaptive-form/create-form-fragment.md)
-   + [적응형 양식 만들기](creating-your-first-adaptive-form/create-adaptive-form.md)
-   + [루트 패널 구성 및 하위 패널 추가](creating-your-first-adaptive-form/configuring-root-panel-and-adding-child-panels.md)
-   + [사람 패널에 구성 요소 추가](creating-your-first-adaptive-form/adding-components-to-people-panel.md)
-   + [소득 패널에 테이블 추가](creating-your-first-adaptive-form/adding-table-to-income-panel.md)
-   + [자산 패널 구성](creating-your-first-adaptive-form/configuring-assets-panel.md)
-   + [사용자 지정 함수 및 코드 편집기 사용](creating-your-first-adaptive-form/using-custom-functions-and-code-editor.md)
+   + [1 - 소개 및 설정](creating-your-first-adaptive-form/introduction-and-setup.md)
+   + [2 - 적응형 양식 템플릿 만들기](creating-your-first-adaptive-form/create-adaptive-form-template.md)
+   + [3 - 양식 조각 만들기](creating-your-first-adaptive-form/create-form-fragment.md)
+   + [4 - 적응형 양식 만들기](creating-your-first-adaptive-form/create-adaptive-form.md)
+   + [5 - 루트 패널 구성 및 하위 패널 추가](creating-your-first-adaptive-form/configuring-root-panel-and-adding-child-panels.md)
+   + [6 - 사람 패널에 구성 요소 추가](creating-your-first-adaptive-form/adding-components-to-people-panel.md)
+   + [7 - 소득 패널에 테이블 추가](creating-your-first-adaptive-form/adding-table-to-income-panel.md)
+   + [8 - 자산 패널 구성](creating-your-first-adaptive-form/configuring-assets-panel.md)
+   + [9 - 사용자 지정 함수 및 코드 편집기 사용](creating-your-first-adaptive-form/using-custom-functions-and-code-editor.md)
 + 양식 제출 처리 {#handling-af-form-submissions}
    + [검토 워크플로우 만들기](handling-form-submissions/creating-a-review-workflow.md)
    + [워크플로우를 트리거하는 적응형 양식 구성](handling-form-submissions/configuring-adaptive-form-to-trigger-workflow.md)
@@ -173,9 +173,9 @@ ht-degree: 4%
    + [파일 시스템에 문서 저장](custom-workflow-steps/write-payload-document.md)
    + [제출된 데이터를 문자열 변수로 저장](custom-workflow-steps/save-submitted-data-in-string-variable.md)
 + 사용자 지정 워크플로우 구성 요소{#custom-workflow-component}
-   + [소개](custom-workflow-component/introduction.md)
-   + [Java 코드 쓰기](custom-workflow-component/custom-process-step-aem-workflow.md)
-   + [워크플로우 구성 요소 만들기](custom-workflow-component/custom-workflow-component.md)
+   + [1-소개](custom-workflow-component/introduction.md)
+   + [2-Write Java 코드](custom-workflow-component/custom-process-step-aem-workflow.md)
+   + [3-워크플로우 구성 요소 만들기](custom-workflow-component/custom-workflow-component.md)
 + AEM 워크플로우의 변수{#variables-aem-workflow}
    + [소개 - 워크플로우의 변수](variables-aem-workflow/introduction.md)
    + [XML 변수](variables-aem-workflow/part1.md)
@@ -218,11 +218,11 @@ ht-degree: 4%
    + [4부 - 모든 것을 함께](aem-forms-with-marketo/part4.md)
 
 + AEM Forms과 Adobe Campaign Standard{#aem-forms-with-adobe-campaign}
-   + [소개](aem-forms-with-adobe-campaign/aem-forms-with-campaign-standard-getting-started-tutorial.md)
-   + [1부 - 토큰 생성](aem-forms-with-adobe-campaign/partone.md)
-   + [2부 - 양식 제출 시 ACS 프로파일 생성](aem-forms-with-adobe-campaign/parttwo.md)
-   + [Part3 - ACS 프로필 정보를 사용한 양식 미리 채우기](aem-forms-with-adobe-campaign/partthree.md)
-   + [Part4 - 양식 데이터 모델을 사용하여 ACS 프로파일 생성](aem-forms-with-adobe-campaign/partfour.md)
+   + [1 - 소개](aem-forms-with-adobe-campaign/aem-forms-with-campaign-standard-getting-started-tutorial.md)
+   + [2 - 토큰 생성](aem-forms-with-adobe-campaign/partone.md)
+   + [3 - 양식 제출 시 ACS 프로필 만들기](aem-forms-with-adobe-campaign/parttwo.md)
+   + [4 - ACS 프로필 정보를 사용하여 양식 미리 채우기](aem-forms-with-adobe-campaign/partthree.md)
+   + [5 - 양식 데이터 모델을 사용하여 ACS 프로필 만들기](aem-forms-with-adobe-campaign/partfour.md)
 
 + 시작 키트 {#welcome-kit}
    + [소개](welcome-kit/introduction.md)
@@ -231,11 +231,11 @@ ht-degree: 4%
    + [솔루션 테스트](welcome-kit/testing-the-solution.md)
 
 + Forms 및 Acrobat Sign과 반응형 앱 {#react-ic-sign}
-   + [1-소개](react-ic-sign/introduction.md)
-   + [2-문서 생성](react-ic-sign/create-ic-document.md)
-   + [3-Acrobat Sign API 래퍼](react-ic-sign/wrapper-sign-api.md)
-   + [4-생성 기호 위젯](react-ic-sign/create-servlet-to-expose-endpoint.md)
-   + [5-샘플 자산 배포](react-ic-sign/deploy-assets-on-your-server.md)
+   + [1 - 소개](react-ic-sign/introduction.md)
+   + [2 - 문서 생성](react-ic-sign/create-ic-document.md)
+   + [3 - Acrobat Sign API 래퍼](react-ic-sign/wrapper-sign-api.md)
+   + [4 - 서명 위젯 생성](react-ic-sign/create-servlet-to-expose-endpoint.md)
+   + [5 - 샘플 자산 배포](react-ic-sign/deploy-assets-on-your-server.md)
 + 문서 서비스 {#document-services}
    + [PDF forms 유형](document-services/pdf-forms-and-documents.md)
    + [적응형 양식에 pdf 포함](document-services/embed-pdf-inline.md)

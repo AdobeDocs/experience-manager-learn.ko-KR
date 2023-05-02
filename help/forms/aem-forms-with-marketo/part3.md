@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 7096340b-8ccf-4f5e-b264-9157232e96ba
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '386'
 ht-degree: 1%
 
 ---
@@ -49,3 +49,8 @@ AEM Forms과 Marketo을 통합하기 위해 RESTful 웹 서비스를 사용합�
 1. 나열된 유일한 서비스를 선택하고 Test Service를 클릭합니다.
 1. 올바른 leadId 를 제공하고 테스트를 클릭합니다. 모든 것이 제대로 작동하면 아래 스크린샷에 표시된 대로 리드 세부 정보를 다시 가져와야 합니다
    ![테스트 결과](assets/testresults.jfif)
+
+## 다음 단계
+
+[테스트를 위해 모든 구성](./part4.md)
+

@@ -7,10 +7,10 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 502f4bdf-d4af-409f-a611-62b7a1a6065a
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
 workflow-type: tm+mt
-source-wordcount: '330'
-ht-degree: 0%
+source-wordcount: '340'
+ht-degree: 1%
 
 ---
 
@@ -234,3 +234,8 @@ return "Pre Fill Forms Using Campaign Profile";
 * [패키지 관리자를 사용하여 샘플 적응형 양식을 AEM에 가져오기](assets/pre-fill-af-from-campaign.zip)
 * Adobe Campaign에서 프로필로 공유된 이메일 ID의 사용자를 사용하여 AEM에 로그인해야 합니다. 예를 들어, AEM 사용자의 이메일 ID가 johndoe@adobe.com 인 경우, ACS에서 e-메일이 johndoe@adobe.com 인 프로필이 있어야 합니다.
 * [양식 미리 보기](http://localhost:4502/content/dam/formsanddocuments/prefillfromcampaign/jcr:content?wcmmode=disabled).
+
+## 다음 단계
+
+[양식 데이터 모델을 사용하여 Adobe Campaign 프로필 만들기](./partfour.md)
+

@@ -9,16 +9,23 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: a68c41b8-3e80-4b25-a933-9ceb8aee1e01
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
 workflow-type: tm+mt
-source-wordcount: '58'
-ht-degree: 0%
+source-wordcount: '73'
+ht-degree: 2%
 
 ---
 
 # 루트 패널에 하위 패널 추가 {#adding-child-panels-to-root-panel}
 
-루트 패널에 하위 패널을 추가하는 경우 다음을 수행하십시오 **편집 모드 인지 확인합니다. 편집 단추는 브라우저의 오른쪽 상단에 있습니다.**
+루트 패널에 하위 패널을 추가합니다.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/28536?quality=12&learn=on)
+
+>[!NOTE]
+>루트 패널에 하위 패널을 추가하는 경우 다음을 수행하십시오 **편집 모드 인지 확인합니다. 편집 단추는 브라우저의 오른쪽 상단에 있습니다.**
+
+## 다음 단계
+
+[사람 패널에 구성 요소 추가](./adding-components-to-people-panel.md)

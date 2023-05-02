@@ -7,10 +7,10 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: f8ba3d5c-0b9f-4eb7-8609-3e540341d5c2
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 1%
+source-wordcount: '363'
+ht-degree: 2%
 
 ---
 
@@ -201,3 +201,8 @@ public class MarketoConfigurationService {
 1. 번들을 작성하고 AEM 서버에 배포합니다.
 1. [브라우저를 configMgr로 보냅니다.](http://localhost:4502/system/console/configMgr) Marketo 자격 증명 서비스 구성 및 검색
 1. Marketo 인스턴스에 대한 적절한 속성을 지정합니다
+
+## 다음 단계
+
+[RESTful 서비스 기반 데이터 소스 만들기](./part3.md)
+

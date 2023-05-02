@@ -7,10 +7,10 @@ role: Developer
 level: Beginner
 kt: 5859
 thumbnail: 37324.jpg
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
 workflow-type: tm+mt
-source-wordcount: '129'
-ht-degree: 3%
+source-wordcount: '135'
+ht-degree: 8%
 
 ---
 
@@ -28,5 +28,8 @@ ht-degree: 3%
 필요한 경우 [적응형 양식 템플릿](assets/peak-application-template.zip) 을 사용하여 AEM으로 가져옵니다. [패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp)
 
 
+## 다음 단계
+
+[적응형 양식 단편 만들기](./create-form-fragment.md)
 
 

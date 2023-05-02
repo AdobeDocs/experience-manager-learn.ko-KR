@@ -8,9 +8,9 @@ role: Developer
 level: Experienced
 exl-id: e028837b-13d8-4058-ac25-ed095f49524c
 last-substantial-update: 2020-03-20T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '258'
 ht-degree: 0%
 
 ---
@@ -38,3 +38,7 @@ AEM Forms을 ACS와 통합하려면 다음 단계를 수행해야 합니다.
 * [이 문서에 언급된 대로 서비스 사용자를 만듭니다](/help/forms/adaptive-forms/service-user-tutorial-develop.md). 문서와 연결된 OSGi 번들을 배포해야 합니다.
 * ACS 개인 키를 etc/key/campaign/private.key에 저장합니다. etc/key 아래에 campaign이라는 폴더를 만들어야 합니다.
 * [서비스 사용자 &quot;data&quot;에 캠페인 폴더에 대한 읽기 권한을 제공합니다.](http://localhost:4502/useradmin)
+
+## 다음 단계
+
+[JWT 및 액세스 토큰 생성](partone.md)

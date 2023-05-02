@@ -9,10 +9,10 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 16170f0d-6933-47f2-aefa-951599d163c0
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
 workflow-type: tm+mt
-source-wordcount: '80'
-ht-degree: 0%
+source-wordcount: '91'
+ht-degree: 2%
 
 ---
 
@@ -31,3 +31,7 @@ ht-degree: 0%
 **배우자 상세내역 규칙**
 
 >[!VIDEO](https://video.tv.adobe.com/v/22195?quality=12&learn=on)
+
+## 다음 단계
+
+[[수입] 패널에 테이블 및 기타 구성 요소를 추가합니다](./adding-table-to-income-panel.md)
