@@ -11,9 +11,9 @@ kt: 4072
 mini-toc-levels: 1
 thumbnail: 30181.jpg
 exl-id: f54f3dc9-6ec6-4e55-9043-7a006840c905
-source-git-commit: 68a7f263284fdf9cfcf82572b8e1e1c0c01e4b55
+source-git-commit: 434f56e143bc0f969723de48abd26d49a308af9b
 workflow-type: tm+mt
-source-wordcount: '4066'
+source-wordcount: '4061'
 ht-degree: 0%
 
 ---
@@ -439,13 +439,13 @@ Sling 모델은 AEM에서 제공하는 여러 Java™ API를 사용합니다. �
 
    WKND 소스의 Java™ 패키지 이후 `com.adobe.aem.guides.wknd.core.models` 는 버전 지정 `1.0.0`, 그리고 중단되지 않는 공용 인터페이스 및 메서드를 추가하고 있는 경우 버전을 `1.1.0`. 다음 위치에서 파일을 엽니다. `core/src/main/java/com/adobe/aem/guides/wknd/core/models/package-info.java` 및 업데이트 `@Version("1.0.0")` to `@Version("2.1.0")`.
 
-       &quot;
-       @Version(&quot;2.1.0&quot;)
-       package com.adobe.aem.guides.wknd.core.models;
-       
-       org.osgi.annotation.versioning.Version;
-       &quot;
+   ```
+   @Version("2.1.0")
+   package com.adobe.aem.guides.wknd.core.models;
    
+   import org.osgi.annotation.versioning.Version;
+   ```
+
 이 패키지의 파일을 변경할 때마다 [패키지 버전을 의미적으로 조정해야 합니다.](https://semver.org/). 없는 경우 Maven 프로젝트의 [bnd-baseline-maven-plugin](https://github.com/bndtools/bnd/tree/master/maven/bnd-baseline-maven-plugin) 잘못된 패키지 버전을 감지하고 빌드를 중단합니다. 다행히 실패 시 Maven 플러그인이 잘못된 Java™ 패키지 버전과 버전을 보고합니다. 업데이트 `@Version("...")` Java™ 패키지를 위반하는 선언문 `package-info.java` 플러그인에서 권장하는 버전으로 업데이트하여 수정합니다.
 
 ### 필자 구현 {#byline-implementation}
