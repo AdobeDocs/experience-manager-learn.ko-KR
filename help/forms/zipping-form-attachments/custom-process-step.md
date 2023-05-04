@@ -1,24 +1,24 @@
 ---
 title: 첨부 파일을 압축하는 사용자 정의 프로세스 단계
 description: 적응형 양식 첨부 파일을 zip 파일에 추가하고 zip 파일을 워크플로우 변수에 저장하는 사용자 지정 프로세스 단계입니다
-feature: 적응형 양식
+feature: Adaptive Forms
 version: 6.5
-topic: 개발
+topic: Development
 role: Developer
 level: Beginner
 kt: kt-8049
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 1131dca8-882d-4904-8691-95468fb708b7
+source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
 workflow-type: tm+mt
-source-wordcount: '151'
+source-wordcount: '159'
 ht-degree: 1%
 
 ---
 
-
 # 사용자 지정 프로세스 단계
 
 
-양식 첨부 파일이 포함된 zip 파일을 만들기 위해 사용자 지정 프로세스 단계가 구현되었습니다. OSGi 번들 만들기에 익숙하지 않은 경우 다음 지침](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en)을 따르십시오.[
+양식 첨부 파일이 포함된 zip 파일을 만들기 위해 사용자 지정 프로세스 단계가 구현되었습니다. OSGi 번들 만들기를 잘 모를 경우 [다음 지침을 따르십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en)
 
 사용자 지정 프로세스 단계의 코드는 다음을 수행합니다
 
@@ -70,7 +70,7 @@ import com.day.cq.search.result.SearchResult;
 
 public class ZipFormAttachments implements WorkflowProcess {
 
-	 private static final Logger log = LoggerFactory.getLogger(ZipFormAttachments.class);
+     private static final Logger log = LoggerFactory.getLogger(ZipFormAttachments.class);
      @Reference
      QueryBuilder queryBuilder;
 
@@ -127,18 +127,18 @@ public class ZipFormAttachments implements WorkflowProcess {
                     Node payloadNode = session.getNode(payloadPath);
                     Node zippedFileNode =  payloadNode.addNode("zipped_attachments.zip", "nt:file");
                     javax.jcr.Node resNode = zippedFileNode.addNode("jcr:content", "nt:resource");
-        		
-        			ValueFactory valueFactory = session.getValueFactory();
-        			Document zippedDocument = new Document(baos.toByteArray());
+                
+                    ValueFactory valueFactory = session.getValueFactory();
+                    Document zippedDocument = new Document(baos.toByteArray());
 
-        			Binary contentValue = valueFactory.createBinary(zippedDocument.getInputStream());
-        			metaDataMap.put("no_of_attachments", no_of_attachments);
+                    Binary contentValue = valueFactory.createBinary(zippedDocument.getInputStream());
+                    metaDataMap.put("no_of_attachments", no_of_attachments);
 
                     workflowSession.updateWorkflowData(workItem.getWorkflow(), workItem.getWorkflow().getWorkflowData());
                     log.debug("Updated workflow");
-        			resNode.setProperty("jcr:data", contentValue);
-        			session.save();
-        			zippedDocument.close();
+                    resNode.setProperty("jcr:data", contentValue);
+                    session.save();
+                    zippedDocument.close();
 
 
 
@@ -159,5 +159,8 @@ public class ZipFormAttachments implements WorkflowProcess {
 
 >[!NOTE]
 >
-> 이 코드가 작동하려면 워크플로우에서 Double 유형의 *no_of_attachments*&#x200B;라는 변수가 있는지 확인하십시오.
+> 라는 변수가 있는지 확인하십시오.  *no_of_attachments* 이 코드가 작동하려면 워크플로우에서 Double을 입력합니다.
 
+## 다음 단계
+
+[ArrayList 워크플로우 변수를 첨부 파일 및 첨부 이름으로 채우기](./custom-process-step.md)

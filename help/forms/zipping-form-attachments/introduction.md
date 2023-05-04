@@ -9,10 +9,10 @@ level: Beginner
 kt: kt-8049
 exl-id: bd9e1fc1-2fc7-452c-9a4a-2e16f6821760
 last-substantial-update: 2020-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
 workflow-type: tm+mt
-source-wordcount: '132'
-ht-degree: 0%
+source-wordcount: '137'
+ht-degree: 2%
 
 ---
 
@@ -34,3 +34,7 @@ ht-degree: 0%
 이 사용 사례를 수행하기 위해 사용자 지정 워크플로우 프로세스 단계가 작성됩니다. 이 사용자 지정 프로세스 단계에서는 ArrayList of Documents 및 ArrayList of Strings 유형의 워크플로우 변수를 채웁니다.
 
 ![문서 목록 보내기](assets/send-list-of-documents.JPG)
+
+## 다음 단계
+
+[Zip 양식 첨부 파일](./custom-process-step.md)

@@ -7,7 +7,7 @@ breadcrumb-title: AEM Forms 튜토리얼
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
+source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
 workflow-type: tm+mt
 source-wordcount: '1804'
 ht-degree: 3%
@@ -45,10 +45,10 @@ ht-degree: 3%
    + [계단식 드롭다운 목록](some-useful-integrations/geonames-org.md)
    + [ServiceNow와 통합](some-useful-integrations/service-now.md)
 + OSGi 번들 만들기 {#creating-your-first-osgi-bundle}
-   + [환경 설정](creating-your-first-osgi-bundle/create-your-first-osgi-bundle.md)
-   + [OSGi 서비스 만들기](creating-your-first-osgi-bundle/create-osgi-service.md)
-   + [Sling 서블릿 만들기](creating-your-first-osgi-bundle/create-servlet.md)
-   + [타사 번들 포함](creating-your-first-osgi-bundle/include-third-party-jars.md)
+   + [1 - 환경 설정](creating-your-first-osgi-bundle/create-your-first-osgi-bundle.md)
+   + [2 - OSGi 서비스 만들기](creating-your-first-osgi-bundle/create-osgi-service.md)
+   + [3 - Sling 서블릿 만들기](creating-your-first-osgi-bundle/create-servlet.md)
+   + [4 - 타사 번들 포함](creating-your-first-osgi-bundle/include-third-party-jars.md)
 + 적응형 양식 {#adaptive-forms}
    + [Windows에서 AEM Forms 설치](adaptive-forms/installing-aem-form-on-windows-tutorial-use.md)
    + [Linux에 32비트 패키지 설치](adaptive-forms/installing-aem-form-on-linux.md)
@@ -101,16 +101,16 @@ ht-degree: 3%
    + [Salesforce를 사용한 양식 데이터 모델](adaptive-forms/using-adaptive-forms-with-sales-force-integration-tutorial.md)
    + [선택 구성 요소에 동적으로 항목 추가](adaptive-forms/choice-group-items-adding-dynamically-article.md)
 + DAM 폴더 컨텐츠 선택 및 조합{#select-dam-folder-content}
-   + [소개](display-and-assemble-dam-folder-contents/introduction.md)
-   + [선택 그룹 채우기](display-and-assemble-dam-folder-contents/populating-choice-group-with-dam-folder-content.md)
-   + [선택한 자산 조합](display-and-assemble-dam-folder-contents/assemble-selected-newsletters.md)
-   + [로컬로 자산 배포](display-and-assemble-dam-folder-contents/deploy-on-your-system.md)
+   + [1 - 소개](display-and-assemble-dam-folder-contents/introduction.md)
+   + [2 - 선택 그룹 채우기](display-and-assemble-dam-folder-contents/populating-choice-group-with-dam-folder-content.md)
+   + [3 - 선택한 자산 조합](display-and-assemble-dam-folder-contents/assemble-selected-newsletters.md)
+   + [4 - 로컬로 자산 배포](display-and-assemble-dam-folder-contents/deploy-on-your-system.md)
 + 양식 데이터 모델을 사용하여 적응형 양식 미리 채우기{#prefill-fdm-db}
-   + [소개](prefill-fdm-db/introduction.md)
-   + [데이터베이스 테이블 만들기](prefill-fdm-db/create-database-tables.md)
-   + [양식 데이터 모델 구성](prefill-fdm-db/configuring-form-data-model.md)
-   + [요청 매개 변수 가져오기](prefill-fdm-db/get-request-parameter.md)
-   + [적응형 양식 만들기](prefill-fdm-db/create-adaptive-form.md)
+   + [1 - 소개](prefill-fdm-db/introduction.md)
+   + [2 - 데이터베이스 테이블 만들기](prefill-fdm-db/create-database-tables.md)
+   + [3 - 양식 데이터 모델 구성](prefill-fdm-db/configuring-form-data-model.md)
+   + [4 - 요청 매개 변수 가져오기](prefill-fdm-db/get-request-parameter.md)
+   + [5 - 적응형 양식 만들기](prefill-fdm-db/create-adaptive-form.md)
 + UI 팁과 트릭{#ui-tips-and-tricks}
    + [암호 필드 텍스트 전환](ui-tips-tricks/toggle-password.md)
    + [공간 도구 모음 단추](ui-tips-tricks/toolbar-buttons.md)
@@ -118,14 +118,14 @@ ht-degree: 3%
    + [탐색 탭에 아이콘 추가](ui-tips-tricks/active-complete.md)
    + [자동 완료 필드](ui-tips-tricks/auto-complete.md)
 + 받은 편지함 사용자 지정{#inbox-customization}
-   + [소개](inbox-customization/introduction.md)
-   + [사용자 지정 열 추가](inbox-customization/add-married-column.md)
-   + [sightly 템플릿 사용](inbox-customization/use-sightly-template.md)
+   + [1 - 소개](inbox-customization/introduction.md)
+   + [2 - 사용자 지정 열 추가](inbox-customization/add-married-column.md)
+   + [3 - sightly 템플릿 사용](inbox-customization/use-sightly-template.md)
 + 전자 메일 양식 첨부 파일{#zipping-form-attachments}
-   + [소개](zipping-form-attachments/introduction.md)
-   + [Zip 양식 첨부 파일](zipping-form-attachments/custom-process-step.md)
-   + [전자 메일 양식 첨부 파일](zipping-form-attachments/populating-list-of-documents.md)
-   + [솔루션 테스트](zipping-form-attachments/test.md)
+   + [1 - 소개](zipping-form-attachments/introduction.md)
+   + [2 - Zip 양식 첨부 파일](zipping-form-attachments/custom-process-step.md)
+   + [3 - 전자 메일 양식 첨부 파일](zipping-form-attachments/populating-list-of-documents.md)
+   + [4 - 솔루션 테스트](zipping-form-attachments/test.md)
 + 적응형 양식 저장 및 검색{#store-and-retrieve-af-with-2fa}
    + [소개](store-and-retrieve-af-with-2fa/introduction.md)
    + [데이터 소스 구성](store-and-retrieve-af-with-2fa/configure-data-source.md)

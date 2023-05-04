@@ -9,9 +9,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 5fa4638f-9faa-40e0-a20d-fdde3dbb528a
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '498'
 ht-degree: 1%
 
 ---
@@ -85,3 +85,7 @@ RDBMS 지원 양식 데이터 모델을 만드는 첫 번째 단계는 Apache Sl
 * 유효한 empID를 제공하고 을 클릭합니다. _테스트_
 * 아래 스크린샷에 표시된 대로 결과를 가져와야 합니다
 * ![test-fdm](assets/test-form-data-model.png)
+
+## 다음 단계
+
+[URL에서 empID 가져오기](./get-request-parameter.md)

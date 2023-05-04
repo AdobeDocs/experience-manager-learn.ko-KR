@@ -12,9 +12,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 0b141b37-6041-4f87-bd50-dade8c0fee7d
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '311'
 ht-degree: 0%
 
 ---
@@ -95,3 +95,7 @@ return isMarried(inboxItem);
 양식을 제출하면 워크플로우가 트리거되고 작업이 &quot;관리자&quot; 사용자에게 할당됩니다. 이 스크린샷에 표시된 대로 기별 열 아래에 값이 표시됩니다
 
 ![기혼자](assets/married-column.PNG)
+
+## 다음 단계
+
+[기혼 열 표시](./use-sightly-template.md)

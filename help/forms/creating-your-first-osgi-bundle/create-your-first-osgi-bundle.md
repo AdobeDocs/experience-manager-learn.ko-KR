@@ -8,9 +8,9 @@ role: Developer
 level: Beginner
 exl-id: 307cc3b2-87e5-4429-8f21-5266cf03b78f
 last-substantial-update: 2021-04-23T00:00:00Z
-source-git-commit: 381812397fa7d15f6ee34ef85ddf0aa0acc0af42
+source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '672'
 ht-degree: 1%
 
 ---
@@ -119,3 +119,8 @@ AEM Forms과 함께 제공되는 다양한 서비스를 사용하려면 프로�
 * 명령 실행 `mvn clean install -PautoInstallBundle`
 위의 명령은 에서 실행되는 AEM 서버에 번들을 빌드하고 설치합니다 `http://localhost:4502`. 이 번들은 의 파일 시스템에서도 사용할 수 있습니다
    `C:\AEMFormsBundles\mysite\core\target` 및 은 [Felix 웹 콘솔](http://localhost:4502/system/console/bundles)
+
+## 다음 단계
+
+[OSGi 서비스 만들기](./create-osgi-service.md)
+

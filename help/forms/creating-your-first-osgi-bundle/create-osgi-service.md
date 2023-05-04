@@ -8,9 +8,9 @@ role: Developer
 level: Beginner
 exl-id: 2f15782e-b60d-40c6-b95b-6c7aa8290691
 last-substantial-update: 2021-04-23T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '354'
 ht-degree: 2%
 
 ---
@@ -110,3 +110,8 @@ JSP 페이지를 포함하는 샘플 패키지는 다음과 같습니다 [여기
 
 postman을 사용하여 POST 호출을 만들고 아래 스크린샷에 표시된 대로 입력 매개 변수를 제공합니다
 ![postman](assets/test-service-postman.JPG)
+
+## 다음 단계
+
+[Sling 서블릿 만들기](./create-servlet.md)
+

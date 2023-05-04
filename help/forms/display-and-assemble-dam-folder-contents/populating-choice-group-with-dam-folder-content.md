@@ -7,10 +7,11 @@ topic: Development
 role: User
 level: Beginner
 last-substantial-update: 2023-01-01T00:00:00Z
-source-git-commit: a2bbb26751c9182056b4fe6d36eeeec964001df8
+exl-id: 29f56d13-c2e2-4bc2-bfdc-664c848dd851
+source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 0%
+source-wordcount: '228'
+ht-degree: 1%
 
 ---
 
@@ -113,3 +114,7 @@ function getDAMFolderAssets(damFolder) {
 ![set-options](assets/set-options-newsletter.png)
 
 Javascript 함수를 호출하는 중입니다. **getDAMolderAssets** DAM 폴더 자산의 경로를 양식에 있는 목록에 전달합니다.
+
+## 다음 단계
+
+[선택한 자산 조합](./assemble-selected-newsletters.md)

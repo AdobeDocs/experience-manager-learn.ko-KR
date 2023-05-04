@@ -10,10 +10,10 @@ role: User
 level: Intermediate
 exl-id: be519d58-1caa-42ea-97a9-7cd38ce8faca
 last-substantial-update: 2021-01-07T00:00:00Z
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
 workflow-type: tm+mt
-source-wordcount: '106'
-ht-degree: 0%
+source-wordcount: '111'
+ht-degree: 2%
 
 ---
 
@@ -35,3 +35,7 @@ ht-degree: 0%
 * AEM Forms 작업 인스턴스
 * MySQL 데이터베이스 및 MySQL Workbench에 익숙함
 * 응용 Forms 만들기 중 일부 경험
+
+## 다음 단계
+
+[데이터베이스 테이블 만들기](./create-database-tables.md)
