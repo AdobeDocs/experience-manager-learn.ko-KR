@@ -3,15 +3,15 @@ title: Windows에서 AEM Forms을 설치하는 간소화된 단계
 description: Windows에 AEM Forms을 설치하는 빠르고 쉬운 단계
 feature: Adaptive Forms
 type: Tutorial
-version: 6.4,6.5
+version: 6.5
 topic: Development
 role: Admin
 level: Beginner
 exl-id: 80288765-0b51-44a9-95d3-3bdb2da38615
 last-substantial-update: 2020-06-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '574'
 ht-degree: 6%
 
 ---
@@ -70,7 +70,7 @@ ht-degree: 6%
    * **sling.bootdelegation.class.com.rsa.jsafe.provider.JsafeJCE=com.rsa를 참조하십시오.&#42;** **sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider=org.bouncycastle.&#42;**
 * 문서 서비스가 작동하려면 이 두 속성이 필요합니다
 * sling.properties 파일을 저장합니다
-* [적절한 양식 추가 기능 패키지를 다운로드합니다](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en)
+* [적절한 양식 추가 기능 패키지를 다운로드합니다](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko)
 * 를 사용하여 패키지에 양식 추가 설치 [패키지 관리자.](http://localhost:4502/crx/packmgr/index.jsp)
 * 패키지에 추가를 설치한 후에는 다음 단계를 수행해야 합니다
 
@@ -87,4 +87,4 @@ ht-degree: 6%
 4. 변경 사항을 저장합니다.
 
 축하합니다!!! 이제 시스템에 AEM Forms을 설치 및 구성했습니다.
-필요에 따라 구성할 수 있습니다  [Reader 확장](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html?lang=en) 또는 [ PDFG](https://experienceleague.adobe.com/docs/experience-manager-64/forms/install-aem-forms/osgi-installation/install-configure-document-services.html?lang=ko) 서버에
+필요에 따라 구성할 수 있습니다  [Reader 확장](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) 또는 [ PDFG](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html) 서버에

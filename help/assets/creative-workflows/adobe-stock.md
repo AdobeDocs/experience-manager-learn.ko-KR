@@ -2,15 +2,15 @@
 title: AEM Assets에서 Adobe Stock 자산 사용
 description: AEM은 AEM에서 직접 Adobe Stock 자산을 검색, 미리 보기, 저장 및 라이선스를 제공할 수 있는 기능을 제공합니다. 이제 조직은 Adobe Stock Enterprise 플랜을 AEM Assets과 통합하여 라이선스가 있는 자산이 이제 AEM의 강력한 자산 관리 기능과 함께 광고 및 마케팅 프로젝트에 폭넓게 사용 가능한지 확인할 수 있습니다.
 feature: Adobe Stock
-version: 6.4, 6.5
+version: 6.5
 topic: Content Management
 role: User
 level: Beginner
 last-substantial-update: 2022-06-26T00:00:00Z
 exl-id: a3c3a01e-97a6-494f-b7a9-22057e91f4eb
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '975'
 ht-degree: 3%
 
 ---
@@ -107,7 +107,7 @@ AEM 6.4.2는 AEM에서 직접 Adobe Stock 자산을 검색, 미리 보기, 저�
 ### 추가 리소스
 
 * [Enterprise Stock 계획](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html)
-* [AEM 6.4 서비스 팩 2 릴리스 노트](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/sp-release-notes.html?lang=ko)
+* [AEM 6.4 서비스 팩 2 릴리스 노트](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html)
 * [AEM 및 Adobe Stock 통합](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/aem-assets-adobe-stock.html)
 * [Adobe I/O 콘솔 통합 API](https://www.adobe.io/apis/cloudplatform/console/authentication/gettingstarted.html)
 * [Adobe Stock API 문서](https://www.adobe.io/apis/creativecloud/stock/docs.html)

@@ -8,13 +8,13 @@ role: Developer
 level: Intermediate
 kt: 10900
 thumbnail: kt-10900.jpeg
-source-git-commit: f02d5e01388ee61228254951b05c37c336423348
+exl-id: e055b356-dd26-4366-8608-5a0ccf5b4c49
+source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
 workflow-type: tm+mt
 source-wordcount: '586'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
-
 
 # AEM React 편집 가능한 구성 요소 v2를 사용하는 방법
 
@@ -33,7 +33,7 @@ AEM React 편집 가능한 구성 요소 v2에 대한 자세한 내용 및 코�
 
 ## AEM 페이지
 
-AEM React 편집 가능한 구성 요소는 SPA Editor 또는 Remote SPA React 앱에서 모두 작동합니다. 편집 가능한 React 구성 요소를 채우는 컨텐츠는 다음을 확장하는 AEM 페이지를 통해 노출되어야 합니다 [SPA 페이지 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-64/developing/headless/spas/spa-page-component.html). 편집 가능한 React 구성 요소에 매핑되는 AEM 구성 요소는 AEM을 구현해야 합니다 [구성 요소 내보내기 프레임워크](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/json-exporter-components.html) - 예 [AEM 코어 WCM 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html).
+AEM React 편집 가능한 구성 요소는 SPA Editor 또는 Remote SPA React 앱에서 모두 작동합니다. 편집 가능한 React 구성 요소를 채우는 컨텐츠는 다음을 확장하는 AEM 페이지를 통해 노출되어야 합니다 [SPA 페이지 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-page-component.html). 편집 가능한 React 구성 요소에 매핑되는 AEM 구성 요소는 AEM을 구현해야 합니다 [구성 요소 내보내기 프레임워크](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/json-exporter-components.html) - 예 [AEM 코어 WCM 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko).
 
 
 ## 종속성
@@ -231,6 +231,3 @@ const EditableEmbedding = (props) => {
 // Export as default the mapped EditableEmbedding
 export default MapTo("wknd-examples/components/embedding")(EditableEmbedding);
 ```
-
-
-

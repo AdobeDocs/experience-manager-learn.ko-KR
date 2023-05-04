@@ -1,7 +1,7 @@
 ---
 title: 로컬 AEM 개발 환경 설정
 description: Experience Manager을 위한 로컬 개발 환경을 설정하는 방법을 알아봅니다. 로컬 설치, Apache Maven, 통합 개발 환경, 디버깅 및 문제 해결을 숙지하십시오. Eclipse IDE, CRXDE-Lite, Visual Studio Code 및 IntelliJ를 사용합니다.
-version: 6.4, 6.5
+version: 6.5
 feature: Developer Tools
 topics: development
 activity: develop
@@ -12,7 +12,7 @@ level: Beginner
 exl-id: 58851624-71c9-4745-aaaf-305acf6ccb14
 last-substantial-update: 2022-07-20T00:00:00Z
 thumbnail: aem-local-dev-env.jpg
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
 workflow-type: tm+mt
 source-wordcount: '2603'
 ht-degree: 1%
@@ -138,7 +138,7 @@ IDE를 사용하는 경우 반드시 확인하십시오 `classic` maven 프로�
 
 ### [!DNL Eclipse] IDE
 
-다음 **[[!DNL Eclipse] IDE](https://www.eclipse.org/ide/)** 는 오픈 소스 및 오픈 소스이므로 Java™ 개발을 위한 가장 인기 있는 IDE 중 하나입니다 ***무료***! Adobe은 플러그인을 제공하며, **[[!DNL AEM Developer Tools]](https://experienceleague.adobe.com/docs/experience-manager-64/developing/devtools/aem-eclipse.html)**&#x200B;에 대해 [!DNL Eclipse] 코드를 로컬 AEM 인스턴스와 동기화할 수 있도록 좋은 GUI를 사용하여 쉽게 개발할 수 있습니다. 다음 [!DNL Eclipse] AEM을 처음 사용하는 개발자에게는 IDE가 권장됩니다. 이는 GUI를 지원하기 때문입니다 [!DNL AEM Developer Tools].
+다음 **[[!DNL Eclipse] IDE](https://www.eclipse.org/ide/)** 는 오픈 소스 및 오픈 소스이므로 Java™ 개발을 위한 가장 인기 있는 IDE 중 하나입니다 ***무료***! Adobe은 플러그인을 제공하며, **[[!DNL AEM Developer Tools]](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html)**&#x200B;에 대해 [!DNL Eclipse] 코드를 로컬 AEM 인스턴스와 동기화할 수 있도록 좋은 GUI를 사용하여 쉽게 개발할 수 있습니다. 다음 [!DNL Eclipse] AEM을 처음 사용하는 개발자에게는 IDE가 권장됩니다. 이는 GUI를 지원하기 때문입니다 [!DNL AEM Developer Tools].
 
 #### 설치 및 설정
 
@@ -194,7 +194,7 @@ IDE를 사용하는 경우 반드시 확인하십시오 `classic` maven 프로�
 
 ### [!DNL CRXDE Lite]
 
-[CRXDE Lite](https://experienceleague.adobe.com/docs/experience-manager-64/developing/devtools/developing-with-crxde-lite.html) AEM 저장소의 브라우저 기반 보기입니다. [!DNL CRXDE Lite] 가 AEM에 포함되어 있으므로 개발자가 파일 편집, 구성 요소 정의, 대화 상자 및 템플릿과 같은 표준 개발 작업을 수행할 수 있습니다. [!DNL CRXDE Lite] is ***not*** 는 전체 개발 환경이지만 디버깅 도구로 유효합니다. [!DNL CRXDE Lite] 는 코드 베이스의 외부에서 제품 코드를 확장하거나 간단히 이해할 때 유용합니다. [!DNL CRXDE Lite] 는 리포지토리에 대한 강력한 보기를 제공하고 권한을 효과적으로 테스트 및 관리하는 방법을 제공합니다.
+[CRXDE Lite](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/developing-with-crxde-lite.html) AEM 저장소의 브라우저 기반 보기입니다. [!DNL CRXDE Lite] 가 AEM에 포함되어 있으므로 개발자가 파일 편집, 구성 요소 정의, 대화 상자 및 템플릿과 같은 표준 개발 작업을 수행할 수 있습니다. [!DNL CRXDE Lite] is ***not*** 는 전체 개발 환경이지만 디버깅 도구로 유효합니다. [!DNL CRXDE Lite] 는 코드 베이스의 외부에서 제품 코드를 확장하거나 간단히 이해할 때 유용합니다. [!DNL CRXDE Lite] 는 리포지토리에 대한 강력한 보기를 제공하고 권한을 효과적으로 테스트 및 관리하는 방법을 제공합니다.
 
 [!DNL CRXDE Lite] 는 다른 IDE와 함께 사용하여 코드를 테스트하고 디버깅해야 하지만 기본 개발 도구로 사용해서는 안 됩니다. 여기에는 제한된 구문 지원, 자동 완료 기능 없음, 소스 제어 관리 시스템과의 제한적인 통합 등이 있습니다.
 

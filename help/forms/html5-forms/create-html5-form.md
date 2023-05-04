@@ -6,7 +6,7 @@ topics: development
 audience: developer
 doc-type: article
 activity: implement
-version: 6.4,6.5
+version: 6.5
 kt: 4419
 thumbnail: kt-4419.jpg
 topic: Development
@@ -14,7 +14,7 @@ role: User
 level: Beginner
 exl-id: 67a01c41-d284-4518-adb5-21702e22ccfa
 last-substantial-update: 2019-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
 workflow-type: tm+mt
 source-wordcount: '481'
 ht-degree: 0%
@@ -59,6 +59,6 @@ xdp 템플릿의 고급 속성을 사용하여 게시 날짜, 제출 처리기, 
 
 **제출 URL** - HTML5 양식 제출을 처리할 URL입니다. 다음 단원에서 이 내용을 다룹니다. 여기서 제출 URL을 지정하지 않으면 양식 데이터를 브라우저에 반환하는 기본 제출 처리기가 호출됩니다.
 
-**HTML 렌더링 프로필** - HTML5 양식에는 양식 템플릿의 모바일 렌더링을 활성화하기 위해 REST 엔드포인트로 노출되는 프로필 개념이 있습니다. 대부분의 경우 기본 렌더링 프로필로 양식을 렌더링하기에 충분해야 합니다. 기본 렌더링 프로필이 사용자의 요구 사항을 충족하지 않으면 [사용자 지정 프로필](https://experienceleague.adobe.com/docs/experience-manager-64/forms/html5-forms/custom-profile.html) 을 만들고 양식과 연결할 수 있습니다.
+**HTML 렌더링 프로필** - HTML5 양식에는 양식 템플릿의 모바일 렌더링을 활성화하기 위해 REST 엔드포인트로 노출되는 프로필 개념이 있습니다. 대부분의 경우 기본 렌더링 프로필로 양식을 렌더링하기에 충분해야 합니다. 기본 렌더링 프로필이 사용자의 요구 사항을 충족하지 않으면 [사용자 지정 프로필](https://experienceleague.adobe.com/docs/experience-manager-65/forms/html5-forms/custom-profile.html) 을 만들고 양식과 연결할 수 있습니다.
 
 **미리 채우기 서비스** - 미리 채우기 서비스는 일반적으로 백엔드 데이터 소스에서 가져온 데이터로 양식을 채우는 데 사용됩니다.

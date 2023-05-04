@@ -1,6 +1,6 @@
 ---
 title: AEM as a Cloud Service 개발을 위한 개발 도구 설정
-description: 로컬에서 AEM에 대해 개발하는 데 필요한 모든 기준 툴을 사용하여 로컬 개발 시스템을 설정합니다.
+description: 로컬에서 AEM에 대해 개발하는 데 필요한 모든 베이스라인 도구를 사용하여 로컬 개발 컴퓨터를 설정합니다.
 feature: Developer Tools
 version: Cloud Service
 kt: 4267
@@ -10,9 +10,9 @@ role: Developer
 level: Beginner
 last-substantial-update: 2022-09-03T00:00:00Z
 exl-id: 6fb3199a-02c9-48bc-a6fa-1f767cfd2f2a
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
 workflow-type: tm+mt
-source-wordcount: '1502'
+source-wordcount: '1498'
 ht-degree: 7%
 
 ---
@@ -195,9 +195,9 @@ Visual Studio 코드는 주로 프런트 엔드 코드를 만드는 프런트 �
 
 ### Eclipse
 
-__[Eclipse IDE](https://www.eclipse.org/ide/)__ 는 Java 개발에 널리 사용되는 IDE이며  __[AEM 개발자 도구](https://experienceleague.adobe.com/docs/experience-manager-64/developing/devtools/aem-eclipse.html?lang=en)__ Adobe에서 제공하는 플러그인으로, 작성을 위한 IDE 내 GUI를 제공하고 JCR 컨텐츠를 로컬 AEM 인스턴스와 동기화할 수 있습니다.
+__[Eclipse IDE](https://www.eclipse.org/ide/)__ 는 Java 개발에 널리 사용되는 IDE이며  __[AEM 개발자 도구](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html)__ Adobe에서 제공하는 플러그인으로, 작성을 위한 IDE 내 GUI를 제공하고 JCR 컨텐츠를 로컬 AEM 인스턴스와 동기화할 수 있습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25906?quality=12&learn=on)
 
 + [Eclipse 다운로드](https://www.eclipse.org/ide/)
-+ [Eclipse 개발 도구 다운로드](https://experienceleague.adobe.com/docs/experience-manager-64/developing/devtools/aem-eclipse.html?lang=en)
++ [Eclipse 개발 도구 다운로드](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html)

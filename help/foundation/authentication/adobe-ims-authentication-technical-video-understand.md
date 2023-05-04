@@ -14,7 +14,7 @@ level: Experienced
 exl-id: 52dd8a3f-6461-4acb-87ca-5dd9567d15a6
 last-substantial-update: 2022-10-01T00:00:00Z
 thumbnail: KT-781.jpg
-source-git-commit: a156877ff4439ad21fb79f231d273b8983924199
+source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 3%
@@ -50,4 +50,4 @@ Adobe Experience Manager에서는 Managed Services에서 AEM을 위한 AEM 인�
 
 ### Adobe Experience Manager에서 권한 적용
 
-Adobe IMS에서 동기화된 사용자 그룹은 Adobe Experience Manager에서 [AEM 제공 사용자 그룹](https://experienceleague.adobe.com/docs/experience-manager-64/administering/security/security.html)- AEM에서 특정 작업 세트를 실행할 수 있는 적절한 권한이 미리 구성되어 있습니다. Adobe IMS에서 동기화된 사용자는에 직접 추가되지 않습니다 [AEM 제공 사용자 그룹](https://experienceleague.adobe.com/docs/experience-manager-64/administering/security/security.html).
+Adobe IMS에서 동기화된 사용자 그룹은 Adobe Experience Manager에서 [AEM 제공 사용자 그룹](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html)- AEM에서 특정 작업 세트를 실행할 수 있는 적절한 권한이 미리 구성되어 있습니다. Adobe IMS에서 동기화된 사용자는에 직접 추가되지 않습니다 [AEM 제공 사용자 그룹](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html).

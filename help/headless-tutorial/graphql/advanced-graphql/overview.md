@@ -7,7 +7,7 @@ topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: daae6145-5267-4958-9abe-f6b7f469f803
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
 workflow-type: tm+mt
 source-wordcount: '1076'
 ht-degree: 0%
@@ -78,7 +78,7 @@ AEM에서 새 프로젝트를 시작하는 첫 번째 단계는 작업 공간으
 
 >[!NOTE]
 >
-> 엔드포인트를 저장한 후에는 엔드포인트에 대한 액세스를 구성하려는 경우 보안 설정을 조정할 수 있는 보안 콘솔 방문에 대한 모달이 표시됩니다. 그러나 보안 권한 자체는 이 자습서의 범위를 벗어납니다. 자세한 내용은 [AEM 설명서](https://experienceleague.adobe.com/docs/experience-manager-64/administering/security/security.html).
+> 엔드포인트를 저장한 후에는 엔드포인트에 대한 액세스를 구성하려는 경우 보안 설정을 조정할 수 있는 보안 콘솔 방문에 대한 모달이 표시됩니다. 그러나 보안 권한 자체는 이 자습서의 범위를 벗어납니다. 자세한 내용은 [AEM 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html).
 
 ### WKND 컨텐츠 구조 및 언어 루트 폴더 검토
 

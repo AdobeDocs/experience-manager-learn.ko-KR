@@ -4,13 +4,13 @@ seo-title: Your Routine Site Maintenance Guide
 description: 관리자, 작성자 또는 개발자 등 모든 사이트 유지 관리는 AEM Sites 인스턴스의 모든 측면을 다룹니다. 이 안내서를 사용하여 전략이 성공하도록 합니다.
 seo-description: Whether you're an admin, author, or developer, site maintenance touches every aspect of your AEM Sites instance. Use this guide to ensure your strategy is set up for success.
 audience: author, marketer, developer
-source-git-commit: d545e7bb5e937959e2ede2b3c1ecfc312df5a044
+exl-id: 37ee3234-f91c-4f0a-b0b7-b9167e7847a9
+source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
 workflow-type: tm+mt
-source-wordcount: '1094'
+source-wordcount: '1084'
 ht-degree: 5%
 
 ---
-
 
 # 사이트 유지 관리 팁과 트릭
 
@@ -44,23 +44,23 @@ AEM 인스턴스를 설치하고 유지 관리하는 데에는 세 가지 옵션
 
 저장소에 대한 각 업데이트에서는 새 컨텐츠 개정을 만듭니다. 따라서 각 업데이트 시 저장소의 크기가 증가합니다. 저장소 증가를 제어하지 않으려면 사용 가능한 디스크 리소스를 위해 이전 버전을 정리해야 합니다.
 
-#### [Lucene 이진 파일 정리](https://experienceleague.adobe.com/docs/experience-manager-64/administering/operations/operations-dashboard.html?lang=en#automated-maintenance-tasks)
+#### [Lucene 이진 파일 정리](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/operations-dashboard.html#automated-maintenance-tasks)
 
 lucene 바이너리를 제거하고 실행 중인 데이터 저장소 크기 요구 사항을 줄입니다.
 
-#### [데이터 저장소 가비지](https://experienceleague.adobe.com/docs/experience-manager-64/administering/operations/data-store-garbage-collection.html?lang=en)
+#### [데이터 저장소 가비지](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/data-store-garbage-collection.html)
 
 AEM의 자산이 삭제되면 기본 데이터 저장소 레코드에 대한 참조가 노드 계층에서 제거될 수 있지만 데이터 저장소 레코드 자체는 유지됩니다. 이 참조되지 않은 데이터 저장소 레코드는 보존할 필요가 없는 &quot;가비지&quot;가 됩니다. 참조되지 않은 자산이 많은 경우 자산을 제거하여 공간을 유지하고 백업 및 파일 시스템 유지 관리 성능을 최적화하는 것이 좋습니다.
 
-#### [워크플로 삭제](https://experienceleague.adobe.com/docs/experience-manager-64/administering/operations/workflows-administering.html?lang=en)
+#### [워크플로 삭제](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html)
 
 워크플로 인스턴스 수를 최소화하면 워크플로 엔진의 성능이 향상되므로 완료되었거나 실행 중인 워크플로 인스턴스를 저장소에서 정기적으로 제거할 수 있습니다.
 
-#### [감사 로그 유지 관리](https://experienceleague.adobe.com/docs/experience-manager-64/administering/operations/operations-audit-log.html?lang=en)
+#### [감사 로그 유지 관리](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/operations-audit-log.html)
 
 감사 로깅에 적합한 AEM 이벤트는 아카이브된 데이터를 많이 생성합니다. 복제, 자산 업로드 및 기타 시스템 작업으로 인해 시간이 지남에 따라 이러한 데이터가 빠르게 증가할 수 있습니다.
 
-#### [보안](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html?lang=en)
+#### [보안](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html?lang=ko-KR)
 
 Security Checklist Best Practice가 잘 준수되도록 AEM의 가장 안전한 인스턴스를 보장합니다.
 
@@ -80,7 +80,7 @@ Security Checklist Best Practice가 잘 준수되도록 AEM의 가장 안전한 
 
 론치를 사용하면 현재 배포된 페이지에 영향을 주지 않고 새 홍보, 판매 또는 웹 사이트 롤아웃에 대한 작업을 완료할 수 있습니다. 또한 참석이나 감독 없이 자동으로 라이브로 전환되도록 예약할 수 있으므로 작성자는 다음 주(또는 다음 분기) 작업을 오늘 수행할 수 있으며 페이지 개발에 뛰어들지 않고 실제로 적용할 수 있는 TIME의 선물입니다.
 
-### [콘텐츠 조각](https://experienceleague.adobe.com/docs/experience-manager-64/assets/fragments/content-fragments.html?lang=en)
+### [콘텐츠 조각](https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments.html)
 
 컨텐츠 조각은 사이트 전체에서 쉽게 재사용할 수 있는 사용자 정의 가능한 &quot;청크&quot; 정보입니다. 변경이 필요한 경우 원래 청크를 변경하고 업데이트가 사용되는 모든 곳에서 즉시 표시됩니다.
 
