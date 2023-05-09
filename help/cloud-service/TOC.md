@@ -5,9 +5,9 @@ breadcrumb-title: AEM as a Cloud Service 튜토리얼
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: e9422231b8237abe7e2e3703764b2fdc253f33d3
+source-git-commit: b3cc9c4fbd36cdf5be46e4546a174fea0c8da05c
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '938'
 ht-degree: 22%
 
 ---
@@ -27,7 +27,9 @@ ht-degree: 22%
       + [Experience Manager - 거버넌스 및 스태핑 모델 및 원형](./introduction/experience-manager-governance-and-staffing-models.md)
       + [Adobe Experience Manager을 사용하여 컨텐츠 속도를 높이는 방법](./introduction/drive-content-velocity-for-sites.md)
       + [AEM 스타일 시스템을 사용하여 컨텐츠 속도 향상](./introduction/accelerate-content-velocity-aem.md)
-+ [Experience Cloud 통합](./experience-cloud/integrations.md)
++ Experience Cloud 통합{#integrations}
+   + [통합](./integrations/experience-cloud.md)
+   + [Adobe Target](./integrations/target.md)
 + 기본 기술 {#underlying-technology}
    + [AEM 아키텍처](./underlying-technology/introduction-architecture.md)
    + [OSGi](./underlying-technology/introduction-osgi.md)
