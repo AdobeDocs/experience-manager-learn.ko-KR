@@ -1,17 +1,18 @@
 ---
 title: 양식 첨부 파일 저장
 description: 양식 첨부 파일을 추출하고 CRX 저장소의 새 위치에 저장합니다.
-feature: 적응형 양식
+feature: Adaptive Forms
 type: Tutorial
 version: 6.4,6.5
 kt: 6537
 thumbnail: 6537.jpg
-topic: 개발
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: ec50b9b1-e28c-4d84-ae90-6a21c9700688
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '192'
 ht-degree: 1%
 
 ---
@@ -30,7 +31,7 @@ OSGi 서비스는 양식 첨부 파일을 CRX 저장소의 새 위치에 저장�
 }
 ```
 
-다음은 요청에서 첨부 파일을 추출하여 **/content/attachments** 폴더 아래에 저장하는 코드입니다
+다음은 요청에서 첨부 파일을 추출하여 저장하는 코드입니다 **/content/afattachments** 폴더
 
 ```java
 public String storeAFAttachments(JSONObject fileMap, SlingHttpServletRequest request) {
@@ -79,3 +80,7 @@ public String storeAFAttachments(JSONObject fileMap, SlingHttpServletRequest req
 "guide[0].guide1[0].guideRootPanel[0].documentation[0].yourBankStatements[0].table1603552612235[0].Row1[0].tableItem11[0]": "/content/afattachments/81653de9-4967-4736-9ca3-807a11542243/BankStatement-Sept-2020.pdf"
 }
 ```
+
+## 다음 단계
+
+[양식 데이터를 저장합니다](./store-form-data.md)

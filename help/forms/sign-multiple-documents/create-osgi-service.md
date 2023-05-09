@@ -9,10 +9,10 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 49e7bd65-33fb-44d4-aaa2-50832dffffb0
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 0%
+source-wordcount: '362'
+ht-degree: 1%
 
 ---
 
@@ -202,6 +202,10 @@ public String getNextFormToSign(int customerID) {
 
 
 
-## 에셋
+## Assets
 
 위에 언급된 서비스와 함께 OSGi 번들을 사용할 수 있습니다 [여기에서 다운로드](assets/sign-multiple-forms.jar)
+
+## 다음 단계
+
+[초기 양식 제출을 처리하는 기본 워크플로우를 만듭니다](./create-main-workflow.md)

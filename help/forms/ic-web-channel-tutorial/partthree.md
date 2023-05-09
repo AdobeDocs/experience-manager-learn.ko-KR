@@ -7,9 +7,9 @@ version: 6.4,6.5
 role: Developer
 level: Beginner
 exl-id: 798012e5-5099-4fd0-82ad-a21f64a97aca
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '252'
 ht-degree: 0%
 
 ---
@@ -33,3 +33,9 @@ ht-degree: 0%
 자세한 내용은 [데이터 소스 구성](parttwo.md).
 
 양식 데이터 모델을 만든 후에는 문서 조각 및 대화형 통신 문서를 만드는 기준으로 사용할 수 있습니다.
+
+## 다음 단계
+
+[웹 채널 문서 템플릿 만들기](./partfour.md)
+
+

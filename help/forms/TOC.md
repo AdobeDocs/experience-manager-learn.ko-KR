@@ -7,10 +7,10 @@ breadcrumb-title: AEM Forms 튜토리얼
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
 source-wordcount: '1804'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -127,17 +127,17 @@ ht-degree: 3%
    + [3 - 전자 메일 양식 첨부 파일](zipping-form-attachments/populating-list-of-documents.md)
    + [4 - 솔루션 테스트](zipping-form-attachments/test.md)
 + 적응형 양식 저장 및 검색{#store-and-retrieve-af-with-2fa}
-   + [소개](store-and-retrieve-af-with-2fa/introduction.md)
-   + [데이터 소스 구성](store-and-retrieve-af-with-2fa/configure-data-source.md)
-   + [양식 첨부 파일 저장](store-and-retrieve-af-with-2fa/store-form-attachments.md)
-   + [양식 데이터 저장](store-and-retrieve-af-with-2fa/store-form-data.md)
-   + [서블릿 만들기](store-and-retrieve-af-with-2fa/create-servlet.md)
-   + [저장된 데이터를 사용하여 양식 렌더링](store-and-retrieve-af-with-2fa/retrieve-saved-form.md)
-   + [클라이언트 라이브러리 만들기](store-and-retrieve-af-with-2fa/create-client-lib.md)
-   + [OTP 서비스와 통합](store-and-retrieve-af-with-2fa/verify-users-with-otp.md)
-   + [기본 양식 만들기](store-and-retrieve-af-with-2fa/create-the-main-adaptive-form.md)
-   + [MyAccount 양식 만들기](store-and-retrieve-af-with-2fa/create-the-myaccount-form.md)
-   + [샘플 배포](store-and-retrieve-af-with-2fa/deploy-this-sample.md)
+   + [1 - 소개](store-and-retrieve-af-with-2fa/introduction.md)
+   + [2 - 데이터 소스 구성](store-and-retrieve-af-with-2fa/configure-data-source.md)
+   + [3 - 양식 첨부 파일 저장](store-and-retrieve-af-with-2fa/store-form-attachments.md)
+   + [4 - 양식 데이터 저장](store-and-retrieve-af-with-2fa/store-form-data.md)
+   + [5 - 서블릿 만들기](store-and-retrieve-af-with-2fa/create-servlet.md)
+   + [6 - 저장된 데이터를 사용하여 양식 렌더링](store-and-retrieve-af-with-2fa/retrieve-saved-form.md)
+   + [7 - 클라이언트 라이브러리 만들기](store-and-retrieve-af-with-2fa/create-client-lib.md)
+   + [8 - OTP 서비스와 통합](store-and-retrieve-af-with-2fa/verify-users-with-otp.md)
+   + [9 - 기본 양식 만들기](store-and-retrieve-af-with-2fa/create-the-main-adaptive-form.md)
+   + [10 - MyAccount 양식 만들기](store-and-retrieve-af-with-2fa/create-the-myaccount-form.md)
+   + [11 - 샘플 배포](store-and-retrieve-af-with-2fa/deploy-this-sample.md)
 + CSV 형식으로 제출된 데이터 내보내기{#export-submitted-data-csv-format}
    + [제출된 데이터 내보내기](export-submitted-data-csv-format/export-submitted-data-csv.md)
 + HTML5 양식{#html5-forms}
@@ -157,17 +157,17 @@ ht-degree: 3%
    + [변환된 적응형 양식 구성](aem-forms-and-adobe-sign/configure-converted-adaptive-form.md)
    + [Acrobat Sign에서 XDP 템플릿 사용](aem-forms-and-adobe-sign/using-xdp-templates-with-adobe-sign.md)
 + 여러 Forms 서명{#sign-multiple-documents}
-   + [소개](sign-multiple-documents/introduction.md)
-   + [데이터 소스 구성](sign-multiple-documents/configure-data-source.md)
-   + [OSGi 서비스 만들기](sign-multiple-documents/create-osgi-service.md)
-   + [기본 워크플로우 만들기](sign-multiple-documents/create-main-workflow.md)
-   + [서명 상태 업데이트 워크플로우](sign-multiple-documents/update-signature-status.md)
-   + [요약 구성 요소 사용자 지정](sign-multiple-documents/customize-summary-component.md)
-   + [클라이언트 라이브러리 만들기](sign-multiple-documents/create-client-lib.md)
-   + [양식 템플릿 만들기](sign-multiple-documents/create-af-template.md)
-   + [초기 양식 만들기](sign-multiple-documents/create-initial-form.md)
-   + [서명을 위한 양식 만들기](sign-multiple-documents/create-forms-for-signing.md)
-   + [솔루션 테스트](sign-multiple-documents/testing-and-trouble-shooting.md)
+   + [1 - 소개](sign-multiple-documents/introduction.md)
+   + [2 - 데이터 소스 구성](sign-multiple-documents/configure-data-source.md)
+   + [3 - OSGi 서비스 만들기](sign-multiple-documents/create-osgi-service.md)
+   + [4 - 기본 워크플로우 만들기](sign-multiple-documents/create-main-workflow.md)
+   + [5 - 서명 상태 업데이트 워크플로우](sign-multiple-documents/update-signature-status.md)
+   + [6 - 요약 구성 요소 사용자 정의](sign-multiple-documents/customize-summary-component.md)
+   + [7 - 클라이언트 라이브러리 만들기](sign-multiple-documents/create-client-lib.md)
+   + [8 - 양식 템플릿 만들기](sign-multiple-documents/create-af-template.md)
+   + [9 - 초기 양식 만들기](sign-multiple-documents/create-initial-form.md)
+   + [10 - 서명을 위한 양식 만들기](sign-multiple-documents/create-forms-for-signing.md)
+   + [11 - 솔루션 테스트](sign-multiple-documents/testing-and-trouble-shooting.md)
 + 사용자 지정 워크플로우 단계{#custom-workflow-steps}
    + [xml 문서에서 노드 추출](custom-workflow-steps/extract-xml-node.md)
    + [파일 시스템에 문서 저장](custom-workflow-steps/write-payload-document.md)
@@ -185,9 +185,9 @@ ht-degree: 3%
    + [양식 데이터 모델 변수](variables-aem-workflow/form-data-model.md)
    + [AEM Workflow의 규칙 편집기](variables-aem-workflow/part5.md)
 + 양식 데이터 검토{#review-form-data}
-   + [소개](review-form-data/introduction.md)
-   + [구성 요소 만들기](review-form-data/create-component.md)
-   + [자산 배포](review-form-data/deploy-on-your-system.md)
+   + [1 - 소개](review-form-data/introduction.md)
+   + [2 - 구성 요소 만들기](review-form-data/create-component.md)
+   + [3 - 자산 배포](review-form-data/deploy-on-your-system.md)
 + MySQL DB에서 양식 데이터 저장 및 검색{#storing-and-retrieving-form-data}
    + [소개](storing-retrieving-form-data/introduction.md)
    + [데이터 소스 구성](storing-retrieving-form-data/part1.md)
@@ -260,18 +260,18 @@ ht-degree: 3%
    + [유용한 유틸리티 서비스](document-services/useful-utility-services.md)
 + 인쇄 채널용 대화형 통신
 {#ic-print-channel-tutorial}
-   + [소개](ic-print-channel-tutorial/introduction.md)
-   + [Tomcat 설정](ic-print-channel-tutorial/set-up-tomcat.md)
-   + [데이터 소스 만들기](ic-print-channel-tutorial/create-data-source.md)
-   + [양식 데이터 모델 만들기](ic-print-channel-tutorial/create-form-data-model.md)
-   + [Forms 디자이너를 사용하여 XDP 레이아웃 만들기](ic-print-channel-tutorial/create-xdp-layout-using-forms-designer.md)
-   + [문서 조각 만들기](ic-print-channel-tutorial/create-document-fragment.md)
-   + [인쇄 채널 문서 만들기](ic-print-channel-tutorial/create-print-channel-document.md)
-   + [Target 영역에 컨텐츠 추가](ic-print-channel-tutorial/add-content-to-target-areas.md)
-   + [라인 차트 구성](ic-print-channel-tutorial/configuring-line-chart.md)
-   + [인쇄 채널에 표 추가](ic-print-channel-tutorial/adding-table-to-print-channel.md)
-   + [감시 폴더를 사용하여 문서 생성](ic-print-channel-tutorial/using-watched-folder-to-generate-document.md)
-   + [양식 제출 시 에이전트 UI 열기](ic-print-channel-tutorial/opening-agent-ui-on-form-submission.md)
+   + [1 - 소개](ic-print-channel-tutorial/introduction.md)
+   + [2 - Tomcat 설정](ic-print-channel-tutorial/set-up-tomcat.md)
+   + [3 - 데이터 소스 만들기](ic-print-channel-tutorial/create-data-source.md)
+   + [4 - 양식 데이터 모델 만들기](ic-print-channel-tutorial/create-form-data-model.md)
+   + [5 - Forms 디자이너를 사용하여 XDP 레이아웃 만들기](ic-print-channel-tutorial/create-xdp-layout-using-forms-designer.md)
+   + [6 - 문서 조각 만들기](ic-print-channel-tutorial/create-document-fragment.md)
+   + [7 - 인쇄 채널 문서 만들기](ic-print-channel-tutorial/create-print-channel-document.md)
+   + [8 - Target 영역에 컨텐츠 추가](ic-print-channel-tutorial/add-content-to-target-areas.md)
+   + [9 - 라인 차트 구성](ic-print-channel-tutorial/configuring-line-chart.md)
+   + [10 - 인쇄 채널에 테이블 추가](ic-print-channel-tutorial/adding-table-to-print-channel.md)
+   + [11 - 감시 폴더를 사용하여 문서 생성](ic-print-channel-tutorial/using-watched-folder-to-generate-document.md)
+   + [12 - 양식 제출에서 에이전트 UI 열기](ic-print-channel-tutorial/opening-agent-ui-on-form-submission.md)
 + 초안 문자 저장 및 검색 {#store-retrieve-letters}
    + [소개](store-retrieve-letters/introduction.md)
    + [구현](store-retrieve-letters/save-draft-letters.md)
@@ -287,19 +287,19 @@ ht-degree: 3%
    + [텍스트 편집기 사용자 정의](interactive-communications/customize-text-editor.md)
 
 + 웹 채널을 위한 대화형 통신 {#ic-web-channel-tutorial}
-   + [소개](ic-web-channel-tutorial/introduction.md)
-   + [Tomcat 설정](ic-web-channel-tutorial/partone.md)
-   + [데이터 소스 만들기](ic-web-channel-tutorial/parttwo.md)
-   + [양식 데이터 모델 만들기](ic-web-channel-tutorial/partthree.md)
-   + [웹 채널 문서 템플릿 만들기](ic-web-channel-tutorial/partfour.md)
-   + [문서 조각 만들기](ic-web-channel-tutorial/partfive.md)
-   + [대화형 통신 문서 만들기](ic-web-channel-tutorial/partsix.md)
-   + [텍스트 및 이미지 추가](ic-web-channel-tutorial/partseven.md)
-   + [라인 차트 구성](ic-web-channel-tutorial/parteight.md)
-   + [테이블 구성](ic-web-channel-tutorial/partnine.md)
-   + [열 차트 구성](ic-web-channel-tutorial/partten.md)
-   + [파이 차트 구성](ic-web-channel-tutorial/parteleven.md)
-   + [웹 채널 문서 전달](ic-web-channel-tutorial/parttwelve.md)
+   + [1 - 소개](ic-web-channel-tutorial/introduction.md)
+   + [2 - Tomcat 설정](ic-web-channel-tutorial/partone.md)
+   + [3 - 데이터 소스 만들기](ic-web-channel-tutorial/parttwo.md)
+   + [4 - 양식 데이터 모델 만들기](ic-web-channel-tutorial/partthree.md)
+   + [5 - 웹 채널 문서 템플릿 만들기](ic-web-channel-tutorial/partfour.md)
+   + [6 - 문서 조각 만들기](ic-web-channel-tutorial/partfive.md)
+   + [7 - 대화형 통신 문서 만들기](ic-web-channel-tutorial/partsix.md)
+   + [8 - 텍스트 및 이미지 추가](ic-web-channel-tutorial/partseven.md)
+   + [9 - 라인 차트 구성](ic-web-channel-tutorial/parteight.md)
+   + [10 - 테이블 구성](ic-web-channel-tutorial/partnine.md)
+   + [11 - 열 차트 구성](ic-web-channel-tutorial/partten.md)
+   + [12 - 파이 차트 구성](ic-web-channel-tutorial/parteleven.md)
+   + [13 - 웹 채널 문서 전달](ic-web-channel-tutorial/parttwelve.md)
    + [웹 채널 문서의 이메일 전달](interactive-communications/delivery-of-web-channel-document-tutorial-use.md)
 
 + 문제 해결 {#troubleshooting}

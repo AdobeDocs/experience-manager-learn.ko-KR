@@ -17,10 +17,10 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 1f4d88ad-ace1-4f78-be40-da80b3b4d40c
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '97'
-ht-degree: 0%
+source-wordcount: '108'
+ht-degree: 1%
 
 ---
 
@@ -31,3 +31,7 @@ ht-degree: 0%
 >[!VIDEO](https://video.tv.adobe.com/v/27765?quality=12&learn=on)
 
 이 자습서와 관련된 자산의 일부로 제공된 swagger 파일을 사용하십시오. 자산은에서 사용할 수 있습니다. [소개](introduction.md) 참조하십시오.
+
+## 다음 단계
+
+[데이터 소스를 기반으로 양식 데이터 모델 만들기](./create-form-data-model.md)

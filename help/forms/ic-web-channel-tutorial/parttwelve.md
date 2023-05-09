@@ -1,28 +1,28 @@
 ---
 title: 웹 채널 문서 전달 설정
-seo-title: 웹 채널 문서 전달 설정
+seo-title: Setting up the delivery of web channel document
 description: 첫 번째 대화형 통신 문서를 만들기 위한 여러 단계의 자습서의 마지막 부분입니다. 이 부분에서는 이메일을 통해 웹 채널 문서의 게재를 살펴봅니다.
-seo-description: 첫 번째 대화형 통신 문서를 만들기 위한 여러 단계의 자습서의 마지막 부분입니다. 이 부분에서는 이메일을 통해 웹 채널 문서의 게재를 살펴봅니다.
+seo-description: This is the final part of a multistep tutorial for creating your first interactive communications document. In this part, we look at the delivery of web channel document via email.
 uuid: c1066600-1abd-4401-b04f-b93c28603cc7
-feature: 대화형 통신
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 discoiquuid: 1a7cf095-c5d8-4d92-a018-883cda76fe70
-topic: 개발
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 510d1782-59b9-41a6-a071-a16170f2cd06
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '357'
 ht-degree: 0%
 
 ---
 
-
-# 웹 채널 문서 {#setting-up-the-delivery-of-web-channel-document} 게재 설정
+# 웹 채널 문서 전달 설정 {#setting-up-the-delivery-of-web-channel-document}
 
 
 이 부분에서는 이메일을 통해 웹 채널 문서의 게재를 살펴봅니다.
@@ -52,7 +52,7 @@ AEM Forms에 로그인합니다.
 * 변경 사항을 저장했는지 확인합니다.
    ![fdm](assets/requestattribute.gif)
 
-## 웹 채널 문서의 전자 메일 배달 테스트 {#test-email-delivery-of-web-channel-document}
+## 웹 채널 문서의 이메일 배달 테스트 {#test-email-delivery-of-web-channel-document}
 
 * [패키지 관리자를 사용하여 샘플 자산 설치](assets/webchanneldelivery.zip)
 * [crx에 로그인](http://localhost:4502/crx/de/index.jsp#)
@@ -73,4 +73,8 @@ AEM Forms에 로그인합니다.
 
 >[!NOTE]
 >
->crx에서 **/apps/AEMForms/fetchad/GET.jsp** 파일을 살펴보십시오. String 변수 webChannelDocument가 올바른 통신 문서 경로를 가리키는지 확인하십시오.
+>여기 좀 보세요 **/apps/AEMForms/fetchad/GET.jsp** 파일을 crx에 추가합니다. String 변수 webChannelDocument가 올바른 통신 문서 경로를 가리키는지 확인하십시오.
+
+## 다음 단계
+
+[전자 메일 게재 설정](../interactive-communications/delivery-of-web-channel-document-tutorial-use.md)

@@ -14,10 +14,10 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: f0f19838-1ade-4eda-b736-a9703a3916c2
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 0%
+source-wordcount: '242'
+ht-degree: 1%
 
 ---
 
@@ -41,3 +41,7 @@ tomcat을 설정하려면 다음 지침을 따르십시오.
 12. 이 호출의 결과로 샘플 데이터를 가져와야 합니다.
 
 축하합니다 !!!. tomcat을 설정하고 SampleRest.war 파일을 배포했습니다.
+
+## 다음 단계
+
+[RESTful 데이터 소스 구성](./parttwo.md)

@@ -1,10 +1,10 @@
 ---
 title: 감시 폴더를 사용하여 인쇄 채널 문서 생성
-seo-title: 감시 폴더를 사용하여 인쇄 채널 문서 생성
+seo-title: Generating Print Channel Documents Using Watched Folder
 description: 이 내용은 인쇄 채널용 첫 번째 대화형 통신 문서를 만들기 위한 여러 단계의 자습서 10부의 일부입니다. 이 부분에서는 감시 폴더 메커니즘을 사용하여 인쇄 채널 문서를 생성합니다.
-seo-description: 이 내용은 인쇄 채널용 첫 번째 대화형 통신 문서를 만들기 위한 여러 단계의 자습서 10부의 일부입니다. 이 부분에서는 감시 폴더 메커니즘을 사용하여 인쇄 채널 문서를 생성합니다.
+seo-description: This is part 10 of multistep tutorial for creating your first interactive communications document for the print channel. In this part, we will generate print channel documents using the watched folder mechanism.
 uuid: 9e39f4e3-1053-4839-9338-09961ac54f81
-feature: 대화형 통신
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: tutorial
@@ -12,16 +12,16 @@ activity: implement
 version: 6.4,6.5
 contentOwner: gbedekar
 discoiquuid: 23fbada3-d776-4b77-b381-22d3ec716ae9
-topic: 개발
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 9bb05c94-2a7b-4149-b567-186eb08b1c66
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
-
 
 # 감시 폴더를 사용하여 인쇄 채널 문서 생성
 
@@ -29,13 +29,13 @@ ht-degree: 0%
 
 인쇄 채널 문서를 만들고 테스트한 후 일괄 처리 모드 또는 주문형 문서를 생성하는 메커니즘이 필요합니다. 일반적으로 이러한 종류의 문서는 배치 모드에서 생성되며 가장 일반적인 메커니즘은 감시 폴더를 사용합니다.
 
-AEM에서 감시 폴더를 구성할 때, 파일이 감시 폴더에 삭제될 때 실행되는 ECMA 스크립트나 Java 코드를 연결합니다. 이 문서에서는 인쇄 채널 문서를 생성하여 파일 시스템에 저장하는 ECMA 스크립트에 중점을 둡니다.
+AEM에서 감시 폴더를 구성할 때, 파일이 감시 폴더에 드롭될 때 실행되는 ECMA 스크립트나 Java 코드를 연결합니다. 이 문서에서는 인쇄 채널 문서를 생성하여 파일 시스템에 저장하는 ECMA 스크립트에 중점을 둡니다.
 
-감시 폴더 구성 및 ECMA 스크립트는 이 자습서의 [시작 부분에서 가져온 자산의 일부입니다](introduction.md)
+감시 폴더 구성 및 ECMA 스크립트는 [이 자습서 시작](introduction.md)
 
 감시 폴더에 드롭된 입력 파일의 구조는 다음과 같습니다. ECMA 스크립트는 계좌 번호를 읽고 이러한 각 계정에 대해 인쇄 채널 문서를 생성합니다.
 
-문서 생성을 위한 ECMA 스크립트에 대한 자세한 내용은 [이 문서](/help/forms/interactive-communications/generating-interactive-communications-print-document-using-api-tutorial-use.md)를 참조하십시오
+문서 생성을 위한 ECMA 스크립트에 대한 자세한 내용은 [이 문서를 참조하십시오](/help/forms/interactive-communications/generating-interactive-communications-print-document-using-api-tutorial-use.md)
 
 ```xml
 <accountnumbers>
@@ -78,6 +78,6 @@ AEM에서 감시 폴더를 구성할 때, 파일이 감시 폴더에 삭제될 �
 
 * ECMA 스크립트에 지정된 대로 저장 위치에서 pdf 파일을 확인합니다.
 
+## 다음 단계
 
-
-
+[양식 제출 시 에이전트 ui 열기](./opening-agent-ui-on-form-submission.md)

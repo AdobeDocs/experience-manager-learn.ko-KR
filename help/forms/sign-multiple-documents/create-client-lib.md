@@ -1,17 +1,18 @@
 ---
 title: 클라이언트 라이브러리 만들기
 description: 서명할 다음 양식을 가져올 클라이언트 라이브러리 코드
-feature: 적응형 양식
+feature: Adaptive Forms
 version: 6.4,6.5
 kt: 6907
 thumbnail: 6907.jpg
-topic: 개발
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 3c148b30-2c7d-428d-9a3c-f3067ca3a239
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '84'
-ht-degree: 4%
+source-wordcount: '91'
+ht-degree: 3%
 
 ---
 
@@ -71,6 +72,10 @@ $(document).ready(function()
 });
 ```
 
-## 자산
+## Assets
 
 [clientlib은 여기에서 다운로드할 수 있습니다](assets/get-next-form-client-lib.zip)
+
+## 다음 단계
+
+[이 사용 사례에 대한 사용자 지정 양식 템플릿 만들기](./create-af-template.md)

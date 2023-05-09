@@ -9,10 +9,10 @@ role: Developer
 level: Experienced
 exl-id: 0260d4b6-8615-4d78-a920-b36766a0f8e9
 last-substantial-update: 2021-07-07T00:00:00Z
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '118'
-ht-degree: 2%
+source-wordcount: '125'
+ht-degree: 4%
 
 ---
 
@@ -33,3 +33,7 @@ ht-degree: 2%
 * AEM/AEM Forms을 사용한 일부 경험
 
 이 자습서에 따라 자산을 설치하면 여러 양식에 서명하는 작업 솔루션을 사용할 수 있습니다.
+
+## 다음 단계
+
+[데이터베이스 지원 데이터 소스 구성 ](./configure-data-source.md)

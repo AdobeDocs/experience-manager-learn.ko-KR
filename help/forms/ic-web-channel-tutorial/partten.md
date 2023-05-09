@@ -14,13 +14,13 @@ discoiquuid: 2ee2cea2-aefa-4d21-a258-248648f73a68
 topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 0049c9fd864bd4dd4f8c33b1e40e94aad3ffc5b9
+exl-id: 0dd8a430-9a4e-4dc7-ad75-6ad2490430f2
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 0%
+source-wordcount: '349'
+ht-degree: 1%
 
 ---
-
 
 # 퇴직 Outlook 패널 구성{#configuring-retirement-outlook-panel}
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 * &quot;연필&quot; 아이콘을 선택하여 기본 텍스트를 편집합니다.
 
-* 기본 텍스트를 &quot;**퇴직금 Outlook&quot;**&#x200B;로 바꿉니다.
+* 기본 텍스트를 &quot;**퇴직 소득 전망&quot;**
 
 **RightPanel 대상 영역 구성**
 
@@ -54,13 +54,13 @@ ht-degree: 0%
 
 * &quot;연필&quot; 아이콘을 선택하여 기본 텍스트를 편집합니다.
 
-* 기본 텍스트를 &quot;**예상 퇴직 소득&quot;**&#x200B;으로 바꿉니다.
+* 기본 텍스트를 &quot;**예상 퇴직 소득&quot;**
 
 ## 퇴직 소득 Outlook 문서 조각 추가 {#add-retirement-income-outlook-document-fragment}
 
 * 자산 아이콘을 클릭하고 필터를 적용하여 &quot;문서 조각&quot; 유형의 자산을 표시합니다. RestrationImportableOutlook 문서 조각을 왼쪽 패널 대상 영역으로 끌어다 놓습니다.
 
-* 컨텐츠 영역에 문서 조각을 추가할 때 이 페이지](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/partseven.html)를 [참조할 수 있습니다.
+* 다음을 의미할 수 있습니다 [이 페이지에](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/partseven.html) 컨텐츠 영역에 문서 조각 추가 시
 
 ## 예상 월별 소득 차트 추가 {#adding-estimated-monthly-income-chart}
 
@@ -74,6 +74,6 @@ ht-degree: 0%
 
 ![forms65](assets/estimatedmonthlyincomechart65.PNG)
 
+## 다음 단계
 
-
-
+[파이 차트 구성](./parteleven.md)

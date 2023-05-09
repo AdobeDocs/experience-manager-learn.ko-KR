@@ -10,10 +10,11 @@ topic: Development
 role: Developer
 level: Experienced
 last-substantial-update: 2023-01-22T00:00:00Z
-source-git-commit: d3531e76d3341e0964e5ed878fc72037024a11fd
+exl-id: fa971850-0e89-4f74-a747-ec99051be2f1
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '84'
-ht-degree: 0%
+source-wordcount: '91'
+ht-degree: 2%
 
 ---
 
@@ -28,3 +29,7 @@ ht-degree: 0%
 * 적절한 양식 추가 패키지가 있는 6.5 이상
 
 AEM 및 AEM Forms에 대한 개발자 경험 수준도 있는 것이 좋습니다.
+
+## 다음 단계
+
+[사용자 지정 구성 요소를 사용하여 데이터 요약](./create-component.md)

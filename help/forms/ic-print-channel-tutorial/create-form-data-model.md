@@ -16,9 +16,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 4e64aa99-0b1c-49e9-95a7-d254017b80f4
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '227'
+source-wordcount: '233'
 ht-degree: 0%
 
 ---
@@ -36,3 +36,7 @@ ht-degree: 0%
 양식 데이터 모델은 모든 대화형 커뮤니케이션의 기반입니다. 양식 데이터 모델 가져오기/읽기 작업은 백엔드 데이터 소스에서 데이터를 가져오고 Interactive Communications 문서를 채우는 데 사용됩니다.
 
 양식 데이터 모델을 만든 후에는 문서 조각 및 대화형 통신 문서를 만드는 기준으로 사용할 수 있습니다.
+
+## 다음 단계
+
+[디자이너를 사용하여 템플릿 만들기](./create-xdp-layout-using-forms-designer.md)

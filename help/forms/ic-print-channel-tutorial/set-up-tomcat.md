@@ -15,10 +15,10 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: faa9ca2d-6cfa-4abf-be5e-3e549202853a
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 0%
+source-wordcount: '241'
+ht-degree: 1%
 
 ---
 
@@ -47,3 +47,7 @@ tomcat을 설정하려면 다음 지침을 따르십시오.
 
 다음 비디오에서는 Tomcat에서 샘플 응용 프로그램을 배포하는 방법에 대해 설명합니다
 >[!VIDEO](https://video.tv.adobe.com/v/37815?quality=12&learn=on)
+
+## 다음 단계
+
+[RESTful 데이터 소스 만들기](./create-data-source.md)

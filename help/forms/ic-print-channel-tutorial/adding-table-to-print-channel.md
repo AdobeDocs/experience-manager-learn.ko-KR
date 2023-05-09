@@ -17,10 +17,10 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: b5a6c1c9-2be1-4622-b85b-a1996fb86a2f
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '104'
-ht-degree: 0%
+source-wordcount: '114'
+ht-degree: 1%
 
 ---
 
@@ -37,4 +37,8 @@ AEM Forms에 로그인하고 Adobe Experience Manager > Forms > Forms 및 문서
 
 다음 비디오에서는 인쇄 채널 문서에서 표를 구성하는 단계를 안내합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/22387?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27769?quality=12&learn=on)
+
+## 다음 단계
+
+[감시 폴더를 사용하여 인쇄 채널 문서 생성](./using-watched-folder-to-generate-document.md)

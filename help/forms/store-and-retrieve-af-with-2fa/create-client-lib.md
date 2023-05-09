@@ -1,24 +1,25 @@
 ---
 title: 클라이언트 라이브러리 만들기
 description: clientlibrary를 만들어 "저장 및 종료" 단추의 클릭 이벤트를 처리합니다
-feature: 적응형 양식
+feature: Adaptive Forms
 type: Tutorial
 version: 6.4,6.5
 kt: 6597
 thumbnail: 6597.pg
-topic: 개발
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: c90eea73-bd44-40af-aa98-d766aa572415
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '142'
-ht-degree: 2%
+source-wordcount: '146'
+ht-degree: 6%
 
 ---
 
 # 클라이언트 라이브러리 만들기
 
-CSS 클래스 **savebutton**&#x200B;으로 식별되는 단추의 클릭 이벤트에서 `guideBridge` API의 `doAjaxSubmitWithFileAttachment` 메서드를 호출하는 코드를 포함하는 [클라이언트 lib](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html)을(를) 만듭니다.  적응형 양식 데이터 `fileMap` 및 `mobileNumber`을 `**/bin/storeafdatawithattachments`에서 수신 대기하는 종단점에 전달합니다
+만들기 [클라이언트 라이브러리](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html) 메서드를 호출할 코드를 포함할 수 있습니다 `doAjaxSubmitWithFileAttachment` 의 `guideBridge` CSS 클래스로 식별된 단추의 클릭 이벤트에 대한 API **저장 단추**.  적응형 양식 데이터를 전달하고 `fileMap`, 및 `mobileNumber` 엔드포인트에서 수신 대기하는 `**/bin/storeafdatawithattachments`
 
 양식 데이터가 저장되면 고유한 애플리케이션 ID가 생성되고 대화 상자에서 사용자에게 표시됩니다. 대화 상자를 닫을 때 사용자가 고유한 애플리케이션 ID를 사용하여 저장된 적응형 양식을 검색할 수 있는 양식으로 이동합니다.
 
@@ -66,6 +67,10 @@ $(document).ready(function () {
 ```
 
 >[!NOTE]
-> [bootbox javascript 라이브러리](http://bootboxjs.com/examples.html)를 사용하여 대화 상자를 표시했습니다
+> 우리는 [bootbox javascript 라이브러리](http://bootboxjs.com/examples.html) 대화 상자 표시
 
-이 샘플에 사용된 클라이언트 라이브러리는 여기에서 [다운로드할 수 있습니다.](assets/client-libraries.zip)
+이 샘플에 사용되는 클라이언트 라이브러리는 [여기에서 다운로드](assets/client-libraries.zip)
+
+## 다음 단계
+
+[OTP 서비스를 사용하여 사용자 확인](./verify-users-with-otp.md)

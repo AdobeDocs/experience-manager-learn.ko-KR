@@ -1,20 +1,20 @@
 ---
 title: 데이터베이스에서 양식의 서명 상태 업데이트
 description: AEM 워크플로우를 사용하여 데이터베이스에서 서명된 양식의 서명 상태를 업데이트합니다
-feature: 적응형 양식
+feature: Adaptive Forms
 version: 6.4,6.5
 kt: 6888
 thumbnail: 6888.jpg
-topic: 개발
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 75852a4b-7008-4c65-bab1-cc5dbf525e20
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 3%
+source-wordcount: '116'
+ht-degree: 2%
 
 ---
-
 
 # 서명 상태 업데이트
 
@@ -68,7 +68,10 @@ public class UpdateSignatureStatusWorkflowStep implements WorkflowProcess {
 }
 ```
 
-## 자산
+## Assets
 
-서명 상태 업데이트 워크플로우는 여기에서 [다운로드할 수 있습니다.](assets/update-signature-status-workflow.zip)
+서명 상태 업데이트 워크플로우는 [여기에서 다운로드](assets/update-signature-status-workflow.zip)
 
+## 다음 단계
+
+[요약 단계를 사용자 지정하여 서명에 사용할 다음 양식을 표시할 수 있습니다](./customize-summary-component.md)

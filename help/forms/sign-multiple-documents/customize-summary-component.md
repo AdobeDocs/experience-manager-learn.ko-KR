@@ -1,20 +1,20 @@
 ---
 title: 요약 구성 요소 사용자 지정
 description: 패키지에서 다음 양식으로 이동하는 기능을 포함하도록 요약 단계 구성 요소를 확장합니다.
-feature: 적응형 양식
+feature: Adaptive Forms
 version: 6.4,6.5
 kt: 6894
 thumbnail: 6894.jpg
-topic: 개발
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: fb68579d-241c-414d-92f4-13194f4d1923
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 2%
+source-wordcount: '185'
+ht-degree: 1%
 
 ---
-
 
 # 요약 단계 사용자 지정
 
@@ -33,7 +33,7 @@ ht-degree: 2%
 서명을 위해 다음 양식으로 이동하는 버튼을 추가했습니다
 ![template-code](assets/template-code.PNG)
 
-summary.jsp에는 다음 코드가 있습니다. 카테고리 ID **getnextform**&#x200B;으로 식별되는 클라이언트 라이브러리에 대한 참조가 있습니다
+summary.jsp에는 다음 코드가 있습니다. 카테고리 ID로 식별된 클라이언트 라이브러리에 대한 참조가 있습니다 **getnextform**
 
 ```java
 <%--
@@ -44,8 +44,10 @@ summary.jsp에는 다음 코드가 있습니다. 카테고리 ID **getnextform**
 <ui:includeClientLib categories="getnextform"/>
 ```
 
-## 자산
+## Assets
 
-사용자 지정 요약 구성 요소는 여기에서 [다운로드할 수 있습니다.](assets/custom-summary-step.zip)
+사용자 지정 요약 구성 요소는 [여기에서 다운로드](assets/custom-summary-step.zip)
 
+## 다음 단계
 
+[서명을 위한 다음 양식 받기](./create-client-lib.md)

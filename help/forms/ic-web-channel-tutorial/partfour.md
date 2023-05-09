@@ -15,10 +15,10 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: d742d77b-a064-46e8-862a-2d3e1cc56f63
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '118'
-ht-degree: 0%
+source-wordcount: '123'
+ht-degree: 1%
 
 ---
 
@@ -34,3 +34,7 @@ AEM Forms 6.5에서 웹 채널 문서 템플릿 만들기
 템플릿에는 다양한 유형의 문서 조각을 포함하는 대상 영역/자리 표시자가 있습니다. 예를 들어 템플릿에 로고의 대상 영역과 텍스트 컨텐츠에 대한 다른 대상 영역이 있을 수 있습니다.
 
 웹 채널 문서 템플릿을 만들면 템플릿을 기반으로 대화형 통신 문서를 만들 수 있습니다.
+
+## 다음 단계
+
+[문서 조각 만들기](./partfive.md)

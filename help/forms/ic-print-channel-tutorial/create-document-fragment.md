@@ -16,9 +16,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 2fe3f950-bc2a-4e91-8d91-00438691727a
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '229'
 ht-degree: 0%
 
 ---
@@ -38,3 +38,7 @@ ht-degree: 0%
 >[!NOTE]
 >
 >문서 조각에 삽입하는 양식 데이터 모델 요소가 루트 요소의 하위 요소인지 확인합니다. 예를 들어, 이 사용 사례에서는 사용자가 선택하는 사용자 객체의 요소가 잔액 객체의 하위 항목인지 확인합니다
+
+## 다음 단계
+
+[인쇄 채널 문서 만들기](./create-print-channel-document.md)

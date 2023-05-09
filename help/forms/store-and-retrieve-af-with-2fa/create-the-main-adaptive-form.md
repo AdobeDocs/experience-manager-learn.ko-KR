@@ -11,9 +11,9 @@ topic: Development
 role: User
 level: Beginner
 exl-id: 73de0ac4-ada6-4b8e-90a8-33b976032135
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '201'
+source-wordcount: '209'
 ht-degree: 0%
 
 ---
@@ -32,3 +32,8 @@ ht-degree: 0%
 * 완료됨 [StoreAfWithAttachments 양식](assets/store-af-with-attachments-form.zip) 을 다운로드하여 AEM 인스턴스로 가져올 수 있습니다.
 
 * 다음 [이 양식과 연결된 AEM 워크플로우](assets/workflow-model-store-af-with-attachments.zip) 양식을 사용하려면 AEM 인스턴스로 가져와야 합니다.
+
+
+## 다음 단계
+
+[저장된 양식 검색 양식 만들기](./retrieve-saved-form.md)

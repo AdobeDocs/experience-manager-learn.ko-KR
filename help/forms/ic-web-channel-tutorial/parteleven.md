@@ -1,26 +1,26 @@
 ---
 title: 투자 혼합 패널 구성
-seo-title: 투자 혼합 패널 구성
+seo-title: Configuring Investment Mix Panel
 description: 첫 번째 대화형 통신 문서를 만들기 위한 여러 단계의 자습서 11의 일부입니다.이 부분에서는 현재 및 모델 투자 조합을 표시하기 위해 파이 차트를 추가하겠습니다.
-seo-description: 첫 번째 대화형 통신 문서를 만들기 위한 여러 단계의 자습서 11의 일부입니다.이 부분에서는 현재 및 모델 투자 조합을 표시하기 위해 파이 차트를 추가하겠습니다.
+seo-description: This is part 11 of multistep tutorial for creating your first interactive communications document.In this part, we will add pie charts to display the current and model investment mix.
 uuid: b0132912-cb6e-4dec-8309-5125d29ad291
-feature: 대화형 통신
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 discoiquuid: 77de4e76-53ee-467c-a71c-d1d3ea15283b
-topic: 개발
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 774d7a6e-2b8f-4a70-98c5-e7712478ff75
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '334'
 ht-degree: 0%
 
 ---
-
 
 # 투자 혼합 패널 구성
 
@@ -58,3 +58,6 @@ ht-degree: 0%
 
 * ![asettype](assets/modelassettypechart.png)
 
+## 다음 단계
+
+[웹 채널 문서 제공 준비](./parttwelve.md)
