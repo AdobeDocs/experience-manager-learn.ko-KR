@@ -9,7 +9,7 @@ role: Admin
 level: Beginner
 exl-id: 80288765-0b51-44a9-95d3-3bdb2da38615
 last-substantial-update: 2020-06-09T00:00:00Z
-source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
+source-git-commit: 757c8ad251d058bbe48cc3cd354fec533ec4e968
 workflow-type: tm+mt
 source-wordcount: '574'
 ht-degree: 6%
@@ -40,10 +40,9 @@ ht-degree: 6%
 
 * 적절한 JDK가 설치되어 있는지 확인하십시오
    * AEM 6.2 필요한 경우: Oracle SE 8 JDK 1.8.x(64비트)
-* 
    * AEM 6.3과 AEM 6.4 다음 요구 사항: Oracle SE 8 JDK 1.8.x(64비트)
-* AEM 6.5 JDK 8 또는 JDK 11이 필요합니다.
-* [공식 JDK 요구 사항](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/introduction/technical-requirements.html?lang=ko-KR) 여기에 나열되어 있습니다.
+   * AEM 6.5 JDK 8 또는 JDK 11이 필요합니다.
+   * [공식 JDK 요구 사항](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/introduction/technical-requirements.html?lang=ko-KR) 여기에 나열되어 있습니다.
 * JAVA_HOME이 설치된 JDK를 가리키도록 설정되어 있는지 확인합니다.
    * Windows에서 JAVA_HOME 변수를 만들려면 아래 단계를 수행하십시오.
       * 내 컴퓨터 를 마우스 오른쪽 단추로 클릭하고 속성 을 선택합니다
@@ -71,20 +70,20 @@ ht-degree: 6%
 * 문서 서비스가 작동하려면 이 두 속성이 필요합니다
 * sling.properties 파일을 저장합니다
 * [적절한 양식 추가 기능 패키지를 다운로드합니다](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko)
-* 를 사용하여 패키지에 양식 추가 설치 [패키지 관리자.](http://localhost:4502/crx/packmgr/index.jsp)
+* 를 사용하여 패키지에 양식 추가 설치 [패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp).
 * 패키지에 추가를 설치한 후에는 다음 단계를 수행해야 합니다
 
-       **모든 번들이 활성 상태인지 확인하십시오. (AEMFD 서명 번들은 제외).**
-       **모든 번들이 활성 상태에 도달하려면 일반적으로 5분 이상 걸립니다.**
-   
+   * **모든 번들이 활성 상태인지 확인하십시오. (AEMFD 서명 번들은 제외).**
+   * **모든 번들이 활성 상태에 도달하려면 일반적으로 5분 이상 걸립니다.**
+
    * **모든 번들이 활성화되면(AEMFD 서명 번들 제외) 시스템을 다시 시작하여 AEM Forms 설치를 완료합니다**
 
 ## sun.util.calendar 패키지를 허용 목록에 추가합니다
 
 1. 에서 Felix 웹 콘솔을 엽니다. [브라우저 창](http://localhost:4502/system/console/configMgr)
-2. Deserialization 방화벽 구성 검색 및 열기: `com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
-3. 추가 `sun.util.calendar` 의 새 항목으로 `com.adobe.cq.deserfw.impl.DeserializationFirewallImpl.firewall.deserialization.whitelist.name`
-4. 변경 사항을 저장합니다.
+1. Deserialization 방화벽 구성 검색 및 열기: `com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
+1. 추가 `sun.util.calendar` 의 새 항목으로 `com.adobe.cq.deserfw.impl.DeserializationFirewallImpl.firewall.deserialization.whitelist.name`
+1. 변경 사항을 저장합니다.
 
 축하합니다!!! 이제 시스템에 AEM Forms을 설치 및 구성했습니다.
 필요에 따라 구성할 수 있습니다  [Reader 확장](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) 또는 [ PDFG](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html) 서버에
