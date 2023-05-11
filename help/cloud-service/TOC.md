@@ -5,7 +5,7 @@ breadcrumb-title: AEM as a Cloud Service 튜토리얼
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 31d6b75f481bbc1a716974b2188a0f4f460c1df6
+source-git-commit: a439c72a7b080633d3777eefad3b47f01c92b970
 workflow-type: tm+mt
 source-wordcount: '953'
 ht-degree: 22%
@@ -287,32 +287,7 @@ ht-degree: 22%
    + 고급{#advanced}
       + [메타데이터 작업자](./asset-compute/advanced/metadata.md)
    + [문제 해결](./asset-compute/troubleshooting.md)
-+ 클라우드 5{#cloud-5}
-   + [소개](./cloud-5/cloud5-introduction.md)
-   + [시즌 1](./cloud-5/cloud5-season-1.md)
-   + [시즌 2](./cloud-5/cloud5-season-2.md)
-   + [AEM CDN 1부](./cloud-5/cloud5-aem-cdn-part1.md)
-   + [AEM CDN Part 2](./cloud-5/cloud5-aem-cdn-part2.md)
-   + [AEM 로그 파일](./cloud-5/cloud5-aem-log-files.md)
-   + [로그인 토큰](./cloud-5/cloud5-getting-login-token-integrations.md)
-   + [Cloud Dispatcher](./cloud-5/cloud5-aem-dispatcher-cloud.md)
-   + [마이그레이션 1](./cloud-5/cloud5-aem-content-migration-part-1.md)
-   + [마이그레이션 2](./cloud-5/cloud5-aem-content-migration-part-2.md)
-   + [Dispatcher 유효성 검사기](./cloud-5/cloud5-aem-dispatcher-validator.md)
-   + [검색 및 색인 지정](./cloud-5/cloud5-aem-search-and-indexing.md)
-   + [Adobe 앱 빌더](./cloud-5/cloud5-adobe-app-builder.md)
-   + 시즌 2{#season-2}
-      + [조각](./cloud-5/season-2/cloud5-experience-v-content-fragments.md)
-      + [Repo Modernizer](./cloud-5/season-2/cloud5-repo-modernizer.md)
-      + [Admin Console](./cloud-5/season-2/cloud5-admin-console.md)
-      + [포인트](./cloud-5/season-2/cloud5-repoinit.md)
-      + [Sling 작업 스케줄러](./cloud-5/season-2/cloud5-sling-job-scheduler.md)
-      + [캐시 수정](./cloud-5/season-2/cloud5-fix-your-cache.md)
-      + [재작성 수정](./cloud-5/season-2/cloud5-fix-your-rewrites.md)
-      + [Cloud Manager - Experience Audit](./cloud-5/season-2/cloud5-mocm-experience-audit.md)
-      + [Cloud Manager - 단위 테스트](./cloud-5/season-2/cloud5-mocm-unit-tests.md)
-      + [Cloud Manager - 기능 테스트](./cloud-5/season-2/cloud5-mocm-functional-tests.md)
-+ [AEM Experts Series](./aem-experts-series.md)
+
 + 여러 단계 Tutorials{#multi-step-tutorials}
    + [AEM Sites 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR)
    + [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)
@@ -321,6 +296,32 @@ ht-degree: 22%
    + [토큰 기반 인증](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)
 + 전문가 리소스 {#expert-resources}
    + AEM Champions {#aem-champions}
-      + [Cloud Manager 온보딩 Playbook](./expert-resources/onboarding-playbook.md)
-      + [Cloud Manager 환경 유형](./expert-resources/environment-types.md)
-      + [Cloud Manager UI](./expert-resources/cloud-manager-ui.md)
+      + [Cloud Manager 온보딩 Playbook](./expert-resources/aem-champions/onboarding-playbook.md)
+      + [Cloud Manager 환경 유형](./expert-resources/aem-champions/environment-types.md)
+      + [Cloud Manager UI](./expert-resources/aem-champions/cloud-manager-ui.md)
+   + [AEM Experts Series](./expert-resources/expert-series/aem-experts-series.md)
+   + 클라우드 5{#cloud-5}
+      + [소개](./expert-resources/cloud-5/cloud5-introduction.md)
+      + [시즌 1](./expert-resources/cloud-5/cloud5-season-1.md)
+      + [시즌 2](./expert-resources/cloud-5/cloud5-season-2.md)
+      + [AEM CDN 1부](./expert-resources/cloud-5/cloud5-aem-cdn-part1.md)
+      + [AEM CDN Part 2](./expert-resources/cloud-5/cloud5-aem-cdn-part2.md)
+      + [AEM 로그 파일](./expert-resources/cloud-5/cloud5-aem-log-files.md)
+      + [로그인 토큰](./expert-resources/cloud-5/cloud5-getting-login-token-integrations.md)
+      + [Cloud Dispatcher](./expert-resources/cloud-5/cloud5-aem-dispatcher-cloud.md)
+      + [마이그레이션 1](./expert-resources/cloud-5/cloud5-aem-content-migration-part-1.md)
+      + [마이그레이션 2](./expert-resources/cloud-5/cloud5-aem-content-migration-part-2.md)
+      + [Dispatcher 유효성 검사기](./expert-resources/cloud-5/cloud5-aem-dispatcher-validator.md)
+      + [검색 및 색인 지정](./expert-resources/cloud-5/cloud5-aem-search-and-indexing.md)
+      + [Adobe 앱 빌더](./expert-resources/cloud-5/cloud5-adobe-app-builder.md)
+      + 시즌 2{#season-2}
+         + [조각](./expert-resources/cloud-5/season-2/cloud5-experience-v-content-fragments.md)
+         + [Repo Modernizer](./expert-resources/cloud-5/season-2/cloud5-repo-modernizer.md)
+         + [Admin Console](./expert-resources/cloud-5/season-2/cloud5-admin-console.md)
+         + [포인트](./expert-resources/cloud-5/season-2/cloud5-repoinit.md)
+         + [Sling 작업 스케줄러](./expert-resources/cloud-5/season-2/cloud5-sling-job-scheduler.md)
+         + [캐시 수정](./expert-resources/cloud-5/season-2/cloud5-fix-your-cache.md)
+         + [재작성 수정](./expert-resources/cloud-5/season-2/cloud5-fix-your-rewrites.md)
+         + [Cloud Manager - Experience Audit](./expert-resources/cloud-5/season-2/cloud5-mocm-experience-audit.md)
+         + [Cloud Manager - 단위 테스트](./expert-resources/cloud-5/season-2/cloud5-mocm-unit-tests.md)
+         + [Cloud Manager - 기능 테스트](./expert-resources/cloud-5/season-2/cloud5-mocm-functional-tests.md)

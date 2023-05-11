@@ -11,10 +11,10 @@ hide: true
 index: false
 thumbnail: kt-10427.jpg
 exl-id: 8fcc9364-b84c-4458-82e2-66b47429cd4b
-source-git-commit: 48943df64d9793066f8f19497ef42f8aa80e5795
+source-git-commit: a439c72a7b080633d3777eefad3b47f01c92b970
 workflow-type: tm+mt
-source-wordcount: '838'
-ht-degree: 5%
+source-wordcount: '826'
+ht-degree: 10%
 
 ---
 
@@ -108,7 +108,7 @@ _순회 경고란 무엇입니까?_
 
 ## 1. 분석{#analyze}
 
-먼저 순회 경고를 표시하는 AEM 게시 서비스를 식별합니다. 이렇게 하려면 Cloud Manager에서 다음을 수행합니다. [게시 서비스 다운로드 `aemerror` 로그](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html#cloud-manager)과거 모든 환경(개발, 스테이지 및 프로덕션)의 {target=&quot;_blank&quot;} __3일__.
+먼저 순회 경고를 표시하는 AEM 게시 서비스를 식별합니다. 이렇게 하려면 Cloud Manager에서 다음을 수행합니다. [게시 서비스 다운로드 `aemerror` 로그](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html#cloud-manager){target="_blank"} 모든 환경(개발, 스테이지 및 프로덕션)에서 __3일__.
 
 ![AEM as a Cloud Service 로그 다운로드](./assets/traversals/download-logs.jpg)
 
@@ -159,14 +159,14 @@ org.apache.jackrabbit.oak.query.RuntimeNodeTraversalException:
 
 __쿼리 변경__ 기존 인덱스 제한 사항으로 확인되는 새 쿼리 제한을 추가하려면 가능하면 쿼리를 변경하여 인덱스를 변경하는 것이 좋습니다.
 
-+ [쿼리 성능을 조정하는 방법 알아보기](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html#query-performance-tuning){target=&quot;_blank&quot;}
++ [쿼리 성능을 조정하는 방법 알아보기](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html#query-performance-tuning){target="_blank"}
 
 ### 인덱스 조정
 
 __AEM 인덱스 변경(또는 생성)__ 이렇게 하면 기존 쿼리 제한이 인덱스 업데이트로 해결될 수 있습니다.
 
-+ [기존 인덱스를 조정하는 방법 알아보기](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html#query-performance-tuning){target=&quot;_blank&quot;}
-+ [인덱스를 만드는 방법 알아보기](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html#create-a-new-index){target=&quot;_blank&quot;}
++ [기존 인덱스를 조정하는 방법 알아보기](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html#query-performance-tuning){target="_blank"}
++ [인덱스를 만드는 방법 알아보기](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html#create-a-new-index){target="_blank"}
 
 ## 3. 확인{#verify}
 
@@ -174,9 +174,9 @@ __AEM 인덱스 변경(또는 생성)__ 이렇게 하면 기존 쿼리 제한이
 
 ![쿼리 설명](./assets/traversals/verify.gif)
 
-다음의 경우에만 [질의 조정](#adjust-the-query) 이렇게 하면 개발자 콘솔을 통해 AEM as a Cloud Service에서 쿼리를 직접 테스트할 수 있습니다. [쿼리 설명](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries){target=&quot;_blank&quot;}. AEM 작성자 서비스에 대해 쿼리 설명 실행이지만, 작성 및 게시 서비스에서 색인 정의가 동일하므로 AEM 작성자 서비스에 대한 쿼리 유효성 검사가 충분합니다.
+다음의 경우에만 [질의 조정](#adjust-the-query) 이렇게 하면 개발자 콘솔을 통해 AEM as a Cloud Service에서 쿼리를 직접 테스트할 수 있습니다. [쿼리 설명](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries){target="_blank"}. AEM 작성자 서비스에 대해 쿼리 설명 실행이지만, 작성 및 게시 서비스에서 색인 정의가 동일하므로 AEM 작성자 서비스에 대한 쿼리 유효성 검사가 충분합니다.
 
-If [색인에 대한 조정](#adjust-the-index) 이(가) 만들어지면 인덱스를 AEM as a Cloud Service에 배포해야 합니다. 인덱스 조정을 배포하면 개발자 콘솔의 [쿼리 설명](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries){target=&quot;_blank&quot;} 를 사용하여 쿼리를 추가로 실행하고 조정할 수 있습니다.
+If [색인에 대한 조정](#adjust-the-index) 이(가) 만들어지면 인덱스를 AEM as a Cloud Service에 배포해야 합니다. 인덱스 조정을 배포하면 개발자 콘솔의 [쿼리 설명](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries){target="_blank"} 쿼리를 추가로 실행하고 조정하는 데 사용할 수 있습니다.
 
 궁극적으로, 모든 변경 사항(쿼리 및 코드)은 Git에 커밋되고 Cloud Manager를 사용하여 AEM as a Cloud Service에 배포됩니다. 배포되면 원래 순회 경고와 연결된 코드 경로를 다시 테스트하고 순회 경고가 더 이상 `aemerror` 로그.
 
@@ -191,7 +191,7 @@ AEM 인덱스, 검색 및 순회 경고를 이해하려면 이러한 다른 유�
    <div class="card">
        <div class="card-image">
            <figure class="image is-16by9">
-               <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-search-and-indexing.html" title="Cloud 5 - 검색 및 색인 지정" tabindex="-1"><img class="is-bordered-r-small" src="../../../cloud-5/imgs/009-thumb.png" alt="Cloud 5 - 검색 및 색인 지정"></a>
+               <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-search-and-indexing.html" title="Cloud 5 - 검색 및 색인 지정" tabindex="-1"><img class="is-bordered-r-small" src="../../../expert-resources/cloud-5/imgs/009-thumb.png" alt="Cloud 5 - 검색 및 색인 지정"></a>
            </figure>
        </div>
        <div class="card-content is-padded-small">
@@ -199,7 +199,7 @@ AEM 인덱스, 검색 및 순회 경고를 이해하려면 이러한 다른 유�
                <p class="headline is-size-6 has-text-weight-bold"><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-search-and-indexing.html" title="Cloud 5 - 검색 및 색인 지정">Cloud 5 - 검색 및 색인 지정</a></p>
                <p class="is-size-6">Cloud 5 팀에서는 AEM as a Cloud Service에서 검색 및 색인 생성에 대한 세부 사항을 살펴봅니다.</p>
                <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-search-and-indexing.html" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">추가 정보</span>
+                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">자세히 알아보기</span>
                </a>
            </div>
        </div>
@@ -212,17 +212,17 @@ AEM 인덱스, 검색 및 순회 경고를 이해하려면 이러한 다른 유�
    <div class="card">
        <div class="card-image">
            <figure class="image is-16by9">
-               <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html" title="콘텐츠 검색 및 색인 지정" tabindex="-1">
-                   <img class="is-bordered-r-small" src="./assets/traversals/resources--docs.png" alt="콘텐츠 검색 및 색인 지정">
+               <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html" title="콘텐츠 검색 및 색인화" tabindex="-1">
+                   <img class="is-bordered-r-small" src="./assets/traversals/resources--docs.png" alt="콘텐츠 검색 및 색인화">
                </a>
            </figure>
        </div>
        <div class="card-content is-padded-small">
            <div class="content">
-               <p class="headline is-size-6 has-text-weight-bold"><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html" title="콘텐츠 검색 및 색인 지정">콘텐츠 검색 및 색인 지정 설명서</a></p>
+               <p class="headline is-size-6 has-text-weight-bold"><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html" title="콘텐츠 검색 및 색인화">콘텐츠 검색 및 색인 지정 설명서</a></p>
                <p class="is-size-6">AEM as a Cloud Service에서 인덱스를 만들고 관리하는 방법을 알아봅니다.</p>
                <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">추가 정보</span>
+                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">자세히 알아보기</span>
                </a>
            </div>
        </div>
@@ -244,7 +244,7 @@ AEM 인덱스, 검색 및 순회 경고를 이해하려면 이러한 다른 유�
                <p class="headline is-size-6 has-text-weight-bold"><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/search-and-indexing.html" title="Oak 색인 현대화">Oak 색인 현대화</a></p>
                <p class="is-size-6">AEM 6 Oak 색인 정의를 AEM as a Cloud Service 호환으로 변환하고 인덱스를 계속 유지하는 방법을 알아봅니다.</p>
                <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/search-and-indexing.html" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">추가 정보</span>
+                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">자세히 알아보기</span>
                </a>
            </div>
        </div>
@@ -266,7 +266,7 @@ AEM 인덱스, 검색 및 순회 경고를 이해하려면 이러한 다른 유�
                <p class="headline is-size-6 has-text-weight-bold"><a href="https://jackrabbit.apache.org/oak/docs/query/lucene.html" title="색인 정의 설명서">Lucene 색인 설명서</a></p>
                <p class="has-ellipsis is-size-6">Apache Oak Jackrabbit Lucene 색인 참조는 지원되는 모든 Lucene 인덱스 구성을 문서화하는 데 사용됩니다.</p>
                <a href="https://jackrabbit.apache.org/oak/docs/query/lucene.html" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">추가 정보</span>
+                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">자세히 알아보기</span>
                </a>
            </div>
        </div>
