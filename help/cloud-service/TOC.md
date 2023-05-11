@@ -5,9 +5,9 @@ breadcrumb-title: AEM as a Cloud Service 튜토리얼
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: b3cc9c4fbd36cdf5be46e4546a174fea0c8da05c
+source-git-commit: 31d6b75f481bbc1a716974b2188a0f4f460c1df6
 workflow-type: tm+mt
-source-wordcount: '938'
+source-wordcount: '953'
 ht-degree: 22%
 
 ---
@@ -319,3 +319,8 @@ ht-degree: 22%
    + [SPA 편집기(반응)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html)
    + [AEM Sites 및 Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html)
    + [토큰 기반 인증](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)
++ 전문가 리소스 {#expert-resources}
+   + AEM Champions {#aem-champions}
+      + [Cloud Manager 온보딩 Playbook](./expert-resources/onboarding-playbook.md)
+      + [Cloud Manager 환경 유형](./expert-resources/environment-types.md)
+      + [Cloud Manager UI](./expert-resources/cloud-manager-ui.md)
