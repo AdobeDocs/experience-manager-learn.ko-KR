@@ -7,9 +7,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 59462cb4-d379-4e58-b786-ff8dbae6191c
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: c2e105123302ae37dc7cfca9533110a655e83858
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '842'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
 * 이미지 및 응답형 뷰어에 URL 복사
 * URL에 대한 스마트 자르기 변형
 
-## AEM Sites 및 기타 CMS가 포함된 Dynamic Media
+## AEM Sites과 함께 사용
 
 >[!VIDEO](https://video.tv.adobe.com/v/27145?quality=12&learn=on)
 
@@ -48,7 +48,7 @@ ht-degree: 0%
 * 이미지 사전 설정을 사용하여 로컬에서 다운로드
 * 대화형 배너 만들기 및 게시
 
-## Dynamic Media에서 혼합 미디어 컬렉션 및 사용자 정의 뷰어를 빌드할 수 있습니다.
+## 혼합 미디어 컬렉션 만들기
 
 >[!VIDEO](https://video.tv.adobe.com/v/27146?quality=12&learn=on)
 
@@ -63,7 +63,7 @@ ht-degree: 0%
 * 스핀 세트, 비디오 및 사진에서 혼합 미디어 세트 만들기
 * 사용자 정의 혼합 미디어 뷰어 편집 및 사용
 
-## Dynamic Media 이미지 사전 설정
+## 이미지 사전 설정
 
 >[!VIDEO](https://video.tv.adobe.com/v/27320?quality=12&learn=on)
 
@@ -74,7 +74,7 @@ ht-degree: 0%
 * 항상 선명하게 하기 사용
 * 이미지 사전 설정 크기 조정을 위한 추가 명령을 추가하는 URL 수정자 필드
 
-## Dynamic Media 고급 URL 수정자
+## 고급 URL 수정자
 
 >[!VIDEO](https://video.tv.adobe.com/v/27319?quality=12&learn=on)
 
@@ -86,7 +86,7 @@ ht-degree: 0%
 * 이미지 경로에 자르기
 * Photoshop 파일에서 텍스트 템플릿 만들기
 
-## Dynamic Media JPEG 파일 크기(KB) 제어
+## JPEG 파일 크기 관리
 
 >[!VIDEO](https://video.tv.adobe.com/v/27404?quality=12&learn=on)
 
@@ -97,13 +97,13 @@ ht-degree: 0%
 
 JPEG 이미지 품질을 결과 파일 크기(KB)와 비교하여 페이지 로드 속도를 향상시킵니다. 두 가지 명령을 사용하여 jpeg 압축 설정을 조정합니다. QLT는 jpeg 압축 품질 설정을 조정하여 이미지 품질을 정의합니다. JPEG 크기 명령을 사용하면 압축을 사용하여 수행해야 하는 파일 크기를 지정할 수 있습니다.
 
-## Dynamic Media 비디오에 CC 자막 추가
+## 자막
 
 >[!VIDEO](https://video.tv.adobe.com/v/28074?quality=12&learn=on)
 
 Dynamic Media 비디오에 CC 정보를 포함하는 추가 자막 파일 문서인 web.VTT 사이드카 파일을 가리키도록 복사 URL을 추가하여 자막을 쉽게 추가할 수 있습니다.
 
-## AEM Dynamic Media에서 이미지 선명하게 하기 사용
+## 이미지 선명하게 하기
 
 이 비디오에서는 이미지를 선명하게 하는 것이 이미지 품질을 유지하는 데 중요한 이유 및 고급 설정을 사용하여 완벽한 이미지를 만드는 방법을 다룹니다.
 
