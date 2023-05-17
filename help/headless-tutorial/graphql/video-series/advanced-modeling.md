@@ -8,10 +8,11 @@ role: Developer
 level: Beginner
 kt: 7620
 thumbnail: 332859.jpg
+last-substantial-update: 2023-05-17T00:00:00Z
 exl-id: 7f17d829-544e-4cf2-bd75-b179ffb89bf5
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 084e2d49c2790188b4f02bfad5b3ae7099820457
 workflow-type: tm+mt
-source-wordcount: '109'
+source-wordcount: '98'
 ht-degree: 0%
 
 ---
@@ -27,5 +28,3 @@ Adobe Experience Manager(AEM)의 컨텐츠 조각 모델 간 관계를 만드는
 + 참조된 컨텐츠 조각 내에서 데이터를 반환하는 GraphQL 쿼리를 만듭니다
 
 >[!VIDEO](https://video.tv.adobe.com/v/332859?quality=12&learn=on)
-
-_다운로드 [Postman Collection](./assets/aem-headless-video-series.postman_collection.json) AEM Headless 비디오 시리즈 전체에서 사용됩니다._
