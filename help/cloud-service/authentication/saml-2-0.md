@@ -10,10 +10,10 @@ kt: 9351
 thumbnail: 343040.jpeg
 last-substantial-update: 2022-10-17T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
-source-git-commit: d049eb78e2302aa97de0d228b65fba842ad38b74
+source-git-commit: f6a9e7b32d876a8cd5ce7bf6a2e13aeb5faaf35b
 workflow-type: tm+mt
-source-wordcount: '2943'
-ht-degree: 1%
+source-wordcount: '3123'
+ht-degree: 2%
 
 ---
 
@@ -138,8 +138,21 @@ _를 만들 때 [SAML 2.0 인증 핸들러 OSGi 구성 속성 `handleLogout` 가
    + A [공용/개인 키 저장소가 이 키 저장소에 설치되어 있습니다.](#install-aem-public-private-key-pair) AuthnRequest 서명/SAML 검증 암호화가 필요한 경우에만 가능합니다.
    + 이 SAML 통합이 로그아웃을 지원하지만 AuthnRequest 서명/SAML 검증이 아닌 경우 빈 키 저장소가 충분합니다.
 1. 선택 __저장 및 닫기__.
-1. 선택 __인증 서비스__ 사용자 및 선택 __활성화__ 를 클릭합니다.
+1. 업데이트된 내용이 포함된 패키지 만들기 __인증 서비스__ 사용자.
 
+   _패키지를 사용하여 다음과 같은 임시 해결 방법을 사용하십시오._
+
+   1. __도구 > 배포 > 패키지__&#x200B;로 이동합니다.
+   1. 패키지 만들기
+      + 패키지 이름: `Authentication Service`
+      + 버전: `1.0.0`
+      + 그룹: `com.your.company`
+   1. 새 항목 편집 __인증 서비스 키 저장소__ 패키지.
+   1. 을(를) 선택합니다 __필터__ 탭을 선택하고 루트 경로에 대한 필터를 추가합니다 `/home/users/system/cq:services/internal/security/<AUTHENTICATION SERVICE UUID>/keystore`.
+      + 다음 `<AUTHENTICATION SERVICE UUID>` 으로 이동하여 찾을 수 있습니다. __도구 > 보안 > 사용자__, 및 선택 __인증 서비스__ 사용자. UUID는 URL의 마지막 부분입니다.
+   1. 선택 __완료__ 그리고 __저장__.
+   1. 을(를) 선택합니다 __빌드__ 버튼 __인증 서비스 키 저장소__ 패키지.
+   1. 빌드했으면 을 선택합니다 __자세히__ > __복제__ 인증 서비스 키 저장소를 AEM Publish로 활성화하려면
 
 ## AEM 공개/개인 키 쌍 설치{#install-aem-public-private-key-pair}
 
@@ -212,7 +225,21 @@ AuthnRequest 서명 및 SAML 검증 암호화는 모두 선택 사항이지만, 
 1. 새로 추가된 인증서는 __CRT 파일에서 인증서 추가__ 섹션을 참조하십시오.
    + 다음 사항에 주의하십시오. __별칭__ 다음에서 사용 [SAML 2.0 인증 핸들러 OSGi 구성](#saml-20-authentication-handler-osgi-configuration)
 1. 선택 __저장 및 닫기__.
-1. 선택 __인증 서비스__ 사용자 및 선택 __활성화__ 를 클릭합니다.
+1. 업데이트된 내용이 포함된 패키지 만들기 __인증 서비스__ 사용자.
+
+   _패키지를 사용하여 다음과 같은 임시 해결 방법을 사용하십시오._
+
+   1. __도구 > 배포 > 패키지__&#x200B;로 이동합니다.
+   1. 패키지 만들기
+      + 패키지 이름: `Authentication Service`
+      + 버전: `1.0.0`
+      + 그룹: `com.your.company`
+   1. 새 항목 편집 __인증 서비스 키 저장소__ 패키지.
+   1. 을(를) 선택합니다 __필터__ 탭을 선택하고 루트 경로에 대한 필터를 추가합니다 `/home/users/system/cq:services/internal/security/<AUTHENTICATION SERVICE UUID>/keystore`.
+      + 다음 `<AUTHENTICATION SERVICE UUID>` 으로 이동하여 찾을 수 있습니다. __도구 > 보안 > 사용자__, 및 선택 __인증 서비스__ 사용자. UUID는 URL의 마지막 부분입니다.
+   1. 선택 __완료__ 그리고 __저장__.
+   1. 을(를) 선택합니다 __빌드__ 버튼 __인증 서비스 키 저장소__ 패키지.
+   1. 빌드했으면 을 선택합니다 __자세히__ > __복제__ 인증 서비스 키 저장소를 AEM Publish로 활성화하려면
 
 ## SAML 2.0 인증 핸들러 구성{#configure-saml-2-0-authentication-handler}
 
