@@ -6,10 +6,10 @@ sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: c2e105123302ae37dc7cfca9533110a655e83858
+source-git-commit: a864f4f19135f7d6fb345a76f1d5c7dc3ee9a9dc
 workflow-type: tm+mt
-source-wordcount: '395'
-ht-degree: 25%
+source-wordcount: '394'
+ht-degree: 26%
 
 ---
 
@@ -104,14 +104,12 @@ ht-degree: 25%
 
 + Dynamic Media{#dynamic-media}
    + [Dynamic Media 개요](dynamic-media/dynamic-media-overview-feature-video-use.md)
-   + [이미지 수정자 및 스마트 이미징](dynamic-media/dynamic-media-snapshot.md)
+   + [Dynamic Media Classic 데스크탑 애플리케이션](dynamic-media/dynamic-media-classic-desktop-application.md)
    + 이미지 {#images}
+      + [Dynamic Media 스냅샷](dynamic-media/dynamic-media-snapshot.md)
       + [스마트 자르기](dynamic-media/smart-crop-feature-video-use.md)
       + [이미지 선명하게 하기](dynamic-media/dynamic-media-image-sharpening-feature-video-use.md)
       + [색상 관리](dynamic-media/dynamic-media-color-management-technical-video-setup.md)
-   + AEM Sites과 함께 사용 {#dm-with-aem-sites}
-      + [경험 조각](dynamic-media/dynamic-media-experience-fragments-feature-video-use.md)
-      + [Dynamic Media 핵심 구성 요소](dynamic-media/dynamic-media-core-components.md)
    + 비디오 {#video}
       + [대화형 비디오](dynamic-media/dynamic-media-interactive-video-feature-video-use.md)
       + [비디오 플레이어](dynamic-media/dynamic-media-video-player-feature-video-use.md)
@@ -122,9 +120,11 @@ ht-degree: 25%
       + [뷰어](dynamic-media/dynamic-media-viewer-feature-video-understand.md)
       + [파노라마 및 세로 이미지 뷰어](dynamic-media/panorama-vertical-image-viewer-feature-video-use.md)
       + [Adobe Analytics이 있는 뷰어](dynamic-media/dynamic-media-viewer-extension-use.md)
-   + [Dynamic Media Classic 데스크탑 애플리케이션](dynamic-media/dynamic-media-classic-desktop-application.md)
-   + [Dynamic Media 3D](dynamic-media/dynamic-media-3d-feature-video.md)
-
+   + 3D {#3d}
+      + [Dynamic Media 3D](dynamic-media/dynamic-media-3d-feature-video.md)
+   + AEM Sites과 함께 사용 {#dm-with-aem-sites}
+      + [경험 조각](dynamic-media/dynamic-media-experience-fragments-feature-video-use.md)
+      + [Dynamic Media 핵심 구성 요소](dynamic-media/dynamic-media-core-components.md)
    + 튜토리얼 {#tutorials}
       + [회전판 세트 만들기](dynamic-media/tutorials/creating-different-kinds-of-sets-with-aem-dynamic-media-carousel-sets.md)
       + [이미지 세트 만들기](dynamic-media/tutorials/creating-different-kinds-of-sets-with-aem-dynamic-media-image-sets.md)
@@ -140,6 +140,7 @@ ht-degree: 25%
       + [Dynamic Media 구성 삭제](dynamic-media/tutorials/deleting-dynamic-media-configuration.md)
       + [Dynamic Media Classic 앱에서 자산 다운로드](dynamic-media/tutorials/how-to-download-asset-in-dynamic-media-classic-app.md)
       + [Dynamic Media Classic IPS API](dynamic-media/tutorials/introduction-to-dynamic-media-classic-ips-api.md)
+
 
 + Workfront 통합{#workfront}
    + 향상된 커넥터{#enhanced-connector}
