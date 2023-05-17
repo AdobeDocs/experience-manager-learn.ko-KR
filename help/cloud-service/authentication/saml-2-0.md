@@ -10,9 +10,9 @@ kt: 9351
 thumbnail: 343040.jpeg
 last-substantial-update: 2022-10-17T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: d049eb78e2302aa97de0d228b65fba842ad38b74
 workflow-type: tm+mt
-source-wordcount: '2961'
+source-wordcount: '2943'
 ht-degree: 1%
 
 ---
@@ -132,7 +132,6 @@ IDP의 공개 인증서가 AEM 전역 트러스트 저장소에 추가되었으�
 _를 만들 때 [SAML 2.0 인증 핸들러 OSGi 구성 속성 `handleLogout` 가 로 설정되어 있습니다. `true`](#saml-20-authenticationsaml-2-0-authentication) 또는 [인증 요청 서명/SAML 검증 암호화](#install-aem-public-private-key-pair) 필수 여부_
 
 1. 개인 키를 업로드하려면 AEM Author as a AEM Administrator에 로그인합니다.
-1. 다음으로 이동 __도구 > 보안 > Trust Store__, 을(를) 선택하고 을(를) 선택합니다. __인증 서비스__ 사용자 및 선택 __속성__ 를 클릭합니다.
 1. 다음으로 이동 __도구 > 보안 > 사용자__, 을(를) 선택하고 을(를) 선택합니다. __인증 서비스__ 사용자 및 선택 __속성__ 를 클릭합니다.
 1. 을(를) 선택합니다 __키 저장소__ 탭.
 1. 키 저장소를 만들거나 엽니다. 키 저장소를 만들 경우 암호를 안전하게 유지합니다.
