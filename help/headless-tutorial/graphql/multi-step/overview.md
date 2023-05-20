@@ -1,6 +1,6 @@
 ---
-title: AEM 헤드리스 실습 자습서 - GraphQL
-description: AEM GraphQL API를 사용하여 컨텐츠를 작성하고 노출하는 방법을 소개하는 종단간 자습서입니다.
+title: AEM Headless 시작하기 실습형 튜토리얼 - GraphQL
+description: AEM GraphQL API를 사용하여 콘텐츠를 작성하고 노출하는 방법을 소개하는 종단간 튜토리얼입니다.
 doc-type: tutorial
 mini-toc-levels: 1
 kt: 6678
@@ -20,39 +20,39 @@ ht-degree: 4%
 
 # AEM Headless 시작하기 - GraphQL
 
-헤드리스 CMS 시나리오에서 AEM GraphQL API를 사용하여 콘텐츠를 작성하고 노출하고 외부 앱에서 사용하는 방법을 소개하는 종단간 자습서입니다.
+Headless CMS 시나리오에서, AEM GraphQL API를 사용하여 콘텐츠를 작성하고 노출하고 외부 앱에서 사용하는 방법을 보여 주는 종단간 튜토리얼입니다.
 
-이 자습서에서는 AEM GraphQL API 및 헤드리스 기능을 사용하여 외부 앱에서 보이는 경험을 제공하는 방법을 설명합니다.
+이 튜토리얼에서는 AEM GraphQL API 및 Headless 기능을 사용하여 외부 앱에 표시되는 경험을 제공하는 방법을 알아봅니다.
 
-이 자습서에서는 다음 주제를 다룹니다.
+이 튜토리얼에서는 다음 주제를 다룹니다.
 
 * 프로젝트 구성 만들기
-* 컨텐츠 조각 모델을 만들어 데이터를 모델링합니다
-* 이전에 만든 모델을 기반으로 컨텐츠 조각을 만듭니다.
-* 통합 GraphiQL 개발 도구를 사용하여 AEM에서 컨텐츠 조각을 쿼리할 수 있는 방법을 알아봅니다.
-* AEM에 GraphQL 쿼리를 저장하거나 유지하려면
-* 샘플 React 앱에서 지속된 GraphQL 쿼리 사용
+* 콘텐츠 조각 모델을 만들어 데이터 모델링
+* 이전에 만든 모델을 기반으로 콘텐츠 조각을 만듭니다.
+* 통합 GraphiQL 개발 도구를 사용하여 AEM의 콘텐츠 조각을 쿼리하는 방법을 살펴봅니다.
+* AEM에 GraphQL 쿼리를 저장하거나 지속하려면
+* 샘플 React 앱에서 지속 GraphQL 쿼리 사용
 
 ## 사전 요구 사항 {#prerequisites}
 
-이 자습서를 따르려면 다음을 수행해야 합니다.
+이 자습서를 수행하려면 다음이 필요합니다.
 
 * 기본 HTML 및 JavaScript 기술
-* 다음 도구는 로컬로 설치해야 합니다.
+* 다음 도구를 로컬에 설치해야 합니다.
    * [Node.js v18](https://nodejs.org/)
    * [Git](https://git-scm.com/)
    * IDE(예: [Microsoft® Visual Studio 코드](https://code.visualstudio.com/))
 
 ### AEM 환경
 
-이 자습서를 완료하려면 AEM Administrator에서 AEM as a Cloud Service 환경에 액세스하는 것이 좋습니다. AEM as a Cloud Service 환경에 대한 액세스 권한이 없는 경우 [로컬 AEM as a Cloud Service Quickstart SDK](/help/cloud-service/local-development-environment/aem-runtime.md). 하지만 컨텐츠 조각 탐색과 같은 일부 제품 UI 화면이 다르다는 점에 유의해야 합니다.
+이 자습서를 완료하려면 AEM AEM 관리자가 as a Cloud Service 환경에 액세스하는 것이 좋습니다. AEM as a Cloud Service 환경에 액세스할 수 없는 경우 [로컬 AEM as a Cloud Service 빠른 시작 SDK](/help/cloud-service/local-development-environment/aem-runtime.md). 하지만 콘텐츠 조각 탐색과 같은 일부 제품 UI 화면은 다르다는 점에 유의해야 합니다.
 
 ## 시작해 보겠습니다!
 
-자습서를 다음으로 시작 [컨텐츠 조각 모델 정의](content-fragment-models.md).
+튜토리얼 시작 [콘텐츠 조각 모델 정의](content-fragment-models.md).
 
 ## GitHub 프로젝트
 
 소스 코드 및 컨텐츠 패키지는 [AEM 안내서 - WKND GraphQL GitHub 프로젝트](https://github.com/adobe/aem-guides-wknd-graphql).
 
-자습서나 코드에 문제가 있는 경우 [GitHub 문제](https://github.com/adobe/aem-guides-wknd-graphql/issues).
+자습서나 코드에서 문제를 발견하면 [GitHub 문제](https://github.com/adobe/aem-guides-wknd-graphql/issues).

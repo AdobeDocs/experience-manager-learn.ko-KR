@@ -1,6 +1,6 @@
 ---
 title: Assets Essentials 관리
-description: 폴더 구조를 만드는 기본 사항과 이동, 복사 및 이름 변경과 같은 기본 작업을 알아봅니다.
+description: 폴더 구조 만들기의 기본 사항과 이동, 복사 및 이름 바꾸기와 같은 기본 작업에 대해 알아봅니다.
 version: Cloud Service
 feature: Assets Essentials
 topic: Content Management
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Assets Essentials 관리
 
-폴더 구조를 만드는 기본 사항과 이동, 복사 및 이름 변경과 같은 기본 작업을 알아봅니다.
+폴더 구조 만들기의 기본 사항과 이동, 복사 및 이름 바꾸기와 같은 기본 작업에 대해 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335733?quality=12&learn=on)

@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # AEM Dynamic Media에서 스마트 자르기 이미지 프로필 만들기
 
-이 비디오에서는 AEM Dynamic Media에서 스마트 자르기 이미지 프로필을 만드는 단계를 안내합니다.
+이 비디오는 AEM Dynamic Media에서 스마트 자르기 이미지 프로필을 만드는 단계를 안내합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335460?quality=12&learn=on)

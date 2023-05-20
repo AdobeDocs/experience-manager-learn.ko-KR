@@ -1,6 +1,6 @@
 ---
-title: 새 편집기 전환 - 컨텐츠 조각 편집기
-description: 기본 새 컨텐츠 조각 편집기와 클래식 편집기 간을 쉽게 전환할 수 있는 새 편집기 전환 방법을 알아봅니다.
+title: 새 편집기 토글 - 콘텐츠 조각 편집기
+description: 기본 새 콘텐츠 조각 편집기와 클래식 편집기 간을 간편하게 전환할 수 있는 새 편집기 알아보기 토글
 version: Cloud Service
 feature: Content Fragments
 topic: Content Management
@@ -17,8 +17,8 @@ ht-degree: 0%
 ---
 
 
-# 새 편집기 전환
+# 새 편집기 토글
 
-새 편집기 토글을 통해 기본 새로운 컨텐츠 조각 편집기와 클래식 편집기 간에 쉽게 전환할 수 있는 방법을 알아봅니다.
+새 편집기 토글을 통해 기본 새 콘텐츠 조각 편집기와 클래식 편집기 간을 간편하게 전환하는 방법에 대해 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419312/?learn=on)

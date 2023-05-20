@@ -1,6 +1,6 @@
 ---
-title: AEM Forms에서 사용자 지정 제출 작성
-description: 적응형 양식을 위한 자신만의 사용자 지정 제출 작업을 빠르고 쉽게 만들 수 있습니다
+title: AEM Forms에서 사용자 정의 제출 작성
+description: 적응형 양식에 대한 사용자 정의 제출 액션을 빠르고 간편하게 만들 수 있는 방법
 feature: Adaptive Forms
 version: 6.4,6.5
 topic: Development
@@ -15,22 +15,22 @@ ht-degree: 1%
 
 ---
 
-# AEM Forms에서 사용자 지정 제출 작성 {#writing-a-custom-submit-in-aem-forms}
+# AEM Forms에서 사용자 정의 제출 작성 {#writing-a-custom-submit-in-aem-forms}
 
-적응형 양식을 위한 자신만의 사용자 지정 제출 작업을 빠르고 쉽게 만들 수 있습니다
+적응형 양식에 대한 사용자 정의 제출 액션을 빠르고 간편하게 만들 수 있는 방법
 
-이 문서에서는 응용 Forms 제출 처리를 위한 사용자 지정 제출 작업을 만드는 데 필요한 단계를 안내합니다.
+이 문서에서는 적응형 Forms 제출을 처리하기 위한 사용자 지정 제출 액션을 만드는 데 필요한 단계를 안내합니다.
 
 * crx에 로그인
-* 앱 아래에 &quot;sling:folder&quot; 유형의 노드를 만듭니다. 이 노드 CustomSubmitHelpx를 호출하겠습니다.
-* 새로 만든 노드를 저장합니다.
+* 앱 아래에 &quot;sling :folder&quot; 유형의 노드를 만듭니다. 이 노드를 CustomSubmitHelpx라고 하겠습니다.
+* 새로 생성된 노드를 저장합니다.
 * 새로 만든 노드에 다음 두 속성을 추가합니다
-* PropertyName | 속성 값
+* 속성 이름 | 속성 값
 * guideComponentType | fd/af/components/guidesubmittype
-* guideDataModel | xfa,xsd,기본
+* 가이드 데이터 모델 | xfa,xsd,basic
 * jcr:description | CustomSubmitHelpx
 * 변경 사항을 저장합니다
-* CustomSubmitHelpx 노드 아래에 post.POST.jsp라는 새 파일을 만듭니다.적응형 양식을 제출하면 이 JSP가 호출됩니다. 이 파일에서 필요에 따라 JSP 코드를 작성할 수 있습니다. 다음 코드는 요청을 서블릿에 전달합니다.
+* POST CustomSubmitHelpx 노드 아래에 post.user.jsp라는 새 파일을 만듭니다.적응형 양식이 제출되면 이 JSP가 호출됩니다. 이 파일에서 요구 사항에 따라 JSP 코드를 작성할 수 있습니다. 다음 코드는 요청을 서블릿에 전달합니다.
 
 ```java
 <%
@@ -47,8 +47,8 @@ ht-degree: 1%
 %>
 ```
 
-* CustomSubmitHelpx 노드 아래에 addfields.jsp라는 파일을 만듭니다. 이 파일을 사용하면 서명된 문서에 액세스할 수 있습니다.
-* 이 파일에 다음 코드를 추가합니다
+* CustomSubmitHelpx 노드 아래에 addfields .jsp라는 파일을 만듭니다. 이 파일을 사용하면 서명된 문서에 액세스할 수 있습니다.
+* 이 파일에 다음 코드 추가
 
 ```java
     <%@include file="/libs/fd/af/components/guidesglobal.jsp"%>
@@ -60,8 +60,8 @@ ht-degree: 1%
     <input type="hidden" id="useSignedPdf" name="_useSignedPdf" value=""/>;
 ```
 
-* 변경 내용을 저장합니다
+* 변경 사항 저장
 
-이제 이 이미지에 표시된 대로 적응형 양식의 제출 작업에서 &quot;CustomSubmitHelpx&quot;를 보기 시작합니다.
+이제 이 이미지에 표시된 대로 적응형 양식의 제출 작업에서 &quot;CustomSubmitHelpx&quot;가 표시됩니다.
 
-![사용자 지정 제출이 있는 적응형 양식](assets/capture-2.gif)
+![사용자 정의 제출이 포함된 적응형 양식](assets/capture-2.gif)

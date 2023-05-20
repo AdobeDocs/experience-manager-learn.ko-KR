@@ -1,6 +1,6 @@
 ---
-title: Assets Essentials을 사용하여 컨텐츠 만들기
-description: Adobe Photoshop Express을 사용하여 자산을 업로드하고, 버전을 만들고, 자산을 편집하는 방법을 알아봅니다.
+title: Assets Essentials을 사용하여 콘텐츠 만들기
+description: Adobe Photoshop Express을 사용하여 에셋을 업로드하고, 버전을 만들고, 에셋을 편집하는 방법을 알아봅니다.
 version: Cloud Service
 feature: Assets Essentials
 topic: Content Management
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# Assets Essentials을 사용하여 컨텐츠 만들기
+# Assets Essentials을 사용하여 콘텐츠 만들기
 
-Adobe Photoshop Express을 사용하여 자산을 업로드하고, 버전을 만들고, 자산을 편집하는 방법을 알아봅니다.
+Adobe Photoshop Express을 사용하여 에셋을 업로드하고, 버전을 만들고, 에셋을 편집하는 방법을 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335746?quality=12&learn=on)

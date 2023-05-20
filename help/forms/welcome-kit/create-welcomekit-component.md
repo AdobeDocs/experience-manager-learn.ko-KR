@@ -1,13 +1,14 @@
 ---
 title: 시작 키트 구성 요소 만들기
-description: 제출된 양식 데이터를 기반으로 자산을 다운로드할 수 있는 링크가 있는 AEM 사이트 페이지를 만듭니다.
+description: 제출된 양식 데이터를 기반으로 에셋을 다운로드할 수 있는 링크가 있는 AEM 사이트 페이지를 만듭니다.
 feature: Adaptive Forms
 version: 6.5
 topic: Development
 role: Developer
 level: Beginner
 last-substantial-update: 2022-12-14T00:00:00Z
-source-git-commit: 0e27907066c7d688549a980ccd17b3f17d74b60b
+exl-id: 66496f0e-c121-4b6d-b371-084393ece3ca
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '74'
 ht-degree: 0%
@@ -16,9 +17,9 @@ ht-degree: 0%
 
 # 시작 키트 구성 요소
 
-최종 사용자가 다운로드할 수 있는 페이지에 자산을 나열하기 위해 페이지 구성 요소를 만들었습니다. 개별 자산에 대한 경로는 **경로**. 제출된 양식 데이터는 포함할 자산을 결정합니다.
+최종 사용자가 다운로드할 수 있는 페이지의 에셋을 나열하는 페이지 구성 요소를 만들었습니다. 개별 자산에 대한 경로는 라는 속성에 저장됩니다. **경로**. 제출된 양식 데이터는 포함할 에셋을 결정합니다.
 
-다음 코드는 페이지의 자산을 나열합니다.
+다음 코드는 페이지의 에셋을 나열합니다.
 
 ```html
    <p class="cmp-press-kit__press-kit-size">
@@ -40,6 +41,3 @@ ht-degree: 0%
 </sly>
 <sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=!ready}"></sly>
 ```
-
-
-

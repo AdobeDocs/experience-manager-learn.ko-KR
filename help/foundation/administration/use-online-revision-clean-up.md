@@ -1,6 +1,6 @@
 ---
 title: 온라인 개정 정리 사용
-description: 온라인 개정 정리 를 간략하게 소개합니다. 온라인 개정 정리 를 통해 자주 오프라인 개정을 정리해야 하는 필요성을 완화합니다.
+description: 온라인 수정 버전 정리에 대한 간략한 소개. 온라인 수정 정리 는 빈번한 오프라인 수정 정리의 필요성을 완화합니다.
 version: 6.4, 6.5
 topics: operations, authoring, performance
 activity: use
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # 온라인 개정 정리 사용
 
-자주 오프라인 개정 정리를 해야 하는 필요성을 완화시키는 온라인 개정 정리 를 간략하게 소개합니다.
+빈번한 오프라인 개정 정리의 필요성을 완화하는 온라인 개정 정리에 대한 간략한 소개입니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17004?quality=12&learn=on)
 

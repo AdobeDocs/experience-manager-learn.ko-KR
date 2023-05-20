@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# 배치 데이터 구성
+# 일괄 데이터 구성
 
-배치 데이터 구성은 배치 API에 대한 Blob 저장소의 특정 인스턴스를 구성하는 데 도움이 됩니다. 고객이 소유한 Microsoft Azure Blob 저장소의 입력 및 출력 위치를 지정할 수 있도록 해줍니다.
+일괄 데이터 구성은 일괄 처리 API에 대한 Blob 스토리지의 특정 인스턴스를 구성하는 데 도움이 됩니다. 고객이 소유한 Microsoft Azure Blob 저장소에서 입력 및 출력 위치를 지정할 수 있습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/340128?quality=12&learn=on)

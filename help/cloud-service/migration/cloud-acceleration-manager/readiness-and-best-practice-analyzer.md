@@ -1,6 +1,6 @@
 ---
-title: 준비 및 모범 사례 분석기
-description: 모범 사례 분석기를 통해 애플리케이션을 Experience Manager as a Cloud Service 으로 이동할 수 있는 방법을 살펴볼 수 있습니다
+title: 준비 및 Best Practice Analyzer
+description: Best Practice Analyzer 가 애플리케이션을 Experience Manager as a Cloud Service으로 이동할 수 있도록 지원하는 방법에 대해 알아봅니다
 version: Cloud Service
 feature: Migration
 topic: Migration, Upgrade
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# 준비 및 모범 사례 분석기
+# 준비 및 Best Practice Analyzer
 
-모범 사례 분석기를 통해 AEM On-prem 또는 Adobe Managed Services에서 Adobe Managed Services에서 as a Cloud Service Experience Manager으로 이동할 수 있는 방법을 알아보십시오.
+Best Practice Analyzer 가 AEM 온프레미스 또는 Adobe Managed Services에서 Experience Manager as a Cloud Service으로 전환하는 데 어떻게 도움이 되는지에 대해 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336690?quality=12&learn=on)

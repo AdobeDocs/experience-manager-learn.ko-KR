@@ -1,7 +1,7 @@
 ---
-title: 퇴직 Outlook 패널 구성
+title: 처분 Outlook 패널 구성
 seo-title: Configuring Retirement Outlook Panel
-description: 첫 번째 대화형 통신 문서를 만들기 위한 여러 단계 자습서의 10부분입니다. 이 부분에서는 텍스트 및 차트 구성 요소를 추가하여 Releague Outlook 패널을 구성합니다.
+description: 첫 번째 대화형 통신 문서를 만들기 위한 10단계 튜토리얼의 일부입니다. 이 부분에서는 텍스트 및 차트 구성 요소를 추가하여 [사용 중지 아웃룩 패널]을 구성하겠습니다.
 seo-description: This is part 10 of a multi-step tutorial for creating your first interactive communications document. In this part, we will configure Retirement Outlook Panel by adding text and chart components.
 uuid: 1d5119b5-e797-4bf0-9b10-995b3f051f92
 feature: Interactive Communication
@@ -22,27 +22,27 @@ ht-degree: 1%
 
 ---
 
-# 퇴직 Outlook 패널 구성{#configuring-retirement-outlook-panel}
+# 처분 Outlook 패널 구성{#configuring-retirement-outlook-panel}
 
-* 첫 번째 대화형 통신 문서를 만들기 위한 여러 단계 자습서의 10부분입니다. 이 부분에서는 텍스트 및 차트 구성 요소를 추가하여 Releague Outlook 패널을 구성합니다.
+* 첫 번째 대화형 통신 문서를 만들기 위한 10단계 튜토리얼의 일부입니다. 이 부분에서는 텍스트 및 차트 구성 요소를 추가하여 [사용 중지 아웃룩 패널]을 구성하겠습니다.
 
 * AEM Forms에 로그인하고 Adobe Experience Manager > Forms > Forms 및 문서로 이동합니다.
 
-* 401KStutement 폴더를 엽니다.
+* 401KStation 폴더를 엽니다.
 
-* 편집 모드에서 401KStutement 문서를 엽니다.
+* 401KStation 문서를 편집 모드로 엽니다.
 
-**왼쪽 패널 대상 영역 구성**
+**LeftPanel 대상 영역 구성**
 
-* 오른쪽의 왼쪽 패널 대상 영역을 탭하고 &quot;+&quot; 아이콘을 클릭하여 구성 요소 삽입 대화 상자를 표시합니다.
+* 오른쪽의 LeftPanel 대상 영역을 탭하고 &quot;+&quot; 아이콘을 클릭하여 구성 요소 삽입 대화 상자를 표시합니다.
 
 * 텍스트 구성 요소를 삽입합니다.
 
-* 새로 추가된 텍스트 구성 요소를 완만하게 탭하여 구성 요소 도구 모음을 표시합니다
+* 새로 추가된 텍스트 구성 요소를 가볍게 탭하여 구성 요소 도구 모음을 표시합니다
 
-* &quot;연필&quot; 아이콘을 선택하여 기본 텍스트를 편집합니다.
+* 기본 텍스트를 편집하려면 &quot;연필&quot; 아이콘을 선택합니다.
 
-* 기본 텍스트를 &quot;**퇴직 소득 전망&quot;**
+* 기본 텍스트를 &quot;**당신의 은퇴 소득 전망&quot;**
 
 **RightPanel 대상 영역 구성**
 
@@ -50,27 +50,27 @@ ht-degree: 1%
 
 * 텍스트 구성 요소를 삽입합니다.
 
-* 새로 추가된 텍스트 구성 요소를 부드럽게 탭하여 구성 요소 도구 모음을 표시합니다.
+* 새로 추가된 텍스트 구성 요소를 가볍게 탭하여 구성 요소 도구 모음을 표시합니다.
 
-* &quot;연필&quot; 아이콘을 선택하여 기본 텍스트를 편집합니다.
+* 기본 텍스트를 편집하려면 &quot;연필&quot; 아이콘을 선택합니다.
 
-* 기본 텍스트를 &quot;**예상 퇴직 소득&quot;**
+* 기본 텍스트를 &quot;**예상 월간 퇴직 소득&quot;**
 
-## 퇴직 소득 Outlook 문서 조각 추가 {#add-retirement-income-outlook-document-fragment}
+## 퇴직 소득 Outlook 문서 단편 추가 {#add-retirement-income-outlook-document-fragment}
 
-* 자산 아이콘을 클릭하고 필터를 적용하여 &quot;문서 조각&quot; 유형의 자산을 표시합니다. RestrationImportableOutlook 문서 조각을 왼쪽 패널 대상 영역으로 끌어다 놓습니다.
+* 에셋 아이콘을 클릭하고 필터를 적용하여 &quot;문서 조각&quot; 유형의 에셋을 표시합니다. RescapeIncomeOutlook 문서 조각을 왼쪽 패널 대상 영역으로 끌어다 놓습니다.
 
-* 다음을 의미할 수 있습니다 [이 페이지에](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/partseven.html) 컨텐츠 영역에 문서 조각 추가 시
+* 다음을 참조할 수 있습니다. [이 페이지로](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/partseven.html) 컨텐츠 영역에 문서 단편 추가 시.
 
 ## 예상 월별 소득 차트 추가 {#adding-estimated-monthly-income-chart}
 
-* 오른쪽의 RightPanel 대상 영역을 클릭합니다. 차트 구성 요소를 삽입하려면 &quot;+&quot; 아이콘을 클릭하십시오. 예상 월소득을 표시하는 컬럼 차트로 하겠습니다 새로 삽입된 차트 구성 요소를 살짝 누릅니다. 구성 속성 시트를 열려면 &quot;렌치&quot; 아이콘을 선택합니다.아래 스크린샷에 표시된 대로 다음 속성으로 차트를 구성합니다.
+* 오른쪽의 RightPanel 대상 영역을 클릭합니다. 차트 구성 요소를 삽입하려면 &quot;+&quot; 아이콘을 클릭하십시오. 우리는 월 소득 추정치를 표시하기 위해 세로 막대형 차트를 사용할 것이다. 새로 삽입된 차트 구성 요소를 가볍게 탭합니다. &quot;렌치&quot; 아이콘을 선택하여 구성 등록 정보 시트를 엽니다. 아래 스크린샷과 같이 다음 등록 정보를 사용하여 차트를 구성합니다.
 
-**AEM Forms 6.4 - 예상 월별 수입 열 차트 구성**
+**AEM Forms 6.4 - 예상 월간 소득 열 차트 구성**
 
 ![form64](assets/estimatedmonthlyincomechart.png)
 
-**AEM Forms 6.5 - 예상 월별 수입 열 차트 구성**
+**AEM Forms 6.5 - 예상 월간 소득 열 차트 구성**
 
 ![forms65](assets/estimatedmonthlyincomechart65.PNG)
 

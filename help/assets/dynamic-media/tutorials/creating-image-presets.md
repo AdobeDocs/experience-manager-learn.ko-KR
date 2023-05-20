@@ -1,6 +1,6 @@
 ---
 title: AEM Dynamic Media을 사용하여 이미지 사전 설정 만들기
-description: Dynamic Media으로 이미지 사전 설정 구성
+description: Dynamic Media을 사용하여 이미지 사전 설정 구성
 role: Developer
 level: Intermediate
 version: Cloud Service
@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # AEM Dynamic Media을 사용하여 이미지 사전 설정 만들기
 
-이 비디오에서는 Dynamic Media에서 이미지 사전 설정을 만드는 단계를 안내합니다.
+이 비디오는 Dynamic Media에서 이미지 사전 설정을 만드는 단계를 안내합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335459?quality=12&learn=on)

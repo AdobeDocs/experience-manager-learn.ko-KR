@@ -1,6 +1,6 @@
 ---
-title: AEM 컨텐츠 조각 콘솔 확장 Adobe I/O Runtime 작업
-description: AEM 컨텐츠 조각 콘솔 확장 모달을 만드는 방법을 알아봅니다.
+title: AEM 콘텐츠 조각 콘솔 확장 Adobe I/O Runtime 작업
+description: AEM 콘텐츠 조각 콘솔 확장 모달을 만드는 방법을 알아봅니다.
 feature: Developer Tools
 version: Cloud Service
 topic: Development
@@ -9,47 +9,47 @@ level: Beginner
 recommendations: noDisplay, noCatalog
 kt: 11603
 last-substantial-update: 2022-12-01T00:00:00Z
-source-git-commit: f19cdc7d551f20b35550e7d25bd168a2eaa43b6a
+exl-id: 3062900a-0461-4c6f-81e6-c76a7f613804
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 2%
 
 ---
 
-
 # Adobe I/O Runtime 작업
 
-![AEM 컨텐츠 조각 확장 런타임 작업](./assets/runtime-action/action-runtime-flow.png){align="center"}
+![AEM 콘텐츠 조각 확장 런타임 작업](./assets/runtime-action/action-runtime-flow.png){align="center"}
 
-AEM 컨텐츠 조각 확장은 선택적으로 원하는 개수의 컨텐츠 조각을 포함할 수 있습니다 [Adobe I/O Runtime 작업](https://developer.adobe.com/runtime/docs/).
+AEM 콘텐츠 조각 확장은 선택적으로 다음 수를 포함할 수 있습니다. [Adobe I/O Runtime 작업](https://developer.adobe.com/runtime/docs/).
 
-Adobe I/O Runtime 작업은 확장에서 호출할 수 있는 서버를 사용하지 않는 함수입니다. 작업은 AEM 또는 기타 Adobe 웹 서비스와 상호 작용해야 하는 작업을 수행하는 데 유용합니다.
-일반적으로 작업은 장기 실행(몇 초 이상)된 작업을 수행하거나 AEM 또는 기타 웹 서비스에 HTTP 요청을 만드는 데 가장 유용합니다.
+Adobe I/O Runtime 작업은 확장에서 호출할 수 있는 서버를 사용하지 않는 함수입니다. 작업은 AEM 또는 다른 Adobe 웹 서비스와 상호 작용해야 하는 작업을 수행하는 데 유용합니다.
+일반적으로 작업은 장기 실행(몇 초 이상) 작업을 수행하거나 AEM 또는 기타 웹 서비스에 대한 HTTP 요청을 하는 데 가장 유용합니다.
 
 Adobe I/O Runtime 작업을 사용하여 작업을 수행하면 다음과 같은 이점이 있습니다.
 
-+ 작업은 브라우저의 컨텍스트 외부에서 실행되는 서버리스 함수입니다. 따라서 CORS에 대해 걱정할 필요가 없습니다
-+ 사용자가 작업을 중단할 수 없습니다(예: 브라우저를 새로 고치는 경우)
-+ 작업은 비동기적이므로 사용자를 차단하지 않고 필요한 한 오래 실행할 수 있습니다
++ 작업은 브라우저의 컨텍스트 외부에서 실행되는 서버를 사용하지 않는 함수로, CORS에 대해 걱정할 필요가 없습니다
++ 사용자가 작업을 중단할 수 없습니다(예: 브라우저를 새로 고치는 경우).
++ 작업은 비동기적이므로 사용자를 차단하지 않고 필요한 만큼 실행할 수 있습니다
 
-AEM 컨텐츠 조각 확장 컨텍스트에서 작업은 종종 AEM as a Cloud Service과 직접 통신하는 데 사용됩니다.
+AEM 콘텐츠 조각 확장 맥락에서 작업은 종종 AEM as a Cloud Service과 직접 통신하는 데 가장 많이 사용됩니다.
 
-+ AEM에서 컨텐츠 조각에 대한 관련 데이터 수집
-+ 컨텐츠 조각에서 사용자 지정 작업 수행
-+ 컨텐츠 조각 맞춤형 작성
++ 콘텐츠 조각에 대해 AEM에서 관련 데이터 수집
++ 콘텐츠 조각에서 사용자 지정 작업 수행
++ 맞춤형 콘텐츠 조각 만들기
 
-AEM 컨텐츠 조각 확장이 컨텐츠 조각 콘솔, 확장 및 해당 지원 작업에 표시되지만 사용자 지정 AEM API 엔드포인트를 포함하여 사용 가능한 모든 AEM HTTP API를 호출할 수 있습니다.
+AEM 콘텐츠 조각 확장이 콘텐츠 조각 콘솔, 확장 및 해당 지원 작업에 표시되지만 는 사용자 지정 AEM API 끝점을 포함하여 사용 가능한 AEM HTTP API를 호출할 수 있습니다.
 
 ## 작업 호출
 
-Adobe I/O Runtime 작업은 주로 AEM 컨텐츠 조각 확장의 두 위치에서 호출됩니다.
+Adobe I/O Runtime 작업은 기본적으로 AEM 콘텐츠 조각 확장의 두 위치에서 호출됩니다.
 
 1. 다음 [확장 등록](./extension-registration.md) `onClick(..)` 핸들러
-1. 내 [모달](./modal.md)
+1. 다음 범위 내 [모달](./modal.md)
 
 ### 확장 등록에서
 
-Adobe I/O Runtime 작업은 확장 등록 코드에서 직접 호출할 수 있습니다. 가장 일반적인 사용 사례는 작업을 [헤더 메뉴](./header-menu.md#no-modal)를 사용하지 않는 [변조](./modal.md).
+Adobe I/O Runtime 작업은 확장 등록 코드에서 직접 호출할 수 있습니다. 가장 일반적인 사용 사례는 작업을 [머리글 메뉴](./header-menu.md#no-modal)을 사용하지 않는 의 단추 [모달](./modal.md).
 
 + `./src/aem-cf-console-admin-1/web-src/src/components/ExtensionRegistration.js`
 
@@ -107,9 +107,9 @@ function ExtensionRegistration() {
 
 ### 모달에서
 
-Adobe I/O Runtime 작업을 모듈에서 직접 호출하여 더 관련된 작업을 수행할 수 있습니다. 특히 AEM as a Cloud Service, Adobe 웹 서비스 또는 타사 서비스와의 통신에 의존하는 작업을 수행할 수 있습니다.
+AEM as a Cloud Service, Adobe 웹 서비스 또는 타사 서비스와의 통신에 의존하는 작업, 특히 더 많은 관련 작업을 수행하기 위해 Adobe I/O Runtime 작업을 모달에서 직접 호출할 수 있습니다.
 
-Adobe I/O Runtime 작업은 서버를 사용하지 않는 Adobe I/O Runtime 환경에서 실행되는 Node.js 기반 JavaScript 애플리케이션입니다. 이러한 작업은 확장 SPA에서 HTTP를 통해 처리할 수 있습니다.
+Adobe I/O Runtime 작업은 서버를 사용하지 않는 Adobe I/O Runtime 환경에서 실행되는 Node.js 기반 JavaScript 애플리케이션입니다. 이러한 작업은 확장 SPA에서 HTTP를 통해 주소 지정할 수 있습니다.
 
 + `./src/aem-cf-console-admin-1/web-src/src/components/MyModal.js`
 
@@ -301,27 +301,27 @@ async function main (params) {
 
 ## AEM HTTP API
 
-다음 AEM HTTP API는 일반적으로 확장의 AEM과 상호 작용하기 위해 사용됩니다.
+다음 AEM HTTP API는 일반적으로 확장에서 AEM과 상호 작용하는 데 사용됩니다.
 
-+ [AEM GraphQL API](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
-+ [AEM Assets HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html)
++ [AEM GRAPHQL API](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
++ [AEM ASSETS HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html)
    + [AEM Assets HTTP API의 콘텐츠 조각 지원](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/assets-api-content-fragments.html)
 + [AEM QueryBuilder API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html)
-+ [전체 AEM as a Cloud Service API 참조](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/reference-materials.html)
++ [AEM as a Cloud Service API 참조 완료](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/reference-materials.html)
 
 
-## npm 모듈 Adobe
+## Adobe npm 모듈
 
 다음은 Adobe I/O Runtime 작업 개발에 유용한 npm 모듈입니다.
 
 + [@adobe/aio-sdk](https://www.npmjs.com/package/@adobe/aio-sdk)
-   + [코어 SDK](https://github.com/adobe/aio-sdk-core)
+   + [Core SDK](https://github.com/adobe/aio-sdk-core)
    + [상태 라이브러리](https://github.com/adobe/aio-lib-state)
    + [파일 라이브러리](https://github.com/adobe/aio-lib-files)
    + [Adobe Target 라이브러리](https://github.com/adobe/aio-lib-target)
    + [Adobe Analytics 라이브러리](https://github.com/adobe/aio-lib-analytics)
    + [Adobe Campaign Standard 라이브러리](https://github.com/adobe/aio-lib-campaign-standard)
-   + [고객 프로필 라이브러리 Adobe](https://github.com/adobe/aio-lib-customer-profile)
+   + [Adobe 고객 프로필 라이브러리](https://github.com/adobe/aio-lib-customer-profile)
    + [Adobe Audience Manager 고객 데이터 라이브러리](https://github.com/adobe/aio-lib-audience-manager-cd)
    + [Adobe I/O 이벤트](https://github.com/adobe/aio-lib-events)
 + [@adobe/aio-lib-core-networking](https://github.com/adobe/aio-lib-core-networking)

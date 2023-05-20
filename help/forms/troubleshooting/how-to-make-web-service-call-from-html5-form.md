@@ -1,6 +1,6 @@
 ---
-title: HTML5 양식에서 웹 서비스를 호출하는 방법
-description: HTML5 양식에서 웹 서비스를 구성하는 절차
+title: HTML5 양식에서 웹 서비스 호출을 만드는 방법
+description: HTML5 양식에서 웹 서비스를 구성하는 단계
 type: Troubleshooting
 role: Developer
 level: Intermediate
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ---
 
-# HTML5 양식에서 웹 서비스를 호출하는 방법
+# HTML5 양식에서 웹 서비스 호출을 만드는 방법
 
 *이 비디오는 HTML5 양식에서 웹 서비스 호출을 수행하는 프로세스를 안내합니다.*
 

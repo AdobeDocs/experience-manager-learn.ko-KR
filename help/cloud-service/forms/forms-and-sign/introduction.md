@@ -1,6 +1,6 @@
 ---
 title: Acrobat Sign과 Adobe Experience Manager Forms as Cloud Service 통합
-description: Forms CS와 Acrobat Sign의 통합에 대한 교육 과정을 소개합니다
+description: Forms CS와 Acrobat Sign 통합에 대한 교육 과정 소개 비디오
 solution: Experience Manager,Experience Manager Forms
 type: Documentation
 role: Developer

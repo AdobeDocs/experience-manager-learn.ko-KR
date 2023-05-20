@@ -1,7 +1,7 @@
 ---
-title: AEM Sites 컨텐츠 계층 소개
+title: AEM Sites 콘텐츠 계층 소개
 seo-title: Introduction to AEM Sites Content Hierarchy
-description: 다음 비디오에서는 조직을 위해 AEM 내에 사이트 페이지를 저장하는 방법을 강조 표시합니다.
+description: 다음 비디오에서는 조직을 위해 AEM 내에서 사이트 페이지를 저장하는 방법을 중점적으로 다룹니다.
 seo-description: The following video highlights how site pages are stored within AEM for your organization.
 feature: Page Editor
 topics: authoring, publishing
@@ -22,8 +22,8 @@ ht-degree: 0%
 
 ---
 
-# 컨텐츠 구조 및 계층 {#content-hierarchy}
+# 콘텐츠 구조 및 계층 {#content-hierarchy}
 
-AEM Sites에서 조직의 사이트 페이지를 만들고 구성하는 방법을 알아봅니다.
+AEM Sites에서 조직의 사이트 페이지를 만들고 구성하는 방법에 대해 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/31785?quality=12&learn=on)

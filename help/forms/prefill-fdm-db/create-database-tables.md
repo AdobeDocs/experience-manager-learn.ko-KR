@@ -18,18 +18,18 @@ ht-degree: 1%
 
 # 데이터베이스 테이블 만들기
 
-양식 데이터 모델은 RDBMS, RESTfull, SOAP 또는 OData 소스를 기반으로 할 수 있습니다. 이 교육 과정의 초점은 RDBMS 데이터 소스의 양식 데이터 모델을 사용하여 적응형 양식을 미리 작성하는 것입니다. 이 자습서를 위해 MYSQL 데이터베이스가 사용되었습니다. 사용 사례를 보여주기 위해 다음 두 표를 만들었습니다
+양식 데이터 모델은 RDBMS, RESTfull, SOAP 또는 OData 소스를 기반으로 할 수 있습니다. 이 교육 과정은 RDBMS 데이터 소스에서 지원하는 양식 데이터 모델을 사용하여 적응형 양식을 미리 작성하는 데 중점을 둡니다. 이 자습서에서는 MYSQL 데이터베이스를 사용했습니다. 사용 사례를 보여 주기 위해 다음 두 표를 만들었습니다
 
-* **신음** 표 - 이 표에는 전체 정보가 저장됩니다.
+* **뉴와르** 표 - 이 표에는 전체 정보가 저장됩니다.
 
-   ![신음](assets/newhire-table.png)
+   ![뉴와르](assets/newhire-table.png)
 
 
-* **수혜자** 테이블 - 이 상점은 수혜자가 필요 없음
+* **수익자** 테이블 - 이 스토어에는 수취인이 없습니다.
 
-   ![수혜자](assets/beneficiaries-table.png)
+   ![수익자](assets/beneficiaries-table.png)
 
-을(를) 가져올 수 있습니다 [sql 파일](assets/db-schema.sql) mySQL Workbench를 사용하여 일부 샘플 데이터가 있는 테이블에 만듭니다.
+다음을 가져올 수 있습니다. [sql 파일](assets/db-schema.sql) mySQL Workbench를 사용하여 일부 샘플 데이터가 있는 테이블을 만듭니다.
 
 ## 다음 단계
 

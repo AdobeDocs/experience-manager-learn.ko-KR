@@ -1,6 +1,6 @@
 ---
-title: UM 세션 시간 초과를 늘리는 방법
-description: 사용자에 대한 사용자 관리 세션 시간 제한을 늘리는 절차
+title: UM 세션 시간 제한을 늘리는 방법
+description: 사용자에 대한 사용자 관리 세션 시간 제한을 늘리는 단계
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -16,8 +16,8 @@ ht-degree: 0%
 ---
 
 
-# UM 세션 시간 초과를 늘리는 방법
+# UM 세션 시간 제한을 늘리는 방법
 
-*이 비디오에서는 UM 세션 시간 제한을 늘리는 프로세스를 안내합니다.*
+*이 비디오는 UM 세션 시간 제한을 늘리는 과정을 안내합니다.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335503?quality=12&learn=on)

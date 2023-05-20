@@ -1,5 +1,5 @@
 ---
-title: 선택한 뉴스레터를 하나의 파일에 결합
+title: 선택한 뉴스레터를 하나의 파일로 결합
 description: 어셈블러 서비스를 사용하여 선택한 뉴스레터 결합
 feature: Adaptive Forms
 version: 6.5
@@ -15,14 +15,14 @@ ht-degree: 1%
 
 ---
 
-# 선택한 뉴스레터를 하나의 pdf로 결합
+# 선택한 뉴스레터를 하나의 PDF로 결합
 
-사용자의 선택 사항은 숨김 필드에 저장됩니다. 이 숨김 필드의 값이 을 사용하여 선택 항목을 하나의 pdf로 결합하는 서블릿에 전달됩니다 [Forms 어셈블러 서비스](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html).
+사용자의 선택 사항은 숨겨진 필드에 저장됩니다. 이 숨겨진 필드의 값은 을 사용하여 선택 사항을 하나의 pdf로 결합하는 서블릿에 전달됩니다. [Forms 어셈블러 서비스](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html).
 
 
-## pdf 파일을 어셈블할 서블릿
+## 서블릿을 사용하여 PDF 파일 어셈블
 
-다음 코드는 선택한 뉴스레터를 어셈블합니다. 이 코드는 사용자가 선택한 문서에서 문서 맵을 만듭니다. 이 맵에서 DDX가 생성되고 문서 맵과 함께 이 DDX가 어셈블러 서비스의 호출 방법으로 전달되어 결합된 문서를 가져옵니다. 어셈블된 pdf는 저장소에 저장되고 해당 경로가 호출 응용 프로그램으로 반환됩니다.
+다음 코드는 선택한 뉴스레터를 어셈블합니다. 이 코드는 사용자의 선택 내용에서 문서 맵을 만듭니다. 이 맵에서 DDX가 만들어지고 문서 맵과 함께 이 DDX가 어셈블러 서비스의 호출 메서드에 전달되어 결합된 문서를 가져옵니다. 어셈블된 PDF는 저장소에 저장되고 해당 경로가 호출 응용 프로그램으로 반환됩니다.
 
 ```java
 protected void doPost(SlingHttpServletRequest request,SlingHttpServletResponse response)
@@ -80,7 +80,7 @@ protected void doPost(SlingHttpServletRequest request,SlingHttpServletResponse r
 
 ## 유틸리티 함수
 
-뉴스레터 조립에는 다음의 유틸리티 기능이 사용되었다. 이러한 유틸리티 함수는 문서 맵에서 DDX를 만들고 org.w3c.dom.Document를 AEMFD 문서 객체로 변환합니다.
+뉴스레터를 조립할 때 다음과 같은 유틸리티 함수가 사용되었습니다. 이러한 유틸리티 함수는 문서 맵에서 DDX를 생성하고 org.w3c.dom.Document를 AEMFD 문서 객체로 변환합니다.
 
 
 ```java

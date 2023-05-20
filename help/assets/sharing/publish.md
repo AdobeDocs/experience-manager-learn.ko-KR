@@ -1,6 +1,6 @@
 ---
 title: AEM을 사용하여 자산을 게시하는 방법
-description: AEM Author에서 AEM Publish로 자산 및 해당 표현물을 게시하는 방법을 알아봅니다.
+description: AEM Author에서 AEM Publish로 에셋 및 해당 표현물을 게시하는 방법에 대해 알아봅니다.
 feature: Asset Management
 version: Cloud Service
 kt: 330932
@@ -19,8 +19,8 @@ ht-degree: 2%
 
 # 게시
 
-AEM Author에서 AEM Publish로 자산 및 해당 표현물을 게시하는 방법을 알아봅니다.
+AEM Author에서 AEM Publish로 에셋 및 해당 표현물을 게시하는 방법에 대해 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330932?quality=12&learn=on)
 
-_자산을 게시하기 전에 AEM Assets 배포에 AEM 게시 서비스 라이센스가 있는지 확인합니다._
+_자산을 게시하기 전에 AEM Assets 배포에 AEM Publish 서비스 라이선스가 부여되었는지 확인합니다._

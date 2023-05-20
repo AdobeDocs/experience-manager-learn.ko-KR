@@ -1,6 +1,6 @@
 ---
-title: Windows 설정의 다중 사용자 PDFG 변환 문제를 해결하는 절차
-description: Windows 설치 프로그램에서 여러 사용자 PDF 생성기 문제를 해결합니다.
+title: Windows 설치 시 다중 사용자 PDFG 변환 문제를 해결하는 단계
+description: Windows 설치 시 여러 사용자 PDF 생성기 문제를 해결합니다.
 type: Troubleshooting
 role: Developer
 level: Intermediate
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Windows 설정의 다중 사용자 PDFG 변환 문제를 해결하는 절차
+# Windows 설치 시 다중 사용자 PDFG 변환 문제를 해결하는 단계
 
-*이 비디오에서는 Windows 설정에서 다중 사용자 PDFG 변환 문제를 해결하는 프로세스에 대해 설명합니다.*
+*이 비디오에서는 Windows 설치 시 다중 사용자 PDFG 변환 문제를 해결하는 과정을 설명합니다.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335550?quality=12&learn=on)

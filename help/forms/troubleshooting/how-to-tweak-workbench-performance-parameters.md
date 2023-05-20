@@ -1,6 +1,6 @@
 ---
-title: Workbench 성능 매개 변수 조정 방법
-description: Workbench 성능 매개 변수 조정 단계
+title: Workbench 성능 매개 변수를 수정하는 방법
+description: Workbench 성능 매개 변수를 조정하는 단계
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Workbench 성능 매개 변수 조정 방법
+# Workbench 성능 매개 변수를 수정하는 방법
 
-*이 비디오에서는 Workbench 성능 매개 변수 조정 프로세스를 안내합니다.*
+*이 비디오는 Workbench 성능 매개 변수를 수정하는 프로세스를 안내합니다.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335511?quality=12&learn=on)

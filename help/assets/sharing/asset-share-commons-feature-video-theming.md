@@ -1,6 +1,6 @@
 ---
-title: Asset Share Commons의 소개
-description: Assets Share Commons의 기능 및 기술 이해를 위한 자료
+title: Asset Share Commons에서 테마 소개
+description: Assets Share Commons에 대한 기능 및 기술 이해 자료
 version: 6.4, 6.5
 topic: Content Management
 role: Developer
@@ -14,13 +14,13 @@ ht-degree: 1%
 
 ---
 
-# Asset Share Commons의 소개 {#asset-share-commons-theme}
+# Asset Share Commons에서 테마 소개 {#asset-share-commons-theme}
 
-Asset Share Commons에서 이러한 내용을 간략하게 소개합니다. 이 비디오는 사용자 지정 색상 구성표를 사용하여 새 테마를 만드는 과정을 거칩니다.
+Asset Share Commons에서 간단한 소개입니다. 이 비디오는 사용자 정의 색상 구성표로 새 테마를 만드는 과정을 안내합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/20572?quality=12&learn=on)
 
-이 비디오에서는 Asset Share Commons Dark 테마를 기반으로 새 테마가 만들어집니다. 색상 구성표는 사용자 지정 로고와 일치하여 사이트에 일관된 모양과 느낌을 줍니다.
+이 비디오에서는 Asset Share Commons Dark 테마를 기반으로 새 테마를 만듭니다. 색상 구성표는 사이트에 일관된 모양과 느낌을 제공하기 위해 사용자 정의 로고와 일치합니다.
 
 ## 테마 변수
 
@@ -73,7 +73,7 @@ Asset Share Commons에서 이러한 내용을 간략하게 소개합니다. 이 
 @msgWarningBackgroundColor: @yellow;
 ```
 
-다운로드 [사용자 지정 클라이언트 라이브러리 테마](assets/asc-theme-demo.zip)
+다운로드 [사용자 정의 클라이언트 라이브러리 테마](assets/asc-theme-demo.zip)
 
 ## 추가 리소스{#additional-resources}
 

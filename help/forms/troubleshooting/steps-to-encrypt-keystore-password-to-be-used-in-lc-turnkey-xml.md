@@ -1,6 +1,6 @@
 ---
-title: lc_turnkey.xml에 사용할 키 저장소 암호를 암호화하는 절차
-description: 키 저장소 암호를 암호화하여 lc_turnkey.xml 파일에서 구성합니다.
+title: lc_turnkey.xml에 사용할 키 저장소 암호를 암호화하는 단계
+description: 키 저장소 암호를 암호화하여 lc_turnkey.xml 파일에 구성
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ---
 
-# lc_turnkey.xml에 사용할 키 저장소 암호를 암호화하는 절차
+# lc_turnkey.xml에서 사용할 키 저장소 암호를 암호화하는 단계
 
-*이 비디오에서는 lc_turnkey.xml에 사용할 키 저장소 암호를 암호화하는 단계를 안내합니다.*
+*이 비디오는 lc_turnkey.xml에 사용할 키 저장소 암호를 암호화하는 단계를 안내합니다.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335538?quality=12&learn=on)

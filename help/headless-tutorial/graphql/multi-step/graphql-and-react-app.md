@@ -1,6 +1,6 @@
 ---
 title: GraphQL API를 사용하여 AEM을 쿼리하는 React 앱 빌드 - AEM Headless 시작하기 - GraphQL
-description: Adobe Experience Manager(AEM) 및 GraphQL을 시작합니다. AEM GraphQL API에서 컨텐츠/데이터를 가져오는 React 앱을 빌드하고, AEM Headless JS SDK가 사용되는 방법도 참조하십시오.
+description: Adobe Experience Manager(AEM) 및 GraphQL을 시작합니다. AEM GraphQL API에서 컨텐츠/데이터를 가져오는 React 앱을 빌드합니다. AEM Headless JS SDK를 사용하는 방법도 알아보십시오.
 version: Cloud Service
 mini-toc-levels: 1
 kt: 6716
@@ -22,11 +22,11 @@ ht-degree: 2%
 
 이 장에서는 AEM GraphQL API가 외부 애플리케이션에서 경험을 유도하는 방법을 살펴봅니다.
 
-간단한 React 앱은 쿼리 및 표시에 사용됩니다 **팀** 및 **개인** AEM GraphQL API에 의해 노출된 컨텐츠. React의 사용은 크게 중요하지 않으며, 사용되는 외부 응용 프로그램은 모든 플랫폼의 프레임워크에 쓸 수 있습니다.
+간단한 React 앱을 사용하여 쿼리하고 표시합니다 **팀** 및 **개인** AEM GraphQL API에 의해 노출된 콘텐츠. React의 사용은 대부분 중요하지 않으며 소비하는 외부 애플리케이션은 모든 플랫폼의 프레임워크에 작성될 수 있습니다.
 
 ## 사전 요구 사항
 
-이 다중 부분 자습서의 이전 부분에 요약된 단계가 완료되었다고 가정됩니다. 또는 [tutorial-solution-content.zip](assets/explore-graphql-api/tutorial-solution-content.zip) AEM as a Cloud Service 작성자 및 게시 서비스에 설치됩니다.
+이 다중 파트 자습서의 이전 부분에 설명된 단계가 완료되었다고 가정됩니다. 또는 [tutorial-solution-content.zip](assets/explore-graphql-api/tutorial-solution-content.zip) 는 AEM Author 및 Publish as a Cloud Service 서비스에 설치됩니다.
 
 _이 장의 IDE 스크린샷은 [Visual Studio 코드](https://code.visualstudio.com/)_
 
@@ -39,18 +39,18 @@ _이 장의 IDE 스크린샷은 [Visual Studio 코드](https://code.visualstudio
 
 방법 알아보기:
 
-- 예제 React 앱을 다운로드하여 시작합니다
-- 를 사용하여 AEM GraphQL 종단점을 쿼리합니다. [AEM Headless JS SDK](https://github.com/adobe/aem-headless-client-js)
-- 팀 목록 및 참조된 구성원에 대해 AEM 쿼리
-- 팀 구성원의 세부 정보에 대해 AEM 쿼리
+- 예제 React 앱을 다운로드하여 시작합니다.
+- 다음을 사용하여 AEM GraphQL 끝점 쿼리 [AEM Headless JS SDK](https://github.com/adobe/aem-headless-client-js)
+- 팀 및 참조된 멤버 목록을 AEM에 쿼리
+- 팀 구성원의 세부 사항에 대해 AEM 쿼리
 
 ## 샘플 React 앱 가져오기
 
-이 장에서 Studout 샘플 React 앱은 AEM GraphQL API와 상호 작용하는 데 필요한 코드와 함께 구현되고 그로부터 얻은 팀 및 개인 데이터를 표시합니다.
+이 장에서는 AEM GraphQL API와 상호 작용하고 팀원 및 팀원으로부터 얻은 개인 데이터를 표시하는 데 필요한 코드로 스터브아웃 샘플 React 앱을 구현합니다.
 
-샘플 React 앱 소스 코드는 Github.com의 <https://github.com/adobe/aem-guides-wknd-graphql/tree/main/basic-tutorial>
+샘플 React 앱 소스 코드는 Github.com에서 사용할 수 있습니다. <https://github.com/adobe/aem-guides-wknd-graphql/tree/main/basic-tutorial>
 
-React 앱을 가져오려면 다음을 수행하십시오.
+React 앱을 다운로드하려면:
 
 1. 에서 샘플 WKND GraphQL React 앱 복제 [Github.com](https://github.com/adobe/aem-guides-wknd-graphql).
 
@@ -59,7 +59,7 @@ React 앱을 가져오려면 다음을 수행하십시오.
    $ git clone git@github.com:adobe/aem-guides-wknd-graphql.git
    ```
 
-1. 다음으로 이동 `basic-tutorial` 폴더를 열고 IDE에서 엽니다.
+1. 다음으로 이동 `basic-tutorial` 폴더를 만들고 IDE에서 엽니다.
 
    ```shell
    $ cd ~/Code/aem-guides-wknd-graphql/basic-tutorial
@@ -68,14 +68,14 @@ React 앱을 가져오려면 다음을 수행하십시오.
 
    ![VSCode의 React 앱](./assets/graphql-and-external-app/react-app-in-vscode.png)
 
-1. 업데이트 `.env.development` AEM as a Cloud Service 게시 서비스에 연결하려면
+1. 업데이트 `.env.development` AEM as a Cloud Service 게시 서비스에 연결합니다.
 
-   - 설정 `REACT_APP_HOST_URI`의 값은 AEM as a Cloud Service의 게시 URL이 될 값입니다(예: `REACT_APP_HOST_URI=https://publish-p123-e456.adobeaemcloud.com`) 및 `REACT_APP_AUTH_METHOD`의 값 `none`
+   - 설정 `REACT_APP_HOST_URI`의 값은 AEM as a Cloud Service의 게시 URL이 됩니다(예: `REACT_APP_HOST_URI=https://publish-p123-e456.adobeaemcloud.com`) 및 `REACT_APP_AUTH_METHOD`의 값: 까지 `none`
    >[!NOTE]
    >
-   > 이전 단계에서 프로젝트 구성, 컨텐츠 조각 모델, 작성된 컨텐츠 조각, GraphQL 엔드포인트 및 지속된 쿼리를 게시했는지 확인합니다.
+   > 프로젝트 구성, 콘텐츠 조각 모델, 작성된 콘텐츠 조각, GraphQL 끝점 및 이전 단계의 지속 쿼리를 게시했는지 확인합니다.
    >
-   > 로컬 AEM 작성자 SDK에서 위의 단계를 수행한 경우, 다음을 가리킬 수 있습니다 `http://localhost:4502` 및 `REACT_APP_AUTH_METHOD`의 값 `basic`.
+   > 로컬 AEM 작성자 SDK에서 위의 단계를 수행한 경우 다음을 지정할 수 있습니다. `http://localhost:4502` 및 `REACT_APP_AUTH_METHOD`의 값: 까지 `basic`.
 
 
 1. 명령줄에서 `aem-guides-wknd-graphql/basic-tutorial` 폴더
@@ -88,47 +88,47 @@ React 앱을 가져오려면 다음을 수행하십시오.
    $ npm start
    ```
 
-1. React 앱은 의 개발 모드에서 시작됩니다 [http://localhost:3000/](http://localhost:3000/). 자습서 전체에서 React 앱에 대한 변경 사항이 즉시 반영됩니다.
+1. React 앱이 의 개발 모드에서 시작됩니다. [http://localhost:3000/](http://localhost:3000/). 자습서 전체에서 React 앱에 대한 변경 사항이 즉시 반영됩니다.
 
 ![부분적으로 구현된 React 앱](./assets/graphql-and-external-app/partially-implemented-react-app.png)
 
 >[!IMPORTANT]
 >
->   이 React 앱은 부분적으로 구현됩니다. 이 자습서의 단계에 따라 구현을 완료합니다. 구현이 필요한 JavaScript 파일에는 다음 주석이 있습니다. 이 자습서에 지정된 코드를 사용하여 해당 파일의 코드를 추가/업데이트해야 합니다.
+>   이 React 앱은 부분적으로 구현됩니다. 이 자습서의 단계에 따라 구현을 완료합니다. 구현 작업이 필요한 JavaScript 파일에는 다음 주석이 있습니다. 이 자습서에 지정된 코드를 사용하여 해당 파일의 코드를 추가/업데이트해야 합니다.
 >
 >
 > //*********************************
 >
->  // TODO : AEM Headless 자습서의 단계에 따라 이를 구현합니다
+>  // TODO : AEM Headless 자습서의 단계에 따라 이를 구현합니다.
 >
 >  //*********************************
 
-## React 앱의 구조
+## React 앱 구조
 
 샘플 React 앱에는 다음 세 가지 주요 부분이 있습니다.
 
-1. 다음 `src/api` 폴더에는 AEM에 대한 GraphQL 쿼리를 만드는 데 사용되는 파일이 포함되어 있습니다.
-   - `src/api/aemHeadlessClient.js` AEM과 통신하는 데 사용되는 AEM Headless 클라이언트를 초기화하고 내보냅니다.
-   - `src/api/usePersistedQueries.js` 구현 [사용자 정의 React 후크](https://react.dev/docs/hooks-custom.html) AEM GraphQL에서 로 데이터 반환 `Teams.js` 및 `Person.js` 구성 요소 보기
+1. 다음 `src/api` 폴더에는 AEM에 GraphQL 쿼리를 만드는 데 사용되는 파일이 포함되어 있습니다.
+   - `src/api/aemHeadlessClient.js` AEM과의 통신에 사용되는 AEM Headless 클라이언트를 초기화하고 내보냅니다.
+   - `src/api/usePersistedQueries.js` 구현 [사용자 정의 React 후크](https://react.dev/docs/hooks-custom.html) AEM GraphQL의 데이터를 `Teams.js` 및 `Person.js` 구성 요소를 봅니다.
 
-1. 다음 `src/components/Teams.js` 파일에는 목록 쿼리를 사용하여 팀 및 해당 멤버 목록이 표시됩니다.
+1. 다음 `src/components/Teams.js` 파일은 목록 쿼리를 사용하여 팀 및 팀원의 목록을 표시합니다.
 1. 다음 `src/components/Person.js` 파일에는 매개 변수가 있는 단일 결과 쿼리를 사용하여 한 사람의 세부 정보가 표시됩니다.
 
 ## AEMHeadless 개체 검토
 
-를 검토합니다. `aemHeadlessClient.js` 파일 작성 방법 `AEMHeadless` AEM과 통신하는 데 사용되는 개체입니다.
+리뷰 `aemHeadlessClient.js` 파일을 만드는 방법 `AEMHeadless` AEM과 통신하는 데 사용되는 개체입니다.
 
 1. 열기 `src/api/aemHeadlessClient.js`.
 
 1. 1-40행을 검토합니다.
 
-   - 가져오기 `AEMHeadless` 선언문 [JavaScript용 AEM Headless 클라이언트](https://github.com/adobe/aem-headless-client-js), 11호선.
+   - 가져오기 `AEMHeadless` 에서 선언 [JavaScript용 AEM Headless 클라이언트](https://github.com/adobe/aem-headless-client-js), 11행
 
-   - 에 정의된 변수를 기반으로 한 권한 부여 구성 `.env.development`, 14-22행 및 화살표 함수 표현식 `setAuthorization`31-40호선입니다
+   - 에 정의된 변수를 기반으로 한 권한 부여 구성 `.env.development`, 14-22행 및 화살표 함수 표현식 `setAuthorization`, 31-40행
 
-   - 다음 `serviceUrl` 포함된 항목에 대한 설정 [개발 프록시](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app#proxy-api-requests) 구성, 27행
+   - 다음 `serviceUrl` 포함된 항목에 대한 설정 [개발 프록시](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app#proxy-api-requests) 27행입니다
 
-1. 줄을 42-49로 인스턴스화하므로 가장 중요합니다 `AEMHeadless` React 앱 전체에서 사용하기 위해 클라이언트를 내보내고 내보냅니다.
+1. 줄 42-49는 를 인스턴스화할 때 가장 중요합니다. `AEMHeadless` React 앱 전체에서 사용하도록 클라이언트 및 내보냅니다.
 
 ```javascript
 // Initialize the AEM Headless Client and export it for other files to use
@@ -141,13 +141,13 @@ const aemHeadlessClient = new AEMHeadless({
 export default aemHeadlessClient;
 ```
 
-## 구현을 통해 AEM GraphQL 지속적인 쿼리를 실행합니다
+## AEM GraphQL 지속 쿼리를 실행하도록 구현
 
-원본을 구현하려면 `fetchPersistedQuery(..)` 함수 를 사용하여 AEM GraphQL 지속된 쿼리를 실행하면 `usePersistedQueries.js` 파일. 다음 `fetchPersistedQuery(..)` 함수는 `aemHeadlessClient` 개체 `runPersistedQuery()` 비동기적으로 쿼리를 실행하는 promise 기반 동작입니다.
+원본을 구현하려면 `fetchPersistedQuery(..)` AEM GraphQL 지속 쿼리를 실행하는 함수에서 `usePersistedQueries.js` 파일. 다음 `fetchPersistedQuery(..)` 함수에서 `aemHeadlessClient` 개체 `runPersistedQuery()` 함수를 사용하여 쿼리를 비동기적으로 실행할 수 있습니다.
 
-나중에 사용자 지정 반응 `useEffect` 후크는 이 함수를 호출하여 AEM에서 특정 데이터를 검색합니다.
+나중에 사용자 지정 React `useEffect` 후크는 AEM에서 특정 데이터를 검색하기 위해 이 함수를 호출합니다.
 
-1. in `src/api/usePersistedQueries.js` **업데이트** `fetchPersistedQuery(..)`아래의 코드를 사용하여 35번을 누르십시오.
+1. 위치 `src/api/usePersistedQueries.js` **업데이트** `fetchPersistedQuery(..)`로 시작하는 두 번째 행인 35행 아래에 코드가 표시됩니다.
 
 ```javascript
 /**
@@ -185,10 +185,10 @@ async function fetchPersistedQuery(persistedQueryName, queryParameters) {
 
 ## 팀 기능 구현
 
-다음으로, React 앱의 기본 보기에 팀 및 해당 구성원을 표시하는 기능을 빌드합니다. 이 기능을 사용하려면 다음 요구 사항을 충족해야 합니다.
+그런 다음 React 앱의 기본 보기에서 팀과 팀원을 표시하는 기능을 빌드합니다. 이 기능을 사용하려면 다음 조건을 충족해야 합니다.
 
-- 새로운 [사용자 정의 React 사용 효과 후크](https://react.dev/docs/hooks-custom.html) in `src/api/usePersistedQueries.js` 이 호출되면 `my-project/all-teams` 지속형 쿼리, AEM의 팀 컨텐츠 조각 목록을 반환합니다.
-- React 구성 요소 `src/components/Teams.js` 이 호출되면 새로운 사용자 지정 React가 호출됩니다 `useEffect` 팀 데이터를 후크하고 렌더링합니다.
+- 새 항목 [사용자 지정 React useEffect 후크](https://react.dev/docs/hooks-custom.html) 위치: `src/api/usePersistedQueries.js` 를 호출하는 경우 `my-project/all-teams` 지속 쿼리, AEM에서 팀 콘텐츠 조각 목록을 반환합니다.
+- 의 React 구성 요소 `src/components/Teams.js` 새로운 사용자 지정 React를 호출합니다. `useEffect` 를 후크하여 팀 데이터를 렌더링합니다.
 
 완료되면 앱의 기본 보기가 AEM의 팀 데이터로 채워집니다.
 
@@ -200,7 +200,7 @@ async function fetchPersistedQuery(persistedQueryName, queryParameters) {
 
 1. 함수 찾기 `useAllTeams()`
 
-1. 을(를) 만들려면 `useEffect` 지속된 쿼리를 호출하는 후크 `my-project/all-teams` via `fetchPersistedQuery(..)`를 눌러 다음 코드를 추가합니다. 또한 후크는 AEM GraphQL 응답에서 관련 데이터만 반환합니다 `data?.teamList?.items`: React 보기 구성 요소가 상위 JSON 구조와 일치하지 않도록 합니다.
+1. 을(를) 만들려면 `useEffect` 지속 쿼리를 호출하는 후크 `my-project/all-teams` 경유 `fetchPersistedQuery(..)`, 다음 코드를 추가합니다. 또한 후크는 의 AEM GraphQL 응답에서 관련 데이터만 반환합니다. `data?.teamList?.items`를 활성화하면 React 보기 구성 요소가 상위 JSON 구조를 인식하지 못합니다.
 
    ```javascript
    /**
@@ -235,7 +235,7 @@ async function fetchPersistedQuery(persistedQueryName, queryParameters) {
 
 1. 열기 `src/components/Teams.js`
 
-1. 에서 `Teams` React 구성 요소를 사용하여 AEM에서 팀 목록을 가져옵니다. `useAllTeams()` 후크.
+1. 다음에서 `Teams` React 구성 요소를 사용하여 AEM에서 팀 목록을 가져옵니다. `useAllTeams()` 후크.
 
    ```javascript
    import { useAllTeams } from "../api/usePersistedQueries";
@@ -249,7 +249,7 @@ async function fetchPersistedQuery(persistedQueryName, queryParameters) {
 
 
 
-1. 반환된 데이터를 기반으로 오류 메시지 또는 로드 표시기를 표시하여 보기 기반 데이터 유효성 검사를 수행합니다.
+1. 반환된 데이터를 기반으로 오류 메시지를 표시하거나 표시기를 로드하는 보기 기반 데이터 유효성 검사를 수행합니다.
 
    ```javascript
    function Teams() {
@@ -267,7 +267,7 @@ async function fetchPersistedQuery(persistedQueryName, queryParameters) {
    }
    ```
 
-1. 마지막으로 팀 데이터를 렌더링합니다. GraphQL 쿼리에서 반환된 각 팀은 제공된 를 사용하여 렌더링됩니다 `Team` React 하위 구성 요소.
+1. 마지막으로 팀 데이터를 렌더링합니다. GraphQL 쿼리에서 반환된 각 팀은 제공된 를 사용하여 렌더링됩니다 `Team` React 하위 구성 요소입니다.
 
    ```javascript
    import React from "react";
@@ -331,17 +331,17 @@ async function fetchPersistedQuery(persistedQueryName, queryParameters) {
    ```
 
 
-## 개인 기능 구현
+## 사용자 기능 구현
 
-사용 [팀 기능](#implement-teams-functionality) 완료: 팀 구성원 또는 사용자의 세부 정보에 표시되는 표시를 처리하는 기능을 구현하겠습니다.
+포함 [팀 기능](#implement-teams-functionality) 완료하면 팀원 또는 개인의 세부 정보에 대한 표시를 처리하는 기능을 구현해 보겠습니다.
 
-이 기능을 사용하려면 다음 요구 사항을 충족해야 합니다.
+이 기능을 사용하려면 다음 조건을 충족해야 합니다.
 
-- 새로운 [사용자 정의 React 사용 효과 후크](https://react.dev/docs/hooks-custom.html) in `src/api/usePersistedQueries.js` 이 호출되면 매개 변수가 있는 `my-project/person-by-name` 지속된 쿼리를 반환하고 단일 개인 레코드를 반환합니다.
+- 새 항목 [사용자 지정 React useEffect 후크](https://react.dev/docs/hooks-custom.html) 위치: `src/api/usePersistedQueries.js` 매개 변수가 있는 `my-project/person-by-name` 지속 쿼리이며 1인 레코드를 반환합니다.
 
-- React 구성 요소 `src/components/Person.js` 개인의 전체 이름을 쿼리 매개 변수로 사용하는 는 새로운 사용자 지정 React를 호출합니다 `useEffect` 개인 데이터를 후크하고 렌더링합니다.
+- 의 React 구성 요소 `src/components/Person.js` 개인의 전체 이름을 쿼리 매개 변수로 사용하고, 새로운 사용자 지정 React를 호출합니다. `useEffect` 후크하여 개인 데이터를 렌더링합니다.
 
-완료되면 팀 보기에서 개인 이름을 선택하면 개인 보기가 렌더링됩니다.
+완료되면 팀 보기에서 사용자 이름을 선택하면 사용자 보기가 렌더링됩니다.
 
 ![개인](./assets/graphql-and-external-app/react-app__person-view.png)
 
@@ -349,7 +349,7 @@ async function fetchPersistedQuery(persistedQueryName, queryParameters) {
 
 1. 함수 찾기 `usePersonByName(fullName)`
 
-1. 을(를) 만들려면 `useEffect` 지속된 쿼리를 호출하는 후크 `my-project/all-teams` via `fetchPersistedQuery(..)`를 눌러 다음 코드를 추가합니다. 또한 후크는 AEM GraphQL 응답에서 관련 데이터만 반환합니다 `data?.teamList?.items`: React 보기 구성 요소가 상위 JSON 구조와 일치하지 않도록 합니다.
+1. 을(를) 만들려면 `useEffect` 지속 쿼리를 호출하는 후크 `my-project/all-teams` 경유 `fetchPersistedQuery(..)`, 다음 코드를 추가합니다. 또한 후크는 의 AEM GraphQL 응답에서 관련 데이터만 반환합니다. `data?.teamList?.items`를 활성화하면 React 보기 구성 요소가 상위 JSON 구조를 인식하지 못합니다.
 
    ```javascript
    /**
@@ -392,7 +392,7 @@ async function fetchPersistedQuery(persistedQueryName, queryParameters) {
    ```
 
 1. 열기 `src/components/Person.js`
-1. 에서 `Person` React 구성 요소, 구문 분석 `fullName` 매개 변수 경로 지정 및 을 사용하여 AEM에서 개인 데이터를 가져옵니다. `usePersonByName(fullName)` 후크.
+1. 다음에서 `Person` React 구성 요소, 구문 분석 `fullName` 경로 매개 변수를 사용하고 AEM에서 개인 데이터를 가져옵니다. `usePersonByName(fullName)` 후크.
 
    ```javascript
    import { useParams } from "react-router-dom";
@@ -408,7 +408,7 @@ async function fetchPersistedQuery(persistedQueryName, queryParameters) {
    }
    ```
 
-1. 반환된 데이터를 기반으로 오류 메시지 또는 로드 표시기를 표시하여 보기 기반 데이터 유효성 검사를 수행합니다.
+1. 반환된 데이터를 기반으로 오류 메시지를 표시하거나 표시기를 로드하는 보기 기반 데이터 유효성 검사를 수행합니다.
 
    ```javascript
    function Person() {
@@ -484,19 +484,19 @@ async function fetchPersistedQuery(persistedQueryName, queryParameters) {
    export default Person;
    ```
 
-## 앱 시도
+## 앱 사용
 
-앱 검토 [http://localhost:3000/](http://localhost:3000/) 을(를) 클릭합니다. _멤버_ 링크. AEM에서 컨텐츠 조각을 추가하여 팀 알파에 팀 및/또는 구성원을 더 추가할 수도 있습니다.
+앱 검토 [http://localhost:3000/](http://localhost:3000/) 및 클릭 _구성원_ 링크. 또한 AEM에서 콘텐츠 조각을 추가하여 팀 알파에 더 많은 팀 및/또는 구성원을 추가할 수 있습니다.
 
-## 후드
+## 언더더 후드
 
-브라우저의 **개발자 도구** > **네트워크** 및 _필터_ 대상 `all-teams` 요청. GraphQL API 요청 알림 `/graphql/execute.json/my-project/all-teams` 에 대해 `http://localhost:3000` 및 **NOT** 의 값에 대해 `REACT_APP_HOST_URI` (예: <https://publish-p123-e456.adobeaemcloud.com>). 요청은 React 앱의 도메인에 대해 수행되므로 [프록시 설정](https://create-react-app.dev/docs/proxying-api-requests-in-development/#configuring-the-proxy-manually) 를 사용하여 활성화됨 `http-proxy-middleware` 모듈.
+브라우저 열기 **개발자 도구** > **네트워크** 및 _필터_ 대상 `all-teams` 요청. GraphQL API 요청 알림 `/graphql/execute.json/my-project/all-teams` 다음에 대해 만들어짐: `http://localhost:3000` 및 **아님** 의 값에 대하여 `REACT_APP_HOST_URI` (예: <https://publish-p123-e456.adobeaemcloud.com>). 다음과 같은 이유로 React 앱의 도메인에 대해 요청이 수행됩니다. [프록시 설정](https://create-react-app.dev/docs/proxying-api-requests-in-development/#configuring-the-proxy-manually) 은(는) 을 사용하여 활성화되었습니다. `http-proxy-middleware` 모듈.
 
 
 ![프록시를 통한 GraphQL API 요청](assets/graphql-and-external-app/graphql-api-request-via-proxy.png)
 
 
-기본 사항 검토 `../setupProxy.js` 파일 및 내 `../proxy/setupProxy.auth.**.js` 파일 알림 방법 `/content` 및 `/graphql` 경로가 프록시되고 정적 자산이 아님을 나타냅니다.
+메인 리뷰 `../setupProxy.js` 파일 및 다음 범위 내 `../proxy/setupProxy.auth.**.js` 파일이 방법을 나타냄 `/content` 및 `/graphql` 경로가 프록시화되고 정적 자산이 아님을 나타냅니다.
 
 ```javascript
 module.exports = function(app) {
@@ -505,8 +505,8 @@ module.exports = function(app) {
   ...
 ```
 
-로컬 프록시를 사용하는 것은 프로덕션 배포에 적합한 옵션이 아니므로 자세한 내용은 _프로덕션 배포_ 섹션을 참조하십시오.
+로컬 프록시 사용은 프로덕션 배포에 적합한 옵션이 아니며 자세한 내용은 다음에서 확인할 수 있습니다. _프로덕션 배포_ 섹션.
 
 ## 축하합니다!{#congratulations}
 
-축하합니다! 기본 자습서의 일부로 AEM GraphQL API의 데이터를 사용하고 표시할 React 앱을 성공적으로 만들었습니다!
+축하합니다! 기본 자습서의 일부로 AEM GraphQL API의 데이터를 사용하고 표시할 React 앱을 만들었습니다!

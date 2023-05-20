@@ -1,6 +1,6 @@
 ---
-title: AEM 워크플로우를 트리거하는 적응형 양식 구성
-description: AEM 워크플로우를 트리거하기 위한 적응형 양식 구성의 다양한 옵션 이해
+title: AEM 워크플로우를 트리거하기 위한 적응형 양식 구성
+description: AEM Workflow를 트리거하는 적응형 양식 구성의 다양한 옵션 이해
 feature: Workflow
 topics: integrations
 audience: developer
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ---
 
-# AEM 워크플로우를 트리거하는 적응형 양식 구성
+# AEM 워크플로우를 트리거하기 위한 적응형 양식 구성
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/28316?quality=12&learn=on)

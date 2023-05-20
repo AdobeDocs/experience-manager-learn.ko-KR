@@ -1,6 +1,6 @@
 ---
-title: AEM의 성능 관련 문제를 해결하는 방법
-description: 성과 관련 문제를 조사하는 절차
+title: AEM에서 성능 관련 문제를 해결하는 방법
+description: 성능과 관련된 문제를 조사하는 단계
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# AEM의 성능 관련 문제를 해결하는 방법
+# AEM에서 성능 관련 문제를 해결하는 방법
 
-*이 비디오에서는 AEM의 성능 관련 문제를 해결하는 단계를 안내합니다.*
+*이 비디오는 AEM의 성능 관련 문제를 해결하는 단계를 안내합니다.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335472?quality=12&learn=on)

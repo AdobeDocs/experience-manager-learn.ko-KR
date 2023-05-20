@@ -1,6 +1,6 @@
 ---
 title: Launch 속성에 Target 확장 프로그램 추가
-description: Adobe Experience Platform Launch 속성에 Adobe Target 확장을 추가하는 방법을 알아봅니다.
+description: Adobe Target 확장을 Adobe Experience Platform Launch 속성에 추가하는 방법을 알아봅니다.
 topics: integrations, administration, development
 audience: administrator, developer
 doc-type: technical video
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 # Launch 속성에 Target 확장 프로그램 추가 {#adobe-target-extension}
 
-이 비디오를 계속 사용하려면 이미 [AEM과 통합된 Experience Platform Launch](../experience-platform/data-collection/tags/overview.md).
+이 비디오와 함께 팔로우하려면 다음을 이미 수행해야 합니다. [AEM과 통합된 Experience Platform Launch](../experience-platform/data-collection/tags/overview.md).
 
 Experience Platform Launch을 사용하여 AEM 웹 사이트에 Adobe Target을 활성화하는 방법을 알아봅니다.
 
@@ -33,6 +33,6 @@ Experience Platform Launch을 사용하여 AEM 웹 사이트에 Adobe Target을 
 
 ## 지원 링크
 
-+ [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
++ [Adobe Experience Cloud 디버거 - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
 + [Adobe Experience Cloud Debugger - Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
 + [Adobe Experience Platform Debugger 소개](https://experienceleague.adobe.com/docs/debugger-learn/tutorials/experience-platform-debugger/introduction-to-the-experience-platform-debugger.html)

@@ -22,7 +22,7 @@ ht-degree: 42%
 
 >[!VIDEO](https://video.tv.adobe.com/v/32192?quality=12&learn=on)
 
-이 비디오에서는 다음 페이지 속성 요소를 다룹니다.
+이 비디오에서는 다음 페이지 속성 요소에 대해 설명합니다.
 
 * 기본
    * 제목 및 태그

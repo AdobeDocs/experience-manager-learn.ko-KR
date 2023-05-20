@@ -1,6 +1,6 @@
 ---
-title: ObjectClassDefinition 개체로 OSGi 구성
-description: OSGi 서비스에서 ObjectClassDefinitions를 만들고 OSGi 구성 표현으로 지정하는 방법을 알아봅니다
+title: ObjectClassDefinition 개체로서의 OSGi 구성
+description: OSGi 서비스에서 ObjectClassDefinitions를 OSGi 구성 표현으로 만들고 지정하는 방법을 알아봅니다
 role: Developer
 level: Beginner
 topic: Development
@@ -15,18 +15,18 @@ ht-degree: 0%
 
 ---
 
-# ObjectClassDefinition 개체로 OSGi 구성
+# ObjectClassDefinition 개체로서의 OSGi 구성
 
-OSGi 서비스에서 ObjectClassDefinitions를 만들고 OSGi 구성 표현으로 지정하는 방법을 알아봅니다.
+OSGi 서비스에서 ObjectClassDefinitions를 OSGi 구성 표현으로 만들고 지정하는 방법을 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335730?quality=12&learn=on)
 
 ## 리소스
 
-+ [@Designate JavaDocs](https://javadoc.io/static/com.adobe.aem/aem-sdk-api/2021.7.5658.20210723T140305Z-210600/org/osgi/service/metatype/annotations/Designate.html)
-+ [@ObjectClassDefinition JavaDocs](https://javadoc.io/static/com.adobe.aem/aem-sdk-api/2021.7.5658.20210723T140305Z-210600/org/osgi/service/metatype/annotations/ObjectClassDefinition.html)
-+ [@AttributeDefinition JavaDocs](https://javadoc.io/static/com.adobe.aem/aem-sdk-api/2021.7.5658.20210723T140305Z-210600/org/osgi/service/metatype/annotations/AttributeDefinition.html)
-+ [@Activate JavaDocs](https://javadoc.io/static/com.adobe.aem/aem-sdk-api/2021.7.5658.20210723T140305Z-210600/org/osgi/service/component/annotations/Activate.html)
++ [@Designate JavaDoc](https://javadoc.io/static/com.adobe.aem/aem-sdk-api/2021.7.5658.20210723T140305Z-210600/org/osgi/service/metatype/annotations/Designate.html)
++ [@ObjectClassDefinition JavaDoc](https://javadoc.io/static/com.adobe.aem/aem-sdk-api/2021.7.5658.20210723T140305Z-210600/org/osgi/service/metatype/annotations/ObjectClassDefinition.html)
++ [@AttributeDefinition JavaDoc](https://javadoc.io/static/com.adobe.aem/aem-sdk-api/2021.7.5658.20210723T140305Z-210600/org/osgi/service/metatype/annotations/AttributeDefinition.html)
++ [@Activate JavaDoc](https://javadoc.io/static/com.adobe.aem/aem-sdk-api/2021.7.5658.20210723T140305Z-210600/org/osgi/service/component/annotations/Activate.html)
 
 ## 코드
 

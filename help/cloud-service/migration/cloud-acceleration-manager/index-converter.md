@@ -1,6 +1,6 @@
 ---
 title: 인덱스 변환기
-description: Index Converter에서 기존 AEM 인덱스 정의를 AEM as a Cloud Service 호환으로 자동 변환하는 방법을 알아봅니다.
+description: 인덱스 변환기 가 어떻게 기존 AEM 인덱스 정의를 AEMas a Cloud Service 와 호환되도록 자동으로 변환하는지에 대해 알아봅니다.
 version: Cloud Service
 feature: Migration
 topic: Migration, Upgrade
@@ -18,6 +18,6 @@ ht-degree: 9%
 
 # 인덱스 변환기
 
-Index Converter에서 기존 AEM 인덱스 정의를 AEM as a Cloud Service 호환으로 자동 변환하는 방법을 알아봅니다.
+인덱스 변환기 가 어떻게 기존 AEM 인덱스 정의를 AEMas a Cloud Service 와 호환되도록 자동으로 변환하는지에 대해 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336696?quality=12&learn=on)

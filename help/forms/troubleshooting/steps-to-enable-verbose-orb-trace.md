@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # 자세한 ORB 추적을 활성화하는 단계
 
-*이 비디오에서는 자세한 ORB 추적을 활성화하는 단계를 안내합니다.*
+*이 비디오는 자세한 ORB 추적을 활성화하는 단계를 설명합니다.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335526?quality=12&learn=on)

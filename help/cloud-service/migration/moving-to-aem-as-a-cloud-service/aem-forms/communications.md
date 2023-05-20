@@ -1,6 +1,6 @@
 ---
-title: AEM Forms as a Cloud Service 통신
-description: AEM Forms이 통신 사용 사례를 as a Cloud Service으로 지원하는 방법을 알아봅니다.
+title: AEM Forms as a Cloud Service Communications
+description: AEM Forms이 커뮤니케이션 사용 사례를 as a Cloud Service으로 지원하는 방법에 대해 알아봅니다.
 version: Cloud Service
 feature: Output Service
 topic: Migration, Upgrade
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# 통신(출력 서비스)
+# 커뮤니케이션(출력 서비스)
 
-AEM Forms이 통신 사용 사례를 as a Cloud Service으로 지원하는 방법을 알아봅니다.
+AEM Forms이 통신 사용 사례를 as a Cloud Service으로 지원하는 방법에 대해 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336967?quality=12&learn=on)

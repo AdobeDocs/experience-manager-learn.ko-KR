@@ -1,6 +1,6 @@
 ---
 title: 렌디션
-description: AEM Assets의 표현물과 미리 보기를 위한 방법에 대해 알아봅니다.
+description: AEM Assets의 렌디션과 이러한 렌디션을 미리 보는 방법에 대해 알아봅니다.
 feature: Renditions
 role: User
 level: Beginner
@@ -19,6 +19,6 @@ ht-degree: 7%
 
 # 렌디션
 
-AEM Assets의 표현물과 미리 보기를 위한 방법에 대해 알아봅니다.
+AEM Assets의 렌디션과 이러한 렌디션을 미리 보는 방법에 대해 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32047?quality=12&learn=on)

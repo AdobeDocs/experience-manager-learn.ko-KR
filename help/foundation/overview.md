@@ -1,6 +1,6 @@
 ---
 title: AEM Foundation 비디오 및 자습서
-description: Adobe Experience Manager Foundation에 대한 지원을 받으려면 비디오 및 자습서를 시청하십시오.
+description: Adobe Experience Manager Foundation에 대한 지원을 받으려면 비디오 및 튜토리얼을 시청하십시오.
 role: Leader, Architect, Developer, Admin, User
 level: Beginner
 exl-id: af0fe7fb-873b-4d2d-a5a3-59a5a3da9b96
@@ -21,10 +21,10 @@ Adobe Experience Manager은 AEM Sites, Assets 및 Forms 사용자가 사용할 �
 
 * **[워크플로우 AEM 사용(비디오)](./workflow/use-workflow.md)**
 
-   *AEM Workflow는 AEM에서 컨텐츠를 공동 작업, 관리 및 처리하는 방법을 제공합니다.*
+   *AEM Workflow는 AEM에서 콘텐츠를 공동 작업, 관리 및 처리하는 방법을 제공합니다.*
 
 * **[AEM용 Cloud Manager 이해(비디오)](./cloud-manager/understand-cloud-manager-for-aem.md)**\
-   *AEM용 Cloud Manager를 사용하면 AEM 환경을 손쉽게 관리, 검사 및 셀프 서비스를 수행할 수 있습니다.*
+   *AEM용 Cloud Manager를 사용하면 AEM 환경을 손쉽게 관리, 검사 및 셀프서비스할 수 있습니다.*
 
 * **[Cloud Manager CI/CD 파이프라인 사용(비디오)](./cloud-manager/use-the-cicd-pipeline-in-cloud-manager-for-aem.md)**\
    *Cloud Manager의 CI/CD 파이프라인을 사용하여 안전하고 일관된 배포를 보장하는 방법을 알아봅니다.*
@@ -54,20 +54,20 @@ Adobe Experience Manager은 AEM Sites, Assets 및 Forms 사용자가 사용할 �
     </a>
     </div>
     <p>
-    <em>AEM용 Cloud Manager는 AEM 환경을 손쉽게 관리, 검사 및 셀프 서비스를 제공할 수 있는 간단하면서도 강력한 솔루션을 제공합니다.</em>
+    <em>AEM용 Cloud Manager는 AEM 환경을 쉽게 관리, 검사 및 셀프서비스할 수 있는 간단하면서도 강력한 솔루션을 제공합니다.</em>
     <p>
   </td>
    <td>
     <a href="./development/set-up-sling-dynamic-include.md">
-    <img alt="Sling 동적 포함(SDI) 설정" src="./development/assets/set-up-sling-dynamic-include/thumbnail.png" />
+    <img alt="Sling Dynamic Include(SDI) 설정" src="./development/assets/set-up-sling-dynamic-include/thumbnail.png" />
     </a>
      <div>
      <a href="./development/set-up-sling-dynamic-include.md">
-    <strong>Sling 동적 포함(SDI) 설정</strong>
+    <strong>Sling Dynamic Include(SDI) 설정</strong>
     </a>
     </div>
     <p>
-    <em>SLING 동적 포함(SDI)을 설정하고 동적 AEM 구성 요소가 항상 새로운 콘텐츠를 제공하는 방법을 살펴봅니다.</em>
+    <em>Sling SDI(Dynamic Include)를 설정하고 다이내믹 AEM 구성 요소가 항상 새로운 콘텐츠를 제공하도록 하는 방법을 살펴보십시오.</em>
     <p>
   </td>
   <td>
@@ -80,7 +80,7 @@ Adobe Experience Manager은 AEM Sites, Assets 및 Forms 사용자가 사용할 �
     </a>
     </div>
     <p>
-    <em>최신 버전의 AEM으로 업그레이드를 고려할 때 이해할 수 있는 주요 기능에 대한 높은 수준의 분류입니다.</em>
+    <em>최신 버전의 AEM으로 업그레이드할 때 이해할 주요 기능에 대한 높은 수준의 분류입니다.</em>
     </p>
   </td>
 </tr>

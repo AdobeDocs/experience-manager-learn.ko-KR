@@ -1,6 +1,6 @@
 ---
 title: 사람 패널에 구성 요소 추가
-description: 배우자 세부 사항 조각을 추가하여 사람 패널을 구성합니다. 지원자의 혼인 상태가 결혼한 경우 배우자 상세내역 조각을 표시하기 위해 규칙이 생성됩니다.
+description: 배우자 세부 정보 조각을 추가하여 사람 패널을 구성합니다. 지원자의 결혼 상태가 기혼인 경우 배우자 상세내역 조각을 표시하도록 규칙이 생성됩니다.
 feature: Adaptive Forms
 version: 6.4,6.5
 kt: 4210
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 # 사람 패널에 구성 요소 추가 {#adding-components-to-people-panel}
 
-배우자 세부 사항 조각을 추가하여 사람 패널을 구성합니다. 지원자의 혼인 상태가 결혼한 경우 배우자 상세내역 조각을 표시하기 위해 규칙이 생성됩니다.
+배우자 세부 정보 조각을 추가하여 사람 패널을 구성합니다. 지원자의 결혼 상태가 기혼인 경우 배우자 상세내역 조각을 표시하도록 규칙이 생성됩니다.
 
 **AEM Forms 6.3 및 6.4에서 사용자 패널 구성**
 
@@ -28,10 +28,10 @@ ht-degree: 2%
 
 >[!VIDEO](https://video.tv.adobe.com/v/28385?quality=12&learn=on)
 
-**배우자 상세내역 규칙**
+**배우자 세부 정보 규칙**
 
 >[!VIDEO](https://video.tv.adobe.com/v/22195?quality=12&learn=on)
 
 ## 다음 단계
 
-[[수입] 패널에 테이블 및 기타 구성 요소를 추가합니다](./adding-table-to-income-panel.md)
+[소득 패널에 테이블 및 기타 구성 요소 추가](./adding-table-to-income-panel.md)

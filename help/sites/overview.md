@@ -1,44 +1,44 @@
 ---
 title: AEM Sites 비디오 및 자습서
-description: 비디오 및 자습서에서 Experience Manager Sites에 대해 알아봅니다. Adobe의 직원들이 AEM Sites의 새로운 기능과 추천 사항을 소개합니다.
+description: 비디오 및 튜토리얼에서 Experience Manager Sites에 대해 알아보십시오. 직원 추천 및 AEM Sites의 새로운 기능을 살펴보십시오.
 sub-product: Experience Manager Sites
 topic: Content Management
 exl-id: cde4ce7f-0afe-4632-8c1c-354586f296d5
 source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
 workflow-type: tm+mt
 source-wordcount: '345'
-ht-degree: 14%
+ht-degree: 13%
 
 ---
 
 # AEM Sites 비디오 및 자습서 {#overview}
 
-Adobe Experience Manager (AEM) Sites는 선도적인 경험 관리 플랫폼입니다. 이 사용자 안내서에는 AEM Sites의 다양한 기능과 성능에 대한 비디오 및 자습서가 포함되어 있습니다.
+Adobe Experience Manager(AEM) Sites는 선도적인 경험 관리 플랫폼입니다. 이 사용 안내서에는 AEM Sites의 다양한 기능과 성능에 대한 비디오 및 튜토리얼이 포함되어 있습니다.
 
 
 <div id="whats-new-section">
 
 ## 새로운 기능
 
-* **[AEM Sites에서 론치 사용(비디오)](./page-authoring/launches.md)**
+* **[AEM Sites에서 Launches 사용(비디오)](./page-authoring/launches.md)**
 
-   *AEM Sites의 출시 및 향후 릴리스를 위해 웹 사이트 컨텐츠를 준비하는 데 사용할 수 있는 방법에 대해 알아봅니다.*
+   *AEM Sites의 론치와 이를 사용하여 향후 릴리스를 위한 웹 사이트 콘텐츠를 준비하는 방법에 대해 알아봅니다.*
 
-* **[AEM 구성 요소를 사용하여 Adobe 클라이언트 데이터 레이어 사용자 지정(자습서)](./integrations/adobe-client-data-layer/data-layer-customize.md)**
+* **[AEM 구성 요소를 사용하여 Adobe 클라이언트 데이터 레이어 사용자 지정(튜토리얼)](./integrations/adobe-client-data-layer/data-layer-customize.md)**
 
-   *사용자 지정 AEM 구성 요소의 컨텐츠로 Adobe 클라이언트 데이터 계층을 업데이트하는 방법을 알아봅니다.*
+   *사용자 지정 AEM 구성 요소의 콘텐츠로 Adobe 클라이언트 데이터 레이어를 업데이트하는 방법을 알아봅니다.*
 
-* **[AEM Headless GraphQL 시작하기(자습서)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)**
+* **[AEM Headless GraphQL 시작하기(튜토리얼)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)**
 
-   *AEM GraphQL API를 사용하여 기본 모바일 앱에서 사용할 AEM의 컨텐츠를 노출하는 방법입니다.*
+   *AEM GraphQL API를 사용하여 기본 모바일 앱에서 사용할 AEM의 콘텐츠를 표시하는 방법입니다.*
 
 * **[컨텐츠 조각 사용(비디오 시리즈)](./content-fragments/content-fragments-feature-video-use.md)**
 
-   *컨텐츠 조각은 채널에 관계없이 재사용할 수 있는 컨텐츠 조각입니다.*
+   *콘텐츠 조각은 재사용이 가능한 채널 독립적인 콘텐츠 조각입니다.*
 
 * **[SPA 편집기 사용(비디오)](./spa-editor/spa-editor-framework-feature-video-use.md)**
 
-   *단일 페이지 애플리케이션(SPA)에 대한 AEM 편집 기능에 대해 알아봅니다.*
+   *단일 페이지 애플리케이션(SPA)을 위한 AEM 편집 기능에 대해 알아봅니다.*
 
 </div>
 
@@ -60,7 +60,7 @@ Adobe Experience Manager (AEM) Sites는 선도적인 경험 관리 플랫폼입�
       <img alt="AEM Sites 시작하기 - WKND 튜토리얼" src="./assets/aem-wknd-tutorial.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html">
+      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR">
     <strong>AEM Sites 시작하기</strong>
     </a>
     </div>
@@ -70,15 +70,15 @@ Adobe Experience Manager (AEM) Sites는 선도적인 경험 관리 플랫폼입�
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html">
-    <img alt="AEM 헤드리스 시작하기" src="./assets/aem-headless-tutorial.png" />
+    <img alt="AEM Headless 시작하기" src="./assets/aem-headless-tutorial.png" />
     </a>
     <div>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html">
-    <strong>AEM 헤드리스 시작하기</strong>
+    <strong>AEM Headless 시작하기</strong>
     </a>
     </div>
     <p>
-    <em>AEM을 헤드리스 CMS로 사용하려는 개발자를 위한 시작 안내서입니다.</em>
+    <em>AEM as headless CMS를 사용하려는 개발자를 위한 시작 안내서입니다.</em>
     </p>
   </td>
   <td>
@@ -91,7 +91,7 @@ Adobe Experience Manager (AEM) Sites는 선도적인 경험 관리 플랫폼입�
       </a>
     </div>
     <p>
-    <em>개발자가 SPA(단일 페이지 애플리케이션)을 AEM과 통합하는 시작 안내서입니다.</em>
+    <em>개발자가 단일 페이지 애플리케이션(SPA)을 AEM과 통합할 수 있는 시작 안내서입니다.</em>
     <p>
   </td>
 </tr>

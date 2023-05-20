@@ -1,5 +1,5 @@
 ---
-title: Acrobat에서 문서 보안 모듈을 사용하여 만든 정책을 적용하는 방법
+title: Acrobat에서 document security 모듈을 사용하여 생성된 정책을 적용하는 방법
 description: 문서 보안을 사용하여 문서에 정책을 적용하도록 Acrobat 구성
 type: Troubleshooting
 role: Developer
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Acrobat에서 문서 보안 모듈을 사용하여 만든 정책을 적용하는 방법
+# Acrobat에서 document security 모듈을 사용하여 생성된 정책을 적용하는 방법
 
-*이 비디오에서는 Acrobat의 문서 보안 모듈을 사용하여 만든 정책을 적용하는 프로세스를 살펴봅니다.*
+*이 비디오는 Acrobat에서 document security 모듈을 사용하여 생성된 정책을 적용하는 프로세스를 안내합니다.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335486?quality=12&learn=on)

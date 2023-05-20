@@ -1,6 +1,6 @@
 ---
 title: 페이지의 Live Copy 상속 관리
-description: 페이지 수준에서 Live Copy 와 블루프린트 간 상속을 관리하는 방법을 알아봅니다
+description: 페이지 수준에서 Live Copy와 블루프린트 간 상속을 관리하는 방법을 알아봅니다
 feature: Language Copy, Multi Site Manager
 topics: localization, authoring, content-architecture
 audience: all

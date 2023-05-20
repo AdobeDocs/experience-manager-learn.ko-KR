@@ -1,7 +1,7 @@
 ---
-title: AEM Sites에서 작성 개요
+title: AEM Sites의 작성 개요
 seo-title: Overview of Authoring in AEM Sites
-description: 다음 비디오에서는 AEM 작성 환경에서 작성에 대한 기본 개념에 대한 개요를 제공합니다. 사이트 콘솔을 기본으로 사용합니다.
+description: 다음 비디오에서는 AEM 작성 환경에서의 작성에 대한 기본 개념에 대한 개요를 제공합니다. 사이트 콘솔을 기본으로 사용합니다.
 seo-description: The following video provides an overview of basic concepts of authoring in an AEM author environment. It uses the Sites console as a basis.
 feature: Page Editor, Editable Templates
 topics: authoring, publishing
@@ -24,7 +24,7 @@ ht-degree: 30%
 
 # 작성 개요 {#authoring-overview}
 
-다음 비디오에서는 AEM Sites용 AEM 작성 환경에서 작성에 대한 기본 개념에 대한 개요를 제공합니다.
+다음 비디오에서는 AEM Sites용 AEM 작성 환경에서 작성의 기본 개념에 대한 개요를 제공합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/33594?quality=12&learn=on)
 

@@ -1,6 +1,6 @@
 ---
 title: AEM Sites에서 론치를 사용하는 방법
-description: AEM Sites의 론치는 향후 릴리스를 위해 컨텐츠를 작성, 작성 및 검토하는 방법을 제공합니다.
+description: AEM Sites에서의 론치는 향후 릴리스를 위한 콘텐츠를 만들고, 작성하고, 검토하는 방법을 제공합니다.
 topic: Content Management
 feature: Launches
 level: Intermediate, Experienced
@@ -18,6 +18,6 @@ ht-degree: 1%
 
 # 론치
 
-AEM Sites의 론치는 향후 릴리스를 위해 웹 사이트 컨텐츠를 작성, 작성 및 검토하는 방법을 제공합니다. 론치를 만드는 동안 프로덕션 웹 사이트는 일반적으로 발전하고 날로 변경될 수 있습니다.
+AEM Sites에서의 출시는 향후 릴리스를 위해 웹 사이트 콘텐츠를 만들고, 작성하고, 검토하는 방법을 제공합니다. 출시 제작 기간 동안 프로덕션 웹 사이트는 평소와 같이 계속 발전하고 매일 바뀔 수 있습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/331285?quality=12&learn=on)

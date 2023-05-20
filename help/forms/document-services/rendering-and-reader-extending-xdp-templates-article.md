@@ -1,6 +1,6 @@
 ---
-title: 사용 권한이 있는 PDF으로 XDP 렌더링
-description: pdf에 사용 권한 적용
+title: 사용 권한이 있는 PDF에 XDP 렌더링
+description: PDF에 사용 권한 적용
 version: 6.4,6.5
 feature: Forms Service
 topic: Development
@@ -15,22 +15,22 @@ ht-degree: 2%
 
 ---
 
-# 사용 권한이 있는 PDF으로 XDP 렌더링{#rendering-xdp-into-pdf-with-usage-rights}
+# 사용 권한이 있는 PDF에 XDP 렌더링{#rendering-xdp-into-pdf-with-usage-rights}
 
-일반적인 사용 사례는 xdp를 PDF에 렌더링하고 Reader 확장을 렌더링된 PDF에 적용하는 것입니다.
+일반적인 사용 사례는 xdp를 PDF으로 렌더링하고 렌더링된 PDF에 Reader 확장을 적용하는 것입니다.
 
-예를 들어 AEM Forms의 forms 포털에서 사용자가 XDP를 클릭하면 XDP를 PDF으로 렌더링하고 리더기가 PDF을 확장할 수 있습니다.
-
-
-이 사용 사례를 수행하려면 다음을 수행해야 합니다.
-
-* Reader 확장 인증서를 &quot;fd-service&quot; 사용자에게 추가합니다. Reader 확장 자격 증명을 추가하는 단계는 다음과 같습니다 [여기](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html?lang=ko)
+예를 들어 AEM Forms의 Forms 포털에서 사용자가 XDP를 클릭하면 XDP를 PDF으로 렌더링하고 판독기에서 PDF을 확장할 수 있습니다.
 
 
-* 비디오에서 을 참조할 수도 있습니다 [확장 Reader 자격 증명 구성](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html)
+이 사용 사례를 달성하려면 다음을 수행해야 합니다.
+
+* &quot;fd-service&quot; 사용자에게 Reader 확장 인증서를 추가합니다. Reader 확장 자격 증명을 추가하는 단계가 나열됩니다 [여기](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html?lang=ko)
 
 
-* 사용 권한을 렌더링하고 적용하는 사용자 지정 OSGi 서비스를 만듭니다. 이를 수행할 코드는 다음과 같습니다
+* 의 비디오를 참조할 수도 있습니다. [Reader 확장 자격 증명 구성](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html)
+
+
+* 사용 권한을 렌더링하고 적용하는 사용자 지정 OSGi 서비스를 만듭니다. 이를 수행하기 위한 코드가 아래에 나와 있습니다
 
 ## XDP 렌더링 및 사용 권한 적용 {#render-xdp-and-apply-usage-rights}
 
@@ -38,9 +38,9 @@ ht-degree: 2%
 
 * 8-14행: 적절한 사용 권한이 설정됩니다. 이러한 사용 권한은 OSGi 구성 설정에서 가져옵니다.
 
-* 20행 : 서비스 사용자 fd-service와 연결된 resourceresolver를 사용합니다.
+* 20행 : 서비스 사용자 fd-service와 연결된 resourceresolver 사용
 
-* 24호선: DocumentAssuranceService의 secureDocument 메서드는 사용 권한을 적용하는 데 사용됩니다
+* 24행: 사용 권한을 적용하려면 DocumentAssuranceService의 secureDocument 메서드를 사용합니다.
 
 ```java
  public Document renderAndExtendXdp(String xdpPath) {
@@ -82,7 +82,7 @@ ht-degree: 2%
  }
 ```
 
-다음 스크린샷에서는 노출된 구성 속성을 보여줍니다. 대부분의 일반적인 사용 권한은 이 구성을 통해 노출됩니다.
+다음 스크린샷은 구성 속성이 노출된 것을 보여 줍니다. 대부분의 공통 사용 권한은 이 구성을 통해 노출됩니다.
 
 ![구성 속성](assets/configurationproperties.gif)
 
@@ -121,15 +121,15 @@ public @interface DocSvcConfiguration {
 }
 ```
 
-## PDF을 스트리밍할 서블릿 만들기 {#create-servlet-to-stream-the-pdf}
+## 서블릿을 만들어 PDF 스트리밍 {#create-servlet-to-stream-the-pdf}
 
-다음 단계는 Reader 확장 PDF을 사용자에게 반환할 GET 방법이 있는 서블릿을 만드는 것입니다. 이 경우 PDF을 파일 시스템에 저장하라는 메시지가 표시됩니다. 이것은 PDF이 동적 PDF으로 렌더링되고 브라우저와 함께 제공되는 pdf 뷰어가 동적 pdf를 처리하지 않기 때문입니다.
+다음 단계는 Reader 확장 PDF을 사용자에게 반환하는 GET 메소드로 서블릿을 만드는 것입니다. 이 경우 PDF을 파일 시스템에 저장하라는 메시지가 표시됩니다. 이는 PDF이 동적 PDF으로 렌더링되고 브라우저와 함께 제공되는 pdf 뷰어가 동적 pdf를 처리하지 않기 때문입니다.
 
-다음은 서블릿에 대한 코드입니다. CRX 저장소에 있는 XDP의 경로를 이 서블릿에 전달합니다.
+다음은 서블릿에 대한 코드입니다. CRX 저장소의 XDP 경로를 이 서블릿에 전달합니다.
 
 그런 다음 com.aemformssamples.documentservices.core.DocumentServices의 renderAndExtendXdp 메서드를 호출합니다.
 
-그런 다음 리더기 확장 PDF이 호출 애플리케이션으로 스트리밍됩니다
+그러면 리더 확장 PDF이 호출 애플리케이션으로 스트리밍됩니다
 
 ```java
 package com.aemformssamples.documentservices.core.servlets;
@@ -195,13 +195,13 @@ public class RenderAndReaderExtend extends SlingSafeMethodsServlet {
 }
 ```
 
-로컬 서버에서 테스트하려면 다음 단계를 수행하십시오
+로컬 서버에서 테스트하려면 다음 단계를 따르십시오
 1. [DevelopingWithServiceUser 번들 다운로드 및 설치](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 1. [AEMFormsDocumentServices 번들 다운로드 및 설치](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
 
 1. [사용자 지정 포털 템플릿 html 다운로드](assets/render-and-extend-template.zip)
-1. [패키지 관리자를 사용하여 이 문서와 관련된 자산을 AEM에 다운로드하여 가져옵니다](assets/renderandextendxdp.zip)
-   * 이 패키지에는 샘플 포털과 xdp 파일이 있습니다
+1. [패키지 관리자를 사용하여 이 문서와 관련된 자산을 AEM으로 다운로드하고 가져옵니다.](assets/renderandextendxdp.zip)
+   * 이 패키지에는 샘플 포털 및 xdp 파일이 있습니다.
 1. &quot;fd-service&quot; 사용자에게 Reader 확장 인증서 추가
-1. 브라우저를 [포털 웹 페이지](http://localhost:4502/content/AemForms/ReaderExtensionsXdp.html)
-1. 사용 권한이 적용된 pdf 파일로 xdp를 렌더링하려면 pdf 아이콘을 클릭합니다.
+1. 브라우저를 가리켜서 [포털 웹 페이지](http://localhost:4502/content/AemForms/ReaderExtensionsXdp.html)
+1. xdp를 사용 권한이 적용된 pdf 파일로 렌더링하려면 pdf 아이콘을 클릭합니다.

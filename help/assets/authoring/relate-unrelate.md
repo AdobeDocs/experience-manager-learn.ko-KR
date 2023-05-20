@@ -1,6 +1,6 @@
 ---
-title: AEM에서 자산을 연결 및 연결 해제하는 방법
-description: AEM에서 자산 간 관계를 설정하고 관리하는 방법을 알아봅니다.
+title: AEM에서 에셋의 연결 및 연결 해제 방법
+description: AEM에서 에셋 간의 관계를 설정하고 관리하는 방법에 대해 알아봅니다.
 feature: Asset Management
 role: User
 level: Beginner
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# 관계 및 관계 없음
+# 연결 및 연결 해제
 
-AEM에서 자산 간 관계를 설정하고 관리하는 방법을 알아봅니다.
+AEM에서 에셋 간의 관계를 설정하고 관리하는 방법에 대해 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/331107?quality=12&learn=on)

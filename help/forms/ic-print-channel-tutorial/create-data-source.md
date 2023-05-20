@@ -1,7 +1,7 @@
 ---
 title: AEM Forms에서 DataSource 구성 만들기
 seo-title: Creating DataSource Configuration in AEM Forms
-description: 첫 번째 대화형 통신 문서를 만들기 위한 여러 단계의 자습서의 2부분입니다. 이 부분에서는 REST 지원 데이터 소스를 만듭니다.  다음 비디오는 데이터 소스를 만드는 단계를 안내합니다.
+description: 첫 번째 대화형 통신 문서를 만들기 위한 2단계 튜토리얼의 일부입니다. 이 부분에서는 REST 지원 데이터 소스를 만듭니다.  다음 비디오는 데이터 소스를 만드는 단계를 안내합니다.
 seo-description: This is part 2 of multistep tutorial for creating your first interactive communications document. In this part, we will create a REST backed data source.  The following video walks thru the steps to create the data source.
 uuid: b9d5c220-3e86-4e7d-8ea0-a7f604dde925
 feature: Interactive Communication
@@ -30,7 +30,7 @@ ht-degree: 1%
 
 >[!VIDEO](https://video.tv.adobe.com/v/27765?quality=12&learn=on)
 
-이 자습서와 관련된 자산의 일부로 제공된 swagger 파일을 사용하십시오. 자산은에서 사용할 수 있습니다. [소개](introduction.md) 참조하십시오.
+제공된 swagger 파일을 이 자습서와 관련된 에셋의 일부로 사용하십시오. 에셋은에서 사용할 수 있습니다. [소개](introduction.md) 을 참조하십시오.
 
 ## 다음 단계
 

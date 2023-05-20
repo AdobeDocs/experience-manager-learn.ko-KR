@@ -1,6 +1,6 @@
 ---
 title: AEM Headless 배포
-description: AEM Headless 앱에 대한 다양한 배포 고려 사항에 대해 알아봅니다.
+description: AEM Headless 앱의 다양한 배포 고려 사항에 대해 알아봅니다.
 version: Cloud Service
 feature: GraphQL API
 topic: Headless, Content Management
@@ -9,33 +9,33 @@ level: Intermediate
 kt: 10794
 thumbnail: kt-10794.jpg
 last-substantial-update: 2022-08-26T00:00:00Z
-source-git-commit: 1ecd3c761ea7c79036b263ff8528a6cd01af0e76
+exl-id: 6de58ca0-9444-4272-9487-15a9e3c89231
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 0%
 
 ---
 
-
 # AEM Headless 배포
 
-AEM Headless 클라이언트 배포는 많은 양식을 사용합니다. AEM에서 호스팅하는 SPA, 외부 SPA, 웹 사이트, 모바일 앱 또는 심지어 서버 간 프로세스까지도 수행할 수 있습니다.
+AEM Headless 클라이언트 배포에는 AEM 호스팅 SPA, 외부 SPA, 웹 사이트, 모바일 앱 또는 서버 간 프로세스와 같은 많은 양식이 사용됩니다.
 
-AEM Headless 배포는 클라이언트와 배포 방법에 따라 다른 고려 사항이 있습니다.
+AEM Headless 배포는 클라이언트와 배포 방법에 따라 고려 사항이 다릅니다.
 
 ## AEM 서비스 아키텍처
 
-배포 고려 사항을 살펴보기 전에 AEM 논리 아키텍처와 AEM as a Cloud Service 서비스 계층의 분리 및 역할을 이해하는 것이 중요합니다. AEM as a Cloud Service 은 두 개의 논리 서비스로 구성됩니다.
+배포 고려 사항을 살펴보기 전에 AEM 논리 아키텍처와 AEMas a Cloud Service 의 서비스 계층의 분리 및 역할을 이해해야 합니다. AEM as a Cloud Service은 두 가지 논리 서비스로 구성됩니다.
 
-+ __AEM 작성자__ 는 팀이 컨텐츠 조각(및 기타 자산)을 만들고, 공동 작업하고, 게시하는 서비스입니다.
-+ __AEM 게시__ 게시된 컨텐츠 조각(및 기타 자산)이 일반 소비를 위해 복제되는 서비스입니다.
-+ __AEM 미리 보기__ 은 동작에서 AEM Publish를 모방하지만 미리 보기 또는 검토 목적으로 게시된 컨텐츠가 있는 서비스입니다. AEM 미리 보기는 컨텐츠를 일반적으로 전달하는 것이 아니라 내부 대상을 위한 것입니다. 원하는 워크플로우를 기반으로 AEM 미리 보기 사용은 선택 사항입니다.
++ __AEM 작성자__ 는 팀에서 콘텐츠 조각(및 기타 에셋)을 만들고, 공동 작업하고, 게시하는 서비스입니다.
++ __AEM 게시__ 은 게시된 콘텐츠 조각(및 기타 에셋)이 일반 소비를 위해 복제되는 서비스입니다.
++ __AEM 미리 보기__ 은 AEM 게시 동작을 모방하지만 미리보기 또는 검토 목적으로 게시된 콘텐츠가 있는 서비스입니다. AEM 미리 보기는 내부 대상자를 위한 것이며 콘텐츠의 일반 전달을 위한 것이 아닙니다. 원하는 워크플로에 따라 AEM 미리보기 는 선택 사항입니다.
 
 ![AEM 서비스 아키텍처](./assets/overview/aem-service-architecture.png)
 
-일반적인 AEM as a Cloud Service 헤드리스 배포 아키텍처_
+일반적인 AEM as a Cloud Service Headless 배포 아키텍처_
 
-프로덕션 용량으로 작동하는 AEM Headless 클라이언트는 일반적으로 승인된 게시된 컨텐츠를 포함하는 AEM Publish와 상호 작용합니다. AEM 작성자와 상호 작용하는 클라이언트는 기본적으로 안전하므로 모든 요청에 대한 인증이 필요하며 진행 중인 작업 또는 승인되지 않은 컨텐츠를 포함할 수도 있으므로 특별한 주의를 기울여야 합니다.
+프로덕션 용량으로 작동하는 AEM Headless 클라이언트는 일반적으로 승인된 게시된 콘텐츠가 포함된 AEM 게시와 상호 작용합니다. AEM Author는 기본적으로 안전하며 모든 요청에 대한 승인이 필요하며 진행 중인 작업 또는 승인되지 않은 콘텐츠도 포함할 수 있으므로 AEM Author와 상호 작용하는 클라이언트는 특별히 주의해야 합니다.
 
 ## 헤드리스 클라이언트 배포
 
@@ -74,7 +74,7 @@ AEM Headless 배포는 클라이언트와 배포 방법에 따라 다른 고려 
        <div class="card-content is-padded-small">
            <div class="content">
                <p class="headline is-size-6 has-text-weight-bold"><a href="./web-component.md" title="웹 구성 요소/JS">웹 구성 요소/JS</a></p>
-               <p class="is-size-6">웹 구성 요소 및 브라우저 기반 JavaScript 헤드리스 소비자에 대한 배포 고려 사항에 대해 알아봅니다.</p>
+               <p class="is-size-6">웹 구성 요소 및 브라우저 기반 JavaScript Headless 소비자에 대한 배포 고려 사항에 대해 알아봅니다.</p>
                <a href="./web-component.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">학습</span>
                </a>
@@ -116,7 +116,7 @@ AEM Headless 배포는 클라이언트와 배포 방법에 따라 다른 고려 
        <div class="card-content is-padded-small">
            <div class="content">
                <p class="headline is-size-6 has-text-weight-bold"><a href="./server-to-server.md" title="서버 간 앱">서버 간 앱</a></p>
-               <p class="is-size-6">서버 간 앱의 배포 고려 사항에 대해 알아봅니다</p>
+               <p class="is-size-6">서버 간 앱에 대한 배포 고려 사항에 대해 알아봅니다</p>
                <a href="./server-to-server.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">학습</span>
                </a>

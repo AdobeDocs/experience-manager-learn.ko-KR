@@ -1,5 +1,5 @@
 ---
-title: AEM Forms에서 성능 로깅을 사용하여 Forms 및 출력 서비스와 관련된 문제를 디버깅하는 방법
+title: AEM Forms에서 성능 로깅을 활성화하여 Forms 및 출력 서비스와 관련된 문제를 디버깅하는 방법
 description: 성능 로깅을 사용하여 Forms 또는 출력 서비스와 관련된 문제를 디버깅하는 단계
 type: Troubleshooting
 role: Admin
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# AEM Forms에서 성능 로깅을 사용하여 Forms 및 출력 서비스와 관련된 문제를 디버깅하는 방법
+# AEM Forms에서 성능 로깅을 활성화하여 Forms 및 출력 서비스와 관련된 문제를 디버깅하는 방법
 
-*이 비디오에서는 AEM Forms에서 성능 로깅을 사용하여 Forms 및 출력 서비스와 관련된 문제를 디버깅합니다 .*
+*이 비디오는 AEM Forms에서 성능 로깅을 사용하여 Forms 및 출력 서비스 와 관련된 문제를 디버깅하는 프로세스를 안내합니다.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335499?quality=12&learn=on)

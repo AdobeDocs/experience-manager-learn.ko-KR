@@ -18,25 +18,25 @@ ht-degree: 1%
 
 이 부분에서는 ACS에서 가져온 프로필 정보로 적응형 양식을 미리 채웁니다. AEM Forms에는 적응형 양식을 미리 채울 수 있는 강력한 기능이 있습니다.
 
-적응형 양식 미리 채우기에 대한 자세한 내용은 다음 문서를 참조하십시오 [튜토리얼](https://helpx.adobe.com/experience-manager/kt/forms/using/prefill-service-adaptive-forms-article-use.html).
+적응형 양식 미리 채우기에 대한 자세한 내용은 다음을 참조하십시오. [튜토리얼](https://helpx.adobe.com/experience-manager/kt/forms/using/prefill-service-adaptive-forms-article-use.html).
 
-ACS에서 데이터를 가져와 적응형 양식을 미리 채우려면 로그인한 AEM 사용자와 동일한 이메일을 사용하는 ACS에 프로필이 있다고 가정합니다. 예를 들어 AEM에 로그인한 사람의 이메일 ID가 csimms@adobe.com 인 경우 ACS에서 e-메일이 csimms@adobe.com 인 프로필을 찾을 수 있습니다.
+ACS에서 데이터를 가져와 적응형 양식을 미리 채우려면 ACS에 로그인한 AEM 사용자와 동일한 이메일이 있는 프로필이 있다고 가정합니다. 예를 들어 AEM에 로그인한 사용자의 이메일 ID가 csimms@adobe.com이면 ACS에서 이메일이 csimms@adobe.com인 프로필을 찾습니다.
 
 REST API를 사용하여 ACS에서 프로필 정보를 가져오려면 다음 단계가 필요합니다
 
 * JWT 생성
-* 액세스 토큰용 Exchange JWT
-* ACS에 REST 호출을 수행하고 이메일로 프로필 가져오기
+* JWT를 액세스 토큰으로 교환
+* ACS에 대한 REST 호출 및 이메일로 프로필 가져오기
 * 프로필 정보를 사용하여 XML 문서 작성
 * AEM Forms에서 사용하는 XML 문서의 InputStream 반환
 
-![프리플서비스](assets/prefillserviceaf.gif)
+![prefillservice](assets/prefillserviceaf.gif)
 
 미리 채우기 서비스를 적응형 양식과 연결
 
 다음은 ACS에서 프로필 정보를 가져오고 반환하기 위한 코드입니다.
 
-68행에서 AEM 사용자의 이메일 ID를 가져옵니다. Adobe Campaign Standard에 REST 호출을 수행하여 프로필 세부 사항을 가져옵니다. 가져온 프로필 세부 정보에서 XML 문서는 AEM Forms에서 인식하는 방식으로 작성됩니다. 이 문서의 입력 스트림이 AEM Forms에서 사용하기 위해 반환됩니다.
+68행에서 AEM 사용자의 이메일 ID를 가져옵니다. Adobe Campaign Standard에 REST 호출을 수행하여 프로필 세부 사항을 가져옵니다. 가져온 프로필 세부 정보에서 XML 문서는 AEM Forms에서 이해할 수 있는 방식으로 구성됩니다. 이 문서의 입력 스트림은 AEM Forms에서 사용하기 위해 반환됩니다.
 
 ```java
 package aemforms.campaign.core;
@@ -230,9 +230,9 @@ return "Pre Fill Forms Using Campaign Profile";
 
 시스템에서 이 작업을 수행하려면 다음 지침을 따르십시오.
 
-* [여기에 설명된 대로 단계를 따랐는지 확인합니다](aem-forms-with-campaign-standard-getting-started-tutorial.md)
-* [패키지 관리자를 사용하여 샘플 적응형 양식을 AEM에 가져오기](assets/pre-fill-af-from-campaign.zip)
-* Adobe Campaign에서 프로필로 공유된 이메일 ID의 사용자를 사용하여 AEM에 로그인해야 합니다. 예를 들어, AEM 사용자의 이메일 ID가 johndoe@adobe.com 인 경우, ACS에서 e-메일이 johndoe@adobe.com 인 프로필이 있어야 합니다.
+* [여기에 설명된 단계를 따랐는지 확인하십시오](aem-forms-with-campaign-standard-getting-started-tutorial.md)
+* [패키지 관리자를 사용하여 AEM에 샘플 적응형 양식 가져오기](assets/pre-fill-af-from-campaign.zip)
+* Adobe Campaign의 프로필에서 이메일 ID를 공유하는 사용자로 AEM에 로그인해야 합니다. 예를 들어 AEM 사용자의 이메일 ID가 johndoe@adobe.com이면 ACS에서 이메일이 johndoe@adobe.com인 프로필이 있어야 합니다.
 * [양식 미리 보기](http://localhost:4502/content/dam/formsanddocuments/prefillfromcampaign/jcr:content?wcmmode=disabled).
 
 ## 다음 단계

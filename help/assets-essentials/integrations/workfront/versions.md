@@ -1,6 +1,6 @@
 ---
-title: Adobe Workfront 및 Assets Essentials을 사용하여 버전 기록 유지
-description: Adobe Workfront 및 Experience Manager Assets Essentials를 통해 Workfront 문서 및 Assets Essentials 자산의 버전을 관리하는 방법을 알아봅니다.
+title: Adobe Workfront 및 Assets Essentials을 통한 버전 내역 유지
+description: Adobe Workfront 및 Experience Manager Assets Essentials가 Workfront 문서 및 Assets Essentials 에셋의 버전을 유지 관리하는 데 어떻게 도움이 되는지에 대해 알아봅니다.
 version: Cloud Service
 feature: Assets Essentials
 topic: Content Management, Integrations
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# 버전 기록 유지 관리
+# 버전 내역 유지
 
-Adobe Workfront 및 Experience Manager Assets Essentials를 통해 Workfront 문서 및 Assets Essentials 자산의 버전을 관리하는 방법을 알아봅니다.
+Adobe Workfront 및 Experience Manager Assets Essentials가 Workfront 문서 및 Assets Essentials 에셋의 버전을 유지 관리하는 데 어떻게 도움이 되는지에 대해 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336314?quality=12&learn=on)

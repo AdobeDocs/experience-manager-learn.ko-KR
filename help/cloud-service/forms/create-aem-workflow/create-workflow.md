@@ -1,6 +1,6 @@
 ---
 title: AEM 워크플로우 만들기
-description: 비즈니스 프로세스를 모방할 워크플로우 모델을 만듭니다.
+description: 비즈니스 프로세스를 모방하는 워크플로우 모델을 만듭니다.
 solution: Experience Manager,Experience Manager Forms
 type: Documentation
 role: Developer
@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # AEM 워크플로우 만들기
 
-AEM Forms 워크플로우 구성 요소를 사용하여 워크플로우 모델을 만듭니다. 또는 분할 구성 요소를 사용하여 상태 변수의 값을 기반으로 워크플로우를 분기합니다.
+AEM Forms 워크플로 구성 요소를 사용하여 워크플로 모델을 만듭니다. 상태 변수의 값을 기준으로 워크플로우를 분기하려면 Or-Split 구성 요소를 사용합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/332434?quality=12&learn=on)

@@ -1,6 +1,6 @@
 ---
 title: AEM Forms에서 어셈블러 서비스 사용
-description: AEM Forms의 어셈블러 서비스를 사용하여 여러 pdf 파일 조합
+description: AEM Forms에서 어셈블러 서비스를 사용하여 여러 pdf 파일 어셈블하기
 feature: Assembler
 version: 6.4,6.5
 topic: Development
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 # AEM Forms에서 어셈블러 서비스 사용{#using-assembler-service-in-aem-forms}
 
-이 문서에서는 여러 PDF 파일을 브라우저에 드래그하여 놓고 어셈블된 pdf 파일을 파일 시스템에 저장하는 기능을 보여주는 자산을 제공합니다. 다음은 브라우저를 사용하여 업로드된 pdf 파일을 결합하는 서블릿의 코드입니다.
+이 문서에서는 여러 PDF 파일을 브라우저에 끌어다 놓고 어셈블된 pdf 파일을 파일 시스템에 저장하는 기능을 보여 주는 에셋을 제공합니다. 다음은 브라우저를 사용하여 업로드한 pdf 파일을 결합하는 서블릿용 코드입니다.
 
 ```java
 protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse response) {
@@ -103,24 +103,24 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 AEM 서버에서 이 기능을 사용하려면
 
 * 다운로드 [AssembleMultipleFiles.zip](assets/assemble-multiple-files.zip) 로컬 시스템으로 이동합니다.
-* 를 사용하여 패키지를 업로드하고 설치합니다 [패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp)
+* 를 사용하여 패키지 업로드 및 설치 [패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp)
 * 다운로드[사용자 정의 문서 서비스 번들](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
-* 다운로드 [서비스 사용자 번들로 개발](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-* 를 사용하여 번들을 배포하고 시작합니다 [felix web console](http://localhost:4502/system/console/bundles)
-* 브라우저를 [AssemblePdf.html](http://localhost:4502/content/DocumentServices/AssemblePdfs.html)
-* PDF 파일 두 개 끌어다 놓기
+* 다운로드 [서비스 사용자 번들을 사용한 개발](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
+* 를 사용하여 번들 배포 및 시작 [felix 웹 콘솔](http://localhost:4502/system/console/bundles)
+* 브라우저를 가리켜서 [AssemblePdf.html](http://localhost:4502/content/DocumentServices/AssemblePdfs.html)
+* PDF 파일 두 개 드래그 앤 드롭
 
 >[!NOTE]
 >
 >AEM Forms 설치가 완료되었는지 확인합니다. 모든 번들은 활성 상태여야 합니다.
 >
->추가되었는지 확인합니다. - 여기에 언급된 대로 부팅 위임 RSA 및 BouncyCastle 라이브러리 [AEM Forms 설치](https://helpx.adobe.com/aem-forms/6-3/installing-configuring-aem-forms-osgi.html)
+>을(를) 추가했는지 확인합니다. -에 언급된 대로 부트 위임 RSA 및 BouncyCastle 라이브러리 [AEM Forms 설치](https://helpx.adobe.com/aem-forms/6-3/installing-configuring-aem-forms-osgi.html)
 >
->**이 데모 경고**
+>**이 데모 주의 사항**
 >
-> * 코드가 XFA 기반 PDF 문서를 처리하지 않습니다
+> * 이 코드는 XFA 기반 PDF 문서를 처리하지 않습니다
 >
-> * PDF 파일만 끌어서 놓습니다
+> * PDF 파일만 드래그 앤 드롭해야 합니다.
 >
 >
 

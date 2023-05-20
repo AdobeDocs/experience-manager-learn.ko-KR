@@ -1,7 +1,7 @@
 ---
-title: 기여 섹션에 테이블 추가
+title: 기여도 섹션에 테이블 추가
 seo-title: Adding table to contributions section
-description: 첫 번째 대화형 통신 문서를 만들기 위한 다중 단계 자습서의 9부분입니다.이 부분에서는 기여 섹션에 표를 추가하겠습니다.
+description: 첫 번째 대화형 통신 문서를 만들기 위한 9단계 튜토리얼의 일부입니다.이 부분에서는 기여 섹션에 표를 추가합니다.
 seo-description: This is part 9 of multistep tutorial for creating your first interactive communication document.In this part, we will add a table to the contributions section.
 uuid: 9475e769-a3f8-4aec-9b46-e0dc182b78a0
 feature: Interactive Communication
@@ -24,18 +24,18 @@ ht-degree: 1%
 
 ---
 
-# 기여 섹션에 테이블 추가
+# 기여도 섹션에 테이블 추가
 
-이 부분에서는 기여 섹션에 테이블을 추가합니다.
-자세한 내용은 [인쇄 채널에서 표 사용](/help/forms/interactive-communications/table-in-print-channel-documents-video-use.md) 인쇄 채널 문서에서 표 사용에 대한 자세한 내용을 참조하십시오.
+이 부분에서는 기여 섹션에 표를 추가합니다.
+다음을 참조하십시오. [인쇄 채널에서 표 사용](/help/forms/interactive-communications/table-in-print-channel-documents-video-use.md) 인쇄 채널 문서에서 표를 사용하는 방법에 대한 자세한 내용은 을 참조하십시오.
 
 AEM Forms에 로그인하고 Adobe Experience Manager > Forms > Forms 및 문서로 이동합니다.
 
-401KStutementPrint 폴더를 엽니다.
+401KStationPrint 폴더를 엽니다.
 
-편집 모드에서 401KStutementPrint를 엽니다.
+편집 모드에서 401KStationPrint를 엽니다.
 
-다음 비디오에서는 인쇄 채널 문서에서 표를 구성하는 단계를 안내합니다.
+다음 비디오는 인쇄 채널 문서에서 표를 구성하는 단계를 안내합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/27769?quality=12&learn=on)
 

@@ -1,5 +1,5 @@
 ---
-title: Cloud Manager 사용 - CI/CD 비프로덕션 파이프라인
+title: Adobe Cloud Manager 사용 - CI/CD 비프로덕션 파이프라인
 description: CI/CD 비프로덕션 파이프라인은 코드 품질 파이프라인과 배포 파이프라인의 두 가지 범주로 나뉩니다. 코드 품질은 Git 분기의 모든 코드를 파이프라인하여 Cloud Manager의 코드 품질 검사에 대해 빌드하고 평가합니다. 배포 파이프라인은 Git 리포지토리에서 비프로덕션 환경으로 코드 배포를 자동화하는 경우 지원합니다. 이는 스테이지 또는 프로덕션이 아닌 프로비저닝된 AEM 환경을 의미합니다.
 topics: Administration
 audience: administrator
@@ -19,7 +19,7 @@ ht-degree: 93%
 
 ---
 
-# Cloud Manager 사용 - CI/CD 프로덕션 파이프라인 {#using-adobe-cloud-manager-ci-cd-production-pipeline}
+# Adobe Cloud Manager 사용 - CI/CD 프로덕션 파이프라인 {#using-adobe-cloud-manager-ci-cd-production-pipeline}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_devops_nonprodpipeline"

@@ -1,6 +1,6 @@
 ---
-title: AEM Assets에서 검색 활성화란 무엇입니까?
-description: Adobe Experience Manager에서 자산의 검색 관련성을 높이기 위해 주요 단어와 구문을 추가하는 방법을 알아봅니다.
+title: AEM Assets의 Search Boost 소개
+description: Adobe Experience Manager에서 에셋의 검색 관련성을 높이기 위해 주요 단어와 구를 추가하는 방법을 알아봅니다.
 topic: Content Management
 feature: Search
 role: User

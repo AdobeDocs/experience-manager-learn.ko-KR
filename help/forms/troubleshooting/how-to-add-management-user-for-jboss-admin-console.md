@@ -1,5 +1,5 @@
 ---
-title: JBoss Admin Console용 관리 사용자를 추가하는 방법
+title: JBoss 관리 콘솔에 대한 관리 사용자를 추가하는 방법
 description: JBOSS Admin Console용 관리 사용자 구성
 type: Troubleshooting
 role: Admin
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ---
 
-# JBoss Admin Console용 관리 사용자를 추가하는 방법
+# JBoss 관리 콘솔에 대한 관리 사용자를 추가하는 방법
 
-*이 비디오에서는 JBoss 관리 콘솔용 관리 사용자를 추가하는 단계를 안내합니다.*
+*이 비디오는 JBoss 관리 콘솔에 대한 관리 사용자를 추가하는 단계를 안내합니다.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335484?quality=12&learn=on)

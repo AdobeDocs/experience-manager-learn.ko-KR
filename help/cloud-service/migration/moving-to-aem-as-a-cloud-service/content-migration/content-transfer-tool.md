@@ -1,6 +1,6 @@
 ---
 title: 컨텐츠 전송 도구를 사용한 컨텐츠 마이그레이션
-description: 컨텐츠 전송 도구를 사용하여 컨텐츠를 AEM 6에서 AEM as a Cloud Service으로 마이그레이션하는 방법을 알아봅니다.
+description: 컨텐츠 전송 도구가 AEM 6에서 AEMas a Cloud Service 으로 컨텐츠를 마이그레이션하는 방법에 대해 알아봅니다.
 version: Cloud Service
 topic: Migration, Upgrade
 role: Developer
@@ -18,40 +18,40 @@ ht-degree: 2%
 
 # 콘텐츠 전송 도구
 
-컨텐츠 전송 도구를 사용하여 컨텐츠를 AEM 6.3 이상에서 AEM as a Cloud Service으로 마이그레이션하는 방법을 알아봅니다.
+AEM 컨텐츠 전송 도구 가 AEM 6.3+에서 as a Cloud Service으로 컨텐츠를 마이그레이션하는 방법에 대해 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336970?quality=12&learn=on)
 
 ## 컨텐츠 전송 도구 사용
 
-![컨텐츠 전송 도구 수명 주기](../assets/content-transfer-tool.png)
+![컨텐츠 전송 도구 라이프사이클](../assets/content-transfer-tool.png)
 
-컨텐츠 전송 도구는 AEM 6.3+에 설치되어 있으며 컨텐츠를 AEM as a Cloud Service 으로 전송합니다.
+컨텐츠 전송 도구는 AEM 6.3+에 설치되며 컨텐츠를 AEM as a Cloud Service으로 전송합니다.
 
 ## 주요 활동
 
-+ 다운로드 [최신 컨텐츠 전송 도구](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=Content*+Transfer*+Tool*&amp;1_group.propertyvalues.property=%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atologing&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=2).
-+ AEM 작성자 6.3 이상의 최종 컨텐츠를 AEM as a Cloud Service 작성자 서비스로 전송합니다.
-   + 전송할 최종 컨텐츠가 포함된 AEM 6.3+ 작성자에 컨텐츠 전송 도구를 설치합니다.
-   + 컨텐츠 전송 도구를 일괄적으로 실행하고 컨텐츠 세트를 전송합니다.
-+ AEM 게시 6.3 이상의 최종 컨텐츠를 AEM as a Cloud Service 게시 서비스로 전송합니다.
-   + 전송할 최종 컨텐츠가 포함된 AEM 6.3+ 게시에서 컨텐츠 전송 도구를 설치합니다.
-   + 컨텐츠 전송 도구를 일괄적으로 실행하고 컨텐츠 세트를 전송합니다.
-+ 원할 경우, 마지막 컨텐츠 전송 이후 새 컨텐츠를 전송하여 AEM as a Cloud Service에 &quot;추가&quot; 컨텐츠를 표시할 수 있습니다
++ 다운로드 [최신 컨텐츠 전송 도구](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=Content*+Transfer*+Tool*&amp;1_group.propertyvalues.property=입니다.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atoling&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=2).
++ AEM Author 6.3 이상의 최종 콘텐츠를 AEM as a Cloud Service Author 서비스로 전송합니다.
+   + 전송할 최종 콘텐츠가 포함된 AEM 6.3+ 작성자에 콘텐츠 전송 도구를 설치합니다.
+   + 컨텐츠 전송 도구를 일괄로 실행하여 컨텐츠 세트를 전송합니다.
++ AEM Publish 6.3 이상의 최종 콘텐츠를 AEM as a Cloud Service 게시 서비스로 전송합니다.
+   + 전송할 최종 콘텐츠가 포함된 AEM 6.3+ 게시에서 콘텐츠 전송 도구를 설치합니다.
+   + 컨텐츠 전송 도구를 일괄로 실행하여 컨텐츠 세트를 전송합니다.
++ 원할 경우, 마지막 컨텐츠 전송 이후 새 컨텐츠를 전송하여 AEM에서 &quot;추가&quot; 컨텐츠를 as a Cloud Service으로 전송
 
-## 실습 운동
+## 실습 위주의 운동
 
-이 실습 운동으로 배운 것을 시도하여 여러분의 지식을 적용하세요.
+이 실습으로 배운 것을 시도함으로써 지식을 적용하세요.
 
-실습 테스트를 하기 전에 위의 비디오와 다음 자료를 보고 이해했는지 확인하십시오.
+실습형 운동을 시도하기 전에 위의 비디오와 다음 자료를 시청하고 이해했는지 확인하십시오.
 
 + [AEM 현대화 도구](../aem-modernization-tools.md)
 + [온보딩](../onboarding.md)
 + [Cloud Manager](../cloud-manager.md)
 
-또한 이전의 실습 운동을 완료했는지 확인하십시오.
+또한, 이전에 실습한 연습을 완료했는지 확인하십시오.
 
-+ [디스패처 실습](../dispatcher.md#hands-on-exercise)
++ [Dispatcher 실습](../dispatcher.md#hands-on-exercise)
 
 <table style="border-width:0">
     <tr>
@@ -62,14 +62,14 @@ ht-degree: 2%
             </a>        
         </td>
         <td style="width:100%;margin-bottom:1rem;">
-            <div style="font-size:1.25rem;font-weight:400;">컨텐츠 전송 툴 사용</div>
+            <div style="font-size:1.25rem;font-weight:400;">컨텐츠 전송 도구를 사용하여 실습</div>
             <p style="margin:1rem 0">
-                컨텐츠 전송 도구가 컨텐츠를 AEM 6에서 AEM as a Cloud Service으로 자동으로 이동하는 방법을 알아봅니다.
+                컨텐츠 전송 도구 가 AEM 6에서 AEMas a Cloud Service 로 컨텐츠를 자동으로 이동하는 방법을 알아봅니다.
             </p>
             <a  rel="noreferrer"
                 target="_blank"
                 href="https://github.com/adobe/aem-cloud-engineering-video-series-exercises/tree/session6-transfercontent#cloud-acceleration-bootcamp---session-6-content" class="spectrum-Button spectrum-Button--primary spectrum-Button--sizeM">
-                <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">컨텐츠 전송 도구 시도</span>
+                <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">컨텐츠 전송 도구 사용</span>
             </a>
         </td>
     </tr>
@@ -77,6 +77,6 @@ ht-degree: 2%
 
 ## 기타 리소스
 
-+ [컨텐츠 전송 도구 다운로드](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=Content*+Transfer*+Tool*&amp;1_group.propertyvalues.property=%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atologing&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=2)
-+ [대량 가져오기 서비스 방법 비디오](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/bulk-import.html)
++ [콘텐츠 전송 도구 다운로드](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=Content*+Transfer*+Tool*&amp;1_group.propertyvalues.property=입니다.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atoling&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=2)
++ [일괄 가져오기 서비스 방법 비디오](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/bulk-import.html)
 

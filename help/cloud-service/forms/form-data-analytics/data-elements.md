@@ -1,6 +1,6 @@
 ---
-title: Adobe Analytics을 사용하여 제출된 양식 데이터 필드에 대해 보고합니다
-description: AEM Forms CS를 Adobe Analytics과 통합하여 양식 데이터 필드에 대해 보고합니다
+title: Adobe Analytics을 사용하여 제출된 양식 데이터 필드에 대한 보고서
+description: AEM Forms CS와 Adobe Analytics을 통합하여 양식 데이터 필드에 대해 보고합니다
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
@@ -9,7 +9,8 @@ version: Cloud Service
 feature: Adaptive Forms
 topic: Development
 kt: 12557
-source-git-commit: 672941b4047bb0cfe8c602e3b1ab75866c10216a
+exl-id: b9dc505d-72c8-4b6a-974b-fc619ff7c256
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 0%
@@ -18,16 +19,16 @@ ht-degree: 0%
 
 # 적절한 데이터 요소 만들기
 
-Tags 속성에 두 개의 새 데이터 요소(SupplementsStateOfResidence 및 validationError)를 추가했습니다.
+Tags 속성에서 두 개의 새 데이터 요소(AppliancesStateOfResidence 및 validationError)를 추가했습니다.
 
 ![적응형 양식](assets/data_elements.png)
 
-## PhospystateOfResidence
+## 지원자주국
 
-다음 **PhospystateOfResidence** 데이터 요소는 **코어** 확장 드롭다운에서 **사용자 지정 코드** 아래의 스크린샷에 표시된 대로 데이터 요소 유형에 대해
-![신청자](assets/applicantstateofresidence.png)
+다음 **지원자주국** 다음을 선택하여 데이터 요소를 구성했습니다. **코어** 확장 프로그램 드롭다운 및 **사용자 지정 코드** 아래 스크린샷에 표시된 대로 데이터 요소 유형용
+![지원자-주 정부](assets/applicantstateofresidence.png)
 
-다음 사용자 지정 코드는 **_state_** 적응형 양식 필드.
+다음 사용자 지정 코드를 사용하여 **_상태_** 적응형 양식 필드.
 
 ```javascript
 // use the GuideBridge API to access adaptive form elements
@@ -39,11 +40,11 @@ return ApplicantsStateOfResidence;
 
 ## validationError
 
-다음 **유효성 검사 오류** 데이터 요소는 **코어** 확장 드롭다운에서 **사용자 지정 코드** 아래의 스크린샷에 표시된 대로 데이터 요소 유형에 대해
+다음 **유효성 검사 오류** 다음을 선택하여 데이터 요소를 구성했습니다. **코어** 확장 프로그램 드롭다운 및 **사용자 지정 코드** 아래 스크린샷에 표시된 대로 데이터 요소 유형용
 
 ![유효성 검사 오류](assets/validation-error.png)
 
-validationError 데이터 요소 값을 설정하기 위해 다음 사용자 지정 코드가 작성됩니다.
+validationError 데이터 요소 값을 설정하기 위해 다음 사용자 지정 코드가 작성되었습니다.
 
 ```javascript
 var validationError = "";

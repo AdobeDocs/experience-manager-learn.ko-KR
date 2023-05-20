@@ -1,6 +1,6 @@
 ---
-title: 유연한 포트 전송을 위한 비표준 포트에서 HTTP/HTTPS 연결
-description: Flexible Port Egress를 위해 AEM as a Cloud Service에서 비 표준 포트에서 실행되는 외부 웹 서비스로 HTTP/HTTPS 요청을 하는 방법을 알아봅니다.
+title: 유연한 포트 이그레스용 비표준 포트에서의 HTTP/HTTPS 연결
+description: AEM 유연한 포트 이그레스용 비표준 포트에서 실행되는 외부 웹 서비스에 as a Cloud Service으로 HTTP/HTTPS 요청을 하는 방법에 대해 알아봅니다.
 version: Cloud Service
 feature: Security
 topic: Development, Security
@@ -16,30 +16,30 @@ ht-degree: 0%
 
 ---
 
-# 유연한 포트 전송을 위한 비표준 포트에서 HTTP/HTTPS 연결
+# 유연한 포트 이그레스용 비표준 포트에서의 HTTP/HTTPS 연결
 
-비표준 포트(80/443 아님)에서 HTTP/HTTPS 연결은 AEM as a Cloud Service에서 프록시되어야 하지만 특별한 경우에는 필요하지 않습니다 `portForwards` 규칙 및 AEM 고급 네트워킹의 `AEM_PROXY_HOST` 예약된 프록시 포트 `AEM_HTTP_PROXY_PORT` 또는 `AEM_HTTPS_PROXY_PORT` 은 대상에 따라 HTTP/HTTPS입니다.
+비표준 포트(80/443이 아님)에서의 HTTP/HTTPS 연결은 AEM에서 as a Cloud Service으로 프록시되어야 하지만 특별한 것이 필요하지 않습니다 `portForwards` 규칙 및 AEM 고급 네트워킹을 사용할 수 있음 `AEM_PROXY_HOST` 및 예약된 프록시 포트 `AEM_HTTP_PROXY_PORT` 또는 `AEM_HTTPS_PROXY_PORT` 에 따라 대상이 HTTP/HTTPS입니다.
 
 ## 고급 네트워킹 지원
 
-다음 코드 예는 다음과 같은 고급 네트워킹 옵션에서 지원됩니다.
+다음 코드 예는 다음 고급 네트워킹 옵션에서 지원됩니다.
 
-다음을 확인합니다. [적절하](../advanced-networking.md#advanced-networking) 이 자습서를 따르기 전에 고급 네트워킹 구성을 설정했습니다.
+다음을 확인합니다. [적당하](../advanced-networking.md#advanced-networking) 이 자습서를 수행하기 전에 고급 네트워킹 구성이 설정되었습니다.
 
-| 고급 네트워킹 없음 | [유연한 포트 송신](../flexible-port-egress.md) | [전용 송신 IP 주소](../dedicated-egress-ip-address.md) | [가상 사설 네트워크](../vpn.md) |
+| 고급 네트워킹 없음 | [유연한 포트 이그레스](../flexible-port-egress.md) | [전용 이그레스 IP 주소](../dedicated-egress-ip-address.md) | [가상 사설망](../vpn.md) |
 |:-----:|:-----:|:------:|:---------:|
 | ✘ | ✔ | ✘ | ✘ |
 
 >[!CAUTION]
 >
-> 이 코드 예제는 [유연한 포트 송신](../flexible-port-egress.md). 비슷하지만 다른 코드 예는 를 사용할 수 있습니다 [전용 송신 IP 주소 및 VPN에 대한 비표준 포트에서 HTTP/HTTPS 연결](./http-dedicated-egress-ip-vpn.md).
+> 이 코드 예는 다음 경우에만 해당됩니다 [유연한 포트 이그레스](../flexible-port-egress.md). 에 대해 유사하지만 다른 코드 예를 사용할 수 있습니다. [전용 이그레스 IP 주소 및 VPN을 위한 비표준 포트에서의 HTTP/HTTPS 연결](./http-dedicated-egress-ip-vpn.md).
 
 ## 코드 예
 
-이 Java™ 코드 예는 8080에서 외부 웹 서버에 HTTP 연결을 만드는 AEM as a Cloud Service에서 실행할 수 있는 OSGi 서비스의 예입니다. HTTPS 웹 서버에 대한 연결은 환경 변수를 사용합니다 `AEM_PROXY_HOST` 및 `AEM_HTTPS_PROXY_PORT` (기본값: `proxy.tunnel:3128` AEM 릴리스 &lt; 6094)에서 사용할 수 있습니다.
+이 Java™ 코드 예는 8080에서 외부 웹 서버에 HTTP 연결을 만드는 AEM as a Cloud Service으로 실행할 수 있는 OSGi 서비스입니다. HTTPS 웹 서버 연결은 환경 변수를 사용합니다 `AEM_PROXY_HOST` 및 `AEM_HTTPS_PROXY_PORT` (기본값: `proxy.tunnel:3128` AEM 릴리스 &lt; 6094).
 
 >[!NOTE]
-> 권장 사항 [Java™ 11 HTTP API](https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/package-summary.html) AEM에서 HTTP/HTTPS를 호출하는 데 사용됩니다.
+> 권장되는 작업 [Java™ 11 HTTP API](https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/package-summary.html) AEM에서 HTTP/HTTPS를 호출하는 데 사용됩니다.
 
 + `core/src/com/adobe/aem/wknd/examples/connections/impl/HttpExternalServiceImpl.java`
 

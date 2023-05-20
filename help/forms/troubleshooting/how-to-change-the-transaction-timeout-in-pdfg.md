@@ -1,6 +1,6 @@
 ---
-title: PDFG 서비스에서 응용 프로그램 서버의 트랜잭션 시간 제한을 변경하는 방법
-description: PDF 생성기용 응용 프로그램 서버의 트랜잭션 시간 제한을 늘리거나 줄이는 절차
+title: PDFG 서비스에서 애플리케이션 서버의 트랜잭션 시간 제한을 변경하는 방법
+description: PDF 생성기에 대한 애플리케이션 서버의 트랜잭션 시간 제한을 늘리거나 줄이는 단계
 type: Troubleshooting
 role: Admin
 level: Beginner
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# PDFG 서비스에서 응용 프로그램 서버의 트랜잭션 시간 제한을 변경하는 방법
+# PDFG 서비스에서 애플리케이션 서버의 트랜잭션 시간 제한을 변경하는 방법
 
-*이 비디오에서는 Forms PDFG 서비스에서 응용 프로그램 서버의 트랜잭션 시간 제한을 변경하는 프로세스에 대해 설명합니다.*
+*이 비디오는 Forms PDFG 서비스에서 애플리케이션 서버의 트랜잭션 시간 제한을 변경하는 프로세스를 설명합니다.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335555?quality=12&learn=on)

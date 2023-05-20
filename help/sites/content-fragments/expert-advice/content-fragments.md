@@ -1,6 +1,6 @@
 ---
-title: 컨텐츠 조각 팁과 트릭
-description: 사이트 계층, 분류 및 태깅 팁 우수 사례
+title: 콘텐츠 조각 팁 및 요령
+description: 사이트 계층 구조, 분류 및 태그 지정 팁 모범 사례
 hide: true
 hidefromtoc: true
 source-git-commit: 3eb429039589ae26a81bc6d24f020a77517133e8
@@ -11,4 +11,4 @@ ht-degree: 0%
 ---
 
 
-# 컨텐츠 조각 팁과 트릭
+# 콘텐츠 조각 팁 및 요령

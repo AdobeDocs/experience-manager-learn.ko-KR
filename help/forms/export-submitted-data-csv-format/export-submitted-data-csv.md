@@ -20,22 +20,22 @@ ht-degree: 0%
 
 # 소개
 
-고객은 일반적으로 제출된 양식 데이터를 CSV 형식으로 내보내려고 합니다. 이 문서에서는 CSV 형식으로 양식 데이터를 내보내는 데 필요한 단계를 강조 표시합니다. 이 문서에서는 양식 제출이 RDBMS 테이블에 저장된다고 가정합니다. 다음 스크린샷에서는 양식 제출을 저장하는 데 필요한 최소 테이블 구조를 자세히 설명합니다.
+고객은 일반적으로 제출된 양식 데이터를 CSV 형식으로 내보내기를 원합니다. 이 문서에서는 양식 데이터를 CSV 형식으로 내보내는 데 필요한 단계를 강조 표시합니다. 이 문서에서는 양식 제출이 RDBMS 테이블에 저장되어 있다고 가정합니다. 다음 스크린샷에서는 양식 제출을 저장하는 데 필요한 최소 테이블 구조를 자세히 설명합니다.
 
 >[!NOTE]
 >
->이 샘플은 스키마 또는 양식 데이터 모델을 기반으로 하지 않는 응용 Forms에서만 작동합니다
+>이 샘플은 스키마 또는 양식 데이터 모델을 기반으로 하지 않는 적응형 Forms에서만 작동합니다
 
 ![테이블 구조](assets/tablestructure.PNG)
-이 스키마 안에는 다음과 같은 열이 정의된 테이블 양식 제출이 있습니다
+스키마 이름을 볼 수 있듯이 aemformstutorial입니다. 이 스키마 내부에는 다음 열이 정의된 테이블 formsubmissions가 있습니다
 
-* formdata: 이 열에는 제출된 양식 데이터가 포함됩니다
-* 형식 이름: 이 열에는 제출된 양식의 이름이 포함됩니다
-* id: 기본 키이며 자동 증분으로 설정되어 있습니다
+* formtdata: 이 열에는 제출된 formtdata가 저장됩니다.
+* formname: 이 열에는 제출된 양식의 이름이 저장됩니다.
+* id: 기본 키이며 자동 증분으로 설정됩니다
 
-테이블 이름과 두 열 이름은 아래 스크린샷에 표시된 대로 OSGi 구성 속성으로 표시됩니다.
-![osgi 구성](assets/configuration.PNG)
-코드는 이러한 값을 읽고 실행할 적절한 SQL 쿼리를 구성합니다. 예를 들어 위의 값을 기준으로 다음 쿼리가 실행됩니다
+테이블 이름 및 2열 이름은 아래 스크린샷과 같이 OSGi 구성 속성으로 표시됩니다.
+![osgi-configuration](assets/configuration.PNG)
+이 코드는 이러한 값을 읽고 실행할 적절한 SQL 쿼리를 구성합니다. 예를 들어 다음 쿼리는 위의 값을 기반으로 실행됩니다
 
 `SELECT formdata FROM aemformstutorial.formsubmissions where formname=timeoffrequestform`
 
@@ -43,15 +43,15 @@ ht-degree: 0%
 
 ## **OSGi 서비스 만들기**
 
-다음 OSGI 서비스가 생성되어 제출된 데이터를 CSV 형식으로 내보냅니다.
+제출된 데이터를 CSV 형식으로 내보내기 위해 다음과 같은 OSGI 서비스가 생성되었습니다.
 
-* 37호선: Apache Sling 연결의 풀링된 데이터 소스에 액세스합니다.
+* 37행: Apache Sling 연결의 풀링된 데이터 소스에 액세스합니다.
 
-* 89호선: 서비스의 시작 지점입니다.메서드 `getCSVFile(..)` formName을 입력 매개 변수로 사용하고 제공된 양식 이름과 관련하여 제출된 데이터를 가져옵니다.
+* 89행: 서비스의 진입점입니다.메서드 `getCSVFile(..)` 는 formName을 입력 매개 변수로 사용하고 지정된 양식 이름과 관련된 제출된 데이터를 가져옵니다.
 
 >[!NOTE]
 >
->이 코드에서는 사용자가 Felix 웹 콘솔에서 &quot;emformstutorial&quot;이라는 연결 풀링된 DataSource를 정의했다고 가정합니다. 또한 코드에서는 aemformstutorial이라는 데이터베이스에 스키마가 있다고 가정합니다
+>이 코드는 사용자가 Felix 웹 콘솔에서 &quot;aemformstutorial&quot;이라는 연결 풀링된 DataSource를 정의했다고 가정합니다. 또한 이 코드는 사용자가 aemformstutorial이라는 데이터베이스에 스키마를 가지고 있다고 가정합니다
 
 ```java
 package com.aemforms.storeandexport.core;
@@ -244,7 +244,7 @@ public class StoreAndExportImpl implements StoreAndExport {
 
 ## 구성 서비스
 
-다음 세 속성을 OSGI 구성 속성으로 노출했습니다. SQL 쿼리는 런타임에 이러한 값을 읽어 작성됩니다.
+다음 세 가지 속성을 OSGI 구성 속성으로 노출했습니다. SQL 쿼리는 런타임에 이러한 값을 읽는 방식으로 구성됩니다.
 
 ```java
 package com.aemforms.storeandexport.core;
@@ -267,7 +267,7 @@ public @interface StoreAndExportConfiguration {
 
 ## 서블릿
 
-다음은 를 호출하는 서블릿 코드입니다 `getCSVFile(..)` 서비스의 메서드입니다. 이 서비스는 호출 응용 프로그램으로 다시 스트리밍되는 StringBuffer 개체를 반환합니다
+다음은 를 호출하는 서블릿 코드입니다. `getCSVFile(..)` 서비스 메서드. 이 서비스는 StringBuffer 개체를 반환한 다음 호출 응용 프로그램으로 다시 스트리밍합니다.
 
 ```java
 package com.aemforms.storeandexport.core.servlets;
@@ -309,6 +309,6 @@ public class StreamCSVFile extends SlingAllMethodsServlet {
 
 ### 서버에 배포
 
-* 가져오기 [SQL 파일](assets/formsubmissions.sql) MySQL Workbench를 사용하여 MySQL 서버로 이동합니다. 이렇게 하면 라는 스키마가 만들어집니다 **aemformtutorial** 및 **서식 제출** 일부 샘플 데이터를 사용하여 매핑해야 합니다.
-* 배포 [OSGi 번들](assets/store-export.jar) felix 웹 콘솔 사용
-* [TimeOffRequest 제출을 가져오려면](http://localhost:4502/bin/streamformdata?formName=timeoffrequestform). 스트리밍된 CSV 파일을 다시 가져와야 합니다.
+* 가져오기 [SQL 파일](assets/formsubmissions.sql) MySQL Workbench를 사용하여 MySQL Server에 로그인합니다. 이 작업으로 스키마 호출이 생성됨 **기형문합법** 및 테이블 호출됨 **formsubmissions** 샘플 데이터 포함.
+* 배포 [OSGi 번들](assets/store-export.jar) Felix 웹 콘솔 사용
+* [TimeOffRequest 제출을 가져오려면](http://localhost:4502/bin/streamformdata?formName=timeoffrequestform). CSV 파일을 다시 스트림해야 합니다.

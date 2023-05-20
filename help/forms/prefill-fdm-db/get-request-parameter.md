@@ -1,6 +1,6 @@
 ---
 title: 요청 매개 변수 가져오기
-description: 양식 데이터 모델의 미리 채우기 서비스에서 요청 매개 변수에 액세스합니다
+description: 양식 데이터 모델의 미리 채우기 서비스에서 요청 매개 변수에 액세스
 feature: Adaptive Forms
 version: 6.4,6.5
 kt: 5815
@@ -18,22 +18,22 @@ ht-degree: 3%
 
 # 요청 매개 변수 가져오기
 
-## Get empID 매개 변수
+## empID 매개 변수 가져오기
 
-다음 단계는 url에서 empID 매개 변수에 액세스하는 것입니다. 그런 다음 empID 요청 매개 변수의 값이 **_get_** 양식 데이터 모델의 서비스 작업입니다.
-이 교육 과정을 위해 다음을 만들고 제공했습니다
+다음 단계는 url에서 empID 매개 변수에 액세스하는 것입니다. 그런 다음 empID 요청 매개 변수의 값이 **_get_** 양식 데이터 모델의 서비스 작업.
+이 교육 과정에서는 다음을 만들고 제공했습니다
 
-* 적응형 양식 서식 파일이 **_FDMDemo_**
-* 페이지 구성 요소 호출 **_fdmdemo_**
-* 페이지 구성 요소에 사용자 지정 jsp 포함
-* 적응형 양식 템플릿을 페이지 구성 요소와 연결했습니다
+* 적응형 양식 템플릿 호출됨 **_FDMDemo_**
+* 호출된 페이지 구성 요소 **_fdmdemo_**
+* 페이지 구성 요소에 사용자 지정 jsp 포함됨
+* 적응형 양식 템플릿을 페이지 구성 요소와 연결했습니다.
 
-이렇게 하면 사용자 지정 jsp의 코드가 이 사용자 지정 템플릿을 기반으로 하는 적응형 양식이 렌더링될 때만 실행됩니다
+이렇게 하면 사용자 정의 jsp의 코드가 이 사용자 정의 템플릿을 기반으로 하는 적응형 양식이 렌더링될 때만 실행됩니다
 
 * [패키지 가져오기](assets/template-page-component.zip) 사용 [패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp)
-* [fdmrequest.jsp를 엽니다.](http://localhost:4502/crx/de/index.jsp#/apps/fdmdemo/component/page/fdmdemo/fdmrequest.jsp)
-* 주석 처리된 줄의 주석을 해제합니다.
-* 변경 내용을 저장합니다
+* [fdmrequest.jsp 열기](http://localhost:4502/crx/de/index.jsp#/apps/fdmdemo/component/page/fdmdemo/fdmrequest.jsp)
+* 주석 처리된 줄의 주석 처리를 제거합니다.
+* 변경 사항 저장
 
 ```java
 if(request.getParameter("empID")!=null)
@@ -45,11 +45,11 @@ if(request.getParameter("empID")!=null)
     }
 ```
 
-empID의 값은 paraMap의 empID라는 키와 연결됩니다. 그런 다음 이 맵이 slingRequest 로 전달됩니다
+empID 값은 paraMap에서 empID라는 키와 연결됩니다. 그런 다음 이 맵이 slingRequest에 전달됩니다.
 
 >[!NOTE]
 >
->키 empID가 서비스를 받는 엔터티의 바인딩 값과 일치해야 합니다
+>empID 키는 새 엔티티 get 서비스의 바인딩 값과 일치해야 합니다
 
 ## 다음 단계
 

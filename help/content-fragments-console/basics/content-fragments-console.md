@@ -1,6 +1,6 @@
 ---
-title: 컨텐츠 조각 콘솔 개요
-description: AEM as a Cloud Service 컨텐츠 조각 작성 콘솔의 기본 기능 및 기능에 대해 알아봅니다.
+title: 콘텐츠 조각 콘솔 개요
+description: AEMas a Cloud Service 의 콘텐츠 조각 작성 콘솔의 기본 기능에 대해 알아봅니다.
 version: Cloud Service
 feature: Content Fragments
 topic: Content Management
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# 컨텐츠 조각 콘솔 개요
+# 콘텐츠 조각 콘솔 개요
 
-AEM as a Cloud Service 컨텐츠 조각 작성 콘솔의 기본 기능 및 기능에 대해 알아봅니다.
+AEMas a Cloud Service 의 콘텐츠 조각 작성 콘솔의 기본 기능에 대해 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3409492?quality=12&learn=on)

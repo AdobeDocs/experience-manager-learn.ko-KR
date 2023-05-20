@@ -1,6 +1,6 @@
 ---
 title: 처리 프로필
-description: 처리 프로필은 AEM as a Cloud Service에서 자산에 대해 만들 변환을 정의합니다.
+description: 처리 프로필은 AEMas a Cloud Service 에서 자산에 대해 만들 변환을 정의합니다.
 feature: Asset Compute Microservices
 version: Cloud Service
 kt: 4993
@@ -19,6 +19,6 @@ ht-degree: 11%
 
 # 처리 프로필
 
-처리 프로필은 AEM as a Cloud Service에서 자산에 대해 만들 변환을 정의합니다.
+처리 프로필은 AEMas a Cloud Service 에서 자산에 대해 만들 변환을 정의합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35597?quality=12&learn=on)

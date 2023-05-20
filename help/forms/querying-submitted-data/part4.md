@@ -1,7 +1,7 @@
 ---
 title: JSON 스키마 및 데이터가 포함된 AEM Forms[Part4]
 seo-title: AEM Forms with JSON Schema and Data[Part4]
-description: JSON 스키마를 사용한 적응형 양식 만들기 및 제출된 데이터 쿼리와 관련된 단계를 안내하는 다중 파트 튜토리얼입니다.
+description: JSON 스키마를 사용한 적응형 양식 작성 및 제출된 데이터 쿼리와 관련된 단계를 안내하는 다중 파트 튜토리얼입니다.
 seo-description: Multi-Part tutorial to walk you through the steps involved in creating Adaptive Form with JSON schema and querying the submitted data.
 feature: Adaptive Forms
 topics: development

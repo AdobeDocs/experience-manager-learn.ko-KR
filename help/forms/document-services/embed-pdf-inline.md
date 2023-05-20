@@ -1,6 +1,6 @@
 ---
-title: 레코드 문서 인라인 표시
-description: 적응형 양식 데이터를 XDP 템플릿과 병합하고 document cloud 포함 pdf API를 사용하여 PDF 인라인을 표시합니다.
+title: 기록 문서 인라인 표시
+description: 적응형 양식 데이터를 XDP 템플릿과 병합하고 document cloud embed pdf API를 사용하여 PDF 인라인을 표시합니다.
 version: 6.4,6.5
 feature: Forms Service
 topic: Development
@@ -16,21 +16,21 @@ ht-degree: 1%
 
 ---
 
-# DoR 인라인 표시
+# 인라인 DoR 표시
 
-일반적인 사용 사례는 양식 필러가 입력한 데이터가 있는 pdf 문서를 표시하는 것입니다.
+일반적인 사용 사례는 양식 작성기에서 입력한 데이터가 포함된 pdf 문서를 표시하는 것입니다.
 
 이 사용 사례를 달성하기 위해 [Adobe PDF 포함 API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html).
 
-통합을 완료하기 위해 다음 단계가 수행되었습니다
+통합을 완료하기 위해 다음 단계를 수행했습니다
 
-## 사용자 지정 구성 요소를 만들어 PDF 인라인 표시
+## PDF 인라인을 표시할 사용자 지정 구성 요소 만들기
 
-POST 호출에서 반환된 pdf를 포함하도록 사용자 지정 구성 요소(embed-pdf)를 만들었습니다.
+POST 호출에서 반환된 pdf를 임베드하기 위해 사용자 지정 구성 요소(embed-pdf)가 생성되었습니다.
 
 ## 클라이언트 라이브러리
 
-다음 코드는 `viewPDF` 확인란 단추를 클릭합니다. 적응형 양식 데이터, 템플릿 이름을 엔드포인트에 전달하여 pdf를 생성합니다. 그런 다음 생성된 pdf가 포함 pdf JavaScript 라이브러리를 사용하여 양식 필러에 표시됩니다.
+다음 코드는 `viewPDF` 확인란 버튼을 클릭합니다. 적응형 양식 데이터, 템플릿 이름을 끝점에 전달하여 PDF를 생성합니다. 그런 다음 생성된 pdf가 임베드 pdf JavaScript 라이브러리를 사용하여 양식 작성기에 표시됩니다.
 
 ```javascript
 $(document).ready(function() {
@@ -82,41 +82,41 @@ $(document).ready(function() {
 });
 ```
 
-## XDP용 샘플 데이터 생성
+## XDP에 대한 샘플 데이터 생성
 
 * AEM Forms 디자이너에서 XDP를 엽니다.
 * 파일 클릭 | 양식 속성 | 미리 보기
-* 미리 보기 데이터 생성을 클릭합니다
-* 생성을 누릅니다
-* &quot;form-data.xml&quot;과 같은 의미 있는 파일 이름을 제공합니다
+* 미리 보기 데이터 생성 을 클릭합니다
+* Generate 클릭
+* &quot;form-data.xml&quot;과 같은 의미 있는 파일 이름 제공
 
 ## xml 데이터에서 XSD 생성
 
-무료 온라인 도구를 사용하여 [xsd 생성](https://www.freeformatter.com/xsd-generator.html) 이전 단계에서 생성된 xml 데이터에서 생성합니다.
+무료 온라인 도구를 사용하여 다음을 수행할 수 있습니다. [xsd 생성](https://www.freeformatter.com/xsd-generator.html) 이전 단계에서 생성된 xml 데이터에서 가져온 것입니다.
 
 ## 템플릿 업로드
 
-xdp 템플릿을 [AEM Forms](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments) 만들기 단추 사용
+xdp 템플릿을에 업로드해야 합니다. [AEM Forms](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments) 만들기 버튼 사용
 
 
 ## 적응형 양식 만들기
 
 이전 단계의 XSD를 기반으로 적응형 양식을 만듭니다.
-적응형 그룹에 새 탭을 추가합니다. 확인란 구성 요소 및 embed-pdf 구성 요소를 이 탭에 추가 확인란 이름을 viewPDF로 지정합니다.
-아래 스크린샷에 표시된 대로 embed-pdf 구성 요소를 구성합니다
+새 탭을 적응형 양식에 추가합니다. 이 탭에 확인란 구성 요소와 embed-pdf 구성 요소를 추가합니다. 확인란 이름을 viewPDF로 지정합니다.
+아래 스크린샷과 같이 embed-pdf 구성 요소를 구성합니다
 ![embed-pdf](assets/embed-pdf-configuration.png)
 
-**포함 PDF API 키** - pdf를 포함하는 데 사용할 수 있는 키입니다. 이 키는 localhost에서만 작동합니다. 다음을 만들 수 있습니다 [개인 키](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) 다른 도메인과 연결합니다.
+**포함 PDF API 키** - PDF를 포함하는 데 사용할 수 있는 키입니다. 이 키는 localhost에서만 작동합니다. 다음을 만들 수 있습니다. [사용자 키](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) 다른 도메인과 연결합니다.
 
-**pdf를 반환하는 끝점** - 데이터를 xdp 템플릿과 병합하고 pdf를 반환하는 사용자 지정 서블릿입니다.
+**PDF를 반환하는 엔드포인트** - 데이터를 xdp 템플릿과 병합하고 pdf를 반환하는 사용자 지정 서블릿입니다.
 
-**템플릿 이름** - xdp의 경로입니다. 일반적으로 양식 문서 폴더 아래에 저장됩니다.
+**템플릿 이름** - xdp 경로입니다. 일반적으로 formsanddocuments 폴더에 저장됩니다.
 
 **PDF 파일 이름** - 포함 pdf 구성 요소에 표시되는 문자열입니다.
 
-## 사용자 지정 서블릿 만들기
+## 사용자 정의 서블릿 만들기
 
-데이터를 XDP 템플릿과 병합하고 pdf를 반환하기 위해 사용자 지정 서블릿이 생성되었습니다. 이를 수행할 코드는 아래에 나와 있습니다. 사용자 지정 서블릿은 [embedded pdf 번들](assets/embedpdf.core-1.0-SNAPSHOT.jar)
+데이터를 XDP 템플릿과 병합하고 pdf를 반환하는 사용자 지정 서블릿이 생성되었습니다. 이를 수행하기 위한 코드가 아래에 나와 있습니다. 사용자 정의 서블릿은 [embedpdf 번들](assets/embedpdf.core-1.0-SNAPSHOT.jar)
 
 ```java
 import java.io.ByteArrayInputStream;
@@ -224,13 +224,13 @@ public class StreamPDFToEmbed extends SlingAllMethodsServlet {
 
 ## 서버에 샘플 배포
 
-로컬 서버에서 테스트하려면 다음 단계를 수행하십시오.
+로컬 서버에서 테스트하려면 다음 단계를 따르십시오.
 
-1. [포함된 pdf 번들 다운로드 및 설치](assets/embedpdf.core-1.0-SNAPSHOT.jar).
-여기에 데이터를 XDP 템플릿과 병합하고 pdf를 다시 스트리밍할 서블릿이 있습니다.
-1. Granite CSRF 필터 Adobe의 제외된 경로 섹션에 /bin/getPDFToEmbed 경로를 [AEM ConfigMgr](http://localhost:4502/system/console/configMgr). 프로덕션 환경에서는 [CSRF 보호 프레임워크](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/csrf-protection.html?lang=en)
+1. [임베드된 PDF 번들 다운로드 및 설치](assets/embedpdf.core-1.0-SNAPSHOT.jar).
+이 템플릿에는 데이터를 XDP 템플릿과 병합하고 pdf를 다시 스트리밍하는 서블릿이 있습니다.
+1. 다음을 사용하여 Adobe Granite CSRF 필터의 제외된 경로 섹션에 /bin/getPDFToEmbed 경로를 추가합니다. [AEM ConfigMgr](http://localhost:4502/system/console/configMgr). 프로덕션 환경에서는 [CSRF 보호 프레임워크](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/csrf-protection.html?lang=en)
 1. [클라이언트 라이브러리 및 사용자 지정 구성 요소 가져오기](assets/embed-pdf.zip)
 1. [적응형 양식 및 템플릿 가져오기](assets/embed-pdf-form-and-xdp.zip)
 1. [적응형 양식 미리 보기](http://localhost:4502/content/dam/formsanddocuments/from1040/jcr:content?wcmmode=disabled)
-1. 양식 필드 몇 개 채우기
-1. 탭을 클릭하여 PDF 보기 탭을 표시합니다. pdf 보기 확인란을 선택합니다. 적응형 양식 데이터로 채워진 양식에 표시되는 pdf가 표시됩니다
+1. 양식 필드 몇 개 입력
+1. 탭으로 이동하여 PDF 보기 탭을 만듭니다. pdf 보기 확인란을 선택합니다. 적응형 양식 데이터로 채워진 양식에 pdf가 표시됩니다

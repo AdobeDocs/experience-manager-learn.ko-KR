@@ -1,7 +1,7 @@
 ---
-title: AEM Sites에서 페이지 태깅 사용
+title: AEM Sites에서 페이지 태그 지정 사용
 seo-title: Using Page Tagging with Adobe Experience Manager Sites
-description: 다음 비디오에서는 페이지 태그를 사용하여 Adobe Experience Manager의 웹 사이트 내에서 컨텐츠를 빠르고 쉽게 분류하는 방법을 소개합니다.
+description: 다음 비디오에서는 페이지 태그를 사용하여 Adobe Experience Manager에서 웹 사이트 내의 콘텐츠를 빠르고 쉽게 분류하는 방법을 강조합니다.
 seo-description: The following video highlights how to quickly and easily classify content within a website in Adobe Experience Manager using page tags.
 feature: Page Editor
 topics: authoring
@@ -24,6 +24,6 @@ ht-degree: 0%
 
 # 페이지 태깅 {#using-page-tagging-with-aem-sites}
 
-태깅을 사용하여 Adobe Experience Manager에서 웹 페이지를 유지 관리하고 구성하는 방법을 알아봅니다.
+태깅을 사용하여 Adobe Experience Manager에서 웹 페이지를 유지 관리하고 구성하는 방법에 대해 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32150?quality=12&learn=on)

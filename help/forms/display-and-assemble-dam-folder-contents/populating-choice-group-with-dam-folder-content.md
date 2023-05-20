@@ -1,6 +1,6 @@
 ---
 title: 선택 그룹 구성 요소에 DAM 폴더 항목 추가
-description: 동적으로 선택 그룹 구성 요소에 항목 추가
+description: 선택 그룹 구성 요소에 항목을 동적으로 추가
 feature: Adaptive Forms
 version: 6.5
 topic: Development
@@ -17,13 +17,13 @@ ht-degree: 1%
 
 # 선택 그룹 구성 요소에 동적으로 항목 추가
 
-AEM Forms 6.5에서는 CheckBox, 라디오 단추 및 이미지 목록과 같은 적응형 Forms 선택 그룹 구성 요소에 항목을 동적으로 추가하는 기능을 도입했습니다. 이 문서에서는 DAM 폴더 컨텐츠로 선택 그룹 구성 요소를 채우는 사용 사례를 살펴봅니다. 스크린샷에서는 3개의 파일이 newsletter라는 폴더에 있습니다.폴더에 새로운 뉴스레터가 추가될 때마다 선택 그룹 구성 요소가 업데이트되어 해당 컨텐츠가 자동으로 나열됩니다. 사용자는 다운로드할 뉴스레터를 하나 이상 선택할 수 있습니다.
+AEM Forms 6.5에는 CheckBox, 라디오 단추 및 이미지 목록과 같은 적응형 Forms 선택 그룹 구성 요소에 항목을 동적으로 추가하는 기능이 도입되었습니다. 이 문서에서는 선택 그룹 구성 요소를 DAM 폴더 콘텐츠로 채우는 사용 사례를 살펴봅니다. 스크린샷에서 3개의 파일은 newsletter라는 폴더에 있습니다.새 뉴스레터가 폴더에 추가될 때마다 선택 그룹 구성 요소가 업데이트되어 해당 콘텐츠가 자동으로 나열됩니다. 사용자는 다운로드할 하나 이상의 뉴스레터를 선택할 수 있습니다.
 
 ![규칙 편집기](assets/newsletters-download.png)
 
-## DAM 폴더 컨텐츠를 반환할 서블릿 만들기
+## DAM 폴더 컨텐츠를 반환하는 서블릿 만들기
 
-JSON 형식으로 DAM 폴더 컨텐츠를 반환하기 위해 다음 코드가 작성되었습니다.
+다음 코드는 DAM 폴더 콘텐츠를 JSON 형식으로 반환하기 위해 작성되었습니다.
 
 ```java
 package com.newsletters.core.servlets;
@@ -82,9 +82,9 @@ public class ListFolderContent extends SlingSafeMethodsServlet {
 }
 ```
 
-## JavaScript 함수를 사용하여 클라이언트 라이브러리 만들기
+## JavaScript 기능으로 클라이언트 라이브러리 만들기
 
-서블릿은 JavaScript 함수에서 호출됩니다. 함수는 선택 그룹 구성 요소를 채우는 데 사용할 배열 개체를 반환합니다
+서블릿은 JavaScript 함수에서 호출됩니다. 함수는 선택 그룹 구성 요소를 채우는 데 사용할 배열 개체를 반환합니다.
 
 ```javascript
 /**
@@ -110,11 +110,11 @@ function getDAMFolderAssets(damFolder) {
 
 ## 적응형 양식 만들기
 
-적응형 양식을 만들고 양식을 클라이언트 라이브러리와 연결 **listfolderassets**. 양식에 확인란 구성 요소를 추가합니다. 규칙 편집기를 사용하여 스크린샷에 표시된 대로 확인란의 옵션을 채웁니다
-![set-options](assets/set-options-newsletter.png)
+적응형 양식 만들기 및 양식과 클라이언트 라이브러리 연결 **listfolderassets**. 양식에 확인란 구성 요소를 추가합니다. 규칙 편집기를 사용하여 스크린샷에 표시된 대로 확인란의 옵션을 채웁니다
+![옵션 설정](assets/set-options-newsletter.png)
 
-Javascript 함수를 호출하는 중입니다. **getDAMolderAssets** DAM 폴더 자산의 경로를 양식에 있는 목록에 전달합니다.
+이름이 인 JavaScript 함수를 호출하고 있습니다. **getDAMFolderAssets** 및 를 사용하여 DAM 폴더의 에셋 경로를 양식으로 나열할 수 있습니다.
 
 ## 다음 단계
 
-[선택한 자산 조합](./assemble-selected-newsletters.md)
+[선택한 에셋 결합](./assemble-selected-newsletters.md)

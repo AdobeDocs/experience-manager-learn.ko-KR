@@ -1,6 +1,6 @@
 ---
 title: Adobe Analytics 및 Adobe Launch에서 Dynamic Media Viewer 사용
-description: Dynamic Media Viewers 5.13 릴리스와 함께 Adobe Launch용 Dynamic Media Viewer 확장 프로그램을 사용하면 Dynamic Media, Adobe Analytics 및 Adobe Launch 고객은 Adobe Launch 구성에서 Dynamic Media Viewer에 대한 특정 이벤트 및 데이터를 사용할 수 있습니다.
+description: Dynamic Media Viewers 5.13 릴리스와 함께 Adobe Launch용 Dynamic Media Viewers 확장을 사용하면 Dynamic Media, Adobe Analytics 및 Adobe Launch 고객은 Adobe Launch 구성에서 Dynamic Media Viewer에 고유한 이벤트 및 데이터를 사용할 수 있습니다.
 sub-product: Dynamic Media
 feature: Asset Insights
 version: 6.4, 6.5
@@ -11,13 +11,13 @@ exl-id: 9d807f4c-999c-45e6-a9db-6c1776bddda1
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '360'
-ht-degree: 11%
+ht-degree: 22%
 
 ---
 
 # Adobe Analytics 및 Adobe Launch에서 Dynamic Media Viewer 사용{#using-dynamic-media-viewers-adobe-analytics-launch}
 
-이제 Dynamic Media 및 Adobe Analytics을 사용하는 고객의 경우 Dynamic Media Viewer Extension을 사용하여 웹 사이트에서 Dynamic Media Viewer 사용을 추적할 수 있습니다.
+Dynamic Media 및 Adobe Analytics을 사용하는 고객의 경우 이제 Dynamic Media Viewer Extension을 사용하여 웹 사이트에서 Dynamic Media Viewer 사용을 추적할 수 있습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29308?quality=12&learn=on)
 
@@ -25,13 +25,13 @@ ht-degree: 11%
 >
 > 이 기능을 사용하려면 Dynamic Media Scene7 모드에서 Adobe Experience Manager을 실행하십시오. 또한 다음을 수행해야 합니다 [AEM 인스턴스와 Adobe Experience Platform Launch 통합](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html).
 
-Dynamic Media 뷰어 확장의 도입으로 이제 Adobe Experience Manager은 Dynamic Media 뷰어(5.13)와 함께 제공된 자산에 대한 고급 분석 지원을 제공하여 사이트 페이지에서 Dynamic Media 뷰어를 사용할 때 이벤트 추적을 보다 세밀하게 제어할 수 있습니다.
+Dynamic Media 뷰어 확장 기능 도입으로 이제 Adobe Experience Manager은 Dynamic Media 뷰어(5.13)와 함께 제공된 자산에 대한 고급 분석 지원을 제공하여 Dynamic Media 뷰어를 Sites 페이지에서 사용할 때 이벤트 추적을 보다 세밀하게 제어할 수 있습니다.
 
-이미 AEM Assets 및 Sites가 있는 경우 Launch 속성을 AEM 작성자 인스턴스와 통합할 수 있습니다. Launch 통합이 웹 사이트와 연결되면 뷰어에 대한 이벤트 추적이 활성화되면 페이지에 Dynamic Media 구성 요소를 추가할 수 있습니다.
+AEM Assets 및 Sites가 이미 있는 경우 Launch 속성을 AEM 작성자 인스턴스와 통합할 수 있습니다. Launch 통합이 웹 사이트와 연결되면 뷰어에 대한 이벤트 추적을 활성화하여 다이내믹 미디어 구성 요소를 페이지에 추가할 수 있습니다.
 
-AEM Assets 전용 고객 또는 Dynamic Media Classic 고객의 경우 사용자가 뷰어에 대한 포함 코드를 가져와 페이지에 추가할 수 있습니다. 그런 다음 뷰어 이벤트 추적을 위해 Launch 스크립트 라이브러리를 페이지에 수동으로 추가할 수 있습니다.
+AEM Assets 전용 고객 또는 Dynamic Media Classic 고객의 경우 사용자는 뷰어에 대한 포함 코드를 가져와 페이지에 추가할 수 있습니다. 그런 다음 Launch 스크립트 라이브러리를 뷰어 이벤트 추적을 위해 페이지에 수동으로 추가할 수 있습니다.
 
-다음 표에는 Dynamic Media 뷰어 이벤트 및 지원되는 인수가 나와 있습니다.
+다음 표에는 Dynamic Media 뷰어 이벤트와 지원되는 인수가 나와 있습니다.
 
 <table>
    <tbody>
@@ -108,8 +108,8 @@ AEM Assets 전용 고객 또는 Dynamic Media Classic 고객의 경우 사용자
          <td> %event.detail.dm.METADATA.type% </td>
       </tr>
       <tr>
-         <td> 이정표 </td>
-         <td> %event.detail.dm.MILESTONE.milestones% </td>
+         <td> 마일스톤 </td>
+         <td> %event.detail.dm.MILESTONE.milestone% </td>
       </tr>
       <tr>
          <td> 페이지 </td>
@@ -120,7 +120,7 @@ AEM Assets 전용 고객 또는 Dynamic Media Classic 고객의 경우 사용자
          <td> %event.detail.dm.PAGE.label% </td>
       </tr>
       <tr>
-         <td> 일시 정지 </td>
+         <td> 일시 중지 </td>
          <td> %event.detail.dm.PAUSE.timestamp% </td>
       </tr>
       <tr>
@@ -129,10 +129,10 @@ AEM Assets 전용 고객 또는 Dynamic Media Classic 고객의 경우 사용자
       </tr>
       <tr>
          <td> 회전 </td>
-         <td> %event.detail.dm.SPIN.framenumber% </td>
+         <td> %event.detail.dm.SPIN.frameenumber% </td>
       </tr>
       <tr>
-         <td> 정지 </td>
+         <td> 중지 </td>
          <td> %event.detail.dm.STOP.timestamp% </td>
       </tr>
       <tr>
@@ -148,7 +148,7 @@ AEM Assets 전용 고객 또는 Dynamic Media Classic 고객의 경우 사용자
          <td> %event.detail.dm.SWATCH.label% </td>
       </tr>
       <tr>
-         <td> TARG </td>
+         <td> 타르크 </td>
          <td> %event.detail.dm.TARG.frame% </td>
       </tr>
       <tr>

@@ -21,7 +21,7 @@ ht-degree: 3%
 
 ## 사전 요구 사항
 
-다음을 수행해야 합니다.
+다음이 필요합니다.
 
 * 양식 추가 기능 패키지가 설치된 AEM의 작업 인스턴스
 
@@ -29,4 +29,4 @@ ht-degree: 3%
 
 ## 다음 단계
 
-사용자 [WorkflowProcess 인터페이스를 구현하여 사용자 지정 java 코드](./custom-process-step-aem-workflow.md)
+작성하기 [WorkflowProcess 인터페이스를 구현하여 사용자 지정 java 코드](./custom-process-step-aem-workflow.md)

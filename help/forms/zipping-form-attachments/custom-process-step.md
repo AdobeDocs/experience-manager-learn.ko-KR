@@ -1,6 +1,6 @@
 ---
-title: 첨부 파일을 압축하는 사용자 정의 프로세스 단계
-description: 적응형 양식 첨부 파일을 zip 파일에 추가하고 zip 파일을 워크플로우 변수에 저장하는 사용자 지정 프로세스 단계입니다
+title: 첨부 파일을 압축하는 맞춤형 프로세스 단계
+description: 적응형 양식 첨부 파일을 zip 파일에 추가하고 zip 파일을 워크플로우 변수에 저장하는 사용자 지정 프로세스 단계
 feature: Adaptive Forms
 version: 6.5
 topic: Development
@@ -15,17 +15,17 @@ ht-degree: 1%
 
 ---
 
-# 사용자 지정 프로세스 단계
+# 사용자 정의 프로세스 단계
 
 
-양식 첨부 파일이 포함된 zip 파일을 만들기 위해 사용자 지정 프로세스 단계가 구현되었습니다. OSGi 번들 만들기를 잘 모를 경우 [다음 지침을 따르십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en)
+양식 첨부 파일이 포함된 zip 파일을 만들기 위해 사용자 지정 프로세스 단계가 구현되었습니다. OSGi 번들 생성에 익숙하지 않은 경우 다음을 수행하십시오 [다음 지침을 따르십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en)
 
 사용자 지정 프로세스 단계의 코드는 다음을 수행합니다
 
-* 페이로드 폴더 아래에 있는 모든 적응형 양식 첨부 파일을 쿼리합니다. 폴더 이름이 프로세스 단계에 프로세스 인수로 전달됩니다.
+* 페이로드 폴더 아래의 모든 적응형 양식 첨부 파일을 쿼리합니다. 폴더 이름은 프로세스 단계에 프로세스 인수로 전달됩니다.
 
-* 양식 첨부 파일이 포함된 zip 파일을 만들어 페이로드 폴더 아래에 저장합니다.
-* 워크플로우 변수 값 설정(no_of_attachments)
+* 양식 첨부 파일이 포함된 zip 파일을 만들어 페이로드 폴더에 저장합니다.
+* 워크플로우 변수(no_of_attachments) 값 설정
 
 
 
@@ -159,8 +159,8 @@ public class ZipFormAttachments implements WorkflowProcess {
 
 >[!NOTE]
 >
-> 라는 변수가 있는지 확인하십시오.  *no_of_attachments* 이 코드가 작동하려면 워크플로우에서 Double을 입력합니다.
+> 이름이 인 변수가 있는지 확인하십시오.  *no_of_attachments* 이 코드가 작동하도록 워크플로에 Double 형식을 사용합니다.
 
 ## 다음 단계
 
-[ArrayList 워크플로우 변수를 첨부 파일 및 첨부 이름으로 채우기](./custom-process-step.md)
+[첨부 파일 및 첨부 파일 이름으로 ArrayList 워크플로 변수 채우기](./custom-process-step.md)

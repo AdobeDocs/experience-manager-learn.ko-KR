@@ -1,6 +1,6 @@
 ---
-title: unix 서버에서 JVM 힙을 캡처하는 방법
-description: unix 서버에서 실행 중인 Java 프로세스의 힙을 캡처합니다.
+title: Unix 서버에서 JVM의 힙 덤프를 캡처하는 방법
+description: Unix 서버에서 실행 중인 Java 프로세스의 힙 덤프 캡처
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ---
 
-# unix 서버에서 JVM 힙을 캡처하는 방법
+# Unix 서버에서 JVM의 힙 덤프를 캡처하는 방법
 
-*이 비디오에서는 unix 서버에서 JVM 힙을 캡처하는 단계를 안내합니다.*
+*이 비디오는 unix 서버에서 JVM의 힙 덤프를 캡처하는 단계를 안내합니다.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335489?quality=12&learn=on)

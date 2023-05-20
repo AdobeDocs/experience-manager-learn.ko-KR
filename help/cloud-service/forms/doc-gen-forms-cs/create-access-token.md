@@ -1,6 +1,6 @@
 ---
-title: 액세스 토큰용 Exchange JWT
-description: AEM 액세스 토큰을 위해 JSON 웹 토큰(JWT)을 Adobe IMS API와 교환합니다.
+title: JWT를 액세스 토큰으로 교환
+description: JSON 웹 토큰(JWT)을 AEM 액세스 토큰용 Adobe IMS API와 교환합니다.
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -17,12 +17,12 @@ ht-degree: 0%
 
 ---
 
-# 액세스 토큰용 Exchange JWT
+# JWT를 액세스 토큰으로 교환
 
 
-이전 단계에서 만든 JWT는 Adobe IMS API와 액세스 토큰으로 교환된 후 AEM as a Cloud Service에 액세스하는 데 사용할 수 있습니다. 액세스 토큰을 요청하려면 JWT, client_id, client_secret이 포함된 POST 요청을 IMS 인증 서비스로 보냅니다.
+AEM 이전 단계에서 생성된 JWT는 액세스 토큰용 Adobe IMS API와 교환되며, as a Cloud Service으로 액세스하는 데 사용할 수 있습니다. 액세스 토큰을 요청하려면 JWT, client_id, client_secret이 포함된 POST 요청을 IMS 인증 서비스로 전송합니다.
 
-다음 코드는 액세스 토큰용 Exchange JWT를 생성하는 데 사용되었습니다
+다음 코드는 액세스 토큰에 대한 교환 JWT를 생성하는 데 사용되었습니다
 
 ```java
 public String getAccessToken() {

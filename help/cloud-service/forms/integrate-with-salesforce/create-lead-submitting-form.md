@@ -1,6 +1,6 @@
 ---
-title: 양식 데이터 모델의 제출 작업을 사용하여 양식 제출
-description: 양식 제출 시 리드 개체를 만들어 Salesforce 통합을 테스트하기 위한 적응형 양식을 만듭니다
+title: 양식 데이터 모델의 제출 액션을 사용하여 양식 제출
+description: 적응형 양식을 만들어 양식 제출 시 잠재 고객 개체를 만들어 Salesforce 통합을 테스트합니다.
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
@@ -18,8 +18,8 @@ ht-degree: 0%
 
 ---
 
-# 양식 제출에서 테스트 리드 생성
+# 양식 제출로 리드 생성 테스트
 
-Sales Force 양식 데이터 모델을 기반으로 적응형 양식을 만들고 양식을 제출하여 Salesforce에서 리드 생성을 테스트합니다
+Sales Force 양식 데이터 모델을 기반으로 적응형 양식을 만들고 양식을 제출하여 Salesforce에서 잠재 고객 생성 테스트
 
 >[!VIDEO](https://video.tv.adobe.com/v/331758?quality=12&learn=on)

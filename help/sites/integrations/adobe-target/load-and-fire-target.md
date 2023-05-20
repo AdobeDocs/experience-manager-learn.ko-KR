@@ -1,6 +1,6 @@
 ---
 title: Target 호출 로드 및 실행
-description: Launch 규칙을 사용하여 매개 변수를 로드하고 페이지 요청에 전달하며 사이트 페이지에서 Target 호출을 실행하는 방법을 알아봅니다. 페이지 정보는 검색 및 매개 변수로 전달됩니다. Adobe 클라이언트 데이터 레이어를 사용하면 웹 페이지에서 방문자의 경험에 대한 데이터를 수집 및 저장한 다음 이 데이터에 쉽게 액세스할 수 있습니다.
+description: Launch 규칙을 사용하여 매개 변수를 로드하고, 페이지 요청에 전달하며, 사이트 페이지에서 Target 호출을 실행하는 방법을 알아봅니다. 페이지 정보는 검색 및 매개 변수로 전달됩니다. Adobe 클라이언트 데이터 레이어를 사용하면 웹 페이지에서 방문자의 경험에 대한 데이터를 수집 및 저장한 다음 이 데이터에 쉽게 액세스할 수 있습니다.
 feature: Core Components, Adobe Client Data Layer
 topics: integrations, administration, development
 audience: administrator, developer
@@ -16,31 +16,31 @@ exl-id: ec048414-2351-4e3d-b5f1-ade035c07897
 source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
 source-wordcount: '608'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
 # Target 호출 로드 및 실행 {#load-fire-target}
 
-Launch 규칙을 사용하여 매개 변수를 로드하고 페이지 요청에 전달하며 사이트 페이지에서 Target 호출을 실행하는 방법을 알아봅니다. 웹 페이지 정보는 검색 및 매개 변수로 전달됩니다. Adobe 클라이언트 데이터 레이어를 사용하면 웹 페이지에서 방문자의 경험에 대한 데이터를 수집 및 저장한 다음 이 데이터에 쉽게 액세스할 수 있습니다.
+Launch 규칙을 사용하여 매개 변수를 로드하고, 페이지 요청에 전달하며, 사이트 페이지에서 Target 호출을 실행하는 방법을 알아봅니다. 웹 페이지 정보는 검색 및 매개 변수로 전달됩니다. Adobe 클라이언트 데이터 레이어를 사용하면 웹 페이지에서 방문자의 경험에 대한 데이터를 수집 및 저장한 다음 이 데이터에 쉽게 액세스할 수 있습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/41243?quality=12&learn=on)
 
 ## 페이지 로드 규칙
 
-Adobe 클라이언트 데이터 계층은 이벤트 기반 데이터 레이어입니다. AEM 페이지 데이터 레이어가 로드되면 이벤트 `cmp:show` 를 트리거합니다. 비디오에서 `Launch Library Loaded` 규칙은 사용자 지정 이벤트를 사용하여 호출됩니다. 아래에서는 사용자 지정 이벤트 및 데이터 요소에 대해 비디오에 사용되는 코드 조각을 찾을 수 있습니다.
+Adobe 클라이언트 데이터 레이어 는 이벤트 기반 데이터 레이어입니다. AEM Page 데이터 레이어가 로드되면 이벤트를 트리거합니다 `cmp:show` . 비디오에서 `Launch Library Loaded` 사용자 지정 이벤트를 사용하여 규칙이 호출됩니다. 아래에서는 데이터 요소뿐만 아니라 사용자 지정 이벤트에 대한 비디오에 사용되는 코드 조각을 찾을 수 있습니다.
 
-### 사용자 지정 페이지에 표시된 이벤트{#page-event}
+### 사용자 지정 페이지 표시 이벤트{#page-event}
 
-![페이지 표시된 이벤트 구성 및 사용자 지정 코드](assets/load-and-fire-target-call.png)
+![이벤트 구성 및 사용자 지정 코드가 표시된 페이지](assets/load-and-fire-target-call.png)
 
-Launch 속성에서 **규칙**&#x200B;에 새 **Event**&#x200B;을 추가합니다.
+Launch 속성에 새 을(를) 추가합니다. **이벤트** (으)로 **규칙**
 
 + __확장:__ 코어
 + __이벤트 유형:__ 사용자 지정 코드
-+ __이름:__ 페이지 표시 이벤트 핸들러(또는 뭔가 설명적인 것)
++ __이름:__ 페이지 표시 이벤트 핸들러(또는 설명적인 것)
 
-__Open Editor__ 단추를 탭하고 다음 코드 조각에 붙여 넣습니다. 이 코드 __는__&#x200B;이벤트 구성&#x200B;__및 후속__&#x200B;작업&#x200B;__에 추가해야 합니다.__
+탭 __편집기 열기__ 단추를 클릭하여 다음 코드 조각에 붙여넣습니다. 이 코드 __필수__ 다음에 추가: __이벤트 구성__ 및 후속 작업 __작업__.
 
 ```javascript
 // Define the event handler function
@@ -80,20 +80,20 @@ window.adobeDataLayer.push(function (dataLayer) {
 });
 ```
 
-사용자 지정 함수는 `pageShownEventHandler`을 정의하고, AEM 코어 구성 요소에서 제공하는 이벤트를 수신하고, 핵심 구성 요소에서 관련 정보를 파생하고, 이벤트 개체로 패키지하고, 페이로드에서 파생된 이벤트 정보로 Launch 이벤트를 트리거합니다.
+사용자 지정 함수는 `pageShownEventHandler`및 는 AEM 핵심 구성 요소에서 제공하는 이벤트를 수신하고, 핵심 구성 요소와 관련된 정보를 파생하고, 이벤트 개체로 패키징하며, 페이로드에서 파생된 이벤트 정보로 Launch 이벤트를 트리거합니다.
 
-Launch 규칙은 규칙의 사용자 지정 코드 코드 조각 정의 내에서 사용할 수 있는 __만 있는 Launch의 `trigger(...)` 함수를 사용하여 트리거됩니다.__
+Launch 규칙은 Launch `trigger(...)` 함수 __전용__ 규칙의 이벤트 사용자 지정 코드 조각 정의 내에서 사용할 수 있습니다.
 
-`trigger(...)` 함수는 이벤트 개체를 매개 변수로 취합니다. 이 매개 변수는 Launch 데이터 요소에, 이름이 `event`인 Launch의 다른 예약 이름으로 차례로 노출됩니다. 이제 Launch의 데이터 요소는 `event.component['someKey']` 구문을 사용하여 `event` 개체에서 이 이벤트 개체의 데이터를 참조할 수 있습니다.
+다음 `trigger(...)` 함수는 이벤트 개체를 Launch 데이터 요소에 라는 Launch의 다른 예약된 이름으로 노출되는 매개 변수로 사용합니다. `event`. Launch의 데이터 요소는 이제 `event` 과 같은 구문을 사용하는 개체 `event.component['someKey']`.
 
-`trigger(...)`이 이벤트의 사용자 지정 코드 이벤트 유형의 컨텍스트 외부에 사용되는 경우(예: 작업에서) Launch 속성과 통합된 웹 사이트에서 JavaScript 오류 `trigger is undefined`가 발생합니다.
+If `trigger(...)` 는 이벤트의 사용자 지정 코드 이벤트 유형(예: 작업)의 컨텍스트 외부에 사용되며 JavaScript 오류입니다 `trigger is undefined` Launch 속성과 통합된 웹 사이트에서 throw됩니다.
 
 
 ### 데이터 요소
 
 ![데이터 요소](assets/data-elements.png)
 
-Adobe Launch 데이터 요소는 사용자 지정 페이지에 표시된 이벤트](#page-event)에서 트리거된 이벤트 개체 [의 데이터를 코어 확장의 사용자 지정 코드 데이터 요소 유형을 통해 Adobe Target에서 사용할 수 있는 변수에 매핑합니다.
+Adobe 실행 데이터 요소 는 이벤트 객체의 데이터를 매핑합니다 [사용자 지정 페이지 표시 이벤트에서 트리거됨](#page-event) 코어 확장의 사용자 지정 코드 데이터 요소 유형을 통해 Adobe Target에서 사용할 수 있는 변수에 매핑합니다.
 
 #### 페이지 ID 데이터 요소
 
@@ -103,7 +103,7 @@ if (event && event.id) {
 }
 ```
 
-이 코드는 코어 구성 요소의 생성 고유 ID를 반환합니다.
+이 코드는 핵심 구성 요소의 생성 고유 ID를 반환합니다.
 
 ![페이지 ID](assets/pageid.png)
 
@@ -135,7 +135,7 @@ if (event && event.component && event.component.hasOwnProperty('dc:title')) {
 
 ### 웹 페이지에서 mbox가 실행되지 않는 이유는 무엇입니까?
 
-#### mboxDisable 쿠키가 설정되지 않은 경우 오류 메시지가 표시됩니다
+#### mboxDisable 쿠키가 설정되지 않은 경우 오류 메시지
 
 ![Target 쿠키 도메인 오류](assets/target-cookie-error.png)
 
@@ -145,8 +145,8 @@ if (event && event.component && event.component.hasOwnProperty('dc:title')) {
 
 #### 솔루션
 
-Target 고객은 테스트 또는 간단한 개념 입증 용도로 Target에 클라우드 기반 인스턴스를 사용하는 경우가 있습니다. 이러한 도메인 및 기타 많은 다른 도메인은 공용 접미사 목록 의 일부입니다.
-최신 브라우저에서는 `targetGlobalSettings()` 설정을 사용하여 사용자 지정하지 않는 한 이러한 도메인을 사용하는 경우 쿠키를 저장하지 않습니다.`cookieDomain`
+Target 고객은 테스트나 간단한 개념 입증 용도로 Target과 함께 클라우드 기반 인스턴스를 사용하는 경우가 있습니다. 이러한 도메인 및 기타 많은 다른 도메인은 공용 접미사 목록 의 일부입니다.
+최신 브라우저에서는 다음을 사용자 지정하지 않는 한 이러한 도메인을 사용하는 경우 쿠키를 저장하지 않습니다. `cookieDomain` 을 사용하여 설정 `targetGlobalSettings()`.
 
 ```
 window.targetGlobalSettings = {  
@@ -161,7 +161,7 @@ window.targetGlobalSettings = {
 ## 지원 링크
 
 + [Adobe 클라이언트 데이터 레이어 설명서](https://github.com/adobe/adobe-client-data-layer/wiki)
-+ [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
++ [Adobe Experience Cloud 디버거 - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
 + [Adobe Experience Cloud Debugger - Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
 + [Adobe 클라이언트 데이터 레이어 및 핵심 구성 요소 설명서 사용](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)
 + [Adobe Experience Platform Debugger 소개](https://experienceleague.adobe.com/docs/debugger-learn/tutorials/experience-platform-debugger/introduction-to-the-experience-platform-debugger.html)

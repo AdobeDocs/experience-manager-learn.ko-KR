@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # FormsIVS 및 OutputIVS에서 사용자 지정 XDP 및 데이터 파일을 업데이트하는 방법
 
-*이 비디오에서는 테스트 목적으로 FormsIVS 및 OutputIVS에서 사용자 지정 XDP 및 데이터 파일을 업데이트하는 단계를 안내합니다.*
+*이 비디오는 테스트용으로 FormsIVS 및 OutputIVS에서 사용자 지정 XDP 및 데이터 파일을 업데이트하는 단계를 안내합니다.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335513?quality=12&learn=on)

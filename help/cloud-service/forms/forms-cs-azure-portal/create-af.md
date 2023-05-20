@@ -1,6 +1,6 @@
 ---
-title: Azure 저장소에 응용 양식 데이터 저장
-description: Azure 저장소에 데이터를 저장하도록 적응형 양식 만들기 및 구성
+title: Azure Storage에 적응형 양식 데이터 저장
+description: Azure Storage에 데이터를 저장하도록 적응형 양식 만들기 및 구성
 feature: Adaptive Forms
 type: Documentation
 role: Developer
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# Azure 저장 공간 지원 양식 데이터 모델 만들기
+# Azure 스토리지 지원 양식 데이터 모델 만들기
 
-Azure Blob Storage 백엔드 양식 데이터 모델을 만듭니다.
+Azure Blob 저장 공간 백엔드 양식 데이터 모델을 만듭니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335423?quality=12&learn=on)

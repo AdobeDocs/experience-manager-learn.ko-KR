@@ -1,6 +1,6 @@
 ---
 title: AEM as a Cloud Service 소개
-description: AEM as a Cloud Service 구현에 대해 다르게 생각하는 방법을 알아봅니다.
+description: AEM as a Cloud Service 구현에 대해 다르게 생각하는 방법에 대해 알아봅니다.
 version: Cloud Service
 topic: Migration, Upgrade
 role: Developer
@@ -17,6 +17,6 @@ ht-degree: 17%
 
 # AEM as a Cloud Service 소개
 
-AEM as a Cloud Service 구현에 대해 다르게 생각하는 방법을 알아봅니다.
+AEM as a Cloud Service 구현에 대해 다르게 생각하는 방법에 대해 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336956?quality=12&learn=on)

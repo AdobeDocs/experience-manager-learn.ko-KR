@@ -1,5 +1,5 @@
 ---
-title: XMLForm 서비스에 대한 bmc 풀 크기를 조정하는 단계(2/2)
+title: XMLForm 서비스의 bmc 풀 크기를 조정하는 단계(2/2)
 description: XMLFormService 매개 변수 구성
 type: Troubleshooting
 role: Developer
@@ -17,8 +17,8 @@ ht-degree: 0%
 ---
 
 
-# XMLForm 서비스에 대한 bmc 풀 크기를 조정하는 단계(2/2)
+# XMLForm 서비스의 bmc 풀 크기를 조정하는 단계(2/2)
 
-*이 비디오에서는 XMLFormService(2/2)의 bmc 풀 크기를 조정하는 단계를 안내합니다.*
+*이 비디오는 XMLFormService에 대해 bmc 풀 크기를 조정하는 단계를 안내합니다(2/2).*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335553?quality=12&learn=on)

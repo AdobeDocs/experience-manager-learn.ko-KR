@@ -1,6 +1,6 @@
 ---
-title: Adobe Workfront과 AEM Assets Essentials 간 메타데이터 매핑
-description: Workfront 필드와 Assets Essentials 속성 간에 메타데이터 매핑을 구성하고 매핑된 메타데이터를 표시하도록 Assets Essentials을 구성하는 방법을 알아봅니다.
+title: Adobe Workfront과 AEM Assets Essentials 간의 메타데이터 매핑
+description: Workfront 필드와 Assets Essentials 속성 간의 메타데이터 매핑을 구성하고 매핑된 메타데이터를 표시하도록 Assets Essentials을 구성하는 방법에 대해 알아봅니다.
 version: Cloud Service
 feature: Assets Essentials
 topic: Content Management, Integrations
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # 메타데이터 매핑
 
-Workfront 필드와 Assets Essentials 속성 간에 메타데이터 매핑을 구성하고 매핑된 값을 표시하도록 Assets Essentials을 구성하는 방법을 알아봅니다.
+Workfront 필드와 Assets Essentials 속성 간의 메타데이터 매핑을 구성하고 매핑된 값을 표시하도록 Assets Essentials을 구성하는 방법에 대해 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336458?quality=12&learn=on)

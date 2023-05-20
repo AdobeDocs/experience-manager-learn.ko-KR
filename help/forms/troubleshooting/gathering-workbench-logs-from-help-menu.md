@@ -1,6 +1,6 @@
 ---
 title: 도움말 메뉴에서 Workbench 로그를 수집하는 방법
-description: 도움말 메뉴에서 Workbench 로그를 수집하는 절차
+description: 도움말 메뉴에서 Workbench 로그를 수집하는 단계
 type: Troubleshooting
 role: Developer
 level: Beginner

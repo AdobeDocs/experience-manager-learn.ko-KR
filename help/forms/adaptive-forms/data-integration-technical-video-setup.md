@@ -1,6 +1,6 @@
 ---
-title: AEM Forms과 데이터 통합 설정
-description: JDBC 데이터 소스에 데이터 연결 설정
+title: AEM Forms과의 데이터 통합 설정
+description: JDBC 데이터 소스에 대한 데이터 연결 설정
 feature: Adaptive Forms,Workflow
 version: 6.4,6.5
 topic: Development
@@ -15,18 +15,18 @@ ht-degree: 0%
 
 ---
 
-# AEM Forms과 데이터 통합 설정 {#set-up-data-integration-with-aem-forms}
+# AEM Forms과의 데이터 통합 설정 {#set-up-data-integration-with-aem-forms}
 
-JDBC 데이터 소스에 데이터 연결 설정
+JDBC 데이터 소스에 대한 데이터 연결 설정
 
 >[!VIDEO](https://video.tv.adobe.com/v/17724?quality=12&learn=on)
 
 >[!NOTE]
 >
->AEM 인스턴스의 OSGi 번들을 통해 MySQL JDBC 드라이버를 설치해야 합니다.
+>AEM 인스턴스에서 OSGi 번들을 통해 MySQL JDBC 드라이버를 설치해야 합니다.
 
 ## 지원 자료 {#supporting-materials}
 
 * [MySQL JDBC OSGi 번들 다운로드](https://dev.mysql.com/downloads/connector/j/)
 
-   * 를 통해 JAR 파일을 다운로드, 압축 해제 및 설치합니다 [AEM 웹 콘솔](http://localhost:4502/system/console/bundles)
+   * 를 통해 JAR 파일을 다운로드, 압축 해제 및 설치합니다. [AEM 웹 콘솔](http://localhost:4502/system/console/bundles)

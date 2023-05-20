@@ -1,6 +1,6 @@
 ---
-title: Forms 지원 서비스에 대한 이해 테스트
-description: 연습 완료
+title: Forms 멤버에 대한 이해 테스트
+description: 연습을 완료합니다
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -22,4 +22,4 @@ ht-degree: 0%
 
 수정 `assemble2pdfs.ddx` 3개의 PDF 파일을 어셈블할 파일입니다.
 
-세 번째 pdf를 리소스/파일 폴더 아래에 배치합니다.
+세 번째 pdf는 resources/pdffiles 폴더 아래에 배치됩니다.

@@ -1,6 +1,6 @@
 ---
 title: AEM Forms JEE에서 사용자 및 그룹을 추가하는 방법
-description: AEM Forms JEE에서 사용자 및 그룹을 추가하는 절차
+description: AEM Forms JEE에서 사용자 및 그룹을 추가하는 단계
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # AEM JEE에서 사용자 및 그룹을 추가하는 방법
 
-*이 비디오에서는 사용자 관리에서 사용자 및 그룹을 추가하는 프로세스를 안내합니다.*
+*이 비디오는 사용자 관리에서 사용자 및 그룹을 추가하는 프로세스를 안내합니다.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335485?quality=12&learn=on)

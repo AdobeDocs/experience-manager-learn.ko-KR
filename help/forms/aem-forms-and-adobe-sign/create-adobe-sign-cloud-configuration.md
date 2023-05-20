@@ -1,6 +1,6 @@
 ---
-title: Acrobat Sign Cloud 구성 만들기
-description: AEM의 클라우드 서비스 구성을 사용하여 AEM과 다른 클라우드 애플리케이션 간의 통합을 만들 수 있습니다. 다음 비디오에서는 AEM을 Acrobat Sign과 통합하기 위해 클라우드 서비스 구성을 만드는 데 필요한 단계를 설명합니다.
+title: Acrobat Sign 클라우드 구성 만들기
+description: AEM의 클라우드 서비스 구성을 사용하면 AEM과 다른 클라우드 애플리케이션 간의 통합을 만들 수 있습니다. 다음 비디오에서는 AEM을 Acrobat Sign과 통합하기 위한 클라우드 서비스 구성을 만드는 데 필요한 단계를 설명합니다.
 feature: Adaptive Forms
 thumbnail: 38179.jpg
 kt: 6033
@@ -15,10 +15,10 @@ ht-degree: 0%
 
 ---
 
-# Acrobat Sign Cloud 구성 만들기
+# Acrobat Sign 클라우드 구성 만들기
 
-AEM의 클라우드 서비스 구성을 사용하여 AEM과 다른 클라우드 애플리케이션 간의 통합을 만들 수 있습니다.
+AEM의 클라우드 서비스 구성을 사용하면 AEM과 다른 클라우드 애플리케이션 간의 통합을 만들 수 있습니다.
 
-다음 비디오에서는 AEM을 Acrobat Sign과 통합하기 위해 클라우드 서비스 구성을 만드는 데 필요한 단계를 설명합니다
+다음 비디오에서는 AEM을 Acrobat Sign과 통합하기 위한 클라우드 서비스 구성을 만드는 데 필요한 단계를 설명합니다
 
 >[!VIDEO](https://video.tv.adobe.com/v/38179?quality=12&learn=on)

@@ -1,6 +1,6 @@
 ---
-title: AEM Dynamic Media에서 사용자 지정 비디오 축소판 사용
-description: AEM Assets 사용자 정의 비디오 축소판 그림에서는 작성자가 생성한 축소판 집합에서 적절한 축소판을 선택할 수 있습니다. 비디오에 대해 생성된 축소판 그림 수는 쉽게 사용자 지정할 수 있습니다.
+title: AEM Dynamic Media에서 사용자 지정 비디오 썸네일 사용
+description: AEM Assets 사용자 지정 비디오 썸네일을 사용하면 작성자가 생성된 썸네일 세트에서 적절한 썸네일을 선택할 수 있습니다. 비디오에 대해 생성된 썸네일 수는 손쉽게 맞춤화할 수 있습니다.
 feature: Video Profiles
 version: 6.4, 6.5
 topic: Content Management
@@ -14,13 +14,13 @@ ht-degree: 3%
 
 ---
 
-# AEM Dynamic Media에서 사용자 지정 비디오 축소판 사용{#using-custom-video-thumbnail-with-aem-dynamic-media}
+# AEM Dynamic Media에서 사용자 지정 비디오 썸네일 사용{#using-custom-video-thumbnail-with-aem-dynamic-media}
 
-AEM Assets 사용자 정의 비디오 축소판 그림에서는 작성자가 생성한 축소판 집합에서 적절한 축소판을 선택할 수 있습니다. 비디오에 대해 생성된 축소판 그림 수는 쉽게 사용자 지정할 수 있습니다.
+AEM Assets 사용자 지정 비디오 썸네일을 사용하면 작성자가 생성된 썸네일 세트에서 적절한 썸네일을 선택할 수 있습니다. 비디오에 대해 생성된 썸네일 수는 손쉽게 맞춤화할 수 있습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16467?quality=12&learn=on)
 
-## 비디오 축소판 사용자 지정
+## 비디오 썸네일 사용자 지정
 
 >[!VIDEO](https://video.tv.adobe.com/v/18867?quality=12&learn=on)
 

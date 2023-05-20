@@ -1,6 +1,6 @@
 ---
-title: 컨텐츠 게시는 AEM as a Cloud Service에서 어떻게 작동합니까?
-description: 컨텐츠 배포 및 Adobe 파이프라인의 개념을 포함하여 AEM as a Cloud Service에서 컨텐츠 게시가 작동하는 방식을 살펴봅니다.
+title: AEMas a Cloud Service 에서 컨텐츠 게시는 어떻게 작동합니까?
+description: 컨텐츠 배포 및 Adobe 파이프라인 개념을 포함하여 AEM에서 컨텐츠 게시가 as a Cloud Service으로 작동하는 방식을 살펴봅니다.
 role: Developer
 level: Beginner
 type: Tutorial
@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # 컨텐츠 게시
 
-컨텐츠 배포 및 Adobe 파이프라인의 개념을 포함하여 AEM as a Cloud Service에서 컨텐츠 게시가 작동하는 방식을 살펴봅니다.
+컨텐츠 배포 및 Adobe 파이프라인 개념을 포함하여 AEM에서 컨텐츠 게시가 as a Cloud Service으로 작동하는 방식을 살펴봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330554?quality=12&learn=on)

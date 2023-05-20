@@ -1,6 +1,6 @@
 ---
-title: Azure 저장 공간 지원 양식 데이터 모델 만들기
-description: 양식 데이터 모델을 사용하여 AEM Forms CS와 Azure 저장 공간 통합
+title: Azure 스토리지 지원 양식 데이터 모델 만들기
+description: 양식 데이터 모델을 사용하여 AEM Forms CS와 Azure 스토리지 통합
 feature: Adaptive Forms
 type: Documentation
 role: Developer
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# Azure 저장 공간 지원 양식 데이터 모델 만들기
+# Azure 스토리지 지원 양식 데이터 모델 만들기
 
-Azure 저장 공간 지원 양식 데이터 모델 만들기
+Azure 스토리지 지원 양식 데이터 모델 만들기
 
 >[!VIDEO](https://video.tv.adobe.com/v/335385?quality=12&learn=on)

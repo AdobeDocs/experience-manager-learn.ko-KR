@@ -1,6 +1,6 @@
 ---
 title: AEM Forms에서 Microsoft Dynamics 사용
-description: 이 비디오에서는 AEM Forms을 백엔드 데이터 소스로 사용하여 인터랙티브하고 개인화된 커뮤니케이션을 전달하는 방법을 보여주는 워크플로우를 안내합니다.
+description: 이 비디오는 AEM Forms이 Microsoft Dynamics를 백엔드 데이터 소스로 사용하여 대화형 개인화된 통신을 제공하는 방법을 보여 주는 워크플로우를 안내합니다.
 feature: Adaptive Forms
 version: 6.4,6.5
 topic: Development
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # AEM Forms에서 Microsoft Dynamics 사용{#using-microsoft-dynamics-with-aem-forms}
 
-AEM Forms 데이터 통합을 사용하면 서로 다른 데이터 소스를 구성하고 연결할 수 있습니다. 기본적으로 지원되는 옵션은 다음과 같습니다. 그러나 사용자 지정이 거의 없는 경우에도 다른 데이터 소스를 통합할 수 있습니다.
+AEM Forms 데이터 통합을 사용하면 서로 다른 데이터 소스를 구성하고 연결할 수 있습니다. 기본적으로 다음과 같은 기능이 지원됩니다. 하지만 사용자 정의가 거의 없으므로 다른 데이터 소스도 통합할 수 있습니다.
 
 관계형 데이터베이스 - MySQL, Microsoft SQL Server, IBM DB2 및 Oracle RDBMS
 1. AEM 사용자 프로필
@@ -25,7 +25,7 @@ AEM Forms 데이터 통합을 사용하면 서로 다른 데이터 소스를 구
 1. SOAP 기반 웹 서비스
 1. OData 서비스
 
-이 비디오에서는 AEM Forms을 백엔드 데이터 소스로 사용하여 인터랙티브하고 개인화된 커뮤니케이션을 전달하는 방법을 보여주는 워크플로우를 안내합니다.
+이 비디오는 AEM Forms이 Microsoft Dynamics를 백엔드 데이터 소스로 사용하여 대화형 개인화된 통신을 제공하는 방법을 보여 주는 워크플로우를 안내합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/20971?quality=12&learn=on)
 

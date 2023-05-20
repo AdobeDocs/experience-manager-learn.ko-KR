@@ -1,6 +1,6 @@
 ---
 title: 적응형 양식 데이터 저장 및 검색
-description: 데이터베이스에서 적응형 양식 데이터를 저장하고 검색합니다. 이 기능을 사용하면 양식 작성자가 양식을 저장하고 나중에 양식을 계속 채울 수 있습니다.
+description: 데이터베이스에서 적응형 양식 데이터를 저장하고 검색하는 중입니다. 이 기능을 사용하면 양식 작성기에서 양식을 저장하고 나중에 양식을 계속 채울 수 있습니다.
 feature: Adaptive Forms
 topic: Development
 role: Developer
@@ -17,11 +17,11 @@ ht-degree: 0%
 
 # 적응형 양식 데이터 저장 및 검색
 
-이 문서에서는 데이터베이스에서 적응형 양식 데이터를 저장 및 검색하는 단계를 안내합니다. MySQL 데이터베이스는 적응형 양식 데이터를 저장하는 데 사용되었습니다. 높은 수준에서 사용 사례를 달성하는 단계는 다음과 같습니다.
+이 문서에서는 데이터베이스에서 적응형 양식 데이터를 저장하고 검색하는 단계를 설명합니다. 적응형 양식 데이터를 저장하는 데 MySQL 데이터베이스가 사용되었습니다. 높은 수준에서 사용 사례를 달성하기 위한 단계는 다음과 같습니다.
 
 * [데이터 소스 구성](#Configure-Data-Source)
-* [데이터베이스에 데이터를 쓸 서블릿 만들기](#create-servlet)
-* [저장된 데이터를 가져올 OSGI 서비스 만들기](#create-osgi-service)
+* [데이터베이스에 데이터를 쓰는 서블릿 만들기](#create-servlet)
+* [저장된 데이터를 가져오기 위한 OSGI 서비스 만들기](#create-osgi-service)
 * [클라이언트 라이브러리 만들기](#create-client-library)
 * [적응형 양식 템플릿 및 페이지 구성 요소 만들기](#form-template-and-page-component)
 * [기능 데모](#capability-demo)
@@ -29,11 +29,11 @@ ht-degree: 0%
 
 ## 데이터 소스 구성 {#Configure-Data-Source}
 
-Apache Sling 연결의 풀링된 데이터 소스는 적응형 양식 데이터를 저장하는 데 사용할 데이터베이스를 가리키도록 구성됩니다. 다음 스크린샷은 내 인스턴스에 대한 구성을 보여줍니다. 다음 속성을 복사하여 붙여넣을 수 있습니다
+Apache Sling 연결의 풀링된 데이터 소스는 적응형 양식 데이터를 저장하는 데 사용할 데이터베이스를 가리키도록 구성됩니다. 다음 스크린샷은 내 인스턴스에 대한 구성을 보여 줍니다. 다음 속성을 복사하여 붙여넣을 수 있습니다
 
-* 데이터 소스 이름: aemformstutorial - 내 코드에 사용되는 이름입니다.
+* 데이터 소스 이름:aemformstutorial - 내 코드에 사용되는 이름입니다.
 
-* JDBC 드라이버 클래스:com.mysql.jdbc.드라이버
+* JDBC 드라이버 클래스:com.mysql.jdbc.Driver
 
 * JDBC 연결 URL:jdbc:mysql://localhost:3306/aemformstutorial
 
@@ -41,7 +41,7 @@ Apache Sling 연결의 풀링된 데이터 소스는 적응형 양식 데이터�
 
 ### 서블릿 만들기 {#create-servlet}
 
-다음은 데이터베이스에서 적응형 양식 데이터를 삽입/업데이트하는 서블릿의 코드입니다. Apache Sling 연결의 풀링된 데이터 소스는 AEM ConfigMgr을 사용하여 구성되며 26행에서 참조됩니다. 나머지 코드는 매우 간단합니다. 이 코드는 데이터베이스에 새 행을 삽입하거나 기존 행을 업데이트합니다. 저장된 적응형 양식 데이터는 GUID와 연결됩니다. 그런 다음 양식 데이터를 업데이트하는 데 동일한 GUID를 사용합니다.
+다음은 데이터베이스에 적응형 양식 데이터를 삽입/업데이트하는 서블릿의 코드입니다. Apache Sling 연결의 풀링된 데이터 소스는 AEM ConfigMgr을 사용하여 구성하며 26행에서 이를 참조합니다. 나머지 코드는 매우 간단합니다. 데이터베이스에 새 행을 삽입하거나 기존 행을 업데이트합니다. 저장된 적응형 양식 데이터는 GUID와 연결됩니다. 그런 다음 양식 데이터를 업데이트하는 데 동일한 GUID를 사용합니다.
 
 ```java
 package com.techmarketing.core.servlets;
@@ -211,7 +211,7 @@ public class StoreDataInDB extends SlingAllMethodsServlet {
 
 ## 데이터를 가져올 OSGI 서비스 만들기 {#create-osgi-service}
 
-저장된 적응형 양식 데이터를 가져오도록 다음 코드가 작성됩니다. 단순 쿼리는 주어진 GUID와 연결된 적응형 양식 데이터를 가져오는 데 사용됩니다. 가져온 데이터가 호출 애플리케이션으로 반환됩니다. 이 코드에서 참조되는 첫 번째 단계에서 생성된 동일한 데이터 소스입니다.
+다음 코드는 저장된 적응형 양식 데이터를 가져오기 위해 작성되었습니다. 단순 쿼리는 주어진 GUID와 연결된 적응형 양식 데이터를 가져오는 데 사용됩니다. 그런 다음 가져온 데이터가 호출 응용 프로그램으로 반환됩니다. 이 코드에서 참조한 첫 번째 단계에서 생성된 동일한 데이터 소스입니다.
 
 ```java
 package com.techmarketing.core.impl;
@@ -276,7 +276,7 @@ public class AemformWithDB implements AemFormsAndDB {
 
 ## 클라이언트 라이브러리 만들기 {#create-client-library}
 
-AEM 클라이언트 라이브러리는 모든 클라이언트 측 javascript 코드를 관리합니다. 이 문서의 경우 안내서 브리지 API를 사용하여 적응형 양식 데이터를 가져오기 위한 간단한 Javascript를 만들었습니다. 적응형 양식 데이터를 가져오면 서블릿에 POST 호출이 수행되어 데이터베이스에 적응형 양식 데이터를 삽입하거나 업데이트합니다. getALLUrlParams 함수는 URL에서 매개 변수를 반환합니다. 이 값은 데이터를 업데이트하려는 경우 사용됩니다. 나머지 기능은 .savebutton 클래스의 click 이벤트와 연결된 코드에서 처리됩니다. guid 매개 변수가 URL에 있으면 삽입 작업이 아닌 경우 업데이트 작업을 수행해야 합니다.
+AEM 클라이언트 라이브러리는 모든 클라이언트측 javascript 코드를 관리합니다. 이 문서의 경우 안내서 브리지 API를 사용하여 적응형 양식 데이터를 가져오기 위한 간단한 Javascript를 만들었습니다. 적응형 양식 데이터를 가져오면 서블릿에 대한 POST 호출이 수행되어 데이터베이스에 적응형 양식 데이터를 삽입하거나 업데이트합니다. getALLUrlParams 함수는 URL에서 매개 변수를 반환합니다. 데이터를 업데이트하려는 경우 사용됩니다. 나머지 기능은 .savebutton 클래스의 click 이벤트와 연결된 코드에서 처리됩니다. guid 매개 변수가 URL에 있으면 삽입 작업이 아닌 경우 업데이트 작업을 수행해야 합니다.
 
 ```javascript
 function getAllUrlParams(url) {
@@ -413,15 +413,15 @@ $(document).ready(function()
 
 #### 서버에 배포 {#deploy-on-your-server}
 
-AEM Forms 인스턴스에서 이 기능을 테스트하려면 다음 단계를 수행하십시오
+AEM Forms 인스턴스에서 이 기능을 테스트하려면 다음 단계를 따르십시오
 
-* [로컬 시스템에서 DemoAssets.zip을 다운로드하여 압축 해제합니다](assets/demoassets.zip)
-* Felix 웹 콘솔을 사용하여 techmarketingdemos.jar 및 myqldriver.jar 번들을 배포하고 시작합니다.
-*** MYSQL Workbench를 사용하여 emformstusort.sql을 가져옵니다. 이렇게 하면 데이터베이스에 필요한 스키마와 테이블이 만들어집니다
-* AEM 패키지 관리자를 사용하여 StoreAndRetrieve.zip을 가져옵니다. 이 패키지에는 적응형 양식 템플릿, 페이지 구성 요소 클라이언트 라이브러리 및 샘플 적응형 양식 및 데이터 소스 구성이 들어 있습니다.
-* configMgr에 로그인합니다. &quot;Apache Sling 연결의 풀링된 데이터 소스를 검색합니다. aemformpostorial과 연결된 데이터 소스 항목을 열고 데이터베이스 인스턴스별 사용자 이름과 암호를 입력합니다.
+* [로컬 시스템에 DemoAssets.zip 을 다운로드하고 압축 해제합니다.](assets/demoassets.zip)
+* Felix 웹 콘솔을 사용하여 techmarketingdemos.jar 및 mysqldriver.jar 번들을 배포하고 시작합니다.
+*** MYSQL Workbench를 사용하여 aemformstutorial.sql을 가져옵니다. 이렇게 하면 데이터베이스에 필요한 스키마와 테이블이 만들어집니다
+* AEM 패키지 관리자를 사용하여 StoreAndRetrieve.zip을 가져옵니다. 이 패키지에는 적응형 양식 템플릿, 페이지 구성 요소 클라이언트 라이브러리, 샘플 적응형 양식 및 데이터 소스 구성이 포함되어 있습니다.
+* configMgr에 로그인합니다. &quot;Apache Sling 연결의 풀링된 데이터 소스&quot;를 검색합니다. Aemformstuorial과 연관된 데이터 소스 항목을 열고 데이터베이스 인스턴스에 해당하는 사용자 이름과 암호를 입력합니다.
 * 적응형 양식 열기
-* 자세한 내용을 입력하고 &quot;나중에 저장 및 계속&quot; 단추를 클릭합니다.
-* GUID가 있는 URL을 반환해야 합니다.
-* URL을 복사하여 새 브라우저 탭에 붙여넣습니다
-* 적응형 양식은 이전 단계의 데이터로 채워야 합니다**
+* 일부 세부 정보를 입력하고 &quot;저장 후 나중에 계속&quot; 버튼을 클릭합니다.
+* GUID가 포함된 URL을 다시 가져와야 합니다.
+* URL을 복사하여 새 브라우저 탭에 붙여넣습니다.
+* 적응형 양식은 이전 단계의 데이터로 채워집니다**

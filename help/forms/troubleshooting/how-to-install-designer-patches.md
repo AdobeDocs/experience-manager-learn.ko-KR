@@ -1,6 +1,6 @@
 ---
-title: 디자이너 패치 설치 방법
-description: 이 문서에서는 AEM Forms Designer 패치를 설치하는 단계를 안내합니다
+title: Designer 패치 설치 방법
+description: 이 문서에서는 AEM Forms Designer 패치를 설치하는 단계를 설명합니다
 type: Troubleshooting
 role: Admin
 level: Beginner
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# 디자이너 패치 설치 방법
+# Designer 패치 설치 방법
 
-*이 비디오에서는 Designer 패치를 설치하는 과정을 안내합니다.*
+*이 비디오는 Designer 패치를 설치하는 과정을 안내합니다.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335504?quality=12&learn=on)

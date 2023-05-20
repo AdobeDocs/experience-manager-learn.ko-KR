@@ -1,6 +1,6 @@
 ---
-title: Creative Cloud 서비스를 통한 컨텐츠 자동화
-description: Adobe Experience Manager Assets 컨텐츠 자동화를 통해 Photoshop 및 Lightroom 기능을 적용할 수 있습니다.
+title: Creative Cloud 서비스를 통한 콘텐츠 자동화
+description: Adobe Experience Manager Assets Content Automation을 사용하여 Photoshop 및 Lightroom 기능을 적용합니다.
 version: Cloud Service
 topic: Content Management
 feature: Asset Processing, Renditions
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Creative Cloud 서비스를 사용한 컨텐츠 자동화 개요
+# Creative Cloud 서비스를 통한 콘텐츠 자동화 개요
 
-Adobe Experience Manager Assets 컨텐츠 자동화와 함께 Photoshop 및 Lightroom 기능이 적용되는 개요입니다.
+개요는 Photoshop 및 Lightroom 기능과 Adobe Experience Manager Assets Content Automation을 적용합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333197?quality=12&learn=on)

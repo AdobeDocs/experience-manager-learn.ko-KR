@@ -1,6 +1,6 @@
 ---
-title: AEM에서 헤드리스에 대한 Tutorials
-description: Adobe Experience Manager을 위한 헤드리스 CMS 자습서 모음입니다. API, 프레임워크 및 예제 애플리케이션별로 자습서를 살펴보십시오.
+title: AEM의 Headless Tutorials
+description: Adobe Experience Manager용 Headless CMS 튜토리얼 모음입니다. API, 프레임워크 및 예제 애플리케이션별 튜토리얼을 살펴보십시오.
 feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
@@ -14,13 +14,13 @@ ht-degree: 7%
 
 ---
 
-# AEM에서 헤드리스에 대한 Tutorials{#aem-headless-tutorials}
+# AEM의 Headless Tutorials{#aem-headless-tutorials}
 
-Adobe Experience Manager(AEM)에는 헤드리스 엔드포인트를 정의하고 콘텐츠를 JSON으로 전달하는 여러 가지 옵션이 있습니다. 실습 위주의 자습서를 통해 다양한 옵션을 사용하는 방법을 탐색하고 사용자에게 적합한 옵션을 선택할 수 있습니다.
+Adobe Experience Manager(AEM)에는 Headless 엔드포인트를 정의하고 콘텐츠를 JSON으로 전달하기 위한 여러 옵션이 있습니다. 실습형 튜토리얼을 사용하여 다양한 옵션을 사용하는 방법을 살펴보고 자신에게 적합한 옵션을 선택하십시오.
 
 >[!TIP]
 >
->이 자습서 컬렉션은 다음과 같은 사용자를 위해 설계되었습니다 **다음을 통해 학습**. 처음부터 학습 개념을 선호하는 경우 다음을 확인하십시오 [AEM Headless Developer 여정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/developer/overview.html). 이 자습서와 여정은 서로 보완합니다.
+>이 자습서 컬렉션은 을(를) 선호하는 사용자를 위해 설계되었습니다. **다음을 수행하여 학습**. 기초부터 개념에 대해 배우는 것을 선호한다면 다음을 확인하십시오. [AEM Headless 개발자 여정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/developer/overview.html). 이 튜토리얼 세트와 여정은 서로 보완됩니다.
 
 ## API별 Tutorials
 
@@ -36,7 +36,7 @@ Adobe Experience Manager(AEM)에는 헤드리스 엔드포인트를 정의하고
     </a>
     </div>
     <p>
-    <em>애플리케이션에서 AEM GraphQL API를 사용하여 콘텐츠를 쿼리하는 방법을 알아봅니다.</em>
+    <em>애플리케이션이 AEM GraphQL API를 사용하여 콘텐츠를 쿼리하는 방법에 대해 알아봅니다.</em>
     <p>
   </td>
   <td>
@@ -49,20 +49,20 @@ Adobe Experience Manager(AEM)에는 헤드리스 엔드포인트를 정의하고
     </a>
     </div>
     <p>
-    <em>애플리케이션이 AEM을 통해 안전하게 인증하는 방법을 알아봅니다.</em>
+    <em>AEM을 통해 응용 프로그램을 안전하게 인증하는 방법을 알아봅니다.</em>
     </p>
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html">
-      <img alt="컨텐츠 서비스" src="./assets/content-services.png" />
+      <img alt="Content Services" src="./assets/content-services.png" />
     </a>
      <div>
       <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html">
-        <strong>컨텐츠 서비스</strong>
+        <strong>Content Services</strong>
       </a>
     </div>
     <p>
-    <em>애플리케이션에서 REST API를 사용하여 컨텐츠를 사용하는 방법을 알아봅니다.</em>
+    <em>애플리케이션이 REST API를 사용하여 콘텐츠를 사용하는 방법에 대해 알아봅니다.</em>
     <p>
   </td>
 </tr>
@@ -70,7 +70,7 @@ Adobe Experience Manager(AEM)에는 헤드리스 엔드포인트를 정의하고
 
 ## 예제 애플리케이션
 
-예제 애플리케이션은 AEM(Adobe Experience Manager)의 헤드리스 기능을 살펴보는 좋은 방법입니다. 완료된 예제를 다운로드하여 설치하여 바로 시작하십시오.
+예제 애플리케이션은 AEM(Adobe Experience Manager)의 Headless 기능을 살펴볼 수 있는 좋은 방법입니다. 이 완료된 예제를 다운로드하여 설치하고 바로 시작하십시오.
 
 <table>
 <tr>
@@ -84,7 +84,7 @@ Adobe Experience Manager(AEM)에는 헤드리스 엔드포인트를 정의하고
     </a>
     </div>
     <p>
-    <em>AEM GraphQL API에서 제공하는 iOS 애플리케이션입니다.</em>
+    <em>AEM GraphQL API를 기반으로 하는 iOS 애플리케이션.</em>
     <p>
   </td>
   <td>
@@ -110,7 +110,7 @@ Adobe Experience Manager(AEM)에는 헤드리스 엔드포인트를 정의하고
       </a>
     </div>
     <p>
-    <em>AEM GraphQL API에서 제공하는 React 애플리케이션입니다.</em>
+    <em>AEM GraphQL API에서 제공하는 React 애플리케이션.</em>
     <p>
   </td>
 </tr>
@@ -118,12 +118,12 @@ Adobe Experience Manager(AEM)에는 헤드리스 엔드포인트를 정의하고
 
 ## 프레임워크별 Tutorials
 
-사용된 기술을 기반으로 다음 자습서를 찾아봅니다. 컨텍스트 내 작성 및 경험 관리를 위한 옵션과 함께 순수한 헤드리스 사용 사례를 넘어 AEM을 어떻게 확장할 수 있는지 알아봅니다.
+사용된 기술을 기반으로 다음 튜토리얼을 찾아보십시오. 컨텍스트 내 작성 및 경험 관리 옵션을 통해 AEM이 순수한 Headless 사용 사례를 넘어서는 방법에 대해 알아봅니다.
 
 <table>
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=ko-KR">
       <img alt="React - 헤드리스" src="./assets/react-headless.png" />
     </a>
     <div>
@@ -132,7 +132,7 @@ Adobe Experience Manager(AEM)에는 헤드리스 엔드포인트를 정의하고
     </a>
     </div>
     <p>
-    <em>순수 헤드리스 시나리오에서 GraphQL을 사용하여 React JS 앱을 빌드합니다.</em>
+    <em>순수 Headless 시나리오에서 GraphQL을 사용하여 React JS 앱을 빌드합니다.</em>
     <p>
   </td>
   <td>
@@ -145,7 +145,7 @@ Adobe Experience Manager(AEM)에는 헤드리스 엔드포인트를 정의하고
     </a>
     </div>
     <p>
-    <em>원격으로 호스팅되는 React 애플리케이션의 일부를 컨텍스트 내에서 작성합니다.</em>
+    <em>원격으로 호스팅된 React 애플리케이션의 일부를 컨텍스트에서 작성합니다.</em>
     </p>
   </td>
   <td>
@@ -165,15 +165,15 @@ Adobe Experience Manager(AEM)에는 헤드리스 엔드포인트를 정의하고
 <tr>  
   <td>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html">
-    <img alt="Android - 컨텐츠 서비스" src="./assets/android.png" />
+    <img alt="Android - 콘텐츠 서비스" src="./assets/android.png" />
     </a>
     <div>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html">
-    <strong>Android - 컨텐츠 서비스</strong>
+    <strong>Android - 콘텐츠 서비스</strong>
     </a>
     </div>
     <p>
-    <em>Content Services 및 REST 를 사용하여 모바일 Android™ 애플리케이션을 실행합니다.</em>
+    <em>컨텐츠 서비스 및 REST를 사용하여 모바일 Android™ 애플리케이션을 실행합니다.</em>
     </p>
   </td>
   <td>

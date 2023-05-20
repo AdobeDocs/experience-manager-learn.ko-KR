@@ -1,6 +1,6 @@
 ---
-title: AEM Assets에서 벌크 가져오기 사용
-description: 관리자는 AEM as a Cloud Service의 벌크 가져오기 도구를 사용하여 안전하고 효율적인 방식으로 클라우드 저장소(Azure Blob 저장소 또는 Amazon S3)에서 자산을 일괄적으로 가져올 수 있습니다.
+title: AEM Assets에서 일괄 가져오기 사용
+description: AEM의 일괄 가져오기 도구를 as a Cloud Service으로 사용하면 관리자가 클라우드 스토리지(Azure Blob Storage 또는 Amazon S3)에서 에셋을 안전하고 효율적으로 가져올 수 있습니다.
 version: Cloud Service
 doc-type: technical-video
 topics: Migration
@@ -21,17 +21,17 @@ ht-degree: 0%
 
 ---
 
-# 대량 가져오기 사용
+# 일괄 가져오기 사용
 
-관리자는 AEM as a Cloud Service의 벌크 가져오기 도구를 사용하여 안전하고 효율적인 방식으로 클라우드 저장소(Azure Blob 저장소 또는 Amazon S3)에서 자산을 일괄적으로 가져올 수 있습니다.
+AEM의 일괄 가져오기 도구를 as a Cloud Service으로 사용하면 관리자가 클라우드 스토리지(Azure Blob Storage 또는 Amazon S3)에서 에셋을 안전하고 효율적으로 가져올 수 있습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/329680?quality=12&learn=on)
 
-## 대량 가져오기 예약
+## 일괄 가져오기 예약
 
-벌크 가져오기는 다음을 포함하여 예약된 구성 실행을 지원합니다.
+대량 가져오기는 다음을 포함한 구성의 예약된 실행을 지원합니다.
 
-+ 정의된 날짜 및 시간에 한 번의 실행
++ 정의된 날짜 및 시간에 한 번 실행
 + 매 시간, 일 또는 주마다 기간 실행
 
-![대량 가져오기 일정](./assets/bulk-import/schedule.png)
+![일괄 가져오기 일정](./assets/bulk-import/schedule.png)

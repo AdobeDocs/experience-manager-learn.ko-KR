@@ -1,28 +1,29 @@
 ---
 title: 시작 키트 워크플로우 프로세스 만들기
-description: 제출된 양식 데이터를 기반으로 자산을 다운로드할 수 있는 링크가 있는 AEM 사이트 페이지를 만듭니다.
+description: 제출된 양식 데이터를 기반으로 에셋을 다운로드할 수 있는 링크가 있는 AEM 사이트 페이지를 만듭니다.
 feature: Adaptive Forms
 version: 6.5
 topic: Development
 role: Developer
 level: Beginner
 last-substantial-update: 2022-12-14T00:00:00Z
-source-git-commit: 0e27907066c7d688549a980ccd17b3f17d74b60b
+exl-id: ba9e80af-aecd-4558-a236-798c823e695c
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '106'
 ht-degree: 0%
 
 ---
 
-# 워크플로우 구성 요소
+# 워크플로 구성 요소
 
-워크플로우 구성 요소는 생성된 페이지를 저장할 페이지 템플릿, 구성 요소 리소스 유형 및 기본 폴더와 같은 자산을 나열하는 페이지와 관련된 정보를 캡처합니다.
+워크플로우 구성 요소는 생성된 페이지를 저장할 페이지 템플릿, 구성 요소 리소스 유형 및 기본 폴더와 같은 자산을 나열하는 페이지 관련 정보를 캡처합니다.
 
 ![workflow-component](assets/workflow-component.png)
 
 ## 워크플로우 프로세스 구현
 
-다음 Java 코드가 워크플로우 구성 요소와 연결되어 있습니다. 이 코드는 시작 키트 페이지를 만들고 워크플로우 변수(submitterName 및 documentsSelected)에서 값을 추출합니다. 그런 다음 이러한 값은 페이지에 사용되는 구성 요소의 속성으로 설정됩니다. 이 코드는 워크플로우 프로세스 변수의 값을 설정합니다 **welcoekiturl**.
+다음 Java 코드는 워크플로우 구성 요소와 연결되었습니다. 이 코드는 시작 키트 페이지를 만들고, 워크플로우 변수(submitterName 및 documentsSelected)에서 값을 추출합니다. 그런 다음 이러한 값은 페이지에 사용된 구성 요소의 속성으로 설정됩니다. 또한 이 코드는 워크플로우 프로세스 변수의 값을 설정합니다 **welcomekiturl**.
 
 ```java
 package com.welcomekit.core.workflowprocess;
@@ -161,7 +162,3 @@ public class CreatePage implements WorkflowProcess {
   }
 }
 ```
-
-
-
-

@@ -1,6 +1,6 @@
 ---
 title: AEM Dynamic Media에서 비디오 플레이어 사용
-description: 데스크탑 클라이언트와 브라우저에서 적응형 비디오 스트리밍을 지원하기 위해 Flash 런타임을 사용하는 AEM Dynamic Media 비디오 플레이어가 플래시 기반 컨텐츠 스트리밍에서 더 적극적이 되었습니다. HLS(Apple의 HTTP Live 스트리밍 비디오 게재 프로토콜)의 도입으로 이제 플래시에 의존하지 않고 컨텐츠를 스트리밍할 수 있습니다.
+description: 데스크탑 클라이언트와 브라우저에서 적응형 비디오 스트리밍을 지원하기 위해 Flash 런타임에 의존하던 AEM Dynamic Media video player가 플래시 기반 콘텐츠 스트리밍에 대한 공격적인 태도를 취하게 되었습니다. HLS(Apple의 HTTP 라이브 스트리밍 비디오 전송 프로토콜)가 도입됨에 따라 이제 플래시에 의존하지 않고 콘텐츠를 스트리밍할 수 있습니다.
 feature: Video Profiles
 version: 6.4, 6.5
 topic: Content Management
@@ -17,19 +17,19 @@ ht-degree: 6%
 
 # AEM Dynamic Media에서 비디오 플레이어 사용{#using-the-video-player-in-aem-dynamic-media}
 
-데스크탑 클라이언트와 브라우저에서 적응형 비디오 스트리밍을 지원하기 위해 Flash 런타임을 사용하는 AEM Dynamic Media 비디오 플레이어가 플래시 기반 컨텐츠 스트리밍에서 더 적극적이 되었습니다. HLS(Apple의 HTTP Live 스트리밍 비디오 게재 프로토콜)의 도입으로 이제 플래시에 의존하지 않고 컨텐츠를 스트리밍할 수 있습니다.
+데스크탑 클라이언트와 브라우저에서 적응형 비디오 스트리밍을 지원하기 위해 Flash 런타임에 의존하던 AEM Dynamic Media video player가 플래시 기반 콘텐츠 스트리밍에 대한 공격적인 태도를 취하게 되었습니다. HLS(Apple의 HTTP 라이브 스트리밍 비디오 전송 프로토콜)가 도입됨에 따라 이제 플래시에 의존하지 않고 콘텐츠를 스트리밍할 수 있습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16791?quality=12&learn=on)
 
-## 비Flash 비디오 플레이어에 대한 빠른 검색 {#quick-look-into-non-flash-video-player}
+## 비 Flash 비디오 플레이어에 대한 빠른 살펴보기 {#quick-look-into-non-flash-video-player}
 
 >[!VIDEO](https://video.tv.adobe.com/v/17429?quality=12&learn=on)
 
-HLS 브라우저 지원은 지원되지 않는 브라우저의 경우 점진적 비디오 게재로 폴백합니다
+지원되지 않는 브라우저에 대해 HLS 브라우저 지원은 다음과 같습니다. 점진적 비디오 제공으로 돌아갑니다
 
 >[!NOTE]
 >
-> Dynamic Media Hybrid는 2022년 3월 15일 현재 Internet Explorer 11에서 비디오 스트리밍을 지원하지 않습니다. IE 11의 점진적 재생으로 돌아가려면 6.5.12 이상으로 업그레이드하십시오.
+> Dynamic Media Hybrid는 2022년 3월 15일부터 Internet Explorer 11에서 비디오 스트리밍을 지원하지 않습니다. IE 11의 점진적 재생으로 폴백하려면 6.5.12 이상으로 업그레이드하십시오.
 
 <table> 
  <thead> 

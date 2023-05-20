@@ -1,6 +1,6 @@
 ---
-title: 전자 메일 첨부 파일로 DoR 보내기
-description: 전자 메일 첨부 파일로 DoR 을 사용하여 제출자에게 전자 메일 알림 보내기
+title: DoR을 전자 메일 첨부 파일로 보내기
+description: DoR을 전자 메일 첨부 파일로 사용하여 제출자에게 전자 메일 알림 보내기
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
@@ -9,15 +9,16 @@ version: Cloud Service
 feature: Adaptive Forms
 topic: Development
 kt: 11019
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+exl-id: 9ded508c-9408-4d41-b8c6-cd85d1e4cf17
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '50'
 ht-degree: 0%
 
 ---
 
-# 전자 메일 첨부 파일로 DoR 보내기
+# DoR을 전자 메일 첨부 파일로 보내기
 
-DoR을 추출하여 e-메일 첨부 파일로 전송 기능을 통해 자동 작업 과정을 수행할 수 있습니다.
-다음 비디오에서는 제출된 데이터에서 DoR을 추출하는 데 필요한 단계를 설명합니다
+Power Automate 워크플로에서 DoR을 추출하고 이메일 첨부 파일로 전송합니다.
+다음 비디오에서는 제출된 데이터에서 DoR을 추출하는 데 필요한 단계에 대해 설명합니다
 >[!VIDEO](https://video.tv.adobe.com/v/346731?quality=12&learn=on)

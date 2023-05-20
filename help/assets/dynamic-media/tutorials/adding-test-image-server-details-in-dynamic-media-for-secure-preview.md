@@ -1,6 +1,6 @@
 ---
-title: AEM Dynamic Media에 대한 보안 미리 보기 서버 구성
-description: AEM Dynamic Media Classic 앱을 사용하여 보안 미리 보기를 위한 테스트 이미지 서버를 구성합니다.
+title: AEM Dynamic Media용 보안 미리 보기 서버 구성
+description: AEM Dynamic Media Classic 앱을 사용하여 보안 미리 보기에 대한 테스트 이미지 서버를 구성합니다.
 version: Cloud Service
 role: Developer
 level: Intermediate
@@ -14,8 +14,8 @@ ht-degree: 0%
 
 ---
 
-# AEM Dynamic Media에 대한 보안 미리 보기 서버 구성
+# AEM Dynamic Media용 보안 미리 보기 서버 구성
 
-이 비디오에서는 Dynamic Media Classic 앱을 사용한 보안 미리 보기를 위해 Dynamic Media에서 테스트 이미지 서버(클라이언트 IP 필터) 세부 사항을 추가하는 프로세스를 안내합니다.
+이 비디오는 Dynamic Media Classic 앱을 사용하여 안전하게 미리 볼 수 있도록 Dynamic Media에서 테스트 이미지 서버(클라이언트 IP 필터) 세부 사항을 추가하는 과정을 안내합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335462?quality=12&learn=on)

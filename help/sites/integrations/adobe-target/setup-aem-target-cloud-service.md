@@ -21,12 +21,12 @@ ht-degree: 0%
 
 # Adobe Target Cloud Service 계정 만들기 {#adobe-target-cloud-service}
 
-다음 비디오에서는 AEM as a Cloud Service과 Adobe Target을 연결하는 방법에 대한 개요를 제공합니다.
+다음 비디오는 AEM을 Adobe Target과 as a Cloud Service으로 연결하는 방법에 대해 소개합니다.
 
-이 통합을 통해 AEM 작성자 서비스는 Adobe Target과 직접 통신하고, 경험 조각을 AEM에서 Target으로 푸시할 수 있습니다.  이 통합은 *not* 를 통합하는 AEM Sites 웹 페이지에 Adobe Target JavaScript(AT.js)를 추가합니다 [Target 확장을 사용하여 AEM과 Launch](../experience-platform/data-collection/tags/connect-aem-tag-property-using-ims.md).
+이 통합을 통해 AEM 작성자 서비스는 Adobe Target과 직접 통신하고 경험 조각을 AEM에서 오퍼로 Target에 푸시할 수 있습니다.  이 통합은 다음을 수행합니다 *아님* 통합을 위해 Adobe Target JavaScript(AT.js)를 AEM Sites 웹 페이지에 추가합니다. [Target 확장을 사용하여 Launch가 있는 AEM](../experience-platform/data-collection/tags/connect-aem-tag-property-using-ims.md).
 
 >[!VIDEO](https://video.tv.adobe.com/v/41244?quality=12&learn=on)
 
 >[!CAUTION]
 >
->비디오에 표시된 Adobe Target Cloud Services 구성에 대해 알려진 문제가 있습니다. 이 문제가 해결될 때까지 비디오에서 동일한 단계를 따르지만 [기존 Adobe Target Cloud Services 구성](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-aem-cloud-services.html).
+>이 비디오에 표시된 Adobe Target Cloud Services 구성에 알려진 문제가 있습니다. 이 문제가 해결될 때까지 비디오에서 동일한 단계를 따르되 [이전 Adobe Target Cloud Services 구성](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-aem-cloud-services.html).

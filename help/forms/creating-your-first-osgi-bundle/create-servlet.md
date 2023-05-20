@@ -1,6 +1,6 @@
 ---
 title: AEM Forms에서 첫 번째 서블릿 만들기
-description: 데이터를 양식 템플릿과 병합하기 위해 첫 번째 sling 서블릿을 빌드합니다.
+description: 데이터를 양식 템플릿과 병합하기 위한 첫 번째 슬링 서블릿을 빌드합니다.
 feature: Adaptive Forms
 version: 6.4,6.5
 topic: Development
@@ -18,10 +18,10 @@ ht-degree: 1%
 # Sling 서블릿
 
 서블릿은 요청 응답 프로그래밍 모델을 통해 액세스되는 응용 프로그램을 호스팅하는 서버의 기능을 확장하는 데 사용되는 클래스입니다. 이러한 응용 프로그램의 경우 Servlet 기술은 HTTP별 서블릿 클래스를 정의합니다.
-모든 서블릿은 라이프 사이클 메서드를 정의하는 서블릿 인터페이스를 구현해야 합니다.
+모든 서블릿은 라이프 사이클 방법을 정의하는 서블릿 인터페이스를 구현해야 합니다.
 
 
-AEM의 서블릿은 OSGi 서비스로 등록할 수 있습니다. 모든 RESTful 작업을 구현하기 위해 읽기 전용 구현에 대해 SlingSafeMethodsServlet을 확장하거나 SlingAllMethodsServlet을 확장할 수 있습니다.
+AEM의 서블릿은 OSGi 서비스로 등록할 수 있습니다. 모든 RESTful 작업을 구현하기 위해 읽기 전용 구현용 SlingSafeMethodsServlet 또는 SlingAllMethodsServlet을 확장할 수 있습니다.
 
 ## 서블릿 코드
 
@@ -72,19 +72,19 @@ public class MyFirstAEMFormsServlet extends SlingAllMethodsServlet
 
 ## 빌드 및 배포
 
-프로젝트를 빌드하려면 다음 단계를 수행하십시오.
+프로젝트를 빌드하려면 다음 단계를 따르십시오.
 
 * 열기 **명령 프롬프트 창**
 * 다음으로 이동 `c:\aemformsbundles\mysite\core`
 * 명령 실행 `mvn clean install -PautoInstallBundle`
-* 위의 명령은 localhost:4502에서 실행되는 AEM 인스턴스에 번들을 자동으로 빌드하고 배포합니다.
+* 위의 명령은 localhost:4502에서 실행 중인 AEM 인스턴스에 번들을 자동으로 빌드하고 배포합니다.
 
-이 번들은 다음 위치에서도 사용할 수 있습니다 `C:\AEMFormsBundles\mysite\core\target`. 번들은 을 사용하여 AEM에 배포할 수도 있습니다 [Felix 웹 콘솔.](http://localhost:4502/system/console/bundles)
+번들은 다음 위치에서도 사용할 수 있습니다 `C:\AEMFormsBundles\mysite\core\target`. 번들은 다음을 사용하여 AEM에 배포할 수도 있습니다. [Felix 웹 콘솔.](http://localhost:4502/system/console/bundles)
 
 
-## 서블릿 확인자 테스트
+## Servlet Resolver 테스트
 
-브라우저를 [servlet resolver URL](http://localhost:4502/system/console/servletresolver?url=%2Fbin%2FmergedataWithAcroform&amp;method=POST). 이것은 아래 스크린샷에 표시된 대로 지정된 경로에 대해 호출되는 서블릿을 알려줍니다
+브라우저를 가리켜 [servlet resolver URL](http://localhost:4502/system/console/servletresolver?url=%2Fbin%2FmergedataWithAcroform&amp;method=POST). 아래 스크린샷에 표시된 대로 주어진 경로에 대해 호출되는 서블릿을 알려줍니다
 ![servlet-resolver](assets/servlet-resolver.JPG)
 
 ## Postman을 사용하여 서블릿 테스트

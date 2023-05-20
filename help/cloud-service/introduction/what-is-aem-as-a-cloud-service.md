@@ -1,6 +1,6 @@
 ---
-title: AEM as a Cloud Service 소개
-description: AEM as a Cloud Service이 무엇인지, 그리고이 Adobe Experience Manager의 다른 버전과 어떻게 다른지 살펴보십시오.
+title: AEMas a Cloud Service 란?
+description: AEMas a Cloud Service 가 무엇인지, 그리고 다른 버전의 Adobe Experience Manager과 어떻게 다른지 살펴보십시오.
 role: Architect, Developer
 level: Beginner
 type: Tutorial
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# AEM as a Cloud Service 소개
+# AEMas a Cloud Service 란?
 
-AEM as a Cloud Service이 무엇인지, 그리고이 Adobe Experience Manager의 다른 버전과 어떻게 다른지 살펴보십시오.
+AEMas a Cloud Service 가 무엇인지, 그리고 다른 버전의 Adobe Experience Manager과 어떻게 다른지 살펴보십시오.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330546?quality=12&learn=on)

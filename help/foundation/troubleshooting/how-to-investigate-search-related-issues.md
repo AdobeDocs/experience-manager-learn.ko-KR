@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # AEM에서 검색 관련 문제를 조사하는 방법
 
-*이 비디오에서는 AEM에서 검색 관련 문제를 조사하는 단계를 안내합니다.*
+*이 비디오는 AEM의 검색 관련 문제를 조사하는 단계를 안내합니다.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335467?quality=12&learn=on)

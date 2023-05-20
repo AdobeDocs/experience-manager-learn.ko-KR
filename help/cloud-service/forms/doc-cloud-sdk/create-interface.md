@@ -1,6 +1,6 @@
 ---
 title: 서비스 인터페이스 만들기
-description: 인터페이스에서 노출할 메서드를 정의합니다
+description: 노출하려는 인터페이스의 메서드를 정의합니다.
 solution: Experience Manager
 type: Documentation
 role: Developer
@@ -20,7 +20,7 @@ ht-degree: 4%
 
 # 인터페이스
 
-다음 2가지 메서드 정의로 인터페이스를 만듭니다.
+다음 2개의 메서드 정의가 있는 인터페이스를 만듭니다.
 
 ```java
 package com.aemforms.doccloud.core;

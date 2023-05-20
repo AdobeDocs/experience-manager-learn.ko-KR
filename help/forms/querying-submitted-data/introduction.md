@@ -1,7 +1,7 @@
 ---
 title: JSON 스키마 및 데이터가 포함된 AEM Forms
 seo-title: AEM Forms with JSON Schema and Data
-description: JSON 스키마로 적응형 양식을 만들고 제출된 데이터를 쿼리하는 단계를 설명하는 여러 부분 자습서입니다.
+description: JSON 스키마를 사용한 적응형 양식 작성 및 제출된 데이터 쿼리와 관련된 단계를 안내하는 다중 파트 튜토리얼입니다.
 seo-description: Multi-Part tutorial to walk you through the steps involved in creating Adaptive Form with JSON schema and querying the submitted data.
 feature: Adaptive Forms
 topics: development
@@ -23,14 +23,14 @@ ht-degree: 0%
 
 # JSON 스키마 및 데이터가 포함된 AEM Forms
 
-JSON 스키마로 적응형 양식을 만들고 제출된 데이터를 쿼리하는 단계를 설명하는 여러 부분 자습서입니다.
+JSON 스키마를 사용한 적응형 양식 작성 및 제출된 데이터 쿼리와 관련된 단계를 안내하는 다중 파트 튜토리얼입니다.
 
 이 자습서를 따르려면 다음을 설치하는 것이 좋습니다
 
-* 적절한 양식 추가 패키지가 있는 6.3 이상
+* 적절한 양식 추가 패키지가 있는 AEM 6.3 이상
 
 * MySQL 8 데이터베이스
 
-* MySQL 8 Workbench
+* MySQL 8 workbench
 
-AEM 및 AEM Forms 관련 경험도 함께 하는 것이 좋습니다. MySQL DB 및 MySQL Workbench 설치도 잘 알고 있어야 합니다
+또한 AEM 및 AEM Forms에 대한 일정 수준의 경험이 있는 것이 좋습니다. MySQL DB 및 MySQL Workbench 설치에도 익숙해야 합니다

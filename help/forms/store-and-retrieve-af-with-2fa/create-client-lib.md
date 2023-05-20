@@ -1,6 +1,6 @@
 ---
 title: 클라이언트 라이브러리 만들기
-description: clientlibrary를 만들어 "저장 및 종료" 단추의 클릭 이벤트를 처리합니다
+description: '"저장 및 종료" 단추의 클릭 이벤트를 처리할 clientlibrary 만들기'
 feature: Adaptive Forms
 type: Tutorial
 version: 6.4,6.5
@@ -19,9 +19,9 @@ ht-degree: 6%
 
 # 클라이언트 라이브러리 만들기
 
-만들기 [클라이언트 라이브러리](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html) 메서드를 호출할 코드를 포함할 수 있습니다 `doAjaxSubmitWithFileAttachment` 의 `guideBridge` CSS 클래스로 식별된 단추의 클릭 이벤트에 대한 API **저장 단추**.  적응형 양식 데이터를 전달하고 `fileMap`, 및 `mobileNumber` 엔드포인트에서 수신 대기하는 `**/bin/storeafdatawithattachments`
+만들기 [클라이언트 라이브러리](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html) 메서드를 호출하는 코드가 포함됩니다 `doAjaxSubmitWithFileAttachment` / `guideBridge` CSS 클래스로 식별된 버튼의 클릭 이벤트에 대한 API **저장 단추**.  적응형 양식 데이터를 전달하고, `fileMap`및 `mobileNumber` 을(를) 수신 대기하는 엔드포인트로 `**/bin/storeafdatawithattachments`
 
-양식 데이터가 저장되면 고유한 애플리케이션 ID가 생성되고 대화 상자에서 사용자에게 표시됩니다. 대화 상자를 닫을 때 사용자가 고유한 애플리케이션 ID를 사용하여 저장된 적응형 양식을 검색할 수 있는 양식으로 이동합니다.
+양식 데이터가 저장되면 고유한 애플리케이션 ID가 생성되고 대화 상자에서 사용자에게 표시됩니다. 대화 상자를 닫으면 사용자가 고유한 애플리케이션 ID를 사용하여 저장된 적응형 양식을 검색할 수 있는 양식으로 이동됩니다.
 
 ```java
 $(document).ready(function () {
@@ -67,10 +67,10 @@ $(document).ready(function () {
 ```
 
 >[!NOTE]
-> 우리는 [bootbox javascript 라이브러리](http://bootboxjs.com/examples.html) 대화 상자 표시
+> 다음을 사용했습니다. [bootbox javascript 라이브러리](http://bootboxjs.com/examples.html) 대화상자를 표시하려면
 
-이 샘플에 사용되는 클라이언트 라이브러리는 [여기에서 다운로드](assets/client-libraries.zip)
+이 샘플에 사용되는 클라이언트 라이브러리는 다음과 같을 수 있습니다. [여기에서 다운로드됨](assets/client-libraries.zip)
 
 ## 다음 단계
 
-[OTP 서비스를 사용하여 사용자 확인](./verify-users-with-otp.md)
+[OTP 서비스로 사용자 확인](./verify-users-with-otp.md)

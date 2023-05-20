@@ -1,6 +1,6 @@
 ---
-title: 클라우드로 마이그레이션 - 1부
-description: Darin과 James는 AEM Cloud로의 마이그레이션과 일부 기법 및 모범 사례에 대해 설명합니다.
+title: 클라우드로의 마이그레이션 - 1부
+description: Darin과 James는 AEM Cloud로의 마이그레이션에 대해 논의하고 몇 가지 기술과 모범 사례를 시연합니다.
 version: Cloud Service
 role: Admin, Developer
 level: Intermediate
@@ -16,17 +16,17 @@ ht-degree: 5%
 
 ---
 
-# 클라우드로 마이그레이션 - 1부
+# 클라우드로의 마이그레이션 - 1부
 
-Darin과 James는 AMS/On-Prem의 몇 가지 우수 사례와 차이점을 포함하여 AEM Cloud에서 Dispatcher에 대해 설명합니다. 또한 클라우드로 마이그레이션 시 터치합니다. 특별 손님과 클라우드 전문가, [Applesmith 박사](https://twitter.com/DrApplesmith) 모양을 만듭니다.
+Darin과 James는 몇 가지 모범 사례와 AMS/On-Prem과의 차이점 등 AEM Cloud의 Dispatcher에 대해 설명합니다. 또한 클라우드로의 마이그레이션에 대해서도 다룹니다. 특별 게스트 및 클라우드 전문가, [닥터 애플스미스](https://twitter.com/DrApplesmith) 를 입력합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342133?quality=12&learn=on)
 
-## 이 비디오에서 다루는 컨텐츠
+## 이 비디오에서 다루는 콘텐츠
 
 + 마이그레이션할 인스턴스 평가
    + BPA - 모범 사례 분석기
    + CAM - 클라우드 가속 관리자
-+ [repostats](https://github.com/chetanmeh/oak-console-scripts/tree/master/src/main/groovy/repostats)
++ [repostat](https://github.com/chetanmeh/oak-console-scripts/tree/master/src/main/groovy/repostats)
 + [AEM 현대화 도구](https://opensource.adobe.com/aem-modernize-tools/)
 + [Cloud Service 마이그레이션 도구](https://github.com/adobe/aem-cloud-service-source-migration)

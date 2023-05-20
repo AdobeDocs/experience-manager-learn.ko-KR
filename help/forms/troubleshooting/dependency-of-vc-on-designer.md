@@ -1,6 +1,6 @@
 ---
 title: Designer에서 C++ 라이브러리의 종속성 문제를 해결하는 방법
-description: 디자이너에 필요한 C++ 라이브러리 설치
+description: Designer에 필요한 C++ 라이브러리 설치
 type: Troubleshooting
 role: Developer
 level: Intermediate
@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Designer에서 C++ 라이브러리의 종속성 문제를 해결하는 방법
 
-*이 비디오에서는 Designer에서 C++ 라이브러리의 종속성 문제를 해결하는 단계를 안내합니다.*
+*이 비디오는 Designer에서 C++ 라이브러리의 종속성 문제를 해결하는 단계를 안내합니다.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335576?quality=12&learn=on)

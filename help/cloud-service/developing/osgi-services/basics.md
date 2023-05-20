@@ -1,6 +1,6 @@
 ---
 title: OSGi 서비스 개발 기본 사항
-description: OSGi 서비스 개발에 대한 기본 사항에 대해 알아봅니다
+description: OSGi 서비스 개발의 기본 사항에 대해 알아봅니다
 role: Developer
 level: Beginner
 topic: Development
@@ -18,18 +18,18 @@ ht-degree: 1%
 
 # OSGi 서비스
 
-다음을 포함한 OSGi 서비스 개발에 대한 기본 사항을 알아봅니다.
+다음을 포함한 OSGi 서비스 개발의 기본 사항에 대해 알아봅니다.
 
 + Java POJO를 OSGi 서비스로 변환하는 방법
-+ Java 인터페이스에 OSGi 서비스를 바인딩하는 방법
++ OSGi 서비스를 Java 인터페이스에 바인딩하는 방법
 
 >[!VIDEO](https://video.tv.adobe.com/v/335476?quality=12&learn=on)
 
 ## 리소스
 
-+ [@Component JavaDocs](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/org/osgi/service/component/annotations/Component.html)
-+ [@ProviderType JavaDocs](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/org/osgi/annotation/versioning/ProviderType.html)
-+ [@Version JavaDocs](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/org/osgi/annotation/versioning/Version.html)
++ [@Component JavaDoc](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/org/osgi/service/component/annotations/Component.html)
++ [@ProviderType JavaDoc](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/org/osgi/annotation/versioning/ProviderType.html)
++ [@Version JavaDoc](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/org/osgi/annotation/versioning/Version.html)
 
 ## 코드
 

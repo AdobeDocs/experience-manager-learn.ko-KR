@@ -1,6 +1,6 @@
 ---
 title: OSGi 구성 속성
-description: OSGi 구성 속성의 기본 사항과 OSGi 서비스에서 이러한 속성을 사용하는 방법을 알아봅니다.
+description: OSGi 구성 속성의 기본 사항과 OSGi 서비스에서 이를 사용하는 방법에 대해 알아봅니다.
 role: Developer
 level: Beginner
 topic: Development
@@ -17,14 +17,14 @@ ht-degree: 1%
 
 # OSGi 구성 속성
 
-OSGi 구성 키/값 쌍을 사용하여 OSGi 구성 데이터를 정의하고 OSGi 서비스에 표시하는 낮은 수준의 방법을 알아봅니다.
+OSGi 구성 키/값 쌍을 사용하여 OSGi 구성 데이터를 정의하고 OSGi 서비스에 노출하는 낮은 수준의 접근 방식에 대해 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335729?quality=12&learn=on)
 
 ## 리소스
 
-+ [@Component JavaDocs](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/org/osgi/service/component/annotations/Component.html)
-+ [@Activate JavaDocs](https://javadoc.io/static/com.adobe.aem/aem-sdk-api/2021.7.5658.20210723T140305Z-210600/org/osgi/service/component/annotations/Activate.html)
++ [@Component JavaDoc](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/org/osgi/service/component/annotations/Component.html)
++ [@Activate JavaDoc](https://javadoc.io/static/com.adobe.aem/aem-sdk-api/2021.7.5658.20210723T140305Z-210600/org/osgi/service/component/annotations/Activate.html)
 
 ## 코드
 

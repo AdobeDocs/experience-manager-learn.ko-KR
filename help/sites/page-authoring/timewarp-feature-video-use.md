@@ -1,6 +1,6 @@
 ---
 title: AEM Sites에서 타임워프 사용
-description: 타임워프는 작성자가 과거의 특정 시점에 페이지의 상태를 빠르게 검토할 수 있도록 해주는 Adobe Experience Manager Sites의 기능입니다.
+description: 타임워프는 작성자가 과거의 특정 시간에 페이지 상태를 빠르게 검토할 수 있는 방법을 제공하는 Adobe Experience Manager Sites의 기능입니다.
 topic: Content Management
 feature: Authoring
 role: User
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 # 타임워프 사용 {#using-timewarp-with-aem-sites}
 
-타임워프는 작성자가 과거의 특정 시점에 페이지의 상태를 빠르게 검토할 수 있도록 해주는 Adobe Experience Manager Sites의 기능입니다.
+타임워프는 작성자가 과거의 특정 시간에 페이지 상태를 빠르게 검토할 수 있는 방법을 제공하는 Adobe Experience Manager Sites의 기능입니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17453?quality=12&learn=on)
 

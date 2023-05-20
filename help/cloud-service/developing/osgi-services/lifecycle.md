@@ -1,6 +1,6 @@
 ---
 title: OSGi 구성 요소 라이프사이클
-description: OSGi 서비스를 활성화, 수정 및 비활성화하는 방법 등 OSGi 구성 요소 라이프사이클에 대해 알아봅니다.
+description: 라이프사이클 이벤트 활성화, 수정 및 비활성화에 OSGi 서비스를 바인딩하는 방법을 포함하여 OSGi 구성 요소 라이프사이클에 대해 알아봅니다.
 role: Developer
 level: Beginner
 topic: Development
@@ -17,21 +17,21 @@ ht-degree: 3%
 
 # OSGi 구성 요소 라이프사이클
 
-에 OSGi 서비스를 바인딩하는 방법을 포함하여 OSGi 구성 요소 라이프사이클에 대해 알아봅니다.
+OSGi 서비스를 다음에 바인딩하는 방법을 포함하여 OSGi 구성 요소 라이프사이클에 대해 알아봅니다.
 
 + 활성화
 + 수정됨
 + 및 비활성화
 
-...라이프사이클 이벤트.
+...라이프사이클 이벤트
 
 >[!VIDEO](https://video.tv.adobe.com/v/335475?quality=12&learn=on)
 
 ## 리소스
 
-+ [@Activate JavaDocs](https://javadoc.io/static/com.adobe.aem/aem-sdk-api/2021.7.5658.20210723T140305Z-210600/org/osgi/service/component/annotations/Activate.html)
-+ [@Modified JavaDocs](https://javadoc.io/static/com.adobe.aem/aem-sdk-api/2021.7.5658.20210723T140305Z-210600/org/osgi/service/component/annotations/Modified.html)
-+ [@Deactivate JavaDocs](https://javadoc.io/static/com.adobe.aem/aem-sdk-api/2021.7.5658.20210723T140305Z-210600/org/osgi/service/component/annotations/Deactivate.html)
++ [@Activate JavaDoc](https://javadoc.io/static/com.adobe.aem/aem-sdk-api/2021.7.5658.20210723T140305Z-210600/org/osgi/service/component/annotations/Activate.html)
++ [@Modified JavaDoc](https://javadoc.io/static/com.adobe.aem/aem-sdk-api/2021.7.5658.20210723T140305Z-210600/org/osgi/service/component/annotations/Modified.html)
++ [@Deactivate JavaDoc](https://javadoc.io/static/com.adobe.aem/aem-sdk-api/2021.7.5658.20210723T140305Z-210600/org/osgi/service/component/annotations/Deactivate.html)
 
 ## 코드
 

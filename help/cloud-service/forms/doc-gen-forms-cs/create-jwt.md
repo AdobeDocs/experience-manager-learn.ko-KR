@@ -1,6 +1,6 @@
 ---
 title: JSON 웹 토큰 만들기
-description: AEM 액세스 토큰으로 Adobe IMS API와 교환할 수 있는 JSON 웹 토큰(JWT)을 만듭니다.
+description: AEM 액세스 토큰용 Adobe IMS API와 교환할 수 있는 JSON 웹 토큰(JWT)을 만듭니다.
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -19,8 +19,8 @@ ht-degree: 0%
 
 # JSON 웹 토큰 만들기
 
-JSON 웹 토큰은 두 당사자 간에 클레임을 안전하게 표시하기 위한 개방형 업계 표준 RFC 7519 메서드입니다. 이 샘플에서는 JWT.io 라이브러리가 JWT를 생성하는 데 사용되었습니다.
-이전 단계에서 다운로드한 서비스 자격 증명에 PKCS#1 형식의 개인 키가 포함되어 있습니다 [바운시 성](https://www.bouncycastle.org/) 라이브러리. java에 속하는 암호화 라이브러리는 PKCS#1 형식을 지원하지 않습니다.
+JSON 웹 토큰은 두 당사자 간의 클레임을 안전하게 표현하기 위한 개방형 업계 표준 RFC 7519 메서드입니다. 이 샘플에서는 JWT.io 라이브러리를 사용하여 JWT를 생성했습니다.
+이전 단계에서 다운로드한 서비스 자격 증명에는 PKCS#1 형식의 개인 키가 포함되어 있습니다.이 문자열에서 개인 키를 추출하려면 [바운시 캐슬](https://www.bouncycastle.org/) 라이브러리. Java의 일부인 암호화 라이브러리는 PKCS#1 형식을 지원하지 않습니다.
 
 다음 코드는 JWT를 생성하는 데 사용되었습니다.
 

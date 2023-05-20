@@ -1,6 +1,6 @@
 ---
 title: AEM 액세스 구성 둘러보기
-description: Admin Console에서 Adobe IMS 사용자, 사용자 그룹 및 제품 프로필을 구성하는 방법, AEM Author에서 이러한 Adobe IMS 추상을 활용하여 특정 그룹 기반 권한을 정의하고 관리하는 방법을 간략히 보여줍니다.
+description: Admin Console Adobe에서 Adobe IMS 사용자, 사용자 그룹 및 제품 프로필을 구성하는 방법을 간략히 설명하고, AEM 작성자에서 이러한 Adobe IMS 추상을 활용하여 특정 그룹 기반 권한을 정의하고 관리하는 방법을 설명합니다.
 version: Cloud Service
 topic: Administration, Security
 feature: User and Groups
@@ -24,6 +24,6 @@ ht-degree: 42%
 >title="AEM 액세스 구성 둘러보기"
 >abstract="Adobe Admin Console에서 Adobe IMS 사용자, 사용자 그룹 및 제품 프로필을 구성하는 방법과 AEM Author에서 이러한 Adobe IMS 추상을 활용하여 특정 그룹 기반 권한을 정의하고 관리하는 방법을 간략히 보여 줍니다."
 
-Admin Console에서 Adobe IMS 사용자, 사용자 그룹 및 제품 프로필을 구성하는 방법, AEM Author에서 이러한 Adobe IMS 추상을 활용하여 특정 그룹 기반 권한을 정의하고 관리하는 방법을 간략히 보여줍니다.
+Admin Console Adobe에서 Adobe IMS 사용자, 사용자 그룹 및 제품 프로필을 구성하는 방법을 간략히 설명하고, AEM 작성자에서 이러한 Adobe IMS 추상을 활용하여 특정 그룹 기반 권한을 정의하고 관리하는 방법을 설명합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/39155?quality=12&learn=on)

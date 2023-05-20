@@ -1,6 +1,6 @@
 ---
 title: AEM Sites의 기본 페이지 작업
-description: 다음 비디오에서는 Adobe Experience Manager Sites 페이지에 대한 기본 페이지 관리 작업을 수행하는 방법을 소개합니다.
+description: 다음 비디오에서는 Adobe Experience Manager Sites 페이지에 대한 기본 페이지 관리 작업을 수행하는 방법을 중점적으로 다룹니다.
 version: 6.4, 6.5
 topic: Content Management
 feature: Page Editor, Editable Templates

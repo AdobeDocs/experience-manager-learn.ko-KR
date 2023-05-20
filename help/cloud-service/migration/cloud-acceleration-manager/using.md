@@ -1,6 +1,6 @@
 ---
-title: Cloud Acceleration Manager 도구 사용
-description: Cloud Acceleration Manager의 도구를 사용하는 내레이션이 포함된 연습입니다.
+title: Cloud Acceleration Manager의 도구 사용
+description: Cloud Acceleration Manager의 도구 사용에 대한 내레이션 설명입니다.
 version: Cloud Service
 feature: Migration
 topic: Migration, Upgrade
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Cloud Acceleration Manager 도구 사용
+# Cloud Acceleration Manager의 도구 사용
 
-Cloud Acceleration Manager의 도구를 사용하는 내레이션이 포함된 연습입니다.
+Cloud Acceleration Manager의 도구 사용에 대한 내레이션 설명입니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336699?quality=12&learn=on)

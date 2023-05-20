@@ -1,5 +1,5 @@
 ---
-title: Unix 설치 시 OpenOffice 관련 문제를 해결하는 절차
+title: Unix 설정에서 OpenOffice 관련 문제를 해결하는 절차
 description: UNIX 설치 시 PDF 생성기 문제와 관련된 OpenOffice 문제를 해결합니다.
 type: Troubleshooting
 role: Developer
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Unix 설치 시 OpenOffice 특정 오류를 해결하는 절차
+# Unix 설정에서 OpenOffice 관련 오류를 해결하는 단계
 
-*이 비디오에서는 AEM Forms PDFG용 Unix 설정에서 OpenOffice 특정 오류를 해결하는 프로세스를 안내합니다.*
+*이 비디오는 AEM Forms PDFG용 Unix 설정에서 OpenOffice 관련 오류를 해결하는 프로세스를 안내합니다.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335551?quality=12&learn=on)

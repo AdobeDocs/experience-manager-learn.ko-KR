@@ -1,6 +1,6 @@
 ---
 title: 서비스 사용자
-description: AEM 코드에서 서비스 사용자를 만들고 사용하여 AEM 리포지토리에 제어되고 프로그래밍 방식으로 액세스하는 방법을 알아봅니다.
+description: AEM 코드에서 서비스 사용자를 만들고 사용하여 AEM 저장소에 대한 제어된 프로그래밍 방식 액세스를 제공하는 방법에 대해 알아봅니다.
 version: Cloud Service
 topic: Development
 feature: OSGI, Security
@@ -19,13 +19,13 @@ ht-degree: 8%
 
 # 서비스 사용자
 
-AEM 코드에서 서비스 사용자를 만들고 사용하여 AEM 리포지토리에 제어되고 프로그래밍 방식으로 액세스하는 방법을 알아봅니다.
+AEM 코드에서 서비스 사용자를 만들고 사용하여 AEM 저장소에 대한 제어된 프로그래밍 방식 액세스를 제공하는 방법에 대해 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/337530?quality=12&learn=on)
 
 ## 리소스
 
-+ [Sling Repository Initialization(포인터) 설명서](https://sling.apache.org/documentation/bundles/repository-initialization.html)
++ [Sling Repository Initialization (repoinit) 설명서](https://sling.apache.org/documentation/bundles/repository-initialization.html)
 + [Sling 서비스 인증 설명서](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html)
 
 ## 코드

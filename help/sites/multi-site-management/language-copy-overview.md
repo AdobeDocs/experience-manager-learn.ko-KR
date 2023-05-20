@@ -1,7 +1,7 @@
 ---
 title: 언어 사본 소개
 seo-title: Introduction to Language Copy
-description: AEM Sites에서 언어 사본 을 사용하여 다국어 사이트를 제작하는 방법에 대한 개요를 살펴보십시오
+description: AEM Sites에서 언어 사본을 사용하여 다국어 사이트를 만드는 방법에 대한 개요를 살펴보십시오
 seo-description: Get an overview of how to create a multilingual site using Language Copy in AEM Sites
 feature: Language Copy, Multi Site Manager
 topics: localization, authoring, content-architecture

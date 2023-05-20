@@ -1,5 +1,5 @@
 ---
-title: 적응형 Forms을 사용한 바코드 서비스
+title: 적응형 Forms이 포함된 바코드 서비스
 description: 바코드 서비스를 사용하여 바코드를 디코딩하고 추출된 데이터에서 양식 필드를 채웁니다.
 feature: Barcoded Forms
 version: 6.4,6.5
@@ -15,16 +15,16 @@ ht-degree: 0%
 
 ---
 
-# 적응형 Forms을 사용한 바코드 서비스{#barcode-service-with-adaptive-forms}
+# 적응형 Forms이 포함된 바코드 서비스{#barcode-service-with-adaptive-forms}
 
-이 문서에서는 바코드 서비스를 사용하여 적응형 양식을 채우는 방법을 보여 줍니다. 사용 사례는 다음과 같습니다.
+이 문서에서는 Barcode Service를 사용하여 적응형 양식을 채우는 방법을 보여줍니다. 사용 사례는 다음과 같습니다.
 
-1. 사용자가 적응형 양식 첨부 파일로 바코드가 있는 PDF 추가
-1. 첨부 파일의 경로가 서블릿으로 전송됩니다
-1. 서블릿은 바코드를 디코딩하고 데이터를 JSON 형식으로 반환합니다
-1. 그런 다음 디코딩된 데이터를 사용하여 적응형 양식을 채웁니다
+1. 사용자가 바코드가 포함된 PDF을 적응형 양식 첨부 파일로 추가합니다.
+1. 첨부 파일의 경로가 서블릿으로 전송됩니다.
+1. 서블릿이 바코드를 디코딩하고 데이터를 JSON 형식으로 반환합니다.
+1. 그런 다음 디코딩된 데이터를 사용하여 적응형 양식이 채워집니다
 
-다음 코드는 바코드를 디코딩하고 JSON 개체를 디코딩된 값으로 채웁니다. 그러면 서블릿은 호출 애플리케이션에 대한 응답으로 JSON 개체를 반환합니다.
+다음 코드는 바코드를 디코딩하고 디코딩된 값으로 JSON 개체를 채웁니다. 그런 다음 서블릿은 호출하는 애플리케이션에 대한 응답으로 JSON 개체를 반환합니다.
 
 
 
@@ -54,7 +54,7 @@ public JSONObject extractBarCode(Document pdfDocument) {
  }
 ```
 
-다음은 서블릿 코드입니다. 이 서블릿은 사용자가 적응형 양식에 첨부 파일을 추가할 때 호출됩니다. 서블릿은 JSON 개체를 호출 애플리케이션에 다시 반환합니다. 그런 다음 호출 애플리케이션이 적응형 양식을 JSON 개체에서 추출된 값으로 채웁니다.
+다음은 서블릿 코드입니다. 이 서블릿은 사용자가 적응형 양식에 첨부 파일을 추가할 때 호출됩니다. 서블릿은 JSON 개체를 호출 응용 프로그램으로 되돌립니다. 그런 다음 호출 애플리케이션이 적응형 양식을 JSON 오브젝트에서 추출된 값으로 채웁니다.
 
 ```java
 @Component(service = Servlet.class, property = {
@@ -94,7 +94,7 @@ public class DecodeBarCode extends SlingSafeMethodsServlet {
 }
 ```
 
-다음 코드는 적응형 양식에서 참조하는 클라이언트 라이브러리의 일부입니다. 사용자가 적응형 양식에 첨부 파일을 추가하면 이 코드가 트리거됩니다. 이 코드는 요청 매개 변수에서 전달된 첨부 파일의 경로를 사용하여 서블릿을 GET으로 호출합니다. 그런 다음 서블릿 호출에서 수신한 데이터를 사용하여 적응형 양식을 채웁니다.
+다음 코드는 적응형 양식에서 참조하는 클라이언트 라이브러리의 일부입니다. 사용자가 적응형 양식에 첨부 파일을 추가하면 이 코드가 트리거됩니다. 코드는 GET 매개 변수에서 전달된 첨부 파일의 경로를 사용하여 서블릿을 호출합니다. 그런 다음 서블릿 호출에서 수신된 데이터를 사용하여 적응형 양식을 채웁니다.
 
 ```javascript
 $(document).ready(function()
@@ -133,16 +133,16 @@ $(document).ready(function()
 >
 >이 패키지에 포함된 적응형 양식은 AEM Forms 6.4를 사용하여 빌드되었습니다. AEM Forms 6.3 환경에서 이 패키지를 사용하려면 AEM Form 6.3에서 적응형 양식을 만드십시오
 
-12행 - 서비스 확인자를 가져오기 위한 사용자 지정 코드. 이 번들은 이 문서의 assets의 일부로 포함되어 있습니다.
+12행 - 서비스 확인자를 가져오는 사용자 지정 코드. 이 번들은 이 문서 에셋의 일부로 포함됩니다.
 
-23행 - DocumentServices extractBarCode 메서드를 호출하여 디코딩된 데이터로 JSON 개체를 채웁니다
+23행 - DocumentServices extractBarCode 메서드를 호출하여 디코딩된 데이터로 채워진 JSON 개체를 가져옵니다.
 
-시스템에서 이 작업을 실행하려면 다음 단계를 수행하십시오.
+시스템에서 이 작업을 실행하려면 다음 단계를 따르십시오.
 
-1. [BarcodeService.zip 다운로드](assets/barcodeservice.zip) 패키지 관리자를 사용하여 AEM으로 가져옵니다.
+1. [BarcodeService.zip 다운로드](assets/barcodeservice.zip) 패키지 관리자를 사용하여 AEM으로 가져오기
 1. [사용자 지정 DocumentServices 번들 다운로드 및 설치](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
 1. [DevelopingWithServiceUser 번들 다운로드 및 설치](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 1. [샘플 PDF 양식 다운로드](assets/barcode.pdf)
-1. 브라우저를 [샘플 적응형 양식](http://localhost:4502/content/dam/formsanddocuments/barcodedemo/jcr:content?wcmmode=disabled)
+1. 브라우저를 가리켜 [샘플 적응형 양식](http://localhost:4502/content/dam/formsanddocuments/barcodedemo/jcr:content?wcmmode=disabled)
 1. 제공된 샘플 PDF 업로드
-1. 데이터가 채워진 양식이 표시됩니다
+1. 데이터로 채워진 양식이 표시됩니다

@@ -1,6 +1,6 @@
 ---
-title: AEM Enhanced Connector용 Workfront의 초기 설정 및 구성
-description: AEM Assets과 Workfront의 통합 기능을 잠금 해제하여 Experience Manager 향상 커넥터를 위한 Workfront을 설정 및 구성하는 방법을 알아봅니다.
+title: Workfront for AEM 강화 커넥터의 초기 설정 및 구성
+description: AEM Assets과 Workfront의 결합된 기능을 활용하여 Workfront for Experience Manager 강화 커넥터를 설정하고 구성하는 방법에 대해 알아봅니다.
 version: Cloud Service
 topic: Content Management, Integrations
 role: Admin, Architect, Developer
@@ -19,10 +19,10 @@ ht-degree: 0%
 
 # 초기 설정 및 구성
 
-![AEM Experts Series](./assets/banner.png)
+![AEM 전문가 시리즈](./assets/banner.png)
 
-AEM Assets과 Workfront의 통합 기능을 잠금 해제하여 Experience Manager 향상 커넥터를 위한 Workfront을 설정 및 구성하는 방법을 알아봅니다.
+AEM Assets과 Workfront의 결합된 기능을 활용하여 Workfront for Experience Manager 강화 커넥터를 설정하고 구성하는 방법에 대해 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/340331?quality=12&learn=on)
 
-_이것은 다음 중 하나입니다 [Workfront for Experience Manager enhanced connector의 4가지 전문가 시리즈](./overview.md)_
+_다음 중 1번째 항목입니다. [Workfront for Experience Manager 강화 커넥터에 대한 4부로 구성된 expert 시리즈](./overview.md)_

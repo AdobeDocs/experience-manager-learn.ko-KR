@@ -1,6 +1,6 @@
 ---
-title: 적응형 양식 제출에서 캠페인 프로필 만들기
-description: 이 문서에서는 적응형 양식 제출 시 Adobe Campaign Standard에서 프로필을 만드는 데 필요한 단계에 대해 설명합니다. 이 프로세스에서는 사용자 지정 제출 메커니즘을 사용하여 적응형 양식 제출을 처리합니다.
+title: 적응형 양식 제출에 캠페인 프로필 만들기
+description: 이 문서에서는 적응형 양식 제출 시 Adobe Campaign Standard에서 프로필을 만드는 데 필요한 단계에 대해 설명합니다. 이 프로세스는 사용자 지정 제출 메커니즘을 사용하여 적응형 양식 제출을 처리합니다.
 feature: Adaptive Forms, Form Data Model
 version: 6.4,6.5
 topic: Development
@@ -14,19 +14,19 @@ ht-degree: 0%
 
 ---
 
-# 적응형 양식 제출에서 캠페인 프로필 만들기 {#creating-campaign-profile-on-adaptive-form-submission}
+# 적응형 양식 제출에 캠페인 프로필 만들기 {#creating-campaign-profile-on-adaptive-form-submission}
 
-이 문서에서는 적응형 양식 제출 시 Adobe Campaign Standard에서 프로필을 만드는 데 필요한 단계에 대해 설명합니다. 이 프로세스에서는 사용자 지정 제출 메커니즘을 사용하여 적응형 양식 제출을 처리합니다.
+이 문서에서는 적응형 양식 제출 시 Adobe Campaign Standard에서 프로필을 만드는 데 필요한 단계에 대해 설명합니다. 이 프로세스는 사용자 지정 제출 메커니즘을 사용하여 적응형 양식 제출을 처리합니다.
 
-이 튜토리얼에서는 적응형 양식 제출 시 Campaign 프로필을 만드는 단계를 설명합니다. 이 사용 사례를 수행하려면 다음을 수행해야 합니다
+이 튜토리얼에서는 적응형 양식 제출에 대한 캠페인 프로필을 만드는 단계를 설명합니다. 이 사용 사례를 달성하려면 다음을 수행해야 합니다
 
-* REST API를 사용하여 Adobe Campaign Standard 프로필을 만들려면 AEM 서비스(CampaignService)를 만드십시오
-* 적응형 양식 제출 처리를 위한 사용자 지정 제출 작업 만들기
+* REST API를 사용하여 AEM 서비스(CampaignService)를 만들어 Adobe Campaign Standard 프로필을 만듭니다
+* 적응형 양식 제출 처리를 위한 사용자 지정 제출 액션 만들기
 * CampaignService의 createProfile 메서드 호출
 
 ## AEM 서비스 만들기 {#create-aem-service}
 
-AEM 서비스를 만들어 Adobe Campaign 프로필을 만듭니다. 이 AEM 서비스는 OSGI 구성에서 Adobe Campaign 자격 증명을 가져옵니다. 캠페인 자격 증명을 획득하면 액세스 토큰이 생성되고 액세스 토큰 HTTP Post 호출이 수행되어 Adobe Campaign에서 프로필을 만듭니다. 다음은 프로필을 만들기 위한 코드입니다.
+AEM 서비스를 만들어 Adobe Campaign 프로필을 만듭니다. 이 AEM 서비스는 OSGI 구성에서 Adobe Campaign 자격 증명을 가져옵니다. 캠페인 자격 증명을 획득하면 액세스 토큰이 생성되고 액세스 토큰 HTTP Post 호출을 사용하여 Adobe Campaign에서 프로필이 생성됩니다. 다음은 프로필을 만들기 위한 코드입니다.
 
 ```java
 package aemformwithcampaign.core.services.impl;
@@ -239,11 +239,11 @@ return null;
 }
 ```
 
-## 사용자 지정 제출 {#custom-submit}
+## 사용자 정의 제출 {#custom-submit}
 
-적응형 양식 제출을 처리할 사용자 지정 제출 핸들러를 만듭니다. 이 사용자 지정 제출 처리기에서 CampaignService의 createProfile 메서드를 호출합니다. createProfile 메서드는 만들어야 하는 프로필을 나타내는 JSONObject를 허용합니다.
+적응형 양식 제출을 처리할 사용자 지정 제출 처리기를 만듭니다. 이 사용자 지정 제출 처리기에서 CampaignService의 createProfile 메서드를 호출하게 됩니다. createProfile 메서드는 만들어야 하는 프로필을 나타내는 JSONObject를 수락합니다.
 
-AEM Forms의 사용자 지정 제출 처리기에 대한 자세한 내용은 다음 내용을 참조하십시오 [링크](/help/forms/adaptive-forms/custom-submit-aem-forms-article.md)
+AEM Forms의 사용자 지정 제출 처리기에 대한 자세한 내용은 다음을 참조하십시오. [링크](/help/forms/adaptive-forms/custom-submit-aem-forms-article.md)
 
 다음은 사용자 지정 제출의 코드입니다
 
@@ -260,14 +260,14 @@ String pkey = addNewProfile.createProfile(profile);
 
 ## 솔루션 테스트 {#test-the-solution}
 
-서비스와 사용자 지정 제출 작업을 정의했으면 솔루션을 테스트할 준비가 되었습니다. 솔루션을 테스트하려면 다음 단계를 수행하십시오
+서비스와 사용자 정의 제출 액션을 정의한 후에는 솔루션을 테스트할 준비가 되었습니다. 솔루션을 테스트하려면 다음 단계를 수행하십시오
 
 
-* [여기에 설명된 대로 단계를 따랐는지 확인합니다](aem-forms-with-campaign-standard-getting-started-tutorial.md)
-* [패키지 관리자를 사용하여 적응형 양식 및 사용자 지정 제출 처리기 가져오기](assets/create-acs-profile-on-af-submission.zip).이 패키지에는 사용자 지정 제출 작업에 제출하도록 구성된 적응형 양식이 포함되어 있습니다.
+* [여기에 설명된 단계를 따랐는지 확인하십시오](aem-forms-with-campaign-standard-getting-started-tutorial.md)
+* [패키지 관리자를 사용하여 적응형 양식 및 사용자 정의 제출 핸들러 가져오기](assets/create-acs-profile-on-af-submission.zip).이 패키지에는 사용자 지정 제출 액션에 제출하도록 구성된 적응형 양식이 포함되어 있습니다.
 * 미리 보기 [양식](http://localhost:4502/content/dam/formsanddocuments/createcampaignprofile/jcr:content?wcmmode=disabled)
-* 모든 필드를 입력하고 제출
-* ACS 인스턴스에서 새 프로필이 만들어집니다
+* 모든 필드를 입력한 다음 제출합니다.
+* ACS 인스턴스에 새 프로필이 만들어집니다.
 
 ## 다음 단계
 

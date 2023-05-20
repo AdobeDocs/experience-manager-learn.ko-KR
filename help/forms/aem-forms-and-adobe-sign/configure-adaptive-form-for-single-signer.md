@@ -22,6 +22,6 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/39475?quality=12&learn=on)
 
-이 비디오와 관련된 자산은 다음 링크에서 다운로드할 수 있습니다
+이 비디오와 관련된 에셋은 다음 링크에서 다운로드할 수 있습니다
 
-* [수익자 양식 변경 ](assets/change-of-beneficiary-form.zip)
+* [수취인 양식 변경 ](assets/change-of-beneficiary-form.zip)

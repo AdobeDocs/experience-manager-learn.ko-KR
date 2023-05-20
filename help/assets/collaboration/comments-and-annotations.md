@@ -1,6 +1,6 @@
 ---
-title: 댓글 및 주석
-description: AEM에서 주석 및 주석을 사용하여 자산에 대해 통신 및 공동 작업하는 방법을 알아봅니다.
+title: 주석 및 주석
+description: AEM에서 주석 및 주석을 사용하여 에셋에 대해 통신하고 공동 작업하는 방법을 알아봅니다.
 feature: Collaboration
 version: Cloud Service
 kt: 4541
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# 댓글 및 주석
+# 주석 및 주석
 
-AEM에서 주석 및 주석을 사용하여 자산에 대해 통신 및 공동 작업하는 방법을 알아봅니다.
+AEM에서 주석 및 주석을 사용하여 에셋에 대해 통신하고 공동 작업하는 방법을 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32049?quality=12&learn=on)

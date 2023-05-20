@@ -1,6 +1,6 @@
 ---
 title: 적응형 양식 데이터를 사용하여 대화형 DoR 생성
-description: 적응형 양식 데이터를 XDP 템플릿에 병합하여 다운로드 가능한 pdf를 생성합니다
+description: 적응형 양식 데이터를 XDP 템플릿과 병합하여 다운로드 가능한 PDF 생성
 version: 6.4,6.5
 feature: Forms Service
 topic: Development
@@ -16,23 +16,23 @@ ht-degree: 0%
 
 ---
 
-# 대화형 DoR 다운로드
+# 인터랙티브 DoR 다운로드
 
-일반적인 사용 사례는 적응형 양식 데이터를 사용하여 대화형 DoR을 다운로드할 수 있는 것입니다. 다운로드한 DoR은 Adobe Acrobat 또는 Adobe Reader을 사용하여 완료됩니다.
+일반적인 사용 사례는 적응형 양식 데이터가 있는 대화형 DoR을 다운로드할 수 있는 것입니다. 그런 다음 다운로드한 DoR이 Adobe Acrobat 또는 Adobe Reader을 사용하여 완료됩니다.
 
-## 적응형 양식은 XSD 스키마를 기반으로 하지 않습니다
+## 적응형 양식이 XSD 스키마를 기반으로 하지 않음
 
 XDP 및 적응형 양식이 스키마를 기반으로 하지 않는 경우 다음 단계에 따라 대화형 기록 문서를 생성하십시오.
 
 ### 적응형 양식 만들기
 
 적응형 양식을 만들고 적응형 양식 필드 이름이 xdp 템플릿의 필드 이름과 동일한지 확인합니다.
-xdp 템플릿의 루트 요소 이름을 메모하십시오.
+xdp 템플릿의 루트 요소 이름을 기록합니다.
 ![루트 요소](assets/xfa-root-element.png)
 
 ### 클라이언트 라이브러리
 
-PDF 다운로드 단추가 트리거되면 다음 코드가 트리거됩니다
+다음 코드는 PDF 다운로드 단추가 트리거될 때 트리거됩니다
 
 ```javascript
 $(document).ready(function() {
@@ -63,25 +63,25 @@ $(document).ready(function() {
 });
 ```
 
-## XSD 스키마를 기반으로 한 적응형 양식
+## XSD 스키마 기반 적응형 양식
 
-xdp가 XSD를 기반으로 하지 않는 경우 다음 단계에 따라 적응형 양식을 기반으로 할 XSD(스키마)를 만드십시오
+xdp가 XSD를 기반으로 하지 않는 경우 다음 단계에 따라 적응형 양식의 기반이 되는 XSD(스키마)를 생성하십시오
 
-### XDP용 샘플 데이터 생성
+### XDP에 대한 샘플 데이터 생성
 
 * AEM Forms 디자이너에서 XDP를 엽니다.
 * 파일 클릭 | 양식 속성 | 미리 보기
-* 미리 보기 데이터 생성을 클릭합니다
-* 생성을 누릅니다
-* &quot;form-data.xml&quot;과 같은 의미 있는 파일 이름을 제공합니다
+* 미리 보기 데이터 생성 을 클릭합니다
+* Generate 클릭
+* &quot;form-data.xml&quot;과 같은 의미 있는 파일 이름 제공
 
 ### xml 데이터에서 XSD 생성
 
-무료 온라인 도구를 사용하여 [xsd 생성](https://www.freeformatter.com/xsd-generator.html) 이전 단계에서 생성된 xml 데이터에서 생성합니다.
+무료 온라인 도구를 사용하여 다음을 수행할 수 있습니다. [xsd 생성](https://www.freeformatter.com/xsd-generator.html) 이전 단계에서 생성된 xml 데이터에서 가져온 것입니다.
 
 ### 적응형 양식 만들기
 
-이전 단계의 XSD를 기반으로 적응형 양식을 만듭니다. 클라이언트 라이브러리 &quot;irs&quot;를 사용할 양식을 연결합니다. 이 클라이언트 라이브러리에는 호출 애플리케이션에 PDF을 반환하는 서블릿에 대한 POST 호출을 수행하는 코드가 있습니다. 다음 코드는 _다운로드 PDF_ 를 클릭합니다.
+이전 단계의 XSD를 기반으로 적응형 양식을 만듭니다. 클라이언트 라이브러리 &quot;irs&quot;를 사용하도록 양식을 연결하십시오. 이 클라이언트 라이브러리에는 호출 응용 프로그램에 PDF을 반환하는 서블릿에 대한 POST 호출을 수행하는 코드가 있습니다. 다음 코드는 _PDF 다운로드_ 클릭됨
 
 ```javascript
 $(document).ready(function() {
@@ -114,9 +114,9 @@ $(document).ready(function() {
 
 
 
-## 사용자 지정 서블릿 만들기
+## 사용자 정의 서블릿 만들기
 
-데이터를 XDP 템플릿과 병합하고 pdf를 반환하는 사용자 지정 서블릿을 만듭니다. 이를 수행할 코드는 아래에 나와 있습니다. 사용자 지정 서블릿은 [AEMFormsDocumentServices.core-1.0-SNAPSHOT 번들](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)).
+데이터를 XDP 템플릿과 병합하고 pdf를 반환하는 사용자 지정 서블릿을 만듭니다. 이를 수행하기 위한 코드가 아래에 나와 있습니다. 사용자 정의 서블릿은 [AEMFormsDocumentServices.core-1.0-SNAPSHOT 번들](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)).
 
 ```java
 public class GenerateIInteractiveDor extends SlingAllMethodsServlet {
@@ -209,21 +209,21 @@ public class GenerateIInteractiveDor extends SlingAllMethodsServlet {
 }
 ```
 
-샘플 코드에서는 요청 개체에서 xdp 이름 및 기타 매개 변수를 추출합니다. 양식이 XSD를 기반으로 하지 않으면 xdp와 병합할 xml 문서가 만들어집니다.양식이 XSD를 기반으로 하는 경우 제출된 적응형 양식 데이터에서 적절한 노드를 추출하여 xdp 템플릿과 병합할 xml 문서를 생성하면 됩니다.
+샘플 코드에서는 요청 개체에서 xdp 이름 및 기타 매개 변수를 추출합니다. 양식이 XSD를 기반으로 하지 않는 경우 xdp와 병합할 xml 문서가 만들어집니다. 양식이 XSD를 기반으로 하는 경우 적응형 양식 제출 데이터에서 적절한 노드를 추출하여 xdp 템플릿과 병합할 xml 문서를 생성하면 됩니다.
 
 ## 서버에 샘플 배포
 
-로컬 서버에서 테스트하려면 다음 단계를 수행하십시오.
+로컬 서버에서 테스트하려면 다음 단계를 따르십시오.
 
 1. [DevelopingWithServiceUser 번들 다운로드 및 설치](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-1. Apache Sling Service User Mapper Service DevelopingWithServiceUser.core:getformsresourceresresolver=fd-service에 다음 항목을 추가합니다.
-1. [사용자 지정 DocumentServices 번들을 다운로드하여 설치합니다](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar). 여기에 데이터를 XDP 템플릿과 병합하고 pdf를 다시 스트리밍할 서블릿이 있습니다
+1. Apache Sling Service 사용자 매퍼 서비스 DevelopingWithServiceUser.core:getformsresourceresolver=fd-service에 다음 항목을 추가합니다.
+1. [사용자 지정 DocumentServices 번들 다운로드 및 설치](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar). 데이터를 XDP 템플릿과 병합하고 pdf를 다시 스트리밍하는 서블릿이 있습니다.
 1. [클라이언트 라이브러리 가져오기](assets/generate-interactive-dor-client-lib.zip)
-1. [문서 자산(적응형 양식, XDP 템플릿 및 XSD) 가져오기](assets/generate-interactive-dor-sample-assets.zip)
+1. [문서 자산 가져오기(적응형 양식, XDP 템플릿 및 XSD)](assets/generate-interactive-dor-sample-assets.zip)
 1. [적응형 양식 미리 보기](http://localhost:4502/content/dam/formsanddocuments/f8918complete/jcr:content?wcmmode=disabled)
-1. 양식 필드 몇 개를 채웁니다.
-1. PDF 다운로드 을 클릭하여 PDF을 가져옵니다. PDF이 다운로드될 때까지 몇 초 기다려야 할 수 있습니다.
+1. 양식 필드 몇 개를 입력합니다.
+1. PDF 다운로드 를 클릭하여 PDF을 가져옵니다. PDF이 다운로드될 때까지 몇 초 동안 기다려야 할 수 있습니다.
 
 >[!NOTE]
 >
->와 동일한 사용 사례를 사용할 수 있습니다. [비 xsd 기반 적응형 양식](http://localhost:4502/content/dam/formsanddocuments/two/jcr:content?wcmmode=disabled). irs clientlib에 있는 streampdf.js의 post 종단점에 적절한 매개 변수를 전달해야 합니다.
+>과 동일한 사용 사례를 시도할 수 있습니다. [비 xsd 기반 적응형 양식](http://localhost:4502/content/dam/formsanddocuments/two/jcr:content?wcmmode=disabled). irs clientlib에 있는 streampdf.js의 post 끝점에 적절한 매개 변수를 전달해야 합니다.

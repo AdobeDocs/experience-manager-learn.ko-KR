@@ -1,6 +1,6 @@
 ---
-title: 적응형 Forms Workflow에서 워크플로우 댓글 캡처
-description: AEM 워크플로우에서 워크플로우 주석 캡처
+title: 적응형 Forms Workflow에서 워크플로우 주석 캡처
+description: AEM Workflow에서 워크플로우 주석 캡처
 feature: Workflow
 version: 6.4
 topic: Development
@@ -15,38 +15,38 @@ ht-degree: 0%
 
 ---
 
-# 적응형 Forms Workflow에서 워크플로우 댓글 캡처{#capturing-workflow-comments-in-adaptive-forms-workflow}
+# 적응형 Forms Workflow에서 워크플로우 주석 캡처{#capturing-workflow-comments-in-adaptive-forms-workflow}
 
->[AEM Forms 6.4에만 적용됩니다. AEM Forms 6.5에서는 변수 기능을 사용하여 이 사용 사례를 수행하십시오]
+>[AEM Forms 6.4에만 적용됩니다. AEM Forms 6.5에서 변수 기능을 사용하여 이 사용 사례를 달성하십시오]
 
-일반적인 요청은 작업 검토자가 전자 메일에 입력한 주석을 포함하는 기능입니다. AEM Forms 6.4에는 사용자가 입력한 주석을 캡처하고 전자 메일에 이러한 주석을 포함하는 기본 제공 메커니즘이 없습니다.
+일반적인 요청은 작업 검토자가 이메일에 입력한 주석을 포함할 수 있는 기능에 대한 것입니다. AEM Forms 6.4에는 사용자가 입력한 댓글을 캡처하고 이러한 댓글을 이메일에 포함하는 기본 메커니즘이 없습니다.
 
-이 요구 사항을 충족하기 위해 주석을 캡처하고 이러한 주석을 워크플로우 메타데이터 속성으로 저장하는 데 사용할 수 있는 샘플 OSGi 번들이 제공됩니다.
+이 요구 사항을 충족하기 위해 설명을 캡처하고 이러한 설명을 워크플로우 메타데이터 속성으로 저장하는 데 사용할 수 있는 샘플 OSGi 번들이 제공됩니다.
 
-다음 스크린샷에서는 의 프로세스 단계를 사용하는 방법을 보여 줍니다 [AEM 워크플로우](http://localhost:4502/editor.html/conf/global/settings/workflow/models/CaptureComments.html) 주석을 캡처하고 메타데이터 속성으로 저장합니다. Capture Workflow Comments는 프로세스 단계에서 사용해야 하는 Java 클래스의 이름입니다. 주석이 포함될 메타데이터 속성 이름을 전달해야 합니다. 아래 스크린샷에서 managerComments는 주석을 저장할 메타데이터 속성입니다.
+다음 스크린샷은에서 프로세스 단계를 사용하는 방법을 보여 줍니다 [AEM 워크플로](http://localhost:4502/editor.html/conf/global/settings/workflow/models/CaptureComments.html) 주석을 캡처하여 메타데이터 속성으로 저장합니다. &quot;워크플로우 주석 캡처&quot;는 프로세스 단계에서 사용해야 하는 Java 클래스의 이름입니다. 주석을 포함할 메타데이터 속성 이름을 전달해야 합니다. 아래 스크린샷에서 managerComments는 주석을 저장할 메타데이터 속성입니다.
 
 ![workflowcomments1](assets/workflowcomments1.gif)
 
-시스템에서 이 기능을 테스트하려면 다음 단계를 수행하십시오.
-* [워크플로우의 프로세스 단계가 캡처 워크플로우 주석을 사용하도록 구성되어 있는지 확인합니다](http://localhost:4502/editor.html/conf/global/settings/workflow/models/CaptureComments.html)
+시스템에서 이 기능을 테스트하려면 다음 단계를 따르십시오.
+* [워크플로우의 프로세스 단계가 워크플로우 주석 캡처를 사용하도록 구성되어 있는지 확인합니다.](http://localhost:4502/editor.html/conf/global/settings/workflow/models/CaptureComments.html)
 
 * [Developingwithserviceuser 번들 배포](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-* [SetValue 번들 배포](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). 이 번들에는 주석을 캡처하고 메타데이터 속성으로 저장하는 샘플 코드가 포함되어 있습니다
+* [SetValue 번들 배포](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). 이 번들에는 댓글을 캡처하여 메타데이터 속성으로 저장하는 샘플 코드가 포함되어 있습니다
 
-* [이 문서와 관련된 자산을 파일 시스템에서 다운로드 및 압축 해제합니다](assets/capturecomments.zip) 자산에는 워크플로우 모델과 샘플 적응형 양식이 포함되어 있습니다.
+* [이 문서와 관련된 에셋을 다운로드하여 파일 시스템에 압축 해제합니다.](assets/capturecomments.zip) 자산에는 워크플로우 모델 및 샘플 적응형 양식이 포함되어 있습니다.
 
-* 패키지 관리자를 사용하여 2개의 zip 파일을 AEM에 가져옵니다.
+* 패키지 관리자를 사용하여 AEM에 zip 파일 2개 가져오기
 
-* [이 URL로 이동하여 양식을 미리 봅니다](http://localhost:4502/content/dam/formsanddocuments/capturecomments/jcr:content?wcmmode=disabled)
+* [이 URL로 이동하여 양식 미리 보기](http://localhost:4502/content/dam/formsanddocuments/capturecomments/jcr:content?wcmmode=disabled)
 
-* 양식 필드를 작성하고 양식을 제출합니다
+* 양식 필드 입력 및 양식 제출
 
 * [AEM 받은 편지함 확인](http://localhost:4502/aem/inbox)
 
-* 받은 편지함에서 작업을 열고 양식을 제출합니다. 메시지가 표시되면 몇 가지 주석을 입력하십시오.
+* 받은 편지함에서 작업을 열고 양식을 제출합니다. 메시지가 표시되면 설명을 입력하십시오.
 
-주석은 `managerComments` AEM 저장소 내 아래에 표시됩니다. 주석이 crx에 관리자로 로그인하는지 확인하려면 다음을 수행하십시오. 워크플로우 인스턴스는 다음 경로에 저장됩니다.
+주석은 이라는 메타데이터 속성에 저장됩니다. `managerComments` AEM 저장소에서 다음을 수행합니다. 관리자 자격으로 crx에 로그인하는 댓글에 대해 확인합니다. 워크플로 인스턴스는 다음 경로에 저장됩니다.
 
 `/var/workflow/instances/server0`
 

@@ -1,6 +1,6 @@
 ---
 title: Cloud 5 소개
-description: AEM Engineering Cloud 5 시리즈 소개.
+description: AEM Engineering Cloud 5 시리즈 소개
 version: Cloud Service
 feature: Developer Tools
 role: Admin, Developer
@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Cloud 5 소개
 
-AEM Engineering의 Cloud 5 Series를 시작합니다. 제품의 구현 단계에서 주요 문제 중 하나는 샘플, 도구 또는 API에 대한 충분한 코드 샘플 및/또는 라이브 데모가 있다는 것입니다. 이 시리즈의 목표는 5분 이내에 AEM as a Cloud Service에 대한 유용한 정보를 제공하는 것입니다.
+AEM Engineering의 Cloud 5 Series를 시작합니다. 모든 제품의 구현 단계에서 가장 중요한 문제 중 하나는 충분한 코드 샘플 및/또는 이러한 샘플, 도구 또는 API에 대한 실시간 데모가 있다는 것입니다. 이 시리즈의 목표는 5분 이내에 AEM에 대한 유용한 정보를 as a Cloud Service으로 제공하는 것입니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/340667?quality=12&learn=on)

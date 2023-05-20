@@ -1,6 +1,6 @@
 ---
 title: Cloud Manager 파이프라인 구성
-description: AEM에서 파이프라인을 구성하고 다양한 유형의 파이프라인을 탐색합니다.
+description: AEM에서 파이프라인을 구성하고 다양한 파이프라인 유형을 살펴봅니다.
 role: Developer
 level: Beginner
 type: Tutorial

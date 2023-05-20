@@ -1,6 +1,6 @@
 ---
-title: Cloud Manager 사용 - CI/CD 프로덕션 파이프라인
-description: CI/CD 프로덕션 파이프라인은 스테이지를 통해 프로덕션 환경에 코드를 빌드 및 배포하는 데 사용되며, 가치 창출 시간을 단축합니다. CI/CD 프로덕션 파이프라인 구성은 파이프라인을 시작하는 트리거, 프로덕션 배포를 제어하는 매개변수 및 성능 테스트 매개변수를 정의합니다.
+title: Adobe Cloud Manager 사용 - CI/CD 프로덕션 파이프라인
+description: CI/CD 프로덕션 파이프라인을 사용하여 스테이지를 통해 코드를 빌드하고 프로덕션 환경에 배포하여 가치 창출 시간을 단축합니다. CI/CD 프로덕션 파이프라인 구성은 파이프라인을 시작하는 트리거, 프로덕션 배포를 제어하는 매개변수 및 성능 테스트 매개변수를 정의합니다.
 topics: Administration
 audience: administrator
 doc-type: feature video
@@ -19,7 +19,7 @@ ht-degree: 49%
 
 ---
 
-# Cloud Manager 사용 - CI/CD 프로덕션 파이프라인 {#using-adobe-cloud-manager-ci-cd-production-pipeline}
+# Adobe Cloud Manager 사용 - CI/CD 프로덕션 파이프라인 {#using-adobe-cloud-manager-ci-cd-production-pipeline}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_devops_prodpipeline"
@@ -30,12 +30,12 @@ ht-degree: 49%
 
 ## 구성
 
-다음 [CI/CD 프로덕션 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html) 구성은 파이프라인을 시작할 트리거, 프로덕션 배포 및 성능 테스트 매개 변수를 제어하는 매개 변수를 정의합니다.
+다음 [CI/CD 프로덕션 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html) 구성은 파이프라인을 시작하는 트리거, 프로덕션 배포를 제어하는 매개 변수 및 성능 테스트 매개 변수를 정의합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26314?quality=12&learn=on)
 
 ### 파이프라인 실행
 
-다음 [CI/CD 프로덕션 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) 는 스테이지를 통해 프로덕션 환경에 코드를 빌드 및 배포하는 데 사용되며 시간이 길어져 있어 가치 실현 시간이 단축됩니다.
+다음 [CI/CD 프로덕션 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) 는 스테이지를 통해 코드를 빌드하고 프로덕션 환경에 배포하는 데 사용되므로 값까지 시간이 단축됩니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26317?quality=12&learn=on)

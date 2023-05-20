@@ -1,6 +1,6 @@
 ---
-title: Workfront for AEM enhanced connector에서 사용자 정의 양식 및 메타데이터 매핑
-description: Workfront 사용자 지정 양식 및 AEM 메타데이터 스키마를 사용하여 자산 메타데이터를 관리하고 동기화하도록 Workfront 및 AEM Assets을 구성하는 방법을 알아봅니다.
+title: Workfront for AEM 강화 커넥터를 사용하여 Workfront 사용자 정의 양식 및 메타데이터 매핑
+description: Workfront 사용자 정의 양식 및 AEM 메타데이터 스키마를 사용하여 에셋 메타데이터를 관리하고 동기화하도록 Workfront 및 AEM Assets을 구성하는 방법에 대해 알아봅니다.
 version: Cloud Service
 topic: Content Management, Integrations
 role: Admin, Architect, Developer
@@ -16,12 +16,12 @@ ht-degree: 0%
 
 ---
 
-# Workfront 사용자 지정 양식 및 메타데이터 매핑
+# Workfront 사용자 정의 양식 및 메타데이터 매핑
 
-![AEM Experts Series](./assets/banner.png)
+![AEM 전문가 시리즈](./assets/banner.png)
 
-Workfront 사용자 지정 양식 및 AEM 메타데이터 스키마를 사용하여 자산 메타데이터를 관리하고 동기화하도록 Workfront 및 AEM Assets을 구성하는 방법을 알아봅니다.
+Workfront 사용자 정의 양식 및 AEM 메타데이터 스키마를 사용하여 에셋 메타데이터를 관리하고 동기화하도록 Workfront 및 AEM Assets을 구성하는 방법에 대해 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/340332?quality=12&learn=on)
 
-_2부 [Workfront for Experience Manager enhanced connector의 4가지 전문가 시리즈](./overview.md)_
+_의 두 번째 편 [Workfront for Experience Manager 강화 커넥터에 대한 4부로 구성된 expert 시리즈](./overview.md)_

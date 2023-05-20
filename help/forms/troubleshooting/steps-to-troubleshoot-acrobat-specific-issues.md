@@ -1,6 +1,6 @@
 ---
 title: Windows 설정에서 Acrobat 관련 문제를 해결하는 절차
-description: Windows 설정의 Acrobat 관련 문제 해결
+description: Windows 설치 시 Acrobat 관련 문제 해결
 type: Troubleshooting
 role: Developer
 level: Intermediate
@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Windows 설정에서 Acrobat 관련 문제를 해결하는 절차
 
-*이 비디오에서는 AEM Forms PDFG용 Windows 설정에서 Acrobat 관련 문제를 해결하는 프로세스를 안내합니다.*
+*이 비디오는 AEM Forms PDFG용 Windows 설정에서 acrobat 관련 문제를 해결하는 과정을 안내합니다.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335480?quality=12&learn=on)

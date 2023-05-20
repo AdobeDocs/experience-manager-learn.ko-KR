@@ -1,6 +1,6 @@
 ---
-title: AEM Forms OSGi에서 관리자의 기본 암호를 재설정하는 절차
-description: AEM Forms OSGi에서 관리자의 기본 암호를 재설정하는 절차
+title: AEM Forms OSGi에서 관리자의 기본 암호를 재설정하는 단계
+description: AEM Forms OSGi에서 관리자의 기본 암호를 재설정하는 단계
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ---
 
-# AEM Forms OSGi에서 관리자의 기본 암호를 재설정하는 절차
+# AEM Forms OSGi에서 관리자의 기본 암호를 재설정하는 단계
 
-*이 비디오에서는 AEM Forms OSGi에서 관리자의 기본 암호를 재설정하는 단계를 안내합니다.*
+*이 비디오는 AEM Forms OSGi에서 관리자의 기본 암호를 재설정하는 단계를 안내합니다.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335542?quality=12&learn=on)

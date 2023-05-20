@@ -1,6 +1,6 @@
 ---
 title: Dispatcher 소개
-description: AEM 아키텍처의 일부로 Dispatcher의 기능 및 특징을 소개합니다.
+description: AEM 아키텍처의 일부로 Dispatcher의 기능을 소개합니다.
 feature: Dispatcher
 topics: architecture
 audience: administrator, developer
@@ -22,7 +22,7 @@ ht-degree: 31%
 
 # [!DNL Dispatcher] 소개 {#introduction-dispatcher}
 
-의 기능 및 기능을 소개합니다 [!DNL dispatcher] AEM 아키텍처의 일부로 사용할 수 있습니다.
+의 기능 및 기능에 대한 소개 [!DNL dispatcher] AEM 아키텍처의 일부로 사용됩니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32029?quality=12&learn=on)
 

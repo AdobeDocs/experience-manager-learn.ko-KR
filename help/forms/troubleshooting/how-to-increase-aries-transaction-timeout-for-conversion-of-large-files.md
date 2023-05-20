@@ -1,6 +1,6 @@
 ---
-title: 대용량 파일 변환과 관련된 문제를 해결하기 위해 "aries.transaction.timeout"을 늘리는 방법
-description: 큰 파일 변환을 위해 "aries.transaction.timeout"을 늘리는 절차
+title: 대용량 파일 전환과 관련된 문제를 해결하기 위해 "aries.transaction.timeout"을 늘리는 방법
+description: 대용량 파일 변환을 위해 "aries.transaction.timeout"을 늘리는 단계
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# 대용량 파일 변환과 관련된 문제를 해결하기 위해 &quot;aries.transaction.timeout&quot;을 늘리는 방법
+# 대용량 파일 전환과 관련된 문제를 해결하기 위해 &quot;aries.transaction.timeout&quot;을 늘리는 방법
 
-*이 비디오에서는 대용량 파일 변환과 관련된 문제를 해결하기 위해 &quot;aries.transaction.timeout&quot;을 늘리는 프로세스를 살펴봅니다.*
+*이 비디오는 대용량 파일 전환과 관련된 문제를 해결하기 위해 &quot;aries.transaction.timeout&quot;을 늘리는 과정을 안내합니다.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335502?quality=12&learn=on)

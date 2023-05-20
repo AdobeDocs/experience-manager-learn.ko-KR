@@ -1,6 +1,6 @@
 ---
-title: Workfront 문서 보내기 및 Assets Essentials 자산 연결
-description: Workfront 문서를 Assets Essentials에게 보내고, Assets Essentials 자산을 Workfront에 연결하는 방법을 알아봅니다.
+title: Workfront 문서 전송 및 Assets Essentials 에셋 연결
+description: Workfront 문서를 Assets Essentials에 보내고, Assets Essentials 에셋을 Workfront에 연결하는 방법을 알아봅니다.
 version: Cloud Service
 feature: Assets Essentials
 topic: Content Management, Integrations
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# 문서 보내기 및 자산 연결
+# 문서 전송 및 에셋 연결
 
-Workfront 문서를 Assets Essentials에게 보내고, Assets Essentials 자산을 Workfront에 연결하는 방법을 알아봅니다.
+Workfront 문서를 Assets Essentials에 보내고, Assets Essentials 에셋을 Workfront에 연결하는 방법을 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336255?quality=12&learn=on)

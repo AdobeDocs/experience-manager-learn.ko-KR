@@ -1,6 +1,6 @@
 ---
-title: 양식 데이터 모델을 사용하여 Campaign 프로필 만들기
-description: AEM Forms 양식 데이터 모델을 사용하여 Adobe Campaign Standard 프로필을 만드는 단계입니다
+title: 양식 데이터 모델을 사용하여 캠페인 프로필 만들기
+description: AEM Forms 양식 데이터 모델을 사용하여 Adobe Campaign Standard 프로필을 만드는 단계
 feature: Adaptive Forms
 version: 6.4,6.5
 topic: Development
@@ -14,13 +14,13 @@ ht-degree: 3%
 
 ---
 
-# 양식 데이터 모델을 사용하여 Campaign 프로필 만들기 {#create-campaign-profile-using-form-data-model}
+# 양식 데이터 모델을 사용하여 캠페인 프로필 만들기 {#create-campaign-profile-using-form-data-model}
 
-AEM Forms 양식 데이터 모델을 사용하여 Adobe Campaign Standard 프로필을 만드는 단계입니다
+AEM Forms 양식 데이터 모델을 사용하여 Adobe Campaign Standard 프로필을 만드는 단계
 
 ## 사용자 지정 인증 만들기 {#create-custom-authentication}
 
-Swagger 파일로 데이터 소스를 만들 때 AEM Forms에서는 다음과 같은 유형의 인증 유형을 지원합니다
+Swagger 파일을 사용하여 데이터 소스를 만들 때 AEM Forms은 다음과 같은 종류의 인증 유형을 지원합니다
 
 * 없음
 * OAuth 2.0
@@ -28,15 +28,15 @@ Swagger 파일로 데이터 소스를 만들 때 AEM Forms에서는 다음과 �
 * API 키
 * 사용자 정의 인증
 
-![campaigfdm](assets/campaignfdm.gif)
+![캠페인](assets/campaignfdm.gif)
 
-Adobe Campaign Standard에 REST 호출을 하려면 사용자 지정 인증을 사용해야 합니다.
+Adobe Campaign Standard에 REST를 호출하려면 사용자 지정 인증을 사용해야 합니다.
 
-사용자 지정 인증을 사용하려면 IAuthentication 인터페이스를 구현하는 OSGi 구성 요소를 개발해야 합니다
+사용자 지정 인증을 사용하려면 인증 인터페이스를 구현하는 OSGi 구성 요소를 개발해야 합니다
 
-getAuthDetails 메서드를 구현해야 합니다. 이 메서드는 AuthenticationDetails 개체를 반환합니다. 이 AuthenticationDetails 개체에는 Adobe Campaign에 REST API를 호출하는 데 필요한 필수 HTTP 헤더 세트가 있습니다.
+getAuthDetails 메서드를 구현해야 합니다. 이 메서드는 AuthenticationDetails 개체를 반환합니다. 이 AuthenticationDetails 개체에는 Adobe Campaign에 대한 REST API 호출을 수행하는 데 필요한 필수 HTTP 헤더 집합이 있습니다.
 
-다음은 사용자 지정 인증을 만드는 데 사용된 코드입니다. getAuthDetails 메서드가 모든 작업을 수행합니다. AuthenticationDetails 개체를 만듭니다. 그런 다음 이 개체에 적절한 HttpHeaders를 추가하고 이 개체를 반환합니다.
+다음은 사용자 지정 인증을 만드는 데 사용된 코드입니다. getAuthDetails 메서드는 모든 작업을 수행합니다. AuthenticationDetails 개체를 만듭니다. 그런 다음 적절한 HttpHeaders를 이 개체에 추가하고 이 개체를 반환합니다.
 
 ```java
 package aemfd.campaign.core;
@@ -101,27 +101,27 @@ private Logger log = LoggerFactory.getLogger(CampaignAuthentication.class);
 
 ## 데이터 소스 만들기 {#create-data-source}
 
-첫 번째 단계는 swagger 파일을 만드는 것입니다. Swagger 파일은 Adobe Campaign Standard에서 프로필을 만드는 데 사용할 REST API를 정의합니다. swagger 파일은 REST API의 입력 매개 변수와 출력 매개 변수를 정의합니다.
+첫 번째 단계는 Swagger 파일을 만드는 것입니다. Swagger 파일은 Adobe Campaign Standard에서 프로필을 만드는 데 사용할 REST API를 정의합니다. Swagger 파일은 REST API의 입력 매개 변수와 출력 매개 변수를 정의합니다.
 
-swagger 파일을 사용하여 데이터 소스가 생성됩니다. 데이터 소스를 만들 때 인증 유형을 지정할 수 있습니다. 이 경우 사용자 지정 인증을 사용하여 Adobe Campaign에 대해 인증하려고 합니다. 위에 나열된 코드는 Adobe Campaign에 대해 인증하는 데 사용되었습니다.
+데이터 소스는 Swagger 파일을 사용하여 만들어집니다. 데이터 소스를 만들 때 인증 유형을 지정할 수 있습니다. 이 경우 사용자 지정 인증을 사용하여 Adobe Campaign에 대해 인증하려고 합니다. 위에 나열된 코드는 Adobe Campaign에 대해 인증하는 데 사용되었습니다.
 
-이 문서와 관련된 자산의 일부로 샘플 Swagger 파일이 제공됩니다.**ACS 인스턴스와 일치하도록 swagger 파일의 호스트 및 basePath를 변경해야 합니다.**
+샘플 Swagger 파일은 이 문서와 관련된 에셋의 일부로 제공됩니다.**ACS 인스턴스와 일치하도록 swagger 파일의 호스트 및 basePath를 변경해야 합니다**
 
 ## 솔루션 테스트 {#test-the-solution}
 
-솔루션을 테스트하려면 다음 단계를 수행하십시오.
-* [여기에 설명된 대로 단계를 따랐는지 확인합니다](aem-forms-with-campaign-standard-getting-started-tutorial.md)
-* [Swagger 파일을 가져오려면 이 파일을 다운로드하고 압축 해제합니다.](assets/create-acs-profile-swagger-file.zip)
-* swagger 파일을 사용하여 데이터 소스 만들기 양식 데이터 모델 만들기 및 이전 단계에서 만든 데이터 소스를 기반으로 합니다
+솔루션을 테스트하려면 다음 단계를 따르십시오.
+* [여기에 설명된 단계를 따랐는지 확인하십시오](aem-forms-with-campaign-standard-getting-started-tutorial.md)
+* [이 파일을 다운로드하고 압축 해제하여 Swagger 파일을 가져옵니다.](assets/create-acs-profile-swagger-file.zip)
+* Swagger 파일을 사용하여 데이터 소스 생성 양식 데이터 모델 생성 을 선택하고 이전 단계에서 생성된 데이터 소스를 기반으로 합니다
 * 이전 단계에서 만든 양식 데이터 모델을 기반으로 적응형 양식을 만듭니다.
-* 데이터 소스 탭에서 다음 요소를 적응형 양식으로 끌어다 놓습니다
+* 데이터 소스 탭의 다음 요소를 적응형 양식에 끌어다 놓습니다
 
    * 이메일
    * 이름
    * 성
    * 휴대폰
 
-* 제출 작업을 &quot;양식 데이터 모델을 사용하여 제출&quot;으로 구성합니다.
+* 제출 액션을 &quot;양식 데이터 모델을 사용하여 제출&quot;로 구성합니다.
 * 적절하게 제출하도록 데이터 모델을 구성합니다.
-* 양식을 미리 봅니다. 필드를 작성하고 제출합니다.
-* 프로필이 Adobe Campaign Standard에서 만들어졌는지 확인합니다.
+* 양식을 미리 봅니다. 필드를 입력한 다음 제출합니다.
+* Adobe Campaign Standard에서 프로필이 만들어졌는지 확인합니다.

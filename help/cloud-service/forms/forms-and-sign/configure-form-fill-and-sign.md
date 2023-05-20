@@ -1,6 +1,6 @@
 ---
 title: 사용자가 채우고 서명할 적응형 양식 구성
-description: 이 시나리오에서는 양식 작성자와 서명자가 동일합니다.
+description: 이 시나리오에서는 양식 작성자와 서명자가 동일한 사람입니다.
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -17,9 +17,9 @@ ht-degree: 0%
 
 ---
 
-# 채우기 및 서명 시나리오에 대한 적응형 양식 구성
+# 채우기 및 서명 시나리오를 위한 적응형 양식 구성
 
 
-이 비디오에서는 양식 작성자와 서명자가 동일한 양식을 구성합니다
+이 비디오에서는 양식 작성기와 서명자가 동일한 사람인 양식을 구성합니다
 
 >[!VIDEO](https://video.tv.adobe.com/v/332439?quality=12&learn=on)

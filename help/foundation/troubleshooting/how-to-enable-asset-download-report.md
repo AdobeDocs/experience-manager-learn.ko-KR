@@ -1,6 +1,6 @@
 ---
-title: 자산 다운로드 보고서를 활성화하는 방법
-description: 자산 다운로드 보고서를 활성화하는 절차
+title: 에셋 다운로드 보고서를 활성화하는 방법
+description: 에셋 다운로드 보고서를 활성화하는 절차
 type: Troubleshooting
 role: Admin
 level: Beginner
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# 자산 다운로드 보고서를 활성화하는 방법
+# 에셋 다운로드 보고서를 활성화하는 방법
 
-*이 비디오에서는 자산 다운로드 보고서를 활성화하는 단계를 안내합니다.*
+*이 비디오는 에셋 다운로드 보고서를 활성화하는 단계를 안내합니다.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335463?quality=12&learn=on)

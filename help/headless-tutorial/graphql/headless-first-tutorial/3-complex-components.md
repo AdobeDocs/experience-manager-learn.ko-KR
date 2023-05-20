@@ -1,6 +1,6 @@
 ---
-title: 복잡한 이미지 목록 구성 요소 작성 - AEM Headless 첫 번째 자습서
-description: 컨텐츠 조각, 컨텐츠 참조 및 이미지로 작업하는 방법을 알아봅니다.
+title: 복잡한 이미지 목록 구성 요소 빌드 - AEM Headless 첫 번째 자습서
+description: 콘텐츠 조각, 콘텐츠 참조 및 이미지를 사용하여 작업하는 방법을 알아봅니다.
 version: Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Development
@@ -18,29 +18,29 @@ ht-degree: 2%
 ---
 
 
-# 복잡한 구성 요소 작성
+# 복잡한 구성 요소 빌드
 
-이 자습서 장을 시작합니다. 이 장에서는 컨텐츠 조각, 중첩된 컨텐츠 조각 참조 및 참조된 이미지 자산을 렌더링하는 복잡한 이미지 목록 구성 요소를 만듭니다. React 앱을 범용 편집기를 사용하여 편집 가능하게 함으로써 한 단계 더 나아갑니다.
+콘텐츠 조각, 중첩된 콘텐츠 조각 참조 및 참조된 이미지 에셋을 렌더링하는 복잡한 이미지 목록 구성 요소를 만드는 방법을 살펴보는 이 튜토리얼 장을 시작합니다. 범용 편집기를 사용하여 React 앱을 편집할 수 있도록 만들어 한 단계 더 진행하겠습니다.
 
-AEM(Adobe Experience Manager)의 컨텐츠 조각은 컨텐츠를 관리하는 구조화된 방법을 제공합니다. 컨텐츠 조각을 활용하여 이미지 목록 구성 요소를 채우고, 중첩된 참조를 처리하고 참조된 이미지 자산을 표시할 수 있습니다.
+AEM(Adobe Experience Manager)의 컨텐츠 조각은 컨텐츠 관리에 대한 구조화된 접근 방식을 제공합니다. 콘텐츠 조각을 사용하여 이미지 목록 구성 요소를 채우고 중첩된 참조를 처리하며 참조된 이미지 에셋을 표시합니다.
 
-이 자습서에서는 이미지 목록 구성 요소 작성, 중첩된 참조 처리, 참조된 이미지 자산 렌더링 및 범용 편집기 통합을 안내합니다. 종속성을 설정하고, 구성 요소 구조를 디자인하고, 컨텐츠 조각을 검색 및 구문 분석하고, 범용 편집기를 사용하여 앱을 편집 가능하게 하는 방법을 알아봅니다.
+이 자습서에서는 이미지 목록 구성 요소를 빌드하고, 중첩된 참조를 처리하고, 참조된 이미지 에셋을 렌더링하고, 유니버설 편집기를 통합하는 과정을 안내합니다. 범용 편집기를 사용하여 종속성을 설정하고, 구성 요소 구조를 디자인하고, 콘텐츠 조각을 검색 및 구문 분석하고, 앱을 편집할 수 있도록 설정하는 방법에 대해 알아봅니다.
 
-이 자습서 장을 마치면 완전히 기능적이고 편집 가능한 이미지 목록 구성 요소가 제공됩니다. React 앱에서 동적 구성 요소를 만들고 범용 편집기를 사용하여 컨텐츠 작성 경험을 향상시키는 지식과 기술을 갖추게 됩니다. 편집 가능한 이미지 목록 구성 요소 작성을 시작해 보겠습니다!
+이 튜토리얼 챕터가 끝날 때 쯤이면 완전히 기능하고 편집 가능한 이미지 목록 구성 요소가 제공됩니다. React 앱에서 동적 구성 요소를 만들 수 있는 지식과 기술을 갖추어 유니버설 편집기로 콘텐츠 작성 경험을 향상시킬 수 있습니다. 이제 편집 가능한 이미지 목록 구성 요소 빌드를 시작하겠습니다!
 
 ## 이미지 목록 만들기
 
-1. 이제 일부 오퍼 조각과 이미지 목록 구성 요소를 만들어야 합니다.  컨텐츠 조각 콘솔로 이동합니다.
+1. 이제 일부 오퍼 조각과 이미지 목록 구성 요소를 만들어야 합니다.  콘텐츠 조각 콘솔로 이동합니다.
 
    ![create-imagelist-fragment](./assets/3/create-imagelist-fragment.png)
 
-   유형의 조각을 만들려고 합니다 `imagelist` (모델은 `imagelist`)을 클릭하여 제목을 지정합니다 `imagelist`.
+   형식의 조각을 만들려고 합니다. `imagelist` (모델: `imagelist`) 그리고 제목은 다음과 같습니다 `imagelist`.
 
-   컨텐츠 조각 편집기에서 조각을 포함하거나 만들 조각을 선택할 수 있습니다.  조각 만들기를 선택합니다.
+   콘텐츠 조각 편집기에서 조각을 포함하거나 생성할 조각을 선택할 수 있습니다.  조각 만들기를 선택합니다.
 
    모델 유형은 이미지 목록입니다.  조각에 제목과 이름을 지정합니다.
 
-1. 이미지 목록은 다른 조각에 대한 참조를 포함하는 컨테이너 유형 조각이므로 편집기에서 직접 새 오퍼를 만들 수 있습니다.  오퍼 조각을 만들고 포함 및 이미지 설명 및 문서를 만듭니다.  아래에서 텍스트를 잘라내어 붙여넣을 수 있습니다.  조각의 제목을 카드의 제목으로 사용하고 있습니다.
+1. 이미지 목록은 다른 조각에 대한 참조를 포함하는 컨테이너 유형 조각이므로 편집기에서 직접 새 오퍼를 만들 수 있습니다.  포함 및 이미지 설명과 문서를 포함하는 오퍼 조각을 만듭니다.  아래에서 텍스트를 잘라내어 붙여넣을 수 있습니다.  카드의 제목으로 조각 제목을 사용하고 있습니다.
 
    __기사1__
 
@@ -81,7 +81,7 @@ AEM(Adobe Experience Manager)의 컨텐츠 조각은 컨텐츠를 관리하는 �
    Like a faint torch, a striking green hue shines through the tent fabric, disappearing just as quickly. The sound of zippers does its best to penetrate the ocean's roar, as we curiously peek our heads out into the freezing wind. Moments after, we sprint out in sweatpants, cameras in hand to document the fabled phenomenon the past week's cloud layer has prevented us from seeing; the Aurora Borealis. It starts with only the faintest streaks of green and blue, seemingly appearing out of thin air, only to vanish before our eyes have had a chance to adjust to the dark. Every pulse becoming more radiant, and before we know it we are gazing in awe at the dancing curtains, shifting colors under starry skies. After a week of battling the elements, it's as if Mother Nature has decided to treat us with just a taste of the breathtaking beauty she is capable of, as if we have finally proven ourselves worthy. With our jaws still open, we watch on as the mesmerizing curtains of emerald green are veiled in a dark cloud layer, and the winds once again take hold of the bay. The exhibition is over for now, but these islands will stay in our minds forever. See you next time, Lofoten, may the forces of life yet again gravitate us towards your majestic shores, because in the hardship of finding what we came for, something else has emerged, a yearning for the undisturbed, the unknown and the truly magical. It's waiting for you no matter where you are in the world.
    ```
 
-   __Article 2__
+   __제 2 조__
 
    _제목_
 
@@ -124,7 +124,7 @@ AEM(Adobe Experience Manager)의 컨텐츠 조각은 컨텐츠를 관리하는 �
    Then there's the surf. A pointbreak breaking for 300 meters down a shallow coral shelf, producing immaculate almond-shaped barrels, grinding down the reef at a barely makeable speed. Even though many of the waves race past me on my struggling backhand, the few that I make it to the end of are some of the best I've ever experienced, and I have a hard time containing my excitement, hooting and hollering to Sofia on the cliffs, with her Canon 5D in hand. The line-up out back is an eclectic mix of old salty men on oversized gun surfboards, young semi-pros with stickered boards, girlfriends on longboards and hippies with dreadlocks and big smiles. Nothing of the notorious localism I have read about online, even though I quickly learn to respect the noticeable pecking order, letting the obviously more skilled crowd get the biggest set waves. There are still plenty of action for everyone, and a friendly smile opens up even the grumpiest old-timer. After the sun has set, the same faces are seen around campfires and tailgate barbeques all over the campground, where many seem to have gotten stuck for the season, ignoring distant calls of civilization urging them to return to normal lives. As the stars come out, we set up our cameras for timelapses, hoping to capture some of the magic that is happening above us, all the while our heads turn heavy from the five hours in the water and the beverages that followed.
    ```
 
-   __Article 3__
+   __제 3 조__
 
    _제목_
 
@@ -190,7 +190,7 @@ AEM(Adobe Experience Manager)의 컨텐츠 조각은 컨텐츠를 관리하는 �
    Eu facilisis sed odio morbi quis. Consequat semper viverra nam libero justo laoreet sit amet. Eget mi proin sed libero enim sed faucibus. Vitae tempus quam pellentesque nec nam aliquam sem. Justo donec enim diam vulputate ut pharetra sit. Risus sed vulputate odio ut enim blandit volutpat maecenas volutpat. Mauris pellentesque pulvinar pellentesque habitant morbi. Iaculis at erat pellentesque adipiscing. Libero id faucibus nisl tincidunt eget nullam non nisi est. Interdum consectetur libero id faucibus nisl tincidunt. Volutpat odio facilisis mauris sit amet massa. Tristique senectus et netus et malesuada fames ac turpis egestas. Leo vel orci porta non pulvinar neque laoreet suspendisse interdum. Sapien et ligula ullamcorper malesuada proin libero. Interdum consectetur libero id faucibus nisl tincidunt.
    ```
 
-1. 쿼리 편집기로 돌아가서 이 새 구성 요소를 가져오겠습니다.  Adobe가 `OfferModel` 쿼리와 메타데이터에서 카드 제목에 사용할 수 있습니다.
+1. 쿼리 편집기로 돌아가서 이 새 구성 요소를 가져오겠습니다.  은(는) 다음을 참조합니다. `OfferModel` 쿼리와 메타데이터에서 카드 제목으로 사용됩니다.
 
    ```graphql
    query imageList {
@@ -226,13 +226,13 @@ AEM(Adobe Experience Manager)의 컨텐츠 조각은 컨텐츠를 관리하는 �
    }
    ```
 
-1. 이제 앱에 연결합니다.  Adobe에서 `home.js`, 새 쿼리를 참조합니다. 위 `useEffect()` 우리는 `list` 및 `setList`.
+1. 이제 앱에 연결합니다.  다음에서 `home.js`, 새 쿼리를 참조하겠습니다. 위 `useEffect()` 다음을 설정합니다. `list` 및 `setList`.
 
    ```javascript
    const [list, setList] = useState({});
    ```
 
-   내부 `useEffect()` imagelist 쿼리에 대한 새 요청.
+   내부 `useEffect()` imagelist 쿼리에 대한 새 요청입니다.
 
    ```javascript
    sdk.runPersistedQuery('pure-headless/imagelist')
@@ -279,7 +279,7 @@ AEM(Adobe Experience Manager)의 컨텐츠 조각은 컨텐츠를 관리하는 �
    };
    ```
 
-   또한 이미지 구성 요소를 참조하여 다이내믹 URL을 전달합니다.
+   또한 이미지 구성 요소를 참조하고 동적 URL을 전달합니다.
 
    이미지 구성 요소 내에서 동적 URL을 사용하여 여러 URL이 있는 소스 세트를 만들고 있습니다.
 
@@ -292,9 +292,9 @@ AEM(Adobe Experience Manager)의 컨텐츠 조각은 컨텐츠를 관리하는 �
    ];
    ```
 
-## 범용 편집기 활성화
+## 유니버설 편집기 활성화
 
-1. 추가 `<meta />` 참조하십시오.  열기 `App.js` 파일의 상단에 가져오기를 삽입합니다.
+1. 추가 `<meta />` 앱에 연결합니다.  열기 `App.js` 파일의 맨 위에 가져오기를 삽입합니다.
 
    ```javascript
    import { Helmet } from 'react-helmet';
@@ -310,11 +310,11 @@ AEM(Adobe Experience Manager)의 컨텐츠 조각은 컨텐츠를 관리하는 �
 
    >[!TIP]
    >
-   > Adobe는 헬멧을 사용하여 `.env` 그러나 파일에 이 코드를 하드코딩할 수 있습니다 `index.html`.
+   > 헬멧 라이브러리를 사용하여 다음을 기반으로 이 다이내믹함을 만듭니다. `.env` 그러나 파일을 하드 코딩하여 `index.html`.
 
-1. 이제 각 카드 편집을 위한 조각 및 데이터 유형을 식별하기 위한 카드입니다.
+1. 이제 각 카드를 편집할 조각과 데이터 유형을 식별하기 위해 카드 를 업데이트하겠습니다.
 
-   내 `<div className='card' key={card._path}>`
+   다음 범위 내 `<div className='card' key={card._path}>`
 
    추가
 
@@ -328,15 +328,15 @@ AEM(Adobe Experience Manager)의 컨텐츠 조각은 컨텐츠를 관리하는 �
    <div className='card' key={card._path} itemID={`urn:aemconnection:${card._path}/jcr:content/data/master`} itemfilter='cf' itemType='reference' itemScope>
    ```
 
-1. 이제 편집 가능한 항목을 식별합니다.
+1. 이제 편집할 수 있는 항목을 식별합니다.
 
-   대상 `<h3 />` 추가:
+   대상: `<h3 />` 추가:
 
    ```javascript
    itemProp="_metadata" itemType="text"
    ```
 
-   Adobe에 `<div />` 추가:
+   대상: `<div />` 추가:
 
    ```javascript
    itemProp="description" itemType="richtext"
@@ -421,4 +421,4 @@ export default Home;
 
 ## 축하합니다!
 
-AEM Headless API를 통해 완전히 제공되는 AEM Headless 환경을 성공적으로 만들고 유니버설 편집기에서 편집할 수 있습니다.
+AEM Headless API에서 완전히 제공되며 범용 편집기로 편집할 수 있는 AEM Headless 경험을 만들었습니다.

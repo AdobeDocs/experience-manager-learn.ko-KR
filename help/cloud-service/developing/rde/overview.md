@@ -1,6 +1,6 @@
 ---
 title: 신속한 개발 환경
-description: AEM Rapid Development Environments에 대해 알아보고 배포 주기를 단축하기 위해 Rapid Development Environments가 무엇인지 알아보십시오.
+description: AEM 빠른 개발 환경에 대해 알아보고, 개발 환경과 개발 주기에서 배포 주기까지 개발 속도를 높이는 데 어떻게 도움이 되는지 알아봅니다.
 feature: Developer Tools
 version: Cloud Service
 topic: Development
@@ -9,28 +9,28 @@ level: Beginner
 jira: KT-11860
 thumbnail: KT-11860.png
 last-substantial-update: 2023-02-15T00:00:00Z
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+exl-id: 8fc6d0ef-8753-480b-a504-e7943de8883c
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '109'
 ht-degree: 11%
 
 ---
 
-
 # 신속한 개발 환경
 
-AEM as a Cloud Service의 RDE(Rapid Development Environment)에 대해 알아봅니다.
+AEM의 RDE(Rapid Development Environment)에 대해 as a Cloud Service으로 알아보십시오.
 
 이 비디오 개요:
 
-- RDE란 무엇입니까?
-- 배포 주기를 단축하는 데 어떤 도움이 됩니까?
+- RDE란?
+- 개발에서 배포 주기까지의 속도를 높이는 데 어떻게 도움이 됩니까?
 
 >[!VIDEO](https://video.tv.adobe.com/v/3414128?quality=12&learn=on)
 
 ## 다음 단계
 
-학습 [설정 방법](./how-to-setup.md) AEM as a Cloud Service의 RDE.
+학습 [설정 방법](./how-to-setup.md) AEMas a Cloud Service 의 RDE.
 
 ## 추가 리소스
 

@@ -1,5 +1,5 @@
 ---
-title: 웹 양식 URL을 반환하기 위해 호출할 수 있는 끝점을 노출합니다
+title: 웹 양식 URL을 반환하기 위해 호출할 수 있는 끝점을 표시합니다.
 description: 웹 양식 URL을 반환하는 AEM 서블릿 만들기
 feature: Adaptive Forms,Acrobat Sign
 version: 6.4,6.5
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 # Acrobat Sign 웹 양식 URL 만들기
 
-POST 종단점을 노출하기 위해 다음 코드가 작성됩니다. 이 종단점은 제출된 데이터에서 icTemplateName을 추출하고 최종 사용자가 서명할 Acrobat Sign 웹 양식 URL을 반환합니다.
+POST 끝점을 노출하기 위해 다음 코드를 작성했습니다. 이 끝점은 제출된 데이터에서 icTemplateName을 추출하고 최종 사용자가 서명할 Acrobat Sign 웹 양식 URL을 반환합니다.
 
 
 ```java
@@ -89,5 +89,5 @@ public class GetWidgetUrl extends SlingAllMethodsServlet {
 
 ## 다음 단계
 
-[로컬 시스템에 자습서 자산 배포](./deploy-assets-on-your-server.md)
+[로컬 시스템에 튜토리얼 에셋 배포](./deploy-assets-on-your-server.md)
 

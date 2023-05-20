@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # 필요한 32비트 Microsoft Visual C++ 재배포용 파일을 확인하고 설치하는 절차
 
-*이 비디오에서는 필요한 32비트 Microsoft Visual C++ 재배포용 파일을 확인하고 설치하는 프로세스를 안내합니다.*
+*이 비디오는 필요한 32비트 Microsoft Visual C++ 재배포용 파일을 확인하고 설치하는 과정을 안내합니다.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335520?quality=12&learn=on)

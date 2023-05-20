@@ -1,6 +1,6 @@
 ---
-title: AEM Forms에서 계산된 양식 데이터 모델 요소 만들기
-description: 계산된 양식 데이터 모델 요소 만들기
+title: AEM Forms에서 계산된 양식 데이터 모델 요소 생성
+description: 계산된 양식 데이터 모델 요소 생성
 feature: Workflow
 version: 6.4,6.5
 topic: Development
@@ -15,20 +15,20 @@ ht-degree: 0%
 
 ---
 
-# AEM Forms에서 계산된 양식 데이터 모델 요소 만들기{#creating-computed-form-data-model-elements-in-aem-forms}
+# AEM Forms에서 계산된 양식 데이터 모델 요소 생성{#creating-computed-form-data-model-elements-in-aem-forms}
 
-계산된 양식 데이터 모델 요소를 사용하면 하나 이상의 양식 데이터 모델 요소에 조작 결과를 저장할 수 있습니다. 예를 들어, 임금 필드에서 수학 연산을 수행하여 월별 임금을 계산하고 저장할 수 있습니다. 이렇게 하려면 임금을 12로 나누어 monthysalary라는 계산된 양식 데이터 모델 요소에 결과를 저장합니다.
+계산된 양식 데이터 모델 요소를 사용하여 하나 이상의 양식 데이터 모델 요소에 조작 결과를 저장할 수 있습니다. 예를 들어, 임금 필드에 대한 수학 연산을 수행하여 월급을 계산하고 저장할 수 있습니다. 이렇게 하려면 급여를 12로 나누고 monthlySalary라는 계산된 양식 데이터 모델 요소에 결과를 저장합니다.
 
-계산된 양식 데이터 모델을 만드는 다른 예는 두 개 이상의 양식 데이터 모델 요소를 연결하는 것입니다. 예를 들어, 두 요소 사이에 하이픈을 사용하여 state 및 zip 양식 데이터 모델 요소를 연결할 수 있습니다.
+계산된 양식 데이터 모델을 만드는 또 다른 예는 둘 이상의 양식 데이터 모델 요소를 연결하는 것입니다. 예를 들어 상태 및 zip 양식 데이터 모델 요소를 두 요소 사이에 하이픈으로 연결할 수 있습니다.
 
-다음 스크린샷에서는 StateandZip 및 monthlySalary 계산된 요소를 보여 줍니다
+다음 스크린샷은 계산된 요소 StateandZip 및 monthlySalary를 보여 줍니다
 
-![compedfdmelement](assets/computedfdmelement.gif)
+![computedfdmelement](assets/computedfdmelement.gif)
 
-## 월별 급여 계산 항목 생성
+## 월급 계산 요소 생성
 
 >[!VIDEO](https://video.tv.adobe.com/v/23855?quality=12&learn=on)
 
-### StateandZip 계산된 요소를 만드는 중
+### StateandZip 계산된 요소 만들기
 
 >[!VIDEO](https://video.tv.adobe.com/v/23856?quality=12&learn=on)

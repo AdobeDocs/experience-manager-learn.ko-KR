@@ -1,6 +1,6 @@
 ---
 title: AEM Forms 자습서 및 비디오
-description: 질문에 답변할 리소스 및 설명서와 함께 AEM Forms에 대한 비디오 및 자습서를 찾아봅니다.
+description: 질문에 답변할 수 있는 리소스 및 설명서를 사용하여 AEM Forms에 대한 비디오 및 튜토리얼을 찾아보십시오.
 topic: Development
 role: Developer
 sub-product: Experience Manager Forms
@@ -14,23 +14,23 @@ ht-degree: 0%
 
 # AEM Forms 자습서 및 비디오 {#overview}
 
-Adobe Experience Manager(AEM)은 백엔드 프로세스, 비즈니스 규칙 및 데이터와 통합하면서도 복잡한 디지털 양식을 작성, 관리, 게시 및 업데이트하는 사용하기 쉬운 솔루션을 제공합니다. 이 사용자 안내서에는 AEM Forms의 다양한 기능과 성능에 대한 비디오 및 자습서가 포함되어 있습니다
+Adobe Experience Manager(AEM)는 백엔드 프로세스, 비즈니스 규칙 및 데이터와 통합하면서도 복잡한 디지털 양식을 쉽게 생성, 관리, 게시 및 업데이트할 수 있는 솔루션을 제공합니다. 이 사용 안내서에는 AEM Forms의 다양한 기능과 성능에 대한 비디오 및 자습서가 포함되어 있습니다
 
 <div id="whats-new-section">
 
 ## 새로운 기능
 
-* **[양식 데이터 모델 호출 서비스 단계의 오류 메시지 처리](./adaptive-forms/handling-error-messages-in-invoke-fdm-step.md)**
+* **[양식 데이터 모델 서비스 호출 단계에서 오류 메시지 처리](./adaptive-forms/handling-error-messages-in-invoke-fdm-step.md)**
 
-   *워크플로우 모델의 변수는 데이터 유형을 기반으로 값을 저장하는 방법입니다*
+   *워크플로우 모델의 변수는 해당 데이터 유형을 기반으로 값을 저장하는 방법입니다*
 
 * **[대화형 통신 문서의 다중 시리즈 차트(비디오)](./interactive-communications/multiseriescharts.md)**
 
-   *동일한 차트에 둘 이상의 시리즈를 플롯합니다. 여러 시리즈 차트는 일반적으로 라인, 막대, 열 차트 유형과 연관되어 사용됩니다.*
+   *동일한 차트에 둘 이상의 시리즈를 표시합니다. 여러 계열 차트는 일반적으로 선, 막대, 열 차트 유형과 관련하여 사용됩니다.*
 
 * **[재사용 가능한 워크플로우 모델 만들기](./adaptive-forms/re-usable-aem-forms-workflow-models-article.md)**
 
-   *특정 양식에 연결되어 있지 않은 워크플로우 모델 만들기*
+   *특정 양식에 연결되지 않은 워크플로 모델 만들기*
 
 </div>
 
@@ -57,7 +57,7 @@ Adobe Experience Manager(AEM)은 백엔드 프로세스, 비즈니스 규칙 및
     </a>
     </div>
     <p>
-    <em>적응형 양식은 동적이고 반응형 양식입니다. 적응형 양식을 사용하여 개인화된 경험을 제공할 수 있습니다</em>
+    <em>적응형 양식은 동적이고 반응형 차세대 양식입니다. 적응형 양식을 사용하여 개인화된 경험을 전달할 수 있습니다</em>
     <p>
   </td>
    <td>
@@ -83,7 +83,7 @@ Adobe Experience Manager(AEM)은 백엔드 프로세스, 비즈니스 규칙 및
     </a>
     </div>
     <p>
-    <em>양식 데이터 모델의 서비스를 AEM Workflow의 한 단계로 호출</em>
+    <em>양식 데이터 모델의 서비스를 AEM Workflow의 단계로 호출</em>
     <p>
   </td>
 </tr>

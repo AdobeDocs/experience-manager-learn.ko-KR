@@ -1,6 +1,6 @@
 ---
 title: AEM Assets Essentials 비디오
-description: Adobe Experience Manager Assets Essentials용 비디오 모음입니다
+description: Adobe Experience Manager Assets Essentials에 대한 비디오 컬렉션
 recommendations: disable
 last-substantial-update: 2022-10-01T00:00:00Z
 thumbnail: aem-assets-essentials-videos.jpg
@@ -16,9 +16,9 @@ ht-degree: 14%
 
 ![Assets Essentials](./assets/overview/hero.png)
 
-Experience Manager Assets Essentials는 간단한 자산 관리 및 공동 작업을 위한 간소화된 사용자 인터페이스를 제공합니다.
+Experience Manager Assets Essentials는 간단한 에셋 관리 및 공동 작업을 위한 간소화된 사용자 인터페이스를 제공합니다.
 
-이 비디오에서 Assets Essentials을 사용하여 자산을 관리하는 방법, Adobe 여정 Orchestrator와 통합할 수 있는 방법에 대해 알아보십시오.
+이 비디오에서 Assets Essentials을 사용하여 에셋을 관리하는 방법과 Adobe 여정 Orchestrator와 통합하는 방법에 대해 알아보십시오.
 
 ## Assets Essentials에 대해 자세히 알아보기
 
@@ -33,7 +33,7 @@ Experience Manager Assets Essentials는 간단한 자산 관리 및 공동 작�
       </a>
    </div>
    <p>
-      <em>Assets Essentials의 기본 사항을 배웁니다.</em>
+      <em>Assets Essentials의 기본 사항을 알아보십시오.</em>
    </p>
 </td>
 <td>
@@ -54,12 +54,12 @@ Experience Manager Assets Essentials는 간단한 자산 관리 및 공동 작�
    <img alt="Adobe Journey Optimizer" src="./assets/overview/adobe-journey-optimizer.png" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-messages/create-email-content-with-the-message-editor.html">
+      <a href="https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-messages/create-email-content-with-the-message-editor.html?lang=ko-KR">
       <strong>Adobe Journey Optimizer 통합</strong>
       </a>
    </div>
    <p>
-      <em>Assets Essentials을 Adobe Journey Optimizer과 통합하는 방법을 알아봅니다!</em>
+      <em>Assets Essentials을 Adobe Journey Optimizer과 통합하는 방법에 대해 알아봅니다!</em>
    <p>
 </td>
 </table>

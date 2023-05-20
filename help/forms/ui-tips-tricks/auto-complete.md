@@ -1,6 +1,6 @@
 ---
-title: AEM Forms의 자동 완료 기능
-description: 사용자가 입력 시 미리 채워진 값 목록에서 빠르게 찾아 선택할 수 있도록 하여 검색 및 필터링을 활용할 수 있습니다.
+title: AEM Forms의 자동 완성 기능
+description: 검색 및 필터링을 활용하여 사용자가 입력할 때 미리 채워진 값 목록을 빠르게 찾아 선택할 수 있습니다.
 feature: Adaptive Forms
 type: Tutorial
 version: 6.5
@@ -9,27 +9,28 @@ role: Developer
 level: Beginner
 kt: 11374
 last-substantial-update: 2022-11-01T00:00:00Z
-source-git-commit: 4af14b7d72ebdbea04e68a9a64afa1a96d1c1aeb
+exl-id: e9a696f9-ba63-462d-93a8-e9a7a1e94e72
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 0%
 
 ---
 
-# 자동 완료 구현
+# 자동 완성 구현
 
-jquery의 자동 완료 기능을 사용하여 AEM Forms에서 자동 완료 기능을 구현합니다.
-이 문서에 포함된 샘플은 다양한 데이터 소스(정적 배열, REST API 응답에서 채워지는 동적 배열)를 사용하여 사용자가 텍스트 필드에 입력을 시작할 때 제안을 채웁니다.
+jquery의 자동 완성 기능을 사용하여 AEM Forms에서 자동 완성 기능을 구현합니다.
+이 문서에 포함된 샘플은 사용자가 텍스트 필드에 입력을 시작하면 다양한 데이터 소스(정적 배열, REST API 응답에서 채워진 동적 배열)를 사용하여 제안을 채웁니다.
 
 자동 완료 기능을 수행하는 데 사용되는 코드는 필드의 초기화 이벤트와 연결됩니다.
 
-## 주소 제안
+## 주소에 대한 제안 제공
 
 ![국가 제안](assets/auto-complete2.png)
 
 
 
-다음은 주소 제안을 제공하는 데 사용되는 코드입니다
+다음은 거리 주소 제안을 제공하는 데 사용되는 코드입니다
 
 ```javascript
 $(".streetAddress input").autocomplete({
@@ -62,11 +63,11 @@ $(".streetAddress input").autocomplete({
 
 
 
-## 이모지가 있는 추천
+## 이모지가 있는 제안
 
 ![국가 제안](assets/auto-complete3.png)
 
-다음 코드는 추천 목록에 이모지를 표시하는 데 사용됩니다
+다음 코드는 제안 목록에 이모지를 표시하는 데 사용되었습니다
 
 ```javascript
 var values=["Wolf \u{1F98A}", "Lion \u{1F981}","Puppy \u{1F436}","Giraffe \u{1F992}","Frog \u{1F438}"];
@@ -77,8 +78,8 @@ minLength: 1, source: values, delay: 0
 );
 ```
 
-다음 [샘플 양식을 다운로드할 수 있습니다.](assets/auto-complete-form.zip) 여기서 성공적인 REST 호출을 위해서는 코드 편집기를 사용하여 사용자 이름/API 키를 제공해야 합니다.
+다음 [샘플 양식을 다운로드할 수 있음](assets/auto-complete-form.zip) 여기서부터요 성공적인 REST 호출을 위해 코드 편집기를 사용하여 사용자 이름/API 키를 제공했는지 확인하십시오.
 
 >[!NOTE]
 >
-> 자동 완성 기능이 제대로 작동하려면 양식에서 다음 클라이언트 라이브러리를 사용하는지 확인하십시오 **cq.jquery.ui**. 이 클라이언트 라이브러리는 AEM과 함께 제공됩니다.
+> 자동 완성 기능이 작동하려면 양식에서 다음 클라이언트 라이브러리를 사용하는지 확인하십시오 **cq.jquery.ui**. 이 클라이언트 라이브러리는 AEM과 함께 제공됩니다.

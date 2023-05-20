@@ -1,6 +1,6 @@
 ---
 title: 기존 AMS Dispatcher 구성을 AEM as a Cloud Service으로 마이그레이션하는 방법
-description: AEM Dispatcher 구성을 Adobe Managed Services(AMS)에서 AEM as a Cloud Service으로 마이그레이션하기 위한 팁과 트릭
+description: AEM Dispatcher 구성을 Adobe Managed Services(AMS)에서 AEMas a Cloud Service 로 마이그레이션하기 위한 팁과 요령입니다.
 role: Architect, Developer
 level: Beginner
 type: Tutorial
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# AMS에서 Dispatcher 구성을 마이그레이션합니다.
+# AMS에서 Dispatcher 구성 마이그레이션
 
-디스패처 구성의 차이점과 Adobe AMS(Managed Services)에서 AEM as a Cloud Service으로 디스패처를 마이그레이션하기 위한 팁과 트릭에 대한 개요입니다.
+Dispatcher 구성의 차이점에 대한 개요와 Adobe Managed Services(AMS)에서 AEM as a Cloud Service으로 Dispatcher를 마이그레이션하기 위한 팁과 요령입니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330556?quality=12&learn=on)

@@ -1,6 +1,6 @@
 ---
 title: Java™ API를 사용한 SQL 연결
-description: Java™ SQL API 및 송신 포트를 사용하여 AEM as a Cloud Service에서 SQL 데이터베이스에 연결하는 방법을 알아봅니다.
+description: Java™ SQL API 및 이그레스 포트를 사용하여 AEM as a Cloud Service에서 SQL 데이터베이스에 연결하는 방법에 대해 알아봅니다.
 version: Cloud Service
 feature: Security
 topic: Development, Security
@@ -18,23 +18,23 @@ ht-degree: 0%
 
 # Java™ API를 사용한 SQL 연결
 
-SQL 데이터베이스(및 기타 비HTTP/HTTPS 서비스)에 대한 연결은 AEM에서 프록시되어야 합니다.
+SQL 데이터베이스(및 HTTP/HTTPS가 아닌 다른 서비스)에 대한 연결은 AEM 외부로 프록시화되어야 합니다.
 
-이 규칙의 예외는 [전용 송신 ip 주소](../dedicated-egress-ip-address.md) 이(가) 사용 중이며 서비스는 Adobe 또는 Azure에 있습니다.
+이 규칙의 예외는 다음과 같습니다. [전용 이그레스 ip 주소](../dedicated-egress-ip-address.md) 이(가) 사용 중이고 서비스가 Adobe 또는 Azure에 있습니다.
 
 ## 고급 네트워킹 지원
 
-다음 코드 예는 다음과 같은 고급 네트워킹 옵션에서 지원됩니다.
+다음 코드 예는 다음 고급 네트워킹 옵션에서 지원됩니다.
 
-다음을 확인합니다. [적절하](../advanced-networking.md#advanced-networking) 이 자습서를 따르기 전에 고급 네트워킹 구성을 설정했습니다.
+다음을 확인합니다. [적당하](../advanced-networking.md#advanced-networking) 이 자습서를 수행하기 전에 고급 네트워킹 구성이 설정되었습니다.
 
-| 고급 네트워킹 없음 | [유연한 포트 송신](../flexible-port-egress.md) | [전용 송신 IP 주소](../dedicated-egress-ip-address.md) | [가상 사설 네트워크](../vpn.md) |
+| 고급 네트워킹 없음 | [유연한 포트 이그레스](../flexible-port-egress.md) | [전용 이그레스 IP 주소](../dedicated-egress-ip-address.md) | [가상 사설망](../vpn.md) |
 |:-----:|:-----:|:------:|:---------:|
 | ✘ | ✔ | ✔ | ✔ |
 
 ## OSGi 구성
 
-암호는 코드에 저장해서는 안 되므로 SQL 연결의 사용자 이름과 암호를 [보안 OSGi 구성 변수](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#secret-configuration-values), AIO CLI 또는 Cloud Manager API를 사용하여 설정합니다.
+암호는 코드에 저장할 수 없으므로 SQL 연결의 사용자 이름과 암호는 [비밀 OSGi 구성 변수](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#secret-configuration-values), AIO CLI 또는 Cloud Manager API를 사용하여 설정합니다.
 
 + `ui.config/src/jcr_root/apps/wknd-examples/osgiconfig/com.adobe.aem.wknd.examples.core.connections.impl.MySqlExternalServiceImpl.cfg.json`
 
@@ -45,7 +45,7 @@ SQL 데이터베이스(및 기타 비HTTP/HTTPS 서비스)에 대한 연결은 A
 }
 ```
 
-다음 `aio CLI` 명령은 환경 별로 OSGi 암호를 설정하는 데 사용할 수 있습니다.
+다음 `aio CLI` 명령을 사용하여 환경별로 OSGi 비밀을 설정할 수 있습니다.
 
 ```shell
 $ aio cloudmanager:set-environment-variables --programId=<PROGRAM_ID> <ENVIRONMENT_ID> --secret MYSQL_USERNAME "mysql-user" --secret MYSQL_PASSWORD "password123"
@@ -53,7 +53,7 @@ $ aio cloudmanager:set-environment-variables --programId=<PROGRAM_ID> <ENVIRONME
 
 ## 코드 예
 
-이 Java™ 코드 예는 다음 Cloud Manager를 통해 외부 SQL Server 웹 서버에 연결하는 OSGi 서비스의 예입니다 `portForwards` 규칙 [enableEnvironmentAdvancedNetworkingConfiguration](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration) 작업.
+이 Java™ 코드 예제는 다음 Cloud Manager를 통해 외부 SQL Server 웹 서버에 연결하는 OSGi 서비스입니다 `portForwards` 규칙 [enableEnvironmentAdvancedNetworkConfiguration](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration) 작업.
 
 ```json
 ...
@@ -150,11 +150,11 @@ public class MySqlExternalServiceImpl implements ExternalService {
 
 ## MySQL 드라이버 종속성
 
-AEM as a Cloud Service을 사용하려면 연결을 지원하도록 Java™ 데이터베이스 드라이버를 제공해야 하는 경우가 많습니다. 드라이버를 제공하는 것은 일반적으로 이러한 드라이버를 포함하는 OSGi 번들 아티팩트를 를 를 통해 AEM 프로젝트에 포함함으로써 가장 좋은 방법입니다. `all` 패키지.
+AEM as a Cloud Service에서는 연결을 지원하기 위해 Java™ 데이터베이스 드라이버를 제공해야 하는 경우가 많습니다. 드라이버를 제공하는 것은 일반적으로 다음을 통해 이러한 드라이버가 포함된 OSGi 번들 아티팩트를 AEM 프로젝트에 포함시킴으로써 가장 잘 수행됩니다. `all` 패키지.
 
 ### Reactor pom.xml
 
-반응기에 데이터베이스 드라이버 종속성을 포함하십시오 `pom.xml` 그런 다음 `all` 하위 프로젝트.
+반응기에 데이터베이스 드라이버 종속성 포함 `pom.xml` 그런 다음 `all` 하위 프로젝트.
 
 + `pom.xml`
 
@@ -176,7 +176,7 @@ AEM as a Cloud Service을 사용하려면 연결을 지원하도록 Java™ 데�
 
 ## 모든 pom.xml
 
-데이터베이스 드라이버 종속성 아티팩트를 `all` 로 패키지를 배포하고 AEM as a Cloud Service에서 사용할 수 있습니다. 이러한 가공물 __반드시__ 데이터베이스 드라이버 Java™ 클래스를 내보내는 OSGi 번들입니다.
+데이터베이스 드라이버 종속성 아티팩트를 `all` AEM 패키지가 배포되고 as a Cloud Service으로 제공됩니다. 다음 아티팩트 __필수__ 데이터베이스 드라이버 Java™ 클래스를 내보내는 OSGi 번들입니다.
 
 + `all/pom.xml`
 

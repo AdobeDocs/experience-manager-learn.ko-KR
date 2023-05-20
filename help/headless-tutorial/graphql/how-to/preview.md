@@ -1,6 +1,6 @@
 ---
-title: 컨텐츠 조각 미리 보기
-description: 컨텐츠 조각 미리 보기를 모든 작성자에게 사용하여 컨텐츠 변경 사항이 AEM Headless 경험에 미치는 영향을 신속하게 확인하는 방법을 알아봅니다.
+title: 콘텐츠 조각 미리보기
+description: 모든 작성자가 콘텐츠 조각 미리보기를 사용하여 콘텐츠 변경 사항이 AEM Headless 경험에 미치는 영향을 빠르게 확인하는 방법에 대해 알아봅니다.
 version: Cloud Service
 feature: Content Fragments
 topic: Headless, Content Management, Development
@@ -10,62 +10,62 @@ doc-type: Tutorial
 last-substantial-update: 2023-03-17T00:00:00Z
 jira: KT-10841
 thumbnail: 3416906.jpeg
-source-git-commit: 38a35fe6b02e9aa8c448724d2e83d1aefd8180e7
+exl-id: 247d40a3-ff67-4c1f-86bf-3794d7ce3e32
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 0%
 
 ---
 
+# 콘텐츠 조각 미리보기
 
-# 컨텐츠 조각 미리 보기
-
-AEM Headless 애플리케이션은 통합 작성 미리 보기를 지원합니다. 미리 보기 경험은 AEM Author의 컨텐츠 조각 편집기를 사용자 지정 앱(HTTP를 통해 주소 지정 가능)과 연결하여 미리 보기 중인 컨텐츠 조각을 렌더링하는 앱에 딥 링크를 허용합니다.
+AEM Headless 애플리케이션은 통합 작성 미리보기를 지원합니다. 미리보기 경험은 AEM 작성자의 콘텐츠 조각 편집기를 사용자 지정 앱(HTTP를 통해 주소 지정 가능)에 연결하므로 미리보고 있는 콘텐츠 조각을 렌더링하는 앱에 대한 딥 링크를 사용할 수 있습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3416906?quality=12&learn=on)
 
-컨텐츠 조각 미리 보기를 사용하려면 몇 가지 조건을 충족해야 합니다.
+콘텐츠 조각 미리보기를 사용하려면 다음 몇 가지 조건을 충족해야 합니다.
 
-1. 작성자가 액세스할 수 있는 URL에 앱을 배포해야 합니다
-1. AEM 게시 서비스가 아닌 AEM 작성자 서비스에 연결하도록 앱을 구성해야 합니다
-1. 이 앱은 사용할 수 있는 URL 또는 경로를 사용하여 설계해야 합니다 [컨텐츠 조각 경로 또는 ID](#url-expressions) 앱 경험에서 미리 볼 컨텐츠 조각을 선택하려면 다음을 수행하십시오.
+1. 작성자가 액세스할 수 있는 URL에 앱을 배포해야 합니다.
+1. AEM 게시 서비스가 아닌 AEM 작성자 서비스에 연결하도록 앱을 구성해야 합니다.
+1. 앱을 사용할 수 있는 URL 또는 경로로 디자인해야 합니다. [컨텐츠 조각 경로 또는 ID](#url-expressions) 을 클릭하여 앱 경험에서 미리 보기 위해 표시할 콘텐츠 조각을 선택합니다.
 
-## 미리 보기 URL
+## URL 미리보기
 
-미리 보기 URL, 사용 [URL 표현식](#url-expressions)은 컨텐츠 조각 모델의 속성에 설정됩니다.
+미리보기 URL, 사용 [URL 표현식](#url-expressions)는 콘텐츠 조각 모델의 속성에 설정됩니다.
 
-![컨텐츠 조각 모델 미리 보기 URL](./assets/preview/cf-model-preview-url.png)
+![콘텐츠 조각 모델 미리 보기 URL](./assets/preview/cf-model-preview-url.png)
 
-1. 관리자로 AEM 작성자 서비스에 로그인합니다
-1. 다음으로 이동 __도구 > 일반 > 컨텐츠 조각 모델__
-1. 을(를) 선택합니다 __컨텐츠 조각 모델__ 을(를) 선택합니다. __속성__ 맨 위 작업 표시줄을 만듭니다.
-1. 을 사용하여 컨텐츠 조각 모델의 미리 보기 URL을 입력합니다 [URL 표현식](#url-expressions)
-   + 미리 보기 URL은 AEM 작성자 서비스에 연결하는 앱 배포를 가리켜야 합니다.
+1. AEM 작성자 서비스에 관리자로 로그인
+1. 다음으로 이동 __도구 > 일반 > 콘텐츠 조각 모델__
+1. 다음 항목 선택 __콘텐츠 조각 모델__ 및 선택 __속성__ 맨 위의 작업 표시줄을 구성합니다.
+1. 다음을 사용하여 콘텐츠 조각 모델의 미리보기 URL 입력 [URL 표현식](#url-expressions)
+   + 미리보기 URL은 AEM Author 서비스에 연결하는 앱 배포를 가리켜야 합니다.
 
 ### URL 표현식
 
-각 컨텐츠 조각 모델에는 미리 보기 URL 세트가 있을 수 있습니다. 아래 표에 나열된 URL 표현식을 사용하여 컨텐츠 조각당 미리 보기 URL을 매개 변수화할 수 있습니다. 단일 미리 보기 URL에 여러 URL 표현식을 사용할 수 있습니다.
+각 콘텐츠 조각 모델에는 미리보기 URL이 설정될 수 있습니다. 미리보기 URL은 아래 표에 나열된 URL 표현식을 사용하여 콘텐츠 조각별로 매개 변수화할 수 있습니다. 여러 URL 표현식을 단일 미리보기 URL에 사용할 수 있습니다.
 
 |  | URL 표현식 | 값 |
 | --------------------------------------- | ----------------------------------- | ----------- |
 | 컨텐츠 조각 경로 | `${contentFragment.path}` | `/content/dam/wknd-shared/en/adventures/surf-camp-bali/surf-camp-bali` |
 | 컨텐츠 조각 ID | `${contentFragment.id}` | `12c34567-8901-2aa3-45b6-d7890aa1c23c` |
 | 컨텐츠 조각 변형 | `${contentFragment.variation}` | `main` |
-| 컨텐츠 조각 모델 경로 | `${contentFragment.model.path}` | `/conf/wknd-shared/settings/dam/cfm/models/adventure` |
-| 컨텐츠 조각 모델 이름 | `${contentFragment.model.name}` | `adventure` |
+| 콘텐츠 조각 모델 경로 | `${contentFragment.model.path}` | `/conf/wknd-shared/settings/dam/cfm/models/adventure` |
+| 콘텐츠 조각 모델 이름 | `${contentFragment.model.name}` | `adventure` |
 
-미리 보기 URL 예:
+미리보기 URL 예:
 
-+ 의 미리 보기 URL __모험__ 모델이 `https://preview.app.wknd.site/adventure${contentFragment.path}` 이(가) `https://preview.app.wknd.site/adventure/content/dam/wknd-shared/en/adventures/surf-camp-bali/surf-camp-bali`
-+ 의 미리 보기 URL __문서__ 모델이 `https://preview.news.wknd.site/${contentFragment.model.name}/${contentFragment.id}.html?variation=${contentFragment.variation}` 해결됨 `https://preview.news.wknd.site/article/99c34317-1901-2ab3-35b6-d7890aa1c23c.html?variation=main`
++ 의 미리보기 URL __모험__ 모델은 다음과 같을 수 있습니다. `https://preview.app.wknd.site/adventure${contentFragment.path}` 다음으로 확인됨: `https://preview.app.wknd.site/adventure/content/dam/wknd-shared/en/adventures/surf-camp-bali/surf-camp-bali`
++ 의 미리보기 URL __기사__ 모델은 다음과 같을 수 있습니다. `https://preview.news.wknd.site/${contentFragment.model.name}/${contentFragment.id}.html?variation=${contentFragment.variation}` 확인됨 `https://preview.news.wknd.site/article/99c34317-1901-2ab3-35b6-d7890aa1c23c.html?variation=main`
 
 ## 인앱 미리 보기
 
-구성된 컨텐츠 조각 모델을 사용하는 모든 컨텐츠 조각에는 미리 보기 단추가 있습니다. 미리 보기 단추는 컨텐츠 조각 모델의 미리 보기 URL을 열고 열려 있는 컨텐츠 조각의 값을 [URL 표현식](#url-expressions).
+구성된 콘텐츠 조각 모델을 사용하는 모든 콘텐츠 조각에는 미리보기 버튼이 있습니다. 미리보기 버튼은 콘텐츠 조각 모델의 미리보기 URL을 열고 열려 있는 콘텐츠 조각의 값을 [URL 표현식](#url-expressions).
 
 ![미리보기 버튼](./assets/preview/preview-button.png)
 
-앱에서 컨텐츠 조각 변경 사항을 미리 볼 때 하드 새로 고침(브라우저의 로컬 캐시 지우기)을 수행합니다.
+앱에서 콘텐츠 조각 변경 내용을 미리 볼 때 하드 새로 고침(브라우저의 로컬 캐시 지우기)을 수행합니다.
 
 ## React 예
 
@@ -75,9 +75,9 @@ AEM Headless GraphQL API를 사용하여 AEM의 모험을 표시하는 간단한
 
 ## URL 및 경로
 
-컨텐츠 조각을 미리 보는 데 사용되는 URL 또는 경로는 [URL 표현식](#url-expressions). 이 WKND 앱의 미리 보기가 활성화된 버전에서는 모험 컨텐츠 조각이 를 통해 표시됩니다. `AdventureDetail` 경로에 바인딩된 구성 요소 `/adventure<CONTENT FRAGMENT PATH>`. 따라서 WKND Adventure 모델의 미리 보기 URL을 `https://preview.app.wknd.site:3000/adventure${contentFragment.path}` 이 경로를 확인합니다.
+콘텐츠 조각 미리보기에 사용되는 URL 또는 경로는 다음을 사용하여 구성 가능해야 합니다. [URL 표현식](#url-expressions). WKND 앱의 미리보기 활성화 버전에서는 `AdventureDetail` 경로에 바인딩된 구성 요소 `/adventure<CONTENT FRAGMENT PATH>`. 따라서 WKND Adventure 모델의 미리보기 URL을 로 설정해야 합니다. `https://preview.app.wknd.site:3000/adventure${contentFragment.path}` 이 경로로 확인합니다.
 
-컨텐츠 조각 미리 보기는 앱에 주소 지정 가능한 경로가 있으며 이 경로를 채울 수 있는 경우에만 작동합니다 [URL 표현식](#url-expressions) 미리 보기 가능한 방식으로 앱의 컨텐츠 조각을 렌더링합니다.
+콘텐츠 조각 미리 보기는 앱에 주소 지정 가능한 경로가 있으며 이 경로는 로 채울 수 있는 경우에만 작동합니다. [URL 표현식](#url-expressions) 미리 보기 가능한 방식으로 앱의 해당 콘텐츠 조각을 렌더링합니다.
 
 + `src/App.js`
 
@@ -108,7 +108,7 @@ export default App;
 
 ### 작성된 콘텐츠 표시
 
-다음 `AdventureDetail` 구성 요소는 을 통해 미리 보기 URL에 삽입된 컨텐츠 조각 경로를 구문 분석합니다 `${contentFragment.path}` [URL 표현식](#url-expressions)를 설정하는 것이 좋습니다.
+다음 `AdventureDetail` 구성 요소는 를 통해 미리보기 URL에 삽입된 콘텐츠 조각 경로를 구문 분석합니다. `${contentFragment.path}` [URL 표현식](#url-expressions)를 경로 URL에서 사용하고, 이 URL을 사용하여 WKND Adventure를 수집하고 렌더링합니다.
 
 + `src/components/AdventureDetail.js`
 

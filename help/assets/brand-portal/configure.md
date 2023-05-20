@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # AEM Assets Brand Portal 구성
 
-*이 비디오에서는 AEM Assets Brand Portal 구성 단계를 안내합니다.*
+*이 비디오는 AEM Assets Brand Portal을 구성하는 단계를 안내합니다.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335448?quality=12&learn=on)

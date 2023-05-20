@@ -1,6 +1,6 @@
 ---
-title: Cloud 5 - Admin Console
-description: Adobe Admin Console 및 AEM에 적합한 방법
+title: 클라우드 5 - Admin Console
+description: Adobe Admin Console 및 AEM에 맞는 방법
 version: Cloud Service
 role: Admin, Developer
 level: Intermediate
@@ -15,13 +15,13 @@ ht-degree: 6%
 
 ---
 
-# Cloud 5 - Admin Console
+# 클라우드 5 - Admin Console
 
-Admin Console 내에서 AEM 컨텍스트에서 각 항목이 어떻게 수행되는지 궁금해한 적이 있습니까? 이 팀은 사람들이 프로비저닝 및 액세스에 대해 알고 있어야 하는 몇 가지 일반적인 사항을 설명하려고 합니다.
+Admin Console 내에서 AEM 컨텍스트에서 각 항목이 수행하는 작업을 궁금해한 적이 있습니까? 팀은 프로비저닝 및 액세스에 대해 사람들이 알아야 하는 몇 가지 일반적인 사항을 설명하려고 합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342866?quality=12&learn=on)
 
-## 이 비디오에서 다루는 컨텐츠
+## 이 비디오에서 다루는 콘텐츠
 
 + [Admin Console 이해](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/admin-console.html)
 + [Admin Console 개요](https://helpx.adobe.com/kr/enterprise/using/admin-console.html)

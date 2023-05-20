@@ -1,5 +1,5 @@
 ---
-title: HTTPS를 사용하여 Workbench를 AEM Forms 서버에 연결하는 절차
+title: HTTPS를 사용하여 Workbench를 AEM Forms 서버에 연결하는 단계
 description: 이 문서에서는 SSL(HTTPS 사용)을 통해 Workbench를 AEM Forms 서버에 연결하는 단계에 대해 설명합니다
 type: Troubleshooting
 role: Admin
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# HTTPS를 사용하여 Workbench를 AEM Forms 서버에 연결하는 절차
+# HTTPS를 사용하여 Workbench를 AEM Forms 서버에 연결하는 단계
 
-*이 비디오에서는 HTTPS를 사용하여 Workbench를 AEM Forms 서버에 연결하는 단계를 안내합니다.*
+*이 비디오는 HTTPS를 사용하여 Workbench를 AEM Forms 서버에 연결하는 단계를 안내합니다.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335482?quality=12&learn=on)

@@ -1,6 +1,6 @@
 ---
 title: DAM 폴더 컨텐츠 선택 및 다운로드
-description: 확인란 구성 요소를 DAM 폴더 컨텐츠로 채우고 사용자가 선택한 컨텐츠를 다운로드할 수 있도록 하는 자습서입니다.
+description: 확인란 구성 요소를 DAM 폴더 콘텐츠로 채우고 사용자가 선택한 콘텐츠를 다운로드할 수 있도록 하는 튜토리얼입니다.
 feature: Adaptive Forms
 version: 6.5
 topic: Development
@@ -23,7 +23,7 @@ ht-degree: 3%
 
 ## 사전 요구 사항
 
-다음을 수행해야 합니다.
+다음이 필요합니다.
 
 * 양식 추가 기능 패키지가 설치된 AEM의 작업 인스턴스
 

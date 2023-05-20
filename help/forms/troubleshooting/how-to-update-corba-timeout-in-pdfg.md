@@ -1,6 +1,6 @@
 ---
-title: 트랜잭션 롤백 문제를 완화하도록 PDFG에서 CORBA 시간 제한을 업데이트하는 방법
-description: 트랜잭션 롤백과 관련된 문제를 해결하도록 AEM Forms PDF 생성기에서 CORBA 시간 제한을 구성합니다
+title: 트랜잭션 롤백 문제를 완화하기 위해 PDFG에서 CORBA 시간 제한을 업데이트하는 방법
+description: AEM Forms PDF 생성기에서 CORBA 시간 초과를 구성하여 트랜잭션 롤백과 관련된 문제를 해결합니다
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# 트랜잭션 롤백 문제를 완화하도록 PDFG에서 CORBA 시간 제한을 업데이트하는 방법
+# 트랜잭션 롤백 문제를 완화하기 위해 PDFG에서 CORBA 시간 제한을 업데이트하는 방법
 
-*이 비디오에서는 트랜잭션 롤백 문제를 완화하도록 Forms PDFG에서 CORBA 시간 제한을 업데이트하는 프로세스에 대해 설명합니다.*
+*이 비디오는 트랜잭션 롤백 문제를 완화하기 위해 Forms PDFG에서 CORBA 시간 초과를 업데이트하는 프로세스에 대해 설명합니다.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335512?quality=12&learn=on)

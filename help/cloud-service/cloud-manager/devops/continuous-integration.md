@@ -1,5 +1,5 @@
 ---
-title: AEM Cloud Manager와 지속적으로 통합 사용
+title: AEM Cloud Manager와의 지속적인 통합 사용
 description: Adobe Cloud Manager를 사용하여 모범 사례와 지속적인 통합에 대해 알아봅니다.
 role: Developer
 level: Beginner

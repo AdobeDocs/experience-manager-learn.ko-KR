@@ -1,6 +1,6 @@
 ---
-title: AEM Forms PDFG 시스템 준비 도구의 출력을 실행하고 해석하는 절차
-description: PDF 생성기 준비 유틸리티의 결과를 확인합니다.
+title: AEM Forms PDFG 시스템 준비 도구의 출력을 실행하고 해석하는 단계
+description: PDF 생성기 준비 유틸리티의 결과를 해석합니다.
 type: Troubleshooting
 role: Developer
 level: Intermediate
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# AEM Forms PDFG 시스템 준비 도구의 출력을 실행하고 해석하는 절차
+# AEM Forms PDFG 시스템 준비 도구의 출력을 실행하고 해석하는 단계
 
-*이 비디오에서는 AEM Forms PDFG 시스템 준비 도구(SRT)의 출력 실행 및 해석 프로세스를 안내합니다.*
+*이 비디오는 AEM Forms PDFG System Readiness Tool(SRT)의 출력을 실행하고 해석하는 과정을 안내합니다.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335543?quality=12&learn=on)

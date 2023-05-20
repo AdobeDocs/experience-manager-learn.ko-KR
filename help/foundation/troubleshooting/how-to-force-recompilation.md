@@ -1,6 +1,6 @@
 ---
-title: 모든 Sling 스크립트 jsp, java 및 sightly를 다시 컴파일하는 방법
-description: JSP를 다시 컴파일하는 단계
+title: 모든 Sling 스크립트 jsps, java 및 sightly를 강제로 리컴파일링하는 방법
+description: JSP의 강제 리컴파일링 단계
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# 모든 Sling 스크립트 jsp, java 및 sightly를 다시 컴파일하는 방법
+# 모든 Sling 스크립트 jsps, java 및 sightly를 강제로 리컴파일링하는 방법
 
-*이 비디오에서는 모든 Sling 스크립트 jsp, java 및 sightly를 다시 컴파일하는 단계를 안내합니다.*
+*이 비디오는 모든 Sling 스크립트 jsps, java 및 sightly를 강제로 리컴파일링하는 단계를 안내합니다.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335464?quality=12&learn=on)

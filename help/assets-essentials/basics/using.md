@@ -1,6 +1,6 @@
 ---
 title: Assets Essentials 사용
-description: Assets Essentials에서 자산을 다운로드하는 방법을 학습합니다.
+description: Assets Essentials에서 에셋을 다운로드하는 방법을 알아봅니다.
 version: Cloud Service
 feature: Assets Essentials
 topic: Content Management
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Assets Essentials 사용
 
-Assets Essentials에서 자산을 필터링, 검색 및 다운로드하는 방법을 학습합니다.
+Assets Essentials에서 에셋을 필터링, 검색 및 다운로드하는 방법을 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335861?quality=12&learn=on)

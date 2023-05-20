@@ -1,6 +1,6 @@
 ---
-title: AEM Project에서 저장소 구조 패키지는 무엇입니까?
-description: AEM 응용 프로그램의 저장소 구조 패키지, 그 중요성 및 적절하게 정의하는 방법을 알아봅니다.
+title: AEM 프로젝트의 저장소 구조 패키지란 무엇입니까?
+description: AEM 애플리케이션의 저장소 구조 패키지, 중요도 및 이를 올바르게 정의하는 방법을 살펴봅니다.
 role: Developer
 level: Beginner
 type: Tutorial
@@ -18,6 +18,6 @@ ht-degree: 14%
 
 # 저장소 구조 패키지
 
-AEM 응용 프로그램 탐색 [저장소 구조 패키지](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/repository-structure-package.html)의 중요성과 최적 정의 방법 을 설명합니다.
+AEM 애플리케이션 탐색 [저장소 구조 패키지](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/repository-structure-package.html), 중요도 및 최적의 정의 방법.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330550?quality=12&learn=on)

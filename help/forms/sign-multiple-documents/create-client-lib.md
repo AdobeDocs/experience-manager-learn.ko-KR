@@ -18,7 +18,7 @@ ht-degree: 3%
 
 # 클라이언트 라이브러리 만들기
 
-짧게 URL 매개 변수를 추출하기 위해 사용자 지정 클라이언트 라이브러리인 clientlib을 만들고 GET 호출에 해당 매개 변수를 전달합니다. 패키지에 로그인할 다음 양식의 url을 반환하는 /bin/getnextformtosign에 마운트된 서블릿에 GET 호출이 수행됩니다.
+사용자 지정 클라이언트 라이브러리인 clientlib을 만들어 URL 매개 변수를 추출합니다. 이러한 매개 변수는 GET 호출에서 전달합니다. GET 호출은 패키지에 로그인할 다음 양식의 URL을 반환하는 /bin/getnextformtosign에 탑재된 서블릿에 대해 수행됩니다.
 
 다음은 clientlib javascript 함수에 사용되는 코드입니다
 
@@ -74,8 +74,8 @@ $(document).ready(function()
 
 ## Assets
 
-[clientlib은 여기에서 다운로드할 수 있습니다](assets/get-next-form-client-lib.zip)
+[clientlib은 여기에서 다운로드할 수 있습니다.](assets/get-next-form-client-lib.zip)
 
 ## 다음 단계
 
-[이 사용 사례에 대한 사용자 지정 양식 템플릿 만들기](./create-af-template.md)
+[이 사용 사례에 대한 사용자 정의 양식 템플릿 만들기](./create-af-template.md)

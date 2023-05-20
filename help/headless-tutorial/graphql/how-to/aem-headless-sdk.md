@@ -1,6 +1,6 @@
 ---
 title: AEM Headless SDK 사용
-description: AEM Headless SDK를 사용하여 GraphQL 쿼리를 만드는 방법을 알아봅니다.
+description: AEM Headless SDK를 사용하여 GraphQL 쿼리를 만드는 방법에 대해 알아봅니다.
 version: Cloud Service
 topic: Headless
 feature: GraphQL API
@@ -20,7 +20,7 @@ ht-degree: 10%
 
 AEM Headless SDK는 클라이언트가 HTTP를 통해 AEM Headless API와 빠르고 쉽게 상호 작용하는 데 사용할 수 있는 라이브러리 세트입니다.
 
-AEM Headless SDK는 다음과 같은 다양한 플랫폼에서 사용할 수 있습니다.
+AEM Headless SDK는 다양한 플랫폼에서 사용할 수 있습니다.
 
 + [클라이언트측 브라우저용 AEM Headless SDK (JavaScript)](https://github.com/adobe/aem-headless-client-js)
 + [서버측/Node.js용 AEM Headless SDK (JavaScript)](https://github.com/adobe/aem-headless-client-nodejs)
@@ -28,25 +28,25 @@ AEM Headless SDK는 다음과 같은 다양한 플랫폼에서 사용할 수 있
 
 ## 지속 GraphQL 쿼리
 
-지속되는 쿼리를 사용하여 AEM 쿼리(과 대조적으로) [클라이언트 정의 GraphQL 쿼리](#graphl-queries))을 사용하면 개발자가 AEM에서 쿼리(결과가 아님)를 지속한 다음 이름별로 쿼리 실행을 요청할 수 있습니다. 지속되는 쿼리는 SQL 데이터베이스의 저장 프로시저 개념과 유사합니다.
+지속 쿼리를 사용하여 GraphQL을 사용하여 AEM 쿼리 (과 반대) [클라이언트 정의 GraphQL 쿼리](#graphl-queries))를 사용하면 개발자가 AEM에서 쿼리를 지속한 다음(결과는 아님) 이름별로 쿼리를 실행하도록 요청할 수 있습니다. 지속 쿼리는 SQL 데이터베이스의 저장 프로시저 개념과 유사합니다.
 
-지속되는 쿼리는 CDN 및 AEM Dispatcher 계층에서 캐시 가능한 HTTP GET을 사용하여 실행되므로 클라이언트 정의 GraphQL 쿼리보다 성능이 향상됩니다. 지속형 쿼리는 적용되며 API를 정의하고 개발자가 각 컨텐츠 조각 모델의 세부 사항을 이해할 필요가 있음을 설명합니다.
+지속 쿼리는 CDN 및 AEM Dispatcher 계층에서 캐시 가능한 HTTP GET을 사용하여 실행되므로 클라이언트 정의 GraphQL 쿼리보다 성능이 향상됩니다. 또한 지속 쿼리는 실제로 개발자가 각 콘텐츠 조각 모델의 세부 정보를 이해해야 하는 필요성을 분리하고 API를 정의합니다.
 
 ### 코드 예{#persisted-graphql-queries-code-examples}
 
-다음은 AEM에 대해 GraphQL 지속적인 쿼리를 실행하는 방법의 코드 예입니다.
+다음은 AEM에 대해 GraphQL 지속 쿼리를 실행하는 방법의 코드 예입니다.
 
 +++ JavaScript 예
 
-설치 [@adobe/aem-headless-client-js](https://github.com/adobe/aem-headless-client-js) 다음을 실행하여 `npm install` 명령을 추가합니다.
+설치 [@adobe/aem-headless-client-js](https://github.com/adobe/aem-headless-client-js) 를 실행하여 `npm install` Node.js 프로젝트의 루트에 있는 명령입니다.
 
 ```
 $ npm i @adobe/aem-headless-client-js
 ```
 
-이 코드 예는 를 사용하여 AEM을 쿼리하는 방법을 보여줍니다. [@adobe/aem-headless-client-js](https://github.com/adobe/aem-headless-client-js) 다음을 사용하여 npm 모듈 `async/await` 구문 JavaScript용 AEM Headless SDK도 지원합니다 [약속 구문](https://github.com/adobe/aem-headless-client-js#use-aemheadless-client).
+이 코드 예는 다음을 사용하여 AEM을 쿼리하는 방법을 보여 줍니다. [@adobe/aem-headless-client-js](https://github.com/adobe/aem-headless-client-js) 를 사용하는 npm 모듈 `async/await` 구문. JavaScript용 AEM Headless SDK는 [Promise 구문](https://github.com/adobe/aem-headless-client-js#use-aemheadless-client).
 
-이 코드에서는 이름이 인 지속된 쿼리를 가정합니다 `wknd/adventureNames` 은 AEM 작성자에서 만들어지고 AEM 게시에 게시되었습니다.
+이 코드는 라는 이름의 지속 쿼리를 가정합니다. `wknd/adventureNames` 이(가) AEM 작성자에 만들어져 AEM Publish에 게시되었습니다.
 
 ```javascript
 import AEMHeadless from '@adobe/aem-headless-client-js';
@@ -87,22 +87,22 @@ let { data, errors } = executePersistedQuery('wknd-shared/adventures-by-slug', {
 
 +++
 
-+++ React useEffect(..) 예
++++ React useEffect(...) 예
 
-설치 [@adobe/aem-headless-client-js](https://github.com/adobe/aem-headless-client-js) 다음을 실행하여 `npm install` React 프로젝트의 루트에서 명령을 실행합니다.
+설치 [@adobe/aem-headless-client-js](https://github.com/adobe/aem-headless-client-js) 를 실행하여 `npm install` react 프로젝트의 루트에서 명령.
 
 ```
 $ npm i @adobe/aem-headless-client-js
 ```
 
-이 코드 예는 를 사용하는 방법을 보여줍니다. [React useEffect(..) 후크](https://reactjs.org/docs/hooks-effect.html) AEM GraphQL에 대한 비동기 호출을 실행하려면
+이 코드 예는 를 사용하는 방법을 보여 줍니다. [React useEffect(...) 후크](https://reactjs.org/docs/hooks-effect.html) AEM GraphQL에 대한 비동기 호출을 실행합니다.
 
-사용 `useEffect` React의 비동기 GraphQL 호출을 사용하면 다음과 같은 이유로 유용합니다.
+사용 `useEffect` 다음과 같은 이유로 React에서 비동기 GraphQL 호출을 수행하는 것이 유용합니다.
 
-1. AEM에 대한 비동기 호출의 동기 래퍼를 제공합니다.
-1. AEM에 불필요한 요청을 줄여줍니다.
+1. AEM에 대한 비동기 호출에 대한 동기 래퍼를 제공합니다.
+1. AEM을 불필요하게 요청하는 것을 줄입니다.
 
-이 코드에서는 이름이 인 지속된 쿼리를 가정합니다 `wknd-shared/adventure-by-slug` 은 AEM 작성자에서 만들어지고 GraphiQL을 사용하여 AEM Publish에 게시되었습니다.
+이 코드는 라는 이름의 지속 쿼리를 가정합니다. `wknd-shared/adventure-by-slug` 은(는) AEM Author에서 만들어지고 GraphiQL을 사용하여 AEM Publish에 게시되었습니다.
 
 ```javascript
 import AEMHeadless from '@adobe/aem-headless-client-js';
@@ -185,7 +185,7 @@ export function useAdventureBySlug(slug) {
 }
 ```
 
-사용자 지정 React 호출 `useEffect` React 구성 요소의 다른 곳에서 후크합니다.
+사용자 지정 React 호출 `useEffect` React 구성 요소의 다른 위치에서 후크합니다.
 
 ```javascript
 import useAdventureBySlug from '...';
@@ -193,7 +193,7 @@ import useAdventureBySlug from '...';
 let { data, errors } = useAdventureBySlug('bali-surf-camp');
 ```
 
-새로 만들기 `useEffect` React 앱에서 사용하는 각 지속적인 쿼리에 대해 후크를 만들 수 있습니다.
+신규 `useEffect` 후크는 React 앱이 사용하는 각 지속 쿼리에 대해 만들 수 있습니다.
 
 +++
 
@@ -201,11 +201,11 @@ let { data, errors } = useAdventureBySlug('bali-surf-camp');
 
 ## GraphQL 쿼리
 
-AEM은 클라이언트 정의 GraphQL 쿼리를 지원하지만, 사용하는 것은 AEM 우수 사례입니다 [지속된 GraphQL 쿼리](#persisted-graphql-queries).
+AEM은 클라이언트 정의 GraphQL 쿼리를 지원하지만 사용하는 것은 AEM 모범 사례입니다 [지속 GraphQL 쿼리](#persisted-graphql-queries).
 
-## 웹 팩 5+
+## Webpack 5+
 
-AEM Headless JS SDK는 `util` 기본적으로 웹 팩 5+에 포함되지 않은 버전입니다. Webpack 5 이상을 사용 중인 경우 다음 오류를 수신하십시오.
+AEM Headless JS SDK는에 대한 종속성이 있습니다. `util` 기본적으로 Webpack 5+에 포함되지 않습니다. Webpack 5+를 사용 중인데 다음 오류가 표시됩니다.
 
 ```
 Compiled with problems:
@@ -222,7 +222,7 @@ If you don't want to include a polyfill, you can use an empty module like this:
     resolve.fallback: { "util": false }
 ```
 
-다음을 추가합니다 `devDependencies` 아래와 같이 `package.json` 파일:
+다음 추가 `devDependencies` (으)로 `package.json` 파일:
 
 ```json
   "devDependencies": {
@@ -236,4 +236,4 @@ If you don't want to include a polyfill, you can use an empty module like this:
   },
 ```
 
-그런 다음 를 실행합니다 `npm install` 종속성을 설치하려면 다음을 수행하십시오.
+그런 다음 실행 `npm install` 종속성을 설치합니다.

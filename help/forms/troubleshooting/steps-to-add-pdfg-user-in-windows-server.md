@@ -1,5 +1,5 @@
 ---
-title: Windows Server 2016에서 PDFG 사용자를 추가하는 절차
+title: Windows Server2016에서 PDFG 사용자를 추가하는 단계
 description: Windows Server 2016에서 PDF 생성기 구성
 type: Troubleshooting
 role: Admin
@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Windows Server 2016에서 AEM Forms PDFG 사용자를 추가하는 절차.
 
-*이 비디오에서는 Windows 2016에서 AEM Forms PDFG 사용자를 추가하는 추가 단계를 안내합니다.*
+*이 비디오는 Windows 2016에서 AEM Forms PDFG 사용자를 추가하는 추가 단계를 안내합니다.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335479?quality=12&learn=on)

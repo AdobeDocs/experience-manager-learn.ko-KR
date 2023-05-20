@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Unix 설정에서 문자열 추적을 활성화하는 단계
 
-*이 비디오에서는 AEM Forms PDFG용 Unix 설정에서 문자열 추적을 활성화하는 단계를 안내합니다.*
+*이 비디오는 AEM Forms PDFG에 대한 Unix 설정에서 문자열 추적을 활성화하는 단계를 안내합니다.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335525?quality=12&learn=on)

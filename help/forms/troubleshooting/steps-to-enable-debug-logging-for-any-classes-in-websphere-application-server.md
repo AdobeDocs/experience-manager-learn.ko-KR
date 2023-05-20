@@ -1,6 +1,6 @@
 ---
-title: WebSphere Application Server의 모든 클래스에 대한 디버그 로깅을 활성화하는 절차
-description: WebSphere 응용 프로그램 서버와 관련된 문제 해결을 위한 디버그 로깅을 구성합니다
+title: WebSphere Application Server의 모든 클래스에 대해 디버그 로깅을 활성화하는 단계
+description: WebSphere Application Server 관련 문제 해결을 위한 디버그 로깅 구성
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ---
 
-# Websphere Application Server의 모든 클래스에 대해 디버그 로깅을 활성화하는 절차
+# Websphere Application Server의 모든 클래스에 대해 디버그 로깅을 활성화하는 단계
 
-*이 비디오에서는 Websphere Application Server의 모든 클래스에 대해 디버그 로깅을 활성화하는 단계를 안내합니다.*
+*이 비디오는 Websphere Application Server의 모든 클래스에 대해 디버그 로깅을 활성화하는 단계를 설명합니다.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335523?quality=12&learn=on)

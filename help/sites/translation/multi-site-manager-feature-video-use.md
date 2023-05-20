@@ -1,7 +1,7 @@
 ---
 title: AEM Sites에서 다중 사이트 관리자 사용
 seo-title: Using Multi Site Manager Touch UI Interfaces with Adobe Experience Manager
-description: Live Copy 개요 및 Blueprint Configuration Manager는 Multi Site Manager에서 사용하기 위한 Touch UI 사용 인터페이스입니다.
+description: 라이브 카피 개요 및 블루프린트 구성 관리자는 다중 사이트 관리자 작업을 위한 Touch UI 사용 인터페이스입니다.
 seo-description: Live Copy Overview and Blueprint Configuration Manager are Touch UI Enabled interfaces for working with Multi Site Manager with Adobe Experience Manager.
 feature: Multi Site Manager
 topics: localization, authoring, content-architecture
@@ -24,19 +24,19 @@ ht-degree: 17%
 
 # 다중 사이트 관리자 사용 {#using-multi-site-manager-with-aem-sites}
 
-Live Copy 개요 및 블루프린트 구성 관리자는 작업을 위한 AEM 작성자 인터페이스입니다 [다중 사이트 관리자](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/msm-and-translation.html) Adobe Experience Manager Sites.
+라이브 카피 개요 및 블루프린트 구성 관리자는 를 사용하여 작업할 수 있는 AEM 작성자 인터페이스입니다 [다중 사이트 관리자](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/msm-and-translation.html) Adobe Experience Manager Sites.
 
 ## Live Copy 개요 {#live-copy-overview}
 
 >[!VIDEO](https://video.tv.adobe.com/v/17054?quality=12&learn=on)
 
-*Live Copy 개요는 Live Copy 및 각각의 블루프린트를 관리하는 데 사용되는 Touch UI 인터페이스입니다. AEM 6.3에 도입된 이 기능은 클래식 UI 블루프린트 컨트롤 센터를 대체합니다.*
+*라이브 카피 개요 는 라이브 카피 및 해당 블루프린트를 관리하는 데 사용되는 Touch UI 인터페이스입니다. AEM 6.3에 도입된 이 기능은 클래식 UI 블루프린트 제어 센터를 대체합니다.*
 
-## 블루프린트 구성 관리자 - 터치 UI {#blueprint-config-mgr}
+## 블루프린트 구성 관리자 - Touch UI {#blueprint-config-mgr}
 
 >[!VIDEO](https://video.tv.adobe.com/v/17056?quality=12&learn=on)
 
-*AEM 6.3에서는 다중 사이트 관리자에서 사용할 블루프린트 구성을 관리하는 터치 UI 인터페이스를 도입했습니다.*
+*AEM 6.3에서는 다중 사이트 관리자에서 사용할 블루프린트 구성을 관리하는 Touch UI 인터페이스를 도입했습니다.*
 
 ## 추가 리소스 {#additional-resources}
 

@@ -1,6 +1,6 @@
 ---
 title: AEM Forms과 Marketo(4부)
-description: AEM Forms 양식 데이터 모델을 사용하여 AEM Forms을 Marketo과 통합하는 자습서입니다.
+description: AEM Forms 양식 데이터 모델을 사용하여 AEM Forms을 Marketo과 통합하는 방법에 대한 자습서입니다.
 feature: Adaptive Forms, Form Data Model
 version: 6.4,6.5
 topic: Development
@@ -16,25 +16,25 @@ ht-degree: 1%
 
 # 양식 데이터 모델을 사용하여 적응형 양식 만들기
 
-다음 단계는 적응형 양식을 만들고 이전 단계에서 만든 양식 데이터 모델을 기반으로 하는 것입니다.
-사용자가 리드 ID를 입력하고 Marketo 서비스를 탭 아웃하여 ID별로 리드를 가져옵니다 . 그런 다음 서비스 작업 결과가 적응형 Forms의 적절한 필드에 매핑됩니다.
+다음 단계는 적응형 양식을 만들고 이전 단계에서 만든 양식 데이터 모델을 기반으로 합니다.
+사용자가 리드 ID를 입력하고 Marketo 서비스 탭 아웃 시 ID별로 리드를 가져오는 가 호출됩니다. 그런 다음 서비스 작업의 결과가 적응형 Forms의 해당 필드에 매핑됩니다.
 
-1. 적응형 양식을 만들고 &quot;빈 양식 템플릿&quot;을 기반으로 하여 이전 단계에서 만든 양식 데이터 모델과 연결합니다.
-1. 편집 모드에서 양식을 엽니다
-1. TextField 구성 요소와 Panel 구성 요소를 적응형 양식으로 끌어다 놓습니다. TextField 구성 요소 &quot;Enter Lead Id&quot;의 제목을 설정하고 이름을 &quot;LeadId&quot;로 설정합니다.
-1. 2개의 TextField 구성 요소를 패널 구성 요소로 드래그하여 놓습니다
-1. 2개의 Textfield 구성 요소의 이름과 제목을 FirstName 및 LastName으로 설정합니다.
-1. 최소값을 1로, 최대값을 -1로 설정하여 패널 구성 요소를 반복 가능한 구성 요소로 구성합니다. Marketo 서비스에서 리드 개체 배열을 반환하고 결과를 표시하려면 반복 가능한 구성 요소를 가져야 하므로 필요합니다. 그러나 이 경우 ID로 리드 개체를 검색하므로 하나의 리드 개체만 다시 가져옵니다.
+1. 적응형 양식을 만들고 &quot;빈 양식 템플릿&quot;을 기반으로 이전 단계에서 만든 양식 데이터 모델과 연결합니다.
+1. 편집 모드로 양식 열기
+1. TextField 구성 요소와 패널 구성 요소를 적응형 양식으로 드래그 앤 드롭합니다. TextField 구성 요소의 제목을 &quot;리드 ID 입력&quot;으로 설정하고 이름을 &quot;리드 ID&quot;로 설정합니다.
+1. 2개의 TextField 구성 요소를 패널 구성 요소로 끌어다 놓습니다.
+1. 두 Textfield 구성 요소의 이름 및 제목을 이름 및 성 로 설정합니다.
+1. 최소값을 1로 설정하고 최대값을 -1로 설정하여 패널 구성 요소를 반복 가능한 구성 요소로 구성합니다. Marketo 서비스가 리드 오브젝트 배열을 반환하고 결과를 표시하려면 반복 가능한 구성 요소가 있어야 하므로 이 작업이 필요합니다. 그러나 이 경우 Lead 객체의 ID를 기준으로 Lead 객체를 검색하고 있으므로 Lead 객체는 하나만 다시 가져옵니다.
 1. 아래 이미지에 표시된 대로 LeadId 필드에 규칙을 만듭니다.
-1. 양식을 미리 보고 LeadID 필드에 유효한 Lead Id 를 입력하고 Tab 키를 누릅니다. 이름 및 성 필드는 서비스 호출 결과로 채워야 합니다.
+1. 양식을 미리 보고 LeadID 필드에 유효한 Lead ID를 입력한 다음 Tab out 을 클릭합니다. 이름 및 성 필드는 서비스 호출 결과로 채워집니다.
 
 다음 스크린샷에서는 규칙 편집기 설정에 대해 설명합니다
 
-![규칙 편집기](assets/ruleeditor.jfif)
+![규칙 편집자](assets/ruleeditor.jfif)
 
 ## 디버깅
 
-이 문서와 함께 제공된 번들을 사용하는 경우 [디버그 로그](http://localhost:4502/system/console/slinglog) 다음 클래스의 경우:
+이 문서와 함께 제공되는 번들을 사용하는 경우 다음을 활성화할 수 있습니다 [디버그 로그](http://localhost:4502/system/console/slinglog) 다음 클래스의 경우:
 
 + `com.marketoandforms.core.impl.MarketoServiceImpl`
 + `com.marketoandforms.core.MarketoConfigurationService`

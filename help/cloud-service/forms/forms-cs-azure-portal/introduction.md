@@ -1,6 +1,6 @@
 ---
-title: Adobe Experience Manager Forms을 Cloud Service으로 Azure 저장소와 통합
-description: AEM Forms 제출 데이터를 Azure 저장소 계정에 저장하는 방법을 알아봅니다.
+title: Azure 스토리지와 Adobe Experience Manager Forms as Cloud Service 통합
+description: AEM Forms 제출 데이터를 Azure 스토리지 계정에 저장하는 방법을 알아봅니다.
 feature: Adaptive Forms
 type: Documentation
 role: Developer
@@ -19,6 +19,6 @@ ht-degree: 2%
 
 # 소개
 
-AEM Forms as a Cloud Service 제출 데이터를 Azure 저장 공간 계정에 저장하는 방법을 알아봅니다.
+AEM Forms as a Cloud Service 제출 데이터를 Azure 스토리지 계정에 저장하는 방법을 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336028?quality=12&learn=on)

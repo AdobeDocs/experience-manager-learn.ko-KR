@@ -1,7 +1,7 @@
 ---
 title: 번역 작업 상태
 seo-title: Translation Job Status
-description: 번역 작업 또는 작업 항목과 연관된 여러 상태를 알아봅니다.
+description: 번역 작업 또는 작업 항목과 관련된 다양한 상태를 이해합니다.
 seo-description: Understand the different statuses associated with a Translation Job or an item in the job.
 feature: Language Copy, Multi Site Manager
 topics: localization, authoring, content-architecture
@@ -24,6 +24,6 @@ ht-degree: 16%
 
 # 번역 작업 상태 {#translation-job-status}
 
-번역 작업 또는 작업 항목과 연관된 여러 상태를 알아봅니다.
+번역 작업 또는 작업 항목과 관련된 다양한 상태를 이해합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/36685?quality=12&learn=on)

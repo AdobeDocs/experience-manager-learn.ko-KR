@@ -1,6 +1,6 @@
 ---
 title: Creative Cloud 및 Assets Essentials
-description: Assets Essentials과 Adobe Creative Cloud이 통합하는 방법을 알아봅니다.
+description: Assets Essentials이 Adobe Creative Cloud과 통합되는 방법을 알아봅니다.
 version: Cloud Service
 feature: Assets Essentials
 topic: Content Management
@@ -19,9 +19,9 @@ ht-degree: 0%
 
 # Creative Cloud 및 Assets Essentials
 
-Assets Essentials을 Adobe Creative Cloud 라이브러리와 통합하여 다음을 허용하는 방법을 알아보십시오.
+Adobe Creative Cloud Libraries와 Assets Essentials을 통합하여 다음과 같은 작업을 수행하는 방법에 대해 알아봅니다.
 
 + Creative Cloud 라이브러리를 통해 원활하게 액세스할 수 있는 Assets Essentials의 파일
-+ Assets Essentials에 공유할 Creative Cloud 라이브러리의 파일
++ Assets Essentials에게 공유할 Creative Cloud 라이브러리의 파일
 
 >[!VIDEO](https://video.tv.adobe.com/v/336069?quality=12&learn=on)

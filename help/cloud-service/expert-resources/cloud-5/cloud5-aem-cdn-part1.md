@@ -1,6 +1,6 @@
 ---
 title: Cloud 5 AEM CDN 1부
-description: 이것은 AEM as a Cloud Service의 CDN에 대한 심층적인 탐구의 1부분입니다.
+description: AEM의 as a Cloud Service CDN에 대해 자세히 알아보는 1부 입니다.
 version: Cloud Service
 feature: Developer Tools
 role: Admin, Developer
@@ -19,14 +19,14 @@ ht-degree: 0%
 
 # Cloud 5 AEM CDN 1부
 
-이 CDN은 고유한 CDN을 가져올 것인지 여부를 포함하여 AEM as a Cloud Service의 일부로 제공되는 CDN에 대해 자세히 살펴봅니다. 2의 1부입니다
+이는 AEM as a Cloud Service의 일부로 제공되는 CDN에 대해 자세히 알아보는 것으로, CDN의 기능과 자체 CDN을 가져오는지 여부도 여기에 포함됩니다. 2부 중 1부입니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/340760?quality=12&learn=on)
 
-## 이 시리즈 중 일부에 포함된 컨텐츠
+## 이 시리즈의 첫 번째 부분에서 다루는 콘텐츠
 
 + AEM CDN [개요](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html)
-+ 웹 응용 프로그램 방화벽(WAF) 기능
++ WAF(Web Application Firewall) 기능
 + IP 제한 사항
 + DDOS 보호
 

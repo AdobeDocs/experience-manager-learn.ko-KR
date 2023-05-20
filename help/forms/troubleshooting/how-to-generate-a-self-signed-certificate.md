@@ -1,6 +1,6 @@
 ---
 title: 자체 서명된 인증서를 생성하는 방법
-description: SSL을 적용하기 위해 자체 서명된 인증서를 생성하는 절차
+description: SSL을 적용하기 위해 자체 서명된 인증서를 생성하는 단계
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # 자체 서명된 인증서를 생성하는 방법
 
-*이 비디오에서는 자체 서명된 인증서를 생성하는 단계를 안내합니다.*
+*이 비디오는 자체 서명된 인증서를 생성하는 단계를 안내합니다.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335539?quality=12&learn=on)

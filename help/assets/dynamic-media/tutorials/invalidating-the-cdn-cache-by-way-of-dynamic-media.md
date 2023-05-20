@@ -1,6 +1,6 @@
 ---
-title: AEM Dynamic Media용 CDN 캐시 무효화
-description: AEM Dynamic Media에 대한 CDN 캐시를 무효화하는 단계
+title: AEM Dynamic Media에 대한 CDN 캐시 무효화
+description: AEM Dynamic Media에 대한 CDN 캐시를 무효화하는 절차
 role: Developer
 level: Intermediate
 version: Cloud Service
@@ -14,8 +14,8 @@ ht-degree: 0%
 
 ---
 
-# AEM Dynamic Media용 CDN 캐시 무효화
+# AEM Dynamic Media에 대한 CDN 캐시 무효화
 
-이 비디오는 Dynamic Media의 방식으로 CDN 캐시를 무효화하는 프로세스를 안내합니다.
+이 비디오는 Dynamic Media을 통해 CDN 캐시를 무효화하는 과정을 안내합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335457?quality=12&learn=on)

@@ -19,6 +19,6 @@ ht-degree: 2%
 
 # 소개
 
-Adobe Experience Manager Forms as a cloud service와 Salesforce 간의 통합을 소개합니다.
+Adobe Experience Manager Forms as cloud service와 Salesforce 간의 통합을 소개합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/331891?quality=12&learn=on)

@@ -16,44 +16,44 @@ ht-degree: 2%
 
 ---
 
-# AEM Forms과 통합 [!DNL ServiceNow]
+# 통합: AEM Forms [!DNL ServiceNow]
 
-인시던트 만들기 및 표시 [!DNL ServiceNow] AEM Forms에서 양식 데이터 모델 사용.
+에서 인시던트 만들기 및 표시 [!DNL ServiceNow] AEM Forms에서 양식 데이터 모델 사용.
 
 ## 사전 요구 사항
 
-* [!DNL ServiceNow] 계정이 필요합니다.
-* 친숙한 [데이터 소스 만들기](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html)
-* 친숙한 [양식 데이터 모델](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html)
+* [!DNL ServiceNow] 계정입니다.
+* 에 친숙해 [데이터 소스 만들기](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html)
+* 에 친숙해 [양식 데이터 모델](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html)
 
 ## 샘플 자산
 
-이 문서와 함께 제공되는 샘플 자산은 다음과 같습니다
+이 문서와 함께 제공되는 샘플 에셋에는 다음 항목이 포함됩니다
 
 * 클라우드 서비스 구성
-* Swagger 파일을 사용하여 인시던트 만들기 및 모든 인시던트 가져오기
-* Swagger 파일을 기반으로 하는 양식 데이터 모델
-* 만들고 나열하는 적응형 양식 [!DNL ServiceNow] 문제
+* 인시던트를 만들고 모든 인시던트를 가져오기 위한 Swagger 파일
+* Swagger 파일을 기반으로 한 양식 데이터 모델
+* 만들고 나열할 적응형 양식 [!DNL ServiceNow] 문제
 
 ## 서버에 자산 배포
 
-* 다운로드 [샘플 자산](assets/service-now.zip)
-* 을 사용하여 자산을 AEM에 가져오기 [패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp)
-* 이 통합에 사용된 Swagger 파일은 ```/conf/9957/settings/cloudconfigs/fdm``` crx 저장소의 폴더
-* 편집 [CreateIncident cloud service 구성](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2F9957%2Fsettings%2Fcloudconfigs%2Ffdm%2Fcreateincident)를 입력하여 ServiceNow 인스턴스와 일치시킬 수 있습니다.
-* 편집 [GetAllInsights 클라우드 서비스 구성](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2F9957%2Fsettings%2Fcloudconfigs%2Ffdm%2Fgetallincidents) 를 입력하여 ServiceNow 인스턴스와 일치시킬 수 있습니다. ServiceNow 인스턴스 자격 증명과 일치하도록 호스트, 사용자 이름 및 암호를 변경해야 합니다.
+* 다운로드 [샘플 에셋](assets/service-now.zip)
+* 다음을 사용하여 자산을 AEM에 가져오기 [패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp)
+* 이 통합에 사용되는 Swagger 파일은 ```/conf/9957/settings/cloudconfigs/fdm``` crx 저장소의 폴더
+* 편집 [CreateIncident 클라우드 서비스 구성](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2F9957%2Fsettings%2Fcloudconfigs%2Ffdm%2Fcreateincident)을 입력하여 ServiceNow 인스턴스와 일치시킬 수 있습니다.
+* 편집 [GetAllIncidents 클라우드 서비스 구성](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2F9957%2Fsettings%2Fcloudconfigs%2Ffdm%2Fgetallincidents) 을 입력하여 ServiceNow 인스턴스와 일치시킬 수 있습니다. ServiceNow 인스턴스 자격 증명과 일치하도록 호스트, 사용자 이름 및 암호를 변경해야 합니다.
 
-## ServiceNow 인스턴스 자격 증명 액세스
+## ServiceNow 인스턴스 자격 증명에 액세스
 
-* 사용자 프로필을 클릭합니다.
+* 사용자 프로필 클릭
    ![사용자 프로필 클릭](assets/snow-1.png)
 
-* 인스턴스 암호 관리를 클릭합니다.
-* 인스턴스 세부 사항이 아래와 같이 표시됩니다
-   ![인스턴스 세부 정보](assets/snow-3.png)
+* 인스턴스 암호 관리 를 클릭합니다.
+* 인스턴스 세부 사항은 아래와 같이 표시됩니다
+   ![인스턴스 세부 사항](assets/snow-3.png)
 
 ## 통합 테스트
 
 * [적응형 양식 열기](http://localhost:4502/content/dam/formsanddocuments/create-incident-in-service-now/jcr:content?wcmmode=disabled)
-* 설명 및 설명 필드에 일부 값을 입력하고 인시던트 생성 단추를 누릅니다
-* 새로 만든 인시던트의 인시던트 ID를 텍스트 필드에 채워야 하며 아래 표에는 모든 인시던트가 나열되어 있어야 합니다.
+* 설명 및 설명 필드에 일부 값을 입력하고 문제 생성 버튼을 클릭합니다
+* 새로 만든 인시던트의 인시던트 ID가 텍스트 필드에 채워지고 아래 표에는 모든 인시던트가 나열되어야 합니다.

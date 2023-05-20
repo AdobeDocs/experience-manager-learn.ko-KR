@@ -1,6 +1,6 @@
 ---
-title: DDX 호출 작업을 사용하여 PDF 파일 조합
-description: 필요한 매개 변수로 DDX 엔드포인트를 호출하도록 POST 요청 수행
+title: DDX 호출 작업을 사용하여 PDF 파일 어셈블
+description: 필요한 매개 변수를 사용하여 DDX 끝점 호출을 위한 POST 요청 만들기
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -8,7 +8,8 @@ version: Cloud Service
 feature: Output Service
 topic: Development
 kt: 9980
-source-git-commit: b7ff98dccc1381abe057a80b96268742d0a0629b
+exl-id: 693dac88-84f3-4051-8e46-3105093711a3
+source-git-commit: e925b9fa02dc8d4695b85377c5f7f43fbd45ebc8
 workflow-type: tm+mt
 source-wordcount: '124'
 ht-degree: 0%
@@ -18,8 +19,8 @@ ht-degree: 0%
 # POST 호출 만들기
 
 
-다음 단계는 필요한 매개 변수를 사용하여 엔드포인트에 HTTP POST 호출을 하는 것입니다. DDX 및 pdf 파일은 리소스 파일로 제공됩니다. 끝점에는 토큰 기반 인증이 있으며 요청 헤더에서 액세스 토큰을 전달합니다.
-어셈블러 서비스를 사용하는 경우 DDX(문서 설명 XML)라는 XML 기반 언어를 사용하여 원하는 출력을 설명합니다. DDX는 요소가 문서 구성 요소를 나타내는 선언적 마크업 언어입니다.다음 DDX는 PDF 소스 요소에서 식별된 두 pdf 문서를 병합하는 데 사용됩니다.
+다음 단계는 필요한 매개 변수를 사용하여 끝점에 대한 HTTP POST 호출을 수행하는 것입니다. DDX 및 pdf 파일은 리소스 파일로 제공됩니다. 끝점에 요청 헤더에 액세스 토큰을 전달하는 토큰 기반 인증이 있습니다.
+어셈블러 서비스를 사용하는 경우 DDX(Document Description XML)라는 XML 기반 언어를 사용하여 원하는 출력을 설명합니다. DDX는 문서의 구성 요소를 나타내는 선언적 마크업 언어입니다.다음 DDX는 PDF 소스 요소에서 식별된 두 pdf 문서를 병합하는 데 사용되었습니다.
 
 ```xml
 <DDX xmlns="http://ns.adobe.com/DDX/1.0/">

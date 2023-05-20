@@ -1,6 +1,6 @@
 ---
-title: AEM Assets 컨텐츠 자동화를 사용한 Photoshop 작업
-description: 컨텐츠 작성자가 컨텐츠 자동화 추가 기능으로 Creative Cloud API를 사용하여 AEM Assets 내에서 Photoshop 작업을 수행하는 방법을 알아봅니다.
+title: AEM Assets Content Automation을 사용한 Photoshop 작업
+description: 콘텐츠 작성자가 콘텐츠 자동화 추가 기능과 함께 Creative Cloud API를 사용하여 AEM Assets 내에서 Photoshop 작업을 수행하는 방법에 대해 알아봅니다.
 version: Cloud Service
 topic: Content Management
 feature: Asset Processing, Renditions
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Photoshop 작업
 
-컨텐츠 작성자가 컨텐츠 자동화 추가 기능으로 Creative Cloud API를 사용하여 AEM Assets 내에서 Photoshop 작업을 수행하는 방법을 알아봅니다.
+콘텐츠 작성자가 콘텐츠 자동화 추가 기능과 함께 Creative Cloud API를 사용하여 AEM Assets 내에서 Photoshop 작업을 수행하는 방법에 대해 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336539?quality=12&learn=on)

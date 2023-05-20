@@ -1,5 +1,5 @@
 ---
-title: API를 사용하여 AEM Forms을 사용하여 레코드 문서 생성
+title: API를 사용하여 AEM Forms으로 기록 문서 생성
 description: 프로그래밍 방식으로 DOR(Document Of Record) 생성
 feature: Adaptive Forms
 version: 6.4,6.5
@@ -15,15 +15,15 @@ ht-degree: 1%
 
 ---
 
-# API를 사용하여 AEM Forms에서 레코드 문서 생성 {#using-api-to-generate-document-of-record-with-aem-forms}
+# API를 사용하여 AEM Forms에서 기록 문서 생성 {#using-api-to-generate-document-of-record-with-aem-forms}
 
 프로그래밍 방식으로 DOR(Document Of Record) 생성
 
-이 문서에서는 `com.adobe.aemds.guide.addon.dor.DoRService API` 생성 **기록 문서** 프로그래밍 방식으로 수행할 수 있습니다. [기록 문서](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) 적응형 양식에 캡처된 데이터의 PDF 버전입니다.
+이 문서에서는 `com.adobe.aemds.guide.addon.dor.DoRService API` 생성 **기록 문서** 프로그래밍 방식으로. [기록 문서](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) 는 적응형 양식에 캡처된 데이터의 PDF 버전입니다.
 
-1. 다음은 코드 조각입니다. 첫 번째 줄이 DOR 서비스를 받습니다.
+1. 다음은 코드 조각입니다. 첫 번째 라인은 DOR 서비스를 받습니다.
 1. DoROptions를 설정합니다.
-1. DoRService의 render 메서드를 호출하고 DoROptions 개체를 render 메서드에 전달합니다
+1. DoRService의 렌더링 메서드를 호출하고 DoROptions 개체를 렌더링 메서드에 전달합니다.
 
 ```java
 String dataXml = request.getParameter("data");
@@ -62,23 +62,23 @@ writer.endObject();
 session.save();
 ```
 
-로컬 시스템에서 이 작업을 수행하려면 다음 단계를 수행하십시오
+로컬 시스템에서 시도하려면 다음 단계를 따르십시오
 
-1. [패키지 관리자를 사용하여 문서 자산을 다운로드하여 설치합니다](assets/dor-with-api.zip)
-1. 의 일부로 제공된 DevelopingWithServiceUser 번들을 설치하고 시작했는지 확인하십시오 [서비스 사용자 만들기 문서](service-user-tutorial-develop.md)
+1. [패키지 관리자를 사용하여 문서 에셋 다운로드 및 설치](assets/dor-with-api.zip)
+1. 의 일부로 제공된 DevelopingWithServiceUser 번들을 설치하고 시작했는지 확인하십시오. [서비스 사용자 문서 만들기](service-user-tutorial-develop.md)
 1. [configMgr에 로그인](http://localhost:4502/system/console/configMgr)
-1. Apache Sling Service User Mapper Service 검색
-1. 다음 항목을 확인하십시오 _DevelopingWithServiceUser.core:getformsresourceresolver=fd-service_ 서비스 매핑 섹션에서
-1. [양식을 엽니다.](http://localhost:4502/content/dam/formsanddocuments/sandbox/1201-borrower-payments/jcr:content?wcmmode=disabled)
+1. Apache Sling Service User Mapper 서비스 검색
+1. 다음 항목을 확인하십시오 _DevelopingWithServiceUser.core:getformsresourceresolver=fd-service_ 서비스 매핑 섹션에서 다음을 수행합니다
+1. [양식 열기](http://localhost:4502/content/dam/formsanddocuments/sandbox/1201-borrower-payments/jcr:content?wcmmode=disabled)
 1. 양식을 작성하고 &#39; PDF 보기 &#39; 를 클릭합니다.
-1. 브라우저에 새 탭에 DOR가 표시됩니다
+1. 브라우저의 새 탭에 DOR이 표시됩니다
 
 
 **문제 해결 팁**
 
-PDF이 새 브라우저 탭에 표시되지 않습니다.
+PDF이 새 브라우저 탭에 표시되지 않음:
 
-1. 브라우저에서 팝업을 차단하지 않는지 확인합니다
-1. AEM 서버를 관리자로 시작하는지 확인합니다(최소한 windows에서는).
-1. &#39;DevelopingWithServiceUser&#39; 번들이 *활성 상태*
-1. [시스템 사용자가](http://localhost:4502/useradmin) &#39; fd-service&#39;에는 다음 노드에 대한 읽기, 수정 및 생성 권한이 있습니다 `/content/usergenerated/content/aemformsenablement`
+1. 브라우저에서 팝업을 차단하지 않도록 하십시오
+1. AEM 서버를 관리자(적어도 Windows에서)로 시작하는지 확인하십시오.
+1. &#39;DevelopingWithServiceUser&#39; 번들이 있는지 확인하십시오. *활성 상태*
+1. [시스템 사용자 확인](http://localhost:4502/useradmin) &#39; fd-service&#39;에는 다음 노드에 대한 읽기, 수정 및 만들기 권한이 있습니다. `/content/usergenerated/content/aemformsenablement`

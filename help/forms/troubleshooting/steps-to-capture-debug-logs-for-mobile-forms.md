@@ -1,6 +1,6 @@
 ---
 title: 모바일 양식에 대한 디버그 로그를 캡처하는 절차
-description: Mobile Forms와 관련된 디버깅 문제에 대한 디버그 로그를 구성합니다
+description: 모바일 양식 관련 디버깅 문제에 대한 디버그 로그 구성
 type: Troubleshooting
 role: Admin
 level: Beginner
@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # 모바일 양식에 대한 디버그 로그를 캡처하는 절차
 
-*이 비디오에서는 모바일 양식에 대한 디버그 로그를 캡처하는 단계를 안내합니다.*
+*이 비디오는 모바일 양식에 대한 디버그 로그를 캡처하는 단계를 안내합니다.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335516?quality=12&learn=on)

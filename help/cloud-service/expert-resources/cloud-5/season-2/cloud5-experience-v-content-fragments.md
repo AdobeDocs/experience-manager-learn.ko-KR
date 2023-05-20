@@ -1,6 +1,6 @@
 ---
-title: 클라우드 5 - 경험 및 컨텐츠 조각
-description: 경험 조각과 컨텐츠 조각 간의 차이점에 대한 비교
+title: Cloud 5 - 경험 및 콘텐츠 조각
+description: 와 경험 조각과 콘텐츠 조각 간의 차이점 비교
 version: Cloud Service
 role: Admin, Developer
 level: Intermediate
@@ -17,11 +17,11 @@ ht-degree: 3%
 
 # 클라우드 5 - 조각
 
-경험 조각과 컨텐츠 조각 간의 차이점을 &#39;대&#39;합니다
+비교&#39;는 경험 조각과 콘텐츠 조각 간의 차이점을 고려합니다
 
 >[!VIDEO](https://video.tv.adobe.com/v/342864?quality=12&learn=on)
 
-## 이 비디오에서 다루는 컨텐츠
+## 이 비디오에서 다루는 콘텐츠
 
 + [컨텐츠 조각을 사용한 작업](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments.html)
 + [경험 조각 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html)

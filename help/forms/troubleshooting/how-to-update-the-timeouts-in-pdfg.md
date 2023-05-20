@@ -1,6 +1,6 @@
 ---
-title: PDFG 서비스에서 서버 전환 및 서버 글로벌 시간 제한을 업데이트하는 방법
-description: PDF 생성기에 대한 서버 변환 및 서버 글로벌 시간 초과 구성
+title: PDFG 서비스에서 서버 전환 및 서버 전역 시간 제한을 업데이트하는 방법
+description: PDF 생성기에 대한 서버 전환 및 서버 글로벌 시간 초과 구성
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # PDFG 서비스에서 서버 전환 및 글로벌 시간 제한을 업데이트하는 방법
 
-*이 비디오에서는 Forms PDFG 서비스의 서버 전환 및 서버 글로벌 시간 제한을 업데이트하는 프로세스에 대해 설명합니다.*
+*이 비디오는 Forms PDFG 서비스에서 서버 전환 및 서버 글로벌 시간 제한을 업데이트하는 프로세스에 대해 설명합니다.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335514?quality=12&learn=on)

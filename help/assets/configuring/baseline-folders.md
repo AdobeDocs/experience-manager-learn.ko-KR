@@ -1,6 +1,6 @@
 ---
 title: 기준선 폴더
-description: AEM Assets에서 기준선 폴더를 정의하면 디지털 자산 관리를 위한 탄탄한 컨텐츠 아키텍처와 기반을 구축할 수 있습니다.
+description: AEM Assets에서 기본 폴더를 정의하면 디지털 에셋 관리를 위한 견고한 콘텐츠 아키텍처와 기반을 구축할 수 있습니다.
 feature: Asset Management
 version: Cloud Service
 kt: 4870
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # 기준선 폴더
 
-AEM Assets에서 기준선 폴더를 정의하면 디지털 자산 관리를 위한 탄탄한 컨텐츠 아키텍처와 기반을 구축할 수 있습니다.
+AEM Assets에서 기본 폴더를 정의하면 디지털 에셋 관리를 위한 견고한 콘텐츠 아키텍처와 기반을 구축할 수 있습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/33496?quality=12&learn=on)

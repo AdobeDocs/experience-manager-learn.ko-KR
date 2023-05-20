@@ -1,6 +1,6 @@
 ---
 title: 라이브 카피를 만듭니다
-description: Live Copy 만들기 마법사를 사용하여 블루프린트에서 사이트의 Live Copy 를 만드는 방법을 알아봅니다.
+description: 라이브 카피 만들기 마법사를 사용하여 블루프린트에서 사이트에 대한 라이브 카피를 만드는 방법을 이해합니다.
 feature: Language Copy, Multi Site Manager
 topics: localization, authoring, content-architecture
 audience: all
@@ -22,6 +22,6 @@ ht-degree: 17%
 
 # 라이브 카피를 만듭니다 {#create-livecopy}
 
-Live Copy 만들기 마법사를 사용하여 블루프린트에서 사이트의 Live Copy 를 만드는 방법을 알아봅니다.
+Live Copy 만들기 마법사를 사용하여 블루프린트에서 사이트의 Live Copy를 만드는 방법을 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/36677?quality=12&learn=on)

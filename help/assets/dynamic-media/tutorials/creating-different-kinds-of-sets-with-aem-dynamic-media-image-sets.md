@@ -1,6 +1,6 @@
 ---
 title: AEM Dynamic Media을 사용하여 이미지 세트 만들기
-description: Dynamic Media으로 이미지 세트 구성
+description: Dynamic Media을 사용하여 이미지 세트 구성
 role: Developer
 level: Intermediate
 version: Cloud Service
@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # AEM Dynamic Media을 사용하여 이미지 세트 만들기
 
-이 비디오에서는 AEM Dynamic Media을 사용하여 이미지 세트를 만드는 프로세스를 안내합니다.
+이 비디오는 AEM Dynamic Media을 사용하여 이미지 세트를 만드는 과정을 안내합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335581?quality=12&learn=on)

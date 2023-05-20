@@ -1,6 +1,6 @@
 ---
 title: AEM Assets 비디오 및 자습서
-description: 비디오를 시청하여 AEM 자산 지원 및 지원을 받으십시오.
+description: AEM Asset 지원 및 지원을 받으려면 비디오를 시청하십시오.
 sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 exl-id: 1d0b0183-25ee-4cb4-82a5-3506e7c1c908
@@ -13,7 +13,7 @@ ht-degree: 15%
 
 # AEM Assets 비디오 및 자습서 {#overview}
 
-Adobe Experience Manager(AEM) Assets는 AEM Platform의 디지털 자산 관리 도구로, 사용자가 웹 기반 저장소에서 디지털 자산(이미지, 비디오, 문서 및 오디오 클립)을 만들고, 관리하고 공유할 수 있도록 해줍니다. 이 사용자 안내서에는 AEM Assets의 다양한 기능과 성능에 대한 비디오 및 자습서가 포함되어 있습니다.
+Adobe Experience Manager(AEM) Assets는 사용자가 웹 기반 저장소에서 디지털 에셋(이미지, 비디오, 문서 및 오디오 클립)을 생성하고, 관리하고, 공유할 수 있도록 하는 AEM Platform의 디지털 에셋 관리 툴입니다. 이 사용 안내서에는 AEM Assets의 다양한 기능과 성능에 대한 비디오 및 튜토리얼이 포함되어 있습니다.
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_assets_overview"
@@ -23,7 +23,7 @@ Adobe Experience Manager(AEM) Assets는 AEM Platform의 디지털 자산 관리 
 
 ## AEM Assets 둘러보기
 
-AEM Assets이 무엇인지, 그리고 조직의 비즈니스 목표를 달성하는 데 어떻게 사용될 수 있는지 알아봅니다.
+AEM Assets의 의미와 이를 사용하여 조직의 비즈니스 목표를 달성하는 방법을 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336196?quality=12&learn=on)
 
@@ -45,24 +45,24 @@ AEM Assets이 무엇인지, 그리고 조직의 비즈니스 목표를 달성하
    </a>
    <div>
       <a href="./creative-workflows/aem-desktop-app.md">
-      <strong>AEM 데스크탑 앱 사용</strong>
+      <strong>AEM Desktop App 사용</strong>
       </a>
    </div>
    <p>
-      <em>데스크탑에서 바로 AEM의 자산에 액세스</em>
+      <em>데스크탑에서 직접 AEM의 자산에 액세스</em>
    </p>
 </td>
 <td>
    <a href="./advanced/asset-insights-launch-tutorial.md">
-   <img alt="AEM Assets 통찰력" src="./assets/overview/asset-insights.png"/>
+   <img alt="AEM Assets Insights" src="./assets/overview/asset-insights.png"/>
    </a>
    <div>
       <a href="./advanced/asset-insights-launch-tutorial.md">
-      <strong>Launch에서 AEM 자산 통찰력 사용</strong>
+      <strong>Launch에서 AEM Asset Insights 사용</strong>
       </a>
    </div>
    <p>
-      <em>자산 사용 방법에 대한 통찰력을 얻을 수 있습니다</em>
+      <em>에셋 사용 방법에 대한 통찰력 확보</em>
    <p>
 </td>
 <td>

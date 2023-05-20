@@ -1,6 +1,6 @@
 ---
-title: Cloud Acceleration Manager의 구현 단계
-description: 주요 구현 단계를 검토 및 이해하거나 Cloud Acceleration Manager를 사용하여 AEM as a Cloud Service으로 이동합니다.
+title: Cloud Acceleration Manager 의 구현 단계
+description: 주요 구현 단계 또는 Cloud Acceleration Manager를 사용한 AEMas a Cloud Service 으로의 전환에 대해 검토하고 이해합니다.
 version: Cloud Service
 feature: Migration
 topic: Migration, Upgrade
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Cloud Acceleration Manager의 구현 단계
+# Cloud Acceleration Manager 의 구현 단계
 
-주요 구현 단계를 검토 및 이해하거나 Cloud Acceleration Manager를 사용하여 AEM as a Cloud Service으로 이동합니다.
+주요 구현 단계 또는 Cloud Acceleration Manager를 사용한 AEMas a Cloud Service 으로의 전환에 대해 검토하고 이해합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336691?quality=12&learn=on)

@@ -1,6 +1,6 @@
 ---
-title: 그 과정에 대한 이해도를 테스트하기 위한 간단한 운동
-description: 표에 추가 열을 추가하고 검색 기준에 추가 속성을 추가합니다
+title: 과정에 대한 이해를 테스트하는 간단한 연습
+description: 표에 열을 추가하고 검색 기준에 속성을 추가합니다.
 feature: Adaptive Forms
 type: Documentation
 role: Developer
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # 이해 테스트
 
-이 비디오에 표시된 것처럼 사용 사례를 개선합니다
+이 비디오에 표시된 대로 사용 사례 개선
 
 >[!VIDEO](https://video.tv.adobe.com/v/335800?quality=12&learn=on)
 

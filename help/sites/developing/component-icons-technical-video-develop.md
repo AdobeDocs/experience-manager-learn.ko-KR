@@ -1,6 +1,6 @@
 ---
-title: Adobe Experience Manager Sites의 구성 요소 아이콘 사용자 지정
-description: 구성 요소 아이콘을 사용하면 작성자가 아이콘이나 의미 있는 약자로 구성 요소를 빠르게 식별할 수 있습니다. 이제 작성자가 웹 경험을 보다 빠르게 작성하는 데 필요한 구성 요소를 찾을 수 있습니다.
+title: Adobe Experience Manager Sites에서 구성 요소 아이콘 맞춤화
+description: 구성 요소 아이콘을 사용하면 작성자가 아이콘이나 의미 있는 약어로 구성 요소를 빠르게 식별할 수 있습니다. 이제 작성자가 웹 경험을 더 빠르게 빌드하는 데 필요한 구성 요소를 찾을 수 있습니다.
 topics: components
 audience: administrator, developer
 doc-type: technical video
@@ -18,30 +18,30 @@ ht-degree: 1%
 
 ---
 
-# 구성 요소 아이콘 사용자 지정 {#developing-component-icons-in-aem-sites}
+# 구성 요소 아이콘 사용자 정의 {#developing-component-icons-in-aem-sites}
 
-구성 요소 아이콘을 사용하면 작성자가 아이콘이나 의미 있는 약자로 구성 요소를 빠르게 식별할 수 있습니다. 이제 작성자가 웹 경험을 보다 빠르게 작성하는 데 필요한 구성 요소를 찾을 수 있습니다.
+구성 요소 아이콘을 사용하면 작성자가 아이콘이나 의미 있는 약어로 구성 요소를 빠르게 식별할 수 있습니다. 이제 작성자가 웹 경험을 더 빠르게 빌드하는 데 필요한 구성 요소를 찾을 수 있습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16778?quality=12&learn=on)
 
-이제 구성 요소 브라우저가 일관된 회색 테마에 표시되어 다음을 표시합니다.
+이제 구성 요소 브라우저가 일관된 회색 테마로 표시되어 다음을 표시합니다.
 
 * **[!UICONTROL 구성 요소 그룹]**
 * **[!UICONTROL 구성 요소 제목]**
 * **[!UICONTROL 구성 요소 설명]**
 * **[!UICONTROL 구성 요소 아이콘]**
-   * 구성 요소 제목의 처음 두 문자 *(기본값)*
-   * 사용자 지정 PNG 이미지 *(개발자가 구성)*
-   * 사용자 지정 SVG 이미지 *(개발자가 구성)*
-   * CoralUI 아이콘 *(개발자가 구성)*
+   * 구성 요소 제목의 처음 두 글자 *(기본값)*
+   * 사용자 정의 PNG 이미지 *(개발자에 의해 구성됨)*
+   * 사용자 지정 SVG 이미지 *(개발자에 의해 구성됨)*
+   * CoralUI 아이콘 *(개발자에 의해 구성됨)*
 
 ## 구성 요소 아이콘 구성 옵션 {#component-icon-configuration-options}
 
 ### 약자 {#abbreviations}
 
-기본적으로 구성 요소 제목(**[cq:구성 요소]@jcr:title**)은 약어로 사용됩니다. 예를 들어 **[cq:구성 요소]@jcr:title=문서 목록** 약어는 &quot;**Ar**&quot;.
+기본적으로 구성 요소 제목의 처음 2자(**[cq:Component]@jcr:title**) 를 약어로 사용합니다. 예를 들어 다음과 같습니다. **[cq:Component]@jcr:title=Article 목록** 약어는 &quot;로 표시됩니다&#x200B;**Ar**&quot;.
 
-약어는 **[cq:구성 요소]@abbreviation** 속성을 사용합니다. 이 값은 2자 이상의 문자를 사용할 수 있지만 시각적 외란을 방지하기 위해 약어를 2자로 제한하는 것이 좋습니다.
+다음을 통해 약어를 사용자 지정할 수 있습니다. **[cq:Component]@abbreviation** 속성. 이 값은 2자 이상을 사용할 수 있지만 시각적 방해를 방지하려면 약어를 2자로 제한하는 것이 좋습니다.
 
 ```plain
 /apps/.../components/content/my-component
@@ -51,7 +51,7 @@ ht-degree: 1%
 
 ### CoralUI 아이콘 {#coralui-icons}
 
-AEM에서 제공하는 CoralUI 아이콘은 구성 요소 아이콘에 사용할 수 있습니다. CoralUI 아이콘을 구성하려면 **[cq:구성 요소]@cq:icon** 원하는 CoralUI 아이콘의 HTML 아이콘 속성 값(다음에 열거됨)에 대한 속성 [CoralUI 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html).
+AEM에서 제공하는 CoralUI 아이콘을 구성 요소 아이콘에 사용할 수 있습니다. CoralUI 아이콘을 구성하려면 **[cq:Component]@cq:icon** 속성을 원하는 CoralUI 아이콘의 HTML 아이콘 속성 값에 추가합니다( [CoralUI 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html).
 
 ```plain
 /apps/.../components/content/my-component
@@ -61,11 +61,11 @@ AEM에서 제공하는 CoralUI 아이콘은 구성 요소 아이콘에 사용할
 
 ### PNG 이미지 {#png-images}
 
-구성 요소 아이콘에 PNG 이미지를 사용할 수 있습니다. PNG 이미지를 구성 요소 아이콘으로 구성하려면 원하는 이미지를 **nt:file** 명명된 이름 **cq:icon.png** 아래에 **[cq:구성 요소]**.
+구성 요소 아이콘에 PNG 이미지를 사용할 수 있습니다. PNG 이미지를 구성 요소 아이콘으로 구성하려면 원하는 이미지를 (으)로 추가합니다 **nt:file** 명명된 **cq:icon.png** 다음 아래에 **[cq:Component]**.
 
-PNG의 배경색은 투명 또는 배경색이 **#707070**.
+PNG에는 투명한 배경이 있거나 배경색이 로 설정되어야 합니다. **#707070**.
 
-PNG 이미지의 크기가 **20px x x 20px**. 그러나 망막 디스플레이를 수용하려면 **40px** by **40px** 더 좋을 것 같습니다
+PNG 이미지의 크기는 다음과 같이 조정됩니다. **20px x 20px**. 그러나 retina 디스플레이를 수용하려면 **40픽셀** 작성자: **40픽셀** 더 좋아질지도 모르죠
 
 ```plain
 /apps/.../components/content/my-component
@@ -76,9 +76,9 @@ PNG 이미지의 크기가 **20px x x 20px**. 그러나 망막 디스플레이�
 
 ### SVG 이미지 {#svg-images}
 
-SVG 이미지(벡터 기반)는 구성 요소 아이콘에 사용할 수 있습니다. SVG 이미지를 구성 요소 아이콘으로 구성하려면 원하는 SVG을 **nt:file** 명명된 이름 **cq:icon.svg** 아래에 **[cq:구성 요소]**.
+SVG 이미지(벡터 기반)를 구성 요소 아이콘에 사용할 수 있습니다. SVG 이미지를 구성 요소 아이콘으로 구성하려면 원하는 SVG을 로 추가합니다. **nt:file** 명명된 **cq:icon.svg** 다음 아래에 **[cq:Component]**.
 
-SVG 이미지에는 배경색이 **#707070** 그리고 **20px x x 20px.**
+SVG 이미지의 배경색은 로 설정되어야 합니다. **#707070** 및 크기 **20px x 20px.**
 
 ```plain
 /apps/.../components/content/my-component

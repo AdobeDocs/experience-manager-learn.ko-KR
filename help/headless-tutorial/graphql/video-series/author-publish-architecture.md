@@ -1,6 +1,6 @@
 ---
-title: AEM GraphQL을 사용한 작성자 및 게시 아키텍처
-description: AEM GraphQL API를 사용할 때 AEM 작성자 및 게시 환경을 활용하는 방법 및 시기를 알아봅니다.
+title: AEM GraphQL을 사용한 Author 및 Publish 아키텍처
+description: AEM GraphQL API를 사용할 때 AEM Author 및 Publish 환경을 활용하는 방법과 시기를 알아봅니다.
 version: Cloud Service
 topic: Headless, Content Management
 feature: Content Fragments, GraphQL API
@@ -17,13 +17,13 @@ ht-degree: 0%
 
 ---
 
-# 작성 및 게시 아키텍처
+# Author 및 Publish 아키텍처
 
-AEM GraphQL API를 사용할 때 AEM 작성자 및 게시 환경을 활용하는 방법 및 시기를 알아봅니다.
+AEM GraphQL API를 사용할 때 AEM Author 및 Publish 환경을 활용하는 방법과 시기를 알아봅니다.
 
-이 비디오에서는 다음 작업을 수행합니다.
+이 비디오에서는 다음을 수행합니다.
 
-+ AEM 작성자 및 게시 아키텍처와 컨텐츠가 게시되는 방식을 이해합니다
-+ AEM 게시 환경을 사용한 헤드리스 게재에 대한 우수 사례를 알아봅니다
++ AEM Author 및 Publish 아키텍처, 콘텐츠 게시 방법 이해
++ AEM 게시 환경을 사용한 Headless 전달에 대한 모범 사례 알아보기
 
 >[!VIDEO](https://video.tv.adobe.com/v/333296?quality=12&learn=on)

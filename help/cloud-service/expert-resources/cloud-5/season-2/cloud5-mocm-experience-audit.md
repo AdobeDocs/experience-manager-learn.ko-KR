@@ -1,6 +1,6 @@
 ---
-title: 클라우드 5 - Cloud Manager의 미스터리 - Experience Auditor
-description: Cloud Manager 검토 및 Experience Audit 기능 검토
+title: Cloud 5 - Cloud Manager의 미스터리 - 경험 감사
+description: Cloud Manager 검사 및 경험 감사 기능 자세히 살펴보기
 version: Cloud Service
 role: Admin, Developer
 level: Intermediate
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 ---
 
-# 클라우드 5 - Cloud Manager의 미스터리 - Experience Auditor
+# Cloud 5 - Cloud Manager의 미스터리 - 경험 감사
 
-세 부분으로 구성된 시리즈 중 하나에서 Cloud Manager의 기본 사항을 살펴보고 Experience Audit 기능에 집중합니다.
+세 부분으로 구성된 시리즈 중 첫 번째 부분에서 Cloud Manager의 기본 사항에 대해 알아보고 경험 감사 기능에 초점을 맞춥니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/343620?quality=12&learn=on)
 
-## 이 비디오에서 다루는 컨텐츠
+## 이 비디오에서 다루는 콘텐츠
 
 + Cloud Manager 개요
-+ 인터페이스 숙지화
++ 인터페이스 친숙도

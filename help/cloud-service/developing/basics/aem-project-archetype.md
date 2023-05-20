@@ -1,6 +1,6 @@
 ---
 title: AEM Maven Project Archetype을 사용하여 AEM 프로젝트를 만드는 방법
-description: AEM Maven 프로젝트 원형을 사용하여 새 AEM 애플리케이션 프로젝트를 만들어 모범 사례에 맞게 AEM 개발 시작을 가속화하는 방법을 알아봅니다.
+description: AEM Maven Project Archetype을 사용하여 새 AEM 애플리케이션 프로젝트를 만들어 모범 사례에 맞추고 AEM 개발을 가속화하는 방법에 대해 알아봅니다.
 role: Developer
 level: Beginner
 type: Tutorial
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# AEM 프로젝트 원형 을 사용하여 AEM 프로젝트 만들기
+# AEM project archetype을 사용하여 AEM 프로젝트 만들기
 
-AEM Maven 프로젝트 원형을 사용하여 새 AEM 애플리케이션 프로젝트를 만들어 모범 사례에 맞게 AEM 개발 시작을 가속화하는 방법을 알아봅니다.
+AEM Maven Project Archetype을 사용하여 새 AEM 애플리케이션 프로젝트를 만들어 모범 사례에 맞추고 AEM 개발을 가속화하는 방법에 대해 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330551?quality=12&learn=on)

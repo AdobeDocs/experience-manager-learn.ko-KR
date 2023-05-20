@@ -1,6 +1,6 @@
 ---
 title: Git 설치 및 설정
-description: 로컬 Git 리포지토리 초기화
+description: 로컬 git 저장소 초기화
 solution: Experience Manager
 type: Documentation
 role: Developer
@@ -20,40 +20,40 @@ ht-degree: 0%
 
 
 [Git 설치](https://git-scm.com/downloads). 기본 설정을 선택하고 설치 프로세스를 완료할 수 있습니다.
-명령 프롬프트에서 c:\cloudmanager\aem-banking-app type in git —version으로 이동합니다. 시스템에 설치된 GIT 버전이 표시됩니다
+명령 프롬프트로 이동 git —version에서 c:\cloudmanager\aem-banking-app type으로 이동합니다. 시스템에 설치된 GIT 버전이 표시됩니다
 
-## 로컬 Git 리포지토리 초기화
+## 로컬 Git 저장소 초기화
 
-c:\cloudmanager\aem-banking-app folder폴더에 있는지 확인하십시오.
+c:\cloudmanager\aem-banking-app 폴더에 있는지 확인합니다.
 
 ```
 git init
 ```
 
-위의 명령은 프로젝트를 git 로컬 리포지토리로 초기화합니다
+위의 명령은 프로젝트를 git 로컬 저장소로 초기화합니다.
 
 ```
 git add .
 ```
 
-이렇게 하면 모든 프로젝트 파일이 Git 리포지토리에 커밋될 준비가 된 git 리포지토리에 추가됩니다
+이렇게 하면 git 저장소에 커밋할 준비가 된 git 저장소에 모든 프로젝트 파일이 추가됩니다
 
 ```
 git commit -m "initial commit"
 ```
 
-이렇게 하면 파일이 Git 리포지토리에 커밋됩니다
+이렇게 하면 파일이 git 저장소에 커밋됩니다
 
 
 
-## 로컬 Git 리포지토리에 클라우드 관리자 리포지토리 등록
+## 로컬 Git 저장소에 Cloud Manager 저장소 등록
 
-클라우드 관리자 리포지토리 액세스
-![rep 정보에 액세스](assets/cloud-manager-repo.png)
-클라우드 관리자 리포지토리 자격 증명 가져오기
-![getCredentials](assets/cloud-manager-repo1.png)
+Cloud Manager 저장소 액세스
+![담당자 정보 액세스](assets/cloud-manager-repo.png)
+Cloud Manager 저장소 자격 증명 가져오기
+![get-credentials](assets/cloud-manager-repo1.png)
 
-구성 파일에 사용자 이름을 저장합니다
+구성 파일에 사용자 이름 저장
 
 ```java
 git config --global credential.username "gbedekar-adobe-com"
@@ -65,18 +65,18 @@ git config --global credential.username "gbedekar-adobe-com"
 git config --global user.password "XXXX"
 ```
 
-(암호는 cloud manager git 리포지토리 암호입니다.)
+(암호는 cloud manager git 저장소 암호입니다)
 
-로컬 Git 리포지토리에 클라우드 관리자 git 리포지토리를 등록합니다. 아래 명령은 다음과 같습니다 **뱅킹앱** 원격 cloud manager git 리포지토리 사용. 대신 모든 이름을 사용할 수 있었습니다. **뱅킹앱**
+Cloud Manager git 저장소를 로컬 git 저장소에 등록합니다. 아래 명령은 연결됩니다 **뱅킹 앱** 원격 cloud manager git 저장소를 사용합니다. 대신 모든 이름을 사용할 수 있습니다. **뱅킹 앱**
 
 
 ```shell
 git remote add bankingapp https://git.cloudmanager.adobe.com/<cloud-manager-repo-path>
 ```
 
-(저장소 URL을 사용하는지 확인합니다.)
+(저장소 URL을 사용해야 합니다.)
 
-원격 저장소가 등록되어 있는지 확인합니다
+원격 저장소가 등록되어 있는지 확인
 
 ```java
 git remote -v

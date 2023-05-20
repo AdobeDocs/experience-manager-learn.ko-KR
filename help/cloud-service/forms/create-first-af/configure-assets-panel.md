@@ -1,6 +1,6 @@
 ---
-title: 자산 패널 구성
-description: 아코디언 레이아웃 패널을 자산 패널에 추가합니다.
+title: 에셋 패널 구성
+description: 에셋 패널에 아코디언 레이아웃 패널을 추가합니다.
 solution: Experience Manager,Experience Manager Forms
 type: Documentation
 role: Developer
@@ -18,8 +18,8 @@ ht-degree: 0%
 
 ---
 
-# 자산 패널 구성
+# 에셋 패널 구성
 
-아코디언 레이아웃으로 반복 가능한 패널을 사용하여 지원자의 자산을 캡처합니다.
+아코디언 레이아웃이 있는 반복 가능 패널을 사용하여 신청자의 에셋을 캡처합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336473?quality=12&learn=on)

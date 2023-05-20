@@ -1,6 +1,6 @@
 ---
 title: AEM Maven 프로젝트의 구조에 대해 알아봅니다.
-description: AEM Maven 프로젝트의 구조 및 하위 프로젝트를 이해합니다.
+description: AEM Maven 프로젝트의 구조 및 하위 프로젝트를 이해할 수 있습니다.
 role: Developer
 level: Beginner
 topic: Development
@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # AEM Maven 프로젝트 구조
 
-AEM Maven 프로젝트의 구조 및 하위 프로젝트와 이 프로젝트가 사용되는 항목에 대한 빠른 검토입니다.
+AEM Maven 프로젝트의 구조 및 하위 프로젝트와 이들 프로젝트의 용도에 대해 간략히 살펴봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/334280?quality=12&learn=on)

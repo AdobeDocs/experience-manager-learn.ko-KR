@@ -1,6 +1,6 @@
 ---
 title: 작업 리뷰
-description: AEM Assets의 검토 작업 을 통해 가장 일반적인 검토 및 승인 워크플로우를 간소화하는 방법을 살펴볼 수 있습니다.
+description: AEM Assets의 검토 작업이 가장 일반적인 검토 및 승인 워크플로를 용이하게 하는 방법을 살펴봅니다.
 sub-product: Experience Manager Assets
 feature: Collaboration
 version: Cloud Service
@@ -19,6 +19,6 @@ ht-degree: 12%
 
 # 작업 리뷰
 
-AEM Assets의 검토 작업 을 통해 가장 일반적인 검토 및 승인 워크플로우를 간소화하는 방법을 살펴볼 수 있습니다.
+AEM Assets의 검토 작업이 가장 일반적인 검토 및 승인 워크플로를 용이하게 하는 방법을 살펴봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32050?quality=12&learn=on)

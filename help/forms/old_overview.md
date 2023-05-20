@@ -13,21 +13,21 @@ ht-degree: 8%
 
 # AEM Forms Tutorials 및 비디오 {#overview}
 
-Adobe Experience Manager(AEM)은 백엔드 프로세스, 비즈니스 규칙 및 데이터와 통합하면서도 복잡한 디지털 양식을 작성, 관리, 게시 및 업데이트하는 사용하기 쉬운 솔루션을 제공합니다. 이 사용자 안내서에는 AEM Forms의 다양한 기능과 성능에 대한 비디오 및 자습서가 포함되어 있습니다
+Adobe Experience Manager(AEM)는 백엔드 프로세스, 비즈니스 규칙 및 데이터와 통합하면서도 복잡한 디지털 양식을 쉽게 생성, 관리, 게시 및 업데이트할 수 있는 솔루션을 제공합니다. 이 사용 안내서에는 AEM Forms의 다양한 기능과 성능에 대한 비디오 및 자습서가 포함되어 있습니다
 
 ## 새로운 기능
 
-* **[양식 데이터 모델 호출 서비스 단계의 오류 메시지 처리](./adaptive-forms/handling-error-messages-in-invoke-fdm-step.md)**
+* **[양식 데이터 모델 서비스 호출 단계에서 오류 메시지 처리](./adaptive-forms/handling-error-messages-in-invoke-fdm-step.md)**
 
-   *워크플로우 모델의 변수는 데이터 유형을 기반으로 값을 저장하는 방법입니다*
+   *워크플로우 모델의 변수는 해당 데이터 유형을 기반으로 값을 저장하는 방법입니다*
 
 * **[대화형 통신 문서의 다중 시리즈 차트(비디오)](./interactive-communications/multiseriescharts.md)**
 
-   *동일한 차트에 둘 이상의 시리즈를 플롯합니다. 여러 시리즈 차트는 일반적으로 라인, 막대, 열 차트 유형과 연관되어 사용됩니다.*
+   *동일한 차트에 둘 이상의 시리즈를 표시합니다. 여러 계열 차트는 일반적으로 선, 막대, 열 차트 유형과 관련하여 사용됩니다.*
 
 * **[재사용 가능한 워크플로우 모델 만들기](./adaptive-forms/re-usable-aem-forms-workflow-models-article.md)**
 
-   *특정 양식에 연결되어 있지 않은 워크플로우 모델 만들기*
+   *특정 양식에 연결되지 않은 워크플로 모델 만들기*
 
 ## 직원 추천
 
@@ -43,7 +43,7 @@ Adobe Experience Manager(AEM)은 백엔드 프로세스, 비즈니스 규칙 및
     </a>
     </div>
     <p>
-    <em>적응형 양식은 동적이고 반응형 양식입니다. 적응형 양식을 사용하여 개인화된 경험을 제공할 수 있습니다</em>
+    <em>적응형 양식은 동적이고 반응형 차세대 양식입니다. 적응형 양식을 사용하여 개인화된 경험을 전달할 수 있습니다</em>
     <p>
   </td>
    <td>
@@ -69,7 +69,7 @@ Adobe Experience Manager(AEM)은 백엔드 프로세스, 비즈니스 규칙 및
     </a>
     </div>
     <p>
-    <em>양식 데이터 모델의 서비스를 AEM Workflow의 한 단계로 호출</em>
+    <em>양식 데이터 모델의 서비스를 AEM Workflow의 단계로 호출</em>
     <p>
   </td>
 </tr>
@@ -77,7 +77,7 @@ Adobe Experience Manager(AEM)은 백엔드 프로세스, 비즈니스 규칙 및
 
 >[!TIP]
 >
->AEM Forms의 다양한 기능을 보여주는 이 샘플 모음입니다.
+>이 샘플 컬렉션은 AEM Forms의 다양한 기능을 보여 줍니다.
 
 
 ## 적응형 양식 샘플
@@ -86,7 +86,7 @@ Adobe Experience Manager(AEM)은 백엔드 프로세스, 비즈니스 규칙 및
 <tr>
   <td>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html">
-      <img alt= "AEM Forms의 캡처" src="./assets/captcha1.png" />
+      <img alt= "AEM Forms의 캡치" src="./assets/captcha1.png" />
     </a>
     <div>
       <a href="https://forms.enablementadobe.com/content/forms/af/registerfornewsletter.html">
@@ -94,7 +94,7 @@ Adobe Experience Manager(AEM)은 백엔드 프로세스, 비즈니스 규칙 및
     </a>
     </div>
     <p>
-    <em> 양식에 대한 인간과 자동 액세스 구분</em>
+    <em> 양식에 대한 수동 액세스와 자동 액세스 구분</em>
     <p>
   </td>
   <td>
@@ -140,7 +140,7 @@ Adobe Experience Manager(AEM)은 백엔드 프로세스, 비즈니스 규칙 및
     </a>
     </div>
     <p>
-    <em>AEM Forms과 Acrobat Sign을 사용하여 임차인과 임대인 간의 임대 계약을 작성하고 서명</em>
+    <em>임차인과 임대인 간 임대차계약서를 작성해 AEM Forms, Acrobat Sign 등을 이용해 체결했다</em>
     <p>
   </td>
   <td>
@@ -149,11 +149,11 @@ Adobe Experience Manager(AEM)은 백엔드 프로세스, 비즈니스 규칙 및
     </a>
     <div>
     <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/ndawizard/jcr:content?wcmmode=disabled">
-    <strong>비공개 계약 생성</strong>
+    <strong>기밀 유지 계약 생성</strong>
     </a>
     </div>
     <p>
-    <em>Acrobat Sign을 사용하여 동적으로 NDA를 만들고 서명을 위해 보냅니다.</em>
+    <em>동적으로 NDA를 작성하고 Acrobat Sign을 사용하여 서명용으로 전송</em>
     </p>
   </td>
   <td>
@@ -177,7 +177,7 @@ Adobe Experience Manager(AEM)은 백엔드 프로세스, 비즈니스 규칙 및
 
 ## 추가 리소스
 
-* [Experience League - AEM 살펴보기](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
+* [Experience League - AEM 탐색](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
 * [AEM Sites 작성 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html)
 * [AEM Sites 개발 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html)
 * [AEM Sites 관리 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/administering/home.html)

@@ -1,6 +1,6 @@
 ---
-title: Live Copy와 Live Copy의 블루프린트 간의 관계를 파악합니다
-description: 다음 비디오에서는 Live Copy가 AEM Sites의 블루프린트와 어떻게 관련되는지를 설명합니다.
+title: 라이브 카피와 블루프린트 간의 관계 이해
+description: 다음 비디오에서는 라이브 카피가 AEM Sites의 블루프린트와 어떻게 관련되어 있는지 설명합니다.
 feature: Language Copy, Multi Site Manager
 topics: localization, authoring, content-architecture
 audience: all
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ---
 
-# Live Copy 및 파란색 인쇄 {#livecopy-blueprint}
+# Live Copy 및 블루프린트 {#livecopy-blueprint}
 
 AEM Sites의 Live Copy와 블루프린트 간의 관계를 파악합니다.
 

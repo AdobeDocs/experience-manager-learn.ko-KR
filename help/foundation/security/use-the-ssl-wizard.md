@@ -1,6 +1,6 @@
 ---
 title: AEM에서 SSL 마법사 사용
-description: Adobe Experience Manager의 SSL 설정 마법사를 사용하여 HTTPS에서 실행할 AEM 인스턴스를 쉽게 설정할 수 있습니다.
+description: HTTPS를 통해 실행할 AEM 인스턴스를 더 쉽게 설정할 수 있는 Adobe Experience Manager의 SSL 설정 마법사.
 seo-description: Adobe Experience Manager's SSL setup wizard to make it easier to set up an AEM instance to run over HTTPS.
 version: 6.4, 6.5
 topics: security, operations
@@ -22,25 +22,25 @@ ht-degree: 0%
 
 # AEM에서 SSL 마법사 사용
 
-Adobe Experience Manager의 SSL 설정 마법사를 사용하여 HTTPS에서 실행할 AEM 인스턴스를 쉽게 설정할 수 있습니다.
+HTTPS를 통해 실행할 AEM 인스턴스를 더 쉽게 설정할 수 있는 Adobe Experience Manager의 SSL 설정 마법사.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17993?quality=12&learn=on)
 
-를 엽니다. __SSL 구성 마법사__ 로 이동하여 직접 열 수 있습니다. __AEM 작성자 > 도구 > 보안 > SSL 구성__.
+를 엽니다. __SSL 구성 마법사__ 로 이동하여 바로 열 수 있음 __AEM 작성자 > 도구 > 보안 > SSL 구성__.
 
 >[!NOTE]
 >
->관리 환경의 경우 IT 부서에서 CA 보안 인증서 및 키를 제공하는 것이 가장 좋습니다.
+>관리되는 환경의 경우 IT 부서에서 CA 보안 인증서 및 키를 제공하는 것이 가장 좋습니다.
 >
 >자체 서명된 인증서는 개발 목적으로만 사용됩니다.
 
 ## 개인 키 및 자체 서명된 인증서 다운로드
 
-다음 zip에는 다음이 포함됩니다 [!DNL DER] 및 [!DNL CRT] localhost에서 AEM SSL을 설정하는 데 필요한 파일이며 로컬 개발용으로만 사용됩니다.
+다음 zip에는 [!DNL DER] 및 [!DNL CRT] localhost에서 AEM SSL을 설정하는 데 필요하고 로컬 개발 목적으로만 사용되는 파일입니다.
 
-다음 [!DNL DER] 및 [!DNL CERT] 편의를 위해 파일이 제공되며 아래의 개인 키 및 자체 서명된 인증서 생성 섹션에 설명된 단계를 사용하여 생성됩니다.
+다음 [!DNL DER] 및 [!DNL CERT] 파일은 편의상 제공되며, 아래의 개인 키 및 자체 서명된 인증서 생성 섹션에 설명된 단계를 따라 생성됩니다.
 
-필요한 경우 인증서 암호문은 **관리**.
+필요한 경우 인증서 암호는 입니다. **admin**.
 
 localhost - 개인 키 및 자체 서명된 certificate.zip(2028년 7월 만료)
 
@@ -48,7 +48,7 @@ localhost - 개인 키 및 자체 서명된 certificate.zip(2028년 7월 만료)
 
 ## 개인 키 및 자체 서명된 인증서 생성
 
-위의 비디오에서는 자체 서명된 인증서를 사용하는 AEM 작성자 인스턴스에서 SSL의 설정 및 구성을 설명합니다. 아래 명령은 [[!DNL OpenSSL]](https://www.openssl.org/) 마법사의 2단계에서 사용할 개인 키 및 인증서를 생성할 수 있습니다.
+위의 비디오는 자체 서명된 인증서를 사용하는 AEM 작성자 인스턴스에 대한 SSL의 설정 및 구성을 보여 줍니다. 아래 명령은 [[!DNL OpenSSL]](https://www.openssl.org/) 은 마법사의 2단계에서 사용할 개인 키 및 인증서를 생성할 수 있습니다.
 
 ```shell
 ### Create Private Key

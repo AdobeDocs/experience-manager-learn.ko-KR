@@ -1,6 +1,6 @@
 ---
 title: 양식 데이터 저장
-description: 데이터베이스에 새로운 첨부 파일 맵과 함께 양식 데이터 저장
+description: 데이터베이스에 새 첨부 파일 맵과 함께 양식 데이터 저장
 feature: Adaptive Forms
 type: Tutorial
 version: 6.4,6.5
@@ -19,14 +19,14 @@ ht-degree: 2%
 
 # 양식 데이터 저장
 
-다음 단계는 적응형 양식 데이터 및 관련 첨부 파일 정보를 저장할 새 행을 데이터베이스에 삽입하는 서비스를 만드는 것입니다.
-다음 스크린샷은 데이터베이스의 행을 보여줍니다.
+다음 단계는 적응형 양식 데이터 및 관련 첨부 파일 정보를 저장하기 위해 데이터베이스에 새 행을 삽입하는 서비스를 만드는 것입니다.
+다음 스크린샷은 데이터베이스의 행을 보여 줍니다.
 
 
 ![샘플 행](assets/sample-row.JPG)
 
 
-다음 코드는 적절한 데이터를 사용하여 데이터베이스에 새 행을 삽입합니다
+다음 코드는 적절한 데이터가 있는 새 행을 데이터베이스에 삽입합니다
 
 ```java
 public String storeFormData(String formData, String attachmentsInfo, String telephoneNumber) {

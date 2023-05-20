@@ -1,6 +1,6 @@
 ---
-title: Workfront Enhanced Connector 프로젝트 폴더
-description: Adobe Workfront 및 Experience Manager Assets Enhanced Connector 사용 시 프로젝트 폴더에 대해 알아봅니다.
+title: Workfront 강화 커넥터 프로젝트 폴더
+description: Adobe Workfront 및 Experience Manager Assets 강화 커넥터를 사용할 때 프로젝트 폴더에 대해 알아봅니다.
 version: Cloud Service
 topic: Content Management, Integrations
 role: Admin, User
@@ -16,9 +16,9 @@ ht-degree: 0%
 
 ---
 
-# Workfront 향상된 커넥터 프로젝트 폴더
+# Workfront 강화 커넥터 프로젝트 폴더
 
-Adobe Workfront 및 Experience Manager Assets 고급 커넥터를 사용할 때 다음과 같은 프로젝트 폴더에 대해 알아봅니다.
+다음을 포함하여 Adobe Workfront 및 Experience Manager Assets 강화 커넥터를 사용할 때 프로젝트 폴더에 대해 알아봅니다.
 
 + 프로젝트 연결 폴더
 + 폴더 메타데이터 매핑

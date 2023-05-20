@@ -1,6 +1,6 @@
 ---
 title: AEM Forms과 연결 데이터 모델 사용
-description: 양식 데이터 모델의 엔티티 간 연결 추가
+description: 양식 데이터 모델에서 엔티티 간 연결 추가
 feature: Adaptive Forms, Form Data Model
 version: 6.4,6.5
 topic: Development
@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # AEM Forms과 연결 데이터 모델 사용{#using-association-data-models-with-aem-forms}
 
-양식 데이터 모델에서 두 엔터티 간의 연결 만들기
+양식 데이터 모델에서 두 엔티티 간 연결 만들기
 
 >[!VIDEO](https://video.tv.adobe.com/v/17737?quality=12&learn=on)

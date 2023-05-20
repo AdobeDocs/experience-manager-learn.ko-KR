@@ -16,12 +16,12 @@ ht-degree: 0%
 
 ---
 
-# DDX 호출 끝점을 사용하여 PDF 파일을 조작합니다.
+# DDX 끝점 호출을 사용하여 PDF 파일 조작
 
 
-다음 단계는 필요한 매개 변수를 사용하여 엔드포인트에 HTTP POST 호출을 하는 것입니다. 템플릿 및 데이터 파일은 리소스 파일로 제공됩니다. 생성된 pdf의 속성은 요청에 있는 옵션의 매개 변수를 통해 지정됩니다.property embedFonts는 생성된 pdf에 사용자 정의 글꼴을 포함하는 데 사용됩니다. 따라오세요 [이 설명서](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-set-up.html) Forms 클라우드 인스턴스에 사용자 지정 글꼴을 배포하려면 다음을 수행하십시오. 속성은 options.json 리소스 파일에 지정됩니다. 따라서 엔드포인트에는 토큰 기반 인증이 있으므로 요청 헤더에서 액세스 토큰을 전달합니다.
+다음 단계는 필요한 매개 변수를 사용하여 끝점에 대한 HTTP POST 호출을 수행하는 것입니다. 템플릿과 데이터 파일은 리소스 파일로 제공됩니다. 생성된 pdf의 속성은 요청의 옵션 매개 변수를 통해 지정됩니다. embedFonts 속성은 생성된 pdf에 사용자 정의 글꼴을 포함하는 데 사용됩니다. 팔로우하십시오 [이 설명서](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-set-up.html) Forms 클라우드 인스턴스에 사용자 정의 글꼴을 배포하려면 속성은 options.json 리소스 파일에 지정됩니다. 따라서 끝점에는 요청 헤더에 액세스 토큰을 전달하는 토큰 기반 인증이 있습니다.
 
-다음 코드는 데이터를 템플릿에 병합하여 pdf를 생성하는 데 사용되었습니다
+다음 코드는 데이터를 템플릿과 병합하여 pdf를 생성하는 데 사용되었습니다
 
 ```java
 public class DocumentGeneration

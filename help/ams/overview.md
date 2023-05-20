@@ -1,17 +1,18 @@
 ---
 title: Adobe Experience Manager Managed Services 자습서
-description: Adobe Experience Manager(AEM) Managed Services을 위한 자습서 모음입니다
+description: Adobe Experience Manager(AEM) Managed Services에 대한 자습서 모음입니다
 sub-product: Adobe Managed Services
-source-git-commit: 3bc3a0f38d97c9dbe4428686a46d281d7567f627
+exl-id: 4c893ed2-fe0c-4f92-b5fc-c1dc38dd95d4
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '38'
-ht-degree: 28%
+ht-degree: 23%
 
 ---
 
 # AEM Managed Services 자습서 {#overview}
 
-AEM Managed Services은
+AEM Managed Services은 ...
 
 <div id="whats-new-section">
 

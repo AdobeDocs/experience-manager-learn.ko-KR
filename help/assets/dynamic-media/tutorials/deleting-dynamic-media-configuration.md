@@ -1,6 +1,6 @@
 ---
 title: AEM Dynamic Media 구성 삭제
-description: AEM Assets에서 AEM Dynamic Media 구성을 삭제하는 절차.
+description: AEM Assets에서 AEM Dynamic Media 구성을 삭제하는 절차입니다.
 role: Developer
 level: Intermediate
 version: Cloud Service
@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # AEM Dynamic Media 구성 삭제
 
-이 비디오에서는 AEM Dynamic Media 구성을 삭제하는 단계를 안내합니다.
+이 비디오는 AEM Dynamic Media 구성을 삭제하는 단계를 안내합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335363?quality=12&learn=on)

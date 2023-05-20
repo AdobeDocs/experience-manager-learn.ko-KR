@@ -1,6 +1,6 @@
 ---
 title: AEM 아키텍처 스택 소개
-description: Adobe Experience Manager의 기술 스택의 일부로서 OSGi, JCR, Oak 및 Sling의 기술을 소개합니다.
+description: Adobe Experience Manager의 기술 스택에 포함된 OSGi, JCR, Oak 및 Sling의 기술을 소개합니다.
 topics: architecture
 audience: administrator, developer
 doc-type: technical video
@@ -21,6 +21,6 @@ ht-degree: 0%
 
 # AEM 아키텍처 스택 소개 {#introduction-architecture}
 
-기술 소개 [!DNL OSGi], [!DNL JCR], [!DNL Oak], 및 [!DNL Sling] Adobe Experience Manager의 기술 스택의 일부로서.
+의 기술 소개 [!DNL OSGi], [!DNL JCR], [!DNL Oak], 및 [!DNL Sling] Adobe Experience Manager의 기술 스택에 포함되었습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32034?quality=12&learn=on)

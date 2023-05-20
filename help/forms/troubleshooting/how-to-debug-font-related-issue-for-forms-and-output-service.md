@@ -1,6 +1,6 @@
 ---
-title: Forms 및 출력 서비스 전환과 관련된 글꼴을 디버깅하는 방법
-description: Forms 및 출력 서비스의 관련 문제를 디버깅하는 절차
+title: Forms 및 출력 서비스 전환과 관련된 글꼴 문제를 디버깅하는 방법
+description: Forms 및 출력 서비스의 글꼴 관련 문제를 디버깅하는 절차
 type: Troubleshooting
 role: Developer
 level: Intermediate
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Forms 및 출력 서비스 전환과 관련된 글꼴을 캡처하여 디버깅하는 방법
+# 담보를 캡처하여 Forms 및 출력 서비스 전환에 관련된 글꼴 문제를 디버깅하는 방법
 
-*이 비디오에서는 Forms 및 출력 서비스 전환과 관련된 글꼴을 디버깅하기 위해 콜러를 캡처하는 프로세스를 안내합니다.*
+*이 비디오에서는 보충 자료를 캡처하여 Forms 및 출력 서비스 전환 관련 문제를 디버깅하는 과정을 안내합니다.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335487?quality=12&learn=on)

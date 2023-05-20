@@ -1,5 +1,5 @@
 ---
-title: Adobe Experience Manager Forms을 Cloud Service으로 Document Cloud과 통합
+title: Adobe Experience Manager Forms을 Cloud Service과 Document Cloud 통합
 description: Document Cloud REST API를 사용하여 PDF 만들기
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
@@ -19,6 +19,6 @@ ht-degree: 2%
 
 # 소개
 
-Adobe Experience Manager Forms as a Cloud Service 및 Document Cloud API를 통합하는 사용 사례를 소개합니다.
+Adobe Experience Manager Forms as a Cloud Service 및 Document Cloud API 통합을 위한 사용 사례를 소개합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333241?quality=12&learn=on)

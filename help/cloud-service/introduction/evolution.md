@@ -1,6 +1,6 @@
 ---
 title: AEM as a Cloud Service의 발전
-description: AEM의 내역과 온-프레미스 AEM, Adobe Managed Services AEM 및 AEM의 차이점as a Cloud Service을 살펴봅니다.
+description: AEM의 기록과 온-프레미스 AEM, Adobe Managed Services AEM 및 AEM as a Cloud Service 간의 차이점을 살펴봅니다.
 role: Architect, Developer
 level: Beginner
 type: Tutorial
@@ -18,6 +18,6 @@ ht-degree: 24%
 
 # AEM as a Cloud Service의 발전
 
-AEM의 내역과 온-프레미스 AEM, Adobe Managed Services AEM 및 AEM의 차이점as a Cloud Service을 살펴봅니다.
+AEM의 기록과 온-프레미스 AEM, Adobe Managed Services AEM 및 AEM as a Cloud Service 간의 차이점을 살펴봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330543?quality=12&learn=on)

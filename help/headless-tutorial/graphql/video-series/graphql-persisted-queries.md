@@ -1,6 +1,6 @@
 ---
 title: GraphQL 지속 쿼리
-description: AEM에서 지속되는 쿼리를 활성화, 만들기, 업데이트 및 실행하는 방법을 알아봅니다.
+description: AEM에서 지속 쿼리를 활성화하고 만들고 업데이트하고 실행하는 방법에 대해 알아봅니다.
 version: Cloud Service
 topic: Headless, Content Management
 feature: GraphQL API
@@ -19,12 +19,12 @@ ht-degree: 10%
 
 # GraphQL 지속 쿼리
 
-AEM에서 지속되는 쿼리를 활성화, 만들기, 업데이트 및 실행하는 방법을 알아봅니다.
+AEM에서 지속 쿼리를 활성화하고 만들고 업데이트하고 실행하는 방법에 대해 알아봅니다.
 
-이 비디오에서는 다음 작업을 수행합니다.
+이 비디오에서는 다음을 수행합니다.
 
-+ GraphQL 지속적인 쿼리를 활성화하는 방법을 알아봅니다
-+ GraphQL 쿼리를 만들고, 업데이트하고, 실행하는 방법을 알아봅니다
-+ 클라이언트측 쿼리를 통한 지속적인 쿼리의 이점 이해
++ GraphQL 지속 쿼리를 활성화하는 방법 알아보기
++ GraphQL 쿼리를 만들고, 업데이트하고, 실행하는 방법 알아보기
++ 클라이언트측 쿼리에 대한 지속 쿼리의 이점 이해
 
 >[!VIDEO](https://video.tv.adobe.com/v/333429?quality=12&learn=on)

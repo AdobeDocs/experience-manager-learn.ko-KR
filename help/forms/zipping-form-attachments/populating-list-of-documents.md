@@ -1,6 +1,6 @@
 ---
-title: 목록 변수를 채우는 사용자 지정 프로세스 단계
-description: 문서 유형 및 문자열의 목록 변수를 채우는 사용자 지정 프로세스 단계
+title: 목록 변수를 채우는 맞춤형 프로세스 단계
+description: 유형 문서 및 문자열의 목록 변수를 채우는 맞춤형 프로세스 단계
 feature: Workflow
 topic: Development
 version: 6.5
@@ -15,17 +15,17 @@ ht-degree: 1%
 
 ---
 
-# 사용자 지정 프로세스 단계
+# 사용자 정의 프로세스 단계
 
 
-배열 목록 유형의 워크플로우 변수를 첨부 파일 및 첨부 이름으로 채우기 위해 사용자 정의 프로세스 단계가 구현되었습니다. 그런 다음 이 변수는 이메일 전송 워크플로우 구성 요소에서 사용됩니다. OSGi 번들 만들기를 잘 모를 경우 [다음 지침을 따르십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en)
+배열 목록 유형의 워크플로 변수를 첨부 파일 및 첨부 파일 이름으로 채우는 사용자 지정 프로세스 단계가 구현되었습니다. 그런 다음 이 변수는 이메일 보내기 워크플로우 구성 요소에서 사용됩니다. OSGi 번들 생성에 익숙하지 않은 경우 다음을 수행하십시오 [다음 지침을 따르십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en)
 
 사용자 지정 프로세스 단계의 코드는 다음을 수행합니다
 
-* 페이로드 폴더 아래에 있는 모든 적응형 양식 첨부 파일을 쿼리합니다. 폴더 이름이 프로세스 단계에 프로세스 인수로 전달됩니다.
+* 페이로드 폴더 아래의 모든 적응형 양식 첨부 파일을 쿼리합니다. 폴더 이름은 프로세스 단계에 프로세스 인수로 전달됩니다.
 
-* 채우기 `listOfDocuments` 워크플로우 변수
-* 채우기 `attachmentNames` 워크플로우 변수
+* 채우기 `listOfDocuments` 워크플로 변수
+* 채우기 `attachmentNames` 워크플로 변수
 * 워크플로우 변수 값 설정(`no_of_attachments`)
 
 ```java
@@ -111,11 +111,11 @@ public class PopulateListOfDocuments implements WorkflowProcess {
 
 >[!NOTE]
 >
-> 코드가 작동하려면 워크플로우에 다음 변수가 정의되어 있는지 확인하십시오
+> 코드가 작동하도록 워크플로우에 다음 변수가 정의되어 있는지 확인하십시오
 > *listOfDocuments* - ArrayList of Documents 유형의 변수
-> *attachmentNames* - ArrayList of String 유형의 변수
+> *첨부 파일 이름* - ArrayList of String 유형의 변수
 > *no_of_attachments* - Double 유형의 변수
 
 ## 다음 단계
 
-[로컬 시스템에서 솔루션을 테스트합니다](./test.md)
+[로컬 시스템에서 솔루션 테스트](./test.md)

@@ -1,6 +1,6 @@
 ---
-title: AEM as a Cloud Service에 AEM 코드 프로젝트 배포
-description: Cloud Manager를 사용하여 AEM에 AEM 코드 프로젝트 배포를 살펴보십시오.
+title: AEMas a Cloud Service 에 AEM 코드 프로젝트 배포
+description: Cloud Manager를 사용하여 AEMas a Cloud Service 에 AEM 코드 프로젝트 배포를 살펴봅니다.
 role: Developer
 level: Beginner
 type: Tutorial

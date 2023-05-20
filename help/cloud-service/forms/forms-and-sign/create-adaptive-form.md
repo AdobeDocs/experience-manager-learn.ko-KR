@@ -1,6 +1,6 @@
 ---
-title: 생성된 Acrobat Sign Cloud Services 구성을 사용할 적응형 양식 만들기
-description: Acrobat Sign에서 사용할 적응형 양식 만들기
+title: 적응형 양식을 만들어 생성된 Acrobat Sign Cloud Services 구성 사용
+description: Acrobat Sign에 사용할 적응형 양식 만들기
 type: Documentation
 role: Developer
 level: Beginner, Intermediate

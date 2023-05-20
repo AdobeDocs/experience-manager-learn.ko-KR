@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # AEM Forms JEE에서 서비스의 트랜잭션 시간 제한을 변경하는 방법
 
-*이 비디오에서는 AEM Forms JEE에서 서비스의 트랜잭션 시간 제한을 변경하는 단계를 안내합니다.*
+*이 비디오는 AEM Forms JEE에서 서비스의 트랜잭션 시간 제한을 변경하는 단계를 안내합니다.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335495?quality=12&learn=on)

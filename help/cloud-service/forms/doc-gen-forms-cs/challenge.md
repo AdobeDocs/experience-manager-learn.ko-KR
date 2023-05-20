@@ -1,6 +1,6 @@
 ---
 title: 이해 테스트
-description: 연습 완료
+description: 연습을 완료합니다
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # 연습
 
-템플릿의 URL을 POST 요청 매개 변수 중 하나로 전달하도록 코드를 수정합니다.
+코드를 수정하여 템플릿의 URL을 POST 요청 매개 변수 중 하나로 전달합니다.
 
-의 코드 `DocumentGeneration.java` 템플릿의 URL을 전달하려면 을 수정해야 합니다.
+의 코드 `DocumentGeneration.java` 템플릿의 URL을 전달하도록 수정해야 합니다.

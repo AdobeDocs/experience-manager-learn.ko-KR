@@ -20,6 +20,6 @@ ht-degree: 13%
 
 # 적응형 양식 만들기
 
-적응형 양식을 만들고 만든 테마와 연결합니다.
+적응형 양식을 만들고 만들어진 테마와 연결합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/332237?quality=12&learn=on)

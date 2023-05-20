@@ -1,6 +1,6 @@
 ---
 title: API를 사용하여 Cloud Manager와 상호 작용
-description: Cloud Manager API를 사용하여 다른 시스템을 확장 및 통합하는 방법을 알아봅니다.
+description: Cloud Manager API를 사용하여 다른 시스템을 확장하고 통합하는 방법을 살펴봅니다.
 role: Developer
 level: Beginner
 type: Tutorial
@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Cloud Manager API
 
-Cloud Manager API를 사용하여 다른 시스템을 확장 및 통합하는 방법을 알아봅니다.
+Cloud Manager API를 사용하여 다른 시스템을 확장하고 통합하는 방법을 살펴봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330541?quality=12&learn=on)

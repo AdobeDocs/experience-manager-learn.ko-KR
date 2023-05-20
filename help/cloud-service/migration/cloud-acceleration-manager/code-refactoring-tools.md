@@ -1,6 +1,6 @@
 ---
 title: 코드 리팩터링 도구
-description: AEM 코드 리팩터링 도구를 사용하여 기존 AEM 프로젝트 변환을 AEM as a Cloud Service 호환으로 자동화하는 방법을 알아봅니다.
+description: AEM Code Refactoring Tools 가 기존 AEM 프로젝트를 AEM as a Cloud Service 호환성이 되도록 자동 변환하는 데 어떻게 도움이 되는지에 대해 알아봅니다.
 version: Cloud Service
 feature: Migration
 topic: Migration, Upgrade
@@ -18,6 +18,6 @@ ht-degree: 12%
 
 # 코드 리팩터링 도구
 
-AEM 코드 리팩터링 도구를 사용하여 기존 AEM 프로젝트 변환을 AEM as a Cloud Service 호환으로 자동화하는 방법을 알아봅니다.
+AEM Code Refactoring Tools 가 기존 AEM 프로젝트를 AEM as a Cloud Service 호환성이 되도록 자동 변환하는 데 어떻게 도움이 되는지에 대해 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336693?quality=12&learn=on)

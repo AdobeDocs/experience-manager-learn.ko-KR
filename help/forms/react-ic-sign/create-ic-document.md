@@ -1,6 +1,6 @@
 ---
 title: API를 사용하여 대화형 통신 문서 생성
-description: React 앱의 데이터를 병합하여 대화형 통신 문서를 생성합니다
+description: React 앱의 데이터를 병합하여 대화형 통신 문서 생성
 feature: Adaptive Forms,Acrobat Sign
 version: 6.4,6.5
 topic: Development
@@ -23,7 +23,7 @@ API를 사용하여 대화형 통신 문서를 생성하려면 다음을 수행�
 * 미리 채우기 서비스 만들기
 * 대화형 통신 문서 생성
 
-서비스 이름 `ccm-print-test` 이 서비스를 액세스하는 데 사용됩니다. 이 사전 채우기 서비스가 정의되면 서블릿 또는 워크플로우 프로세스 단계 구현에서 이 서비스에 액세스하여 인쇄 채널 문서를 생성할 수 있습니다.
+서비스 이름 `ccm-print-test` 이 서비스에 액세스하는 데 사용됩니다. 이 미리 채우기 서비스가 정의되면 서블릿 또는 워크플로우 프로세스 단계 구현에서 이 서비스에 액세스하여 인쇄 채널 문서를 생성할 수 있습니다.
 
 ```java
 package com.acrobatsign.core;
@@ -201,7 +201,7 @@ public class AcrobatSignConfigurationService {
 
 ## 임시 문서 ID 가져오기
 
-임시 문서를 만들기 위해 다음 코드가 작성됩니다
+다음 코드는 임시 문서를 만들기 위해 작성되었습니다.
 
 ```java
 public String getTransientDocumentID(Document documentForSigning) throws IOException {

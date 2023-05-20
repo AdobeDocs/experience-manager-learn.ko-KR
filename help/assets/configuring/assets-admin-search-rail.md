@@ -1,6 +1,6 @@
 ---
-title: Assets 관리 검색 레일
-description: Assets 관리 검색 레일을 사용하면 Omnisearch에서 사용자 지정 기준을 사용하여 자산을 검색할 수 있습니다.
+title: 자산 관리자 검색 레일
+description: Assets 관리 검색 레일을 사용하면 Omnisearch에서 사용자 지정 기준을 사용하여 에셋을 검색할 수 있습니다.
 sub-product: Experience Manager Assets
 feature: Search
 version: Cloud Service
@@ -18,8 +18,8 @@ ht-degree: 0%
 
 ---
 
-# Assets 관리 검색 레일
+# 자산 관리자 검색 레일
 
-Assets 관리 검색 레일을 사용하면 Omnisearch에서 사용자 지정 기준을 사용하여 자산을 검색할 수 있습니다.
+Assets 관리 검색 레일을 사용하면 Omnisearch에서 사용자 지정 기준을 사용하여 에셋을 검색할 수 있습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35842?quality=12&learn=on)
