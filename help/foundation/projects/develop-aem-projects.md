@@ -11,7 +11,7 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 9bfe3142-bfc1-4886-85ea-d1c6de903484
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 481b8877e252b885da307fcf4d96f8a50f026fa6
 workflow-type: tm+mt
 source-wordcount: '4571'
 ht-degree: 0%
@@ -154,7 +154,7 @@ AEM Projects에는 여러 개가 포함되어 있습니다 [OOTB 프로젝트 �
    1. 다른 항목 추가 **nt:unstructured** 노드가 approvers를 roles 노드의 하위 노드로 레이블 지정했습니다.
    1. 문자열 속성 추가 **jcr:title** = &quot;**승인자**&quot;, **롤레클라스** =&quot;**소유자**&quot;, **장미빛**=&quot;**승인자**&quot;.
       1. jcr:title 및 roleid뿐만 아니라 승인자 노드의 이름도 모든 문자열 값이 될 수 있습니다(roleid가 고유한 경우).
-      1. **롤레클라스** 은(는) 다음을 기반으로 해당 역할에 적용되는 권한을 제어합니다. [3개의 OOTB 역할](프로젝트의 https://docs.adobe.com/docs/en/aem/6-3/author/projects.html#User 역할): **소유자**, **편집자**, 및 **관찰자**.
+      1. **롤레클라스** 은(는) 다음을 기반으로 해당 역할에 적용되는 권한을 제어합니다. [3개의 OOTB 역할](https://docs.adobe.com/docs/en/aem/6-3/author/projects.html#User%20Roles%20in%20a%20Project): **소유자**, **편집자**, 및 **관찰자**.
       1. 일반적으로 사용자 정의 역할이 관리자 역할보다 크면 역할은 다음과 같을 수 있습니다. **소유자;** 사진 작가나 디자이너와 같은 보다 구체적인 작성 역할인 경우 **편집자** 롤렉스면 충분할 거야 의 큰 차이점 **소유자** 및 **편집자** 프로젝트 소유자는 프로젝트 속성을 업데이트하고 새 사용자를 프로젝트에 추가할 수 있습니다.
 
    ```shell
