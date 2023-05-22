@@ -7,7 +7,7 @@ topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: daae6145-5267-4958-9abe-f6b7f469f803
-source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
+source-git-commit: 4c0770eafbbbb90bfc00ab49be02e84c41d63057
 workflow-type: tm+mt
 source-wordcount: '1076'
 ht-degree: 0%
@@ -15,6 +15,8 @@ ht-degree: 0%
 ---
 
 # AEM Headless의 고급 개념
+
+{{aem-headless-trials-promo}}
 
 이 종단간 튜토리얼은 [기본 자습서](../multi-step/overview.md) 이는 Adobe Experience Manager(AEM) Headless 및 GraphQL의 기본 사항에 대해 다룹니다. 고급 자습서에서는 클라이언트 애플리케이션에서 GraphQL 지속 쿼리를 사용하는 등 콘텐츠 조각 모델, 콘텐츠 조각 및 AEM GraphQL 지속 쿼리를 사용하여 작업하는 측면을 자세히 설명합니다.
 

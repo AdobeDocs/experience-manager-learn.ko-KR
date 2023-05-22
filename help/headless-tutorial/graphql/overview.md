@@ -8,7 +8,7 @@ level: Beginner
 exl-id: 0056971f-2f89-43b3-bb6f-dd16c2a50370
 thumbnail: 328618.jpg
 last-substantial-update: 2022-07-20T00:00:00Z
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 4c0770eafbbbb90bfc00ab49be02e84c41d63057
 workflow-type: tm+mt
 source-wordcount: '268'
 ht-degree: 11%
@@ -16,6 +16,8 @@ ht-degree: 11%
 ---
 
 # AEM Headless 시작하기 - GraphQL {#getting-started-with-aem-headless}
+
+{{aem-headless-trials-promo}}
 
 콘텐츠 조각용 AEM GraphQL API는 외부 클라이언트 애플리케이션이 AEM에서 관리하는 콘텐츠를 사용하여 경험을 렌더링하는 Headless CMS 시나리오를 지원합니다.
 
