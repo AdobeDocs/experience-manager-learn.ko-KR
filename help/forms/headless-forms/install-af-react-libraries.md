@@ -7,10 +7,10 @@ kt: 13285
 topic: Development
 role: User
 level: Intermediate
-source-git-commit: c6e83a627743c40355559d9cdbca2b70db7f23ed
+source-git-commit: 6aa3dff44a7e6f1f8ac896e30319958d84ecf57f
 workflow-type: tm+mt
-source-wordcount: '173'
-ht-degree: 1%
+source-wordcount: '209'
+ht-degree: 0%
 
 ---
 
@@ -28,6 +28,10 @@ React 프로젝트에서 Headless 적응형 양식을 사용하려면 React 프�
 "@aemforms/af-react-components": "^0.22.41",
 "@aemforms/af-react-renderer": "^0.22.41",
 ```
+
+>[!NOTE]
+>
+>이 자습서의 드롭다운 목록과 카드 레이아웃은 [자료 UI 라이브러리](https://mui.com/). 시스템에서 코드가 작동하려면 적절한 자료 UI 패키지를 다운로드해야 합니다.
 
 ## 프록시 설정
 

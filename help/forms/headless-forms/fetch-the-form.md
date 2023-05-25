@@ -7,10 +7,10 @@ kt: 13285
 topic: Development
 role: User
 level: Intermediate
-source-git-commit: c6e83a627743c40355559d9cdbca2b70db7f23ed
+source-git-commit: 6aa3dff44a7e6f1f8ac896e30319958d84ecf57f
 workflow-type: tm+mt
-source-wordcount: '141'
-ht-degree: 0%
+source-wordcount: '149'
+ht-degree: 1%
 
 ---
 
@@ -76,3 +76,7 @@ export default function Contact(){
 ```
 
 위의 코드는 적응형 양식에 사용된 구성 요소에 매핑된 기본 html 구성 요소를 사용합니다. 예를 들어 텍스트 입력 적응형 양식 구성 요소를 TextField 구성 요소에 매핑합니다. 문서에 사용된 기본 구성 요소 [여기에서 다운로드할 수 있음](./assets/native-components.zip)
+
+## 다음 단계
+
+[드롭다운 목록에서 양식 선택](./select-form-from-drop-down-list.md)

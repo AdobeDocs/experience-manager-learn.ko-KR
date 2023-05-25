@@ -7,9 +7,9 @@ kt: 13285
 topic: Development
 role: User
 level: Intermediate
-source-git-commit: c6e83a627743c40355559d9cdbca2b70db7f23ed
+source-git-commit: 6aa3dff44a7e6f1f8ac896e30319958d84ecf57f
 workflow-type: tm+mt
-source-wordcount: '133'
+source-wordcount: '135'
 ht-degree: 2%
 
 ---
@@ -17,8 +17,11 @@ ht-degree: 2%
 
 # Headless 적응형 양식 포함
 
-이 문서에서는 SPA 웹 사이트에 Headless 적응형 양식 포함에 대한 기본 사항을 다룹니다. 이 문서에서는 기존 단일 페이지 앱이 있고 핵심 구성 요소를 사용하여 AEM Forms 6.5.16에서 작성된 적응형 양식을 포함하려고 한다고 가정합니다.
-단일 페이지 앱에 양식을 포함하면 사용자가 페이지를 새로 고칠 필요 없이 데이터를 원활하게 입력하고 제출할 수 있습니다. 이것은 애플리케이션의 상호 작용성과 효율성을 향상시킵니다.
+이 [튜토리얼에서는 다양한 headless API를 다룹니다](https://opensource.adobe.com/aem-forms-af-runtime/api/#section/Introduction) 이렇게 하면 양식을 나열, 표시 및 제출할 수 있습니다.
+
+이 문서에서는 Headless 방식으로 적응형 양식을 나열, 표시 및 제출할 수 있도록 제공되는 다양한 Headless API를 다룹니다.
+
+이 문서에서는 기존 단일 페이지 앱이 SPA 웹 사이트에 Headless 적응형 양식을 나열하고 표시하려고 한다고 가정합니다.
 
 다음 스크린샷은 contact us 양식이 SPA에 임베드되는 것을 보여 줍니다
 
