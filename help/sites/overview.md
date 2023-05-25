@@ -1,10 +1,11 @@
 ---
 title: AEM Sites 비디오 및 자습서
 description: 비디오 및 튜토리얼에서 Experience Manager Sites에 대해 알아보십시오. 직원 추천 및 AEM Sites의 새로운 기능을 살펴보십시오.
+solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 topic: Content Management
 exl-id: cde4ce7f-0afe-4632-8c1c-354586f296d5
-source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
+source-git-commit: d24649d4b1411f57a46595edddb601ac49b51643
 workflow-type: tm+mt
 source-wordcount: '345'
 ht-degree: 13%
