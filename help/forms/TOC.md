@@ -3,11 +3,12 @@ feature-set: Experience Manager Forms, Experience Manager
 role: Developer
 user-guide-title: AEM Forms 비디오 및 튜토리얼
 user-guide-description: 초보자 및 숙련된 AEM Forms 개발자를 위한 AEM Forms 리소스 모음입니다.
+solution: Experience Manager, Experience Manager Forms
 breadcrumb-title: AEM Forms 튜토리얼
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: c6e83a627743c40355559d9cdbca2b70db7f23ed
+source-git-commit: beebd6a354a9efb77d6e5e463559b34be78c006e
 workflow-type: tm+mt
 source-wordcount: '1816'
 ht-degree: 2%
