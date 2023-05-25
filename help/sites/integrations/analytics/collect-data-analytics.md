@@ -9,7 +9,7 @@ level: Intermediate
 kt: 5332
 thumbnail: 5332-collect-data-analytics.jpg
 exl-id: 33f2fd25-8696-42fd-b496-dd21b88397b2
-source-git-commit: 5a8d3983a22df4e273034c8d8441b31e6bc764ba
+source-git-commit: 6a5e62a2a897adc421585e79c5f36f6aa759feaa
 workflow-type: tm+mt
 source-wordcount: '2447'
 ht-degree: 2%
@@ -134,7 +134,7 @@ Adobe 클라이언트 데이터 레이어는 **이벤트** 제어 데이터 계�
       // defensive coding to avoid a null pointer exception
       if(evt.hasOwnProperty("eventInfo") && evt.eventInfo.hasOwnProperty("path")) {
          //trigger the Tag Rule and pass event
-         console.debug("cmp:show event: " + evt.eventInfo.path);
+         console.log("cmp:show event: " + evt.eventInfo.path);
          var event = {
             //include the path of the component that triggered the event
             path: evt.eventInfo.path,
@@ -171,10 +171,10 @@ Adobe 클라이언트 데이터 레이어는 **이벤트** 제어 데이터 계�
 1. 클릭 **편집기 열기** 기본 패널에서 다음 코드 조각을 입력합니다.
 
    ```js
-   console.debug("Page Loaded ");
-   console.debug("Page name: " + event.component['dc:title']);
-   console.debug("Page type: " + event.component['@type']);
-   console.debug("Page template: " + event.component['xdm:template']);
+   console.log("Page Loaded ");
+   console.log("Page name: " + event.component['dc:title']);
+   console.log("Page type: " + event.component['@type']);
+   console.log("Page template: " + event.component['xdm:template']);
    ```
 
    다음 `event` 에서 개체가 전달됩니다. `trigger()` 메서드가 사용자 지정 이벤트에서 호출되었습니다. 다음 `component` 는 데이터 레이어에서 파생된 현재 페이지입니다. `getState` 사용자 지정 이벤트.
