@@ -10,10 +10,10 @@ doc-type: Tutorial
 last-substantial-update: 2023-05-25T00:00:00Z
 jira: KT-13328
 thumbnail: KT-13328.jpeg
-source-git-commit: 19c31819f3df7c6c43753d6ec4de8f6ecf4e55dd
+source-git-commit: 3831c6ed1467018c9f5bf15aa9f6b8ee78034c02
 workflow-type: tm+mt
-source-wordcount: '1542'
-ht-degree: 3%
+source-wordcount: '1646'
+ht-degree: 2%
 
 ---
 
@@ -73,7 +73,7 @@ SDR 문서는 구현 계획에 대한 포괄적인 개요를 제공하여 모든
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419874?quality=12&learn=on)
 
-SDR 문서에 포함되어야 하는 개념 및 다양한 요소에 대한 자세한 내용은 다음을 참조하십시오. [솔루션 디자인 참조(SDR) 문서 생성 및 유지 관리](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html). 샘플 Excel 템플릿을 다운로드할 수도 있지만 WKND별 버전도 사용할 수 있습니다 [여기](./assets/Analytics-SDR-Template.xlsx).
+SDR 문서에 포함되어야 하는 개념 및 다양한 요소에 대한 자세한 내용은 다음을 참조하십시오. [솔루션 디자인 참조(SDR) 문서 생성 및 유지 관리](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html). 샘플 Excel 템플릿을 다운로드할 수도 있지만 WKND별 버전도 사용할 수 있습니다 [여기](./assets/Initial-WKND-WebSDK-BRD-SDR.xlsx).
 
 ## Analytics 설정 - 보고서 세트, Analysis Workspace
 
@@ -83,7 +83,7 @@ SDR 문서에 포함되어야 하는 개념 및 다양한 요소에 대한 자�
 
 수집된 데이터에서 분석, 통찰력 수집 및 다른 사람과 그러한 통찰력을 공유하려면 Analysis Workspace의 프로젝트가 만들어집니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3419874?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3419875?quality=12&learn=on)
 
 Analytics 설정 및 개념에 대해 자세히 알아보려면 다음 리소스를 사용하는 것이 좋습니다.
 
@@ -121,6 +121,10 @@ XDM(경험 데이터 모델) 스키마를 사용하면 수집된 데이터를 �
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419882?quality=12&learn=on)
+
+>[!TIP]
+>
+>비디오에 표시된 데이터 요소 및 규칙 이벤트 코드를 참조에 사용할 수 있습니다. **아래 아코디언 요소 펼치기**. 그러나 Adobe 클라이언트 데이터 레이어를 사용하지 않는 경우 아래 코드를 수정해야 하지만 데이터 요소를 정의하고 규칙 정의에 사용하는 개념이 여전히 적용됩니다.
 
 +++ 데이터 요소 및 규칙 이벤트 코드
 
@@ -209,6 +213,13 @@ XDM(경험 데이터 모델) 스키마를 사용하면 수집된 데이터를 �
 
 AEM 핵심 구성 요소와 Adobe 클라이언트 데이터 레이어 통합에 대한 자세한 내용은 [AEM 핵심 구성 요소와 함께 Adobe 클라이언트 데이터 레이어 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html).
 
+
+>[!INFO]
+>
+>을(를) 포괄적으로 이해하기 위해 **변수 맵** 솔루션 디자인 참조(SDR) 문서의 탭 속성 세부 정보에서 완료된 WKND별 버전에 액세스하여 다운로드 [여기](./assets/Final-WKND-WebSDK-BRD-SDR.xlsx).
+
+
+
 ## WKND에서 업데이트된 태그 속성 확인
 
 업데이트된 태그 속성이 빌드, 게시되고 WKND 사이트 페이지에서 올바르게 작동하는지 확인합니다. Google Chrome 웹 브라우저 사용 [Adobe Experience Platform 디버거 확장](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob):
@@ -235,7 +246,7 @@ AEM 핵심 구성 요소와 Adobe 클라이언트 데이터 레이어 통합에 
 
 Analysis Workspace은 유연하고 대화형 방식으로 데이터를 탐색하고 시각화할 수 있는 Adobe Analytics의 강력한 도구입니다. 사용자 지정 보고서를 만들고, 고급 세분화를 수행하고, 다양한 데이터 시각화를 적용할 수 있는 드래그 앤 드롭 인터페이스를 제공합니다.
 
-에서 만든 Analysis Workspace 프로젝트를 다시 열겠습니다. [Analytics 설정](#setup-analytics---report-suite-analysis-workspace) 단계. 다음에서 **상위 페이지** 섹션에서 방문 횟수, 고유 방문자 수, 시작 횟수, 바운스 비율 등과 같은 다양한 지표를 검사합니다. WKND 페이지 및 홈 페이지 CTA의 성능을 평가하려면 WKND별 차원(WKND 페이지 이름, WKND CTA 이름) 및 지표(WKND CTA 클릭 이벤트)를 드래그 앤 드롭합니다. 이러한 통찰력은 마케터가 어떤 CTA가 더 효과적인지 이해하고 비즈니스 목표에 맞는 데이터 중심의 결정을 내리는 데 유용합니다.
+에서 만든 Analysis Workspace 프로젝트를 다시 열겠습니다. [Analytics 설정](#setup-analytics---report-suite-analysis-workspace) 단계. 다음에서 **상위 페이지** 섹션에서 방문 횟수, 고유 방문자 수, 시작 횟수, 바운스 비율 등과 같은 다양한 지표를 검사합니다. WKND 페이지 및 홈 페이지 CTA의 성능을 평가하려면 WKND별 차원(WKND 페이지 이름, WKND CTA 이름) 및 지표(WKND CTA 클릭 이벤트)를 드래그 앤 드롭합니다. 이러한 통찰력은 마케터가 어떤 CTA가 더 효과적인지 이해하고 비즈니스 목표에 맞게 데이터 중심의 결정을 내리는 데 유용합니다.
 
 사용자 여정을 시각화하려면 **WKND 페이지 이름** 다양한 경로로 확장됩니다.
 
@@ -250,6 +261,12 @@ Analysis Workspace은 유연하고 대화형 방식으로 데이터를 탐색하
 권장 단계를 구현하고 솔루션 디자인 참조(SDR) 문서와 같은 제공된 리소스를 사용하며 주요 Analytics 개념을 이해하면 마케터가 데이터를 효과적으로 수집하고 분석할 수 있습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419888?quality=12&learn=on)
+
+
+>[!AVAILABILITY]
+>
+>원하는 경우 **엔드투엔드 비디오** 따라서 개별 설정 단계 비디오 대신 전체 통합 프로세스를 다루는 [여기](https://video.tv.adobe.com/v/3419889/) 액세스할 수 있습니다.
+
 
 ## 추가 리소스
 
