@@ -11,9 +11,9 @@ last-substantial-update: 2023-04-26T00:00:00Z
 jira: KT-13156
 thumbnail: KT-13156.jpeg
 exl-id: b5182d35-ec38-4ffd-ae5a-ade2dd3f856d
-source-git-commit: 63afa03de70d6f8f695d552018344d53a5cec6f5
+source-git-commit: 32472c8591aeb47a7c6a7253afd7ad9ab0e45171
 workflow-type: tm+mt
-source-wordcount: '1315'
+source-wordcount: '1340'
 ht-degree: 3%
 
 ---
@@ -207,6 +207,11 @@ Web SDK를 사용하여 수집된 페이지 보기 데이터는 Experience Platf
 좋습니다! 웹 사이트에서 데이터를 수집하고 수집하기 위해 Experience Platform Web SDK로 AEM 설정을 완료했습니다. 이러한 토대를 통해 이제 Analytics, Target, Customer Journey Analytics(CJA) 및 기타 많은 제품과 같은 제품을 개선하고 통합하여 고객을 위한 풍부하고 개인화된 경험을 만들 수 있는 추가 가능성을 살펴볼 수 있습니다. Adobe Experience Cloud의 잠재력을 최대한 발휘할 수 있도록 계속해서 학습하고 탐색하십시오.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418900?quality=12&learn=on)
+
+
+>[!AVAILABILITY]
+>
+>원하는 경우 **엔드투엔드 비디오** 따라서 개별 설정 단계 비디오 대신 전체 통합 프로세스를 다루는 [여기](https://video.tv.adobe.com/v/3418905/) 액세스할 수 있습니다.
 
 ## 추가 리소스
 
