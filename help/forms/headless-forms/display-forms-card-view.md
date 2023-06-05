@@ -7,17 +7,20 @@ kt: 13311
 topic: Development
 role: User
 level: Intermediate
-source-git-commit: 6aa3dff44a7e6f1f8ac896e30319958d84ecf57f
+exl-id: 7316ca02-be57-4ecf-b162-43a736b992b3
+source-git-commit: 3bbf80d5c301953b3a34ef8256702ac7445c40da
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '294'
 ht-degree: 0%
 
 ---
 
-
 # 카드 형식으로 양식 가져오기 및 표시
 
-카드 보기 형식은 정보나 데이터를 카드 형태로 제시하는 디자인 패턴이다. 각 카드는 개별 콘텐츠 또는 데이터 항목을 나타내며 일반적으로 특정 요소가 배열된 시각적으로 구분된 컨테이너로 구성됩니다. 이 문서에서는 [listforms API](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/List-Forms/operation/listForms) 양식을 가져오고 아래와 같이 카드 형식으로 표시하려면
+카드 보기 형식은 정보나 데이터를 카드 형태로 제시하는 디자인 패턴이다. 각 카드는 개별 콘텐츠 또는 데이터 항목을 나타내며 일반적으로 특정 요소가 배열된 시각적으로 구분된 컨테이너로 구성됩니다.
+React에서 클릭 가능한 카드는 카드 또는 타일과 유사하며 사용자가 클릭하거나 누를 수 있는 대화형 구성 요소입니다. 사용자가 클릭 가능한 카드를 클릭하거나 탭하면 다른 페이지로 이동하거나, 모달을 열거나, UI를 업데이트하는 등의 지정된 동작이나 동작이 트리거됩니다.
+
+이 문서에서는 [listforms API](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/List-Forms/operation/listForms) 양식을 가져와서 카드 형식으로 표시하고 클릭 이벤트에서 적응형 양식을 엽니다.
 
 ![card-view](./assets/card-view-forms.png)
 
@@ -25,37 +28,59 @@ ht-degree: 0%
 
 다음 코드는 카드 템플릿을 디자인하는 데 사용되었습니다. 카드 템플릿에는 Adobe 로고와 함께 적응형 양식의 제목 및 설명이 표시됩니다. [자료 UI 구성 요소](https://mui.com/) 이 레이아웃을 만드는 데 사용되었습니다.
 
+
+
 ```javascript
-import Paper from "@mui/material/Paper";
-import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
-import { Typography } from "@mui/material";
+import Form from './Form';
+import PlainText from './plainText'
+import TextField from './TextField'
+import Button from './Button';
+import { AdaptiveForm } from "@aemforms/af-react-renderer";
+
+import { CardActionArea, Typography } from "@mui/material";
 import { Box } from "@mui/system";
-const FormCard =({headlessForm}) => {
+import { useState,useEffect } from "react";
+import DisplayForm from "../DisplayForm";
+import { Link } from "react-router-dom";
+export default function FormCard({headlessForm}) {
+const extendMappings =
+    {
+        'plain-text' : PlainText,
+        'text-input' : TextField,
+        'button' : Button,
+        'form': Form
+    };
+    const[formPath, setFormPath] = useState('');
+    const [selectedForm, setForm] = useState('');
     return (
-              <Grid item xs={3}>
+        
+            <Grid item xs={3}>
                 <Paper elevation={3}>
                     <img src="/content/dam/formsanddocuments/registrationform/jcr:content/renditions/cq5dam.thumbnail.48.48.png" className="img"/>
                     <Box padding={3}>
-                    <Typography variant="subtititle2" component="h2">
-                        {headlessForm.title}
-                    
-                    </Typography>
-                    <Typography variant="subtititle3" component="h4">
-                        {headlessForm.description}
-                    
-                    </Typography>
+                        <Link style={{ textDecoration: 'none' }} to={`/displayForm${headlessForm.path}`}>
+                            <Typography variant="subtititle2" component="h2">
+                                {headlessForm.title}
+                            </Typography>
+                            <Typography variant="subtititle3" component="h4">
+                                {headlessForm.description}
+                            </Typography>
+                        </Link>
+                
                     </Box>
                 </Paper>
-                </Grid>
-          
-
-
+            </Grid>
     );
     
 
 };
-export default FormCard;
+```
+
+DisplayForm.js로 이동하기 위해 Main.js에 다음 경로를 정의했습니다
+
+```javascript
+    <Route path="/displayForm/*" element={<DisplayForm/>} exact/>
 ```
 
 ## 양식 가져오기
@@ -104,3 +129,7 @@ export default function ListForm(){
 ```
 
 위의 코드에서는 map 함수를 사용하여 fetchForms를 반복하고 fetchForms 배열의 모든 항목에 대해 FormCard 구성 요소가 생성되어 Grid 컨테이너에 추가됩니다. 이제 요구 사항에 따라 React 앱에서 ListForm 구성 요소를 사용할 수 있습니다.
+
+## 다음 단계
+
+[사용자가 카드를 클릭하면 적응형 양식 표시](./open-form-card-view.md)

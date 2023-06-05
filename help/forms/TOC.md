@@ -8,9 +8,9 @@ breadcrumb-title: AEM Forms 튜토리얼
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: 6aa3dff44a7e6f1f8ac896e30319958d84ecf57f
+source-git-commit: 3bbf80d5c301953b3a34ef8256702ac7445c40da
 workflow-type: tm+mt
-source-wordcount: '1822'
+source-wordcount: '1825'
 ht-degree: 2%
 
 ---
@@ -236,6 +236,7 @@ ht-degree: 2%
    + [3 - 양식 가져오기](headless-forms/fetch-the-form.md)
    + [4 - 채울 양식 선택](headless-forms/select-form-from-drop-down-list.md)
    + [5 - 카드 형식으로 양식 표시](headless-forms/display-forms-card-view.md)
+   + [6 - 선택한 양식 표시](headless-forms/open-form-card-view.md)
 
 + Forms 및 Acrobat Sign과 React 앱 {#react-ic-sign}
    + [1 - 소개](react-ic-sign/introduction.md)
