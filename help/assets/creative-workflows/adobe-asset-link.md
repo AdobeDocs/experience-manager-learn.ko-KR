@@ -9,10 +9,10 @@ level: Beginner
 thumbnail: 28988.jpg
 last-substantial-update: 2022-06-25T00:00:00Z
 exl-id: 6c49f8c2-f468-4b29-b7b6-029c8ab39ce9
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
 workflow-type: tm+mt
-source-wordcount: '1051'
-ht-degree: 1%
+source-wordcount: '1047'
+ht-degree: 2%
 
 ---
 
@@ -24,7 +24,7 @@ Adobe Adobe Creative Cloud for enterprise용 Asset Link 확장 기능은 Creativ
 
 >[!TIP]
 >
-> 에 대해 자세히 알아보기 [Adobe XD Premium 교육 프로그램](https://spark.adobe.com/page/wU7OXv8qKGugO/) 는 에셋 링크를 Adobe Experience Manager 워크플로와 통합하는 데 도움이 될 수 있습니다.
+> 에 대해 자세히 알아보기 [Adobe XD Premium 교육 프로그램](https://helpx.adobe.com/support/xd.html) 는 에셋 링크를 Adobe Experience Manager 워크플로와 통합하는 데 도움이 될 수 있습니다.
 
 ## Asset Link 및 AEM Creative 워크플로 Adobe
 
@@ -65,7 +65,7 @@ Adobe 에셋 링크 는 Adobe 에셋 링크와 AEM 간의 InDesign 직접 연결
 
 >[!NOTE]
 >
->Adobe Creative Cloud Enterprise ID 또는 Federated ID 만 사용하십시오. 다음을 확인하십시오. [Adobe 에셋 링크에 대한 AEM 구성](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html).
+>Adobe Creative Cloud Enterprise ID 또는 Federated ID 만 사용하십시오. 다음을 확인하십시오. [Adobe 에셋 링크에 대한 AEM 구성](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html).
 
 아래 옵션 중 하나를 사용하여 InDesign 레이아웃에 자산을 배치할 수 있습니다.
 

@@ -11,9 +11,9 @@ kt: 4072
 mini-toc-levels: 1
 thumbnail: 30181.jpg
 exl-id: f54f3dc9-6ec6-4e55-9043-7a006840c905
-source-git-commit: 434f56e143bc0f969723de48abd26d49a308af9b
+source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
 workflow-type: tm+mt
-source-wordcount: '4061'
+source-wordcount: '4057'
 ht-degree: 0%
 
 ---
@@ -446,7 +446,7 @@ Byline Sling 모델은 AEM에서 제공하는 여러 Java™ API를 사용합니
    import org.osgi.annotation.versioning.Version;
    ```
 
-이 패키지의 파일이 변경될 때마다 [패키지 버전은 의미론적으로 조정해야 합니다](https://semver.org/). 그렇지 않은 경우 Maven 프로젝트의 [bnd-baseline-maven-plugin](https://github.com/bndtools/bnd/tree/master/maven/bnd-baseline-maven-plugin) 은(는) 잘못된 패키지 버전을 감지하고 빌드된 내용을 중단합니다. 다행히도 실패 시 Maven 플러그인은 잘못된 Java™ 패키지 버전 및 그 버전을 보고합니다. 업데이트 `@Version("...")` 를 위반하는 Java™ 패키지의 선언 `package-info.java` 플러그인이 권장하는 버전으로 수정할 수 있습니다.
+이 패키지의 파일이 변경될 때마다 [패키지 버전은 의미론적으로 조정해야 합니다](https://semver.org/). 그렇지 않은 경우 Maven 프로젝트의 [bnd-baseline-maven-plugin](https://github.com/bndtools/bnd) 은(는) 잘못된 패키지 버전을 감지하고 빌드된 내용을 중단합니다. 다행히도 실패 시 Maven 플러그인은 잘못된 Java™ 패키지 버전 및 그 버전을 보고합니다. 업데이트 `@Version("...")` 를 위반하는 Java™ 패키지의 선언 `package-info.java` 플러그인이 권장하는 버전으로 수정할 수 있습니다.
 
 ### Byline 구현 {#byline-implementation}
 

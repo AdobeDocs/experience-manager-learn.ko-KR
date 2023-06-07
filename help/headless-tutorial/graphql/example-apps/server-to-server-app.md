@@ -9,10 +9,10 @@ level: Beginner
 kt: 10798
 thumbnail: KT-10798.jpg
 exl-id: 39b21a29-a75f-4a6c-ba82-377cf5cc1726
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
 workflow-type: tm+mt
-source-wordcount: '472'
-ht-degree: 5%
+source-wordcount: '471'
+ht-degree: 6%
 
 ---
 
@@ -22,18 +22,18 @@ ht-degree: 5%
 
 ![AEM Headless를 사용한 서버 간 Node.js 앱](./assets/server-to-server-app/server-to-server-app.png)
 
-보기 [gitHub의 소스 코드](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/server-to-server-app)
+보기 [gitHub의 소스 코드](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/server-to-server)
 
 ## 사전 요구 사항 {#prerequisites}
 
 다음 도구를 로컬에 설치해야 합니다.
 
-+ [Node.js v18](https://nodejs.org/en/)
++ [Node.js v18](https://nodejs.org/en)
 + [Git](https://git-scm.com/)
 
 ## AEM 요구 사항
 
-Node.js 응용 프로그램은 다음 AEM 배포 옵션과 함께 작동합니다. 모든 배포에는 [WKND Site v2.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) 설치.
+Node.js 응용 프로그램은 다음 AEM 배포 옵션과 함께 작동합니다. 모든 배포에는 [WKND Site v2.0.0+](https://github.com/adobe/aem-guides-wknd/releases) 설치.
 
 + [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
 + 선택적으로, [서비스 자격 증명](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html) 요청 인증(예: AEM 작성자 서비스에 연결)의 경우.
@@ -77,7 +77,7 @@ Node.js 응용 프로그램은 다음 AEM 배포 옵션과 함께 작동합니�
 
 ## 코드
 
-다음은 서버 간 Node.js 애플리케이션이 빌드된 방법, AEM Headless에 연결하여 GraphQL 지속 쿼리를 사용하여 콘텐츠를 검색하는 방법 및 해당 데이터가 표시되는 방법에 대한 요약입니다. 전체 코드는에서 찾을 수 있습니다 [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/server-to-server-app).
+다음은 서버 간 Node.js 애플리케이션이 빌드된 방법, AEM Headless에 연결하여 GraphQL 지속 쿼리를 사용하여 콘텐츠를 검색하는 방법 및 해당 데이터가 표시되는 방법에 대한 요약입니다. 전체 코드는에서 찾을 수 있습니다 [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/server-to-server).
 
 서버 간 AEM Headless 앱의 일반적인 사용 사례는 AEM의 콘텐츠 조각 데이터를 다른 시스템으로 동기화하는 것입니다. 그러나 이 애플리케이션은 의도적으로 단순하며 지속 쿼리의 JSON 결과를 인쇄합니다.
 

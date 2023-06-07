@@ -9,16 +9,16 @@ hidefromtoc: true
 recommendations: noDisplay, noCatalog
 thumbnail: 342133.jpeg
 exl-id: 817ea20d-d902-4497-83d3-5800ed6aaa8f
-source-git-commit: a439c72a7b080633d3777eefad3b47f01c92b970
+source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
 workflow-type: tm+mt
-source-wordcount: '113'
-ht-degree: 5%
+source-wordcount: '100'
+ht-degree: 6%
 
 ---
 
 # 클라우드로의 마이그레이션 - 1부
 
-Darin과 James는 몇 가지 모범 사례와 AMS/On-Prem과의 차이점 등 AEM Cloud의 Dispatcher에 대해 설명합니다. 또한 클라우드로의 마이그레이션에 대해서도 다룹니다. 특별 게스트 및 클라우드 전문가, [닥터 애플스미스](https://twitter.com/DrApplesmith) 를 입력합니다.
+Darin과 James는 몇 가지 모범 사례와 AMS/On-Prem과의 차이점 등 AEM Cloud의 Dispatcher에 대해 설명합니다. 또한 클라우드로의 마이그레이션에 대해서도 다룹니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342133?quality=12&learn=on)
 

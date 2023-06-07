@@ -12,9 +12,9 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 9c3d47c7-1bb9-441c-a0e6-85887a32c817
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
 workflow-type: tm+mt
-source-wordcount: '1617'
+source-wordcount: '1621'
 ht-degree: 0%
 
 ---
@@ -26,12 +26,12 @@ SPA Editor SDK를 사용하여 SPA 페이지에 매핑하여 AEM의 여러 보�
 ## 목표
 
 1. SPA Editor를 사용할 때 사용할 수 있는 SPA 모델 라우팅 옵션을 이해합니다.
-1. 사용 방법 알아보기 [React 라우터](https://reacttraining.com/react-router/) 를 클릭하여 SPA의 다른 보기 사이를 이동합니다.
+1. 사용 방법 알아보기 [React 라우터](https://reacttraining.com/react-router) 를 클릭하여 SPA의 다른 보기 사이를 이동합니다.
 1. AEM React 핵심 구성 요소를 사용하여 AEM 페이지 계층 구조에 의해 실행되는 동적 탐색을 구현합니다.
 
 ## 빌드할 내용
 
-이 장에서는 AEM의 SPA에 탐색을 추가합니다. 탐색 메뉴는 AEM 페이지 계층 구조에 의해 구동되며,에서 제공하는 JSON 모델을 사용합니다. [탐색 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html).
+이 장에서는 AEM의 SPA에 탐색을 추가합니다. 탐색 메뉴는 AEM 페이지 계층 구조에 의해 구동되며,에서 제공하는 JSON 모델을 사용합니다. [탐색 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/navigation.html).
 
 ![탐색 추가됨](assets/navigation-routing/navigation-added.png)
 
@@ -209,9 +209,9 @@ SPA Editor SDK를 사용하여 SPA 페이지에 매핑하여 AEM의 여러 보�
 
 ## Inspect React 라우팅  {#react-routing}
 
-탐색 및 라우팅은 [React 라우터](https://reactrouter.com/). React Router는 React 애플리케이션의 탐색 구성 요소 모음입니다. [AEM React 핵심 구성 요소](https://github.com/adobe/aem-react-core-wcm-components-base) React Router의 기능을 사용하여 **탐색** 이전 단계에서 사용된 구성 요소입니다.
+탐색 및 라우팅은 [React 라우터](https://reactrouter.com/en/main). React Router는 React 애플리케이션의 탐색 구성 요소 모음입니다. [AEM React 핵심 구성 요소](https://github.com/adobe/aem-react-core-wcm-components-base) React Router의 기능을 사용하여 **탐색** 이전 단계에서 사용된 구성 요소입니다.
 
-그런 다음 React Router가 SPA과 어떻게 통합되는지 확인하고 React Router를 사용하여 실험합니다 [링크](https://reactrouter.com/web/api/Link) 구성 요소.
+그런 다음 React Router가 SPA과 어떻게 통합되는지 확인하고 React Router를 사용하여 실험합니다 [링크](https://reactrouter.com/en/main/components/link) 구성 요소.
 
 1. IDE에서 파일을 엽니다. `index.js` 위치: `ui.frontend/src/index.js`.
 
@@ -238,7 +238,7 @@ SPA Editor SDK를 사용하여 SPA 페이지에 매핑하여 AEM의 여러 보�
    });
    ```
 
-   다음 사항에 주목하십시오. `App` 은(는) 로 래핑됩니다. `Router` 구성 요소 출처 [React 라우터](https://reacttraining.com/react-router/). 다음 `ModelManager`AEM SPA Editor JS SDK에서 제공하는 는 JSON 모델 API를 기반으로 AEM Pages에 동적 경로를 추가합니다.
+   다음 사항에 주목하십시오. `App` 은(는) 로 래핑됩니다. `Router` 구성 요소 출처 [React 라우터](https://reacttraining.com/react-router). 다음 `ModelManager`AEM SPA Editor JS SDK에서 제공하는 는 JSON 모델 API를 기반으로 AEM Pages에 동적 경로를 추가합니다.
 
 1. 파일 열기 `Page.js` 위치: `ui.frontend/src/components/Page/Page.js`
 
@@ -260,7 +260,7 @@ SPA Editor SDK를 사용하여 SPA 페이지에 매핑하여 AEM의 여러 보�
    다음 `Page` SPA 구성 요소는 `MapTo` 매핑할 함수 **페이지** AEM에서 해당 SPA 구성 요소로 이동합니다. 다음 `withRoute` 유틸리티를 사용하면 다음에 준하여 SPA을 적절한 AEM 하위 페이지로 동적으로 라우팅할 수 있습니다. `cqPath` 속성.
 
 1. 를 엽니다. `Header.js` 구성 요소 `ui.frontend/src/components/Header/Header.js`.
-1. 업데이트 `Header` 을(를) 둘러싸려면 `<h1>` 의 태그 [링크](https://reactrouter.com/web/api/Link) 홈 페이지:
+1. 업데이트 `Header` 을(를) 둘러싸려면 `<h1>` 의 태그 [링크](https://reactrouter.com/en/main/components/link) 홈 페이지:
 
    ```diff
      //Header.js

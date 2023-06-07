@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 772b595d-2a25-4ae6-8c6e-69a646143147
-source-git-commit: 38a35fe6b02e9aa8c448724d2e83d1aefd8180e7
+source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
 workflow-type: tm+mt
-source-wordcount: '1182'
+source-wordcount: '1188'
 ht-degree: 2%
 
 ---
@@ -32,7 +32,7 @@ _이 장의 IDE 스크린샷은 [Visual Studio 코드](https://code.visualstudio
 
 다음 소프트웨어를 설치해야 합니다.
 
-- [Node.js v18](https://nodejs.org/)
+- [Node.js v18](https://nodejs.org/en)
 - [Visual Studio 코드](https://code.visualstudio.com/)
 
 ## 목표
@@ -109,7 +109,7 @@ React 앱을 다운로드하려면:
 
 1. 다음 `src/api` 폴더에는 AEM에 GraphQL 쿼리를 만드는 데 사용되는 파일이 포함되어 있습니다.
    - `src/api/aemHeadlessClient.js` AEM과의 통신에 사용되는 AEM Headless 클라이언트를 초기화하고 내보냅니다.
-   - `src/api/usePersistedQueries.js` 구현 [사용자 정의 React 후크](https://react.dev/docs/hooks-custom.html) AEM GraphQL의 데이터를 `Teams.js` 및 `Person.js` 구성 요소를 봅니다.
+   - `src/api/usePersistedQueries.js` 구현 [사용자 정의 React 후크](https://react.dev/learn/reusing-logic-with-custom-hooks#custom-hooks-sharing-logic-between-components) AEM GraphQL의 데이터를 `Teams.js` 및 `Person.js` 구성 요소를 봅니다.
 
 1. 다음 `src/components/Teams.js` 파일은 목록 쿼리를 사용하여 팀 및 팀원의 목록을 표시합니다.
 1. 다음 `src/components/Person.js` 파일에는 매개 변수가 있는 단일 결과 쿼리를 사용하여 한 사람의 세부 정보가 표시됩니다.
@@ -187,7 +187,7 @@ async function fetchPersistedQuery(persistedQueryName, queryParameters) {
 
 그런 다음 React 앱의 기본 보기에서 팀과 팀원을 표시하는 기능을 빌드합니다. 이 기능을 사용하려면 다음 조건을 충족해야 합니다.
 
-- 새 항목 [사용자 지정 React useEffect 후크](https://react.dev/docs/hooks-custom.html) 위치: `src/api/usePersistedQueries.js` 를 호출하는 경우 `my-project/all-teams` 지속 쿼리, AEM에서 팀 콘텐츠 조각 목록을 반환합니다.
+- 새 항목 [사용자 지정 React useEffect 후크](https://react.dev/reference/react/useEffect#useeffect) 위치: `src/api/usePersistedQueries.js` 를 호출하는 경우 `my-project/all-teams` 지속 쿼리, AEM에서 팀 콘텐츠 조각 목록을 반환합니다.
 - 의 React 구성 요소 `src/components/Teams.js` 새로운 사용자 지정 React를 호출합니다. `useEffect` 를 후크하여 팀 데이터를 렌더링합니다.
 
 완료되면 앱의 기본 보기가 AEM의 팀 데이터로 채워집니다.
@@ -337,7 +337,7 @@ async function fetchPersistedQuery(persistedQueryName, queryParameters) {
 
 이 기능을 사용하려면 다음 조건을 충족해야 합니다.
 
-- 새 항목 [사용자 지정 React useEffect 후크](https://react.dev/docs/hooks-custom.html) 위치: `src/api/usePersistedQueries.js` 매개 변수가 있는 `my-project/person-by-name` 지속 쿼리이며 1인 레코드를 반환합니다.
+- 새 항목 [사용자 지정 React useEffect 후크](https://react.dev/reference/react/useEffect#useeffect) 위치: `src/api/usePersistedQueries.js` 매개 변수가 있는 `my-project/person-by-name` 지속 쿼리이며 1인 레코드를 반환합니다.
 
 - 의 React 구성 요소 `src/components/Person.js` 개인의 전체 이름을 쿼리 매개 변수로 사용하고, 새로운 사용자 지정 React를 호출합니다. `useEffect` 후크하여 개인 데이터를 렌더링합니다.
 

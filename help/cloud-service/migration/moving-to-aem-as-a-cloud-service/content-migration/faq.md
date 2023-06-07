@@ -10,10 +10,10 @@ level: Beginner
 kt: 11200
 thumbnail: kt-11200.jpg
 exl-id: bdec6cb0-34a0-4a28-b580-4d8f6a249d01
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
 workflow-type: tm+mt
-source-wordcount: '2283'
-ht-degree: 1%
+source-wordcount: '2296'
+ht-degree: 0%
 
 ---
 
@@ -52,7 +52,7 @@ CTT 관련 Adobe 지원 티켓을 만드는 동안 자세한 내용을 제공하
 
 ### Q: 소스 시스템의 최신 BPA 보고서가 있습니다. 이 보고서를 어떻게 해야 합니까?
 
-보고서를 CSV로 내보낸 다음 Cloud Acceleration Manager에 업로드합니다. [IMS 조직과 연계됨](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html). 그런 다음 검토 프로세스를 다음과 같이 진행합니다. [준비 단계에 요약됨](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html).
+보고서를 CSV로 내보낸 다음 Cloud Acceleration Manager에 업로드합니다. [IMS 조직과 연계됨](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html). 그런 다음 검토 프로세스를 다음과 같이 진행합니다. [준비 단계에 요약됨](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html).
 
 도구에서 제공하는 코드 및 콘텐츠 복잡성 평가를 검토하고 코드 리팩터링 백로그 또는 클라우드 마이그레이션 평가를 초래하는 관련 작업 항목을 기록해 두십시오.
 
@@ -80,7 +80,7 @@ CTT 추출 프로세스에 사용되는 리소스의 양은 노드 수, Blob 수
 
 간단한 대답은 &quot;**예**&quot;.
 
-CTT 추출 및 수집 **없이** 사용자 매핑은 콘텐츠와 관련 원칙(사용자, 그룹)만 소스 AEM에서 AEMaaCS로 마이그레이션합니다. 그러나 Adobe IMS에 있고 AEMaaCS 인스턴스에 대한 액세스 권한(으로 프로비저닝됨)이 있는 이러한 사용자(ID)가 인증되어야 하는 요구 사항이 있습니다. 의 작업 [사용자 매핑 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.html) 은 로컬 AEM 사용자를 IMS 사용자에게 매핑하여 인증과 승인이 함께 작동하도록 합니다.
+CTT 추출 및 수집 **없이** 사용자 매핑은 콘텐츠와 관련 원칙(사용자, 그룹)만 소스 AEM에서 AEMaaCS로 마이그레이션합니다. 그러나 Adobe IMS에 있고 AEMaaCS 인스턴스에 대한 액세스 권한(으로 프로비저닝됨)이 있는 이러한 사용자(ID)가 인증되어야 하는 요구 사항이 있습니다. 의 작업 [사용자 매핑 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/overview-user-mapping-tool-legacy.html) 은 로컬 AEM 사용자를 IMS 사용자에게 매핑하여 인증과 승인이 함께 작동하도록 합니다.
 
 이 경우 SAML ID 공급자는 Authentication 핸들러를 사용하여 AEM에 직접 연결하는 대신 Federated/Enterprise ID을 사용하도록 Adobe IMS에 대해 구성됩니다.
 
@@ -88,15 +88,15 @@ CTT 추출 및 수집 **없이** 사용자 매핑은 콘텐츠와 관련 원칙(
 
 간단한 대답은 &quot;**예**&quot;.
 
-사용자 매핑 없이 CTT 추출 및 수집을 사용하면 콘텐츠와 관련 원칙(사용자, 그룹)이 소스 AEM에서 AEMaaCS로 마이그레이션됩니다. 그러나 Adobe IMS에 있고 AEMaaCS 인스턴스에 대한 액세스 권한(으로 프로비저닝됨)이 있는 이러한 사용자(ID)가 인증되어야 하는 요구 사항이 있습니다. 의 작업 [사용자 매핑 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.html) 은 로컬 AEM 사용자를 IMS 사용자에게 매핑하여 인증과 승인이 함께 작동하도록 합니다.
+사용자 매핑 없이 CTT 추출 및 수집을 사용하면 콘텐츠와 관련 원칙(사용자, 그룹)이 소스 AEM에서 AEMaaCS로 마이그레이션됩니다. 그러나 Adobe IMS에 있고 AEMaaCS 인스턴스에 대한 액세스 권한(으로 프로비저닝됨)이 있는 이러한 사용자(ID)가 인증되어야 하는 요구 사항이 있습니다. 의 작업 [사용자 매핑 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/overview-user-mapping-tool-legacy.html) 은 로컬 AEM 사용자를 IMS 사용자에게 매핑하여 인증과 승인이 함께 작동하도록 합니다.
 
 이 경우 사용자는 개인 Adobe ID을 사용하고 Adobe ID은 IMS 관리자가 AEMaaCS에 대한 액세스 권한을 제공하는 데 사용합니다.
 
 ### Q: CTT의 컨텍스트에서 &quot;지우기&quot;와 &quot;덮어쓰기&quot;라는 용어는 무엇을 의미합니까?
 
-의 맥락에서 [추출 단계](https://experienceleague.adobe.com/docs/experience-manager-cloud-servicemoving/cloud-migration/content-transfer-tool/extracting-content.html), 옵션은 이전 추출 주기에서 스테이징 컨테이너의 데이터를 덮어쓰거나 차등(추가/업데이트/삭제)을 추가합니다. 스테이징 컨테이너는 아무것도 아니지만 마이그레이션 세트와 연결된 Blob 저장소 컨테이너입니다. 각 마이그레이션 세트는 고유한 스테이징 컨테이너를 가져옵니다.
+의 맥락에서 [추출 단계](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#extraction-setup-phase), 옵션은 이전 추출 주기에서 스테이징 컨테이너의 데이터를 덮어쓰거나 차등(추가/업데이트/삭제)을 추가합니다. 스테이징 컨테이너는 아무것도 아니지만 마이그레이션 세트와 연결된 Blob 저장소 컨테이너입니다. 각 마이그레이션 세트는 고유한 스테이징 컨테이너를 가져옵니다.
 
-의 맥락에서 [수집 단계](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/ingesting-content.html), AEMaaCS의 전체 콘텐츠 저장소를 대체하거나 스테이징 마이그레이션 컨테이너에서 차등(추가/업데이트/삭제) 콘텐츠를 동기화하는 옵션은 +입니다.
+의 맥락에서 [수집 단계](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html), AEMaaCS의 전체 콘텐츠 저장소를 대체하거나 스테이징 마이그레이션 컨테이너에서 차등(추가/업데이트/삭제) 콘텐츠를 동기화하는 옵션은 +입니다.
 
 ### Q: 소스 시스템에는 여러 웹 사이트, 관련 에셋, 사용자, 그룹이 있습니다. AEMaaCS로 단계적으로 마이그레이션할 수 있습니까?
 
@@ -224,6 +224,6 @@ CTT 프로세스에는 다음 리소스에 대한 연결이 필요합니다.
 
 + [클라우드에서 Experience Manager으로 마이그레이션하기 위한 팁과 요령 ( Summit 2022)](https://business.adobe.com/summit/2022/sessions/tips-and-tricks-for-migrating-to-experience-manage-tw109.html)
 
-+ [CTT 전문가 시리즈 비디오](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-servicemigration/moving-to-aem-as-a-cloud-service/content-migration/content-transfer-tool.html)
++ [CTT 전문가 시리즈 비디오](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/content-migration/content-transfer-tool.html)
 
-+ [기타 AEMaaCS 주제에 대한 전문가 시리즈 비디오](https://experienceleague.adobe.com/docs/experience-manager-learncloud-service/aem-experts-series.html)
++ [기타 AEMaaCS 주제에 대한 전문가 시리즈 비디오](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-experts-series.html)
