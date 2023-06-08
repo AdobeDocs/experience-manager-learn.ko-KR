@@ -10,9 +10,9 @@ doc-type: Tutorial
 last-substantial-update: 2023-05-25T00:00:00Z
 jira: KT-13328
 thumbnail: KT-13328.jpeg
-source-git-commit: 3831c6ed1467018c9f5bf15aa9f6b8ee78034c02
+source-git-commit: 542313c0da6f5eab5befe0da1b80ab38948156ac
 workflow-type: tm+mt
-source-wordcount: '1646'
+source-wordcount: '1647'
 ht-degree: 2%
 
 ---
@@ -102,7 +102,7 @@ Analytics 설정 및 개념에 대해 자세히 알아보려면 다음 리소스
 
 XDM(경험 데이터 모델) 스키마를 사용하면 수집된 데이터를 표준화할 수 있습니다. 다음에서 [이전 자습서](./web-sdk.md)를 사용하는 XDM 스키마 `AEP Web SDK ExperienceEvent` 필드 그룹이 생성됩니다. 또한 이 XDM 스키마를 사용하여 Experience Platform에 수집된 데이터를 저장하는 데이터 세트가 만들어집니다.
 
-그러나 이 XDM 스키마에는 eVar, 이벤트 데이터를 전송할 Adobe Analytics 관련 필드 그룹이 없습니다. 플랫폼에 eVar, 이벤트 데이터가 저장되지 않도록 기존 스키마를 업데이트하는 대신 새 XDM 스키마를 만듭니다.
+단, 해당 XDM 스키마에는 eVar, 이벤트 데이터를 전송할 Adobe Analytics 관련 필드 그룹이 없습니다. 플랫폼에 eVar, 이벤트 데이터가 저장되지 않도록 기존 스키마를 업데이트하는 대신 새 XDM 스키마를 만듭니다.
 
 새로 생성된 XDM 스키마에는 `AEP Web SDK ExperienceEvent` 및 `Adobe Analytics ExperienceEvent Full Extension` 필드 그룹.
 
@@ -130,84 +130,84 @@ XDM(경험 데이터 모델) 스키마를 사용하면 수집된 데이터를 �
 
 + 다음 `Component ID` 데이터 요소 코드.
 
-   ```javascript
-   if(event && event.path && event.path.includes('.')) {    
-       // split on the `.` to return just the component ID for e.g. button-06bc532b85, tabs-bb27f4f426-item-cc9c2e6718
-       return event.path.split('.')[1];
-   }else {
-       //return dummy ID
-       return "WKND-CTA-ID";
-   }
-   ```
+  ```javascript
+  if(event && event.path && event.path.includes('.')) {    
+      // split on the `.` to return just the component ID for e.g. button-06bc532b85, tabs-bb27f4f426-item-cc9c2e6718
+      return event.path.split('.')[1];
+  }else {
+      //return dummy ID
+      return "WKND-CTA-ID";
+  }
+  ```
 
 + 다음 `Component Name` 데이터 요소 코드.
 
-   ```javascript
-   if(event && event.component && event.component.hasOwnProperty('dc:title')) {
-       // Return the Button, Link, Image, Tab name, for e.g. View Trips, Full Article, See Trips
-       return event.component['dc:title'];
-   }else {
-       //return dummy ID
-       return "WKND-CTA-Name";    
-   }    
-   ```
+  ```javascript
+  if(event && event.component && event.component.hasOwnProperty('dc:title')) {
+      // Return the Button, Link, Image, Tab name, for e.g. View Trips, Full Article, See Trips
+      return event.component['dc:title'];
+  }else {
+      //return dummy ID
+      return "WKND-CTA-Name";    
+  }    
+  ```
 
 + 다음 `all pages - on load` **규칙 조건** 코드
 
-   ```javascript
-   if(event && event.component && event.component.hasOwnProperty('@type') && event.component.hasOwnProperty('xdm:template')) {
-       return true;
-   }else{
-       return false;
-   }    
-   ```
+  ```javascript
+  if(event && event.component && event.component.hasOwnProperty('@type') && event.component.hasOwnProperty('xdm:template')) {
+      return true;
+  }else{
+      return false;
+  }    
+  ```
 
 + 다음 `home page - cta click` **규칙 이벤트** 코드
 
-   ```javascript
-   var componentClickedHandler = function(evt) {
-   // defensive coding to avoid a null pointer exception
-   if(evt.hasOwnProperty("eventInfo") && evt.eventInfo.hasOwnProperty("path")) {
-       //trigger Tag Rule and pass event
-       console.log("cmp:click event: " + evt.eventInfo.path);
-   
-       var event = {
-           //include the path of the component that triggered the event
-           path: evt.eventInfo.path,
-           //get the state of the component that triggered the event
-           component: window.adobeDataLayer.getState(evt.eventInfo.path)
-       };
-   
-       //Trigger the Tag Rule, passing in the new `event` object
-       // the `event` obj can now be referenced by the reserved name `event` by other Tag Property data elements
-       // i.e `event.component['someKey']`
-       trigger(event);
-   }
-   }
-   
-   //set the namespace to avoid a potential race condition
-   window.adobeDataLayer = window.adobeDataLayer || [];
-   //push the event listener for cmp:click into the data layer
-   window.adobeDataLayer.push(function (dl) {
-   //add event listener for `cmp:click` and callback to the `componentClickedHandler` function
-   dl.addEventListener("cmp:click", componentClickedHandler);
-   });    
-   ```
+  ```javascript
+  var componentClickedHandler = function(evt) {
+  // defensive coding to avoid a null pointer exception
+  if(evt.hasOwnProperty("eventInfo") && evt.eventInfo.hasOwnProperty("path")) {
+      //trigger Tag Rule and pass event
+      console.log("cmp:click event: " + evt.eventInfo.path);
+  
+      var event = {
+          //include the path of the component that triggered the event
+          path: evt.eventInfo.path,
+          //get the state of the component that triggered the event
+          component: window.adobeDataLayer.getState(evt.eventInfo.path)
+      };
+  
+      //Trigger the Tag Rule, passing in the new `event` object
+      // the `event` obj can now be referenced by the reserved name `event` by other Tag Property data elements
+      // i.e `event.component['someKey']`
+      trigger(event);
+  }
+  }
+  
+  //set the namespace to avoid a potential race condition
+  window.adobeDataLayer = window.adobeDataLayer || [];
+  //push the event listener for cmp:click into the data layer
+  window.adobeDataLayer.push(function (dl) {
+  //add event listener for `cmp:click` and callback to the `componentClickedHandler` function
+  dl.addEventListener("cmp:click", componentClickedHandler);
+  });    
+  ```
 
 + 다음 `home page - cta click` **규칙 조건** 코드
 
-   ```javascript
-   if(event && event.component && event.component.hasOwnProperty('@type')) {
-       //Check for Button Type OR Teaser CTA type
-       if(event.component['@type'] === 'wknd/components/button' ||
-       event.component['@type'] === 'wknd/components/teaser/cta') {
-           return true;
-       }
-   }
-   
-   // none of the conditions are met, return false
-   return false;    
-   ```
+  ```javascript
+  if(event && event.component && event.component.hasOwnProperty('@type')) {
+      //Check for Button Type OR Teaser CTA type
+      if(event.component['@type'] === 'wknd/components/button' ||
+      event.component['@type'] === 'wknd/components/teaser/cta') {
+          return true;
+      }
+  }
+  
+  // none of the conditions are met, return false
+  return false;    
+  ```
 
 +++
 
