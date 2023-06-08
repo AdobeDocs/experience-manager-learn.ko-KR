@@ -6,7 +6,7 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: beebd6a354a9efb77d6e5e463559b34be78c006e
+source-git-commit: 6b5c755bd8fe6bbf497895453b95eb236f69d5f6
 workflow-type: tm+mt
 source-wordcount: '953'
 ht-degree: 22%
@@ -61,20 +61,22 @@ ht-degree: 22%
    + 확장성{#extensibility}
       + App Builder{#app-builder}
          + [액세스 토큰 생성](./developing/extensibility/app-builder/jwt-auth.md)
-      + 콘텐츠 조각 콘솔{#content-fragments}
-         + [개요](./developing/extensibility/content-fragments/overview.md)
-         + [Adobe Developer 콘솔 프로젝트](./developing/extensibility/content-fragments/adobe-developer-console-project.md)
-         + [앱 초기화](./developing/extensibility/content-fragments/app-initialization.md)
-         + [확장 등록](./developing/extensibility/content-fragments/extension-registration.md)
-         + [머리글 메뉴](./developing/extensibility/content-fragments/header-menu.md)
-         + [작업 표시줄](./developing/extensibility/content-fragments/action-bar.md)
-         + [양식](./developing/extensibility/content-fragments/modal.md)
-         + [Adobe I/O Runtime 작업](./developing/extensibility/content-fragments/runtime-action.md)
-         + [테스트](./developing/extensibility/content-fragments/test.md)
-         + [배포](./developing/extensibility/content-fragments/deploy.md)
-         + 예제 확장{#example-extensions}
-            + [벌크 속성 업데이트](./developing/extensibility/content-fragments/example-extensions/bulk-property-update.md)
-            + [OpenAI를 사용하여 AEM 이미지 에셋 생성](./developing/extensibility/content-fragments/example-extensions/image-generation-and-image-upload.md)
+      + UI 확장성{#ui}
+         + [개요](./developing/extensibility/ui/overview.md)
+         + [Adobe Developer 콘솔 프로젝트](./developing/extensibility/ui/adobe-developer-console-project.md)
+         + [앱 초기화](./developing/extensibility/ui/app-initialization.md)
+         + [확장 등록](./developing/extensibility/ui/extension-registration.md)
+         + [양식](./developing/extensibility/ui/modal.md)
+         + [Adobe I/O Runtime 작업](./developing/extensibility/ui/runtime-action.md)
+         + [확인](./developing/extensibility/ui/verify.md)
+         + [배포](./developing/extensibility/ui/deploy.md)
+         + 콘텐츠 조각{#content-fragments}
+            + [개요](./developing/extensibility/ui/content-fragments/overview.md)
+            + 예{#examples}
+               + [벌크 속성 업데이트](./developing/extensibility/ui/content-fragments/examples/console-bulk-property-update.md)
+               + [AI 이미지 생성](./developing/extensibility/ui/content-fragments/examples/console-image-generation-and-image-upload.md)
+               + [사용자 정의 그리드 열](./developing/extensibility/ui/content-fragments/examples/custom-grid-columns.md)
+               + [XML로 내보내기](./developing/extensibility/ui/content-fragments/examples/editor-export-to-xml.md)
    + 개발 기본 사항{#basics}
       + [AEM SDK](./developing/basics/aem-sdk.md)
       + [로컬 개발 환경](./developing/basics/local-development-environment.md)
