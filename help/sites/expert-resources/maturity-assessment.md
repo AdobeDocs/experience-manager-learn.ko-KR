@@ -4,8 +4,9 @@ seo-title: AEM Sites Maturity Assessment
 description: 이 체크리스트는 AEM Sites 인스턴스의 완성도를 평가할 때 사용자와 팀이 응답해야 하는 주요 질문에 대한 개요를 제공합니다
 seo-description: This checklist provides an overview of key questions you and your team should be answering when evaluating the maturity of your AEM Sites instance
 audience: author, marketer, developer
+feature: Learn From Your Peers
 exl-id: 22164a0e-7239-43f4-8356-c12f68133255
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 2a137f71cbd876db0164e84ab437e8eda982270e
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 0%

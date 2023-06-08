@@ -6,10 +6,10 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: 19c31819f3df7c6c43753d6ec4de8f6ecf4e55dd
+source-git-commit: 2a137f71cbd876db0164e84ab437e8eda982270e
 workflow-type: tm+mt
-source-wordcount: '454'
-ht-degree: 27%
+source-wordcount: '458'
+ht-degree: 26%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 27%
    + [스타일 시스템](page-authoring/style-system-feature-video-use.md)
    + [타임워프](page-authoring/timewarp-feature-video-use.md)
    + [론치](page-authoring/launches.md)
-   + 전문가의 조언 {#expert-advice}
+   + 동료로부터 학습 {#expert-advice}
       + [사이트 계층 구조 팁](page-authoring/expert-advice/site-hierarchy.md)
 + 구성 요소 {#components}
    + [구성 요소 개발](components/component-development.md)
@@ -123,7 +123,7 @@ ht-degree: 27%
       + [경험 조각 오퍼를 사용하여 Target 활동 만들기](integrations/adobe-target/create-target-activity.md)
       + [Visual Experience Composer를 사용한 개인화](integrations/adobe-target/personalization-using-vec.md)
       + [전체 웹 페이지 경험의 개인화](integrations/adobe-target/personalization-web-page.md)
-+ 전문가 리소스 {#expert-resources}
++ 동료로부터 학습 {#expert-resources}
    + [AEM Sites 성숙도 평가](expert-resources/maturity-assessment.md)
    + [사이트 유지 관리](expert-resources/site-maintenance.md)
    + [AEM 챔피언 팁 및 요령: 세션 1](expert-resources/champion-tips-1.md)

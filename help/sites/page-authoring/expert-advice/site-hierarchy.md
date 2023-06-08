@@ -4,8 +4,9 @@ seo-title: AEM Sites Site Hierarchy, Taxonomy, and Tagging Guide
 description: AEM Sites 메타데이터, 태그 지정, 분류 및 계층에 대한 전체 개요입니다. 이 안내서를 사용하여 콘텐츠 전략이 일관되고 모범 사례를 따르는지 확인하십시오
 seo-description: A full overview of AEM Sites metadata, tagging, taxonomy, and hierarchy. Use this guide to ensure your content strategy is consistent and following best practices
 audience: author, marketer
+feature: Learn From Your Peers
 exl-id: c88c3ec7-9060-43e2-a6a2-d47bba6f7cf3
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 2a137f71cbd876db0164e84ab437e8eda982270e
 workflow-type: tm+mt
 source-wordcount: '2034'
 ht-degree: 0%
