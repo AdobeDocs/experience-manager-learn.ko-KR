@@ -7,13 +7,13 @@ kt: 13346
 topic: Development
 role: User
 level: Intermediate
-source-git-commit: 6aa3dff44a7e6f1f8ac896e30319958d84ecf57f
+exl-id: 31008bb3-316b-4035-89ea-e830b429b927
+source-git-commit: 529e98269a08431152686202a8a2890712b9c835
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '286'
 ht-degree: 1%
 
 ---
-
 
 # 드롭다운 목록에서 채울 양식 선택
 
@@ -49,22 +49,24 @@ export default function SelectFormFromDropDownList()
         'form': Form
     };
 
-const[formPath, setFormPath] = useState('');
+const[formID, setFormID] = useState('');
 const[afForms,SetOptions] = useState([]);
 const [selectedForm, setForm] = useState('');
 const HandleChange = (event) =>
      {
-        console.log("The path is "+event.target.value) 
+        console.log("The form id is "+event.target.value) 
     
-        setFormPath(event.target.value)
-        console.log("The formPath"+ formPath);
+        setFormID(event.target.value)
+        
      };
 const getForm = async () =>
      {
-        const resp = await fetch(`${formPath}/jcr:content/guideContainer.model.json`);
+        
+        console.log("The formID in getForm"+ formID);
+        const resp = await fetch(`/adobe/forms/af/${formID}`);
         let formJSON = await resp.json();
-        console.log(formJSON);
-        setForm(formJSON);
+        console.log(formJSON.afModelDefinition);
+        setForm(formJSON.afModelDefinition);
      }
 const getAFForms =async()=>
      {
@@ -88,7 +90,7 @@ const getAFForms =async()=>
         getForm()
         
 
-    },[formPath]);
+    },[formID]);
 
   return (
     <Box sx={{ minWidth: 120 }}>
@@ -97,7 +99,7 @@ const getAFForms =async()=>
         <Select
           labelId="demo-simple-select-label"
           id="demo-simple-select"
-          value={formPath}
+          value={formID}
           label="Please select a form"
           onChange={HandleChange}
           
@@ -105,7 +107,7 @@ const getAFForms =async()=>
        {afForms.map((afForm,index) => (
     
         
-          <MenuItem  key={index} value={afForm.path}>{afForm.title}</MenuItem>
+          <MenuItem  key={index} value={afForm.id}>{afForm.title}</MenuItem>
         ))}
         
        
@@ -126,10 +128,13 @@ const getAFForms =async()=>
 * [ListForm](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/List-Forms/operation/listForms). 구성 요소가 렌더링될 때 양식 가져오기 호출이 한 번만 수행됩니다. API 호출 결과는 afForms 변수에 저장됩니다.
 위의 코드에서는 map 함수를 사용하여 afForms를 반복하고 afForms 배열의 모든 항목에 대해 MenuItem 구성 요소가 생성되어 Select 구성 요소에 추가됩니다.
 
-* 양식 가져오기 - 다음 끝점에 대한 가져오기 호출이 수행됩니다. 여기서 formPath는 드롭다운 목록에서 사용자가 선택한 적응형 양식에 대한 경로입니다. 이 GET 호출의 결과는 selectedForm에 저장됩니다.
+* 양식 가져오기 - 에 대한 get 호출이 수행됨 [getForm](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/Get-Form-Definition): 여기서 id는 드롭다운 목록에서 사용자가 선택한 적응형 양식의 id입니다. 이 GET 호출의 결과는 selectedForm에 저장됩니다.
 
 ```
-${formPath}/jcr:content/guideContainer.model.json`
+const resp = await fetch(`/adobe/forms/af/${formID}`);
+let formJSON = await resp.json();
+console.log(formJSON.afModelDefinition);
+setForm(formJSON.afModelDefinition);
 ```
 
 * 선택한 양식을 표시합니다. 다음 코드를 사용하여 선택한 양식을 표시했습니다. AdaptiveForm 요소는 aemforms/af-react-renderer npm 패키지에 제공되며 매핑 및 formJson을 그 속성으로 사용합니다
@@ -141,6 +146,3 @@ ${formPath}/jcr:content/guideContainer.model.json`
 ## 다음 단계
 
 [카드 레이아웃으로 양식 표시](./display-forms-card-view.md)
-
-
-
