@@ -10,9 +10,9 @@ recommendations: noDisplay
 kt: 11603
 thumbnail: KT-11603.png
 last-substantial-update: 2023-06-02T00:00:00Z
-source-git-commit: 82df468bc9a5f83133adbd7aa7332bb5c21a695c
+source-git-commit: e59c9d1f17c6ade169e834a21b9d5f50ac3a569e
 workflow-type: tm+mt
-source-wordcount: '864'
+source-wordcount: '894'
 ht-degree: 1%
 
 ---
@@ -278,7 +278,7 @@ AEM UI 확장성 코드 예제 컬렉션을 시작합니다! 이 리소스는 Ad
       <div class="card-image">
         <figure class="image is-16by9">
           <a href="./examples/editor-rte-toolbar.md" title="리치 텍스트 편집기 도구 모음 단추" tabindex="-1">
-            <img class="is-bordered-r-small" src="./examples/assets/rte-toolbar/card.png" alt="리치 텍스트 편집기 도구 모음 단추">
+            <img class="is-bordered-r-small" src="./examples/assets/rte/rte-toolbar-card.png" alt="리치 텍스트 편집기 도구 모음 단추">
           </a>
         </figure>
       </div>
@@ -293,4 +293,25 @@ AEM UI 확장성 코드 예제 컬렉션을 시작합니다! 이 리소스는 Ad
       </div>
     </div>
   </div>   
+  <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Rich Text Editor Widget">
+    <div class="card" style="height: 100%">
+      <div class="card-image">
+        <figure class="image is-16by9">
+          <a href="./examples/editor-rte-widget.md" title="리치 텍스트 편집기 위젯" tabindex="-1">
+            <img class="is-bordered-r-small" src="./examples/assets/rte/rte-widget-card.png" alt="리치 텍스트 편집기 위젯">
+          </a>
+        </figure>
+      </div>
+      <div class="card-content is-padded-small">
+        <div class="content">
+          <p class="headline is-size-6 has-text-weight-bold"><a href="./examples/editor-rte-toolbar.md" title="리치 텍스트 편집기 위젯">리치 텍스트 편집기 위젯</a></p>
+          <p class="is-size-6">콘텐츠 조각 편집기에서 위젯을 리치 텍스트 편집기에 추가합니다.</p>
+          <a href="./examples/editor-rte-widget.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
+            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">예제 보기</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>
