@@ -10,7 +10,7 @@ jira: KT-13309
 thumbnail: KT-13309.jpg
 doc-type: article
 last-substantial-update: 2023-06-02T00:00:00Z
-source-git-commit: 6b5c755bd8fe6bbf497895453b95eb236f69d5f6
+source-git-commit: c54d078c6282f8ace936dd4a9ee0d5cc39490230
 workflow-type: tm+mt
 source-wordcount: '307'
 ht-degree: 0%
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 | AEM UI 확장 | 확장 지점 |
 | ------------------------ | --------------------- | 
-| [콘텐츠 조각 콘솔](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [머리글 메뉴](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/header-menu/) |
+| [콘텐츠 조각 편집기](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [머리글 메뉴](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/header-menu/) |
 
 ## 확장 예
 
