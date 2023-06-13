@@ -10,20 +10,15 @@ doc-type: Tutorial
 last-substantial-update: 2023-05-09T00:00:00Z
 jira: KT-12433
 thumbnail: KT-12433.jpeg
-source-git-commit: b3cc9c4fbd36cdf5be46e4546a174fea0c8da05c
+exl-id: 60a3e18a-090f-4b0e-8ba0-d4afd30577dd
+source-git-commit: d81c66e041abbd56e7115f37732550cf10e59359
 workflow-type: tm+mt
-source-wordcount: '1703'
-ht-degree: 2%
+source-wordcount: '1671'
+ht-degree: 1%
 
 ---
 
 # 콘텐츠 조각을 사용하여 AEM Headless 경험 개인화
-
->[!IMPORTANT]
->
-> Adobe TargetAEM 로 Adobe Experience Manager 컨텐츠 조각 내보내기는 as a Cloud Service으로 사용할 수 있습니다 [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko#new-features).
-
-
 
 이 튜토리얼에서는 AEM 콘텐츠 조각을 Adobe Target으로 내보낸 다음 Adobe Web SDK를 사용하여 Headless 경험을 개인화하는 데 사용하는 방법을 알아봅니다. 다음 [React WKND 앱](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html) 는 콘텐츠 조각 오퍼를 사용하는 개인화된 Target 활동을 경험에 추가하여 WKND 모험을 홍보하는 방법을 탐색하는 데 사용됩니다.
 
