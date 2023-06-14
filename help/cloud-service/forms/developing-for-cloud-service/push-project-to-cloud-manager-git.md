@@ -9,10 +9,10 @@ version: Cloud Service
 topic: Development
 kt: 8851
 exl-id: e61cea37-b931-49c6-9e5d-899628535480
-source-git-commit: 8d83d01fca3bfc9e6f674f7d73298b42f98a5d46
+source-git-commit: 10ff0d87991d7766d5ca9563062a2f7be6035e43
 workflow-type: tm+mt
-source-wordcount: '139'
-ht-degree: 0%
+source-wordcount: '147'
+ht-degree: 1%
 
 ---
 
@@ -39,3 +39,7 @@ git push -f bankingapp master:"MyFirstAF"
 ```
 
 위의 명령에서 우리는 로컬 git 저장소에서 뱅킹 앱의 친숙한 이름으로 식별되는 클라우드 관리자 저장소의 MyFirstAF 분기로 마스터 분기를 푸시하고 있습니다.
+
+## 다음 단계
+
+[개발 환경에 프로젝트 배포](./deploy-to-dev-environment.md)

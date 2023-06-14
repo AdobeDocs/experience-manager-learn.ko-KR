@@ -9,9 +9,9 @@ version: Cloud Service
 topic: Development
 kt: 8844
 exl-id: 9a7ed792-ca0d-458f-b8dd-9129aba37df6
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: 10ff0d87991d7766d5ca9563062a2f7be6035e43
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '515'
 ht-degree: 3%
 
 ---
@@ -26,7 +26,7 @@ Cygwin은 Microsoft Windows에서 기본적으로 실행되는 POSIX 호환 프�
 
 c:\cloudmanager 아래에 adoberepo라는 폴더를 만듭니다.
 
-[저장소 도구 설치].(https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo).Installing repo tool은 repo 파일을 복사하여 c:\cloudmanger\adoberepo 폴더에 배치하는 것입니다.
+[저장소 도구 설치](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo) 저장소 도구를 설치하는 것은 저장소 파일을 복사하여 c:\cloudmanger\adoberepo 폴더에 배치하는 것에 불과합니다.
 
 경로 환경 변수 C:\cygwin64\bin;C:\CloudManager\adoberepo;에 다음을 추가합니다.
 
@@ -35,7 +35,7 @@ c:\cloudmanager 아래에 adoberepo라는 폴더를 만듭니다.
 * IntelliJ 시작
 * Ctrl+Alt+S 키를 눌러 설정 창을 시작합니다.
 * 도구->외부 도구 를 선택한 다음 + 기호를 클릭하고 스크린샷에 표시된 대로 다음을 입력합니다.
-   ![rep](assets/repo.png)
+  ![rep](assets/repo.png)
 * 그룹 드롭다운 필드에 &quot;repo&quot;를 입력하여 repo라는 그룹을 만들어야 하며 작성한 모든 명령은 **보고** 그룹
 
 
@@ -85,3 +85,7 @@ aem 뱅킹 애플리케이션 프로젝트 내의 프로젝트(예: ui.content )
 * 다음 폴더 구조를 만듭니다.C:\aemformscs\aem-sdk\author\crx-quickstart\install
 * 설치 폴더에 aem-forms-addon-xxxxxx.far 복사
 * 명령 프롬프트를 열고 c:\aemformscs\aem-sdk\author으로 이동한 후 다음 명령을 입력합니다 java -jar aem-author-p4502.jar -gui. 이렇게 하면 AEM 인스턴스에 양식 추가 기능 패키지가 배포됩니다.
+
+## 다음 단계
+
+[AEM 양식 및 템플릿을 AEM 프로젝트와 동기화](./deploy-your-first-form.md)

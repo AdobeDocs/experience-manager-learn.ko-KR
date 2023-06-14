@@ -8,10 +8,10 @@ version: Cloud Service
 topic: Development
 kt: 10373
 exl-id: ab01573a-e95f-4041-8ccf-16046d723aba
-source-git-commit: 69cd5022d136e9fa84f33d2fc5ca249ac0fb6490
+source-git-commit: 10ff0d87991d7766d5ca9563062a2f7be6035e43
 workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 0%
+source-wordcount: '349'
+ht-degree: 2%
 
 ---
 
@@ -51,7 +51,7 @@ Adobe Experience Manager(AEM) 사이트에서 핵심 구성 요소(기본 포털
           componentGroup="BankingApplication - Content"/>
 ```
 
-### 검색 및 목록 작성자
+### 검색 및 리스터
 
 버튼 구성 요소의 복사본을 만들고 이름을 로 변경합니다. _searchandlister_.
 의 콘텐츠 바꾸기 `.content.xml` 다음 XML을 사용하여
@@ -82,3 +82,7 @@ Adobe Experience Manager(AEM) 사이트에서 핵심 구성 요소(기본 포털
 ```
 
 프로젝트가 배포되면 AEM 페이지에서 이러한 구성 요소를 사용하여 Forms 포털을 만들 수 있습니다.
+
+## 다음 단계
+
+[클라우드 서비스 구성 포함](./azure-storage-fdm.md)

@@ -9,9 +9,9 @@ version: Cloud Service
 topic: Development
 kt: 9006
 exl-id: 77c00a35-43bf-485f-ac12-0fffb307dc16
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: 10ff0d87991d7766d5ca9563062a2f7be6035e43
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '227'
 ht-degree: 0%
 
 ---
@@ -46,3 +46,7 @@ ui.content 프로젝트의 filter.xml에 적절한 항목을 포함합니다
 >[!NOTE]
 >
 >이제 cloud manager를 사용하여 프로젝트를 빌드하고 배포할 때 클라우드 서비스 구성에 Azure 액세스 키를 다시 입력해야 합니다. 액세스 키를 다시 입력하지 않도록 하려면에서 설명한 대로 환경 변수를 사용하여 컨텍스트 인식 구성을 만드는 것이 좋습니다. [다음 문서](./context-aware-fdm.md)
+
+## 다음 단계
+
+[컨텍스트 인식 구성 만들기](./context-aware-fdm.md)

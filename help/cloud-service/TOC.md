@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: e59c9d1f17c6ade169e834a21b9d5f50ac3a569e
+source-git-commit: 10ff0d87991d7766d5ca9563062a2f7be6035e43
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '961'
 ht-degree: 22%
 
 ---
@@ -183,17 +183,18 @@ ht-degree: 22%
       + [Cloud Acceleration Manager 사용](./migration/cloud-acceleration-manager/using.md)
 + 양식{#forms}
    + Forms용 개발 as a Cloud Service{#developing-for-cloud-service}
-      + [시작](./forms/developing-for-cloud-service/getting-started.md)
-      + [IntelliJ 설치](./forms/developing-for-cloud-service/intellij-set-up.md)
-      + [Git 설정](./forms/developing-for-cloud-service/setup-git.md)
-      + [IntelliJ와 AEM 동기화](./forms/developing-for-cloud-service/intellij-and-aem-sync.md)
-      + [양식 작성](./forms/developing-for-cloud-service/deploy-your-first-form.md)
-      + [Forms 포털 구성 요소 활성화](./forms/developing-for-cloud-service/forms-portal-components.md)
-      + [Cloud Services 및 FDM 포함](./forms/developing-for-cloud-service/azure-storage-fdm.md)
-      + [컨텍스트 인식 클라우드 구성](./forms/developing-for-cloud-service/context-aware-fdm.md)
-      + [Cloud Manager로 푸시](./forms/developing-for-cloud-service/push-project-to-cloud-manager-git.md)
-      + [개발 환경에 배포](./forms/developing-for-cloud-service/deploy-to-dev-environment.md)
-      + [Maven Archetype 업데이트](./forms/developing-for-cloud-service/updating-project-archetype.md)
+      + [1 - 시작](./forms/developing-for-cloud-service/getting-started.md)
+      + [2 - IntelliJ 설치](./forms/developing-for-cloud-service/intellij-set-up.md)
+      + [3 - Git 설정](./forms/developing-for-cloud-service/setup-git.md)
+      + [4 - IntelliJ와 AEM 동기화](./forms/developing-for-cloud-service/intellij-and-aem-sync.md)
+      + [5 - 양식 작성](./forms/developing-for-cloud-service/deploy-your-first-form.md)
+      + [6 - 사용자 지정 제출 핸들러](./forms/developing-for-cloud-service/custom-submit-to-servlet.md)
+      + [7 - Forms 포털 구성 요소 활성화](./forms/developing-for-cloud-service/forms-portal-components.md)
+      + [8 - Cloud Services 및 FDM 포함](./forms/developing-for-cloud-service/azure-storage-fdm.md)
+      + [9 - 컨텍스트 인식 클라우드 구성](./forms/developing-for-cloud-service/context-aware-fdm.md)
+      + [10 - Cloud Manager로 푸시](./forms/developing-for-cloud-service/push-project-to-cloud-manager-git.md)
+      + [11 - 개발 환경에 배포](./forms/developing-for-cloud-service/deploy-to-dev-environment.md)
+      + [12 - Maven Archetype 업데이트](./forms/developing-for-cloud-service/updating-project-archetype.md)
    + 적응형 양식 만들기{#create-first-af}
       + [소개](./forms/create-first-af/introduction.md)
       + [테마 만들기](./forms/create-first-af/create-theme.md)

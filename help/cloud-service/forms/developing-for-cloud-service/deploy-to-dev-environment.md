@@ -9,10 +9,10 @@ version: Cloud Service
 topic: Development
 kt: 8851
 exl-id: daf7d316-e9ec-41b5-89c8-fe4f4ada9701
-source-git-commit: f0beb8b32aa25d6c26243879c9c0e42095488e23
+source-git-commit: 10ff0d87991d7766d5ca9563062a2f7be6035e43
 workflow-type: tm+mt
-source-wordcount: '112'
-ht-degree: 0%
+source-wordcount: '118'
+ht-degree: 1%
 
 ---
 
@@ -40,3 +40,7 @@ Cloud Manager에 로그인하고 프로그램을 선택합니다.
 ![실행 파이프라인](assets/run-pipeline.png)
 
 코드가 배포되면 AEM Forms의 클라우드 서비스 인스턴스에 변경 사항이 표시됩니다.
+
+## 다음 단계
+
+[Maven Archetype 프로젝트 업데이트 중](./updating-project-archetype.md)

@@ -9,9 +9,9 @@ version: Cloud Service
 topic: Development
 kt: 8843
 exl-id: 34840d28-ad47-4a69-b15d-cd9593626527
-source-git-commit: 8d83d01fca3bfc9e6f674f7d73298b42f98a5d46
+source-git-commit: 10ff0d87991d7766d5ca9563062a2f7be6035e43
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '226'
 ht-degree: 0%
 
 ---
@@ -43,3 +43,7 @@ PDF 파일에서 사용자 정의 글꼴을 사용하려면 사용자 정의 글
 
 프로젝트 POM에 포함된 글꼴 모듈
 ![fonts-pom](assets/fonts-module-pom.png)
+
+## 다음 단계
+
+[Git 설정](./setup-git.md)
