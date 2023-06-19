@@ -7,10 +7,10 @@ sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: beebd6a354a9efb77d6e5e463559b34be78c006e
+source-git-commit: 7b98f583f8b54fb9c9c706521c310282dcc17ea3
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 26%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -50,6 +50,7 @@ ht-degree: 26%
    + [검색 증폭](./search-and-discovery/search-boost.md)
 
 + 고급 기능{#advanced}
+   + [3D 자산](./advanced/3d-assets.md)
    + [주석 PDF 출력](./advanced/customizing-annotations-pdf-output.md)
    + [Asset Insights](./advanced/asset-insights-launch-tutorial.md)
    + [자산 보고서](./advanced/asset-reports.md)
@@ -72,13 +73,13 @@ ht-degree: 26%
       + [AEM Brand Portal 구성](brand-portal/configure.md)
       + [에셋 소싱 구성](brand-portal/configure-asset-sourcing.md)
       + [렌디션 다운로드 활성화](brand-portal/enable-renditions-download.md)
+
    + 자산 공유{#assets-share}
       + [Asset Share Commons](./sharing/asset-share-commons-user-experience-feature-video-understand.md)
       + [로컬 AEM에서 Asset Share Commons 설정](./sharing/asset-share-commons-technical-video-setup.md)
       + [테마 자산 공유 Commons](./sharing/asset-share-commons-feature-video-theming.md)
       + [Asset Share Commons 자산 키트](./sharing/asset-share/asset-share-commons-asset-kits.md)
    + [연결된 자산](./sharing/connected-assets.md)
-
 
 + Creative 워크플로우와 통합{#creative-workflows}
    + [AEM Desktop App](./creative-workflows/aem-desktop-app.md)
@@ -126,6 +127,7 @@ ht-degree: 26%
    + AEM Sites에 사용 {#dm-with-aem-sites}
       + [경험 조각](dynamic-media/dynamic-media-experience-fragments-feature-video-use.md)
       + [Dynamic Media 핵심 구성 요소](dynamic-media/dynamic-media-core-components.md)
+
    + 튜토리얼 {#tutorials}
       + [회전 메뉴 세트 만들기](dynamic-media/tutorials/creating-different-kinds-of-sets-with-aem-dynamic-media-carousel-sets.md)
       + [이미지 집합 만들기](dynamic-media/tutorials/creating-different-kinds-of-sets-with-aem-dynamic-media-image-sets.md)
@@ -141,7 +143,6 @@ ht-degree: 26%
       + [Dynamic Media 구성 삭제](dynamic-media/tutorials/deleting-dynamic-media-configuration.md)
       + [Dynamic Media Classic 앱에서 에셋 다운로드](dynamic-media/tutorials/how-to-download-asset-in-dynamic-media-classic-app.md)
       + [DYNAMIC MEDIA CLASSIC IPS API](dynamic-media/tutorials/introduction-to-dynamic-media-classic-ips-api.md)
-
 
 + Workfront 통합{#workfront}
    + 향상된 커넥터{#enhanced-connector}
