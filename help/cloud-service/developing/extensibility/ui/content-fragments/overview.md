@@ -10,9 +10,10 @@ recommendations: noDisplay
 kt: 11603
 thumbnail: KT-11603.png
 last-substantial-update: 2023-06-02T00:00:00Z
-source-git-commit: e59c9d1f17c6ade169e834a21b9d5f50ac3a569e
+exl-id: 4e3bb09c-8437-4f1d-bc88-a882a38e246c
+source-git-commit: 8e99c660fed409d44d34cf4edf6bf1b59fa29e34
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '924'
 ht-degree: 1%
 
 ---
@@ -312,6 +313,25 @@ AEM UI 확장성 코드 예제 컬렉션을 시작합니다! 이 리소스는 Ad
         </div>
       </div>
     </div>
-  </div>
-
+  </div>   
+  <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Rich Text Editor Badge">
+    <div class="card" style="height: 100%">
+      <div class="card-image">
+        <figure class="image is-16by9">
+          <a href="./examples/editor-rte-badges.md" title="리치 텍스트 편집기 배지" tabindex="-1">
+            <img class="is-bordered-r-small" src="./examples/assets/rte/rte-badge-card.png" alt="리치 텍스트 편집기 배지">
+          </a>
+        </figure>
+      </div>
+      <div class="card-content is-padded-small">
+        <div class="content">
+          <p class="headline is-size-6 has-text-weight-bold"><a href="./examples/editor-rte-badges.md" title="리치 텍스트 편집기 배지">리치 텍스트 편집기 배지</a></p>
+          <p class="is-size-6">콘텐츠 조각 편집기에서 리치 텍스트 편집기에 배지를 추가합니다.</p>
+          <a href="./examples/editor-rte-badges.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
+            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">예제 보기</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div> 
 </div>
