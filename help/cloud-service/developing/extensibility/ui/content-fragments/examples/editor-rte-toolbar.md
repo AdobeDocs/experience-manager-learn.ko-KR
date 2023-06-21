@@ -10,17 +10,17 @@ jira: KT-13464
 thumbnail: KT-13464.jpg
 doc-type: article
 last-substantial-update: 2023-06-12T00:00:00Z
-source-git-commit: e59c9d1f17c6ade169e834a21b9d5f50ac3a569e
+exl-id: 2b72c282-bce8-4f2a-bce6-f2f31e96ec88
+source-git-commit: 6f537a0c7605b96f6c6b43ff8c5bf634369171cc
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '399'
 ht-degree: 0%
 
 ---
 
-
 # 리치 텍스트 편집기(RTE) 도구 모음에 사용자 지정 단추 추가
 
-![콘텐츠 조각 편집기 도구 모음 확장 예제](./assets/rte/rte-toolbar-hero.png){align="center"}
+>[!VIDEO](https://video.tv.adobe.com/v/3420768?quality=12&learn=on)
 
 사용자 지정 단추를에 추가할 수 있습니다 **RTE 도구 모음** 를 사용하는 콘텐츠 조각 편집기 내 `rte` 확장 점입니다. 이 예에서는 이라는 사용자 지정 단추를 추가하는 방법을 보여 줍니다. _팁 추가_ 을 클릭하여 RTE 도구 모음을 실행하고 RTE 내의 콘텐츠를 수정합니다.
 
