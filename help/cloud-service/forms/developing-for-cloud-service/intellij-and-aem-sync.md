@@ -9,7 +9,7 @@ version: Cloud Service
 topic: Development
 kt: 8844
 exl-id: 9a7ed792-ca0d-458f-b8dd-9129aba37df6
-source-git-commit: 10ff0d87991d7766d5ca9563062a2f7be6035e43
+source-git-commit: 2dceb4dd4ee1079c100c9cbca94332d61d17ef57
 workflow-type: tm+mt
 source-wordcount: '515'
 ht-degree: 3%
@@ -68,7 +68,7 @@ c:\cloudmanager 아래에 adoberepo라는 폴더를 만듭니다.
 
 aem 뱅킹 애플리케이션 프로젝트 내의 프로젝트(예: ui.content )를 선택하고 마우스 오른쪽 버튼을 클릭하면 보고 옵션이 표시되고, 보고 옵션 아래에 이전에 추가한 4개의 명령이 표시됩니다.
 
-## AEM 작성자 인스턴스 설정
+## AEM 작성자 인스턴스 설정{#set-up-aem-author-instance}
 
 다음 단계에 따라 로컬 시스템에서 클라우드 준비 인스턴스를 빠르게 설정할 수 있습니다.
 * [최신 AEM SDK 다운로드](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)

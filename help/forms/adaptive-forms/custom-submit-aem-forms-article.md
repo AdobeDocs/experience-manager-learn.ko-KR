@@ -8,10 +8,10 @@ role: Developer
 level: Experienced
 exl-id: 64b586a6-e9ef-4a3d-8528-55646ab03cc4
 last-substantial-update: 2021-04-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: 2dceb4dd4ee1079c100c9cbca94332d61d17ef57
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 1%
+source-wordcount: '207'
+ht-degree: 3%
 
 ---
 
@@ -24,11 +24,15 @@ ht-degree: 1%
 * crx에 로그인
 * 앱 아래에 &quot;sling :folder&quot; 유형의 노드를 만듭니다. 이 노드를 CustomSubmitHelpx라고 하겠습니다.
 * 새로 생성된 노드를 저장합니다.
-* 새로 만든 노드에 다음 두 속성을 추가합니다
-* 속성 이름 | 속성 값
-* guideComponentType | fd/af/components/guidesubmittype
-* 가이드 데이터 모델 | xfa,xsd,basic
-* jcr:description | CustomSubmitHelpx
+* 새로 만든 노드에 다음 세 가지 속성을 추가합니다
+
+| 속성 이름 | 속성 값 |
+|----------------    | ---------------------------------|
+| guideComponentType | fd/af/components/guidesubmittype |
+| 가이드 데이터 모델 | xfa,xsd,basic |
+| jcr:description | CustomSubmitHelpx |
+
+
 * 변경 사항을 저장합니다
 * POST CustomSubmitHelpx 노드 아래에 post.user.jsp라는 새 파일을 만듭니다.적응형 양식이 제출되면 이 JSP가 호출됩니다. 이 파일에서 요구 사항에 따라 JSP 코드를 작성할 수 있습니다. 다음 코드는 요청을 서블릿에 전달합니다.
 

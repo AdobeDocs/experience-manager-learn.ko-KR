@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 8e99c660fed409d44d34cf4edf6bf1b59fa29e34
+source-git-commit: 2dceb4dd4ee1079c100c9cbca94332d61d17ef57
 workflow-type: tm+mt
-source-wordcount: '963'
+source-wordcount: '977'
 ht-degree: 22%
 
 ---
@@ -208,6 +208,10 @@ ht-degree: 22%
       + [에셋 패널 구성](./forms/create-first-af/configure-assets-panel.md)
       + [시작 패널 구성](./forms/create-first-af/configure-start-panel.md)
       + [도구 모음 추가 및 구성](./forms/create-first-af/add-configure-toolbar.md)
+   + Headless 양식으로 맞춤형 제출 서비스{#custom-submit-headless-forms}
+      + [1 - 소개](./forms/custom-submit-headless-forms/introduction.md)
+      + [2 - 사용자 정의 제출 서비스 만들기](./forms/custom-submit-headless-forms/custom-submit-service.md)
+      + [3 - 응답 표시](./forms/custom-submit-headless-forms/handle-response-react-app.md)
    + AEM Forms 및 분석{#forms-and-analytics}
       + [소개](./forms/form-data-analytics/introduction.md)
       + [데이터 요소 만들기](./forms/form-data-analytics/data-elements.md)
