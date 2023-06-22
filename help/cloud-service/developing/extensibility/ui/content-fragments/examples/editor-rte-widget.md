@@ -10,17 +10,17 @@ jira: KT-13465
 thumbnail: KT-13465.jpg
 doc-type: article
 last-substantial-update: 2023-06-12T00:00:00Z
-source-git-commit: e59c9d1f17c6ade169e834a21b9d5f50ac3a569e
+exl-id: be4c0a6a-5c1f-4408-9ac6-56b8f0653d42
+source-git-commit: 9c8c03df7c510ab697d5222f9dffd5111519b712
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '567'
 ht-degree: 0%
 
 ---
 
-
 # 리치 텍스트 편집기(RTE)에 위젯 추가
 
-![콘텐츠 조각 편집기 위젯 예제](./assets/rte/rte-widget-hero.png){align="center"}
+>[!VIDEO](https://video.tv.adobe.com/v/3420822?quality=12&learn=on)
 
 리치 텍스트 편집기(RTE)에서 동적 컨텐츠를 추가하려면 **위젯** 기능을 사용할 수 있습니다. 위젯은 RTE의 단순 또는 복잡한 UI를 통합하는 데 도움이 되며 UI는 원하는 JS 프레임워크를 사용하여 만들 수 있습니다. 이는 를 눌러 열리는 대화상자로 생각할 수 있습니다 `{` RTE의 특수 키.
 
@@ -230,4 +230,3 @@ const DiscountCodes = () => {
 
 export default DiscountCodes;
 ```
-
