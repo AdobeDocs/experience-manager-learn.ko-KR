@@ -10,9 +10,9 @@ jira: KT-13466
 thumbnail: KT-13466.jpg
 doc-type: article
 last-substantial-update: 2023-06-12T00:00:00Z
-source-git-commit: 8e99c660fed409d44d34cf4edf6bf1b59fa29e34
+source-git-commit: c965d5ff3f49f4859779e657674dab8602fb831b
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '765'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # 리치 텍스트 편집기(RTE)에 배지 추가
 
-![콘텐츠 조각 편집기 배지 예](./assets/rte/rte-badge-home.png){align="center"}
+>[!VIDEO](https://video.tv.adobe.com/v/3420831?quality=12&learn=on)
 
 [리치 텍스트 편집기 배지](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-badges/)  는 리치 텍스트 편집기(RTE)의 텍스트를 편집할 수 없도록 하는 확장입니다. 즉, 이렇게 선언된 배지는 완전히 제거할 수만 있고 부분적으로 편집할 수 없습니다. 이러한 배지는 RTE 내에서 특수 색상을 지정하는 것도 지원하며, 이는 컨텐츠 작성자에게 텍스트가 배지이므로 편집할 수 없음을 명확하게 보여 줍니다. 또한 배지 텍스트의 의미와 관련된 시각적 큐를 제공합니다.
 
