@@ -8,13 +8,13 @@ role: User
 level: Beginner
 doc-type: Catalog
 last-substantial-update: 2023-05-12T00:00:00Z
-source-git-commit: cf37733d0fd22d560c8021eb25e6df273c1a16f7
+exl-id: 68caf431-8d81-4a72-a768-7b04082870d3
+source-git-commit: 73c7a13586edc5dbe16c16e017ee6f8ac91c1380
 workflow-type: tm+mt
-source-wordcount: '196'
-ht-degree: 11%
+source-wordcount: '219'
+ht-degree: 12%
 
 ---
-
 
 # 콘텐츠 조각 콘솔 비디오
 
@@ -30,7 +30,7 @@ Adobe Experience Manager의 콘텐츠 조각 콘솔을 사용하면 콘텐츠 �
 <div class="columns is-multiline">
     <!-- Overview -->
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
-      aria-label="Overview" tabindex="0">
+      aria-label="Overview" tabindex="1">
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
@@ -62,7 +62,7 @@ Adobe Experience Manager의 콘텐츠 조각 콘솔을 사용하면 콘텐츠 �
     </div>
     <!-- Fast filtering -->
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
-      aria-label="Fast filtering" tabindex="0">
+      aria-label="Fast filtering" tabindex="2">
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
@@ -93,7 +93,7 @@ Adobe Experience Manager의 콘텐츠 조각 콘솔을 사용하면 콘텐츠 �
     </div>
     <!-- New Editor toggle -->
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
-      aria-label="New editor toggle" tabindex="0">
+      aria-label="New editor toggle" tabindex="3">
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
@@ -124,12 +124,11 @@ Adobe Experience Manager의 콘텐츠 조각 콘솔을 사용하면 콘텐츠 �
     </div>
     <!-- Non-asset content references --->
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
-      aria-label="Non-asset content references" tabindex="0">
+      aria-label="Non-asset content references" tabindex="4">
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./editor/non-asset-content-references.md" title="Non-asset
-              content references" tabindex="-1">
+            <a href="./editor/non-asset-content-references.md" title="비자산 콘텐츠 참조" tabindex="-1">
               <img class="is-bordered-r-small"
                 src="https://video.tv.adobe.com/v/3419313?format=jpeg"
                 alt="비자산 콘텐츠 참조">
@@ -141,8 +140,7 @@ Adobe Experience Manager의 콘텐츠 조각 콘솔을 사용하면 콘텐츠 �
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1분</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./editor/non-asset-content-references.md" title="Non-asset
-                content references">비자산 콘텐츠 참조</a>
+              <a href="./editor/non-asset-content-references.md" title="비자산 콘텐츠 참조">비자산 콘텐츠 참조</a>
             </p>
             <p class="is-size-6">경험 조각 및 페이지를 콘텐츠 조각에 통합합니다.</p>
             <a href="./editor/non-asset-content-references.md"
@@ -157,7 +155,7 @@ Adobe Experience Manager의 콘텐츠 조각 콘솔을 사용하면 콘텐츠 �
     </div>
     <!-- RTE variant compare -->
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
-      aria-label="RTE variant compare" tabindex="0">
+      aria-label="RTE variant compare" tabindex="5">
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
@@ -173,8 +171,7 @@ Adobe Experience Manager의 콘텐츠 조각 콘솔을 사용하면 콘텐츠 �
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1분</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./editor/rte-variant-compare.md" title="RTE variant
-                compare">RTE 변형 비교</a>
+              <a href="./editor/rte-variant-compare.md" title="RTE 변형 비교">RTE 변형 비교</a>
             </p>
             <p class="is-size-6">채널 간에 리치 텍스트 콘텐츠를 쉽게 정렬할 수 있습니다.</p>
             <a href="./editor/rte-variant-compare.md" class="spectrum-Button
@@ -189,7 +186,7 @@ Adobe Experience Manager의 콘텐츠 조각 콘솔을 사용하면 콘텐츠 �
     </div>
     <!-- Language copies -->
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
-      aria-label="Language copies" tabindex="0">
+      aria-label="Language copies" tabindex="6">
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
@@ -219,6 +216,36 @@ Adobe Experience Manager의 콘텐츠 조각 콘솔을 사용하면 콘텐츠 �
         </div>
       </div>
     </div>
+     <!-- References -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
+      aria-label="References" tabindex="7">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9">
+            <a href="./search/references.md" title="참조"
+              tabindex="-1">
+              <img class="is-bordered-r-small"
+                src="https://video.tv.adobe.com/v/3420950?format=jpeg"
+                alt="참조">
+            </a>
+          </figure>
+        </div>
+        <div class="card-content is-padded-small">
+          <div class="content">
+            <p style="float: right;font-style: italic; color: #363636"
+              class="is-size-6">2분</p>
+            <p class="headline is-size-6 has-text-weight-bold">
+              <a href="./search/references.md" title="참조">참조</a>
+            </p>
+            <p class="is-size-6">콘텐츠 조각 참조 및 관계를 이해합니다.</p>
+            <a href="./search/references.md" class="spectrum-Button
+              spectrum-Button--outline spectrum-Button--primary
+              spectrum-Button--sizeM">
+              <span class="spectrum-Button-label has-no-wrap
+                has-text-weight-bold">비디오 보기</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-
-
