@@ -9,13 +9,14 @@ version: 6.4, 6.5, Cloud Service
 kt: 4630
 thumbnail: 32151.jpg
 topic: Content Management
+feature: Authoring
 role: User
 level: Beginner
 exl-id: cc659581-031d-4f2a-90c1-cf721e481689
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
 workflow-type: tm+mt
 source-wordcount: '143'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
@@ -25,7 +26,7 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/32151?quality=12&learn=on)
 
-버전 관리는 특정 시점에 페이지의 스냅샷을 만듭니다. 버전 관리를 사용하여 다음 작업을 수행할 수 있습니다.
+버전 관리는 특정 시점에 페이지의 스냅샷을 만듭니다. 버전 관리로 다음과 같은 작업을 수행할 수 있습니다.
 * 페이지의 새 버전 만들기
 * 페이지의 변경 사항을 실행 취소하려면 페이지를 이전 버전으로 복원하십시오. 예
 * 텍스트 및 이미지의 차이점이 강조 표시된 이전 버전과 페이지의 현재 버전을 비교합니다

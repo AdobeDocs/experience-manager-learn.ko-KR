@@ -9,7 +9,7 @@ version: Cloud Service
 topic: Development
 kt: 8842
 exl-id: 274018b9-91fe-45ad-80f2-e7826fddb37e
-source-git-commit: 10ff0d87991d7766d5ca9563062a2f7be6035e43
+source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%
@@ -19,6 +19,7 @@ ht-degree: 0%
 # 필요한 소프트웨어 설치
 
 이 자습서에서는 AEM Forms 프로젝트를 만들고 IntelliJ 및 리포지토리 도구를 사용하여 AEM Forms 프로젝트를 로컬 AEM 인스턴스와 동기화하는 데 필요한 단계를 안내합니다. 또한 프로젝트를 로컬 git 저장소에 추가하고 로컬 git 저장소를 cloud manager 저장소로 푸시하는 방법을 배웁니다.
+
 
 
 

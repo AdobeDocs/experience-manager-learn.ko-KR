@@ -3,6 +3,7 @@ title: AEM Tags, 프로젝트 연결 폴더 및 Workfront for AEM 강화 커넥�
 description: Workfront 데이터를 통해 에셋에서 AEM 태그 사용을 유도하고, 프로젝트 연결 폴더를 사용하고, Workfront 데이터를 AEM 에셋 폴더 메타데이터 스키마에 사용하는 방법에 대해 알아봅니다.
 version: Cloud Service
 topic: Content Management, Integrations
+feature: Asset Management
 role: Admin, Architect, Developer
 level: Beginner
 kt: 9720
@@ -10,7 +11,7 @@ thumbnail: 340333.jpeg
 hidefromtoc: false
 last-substantial-update: 2022-09-02T00:00:00Z
 exl-id: 520a75cd-757a-4ae9-acf6-3c1f5e1f3747
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
 workflow-type: tm+mt
 source-wordcount: '109'
 ht-degree: 0%

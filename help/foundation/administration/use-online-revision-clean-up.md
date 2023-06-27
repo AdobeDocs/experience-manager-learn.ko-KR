@@ -2,6 +2,7 @@
 title: 온라인 개정 정리 사용
 description: 온라인 수정 버전 정리에 대한 간략한 소개. 온라인 수정 정리 는 빈번한 오프라인 수정 정리의 필요성을 완화합니다.
 version: 6.4, 6.5
+feature: JCR
 topics: operations, authoring, performance
 activity: use
 audience: administrator, architect, implementer
@@ -10,7 +11,7 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 62a36ab1-3245-43ac-b943-e28ff95661bf
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
 workflow-type: tm+mt
 source-wordcount: '74'
 ht-degree: 0%

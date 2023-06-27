@@ -3,14 +3,14 @@ title: AEM as a Cloud Service 콘텐츠 마이그레이션 FAQ
 description: AEM으로의 콘텐츠 마이그레이션에 대한 FAQ에 대한 답변을 as a Cloud Service으로 제공합니다.
 version: Cloud Service
 doc-type: article
-feature: Migration
 topic: Migration
+feature: Migration
 role: Architect, Developer
 level: Beginner
 kt: 11200
 thumbnail: kt-11200.jpg
 exl-id: bdec6cb0-34a0-4a28-b580-4d8f6a249d01
-source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
+source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
 workflow-type: tm+mt
 source-wordcount: '2296'
 ht-degree: 0%
@@ -23,7 +23,7 @@ AEM으로의 콘텐츠 마이그레이션에 대한 FAQ에 대한 답변을 as a
 
 ## 용어
 
-+ **AEMaaCS**: [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/introduction.html)
++ **AEMaaCS**: [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/introduction.html?lang=ko-KR)
 + **BPA**: [모범 사례 분석기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html)
 + **CTT**: [컨텐츠 전송 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html)
 + **캠**: [Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html)

@@ -3,10 +3,11 @@ title: AEM 워크플로의 변수[Part4]
 description: AEM 워크플로우에서 XML, JSON, ArrayList, Document 유형의 변수 사용
 version: 6.5
 topic: Development
+feature: Adaptive Forms, Workflow
 role: Developer
 level: Beginner
 exl-id: 269e43f7-24cf-4786-9439-f51bfe91d39c
-source-git-commit: 4b47daf82e27f6bea4be30e3cdd132f497f4c609
+source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 0%
@@ -79,4 +80,4 @@ CustomRoutes ArrayList 변수가 제출된 데이터의 값으로 초기화되�
 * &quot;경비 관리자에게 할당&quot;이라는 새 작업이 표시됩니다.
 * 작업과 연결된 양식 열기
 * 관리자 이름을 가진 두 개의 사용자 지정 경로가 표시됩니다
-   [ReviewExpenseReportWorkflow를 탐색합니다.](http://localhost:4502/editor.html/conf/global/settings/workflow/models/ReviewExpenseReport.html) 이 워크플로우는 ArrayList 변수, JSON 유형 변수 및 Or-Split 구성 요소의 규칙 편집기를 사용합니다.
+  [ReviewExpenseReportWorkflow를 탐색합니다.](http://localhost:4502/editor.html/conf/global/settings/workflow/models/ReviewExpenseReport.html) 이 워크플로우는 ArrayList 변수, JSON 유형 변수 및 Or-Split 구성 요소의 규칙 편집기를 사용합니다.

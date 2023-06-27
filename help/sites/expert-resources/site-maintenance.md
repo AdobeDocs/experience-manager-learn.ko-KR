@@ -1,12 +1,13 @@
 ---
 title: 일상적인 사이트 유지 관리 안내서
-seo-title: Your Routine Site Maintenance Guide
 description: 관리자, 작성자 또는 개발자이든 사이트 유지 관리는 AEM Sites 인스턴스의 모든 측면에 영향을 줍니다. 이 안내서를 사용하여 성공을 위한 전략을 수립할 수 있습니다.
-seo-description: Whether you're an admin, author, or developer, site maintenance touches every aspect of your AEM Sites instance. Use this guide to ensure your strategy is set up for success.
+role: Admin
+level: Beginner, Intermediate
+topic: Administration
 audience: author, marketer, developer
 feature: Learn From Your Peers
 exl-id: 37ee3234-f91c-4f0a-b0b7-b9167e7847a9
-source-git-commit: 2a137f71cbd876db0164e84ab437e8eda982270e
+source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
 workflow-type: tm+mt
 source-wordcount: '1084'
 ht-degree: 5%

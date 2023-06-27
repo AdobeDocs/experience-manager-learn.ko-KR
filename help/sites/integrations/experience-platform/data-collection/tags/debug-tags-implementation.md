@@ -9,10 +9,11 @@ activity: setup
 kt: 6047
 thumbnail: 38567.jpg
 topic: Integrations
+feature: Integrations
 role: Developer
 level: Intermediate
 exl-id: 647447ca-3c29-4efe-bb3a-d3f53a936a2a
-source-git-commit: 1d2daf53cd28fcd35cb2ea5c50e29b447790917a
+source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 0%
@@ -41,11 +42,11 @@ Tags 구현을 디버깅하는 데 사용되는 일반적인 도구 및 기술�
 
    ![작성자 및 게시 페이지의 태그 속성](assets/satellite-object-debugging.png)
 
-## Adobe Experience Platform Debugger를 통한 디버깅
+## Adobe Experience Platform Debugger을 통한 디버깅
 
-Adobe에서 Adobe Experience Platform Debugger 제공 [Chrome 확장 프로그램](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) 및 [Firefox 추가 기능](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/) 을 사용하여 디버그하고, 이해하고, 통합에 대한 통찰력을 얻을 수 있습니다.
+Adobe이 Adobe Experience Platform Debugger 제공 [Chrome 확장 프로그램](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) 및 [Firefox 추가 기능](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/) 을 사용하여 디버그하고, 이해하고, 통합에 대한 통찰력을 얻을 수 있습니다.
 
-1. Adobe Experience Platform Debugger 확장을 열고 게시 인스턴스에서 사이트 페이지를 엽니다.
+1. Adobe Experience Platform Debugger 확장을 열고 게시 인스턴스에서 사이트 페이지를 엽니다
 
 1. 다음에서 **Adobe Experience Platform Debugger > 요약 > Adobe Experience Platform 태그** 섹션에서 이름, 버전, 빌드 날짜, 환경 및 확장과 같은 Tag 속성 세부 사항을 확인합니다.
 

@@ -3,10 +3,11 @@ title: AEM Assets 및 InDesign Server을 사용하여 에셋 템플릿 설정
 description: 자산 템플릿을 사용하면 마케터가 디지털 및 인쇄용 디지털 자산을 만들고, 관리하고, 제공할 수 있습니다. InDesign 서버와 통합할 때 에셋 템플릿을 사용하면 마케팅 브로셔, 명함, 전단지, 광고 및 엽서를 훨씬 쉽게 만들 수 있습니다. AEM을 사용한 InDesign 서버 구성에 대해서는 이 섹션에서 다룹니다.
 version: 6.4, 6.5
 topic: Content Management
+feature: Templates
 role: Developer
 level: Intermediate
 exl-id: 5b764d86-8ced-46ed-838e-4bd2e75fd64c
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 0%

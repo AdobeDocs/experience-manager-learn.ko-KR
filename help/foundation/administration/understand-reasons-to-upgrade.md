@@ -3,10 +3,11 @@ title: 업그레이드해야 하는 이유 이해하기
 description: 최신 버전의 Adobe Experience Manager 6으로 업그레이드하는 것을 고려하는 고객을 위한 주요 기능에 대한 높은 수준의 분류입니다.
 version: 6.5
 topic: Upgrade
+feature: Release Information
 role: Leader, Architect, Developer, Admin, User
 level: Beginner
 exl-id: bf4030b0-67c4-4b00-af95-f63e6f79e995
-source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
+source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
 workflow-type: tm+mt
 source-wordcount: '2602'
 ht-degree: 4%
@@ -42,7 +43,7 @@ AEM은 AEM 외부의 콘텐츠를 쉽게 사용할 수 있도록 새롭고 개�
 
 + **컨텐츠 조각** 버전 비교/비교 및 주석 지원.
 + **AEM Assets HTTP API** 노출을 지원합니다. **컨텐츠 조각** DAM에서 **JSON**.
-   **경험 조각** 지원 **전체 텍스트 검색** 및 **AEM 디스패처 캐시 무효화** 참조용 **페이지**.
+  **경험 조각** 지원 **전체 텍스트 검색** 및 **AEM 디스패처 캐시 무효화** 참조용 **페이지**.
 
 ### 자산 관리
 

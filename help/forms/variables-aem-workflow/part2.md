@@ -3,10 +3,11 @@ title: AEM 워크플로우의 변수[Part2]
 description: AEM 워크플로우에서 XML, JSON, ArrayList, Document 유형의 변수 사용
 version: 6.5
 topic: Development
+feature: Adaptive Forms, Workflow
 role: Developer
 level: Beginner
 exl-id: e7d3e0be-5194-47c2-a668-ce78e727986e
-source-git-commit: 4b47daf82e27f6bea4be30e3cdd132f497f4c609
+source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 0%
@@ -19,7 +20,7 @@ ht-degree: 0%
 
 **AEM Forms 6.5.0을 사용하는 경우**
 
-워크플로우 모델에서 제출된 데이터를 캡처하기 위해 JSON 유형의 변수를 만들 때 JSON 스키마를 변수에 연결하지 마십시오. 이는 JSON 스키마 기반 적응형 양식을 제출할 때 제출된 데이터가 JSON 스키마와 호환되지 않기 때문입니다. JSON 스키마 컴플레인 데이터는 afData.afBoundData.data 요소에 포함됩니다.
+워크플로우 모델에서 제출된 데이터를 캡처하기 위해 JSON 유형의 변수를 만들 때 JSON 스키마를 변수와 연결하지 마십시오. 이는 JSON 스키마 기반 적응형 양식을 제출할 때 제출된 데이터가 JSON 스키마와 호환되지 않기 때문입니다. JSON 스키마 컴플레인 데이터는 afData.afBoundData.data 요소에 포함됩니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26444?quality=12&learn=on)
 

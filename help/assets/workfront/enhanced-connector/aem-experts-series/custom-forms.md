@@ -3,13 +3,14 @@ title: Workfront for AEM 강화 커넥터를 사용하여 Workfront 사용자 �
 description: Workfront 사용자 정의 양식 및 AEM 메타데이터 스키마를 사용하여 에셋 메타데이터를 관리하고 동기화하도록 Workfront 및 AEM Assets을 구성하는 방법에 대해 알아봅니다.
 version: Cloud Service
 topic: Content Management, Integrations
+feature: Asset Management
 role: Admin, Architect, Developer
 level: Beginner
 kt: 9718
 thumbnail: 340332.jpeg
 hidefromtoc: false
 exl-id: 40d76e0c-69f3-4003-9f34-f393e6fb8561
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
 workflow-type: tm+mt
 source-wordcount: '81'
 ht-degree: 0%

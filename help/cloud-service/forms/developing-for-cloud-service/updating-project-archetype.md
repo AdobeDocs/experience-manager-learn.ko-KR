@@ -7,9 +7,10 @@ role: Developer
 level: Beginner, Intermediate
 version: Cloud Service
 topic: Development
+feature: AEM Project Archetype
 kt: 9534
 exl-id: c2cd9c52-6f00-4cfe-a972-665093990e5d
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 0%
@@ -39,16 +40,15 @@ Archetype 30을 사용하여 생성된 프로젝트를 Archetype 33 프로젝트
 
 * 에서 HandleFormSubmission 서블릿 복사 ```C:\CloudManager\aem-banking-application\core\src\main\java\com\aem\bankingapplication\core\servlets```
 끝
-
-   ```C:\CloudManager\aem-banking-application1\core\src\main\java\com\aem\bankingapplication\core\servlets```
+  ```C:\CloudManager\aem-banking-application1\core\src\main\java\com\aem\bankingapplication\core\servlets```
 
 * 다음에서 CustomSubmit 복사
-   ```C:\CloudManager\aem-banking-application\ui.apps\src\main\content\jcr_root\apps\bankingapplication\SubmitToAEMServlet``` aem-banking-application에서 aem-banking-application1 프로젝트로
+  ```C:\CloudManager\aem-banking-application\ui.apps\src\main\content\jcr_root\apps\bankingapplication\SubmitToAEMServlet``` aem-banking-application에서 aem-banking-application1 프로젝트로
 
 * 새 프로젝트를 IntelliJ로 가져오기
 
 * 다음 행을 포함하도록 aem-banking-application1 프로젝트의 ui.apps 모듈에서 filter.xml을 업데이트합니다
-   ```<filter root="/apps/bankingapplication/SubmitToAEMServlet"/>```
+  ```<filter root="/apps/bankingapplication/SubmitToAEMServlet"/>```
 
 모든 코드를 새 프로젝트에 복사한 후 이 프로젝트를 cloud manager에 푸시할 수 있습니다.
 

@@ -3,6 +3,7 @@ title: Workfront for AEM 강화 커넥터의 초기 설정 및 구성
 description: AEM Assets과 Workfront의 결합된 기능을 활용하여 Workfront for Experience Manager 강화 커넥터를 설정하고 구성하는 방법에 대해 알아봅니다.
 version: Cloud Service
 topic: Content Management, Integrations
+feature: Asset Management
 role: Admin, Architect, Developer
 level: Beginner
 kt: 9717
@@ -10,7 +11,7 @@ thumbnail: 340331.jpeg
 hidefromtoc: false
 last-substantial-update: 2022-09-02T00:00:00Z
 exl-id: f0018d16-af96-4b92-b0fc-6130d812bf8f
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
 workflow-type: tm+mt
 source-wordcount: '81'
 ht-degree: 0%

@@ -3,10 +3,11 @@ title: AEM Assets의 InDesign 파일 및 자산 템플릿 이해
 description: 이 비디오 튜토리얼에서는 AEM Assets의 InDesign 템플릿 기능에 사용하기 위한 자산 파일 및 모든 관련 고려 사항을 정의하는 과정을 안내합니다.
 version: 6.4, 6.5
 topic: Content Management
+feature: Templates
 role: User
 level: Intermediate
 exl-id: c418e94a-b18e-429a-b41c-2bf32e158598
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 1%
@@ -35,6 +36,7 @@ ht-degree: 1%
 4. FPO 로고 이미지 추가([zip에 제공](assets/asset-templates-tutorial-video--supporting-files.zip))을 클릭하여 기본 페이지의 로고 요소에 추가합니다.
 
    * **마우스 오른쪽 버튼 클릭**&#x200B;및 선택&#x200B;**피팅(Fitting) > 프레임 피팅 옵션... > 컨텐트 피팅(Content Fitting) > 비례적으로 프레임 채우기(Fill Frame Proportional)**
+
    [프레임 맞춤 옵션에 대해 자세히 알아보기](https://helpx.adobe.com/indesign/using/frames-objects.html#fitting_objects_to_frames)및 사용 사례에 적합한 옵션입니다.
 
 5. 바로 붙여넣기를 통해 페이지 및 페이지의 기본 템플릿에서 헤더(로고 및 회사 이름) 아래로 복사합니다.
