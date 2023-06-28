@@ -5,7 +5,7 @@ topics: development
 version: Cloud Service
 activity: develop
 audience: developer
-KT: 4132
+jira: KT-13565
 mini-toc-levels: 1
 index: y
 thumbnail: 30476.jpg
@@ -15,7 +15,7 @@ role: Developer
 level: Beginner
 exl-id: 09a600f4-1ada-4fb7-ae44-586364cff389
 recommendations: disable
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 5f43db64f68218ed3d349508a2c4fd232601a9ef
 workflow-type: tm+mt
 source-wordcount: '599'
 ht-degree: 7%
@@ -63,7 +63,7 @@ WKND Site의 완성된 버전을 참조로도 사용할 수 있습니다. [https
 
 ### Adobe Stock 제공
 
-WKND 참조 웹 사이트의 이미지 중 대부분은 [Adobe Stock](https://stock.adobe.com/) 및 은 데모 에셋 추가 약관에 정의된 서드파티 자료입니다. [https://www.adobe.com/legal/terms.html](https://www.adobe.com/kr/legal/terms.html). Adobe Stock 이미지를 웹 사이트 또는 마케팅 자료에서 제공하는 것과 같이, 이 데모 웹 사이트를 보는 것 이상의 다른 용도로 사용하려면, Adobe Stock에서 라이선스를 구입할 수 있습니다.
+WKND 참조 웹 사이트의 이미지 중 대부분은 [Adobe Stock](https://stock.adobe.com/) 및 은 데모 에셋 추가 약관에 정의된 서드파티 자료입니다. [https://www.adobe.com/legal/terms.html](https://www.adobe.com/legal/terms.html). Adobe Stock 이미지를 웹 사이트 또는 마케팅 자료에서 제공하는 것과 같이, 이 데모 웹 사이트를 보는 것 이상의 다른 용도로 사용하려면, Adobe Stock에서 라이선스를 구입할 수 있습니다.
 
 Adobe Stock을 사용하면 사진, 그래픽, 비디오 및 템플릿을 포함하여 1억 4천만 개 이상의 고품질 로열티가 없는 이미지를 활용하여 크리에이티브 프로젝트를 바로 시작할 수 있습니다.
 
