@@ -10,7 +10,7 @@ jira: KT-11862
 thumbnail: KT-11862.png
 last-substantial-update: 2023-02-15T00:00:00Z
 exl-id: 1d1bcb18-06cd-46fc-be2a-7a3627c1e2b2
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 27d065761643030de68176ebb4ca10bc152844df
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 0%
@@ -43,7 +43,7 @@ $ git clone git@github.com:adobe/aem-guides-wknd.git
 
 ```
 $ cd aem-guides-wknd/
-$ mvn clean install -PautoInstallSinglePackage
+$ mvn clean package
 ```
 
 ## AEM-RDE 플러그인을 사용하여 AEM 아티팩트 배포
@@ -122,11 +122,11 @@ $ aio aem:rde:install dispatcher/target/aem-guides-wknd.dispatcher.cloud-2.1.3-S
 $ aio aem:rde:install --help
 ```
 
-깃발은 자기 설명력이야, `-s` 플래그는 작성자 또는 게시 서비스에만 배포를 타겟팅하는 데 유용합니다. 사용 `-t` 배포 시 플래그 지정 **content-file 또는 content-xml** 와 함께 있는 파일 `-p` AEM RDE 환경에서 대상 JCR 경로를 지정하는 플래그입니다.
+깃발은 자기 설명력이에요 `-s` 플래그는 작성자 또는 게시 서비스에만 배포를 타겟팅하는 데 유용합니다. 사용 `-t` 배포 시 플래그 지정 **content-file 또는 content-xml** 와 함께 있는 파일 `-p` AEM RDE 환경에서 대상 JCR 경로를 지정하는 플래그입니다.
 
 ### OSGi 번들 배포
 
-OSGi 번들을 배포하는 방법에 대해 알아보려면 다음을 향상하겠습니다. `HelloWorldModel` Java™ 클래스 및 RDE에 배포
+OSGi 번들을 배포하는 방법에 대해 알아보려면 를 향상하겠습니다. `HelloWorldModel` Java™ 클래스 및 RDE에 배포
 
 1. 를 엽니다. `HelloWorldModel.java` 파일 출처: `core/src/main/java/com/adobe/aem/guides/wknd/core/models` 폴더
 1. 업데이트 `init()` 메서드를 다음과 같이 바꿉니다.
