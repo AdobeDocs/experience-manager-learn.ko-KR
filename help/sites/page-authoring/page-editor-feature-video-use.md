@@ -15,10 +15,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: b120fb79-729e-4155-ba10-e5f7bb07eefa
-source-git-commit: d0027647ce3157173d2592728757150199db930d
+source-git-commit: 1623e1eaf966e625e1ec402a2996e8beb1e1cd03
 workflow-type: tm+mt
 source-wordcount: '127'
-ht-degree: 8%
+ht-degree: 15%
 
 ---
 
@@ -35,6 +35,6 @@ AEM Site의 페이지 편집기는 웹 콘텐츠를 만들고 편집할 수 있�
 
 ## 추가 리소스 {#additional-resources}
 
-* [AEM 페이지 편집기 설명서[(https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/editing-content.html)]
+* [AEM 페이지 편집기 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/editing-content.html)
 * [페이지 콘텐츠 설명서 편집](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html)
 * [사이트 작성 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html)
