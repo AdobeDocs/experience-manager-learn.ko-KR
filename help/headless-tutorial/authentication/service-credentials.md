@@ -14,9 +14,9 @@ role: Developer
 level: Intermediate, Experienced
 last-substantial-update: 2023-01-12T00:00:00Z
 exl-id: e2922278-4d0b-4f28-a999-90551ed65fb4
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 96d576ae24305c1f41073921fbb904e07c1206f6
 workflow-type: tm+mt
-source-wordcount: '1937'
+source-wordcount: '1924'
 ht-degree: 0%
 
 ---
@@ -107,7 +107,7 @@ AEM as Cloud Service 환경의 서비스 자격 증명이 초기화되면 Adobe 
 1. 외부 애플리케이션은 서비스 자격 증명의 정보를 사용하여 JWT 토큰을 구성합니다
 1. JWT 토큰은 액세스 토큰으로 교환하기 위해 Adobe IMS로 전송됩니다
 1. Adobe IMS는 AEM as a Cloud Service에 액세스하는 데 사용할 수 있는 액세스 토큰을 반환합니다
-   + 액세스 토큰에 만료 요청이 있을 수 있습니다. 액세스 토큰의 수명을 짧게 유지하고 필요할 때 새로 고치는 것이 가장 좋습니다.
+   + 액세스 토큰은 만료 시간을 변경할 수 없습니다.
 1. AEM 외부 애플리케이션은 HTTP 요청의 인증 헤더에 전달자 토큰으로 액세스 토큰을 추가하여 as a Cloud Service으로 HTTP 요청을 수행합니다
 1. AEM as a Cloud Service은 HTTP 요청을 수신하고 요청을 인증하며 HTTP 요청에서 요청한 작업을 수행하고 HTTP 응답을 다시 외부 응용 프로그램으로 반환합니다
 
