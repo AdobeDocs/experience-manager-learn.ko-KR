@@ -12,10 +12,10 @@ topic: Security
 role: Developer
 level: Intermediate
 exl-id: 6009d9cf-8aeb-4092-9e8c-e2e6eec46435
-source-git-commit: 73bb813c961cf988355984b0385998a493ee3716
+source-git-commit: 325c0204c33686e09deb82dd159557e0b8743df6
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 1%
+source-wordcount: '966'
+ht-degree: 2%
 
 ---
 
@@ -182,7 +182,22 @@ Dispatcher 4.1.1 이상 응답 헤더를 캐시할 수 있습니다. 이를 통�
 | 아니요 | AEM 게시 | 인증됨 | 인증된 요청에 대해 CORS 헤더를 캐시하지 마십시오. 이는 요청하는 사용자의 인증/권한 부여 상태가 전달된 리소스에 미치는 영향을 판단하기 어렵기 때문에 인증된 요청을 캐시하지 않는다는 일반적인 지침을 따릅니다. |
 | 예 | AEM 게시 | 익명 | Dispatcher에서 캐시 가능한 익명 요청은 응답 헤더도 캐시할 수 있으므로 향후 CORS 요청이 캐시된 콘텐츠에 액세스할 수 있습니다. AEM 게시의 모든 CORS 구성 변경 **필수** 영향을 받는 캐시된 리소스의 무효화가 뒤따릅니다. 우수 사례에서는 영향을 줄 수 있는 캐시된 콘텐츠를 확인하기 어렵기 때문에 Dispatcher 캐시가 삭제되는 코드 또는 구성 배포에 대해 설명합니다. |
 
-CORS 헤더의 캐싱을 허용하려면 지원하는 모든 AEM Publish dispatcher.any 파일에 다음 구성을 추가하십시오.
+### CORS 요청 헤더 허용
+
+필요한 항목을 허용하려면 [처리를 위해 AEM으로 전달할 HTTP 요청 헤더](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders), Dispatcher에 허용되어야 합니다. `/clientheaders` 구성.
+
+```
+/clientheaders {
+   ...
+   "Origin"
+   "Access-Control-Request-Method"
+   "Access-Control-Request-Headers"
+}
+```
+
+### CORS 응답 헤더 캐싱
+
+캐시된 콘텐츠에서 CORS 헤더를 캐시하고 제공할 수 있도록 하려면 다음을 추가하십시오 [/cache /headers 구성](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#caching-http-response-headers) AEM 게시로 `dispatcher.any` 파일.
 
 ```
 /publishfarm {
