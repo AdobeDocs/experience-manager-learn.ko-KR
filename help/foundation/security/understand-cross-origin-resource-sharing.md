@@ -12,7 +12,7 @@ topic: Security
 role: Developer
 level: Intermediate
 exl-id: 6009d9cf-8aeb-4092-9e8c-e2e6eec46435
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: c6ca64d1b66bbf5bedf73736b5d94130bc21f6c8
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 1%
@@ -64,7 +64,7 @@ CORS 구성은 AEM에서 OSGi 구성 팩토리로 관리되며 각 정책은 팩
 #### [!UICONTROL 노출된 헤더]
 
 * `"exposedheaders" <header>`
-* 브라우저가 액세스할 수 있는 요청 헤더를 나타내는 헤더 매개 변수 목록입니다.
+* 브라우저가 액세스할 수 있는 응답 헤더를 나타내는 헤더 매개 변수 목록입니다.
 
 #### [!UICONTROL 최대 나이]
 
