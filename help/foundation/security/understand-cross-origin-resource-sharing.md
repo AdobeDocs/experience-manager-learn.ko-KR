@@ -12,9 +12,9 @@ topic: Security
 role: Developer
 level: Intermediate
 exl-id: 6009d9cf-8aeb-4092-9e8c-e2e6eec46435
-source-git-commit: 325c0204c33686e09deb82dd159557e0b8743df6
+source-git-commit: d2a9596ddadd897793a0fce8421aa8b246b45b12
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '1007'
 ht-degree: 2%
 
 ---
@@ -64,7 +64,7 @@ CORS 구성은 AEM에서 OSGi 구성 팩토리로 관리되며 각 정책은 팩
 #### [!UICONTROL 노출된 헤더]
 
 * `"exposedheaders" <header>`
-* 브라우저가 액세스할 수 있는 응답 헤더를 나타내는 헤더 매개 변수 목록입니다.
+* 브라우저가 액세스할 수 있는 응답 헤더를 나타내는 헤더 매개 변수 목록입니다. CORS 요청(프리플라이트 아님)의 경우 비어 있지 않으면 이러한 값이 `Access-Control-Expose-Headers` 응답 헤더. 그러면 목록의 값(헤더 이름)이 브라우저에 액세스할 수 있게 됩니다. 이 값이 없으면 브라우저에서 해당 헤더를 읽을 수 없습니다.
 
 #### [!UICONTROL 최대 나이]
 
@@ -74,7 +74,7 @@ CORS 구성은 AEM에서 OSGi 구성 팩토리로 관리되며 각 정책은 팩
 #### [!UICONTROL 지원되는 헤더]
 
 * `"supportedheaders" <header>`
-* 목록 `header` 실제 요청을 수행할 때 사용할 수 있는 HTTP 헤더를 나타내는 매개 변수입니다.
+* 목록 `header` 실제 요청을 만들 때 사용할 수 있는 HTTP 요청 헤더를 나타내는 매개 변수입니다.
 
 #### [!UICONTROL 허용된 메서드]
 
@@ -98,8 +98,7 @@ CORS 구성은 AEM에서 OSGi 구성 팩토리로 관리되며 각 정책은 팩
   ],
   "supportedmethods":[
     "GET",
-    "HEAD",
-    "OPTIONS"
+    "HEAD"
   ],
   "alloworigin":[
     "http://127.0.0.1:3000",
@@ -140,7 +139,6 @@ CORS 구성은 AEM에서 OSGi 구성 팩토리로 관리되며 각 정책은 팩
     "HEAD"
     "POST",
     "DELETE",
-    "OPTIONS",
     "PUT"
   ],
   "alloworigin":[
