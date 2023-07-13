@@ -14,9 +14,9 @@ role: Developer
 level: Intermediate, Experienced
 last-substantial-update: 2023-01-12T00:00:00Z
 exl-id: e2922278-4d0b-4f28-a999-90551ed65fb4
-source-git-commit: 96d576ae24305c1f41073921fbb904e07c1206f6
+source-git-commit: f8ed9fddb5f244860ba229b46a80638a7269d95e
 workflow-type: tm+mt
-source-wordcount: '1924'
+source-wordcount: '1925'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ AEM as a Cloud Service(Adobe Experience Manager)과의 통합을 통해 AEM 서�
 기술 계정은 한 번 생성되지만, 기술 계정과 연결된 서비스 자격 증명을 관리하는 데 사용되는 개인 키는 시간이 지남에 따라 관리될 수 있습니다. 예를 들어 서비스 자격 증명 사용자가 계속 액세스할 수 있도록 하려면 현재 개인 키가 만료되기 전에 새 개인 키/서비스 자격 증명을 생성해야 합니다.
 
 1. 다음으로 로그인했는지 확인합니다.
-   + __Adobe IMS Org 관리자__
+   + __Adobe IMS Org의 시스템 관리자__
    + 의 멤버 __AEM 관리자__ 의 IMS 제품 프로필 __AEM 작성자__
 1. 에 로그인 [Adobe Cloud Manager](https://my.cloudmanager.adobe.com)
 1. AEM as a Cloud Service 환경이 포함된 프로그램을 열어 다음에 대한 서비스 자격 증명을 통합합니다.
