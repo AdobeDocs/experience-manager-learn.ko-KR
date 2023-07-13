@@ -8,9 +8,9 @@ breadcrumb-title: AEM Forms 튜토리얼
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: 10ff0d87991d7766d5ca9563062a2f7be6035e43
+source-git-commit: cc24ebca488ea286e8a4605edfb39420c1c10022
 workflow-type: tm+mt
-source-wordcount: '1828'
+source-wordcount: '1832'
 ht-degree: 2%
 
 ---
@@ -45,6 +45,7 @@ ht-degree: 2%
    + [OCR 데이터 추출](some-useful-integrations/ocr-data-extraction.md)
    + [연속 드롭다운 목록](some-useful-integrations/geonames-org.md)
    + [ServiceNow와 통합](some-useful-integrations/service-now.md)
+   + [SendGrid를 사용하여 이메일 보내기](some-useful-integrations/send-grid.md)
 + OSGi 번들 생성 {#creating-your-first-osgi-bundle}
    + [1 - 환경 설정](creating-your-first-osgi-bundle/create-your-first-osgi-bundle.md)
    + [2 - OSGi 서비스 만들기](creating-your-first-osgi-bundle/create-osgi-service.md)
