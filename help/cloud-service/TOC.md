@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 5feeed5c0725c7985a8fe85794315c272e5cde4b
+source-git-commit: 695cccfdd03618505b2d3419b1ad82d8dbd0a122
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '987'
 ht-degree: 22%
 
 ---
@@ -99,10 +99,11 @@ ht-degree: 22%
       + [OSGi 구성 기본 사항](./developing/osgi-services/configurations.md)
       + [OCD를 사용한 OSGi 구성](./developing/osgi-services/configurations-ocd.md)
    + 고급{#advanced}
-      + [웹에 최적화된 이미지 API](./developing/advanced/web-optimized-image-delivery-java-apis.md)
-      + [서비스 사용자](./developing/advanced/service-users.md)
-      + [사용자 정의 네임스페이스](./developing/advanced/custom-namespaces.md)
       + [페이지 변형 캐싱](./developing/advanced/variant-caching.md)
+      + [CSRF 보호](./developing/advanced/csrf-protection.md)
+      + [사용자 정의 네임스페이스](./developing/advanced/custom-namespaces.md)
+      + [서비스 사용자](./developing/advanced/service-users.md)
+      + [웹에 최적화된 이미지 API](./developing/advanced/web-optimized-image-delivery-java-apis.md)
    + 신속한 개발 환경{#rde}
       + [개요](./developing/rde/overview.md)
       + [설정 방법](./developing/rde/how-to-setup.md)
@@ -301,7 +302,7 @@ ht-degree: 22%
    + [문제 해결](./asset-compute/troubleshooting.md)
 
 + 여러 단계 Tutorials{#multi-step-tutorials}
-   + [AEM Sites 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR)
+   + [AEM Sites 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
    + [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)
    + [SPA 편집기(React)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html)
    + [AEM Sites 및 Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html)
