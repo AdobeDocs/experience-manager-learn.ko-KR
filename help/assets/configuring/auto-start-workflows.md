@@ -8,17 +8,46 @@ thumbnail: 37323.jpg
 topic: Development
 role: Developer
 level: Intermediate
-last-substantial-update: 2021-09-22T00:00:00Z
+last-substantial-update: 2023-05-14T00:00:00Z
 exl-id: 5e423f2c-90d2-474f-8bdc-fa15ae976f18
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 861b171b8ebbcf9565bdc94fb84a043ecb99c00a
 workflow-type: tm+mt
-source-wordcount: '38'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
 
 # 자동 시작 워크플로우
 
-AEM 자동 시작 워크플로우는 업로드 또는 재처리 시 사용자 지정 워크플로를 자동으로 호출하여 자산 처리를 as a Cloud Service으로 확장합니다.
+AEM 자동 시작 워크플로우는 자산 처리가 완료되면 업로드 또는 재처리 시 사용자 지정 워크플로를 자동으로 호출하여 자산 처리를 as a Cloud Service으로 확장합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/37323?quality=12&learn=on)
+> `Notice`: 워크플로우 런처를 사용하는 대신 자산 후처리를 사용자 지정하는 자동 시작 워크플로우를 사용합니다. 자동 시작 워크플로우는 _전용_ 에셋 처리가 완료되면 에셋 처리 중에 여러 번 호출할 수 있는 런처 대신 호출됩니다.
+
+## 사후 처리 워크플로 사용자 지정
+
+후처리 워크플로우를 사용자 지정하려면 기본 Assets 클라우드 후처리를 복사합니다. [워크플로 모델](../../foundation/workflow/use-the-workflow-editor.md).
+
+1. 다음으로 이동하여 워크플로우 모델 화면에서 시작 _도구_ > _워크플로_ > _모델_
+2. 다음 항목을 찾아 선택합니다. _Assets Cloud 후처리_ 워크플로 모델<br/>
+   ![Assets Cloud 후처리 워크플로우 모델 선택](assets/auto-start-workflow-select-workflow.png)
+3. 다음 항목 선택 _복사_ 사용자 지정 워크플로를 만드는 단추
+4. 지금 워크플로 모델(이라고 함)을 선택합니다. _Assets Cloud 사후 처리1_)을 클릭하고 _편집_ 워크플로 편집 단추
+5. 워크플로우 속성에서 사용자 정의 사후 처리 워크플로우에 의미 있는 이름을 지정합니다<br/>
+   ![이름 변경](assets/auto-start-workflow-change-name.png)
+6. 비즈니스 요구 사항을 충족하는 단계를 추가합니다. 이 경우 에셋의 처리가 완료되면 작업을 추가합니다. 워크플로우의 마지막 단계가 항상 인지 확인합니다. _워크플로우 완료_ 단계<br/>
+   ![워크플로우 단계 추가](assets/auto-start-workflow-customize-steps.png)
+   > `Note`: 자동 시작 워크플로는 모든 자산 업로드 또는 재처리에서 실행되므로 워크플로 단계의 확장 의미를 신중하게 고려하십시오. 특히 다음과 같은 대량 작업의 경우 그러합니다. [일괄 가져오기](../../cloud-service/migration/bulk-import.md) 또는 마이그레이션.
+7. 다음 항목 선택 _동기화_ 변경 사항을 저장하고 워크플로우 모델을 동기화하는 버튼
+
+## 사용자 지정 사후 처리 워크플로우 사용
+
+사용자 지정 사후 처리는 폴더에 구성됩니다. 폴더에서 사용자 지정 사후 처리 워크플로우를 구성하려면 다음을 수행합니다.
+
+1. 워크플로를 구성할 폴더를 선택하고 폴더 속성을 편집합니다
+2. 다음으로 전환 _자산 처리_ 탭
+3. 에서 사용자 정의 사후 처리 워크플로 선택 _워크플로우 자동 시작_ 선택 상자<br/>
+   ![사후 처리 워크플로 설정](assets/auto-start-workflow-set-workflow.png)
+4. 변경 사항 저장
+
+이제 해당 폴더에서 업로드되거나 재처리된 모든 자산에 대해 사용자 지정 사후 처리 워크플로우가 실행됩니다.
