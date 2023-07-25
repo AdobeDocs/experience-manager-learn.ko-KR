@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 695cccfdd03618505b2d3419b1ad82d8dbd0a122
+source-git-commit: 52c8d96a03b4d6e4f2a0a3c92f4307203e236417
 workflow-type: tm+mt
-source-wordcount: '987'
-ht-degree: 22%
+source-wordcount: '1015'
+ht-degree: 21%
 
 ---
 
@@ -248,6 +248,15 @@ ht-degree: 22%
       + [Azure Storage에 양식 데이터 저장](./forms/forms-cs-azure-portal/create-af.md)
       + [미리 채우기 양식](./forms/forms-cs-azure-portal/prefill-af-storage.md)
       + [쿼리 제출](./forms/forms-cs-azure-portal/query-submitted-data.md)
+   + 양식 채우기 저장 및 다시 시작{#prefill-azure-storage}
+      + [1- 소개](./forms/prefill-azure-storage/introduction.md)
+      + [2- 페이지 구성 요소 만들기](./forms/prefill-azure-storage/page-component.md)
+      + [3- 적응형 양식 템플릿 만들기](./forms/prefill-azure-storage/associate-page-component.md)
+      + [4- Azure 스토리지 통합 만들기](./forms/prefill-azure-storage/create-fdm.md)
+      + [5 - SendGrid 통합 만들기](./forms/prefill-azure-storage/send-grid-fdm.md)
+      + [6 - 적응형 양식 만들기](./forms/prefill-azure-storage/create-af.md)
+      + [7 - 샘플 자산 배포](./forms/prefill-azure-storage/deploy-sample-assets.md)
+
    + 검토 워크플로우 만들기{#create-aem-workflow}
       + [워크플로 스토리지 외부화](./forms/create-aem-workflow/externalize-workflow.md)
       + [워크플로우 모델 만들기](./forms/create-aem-workflow/create-workflow.md)
