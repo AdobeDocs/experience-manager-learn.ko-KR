@@ -1,29 +1,30 @@
 ---
-title: Adobe Experience Manager과 Adobe Target 통합
-seo-title: An article covering different ways to integrate Adobe Experience Manager(AEM) with Adobe Target for delivering personalized content.
+title: AEM Sites과 Adobe Target 통합
+seo-title: An article covering different ways to integrate Adobe Experience Manager (AEM) Sites with Adobe Target for delivering personalized content.
 description: 다양한 시나리오를 위해 Adobe Target과 함께 Adobe Experience Manager을 설정하는 방법을 다루는 문서입니다.
 seo-description: An article covering how to set up Adobe Experience Manager with Adobe Target for different scenarios.
 feature: Experience Fragments
 topic: Personalization
 role: Developer
 level: Intermediate
+badgeIntegration: label="통합" type="positive"
+badgeVersions: label="AEM Sites 6.5" before-title="false"
 exl-id: 54a30cd9-d94a-4de5-82a1-69ab2263980d
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 3%
+source-wordcount: '661'
+ht-degree: 4%
 
 ---
 
-# Adobe Experience Manager과 Adobe Target 통합
+# AEM Sites과 Adobe Target 통합
 
-이 섹션에서는 다양한 시나리오에 대해 Adobe Target을 사용하여 Adobe Experience Manager을 설정하는 방법에 대해 설명합니다. 시나리오 및 조직 요구 사항 기반.
+이 섹션에서는 다양한 시나리오에 대해 Adobe Target을 사용하여 Adobe Experience Manager Sites을 설정하는 방법에 대해 설명합니다. 시나리오 및 조직 요구 사항 기반.
 
 * **Adobe Target JavaScript 라이브러리 추가(모든 시나리오에 필요)**
 AEM에 호스팅된 사이트의 경우 다음을 사용하여 사이트에 Target 라이브러리를 추가할 수 있습니다. [시작](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html). Launch는 관련 고객 환경을 향상하는 데 필요한 모든 태그를 배포하고 관리하는 간단한 방법을 제공합니다.
 * **Adobe Target Cloud Services 추가(경험 조각 시나리오에 필요)**
-경험 조각 오퍼를 사용하여 Adobe Target 내에서 활동을 만들려는 AEM 고객의 경우 이전 Cloud Services을 사용하여 Adobe Target을 AEM과 통합해야 합니다. 이 통합은 AEM에서 경험 조각을 HTML/JSON 오퍼로 Target에 푸시하고 오퍼를 AEM과 동기화 상태로 유지하는 데 필요합니다. 
-*이 통합은 시나리오 1을 구현하는 데 필요합니다.*
+경험 조각 오퍼를 사용하여 Adobe Target 내에서 활동을 만들려는 AEM 고객의 경우 이전 Cloud Services을 사용하여 Adobe Target을 AEM과 통합해야 합니다. 이 통합은 AEM에서 경험 조각을 HTML/JSON 오퍼로 Target에 푸시하고 오퍼를 AEM과 동기화 상태로 유지하는 데 필요합니다. *이 통합은 시나리오 1을 구현하는 데 필요합니다.*
 
 ## 사전 요구 사항
 
@@ -45,11 +46,11 @@ AEM에 호스팅된 사이트의 경우 다음을 사용하여 사이트에 Targ
 * **환경**
    * Java 1.8 또는 Java 11(AEM 6.5+ 전용)
    * Apache Maven (3.3.9 이상)
-   * Chrome
+   * 크롬
 
 >[!NOTE]
 >
-> 고객은 의 Experience Platform Launch 및 Adobe I/O을 제공받아야 합니다. [Adobe 지원](https://helpx.adobe.com/kr/contact/enterprise-support.ec.html) 또는 시스템 관리자에게 문의하십시오
+> 고객은 의 Experience Platform Launch 및 Adobe I/O을 제공받아야 합니다. [Adobe 지원](https://helpx.adobe.com/contact/enterprise-support.ec.html) 또는 시스템 관리자에게 문의하십시오
 
 ### AEM 설정{#set-up-aem}
 

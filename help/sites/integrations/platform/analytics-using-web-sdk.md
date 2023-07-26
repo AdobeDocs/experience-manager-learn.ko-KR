@@ -1,6 +1,6 @@
 ---
-title: Platform Web SDK를 사용하여 Adobe Analytics 통합
-description: Platform Web SDK를 사용하여 Adobe Experience Manager(AEM)와 Adobe Analytics을 통합하는 방법에 대한 최신 접근 방식을 알아봅니다. 이 튜토리얼에서는 Adobe Analytics Workspace에서 데이터 통찰력을 얻기 위해 페이지 보기 및 CTA 클릭 데이터를 수집하는 방법을 안내합니다.
+title: Platform Web SDK와 AEM Sites 및 Adobe Analytics 통합
+description: 최신 Platform Web SDK 접근 방식을 사용하여 AEM Sites 및 Adobe Analytics을 통합합니다.
 version: Cloud Service
 feature: Integrations
 topic: Integrations, Architecture
@@ -10,15 +10,17 @@ doc-type: Tutorial
 last-substantial-update: 2023-05-25T00:00:00Z
 jira: KT-13328
 thumbnail: KT-13328.jpeg
-source-git-commit: 542313c0da6f5eab5befe0da1b80ab38948156ac
+badgeIntegration: label="통합" type="positive"
+badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
+exl-id: 9f54995f-4ce7-45f2-9021-6fdfe42ff89a
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '1647'
-ht-degree: 2%
+source-wordcount: '1637'
+ht-degree: 3%
 
 ---
 
-
-# Platform Web SDK를 사용하여 Adobe Analytics 통합
+# Platform Web SDK와 AEM Sites 및 Adobe Analytics 통합
 
 다음을 알아봅니다. **현대적인 접근 방식** Platform Web SDK를 사용하여 Adobe Experience Manager(AEM)와 Adobe Analytics을 통합하는 방법에 대해 설명합니다. 이 포괄적인 튜토리얼은 원활하게 수집하는 프로세스를 안내합니다 [WKND](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) 페이지 보기 및 CTA 클릭 데이터. 다양한 지표와 차원을 탐색할 수 있는 Adobe Analysis Workspace에서 수집된 데이터를 시각화하여 중요한 통찰력을 얻으십시오. 또한 플랫폼 데이터 세트를 탐색하여 데이터를 확인하고 분석합니다. 이 여정에 참여하여 데이터 기반 의사 결정을 위한 AEM 및 Adobe Analytics의 기능을 활용하십시오.
 
@@ -39,7 +41,7 @@ Platform Web SDK를 사용하여 Adobe Analytics을 통합할 때 필요한 사�
 
 위치 **Cloud Service으로 AEM**:
 
-+ [AEM as a Cloud Service 환경에 대한 AEM 관리자 액세스](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=ko-KR)
++ [AEM as a Cloud Service 환경에 대한 AEM 관리자 액세스](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html)
 + Cloud Manager에 대한 배포 관리자 액세스
 + 복제 및 배포 [WKND - 샘플 Adobe Experience Manager 프로젝트](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) AEM as a Cloud Service 환경으로
 
@@ -222,7 +224,7 @@ AEM 핵심 구성 요소와 Adobe 클라이언트 데이터 레이어 통합에 
 
 ## WKND에서 업데이트된 태그 속성 확인
 
-업데이트된 태그 속성이 빌드, 게시되고 WKND 사이트 페이지에서 올바르게 작동하는지 확인합니다. Google Chrome 웹 브라우저 사용 [Adobe Experience Platform 디버거 확장](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob):
+업데이트된 태그 속성이 빌드, 게시되고 WKND 사이트 페이지에서 올바르게 작동하는지 확인합니다. Google Chrome 웹 브라우저 사용 [Adobe Experience Platform Debugger 확장](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob):
 
 + 태그 속성이 최신 버전인지 확인하려면 빌드 날짜를 확인합니다.
 

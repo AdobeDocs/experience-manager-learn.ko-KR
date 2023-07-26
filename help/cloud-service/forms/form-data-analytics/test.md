@@ -7,13 +7,15 @@ role: Developer
 level: Beginner, Intermediate
 version: Cloud Service
 feature: Adaptive Forms
-topic: Development
+topic: Integrations, Development
 kt: 12557
+badgeIntegration: label="통합" type="positive"
+badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 exl-id: 43665a1e-4101-4b54-a6e0-d189e825073e
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 1%
+source-wordcount: '207'
+ht-degree: 2%
 
 ---
 
@@ -55,3 +57,7 @@ _satellite.setDebug(true)
 추가 [AEP 디버거 확장](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) (로그인해야 함) 브라우저에 연결하여 더 많은 디버깅 정보를 얻을 수 있습니다
 
 ![플랫폼 디버거](assets/platform-debugger.png)
+
+## 축하합니다
+
+AEM Forms as a Cloud Service을 Adobe Analytics과 통합하여 양식 데이터 필드에 대해 보고했습니다.

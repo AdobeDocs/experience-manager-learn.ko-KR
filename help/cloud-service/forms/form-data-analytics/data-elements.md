@@ -7,17 +7,19 @@ role: Developer
 level: Beginner, Intermediate
 version: Cloud Service
 feature: Adaptive Forms
-topic: Development
+topic: Integrations, Development
 kt: 12557
+badgeIntegration: label="통합" type="positive"
+badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 exl-id: b9dc505d-72c8-4b6a-974b-fc619ff7c256
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '129'
-ht-degree: 0%
+source-wordcount: '138'
+ht-degree: 2%
 
 ---
 
-# 적절한 데이터 요소 만들기
+# 데이터 요소 만들기
 
 Tags 속성에서 두 개의 새 데이터 요소(AppliancesStateOfResidence 및 validationError)를 추가했습니다.
 
@@ -34,7 +36,7 @@ Tags 속성에서 두 개의 새 데이터 요소(AppliancesStateOfResidence 및
 // use the GuideBridge API to access adaptive form elements
 //The state field's SOM expression is used to access the state field
 var ApplicantsStateOfResidence = guideBridge.resolveNode("guide[0].guide1[0].guideRootPanel[0].state[0]").value;
-_satellite.logger.log(" Returning  Applicants State Of Residence is "+ApplicantsStateOfResidence);
+_satellite.logger.log("Returning  Applicants State Of Residence is "+ApplicantsStateOfResidence);
 return ApplicantsStateOfResidence;
 ```
 
@@ -44,26 +46,30 @@ return ApplicantsStateOfResidence;
 
 ![유효성 검사 오류](assets/validation-error.png)
 
-validationError 데이터 요소 값을 설정하기 위해 다음 사용자 지정 코드가 작성되었습니다.
+다음 사용자 지정 코드가 작성되어 `validationError` 데이터 요소 값입니다.
 
 ```javascript
 var validationError = "";
 // Using GuideBridge API to access adaptive forms fields using the fields SOM expression
 var tel = guideBridge.resolveNode("guide[0].guide1[0].guideRootPanel[0].telephone[0]");
 var email = guideBridge.resolveNode("guide[0].guide1[0].guideRootPanel[0].email[0]");
+
 _satellite.logger.log("Got tel in Tags custom script "+tel.isValid)
 _satellite.logger.log("Got email in Tags custom script "+email.isValid)
-if(tel.isValid == false)
-{  
+
+if (tel.isValid == false) {  
   validationError = "error: telephone number";
   _satellite.logger.log("Validation error is "+ validationError);
 }
 
-if(email.isValid == false)
-{  
+if (email.isValid == false) {  
   validationError = "error: invalid email";
   _satellite.logger.log("Validation error is "+ validationError);
 }
 
 return validationError;
 ```
+
+## 다음 단계
+
+[규칙 만들기](./rules.md)

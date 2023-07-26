@@ -1,6 +1,6 @@
 ---
-title: AEM을 사용하여 Adobe Experience Platform FPID 생성
-description: AEM을 사용하여 Adobe Experience Platform FPID 쿠키를 생성하거나 새로 고치는 방법에 대해 알아봅니다.
+title: AEM Sites을 사용하여 Adobe Experience Platform FPID 생성
+description: AEM Sites을 사용하여 Adobe Experience Platform FPID 쿠키를 생성하거나 새로 고치는 방법에 대해 알아봅니다.
 version: Cloud Service
 feature: Integrations, APIs, Dispatcher
 topic: Integrations, Personalization, Development
@@ -9,17 +9,19 @@ level: Beginner
 last-substantial-update: 2022-10-20T00:00:00Z
 kt: 11336
 thumbnail: kt-11336.jpeg
+badgeIntegration: label="통합" type="positive"
+badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: 18a22f54-da58-4326-a7b0-3b1ac40ea0b5
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '1027'
+source-wordcount: '1040'
 ht-degree: 0%
 
 ---
 
-# AEM을 사용하여 Experience Platform FPID 생성
+# AEM Sites을 사용하여 Experience Platform FPID 생성
 
-Adobe Experience Manager(AEM)와 Adobe Experience Platform(AEP)를 통합하려면 AEM에서 사용자 활동을 고유하게 추적하기 위해 고유한 자사 디바이스 ID(FPID) 쿠키를 생성하고 유지 관리해야 합니다.
+Adobe Experience Manager(AEM) Sites를 Adobe Experience Platform(AEP)와 통합하려면 사용자 활동을 고유하게 추적하기 위해 AEM에서 고유한 자사 디바이스 ID(FPID) 쿠키를 생성하고 유지 관리해야 합니다.
 
 다음 지원 설명서를 참조하십시오. [첫 번째 파트 장치 ID와 Experience Cloud ID가 함께 작동하는 방법에 대한 자세한 내용을 알아봅니다](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids.html?lang=en).
 
@@ -64,7 +66,7 @@ HTTP 요청이 서블릿에 도달하면 서블릿은 요청에 FPID 쿠키가 �
 
 그러면 서블릿은 FPID를 다음 양식에 JSON 객체로 응답에 기록합니다. `{ fpid: "<FPID VALUE>" }`.
 
-FPID 쿠키가 표시되어 있으므로 본문의 클라이언트에게 FPID를 제공하는 것이 중요합니다 `HttpOnly`즉, 서버만 해당 값을 읽을 수 있고 클라이언트측 JavaScript는 값을 읽을 수 없습니다.
+FPID 쿠키가 표시되어 있으므로 본문의 클라이언트에 FPID를 제공하는 것이 중요합니다 `HttpOnly`즉, 서버만 해당 값을 읽을 수 있고 클라이언트측 JavaScript는 값을 읽을 수 없습니다.
 
 응답 본문의 FPID 값은 Platform Web SDK를 사용하여 호출을 매개 변수화하는 데 사용됩니다.
 

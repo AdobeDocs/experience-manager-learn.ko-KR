@@ -1,21 +1,23 @@
 ---
-title: AEM Forms과 Marketo(1부)
-description: AEM Forms 양식 데이터 모델을 사용하여 AEM Forms을 Marketo과 통합하는 방법에 대한 자습서입니다.
+title: AEM Forms 및 Marketo 통합
+description: AEM Forms 양식 데이터 모델을 사용하여 AEM Forms과 Marketo을 통합하는 방법을 알아봅니다.
 feature: Adaptive Forms, Form Data Model
 version: 6.4,6.5
-topic: Development
+topic: Integrations, Development
 role: Developer
 level: Experienced
 exl-id: 45047852-4fdb-4702-8a99-faaad7213b61
+badgeIntegration: label="통합" type="positive"
+badgeVersions: label="AEM Forms 6.5" before-title="false"
 last-substantial-update: 2020-03-20T00:00:00Z
-source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 0%
+source-wordcount: '379'
+ht-degree: 1%
 
 ---
 
-# AEM Forms과 Marketo
+# AEM Forms 및 Marketo 통합
 
 Adobe의 일부인 Marketo은 이메일, 모바일, 소셜, 디지털 광고, 웹 관리 및 분석을 포함하여 계정 기반 마케팅에 중점을 둔 마케팅 자동화 소프트웨어를 제공합니다.
 

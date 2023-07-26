@@ -1,28 +1,30 @@
 ---
-title: AEM 및 Adobe Target 개요
-description: Adobe Experience Manager as a Cloud Service 및 Adobe Target을 사용하여 개인화된 경험을 만들고 전달하는 방법을 알아봅니다.
+title: AEM Sites 및 Adobe Target 통합
+description: AEM Sites과 Adobe Target을 통합하여 개인화된 경험을 제공하는 방법에 대해 알아봅니다.
 feature: Experience Fragments, Core Components, Adobe Client Data Layer
-topics: integrations, personalization, administration, development
 audience: all
 doc-type: feature video
-activity: use
 version: Cloud Service
 kt: 6043
 thumbnail: 41241.jpg
-topic: Integrations
+topic: Integrations, Personalization
 role: User
 level: Beginner
+badgeIntegration: label="통합" type="positive"
+badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: 2bc6cd90-7b23-4dde-bb07-bca0de9fa509
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '215'
-ht-degree: 5%
+source-wordcount: '256'
+ht-degree: 3%
 
 ---
 
-# AEM 및 Adobe Target
+# AEM Sites 및 Adobe Target 통합
 
-Adobe Experience Manager(AEM) 및 Adobe Target은 경쟁 제품으로 오해할 수 있는 무료 기능을 갖춘 강력한 솔루션입니다. 고객은 이러한 제품을 어떻게 언제 사용하는지 파악하여 개인화된 경험을 전달할 수 있습니다. 모든 최종 사용자에게 최적화된 경험을 전달하려면 조직 내의 다양한 팀이 긴밀하게 작업하고 누가 어떤 작업을 수행하는지 정의해야 합니다.
+AEM Sites과 Adobe Target을 통합하여 개인화된 경험을 제공하는 방법에 대해 알아봅니다.
+
+Adobe Experience Manager(AEM)와 Adobe Target은 상호 보완적인 기능을 갖춘 강력한 솔루션으로, 개인화된 경험을 제공할 수 있도록 완벽한 통합을 제공합니다. 그러나 고객은 이러한 제품을 효과적으로 사용하는 방법과 시기를 이해하는 데 어려움을 겪을 수 있습니다. 모든 최종 사용자에게 경험을 최적화하려면 조직 내의 다양한 팀이 긴밀하게 공동 작업하고 명확한 역할과 책임을 정의하는 것이 중요합니다. AEM과 Adobe Target 간의 통합을 활용하여 팀이 조화롭게 작업하여 탁월한 개인화된 경험을 제공할 수 있습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/41241?quality=12&learn=on)
 

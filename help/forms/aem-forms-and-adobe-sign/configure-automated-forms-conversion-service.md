@@ -7,10 +7,12 @@ kt: 6114
 topic: Development
 role: Admin
 level: Beginner
+badgeIntegration: label="통합" type="positive"
+badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: 0715a2cc-c042-4ddc-85a1-7720f420351b
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '264'
 ht-degree: 19%
 
 ---
@@ -38,3 +40,7 @@ automated forms conversion 서비스를 사용하려면 다음이 필요합니�
 * 이 비디오에서는 로컬 AEM Forms 인스턴스를 Adobe 클라우드의 Automated forms conversion 서비스에 연결하는 데 필요한 단계에 대해 설명합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/39493?quality=12&learn=on)
+
+## 다음 단계
+
+[PDF 양식을 적응형 양식으로 변환](./convert-pdf-form-into-adaptive-form.md)

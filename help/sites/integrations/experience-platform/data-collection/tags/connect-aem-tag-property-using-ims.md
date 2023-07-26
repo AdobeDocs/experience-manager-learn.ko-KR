@@ -1,6 +1,6 @@
 ---
-title: IMS를 사용하여 AEM과 태그 속성 연결
-description: AEM에서 IMS 구성을 사용하여 AEM을 태그 속성과 연결하는 방법에 대해 알아봅니다. 이 설정은 Launch API를 사용하여 AEM을 인증하고, AEM이 Launch API를 통해 통신하여 태그 속성에 액세스할 수 있도록 합니다.
+title: IMS를 사용하여 AEM Sites과 태그 속성 연결
+description: AEM에서 IMS 구성을 사용하여 AEM Sites을 태그 속성과 연결하는 방법에 대해 알아봅니다. 이 설정은 Launch API를 사용하여 AEM을 인증하고, AEM이 Launch API를 통해 통신하여 태그 속성에 액세스할 수 있도록 합니다.
 topics: integrations
 audience: administrator
 solution: Experience Manager, Data Collection, Experience Platform
@@ -12,15 +12,17 @@ topic: Integrations
 feature: Integrations
 role: Developer
 level: Intermediate
+badgeIntegration: label="통합" type="positive"
+badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: 92dbd185-bad4-4a4d-b979-0d8f5d47c54b
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '313'
 ht-degree: 2%
 
 ---
 
-# IMS를 사용하여 AEM과 태그 속성 연결{#connect-aem-and-tag-property-using-ims}
+# IMS를 사용하여 AEM Sites과 태그 속성 연결{#connect-aem-and-tag-property-using-ims}
 
 >[!NOTE]
 >

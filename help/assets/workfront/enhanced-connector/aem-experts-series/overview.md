@@ -1,6 +1,6 @@
 ---
-title: Workfront for Experience Manager 강화 커넥터 세션
-description: Adobe Workfront 및 Experience Manager Assets 강화 커넥터의 기본 사항에 대해 알아봅니다.
+title: 향상된 커넥터를 사용하여 Workfront 및 AEM Assets 통합
+description: Adobe Workfront 및 Experience Manager Assets 강화 커넥터 통합의 기본 사항에 대해 알아봅니다.
 version: Cloud Service
 topic: Content Management, Integrations
 feature: Asset Management
@@ -9,19 +9,21 @@ level: Beginner
 kt: 9754
 thumbnail: kt-9754.jpeg
 last-substantial-update: 2022-09-02T00:00:00Z
+badgeIntegration: label="통합" type="positive"
+badgeVersions: label="AEM Assets as a Cloud Service, AEM Assets 6.5" before-title="false"
 exl-id: 4f279c0d-270f-433e-b047-88c02f5b1e78
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '271'
 ht-degree: 0%
 
 ---
 
-# Workfront for Experience Manager 강화 커넥터 전문가 시리즈
+# 향상된 커넥터와 Workfront 및 AEM Assets 통합
 
 ![AEM 전문가 시리즈](./assets/banner.png)
 
-4부로 구성된 이 비디오 시리즈에서 Adobe의 Workfront 및 Experience Manager Assets 전문가와 함께 Workfront for Experience Manager 강화 커넥터의 기능을 시연하고 논의하십시오.
+4부로 구성된 이 비디오 시리즈에서 Adobe의 Workfront 및 Experience Manager Assets 전문가와 함께 향상된 커넥터를 사용하여 Workfront과 AEM Assets을 통합하는 방법을 시연하고 논의하십시오.
 
 이 4부로 구성된 전문가 시리즈는 제품 관리자, 컨설턴트 및 Adobe 파트너와 같은 Adobe 전문가 그룹이 다음에 대해 논의합니다.
 

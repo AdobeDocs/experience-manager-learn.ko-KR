@@ -3,14 +3,16 @@ title: JSON 웹 토큰 및 액세스 토큰 생성
 description: 이 문서에서는 Adobe Campaign Standard에 REST를 호출하는 데 필요한 JWT 및 액세스 토큰을 생성하는 데 필요한 코드에 대해 설명합니다
 feature: Adaptive Forms, Form Data Model
 version: 6.4,6.5
-topic: Development
+topic: Integrations, Development
 role: Developer
 level: Experienced
+badgeIntegration: label="통합" type="positive"
+badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: a5e5aad4-064f-4638-a53a-88dfb1d27c8f
-source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '243'
-ht-degree: 0%
+source-wordcount: '246'
+ht-degree: 1%
 
 ---
 

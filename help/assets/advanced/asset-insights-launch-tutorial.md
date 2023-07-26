@@ -7,10 +7,12 @@ topic: Integrations
 role: Developer
 level: Intermediate
 last-substantial-update: 2022-06-04T00:00:00Z
+badgeIntegration: label="통합" type="positive"
+badgeVersions: label="AEM Assets as a Cloud Service, AEM Assets 6.5" before-title="false"
 exl-id: 00125fe1-3bb9-4b1a-a83c-61c413403ae2
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '830'
 ht-degree: 1%
 
 ---
@@ -66,6 +68,7 @@ ht-degree: 1%
 >[!VIDEO](https://video.tv.adobe.com/v/25945?quality=12&learn=on)
 
 >[!NOTE]
+>
 Adobe Analytics 보고서 세트에 대해 실시간 데이터 수집 및 AEM Asset 보고를 활성화해야 합니다. AEM Asset Reporting을 활성화하면 자산 통찰력을 추적할 분석 변수가 예약됩니다.
 
 AEM Assets Insights 구성의 경우 다음 자격 증명이 필요합니다
@@ -83,6 +86,7 @@ Adobe Analytics AEM 확장 추가, 페이지 로드 규칙 만들기 및 Launch�
 >[!VIDEO](https://video.tv.adobe.com/v/25946?quality=12&learn=on)
 
 >[!NOTE]
+>
 작성자 인스턴스에서 게시 인스턴스로 모든 변경 사항을 복제해야 합니다.
 
 ### 규칙 1 : 페이지 추적기(pagetracker.js) {#rule-page-tracker-pagetracker-js}
@@ -105,7 +109,7 @@ Adobe Analytics AEM 확장 추가, 페이지 로드 규칙 만들기 및 Launch�
 마지막으로 Pagetracker는 로 초기화 기능을 구현합니다.
 
 * **\&lt;code>assetAnalytics.dispatcher.init()\&lt;code>** : Pagetracker 구성 요소를 초기화하기 위해 호출됩니다. 웹 페이지에서 자산 통찰력 이벤트(노출 횟수 및/또는 클릭 수)가 생성되기 전에 이를 호출해야 합니다.
-* **\&lt;code>assetAnalytics.dispatcher.init()\&lt;code>** : 필요한 경우 AppMeasurement 개체를 수락합니다. 이 개체가 제공되면 AppMeasurement 개체의 새 인스턴스를 만들지 않습니다.
+* **\&lt;code>assetAnalytics.dispatcher.init()\&lt;code>** : 필요한 경우 AppMeasurement 개체를 허용합니다. 제공된 경우 AppMeasurement 개체의 새 인스턴스를 만들지 않습니다.
 
 ### 규칙 2: 이미지 추적기 — 작업 1 (asset-insights.js) {#rule-image-tracker-action-asset-insights-js}
 

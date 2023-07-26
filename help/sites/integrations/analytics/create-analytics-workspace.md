@@ -9,10 +9,11 @@ level: Intermediate
 kt: 6409
 thumbnail: KT-6296.jpg
 exl-id: b5722fe2-93bf-4b25-8e08-4cb8206771cb
+badgeIntegration: label="통합" type="positive"
 last-substantial-update: 2022-06-15T00:00:00Z
-source-git-commit: 5a8d3983a22df4e273034c8d8441b31e6bc764ba
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '2161'
+source-wordcount: '2162'
 ht-degree: 0%
 
 ---
@@ -152,12 +153,10 @@ Analysis Workspace은 분석을 빌드하고 통찰력을 빠르게 공유할 �
 1. 템플릿 유형별로 페이지를 분류해 보겠습니다. 구성 요소에서 페이지 템플릿 지표를 선택하고 페이지 템플릿 지표를 페이지 이름 차원으로 드래그 앤 드롭합니다. 이제 페이지 이름을 해당 템플릿 유형별로 분류하여 볼 수 있습니다.
 
    * **이전**
-
-      ![eVar5](assets/create-analytics-workspace/evar5.png)
+     ![eVar5](assets/create-analytics-workspace/evar5.png)
 
    * **이후**
-
-      ![eVar5 지표](assets/create-analytics-workspace/evar5-metrics.png)
+     ![eVar5 지표](assets/create-analytics-workspace/evar5-metrics.png)
 
 1. 사용자가 WKND 사이트 페이지에 있을 때 CTA 버튼과 상호 작용하는 방법을 이해하려면 버튼 ID(eVar8) 지표를 추가하여 추가로 분류해야 합니다.
 
@@ -244,11 +243,9 @@ Analytics 분류는 Analytics 변수 데이터를 카테고리별로 분류한 �
 1. 구성 요소 파인더에서 **WKND CTA 단추** 을(를) 드래그 앤 드롭합니다. **WKND CTA 단추(단추 Id)** 차원을 단추 ID 지표에 추가하고 바꿉니다.
 
    * **이전**
-
-      ![작업 영역 단추](assets/create-analytics-workspace/wknd-button-before.png)
+     ![작업 영역 단추](assets/create-analytics-workspace/wknd-button-before.png)
    * **이후**
-
-      ![다음 항목 뒤에 있는 작업 영역 단추](assets/create-analytics-workspace/wknd-button-after.png)
+     ![다음 항목 뒤에 있는 작업 영역 단추](assets/create-analytics-workspace/wknd-button-after.png)
 
 1. 이제 CTA(콜 투 액션) 버튼의 버튼 ID가 포함된 버튼 ID 지표가 분류 템플릿에 제공된 해당 이름으로 대체되었음을 알 수 있습니다.
 1. Analytics Workspace 표를 WKND 홈 페이지와 비교하고 CTA 버튼 클릭 수 및 그 분석에 대해 이해하겠습니다. 작업 영역 자유 형식 테이블 데이터를 기반으로 볼 때 22회 사용자가 **스키 나우** 웨스턴오스트레일리아에서 열리는 WKND 홈 페이지 캠핑 버튼 및 4회 **자세히 보기** 단추를 클릭합니다.

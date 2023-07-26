@@ -8,11 +8,12 @@ role: Developer
 level: Intermediate
 kt: 6296
 thumbnail: KT-6296.jpg
+badgeIntegration: label="통합" type="positive"
 exl-id: ab051363-d3e8-4c07-b1fa-3a5d24757496
-source-git-commit: 5a8d3983a22df4e273034c8d8441b31e6bc764ba
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '1885'
-ht-degree: 1%
+source-wordcount: '1886'
+ht-degree: 2%
 
 ---
 
@@ -148,7 +149,7 @@ Adobe 클라이언트 데이터 레이어는 **이벤트** 제어 데이터 계�
 
    다음 `event` 에서 개체가 전달됩니다. `trigger()` 메서드가 사용자 지정 이벤트에서 호출되었습니다. 다음 `component` 개체는 데이터 레이어에서 파생된 구성 요소의 현재 상태입니다. `getState()` method 및 는 클릭을 트리거한 요소입니다.
 
-1. 변경 사항을 저장하고 를 실행합니다. [빌드](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html) 를 입력하여 코드를 로 승격시킵니다. [환경](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html) AEM 사이트에서 사용됩니다.
+1. 변경 사항을 저장하고 를 실행합니다. [빌드](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html) 를 입력하여 코드를 로 승격시킵니다. [환경](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=ko-KR) AEM 사이트에서 사용됩니다.
 
    >[!NOTE]
    >

@@ -7,10 +7,12 @@ feature: Experience Fragments
 topic: Personalization
 role: Developer
 level: Intermediate
+badgeIntegration: label="통합" type="positive"
+badgeVersions: label="AEM Sites 6.5" before-title="false"
 exl-id: 1550e6a7-04b5-4a40-9d7b-88074283402f
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '585'
 ht-degree: 2%
 
 ---
@@ -48,7 +50,6 @@ WKND 사이트 홈 페이지에는 카드 레이아웃의 형태로 도시 주�
 1. 마케터는 Adobe Target 내에서 A/B 타겟 활동을 만듭니다.
    1. Adobe Target 창에서 다음으로 이동합니다. **활동** 탭.
    2. 클릭 **활동 만들기** 버튼을 클릭하고 활동 유형을 다음으로 선택 **A/B 테스트**
-
       ![Adobe Target - 활동 만들기](assets/personalization-use-case-2/create-ab-activity.png)
    3. 다음 항목 선택 **웹** 채널 및 선택 **시각적 경험 작성기**.
    4. 다음을 입력합니다. **활동 URL** 및 클릭 **다음** 를 클릭하여 시각적 경험 작성기를 엽니다.
@@ -63,7 +64,6 @@ WKND 사이트 홈 페이지에는 카드 레이아웃의 형태로 도시 주�
       ![컨테이너 선택](assets/personalization-use-case-3/container-selection.png)
    9. 재배열할 컨테이너를 클릭하고 원하는 위치로 드래그 앤 드롭합니다. 을(를) 재배열합니다. *베스트 로스터스* 첫 번째 행 1번째 열부터 첫 번째 행 3번째 열까지 컨테이너입니다. 이제 *베스트 로스터스* 컨테이너가 다음에 있습니다. *사진 전시회* 컨테이너.
       ![컨테이너 교체](assets/personalization-use-case-3/container-swap.png)
-
       **교체 후**
       ![컨테이너가 교체됨](assets/personalization-use-case-3/after-swap-1-3.png)
    10. 마찬가지로 다른 카드 컨테이너의 위치를 다시 정렬합니다.

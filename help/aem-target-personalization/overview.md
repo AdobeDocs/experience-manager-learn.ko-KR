@@ -5,15 +5,17 @@ feature: Experience Fragments
 topic: Personalization
 role: Developer
 level: Intermediate
+badgeIntegration: label="통합" type="positive"
+badgeVersions: label="AEM Sites 6.5" before-title="false"
 exl-id: b632883f-65fd-4f89-bf39-ec2bce352d2d
-source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '840'
-ht-degree: 1%
+source-wordcount: '842'
+ht-degree: 0%
 
 ---
 
-# AEM 및 Adobe Target 시작하기 {#getting-started-with-aem-target}
+# AEM Sites 및 Adobe Target 통합 {#getting-started-with-aem-target}
 
 AEM과 Target은 모두 기능이 중복되는 강력한 솔루션입니다. 고객은 이러한 제품을 어떻게 언제 사용하는지 파악하여 개인화된 경험을 전달할 수 있습니다. 모든 최종 사용자에게 최적화된 경험을 전달하려면 조직 내의 다양한 팀이 긴밀하게 작업하고 누가 어떤 작업을 수행하는지 정의해야 합니다.
 
@@ -38,7 +40,7 @@ AEM은 모든 콘텐츠와 에셋을 중앙 위치에 모아 개인화 전략을
 * Target&#x200B;은 활동에서 AEM 경험 조각 마크업을 오퍼로 사용합니다
 * Target은 경험 조각 HTML을 제공하고 AEM은 참조된 이미지를 제공합니다
 
-   ![경험 조각 다이어그램을 사용한 개인화](assets/personalization-use-case-1/use-case-1-diagram.png)
+  ![경험 조각 다이어그램을 사용한 개인화](assets/personalization-use-case-1/use-case-1-diagram.png)
 
 **이 시나리오를 구현하려면 다음을 수행해야 합니다.**
 
@@ -59,7 +61,7 @@ VEC는 Adobe Target의 주요 기능 중 하나입니다. VEC를 통해 마케�
 * Adobe Target VEC를 사용하여 새로운 순 콘텐츠 만들기
 * AEM 호스팅 사이트와 AEM이 아닌 호스팅 사이트에 모두 적용됩니다.
 
-   ![시각적 경험 작성기 다이어그램을 사용한 개인화](assets/personalization-use-case-3/use-case-diagram-3.png)
+  ![시각적 경험 작성기 다이어그램을 사용한 개인화](assets/personalization-use-case-3/use-case-diagram-3.png)
 
 **이 시나리오를 구현하려면 다음을 수행해야 합니다.**
 
@@ -77,7 +79,7 @@ Adobe Experience Manager과 Adobe Target을 통합하면 사이트 사용자에�
 * 여기에 새로운 순 콘텐츠가 만들어지지 않음
 * AEM 및 비 AEM 사이트 모두에 적용됩니다.
 
-   ![다이어그램](assets/personalization-use-case-2/use-case-2-diagram.png)
+  ![다이어그램](assets/personalization-use-case-2/use-case-2-diagram.png)
 
 **이 시나리오를 구현하려면 다음을 수행해야 합니다.**
 

@@ -1,6 +1,6 @@
 ---
-title: AEM 헤드리스 및 Target 개인화
-description: 이 튜토리얼에서는 AEM 콘텐츠 조각을 Adobe Target으로 내보낸 다음 Adobe Web SDK를 사용하여 Headless 경험을 개인화하는 데 사용하는 방법을 알아봅니다.
+title: AEM Headless 및 Target 통합
+description: Experience Platform Web SDK를 사용하여 AEM Headless와 Adobe Target을 통합하여 Headless 경험을 개인화하는 방법에 대해 알아봅니다.
 version: Cloud Service
 feature: Content Fragments, Integrations
 topic: Personalization, Headless
@@ -10,30 +10,32 @@ doc-type: Tutorial
 last-substantial-update: 2023-05-09T00:00:00Z
 jira: KT-12433
 thumbnail: KT-12433.jpeg
+badgeIntegration: label="통합" type="positive"
+badgeVersions: label="AEM 헤드리스 as a Cloud Service" before-title="false"
 exl-id: 60a3e18a-090f-4b0e-8ba0-d4afd30577dd
-source-git-commit: d81c66e041abbd56e7115f37732550cf10e59359
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '1671'
+source-wordcount: '1679'
 ht-degree: 1%
 
 ---
 
-# 콘텐츠 조각을 사용하여 AEM Headless 경험 개인화
+# AEM Headless 및 Target 통합
 
-이 튜토리얼에서는 AEM 콘텐츠 조각을 Adobe Target으로 내보낸 다음 Adobe Web SDK를 사용하여 Headless 경험을 개인화하는 데 사용하는 방법을 알아봅니다. 다음 [React WKND 앱](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html) 는 콘텐츠 조각 오퍼를 사용하는 개인화된 Target 활동을 경험에 추가하여 WKND 모험을 홍보하는 방법을 탐색하는 데 사용됩니다.
+AEM 콘텐츠 조각을 Adobe Target으로 내보내고 Adobe Experience Platform Web SDK의 alloy.js를 사용하여 Headless 경험을 개인화하는 데 사용하여 AEM Headless를 Adobe Target과 통합하는 방법을 알아봅니다. 다음 [React WKND 앱](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html) 는 콘텐츠 조각 오퍼를 사용하는 개인화된 Target 활동을 경험에 추가하여 WKND 모험을 홍보하는 방법을 탐색하는 데 사용됩니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3416585/?quality=12&learn=on)
 
 이 자습서에서는 AEM 및 Adobe Target 설정과 관련된 단계를 다룹니다.
 
 1. [Adobe Target에 대한 Adobe IMS 구성 만들기](#adobe-ims-configuration) AEM 작성자
-1. [Adobe Target Cloud Service 만들기](#adobe-target-cloud-service) AEM 작성자
-1. [AEM Assets 폴더에 Adobe Target Cloud Service 적용](#configure-asset-folders) AEM 작성자
-1. [Adobe Target Cloud Service 권한](#permission) Adobe Admin Console에서
-1. [콘텐츠 조각 내보내기](#export-content-fragments) AEM 작성자에서 Target으로
-1. [콘텐츠 조각 오퍼를 사용하여 활동 만들기](#activity) Adobe Target에서
-1. [Experience Platform 데이터 스트림 만들기](#datastream-id) Experience Platform
-1. [React 기반 AEM Headless 앱에 개인화 통합](#code) Adobe Web SDK 사용.
+2. [Adobe Target Cloud Service 만들기](#adobe-target-cloud-service) AEM 작성자
+3. [AEM Assets 폴더에 Adobe Target Cloud Service 적용](#configure-asset-folders) AEM 작성자
+4. [Adobe Target Cloud Service 권한](#permission) Adobe Admin Console에서
+5. [콘텐츠 조각 내보내기](#export-content-fragments) AEM 작성자에서 Target으로
+6. [콘텐츠 조각 오퍼를 사용하여 활동 만들기](#activity) Adobe Target에서
+7. [Experience Platform 데이터 스트림 만들기](#datastream-id) Experience Platform
+8. [React 기반 AEM Headless 앱에 개인화 통합](#code) Adobe Web SDK 사용.
 
 ## Adobe IMS 구성{#adobe-ims-configuration}
 

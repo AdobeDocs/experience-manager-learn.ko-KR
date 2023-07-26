@@ -1,6 +1,6 @@
 ---
-title: Experience Platform 웹 SDK 통합
-description: AEMas a Cloud Service 을 Experience Platform 웹 SDK와 통합하는 방법을 알아봅니다. 이 기본 단계는 Adobe Analytics, Target과 같은 Adobe Experience Cloud 제품이나 Real-time Customer Data Platform, Customer Journey Analytics 및 Journey Optimizer과 같은 최신 혁신 제품을 통합하는 데 필수적입니다.
+title: AEM Sites 및 Experience Platform 웹 SDK 통합
+description: AEM Sites as a Cloud Service을 Experience Platform 웹 SDK와 통합하는 방법을 알아봅니다. 이 기본 단계는 Adobe Analytics, Target과 같은 Adobe Experience Cloud 제품이나 Real-time Customer Data Platform, Customer Journey Analytics 및 Journey Optimizer과 같은 최신 혁신 제품을 통합하는 데 필수적입니다.
 version: Cloud Service
 feature: Integrations
 topic: Integrations, Architecture
@@ -10,21 +10,23 @@ doc-type: Tutorial
 last-substantial-update: 2023-04-26T00:00:00Z
 jira: KT-13156
 thumbnail: KT-13156.jpeg
+badgeIntegration: label="통합" type="positive"
+badgeVersions: label="AEM Sites as a Cloud Service" before-title="false"
 exl-id: b5182d35-ec38-4ffd-ae5a-ade2dd3f856d
-source-git-commit: 32472c8591aeb47a7c6a7253afd7ad9ab0e45171
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '1340'
-ht-degree: 3%
+source-wordcount: '1354'
+ht-degree: 4%
 
 ---
 
-# Experience Platform 웹 SDK 통합
+# AEM Sites 및 Experience Platform 웹 SDK 통합
 
 AEMas a Cloud Service 을 Experience Platform과 통합하는 방법에 대해 알아봅니다. [웹 SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html). 이 기본 단계는 Adobe Analytics, Target과 같은 Adobe Experience Cloud 제품이나 Real-time Customer Data Platform, Customer Journey Analytics 및 Journey Optimizer과 같은 최신 혁신 제품을 통합하는 데 필수적입니다.
 
 또한 수집 및 전송 방법을 배웁니다. [WKND - 샘플 Adobe Experience Manager 프로젝트](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) 에서 페이지 보기 데이터 [Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html).
 
-이 설정을 완료한 후 견고한 기반을 구현했습니다. 또한 다음과 같은 애플리케이션을 사용하여 Experience Platform 구현을 진행할 준비가 되었습니다 [Real-time Customer Data Platform(Real-Time CDP)](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html?lang=ko), [Customer Journey Analytics(CJA)](https://experienceleague.adobe.com/docs/customer-journey-analytics.html), 및 [Adobe Journey Optimizer (AJO)](https://experienceleague.adobe.com/docs/journey-optimizer.html). 고급 구현은 웹 및 고객 데이터를 표준화하여 더 나은 고객 참여를 유도하는 데 도움이 됩니다.
+이 설정을 완료한 후 견고한 기반을 구현했습니다. 또한 다음과 같은 애플리케이션을 사용하여 Experience Platform 구현을 진행할 준비가 되었습니다 [Real-time Customer Data Platform(Real-Time CDP)](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html?lang=ko-KR), [Customer Journey Analytics(CJA)](https://experienceleague.adobe.com/docs/customer-journey-analytics.html), 및 [Adobe Journey Optimizer (AJO)](https://experienceleague.adobe.com/docs/journey-optimizer.html). 고급 구현은 웹 및 고객 데이터를 표준화하여 더 나은 고객 참여를 유도하는 데 도움이 됩니다.
 
 ## 사전 요구 사항
 
@@ -92,75 +94,75 @@ Experience Platform에서 태그(이전의 Launch) 속성을 만들어 WKND 웹 
 
 + 다음 `Page Name` 데이터 요소 코드.
 
-   ```javascript
-   if(event && event.component && event.component.hasOwnProperty('dc:title')) {
-       // return value of 'dc:title' from the data layer Page object, which is propogated via 'cmp:show` event
-       return event.component['dc:title'];
-   }
-   ```
+  ```javascript
+  if(event && event.component && event.component.hasOwnProperty('dc:title')) {
+      // return value of 'dc:title' from the data layer Page object, which is propogated via 'cmp:show` event
+      return event.component['dc:title'];
+  }
+  ```
 
 + 다음 `Site Section` 데이터 요소 코드.
 
-   ```javascript
-   if(event && event.component && event.component.hasOwnProperty('repo:path')) {
-   let pagePath = event.component['repo:path'];
-   
-   let siteSection = '';
-   
-   //Check of html String in URL.
-   if (pagePath.indexOf('.html') > -1) { 
-    siteSection = pagePath.substring(0, pagePath.lastIndexOf('.html'));
-   
-    //replace slash with colon
-    siteSection = siteSection.replaceAll('/', ':');
-   
-    //remove `:content`
-    siteSection = siteSection.replaceAll(':content:','');
-   }
-   
-       return siteSection 
-   }
-   ```
+  ```javascript
+  if(event && event.component && event.component.hasOwnProperty('repo:path')) {
+  let pagePath = event.component['repo:path'];
+  
+  let siteSection = '';
+  
+  //Check of html String in URL.
+  if (pagePath.indexOf('.html') > -1) { 
+   siteSection = pagePath.substring(0, pagePath.lastIndexOf('.html'));
+  
+   //replace slash with colon
+   siteSection = siteSection.replaceAll('/', ':');
+  
+   //remove `:content`
+   siteSection = siteSection.replaceAll(':content:','');
+  }
+  
+      return siteSection 
+  }
+  ```
 
 + 다음 `Host Name` 데이터 요소 코드.
 
-   ```javascript
-   if(window && window.location && window.location.hostname) {
-       return window.location.hostname;
-   }
-   ```
+  ```javascript
+  if(window && window.location && window.location.hostname) {
+      return window.location.hostname;
+  }
+  ```
 
 + 다음 `all pages - on load` 규칙 이벤트 코드
 
-   ```javascript
-   var pageShownEventHandler = function(evt) {
-   // defensive coding to avoid a null pointer exception
-   if(evt.hasOwnProperty("eventInfo") && evt.eventInfo.hasOwnProperty("path")) {
-       //trigger Launch Rule and pass event
-       console.debug("cmp:show event: " + evt.eventInfo.path);
-       var event = {
-           //include the path of the component that triggered the event
-           path: evt.eventInfo.path,
-           //get the state of the component that triggered the event
-           component: window.adobeDataLayer.getState(evt.eventInfo.path)
-       };
-   
-       //Trigger the Launch Rule, passing in the new 'event' object
-       // the 'event' obj can now be referenced by the reserved name 'event' by other Launch data elements
-       // i.e 'event.component['someKey']'
-       trigger(event);
-       }
-   }
-   
-   //set the namespace to avoid a potential race condition
-   window.adobeDataLayer = window.adobeDataLayer || [];
-   
-   //push the event listener for cmp:show into the data layer
-   window.adobeDataLayer.push(function (dl) {
-       //add event listener for 'cmp:show' and callback to the 'pageShownEventHandler' function
-       dl.addEventListener("cmp:show", pageShownEventHandler);
-   });
-   ```
+  ```javascript
+  var pageShownEventHandler = function(evt) {
+  // defensive coding to avoid a null pointer exception
+  if(evt.hasOwnProperty("eventInfo") && evt.eventInfo.hasOwnProperty("path")) {
+      //trigger Launch Rule and pass event
+      console.debug("cmp:show event: " + evt.eventInfo.path);
+      var event = {
+          //include the path of the component that triggered the event
+          path: evt.eventInfo.path,
+          //get the state of the component that triggered the event
+          component: window.adobeDataLayer.getState(evt.eventInfo.path)
+      };
+  
+      //Trigger the Launch Rule, passing in the new 'event' object
+      // the 'event' obj can now be referenced by the reserved name 'event' by other Launch data elements
+      // i.e 'event.component['someKey']'
+      trigger(event);
+      }
+  }
+  
+  //set the namespace to avoid a potential race condition
+  window.adobeDataLayer = window.adobeDataLayer || [];
+  
+  //push the event listener for cmp:show into the data layer
+  window.adobeDataLayer.push(function (dl) {
+      //add event listener for 'cmp:show' and callback to the 'pageShownEventHandler' function
+      dl.addEventListener("cmp:show", pageShownEventHandler);
+  });
+  ```
 
 +++
 

@@ -7,10 +7,12 @@ feature: Experience Fragments
 topic: Personalization
 role: Developer
 level: Intermediate
+badgeIntegration: label="통합" type="positive"
+badgeVersions: label="AEM Sites 6.5" before-title="false"
 exl-id: 9b191211-2030-4b62-acad-c7eb45b807ca
-source-git-commit: 4b47daf82e27f6bea4be30e3cdd132f497f4c609
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '354'
 ht-degree: 3%
 
 ---
@@ -36,10 +38,9 @@ AEM Experience Fragment 오퍼를 사용하여 개인화 활동을 지원하기 
    * 다음 솔루션으로 프로비저닝된 Experience Cloud
       * [Adobe Target](https://experiencecloud.adobe.com)
 
-      >[!NOTE]
-      >
-      > 고객은 의 Experience Platform Launch 및 Adobe I/O을 제공받아야 합니다. [Adobe 지원](https://helpx.adobe.com/kr/contact/enterprise-support.ec.html) 또는 시스템 관리자에게 문의하십시오
-
+     >[!NOTE]
+     >
+     > 고객은 의 Experience Platform Launch 및 Adobe I/O을 제공받아야 합니다. [Adobe 지원](https://helpx.adobe.com/contact/enterprise-support.ec.html) 또는 시스템 관리자에게 문의하십시오
 
 ### AEM과 Adobe Target 통합
 

@@ -7,13 +7,15 @@ role: Developer
 level: Beginner, Intermediate
 version: Cloud Service
 feature: Adaptive Forms
-topic: Development
+topic: Integrations, Development
 kt: 12557
+badgeIntegration: label="통합" type="positive"
+badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 exl-id: 9982e041-fff7-4be6-91c9-e322d2fd3e01
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '220'
-ht-degree: 0%
+source-wordcount: '232'
+ht-degree: 1%
 
 ---
 
@@ -52,3 +54,7 @@ Adobe Analytics - 변수 설정은 다음과 같이 구성됩니다.
 ![form-submit-rule-set-variables](assets/form-submit-set-variable.png)
 
 태그 코드를 테스트할 준비가 되면[변경 사항을 태그에 게시](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/publishing-flow.html) 게시 플로우 사용.
+
+## 다음 단계
+
+[솔루션 테스트](./test.md)

@@ -8,10 +8,10 @@ version: Cloud Service
 feature-set: Experience Manager Assets
 feature: Assets Essentials
 team: TM
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '76'
-ht-degree: 25%
+source-wordcount: '77'
+ht-degree: 31%
 
 ---
 
@@ -38,6 +38,7 @@ ht-degree: 25%
 + [Creative Cloud 통합](integrations/creative-cloud.md)
 
 + Adobe Workfront 통합{#workfront}
+   + [개요](./integrations/workfront/overview.md)
    + [구성](./integrations/workfront/configure.md)
    + [메타데이터 매핑](./integrations/workfront/map-metadata.md)
    + [문서 전송 및 에셋 연결](./integrations/workfront/link-send.md)

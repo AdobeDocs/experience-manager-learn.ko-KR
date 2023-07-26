@@ -7,10 +7,12 @@ feature: Experience Fragments
 topic: Personalization
 role: Developer
 level: Intermediate
+badgeIntegration: label="통합" type="positive"
+badgeVersions: label="AEM Sites 6.5" before-title="false"
 exl-id: 53cafd06-3a0a-4995-947d-179146b89234
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '586'
+source-wordcount: '589'
 ht-degree: 2%
 
 ---
@@ -57,7 +59,6 @@ WKND 사이트는 홈 페이지를 다시 디자인하고 현재 홈 페이지 �
 1. 마케터는 리디렉션 오퍼를 경험으로 사용하고, 성공 목표와 지표가 추가된 새 홈 페이지에 할당된 100% 웹 사이트 트래픽을 사용하여 A/B 타겟 활동을 만듭니다.
    1. Adobe Target 창에서 다음으로 이동합니다. **활동** 탭.
    2. 클릭 **활동 만들기** 버튼을 클릭하고 활동 유형을 다음으로 선택 **A/B 테스트**
-
       ![Adobe Target - 활동 만들기](assets/personalization-use-case-2/create-ab-activity.png)
    3. 다음 항목 선택 **웹** 채널 및 선택 **시각적 경험 작성기**.
    4. 다음을 입력합니다. **활동 URL** 및 클릭 **다음** 를 클릭하여 시각적 경험 작성기를 엽니다.

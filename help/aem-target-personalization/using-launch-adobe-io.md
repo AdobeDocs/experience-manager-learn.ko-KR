@@ -7,10 +7,12 @@ feature: Experience Fragments
 topic: Personalization
 role: Developer
 level: Intermediate
+badgeIntegration: label="통합" type="positive"
+badgeVersions: label="AEM Sites 6.5" before-title="false"
 exl-id: b1d7ce04-0127-4539-a5e1-802d7b9427dd
-source-git-commit: 4b47daf82e27f6bea4be30e3cdd132f497f4c609
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '1064'
+source-wordcount: '1067'
 ht-degree: 4%
 
 ---
@@ -27,9 +29,8 @@ ht-degree: 4%
       * [Adobe Target](https://experiencecloud.adobe.com)
       * [Adobe I/O 콘솔](https://console.adobe.io)
 
-      >[!NOTE]
-      >Launch에서 개발, 승인, 게시, 확장 관리 및 환경 관리 권한이 있어야 합니다. 사용자 인터페이스 옵션을 사용할 수 없어서 이러한 단계를 완료할 수 없는 경우 Experience Cloud 관리자에게 연락하여 액세스 권한을 요청하십시오. Launch 권한에 대한 자세한 내용은 [설명서 참조](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
-
+     >[!NOTE]
+     >Launch에서 개발, 승인, 게시, 확장 관리 및 환경 관리 권한이 있어야 합니다. 사용자 인터페이스 옵션을 사용할 수 없어서 이러한 단계를 완료할 수 없는 경우 Experience Cloud 관리자에게 연락하여 액세스 권한을 요청하십시오. Launch 권한에 대한 자세한 내용은 [설명서 참조](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
 
 * **브라우저 플러그인**
    * Adobe Experience Cloud Debugger ([크롬](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj))

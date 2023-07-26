@@ -7,11 +7,13 @@ kt: 6126
 topic: Development
 role: User
 level: Beginner
+badgeIntegration: label="통합" type="positive"
+badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: fba18118-0431-4edd-a5a6-0281e8c12979
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '74'
-ht-degree: 0%
+source-wordcount: '96'
+ht-degree: 2%
 
 ---
 
@@ -22,3 +24,8 @@ PDF 양식을 적응형 양식으로 전환한 후 일반적으로 몇 가지 �
 다음 비디오에서는 즉석 서명 경험에 대한 양식을 구성하는 데 필요한 단계에 대해 설명합니다
 
 >[!VIDEO](https://video.tv.adobe.com/v/39574?quality=12&learn=on)
+
+## 축하합니다
+
+즉석 서명 경험에 Acrobat Sign 통합을 사용하도록 변환된 적응형 양식을 구성했습니다.
+

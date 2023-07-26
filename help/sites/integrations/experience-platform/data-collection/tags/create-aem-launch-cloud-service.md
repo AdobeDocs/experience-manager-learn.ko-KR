@@ -1,5 +1,5 @@
 ---
-title: AEM에서 Launch Cloud Service 구성 만들기
+title: AEM Sites에서 Launch Cloud Service 구성 만들기
 description: AEM에서 Launch Cloud Service 구성을 만드는 방법을 알아봅니다. 그런 다음 Launch Cloud Service 구성을 기존 사이트에 적용할 수 있으며 태그 라이브러리가 작성자 및 게시 환경 모두에서 로드되는 것을 확인할 수 있습니다.
 topics: integrations
 audience: administrator
@@ -12,10 +12,12 @@ topic: Integrations
 feature: Integrations
 role: Developer
 level: Intermediate
+badgeIntegration: label="통합" type="positive"
+badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: a72ddced-37de-4b62-9e28-fa5b6c8ce5b7
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '556'
 ht-degree: 0%
 
 ---
