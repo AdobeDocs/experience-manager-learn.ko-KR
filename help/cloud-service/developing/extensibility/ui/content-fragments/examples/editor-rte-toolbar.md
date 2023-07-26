@@ -11,14 +11,16 @@ thumbnail: KT-13464.jpg
 doc-type: article
 last-substantial-update: 2023-06-12T00:00:00Z
 exl-id: 2b72c282-bce8-4f2a-bce6-f2f31e96ec88
-source-git-commit: 6f537a0c7605b96f6c6b43ff8c5bf634369171cc
+source-git-commit: 6a82bbb2bbfc95e3292735ac8490eecd5e7ddb84
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '418'
 ht-degree: 0%
 
 ---
 
 # 리치 텍스트 편집기(RTE) 도구 모음에 사용자 지정 단추 추가
+
+AEM 콘텐츠 조각 편집기의 리치 텍스트 편집기(RTE) 도구 모음에 사용자 지정 단추를 추가하는 방법을 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420768?quality=12&learn=on)
 

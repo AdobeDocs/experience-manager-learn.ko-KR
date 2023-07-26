@@ -10,15 +10,17 @@ jira: KT-13466
 thumbnail: KT-13466.jpg
 doc-type: article
 last-substantial-update: 2023-06-12T00:00:00Z
-source-git-commit: c965d5ff3f49f4859779e657674dab8602fb831b
+source-git-commit: 6a82bbb2bbfc95e3292735ac8490eecd5e7ddb84
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '781'
 ht-degree: 0%
 
 ---
 
 
 # 리치 텍스트 편집기(RTE)에 배지 추가
+
+AEM 콘텐츠 조각 편집기에서 RTE(리치 텍스트 편집기)에 배지를 추가하는 방법을 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420831?quality=12&learn=on)
 
