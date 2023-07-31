@@ -10,7 +10,7 @@ role: Developer
 level: Intermediate
 last-substantial-update: 2023-05-14T00:00:00Z
 exl-id: 5e423f2c-90d2-474f-8bdc-fa15ae976f18
-source-git-commit: 861b171b8ebbcf9565bdc94fb84a043ecb99c00a
+source-git-commit: 929fd045b81652463034b54c557de04df3d4e64a
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 0%
@@ -22,7 +22,10 @@ ht-degree: 0%
 AEM 자동 시작 워크플로우는 자산 처리가 완료되면 업로드 또는 재처리 시 사용자 지정 워크플로를 자동으로 호출하여 자산 처리를 as a Cloud Service으로 확장합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/37323?quality=12&learn=on)
-> `Notice`: 워크플로우 런처를 사용하는 대신 자산 후처리를 사용자 지정하는 자동 시작 워크플로우를 사용합니다. 자동 시작 워크플로우는 _전용_ 에셋 처리가 완료되면 에셋 처리 중에 여러 번 호출할 수 있는 런처 대신 호출됩니다.
+
+>[!NOTE]
+>
+>워크플로우 런처를 사용하는 대신 자산 후처리를 사용자 지정하려면 자동 시작 워크플로우를 사용하십시오. 자동 시작 워크플로우는 _전용_ 에셋 처리가 완료되면 에셋 처리 중에 여러 번 호출할 수 있는 런처 대신 호출됩니다.
 
 ## 사후 처리 워크플로 사용자 지정
 
@@ -37,7 +40,11 @@ AEM 자동 시작 워크플로우는 자산 처리가 완료되면 업로드 또
    ![이름 변경](assets/auto-start-workflow-change-name.png)
 6. 비즈니스 요구 사항을 충족하는 단계를 추가합니다. 이 경우 에셋의 처리가 완료되면 작업을 추가합니다. 워크플로우의 마지막 단계가 항상 인지 확인합니다. _워크플로우 완료_ 단계<br/>
    ![워크플로우 단계 추가](assets/auto-start-workflow-customize-steps.png)
-   > `Note`: 자동 시작 워크플로는 모든 자산 업로드 또는 재처리에서 실행되므로 워크플로 단계의 확장 의미를 신중하게 고려하십시오. 특히 다음과 같은 대량 작업의 경우 그러합니다. [일괄 가져오기](../../cloud-service/migration/bulk-import.md) 또는 마이그레이션.
+
+   >[!NOTE]
+   >
+   >자동 시작 워크플로우는 모든 에셋 업로드 또는 재처리와 함께 실행되므로 특히 다음과 같은 대량 작업에 대해 워크플로 단계의 확장 의미를 신중하게 고려하십시오. [일괄 가져오기](../../cloud-service/migration/bulk-import.md) 또는 마이그레이션.
+
 7. 다음 항목 선택 _동기화_ 변경 사항을 저장하고 워크플로우 모델을 동기화하는 버튼
 
 ## 사용자 지정 사후 처리 워크플로우 사용
