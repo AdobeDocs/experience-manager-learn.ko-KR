@@ -9,11 +9,11 @@ role: Developer
 level: Beginner
 kt: 10721
 thumbnail: KT-10721.jpg
-last-substantial-update: 2022-10-03T00:00:00Z
+last-substantial-update: 2023-05-10T00:00:00Z
 exl-id: 4f67bb37-416a-49d9-9d7b-06c3573909ca
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 7938325427b6becb38ac230a3bc4b031353ca8b1
 workflow-type: tm+mt
-source-wordcount: '802'
+source-wordcount: '811'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 1%
 
 ## AEM 요구 사항
 
-Next.js 앱은 다음 AEM 배포 옵션과 함께 작동합니다. 모든 배포에는 [WKND 공유 v2.1.0+](https://github.com/adobe/aem-guides-wknd-shared/releases/latest) 또는 [WKND Site v2.1.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) AEM as a Cloud Service 환경에 설치됩니다.
+Next.js 앱은 다음 AEM 배포 옵션과 함께 작동합니다. 모든 배포에는 [WKND 공유 v3.0.0+](https://github.com/adobe/aem-guides-wknd-shared/releases/latest) 또는 [WKND 사이트 v3.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) AEM as a Cloud Service 환경에 설치됩니다.
 
 이 예제 Next.js 앱은에 연결하도록 설계되었습니다. __AEM 게시__ 서비스.
 
@@ -112,43 +112,73 @@ AEM Headless 모범 사례에 따라 Next.js 앱은 AEM GraphQL 지속 쿼리를
 + `wknd/adventures-all` 지속 쿼리 - 속성 세트가 간략히 포함되어 AEM의 모든 모험을 반환합니다. 이 지속 쿼리는 초기 보기의 모험 목록을 구동합니다.
 
 ```
-# Retrieves a list of all adventures
-{
-    adventureList {
-        items {
-            _path
-            slug
-            title
-            price
-            tripLength
-            primaryImage {
-                ... on ImageRef {
-                _path
-                mimeType
-                width
-                height
-                }
-            }
+# Retrieves a list of all Adventures
+#
+# Optional query variables:
+# - { "offset": 10 }
+# - { "limit": 5 }
+# - { 
+#    "imageFormat": "JPG",
+#    "imageWidth": 1600,
+#    "imageQuality": 90 
+#   }
+query ($offset: Int, $limit: Int, $sort: String, $imageFormat: AssetTransformFormat=JPG, $imageWidth: Int=1200, $imageQuality: Int=80) {
+  adventureList(
+    offset: $offset
+    limit: $limit
+    sort: $sort
+    _assetTransform: {
+      format: $imageFormat
+      width: $imageWidth
+      quality: $imageQuality
+      preferWebp: true
+  }) {
+    items {
+      _path
+      slug
+      title
+      activity
+      price
+      tripLength
+      primaryImage {
+        ... on ImageRef {
+          _path
+          _dynamicUrl
         }
+      }
     }
+  }
 }
 ```
 
 + `wknd/adventure-by-slug` 지속 쿼리 - 단일 모험 반환 기준 `slug` (모험을 고유하게 식별하는 사용자 지정 속성) 전체 속성 세트를 포함합니다. 이 지속 쿼리는 모험 세부 사항 보기를 실행합니다.
 
 ```
-# Retrieves an adventure Content Fragment based on it's slug
-# Example query variables: 
-# {"slug": "bali-surf-camp"} 
-# Technically returns an adventure list but since the the slug 
-# property is set to be unique in the CF Model, only a single CF is expected
+# Retrieves an Adventure Fragment based on it's unique slug.
+#
+# Required query variables:
+# - {"slug": "bali-surf-camp"}
+#
+# Optional query variables:
+# - { 
+#     "imageFormat": "JPG",
+#     "imageSeoName": "my-adventure",
+#     "imageWidth": 1600,
+#     "imageQuality": 90 
+#   }
+#  
+# This query returns an adventure list but since the the slug property is set to be unique in the Content Fragment Model, only a single Content Fragment is expected.
 
-query($slug: String!) {
-  adventureList(filter: {
-        slug: {
-          _expressions: [ { value: $slug } ]
-        }
-      }) {
+query ($slug: String!, $imageFormat:AssetTransformFormat=JPG, $imageSeoName: String, $imageWidth: Int=1200, $imageQuality: Int=80) {
+  adventureList(
+    filter: {slug: {_expressions: [{value: $slug}]}}
+    _assetTransform: {
+      format: $imageFormat
+      seoName: $imageSeoName
+      width: $imageWidth
+      quality: $imageQuality
+      preferWebp: true
+  }) {
     items {
       _path
       title
@@ -163,22 +193,22 @@ query($slug: String!) {
       primaryImage {
         ... on ImageRef {
           _path
-          mimeType
-          width
-          height
+          _dynamicUrl
         }
       }
       description {
         json
         plaintext
+        html
       }
       itinerary {
         json
         plaintext
+        html
       }
     }
     _references {
-      ...on AdventureModel {
+      ... on AdventureModel {
         _path
         slug
         title
@@ -219,9 +249,9 @@ async getAllAdventures() {
 
 // And so on, and so forth ... 
 
-async getAdventureSlugs() { ... }
+async getAdventureSlugs(queryVariables) { ... }
 
-async getAdventuresBySlug(slug) { ... }
+async getAdventuresBySlug(slug, queryVariables) { ... }
 ...
 ```
 
@@ -231,17 +261,17 @@ Next.js 앱은 두 페이지를 사용하여 모험 데이터를 제공합니다
 
 + `src/pages/index.js`
 
-   사용 [Next.js의 getServerSideProps()](https://nextjs.org/docs/basic-features/data-fetching/get-server-side-props) 호출하기 `getAllAdventures()` 각 모험을 카드로 표시합니다.
+  사용 [Next.js의 getServerSideProps()](https://nextjs.org/docs/basic-features/data-fetching/get-server-side-props) 호출하기 `getAllAdventures()` 각 모험을 카드로 표시합니다.
 
-   사용 `getServerSiteProps()` 이 Next.js 페이지의 서버측 렌더링을 허용합니다.
+  사용 `getServerSiteProps()` 이 Next.js 페이지의 서버측 렌더링을 허용합니다.
 
 + `src/pages/adventures/[...slug].js`
 
-   A [Next.js 동적 경로](https://nextjs.org/docs/routing/dynamic-routes) 단일 모험의 세부 정보를 표시합니다. 이 동적 경로는 다음을 사용하여 각 모험의 데이터를 미리 가져옵니다. [Next.js의 getStaticProps()](https://nextjs.org/docs/basic-features/data-fetching/get-static-props) (으)로 호출을 통해 `getAdventureBySlug(..)` 사용 `slug` 에서 모험 선택을 통해 전달된 매개 변수 `adventures/index.js` 페이지를 가리키도록 업데이트하는 중입니다.
+  A [Next.js 동적 경로](https://nextjs.org/docs/routing/dynamic-routes) 단일 모험의 세부 정보를 표시합니다. 이 동적 경로는 다음을 사용하여 각 모험의 데이터를 미리 가져옵니다. [Next.js의 getStaticProps()](https://nextjs.org/docs/basic-features/data-fetching/get-static-props) (으)로 호출을 통해 `getAdventureBySlug(slug, queryVariables)` 사용 `slug` 에서 모험 선택을 통해 전달된 매개 변수 `adventures/index.js` 페이지 및 `queryVariables` 이미지 형식, 너비 및 품질을 제어합니다.
 
-   동적 경로는 를 사용하여 모든 모험에 대한 세부 사항을 미리 가져올 수 있습니다. [Next.js의 getStaticPaths()](https://nextjs.org/docs/basic-features/data-fetching/get-static-paths) GraphQL 쿼리에서 반환된 모험의 전체 목록을 기반으로 가능한 모든 경로 순열 채우기  `getAdventurePaths()`
+  동적 경로는 를 사용하여 모든 모험에 대한 세부 사항을 미리 가져올 수 있습니다. [Next.js의 getStaticPaths()](https://nextjs.org/docs/basic-features/data-fetching/get-static-paths) GraphQL 쿼리에서 반환한 모험의 전체 목록을 기반으로 가능한 모든 경로 순열 채우기  `getAdventurePaths()`
 
-   사용 `getStaticPaths()` 및 `getStaticProps(..)` 다음 Next.js 페이지의 정적 사이트 생성을 허용했습니다.
+  사용 `getStaticPaths()` 및 `getStaticProps(..)` 다음 Next.js 페이지의 정적 사이트 생성을 허용했습니다.
 
 ## 배포 구성
 

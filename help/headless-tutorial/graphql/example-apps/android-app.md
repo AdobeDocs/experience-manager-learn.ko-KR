@@ -9,11 +9,12 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
+last-substantial-update: 2023-05-10T00:00:00Z
 exl-id: 7873e263-b05a-4170-87a9-59e8b7c65faa
-source-git-commit: 985d52f02025dc9cb2b9c70ead4a88af07c63f29
+source-git-commit: 7938325427b6becb38ac230a3bc4b031353ca8b1
 workflow-type: tm+mt
-source-wordcount: '765'
-ht-degree: 7%
+source-wordcount: '681'
+ht-degree: 6%
 
 ---
 
@@ -35,11 +36,9 @@ ht-degree: 7%
 
 ## AEM 요구 사항
 
-Android 애플리케이션은 다음 AEM 배포 옵션과 함께 작동합니다. 모든 배포에는 [WKND Site v2.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) 설치.
+Android 애플리케이션은 다음 AEM 배포 옵션과 함께 작동합니다. 모든 배포에는 [WKND 사이트 v3.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) 설치.
 
 + [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
-+ 다음을 사용하여 로컬 설정 [AEM CLOUD SERVICE SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=ko-KR)
-+ [AEM 6.5 SP13+ QuickStart](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=ko-KR?lang=en#install-local-aem-instances)
 
 Android 애플리케이션은 __AEM 게시__ 그러나 Android 애플리케이션의 구성에서 인증이 제공된 경우 AEM 작성자의 콘텐츠를 소싱할 수 있습니다.
 
@@ -55,7 +54,7 @@ Android 애플리케이션은 __AEM 게시__ 그러나 Android 애플리케이�
 1. 파일 수정 `config.properties` 위치: `app/src/main/assets/config.properties` 및 업데이트 `contentApi.endpoint` target AEM 환경과 일치시키려면 다음을 수행하십시오.
 
    ```plain
-   contentApi.endpoint=http://10.0.2.2:4503
+   contentApi.endpoint=https://publish-p123-e456.adobeaemcloud.com
    ```
 
    __기본 인증__
@@ -63,7 +62,7 @@ Android 애플리케이션은 __AEM 게시__ 그러나 Android 애플리케이�
    다음 `contentApi.user` 및 `contentApi.password` wknd GraphQL 콘텐츠에 액세스하여 로컬 AEM 사용자를 인증합니다.
 
    ```plain
-   contentApi.endpoint=http://10.0.2.2:4502
+   contentApi.endpoint=https://author-p123-e456.adobeaemcloud.com
    contentApi.user=admin
    contentApi.password=admin
    ```
@@ -74,9 +73,7 @@ Android 애플리케이션은 __AEM 게시__ 그러나 Android 애플리케이�
 
 ### AEM 환경에 연결
 
-`10.0.2.2` 다음 값: [특수 별칭 IP](https://developer.android.com/studio/run/emulator-networking) 에뮬레이터 만들기 사용 시 localhost용 `10.0.2.2:4502` 은(는) 와 동일합니다. `localhost:4502`. AEM 게시 환경에 연결하는 경우(권장) 인증이 필요하지 않으며 `contentAPi.user` 및 `contentApi.password` 비워 둘 수 있습니다.
-
-AEM 작성자 환경에 연결하는 경우 [authorization](https://github.com/adobe/aem-headless-client-java#using-authorization) 필수 항목입니다. 기본적으로 응용 프로그램은 사용자 이름과 암호가 있는 기본 인증을 사용하도록 설정되어 있습니다. `admin:admin`. 다음 [AEMHeadlessClientBuilder](https://github.com/adobe/aem-headless-client-java/blob/main/client/src/main/java/com/adobe/aem/graphql/client/AEMHeadlessClientBuilder.java) 는 을 사용할 수 있는 기능을 제공합니다. [토큰 기반 인증](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html). 에서 토큰 기반 인증 업데이트 클라이언트 빌더를 사용하려면 `AdventureLoader.java` 및 `AdventuresLoader.java`:
+AEM 작성자 환경에 연결하는 경우 [authorization](https://github.com/adobe/aem-headless-client-java#using-authorization) 필수 항목입니다. 다음 [AEMHeadlessClientBuilder](https://github.com/adobe/aem-headless-client-java/blob/main/client/src/main/java/com/adobe/aem/graphql/client/AEMHeadlessClientBuilder.java) 는 을 사용할 수 있는 기능을 제공합니다. [토큰 기반 인증](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html). 에서 토큰 기반 인증 업데이트 클라이언트 빌더를 사용하려면 `AdventureLoader.java` 및 `AdventuresLoader.java`:
 
 ```java
 /* Comment out basicAuth
@@ -111,10 +108,7 @@ AEM Headless 우수 사례에 따라 iOS 애플리케이션은 AEM GraphQL 지�
             tripLength
             primaryImage {
                 ... on ImageRef {
-                _path
-                mimeType
-                width
-                height
+                _dynamicUrl
                 }
             }
         }
@@ -150,10 +144,7 @@ query($slug: String!) {
       price
       primaryImage {
         ... on ImageRef {
-          _path
-          mimeType
-          width
-          height
+          _dynamicUrl
         }
       }
       description {
@@ -186,11 +177,11 @@ AEM 지속 쿼리는 HTTP GET을 통해 실행되므로 [Java용 AEM Headless �
 
 + `loader/AdventuresLoader.java`
 
-   를 사용하여 애플리케이션의 홈 화면에서 모험 목록을 가져옵니다. `wknd-shared/adventures-all` 지속 쿼리.
+  를 사용하여 애플리케이션의 홈 화면에서 모험 목록을 가져옵니다. `wknd-shared/adventures-all` 지속 쿼리.
 
 + `loader/AdventureLoader.java`
 
-   다음을 통해 선택한 단일 모험 가져오기 `slug` 매개 변수, 사용 `wknd-shared/adventure-by-slug` 지속 쿼리.
+  다음을 통해 선택한 단일 모험 가져오기 `slug` 매개 변수, 사용 `wknd-shared/adventure-by-slug` 지속 쿼리.
 
 ```java
 //AdventuresLoader.java
@@ -222,11 +213,11 @@ Android 애플리케이션은 두 개의 보기를 사용하여 모바일 경험
 
 + `AdventureListFragment.java`
 
-   호출 `AdventuresLoader` 반환된 모험을 목록에 표시합니다.
+  호출 `AdventuresLoader` 반환된 모험을 목록에 표시합니다.
 
 + `AdventureDetailFragment.java`
 
-   호출 `AdventureLoader` 사용 `slug` 에서 모험 선택을 통해 전달된 매개 변수 `AdventureListFragment` 단일 모험의 세부 정보를 보고 표시합니다.
+  호출 `AdventureLoader` 사용 `slug` 에서 모험 선택을 통해 전달된 매개 변수 `AdventureListFragment` 단일 모험의 세부 정보를 보고 표시합니다.
 
 ### 원격 이미지
 
@@ -234,5 +225,5 @@ Android 애플리케이션은 두 개의 보기를 사용하여 모바일 경험
 
 ## 추가 리소스
 
-+ [AEM Headless 시작하기 - GraphQL 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=ko-KR)
++ [AEM Headless 시작하기 - GraphQL 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html)
 + [Java용 AEM Headless 클라이언트](https://github.com/adobe/aem-headless-client-java)

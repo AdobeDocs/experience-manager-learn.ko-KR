@@ -10,7 +10,7 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 772b595d-2a25-4ae6-8c6e-69a646143147
-source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
+source-git-commit: 7938325427b6becb38ac230a3bc4b031353ca8b1
 workflow-type: tm+mt
 source-wordcount: '1188'
 ht-degree: 2%
@@ -26,7 +26,7 @@ ht-degree: 2%
 
 ## 사전 요구 사항
 
-이 다중 파트 자습서의 이전 부분에 설명된 단계가 완료되었다고 가정됩니다. 또는 [tutorial-solution-content.zip](assets/explore-graphql-api/tutorial-solution-content.zip) 는 AEM Author 및 Publish as a Cloud Service 서비스에 설치됩니다.
+이 다중 파트 자습서의 이전 부분에 설명된 단계가 완료되었다고 가정됩니다. 또는 [basic-tutorial-solution.content.zip](assets/explore-graphql-api/basic-tutorial-solution.content.zip) 는 AEM Author 및 Publish as a Cloud Service 서비스에 설치됩니다.
 
 _이 장의 IDE 스크린샷은 [Visual Studio 코드](https://code.visualstudio.com/)_
 
@@ -71,6 +71,7 @@ React 앱을 다운로드하려면:
 1. 업데이트 `.env.development` AEM as a Cloud Service 게시 서비스에 연결합니다.
 
    - 설정 `REACT_APP_HOST_URI`의 값은 AEM as a Cloud Service의 게시 URL이 됩니다(예: `REACT_APP_HOST_URI=https://publish-p123-e456.adobeaemcloud.com`) 및 `REACT_APP_AUTH_METHOD`의 값: 까지 `none`
+
    >[!NOTE]
    >
    > 프로젝트 구성, 콘텐츠 조각 모델, 작성된 콘텐츠 조각, GraphQL 끝점 및 이전 단계의 지속 쿼리를 게시했는지 확인합니다.
@@ -102,6 +103,7 @@ React 앱을 다운로드하려면:
 >  // TODO : AEM Headless 자습서의 단계에 따라 이를 구현합니다.
 >
 >  //*********************************
+>
 
 ## React 앱 구조
 

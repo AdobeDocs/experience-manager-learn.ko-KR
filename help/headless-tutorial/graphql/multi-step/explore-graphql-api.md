@@ -10,7 +10,7 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 508b0211-fa21-4a73-b8b4-c6c34e3ba696
-source-git-commit: ae27cbc50fc5c4c2e8215d7946887b99d480d668
+source-git-commit: 7938325427b6becb38ac230a3bc4b031353ca8b1
 workflow-type: tm+mt
 source-wordcount: '1454'
 ht-degree: 2%
@@ -35,7 +35,7 @@ AEM의 GraphQL API는 콘텐츠 조각의 데이터를 다운스트림 애플리
 * 여러 콘텐츠 조각 모델의 쿼리에 결합하는 방법을 알아봅니다
 * GraphQL 쿼리를 지속하는 방법을 알아봅니다.
 
-## GraphQL 끝점 활성화 {#enable-graphql-endpoint}
+## GraphQL 엔드포인트 활성화 {#enable-graphql-endpoint}
 
 컨텐츠 조각에 대해 GraphQL API 쿼리를 활성화하려면 GraphQL 끝점을 구성해야 합니다.
 
@@ -391,7 +391,7 @@ AEM의 GraphQL API는 콘텐츠 조각의 데이터를 다운스트림 애플리
 
 ## 솔루션 파일 {#solution-files}
 
-마지막 세 개의 챕터에서 만든 콘텐츠, 모델 및 지속 쿼리를 다운로드합니다. [tutorial-solution-content.zip](assets/explore-graphql-api/tutorial-solution-content.zip)
+마지막 세 개의 챕터에서 만든 콘텐츠, 모델 및 지속 쿼리를 다운로드합니다. [basic-tutorial-solution.content.zip](assets/explore-graphql-api/basic-tutorial-solution.content.zip)
 
 ## 추가 리소스
 

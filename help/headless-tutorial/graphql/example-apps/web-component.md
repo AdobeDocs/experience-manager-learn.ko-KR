@@ -8,11 +8,12 @@ role: Developer
 level: Beginner
 kt: 10797
 thumbnail: kt-10797.jpg
+last-substantial-update: 2023-05-10T00:00:00Z
 exl-id: 4f090809-753e-465c-9970-48cf0d1e4790
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 7938325427b6becb38ac230a3bc4b031353ca8b1
 workflow-type: tm+mt
-source-wordcount: '566'
-ht-degree: 6%
+source-wordcount: '543'
+ht-degree: 5%
 
 ---
 
@@ -28,7 +29,6 @@ ht-degree: 6%
 
 다음 도구를 로컬에 설치해야 합니다.
 
-+ [JDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atoling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14) (로컬 AEM 6.5 또는 AEM SDK에 연결하는 경우)
 + [Node.js v18](https://nodejs.org/en/)
 + [Git](https://git-scm.com/)
 
@@ -38,9 +38,9 @@ ht-degree: 6%
 
 + [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
 + 다음을 사용하여 로컬 설정 [AEM CLOUD SERVICE SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=ko-KR)
-+ [AEM 6.5 SP13+ QuickStart](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=ko-KR?lang=en#install-local-aem-instances)
+   + 필요 [JDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atoling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14) (로컬 AEM 6.5 또는 AEM SDK에 연결하는 경우)
 
-모든 배포에는 `tutorial-solution-content.zip` 다음에서 [솔루션 파일](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/explore-graphql-api.html#solution-files) 설치 및 필요 [배포 구성](../deployment/web-component.md) 수행됩니다.
+이 예제 앱은 [basic-tutorial-solution.content.zip](../multi-step/assets/explore-graphql-api/basic-tutorial-solution.content.zip) 설치 및 필수 [배포 구성](../deployment/web-component.md) 제자리에 있습니다.
 
 
 >[!IMPORTANT]
@@ -67,7 +67,7 @@ ht-degree: 6%
 
    ```plain
    # AEM Server namespace
-   aemHost=https://publish-p65804-e666805.adobeaemcloud.com
+   aemHost=https://publish-p123-e456.adobeaemcloud.com
    
    # AEM GraphQL API and Persisted Query Details
    graphqlAPIEndpoint=graphql/execute.json
@@ -104,7 +104,7 @@ ht-degree: 6%
 
 ```html
     <person-info 
-        host="https://publish-p65804-e666805.adobeaemcloud.com"
+        host="https://publish-p123-e456.adobeaemcloud.com"
         query-param-value="John Doe">
     </person-info>
 ```
@@ -166,7 +166,8 @@ class PersonInfo extends HTMLElement {
         const personTemplateElement = document.getElementById('person-template');
         const templateContent = personTemplateElement.content;
         const personImgElement = templateContent.querySelector('.person_image');
-        personImgElement.setAttribute('src', host + person.profilePicture._path);
+        personImgElement.setAttribute('src',
+            host + (person.profilePicture._dynamicUrl || person.profilePicture._path));
         personImgElement.setAttribute('alt', person.fullName);
         ...
         this.shadowRoot.appendChild(templateContent.cloneNode(true));
@@ -186,5 +187,3 @@ class PersonInfo extends HTMLElement {
 이 웹 구성 요소는 대상 AEM 환경에서 실행되는 AEM 기반 CORS 구성을 사용하며 호스트 페이지가에서 실행된다고 가정합니다. `http://localhost:8080` 개발 모드 및 아래는 로컬 AEM 작성자 서비스에 대한 샘플 CORS OSGi 구성입니다.
 
 검토하십시오. [배포 구성](../deployment/web-component.md) 각 AEM 서비스용.
-
-![CORS 구성](assets/react-app/cross-origin-resource-sharing-configuration.png)
