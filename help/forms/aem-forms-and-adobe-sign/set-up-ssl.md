@@ -11,7 +11,7 @@ level: Intermediate
 badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: e94cde31-e589-4b71-b5de-bcd898393b8a
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 490d2d8af8417806527a3e9288127edb9baff924
 workflow-type: tm+mt
 source-wordcount: '90'
 ht-degree: 3%
@@ -23,7 +23,7 @@ ht-degree: 3%
 AEM Forms을 Acrobat Sign과 통합하기 위한 전제 조건 중 하나는 SSL을 사용하도록 AEM 인스턴스를 구성하는 것입니다. HTTPS를 통해 실행할 AEM 인스턴스를 더 쉽게 설정할 수 있는 Adobe Experience Manager의 SSL 설정 마법사.
 다음 비디오에서는 마법사를 사용하여 SSL을 구성하는 데 필요한 단계를 설명합니다
 
->[!VIDEO](https://video.tv.adobe.com/v/17993&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/17993?learn=on)
 
 ## 다음 단계
 
