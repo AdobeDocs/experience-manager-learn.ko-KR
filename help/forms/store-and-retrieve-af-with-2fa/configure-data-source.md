@@ -10,10 +10,10 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: a87ff428-15f7-43c9-ad03-707eab6216a9
-source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
+source-git-commit: 51e21c11df63d33a6900fbc331a756f2a7655bcb
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 3%
+source-wordcount: '320'
+ht-degree: 4%
 
 ---
 
@@ -23,14 +23,18 @@ AEM에서 외부 데이터베이스와의 통합을 활성화하는 방법에는
 첫 번째 단계는 적절한 를 다운로드하여 배포하는 것입니다 [MySQL 드라이버](https://mvnrepository.com/artifact/mysql/mysql-connector-java) AEM으로.
 그런 다음 해당 데이터베이스와 관련된 Sling 연결 풀링된 DataSource 속성을 설정합니다. 다음 스크린샷은 이 자습서에 사용된 설정을 보여 줍니다. 데이터베이스 스키마는 이 자습서 자산의 일부로 제공됩니다.
 
-![데이터 소스](assets/data-source.JPG)
-
-
-* JDBC 드라이버 클래스: `com.mysql.cj.jdbc.Driver`
-* JDBC 연결 URI: `jdbc:mysql://localhost:3306/aemformstutorial`
-
 >[!NOTE]
 >데이터 소스의 이름을 지정하십시오. `StoreAndRetrieveAfData` as this is the name이름 used사용 in the OSGiOSGi서비스 .
+
+
+![데이터 소스](assets/data-source.JPG)
+
+| 속성 이름 | 속성 값 |   |
+|---------------------|------------------------------------------------------------------------------------|---|
+| 데이터 소스 이름 | StoreAndRetrieveAfData |   |
+| JDBC 드라이브 클래스 | jdbc:mysql://localhost:3306/aemformstutorial |   |
+| JDBC 연결 URI | jdbc:mysql://localhost:3306/aemformstutorial?serverTimezone=UTC&amp;autoReconnect=true |   |
+|                     |                                                                                    |   |
 
 
 ## 데이터베이스 만들기
