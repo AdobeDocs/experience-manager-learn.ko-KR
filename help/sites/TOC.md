@@ -6,10 +6,10 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: 2a137f71cbd876db0164e84ab437e8eda982270e
+source-git-commit: e7e5a07ecada8e5760cd1496bdb44b3d035373dd
 workflow-type: tm+mt
-source-wordcount: '458'
-ht-degree: 26%
+source-wordcount: '459'
+ht-degree: 27%
 
 ---
 
@@ -55,7 +55,7 @@ ht-degree: 26%
 
 + 개발 {#developing}
    + [AEM Project Archetype](developing/aem-project-archetype.md)
-   + [AEM Sites 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR)
+   + [AEM Sites 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
    + [AEM Headless 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
    + [AEM SPA 편집기 및 반응 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
    + [페이지 속성 확장](developing/page-properties-technical-video-develop.md)
@@ -79,7 +79,7 @@ ht-degree: 26%
 + 다중 사이트 관리 {#multi-site-management}
    + [언어 사본 소개](./multi-site-management/language-copy-overview.md)
    + [Live Copy 및 블루프린트](./multi-site-management/live-copy-and-blueprint.md)
-   + [라이브 카피를 만듭니다](./multi-site-management/create-live-copy.md)
+   + [Live Copy를 만듭니다](./multi-site-management/create-live-copy.md)
    + [구성 요소의 Live Copy 상속 관리](./multi-site-management/manage-component-inheritance-live-copy.md)
    + [페이지의 Live Copy 상속 관리](./multi-site-management/manage-page-inheritance-live-copy.md)
    + [라이브 카피 개요 콘솔](./multi-site-management/live-copy-overview-console.md)
@@ -124,6 +124,7 @@ ht-degree: 26%
       + [Visual Experience Composer를 사용한 개인화](integrations/adobe-target/personalization-using-vec.md)
       + [전체 웹 페이지 경험의 개인화](integrations/adobe-target/personalization-web-page.md)
 + 동료로부터 학습 {#expert-resources}
+   + [개요](expert-resources/learn-from-your-peers-overview.md)
    + [AEM Sites 성숙도 평가](expert-resources/maturity-assessment.md)
    + [사이트 유지 관리](expert-resources/site-maintenance.md)
    + [AEM 챔피언 팁 및 요령: 세션 1](expert-resources/champion-tips-1.md)
