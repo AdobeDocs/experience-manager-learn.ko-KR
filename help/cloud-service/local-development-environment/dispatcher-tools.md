@@ -10,10 +10,10 @@ kt: 4679
 thumbnail: 30603.jpg
 last-substantial-update: 2023-03-14T00:00:00Z
 exl-id: 9320e07f-be5c-42dc-a4e3-aab80089c8f7
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 9073c1d41c67ec654b232aea9177878f11793d07
 workflow-type: tm+mt
-source-wordcount: '1612'
-ht-degree: 9%
+source-wordcount: '1621'
+ht-degree: 10%
 
 ---
 
@@ -73,9 +73,27 @@ Dispatcher 도구 버전은 AEM SDK의 버전과 다릅니다. Dispatcher 도구
 1. 다운로드한 파일 압축 풀기 `aem-sdk-xxx.zip` 파일
 1. Dispatcher 도구 압축을 풉니다. `~/aem-sdk/dispatcher`
 
-+ Windows: 압축 풀기 `aem-sdk-dispatcher-tools-x.x.x-windows.zip` 대상 `C:\Users\<My User>\aem-sdk\dispatcher` (필요에 따라 누락된 폴더 만들기)
-+ macOS Linux®: 함께 제공되는 셸 스크립트를 실행합니다 `aem-sdk-dispatcher-tools-x.x.x-unix.sh` Dispatcher 도구의 압축을 풉니다
-   + `chmod a+x aem-sdk-dispatcher-tools-x.x.x-unix.sh && ./aem-sdk-dispatcher-tools-x.x.x-unix.sh`
+>[!BEGINTABS]
+
+>[!TAB macOS]
+
+```shell
+$ chmod a+x aem-sdk-dispatcher-tools-x.x.x-unix.sh
+$ ./aem-sdk-dispatcher-tools-x.x.x-unix.sh
+```
+
+>[!TAB Windows]
+
+압축 풀기 `aem-sdk-dispatcher-tools-x.x.x-windows.zip` 대상 `C:\Users\<My User>\aem-sdk\dispatcher` (필요에 따라 누락된 폴더를 만듭니다.)
+
+>[!TAB Linux]
+
+```shell
+$ chmod a+x aem-sdk-dispatcher-tools-x.x.x-unix.sh
+$ ./aem-sdk-dispatcher-tools-x.x.x-unix.sh
+```
+
+>[!ENDTABS]
 
 아래에 실행된 모든 명령은 현재 작업 디렉터리에 확장 중인 Dispatcher 도구 콘텐츠가 포함되어 있다고 가정합니다.
 
@@ -98,17 +116,54 @@ Dispatcher 도구는 로컬 개발을 포함하여 모든 환경에 대한 동�
 
 선택적으로 Dispatcher 및 Apache 웹 서버 구성(다음을 통해) `httpd -t`)은 다음을 사용하여 확인할 수 있습니다. `validate` 스크립트(와 혼동하지 않음) `validator` 실행 파일). 다음 `validate` 스크립트는 [단계](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/validation-debug.html?lang=en) / `validator`.
 
-+ 사용:
-   + Windows: `bin\validate src`
-   + macOS Linux®: `./bin/validate.sh ./src`
+
+>[!BEGINTABS]
+
+>[!TAB macOS]
+
+```shell
+$ ./bin/validate.sh ./src
+```
+
+>[!TAB Windows]
+
+```shell
+$ bin\validate src
+```
+
+>[!TAB Linux]
+
+```shell
+$ ./bin/validate.sh ./src
+```
+
+>[!ENDTABS]
 
 ## 로컬에서 Dispatcher 실행
 
 AEM Dispatcher는 다음에 대해 도커를 사용하여 로컬에서 실행됩니다. `src` Dispatcher 및 Apache 웹 서버 구성 파일입니다.
 
-+ 사용:
-   + Windows: `bin\docker_run <src-folder> <aem-publish-host>:<aem-publish-port> <dispatcher-port>`
-   + macOS Linux®: `./bin/docker_run.sh <src-folder> <aem-publish-host>:<aem-publish-port> <dispatcher-port>`
+>[!BEGINTABS]
+
+>[!TAB macOS]
+
+```shell
+$ ./bin/docker_run.sh <src-folder> <aem-publish-host>:<aem-publish-port> <dispatcher-port>
+```
+
+>[!TAB Windows]
+
+```shell
+$ bin\docker_run <src-folder> <aem-publish-host>:<aem-publish-port> <dispatcher-port>
+```
+
+>[!TAB Linux]
+
+```shell
+$ ./bin/docker_run.sh <src-folder> <aem-publish-host>:<aem-publish-port> <dispatcher-port>
+```
+
+>[!ENDTABS]
 
 다음 `<aem-publish-host>` 을 로 설정할 수 있습니다. `host.docker.internal`를 사용하는 경우 특별한 DNS 이름 Docker는 호스트 시스템의 IP로 확인되는 컨테이너를 제공합니다. 다음과 같은 경우 `host.docker.internal` 해결되지 않습니다. 다음을 참조하십시오. [문제 해결](#troubleshooting-host-docker-internal) 아래 섹션.
 
@@ -116,24 +171,54 @@ AEM Dispatcher는 다음에 대해 도커를 사용하여 로컬에서 실행됩
 
 Dispatcher 구성 src 폴더의 경로를 제공하는 Dispatcher Docker 컨테이너를 시작합니다.
 
-+ Windows: `bin\docker_run src host.docker.internal:4503 8080`
-+ macOS Linux®: `./bin/docker_run.sh ./src host.docker.internal:4503 8080`
+>[!BEGINTABS]
+
+>[!TAB macOS]
+
+```shell
+$ ./bin/docker_run.sh ./src host.docker.internal:4503 8080
+```
+
+>[!TAB Windows]
+
+```shell
+$ bin\docker_run src host.docker.internal:4503 8080
+```
+
+>[!TAB Linux]
+
+```shell
+$ ./bin/docker_run.sh ./src host.docker.internal:4503 8080
+```
+
+>[!ENDTABS]
 
 포트 4503에서 로컬로 실행되는 AEM as a Cloud Service SDK의 게시 서비스는 다음 Dispatcher를 통해 사용할 수 있습니다. `http://localhost:8080`.
 
 Experience Manager 프로젝트의 Dispatcher 구성에 대해 Dispatcher 도구를 실행하려면 프로젝트의 `dispatcher/src` 폴더를 삭제합니다.
 
-+ Windows:
+>[!BEGINTABS]
 
-   ```shell
-   $ bin\docker_run <User Directory>/code/my-project/dispatcher/src host.docker.internal:4503 8080
-   ```
+>[!TAB macOS]
 
-+ macOS Linux®:
+```shell
+$ ./bin/docker_run.sh ~/code/my-project/dispatcher/src host.docker.internal:4503 8080
+```
 
-   ```shell
-   $ ./bin/docker_run.sh ~/code/my-project/dispatcher/src host.docker.internal:4503 8080
-   ```
+>[!TAB Windows]
+
+```shell
+$ bin\docker_run <User Directory>/code/my-project/dispatcher/src host.docker.internal:4503 8080
+```
+
+>[!TAB Linux]
+
+```shell
+$ ./bin/docker_run.sh ~/code/my-project/dispatcher/src host.docker.internal:4503 8080
+```
+
+>[!ENDTABS]
+
 
 ## Dispatcher 도구 로그
 
@@ -153,17 +238,27 @@ Dispatcher 디버깅에 유용한 매개 변수는 다음과 같습니다.
 
 하나 이상의 매개 변수를 로 전달할 수 있습니다. `docker_run`
 
-+ Windows:
+>[!BEGINTABS]
+
+>[!TAB macOS]
+
+```shell
+$ DISP_LOG_LEVEL=Debug REWRITE_LOG_LEVEL=Debug ./bin/docker_run.sh ~/code/my-project/dispatcher/src host.docker.internal:4503 8080
+```
+
+>[!TAB Windows]
 
 ```shell
 $ DISP_LOG_LEVEL=Debug REWRITE_LOG_LEVEL=Debug bin\docker_run <User Directory>/code/my-project/dispatcher/src host.docker.internal:4503 8080
 ```
 
-+ macOS Linux®:
+>[!TAB Linux]
 
 ```shell
 $ DISP_LOG_LEVEL=Debug REWRITE_LOG_LEVEL=Debug ./bin/docker_run.sh ~/code/my-project/dispatcher/src host.docker.internal:4503 8080
 ```
+
+>[!ENDTABS]
 
 ### 로그 파일 액세스
 
@@ -201,32 +296,32 @@ Apache 및 Dispatcher 구성의 기본 세트가 정기적으로 향상되고 AE
 
 + 최신 Dispatcher 도구 버전에 대해 유효성 검사가 실패하는지 확인
 
-   ```shell
-   $ ./bin/validate.sh ${YOUR-AEM-PROJECT}/dispatcher/src
-   
-   ...
-   Phase 3: Immutability check
-   empty mode param, assuming mode = 'check'
-   ...
-   ** error: immutable file 'conf.d/available_vhosts/default.vhost' has been changed!
-   ```
+  ```shell
+  $ ./bin/validate.sh ${YOUR-AEM-PROJECT}/dispatcher/src
+  
+  ...
+  Phase 3: Immutability check
+  empty mode param, assuming mode = 'check'
+  ...
+  ** error: immutable file 'conf.d/available_vhosts/default.vhost' has been changed!
+  ```
 
 + 를 사용하여 변경할 수 없는 파일 업데이트 `update_maven.sh` script
 
-   ```shell
-   $ ./bin/update_maven.sh ${YOUR-AEM-PROJECT}/dispatcher/src
-   
-   ...
-   Updating dispatcher configuration at folder 
-   running in 'extract' mode
-   running in 'extract' mode
-   reading immutable file list from /etc/httpd/immutable.files.txt
-   preparing 'conf.d/available_vhosts/default.vhost' immutable file extraction
-   ...
-   immutable files extraction COMPLETE
-   fd72f4521fa838daaaf006bb8c9c96ed33a142a2d63cc963ba4cc3dd228948fe
-   Cloud manager validator 2.0.53
-   ```
+  ```shell
+  $ ./bin/update_maven.sh ${YOUR-AEM-PROJECT}/dispatcher/src
+  
+  ...
+  Updating dispatcher configuration at folder 
+  running in 'extract' mode
+  running in 'extract' mode
+  reading immutable file list from /etc/httpd/immutable.files.txt
+  preparing 'conf.d/available_vhosts/default.vhost' immutable file extraction
+  ...
+  immutable files extraction COMPLETE
+  fd72f4521fa838daaaf006bb8c9c96ed33a142a2d63cc963ba4cc3dd228948fe
+  Cloud manager validator 2.0.53
+  ```
 
 + 다음과 같이 업데이트된 변경 불가능한 파일을 확인합니다. `dispatcher_vhost.conf`, `default.vhost`, 및 `default.farm` 필요한 경우 이러한 파일에서 파생된 사용자 정의 파일을 관련 있게 변경합니다.
 
@@ -257,15 +352,26 @@ Phase 3 finished
 날짜 `bin/docker_run src host.docker.internal:4503 8080` 메시지에 결과 표시 __host.docker.internal을 사용할 수 있을 때까지 대기 중__, 다음:
 
 1. 설치된 Docker 버전이 18.03 이상인지 확인합니다.
-2. 의 등록/해결을 방해하는 로컬 컴퓨터가 설정되어 있을 수 있습니다. `host.docker.internal` 이름. 대신 로컬 IP를 사용하십시오.
-   + Windows:
-   + 명령 프롬프트에서 다음을 실행합니다. `ipconfig`및 호스트의 기록 __IPv4 주소__ 호스트 컴퓨터의
-   + 그런 다음 를 실행합니다. `docker_run` 이 IP 주소 사용:
-      `bin\docker_run src <HOST IP>:4503 8080`
-   + macOS Linux®:
-   + 터미널에서 다음을 실행합니다. `ifconfig` 및 호스트를 기록합니다. __아이넷__ IP 주소, 일반적으로 __en0__ 디바이스.
-   + 그런 다음 실행 `docker_run` 호스트 IP 주소 사용:
-      `bin/docker_run.sh src <HOST IP>:4503 8080`
+1. 의 등록/해결을 방해하는 로컬 컴퓨터가 설정되어 있을 수 있습니다. `host.docker.internal` 이름. 대신 로컬 IP를 사용하십시오.
+
+>[!BEGINTABS]
+
+>[!TAB macOS]
+
++ 터미널에서 다음을 실행합니다. `ifconfig` 및 호스트를 기록합니다. __아이넷__ IP 주소, 일반적으로 __en0__ 디바이스.
++ 그런 다음 실행 `docker_run` 호스트 IP 주소 사용: `$ bin/docker_run.sh src <HOST IP>:4503 8080`
+
+>[!TAB Windows]
+
++ 명령 프롬프트에서 다음을 실행합니다. `ipconfig`및 호스트의 기록 __IPv4 주소__ 호스트 컴퓨터의
++ 그런 다음 를 실행합니다. `docker_run` 이 IP 주소 사용: `$ bin\docker_run src <HOST IP>:4503 8080`
+
+>[!TAB Linux]
+
++ 터미널에서 다음을 실행합니다. `ifconfig` 및 호스트를 기록합니다. __아이넷__ IP 주소, 일반적으로 __en0__ 디바이스.
++ 그런 다음 실행 `docker_run` 호스트 IP 주소 사용: `$ bin/docker_run.sh src <HOST IP>:4503 8080`
+
+>[!ENDTABS]
 
 #### 오류 예
 
@@ -284,4 +390,4 @@ Waiting until host.docker.internal is available
 + [Adobe Cloud Manager](https://my.cloudmanager.adobe.com/)
 + [Docker 다운로드](https://www.docker.com/)
 + [AEM 참조 웹 사이트(WKND) 다운로드](https://github.com/adobe/aem-guides-wknd/releases)
-+ [Experience Manager Dispatcher 설명서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko-KR)
++ [Experience Manager Dispatcher 설명서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)

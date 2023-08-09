@@ -10,10 +10,10 @@ role: Developer
 level: Beginner
 last-substantial-update: 2022-09-02T00:00:00Z
 exl-id: 19f72254-2087-450b-909d-2d90c9821486
-source-git-commit: d0b13fd37f1ed42042431246f755a913b56625ec
+source-git-commit: 9073c1d41c67ec654b232aea9177878f11793d07
 workflow-type: tm+mt
-source-wordcount: '1800'
-ht-degree: 9%
+source-wordcount: '1792'
+ht-degree: 10%
 
 ---
 
@@ -32,12 +32,32 @@ AEM(Adobe Experience Manager)은 AEM as a Cloud Service SDK의 QuickStart Jar로
 
 ## Java 설치
 
-Experience Manager은 Java 애플리케이션이므로 개발 도구를 지원하려면 Java SDK가 필요합니다.
+Experience Manager은 Java 애플리케이션이므로 개발 도구를 지원하려면 Oracle Java SDK가 필요합니다.
 
 1. [최신 Java SDK 11 다운로드 및 설치](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atoling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)
-1. 다음 명령을 실행하여 Java 11 SDK가 설치되어 있는지 확인합니다.
-   + Windows:`java -version`
-   + macOS / Linux: `java --version`
+1. 다음 명령을 실행하여 Oracle Java 11 SDK가 설치되어 있는지 확인합니다.
+
+>[!BEGINTABS]
+
+>[!TAB macOS]
+
+```shell
+$ java --version
+```
+
+>[!TAB Windows]
+
+```shell
+$ java -version
+```
+
+>[!TAB Linux]
+
+```shell
+$ java --version
+```
+
+>[!ENDTABS]
 
 ![Java](./assets/aem-runtime/java.png)
 
@@ -69,7 +89,18 @@ AEM as a Cloud Service SDK 또는 AEM SDK에는 호환 가능한 버전의 Dispa
    본인 *할 수 없음* Cloud Service Quickstart Jar로 AEM 시작 [두 번 클릭하여](#troubleshooting-double-click).
 1. 다음 위치에서 로컬 AEM 작성자 서비스에 액세스합니다. [http://localhost:4502](http://localhost:4502) 웹 브라우저에서
 
-Windows:
+>[!BEGINTABS]
+
+>[!TAB macOS]
+
+```shell
+$ mkdir -p ~/aem-sdk/author
+$ cp aem-sdk-Quickstart-XXX.jar ~/aem-sdk/author/aem-author-p4502.jar
+$ cd ~/aem-sdk/author
+$ java -jar aem-author-p4502.jar
+```
+
+>[!TAB Windows]
 
 ```shell
 $ mkdir -p c:\Users\<My User>\aem-sdk\author
@@ -78,7 +109,7 @@ $ cd c:\Users\<My User>\aem-sdk\author
 $ java -jar aem-author-p4502.jar
 ```
 
-macOS / Linux:
+>[!TAB Linux]
 
 ```shell
 $ mkdir -p ~/aem-sdk/author
@@ -86,6 +117,9 @@ $ cp aem-sdk-Quickstart-XXX.jar ~/aem-sdk/author/aem-author-p4502.jar
 $ cd ~/aem-sdk/author
 $ java -jar aem-author-p4502.jar
 ```
+
+>[!ENDTABS]
+
 
 ## 로컬 AEM 게시 서비스 설정
 
@@ -100,16 +134,9 @@ $ java -jar aem-author-p4502.jar
    본인 *할 수 없음* Cloud Service Quickstart Jar로 AEM 시작 [두 번 클릭하여](#troubleshooting-double-click).
 1. 에서 로컬 AEM 게시 서비스에 액세스 [http://localhost:4503](http://localhost:4503) 웹 브라우저에서
 
-Windows:
+>[!BEGINTABS]
 
-```shell
-$ mkdir -p c:\Users\<My User>\aem-sdk\publish
-$ copy aem-sdk-Quickstart-XXX.jar c:\Users\<My User>\aem-sdk\publish\aem-publish-p4503.jar
-$ cd c:\Users\<My User>\aem-sdk\publish
-$ java -jar aem-publish-p4503.jar
-```
-
-macOS / Linux:
+>[!TAB macOS]
 
 ```shell
 $ mkdir -p ~/aem-sdk/publish
@@ -118,9 +145,35 @@ $ cd ~/aem-sdk/publish
 $ java -jar aem-publish-p4503.jar
 ```
 
+>[!TAB Windows]
+
+```shell
+$ mkdir -p c:\Users\<My User>\aem-sdk\publish
+$ copy aem-sdk-Quickstart-XXX.jar c:\Users\<My User>\aem-sdk\publish\aem-publish-p4503.jar
+$ cd c:\Users\<My User>\aem-sdk\publish
+$ java -jar aem-publish-p4503.jar
+```
+
+>[!TAB Linux]
+
+```shell
+$ mkdir -p ~/aem-sdk/publish
+$ cp aem-sdk-Quickstart-XXX.jar ~/aem-sdk/publish/aem-publish-p4503.jar
+$ cd ~/aem-sdk/publish
+$ java -jar aem-publish-p4503.jar
+```
+
+>[!ENDTABS]
+
+
 ## 프리릴리스 모드에서 로컬 AEM 서비스 설정
 
 로컬 AEM 런타임은에서 시작할 수 있습니다. [프리릴리스 모드](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html) 개발자가 AEM as a Cloud Service의 다음 릴리스 기능에 대해 빌드할 수 있도록 허용합니다. 프리릴리스는 다음을 전달하여 활성화됩니다. `-r prerelease` 로컬 AEM 런타임의 첫 번째 시작 부분에 인수를 추가합니다. 로컬 AEM Author 및 AEM Publish 서비스에서 모두 사용할 수 있습니다.
+
+
+>[!BEGINTABS]
+
+>[!TAB macOS]
 
 ```shell
 # For AEM Author service in prerelease mode
@@ -129,6 +182,28 @@ $ java -jar aem-author-p4502.jar -r prerelease
 # For AEM Publish service in prerelease mode
 $ java -jar aem-publish-p4503.jar -r prerelease
 ```
+
+>[!TAB Windows]
+
+```shell
+# For AEM Author service in prerelease mode
+$ java -jar aem-author-p4502.jar -r prerelease
+
+# For AEM Publish service in prerelease mode
+$ java -jar aem-publish-p4503.jar -r prerelease
+```
+
+>[!TAB Linux]
+
+```shell
+# For AEM Author service in prerelease mode
+$ java -jar aem-author-p4502.jar -r prerelease
+
+# For AEM Publish service in prerelease mode
+$ java -jar aem-publish-p4503.jar -r prerelease
+```
+
+>[!ENDTABS]
 
 ## 콘텐츠 배포 시뮬레이션 {#content-distribution}
 
@@ -182,7 +257,7 @@ Quickstart Jar 이름 지정 `aem-<tier>_<environment>-p<port number>.jar` 시�
 | `aem-publish_stage-p4503.jar` | 포트 4503의 스테이징 실행 모드에서 게시로 |
 | `aem-publish_prod-p4503.jar` | 포트 4503에서 프로덕션 실행 모드로 게시로 |
 
-포트 번호는 로컬 개발 시스템에서 사용 가능한 모든 포트일 수 있지만, 규칙에 따라 다릅니다.
+포트 번호는 로컬 개발 시스템에서 사용 가능한 포트일 수 있지만, 규칙상 다음과 같습니다.
 
 + 포트 __4502__ 다음에 사용됩니다. __로컬 AEM Author 서비스__
 + 포트 __4503__ 다음에 사용됩니다. __로컬 AEM 게시 서비스__
@@ -227,11 +302,51 @@ Quickstart Jar를 두 번 클릭하여 시작하면 오류 모달이 표시되�
 
 AEM 작성자 서비스를 시작하려면 다음을 수행하십시오. `cd` quickstart Jar가 포함된 디렉토리로 이동한 다음 명령을 실행합니다.
 
-`$ java -jar aem-author-p4502.jar`
+>[!BEGINTABS]
+
+>[!TAB macOS]
+
+```shell
+$ java -jar aem-author-p4502.jar
+```
+
+>[!TAB Windows]
+
+```shell
+$ java -jar aem-author-p4502.jar
+```
+
+>[!TAB Linux]
+
+```shell
+$ java -jar aem-author-p4502.jar
+```
+
+>[!ENDTABS]
 
 또는 AEM Publish 서비스를 시작하려면 `cd` quickstart Jar가 포함된 디렉토리로 이동한 다음 명령을 실행합니다.
 
-`$ java -jar aem-publish-p4503.jar`
+>[!BEGINTABS]
+
+>[!TAB macOS]
+
+```shell
+$ java -jar aem-author-p4503.jar
+```
+
+>[!TAB Windows]
+
+```shell
+$ java -jar aem-author-p4503.jar
+```
+
+>[!TAB Linux]
+
+```shell
+$ java -jar aem-author-p4503.jar
+```
+
+>[!ENDTABS]
 
 ### 명령줄에서 Quickstart Jar를 시작하면 즉시 중단됩니다{#troubleshooting-java-8}
 
@@ -249,16 +364,34 @@ Quickstart: aborting
 ```
 
 이는 AEM as a Cloud Service에는 Java SDK 11이 필요하며 다른 버전(Java 8일 가능성이 높음)을 실행 중이기 때문입니다. 이 문제를 해결하려면 을 다운로드하여 설치하십시오. [Oracle Java SDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atoling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14).
-Java SDK 11이 설치되었으면 명령줄에서 다음을 실행하여 활성 버전인지 확인합니다.
 
-Java 11 SDK가 설치되면 명령줄에서 명령을 실행하여 활성 버전인지 확인합니다.
+oracle Java 11 SDK가 설치되면 명령줄에서 명령을 실행하여 활성 버전인지 확인합니다.
 
-+ Windows: `java -version`
-+ macOS / Linux: `java --version`
+>[!BEGINTABS]
+
+>[!TAB macOS]
+
+```shell
+$ java --version
+```
+
+>[!TAB Windows]
+
+```shell
+$ java -version
+```
+
+>[!TAB Linux]
+
+```shell
+$ java --version
+```
+
+>[!ENDTABS]
 
 ## 추가 리소스
 
 + [AEM SDK 다운로드](https://experience.adobe.com/#/downloads)
 + [Adobe Cloud Manager](https://my.cloudmanager.adobe.com/)
 + [Docker 다운로드](https://www.docker.com/)
-+ [Experience Manager Dispatcher 설명서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko-KR)
++ [Experience Manager Dispatcher 설명서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)

@@ -10,9 +10,9 @@ role: Developer
 level: Beginner
 last-substantial-update: 2022-09-03T00:00:00Z
 exl-id: 6fb3199a-02c9-48bc-a6fa-1f767cfd2f2a
-source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
+source-git-commit: 9073c1d41c67ec654b232aea9177878f11793d07
 workflow-type: tm+mt
-source-wordcount: '1498'
+source-wordcount: '1484'
 ht-degree: 7%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 7%
 >id="aemcloud_localdev_devtools"
 >title="개발 도구 설정"
 >abstract="AEM(Adobe Experience Manager) 개발을 위해 최소한의 개발 도구 세트를 설치하고 개발자 시스템에 설정해야 합니다. 이러한 도구로는 Java, Maven, Adobe I/O CLI, 개발 IDE 등이 있습니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html" text="개발 지침"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=ko-KR" text="개발 지침"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/basics/aem-sdk.html" text="개발 기본 사항"
 
 AEM(Adobe Experience Manager) 개발을 위해 최소한의 개발 도구 세트를 설치하고 개발자 시스템에 설정해야 합니다. 이러한 도구는 AEM 프로젝트의 개발 및 빌드를 지원합니다.
@@ -35,9 +35,29 @@ AEM(Adobe Experience Manager) 개발을 위해 최소한의 개발 도구 세트
 Experience Manager은 Java 애플리케이션이므로 개발 및 AEM as a Cloud Service SDK를 지원하려면 Java SDK가 필요합니다.
 
 1. [최신 릴리스 Java 11 SDK 다운로드 및 설치](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atoling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)
-1. 다음 명령을 실행하여 Java 11 SDK가 설치되어 있는지 확인합니다.
-   + Windows: `java -version`
-   + macOS / Linux: `java --version`
+1. 다음 명령을 실행하여 Oracle Java 11 SDK가 설치되어 있는지 확인합니다.
+
+>[!BEGINTABS]
+
+>[!TAB macOS]
+
+```shell
+$ java --version
+```
+
+>[!TAB Windows]
+
+```shell
+$ java -version
+```
+
+>[!TAB Linux]
+
+```shell
+$ java --version
+```
+
+>[!ENDTABS]
 
 ![Java](./assets/development-tools/java.png)
 
@@ -65,14 +85,21 @@ Homebrew를 사용하는 경우 다음을 따르십시오. __Homebrew를 사용�
 
 [Git](https://git-scm.com/) 은(는) 다음에서 사용하는 소스 제어 관리 시스템입니다. [Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/source-code-repository.html), 따라서 개발에 필요합니다.
 
-+ Homebrew를 사용하여 Git 설치
-   1. 터미널/명령 프롬프트 열기
-   1. 다음 명령을 실행합니다. `brew install git`
-   1. 다음 명령을 사용하여 Git이 설치되었는지 확인합니다. `git --version`
-+ 또는 Git(macOS, Linux 또는 Windows)을 다운로드하여 설치합니다.
-   1. [Git 다운로드 및 설치](https://git-scm.com/downloads)
-   1. 터미널/명령 프롬프트 열기
-   1. 다음 명령을 사용하여 Git이 설치되었는지 확인합니다. `git --version`
+>[!BEGINTABS]
+
+>[!TAB Homebrew를 사용하여 Git 설치]
+
+1. 터미널/명령 프롬프트 열기
+1. 다음 명령을 실행합니다. `$ brew install git`
+1. 다음 명령을 사용하여 Git이 설치되었는지 확인합니다. `$ git --version`
+
+>[!TAB Git 다운로드 및 설치]
+
+1. [Git 다운로드 및 설치](https://git-scm.com/downloads)
+1. 터미널/명령 프롬프트 열기
+1. 다음 명령을 사용하여 Git이 설치되었는지 확인합니다. `$ git --version`
+
+>[!ENDTABS]
 
 ![Git](./assets/development-tools/git.png)
 
@@ -80,16 +107,23 @@ Homebrew를 사용하는 경우 다음을 따르십시오. __Homebrew를 사용�
 
 [Node.js](https://nodejs.org) 는 AEM 프로젝트의 프론트엔드 에셋으로 작업하는 데 사용되는 JavaScript 런타임 환경입니다. __ui.frontend__ 하위 프로젝트. Node.js는 [npm](https://www.npmjs.com/)는 JavaScript 종속성을 관리하는 데 사용되는 실질적인 Node.js 패키지 관리자입니다.
 
-+ Homebrew를 사용하여 Node.js 설치
-   1. 터미널/명령 프롬프트 열기
-   1. 다음 명령을 실행합니다. `brew install node`
-   1. 다음 명령을 사용하여 Node.js가 설치되었는지 확인합니다. `node -v`
-   1. 다음 명령을 사용하여 npm이 설치되었는지 확인합니다. `npm -v`
-+ 또는 Node.js(macOS, Linux 또는 Windows)를 다운로드하여 설치합니다.
-   1. [Node.js 다운로드 및 설치](https://nodejs.org/en/download/)
-   1. 터미널/명령 프롬프트 열기
-   1. 다음 명령을 사용하여 Node.js가 설치되었는지 확인합니다. `node -v`
-   1. 다음 명령을 사용하여 npm이 설치되었는지 확인합니다. `npm -v`
+>[!BEGINTABS]
+
+>[!TAB Homebrew를 사용하여 Node.js 설치]
+
+1. 터미널/명령 프롬프트 열기
+1. 다음 명령을 실행합니다. `$ brew install node`
+1. 다음 명령을 사용하여 Node.js가 설치되었는지 확인합니다. `$ node -v`
+1. 다음 명령을 사용하여 npm이 설치되었는지 확인합니다. `$ npm -v`
+
+>[!TAB Node.js 다운로드 및 설치]
+
+1. [Node.js 다운로드 및 설치](https://nodejs.org/en/download/)
+2. 터미널/명령 프롬프트 열기
+3. 다음 명령을 사용하여 Node.js가 설치되었는지 확인합니다. `$ node -v`
+4. 다음 명령을 사용하여 npm이 설치되었는지 확인합니다. `$ npm -v`
+
+>[!ENDTABS]
 
 ![Node.js 및 npm](./assets/development-tools/nodejs-and-npm.png)
 
@@ -103,15 +137,23 @@ Homebrew를 사용하는 경우 다음을 따르십시오. __Homebrew를 사용�
 
 Apache Maven은 AEM Project Maven Archetype에서 생성된 AEM 프로젝트를 빌드하는 데 사용되는 오픈 소스 Java 명령줄 툴입니다. 모든 주요 IDE([IntelliJ IDEA](https://www.jetbrains.com/idea/), [Visual Studio 코드](https://code.visualstudio.com/), [Eclipse](https://www.eclipse.org/)등) 통합된 Maven 지원
 
-+ Homebrew를 사용하여 Maven 설치
-   1. 터미널/명령 프롬프트 열기
-   1. 다음 명령을 실행합니다. `brew install maven`
-   1. 다음 명령을 사용하여 Maven이 설치되었는지 확인합니다. `mvn -v`
-+ 또는 Maven(macOS, Linux 또는 Windows)을 다운로드하여 설치합니다.
-   1. [Maven 다운로드](https://maven.apache.org/download.cgi)
-   1. [Maven 설치](https://maven.apache.org/install.html)
-   1. 터미널/명령 프롬프트 열기
-   1. 다음 명령을 사용하여 Maven이 설치되었는지 확인합니다. `mvn -v`
+
+>[!BEGINTABS]
+
+>[!TAB Homebrew를 사용하여 Maven 설치]
+
+1. 터미널/명령 프롬프트 열기
+1. 다음 명령을 실행합니다. `$ brew install maven`
+1. 다음 명령을 사용하여 Maven이 설치되었는지 확인합니다. `$ mvn -v`
+
+>[!TAB Maven 다운로드 및 설치]
+
+1. [Maven 다운로드](https://maven.apache.org/download.cgi)
+1. [Maven 설치](https://maven.apache.org/install.html)
+1. 터미널/명령 프롬프트 열기
+1. 다음 명령을 사용하여 Maven이 설치되었는지 확인합니다. `$ mvn -v`
+
+>[!ENDTABS]
 
 ![Maven](./assets/development-tools/maven.png)
 
@@ -165,7 +207,6 @@ AEM Rapid Development Environment 플러그인을 사용하면 aio CLI가 AEM as
 Adobe I/O Cloud Manager 플러그인을 사용하면 aio CLI에서 를 통해 Asset compute 작업자를 생성하고 실행할 수 있습니다. `aio asset-compute` 명령입니다.
 
 1. 실행 `aio plugins:install @adobe/aio-cli-plugin-asset-compute` 을(를) 설치하려면 [aio Asset compute 플러그인](https://github.com/adobe/aio-cli-plugin-asset-compute).
-
 
 ## 개발 IDE 설정
 
