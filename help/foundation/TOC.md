@@ -4,10 +4,10 @@ breadcrumb-title: AEM Foundation 튜토리얼
 user-guide-description: Adobe Experience Manager Foundation에 대한 비디오 및 튜토리얼 모음입니다.
 sub-product: Experience Manager
 index: y
-source-git-commit: 4c91ab68f6e31f0eb549689c7ecfd0ee009801d9
+source-git-commit: fc183d88bf772944562d0dd825b4d590266f3ffd
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 17%
+source-wordcount: '219'
+ht-degree: 16%
 
 ---
 
@@ -43,6 +43,7 @@ ht-degree: 17%
    + [CORS(원본 간 리소스 공유)를 위한 개발](./security/develop-for-cross-origin-resource-sharing.md)
    + [원본 간 리소스 공유(CORS) 이해](./security/understand-cross-origin-resource-sharing.md)
    + [SSL 마법사 사용](./security/use-the-ssl-wizard.md)
+   + [ModSecurity CRS DoS 공격 방지](./security/modsecurity-crs-dos-attack-protection.md)
 + 워크플로 {#workflow}
    + [워크플로우 편집기 사용](./workflow/use-the-workflow-editor.md)
    + [워크플로우 사용](./workflow/use-workflow.md)
