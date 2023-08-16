@@ -8,9 +8,9 @@ breadcrumb-title: AEM Forms 튜토리얼
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: cc24ebca488ea286e8a4605edfb39420c1c10022
+source-git-commit: 17f6148ce6f897052d9d13f23e3f1792646eb958
 workflow-type: tm+mt
-source-wordcount: '1832'
+source-wordcount: '1838'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 + [개요](overview.md)
 + [따라야 할 모범 사례](adaptive-forms/best-practices-adaptive-forms.md)
-+ [AEM 작성자를 사용하여 OKTA 인증 설정](adaptive-forms/single-sign-on-with-okta.md)
++ [AEM Author로 OKTA 인증 설정](adaptive-forms/single-sign-on-with-okta.md)
 + 첫 번째 적응형 양식 만들기 {#creating-your-first-adaptive-form}
    + [1 - 소개 및 설정](creating-your-first-adaptive-form/introduction-and-setup.md)
    + [2 - 적응형 양식 템플릿 만들기](creating-your-first-adaptive-form/create-adaptive-form-template.md)
@@ -46,6 +46,7 @@ ht-degree: 2%
    + [연속 드롭다운 목록](some-useful-integrations/geonames-org.md)
    + [ServiceNow와 통합](some-useful-integrations/service-now.md)
    + [SendGrid를 사용하여 이메일 보내기](some-useful-integrations/send-grid.md)
+   + [Azure Storage에 양식 데이터 저장](some-useful-integrations/store-form-data-in-azure-storage.md)
 + OSGi 번들 생성 {#creating-your-first-osgi-bundle}
    + [1 - 환경 설정](creating-your-first-osgi-bundle/create-your-first-osgi-bundle.md)
    + [2 - OSGi 서비스 만들기](creating-your-first-osgi-bundle/create-osgi-service.md)
@@ -277,7 +278,7 @@ ht-degree: 2%
    + [5 - Forms Designer를 사용하여 XDP 레이아웃 만들기](ic-print-channel-tutorial/create-xdp-layout-using-forms-designer.md)
    + [6 - 문서 단편 만들기](ic-print-channel-tutorial/create-document-fragment.md)
    + [7 - 인쇄 채널 문서 만들기](ic-print-channel-tutorial/create-print-channel-document.md)
-   + [8 - Target 영역에 컨텐츠 추가](ic-print-channel-tutorial/add-content-to-target-areas.md)
+   + [8 - 대상 영역에 컨텐츠 추가](ic-print-channel-tutorial/add-content-to-target-areas.md)
    + [9 - 라인 차트 구성](ic-print-channel-tutorial/configuring-line-chart.md)
    + [10 - 인쇄 채널에 표 추가](ic-print-channel-tutorial/adding-table-to-print-channel.md)
    + [11 - 감시 폴더를 사용하여 문서 생성](ic-print-channel-tutorial/using-watched-folder-to-generate-document.md)
