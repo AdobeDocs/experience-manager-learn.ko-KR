@@ -1,5 +1,5 @@
 ---
-title: ModSecurity를 활성화하여 DoS 공격으로부터 AEM 사이트 보호
+title: ModSecurity를 사용하여 DoS 공격으로부터 AEM 사이트 보호
 description: ModSecurity를 사용하여 OWASP CRS(ModSecurity Core Rule Set)를 사용하여 DoS(Denial of Service) 공격으로부터 사이트를 보호하는 방법을 알아봅니다.
 feature: Security
 version: 6.5, Cloud Service
@@ -10,7 +10,7 @@ kt: 10385
 thumbnail: KT-10385.png
 doc-type: article
 last-substantial-update: 2023-08-15T00:00:00Z
-source-git-commit: fc183d88bf772944562d0dd825b4d590266f3ffd
+source-git-commit: 31d54b14fc6381e8b231cf85d3c808b88c7df098
 workflow-type: tm+mt
 source-wordcount: '1252'
 ht-degree: 1%
@@ -51,9 +51,9 @@ OWSAP®는 [OWASP® ModSecurity 코어 규칙 세트(CRS)](https://github.com/co
    $ tar -xvzf coreruleset-3.3.5.tar.gz
    ```
 
-1. 만들기 `modsec/crs` 다음 범위 내의 폴더 `dispatcher/src/conf.d/` AEM 프로젝트의 코드에서. 예를 들어 의 로컬 사본에서 [AEM WKND Sites 프로젝트](https://github.com/adobe/aem-guides-wknd).
+1. 만들기 `modsec/crs` 다음 범위 내의 폴더 `dispatcher/src/conf.d/` AEM 프로젝트의 코드에서. 예를 들어 의 로컬 복사본에서 [AEM WKND Sites 프로젝트](https://github.com/adobe/aem-guides-wknd).
 
-   ![AEM 프로젝트 코드 내 CRS 폴더 - ModSecurity](assets/modsecurity-crs/crs-folder-in-aem-dispatcher-module.png)
+   ![AEM 프로젝트 코드 내 CRS 폴더 - ModSecurity](assets/modsecurity-crs/crs-folder-in-aem-dispatcher-module.png){width="200" zoomable="yes"}
 
 1. 다음을 복사합니다. `coreruleset-X.Y.Z/rules` 다운로드한 CRS 릴리스 패키지의 폴더를 `dispatcher/src/conf.d/modsec/crs` 폴더를 삭제합니다.
 1. 다음을 복사합니다. `coreruleset-X.Y.Z/crs-setup.conf.example` 다운로드한 CRS 릴리스 패키지의 파일을에 `dispatcher/src/conf.d/modsec/crs` 폴더를 만들고 이름을 로 변경합니다. `crs-setup.conf`.
@@ -69,7 +69,7 @@ OWSAP®는 [OWASP® ModSecurity 코어 규칙 세트(CRS)](https://github.com/co
 
    WKND 프로젝트 코드에서 이름이 변경된 CRS 규칙 및 구성 파일을 참조하십시오.
 
-   ![AEM 프로젝트 코드 내에서 비활성화된 CRS 규칙 - ModSecurity ](assets/modsecurity-crs/disabled-crs-rules.png){width="100" zoomable="yes"}
+   ![AEM 프로젝트 코드 내에서 비활성화된 CRS 규칙 - ModSecurity ](assets/modsecurity-crs/disabled-crs-rules.png){width="200" zoomable="yes"}
 
 ## DoS(서비스 거부) 보호 규칙 활성화 및 구성
 
@@ -96,7 +96,7 @@ OWSAP®는 [OWASP® ModSecurity 코어 규칙 세트(CRS)](https://github.com/co
        setvar:'tx.dos_block_timeout=600'"    
    ```
 
-이 예제 규칙 구성에서 **DOS_COUNTER_THRESHOLD** 은(는) 25이고, **DOS_BURST_TIME_SLICE** 은(는) 60초이며, **DOS_BLOCK_TIMEOUT** 시간 제한은 600초입니다. 이 구성은 60초 이내에 정적 파일을 제외한 25개의 요청 중 두 개 이상의 발생을 식별하여 DoS 공격 대상으로 지정하므로 요청 클라이언트가 600초(또는 10분) 동안 차단됩니다.
+이 예제 규칙 구성에서 **DOS_COUNTER_THRESHOLD** 은(는) 25이고, **DOS_BURST_TIME_SLICE** 은(는) 60초이며, **DOS_BLOCK_TIMEOUT** 시간 제한은 600초입니다. 이 구성은 정적 파일을 제외하고 60초 이내에 두 번 이상 발생한 25개 요청을 식별하여 DoS 공격으로 자격을 얻으므로 요청 클라이언트가 600초(또는 10분) 동안 차단됩니다.
 
 >[!WARNING]
 >
