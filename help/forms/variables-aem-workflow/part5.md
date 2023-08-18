@@ -7,7 +7,7 @@ feature: Adaptive Forms, Workflow
 role: Developer
 level: Beginner
 exl-id: ecd43765-455c-4f8b-acf2-6ea34495c311
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: cf37afeb9bea65b540c9cfde75070d4106a01976
 workflow-type: tm+mt
 source-wordcount: '91'
 ht-degree: 0%
@@ -21,3 +21,5 @@ Or-Split 구성 요소는 AEM Workflow에서 라우팅을 수행하는 데 사�
 다음 비디오에서는 규칙 편집기를 사용하여 AEM 워크플로에서 조건부 처리를 수행하는 기능에 대해 설명합니다
 
 >[!VIDEO](https://video.tv.adobe.com/v/26362?quality=12&learn=on)
+
+

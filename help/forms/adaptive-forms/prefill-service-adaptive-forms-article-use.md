@@ -8,9 +8,9 @@ role: Developer
 level: Intermediate
 exl-id: f2c324a3-cbfa-4942-b3bd-dc47d8a3f7b5
 last-substantial-update: 2021-11-27T00:00:00Z
-source-git-commit: 381812397fa7d15f6ee34ef85ddf0aa0acc0af42
+source-git-commit: cf37afeb9bea65b540c9cfde75070d4106a01976
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,10 @@ ht-degree: 0%
 아래의 코드 스니펫에는 DataXMLProvider 인터페이스를 구현하는 클래스가 있습니다. 로그인한 사용자에 대한 액세스 권한을 얻은 다음 로그인한 사용자의 프로필 정보를 가져옵니다. 그런 다음 &quot;data&quot;라는 루트 노드 요소를 사용하여 XML 문서를 만들고 이 데이터 노드에 적절한 요소를 추가합니다. XML 문서가 만들어지면 XML 문서의 입력 스트림이 반환됩니다.
 
 그런 다음 이 클래스를 OSGi 번들로 만들고 AEM에 배포합니다. 번들이 배포되면 이 미리 채우기 서비스를 적응형 양식의 미리 채우기 서비스로 사용할 수 있습니다.
+
+>[!NOTE]
+>
+>이 문서에 나열된 접근 방식을 사용하여 xml 또는 json 데이터를 사용하여 양식을 미리 채울 수 있습니다.
 
 ```java
 package com.aem.prefill.core;
