@@ -9,8 +9,8 @@ level: Experienced
 kt: 10385
 thumbnail: KT-10385.png
 doc-type: article
-last-substantial-update: 2023-08-15T00:00:00Z
-source-git-commit: 31d54b14fc6381e8b231cf85d3c808b88c7df098
+last-substantial-update: 2023-08-18T00:00:00Z
+source-git-commit: c6f954968fdc43ea9070df52a4709da2ed04cacc
 workflow-type: tm+mt
 source-wordcount: '1252'
 ht-degree: 1%
@@ -21,6 +21,8 @@ ht-degree: 1%
 # ModSecurity를 사용하여 AEM 사이트를 DoS 공격으로부터 보호
 
 ModSecurity를 사용하여 DoS(서비스 거부) 공격으로부터 사이트를 보호하는 방법에 대해 알아봅니다. **OWASP ModSecurity 코어 규칙 세트(CRS)** Adobe Experience Manager (AEM) Publish Dispatcher에서.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3422976?quality=12&learn=on)
 
 ## 개요
 
