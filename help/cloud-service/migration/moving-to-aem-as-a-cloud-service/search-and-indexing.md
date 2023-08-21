@@ -9,9 +9,9 @@ level: Experienced
 kt: 8634
 thumbnail: 336963.jpeg
 exl-id: f752df86-27d4-4dbf-a3cb-ee97b7d9a17e
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 77b960315c07ba194642a412a0cc6049edcf7bd2
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '332'
 ht-degree: 2%
 
 ---
@@ -27,6 +27,8 @@ AEM as a Cloud Service의 검색 인덱스, AEM 6 인덱스 정의를 AEMas a Cl
 ![인덱스 변환기 도구](./assets/index-converter.png)
 
 코드 베이스를 리팩터링하는 과정의 일부로 [인덱스 변환기 도구](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationindex-converter) AEM 를 클릭하여 사용자 지정 Oak 색인 정의를 as a Cloud Service으로 호환되는 색인 정의로 변환합니다.
+
+리뷰 [인덱스 변환기 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/index-converter.html) 전체 및 현재 Index Converter 기능 세트용
 
 ## 주요 활동
 
