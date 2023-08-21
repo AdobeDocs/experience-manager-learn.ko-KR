@@ -3,7 +3,7 @@ title: AEM에서 SSL 마법사 사용
 description: HTTPS를 통해 실행할 AEM 인스턴스를 더 쉽게 설정할 수 있는 Adobe Experience Manager의 SSL 설정 마법사.
 seo-description: Adobe Experience Manager's SSL setup wizard to make it easier to set up an AEM instance to run over HTTPS.
 version: 6.5, Cloud Service
-jira: KT-13465
+jira: KT-13839
 topics: security, operations
 feature: Security
 activity: use
@@ -15,7 +15,8 @@ topic: Security
 role: Developer
 level: Beginner
 exl-id: 4e69e115-12a6-4a57-90da-b91e345c6723
-source-git-commit: f6e9d1f1991abf34765b28e6e05382a58a6203e3
+last-substantial-update: 2023-08-08T00:00:00Z
+source-git-commit: 1a8e3f37554f98c1366a1a06cb4a7b867866dd1b
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 1%
@@ -37,7 +38,7 @@ ht-degree: 1%
 
 ## SSL 구성 마법사 사용
 
-다음으로 이동 __AEM 작성자 > 도구 > 보안 > SSL 구성__&#x200B;를 클릭하고 __SSL 구성 마법사__.
+다음으로 이동 __AEM Author > 도구 > 보안 > SSL 구성__&#x200B;를 클릭하고 __SSL 구성 마법사__.
 
 ![SSL 구성 마법사](assets/use-the-ssl-wizard/ssl-config-wizard.png)
 
