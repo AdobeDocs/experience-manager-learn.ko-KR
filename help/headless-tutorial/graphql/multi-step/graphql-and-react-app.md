@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 772b595d-2a25-4ae6-8c6e-69a646143147
-source-git-commit: 7938325427b6becb38ac230a3bc4b031353ca8b1
+source-git-commit: 65244bf81666c20fd5d9d804ad8ea97df8b83d9f
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1218'
 ht-degree: 2%
 
 ---
@@ -76,7 +76,7 @@ React 앱을 다운로드하려면:
    >
    > 프로젝트 구성, 콘텐츠 조각 모델, 작성된 콘텐츠 조각, GraphQL 끝점 및 이전 단계의 지속 쿼리를 게시했는지 확인합니다.
    >
-   > 로컬 AEM 작성자 SDK에서 위의 단계를 수행한 경우 다음을 지정할 수 있습니다. `http://localhost:4502` 및 `REACT_APP_AUTH_METHOD`의 값: 까지 `basic`.
+   > 로컬 AEM Author SDK에서 위의 단계를 수행한 경우 다음을 지정할 수 있습니다. `http://localhost:4502` 및 `REACT_APP_AUTH_METHOD`의 값: 까지 `basic`.
 
 
 1. 명령줄에서 `aem-guides-wknd-graphql/basic-tutorial` 폴더
@@ -489,6 +489,10 @@ async function fetchPersistedQuery(persistedQueryName, queryParameters) {
 ## 앱 사용
 
 앱 검토 [http://localhost:3000/](http://localhost:3000/) 및 클릭 _구성원_ 링크. 또한 AEM에서 콘텐츠 조각을 추가하여 팀 알파에 더 많은 팀 및/또는 구성원을 추가할 수 있습니다.
+
+>[!IMPORTANT]
+>
+>구현 변경 사항을 확인하거나 위의 변경 사항 후에 앱이 작동하도록 할 수 없는 경우 [기본 자습서](https://github.com/adobe/aem-guides-wknd-graphql/tree/solution/basic-tutorial) 솔루션 분기.
 
 ## 언더더 후드
 
