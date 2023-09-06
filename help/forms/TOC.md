@@ -8,9 +8,9 @@ breadcrumb-title: AEM Forms 튜토리얼
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: cf37afeb9bea65b540c9cfde75070d4106a01976
+source-git-commit: adfb805615d2abe34458d5aea685ae47517c5548
 workflow-type: tm+mt
-source-wordcount: '1841'
+source-wordcount: '1845'
 ht-degree: 2%
 
 ---
@@ -35,6 +35,7 @@ ht-degree: 2%
    + [검토 작업 과정 만들기](handling-form-submissions/creating-a-review-workflow.md)
    + [워크플로우를 트리거하기 위한 적응형 양식 구성](handling-form-submissions/configuring-adaptive-form-to-trigger-workflow.md)
    + [감사 인사 페이지 표시](handling-form-submissions/submitting-adaptive-forms-thank-you-page-article-use.md)
+   + [감사 인사 페이지 사용자 정의](handling-form-submissions/thank-you-page-on-fdm-submission.md)
    + [외부 끝점으로 제출 중](handling-form-submissions/submitting-adaptive-forms-to-external-server-article-use.md)
    + [이메일 전송 중](handling-form-submissions/sending-email-on-adaptive-form-submission.md)
    + [유료 휴무 요청 워크플로](handling-form-submissions/paid-time-off-request-workflow.md)
