@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 52c8d96a03b4d6e4f2a0a3c92f4307203e236417
+source-git-commit: 6cbd8f3c49d44e75337715c35c198008da8ae7b9
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '1023'
 ht-degree: 21%
 
 ---
@@ -128,6 +128,10 @@ ht-degree: 21%
          + [순회 경고](./debugging/cloud-service/risks/traversals.md)
 + 컨텐츠 전달{#content-delivery}
    + [URL 리디렉션](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/url-redirection.html)
++ 캐싱{#caching}
+   + [개요](./caching/overview.md)
+   + [AEM Publish 서비스](./caching/publish.md)
+   + [AEM Author 서비스](./caching/author.md)
 + AEM 액세스{#accessing}
    + [개요](./accessing/overview.md)
    + [Adobe IMS 사용자](./accessing/adobe-ims-users.md)
@@ -193,7 +197,7 @@ ht-degree: 21%
       + [5 - 양식 작성](./forms/developing-for-cloud-service/deploy-your-first-form.md)
       + [6 - 사용자 지정 제출 핸들러](./forms/developing-for-cloud-service/custom-submit-to-servlet.md)
       + [7 - Forms 포털 구성 요소 활성화](./forms/developing-for-cloud-service/forms-portal-components.md)
-      + [8 - Cloud Services 및 FDM 포함](./forms/developing-for-cloud-service/azure-storage-fdm.md)
+      + [8 - Cloud Service 및 FDM 포함](./forms/developing-for-cloud-service/azure-storage-fdm.md)
       + [9 - 컨텍스트 인식 클라우드 구성](./forms/developing-for-cloud-service/context-aware-fdm.md)
       + [10 - Cloud Manager로 푸시](./forms/developing-for-cloud-service/push-project-to-cloud-manager-git.md)
       + [11 - 개발 환경에 배포](./forms/developing-for-cloud-service/deploy-to-dev-environment.md)
