@@ -8,9 +8,9 @@ breadcrumb-title: AEM Forms 튜토리얼
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: adfb805615d2abe34458d5aea685ae47517c5548
+source-git-commit: bac637440d1cc5af0e0abb119ca2f4e93f69cf34
 workflow-type: tm+mt
-source-wordcount: '1845'
+source-wordcount: '1851'
 ht-degree: 2%
 
 ---
@@ -176,6 +176,7 @@ ht-degree: 2%
    + [xml 문서에서 노드 추출](custom-workflow-steps/extract-xml-node.md)
    + [파일 시스템에 문서 저장](custom-workflow-steps/write-payload-document.md)
    + [제출된 데이터를 문자열 변수에 저장](custom-workflow-steps/save-submitted-data-in-string-variable.md)
+   + [문서 목록에서 문서 추출](custom-workflow-steps/extract-document-from-list.md)
 + 사용자 지정 워크플로 구성 요소{#custom-workflow-component}
    + [1-소개](custom-workflow-component/introduction.md)
    + [2-Write Java 코드](custom-workflow-component/custom-process-step-aem-workflow.md)
