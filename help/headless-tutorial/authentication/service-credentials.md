@@ -14,9 +14,9 @@ role: Developer
 level: Intermediate, Experienced
 last-substantial-update: 2023-01-12T00:00:00Z
 exl-id: e2922278-4d0b-4f28-a999-90551ed65fb4
-source-git-commit: f8ed9fddb5f244860ba229b46a80638a7269d95e
+source-git-commit: 65d8fd58f421a186e3624918c70cc5d79ec23700
 workflow-type: tm+mt
-source-wordcount: '1925'
+source-wordcount: '1967'
 ht-degree: 0%
 
 ---
@@ -88,7 +88,7 @@ AEM as Cloud Service 환경의 서비스 자격 증명이 초기화되면 Adobe 
 
 ## 서비스 자격 증명 설치
 
-서비스 자격 증명은 AEM as a Cloud Service으로 인증하는 데 사용되는 액세스 토큰으로 교환되는 JWT를 생성하는 데 필요한 세부 정보를 제공합니다. 서비스 자격 증명은 AEM에 액세스하는 데 사용하는 외부 응용 프로그램, 시스템 또는 서비스에서 액세스할 수 있는 보안 위치에 저장해야 합니다. 서비스 자격 증명을 관리하는 방법과 위치는 고객별로 다릅니다.
+서비스 자격 증명은 AEM as a Cloud Service으로 인증하는 데 사용되는 액세스 토큰으로 교환되는 JWT를 생성하는 데 필요한 세부 정보를 제공합니다. 서비스 자격 증명은 AEM에 액세스하는 데 사용하는 외부 응용 프로그램, 시스템 또는 서비스에서 액세스할 수 있는 보안 위치에 저장해야 합니다. 서비스 자격 증명을 관리하는 방법 및 위치는 고객별로 다릅니다.
 
 간소화를 위해 이 자습서에서는 명령줄을 통해 의 서비스 자격 증명을 전달합니다. 그러나 IT 보안 팀과 협력하여 조직의 보안 지침에 따라 이러한 자격 증명을 저장하고 액세스하는 방법을 이해하십시오.
 
@@ -224,6 +224,7 @@ function getCommandLineParams() {
 1. 다음으로 이동 __도구__ > __보안__ > __사용자__
 1. 를 사용하여 AEM 사용자를 찾습니다. __로그인 이름__ 1단계에서 식별 및 열기 __속성__
 1. 다음 위치로 이동 __그룹__ 탭을 클릭하고 다음을 추가합니다 __DAM 사용자__ 그룹(자산에 대한 쓰기 액세스 권한이 있는 사람)
+   + [AEM에서 제공한 사용자 그룹 목록 보기](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#built-in-users-and-groups) 최적의 권한을 얻으려면에 서비스 사용자를 추가합니다. 충분한 AEM 제공 사용자 그룹이 없는 경우 고유한 사용자 그룹을 만들고 적절한 권한을 추가합니다.
 1. 누르기 __저장 및 닫기__
 
 AEM에서 자산에 대한 쓰기 권한을 가질 수 있는 기술 계정을 사용하여 애플리케이션을 다시 실행하십시오.
