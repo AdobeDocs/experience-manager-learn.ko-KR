@@ -10,9 +10,9 @@ role: Developer
 level: Beginner
 last-substantial-update: 2022-09-03T00:00:00Z
 exl-id: 6fb3199a-02c9-48bc-a6fa-1f767cfd2f2a
-source-git-commit: 9073c1d41c67ec654b232aea9177878f11793d07
+source-git-commit: 7a240374c42e2555be25e682c803f51f442fb7f7
 workflow-type: tm+mt
-source-wordcount: '1484'
+source-wordcount: '1483'
 ht-degree: 7%
 
 ---
@@ -70,11 +70,27 @@ Homebrew는 macOS, Windows 및 Linux용 오픈 소스 패키지 관리자입니�
 1. 터미널 열기
 1. 다음 명령을 실행하여 Homebrew가 이미 설치되어 있는지 확인합니다. `brew --version`.
 1. Homebrew가 설치되지 않은 경우 Homebrew를 설치합니다.
-   + [macOS에 Homebrew 설치](https://brew.sh/)
-      + macOS의 Homebrew를 사용하려면 [Xcode](https://apps.apple.com/us/app/xcode/id497799835) 또는 [명령줄 도구](https://developer.apple.com/download/more/), 다음 명령을 통해 설치 가능:
-         + `xcode-select --install`
-   + [Linux에 Homebrew 설치](https://docs.brew.sh/Installation#linux-or-windows-10-subsystem-for-linux)
-   + [Windows 10에 Homebrew 설치](https://docs.brew.sh/Installation#linux-or-windows-10-subsystem-for-linux)
+
+>[!BEGINTABS]
+
+>[!TAB macOS]
+
+[홈브루 온 macOS](https://brew.sh/) 필수 [Xcode](https://apps.apple.com/us/app/xcode/id497799835) 또는 [명령줄 도구](https://developer.apple.com/download/more/), 다음 명령을 통해 설치 가능:
+
+```shell
+$ xcode-select --install
+```
+
+>[!TAB Windows]
+
+[Windows 10에 Homebrew 설치](https://docs.brew.sh/Installation#linux-or-windows-10-subsystem-for-linux)
+
+>[!TAB Linux]
+
+[Linux에 Homebrew 설치](https://docs.brew.sh/Installation#linux-or-windows-10-subsystem-for-linux)
+
+>[!ENDTABS]
+
 1. 다음 명령을 실행하여 Homebrew가 설치되었는지 확인합니다. `brew --version`
 
 ![홈브루](./assets/development-tools/homebrew.png)
@@ -161,7 +177,7 @@ Apache Maven은 AEM Project Maven Archetype에서 생성된 AEM 프로젝트를 
 
 다음 [ADOBE I/O CLI](https://github.com/adobe/aio-cli), 또는 `aio`는 다음을 포함한 다양한 Adobe 서비스에 대한 명령줄 액세스를 제공합니다. [Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager) 및 [Asset compute](https://github.com/adobe/aio-cli-plugin-asset-compute). Adobe I/O AEM CLI는 개발자에게 다음과 같은 기능을 제공하므로 as a Cloud Service에서 개발에 필수적인 역할을 합니다.
 
-+ AEM as a Cloud Services 서비스의 테일 로그
++ AEM as a Cloud Service 서비스의 테일 로그
 + CLI에서 Cloud Manager 파이프라인 관리
 + 배포 대상 [AEM 신속한 개발 환경](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html)
 
