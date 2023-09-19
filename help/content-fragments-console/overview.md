@@ -9,10 +9,10 @@ level: Beginner
 doc-type: Catalog
 last-substantial-update: 2023-05-12T00:00:00Z
 exl-id: 68caf431-8d81-4a72-a768-7b04082870d3
-source-git-commit: 73c7a13586edc5dbe16c16e017ee6f8ac91c1380
+source-git-commit: 89bc02b9ead98063ea31301b2e1f5a4d43cb5760
 workflow-type: tm+mt
-source-wordcount: '219'
-ht-degree: 12%
+source-wordcount: '241'
+ht-degree: 11%
 
 ---
 
@@ -28,17 +28,17 @@ Adobe Experience Manager의 콘텐츠 조각 콘솔을 사용하면 콘텐츠 �
 
 
 <div class="columns is-multiline">
-    <!-- Overview -->
+    <!-- Console overview -->
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
-      aria-label="Overview" tabindex="1">
+      aria-label="Console overview" tabindex="1">
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./basics/content-fragments-console.md" title="개요"
+            <a href="./basics/content-fragments-console.md" title="콘솔 개요"
               tabindex="-1">
               <img class="is-bordered-r-small"
                 src="https://video.tv.adobe.com/v/3409492?format=jpeg"
-                alt="개요">
+                alt="콘솔 개요">
             </a>
           </figure>
         </div>
@@ -47,7 +47,7 @@ Adobe Experience Manager의 콘텐츠 조각 콘솔을 사용하면 콘텐츠 �
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">5분</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./basics/content-fragments-console.md" title="개요">개요</a>
+              <a href="./basics/content-fragments-console.md" title="개요">콘솔 개요</a>
             </p>
             <p class="is-size-6">콘텐츠 조각 콘솔에 대한 간략한 개요.</p>
             <a href="./basics/content-fragments-console.md" class="spectrum-Button
@@ -60,6 +60,38 @@ Adobe Experience Manager의 콘텐츠 조각 콘솔을 사용하면 콘텐츠 �
         </div>
       </div>
     </div>
+    <!-- Editor overview -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
+      aria-label="Editor overview" tabindex="1">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9">
+            <a href="./basics/content-fragment-editor.md" title="편집기 개요"
+              tabindex="-1">
+              <img class="is-bordered-r-small"
+                src="https://video.tv.adobe.com/v/3424373?format=jpeg"
+                alt="편집기 개요">
+            </a>
+          </figure>
+        </div>
+        <div class="card-content is-padded-small">
+          <div class="content">
+            <p style="float: right;font-style: italic; color: #363636"
+              class="is-size-6">4분</p>
+            <p class="headline is-size-6 has-text-weight-bold">
+              <a href="./basics/content-fragment-editor.md" title="개요">편집기 개요</a>
+            </p>
+            <p class="is-size-6">콘텐츠 조각 편집기에 대한 간략한 개요.</p>
+            <a href="./basics/content-fragment-editor.md" class="spectrum-Button
+              spectrum-Button--outline spectrum-Button--primary
+              spectrum-Button--sizeM">
+              <span class="spectrum-Button-label has-no-wrap
+                has-text-weight-bold">비디오 보기</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>    
     <!-- Fast filtering -->
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
       aria-label="Fast filtering" tabindex="2">
