@@ -10,7 +10,7 @@ kt: 10830
 thumbnail: KT-10830.jpg
 exl-id: 394792e4-59c8-43c1-914e-a92cdfde2f8a
 last-substantial-update: 2023-08-08T00:00:00Z
-source-git-commit: f619c431d91271b2031dcb233f3e08c3008b78ed
+source-git-commit: 58347d4f8ef50375385342671f68c26502aecba4
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 2%
@@ -35,7 +35,7 @@ AEM에 연결하는 클라이언트가 AEM과 동일한 원본(호스트 또는 
 
 ## AEM Author
 
-AEM Author 서비스에서 CORS를 활성화하는 것은 AEM Publish 및 AEM 미리보기 서비스와 다릅니다. AEM Author 서비스는 AEM Author 서비스의 실행 모드 폴더에 OSGi 구성을 추가해야 하며 Dispatcher 구성을 사용하지 않습니다.
+AEM Author 서비스에서 CORS를 활성화하는 것은 AEM Publish 및 AEM Preview 서비스와 다릅니다. AEM Author 서비스는 AEM Author 서비스의 실행 모드 폴더에 OSGi 구성을 추가해야 하며 Dispatcher 구성을 사용하지 않습니다.
 
 ### OSGi 구성
 
@@ -46,7 +46,7 @@ AEM CORS OSGi 구성 팩토리는 CORS HTTP 요청을 수락하는 허용 기준
 | CORS OSGi 구성 필요 | ✔ | ✘ | ✘ |
 
 
-아래 예제는 AEM 작성자용 OSGi 구성(`../config.author/..`) AEM Author 서비스에서만 활성화됩니다.
+아래 예제는 AEM Author에 대한 OSGi 구성(`../config.author/..`) 따라서 AEM Author 서비스에서만 활성화됩니다.
 
 주요 구성 속성은 다음과 같습니다.
 
@@ -55,12 +55,12 @@ AEM CORS OSGi 구성 팩토리는 CORS HTTP 요청을 수락하는 허용 기준
    + AEM GraphQL 지속 쿼리를 지원하려면 다음 패턴을 추가합니다. `/graphql/execute.json.*`
    + 경험 조각을 지원하려면 다음 패턴을 추가합니다. `/content/experience-fragments/.*`
 + `supportedmethods` cors 요청에 허용된 HTTP 메서드를 지정합니다. AEM GraphQL 지속 쿼리(및 경험 조각)를 지원하려면 다음을 추가하십시오. `GET` .
-+ `supportedheaders` 포함 `"Authorization"` as AEM 작성자에 대한 요청은 승인되어야 합니다.
-+ `supportscredentials` 이(가) (으)로 설정됨 `true` as request to AEM Author 는 승인되어야 합니다.
++ `supportedheaders` 포함 `"Authorization"` as AEM Author에 대한 요청은 승인되어야 합니다.
++ `supportscredentials` 이(가) (으)로 설정됨 `true` as request to AEM Author 가 승인되어야 합니다.
 
 [CORS OSGi 구성에 대해 자세히 알아보십시오.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)
 
-다음 예에서는 AEM 작성자에서 AEM GraphQL 지속 쿼리 사용을 지원합니다. 클라이언트 정의 GraphQL 쿼리를 사용하려면에 GraphQL 끝점 URL을 추가하십시오. `allowedpaths` 및 `POST` 끝 `supportedmethods`.
+다음 예제에서는 AEM Author에서 AEM GraphQL 지속 쿼리 사용을 지원합니다. 클라이언트 정의 GraphQL 쿼리를 사용하려면에 GraphQL 끝점 URL을 추가하십시오. `allowedpaths` 및 `POST` 끝 `supportedmethods`.
 
 + `/ui.config/src/main/content/jcr_root/apps/wknd-examples/osgiconfig/config.author/com.adobe.granite.cors.impl.CORSPolicyImpl~graphql.cfg.json`
 
@@ -101,16 +101,16 @@ AEM CORS OSGi 구성 팩토리는 CORS HTTP 요청을 수락하는 허용 기준
 
 ## AEM 게시
 
-AEM 게시(및 미리보기) 서비스에서 CORS를 활성화하는 것은 AEM 작성자 서비스와 다릅니다. AEM Publish 서비스를 사용하려면 AEM Dispatcher 구성을 AEM Publish의 Dispatcher 구성에 추가해야 합니다. AEM 게시는 [OSGi 구성](#osgi-configuration).
+AEM Publish(및 미리보기) 서비스에서 CORS를 활성화하는 것은 AEM Author 서비스와 다릅니다. AEM Publish 서비스를 사용하려면 AEM Dispatcher 구성을 AEM Publish의 Dispatcher 구성에 추가해야 합니다. AEM Publish는 [OSGi 구성](#osgi-configuration).
 
-AEM 게시에서 CORS를 구성할 때 다음을 확인하십시오.
+AEM Publish에서 CORS를 구성할 때 다음을 확인하십시오.
 
-+ 다음 `Origin` 다음을 제거하여 HTTP 요청 헤더를 AEM Publish 서비스로 보낼 수 없습니다. `Origin` AEM Dispatcher 프로젝트의 헤더(이전에 추가된 경우) `clientheaders.any` 파일. 임의 `Access-Control-` 헤더는에서 제거해야 합니다. `clientheaders.any` 파일 및 Dispatcher가 AEM 게시 서비스가 아닌 파일을 관리합니다.
-+ 가지고 계신 것이 있으면 [CORS OSGi 구성](#osgi-configuration) aem Publish 서비스에서 이 프로그램을 제거하고 해당 구성을 [Dispatcher vhost 구성](#set-cors-headers-in-vhost) 아래에 요약되어 있습니다.
++ 다음 `Origin` 다음을 제거하여 AEM Publish 서비스로 HTTP 요청 헤더를 보낼 수 없습니다. `Origin` AEM Dispatcher 프로젝트의 헤더(이전에 추가된 경우) `clientheaders.any` 파일. 임의 `Access-Control-` 헤더는에서 제거해야 합니다. `clientheaders.any` 파일 및 Dispatcher가 AEM Publish 서비스가 아닌 파일을 관리합니다.
++ 가지고 계신 것이 있으면 [CORS OSGi 구성](#osgi-configuration) AEM Publish 서비스에서 이 프로그램을 제거하고 해당 구성을 [Dispatcher vhost 구성](#set-cors-headers-in-vhost) 아래에 요약되어 있습니다.
 
 ### Dispatcher 구성
 
-AEM 게시(및 미리보기) 서비스의 Dispatcher가 CORS를 지원하도록 구성되어 있어야 합니다.
+AEM Publish(및 미리보기) 서비스의 Dispatcher가 CORS를 지원하도록 구성되어야 합니다.
 
 | 클라이언트가에 연결 | AEM Author | AEM 게시 | AEM 미리 보기 |
 |-------------------------------------:|:----------:|:-------------:|:-------------:|
@@ -121,7 +121,7 @@ AEM 게시(및 미리보기) 서비스의 Dispatcher가 CORS를 지원하도록 
 1. Dispatcher 구성 프로젝트에서 AEM Publish 서비스에 대한 vhost 구성 파일을 엽니다(일반적으로 `dispatcher/src/conf.d/available_vhosts/<example>.vhost`
 2. 의 내용을 복사합니다. `<IfDefine ENABLE_CORS>...</IfDefine>` 을(를) 활성화한 vhost 구성 파일로 차단합니다.
 
-   ```{ highlight="19"}
+   ```{ highlight="17"}
    <VirtualHost *:80>
      ...
      <IfModule mod_headers.c>
@@ -176,7 +176,7 @@ AEM 게시(및 미리보기) 서비스의 Dispatcher가 CORS를 지원하도록 
    </VirtualHost>
    ```
 
-3. 아래 줄에서 정규 표현식을 업데이트하여 AEM Publish 서비스에 액세스하는 원하는 원본을 일치시킵니다. 여러 출처가 필요한 경우 이 라인을 복제하고 각 출처/출처 패턴에 대해 업데이트합니다.
+3. 아래 행에서 정규 표현식을 업데이트하여 AEM Publish 서비스에 액세스하는 데 필요한 원본을 일치시키십시오. 여러 출처가 필요한 경우 이 라인을 복제하고 각 출처/출처 패턴에 대해 업데이트합니다.
 
    ```
    SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*.your-domain.tld(:\d+)?$)#" CORSTrusted=true
