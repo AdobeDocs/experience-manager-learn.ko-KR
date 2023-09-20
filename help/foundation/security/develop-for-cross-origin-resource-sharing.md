@@ -7,7 +7,7 @@ role: Developer
 level: Beginner
 feature: Security
 exl-id: 867cf74e-44e7-431b-ac8f-41b63c370635
-source-git-commit: 6754ccd7c17bcfa30b7200cb67f5ebd290912cb4
+source-git-commit: 1114ec01555baa1c6ffc2ccc5e77165ec9827e4d
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 3%
@@ -18,8 +18,8 @@ ht-degree: 3%
 
 을 활용하는 간단한 예 [!DNL CORS] 클라이언트측 JavaScript를 통해 외부 웹 애플리케이션에서 AEM 콘텐츠에 액세스 이 예에서는 CORS OSGi 구성을 사용하여 AEM에서 CORS 액세스를 활성화합니다. OSGi 구성 접근 방식은 다음과 같은 경우에 실행 가능합니다.
 
-+ 단일 원본이 AEM Publish 콘텐츠에 액세스하고 있습니다.
-+ AEM 작성자에게는 CORS 액세스 권한이 필요합니다.
+* 단일 원본이 AEM Publish 콘텐츠에 액세스하고 있습니다.
+* AEM 작성자에게는 CORS 액세스 권한이 필요합니다.
 
 AEM Publish에 대한 여러 원본 액세스가 필요한 경우 다음을 참조하십시오. [이 설명서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=en#dispatcher-configuration).
 
