@@ -7,16 +7,21 @@ role: Developer
 level: Beginner
 feature: Security
 exl-id: 867cf74e-44e7-431b-ac8f-41b63c370635
-source-git-commit: 46728ac6ad37590413e247d23262233626b0575b
+source-git-commit: 6754ccd7c17bcfa30b7200cb67f5ebd290912cb4
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '376'
 ht-degree: 3%
 
 ---
 
 # CORS(원본 간 리소스 공유)를 위한 개발
 
-을 활용하는 간단한 예 [!DNL CORS] 클라이언트측 JavaScript를 통해 외부 웹 애플리케이션에서 AEM 콘텐츠에 액세스
+을 활용하는 간단한 예 [!DNL CORS] 클라이언트측 JavaScript를 통해 외부 웹 애플리케이션에서 AEM 콘텐츠에 액세스 이 예에서는 CORS OSGi 구성을 사용하여 AEM에서 CORS 액세스를 활성화합니다. OSGi 구성 접근 방식은 다음과 같은 경우에 실행 가능합니다.
+
++ 단일 원본이 AEM Publish 콘텐츠에 액세스하고 있습니다.
++ AEM 작성자에게는 CORS 액세스 권한이 필요합니다.
+
+AEM Publish에 대한 여러 원본 액세스가 필요한 경우 다음을 참조하십시오. [이 설명서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=en#dispatcher-configuration).
 
 >[!VIDEO](https://video.tv.adobe.com/v/18837?quality=12&learn=on)
 
@@ -26,7 +31,7 @@ ht-degree: 3%
 * **aem-publish.local** 를 통해 localhost에 매핑 `/etc/hosts`
 * SimpleHTTPServer (래퍼 [[!DNL Python]의 SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html))는 포트 8000을 통해 HTML 페이지를 제공합니다.
    * _Mac App Store에서 더 이상 사용할 수 없습니다. 다음과 같이 유사 항목 사용 [지브스](https://apps.apple.com/us/app/jeeves-local-http-server/id980824182?mt=12)._
-* [!DNL AEM Dispatcher] 다음에서 실행 중: [!DNL Apache HTTP Web Server] 2.4 및 요청 의 역 프록시 설정 `aem-publish.local` 끝 `localhost:4503`.
+* [!DNL AEM Dispatcher] 다음에서 실행 중: [!DNL Apache HTTP Web Server] 2.4 및 (으)로 요청 역프록시 설정 `aem-publish.local` 끝 `localhost:4503`.
 
 자세한 내용은 을(를) 참조하십시오. [AEM의 CORS(원본 간 리소스 공유) 이해](./understand-cross-origin-resource-sharing.md).
 
