@@ -10,10 +10,10 @@ kt: 4679
 thumbnail: 30603.jpg
 last-substantial-update: 2023-03-14T00:00:00Z
 exl-id: 9320e07f-be5c-42dc-a4e3-aab80089c8f7
-source-git-commit: 9073c1d41c67ec654b232aea9177878f11793d07
+source-git-commit: 2a412126ac7a67a756d4101d56c1715f0da86453
 workflow-type: tm+mt
-source-wordcount: '1621'
-ht-degree: 10%
+source-wordcount: '1695'
+ht-degree: 9%
 
 ---
 
@@ -48,7 +48,7 @@ AEM as a Cloud Service SDK에는 Dispatcher를 로컬에서 쉽게 구성, 유�
 1. Windows 사용자는 Windows 10 Professional(또는 Docker를 지원하는 버전)을 사용해야 합니다
 1. 설치 [Experience Manager 게시 Quickstart Jar](./aem-runtime.md) 로컬 개발 시스템에서 사용할 수 있습니다.
 
-+ 필요한 경우 최신 버전을 설치합니다. [AEM 참조 웹 사이트](https://github.com/adobe/aem-guides-wknd/releases) 로컬 AEM 게시 서비스에서. 이 웹 사이트는 이 자습서에서 작동하는 Dispatcher를 시각화하는 데 사용됩니다.
++ 필요한 경우 최신 버전을 설치합니다. [AEM 참조 웹 사이트](https://github.com/adobe/aem-guides-wknd/releases) 로컬 AEM Publish 서비스에서. 이 웹 사이트는 이 자습서에서 작동하는 Dispatcher를 시각화하는 데 사용됩니다.
 
 1. 최신 버전의 설치 및 시작 [도커](https://www.docker.com/) 로컬 개발 컴퓨터의 (Docker Desktop 2.2.0.5+ / Docker Engine v19.03.9+).
 
@@ -143,13 +143,16 @@ $ ./bin/validate.sh ./src
 
 AEM Dispatcher는 다음에 대해 도커를 사용하여 로컬에서 실행됩니다. `src` Dispatcher 및 Apache 웹 서버 구성 파일입니다.
 
+
 >[!BEGINTABS]
 
 >[!TAB macOS]
 
 ```shell
-$ ./bin/docker_run.sh <src-folder> <aem-publish-host>:<aem-publish-port> <dispatcher-port>
+$ ./bin/docker_run_hot_reload.sh <src-folder> <aem-publish-host>:<aem-publish-port> <dispatcher-port>
 ```
+
+다음 `docker_run_hot_reload` 실행 파일이 우선합니다. `docker_run` 구성 파일이 변경될 때 수동으로 종료했다가 다시 시작하지 않아도 구성 파일이 다시 로드됨 `docker_run`. 또는 `docker_run` 를 사용할 수 있지만 수동으로 종료했다가 다시 시작해야 합니다. `docker_run` 구성 파일이 변경되는 경우.
 
 >[!TAB Windows]
 
@@ -160,8 +163,10 @@ $ bin\docker_run <src-folder> <aem-publish-host>:<aem-publish-port> <dispatcher-
 >[!TAB Linux]
 
 ```shell
-$ ./bin/docker_run.sh <src-folder> <aem-publish-host>:<aem-publish-port> <dispatcher-port>
+$ ./bin/docker_run_hot_reload.sh <src-folder> <aem-publish-host>:<aem-publish-port> <dispatcher-port>
 ```
+
+다음 `docker_run_hot_reload` 실행 파일이 우선합니다. `docker_run` 구성 파일이 변경될 때 수동으로 종료했다가 다시 시작하지 않아도 구성 파일이 다시 로드됨 `docker_run`. 또는 `docker_run` 를 사용할 수 있지만 수동으로 종료했다가 다시 시작해야 합니다. `docker_run` 구성 파일이 변경되는 경우.
 
 >[!ENDTABS]
 
@@ -176,7 +181,7 @@ Dispatcher 구성 src 폴더의 경로를 제공하는 Dispatcher Docker 컨테�
 >[!TAB macOS]
 
 ```shell
-$ ./bin/docker_run.sh ./src host.docker.internal:4503 8080
+$ ./bin/docker_run_hot_reload.sh ./src host.docker.internal:4503 8080
 ```
 
 >[!TAB Windows]
@@ -188,7 +193,7 @@ $ bin\docker_run src host.docker.internal:4503 8080
 >[!TAB Linux]
 
 ```shell
-$ ./bin/docker_run.sh ./src host.docker.internal:4503 8080
+$ ./bin/docker_run_hot_reload.sh ./src host.docker.internal:4503 8080
 ```
 
 >[!ENDTABS]
@@ -202,7 +207,7 @@ Experience Manager 프로젝트의 Dispatcher 구성에 대해 Dispatcher 도구
 >[!TAB macOS]
 
 ```shell
-$ ./bin/docker_run.sh ~/code/my-project/dispatcher/src host.docker.internal:4503 8080
+$ ./bin/docker_run_hot_reload.sh ~/code/my-project/dispatcher/src host.docker.internal:4503 8080
 ```
 
 >[!TAB Windows]
@@ -214,7 +219,7 @@ $ bin\docker_run <User Directory>/code/my-project/dispatcher/src host.docker.int
 >[!TAB Linux]
 
 ```shell
-$ ./bin/docker_run.sh ~/code/my-project/dispatcher/src host.docker.internal:4503 8080
+$ ./bin/docker_run_hot_reload.sh ~/code/my-project/dispatcher/src host.docker.internal:4503 8080
 ```
 
 >[!ENDTABS]
@@ -243,7 +248,7 @@ Dispatcher 디버깅에 유용한 매개 변수는 다음과 같습니다.
 >[!TAB macOS]
 
 ```shell
-$ DISP_LOG_LEVEL=Debug REWRITE_LOG_LEVEL=Debug ./bin/docker_run.sh ~/code/my-project/dispatcher/src host.docker.internal:4503 8080
+$ DISP_LOG_LEVEL=Debug REWRITE_LOG_LEVEL=Debug ./bin/docker_run_hot_reload.sh ~/code/my-project/dispatcher/src host.docker.internal:4503 8080
 ```
 
 >[!TAB Windows]
@@ -255,7 +260,7 @@ $ DISP_LOG_LEVEL=Debug REWRITE_LOG_LEVEL=Debug bin\docker_run <User Directory>/c
 >[!TAB Linux]
 
 ```shell
-$ DISP_LOG_LEVEL=Debug REWRITE_LOG_LEVEL=Debug ./bin/docker_run.sh ~/code/my-project/dispatcher/src host.docker.internal:4503 8080
+$ DISP_LOG_LEVEL=Debug REWRITE_LOG_LEVEL=Debug ./bin/docker_run_hot_reload.sh ~/code/my-project/dispatcher/src host.docker.internal:4503 8080
 ```
 
 >[!ENDTABS]
@@ -359,7 +364,7 @@ Phase 3 finished
 >[!TAB macOS]
 
 + 터미널에서 다음을 실행합니다. `ifconfig` 및 호스트를 기록합니다. __아이넷__ IP 주소, 일반적으로 __en0__ 디바이스.
-+ 그런 다음 실행 `docker_run` 호스트 IP 주소 사용: `$ bin/docker_run.sh src <HOST IP>:4503 8080`
++ 그런 다음 실행 `docker_run` 호스트 IP 주소 사용: `$ bin/docker_run_hot_reload.sh src <HOST IP>:4503 8080`
 
 >[!TAB Windows]
 
@@ -369,7 +374,7 @@ Phase 3 finished
 >[!TAB Linux]
 
 + 터미널에서 다음을 실행합니다. `ifconfig` 및 호스트를 기록합니다. __아이넷__ IP 주소, 일반적으로 __en0__ 디바이스.
-+ 그런 다음 실행 `docker_run` 호스트 IP 주소 사용: `$ bin/docker_run.sh src <HOST IP>:4503 8080`
++ 그런 다음 실행 `docker_run` 호스트 IP 주소 사용: `$ bin/docker_run_hot_reload.sh src <HOST IP>:4503 8080`
 
 >[!ENDTABS]
 
