@@ -11,9 +11,9 @@ kt: 7496
 thumbnail: KT-7496.jpg
 exl-id: 6d0fdc4d-d85f-4966-8f7d-d53506a7dd08
 recommendations: noDisplay, noCatalog
-source-git-commit: de2fa2e4c29ce6db31233ddb1abc66a48d2397a6
+source-git-commit: 0c6294ac468ad4ead041a68f381c6781a5c29b44
 workflow-type: tm+mt
-source-wordcount: '912'
+source-wordcount: '1013'
 ht-degree: 1%
 
 ---
@@ -25,6 +25,10 @@ ht-degree: 1%
 ## 사전 요구 사항 {#prerequisites}
 
 이 장의 단계는 Adobe Experience Manager as a Cloud Service 환경에서 수행됩니다. AEM 환경에 대한 관리 액세스 권한이 있는지 확인합니다. 를 사용하는 것이 좋습니다. [샌드박스 프로그램](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/sandbox-programs/introduction-sandbox-programs.html) 및 [개발 환경](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html) 이 자습서를 완료할 때입니다.
+
+[프로덕션 프로그램](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs.html) 이 자습서에서는 환경을 사용할 수도 있습니다. 그러나 이 자습서에서는 콘텐츠와 코드를 대상 AEM 환경에 배포하므로 이 자습서의 활동이 대상 환경에서 수행되는 작업에 영향을 주지 않는지 확인하십시오.
+
+다음 [AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html) 은 이 자습서의 일부에 사용할 수 있습니다. 다음과 같이 클라우드 서비스에 의존하는 이 튜토리얼의 측면 [cloud Manager의 프론트엔드 파이프라인으로 테마 배포](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/theming.html)AEM SDK에서는 을 수행할 수 없습니다.
 
 리뷰 [온보딩 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html) 을 참조하십시오.
 
