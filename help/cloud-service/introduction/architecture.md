@@ -1,6 +1,6 @@
 ---
 title: AEM as a Cloud Service 아키텍처
-description: 기본 아키텍처와 중요한 AEM as a Cloud Service 조각을 살펴보십시오. Cloud Manager 및 API에 대해 자세히 알아봅니다.
+description: Edge Delivery Services을 통해 기본 아키텍처와 중요한 AEM 조각을 as a Cloud Service으로 살펴보십시오.
 role: Architect, Developer
 level: Beginner
 type: Tutorial
@@ -9,10 +9,10 @@ kt: 6919
 thumbnail: 330542.jpg
 last-substantial-update: 2023-09-26T00:00:00Z
 exl-id: c7ccfee6-c252-4ba4-831a-1c37b36ac964
-source-git-commit: 38114fe4cd7b62209bf866b969029f82c2d1710b
+source-git-commit: 8c1993bf5ba75b375929b1587c69231e87b2e76b
 workflow-type: tm+mt
-source-wordcount: '56'
-ht-degree: 25%
+source-wordcount: '48'
+ht-degree: 29%
 
 ---
 
@@ -20,6 +20,6 @@ ht-degree: 25%
 
 {{edge-delivery-services}}
 
-기본 아키텍처와 중요한 AEM as a Cloud Service 조각을 살펴보십시오. Cloud Manager 및 API에 대해 자세히 알아봅니다.
+Edge Delivery Services을 통해 기본 아키텍처와 중요한 AEM 조각을 as a Cloud Service으로 살펴보십시오.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330542?quality=12&learn=on)
