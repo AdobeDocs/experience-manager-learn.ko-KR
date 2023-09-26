@@ -10,7 +10,7 @@ level: Beginner
 kt: 7985
 thumbnail: 333477.jpg
 exl-id: a55c1dda-f74a-4914-aa1b-c4de8ad1253e
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 0%
@@ -18,6 +18,8 @@ ht-degree: 0%
 ---
 
 # AEM Sites 시작하기 - 빠른 사이트 생성 {#site-template}
+
+{{edge-delivery-services}}
 
 사전 정의된 사이트 템플릿 및 빠른 사이트 생성을 통해 Adobe Experience Manager에서 첫 번째 사이트를 제작하는 로우 코드 접근법에 대해 알아봅니다. 즉시 사용 가능한 구성 요소 및 템플릿을 사용하여 사이트를 빠르게 시작하고 실행할 수 있습니다. Adobe XD 기반 테마 설정 워크플로를 사용하여 CSS 및 JavaScript만으로 브랜드별 스타일 및 사용자 지정을 적용합니다. 새 프로젝트 및 개발자에게 권장됩니다.
 

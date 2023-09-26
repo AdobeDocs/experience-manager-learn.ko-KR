@@ -11,7 +11,7 @@ doc-type: feature video
 kt: 660
 thumbnail: 331786.jpg
 exl-id: cc758602-3c20-4eca-9b87-f04b6dc96bfe
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '98'
 ht-degree: 0%
@@ -20,6 +20,7 @@ ht-degree: 0%
 
 # 경험 조각을 포함하는 빌딩 블록 {#building-blocks}
 
+{{edge-delivery-services-and-page-editor}}
 
 빌딩 블록은 경험 조각의 하위 기능입니다. 구성 요소를 통해 콘텐츠 작성자는 다양한 경험 조각 변형에서 구성 요소를 재사용할 수 있습니다.
 

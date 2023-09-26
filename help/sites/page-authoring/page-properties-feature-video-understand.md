@@ -9,7 +9,7 @@ level: Beginner
 kt: 4321
 thumbnail: 32192.jpg
 exl-id: 41b40982-9796-418e-9bfc-af6fc720e9b8
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 42%
@@ -17,6 +17,8 @@ ht-degree: 42%
 ---
 
 # 페이지 속성 이해 {#understanding-page-properties-aem-sites}
+
+{{edge-delivery-services-and-page-editor}}
 
 다음 비디오에서는 Adobe Experience Manager의 페이지와 연결된 페이지 속성을 소개합니다.
 

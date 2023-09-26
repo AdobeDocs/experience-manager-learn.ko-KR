@@ -9,7 +9,7 @@ level: Intermediate
 kt: 10900
 thumbnail: kt-10900.jpeg
 exl-id: e055b356-dd26-4366-8608-5a0ccf5b4c49
-source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '586'
 ht-degree: 2%
@@ -17,6 +17,8 @@ ht-degree: 2%
 ---
 
 # AEM React Editable Components v2 사용법
+
+{{edge-delivery-services}}
 
 AEM은 다음을 제공합니다 [AEM React Editable Components v2](https://www.npmjs.com/package/@adobe/aem-react-editable-components): AEM SPA Editor를 사용하여 컨텍스트 내 구성 요소 편집을 지원하는 React 구성 요소를 만들 수 있는 Node.js 기반 SDK입니다.
 
@@ -33,7 +35,7 @@ AEM React Editable Components v2에 대한 자세한 내용 및 코드 샘플은
 
 ## AEM 페이지
 
-AEM React Editable Components 는 SPA Editor 또는 Remote SPA React 앱에서 모두 작동합니다. 편집 가능한 React 구성 요소를 채우는 컨텐츠는 를 확장하는 AEM 페이지를 통해 노출되어야 합니다. [SPA 페이지 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-page-component.html). 편집 가능한 React 구성 요소로 매핑되는 AEM 구성 요소는 AEM을 구현해야 합니다. [구성 요소 내보내기 프레임워크](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/json-exporter-components.html) - 예: [AEM 코어 WCM 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko).
+AEM React Editable Components 는 SPA Editor 또는 Remote SPA React 앱에서 모두 작동합니다. 편집 가능한 React 구성 요소를 채우는 컨텐츠는 를 확장하는 AEM 페이지를 통해 노출되어야 합니다. [SPA 페이지 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-page-component.html). 편집 가능한 React 구성 요소로 매핑되는 AEM 구성 요소는 AEM을 구현해야 합니다. [구성 요소 내보내기 프레임워크](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/json-exporter-components.html) - 예: [AEM 코어 WCM 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html).
 
 
 ## 종속성

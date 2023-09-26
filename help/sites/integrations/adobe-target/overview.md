@@ -13,7 +13,7 @@ level: Beginner
 badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: 2bc6cd90-7b23-4dde-bb07-bca0de9fa509
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 3%
@@ -21,6 +21,8 @@ ht-degree: 3%
 ---
 
 # AEM Sites 및 Adobe Target 통합
+
+{{edge-delivery-services-and-page-editor}}
 
 AEM Sites과 Adobe Target을 통합하여 개인화된 경험을 제공하는 방법에 대해 알아봅니다.
 
@@ -34,7 +36,7 @@ Adobe Experience Manager(AEM)와 Adobe Target은 상호 보완적인 기능을 �
 
    1. [AEM 웹 사이트에 Adobe Target 추가](./add-target-launch-extension.md)
    1. [Launch에서 Adobe Target 호출 트리거](./load-and-fire-target.md)
-   1. [Adobe Target과 AEM Author 서비스 통합](./setup-aem-target-cloud-service.md)
+   1. [AEM Author 서비스와 Adobe Target 통합](./setup-aem-target-cloud-service.md)
    1. [Adobe Target으로 AEM 경험 구성요소를 내보냅니다](./export-experience-fragment-target.md)
    1. [경험 조각 오퍼를 사용하여 웹 페이지의 일부 개인화](./create-target-activity.md)
 

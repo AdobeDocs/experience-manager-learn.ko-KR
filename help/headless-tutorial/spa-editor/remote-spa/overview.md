@@ -9,7 +9,7 @@ kt: 7630
 thumbnail: 333272.jpeg
 last-substantial-update: 2022-11-11T00:00:00Z
 exl-id: c5f933eb-c409-41dc-bb6a-6b2220dfbb47
-source-git-commit: 0fff8b53e3dffb835e070444b55a72f0b0cc3d14
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 5%
@@ -17,6 +17,8 @@ ht-degree: 5%
 ---
 
 # 개요
+
+{{edge-delivery-services}}
 
 AEM SPA Editor를 사용하여 편집 가능한 AEM 콘텐츠로 기존 React 기반(또는 Next.js) 원격 SPA을 추가하려는 개발자를 위한 멀티 파트 튜토리얼에 오신 것을 환영합니다.
 

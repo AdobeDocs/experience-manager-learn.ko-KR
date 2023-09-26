@@ -14,7 +14,7 @@ role: Developer
 level: Beginner
 exl-id: 38802296-8988-4300-a04a-fcbbe98ac810
 last-substantial-update: 2022-08-25T00:00:00Z
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 24%
@@ -22,6 +22,8 @@ ht-degree: 24%
 ---
 
 # AEM에서 첫 번째 React SPA 만들기 {#overview}
+
+{{edge-delivery-services}}
 
 을 처음 사용하는 개발자를 위해 설계된 멀티 파트 튜토리얼 시작 **SPA 편집기** Adobe Experience Manager(AEM)의 기능입니다. 이 튜토리얼에서는 가상 라이프스타일 브랜드인 WKND에 대한 React 애플리케이션의 구현을 안내합니다. React 앱은 React 구성 요소를 AEM 구성 요소에 매핑하는 AEM SPA Editor와 함께 배포되도록 개발 및 디자인되었습니다. AEM에 배포된 완성된 SPA은 AEM의 기존 인라인 편집 도구를 사용하여 동적으로 작성할 수 있습니다.
 
@@ -46,7 +48,7 @@ ht-degree: 24%
 * HTML, CSS 및 JavaScript에 대한 기본 지식
 * 에 대한 기본 친숙도 [반응](https://reactjs.org/tutorial/tutorial.html)
 
-*필수는 아니지만 의 기본 사항을 이해하는 것이 좋습니다. [기존 AEM Sites 구성 요소 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR).*
+*필수는 아니지만 의 기본 사항을 이해하는 것이 좋습니다. [기존 AEM Sites 구성 요소 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html).*
 
 ## 로컬 개발 환경 {#local-dev-environment}
 

@@ -15,7 +15,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: e71b106d-a44b-44af-ba85-7fb5806cdb83
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '79'
 ht-degree: 30%
@@ -23,6 +23,8 @@ ht-degree: 30%
 ---
 
 # 작성 개요 {#authoring-overview}
+
+{{edge-delivery-services-and-page-editor}}
 
 다음 비디오에서는 AEM Sites용 AEM 작성 환경에서 작성의 기본 개념에 대한 개요를 제공합니다.
 

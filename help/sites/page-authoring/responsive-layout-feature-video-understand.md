@@ -1,7 +1,7 @@
 ---
 title: AEM Sites을 사용한 응답형 레이아웃 이해
 seo-title: Understanding Responsive Layout with AEM Sites
-description: AEM에서는 레이아웃 컨테이너 구성 요소를 사용하여 페이지에 대한 응답형 레이아웃을 가질 수 있습니다. 콘텐츠 작성자는 반응형 레이아웃 을 사용하여 다양한 디바이스에 대한 반응형 콘텐츠를 만들고 AEM 내에서 최종 사용자 경험을 미리 볼 수 있습니다.
+description: AEM에서는 레이아웃 컨테이너 구성 요소를 사용하여 사용자 페이지에 대한 반응형 레이아웃을 보유할 수 있습니다. 콘텐츠 작성자는 반응형 레이아웃 을 사용하여 다양한 디바이스에 대한 반응형 콘텐츠를 만들고 AEM 내에서 최종 사용자 경험을 미리 볼 수 있습니다.
 seo-description: Covers the steps to author responsive layout for different devices
 feature: Page Editor, Editable Templates
 topics: authoring, responsive
@@ -15,14 +15,16 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: c125c0e0-1ed2-463e-bd34-767d009479eb
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '110'
-ht-degree: 1%
+ht-degree: 17%
 
 ---
 
 # 응답형 레이아웃 이해 {#understanding-responsive-layout-with-aem-sites}
+
+{{edge-delivery-services-and-page-editor}}
 
 Adobe Experience Manager Sites을 사용하면 작성자가 응답형 사이트 디자인을 용이하게 하기 위해 장치 너비에 따라 구성 요소의 너비를 관리할 수 있습니다. 레이아웃 모드 및 레이아웃 컨테이너를 사용하여 사용자는 AEM UI를 종료하지 않고도 다양한 디바이스에 대한 응답형 콘텐츠를 만들고 최종 사용자 경험을 미리 볼 수 있습니다.
 

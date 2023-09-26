@@ -4,7 +4,7 @@ description: AEM Asset 지원 및 지원을 받으려면 비디오를 시청하�
 sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 exl-id: 1d0b0183-25ee-4cb4-82a5-3506e7c1c908
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '185'
 ht-degree: 15%
@@ -12,6 +12,8 @@ ht-degree: 15%
 ---
 
 # AEM Assets 비디오 및 자습서 {#overview}
+
+{{edge-delivery-services}}
 
 Adobe Experience Manager(AEM) Assets는 사용자가 웹 기반 저장소에서 디지털 에셋(이미지, 비디오, 문서 및 오디오 클립)을 생성하고, 관리하고, 공유할 수 있도록 하는 AEM Platform의 디지털 에셋 관리 툴입니다. 이 사용 안내서에는 AEM Assets의 다양한 기능과 성능에 대한 비디오 및 튜토리얼이 포함되어 있습니다.
 

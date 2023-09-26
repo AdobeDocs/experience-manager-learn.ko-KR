@@ -15,7 +15,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: bf4427f7-1b7b-4e60-90a8-ab428dc65251
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '45'
 ht-degree: 0%
@@ -23,6 +23,8 @@ ht-degree: 0%
 ---
 
 # 페이지 태깅 {#using-page-tagging-with-aem-sites}
+
+{{edge-delivery-services-and-page-editor}}
 
 태깅을 사용하여 Adobe Experience Manager에서 웹 페이지를 유지 관리하고 구성하는 방법에 대해 알아봅니다.
 

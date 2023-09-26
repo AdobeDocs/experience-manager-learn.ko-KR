@@ -9,7 +9,7 @@ kt: 6919
 thumbnail: 330542.jpg
 last-substantial-update: 2022-01-01T00:00:00Z
 exl-id: c7ccfee6-c252-4ba4-831a-1c37b36ac964
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '56'
 ht-degree: 25%
@@ -17,6 +17,8 @@ ht-degree: 25%
 ---
 
 # AEM as a Cloud Service 아키텍처
+
+{{edge-delivery-services}}
 
 기본 아키텍처와 중요한 AEM as a Cloud Service 조각을 살펴보십시오. Cloud Manager 및 API에 대해 자세히 알아봅니다.
 

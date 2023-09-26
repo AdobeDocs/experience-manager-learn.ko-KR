@@ -10,7 +10,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 6dc66195-f438-4366-a5e2-486145e4b6d7
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '134'
 ht-degree: 1%
@@ -18,6 +18,8 @@ ht-degree: 1%
 ---
 
 # 페이지 게시 {#using-publication-management-with-aem-sites}
+
+{{edge-delivery-services-and-page-editor}}
 
 AEM Sites은 콘텐츠 게시 및 게시 취소를 위한 몇 가지 옵션을 제공합니다. 이 비디오에서는 다양한 방법과 그 기능에 대해 살펴봅니다.
 

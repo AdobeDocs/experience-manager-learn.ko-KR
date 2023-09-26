@@ -9,7 +9,7 @@ version: 6.4, 6.5, Cloud Service
 kt: 3307
 thumbnail: 17453.jpg
 exl-id: 12d8c0c6-c556-49f4-a6fe-84fccfccf95e
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '80'
 ht-degree: 2%
@@ -17,6 +17,8 @@ ht-degree: 2%
 ---
 
 # 타임워프 사용 {#using-timewarp-with-aem-sites}
+
+{{edge-delivery-services-and-page-editor}}
 
 타임워프는 작성자가 과거의 특정 시간에 페이지 상태를 빠르게 검토할 수 있는 방법을 제공하는 Adobe Experience Manager Sites의 기능입니다.
 

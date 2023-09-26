@@ -13,7 +13,7 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: f2cf4063-0b08-4b4f-91e6-70e5a148f931
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '645'
 ht-degree: 14%
@@ -21,6 +21,8 @@ ht-degree: 14%
 ---
 
 # AEM에서 첫 번째 Angular SPA 만들기 {#introduction}
+
+{{edge-delivery-services}}
 
 을 처음 사용하는 개발자를 위해 설계된 멀티 파트 튜토리얼 시작 **SPA 편집기** Adobe Experience Manager(AEM)의 기능입니다. 이 튜토리얼에서는 가상 라이프스타일 브랜드인 WKND를 위한 Angular 애플리케이션의 구현 과정을 안내합니다. angular 앱은 Angular 구성 요소를 AEM 구성 요소에 매핑하는 AEM SPA Editor를 사용하여 배포하도록 개발 및 디자인되었습니다. AEM에 배포된 완성된 SPA은 AEM의 기존 인라인 편집 도구를 사용하여 동적으로 작성할 수 있습니다.
 
@@ -36,7 +38,7 @@ ht-degree: 14%
 
 * [Maven AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
 * [AEM SPA 편집기](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-walkthrough.html#content-editing-experience-with-spa)
-* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)
+* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [Angular](https://angular.io/)
 
 *자습서의 각 부분을 완료하는 데 1~2시간이 걸릴 것으로 예상합니다.*
@@ -58,7 +60,7 @@ ht-degree: 14%
 * [Apache Maven](https://maven.apache.org/) (3.3.9 이상)
 * [Node.js](https://nodejs.org/en/) 및 [npm](https://www.npmjs.com/)
 
-*필수는 아니지만 의 기본 사항을 이해하는 것이 좋습니다. [기존 AEM Sites 구성 요소 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR).*
+*필수는 아니지만 의 기본 사항을 이해하는 것이 좋습니다. [기존 AEM Sites 구성 요소 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html).*
 
 ## 로컬 개발 환경 {#local-dev-environment}
 

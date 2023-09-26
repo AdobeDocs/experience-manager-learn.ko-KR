@@ -4,7 +4,7 @@ description: Adobe Experience Manager(AEM) as a Cloud Service에 대한 자습�
 sub-product: Experience Manager as a Cloud Service
 kt: 3289
 exl-id: 650ba2d9-6083-4772-84c5-1cdb97b5f0e9
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 11%
@@ -12,6 +12,8 @@ ht-degree: 11%
 ---
 
 # AEM as a Cloud Service 비디오 및 자습서 {#overview}
+
+{{edge-delivery-services}}
 
 Adobe Experience Manager(AEM)는 이제 클라우드 서비스로 제공됩니다. AEM as a Cloud Service은 모든 사용 사례 및 기능을 보존하고 확장하면서 과거의 투자와 혁신을 바탕으로 구축된 차세대 Experience Manager 제품 라인을 소개합니다.
 
@@ -22,24 +24,19 @@ Adobe Experience Manager(AEM)는 이제 클라우드 서비스로 제공됩니�
 ## 새로운 기능
 
 * **[토큰 기반 인증(튜토리얼)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)**
-
-   *AEM 토큰 기반 인증을 사용하여 HTTP를 통해 as a Cloud Service으로 상호 작용하는 방법에 대해 알아봅니다*
+  *AEM 토큰 기반 인증을 사용하여 HTTP를 통해 as a Cloud Service으로 상호 작용하는 방법에 대해 알아봅니다*
 
 * **[헤드리스 GraphQL(튜토리얼)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)**
-
-   *AEM GraphQL API를 사용하여 외부 애플리케이션에서 경험을 제공하는 방법을 알아봅니다.*
+  *AEM GraphQL API를 사용하여 외부 애플리케이션에서 경험을 제공하는 방법을 알아봅니다.*
 
 * **[일괄 가져오기(비디오)](./migration/bulk-import.md)**
-
-   *Azure Blob Storage 또는 Amazon S3에서 AEM으로 에셋을 일괄 가져오는 방법 알아보기*
+  *Azure Blob Storage 또는 Amazon S3에서 AEM으로 에셋을 일괄 가져오는 방법 알아보기*
 
 * **[Asset compute 메타데이터 작업자(튜토리얼)](./asset-compute/advanced/metadata.md)**
-
-   *asset compute 작업자에서 에셋 메타데이터를 다시 AEM에 작성하는 방법에 대해 알아봅니다*
+  *asset compute 작업자에서 에셋 메타데이터를 다시 AEM에 작성하는 방법에 대해 알아봅니다*
 
 * **[Asset compute 마이크로서비스 확장성(튜토리얼)](./asset-compute/overview.md)**
-
-   *사용자 지정 에셋 렌디션을 생성하기 위해 Asset compute 작업자를 개발하는 방법에 대해 알아봅니다*
+  *사용자 지정 에셋 렌디션을 생성하기 위해 Asset compute 작업자를 개발하는 방법에 대해 알아봅니다*
 
 </div>
 

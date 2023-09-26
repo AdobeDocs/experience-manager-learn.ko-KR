@@ -15,7 +15,7 @@ role: Developer
 level: Beginner
 exl-id: 09a600f4-1ada-4fb7-ae44-586364cff389
 recommendations: disable
-source-git-commit: 5f43db64f68218ed3d349508a2c4fd232601a9ef
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '599'
 ht-degree: 7%
@@ -23,6 +23,8 @@ ht-degree: 7%
 ---
 
 # AEM Sites 시작 - WKND 튜토리얼 {#introduction}
+
+{{edge-delivery-services}}
 
 Adobe Experience Manager(AEM)을 처음 사용하는 개발자를 위해 설계된 멀티 파트 튜토리얼에 오신 것을 환영합니다. 이 튜토리얼에서는 가상 라이프스타일 브랜드인 WKND를 위한 AEM 사이트의 구현 과정을 안내합니다. 이 튜토리얼은 Adobe Experience Manager Sites를 통한 사용한 프로젝트 설정, 핵심 구성 요소, 편집 가능한 템플릿, 클라이언트측 라이브러리 및 구성 요소 개발 등의 기본 주제를 다룹니다.
 

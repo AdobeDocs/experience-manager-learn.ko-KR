@@ -13,7 +13,7 @@ feature: Authoring
 role: User
 level: Beginner
 exl-id: cc659581-031d-4f2a-90c1-cf721e481689
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 5%
@@ -21,6 +21,8 @@ ht-degree: 5%
 ---
 
 # 페이지 버전 만들기 {#creating-page-versions-aem-sites}
+
+{{edge-delivery-services-and-page-editor}}
 
 페이지 버전 관리는 콘텐츠 작성자가 페이지 버전을 작성하여 페이지와 연결된 변경 사항을 추적하는 데 도움이 되며 버전을 미리 보고, 버전을 복원하고, 버전을 페이지의 현재 버전과 비교하는 옵션을 제공합니다.
 

@@ -15,7 +15,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: a14c511f-504a-48ce-864b-b1a30cbaea9a
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 21%
@@ -23,6 +23,8 @@ ht-degree: 21%
 ---
 
 # 페이지 작성 {#authoring-page-aem-sites}
+
+{{edge-delivery-services-and-page-editor}}
 
 사이트 편집기의 UI를 사용하여 Adobe Experience Manager Sites에서 페이지를 작성하는 방법을 알아봅니다.
 

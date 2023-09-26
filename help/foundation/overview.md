@@ -4,7 +4,7 @@ description: Adobe Experience Manager Foundation에 대한 지원을 받으려�
 role: Leader, Architect, Developer, Admin, User
 level: Beginner
 exl-id: af0fe7fb-873b-4d2d-a5a3-59a5a3da9b96
-source-git-commit: 4c91ab68f6e31f0eb549689c7ecfd0ee009801d9
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '215'
 ht-degree: 0%
@@ -13,6 +13,8 @@ ht-degree: 0%
 
 # AEM Foundation 비디오 및 자습서 {#overview}
 
+{{edge-delivery-services}}
+
 Adobe Experience Manager은 AEM Sites, Assets 및 Forms 사용자가 사용할 수 있는 공통 기능 세트를 제공합니다.
 
 <div id="whats-new-section">
@@ -20,14 +22,13 @@ Adobe Experience Manager은 AEM Sites, Assets 및 Forms 사용자가 사용할 �
 ## 새로운 기능
 
 * **[워크플로우 AEM 사용(비디오)](./workflow/use-workflow.md)**
-
-   *AEM Workflow는 AEM에서 콘텐츠를 공동 작업, 관리 및 처리하는 방법을 제공합니다.*
+  *AEM Workflow는 AEM에서 콘텐츠를 공동 작업, 관리 및 처리하는 방법을 제공합니다.*
 
 * **[AEM용 Cloud Manager 이해(비디오)](./cloud-manager/understand-cloud-manager-for-aem.md)**\
-   *AEM용 Cloud Manager를 사용하면 AEM 환경을 손쉽게 관리, 검사 및 셀프서비스할 수 있습니다.*
+  *AEM용 Cloud Manager를 사용하면 AEM 환경을 손쉽게 관리, 검사 및 셀프서비스할 수 있습니다.*
 
 * **[Cloud Manager CI/CD 파이프라인 사용(비디오)](./cloud-manager/use-the-cicd-pipeline-in-cloud-manager-for-aem.md)**\
-   *Cloud Manager의 CI/CD 파이프라인을 사용하여 안전하고 일관된 배포를 보장하는 방법을 알아봅니다.*
+  *Cloud Manager의 CI/CD 파이프라인을 사용하여 안전하고 일관된 배포를 보장하는 방법을 알아봅니다.*
 
 </div>
 

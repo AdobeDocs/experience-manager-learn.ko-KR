@@ -15,7 +15,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: b120fb79-729e-4155-ba10-e5f7bb07eefa
-source-git-commit: 1623e1eaf966e625e1ec402a2996e8beb1e1cd03
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '127'
 ht-degree: 15%
@@ -23,6 +23,8 @@ ht-degree: 15%
 ---
 
 # 페이지 편집기 사용 {#using-page-editor-with-aem-sites}
+
+{{edge-delivery-services-and-page-editor}}
 
 AEM Site의 페이지 편집기는 웹 콘텐츠를 만들고 편집할 수 있는 강력한 도구입니다. 페이지 편집기의 도구 및 기능은 페이지 편집기의 UI 도구 모음에서 액세스할 수 있습니다.
 
