@@ -5,9 +5,9 @@ solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 topic: Content Management
 exl-id: cde4ce7f-0afe-4632-8c1c-354586f296d5
-source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
+source-git-commit: 237560dc634cb3d6c3553dd57386d2a9548ed4e5
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '361'
 ht-degree: 13%
 
 ---
@@ -18,27 +18,22 @@ ht-degree: 13%
 
 Adobe Experience Manager(AEM) Sites는 선도적인 경험 관리 플랫폼입니다. 이 사용 안내서에는 AEM Sites의 다양한 기능과 성능에 대한 비디오 및 튜토리얼이 포함되어 있습니다.
 
-
-<div id="whats-new-section">
+<div id="whats-new-section-skip"></div>
 
 ## 새로운 기능
 
-* **[AEM Sites에서 Launches 사용(비디오)](./page-authoring/launches.md)**
-  *AEM Sites의 론치와 이를 사용하여 향후 릴리스를 위한 웹 사이트 콘텐츠를 준비하는 방법에 대해 알아봅니다.*
+* **[AEM 및 Edge Delivery Services 개요(비디오)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)**
+  *이 유용한 개요 비디오에서는 AEM Sites, AEM Assets, AEM Headless, AEM Forms 및 Edge Delivery Services을 포함하는 AEM(Adobe Experience Manager)의 포괄적인 세계를 살펴봅니다.*
 
-* **[AEM 구성 요소를 사용하여 Adobe 클라이언트 데이터 레이어 사용자 지정(튜토리얼)](./integrations/adobe-client-data-layer/data-layer-customize.md)**
-  *사용자 지정 AEM 구성 요소의 콘텐츠로 Adobe 클라이언트 데이터 레이어를 업데이트하는 방법을 알아봅니다.*
+* **[AEM 및 Edge Delivery Services란? (비디오)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/what-is-aem-as-a-cloud-service.html)**
+  *Adobe Experience Manager(AEM) 및 Edge Delivery Services이 제공하는 값에 대해 알아봅니다.*
 
-* **[AEM Headless GraphQL 시작하기(튜토리얼)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)**
-  *AEM GraphQL API를 사용하여 기본 모바일 앱에서 사용할 AEM의 콘텐츠를 표시하는 방법입니다.*
+* **[AEM의 발전에 대해 알아보기(비디오)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/evolution.html)**
+  *AEM 6.5부터 AEM as a Cloud Service, 그리고 마지막으로 Edge Delivery Services에 이르기까지 AEM 진화와 이 진화가 제공하는 가치에 대해 알아봅니다.*
 
-* **[컨텐츠 조각 사용(비디오 시리즈)](./content-fragments/content-fragments-feature-video-use.md)**
-  *콘텐츠 조각은 재사용이 가능한 채널 독립적인 콘텐츠 조각입니다.*
+* **[AEM with Edge Delivery Services 아키텍처 개요(비디오)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html)**
+  *AEM as a Cloud Service의 아키텍처에 대해 자세히 알아보십시오!*
 
-* **[SPA 편집기 사용(비디오)](./spa-editor/spa-editor-framework-feature-video-use.md)**
-  *단일 페이지 애플리케이션(SPA)을 위한 AEM 편집 기능에 대해 알아봅니다.*
-
-</div>
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>
