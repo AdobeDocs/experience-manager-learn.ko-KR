@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 2a412126ac7a67a756d4101d56c1715f0da86453
+source-git-commit: 90d0d4876869b05c2ce00fd8cf18c474a6a00e27
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1038'
 ht-degree: 21%
 
 ---
@@ -38,6 +38,8 @@ ht-degree: 21%
    + [슬링](./underlying-technology/introduction-sling.md)
    + [Author 및 Publish 서비스](./underlying-technology/introduction-author-publish.md)
    + [Dispatcher](./underlying-technology/introduction-dispatcher.md)
++ Edge 게재 서비스 {#edge-delivery-services}
+   + [AEM Assets Sidekick 플러그인](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/assets/edge-delivery-services/sidekick-plugin.md)
 + Cloud Manager {#cloud-manager}
    + [프로그램](./cloud-manager/programs.md)
    + [환경](./cloud-manager/environments.md)
