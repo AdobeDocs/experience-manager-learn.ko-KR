@@ -1,7 +1,7 @@
 ---
-source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
+source-git-commit: 7f7bffa24539d0bba0dc9ac8cc94d0c8d1f2e871
 workflow-type: tm+mt
-source-wordcount: '126'
+source-wordcount: '129'
 ht-degree: 26%
 
 ---
@@ -13,12 +13,12 @@ ht-degree: 26%
 
 ## Edge 게재 서비스{#edge-delivery-services}
 
-[!BADGE AEM에서 Edge Delivery Services으로 게시하려면 여기를 클릭하십시오.]{type=Positive url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html" tooltip="AEM에서 Edge Delivery Services으로 게시"}
+[!BADGE Edge Delivery Services을 사용하여 AEM Sites에서 게시하려면 여기를 클릭하십시오.]{type=Positive url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html" tooltip="AEM에서 Edge Delivery Services으로 게시"}
 
 ## Edge Delivery Services 및 페이지 편집기{#edge-delivery-services-and-page-editor}
 
-[!BADGE AEM에서 Edge Delivery Services으로 게시하려면 여기를 클릭하십시오.]{type=Positive url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html" tooltip="AEM에서 Edge Delivery Services으로 게시"}
+[!BADGE Edge Delivery Services을 사용하여 AEM Sites에서 게시하려면 여기를 클릭하십시오.]{type=Positive url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html" tooltip="AEM에서 Edge Delivery Services으로 게시"}
 
 ## Edge Delivery Services 및 유니버설 비주얼 편집기{#edge-delivery-services-and-universal-visual-editor}
 
-[!BADGE AEM에서 Edge Delivery Services으로 게시하려면 여기를 클릭하십시오.]{type=Positive url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html" tooltip="AEM에서 Edge Delivery Services으로 게시"}
+[!BADGE Edge Delivery Services을 사용하여 AEM Sites에서 게시하려면 여기를 클릭하십시오.]{type=Positive url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html" tooltip="AEM에서 Edge Delivery Services으로 게시"}
