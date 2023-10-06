@@ -4,9 +4,9 @@ breadcrumb-title: AEM Foundation 튜토리얼
 user-guide-description: Adobe Experience Manager Foundation에 대한 비디오 및 튜토리얼 모음입니다.
 sub-product: Experience Manager
 index: y
-source-git-commit: d4859d8af066d456f16f76869e99432aaa5b9863
+source-git-commit: 2f0490263eaf5e3458e2d71113411a4fdd0aa94c
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '230'
 ht-degree: 16%
 
 ---
@@ -45,6 +45,7 @@ ht-degree: 16%
    + [SSL 마법사 사용](./security/use-the-ssl-wizard.md)
    + [ModSecurity CRS DoS 공격 방지](./security/modsecurity-crs-dos-attack-protection.md)
    + [개인 인증서가 있는 API에 대한 HTTPS 연결](./security/call-internal-apis-having-private-certificate.md)
+   + [상호 TLS(mTLS) 인증](./security/mutual-tls-authentication.md)
 + 워크플로 {#workflow}
    + [워크플로우 편집기 사용](./workflow/use-the-workflow-editor.md)
    + [워크플로우 사용](./workflow/use-workflow.md)
