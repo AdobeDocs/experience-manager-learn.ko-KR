@@ -1,5 +1,5 @@
 ---
-title: mTLS(상호 전송 계층 보안) 인증
+title: AEM의 mTLS(Mutual Transport Layer Security) 인증
 description: mTLS(상호 전송 계층 보안) 인증이 필요한 웹 API로 AEM에서 HTTPS를 호출하는 방법에 대해 알아봅니다.
 feature: Security
 version: 6.5, Cloud Service
@@ -10,15 +10,15 @@ kt: 13881
 thumbnail: KT-13881.png
 doc-type: article
 last-substantial-update: 2023-10-10T00:00:00Z
-source-git-commit: 2f0490263eaf5e3458e2d71113411a4fdd0aa94c
+source-git-commit: d4835fac83f06482c1252ae962e867de06d326e8
 workflow-type: tm+mt
-source-wordcount: '750'
+source-wordcount: '754'
 ht-degree: 0%
 
 ---
 
 
-# mTLS(상호 전송 계층 보안) 인증
+# AEM의 mTLS(Mutual Transport Layer Security) 인증
 
 mTLS(상호 전송 계층 보안) 인증이 필요한 웹 API로 AEM에서 HTTPS를 호출하는 방법에 대해 알아봅니다.
 
@@ -81,7 +81,7 @@ AEM에서 mTLS로 보호된 API를 호출하려면 높은 수준에서 다음 �
 
 ### 인증서 교환
 
-위와 같이 AEM 인증서에 자체 서명된 CA를 사용하는 경우 API 공급자와 인증서 또는 내부 CA(인증 기관) 인증서를 교환하십시오.
+위와 같이 AEM 인증서에 자체 서명된 CA를 사용하는 경우 인증서 또는 내부 CA(인증 기관) 인증서를 API 공급자에게 보냅니다.
 
 또한 API 공급자가 자체 서명된 CA 인증서를 사용하는 경우 API 공급자로부터 인증서 또는 내부 CA(인증 기관) 인증서를 받습니다.
 
