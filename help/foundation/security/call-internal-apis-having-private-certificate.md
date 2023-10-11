@@ -10,17 +10,19 @@ kt: 11548
 thumbnail: KT-11548.png
 doc-type: article
 last-substantial-update: 2023-08-25T00:00:00Z
-source-git-commit: d4859d8af066d456f16f76869e99432aaa5b9863
+exl-id: c88aa724-9680-450a-9fe8-96e14c0c6643
+source-git-commit: 68aaa58c8f95e72e1a7cb89f849c77d1210f31ee
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '530'
 ht-degree: 0%
 
 ---
 
-
 # 개인 인증서가 있는 내부 API 호출
 
 개인 또는 자체 서명된 인증서를 사용하여 AEM에서 웹 API로 HTTPS를 호출하는 방법에 대해 알아봅니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424853?quality=12&learn=on)
 
 자체 서명된 인증서를 사용하는 웹 API에 HTTPS 연결을 만들려고 하면 기본적으로 다음 오류로 연결이 실패합니다.
 
@@ -59,7 +61,7 @@ CloseableHttpResponse closeableHttpResponse = httpClient.execute(new HttpGet(API
 
 ## HttpClient 및 AEM TrustStore 자료 로드
 
-가 있는 API 엔드포인트를 호출하려면 _개인 또는 자체 서명된 인증서_, [HttpClient](https://hc.apache.org/httpcomponents-client-4.5.x/index.html)의 `SSLContextBuilder` 은(는) AEM TrustStore와 함께 로드되어야 하며, 연결을 용이하게 하는 데 사용되어야 합니다.
+가 있는 API 엔드포인트를 호출하려면 _개인 또는 자체 서명된 인증서_, [HttpClient](https://hc.apache.org/httpcomponents-client-4.5.x/index.html)의 `SSLContextBuilder` 은(는) AEM TrustStore와 함께 로드되어야 하며, 연결을 용이하게 하는 데 사용됩니다.
 
 아래 단계를 수행합니다.
 
@@ -148,3 +150,10 @@ CloseableHttpResponse closeableHttpResponse = httpClient.execute(new HttpGet(API
 개인 인증서로 내부 API를 효과적으로 호출하는 기존 접근 방법에는 JVM 키 저장소 수정이 포함됩니다. Java를 사용하여 개인 인증서를 가져옴으로써 수행됩니다™ [keytool](https://docs.oracle.com/en/java/javase/11/tools/keytool.html#GUID-5990A2E4-78E3-47B7-AE75-6D1826259549) 명령입니다.
 
 그러나 이 방법은 보안 모범 사례와 일치하지 않으며 AEM은 의 활용을 통해 우수한 옵션을 제공합니다. **글로벌 Trust Store** 및 [키 저장소 서비스](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/adobe/granite/keystore/KeyStoreService.html).
+
+
+## 솔루션 패키지
+
+비디오에서 데모된 샘플 Node.js 프로젝트는에서 다운로드할 수 있습니다. [여기](assets/internal-api-call/REST-APIs.zip).
+
+AEM 서블릿 코드는 WKND Sites 프로젝트의 `tutorial/web-api-invocation` 분기, [참조](https://github.com/adobe/aem-guides-wknd/tree/tutorial/web-api-invocation/core/src/main/java/com/adobe/aem/guides/wknd/core/servlets).
