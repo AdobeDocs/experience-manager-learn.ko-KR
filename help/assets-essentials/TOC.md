@@ -8,7 +8,7 @@ version: Cloud Service
 feature-set: Experience Manager Assets
 feature: Assets Essentials
 team: TM
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 0c95df469885b84aa7585975a89811efab0ae5e7
 workflow-type: tm+mt
 source-wordcount: '77'
 ht-degree: 31%
@@ -44,6 +44,6 @@ ht-degree: 31%
    + [문서 전송 및 에셋 연결](./integrations/workfront/link-send.md)
    + [버전 기록](./integrations/workfront/versions.md)
 
-+ [Adobe Journey Optimizer 통합](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-messages/create-email-content-with-the-message-editor.html?lang=ko-KR)
++ [Adobe Journey Optimizer 통합](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-messages/create-email-content-with-the-message-editor.html?lang=ko-KR){target=_blank}
 
-+ [설명서](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html)
++ [설명서](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html){target=_blank}

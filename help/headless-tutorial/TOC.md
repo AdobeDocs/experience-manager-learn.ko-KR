@@ -8,7 +8,7 @@ sub-product: Experience Manager Sites
 version: 6.5, Cloud Service
 kt: 2963
 index: y
-source-git-commit: beebd6a354a9efb77d6e5e463559b34be78c006e
+source-git-commit: 0c95df469885b84aa7585975a89811efab0ae5e7
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 19%
@@ -20,7 +20,7 @@ ht-degree: 19%
 
 + [AEM Headless 개요](./overview.md)
 + GraphQL {#graphql}
-   + [AEM Headless 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+   + [AEM Headless 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html){target=_blank}
    + [개요](./graphql/overview.md)
    + 빠른 설정 {#quick-setup}
       + [클라우드 서비스](./graphql/quick-setup/cloud-service.md)
@@ -113,7 +113,7 @@ ht-degree: 19%
    + [3 - 이벤트 콘텐츠 조각 작성](./content-services/chapter-3.md)
    + [4 - Content Services 템플릿 정의](./content-services/chapter-4.md)
    + [5 - Content Services 페이지 작성](./content-services/chapter-5.md)
-   + [6 - 게재를 위해 AEM 게시에서 콘텐츠 노출](./content-services/chapter-6.md)
+   + [6 - 게재를 위해 AEM 게시에서 컨텐츠 노출](./content-services/chapter-6.md)
    + [7 - 모바일 앱에서 AEM Content Services 사용](./content-services/chapter-7.md)
 + 코드 샘플 {#code-samples}
    + [React 앱 필터링](./graphql/code-samples/filtering-react-app.md)
