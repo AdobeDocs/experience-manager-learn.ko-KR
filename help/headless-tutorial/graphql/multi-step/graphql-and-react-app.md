@@ -10,7 +10,7 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 772b595d-2a25-4ae6-8c6e-69a646143147
-source-git-commit: 65244bf81666c20fd5d9d804ad8ea97df8b83d9f
+source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
 workflow-type: tm+mt
 source-wordcount: '1218'
 ht-degree: 2%
@@ -100,7 +100,7 @@ React 앱을 다운로드하려면:
 >
 > //*********************************
 >
->  // TODO : AEM Headless 자습서의 단계에 따라 이를 구현합니다.
+>  // TODO AEM Headless 자습서의 단계에 따라 이를 구현합니다.
 >
 >  //*********************************
 >
@@ -488,7 +488,7 @@ async function fetchPersistedQuery(persistedQueryName, queryParameters) {
 
 ## 앱 사용
 
-앱 검토 [http://localhost:3000/](http://localhost:3000/) 및 클릭 _구성원_ 링크. 또한 AEM에서 콘텐츠 조각을 추가하여 팀 알파에 더 많은 팀 및/또는 구성원을 추가할 수 있습니다.
+앱 검토 [http://localhost:3000/](http://localhost:3000/) 및 클릭 _구성원_ 링크. 또한 AEM에서 컨텐츠 조각을 추가하여 팀 Alpha에 더 많은 팀 및/또는 구성원을 추가할 수 있습니다.
 
 >[!IMPORTANT]
 >
@@ -496,7 +496,7 @@ async function fetchPersistedQuery(persistedQueryName, queryParameters) {
 
 ## 언더더 후드
 
-브라우저 열기 **개발자 도구** > **네트워크** 및 _필터_ 대상 `all-teams` 요청. GraphQL API 요청 알림 `/graphql/execute.json/my-project/all-teams` 다음에 대해 만들어짐: `http://localhost:3000` 및 **아님** 의 값에 대하여 `REACT_APP_HOST_URI` (예: <https://publish-p123-e456.adobeaemcloud.com>). 다음과 같은 이유로 React 앱의 도메인에 대해 요청이 수행됩니다. [프록시 설정](https://create-react-app.dev/docs/proxying-api-requests-in-development/#configuring-the-proxy-manually) 은(는) 을 사용하여 활성화되었습니다. `http-proxy-middleware` 모듈.
+브라우저 열기 **개발자 도구** > **네트워크** 및 _필터_ 대상 `all-teams` 요청. GraphQL API 요청 알림 `/graphql/execute.json/my-project/all-teams` 다음에 대해 만들어짐: `http://localhost:3000` 및 **아님** 의 값에 대하여 `REACT_APP_HOST_URI`, 예 `<https://publish-pxxx-exxx.adobeaemcloud.com`. 다음과 같은 이유로 React 앱의 도메인에 대해 요청이 수행됩니다. [프록시 설정](https://create-react-app.dev/docs/proxying-api-requests-in-development/#configuring-the-proxy-manually) 은(는) 을 사용하여 활성화되었습니다. `http-proxy-middleware` 모듈.
 
 
 ![프록시를 통한 GraphQL API 요청](assets/graphql-and-external-app/graphql-api-request-via-proxy.png)

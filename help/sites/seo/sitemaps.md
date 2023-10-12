@@ -10,7 +10,7 @@ kt: 9165
 thumbnail: 337960.jpeg
 last-substantial-update: 2022-10-03T00:00:00Z
 exl-id: 40bb55f9-011d-4261-9f44-b1104a591252
-source-git-commit: 4c91ab68f6e31f0eb549689c7ecfd0ee009801d9
+source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
 workflow-type: tm+mt
 source-wordcount: '263'
 ht-degree: 4%
@@ -48,7 +48,7 @@ AEM 사이트 맵은 다음을 사용하여 절대 URL을 지원합니다. [Slin
 
 ### 사이트 맵 스케줄러 OSGi 구성
 
-다음을 정의합니다 [OSGi 공장 구성](http://localhost:4502/system/console/configMgr/org.apache.sling.sitemap.impl.SitemapScheduler) 빈도용(사용) [cron 표현식](http://www.cronmaker.com)) 사이트 맵은 AEM에서 다시 생성/생성되고 캐시됩니다.
+다음을 정의합니다 [OSGi 공장 구성](http://localhost:4502/system/console/configMgr/org.apache.sling.sitemap.impl.SitemapScheduler) 빈도용(사용) [cron 표현식](http://www.cronmaker.com/)) 사이트 맵은 AEM에서 다시 생성/생성되고 캐시됩니다.
 
 `ui.config/src/main/jcr_content/apps/wknd/osgiconfig/config.publish`
 
@@ -87,7 +87,7 @@ RewriteRule ^/(.*)$ /content/${CONTENT_FOLDER_NAME}/$1 [PT,L]
 
 ## 리소스
 
-+ [AEM 사이트 맵 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/seo-and-url-management.html?lang=en#building-an-xml-sitemap-on-aem)
++ [AEM 사이트 맵 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html?lang=en)
 + [Apache Sling 사이트 맵 설명서](https://github.com/apache/sling-org-apache-sling-sitemap#readme)
 + [Sitemap.org 사이트 맵 설명서](https://www.sitemaps.org/protocol.html)
 + [Sitemap.org 사이트 맵 인덱스 파일 설명서](https://www.sitemaps.org/protocol.html#index)

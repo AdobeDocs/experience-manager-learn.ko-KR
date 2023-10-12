@@ -1,6 +1,6 @@
 ---
 title: AEM Assets 및 Adobe Launch를 사용하여 자산 통찰력 설정
-description: 이 5부로 구성된 비디오 시리즈에서는 Launch by Adobe을 통해 배포된 Experience Manager에 대한 자산 통찰력 의 설정 및 구성을 살펴봅니다.
+description: 5부로 구성된 이 비디오 시리즈에서는 Launch by Adobe을 통해 배포된 Experience Manager에 대한 Asset Insights의 설정 및 구성을 살펴보도록 하겠습니다.
 feature: Asset Insights
 version: 6.4, 6.5
 topic: Integrations
@@ -10,16 +10,16 @@ last-substantial-update: 2022-06-04T00:00:00Z
 badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Assets as a Cloud Service, AEM Assets 6.5" before-title="false"
 exl-id: 00125fe1-3bb9-4b1a-a83c-61c413403ae2
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '826'
 ht-degree: 1%
 
 ---
 
 # AEM Assets 및 Adobe Experience Platform Launch을 사용하여 자산 통찰력 설정
 
-이 5부로 구성된 비디오 시리즈에서는 Adobe Launch를 통해 배포된 Experience Manager에 대한 자산 통찰력 의 설정 및 구성을 살펴봅니다.
+5부로 구성된 이 비디오 시리즈에서는 Adobe Launch를 통해 배포된 Experience Manager에 대한 자산 통찰력 의 설정 및 구성을 살펴보도록 하겠습니다.
 
 ## 1부: 자산 통찰력 개요 {#overview}
 
@@ -35,7 +35,7 @@ ht-degree: 1%
 >
 >다음을 다운로드하십시오. [최신 버전의 핵심 구성 요소](https://github.com/adobe/aem-core-wcm-components) 구현.
 
-이 비디오에서는 더 이상 최신 버전이 아닌 핵심 구성 요소 v2.2.2를 사용합니다. 다음 섹션으로 진행하기 전에 반드시 최신 버전을 사용하십시오.
+이 비디오에서는 최신 버전이 아닌 핵심 구성 요소 v2.2.2를 사용합니다. 다음 섹션으로 진행하기 전에 최신 버전을 사용하십시오.
 
 * 다운로드 [자산 통찰력 샘플 이미지 콘텐츠](./assets/asset-insights-launch-tutorial/aem-assets-insights-sample.zip)
 * 다운로드 [최신 AEM WCM 코어 구성 요소](https://github.com/adobe/aem-core-wcm-components/releases)
@@ -52,14 +52,14 @@ ht-degree: 1%
 
 핵심 이미지 구성 요소 사용 ***data-asset-id*** 상위 내의 속성 &lt;div> 이 기능을 활성화/비활성화하려면 이미지 태그를 사용하십시오. 프록시 구성 요소는 다음과 같은 변경 사항으로 핵심 구성 요소를 재정의합니다.
 
-* 제거 ***data-asset-id*** image.html 내에 있는  &lt;img>  요소의 상위 div에서
-* 추가 ***data-aem-asset-id*** image.html 내의  &lt;img>  요소에 직접 연결
-* 추가 ***data-trackable=&#39;true&#39;*** image.html 내의  &lt;img>  요소에 대한 값입니다
+* 제거 ***data-asset-id*** image.html 내에 있는 &lt;img> 요소의 상위 div에서
+* 추가 ***data-aem-asset-id*** image.html 내의 &lt;img> 요소에 직접 연결
+* 추가 ***data-trackable=&#39;true&#39;*** image.html 내의 &lt;img> 요소에 대한 값입니다
 * ***data-aem-asset-id*** 및 ***data-trackable=&#39;true&#39;*** 동일한 노드 수준에 유지
 
 >[!NOTE]
 >
->*data-aem-asset-id=&#39;image.UUID&#39;* 및 *data-trackable=&#39;true&#39;* 는 자산 노출에 대해 표시해야 하는 주요 속성입니다. 에셋 클릭 인사이트의 경우,  &lt;img>  태그에 있는 위의 데이터 속성 외에도 상위 태그에 유효한 href 값이 있어야 합니다.
+>*data-aem-asset-id=&#39;image.UUID&#39;* 및 *data-trackable=&#39;true&#39;* 는 자산 노출에 대해 표시해야 하는 주요 속성입니다. 에셋 클릭 인사이트의 경우, &lt;img> 태그에 있는 위의 데이터 속성 외에도 상위 태그에 유효한 href 값이 있어야 합니다.
 
 ## 3부: Adobe Analytics — 보고서 세트 만들기, 실시간 데이터 수집 및 AEM Assets 보고 활성화 {#adobe-analytics-asset-insights}
 
@@ -69,7 +69,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-Adobe Analytics 보고서 세트에 대해 실시간 데이터 수집 및 AEM Asset 보고를 활성화해야 합니다. AEM Asset Reporting을 활성화하면 자산 통찰력을 추적할 분석 변수가 예약됩니다.
+Adobe Analytics 보고서 세트에 대해 실시간 데이터 수집 및 AEM 자산 보고를 활성화해야 합니다. AEM Asset Reporting을 활성화하면 자산 통찰력을 추적할 분석 변수가 예약됩니다.
 
 AEM Assets Insights 구성의 경우 다음 자격 증명이 필요합니다
 
@@ -106,10 +106,10 @@ Adobe Analytics AEM 확장 추가, 페이지 로드 규칙 만들기 및 Launch�
 * **\&lt;code>assetAnalytics.core.assetLoaded\&lt;code>** : asset-DOM 요소에 대해 &#39;로드&#39; 이벤트가 발송되면 호출됩니다.
 * **\&lt;code>assetAnalytics.core.assetClicked\&lt;code>** : asset-DOM 요소에 대해 &#39;클릭&#39; 이벤트가 발송될 때 호출됩니다. 이는 asset-DOM 요소에 유효한 외부 &#39;href&#39; 속성을 가진 상위로 앵커 태그가 있는 경우에만 관련됩니다.
 
-마지막으로 Pagetracker는 로 초기화 기능을 구현합니다.
+마지막으로 페이지 추적기는 다음과 같이 초기화 기능을 구현합니다.
 
-* **\&lt;code>assetAnalytics.dispatcher.init()\&lt;code>** : Pagetracker 구성 요소를 초기화하기 위해 호출됩니다. 웹 페이지에서 자산 통찰력 이벤트(노출 횟수 및/또는 클릭 수)가 생성되기 전에 이를 호출해야 합니다.
-* **\&lt;code>assetAnalytics.dispatcher.init()\&lt;code>** : 필요한 경우 AppMeasurement 개체를 허용합니다. 제공된 경우 AppMeasurement 개체의 새 인스턴스를 만들지 않습니다.
+* **\&lt;code>assetAnalytics.dispatcher.init()\&lt;code>** : 페이지 추적기 구성 요소를 초기화하기 위해 호출됩니다. 웹 페이지에서 자산 통찰력 이벤트(노출 횟수 및/또는 클릭 수)가 생성되기 전에 이를 호출해야 합니다.
+* **\&lt;code>assetAnalytics.dispatcher.init()\&lt;code>** : 필요한 경우 AppMeasurement 개체를 허용합니다. 제공된 경우 AppMeasurement 개체의 인스턴스를 만들지 않습니다.
 
 ### 규칙 2: 이미지 추적기 — 작업 1 (asset-insights.js) {#rule-image-tracker-action-asset-insights-js}
 
@@ -189,7 +189,7 @@ document.querySelectorAll(".cmp-image__image");
 비디오에서 Analytics를 디버깅하는 방법으로 두 개의 Google Chrome 브라우저 확장 기능이 참조됩니다. 다른 브라우저에도 유사한 확장을 사용할 수 있습니다.
 
 * [Launch Switch Chrome 확장 프로그램](https://chrome.google.com/webstore/detail/launch-and-dtm-switch/nlgdemkdapolikbjimjajpmonpbpmipk?hl=en)
-* [Adobe Experience Cloud 디버거](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj?hl=en)
+* [Adobe Experience Cloud 디버거](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
 다음 Chrome 확장을 사용하여 DTM을 디버그 모드로 전환할 수도 있습니다. [Launch 및 DTM 스위치](https://chrome.google.com/webstore/detail/launch-and-dtm-switch/nlgdemkdapolikbjimjajpmonpbpmipk?hl=en). 이렇게 하면 DTM 배포와 관련된 오류가 있는지 쉽게 확인할 수 있습니다. 또한 모든 브라우저를 통해 DTM을 디버그 모드로 수동으로 전환할 수 있습니다 *개발자 도구 -> JS 콘솔* 다음 코드 조각을 추가하여:
 

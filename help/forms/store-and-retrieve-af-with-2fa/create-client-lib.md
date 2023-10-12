@@ -1,6 +1,6 @@
 ---
 title: 클라이언트 라이브러리 만들기
-description: '"저장 및 종료" 단추의 클릭 이벤트를 처리할 clientlibrary 만들기'
+description: 클라이언트 라이브러리를 만들어 "저장 및 종료" 버튼의 클릭 이벤트를 처리합니다.
 feature: Adaptive Forms
 type: Tutorial
 version: 6.4,6.5
@@ -10,9 +10,9 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: c90eea73-bd44-40af-aa98-d766aa572415
-source-git-commit: 51e21c11df63d33a6900fbc331a756f2a7655bcb
+source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '148'
 ht-degree: 6%
 
 ---
@@ -67,9 +67,9 @@ $(document).ready(function () {
 ```
 
 >[!NOTE]
-> 다음을 사용했습니다. [bootbox javascript 라이브러리](http://bootboxjs.com/examples.html) 대화상자를 표시하려면
+> 다음을 사용했습니다. [bootbox JavaScript 라이브러리](https://bootboxjs.com/examples.html) 대화상자를 표시하려면
 
-이 샘플에 사용되는 클라이언트 라이브러리는 다음과 같을 수 있습니다. [여기에서 다운로드됨](assets/store-af-with-attachments-client-lib.zip)
+이 샘플에 사용되는 클라이언트 라이브러리는 다음과 같을 수 있습니다. [여기에서 다운로드했습니다.](assets/store-af-with-attachments-client-lib.zip)
 
 ## 다음 단계
 

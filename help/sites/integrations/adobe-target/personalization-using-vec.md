@@ -14,9 +14,9 @@ level: Intermediate
 badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: becf2bed-0541-45e8-9ce2-f9fb023234e0
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '522'
 ht-degree: 2%
 
 ---
@@ -40,7 +40,7 @@ WKND 사이트 홈 페이지에는 로컬 활동 또는 도시 주변에서 수�
 
 1. 다음으로 로그인 [Adobe Experience Cloud](https://experience.adobe.com/), 탭 __Target__&#x200B;로 이동한 다음 __활동__ 탭
 
-   + 표시되지 않는 경우 __Target__ Experience Cloud 대시보드의 오른쪽 상단에 있는 조직 전환기에서 올바른 Adobe 조직이 선택되어 있고 사용자에게에서 Target에 대한 액세스 권한이 부여되었는지 확인합니다. [Adobe Admin Console](https://adminconsole.adobe.com/).
+   + 표시되지 않는 경우 __Target__ Experience Cloud 대시보드의 오른쪽 상단에 있는 조직 전환기에서 올바른 Adobe 조직이 선택되어 있고 사용자에게 의 Target에 대한 액세스 권한이 부여되었는지 확인합니다. [Adobe Admin Console](https://adminconsole.adobe.com/).
 
 1. 클릭 **활동 만들기** 버튼을 누른 다음 선택 **A/B 테스트** 활동
 
@@ -50,7 +50,7 @@ WKND 사이트 홈 페이지에는 로컬 활동 또는 도시 주변에서 수�
 
    ![활동 URL](assets/ab-test-url.png)
 
-1. 새 활동을 만들면 시각적 경험 작성기 가 왼쪽에 두 개의 탭을 표시합니다. *경험 A* 및 *경험 B*. 목록에서 경험을 선택합니다. 다음을 사용하여 새 경험을 목록에 추가할 수 있습니다. **경험 추가** 단추를 클릭합니다.
+1. 시각적 경험 작성기는 활동을 만든 후 왼쪽에 두 개의 탭을 표시합니다. *경험 A* 및 *경험 B*. 목록에서 경험을 선택합니다. 를 사용하여 새 경험을 목록에 추가할 수 있습니다. **경험 추가** 단추를 클릭합니다.
 
    ![경험 A](assets/experience.png)
 
@@ -90,5 +90,5 @@ WKND 사이트 홈 페이지에는 로컬 활동 또는 도시 주변에서 수�
 
 ## 지원 링크
 
-+ [Adobe Experience Cloud 디버거 - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
++ [Adobe Experience Cloud 디버거 - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 + [Adobe Experience Cloud Debugger - Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)

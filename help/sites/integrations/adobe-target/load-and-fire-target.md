@@ -14,9 +14,9 @@ level: Intermediate
 badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: ec048414-2351-4e3d-b5f1-ade035c07897
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '613'
 ht-degree: 4%
 
 ---
@@ -29,7 +29,7 @@ Launch 규칙을 사용하여 매개 변수를 로드하고, 페이지 요청에
 
 ## 페이지 로드 규칙
 
-Adobe 클라이언트 데이터 레이어 는 이벤트 기반 데이터 레이어입니다. AEM Page 데이터 레이어가 로드되면 이벤트를 트리거합니다 `cmp:show` . 비디오에서 `Launch Library Loaded` 사용자 지정 이벤트를 사용하여 규칙이 호출됩니다. 아래에서는 데이터 요소뿐만 아니라 사용자 지정 이벤트에 대한 비디오에 사용되는 코드 조각을 찾을 수 있습니다.
+Adobe 클라이언트 데이터 레이어는 이벤트 기반 데이터 레이어입니다. AEM Page 데이터 레이어가 로드되면 이벤트를 트리거합니다 `cmp:show` . 비디오에서 `Launch Library Loaded` 사용자 지정 이벤트를 사용하여 규칙이 호출됩니다. 아래에서는 사용자 지정 이벤트 및 데이터 요소에 대한 비디오에 사용된 코드 조각을 찾을 수 있습니다.
 
 ### 사용자 지정 페이지 표시 이벤트{#page-event}
 
@@ -41,7 +41,7 @@ Launch 속성에 새 을(를) 추가합니다. **이벤트** (으)로 **규칙**
 + __이벤트 유형:__ 사용자 지정 코드
 + __이름:__ 페이지 표시 이벤트 핸들러(또는 설명적인 것)
 
-탭 __편집기 열기__ 단추를 클릭하여 다음 코드 조각에 붙여넣습니다. 이 코드 __필수__ 다음에 추가: __이벤트 구성__ 및 후속 작업 __작업__.
+탭 __편집기 열기__ 을 누르고 다음 코드 스니펫에 붙여넣습니다. 이 코드 __필수__ 다음에 추가: __이벤트 구성__ 및 후속 작업 __작업__.
 
 ```javascript
 // Define the event handler function
@@ -146,7 +146,7 @@ if (event && event.component && event.component.hasOwnProperty('dc:title')) {
 
 #### 솔루션
 
-Target 고객은 테스트나 간단한 개념 입증 용도로 Target과 함께 클라우드 기반 인스턴스를 사용하는 경우가 있습니다. 이러한 도메인 및 기타 많은 다른 도메인은 공용 접미사 목록 의 일부입니다.
+Target 고객은 테스트나 간단한 개념 입증 용도로 Target에 클라우드 기반 인스턴스를 사용하는 경우가 있습니다. 이러한 도메인 및 기타 많은 다른 도메인은 공용 접미사 목록 의 일부입니다.
 최신 브라우저에서는 다음을 사용자 지정하지 않는 한 이러한 도메인을 사용하는 경우 쿠키를 저장하지 않습니다. `cookieDomain` 을 사용하여 설정 `targetGlobalSettings()`.
 
 ```
@@ -162,7 +162,7 @@ window.targetGlobalSettings = {
 ## 지원 링크
 
 + [Adobe 클라이언트 데이터 레이어 설명서](https://github.com/adobe/adobe-client-data-layer/wiki)
-+ [Adobe Experience Cloud 디버거 - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
++ [Adobe Experience Cloud 디버거 - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 + [Adobe Experience Cloud Debugger - Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
 + [Adobe 클라이언트 데이터 레이어 및 핵심 구성 요소 설명서 사용](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)
-+ [Adobe Experience Platform Debugger 소개](https://experienceleague.adobe.com/docs/debugger-learn/tutorials/experience-platform-debugger/introduction-to-the-experience-platform-debugger.html)
++ [Adobe Experience Platform Debugger 소개](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)

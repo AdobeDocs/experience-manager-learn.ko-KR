@@ -1,6 +1,6 @@
 ---
 title: Adobe Analytics 태그 확장을 사용하여 AEM Sites과 Adobe Analytics 통합
-description: 이벤트 기반 Adobe 클라이언트 데이터 레이어를 사용하여 AEM Sites과 Adobe Analytics을 통합하여 Adobe Experience Manager으로 빌드된 웹 사이트에서 사용자 활동에 대한 데이터를 수집합니다. 태그 규칙을 사용하여 이러한 이벤트를 수신하고 데이터를 Adobe Analytics 보고서 세트로 보내는 방법을 알아봅니다.
+description: 이벤트 기반 Adobe 클라이언트 데이터 레이어를 사용하여 AEM Sites을 Adobe Analytics과 통합하여 Adobe Experience Manager으로 빌드된 웹 사이트에서 사용자 활동에 대한 데이터를 수집합니다. 태그 규칙을 사용하여 이러한 이벤트를 수신하고 데이터를 Adobe Analytics 보고서 세트로 보내는 방법을 알아봅니다.
 version: Cloud Service
 topic: Integrations
 feature: Adobe Client Data Layer
@@ -10,10 +10,10 @@ kt: 5332
 thumbnail: 5332-collect-data-analytics.jpg
 badgeIntegration: label="통합" type="positive"
 exl-id: 33f2fd25-8696-42fd-b496-dd21b88397b2
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
 workflow-type: tm+mt
-source-wordcount: '2470'
-ht-degree: 2%
+source-wordcount: '2468'
+ht-degree: 4%
 
 ---
 
@@ -53,9 +53,9 @@ ht-degree: 2%
 
 ## WKND 사이트용 태그 환경 전환
 
-다음 [WKND](http://wknd.site/us/en.html) 은(는) 을 기반으로 구축된 공개 사이트입니다. [오픈 소스 프로젝트](https://github.com/adobe/aem-guides-wknd) 참조로 디자인되고 [튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) AEM 구현의 경우
+다음 [WKND](https://wknd.site/us/en.html) 은(는) 을 기반으로 구축된 공개 사이트입니다. [오픈 소스 프로젝트](https://github.com/adobe/aem-guides-wknd) 참조로 디자인되고 [튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) AEM 구현의 경우
 
-AEM 환경을 설정하고 WKND 코드 베이스를 설치하는 대신 Experience Platform 디버거를 사용하여 **전환** 라이브 [WKND 사이트](http://wknd.site/us/en.html) 끝 *본인* 태그 속성입니다. 그러나 이미 AEM 사이트가 있는 경우 자체 사이트를 사용할 수 있습니다. [Adobe 클라이언트 데이터 레이어 활성화됨](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation).
+AEM 환경을 설정하고 WKND 코드 베이스를 설치하는 대신 Experience Platform 디버거를 사용하여 **전환** 라이브 [WKND 사이트](https://wknd.site/us/en.html) 끝 *본인* 태그 속성입니다. 그러나 이미 AEM 사이트가 있는 경우 자체 사이트를 사용할 수 있습니다. [Adobe 클라이언트 데이터 레이어 활성화됨](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation).
 
 1. Experience Platform 및 [태그 속성 만들기](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html) (아직 수행하지 않았다면).
 1. 초기 태그 JavaScript가 [라이브러리가 생성되었습니다.](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html#create-a-library) 및 가 태그로 승격됨 [환경](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=ko-KR).
@@ -63,7 +63,7 @@ AEM 환경을 설정하고 WKND 코드 베이스를 설치하는 대신 Experien
 
    ![태그 속성 포함 코드 복사](assets/collect-data-analytics/launch-environment-copy.png)
 
-1. 브라우저에서 새 탭을 열고 다음 위치로 이동합니다. [WKND 사이트](http://wknd.site/us/en.html)
+1. 브라우저에서 새 탭을 열고 다음 위치로 이동합니다. [WKND 사이트](https://wknd.site/us/en.html)
 1. Experience Platform 디버거 브라우저 확장 열기
 
    ![Experience Platform 디버거](assets/collect-data-analytics/experience-platform-debugger-extension.png)
@@ -80,8 +80,8 @@ AEM 환경을 설정하고 WKND 코드 베이스를 설치하는 대신 Experien
 
 다음 [WKND 참조 프로젝트](https://github.com/adobe/aem-guides-wknd) 은(는) AEM 핵심 구성 요소로 구축되었으며 [Adobe 클라이언트 데이터 레이어 활성화됨](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation) 기본적으로. 그런 다음 Adobe 클라이언트 데이터 레이어 가 활성화되어 있는지 확인합니다.
 
-1. 다음으로 이동 [WKND 사이트](http://wknd.site/us/en.html).
-1. 브라우저의 개발자 도구를 열고 로 이동합니다. **콘솔**. 다음 명령을 실행합니다.
+1. 다음으로 이동 [WKND 사이트](https://wknd.site/us/en.html).
+1. 브라우저의 개발자 도구를 열고 로 이동합니다. **콘솔**. 다음 명령을 실행합니다:
 
    ```js
    adobeDataLayer.getState();
@@ -115,7 +115,7 @@ AEM 환경을 설정하고 WKND 코드 베이스를 설치하는 대신 Experien
 
 ## Page Loaded 규칙 만들기
 
-Adobe 클라이언트 데이터 레이어는 **이벤트** 제어 데이터 계층. AEM Page 데이터 레이어가 로드되면 `cmp:show` 이벤트. 다음 경우에 트리거되는 규칙 만들기 `cmp:show` 이벤트가 페이지 데이터 레이어에서 실행됩니다.
+Adobe 클라이언트 데이터 레이어는 **이벤트 주도** 데이터 계층. AEM Page 데이터 레이어가 로드되면 `cmp:show` 이벤트. 다음 경우에 트리거되는 규칙 만들기 `cmp:show` 이벤트가 페이지 데이터 레이어에서 실행됩니다.
 
 1. Experience Platform 로 이동하고 AEM Site와 통합된 태그 속성으로 이동합니다.
 1. 다음 위치로 이동 **규칙** 섹션을 태그 속성 UI에서 **새 규칙 만들기**.
@@ -178,7 +178,7 @@ Adobe 클라이언트 데이터 레이어는 **이벤트** 제어 데이터 계�
    console.log("Page template: " + event.component['xdm:template']);
    ```
 
-   다음 `event` 에서 개체가 전달됩니다. `trigger()` 메서드가 사용자 지정 이벤트에서 호출되었습니다. 다음 `component` 는 데이터 레이어에서 파생된 현재 페이지입니다. `getState` 사용자 지정 이벤트.
+   다음 `event` 에서 개체가 전달됩니다. `trigger()` 메서드가 사용자 지정 이벤트에서 호출되었습니다. 여기, `component` 는 데이터 레이어에서 파생된 현재 페이지입니다. `getState` 사용자 지정 이벤트.
 
 1. 변경 사항을 저장하고 를 실행합니다. [빌드](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html) 를 입력하여 코드를 로 승격시킵니다. [환경](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=ko-KR) AEM 사이트에서 사용됩니다.
 
@@ -375,7 +375,7 @@ Adobe 클라이언트 데이터 레이어는 **이벤트** 제어 데이터 계�
    >
    > 콘솔 로그가 표시되지 않으면 다음을 확인하십시오 **콘솔 로깅** 이(가) 아래에 체크됨 **Experience Platform 태그** Experience Platform 디버거에서.
 
-1. 다음과 같은 문서 페이지로 이동 [웨스턴오스트레일리아](https://wknd.site/us/en/magazine/western-australia.html). 페이지 이름 및 템플릿 유형이 변경되었는지 확인합니다.
+1. 다음과 같은 문서 페이지로 이동 [웨스턴 오스트레일리아](https://wknd.site/us/en/magazine/western-australia.html). 페이지 이름 및 템플릿 유형이 변경되었는지 확인합니다.
 
 ## 축하합니다!
 
