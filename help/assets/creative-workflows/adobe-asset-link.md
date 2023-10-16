@@ -7,9 +7,10 @@ topic: Content Management
 role: User
 level: Beginner
 thumbnail: 28988.jpg
+jira: KT-8413, KT-3707
 last-substantial-update: 2022-06-25T00:00:00Z
 exl-id: 6c49f8c2-f468-4b29-b7b6-029c8ab39ce9
-source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
+source-git-commit: 8dfc538e93ea5dc114cf0a5d57dd82d924e476ff
 workflow-type: tm+mt
 source-wordcount: '1047'
 ht-degree: 2%
@@ -95,10 +96,10 @@ Adobe IMS(Identity Management Services) 및 Adobe Experience Manager 작성자�
 ![Adobe Asset Link 아키텍처](assets/adobe-asset-link-article-understand.png)
 
 1. Asset Link Adobe 확장은 Adobe Creative Cloud Desktop App을 통해 IMS(Adobe Identity Manage Service)에 대한 권한 부여를 요청하고, 성공 시 전달자 토큰을 받습니다.
-1. Adobe 에셋 링크 확장 기능은에서 가져온 전달자 토큰을 포함하여 HTTP(S)를 통해 AEM 작성자에 연결합니다. **1단계**&#x200B;스키마(HTTP/HTTPS), 확장의 설정 JSON에 제공된 호스트 및 포트를 사용합니다.
+1. Adobe Asset Link 확장 기능은에서 가져온 전달자 토큰을 포함하여 HTTP(S)를 통해 AEM Author에 연결합니다. **1단계**&#x200B;스키마(HTTP/HTTPS), 확장의 설정 JSON에 제공된 호스트 및 포트를 사용합니다.
 1. AEM Bearer Authentication Handler가 요청에서 전달자 토큰을 추출하여 Adobe IMS로 확인합니다.
 1. Adobe IMS에서 전달자 토큰의 유효성을 검사하면 사용자가 AEM에 만들어지고(아직 없는 경우) Adobe IMS의 프로필 및 그룹/멤버십 데이터를 동기화합니다. AEM 사용자에게는 표준 AEM 로그인 토큰이 발급되며, 이 토큰은 HTTP(S) 응답의 쿠키로 Adobe Asset Link 확장에 다시 전송됩니다.
-1. 후속 상호 작용(예: 에셋 검색, 검색, 체크인/체크아웃 등) asset Link Adobe 확장을 사용하면 AEM 작성자에 대한 HTTP(S) 요청이 표준 AEM 토큰 인증 핸들러를 사용하여 AEM 로그인 토큰을 사용하여 확인됩니다.
+1. 후속 상호 작용(예: 에셋 검색, 검색, 체크인/체크아웃 등) Adobe Asset Link 확장을 사용하면 AEM 작성자에 대한 HTTP(S) 요청이 표준 AEM 토큰 인증 핸들러를 사용하여 AEM 로그인 토큰을 사용하여 확인됩니다.
 
 >[!NOTE]
 >
