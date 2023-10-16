@@ -9,13 +9,13 @@ level: Beginner
 recommendations: noDisplay
 thumbnail: null
 last-substantial-update: 2023-06-02T00:00:00Z
-source-git-commit: 6b5c755bd8fe6bbf497895453b95eb236f69d5f6
+exl-id: 73f5d90d-e007-41a0-9bb3-b8f36a9b1547
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 0%
 
 ---
-
 
 # AEM UI 확장성
 
@@ -45,4 +45,4 @@ AEM 다양한 UI에는 서로 다른 확장 지점이 있지만 기본 개념은
 
 ## Adobe Developer 설명서
 
-Adobe Developer에는 AEM UI 확장성에 대한 개발자 세부 사항이 포함되어 있습니다. 다음을 검토하십시오. [자세한 기술 정보는 Adobe Developer 콘텐츠 를 참조하십시오](https://developer.adobe.com/uix/docs/).
+Adobe Developer에는 AEM UI 확장성에 대한 개발자 세부 사항이 포함되어 있습니다. 다음을 검토하십시오. [자세한 기술 정보는 Adobe Developer 콘텐츠 를 참조하십시오.](https://developer.adobe.com/uix/docs/).

@@ -1,6 +1,6 @@
 ---
 title: 콘텐츠 조각 콘솔의 사용자 지정 그리드 열
-description: 사용자 지정 표 형태 열을 콘텐츠 조각 콘솔에 추가하는 방법에 대해 알아봅니다.
+description: 사용자 지정 그리드 열을 콘텐츠 조각 콘솔에 추가하는 방법에 대해 알아봅니다.
 feature: Developer Tools, Content Fragments
 version: Cloud Service
 topic: Development
@@ -10,13 +10,13 @@ jira: KT-13453
 thumbnail: KT-13453.jpeg
 doc-type: article
 last-substantial-update: 2023-06-07T00:00:00Z
-source-git-commit: 6b5c755bd8fe6bbf497895453b95eb236f69d5f6
+exl-id: 87143cf9-e932-4ad6-afe2-cce093c520f4
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 0%
 
 ---
-
 
 # 사용자 정의 격자 열
 
@@ -202,13 +202,13 @@ render: async function (fragments) {
 }
 ```
 
-사용자 지정 열을 채우는 데 다른 데이터가 필요한 경우 AEM 작성자에게 HTTP 요청을 하여 데이터를 검색할 수 있습니다.
+사용자 지정 열을 채우는 데 다른 데이터가 필요한 경우 AEM 작성자에게 데이터를 검색하도록 HTTP 요청을 할 수 있습니다.
 
 >[!IMPORTANT]
 >
-> AEM 작성자 인스턴스가 다음을 허용하도록 구성되어 있는지 확인합니다. [원본 간 요청](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html) AppBuilder 앱이 실행되고 있는 출처. 허용되는 원본에는 다음이 포함됩니다. `https://localhost:9080`, AppBuilder 스테이지 원본 및 AppBuilder 프로덕션 원본.
+> AEM 작성자 인스턴스가 을 허용하도록 구성되었는지 확인합니다. [원본 간 요청](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html) AppBuilder 앱이 실행되고 있는 출처. 허용되는 원본에는 다음이 포함됩니다. `https://localhost:9080`, AppBuilder 스테이지 원본 및 AppBuilder 프로덕션 원본.
 >
-> 또는 확장 프로그램에서 사용자 지정을 호출할 수 있습니다 [AppBuilder 작업](../../runtime-action.md) 그러면 확장을 대신하여 AEM 작성자에 요청합니다.
+> 또는 확장 프로그램에서 사용자 지정을 호출할 수 있습니다 [AppBuilder 작업](../../runtime-action.md) 그러면 확장을 대신하여 AEM Author에 요청합니다.
 
 
 ```javascript

@@ -8,7 +8,8 @@ topic: Development
 role: Developer
 level: Intermediate
 last-substantial-update: 2023-07-14T00:00:00Z
-source-git-commit: cc24ebca488ea286e8a4605edfb39420c1c10022
+exl-id: 62b73f4b-69d8-4ede-9d57-3d6472d25d5a
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 0%
@@ -76,4 +77,3 @@ AEM Forms에서 SendGrid 동적 템플릿을 사용하여 이메일 전송을 �
 다음을 확인합니다. `template_id` 는 SendGrid 다이내믹 이메일 템플릿의 ID에 해당하며, 이메일 주소는 SendGrid에서 유효하고 확인됩니다. 의 값 `personalizations` 섹션에서는 적응형 양식에서 사용자가 입력한 데이터를 사용하여 이메일을 개인화할 수 있습니다.
 
 이러한 단계를 수행하고 제공된 페이로드를 맞춤화하면 AEM Forms과 SendGrid 동적 템플릿의 통합을 효과적으로 테스트할 수 있습니다.
-

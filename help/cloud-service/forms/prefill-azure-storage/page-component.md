@@ -8,13 +8,13 @@ level: Beginner
 version: Cloud Service
 topic: Integrations
 kt: 13717
-source-git-commit: 52c8d96a03b4d6e4f2a0a3c92f4307203e236417
+exl-id: 7469aa7f-1794-40dd-990c-af5d45e85223
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 10%
 
 ---
-
 
 # 페이지 구성 요소
 
@@ -77,11 +77,10 @@ storeandfetch 노드 아래에 azureportal.jsp라는 파일을 생성하고 다�
 %>
 ```
 
-이 코드에서는 요청 매개 변수의 값을 가져옵니다 **guid** 및 를 BlobId라는 변수에 저장합니다. 그런 다음 이 BlobId가 paramMap 특성을 사용하여 sling 요청으로 전달됩니다. 이 코드가 작동하려면 Azure Storage 지원 양식 데이터 모델을 기반으로 하는 양식이 있고 양식 데이터 모델의 읽기 서비스가 아래 스크린샷에 표시된 대로 BlobId라는 요청 특성에 바인딩되어 있다고 가정합니다.
+이 코드에서는 요청 매개 변수의 값을 가져옵니다 **guid** 및 를 BlobId라는 변수에 저장합니다. 그런 다음 이 BlobId가 paramMap 특성을 사용하여 sling 요청으로 전달됩니다. 이 코드가 작동하려면 Azure Storage 지원 양식 데이터 모델을 기반으로 하는 양식이 있고 양식 데이터 모델의 읽기 서비스가 아래 스크린샷에 표시된 대로 BlobId라는 요청 속성에 바인딩되어 있다고 가정합니다.
 
 ![fdm-request-attribute](./assets/fdm-request-attribute.png)
 
 ### 다음 단계
 
 [페이지 구성 요소를 템플릿과 연결](./associate-page-component.md)
-

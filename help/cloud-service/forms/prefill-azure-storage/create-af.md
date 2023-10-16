@@ -8,7 +8,8 @@ level: Beginner
 version: Cloud Service
 topic: Integrations
 thumbnail: 335423.jpg
-source-git-commit: 52c8d96a03b4d6e4f2a0a3c92f4307203e236417
+exl-id: 0b543c6b-9cfd-4fac-b8d0-33153c036f4b
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 2%
@@ -26,7 +27,7 @@ ht-degree: 2%
 양식에서 2개의 숨겨진 필드를 추가했습니다
 
 * Blob ID - 이 필드는 필드가 초기화될 때 GUID로 채워집니다. 이 필드의 값은 양식 데이터의 Blob 저장소를 고유하게 식별하는 블롭으로 사용됩니다. 이 블롭은 양식 데이터를 식별하는 데 사용됩니다.
-* Blob ID가 반환됨 - 이 필드는 Azure Storage에 데이터를 저장하기 위한 서비스 호출 결과로 채워집니다. 이 값은 이전 단계의 Blob ID와 동일합니다.
+* Blob ID 반환됨 - 이 필드는 Azure Storage에 데이터를 저장하기 위한 서비스 호출 결과로 채워집니다. 이 값은 이전 단계의 Blob ID와 동일합니다.
 
 양식에는 다음과 같은 비즈니스 규칙이 있습니다
 
@@ -37,4 +38,3 @@ ht-degree: 2%
 ### 다음 단계
 
 [샘플 자산 배포](./deploy-sample-assets.md)
-

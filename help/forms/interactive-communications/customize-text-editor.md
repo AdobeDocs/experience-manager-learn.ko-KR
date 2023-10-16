@@ -12,11 +12,11 @@ level: Beginner
 feature: Interactive Communication
 last-substantial-update: 2023-04-19T00:00:00Z
 kt: 13126
-exl-id: f12ab119-ac8e-4cc8-af86-cbffa30e72c5
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+exl-id: e551ac8d-0bfc-4c94-b773-02ff9bba202e
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '603'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -63,7 +63,7 @@ tbxeditor-config.xml 파일을 편집하여 글꼴을 사용자 정의하려면 
 
    1. **확인**&#x200B;을 클릭합니다. 폴더 구조는 앱 폴더에 생성됩니다.
 
-   1. 클릭 **모두 저장**.
+   1. **모두 저장**&#x200B;을 클릭합니다.
 
 1. 새로 생성된 구성 폴더에 다음 단계를 사용하여 tbxeditor-config.xml 파일의 복사본을 만듭니다.
 
@@ -174,8 +174,7 @@ tbxeditor-config.xml 파일을 편집하여 글꼴을 사용자 정의하려면 
 
       텍스트의 다양한 측면에 대한 기본값을 변경하고 항목을 제거하여 텍스트 편집기에서 글꼴을 제거할 수도 있습니다.
 
-   1. 클릭 **모두 저장**.
-
+   1. **모두 저장**&#x200B;을 클릭합니다.
 
 ## 클라이언트 컴퓨터에 사용자 정의 글꼴 추가 {#addcustomfonts}
 

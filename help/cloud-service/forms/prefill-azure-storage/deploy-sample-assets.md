@@ -8,7 +8,8 @@ level: Beginner
 version: Cloud Service
 topic: Integrations
 kt: 13717
-source-git-commit: 52c8d96a03b4d6e4f2a0a3c92f4307203e236417
+exl-id: ae8104fa-7af2-49c2-9e6b-704152d49149
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 0%
@@ -30,5 +31,3 @@ ht-degree: 0%
 * [샘플 적응형 양식 가져오기](./assets/credit-applications-af.zip)
 * [클라이언트 라이브러리 가져오기](./assets/client-lib.zip)
 * [양식 미리 보기](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/creditapplications/jcr:content?wcmmode=disabled). 유효한 이메일을 입력하고 저장 버튼을 클릭합니다. 양식 데이터는 Azure Storage에 저장되어야 하며 저장된 양식에 대한 링크가 포함된 이메일이 지정된 이메일 주소로 전송됩니다.
-
-

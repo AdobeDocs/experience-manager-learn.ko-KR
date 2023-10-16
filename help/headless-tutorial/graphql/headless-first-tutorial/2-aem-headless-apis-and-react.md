@@ -10,17 +10,17 @@ doc-type: Tutorial
 last-substantial-update: 2023-05-16T00:00:00Z
 jira: KT-13270
 thumbnail: KT-13270.jpeg
-source-git-commit: 12b3888552d5a131628dabf380840f0586798ea5
+exl-id: 2b726473-5a32-4046-bce8-6da3c57a1b60
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '869'
 ht-degree: 0%
 
 ---
 
-
 # AEM Headless API 및 반응
 
-AEM Headless SDK를 사용하여 Adobe Experience Manager(AEM) Headless API와 연결하기 위한 React 앱 구성을 살펴보는 이 튜토리얼 장을 시작합니다. AEM GraphQL API에서 콘텐츠 조각 데이터를 검색하고 React 앱에 표시하는 방법을 다룹니다.
+AEM Headless SDK를 사용하여 Adobe Experience Manager(AEM) Headless API와 연결하기 위한 React 앱 구성을 살펴보는 이 튜토리얼 장을 시작합니다. AEM GraphQL API에서 컨텐츠 조각 데이터를 검색하고 React 앱에 표시하는 방법을 다룹니다.
 
 AEM Headless API를 사용하면 모든 클라이언트 앱에서 AEM 콘텐츠에 액세스할 수 있습니다. AEM Headless SDK를 사용하여 AEM Headless API에 연결하도록 React 앱을 구성하는 과정을 안내합니다. 이 설정은 React 앱과 AEM 간에 재사용 가능한 통신 채널을 설정합니다.
 

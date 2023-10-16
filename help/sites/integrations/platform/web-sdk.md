@@ -12,8 +12,8 @@ jira: KT-13156
 thumbnail: KT-13156.jpeg
 badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service" before-title="false"
-exl-id: b5182d35-ec38-4ffd-ae5a-ade2dd3f856d
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+exl-id: 47df99e6-6418-43c8-96fe-85e3c47034d6
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '1354'
 ht-degree: 4%
@@ -22,7 +22,7 @@ ht-degree: 4%
 
 # AEM Sites 및 Experience Platform 웹 SDK 통합
 
-AEMas a Cloud Service 을 Experience Platform과 통합하는 방법에 대해 알아봅니다. [웹 SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html). 이 기본 단계는 Adobe Analytics, Target과 같은 Adobe Experience Cloud 제품이나 Real-time Customer Data Platform, Customer Journey Analytics 및 Journey Optimizer과 같은 최신 혁신 제품을 통합하는 데 필수적입니다.
+AEMas a Cloud Service 을 Experience Platform과 통합하는 방법에 대해 알아봅니다 [웹 SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html). 이 기본 단계는 Adobe Analytics, Target과 같은 Adobe Experience Cloud 제품이나 Real-time Customer Data Platform, Customer Journey Analytics 및 Journey Optimizer과 같은 최신 혁신 제품을 통합하는 데 필수적입니다.
 
 또한 수집 및 전송 방법을 배웁니다. [WKND - 샘플 Adobe Experience Manager 프로젝트](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) 에서 페이지 보기 데이터 [Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html).
 
@@ -206,7 +206,7 @@ Web SDK를 사용하여 수집된 페이지 보기 데이터는 Experience Platf
 
 ## 요약
 
-좋습니다! 웹 사이트에서 데이터를 수집하고 수집하기 위해 Experience Platform Web SDK로 AEM 설정을 완료했습니다. 이러한 토대를 통해 이제 Analytics, Target, Customer Journey Analytics(CJA) 및 기타 많은 제품과 같은 제품을 개선하고 통합하여 고객을 위한 풍부하고 개인화된 경험을 만들 수 있는 추가 가능성을 살펴볼 수 있습니다. Adobe Experience Cloud의 잠재력을 최대한 발휘할 수 있도록 계속해서 학습하고 탐색하십시오.
+좋습니다! 웹 사이트에서 데이터를 수집하고 수집하기 위해 Experience Platform Web SDK로 AEM 설정을 완료했습니다. 이러한 기반을 통해 이제 Analytics, Target, CJA(Customer Journey Analytics) 등과 같은 제품을 개선하고 통합하여 고객을 위한 풍부하고 개인화된 경험을 만들 수 있는 추가 가능성을 살펴볼 수 있습니다. Adobe Experience Cloud의 잠재력을 최대한 발휘할 수 있도록 계속해서 학습하고 탐색하십시오.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418900?quality=12&learn=on)
 

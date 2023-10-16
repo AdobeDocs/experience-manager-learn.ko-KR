@@ -10,13 +10,13 @@ jira: KT-13466
 thumbnail: KT-13466.jpg
 doc-type: article
 last-substantial-update: 2023-06-12T00:00:00Z
-source-git-commit: 6a82bbb2bbfc95e3292735ac8490eecd5e7ddb84
+exl-id: 83acbddb-9168-4d8b-84b5-97577d8a1ead
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '781'
 ht-degree: 0%
 
 ---
-
 
 # 리치 텍스트 편집기(RTE)에 배지 추가
 
@@ -138,7 +138,7 @@ function ExtensionRegistration() {
 
 React 구성 요소 코드는 고객 서비스 세부 사항을 추가할 때 전화 번호 변수를 `#` 과 같은 배지로 변환하기 위해 배지 문자를 등록했습니다. `#${phoneNumber}#`따라서 편집할 수 없습니다.
 
-다음은 의 주요 기능입니다. `LargeBookingsCustomerService` 코드:
+주요 기능은 다음과 같습니다. `LargeBookingsCustomerService` 코드:
 
 + UI는 다음과 같은 React Spectrum 구성 요소를 사용하여 렌더링됩니다. [콤보 상자](https://react-spectrum.adobe.com/react-spectrum/ComboBox.html), [단추 그룹](https://react-spectrum.adobe.com/react-spectrum/ButtonGroup.html), [단추](https://react-spectrum.adobe.com/react-spectrum/Button.html)
 + 다음 `largeGroupCustomerServiceList` 배열에 대표 이름과 전화 번호의 매핑이 하드코딩되어 있습니다. 실제 시나리오에서는 Adobe AppBuilder 작업 또는 외부 시스템이나 자체 개발 또는 클라우드 공급자 기반 API 게이트웨이에서 이 데이터를 검색할 수 있습니다.

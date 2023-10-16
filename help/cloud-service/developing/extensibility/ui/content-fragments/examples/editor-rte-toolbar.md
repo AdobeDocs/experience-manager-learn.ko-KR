@@ -10,8 +10,8 @@ jira: KT-13464
 thumbnail: KT-13464.jpg
 doc-type: article
 last-substantial-update: 2023-06-12T00:00:00Z
-exl-id: 2b72c282-bce8-4f2a-bce6-f2f31e96ec88
-source-git-commit: 6a82bbb2bbfc95e3292735ac8490eecd5e7ddb84
+exl-id: 6fd93d3b-6d56-43c5-86e6-2e2685deecc9
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 0%
@@ -40,7 +40,7 @@ AEM 콘텐츠 조각 편집기의 리치 텍스트 편집기(RTE) 도구 모음�
 
 ## 확장 예
 
-다음 예제에서는 _팁 추가_ rte 도구 모음의 사용자 지정 단추. 클릭 동작으로 RTE의 현재 캐럿 위치에 자리 표시자 텍스트가 삽입됩니다.
+다음 예제에서는 _팁 추가_ rte 도구 모음의 사용자 지정 단추. 클릭 작업은 RTE의 현재 캐럿 위치에 자리 표시자 텍스트를 삽입합니다.
 
 이 코드는 아이콘으로 사용자 지정 단추를 추가하고 클릭 처리기 함수를 등록하는 방법을 보여 줍니다.
 
