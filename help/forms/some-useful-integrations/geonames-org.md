@@ -9,9 +9,9 @@ role: Developer
 level: Intermediate
 exl-id: f1f2cacc-9ec4-46d6-a6af-dac3f663de78
 last-substantial-update: 2021-02-07T00:00:00Z
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 5fc4a11b7f7f26a62f49cc8614e6bf699cc1697a
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '636'
 ht-degree: 0%
 
 ---
@@ -47,14 +47,11 @@ OpenAPI 사양(이전 Swagger 사양)은 REST API에 대한 API 설명 포맷입
 >[!NOTE]
 > AEM Forms은 OpenAPI Specification 버전 2.0(FKA Swagger)을 지원합니다.
 
-사용 [swagger 편집기](https://editor.swagger.io/) 국가 또는 주의 모든 국가 및 하위 요소를 가져오는 작업을 설명하는 swagger 파일을 만듭니다. Swagger 파일은 JSON 또는 YAML 형식으로 만들 수 있습니다. 완료된 Swagger 파일은에서 다운로드할 수 있습니다. [여기](assets/swagger-files.zip)
-Swagger 파일은 다음 REST API를 설명합니다
-* [모든 국가 가져오기](http://api.geonames.org/countryInfoJSON?username=yourusername)
-* [Geoname 개체의 하위 항목 가져오기](http://api.geonames.org/childrenJSON?formatted=true&amp;geonameId=6252001&amp;username=yourusername)
+사용 [swagger 편집기](https://editor.swagger.io/) 국가 또는 주의 모든 국가 및 하위 요소를 가져오는 작업을 설명하는 swagger 파일을 만듭니다. Swagger 파일은 JSON 또는 YAML 형식으로 만들 수 있습니다.
 
 ## 데이터 소스 만들기
 
-AEM/AEM Forms을 타사 애플리케이션과 통합하려면 [데이터 소스 만들기](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) 클라우드 서비스 구성에서 사용할 수 있습니다. 다음을 사용하십시오. [swagger 파일](assets/swagger-files.zip) 을 클릭하여 데이터 소스를 만듭니다.
+AEM/AEM Forms을 타사 애플리케이션과 통합하려면 [데이터 소스 만들기](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) 클라우드 서비스 구성에서 사용할 수 있습니다. 다음을 사용하십시오. [swagger 파일](assets/geonames-swagger-files.zip) 을 클릭하여 데이터 소스를 만듭니다.
 2개의 데이터 소스(하나는 모든 국가를 가져오고 다른 하나는 하위 요소를 가져오기 위해)를 만들어야 합니다
 
 
@@ -84,3 +81,13 @@ AEM Forms 데이터 통합은 를 만들고 작업할 수 있는 직관적인 �
 
 선택한 국가 및 시/도를 기반으로 군과 시를 나열하는 양식에 군 및 시라는 2개의 드롭다운 목록을 추가합니다.
 ![운동](assets/cascading-drop-down-exercise.png)
+
+
+### 샘플 자산
+
+다음 에셋을 다운로드하여 계단식 드롭다운 목록 만들기 를 시작할 수 있습니다. 샘플 완료된 Swagger 파일은에서 다운로드할 수 있습니다. [여기](assets/geonames-swagger-files.zip)
+Swagger 파일은 다음 REST API를 설명합니다
+* [모든 국가 가져오기](http://api.geonames.org/countryInfoJSON?username=yourusername)
+* [Geoname 개체의 하위 항목 가져오기](http://api.geonames.org/children?formatted=true&amp;geonameId=6252001&amp;username=yourusername)
+
+완료됨 [양식 데이터 모델은 여기에서 다운로드할 수 있습니다.](assets/geonames-api-form-data-model.zip)
