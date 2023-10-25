@@ -22,7 +22,7 @@ ht-degree: 90%
 >id="aemcloud_adobeims_aem_users_groups"
 >title="AEM 사용자, 그룹 및 권한"
 >abstract="Adobe Experience Manager는 Adobe IMS 사용자, 사용자 그룹 및 제품 프로필을 기반으로 AEM에 사용자 정의 가능한 액세스를 제공합니다. AEM 그룹 및 권한을 정의하는 방법과 Adobe IMS 추상화와 연동하여 AEM에 매끄럽고 사용자 정의 가능한 액세스를 제공하는 방법을 알아봅니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=ko" text="Adobe Experience Manager as a Cloud Service에 대한 IMS 지원"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en" text="Adobe Experience Manager as a Cloud Service에 대한 IMS 지원"
 >additional-url="https://helpx.adobe.com/kr/enterprise/admin-guide.html/enterprise/using/identity.ug.html" text="AEM에서 제공하는 사용자 그룹 및 권한"
 
 Adobe Experience Manager는 Adobe IMS 사용자, 사용자 그룹 및 제품 프로필을 기반으로 AEM에 사용자 정의 가능한 액세스를 제공합니다. AEM 그룹 및 권한을 정의하는 방법과 Adobe IMS 추상화와 연동하여 AEM에 매끄럽고 사용자 정의 가능한 액세스를 제공하는 방법을 알아봅니다.

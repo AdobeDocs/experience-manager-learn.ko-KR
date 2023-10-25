@@ -24,7 +24,7 @@ ht-degree: 14%
 >id="aemcloud_localdev_overview"
 >title="개요"
 >abstract="AEM as a Cloud Service에 대한 로컬 개발 환경 설정에는 AEM 프로젝트 개발, 빌드 및 컴파일에 필요한 개발 도구와 개발자가 프로젝트를 AEM as a Cloud Service에 배포하기 전에 Adobe Cloud Manager를 통해 로컬에서 새 기능의 유효성을 신속하게 검사할 수 있는 로컬 런타임이 포함됩니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html" text="개발 지침"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=ko-KR" text="개발 지침"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/basics/aem-sdk.html" text="개발 기본 사항"
 
 이 튜토리얼에서는 AEM as a Cloud Service SDK를 사용하여 AEM(Adobe Experience Manager)용 로컬 개발 환경을 설정하는 과정을 안내합니다. AEM Cloud Manager를 통해 AEM에 배포하기 전에 개발자가 로컬에서 새로운 기능을 빠르게 확인할 수 있도록 하는 로컬 실행 시간뿐만 아니라 as a Cloud Service Adobe 프로젝트를 개발, 빌드 및 컴파일하는 데 필요한 개발 도구도 포함되어 있습니다.
@@ -36,7 +36,7 @@ ht-degree: 14%
 AEM용 로컬 개발 환경은 다음 세 가지 논리 그룹으로 나눌 수 있습니다.
 
 + 다음 __AEM 프로젝트__ 에는 사용자 지정 AEM 애플리케이션인 사용자 지정 코드, 구성 및 콘텐츠가 포함되어 있습니다.
-+ 다음 __로컬 AEM 런타임__ 로컬 버전의 AEM Author 및 Publish 서비스를 로컬에서 실행하는 경우
++ 다음 __로컬 AEM 런타임__ 로컬에서 AEM Author 및 Publish 서비스의 로컬 버전을 실행하는 경우입니다.
 + 다음 __로컬 Dispatcher 런타임__ : Apache HTTP 웹 서버 및 Dispatcher의 로컬 버전을 실행합니다.
 
 이 튜토리얼에서는 위의 다이어그램에서 강조 표시된 항목을 설치하고 설정하는 방법을 안내하여 AEM 개발에 안정적인 로컬 개발 환경을 제공합니다.
@@ -46,8 +46,8 @@ AEM용 로컬 개발 환경은 다음 세 가지 논리 그룹으로 나눌 수 
 이 자습서에서는 다음과 같이 AEM as a Cloud Service SDK 아티팩트 및 AEM 프로젝트 코드의 위치를 설정했습니다.
 
 + `~/aem-sdk` 는 AEM as a Cloud Service SDK에서 제공하는 다양한 도구가 포함된 조직 폴더입니다
-+ `~/aem-sdk/author` aem 작성자 서비스 포함
-+ `~/aem-sdk/publish` aem 게시 서비스 포함
++ `~/aem-sdk/author` AEM Author 서비스 포함
++ `~/aem-sdk/publish` AEM Publish 서비스 포함
 + `~/aem-sdk/dispatcher` dispatcher 도구 포함
 + `~/code/<project name>` 사용자 지정 AEM 프로젝트 소스 코드를 포함합니다.
 
@@ -68,7 +68,7 @@ AEM AEM 프로젝트는 Cloud Manager를 통해 as a Cloud Service으로 배포�
 
 ## 로컬 AEM 런타임
 
-AEM as a Cloud Service SDK는 [!DNL QuickStart Jar] 로컬 버전의 AEM을 실행합니다. 다음 [!DNL QuickStart Jar] 는 AEM 작성자 서비스 또는 AEM 게시 서비스를 로컬에서 실행하는 데 사용할 수 있습니다. 이 있는 동안 [!DNL QuickStart Jar] 는 로컬 개발 환경을 제공하며 AEM as a Cloud Service에서 사용할 수 있는 모든 기능이 [!DNL QuickStart Jar].
+AEM as a Cloud Service SDK는 [!DNL QuickStart Jar] 로컬 버전의 AEM을 실행합니다. 다음 [!DNL QuickStart Jar] 는 AEM Author 서비스 또는 AEM Publish 서비스를 로컬로 실행하는 데 사용할 수 있습니다. 이 있는 동안 [!DNL QuickStart Jar] 는 로컬 개발 환경을 제공하며 AEM as a Cloud Service에서 사용할 수 있는 모든 기능이 [!DNL QuickStart Jar].
 
 자습서의 이 섹션에서는 다음 방법을 보여줍니다.
 

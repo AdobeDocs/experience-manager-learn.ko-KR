@@ -19,7 +19,7 @@ ht-degree: 6%
 
 # AEM Headless로 최적화된 이미지 {#images-with-aem-headless}
 
-이미지는 의 중요한 측면입니다. [풍부하고 매력적인 AEM Headless 경험 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=ko-KR). AEM Headless는 이미지 에셋 관리 및 최적화된 전달을 지원합니다.
+이미지는 의 중요한 측면입니다. [풍부하고 매력적인 AEM Headless 경험 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html). AEM Headless는 이미지 에셋 관리 및 최적화된 전달을 지원합니다.
 
 AEM Headless 콘텐츠 모델링에 사용된 콘텐츠 조각은 종종 Headless 경험에 표시되기 위한 이미지 에셋을 참조합니다. AEM GraphQL 쿼리를 작성하여 이미지를 참조하는 위치에 따라 이미지에 URL을 제공할 수 있습니다.
 
@@ -27,15 +27,15 @@ AEM Headless 콘텐츠 모델링에 사용된 콘텐츠 조각은 종종 Headles
 
 + `_path` 는 AEM에서 참조된 경로이며 AEM 원본(호스트 이름)을 포함하지 않습니다
 + `_dynamicUrl` 는 웹에 최적화된 기본 이미지 에셋의 전체 URL입니다.
-   + 다음 `_dynamicUrl` 은 AEM Origin을 포함하지 않으므로 도메인(AEM 작성자 또는 AEM Publish 서비스)은 클라이언트 애플리케이션에서 제공해야 합니다.
-+ `_authorUrl` 는 AEM 작성자의 이미지 에셋에 대한 전체 URL입니다
+   + 다음 `_dynamicUrl` 은 AEM Origin을 포함하지 않으므로 도메인(AEM Author 또는 AEM Publish 서비스)은 클라이언트 애플리케이션에서 제공해야 합니다.
++ `_authorUrl` 는 AEM Author의 이미지 에셋에 대한 전체 URL입니다
    + [AEM 작성자](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html) 는 headless 애플리케이션의 미리보기 경험을 제공하는 데 사용할 수 있습니다.
-+ `_publishUrl` 는 AEM 게시의 이미지 에셋에 대한 전체 URL입니다
++ `_publishUrl` 는 AEM Publish의 이미지 에셋에 대한 전체 URL입니다.
    + [AEM 게시](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html) 는 일반적으로 headless 애플리케이션의 프로덕션 배포에서 의 이미지를 표시하는 위치입니다.
 
 다음 `_dynamicUrl` 는 이미지 에셋에 사용할 기본 URL이며 을 사용해야 합니다. `_path`, `_authorUrl`, 및 `_publishUrl` 가능한 한.
 
-|  | AEM as a Cloud Service | AEM AS A CLOUD SERVICE DE | AEM SDK | AEM 6.5 |
+|                                | AEM as a Cloud Service | AEM AS A CLOUD SERVICE DE | AEM SDK | AEM 6.5 |
 | ------------------------------ |:----------------------:|:--------------------------:|:-------:|:-------:|
 | 웹에 최적화된 이미지를 지원합니까? | ✔ | ✔ | ✘ | ✘ |
 
@@ -129,7 +129,7 @@ query($path: String!, $imageFormat: AssetTransformFormat=JPG, $imageSeoName: Str
 
 참조된 이미지의 웹에 최적화된 이미지를 응용 프로그램에서 로드하려면 `_dynamicUrl` / `primaryImage` 를 이미지의 소스 URL로 사용하십시오.
 
-React에서 AEM 게시에서 웹에 최적화된 이미지를 표시하는 모습은 다음과 같습니다.
+React에서 AEM Publish에서 웹에 최적화된 이미지를 표시하는 모습은 다음과 같습니다.
 
 ```jsx
 const AEM_HOST = "https://publish-p123-e456.adobeaemcloud.com";
@@ -186,13 +186,13 @@ document.body.innerHTML=`<picture>
 
 ### 그림 요소
 
-[그림 요소](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-picture) 은 여러 와 함께 사용됩니다. `source` 요소는 다양한 화면 크기에 다양한 이미지 에셋을 제공합니다. 그림 요소는 다양한 화면 크기에 대해 다양한 이미지 렌디션을 제공할 때 유용합니다.
+[그림 요소](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-picture) 은 여러 와 함께 사용됩니다. `source` 요소를 사용하여 다양한 화면 크기에 다양한 이미지 에셋을 제공할 수 있습니다. 그림 요소는 다양한 화면 크기에 대해 다양한 이미지 렌디션을 제공할 때 유용합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418555/?quality=12&learn=on)
 
 ### 예제 코드
 
-이 간단한 React 앱은 [AEM Headless SDK](./aem-headless-sdk.md) AEM Headless API에 어드벤처 콘텐츠를 쿼리하고 다음을 사용하여 웹에 최적화된 이미지를 표시합니다. [srcset가 있는 img 요소](#img-element-with-srcset) 및 [그림 요소](#picture-element). 다음 `srcset` 및 `sources` 사용자 지정 사용 `setParams` 웹에 최적화된 게재 쿼리 매개 변수를 추가하는 함수 `_dynamicUrl` 따라서 웹 클라이언트의 요구 사항에 따라 전달되는 이미지 렌디션을 변경합니다.
+이 간단한 React 앱은 [AEM Headless SDK](./aem-headless-sdk.md) AEM Headless API에 어드벤처 콘텐츠를 쿼리하고 다음을 사용하여 웹에 최적화된 이미지를 표시합니다. [srcset가 있는 img 요소](#img-element-with-srcset) 및 [그림 요소](#picture-element). 다음 `srcset` 및 `sources` 사용자 지정 사용 `setParams` 웹에 최적화된 배달 쿼리 매개 변수를 추가하는 함수 `_dynamicUrl` 따라서 웹 클라이언트의 요구 사항에 따라 전달되는 이미지 렌디션을 변경합니다.
 
 AEM에 대한 쿼리는 사용자 지정 React 후크에서 수행됩니다 [AEM Headless SDK를 사용하는 useAdventureByPath](./aem-headless-sdk.md#graphql-persisted-queries).
 

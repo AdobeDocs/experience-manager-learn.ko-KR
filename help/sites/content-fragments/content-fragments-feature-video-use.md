@@ -57,7 +57,7 @@ AEM 구성은 AEM Assets 폴더 계층에 적용되어 해당 콘텐츠 조각 �
 
 >[!VIDEO](https://video.tv.adobe.com/v/22450?quality=12&learn=on)
 
-AEM 콘텐츠 조각은 AEM 작성자에서 변형, 요소 및 메타데이터가 포함된 Zip 파일로 다운로드할 수 있습니다.
+AEM 컨텐츠 조각은 AEM 작성자에서 변형, 요소 및 메타데이터가 포함된 Zip 파일로 다운로드할 수 있습니다.
 
 *예제 컨텐츠 조각 다운로드 Zip 파일:*\
 **[daniel_schreder.zip](assets/daniel_schreder.zip)**
@@ -77,7 +77,7 @@ AEM 콘텐츠 조각은 AEM 작성자에서 변형, 요소 및 메타데이터�
 ## 추가 리소스 {#additional-resources}
 
 * [컨텐츠 조각 전달](content-fragments-delivery-feature-video-use.md)
-* [AEM WCM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)
+* [AEM WCM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [AEM WCM 핵심 콘텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
 
 비디오 시리즈에서 최종 상태에 대해 AEM 6.4+ 인스턴스에서 아래 패키지를 다운로드하여 설치하려면 다음을 수행하십시오.

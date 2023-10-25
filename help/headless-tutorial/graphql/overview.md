@@ -52,7 +52,7 @@ AEM GraphQL API를 통해 콘텐츠 조각을 사용하는 React 앱을 빌드�
 
 ## AEM GraphQL과 AEM Content Services 비교
 
-|  | AEM GRAPHQL API | AEM Content Services |
+|                                | AEM GRAPHQL API | AEM Content Services |
 |--------------------------------|:-----------------|:---------------------|
 | 스키마 정의 | 구조화된 컨텐츠 조각 모델 | AEM 구성 요소 |
 | 콘텐츠 | 콘텐츠 조각 | AEM 구성 요소 |
