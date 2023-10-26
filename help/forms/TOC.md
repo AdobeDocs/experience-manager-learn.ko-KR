@@ -8,9 +8,9 @@ breadcrumb-title: AEM Forms 튜토리얼
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: bac637440d1cc5af0e0abb119ca2f4e93f69cf34
+source-git-commit: 5e761ef180182b47c4fd2822b0ad98484db23aab
 workflow-type: tm+mt
-source-wordcount: '1851'
+source-wordcount: '1874'
 ht-degree: 2%
 
 ---
@@ -48,6 +48,7 @@ ht-degree: 2%
    + [ServiceNow와 통합](some-useful-integrations/service-now.md)
    + [SendGrid를 사용하여 이메일 보내기](some-useful-integrations/send-grid.md)
    + [Azure Storage에 양식 데이터 저장](some-useful-integrations/store-form-data-in-azure-storage.md)
+   + [Azure Blob으로 양식 채우기](some-useful-integrations/fetch-form-data-from-azure-storage.md)
 + OSGi 번들 생성 {#creating-your-first-osgi-bundle}
    + [1 - 환경 설정](creating-your-first-osgi-bundle/create-your-first-osgi-bundle.md)
    + [2 - OSGi 서비스 만들기](creating-your-first-osgi-bundle/create-osgi-service.md)
@@ -142,6 +143,12 @@ ht-degree: 2%
    + [9 - 기본 양식 만들기](store-and-retrieve-af-with-2fa/create-the-main-adaptive-form.md)
    + [10 - MyAccount 양식 만들기](store-and-retrieve-af-with-2fa/create-the-myaccount-form.md)
    + [11 - 샘플 배포](store-and-retrieve-af-with-2fa/deploy-this-sample.md)
++ PDF 파일에서 데이터 가져오기{#import-data-from-pdf-form}
+   + [1 - 소개](import-data-from-pdf-form/introduction.md)
+   + [2 - 적응형 양식 만들기](import-data-from-pdf-form/create-adaptive-form.md)
+   + [3 - OSGi 서비스 만들기](import-data-from-pdf-form/create-osgi-service.md)
+   + [4 - 적응형 양식 채우기](import-data-from-pdf-form/populate-adaptive-form.md)
+   + [5 - 솔루션 테스트](import-data-from-pdf-form/test-the-solution.md)
 + 제출된 데이터를 CSV 형식으로 내보내기{#export-submitted-data-csv-format}
    + [제출된 데이터 내보내기](export-submitted-data-csv-format/export-submitted-data-csv.md)
 + HTML5 양식{#html5-forms}
