@@ -6,11 +6,12 @@ level: Beginner, Intermediate
 topic: Administration
 audience: author, marketer, developer
 feature: Learn From Your Peers
+jira: KT-14255
 exl-id: 37ee3234-f91c-4f0a-b0b7-b9167e7847a9
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 3752e22455020b58d23524f7e6a99414e773422d
 workflow-type: tm+mt
 source-wordcount: '1084'
-ht-degree: 5%
+ht-degree: 7%
 
 ---
 
@@ -19,7 +20,7 @@ ht-degree: 5%
 AEM 인스턴스의 설치 및 유지 관리에 대한 세 가지 옵션이 있습니다
 
 * AEMaaCS(클라우드 서비스) - 시스템이 항상 최신 상태로 유지되며 필요에 따라 동적으로 확장됩니다
-* Adobe 고객 서비스 엔지니어가 모든 일별/주별/월별 유지 관리를 수행하고 모든 서비스 팩이 설치되고 시스템이 항상 안전하게 실행되고 원활하게 실행되도록 하는 Adobe Managed Services
+* Adobe 고객 서비스 엔지니어가 모든 일별/주별/월별 유지 관리를 수행하고 모든 서비스 팩이 설치되어 있고 시스템이 항상 안전하게 실행되고 있는지 확인하는 Managed Services Adobe
 * 백업, 업그레이드, 보안 등 전체 시스템을 관리해야 하는 온프레미스에서 실행.
 
 온프레미스에서 자체 시스템을 구현하기로 선택한 경우, 안전하고 성능이 좋은 시스템을 갖추기 위해 몇 가지 주의해야 할 사항이 있습니다. &quot;관리 및 공급&quot; 항목 외에도, 이 논문에서는 AEM 개발자가 시스템이 잘 작동하도록 돕기 위해 염두에 두어야 할 몇 가지 항목도 지적할 것입니다.

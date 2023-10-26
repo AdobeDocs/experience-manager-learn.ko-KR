@@ -7,10 +7,10 @@ topic: Security, Administration, Architecture
 role: Admin, Architect
 level: Intermediate
 doc-type: Tutorial
-last-substantial-update: 2023-10-20T00:00:00Z
+last-substantial-update: 2023-10-26T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
-source-git-commit: fa28ae232a5353eb34788fd2abe8402b42a62f66
+source-git-commit: 3752e22455020b58d23524f7e6a99414e773422d
 workflow-type: tm+mt
 source-wordcount: '1510'
 ht-degree: 0%
@@ -86,7 +86,7 @@ data:
 
 - 다운로드한 로그 파일을 복사합니다(예: `publish_cdn_2023-10-24.log` 아래 스크린샷에서) `logs/dev` 탄력적인 대시보드 도구 프로젝트의 폴더입니다.
 
-  ![ELK 도구 로그 폴더](./assets/elk-tool-logs-folder.png)
+  ![ELK 도구 로그 폴더](./assets/elk-tool-logs-folder.png){width="800" zoomable="yes"}
 
 - 탄력적인 대시보드 도구 페이지를 새로 고칩니다.
    - 맨 위에 **전역 필터** 섹션, 편집 `aem_env_name.keyword` 필터링 및 선택 `dev` 환경 값입니다.
