@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 0c95df469885b84aa7585975a89811efab0ae5e7
+source-git-commit: bca52c7543b35fc20a782dfd3f2b2dc81bee4cde
 workflow-type: tm+mt
-source-wordcount: '1037'
+source-wordcount: '1054'
 ht-degree: 21%
 
 ---
@@ -155,6 +155,12 @@ ht-degree: 21%
       + [DataSourcePool을 사용한 SQL 연결](./networking/examples/sql-datasourcepool.md)
       + [Java SQL API를 사용한 SQL 연결](./networking/examples/sql-java-apis.md)
       + [이메일 서비스](./networking/examples/email-service.md)
++ 보안 {#security}
+   + WAF 규칙을 포함한 트래픽 필터 규칙{#traffic-filter-and-waf-rules}
+      + [개요](./security/traffic-filter-rules/overview.md)
+      + [설정 방법](./security/traffic-filter-rules/how-to-setup.md)
+      + [예제 및 결과 분석](./security/traffic-filter-rules/examples-and-analysis.md)
+      + [모범 사례](./security/traffic-filter-rules/best-practices.md)
 + 마이그레이션 {#migration}
    + [콘텐츠 전송 도구](./migration/content-transfer-tool.md)
    + [자산 일괄 가져오기](./migration/bulk-import.md)
