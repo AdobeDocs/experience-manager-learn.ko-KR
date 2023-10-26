@@ -10,9 +10,9 @@ doc-type: Tutorial
 last-substantial-update: 2023-10-20T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
-source-git-commit: bca52c7543b35fc20a782dfd3f2b2dc81bee4cde
+source-git-commit: fa28ae232a5353eb34788fd2abe8402b42a62f66
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '266'
 ht-degree: 0%
 
 ---
@@ -26,13 +26,15 @@ ht-degree: 0%
 
 보안 위반 위험을 줄이는 것이 모든 조직의 최우선 과제입니다. AEMCS는 웹 사이트 및 애플리케이션을 보호하기 위해 WAF 규칙을 포함한 트래픽 필터 규칙 기능을 제공합니다.
 
-트래픽 필터 규칙이 [기본 CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html) 요청이 AEM 인프라에 도달하기 전에 평가됩니다. 이 기능을 사용하면 웹 사이트의 보안을 크게 강화하여 합법적인 요청만 AEM 인프라에 액세스할 수 있도록 할 수 있습니다.
+트래픽 필터 규칙은 [기본 CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html) 요청이 AEM 인프라에 도달하기 전에 평가됩니다. 이 기능을 사용하면 웹 사이트의 보안을 크게 강화하여 합법적인 요청만 AEM 인프라에 액세스할 수 있도록 할 수 있습니다.
 
 이 튜토리얼에서는 WAF 규칙을 포함한 트래픽 필터 규칙의 생성, 배포, 테스트 및 결과 분석 과정을 안내합니다.
 
+에서 트래픽 필터 규칙에 대해 자세히 알아볼 수 있습니다. [이 문서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=en)
+
 >[!IMPORTANT]
 >
-> &quot;WAF 규칙&quot;이라고 하는 트래픽 필터 규칙의 하위 범주에는 WAF-DDoS 보호 라이센스가 필요합니다.
+> &quot;WAF 규칙&quot;이라는 트래픽 필터 규칙의 하위 카테고리는 WAF-DDoS 보호 라이센스가 필요합니다
 
 
 ## 다음 단계

@@ -10,7 +10,7 @@ doc-type: Tutorial
 last-substantial-update: 2023-10-20T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
-source-git-commit: bca52c7543b35fc20a782dfd3f2b2dc81bee4cde
+source-git-commit: fa28ae232a5353eb34788fd2abe8402b42a62f66
 workflow-type: tm+mt
 source-wordcount: '1510'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Adobe Experience Manager as a Cloud Service(AEMCS) CDN 로그 및 대시보드 �
 
 ## 예
 
-WAF 규칙을 포함한 트래픽 필터 규칙의 다양한 예를 살펴보겠습니다. 앞에서 설명한 대로 필요한 설정 프로세스를 완료했는지 확인합니다 [설정 방법](./how-to-setup.md) 챕터를 복제했습니다. [AEM WKND Sites 프로젝트](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project).
+WAF 규칙을 비롯한 트래픽 필터 규칙의 다양한 예를 살펴보겠습니다. 앞에서 설명한 대로 필요한 설정 프로세스를 완료했는지 확인합니다 [설정 방법](./how-to-setup.md) 챕터를 복제했습니다. [AEM WKND Sites 프로젝트](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project).
 
 ### 요청 로깅
 
