@@ -10,9 +10,9 @@ doc-type: Tutorial
 last-substantial-update: 2023-10-20T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
-source-git-commit: fa28ae232a5353eb34788fd2abe8402b42a62f66
+source-git-commit: 67e0a7530549a0d380e9ef82e3747c40d17b1b75
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '564'
 ht-degree: 3%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 3%
 
 - _규칙 만들기_ 적절한 AEM 프로젝트 구조 및 구성 파일이 포함되어 있습니다.
 - _규칙 배포_ Adobe Cloud Manage의 구성 파이프라인 사용.
-- _규칙 테스트_ 다양한 도구를 사용하여 트래픽 생성
+- _규칙 테스트_ 다양한 도구를 사용하여 트래픽을 생성합니다.
 - _결과 분석_ aemcs CDN 로그 및 대시보드 도구 사용.
 
 ### AEM 프로젝트에서 규칙 만들기
@@ -37,7 +37,7 @@ ht-degree: 3%
 
 1. AEM 프로젝트의 최상위 수준에서 폴더를 만듭니다 `config`.
 
-1. 다음 범위 내 `config` 폴더, (이)라는 새 폴더 만들기 `cdn.yaml`.
+1. 다음 범위 내 `config` 폴더, (이)라는 새 파일을 만듭니다. `cdn.yaml`.
 
 1. 에 다음 메타데이터 추가 `cdn.yaml` 파일:
 
