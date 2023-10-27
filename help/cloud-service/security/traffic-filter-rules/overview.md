@@ -10,9 +10,9 @@ doc-type: Tutorial
 last-substantial-update: 2023-10-26T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
-source-git-commit: 3752e22455020b58d23524f7e6a99414e773422d
+source-git-commit: 87266a250eb91a82cf39c4a87e8f0119658cf4aa
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '285'
 ht-degree: 0%
 
 ---
@@ -30,12 +30,13 @@ ht-degree: 0%
 
 이 튜토리얼에서는 WAF 규칙을 포함한 트래픽 필터 규칙의 생성, 배포, 테스트 및 결과 분석 과정을 안내합니다.
 
-에서 트래픽 필터 규칙에 대해 자세히 알아볼 수 있습니다. [이 문서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=en)
+에서 트래픽 필터 규칙에 대해 자세히 알아볼 수 있습니다. [이 문서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=en).
 
 >[!IMPORTANT]
 >
-> &quot;WAF 규칙&quot;이라는 트래픽 필터 규칙의 하위 카테고리는 WAF-DDoS 보호 라이센스가 필요합니다
+> &quot;WAF 규칙&quot;이라는 트래픽 필터 규칙의 하위 카테고리는 WAF-DDoS Protection 또는 Enhanced Security 라이센스가 필요합니다.
 
+전자 메일로 트래픽 필터 규칙에 대한 피드백 또는 질문을 할 수 있도록 초대합니다. **aemcs-waf-adopter@adobe.com**.
 
 ## 다음 단계
 

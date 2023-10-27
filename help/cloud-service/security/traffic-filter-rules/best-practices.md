@@ -10,9 +10,9 @@ doc-type: Tutorial
 last-substantial-update: 2023-10-26T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
-source-git-commit: 3752e22455020b58d23524f7e6a99414e773422d
+source-git-commit: 87266a250eb91a82cf39c4a87e8f0119658cf4aa
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '416'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ WAF 규칙을 포함한 트래픽 필터 규칙에 대한 권장 모범 사례�
 
 ## 트래픽 필터 규칙에 대한 우수 사례
 
-AEM 프로젝트에 대해 아래 트래픽 필터 규칙을 활성화합니다. 단, 의 원하는 값 `rateLimit` 및 `clientCountry` 속성은 보안 팀과 협력하여 결정해야 합니다.
+AEM 프로젝트에 대해 아래의 트래픽 필터 규칙을 활성화합니다. 단, 의 원하는 값 `rateLimit` 및 `clientCountry` 속성은 보안 팀과 협력하여 결정해야 합니다.
 
 ```yaml
 kind: CDN
@@ -84,7 +84,7 @@ data:
 
 >[!WARNING]
 >
->프로덕션 환경의 경우 웹 보안 팀과 협력하여 다음에 대한 적절한 값을 결정합니다. `rateLimit`,
+>프로덕션 환경의 경우 웹 보안 팀과 협력하여 다음에 대한 적절한 값을 결정합니다. `rateLimit`
 
 ## WAF 규칙 모범 사례
 

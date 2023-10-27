@@ -10,9 +10,9 @@ doc-type: Tutorial
 last-substantial-update: 2023-10-26T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
-source-git-commit: 3752e22455020b58d23524f7e6a99414e773422d
+source-git-commit: 87266a250eb91a82cf39c4a87e8f0119658cf4aa
 workflow-type: tm+mt
-source-wordcount: '1510'
+source-wordcount: '1512'
 ht-degree: 0%
 
 ---
@@ -24,9 +24,9 @@ Adobe Experience Manager as a Cloud Service(AEMCS) CDN 로그 및 대시보드 �
 
 이 섹션에서는 WAF 규칙을 비롯한 트래픽 필터 규칙의 실제 예를 살펴봅니다. 다음을 사용하여 URI(또는 경로), IP 주소, 요청 수 및 다양한 공격 유형을 기반으로 요청을 기록, 허용 및 차단하는 방법을 배웁니다. [AEM WKND Sites 프로젝트](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project).
 
-또한 AEMCS CDN 로그를 수집하여 Adobe 제공 샘플 대시보드를 통해 필수 지표를 시각화하는 대시보드 도구 사용 방법에 대해 살펴봅니다.
+또한 AEM CS CDN 로그를 수집하는 대시보드 도구를 사용하여 Adobe 제공 샘플 대시보드를 통해 필수 지표를 시각화하는 방법에 대해 알아봅니다.
 
-특정 요구 사항에 맞게 사용자 정의 대시보드를 개선하고 만들어 보다 심층적인 통찰력을 얻고 AEM 사이트에 대한 규칙 구성을 최적화할 수 있습니다.
+특정 요구 사항에 맞게 사용자 정의 대시보드를 개선하고 만들어 더 자세한 통찰력을 얻고 AEM 사이트에 대한 규칙 구성을 최적화할 수 있습니다.
 
 ## 예
 
@@ -68,7 +68,7 @@ data:
 
   ![Cloud Manager 구성 파이프라인](./assets/cloud-manager-config-pipeline.png)
 
-- 게시 서비스에서 프로그램의 WKND 사이트에 로그인하고 로그아웃하여 규칙을 테스트합니다(예: `https://publish-pXXXX-eYYYY.adobeaemcloud.com/us/en.html`). 다음을 사용할 수 있습니다. `asmith/asmith` 을 사용자 이름과 암호로 사용하십시오.
+- Publish 서비스에서 프로그램의 WKND 사이트에 로그인하고 로그아웃하여 규칙을 테스트합니다(예: `https://publish-pXXXX-eYYYY.adobeaemcloud.com/us/en.html`). 다음을 사용할 수 있습니다. `asmith/asmith` 을 사용자 이름과 암호로 사용하십시오.
 
   ![WKND 로그인](./assets/wknd-login.png)
 
@@ -104,11 +104,11 @@ data:
 
 ### 요청 차단
 
-이 예에서는 의 페이지를 추가하겠습니다. _내부_ 폴더 위치: `/content/wknd/internal` 배포된 WKND 프로젝트의 경로입니다. 그런 다음 다음을 포함하는 트래픽 필터 규칙을 선언합니다. **트래픽 차단** 조직(예: 회사 VPN)에 일치하는 지정된 IP 주소 이외의 위치에서 하위 페이지를 만드는 경우
+이 예에서는 의 페이지를 추가하겠습니다. _내부_ 경로의 폴더 `/content/wknd/internal` 배포된 WKND 프로젝트에서 그런 다음 다음을 포함하는 트래픽 필터 규칙을 선언합니다. **트래픽 차단** 조직(예: 회사 VPN)에 일치하는 지정된 IP 주소 이외의 위치에서 하위 페이지를 만드는 경우
 
-고유한 내부 페이지를 만들 수 있습니다(예: `demo-page.html`) 또는 [첨부된 패키지](./assets/demo-internal-pages-package.zip)
+고유한 내부 페이지를 만들 수 있습니다(예: `demo-page.html`) 또는 [첨부된 패키지](./assets/demo-internal-pages-package.zip).
 
-- WKND 프로젝트의 다음 규칙을 추가합니다 `/config/cdn.yaml` 파일.
+- WKND 프로젝트의 다음 규칙을 추가합니다 `/config/cdn.yaml` 파일:
 
 ```yaml
 kind: CDN
@@ -200,7 +200,7 @@ data:
   $ echo "GET https://publish-pXXXX-eYYYY.adobeaemcloud.com/us/en.html" | vegeta attack -rate=120 -duration=5s | vegeta report
   ```
 
-  이 명령은 5초 동안 120개의 요청을 만들고 보고서를 출력합니다. 보시다시피 성공률은 32.5%이고 나머지 406 HTTP 응답 코드가 수신되어 트래픽이 차단되었음을 나타냅니다.
+  이 명령은 5초 동안 120개의 요청을 만들고 보고서를 출력합니다. 보시는 것처럼 성공률은 32.5%입니다. 나머지 항목에 대해서는 406 HTTP 응답 코드가 수신되므로 트래픽이 차단되었음을 알 수 있습니다.
 
   ![베게타 도스 공격](./assets/vegeta-dos-attack.png)
 
@@ -212,7 +212,7 @@ data:
 
 ![ELK Tool Dashboard DoS 요청](./assets/elk-tool-dashboard-dos.png)
 
-또한 **클라이언트 IP, 국가 및 사용자 에이전트별 상위 100개 공격** 패널에는 규칙 구성을 더 최적화하는 데 사용할 수 있는 추가 세부 정보가 표시됩니다.
+또한 **클라이언트 IP, 국가 및 사용자 에이전트별 상위 100개 공격** 패널에는 규칙 구성을 추가로 최적화하는 데 사용할 수 있는 추가 세부 정보가 표시됩니다.
 
 ![ELK Tool Dashboard DoS 상위 100개 요청](./assets/elk-tool-dashboard-dos-top-100.png)
 
@@ -220,7 +220,7 @@ data:
 
 지금까지의 트래픽 필터 규칙 예는 모든 Sites 및 Forms 고객이 구성할 수 있습니다.
 
-다음으로 향상된 보안 또는 WAF-DDoS 보호 라이센스를 구입한 고객의 경험을 살펴보겠습니다. 이렇게 하면 보다 정교한 공격으로부터 AEM 사이트를 보호하기 위해 고급 규칙을 구성할 수 있는 권한이 제공됩니다.
+다음으로, 향상된 보안 또는 WAF-DDoS 보호 라이센스를 구입한 고객이 더 정교한 공격으로부터 웹 사이트를 보호하기 위해 고급 규칙을 구성할 수 있는 경험에 대해 알아보겠습니다.
 
 계속하기 전에 트래픽 필터 규칙 설명서에 설명된 대로 프로그램에 대해 WAF-DDoS 보호를 활성화합니다 [설정 단계](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=en#setup).
 
@@ -248,7 +248,7 @@ WAF 규칙이 선언되기 전이라도 먼저 경험을 살펴보겠습니다. 
 
 ![ELK 도구 대시보드 WAF 플래그가 지정된 요청](./assets/elk-tool-dashboard-waf-flagged.png)
 
-이(가) **WAF 플래그 분포 및 상위 공격** 패널에는 규칙 구성을 추가로 최적화하는 데 사용할 수 있는 추가 세부 정보가 표시됩니다.
+이(가) **WAF 플래그 분포** 및 **상위 공격** 패널에는 규칙 구성을 추가로 최적화하는 데 사용할 수 있는 추가 세부 정보가 표시됩니다.
 
 ![ELK 도구 대시보드 WAF 플래그 공격 요청](./assets/elk-tool-dashboard-waf-flagged-top-attacks-1.png)
 
@@ -319,7 +319,7 @@ data:
 
 ![ELK 도구 대시보드 WAF 차단된 요청](./assets/elk-tool-dashboard-waf-blocked.png)
 
-또한 **WAF 플래그 분포 및 상위 공격** 패널에 추가 세부 정보가 표시됩니다.
+또한 **WAF 플래그 분포** 및 **상위 공격** 패널에 추가 세부 정보가 표시됩니다.
 
 ![ELK 도구 대시보드 WAF 플래그 공격 요청](./assets/elk-tool-dashboard-waf-blocked-top-attacks-1.png)
 
@@ -327,7 +327,7 @@ data:
 
 ### 포괄적인 분석
 
-위의 _분석_ 섹션 에서는 의 결과를 분석하는 방법을 배웠습니다. **특정 규칙** 대시보드 도구를 사용합니다. 다음을 포함한 다른 대시보드 패널을 사용하여 분석 결과를 더 탐색할 수 있습니다.
+위의 _분석_ 섹션에서는 대시보드 도구를 사용하여 특정 규칙의 결과를 분석하는 방법에 대해 알아보았습니다. 다음을 포함한 다른 대시보드 패널을 사용하여 분석 결과를 더 탐색할 수 있습니다.
 
 
 - 분석, 플래그 지정 및 차단된 요청

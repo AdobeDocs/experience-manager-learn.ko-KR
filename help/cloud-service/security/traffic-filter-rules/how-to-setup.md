@@ -10,7 +10,7 @@ doc-type: Tutorial
 last-substantial-update: 2023-10-26T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
-source-git-commit: 3752e22455020b58d23524f7e6a99414e773422d
+source-git-commit: 87266a250eb91a82cf39c4a87e8f0119658cf4aa
 workflow-type: tm+mt
 source-wordcount: '564'
 ht-degree: 3%
@@ -27,7 +27,7 @@ ht-degree: 3%
 설정 프로세스에는 다음이 포함됩니다.
 
 - _규칙 만들기_ 적절한 AEM 프로젝트 구조 및 구성 파일이 포함되어 있습니다.
-- _규칙 배포_ Adobe Cloud Manage의 구성 파이프라인 사용.
+- _규칙 배포_ Adobe Cloud Manager의 구성 파이프라인 사용.
 - _규칙 테스트_ 다양한 도구를 사용하여 트래픽을 생성합니다.
 - _결과 분석_ aemcs CDN 로그 및 대시보드 도구 사용.
 
