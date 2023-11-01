@@ -5,16 +5,14 @@ sub-product: Experience Manager Sites, Experience Manager Cloud Manager, Experie
 topic: Administration, Development
 feature: Developer Tools
 exl-id: ae1cdbe3-0863-41de-bb27-2e88c4640866
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 4b634d8b3063375f7c135a3e3ef81b90c84e2579
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '700'
 ht-degree: 2%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service 전문가 시리즈
-
-![AEM 전문가 시리즈](./assets/masthead.png)
+# AEM as a Cloud Service 전문가 시리즈
 
 Adobe Experience Manager(AEM as a Cloud Service)를 구축하는 Adobe의 전문 엔지니어와 이를 제공하는 전문 서비스 팀에 대해 알아봅니다. AEMas a Cloud Service 이 무엇인지, AEM 6과 어떻게 동일하며 다른지, AEM AEM 6에서 as a Cloud Service으로 전환하는 방법에 대해 Adobe 전문가들과 함께 알아보십시오.
 
@@ -23,7 +21,7 @@ Adobe Experience Manager(AEM as a Cloud Service)를 구축하는 Adobe의 전문
 
 ## AEM as a Cloud Service 시작하기
 
-AEM as a Cloud Services의 기본 사항 및 Adobe 엔지니어링의 선임 클라우드 설계자와 AEM 6의 차이점에 대해 알아봅니다.
+AEM as a Cloud Service의 기본 사항 및 Adobe 엔지니어링의 선임 클라우드 설계자와 AEM 6의 차이점에 대해 알아봅니다.
 
 <table>
   <tr>
@@ -162,7 +160,7 @@ AEM AEM 6에서 as a Cloud Service으로 이동할 계획입니까? as a Cloud S
 </table>
 
 
-## AEM as a Cloud Services 기능
+## AEM as a Cloud Service 기능
 
 Adobe 전문가로부터 AEM as a Cloud Service의 고유한 기능에 대해 알아보십시오.
 
@@ -178,7 +176,7 @@ Adobe 전문가로부터 AEM as a Cloud Service의 고유한 기능에 대해 �
       </div>
       <p>
         <br/>
-        AEM Assets의 Asset compute Microservices, AEM 6 에셋 처리를 대체하는 방법 및 사용자 지정 에셋 렌디션을 생성하기 위해 확장하는 방법에 대해 알아봅니다.
+        AEM Assets의 Asset compute 마이크로서비스, AEM 6 에셋 처리를 대체하는 방법 및 사용자 정의 에셋 렌디션을 생성하기 위해 확장하는 방법에 대해 알아봅니다.
       </p>
    </td>   
    <td>
@@ -198,7 +196,7 @@ Adobe 전문가로부터 AEM as a Cloud Service의 고유한 기능에 대해 �
   </tr>
 </table>
 
-## AEM as a Cloud Services에 대한 도움이 필요하십니까?
+## AEM as a Cloud Service에 대한 도움이 필요하십니까?
 
 전문가로부터 AEM as a Cloud Service 및 AEM SDK를 디버깅하고 문제를 해결하는 방법에 대해 알아봅니다!
 
