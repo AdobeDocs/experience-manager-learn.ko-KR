@@ -10,17 +10,19 @@ doc-type: Tutorial
 last-substantial-update: 2023-10-26T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
-source-git-commit: 87266a250eb91a82cf39c4a87e8f0119658cf4aa
+exl-id: 4a7acdd2-f442-44ee-8560-f9cb64436acf
+source-git-commit: ceb498f751ffc50d0022a16b63f9f52594bc507e
 workflow-type: tm+mt
 source-wordcount: '416'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
-
 
 # WAF 규칙을 포함한 트래픽 필터 규칙에 대한 우수 사례
 
 WAF 규칙을 포함한 트래픽 필터 규칙에 대한 권장 모범 사례를 알아봅니다. 이 문서에 설명된 우수 사례는 완벽하지 않으며, 자체 보안 정책 및 절차를 대체하기 위한 것이 아닙니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3425408?quality=12&learn=on)
 
 ## 일반 모범 사례
 
@@ -150,3 +152,6 @@ data:
 ## 요약
 
 결론적으로, 이 자습서에서는 Adobe Experience Manager as a Cloud Service(AEMCS)에서 웹 애플리케이션의 보안을 강화하는 데 필요한 지식과 도구를 갖추고 있습니다. 실제 규칙 예제와 결과 분석에 대한 통찰력을 통해 웹 사이트 및 애플리케이션을 효과적으로 보호할 수 있습니다.
+
+
+

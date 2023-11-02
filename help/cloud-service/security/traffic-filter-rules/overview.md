@@ -10,17 +10,19 @@ doc-type: Tutorial
 last-substantial-update: 2023-10-26T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
-source-git-commit: 87266a250eb91a82cf39c4a87e8f0119658cf4aa
+exl-id: e6d67204-2f76-441c-a178-a34798fe266d
+source-git-commit: ceb498f751ffc50d0022a16b63f9f52594bc507e
 workflow-type: tm+mt
 source-wordcount: '285'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
-
 
 # 트래픽 필터 규칙(WAF 규칙 포함)으로 웹 사이트 보호
 
 다음에 대해 알아보기 **트래픽 필터 규칙**, 하위 범주 포함 **WAF(Web Application Firewall) 규칙** AEM as a Cloud Service (AEMCS)에서. 규칙을 만들고, 배포하고, 테스트하는 방법에 대해 알아보십시오. 또한 결과를 분석하여 AEM 사이트를 보호하십시오.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3425401?quality=12&learn=on)
 
 ## 개요
 
@@ -36,11 +38,10 @@ ht-degree: 0%
 >
 > &quot;WAF 규칙&quot;이라는 트래픽 필터 규칙의 하위 카테고리는 WAF-DDoS Protection 또는 Enhanced Security 라이센스가 필요합니다.
 
-전자 메일로 트래픽 필터 규칙에 대한 피드백 또는 질문을 할 수 있도록 초대합니다. **aemcs-waf-adopter@adobe.com**.
+**aemcs-waf-adopter@adobe.com**&#x200B;으로 메일을 보내어 트래픽 필터 규칙에 대한 피드백을 제공하거나 질문을 보내주시기 바랍니다.
 
 ## 다음 단계
 
 학습 [설정 방법](./how-to-setup.md) 트래픽 필터 규칙을 만들고, 배포하고, 테스트할 수 있는 기능입니다. 설정 방법 읽어보기 **Elasticsearch, Logstash 및 Kibana(ELK)** aemcs CDN 로그 결과를 분석하는 스택 대시보드 도구입니다.
-
 
 

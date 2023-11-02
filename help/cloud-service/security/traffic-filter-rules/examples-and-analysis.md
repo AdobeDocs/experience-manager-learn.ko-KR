@@ -10,13 +10,13 @@ doc-type: Tutorial
 last-substantial-update: 2023-10-26T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
-source-git-commit: 87266a250eb91a82cf39c4a87e8f0119658cf4aa
+exl-id: 49becbcb-7965-4378-bb8e-b662fda716b7
+source-git-commit: ceb498f751ffc50d0022a16b63f9f52594bc507e
 workflow-type: tm+mt
 source-wordcount: '1512'
 ht-degree: 0%
 
 ---
-
 
 # WAF 규칙을 포함한 트래픽 필터 규칙의 예 및 결과 분석
 
@@ -27,6 +27,8 @@ Adobe Experience Manager as a Cloud Service(AEMCS) CDN 로그 및 대시보드 �
 또한 AEM CS CDN 로그를 수집하는 대시보드 도구를 사용하여 Adobe 제공 샘플 대시보드를 통해 필수 지표를 시각화하는 방법에 대해 알아봅니다.
 
 특정 요구 사항에 맞게 사용자 정의 대시보드를 개선하고 만들어 더 자세한 통찰력을 얻고 AEM 사이트에 대한 규칙 구성을 최적화할 수 있습니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3425404?quality=12&learn=on)
 
 ## 예
 
@@ -351,4 +353,3 @@ data:
 [트래픽 필터 규칙 구문](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html#rules-syntax)
 
 [CDN 로그 형식](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html#cdn-log-format)
-

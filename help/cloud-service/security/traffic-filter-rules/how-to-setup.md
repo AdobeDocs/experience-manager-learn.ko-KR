@@ -10,17 +10,19 @@ doc-type: Tutorial
 last-substantial-update: 2023-10-26T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
-source-git-commit: 87266a250eb91a82cf39c4a87e8f0119658cf4aa
+exl-id: b67bf642-3341-48d0-8ea9-5f262febf414
+source-git-commit: ceb498f751ffc50d0022a16b63f9f52594bc507e
 workflow-type: tm+mt
 source-wordcount: '564'
 ht-degree: 3%
 
 ---
 
-
 # WAF 규칙을 포함한 트래픽 필터 규칙을 설정하는 방법
 
 학습 **설정 방법** WAF 규칙을 포함한 트래픽 필터 규칙. 결과 생성, 배포, 테스트 및 분석에 대해 알아보십시오.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3425407?quality=12&learn=on)
 
 ## 설정
 
