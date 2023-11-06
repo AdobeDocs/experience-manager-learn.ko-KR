@@ -1,17 +1,17 @@
 ---
-title: AEM Assets 비디오 및 자습서
+title: AEM Assets 비디오 및 튜토리얼
 description: AEM Asset 지원 및 지원을 받으려면 비디오를 시청하십시오.
 sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 exl-id: 1d0b0183-25ee-4cb4-82a5-3506e7c1c908
 source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 15%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# AEM Assets 비디오 및 자습서 {#overview}
+# AEM Assets 비디오 및 튜토리얼 {#overview}
 
 {{edge-delivery-services}}
 
@@ -20,7 +20,7 @@ Adobe Experience Manager(AEM) Assets는 사용자가 웹 기반 저장소에서 
 >[!CONTEXTUALHELP]
 >id="aemcloud_assets_overview"
 >title="AEM Assets"
->abstract="필요한 에셋을 빠르게 찾고 편집하는 방법에 대해 알아봅니다."
+>abstract="필요한 자산을 빠르게 찾고 편집하는 방법에 대해 알아봅니다."
 >additional-url="https://video.tv.adobe.com/v/336196" text="AEM Assets 둘러보기"
 
 ## AEM Assets 둘러보기

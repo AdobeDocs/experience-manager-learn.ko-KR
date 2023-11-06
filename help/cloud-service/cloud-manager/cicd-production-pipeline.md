@@ -1,5 +1,5 @@
 ---
-title: Adobe Cloud Manager 사용 - CI/CD 프로덕션 파이프라인
+title: Adobe Cloud Manager - CI/CD 프로덕션 파이프라인 사용
 description: CI/CD 프로덕션 파이프라인을 사용하여 스테이지를 통해 코드를 빌드하고 프로덕션 환경에 배포하여 가치 창출 시간을 단축합니다. CI/CD 프로덕션 파이프라인 구성은 파이프라인을 시작하는 트리거, 프로덕션 배포를 제어하는 매개변수 및 성능 테스트 매개변수를 정의합니다.
 topics: Administration
 audience: administrator
@@ -15,19 +15,19 @@ level: Beginner
 exl-id: c4f5667a-0da2-490b-9d55-9fbde21db595
 source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
 workflow-type: tm+mt
-source-wordcount: '177'
-ht-degree: 49%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Adobe Cloud Manager 사용 - CI/CD 프로덕션 파이프라인 {#using-adobe-cloud-manager-ci-cd-production-pipeline}
+# Adobe Cloud Manager - CI/CD 프로덕션 파이프라인 사용 {#using-adobe-cloud-manager-ci-cd-production-pipeline}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_devops_prodpipeline"
 >title="CI/CD 프로덕션 파이프라인"
 >abstract="CI/CD 프로덕션 파이프라인 구성은 파이프라인을 시작하는 트리거, 프로덕션 배포를 제어하는 매개변수 및 성능 테스트 매개변수를 정의합니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=en#deployment-process" text="코드 배포"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=en#deployment-production-phase" text="프로덕션에 배포 단계"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=ko#deployment-process" text="코드 배포"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=ko#deployment-production-phase" text="프로덕션에 배포 단계"
 
 ## 구성
 

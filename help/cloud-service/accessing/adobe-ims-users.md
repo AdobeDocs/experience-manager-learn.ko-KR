@@ -12,7 +12,7 @@ exl-id: d35a7892-d707-4a5c-9e97-ec3abba0f30c
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '172'
-ht-degree: 73%
+ht-degree: 75%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 73%
 >id="aemcloud_adobeims_users"
 >title="Adobe IMS 사용자"
 >abstract="AEM 작성자 서비스에 대한 액세스가 필요한 사용자는 Adobe Admin Console의 Adobe IMS 사용자로 관리됩니다. Adobe IMS 사용자의 유형, Admin Console에서 액세스 및 관리되는 방법에 대해 알아봅니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#how-to-set-up" text="Admin Console에서 사용자 온보딩"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=ko#how-to-set-up" text="Admin Console에서 사용자 온보딩"
 >additional-url="https://helpx.adobe.com/kr/enterprise/admin-guide.html/enterprise/using/identity.ug.html" text="Adobe Admin Console ID 개요"
 
 AEM Author 서비스에 대한 액세스가 필요한 사용자는 [Adobe IMS 사용자](https://helpx.adobe.com/kr/enterprise/using/set-up-identity.html) 위치: [Adobe Admin Console](https://adminconsole.adobe.com). Adobe IMS 사용자의 유형, Admin Console에서 액세스 및 관리되는 방법에 대해 알아봅니다.

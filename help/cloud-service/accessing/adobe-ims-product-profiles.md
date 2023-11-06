@@ -11,8 +11,8 @@ last-substantial-update: 2023-05-19T00:00:00Z
 exl-id: 089a557c-5155-489c-bccf-0cb97e95840c
 source-git-commit: cffc2a60c7279c289090a6289d4cda6d901a1cbb
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 80%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 80%
 >id="aemcloud_adobeims_productprofiles"
 >title="Adobe IMS 제품 프로필"
 >abstract="Adobe IMS 제품 프로필은 사용자가 AEM 작성자 서비스에 로그인할 수 있는 권한을 부여하며, 멤버가 되는 제품 프로필에 따라 액세스 기준선을 제공합니다. Adobe IMS 제품 프로필에 대해 자세히 알아봅니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#introduction" text="Admin Console에서 제품 및 사용자 액세스 관리"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=ko#introduction" text="Admin Console에서 제품 및 사용자 액세스 관리"
 
 Adobe IMS 제품 프로필은 사용자가 AEM 작성자 서비스에 로그인할 수 있는 권한을 부여하며, 멤버가 되는 제품 프로필에 따라 액세스 기준선을 제공합니다.
 

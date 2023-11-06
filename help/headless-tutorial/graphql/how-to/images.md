@@ -43,7 +43,7 @@ AEM Headless 콘텐츠 모델링에 사용된 콘텐츠 조각은 종종 Headles
 >[!CONTEXTUALHELP]
 >id="aemcloud_learn_headless_graphql_images"
 >title="AEM Headless를 사용한 이미지"
->abstract="AEM Headless가 이미지 에셋 관리와 최적화된 에셋 게재를 지원하는 방법에 대해 알아봅니다."
+>abstract="AEM Headless가 이미지 자산 관리와 최적화된 자산 게재를 지원하는 방법에 대해 알아봅니다."
 
 ## 콘텐츠 조각 모델
 
