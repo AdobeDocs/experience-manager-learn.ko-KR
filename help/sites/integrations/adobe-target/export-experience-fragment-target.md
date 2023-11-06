@@ -14,9 +14,9 @@ level: Intermediate
 badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: 2c01cda8-f72f-47f7-a36b-95afd241906e
-source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
+source-git-commit: e9c0974d35493a607969124b2906564fc97bcdea
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '196'
 ht-degree: 7%
 
 ---
@@ -39,11 +39,11 @@ AEM 경험 조각을 Adobe Target 오퍼로 내보내는 방법을 알아봅니�
 
 Adobe Admin Console에서 올바른 권한 없이 경험 조각을 Adobe Target으로 내보내면 AEM Author 서비스에서 다음 오류가 발생합니다.
 
-    ![Target API UI 오류](assets/error-target-offer.png)
+![Target API UI 오류](assets/error-target-offer.png)
 
 ... 및 의 다음 로그 메시지 `aemerror` 로그:
 
-    ![Target API 콘솔 오류](assets/target-console-error.png)
+![Target API 콘솔 오류](assets/target-console-error.png)
 
 #### 해결
 
