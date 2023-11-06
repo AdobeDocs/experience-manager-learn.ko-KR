@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: bca52c7543b35fc20a782dfd3f2b2dc81bee4cde
+source-git-commit: ea9bf14d9a8f62382c43a50dbf65c4d2b88e6bcf
 workflow-type: tm+mt
-source-wordcount: '1054'
-ht-degree: 21%
+source-wordcount: '1053'
+ht-degree: 22%
 
 ---
 
@@ -21,7 +21,6 @@ ht-degree: 21%
    + [이미지](./aem-trials/images.md)
 + AEM as a Cloud Service 소개{#introduction}
    + [AEMas a Cloud Service 란?](./introduction/what-is-aem-as-a-cloud-service.md)
-   + [진화](./introduction/evolution.md)
    + [아키텍처](./introduction/architecture.md)
    + [Cloud Manager](./introduction/cloud-manager.md)
    + 전략 및 사고 리더십{#strategy}

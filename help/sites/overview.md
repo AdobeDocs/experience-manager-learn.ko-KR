@@ -5,10 +5,10 @@ solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 topic: Content Management
 exl-id: cde4ce7f-0afe-4632-8c1c-354586f296d5
-source-git-commit: 237560dc634cb3d6c3553dd57386d2a9548ed4e5
+source-git-commit: ea9bf14d9a8f62382c43a50dbf65c4d2b88e6bcf
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 13%
+source-wordcount: '324'
+ht-degree: 16%
 
 ---
 
@@ -27,9 +27,6 @@ Adobe Experience Manager(AEM) Sites는 선도적인 경험 관리 플랫폼입�
 
 * **[AEM 및 Edge Delivery Services란? (비디오)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/what-is-aem-as-a-cloud-service.html)**
   *Adobe Experience Manager(AEM) 및 Edge Delivery Services이 제공하는 값에 대해 알아봅니다.*
-
-* **[AEM의 발전에 대해 알아보기(비디오)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/evolution.html)**
-  *AEM 6.5부터 AEM as a Cloud Service, 그리고 마지막으로 Edge Delivery Services에 이르기까지 AEM 진화와 이 진화가 제공하는 가치에 대해 알아봅니다.*
 
 * **[AEM with Edge Delivery Services 아키텍처 개요(비디오)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html)**
   *AEM as a Cloud Service의 아키텍처에 대해 자세히 알아보십시오!*
