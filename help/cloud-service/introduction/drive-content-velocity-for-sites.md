@@ -3,9 +3,9 @@ title: Adobe Experience Manager으로 컨텐츠 속도를 향상시키는 방법
 description: 기업 조직 내 컨텐츠 속도와 그 가치에 대해 알아봅니다. 효과적인 구현의 4가지 원칙과 그 과정에서 살펴볼 함정에 대해 자세히 알아보십시오.
 solution: Experience Manager
 exl-id: 9d2e05c3-c8eb-4d92-bad0-931e63550438
-source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
+source-git-commit: bd886704f10834bb07b42d6b5c0f116496da36de
 workflow-type: tm+mt
-source-wordcount: '2814'
+source-wordcount: '2795'
 ht-degree: 0%
 
 ---
@@ -147,7 +147,7 @@ AEM은 회사 또는 브랜드의 많은 부분을 연결하는 엔터프라이�
 일반적으로 다음과 같은 경험 규칙을 따르는 것이 가장 좋습니다.
 
 * 다음을 통해 80% 이상의 경험을 제공하는 것을 목표로 합니다. [즉시 사용 가능한 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR) 및 [스타일 시스템](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=en). 고객 증언을 통해 제품 로드맵을 활용할 수 있는 보다 확장 가능한 기반을 만들 뿐만 아니라 속도가 최대 50%까지 빨라집니다.
-* [설정](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en)[e](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en)[적합한 틀](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en) 정적 템플릿에서 멀리 이동합니다. 편집 가능한 템플릿(스타일 시스템 사용 필수)을 설정할 때 페이지 또는 웹 사이트 섹션에 사용할 수 있는 다양한 스타일을 제어할 템플릿 작성자를 지정해야 합니다. 템플릿 자체에 대한 이러한 업데이트는 일상적인 작업 측면에서는 다소 미미한 수준입니다.
+* [편집 가능한 템플릿 설정](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en) 정적 템플릿에서 멀리 이동합니다. 편집 가능한 템플릿(스타일 시스템 사용 필수)을 설정할 때 페이지 또는 웹 사이트 섹션에 사용할 수 있는 다양한 스타일을 제어할 템플릿 작성자를 지정해야 합니다. 템플릿 자체에 대한 이러한 업데이트는 일상적인 작업 측면에서는 다소 미미한 수준입니다.
 * 사용 [경험 조각](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html?lang=en) 가능한 경우 경험 조각의 일반적인 사용 사례는 다중 채널 배포용이지만 여러 영역에서 콘텐츠를 수동으로 업데이트하는 대신 사이트 전체에서 효과적으로 사용하여 한 번에 한 영역의 콘텐츠를 채울 수도 있습니다. 이렇게 하면 과도한 시간과 노력을 절약할 수 있으며 작성 팀이 보다 구체적이고 풍부한 경험을 작업할 수 있습니다.
 * 더 풍부한 경험을 만들 수 있습니다. 80/20 규칙(이상)을 활용함으로써 조직은 일반적인 유지 관리 업데이트 대신 특정 CSS 및 백엔드 개발을 일부 경험에 활용할 수 있습니다.
 * 확장 가능한 기초 및 빠른 리브랜딩을 선택하십시오. 최신 구현을 기반으로 실행되는 스타일 시스템을 사용하면 플랫폼 전반에 걸쳐 효율적으로 리브랜딩을 수행할 수 있습니다. CSS 스킨 변경을 통해 다양한 콘텐츠 섹터를 업데이트하면 빠른 테스트 및 유효성 검사를 수행할 수 있고 ROI에 직접적인 영향을 미치면서 사이트 경험적 품질을 높일 수 있습니다.
