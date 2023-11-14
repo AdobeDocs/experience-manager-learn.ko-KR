@@ -9,9 +9,9 @@ level: Beginner
 kt: 9401
 thumbnail: 338824.jpg
 exl-id: a62e936f-c231-474d-9671-58815b2cb652
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 288eaf8bab20cfb0ecbfa8455198fa63252e2e71
 workflow-type: tm+mt
-source-wordcount: '208'
+source-wordcount: '268'
 ht-degree: 0%
 
 ---
@@ -26,9 +26,14 @@ AEMas a Cloud Service 용 Asset Link Adobe, 사용자 권한 및 AEM as a Cloud 
 
 >[!VIDEO](https://video.tv.adobe.com/v/338824?quality=12&learn=on)
 
+위의 비디오에 표시되지 않으면 Adobe 에셋 링크 를 통해 추가할 수 있습니다. __관리되는 패키지__ Creative Cloud 패키지 관리자의 옵션:
+
+1. 선택 __Adobe Asset Link CEP__ 위치: __플러그인 선택__ 단계
+2. 다음에서 __옵션 단계__ 선택 __셀프서비스 설치 사용__ 및 __관리자가 아닌 사용자가 앱을 업데이트하고 설치하도록 허용__ 관리자가 아닌 사용자가 Creative Cloud 앱 및 플러그인을 관리할 수 있는 권한을 가질 수 있도록 합니다.
+
 ## Managed Services 및 온프레미스에 대한 Asset Link 설정
 
-Adobe Managed Services 또는 온프레미스에서 실행되는 AEM AEM 6용 Adobe Asset Link 설정, 사용자 자격 및 as a Cloud Service 구성, Asset Link Adobe 설치 및 사용 방법에 대해 알아봅니다.
+Adobe Managed Services 또는 온프레미스에서 실행되는 AEM 6용 Adobe Asset Link 설정, 사용자 권한 및 AEM as a Cloud Service 구성, Adobe Asset Link 설치 및 사용 방법에 대해 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/338823?quality=12&learn=on)
 
