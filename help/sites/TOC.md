@@ -6,10 +6,10 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: 0c95df469885b84aa7585975a89811efab0ae5e7
+source-git-commit: d17544c4f8dda03e5147a1f48dbbdae005ee9438
 workflow-type: tm+mt
-source-wordcount: '459'
-ht-degree: 27%
+source-wordcount: '520'
+ht-degree: 26%
 
 ---
 
@@ -17,6 +17,23 @@ ht-degree: 27%
 # AEM Sites 비디오 및 튜토리얼 {#sites}
 
 + [개요](overview.md)
++ 문서 작성 {#document-authoring}
+   + [설정](document-authoring/set-up.md)
+   + [미리보기 및 게시](document-authoring/preview-and-publish.md)
+   + [문서 구조](document-authoring/document-structure.md)
+   + [블록 및 자동 블록](document-authoring/blocks-and-auto-blocks.md)
+   + [리디렉션](document-authoring/redirects.md)
+   + [벌크 메타데이터](document-authoring/bulk-metadata.md)
+   + [페이지 메타데이터](document-authoring/page-metadata.md)
+   + [응답형 탐색](document-authoring/responsive-navigation.md)
+   + 방법{#how-to}
+      + [문서 감사](./document-authoring/how-to/document-audit.md)
+      + [문서 권한](./document-authoring/how-to/document-permissions.md)
+      + [문서 버전](./document-authoring/how-to/document-versions.md)
+      + [문서 워크플로](./document-authoring/how-to/document-workflows.md)
+      + [iFrame 포함](./document-authoring/how-to/iframes.md)
+      + [이미지 대체 텍스트](./document-authoring/how-to/image-alt-text.md)
+      + [검색 엔진 색인화 방지](./document-authoring/how-to/no-index.md)
 + 페이지 작성 {#page-authoring}
    + [작성](page-authoring/aem-sites-authoring-overview.md)
    + [탐색](page-authoring/basic-handling-sites-feature-video-use.md)
@@ -52,8 +69,19 @@ ht-degree: 27%
    + [경험 조각 사용](experience-fragments/experience-fragments-feature-video-use.md)
    + [빌딩 블록](experience-fragments/building-blocks.md)
    + [컨텐츠 조각과 경험 조각 비교](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html){target=_blank}
-
++ Edge Delivery Services{#edge-delivery-services}
+   + 개발{#developing}
+      + [사전 요구 사항](./edge-delivery-services/developing/prerequisites.md)
+      + [컨텐츠 저장소](./edge-delivery-services/developing/content-repository.md)
+      + [미리보기 및 게시](./edge-delivery-services/developing/preview-and-publish.md)
+      + [AEM Sidekick](./edge-delivery-services/developing/sidekick.md)
+      + [문서 구조](./edge-delivery-services/developing/document-structure.md)
+      + [로컬 개발](./edge-delivery-services/developing/local-development.md)
+      + [Git](./edge-delivery-services/developing/git.md)
+   + 방법{#how-to}
+      + [피드](./edge-delivery-services/how-to/rss.md)
 + 개발 {#developing}
+   + [Edge Delivery Services](developing/edge-delivery-services.md)
    + [AEM Project Archetype](developing/aem-project-archetype.md)
    + [AEM Sites 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html){target=_blank}
    + [AEM Headless 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html){target=_blank}
