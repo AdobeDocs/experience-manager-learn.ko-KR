@@ -5,7 +5,7 @@ solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 topic: Content Management
 exl-id: cde4ce7f-0afe-4632-8c1c-354586f296d5
-source-git-commit: ea9bf14d9a8f62382c43a50dbf65c4d2b88e6bcf
+source-git-commit: 32d109b534fe63b26530a4b88d202540cf7dff38
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 16%
@@ -18,7 +18,7 @@ ht-degree: 16%
 
 Adobe Experience Manager(AEM) Sites는 선도적인 경험 관리 플랫폼입니다. 이 사용 안내서에는 AEM Sites의 다양한 기능과 성능에 대한 비디오 및 튜토리얼이 포함되어 있습니다.
 
-<div id="whats-new-section-skip"></div>
+<div id="whats-new-section">
 
 ## 새로운 기능
 
@@ -31,6 +31,7 @@ Adobe Experience Manager(AEM) Sites는 선도적인 경험 관리 플랫폼입�
 * **[AEM with Edge Delivery Services 아키텍처 개요(비디오)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html)**
   *AEM as a Cloud Service의 아키텍처에 대해 자세히 알아보십시오!*
 
+</div>
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>
