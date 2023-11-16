@@ -6,9 +6,9 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: 3f27a728bbaba1ff5a4c7d25e23c3979e59d73ea
+source-git-commit: 155790de88f6775a6624637dce3f98a018de4afc
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '522'
 ht-degree: 26%
 
 ---
@@ -67,6 +67,7 @@ ht-degree: 26%
 + Edge Delivery Services{#edge-delivery-services}
    + 개발{#developing}
       + [사전 요구 사항](./edge-delivery-services/developing/prerequisites.md)
+      + [AEM 보일러 플레이트](./edge-delivery-services/developing/aem-boilerplate.md)
       + [컨텐츠 저장소](./edge-delivery-services/developing/content-repository.md)
       + [미리보기 및 게시](./edge-delivery-services/developing/preview-and-publish.md)
       + [AEM Sidekick](./edge-delivery-services/developing/sidekick.md)
