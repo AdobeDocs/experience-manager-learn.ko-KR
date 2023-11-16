@@ -6,7 +6,7 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: d17544c4f8dda03e5147a1f48dbbdae005ee9438
+source-git-commit: 3f27a728bbaba1ff5a4c7d25e23c3979e59d73ea
 workflow-type: tm+mt
 source-wordcount: '520'
 ht-degree: 26%
@@ -25,7 +25,6 @@ ht-degree: 26%
    + [리디렉션](document-authoring/redirects.md)
    + [벌크 메타데이터](document-authoring/bulk-metadata.md)
    + [페이지 메타데이터](document-authoring/page-metadata.md)
-   + [응답형 탐색](document-authoring/responsive-navigation.md)
    + 방법{#how-to}
       + [문서 감사](./document-authoring/how-to/document-audit.md)
       + [문서 권한](./document-authoring/how-to/document-permissions.md)
@@ -34,6 +33,7 @@ ht-degree: 26%
       + [iFrame 포함](./document-authoring/how-to/iframes.md)
       + [이미지 대체 텍스트](./document-authoring/how-to/image-alt-text.md)
       + [검색 엔진 색인화 방지](./document-authoring/how-to/no-index.md)
+      + [응답형 탐색](document-authoring/how-to/responsive-navigation.md)
 + 페이지 작성 {#page-authoring}
    + [작성](page-authoring/aem-sites-authoring-overview.md)
    + [탐색](page-authoring/basic-handling-sites-feature-video-use.md)
@@ -54,11 +54,6 @@ ht-degree: 26%
    + [론치](page-authoring/launches.md)
    + 동료로부터 학습 {#expert-advice}
       + [사이트 계층 구조 팁](page-authoring/expert-advice/site-hierarchy.md)
-+ 구성 요소 {#components}
-   + [구성 요소 개발](components/component-development.md)
-   + [핵심 구성 요소](components/core-components-feature-video-understand.md)
-   + [웹에 최적화된 이미지 제공](components/web-optimized-image-delivery.md)
-   + [구성 요소 콘솔](components/components-console-feature-video-use.md)
 + 콘텐츠 조각 {#content-fragments}
    + [콘텐츠 조각 콘솔](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html){target=_blank}
    + [콘텐츠 조각 작성](content-fragments/content-fragments-feature-video-use.md)
@@ -99,6 +94,11 @@ ht-degree: 26%
    + [경험 조각 및 Adobe Target 설정](personalization/experience-fragment-target-technical-video-setup.md)
    + [Adobe Target에서 경험 조각 사용](personalization/experience-fragment-target-offer-feature-video-use.md)
    + [ContextHub 설정](personalization/context-hub-technical-video-setup.md)
++ 구성 요소 {#components}
+   + [구성 요소 개발](components/component-development.md)
+   + [핵심 구성 요소](components/core-components-feature-video-understand.md)
+   + [웹에 최적화된 이미지 제공](components/web-optimized-image-delivery.md)
+   + [구성 요소 콘솔](components/components-console-feature-video-use.md)
 + SEO {#seo}
    + [사이트맵](./seo/sitemaps.md)
 + SPA(Single Page Applications){#spa-editor}
