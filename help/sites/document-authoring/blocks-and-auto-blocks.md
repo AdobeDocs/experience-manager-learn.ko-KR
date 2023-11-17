@@ -1,6 +1,6 @@
 ---
-title: 기본 컨텐츠 및 섹션
-description: 기본 컨텐츠 및 섹션의 문서 작성 개념에 대해 자세히 알아봅니다.
+title: 문서 작성의 블록 및 자동 블록
+description: 문서 작성에서 블록 및 자동 블록을 사용하는 방법입니다.
 version: 6.5, Cloud Service
 feature: Authoring
 topic: Content Management
@@ -10,18 +10,18 @@ doc-type: Feature Video
 last-substantial-update: 2023-11-15T00:00:00Z
 jira: KT-14468
 thumbnail: 3425702.jpeg
-source-git-commit: d17544c4f8dda03e5147a1f48dbbdae005ee9438
+source-git-commit: 931c48b3687c8d7f8ec0ae8ef5d6dd2390fc119f
 workflow-type: tm+mt
-source-wordcount: '46'
+source-wordcount: '38'
 ht-degree: 0%
 
 ---
 
 
-# 기본 컨텐츠 및 섹션
+# 블록 및 자동 블록
 
 {{edge-delivery-services}}
 
-기본 컨텐츠 및 섹션의 문서 작성 개념과 이를 통해 더 나은 웹 경험을 만드는 방법에 대해 자세히 알아봅니다.
+문서 작성에서 블록과 자동 블록을 사용하는 방법과 이렇게 하면 사이트 및 작성 경험이 어떻게 개선되는지 살펴보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425702/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3425703/?learn=on)
