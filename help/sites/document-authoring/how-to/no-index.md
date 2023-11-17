@@ -10,9 +10,9 @@ doc-type: Technical Video
 last-substantial-update: 2023-11-15T00:00:00Z
 jira: KT-14493
 thumbnail: 3425726.jpeg
-source-git-commit: d17544c4f8dda03e5147a1f48dbbdae005ee9438
+source-git-commit: 6e44e914fad65d277c945e3b1bbbc2afe1707a1b
 workflow-type: tm+mt
-source-wordcount: '41'
+source-wordcount: '42'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,6 @@ ht-degree: 0%
 
 {{edge-delivery-services}}
 
-AEM 문서 작성을 사용하여 페이지를 작성하는 것이 검색 엔진에 의해 색인화되지 않도록 하는 방법을 알아봅니다.
+AEM 문서 작성을 사용하여 작성된 웹 페이지가 검색 엔진에 의해 색인화되지 않도록 하는 방법을 살펴봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425726/?learn=on)
