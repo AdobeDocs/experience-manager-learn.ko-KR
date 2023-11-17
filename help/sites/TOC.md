@@ -6,9 +6,9 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: 155790de88f6775a6624637dce3f98a018de4afc
+source-git-commit: 05365ec0d6a42c9697b0d0d076c96bffd2cd40d5
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '523'
 ht-degree: 26%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 26%
    + [설정](document-authoring/set-up.md)
    + [미리보기 및 게시](document-authoring/preview-and-publish.md)
    + [문서 구조](document-authoring/document-structure.md)
-   + [블록 및 자동 블록](document-authoring/blocks-and-auto-blocks.md)
+   + [기본 컨텐츠 및 섹션](document-authoring/default-content-and-sections.md)
    + [리디렉션](document-authoring/redirects.md)
    + [벌크 메타데이터](document-authoring/bulk-metadata.md)
    + [페이지 메타데이터](document-authoring/page-metadata.md)
