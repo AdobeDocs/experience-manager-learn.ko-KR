@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: bfc4d843c53373010ee04cfa590272cedea7a686
+source-git-commit: b770fc33ee0752911135d1a94144406bad8f295b
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1084'
 ht-degree: 22%
 
 ---
@@ -204,12 +204,13 @@ ht-degree: 22%
       + [4 - IntelliJ와 AEM 동기화](./forms/developing-for-cloud-service/intellij-and-aem-sync.md)
       + [5 - 양식 작성](./forms/developing-for-cloud-service/deploy-your-first-form.md)
       + [6 - 사용자 지정 제출 핸들러](./forms/developing-for-cloud-service/custom-submit-to-servlet.md)
-      + [7 - Forms 포털 구성 요소 활성화](./forms/developing-for-cloud-service/forms-portal-components.md)
-      + [8 - Cloud Service 및 FDM 포함](./forms/developing-for-cloud-service/azure-storage-fdm.md)
-      + [9 - 컨텍스트 인식 클라우드 구성](./forms/developing-for-cloud-service/context-aware-fdm.md)
-      + [10 - Cloud Manager로 푸시](./forms/developing-for-cloud-service/push-project-to-cloud-manager-git.md)
-      + [11 - 개발 환경에 배포](./forms/developing-for-cloud-service/deploy-to-dev-environment.md)
-      + [12 - Maven Archetype 업데이트](./forms/developing-for-cloud-service/updating-project-archetype.md)
+      + [7 - 리소스 유형을 사용하여 서블릿 등록](./forms/developing-for-cloud-service/registering-servlet-using-resourcetype.md)
+      + [8 - Forms 포털 구성 요소 활성화](./forms/developing-for-cloud-service/forms-portal-components.md)
+      + [9 - Cloud Service 및 FDM 포함](./forms/developing-for-cloud-service/azure-storage-fdm.md)
+      + [10 - 컨텍스트 인식 클라우드 구성](./forms/developing-for-cloud-service/context-aware-fdm.md)
+      + [11 - Cloud Manager로 푸시](./forms/developing-for-cloud-service/push-project-to-cloud-manager-git.md)
+      + [12 - 개발 환경에 배포](./forms/developing-for-cloud-service/deploy-to-dev-environment.md)
+      + [13 - Maven Archetype 업데이트](./forms/developing-for-cloud-service/updating-project-archetype.md)
    + 적응형 양식 만들기{#create-first-af}
       + [소개](./forms/create-first-af/introduction.md)
       + [테마 만들기](./forms/create-first-af/create-theme.md)
@@ -254,6 +255,12 @@ ht-degree: 22%
       + [PDF/A 유틸리티](./forms/forms-cs-assembler/pdfa-utilities.md)
       + [솔루션 테스트](./forms/forms-cs-assembler/test.md)
       + [과제](./forms/forms-cs-assembler/challenge.md)
+   + Blob 인덱스 태그를 사용하여 양식 제출 저장{#store-submiited-data-with-metadata-tags}
+      + [소개](./forms/store-submiited-data-with-metadata-tags/introduction.md)
+      + [선택 그룹 구성 요소 확장](./forms/store-submiited-data-with-metadata-tags/extend-choice-group-components.md)
+      + [OSGi 구성 만들기](./forms/store-submiited-data-with-metadata-tags/create-osgi-configuration.md)
+      + [색인 태그 만들기](./forms/store-submiited-data-with-metadata-tags/create-blob-index-tags.md)
+      + [사용자 정의 제출 만들기](./forms/store-submiited-data-with-metadata-tags/create-custom-submit.md)
    + Azure 포털 스토리지{#forms-cs-azure-portal}
       + [소개](./forms/forms-cs-azure-portal/introduction.md)
       + [양식 데이터 모델 만들기](./forms/forms-cs-azure-portal/create-fdm.md)
