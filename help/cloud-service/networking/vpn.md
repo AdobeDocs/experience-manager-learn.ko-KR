@@ -9,9 +9,9 @@ level: Intermediate
 kt: 9352
 thumbnail: KT-9352.jpeg
 exl-id: 74cca740-bf5e-4cbd-9660-b0579301a3b4
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: bccaccd386d065720cddfd689cbadc220609b8a8
 workflow-type: tm+mt
-source-wordcount: '1318'
+source-wordcount: '1319'
 ht-degree: 5%
 
 ---
@@ -45,7 +45,7 @@ Virtual Private Network를 설정할 때 필요한 사항은 다음과 같습니
    + 액세스 토큰(예: 전달자 토큰)
 + Cloud Manager 프로그램 ID
 + Cloud Manager 환경 ID
-+ 필요한 모든 연결 매개 변수에 액세스할 수 있는 가상 개인 네트워크.
++ A **경로 기반** 필요한 모든 연결 매개 변수에 액세스할 수 있는 가상 사설망
 
 자세한 내용은 다음 연습에서 Cloud Manager API 자격 증명을 설정, 구성 및 얻는 방법과 이를 사용하여 Cloud Manager API를 호출하는 방법을 참조하십시오.
 
@@ -257,7 +257,9 @@ AEM에서 HTTP/HTTPS 연결을 만들 때 VPN을 사용하면 HTTP/HTTPS 연결�
 
 비HTTP/HTTPS 연결을 만드는 경우(예: SQL, SMTP 등) AEM에서 AEM이 제공하는 특수 호스트 이름을 통해 연결해야 합니다.
 
-| 변수 이름 | 사용 | Java™ 코드 | OSGi 구성 | | - | - | - | - | | `AEM_PROXY_HOST` | 비 HTTP/HTTPS 연결용 프록시 호스트 | `System.getenv("AEM_PROXY_HOST")` | `$[env:AEM_PROXY_HOST]` |
+| 변수 이름 | 사용 | Java™ 코드 | OSGi 구성 |
+| - |  - | - | - |
+| `AEM_PROXY_HOST` | 비 HTTP/HTTPS 연결용 프록시 호스트 | `System.getenv("AEM_PROXY_HOST")` | `$[env:AEM_PROXY_HOST]` |
 
 
 외부 서비스에 대한 연결은 `AEM_PROXY_HOST` 및 매핑된 포트(`portForwards.portOrig`): AEM이 매핑된 외부 호스트 이름( )으로 라우팅합니다.`portForwards.name`) 및 포트(`portForwards.portDest`).
@@ -308,10 +310,10 @@ AEM 가상 사설망 구성은 VPN에 대한 as a Cloud Service 환경에 대한
       </p>
     </td>
    <td>
-      <a  href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html#restrict-vpn-to-ingress-connections"><img alt="AEM 게시에 대한 경로 기반 VPN 액세스 제한" src="./assets/code_examples__vpn-path-allow-list.png"/></a>
-      <div><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html#restrict-vpn-to-ingress-connections">AEM 게시에 대한 경로 기반 VPN 액세스 제한</a></strong></div>
+      <a  href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html#restrict-vpn-to-ingress-connections"><img alt="AEM 게시로의 경로 기반 VPN 액세스 제한" src="./assets/code_examples__vpn-path-allow-list.png"/></a>
+      <div><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html#restrict-vpn-to-ingress-connections">AEM 게시로의 경로 기반 VPN 액세스 제한</a></strong></div>
       <p>
-            AEM 게시의 특정 경로에 대한 VPN 액세스 권한이 필요합니다.
+            AEM Publish의 특정 경로에 대해 VPN 액세스 권한이 필요합니다.
       </p>
     </td>
    <td></td>
