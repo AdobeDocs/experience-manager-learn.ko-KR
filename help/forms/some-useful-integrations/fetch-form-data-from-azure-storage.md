@@ -8,9 +8,9 @@ role: Developer
 level: Beginner
 last-substantial-update: 2023-10-23T00:00:00Z
 kt: 14238
-source-git-commit: 5e761ef180182b47c4fd2822b0ad98484db23aab
+source-git-commit: 23459de98420d2a489288df4a1b992c17d42972e
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
@@ -46,18 +46,18 @@ public String getBlobData(String blobID) {
 
     } catch (ClientProtocolException e) {
 
-        log.error("Got Client Protocol Exception " + e.getMessage());
+        log.debug("Got Client Protocol Exception " + e.getMessage());
     } catch (IOException e) {
 
-        log.error("Got IOEXception " + e.getMessage());
+        log.debug("Got IOEXception " + e.getMessage());
     }
 
     return null;
 }
 ```
 
-적응형 양식이 로 렌더링될 때 `guid` url의 매개 변수에서 템플릿과 연결된 사용자 지정 페이지 구성 요소는 적응형 양식을 가져오고 Azure 스토리지의 데이터로 채웁니다.
-템플릿과 연관된 페이지 구성 요소에는 다음 JSP 코드가 있습니다.
+적응형 양식이 URL에서 guid 매개 변수로 렌더링되면 템플릿과 연결된 사용자 지정 페이지 구성 요소가 적응형 양식을 가져와서 Azure 스토리지의 데이터로 채웁니다.
+다음은 템플릿과 연관된 페이지 구성 요소의 jsp에 있는 코드입니다
 
 ```java
 com.aemforms.saveandfetchfromazure.StoreAndFetchDataFromAzureStorage azureStorage = sling.getService(com.aemforms.saveandfetchfromazure.StoreAndFetchDataFromAzureStorage.class);
@@ -81,9 +81,11 @@ if(guid!=null&&!guid.isEmpty())
 
 * [샘플 적응형 양식 가져오기](./assets/bank-account-sample-form.zip)
 
-* OSGi 구성 콘솔을 사용하여 Azure 포털 구성에서 적절한 값을 지정합니다
+* OSGi 구성 콘솔을 사용하여 Azure 포털 구성에서 적절한 값을 지정합니다.
+
 * [BankAccount 양식 미리 보기 및 제출](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled)
 
 * 선택한 Azure 스토리지 컨테이너에 데이터가 저장되었는지 확인합니다. Blob ID를 복사합니다.
+
 * [BankAccount 양식 미리 보기](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled&amp;guid=dba8ac0b-8be6-41f2-9929-54f627a649f6) 및 Azure 스토리지의 데이터로 미리 채워질 양식의 URL에서 Blob ID를 guid 매개 변수로 지정합니다
 

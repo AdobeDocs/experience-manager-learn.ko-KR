@@ -8,11 +8,10 @@ version: 6.4, 6.5
 feature: PDF Generator
 kt: 7071
 topic: Development
-exl-id: ffa9d243-37e5-420c-91dc-86c73a824083
 last-substantial-update: 2020-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: 23459de98420d2a489288df4a1b992c17d42972e
 workflow-type: tm+mt
-source-wordcount: '1277'
+source-wordcount: '1309'
 ht-degree: 0%
 
 ---
@@ -59,6 +58,8 @@ XFA Forms은 XML을 기반으로 합니다. 이렇게 구조가 잘 되고 유�
 
 * 동적 양식은 양식의 레이아웃과 페이지 매김을 변경하는 클라이언트측 스크립트를 지원합니다. 예를 들어 Purchase Order.xdp는 동적 양식으로 저장하는 경우 무제한 양의 데이터를 수용하도록 확장되고 페이지가 지정됩니다
 * 동적 양식은 런타임 시 양식의 모든 속성을 지원하는 반면, 정적 양식은 하위 집합만 지원합니다
+
+* [정적 및 동적 pdf 양식의 차이점을 이해하려면 이 문서 를 참조하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents.html#:~:text=Dynamic%20forms%20support%20all%20the,forms%20support%20only%20a%20subset)
 
 >[!NOTE]
 >
