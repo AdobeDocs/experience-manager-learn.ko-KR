@@ -3,14 +3,14 @@ title: 콘텐츠 조각 작성 - AEM Headless 시작하기 - GraphQL
 description: Adobe Experience Manager(AEM) 및 GraphQL을 시작합니다. 콘텐츠 조각 모델을 기반으로 새 콘텐츠 조각을 만들고 편집합니다. 콘텐츠 조각의 변형을 만드는 방법을 알아봅니다.
 version: Cloud Service
 mini-toc-levels: 1
-kt: 6713
+jira: KT-6713
 thumbnail: 22451.jpg
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 701fae92-f740-4eb6-8133-1bc45a472d0f
-source-git-commit: 25c289b093297e870c52028a759d05628d77f634
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '810'
 ht-degree: 4%
@@ -49,7 +49,7 @@ ht-degree: 4%
 
    ![폴더 속성 열기](assets/author-content-fragments/open-folder-properties.png)
 
-1. 탭 **Cloud Services** 탭. 클라우드 구성 탭에서 경로 파인더를 사용하여 **내 프로젝트** 구성. 값은 다음과 같아야 합니다. `/conf/my-project`.
+1. 탭 **Cloud Service** 탭. 클라우드 구성 탭에서 경로 파인더를 사용하여 **내 프로젝트** 구성. 값은 다음과 같아야 합니다. `/conf/my-project`.
 
    ![클라우드 구성 설정](assets/author-content-fragments/set-cloud-config-my-project.png)
 
@@ -90,7 +90,7 @@ ht-degree: 4%
    * 이름: `john-doe`
 
    ![새 콘텐츠 조각](assets/author-content-fragments/new-content-fragment-john-doe.png)
-1. 누르기 **만들기**.
+1. **만들기**&#x200B;를 탭합니다.
 1. 위의 단계를 반복하여 을 나타내는 조각을 생성합니다. **앨리슨 스미스**:
 
    * 위치: `/content/dam/my-project/en`
@@ -100,11 +100,11 @@ ht-degree: 4%
 
    누르기 **만들기** 개인 조각을 만듭니다.
 
-1. 그런 다음 단계를 반복하여 **팀** 을 나타내는 조각 **팀 알파**:
+1. 그런 다음 단계를 반복하여 **팀** 을 나타내는 조각 **팀 Alpha**:
 
    * 위치: `/content/dam/my-project/en`
    * 콘텐츠 조각 모델: **팀**
-   * 제목: **팀 알파**
+   * 제목: **팀 Alpha**
    * 이름: `team-alpha`
 
    누르기 **만들기** 팀 조각을 만듭니다.
@@ -131,7 +131,7 @@ ht-degree: 4%
 
 ## 팀 컨텐츠 조각 편집 {#edit-team-content-fragment}
 
-1. 를 엽니다. **팀 알파** 콘텐츠 조각 UI를 사용하는 콘텐츠 조각.
+1. 를 엽니다. **팀 Alpha** 콘텐츠 조각 UI를 사용하는 콘텐츠 조각.
 1. 다음에 대한 필드 작성 **제목**, **짧은 이름**, 및 **설명**.
 1. 다음 항목 선택 **존 도** 및 **앨리슨 스미스** 콘텐츠 조각 을 사용하여 **팀원** 필드:
 
@@ -141,7 +141,7 @@ ht-degree: 4%
    >
    >를 사용하여 콘텐츠 조각을 인라인으로 만들 수도 있습니다. **새 콘텐츠 조각** 단추를 클릭합니다.
 
-1. 누르기 **저장 및 닫기** 팀 알파 조각의 변경 사항을 저장합니다.
+1. 누르기 **저장 및 닫기** 팀 Alpha 조각의 변경 사항을 저장합니다.
 
 ## 콘텐츠 조각 게시
 

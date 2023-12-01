@@ -1,12 +1,8 @@
 ---
 title: Experience Platform 데이터 수집 태그(Launch) 및 AEM 통합
 description: Experience Platform 데이터 수집의 태그는 Adobe의 차세대 태그 관리 솔루션이며 Adobe Analytics, Target, Audience Manager 및 기타 다양한 솔루션을 배포하는 최고의 방법입니다. Tags(이전의 Launch)에 대한 개요와 Adobe Experience Manager과의 권장 통합을 확인하십시오.
-topics: integrations
-audience: administrator
 solution: Experience Manager, Data Collection, Experience Platform
-doc-type: technical video
-activity: setup
-kt: 5979
+jira: KT-5979
 thumbnail: 39090.jpg
 topic: Integrations
 feature: Integrations
@@ -15,8 +11,9 @@ level: Intermediate
 last-substantial-update: 2022-07-10T00:00:00Z
 badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
+doc-type: Tutorial
 exl-id: bdae56d8-96e7-4b05-9b8b-3c6c2e998bd8
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '345'
 ht-degree: 3%
@@ -32,7 +29,7 @@ Experience Platform 통합 방법 알아보기 _데이터 수집 태그_ (이전
 >Adobe Experience Platform Launch은 Adobe Experience Platform의 데이터 수집 기술군으로 새롭게 브랜딩되었습니다. 그 결과 제품 설명서에 몇 가지 용어 변경 사항이 적용되었습니다. 다음을 참조하십시오 [문서](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html) 용어 변경에 대한 통합 참조.
 
 
-태그는 Adobe Experience Platform의 차세대 태그 관리 기술입니다. 태그는 Adobe Analytics, Target, Audience Manager 등을 배포하는 가장 간단한 방법을 제공합니다. Tags 개요 및 Adobe Experience Manager과의 권장 통합을 확인하십시오.
+태그는 Adobe Experience Platform의 차세대 태그 관리 기술입니다. 태그는 Adobe Analytics, Target, Audience Manager 및 기타 여러 솔루션을 배포하는 가장 간단한 방법을 제공합니다. Tags 개요 및 Adobe Experience Manager과의 권장 통합을 확인하십시오.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3417061?quality=12&learn=on)
 

@@ -2,17 +2,17 @@
 title: AEM Sites 시작하기 - 구성 요소 기본 사항
 description: 간단한 'HelloWorld' 예제를 통해 Adobe Experience Manager(AEM) Sites 구성 요소의 기본 기술을 이해합니다. HTL, Sling 모델, 클라이언트측 라이브러리 및 작성자 대화 상자의 주제를 살펴봅니다.
 version: 6.5, Cloud Service
-type: Tutorial
 feature: Core Components, Developer Tools
 topic: Content Management, Development
 role: Developer
 level: Beginner
 mini-toc-levels: 1
-kt: 4081
+jira: KT-4081
 thumbnail: 30177.jpg
+doc-type: Tutorial
 exl-id: 7fd021ef-d221-4113-bda1-4908f3a8629f
 recommendations: noDisplay, noCatalog
-source-git-commit: 4c91ab68f6e31f0eb549689c7ecfd0ee009801d9
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1226'
 ht-degree: 1%

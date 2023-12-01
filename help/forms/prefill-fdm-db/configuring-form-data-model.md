@@ -3,13 +3,13 @@ title: 양식 데이터 모델 구성
 description: RDBMS 데이터 소스를 기반으로 양식 데이터 모델 만들기
 feature: Adaptive Forms
 version: 6.4,6.5
-kt: 5812
+jira: KT-5812
 thumbnail: kt-5812.jpg
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 5fa4638f-9faa-40e0-a20d-fdde3dbb528a
-source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 1%
@@ -67,7 +67,7 @@ RDBMS 지원 양식 데이터 모델을 만드는 첫 번째 단계는 Apache Sl
 
 * 새 엔티티를 선택하고 을(를) 클릭합니다. _연결 추가_
 * 아래 스크린샷과 같이 의미 있는 제목 및 식별자를 연결 및 기타 속성에 제공합니다
-   ![연결](assets/association-entities-1.png)
+  ![연결](assets/association-entities-1.png)
 
 * 을(를) 클릭합니다 _편집_ 인수 섹션 아래에 있는 아이콘
 

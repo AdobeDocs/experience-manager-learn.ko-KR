@@ -2,12 +2,13 @@
 title: AEM 스타일 시스템에 대한 코드 작성 방법 이해
 description: 이 비디오에서는 스타일 시스템을 사용하여 Adobe Experience Manager의 핵심 제목 구성 요소 스타일을 지정하는 데 사용되는 CSS(또는 LESS) 및 JavaScript의 구조, 이러한 스타일이 HTML 및 DOM에 적용되는 방법에 대해 살펴봅니다.
 feature: Style System
-version: 6.4, 6.5
+version: 6.4, 6.5, Cloud Service
 topic: Development
 role: Developer
 level: Intermediate, Experienced
+doc-type: Technical Video
 exl-id: 8fbc3819-3214-4c58-8629-a27eb6f0c545
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1090'
 ht-degree: 1%
@@ -232,7 +233,7 @@ jQuery(function ($) {
 
 ### JavaScript 우수 사례 {#javascript-best-practices}
 
-이 섹션에 정의된 우수 사례는 &quot;style-JavaScript&quot; 또는 기능 목적이 아닌 스타일용으로 구성 요소를 조작하기 위한 JavaScript와 관련이 있습니다.
+이 섹션에 정의된 우수 사례는 &quot;style-JavaScript&quot; 또는 기능 목적이 아닌 스타일 목적으로 구성 요소를 조작하기 위한 JavaScript와 관련이 있습니다.
 
 * Style-JavaScript는 신중하게 사용해야 하며 이는 소수의 사용 사례입니다.
 * Style-JavaScript는 주로 CSS의 스타일링을 지원하도록 구성 요소의 DOM을 조작하는 데 사용해야 합니다.

@@ -2,18 +2,18 @@
 title: 구성 요소 확장 | AEM SPA 편집기 및 Angular 시작하기
 description: AEM SPA 편집기에서 사용할 기존 핵심 구성 요소를 확장하는 방법을 알아봅니다. 기존 구성 요소에 속성 및 콘텐츠를 추가하는 방법을 이해하는 것은 AEM SPA Editor 구현의 기능을 확장하는 강력한 기술입니다. Sling 리소스 병합의 Sling 모델 및 기능을 확장하기 위해 위임 패턴을 사용하는 방법에 대해 알아봅니다.
 feature: SPA Editor, Core Components
-doc-type: tutorial
 topics: development
 version: Cloud Service
 activity: develop
 audience: developer
-kt: 5871
+jira: KT-5871
 thumbnail: 5871-spa-angular.jpg
 topic: SPA
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: 0265d3df-3de8-4a25-9611-ddf73d725f6e
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1935'
 ht-degree: 2%
@@ -38,7 +38,7 @@ AEM SPA 편집기에서 사용할 기존 핵심 구성 요소를 확장하는 �
 
 >[!NOTE]
 >
-> 실제 구현에서는 를 사용하는 것이 더 적합할 수 있습니다. [티저 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/teaser.html) 를 확장하는 것 보다 [이미지 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) 을(를) 만들려면 `Card` 구성 요소는 프로젝트 요구 사항에 따라 달라집니다. 항상 를 사용하는 것이 좋습니다. [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko) 가능한 경우 직접
+> 실제 구현에서는 를 사용하는 것이 더 적합할 수 있습니다. [티저 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/teaser.html) 를 확장하는 것 보다 [이미지 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) 을(를) 만들려면 `Card` 구성 요소는 프로젝트 요구 사항에 따라 달라집니다. 항상 를 사용하는 것이 좋습니다. [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 가능한 경우 직접
 
 ## 사전 요구 사항
 
@@ -261,7 +261,7 @@ AEM SPA 편집기에서 사용할 기존 핵심 구성 요소를 확장하는 �
 
    이러한 메서드는 JSON 모델 API를 통해 노출되고 Angular 구성 요소에 전달됩니다.
 
-3. 열기 `CardImpl.java`. 이는 의 구현입니다. `Card.java` 인터페이스. 이 구현은 자습서를 가속화하기 위해 부분적으로 자세히 설명되어 있습니다.  의 사용에 주목하십시오. `@Model` 및 `@Exporter` 슬링 모델 익스포터를 통해 슬링 모델을 JSON으로 일련화할 수 있도록 하는 주석입니다.
+3. `CardImpl.java`를 엽니다. 이는 의 구현입니다. `Card.java` 인터페이스. 이 구현은 자습서를 가속화하기 위해 부분적으로 자세히 설명되어 있습니다.  의 사용에 주목하십시오. `@Model` 및 `@Exporter` 슬링 모델 익스포터를 통해 슬링 모델을 JSON으로 일련화할 수 있도록 하는 주석입니다.
 
    `CardImpl.java` 는 를 사용합니다 [Sling 모델의 전달 패턴](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) 이미지 핵심 구성 요소에서 논리를 다시 작성하지 않도록 합니다.
 

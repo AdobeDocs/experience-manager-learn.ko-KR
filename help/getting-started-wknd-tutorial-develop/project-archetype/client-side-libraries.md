@@ -2,16 +2,16 @@
 title: 클라이언트 라이브러리 및 프론트엔드 워크플로
 description: 클라이언트 라이브러리를 사용하여 AEM(Adobe Experience Manager) Sites 구현을 위한 CSS 및 JavaScript를 배포하고 관리하는 방법을 알아봅니다. Webpack 프로젝트인 ui.frontend 모듈을 전체 빌드 프로세스에 통합하는 방법에 대해 알아봅니다.
 version: 6.4, 6.5, Cloud Service
-type: Tutorial
 feature: Core Components, AEM Project Archetype
 topic: Content Management, Development
 role: Developer
 level: Beginner
-kt: 4083
+jira: KT-4083
 thumbnail: 30359.jpg
+doc-type: Tutorial
 exl-id: 8d3026e9-a7e2-4a76-8a16-a8197a5e04e3
 recommendations: noDisplay, noCatalog
-source-git-commit: 68a7f263284fdf9cfcf82572b8e1e1c0c01e4b55
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2799'
 ht-degree: 2%
@@ -162,7 +162,7 @@ ht-degree: 2%
 
    ![변경된 파일](assets/client-side-libraries/changed-files-uifrontend.png)
 
-   Inspect에서 변경된 파일을 확인하여 WKND 스타일 구현의 세부 사항을 볼 수 있습니다.
+   Inspect에서 변경된 파일을 확인하여 WKND 스타일 구현의 세부 사항을 확인할 수 있습니다.
 
 ## ui.frontend 통합 Inspect {#ui-frontend-integration}
 
@@ -257,7 +257,7 @@ AEM Project Archetype 은 이 통합을 자동으로 설정합니다. 그런 다
 
    ![클라이언트측 라이브러리](assets/client-side-libraries/style-update-brand-primary.png)
 
-1. 변경 내용을 (으)로 되돌리기 `$brand-primary` 명령을 사용하여 Webpack 빌드의 색상을 지정하고 중지합니다. `CTRL+C`.
+1. 변경 내용을 (으)로 되돌리기 `$brand-primary` 명령을 사용하여 Webpack 빌드의 색상 지정 및 중지 `CTRL+C`.
 
 >[!CAUTION]
 >

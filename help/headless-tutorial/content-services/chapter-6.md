@@ -1,21 +1,22 @@
 ---
 title: 6장 - AEM 게시에서 콘텐츠를 JSON으로 노출 - 콘텐츠 서비스
-description: AEM Headless 자습서 6장에서는 모바일 앱에서 사용할 수 있도록 필요한 모든 패키지, 구성 및 콘텐츠가 AEM Publish에 있는지 확인하는 방법에 대해 다룹니다.
+description: AEM Headless 자습서 6장에서는 모바일 앱에서 사용할 수 있도록 AEM Publish에 필요한 모든 패키지, 구성 및 콘텐츠가 있는지 확인하는 방법에 대해 다룹니다.
 feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: b33d1509-531d-40c3-9b26-1d18c8d86a97
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 0%
 
 ---
 
-# 6장 - 게재를 위해 AEM 게시에서 콘텐츠 노출
+# 6장 - 게재를 위해 AEM 게시에서 컨텐츠 노출
 
-AEM Headless 자습서 6장에서는 모바일 앱에서 사용할 수 있도록 필요한 모든 패키지, 구성 및 콘텐츠가 AEM Publish에 있는지 확인하는 방법에 대해 다룹니다.
+AEM Headless 자습서 6장에서는 모바일 앱에서 사용할 수 있도록 AEM Publish에 필요한 모든 패키지, 구성 및 콘텐츠가 있는지 확인하는 방법에 대해 다룹니다.
 
 ## AEM Content Services용 콘텐츠 게시
 
@@ -59,13 +60,14 @@ AEM Content Services는 구성(콘텐츠 조각 모델, 편집 가능한 템플�
 
 ## AEM 게시 확인
 
-1. 새 웹 브라우저에서 AEM Publish에서 로그아웃되었는지 확인하고 다음 URL을 요청합니다(대체 `http://localhost:4503` 모든 호스트에 대해:포트 AEM 게시가 실행 중입니다).
+1. 새 웹 브라우저에서 AEM Publish에서 로그아웃되었는지 확인하고 다음 URL을 요청합니다(대체 `http://localhost:4503` 모든 호스트에 대해:port AEM Publish가 실행 중입니다.)
 
    * [http://localhost:4503/content/wknd-mobile/en/api/events.model.json](http://localhost:4503/content/wknd-mobile/en/api/events.model.tidy.json)
+
    이러한 요청은 해당 AEM 작성자 끝점을 검토할 때와 동일한 JSON 응답을 반환해야 합니다. 그렇지 않으면 모든 게시가 성공했는지 확인합니다(복제 큐 확인). [!DNL WKND Mobile] `ui.apps` 패키지가 AEM Publish에 설치되고 `error.log` AEM 게시용.
 
 ## 다음 단계
 
-설치할 추가 패키지가 없습니다. 이 섹션에 설명된 콘텐츠 및 구성이 AEM Publish에 게시되었는지 확인하십시오. 그렇지 않으면 후속 챕터가 작동하지 않습니다.
+설치할 추가 패키지가 없습니다. 이 섹션에 설명된 내용과 구성이 AEM Publish에 게시되어 있는지 확인하십시오. 그렇지 않으면 후속 챕터가 작동하지 않습니다.
 
 * [7장 - 모바일 앱에서 AEM Content Services 사용](./chapter-7.md)

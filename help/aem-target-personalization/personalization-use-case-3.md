@@ -1,16 +1,15 @@
 ---
 title: Adobe Target 시각적 경험 작성기를 사용한 개인화
-seo-title: Personalization using Adobe Target Visual Experience Composer (VEC)
 description: Adobe Target VEC(시각적 경험 작성기)를 사용하여 개인화된 경험을 만들고 전달하는 방법을 보여 주는 종단간 자습서입니다.
-seo-description: An end-to-end tutorial showing how to create and deliver personalized experience using Adobe Target Visual Experience Composer (VEC).
 feature: Experience Fragments
 topic: Personalization
 role: Developer
 level: Intermediate
 badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Sites 6.5" before-title="false"
+doc-type: Tutorial
 exl-id: 1550e6a7-04b5-4a40-9d7b-88074283402f
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '585'
 ht-degree: 2%

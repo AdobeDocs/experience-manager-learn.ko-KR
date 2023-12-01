@@ -6,10 +6,10 @@ feature: Dispatcher
 topic: Migration, Upgrade
 role: Developer
 level: Experienced
-kt: 8633
+jira: KT-8633
 thumbnail: 336962.jpeg
 exl-id: 81397b21-b4f3-4024-a6da-a9b681453eff
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 6%
@@ -27,7 +27,7 @@ AEM 6용 AEM의 주목할 만한 변경 사항, Dispatcher 변환 도구 및 Dis
 
 ![Dispatcher 변환기](./assets/dispatcher-converter-diagram.png)
 
-코드 베이스를 리팩터링하는 과정의 일부로 [AEM Dispatcher 변환기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/dispatcher-transformation-utility-tools.html) 기존 온-프레미스 또는 Adobe Managed Services 디스패처 구성을 AEMas a Cloud Service 와 호환되는 디스패처 구성으로 리팩터링합니다.
+코드 베이스를 리팩터링하는 과정의 일부로 [AEM Dispatcher 변환기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/dispatcher-transformation-utility-tools.html) 기존 온-프레미스 또는 Adobe Managed Services AEM Dispatcher 구성을 as a Cloud Service 호환 Dispatcher 구성으로 리팩터링합니다.
 
 ## 주요 활동
 

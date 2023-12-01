@@ -1,23 +1,23 @@
 ---
 title: AEM Publish 서비스를 사용하는 프로덕션 배포 - AEM Headless 시작하기 - GraphQL
-description: AEM Author 및 Publish 서비스와 Headless 애플리케이션에 권장되는 배포 패턴에 대해 알아봅니다. 이 자습서에서는 환경 변수를 사용하여 대상 환경을 기반으로 GraphQL 끝점을 동적으로 변경하는 방법을 알아봅니다. CORS(원본 간 리소스 공유)를 위해 AEM을 올바르게 구성하는 방법을 알아봅니다.
+description: AEM Author 및 Publish 서비스와 Headless 애플리케이션의 권장 배포 패턴에 대해 알아봅니다. 이 자습서에서는 환경 변수를 사용하여 대상 환경을 기반으로 GraphQL 끝점을 동적으로 변경하는 방법을 알아봅니다. CORS(원본 간 리소스 공유)를 위해 AEM을 올바르게 구성하는 방법을 알아봅니다.
 version: Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
 mini-toc-levels: 1
-kt: 7131
+jira: KT-7131
 thumbnail: KT-7131.jpg
 exl-id: 8c8b2620-6bc3-4a21-8d8d-8e45a6e9fc70
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2357'
 ht-degree: 9%
 
 ---
 
-# AEM 게시 서비스를 사용한 프로덕션 배포
+# AEM Publish 서비스를 사용한 프로덕션 배포
 
 이 자습서에서는 작성자 인스턴스에서 게시 인스턴스로 배포되는 콘텐츠를 시뮬레이션하도록 로컬 환경을 설정합니다. 또한 GraphQL API를 사용하여 AEM 게시 환경의 콘텐츠를 사용하도록 구성된 React 앱의 프로덕션 빌드를 생성합니다. 그 과정에서 환경 변수를 효과적으로 사용하는 방법과 AEM CORS 구성을 업데이트하는 방법을 배우게 됩니다.
 
@@ -48,7 +48,7 @@ AEM Headless 애플리케이션의 가장 일반적인 배포 패턴은 애플�
 3. 콘텐츠가 승인되면 다음과 같을 수 있습니다. **게시됨** AEM Publish 서비스로 리디렉션됩니다.
 4. **최종 사용자는 애플리케이션의 프로덕션 버전과 상호 작용합니다.** 프로덕션 애플리케이션은 Publish 서비스에 연결하고 GraphQL API를 사용하여 콘텐츠를 요청하고 소비합니다.
 
-자습서는 AEM 게시 인스턴스를 현재 설정에 추가하여 위의 배포를 시뮬레이션합니다. 이전 장에서는 React 앱을 작성자 인스턴스에 직접 연결하여 미리보기 역할을 했습니다. React 앱의 프로덕션 빌드는 새 게시 인스턴스에 연결하는 정적 Node.js 서버에 배포됩니다.
+자습서에서는 AEM Publish 인스턴스를 현재 설정에 추가하여 위의 배포를 시뮬레이션합니다. 이전 장에서는 React 앱을 작성자 인스턴스에 직접 연결하여 미리보기 역할을 했습니다. React 앱의 프로덕션 빌드는 새 게시 인스턴스에 연결하는 정적 Node.js 서버에 배포됩니다.
 
 결국 세 개의 로컬 서버가 실행되고 있습니다.
 
@@ -98,7 +98,7 @@ AEM Headless 애플리케이션의 가장 일반적인 배포 패턴은 애플�
 
    ![WKND 로그아웃 참조 사이트](assets/publish-deployment/sign-out-wknd-reference-site.png)
 
-   AEM 작성자 인스턴스와 달리 AEM 게시 인스턴스는 기본적으로 익명 읽기 전용 액세스로 설정됩니다. React 애플리케이션을 실행할 때 익명의 사용자 경험을 시뮬레이션하려고 합니다.
+   AEM Author 인스턴스와 달리 AEM Publish 인스턴스는 기본적으로 익명 읽기 전용 액세스로 설정됩니다. React 애플리케이션을 실행할 때 익명의 사용자 경험을 시뮬레이션하려고 합니다.
 
 ## 게시 인스턴스를 가리키도록 환경 변수 업데이트 {#react-app-publish}
 
@@ -341,7 +341,7 @@ React 앱은 Webpack 서버를 사용하여 시작할 수 있지만 개발용입
 
 1. 에서 실행 중인 React 앱으로 돌아갑니다. [http://localhost:5000/](http://localhost:5000/). 이제 발리 서프 캠프(Bali Surf Camp)를 클릭하여 모험 세부 정보를 볼 수 있습니다.
 
-1. 에서 AEM 작성자 인스턴스로 다시 전환합니다. [http://localhost:4502/editor.html/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp](http://localhost:4502/editor.html/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp) 및 업데이트 **제목** 조각. **저장 및 닫기** 조각. 그러면 **게시** 조각.
+1. 다음 위치에서 AEM 작성자 인스턴스로 다시 전환: [http://localhost:4502/editor.html/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp](http://localhost:4502/editor.html/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp) 및 업데이트 **제목** 조각. **저장 및 닫기** 조각. 그러면 **게시** 조각.
 1. 다음으로 돌아가기: [http://localhost:5000/adventure:/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp](http://localhost:5000/adventure:/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp) 게시된 변경 사항을 확인합니다.
 
    ![Bali Surf Camp 게시 업데이트](assets/publish-deployment/bali-surf-camp-update.png)
@@ -350,7 +350,7 @@ React 앱은 Webpack 서버를 사용하여 시작할 수 있지만 개발용입
 
 AEM은 기본적으로 안전하며 AEM이 아닌 웹 속성에서 클라이언트측 호출을 허용하지 않습니다. AEM CORS(원본 간 리소스 공유) 구성을 사용하면 특정 도메인에서 AEM을 호출할 수 있습니다.
 
-다음으로 AEM 게시 인스턴스의 CORS 구성을 테스트합니다.
+그런 다음 AEM 게시 인스턴스의 CORS 구성을 테스트합니다.
 
 1. 명령을 사용하여 React 앱이 실행 중인 터미널 창으로 돌아갑니다. `npm run serve`:
 
@@ -373,7 +373,7 @@ AEM은 기본적으로 안전하며 AEM이 아닌 웹 속성에서 클라이언�
 
    ![CORS 오류](assets/publish-deployment/cors-error-not-fetched.png)
 
-   그런 다음 AEM 게시 CORS 구성을 업데이트하여 네트워크 IP 주소에서의 요청을 허용합니다.
+   그런 다음 AEM Publish CORS 구성을 업데이트하여 네트워크 IP 주소에서 요청을 허용합니다.
 
 1. 다음으로 이동 [http://localhost:4503/content/wknd/us/en/errors/sign-in.html](http://localhost:4503/content/wknd/us/en/errors/sign-in.html) 사용자 이름으로 로그인 `admin` 및 암호 `admin`.
 
@@ -401,7 +401,7 @@ AEM은 기본적으로 안전하며 AEM이 아닌 웹 속성에서 클라이언�
 
 ## 축하합니다! {#congratulations}
 
-축하합니다! 이제 AEM 게시 환경을 사용하여 전체 프로덕션 배포를 시뮬레이션했습니다. 또한 AEM에서 CORS 구성을 사용하는 방법에 대해 알아보았습니다.
+축하합니다! 이제 AEM Publish 환경을 사용하여 전체 프로덕션 배포를 시뮬레이션했습니다. 또한 AEM에서 CORS 구성을 사용하는 방법에 대해 알아보았습니다.
 
 ## 기타 리소스
 

@@ -6,8 +6,9 @@ feature: Search
 topic: Content Management
 role: Developer
 level: Beginner
+doc-type: Technical Video
 exl-id: 7be8c3d5-b944-4421-97b3-bd5766c1b1b5
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '867'
 ht-degree: 0%
@@ -26,28 +27,28 @@ ht-degree: 0%
 
 1. Oak Search Machine Translation OSGi 번들 다운로드 및 설치
    * [Oak 검색 기계 번역 OSGi 번들 다운로드](https://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22org.apache.jackrabbit%22%20AND%20a%3A%22oak-search-mt%22) AEM Oak 버전에 해당합니다.
-   * 를 통해 다운로드한 Oak 검색 기계 번역 OSGi 번들을 AEM에 설치합니다. [ `/system/console/bundles`](http://localhost:4502/system/console/bundles).
+   * 를 통해 다운로드한 Oak 검색 기계 번역 OSGi 번들을 AEM에 설치합니다. [`/system/console/bundles`](http://localhost:4502/system/console/bundles).
 
 2. Apache Joshua 언어 팩 다운로드 및 업데이트
    * 원하는 를 다운로드하고 압축 해제합니다. [Apache Joshua 언어 팩](https://cwiki.apache.org/confluence/display/JOSHUA/Language+Packs).
    * 편집 `joshua.config` 다음으로 시작하는 2개의 줄을 기록하고 주석 처리합니다.
 
-      ```
-      feature-function = LanguageModel ...
-      ```
+     ```
+     feature-function = LanguageModel ...
+     ```
 
    * 언어 팩의 모델 폴더 크기를 결정하고 기록하십시오. 이는 AEM에 필요한 추가 힙 공간의 양에 영향을 미칩니다.
    * 압축 해제된 Apache Joshua 언어 팩 폴더 이동( `joshua.config` (편집) 대상
 
-      ```
-      .../crx-quickstart/opt/<source_language-target_language>
-      ```
+     ```
+     .../crx-quickstart/opt/<source_language-target_language>
+     ```
 
-      예:
+     예:
 
-      ```
-       .../crx-quickstart/opt/es-en
-      ```
+     ```
+      .../crx-quickstart/opt/es-en
+     ```
 
 3. 업데이트된 힙 메모리 할당으로 AEM 다시 시작
    * AEM 중지
@@ -56,11 +57,13 @@ ht-degree: 0%
       * AEM 사전 언어 부족 힙 크기 + 모델 디렉터리 크기를 가장 가까운 2GB로 반올림함
       * 예를 들어, 사전 언어 팩을 실행하려면 AEM 설치에 8GB의 힙이 필요하며 언어 팩의 모델 폴더가 3.8GB의 압축되지 않은 경우 새 힙 크기는 다음과 같습니다.
 
-         원본 `8GB` + ( `3.75GB` 가장 가까운 자리로 반올림됨 `2GB`, `4GB`) `12GB`
+        원본 `8GB` + ( `3.75GB` 가장 가까운 자리로 반올림됨 `2GB`, `4GB`) `12GB`
+
    * 컴퓨터에 사용할 수 있는 메모리가 이 정도인지 확인합니다.
    * AEM 시작 스크립트를 업데이트하여 새 힙 크기에 맞게 조정
 
       * 예. `java -Xmx12g -jar cq-author-p4502.jar`
+
    * 힙 크기를 늘린 상태로 AEM을 다시 시작합니다.
 
    >[!NOTE]
@@ -93,8 +96,8 @@ ht-degree: 0%
    * 언어 팩이 업데이트되는 경우 AEM에 업데이트를 설치하려면 위의 2 - 4단계를 따라야 하며 필요에 따라 힙 크기를 늘리거나 줄여야 합니다.
 
       * 압축이 해제된 언어 팩을 crx-quickstart/opt 폴더로 이동할 때 새 폴더로 복사하기 전에 기존 언어 팩 폴더를 이동하십시오.
-   * AEM을 다시 시작할 필요가 없는 경우 AEM이 업데이트된 파일을 처리할 수 있도록 업데이트된 언어 팩과 관련된 Apache Jackrabbit Oak Machine 번역 전체 텍스트 검색어 공급자 OSGi 구성을 다시 저장해야 합니다.
 
+   * AEM을 다시 시작할 필요가 없는 경우 AEM이 업데이트된 파일을 처리할 수 있도록 업데이트된 언어 팩과 관련된 Apache Jackrabbit Oak Machine 번역 전체 텍스트 검색어 공급자 OSGi 구성을 다시 저장해야 합니다.
 
 ## damAssetLucene 인덱스 업데이트 중 {#updating-damassetlucene-index}
 

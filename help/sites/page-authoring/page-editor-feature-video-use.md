@@ -1,21 +1,16 @@
 ---
 title: AEM Sites에서 페이지 편집기 사용
-seo-title: Using the Page Editor with Adobe Experience Manager Sites
 description: 다음 비디오에서는 Adobe Experience Manager에 있는 Touch-UI Sites 편집기의 몇 가지 주요 기능을 강조 표시합니다.
-seo-description: The following video highlights several of the top features of the Touch-UI Sites editor in Adobe Experience Manager.
 feature: Page Editor
-topics: authoring
-audience: author, marketer
-doc-type: feature video
-activity: use
 version: 6.4, 6.5, Cloud Service
-kt: 4248
+jira: KT-4248
 thumbnail: 32011.jpg
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Feature Video
 exl-id: b120fb79-729e-4155-ba10-e5f7bb07eefa
-source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '127'
 ht-degree: 15%

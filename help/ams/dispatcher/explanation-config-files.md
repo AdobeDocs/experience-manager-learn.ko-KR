@@ -7,8 +7,9 @@ feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
+doc-type: Article
 exl-id: ec8e2804-1fd6-4e95-af6d-07d840069c8b
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1705'
 ht-degree: 0%
@@ -162,7 +163,7 @@ LoadModule dispatcher_module modules /mod_dispatcher .so
 
 최상위 수준 `dispatcher.any` 파일에는 에 있는 활성화된 모든 팜 파일이 포함되어 있습니다 `/etc/httpd/conf.dispatcher.d/enabled_farms/` 의 파일 이름으로 `FILENAME_farm.any` 표준 명명 규칙을 따릅니다.
 
-의 후반부에 `dispatcher_vhost.conf` 앞에서 언급한 파일에서도 include 문을 사용하여 활성화된 각 가상 호스트 파일을 사용하도록 설정합니다. `/etc/httpd/conf.d/enabled_vhosts/` 파일 이름: `FILENAME.vhost` 표준 명명 규칙을 따릅니다.
+의 후반부에 `dispatcher_vhost.conf` 앞에서 언급한 파일에서도 include 문을 사용하여 활성화된 각 가상 호스트 파일이 활성 상태가 되도록 합니다. `/etc/httpd/conf.d/enabled_vhosts/` 파일 이름: `FILENAME.vhost` 표준 명명 규칙을 따릅니다.
 
 ```
 IncludeOptional /etc/httpd/conf.d/enabled_vhosts/*.vhost

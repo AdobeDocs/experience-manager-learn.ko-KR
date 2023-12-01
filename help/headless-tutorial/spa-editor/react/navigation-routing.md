@@ -6,13 +6,14 @@ topics: development
 version: Cloud Service
 activity: develop
 audience: developer
-kt: 4988
+jira: KT-4988
 thumbnail: 4988-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: 9c3d47c7-1bb9-441c-a0e6-85887a32c817
-source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1621'
 ht-degree: 0%
@@ -189,7 +190,7 @@ SPA Editor SDK를 사용하여 SPA 페이지에 매핑하여 AEM의 여러 보�
    }
    ```
 
-   다음 사항에 주목하십시오. **페이지 3** 경로가 제거되었습니다. `/content/wknd-spa-react/us/en/home/page-2/page-3` 초기 JSON 모델에서. 이유는 다음과 같습니다. **페이지 3** 는 계층 구조에서 레벨 3에 있으며, 레벨 2의 최대 깊이에만 컨텐츠를 포함하도록 정책을 업데이트했습니다.
+   다음 사항에 주목하십시오. **페이지 3** 경로가 제거되었습니다. `/content/wknd-spa-react/us/en/home/page-2/page-3` 초기 JSON 모델에서. 이유는 다음과 같습니다. **페이지 3** 는 계층 구조에서 레벨 3에 있으며 최대 레벨 2의 컨텐츠만 포함하도록 정책을 업데이트했습니다.
 
 1. SPA 홈 페이지를 다시 엽니다. [http://localhost:4502/content/wknd-spa-react/us/en/home.html](http://localhost:4502/content/wknd-spa-react/us/en/home.html) 브라우저의 개발자 도구를 엽니다.
 

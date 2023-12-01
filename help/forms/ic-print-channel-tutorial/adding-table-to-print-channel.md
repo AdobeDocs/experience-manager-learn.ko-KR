@@ -1,7 +1,7 @@
 ---
 title: 기여도 섹션에 테이블 추가
 seo-title: Adding table to contributions section
-description: 첫 번째 대화형 통신 문서를 만들기 위한 9단계 튜토리얼의 일부입니다.이 부분에서는 기여 섹션에 표를 추가합니다.
+description: 첫 번째 대화형 통신 문서를 만들기 위한 9단계 자습서입니다.이 부분에서는 기여 섹션에 표를 추가합니다.
 seo-description: This is part 9 of multistep tutorial for creating your first interactive communication document.In this part, we will add a table to the contributions section.
 uuid: 9475e769-a3f8-4aec-9b46-e0dc182b78a0
 feature: Interactive Communication
@@ -10,14 +10,14 @@ audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
-kt: 5994
+jira: KT-5994
 thumbnail: 37953.jpg
 discoiquuid: 36c1f67f-b5bb-431e-893c-fd5032918dd7
 topic: Development
 role: Developer
 level: Beginner
 exl-id: b5a6c1c9-2be1-4622-b85b-a1996fb86a2f
-source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '114'
 ht-degree: 1%

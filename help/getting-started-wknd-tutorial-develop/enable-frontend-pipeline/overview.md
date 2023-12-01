@@ -2,28 +2,28 @@
 title: 표준 AEM Project Archetype에 프론트엔드 파이프라인 사용
 description: 표준 AEM 프로젝트에 대해 프론트엔드 파이프라인을 활성화하여 CSS, JavaScript, 글꼴, 아이콘 등의 정적 리소스를 보다 신속하게 배포하는 방법에 대해 알아봅니다. 또한 AEM의 전체 스택 백엔드 개발과 프론트엔드 개발 분리
 version: Cloud Service
-type: Tutorial
 feature: AEM Project Archetype, Cloud Manager, CI-CD Pipeline
 topic: Content Management, Development, Development, Architecture
 role: Developer, Architect, Admin
 level: Intermediate
-kt: 10689
+jira: KT-10689
 mini-toc-levels: 1
 index: y
 recommendations: disable
 thumbnail: 53409343.jpg
 last-substantial-update: 2022-09-23T00:00:00Z
+doc-type: Tutorial
 exl-id: b795e7e8-f611-4fc3-9846-1d3f1a28ccbc
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '490'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
 # 표준 AEM Project Archetype에 프론트엔드 파이프라인 사용{#enable-front-end-pipeline-standard-aem-project}
 
-을(를) 활성화하는 방법 알아보기 [AEM WKND Sites 프로젝트](https://github.com/adobe/aem-guides-wknd) (표준 AEM 프로젝트라고도 함)을 사용하여 생성됨 [AEM Project Archetype](https://github.com/adobe/aem-project-archetype) 프론트엔드 파이프라인을 사용하여 CSS, JavaScript, 글꼴 및 아이콘과 같은 프론트엔드 리소스를 배포하여 개발에서 배포까지의 주기를 단축합니다. AEM의 전체 스택 백엔드 개발과 프론트엔드 개발 분리 또한 이러한 프론트엔드 리소스가 어떻게 작동하는지 알아봅니다 __아님__ AEM 리포지토리에서 제공되지만 CDN에서 제공, 게재 패러다임의 변경.
+을(를) 활성화하는 방법 알아보기 [AEM WKND Sites 프로젝트](https://github.com/adobe/aem-guides-wknd) (표준 AEM 프로젝트라고도 함)을 사용하여 생성됨 [AEM Project Archetype](https://github.com/adobe/aem-project-archetype) 프론트엔드 파이프라인을 사용하여 CSS, JavaScript, 글꼴 및 아이콘과 같은 프론트엔드 리소스를 배포하여 개발부터 배포까지의 주기를 단축합니다. AEM의 전체 스택 백엔드 개발과 프론트엔드 개발 분리 또한 이러한 프론트엔드 리소스가 어떻게 작동하는지 알아봅니다 __아님__ AEM 리포지토리에서 제공되지만 CDN에서 제공, 게재 패러다임의 변경.
 
 
 빌드하고 배포만 하는 새로운 프론트엔드 파이프라인이 Adobe Cloud Manager에서 생성됩니다 `ui.frontend` 아티팩트를 내장된 CDN에 알리고 AEM에 해당 위치를 알립니다. 웹 페이지의 HTML 생성 중 AEM에서 `<link>` 및 `<script>` 태그, 다음에서 이 아티팩트 위치 참조 `href` 속성 값입니다.

@@ -1,20 +1,21 @@
 ---
-title: AEM의 Headless Tutorials
+title: AEM의 Headless 튜토리얼
 description: Adobe Experience Manager용 Headless CMS 튜토리얼 모음입니다. API, 프레임워크 및 예제 애플리케이션별 튜토리얼을 살펴보십시오.
 feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
+doc-type: Catalog
 recommendations: disable, exclude
 exl-id: 57f88d79-9879-4bb9-a3db-9fec95e3a0bd
-source-git-commit: 4c0770eafbbbb90bfc00ab49be02e84c41d63057
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '503'
-ht-degree: 7%
+ht-degree: 9%
 
 ---
 
-# AEM의 Headless Tutorials{#aem-headless-tutorials}
+# AEM의 Headless 튜토리얼{#aem-headless-tutorials}
 
 {{aem-headless-trials-promo}}
 
@@ -125,7 +126,7 @@ Adobe Experience Manager(AEM)에는 Headless 엔드포인트를 정의하고 콘
 <table>
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=ko-KR">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html">
       <img alt="React - 헤드리스" src="./assets/react-headless.png" />
     </a>
     <div>

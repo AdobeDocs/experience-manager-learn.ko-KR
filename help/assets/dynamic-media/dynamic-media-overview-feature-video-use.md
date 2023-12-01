@@ -6,8 +6,9 @@ version: 6.4, 6.5
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Feature Video
 exl-id: 59462cb4-d379-4e58-b786-ff8dbae6191c
-source-git-commit: c2e105123302ae37dc7cfca9533110a655e83858
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '842'
 ht-degree: 0%
@@ -78,7 +79,7 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/27319?quality=12&learn=on)
 
-이 비디오에서는 이미지 크기를 조정하는 것뿐만 아니라 Dynamic Media의 URL 수정자를 사용하여 소스 파일 자체의 기능(배경 투명도, 클리핑 패스 및 자르기 및 텍스트 포함)을 변수로 활용하는 방법에 대해 설명합니다.
+이 비디오에서는 Dynamic Media의 URL 수정자를 사용하여 소스 파일 자체의 기능(배경 투명도, 클리핑 패스 및 자르기 및 텍스트 포함)을 변수로 활용하기 위해 이미지 크기를 조정하는 방법을 설명합니다.
 
 * Dynamic Media 수정자 필드에서 URL 수정자 사용
 * 투명도를 사용하여 이미지의 배경색 변경

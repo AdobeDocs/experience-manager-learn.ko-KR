@@ -7,13 +7,13 @@ topic: Migration
 feature: Migration
 role: Architect, Developer
 level: Beginner
-kt: 11200
+jira: KT-11200
 thumbnail: kt-11200.jpg
 exl-id: bdec6cb0-34a0-4a28-b580-4d8f6a249d01
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2296'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -24,7 +24,7 @@ AEM으로의 콘텐츠 마이그레이션에 대한 FAQ에 대한 답변을 as a
 ## 용어
 
 + **AEMaaCS**: [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/introduction.html?lang=ko-KR)
-+ **BPA**: [모범 사례 분석기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html)
++ **BPA**: [모범 사례 분석기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=ko-KR)
 + **CTT**: [컨텐츠 전송 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html)
 + **캠**: [Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html)
 + **IMS**: [Identity Management 시스템](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html)
@@ -36,7 +36,7 @@ CTT 관련 Adobe 지원 티켓을 만드는 동안 자세한 내용을 제공하
 
 ## 일반 콘텐츠 마이그레이션 질문
 
-### Q: 콘텐츠를 Cloud Services으로 AEM에 마이그레이션하는 다양한 방법은 무엇입니까?
+### Q: 콘텐츠를 Cloud Service으로 AEM에 마이그레이션하는 다양한 방법은 무엇입니까?
 
 세 가지 다른 방법을 사용할 수 있습니다
 
@@ -155,7 +155,7 @@ CTT 추출 및 수집 **없이** 사용자 매핑은 콘텐츠와 관련 원칙(
 
 간단한 대답은 &quot;**예**&quot;.
 
-CTT 프로세스에는 다음 리소스에 대한 연결이 필요합니다.
+CTT 프로세스에는 아래 리소스에 대한 연결이 필요합니다.
 
 + 대상 AEM as a Cloud Service 환경: `author-p<program_id>-e<env_id>.adobeaemcloud.com`
 + Azure Blob 스토리지 서비스: `casstorageprod.blob.core.windows.net`

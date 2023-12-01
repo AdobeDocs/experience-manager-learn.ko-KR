@@ -6,10 +6,11 @@ version: Cloud Service
 topic: Content Management
 role: Admin, User
 level: Beginner
-kt: 9401
+jira: KT-9401
 thumbnail: 338824.jpg
+doc-type: Feature Video
 exl-id: a62e936f-c231-474d-9671-58815b2cb652
-source-git-commit: 288eaf8bab20cfb0ecbfa8455198fa63252e2e71
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '268'
 ht-degree: 0%
@@ -18,7 +19,7 @@ ht-degree: 0%
 
 # Adobe Asset Link 설정
 
-크리에이티브 팀과 마케팅 팀이 콘텐츠 생성 프로세스에서 에셋에 대해 공동 작업을 보다 쉽게 수행할 수 있도록 지원하여 조직에 신속하게 영향을 미칠 수 있습니다. IT 부서의 경우 Photoshop, Illustrator, InDesign 및 XD를 포함한 Creative Cloud 앱을 Adobe Experience Manager Assets에 연결하는 Adobe Asset Link를 비용 없이 빠르게 설정하는 방법에 대해 알아봅니다.
+크리에이티브 팀과 마케팅 팀이 콘텐츠 생성 프로세스에서 에셋에 대해 공동 작업을 보다 쉽게 수행할 수 있도록 지원하여 조직에 신속하게 영향을 미칠 수 있습니다. IT 부서의 경우 Photoshop, Illustrator, InDesign, XD 등 Creative Cloud 앱을 Adobe Experience Manager Assets에 연결하는 Adobe 에셋 링크를 비용 없이 빠르게 설정하는 방법에 대해 알아봅니다.
 
 ## AEM as a Cloud Service에 대한 Asset Link 설정
 

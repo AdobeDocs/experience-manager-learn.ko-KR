@@ -2,15 +2,12 @@
 title: 기본 템플릿 소개
 description: Dynamic Media Classic의 기본 템플릿, 이미지 서버에서 호출되고 이미지 및 렌더링된 텍스트로 구성된 이미지 기반 템플릿에 대해 알아봅니다. 템플릿이 게시된 후 URL을 통해 동적으로 변경할 수 있습니다. Photoshop PSD을 Dynamic Media Classic에 업로드하여 템플릿의 기반으로 사용하는 방법에 대해 알아봅니다. 이미지 레이어로 구성된 간단한 머천다이징 기본 템플릿을 만듭니다. 텍스트 레이어를 추가하고 매개 변수 사용을 통해 변수를 변경합니다. 템플릿 URL을 구성하고 웹 브라우저를 통해 이미지를 동적으로 조작합니다.
 feature: Dynamic Media Classic
-doc-type: tutorial
-topics: development, authoring, configuring
-audience: all
-activity: use
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Tutorial
 exl-id: d4e16b45-0095-44b4-8c16-89adc15e0cf9
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '6260'
 ht-degree: 0%
@@ -28,7 +25,7 @@ Dynamic Media Classic 조건에서 템플릿은 템플릿이 게시된 후 URL�
 - 기본 머천다이징. 해당 제품에 무료 배송이 있는 경우 &quot;무료 배송&quot;과 같은 레이블을 사용합니다. 이러한 레이블은 Photoshop의 상품 팀에서 설정하며 웹은 논리를 사용하여 이미지에 적용할 시기를 파악합니다.
 - 고급 머천다이징. 각 템플릿에는 여러 변수가 있으며 동시에 두 개 이상의 옵션이 표시될 수 있습니다. 데이터베이스, 재고 및 비즈니스 규칙을 사용하여 &quot;Just In&quot;, &quot;Clearance&quot; 또는 &quot;Sold Out&quot;으로 제품을 표시할 시기를 결정합니다. 또한 제품 뒤의 투명도를 사용하여 서로 다른 배경(예: 다른 방)에서 표시할 수 있습니다. 동일한 템플릿 및/또는 에셋은 제품 세부 사항 페이지에 다른 배경에서 동일한 제품의 더 크거나 확대 가능한 버전을 표시하도록 용도 변경될 수 있습니다.
 
-Dynamic Media Classic은 이러한 템플릿 기반 애플리케이션의 시각적 부분만 제공한다는 것을 이해하는 것이 중요합니다. Dynamic Media Classic 회사 또는 통합 파트너는 비즈니스 규칙, 데이터베이스 및 개발 기술을 제공하여 애플리케이션을 만들어야 합니다. &quot;내장&quot; 템플릿 애플리케이션은 없습니다. 디자이너는 Dynamic Media Classic에서 템플릿을 설정하고, 개발자는 URL 호출을 사용하여 템플릿의 변수를 변경합니다.
+Dynamic Media Classic은 이러한 템플릿 기반 애플리케이션의 시각적 부분만 제공한다는 것을 이해하는 것이 중요합니다. Dynamic Media Classic 회사 또는 통합 파트너는 애플리케이션을 만드는 데 필요한 비즈니스 규칙, 데이터베이스 및 개발 기술을 제공해야 합니다. &quot;내장&quot; 템플릿 애플리케이션은 없습니다. 디자이너는 Dynamic Media Classic에서 템플릿을 설정하고, 개발자는 URL 호출을 사용하여 템플릿의 변수를 변경합니다.
 
 이 자습서 섹션이 끝날 때까지 다음 방법을 알 수 있습니다.
 

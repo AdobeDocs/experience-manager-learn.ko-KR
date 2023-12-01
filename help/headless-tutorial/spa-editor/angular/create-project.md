@@ -4,16 +4,16 @@ description: AEM(Adobe Experience Manager) Maven 프로젝트를 SPA Editor와 �
 feature: SPA Editor, AEM Project Archetype
 topics: development
 version: Cloud Service
-doc-type: tutorial
 activity: develop
 audience: developer
-kt: 5309
+jira: KT-5309
 thumbnail: 5309-spa-angular.jpg
 topic: SPA
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: 49fcd603-ab1a-4f1e-ae1f-49d3ff373439
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1097'
 ht-degree: 2%
@@ -148,7 +148,7 @@ AEM용 Maven 다중 모듈 프로젝트를 만드는 몇 가지 옵션이 있습
 
    프로젝트에 필요한 모든 사용자 지정 코드는 이러한 패키지에 번들로 제공되며 AEM 런타임에 설치됩니다.
 
-6. 또한 다음과 같은 몇 가지 패키지가 표시됩니다. `spa.project.core` 및 `core.wcm.components`. 이러한 종속성은 Archetype에 의해 자동으로 포함됩니다. 다음에 대한 추가 정보: [AEM 핵심 구성 요소는 여기에서 찾을 수 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko).
+6. 또한 다음과 같은 몇 가지 패키지가 표시됩니다. `spa.project.core` 및 `core.wcm.components`. 이러한 종속성은 Archetype에 의해 자동으로 포함됩니다. 다음에 대한 추가 정보: [AEM 핵심 구성 요소는 여기에서 찾을 수 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html).
 
 ## 콘텐츠 작성
 

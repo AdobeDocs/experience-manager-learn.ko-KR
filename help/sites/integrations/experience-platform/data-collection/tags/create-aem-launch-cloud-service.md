@@ -1,12 +1,8 @@
 ---
 title: AEM Sites에서 Launch Cloud Service 구성 만들기
 description: AEM에서 Launch Cloud Service 구성을 만드는 방법을 알아봅니다. 그런 다음 Launch Cloud Service 구성을 기존 사이트에 적용할 수 있으며 태그 라이브러리가 작성자 및 게시 환경 모두에서 로드되는 것을 확인할 수 있습니다.
-topics: integrations
-audience: administrator
 solution: Experience Manager, Data Collection, Experience Platform
-doc-type: technical video
-activity: setup
-kt: 5982
+jira: KT-5982
 thumbnail: 38566.jpg
 topic: Integrations
 feature: Integrations
@@ -14,8 +10,9 @@ role: Developer
 level: Intermediate
 badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
+doc-type: Tutorial
 exl-id: a72ddced-37de-4b62-9e28-fa5b6c8ce5b7
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '556'
 ht-degree: 0%
@@ -34,7 +31,7 @@ Adobe Experience Manager에서 Launch Cloud Service 구성을 만드는 방법�
 
 아래 단계를 사용하여 Launch Cloud Service 구성을 만듭니다.
 
-1. 다음에서 **도구** 메뉴, 선택 **Cloud Services** 섹션 및 클릭 **Adobe 실행 구성**
+1. 다음에서 **도구** 메뉴, 선택 **Cloud Service** 섹션 및 클릭 **Adobe 실행 구성**
 
 1. 사이트의 구성 폴더를 선택하거나 **WKND 사이트** (WKND 안내서 프로젝트를 사용하는 경우) 를 클릭하고 **만들기**
 
@@ -44,7 +41,7 @@ Adobe Experience Manager에서 Launch Cloud Service 구성을 만드는 방법�
 
 1. 마지막으로 **만들기** 을 클릭하여 Launch 클라우드 서비스를 완료합니다.
 
-   ![Launch Cloud Services 구성](assets/launch-cloud-services-config.png)
+   ![Launch Cloud Service 구성](assets/launch-cloud-services-config.png)
 
 ## 사이트에 Launch Cloud Service 적용
 
@@ -54,7 +51,7 @@ Tag 속성과 해당 라이브러리를 AEM 사이트에 로드하려면 Launch 
 
 1. AEM 사이트의 루트 페이지를 선택하고 **속성**. 그런 다음 로 이동합니다. **고급** 탭 및 아래 **구성** 섹션에서 클라우드 구성 값이 사이트별 을 가리키는지 확인합니다. `conf` 폴더를 삭제합니다.
 
-   ![사이트에 Cloud Services 구성 적용](assets/apply-cloud-services-config-to-site.png)
+   ![사이트에 Cloud Service 구성 적용](assets/apply-cloud-services-config-to-site.png)
 
 ## 작성자 및 게시 페이지에서 태그 속성 로드 확인
 

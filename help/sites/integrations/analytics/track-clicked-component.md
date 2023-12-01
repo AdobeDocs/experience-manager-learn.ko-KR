@@ -6,14 +6,15 @@ topic: Integrations
 feature: Adobe Client Data Layer
 role: Developer
 level: Intermediate
-kt: 6296
+jira: KT-6296
 thumbnail: KT-6296.jpg
 badgeIntegration: label="통합" type="positive"
+doc-type: Tutorial
 exl-id: ab051363-d3e8-4c07-b1fa-3a5d24757496
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1886'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -50,7 +51,7 @@ WKND 마케팅 팀은 다음 중 하나를 알고 싶어 합니다. `Call to Act
 태그 속성에서 규칙을 만들기 전에 [버튼 및 티저의 스키마](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#item) 및 를 데이터 레이어 구현에서 검사합니다.
 
 1. 다음으로 이동 [WKND 홈 페이지](https://wknd.site/us/en.html)
-1. 브라우저의 개발자 도구를 열고 로 이동합니다. **콘솔**. 다음 명령을 실행합니다.
+1. 브라우저의 개발자 도구를 열고 로 이동합니다. **콘솔**. 다음 명령을 실행합니다:
 
    ```js
    adobeDataLayer.getState();
@@ -149,11 +150,11 @@ Adobe 클라이언트 데이터 레이어는 **이벤트** 제어 데이터 계�
 
    다음 `event` 에서 개체가 전달됩니다. `trigger()` 메서드가 사용자 지정 이벤트에서 호출되었습니다. 다음 `component` 개체는 데이터 레이어에서 파생된 구성 요소의 현재 상태입니다. `getState()` method 및 는 클릭을 트리거한 요소입니다.
 
-1. 변경 사항을 저장하고 를 실행합니다. [빌드](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html) 를 입력하여 코드를 로 승격시킵니다. [환경](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=ko-KR) AEM 사이트에서 사용됩니다.
+1. 변경 사항을 저장하고 를 실행합니다. [빌드](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html) 를 입력하여 코드를 로 승격시킵니다. [환경](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html) AEM 사이트에서 사용됩니다.
 
    >[!NOTE]
    >
-   > 다음을 사용하는 것이 유용할 수 있습니다. [Adobe Experience Platform 디버거](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) 포함 코드를 로 전환하려면 **개발** 환경.
+   > 다음을 사용하는 것이 유용할 수 있습니다. [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) 포함 코드를 로 전환하려면 **개발** 환경.
 
 1. 다음 위치로 이동 [WKND 사이트](https://wknd.site/us/en.html) 콘솔을 보려면 개발자 도구를 여십시오. 또한 **로그 유지** 확인란.
 

@@ -4,15 +4,12 @@ description: Apache HTTP 웹 서버에서 실행되는 AEM Dispatcher와 함께 
 version: 6.4, 6.5
 sub-product: Experience Manager, Experience Manager Sites
 feature: APIs
-topics: caching
-activity: develop
-audience: architect, developer
-doc-type: technical video
+doc-type: Technical Video
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 6c504710-be8f-4b44-bd8a-aaf480ae6d8a
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 5%
@@ -21,7 +18,7 @@ ht-degree: 5%
 
 # 설정 [!DNL Sling Dynamic Include]
 
-설치 및 사용에 대한 비디오 둘러보기 [!DNL Apache Sling Dynamic Include] 포함 [AEM 디스패처](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko-KR) 실행 중 [!DNL Apache HTTP Web Server].
+설치 및 사용에 대한 비디오 둘러보기 [!DNL Apache Sling Dynamic Include] 포함 [AEM 디스패처](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) 실행 중 [!DNL Apache HTTP Web Server].
 
 >[!VIDEO](https://video.tv.adobe.com/v/17040?quality=12&learn=on)
 
@@ -161,7 +158,6 @@ ht-degree: 5%
 >* &quot;X-Content-Type-Options&quot;
 >* &quot;Last-Modified&quot;
 >
-
 
 ## 지원 자료
 

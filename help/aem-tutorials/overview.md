@@ -2,10 +2,11 @@
 title: AEM 자습서
 description: Adobe Experience Manager을 위한 비디오 및 튜토리얼 모음입니다.
 exl-id: fe83a2dc-b43a-4e71-9b03-d31ec4f6a6ff
-source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
+doc-type: Catalog
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '170'
-ht-degree: 33%
+ht-degree: 31%
 
 ---
 
@@ -20,7 +21,7 @@ Adobe Experience Manager(AEM)는 선도적인 경험 관리 플랫폼입니다. 
 + [AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html)
 + [AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html)
 + [AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/overview.html)
-+ [AEM as Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
++ [Cloud Service으로 AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 + [AEM 기반 정보](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/overview.html)
 + [AEM Guides용 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-guides-learn/tutorials/overview.html)
 

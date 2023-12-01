@@ -3,16 +3,16 @@ title: AEM Headless로 서식 있는 텍스트 사용
 description: Adobe Experience Manager 컨텐츠 조각이 포함된 여러 줄 서식 있는 텍스트 편집기를 사용하여 컨텐츠를 작성하고 참조된 컨텐츠를 임베드하는 방법과 AEM GraphQL API에서 Headless 애플리케이션에서 사용할 수 있도록 서식 있는 텍스트를 JSON으로 제공하는 방법에 대해 알아봅니다.
 version: Cloud Service
 doc-type: article
-kt: 9985
+jira: KT-9985
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 level: Intermediate
 role: Developer
 exl-id: 790a33a9-b4f4-4568-8dfe-7e473a5b68b6
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1465'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -359,7 +359,7 @@ GraphQL API를 사용하면 개발자가 여러 줄 필드에 삽입된 모든 �
 예를 들어 다음과 같은 작업을 수행할 수 있습니다.
 
 * React Router 또는 Next.js를 사용하는 것과 같은 단일 페이지 애플리케이션을 구현할 때 다른 콘텐츠 조각에 대한 링크를 관리하기 위한 사용자 지정 라우팅 논리를 포함합니다
-* AEM 게시 환경에 대한 절대 경로를 로 사용하여 인라인 이미지 렌더링 `src` 값.
+* AEM Publish 환경에 대한 절대 경로를 로 사용하여 인라인 이미지 렌더링 `src` 값.
 * 추가적인 사용자 지정 속성을 사용하여 다른 콘텐츠 조각에 대한 임베드된 참조를 렌더링하는 방법을 결정합니다.
 
 사용 `json` 반환 유형 및 포함 `_references` GraphQL 쿼리를 구성할 때 표시되는 개체:

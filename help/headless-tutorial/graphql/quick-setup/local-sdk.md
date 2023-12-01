@@ -3,14 +3,14 @@ title: 로컬 AEM SDK를 사용한 AEM Headless 빠른 설정
 description: Adobe Experience Manager(AEM) 및 GraphQL을 시작합니다. AEM SDK를 설치하고 샘플 콘텐츠를 추가한 다음 GraphQL API를 사용하여 AEM의 콘텐츠를 사용하는 애플리케이션을 배포합니다. AEM이 옴니채널 경험을 어떻게 강화하는지 알아보십시오.
 version: Cloud Service
 mini-toc-levels: 1
-kt: 6386
+jira: KT-6386
 thumbnail: KT-6386.jpg
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: d2da6efa-1f77-4391-adda-e3180c42addc
-source-git-commit: 38a35fe6b02e9aa8c448724d2e83d1aefd8180e7
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1257'
 ht-degree: 2%
@@ -120,7 +120,7 @@ WKND 사이트에는 [GraphQL 엔드포인트](https://experienceleague.adobe.co
    REACT_APP_AUTHORIZATION=admin:admin
    ```
 
-   확인 `REACT_APP_HOST_URI` 는 로컬 AEM SDK를 가리킵니다. 편의를 위해 이 빠른 시작은 React 앱을 와 연결합니다.  **AEM 작성자**. **작성자** 서비스에는 인증이 필요하므로 앱은 `admin` 연결을 설정할 사용자입니다. AEM 작성자에 앱을 연결하는 것은 개발 중에 일반적인 방법인데, 이는 변경 사항을 게시하지 않고도 콘텐츠를 빠르게 반복할 수 있기 때문입니다.
+   확인 `REACT_APP_HOST_URI` 는 로컬 AEM SDK를 가리킵니다. 편의를 위해 이 빠른 시작은 React 앱을 와 연결합니다.  **AEM 작성자**. **작성자** 서비스에는 인증이 필요하므로 앱은 `admin` 연결을 설정할 사용자입니다. AEM Author에 앱을 연결하는 것은 개발 중에 일반적인 관례입니다. 변경 사항을 게시하지 않고도 콘텐츠를 빠르게 반복할 수 있기 때문입니다.
 
    >[!NOTE]
    >

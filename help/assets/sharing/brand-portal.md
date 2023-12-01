@@ -7,11 +7,12 @@ topic: Content Management
 role: User
 level: Beginner
 last-substantial-update: 2022-06-15T00:00:00Z
+doc-type: Feature Video
 exl-id: 42f13a19-52bf-413d-a141-63f1f0910dce
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1764'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -82,7 +83,7 @@ Brand Portal을 사용하면 검색 쿼리에서 검색 구문에 있는 단어�
 
 ### Dynamic Media 비디오 렌디션 지원
 
-AEM 작성자 인스턴스가 Dynamic Media 하이브리드 모드에 있는 사용자는 원본 비디오 파일 외에 Dynamic Media 렌디션을 미리 보고 다운로드할 수 있습니다.
+AEM Author 인스턴스가 Dynamic Media 하이브리드 모드에 있는 사용자는 원본 비디오 파일 외에 Dynamic Media 렌디션을 미리 보고 다운로드할 수 있습니다.
 
 특정 테넌트 계정에서 Dynamic Media 렌디션을 미리 보고 다운로드할 수 있도록 하려면 관리자는 관리 도구 패널의 비디오 구성에서 Dynamic Media 구성(비디오 서비스 URL(DM-게이트웨이 URL) 및 Dynamic Video를 가져오는 등록 ID)을 지정해야 합니다.
 
@@ -110,7 +111,7 @@ Dynamic Media 비디오 인코딩은 다음 위치에서 다운로드할 수 있
 Brand Portal URL의 접두사만 사용자 정의할 수 있으며 전체 URL은 사용자 정의할 수 없습니다.
 기존 도메인이 있는 조직 `wknd.brand-portal.adobe.com` 가져올 수 있음 `wkndinc.brand-portal.adobe.com` 이(가) 요청 시 만들어졌습니다.
 
-그러나 AEM 작성자 인스턴스는 [구성됨](https://helpx.adobe.com/kr/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html) 테넌트 ID URL을 사용하는 경우에만 해당하며 테넌트 별칭(대체) URL은 포함되지 않습니다.
+그러나 AEM 작성자 인스턴스는 다음과 같을 수 있습니다. [구성됨](https://helpx.adobe.com/kr/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html) 테넌트 ID URL을 사용하는 경우에만 해당하며 테넌트 별칭(대체) URL은 포함되지 않습니다.
 
 **사용 사례** : 조직은 Adobe이 제공한 URL을 고수하는 대신 포털 URL을 사용자 지정하여 브랜딩 요구 사항을 충족할 수 있습니다.
 

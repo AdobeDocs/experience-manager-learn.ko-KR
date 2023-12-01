@@ -3,12 +3,12 @@ title: 필요한 적응형 양식 React 라이브러리 설치
 description: React 프로젝트에 필요한 종속성 추가
 feature: Adaptive Forms
 version: 6.5
-kt: 13285
+jira: KT-13285
 topic: Development
 role: User
 level: Intermediate
 exl-id: 0ed44016-d52a-4980-a0b1-06da149c3cb1
-source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 0%

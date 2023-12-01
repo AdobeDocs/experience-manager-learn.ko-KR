@@ -4,12 +4,12 @@ description: 데이터베이스에 서명할 양식을 저장하는 워크플로
 feature: Adaptive Forms
 version: 6.4,6.5
 thumbnail: 6887.jpg
-kt: 6887
+jira: KT-6887
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: 338d9522-f6da-4aa7-b5d8-b9fff39ea94b
-source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 1%
@@ -115,7 +115,7 @@ public class StoreFormsToSignWorkflowStep implements WorkflowProcess {
 
 
 
-## Assets
+## 자산
 
 이 문서에 사용된 여러 Forms 서명 워크플로우는 다음과 같을 수 있습니다. [여기에서 다운로드됨](assets/sign-multiple-forms-workflows.zip)
 

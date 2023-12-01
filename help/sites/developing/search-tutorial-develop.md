@@ -6,10 +6,11 @@ feature: Search
 topic: Development
 role: Developer
 level: Intermediate, Experienced
+doc-type: Tutorial
 exl-id: aa268c5f-d29e-4868-a58b-444379cb83be
 last-substantial-update: 2022-08-10T00:00:00Z
 thumbnail: 32090.jpg
-source-git-commit: 1ecd3c761ea7c79036b263ff8528a6cd01af0e76
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '897'
 ht-degree: 3%
@@ -40,7 +41,7 @@ ht-degree: 3%
 
 ### 챕터 {#chapters}
 
-*아래 챕터 링크에서는 [초기 패키지](#initialpackages) 의 AEM 작성자에 설치됩니다.`http://localhost:4502`*
+*아래 챕터 링크에서는 [초기 패키지](#initialpackages) 다음 위치에서 AEM 작성자에 설치됩니다.`http://localhost:4502`*
 
 * [1장](http://localhost:4502/editor.html/content/summit/l4080/chapter-1.html)
 * [챕터 2](http://localhost:4502/editor.html/content/summit/l4080/chapter-2.html)
@@ -105,8 +106,7 @@ ht-degree: 3%
    * 쿼리는 인덱스의 쿼리 경로 범위와 동일한 경로 제한을 지정하거나 해당 인덱스의 하위 항목이어야 합니다.
    * 범위가 넓은 색인(예: `/oak:index/cqPageLucene`)는 또한 데이터를 인덱싱하므로 중복 수집 및 디스크 사용 비용이 발생합니다.
    * 중복 구성 관리(예: 동일한 쿼리 세트를 충족해야 하는 경우 여러 테넌트 인덱스에 동일한 indexRules 추가)
-   * 이 접근 방식은 사용자 지정 사이트 검색을 위해 AEM 게시 계층에서 가장 잘 제공되며, AEM 작성자에서와 같이, 서로 다른 테넌트에 대한 콘텐츠 트리 상향에서(예를 들어, OmniSearch를 통해) 쿼리를 실행하는 것이 일반적입니다. 서로 다른 색인 정의로 인해 경로 제한에만 따라 다른 동작이 발생할 수 있습니다.
-
+   * 이 방법은 AEM Author에서와 같이 사용자 지정 사이트 검색을 위해 AEM Publish 계층에서 가장 잘 제공되며, 일반적으로 쿼리는 서로 다른 테넌트에 대한 콘텐츠 트리 높은 곳에서 실행됩니다(예: OmniSearch를 통해). 서로 다른 색인 정의는 경로 제한만 기준으로 다른 동작을 초래할 수 있습니다.
 
 3. **사용 가능한 모든 분석기 목록은 어디에 있습니까?**
 

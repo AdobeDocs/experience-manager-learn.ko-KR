@@ -2,16 +2,16 @@
 title: 페이지 템플릿
 description: 페이지 템플릿을 만들고 수정하는 방법을 알아봅니다. 페이지 템플릿과 페이지 간의 관계를 이해합니다. 컨텐츠에 대한 세분화된 거버넌스 및 브랜드 일관성을 제공하기 위해 페이지 템플릿의 정책을 구성하는 방법에 대해 알아봅니다.  잘 구성된 매거진 문서 템플릿은 Adobe XD의 목차를 기반으로 만들어집니다.
 version: Cloud Service
-type: Tutorial
 topic: Content Management
 feature: Core Components, Editable Templates, Page Editor
 role: Developer
 level: Beginner
-kt: 7498
+jira: KT-7498
 thumbnail: KT-7498.jpg
+doc-type: Tutorial
 exl-id: 261ec68f-36f4-474f-a6e4-7a2f9cea691b
 recommendations: noDisplay, noCatalog
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 1%

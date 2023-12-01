@@ -2,17 +2,17 @@
 title: 전체 스택 프로젝트의 ui.frontend 모듈 검토
 description: Maven 기반 전체 스택 AEM Sites 프로젝트의 프론트엔드 개발, 배포 및 게재 수명 주기를 검토합니다.
 version: Cloud Service
-type: Tutorial
 feature: AEM Project Archetype, Cloud Manager, CI-CD Pipeline
 topic: Content Management, Development, Development, Architecture
 role: Developer, Architect, Admin
 level: Intermediate
-kt: 10689
+jira: KT-10689
 mini-toc-levels: 1
 index: y
 recommendations: noDisplay, noCatalog
+doc-type: Tutorial
 exl-id: 65e8d41e-002a-4d80-a050-5366e9ebbdea
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 2%
@@ -70,41 +70,41 @@ AEM 프론트엔드 변경 사항은 를 실행할 때 as a Cloud Service 환경
 
    1. `webpack.common` - 여기에는 __일반__ wknd 리소스 번들링 및 최적화를 지시하기 위한 구성. 다음 __출력__ 속성은 통합된 파일(JavaScript 번들이라고도 하며, AEM OSGi 번들과 혼동하지 않도록 함)을 방출하는 위치를 알려줍니다. 기본 이름은 로 설정됩니다. `clientlib-site/js/[name].bundle.js`.
 
-   ```javascript
-       ...
-       output: {
-               filename: 'clientlib-site/js/[name].bundle.js',
-               path: path.resolve(__dirname, 'dist')
-           }
-       ...    
-   ```
+  ```javascript
+      ...
+      output: {
+              filename: 'clientlib-site/js/[name].bundle.js',
+              path: path.resolve(__dirname, 'dist')
+          }
+      ...    
+  ```
 
    1. `webpack.dev.js` 다음을 포함: __개발__ webpack-dev-serve에 대한 구성과 사용할 HTML 템플릿을 가리킵니다. 또한에서 실행 중인 AEM 인스턴스에 대한 프록시 구성이 포함되어 있습니다. `localhost:4502`.
 
-   ```javascript
-       ...
-       devServer: {
-           proxy: [{
-               context: ['/content', '/etc.clientlibs', '/libs'],
-               target: 'http://localhost:4502',
-           }],
-       ...    
-   ```
+  ```javascript
+      ...
+      devServer: {
+          proxy: [{
+              context: ['/content', '/etc.clientlibs', '/libs'],
+              target: 'http://localhost:4502',
+          }],
+      ...    
+  ```
 
    1. `webpack.prod.js` 다음을 포함: __production__ 를 구성하고 플러그인을 사용하여 개발 파일을 최적화된 번들로 변환합니다.
 
-   ```javascript
-       ...
-       module.exports = merge(common, {
-           mode: 'production',
-           optimization: {
-               minimize: true,
-               minimizer: [
-                   new TerserPlugin(),
-                   new CssMinimizerPlugin({ ...})
-           }
-       ...    
-   ```
+  ```javascript
+      ...
+      module.exports = merge(common, {
+          mode: 'production',
+          optimization: {
+              minimize: true,
+              minimizer: [
+                  new TerserPlugin(),
+                  new CssMinimizerPlugin({ ...})
+          }
+      ...    
+  ```
 
 
 * 번들된 리소스는 `ui.apps` 을 사용하는 모듈 [aem-clientlib-generator](https://www.npmjs.com/package/aem-clientlib-generator) 플러그인(에서 관리되는 구성 사용) `clientlib.config.js` 파일.

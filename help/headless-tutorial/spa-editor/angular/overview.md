@@ -3,17 +3,17 @@ title: AEM SPA 편집기 및 Angular 시작하기
 description: Adobe Experience Manager(AEM)에서 WKND SPA를 사용하여 편집할 수 있는 첫 번째 Angular Single Page Application(SPA)을 개발합니다.
 topics: development
 version: Cloud Service
-doc-type: tutorial
 activity: develop
 audience: developer
-kt: 5913
+jira: KT-5913
 thumbnail: 5913-spa-angular.jpg
 feature: SPA Editor
 topic: SPA
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: f2cf4063-0b08-4b4f-91e6-70e5a148f931
-source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '645'
 ht-degree: 14%

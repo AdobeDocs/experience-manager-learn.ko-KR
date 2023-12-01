@@ -3,15 +3,12 @@ title: oak-run.jar를 사용하여 인덱스 관리
 description: oak-run.jar의 index 명령은 인덱스 통계 수집, 인덱스 일관성 검사 실행 및 인덱스 자체 리인덱싱 등 AEM에서 Oak 인덱스를 관리하는 여러 기능을 통합합니다.
 version: 6.4, 6.5
 feature: Search
-topics: search
-activity: use
-audience: architect, developer, implementer
-doc-type: technical video
+doc-type: Technical Video
 topic: Performance
 role: Developer
 level: Experienced
 exl-id: be49718e-f1f5-4ab2-9c9d-6430a52bb439
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 0%

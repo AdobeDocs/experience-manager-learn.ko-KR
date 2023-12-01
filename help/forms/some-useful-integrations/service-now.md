@@ -3,13 +3,13 @@ title: 통합 [!DNL ServiceNow]
 description: 양식 데이터 모델을 사용하여 모든 인시던트를 만들고 표시합니다.
 feature: Adaptive Forms
 version: 6.4,6.5
-kt: 9957
+jira: KT-9957
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: 93a177b0-7852-44da-89cc-836d127be4e7
 last-substantial-update: 2022-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 2%
@@ -46,11 +46,11 @@ ht-degree: 2%
 ## ServiceNow 인스턴스 자격 증명에 액세스
 
 * 사용자 프로필 클릭
-   ![사용자 프로필 클릭](assets/snow-1.png)
+  ![사용자 프로필 클릭](assets/snow-1.png)
 
 * 인스턴스 암호 관리 를 클릭합니다.
 * 인스턴스 세부 사항은 아래와 같이 표시됩니다
-   ![인스턴스 세부 사항](assets/snow-3.png)
+  ![인스턴스 세부 사항](assets/snow-3.png)
 
 ## 통합 테스트
 

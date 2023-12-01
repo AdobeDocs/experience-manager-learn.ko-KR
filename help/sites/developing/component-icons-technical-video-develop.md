@@ -1,17 +1,14 @@
 ---
 title: Adobe Experience Manager Sites에서 구성 요소 아이콘 맞춤화
 description: 구성 요소 아이콘을 사용하면 작성자가 아이콘이나 의미 있는 약어로 구성 요소를 빠르게 식별할 수 있습니다. 이제 작성자가 웹 경험을 더 빠르게 빌드하는 데 필요한 구성 요소를 찾을 수 있습니다.
-topics: components
-audience: administrator, developer
-doc-type: technical video
-activity: develop
 version: 6.4, 6.5
 feature: Core Components
 topic: Development
 role: User
 level: Intermediate
+doc-type: Technical Video
 exl-id: 37dc26aa-0773-4749-8c8b-4544bd4d5e5f
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 1%

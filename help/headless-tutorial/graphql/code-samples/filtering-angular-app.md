@@ -6,13 +6,13 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
-kt: 11133
+jira: KT-11133
 thumbnail: KT-11133.jpg
 index: false
 hide: true
 hidefromtoc: true
 exl-id: c238dd83-65d3-4b04-b90e-19ed250b8e36
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 0%
@@ -27,5 +27,5 @@ ht-degree: 0%
 
 이 코드:
 
-+ AEM Publish 서비스에 연결하며 인증이 필요하지 않습니다
++ AEM Publish 서비스에 연결하며 인증이 필요하지 않습니다.
 + WKND의 지속 쿼리를 사용합니다. `wknd-shared/adventures-all` 및 `wknd-shared/adventures-by-activity`

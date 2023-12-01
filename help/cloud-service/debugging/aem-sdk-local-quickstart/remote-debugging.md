@@ -1,14 +1,14 @@
 ---
 title: AEM SDK 원격 디버깅
 description: AEM SDK의 로컬 빠른 시작을 사용하면 IDE에서 원격 Java 디버깅을 사용할 수 있으므로 AEM에서 라이브 코드 실행을 단계별로 진행하여 정확한 실행 흐름을 파악할 수 있습니다.
-kt: 5251
+jira: KT-5251
 topic: Development
 feature: Developer Tools
 role: Developer
 level: Beginner, Intermediate
 thumbnail: 34338.jpeg
 exl-id: beac60c6-11ae-4d0c-a055-cd3d05aeb126
-source-git-commit: 45e7c58efd1d89537752fe7f890c0e80f7be7d67
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 0%
@@ -29,7 +29,7 @@ $ java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005 -jar
 
 + AEM SDK는 Java 11만 지원합니다
 + `address` AEM이 원격 디버그 연결을 수신하는 포트를 지정하며 로컬 개발 컴퓨터에서 사용 가능한 포트로 변경할 수 있습니다.
-+ 마지막 매개 변수(예: `aem-author-p4502.jar`)는 AEM SKD Quickstart Jar입니다. AEM 작성자 서비스(`aem-author-p4502.jar`) 또는 AEM 게시 서비스(`aem-publish-p4503.jar`).
++ 마지막 매개 변수(예: `aem-author-p4502.jar`)는 AEM SKD Quickstart Jar입니다. AEM Author 서비스(`aem-author-p4502.jar`) 또는 AEM Publish 서비스(`aem-publish-p4503.jar`).
 
 
 ## IDE 설정 지침

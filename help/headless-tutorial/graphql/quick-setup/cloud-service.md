@@ -6,10 +6,10 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
-kt: 9442
+jira: KT-9442
 thumbnail: 339073.jpg
 exl-id: 62e807b7-b1a4-4344-9b1e-2c626b869e10
-source-git-commit: 38a35fe6b02e9aa8c448724d2e83d1aefd8180e7
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1081'
 ht-degree: 2%
@@ -178,7 +178,7 @@ _단계 스크린캐스트_
 1. 실행 중인 React 앱 새로 고침 [http://localhost:3000](http://localhost:3000).
 1. React 앱에서 지금 업데이트된 사이클링 어드벤처를 선택하고 콘텐츠 조각에 대한 콘텐츠 변경 사항을 확인합니다.
 
-1. AEM Author 서비스에서 동일한 접근 방식 사용:
+1. AEM Author 서비스에서 동일한 접근 방식을 사용합니다.
    1. 기존 어드벤처 콘텐츠 조각의 게시를 취소하고 React 앱 경험에서 제거되었는지 확인합니다.
    1. 새 Adventure 콘텐츠 조각을 만들어 게시하고 React 앱 경험에 표시되는지 확인합니다.
 

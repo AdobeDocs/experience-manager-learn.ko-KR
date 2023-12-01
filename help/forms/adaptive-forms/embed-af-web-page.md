@@ -7,19 +7,19 @@ version: 6.5
 topic: Development
 role: Developer
 level: Beginner
-kt: 8390
+jira: KT-8390
 exl-id: 068e38df-9c71-4f55-b6d6-e1486c29d0a9
 last-substantial-update: 2020-06-09T00:00:00Z
-source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '144'
-ht-degree: 0%
+ht-degree: 32%
 
 ---
 
 # 웹 페이지에 적응형 양식 또는 HTML5 양식 포함
 
-임베드된 적응형 양식은 완전히 기능할 수 있으며, 사용자는 페이지를 종료하지 않고도 양식을 작성하고 제출할 수 있습니다. 이렇게 하면 사용자가 웹 페이지의 다른 요소 컨텍스트에 남아 있으면서 양식과 동시에 상호 작용할 수 있습니다.
+임베드된 적응형 양식은 완전한 기능을 갖추고 있으며 사용자는 페이지를 떠나지 않고 양식을 작성하고 제출할 수 있습니다. 이로써 사용자는 웹 페이지의 다른 요소 컨텍스트에 남아 있는 동시에 양식과 상호 작용할 수 있습니다.
 
 다음 비디오에서는 웹 페이지에 적응형 또는 HTML5 양식을 임베드하는 데 필요한 단계에 대해 설명합니다.
 다음을 참조하십시오. [설명서](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-external-web-page.html) 우수 사례, 우수 사례 등

@@ -6,12 +6,12 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
-kt: 10798
+jira: KT-10798
 thumbnail: KT-10798.jpg
 last-substantial-update: 2023-05-10T00:00:00Z
 badgeVersions: label="AEM 헤드리스 as a Cloud Service" before-title="false"
 exl-id: 39b21a29-a75f-4a6c-ba82-377cf5cc1726
-source-git-commit: d3ee129cb228f02d5a5846465400c04ce81dfbb5
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 5%
@@ -38,9 +38,9 @@ ht-degree: 5%
 Node.js 응용 프로그램은 다음 AEM 배포 옵션과 함께 작동합니다. 모든 배포에는 [WKND 사이트 v3.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) 설치.
 
 + [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
-+ 선택적으로, [서비스 자격 증명](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html) 요청 인증(예: AEM 작성자 서비스에 연결)의 경우.
++ 선택적으로, [서비스 자격 증명](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html) 요청을 인증하는 경우(예: AEM Author 서비스에 연결).
 
-이 Node.js 애플리케이션은 명령줄 매개 변수를 기반으로 AEM 작성자 또는 AEM 게시에 연결할 수 있습니다.
+이 Node.js 응용 프로그램은 명령줄 매개 변수를 기반으로 AEM 작성자 또는 AEM Publish에 연결할 수 있습니다.
 
 ## 사용 방법
 

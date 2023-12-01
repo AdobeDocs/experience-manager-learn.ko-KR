@@ -5,8 +5,9 @@ feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: ece0bf0d-c4af-4962-9c00-f2849c2d8f6f
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '785'
 ht-degree: 0%
@@ -70,14 +71,14 @@ API 엔드포인트를 구성하는 방법을 이해하고 당사에 노출되�
    * **[!DNL WKND Mobile > Image]**
 
       * 앱의 로고
+
    * **[!DNL WKND Mobile > Text]**
 
       * 앱의 소개 텍스트
+
    * **[!DNL WKND Mobile > Content Fragment List]**
 
       * 앱에 표시할 수 있는 이벤트 범주 목록
-
-
 
 1. 탭 **[!UICONTROL 완료]** 완료되면 오른쪽 상단의 확인 표시를 합니다.
 1. **새로 고침** 새로 볼 브라우저 창 [!UICONTROL 허용된 구성 요소] 왼쪽 레일에 나열합니다.

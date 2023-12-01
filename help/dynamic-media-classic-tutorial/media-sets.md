@@ -5,8 +5,9 @@ feature: Dynamic Media Classic, Image Sets, Mixed Media Sets, Spin Sets
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Tutorial
 exl-id: 45c86ff2-d991-46a7-a8d1-25c9fec142d9
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1433'
 ht-degree: 1%
@@ -97,7 +98,7 @@ _혼합 미디어 세트의 예_
 
 ![이미지](assets/media-sets/image-set-url-1.png)
 
-- 다음을 사용하여 혼합 미디어 집합에 대해 자세히 알아보기: [혼합 미디어 집합에 대한 빠른 시작](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/mixed-media-sets/quick-start-mixed-media-sets.html).
+- 다음을 사용하여 혼합 미디어 세트에 대해 자세히 알아보기: [혼합 미디어 집합에 대한 빠른 시작](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/mixed-media-sets/quick-start-mixed-media-sets.html).
 
 - 방법 알아보기 [혼합 미디어 집합 만들기](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/mixed-media-sets/creating-mixed-media-set.html#creating-a-mixed-media-set).
 

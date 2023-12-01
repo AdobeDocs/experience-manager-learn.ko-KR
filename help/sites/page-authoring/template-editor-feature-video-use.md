@@ -1,20 +1,15 @@
 ---
 title: AEM Sites에서 편집 가능한 페이지 템플릿 사용
-seo-title: Using Editable Page Templates with Adobe Experience Manager Sites
 description: 편집 가능한 템플릿을 사용하면 전문 작성자가 페이지 템플릿을 만들고 업데이트할 수 있으며 AEM Sites을 사용하여 고급 정책 구성을 관리할 수 있습니다.
-seo-description: Editable templates allow specialized authors to create and update page templates and manage advanced policy configurations with Adobe Experience Manager Sites.
 feature: Editable Templates
-topics: authoring
-audience: all
-doc-type: feature video
-activity: use
 version: 6.4, 6.5
-kt: 193
+jira: KT-193
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Feature Video
 exl-id: 2213d1f2-37ed-4897-a68d-04ef423395a3
-source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 4%

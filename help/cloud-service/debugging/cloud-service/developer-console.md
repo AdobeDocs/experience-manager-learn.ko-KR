@@ -7,13 +7,13 @@ version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
-kt: 5433
+jira: KT-5433
 thumbnail: kt-5433.jpg
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 0499ff9f-d452-459f-b1a2-2853a228efd1
-source-git-commit: 8ca9535866cc1a673a59ac3743847e68dfedd156
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1471'
 ht-degree: 1%
@@ -167,7 +167,7 @@ Java 패키지는 해결되지 않은 가져오기 또는 스크립트(HTL, JSP 
 
 ## 쿼리
 
-쿼리는 AEM에서 검색 쿼리가 실행되는 내용과 그 방법에 대한 통찰력을 제공하는 데 도움이 됩니다. 이 기능은 와 동일합니다.  [AEM SDK의 로컬 빠른 시작의 도구 > 쿼리 성능 ](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) 콘솔.
+쿼리는 AEM에서 검색 쿼리가 실행되는 내용과 그 방법에 대한 통찰력을 제공하는 데 도움이 됩니다. 이 기능은 와 동일합니다.  [AEM SDK의 로컬 빠른 시작의 도구 > 쿼리 성능](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) 콘솔.
 
 쿼리는 특정 pod를 선택한 경우에만 작동합니다. 해당 pod의 쿼리 성능 웹 콘솔이 열리면 개발자가 AEM 서비스에 로그인할 수 있는 액세스 권한을 보유해야 합니다.
 

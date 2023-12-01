@@ -7,8 +7,9 @@ feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
+doc-type: Article
 exl-id: 461873a1-1edf-43a3-b4a3-14134f855d86
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2223'
 ht-degree: 0%
@@ -36,7 +37,7 @@ ht-degree: 0%
 
 작성자의 경우 무언가를 활성화할 때 파일과 모든 종속 기능을 게시자에게 보내도록 트리거하는 게시자를 가리키도록 구성된 복제 에이전트가 있습니다.
 
-게시자가 파일을 받으면 수신 시 이벤트를 트리거하는 Dispatcher를 가리키도록 복제 에이전트가 구성되어 있습니다.  그런 다음 플러시 요청을 직렬화하고 이를 Dispatcher에 게시합니다.
+게시자가 파일을 수신하면 수신 중인 이벤트를 트리거하는 Dispatcher를 가리키도록 복제 에이전트가 구성되어 있습니다.  그런 다음 플러시 요청을 직렬화하고 이를 Dispatcher에 게시합니다.
 
 ### 작성자 복제 에이전트
 

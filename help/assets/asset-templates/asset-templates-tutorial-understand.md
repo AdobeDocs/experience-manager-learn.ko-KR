@@ -1,13 +1,14 @@
 ---
 title: AEM Assets의 InDesign 파일 및 자산 템플릿 이해
-description: 이 비디오 튜토리얼에서는 AEM Assets의 InDesign 템플릿 기능에 사용하기 위한 자산 파일 및 모든 관련 고려 사항을 정의하는 과정을 안내합니다.
+description: 이 비디오 튜토리얼에서는 AEM Assets의 에셋 템플릿 기능에 사용할 InDesign 파일 및 모든 관련 고려 사항을 정의하는 과정을 안내합니다.
 version: 6.4, 6.5
 topic: Content Management
 feature: Templates
 role: User
 level: Intermediate
+doc-type: Tutorial
 exl-id: c418e94a-b18e-429a-b41c-2bf32e158598
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 1%
@@ -16,7 +17,7 @@ ht-degree: 1%
 
 # AEM Assets의 InDesign 파일 및 자산 템플릿 이해 {#understanding-indesign-files-and-asset-templates-in-aem-assets}
 
-이 비디오 튜토리얼에서는 AEM Assets의 InDesign 템플릿 기능에 사용하기 위한 자산 파일 및 모든 관련 고려 사항을 정의하는 과정을 안내합니다.
+이 비디오 튜토리얼에서는 AEM Assets의 에셋 템플릿 기능에 사용할 InDesign 파일 및 모든 관련 고려 사항을 정의하는 과정을 안내합니다.
 
 ## InDesign 템플릿 파일 구성 {#constructing-the-indesign-template-file}
 

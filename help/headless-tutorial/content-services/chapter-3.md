@@ -7,8 +7,9 @@ feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: 46ef11a2-81bd-4ff7-b9ef-9f8cba52c6a8
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 2%
@@ -55,7 +56,7 @@ AEM Headless 자습서의 3장에서는에서 만든 콘텐츠 조각 모델에�
 
 *이 섹션은 정보 제공용으로만 제공되며 콘텐츠 조각 모델에서 만든 콘텐츠 조각의 기본 JCR 구조를 사회화하기 위한 것입니다.*
 
-1. 열기 **[CRXDE Lite](http://localhost:4502/crx/de/index.jsp)** AEM Author에서
+1. 열기 **[CRXDE Lite](http://localhost:4502/crx/de/index.jsp)** AEM Author에서.
 1. CRXDE Lite의 왼쪽 계층 메뉴에서 [/content/dam/wknd-mobile/en/events/punkrock-fest/jcr:content](http://localhost:4502/crx/de/index.jsp#/content/dam/wknd-mobile/en/events/punkrock-fest/jcr:content) 를 나타내는 노드입니다. [!DNL Punkrock Fest] [!DNL Event] JCR의 콘텐츠 조각.
 1. 확장 [데이터](http://localhost:4502/crx/de/index.jsp#/content/dam/wknd-mobile/en/events/punkrock-fest/jcr:content/data/master) 노드.
 다음에서 검토: **속성 창** 속성이 있음 `cq:model` 이(가) 다음을 가리킵니다. [!DNL Event] 콘텐츠 조각 모델 정의.

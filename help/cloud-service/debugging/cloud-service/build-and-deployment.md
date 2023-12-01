@@ -7,13 +7,13 @@ version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
-kt: 5434
+jira: KT-5434
 thumbnail: kt-5424.jpg
 topic: Development
 role: Developer
 level: Beginner
 exl-id: b4985c30-3e5e-470e-b68d-0f6c5cbf4690
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2523'
 ht-degree: 0%
@@ -33,14 +33,14 @@ Adobe AEM Cloud Manager를 사용하면 코드를 쉽게 작성하고 as a Cloud
 ### 환경이 잘못된 상태입니다.
 
 + __오류 메시지:__ 환경이 잘못된 상태입니다.
-   ![환경이 잘못된 상태입니다.](./assets/build-and-deployment/validation__invalid-state.png)
+  ![환경이 잘못된 상태입니다.](./assets/build-and-deployment/validation__invalid-state.png)
 + __원인:__ 파이프라인의 대상 환경이 새로운 빌드를 수락할 수 없는 전환 상태입니다.
 + __해결 방법:__ 상태가 실행 중(또는 업데이트 사용 가능) 상태로 해결될 때까지 기다립니다. 환경을 삭제하는 경우 환경을 다시 만들거나 빌드할 다른 환경을 선택하십시오.
 
 ### 파이프라인과 연계된 환경을 찾을 수 없습니다.
 
 + __오류 메시지:__ 환경이 삭제됨으로 표시됩니다.
-   ![환경이 삭제됨으로 표시됨](./assets/build-and-deployment/validation__environment-marked-as-deleted.png)
+  ![환경이 삭제됨으로 표시됨](./assets/build-and-deployment/validation__environment-marked-as-deleted.png)
 + __원인:__ 파이프라인이 사용하도록 구성된 환경이 삭제되었습니다.
 동일한 이름의 새 환경이 다시 만들어지더라도 Cloud Manager는 파이프라인을 동일한 이름의 환경에 자동으로 다시 연결하지 않습니다.
 + __해결 방법:__ 파이프라인 구성을 편집하고 배포할 환경을 다시 선택합니다.
@@ -48,7 +48,7 @@ Adobe AEM Cloud Manager를 사용하면 코드를 쉽게 작성하고 as a Cloud
 ### 파이프라인과 연결된 Git 분기를 찾을 수 없습니다
 
 + __오류 메시지:__ 잘못된 파이프라인: XXXXXX. Reason=Branch=xxxx를 저장소에서 찾을 수 없습니다.
-   ![잘못된 파이프라인: XXXXXX. Reason=Branch=xxxx 를 저장소에서 찾을 수 없음](./assets/build-and-deployment/validation__branch-not-found.png)
+  ![잘못된 파이프라인: XXXXXX. Reason=Branch=xxxx 를 저장소에서 찾을 수 없음](./assets/build-and-deployment/validation__branch-not-found.png)
 + __원인:__ 파이프라인이 사용하도록 구성된 Git 분기가 삭제되었습니다.
 + __해결 방법:__ 완전히 동일한 이름을 사용하여 누락된 Git 분기를 다시 생성하거나 다른 기존 분기에서 빌드하도록 파이프라인을 다시 구성합니다.
 
@@ -135,16 +135,15 @@ AEM as a Cloud Service에는 모든 AEM 릴리스에서 최신 핵심 구성 요
 이 실패를 방지하려면 AEM as a Cloud Service 환경 업데이트를 사용할 수 있을 때마다 다음 빌드/배포의 일부로 업데이트를 포함하고 애플리케이션 코드 베이스에서 핵심 구성 요소 버전을 증가시킨 후 항상 업데이트가 포함되도록 해야 합니다.
 
 + __증상:__
-다음 오류 보고와 함께 이미지 빌드 단계가 실패합니다. 
-`com.adobe.cq.wcm.core.components...` 특정 버전 범위의 패키지를 `core` 프로젝트.
+다음 오류 보고와 함께 이미지 빌드 단계가 실패합니다. `com.adobe.cq.wcm.core.components...` 특정 버전 범위의 패키지를 `core` 프로젝트.
 
-   ```
-   [ERROR] Bundle com.example.core:0.0.3-SNAPSHOT is importing package(s) Package com.adobe.cq.wcm.core.components.models;version=[12.13,13) in start level 20 but no bundle is exporting these for that start level in the required version range.
-   [ERROR] Analyser detected errors on feature 'com.adobe.granite:aem-ethos-app-image:slingosgifeature:aem-runtime-application-publish-dev:1.0.0-SNAPSHOT'. See log output for error messages.
-   [INFO] ------------------------------------------------------------------------
-   [INFO] BUILD FAILURE
-   [INFO] ------------------------------------------------------------------------
-   ```
+  ```
+  [ERROR] Bundle com.example.core:0.0.3-SNAPSHOT is importing package(s) Package com.adobe.cq.wcm.core.components.models;version=[12.13,13) in start level 20 but no bundle is exporting these for that start level in the required version range.
+  [ERROR] Analyser detected errors on feature 'com.adobe.granite:aem-ethos-app-image:slingosgifeature:aem-runtime-application-publish-dev:1.0.0-SNAPSHOT'. See log output for error messages.
+  [INFO] ------------------------------------------------------------------------
+  [INFO] BUILD FAILURE
+  [INFO] ------------------------------------------------------------------------
+  ```
 
 + __원인:__  애플리케이션의 OSGi 번들( `core` project)는 AEM에 as a Cloud Service으로 배포된 것과 다른 버전 수준에서 핵심 구성 요소 핵심 종속성의 Java 클래스를 가져옵니다.
 + __해결:__
@@ -158,11 +157,11 @@ AEM as a Cloud Service에는 모든 AEM 릴리스에서 최신 핵심 구성 요
 
 + [Adobe Admin Console](https://adminconsole.adobe.com) > 지원 탭 > 사례 만들기
 
-   _여러 Adobe 조직의 멤버인 경우 사례를 생성하기 전에 Adobe 조직 전환기에서 실패한 파이프라인이 있는 Adobe 조직이 선택되었는지 확인하십시오._
+  _여러 Adobe 조직의 멤버인 경우 사례를 생성하기 전에 Adobe 조직 전환기에서 실패한 파이프라인이 있는 Adobe 조직이 선택되었는지 확인하십시오._
 
 ## 배포 대상
 
-배포 대상 단계는 빌드 이미지에서 생성된 코드 아티팩트를 가져오고, 이를 사용하여 새 AEM 작성자 및 게시 서비스를 시작하며, 성공 시 이전 AEM 작성자 및 게시 서비스를 제거합니다. 이 단계에서도 변경 가능한 콘텐츠 패키지 및 색인이 설치되고 업데이트됩니다.
+배포처 단계는 빌드 이미지에서 생성된 코드 아티팩트를 가져오고, 이를 사용하여 새 AEM Author 및 Publish 서비스를 시작하며, 성공 시 이전 AEM Author 및 Publish 서비스를 제거합니다. 이 단계에서도 변경 가능한 콘텐츠 패키지 및 색인이 설치되고 업데이트됩니다.
 
 다음 내용에 대해 숙지하십시오. [AEM as a Cloud Service 로그](./logs.md) 배포 대상 단계를 디버깅하기 전에. 다음 `aemerror` 로그에는 문제에 배포와 관련이 있을 수 있는 pod의 시작 및 종료에 대한 정보가 포함되어 있습니다. Cloud Manager의 배포 대상 단계에서 로그 다운로드 버튼을 통해 사용할 수 있는 로그는 이 아닙니다. `aemerror` 에는 애플리케이션 시작과 관련된 자세한 정보가 포함되어 있지 않습니다.
 
@@ -173,7 +172,7 @@ AEM as a Cloud Service에는 모든 AEM 릴리스에서 최신 핵심 구성 요
 ### Cloud Manager 파이프라인에는 이전 AEM 버전이 보관됩니다
 
 + __원인:__ Cloud Manager 파이프라인에는 타겟 환경에 배포된 버전보다 이전 버전의 AEM이 있습니다. 파이프라인을 다시 사용하고 최신 버전의 AEM을 실행 중인 새 환경을 가리킬 때 이러한 문제가 발생할 수 있습니다. 이는 환경의 AEM 버전이 파이프라인의 AEM 버전보다 큰지 확인함으로써 식별할 수 있습니다.
-   ![Cloud Manager 파이프라인에는 이전 AEM 버전이 보관됩니다](./assets/build-and-deployment/deploy-to__pipeline-holds-old-aem-version.png)
+  ![Cloud Manager 파이프라인에는 이전 AEM 버전이 보관됩니다](./assets/build-and-deployment/deploy-to__pipeline-holds-old-aem-version.png)
 + __해결:__
    + 대상 환경에 업데이트 사용 가능 이 있는 경우 환경의 작업에서 업데이트 를 선택한 다음 빌드를 다시 실행합니다.
    + 대상 환경에 업데이트 사용 가능 이 없는 경우 최신 버전의 AEM이 실행되고 있음을 의미합니다. 이 문제를 해결하려면 파이프라인을 삭제하고 다시 생성합니다.
@@ -184,14 +183,14 @@ AEM as a Cloud Service에는 모든 AEM 릴리스에서 최신 핵심 구성 요
 새로 배포된 AEM 서비스를 시작하는 동안 실행되는 코드는 시간이 너무 오래 걸려 Cloud Manager가 시간 초과되어 배포를 완료할 수 있습니다. 이러한 경우 Cloud Manager 상태가 실패로 보고되었더라도 배포가 결국 성공할 수 있습니다.
 
 + __원인:__ 사용자 지정 코드는 OSGi 번들 또는 구성 요소 수명 주기에서 초기에 트리거된 대규모 쿼리 또는 컨텐츠 트래버스와 같은 작업을 실행하여 AEM의 시작 시간을 상당히 지연시킬 수 있습니다.
-+ __해결 방법:__ OSGi 번들의 라이프사이클 초기에 실행되는 코드에 대한 구현을 검토하고 `aemerror` cloud Manager에 표시된 대로 실패 시간(GMT로 로그 시간) 경에 AEM 작성자 및 게시 서비스에 대한 로그를 찾고, 실행 중인 사용자 정의 로그를 나타내는 로그 메시지를 찾습니다.
++ __해결 방법:__ OSGi 번들의 라이프사이클 초기에 실행되는 코드에 대한 구현을 검토하고 `aemerror` Cloud Manager에 표시된 대로 실패 시간(GMT로 로그 시간) 경에 AEM 작성자 및 게시 서비스에 대한 로그를 찾고, 실행 중인 사용자 정의 로그를 나타내는 로그 메시지를 찾습니다.
 
 ### 호환되지 않는 코드 또는 구성
 
 대부분의 코드 및 구성 위반은 빌드의 앞부분에서 발견되지만, 사용자 지정 코드 또는 구성이 AEM as a Cloud Service과 호환되지 않을 수 있으며 컨테이너에서 실행될 때까지 감지되지 않습니다.
 
 + __원인:__ 사용자 지정 코드는 OSGi 번들 또는 구성 요소 수명 주기에서 초기에 트리거된 대규모 쿼리 또는 콘텐츠 트래버스처럼 긴 작업을 호출하여 AEM의 시작 시간을 상당히 지연시킬 수 있습니다.
-+ __해결 방법:__ 리뷰 `aemerror` cloud Manager에 표시된 대로 오류가 발생한 시간(GMT로 로그 시간) 전후 AEM 작성자 및 게시 서비스에 대한 로그를 확인합니다.
++ __해결 방법:__ 리뷰 `aemerror` AEM Author 및 Publish 서비스에 대한 로그는 Cloud Manager에 표시된 대로 오류가 발생한 시간(GMT로 로그 시간)에 해당합니다.
    1. 사용자 지정 애플리케이션에서 제공하는 Java 클래스에서 발생한 모든 오류에 대한 로그를 검토하십시오. 문제가 발견되면 해결한 후 고정 코드를 푸시하고 파이프라인을 다시 빌드합니다.
    1. 사용자 정의 애플리케이션에서 확장/상호 작용하고 있는 AEM의 측면에서 보고된 오류에 대한 로그를 검토하여 오류를 조사합니다. 이러한 오류는 Java 클래스에 직접 귀속되지 않을 수 있습니다. 문제가 발견되면 해결한 후 고정 코드를 푸시하고 파이프라인을 다시 빌드합니다.
 
@@ -201,8 +200,8 @@ AEM as a Cloud Service에는 모든 AEM 릴리스에서 최신 핵심 구성 요
 
 이 문제는 초기 배포에 실패하지 않고 후속 배포에만 실패하므로 식별하기가 어렵습니다. 눈에 띄는 증상은 다음과 같습니다.
 
-+ 초기 배포가 성공하지만 배포의 일부인 새로운 변경 가능한 콘텐츠 또는 변경된 변경 가능한 콘텐츠가 AEM 게시 서비스에 없는 것으로 표시됩니다.
-+ AEM 작성자의 콘텐츠 활성화/비활성화가 차단됨
++ 초기 배포가 성공하지만 배포의 일부인 새로운 변경 가능한 콘텐츠 또는 변경된 변경 가능한 콘텐츠가 AEM Publish 서비스에 없는 것으로 표시됩니다.
++ AEM Author의 콘텐츠 활성화/비활성화가 차단됨
 + 이후 배포는 다음으로 배포 단계에서 실패하고, 다음으로 배포 단계는 약 60분 후 실패합니다.
 
 이 문제의 유효성을 검사하려면 실패 동작의 원인을 확인하십시오.
@@ -210,7 +209,7 @@ AEM as a Cloud Service에는 모든 AEM 릴리스에서 최신 핵심 구성 요
 1. 배포의 일부인 하나 이상의 콘텐츠 패키지가 `/var`.
 1. 기본(굵게) 배포 큐가 다음 위치에서 차단되었는지 확인:
    + AEM 작성자 > 도구 > 배포 > 배포
-      ![차단된 배포 큐](./assets/build-and-deployment/deploy-to__var--distribution.png)
+     ![차단된 배포 큐](./assets/build-and-deployment/deploy-to__var--distribution.png)
 1. 후속 배포가 실패하면 로그 다운로드 버튼을 사용하여 Cloud Manager의 &quot;배포 대상&quot; 로그를 다운로드합니다.
 
    ![로그에 배포 다운로드](./assets/build-and-deployment/deploy-to__var--download-logs.png)
@@ -229,11 +228,11 @@ AEM as a Cloud Service에는 모든 AEM 릴리스에서 최신 핵심 구성 요
 
    이 로그에는 성공적인 것으로 보고하는 초기 배포에 대한 이러한 지표가 포함되지 않고 후속 배포 실패 시에만 포함됩니다.
 
-+ __원인:__ AEM 게시 서비스에 콘텐츠 패키지를 배포하는 데 사용되는 AEM 복제 서비스 사용자는 쓸 수 없음 `/var` AEM 게시에서. 결과적으로 AEM 게시 서비스에 콘텐츠 패키지를 배포하지 못합니다.
++ __원인:__ AEM 게시 서비스에 콘텐츠 패키지를 배포하는 데 사용되는 AEM 복제 서비스 사용자는 쓸 수 없음 `/var` AEM 게시에서. 따라서 콘텐츠 패키지를 AEM Publish 서비스로 배포하지 못합니다.
 + __해결 방법:__ 이 문제를 해결하기 위한 다음과 같은 방법은 기본 설정 순서대로 나열되어 있습니다.
    1. 다음과 같은 경우 `/var` 리소스는 필요하지 않습니다. `/var` 애플리케이션의 일부로 배포되는 콘텐츠 패키지에서
-   2. 다음과 같은 경우 `/var` 리소스가 필요합니다. 다음을 사용하여 노드 구조를 정의합니다. [repoinit](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#repoinit). Repoinit 스크립트는 OSGi 실행 모드를 통해 AEM 작성자, AEM 게시 또는 둘 다에 타깃팅할 수 있습니다.
-   3. 다음과 같은 경우 `/var` 리소스는 AEM 작성자에게만 필요하며 를 사용하여 합리적으로 모델링할 수 없습니다. [repoinit](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#repoinit), AEM 작성자에만 설치되는 개별 콘텐츠 패키지로 이동합니다. [포함](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html#embeddeds) 다음에서 `all` aem 작성자 실행 모드 폴더의 패키지(`<target>/apps/example-packages/content/install.author</target>`).
+   2. 다음과 같은 경우 `/var` 리소스가 필요합니다. 다음을 사용하여 노드 구조를 정의합니다. [repoinit](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#repoinit). Repoinit 스크립트는 OSGi 실행 모드를 통해 AEM Author, AEM Publish 또는 둘 다에 타깃팅할 수 있습니다.
+   3. 다음과 같은 경우 `/var` 리소스는 AEM 작성자에게만 필요하며 를 사용하여 합리적으로 모델링할 수 없습니다. [repoinit](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#repoinit), 개별 컨텐츠 패키지로 이동합니다. 이 패키지는 AEM 작성자에만 설치됩니다. [포함](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html#embeddeds) 다음에서 `all` AEM 작성자 실행 모드 폴더의 패키지(`<target>/apps/example-packages/content/install.author</target>`).
    4. 에 적절한 ACL 제공 `sling-distribution-importer` 이에 설명된 서비스 사용자 [ADOBE KB](https://helpx.adobe.com/in/experience-manager/kb/cm/cloudmanager-deploy-fails-due-to-sling-distribution-aem.html).
 
 ### Adobe 지원 사례 만들기
@@ -242,4 +241,4 @@ AEM as a Cloud Service에는 모든 AEM 릴리스에서 최신 핵심 구성 요
 
 + [Adobe Admin Console](https://adminconsole.adobe.com) > 지원 탭 > 사례 만들기
 
-   _여러 Adobe 조직의 멤버인 경우 사례를 생성하기 전에 Adobe 조직 전환기에서 실패한 파이프라인이 있는 Adobe 조직이 선택되었는지 확인하십시오._
+  _여러 Adobe 조직의 멤버인 경우 사례를 생성하기 전에 Adobe 조직 전환기에서 실패한 파이프라인이 있는 Adobe 조직이 선택되었는지 확인하십시오._

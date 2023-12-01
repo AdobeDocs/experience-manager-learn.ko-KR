@@ -5,8 +5,9 @@ feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: 873d8e69-5a05-44ac-8dae-bba21f82b823
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 0%
@@ -84,9 +85,8 @@ JSON 출력 및 해당 형식은 를 사용하여 페이지를 요청하여 검�
 > 이 JSON은 **단정해** (서식 지정됨) `.tidy` 선택기:
 > * [http://localhost:4502/content/wknd-mobile/en/api/events.model.tidy.json](http://localhost:4502/content/wknd-mobile/en/api/events.model.tidy.json)
 
-
 ## 다음 단계
 
 필요한 경우 [com.adobe.aem.guides.wknd-mobile.content.chapter-5.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) 를 통한 AEM Author의 콘텐츠 패키지 [AEM 패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp). 이 패키지에는 자습서의 이 장과 이전 장에 설명된 구성과 콘텐츠가 포함되어 있습니다.
 
-* [6장 - AEM 게시에서 콘텐츠를 JSON으로 노출](./chapter-6.md)
+* [6장 - AEM 게시에서 컨텐츠를 JSON으로 노출](./chapter-6.md)

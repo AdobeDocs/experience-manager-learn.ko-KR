@@ -4,15 +4,12 @@ description: Apache Sling 모델 1.3.0은 Sling 모델 개체를 사용자 지�
 version: 6.4, 6.5
 sub-product: Experience Manager, Experience Manager Sites
 feature: APIs
-topics: development, content-delivery, headless
-activity: understand
-audience: developer, architect
-doc-type: article
+doc-type: Article
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 03cdf5d1-3253-44c9-ae1f-ec5d3c562427
-source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 1%
@@ -57,13 +54,13 @@ Apache [!DNL Sling Model Exporter] Jackson Exporter가 제공하는 Sling이 함
 
 *이 플로우는 제공된 Json 익스포터를 사용하여 JSON 출력을 생성하는 플로우를 설명합니다. 사용자 지정 내보내기 사용은 동일한 플로우를 따르지만 출력 형식을 사용합니다.*
 
-1. 선택기와 확장이 와(과) 함께 등록된 AEM의 리소스에 대해 HTTP GET 요청이 이루어집니다. [!DNL Sling Model]의 내보내기.
+1. 선택기와 확장이 와(과) 함께 등록된 AEM의 리소스에 대해 HTTP GET 요청이 이루어짐 [!DNL Sling Model]의 내보내기.
 
    예: `HTTP GET /content/my-resource.model.json`
 
 1. Sling이 요청된 리소스의 을(를) 확인합니다. `sling:resourceType`, 선택기 및 확장자에 동적으로 생성된 Sling 내보내기 서블릿에 매핑됩니다. [!DNL Sling Model] 내보내기 사용.
 1. 해결된 Sling 내보내기 서블릿은 [!DNL Sling Model Exporter] 에 대해 [!DNL Sling Model] 요청 또는 리소스에서 조정된 객체(Sling 모델 적응성에 의해 결정됨).
-1. 내보내기는 [!DNL Sling Model] 내보내기 옵션 및 내보내기 전용 슬링 모델 주석을 기반으로 하며, 결과를 슬링 내보내기 서블릿에 반환합니다.
+1. 내보내기는 [!DNL Sling Model] 내보내기 옵션 및 내보내기 전용 슬링 모델 주석을 기반으로 하며 결과를 슬링 내보내기 서블릿에 반환합니다.
 1. Sling 내보내기 서블릿이 의 JSON 표현물을 반환합니다. [!DNL Sling Model] HTTP 응답.
 
 >[!NOTE]

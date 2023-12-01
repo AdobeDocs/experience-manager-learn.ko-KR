@@ -3,14 +3,14 @@ title: GraphQL API 살펴보기 - AEM Headless 시작하기 - GraphQL
 description: Adobe Experience Manager(AEM) 및 GraphQL을 시작합니다. 내장된 GraphiQL IDE를 사용하여 AEM GraphQL API를 살펴보십시오. AEM이 콘텐츠 조각 모델을 기반으로 GraphQL 스키마를 자동으로 생성하는 방법을 알아봅니다. GraphQL 구문을 사용하여 기본 쿼리를 구성해 봅니다.
 version: Cloud Service
 mini-toc-levels: 1
-kt: 6714
+jira: KT-6714
 thumbnail: KT-6714.jpg
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 508b0211-fa21-4a73-b8b4-c6c34e3ba696
-source-git-commit: 7938325427b6becb38ac230a3bc4b031353ca8b1
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1454'
 ht-degree: 2%

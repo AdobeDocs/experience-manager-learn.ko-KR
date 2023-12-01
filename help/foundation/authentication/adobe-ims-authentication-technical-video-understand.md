@@ -3,27 +3,24 @@ title: Adobe Managed Services에서 AEM을 사용한 Adobe IMS 인증 이해
 description: Adobe Experience Manager에서는 Managed Services의 AEM에 대해 AEM 인스턴스 및 Adobe IMS(Identity Management 시스템) 기반 인증에 대한 Admin Console 지원을 도입했습니다.   이 통합을 통해 AEM Managed Services 고객은 단일 통합 웹 콘솔에서 모든 Experience Cloud 사용자를 관리할 수 있습니다. 사용자 및 그룹을 AEM 인스턴스와 연결된 제품 프로필에 할당하여 특정 AEM 인스턴스에 대한 중앙 관리 액세스 권한을 부여할 수 있습니다.
 version: 6.4, 6.5
 feature: User and Groups
-topics: authentication, security
-activity: understand
-audience: administrator, architect, developer, implementer
-doc-type: technical video
-kt: 781
+doc-type: Technical Video
+jira: KT-781
 topic: Architecture
 role: Architect
 level: Experienced
 exl-id: 52dd8a3f-6461-4acb-87ca-5dd9567d15a6
 last-substantial-update: 2022-10-01T00:00:00Z
 thumbnail: KT-781.jpg
-source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '448'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
 # Adobe Managed Services에서 AEM을 사용한 Adobe IMS 인증 이해{#understanding-adobe-ims-authentication-with-aem-on-adobe-managed-services}
 
-Adobe Experience Manager에서는 AEM 인스턴스에 대한 Admin Console 지원 및 Managed Services의 AEM에 대한 IMS(Adobe Identity Management System) 기반 인증을 도입했습니다.   이 통합을 통해 AEM Managed Services 고객은 단일 통합 웹 콘솔에서 모든 Experience Cloud 사용자를 관리할 수 있습니다. 사용자 및 그룹을 AEM 인스턴스와 연결된 제품 프로필에 할당하여 특정 AEM 인스턴스에 대한 중앙 관리 액세스 권한을 부여할 수 있습니다.
+Adobe Experience Manager은 AEM 인스턴스에 대한 Admin Console 지원 및 Managed Services의 AEM에 대한 IMS(Adobe Identity Management System) 기반 인증을 도입했습니다.   이 통합을 통해 AEM Managed Services 고객은 단일 통합 웹 콘솔에서 모든 Experience Cloud 사용자를 관리할 수 있습니다. 사용자 및 그룹을 AEM 인스턴스와 연결된 제품 프로필에 할당하여 특정 AEM 인스턴스에 대한 중앙 관리 액세스 권한을 부여할 수 있습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26170?quality=12&learn=on)
 
@@ -34,9 +31,9 @@ Adobe Experience Manager에서는 AEM 인스턴스에 대한 Admin Console 지�
 * 인증 지원에는 SSO용 고객 SAML2 호환 IDP가 포함됩니다.
 * Enterprise ID 또는 Federated ID(고객 SSO의 경우)만 지원됩니다(개인 Adobe ID는 지원되지 않음).
 
-*&#42;이 기능은 AEM 6.4 SP3 이상에서 Adobe Managed Services 고객에게 지원됩니다.*
+*&#42;이 기능은 Adobe Managed Services 고객을 위해 AEM 6.4 SP3 이상에서 지원됩니다.*
 
-## 우수 사례 {#best-practices}
+## 모범 사례 {#best-practices}
 
 ### Admin Console에서 권한 적용
 

@@ -7,8 +7,9 @@ feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: f24a75f6-9062-498c-b782-7d9011aa0bcf
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 1%
@@ -30,7 +31,7 @@ ht-degree: 1%
 
 ## WKND 모바일 애플리케이션 패키지{#wknd-mobile-application-packages}
 
-다음 AEM 컨텐츠 패키지 설치 **모두** AEM 작성자 및 AEM 게시, 사용 [!DNL AEM Package Manager].
+다음 AEM 컨텐츠 패키지 설치 **모두** AEM Author 및 AEM Publish, 사용 [!DNL AEM Package Manager].
 
 * [ui.apps: GitHub > 자산 > com.adobe.aem.guides.wknd-mobile.ui.apps-x.x.x.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
    * [!DNL WKND Mobile Empty Template Type]
@@ -62,7 +63,7 @@ AEM 프로젝트 및 의 소스 코드 [!DNL Android Mobile App] 다음에서 �
 
 ## 끝으로 건너뛰기
 
-자습서의 끝으로 이동하려면 [com.adobe.aem.guides.wknd-mobile.content.chapter-5.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) 콘텐츠 패키지를 설치할 수 있는 위치 **모두** AEM 작성자 및 AEM 게시. 콘텐츠 및 구성은 AEM Author에 게시된 대로 표시되지 않지만 수동 배포로 인해 필요한 모든 콘텐츠 및 구성을 AEM Publish에서 사용할 수 있으므로 [!DNL WKND Mobile App] 콘텐츠에 액세스합니다.
+자습서의 끝으로 이동하려면 [com.adobe.aem.guides.wknd-mobile.content.chapter-5.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) 콘텐츠 패키지를 설치할 수 있는 위치 **모두** AEM 작성자 및 AEM 게시. 컨텐츠 및 구성은 AEM Author에 게시된 것으로 표시되지 않지만 수동 배포로 인해 AEM Publish에서 필요한 모든 컨텐츠 및 구성을 사용할 수 있으므로 다음을 수행할 수 있습니다. [!DNL WKND Mobile App] 콘텐츠에 액세스합니다.
 
 
 ## 다음 단계

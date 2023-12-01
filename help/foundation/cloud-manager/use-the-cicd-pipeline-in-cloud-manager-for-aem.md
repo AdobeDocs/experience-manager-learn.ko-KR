@@ -2,10 +2,7 @@
 title: Adobe Cloud Manager에서 CI/CD 파이프라인 사용
 description: Adobe Cloud Manager는 AEM 프로젝트 팀이 AMS에서 호스팅되는 모든 AEM 환경에 코드를 빠르고, 안전하고, 일관되게 배포할 수 있도록 해주는 간단하면서도 유연한 셀프서비스 CI/CD 파이프라인을 제공합니다. 이 비디오 시리즈에서는 실패 및 성공 시나리오 모두에서 Cloud Manager의 CI/CD 파이프라인 설정 및 실행에 대해 살펴봅니다.
 sub-product: Experience Manager Cloud Manager, Experience Manager
-topics: cicd, performance, best-practices, development, governance
-doc-type: feature video
-activity: understand
-audience: all
+doc-type: Feature Video
 topic: Architecture
 feature: Cloud Manager
 role: Developer
@@ -13,7 +10,7 @@ level: Beginner
 exl-id: d5d59ef5-9343-4ac2-9053-a010decdb9b6
 last-substantial-update: 2022-08-15T00:00:00Z
 thumbnail: cm-pipeline.jpg
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '312'
 ht-degree: 2%

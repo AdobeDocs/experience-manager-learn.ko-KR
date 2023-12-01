@@ -2,17 +2,17 @@
 title: 단위 테스트
 description: 사용자 지정 구성 요소 자습서에서 만든 Byline 구성 요소의 Sling 모델 동작을 확인하는 단위 테스트를 구현합니다.
 version: 6.5, Cloud Service
-type: Tutorial
 feature: APIs, AEM Project Archetype
 topic: Content Management, Development
 role: Developer
 level: Beginner
-kt: 4089
+jira: KT-4089
 mini-toc-levels: 1
 thumbnail: 30207.jpg
+doc-type: Tutorial
 exl-id: b926c35e-64ad-4507-8b39-4eb97a67edda
 recommendations: noDisplay, noCatalog
-source-git-commit: bbdb045edf5f2c68eec5094e55c1688e725378dc
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2980'
 ht-degree: 0%
@@ -138,8 +138,6 @@ AEM 모범 사례를 사용하고 다음을 사용합니다.
    1. 테스트 파일로 쉽게 식별 _대상_ `BylineImpl.java`
    1. 또한 테스트 파일을 구분합니다 _출처:_ 시험중인 학급, `BylineImpl.java`
 
-
-
 ## BylineImplTest.java 검토 {#reviewing-bylineimpltest-java}
 
 이 시점에서 JUnit 테스트 파일은 빈 Java™ 클래스입니다.
@@ -184,7 +182,7 @@ AEM 모범 사례를 사용하고 다음을 사용합니다.
 
    먼저 테스트 중인 클래스의 각 공용 메서드에 대한 단일 테스트 메서드로 시작하므로
 
-   | BylineImpl.java |  | BylineImplTest.java |
+   | BylineImpl.java |              | BylineImplTest.java |
    | ------------------|--------------|---------------------|
    | getName() | 은(는) 다음을 통해 테스트함: | testGetName() |
    | getOccuptions() | 은(는) 다음을 통해 테스트함: | testGetOccuptions() |
@@ -383,7 +381,7 @@ AEM용으로 작성된 대부분의 코드는 JCR, Sling 또는 AEM API에 의�
    * **`@Mock private Image`** 형식의 모의 개체 만들기 `com.adobe.cq.wcm.core.components.models.Image`. 이는 클래스 수준에서 정의되므로 필요한 경우 `@Test` 메서드는 필요에 따라 동작을 변경할 수 있습니다.
    * **`@Mock private ModelFactory`** modelFactory 형식의 mock 개체를 만듭니다. 이것은 순수한 모키토 모의이며, 그 위에 구현된 방법이 없습니다. 이는 클래스 수준에서 정의되므로 필요한 경우 `@Test`메서드는 필요에 따라 동작을 변경할 수 있습니다.
    * **`when(modelFactory.getModelFromWrappedRequest(..)`** 다음 경우에 대한 모의 동작 등록 `getModelFromWrappedRequest(..)` 는 mock ModelFactory 개체에서 호출됩니다. 에 정의된 결과 `thenReturn (..)` 는 모의 이미지 개체를 반환합니다. 이 동작은 첫 번째 매개 변수가 `ctx`의 요청 개체입니다. 두 번째 매개 변수는 임의의 리소스 개체이고 세 번째 매개 변수는 코어 구성 요소 이미지 클래스여야 합니다. 테스트 기간 동안 다음을 설정하고 있으므로 모든 리소스를 허용합니다. `ctx.currentResource(...)` 에 정의된 다양한 모의 리소스 **BylineImplTest.json**. 다음 사항을 추가합니다. **lenient()** 나중에 ModelFactory의 이 동작을 재정의하려고 하므로 엄격합니다.
-   * **`ctx.registerService(..)`.** mock ModelFactory 개체를 가장 높은 서비스 순위로 AemContext에 등록합니다. BylineImpl의에 사용된 ModelFactory이므로 이 작업이 필요합니다. `init()` 을 통해 주사됩니다. `@OSGiService ModelFactory model` 필드. AemContext에 삽입 **우리의** 모의 개체, 호출 처리 `getModelFromWrappedRequest(..)`, 해당 유형의 최상위 서비스(ModelFactory)로 등록해야 합니다.
+   * **`ctx.registerService(..)`** mock ModelFactory 개체를 가장 높은 서비스 순위로 AemContext에 등록합니다. BylineImpl의에 사용된 ModelFactory이므로 이 작업이 필요합니다. `init()` 을 통해 주사됩니다. `@OSGiService ModelFactory model` 필드. AemContext에 삽입 **우리의** 모의 개체, 호출 처리 `getModelFromWrappedRequest(..)`, 해당 유형의 최상위 서비스(ModelFactory)로 등록해야 합니다.
 
 1. 테스트를 다시 실행하고 실패해도 이번에는 메시지가 실패한 이유를 명확하게 알 수 있습니다.
 

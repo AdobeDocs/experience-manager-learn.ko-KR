@@ -6,8 +6,9 @@ version: 6.4, 6.5
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Feature Video
 exl-id: 7e4cb782-836d-4ec0-97d0-645b91ea43e0
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 6%
@@ -64,7 +65,7 @@ ht-degree: 6%
   </tr>
   <tr> 
    <td> <p>데스크탑</p> </td>
-   <td> <p>Chrome</p> </td>
+   <td> <p>크롬</p> </td>
    <td> <p>HLS 비디오 스트리밍</p> </td>
   </tr>
   <tr> 

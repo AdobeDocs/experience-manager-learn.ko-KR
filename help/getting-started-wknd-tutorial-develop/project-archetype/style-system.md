@@ -3,17 +3,17 @@ title: 스타일 시스템을 사용하여 개발
 seo-title: Developing with the Style System
 description: Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 구현하고 핵심 구성 요소를 재사용하는 방법에 대해 알아봅니다. 이 튜토리얼에서는 스타일 시스템에서 템플릿 편집기의 브랜드별 CSS 및 고급 정책 구성을 사용하여 핵심 구성 요소를 확장하는 개발 방법을 다룹니다.
 version: 6.5, Cloud Service
-type: Tutorial
 feature: Core Components, Style System
 topic: Content Management, Development
 role: Developer
 level: Beginner
-kt: 4128
+jira: KT-4128
 mini-toc-levels: 1
 thumbnail: 30386.jpg
+doc-type: Tutorial
 exl-id: 5b490132-cddc-4024-92f1-e5c549afd6f1
 recommendations: noDisplay, noCatalog
-source-git-commit: 68a7f263284fdf9cfcf82572b8e1e1c0c01e4b55
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1678'
 ht-degree: 2%
@@ -146,7 +146,7 @@ Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 �
 
 ### 밑줄 스타일 구현 - ui.frontend
 
-그런 다음 를 사용하여 밑줄 스타일을 구현합니다. **ui.frontend** AEM 프로젝트의 모듈입니다. 와 번들로 제공되는 Webpack 개발 서버 **ui.frontend** 스타일 미리 보기 모듈 *다음 이전* AEM의 로컬 인스턴스에 배포하는 것이 사용됩니다.
+그런 다음 를 사용하여 밑줄 스타일을 구현합니다 **ui.frontend** AEM 프로젝트의 모듈입니다. 와 번들로 제공되는 Webpack 개발 서버 **ui.frontend** 스타일 미리 보기 모듈 *다음 이전* AEM의 로컬 인스턴스에 배포하는 것이 사용됩니다.
 
 1. 시작 `watch` 다음 내에서 처리 **ui.frontend** 모듈:
 

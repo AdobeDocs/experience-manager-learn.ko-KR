@@ -2,16 +2,16 @@
 title: 사용자 지정 날씨 구성 요소 만들기 | AEM SPA 편집기 및 반응 시작하기
 description: AEM SPA 편집기에서 사용할 사용자 지정 날씨 구성 요소를 만드는 방법을 알아봅니다. 작성자 대화 상자 및 Sling 모델을 개발하여 JSON 모델을 확장하여 사용자 지정 구성 요소를 채우는 방법에 대해 알아봅니다. Open Weather API 및 React Open Weather 구성 요소가 사용됩니다.
 feature: SPA Editor
-doc-type: tutorial
 topics: development
 version: Cloud Service
-kt: 5878
+jira: KT-5878
 thumbnail: 5878-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: 82466e0e-b573-440d-b806-920f3585b638
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1216'
 ht-degree: 3%

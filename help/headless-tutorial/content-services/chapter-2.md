@@ -7,8 +7,9 @@ feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: 8b05fc02-c0c5-48ad-a53e-d73b805ee91f
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '962'
 ht-degree: 10%
@@ -30,7 +31,7 @@ AEM 콘텐츠 조각 모델은 AEM 작성자가 원시 콘텐츠 생성을 템�
 
 컨텐츠 조각 모델 **필수** 을 통해 활성화됨 **[AEM [!UICONTROL 구성 브라우저]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html)**.
 
-콘텐츠 조각 모델이 다음과 같은 경우 **아님** 구성이 활성화되었습니다. **[!UICONTROL 만들기] > [!UICONTROL 컨텐츠 조각]** 관련 AEM 구성에 대한 버튼이 표시되지 않습니다.
+콘텐츠 조각 모델이 다음과 같은 경우 **아님** 구성이 활성화되었습니다. **[!UICONTROL 만들기] > [!UICONTROL 컨텐츠 조각]** 관련 AEM 구성에 대한 단추가 표시되지 않습니다.
 
 >[!NOTE]
 >
@@ -42,7 +43,7 @@ AEM 콘텐츠 조각 모델은 AEM 작성자가 원시 콘텐츠 생성을 템�
 >
 >다음을 참조하십시오. [[!UICONTROL 구성 브라우저] 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html) 추가 정보.
 
-1. 관련 구성을 수정할 수 있는 적절한 권한이 있는 사용자로 AEM 작성자에 로그인합니다.
+1. 관련 구성을 수정할 수 있는 적절한 권한이 있는 사용자로 AEM Author에 로그인합니다.
    * 이 자습서의 경우 **admin** 사용자를 사용할 수 있습니다.
 1. 다음으로 이동 **[!UICONTROL 도구] > [!UICONTROL 일반] > [!UICONTROL 구성 브라우저]**
 1. 탭 **폴더 아이콘** 다음에 **[!DNL WKND Mobile]** 을(를) 선택한 다음 **[!UICONTROL 편집] 단추** 왼쪽 상단에서.
@@ -57,7 +58,6 @@ AEM 콘텐츠 조각 모델은 AEM 작성자가 원시 콘텐츠 생성을 템�
    >    1. 열기 [CRXDE Lite](http://localhost:4502/crx/de)
    >    1. 다음으로 이동 `/conf/wknd-mobile/settings/dam/cfm`
    >    1. 삭제 `models` 노드
-
    >    
    >이 구성으로 생성된 기존 콘텐츠 조각 모델은 삭제되고 해당 정의는 아래에 저장됩니다. `/conf/wknd-mobile/settings/dam/cfm/models`.
 
@@ -66,7 +66,7 @@ AEM 콘텐츠 조각 모델은 AEM 작성자가 원시 콘텐츠 생성을 템�
    1. 다음으로 이동 **[!UICONTROL AEM] > [!UICONTROL 에셋] > [!UICONTROL 파일]**
    1. 다음 항목 선택 **[!UICONTROL WKND 모바일] 폴더**
    1. 탭 **[!UICONTROL 속성]** 맨 위 작업 표시줄의 단추를 클릭하여 열기 [!UICONTROL 폴더 속성]
-   1. 위치 [!UICONTROL 폴더 속성]을 누릅니다. **[!UICONTROL Cloud Services]** 탭
+   1. 위치 [!UICONTROL 폴더 속성]을 누릅니다. **[!UICONTROL Cloud Service]** 탭
    1. 확인 **[!UICONTROL 클라우드 구성]** 필드가 로 설정됨 **/conf/wknd-mobile**
    1. 누르기 **[!UICONTROL 저장 및 닫기]** 변경 사항을 유지하려면 오른쪽 상단에서
 

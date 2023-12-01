@@ -6,11 +6,12 @@ topic: Integrations
 feature: Adobe Client Data Layer
 role: Developer
 level: Intermediate
-kt: 5332
+jira: KT-5332
 thumbnail: 5332-collect-data-analytics.jpg
 badgeIntegration: label="통합" type="positive"
+doc-type: Tutorial
 exl-id: 33f2fd25-8696-42fd-b496-dd21b88397b2
-source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2468'
 ht-degree: 4%
@@ -58,7 +59,7 @@ ht-degree: 4%
 AEM 환경을 설정하고 WKND 코드 베이스를 설치하는 대신 Experience Platform 디버거를 사용하여 **전환** 라이브 [WKND 사이트](https://wknd.site/us/en.html) 끝 *본인* 태그 속성입니다. 그러나 이미 AEM 사이트가 있는 경우 자체 사이트를 사용할 수 있습니다. [Adobe 클라이언트 데이터 레이어 활성화됨](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation).
 
 1. Experience Platform 및 [태그 속성 만들기](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html) (아직 수행하지 않았다면).
-1. 초기 태그 JavaScript가 [라이브러리가 생성되었습니다.](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html#create-a-library) 및 가 태그로 승격됨 [환경](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=ko-KR).
+1. 초기 태그 JavaScript가 [라이브러리가 생성되었습니다.](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html#create-a-library) 및 가 태그로 승격됨 [환경](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html).
 1. 라이브러리가 게시된 태그 환경에서 JavaScript 포함 코드를 복사합니다.
 
    ![태그 속성 포함 코드 복사](assets/collect-data-analytics/launch-environment-copy.png)
@@ -180,7 +181,7 @@ Adobe 클라이언트 데이터 레이어는 **이벤트 주도** 데이터 계�
 
    다음 `event` 에서 개체가 전달됩니다. `trigger()` 메서드가 사용자 지정 이벤트에서 호출되었습니다. 여기, `component` 는 데이터 레이어에서 파생된 현재 페이지입니다. `getState` 사용자 지정 이벤트.
 
-1. 변경 사항을 저장하고 를 실행합니다. [빌드](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html) 를 입력하여 코드를 로 승격시킵니다. [환경](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=ko-KR) AEM 사이트에서 사용됩니다.
+1. 변경 사항을 저장하고 를 실행합니다. [빌드](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html) 를 입력하여 코드를 로 승격시킵니다. [환경](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html) AEM 사이트에서 사용됩니다.
 
    >[!NOTE]
    >

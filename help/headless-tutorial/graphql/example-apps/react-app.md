@@ -3,7 +3,7 @@ title: React 앱 - AEM Headless 예
 description: 예제 애플리케이션은 AEM(Adobe Experience Manager)의 Headless 기능을 살펴볼 수 있는 좋은 방법입니다. 이 React 애플리케이션은 지속 쿼리를 사용하여 AEM GraphQL API를 사용하여 콘텐츠를 쿼리하는 방법을 보여 줍니다.
 version: Cloud Service
 mini-toc-levels: 1
-kt: 10715
+jira: KT-10715
 thumbnail: KT-10715.jpg
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
@@ -12,7 +12,7 @@ level: Beginner
 last-substantial-update: 2023-05-10T00:00:00Z
 exl-id: b1ab2a13-8b0e-4d7f-82b5-78b1dda248ba
 badgeVersions: label="AEM 헤드리스 as a Cloud Service" before-title="false"
-source-git-commit: 6f874fd3da09ce808920a7f8ea3386beda726272
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '898'
 ht-degree: 4%
@@ -292,7 +292,7 @@ React 애플리케이션은 두 개의 뷰를 사용하여 웹 경험에 어드�
 
 ### 환경 변수
 
-여러 개 [환경 변수](https://create-react-app.dev/docs/adding-custom-environment-variables) AEM 환경에 연결하는 데 사용됩니다. 다음에서 실행 중인 AEM 게시에 기본 연결 `http://localhost:4503`. 업데이트 `.env.development` 파일, AEM 연결 변경:
+여러 개 [환경 변수](https://create-react-app.dev/docs/adding-custom-environment-variables) AEM 환경에 연결하는 데 사용됩니다. 에서 실행 중인 AEM Publish에 기본 연결 `http://localhost:4503`. 업데이트 `.env.development` 파일, AEM 연결 변경:
 
 + `REACT_APP_HOST_URI=https://publish-p123-e456.adobeaemcloud.com`: AEM target 호스트로 설정합니다.
 + `REACT_APP_GRAPHQL_ENDPOINT=/content/graphql/global/endpoint.json`: GraphQL 엔드포인트 경로를 설정합니다. 이 앱은 지속 쿼리만 사용하므로 이 React 앱에서는 사용되지 않습니다.

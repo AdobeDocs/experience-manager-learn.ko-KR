@@ -7,13 +7,13 @@ version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
-kt: 6270
+jira: KT-6270
 thumbnail: KT-6270.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: c63c5c75-1deb-4c16-ba33-e2c338ef6251
-source-git-commit: eb6a7ef343a43000855f8d5cc69bde0fae81d3e6
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '590'
 ht-degree: 0%
@@ -35,7 +35,7 @@ asset compute 작업자의 개발을 시작하기 전에 프로젝트가 Adobe I
 + 키 쌍이 Adobe I/O에 의해 생성된 경우 의 일부로 자동 다운로드되었습니다  `config.zip`.
 + 공개 키를 Adobe I/O에 제공한 경우 일치하는 개인 키도 보유해야 합니다.
 + 이러한 키 쌍이 없는 경우 새 키 쌍을 생성하거나 아래쪽의 새 공개 키를 업로드할 수 있습니다.
-   [https://console.adobe.com](https://console.adobe.io) > Asset compute 앱 빌더 프로젝트 > 작업 공간 @ 개발 > 서비스 계정(JWT).
+  [https://console.adobe.com](https://console.adobe.io) > Asset compute 앱 빌더 프로젝트 > 작업 공간 @ 개발 > 서비스 계정(JWT).
 
 다음을 기억하십시오. `private.key` 파일에 비밀이 포함되어 있으므로 Git으로 체크인해서는 안 되며, 프로젝트 외부의 안전한 장소에 저장해야 합니다.
 

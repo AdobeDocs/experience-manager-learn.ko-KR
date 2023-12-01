@@ -5,12 +5,13 @@ topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
 role: Developer, Architect
 level: Beginner
-kt: 7634
+jira: KT-7634
 thumbnail: kt-7634.jpeg
 last-substantial-update: 2022-11-11T00:00:00Z
 recommendations: noDisplay, noCatalog
+doc-type: Tutorial
 exl-id: edd18f2f-6f24-4299-a31a-54ccc4f6d86e
-source-git-commit: ece15ba61124972bed0667738ccb37575d43de13
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '536'
 ht-degree: 1%
@@ -176,7 +177,7 @@ EditableTitle React 구성 요소가에 등록되어 React 앱 내에서 사용�
    + 제목: __어드벤처__
    + 유형/크기: __H2__
 
-      ![제목 구성 요소 대화 상자](./assets/spa-fixed-component/title-dialog.png)
+     ![제목 구성 요소 대화 상자](./assets/spa-fixed-component/title-dialog.png)
 
 1. 누르기 __완료__ 저장
 1. AEM SPA Editor에서 변경 사항 미리보기

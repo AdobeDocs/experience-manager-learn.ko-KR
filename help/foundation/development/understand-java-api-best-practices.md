@@ -6,10 +6,11 @@ feature: APIs
 topic: Development
 role: Developer
 level: Beginner
+doc-type: Article
 exl-id: b613aa65-f64b-4851-a2af-52e28271ce88
 last-substantial-update: 2022-06-24T00:00:00Z
 thumbnail: aem-java-bp.jpg
-source-git-commit: a156877ff4439ad21fb79f231d273b8983924199
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2079'
 ht-degree: 2%
@@ -102,6 +103,7 @@ AEM은 여러 쿼리 언어를 지원합니다. 세 가지 주요 언어는 다�
 >[!CAUTION]
 >
 >AEM QueryBuilder API가 ResourceResolver 개체를 누출합니다. 이 누출을 완화하려면 다음을 수행하십시오 [코드 샘플](https://github.com/Adobe-Consulting-Services/acs-aem-samples/blob/master/core/src/main/java/com/adobe/acs/samples/search/querybuilder/impl/SampleQueryBuilder.java#L164).
+>
 
 ## [!DNL Sling] API
 
@@ -195,7 +197,7 @@ OSGi 구성 요소 속성에서 정의 또는 읽기와 같은 낮은 수준의 
 
 ### AEM Asset API
 
-* 기본 설정 [ `com.day.cq.dam.api`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/dam/api/package-summary.html) 초과 [ `com.adobe.granite.asset.api`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/asset/api/package-summary.html).
+* 기본 설정 [`com.day.cq.dam.api`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/dam/api/package-summary.html) 초과 [`com.adobe.granite.asset.api`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/asset/api/package-summary.html).
 
    * 동안 `com.day.cq` Assets API는 AEM 자산 관리 사용 사례에 더 많은 무료 도구를 제공합니다.
    * Granite Assets API는 낮은 수준의 자산 관리 사용 사례(버전, 관계)를 지원합니다.

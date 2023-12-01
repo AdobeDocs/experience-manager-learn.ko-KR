@@ -3,14 +3,15 @@ title: 기준선 폴더
 description: AEM Assets에서 기본 폴더를 정의하면 디지털 에셋 관리를 위한 견고한 콘텐츠 아키텍처와 기반을 구축할 수 있습니다.
 feature: Asset Management
 version: Cloud Service
-kt: 4870
+jira: KT-4870
 thumbnail: 33496.jpg
 topic: Content Management
 role: User
 level: Beginner
 last-substantial-update: 2021-09-14T00:00:00Z
+doc-type: Feature Video
 exl-id: 9d11156d-1ea4-42a6-8e0d-cbc4aae4e34c
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '42'
 ht-degree: 0%

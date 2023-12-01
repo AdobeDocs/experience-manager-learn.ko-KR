@@ -1,14 +1,14 @@
 ---
 title: asset compute 확장성을 위한 Asset compute 프로젝트 만들기
 description: Asset compute 프로젝트는 Adobe I/O CLI를 사용하여 생성된 Node.js 프로젝트로서, 특정 구조를 준수하여 Adobe I/O Runtime에 배포하고 AEM as a Cloud Service으로 통합할 수 있습니다.
-kt: 6269
+jira: KT-6269
 thumbnail: 40197.jpg
 topic: Integrations, Development
 feature: Asset Compute Microservices
 role: Developer
 level: Intermediate, Experienced
 exl-id: ebb11eab-1412-4af5-bc09-e965b9116ac9
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '589'
 ht-degree: 1%
@@ -59,9 +59,8 @@ _asset compute 프로젝트 생성 클릭스루(오디오 없음)_
    + 임의의 폴더로 이동하고 `.env` 구성 항목이 있는 파일 `ASSET_COMPUTE_INTEGRATION_FILE_PATH`. 파일 경로는 절대 경로이거나 프로젝트 루트에 상대적일 수 있습니다. 예:
       + `ASSET_COMPUTE_INTEGRATION_FILE_PATH=/Users/example-user/secrets/wkndAemAssetCompute-81368-Development.json`
 
-      또는
+     또는
       + `ASSET_COMPUTE_INTEGRATION_FILE_PATH=../../secrets/wkndAemAssetCompute-81368-Development.json.json`
-
 
 > 메모
 > 파일에 자격 증명이 포함되어 있습니다. 파일을 프로젝트 내에 저장하는 경우 파일을 프로젝트에 추가해야 합니다. `.gitignore` 공유할 수 없도록 하는 파일입니다. 이는 다음과 같습니다. `.env` 파일 — 이러한 자격 증명 파일은 공유하거나 Git에 저장해서는 안 됩니다.

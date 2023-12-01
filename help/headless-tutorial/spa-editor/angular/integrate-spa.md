@@ -2,18 +2,17 @@
 title: SPA 통합 | AEM SPA 편집기 및 Angular 시작하기
 description: angular으로 작성된 단일 페이지 애플리케이션(SPA)의 소스 코드를 Adobe Experience Manager(AEM) 프로젝트와 통합하는 방법에 대해 알아봅니다. angular의 CLI 도구와 같은 최신 프런트 엔드 도구를 사용하여 AEM JSON 모델 API에 대해 SPA을 신속하게 개발하는 방법에 대해 알아봅니다.
 feature: SPA Editor
-topics: development
-doc-type: tutorial
 version: Cloud Service
 activity: develop
 audience: developer
-kt: 5310
+jira: KT-5310
 thumbnail: 5310-spa-angular.jpg
 topic: SPA
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: e9386885-86de-4e43-933c-2f0a2c04a2f2
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2187'
 ht-degree: 0%
@@ -200,7 +199,7 @@ angular으로 작성된 단일 페이지 애플리케이션(SPA)의 소스 코�
 
    이 경우 새 Angular 헤더 구성 요소의에 대한 뼈대가 만들어집니다. `ui.frontend/src/app/components/header`.
 
-4. 를 엽니다. `aem-guides-wknd-spa` 원하는 IDE에서 프로젝트를 만듭니다. 다음 위치로 이동 `ui.frontend/src/app/components/header` 폴더를 삭제합니다.
+4. 를 엽니다. `aem-guides-wknd-spa` 원하는 IDE에서 프로젝트를 만듭니다. `ui.frontend/src/app/components/header` 폴더로 이동합니다.
 
    ![IDE의 헤더 구성 요소 경로](assets/integrate-spa/header-component-path.png)
 
@@ -238,7 +237,7 @@ angular으로 작성된 단일 페이지 애플리케이션(SPA)의 소스 코�
    ES5 bundle generation complete.
    ```
 
-8. 다음 위치로 이동 `ui.apps` 폴더를 삭제합니다. 아래에 `ui.apps/src/main/content/jcr_root/apps/wknd-spa-angular/clientlibs/clientlib-angular` 컴파일된 SPA 파일이`ui.frontend/build` 폴더를 삭제합니다.
+8. `ui.apps` 폴더로 이동합니다. 아래에 `ui.apps/src/main/content/jcr_root/apps/wknd-spa-angular/clientlibs/clientlib-angular` 컴파일된 SPA 파일이`ui.frontend/build` 폴더를 삭제합니다.
 
    ![ui.apps에서 생성된 클라이언트 라이브러리](assets/integrate-spa/compiled-spa-uiapps.png)
 

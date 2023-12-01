@@ -3,7 +3,7 @@ title: Android 앱 - AEM Headless 예
 description: 예제 애플리케이션은 AEM(Adobe Experience Manager)의 Headless 기능을 살펴볼 수 있는 좋은 방법입니다. 이 Android 애플리케이션은 AEM의 GraphQL API를 사용하여 콘텐츠를 쿼리하는 방법을 보여 줍니다.
 version: Cloud Service
 mini-toc-levels: 2
-kt: 10588
+jira: KT-10588
 thumbnail: KT-10588.jpg
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
@@ -12,7 +12,7 @@ level: Beginner
 last-substantial-update: 2023-05-10T00:00:00Z
 badgeVersions: label="AEM 헤드리스 as a Cloud Service" before-title="false"
 exl-id: 7873e263-b05a-4170-87a9-59e8b7c65faa
-source-git-commit: 679b9bf9f0948e2b24d613b530d3ae644c92057d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '687'
 ht-degree: 5%
@@ -41,7 +41,7 @@ Android 애플리케이션은 다음 AEM 배포 옵션과 함께 작동합니다
 
 + [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
 
-Android 애플리케이션은 __AEM 게시__ 그러나 Android 애플리케이션의 구성에서 인증이 제공된 경우 AEM 작성자의 콘텐츠를 소싱할 수 있습니다.
+Android 애플리케이션은 __AEM 게시__ 그러나 Android 애플리케이션의 구성에서 인증이 제공되는 경우 AEM 작성자의 콘텐츠를 소싱할 수 있습니다.
 
 ## 사용 방법
 

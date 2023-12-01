@@ -2,16 +2,16 @@
 title: Adobe XD을 통한 UI 계획 | AEM 빠른 사이트 생성
 description: Adobe XD UI Kit를 사용하여 Adobe Experience Manager Sites 구현을 디자인하고 가속화하는 방법을 알아봅니다.
 version: Cloud Service
-type: Tutorial
 topic: Content Management
 feature: Core Components
 role: Developer
 level: Beginner
-kt: 9371
+jira: KT-9371
 thumbnail: 338680.jpg
+doc-type: Tutorial
 exl-id: 3155e0fa-56b7-4a52-8eef-fee488e95f68
 recommendations: noDisplay, noCatalog
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 3%

@@ -1,16 +1,17 @@
 ---
 title: AEM Assets의 폐쇄형 사용자 그룹
-description: 폐쇄된 사용자 그룹(CUG)은 콘텐츠에 대한 액세스를 게시된 사이트에서 선택한 사용자 그룹으로 제한하는 데 사용되는 기능입니다. 이 비디오는 폐쇄된 사용자 그룹을 Adobe Experience Manager 에셋과 함께 사용하여 어떻게 특정 에셋 폴더에 대한 액세스를 제한할 수 있는지 보여 줍니다.
+description: 폐쇄된 사용자 그룹(CUG)은 콘텐츠에 대한 액세스를 게시된 사이트에서 선택한 사용자 그룹으로 제한하는 데 사용되는 기능입니다. 이 비디오는 폐쇄된 사용자 그룹을 Adobe Experience Manager Assets과 함께 사용하여 어떻게 특정 에셋 폴더에 대한 액세스를 제한할 수 있는지 보여 줍니다.
 version: 6.4, 6.5, Cloud Service
 topic: Administration, Security
 feature: User and Groups
 role: Admin
 level: Intermediate
-kt: 649
+jira: KT-649
 thumbnail: 22155.jpg
 last-substantial-update: 2022-06-06T00:00:00Z
+doc-type: Feature Video
 exl-id: a2bf8a82-15ee-478c-b7c3-de8a991dfeb8
-source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 0%
@@ -19,7 +20,7 @@ ht-degree: 0%
 
 # 폐쇄된 사용자 그룹{#using-closed-user-groups-with-aem-assets}
 
-폐쇄된 사용자 그룹(CUG)은 콘텐츠에 대한 액세스를 게시된 사이트에서 선택한 사용자 그룹으로 제한하는 데 사용되는 기능입니다. 이 비디오는 폐쇄된 사용자 그룹을 Adobe Experience Manager 에셋과 함께 사용하여 어떻게 특정 에셋 폴더에 대한 액세스를 제한할 수 있는지 보여 줍니다. AEM 6.4에서 AEM Assets을 사용하는 폐쇄형 사용자 그룹에 대한 지원이 처음 도입되었습니다.
+폐쇄된 사용자 그룹(CUG)은 콘텐츠에 대한 액세스를 게시된 사이트에서 선택한 사용자 그룹으로 제한하는 데 사용되는 기능입니다. 이 비디오는 폐쇄된 사용자 그룹을 Adobe Experience Manager Assets과 함께 사용하여 어떻게 특정 에셋 폴더에 대한 액세스를 제한할 수 있는지 보여 줍니다. AEM 6.4에서 AEM Assets을 사용하는 폐쇄형 사용자 그룹에 대한 지원이 처음 도입되었습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/22155?quality=12&learn=on)
 
@@ -35,7 +36,7 @@ ht-degree: 0%
 
 CUG(폐쇄형 사용자 그룹)와 ACL(액세스 제어 목록)은 모두 AEM의 콘텐츠에 대한 액세스를 제어하는 데 사용되며 AEM Security 사용자 및 그룹을 기반으로 합니다. 그러나 이러한 기능의 적용 및 구현은 매우 다릅니다. 다음 표에는 두 피쳐의 차이점이 요약되어 있습니다.
 
-|  | ACL | CUG |
+|                   | ACL | CUG |
 | ----------------- | -------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
 | 의도한 사용 | 에서 콘텐츠에 대한 권한 구성 및 적용 **현재** AEM 인스턴스. | AEM의 콘텐츠에 대한 CUG 정책 구성 **작성자** 인스턴스. AEM의 콘텐츠에 대한 CUG 정책 적용 **게시** 인스턴스. |
 | 권한 수준 | 읽기, 수정, 만들기, 삭제, ACL 읽기, ACL 편집, 복제와 같은 모든 수준의 사용자/그룹에 대해 부여되거나 거부된 권한을 정의합니다. | 사용자/그룹 집합에 대한 읽기 액세스 권한을 부여합니다. 에 대한 읽기 액세스 거부 *다른 모든 항목* 사용자/그룹. |

@@ -2,10 +2,7 @@
 title: Adobe Cloud Manager 이해
 description: Adobe Cloud Manager는 AEM 환경을 손쉽게 관리, 자체 검사 및 셀프서비스할 수 있는 간단하면서도 강력한 솔루션을 제공합니다.
 sub-product: Experience Manager Cloud Manager, Experience Manager
-topics: best-practices, cicd, development, operations, governance
-doc-type: feature video
-activity: understand
-audience: developer, implementer, administrator, architect
+doc-type: Feature Video
 topic: Architecture
 feature: Cloud Manager
 role: Architect
@@ -13,7 +10,7 @@ level: Beginner
 exl-id: 53279cbb-70c8-4319-b5bb-9a7d350a7f72
 last-substantial-update: 2022-05-10T00:00:00Z
 thumbnail: understand-cloud-manager.jpg
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 16%
@@ -45,7 +42,7 @@ Adobe Cloud Manager는 AEM 환경을 손쉽게 관리, 자체 검사 및 셀프�
 
 ## 환경 {#environments}
 
-[Cloud Manager 환경](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/managing-environments.html) 는 AEM Author, AEM Publish 및 Dispatcher 인스턴스로 구성됩니다. 다양한 환경이 역할을 지원하며 다양한 CI/CD 파이프라인을 사용하여 관여할 수 있습니다(아래 설명). Cloud Manager 환경에는 일반적으로 하나의 프로덕션 환경과 하나의 스테이징 환경이 있습니다.
+[Cloud Manager 환경](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/managing-environments.html) AEM Author, AEM Publish 및 Dispatcher 인스턴스로 구성됩니다. 다양한 환경이 역할을 지원하며 다양한 CI/CD 파이프라인을 사용하여 관여할 수 있습니다(아래 설명). Cloud Manager 환경에는 일반적으로 하나의 프로덕션 환경과 하나의 스테이징 환경이 있습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26318?quality=12&learn=on)
 

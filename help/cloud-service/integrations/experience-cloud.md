@@ -6,17 +6,17 @@ feature: Integrations
 topic: Integrations
 role: Leader, Architect, Admin, Developer
 level: Beginner
-kt: 10718
+jira: KT-10718
 thumbnail: KT-10718.png
 last-substantial-update: 2022-11-17T00:00:00Z
 mini-toc-levels: 1
 badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM as a Cloud Service" before-title="false"
 exl-id: 9e856dcc-f042-4e9d-bf97-dd4f72e837e3
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '928'
-ht-degree: 17%
+ht-degree: 18%
 
 ---
 
@@ -47,7 +47,7 @@ AEM as a Cloud Service과 다른 Adobe Experience Cloud 제품과의 지원되�
 
 ## Adobe Acrobat Sign
 
-Adobe Acrobat Sign(이전의 Acrobat Sign)는 법률, 판매, 급여, HR 및 기타 영역에 대한 문서를 처리하는 워크플로를 개선하여 AEM Forms의 적응형 양식을 위한 전자 서명 워크플로를 활성화합니다.
+Adobe Acrobat Sign(이전의 Acrobat Sign)는 법률, 판매, 급여, HR 및 기타 영역의 문서를 처리하는 워크플로를 개선하여 AEM Forms의 적응형 양식을 위한 전자 서명 워크플로를 활성화합니다.
 
 ### AEM Forms
 
@@ -152,12 +152,12 @@ Adobe Target은 AEM as a Cloud Service과 통합되어 AEM의 콘텐츠를 기�
 ### AEM Sites
 
 + [Adobe Target 통합 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html)
-+ 경험 조각에서 Target
++ Target에 경험 조각
 
    + [Target에 경험 조각 게시](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html)
-   + [경험 조각을 JSON으로 Target 게시](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html)
+   + [경험 조각을 JSON으로 Target에 게시](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html)
 
-+ [Target에 AEM Context Hub 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/audiences.html#creating-an-adobe-target-audience-using-the-audience-console)
++ [Target에서 AEM Context Hub 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/audiences.html#creating-an-adobe-target-audience-using-the-audience-console)
 + [AEM Sites 및 Target 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/target/overview.html)
 
 ## Adobe Workfront
@@ -168,7 +168,7 @@ Adobe Workfront과 AEM s a Cloud Service의 통합을 통해 디지털 에셋 �
 
 + [Workfront 강화 커넥터 구성](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/workfront/configure.html)
 + [Workfront 강화 커넥터 비디오](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/workfront/enhanced-connector/basics.html)
-+ AEM Assets Essentials
++ AEM Assets 기본 사항
 
    + [Adobe Workfront for Assets Essentials 사용 안내서](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&amp;topicId=Content%2FDocuments%2FAdobe_Workfront_for_Experience_Manager_Assets_Essentials%2F_workfront-for-aem-asset-essentials.htm)
    + [Adobe Workfront 및 Assets Essentials 비디오](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/workfront/configure.html)

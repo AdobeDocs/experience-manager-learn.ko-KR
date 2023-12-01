@@ -2,15 +2,12 @@
 title: Dynamic Media Classic 기본 워크플로우 및 자산 미리 보기
 description: 만들기(및 업로드), 작성자(및 게시), 게재의 세 단계를 포함하는 Dynamic Media Classic의 기본 워크플로우에 대해 알아봅니다. 그런 다음 Dynamic Media Classic에서 에셋을 미리 보는 방법을 알아봅니다.
 feature: Dynamic Media Classic
-doc-type: tutorial
-topics: development, authoring, configuring, architecture, publishing
-audience: all
-activity: use
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Tutorial
 exl-id: 04aacd81-bbb2-4742-9306-f0eabc665a41
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2703'
 ht-degree: 1%
@@ -72,7 +69,7 @@ Dynamic Media Classic 솔루션의 워크플로우는 세 가지 주요 단계�
 
 자세히 알아보기 [작업 옵션](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-options).
 
-Dynamic Media Classic은 아직 시스템에 없는 콘텐츠로는 작업할 수 없으므로 업로드는 모든 워크플로우에서 가장 먼저 필요한 단계입니다. 업로드하는 동안 백그라운드에서 시스템은 업로드된 모든 에셋을 중앙 집중식 Dynamic Media Classic 데이터베이스에 등록하고 ID를 할당한 다음 이를 스토리지에 복사합니다. 또한 이미지 파일을 동적 크기 조정 및 확대/축소가 가능한 형식으로 변환하고 비디오 파일을 MP4 웹에 친숙한 형식으로 변환합니다.
+Dynamic Media Classic은 아직 시스템에 없는 콘텐츠로는 작업할 수 없으므로 업로드는 워크플로우에서 가장 먼저 필요한 단계입니다. 업로드하는 동안 백그라운드에서 시스템은 업로드된 모든 에셋을 중앙 집중식 Dynamic Media Classic 데이터베이스에 등록하고 ID를 할당한 다음 이를 스토리지에 복사합니다. 또한 이미지 파일을 동적 크기 조정 및 확대/축소가 가능한 형식으로 변환하고 비디오 파일을 MP4 웹에 친숙한 형식으로 변환합니다.
 
 ### 개념: Dynamic Media Classic에 업로드할 때 발생하는 이미지 작업
 
@@ -107,7 +104,7 @@ Dynamic Media Classic은 아직 시스템에 없는 콘텐츠로는 작업할 �
 
 >[!IMPORTANT]
 >
->모든 자산이 게시용으로 표시되었는지 확인합니다. 기본적으로 모든 자산은 업로드 시 게시로 자동 표시되지만, 업로드한 컨텐츠에서 새로 작성된 자산은 게시로 표시되어야 합니다.
+>모든 에셋이 게시용으로 표시되었는지 확인합니다. 기본적으로 모든 자산은 업로드 시 게시로 자동 표시되지만, 업로드한 컨텐츠에서 새로 작성된 자산은 게시로 표시되어야 합니다.
 
 새 자산을 빌드하면 게시 작업이 실행됩니다. 이 작업은 수동으로 수행하거나 자동으로 실행되는 게시 작업을 예약할 수 있습니다. 게시는 방정식의 비공개 Dynamic Media Classic 구의 모든 컨텐츠를 공개 게시 서버 구에 복사합니다. Dynamic Media 게시 작업의 제품은 게시된 각 에셋에 대한 고유한 URL입니다.
 

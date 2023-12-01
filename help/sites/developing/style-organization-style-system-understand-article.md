@@ -2,16 +2,13 @@
 title: AEM Sites을 사용한 스타일 시스템 모범 사례 이해
 description: Adobe Experience Manager Sites을 사용한 스타일 시스템 구현과 관련된 모범 사례를 설명하는 자세한 문서입니다.
 feature: Style System
-topics: development, components, front-end-development
-audience: developer
-doc-type: article
-activity: understand
 version: 6.4, 6.5
 topic: Development
 role: Developer
 level: Intermediate, Experienced
+doc-type: Article
 exl-id: c51da742-5ce7-499a-83da-227a25fb78c9
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1536'
 ht-degree: 3%
@@ -89,7 +86,7 @@ AEM 스타일 시스템은 작성자에게 친숙한 레이블을 사용하여 �
 
 기본 스타일의 공통성에 따라 CSS는 `.cmp-teaser` (수정자 없음) 또는 `.cmp-teaser--default`.
 
-기본 스타일 규칙이 모든 변형에 보다 자주 적용되는 경우에는 다음을 사용하는 것이 좋습니다 `.cmp-teaser` 기본 스타일의 CSS 클래스로, 모든 변형은 암시적으로 상속해야 하므로 BEM과 유사한 규칙을 따른다고 가정합니다. 그렇지 않은 경우 다음과 같은 기본 수정자를 통해 적용해야 합니다. `.cmp-teaser--default`: 다음에 추가되어야 합니다. [구성 요소의 스타일 구성 기본 CSS 클래스](#component-styles-configuration) 필드, 그렇지 않으면 각 변형에서 이러한 스타일 규칙을 재정의해야 합니다.
+기본 스타일 규칙이 모든 변형에 적용되는 경우가 아닌 경우 를 사용하는 것이 좋습니다 `.cmp-teaser` 기본 스타일의 CSS 클래스로, 모든 변형은 암시적으로 상속해야 하므로 BEM과 유사한 규칙을 따른다고 가정합니다. 그렇지 않은 경우 다음과 같은 기본 수정자를 통해 적용해야 합니다. `.cmp-teaser--default`: 다음에 추가되어야 합니다. [구성 요소의 스타일 구성 기본 CSS 클래스](#component-styles-configuration) 필드, 그렇지 않으면 각 변형에서 이러한 스타일 규칙을 재정의해야 합니다.
 
 Hero 스타일과 같은 기본 스타일로 &quot;명명된&quot; 스타일을 지정할 수도 있습니다 `(.cmp-teaser--hero)` 아래에 정의되어 있지만 기본 스타일은 `.cmp-teaser` 또는 `.cmp-teaser--default` CSS 클래스 구현.
 

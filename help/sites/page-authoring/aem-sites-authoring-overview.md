@@ -1,21 +1,16 @@
 ---
 title: AEM Sites의 작성 개요
-seo-title: Overview of Authoring in AEM Sites
 description: 다음 비디오에서는 AEM 작성 환경에서의 작성에 대한 기본 개념에 대한 개요를 제공합니다. 사이트 콘솔을 기본으로 사용합니다.
-seo-description: The following video provides an overview of basic concepts of authoring in an AEM author environment. It uses the Sites console as a basis.
 feature: Page Editor, Editable Templates
-topics: authoring, publishing
-audience: author, marketer
-doc-type: feature video
-activity: use
 version: 6.4, 6.5, Cloud Service
-kt: 4242
+jira: KT-4242
 thumbnail: 33594.jpg
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Feature Video
 exl-id: e71b106d-a44b-44af-ba85-7fb5806cdb83
-source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '79'
 ht-degree: 30%

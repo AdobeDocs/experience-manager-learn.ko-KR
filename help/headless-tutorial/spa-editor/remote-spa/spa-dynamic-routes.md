@@ -5,12 +5,13 @@ topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
 role: Developer, Architect
 level: Beginner
-kt: 7636
+jira: KT-7636
 thumbnail: kt-7636.jpeg
 last-substantial-update: 2022-11-11T00:00:00Z
 recommendations: noDisplay, noCatalog
+doc-type: Tutorial
 exl-id: 4accc1ca-6f4b-449e-bf2e-06f19d2fe17d
-source-git-commit: ece15ba61124972bed0667738ccb37575d43de13
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '901'
 ht-degree: 1%
@@ -101,7 +102,6 @@ SPA 편집기를 통해 SPA을 열 때 AEM SPA 요청에 대한 매핑은에서 
    이에 따라 `ResponsiveGrid` AEM 리소스에서 콘텐츠를 검색할 구성 요소:
 
    + `/content/wknd-app/us/en/home/adventure/${slug}/jcr:content/root/responsivegrid`
-
 
 업데이트 `AdventureDetail.js` 다음 줄 포함:
 

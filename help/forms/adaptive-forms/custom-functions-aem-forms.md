@@ -6,10 +6,10 @@ version: 6.5
 topic: Development
 role: User
 level: Beginner
-kt: 9685
+jira: KT-9685
 exl-id: 07fed661-0995-41ab-90c4-abde35a14a4c
 last-substantial-update: 2021-06-09T00:00:00Z
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 0%
@@ -71,7 +71,7 @@ function convertUTC(strUTCString)
 }
 ```
 
-다음을 수행하세요. [jsdoc 참조 ](https://jsdoc.app/index.html)javascript 함수 주석 추가에 대한 자세한 내용은 을 참조하십시오.
+다음을 수행하세요. [jsdoc 참조](https://jsdoc.app/index.html)javascript 함수 주석 추가에 대한 자세한 내용은 을 참조하십시오.
 위의 코드에는 두 가지 함수가 있습니다.
 **getCountyNamesList** - 문자열의 배열을 반환합니다.
 **전환 UTC** - UTC 타임스탬프를 로컬 시간대로 변환

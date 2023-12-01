@@ -6,14 +6,14 @@ feature: Security
 topic: Development, Integrations, Security
 role: Architect, Developer
 level: Intermediate
-kt: 9354
+jira: KT-9354
 thumbnail: KT-9354.png
 last-substantial-update: 2022-10-13T00:00:00Z
 exl-id: d1c1a3cf-989a-4693-9e0f-c1b545643e41
-source-git-commit: d0b13fd37f1ed42042431246f755a913b56625ec
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '468'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
@@ -21,14 +21,14 @@ ht-degree: 3%
 
 AEM as a Cloud Service은 AEM as a Cloud Service 프로그램에 대한 연결 및 연결을 정확하게 관리할 수 있는 고급 네트워킹 기능을 제공합니다.
 
-|  | [제작 프로그램](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs.html) | [샌드박스 프로그램](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html) |
+|                                                   | [제작 프로그램](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs.html) | [샌드박스 프로그램](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html) |
 |---------------------------------------------------|:-----------------------:|:---------------------:|
 | 고급 네트워킹 지원 | ✔ | ✘ |
 
 
 AEM 고급 네트워킹은 외부 서비스와의 연결을 관리하는 세 가지 옵션으로 구성됩니다. Cloud Manager 프로그램 및 해당 AEM as a Cloud Service 환경은 한 번에 단일 유형의 고급 네트워킹 구성만 사용할 수 있으므로 가장 적절한 유형이 선택되었는지 확인합니다.
 
-|  | 표준 포트에서의 HTTP/HTTPS | 비표준 포트에서의 HTTP/HTTPS | 비 HTTP/HTTPS 연결 | 전용 이그레스 IP | &quot;프록시 호스트 없음&quot; 목록 | VPN으로 보호된 서비스에 연결 | IP별로 AEM 게시 트래픽 제한 |
+|                                   | 표준 포트에서의 HTTP/HTTPS | 비표준 포트에서의 HTTP/HTTPS | 비 HTTP/HTTPS 연결 | 전용 이그레스 IP | &quot;프록시 호스트 없음&quot; 목록 | VPN으로 보호된 서비스에 연결 | IP별로 AEM 게시 트래픽 제한 |
 |-----------------------------------|:----------------------------:|:--------------------------------:|:--------------------------:|:-------------------:|:-------------------------------------:|:-------------------------------------:|:----:|
 | __고급 네트워킹 없음__ | ✔ | ✘ | ✘ | ✘ | ✘ | ✘ | ✘ |
 | [__유연한 포트 이그레스__](./flexible-port-egress.md) | ✔ | ✔ | ✔ | ✘ | ✘ | ✘ | ✘ |
@@ -112,10 +112,10 @@ AEM 고급 네트워킹은 외부 서비스와의 연결을 관리하는 세 가
       </p>
     </td>
    <td>
-      <a  href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#restrict-vpn-to-ingress-connections"><img alt="AEM 게시에 대한 경로 기반 VPN 액세스 제한" src="./assets/code_examples__vpn-path-allow-list.png"/></a>
-      <div><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#restrict-vpn-to-ingress-connections">AEM 게시에 대한 경로 기반 VPN 액세스 제한</a></strong></div>
+      <a  href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#restrict-vpn-to-ingress-connections"><img alt="AEM 게시로의 경로 기반 VPN 액세스 제한" src="./assets/code_examples__vpn-path-allow-list.png"/></a>
+      <div><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#restrict-vpn-to-ingress-connections">AEM 게시로의 경로 기반 VPN 액세스 제한</a></strong></div>
       <p>
-            AEM 게시의 특정 경로에 대한 VPN 액세스 권한이 필요합니다.
+            AEM Publish의 특정 경로에 대해 VPN 액세스 권한이 필요합니다.
       </p>
     </td>
 </tr>

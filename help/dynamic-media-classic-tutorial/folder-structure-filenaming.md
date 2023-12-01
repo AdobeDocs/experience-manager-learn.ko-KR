@@ -2,15 +2,13 @@
 title: 폴더 구조 및 파일 이름 지정 규칙 결정
 description: 파일 이름 지정은 Dynamic Media Classic을 구현할 때 가장 중요한 결정을 내릴 수 있습니다. 폴더 구조도 마찬가지로 중요합니다. 폴더 구조 및 파일 이름을 사용하는 것이 중요하고 가능한 접근 방식에 대해 알아봅니다.
 feature: Dynamic Media Classic
-doc-type: tutorial
 activity: develop
-topics: development, authoring, configuring, architecture
-audience: all
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Tutorial
 exl-id: 15121896-9196-4ce0-aff2-9178563326b4
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1207'
 ht-degree: 0%
@@ -77,9 +75,9 @@ Dynamic Media Classic의 모든 URL 및 트랜잭션은 데이터베이스의 �
 | SKU/PID | 범주 | 파일 이름 | 자산 ID |
 | ------- | ----------------------- | ------------------------------------------- | ------------------------------- |
 | AA123 | 대체 보기 | AA123_1.tif AA123_2.tif AA123_3.tif | AA123_1 AA123_2 AA123_3 |
-|  | 컬러 보기 | AA123_BLU.tif AA123_RED.tif AA123_BROWN.tif | AA123_BLU AA123_RED AA123_BROWN |
-|  | 색상 견본 | AA123_BLU_SW.tif | AA123_BLU_SW |
-|  | 이미지 집합 또는 견본 집합 |  | AA123 또는 AA123_SET | — |
+|         | 컬러 보기 | AA123_BLU.tif AA123_RED.tif AA123_BROWN.tif | AA123_BLU AA123_RED AA123_BROWN |
+|         | 색상 견본 | AA123_BLU_SW.tif | AA123_BLU_SW |
+|         | 이미지 집합 또는 견본 집합 |                                             | AA123 또는 AA123_SET | — |
 
 이미지 집합 및 견본 집합과 같은 집합 컬렉션을 다룰 때 집합 자체도 고유한 이름을 가져야 합니다. 따라서 이 경우 세트에는 기본 SKU를 해당 이름으로 제공하거나 &quot;_SET&quot; 확장자가 있는 SKU를 제공할 수 있습니다.
 

@@ -7,13 +7,13 @@ version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
-kt: 6284
+jira: KT-6284
 thumbnail: KT-6284.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 04992caf-b715-4701-94a8-6257e9bd300c
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '629'
 ht-degree: 0%
@@ -54,7 +54,7 @@ asset compute 프로젝트의 테스트 구조는 다음과 같습니다.
    + 오류 테스트 제외 필수
 + `params.json`
    + 단일 렌디션 JSON 지침
-   + 선택 사항
+   + 옵션
 + `validate`
    + 예상 및 실제 렌디션 파일 경로를 인수로 가져오고 결과가 양호한 경우 종료 코드 0을 반환해야 하며, 유효성 검사나 비교가 실패한 경우 0이 아닌 종료 코드를 반환해야 하는 스크립트.
    + 선택 사항이며 기본값은 `diff` 명령

@@ -6,11 +6,12 @@ topic: Development, Administration
 feature: Operations, Dispatcher
 role: Developer, Architect
 level: Intermediate
-kt: 11466
+jira: KT-11466
 last-substantial-update: 2022-10-14T00:00:00Z
 index: y
+doc-type: Article
 exl-id: 8e64f251-e5fd-4add-880e-9d54f8e501a6
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '876'
 ht-degree: 1%
@@ -24,16 +25,16 @@ URL 리디렉션은 웹 사이트 작업의 일부로 일반적인 측면입니�
 다음을 잘 알고 있는지 확인합니다. [AEM (6.x) (예: AEM Classic)](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/chapter-2.html#the-%E2%80%9Clegacy%E2%80%9D-setup) 및 [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/architecture.html#runtime-architecture) 인프라. 주요 차이점은 다음과 같습니다.
 
 1. AEM as a Cloud Service has [기본 CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html)그러나 고객은 AEM 관리 CDN 앞에 CDN(BYOCDN)을 제공할 수 있습니다.
-1. AEM 6.x는 온프레미스 또는 AMS(Adobe Managed Services)에 AEM 관리 CDN이 포함되어 있지 않은지 여부이며, 고객은 직접 가져와야 합니다.
+1. AEM 6.x는 온프레미스 또는 Adobe Managed Services(AMS)에 AEM 관리 CDN이 포함되어 있지 않은지 여부이며 고객은 직접 방문해야 합니다.
 
 다른 AEM 서비스(AEM 작성자/게시 및 Dispatcher)는 AEM 6.x와 AEM as a Cloud Service 간에 개념적으로 유사합니다.
 
 AEM URL 리디렉션 솔루션은 다음과 같습니다.
 
-|  | AEM 프로젝트 코드로 관리 및 배포됨 | 마케팅/콘텐츠 팀별 변경 기능 | Cloud Service 호환 AEM | 리디렉션 실행 발생 위치 |
+|                                                   | AEM 프로젝트 코드로 관리 및 배포됨 | 마케팅/콘텐츠 팀별 변경 기능 | Cloud Service 호환 AEM | 리디렉션 실행 발생 위치 |
 |---------------------------------------------------|:-----------------------:|:---------------------:|:---------------------:| :---------------------:|
 | [자체 CDN을 통해 Edge에서](#at-edge-via-bring-your-own-cdn) | ✘ | ✘ | ✔ | Edge/CDN |
-| [Apache `mod_rewrite` 규칙을 Dispatcher 구성으로 사용 ](#apache-mod_rewrite-module) | ✔ | ✘ | ✔ | Dispatcher |
+| [Apache `mod_rewrite` 규칙을 Dispatcher 구성으로 사용](#apache-mod_rewrite-module) | ✔ | ✘ | ✔ | Dispatcher |
 | [ACS Commons - 맵 관리자 리디렉션](#redirect-map-manager) | ✘ | ✔ | ✘ | Dispatcher |
 | [ACS Commons - 리디렉션 관리자](#redirect-manager) | ✘ | ✔ | ✔ | AEM |
 | [다음 `Redirect` 페이지 속성](#the-redirect-page-property) | ✘ | ✔ | ✔ | AEM |

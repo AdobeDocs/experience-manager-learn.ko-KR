@@ -2,15 +2,12 @@
 title: 비디오 개요
 description: Dynamic Media Classic에는 업로드 시 비디오를 자동으로 변환하고, 데스크탑 및 모바일 디바이스로 비디오를 스트리밍하며, 장치 및 대역폭을 기반으로 재생에 최적화된 응용 비디오 세트가 포함되어 있습니다. Dynamic Media Classic에서 비디오에 대해 자세히 알아보고 비디오 개념 및 용어에 대한 입문서를 받으십시오. 그런 다음 비디오를 업로드하고 인코딩하는 방법, 업로드용 비디오 사전 설정 선택, 비디오 사전 설정 추가 또는 편집, 비디오 뷰어에서 비디오 미리 보기, 웹 및 모바일 사이트에 비디오 배포, 비디오에 캡션 및 챕터 마커 추가, 데스크탑 및 모바일 사용자에게 비디오 뷰어 게시 방법에 대해 자세히 알아보십시오.
 feature: Dynamic Media Classic, Video Profiles, Viewer Presets
-doc-type: tutorial
-topics: development, authoring, configuring, videos, video-profiles
-audience: all
-activity: use
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Tutorial
 exl-id: dfbf316f-3922-4bc7-b3f3-2a5bbdeb7063
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '6118'
 ht-degree: 0%
@@ -222,7 +219,7 @@ Dynamic Media Classic과 함께 제공되는 미리 작성된 여러 사전 설�
 
    - 모든 스트리밍 비디오 계정에는 즉시 사용할 수 있는 수십 개의 사전 설정이 있으며, 사용자 정의 사전 설정을 만드는 경우 여기에 표시됩니다.
    - 드롭다운 메뉴를 사용하여 유형별로 필터링할 수 있습니다. 사전 설정은 컴퓨터, 모바일 및 태블릿으로 구분됩니다.
-      ![이미지](assets/video-overview/video-overview-4.jpg)
+     ![이미지](assets/video-overview/video-overview-4.jpg)
 
 2. 활성 열에서는 업로드 시 모든 사전 설정을 표시할지 또는 선택한 사전 설정만 표시할지를 선택할 수 있습니다. 미국에 있는 경우 유럽 PAL 사전 설정의 선택을 취소하고, 영국/EMEA에 있는 경우 NTSC 사전 설정의 선택을 취소할 수 있습니다.
 3. 다음을 클릭합니다. **추가** 단추를 클릭하여 사용자 지정 사전 설정을 만듭니다. [비디오 사전 설정 추가] 패널이 열립니다. 이 프로세스는 이미지 사전 설정을 만드는 것과 유사합니다.
@@ -230,7 +227,7 @@ Dynamic Media Classic과 함께 제공되는 미리 작성된 여러 사전 설�
 5. 다음 **설명** 는 선택 사항이지만, 이 사전 설정의 목적을 설명하는 도구 설명을 사용자에게 제공합니다.
 6. 다음 **인코딩 파일 접미어** 는 여기서 만드는 비디오 이름의 끝에 추가됩니다. 기본 비디오와 마스터의 파생물인 이 인코딩된 비디오가 있으며 Dynamic Media Classic의 두 에셋이 동일한 에셋 ID를 가질 수 없다는 것을 기억하십시오.
 7. **재생 장치** 은 원하는 비디오 파일 형식(컴퓨터, 모바일 또는 태블릿)을 선택하는 곳입니다. 모바일과 태블릿은 동일한 MP4 형식을 생성한다는 점을 기억하십시오. Dynamic Media Classic은 사전 설정을 배치할 카테고리를 알고 있으면 됩니다. 하지만 이론적인 차이점은 모든 사전 설정이 WiFi를 지원하므로 태블릿 사전 설정은 일반적으로 더 빠른 인터넷 연결을 위한 것이라는 것입니다.
-8. **Target 데이터 속도** 은 스스로 계산해야 하지만 아래 이미지에서 권장 범위를 볼 수 있습니다. 슬라이더를 대략적인 타겟 대역폭으로 드래그할 수도 있습니다. 좀 더 정확한 수치를 얻으려면 비트율 계산기를 사용하세요. 약간의 시행착오가 있다.
+8. **대상 데이터 속도** 은 스스로 계산해야 하지만 아래 이미지에서 권장 범위를 볼 수 있습니다. 슬라이더를 대략적인 타겟 대역폭으로 드래그할 수도 있습니다. 좀 더 정확한 수치를 얻으려면 비트율 계산기를 사용하세요. 약간의 시행착오가 있다.
 
    ![이미지](assets/video-overview/video-overview-5.jpg)
 

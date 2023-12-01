@@ -2,17 +2,17 @@
 title: AEM Sites 시작 - 프로젝트 설정
 description: Maven 다중 모듈 프로젝트를 만들어 Experience Manager 사이트에 대한 코드 및 구성을 관리합니다.
 version: 6.5, Cloud Service
-type: Tutorial
 feature: AEM Project Archetype
 topic: Content Management, Development
 role: Developer
 level: Beginner
 mini-toc-levels: 1
-kt: 3418
+jira: KT-3418
 thumbnail: 30152.jpg
+doc-type: Tutorial
 exl-id: bb0cae58-79bd-427f-9116-d46afabdca59
 recommendations: noDisplay, noCatalog
-source-git-commit: 4c91ab68f6e31f0eb549689c7ecfd0ee009801d9
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1839'
 ht-degree: 4%
@@ -51,7 +51,7 @@ AEM용 Maven 다중 모듈 프로젝트를 제작하기 위한 두 가지 옵션
 >
 >이 자습서에서는 버전을 사용합니다. **35** 원형 중 하나를 선택할 수 있습니다. 를 사용하는 것은 항상 모범 사례입니다. **최신** 새 프로젝트를 생성할 archetype 버전입니다.
 
-다음 일련의 단계는 UNIX® 기반 명령줄 터미널을 사용하지만 Windows 터미널을 사용하는 경우에도 유사해야 합니다.
+다음 일련의 단계는 UNIX® 기반 명령줄 터미널을 사용하지만 Windows 터미널을 사용하는 경우에는 유사해야 합니다.
 
 1. 명령줄 터미널을 엽니다. Maven이 설치되었는지 확인합니다.
 
@@ -190,9 +190,9 @@ AEM용 Maven 다중 모듈 프로젝트를 제작하기 위한 두 가지 옵션
 
 [AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 는 AEM용 표준화된 웹 컨텐츠 관리(WCM) 구성 요소 세트입니다. 이러한 구성 요소는 기본 기능 세트를 제공하며 개별 프로젝트에 대해 스타일링, 사용자 정의 및 확장됩니다.
 
-AEM as a Cloud Service 환경에는 최신 버전의 [AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko). 따라서 AEM에 대해 생성된 프로젝트는 as a Cloud Service으로 수행됩니다. **아님** AEM 핵심 구성 요소 임베드를 포함합니다.
+AEM as a Cloud Service 환경에는 최신 버전의 [AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html). 따라서 AEM에 대해 생성된 프로젝트는 as a Cloud Service으로 수행됩니다. **아님** AEM 핵심 구성 요소 임베드를 포함합니다.
 
-AEM 6.5/6.4 생성 프로젝트의 경우 Archetype이 자동으로 임베드됩니다 [AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko) 을 클릭합니다. AEM 6.5/6.4에서는 최신 버전이 프로젝트와 함께 배포되도록 AEM 핵심 구성 요소를 포함하는 것이 좋습니다. 핵심 구성 요소 방법에 대한 자세한 정보 [프로젝트에 포함된 내용은 여기에서 확인하십시오.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#core-components).
+AEM 6.5/6.4 생성 프로젝트의 경우 Archetype이 자동으로 임베드됩니다 [AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 을 클릭합니다. AEM 6.5/6.4에서는 최신 버전이 프로젝트와 함께 배포되도록 AEM 핵심 구성 요소를 포함하는 것이 좋습니다. 핵심 구성 요소 방법에 대한 자세한 정보 [프로젝트에 포함된 내용은 여기에서 확인하십시오.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#core-components).
 
 ## 소스 제어 관리 {#source-control}
 
@@ -214,7 +214,7 @@ AEM Project Archetype 은 샘플을 생성합니다 `.gitignore` 파일을 안�
 
 ## 고급 Maven 명령(보너스) {#advanced-maven-commands}
 
-개발 중에 모듈 중 하나만 사용하여 작업할 수 있으므로 시간을 절약하기 위해 전체 프로젝트를 빌드하지 않으려는 경우 AEM 게시 인스턴스 또는 포트 4502에서 실행되지 않는 AEM 인스턴스에 직접 배포할 수도 있습니다.
+개발 중에 모듈 중 하나만 사용하여 작업할 수 있으므로 시간을 절약하기 위해 전체 프로젝트를 빌드하지 않으려는 경우 AEM Publish 인스턴스 또는 포트 4502에서 실행되지 않는 AEM 인스턴스에 직접 배포할 수도 있습니다.
 
 다음으로 개발 중에 유연성을 높이기 위해 사용할 수 있는 몇 가지 추가 Maven 프로필 및 명령을 검토해 보겠습니다.
 
@@ -228,7 +228,7 @@ AEM Project Archetype 은 샘플을 생성합니다 `.gitignore` 파일을 안�
    $ cd core/
    ```
 
-1. 다음 명령을 실행합니다.
+1. 다음 명령을 실행합니다:
 
    ```shell
    $ mvn clean install -PautoInstallBundle
@@ -264,7 +264,7 @@ AEM Project Archetype 은 샘플을 생성합니다 `.gitignore` 파일을 안�
    $ cd ../ui.apps
    ```
 
-1. 다음 명령을 실행합니다.
+1. 다음 명령을 실행합니다:
 
    ```shell
    $ mvn clean install -PautoInstallPackage

@@ -5,8 +5,9 @@ feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: d6b6d425-842a-43a9-9041-edf78e51d962
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1391'
 ht-degree: 0%
@@ -87,7 +88,7 @@ AEM 게시가에서 실행되지 않는 경우 **http://localhost:4503** 모바�
 
 ### 높은 수준 코드 흐름
 
-1. 열기 [!DNL WKND Mobile] 앱이 `HTTP GET` 다음 위치에서 AEM Publish에 요청 `/content/wknd-mobile/en/api/events.model.json` 모바일 앱의 UI를 채울 콘텐츠를 수집합니다.
+1. 열기 [!DNL WKND Mobile] 앱이 `HTTP GET` 다음 위치에 AEM 게시로 요청: `/content/wknd-mobile/en/api/events.model.json` 모바일 앱의 UI를 채울 콘텐츠를 수집합니다.
 2. AEM에서 콘텐츠를 수신하면 모바일 앱의 세 가지 보기 요소인 **로고, 태그 라인 및 이벤트 목록**&#x200B;는 AEM의 콘텐츠로 초기화됩니다.
    * AEM 콘텐츠에 모바일 앱의 보기 요소에 바인딩되기 위해 각 AEM 구성 요소를 나타내는 JSON은 Java POJO에 매핑된 개체이며, 이 개체는 Android 보기 요소에 바인딩됩니다.
       * 이미지 구성 요소 JSON → 로고 POJO → 로고 ImageView
@@ -160,7 +161,7 @@ public class LogoViewBinder implements ViewBinder {
 
 마지막으로, 로고는 `src` 를 사용하여 Android ImageView에 로드됩니다. [!DNL Glide] 도우미 라이브러리입니다.
 
-AEM 스키마, 호스트 및 포트를 제공해야 합니다(다음을 통해). `aemHost`AEM Content Services가 JCR 경로(예: )만 제공하므로 AEM 게시 인스턴스에 액세스할 수 있습니다. `/content/dam/wknd-mobile/images/wknd-logo.png`참조 콘텐츠 참조).
+AEM 스키마, 호스트 및 포트를 제공해야 합니다(다음을 통해). `aemHost`AEM AEM Content Services가 JCR 경로(즉, `/content/dam/wknd-mobile/images/wknd-logo.png`참조 콘텐츠 참조).
 
 #### 이미지 POJO{#image-pojo}
 
@@ -200,7 +201,7 @@ AEM Content Services를 통해 기본 모바일 경험을 제공하는 방법을
 AEM Content Services 및 AEM as a Headless CMS에 대한 자세한 내용은 Adobe의 다른 설명서 및 지원 자료를 참조하십시오.
 
 * [컨텐츠 조각 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html)
-* [AEM WCM 코어 구성 요소 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)
+* [AEM WCM 코어 구성 요소 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [AEM WCM 코어 구성 요소 구성 요소 라이브러리](https://opensource.adobe.com/aem-core-wcm-components/library.html)
 * [AEM WCM 핵심 구성 요소 GitHub 프로젝트](https://github.com/adobe/aem-core-wcm-components)
 * [구성 요소 내보내기의 코드 샘플](https://github.com/Adobe-Consulting-Services/acs-aem-samples/blob/master/core/src/main/java/com/adobe/acs/samples/models/SampleComponentExporter.java)

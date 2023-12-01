@@ -2,15 +2,13 @@
 title: Edge Delivery Services 개발
 description: Edge Delivery Services을 사용하여 제공되는 AEM 웹 사이트를 개발하는 방법에 대해 알아봅니다.
 feature: Edge Delivery Services
-topics: development
-audience: developer
-doc-type: article
-activity: understand
 version: 6.4, 6.5, Cloud Service
 topic: Development
 role: Developer
 level: Beginner
-source-git-commit: d17544c4f8dda03e5147a1f48dbbdae005ee9438
+doc-type: Catalog
+exl-id: f97c96df-d3c2-4106-8fb0-def6e74897d7
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '78'
 ht-degree: 0%

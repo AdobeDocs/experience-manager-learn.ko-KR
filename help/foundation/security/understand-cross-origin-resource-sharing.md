@@ -3,16 +3,13 @@ title: AEM과의 CORS(원본 간 리소스 공유) 이해
 description: Adobe Experience Manager의 CORS(원본 간 리소스 공유)를 사용하면 비 AEM 웹 속성을 사용하여 인증되거나 인증되지 않은 클라이언트측에서 AEM을 호출하여 콘텐츠를 가져오거나 AEM과 직접 상호 작용할 수 있습니다.
 version: 6.4, 6.5
 sub-product: Experience Manager, Experience Manager Sites
-topics: security, development, content-delivery
 feature: Security, APIs
-activity: understand
-audience: architect, developer
-doc-type: article
+doc-type: Article
 topic: Security
 role: Developer
 level: Intermediate
 exl-id: 6009d9cf-8aeb-4092-9e8c-e2e6eec46435
-source-git-commit: f47beff14782bb3f570d32818b000fc279394f19
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1052'
 ht-degree: 2%

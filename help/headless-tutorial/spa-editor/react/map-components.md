@@ -6,13 +6,14 @@ topics: development
 version: Cloud Service
 activity: develop
 audience: developer
-kt: 4854
+jira: KT-4854
 thumbnail: 4854-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: 497ce6d7-cd39-4fb3-b5e0-6c60845f7648
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2257'
 ht-degree: 1%
@@ -33,7 +34,7 @@ AEM SPA Editor JS SDK를 사용하여 React 구성 요소를 AEM(Adobe Experienc
 
 ## 빌드할 내용
 
-이 장에서는 제공된 정보를 검사합니다 `Text` SPA 구성 요소는 AEM에 매핑됩니다. `Text`구성 요소. 다음과 같은 React 핵심 구성 요소 `Image` SPA 구성 요소는 SPA에서 사용되고 AEM에서 작성됩니다. 의 기본 기능 **레이아웃 컨테이너** 및 **템플릿 편집기** 정책은 또한 외형이 약간 더 다양한 보기를 만드는 데 사용됩니다.
+이 류에서는 제공된 방법을 검사합니다 `Text` SPA 구성 요소는 AEM에 매핑됩니다. `Text`구성 요소. 다음과 같은 React 핵심 구성 요소 `Image` SPA 구성 요소는 SPA에서 사용되고 AEM에서 작성됩니다. 의 기본 기능 **레이아웃 컨테이너** 및 **템플릿 편집기** 정책은 또한 외형이 약간 더 다양한 보기를 만드는 데 사용됩니다.
 
 ![챕터 샘플 최종 작성](./assets/map-components/final-page.png)
 

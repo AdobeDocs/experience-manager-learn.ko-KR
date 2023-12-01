@@ -10,9 +10,9 @@ version: 6.5
 topic: Development
 role: Developer
 level: Intermediate
-kt: 10208
+jira: KT-10208
 exl-id: 9053ee29-436a-439a-b592-c3fef9852ea4
-source-git-commit: db99787c48e49a9861de893e6cb7fbb7b31807b8
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 2%
@@ -38,7 +38,7 @@ AEM 서버에서 이 기능을 사용하려면 아래 지침을 따르십시오
 
 * [icdraft 번들 배포](assets/icdrafts.icdrafts.core-1.0-SNAPSHOT.jar)
 * 다음을 확인하십시오. _CCRDocumentInstanceService를 사용하여 저장 활성화_ 아래 표시된 대로 OSGI 구성에서
-   ![초안 활성화](assets/enable-drafts.png)
+  ![초안 활성화](assets/enable-drafts.png)
 * 대화형 통신을 엽니다. 초안으로 저장을 클릭하여 저장합니다
 * [저장된 초안 보기](http://localhost:4502/content/dam/formsanddocuments/saveddrafts/jcr:content?wcmmode=disabled)
 

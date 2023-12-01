@@ -3,16 +3,13 @@ title: 컨텐츠 조각 및 경험 조각
 description: 콘텐츠 조각과 경험 조각 간의 유사점과 차이점, 각 유형 사용 시기 및 방법에 대해 알아봅니다.
 sub-product: Experience Manager Assets, Experience Manager Sites
 feature: Content Fragments, Experience Fragments
-topics: headless
 version: 6.4, 6.5
-doc-type: article
-activity: understand
-audience: all
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Article
 exl-id: ccbc68d1-a83e-4092-9a49-53c56c14483e
-source-git-commit: 84fdbaa173a929ae7467aecd031cacc4ce73538a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1044'
 ht-degree: 5%

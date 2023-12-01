@@ -7,8 +7,9 @@ feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
+doc-type: Article
 exl-id: 69b4e469-52cc-441b-b6e5-2fe7ef18da90
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1139'
 ht-degree: 1%
@@ -56,7 +57,7 @@ AMS 기준 요소가 Dispatcher를 설치했다면 몇 가지 무료 기능이 �
 
 ### AEM 패키지
 
-AEM이 작동하는지 표시하려면 몇 가지 기본 페이지 컴파일을 수행하고 페이지를 제공해야 합니다.  Adobe Managed Services는 테스트 페이지가 포함된 기본 패키지를 만들었습니다.  페이지는 저장소가 작동 중이고 리소스와 페이지 템플릿을 렌더링할 수 있는지 테스트합니다.
+AEM이 작동하는지 표시하려면 몇 가지 기본 페이지 컴파일을 수행하고 페이지를 제공해야 합니다.  Adobe Managed Services은 테스트 페이지가 포함된 기본 패키지를 만들었습니다.  페이지는 저장소가 작동 중이고 리소스와 페이지 템플릿을 렌더링할 수 있는지 테스트합니다.
 
 ![이 그림에서는 CRX 패키지 관리자의 AMS 패키지를 보여 줍니다](assets/load-balancer-healthcheck/health-check-package.png "상태 점검 패키지")
 

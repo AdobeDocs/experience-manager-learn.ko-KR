@@ -3,18 +3,15 @@ title: AEM의 인증 지원 이해
 description: AEM에서 지원하는 인증(및 경우에 따라 권한 부여) 메커니즘에 대한 통합 보기.
 version: 6.4, 6.5
 feature: User and Groups
-topics: authentication, security
-activity: understand
-audience: architect, developer, implementer
-doc-type: article
-kt: 406
+doc-type: Article
+jira: KT-406
 topic: Architecture
 role: Architect
 level: Experienced
 exl-id: 96c542ae-6ab6-4d8a-94df-a58b03469320
 last-substantial-update: 2022-09-10T00:00:00Z
 thumbnail: KT-406.jpg
-source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 14%

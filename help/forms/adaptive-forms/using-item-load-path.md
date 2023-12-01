@@ -3,14 +3,14 @@ title: 항목 로드 경로를 사용하여 드롭다운 목록 채우기
 description: crx 노드에서 값을 읽을 수 있도록 드롭다운 목록을 구성하고 채웁니다.
 feature: Adaptive Forms
 version: 6.4,6.5
-kt: 10961
+jira: KT-10961
 topic: Development
 role: Developer
 level: Beginner
 last-substantial-update: 2022-09-20T00:00:00Z
 thumbnail: item-load.jpg
 exl-id: 89c486c8-95c3-4cd4-bf8e-a1b3558f17d6
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 0%
@@ -27,7 +27,7 @@ crx에서 이러한 노드를 만들려면 아래에 설명된 단계를 수행�
 * 저장
 * 새로 만든 에셋 노드를 클릭하고 속성을 아래와 같이 설정합니다
 * assettypes라는 String 형식의 속성을 만들어야 합니다(요구 사항에 따라 이름을 지정할 수 있음). 속성이 다중 값인지 확인하십시오. 원하는 값을 입력하고 저장합니다.
-   ![item-load-path](assets/item-load-path-crx.png)
+  ![item-load-path](assets/item-load-path-crx.png)
 
 드롭다운 목록에서 이러한 값을 로드하려면 항목 로드 경로 속성에 다음 경로를 제공합니다  **/content/assets/assettypes**
 

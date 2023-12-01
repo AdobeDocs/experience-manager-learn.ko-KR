@@ -2,16 +2,13 @@
 title: AEM Sites을 사용하여 개인화를 위한 ContextHub 설정
 description: ContextHub는 컨텍스트 데이터를 저장, 조작 및 표시하기 위한 프레임워크입니다. ContextHub Javascript API를 사용하면 저장소에 액세스하여 데이터를 필요에 따라 작성, 업데이트 및 삭제할 수 있습니다. 따라서 ContextHub는 페이지의 데이터 계층을 나타냅니다. 이 페이지에서는 AEM 사이트 페이지에 Context Hub를 추가하는 방법에 대해 설명합니다.
 feature: Context Hub
-topics: personalization
-audience: developer, architect
-doc-type: technical video
-activity: setup
 version: 6.4, 6.5
 topic: Personalization
 role: Developer
 level: Intermediate
+doc-type: Technical Video
 exl-id: 89308dd3-a7e5-4fec-bffb-5f0974125c0a
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 4%
@@ -47,7 +44,7 @@ ContextHub에는 세그먼트를 관리하고 현재 컨텍스트에 대해 해�
 
 티저에 대한 규칙 역할을 하는 AEM 세그먼트를 만듭니다. 즉, 티저 내의 콘텐츠가 웹 페이지에 표시되는 시점을 정의합니다. 그런 다음 콘텐츠를 일치하는 세그먼트에 따라 방문자의 요구 사항 및 관심 분야에 구체적으로 타겟팅할 수 있습니다.
 
-## 클라우드 구성, 세그먼트 경로 및 ContextHub 경로를 사이트에 할당 {#assigning-cloud-configuration-segment-path-and-contexthub-path-to-your-site}
+## 사이트에 클라우드 구성, 세그먼트 경로 및 ContextHub 경로 할당 {#assigning-cloud-configuration-segment-path-and-contexthub-path-to-your-site}
 
 대상자를 위한 개인화된 경험을 만들 수 있도록 클라우드 구성 경로, 세분화 경로 및 ContextHub 경로를 사이트 루트 노드에 할당합니다. ContextHub를 사용하여 컨텍스트 데이터를 조작하고 해결된 세그먼트를 테스트할 수 있습니다.
 
@@ -58,4 +55,4 @@ ContextHub에는 세그먼트를 관리하고 현재 컨텍스트에 대해 해�
 * [ContextHub](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/contexthub.html)
 * [페이지에 Context Hub 추가 및 저장소 액세스](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/ch-adding.html)
 * [세그멘테이션 이해](https://helpx.adobe.com/experience-manager/6-5/sites/classic-ui-authoring/using/classic-personalization-campaigns-segmentation.html)
-* [ContextHub를 사용하여 세그먼테이션 구성](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/segmentation.html)
+* [ContextHub를 사용하여 세분화 구성](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/segmentation.html)

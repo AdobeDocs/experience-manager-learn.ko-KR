@@ -5,12 +5,13 @@ topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
 role: Developer, Architect
 level: Beginner
-kt: 7631
+jira: KT-7631
 thumbnail: kt-7631.jpeg
 last-substantial-update: 2022-11-11T00:00:00Z
 recommendations: noDisplay, noCatalog
+doc-type: Tutorial
 exl-id: 0bdb93c9-5070-483c-a34c-f2b348bfe5ae
-source-git-commit: ece15ba61124972bed0667738ccb37575d43de13
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1246'
 ht-degree: 1%
@@ -316,7 +317,7 @@ AEM Project Archetype 은 원격 SPA과의 AEM 통합에 적합한 프로젝트�
 
 ## AEM SDK에 AEM 프로젝트 배포
 
-1. AEM 작성자 서비스가 포트 4502에서 실행 중인지 확인합니다.
+1. AEM Author 서비스가 포트 4502에서 실행 중인지 확인합니다.
 1. 명령줄에서 AEM Maven 프로젝트의 루트로 이동합니다
 1. Maven을 사용하여 프로젝트를 로컬 AEM SDK 작성자 서비스에 배포합니다
 

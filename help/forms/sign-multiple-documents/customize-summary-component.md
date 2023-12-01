@@ -3,13 +3,13 @@ title: 요약 구성 요소 사용자 지정
 description: 요약 단계 구성 요소를 확장하여 패키지의 다음 양식으로 이동하는 기능을 포함합니다.
 feature: Adaptive Forms
 version: 6.4,6.5
-kt: 6894
+jira: KT-6894
 thumbnail: 6894.jpg
 topic: Development
 role: Developer
 level: Experienced
 exl-id: fb68579d-241c-414d-92f4-13194f4d1923
-source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '185'
 ht-degree: 1%
@@ -44,7 +44,7 @@ summary.jsp에는 다음 코드가 있습니다. 카테고리 ID로 식별되는
 <ui:includeClientLib categories="getnextform"/>
 ```
 
-## Assets
+## 자산
 
 사용자 지정 요약 구성 요소는 다음과 같을 수 있습니다. [여기에서 다운로드됨](assets/custom-summary-step.zip)
 

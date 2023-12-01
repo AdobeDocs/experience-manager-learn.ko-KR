@@ -2,18 +2,15 @@
 title: SPA 구성 요소를 AEM 구성 요소에 매핑 | AEM SPA 편집기 및 Angular 시작하기
 description: AEM SPA Editor JS SDK를 사용하여 Angular 구성 요소를 Adobe Experience Manager(AEM) 구성 요소에 매핑하는 방법에 대해 알아봅니다. 구성 요소 매핑을 통해 사용자는 AEM SPA 편집기 내에서 기존의 AEM 작성과 유사하게 SPA 구성 요소를 동적으로 업데이트할 수 있습니다.
 feature: SPA Editor
-topics: development
-doc-type: tutorial
 version: Cloud Service
-activity: develop
-audience: developer
-kt: 5311
+jira: KT-5311
 thumbnail: 5311-spa-angular.jpg
 topic: SPA
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: 19a8917c-a1e7-4293-9ce1-9f4c1a565861
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2372'
 ht-degree: 1%
@@ -448,7 +445,7 @@ SPA 코드로 이동하기 전에 AEM에서 제공하는 JSON 모델을 검사�
 
    클래스 이름 `aem-GridColumn--default--4` 12열 그리드를 기준으로 구성 요소 너비가 4열이어야 함을 나타냅니다. 에 대한 자세한 내용 [응답형 격자는 여기에서 찾을 수 있습니다.](https://adobe-marketing-cloud.github.io/aem-responsivegrid/).
 
-5. IDE로 돌아가서 `ui.apps` 모듈에에 클라이언트측 라이브러리가 정의되어 있습니다. `ui.apps/src/main/content/jcr_root/apps/wknd-spa-angular/clientlibs/clientlib-grid`. 파일 열기 `less/grid.less`.
+5. IDE로 돌아가서 `ui.apps` 모듈에는에 정의된 클라이언트측 라이브러리가 있습니다. `ui.apps/src/main/content/jcr_root/apps/wknd-spa-angular/clientlibs/clientlib-grid`. 파일 열기 `less/grid.less`.
 
    이 파일은 중단점(`default`, `tablet`, 및 `phone`)에서 사용함 **레이아웃 컨테이너**. 이 파일은 프로젝트 사양에 따라 사용자 지정하기 위한 것입니다. 현재 중단점이 다음으로 설정되어 있습니다. `1200px` 및 `650px`.
 

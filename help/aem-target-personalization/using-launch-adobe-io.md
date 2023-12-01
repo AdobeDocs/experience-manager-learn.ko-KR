@@ -1,16 +1,15 @@
 ---
 title: Experience Platform Launch 및 Adobe Developer을 사용하여 Adobe Experience Manager과 Adobe Target 통합
-seo-title: Integrating Adobe Experience Manager with Adobe Target using Experience Platform Launch and Adobe I/O
 description: Experience Platform Launch 및 Adobe Developer을 사용하여 Adobe Experience Manager을 Adobe Target과 통합하는 방법에 대한 단계별 안내
-seo-description: Step by step walk-through on how to integrate Adobe Experience Manager with Adobe Target using Experience Platform Launch and Adobe I/O
 feature: Experience Fragments
 topic: Personalization
 role: Developer
 level: Intermediate
 badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Sites 6.5" before-title="false"
+doc-type: Tutorial
 exl-id: b1d7ce04-0127-4539-a5e1-802d7b9427dd
-source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1057'
 ht-degree: 5%

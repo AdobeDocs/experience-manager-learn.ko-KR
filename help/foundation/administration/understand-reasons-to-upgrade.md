@@ -6,8 +6,9 @@ topic: Upgrade
 feature: Release Information
 role: Leader, Architect, Developer, Admin, User
 level: Beginner
+doc-type: Article
 exl-id: bf4030b0-67c4-4b00-af95-f63e6f79e995
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2602'
 ht-degree: 4%
@@ -69,10 +70,10 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 기능을 확장합니다.
 
 ### AMS Cloud Manager
 
-[Cloud Manager](https://adobe.ly/2HODmsv)Adobe Managed Services(AMS) 고객에게만 제공되는 는 다음 기능을 제공합니다.
+[Cloud Manager](https://adobe.ly/2HODmsv)Adobe Managed Services(AMS) 고객에게만 제공되는 은 다음 기능을 제공합니다.
 
 + Cloud Manager는 AEM 배포 지원을 AEM Sites에서 로 확장합니다. **AEM Assets**, 포함 **자산 처리의 자동화된 성능 테스트**.
-+ **자동 확장** 사전 정의된 임계값에서 AEM 게시 계층 을 활용하여 최적의 최종 사용자 경험을 확보할 수 있습니다.
++ **자동 확장** 사전 정의된 임계값의 AEM 게시 계층 중에서 최적의 최종 사용자 경험을 보장하십시오.
 + **비프로덕션 파이프라인** 개발팀이 Cloud Manager를 활용하여 코드 품질을 지속적으로 확인하고 낮은 환경(개발 및 QA)에 배포할 수 있도록 허용합니다.
 + **CI/CD 파이프라인 API** 고객이 프로그래밍 방식으로 Cloud Manager에 참여하도록 허용하여 온프레미스 개발 인프라와의 통합 가능성을 높입니다.
 
@@ -258,7 +259,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 기능을 확장합니다.
         </tr>
         <tr>
             <td><strong><a href="https://adobe.ly/2HODmsv" target="_blank">Cloud Manager</a>: </strong>
-                Adobe Managed Services(AMS) 고객에게만 제공되는 Cloud Manager는 최신 CI/CD 파이프라인을 통해 개발 및 배포를 가속화합니다.</td>
+                Adobe Managed Services(AMS) 고객에게만 독점적인 Cloud Manager는 최신 CI/CD 파이프라인을 통해 개발 및 배포를 가속화합니다.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -408,7 +409,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 기능을 확장합니다.
     </tr>
     <tr>
         <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ims-config-and-admin-console.html" target="_blank">Adobe IMS 인증 지원</a><br>
- </strong>Adobe IMS(Identity Management System)를 통해 AEM 작성자 인스턴스에 대한 액세스를 중앙에서 관리하는 Adobe Managed Services(AMS)에만 해당됩니다.</td>
+ </strong>AMS(Managed Services) Adobe 전용이며 Adobe IMS(Identity Management System)를 통해 AEM 작성자 인스턴스에 대한 액세스를 중앙에서 관리합니다.</td>
         <td> </td>
         <td> </td>
         <td> </td>

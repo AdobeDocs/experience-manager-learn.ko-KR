@@ -6,12 +6,12 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
-kt: 10797
+jira: KT-10797
 thumbnail: kt-10797.jpg
 last-substantial-update: 2023-05-10T00:00:00Z
 badgeVersions: label="AEM 헤드리스 as a Cloud Service" before-title="false"
 exl-id: 4f090809-753e-465c-9970-48cf0d1e4790
-source-git-commit: 701d6d46d716faf51ba5ce3ed31de68928963e54
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 5%
@@ -46,7 +46,7 @@ ht-degree: 5%
 
 >[!IMPORTANT]
 >
->웹 구성 요소는 __AEM 게시__ 그러나 웹 구성 요소의 인증에서 제공된 경우 AEM 작성자의 컨텐츠를 소싱할 수 있습니다. [`person.js`](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/web-component/src/person.js#L11) 파일.
+>웹 구성 요소는 __AEM 게시__ 그러나 웹 구성 요소의 인증에서 제공된 경우에는 AEM 작성자의 컨텐츠를 소스화할 수 있습니다. [`person.js`](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/web-component/src/person.js#L11) 파일.
 
 ## 사용 방법
 
@@ -64,7 +64,7 @@ ht-degree: 5%
 
 1. 편집 `.../src/person.js` AEM 연결 세부 정보를 포함할 파일:
 
-   다음에서 `aemHeadlessService` 개체, 업데이트 `aemHost` 를 클릭하여 AEM 게시 서비스를 지정합니다.
+   다음에서 `aemHeadlessService` 개체, 업데이트 `aemHost` 을 클릭하여 AEM Publish 서비스를 지정합니다.
 
    ```plain
    # AEM Server namespace
@@ -185,6 +185,6 @@ class PersonInfo extends HTMLElement {
 
 ### CORS(원본 간 리소스 공유)
 
-이 웹 구성 요소는 대상 AEM 환경에서 실행되는 AEM 기반 CORS 구성을 사용하며 호스트 페이지가에서 실행된다고 가정합니다. `http://localhost:8080` 개발 모드 및 아래는 로컬 AEM 작성자 서비스에 대한 샘플 CORS OSGi 구성입니다.
+이 웹 구성 요소는 대상 AEM 환경에서 실행되는 AEM 기반 CORS 구성을 사용하며 호스트 페이지가에서 실행된다고 가정합니다. `http://localhost:8080` 개발 모드 및 아래는 로컬 AEM Author 서비스에 대한 샘플 CORS OSGi 구성입니다.
 
 검토하십시오. [배포 구성](../deployment/web-component.md) 각 AEM 서비스용.

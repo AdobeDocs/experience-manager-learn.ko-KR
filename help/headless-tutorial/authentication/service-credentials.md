@@ -2,19 +2,19 @@
 title: 서비스 자격 증명
 description: 외부 애플리케이션, 시스템 및 서비스가 HTTP를 통해 작성자 또는 게시 서비스와 프로그래밍 방식으로 상호 작용하는 데 사용되는 서비스 자격 증명을 사용하는 방법에 대해 알아봅니다.
 version: Cloud Service
-doc-type: tutorial
 topics: Development, Security
 feature: APIs
 activity: develop
 audience: developer
-kt: 6785
+jira: KT-6785
 thumbnail: 330519.jpg
 topic: Headless, Integrations
 role: Developer
 level: Intermediate, Experienced
 last-substantial-update: 2023-01-12T00:00:00Z
+doc-type: Tutorial
 exl-id: e2922278-4d0b-4f28-a999-90551ed65fb4
-source-git-commit: 65d8fd58f421a186e3624918c70cc5d79ec23700
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1967'
 ht-degree: 0%

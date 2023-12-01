@@ -2,15 +2,15 @@
 title: 핵심 구성 요소 확장 | AEM SPA 편집기 및 반응 시작하기
 description: AEM SPA 편집기에서 사용할 기존 핵심 구성 요소에 대한 JSON 모델을 확장하는 방법을 알아봅니다. 기존 구성 요소에 속성 및 콘텐츠를 추가하는 방법을 이해하는 것은 AEM SPA Editor 구현의 기능을 확장하는 강력한 기술입니다. Sling 리소스 병합의 Sling 모델 및 기능을 확장하기 위해 전달 패턴을 사용하는 방법에 대해 알아봅니다.
 feature: SPA Editor, Core Components
-doc-type: tutorial
 version: Cloud Service
-kt: 5879
+jira: KT-5879
 thumbnail: 5879-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: 44433595-08bc-4a82-9232-49d46c31b07b
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 2%
@@ -176,7 +176,7 @@ AEM SPA 편집기에서 사용할 기존 핵심 구성 요소를 확장하는 �
 당사 `Banner` 구성 요소를 캡처하려면 대화 상자에 추가 텍스트 필드가 필요합니다. `bannerText`. Sling 상속을 사용하고 있으므로 의 기능을 사용할 수 있습니다. [Sling 리소스 병합](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/sling-resource-merger.html) 를 클릭하여 대화 상자의 일부를 재정의하거나 확장합니다. 이 샘플에서는 작성자의 추가 데이터를 캡처하여 카드 구성 요소를 채우기 위한 새 탭이 대화 상자에 추가되었습니다.
 
 1. 다음에서 `ui.apps` 모듈, 아래 `banner` 폴더, 다음 이름의 폴더 만들기 `_cq_dialog`.
-1. 아래에 `_cq_dialog` 대화 상자 정의 파일 만들기 `.content.xml`. 다음과 같이 채웁니다.
+1. 아래에 `_cq_dialog` 대화 상자 정의 파일 만들기 `.content.xml`. 다음을 사용하여 채웁니다.
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -245,7 +245,7 @@ AEM SPA 편집기에서 사용할 기존 핵심 구성 요소를 확장하는 �
 SPA 편집기와 함께 배너 구성 요소를 사용하려면 매핑할 새 SPA 구성 요소를 만들어야 합니다 `wknd-spa-react/components/banner`. 이 작업은 다음에서 수행됩니다. `ui.frontend` 모듈.
 
 1. 다음에서 `ui.frontend` 모듈 새 폴더 만들기 `Banner` 위치: `ui.frontend/src/components/Banner`.
-1. 이름이 인 새 파일 만들기 `Banner.js` 아래에 `Banner` 폴더를 삭제합니다. 다음과 같이 채웁니다.
+1. 이름이 인 새 파일 만들기 `Banner.js` 아래에 `Banner` 폴더를 삭제합니다. 다음을 사용하여 채웁니다.
 
    ```js
    import React, {Component} from 'react';

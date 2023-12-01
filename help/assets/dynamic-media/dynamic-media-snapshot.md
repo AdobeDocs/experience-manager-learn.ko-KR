@@ -3,13 +3,14 @@ title: 스냅샷을 사용하여 Dynamic Media 이미징 살펴보기
 description: Dynamic Media Snapshot은 Dynamic Media의 최적화된 동적 이미지 제공 기능을 보여 주기 위해 설계된 시각적 데모 도구입니다.
 feature: Smart Services, Image Sets, Image Profiles
 version: Cloud Service
-kt: 13269
+jira: KT-13269
 thumbnail: 3419421.jpeg
 topic: Content Management
 role: User
 level: Intermediate
+doc-type: Feature Video
 exl-id: 3f2f3fe4-a3cf-4494-a318-bf82aee20dc7
-source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '121'
 ht-degree: 3%

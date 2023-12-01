@@ -2,16 +2,16 @@
 title: 사이트 만들기 | AEM 빠른 사이트 생성
 description: 사이트 생성 마법사를 사용하여 새 웹 사이트를 생성하는 방법에 대해 알아봅니다. Adobe에서 제공하는 표준 사이트 템플릿은 새 사이트의 시작점입니다.
 version: Cloud Service
-type: Tutorial
 topic: Content Management
 feature: Core Components, Page Editor
 role: Developer
 level: Beginner
-kt: 7496
+jira: KT-7496
 thumbnail: KT-7496.jpg
+doc-type: Tutorial
 exl-id: 6d0fdc4d-d85f-4966-8f7d-d53506a7dd08
 recommendations: noDisplay, noCatalog
-source-git-commit: 0c6294ac468ad4ead041a68f381c6781a5c29b44
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1013'
 ht-degree: 1%

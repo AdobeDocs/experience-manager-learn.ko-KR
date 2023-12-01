@@ -1,12 +1,8 @@
 ---
 title: 태그 속성 만들기
 description: AEM과 통합하기 위한 최소 구성으로 태그 속성을 만드는 방법을 알아봅니다. 사용자는 Tag UI에 대해 소개하고 확장, 규칙 및 게시 워크플로우에 대해 알아봅니다.
-topics: integrations
-audience: administrator
 solution: Experience Manager, Data Collection, Experience Platform
-doc-type: technical video
-activity: setup
-kt: 5980
+jira: KT-5980
 thumbnail: 38553.jpg
 topic: Integrations
 feature: Integrations
@@ -14,8 +10,9 @@ role: Developer
 level: Intermediate
 badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
+doc-type: Tutorial
 exl-id: d5de62ef-a2aa-4283-b500-e1f7cb5dec3b
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '607'
 ht-degree: 1%

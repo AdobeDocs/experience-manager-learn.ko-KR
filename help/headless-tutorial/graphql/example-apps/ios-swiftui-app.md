@@ -3,7 +3,7 @@ title: iOS 앱 - AEM Headless 예
 description: 예제 애플리케이션은 AEM(Adobe Experience Manager)의 Headless 기능을 살펴볼 수 있는 좋은 방법입니다. 이 iOS 애플리케이션은 지속 쿼리를 사용하여 AEM GraphQL API를 사용하여 콘텐츠를 쿼리하는 방법을 보여 줍니다.
 version: Cloud Service
 mini-toc-levels: 2
-kt: 10587
+jira: KT-10587
 thumbnail: KT-10587.jpg
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
@@ -12,7 +12,7 @@ level: Beginner
 last-substantial-update: 2023-05-10T00:00:00Z
 badgeVersions: label="AEM 헤드리스 as a Cloud Service" before-title="false"
 exl-id: 6c5373db-86ec-410b-8a3b-9d4f86e06812
-source-git-commit: 3e4960bf2d243e33fb9f36fd3fbb45f57260229a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '990'
 ht-degree: 3%
@@ -52,7 +52,7 @@ iOS 애플리케이션은 __AEM 게시__ 그러나 iOS 애플리케이션의 구
    ```
 
 1. 시작 [Xcode](https://developer.apple.com/xcode/) 및 폴더 열기 `ios-app`
-1. 파일 수정 `Config.xcconfig` 파일 및 업데이트 `AEM_SCHEME` 및 `AEM_HOST` 대상 AEM 게시 서비스와 일치하도록 합니다.
+1. 파일 수정 `Config.xcconfig` 파일 및 업데이트 `AEM_SCHEME` 및 `AEM_HOST` 대상 AEM Publish 서비스와 일치해야 합니다.
 
    ```plain
    // The http/https protocol scheme used to access the AEM_HOST
@@ -61,7 +61,7 @@ iOS 애플리케이션은 __AEM 게시__ 그러나 iOS 애플리케이션의 구
    AEM_HOST = publish-p123-e456.adobeaemcloud.com
    ```
 
-   AEM 작성자에 연결하는 경우 `AEM_AUTH_TYPE` 및에 대한 인증 속성 지원 `Config.xcconfig`.
+   AEM Author에 연결하는 경우 `AEM_AUTH_TYPE` 및에 대한 인증 속성 지원 `Config.xcconfig`.
 
    __기본 인증__
 

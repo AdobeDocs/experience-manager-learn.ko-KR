@@ -6,10 +6,10 @@ feature: Adaptive Forms
 topic: Development
 role: Developer
 level: Experienced
-kt: 10292
+jira: KT-10292
 exl-id: c1d248c3-8208-476e-b0ae-cab25575cd6a
 last-substantial-update: 2021-10-12T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 4%
@@ -50,7 +50,7 @@ Adobe PDF Embed API를 사용하여 PDF을 표시하는 클라이언트 라이�
 
 1. [클라이언트 라이브러리 가져오기](assets/pdf-carousel-client-lib.zip) 로컬 AEM 인스턴스로 [패키지 관리자 사용](http://localhost:4502/crx/packmgr/index.jsp)
 1. [PDF 슬라이드 구성 요소 가져오기](assets/pdf-carousel-component.zip) 로컬 AEM 인스턴스로 [패키지 관리자 사용](http://localhost:4502/crx/packmgr/index.jsp)
-1. [적응형 양식 가져오기 ](assets/adaptive-form-pdf-carousel.zip) 로컬 AEM 인스턴스로 [패키지 관리자 사용](http://localhost:4502/crx/packmgr/index.jsp)
+1. [적응형 양식 가져오기](assets/adaptive-form-pdf-carousel.zip) 로컬 AEM 인스턴스로 [패키지 관리자 사용](http://localhost:4502/crx/packmgr/index.jsp)
 1. [표시할 샘플 pdf 가져오기](assets/pdf-carousel-sample-documents.zip) 로컬 AEM 인스턴스로 [에셋 파일 업로드 링크 사용](http://localhost:4502/assets.html/content/dam)
 1. [적응형 양식 미리 보기](http://localhost:4502/content/dam/formsanddocuments/wefinancecreditcard/jcr:content?wcmmode=disabled)
 1. 탭으로 이동하여 검토할 문서 탭을 표시합니다. 슬라이드 구성 요소에 3개의 PDF 문서가 표시됩니다.

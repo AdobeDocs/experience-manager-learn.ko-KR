@@ -3,13 +3,13 @@ title: 적응형 양식 만들기
 description: 양식 데이터 모델의 미리 채우기 서비스를 사용하도록 적응형 양식 만들기 및 구성
 feature: Adaptive Forms
 version: 6.4,6.5
-kt: 5813
+jira: KT-5813
 thumbnail: kt-5813.jpg
 topic: Development
 role: User
 level: Beginner
 exl-id: c8d4eed8-9e2b-458c-90d8-832fc9e0ad3f
-source-git-commit: 4b47daf82e27f6bea4be30e3cdd132f497f4c609
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '606'
 ht-degree: 1%
@@ -72,7 +72,7 @@ ht-degree: 1%
 * 바인드 참조 설정 **/newhire/GetEmployeeBenefits**
 * 반복 설정 - 최소 개수를 1로 설정하고 최대 개수를 5로 설정합니다.
 * Row1 구성은 아래 스크린샷과 같아야 합니다.
-   ![행 구성](assets/configure-row.PNG)
+  ![행 구성](assets/configure-row.PNG)
 * 파란색 아이콘을 ☑ 변경 사항을 저장합니다.
 
 ## 행 셀 바인딩

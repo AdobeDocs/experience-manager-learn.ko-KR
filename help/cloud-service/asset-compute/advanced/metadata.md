@@ -7,13 +7,13 @@ version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
-kt: 6448
+jira: KT-6448
 thumbnail: 327313.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 6ece6e82-efe9-41eb-adf8-78d9deed131e
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1433'
 ht-degree: 1%
@@ -47,10 +47,10 @@ Asset compute 작업자는 Asset compute SDK 작업자 API 계약을 `renditionC
 
 ![Asset compute 메타데이터 작업자 논리 흐름](./assets/metadata/logical-flow.png)
 
-1. AEM 작성자 서비스는 Asset compute 메타데이터 작업자를 호출하여 __(1a)__ 원본 이진 및 __(1b)__ 처리 프로필에 정의된 모든 매개 변수.
+1. AEM Author 서비스는 Asset compute 메타데이터 작업자를 호출하여 __(1a)__ 원본 이진 및 __(1b)__ 처리 프로필에 정의된 모든 매개 변수.
 1. asset compute SDK는 사용자 지정 Asset compute 메타데이터 작업자의 실행을 조정합니다. `renditionCallback(...)` 함수, 자산의 바이너리를 기반으로 XMP(XML) 렌디션 가져오기 __(1a)__ 및 모든 처리 프로필 매개 변수 __(1b)__.
 1. asset compute 작업자는 XMP(XML) 표현을에 저장합니다. `rendition.path`.
-1. 에 작성된 XMP (XML) 데이터 `rendition.path` 는 Asset compute SDK를 통해 AEM 작성자 서비스로 전송되며 다음으로 노출됩니다. __(4a)__ 텍스트 렌디션 및 __(4b)__ 에셋의 메타데이터 노드로 지속됨
+1. 에 작성된 XMP (XML) 데이터 `rendition.path` 는 Asset compute SDK를 통해 AEM Author 서비스로 전송되고 다음으로 노출됩니다. __(4a)__ 텍스트 렌디션 및 __(4b)__ 에셋의 메타데이터 노드로 지속됨
 
 ## manifest.yml 구성{#manifest}
 

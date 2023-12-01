@@ -5,11 +5,12 @@ topic: Headless, SPA, Development
 feature: SPA Editor, APIs, Developing
 role: Developer, Architect
 level: Beginner
-kt: 7633
+jira: KT-7633
 thumbnail: kt-7633.jpeg
 last-substantial-update: 2022-11-01T00:00:00Z
+doc-type: Tutorial
 exl-id: b8d43e44-014c-4142-b89c-ff4824b89c78
-source-git-commit: ece15ba61124972bed0667738ccb37575d43de13
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1200'
 ht-degree: 0%
@@ -62,7 +63,7 @@ AEM과 상호 작용하는 방법을 알 수 있도록 몇 가지 환경 변수�
       + 이 값은 AEM 환경(로컬, 개발, 스테이지 또는 프로덕션) 및 AEM 서비스 유형(작성자 대 게시)의 여부에 따라 변경됩니다
    + `REACT_APP_USE_PROXY`: React 개발 서버에 다음과 같은 프록시 AEM 요청을 전달하여 개발 중에 CORS 문제를 방지합니다. `/content, /graphql, .model.json` 사용 `http-proxy-middleware` 모듈.
    + `REACT_APP_AUTH_METHOD`: AEM에서 제공하는 요청에 대한 인증 방법, 옵션은 &#39;service-token&#39;, &#39;dev-token&#39;, &#39;basic&#39; 또는 no-auth 사용 사례를 위해 공백으로 둡니다.
-      + AEM 작성자와 함께 사용하는 데 필요
+      + AEM Author에 사용해야 합니다.
       + AEM 게시와 함께 사용해야 할 수도 있습니다(콘텐츠가 보호된 경우).
       + AEM SDK에 대해 개발하는 경우 기본 인증을 통해 로컬 계정을 지원합니다. 이 자습서에서 사용하는 메서드입니다.
       + AEMas a Cloud Service 과 통합할 때 다음을 사용합니다. [액세스 토큰](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)

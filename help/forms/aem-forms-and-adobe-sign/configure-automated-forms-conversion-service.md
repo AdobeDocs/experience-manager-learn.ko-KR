@@ -3,14 +3,14 @@ title: 자동화된 양식 전환 서비스
 description: 자동화된 양식 전환 서비스. 이 문서에서는 AEM 관리자가 Automated forms conversion 서비스를 구성하여 PDF forms을 적응형 양식으로 자동 변환하는 방법에 대해 설명합니다. 이 도움말은 조직의 IT 및 AEM 관리자를 위한 것입니다.
 feature: Adaptive Forms
 thumbnail: 39493.jpg
-kt: 6114
+jira: KT-6114
 topic: Development
 role: Admin
 level: Beginner
 badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: 0715a2cc-c042-4ddc-85a1-7720f420351b
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 19%

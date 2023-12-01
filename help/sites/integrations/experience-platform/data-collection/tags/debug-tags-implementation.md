@@ -1,12 +1,8 @@
 ---
 title: 태그 구현 디버깅
 description: Tags 구현을 디버깅하는 몇 가지 일반적인 도구와 기술을 소개합니다. 브라우저의 개발자 콘솔 및 Experience Platform 디버거 확장을 사용하여 Tags 구현의 주요 측면을 식별하고 해결하는 방법을 알아봅니다.
-topics: integrations
-audience: administrator
 solution: Experience Manager, Data Collection, Experience Platform
-doc-type: technical video
-activity: setup
-kt: 6047
+jira: KT-6047
 thumbnail: 38567.jpg
 topic: Integrations
 feature: Integrations
@@ -14,8 +10,9 @@ role: Developer
 level: Intermediate
 badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
+doc-type: Tutorial
 exl-id: 647447ca-3c29-4efe-bb3a-d3f53a936a2a
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '291'
 ht-degree: 1%

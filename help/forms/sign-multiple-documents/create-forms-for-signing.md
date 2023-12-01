@@ -3,13 +3,13 @@ title: 서명용 Forms 만들기
 description: 서명 패키지에 포함해야 하는 양식을 만듭니다.
 feature: Adaptive Forms
 version: 6.4,6.5
-kt: 6893
+jira: KT-6893
 thumbnail: 6893.jpg
 topic: Development
 role: User
 level: Beginner
 exl-id: 565d81a4-2918-44ea-a3e9-ed79f246f08a
-source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 0%
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 패키지에 있는 모든 양식을 작성하고 서명하면 적절한 메시지를 표시해야 합니다. 이 메시지는 Alldone 양식의 도움으로 표시됩니다. Alldone 양식은 샘플 양식에 포함됩니다.
 
-## Assets
+## 자산
 
 이 자습서에서 사용되는 를 포함하는 샘플 양식은 다음과 같을 수 있습니다. [여기에서 다운로드됨](assets/forms-for-signing.zip)
 

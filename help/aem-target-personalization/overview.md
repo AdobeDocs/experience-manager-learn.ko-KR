@@ -7,8 +7,9 @@ role: Developer
 level: Intermediate
 badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Sites 6.5" before-title="false"
+doc-type: Tutorial
 exl-id: b632883f-65fd-4f89-bf39-ec2bce352d2d
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '842'
 ht-degree: 0%
@@ -27,31 +28,31 @@ AEM과 Target은 모두 기능이 중복되는 강력한 솔루션입니다. 고
 
 ## AEM Experience Fragments를 사용한 개인화 {#personalization-using-aem-experience-fragment}
 
-이 시나리오에서는 AEM과 Target을 사용합니다. 두 제품 모두 각각의 장점이 있으므로, 사이트 사용자에게 개인화된 경험을 제공할 때 필요한 사항이 있습니다 **개인화된 콘텐츠(AEM의 콘텐츠)** 및 **지능형 방식(Target)** 특정 사용자를 기준으로 이러한 컨텐츠를 제공합니다.
+이 시나리오에서는 AEM 및 Target을 사용합니다. 두 제품 모두 각각의 장점이 있으므로, 사이트 사용자에게 개인화된 경험을 제공할 때 필요한 사항이 있습니다 **개인화된 콘텐츠(AEM의 콘텐츠)** 및 **지능형 방식(Target)** 특정 사용자를 기준으로 이러한 컨텐츠를 제공합니다.
 
 AEM은 모든 콘텐츠와 에셋을 중앙 위치에 모아 개인화 전략을 가속화하는 개인화된 콘텐츠를 만들 수 있도록 지원합니다. AEM을 사용하면 코드를 작성하지 않고도 한 곳에서 데스크탑, 태블릿 및 모바일 장치의 콘텐츠를 쉽게 만들 수 있습니다. 모든 디바이스를 위해 페이지를 만들 필요가 없이, 컨텐츠를 사용하여 각 경험이 자동으로 조정됩니다. AEM 버튼을 눌러 컨텐츠를 AEM에서 Adobe Target으로 오퍼로 내보낼 수도 있습니다.
 
-이제 Target에 AEM의 오퍼 형태로 개인화된 콘텐츠가 있습니다. Target을 사용하면 행동 변수, 컨텍스트 변수 및 오프라인 변수를 통합하는 규칙 기반 및 AI 기반 머신 러닝 접근 방식의 조합을 기반으로 이러한 오퍼를 규모에 맞게 제공할 수 있습니다.  Target을 사용하면 A/B와 MVT(다변량) 활동을 쉽게 설정 및 실행하여 최상의 오퍼, 컨텐츠 및 경험을 결정할 수 있습니다.
+이제 Target에 AEM의 오퍼 형식으로 개인화된 콘텐츠가 있습니다. Target을 사용하면 행동 변수, 컨텍스트 변수 및 오프라인 변수를 통합하는 규칙 기반 및 AI 기반 머신 러닝 접근 방식의 조합을 기반으로 이러한 오퍼를 규모에 맞게 제공할 수 있습니다.  Target을 사용하면 A/B와 MVT(다변량) 활동을 쉽게 설정 및 실행하여 최상의 오퍼, 콘텐츠 및 경험을 결정할 수 있습니다.
 
-**경험 조각** Target을 사용하여 비즈니스 결과를 이끄는 개인화 전문가에게 컨텐츠/경험 작성자를 연결할 수 있는 거대한 단계를 나타냅니다.
+**경험 조각** 는 콘텐츠/경험 작성자를 Target을 사용하여 비즈니스 결과를 이끄는 개인화 전문가와 연결하기 위한 매우 큰 단계를 나타냅니다.
 
 * AEM 콘텐츠 편집기는 개인화된 콘텐츠를 경험 조각 및 그 변형으로 작성합니다
-* AEM은 경험 조각 HTML을 Target으로 내보냅니다&#x200B;.
-* Target&#x200B;은 활동에서 AEM 경험 조각 마크업을 오퍼로 사용합니다
-* Target은 경험 조각 HTML을 제공하고 AEM은 참조된 이미지를 제공합니다
+* AEM이 경험 조각 HTML을 Target으로 내보냅니다&#x200B;.
+* Target&#x200B;은 AEM 경험 조각 마크업을 활동의 오퍼로 사용합니다
+* Target은 경험 조각 HTML을 제공하고 AEM은 참조된 이미지를 제공합니다.
 
   ![경험 조각 다이어그램을 사용한 개인화](assets/personalization-use-case-1/use-case-1-diagram.png)
 
 **이 시나리오를 구현하려면 다음을 수행해야 합니다.**
 
 * [Launch 및 Adobe I/O을 사용하여 AEM 및 Adobe Target 통합](./implementation.md#integrating-aem-target-options)
-* [이전 Cloud Services을 사용하는 AEM 및 Adobe Target](./implementation.md#integrating-aem-target-options)
+* [이전 Cloud Service을 사용하는 AEM 및 Adobe Target](./implementation.md#integrating-aem-target-options)
 
 ***위의 통합을 구현한 후 다음을 살펴보도록 하겠습니다. [시나리오 세부 정보](./personalization-use-case-1.md).***
 
 ## Visual Experience Composer를 사용한 개인화
 
-마케터는 Adobe Target VEC(시각적 경험 작성기)를 사용하여 테스트를 실행하기 위한 코드를 변경하지 않고 웹 사이트에서 빠르게 변경할 수 있습니다. VEC는 사이트 컨텍스트에서 개인화된 경험과 오퍼를 쉽게 만들고 테스트할 수 있는 WYSIWYG(표시되는 것은 얻는 것입니다) 사용자 인터페이스입니다. 웹 페이지(또는 오퍼) 또는 모바일 웹 페이지의 레이아웃 및 콘텐츠를 드래그 앤 드롭하고, 교체하고, 수정하여 Target 활동에 대한 경험과 오퍼를 만들 수 있습니다.
+마케터는 Adobe Target VEC(시각적 경험 작성기)를 사용하여 테스트를 실행하기 위한 코드를 변경하지 않고 웹 사이트에서 빠르게 변경할 수 있습니다. VEC는 사이트 컨텍스트에서 개인화된 경험과 오퍼를 쉽게 만들고 테스트할 수 있는 WYSIWYG(표시되는 것은 얻는 것입니다) 사용자 인터페이스입니다. 웹 페이지(또는 오퍼) 또는 모바일 웹 페이지의 레이아웃 및 콘텐츠를 드래그 앤 드롭하고, 교체하고, 수정하여 타겟 활동에 대한 경험과 오퍼를 만들 수 있습니다.
 
 VEC는 Adobe Target의 주요 기능 중 하나입니다. VEC를 통해 마케터와 디자이너가 시각적 인터페이스를 사용하여 콘텐츠를 만들고 변경할 수 있습니다. 코드를 직접 편집하지 않고도 많은 디자인 선택을 할 수 있습니다. 작성기에서 사용할 수 있는 편집 옵션을 사용하여 HTML 및 JavaScript를 편집할 수도 있습니다.
 

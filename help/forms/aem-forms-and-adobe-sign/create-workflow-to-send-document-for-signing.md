@@ -3,14 +3,14 @@ title: 워크플로를 사용하여 서명용 문서 보내기
 description: 워크플로를 사용하여 서명용 문서를 보냅니다. 서명 문서 구성 요소를 사용하여 AEM 워크플로를 만듭니다. 자동 생성된 DoR을 사용하여 서명 구성 요소를 사용하여 서명을 전송합니다. 이 비디오에서는 서명을 위해 문서를 전송할 수 있는 효과적인 워크플로우를 만드는 데 필요한 다양한 단계를 설명합니다.
 feature: Adaptive Forms,Acrobat Sign
 thumbnail: 38182.jpg
-kt: 6035
+jira: KT-6035
 topic: Development
 role: Developer
 level: Intermediate
 badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: 20093733-2d19-4405-b453-1a8c2722adeb
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '100'
 ht-degree: 3%

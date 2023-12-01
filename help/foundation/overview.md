@@ -3,11 +3,12 @@ title: AEM Foundation 비디오 및 자습서
 description: Adobe Experience Manager Foundation에 대한 지원을 받으려면 비디오 및 튜토리얼을 시청하십시오.
 role: Leader, Architect, Developer, Admin, User
 level: Beginner
+doc-type: Catalog
 exl-id: af0fe7fb-873b-4d2d-a5a3-59a5a3da9b96
-source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '215'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -93,5 +94,5 @@ Adobe Experience Manager은 AEM Sites, Assets 및 Forms 사용자가 사용할 �
 
 * [AEM as a Cloud Service 자습서](/help/cloud-service/overview.md)
 * [AEM Sites 비디오 및 자습서](/help/sites/overview.md)
-* [AEM Assets 비디오 및 자습서](/help/assets/overview.md)
+* [AEM Assets 비디오 및 튜토리얼](/help/assets/overview.md)
 * [AEM Forms 비디오 및 자습서](/help/forms/overview.md)

@@ -6,13 +6,13 @@ feature: Security
 topic: Development, Security
 role: Architect, Developer
 level: Intermediate
-kt: 9350
+jira: KT-9350
 thumbnail: KT-9350.jpeg
 exl-id: 5c1ff98f-d1f6-42ac-a5d5-676a54ef683c
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1133'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -174,7 +174,11 @@ AEM에서 비표준 포트(80/443이 아닌 포트)에 대한 HTTP/HTTPS 연결�
 
 AEM은 AEM HTTP/HTTPS 프록시에 매핑되는 두 세트의 특수 Java™ 시스템 변수를 제공합니다.
 
-| 변수 이름 | 사용 | Java™ 코드 | OSGi 구성 | | - | - | - | - | | `AEM_PROXY_HOST` | HTTP/HTTPS 연결 모두에 대한 프록시 호스트 | `System.getenv().getOrDefault("AEM_PROXY_HOST", "proxy.tunnel")` | `$[env:AEM_PROXY_HOST;default=proxy.tunnel]` | | `AEM_HTTP_PROXY_PORT` | HTTPS 연결을 위한 프록시 포트(폴백을 로 설정) `3128`) | `System.getenv().getOrDefault("AEM_HTTP_PROXY_PORT", 3128)` | `$[env:AEM_HTTP_PROXY_PORT;default=3128]` | | `AEM_HTTPS_PROXY_PORT` | HTTPS 연결을 위한 프록시 포트(폴백을 로 설정) `3128`) | `System.getenv().getOrDefault("AEM_HTTPS_PROXY_PORT", 3128)` | `$[env:AEM_HTTPS_PROXY_PORT;default=3128]` |
+| 변수 이름 | 사용 | Java™ 코드 | OSGi 구성 |
+| - |  - | - | - |
+| `AEM_PROXY_HOST` | HTTP/HTTPS 연결 모두에 대한 프록시 호스트 | `System.getenv().getOrDefault("AEM_PROXY_HOST", "proxy.tunnel")` | `$[env:AEM_PROXY_HOST;default=proxy.tunnel]` |
+| `AEM_HTTP_PROXY_PORT` | HTTPS 연결을 위한 프록시 포트(폴백 설정) `3128`) | `System.getenv().getOrDefault("AEM_HTTP_PROXY_PORT", 3128)` | `$[env:AEM_HTTP_PROXY_PORT;default=3128]` |
+| `AEM_HTTPS_PROXY_PORT` | HTTPS 연결을 위한 프록시 포트(폴백 설정) `3128`) | `System.getenv().getOrDefault("AEM_HTTPS_PROXY_PORT", 3128)` | `$[env:AEM_HTTPS_PROXY_PORT;default=3128]` |
 
 비표준 포트에서 외부 서비스에 HTTP/HTTPS를 호출하는 경우 해당 포트 없음 `portForwards` 는 Cloud Manager API를 사용하여 정의해야 합니다 `enableEnvironmentAdvancedNetworkingConfiguration` 포트 전달 &quot;rules&quot;가 &quot;in code&quot;로 정의되므로 작업입니다.
 
@@ -202,7 +206,9 @@ AEM은 AEM HTTP/HTTPS 프록시에 매핑되는 두 세트의 특수 Java™ 시
 
 비HTTP/HTTPS 연결을 만드는 경우(예: SQL, SMTP 등) AEM에서 AEM이 제공하는 특수 호스트 이름을 통해 연결해야 합니다.
 
-| 변수 이름 | 사용 | Java™ 코드 | OSGi 구성 | | - | - | - | - | | `AEM_PROXY_HOST` | 비 HTTP/HTTPS 연결용 프록시 호스트 | `System.getenv().getOrDefault("AEM_PROXY_HOST", "proxy.tunnel")` | `$[env:AEM_PROXY_HOST;default=proxy.tunnel]` |
+| 변수 이름 | 사용 | Java™ 코드 | OSGi 구성 |
+| - |  - | - | - |
+| `AEM_PROXY_HOST` | 비 HTTP/HTTPS 연결용 프록시 호스트 | `System.getenv().getOrDefault("AEM_PROXY_HOST", "proxy.tunnel")` | `$[env:AEM_PROXY_HOST;default=proxy.tunnel]` |
 
 
 외부 서비스에 대한 연결은 `AEM_PROXY_HOST` 및 매핑된 포트(`portForwards.portOrig`): AEM이 매핑된 외부 호스트 이름( )으로 라우팅합니다.`portForwards.name`) 및 포트(`portForwards.portDest`).

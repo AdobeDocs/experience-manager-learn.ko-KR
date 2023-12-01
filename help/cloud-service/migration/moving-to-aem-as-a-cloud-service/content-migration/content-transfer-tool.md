@@ -6,10 +6,10 @@ topic: Migration, Upgrade
 feature: Migration
 role: Developer
 level: Experienced
-kt: 8919
+jira: KT-8919
 thumbnail: 336970.jpeg
 exl-id: c51ce8e3-e83c-4f8b-a835-70335ed3a5b9
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 2%
@@ -32,10 +32,10 @@ AEM 컨텐츠 전송 도구 가 AEM 6.3+에서 as a Cloud Service으로 컨텐�
 ## 주요 활동
 
 + 다운로드 [최신 컨텐츠 전송 도구](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=Content*+Transfer*+Tool*&amp;1_group.propertyvalues.property=입니다.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atoling&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=2).
-+ AEM Author 6.3 이상의 최종 콘텐츠를 AEM as a Cloud Service Author 서비스로 전송합니다.
++ AEM AEM Author 6.3 이상의 최종 콘텐츠를 as a Cloud Service Author 서비스로 전송합니다.
    + 전송할 최종 콘텐츠가 포함된 AEM 6.3+ 작성자에 콘텐츠 전송 도구를 설치합니다.
    + 컨텐츠 전송 도구를 일괄로 실행하여 컨텐츠 세트를 전송합니다.
-+ AEM Publish 6.3 이상의 최종 콘텐츠를 AEM as a Cloud Service 게시 서비스로 전송합니다.
++ AEM Publish 6.3 이상의 최종 콘텐츠를 AEM as a Cloud Service Publish 서비스로 전송합니다.
    + 전송할 최종 콘텐츠가 포함된 AEM 6.3+ 게시에서 콘텐츠 전송 도구를 설치합니다.
    + 컨텐츠 전송 도구를 일괄로 실행하여 컨텐츠 세트를 전송합니다.
 + 원할 경우, 마지막 컨텐츠 전송 이후 새 컨텐츠를 전송하여 AEM에서 &quot;추가&quot; 컨텐츠를 as a Cloud Service으로 전송

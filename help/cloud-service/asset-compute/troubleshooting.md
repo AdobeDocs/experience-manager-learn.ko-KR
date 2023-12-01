@@ -7,13 +7,13 @@ version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
-kt: 5802
+jira: KT-5802
 thumbnail: KT-5802.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: d851d315-ed0e-46b8-bcd8-417e1e58c0c4
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1239'
 ht-degree: 0%
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 + __오류__: 렌디션이 잘못 렌더링되거나(이미지 시) 손상되어 열 수 없습니다.
 
-   ![렌디션이 부분적으로 그려진 상태로 반환됨](./assets/troubleshooting/develop__await.png)
+  ![렌디션이 부분적으로 그려진 상태로 반환됨](./assets/troubleshooting/develop__await.png)
 
 + __원인__: 작업자의 `renditionCallback` 표현물을 완전히 쓰기 전에 함수를 종료하는 중입니다. `rendition.path`.
 + __해결 방법__: 사용자 지정 작업자 코드를 검토하고 다음을 사용하여 모든 비동기 호출이 동기화되도록 합니다. `await`.
@@ -84,7 +84,7 @@ Asset compute 개발 도구는 오래된 데이터를 가져오는 상태로 들
 + __원인:__ 이 기능은 구현되지 않았습니다
 + __해결 방법:__ 에 정의된 자격 증명을 사용하여 클라우드 스토리지 공급자에 로그인합니다. `.env`. 개발 도구에서 사용하는 컨테이너를 찾습니다( 에도 지정됨). `.env`)에서 로 이동합니다. __소스__ 폴더를 만들고 소스 이미지를 삭제합니다. 다음에 설명된 단계를 수행해야 할 수 있습니다 [소스 파일 드롭다운이 잘못됨](#source-files-dropdown-incorrect) 삭제된 소스 파일이 개발 도구 &quot;애플리케이션 상태&quot;에서 로컬로 캐시될 수 있으므로 드롭다운에 계속 표시되는 경우.
 
-   ![Microsoft Azure Blob 저장소](./assets/troubleshooting/dev-tool__remove-source-files.png)
+  ![Microsoft Azure Blob 저장소](./assets/troubleshooting/dev-tool__remove-source-files.png)
 
 ## 테스트{#test}
 
@@ -94,7 +94,7 @@ Asset compute 개발 도구는 오래된 데이터를 가져오는 상태로 들
 + __원인:__ JavaScript 구문 오류와 같은 예기치 않은 오류로 인해 작업자가 렌디션을 생성하지 못했습니다.
 + __해결 방법:__ 테스트 실행 검토 `test.log` 위치: `/build/test-results/test-worker/test.log`. 이 파일에서 실패한 테스트 사례에 해당하는 섹션을 찾아 오류를 검토합니다.
 
-   ![문제 해결 - 생성된 렌디션이 없음](./assets/troubleshooting/test__no-rendition-generated.png)
+  ![문제 해결 - 생성된 렌디션이 없음](./assets/troubleshooting/test__no-rendition-generated.png)
 
 ### 테스트가 잘못된 렌디션을 생성하여 테스트 실패{#tests-generates-incorrect-rendition}
 
@@ -139,11 +139,11 @@ Asset compute 개발 도구는 오래된 데이터를 가져오는 상태로 들
 + __원인__: 의 버그 `@adobe/aio-cli-plugin-asset-compute` 1.3.x, 결과: `Ctrl-C` 종료 명령으로 인식되지 않습니다.
 + __해결 방법__: 업데이트 `@adobe/aio-cli-plugin-asset-compute` 대상 버전 1.4.1+
 
-   ```
-   $ aio update
-   ```
+  ```
+  $ aio update
+  ```
 
-   ![문제 해결 - aio 업데이트](./assets/troubleshooting/debug__terminate.png)
+  ![문제 해결 - aio 업데이트](./assets/troubleshooting/debug__terminate.png)
 
 ## 배포{#deploy}
 

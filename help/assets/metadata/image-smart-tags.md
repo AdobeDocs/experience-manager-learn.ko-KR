@@ -6,11 +6,12 @@ feature: Smart Tags
 role: User
 level: Intermediate
 version: 6.4, 6.5, Cloud Service
-kt: 645
+jira: KT-645
 thumbnail: 17019.jpg
 last-substantial-update: 2022-06-09T00:00:00Z
+doc-type: Feature Video
 exl-id: c72dc489-70e6-48ca-99a8-663d4c0652ba
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 8%
@@ -19,7 +20,7 @@ ht-degree: 8%
 
 # 이미지용 스마트 태그
 
-AEM Assets의 이미지용 스마트 태그는 이미지 에셋에 파생된 메타데이터 태그를 자동으로 추가하여 AEM Assets의 검색을 향상시킴으로써 올바른 이미지를 더 쉽고 빠르게 찾을 수 있도록 하여 작성 환경을 개선합니다.
+AEM Assets의 이미지용 스마트 태그는 이미지 에셋에 파생된 메타데이터 태그를 자동으로 추가하여 AEM Assets의 검색을 강화하므로 적합한 이미지를 더 쉽고 빠르게 찾을 수 있도록 하여 작성 경험이 향상됩니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17019?quality=12&learn=on)
 

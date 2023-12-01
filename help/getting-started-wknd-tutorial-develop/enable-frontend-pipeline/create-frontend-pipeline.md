@@ -2,17 +2,17 @@
 title: 프론트엔드 파이프라인을 사용하여 배포
 description: 프론트엔드 리소스를 빌드하고 AEMas a Cloud Service 로 기본 제공 CDN에 배포하는 프론트엔드 파이프라인을 만들고 실행하는 방법에 대해 알아봅니다.
 version: Cloud Service
-type: Tutorial
 feature: AEM Project Archetype, Cloud Manager, CI-CD Pipeline
 topic: Content Management, Development, Development, Architecture
 role: Developer, Architect, Admin
 level: Intermediate
-kt: 10689
+jira: KT-10689
 mini-toc-levels: 1
 index: y
 recommendations: noDisplay, noCatalog
+doc-type: Tutorial
 exl-id: d6da05e4-bd65-4625-b9a4-cad8eae3c9d7
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '701'
 ht-degree: 0%

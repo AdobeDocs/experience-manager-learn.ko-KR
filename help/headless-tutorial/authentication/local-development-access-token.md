@@ -2,19 +2,19 @@
 title: 로컬 개발 액세스 토큰
 description: AEM 로컬 개발 액세스 토큰은 HTTP를 통해 AEM Author 또는 Publish 서비스와 프로그래밍 방식으로 상호 작용하는 AEM as a Cloud Service과의 통합 개발을 가속화하는 데 사용됩니다.
 version: Cloud Service
-doc-type: tutorial
 topics: Development, Security
 feature: APIs
 activity: develop
 audience: developer
-kt: 6785
+jira: KT-6785
 thumbnail: 330477.jpg
 topic: Headless, Integrations
 role: Developer
 level: Intermediate, Experienced
 last-substantial-update: 2023-01-12T00:00:00Z
+doc-type: Tutorial
 exl-id: 197444cb-a68f-4d09-9120-7b6603e1f47d
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1067'
 ht-degree: 0%
@@ -31,7 +31,7 @@ AEMas a Cloud Service 에 프로그래밍 방식으로 액세스해야 하는 �
 
 ![로컬 개발 액세스 토큰 가져오기](assets/local-development-access-token/getting-a-local-development-access-token.png)
 
-로컬 개발 액세스 토큰은 토큰을 생성한 사용자로서 해당 권한과 함께 AEM 작성자 및 게시 서비스에 대한 액세스를 제공합니다. 개발 토큰임에도 불구하고 이 토큰을 공유하거나 소스 제어에 저장하지 마십시오.
+로컬 개발 액세스 토큰은 토큰을 생성한 사용자로 AEM Author 및 Publish 서비스에 대한 액세스와 함께 권한을 제공합니다. 개발 토큰임에도 불구하고 이 토큰을 공유하거나 소스 제어에 저장하지 마십시오.
 
 1. 위치 [Adobe Admin Console](https://adminconsole.adobe.com/) 개발자인 귀하가 다음 그룹의 구성원인지 확인합니다.
    + __Cloud Manager - 개발자__ IMS 제품 프로필(AEM 개발자 콘솔에 대한 액세스 권한 부여)

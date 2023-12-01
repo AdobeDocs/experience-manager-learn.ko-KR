@@ -2,16 +2,16 @@
 title: 사용자 지정 구성 요소
 description: 작성된 콘텐츠를 표시하는 사용자 지정 인라인 구성 요소의 전체 작성을 다룹니다. 비즈니스 논리를 캡슐화하는 슬링 모델 개발을 포함하여 바이라인 구성 요소를 채우고 해당 HTL을 구성 요소 렌더링에 추가합니다.
 version: 6.5, Cloud Service
-type: Tutorial
 feature: Core Components, APIs
 topic: Content Management, Development
 role: Developer
 level: Beginner
-kt: 4072
+jira: KT-4072
 mini-toc-levels: 1
 thumbnail: 30181.jpg
+doc-type: Tutorial
 exl-id: f54f3dc9-6ec6-4e55-9043-7a006840c905
-source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '4057'
 ht-degree: 0%
@@ -457,7 +457,7 @@ Byline Sling 모델은 AEM에서 제공하는 여러 Java™ API를 사용합니
 
    ![인라인 Impl 파일](assets/custom-component/byline-impl-file.png)
 
-1. 열기 `BylineImpl.java`. 다음을 구현하도록 지정 `Byline` 인터페이스. IDE의 자동 완성 기능을 사용하거나 구현에 필요한 메서드를 포함하도록 파일을 수동으로 업데이트하십시오. `Byline` 인터페이스:
+1. `BylineImpl.java`를 엽니다. 다음을 구현하도록 지정 `Byline` 인터페이스. IDE의 자동 완성 기능을 사용하거나 구현에 필요한 메서드를 포함하도록 파일을 수동으로 업데이트하십시오. `Byline` 인터페이스:
 
    ```java
    package com.adobe.aem.guides.wknd.core.models.impl;
@@ -641,7 +641,7 @@ public class BylineImpl implements Byline {
 
    >[!NOTE]
    >
-   >실제 구현에서 다음을 사용하여 &quot;One&quot;에 접근합니다. `@Self` 보다 간단하고 우아한 솔루션이므로 가 선호됩니다. 이 자습서에서는 두 번째 접근 방식을 사용합니다. 두 번째 접근 방식은 보다 복잡한 구성 요소로서 유용한 슬링 모델의 더 많은 측면을 탐색해야 합니다.
+   >실제 구현에서 다음을 사용하여 &quot;One&quot;에 접근합니다. `@Self` 보다 간단하고 우아한 솔루션이므로 가 선호됩니다. 이 자습서에서는 두 번째 접근 방식을 사용합니다. 두 번째 접근 방식은 보다 복잡한 구성 요소로서 유용한 Sling 모델의 더 많은 측면을 탐색해야 하기 때문입니다.
 
    Sling 모델은 OSGi 서비스가 아닌 Java™ POJO이므로 일반적인 OSGi 주입 주석은 `@Reference` **할 수 없음** 를 사용합니다. 대신 Sling 모델이 특별한 **[@OSGiService](https://sling.apache.org/documentation/bundles/models.html#injector-specific-annotations)** 유사한 기능을 제공하는 주석입니다.
 
@@ -922,7 +922,7 @@ HTL은 JSTL에서 가져오며 동일한 단축의 Java™ getter 메서드 이�
 
 ### 조건부로 자리 표시자 표시 {#conditionally-displaying-the-placeholder}
 
-AEM 구성 요소에 대한 대부분의 HTL 스크립트는 **자리 표시자 패러다임** 작성자에게 시각적 신호를 제공하려면 **구성 요소가 잘못 작성되고 AEM 게시에 표시되지 않음을 나타냄**. 이 결정을 유도하는 규칙은 이 경우 구성 요소의 지원 Sling 모델에 대해 메서드를 구현하는 것입니다. `Byline.isEmpty()`.
+AEM 구성 요소에 대한 대부분의 HTL 스크립트는 **자리 표시자 패러다임** 작성자에게 시각적 신호를 제공하려면 **구성 요소가 잘못 작성되고 AEM Publish에 표시되지 않음을 나타냄**. 이 결정을 유도하는 규칙은 이 경우 구성 요소의 지원 Sling 모델에 대해 메서드를 구현하는 것입니다. `Byline.isEmpty()`.
 
 다음 `isEmpty()` 메서드는 Byline Sling 모델 및 결과(또는 음수)를 통해 호출됩니다. `!` 연산자가 라는 HTL 변수에 저장됩니다. `hasContent`:
 
@@ -964,7 +964,7 @@ AEM 구성 요소에 대한 대부분의 HTL 스크립트는 **자리 표시자 
 
    이 `data-sly-resource`: 상대 경로를 통해 현재 리소스를 포함합니다. `'.'`, 그리고 의 리소스 유형으로 현재 리소스(또는 byline 콘텐츠 리소스)를 강제로 포함합니다. `core/wcm/components/image/v2/image`.
 
-   핵심 구성 요소 리소스 유형은 스크립트 내 사용이며 콘텐츠로 지속되지 않으므로 프록시를 통해서가 아니라 직접 사용됩니다.
+   핵심 구성 요소 리소스 유형은 스크립트 내 사용이며 콘텐츠로 지속되지 않으므로 프록시를 통하지 않고 직접 사용됩니다.
 
 2. 완료됨 `byline.html` 아래:
 
@@ -1008,7 +1008,7 @@ AEM 구성 요소에 대한 대부분의 HTL 스크립트는 **자리 표시자 
 
 ### 스타일이 지정되지 않은 Byline 구성 요소 검토 {#reviewing-the-unstyled-byline-component}
 
-1. 업데이트를 배포한 후 다음으로 이동합니다. [LA 스케이트보드장 최종 가이드 ](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html) 페이지 또는 이 장의 앞부분에서 바이라인 구성 요소를 추가한 위치입니다.
+1. 업데이트를 배포한 후 다음으로 이동합니다. [LA 스케이트보드장 최종 가이드](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html) 페이지 또는 이 장의 앞부분에서 바이라인 구성 요소를 추가한 위치입니다.
 
 1. 다음 **이미지**, **이름**, 및 **직업** 이제 가 나타나고 스타일이 지정되지 않았지만 작업 중인 Byline 구성 요소가 있습니다.
 

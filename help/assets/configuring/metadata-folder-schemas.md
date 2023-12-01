@@ -3,14 +3,15 @@ title: 메타데이터 폴더 스키마
 description: 메타데이터 폴더 스키마를 사용하면 에셋에서 직접 이뤄지는 것이 아니라 에셋 폴더 자체와 관련된 메타데이터를 관리하고 검토할 수 있습니다.
 feature: Metadata
 version: Cloud Service
-kt: 4983
+jira: KT-4983
 thumbnail: 34071.jpg
 topic: Content Management
 role: User
 level: Beginner
 last-substantial-update: 2021-09-19T00:00:00Z
+doc-type: Feature Video
 exl-id: 81e11e51-205d-4233-a10d-551d5041075c
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '46'
 ht-degree: 0%

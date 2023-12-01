@@ -1,12 +1,8 @@
 ---
 title: IMS를 사용하여 AEM Sites과 태그 속성 연결
 description: AEM에서 IMS 구성을 사용하여 AEM Sites을 태그 속성과 연결하는 방법에 대해 알아봅니다. 이 설정은 Launch API를 사용하여 AEM을 인증하고, AEM이 Launch API를 통해 통신하여 태그 속성에 액세스할 수 있도록 합니다.
-topics: integrations
-audience: administrator
 solution: Experience Manager, Data Collection, Experience Platform
-doc-type: technical video
-activity: setup
-kt: 5981
+jira: KT-5981
 thumbnail: 38555.jpg
 topic: Integrations
 feature: Integrations
@@ -14,8 +10,9 @@ role: Developer
 level: Intermediate
 badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
+doc-type: Tutorial
 exl-id: 92dbd185-bad4-4a4d-b979-0d8f5d47c54b
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 2%

@@ -7,14 +7,14 @@ version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
-kt: 5802
+jira: KT-5802
 thumbnail: KT-5802.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 last-substantial-update: 2022-08-15T00:00:00Z
 exl-id: 575b12f9-b57f-41f7-bd39-56d242de4747
-source-git-commit: d0b13fd37f1ed42042431246f755a913b56625ec
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 0%
@@ -93,7 +93,7 @@ asset compute 작업자 개발은 결과 에셋 렌디션의 생성을 생성하
 
 ### asset compute 개발 도구 사용
 
-asset compute 개발 도구는 작업자 생성 표현물을 배포, 실행 및 미리 보기하기 위한 로컬 웹 하네스를 제공하여 빠르고 반복적인 Asset compute 작업자 개발을 지원합니다.
+asset compute 개발 도구는 작업자 생성 표현물을 배포, 실행 및 미리 보기하기 위한 로컬 웹 도구를 제공하여 빠르고 반복적인 Asset compute 작업자 개발을 지원합니다.
 
 + [asset compute 개발 도구 사용](./develop/development-tool.md)
 
@@ -115,7 +115,7 @@ Asset compute 작업자는 기존 디버깅을 다양한 수준으로 제공합�
 
 ## 배포
 
-사용자 정의 Asset compute 작업자를 AEM에 배포한 다음 AEM Assets의 처리 프로필을 통해 AEM Author에서 호출하여 Adobe I/O RuntimeAEM as a Cloud Service 과 as a Cloud Service을 통합하는 방법을 알아봅니다.
+사용자 정의 Asset compute AEM 작업자를 Adobe I/O Runtime에 배포한 다음 AEM Assets의 처리 프로필을 통해 AEM as a Cloud Service Author에서 호출하여 as a Cloud Service으로 통합하는 방법을 알아봅니다.
 
 ### Adobe I/O Runtime에 배포
 

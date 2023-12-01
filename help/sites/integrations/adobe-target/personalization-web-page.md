@@ -2,10 +2,7 @@
 title: 전체 웹 페이지 경험의 개인화
 description: Adobe Target을 사용하여 AEM 웹 사이트 페이지를 새 페이지로 리디렉션하기 위한 Target 활동을 만드는 방법을 알아봅니다.
 topics: integrations, authoring, personalization, activity, offers
-audience: all
-doc-type: feature video
-version: Cloud Service
-kt: 6353
+jira: KT-6353
 thumbnail: 6353-personalization-web-page.jpg
 topic: Integrations
 feature: Integrations
@@ -13,8 +10,9 @@ role: Developer
 level: Intermediate
 badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
+doc-type: Tutorial
 exl-id: 2d201b48-c0fb-4bb4-a7d8-da9f4702e9ff
-source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '466'
 ht-degree: 1%

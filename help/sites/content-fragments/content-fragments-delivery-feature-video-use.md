@@ -4,18 +4,13 @@ seo-title: Delivering Content Fragments in Adobe Experience Manager
 description: 레이아웃과 관계없이 컨텐츠 조각을 핵심 구성 요소로 AEM Sites에서 직접 사용하거나 Headless 방식으로 다운스트림 채널에 전달할 수 있습니다.
 seo-description: Content Fragments, independent of layout, can be used directly in AEM Sites with Core Components or can be delivered in a headless manner to downstream channels.
 feature: Content Fragments
-topics: authoring, content-architecture
-audience: all
-doc-type: feature video
-activity: use
 version: 6.4, 6.5
-uuid: 045473d2-5abe-4414-b91c-d369f3069ead
-discoiquuid: 912e0c41-83cf-49f7-b515-09519b6718c1
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Feature Video
 exl-id: 525cd30c-05bf-4f17-b61b-90609ce757ea
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 7%
@@ -79,7 +74,7 @@ Headless 사용 사례에서 서드파티 채널을 지원하기 위해 콘텐�
 ## 추가 리소스 {#additional-resources}
 
 * [콘텐츠 조각 작성](content-fragments-feature-video-use.md)
-* [AEM WCM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)
+* [AEM WCM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [AEM WCM 핵심 콘텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
 
 비디오 시리즈에서 최종 상태에 대해 AEM 6.4+ 인스턴스에서 아래 패키지를 다운로드하여 설치하려면 다음을 수행하십시오.\

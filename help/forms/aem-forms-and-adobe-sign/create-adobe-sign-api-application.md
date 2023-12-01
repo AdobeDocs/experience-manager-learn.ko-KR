@@ -2,7 +2,7 @@
 title: Acrobat Sign API 애플리케이션 만들기
 description: Acrobat Sign API 애플리케이션을 사용하면 AEM Forms을 Acrobat Sign과 통합할 수 있습니다
 feature: Adaptive Forms,Acrobat Sign
-kt: 6032
+jira: KT-6032
 thumbnail: 38178.jpg
 topic: Development
 role: Admin
@@ -10,7 +10,7 @@ level: Beginner
 badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: 0fea826c-b481-4c8f-872f-e429430ed3a6
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '92'
 ht-degree: 3%

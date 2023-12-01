@@ -7,13 +7,13 @@ version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
-kt: 6286
+jira: KT-6286
 thumbnail: KT-6286.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 0327cf61-fd51-4fa7-856d-3febd49c01a0
-source-git-commit: eb6a7ef343a43000855f8d5cc69bde0fae81d3e6
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '645'
 ht-degree: 0%
@@ -74,7 +74,7 @@ asset compute 작업자가 클라우드 스토리지와 같은 다른 변수를 
 1. 배포할 대상 작업 영역에 대해 모든 환경 변수가 설정되면 deploy 명령을 실행합니다.
    + `aio app deploy`
 1. AEM as a Cloud Service 처리 프로필에서 참조하는 작업자 URL은 다음을 통해서도 사용할 수 있습니다.
-   + `aio app get-url`.
+   + `aio app get-url`
 
 asset compute 프로젝트 버전이 변경되면 새 버전을 반영하도록 작업자 URL도 변경되며, URL은 처리 프로필에서 업데이트해야 합니다.
 

@@ -7,13 +7,13 @@ version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
-kt: 6283
+jira: KT-6283
 thumbnail: 40241.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: cbe08570-e353-4daf-94d1-a91a8d63406d
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '535'
 ht-degree: 0%
@@ -64,19 +64,19 @@ _개발 도구에서 Asset compute 작업 실행 클릭스루(오디오 없음)_
    + 다른 키/값은 이 JSON 개체에 제공할 수 있으며, 아래 작업자에서 사용할 수 있습니다. `rendition.instructions` 오브젝트
       + 필요한 경우 값 추가 `size`, `contrast` 및 `brightness`:
 
-         ```json
-         {
-             "renditions": [
-                 {
-                     "worker": "...",
-                     "name": "rendition.png",
-                     "size":"800",
-                     "contrast": "0.30",
-                     "brightness": "-0.15"
-                 }
-             ]
-         }
-         ```
+        ```json
+        {
+            "renditions": [
+                {
+                    "worker": "...",
+                    "name": "rendition.png",
+                    "size":"800",
+                    "contrast": "0.30",
+                    "brightness": "-0.15"
+                }
+            ]
+        }
+        ```
 
 1. 탭 __실행__ 단추
 1. 다음 __렌디션 섹션__ 렌디션 자리 표시자로 채우기

@@ -2,18 +2,15 @@
 title: 사용자 지정 구성 요소 만들기 | AEM SPA 편집기 및 Angular 시작하기
 description: AEM SPA 편집기에 사용할 사용자 지정 구성 요소를 만드는 방법을 알아봅니다. 작성자 대화 상자 및 Sling 모델을 개발하여 JSON 모델을 확장하여 사용자 지정 구성 요소를 채우는 방법에 대해 알아봅니다.
 feature: SPA Editor
-doc-type: tutorial
-topics: development
 version: Cloud Service
-activity: develop
-audience: developer
-kt: 5831
+jira: KT-5831
 thumbnail: 5831-spa-angular.jpg
 topic: SPA
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: 6c1c7f2b-f574-458c-b744-b92419c46f23
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1471'
 ht-degree: 2%
@@ -236,6 +233,7 @@ SPA 편집기의 컨텍스트에서 슬링 모델은 를 사용하는 기능을 
    메시지 값을 대문자로 반환하기 위해 일부 &quot;비즈니스 논리&quot;가 추가됩니다. 이를 통해 작성자 대화 상자에 의해 저장된 원시 값과 슬링 모델에 의해 노출된 값 간의 차이를 볼 수 있습니다.
 
    >[!NOTE]
+   >
    다음을 볼 수 있습니다. [여기서 CustomComponentImpl.java를 완료했습니다.](https://github.com/adobe/aem-guides-wknd-spa/blob/Angular/custom-component-solution/core/src/main/java/com/adobe/aem/guides/wknd/spa/angular/core/models/impl/CustomComponentImpl.java).
 
 ## angular 구성 요소 업데이트

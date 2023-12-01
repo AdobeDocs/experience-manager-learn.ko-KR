@@ -3,14 +3,15 @@ title: 체크인 및 체크아웃
 description: AEM 체크인 및 체크아웃 기능을 사용하여 에셋에 대한 다중 사용자 공동 작업을 용이하게 하는 방법에 대해 알아봅니다.
 feature: Asset Management
 version: Cloud Service
-kt: 4542
+jira: KT-4542
 thumbnail: 32048.jpg
 topic: Collaboration
 role: User
 level: Beginner
 last-substantial-update: 2021-09-30T00:00:00Z
+doc-type: Feature Video
 exl-id: fe8794b6-3fa7-4268-8352-758882705587
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '44'
 ht-degree: 0%

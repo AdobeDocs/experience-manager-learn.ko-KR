@@ -8,8 +8,9 @@ role: Admin
 level: Experienced
 jira: KT-12305
 last-substantial-update: 2023-03-01T00:00:00Z
+doc-type: Tutorial
 exl-id: 460e9bfa-1b15-41b9-b8b7-58b2b1252576
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '782'
 ht-degree: 2%
@@ -42,9 +43,9 @@ Trust Store 암호를 기억하십시오. 이 암호는 나중에 이 프로세�
 * 다음으로 이동 [글로벌 Trust Store](http://localhost:4502/libs/granite/security/content/truststore.html).
 * &quot;CER 파일에서 인증서 추가&quot;를 클릭합니다. OKTA에서 제공한 IdP 인증서를 추가하고 제출 을 클릭합니다.
 
-   >[!NOTE]
-   >
-   >인증서를 사용자에게 매핑하지 마십시오.
+  >[!NOTE]
+  >
+  >인증서를 사용자에게 매핑하지 마십시오.
 
 인증서를 Trust Store에 추가하면 아래 스크린샷과 같이 인증서 별칭을 얻어야 합니다. 사용자의 경우 별칭 이름이 다를 수 있습니다.
 

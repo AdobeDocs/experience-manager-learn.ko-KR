@@ -7,12 +7,12 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
-kt: 10721
+jira: KT-10721
 thumbnail: KT-10721.jpg
 last-substantial-update: 2023-05-10T00:00:00Z
 badgeVersions: label="AEM 헤드리스 as a Cloud Service" before-title="false"
 exl-id: 4f67bb37-416a-49d9-9d7b-06c3573909ca
-source-git-commit: 29b9e4a23d8f4ae0494fc43f76f7449062364843
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '817'
 ht-degree: 1%
@@ -60,7 +60,7 @@ Next.js는에 연결하도록 설계되었습니다. __AEM 게시__ 서비스 �
    ...
    ```
 
-   AEM Author 서비스에 연결하는 경우 기본적으로 AEM Author 서비스가 안전하므로 인증을 제공해야 합니다.
+   AEM Author 서비스에 연결하는 경우 AEM Author 서비스는 기본적으로 안전하므로 인증을 제공해야 합니다.
 
    로컬 AEM 계정 세트를 사용하려면 `AEM_AUTH_METHOD=basic` 및 는에서 사용자 이름과 암호를 제공합니다. `AEM_AUTH_USER` 및 `AEM_AUTH_PASSWORD` 속성.
 

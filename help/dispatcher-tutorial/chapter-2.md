@@ -5,8 +5,9 @@ feature: Dispatcher
 topic: Architecture
 role: Architect
 level: Beginner
+doc-type: Tutorial
 exl-id: a25b6f74-3686-40a9-a148-4dcafeda032f
-source-git-commit: 4b47daf82e27f6bea4be30e3cdd132f497f4c609
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1864'
 ht-degree: 0%
@@ -25,9 +26,9 @@ ht-degree: 0%
 
 초기에는 잠재적 방문자의 수가 적고 하드웨어가 비싸며 웹 서버가 현재와 같이 비즈니스에 중요한 요인으로 간주되지 않았습니다. 일반적인 설정은 두 개 이상의 Publish 시스템 앞에 로드 밸런서 및 캐시 역할을 하는 Dispatcher를 하나 두는 것이었습니다. Dispatcher의 핵심에 있는 Apache 서버는 매우 안정적이었고 대부분의 설정에서 상당한 양의 요청을 처리할 수 있을 만큼 능력이 있었습니다.
 
-![&quot;레거시&quot; Dispatcher 설정 - 오늘날의 표준에서는 그다지 일반적이지 않음](assets/chapter-2/legacy-dispatcher-setup.png)
+![&quot;레거시&quot; Dispatcher 설정 - 현재 기준에서는 그다지 일반적이지 않음](assets/chapter-2/legacy-dispatcher-setup.png)
 
-*&quot;레거시&quot; Dispatcher 설정 - 오늘날의 표준에서는 그다지 일반적이지 않음*
+*&quot;레거시&quot; Dispatcher 설정 - 현재 기준에서는 그다지 일반적이지 않음*
 
 <br> 
 

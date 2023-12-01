@@ -5,8 +5,9 @@ feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: 5aa32791-861a-48e3-913c-36028373b788
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 6%
@@ -30,7 +31,7 @@ Headless CMS 시나리오에서, AEM을 사용하여 콘텐츠를 작성하고 �
 이 튜토리얼에서는 다음 주제를 다룹니다.
 
 * 콘텐츠 조각을 사용하여 이벤트를 나타내는 콘텐츠 만들기
-* 이벤트 데이터를 JSON으로 표시하는 AEM Sites의 템플릿 및 페이지를 사용하여 AEM Content Services 끝점을 정의합니다
+* 이벤트 데이터를 JSON으로 표시하는 AEM Sites 템플릿과 페이지를 사용하여 AEM Content Services 끝점을 정의합니다
 * AEM WCM 핵심 구성 요소를 사용하여 마케터가 JSON 끝점을 작성할 수 있는 방법을 살펴봅니다
 * 모바일 앱에서 AEM Content Services JSON 사용
    * Android를 사용하는 이유는 이 자습서의 모든 사용자(Windows, macOS 및 Linux)가 기본 앱을 실행하는 데 사용할 수 있는 교차 플랫폼 에뮬레이터가 있기 때문입니다.
@@ -43,7 +44,7 @@ Headless CMS 시나리오에서, AEM을 사용하여 콘텐츠를 작성하고 �
 
 ## AEM GraphQL과 AEM Content Services 비교
 
-|  | AEM GRAPHQL API | AEM Content Services |
+|                                | AEM GRAPHQL API | AEM Content Services |
 |--------------------------------|:-----------------|:---------------------|
 | 스키마 정의 | 구조화된 컨텐츠 조각 모델 | AEM 구성 요소 |
 | 콘텐츠 | 콘텐츠 조각 | AEM 구성 요소 |

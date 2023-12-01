@@ -2,19 +2,17 @@
 title: Target 호출 로드 및 실행
 description: Launch 규칙을 사용하여 매개 변수를 로드하고, 페이지 요청에 전달하며, 사이트 페이지에서 Target 호출을 실행하는 방법을 알아봅니다. 페이지 정보는 검색 및 매개 변수로 전달됩니다. Adobe 클라이언트 데이터 레이어를 사용하면 웹 페이지에서 방문자의 경험에 대한 데이터를 수집 및 저장한 다음 이 데이터에 쉽게 액세스할 수 있습니다.
 feature: Core Components, Adobe Client Data Layer
-topics: integrations, administration, development
-audience: administrator, developer
-doc-type: technical video
 version: Cloud Service
-kt: 6133
+jira: KT-6133
 thumbnail: 41243.jpg
 topic: Integrations
 role: Developer
 level: Intermediate
 badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
+doc-type: Tutorial
 exl-id: ec048414-2351-4e3d-b5f1-ade035c07897
-source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '613'
 ht-degree: 4%

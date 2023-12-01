@@ -2,15 +2,12 @@
 title: 스마트 이미징
 description: Dynamic Media Classic의 스마트 이미징은 클라이언트 브라우저 기능을 기반으로 이미지 형식 및 품질을 자동으로 최적화하여 이미지 전달 성능을 향상시킵니다. 이는 Adobe Sensei AI 기능을 활용하고 기존 이미지 사전 설정으로 작업을 수행함으로써 수행됩니다. 스마트 이미징과 이를 사용하여 더 빠른 페이지 로드를 통해 더 나은 고객 경험을 제공하는 방법에 대해 자세히 알아보십시오.
 feature: Dynamic Media Classic
-doc-type: tutorial
-topics: development, authoring, configuring, renditions, images
-audience: all
-activity: use
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Tutorial
 exl-id: 678671c3-af25-4da1-bc14-cbc4cc19be8d
-source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '687'
 ht-degree: 2%

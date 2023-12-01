@@ -6,10 +6,10 @@ topic: Headless
 feature: GraphQL API
 role: Developer
 level: Intermediate
-kt: 10269
+jira: KT-10269
 thumbnail: KT-10269.jpeg
 exl-id: 922a464a-2286-4132-9af8-f5a1fb5ce268
-source-git-commit: 31948793786a2c430533d433ae2b9df149ec5fc0
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 10%
@@ -46,7 +46,7 @@ $ npm i @adobe/aem-headless-client-js
 
 이 코드 예는 다음을 사용하여 AEM을 쿼리하는 방법을 보여 줍니다. [@adobe/aem-headless-client-js](https://github.com/adobe/aem-headless-client-js) 를 사용하는 npm 모듈 `async/await` 구문. JavaScript용 AEM Headless SDK는 [Promise 구문](https://github.com/adobe/aem-headless-client-js#use-aemheadless-client).
 
-이 코드는 라는 이름의 지속 쿼리를 가정합니다. `wknd/adventureNames` 이(가) AEM 작성자에 만들어져 AEM Publish에 게시되었습니다.
+이 코드는 라는 이름의 지속 쿼리를 가정합니다. `wknd/adventureNames` 이(가) AEM Author에서 만들어지고 AEM Publish에 게시되었습니다.
 
 ```javascript
 import AEMHeadless from '@adobe/aem-headless-client-js';

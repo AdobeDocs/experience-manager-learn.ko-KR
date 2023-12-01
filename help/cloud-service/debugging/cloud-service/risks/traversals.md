@@ -5,13 +5,13 @@ topics: Migration
 feature: Migration
 role: Architect, Developer
 level: Beginner
-kt: 10427
+jira: KT-10427
 hidefromtoc: true
 hide: true
 index: false
 thumbnail: kt-10427.jpg
 exl-id: 8fcc9364-b84c-4458-82e2-66b47429cd4b
-source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '829'
 ht-degree: 11%
@@ -25,7 +25,7 @@ ht-degree: 11%
 
 _순회 경고란 무엇입니까?_
 
-순회 경고는 다음과 같습니다 __aemerror__ aem Publish 서비스에서 성능이 낮은 쿼리가 실행되고 있음을 나타내는 log 문입니다. 순회 경고는 일반적으로 두 가지 방법으로 AEM에서 나타납니다.
+순회 경고는 다음과 같습니다 __aemerror__ AEM Publish 서비스에서 성능이 낮은 쿼리가 실행되고 있음을 나타내는 log 문입니다. 순회 경고는 일반적으로 두 가지 방법으로 AEM에서 나타납니다.
 
 1. __느린 쿼리__ 인덱스를 사용하지 않으므로 응답 시간이 느려집니다.
 1. __쿼리 실패__&#x200B;를 검색하는 경우 `RuntimeNodeTraversalException`을 호출하여 경험이 중단됩니다.
@@ -108,7 +108,7 @@ _순회 경고란 무엇입니까?_
 
 ## 1. 분석{#analyze}
 
-먼저 순회 경고를 표시하는 AEM 게시 서비스를 식별합니다. 이렇게 하려면 Cloud Manager에서 다음을 수행합니다. [게시 서비스 다운로드&#39; `aemerror` 로그](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html#cloud-manager){target="_blank"} 과거의 모든 환경(개발, 스테이지 및 프로덕션)에서 __3일__.
+먼저 순회 경고를 표시하는 AEM Publish 서비스를 식별합니다. 이렇게 하려면 Cloud Manager에서 다음을 수행합니다. [게시 서비스 다운로드&#39; `aemerror` 로그](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html#cloud-manager){target="_blank"} 과거의 모든 환경(개발, 스테이지 및 프로덕션)에서 __3일__.
 
 ![AEM as a Cloud Service 로그 다운로드](./assets/traversals/download-logs.jpg)
 
@@ -174,7 +174,7 @@ __AEM 색인 변경(또는 생성)__ 색인 업데이트를 통해 기존 쿼리
 
 ![쿼리 설명](./assets/traversals/verify.gif)
 
-If only [쿼리 조정](#adjust-the-query) 쿼리가 생성되면 개발자 콘솔의 을 통해 AEMas a Cloud Service 에서 직접 쿼리를 테스트할 수 있습니다. [쿼리 설명](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries){target="_blank"}. AEM Author 서비스에 대한 쿼리 실행 설명 그러나 색인 정의는 Author 및 Publish 서비스에서 동일하기 때문에 AEM Author 서비스에 대한 쿼리 유효성 검사로 충분합니다.
+If only [쿼리 조정](#adjust-the-query) 쿼리가 생성되면 개발자 콘솔의 을 통해 AEMas a Cloud Service 에서 직접 쿼리를 테스트할 수 있습니다. [쿼리 설명](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries){target="_blank"}. 그러나 AEM Author 서비스에 대한 쿼리 실행 설명 색인 정의는 Author 및 Publish 서비스에서 동일하기 때문에 AEM Author 서비스에 대한 쿼리 유효성 검사로 충분합니다.
 
 If [색인 조정](#adjust-the-index) AEM 이 작업을 수행하려면 as a Cloud Service으로 인덱스를 배포해야 합니다. 색인 조정이 배포되면 Developer Console이 [쿼리 설명](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries){target="_blank"} 를 사용하여 쿼리를 실행하고 추가로 조정할 수 있습니다.
 

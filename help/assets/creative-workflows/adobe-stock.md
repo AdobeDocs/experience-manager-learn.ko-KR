@@ -7,8 +7,9 @@ topic: Content Management
 role: User
 level: Beginner
 last-substantial-update: 2022-06-26T00:00:00Z
+doc-type: Feature Video
 exl-id: a3c3a01e-97a6-494f-b7a9-22057e91f4eb
-source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '975'
 ht-degree: 3%
@@ -92,9 +93,9 @@ AEM 6.4.2는 사용자가 AEM에서 직접 Adobe Stock 에셋을 검색, 미리�
 
 ![Adobe IMS 기술 계정](assets/screen_shot_2018-10-22at12219pm.png)
 
-#### Adobe Stock Cloud Services 설정 {#set-up-adobe-stock-cloud-services}
+#### Adobe Stock Cloud Service 설정 {#set-up-adobe-stock-cloud-services}
 
-1. 아래에서 Adobe Stock에 대한 새 클라우드 서비스 구성 만들기 **도구 > Cloud Services.**
+1. 아래에서 Adobe Stock에 대한 새 클라우드 서비스 구성 만들기 **도구 > Cloud Service.**
 2. 다음 항목 선택 *Adobe IMS 구성* 의 위 섹션에서 을(를) 만들었습니다. *Adobe Stock Cloud* 구성
 
 3. 다음을 선택하십시오. **환경** 프로덕션으로.
@@ -107,7 +108,7 @@ AEM 6.4.2는 사용자가 AEM에서 직접 Adobe Stock 에셋을 검색, 미리�
 ### 추가 리소스
 
 * [기업 주식 계획](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html)
-* [AEM 6.4 서비스 팩 2 릴리스 노트](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html)
+* [AEM 6.4 서비스 팩 2 릴리스 노트](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=ko-KR)
 * [AEM 및 Adobe Stock 통합](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/aem-assets-adobe-stock.html)
 * [Adobe I/O 콘솔 통합 API](https://www.adobe.io/apis/cloudplatform/console/authentication/gettingstarted.html)
 * [Adobe Stock API 문서](https://www.adobe.io/apis/creativecloud/stock/docs.html)

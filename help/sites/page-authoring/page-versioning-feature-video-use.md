@@ -1,19 +1,16 @@
 ---
 title: AEM 사이트 페이지에 대한 페이지 버전 생성
 description: 다음 비디오에서는 페이지 버전을 만들고, 미리 보고, 페이지 버전을 복원하고, 현재 페이지 버전을 저장된 페이지 버전과 비교하는 방법을 강조합니다.
-topics: authoring
-audience: author, marketer
-doc-type: feature video
-activity: use
 version: 6.4, 6.5, Cloud Service
-kt: 4630
+jira: KT-4630
 thumbnail: 32151.jpg
 topic: Content Management
 feature: Authoring
 role: User
 level: Beginner
+doc-type: Feature Video
 exl-id: cc659581-031d-4f2a-90c1-cf721e481689
-source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 5%

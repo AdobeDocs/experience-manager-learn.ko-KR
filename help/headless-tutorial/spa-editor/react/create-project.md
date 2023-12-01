@@ -3,13 +3,14 @@ title: 프로젝트 만들기 | AEM SPA 편집기 및 반응 시작하기
 description: AEM SPA 편집기와 통합된 React 애플리케이션의 시작점으로 Adobe Experience Manager(AEM) Maven 프로젝트를 생성하는 방법에 대해 알아봅니다.
 feature: SPA Editor, AEM Project Archetype
 version: Cloud Service
-kt: 413
+jira: KT-413
 thumbnail: 413-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: 57c8fc16-fed5-4af4-b98b-5c3f0350b240
-source-git-commit: c489a033f34aecaa0af10e3868c258feba6aaae6
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1063'
 ht-degree: 2%

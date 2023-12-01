@@ -3,12 +3,12 @@ title: 양식 제출 시 감사 메시지 표시
 description: onSubmitSuccess 핸들러를 사용하여 React 앱에 구성된 감사 메시지를 표시합니다.
 feature: Adaptive Forms
 version: 6.5
-kt: 13490
+jira: KT-13490
 topic: Development
 role: User
 level: Intermediate
 exl-id: 489970a6-1b05-4616-84e8-52b8c87edcda
-source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 0%

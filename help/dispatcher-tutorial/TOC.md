@@ -3,10 +3,10 @@ user-guide-title: AEM Dispatcher 캐시 튜토리얼
 user-guide-description: Dispatcher 작동 방식과 사용 방법을 이해하는 데 도움이 되는 튜토리얼입니다.
 sub-product: Experience Manager
 version: 6.4, 6.5
-kt: 2233
+jira: KT-2233
 index: y
 team: TM
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '36'
 ht-degree: 75%

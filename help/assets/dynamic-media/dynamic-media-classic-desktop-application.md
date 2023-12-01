@@ -3,13 +3,14 @@ title: Dynamic Media Classic 데스크탑 애플리케이션 사용
 description: Adobe은 더 이상 브라우저에서 Adobe Flash 기술에 의존하지 않는 Dynamic Media Classic 사용자를 위한 데스크탑 애플리케이션을 도입했습니다.
 feature: Dynamic Media Classic
 version: 6.5
-kt: 5808
+jira: KT-5808
 thumbnail: 36645.jpg
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Feature Video
 exl-id: 1600c0c0-0054-49ce-9b99-f8e6e29d6132
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 1%

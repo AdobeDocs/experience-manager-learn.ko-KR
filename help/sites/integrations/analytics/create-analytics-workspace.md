@@ -6,12 +6,13 @@ topic: Integrations
 feature: Adobe Client Data Layer
 role: User
 level: Intermediate
-kt: 6409
+jira: KT-6409
 thumbnail: KT-6296.jpg
+doc-type: Tutorial
 exl-id: b5722fe2-93bf-4b25-8e08-4cb8206771cb
 badgeIntegration: label="통합" type="positive"
 last-substantial-update: 2022-06-15T00:00:00Z
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2162'
 ht-degree: 0%
@@ -146,7 +147,7 @@ Analysis Workspace은 분석을 빌드하고 통찰력을 빠르게 공유할 �
 
    ![페이지 Dimension](assets/create-analytics-workspace/evar9-dimension.png)
 
-1. 드래그 앤 드롭 **CTA 클릭** (event8) 발생 횟수 지표에 기록하고 대체합니다. 이제 페이지의 페이지 이름(eVar9) 및 해당 CTA 클릭 이벤트 수를 표시하는 시각화를 볼 수 있습니다.
+1. 드래그 앤 드롭 **CTA 클릭** (event8) 발생 횟수 지표에 지정하고 대체합니다. 이제 페이지의 페이지 이름(eVar9) 및 해당 CTA 클릭 이벤트 수를 표시하는 시각화를 볼 수 있습니다.
 
    ![페이지 지표 - CTA 클릭](assets/create-analytics-workspace/evar8-cta-click.png)
 

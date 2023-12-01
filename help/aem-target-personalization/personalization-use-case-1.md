@@ -1,16 +1,15 @@
 ---
 title: AEM Experience Fragments 및 Adobe Target을 사용한 개인화
-seo-title: Personalization using Adobe Experience Manager (AEM) Experience Fragments and Adobe Target
 description: Adobe Experience Manager Experience Fragments 및 Adobe Target을 사용하여 개인화된 경험을 만들고 전달하는 방법을 보여주는 종단간 튜토리얼입니다.
-seo-description: An end-to-end tutorial showing how to create and deliver personalized experience using Adobe Experience Manager Experience Fragments and Adobe Target.
 feature: Experience Fragments
 topic: Personalization
 role: Developer
 level: Intermediate
 badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Sites 6.5" before-title="false"
+doc-type: Tutorial
 exl-id: 47446e2a-73d1-44ba-b233-fa1b7f16bc76
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1694'
 ht-degree: 1%
@@ -23,9 +22,9 @@ AEM Experience Fragments를 HTML 오퍼로서 Adobe Target으로 내보낼 수 �
 
 AEM은 모든 콘텐츠 및 에셋을 중앙 위치에 가져와서 개인화 전략을 실행합니다. AEM을 사용하면 코드를 작성하지 않고도 한 위치에서 데스크탑, 태블릿 및 모바일 장치의 콘텐츠를 쉽게 만들 수 있습니다. 모든 디바이스를 위해 페이지를 만들 필요가 없이, 컨텐츠를 사용하여 각 경험이 자동으로 조정됩니다. AEM
 
-Target을 사용하면 행동 변수, 컨텍스트 변수 및 오프라인 변수를 통합하는 규칙 기반 및 AI 기반 머신 러닝 접근 방식의 조합을 기반으로 다양한 규모로 개인화된 경험을 제공할 수 있습니다.  Target을 사용하면 A/B와 MVT(다변량) 활동을 쉽게 설정 및 실행하여 최상의 오퍼, 컨텐츠 및 경험을 결정할 수 있습니다.
+Target을 사용하면 행동 변수, 컨텍스트 변수 및 오프라인 변수를 통합하는 규칙 기반 및 AI 기반 머신 러닝 접근 방식의 조합을 기반으로 다양한 규모로 개인화된 경험을 제공할 수 있습니다.  Target을 사용하면 A/B와 MVT(다변량) 활동을 쉽게 설정 및 실행하여 최상의 오퍼, 콘텐츠 및 경험을 결정할 수 있습니다.
 
-경험 조각은 Target을 사용하여 비즈니스 결과를 이끄는 마케터와 콘텐츠 크리에이터를 연결하는 매우 큰 단계를 나타냅니다.
+경험 조각은 Target을 사용하여 비즈니스 결과를 이끄는 마케터와 콘텐츠 크리에이터를 연결하기 위한 매우 큰 단계를 나타냅니다.
 
 ## 시나리오 개요
 
@@ -59,7 +58,7 @@ WKND 사이트에서 다음을 발표할 예정입니다. **스케이트 페스�
       * **WKND SkateFest 페이지**: 오디션 장소, 날짜 및 시간을 포함한 이벤트 세부 정보가 포함된 새 페이지입니다.
 1. AEM 콘텐츠 편집기는 요구 사항을 기반으로 콘텐츠 블록에 대한 경험 조각을 만들어 Adobe Target에 오퍼로 내보냅니다. 미국의 모든 상태에 대해 개인화된 콘텐츠를 제공하기 위해 콘텐츠 작성자는 경험 조각 마스터 변형을 한 개 만든 다음 각 상태에 대해 한 개씩 50개의 다른 변형을 만들 수 있습니다. 관련 이미지 및 텍스트가 있는 각 상태 변형에 대한 콘텐츠는 수동으로 편집할 수 있습니다. 경험 조각을 작성할 때 콘텐츠 편집기는 에셋 파인더 옵션을 사용하여 AEM Assets 내에서 사용할 수 있는 모든 에셋에 빠르게 액세스할 수 있습니다. 경험 조각을 Adobe Target으로 내보내면 해당 변형도 모두 Adobe Target에 오퍼로 푸시됩니다.
 
-1. AEM에서 Adobe Target으로 경험 조각을 오퍼로 내보낸 후 마케터는 이러한 오퍼를 사용하여 Target에서 활동을 만들 수 있습니다. 마케터는 WKND site SkateFest 캠페인을 기반으로 각 상태의 WKND 사이트 방문자에게 개인화된 경험을 만들어 제공해야 합니다. 경험 타깃팅 활동을 만들려면 마케터는 대상을 식별해야 합니다. WKND SkateFest 캠페인의 경우 WKND 웹 사이트를 방문하는 위치에 따라 50개의 개별 대상을 만들어야 합니다.
+1. AEM에서 오퍼로 경험 조각을 Adobe Target으로 내보낸 후 마케터는 이러한 오퍼를 사용하여 Target에서 활동을 만들 수 있습니다. 마케터는 WKND site SkateFest 캠페인을 기반으로 각 상태의 WKND 사이트 방문자에게 개인화된 경험을 만들어 제공해야 합니다. 경험 타깃팅 활동을 만들려면 마케터는 대상을 식별해야 합니다. WKND SkateFest 캠페인의 경우 WKND 웹 사이트를 방문하는 위치에 따라 50개의 개별 대상을 만들어야 합니다.
    * [대상](https://experienceleague.adobe.com/docs/target/using/introduction/target-key-concepts.html#section_3F32DA46BDF947878DD79DBB97040D01) 활동에 대한 타겟을 정의하며 타깃팅을 사용할 수 있는 모든 곳에서 사용됩니다. Target 대상은 정의된 방문자 기준 세트입니다. 오퍼를 특정 대상(또는 세그먼트)에 타기팅할 수 있습니다. 해당 대상에 속하는 방문자에게만 이들을 타깃으로 하는 경험이 표시됩니다.  예를 들어 특정 브라우저나 특정 지리적 위치의 방문자로 구성된 대상에 오퍼를 전달할 수 있습니다.
    * An [오퍼](https://experienceleague.adobe.com/docs/target/using/introduction/target-key-concepts.html#section_973D4CC4CEB44711BBB9A21BF74B89E9) 는 캠페인이나 활동 중 웹 페이지에 표시되는 컨텐츠입니다. 웹 페이지를 테스트할 때 위치에 있는 서로 다른 오퍼를 사용하여 각 경험의 성공 여부를 측정합니다. 오퍼에는 다음을 비롯한 다양한 유형의 콘텐츠가 포함될 수 있습니다.
       * 이미지
@@ -164,7 +163,7 @@ WKND 사이트에서 다음을 발표할 예정입니다. **스케이트 페스�
 1. 클릭 **다음** 을 클릭하여 목표 및 설정으로 이동합니다.
 1. 보고 소스를 선택하고 활동에 대한 기본 목표를 식별합니다. 시나리오에서는 보고 소스를 다음과 같이 선택합니다. **Adobe Target**, 활동 측정 **전환**, 페이지를 본 작업 및 WKND SkateFest 세부 정보 페이지를 가리키는 URL입니다.
 
-   ![목표 및 타깃팅 - Target](assets/personalization-use-case-1/goal-metric-target.png)
+   ![목표 및 타깃팅 - 타겟](assets/personalization-use-case-1/goal-metric-target.png)
 
    >[!NOTE]
    >Adobe Analytics을 보고 소스로 선택할 수도 있습니다.
@@ -179,7 +178,7 @@ WKND 사이트에서 다음을 발표할 예정입니다. **스케이트 페스�
 
    ![활동 QA](assets/personalization-use-case-1/wknd-california.png)
 
-### Target 활동 QA
+### 타겟 활동 QA
 
 1. 아래 **활동 세부 정보 > 개요** 탭을 클릭하고 **활동 QA** 버튼을 클릭하면 모든 경험에 대한 직접 QA 링크를 가져올 수 있습니다.
 

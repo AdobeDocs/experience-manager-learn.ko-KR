@@ -3,16 +3,14 @@ title: 로컬 AEM 개발 환경 설정
 description: Experience Manager을 위한 로컬 개발 환경을 설정하는 방법에 대해 알아봅니다. 로컬 설치, Apache Maven, 통합 개발 환경, 디버깅 및 문제 해결에 대해 알아봅니다. Eclipse IDE, CRXDE-Lite, Visual Studio Code 및 IntelliJ를 사용합니다.
 version: 6.5
 feature: Developer Tools
-topics: development
-activity: develop
-audience: developer
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 58851624-71c9-4745-aaaf-305acf6ccb14
 last-substantial-update: 2022-07-20T00:00:00Z
+doc-type: Tutorial
 thumbnail: aem-local-dev-env.jpg
-source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2603'
 ht-degree: 1%

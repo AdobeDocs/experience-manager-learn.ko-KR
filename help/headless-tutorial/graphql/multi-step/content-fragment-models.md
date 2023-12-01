@@ -3,14 +3,14 @@ title: 콘텐츠 조각 모델 정의 - AEM Headless 시작하기 - GraphQL
 description: Adobe Experience Manager(AEM) 및 GraphQL을 시작합니다. AEM에서 콘텐츠 조각 모델을 사용하여 콘텐츠를 모델링하고 스키마를 구축하는 방법을 알아봅니다. 기존 모델을 검토하고 모델을 만듭니다. 스키마를 정의하는 데 사용할 수 있는 다양한 데이터 유형에 대해 알아봅니다.
 version: Cloud Service
 mini-toc-levels: 1
-kt: 6712
+jira: KT-6712
 thumbnail: 22452.jpg
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 9400d9f2-f828-4180-95a7-2ac7b74cd3c9
-source-git-commit: 25c289b093297e870c52028a759d05628d77f634
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1115'
 ht-degree: 4%

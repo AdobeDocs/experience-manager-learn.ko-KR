@@ -2,16 +2,16 @@
 title: 테마 설정 워크플로 | AEM 빠른 사이트 생성
 description: Adobe Experience Manager 사이트의 테마 소스를 업데이트하여 브랜드별 스타일을 적용하는 방법에 대해 알아봅니다. 프록시 서버를 사용하여 CSS 및 Javascript 업데이트의 실시간 미리 보기를 보는 방법에 대해 알아봅니다. 이 튜토리얼에서는 Adobe Cloud Manager의 프론트엔드 파이프라인을 사용하여 AEM 사이트에 테마 업데이트를 배포하는 방법에 대해서도 설명합니다.
 version: Cloud Service
-type: Tutorial
 feature: Core Components
 topic: Content Management, Development
 role: Developer
 level: Beginner
-kt: 7498
+jira: KT-7498
 thumbnail: KT-7498.jpg
+doc-type: Tutorial
 exl-id: 98946462-1536-45f9-94e2-9bc5d41902d4
 recommendations: noDisplay, noCatalog
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '479'
 ht-degree: 1%

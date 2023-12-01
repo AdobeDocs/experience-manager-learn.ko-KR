@@ -7,13 +7,13 @@ audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
-kt: 6891
+jira: KT-6891
 thumbnail: 6891.jpg
 topic: Development
 role: Developer
 level: Beginner
 exl-id: c6e0fb92-28c1-4025-85ef-b99bad46f07a
-source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '120'
 ht-degree: 2%
@@ -30,7 +30,7 @@ ht-degree: 2%
 [이 문서에 따라 적응형 양식 템플릿 및 페이지 구성 요소를 만드는 프로세스를 이해할 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/storing-and-retrieving-form-data/part5.html?lang=en#storing-and-retrieving-form-data)
 
 
-## Assets
+## 자산
 
 이 자습서에서 사용하는 템플릿과 페이지 구성 요소는 다음과 같을 수 있습니다. [여기에서 다운로드됨](assets/sign-multiple-forms-template.zip)
 

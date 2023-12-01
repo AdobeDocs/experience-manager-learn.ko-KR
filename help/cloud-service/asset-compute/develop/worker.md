@@ -7,13 +7,13 @@ version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
-kt: 6282
+jira: KT-6282
 thumbnail: KT-6282.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 7d51ec77-c785-4b89-b717-ff9060d8bda7
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1416'
 ht-degree: 0%
@@ -37,13 +37,13 @@ Asset compute 작업자는 Asset compute SDK 작업자 API 계약을 `renditionC
 
 ![Asset compute 작업자 논리 흐름](./assets/worker/logical-flow.png)
 
-1. AEM 작성자 서비스는 Asset compute 작업자를 호출하여 __(1a)__ 원본 이진 파일(`source` 매개 변수), 및 __(1b)__ 처리 프로필에 정의된 모든 매개 변수(`rendition.instructions` 매개 변수)를 참조하십시오.
+1. AEM Author 서비스는 Asset compute 작업자를 호출하여 __(1a)__ 원본 이진 파일(`source` 매개 변수), 및 __(1b)__ 처리 프로필에 정의된 모든 매개 변수(`rendition.instructions` 매개 변수)를 참조하십시오.
 1. asset compute SDK는 사용자 지정 Asset compute 메타데이터 작업자의 실행을 조정합니다. `renditionCallback(...)` 함수, 에셋의 원래 바이너리를 기반으로 새 바이너리 렌디션 생성 __(1a)__ 및 모든 매개 변수 __(1b)__.
 
    + 이 자습서에서는 렌디션이 &quot;처리 중&quot;으로 작성됩니다. 즉, 작업자가 렌디션을 작성하지만 소스 바이너리를 다른 웹 서비스 API로 전송하여 렌디션을 생성할 수도 있습니다.
 
 1. asset compute 작업자는 새 렌디션의 이진 데이터를 `rendition.path`.
-1. 에 기록된 이진 데이터 `rendition.path` 는 Asset compute SDK를 통해 AEM 작성자 서비스로 전송되고 __(4a)__ 텍스트 렌디션 및 __(4b)__ 에셋의 메타데이터 노드로 지속됨
+1. 에 기록된 이진 데이터 `rendition.path` 는 Asset compute SDK를 통해 AEM Author 서비스로 전송되고 로 노출됩니다. __(4a)__ 텍스트 렌디션 및 __(4b)__ 에셋의 메타데이터 노드로 지속됨
 
 위의 다이어그램은 Asset compute 개발자가 직면한 문제와 Asset compute 작업자 호출에 대한 논리적 흐름을 명확하게 설명합니다. 호기심을 가진 사람들에게는 [asset compute 실행의 내부 세부 정보](https://experienceleague.adobe.com/docs/asset-compute/using/extend/custom-application-internals.html) 는 사용할 수 있지만 공개 Asset compute SDK API 계약만 사용할 수 있습니다.
 

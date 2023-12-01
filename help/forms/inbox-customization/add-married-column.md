@@ -7,12 +7,12 @@ audience: developer
 doc-type: article
 activity: implement
 version: 6.5
-kt: 5830
+jira: KT-5830
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 0b141b37-6041-4f87-bd50-dade8c0fee7d
-source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '311'
 ht-degree: 0%
@@ -90,7 +90,7 @@ return isMarried(inboxItem);
 * [샘플 양식 가져오기](assets/snap-form.zip) 을(를) 선택하여 _파일 업로드_ 출처: _만들기_ 메뉴
 * [양식 미리 보기](http://localhost:4502/content/dam/formsanddocuments/snapform/jcr:content?wcmmode=disabled)
 * 다음 항목 선택 _결혼 상태_ 및 양식 제출
-   [받은 편지함 보기](http://localhost:4502/aem/inbox)
+  [받은 편지함 보기](http://localhost:4502/aem/inbox)
 
 양식을 제출하면 워크플로우가 트리거되고 작업이 &quot;관리자&quot; 사용자에게 할당됩니다. 이 스크린샷에 표시된 대로 기혼 열 아래에 값이 표시됩니다
 

@@ -1,21 +1,16 @@
 ---
 title: AEM Sites에서 스타일 시스템 사용
-seo-title: Using the Style System with Adobe Experience Manager, AEM Sites
 description: Adobe Experience Manager의 스타일 시스템을 사용하면 백엔드 개발 없이 시각적으로 다양한 구성 요소를 사용할 수 있으므로 AEM 구성 요소를 보다 잘 재사용할 수 있으며, 보다 다용적이고 효율적인 콘텐츠 작성이 가능합니다. 스타일 시스템을 AEM 핵심 구성 요소, 템플릿 편집기 및 반응형 레이아웃과 함께 사용하면 강력한 기능을 통해 다양한 경험을 빠르게 구성할 수 있습니다.
-seo-description: Adobe Experience Manager's Style System allows visual variations of components without back-end development, allowing better re-use of AEM components, and more versatile and efficient content authoring. The Style System, when used in conjunction with AEM's Core Components, template editor, and responsive layout, offers powerful capabilities to quickly compose rich experiences.
 feature: Style System
-topics: authoring, front-end-development
-audience: all
-doc-type: feature video
-activity: use
 version: Cloud Service
-kt: 974
+jira: KT-974
 thumbnail: 21750.jpg
 topic: Content Management
 role: User
 level: Intermediate
+doc-type: Feature Video
 exl-id: 12490c29-91f4-4bb7-b7b6-7ed7cd3fb76d
-source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 6%

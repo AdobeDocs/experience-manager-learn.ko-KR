@@ -2,16 +2,13 @@
 title: AEM Sites에서 언어 사본 사용
 description: AEM 언어 사본 만들기 마법사 사이트 번역 기능이 향상되어 사용자는 루트 페이지를 만들지 않고도 마스터 언어로 언어 사본을 만들 수 있습니다.
 feature: Language Copy
-topics: localization, authoring, content-architecture
-audience: all
-doc-type: feature video
-activity: use
 version: 6.4, 6.5
 topic: Localization
 role: User
 level: Beginner
+doc-type: Feature Video
 exl-id: 49613808-6369-4e43-bc26-fd3041265339
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 5%
@@ -20,7 +17,7 @@ ht-degree: 5%
 
 # 언어 사본 사용 {#using-language-copy}
 
-AEM 6.3 언어 사본 만들기 마법사 사이트 번역 개선 사항을 통해 사용자는 루트 페이지를 만들지 않고도 마스터 언어로 언어 사본을 만들 수 있습니다.
+AEM 6.3 언어 사본 만들기 마법사 사이트 번역 개선 사항을 사용하면 루트 페이지를 만들지 않고도 마스터 언어로 언어 사본을 만들 수 있습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17116?quality=12&learn=on)
 

@@ -2,17 +2,17 @@
 title: 프론트엔드 파이프라인을 사용하도록 전체 스택 AEM 프로젝트 업데이트
 description: 프론트엔드 아티팩트만 빌드하고 배포할 수 있도록 전체 스택 AEM 프로젝트를 업데이트하여 프론트엔드 파이프라인에 활성화하는 방법에 대해 알아봅니다.
 version: Cloud Service
-type: Tutorial
 feature: AEM Project Archetype, Cloud Manager, CI-CD Pipeline
 topic: Content Management, Development, Development, Architecture
 role: Developer, Architect, Admin
 level: Intermediate
-kt: 10689
+jira: KT-10689
 mini-toc-levels: 1
 index: y
 recommendations: noDisplay, noCatalog
+doc-type: Tutorial
 exl-id: c4a961fb-e440-4f78-b40d-e8049078b3c0
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '653'
 ht-degree: 0%

@@ -6,10 +6,10 @@ topic: Development
 role: Developer
 level: Beginner
 version: 6.4,6.5
-kt: 6899
+jira: KT-6899
 thumbnail: 6899.jpg
 exl-id: 2e851ae5-6caa-42e3-8af2-090766a6f36a
-source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 5%
@@ -38,7 +38,7 @@ Apache Sling 연결의 풀링된 데이터 소스를 만들고 아래 스크린�
 | JDBC 드라이버 클래스 | com.mysql.cj.jdbc.Driver |
 | JDBC 연결 URI | jdbc:mysql://localhost:3306/aemformstutorial |
 
-## Assets
+## 자산
 
 스키마를 생성할 SQL 파일은 다음과 같습니다. [여기에서 다운로드됨](assets/sign-multiple-forms.sql). 스키마와 테이블을 만들려면 MySql Workbench를 사용하여 이 파일을 가져와야 합니다.
 

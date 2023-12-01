@@ -1,19 +1,18 @@
 ---
 title: AEM Sites과 Adobe Target 통합
-seo-title: An article covering different ways to integrate Adobe Experience Manager (AEM) Sites with Adobe Target for delivering personalized content.
 description: 다양한 시나리오를 위해 Adobe Target과 함께 Adobe Experience Manager을 설정하는 방법을 다루는 문서입니다.
-seo-description: An article covering how to set up Adobe Experience Manager with Adobe Target for different scenarios.
 feature: Experience Fragments
 topic: Personalization
 role: Developer
 level: Intermediate
 badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Sites 6.5" before-title="false"
+doc-type: Tutorial
 exl-id: 54a30cd9-d94a-4de5-82a1-69ab2263980d
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '661'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
@@ -22,9 +21,9 @@ ht-degree: 4%
 이 섹션에서는 다양한 시나리오에 대해 Adobe Target을 사용하여 Adobe Experience Manager Sites을 설정하는 방법에 대해 설명합니다. 시나리오 및 조직 요구 사항 기반.
 
 * **Adobe Target JavaScript 라이브러리 추가(모든 시나리오에 필요)**
-AEM에 호스팅된 사이트의 경우 다음을 사용하여 사이트에 Target 라이브러리를 추가할 수 있습니다. [시작](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html). Launch는 관련 고객 환경을 향상하는 데 필요한 모든 태그를 배포하고 관리하는 간단한 방법을 제공합니다.
-* **Adobe Target Cloud Services 추가(경험 조각 시나리오에 필요)**
-경험 조각 오퍼를 사용하여 Adobe Target 내에서 활동을 만들려는 AEM 고객의 경우 이전 Cloud Services을 사용하여 Adobe Target을 AEM과 통합해야 합니다. 이 통합은 AEM에서 경험 조각을 HTML/JSON 오퍼로 Target에 푸시하고 오퍼를 AEM과 동기화 상태로 유지하는 데 필요합니다. *이 통합은 시나리오 1을 구현하는 데 필요합니다.*
+AEM에 호스팅된 사이트의 경우 다음을 사용하여 Target 라이브러리를 사이트에 추가할 수 있습니다. [시작](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html). Launch는 관련 고객 환경을 향상하는 데 필요한 모든 태그를 배포하고 관리하는 간단한 방법을 제공합니다.
+* **Adobe Target Cloud Service 추가(경험 조각 시나리오에 필요)**
+경험 조각 오퍼를 사용하여 Adobe Target 내에서 활동을 만들려는 AEM 고객의 경우 이전 Cloud Service을 사용하여 Adobe Target을 AEM과 통합해야 합니다. 이 통합은 AEM에서 Target으로 경험 조각을 HTML/JSON 오퍼로 푸시하고 오퍼를 AEM과 동기화 상태로 유지하는 데 필요합니다. *이 통합은 시나리오 1을 구현하는 데 필요합니다.*
 
 ## 사전 요구 사항
 
@@ -50,7 +49,7 @@ AEM에 호스팅된 사이트의 경우 다음을 사용하여 사이트에 Targ
 
 >[!NOTE]
 >
-> 고객은 의 Experience Platform Launch 및 Adobe I/O을 제공받아야 합니다. [Adobe 지원](https://helpx.adobe.com/contact/enterprise-support.ec.html) 또는 시스템 관리자에게 문의하십시오
+> 고객은 의 Experience Platform Launch 및 Adobe I/O을 제공받아야 합니다. [Adobe 지원](https://helpx.adobe.com/kr/contact/enterprise-support.ec.html) 또는 시스템 관리자에게 문의하십시오
 
 ### AEM 설정{#set-up-aem}
 
@@ -71,7 +70,7 @@ AEM에 호스팅된 사이트의 경우 다음을 사용하여 사이트에 Targ
 암호 : **admin**
    ![AEM 게시 인스턴스](assets/implementation/aem-author-home-page.png)
 7. 를 두 번 클릭합니다. `aem-publish-p4503.jar` 게시 인스턴스를 설치할 파일입니다. 브라우저에서 열린 게시 인스턴스의 새 탭이 포트 4503에서 실행되고 WeRetail 홈 페이지가 표시되는 것을 확인할 수 있습니다. 이 자습서에서는 WKND 참조 사이트를 사용하고 있으며 작성자 인스턴스에 패키지를 설치하겠습니다.
-8. 웹 브라우저 의 AEM 작성자로 이동합니다. `http://localhost:4502`. AEM 시작 화면에서 다음으로 이동합니다. *[도구 > 배포 > 패키지](http://localhost:4502/crx/packmgr/index.jsp)*.
+8. 웹 브라우저의 AEM 작성자로 이동합니다. `http://localhost:4502`. AEM 시작 화면에서 다음으로 이동합니다. *[도구 > 배포 > 패키지](http://localhost:4502/crx/packmgr/index.jsp)*.
 9. AEM용 패키지 다운로드 및 업로드 (위에 나열됨) *[사전 요구 사항 > AEM](#aem)*)
    * [aem-guides-wknd.ui.apps-0.0.1-SNAPSHOT.zip](https://github.com/adobe/aem-guides-wknd/releases/download/archetype-18.1/aem-guides-wknd.ui.apps-0.0.1-SNAPSHOT.zip)
    * [aem-guides-wknd.ui.content-0.0.1-SNAPSHOT.zip](https://github.com/adobe/aem-guides-wknd/releases/download/archetype-18.1/aem-guides-wknd.ui.content-0.0.1-SNAPSHOT.zip)
@@ -79,7 +78,7 @@ AEM에 호스팅된 사이트의 경우 다음을 사용하여 사이트에 Targ
    * [digital-data-layer.zip](assets/implementation/digital-data-layer.zip)
 
    >[!VIDEO](https://video.tv.adobe.com/v/28377?quality=12&learn=on)
-10. AEM 작성자에 패키지를 설치한 후 AEM 패키지 관리자에서 업로드된 각 패키지를 선택하고 을(를) 선택합니다 **자세히 > 복제** 패키지를 AEM 게시로 배포합니다.
+10. AEM Author에 패키지를 설치한 후 AEM Package Manager에서 업로드된 각 패키지를 선택하고 **자세히 > 복제** 패키지가 AEM Publish에 배포되도록 합니다.
 11. 이 시점에서 이 자습서에 필요한 WKND 참조 사이트 및 모든 추가 패키지를 정상적으로 설치했습니다.
 
 [다음 챕터](./using-launch-adobe-io.md): 다음 장에서는 Launch를 AEM과 통합합니다.
