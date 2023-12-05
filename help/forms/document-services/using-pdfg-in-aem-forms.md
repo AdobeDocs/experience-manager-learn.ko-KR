@@ -8,10 +8,11 @@ role: Developer
 level: Intermediate
 exl-id: bc79fcbf-b8b3-4d3a-9cd6-0bcd9321c7d5
 last-substantial-update: 2020-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 76
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 2%
+source-wordcount: '245'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +27,7 @@ PDFG는 PDF 생성을 나타냅니다. 즉, 다양한 파일 형식을 PDF 형�
 
 데모 자산을 설치하려면 다음 단계를 수행하십시오
 
-1. 이 문서에서 언급한 대로 PDFG 구성 [여기](https://helpx.adobe.com/kr/experience-manager/6-4/forms/using/install-configure-pdf-generator.html).
+1. 이 문서에서 언급한 대로 PDFG 구성 [여기](https://helpx.adobe.com/experience-manager/6-4/forms/using/install-configure-pdf-generator.html).
 1. AEM Forms 버전과 관련된 적절한 설명서를 따르십시오.
 1. [패키지 관리자를 사용하여 이 문서와 관련된 에셋을 가져오고 설치합니다.](assets/createpdfgdemov2.zip)
 1. [post.jsp로 이동](http://localhost:4502/apps/AemFormsSamples/components/createPDF/POST.jsp) CRX에서

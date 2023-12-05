@@ -9,10 +9,11 @@ topic: Security
 role: Developer
 level: Intermediate
 exl-id: 6009d9cf-8aeb-4092-9e8c-e2e6eec46435
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 336
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1052'
-ht-degree: 2%
+source-wordcount: '1011'
+ht-degree: 1%
 
 ---
 
@@ -60,7 +61,7 @@ CORS 구성은 AEM에서 OSGi 구성 팩토리로 관리되며 각 정책은 팩
 * `"alloworiginregexp" <regexp>`
 * 목록 `regexp` 리소스에 액세스할 수 있는 URI를 지정하는 정규 표현식. *정규 표현식은 신중하게 작성되지 않으면 의도하지 않은 일치로 이어질 수 있으므로 공격자가 정책과 일치하는 사용자 정의 도메인 이름을 사용할 수 있습니다.* 일반적으로 를 사용하여 각 특정 원본 호스트 이름에 대해 별도의 정책을 사용하는 것이 좋습니다. `alloworigin`를 조정할 경우 다른 정책 속성이 반복적으로 구성된 경우에도 마찬가지입니다. 서로 다른 기원은 서로 다른 수명 주기와 요구 사항을 갖는 경향이 있으므로 명확한 분리로부터 이익을 얻을 수 있다.
 
-#### [!UICONTROL 허용되는 경로]
+#### [!UICONTROL 허용된 경로]
 
 * `"allowedpaths" <regexp>`
 * 목록 `regexp` 정책이 적용되는 리소스 경로를 지정하는 정규 표현식.

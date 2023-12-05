@@ -9,10 +9,11 @@ level: Beginner
 last-substantial-update: 2022-06-15T00:00:00Z
 doc-type: Feature Video
 exl-id: 42f13a19-52bf-413d-a141-63f1f0910dce
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 2561
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1764'
-ht-degree: 3%
+source-wordcount: '1703'
+ht-degree: 0%
 
 ---
 
@@ -111,7 +112,7 @@ Dynamic Media 비디오 인코딩은 다음 위치에서 다운로드할 수 있
 Brand Portal URL의 접두사만 사용자 정의할 수 있으며 전체 URL은 사용자 정의할 수 없습니다.
 기존 도메인이 있는 조직 `wknd.brand-portal.adobe.com` 가져올 수 있음 `wkndinc.brand-portal.adobe.com` 이(가) 요청 시 만들어졌습니다.
 
-그러나 AEM 작성자 인스턴스는 다음과 같을 수 있습니다. [구성됨](https://helpx.adobe.com/kr/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html) 테넌트 ID URL을 사용하는 경우에만 해당하며 테넌트 별칭(대체) URL은 포함되지 않습니다.
+그러나 AEM 작성자 인스턴스는 다음과 같을 수 있습니다. [구성됨](https://helpx.adobe.com/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html) 테넌트 ID URL을 사용하는 경우에만 해당하며 테넌트 별칭(대체) URL은 포함되지 않습니다.
 
 **사용 사례** : 조직은 Adobe이 제공한 URL을 고수하는 대신 포털 URL을 사용자 지정하여 브랜딩 요구 사항을 충족할 수 있습니다.
 
@@ -158,7 +159,7 @@ Brand Portal 사용자는 Aspera 기반의 빠른 다운로드를 활용하여 �
 
 ### Adobe I/O 호스트 UI를 사용하여 oAuth 통합 구성
 
-Brand Portal에서 Adobe I/O 사용 [https://legacy-oauth.cloud.adobe.io/](https://legacy-oauth.cloud.adobe.io/) Brand Portal과 AEM Assets 통합을 허용하도록 oAuth 통합을 구성할 수 있는 JWT 애플리케이션을 만드는 인터페이스입니다. 이전에는 OAuth 통합 구성을 위한 UI가에서 호스팅되었습니다. `https://marketing.adobe.com/developer/`. Brand Portal에 자산 및 컬렉션을 게시하기 위해 AEM Assets과 Brand Portal을 통합하는 방법에 대한 자세한 내용은 다음을 참조하십시오. [Brand Portal과 AEM Assets 통합 구성](https://helpx.adobe.com/kr/experience-manager/6-4/assets/using/brand-portal-configuring-integration.html).
+Brand Portal에서 Adobe I/O 사용 [https://legacy-oauth.cloud.adobe.io/](https://legacy-oauth.cloud.adobe.io/) Brand Portal과 AEM Assets 통합을 허용하도록 oAuth 통합을 구성할 수 있는 JWT 애플리케이션을 만드는 인터페이스입니다. 이전에는 OAuth 통합 구성을 위한 UI가에서 호스팅되었습니다. `https://marketing.adobe.com/developer/`. Brand Portal에 자산 및 컬렉션을 게시하기 위해 AEM Assets과 Brand Portal을 통합하는 방법에 대한 자세한 내용은 다음을 참조하십시오. [Brand Portal과 AEM Assets 통합 구성](https://helpx.adobe.com/experience-manager/6-4/assets/using/brand-portal-configuring-integration.html).
 
 ## Brand Portal 2018년 2월 기능 및 개선 사항{#brand-portal-features-and-enhancements-632}
 
@@ -205,7 +206,7 @@ Brand Portal과 AEM의 정렬을 지향하는 향상된 기능을 제공합니�
 ## 추가 리소스{#additional-resources}
 
 * [Brand Portal의 새로운 기능](https://helpx.adobe.com/kr/experience-manager/brand-portal/using/whats-new.html)
-* [AEM 작성자 복제 에이전트](https://helpx.adobe.com/kr/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html)
+* [AEM 작성자 복제 에이전트](https://helpx.adobe.com/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html)
 * [가속화된 다운로드 안내서](https://helpx.adobe.com/experience-manager/brand-portal/using/accelerated-download.html#main-pars_header)
 * [AEM Assets Brand Portal Adobe 문서](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal.html)
 * [AEM Assets Dynamic Media Adobe 문서](https://experienceleague.adobe.com/docs/)

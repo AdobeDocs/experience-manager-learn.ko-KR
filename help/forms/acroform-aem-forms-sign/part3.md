@@ -1,18 +1,15 @@
 ---
 title: AEM Forms이 포함된 Acroforms
-seo-title: Merge Adaptive Form data with Acroform
 description: Acroforms와 AEM Forms 통합 자습서의 3부. 시스템에서 워크플로 및 적응형 양식을 테스트합니다.
 feature: adaptive-forms
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+doc-type: Tutorial
 version: 6.5
 badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+duration: 67
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '228'
 ht-degree: 1%
 
 ---

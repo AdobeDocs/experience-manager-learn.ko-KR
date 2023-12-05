@@ -1,14 +1,8 @@
 ---
 title: 외부 서버에 적응형 양식 제출
-seo-title: Submitting Adaptive Form to External Server
 description: 외부 서버에서 실행 중인 REST 끝점에 적응형 양식 제출
-seo-description: Submitting Adaptive Form to REST endpoint running on external server
-uuid: 1a46e206-6188-4096-816a-d59e9fb43263
 feature: Adaptive Forms
-topics: developing
-audience: implementer
 doc-type: article
-activity: setup
 version: 6.4,6.5
 discoiquuid: 9e936885-4e10-4c05-b572-b8da56fcac73
 topic: Development
@@ -16,22 +10,23 @@ role: Developer
 level: Beginner
 exl-id: 5363c3f7-9006-4430-b647-f3283a366a64
 last-substantial-update: 2020-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 109
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '346'
-ht-degree: 0%
+source-wordcount: '340'
+ht-degree: 12%
 
 ---
 
 # 외부 서버에 적응형 양식 제출 {#submitting-adaptive-form-to-external-server}
 
-REST 끝점에 제출 액션을 사용하여 제출된 데이터를 REST URL에 게시합니다. URL은 내부(양식이 렌더링되는 서버) 또는 외부 서버일 수 있습니다.
+REST 끝점에 제출 액션을 사용하여 제출된 데이터를 REST URL에 게시합니다. URL은 내부 서버(양식이 렌더링되는 서버) 또는 외부 서버일 수 있습니다.
 
 일반적으로 고객은 추가 처리를 위해 양식 데이터를 외부 서버에 제출하려고 합니다.
 
-데이터를 내부 서버에 게시하려면 리소스의 경로를 제공합니다. 데이터가 리소스의 경로에 게시됩니다. 예를 들어, &lt;/content restendpoint=&quot;&quot;> . 이러한 post 요청의 경우 제출 요청의 인증 정보가 사용됩니다.
+데이터를 내부 서버에 게시하려면 리소스의 경로를 제공합니다. 데이터는 리소스 경로에 게시됩니다. 예를 들어, &lt;/content restendpoint=&quot;&quot;> . 이러한 post 요청의 경우 제출 요청의 인증 정보가 사용됩니다.
 
-외부 서버에 데이터를 게시하려면 URL을 제공하십시오. URL 형식은 다음과 같습니다. <http://host:port/path_to_rest_end_point>. POST 요청을 익명으로 처리하도록 경로를 구성했는지 확인합니다.
+데이터를 외부 서버에 게시하려면 URL을 제공합니다. URL 형식은 <http://host:port/path_to_rest_end_point>입니다. POST 요청을 익명으로 처리하도록 경로를 구성했는지 확인합니다.
 
 이 문서에서는 tomcat 인스턴스에 배포할 수 있는 간단한 war 파일을 작성했습니다. tomcat이 포트 8080에서 실행 중인 경우 POST URL은 다음과 같습니다.
 

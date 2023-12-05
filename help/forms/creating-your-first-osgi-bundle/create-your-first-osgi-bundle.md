@@ -8,10 +8,11 @@ role: Developer
 level: Beginner
 exl-id: 307cc3b2-87e5-4429-8f21-5266cf03b78f
 last-substantial-update: 2021-04-23T00:00:00Z
-source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
+duration: 199
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '672'
-ht-degree: 1%
+source-wordcount: '665'
+ht-degree: 0%
 
 ---
 
@@ -83,7 +84,7 @@ mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate -D archety
 
 ![데이터 소스](assets/import-mvn-project.JPG)
 
-다음을 클릭합니다
+다음 을 클릭합니다
 
 다음을 클릭하여 c:\aemformsbundles\mysite를 선택합니다. **찾아보기** 단추
 
@@ -118,7 +119,7 @@ AEM Forms과 함께 제공되는 다양한 서비스를 이용하려면 프로�
 * 다음으로 이동 `c:\aemformsbundles\mysite\core`
 * 명령 실행 `mvn clean install -PautoInstallBundle`
 위의 명령은에서 실행 중인 AEM 서버에 번들을 빌드하고 설치합니다. `http://localhost:4502`. 번들은 다음 파일 시스템에서도 사용할 수 있습니다.
-   `C:\AEMFormsBundles\mysite\core\target` 및 를 사용하여 배포할 수 있습니다. [Felix 웹 콘솔](http://localhost:4502/system/console/bundles)
+  `C:\AEMFormsBundles\mysite\core\target` 및 를 사용하여 배포할 수 있습니다. [Felix 웹 콘솔](http://localhost:4502/system/console/bundles)
 
 ## 다음 단계
 

@@ -1,10 +1,7 @@
 ---
 title: 텍스트 편집기 사용자 지정
-seo-title: Customize text editor
 description: 텍스트 편집기를 사용자 지정하는 방법을 알아봅니다.
-seo-description: Learn how to customize text editor.
 doc-type: article
-activity: implement
 version: 6.5
 topic: Development
 role: Developer
@@ -13,9 +10,10 @@ feature: Interactive Communication
 last-substantial-update: 2023-04-19T00:00:00Z
 jira: KT-13126
 exl-id: e551ac8d-0bfc-4c94-b773-02ff9bba202e
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 193
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '596'
 ht-degree: 1%
 
 ---
@@ -61,7 +59,7 @@ tbxeditor-config.xml 파일을 편집하여 글꼴을 사용자 정의하려면 
 
       ![오버레이 노드](assets/overlay1.png)
 
-   1. **확인**&#x200B;을 클릭합니다. 폴더 구조는 앱 폴더에 생성됩니다.
+   1. 클릭 **확인**. 폴더 구조는 앱 폴더에 생성됩니다.
 
    1. **모두 저장**&#x200B;을 클릭합니다.
 

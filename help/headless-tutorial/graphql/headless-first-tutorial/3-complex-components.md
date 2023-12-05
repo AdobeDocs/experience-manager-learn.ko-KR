@@ -11,10 +11,11 @@ last-substantial-update: 2023-05-16T00:00:00Z
 jira: KT-13270
 thumbnail: KT-13270.jpeg
 exl-id: ad06b0f3-afa7-4661-aa66-0674d2e6bb43
-source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
+duration: 1162
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '590'
-ht-degree: 2%
+source-wordcount: '594'
+ht-degree: 1%
 
 ---
 
@@ -42,7 +43,7 @@ AEM(Adobe Experience Manager)의 컨텐츠 조각은 컨텐츠 관리에 대한 
 
 1. 이미지 목록은 다른 조각에 대한 참조를 포함하는 컨테이너 유형 조각이므로 편집기에서 직접 새 오퍼를 만들 수 있습니다.  포함 및 이미지 설명과 문서를 포함하는 오퍼 조각을 만듭니다.  아래에서 텍스트를 잘라내어 붙여넣을 수 있습니다.  카드의 제목으로 조각 제목을 사용하고 있습니다.
 
-   __기사1__
+   __제 1 조__
 
    _제목_
 
@@ -56,7 +57,7 @@ AEM(Adobe Experience Manager)의 컨텐츠 조각은 컨텐츠 관리에 대한 
    We traveled to Northern Norway to document the joy of surfing in extreme, but breathtakingly beautiful conditions.
    ```
 
-   _문서_
+   _기사_
 
    ```text
    Aloha Spirits in Northern Norway
@@ -95,7 +96,7 @@ AEM(Adobe Experience Manager)의 컨텐츠 조각은 컨텐츠 관리에 대한 
    A vibrant red, dusty highway stretches out before us into what seems like infinity, at the far reach of our sights it distorts and shimmers from the afternoon heat, fading into the blue of the horizon. For the past hour the image has stayed roughly the same, apart from the occasional road train flying by, its fifty meters of steel and rubber promptly asking us to give way before disappearing in our rear view mirrors.
    ```
 
-   _문서_
+   _기사_
 
    ```text
    Western Australia by Camper Van
@@ -138,7 +139,7 @@ AEM(Adobe Experience Manager)의 컨텐츠 조각은 컨텐츠 관리에 대한 
    My backpack feels heavier for every meter, slowly deforming my spine and wearing down my shoulders. My mouth tastes like blood, while salty pearls of sweat find their way to my eyes. I look back up, I'm not there yet, just a few hundred more steps, keep walking, keep counting, block out the pain.
    ```
 
-   _문서_
+   _기사_
 
    ```text
    Ski Touring
@@ -171,7 +172,7 @@ AEM(Adobe Experience Manager)의 컨텐츠 조각은 컨텐츠 관리에 대한 
    We traveled to Northern Norway to document the joy of surfing in extreme, but breathtakingly beautiful conditions.
    ```
 
-   _문서_
+   _기사_
 
    ```text
    San Diego Surf Spots

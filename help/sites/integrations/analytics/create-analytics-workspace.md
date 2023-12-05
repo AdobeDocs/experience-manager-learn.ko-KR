@@ -12,9 +12,10 @@ doc-type: Tutorial
 exl-id: b5722fe2-93bf-4b25-8e08-4cb8206771cb
 badgeIntegration: label="통합" type="positive"
 last-substantial-update: 2022-06-15T00:00:00Z
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 596
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '2162'
+source-wordcount: '2072'
 ht-degree: 0%
 
 ---
@@ -119,7 +120,7 @@ Analysis Workspace은 분석을 빌드하고 통찰력을 빠르게 공유할 �
 
 1. Analytics 도구 모음에서 를 선택합니다. **작업 영역** 클릭하여 **새 프로젝트 만들기**.
 
-   ![작업 공간](assets/create-analytics-workspace/create-workspace.png)
+   ![작업 영역](assets/create-analytics-workspace/create-workspace.png)
 
 1. 다음 항목에서 시작하도록 선택 **빈 프로젝트** 또는 Adobe에서 제공하는 사전 빌드된 템플릿 또는 조직에서 만든 사용자 지정 템플릿 중 하나를 선택합니다. 분석 또는 염두에 둔 사용 사례에 따라 여러 템플릿을 사용할 수 있습니다. [자세히 알아보기](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) 사용할 수 있는 다양한 템플릿 옵션 정보
 
@@ -153,19 +154,19 @@ Analysis Workspace은 분석을 빌드하고 통찰력을 빠르게 공유할 �
 
 1. 템플릿 유형별로 페이지를 분류해 보겠습니다. 구성 요소에서 페이지 템플릿 지표를 선택하고 페이지 템플릿 지표를 페이지 이름 차원으로 드래그 앤 드롭합니다. 이제 페이지 이름을 해당 템플릿 유형별로 분류하여 볼 수 있습니다.
 
-   * **이전**
-     ![eVar5](assets/create-analytics-workspace/evar5.png)
+   * **다음 이전**
+     ![EVAR 5](assets/create-analytics-workspace/evar5.png)
 
-   * **이후**
+   * **다음 이후**
      ![eVar5 지표](assets/create-analytics-workspace/evar5-metrics.png)
 
 1. 사용자가 WKND 사이트 페이지에 있을 때 CTA 버튼과 상호 작용하는 방법을 이해하려면 버튼 ID(eVar8) 지표를 추가하여 추가로 분류해야 합니다.
 
-   ![eVar8](assets/create-analytics-workspace/evar8.png)
+   ![eVar](assets/create-analytics-workspace/evar8.png)
 
 1. 아래에서는 WKND Site를 페이지 템플릿으로 분류하고 WKND Site CTA(클릭 투 액션) 버튼과의 사용자 상호 작용에 의해 추가로 분류된 시각적 표현을 볼 수 있습니다.
 
-   ![eVar8](assets/create-analytics-workspace/evar8-metric.png)
+   ![eVar](assets/create-analytics-workspace/evar8-metric.png)
 
 1. Adobe Analytics 분류를 사용하여 버튼 ID 값을 보다 친숙한 이름으로 바꿀 수 있습니다. 특정 지표에 대한 분류를 만드는 방법에 대해 자세히 알아볼 수 있습니다 [여기](https://experienceleague.adobe.com/docs/analytics/components/classifications/c-classifications.html). 이 경우 분류 지표가 있습니다 `Button Section (Button ID)` 다음에 대한 설정 `eVar8` 버튼 id를 사용자에게 친숙한 이름에 매핑합니다.
 
@@ -243,9 +244,9 @@ Analytics 분류는 Analytics 변수 데이터를 카테고리별로 분류한 �
 
 1. 구성 요소 파인더에서 **WKND CTA 단추** 을(를) 드래그 앤 드롭합니다. **WKND CTA 단추(단추 Id)** 차원을 단추 ID 지표에 추가하고 바꿉니다.
 
-   * **이전**
+   * **다음 이전**
      ![작업 영역 단추](assets/create-analytics-workspace/wknd-button-before.png)
-   * **이후**
+   * **다음 이후**
      ![다음 항목 뒤에 있는 작업 영역 단추](assets/create-analytics-workspace/wknd-button-after.png)
 
 1. 이제 CTA(콜 투 액션) 버튼의 버튼 ID가 포함된 버튼 ID 지표가 분류 템플릿에 제공된 해당 이름으로 대체되었음을 알 수 있습니다.

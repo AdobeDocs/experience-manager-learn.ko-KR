@@ -2,20 +2,18 @@
 title: 데이터를 병합하여 인쇄 채널 문서 생성
 description: 입력 스트림에 포함된 데이터를 병합하여 인쇄 채널 문서를 생성하는 방법을 알아봅니다
 feature: Interactive Communication
-topics: development
-audience: developer
 doc-type: article
-activity: implement
 version: 6.4,6.5
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: 3bfbb4ef-0c51-445a-8d7b-43543a5fa191
 last-substantial-update: 2019-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 223
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 1%
+source-wordcount: '445'
+ht-degree: 0%
 
 ---
 
@@ -179,7 +177,7 @@ String params = arg2.get("PROCESS_ARGS","string").toString();
 
 * [ChangeOfBeneficialForm 열기](http://localhost:4502/content/dam/formsanddocuments/changebeneficiary/jcr:content?wcmmode=disabled)
 * 적응형 양식이 아래와 같이 AEM Workflow에 제출되도록 구성되었는지 확인하십시오
-   ![이미지](assets/generateic.PNG)
+  ![이미지](assets/generateic.PNG)
 * [워크플로우 모델을 구성합니다.](http://localhost:4502/editor.html/conf/global/settings/workflow/models/ChangesToBeneficiary.html)프로세스 단계 및 이메일 구성 요소 보내기가 환경에 따라 구성되어 있는지 확인합니다.
 * [ChangeOfBenefitForm을 미리 봅니다.](http://localhost:4502/content/dam/formsanddocuments/changebeneficiary/jcr:content?wcmmode=disabled) 일부 세부 정보를 입력하고 제출
 * 워크플로우가 호출되고 IC 인쇄 채널 문서가 첨부 파일로 이메일 구성 요소에 지정된 수신자에게 전송됩니다

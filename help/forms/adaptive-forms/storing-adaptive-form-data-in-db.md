@@ -8,10 +8,11 @@ role: Developer
 level: Experienced
 exl-id: 3dd552da-fc7c-4fc7-97ec-f20b6cc33df0
 last-substantial-update: 2020-03-20T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 224
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '414'
-ht-degree: 2%
+source-wordcount: '382'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +40,7 @@ ht-degree: 2%
    * FormName - 양식 이름을 포함하는 열 이름
    * ColumnName - AF 데이터를 보관할 열 이름
 
-   ![데이터베이스 세부 정보 OSGi 구성 지정](assets/specify-database-details.png)
+  ![데이터베이스 세부 정보 OSGi 구성 지정](assets/specify-database-details.png)
 
 
 

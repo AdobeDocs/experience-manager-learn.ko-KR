@@ -9,10 +9,11 @@ version: Cloud Service
 topic: Integrations
 jira: KT-13717
 exl-id: 7469aa7f-1794-40dd-990c-af5d45e85223
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 105
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
 source-wordcount: '273'
-ht-degree: 10%
+ht-degree: 8%
 
 ---
 
@@ -26,12 +27,12 @@ ht-degree: 10%
 ![page-component](./assets/page-component1.png)
 
 1. 페이지 폴더를 마우스 오른쪽 단추로 클릭하고 cq:Component 유형의 storeandfetch라는 노드를 만듭니다.
-1. 변경 사항을 저장합니다
+1. 변경 내용 저장
 1. 에 다음 속성을 추가합니다 `storeandfetch` 노드 및 저장
 
 | **속성 이름** | **속성 유형** | **속성 값** |
 |-------------------------|-------------------|----------------------------------------|
-| componentGroup | 문자열 | 숨김 |
+| 구성 요소 그룹 | 문자열 | 숨김 |
 | jcr:description | 문자열 | 적응형 양식 템플릿 페이지 유형 |
 | jcr:title | 문자열 | 적응형 양식 템플릿 페이지 |
 | sling:resourceSuperType | 문자열 | `fd/af/components/page2/aftemplatedpage` |

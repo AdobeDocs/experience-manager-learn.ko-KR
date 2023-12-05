@@ -1,14 +1,8 @@
 ---
 title: Forms Designer를 사용하여 레이아웃 만들기
-seo-title: Create Layout using Forms Designer
 description: 다음은 인쇄 채널용 첫 번째 대화형 통신 문서를 만들기 위한 다중 파트 자습서 4부입니다.이 부분에서는 AEM Forms Designer를 사용하여 만든 레이아웃 파일을 살펴봅니다.
-seo-description: This is part 4 of multipart tutorial for creating your first interactive communication document for the print channel.In this part, we look at the layout file created using AEM Forms Designer.
-uuid: 2f014c58-1ae1-40e8-a45d-7ffe9c86f693
 feature: Interactive Communication
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+doc-type: Tutorial
 version: 6.4,6.5
 discoiquuid: 17f4cdbb-079b-4fe3-861d-cfa0c03d30dd
 jira: KT-5957
@@ -17,9 +11,10 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 1bda648c-01be-44f1-aa73-3f5e7365d094
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 156
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '131'
+source-wordcount: '132'
 ht-degree: 1%
 
 ---

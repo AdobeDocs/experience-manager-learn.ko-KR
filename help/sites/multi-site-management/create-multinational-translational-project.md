@@ -1,8 +1,6 @@
 ---
 title: 다국어 번역 프로젝트 만들기
-seo-title: Create a multilingual Translation Project
 description: AEM Project 콘솔에서 언어 사본 의 다국어 번역 프로젝트를 만들어 편집 및 관리하는 방법을 알아봅니다
-seo-description: Learn how to create, edit and manage a multi-language translation project for your Language Copy from AEM's Project console
 feature: Language Copy, Multi Site Manager
 doc-type: Feature Video
 version: 6.4, 6.5, Cloud Service
@@ -12,7 +10,8 @@ topic: Localization
 role: User
 level: Beginner
 exl-id: eab14e1a-a3d9-420f-8b5c-5d37f30c79b1
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 354
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
 source-wordcount: '48'
 ht-degree: 0%

@@ -9,10 +9,11 @@ role: User
 level: Beginner
 doc-type: Article
 exl-id: ccbc68d1-a83e-4092-9a49-53c56c14483e
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 242
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1044'
-ht-degree: 5%
+source-wordcount: '829'
+ht-degree: 2%
 
 ---
 
@@ -109,7 +110,7 @@ Adobe Experience Manager의 콘텐츠 조각 및 경험 조각 은 표면적으�
 <td><ul>
 <li>AEM Sites, AEM Screens 또는 기타 경험 조각에서 사용할 AEM 경험 조각 구성 요소입니다.</li>
 <li>다음으로 내보내기 <a href="https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html?lang=en" target="_blank">일반 HTML</a> 서드파티 시스템에서 사용</li>
-<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/experience-fragments-target.html?lang=ko" target="_blank">Adobe Target으로 HTML 내보내기</a> 타겟팅된 오퍼의 경우</li>
+<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/experience-fragments-target.html?lang=en" target="_blank">Adobe Target으로 HTML 내보내기</a> 타겟팅된 오퍼의 경우</li>
 <li>타깃팅된 오퍼를 위해 Adobe Target으로 JSON 내보내기</li>
 </ul>
 </td>

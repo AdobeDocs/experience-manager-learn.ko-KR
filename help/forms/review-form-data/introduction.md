@@ -2,25 +2,24 @@
 title: 제출하기 전에 양식 데이터 검토
 description: 제출 전 양식 데이터 검토를 위한 요약 구성 요소 생성 자습서.
 feature: Adaptive Forms
-topics: development
-doc-type: tutorial
-activity: implement
+doc-type: Tutorial
 version: 6.4,6.5
 topic: Development
 role: Developer
 level: Experienced
 last-substantial-update: 2023-01-22T00:00:00Z
 exl-id: fa971850-0e89-4f74-a747-ec99051be2f1
-source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
+duration: 31
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '91'
+source-wordcount: '92'
 ht-degree: 2%
 
 ---
 
 # 제출 전 양식 데이터 검토
 
-여러 부분으로 구성된 튜토리얼을 통해 양식을 제출하기 전에 양식 데이터를 검토하고 편집하기 위한 요약 구성 요소를 만드는 단계를 안내합니다.
+여러 부분으로 구성된 튜토리얼을 통해 양식을 제출하기 전에 양식 데이터를 검토하고 편집하기 위한 요약 구성 요소를 만드는 단계를 살펴볼 수 있습니다.
 
 ![review-form-data](assets/review-form-data.png)
 

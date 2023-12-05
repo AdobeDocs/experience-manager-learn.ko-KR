@@ -7,9 +7,10 @@ role: User
 level: Beginner
 doc-type: Tutorial
 exl-id: 975b85af-ca6a-419e-ab2a-6e1781bfee4a
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 221
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '873'
 ht-degree: 0%
 
 ---
@@ -39,7 +40,7 @@ Dynamic Media Classic은 고객이 리치 미디어 콘텐츠를 제작, 작성 
 
 - **Dynamic Imaging.** 실시간 편집, 서식 지정 및 크기 조정, 대화형 확대/축소 및 팬, 색상 및 텍스처 관찰, 360도 회전, 이미지 템플릿 및 멀티미디어 뷰어에 대한 포괄적인 용어입니다.
 - **비디오.** 최종 비디오를 업로드하고 게시한 다음 점진적으로 구성 가능한 비디오 뷰어에 다운로드합니다.
-- **스마트 이미징.** Adobe Sensei AI 기능을 활용하고 기존 &quot;이미지 사전 설정&quot;과 함께 작동하는 기술로 클라이언트 브라우저 기능을 기반으로 이미지 형식, 크기 및 품질을 자동으로 최적화하여 이미지 제공 성능을 향상시킵니다.
+- **스마트 이미징** Adobe Sensei AI 기능을 활용하고 기존 &quot;이미지 사전 설정&quot;과 함께 작동하는 기술로 클라이언트 브라우저 기능을 기반으로 이미지 형식, 크기 및 품질을 자동으로 최적화하여 이미지 제공 성능을 향상시킵니다.
 
 솔루션의 추가 기능을 알아보려면 [Dynamic Media Classic 설명서](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/introduction.html).
 

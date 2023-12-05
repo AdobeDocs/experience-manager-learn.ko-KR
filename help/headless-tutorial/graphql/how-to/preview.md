@@ -11,23 +11,24 @@ last-substantial-update: 2023-03-17T00:00:00Z
 jira: KT-10841
 thumbnail: 3416906.jpeg
 exl-id: 247d40a3-ff67-4c1f-86bf-3794d7ce3e32
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+duration: 532
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '507'
 ht-degree: 0%
 
 ---
 
 # 콘텐츠 조각 미리보기
 
-AEM Headless 애플리케이션은 통합 작성 미리보기를 지원합니다. 미리보기 경험은 AEM 작성자의 콘텐츠 조각 편집기를 사용자 지정 앱(HTTP를 통해 주소 지정 가능)에 연결하므로 미리보고 있는 콘텐츠 조각을 렌더링하는 앱에 대한 딥 링크를 사용할 수 있습니다.
+AEM Headless 애플리케이션은 통합 작성 미리보기를 지원합니다. 미리보기 경험은 AEM 작성자의 콘텐츠 조각 편집기를 사용자 정의 앱(HTTP를 통해 주소 지정 가능)과 연결하므로 미리보고 있는 콘텐츠 조각을 렌더링하는 앱에 대한 딥 링크를 사용할 수 있습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3416906?quality=12&learn=on)
 
 콘텐츠 조각 미리보기를 사용하려면 다음 몇 가지 조건을 충족해야 합니다.
 
 1. 작성자가 액세스할 수 있는 URL에 앱을 배포해야 합니다.
-1. AEM 게시 서비스가 아닌 AEM 작성자 서비스에 연결하도록 앱을 구성해야 합니다.
+1. AEM Publish 서비스가 아닌 AEM Author 서비스에 연결하도록 앱을 구성해야 합니다.
 1. 앱을 사용할 수 있는 URL 또는 경로로 디자인해야 합니다. [컨텐츠 조각 경로 또는 ID](#url-expressions) 을 클릭하여 앱 경험에서 미리 보기 위해 표시할 콘텐츠 조각을 선택합니다.
 
 ## URL 미리보기
@@ -36,7 +37,7 @@ AEM Headless 애플리케이션은 통합 작성 미리보기를 지원합니다
 
 ![콘텐츠 조각 모델 미리 보기 URL](./assets/preview/cf-model-preview-url.png)
 
-1. AEM 작성자 서비스에 관리자로 로그인
+1. 관리자로 AEM Author 서비스에 로그인합니다
 1. 다음으로 이동 __도구 > 일반 > 콘텐츠 조각 모델__
 1. 다음 항목 선택 __콘텐츠 조각 모델__ 및 선택 __속성__ 맨 위의 작업 표시줄을 구성합니다.
 1. 다음을 사용하여 콘텐츠 조각 모델의 미리보기 URL 입력 [URL 표현식](#url-expressions)
@@ -46,7 +47,7 @@ AEM Headless 애플리케이션은 통합 작성 미리보기를 지원합니다
 
 각 콘텐츠 조각 모델에는 미리보기 URL이 설정될 수 있습니다. 미리보기 URL은 아래 표에 나열된 URL 표현식을 사용하여 콘텐츠 조각별로 매개 변수화할 수 있습니다. 여러 URL 표현식을 단일 미리보기 URL에 사용할 수 있습니다.
 
-|  | URL 표현식 | 값 |
+|                                         | URL 표현식 | 값 |
 | --------------------------------------- | ----------------------------------- | ----------- |
 | 컨텐츠 조각 경로 | `${contentFragment.path}` | `/content/dam/wknd-shared/en/adventures/surf-camp-bali/surf-camp-bali` |
 | 컨텐츠 조각 ID | `${contentFragment.id}` | `12c34567-8901-2aa3-45b6-d7890aa1c23c` |

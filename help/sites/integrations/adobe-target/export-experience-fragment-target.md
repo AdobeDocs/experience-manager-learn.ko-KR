@@ -1,5 +1,5 @@
 ---
-title: Adobe Target으로 경험 구성요소를 내보냅니다
+title: Adobe Target으로 경험 조각 내보내기
 description: AEM 경험 조각을 Adobe Target 오퍼로 게시하고 내보내는 방법을 알아봅니다.
 feature: Experience Fragments
 version: Cloud Service
@@ -12,10 +12,11 @@ badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 doc-type: Tutorial
 exl-id: 2c01cda8-f72f-47f7-a36b-95afd241906e
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 237
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '196'
-ht-degree: 7%
+source-wordcount: '186'
+ht-degree: 3%
 
 ---
 
@@ -43,7 +44,7 @@ Adobe Admin Console에서 올바른 권한 없이 경험 조각을 Adobe Target�
 
 ![Target API 콘솔 오류](assets/target-console-error.png)
 
-#### 해결
+#### 해결 방법
 
 1. 다음으로 로그인 [Admin Console](https://adminconsole.adobe.com/) Adobe Target 제품 프로필에 대한 관리 권한이 사용되지만 AEM 통합이 있는 경우
 2. 선택 __제품 > Adobe Target > 제품 프로필__

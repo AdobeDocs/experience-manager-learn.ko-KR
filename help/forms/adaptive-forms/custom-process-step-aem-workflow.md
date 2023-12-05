@@ -8,9 +8,10 @@ role: Developer
 level: Experienced
 exl-id: 879518db-3f05-4447-86e8-5802537584e5
 last-substantial-update: 2021-06-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 272
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '813'
+source-wordcount: '769'
 ht-degree: 0%
 
 ---
@@ -154,7 +155,7 @@ QueryBuilder 서비스는 attachmentsPath 폴더 아래에서 nt:file 유형의 
 
 필요한 프로세스 인수를 쉼표로 구분하여 입력합니다. 예: 첨부 파일, c:\\scrap\\. 첫 번째 인수는 적응형 양식 첨부 파일이 워크플로우 페이로드를 기준으로 저장될 때의 폴더입니다. 이 값은 적응형 양식의 제출 액션을 구성할 때 지정한 값과 동일해야 합니다. 두 번째 인수는 첨부 파일을 저장할 위치입니다.
 
-적응형 양식 만들기. 첨부 파일 구성 요소를 양식으로 끌어서 놓습니다. 이전 단계에서 만든 워크플로우를 호출하도록 양식의 제출 액션을 구성합니다. 적절한 첨부 파일 경로를 제공하십시오.
+적응형 양식을 만듭니다. 첨부 파일 구성 요소를 양식으로 끌어서 놓습니다. 이전 단계에서 만든 워크플로우를 호출하도록 양식의 제출 액션을 구성합니다. 적절한 첨부 파일 경로를 제공하십시오.
 
 설정을 저장합니다.
 

@@ -8,10 +8,11 @@ role: Developer
 level: Intermediate
 doc-type: Feature Video
 exl-id: a733532b-db64-43f6-bc43-f7d422d5071a
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 343
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '319'
-ht-degree: 17%
+source-wordcount: '337'
+ht-degree: 11%
 
 ---
 
@@ -104,7 +105,7 @@ ht-degree: 17%
 | JapanColorUncoating | CMYK | Japan Color 2001 무코팅 |
 | JapanColorWebCoating | CMYK | Japan Color 2003 웹 코팅 |
 | JapanWebCoated | CMYK | Japan Web Coated (Ad) |
-| NewsprintSNAP2007 | CMYK | 미국 신문용지(SNAP 2007) |
+| 신문 인쇄2007 | CMYK | 미국 신문용지(SNAP 2007) |
 | NTSC | RGB | NTSC(1953) |
 | PAL | RGB | PAL/SECAM |
 | ProPhoto | RGB | ProPhoto RGB |

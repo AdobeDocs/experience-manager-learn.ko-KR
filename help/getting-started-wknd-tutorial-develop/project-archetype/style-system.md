@@ -1,6 +1,5 @@
 ---
 title: 스타일 시스템을 사용하여 개발
-seo-title: Developing with the Style System
 description: Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 구현하고 핵심 구성 요소를 재사용하는 방법에 대해 알아봅니다. 이 튜토리얼에서는 스타일 시스템에서 템플릿 편집기의 브랜드별 CSS 및 고급 정책 구성을 사용하여 핵심 구성 요소를 확장하는 개발 방법을 다룹니다.
 version: 6.5, Cloud Service
 feature: Core Components, Style System
@@ -13,10 +12,11 @@ thumbnail: 30386.jpg
 doc-type: Tutorial
 exl-id: 5b490132-cddc-4024-92f1-e5c549afd6f1
 recommendations: noDisplay, noCatalog
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 494
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1678'
-ht-degree: 2%
+source-wordcount: '1555'
+ht-degree: 0%
 
 ---
 

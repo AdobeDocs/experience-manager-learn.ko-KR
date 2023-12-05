@@ -13,10 +13,11 @@ thumbnail: KT-12433.jpeg
 badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM 헤드리스 as a Cloud Service" before-title="false"
 exl-id: be886c64-9b8e-498d-983c-75f32c34be4b
-source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
+duration: 1721
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1679'
-ht-degree: 1%
+source-wordcount: '1618'
+ht-degree: 0%
 
 ---
 
@@ -63,7 +64,7 @@ Adobe Target Cloud Service은 컨텐츠 조각을 Adobe Target으로 쉽게 내�
 1. 에 로그인 __AEM Author 서비스__ DAM 관리자로서
 1. 다음으로 이동 __에셋 > 파일__&#x200B;을(를) 클릭하고, `/conf` 적용 대상
 1. 에셋 폴더를 선택하고 __속성__ 맨 위의 작업 표시줄에서
-1. __클라우드 서비스__ 탭을 선택합니다
+1. 다음 항목 선택 __Cloud Service__ 탭
 1. 클라우드 구성이 컨텍스트 인식 구성(`/conf`) Adobe Target Cloud Service 구성을 포함합니다.
 1. 선택 __Adobe Target__ 다음에서 __Cloud Service 구성__ 드롭다운입니다.
 1. 선택 __저장 및 닫기__ 오른쪽 상단에서
@@ -176,7 +177,7 @@ An [Adobe Experience Platform 데이터스트림](https://experienceleague.adobe
    + 이름: `AEM Target integration`
    + 설명: `Datastream used by the Adobe Web SDK to serve personalized Content Fragments Offers.`
    + 이벤트 스키마: `Leave blank`
-1. __저장__&#x200B;을 선택합니다
+1. 선택 __저장__
 1. 선택 __서비스 추가__
 1. 위치 __서비스__ 선택 __Adobe Target__
    + 활성화됨: __예__
@@ -184,7 +185,7 @@ An [Adobe Experience Platform 데이터스트림](https://experienceleague.adobe
    + 대상 환경 ID: __비워 둡니다.__
       + Target 환경은 Adobe Target 의 다음 위치에서 설정할 수 있습니다. __관리 > 호스트__.
    + Target 타사 ID 네임스페이스: __비워 둡니다.__
-1. __저장__&#x200B;을 선택합니다
+1. 선택 __저장__
 1. 오른쪽에서 __데이터 스트림 ID__ 에서 사용 [Adobe Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html) 구성 호출.
 
 +++

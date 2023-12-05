@@ -13,10 +13,11 @@ thumbnail: KT-13156.jpeg
 badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service" before-title="false"
 exl-id: 47df99e6-6418-43c8-96fe-85e3c47034d6
-source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
+duration: 1398
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1354'
-ht-degree: 4%
+source-wordcount: '1235'
+ht-degree: 1%
 
 ---
 
@@ -26,7 +27,7 @@ AEMas a Cloud Service 을 Experience Platform과 통합하는 방법에 대해 �
 
 또한 수집 및 전송 방법을 배웁니다. [WKND - 샘플 Adobe Experience Manager 프로젝트](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) 에서 페이지 보기 데이터 [Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html).
 
-이 설정을 완료한 후 견고한 기반을 구현했습니다. 또한 다음과 같은 애플리케이션을 사용하여 Experience Platform 구현을 진행할 준비가 되었습니다 [Real-time Customer Data Platform(Real-Time CDP)](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html?lang=ko-KR), [Customer Journey Analytics(CJA)](https://experienceleague.adobe.com/docs/customer-journey-analytics.html), 및 [Adobe Journey Optimizer (AJO)](https://experienceleague.adobe.com/docs/journey-optimizer.html). 고급 구현은 웹 및 고객 데이터를 표준화하여 더 나은 고객 참여를 유도하는 데 도움이 됩니다.
+이 설정을 완료한 후 견고한 기반을 구현했습니다. 또한 다음과 같은 애플리케이션을 사용하여 Experience Platform 구현을 진행할 준비가 되었습니다 [Real-time Customer Data Platform(Real-Time CDP)](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html), [Customer Journey Analytics(CJA)](https://experienceleague.adobe.com/docs/customer-journey-analytics.html), 및 [Adobe Journey Optimizer (AJO)](https://experienceleague.adobe.com/docs/journey-optimizer.html). 고급 구현은 웹 및 고객 데이터를 표준화하여 더 나은 고객 참여를 유도하는 데 도움이 됩니다.
 
 ## 사전 요구 사항
 
@@ -217,8 +218,8 @@ Web SDK를 사용하여 수집된 페이지 보기 데이터는 Experience Platf
 
 ## 추가 리소스
 
-+ [핵심 구성 요소로 함께 Adobe 클라이언트 데이터 레이어 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html)
++ [핵심 구성 요소로 Adobe 클라이언트 데이터 레이어 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html)
 + [Experience Platform 데이터 수집 태그와 AEM 통합](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)
 + [Adobe Experience Platform Web SDK 및 Edge Network 개요](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html)
-+ [데이터 수집 튜토리얼](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html)
++ [데이터 수집 자습서](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html)
 + [Adobe Experience Platform Debugger 개요](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)

@@ -10,10 +10,11 @@ jira: KT-9351
 thumbnail: 343040.jpeg
 last-substantial-update: 2022-10-17T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 2511
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '3123'
-ht-degree: 2%
+source-wordcount: '3137'
+ht-degree: 1%
 
 ---
 
@@ -110,13 +111,13 @@ IDP의 공개 인증서가 AEM Global Trust Store에 추가되고, IDP에서 보
 1. __제출__&#x200B;을 선택합니다.
 1. 새로 추가된 인증서는 __CRT 파일에서 인증서 추가__ 섹션.
 1. 다음을 기록해 둡니다. __별칭__: 이 값이에 사용됨 [SAML 2.0 인증 핸들러 OSGi 구성](#saml-2-0-authentication-handler-osgi-configuration).
-1. 선택 __저장 및 닫기__.
+1. __저장 후 닫기__&#x200B;를 선택합니다.
 
 글로벌 Trust Store는 AEM Author의 IDP 공개 인증서로 구성되지만 SAML은 AEM Publish에서만 사용되므로 IDP 공개 인증서에 액세스하려면 글로벌 Trust Store를 AEM Publish에 복제해야 합니다.
 
 ![글로벌 Trust Store를 AEM Publish로 복제](./assets/saml-2-0/global-trust-store-replicate.png)
 
-1. __도구 > 배포 > 패키지__&#x200B;로 이동합니다.
+1. 다음으로 이동 __도구 > 배포 > 패키지__.
 1. 패키지 만들기
    + 패키지 이름: `Global Trust Store`
    + 버전: `1.0.0`
@@ -137,12 +138,12 @@ _다음을 수행하는 경우 인증 서비스에 대한 키 저장소를 생�
 1. 키 저장소를 생성하거나 엽니다. 키 저장소를 만드는 경우 암호를 안전하게 유지합니다.
    + A [이 키 저장소에 공개/비공개 키 저장소가 설치되었습니다.](#install-aem-public-private-key-pair) AuthnRequest 서명/SAML 어설션 암호화가 필요한 경우에만 해당합니다.
    + 이 SAML 통합이 로그아웃은 지원하지만 AuthnRequest 서명/SAML 어설션은 지원하지 않는 경우 빈 키 저장소로 충분합니다.
-1. 선택 __저장 및 닫기__.
+1. __저장 후 닫기__&#x200B;를 선택합니다.
 1. 업데이트된 항목이 포함된 패키지 만들기 __authentication-service__ 사용자.
 
    _패키지를 사용하여 다음 임시 해결 방법을 사용하십시오._
 
-   1. __도구 > 배포 > 패키지__&#x200B;로 이동합니다.
+   1. 다음으로 이동 __도구 > 배포 > 패키지__.
    1. 패키지 만들기
       + 패키지 이름: `Authentication Service`
       + 버전: `1.0.0`
@@ -221,15 +222,15 @@ AuthnRequest 서명 및 SAML 어설션 암호화는 모두 선택 사항이지�
       + 사용 `openssl` 위의 메서드입니다. `aem-private-pkcs8.der` 파일
    + __인증서 체인 파일 선택__: 함께 제공되는 체인 파일을 업로드합니다(공개 키일 수 있음).
       + 사용 `openssl` 위의 메서드입니다. `aem-public.crt` 파일
-   + __제출__&#x200B;을 선택합니다
+   + 선택 __제출__
 1. 새로 추가된 인증서는 __CRT 파일에서 인증서 추가__ 섹션.
    + 다음을 기록해 둡니다. __별칭__ 다음에서 사용됨: [SAML 2.0 인증 처리기 OSGi 구성](#saml-20-authentication-handler-osgi-configuration)
-1. 선택 __저장 및 닫기__.
+1. __저장 후 닫기__&#x200B;를 선택합니다.
 1. 업데이트된 항목이 포함된 패키지 만들기 __authentication-service__ 사용자.
 
    _패키지를 사용하여 다음 임시 해결 방법을 사용하십시오._
 
-   1. __도구 > 배포 > 패키지__&#x200B;로 이동합니다.
+   1. 다음으로 이동 __도구 > 배포 > 패키지__.
    1. 패키지 만들기
       + 패키지 이름: `Authentication Service`
       + 버전: `1.0.0`
@@ -250,7 +251,7 @@ AEM SAML 구성은 __Adobe Granite SAML 2.0 Authentication Handler__ OSGi 구성
 
 ### Adobe Granite SAML 2.0 인증 핸들러 OSGi 구성{#configure-saml-2-0-authentication-handler-osgi-configuration}
 
-|                                   | OSGi 속성 | 필수 | 값 형식 | 기본 값 | 설명 |
+|                                   | OSGi 속성 | 필수 | 값 형식 | 기본값 | 설명 |
 |-----------------------------------|-------------------------------|:--------:|:---------------------:|---------------------------|-------------|
 | 경로 | `path` | ✔ | 문자열 배열 | `/` | AEM은 이 인증 핸들러가 사용되는 경로를 지정합니다. |
 | IDP URL | `idpUrl` | ✔ | 문자열 |                           | IDP URL SAML 인증 요청이 전송됩니다. |

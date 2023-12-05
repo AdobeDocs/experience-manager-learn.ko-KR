@@ -1,8 +1,6 @@
 ---
 title: Adobe Target을 사용한 개인화
-seo-title: Personalization using Adobe Target
 description: Adobe Target을 사용하여 개인화된 경험을 만들고 전달하는 방법을 보여 주는 종단간 튜토리얼입니다.
-seo-description: An end-to-end tutorial showing how to create and deliver personalized experience using Adobe Target.
 feature: Experience Fragments
 topic: Personalization
 role: Developer
@@ -11,10 +9,11 @@ badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Sites 6.5" before-title="false"
 doc-type: Tutorial
 exl-id: 53cafd06-3a0a-4995-947d-179146b89234
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 165
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 2%
+source-wordcount: '580'
+ht-degree: 1%
 
 ---
 

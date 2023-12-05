@@ -10,10 +10,11 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 772b595d-2a25-4ae6-8c6e-69a646143147
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 611
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1218'
-ht-degree: 2%
+source-wordcount: '1181'
+ht-degree: 0%
 
 ---
 
@@ -120,7 +121,7 @@ React 앱을 다운로드하려면:
 
 리뷰 `aemHeadlessClient.js` 파일을 만드는 방법 `AEMHeadless` AEM과 통신하는 데 사용되는 개체입니다.
 
-1. `src/api/aemHeadlessClient.js`를 엽니다.
+1. 열기 `src/api/aemHeadlessClient.js`.
 
 1. 1-40행을 검토합니다.
 
@@ -198,7 +199,7 @@ async function fetchPersistedQuery(persistedQueryName, queryParameters) {
 
 ### 단계
 
-1. `src/api/usePersistedQueries.js`를 엽니다.
+1. 열기 `src/api/usePersistedQueries.js`.
 
 1. 함수 찾기 `useAllTeams()`
 
@@ -347,7 +348,7 @@ async function fetchPersistedQuery(persistedQueryName, queryParameters) {
 
 ![개인](./assets/graphql-and-external-app/react-app__person-view.png)
 
-1. `src/api/usePersistedQueries.js`를 엽니다.
+1. 열기 `src/api/usePersistedQueries.js`.
 
 1. 함수 찾기 `usePersonByName(fullName)`
 

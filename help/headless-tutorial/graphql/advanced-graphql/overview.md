@@ -7,9 +7,10 @@ topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: daae6145-5267-4958-9abe-f6b7f469f803
-source-git-commit: 4c0770eafbbbb90bfc00ab49be02e84c41d63057
+duration: 508
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1076'
+source-wordcount: '1052'
 ht-degree: 0%
 
 ---
@@ -60,7 +61,7 @@ WKND 사이트 프로젝트에는 필요한 모든 구성이 있으므로 [빠�
 
 ### 기존 구성 검토
 
-AEM에서 새 프로젝트를 시작하는 첫 번째 단계는 구성 및 작업 공간을 만들고 GraphQL API 끝점을 만드는 것입니다. 구성을 검토하거나 만들려면 다음 위치로 이동하십시오. **도구** > **일반** > **구성 브라우저**.
+AEM에서 새 프로젝트를 시작하는 첫 번째 단계는 구성, 작업 공간 및 GraphQL API 엔드포인트를 만드는 것입니다. 구성을 검토하거나 만들려면 다음 위치로 이동하십시오. **도구** > **일반** > **구성 브라우저**.
 
 ![구성 브라우저로 이동](assets/overview/create-configuration.png)
 
@@ -106,13 +107,13 @@ AEM에서 새 프로젝트를 시작하는 첫 번째 단계는 구성 및 작�
 
 ![속성 선택](assets/overview/properties.png)
 
-다음으로 이동 **Cloud Services** 을(를) 탭하고 **클라우드 구성** 필드.
+다음으로 이동 **Cloud Service** 을(를) 탭하고 **클라우드 구성** 필드.
 
 ![클라우드 구성](assets/overview/cloud-conf.png)
 
 표시되는 모달에서 이전에 만든 구성을 선택하여 언어 루트 폴더를 할당합니다.
 
-### 우수 사례
+### 모범 사례
 
 다음은 AEM에서 나만의 프로젝트를 만들 때의 모범 사례입니다.
 

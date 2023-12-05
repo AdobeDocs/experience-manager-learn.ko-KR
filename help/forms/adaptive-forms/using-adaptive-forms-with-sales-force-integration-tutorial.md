@@ -2,16 +2,16 @@
 title: AEM Forms 6.3 및 6.4에서 Salesforce를 사용하여 DataSource 구성
 description: 양식 데이터 모델을 사용하여 AEM Forms과 Salesforce 통합
 feature: Adaptive Forms, Form Data Model
-topics: integrations
 version: 6.4,6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 7a4fd109-514a-41a8-a3fe-53c1de32cb6d
 last-substantial-update: 2020-02-14T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 232
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '816'
 ht-degree: 0%
 
 ---
@@ -93,7 +93,8 @@ SFDC에서 리드 개체를 만들려면 POST 서비스를 포함하도록 양�
       * 이름: CreateLeadInSalesForce
       * 제목: CreateLeadInSalesForce
       * 서비스 유형: RESTful 서비스
-   * 다음을 클릭합니다
+
+   * 다음 을 클릭합니다
    * Swagger 소스: 파일
    * 이전 단계에서 다운로드한 Swagger 파일을 찾아서 선택합니다
    * 인증 유형: OAuth 2.0. 다음 값을 지정하십시오.
@@ -104,7 +105,6 @@ SFDC에서 리드 개체를 만들려면 POST 서비스를 포함하도록 양�
    * 인증 범위: ** api chatter_api 전체 id openid refresh_token visualforce 웹**
    * 인증 핸들러: 권한 부여 전달자
    * &quot;OAuth에 연결&quot; 버튼을 클릭합니다. 오류가 표시되면 이전 단계를 검토하여 모든 정보가 정확하게 입력되었는지 확인하십시오.
-
 
 SalesForce를 사용하여 데이터 소스를 만든 다음 방금 만든 데이터 소스를 사용하여 양식 데이터 통합을 만들 수 있습니다. 에 대한 설명서 링크는 다음과 같습니다 [여기](https://helpx.adobe.com/experience-manager/6-4/forms/using/create-form-data-models.html)
 

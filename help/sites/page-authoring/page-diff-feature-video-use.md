@@ -2,7 +2,6 @@
 title: AEM Sites과 페이지 차이 사용
 description: AEM Sites의 페이지 차이 기능 에서는 페이지에서 변경된 콘텐츠(버전, 라이브 카피, 론치, 언어 사본)를 색상으로 빠르게 볼 수 있습니다.
 version: 6.4, 6.5
-uuid: e096a08b-528d-48c7-93fb-73b10c0a9259
 jira: KT-4633
 thumbnail: 32152.jpg
 topic: Content Management
@@ -11,9 +10,10 @@ role: User
 level: Beginner
 doc-type: Feature Video
 exl-id: 4d365957-9a5a-44f8-a117-95c1c0dd757d
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 518
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '118'
+source-wordcount: '112'
 ht-degree: 1%
 
 ---

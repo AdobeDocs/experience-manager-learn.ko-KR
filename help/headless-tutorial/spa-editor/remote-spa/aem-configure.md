@@ -11,10 +11,11 @@ last-substantial-update: 2022-11-11T00:00:00Z
 recommendations: noDisplay, noCatalog
 doc-type: Tutorial
 exl-id: 0bdb93c9-5070-483c-a34c-f2b348bfe5ae
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 432
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1246'
-ht-degree: 1%
+source-wordcount: '1230'
+ht-degree: 0%
 
 ---
 
@@ -137,7 +138,7 @@ AEM이 SPA 편집기에서 원격 SPA을 로드하려면 SPA 경로와 컨텐츠
 
 1. IDE에서 `ui.content` 하위 프로젝트
 1. 다음으로 이동  `src/main/content/jcr_root`
-1. 폴더를 만듭니다 `etc`
+1. 폴더 만들기 `etc`
 1. 위치 `etc`, 폴더 만들기 `map`
 1. 위치 `map`, 폴더 만들기 `http`
 1. 위치 `http`, 파일 만들기 `.content.xml` (콘텐츠 포함)
@@ -213,7 +214,7 @@ Sling 매핑 효과에서 AEM 실행 `http` 및 `localhost`, 따라서 로컬 �
 다음으로, 이 AEM만 AEM 콘텐츠에 액세스할 수 있도록 SPA을 구성하여 콘텐츠를 보호합니다. 구성 [AEM에서 원본 간 리소스 공유](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html).
 
 1. IDE에서 `ui.config` Maven 하위 프로젝트
-1. 탐색하고 `src/main/content/jcr_root/apps/wknd-app/osgiconfig/config`
+1. 탐색 `src/main/content/jcr_root/apps/wknd-app/osgiconfig/config`
 1. 이름이 인 파일 만들기 `com.adobe.granite.cors.impl.CORSPolicyImpl~wknd-app_remote-spa.cfg.json`
 1. 다음 내용을 파일에 추가합니다.
 
@@ -350,7 +351,7 @@ AEM 프로젝트가 배포되면 SPA 편집기를 준비하여 원격 SPA을 로
 
 이 구성은 AEM의 루트에 해당하는 SPA 페이지에서만 설정해야 합니다. 이 페이지 아래의 모든 AEM 페이지는 값을 상속합니다.
 
-## 축하합니다
+## 축하합니다.
 
 이제 AEM 구성을 준비하고 로컬 AEM 작성자에게 배포했습니다! 이제 다음 방법을 이해할 수 있습니다.
 

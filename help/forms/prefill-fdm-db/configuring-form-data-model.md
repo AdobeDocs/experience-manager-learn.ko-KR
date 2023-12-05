@@ -9,10 +9,11 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 5fa4638f-9faa-40e0-a20d-fdde3dbb528a
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 146
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 1%
+source-wordcount: '491'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +38,7 @@ RDBMS 지원 양식 데이터 모델을 만드는 첫 번째 단계는 Apache Sl
 * 브라우저를 가리켜서 [데이터 통합](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm)
 * 클릭 _만들기_->_양식 데이터 모델_
 * 다음과 같은 양식 데이터 모델에 의미 있는 이름 및 제목 제공 **직원**
-* _다음_&#x200B;을 클릭합니다
+* 클릭 _다음_
 * 이전 섹션(포럼)에서 만든 데이터 소스를 선택하십시오.
 * 클릭 _만들기_->편집 을 클릭하여 새로 만든 양식 데이터 모델을 편집 모드로 엽니다.
 * 확장 _포럼_ 직원 스키마를 볼 노드입니다. 직원 노드를 확장하여 2개의 테이블 보기

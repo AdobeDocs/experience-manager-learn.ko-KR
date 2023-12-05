@@ -8,10 +8,11 @@ role: Developer
 level: Experienced
 exl-id: fbe6d341-7941-46f5-bcd8-58b99396d351
 last-substantial-update: 2021-06-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 167
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '685'
-ht-degree: 1%
+source-wordcount: '656'
+ht-degree: 0%
 
 ---
 
@@ -50,7 +51,7 @@ afData.afUnboundData.data.initialStep,N
 * 브라우저를 가리켜서 [Forms 및 문서](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * 만들기 를 클릭합니다 | 파일 업로드
 * TimeOffRequestForm.zip 파일 업로드
-   **이 양식은 AEM Forms 6.4를 사용하여 작성되었습니다. AEM Forms 6.4 이상을 사용하고 있는지 확인하십시오.**
+  **이 양식은 AEM Forms 6.4를 사용하여 작성되었습니다. AEM Forms 6.4 이상을 사용하고 있는지 확인하십시오.**
 * 를 엽니다. [양식](http://localhost:4502/content/dam/formsanddocuments/timeoffrequest/jcr:content?wcmmode=disabled)
 * 시작 및 종료 날짜를 입력하고 양식을 제출합니다.
 * 다음으로 이동 [&quot;받은 편지함&quot;](http://localhost:4502/aem/inbox)
@@ -60,7 +61,7 @@ afData.afUnboundData.data.initialStep,N
 
 >[!NOTE]
 >
->사용자 프로필을 사용하여 적응형 양식을 미리 채우는 중이므로 관리자가 [사용자 프로필 정보 ](http://localhost:4502/security/users.html). 최소한 FirstName, LastName 및 Email 필드 값을 설정했는지 확인하십시오.
+>사용자 프로필을 사용하여 적응형 양식을 미리 채우는 중이므로 관리자가 [사용자 프로필 정보](http://localhost:4502/security/users.html). 최소한 FirstName, LastName 및 Email 필드 값을 설정했는지 확인하십시오.
 >com.aemforms.setvalue.core.SetValueInJson용 로거를 활성화하여 디버그 로깅을 활성화할 수 있습니다 [여기에서](http://localhost:4502/system/console/slinglog)
 
 >[!NOTE]

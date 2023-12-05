@@ -9,10 +9,11 @@ level: Beginner
 jira: KT-9442
 thumbnail: 339073.jpg
 exl-id: 62e807b7-b1a4-4344-9b1e-2c626b869e10
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 868
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1081'
-ht-degree: 2%
+source-wordcount: '1078'
+ht-degree: 0%
 
 ---
 
@@ -100,12 +101,12 @@ _단계 스크린캐스트_
       1. 선택 __배포 트리거 > Git 변경 시__
       1. 선택 __중요한 지표 장애 비헤이비어 > 즉시 계속__
       1. 선택 __계속__
-   1. __소스 코드__ 탭에서
+   1. 다음에서 __소스 코드__ 탭
       1. 선택 __전체 스택 코드__ 옵션
       1. 다음 항목 선택 __AEM as a Cloud Service 개발 환경__ 다음에서 __적합한 배포 환경__ 선택 상자
       1. 선택 `aem-headless-quick-setup-wknd` 다음에서 __저장소__ 선택 상자
       1. 선택 `main` 다음에서 __Git 분기__ 선택 상자
-      1. __저장__&#x200B;을 선택합니다
+      1. 선택 __저장__
 1. 실행 __개발 배포 파이프라인__
    1. 선택 __개요__ 위쪽 탐색
    1. 새로 생성된 를 찾습니다. __개발 배포 파이프라인__ 다음에서 __파이프라인__ 섹션

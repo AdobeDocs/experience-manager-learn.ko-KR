@@ -9,10 +9,11 @@ role: Admin
 level: Beginner
 exl-id: 80288765-0b51-44a9-95d3-3bdb2da38615
 last-substantial-update: 2020-06-09T00:00:00Z
-source-git-commit: 757c8ad251d058bbe48cc3cd354fec533ec4e968
+duration: 158
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 6%
+source-wordcount: '545'
+ht-degree: 1%
 
 ---
 
@@ -34,7 +35,6 @@ ht-degree: 6%
 >* Microsoft Visual C++ 2010 재배포 가능
 >* Microsoft Visual C++ 2012 재배포 가능
 >* Microsoft Visual C++ 2013 재배포 가능 항목(6.5부터)
-
 
 다음을 수행하는 것이 좋습니다. [공식 문서](https://helpx.adobe.com/kr/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html) AEM Forms 설치 다음 단계에 따라 Windows 환경에 AEM Forms을 설치하고 구성할 수 있습니다.
 
@@ -69,7 +69,7 @@ ht-degree: 6%
    * **sling.bootdelegation.class.com.rsa.jsafe.provider.JsafeJCE=com.rsa.&#42;** **sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider=org.bouncycastle.&#42;**
 * 문서 서비스가 작동하려면 다음 두 속성이 필요합니다
 * sling.properties 파일을 저장합니다.
-* [적절한 양식 추가 패키지 다운로드](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko)
+* [적절한 양식 추가 패키지 다운로드](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en)
 * 다음을 사용하여 양식 추가 기능 패키지 설치 [패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp).
 * 추가 기능 패키지를 설치한 후 다음 단계를 수행해야 합니다
 
@@ -86,4 +86,4 @@ ht-degree: 6%
 1. 변경 사항을 저장합니다.
 
 축하합니다!!! 이제 시스템에 AEM Forms을 설치하고 구성했습니다.
-필요에 따라 다음을 구성할 수 있습니다.  [Reader 확장](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) 또는 [ PDFG](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html) 서버에서
+필요에 따라 다음을 구성할 수 있습니다.  [Reader 확장](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) 또는 [PDFG](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html) 서버에서

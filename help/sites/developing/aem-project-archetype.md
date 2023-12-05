@@ -1,9 +1,7 @@
 ---
 title: AEM Project Archetype
-description: AEM Project Archetype은 사용자 자신의 AEM 프로젝트의 시작점으로서 모범 사례 기반 Adobe Experience Manager 프로젝트를 생성합니다.
+description: AEM Project Archetype 은 고유한 AEM 프로젝트의 시작점으로 최소한의 우수 사례 기반 Adobe Experience Manager 프로젝트를 만듭니다.
 feature: AEM Project Archetype
-audience: developer
-activity: understand
 version: 6.4, 6.5, Cloud Service
 jira: KT-4675
 thumbnail: 32550.jpg
@@ -12,10 +10,11 @@ role: Developer
 level: Beginner
 doc-type: Technical Video
 exl-id: 9f46ce7e-9c6d-429d-9d8a-c93c274f70d7
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 717
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '75'
-ht-degree: 50%
+source-wordcount: '65'
+ht-degree: 10%
 
 ---
 

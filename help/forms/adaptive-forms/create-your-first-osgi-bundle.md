@@ -2,19 +2,17 @@
 title: AEM Forms를 사용하여 첫 번째 OSGi 번들 생성
 description: Maven 및 eclipse를 사용하여 첫 번째 OSGi 번들 구축
 feature: Adaptive Forms
-topics: development
-audience: developer
 doc-type: article
-activity: setup
 version: 6.4,6.5
 topic: Development
 role: Developer
 level: Beginner
 last-substantial-update: 2021-06-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 240
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '820'
-ht-degree: 2%
+source-wordcount: '816'
+ht-degree: 0%
 
 ---
 
@@ -100,7 +98,7 @@ Enter 키를 눌러 다른 속성의 기본값을 적용합니다.
 
 ![데이터 소스](assets/import-mvn-project.JPG)
 
-다음을 클릭합니다
+다음 을 클릭합니다
 
 다음 항목 선택 `c:\aemformsbundles\learningaemform`다음을 클릭하여: **찾아보기** 단추
 

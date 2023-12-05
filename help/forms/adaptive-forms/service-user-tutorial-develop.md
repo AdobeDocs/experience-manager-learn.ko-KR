@@ -7,10 +7,11 @@ role: Developer
 level: Experienced
 exl-id: 5fa3d52a-6a71-45c4-9b1a-0e6686dd29bc
 last-substantial-update: 2020-09-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 187
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 1%
+source-wordcount: '415'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +29,7 @@ ht-degree: 1%
 1. &#39; admin &#39;(으)로 로그인
 1. &#39; 사용자 관리 &#39; 를 클릭합니다.
 1. &#39; 시스템 사용자 만들기 &#39; 를 클릭합니다.
-1. 사용자 ID 유형을 &#39; data &#39;로 설정하고 녹색 아이콘을 클릭하여 시스템 사용자 만들기 프로세스를 완료합니다
+1. 사용자 ID 유형을 &#39; data &#39;로 설정하고 녹색 아이콘을 클릭하여 시스템 사용자 생성 프로세스를 완료합니다
 1. [configMgr 열기](http://localhost:4502/system/console/configMgr)
 1. 검색 대상 _Apache Sling 서비스 사용자 매퍼 서비스_ 을(를) 클릭하고 속성을 엽니다.
 1. 다음을 클릭합니다. *+* 아이콘(더하기): 다음 서비스 매핑 추가

@@ -1,8 +1,6 @@
 ---
 title: Visual Experience Composer를 사용한 개인화
 description: 시각적 경험 작성기를 사용하여 Adobe Target 활동을 만드는 방법을 알아봅니다.
-topics: integrations, authoring, personalization, activity, offers
-audience: all
 version: Cloud Service
 jira: KT-6352
 thumbnail: 6352-personalization-using-vec.jpg
@@ -14,10 +12,11 @@ badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 doc-type: Tutorial
 exl-id: becf2bed-0541-45e8-9ce2-f9fb023234e0
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 142
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 2%
+source-wordcount: '514'
+ht-degree: 0%
 
 ---
 
@@ -69,7 +68,7 @@ WKND 사이트 홈 페이지에는 로컬 활동 또는 도시 주변에서 수�
 
 1. 클릭 **다음** 을 타깃팅으로 이동하고 두 경험 간에 50-50의 수동 트래픽 할당을 유지해 보겠습니다.
 
-   ![타깃팅](assets/targeting.png)
+   ![타겟팅](assets/targeting.png)
 
 1. 목표 및 설정의 경우 보고 소스를 Adobe Target으로 선택하고 목표 지표를 페이지 보기 작업이 있는 전환으로 선택합니다.
 

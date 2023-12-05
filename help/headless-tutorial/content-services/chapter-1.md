@@ -1,18 +1,17 @@
 ---
 title: 1장 - 튜토리얼 설정 및 다운로드 - Content Services
-seo-title: Getting Started with AEM Content Services - Chapter 1 -  Tutorial Set up
 description: AEM Headless 자습서의 1장 자습서에 대한 AEM 인스턴스에 대한 기준선 설정입니다.
-seo-description: Chapter 1 of the AEM Headless tutorial the baseline setup for the AEM instance for the tutorial.
 feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: f24a75f6-9062-498c-b782-7d9011aa0bcf
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 118
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '411'
-ht-degree: 1%
+source-wordcount: '366'
+ht-degree: 0%
 
 ---
 

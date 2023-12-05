@@ -2,20 +2,18 @@
 title: 디버깅 AEM as a Cloud Service
 description: 확장 가능한 셀프서비스 클라우드 인프라에서 AEM 개발자는 빌드 및 배포에서 AEM 애플리케이션 실행에 대한 세부 정보 가져오기에 이르기까지 AEMas a Cloud Service 의 다양한 측면을 이해하고 디버깅하는 방법을 이해해야 합니다.
 feature: Developer Tools
-topics: development
 version: Cloud Service
-doc-type: tutorial
-activity: develop
-audience: developer
+doc-type: Tutorial
 jira: KT-5346
 topic: Development
 role: Developer
 level: Beginner, Intermediate
 exl-id: 8092fbb4-234f-472e-a405-8a45734b7c65
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 83
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
 source-wordcount: '314'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 

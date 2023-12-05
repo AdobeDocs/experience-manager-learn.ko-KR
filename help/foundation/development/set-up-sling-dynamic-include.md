@@ -9,10 +9,11 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 6c504710-be8f-4b44-bd8a-aaf480ae6d8a
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 910
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 5%
+source-wordcount: '230'
+ht-degree: 0%
 
 ---
 
@@ -53,7 +54,7 @@ ht-degree: 5%
    -->
    ```
 
-1. (선택 사항) 마지막 단계를 반복하여 의 구성 요소를 허용합니다. [편집 가능한 템플릿의 잠긴(초기) 콘텐츠](https://helpx.adobe.com/kr/experience-manager/6-5/sites/developing/using/page-templates-editable.html) 다음을 통해 제공: [!DNL SDI] 또한. 추가 구성의 이유는 편집 가능한 템플릿의 잠긴 컨텐츠가에서 제공되기 때문입니다. `/conf` 대신 `/content`.
+1. (선택 사항) 마지막 단계를 반복하여 의 구성 요소를 허용합니다. [편집 가능한 템플릿의 잠긴(초기) 콘텐츠](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/page-templates-editable.html) 다음을 통해 제공: [!DNL SDI] 또한. 추가 구성의 이유는 편집 가능한 템플릿의 잠긴 컨텐츠가에서 제공되기 때문입니다. `/conf` 대신 `/content`.
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>

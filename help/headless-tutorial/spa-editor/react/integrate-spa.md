@@ -10,9 +10,10 @@ role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: 31416399-6a4e-47d1-8ed8-be842a01a727
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 570
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1835'
+source-wordcount: '1689'
 ht-degree: 0%
 
 ---
@@ -197,7 +198,7 @@ React로 작성된 단일 페이지 애플리케이션(SPA)의 소스 코드를 
    451 B              build/static/css/main.e57bbe8a.chunk.css
    ```
 
-1. `ui.apps` 폴더로 이동합니다. 아래에 `ui.apps/src/main/content/jcr_root/apps/wknd-spa-react/clientlibs/clientlib-react` 컴파일된 SPA 파일이`ui.frontend/build` 폴더를 삭제합니다.
+1. 다음 위치로 이동 `ui.apps` 폴더를 삭제합니다. 아래에 `ui.apps/src/main/content/jcr_root/apps/wknd-spa-react/clientlibs/clientlib-react` 컴파일된 SPA 파일이`ui.frontend/build` 폴더를 삭제합니다.
 
    ![ui.apps에서 생성된 클라이언트 라이브러리](./assets/integrate-spa/compiled-spa-uiapps.png)
 

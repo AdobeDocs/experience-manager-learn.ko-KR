@@ -1,18 +1,17 @@
 ---
 title: 2장 - 이벤트 콘텐츠 조각 모델 정의 - 콘텐츠 서비스
-seo-title: Getting Started with AEM Content Services - Chapter 2 - Defining Event Content Fragment Models
 description: AEM Headless 자습서의 2장에서는 정규화된 데이터 구조 및 이벤트 생성을 위한 작성 인터페이스를 정의하는 데 사용되는 콘텐츠 조각 모델 활성화 및 정의를 다룹니다.
-seo-description: Chapter 2 of the AEM Headless tutorial covers enabling and defining Content Fragment Models used to define a normalized data structure and authoring interface for creating Events.
 feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: 8b05fc02-c0c5-48ad-a53e-d73b805ee91f
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 472
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 10%
+source-wordcount: '940'
+ht-degree: 1%
 
 ---
 
@@ -27,7 +26,7 @@ AEM 콘텐츠 조각 모델은 AEM 작성자가 원시 콘텐츠 생성을 템�
 
 이 장에서는 &quot;이벤트&quot;를 모델링하고 만들기 위한 정규화된 데이터 구조 및 작성 인터페이스를 정의하는 데 사용되는 콘텐츠 조각 모델을 활성화하고 정의하는 작업을 다룹니다.
 
-## 컨텐츠 조각 모델 활성화
+## 콘텐츠 조각 모델 활성화
 
 컨텐츠 조각 모델 **필수** 을 통해 활성화됨 **[AEM [!UICONTROL 구성 브라우저]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html)**.
 
@@ -88,7 +87,7 @@ AEM 콘텐츠 조각 모델은 AEM 작성자가 원시 콘텐츠 생성을 템�
 
 ## 콘텐츠 조각 모델 만들기
 
-1. 다음으로 이동 **[!UICONTROL 도구] > [!UICONTROL 일반] > [!UICONTROL 컨텐츠 조각 모델]**.
+1. **[!UICONTROL 도구] > [!UICONTROL 일반] > [!UICONTROL 콘텐츠 조각 모델]**&#x200B;로 이동합니다.
 1. 탭 **[!DNL WKND Mobile]** 열 폴더입니다.
 1. 누르기 **[!UICONTROL 만들기]** 콘텐츠 조각 모델 만들기 마법사를 엽니다.
 1. 입력 **[!DNL Event]** (으)로 **[!UICONTROL 모델 제목]** *(설명은 선택 사항입니다.)* 및 탭 **[!UICONTROL 만들기]** 저장.
@@ -116,28 +115,28 @@ AEM 콘텐츠 조각 모델은 AEM 작성자가 원시 콘텐츠 생성을 템�
 
 ### 이벤트 설명
 
-* [!UICONTROL 데이터 형식] : `Multi-line text`
+* [!UICONTROL 데이터 유형] : `Multi-line text`
 * [!UICONTROL 필드 레이블] : `Event Description`
 * [!UICONTROL 속성 이름] : `eventDescription`
 * [!UICONTROL 기본 유형] : `Rich text`
 
 ### 이벤트 날짜 및 시간
 
-* [!UICONTROL 데이터 형식] : `Date and time`
+* [!UICONTROL 데이터 유형] : `Date and time`
 * [!UICONTROL 필드 레이블] : `Event Date and Time`
 * [!UICONTROL 속성 이름] : `eventDateAndTime`
 * [!UICONTROL 필수] : `Yes`
 
 ### 이벤트 유형
 
-* [!UICONTROL 데이터 형식] : `Enumeration`
+* [!UICONTROL 데이터 유형] : `Enumeration`
 * [!UICONTROL 필드 레이블] : `Event Type`
 * [!UICONTROL 속성 이름] : `eventType`
 * [!UICONTROL 옵션] : `Art,Music,Performance,Photography`
 
 ### 티켓 가격
 
-* [!UICONTROL 데이터 형식] : `Number`
+* [!UICONTROL 데이터 유형] : `Number`
 * [!UICONTROL 렌더링 형식] : `numberfield`
 * [!UICONTROL 필드 레이블] : `Ticket Price`
 * [!UICONTROL 속성 이름] : `eventPrice`
@@ -146,7 +145,7 @@ AEM 콘텐츠 조각 모델은 AEM 작성자가 원시 콘텐츠 생성을 템�
 
 ### 이벤트 이미지
 
-* [!UICONTROL 데이터 형식] : `Content Reference`
+* [!UICONTROL 데이터 유형] : `Content Reference`
 * [!UICONTROL 렌더링 형식] : `contentreference`
 * [!UICONTROL 필드 레이블] : `Event Image`
 * [!UICONTROL 속성 이름] : `eventImage`
@@ -155,7 +154,7 @@ AEM 콘텐츠 조각 모델은 AEM 작성자가 원시 콘텐츠 생성을 템�
 
 ### 장소 이름
 
-* [!UICONTROL 데이터 형식] : `Single-line text`
+* [!UICONTROL 데이터 유형] : `Single-line text`
 * [!UICONTROL 렌더링 형식] : `textfield`
 * [!UICONTROL 필드 레이블] : `Venue Name`
 * [!UICONTROL 속성 이름] : `venueName`
@@ -164,7 +163,7 @@ AEM 콘텐츠 조각 모델은 AEM 작성자가 원시 콘텐츠 생성을 템�
 
 ### 장소 도시
 
-* [!UICONTROL 데이터 형식] : `Enumeration`
+* [!UICONTROL 데이터 유형] : `Enumeration`
 * [!UICONTROL 필드 레이블] : `Venue City`
 * [!UICONTROL 속성 이름] : `venueCity`
 * [!UICONTROL 옵션] : `Basel,London,Los Angeles,Paris,New York,Tokyo`

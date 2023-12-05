@@ -8,9 +8,10 @@ version: 6.4,6.5
 level: Intermediate
 exl-id: 2e9754ff-49fe-4260-b911-796bcc4fd266
 last-substantial-update: 2021-09-18T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 149
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '508'
 ht-degree: 0%
 
 ---
@@ -61,7 +62,7 @@ String managerPorperty = workflowInitiator.getProperty("profile/manager")[0].get
 
 Manager 속성이 LDAP에 저장되는 방법에 따라 관리자 ID를 가져오기 위해 문자열을 몇 가지 조작해야 할 수 있습니다.
 
-이 문서를 읽고 직접 구현하십시오. [  참가자 선택기 .](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
+이 문서를 읽고 직접 구현하십시오. [참가자 선택기 .](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
 
 시스템에서 테스트하려면(Adobe 직원의 경우 이 샘플을 즉시 사용할 수 있음)
 

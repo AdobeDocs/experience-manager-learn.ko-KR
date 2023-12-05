@@ -1,6 +1,6 @@
 ---
 title: 문자열 추적을 활성화하는 단계(Unix 설정)
-description: PDF 생성기 문제 해결을 위한 문자열 로그 구성
+description: PDF Generator 문제 해결을 위한 문자열 로그 구성
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -9,7 +9,8 @@ feature: PDF Generator
 topic: Administration
 index: y
 exl-id: e7a3f63e-549a-493c-a8f1-cb0bca2c07e0
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+duration: 121
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
 source-wordcount: '39'
 ht-degree: 0%

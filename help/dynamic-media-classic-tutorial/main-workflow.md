@@ -7,10 +7,11 @@ role: User
 level: Beginner
 doc-type: Tutorial
 exl-id: 04aacd81-bbb2-4742-9306-f0eabc665a41
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 700
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '2703'
-ht-degree: 1%
+source-wordcount: '2658'
+ht-degree: 0%
 
 ---
 
@@ -60,7 +61,7 @@ Dynamic Media Classic 솔루션의 워크플로우는 세 가지 주요 단계�
 - **동일한 기본 에셋 이름/확장명으로 모든 폴더에 덮어쓰기**.
 대체 이미지의 파일 이름 확장명이 원본 이미지와 동일해야 합니다(예: chair.jpg는 chair.tif 가 아니라 chair.jpg를 대체해야 함). 그러나 대체 이미지를 원본과 다른 폴더에 업로드할 수 있습니다. 업데이트된 이미지가 새 폴더에 있습니다. 파일은 원래 위치에서 더 이상 찾을 수 없습니다.
 
-- **확장명에 상관없이 동일한 기본 에셋 이름으로 모든 폴더에 덮어쓰기**.
+- **확장자에 상관없이 동일한 기본 에셋 이름으로 모든 폴더에 덮어쓰기**.
 이 옵션은 가장 포괄적인 대체 규칙입니다. 대체 이미지를 원본이 아닌 다른 폴더에 업로드하고, 파일 확장명이 다른 파일을 업로드하고, 원본 파일을 바꿀 수 있습니다. 원본 파일이 다른 폴더에 있는 경우 대체 이미지는 업로드된 새 폴더에 있습니다.
 
 에 대해 자세히 알아보기 [이미지 덮어쓰기 옵션](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#using-the-overwrite-images-option).

@@ -9,10 +9,11 @@ badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Sites 6.5" before-title="false"
 doc-type: Tutorial
 exl-id: 1550e6a7-04b5-4a40-9d7b-88074283402f
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 167
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '585'
-ht-degree: 2%
+source-wordcount: '584'
+ht-degree: 1%
 
 ---
 
@@ -69,13 +70,13 @@ WKND 사이트 홈 페이지에는 카드 레이아웃의 형태로 도시 주�
       ![컨테이너가 교체됨](assets/personalization-use-case-3/after-swap-all.png)
    11. 슬라이드 구성 요소 아래와 카드 레이아웃 위에 헤더 텍스트를 추가하겠습니다.
    12. 슬라이드 컨테이너를 클릭하고 **다음 항목 뒤에 삽입 > HTML** 옵션을 사용하여 HTML을 추가할 수 있습니다.
-      ![추가 텍스트](assets/personalization-use-case-3/add-text.png)
+      ![텍스트 추가](assets/personalization-use-case-3/add-text.png)
 
       ```html
       <h1 style="text-align:center">Check Out the Hot Spots in Town</h1>
       ```
 
-      ![추가 텍스트](assets/personalization-use-case-3/after-changes.png)
+      ![텍스트 추가](assets/personalization-use-case-3/after-changes.png)
    13. 클릭 **다음** 을 클릭하여 활동을 계속합니다.
    14. 다음 항목 선택 **트래픽 할당 방법** as manual 및 allot 100% traffic to **경험 B**.
       ![경험 B 트래픽](assets/personalization-use-case-2/traffic.png)

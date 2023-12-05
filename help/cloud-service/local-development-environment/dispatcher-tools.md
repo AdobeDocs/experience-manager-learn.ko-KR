@@ -10,10 +10,11 @@ jira: KT-4679
 thumbnail: 30603.jpg
 last-substantial-update: 2023-03-14T00:00:00Z
 exl-id: 9320e07f-be5c-42dc-a4e3-aab80089c8f7
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 765
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1695'
-ht-degree: 9%
+source-wordcount: '1622'
+ht-degree: 4%
 
 ---
 
@@ -28,7 +29,7 @@ ht-degree: 9%
 
 Adobe Experience Manager(AEM)의 Dispatcher는 CDN과 AEM Publish 계층 간에 보안 및 성능 계층을 제공하는 Apache HTTP 웹 서버 모듈입니다. Dispatcher는 전체 Experience Manager 아키텍처의 필수적인 부분이며 로컬 개발 설정의 일부여야 합니다.
 
-AEM as a Cloud Service SDK에는 Dispatcher를 로컬에서 쉽게 구성, 유효성 검사 및 시뮬레이션할 수 있는 권장 Dispatcher 도구 버전이 포함되어 있습니다. Dispatcher 도구는 다음과 같이 구성됩니다.
+AEM as a Cloud Service SDK에는 Dispatcher를 로컬에서 구성, 유효성 검사 및 시뮬레이션을 용이하게 하는 권장 Dispatcher 도구 버전이 포함되어 있습니다. Dispatcher 도구는 다음과 같이 구성됩니다.
 
 + 다음 위치에 있는 Apache HTTP 웹 서버 및 Dispatcher 구성 파일의 기본 세트 `.../dispatcher-sdk-x.x.x/src`
 + 다음 위치에 있는 구성 유효성 검사기 CLI 도구 `.../dispatcher-sdk-x.x.x/bin/validate`
@@ -86,7 +87,7 @@ $ ./aem-sdk-dispatcher-tools-x.x.x-unix.sh
 
 압축 풀기 `aem-sdk-dispatcher-tools-x.x.x-windows.zip` 대상 `C:\Users\<My User>\aem-sdk\dispatcher` (필요에 따라 누락된 폴더를 만듭니다.)
 
->[!TAB Linux]
+>[!TAB 리눅스]
 
 ```shell
 $ chmod a+x aem-sdk-dispatcher-tools-x.x.x-unix.sh
@@ -131,7 +132,7 @@ $ ./bin/validate.sh ./src
 $ bin\validate src
 ```
 
->[!TAB Linux]
+>[!TAB 리눅스]
 
 ```shell
 $ ./bin/validate.sh ./src
@@ -160,7 +161,7 @@ $ ./bin/docker_run_hot_reload.sh <src-folder> <aem-publish-host>:<aem-publish-po
 $ bin\docker_run <src-folder> <aem-publish-host>:<aem-publish-port> <dispatcher-port>
 ```
 
->[!TAB Linux]
+>[!TAB 리눅스]
 
 ```shell
 $ ./bin/docker_run_hot_reload.sh <src-folder> <aem-publish-host>:<aem-publish-port> <dispatcher-port>
@@ -190,7 +191,7 @@ $ ./bin/docker_run_hot_reload.sh ./src host.docker.internal:4503 8080
 $ bin\docker_run src host.docker.internal:4503 8080
 ```
 
->[!TAB Linux]
+>[!TAB 리눅스]
 
 ```shell
 $ ./bin/docker_run_hot_reload.sh ./src host.docker.internal:4503 8080
@@ -216,7 +217,7 @@ $ ./bin/docker_run_hot_reload.sh ~/code/my-project/dispatcher/src host.docker.in
 $ bin\docker_run <User Directory>/code/my-project/dispatcher/src host.docker.internal:4503 8080
 ```
 
->[!TAB Linux]
+>[!TAB 리눅스]
 
 ```shell
 $ ./bin/docker_run_hot_reload.sh ~/code/my-project/dispatcher/src host.docker.internal:4503 8080
@@ -238,7 +239,7 @@ Dispatcher 디버깅에 유용한 매개 변수는 다음과 같습니다.
 + `REWRITE_LOG_LEVEL=Debug` apache HTTP 웹 서버 재작성 모듈 로깅을 디버그 수준으로 설정합니다.
    + 기본값은 입니다. `Warn`
 + `DISP_RUN_MODE` dispatcher 환경의 &quot;실행 모드&quot;를 설정하여 해당 실행 모드 Dispatcher 구성 파일을 로드합니다.
-   + 기본값은 입니다.`dev`
+   + 기본값은 입니다. `dev`
 + 유효한 값: `dev`, `stage`, 또는 `prod`
 
 하나 이상의 매개 변수를 로 전달할 수 있습니다. `docker_run`
@@ -257,7 +258,7 @@ $ DISP_LOG_LEVEL=Debug REWRITE_LOG_LEVEL=Debug ./bin/docker_run_hot_reload.sh ~/
 $ DISP_LOG_LEVEL=Debug REWRITE_LOG_LEVEL=Debug bin\docker_run <User Directory>/code/my-project/dispatcher/src host.docker.internal:4503 8080
 ```
 
->[!TAB Linux]
+>[!TAB 리눅스]
 
 ```shell
 $ DISP_LOG_LEVEL=Debug REWRITE_LOG_LEVEL=Debug ./bin/docker_run_hot_reload.sh ~/code/my-project/dispatcher/src host.docker.internal:4503 8080
@@ -371,7 +372,7 @@ Phase 3 finished
 + 명령 프롬프트에서 다음을 실행합니다. `ipconfig`및 호스트의 기록 __IPv4 주소__ 호스트 컴퓨터의
 + 그런 다음 를 실행합니다. `docker_run` 이 IP 주소 사용: `$ bin\docker_run src <HOST IP>:4503 8080`
 
->[!TAB Linux]
+>[!TAB 리눅스]
 
 + 터미널에서 다음을 실행합니다. `ifconfig` 및 호스트를 기록합니다. __아이넷__ IP 주소, 일반적으로 __en0__ 디바이스.
 + 그런 다음 실행 `docker_run` 호스트 IP 주소 사용: `$ bin/docker_run_hot_reload.sh src <HOST IP>:4503 8080`

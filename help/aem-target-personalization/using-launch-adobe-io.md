@@ -9,10 +9,11 @@ badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Sites 6.5" before-title="false"
 doc-type: Tutorial
 exl-id: b1d7ce04-0127-4539-a5e1-802d7b9427dd
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 748
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1057'
-ht-degree: 5%
+source-wordcount: '1021'
+ht-degree: 4%
 
 ---
 
@@ -26,7 +27,7 @@ ht-degree: 5%
    * 다음 솔루션으로 Experience Cloud 프로비저닝
       * [Adobe Experience Platform Launch](https://experiencecloud.adobe.com)
       * [Adobe Target](https://experiencecloud.adobe.com)
-      * [Adobe Developer Console](https://developer.adobe.com/console/)
+      * [Adobe Developer 콘솔](https://developer.adobe.com/console/)
 
      >[!NOTE]
      >Launch에서 개발, 승인, 게시, 확장 관리 및 환경 관리 권한이 있어야 합니다. 사용자 인터페이스 옵션을 사용할 수 없어서 이러한 단계를 완료할 수 없는 경우 Experience Cloud 관리자에게 연락하여 액세스 권한을 요청하십시오. Launch 권한에 대한 자세한 내용은 [설명서 참조](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).

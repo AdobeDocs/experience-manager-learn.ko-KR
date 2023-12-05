@@ -8,9 +8,10 @@ role: User
 level: Beginner
 exl-id: 8fbea634-7949-417f-a4d6-9e551fff63f3
 last-substantial-update: 2021-09-10T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 374
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
@@ -82,7 +83,7 @@ else
 * [양식 미리 보기](http://localhost:4502/content/dam/formsanddocuments/simpleform/jcr:content?wcmmode=disabled)
 * 지원자명을 입력하고 기혼으로 결혼 상태를 선택합니다.
 * 배우자명 입력
-* 다음을 클릭합니다
+* 다음 을 클릭합니다
 * 혼인 상태가 기혼인 경우 지원자 이름과 배우자 이름으로 채워진 확인란이 표시됩니다
 
 **시각적 편집기를 사용하여 항목 추가**

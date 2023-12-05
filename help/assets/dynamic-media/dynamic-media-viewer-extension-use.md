@@ -9,10 +9,11 @@ role: User
 level: Beginner
 doc-type: Feature Video
 exl-id: 9d807f4c-999c-45e6-a9db-6c1776bddda1
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 646
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 22%
+source-wordcount: '333'
+ht-degree: 17%
 
 ---
 
@@ -166,5 +167,5 @@ AEM Assets 전용 고객 또는 Dynamic Media Classic 고객의 경우 사용자
 ## 추가 리소스{#additional-resources}
 
 * [Adobe Experience Manager과 Adobe Launch 통합](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html)
-* [Dynamic Media Scene7 모드에서 Adobe Experience Manager 실행](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dms7.html?lang=ko)
+* [Dynamic Media Scene7 모드에서 Adobe Experience Manager 실행](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dms7.html?lang=en)
 * [Adobe Analytics 및 Adobe Launch와 Dynamic Media Viewer 통합](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-extension-use.html)

@@ -12,10 +12,11 @@ jira: KT-12557
 badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 exl-id: 43665a1e-4101-4b54-a6e0-d189e825073e
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 58
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 2%
+source-wordcount: '203'
+ht-degree: 1%
 
 ---
 
@@ -58,6 +59,6 @@ _satellite.setDebug(true)
 
 ![플랫폼 디버거](assets/platform-debugger.png)
 
-## 축하합니다
+## 축하합니다.
 
 AEM Forms as a Cloud Service을 Adobe Analytics과 통합하여 양식 데이터 필드에 대해 보고했습니다.

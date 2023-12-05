@@ -2,10 +2,7 @@
 title: SPA 편집기 프로젝트 | AEM SPA 편집기 및 Angular 시작하기
 description: AEM(Adobe Experience Manager) Maven 프로젝트를 SPA Editor와 통합된 Angular AEM 애플리케이션의 시작점으로 사용하는 방법에 대해 알아봅니다.
 feature: SPA Editor, AEM Project Archetype
-topics: development
 version: Cloud Service
-activity: develop
-audience: developer
 jira: KT-5309
 thumbnail: 5309-spa-angular.jpg
 topic: SPA
@@ -13,10 +10,11 @@ role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: 49fcd603-ab1a-4f1e-ae1f-49d3ff373439
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 353
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1097'
-ht-degree: 2%
+source-wordcount: '1002'
+ht-degree: 1%
 
 ---
 

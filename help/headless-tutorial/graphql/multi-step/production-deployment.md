@@ -10,10 +10,11 @@ mini-toc-levels: 1
 jira: KT-7131
 thumbnail: KT-7131.jpg
 exl-id: 8c8b2620-6bc3-4a21-8d8d-8e45a6e9fc70
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 655
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '2357'
-ht-degree: 9%
+source-wordcount: '2137'
+ht-degree: 5%
 
 ---
 
@@ -46,7 +47,7 @@ AEM Headless 애플리케이션의 가장 일반적인 배포 패턴은 애플�
 1. A **콘텐츠 작성자** 는 AEM 작성자 서비스를 사용하여 컨텐츠를 만들고, 편집하고, 관리합니다.
 2. **콘텐츠 작성자**&#x200B;와 기타 내부 사용자는 Author 서비스에서 직접 콘텐츠를 미리 볼 수 있습니다. Author 서비스에 연결하는 애플리케이션의 미리보기 버전을 설정할 수 있습니다.
 3. 콘텐츠가 승인되면 다음과 같을 수 있습니다. **게시됨** AEM Publish 서비스로 리디렉션됩니다.
-4. **최종 사용자는 애플리케이션의 프로덕션 버전과 상호 작용합니다.** 프로덕션 애플리케이션은 Publish 서비스에 연결하고 GraphQL API를 사용하여 콘텐츠를 요청하고 소비합니다.
+4. **최종 사용자** 애플리케이션의 프로덕션 버전과 상호 작용합니다. 프로덕션 애플리케이션은 Publish 서비스에 연결하고 GraphQL API를 사용하여 콘텐츠를 요청하고 소비합니다.
 
 자습서에서는 AEM Publish 인스턴스를 현재 설정에 추가하여 위의 배포를 시뮬레이션합니다. 이전 장에서는 React 앱을 작성자 인스턴스에 직접 연결하여 미리보기 역할을 했습니다. React 앱의 프로덕션 빌드는 새 게시 인스턴스에 연결하는 정적 Node.js 서버에 배포됩니다.
 
@@ -407,7 +408,7 @@ AEM은 기본적으로 안전하며 AEM이 아닌 웹 속성에서 클라이언�
 
 콘텐츠 조각 및 GraphQL에 대한 자세한 내용은 다음 리소스를 참조하십시오.
 
-* [GraphQL을 통해 콘텐츠 조각을 사용하여 Headless 콘텐츠 게재](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-graphql.html?lang=ko-KR)
+* [GraphQL에서 콘텐츠 조각을 사용하여 Headless 콘텐츠 게재](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-graphql.html?lang=ko-KR)
 * [콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html?lang=ko-KR)
 * [토큰 기반 인증](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication)
 * [AEM에 as a Cloud Service 코드 배포](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html?lang=en#cloud-manager)

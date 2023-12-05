@@ -1,10 +1,7 @@
 ---
 title: Cloud Manager Adobe 사용 - 활동
 description: Cloud Manager는 프로그램의 활동에 통합된 뷰를 제공하여 프로덕션 및 비프로덕션의 모든 CI/CD 파이프라인 실행을 나열합니다. 이를 통해 사용자는 현재 진행 중인 파이프라인을 보고 이전 배포를 검토할 수 있습니다.
-topics: Administration
-audience: administrator
 doc-type: feature video
-activity: use
 version: Cloud Service
 jira: KT-6874
 thumbnail: 26319.jpg
@@ -13,9 +10,10 @@ feature: Cloud Manager, Code Deployment
 role: Architect, Developer, Admin
 level: Beginner
 exl-id: 82a9d00f-abe6-4600-92b1-41b5f0b5e352
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 62
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '108'
+source-wordcount: '102'
 ht-degree: 0%
 
 ---

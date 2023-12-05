@@ -11,10 +11,11 @@ thumbnail: 5332-collect-data-analytics.jpg
 badgeIntegration: label="통합" type="positive"
 doc-type: Tutorial
 exl-id: 33f2fd25-8696-42fd-b496-dd21b88397b2
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 694
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '2468'
-ht-degree: 4%
+source-wordcount: '2307'
+ht-degree: 1%
 
 ---
 
@@ -82,7 +83,7 @@ AEM 환경을 설정하고 WKND 코드 베이스를 설치하는 대신 Experien
 다음 [WKND 참조 프로젝트](https://github.com/adobe/aem-guides-wknd) 은(는) AEM 핵심 구성 요소로 구축되었으며 [Adobe 클라이언트 데이터 레이어 활성화됨](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation) 기본적으로. 그런 다음 Adobe 클라이언트 데이터 레이어 가 활성화되어 있는지 확인합니다.
 
 1. 다음으로 이동 [WKND 사이트](https://wknd.site/us/en.html).
-1. 브라우저의 개발자 도구를 열고 로 이동합니다. **콘솔**. 다음 명령을 실행합니다:
+1. 브라우저의 개발자 도구를 열고 로 이동합니다. **콘솔**. 다음 명령을 실행합니다.
 
    ```js
    adobeDataLayer.getState();
@@ -121,7 +122,7 @@ Adobe 클라이언트 데이터 레이어는 **이벤트 주도** 데이터 계�
 1. Experience Platform 로 이동하고 AEM Site와 통합된 태그 속성으로 이동합니다.
 1. 다음 위치로 이동 **규칙** 섹션을 태그 속성 UI에서 **새 규칙 만들기**.
 
-   ![규칙 작성](assets/collect-data-analytics/analytics-create-rule.png)
+   ![규칙 만들기](assets/collect-data-analytics/analytics-create-rule.png)
 
 1. 규칙 이름을 지정합니다 **페이지 로드됨**.
 1. 다음에서 **이벤트** 하위 섹션, 클릭 **추가** 을(를) 열려면 **이벤트 구성** 마법사.

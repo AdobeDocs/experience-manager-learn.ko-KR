@@ -10,10 +10,11 @@ jira: KT-5882
 thumbnail: KT-5882.jpg
 last-substantial-update: 2022-10-06T00:00:00Z
 exl-id: 4846a394-cf8e-4d52-8f8b-9e874f2f457b
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 148
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 28%
+source-wordcount: '598'
+ht-degree: 26%
 
 ---
 
@@ -72,6 +73,6 @@ Adobe Admin Console에서 Adobe IMS 사용자, 사용자 그룹 및 제품 프�
 
 다음 설명서 표지 [Adobe Admin Console](https://adminconsole.adobe.com)- Adobe Admin Console을 더 잘 이해하고 이를 사용하여 사용자와 Experience Cloud 제품 간 액세스를 관리하는 데 도움이 될 수 있는 구체적인 세부 정보 및 우려 사항.
 
-+ [Adobe Admin Console ID 개요](https://helpx.adobe.com/kr/enterprise/using/identity.html)
++ [Adobe Admin Console Identity 개요](https://helpx.adobe.com/kr/enterprise/using/identity.html)
 + [Adobe Admin Console 관리자 역할](https://helpx.adobe.com/enterprise/using/admin-roles.html)
 + [Adobe Admin Console 개발자 역할](https://helpx.adobe.com/enterprise/using/manage-developers.html)

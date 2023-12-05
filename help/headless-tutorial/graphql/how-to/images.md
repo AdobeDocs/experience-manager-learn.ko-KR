@@ -10,10 +10,11 @@ jira: KT-10253
 thumbnail: KT-10253.jpeg
 last-substantial-update: 2023-04-19T00:00:00Z
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 449
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '934'
-ht-degree: 6%
+source-wordcount: '901'
+ht-degree: 5%
 
 ---
 
@@ -95,7 +96,7 @@ query($path: String!, $imageFormat: AssetTransformFormat=JPG, $imageSeoName: Str
 
 다음 `_assetTransform` 은(는) `_dynamicUrl` 는 제공된 이미지 렌디션을 최적화하도록 구성됩니다. URL의 쿼리 매개 변수를 변경하여 웹에 최적화된 이미지 URL을 클라이언트에서 조정할 수도 있습니다.
 
-| GraphQL 매개 변수 | URL 매개 변수 | 설명 | 필수 | GraphQL 변수 값 | URL 매개 변수 값 | URL 매개 변수 예 |
+| GraphQL 매개 변수 | URL 매개변수 | 설명 | 필수 | GraphQL 변수 값 | URL 매개 변수 값 | URL 매개 변수 예 |
 |:---------|:----------|:-------------------------------|:--:|:--------------------------|:---|:--|
 | `format` | N/A | 이미지 에셋의 형식입니다. | ✔ | `GIF`, `PNG`, `PNG8`, `JPG`, `PJPG`, `BJPG`,  `WEBP`, `WEBPLL`, `WEBPLY` | N/A | N/A |
 | `seoName` | N/A | URL의 파일 세그먼트 이름입니다. 제공되지 않으면 이미지 자산 이름이 사용됩니다. | ✘ | 영숫자, `-`, 또는 `_` | N/A | N/A |

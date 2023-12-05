@@ -1,15 +1,15 @@
 ---
 title: AEM Sites 성숙도 평가
 description: 이 체크리스트는 AEM Sites 인스턴스의 완성도를 평가할 때 사용자와 팀이 응답해야 하는 주요 질문에 대한 개요를 제공합니다
-audience: author, marketer, developer
 role: Admin
 level: Intermediate
 topic: Administration
 feature: Learn From Your Peers
 exl-id: 22164a0e-7239-43f4-8356-c12f68133255
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+duration: 83
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '308'
 ht-degree: 0%
 
 ---

@@ -9,9 +9,10 @@ role: Developer
 level: Intermediate
 exl-id: 1f13d82e-c1d0-4c8c-8468-b4a4c5897c71
 last-substantial-update: 2021-02-09T00:00:00Z
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+duration: 259
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
@@ -20,7 +21,7 @@ ht-degree: 0%
 
 AEM Forms 6.4부터 이제 양식 데이터 모델 서비스를 AEM Workflow의 일부로 사용할 수 있습니다. 다음 비디오는 AEM Workflow에서 양식 데이터 모델 단계를 구성하는 데 필요한 단계를 안내합니다
 
->!![NOTE]이 비디오에서 설명하는 기능을 사용하려면 AEM Forms 6.5.1이 필요합니다
+>이 비디오에서 설명하는 기능을 사용하려면 AEM Forms 6.5.1이 필요합니다
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/28145?quality=12&learn=on)
@@ -29,7 +30,7 @@ AEM Forms 6.4부터 이제 양식 데이터 모델 서비스를 AEM Workflow의 
 
 * 설명된 대로 SampleRest.war 파일로 tomcat 설정 [여기](https://helpx.adobe.com/experience-manager/kt/forms/using/preparing-datasource-for-form-data-model-tutorial-use.html).Tomcat에 배포된 war 파일에는 지원자의 크레딧 점수를 반환하는 코드가 있습니다.크레딧 점수는 200에서 800 사이의 임의의 숫자입니다
 
-* [ 패키지 관리자를 사용하여 AEM에 에셋 가져오기](assets/aem65-loanapplication.zip)
+* [패키지 관리자를 사용하여 AEM에 에셋 가져오기](assets/aem65-loanapplication.zip)
 * 패키지에는 다음 항목이 포함되어 있습니다.
 
    * FDM 단계를 사용하는 워크플로우 모델.

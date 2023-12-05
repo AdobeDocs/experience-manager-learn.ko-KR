@@ -2,17 +2,17 @@
 title: 양식 데이터를 나열할 구성 요소 만들기
 description: 제출 전 양식 데이터 검토를 위한 요약 구성 요소 생성 자습서.
 feature: Adaptive Forms
-topics: development
-doc-type: tutorial
+doc-type: Tutorial
 version: 6.4,6.5
 topic: Development
 role: Developer
 level: Experienced
 last-substantial-update: 2023-01-22T00:00:00Z
 exl-id: d537a80a-de61-4d43-bdef-f7d661c43dc8
-source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
+duration: 49
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '179'
+source-wordcount: '169'
 ht-degree: 1%
 
 ---

@@ -2,21 +2,19 @@
 title: asset compute 메타데이터 작업자 개발
 description: 이미지 에셋에서 가장 일반적으로 사용되는 색상을 파생하고 색상 이름을 AEM의 에셋 메타데이터에 다시 작성하는 Asset compute 메타데이터 작업자를 만드는 방법을 알아봅니다.
 feature: Asset Compute Microservices
-topics: metadata, development
 version: Cloud Service
-activity: develop
-audience: developer
-doc-type: tutorial
+doc-type: Tutorial
 jira: KT-6448
 thumbnail: 327313.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 6ece6e82-efe9-41eb-adf8-78d9deed131e
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 526
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1433'
-ht-degree: 1%
+source-wordcount: '1405'
+ht-degree: 0%
 
 ---
 
@@ -275,7 +273,7 @@ $ aio app deploy
          + 키: `colorFamily`
          + 값: `pantone`
             + 지원되는 값: `basic`, `hex`, `html`, `ntc`, `pantone`, `roygbiv`
-   + __MIME 유형__
+   + __Mime 유형__
       + __포함 사항:__ `image/jpeg`, `image/png`, `image/gif`, `image/svg`
          + 색상을 파생하는 데 사용되는 타사 npm 모듈에서 지원되는 유일한 MIME 유형입니다.
       + __제외:__ `Leave blank`
@@ -301,7 +299,7 @@ $ aio app deploy
 
 ## 자산 처리 중
 
-![자산 세부 정보](./assets/metadata/asset-details.png)
+![자산 세부 사항](./assets/metadata/asset-details.png)
 
 1. AEM Author 서비스에서 다음 위치로 이동합니다. __에셋 > 파일__
 1. 폴더 또는 하위 폴더로 이동하면 처리 프로필이 적용됩니다.

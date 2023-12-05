@@ -7,9 +7,10 @@ topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: 2122ab13-f9df-4f36-9c7e-8980033c3b10
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+duration: 884
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1989'
+source-wordcount: '1991'
 ht-degree: 1%
 
 ---
@@ -34,7 +35,7 @@ ht-degree: 1%
 
 ## 목표 {#objectives}
 
-* 콘텐츠 조각 모델 만들기.
+* 콘텐츠 조각 모델을 만듭니다.
 * 모델에 탭 자리 표시자, 날짜 및 시간, JSON 개체, 조각 참조 및 콘텐츠 참조를 추가합니다.
 * 콘텐츠 참조에 유효성 검사를 추가합니다.
 
@@ -48,7 +49,7 @@ ht-degree: 1%
 
 WKND 앱을 위한 몇 가지 콘텐츠 조각 모델을 만들어 보겠습니다. 콘텐츠 조각 모델 생성에 대한 기본적인 소개가 필요한 경우 [기본 자습서](../multi-step/content-fragment-models.md).
 
-1. 다음으로 이동 **도구** > **일반** > **컨텐츠 조각 모델**.
+1. **도구** > **일반** > **콘텐츠 조각 모델**&#x200B;로 이동합니다.
 
    ![컨텐츠 조각 모델 경로](assets/define-content-fragment-models/content-fragment-models-path.png)
 

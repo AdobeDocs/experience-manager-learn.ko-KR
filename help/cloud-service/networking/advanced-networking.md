@@ -10,10 +10,11 @@ jira: KT-9354
 thumbnail: KT-9354.png
 last-substantial-update: 2022-10-13T00:00:00Z
 exl-id: d1c1a3cf-989a-4693-9e0f-c1b545643e41
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 157
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '468'
-ht-degree: 5%
+source-wordcount: '450'
+ht-degree: 2%
 
 ---
 
@@ -21,7 +22,7 @@ ht-degree: 5%
 
 AEM as a Cloud Service은 AEM as a Cloud Service 프로그램에 대한 연결 및 연결을 정확하게 관리할 수 있는 고급 네트워킹 기능을 제공합니다.
 
-|                                                   | [제작 프로그램](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs.html) | [샌드박스 프로그램](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html) |
+|                                                   | [프로덕션 프로그램](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs.html) | [샌드박스 프로그램](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html) |
 |---------------------------------------------------|:-----------------------:|:---------------------:|
 | 고급 네트워킹 지원 | ✔ | ✘ |
 
@@ -60,7 +61,7 @@ AEM 고급 네트워킹은 외부 서비스와의 연결을 관리하는 세 가
     </td>   
    <td>
       <a  href="./vpn.md"><img alt="Virtual Private Network(VPN)" src="./assets/vpn.png"/></a>
-      <div><strong><a href="./vpn.md">Virtual Private Network(VPN)</a></strong></div>
+      <div><strong><a href="./vpn.md">가상 사설망(VPN)</a></strong></div>
       <p>
         고객 또는 공급업체 인프라와 AEM 간의 트래픽을 as a Cloud Service으로 보호합니다.
       </p>

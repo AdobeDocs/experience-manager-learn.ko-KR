@@ -9,10 +9,11 @@ version: Cloud Service
 topic: Development
 jira: KT-8844
 exl-id: 9a7ed792-ca0d-458f-b8dd-9129aba37df6
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 125
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 3%
+source-wordcount: '501'
+ht-degree: 0%
 
 ---
 
@@ -81,7 +82,7 @@ aem 뱅킹 애플리케이션 프로젝트 내의 프로젝트(예: ui.content )
 
 * 명령 프롬프트를 열고 c:\aemformscs\aem-sdk\author으로 이동한 후 다음 명령을 입력합니다 java -jar aem-author-p4502.jar -gui. 이렇게 하면 AEM 설치가 시작됩니다.
 * 관리자/관리자 자격 증명을 사용하여 로그인
-* AEM 인스턴스를 중지합니다
+* AEM 인스턴스 중지
 * 다음 폴더 구조를 만듭니다.C:\aemformscs\aem-sdk\author\crx-quickstart\install
 * 설치 폴더에 aem-forms-addon-xxxxxx.far 복사
 * 명령 프롬프트를 열고 c:\aemformscs\aem-sdk\author으로 이동한 후 다음 명령을 입력합니다 java -jar aem-author-p4502.jar -gui. 이렇게 하면 AEM 인스턴스에 양식 추가 기능 패키지가 배포됩니다.

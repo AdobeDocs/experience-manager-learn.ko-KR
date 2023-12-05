@@ -9,9 +9,10 @@ level: Beginner
 thumbnail: xx.jpg
 doc-type: Article
 exl-id: 461873a1-1edf-43a3-b4a3-14134f855d86
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 751
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '2223'
+source-wordcount: '2227'
 ht-degree: 0%
 
 ---
@@ -132,7 +133,7 @@ $ find /mnt/var/www/html/ -type f -name ".stat"
 
 이 파일 수준을 너무 낮게 설정하면 플러시 요청이 의도한 것보다 많은 것을 지울 수 있습니다.  그러면 캐시에서 더 적은 요청이 제공되어 캐시가 더 자주 이탈하여 성능 문제가 발생할 수 있습니다.
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>메모:</b>
+<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>참고:</b>
 
 설정 `statfilelevel` 합리적인 수준에서.  폴더 구조를 보고 너무 많은 디렉토리를 탐색하지 않고 간결한 플러시를 허용하도록 설정되어 있는지 확인합니다.   시스템의 성능 테스트 중에 사용자의 요구 사항에 맞는지 테스트하여 확인합니다.
 
@@ -275,7 +276,7 @@ Apache 문서 루트의 하위 폴더를 활성화하는 각 팜당 중첩된 do
    - `/var/www/html/content/damn/brand1/en/us/.stat`
 
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>메모:</b>
+<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>참고:</b>
 
 타임스탬프 핸드쉐이크가 발생할 때 가장 가까운 곳을 찾습니다 `.stat` 파일.
 

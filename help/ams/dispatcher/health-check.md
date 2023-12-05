@@ -9,10 +9,11 @@ level: Beginner
 thumbnail: xx.jpg
 doc-type: Article
 exl-id: 69b4e469-52cc-441b-b6e5-2fe7ef18da90
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 355
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1139'
-ht-degree: 1%
+source-wordcount: '1143'
+ht-degree: 0%
 
 ---
 
@@ -130,7 +131,7 @@ RELOAD_MODE='author'
 - 작성자
    - 기본 옵션입니다.
    - 비정상인 경우 작성자를 위한 유지 관리 페이지가 표시됩니다.
-- 페이지를
+- 게시
    - 이 옵션은 게시자가 정상이 아닐 때 유지 관리 페이지를 표시합니다.
 - 모두
    - 이 옵션은 작성자 또는 게시자 둘 다에 대한 유지 관리 페이지를 설정하며 상태가 정상이 아닌 경우 이 페이지를 설정합니다.

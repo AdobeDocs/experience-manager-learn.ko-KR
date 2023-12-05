@@ -8,10 +8,11 @@ role: Developer
 level: Experienced
 exl-id: 64b586a6-e9ef-4a3d-8528-55646ab03cc4
 last-substantial-update: 2021-04-09T00:00:00Z
-source-git-commit: 2dceb4dd4ee1079c100c9cbca94332d61d17ef57
+duration: 74
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 3%
+source-wordcount: '205'
+ht-degree: 1%
 
 ---
 
@@ -33,7 +34,7 @@ ht-degree: 3%
 | jcr:description | CustomSubmitHelpx |
 
 
-* 변경 사항을 저장합니다
+* 변경 내용 저장
 * POST CustomSubmitHelpx 노드 아래에 post.user.jsp라는 새 파일을 만듭니다.적응형 양식이 제출되면 이 JSP가 호출됩니다. 이 파일에서 요구 사항에 따라 JSP 코드를 작성할 수 있습니다. 다음 코드는 요청을 서블릿에 전달합니다.
 
 ```java

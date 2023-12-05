@@ -10,9 +10,10 @@ jira: KT-11862
 thumbnail: KT-11862.png
 last-substantial-update: 2023-02-15T00:00:00Z
 exl-id: 1d1bcb18-06cd-46fc-be2a-7a3627c1e2b2
-source-git-commit: 27d065761643030de68176ebb4ca10bc152844df
+duration: 883
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '671'
 ht-degree: 0%
 
 ---
@@ -126,7 +127,7 @@ $ aio aem:rde:install --help
 
 ### OSGi 번들 배포
 
-OSGi 번들을 배포하는 방법에 대해 알아보려면 를 향상하겠습니다. `HelloWorldModel` Java™ 클래스 및 RDE에 배포
+OSGi 번들을 배포하는 방법에 대해 알아보려면 다음을 향상하겠습니다. `HelloWorldModel` Java™ 클래스 및 RDE에 배포
 
 1. 를 엽니다. `HelloWorldModel.java` 파일 출처: `core/src/main/java/com/adobe/aem/guides/wknd/core/models` 폴더
 1. 업데이트 `init()` 메서드를 다음과 같이 바꿉니다.

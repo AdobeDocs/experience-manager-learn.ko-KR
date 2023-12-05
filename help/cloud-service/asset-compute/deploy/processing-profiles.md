@@ -2,21 +2,19 @@
 title: AEM 처리 프로필과 Asset compute 작업자 통합
 description: AEM as a Cloud Service은 AEM Assets 처리 프로필을 통해 Adobe I/O Runtime에 배포된 Asset compute 작업자와 통합됩니다. 처리 프로필은 사용자 정의 작업자를 사용하여 특정 에셋을 처리하고 작업자가 생성한 파일을 에셋 변환으로 저장하도록 작성자 서비스에 구성됩니다.
 feature: Asset Compute Microservices
-topics: renditions, development
 version: Cloud Service
-activity: develop
-audience: developer
-doc-type: tutorial
+doc-type: Tutorial
 jira: KT-6287
 thumbnail: KT-6287.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 1b398c8c-6b4e-4046-b61e-b44c45f973ef
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 179
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 2%
+source-wordcount: '622'
+ht-degree: 0%
 
 ---
 
@@ -54,7 +52,7 @@ asset compute 작업자가 AEMas a Cloud Service 에서 사용자 정의 렌디�
          + 키: `brightness`
          + 값: `0.10`
       + asset compute 작업자에게 전달되고 를 통해 사용할 수 있는 이러한 키/값 쌍 `rendition.instructions` JavaScript 개체입니다.
-   + __MIME 유형__
+   + __Mime 유형__
       + __포함 사항:__ `image/jpeg`, `image/png`, `image/gif`, `image/bmp`, `image/tiff`
          + 이 MIME 유형은 작업자의 npm 모듈에만 해당됩니다. 이 목록은 사용자 정의 작업자가 처리하는 것을 제한합니다.
       + __제외:__ `Leave blank`
@@ -75,7 +73,7 @@ asset compute 작업자가 AEMas a Cloud Service 에서 사용자 정의 렌디�
 
    ![생성된 렌디션](./assets/processing-profiles/rendition.png)
 
-## 완료됨!
+## 완료되었습니다.
 
 축하합니다! 다음을 완료했습니다. [튜토리얼](../overview.md) AEM as a Cloud Service Asset compute 마이크로서비스를 확장하는 방법에 대해 알아보십시오! 이제 AEM as a Cloud Service 작성자 서비스에서 사용할 사용자 정의 Asset compute 작업자를 설정, 개발, 테스트, 디버그 및 배포할 수 있는 권한이 있어야 합니다.
 

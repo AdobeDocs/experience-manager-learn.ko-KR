@@ -4,14 +4,14 @@ description: 관리자, 작성자 또는 개발자이든 사이트 유지 관리
 role: Admin
 level: Beginner, Intermediate
 topic: Administration
-audience: author, marketer, developer
 feature: Learn From Your Peers
 jira: KT-14255
 exl-id: 37ee3234-f91c-4f0a-b0b7-b9167e7847a9
-source-git-commit: 3752e22455020b58d23524f7e6a99414e773422d
+duration: 266
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1084'
-ht-degree: 7%
+source-wordcount: '998'
+ht-degree: 3%
 
 ---
 
@@ -39,7 +39,7 @@ AEM 인스턴스의 설치 및 유지 관리에 대한 세 가지 옵션이 있�
 
 ### 일상적인 유지 관리
 
-#### [인덱스 유지 관리](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=ko)
+#### [인덱스 유지 관리](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=en)
 
 인덱스를 통해 쿼리를 최대한 신속하게 실행할 수 있으므로 다른 작업에 필요한 리소스를 확보할 수 있습니다. 색인이 맨 위 셰이프인지 확인합니다. AEM은 인덱스를 사용하는 대신 트래버스하는 쿼리를 취소하여 잘못된 쿼리 하나가 전체 AEM 성능에 영향을 주지 않도록 합니다.
 
@@ -63,7 +63,7 @@ AEM의 에셋이 삭제되면 기본 데이터 저장소 레코드에 대한 참
 
 감사 로깅에 적합한 AEM 이벤트는 많은 보관된 데이터를 생성합니다. 이 데이터는 복제, 에셋 업로드 및 기타 시스템 활동으로 인해 시간이 지남에 따라 빠르게 증가할 수 있습니다.
 
-#### [보안](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html?lang=ko-KR)
+#### [보안](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html?lang=en)
 
 AEM의 가장 안전한 인스턴스를 보장하기 위해 보안 체크리스트 모범 사례 를 철저히 준수해야 합니다.
 

@@ -2,10 +2,7 @@
 title: AEM Workflow를 트리거하는 적응형 양식 구성 개요
 description: 양식 제출 시 AEM 워크플로우를 트리거할 때 페이로드 옵션 구성
 feature: Workflow
-topics: integrations
-audience: developer
 doc-type: article
-activity: setup
 version: 6.4,6.5
 jira: KT-5407
 thumbnail: 40258.jpg
@@ -14,10 +11,11 @@ role: Developer
 level: Beginner
 exl-id: 9f1dbd02-774a-4b84-90fa-02d4e468cbac
 last-substantial-update: 2020-07-07T00:00:00Z
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 591
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '165'
-ht-degree: 3%
+source-wordcount: '148'
+ht-degree: 1%
 
 ---
 

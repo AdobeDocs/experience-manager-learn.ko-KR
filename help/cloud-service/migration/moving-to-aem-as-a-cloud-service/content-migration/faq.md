@@ -10,10 +10,11 @@ level: Beginner
 jira: KT-11200
 thumbnail: kt-11200.jpg
 exl-id: bdec6cb0-34a0-4a28-b580-4d8f6a249d01
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 580
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '2296'
-ht-degree: 1%
+source-wordcount: '2146'
+ht-degree: 0%
 
 ---
 
@@ -46,7 +47,7 @@ CTT 관련 Adobe 지원 티켓을 만드는 동안 자세한 내용을 제공하
 
 ### 질문: CTT를 사용하여 전송할 수 있는 콘텐츠 양에 제한이 있습니까?
 
-아니요. 도구로서의 CTT는 AEM 소스에서 추출하여 AEMaaCS로 수집할 수 있습니다. 그러나 AEMaaCS 플랫폼에는 마이그레이션 전에 고려해야 하는 특정 제한이 있습니다.
+아니. 도구로서의 CTT는 AEM 소스에서 추출하여 AEMaaCS로 수집할 수 있습니다. 그러나 AEMaaCS 플랫폼에는 마이그레이션 전에 고려해야 하는 특정 제한이 있습니다.
 
 자세한 내용은 다음을 참조하십시오. [클라우드 마이그레이션 사전 요구 사항](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html).
 
@@ -167,7 +168,7 @@ CTT 프로세스에는 아래 리소스에 대한 연결이 필요합니다.
 
 ### Q: AEMaaCS에서 에셋을 수집한 후 자동으로 재처리됩니까?
 
-아니요. 자산을 처리하려면 재처리 요청이 시작되어야 합니다.
+아니. 자산을 처리하려면 재처리 요청이 시작되어야 합니다.
 
 ### Q: AEMaaCS에서 수집 후 자산이 자동으로 다시 인덱싱됩니까?
 

@@ -9,10 +9,11 @@ level: Beginner
 thumbnail: xx.jpg
 doc-type: Article
 exl-id: 7be6b3f9-cd53-41bc-918d-5ab9b633ffb3
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 376
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '826'
-ht-degree: 1%
+source-wordcount: '825'
+ht-degree: 0%
 
 ---
 
@@ -222,7 +223,7 @@ $ cp /etc/httpd/conf.d/available_vhosts/aem_publish.vhost /etc/httpd/conf.d/avai
 
 기존의 aem_publish.vhost 파일을 복사했습니다. 이미 작업을 수행하는 데 필요한 것이 있고, 이미 멋지게 시작을 했는데 다시 시작하고 싶지 않기 때문입니다.  이제 새로운 weretail.vhost 파일을 편집하고 필요한 사항을 변경합니다.
 
-이전:
+전:
 
 ```
 VirtualHost *:80
@@ -278,7 +279,7 @@ $ cp /etc/httpd/conf.dispatcher.d/available_farms/999_ams_publish_farm.any /etc/
 
 이 팜 파일에 적용해야 하는 변경 사항을 표시해 보겠습니다.
 
-이전:
+전:
 
 ```
 /publishfarm {  
@@ -308,7 +309,7 @@ $ cd /etc/httpd/conf.dispatcher.d/enabled_farms/; ln -s ../available_farms/400_w
 
 이제 웹 서버 서비스를 다시 로드하고 새 도메인을 사용합니다!
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>메모:</b>
+<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>참고:</b>
 
 기본 구성 파일과 함께 제공되는 기존 포함 및 코드를 활용하고 변경하는 데 필요한 부분만 변경했습니다.  변경해야 하는 요소만 기술하면 됩니다.  작업을 훨씬 쉽게 만들고 더 적은 코드를 유지 관리할 수 있습니다.
 </div>

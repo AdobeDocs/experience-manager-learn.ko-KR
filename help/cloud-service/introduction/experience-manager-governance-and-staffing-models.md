@@ -3,9 +3,10 @@ title: 거버넌스 및 인력 모델 및 원형
 description: Adobe Experience Manager(AEM) 플랫폼을 운영하고 노력하여 가치를 극대화하는 방법을 알아봅니다.
 solution: Experience Manager
 exl-id: 808ab7a6-5ec5-4bbd-9a6e-cfc0b447430d
-source-git-commit: dcd69c7444eae0f8c86464c1963bff35e6f11238
+duration: 333
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1133'
+source-wordcount: '1147'
 ht-degree: 0%
 
 ---
@@ -42,7 +43,7 @@ AEM을 실행하고 운영하려면 다음 요소를 고려하십시오.
 
 ### 높은 수준 AEM Asset 역할
 
-**일반 간격:** 이 기준선은 중앙 및 분산 모델을 지원합니다. 탈중앙화된 모델을 보유하고 있다면 AEM을 추상적으로 사용할 수 있다. 제품 소유자 역할을 창의적으로 사용해야 하지만 한 유형의 자산에 대해 다른 스타일을 소유하는 제품 소유자와 조직 전체를 감독하는 제품 소유자가 있어야 합니다.
+**일반 간격:** 이 기준선은 중앙 및 분산 모델을 지원합니다. 탈중앙화된 모델을 보유하고 있다면 AEM을 추상적으로 사용할 수 있다. 제품 소유자 역할은 창의적으로 사용해야 하지만 한 유형의 자산에 대해 다른 스타일을 소유하는 제품 소유자와 조직 전체를 감독하는 제품 소유자가 있어야 합니다.
 
 1. 기본 실행 및 운영 역할
 

@@ -1,10 +1,7 @@
 ---
 title: Adobe Cloud Manager - CI/CD 프로덕션 파이프라인 사용
 description: CI/CD 프로덕션 파이프라인을 사용하여 스테이지를 통해 코드를 빌드하고 프로덕션 환경에 배포하여 가치 창출 시간을 단축합니다. CI/CD 프로덕션 파이프라인 구성은 파이프라인을 시작하는 트리거, 프로덕션 배포를 제어하는 매개변수 및 성능 테스트 매개변수를 정의합니다.
-topics: Administration
-audience: administrator
 doc-type: feature video
-activity: use
 version: Cloud Service
 kt: 6872, 6875
 thumbnail: 26317.jpg
@@ -13,10 +10,11 @@ feature: Cloud Manager, CI-CD Pipeline
 role: Architect, Developer, Admin
 level: Beginner
 exl-id: c4f5667a-0da2-490b-9d55-9fbde21db595
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+duration: 423
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '147'
+ht-degree: 53%
 
 ---
 

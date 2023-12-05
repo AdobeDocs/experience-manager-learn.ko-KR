@@ -4,10 +4,11 @@ description: 초보자 및 숙련된 AEM Forms 개발자를 위한 AEM Forms 리
 topic: Development
 role: Developer
 exl-id: c1972937-56c5-47af-9232-f31bdf69dfbe
-source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
+duration: 152
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 8%
+source-wordcount: '405'
+ht-degree: 5%
 
 ---
 
@@ -18,16 +19,13 @@ Adobe Experience Manager(AEM)는 백엔드 프로세스, 비즈니스 규칙 및
 ## 새로운 기능
 
 * **[양식 데이터 모델 서비스 호출 단계에서 오류 메시지 처리](./adaptive-forms/handling-error-messages-in-invoke-fdm-step.md)**
-
-   *워크플로우 모델의 변수는 해당 데이터 유형을 기반으로 값을 저장하는 방법입니다*
+  *워크플로우 모델의 변수는 해당 데이터 유형을 기반으로 값을 저장하는 방법입니다*
 
 * **[대화형 통신 문서의 다중 시리즈 차트(비디오)](./interactive-communications/multiseriescharts.md)**
-
-   *동일한 차트에 둘 이상의 시리즈를 표시합니다. 여러 계열 차트는 일반적으로 선, 막대, 열 차트 유형과 관련하여 사용됩니다.*
+  *동일한 차트에 둘 이상의 시리즈를 표시합니다. 여러 계열 차트는 일반적으로 선, 막대, 열 차트 유형과 관련하여 사용됩니다.*
 
 * **[재사용 가능한 워크플로우 모델 만들기](./adaptive-forms/re-usable-aem-forms-workflow-models-article.md)**
-
-   *특정 양식에 연결되지 않은 워크플로 모델 만들기*
+  *특정 양식에 연결되지 않은 워크플로 모델 만들기*
 
 ## 직원 추천
 

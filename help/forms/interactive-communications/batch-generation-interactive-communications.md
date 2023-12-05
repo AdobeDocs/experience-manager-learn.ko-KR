@@ -2,26 +2,24 @@
 title: 대화형 통신 문서 생성을 위해 배치 API 사용
 description: 일괄 처리 API를 사용하여 인쇄 채널 문서를 생성하기 위한 샘플 에셋
 feature: Interactive Communication
-topics: development
-audience: developer
 doc-type: article
-activity: implement
 version: 6.5
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: 2cdf37e6-42ad-469a-a6e4-a693ab2ca908
 last-substantial-update: 2019-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 109
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '414'
-ht-degree: 16%
+source-wordcount: '371'
+ht-degree: 13%
 
 ---
 
 # 일괄 처리 API
 
-배치 API를 사용하여 템플릿에서 여러 대화형 커뮤니케이션을 생성할 수 있습니다. 템플릿은 데이터가 없는 대화형 커뮤니케이션입니다. 배치 API는 데이터를 템플릿과 결합하여 대화형 커뮤니케이션을 생성합니다. API는 대량의 대화형 커뮤니케이션 제작 시 유용합니다. 예를 들면 여러 고객을 위한 전화 요금 청구서, 신용 카드 명세서 등이 있습니다.
+배치 API를 사용하여 템플릿에서 여러 대화형 커뮤니케이션을 생성할 수 있습니다. 템플릿은 데이터가 없는 대화형 커뮤니케이션입니다. 배치 API는 데이터를 템플릿과 결합하여 대화형 커뮤니케이션을 생성합니다. API는 대량의 대화형 커뮤니케이션 제작 시 유용합니다. 예를 들어 여러 고객을 위한 전화 요금 청구서, 신용 카드 명세서 등이 있습니다.
 
 [일괄 생성 API에 대해 자세히 알아보기](https://experienceleague.adobe.com/docs/experience-manager-65/forms/interactive-communications/generate-multiple-interactive-communication-using-batch-api.html)
 
@@ -38,7 +36,7 @@ ht-degree: 16%
 2. 일괄 처리APIWatchedFolder를 선택하고 Edit를 클릭합니다.
 3. 경로를 운영 체제와 일치하도록 변경합니다.
 
-![경로](assets/watched-folder-batch-api-basic.PNG)
+![path](assets/watched-folder-batch-api-basic.PNG)
 
 * 콘텐츠 다운로드 및 추출 [zip 파일](assets/jsonfile.zip). zip 파일에 라는 폴더가 포함되어 있습니다. `jsonfile` 다음 포함 `beneficiaries.json` 파일. 이 파일에는 3개의 문서를 생성할 수 있는 데이터가 있습니다.
 

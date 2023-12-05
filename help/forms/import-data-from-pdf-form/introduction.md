@@ -8,10 +8,11 @@ role: Developer
 level: Beginner
 jira: KT-14196
 exl-id: a9ad8f4d-695e-4eb3-8d35-a399d1700f90
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 30
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '96'
-ht-degree: 7%
+source-wordcount: '89'
+ht-degree: 4%
 
 ---
 
@@ -29,7 +30,7 @@ ht-degree: 7%
 
 * [이 문서에 따라 설정된 개발 환경](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)
 
-* AEM Forms Designer
+* AEM Forms 디자이너
 
 * Acrobat 또는 Reader
 

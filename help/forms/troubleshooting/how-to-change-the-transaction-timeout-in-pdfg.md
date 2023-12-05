@@ -1,6 +1,6 @@
 ---
 title: PDFG 서비스에서 애플리케이션 서버의 트랜잭션 시간 제한을 변경하는 방법
-description: PDF 생성기에 대한 애플리케이션 서버의 트랜잭션 시간 제한을 늘리거나 줄이는 단계
+description: PDF Generator을 위해 애플리케이션 서버의 트랜잭션 시간 제한을 늘리거나 줄이는 단계
 type: Troubleshooting
 role: Admin
 level: Beginner
@@ -9,7 +9,8 @@ feature: PDF Generator
 topic: Administration
 index: y
 exl-id: ec190f18-1ab8-4fac-adec-3b64caee290a
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+duration: 93
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
 source-wordcount: '59'
 ht-degree: 0%

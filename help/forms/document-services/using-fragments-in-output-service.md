@@ -8,10 +8,11 @@ role: Developer
 level: Intermediate
 last-substantial-update: 2022-07-09T00:00:00Z
 exl-id: d7887e2e-c2d4-4f0c-b117-ba7c41ea539a
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+duration: 147
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '457'
-ht-degree: 1%
+source-wordcount: '432'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +22,7 @@ ht-degree: 1%
 이 문서에서는 출력 서비스를 사용하여 xdp 조각을 사용하여 pdf 파일을 생성합니다. 기본 xdp와 조각은 crx 저장소에 있습니다. AEM의 파일 시스템 폴더 구조를 모방하는 것이 중요합니다. 예를 들어 xdp의 조각 폴더에서 조각을 사용 중인 경우 라는 폴더를 생성해야 합니다. **조각** AEM의 기본 폴더 아래에 있습니다. 기본 폴더에는 기본 xdp 템플릿이 포함됩니다. 예를 들어 파일 시스템에 다음 구조가 있는 경우
 * c:\xdptemplates - 여기에 기본 xdp 템플릿이 포함됩니다.
 * c:\xdptemplates\fragments - 이 폴더에는 조각이 포함되며 기본 템플릿은 아래와 같이 조각을 참조합니다.
-   ![fragment-xdp](assets/survey-fragment.png).
+  ![fragment-xdp](assets/survey-fragment.png).
 * 폴더 xdpdocuments에는 기본 템플릿과 조각이 포함됩니다. **조각** 폴더
 
 다음을 사용하여 필요한 구조를 만들 수 있습니다. [양식 및 문서 ui](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)

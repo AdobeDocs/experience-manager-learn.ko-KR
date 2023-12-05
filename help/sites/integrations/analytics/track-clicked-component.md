@@ -11,10 +11,11 @@ thumbnail: KT-6296.jpg
 badgeIntegration: label="통합" type="positive"
 doc-type: Tutorial
 exl-id: ab051363-d3e8-4c07-b1fa-3a5d24757496
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 567
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1886'
-ht-degree: 3%
+source-wordcount: '1795'
+ht-degree: 1%
 
 ---
 
@@ -51,7 +52,7 @@ WKND 마케팅 팀은 다음 중 하나를 알고 싶어 합니다. `Call to Act
 태그 속성에서 규칙을 만들기 전에 [버튼 및 티저의 스키마](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#item) 및 를 데이터 레이어 구현에서 검사합니다.
 
 1. 다음으로 이동 [WKND 홈 페이지](https://wknd.site/us/en.html)
-1. 브라우저의 개발자 도구를 열고 로 이동합니다. **콘솔**. 다음 명령을 실행합니다:
+1. 브라우저의 개발자 도구를 열고 로 이동합니다. **콘솔**. 다음 명령을 실행합니다.
 
    ```js
    adobeDataLayer.getState();

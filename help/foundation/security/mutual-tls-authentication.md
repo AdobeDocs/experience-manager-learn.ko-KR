@@ -11,9 +11,10 @@ thumbnail: KT-13881.png
 doc-type: Article
 last-substantial-update: 2023-10-10T00:00:00Z
 exl-id: 7238f091-4101-40b5-81d9-87b4d57ccdb2
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 586
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '731'
 ht-degree: 0%
 
 ---
@@ -113,7 +114,7 @@ AEM 인증서를 가져오려면 아래 단계를 따르십시오.
 
    1. 위에서 생성한 인증서 체인 파일을 가져옵니다.
 
-   1. 제출을 클릭합니다
+   1. Submit 클릭
 
       ![AEM 개인 키 가져오기](assets/mutual-tls-authentication/import-aem-private-key.png)
 

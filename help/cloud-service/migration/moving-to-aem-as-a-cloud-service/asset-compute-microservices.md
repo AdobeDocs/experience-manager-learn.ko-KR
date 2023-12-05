@@ -9,10 +9,11 @@ level: Experienced
 jira: KT-8635
 thumbnail: 336990.jpeg
 exl-id: 327e8663-086b-4b31-b159-a0cf30480b45
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 1006
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 5%
+source-wordcount: '291'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +25,7 @@ AEM Assets as a Cloud Service의 asset compute 마이크로서비스를 통해 �
 
 ## 워크플로우 마이그레이션 도구
 
-![에셋 워크플로 마이그레이션 도구](./assets/asset-workflow-migration.png)
+![자산 워크플로우 마이그레이션 도구](./assets/asset-workflow-migration.png)
 
 코드 베이스를 리팩터링하는 과정의 일부로 [자산 워크플로우 마이그레이션 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/asset-workflow-migration-tool.html) AEMas a Cloud Service 의 Asset compute 마이크로서비스 를 사용하도록 기존 워크플로우를 마이그레이션합니다.
 

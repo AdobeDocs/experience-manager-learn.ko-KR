@@ -1,14 +1,8 @@
 ---
 title: 인쇄 채널 문서에 텍스트 및 이미지 컨텐츠 추가
-seo-title: Adding text and image content to print channel document
 description: 첫 번째 대화형 통신 문서를 만들기 위한 여러 단계 자습서 중 7번째 부분입니다. 이 부분에서는 이미지 및 텍스트 콘텐츠를 레이아웃(xdp)에 정의된 대상 영역에 추가합니다.
-seo-description: This is part 7 of a multi-step tutorial for creating your first interactive communications document. In this part, we will add images and text content to the target areas defined in the layout(xdp).
-uuid: f20d6974-6faf-4b90-a7ff-8aa8a620fcaa
 feature: Interactive Communication
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+doc-type: Tutorial
 version: 6.4,6.5
 discoiquuid: a79bf219-2423-4819-89fc-dcfe976e08b7
 jira: KT-5992
@@ -17,9 +11,10 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 49080c16-617f-4840-8bb4-7b080fa291c4
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 172
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '159'
+source-wordcount: '160'
 ht-degree: 1%
 
 ---

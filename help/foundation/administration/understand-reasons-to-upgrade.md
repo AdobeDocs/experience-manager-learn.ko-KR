@@ -8,10 +8,11 @@ role: Leader, Architect, Developer, Admin, User
 level: Beginner
 doc-type: Article
 exl-id: bf4030b0-67c4-4b00-af95-f63e6f79e995
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 820
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '2602'
-ht-degree: 4%
+source-wordcount: '2586'
+ht-degree: 1%
 
 ---
 
@@ -146,7 +147,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 기능을 확장합니다.
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/6-5/sites/deploying/using/revision-cleanup.html" target="_blank">온라인 개정 정리</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/revision-cleanup.html" target="_blank">온라인 개정 정리</a>:</strong>
                 서버 다운타임 없이 저장소 유지 관리를 수행할 수 있습니다.</td>
             <td> </td>
             <td> </td>
@@ -307,7 +308,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 기능을 확장합니다.
         <td>✔</td>
     </tr>
     <tr>
-        <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/6-5/sites/administering/using/saml-2-0-authenticationhandler.html" target="_blank">키 저장소 관리</a></strong>
+        <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/saml-2-0-authenticationhandler.html" target="_blank">키 저장소 관리</a></strong>
             <br> 저장소 내에서 관리되는 글로벌 신뢰 저장소, 인증서 및 키입니다.</td>
         <td></td>
         <td>✔</td>
@@ -329,7 +330,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 기능을 확장합니다.
         <td>✔</td>
     </tr>
     <tr>
-        <td><a href="https://helpx.adobe.com/kr/experience-manager/6-5/sites/administering/using/saml-2-0-authenticationhandler.html" target="_blank"><strong>CORS</strong> <strong>지원</strong></a>
+        <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/saml-2-0-authenticationhandler.html" target="_blank"><strong>CORS</strong> <strong>지원</strong></a>
             <br> 원본 간 리소스 공유 지원을 통해 응용 프로그램의 유연성을 높일 수 있습니다.</td>
         <td></td>
         <td></td>
@@ -512,7 +513,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 기능을 확장합니다.
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/6-5/sites/administering/using/msm.html" target="_blank">다중 사이트 관리자(MSM)</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm.html" target="_blank">다중 사이트 관리자(MSM)</a>:</strong>
             공통 콘텐츠를 공유하는 여러 웹 사이트(즉, 다국어, 여러 브랜드)를 관리합니다.</td>
             <td>✔</td>
             <td>✔</td>
@@ -523,7 +524,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 기능을 확장합니다.
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/6-5/sites/administering/using/translation.html" target="_blank">콘텐츠 번역</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/translation.html" target="_blank">콘텐츠 번역</a>:</strong>
             플러그 앤 플레이 프레임워크는 업계 최고의 타사 번역 서비스와 통합됩니다.</td>
             <td></td>
             <td></td>

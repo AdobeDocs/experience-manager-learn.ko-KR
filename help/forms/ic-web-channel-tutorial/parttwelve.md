@@ -1,23 +1,18 @@
 ---
 title: 웹 채널 문서 게재 설정
-seo-title: Setting up the delivery of web channel document
 description: 첫 번째 대화형 통신 문서를 만들기 위한 여러 단계 자습서의 마지막 부분입니다. 이 부분에서는 이메일을 통한 웹 채널 문서의 전달에 대해 살펴봅니다.
-seo-description: This is the final part of a multistep tutorial for creating your first interactive communications document. In this part, we look at the delivery of web channel document via email.
-uuid: c1066600-1abd-4401-b04f-b93c28603cc7
 feature: Interactive Communication
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+doc-type: Tutorial
 version: 6.4,6.5
 discoiquuid: 1a7cf095-c5d8-4d92-a018-883cda76fe70
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 510d1782-59b9-41a6-a071-a16170f2cd06
-source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
+duration: 97
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
@@ -50,7 +45,7 @@ AEM Forms에 로그인합니다.
 * 이 방법으로 요청 속성을 통해 양식 데이터 모델에 accountnumber를 전달합니다
 
 * 변경 사항을 저장했는지 확인하십시오.
-   ![fdm](assets/requestattribute.gif)
+  ![fdm](assets/requestattribute.gif)
 
 ## 웹 채널 문서의 이메일 게재 테스트 {#test-email-delivery-of-web-channel-document}
 

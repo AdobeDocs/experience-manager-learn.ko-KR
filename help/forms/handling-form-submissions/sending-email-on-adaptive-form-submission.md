@@ -1,24 +1,19 @@
 ---
 title: 적응형 양식 제출 시 이메일 보내기
-seo-title: Sending Email on Adaptive Form Submission
 description: 이메일 전송 구성 요소를 사용하여 적응형 양식 제출 시 확인 이메일 전송
-seo-description: Send confirmation email on adaptive form submission using the send email component
-uuid: 6c9549ba-cb56-4d69-902c-45272a8fd17e
 feature: Adaptive Forms
-topics: authoring, integrations
-audience: developer
 doc-type: article
-activity: use
 discoiquuid: 1187357f-2f36-4a04-b708-44bb9c174fb5
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 19c5aeec-2893-4ada-b6df-b80c4be2468a
 last-substantial-update: 2020-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 60
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 3%
+source-wordcount: '200'
+ht-degree: 0%
 
 ---
 
@@ -50,4 +45,4 @@ ht-degree: 3%
 
 * 세부 정보를 입력합니다. 이메일 필드에 유효한 이메일 주소를 입력해야 합니다.
 
-* 양식 제출.
+* 양식을 제출합니다.

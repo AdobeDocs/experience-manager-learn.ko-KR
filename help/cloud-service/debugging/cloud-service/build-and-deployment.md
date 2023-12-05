@@ -2,20 +2,18 @@
 title: 빌드 및 배포
 description: Adobe AEM Cloud Manager를 사용하면 코드를 쉽게 작성하고 as a Cloud Service으로 배포할 수 있습니다. 빌드 프로세스의 단계 중에 오류가 발생하여 이를 해결하기 위한 작업이 필요할 수 있습니다. 이 안내서에서는 배포의 일반적인 오류를 이해하고 이러한 오류에 가장 잘 접근하는 방법을 안내합니다.
 feature: Developer Tools
-topics: development
 version: Cloud Service
-doc-type: tutorial
-activity: develop
-audience: developer
+doc-type: Tutorial
 jira: KT-5434
 thumbnail: kt-5424.jpg
 topic: Development
 role: Developer
 level: Beginner
 exl-id: b4985c30-3e5e-470e-b68d-0f6c5cbf4690
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 694
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '2523'
+source-wordcount: '2476'
 ht-degree: 0%
 
 ---
@@ -146,7 +144,7 @@ AEM as a Cloud Service에는 모든 AEM 릴리스에서 최신 핵심 구성 요
   ```
 
 + __원인:__  애플리케이션의 OSGi 번들( `core` project)는 AEM에 as a Cloud Service으로 배포된 것과 다른 버전 수준에서 핵심 구성 요소 핵심 종속성의 Java 클래스를 가져옵니다.
-+ __해결:__
++ __해결 방법:__
    + Git을 사용하여 핵심 구성 요소 버전 증가 전에 존재하는 작업 커밋으로 되돌립니다. 이 커밋을 Cloud Manager Git 분기에 푸시하고 이 분기에서 환경 업데이트를 수행합니다. 이렇게 하면 AEM이 최신 AEM 릴리스로 as a Cloud Service 업그레이드되고 최신 핵심 구성 요소 버전이 포함됩니다. AEM as a Cloud Service이 최신 핵심 구성 요소 버전이 제공되는 최신 AEM 릴리스로 업데이트되면 원래 실패한 코드를 다시 배포합니다.
    + 이 문제를 로컬에서 재현하려면 AEM SDK 버전이 AEM as a Cloud Service 환경에서 사용 중인 AEM 릴리스 버전과 동일한지 확인하십시오.
 
@@ -173,7 +171,7 @@ AEM as a Cloud Service에는 모든 AEM 릴리스에서 최신 핵심 구성 요
 
 + __원인:__ Cloud Manager 파이프라인에는 타겟 환경에 배포된 버전보다 이전 버전의 AEM이 있습니다. 파이프라인을 다시 사용하고 최신 버전의 AEM을 실행 중인 새 환경을 가리킬 때 이러한 문제가 발생할 수 있습니다. 이는 환경의 AEM 버전이 파이프라인의 AEM 버전보다 큰지 확인함으로써 식별할 수 있습니다.
   ![Cloud Manager 파이프라인에는 이전 AEM 버전이 보관됩니다](./assets/build-and-deployment/deploy-to__pipeline-holds-old-aem-version.png)
-+ __해결:__
++ __해결 방법:__
    + 대상 환경에 업데이트 사용 가능 이 있는 경우 환경의 작업에서 업데이트 를 선택한 다음 빌드를 다시 실행합니다.
    + 대상 환경에 업데이트 사용 가능 이 없는 경우 최신 버전의 AEM이 실행되고 있음을 의미합니다. 이 문제를 해결하려면 파이프라인을 삭제하고 다시 생성합니다.
 

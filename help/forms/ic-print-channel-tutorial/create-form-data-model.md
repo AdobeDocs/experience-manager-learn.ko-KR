@@ -1,14 +1,8 @@
 ---
 title: 양식 데이터 모델 만들기
-seo-title: Creating Form Data Model
 description: 첫 번째 대화형 통신 문서를 만들기 위한 여러 단계 자습서의 3부입니다. 이 부분에서는 양식 데이터 모델을 만듭니다. 양식 데이터 모델을 사용하면 서로 다른 데이터 소스를 구성하고 연결할 수 있습니다. 이 모델은 연결된 데이터 소스 전반에 걸쳐 비즈니스 엔터티 및 서비스의 통합 데이터 표시 스키마를 만드는 직관적인 사용자 인터페이스를 제공합니다. 다음 비디오에서는 양식 데이터 모델을 만드는 단계를 안내합니다.
-seo-description: This is part 3 of a multi-step tutorial for creating your first interactive communications document. In this part, we will create Form Data Model. Form Data Model allows you to configure and connect to disparate data sources.It provides an intuitive user interface to create a unified data representation schema of business entities and services across connected data sources. The following video walks through the steps to create Form Data Model.
-uuid: 4cba42f3-860a-4bd3-b4b0-79c63195b36d
 feature: Interactive Communication
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+doc-type: Tutorial
 version: 6.4,6.5
 jira: KT-5952
 thumbnail: 27763.jpg
@@ -16,9 +10,10 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 4e64aa99-0b1c-49e9-95a7-d254017b80f4
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 265
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---

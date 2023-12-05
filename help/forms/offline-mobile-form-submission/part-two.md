@@ -1,19 +1,15 @@
 ---
 title: HTM5 양식 제출에서 AEM 워크플로우 트리거 - PDF 제출 처리
-seo-title: Trigger AEM Workflow on HTML5 Form Submission
 description: 오프라인 모드에서 모바일 양식을 계속 채우고 AEM 워크플로우를 트리거하기 위한 모바일 양식을 제출합니다.
-seo-description: Continue filling mobile form in offline mode and submit mobile form to trigger AEM workflow
 feature: Mobile Forms
-topics: development
-audience: developer
 doc-type: article
-activity: implement
 version: 6.4,6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: eafeafe1-7a72-4023-b5bb-d83b056ba207
-source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
+duration: 182
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 0%
@@ -22,9 +18,9 @@ ht-degree: 0%
 
 # PDF 제출 처리
 
-이 부분에서는 Acrobat/Reader의 PDF 제출을 처리하기 위해 AEM Publish에서 실행되는 간단한 서블릿을 만듭니다. 이 서블릿은 제출된 데이터를 로 저장하는 것을 담당하는 AEM 작성자 인스턴스에서 실행되는 서블릿에 HTTP POST 요청을 수행합니다 `nt:file` AEM 작성자 저장소의 노드
+이 부분에서는 AEM Publish에서 실행되는 간단한 서블릿을 만들어 Acrobat/Reader에서 PDF 제출을 처리합니다. 이 서블릿은 제출된 데이터를 로 저장하는 것을 담당하는 AEM 작성자 인스턴스에서 실행되는 서블릿에 HTTP POST 요청을 수행합니다 `nt:file` AEM 작성자 저장소의 노드.
 
-다음은 PDF 제출을 처리하는 서블릿의 코드입니다. 이 서블릿에서에 마운트된 서블릿에 대한 POST 호출을 만듭니다. **/bin/startworkflow** AEM 작성자 인스턴스. 이 서블릿은 양식 데이터를 AEM 작성자 저장소에 저장합니다.
+다음은 PDF 제출을 처리하는 서블릿의 코드입니다. 이 서블릿에서에 마운트된 서블릿에 대한 POST 호출을 만듭니다. **/bin/startworkflow** AEM 작성자 인스턴스. 이 서블릿은 AEM 작성자의 저장소에 양식 데이터를 저장합니다.
 
 
 ## AEM 게시 서블릿

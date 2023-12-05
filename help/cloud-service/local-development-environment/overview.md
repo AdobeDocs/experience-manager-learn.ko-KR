@@ -11,10 +11,11 @@ role: Developer
 level: Beginner
 last-substantial-update: 2022-09-01T00:00:00Z
 exl-id: 8b12f34c-be98-4f47-853c-411bb601990c
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 879
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 15%
+source-wordcount: '530'
+ht-degree: 12%
 
 ---
 
@@ -59,10 +60,10 @@ AEM AEM 프로젝트는 Cloud Manager를 통해 as a Cloud Service으로 배포�
 
 자습서의 이 섹션에서는 다음 방법을 보여줍니다.
 
-+  설치 [!DNL Java]
++ 설치 [!DNL Java]
 + 설치 [!DNL Node.js] (및 npm)
-+  설치 [!DNL Maven]
-+  설치 [!DNL Git]
++ 설치 [!DNL Maven]
++ 설치 [!DNL Git]
 
 [AEM 프로젝트용 개발 도구 설정](./development-tools.md)
 
@@ -72,7 +73,7 @@ AEM as a Cloud Service SDK는 [!DNL QuickStart Jar] 로컬 버전의 AEM을 실�
 
 자습서의 이 섹션에서는 다음 방법을 보여줍니다.
 
-+  설치 [!DNL Java]
++ 설치 [!DNL Java]
 + AEM SDK 다운로드
 + 실행 [!DNL AEM Author Service]
 + 실행 [!DNL AEM Publish Service]

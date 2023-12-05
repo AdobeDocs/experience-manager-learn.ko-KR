@@ -1,14 +1,8 @@
 ---
 title: POST 제출 시 에이전트 UI 열기
-seo-title: Opening Agent UI On POST Submission
 description: 인쇄 채널용 첫 번째 대화형 통신 문서를 만들기 위한 여러 단계 자습서 중 11번째 부분입니다. 이 부분에서는 양식 제출 시 임시 서신을 만들기 위한 에이전트 ui 인터페이스를 시작합니다.
-seo-description: This is part 11 of multistep tutorial for creating your first interactive communications document for the print channel. In this part, we will launch the agent ui interface for creating ad-hoc correspondence on form submission.
-uuid: 96f34986-a5c3-400b-b51b-775da5d2cbd7
 feature: Interactive Communication
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+doc-type: Tutorial
 version: 6.4,6.5
 jira: KT-6168
 thumbnail: 40122.jpg
@@ -16,10 +10,11 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: 509b4d0d-9f3c-46cb-8ef7-07e831775086
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 199
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '324'
-ht-degree: 1%
+source-wordcount: '322'
+ht-degree: 0%
 
 ---
 

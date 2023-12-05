@@ -10,10 +10,11 @@ level: Beginner
 badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: fba18118-0431-4edd-a5a6-0281e8c12979
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 817
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '96'
-ht-degree: 2%
+source-wordcount: '97'
+ht-degree: 1%
 
 ---
 
@@ -25,7 +26,7 @@ PDF 양식을 적응형 양식으로 전환한 후 일반적으로 몇 가지 �
 
 >[!VIDEO](https://video.tv.adobe.com/v/39574?quality=12&learn=on)
 
-## 축하합니다
+## 축하합니다.
 
 즉석 서명 경험에 Acrobat Sign 통합을 사용하도록 변환된 적응형 양식을 구성했습니다.
 

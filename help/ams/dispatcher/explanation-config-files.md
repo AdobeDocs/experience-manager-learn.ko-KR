@@ -9,9 +9,10 @@ level: Beginner
 thumbnail: xx.jpg
 doc-type: Article
 exl-id: ec8e2804-1fd6-4e95-af6d-07d840069c8b
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 559
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1705'
+source-wordcount: '1688'
 ht-degree: 0%
 
 ---
@@ -96,7 +97,7 @@ RewriteRule ^/robots.txt$ /content/dam/exampleco/robots.txt [PT,L]
 
 확장자가 인 vhost 파일이 `.conf` 다음에 배치됩니다. `/etc/httpd/conf.d/` 폴더는 시도하고 Apache의 메모리에 로드하며 일반적으로 양호한 상태이지만 확장자가 인 규칙 파일을 다시 작성하는 경우 `.conf` 에 배치됩니다. `/etc/httpd/conf.d/` 폴더가 자동으로 포함되고 전역적으로 적용되어 혼란스럽고 원치 않는 결과가 발생합니다.
 
-## 해결
+## 해결 방법
 
 수행하는 작업을 기반으로 파일 이름을 자동 포함 규칙 네임스페이스에서 안전하게 지웁니다.
 

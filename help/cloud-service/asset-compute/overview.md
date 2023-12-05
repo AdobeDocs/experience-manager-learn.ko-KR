@@ -2,11 +2,8 @@
 title: AEMas a Cloud Service 용 asset compute 마이크로서비스 확장성
 description: 이 튜토리얼에서는 원본 에셋을 원으로 자르고 구성 가능한 대비 및 밝기를 적용하여 에셋 렌디션을 만드는 간단한 Asset compute 작업자를 만드는 과정을 안내합니다. 작업자 자체는 기본이지만 이 자습서에서는 이 작업자를 사용하여 AEMas a Cloud Service 에 사용할 사용자 지정 Asset compute 작업자를 만들고, 개발하고, 배포합니다.
 feature: Asset Compute Microservices
-topics: renditions, development
 version: Cloud Service
-doc-type: tutorial
-activity: develop
-audience: developer
+doc-type: Tutorial
 jira: KT-5802
 thumbnail: KT-5802.jpg
 topic: Integrations, Development
@@ -14,9 +11,10 @@ role: Developer
 level: Intermediate, Experienced
 last-substantial-update: 2022-08-15T00:00:00Z
 exl-id: 575b12f9-b57f-41f7-bd39-56d242de4747
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 340
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1020'
+source-wordcount: '986'
 ht-degree: 0%
 
 ---

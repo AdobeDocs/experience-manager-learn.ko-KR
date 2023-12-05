@@ -9,9 +9,10 @@ role: Developer
 level: Intermediate
 exl-id: 0c77a853-fa71-46ac-8626-99bc69d6222d
 last-substantial-update: 2020-06-09T00:00:00Z
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+duration: 226
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '261'
 ht-degree: 0%
 
 ---
@@ -25,7 +26,7 @@ ht-degree: 0%
 
 서버에서 이 기능을 테스트하려면 아래 지침을 따르십시오
 * [setvalue 번들 다운로드 및 배포](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). 메타데이터 속성을 설정하는 사용자 지정 OSGI 번들입니다.
->!![NOTE]AEM Forms 6.5 이상에서는 이 기능을 즉시 사용할 수 있습니다. [여기에 설명](form-data-model-service-as-step-in-aem65-workflow-video-use.md)
+>AEM Forms 6.5 이상에서는 이 기능을 즉시 사용할 수 있습니다. [여기에 설명](form-data-model-service-as-step-in-aem65-workflow-video-use.md)
 
 * 설명된 대로 SampleRest.war 파일로 tomcat 설정 [여기](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html).Tomcat에 배포된 war 파일에는 지원자의 크레딧 점수를 반환하는 코드가 있습니다. 크레딧 스코어는 200에서 800 사이의 임의의 숫자입니다
 

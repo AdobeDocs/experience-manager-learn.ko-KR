@@ -9,10 +9,11 @@ level: Beginner
 jira: KT-6060
 thumbnail: 39151.jpg
 exl-id: 7d7942ae-7e38-4abd-9900-5b8e3542f5e1
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 332
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '221'
-ht-degree: 95%
+source-wordcount: '196'
+ht-degree: 90%
 
 ---
 
@@ -32,4 +33,4 @@ Adobe Experience Manager는 Adobe IMS 사용자, 사용자 그룹 및 제품 프
 ## 추가 리소스
 
 + [Adobe Experience Manager as a Cloud Service에 대한 IMS 지원](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html)
-+ [AEM에서 제공하는 사용자 그룹 및 권한](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#built-in-users-and-groups)
++ [AEM에서 제공한 사용자 그룹 및 권한](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#built-in-users-and-groups)

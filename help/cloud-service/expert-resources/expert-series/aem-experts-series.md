@@ -5,10 +5,11 @@ sub-product: Experience Manager Sites, Experience Manager Cloud Manager, Experie
 topic: Administration, Development
 feature: Developer Tools
 exl-id: ae1cdbe3-0863-41de-bb27-2e88c4640866
-source-git-commit: 4b634d8b3063375f7c135a3e3ef81b90c84e2579
+duration: 240
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 2%
+source-wordcount: '709'
+ht-degree: 1%
 
 ---
 
@@ -68,7 +69,7 @@ AEM as a Cloud Service의 기본 사항 및 Adobe 엔지니어링의 선임 클�
   </tr>
 </table>
 
-## AEM as a Cloud Service로 이동?
+## AEM으로 as a Cloud Service으로 이동?
 
 AEM AEM 6에서 as a Cloud Service으로 이동할 계획입니까? as a Cloud Service으로 전환하기 위한 AdobeAEM 의 방법론과 이를 원활하게 전환하는 다양한 도구 및 기능에 대해 알아봅니다.
 

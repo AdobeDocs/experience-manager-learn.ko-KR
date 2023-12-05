@@ -7,9 +7,10 @@ role: User
 level: Beginner
 doc-type: Tutorial
 exl-id: a1d83c77-a9e4-4ed1-9b00-65fb002164c0
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 686
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '2653'
+source-wordcount: '2623'
 ht-degree: 0%
 
 ---
@@ -42,7 +43,7 @@ Dynamic Media Classic에는 자르기 도구를 포함하여 UI에서 편리하�
 Dynamic Media Classic의 자르기 도구는 에셋에 대한 세부 정보 페이지에서 액세스하거나 **편집** 단추를 클릭합니다. 이 도구를 사용하여 다음 두 가지 방법으로 자를 수 있습니다.
 
 - 자르기 창의 핸들을 드래그하거나 [크기] 상자에 값을 입력하는 기본 자르기 모드입니다. 방법 알아보기 [수동 자르기](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html#select-an-area-to-crop).
-- 트리밍. 이미지와 일치하지 않는 픽셀 수를 계산하여 이미지 주위의 추가 공백을 제거하려면 이 옵션을 사용하십시오. 방법 알아보기 [트리밍을 통한 자르기](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html#crop-to-remove-white-space-around-an-image).
+- 트림. 이미지와 일치하지 않는 픽셀 수를 계산하여 이미지 주위의 추가 공백을 제거하려면 이 옵션을 사용하십시오. 방법 알아보기 [트리밍을 통한 자르기](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html#crop-to-remove-white-space-around-an-image).
 
 ### _수동 자르기_
 

@@ -8,10 +8,11 @@ role: User
 level: Beginner
 doc-type: Feature Video
 exl-id: 00746678-da23-4d0a-b775-e1de4ed87c56
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 523
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '148'
-ht-degree: 17%
+source-wordcount: '124'
+ht-degree: 4%
 
 ---
 
@@ -33,6 +34,6 @@ ht-degree: 17%
 
 ## 추가 리소스 {#additional-resources}
 
-* [Live Copy 개요 콘솔](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm-livecopy-overview.html)
-* [Live Copy 생성 및 동기화](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm-livecopy.html)
+* [라이브 카피 개요 콘솔](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm-livecopy-overview.html)
+* [라이브 카피 생성 및 동기화](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm-livecopy.html)
 * [MSM 모범 사례](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm-best-practices.html)

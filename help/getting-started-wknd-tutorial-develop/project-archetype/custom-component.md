@@ -11,9 +11,10 @@ mini-toc-levels: 1
 thumbnail: 30181.jpg
 doc-type: Tutorial
 exl-id: f54f3dc9-6ec6-4e55-9043-7a006840c905
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 1427
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '4057'
+source-wordcount: '3869'
 ht-degree: 0%
 
 ---
@@ -457,7 +458,7 @@ Byline Sling 모델은 AEM에서 제공하는 여러 Java™ API를 사용합니
 
    ![인라인 Impl 파일](assets/custom-component/byline-impl-file.png)
 
-1. `BylineImpl.java`를 엽니다. 다음을 구현하도록 지정 `Byline` 인터페이스. IDE의 자동 완성 기능을 사용하거나 구현에 필요한 메서드를 포함하도록 파일을 수동으로 업데이트하십시오. `Byline` 인터페이스:
+1. 열기 `BylineImpl.java`. 다음을 구현하도록 지정 `Byline` 인터페이스. IDE의 자동 완성 기능을 사용하거나 구현에 필요한 메서드를 포함하도록 파일을 수동으로 업데이트하십시오. `Byline` 인터페이스:
 
    ```java
    package com.adobe.aem.guides.wknd.core.models.impl;

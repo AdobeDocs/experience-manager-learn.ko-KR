@@ -7,9 +7,10 @@ role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: d6b6d425-842a-43a9-9041-edf78e51d962
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 573
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1391'
+source-wordcount: '1350'
 ht-degree: 0%
 
 ---
@@ -194,7 +195,7 @@ AEM Content Services를 통해 기본 모바일 경험을 제공하는 방법을
 1. 게시 취소 **기존 [!DNL Event] 컨텐츠 조각**
 1. 에 대한 업데이트 게시 **태그 라인**
 
-## 축하합니다
+## 축하합니다.
 
 **AEM Headless 자습서를 완료했습니다!**
 

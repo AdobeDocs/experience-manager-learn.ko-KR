@@ -11,10 +11,11 @@ last-substantial-update: 2023-10-26T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
 exl-id: e6d67204-2f76-441c-a178-a34798fe266d
-source-git-commit: ceb498f751ffc50d0022a16b63f9f52594bc507e
+duration: 186
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 5%
+source-wordcount: '270'
+ht-degree: 6%
 
 ---
 
@@ -38,7 +39,7 @@ ht-degree: 5%
 >
 > &quot;WAF 규칙&quot;이라는 트래픽 필터 규칙의 하위 카테고리는 WAF-DDoS Protection 또는 Enhanced Security 라이센스가 필요합니다.
 
-**aemcs-waf-adopter@adobe.com**&#x200B;으로 메일을 보내어 트래픽 필터 규칙에 대한 피드백을 제공하거나 질문을 보내주시기 바랍니다.
+**aemcs-waf-adopter@adobe.com**&#x200B;으로 메일을 보내어 트래픽 필터 규칙에 대한 피드백을 제공하거나 질문을 보내 주시기 바랍니다.
 
 ## 다음 단계
 

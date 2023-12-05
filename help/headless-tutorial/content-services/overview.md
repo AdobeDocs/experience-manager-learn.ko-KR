@@ -7,14 +7,15 @@ role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: 5aa32791-861a-48e3-913c-36028373b788
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 342
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 6%
+source-wordcount: '327'
+ht-degree: 4%
 
 ---
 
-# AEM Headless 시작하기 - Content Services
+# AEM Headless 시작하기 - 콘텐츠 서비스
 
 AEM Content Services는 기존 AEM Pages를 활용하여 headless REST API 끝점을 구성하고 AEM 구성 요소는 이러한 끝점에 표시할 콘텐츠를 정의하거나 참조합니다.
 
@@ -47,6 +48,6 @@ Headless CMS 시나리오에서, AEM을 사용하여 콘텐츠를 작성하고 �
 |                                | AEM GRAPHQL API | AEM Content Services |
 |--------------------------------|:-----------------|:---------------------|
 | 스키마 정의 | 구조화된 컨텐츠 조각 모델 | AEM 구성 요소 |
-| 콘텐츠 | 콘텐츠 조각 | AEM 구성 요소 |
+| 컨텐트 | 콘텐츠 조각 | AEM 구성 요소 |
 | 콘텐츠 검색 | GraphQL 쿼리별 | AEM 페이지별 |
 | 게재 형식 | GRAPHQL JSON | AEM ComponentExporter JSON |

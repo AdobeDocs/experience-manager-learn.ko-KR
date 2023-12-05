@@ -2,18 +2,16 @@
 title: as a Cloud Service으로 사용할 Adobe I/O RuntimeAEM 에 Asset compute 작업자 배포
 description: Asset compute 프로젝트와 여기에 포함된 작업자를 AEM as a Cloud Service으로 사용하려면 Adobe I/O Runtime에 배포해야 합니다.
 feature: Asset Compute Microservices
-topics: renditions, development
 version: Cloud Service
-activity: develop
-audience: developer
-doc-type: tutorial
+doc-type: Tutorial
 jira: KT-6286
 thumbnail: KT-6286.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 0327cf61-fd51-4fa7-856d-3febd49c01a0
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 178
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
 source-wordcount: '645'
 ht-degree: 0%

@@ -11,10 +11,11 @@ last-substantial-update: 2023-08-28T00:00:00Z
 jira: KT-13858
 thumbnail: KT-13858.jpeg
 exl-id: 1a1accbe-7706-4f9b-bf63-755090d03c4c
-source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
+duration: 333
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1320'
-ht-degree: 2%
+source-wordcount: '1134'
+ht-degree: 1%
 
 ---
 
@@ -145,6 +146,6 @@ AEM Dispatcher의 캐시는 [Dispatcher 구성](https://experienceleague.adobe.c
 + 캐시를 평가할 때 무시되는 HTTP 요청 쿼리 매개 변수
 + 캐시된 HTTP 응답 헤더
 + TTL 캐싱 활성화 또는 비활성화
-+ ... and much more
++ ... 및 기타
 
 사용 `mod_headers` 캐시 헤더를 설정하려면 `vhost` 구성은 AEM Dispatcher가 응답을 처리한 후 HTTP 응답에 추가되므로 Dispatcher 캐싱(TTL 기반)에 영향을 주지 않습니다. HTTP 응답 헤더를 통해 Dispatcher 캐싱에 영향을 주려면 적절한 HTTP 응답 헤더를 설정하는 AEM Publish에서 실행되는 사용자 지정 Java™ 코드가 필요합니다.

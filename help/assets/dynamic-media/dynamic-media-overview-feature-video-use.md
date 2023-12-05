@@ -8,9 +8,10 @@ role: User
 level: Beginner
 doc-type: Feature Video
 exl-id: 59462cb4-d379-4e58-b786-ff8dbae6191c
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 2306
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '794'
 ht-degree: 0%
 
 ---
@@ -27,7 +28,7 @@ ht-degree: 0%
 >
 >여기에 표시된 기능은 DMS7이 대체한 DMHybrid 실행 모드가 아닌 현재 지원되는 실행 모드인 Dynamic Media DMS7 실행 모드에서 사용할 수 있습니다.
 
-이 비디오에서는 Adobe Experience Manager Dynamic Media을 컨텐츠 제공 서비스로 사용하여 미디어 컨텐츠를 관리하고 액세스하는 방법에 대해 설명합니다. Dynamic Media은 필요한 소모성 변형 또는 파생 표현물의 무제한 세트를 이행하도록 요청할 수 있는 이미지 에셋 또는 비디오 에셋을 업로드하는 단일 기본 에셋 방법론에서 작동합니다. 포함:
+이 비디오에서는 Adobe Experience Manager Dynamic Media을 컨텐츠 제공 서비스로 사용하여 미디어 컨텐츠를 관리하고 액세스하는 방법에 대해 설명합니다. Dynamic Media은 필요한 소모성 변형 또는 파생 표현물의 무제한 세트를 이행하도록 요청할 수 있는 이미지 에셋 또는 비디오 에셋을 업로드하는 단일 기본 에셋 방법론에서 작동합니다. 포함됨:
 
 * URL에 대한 단일 기본 에셋 제공 서비스 설명
 * 이미지 처리 옵션

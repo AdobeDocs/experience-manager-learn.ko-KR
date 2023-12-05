@@ -12,10 +12,11 @@ badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 doc-type: Tutorial
 exl-id: 92dbd185-bad4-4a4d-b979-0d8f5d47c54b
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 81
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 2%
+source-wordcount: '314'
+ht-degree: 0%
 
 ---
 
@@ -35,7 +36,7 @@ AEM as Cloud Service 환경이 프로비저닝될 때마다 Asset compute, Adobe
 
 검토 자동 생성됨 **Adobe 실행** 다음 단계를 사용한 IMS 구성.
 
-1. AEM에서 **도구** 메뉴를 엽니다
+1. AEM에서 **도구** 메뉴
 
 1. 보안 섹션에서 Adobe IMS 구성을 선택합니다.
 

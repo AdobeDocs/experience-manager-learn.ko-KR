@@ -8,10 +8,11 @@ role: Developer
 level: Intermediate
 exl-id: 1471929f-d269-4adc-88ad-2ad3682305e1
 last-substantial-update: 2019-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 105
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '400'
-ht-degree: 1%
+source-wordcount: '362'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +35,7 @@ AEM Forms을 사용하여 문서를 인증하려면 다음 단계를 수행해�
 * **모든 사용자를 로드하여 fd-service 사용자를 찾으려면 결과 페이지를 스크롤해야 합니다**
 * fd-service 사용자를 두 번 클릭하여 사용자 설정 창을 엽니다
 * &quot;키 저장소 파일에서 개인 키 추가&quot;를 클릭합니다.인증서와 관련된 별칭 및 암호를 지정합니다
-   ![인증서 추가](assets/adding-certificate-keystore.PNG)
+  ![인증서 추가](assets/adding-certificate-keystore.PNG)
 * 변경 사항 저장
 
 ## OSGI 서비스 만들기
@@ -55,13 +56,12 @@ AEM Forms을 사용하여 문서를 인증하려면 다음 단계를 수행해�
 * 다운로드 및 설치 [사용자 정의 문서 서비스 번들](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
 * 다운로드 및 설치 [서비스 사용자 번들을 사용한 개발](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 * [Apache Sling Service User Mapper 서비스에 다음 항목을 추가했는지 확인합니다](http://localhost:4502/system/console/configMgr)
-
-   **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service** 아래 스크린샷에 표시된 대로
-   ![사용자 매퍼](assets/user-mapper-service.PNG)
+  **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service** 아래 스크린샷에 표시된 대로
+  ![사용자 매퍼](assets/user-mapper-service.PNG)
 * [샘플 적응형 양식 가져오기](assets/certify-pdf-af.zip)
 * [사용자 정의 제출 가져오기 및 설치](assets/custom-submit-certify.zip)
 * [적응형 양식 열기](http://localhost:4502/content/dam/formsanddocuments/certifypdf/jcr:content?wcmmode=disabled)
 * 인증해야 하는 PDF 문서 업로드
-   **선택 사항** - 문서 인증에 사용할 서명 필드를 지정합니다.
+  **선택 사항** - 문서 인증에 사용할 서명 필드를 지정합니다.
 * 제출을 누릅니다.
 * 인증된 PDF은 귀하에게 반환되어야 합니다.

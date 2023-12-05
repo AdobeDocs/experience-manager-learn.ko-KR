@@ -9,10 +9,11 @@ level: Experienced
 badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: 6b44e6b2-15f7-45b2-8d21-d47f122c809d
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+duration: 95
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 2%
+source-wordcount: '334'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +27,7 @@ ht-degree: 2%
 1. TextField 구성 요소와 패널 구성 요소를 적응형 양식으로 드래그 앤 드롭합니다. TextField 구성 요소의 제목을 &quot;리드 ID 입력&quot;으로 설정하고 이름을 &quot;리드 ID&quot;로 설정합니다.
 1. 2개의 TextField 구성 요소를 패널 구성 요소로 끌어다 놓습니다.
 1. 두 Textfield 구성 요소의 이름 및 제목을 이름 및 성 로 설정합니다.
-1. 최소값을 1로 설정하고 최대값을 -1로 설정하여 패널 구성 요소를 반복 가능한 구성 요소로 구성합니다. Marketo 서비스가 리드 오브젝트 배열을 반환하고 결과를 표시하려면 반복 가능한 구성 요소가 있어야 하므로 이 작업이 필요합니다. 그러나 이 경우 Lead 객체의 ID를 기준으로 Lead 객체를 검색하고 있으므로 Lead 객체는 하나만 다시 가져옵니다.
+1. 최소값을 1로 설정하고 최대값을 -1로 설정하여 패널 구성 요소를 반복 가능한 구성 요소로 구성합니다. Marketo 서비스가 리드 오브젝트 배열을 반환하고 결과를 표시하려면 반복 가능한 구성 요소가 있어야 하므로 이 작업이 필요합니다. 그러나 이 경우 Lead 객체의 ID로 Lead 객체를 검색하므로 Lead 객체는 하나만 다시 가져옵니다.
 1. 아래 이미지에 표시된 대로 LeadId 필드에 규칙을 만듭니다.
 1. 양식을 미리 보고 LeadID 필드에 유효한 Lead ID를 입력한 다음 Tab out 을 클릭합니다. 이름 및 성 필드는 서비스 호출 결과로 채워집니다.
 
@@ -41,6 +42,6 @@ ht-degree: 2%
 + `com.marketoandforms.core.impl.MarketoServiceImpl`
 + `com.marketoandforms.core.MarketoConfigurationService`
 
-## 축하합니다
+## 축하합니다.
 
 AEM Forms 양식 데이터 모델을 사용하여 AEM Forms과 Marketo을 통합했습니다.

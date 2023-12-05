@@ -10,10 +10,11 @@ role: Developer
 level: Beginner
 last-substantial-update: 2022-09-02T00:00:00Z
 exl-id: 19f72254-2087-450b-909d-2d90c9821486
-source-git-commit: 9b733c7070191adb34c9e7c05c92b0567c080e14
+duration: 563
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1793'
-ht-degree: 10%
+source-wordcount: '1695'
+ht-degree: 8%
 
 ---
 
@@ -51,7 +52,7 @@ $ java --version
 $ java -version
 ```
 
->[!TAB Linux]
+>[!TAB 리눅스]
 
 ```shell
 $ java --version
@@ -109,7 +110,7 @@ $ cd c:\Users\<My User>\aem-sdk\author
 $ java -jar aem-author-p4502.jar
 ```
 
->[!TAB Linux]
+>[!TAB 리눅스]
 
 ```shell
 $ mkdir -p ~/aem-sdk/author
@@ -154,7 +155,7 @@ $ cd c:\Users\<My User>\aem-sdk\publish
 $ java -jar aem-publish-p4503.jar
 ```
 
->[!TAB Linux]
+>[!TAB 리눅스]
 
 ```shell
 $ mkdir -p ~/aem-sdk/publish
@@ -193,7 +194,7 @@ $ java -jar aem-author-p4502.jar -r prerelease
 $ java -jar aem-publish-p4503.jar -r prerelease
 ```
 
->[!TAB Linux]
+>[!TAB 리눅스]
 
 ```shell
 # For AEM Author service in prerelease mode
@@ -316,7 +317,7 @@ $ java -jar aem-author-p4502.jar
 $ java -jar aem-author-p4502.jar
 ```
 
->[!TAB Linux]
+>[!TAB 리눅스]
 
 ```shell
 $ java -jar aem-author-p4502.jar
@@ -340,7 +341,7 @@ $ java -jar aem-publish-p4503.jar
 $ java -jar aem-publish-p4503.jar
 ```
 
->[!TAB Linux]
+>[!TAB 리눅스]
 
 ```shell
 $ java -jar aem-publish-p4503.jar
@@ -381,7 +382,7 @@ $ java --version
 $ java -version
 ```
 
->[!TAB Linux]
+>[!TAB 리눅스]
 
 ```shell
 $ java --version

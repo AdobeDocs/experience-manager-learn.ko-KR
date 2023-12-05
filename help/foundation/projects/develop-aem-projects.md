@@ -8,9 +8,10 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 9bfe3142-bfc1-4886-85ea-d1c6de903484
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 1753
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '4571'
+source-wordcount: '4460'
 ht-degree: 0%
 
 ---
@@ -38,7 +39,7 @@ AEM Projects에는 여러 개가 포함되어 있습니다 [OOTB 프로젝트 �
 * [완료된 튜토리얼 패키지](./assets/develop-aem-projects/projects-tasks-guide.ui.apps-0.0.1-SNAPSHOT.zip)
 * [GitHub의 전체 코드 저장소](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/feature/projects-tasks-guide)
 
-이 자습서에서는 다음과 같은 몇 가지 기본 지식이 있다고 가정합니다 [AEM 개발 사례](https://helpx.adobe.com/kr/experience-manager/6-5/sites/developing/using/the-basics.html) and some familiar친숙함 with [AEM Maven 프로젝트 설정](https://helpx.adobe.com/kr/experience-manager/6-5/sites/developing/using/ht-projects-maven.html). 언급된 모든 코드는 참조로 사용되기 위한 것이며 에만 배포해야 합니다. [로컬 개발 AEM 인스턴스](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#GettingStarted).
+이 자습서에서는 다음과 같은 몇 가지 기본 지식이 있다고 가정합니다 [AEM 개발 사례](https://helpx.adobe.com/kr/experience-manager/6-5/sites/developing/using/the-basics.html) and some familiar친숙함 with [AEM Maven 프로젝트 설정](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/ht-projects-maven.html). 언급된 모든 코드는 참조로 사용되기 위한 것이며 에만 배포해야 합니다. [로컬 개발 AEM 인스턴스](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#GettingStarted).
 
 ## 프로젝트 템플릿 구조
 

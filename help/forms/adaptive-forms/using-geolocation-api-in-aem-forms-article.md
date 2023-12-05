@@ -8,10 +8,11 @@ role: Developer
 level: Experienced
 exl-id: 50db6155-ee83-4ddb-9e3a-56e8709222db
 last-substantial-update: 2020-03-20T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 127
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 3%
+source-wordcount: '366'
+ht-degree: 0%
 
 ---
 
@@ -93,8 +94,7 @@ showPosition 함수에서 Google API를 사용하여 주어진 위도와 경도�
 서버에 이 기능을 사용하려면 다음 단계를 따르십시오
 
 * AEM Forms 서버를 설치하고 시작합니다.
-
->!![NOTE] 이 기능은 AEM Forms 6.3 이상에서 테스트되었습니다
+> 이 기능은 AEM Forms 6.3 이상에서 테스트되었습니다
 * [Google API 키 가져오기](https://developers.google.com/maps/documentation/javascript/get-api-key).
 * [이 문서와 관련된 자산을 AEM에 가져옵니다.](assets/geolocationapi.zip)
 * [편집 모드에서 적응형 양식 조각을 엽니다.](http://localhost:4502/editor.html/content/forms/af/currentaddressfragment.html)

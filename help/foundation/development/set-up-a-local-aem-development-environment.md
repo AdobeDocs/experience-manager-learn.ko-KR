@@ -10,10 +10,11 @@ exl-id: 58851624-71c9-4745-aaaf-305acf6ccb14
 last-substantial-update: 2022-07-20T00:00:00Z
 doc-type: Tutorial
 thumbnail: aem-local-dev-env.jpg
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 4693
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '2603'
-ht-degree: 1%
+source-wordcount: '2413'
+ht-degree: 0%
 
 ---
 
@@ -200,7 +201,7 @@ IDE를 사용할 때 다음을 확인하십시오. `classic` Maven 프로필 탭
 
 ## 문제 해결
 
-***도움말!*** 코드가 작동하지 않습니다! 모든 개발과 마찬가지로 코드가 예상대로 작동하지 않는 경우가 있습니다(많은 수). AEM은 강력한 플랫폼이지만 강력한 힘을 가진... 엄청난 복잡성을 가져옵니다. 다음은 문제 해결 및 추적 시 몇 가지 높은 수준의 시작 지점입니다(하지만 잘못될 수 있는 전체 목록은 제외).
+***살려줘!*** 코드가 작동하지 않습니다! 모든 개발과 마찬가지로 코드가 예상대로 작동하지 않는 경우가 있습니다(많은 수). AEM은 강력한 플랫폼이지만 강력한 힘을 가진... 엄청난 복잡성을 가져옵니다. 다음은 문제 해결 및 추적 시 몇 가지 높은 수준의 시작 지점입니다(하지만 잘못될 수 있는 전체 목록은 제외).
 
 ### 코드 배포 확인
 

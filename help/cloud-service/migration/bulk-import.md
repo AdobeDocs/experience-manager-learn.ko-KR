@@ -3,10 +3,7 @@ title: AEM Assets에서 일괄 가져오기 사용
 description: AEM의 일괄 가져오기 도구를 as a Cloud Service으로 사용하면 관리자가 클라우드 스토리지(Azure Blob Storage 또는 Amazon S3)에서 에셋을 안전하고 효율적으로 가져올 수 있습니다.
 version: Cloud Service
 doc-type: technical-video
-topics: Migration
 feature: Migration
-activity: develop
-audience: developer
 jira: KT-6729
 thumbnail: 329680.jpg
 topic: Migration
@@ -14,9 +11,10 @@ role: Architect, Developer
 level: Beginner
 last-substantial-update: 2022-10-05T00:00:00Z
 exl-id: 28644af8-babc-467d-afdb-8538728dc176
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 38
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '138'
 ht-degree: 0%
 
 ---

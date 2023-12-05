@@ -8,10 +8,11 @@ role: Developer
 level: Experienced
 last-substantial-update: 2022-12-19T00:00:00Z
 exl-id: e116038f-7d86-41ee-b1b0-7b8569121d6d
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+duration: 130
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 2%
+source-wordcount: '346'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +21,7 @@ ht-degree: 2%
 이 문서에서는 어셈블러 서비스를 사용하여 xdp 문서를 연결하는 기능을 보여 주는 에셋을 제공합니다.
 다음 jsp 코드는 라는 하위 양식을 삽입하기 위해 작성되었습니다. **주소** address.xdp라는 xdp 문서에서 **주소** master.xdp 문서에서. 결과 xdp가 AEM 설치의 루트 폴더에 저장되었습니다.
 
-어셈블러 서비스는 유효한 DDX 문서를 기반으로 PDF 문서의 조작을 설명합니다. 다음을 참조하십시오. [DDX 참조 문서 위치](assets/ddxRef.pdf).Page 40에는 xdp 결합에 대한 정보가 있습니다.
+어셈블러 서비스는 유효한 DDX 문서를 기반으로 PDF 문서의 조작을 설명합니다. 다음을 참조할 수 있습니다 [DDX 참조 문서 위치](assets/ddxRef.pdf).Page 40에는 xdp 결합에 대한 정보가 있습니다.
 
 ```java
     javax.servlet.http.Part ddxFile = request.getPart("xdpstitching.ddx");
@@ -87,3 +88,4 @@ AEM 서버에서 이 기능을 사용하려면
 >[!NOTE]
 >
 >AEM Forms 설치가 완료되었는지 확인합니다. 모든 번들은 활성 상태여야 합니다.
+>

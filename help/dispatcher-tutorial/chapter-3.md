@@ -1,5 +1,5 @@
 ---
-title: "3장 - 고급 Dispatcher 캐싱 항목"
+title: 3장 - 고급 Dispatcher 캐싱 항목
 description: AEM에서 캐싱에 대한 3가지 파트 시리즈 중 3파트입니다. 처음 두 부분이 Dispatcher의 일반 http 캐싱에 중점을 둔 위치와 제한 사항 이 부분에서는 이러한 한계를 극복하는 방법에 대한 몇 가지 아이디어를 논의한다.
 feature: Dispatcher
 topic: Architecture
@@ -7,9 +7,10 @@ role: Architect
 level: Intermediate
 doc-type: Tutorial
 exl-id: 7c7df08d-02a7-4548-96c0-98e27bcbc49b
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 1674
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '6187'
+source-wordcount: '6172'
 ht-degree: 0%
 
 ---

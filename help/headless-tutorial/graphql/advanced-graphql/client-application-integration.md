@@ -7,10 +7,11 @@ topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: d0576962-a86a-4742-8635-02be1ec3243f
-source-git-commit: a500c88091d87e34c12d4092c71241983b166af8
+duration: 345
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 2%
+source-wordcount: '927'
+ht-degree: 1%
 
 ---
 
@@ -39,7 +40,7 @@ ht-degree: 2%
 1. 다운로드 [Advanced-GraphQL-Tutorial-Solution-Package-1.2.zip](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/Advanced-GraphQL-Tutorial-Solution-Package-1.2.zip).
 1. AEM에서 다음 위치로 이동합니다. **도구** > **배포** > **패키지** 액세스 **패키지 관리자**.
 1. 이전 단계에서 다운로드한 패키지(zip 파일)를 업로드하고 설치합니다.
-1. AEM 게시 서비스에 패키지 복제
+1. 패키지를 AEM Publish 서비스로 복제
 
 ## 목표 {#objectives}
 
@@ -55,7 +56,7 @@ ht-degree: 2%
    $ git clone git@github.com:adobe/aem-guides-wknd-graphql.git
    ```
 
-1. 편집 `aem-guides-wknd-graphql/advanced-tutorial/.env.development` 파일 및 세트 `REACT_APP_HOST_URI` target AEM 게시 서비스를 가리키도록 업데이트하는 것이 좋습니다.
+1. 편집 `aem-guides-wknd-graphql/advanced-tutorial/.env.development` 파일 및 세트 `REACT_APP_HOST_URI` 대상 AEM 게시 서비스를 지정합니다.
 
    작성자 인스턴스에 연결하는 경우 인증 방법을 업데이트합니다.
 
@@ -83,7 +84,7 @@ ht-degree: 2%
 
    >[!NOTE]
    > 
-   > 위의 지침은 React 앱을 **AEM 게시 서비스**, 그러나 을 사용하여 **AEM Author 서비스** 대상 AEM as a Cloud Service 환경에 대한 로컬 개발 토큰을 얻습니다.
+   > 위의 지침은 React 앱을 **AEM Publish 서비스**, 그러나 을 사용하여 **AEM Author 서비스** 대상 AEM as a Cloud Service 환경에 대한 로컬 개발 토큰을 얻습니다.
    >
    > 또한 앱을 [aemAaCS SDK를 사용하는 로컬 작성자 인스턴스](/help/headless-tutorial/graphql/quick-setup/local-sdk.md) 기본 인증을 사용합니다.
 
@@ -111,7 +112,7 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->    GraphQL API 요청이 `http://localhost:3000` 및 AEM Publish 서비스 도메인에 대한 것이 아니라, 검토 [언더더 후드](../multi-step/graphql-and-react-app.md#under-the-hood) 기본 튜토리얼에서
+>    GraphQL API 요청이 `http://localhost:3000` 및 AEM Publish 서비스 도메인에 대한 NOT 을 검토하십시오. [언더더 후드](../multi-step/graphql-and-react-app.md#under-the-hood) 기본 튜토리얼에서
 
 
 ## 코드 검토
@@ -319,6 +320,6 @@ WKND React 앱의 기본 보기에서는 과 같은 활동 유형에 따라 이�
 * 목록에서 원하는 위치 옵션을 클릭하면 일치하는 모험만 표시됩니다.
 * 일치하는 Adventure가 하나만 있으면 Adventure Details 보기가 표시됩니다.
 
-## 축하합니다
+## 축하합니다.
 
 축하합니다! 이제 통합 및 샘플 WKND 앱에 지속 쿼리 구현을 완료했습니다.

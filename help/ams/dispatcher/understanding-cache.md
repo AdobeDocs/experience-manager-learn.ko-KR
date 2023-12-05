@@ -8,10 +8,11 @@ level: Beginner
 thumbnail: xx.jpg
 doc-type: Article
 exl-id: 66ce0977-1b0d-4a63-a738-8a2021cf0bd5
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 541
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1747'
-ht-degree: 1%
+source-wordcount: '1716'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +35,7 @@ ht-degree: 1%
 
 각 요청이 Dispatcher를 통과할 때 요청은 구성된 규칙을 따라 적격 항목의 응답에 로컬로 캐시된 버전을 유지합니다
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>메모:</b>
+<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>참고:</b>
 
 Apache가 DocumentRoot에서 파일을 찾을 때 해당 파일이 어느 AEM 인스턴스에서 발생했는지 알 수 없기 때문에 의도적으로 게시된 워크로드를 작성자 워크로드와 분리시킵니다. 따라서 작성자 팜에서 캐시를 비활성화한 경우에도 작성자의 DocumentRoot가 게시자와 동일하면 존재하는 경우 캐시에서 파일을 제공합니다. 즉, 게시된 캐시에서에 대한 작성자 파일을 제공하고 방문자를 위한 매우 끔찍한 믹스 매치 경험을 만듭니다.
 
@@ -94,7 +95,7 @@ AMS 기본 구성 팜에서는 아래와 같이 의 포함을 찾을 수 있습�
 
 여기서 주목할 중요한 사항은 `/docroot` 작성자의 캐시 디렉터리로 설정됩니다.
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>메모:</b>
+<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>참고:</b>
 
 다음을 확인하십시오. `DocumentRoot` 작성자의 `.vhost` 파일이 팜과 일치함 `/docroot` 매개 변수
 </div>
@@ -135,7 +136,7 @@ AMS 기본 구성 팜에서는 아래와 같이 의 포함을 찾을 수 있습�
 작성자 시나리오에서 콘텐츠는 항상 그리고 의도적으로 변경됩니다. 자주 변경되지 않는 항목만 캐시합니다.
 캐시할 규칙이 있습니다. `/libs` 기본 AEM 설치의 일부이며 서비스 팩, 누적 수정 팩, 업그레이드 또는 핫픽스를 설치하기 전까지 변경됩니다. 따라서 이러한 요소를 캐시하는 것은 매우 적절하며, 실제로 사이트를 사용하는 최종 사용자의 작성자 경험의 큰 이점이 있습니다.
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>메모:</b>
+<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>참고:</b>
 
 이러한 규칙은 캐시됩니다 <b>`/apps`</b> 사용자 정의 애플리케이션 코드가 있는 위치입니다. 이 인스턴스에서 코드를 개발 중인 경우 파일을 저장할 때 매우 혼란스러우며 캐시된 복사본을 제공하기 때문에 UI에 가 반영되었는지 표시되지 않습니다. 여기서의 의도는 AEM에 코드를 배포하는 경우 너무 자주 배포되지 않으며 배포 단계의 일부가 작성자 캐시를 지우는 것입니다. 캐시 가능한 코드를 최종 사용자가 더 빨리 실행할 수 있다는 이점이 큽니다.
 </div>
@@ -145,7 +146,7 @@ AMS 기본 구성 팜에서는 아래와 같이 의 포함을 찾을 수 있습�
 
 이는 Dispatcher 기능의 보석 중 하나입니다. 게시자가 로드 중이거나 응답하지 않으면 일반적으로 502 또는 503 http 응답 코드가 발생합니다. 이 경우 이 기능이 활성화되면 Dispatcher는 새 복사본이 아니더라도 최대한 노력하여 캐시에 있는 콘텐츠를 계속 제공하도록 지침을 받게 됩니다. 기능을 제공하지 않는 오류 메시지를 표시하는 것보다 기능이 있는 경우 제공하는 것이 좋습니다.
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>메모:</b>
+<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>참고:</b>
 
 게시자 렌더러에서 소켓 시간 제한 또는 500 오류 메시지가 있는 경우 이 기능이 트리거되지 않습니다. AEM에 연결할 수 없는 경우 이 기능은 아무 작업도 하지 않습니다
 </div>
@@ -159,7 +160,7 @@ AMS 기본 구성 팜에서는 아래와 같이 의 포함을 찾을 수 있습�
 
 ## 쿼리 매개 변수/인수를 사용하여 페이지 캐싱
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>메모:</b>
+<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>참고:</b>
 
 Dispatcher 모듈의 일반적인 동작 중 하나는 요청에 URI(일반적으로 다음과 같이 표시됨)에 쿼리 매개 변수가 있는 경우입니다 `/content/page.html?myquery=value`) 파일 캐싱을 건너뛰고 AEM 인스턴스로 바로 이동합니다. 이 요청을 동적 페이지로 간주하므로 캐시해서는 안 됩니다. 이로 인해 캐시 효율성에 좋지 않은 영향을 미칠 수 있습니다.
 </div>
@@ -252,7 +253,7 @@ Dispatcher 모듈의 일반적인 동작 중 하나는 요청에 URI(일반적�
 
 Javascript를 통해 쿼리 매개 변수를 사용하는 페이지는 이 설정의 매개 변수를 무시하면서 여전히 완전히 작동합니다.  휴지통에서 HTML 파일을 변경하지 않기 때문입니다.  로컬 브라우저에서 JavaScript를 사용하여 실시간으로 브라우저를 업데이트합니다.  즉, Javascript와 함께 쿼리 매개 변수를 사용하는 경우 페이지 캐싱에 대해 이 매개 변수를 무시할 수 있습니다.  해당 페이지를 캐시하여 성능 향상을 누릴 수 있습니다.
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>메모:</b>
+<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>참고:</b>
 
 이러한 페이지를 추적하려면 유지가 필요하지만 성능을 향상시킬 가치가 있습니다.  CSE에 웹 사이트 트래픽에 대한 보고서를 실행하여 지난 90일 동안 쿼리 매개변수를 사용하여 분석할 모든 페이지 목록과 무시하지 말아야 할 쿼리 매개변수를 알 수 있도록 할 수 있습니다
 </div>
@@ -288,7 +289,7 @@ Dispatcher가 에셋 및 원하는 헤더를 캐시하도록 한 경우 적절�
 
 이 예제에서는 CDN이 캐시를 무효화할 시기를 알 수 있도록 헤더를 제공하도록 AEM을 구성했습니다. 즉, 이제 AEM에서 헤더에 따라 무효화되는 파일을 적절히 지시할 수 있습니다.
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>메모:</b>
+<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>참고:</b>
 
 정규 표현식이나 glob 일치를 사용할 수 없습니다. 캐시할 머리글의 리터럴 목록입니다. 캐시할 리터럴 헤더 목록에만 넣습니다.
 </div>

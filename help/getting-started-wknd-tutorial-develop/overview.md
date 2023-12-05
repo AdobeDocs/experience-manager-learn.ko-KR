@@ -1,10 +1,7 @@
 ---
 title: AEM Sites 시작 - WKND 튜토리얼
 description: WKND라는 가상의 라이프스타일 브랜드를 위한 AEM 사이트를 구현하는 방법에 대해 알아봅니다. 프로젝트 설정, Maven 원형, 핵심 구성 요소, 편집 가능한 템플릿, 클라이언트 라이브러리 및 구성 요소 개발 등의 기본 Experience Manager 주제에 대한 설명을 살펴보십시오.
-topics: development
 version: Cloud Service
-activity: develop
-audience: developer
 jira: KT-13565
 mini-toc-levels: 1
 index: y
@@ -16,10 +13,10 @@ level: Beginner
 doc-type: Catalog
 exl-id: 09a600f4-1ada-4fb7-ae44-586364cff389
 recommendations: disable
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '599'
-ht-degree: 7%
+source-wordcount: '577'
+ht-degree: 5%
 
 ---
 

@@ -2,10 +2,7 @@
 title: 외부 애플리케이션에서 as a Cloud Service으로 AEM 인증
 description: AEM 외부 애플리케이션이 로컬 개발 액세스 토큰 및 서비스 자격 증명을 사용하여 HTTP를 통해 as a Cloud Service으로 인증하고 상호 작용하는 방법을 살펴봅니다.
 version: Cloud Service
-topics: Development, Security
 feature: APIs
-activity: develop
-audience: developer
 jira: KT-6785
 thumbnail: 330460.jpg
 topic: Headless, Integrations
@@ -13,9 +10,10 @@ role: Developer
 level: Intermediate, Experienced
 doc-type: Tutorial
 exl-id: 63c23f22-533d-486c-846b-fae22a4d68db
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 171
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '641'
+source-wordcount: '621'
 ht-degree: 0%
 
 ---

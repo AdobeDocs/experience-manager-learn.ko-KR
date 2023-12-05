@@ -1,12 +1,8 @@
 ---
 title: AEM Forms에서 사용자 지정 에셋 유형 나열
 description: AEM Forms에서 사용자 지정 에셋 유형 나열 중 2부
-uuid: 6467ec34-e452-4c21-9bb5-504f9630466a
 feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+doc-type: Tutorial
 version: 6.4,6.5
 discoiquuid: 4b940465-0bd7-45a2-8d01-e4d640c9aedf
 topic: Development
@@ -14,9 +10,10 @@ role: Developer
 level: Experienced
 exl-id: f221d8ee-0452-4690-a936-74bab506d7ca
 last-substantial-update: 2019-07-10T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 184
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '584'
 ht-degree: 0%
 
 ---
@@ -78,7 +75,7 @@ ht-degree: 0%
 
 ## 검색 및 목록 구성 요소 구성 {#configure-search-and-lister-component}
 
-사용자 지정 템플릿을 정의한 후에는 이 사용자 지정 템플릿을 &quot;검색 및 목록&quot; 구성 요소와 연결해야 합니다. 브라우저 지정 [이 URL로 ](http://localhost:4502/editor.html/content/AemForms/CustomPortal.html).
+사용자 지정 템플릿을 정의한 후에는 이 사용자 지정 템플릿을 &quot;검색 및 목록&quot; 구성 요소와 연결해야 합니다. 브라우저 지정 [이 URL로](http://localhost:4502/editor.html/content/AemForms/CustomPortal.html).
 
 디자인 모드로 전환하고 허용된 구성 요소 그룹에 검색 및 목록 구성 요소를 포함하도록 단락 시스템을 구성합니다. 검색 및 목록 작성자 구성 요소는 문서 서비스 그룹의 일부입니다.
 
@@ -108,7 +105,7 @@ ht-degree: 0%
 
 ![assettypes](assets/assettypes.png)
 
-이제 검색 및 목록 포털 구성 요소를 구성했으므로 목록 목록이 작동 중인지 확인할 차례입니다. 브라우저 지정 [이 URL로 ](http://localhost:4502/content/AemForms/CustomPortal.html?wcmmode=disabled). 결과는 아래 표시된 이미지와 같아야 합니다.
+이제 검색 및 목록 포털 구성 요소를 구성했으므로 목록 목록이 작동 중인지 확인할 차례입니다. 브라우저 지정 [이 URL로](http://localhost:4502/content/AemForms/CustomPortal.html?wcmmode=disabled). 결과는 아래 표시된 이미지와 같아야 합니다.
 
 >[!NOTE]
 >

@@ -8,9 +8,10 @@ role: User
 level: Intermediate
 exl-id: 6e4b901a-6534-4c34-b315-2f2620b74247
 last-substantial-update: 2019-06-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 64
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '240'
+source-wordcount: '223'
 ht-degree: 0%
 
 ---
@@ -28,6 +29,6 @@ Row1은 서비스 호출에서 반환된 데이터에 따라 증가하도록 구
 
 [여기에 지정된 대로 Tomcat 설치](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md)
 [이 zip 파일에 포함된 SampleRest.war 파일을 Tomcat에 배포합니다](assets/sample-rest.zip)
-[자산 설치 ](assets/amortizationschedule.zip) AEM 패키지 관리자 사용
+[자산 설치](assets/amortizationschedule.zip) AEM 패키지 관리자 사용
 [상각 일정 양식 열기](http://localhost:4502/content/dam/formsanddocuments/amortization/jcr:content?wcmmode=disabled)
 적절한 값을 입력하고 Calculate Ameration Schedule should be populated in your form

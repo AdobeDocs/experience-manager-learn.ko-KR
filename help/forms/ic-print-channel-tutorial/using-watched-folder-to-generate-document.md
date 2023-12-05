@@ -1,14 +1,8 @@
 ---
 title: 감시 폴더를 사용하여 인쇄 채널 문서 생성
-seo-title: Generating Print Channel Documents Using Watched Folder
 description: 인쇄 채널용 첫 번째 대화형 통신 문서를 만들기 위한 10단계 튜토리얼의 일부입니다. 이 부분에서는 감시 폴더 메커니즘을 사용하여 인쇄 채널 문서를 생성합니다.
-seo-description: This is part 10 of multistep tutorial for creating your first interactive communications document for the print channel. In this part, we will generate print channel documents using the watched folder mechanism.
-uuid: 9e39f4e3-1053-4839-9338-09961ac54f81
 feature: Interactive Communication
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+doc-type: Tutorial
 version: 6.4,6.5
 contentOwner: gbedekar
 discoiquuid: 23fbada3-d776-4b77-b381-22d3ec716ae9
@@ -16,9 +10,10 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 9bb05c94-2a7b-4149-b567-186eb08b1c66
-source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
+duration: 98
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
@@ -59,7 +54,7 @@ AEM에서 감시 폴더를 구성할 때는 감시 폴더에 파일을 놓을 �
 * interactiveCommunicationsDocument 경로가 인쇄할 올바른 문서를 가리키는지 확인합니다.( 라인 1)
 * saveLocation(2행)을 기록해 두십시오.필요에 따라 변경할 수 있습니다.
 * 양식 데이터 모델에 대한 입력 매개 변수가 요청 속성에 바인딩되어 있고 해당 바인딩 값이 &quot;accountnumber&quot;로 설정되어 있는지 확인하십시오. 아래 스크린샷을 참조하십시오.
-   ![요청](assets/requestattributeprintchannel.gif)
+  ![요청](assets/requestattributeprintchannel.gif)
 
 * 다음 내용으로 accountnumbers.xml 파일을 만듭니다
 

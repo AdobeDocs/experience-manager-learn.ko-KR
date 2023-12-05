@@ -2,15 +2,15 @@
 title: 폴더 구조 및 파일 이름 지정 규칙 결정
 description: 파일 이름 지정은 Dynamic Media Classic을 구현할 때 가장 중요한 결정을 내릴 수 있습니다. 폴더 구조도 마찬가지로 중요합니다. 폴더 구조 및 파일 이름을 사용하는 것이 중요하고 가능한 접근 방식에 대해 알아봅니다.
 feature: Dynamic Media Classic
-activity: develop
 topic: Content Management
 role: User
 level: Beginner
 doc-type: Tutorial
 exl-id: 15121896-9196-4ce0-aff2-9178563326b4
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 330
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1207'
+source-wordcount: '1202'
 ht-degree: 0%
 
 ---

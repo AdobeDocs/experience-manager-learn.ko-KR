@@ -9,10 +9,11 @@ level: Beginner
 thumbnail: xx.jpg
 doc-type: Article
 exl-id: 53baef9c-aa4e-4f18-ab30-ef9f4f5513ee
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 286
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1024'
-ht-degree: 4%
+source-wordcount: '988'
+ht-degree: 0%
 
 ---
 
@@ -165,7 +166,7 @@ AEM을 사용하여 단축 항목을 제어하면 다음과 같은 이점이 있
 - 단축이 자주 변경되지 않고 자주 사용하는 스테이플 끝점인 경우 `mod_rewrite` 규칙.
 - 단축 네임스페이스(예: `/aboutus`)는 동일한 AEM 인스턴스의 많은 브랜드에 대해 재사용한 다음 규칙 다시 작성을 사용해야 합니다.
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>메모:</b>
+<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>참고:</b>
 
 AEM 단축 기능을 사용하고 네임스페이스를 사용하지 않으려면 명명 규칙을 만들 수 있습니다. 다음과 같이 중첩된 단축 URL 사용 `/brand1/aboutus`, `brand2/aboutus`, `brand3/aboutus`.
 </div>

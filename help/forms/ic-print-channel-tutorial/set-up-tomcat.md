@@ -1,13 +1,8 @@
 ---
 title: Tomcat 비디오 설치 및 구성
-seo-title: Install and Configure Tomcat
 description: 첫 번째 대화형 통신 문서를 만들기 위한 여러 단계 자습서의 1부입니다.
-uuid: 835e2342-82b6-4f0c-9a6b-467bbbd8527a
 feature: Interactive Communication
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+doc-type: Tutorial
 version: 6.4,6.5
 thumbnail: 37815.jpg
 discoiquuid: 5f68be3d-aa35-4a3f-aaea-b8ee213c87ae
@@ -15,10 +10,11 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: faa9ca2d-6cfa-4abf-be5e-3e549202853a
-source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
+duration: 259
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '241'
-ht-degree: 1%
+source-wordcount: '239'
+ht-degree: 0%
 
 ---
 
@@ -43,7 +39,7 @@ tomcat을 설정하려면 다음 지침을 따르십시오.
 11. tomcat이 시작되면 다음을 통해 WAR 파일에 의해 노출된 엔드포인트를 테스트합니다. [여기를 클릭](http://localhost:8080/SampleRest/webapi/getStatement/9586)
 12. 이 호출의 결과로 샘플 데이터를 가져와야 합니다.
 
-축하합니다 !!!. tomcat을 설정하고 SampleRest.war 파일을 배포했습니다.
+축하합니다!!! tomcat을 설정하고 SampleRest.war 파일을 배포했습니다.
 
 다음 비디오에서는 Tomcat에서의 샘플 애플리케이션 배포에 대해 설명합니다
 >[!VIDEO](https://video.tv.adobe.com/v/37815?quality=12&learn=on)

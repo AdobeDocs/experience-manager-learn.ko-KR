@@ -11,10 +11,11 @@ thumbnail: 17019.jpg
 last-substantial-update: 2022-06-09T00:00:00Z
 doc-type: Feature Video
 exl-id: c72dc489-70e6-48ca-99a8-663d4c0652ba
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 594
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '218'
-ht-degree: 8%
+source-wordcount: '212'
+ht-degree: 0%
 
 ---
 
@@ -33,7 +34,7 @@ AEM Assets의 이미지용 스마트 태그는 이미지 에셋에 파생된 메
 
 스마트 컨텐츠 서비스를 사용하기 전에 Adobe I/O에서 통합을 만들기 위해 다음을 확인하십시오.
 
-* 조직에 대한 관리자 권한이 부여된 Adobe ID 계정이 있습니다
+* 조직에 대한 관리자 권한이 있는 Adobe ID 계정
 * 조직에 대해 스마트 컨텐츠 서비스가 활성화되어 있습니다.
 
 이 비디오에서는 스마트 태그 이미지에 사용되는 Adobe I/O 스마트 컨텐츠 서비스를 구성하는 데 필요한 다음 작업에 대해 자세히 설명합니다.
