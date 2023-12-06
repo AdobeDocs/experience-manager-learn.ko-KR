@@ -10,10 +10,10 @@ jira: KT-6912
 thumbnail: 330534.jpg
 exl-id: 82cd6dd5-735f-4641-9848-a5f5144b8624
 duration: 26
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+source-git-commit: 8a042c561c1a7e48152c2b067d92d709ab5fd53e
 workflow-type: tm+mt
 source-wordcount: '80'
-ht-degree: 68%
+ht-degree: 67%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 68%
 >title="코드 배포"
 >abstract="Cloud Manager Git 저장소를 외부 Git 저장소와 통합하고 프로젝트를 AEM as a Cloud Service에 배포합니다."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/merge-projects.html?lang=ko#cloud-manager" text="프로젝트 병합"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=ko#how-to-use" text="Cloud Manager로 코드 배포"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=en" text="Cloud Manager로 코드 배포"
 
 Cloud Manager Git 저장소를 외부 Git 저장소와 통합하고 프로젝트를 AEM as a Cloud Service에 배포합니다.
 
