@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: b770fc33ee0752911135d1a94144406bad8f295b
+source-git-commit: 43c021b051806380b3211f2d7357555622217b91
 workflow-type: tm+mt
-source-wordcount: '1084'
-ht-degree: 22%
+source-wordcount: '1072'
+ht-degree: 17%
 
 ---
 
@@ -71,7 +71,7 @@ ht-degree: 22%
          + [Adobe I/O Runtime 작업](./developing/extensibility/ui/runtime-action.md)
          + [확인](./developing/extensibility/ui/verify.md)
          + [배포](./developing/extensibility/ui/deploy.md)
-         + 콘텐츠 조각{#content-fragments}
+         + 컨텐츠 조각{#content-fragments}
             + [개요](./developing/extensibility/ui/content-fragments/overview.md)
             + 예{#examples}
                + [AI 이미지 생성](./developing/extensibility/ui/content-fragments/examples/console-image-generation-and-image-upload.md)
@@ -134,6 +134,9 @@ ht-degree: 22%
    + [AEM Publish 서비스](./caching/publish.md)
    + [AEM Author 서비스](./caching/author.md)
    + [CDN 캐시 적중률 분석](./caching/cdn-cache-hit-ratio-analysis.md)
+   + 방법{#how-to}
+      + [캐싱 활성화](./caching/how-to/enable-caching.md)
+      + [캐싱 비활성화](./caching/how-to/disable-caching.md)
 + AEM 액세스{#accessing}
    + [개요](./accessing/overview.md)
    + [Adobe IMS 사용자](./accessing/adobe-ims-users.md)
@@ -174,7 +177,7 @@ ht-degree: 22%
       + [Asset compute 마이크로서비스](./migration/moving-to-aem-as-a-cloud-service/asset-compute-microservices.md)
       + [Dispatcher](./migration/moving-to-aem-as-a-cloud-service/dispatcher.md)
       + [검색 및 색인 지정](./migration/moving-to-aem-as-a-cloud-service/search-and-indexing.md)
-      + 콘텐츠 마이그레이션 {#content-migration}
+      + 컨텐츠 마이그레이션 {#content-migration}
          + [일괄 가져오기 서비스](./migration/moving-to-aem-as-a-cloud-service/content-migration/bulk-import-service.md)
          + [콘텐츠 전송 도구](./migration/moving-to-aem-as-a-cloud-service/content-migration/content-transfer-tool.md)
          + [FAQ](./migration/moving-to-aem-as-a-cloud-service/content-migration/faq.md)
@@ -182,7 +185,7 @@ ht-degree: 22%
       + AEM Forms as a Cloud Service {#aem-forms}
          + [소개](./migration/moving-to-aem-as-a-cloud-service/aem-forms/introduction.md)
          + [디지털 등록](./migration/moving-to-aem-as-a-cloud-service/aem-forms/digital-enrollment.md)
-         + [커뮤니케이션](./migration/moving-to-aem-as-a-cloud-service/aem-forms/communications.md)
+         + [통신](./migration/moving-to-aem-as-a-cloud-service/aem-forms/communications.md)
    + Cloud Acceleration Manager {#cloud-acceleration-manager}
       + [소개](./migration/cloud-acceleration-manager/introduction.md)
       + [준비 및 Best Practice Analyzer](./migration/cloud-acceleration-manager/readiness-and-best-practice-analyzer.md)
@@ -195,7 +198,7 @@ ht-degree: 22%
       + [에셋 워크플로 마이그레이션 도구](./migration/cloud-acceleration-manager/asset-workflow-migration-tool.md)
       + [Cloud Acceleration Manager 탐색](./migration/cloud-acceleration-manager/navigating.md)
       + [Cloud Acceleration Manager 사용](./migration/cloud-acceleration-manager/using.md)
-+ [콘텐츠 조각](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html){target=_blank}
++ [컨텐츠 조각](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html){target=_blank}
 + 양식{#forms}
    + Forms용 개발 as a Cloud Service{#developing-for-cloud-service}
       + [1 - 시작](./forms/developing-for-cloud-service/getting-started.md)
@@ -322,7 +325,7 @@ ht-degree: 22%
    + 테스트 및 디버그{#test-debug}
       + [작업자 테스트](./asset-compute/test-debug/test.md)
       + [작업자 디버깅](./asset-compute/test-debug/debug.md)
-   + {#deploy} 배포
+   + 배포{#deploy}
       + [Adobe I/O Runtime에 배포](./asset-compute/deploy/runtime.md)
       + [AEM과 통합](./asset-compute/deploy/processing-profiles.md)
    + 고급{#advanced}
