@@ -7,10 +7,10 @@ sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: f6491d04f7f23da75366904a7965103465d33f87
+source-git-commit: e5c50ffb379f497ed72efd63528af4f874b18ade
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 26%
+source-wordcount: '402'
+ht-degree: 17%
 
 ---
 
@@ -84,13 +84,14 @@ ht-degree: 26%
       + [Asset Share Commons 자산 키트](./sharing/asset-share/asset-share-commons-asset-kits.md)
    + [연결된 자산](./sharing/connected-assets.md)
 
-+ Creative 워크플로우와 통합{#creative-workflows}
++ Creative 워크플로{#creative-workflows}
    + [Adobe Express](./creative-workflows/adobe-express.md)
+   + [AEM Assets 추가 기능 Adobe Express](./creative-workflows/adobe-express-aem-assets-add-on.md)
    + [AEM Desktop App](./creative-workflows/aem-desktop-app.md)
-   + [Adobe Asset Link](./creative-workflows/adobe-asset-link.md)
+   + [Adobe 에셋 링크](./creative-workflows/adobe-asset-link.md)
    + [Adobe Stock](./creative-workflows/adobe-stock.md)
 
-+ Adobe Asset Link{#adobe-asset-link}
++ Adobe 에셋 링크{#adobe-asset-link}
    + [설정](./adobe-asset-link/setup.md)
    + [Adobe 에셋 링크 액세스](./adobe-asset-link/launch-adobe-asset-link.md)
    + [패널 개요](./adobe-asset-link/panel-overview.md)
@@ -132,7 +133,7 @@ ht-degree: 26%
       + [경험 조각](dynamic-media/dynamic-media-experience-fragments-feature-video-use.md)
       + [Dynamic Media 핵심 구성 요소](dynamic-media/dynamic-media-core-components.md)
 
-   + 튜토리얼 {#tutorials}
+   + Tutorials {#tutorials}
       + [회전 메뉴 세트 만들기](dynamic-media/tutorials/creating-different-kinds-of-sets-with-aem-dynamic-media-carousel-sets.md)
       + [이미지 집합 만들기](dynamic-media/tutorials/creating-different-kinds-of-sets-with-aem-dynamic-media-image-sets.md)
       + [이미지 사전 설정 만들기](dynamic-media/tutorials/creating-image-presets.md)
