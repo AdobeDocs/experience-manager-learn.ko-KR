@@ -11,9 +11,9 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: 162e10e5-fcb0-4f16-b6d1-b951826209d9
 duration: 140
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+source-git-commit: 6995b0221e381979aca0aeb540fe04d71b16eaae
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ asset compute 마이크로서비스를 확장하려면 로컬 개발자 컴퓨�
 1. 명령줄에서 필요한 npm 모듈 및 Adobe I/O CLI 플러그인을 설치합니다.
 
    ```
-   $ npm i -g @adobe/aio-cli@7.1.0 @openwhisk/wskdebug ngrok --unsafe-perm=true \
+   $ npm i -g @adobe/aio-cli @openwhisk/wskdebug ngrok --unsafe-perm=true \
    && aio plugins:install @adobe/aio-cli-plugin-asset-compute
    ```
 
@@ -76,11 +76,8 @@ Asset compute 작업자는 [Node.js](https://nodejs.org/)를 기반으로 하므
 [Adobe I/O CLI 설치](../../local-development-environment/development-tools.md#aio-cli), 또는 __aio__ 는 Adobe I/O 기술의 사용 및 상호 작용을 용이하게 하는 명령줄(CLI) npm 모듈이며, 사용자 정의 Asset compute 작업자의 생성 및 로컬 개발 모두에 사용됩니다.
 
 ```
-$ npm install -g @adobe/aio-cli@7.1.0
+$ npm install -g @adobe/aio-cli
 ```
-
-_Adobe I/O CLI 버전 7.1.0이 필요합니다. 현재 Adobe I/O CLI의 최신 버전은 지원되지 않습니다._
-
 
 ## Adobe I/O CLI Asset compute 플러그인 설치{#aio-asset-compute}
 
