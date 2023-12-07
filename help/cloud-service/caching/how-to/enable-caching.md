@@ -10,13 +10,13 @@ doc-type: Tutorial
 last-substantial-update: 2023-11-17T00:00:00Z
 jira: KT-14224
 thumbnail: KT-14224.jpeg
-source-git-commit: 43c021b051806380b3211f2d7357555622217b91
+exl-id: 544c3230-6eb6-4f06-a63c-f56d65c0ff4b
+source-git-commit: 783f84c821ee9f94c2867c143973bf8596ca6437
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '637'
 ht-degree: 0%
 
 ---
-
 
 # CDN 캐싱을 활성화하는 방법
 
@@ -47,23 +47,23 @@ AEM의 as a Cloud Service CDN에서 HTTP 응답 캐싱을 활성화하는 방법
 
 이 옵션은 캐싱을 활성화하는 데 권장되는 방법입니다. 하지만 AEM Publish에만 사용할 수 있습니다. 캐시 헤더를 업데이트하려면 `mod_headers` 모듈 및 `<LocationMatch>` Apache HTTP Server의 vhost 파일에 있는 지시문입니다. 일반 구문은 다음과 같습니다.
 
-    &quot;conf
-    &lt;locationmatch url=&quot;&quot; url_regex=&quot;&quot;>
-    # 이 이름의 응답 헤더(있는 경우)를 제거합니다. 같은 이름의 헤더가 여러 개 있으면 모두 제거됩니다.
-    헤더 unset Cache-Control
-    헤더 Surrogate-Control 설정 해제
-    헤더 설정 해제 만료
+```
+<LocationMatch "$URL$ || $URL_REGEX$">
+    # Removes the response header of this name, if it exists. If there are multiple headers of the same name, all will be removed.
+    Header unset Cache-Control
+    Header unset Surrogate-Control
+    Header unset Expires
+
+    # Instructs the web browser and CDN to cache the response for 'max-age' value (XXX) seconds. The 'stale-while-revalidate' and 'stale-if-error' attributes controls the stale state treatment at CDN layer.
+    Header set Cache-Control "max-age=XXX,stale-while-revalidate=XXX,stale-if-error=XXX"
     
-    # 웹 브라우저 및 CDN에 &#39;max-age&#39; 값(XXX)초 동안 응답을 캐시하도록 지시합니다. &quot;stale-while-revalidate&quot; 및 &quot;stale-if-error&quot; 속성은 CDN 계층에서 부실 상태 처리를 제어합니다.
-    헤더 집합 Cache-Control &quot;max-age=XXX,stale-while-revalidate=XXX,stale-if-error=XXX&quot;
+    # Instructs the CDN to cache the response for 'max-age' value (XXX) seconds. The 'stale-while-revalidate' and 'stale-if-error' attributes controls the stale state treatment at CDN layer.
+    Header set Surrogate-Control "max-age=XXX,stale-while-revalidate=XXX,stale-if-error=XXX"
     
-    # CDN이 &#39;max-age&#39; 값(XXX)초 동안 응답을 캐시하도록 지시합니다. &quot;stale-while-revalidate&quot; 및 &quot;stale-if-error&quot; 속성은 CDN 계층에서 부실 상태 처리를 제어합니다.
-    헤더 집합 Surrogate-Control &quot;max-age=XXX,stale-while-revalidate=XXX,stale-if-error=XXX&quot;
-    
-    # 웹 브라우저 및 CDN에 지정된 날짜 및 시간까지 응답을 캐시하도록 지시합니다.
-    헤더 집합 만료 &quot;Sun, 2023년 12월 31일 23:59:59 GMT&quot;
-    &lt;/locationmatch>
-    &quot;
+    # Instructs the web browser and CDN to cache the response until the specified date and time.
+    Header set Expires "Sun, 31 Dec 2023 23:59:59 GMT"
+</LocationMatch>
+```
 
 다음은 각 기능의 목적을 요약한 것입니다 **머리글** 및 적용 가능 **속성** 머리글에 사용됩니다.
 
@@ -87,15 +87,16 @@ AEM의 as a Cloud Service CDN에서 HTTP 응답 캐싱을 활성화하는 방법
 1. AEM 프로젝트에서 원하는 프로젝트 파일을 찾습니다. `dispatcher/src/conf.d/available_vhosts` 디렉토리.
 1. vhost 업데이트(예: `wknd.vhost`) 파일은 다음과 같습니다.
 
-       &quot;conf
-       &lt;locationmatch content=&quot;&quot;>*\.(html)$&quot;>
-       # 응답 헤더 제거(있는 경우)
-       헤더 unset Cache-Control
-       
-       # 웹 브라우저 및 CDN이 최대 기간 값(600초) 동안 응답을 캐시하도록 지시합니다.
-       헤더 집합 Cache-Control &quot;max-age=600&quot;
-       &lt;/locationmatch>
-       &quot;
+   ```
+   <LocationMatch "^/content/.*\.(html)$">
+       # Removes the response header if present
+       Header unset Cache-Control
+   
+       # Instructs the web browser and CDN to cache the response for max-age value (600) seconds.
+       Header set Cache-Control "max-age=600"
+   </LocationMatch>
+   ```
+
    의 vhost 파일 `dispatcher/src/conf.d/enabled_vhosts` 디렉터리는 다음과 같습니다 **심볼릭 링크** 에 있는 파일로 `dispatcher/src/conf.d/available_vhosts` 디렉터리이므로 없는 경우 심볼릭 링크를 만들어야 합니다.
 1. 를 사용하여 원하는 AEM as a Cloud Service 환경에 vhost 변경 사항을 배포합니다. [Cloud Manager - 웹 계층 구성 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?#web-tier-config-pipelines) 또는 [RDE 명령](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html?lang=en#deploy-apache-or-dispatcher-configuration).
 
@@ -109,13 +110,13 @@ AEM의 as a Cloud Service CDN에서 HTTP 응답 캐싱을 활성화하는 방법
 
 캐시 헤더를 업데이트하려면 `HttpServletResponse` 사용자 지정 Java™ 코드의 개체(Sling 서블릿, Sling 서블릿 필터). 일반 구문은 다음과 같습니다.
 
-    &quot;java
-    // 웹 브라우저 및 CDN에 &#39;max-age&#39; 값(XXX)초 동안 응답을 캐시하도록 지시합니다. &quot;stale-while-revalidate&quot; 및 &quot;stale-if-error&quot; 속성은 CDN 계층에서 부실 상태 처리를 제어합니다.
-    response.setHeader(&quot;Cache-Control&quot;, &quot;max-age=XXX,stale-while-revalidate=XXX,stale-if-error=XXX&quot;);
-    
-    // &#39;max-age&#39; 값(XXX)초 동안 응답을 캐시하도록 CDN에 지시합니다. &quot;stale-while-revalidate&quot; 및 &quot;stale-if-error&quot; 속성은 CDN 계층에서 부실 상태 처리를 제어합니다.
-    response.setHeader(&quot;Surrogate-Control&quot;, &quot;max-age=XXX,stale-while-revalidate=XXX,stale-if-error=XXX&quot;);
-    
-    // 웹 브라우저 및 CDN에 지정된 날짜 및 시간까지 응답을 캐시하도록 지시합니다.
-    response.setHeader(&quot;Expires&quot;, &quot;Sun, 2023년 12월 31일 23:59:59 GMT&quot;);
-    &quot;
+```java
+// Instructs the web browser and CDN to cache the response for 'max-age' value (XXX) seconds. The 'stale-while-revalidate' and 'stale-if-error' attributes controls the stale state treatment at CDN layer.
+response.setHeader("Cache-Control", "max-age=XXX,stale-while-revalidate=XXX,stale-if-error=XXX");
+
+// Instructs the CDN to cache the response for 'max-age' value (XXX) seconds. The 'stale-while-revalidate' and 'stale-if-error' attributes controls the stale state treatment at CDN layer.
+response.setHeader("Surrogate-Control", "max-age=XXX,stale-while-revalidate=XXX,stale-if-error=XXX");
+
+// Instructs the web browser and CDN to cache the response until the specified date and time.
+response.setHeader("Expires", "Sun, 31 Dec 2023 23:59:59 GMT");
+```

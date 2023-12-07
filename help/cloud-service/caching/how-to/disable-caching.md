@@ -10,13 +10,13 @@ doc-type: Tutorial
 last-substantial-update: 2023-11-30T00:00:00Z
 jira: KT-14224
 thumbnail: KT-14224.jpeg
-source-git-commit: 43c021b051806380b3211f2d7357555622217b91
+exl-id: 22b1869e-5bb5-437d-9cb5-2d27f704c052
+source-git-commit: 783f84c821ee9f94c2867c143973bf8596ca6437
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '400'
 ht-degree: 0%
 
 ---
-
 
 # CDN 캐싱을 비활성화하는 방법
 
@@ -48,16 +48,16 @@ AEM의 as a Cloud Service CDN에서 HTTP 응답 캐싱을 비활성화하는 방
 
 이 옵션은 캐싱을 비활성화하는 데 권장되는 접근 방식이지만 AEM Publish에만 사용할 수 있습니다. 캐시 헤더를 업데이트하려면 `mod_headers` 모듈 및 `<LocationMatch>` Apache HTTP Server의 vhost 파일에 있는 지시문입니다. 일반 구문은 다음과 같습니다.
 
-    &quot;conf
-    &lt;locationmatch url=&quot;&quot; url_regex=&quot;&quot;>
-    # 이 이름의 응답 헤더(있는 경우)를 제거합니다. 같은 이름의 헤더가 여러 개 있으면 모두 제거됩니다.
-    헤더 unset Cache-Control
-    헤더 설정 해제 만료
-    
-    # CDN이 응답을 캐시하지 않도록 지시합니다.
-    헤더 집합 Cache-Control &quot;private&quot;
-    &lt;/locationmatch>
-    &quot;
+```
+<LocationMatch "$URL$ || $URL_REGEX$">
+    # Removes the response header of this name, if it exists. If there are multiple headers of the same name, all will be removed.
+    Header unset Cache-Control
+    Header unset Expires
+
+    # Instructs the CDN to not cache the response.
+    Header set Cache-Control "private"
+</LocationMatch>
+```
 
 #### 예
 
@@ -68,16 +68,17 @@ AEM의 as a Cloud Service CDN에서 HTTP 응답 캐싱을 비활성화하는 방
 1. AEM 프로젝트에서 원하는 프로젝트 파일을 찾습니다. `dispatcher/src/conf.d/available_vhosts` 디렉토리.
 1. vhost 업데이트(예: `wknd.vhost`) 파일은 다음과 같습니다.
 
-       &quot;conf
-       &lt;locationmatch etc.clientlibs=&quot;&quot;>*\.(css)$&quot;>
-       # 이 이름의 응답 헤더(있는 경우)를 제거합니다. 같은 이름의 헤더가 여러 개 있으면 모두 제거됩니다.
-       헤더 unset Cache-Control
-       헤더 설정 해제 만료
-       
-       # CDN이 응답을 캐시하지 않도록 지시합니다.
-       헤더 집합 Cache-Control &quot;private&quot;
-       &lt;/locationmatch>
-       &quot;
+   ```
+   <LocationMatch "^/etc.clientlibs/.*\.(css)$">
+       # Removes the response header of this name, if it exists. If there are multiple headers of the same name, all will be removed.
+       Header unset Cache-Control
+       Header unset Expires
+   
+       # Instructs the CDN to not cache the response.
+       Header set Cache-Control "private"
+   </LocationMatch>
+   ```
+
    의 vhost 파일 `dispatcher/src/conf.d/enabled_vhosts` 디렉터리는 다음과 같습니다 **심볼릭 링크** 에 있는 파일로 `dispatcher/src/conf.d/available_vhosts` 디렉터리이므로 없는 경우 심볼릭 링크를 만들어야 합니다.
 1. 를 사용하여 원하는 AEM as a Cloud Service 환경에 vhost 변경 사항을 배포합니다. [Cloud Manager - 웹 계층 구성 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?#web-tier-config-pipelines) 또는 [RDE 명령](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html?lang=en#deploy-apache-or-dispatcher-configuration).
 
@@ -85,6 +86,6 @@ AEM의 as a Cloud Service CDN에서 HTTP 응답 캐싱을 비활성화하는 방
 
 이 옵션은 AEM Publish와 Author 모두에서 사용할 수 있습니다. 캐시 헤더를 업데이트하려면 `SlingHttpServletResponse` 사용자 지정 Java™ 코드의 개체(Sling 서블릿, Sling 서블릿 필터). 일반 구문은 다음과 같습니다.
 
-    &quot;java
-    response.setHeader(&quot;Cache-Control&quot;, &quot;private&quot;);
-    &quot;
+```java
+response.setHeader("Cache-Control", "private");
+```
