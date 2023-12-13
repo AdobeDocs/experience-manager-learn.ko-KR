@@ -4,10 +4,10 @@ breadcrumb-title: AEM Foundation 튜토리얼
 user-guide-description: Adobe Experience Manager Foundation에 대한 비디오 및 튜토리얼 모음입니다.
 sub-product: Experience Manager
 index: y
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+source-git-commit: 338bb13f1739d822e6a4b7232ae1a2da6b24732a
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 16%
+source-wordcount: '224'
+ht-degree: 14%
 
 ---
 
@@ -28,7 +28,8 @@ ht-degree: 16%
    + [AMS의 IMS 인증 이해](authentication/adobe-ims-authentication-technical-video-understand.md)
 + Adobe Cloud Manager{#cloud-manager}
    + [Adobe Cloud Manager 이해](./cloud-manager/understand-cloud-manager-for-aem.md)
-   + [Adobe Cloud Manager에서 CI/CD 파이프라인 사용](./cloud-manager/use-the-cicd-pipeline-in-cloud-manager-for-aem.md)
+   + [CI/CD 파이프라인](./cloud-manager/use-the-cicd-pipeline-in-cloud-manager-for-aem.md)
+   + [사용자 지정 권한](./cloud-manager/cloud-permissions.md)
 + 개발 {#development}
    + [Sling 모델 내보내기 개발](./development/develop-sling-model-exporter.md)
    + [로컬 AEM 개발 환경 설정](./development/set-up-a-local-aem-development-environment.md)
@@ -40,7 +41,7 @@ ht-degree: 16%
    + [프로젝트 마스터 사용](./projects/use-project-masters.md)
 + 보안 {#security}
    + [CORS(원본 간 리소스 공유)를 위한 개발](./security/develop-for-cross-origin-resource-sharing.md)
-   + [원본 간 리소스 공유(CORS) 이해](./security/understand-cross-origin-resource-sharing.md)
+   + [CORS(원본 간 리소스 공유) 이해](./security/understand-cross-origin-resource-sharing.md)
    + [SSL 마법사 사용](./security/use-the-ssl-wizard.md)
    + [ModSecurity CRS DoS 공격 방지](./security/modsecurity-crs-dos-attack-protection.md)
    + [개인 인증서가 있는 API에 대한 HTTPS 연결](./security/call-internal-apis-having-private-certificate.md)
