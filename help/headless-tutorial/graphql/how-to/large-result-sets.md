@@ -12,7 +12,7 @@ jira: KT-13102
 thumbnail: 3418381.jpeg
 exl-id: 304b4d80-27bd-4336-b2ff-4b613a30f712
 duration: 439
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+source-git-commit: d7f3c5193cc53f050d24dd66705a3979fb710c36
 workflow-type: tm+mt
 source-wordcount: '843'
 ht-degree: 1%
@@ -177,7 +177,7 @@ query adventuresByPaginated($first:Int, $after:String) {
 
 #### 페이지가 매겨진 다음 결과 세트
 
-다음 결과 세트는 를 사용하여 가져올 수 있습니다 `after` 매개 변수 및 `endCursor` 이전 쿼리의 값입니다. 더 이상 가져올 결과가 없으면 `hasNextPage` 은(는) `false`.
+다음을 사용하여 다음 결과 세트를 가져올 수 있습니다 `after` 매개 변수 및 `endCursor` 이전 쿼리의 값입니다. 더 이상 가져올 결과가 없으면 `hasNextPage` 은(는) `false`.
 
 ##### 쿼리 변수
 
