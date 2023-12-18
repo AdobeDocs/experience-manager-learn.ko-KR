@@ -12,10 +12,10 @@ level: Beginner
 last-substantial-update: 2022-10-17T00:00:00Z
 exl-id: 41e15a2c-758b-4e7d-9d23-ef671c1dc155
 duration: 81
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+source-git-commit: 90c3ef479b289c9b319735fd28a1e39875c421a9
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 2%
+source-wordcount: '266'
+ht-degree: 3%
 
 ---
 
@@ -48,7 +48,7 @@ Headless CMS 시나리오에서, AEM GraphQL API를 사용하여 콘텐츠를 �
 
 ### AEM 환경
 
-이 자습서를 완료하려면 AEM AEM 관리자가 as a Cloud Service 환경에 액세스하는 것이 좋습니다. AEM as a Cloud Service 환경에 액세스할 수 없는 경우 [로컬 AEM as a Cloud Service 빠른 시작 SDK](/help/cloud-service/local-development-environment/aem-runtime.md). 하지만 콘텐츠 조각 탐색과 같은 일부 제품 UI 화면은 다르다는 점에 유의해야 합니다.
+이 자습서를 완료하려면 AEM 관리자가 AEM as a Cloud Service 환경에 액세스할 수 있도록 하는 것이 좋습니다. AEM as a Cloud Service 환경에 액세스할 수 없는 경우 [AEM Headless 체험판에 등록](https://commerce.adobe.com/business-trial/sign-up?items%5B0%5D%5Bid%5D=649A1AF5CBC5467A25E84F2561274821&amp;cli=headless_exl_banner_campaign&amp;co=US&amp;lang=en) AEM 헤드리스 기능을 살펴보십시오.
 
 ## 시작해 보겠습니다!
 
