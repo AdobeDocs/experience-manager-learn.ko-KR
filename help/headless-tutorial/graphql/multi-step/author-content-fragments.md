@@ -11,9 +11,9 @@ role: Developer
 level: Beginner
 exl-id: 701fae92-f740-4eb6-8133-1bc45a472d0f
 duration: 227
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+source-git-commit: 234c163a2936ca07bdf259038f1b22c4363fae3c
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '853'
 ht-degree: 3%
 
 ---
@@ -75,6 +75,10 @@ ht-degree: 3%
 
 
 ## 콘텐츠 조각 만들기 {#create-content-fragment}
+
+>[!TIP]
+>
+>로컬 AEM SDK 사용자의 경우: AEM Assets UI를 활용하여 아래에 요약된 콘텐츠 조각 UI 대신 콘텐츠 조각을 만들고 작성할 수 있습니다. 자세한 지침은 [AEM 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing.html).
 
 다음 몇 가지 콘텐츠 조각은 **팀** 및 **개인** 모델.
 
@@ -145,6 +149,10 @@ ht-degree: 3%
 1. 누르기 **저장 및 닫기** 팀 Alpha 조각의 변경 사항을 저장합니다.
 
 ## 콘텐츠 조각 게시
+
+>[!TIP]
+>
+>로컬 AEM SDK 사용자의 경우: AEM Assets UI를 활용하여 아래에 요약된 콘텐츠 조각 UI 대신 콘텐츠 조각을 게시할 수 있습니다. 자세한 지침은 [AEM 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing.html#publishing-and-referencing-a-fragment).
 
 검토 및 확인 후 작성된 항목 게시 `Content Fragments`
 
