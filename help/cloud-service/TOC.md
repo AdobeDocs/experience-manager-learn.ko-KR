@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 43c021b051806380b3211f2d7357555622217b91
+source-git-commit: d9612adbc2ff3e601c2efe5a779c03ad24769276
 workflow-type: tm+mt
-source-wordcount: '1072'
-ht-degree: 17%
+source-wordcount: '1084'
+ht-degree: 16%
 
 ---
 
@@ -264,6 +264,10 @@ ht-degree: 17%
       + [OSGi 구성 만들기](./forms/store-submiited-data-with-metadata-tags/create-osgi-configuration.md)
       + [색인 태그 만들기](./forms/store-submiited-data-with-metadata-tags/create-blob-index-tags.md)
       + [사용자 정의 제출 만들기](./forms/store-submiited-data-with-metadata-tags/create-custom-submit.md)
+   + 핵심 구성 요소 기반 양식 미리 채우기{#prefill-core-component-based-form}
+      + [소개](./forms/prefill-core-component-form/introduction.md)
+      + [미리 채우기 서비스 쓰기](./forms/prefill-core-component-form/pre-fill-service.md)
+      + [솔루션 테스트](./forms/prefill-core-component-form/test-solution.md)
    + Azure 포털 스토리지{#forms-cs-azure-portal}
       + [소개](./forms/forms-cs-azure-portal/introduction.md)
       + [양식 데이터 모델 만들기](./forms/forms-cs-azure-portal/create-fdm.md)
