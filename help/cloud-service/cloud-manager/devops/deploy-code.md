@@ -13,7 +13,7 @@ duration: 26
 source-git-commit: 8a042c561c1a7e48152c2b067d92d709ab5fd53e
 workflow-type: tm+mt
 source-wordcount: '80'
-ht-degree: 67%
+ht-degree: 68%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 67%
 >title="코드 배포"
 >abstract="Cloud Manager Git 저장소를 외부 Git 저장소와 통합하고 프로젝트를 AEM as a Cloud Service에 배포합니다."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/merge-projects.html?lang=ko#cloud-manager" text="프로젝트 병합"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=en" text="Cloud Manager로 코드 배포"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=ko" text="Cloud Manager로 코드 배포"
 
 Cloud Manager Git 저장소를 외부 Git 저장소와 통합하고 프로젝트를 AEM as a Cloud Service에 배포합니다.
 

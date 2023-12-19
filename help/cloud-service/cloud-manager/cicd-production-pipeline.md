@@ -14,7 +14,7 @@ duration: 423
 source-git-commit: 8a042c561c1a7e48152c2b067d92d709ab5fd53e
 workflow-type: tm+mt
 source-wordcount: '147'
-ht-degree: 51%
+ht-degree: 53%
 
 ---
 
@@ -24,8 +24,8 @@ ht-degree: 51%
 >id="aemcloud_devops_prodpipeline"
 >title="CI/CD 프로덕션 파이프라인"
 >abstract="CI/CD 프로덕션 파이프라인 구성은 파이프라인을 시작하는 트리거, 프로덕션 배포를 제어하는 매개변수 및 성능 테스트 매개변수를 정의합니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=en" text="코드 배포"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=en" text="프로덕션에 배포 단계"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=ko" text="코드 배포"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=ko" text="프로덕션에 배포 단계"
 
 ## 구성
 
