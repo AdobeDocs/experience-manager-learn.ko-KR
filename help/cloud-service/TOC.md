@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: d9612adbc2ff3e601c2efe5a779c03ad24769276
+source-git-commit: 55f5cef46f7451ebb5b42b8cf17e71efeb0329c2
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1096'
 ht-degree: 16%
 
 ---
@@ -164,6 +164,11 @@ ht-degree: 16%
       + [설정 방법](./security/traffic-filter-rules/how-to-setup.md)
       + [예제 및 결과 분석](./security/traffic-filter-rules/examples-and-analysis.md)
       + [모범 사례](./security/traffic-filter-rules/best-practices.md)
++ AEM 이벤트{#aem-eventing}
+   + [개요](./eventing/overview.md)
+   + 예{#examples}
+      + [Webhook - AEM 이벤트 수신](./eventing/examples/webhook.md)
+      + [저널링 - AEM 이벤트 로드](./eventing/examples/journaling.md)
 + 마이그레이션 {#migration}
    + [콘텐츠 전송 도구](./migration/content-transfer-tool.md)
    + [자산 일괄 가져오기](./migration/bulk-import.md)

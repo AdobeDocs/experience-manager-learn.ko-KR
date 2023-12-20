@@ -11,10 +11,10 @@ thumbnail: 30603.jpg
 last-substantial-update: 2023-03-14T00:00:00Z
 exl-id: 9320e07f-be5c-42dc-a4e3-aab80089c8f7
 duration: 765
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+source-git-commit: 55f5cef46f7451ebb5b42b8cf17e71efeb0329c2
 workflow-type: tm+mt
-source-wordcount: '1622'
-ht-degree: 4%
+source-wordcount: '1621'
+ht-degree: 3%
 
 ---
 
@@ -23,13 +23,13 @@ ht-degree: 4%
 >[!CONTEXTUALHELP]
 >id="aemcloud_localdev_dispatcher"
 >title="로컬 Dispatcher 도구"
->abstract="Dispatcher는 전체 Experience Manager 아키텍처의 필수적인 부분이며 로컬 개발 설정의 일부여야 합니다. AEM as a Cloud Service SDK에는 Dispatcher를 로컬에서 쉽게 구성, 유효성 검사 및 시뮬레이션할 수 있는 권장 Dispatcher 도구 버전이 포함되어 있습니다."
+>abstract="Dispatcher는 전체 Experience Manager 아키텍처의 필수적인 부분이며 로컬 개발 설정의 일부여야 합니다. AEM as a Cloud Service SDK에는 Dispatcher를 로컬에서 구성 및 시뮬레이션을 용이하게 하는 권장 Dispatcher 도구 버전이 포함되어 있습니다."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html" text="클라우드의 Dispatcher"
->additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="AEM as a Cloud Service SDK 다운로드"
+>additional-url="https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html" text="AEM as a Cloud Service SDK 다운로드"
 
 Adobe Experience Manager(AEM)의 Dispatcher는 CDN과 AEM Publish 계층 간에 보안 및 성능 계층을 제공하는 Apache HTTP 웹 서버 모듈입니다. Dispatcher는 전체 Experience Manager 아키텍처의 필수적인 부분이며 로컬 개발 설정의 일부여야 합니다.
 
-AEM as a Cloud Service SDK에는 Dispatcher를 로컬에서 구성, 유효성 검사 및 시뮬레이션을 용이하게 하는 권장 Dispatcher 도구 버전이 포함되어 있습니다. Dispatcher 도구는 다음과 같이 구성됩니다.
+AEM as a Cloud Service SDK에는 Dispatcher를 로컬에서 구성 및 시뮬레이션을 용이하게 하는 권장 Dispatcher 도구 버전이 포함되어 있습니다. Dispatcher 도구는 다음과 같이 구성됩니다.
 
 + 다음 위치에 있는 Apache HTTP 웹 서버 및 Dispatcher 구성 파일의 기본 세트 `.../dispatcher-sdk-x.x.x/src`
 + 다음 위치에 있는 구성 유효성 검사기 CLI 도구 `.../dispatcher-sdk-x.x.x/bin/validate`
@@ -87,7 +87,7 @@ $ ./aem-sdk-dispatcher-tools-x.x.x-unix.sh
 
 압축 풀기 `aem-sdk-dispatcher-tools-x.x.x-windows.zip` 대상 `C:\Users\<My User>\aem-sdk\dispatcher` (필요에 따라 누락된 폴더를 만듭니다.)
 
->[!TAB 리눅스]
+>[!TAB Linux®]
 
 ```shell
 $ chmod a+x aem-sdk-dispatcher-tools-x.x.x-unix.sh
@@ -105,11 +105,11 @@ $ ./aem-sdk-dispatcher-tools-x.x.x-unix.sh
 ## Dispatcher 구성 파일 이해
 
 >[!TIP]
-> Experience Manager 프로젝트를에서 만들었습니다. [AEM Project Maven Archetype](https://github.com/adobe/aem-project-archetype) 는 이 Dispatcher 구성 파일 세트를 미리 채우므로 Dispatcher 도구 src 폴더에서 복사할 필요가 없습니다.
+Experience Manager 프로젝트를에서 만들었습니다. [AEM Project Maven Archetype](https://github.com/adobe/aem-project-archetype) 는 이 Dispatcher 구성 파일 세트를 미리 채우므로 Dispatcher 도구 src 폴더에서 복사할 필요가 없습니다.
 
 Dispatcher 도구는 로컬 개발을 포함하여 모든 환경에 대한 동작을 정의하는 Apache HTTP 웹 서버 및 Dispatcher 구성 파일 세트를 제공합니다.
 
-이러한 파일은 Experience Manager Maven 프로젝트에 `dispatcher/src` 폴더가 아직 Experience Manager Maven 프로젝트에 없는 경우 입니다.
+이러한 파일은 Experience Manager Maven 프로젝트에 `dispatcher/src` 폴더가 없는 경우 Experience Manager Maven 프로젝트에 있어야 합니다.
 
 구성 파일에 대한 전체 설명은 압축을 푼 Dispatcher 도구에서 다음과 같이 사용할 수 있습니다. `dispatcher-sdk-x.x.x/docs/Config.html`.
 
@@ -132,7 +132,7 @@ $ ./bin/validate.sh ./src
 $ bin\validate src
 ```
 
->[!TAB 리눅스]
+>[!TAB Linux®]
 
 ```shell
 $ ./bin/validate.sh ./src
@@ -161,7 +161,7 @@ $ ./bin/docker_run_hot_reload.sh <src-folder> <aem-publish-host>:<aem-publish-po
 $ bin\docker_run <src-folder> <aem-publish-host>:<aem-publish-port> <dispatcher-port>
 ```
 
->[!TAB 리눅스]
+>[!TAB Linux®]
 
 ```shell
 $ ./bin/docker_run_hot_reload.sh <src-folder> <aem-publish-host>:<aem-publish-port> <dispatcher-port>
@@ -191,7 +191,7 @@ $ ./bin/docker_run_hot_reload.sh ./src host.docker.internal:4503 8080
 $ bin\docker_run src host.docker.internal:4503 8080
 ```
 
->[!TAB 리눅스]
+>[!TAB Linux®]
 
 ```shell
 $ ./bin/docker_run_hot_reload.sh ./src host.docker.internal:4503 8080
@@ -217,7 +217,7 @@ $ ./bin/docker_run_hot_reload.sh ~/code/my-project/dispatcher/src host.docker.in
 $ bin\docker_run <User Directory>/code/my-project/dispatcher/src host.docker.internal:4503 8080
 ```
 
->[!TAB 리눅스]
+>[!TAB Linux®]
 
 ```shell
 $ ./bin/docker_run_hot_reload.sh ~/code/my-project/dispatcher/src host.docker.internal:4503 8080
@@ -258,7 +258,7 @@ $ DISP_LOG_LEVEL=Debug REWRITE_LOG_LEVEL=Debug ./bin/docker_run_hot_reload.sh ~/
 $ DISP_LOG_LEVEL=Debug REWRITE_LOG_LEVEL=Debug bin\docker_run <User Directory>/code/my-project/dispatcher/src host.docker.internal:4503 8080
 ```
 
->[!TAB 리눅스]
+>[!TAB Linux®]
 
 ```shell
 $ DISP_LOG_LEVEL=Debug REWRITE_LOG_LEVEL=Debug ./bin/docker_run_hot_reload.sh ~/code/my-project/dispatcher/src host.docker.internal:4503 8080
@@ -331,7 +331,7 @@ Apache 및 Dispatcher 구성의 기본 세트가 정기적으로 향상되고 AE
 
 + 다음과 같이 업데이트된 변경 불가능한 파일을 확인합니다. `dispatcher_vhost.conf`, `default.vhost`, 및 `default.farm` 필요한 경우 이러한 파일에서 파생된 사용자 정의 파일을 관련 있게 변경합니다.
 
-+ 구성을 재확인합니다. 이 경우 다음이 전달됩니다.
++ 구성을 재확인합니다. 이 경우 전달됩니다.
 
 ```shell
 $ ./bin/validate.sh ${YOUR-AEM-PROJECT}/dispatcher/src
@@ -353,7 +353,7 @@ Phase 3 finished
 
 다음 `host.docker.internal` 는 Docker에 제공된 호스트 이름이며, 호스트에 대해 확인됩니다. Per docs.docker.com ([macOS](https://docs.docker.com/desktop/networking/), [Windows](https://docs.docker.com/desktop/networking/)):
 
-> Docker 18.03 이상에서는 특별 DNS 이름 host.docker.internal에 연결하는 것이 좋습니다. 이 이름은 호스트가 사용하는 내부 IP 주소로 확인됩니다
+>Docker 18.03 이상에서는 특별 DNS 이름 host.docker.internal에 연결하는 것이 좋습니다. 이 이름은 호스트가 사용하는 내부 IP 주소로 확인됩니다
 
 날짜 `bin/docker_run src host.docker.internal:4503 8080` 메시지에 결과 표시 __host.docker.internal을 사용할 수 있을 때까지 대기 중__, 다음:
 
@@ -372,7 +372,7 @@ Phase 3 finished
 + 명령 프롬프트에서 다음을 실행합니다. `ipconfig`및 호스트의 기록 __IPv4 주소__ 호스트 컴퓨터의
 + 그런 다음 를 실행합니다. `docker_run` 이 IP 주소 사용: `$ bin\docker_run src <HOST IP>:4503 8080`
 
->[!TAB 리눅스]
+>[!TAB Linux®]
 
 + 터미널에서 다음을 실행합니다. `ifconfig` 및 호스트를 기록합니다. __아이넷__ IP 주소, 일반적으로 __en0__ 디바이스.
 + 그런 다음 실행 `docker_run` 호스트 IP 주소 사용: `$ bin/docker_run_hot_reload.sh src <HOST IP>:4503 8080`

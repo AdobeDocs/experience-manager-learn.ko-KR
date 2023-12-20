@@ -11,10 +11,10 @@ level: Beginner
 last-substantial-update: 2022-09-02T00:00:00Z
 exl-id: 19f72254-2087-450b-909d-2d90c9821486
 duration: 563
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+source-git-commit: 55f5cef46f7451ebb5b42b8cf17e71efeb0329c2
 workflow-type: tm+mt
-source-wordcount: '1695'
-ht-degree: 8%
+source-wordcount: '1696'
+ht-degree: 4%
 
 ---
 
@@ -23,20 +23,20 @@ ht-degree: 8%
 >[!CONTEXTUALHELP]
 >id="aemcloud_localdev_aemruntime"
 >title="로컬 AEM 런타임"
->abstract="AEM(Adobe Experience Manager)은 AEM as a Cloud Service SDK의 QuickStart Jar로 사용하여 로컬에서 실행할 수 있습니다. 이 경우 개발자는 소스 제어에 커밋하기 전에 사용자 정의 코드, 구성 및 콘텐츠를 배포하고 테스트하고, AEM as a Cloud Service 환경으로 배포할 수 있습니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html" text="AEM as a Cloud Service SDK"
+>abstract="AEM(Adobe Experience Manager)은 AEM as a Cloud Service SDK의 QuickStart Jar로 사용하여 로컬에서 실행할 수 있습니다. 이를 통해 개발자는 소스 제어에 커밋하기 전에 사용자 지정 코드, 구성 및 콘텐츠를 배포하고 테스트하고, AEM as a Cloud Service 환경에 배포할 수 있습니다."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html" text="AEM as a Cloud Service SDK"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="AEM as a Cloud Service SDK 다운로드"
 
-AEM(Adobe Experience Manager)은 AEM as a Cloud Service SDK의 QuickStart Jar로 사용하여 로컬에서 실행할 수 있습니다. 이 경우 개발자는 소스 제어에 커밋하기 전에 사용자 정의 코드, 구성 및 콘텐츠를 배포하고 테스트하고, AEM as a Cloud Service 환경으로 배포할 수 있습니다.
+AEM(Adobe Experience Manager)은 AEM as a Cloud Service SDK의 QuickStart Jar로 사용하여 로컬에서 실행할 수 있습니다. 이를 통해 개발자는 소스 제어에 커밋하기 전에 사용자 지정 코드, 구성 및 콘텐츠를 배포하고 테스트하고, AEM as a Cloud Service 환경에 배포할 수 있습니다.
 
 참고: `~` 는 사용자 디렉토리의 축약으로 사용됩니다. Windows에서 이는 `%HOMEPATH%`.
 
-## Java 설치
+## Java™ 설치
 
-Experience Manager은 Java 애플리케이션이므로 개발 도구를 지원하려면 Oracle Java SDK가 필요합니다.
+Experience Manager은 Java™ 애플리케이션이므로 개발 도구를 지원하려면 Oracle Java™ SDK가 필요합니다.
 
-1. [최신 Java SDK 11 다운로드 및 설치](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atoling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)
-1. 다음 명령을 실행하여 Oracle Java 11 SDK가 설치되어 있는지 확인합니다.
+1. [최신 Java™ SDK 11 다운로드 및 설치](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atoling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)
+1. 다음 명령을 실행하여 Oracle Java™ 11 SDK가 설치되어 있는지 확인합니다.
 
 >[!BEGINTABS]
 
@@ -52,7 +52,7 @@ $ java --version
 $ java -version
 ```
 
->[!TAB 리눅스]
+>[!TAB Linux®]
 
 ```shell
 $ java --version
@@ -85,7 +85,7 @@ AEM as a Cloud Service SDK 또는 AEM SDK에는 개발용 AEM 작성자 및 게�
 1. 다음을 복사합니다. __Quickstart JAR__ 파일 위치:  `~/aem-sdk/author` 이름을 로 바꿉니다. `aem-author-p4502.jar`
 1. 명령줄에서 다음을 실행하여 로컬 AEM 작성자 서비스를 시작합니다.
    + `java -jar aem-author-p4502.jar`
-      + 관리자 암호 입력 `admin`. 모든 관리자 암호는 사용할 수 있지만, 재구성의 필요성을 줄이기 위해 로컬 개발에 기본값을 사용하는 것이 좋습니다.
+      + 관리자 암호 입력 `admin`. 모든 관리자 암호는 사용할 수 있지만, 로컬 개발에 기본값을 사용하여 재구성할 필요가 없도록 하는 것이 좋습니다.
 
    본인 *할 수 없음* Cloud Service Quickstart Jar로 AEM 시작 [두 번 클릭하여](#troubleshooting-double-click).
 1. 다음 위치에서 로컬 AEM 작성자 서비스에 액세스합니다. [http://localhost:4502](http://localhost:4502) 웹 브라우저에서
@@ -110,7 +110,7 @@ $ cd c:\Users\<My User>\aem-sdk\author
 $ java -jar aem-author-p4502.jar
 ```
 
->[!TAB 리눅스]
+>[!TAB Linux®]
 
 ```shell
 $ mkdir -p ~/aem-sdk/author
@@ -130,7 +130,7 @@ $ java -jar aem-author-p4502.jar
 1. 다음을 복사합니다. __Quickstart JAR__ 파일 위치:  `~/aem-sdk/publish` 이름을 로 바꿉니다. `aem-publish-p4503.jar`
 1. 명령줄에서 다음을 실행하여 로컬 AEM Publish 서비스를 시작합니다.
    + `java -jar aem-publish-p4503.jar`
-      + 관리자 암호 입력 `admin`. 모든 관리자 암호는 사용할 수 있지만, 재구성의 필요성을 줄이기 위해 로컬 개발에 기본값을 사용하는 것이 좋습니다.
+      + 관리자 암호 입력 `admin`. 모든 관리자 암호는 사용할 수 있지만, 로컬 개발에 기본값을 사용하여 재구성할 필요가 없도록 하는 것이 좋습니다.
 
    본인 *할 수 없음* Cloud Service Quickstart Jar로 AEM 시작 [두 번 클릭하여](#troubleshooting-double-click).
 1. 다음 위치에서 로컬 AEM Publish 서비스에 액세스합니다. [http://localhost:4503](http://localhost:4503) 웹 브라우저에서
@@ -155,7 +155,7 @@ $ cd c:\Users\<My User>\aem-sdk\publish
 $ java -jar aem-publish-p4503.jar
 ```
 
->[!TAB 리눅스]
+>[!TAB Linux®]
 
 ```shell
 $ mkdir -p ~/aem-sdk/publish
@@ -194,7 +194,7 @@ $ java -jar aem-author-p4502.jar -r prerelease
 $ java -jar aem-publish-p4503.jar -r prerelease
 ```
 
->[!TAB 리눅스]
+>[!TAB Linux®]
 
 ```shell
 # For AEM Author service in prerelease mode
@@ -214,7 +214,7 @@ $ java -jar aem-publish-p4503.jar -r prerelease
 
 >[!NOTE]
 >
-> 복제 에이전트는 로컬 Quickstart JAR에서만 사용할 수 있으며 컨텐츠 배포 시뮬레이션만 제공합니다.
+복제 에이전트는 로컬 Quickstart JAR에서만 사용할 수 있으며 컨텐츠 배포 시뮬레이션만 제공합니다.
 
 1. 에 로그인 **작성자** 서비스 및 다음으로 이동 [http://localhost:4502/etc/replication/agents.author.html](http://localhost:4502/etc/replication/agents.author.html).
 1. 클릭 **기본 에이전트(게시)** 기본 복제 에이전트를 엽니다.
@@ -279,7 +279,7 @@ Quickstart Jar 이름 지정 `aem-<tier>_<environment>-p<port number>.jar` 시�
 
 >[!WARNING]
 >
-> Quickstart Jar를 새 버전으로 업데이트하려면 전체 로컬 개발 환경을 교체해야 하므로 로컬 AEM 저장소의 모든 코드, 구성 및 콘텐츠가 손실됩니다. 폐기해서는 안 되는 코드, 구성 또는 콘텐츠가 Git에 안전하게 커밋되거나 로컬 AEM 인스턴스에서 AEM 패키지로 내보내지는지 확인합니다.
+Quickstart Jar를 새 버전으로 업데이트하려면 전체 로컬 개발 환경을 교체해야 하므로 로컬 AEM 저장소의 모든 코드, 구성 및 콘텐츠가 손실됩니다. 폐기해서는 안 되는 코드, 구성 또는 콘텐츠가 Git에 안전하게 커밋되거나 로컬 AEM 인스턴스에서 AEM 패키지로 내보내지는지 확인합니다.
 
 ### AEM SDK를 업그레이드할 때 콘텐츠 손실을 방지하는 방법
 
@@ -317,7 +317,7 @@ $ java -jar aem-author-p4502.jar
 $ java -jar aem-author-p4502.jar
 ```
 
->[!TAB 리눅스]
+>[!TAB Linux®]
 
 ```shell
 $ java -jar aem-author-p4502.jar
@@ -341,7 +341,7 @@ $ java -jar aem-publish-p4503.jar
 $ java -jar aem-publish-p4503.jar
 ```
 
->[!TAB 리눅스]
+>[!TAB Linux®]
 
 ```shell
 $ java -jar aem-publish-p4503.jar
@@ -364,9 +364,9 @@ java.lang.Exception: Quickstart requires a Java Specification 11 VM, but your VM
 Quickstart: aborting
 ```
 
-이는 AEM as a Cloud Service에는 Java SDK 11이 필요하며 다른 버전(Java 8일 가능성이 높음)을 실행 중이기 때문입니다. 이 문제를 해결하려면 을 다운로드하여 설치하십시오. [Oracle Java SDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atoling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14).
+이는 AEM as a Cloud Service에는 Java™ SDK 11이 필요하며 다른 버전(Java™ 8일 가능성이 높음)을 실행 중이기 때문입니다. 이 문제를 해결하려면 을 다운로드하여 설치하십시오. [Oracle Java™ SDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atoling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14).
 
-oracle Java 11 SDK가 설치되면 명령줄에서 명령을 실행하여 활성 버전인지 확인합니다.
+oracle Java™ 11 SDK가 설치되면 명령줄에서 명령을 실행하여 활성 버전인지 확인합니다.
 
 >[!BEGINTABS]
 
@@ -382,7 +382,7 @@ $ java --version
 $ java -version
 ```
 
->[!TAB 리눅스]
+>[!TAB Linux®]
 
 ```shell
 $ java --version
