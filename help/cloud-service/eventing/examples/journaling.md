@@ -9,11 +9,11 @@ level: Beginner
 doc-type: Tutorial
 duration: 0
 last-substantial-update: 2023-12-07T00:00:00Z
-jira: KT-14649
-thumbnail: KT-14649.jpeg
-source-git-commit: 55f5cef46f7451ebb5b42b8cf17e71efeb0329c2
+jira: KT-14734
+thumbnail: KT-14734.jpeg
+source-git-commit: 839d552199fe7d10a0cde4011bdfe8cf42cc8ec9
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '600'
 ht-degree: 0%
 
 ---
@@ -81,4 +81,6 @@ Adobe이 제공한 웹 애플리케이션에 액세스하려면 다음 단계를
 
 ## 추가 리소스
 
-- [결함 웹후크 소스 코드](https://glitch.com/edit/#!/인디고스펙클앤틀러)
+- [결함 웹후크 소스 코드](https://glitch.com/edit/#!/인디고스펙클앤틀러) 을(를) 참조할 수 있습니다. 를 사용하는 간단한 React 애플리케이션입니다 [Adobe 반응 스펙트럼](https://react-spectrum.adobe.com/react-spectrum/index.html) UI를 렌더링할 구성 요소입니다.
+
+- [Adobe I/O 이벤트 저널링 API](https://developer.adobe.com/events/docs/guides/api/journaling_api/) 는 이벤트의 첫 번째, 다음 및 마지막 배치, 페이지 매김 등과 같은 API에 대한 자세한 정보를 제공합니다.
