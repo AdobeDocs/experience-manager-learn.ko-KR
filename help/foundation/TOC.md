@@ -4,9 +4,9 @@ breadcrumb-title: AEM Foundation 튜토리얼
 user-guide-description: Adobe Experience Manager Foundation에 대한 비디오 및 튜토리얼 모음입니다.
 sub-product: Experience Manager
 index: y
-source-git-commit: 338bb13f1739d822e6a4b7232ae1a2da6b24732a
+source-git-commit: 5fe651bc0dc73397ae9602a28d63b7dc084fcc70
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '229'
 ht-degree: 14%
 
 ---
@@ -36,6 +36,7 @@ ht-degree: 14%
    + [Sling Dynamic Include 설정](./development/set-up-sling-dynamic-include.md)
    + [Java API 모범 사례 이해](./development/understand-java-api-best-practices.md)
    + [Sling 모델 내보내기 이해](./development/understand-sling-model-exporter.md)
+   + [Oak 색인화 모범 사례 이해](./development/understand-indexing-best-practices.md)
 + 프로젝트 {#projects}
    + [AEM 프로젝트 개발](./projects/develop-aem-projects.md)
    + [프로젝트 마스터 사용](./projects/use-project-masters.md)
