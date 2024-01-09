@@ -12,9 +12,9 @@ duration: 0
 last-substantial-update: 2024-01-04T00:00:00Z
 jira: KT-14745
 thumbnail: KT-14745.jpeg
-source-git-commit: 5fe651bc0dc73397ae9602a28d63b7dc084fcc70
+source-git-commit: 7f69fc888a7b603ffefc70d89ea470146971067e
 workflow-type: tm+mt
-source-wordcount: '1331'
+source-wordcount: '1418'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,9 @@ AEM 인스턴스의 성능에 영향을 주지 않는 효율적이고 올바른 
 
 ### OOTB 인덱스 사용자 지정
 
-- OOTB 인덱스 사용 사용자 지정 시 **\&lt;ootbindexname>-\&lt;productversion>-custom-\&lt;customversion>** 명명 규칙. 예를 들어, `cqPageLucene-custom-1` 또는 `damAssetLucene-8-custom-1`. 이렇게 하면 OOTB 색인이 업데이트될 때마다 사용자 지정된 색인 정의를 병합하는 데 도움이 됩니다. 다음을 참조하십시오 [기본 제공 색인 변경](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?#changes-to-out-of-the-box-indexes) 을 참조하십시오.
+- 위치 **AEMCS**, OOTB 인덱스 사용 사용자 지정 시 **\&lt;ootbindexname>-\&lt;productversion>-custom-\&lt;customversion>** 명명 규칙. 예를 들어, `cqPageLucene-custom-1` 또는 `damAssetLucene-8-custom-1`. 이렇게 하면 OOTB 색인이 업데이트될 때마다 사용자 지정된 색인 정의를 병합하는 데 도움이 됩니다. 다음을 참조하십시오 [기본 제공 색인 변경](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?#changes-to-out-of-the-box-indexes) 을 참조하십시오.
+
+- 위치 **AEM 6.X**, 위의 이름 지정 _작동하지 않음_, 그러나 의 추가 속성으로 OOTB 인덱스를 업데이트하기만 하면 됩니다. `indexRules` 노드.
 
 - 항상 CRX DE 패키지 관리자(/crx/packmgr/)를 사용하여 AEM 인스턴스에서 최신 OOTB 인덱스 정의를 복사하고 이름을 변경한 다음 XML 파일 내에 사용자 지정을 추가합니다.
 
@@ -57,11 +59,13 @@ AEM 인스턴스의 성능에 영향을 주지 않는 효율적이고 올바른 
 
 ### 완전히 맞춤화된 색인
 
-- 완전히 맞춤화된 색인을 만들 때 **\&lt;prefix>.\&lt;customindexname>-\&lt;version>-custom-\&lt;customversion>** 명명 규칙. 예, `wknd.adventures-1-custom-1`. 이렇게 하면 이름 지정 충돌을 방지하는 데 도움이 됩니다. 여기, `wknd` 는 접두사이고, `adventures` 는 사용자 정의 색인 이름입니다.
+완전히 맞춤화된 색인을 만드는 것은 마지막 옵션이어야 하며 위의 옵션이 작동하지 않는 경우에만 가능합니다.
+
+- 완전히 맞춤화된 색인을 만들 때 **\&lt;prefix>.\&lt;customindexname>-\&lt;version>-custom-\&lt;customversion>** 명명 규칙. 예, `wknd.adventures-1-custom-1`. 이렇게 하면 이름 지정 충돌을 방지하는 데 도움이 됩니다. 여기, `wknd` 는 접두사이고, `adventures` 는 사용자 정의 색인 이름입니다. 이 규칙은 AEM 6.X와 AEMCS 모두에 적용할 수 있으며 향후 AEMCS로의 마이그레이션을 준비하는 데 도움이 됩니다.
 
 - AEMCS는 Lucene 인덱스만 지원하므로 향후 AEMCS로의 마이그레이션에 대비하려면 항상 Lucene 인덱스를 사용하십시오. 다음을 참조하십시오 [Lucene 인덱스 및 속성 인덱스 비교](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/practices/best-practices-for-queries-and-indexing.html?#lucene-or-property-indexes) 을 참조하십시오.
 
-- 에서 사용자 정의 인덱스 만들기 안 함 `dam:Asset` 노드 유형(OOTB 사용자 정의) `damAssetLucene` 색인입니다. 이는 성능 및 기능 문제의 일반적인 근본 원인이었습니다.
+- OOTB 인덱스와 동일한 노드 유형에 사용자 정의 인덱스를 생성하지 마십시오. 대신, 의 추가 속성을 사용하여 OOTB 인덱스를 맞춤화합니다. `indexRules` 노드. 예를 들어 `dam:Asset` 노드 유형(OOTB 사용자 정의) `damAssetLucene` 색인입니다. _이는 성능 및 기능 문제의 일반적인 근본 원인이었습니다_.
 
 - 또한 예를 들어 여러 노드 유형을 추가하지 마십시오 `cq:Page` 및 `cq:Tag` 색인 지정 규칙(`indexRules`) 노드. 대신 각 노드 유형에 대해 별도의 인덱스를 만듭니다.
 
@@ -70,7 +74,7 @@ AEM 인스턴스의 성능에 영향을 주지 않는 효율적이고 올바른 
 - 색인 정의 지침은 다음과 같습니다.
    - 노드 유형(`jcr:primaryType`)은 다음과 같아야 합니다. `oak:QueryIndexDefinition`
    - 색인 유형(`type`)은 다음과 같아야 합니다. `lucene`
-   - 비동기 속성(`async`)은 다음과 같아야 합니다. `async, rt`
+   - 비동기 속성(`async`)은 다음과 같아야 합니다. `async,nrt`
    - 사용 `includedPaths` 및 방지 `excludedPaths` 속성. 항상 설정 `queryPaths` 값과 동일한 값: `includedPaths` 값.
    - 경로 제한을 적용하려면 다음을 사용하십시오 `evaluatePathRestrictions` 속성 및 설정 `true`.
    - 사용 `tags` 인덱스에 태그를 지정하고 쿼리하는 동안 색인을 사용하도록 이 태그 값을 지정합니다. 일반 쿼리 구문은 다음과 같습니다 `<query> option(index tag <tagName>)`.
@@ -80,7 +84,7 @@ AEM 인스턴스의 성능에 영향을 주지 않는 효율적이고 올바른 
       - jcr:primaryType = "oak:QueryIndexDefinition"
       - type = "lucene"
       - compatVersion = 2
-      - async = ["async", "rt"]
+      - async = ["async", "nrt"]
       - includedPaths = ["/content/wknd"]
       - queryPaths = ["/content/wknd"]
       - evaluatePathRestrictions = true
@@ -90,7 +94,7 @@ AEM 인스턴스의 성능에 영향을 주지 않는 효율적이고 올바른 
 
 ### 예
 
-모범 사례를 이해하기 위한 몇 가지 예를 살펴보겠습니다.
+모범 사례를 이해하기 위해 몇 가지 예를 살펴보겠습니다.
 
 #### 태그 속성을 잘못 사용
 
