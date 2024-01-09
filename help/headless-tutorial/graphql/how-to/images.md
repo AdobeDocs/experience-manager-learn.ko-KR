@@ -11,7 +11,7 @@ thumbnail: KT-10253.jpeg
 last-substantial-update: 2023-04-19T00:00:00Z
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
 duration: 449
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+source-git-commit: 520bb18e464eb48cc2ba0cdfb7f5a7d2af202abf
 workflow-type: tm+mt
 source-wordcount: '901'
 ht-degree: 5%
@@ -133,6 +133,7 @@ query($path: String!, $imageFormat: AssetTransformFormat=JPG, $imageSeoName: Str
 React에서 AEM Publish에서 웹에 최적화된 이미지를 표시하는 모습은 다음과 같습니다.
 
 ```jsx
+// The AEM host is usually read from a environment variable of the SPA.
 const AEM_HOST = "https://publish-p123-e456.adobeaemcloud.com";
 ...
 let dynamicUrl = AEM_HOST + data.adventureByPath.item.primaryImage._dynamicUrl;
@@ -147,6 +148,7 @@ let dynamicUrl = AEM_HOST + data.adventureByPath.item.primaryImage._dynamicUrl;
 위의 예는 단일 크기 이미지를 사용하는 것을 보여주지만, 웹 경험에서는 응답형 이미지 세트가 필요한 경우가 많습니다. 응답형 이미지는 다음을 사용하여 구현할 수 있습니다. [srcsets](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset) 또는 [그림 요소](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset). 다음 코드 스니펫은 `_dynamicUrl` 를 기반으로 다른 폭 매개 변수를 추가하여 다른 반응형 보기를 지원합니다. 다음을 수행할 수 있을 뿐만 아니라 `width` 쿼리 매개 변수를 사용할 수 있지만, 클라이언트가 필요에 따라 이미지 에셋을 추가로 최적화하기 위해 다른 쿼리 매개 변수를 추가할 수 있습니다.
 
 ```javascript
+// The AEM host is usually read from a environment variable of the SPA.
 const AEM_HOST = "https://publish-p123-e456.adobeaemcloud.com";
 ...
 // Read the data from GraphQL response
