@@ -10,7 +10,7 @@ level: Beginner
 doc-type: Article
 exl-id: ccbc68d1-a83e-4092-9a49-53c56c14483e
 duration: 242
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+source-git-commit: 7e1f538b111815a7934b798e0dac3587d8962c31
 workflow-type: tm+mt
 source-wordcount: '829'
 ht-degree: 2%
@@ -36,7 +36,7 @@ Adobe Experience Manager의 콘텐츠 조각 및 경험 조각 은 표면적으�
 <li>콘텐츠 및 프레젠테이션을 정의하는 하나 이상의 AEM 구성 요소로 구성된 재사용 가능한 합성 <strong>경험</strong> 그 자체로도 말이 되네</li>
 </ul>
 </td>
-</tr><tr><td><strong>핵심 테넌트</strong></td>
+</tr><tr><td><strong>핵심 개념</strong></td>
 <td><ul>
 <li>콘텐츠 중심</li>
 <li>에 의해 정의됨 <a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments-models.html?lang=en" target="_blank">구조화된, 양식 기반, 데이터 모델.</a></li>
