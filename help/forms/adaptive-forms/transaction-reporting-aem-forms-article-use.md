@@ -9,16 +9,16 @@ level: Beginner
 exl-id: 36c38cb6-6f6a-4328-abf5-7a30059b66ce
 last-substantial-update: 2019-03-20T00:00:00Z
 duration: 96
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+source-git-commit: 4b88045a626b5e7bd1386e62ee54ac6fe2ce9282
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '331'
 ht-degree: 0%
 
 ---
 
 # AEM Forms에서 트랜잭션 보고 사용{#using-transaction-reporting-in-aem-forms}
 
-양식 제출, 문서 서비스를 사용한 문서 렌더링, 대화형 통신(웹 및 인쇄 채널) 렌더링을 캡처하는 트랜잭션 보고가 AEM Forms 6.4.1과 함께 도입되었습니다. 이 기능은 주로 양식 제출 및/또는 렌더링된 문서의 수에 따라 소프트웨어에 라이선스를 부여하려는 고객을 위한 것입니다. 이 기능은 현재 AEM Forms OSGI 스택에서만 사용할 수 있습니다.
+양식 제출, 문서 서비스를 사용한 문서 렌더링, 대화형 통신(웹 및 인쇄 채널) 렌더링을 캡처하는 트랜잭션 보고가 AEM Forms 6.4.1과 함께 도입되었습니다. 이 기능은 현재 AEM Forms OSGI 스택에서만 사용할 수 있습니다.
 
 ## 거래 보고 활성화 {#enabling-transaction-reporting}
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 트랜잭션 보고서를 보려면 AEM Forms에 관리자로 로그인합니다. fd-Administrator 그룹의 멤버만 트랜잭션 보고서를 볼 수 있습니다.
 
-도구 선택 | FORMS | 거래 보고서 보기
+도구 선택 | Forms | 거래 보고서 보기
 
 또는 다음을 눌러 트랜잭션 보고서를 봅니다. [여기](http://localhost:4502/mnt/overlay/fd/transaction/gui/content/report.html)
 
