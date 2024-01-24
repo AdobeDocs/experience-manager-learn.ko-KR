@@ -8,8 +8,8 @@ role: Developer
 level: Intermediate
 exl-id: f2c324a3-cbfa-4942-b3bd-dc47d8a3f7b5
 last-substantial-update: 2021-11-27T00:00:00Z
-duration: 184
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 155
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 0%
@@ -142,7 +142,7 @@ public class PrefillAdaptiveForm implements DataXMLProvider {
 * 로그인했는지 확인 [사용자 프로필](http://localhost:4502/security/users.html) 정보가 작성되었습니다. 샘플은 로그인한 사용자의 FirstName,LastName 및 Email 속성을 찾습니다.
 * [컴퓨터에 zip 파일의 내용을 다운로드하여 추출하십시오.](assets/prefillservice.zip)
 * 다음을 사용하여 prefill.core-1.0.0-SNAPSHOT 번들 배포 [AEM 웹 콘솔](http://localhost:4502/system/console/bundles)
-* 만들기 를 사용하여 적응형 양식 가져오기 |에서 파일 업로드 [FormsAndDocuments 섹션](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* 만들기 를 사용하여 적응형 양식 가져오기 | 에서 파일 업로드 [FormsAndDocuments 섹션](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * 다음을 확인합니다. [양식](http://localhost:4502/editor.html/content/forms/af/prefill.html) 사용 중 **&quot;사용자 정의 AEM Forms 미리 채우기 서비스&quot;** 를 미리 채우기 서비스로 사용하십시오. 의 구성 속성에서 확인할 수 있습니다. **양식 컨테이너** 섹션.
 * [양식 미리 보기](http://localhost:4502/content/dam/formsanddocuments/prefill/jcr:content?wcmmode=disabled). 올바른 값으로 채워진 양식이 표시됩니다.
 

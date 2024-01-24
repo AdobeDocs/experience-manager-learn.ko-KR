@@ -10,8 +10,8 @@ level: Beginner
 exl-id: 53279cbb-70c8-4319-b5bb-9a7d350a7f72
 last-substantial-update: 2022-05-10T00:00:00Z
 thumbnail: understand-cloud-manager.jpg
-duration: 1044
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 1026
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '464'
 ht-degree: 14%
@@ -75,7 +75,7 @@ Adobe Cloud Manager는 AEM 환경을 손쉽게 관리, 자체 검사 및 셀프�
 
 ## CI/CD 비프로덕션 파이프라인 {#cicd-non-production-pipeline}
 
-[CI/CD 비프로덕션 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/pipelines/production-pipelines.html) 는 코드 품질 파이프라인 및 배포 파이프라인의 두 가지 카테고리로 나뉩니다. 코드 품질은 Git 분기의 모든 코드를 파이프라인하여 Cloud Manager의 코드 품질 검사에 대해 빌드하고 평가합니다. 배포 파이프라인은 Git 리포지토리에서 비프로덕션 환경으로 코드 배포를 자동화하는 경우 지원합니다. 이는 스테이지 또는 프로덕션이 아닌 프로비저닝된 AEM 환경을 의미합니다.
+[CI/CD 비프로덕션 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/pipelines/production-pipelines.html) 는 코드 품질 파이프라인 및 배포 파이프라인의 두 가지 카테고리로 나뉩니다. 코드 품질은 Git 분기의 모든 코드를 파이프라인하여 Cloud Manager의 코드 품질 검사에 대해 빌드하고 평가합니다. 배포 파이프라인은 Git 저장소에서 비프로덕션 환경으로 코드 배포를 자동화하는 경우 지원합니다. 이는 스테이지 또는 프로덕션이 아닌 프로비저닝된 AEM 환경을 의미합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26316?quality=12&learn=on)
 

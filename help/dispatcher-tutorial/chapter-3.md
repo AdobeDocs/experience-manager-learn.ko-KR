@@ -7,8 +7,8 @@ role: Architect
 level: Intermediate
 doc-type: Tutorial
 exl-id: 7c7df08d-02a7-4548-96c0-98e27bcbc49b
-duration: 1674
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 1470
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '6172'
 ht-degree: 0%
@@ -64,7 +64,7 @@ Dispatcher를 도구 상자에 유일한 도구로 사용하는 것은 실제로
 
 첫째, 하드 디스크 드라이브(HDD) 자체가 하드웨어에 내장된 캐시를 가지고 있습니다. 둘째, 하드 디스크를 마운트하는 운영 체제는 액세스 속도를 높이기 위해 자주 액세스하는 블록을 캐시하기 위해 사용 가능한 메모리를 사용합니다.
 
-#### 콘텐츠 리포지토리
+#### 콘텐츠 저장소
 
 다음 레벨은 AEM에서 사용하는 문서 데이터베이스인 CRX 또는 Oak입니다. CRX와 Oak는 HDD에 대한 액세스 속도가 느려지는 것을 방지하기 위해 데이터를 메모리에서도 캐시할 수 있는 세그먼트로 나눕니다.
 

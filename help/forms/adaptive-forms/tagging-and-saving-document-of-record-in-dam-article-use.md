@@ -8,8 +8,8 @@ role: Developer
 level: Experienced
 exl-id: 832f04b4-f22f-4cf9-8136-e3c1081de7a9
 last-substantial-update: 2019-03-20T00:00:00Z
-duration: 274
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 237
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 0%
@@ -166,7 +166,7 @@ public class TagAndStoreDoRinDAM implements WorkflowProcess
 
 * [Forms 및 문서로 이동](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 
-* 만들기 를 클릭합니다 | 파일 업로드 및 업로드 - 태그를 저장하고 dam-adaptive-form.zip
+* 만들기 를 클릭합니다 | 파일 업로드 및 태그 업로드 및 dam-adaptive-form.zip에 저장
 
 * [문서 에셋 가져오기](assets/tag-and-store-in-dam-assets.zip) AEM 패키지 관리자 사용
 * 를 엽니다. [미리 보기 모드의 샘플 양식](http://localhost:4502/content/dam/formsanddocuments/tagandstoreindam/jcr:content?wcmmode=disabled). **모든 필드 입력** 양식을 제출하십시오.

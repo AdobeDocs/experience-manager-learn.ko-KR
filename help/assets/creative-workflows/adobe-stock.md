@@ -9,8 +9,8 @@ level: Beginner
 last-substantial-update: 2022-06-26T00:00:00Z
 doc-type: Feature Video
 exl-id: a3c3a01e-97a6-494f-b7a9-22057e91f4eb
-duration: 1137
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 1104
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 1%
@@ -109,7 +109,7 @@ AEM 6.4.2는 사용자가 AEM에서 직접 Adobe Stock 에셋을 검색, 미리�
 ### 추가 리소스
 
 * [기업 주식 계획](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html)
-* [AEM 6.4 서비스 팩 2 릴리스 노트](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=ko-KR)
+* [AEM 6.4 서비스 팩 2 릴리스 노트](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html)
 * [AEM 및 Adobe Stock 통합](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/aem-assets-adobe-stock.html)
 * [Adobe I/O 콘솔 통합 API](https://www.adobe.io/apis/cloudplatform/console/authentication/gettingstarted.html)
 * [Adobe Stock API 문서](https://www.adobe.io/apis/creativecloud/stock/docs.html)

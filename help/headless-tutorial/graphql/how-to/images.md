@@ -10,8 +10,8 @@ jira: KT-10253
 thumbnail: KT-10253.jpeg
 last-substantial-update: 2023-04-19T00:00:00Z
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
-duration: 449
-source-git-commit: 520bb18e464eb48cc2ba0cdfb7f5a7d2af202abf
+duration: 409
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '901'
 ht-degree: 5%
@@ -98,7 +98,7 @@ query($path: String!, $imageFormat: AssetTransformFormat=JPG, $imageSeoName: Str
 
 | GraphQL 매개 변수 | URL 매개변수 | 설명 | 필수 | GraphQL 변수 값 | URL 매개 변수 값 | URL 매개 변수 예 |
 |:---------|:----------|:-------------------------------|:--:|:--------------------------|:---|:--|
-| `format` | N/A | 이미지 에셋의 형식입니다. | ✔ | `GIF`, `PNG`, `PNG8`, `JPG`, `PJPG`, `BJPG`,  `WEBP`, `WEBPLL`, `WEBPLY` | N/A | N/A |
+| `format` | 해당 사항 없음 | 이미지 에셋의 형식입니다. | ✔ | `GIF`, `PNG`, `PNG8`, `JPG`, `PJPG`, `BJPG`,  `WEBP`, `WEBPLL`, `WEBPLY` | N/A | N/A |
 | `seoName` | N/A | URL의 파일 세그먼트 이름입니다. 제공되지 않으면 이미지 자산 이름이 사용됩니다. | ✘ | 영숫자, `-`, 또는 `_` | N/A | N/A |
 | `crop` | `crop` | 이미지에서 프레임 자르기. 이미지 크기 이내여야 합니다. | ✘ | 원래 이미지 차원의 범위 내에서 자르기 영역을 정의하는 양의 정수 | 쉼표로 구분된 숫자 좌표 문자열 `<X_ORIGIN>,<Y_ORIGIN>,<CROP_WIDTH>,<CROP_HEIGHT>` | `?crop=10,20,300,400` |
 | `size` | `size` | 출력 이미지의 크기(높이 및 너비 모두)입니다(픽셀). | ✘ | 양의 정수 | 쉼표로 구분된 양의 정수(순서) `<WIDTH>,<HEIGHT>` | `?size=1200,800` |

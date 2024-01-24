@@ -9,8 +9,9 @@ version: Cloud Service
 topic: Development
 feature: Developer Tools
 jira: KT-14581
-duration: 136
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 110
+exl-id: 2a33a9a9-1eef-425d-aec5-465030ee9b74
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 2%
@@ -123,6 +124,3 @@ AEM 프로젝트 구조는 다음과 같아야 합니다
 ## 다음 단계
 
 [Forms 포털 구성 요소 활성화](./forms-portal-components.md)
-
-
-

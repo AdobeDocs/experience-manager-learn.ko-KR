@@ -10,8 +10,8 @@ level: Beginner
 jira: KT-11200
 thumbnail: kt-11200.jpg
 exl-id: bdec6cb0-34a0-4a28-b580-4d8f6a249d01
-duration: 580
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 503
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '2146'
 ht-degree: 0%
@@ -24,8 +24,8 @@ AEM으로의 콘텐츠 마이그레이션에 대한 FAQ에 대한 답변을 as a
 
 ## 용어
 
-+ **AEMaaCS**: [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/introduction.html?lang=ko-KR)
-+ **BPA**: [모범 사례 분석기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=ko-KR)
++ **AEMaaCS**: [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/introduction.html)
++ **BPA**: [모범 사례 분석기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html)
 + **CTT**: [컨텐츠 전송 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html)
 + **캠**: [Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html)
 + **IMS**: [Identity Management 시스템](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html)
