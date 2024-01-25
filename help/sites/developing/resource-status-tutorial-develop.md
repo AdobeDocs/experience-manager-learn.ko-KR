@@ -3,8 +3,8 @@ title: AEM Sites에서 리소스 상태 개발
 description: Adobe Experience Manager의 리소스 상태 API는 AEM 다양한 편집기 웹 UI에서 상태 메시지를 노출하기 위한 플러그형 프레임워크입니다.
 doc-type: Tutorial
 version: 6.4, 6.5
-duration: 108
-source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
+duration: 115
+source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 2%
