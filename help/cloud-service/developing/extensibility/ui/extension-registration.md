@@ -11,7 +11,7 @@ jira: KT-11603
 last-substantial-update: 2023-06-02T00:00:00Z
 exl-id: ef2290d9-ba40-429b-b10d-e82d6c1c20f6
 duration: 96
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 6f1245e804f0311c3f833ea8b2324cbc95272f52
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 0%
@@ -58,7 +58,6 @@ function App(props) {
 다음의 경우에 선택된 AEM UI 확장 템플릿 기반 [App Builder 앱 확장 초기화](./app-initialization.md), 다양한 확장 지점이 지원됩니다.
 
 + [콘텐츠 조각 UI 확장 지점](./content-fragments/overview.md#extension-points)
-
 
 ## 조건부로 확장 포함
 
