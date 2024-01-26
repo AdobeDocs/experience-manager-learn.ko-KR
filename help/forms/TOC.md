@@ -8,9 +8,9 @@ breadcrumb-title: AEM Forms 튜토리얼
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: 5e761ef180182b47c4fd2822b0ad98484db23aab
+source-git-commit: 236d288c8b88948c5004ab777169768065df16f2
 workflow-type: tm+mt
-source-wordcount: '1874'
+source-wordcount: '2001'
 ht-degree: 2%
 
 ---
@@ -131,6 +131,11 @@ ht-degree: 2%
    + [2 - Zip 양식 첨부 파일](zipping-form-attachments/custom-process-step.md)
    + [3 - 이메일 양식 첨부 파일](zipping-form-attachments/populating-list-of-documents.md)
    + [4 - 솔루션 테스트](zipping-form-attachments/test.md)
++ 데이터 및 첨부 파일로 양식 미리 채우기{#prefill-form-with-data-attachments}
+   + [1 - 소개](prefill-form-with-data-attachments/introduction.md)
+   + [2 - 사용자 정의 제출 만들기](prefill-form-with-data-attachments/create-custom-submit.md)
+   + [3 - OSGi 구성 만들기](prefill-form-with-data-attachments/create-osgi-configuration.md)
+   + [4 - 미리 채우기 서비스 만들기](prefill-form-with-data-attachments/create-prefill-service.md)
 + 적응형 양식 저장 및 검색{#store-and-retrieve-af-with-2fa}
    + [1 - 소개](store-and-retrieve-af-with-2fa/introduction.md)
    + [2 - 데이터 소스 구성](store-and-retrieve-af-with-2fa/configure-data-source.md)
@@ -151,7 +156,7 @@ ht-degree: 2%
    + [5 - 솔루션 테스트](import-data-from-pdf-form/test-the-solution.md)
 + 제출된 데이터를 CSV 형식으로 내보내기{#export-submitted-data-csv-format}
    + [제출된 데이터 내보내기](export-submitted-data-csv-format/export-submitted-data-csv.md)
-+ HTML5 양식{#html5-forms}
++ HTML5 FORMS{#html5-forms}
    + [HTML5 양식 만들기](html5-forms/create-html5-form.md)
    + [HTML5 양식 제출 처리](html5-forms/handle-html5-form-submission.md)
 + AEM Forms 및 Acrobat Sign{#forms-and-sign}
@@ -163,7 +168,7 @@ ht-degree: 2%
    + [적응형 양식 만들기 및 구성](aem-forms-and-adobe-sign/create-and-configure-adaptive-form.md)
    + [단일 서명자를 위한 적응형 양식 구성](aem-forms-and-adobe-sign/configure-adaptive-form-for-single-signer.md)
    + [서명자 2명을 위한 적응형 양식 구성](aem-forms-and-adobe-sign/configure-adaptive-form-for-two-signers.md)
-   + [자동 양식 전환 서비스 구성](aem-forms-and-adobe-sign/configure-automated-forms-conversion-service.md)
+   + [automated forms conversion 서비스 구성](aem-forms-and-adobe-sign/configure-automated-forms-conversion-service.md)
    + [PDF 양식을 적응형 양식으로 변환](aem-forms-and-adobe-sign/convert-pdf-form-into-adaptive-form.md)
    + [변환된 적응형 양식 구성](aem-forms-and-adobe-sign/configure-converted-adaptive-form.md)
    + [Acrobat Sign에서 XDP 템플릿 사용](aem-forms-and-adobe-sign/using-xdp-templates-with-adobe-sign.md)
