@@ -11,9 +11,9 @@ jira: KT-11603, KT-13382
 last-substantial-update: 2023-06-02T00:00:00Z
 exl-id: c5c1df23-1c04-4c04-b0cd-e126c31d5acc
 duration: 637
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 2a22a1bbe8474b8b7ca95f2b364fd7540b26b894
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '739'
 ht-degree: 0%
 
 ---
@@ -67,6 +67,7 @@ AEM AEM UI 확장은 확장이 속한 Adobe 조직의 as a Cloud Service 환경�
 
 위에 표시된 로컬 애플리케이션 URL을 확인합니다. `-> https://localhost:9080`
 
+1. 처음에(연결 오류가 표시될 때마다) 열림 `https://localhost:9080` (또는 로컬 애플리케이션 URL이 무엇이든) 웹 브라우저에서 [https 인증서](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#accepting-the-certificate-first-time-users).
 1. 다음 두 개의 쿼리 매개 변수를 [AEM UI의 URL](#aem-ui-url)
    + `&devMode=true`
    + `&ext=<LOCAL APPLICATION URL>`, 일반적으로 `&ext=https://localhost:9080`.
