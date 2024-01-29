@@ -11,10 +11,10 @@ thumbnail: KT-10253.jpeg
 last-substantial-update: 2023-04-19T00:00:00Z
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
 duration: 377
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 2aec84f0fbd34678a4e25200ae0cdc6396beca95
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 5%
+source-wordcount: '843'
+ht-degree: 4%
 
 ---
 
@@ -27,14 +27,14 @@ AEM Headless 콘텐츠 모델링에 사용된 콘텐츠 조각은 종종 Headles
 다음 `ImageRef` 유형에는 컨텐츠 참조에 대한 네 가지 URL 옵션이 있습니다.
 
 + `_path` 는 AEM에서 참조된 경로이며 AEM 원본(호스트 이름)을 포함하지 않습니다
-+ `_dynamicUrl` 는 웹에 최적화된 기본 이미지 에셋의 전체 URL입니다.
++ `_dynamicUrl` 는 이미지 에셋의 웹에 최적화된 전달을 위한에 대한 URL입니다.
    + 다음 `_dynamicUrl` 은 AEM Origin을 포함하지 않으므로 도메인(AEM Author 또는 AEM Publish 서비스)은 클라이언트 애플리케이션에서 제공해야 합니다.
 + `_authorUrl` 는 AEM Author의 이미지 에셋에 대한 전체 URL입니다
    + [AEM 작성자](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html) 는 headless 애플리케이션의 미리보기 경험을 제공하는 데 사용할 수 있습니다.
 + `_publishUrl` 는 AEM Publish의 이미지 에셋에 대한 전체 URL입니다.
    + [AEM 게시](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html) 는 일반적으로 headless 애플리케이션의 프로덕션 배포에서 의 이미지를 표시하는 위치입니다.
 
-다음 `_dynamicUrl` 는 이미지 에셋에 사용할 기본 URL이며 을 사용해야 합니다. `_path`, `_authorUrl`, 및 `_publishUrl` 가능한 한.
+다음 `_dynamicUrl` 는 이미지 자산 게재에 사용할 권장 URL이며 를 사용해야 합니다. `_path`, `_authorUrl`, 및 `_publishUrl` 가능한 한.
 
 |                                | AEM as a Cloud Service | AEM AS A CLOUD SERVICE DE | AEM SDK | AEM 6.5 |
 | ------------------------------ |:----------------------:|:--------------------------:|:-------:|:-------:|
@@ -96,17 +96,17 @@ query($path: String!, $imageFormat: AssetTransformFormat=JPG, $imageSeoName: Str
 
 다음 `_assetTransform` 은(는) `_dynamicUrl` 는 제공된 이미지 렌디션을 최적화하도록 구성됩니다. URL의 쿼리 매개 변수를 변경하여 웹에 최적화된 이미지 URL을 클라이언트에서 조정할 수도 있습니다.
 
-| GraphQL 매개 변수 | URL 매개변수 | 설명 | 필수 | GraphQL 변수 값 | URL 매개 변수 값 | URL 매개 변수 예 |
-|:---------|:----------|:-------------------------------|:--:|:--------------------------|:---|:--|
-| `format` | 해당 사항 없음 | 이미지 에셋의 형식입니다. | ✔ | `GIF`, `PNG`, `PNG8`, `JPG`, `PJPG`, `BJPG`,  `WEBP`, `WEBPLL`, `WEBPLY` | N/A | N/A |
-| `seoName` | N/A | URL의 파일 세그먼트 이름입니다. 제공되지 않으면 이미지 자산 이름이 사용됩니다. | ✘ | 영숫자, `-`, 또는 `_` | N/A | N/A |
-| `crop` | `crop` | 이미지에서 프레임 자르기. 이미지 크기 이내여야 합니다. | ✘ | 원래 이미지 차원의 범위 내에서 자르기 영역을 정의하는 양의 정수 | 쉼표로 구분된 숫자 좌표 문자열 `<X_ORIGIN>,<Y_ORIGIN>,<CROP_WIDTH>,<CROP_HEIGHT>` | `?crop=10,20,300,400` |
-| `size` | `size` | 출력 이미지의 크기(높이 및 너비 모두)입니다(픽셀). | ✘ | 양의 정수 | 쉼표로 구분된 양의 정수(순서) `<WIDTH>,<HEIGHT>` | `?size=1200,800` |
-| `rotation` | `rotate` | 도 단위의 이미지 회전입니다. | ✘ | `R90`, `R180`, `R270` | `90`, `180`, `270` | `?rotate=90` |
-| `flip` | `flip` | 이미지를 뒤집습니다. | ✘ | `HORIZONTAL`, `VERTICAL`, `HORIZONTAL_AND_VERTICAL` | `h`, `v`, `hv` | `?flip=h` |
-| `quality` | `quality` | 이미지 품질(원본 품질 비율). | ✘ | 1-100 | 1-100 | `?quality=80` |
-| `width` | `width` | 출력 이미지의 픽셀 단위 폭입니다. 날짜 `size` 이(가) 제공됨 `width` 은(는) 무시됩니다. | ✘ | 양의 정수 | 양의 정수 | `?width=1600` |
-| `preferWebP` | `preferwebp` | If `true` 그리고 AEM은 브라우저가 지원하는 경우 다음에 상관없이 WebP를 제공합니다. `format`. | ✘ | `true`, `false` | `true`, `false` | `?preferwebp=true` |
+| GraphQL 매개 변수 | 설명 | 필수 | GraphQL 변수 값 |
+|:---------|:----------|:-------------------------------|:--:|:--------------------------|
+| `format` | 이미지 에셋의 형식입니다. | ✔ | `GIF`, `PNG`, `PNG8`, `JPG`, `PJPG`, `BJPG`, `WEBP`, `WEBPLL`, `WEBPLY` |
+| `seoName` | URL의 파일 세그먼트 이름입니다. 제공되지 않으면 이미지 자산 이름이 사용됩니다. | ✘ | 영숫자, `-`, 또는 `_` |
+| `crop` | 이미지에서 프레임 자르기. 이미지 크기 이내여야 합니다. | ✘ | 원래 이미지 차원의 범위 내에서 자르기 영역을 정의하는 양의 정수 |
+| `size` | 출력 이미지의 크기(높이 및 너비 모두)입니다(픽셀). | ✘ | 양의 정수 |
+| `rotation` | 도 단위의 이미지 회전입니다. | ✘ | `R90`, `R180`, `R270` |
+| `flip` | 이미지를 뒤집습니다. | ✘ | `HORIZONTAL`, `VERTICAL`, `HORIZONTAL_AND_VERTICAL` |
+| `quality` | 이미지 품질(원본 품질 비율). | ✘ | 1-100 |
+| `width` | 출력 이미지의 픽셀 단위 폭입니다. 날짜 `size` 이(가) 제공됨 `width` 은(는) 무시됩니다. | ✘ | 양의 정수 |
+| `preferWebP` | If `true` 그리고 AEM은 브라우저가 지원하는 경우 다음에 상관없이 WebP를 제공합니다. `format`. | ✘ | `true`, `false` |
 
 ## GraphQL 응답
 
@@ -145,7 +145,7 @@ let dynamicUrl = AEM_HOST + data.adventureByPath.item.primaryImage._dynamicUrl;
 
 ## 응답형 URL
 
-위의 예는 단일 크기 이미지를 사용하는 것을 보여주지만, 웹 경험에서는 응답형 이미지 세트가 필요한 경우가 많습니다. 응답형 이미지는 다음을 사용하여 구현할 수 있습니다. [srcsets](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset) 또는 [그림 요소](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset). 다음 코드 스니펫은 `_dynamicUrl` 를 기반으로 다른 폭 매개 변수를 추가하여 다른 반응형 보기를 지원합니다. 다음을 수행할 수 있을 뿐만 아니라 `width` 쿼리 매개 변수를 사용할 수 있지만, 클라이언트가 필요에 따라 이미지 에셋을 추가로 최적화하기 위해 다른 쿼리 매개 변수를 추가할 수 있습니다.
+위의 예는 단일 크기 이미지를 사용하는 것을 보여주지만, 웹 경험에서는 응답형 이미지 세트가 필요한 경우가 많습니다. 응답형 이미지는 다음을 사용하여 구현할 수 있습니다. [srcsets](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset) 또는 [그림 요소](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset). 다음 코드 스니펫은 `_dynamicUrl` 기본. `width` 는 추가할 수 있는 URL 매개 변수입니다 `_dynamicUrl` 다양한 응답형 보기를 지원합니다.
 
 ```javascript
 // The AEM host is usually read from a environment variable of the SPA.
