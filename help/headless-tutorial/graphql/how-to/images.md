@@ -11,7 +11,7 @@ thumbnail: KT-10253.jpeg
 last-substantial-update: 2023-04-19T00:00:00Z
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
 duration: 377
-source-git-commit: 2aec84f0fbd34678a4e25200ae0cdc6396beca95
+source-git-commit: d178059f6f00228586e692465f7f437129bffaae
 workflow-type: tm+mt
 source-wordcount: '843'
 ht-degree: 4%
@@ -97,7 +97,7 @@ query($path: String!, $imageFormat: AssetTransformFormat=JPG, $imageSeoName: Str
 다음 `_assetTransform` 은(는) `_dynamicUrl` 는 제공된 이미지 렌디션을 최적화하도록 구성됩니다. URL의 쿼리 매개 변수를 변경하여 웹에 최적화된 이미지 URL을 클라이언트에서 조정할 수도 있습니다.
 
 | GraphQL 매개 변수 | 설명 | 필수 | GraphQL 변수 값 |
-|:---------|:----------|:-------------------------------|:--:|:--------------------------|
+|-------------------|------------------------------------------------------------------------------------------------------|----------|-------------------------------------------------------------|
 | `format` | 이미지 에셋의 형식입니다. | ✔ | `GIF`, `PNG`, `PNG8`, `JPG`, `PJPG`, `BJPG`, `WEBP`, `WEBPLL`, `WEBPLY` |
 | `seoName` | URL의 파일 세그먼트 이름입니다. 제공되지 않으면 이미지 자산 이름이 사용됩니다. | ✘ | 영숫자, `-`, 또는 `_` |
 | `crop` | 이미지에서 프레임 자르기. 이미지 크기 이내여야 합니다. | ✘ | 원래 이미지 차원의 범위 내에서 자르기 영역을 정의하는 양의 정수 |
@@ -107,6 +107,7 @@ query($path: String!, $imageFormat: AssetTransformFormat=JPG, $imageSeoName: Str
 | `quality` | 이미지 품질(원본 품질 비율). | ✘ | 1-100 |
 | `width` | 출력 이미지의 픽셀 단위 폭입니다. 날짜 `size` 이(가) 제공됨 `width` 은(는) 무시됩니다. | ✘ | 양의 정수 |
 | `preferWebP` | If `true` 그리고 AEM은 브라우저가 지원하는 경우 다음에 상관없이 WebP를 제공합니다. `format`. | ✘ | `true`, `false` |
+
 
 ## GraphQL 응답
 
