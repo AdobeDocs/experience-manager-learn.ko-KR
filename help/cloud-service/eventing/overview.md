@@ -11,9 +11,9 @@ duration: 573
 last-substantial-update: 2023-12-07T00:00:00Z
 jira: KT-14649
 thumbnail: KT-14649.jpeg
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 85e1ee33626d27f1b6c07bc631a7c1068930f827
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '912'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ AEM 이벤트의 주요 차이점은 다음과 같습니다.
 - 이벤트 소비자 코드는 AEM 외부에서 실행되며 AEM과 동일한 JVM에서 실행되지 않습니다.
 - AEM 제품 코드는 이벤트를 정의하고 Adobe I/O 이벤트로 전송합니다.
 - 이벤트 정보는 표준화되어 JSON 형식으로 전송됩니다. 자세한 내용은 다음을 참조하십시오. [cloudevents](https://cloudevents.io/).
-- AEMAEM 로 다시 통신하기 위해 이벤트 소비자는 as a Cloud Service API를 활용합니다.
+- AEM으로 다시 전달하기 위해 이벤트 소비자는 AEM as a Cloud Service API를 사용합니다.
 
 
 ## 사용 이유 및 시기
@@ -60,7 +60,7 @@ AEM 이벤트의 주요 차이점은 다음과 같습니다.
 AEM Eventing은 시스템 아키텍처 및 운영 효율성에 대한 다양한 이점을 제공합니다. AEM 이벤트를 사용하는 주요 이유는 다음과 같습니다.
 
 - **이벤트 기반 아키텍처 구축**: 독립적으로 확장할 수 있고 장애에 유연하게 대처할 수 있는 느슨하게 결합된 시스템을 쉽게 만들 수 있습니다.
-- **낮은 코드 및 낮은 운영 비용**: AEM의 사용자 지정을 방지하여 유지 관리 및 확장이 더 용이한 시스템으로 이어지므로 운영 비용이 절감됩니다.
+- **낮은 코드 및 낮은 운영 비용**: AEM의 사용자 정의 기능을 사용하지 않으므로 시스템을 유지 관리하고 확장하기가 쉬워지므로 운영 비용이 절감됩니다.
 - **AEM과 외부 시스템 간의 통신 간소화**: Adobe I/O 이벤트에서 특정 시스템 또는 서비스에 제공할 AEM 이벤트를 결정하는 것과 같이 통신을 관리하도록 하여 지점 간 연결을 제거합니다.
 - **이벤트의 내구성 향상**: Adobe I/O 이벤트는 대량의 이벤트를 처리하고 구독자에게 안정적으로 전달하도록 설계된 가용성 및 확장성이 뛰어난 시스템입니다.
 - **이벤트의 병렬 처리**: 여러 구독자에게 동시에 이벤트를 전달하여 다양한 시스템에서 분산 이벤트 처리를 수행할 수 있습니다.
@@ -92,7 +92,7 @@ AEM 이벤트에 가입하려면 AEM에서 코드를 작성할 필요가 없고 
 AEM 이벤트를 소비하는 기본 방법에는 두 가지가 있습니다. _푸시_ 메서드 및 _가져오기_ 메서드를 사용합니다.
 
 - **푸시 메서드**: 이 접근 방법에서는 이벤트를 사용할 수 있게 되면 Adobe I/O 이벤트를 통해 이벤트 소비자에게 미리 알림을 보냅니다. 통합 옵션에는 Webhooks, Adobe I/O Runtime 및 Amazon EventBridge가 포함됩니다.
-- **끌어오기 방법**: 여기에서 이벤트 소비자는 적극적으로 Adobe I/O 이벤트를 폴링하여 새 이벤트를 확인합니다. 이 메서드에 대한 주요 통합 옵션은 Adobe I/O 저널링 API입니다.
+- **끌어오기 방법**: 여기에서 이벤트 소비자는 적극적으로 Adobe I/O 이벤트를 폴링하여 새 이벤트를 확인합니다. 이 메서드에 대한 주요 통합 옵션은 Adobe Developer 저널링 API입니다.
 
 자세한 내용은 [Adobe I/O 이벤트를 통한 AEM 이벤트 처리](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#aem-events-processing-via-adobe-io).
 
@@ -101,7 +101,7 @@ AEM 이벤트를 소비하는 기본 방법에는 두 가지가 있습니다. _�
 <table>
   <tr>
     <td>
-        <a  href="./examples/webhook.md"><img alt="웹후크에서 AEM 이벤트 수신" src="./assets/examples/webhook/Eventing-webhook.png"/></a>
+        <a  href="./examples/webhook.md"><img alt="웹후크에서 AEM 이벤트 수신" src="./assets/examples/webhook/webhook-example.png"/></a>
         <div><strong><a href="./examples/webhook.md">웹후크에서 AEM 이벤트 수신</a></strong></div>
         <p>
           Adobe 제공 웹후크를 사용하여 AEM 이벤트를 수신하고 이벤트 세부 사항을 검토합니다.
@@ -115,4 +115,20 @@ AEM 이벤트를 소비하는 기본 방법에는 두 가지가 있습니다. _�
         </p>
       </td>
     </tr>
+  <tr>
+    <td>
+        <a  href="./examples/runtime-action.md"><img alt="Adobe I/O Runtime 작업에 대한 AEM 이벤트 수신" src="./assets/examples/runtime-action/eventing-runtime.png"/></a>
+        <div><strong><a href="./examples/runtime-action.md">Adobe I/O Runtime 작업에 대한 AEM 이벤트 수신</a></strong></div>
+        <p>
+          AEM 이벤트를 수신하고 이벤트 세부 사항을 검토합니다.
+        </p>
+      </td>
+      <td>
+        <a  href="./examples/event-processing-using-runtime-action.md"><img alt="Adobe I/O Runtime 작업을 사용하여 AEM 이벤트 처리" src="./assets/examples/event-processing-using-runtime-action/event-processing.png"/></a>
+        <div><strong><a href="./examples/event-processing-using-runtime-action.md">Adobe I/O Runtime 작업을 사용하여 AEM 이벤트 처리</a></strong></div>
+        <p>
+          Adobe I/O Runtime 작업을 사용하여 수신된 AEM 이벤트를 처리하는 방법을 알아봅니다. 이벤트 처리에는 AEM 콜백, 이벤트 데이터 지속성 및 SPA에서의 표시가 포함됩니다.
+        </p>
+      </td>
+  </tr>    
 </table>

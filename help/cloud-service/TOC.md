@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: aa6cd605c617de45003a96b1c14e37f055a8c566
+source-git-commit: 85e1ee33626d27f1b6c07bc631a7c1068930f827
 workflow-type: tm+mt
-source-wordcount: '1103'
-ht-degree: 16%
+source-wordcount: '1119'
+ht-degree: 17%
 
 ---
 
@@ -149,9 +149,9 @@ ht-degree: 16%
    + [SAML 2.0](./authentication/saml-2-0.md)
 + 고급 네트워킹{#networking}
    + [개요](./networking/advanced-networking.md)
-   + [유연한 포트 이그레스](./networking/flexible-port-egress.md)
-   + [전용 이그레스 IP 주소](./networking/dedicated-egress-ip-address.md)
-   + [가상 사설망](./networking/vpn.md)
+   + [유연한 포트 전송](./networking/flexible-port-egress.md)
+   + [전용 송신 IP 주소](./networking/dedicated-egress-ip-address.md)
+   + [가상 비공개 네트워크](./networking/vpn.md)
    + 코드 예{#examples}
       + [유연한 포트 이그레스용 비표준 포트에서의 HTTP/HTTPS](./networking/examples/http-on-non-standard-ports-flexible-port-egress.md)
       + [전용 이그레스 IP 주소/VPN용 HTTP/HTTPS](./networking/examples/http-dedicated-egress-ip-vpn.md)
@@ -169,6 +169,8 @@ ht-degree: 16%
    + 예{#examples}
       + [Webhook - AEM 이벤트 수신](./eventing/examples/webhook.md)
       + [저널링 - AEM 이벤트 로드](./eventing/examples/journaling.md)
+      + [Adobe I/O Runtime 작업 - AEM 이벤트 수신](./eventing/examples/runtime-action.md)
+      + [Adobe I/O Runtime 작업 - AEM 이벤트 처리](./eventing/examples/event-processing-using-runtime-action.md)
 + 마이그레이션 {#migration}
    + [콘텐츠 전송 도구](./migration/content-transfer-tool.md)
    + [자산 일괄 가져오기](./migration/bulk-import.md)

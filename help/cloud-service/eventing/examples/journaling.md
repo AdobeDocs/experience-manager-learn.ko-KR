@@ -8,10 +8,10 @@ role: Architect, Developer
 level: Beginner
 doc-type: Tutorial
 duration: 163
-last-substantial-update: 2023-12-07T00:00:00Z
+last-substantial-update: 2023-01-29T00:00:00Z
 jira: KT-14734
 thumbnail: KT-14734.jpeg
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 85e1ee33626d27f1b6c07bc631a7c1068930f827
 workflow-type: tm+mt
 source-wordcount: '600'
 ht-degree: 0%
@@ -22,6 +22,8 @@ ht-degree: 0%
 # 저널링 및 AEM 이벤트
 
 저널에서 AEM 이벤트의 초기 세트를 검색하고 각 이벤트에 대한 세부 사항을 탐색하는 방법을 알아봅니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3427052?quality=12&learn=on)
 
 저널링은 AEM 이벤트를 사용하는 가져오기 메서드이며 저널은 순서가 지정된 이벤트 목록입니다. Adobe I/O 이벤트 저널링 API를 사용하여 저널에서 AEM 이벤트를 가져와 애플리케이션에서 처리할 수 있습니다. 이 접근 방식을 사용하면 지정된 케이던스를 기반으로 이벤트를 관리하고 이러한 이벤트를 일괄적으로 효율적으로 처리할 수 있습니다. 다음을 참조하십시오. [저널링](https://developer.adobe.com/events/docs/guides/journaling_intro/) 유지 기간, 페이지 매김 등과 같은 필수 고려 사항을 포함하여 심층적인 통찰력을 제공합니다.
 

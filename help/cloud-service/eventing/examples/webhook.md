@@ -8,10 +8,10 @@ role: Architect, Developer
 level: Beginner
 doc-type: Tutorial
 duration: 156
-last-substantial-update: 2023-12-07T00:00:00Z
+last-substantial-update: 2023-01-29T00:00:00Z
 jira: KT-14732
 thumbnail: KT-14732.jpeg
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 85e1ee33626d27f1b6c07bc631a7c1068930f827
 workflow-type: tm+mt
 source-wordcount: '520'
 ht-degree: 0%
@@ -22,6 +22,8 @@ ht-degree: 0%
 # Webhooks 및 AEM 이벤트
 
 웹후크에서 AEM 이벤트를 수신하고 페이로드, 헤더 및 메타데이터 등 이벤트 세부 사항을 검토하는 방법에 대해 알아봅니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3427051?quality=12&learn=on)
 
 이 예에서 Adobe 제공 사용 _호스팅된 webhook_ 에서는 고유한 웹후크를 설정할 필요 없이 AEM 이벤트를 수신할 수 있습니다. 이 Adobe 제공 웹후크는에서 호스팅됩니다. [결함](https://glitch.com/): 웹 애플리케이션을 구축하고 배포하는 데 도움이 되는 웹 기반 환경을 제공하는 것으로 알려진 플랫폼입니다. 그러나 원하는 경우 자체 웹후크를 사용하는 옵션도 사용할 수 있습니다.
 
