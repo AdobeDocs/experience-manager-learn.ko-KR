@@ -6,12 +6,10 @@ version: 6.4,6.5
 topic: Development
 role: Developer
 level: Intermediate
-exl-id: d268d5d6-f24f-4db9-b8e0-07dd769c6005
-last-substantial-update: 2020-07-07T00:00:00Z
-duration: 152
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+last-substantial-update: 2024-01-29T00:00:00Z
+source-git-commit: 959683f23b7b04e315a5a68c13045e1f7973cf94
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '572'
 ht-degree: 0%
 
 ---
@@ -22,8 +20,8 @@ AEM Forms에서 출력 및 Forms 서비스 API 사용
 
 이 문서에서는 다음을 살펴봅니다
 
-* 출력 서비스 - 일반적으로 이 서비스는 xml 데이터를 xdp 템플릿 또는 pdf와 병합하여 병합된 pdf를 생성하는 데 사용됩니다. 자세한 내용은 다음을 참조하십시오. [javadoc](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) 출력 서비스용입니다.
-* FormsService - 데이터를 PDF 파일로 내보내기/가져올 수 있는 매우 다양한 서비스입니다. 자세한 내용은 다음을 참조하십시오. [javadoc](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html) Forms 서비스용.
+* [출력 서비스](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) - 일반적으로 이 서비스는 xml 데이터를 xdp 템플릿 또는 pdf와 병합하여 병합된 pdf를 생성하는 데 사용됩니다.
+* [Forms 서비스](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html) - xdp를 pdf로 렌더링하고 데이터를 PDF 파일에서 내보내고 가져올 수 있는 매우 다양한 서비스입니다.
 
 
 다음 코드 조각은 PDF 파일에서 데이터를 내보냅니다
@@ -47,7 +45,7 @@ Line2는 요청에서 saveLocation을 추출합니다.
 
 **시스템에서 샘플 패키지를 테스트하려면**
 
-[AEM 패키지 관리자를 사용하여 패키지 다운로드 및 설치](assets/outputandformsservice.zip)
+[AEM 패키지 관리자를 사용하여 패키지 다운로드 및 설치](assets/using-output-and-form-service-api.zip)
 
 
 
@@ -61,6 +59,7 @@ Line2는 요청에서 saveLocation을 추출합니다.
 1. /content/AemFormsSamples/mergedata
 1. /content/AemFormsSamples/exportdata
 1. /content/AemFormsSamples/outputservice
+1. /content/AemFormsSamples/renderxdp
 1. &quot;Sling Referrer filter&quot; 검색
 1. &quot;비우기 허용&quot; 확인란을 선택합니다. (이 설정은 테스트 목적으로만 사용해야 함) 샘플 코드를 테스트하는 방법에는 여러 가지가 있습니다. 가장 빠르고 쉬운 방법은 Postman 앱을 사용하는 것입니다. Postman을 사용하면 서버에 POST 요청을 할 수 있습니다. 시스템에 Postman 앱을 설치합니다.
 앱을 실행하고 다음 URL을 입력하여 데이터 내보내기 API를 테스트합니다
@@ -69,9 +68,9 @@ Line2는 요청에서 saveLocation을 추출합니다.
 ![내보내기](assets/postexport.png)
 그런 다음 전송 단추를 클릭합니다.
 
-패키지에는 3개의 샘플이 들어 있습니다. 다음 단락에서는 출력 서비스 또는 Forms 서비스를 사용할 시기, 서비스의 URL, 각 서비스가 기대하는 입력 매개 변수에 대해 설명합니다
+패키지에는 4개의 샘플이 들어 있습니다. 다음 단락에서는 출력 서비스 또는 Forms 서비스를 사용할 시기, 서비스의 URL, 각 서비스가 기대하는 입력 매개 변수에 대해 설명합니다
 
-## 데이터 병합 및 출력 병합
+## OutputService를 사용하여 데이터를 xdp 템플릿과 병합
 
 * 출력 서비스를 사용하여 데이터를 xdp 또는 pdf 문서와 병합하여 병합된 pdf 생성
 * **POST URL**: http://localhost:4502/content/AemFormsSamples/outputservice.html
@@ -81,22 +80,34 @@ Line2는 요청에서 saveLocation을 추출합니다.
    * **xmlfile**: xdp_or_pdf_file과 병합되는 xml 데이터 파일
    * **saveLocation**: 렌더링된 문서를 파일 시스템에 저장하는 위치입니다. 예: c:\\documents\\sample.pdf
 
-### PDF 파일로 데이터 가져오기
+### FormsService API 사용
 
-* FormsService를 사용하여 데이터를 PDF 파일로 가져오기
+#### 데이터 가져오기
+
+* FormsService importData를 사용하여 데이터를 PDF 파일로 가져오기
 * **POST URL** - http://localhost:4502/content/AemFormsSamples/mergedata.html
+
 * **요청 매개 변수:**
 
    * **pdf 파일** : 데이터를 병합할 pdf 파일
    * **xmlfile**: pdf 파일과 병합되는 xml 데이터 파일
    * **saveLocation**: 렌더링된 문서를 파일 시스템에 저장하는 위치입니다. 예 `c:\\outputsample.pdf`.
 
-**PDF 파일에서 데이터 내보내기**
-* FormsService를 사용하여 PDF 파일에서 데이터 내보내기
-* **POST URL** L - http://localhost:4502/content/AemFormsSamples/exportdata.html
+#### 데이터 내보내기
+
+* FormsService exportData API를 사용하여 PDF 파일에서 데이터 내보내기
+* **POST URL** - http://localhost:4502/content/AemFormsSamples/exportdata.html
 * **요청 매개 변수:**
 
    * **pdf 파일** : 데이터를 내보낼 pdf 파일
    * **saveLocation**: 내보낸 데이터를 파일 시스템에 저장할 위치입니다. 예: c:\\documents\\exported_data.xml
 
-[이 Postman 컬렉션을 가져와서 API를 테스트할 수 있습니다.](assets/document-services-postman-collection.json)
+#### XDP 렌더링
+
+* XDP 템플릿을 정적/동적 pdf로 렌더링
+* FormsService renderPDFForm API를 사용하여 xdp 템플릿을 PDF으로 렌더링
+* **POST URL** - http://localhost:4502/content/AemFormsSamples/renderxdp?xdpName=f1040.xdp
+* 요청 매개 변수:
+   * xdpName: pdf로 렌더링할 xdp 파일의 이름
+
+[이 Postman 컬렉션을 가져와서 API를 테스트할 수 있습니다.](assets/UsingDocumentServicesInAEMForms.postman_collection.json)
