@@ -10,9 +10,9 @@ last-substantial-update: 2023-08-14T00:00:00Z
 jira: KT-13781
 exl-id: 2bec5953-2e0c-4ae6-ae98-34492d4cfbe4
 duration: 159
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: b1734f75bdda174788d880be28fa19f8e787af0a
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '601'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,10 @@ ht-degree: 0%
 
 이 문서에서는 제출된 AEM Forms 데이터를 Azure Storage에 저장하기 위해 REST를 호출하는 방법을 보여 줍니다.
 제출된 양식 데이터를 Azure Storage에 저장하려면 다음 단계를 수행해야 합니다.
+
+>[!NOTE]
+>이 문서의 코드는 적응형 양식을 기반으로 하는 핵심 구성 요소에서는 작동하지 않습니다. [핵심 구성 요소 기반 적응형 양식에 대한 동등한 문서는 여기에서 제공됩니다](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/prefill-form-with-data-attachments/introduction.html?lang=en)
+
 
 ## Azure 스토리지 계정 만들기
 
@@ -45,6 +49,7 @@ Azure 스토리지 컨테이너와 상호 작용할 수 있는 인증 방법인 
 ## Blob SAS 토큰 및 저장소 URI를 제공합니다.
 
 코드를 보다 일반화하기 위해 아래 표시된 대로 OSGi 구성을 사용하여 두 속성을 구성할 수 있습니다. 다음 _**기형문합법**_ 은 스토리지 계정의 이름입니다. _**formsubmissions**_ 는 데이터가 저장되는 컨테이너입니다.
+스토리지 URI 끝에 /가 있고 SAS 토큰이 다음으로 시작하는지 확인하십시오.
 ![osgi-configuration](./assets/azure-portal-osgi-configuration.png)
 
 
@@ -98,7 +103,8 @@ https://aemformstutorial.blob.core.windows.net/formsubmissions/blobid/sastoken �
 
 * [샘플 적응형 양식 가져오기](./assets/bank-account-sample-form.zip)
 
-* OSGi 구성 콘솔을 사용하여 Azure 포털 구성에서 적절한 값을 지정합니다
+* [OSGi 구성 콘솔을 사용하여 Azure 포털 구성에서 적절한 값을 지정합니다](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/some-useful-integrations/store-form-data-in-azure-storage.html?lang=en#provide-the-blob-sas-token-and-storage-uri)
+
 * [BankAccount 양식 미리 보기 및 제출](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled)
 
 * 선택한 Azure 스토리지 컨테이너에 데이터가 저장되었는지 확인합니다. Blob ID를 복사합니다.

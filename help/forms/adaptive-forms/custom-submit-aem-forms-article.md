@@ -9,9 +9,9 @@ level: Experienced
 exl-id: 64b586a6-e9ef-4a3d-8528-55646ab03cc4
 last-substantial-update: 2021-04-09T00:00:00Z
 duration: 59
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: b1734f75bdda174788d880be28fa19f8e787af0a
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '232'
 ht-degree: 1%
 
 ---
@@ -19,6 +19,11 @@ ht-degree: 1%
 # AEM Forms에서 사용자 정의 제출 작성 {#writing-a-custom-submit-in-aem-forms}
 
 적응형 양식에 대한 사용자 정의 제출 액션을 빠르고 간편하게 만들 수 있는 방법
+
+>[!NOTE]
+>이 문서의 코드는 적응형 양식을 기반으로 하는 핵심 구성 요소에서는 작동하지 않습니다.
+>[핵심 구성 요소 기반 적응형 양식에 대한 동등한 문서는 여기에서 제공됩니다](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/custom-submit-headless-forms/custom-submit-service.html?lang=en)
+
 
 이 문서에서는 적응형 Forms 제출을 처리하기 위한 사용자 지정 제출 액션을 만드는 데 필요한 단계를 안내합니다.
 

@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Intermediate
 last-substantial-update: 2024-01-29T00:00:00Z
-source-git-commit: 959683f23b7b04e315a5a68c13045e1f7973cf94
+source-git-commit: b1734f75bdda174788d880be28fa19f8e787af0a
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
@@ -61,12 +61,18 @@ Line2는 요청에서 saveLocation을 추출합니다.
 1. /content/AemFormsSamples/outputservice
 1. /content/AemFormsSamples/renderxdp
 1. &quot;Sling Referrer filter&quot; 검색
-1. &quot;비우기 허용&quot; 확인란을 선택합니다. (이 설정은 테스트 목적으로만 사용해야 함) 샘플 코드를 테스트하는 방법에는 여러 가지가 있습니다. 가장 빠르고 쉬운 방법은 Postman 앱을 사용하는 것입니다. Postman을 사용하면 서버에 POST 요청을 할 수 있습니다. 시스템에 Postman 앱을 설치합니다.
-앱을 실행하고 다음 URL을 입력하여 데이터 내보내기 API를 테스트합니다
+1. &quot;비우기 허용&quot; 확인란을 선택합니다. (이 설정은 테스트 목적으로만 사용해야 함)
 
-드롭다운 목록에서 &quot;POST&quot;을 선택했는지 확인합니다 http://localhost:4502/content/AemFormsSamples/exportdata.html &quot;인증&quot;을 &quot;기본 인증&quot;으로 지정해야 합니다. AEM Server 사용자 이름 및 암호 지정 &quot;본문&quot; 탭으로 이동하여 아래 이미지에 표시된 대로 요청 매개 변수를 지정합니다
-![내보내기](assets/postexport.png)
-그런 다음 전송 단추를 클릭합니다.
+## 샘플 테스트
+
+샘플 코드를 테스트하는 방법에는 여러 가지가 있습니다. 가장 빠르고 쉬운 방법은 Postman 앱을 사용하는 것입니다. Postman을 사용하면 서버에 POST 요청을 할 수 있습니다.
+
+* 시스템에 Postman 앱을 설치합니다.
+* 앱을 실행하고 적절한 URL을 입력합니다
+* 드롭다운 목록에서 &quot;POST&quot;을 선택했는지 확인합니다.
+* &quot;인증&quot;을 &quot;기본 인증&quot;으로 지정해야 합니다. AEM Server 사용자 이름 및 암호 지정
+* 본문 탭에서 요청 매개 변수 지정
+* Send 단추를 클릭합니다.
 
 패키지에는 4개의 샘플이 들어 있습니다. 다음 단락에서는 출력 서비스 또는 Forms 서비스를 사용할 시기, 서비스의 URL, 각 서비스가 기대하는 입력 매개 변수에 대해 설명합니다
 
