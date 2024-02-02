@@ -1,6 +1,6 @@
 ---
-title: AEM의 인증 지원 이해
-description: AEM에서 지원하는 인증(및 경우에 따라 권한 부여) 메커니즘에 대한 통합 보기.
+title: AEM 6.x에서 인증 지원
+description: AEM 6.x에서 지원하는 인증 메커니즘에 대한 통합 보기.
 version: 6.4, 6.5
 feature: User and Groups
 doc-type: Article
@@ -12,14 +12,14 @@ exl-id: 96c542ae-6ab6-4d8a-94df-a58b03469320
 last-substantial-update: 2022-09-10T00:00:00Z
 thumbnail: KT-406.jpg
 duration: 38
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 9ef35d4d20ea574ac2051d7d3e997ecc18c2aaaa
 workflow-type: tm+mt
-source-wordcount: '119'
+source-wordcount: '116'
 ht-degree: 7%
 
 ---
 
-# AEM 6.x의 인증 지원 이해
+# AEM 6.x에서 인증 지원
 
 AEM에서 지원하는 인증(및 경우에 따라 권한 부여) 메커니즘에 대한 통합 보기.
 
