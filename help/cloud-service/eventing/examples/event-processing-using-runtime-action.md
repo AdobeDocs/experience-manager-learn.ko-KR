@@ -11,9 +11,9 @@ duration: 0
 last-substantial-update: 2024-01-30T00:00:00Z
 jira: KT-14879
 thumbnail: KT-14879.jpeg
-source-git-commit: 85e1ee33626d27f1b6c07bc631a7c1068930f827
+source-git-commit: f0930e517254b6353fe50c3bbf9ae915d9ef6ca3
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '578'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,9 @@ ht-degree: 0%
 
 - 이전 예에서 로컬로 초기화된 프로젝트 [Adobe I/O Runtime 작업 및 AEM 이벤트](./runtime-action.md#initialize-project-for-local-development).
 
+>[!IMPORTANT]
+>
+>AEM as a Cloud Service 이벤트는 프리릴리스 모드의 등록된 사용자만 사용할 수 있습니다. AEM as a Cloud Service 환경에서 AEM 이벤트를 활성화하려면 [AEM 이벤트 팀](mailto:grp-aem-events@adobe.com).
 
 ## AEM 이벤트 프로세서 작업
 

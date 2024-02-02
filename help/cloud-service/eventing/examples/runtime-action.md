@@ -11,9 +11,9 @@ duration: 0
 last-substantial-update: 2024-01-29T00:00:00Z
 jira: KT-14878
 thumbnail: KT-14878.jpeg
-source-git-commit: 85e1ee33626d27f1b6c07bc631a7c1068930f827
+source-git-commit: f0930e517254b6353fe50c3bbf9ae915d9ef6ca3
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '729'
 ht-degree: 0%
 
 ---
@@ -46,6 +46,10 @@ https://developer.adobe.com/runtime/docs/guides/overview/what_is_runtime/
 - 액세스 대상: [Adobe Developer 콘솔](https://developer.adobe.com/developer-console/docs/guides/getting-started/).
 
 - [ADOBE DEVELOPER CLI](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) 가 로컬 컴퓨터에 설치되었습니다.
+
+>[!IMPORTANT]
+>
+>AEM as a Cloud Service 이벤트는 프리릴리스 모드의 등록된 사용자만 사용할 수 있습니다. AEM as a Cloud Service 환경에서 AEM 이벤트를 활성화하려면 [AEM 이벤트 팀](mailto:grp-aem-events@adobe.com).
 
 ## Adobe Developer 콘솔에서 프로젝트 만들기
 
