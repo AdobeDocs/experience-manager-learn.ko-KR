@@ -11,9 +11,9 @@ thumbnail: KT-10436.png
 last-substantial-update: 2022-10-14T00:00:00Z
 exl-id: 4dba6c09-2949-4153-a9bc-d660a740f8f7
 duration: 51
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: dfb9281abacfe28068b866a8eda786e2d30b9ea6
 workflow-type: tm+mt
-source-wordcount: '143'
+source-wordcount: '147'
 ht-degree: 3%
 
 ---
@@ -30,6 +30,7 @@ AEM as a Cloud Service은 여러 인증 옵션을 지원하며 서비스 유형�
 | [SSO(단일 인증)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html#integration-with-an-idp) | ✘ | ✔ |
 | [OAuth](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html#integration-with-an-idp) | ✘ | ✔ |
 | [토큰 인증](../../headless-tutorial/authentication/overview.md) | ✔ | ✔ |
+| 기본 인증 | ✘ | ✘ |
 
 ## 인증 옵션
 
