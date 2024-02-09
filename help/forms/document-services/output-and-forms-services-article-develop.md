@@ -1,22 +1,22 @@
 ---
 title: AEM Forms에서 출력 및 Forms 서비스를 사용하여 개발
-description: AEM Forms에서 출력 및 Forms 서비스 API 사용
+description: AEM Forms에서 출력 및 Forms 서비스 API를 사용하여 개발하는 방법에 대해 알아봅니다.
 feature: Output Service
 version: 6.4,6.5
 topic: Development
 role: Developer
 level: Intermediate
 last-substantial-update: 2024-01-29T00:00:00Z
-source-git-commit: b1734f75bdda174788d880be28fa19f8e787af0a
+source-git-commit: 8e9bf8001e4bb7341aeadd65ffd2543da359e061
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '565'
 ht-degree: 0%
 
 ---
 
 # AEM Forms에서 출력 및 Forms 서비스를 사용하여 개발{#developing-with-output-and-forms-services-in-aem-forms}
 
-AEM Forms에서 출력 및 Forms 서비스 API 사용
+AEM Forms에서 출력 및 Forms 서비스 API를 사용하여 개발하는 방법에 대해 알아봅니다.
 
 이 문서에서는 다음을 살펴봅니다
 
