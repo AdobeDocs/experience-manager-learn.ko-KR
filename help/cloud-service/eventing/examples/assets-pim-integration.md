@@ -11,7 +11,7 @@ duration: 0
 last-substantial-update: 2024-02-13T00:00:00Z
 jira: KT-14901
 thumbnail: KT-14901.jpeg
-source-git-commit: 5d8ee3b9ab6fb974f7faebb1d0ce42d699e2063c
+source-git-commit: f150a2517c4cafe55917e1aa50dca297c9bb3bc5
 workflow-type: tm+mt
 source-wordcount: '967'
 ht-degree: 0%
@@ -102,7 +102,7 @@ AEM Assets 이벤트를 수신하고 이전 단계에서 만든 Adobe I/O Runtim
 
 메타데이터 검색 및 업데이트를 수행하려면 먼저 자동 생성 _일반_ 의 작업 코드 `src/dx-excshell-1/actions/generic` 폴더를 삭제합니다.
 
-첨부된 WKND-Assets-PIM-Integration.zip 파일에서 전체 코드를 참조하고 아래 섹션에서 주요 파일을 강조 표시합니다.
+첨부된 을 참조하십시오 [WKND-Assets-PIM-Integration.zip](../assets/examples/assets-pim-integration/WKND-Assets-PIM-Integration.zip) 전체 코드의 파일 및 아래 섹션에서 주요 파일을 강조 표시합니다.
 
 - 다음 `src/dx-excshell-1/actions/generic/mockPIMCommunicator.js` 파일은 PIM API 호출을 클릭하여 SKU 및 공급자 이름과 같은 추가 메타데이터를 검색합니다.
 
