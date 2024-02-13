@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 85e1ee33626d27f1b6c07bc631a7c1068930f827
+source-git-commit: 5d8ee3b9ab6fb974f7faebb1d0ce42d699e2063c
 workflow-type: tm+mt
-source-wordcount: '1119'
+source-wordcount: '1124'
 ht-degree: 17%
 
 ---
@@ -171,6 +171,7 @@ ht-degree: 17%
       + [저널링 - AEM 이벤트 로드](./eventing/examples/journaling.md)
       + [Adobe I/O Runtime 작업 - AEM 이벤트 수신](./eventing/examples/runtime-action.md)
       + [Adobe I/O Runtime 작업 - AEM 이벤트 처리](./eventing/examples/event-processing-using-runtime-action.md)
+      + [AEM Assets 이벤트 - PIM 통합](./eventing/examples/assets-pim-integration.md)
 + 마이그레이션 {#migration}
    + [콘텐츠 전송 도구](./migration/content-transfer-tool.md)
    + [자산 일괄 가져오기](./migration/bulk-import.md)
@@ -345,7 +346,7 @@ ht-degree: 17%
    + [문제 해결](./asset-compute/troubleshooting.md)
 
 + 여러 단계 Tutorials{#multi-step-tutorials}
-   + [AEM Sites 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html){target=_blank}
+   + [AEM Sites 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR){target=_blank}
    + [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html){target=_blank}
    + [SPA 편집기(React)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html){target=_blank}
    + [AEM Sites 및 Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html){target=_blank}
