@@ -10,9 +10,9 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 53baef9c-aa4e-4f18-ab30-ef9f4f5513ee
 duration: 267
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 0deeaac90e9d181a60b407e17087650e0be1ff28
 workflow-type: tm+mt
-source-wordcount: '988'
+source-wordcount: '1160'
 ht-degree: 0%
 
 ---
@@ -99,11 +99,27 @@ Dispatcher의 팜 파일에는 구성 섹션이 있습니다.
 }
 ```
 
-이 구성은 Dispatcher가 허용하려는 항목 목록을 가져오기 위해 300초마다 AEM 인스턴스에서 이 URL을 가져오도록 합니다.
+다음 `/delay` 초 단위로 측정된 매개 변수는 고정된 간격 기준으로 작동하지 않고, 오히려 조건 기반 확인에 따라 작동합니다. Dispatcher는 의 수정 타임스탬프를 평가합니다. `/file` 목록에 없는 URL에 대한 요청을 받으면 인식된 vanity URL 목록을 저장합니다. 다음 `/file` 현재 모멘트와 의 시간 차이가 있는 경우 새로 고쳐지지 않습니다. `/file`의 마지막 수정이 다음보다 작음: `/delay` 기간. 새로 고침 `/file` 다음 두 가지 조건에서 발생합니다.
+
+1. 들어오는 요청은 캐시되지 않거나 다음에 나열되지 않은 URL에 대한 것입니다. `/file`.
+1. 최소 `/delay` 다음 이후 초 경과: `/file` 이(가) 마지막으로 업데이트되었습니다.
+
+이 메커니즘은 서비스 거부(DoS) 공격으로부터 보호되도록 설계되었으며, 이로 인해 Dispatcher가 요청을 압도하여 Vanity URL 기능을 악용할 수 있습니다.
+
+간단히 말하면 `/file` vanity URL 포함은 아직 에 없는 URL에 대한 요청이 도착하는 경우에만 업데이트됩니다. `/file` 및 다음과 같은 경우 `/file`의 마지막 수정이 보다 오래 전에 수행되었습니다. `/delay` 마침표.
+
+의 새로 고침을 명시적으로 트리거하려면 `/file`를 입력하면 을 확인한 후 존재하지 않는 URL을 요청할 수 있습니다 `/delay` 마지막 업데이트 이후 시간이 경과했습니다. 이러한 목적을 위한 URL의 예는 다음과 같습니다.
+
+- `https://dispatcher-host-name.com/this-vanity-url-does-not-exist`
+- `https://dispatcher-host-name.com/please-hand-me-that-planet-maestro`
+- `https://dispatcher-host-name.com/random-vanity-url`
+
+이 접근 방식은 Dispatcher가 `/file`, 지정한 경우 `/delay` 마지막 수정 이후 간격이 경과했습니다.
 
 응답의 캐시를 `/file` 이 예제에서 인수가 잘못되었습니다. `/tmp/vanity_urls`
 
 따라서 URI의 AEM 인스턴스를 방문하면 해당 인스턴스가 가져오는 내용이 표시됩니다.
+
 ![/libs/granite/dispatcher/content/vanityUrls.html에서 렌더링된 컨텐츠의 스크린샷](assets/disp-vanity-url/vanity-url-component.png "vanity-url-component")
 
 말 그대로 매우 간단한 목록입니다
