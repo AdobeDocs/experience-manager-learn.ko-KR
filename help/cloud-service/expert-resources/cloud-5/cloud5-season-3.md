@@ -4,9 +4,9 @@ description: 시즌 3에서는 복잡한 프로젝트를 진행한 경험이 있
 sub-product: Experience Manager Sites, Experience Manager Cloud Manager, Experience Manager Assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
-source-git-commit: da8d584e04b5ef375ef5731ea1d5f9e2c0438b2a
+source-git-commit: f2dceed935f563e83092f8e14133746f4126a212
 workflow-type: tm+mt
-source-wordcount: '177'
+source-wordcount: '202'
 ht-degree: 0%
 
 ---
@@ -42,8 +42,20 @@ AEM Engineering의 시즌 3의 클라우드 5 시리즈에 오신 것을 환영�
                 타사 검색을 Edge Delivery Services에 가장 잘 통합할 수 있는 방법을 살펴봅니다.
             </p>
         </td>   
-         <td>           
-         </td>
+        <td>
+            <a href="./season-3/cloud5-rum.md">
+                <img alt="RUM(실시간 사용자 모니터링)" src="https://video.tv.adobe.com/v/3427495?format=jpeg"/>
+            </a>
+            <div>
+                <a href="./season-3/cloud5-rum.md">
+                <strong>RUM(실시간 사용자 모니터링)</strong></a>        
+                <br/><em>james Talbot 및 Varun Mitra, AEM 엔지니어링</em>
+            </div>
+            <p>
+                <br/>
+                RUM(Explore Real User Monitoring)은 Edge Delivery Services과 함께 작동합니다.
+            </p>
+        </td>   
          <td>           
          </td> 
   </tr>  
