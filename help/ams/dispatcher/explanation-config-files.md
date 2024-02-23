@@ -10,7 +10,7 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: ec8e2804-1fd6-4e95-af6d-07d840069c8b
 duration: 478
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 19beb662b63476f4745291338d944502971638a3
 workflow-type: tm+mt
 source-wordcount: '1688'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Apache 웹 서버는 로 타겟팅할 때 파일의 파일 확장명이 무엇�
 | 파일 | 파일 대상 | 설명 |
 | ---- | ---------------- | ----------- |
 | 파일 이름`.conf` | `/etc/httpd/conf.d/` | 기본 Enterprise Linux 설치는 이 파일 확장명을 사용하고 폴더를 httpd.conf에 선언된 설정을 재정의하고 Apache의 전역 수준에서 추가 기능을 추가할 수 있는 위치로 포함합니다. |
-| 파일 이름`.vhost` | 준비: `/etc/httpd/conf.d/available_vhosts/`<br>활성: `/etc/httpd/conf.d/enabled_vhosts/`<br/><br/><div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>참고:</b> .vhost 파일은 enabled_vhosts 폴더에 복사되지 않지만 available_vhosts/\*.vhost 파일의 상대 경로에 대한 심볼릭 링크를 사용합니다.</div></u><br><br> | \*.vhost (가상 호스트) 파일은 `<VirtualHosts>`  항목이 호스트 이름을 일치시키고 Apache가 서로 다른 규칙으로 각 도메인 트래픽을 처리할 수 있도록 합니다. 다음에서 `.vhost` 파일, 다음과 같은 기타 파일 `rewrites`, `whitelisting`, `etc` 포함됩니다. |
+| 파일 이름`.vhost` | 준비: `/etc/httpd/conf.d/available_vhosts/`<br>활성: `/etc/httpd/conf.d/enabled_vhosts/`<br/><br/><b>참고:</b> .vhost 파일은 enabled_vhosts 폴더에 복사되지 않지만 available_vhosts/\*.vhost 파일의 상대 경로에 대한 심볼릭 링크를 사용합니다.</u><br><br> | \*.vhost (가상 호스트) 파일은 `<VirtualHosts>`  항목이 호스트 이름을 일치시키고 Apache가 서로 다른 규칙으로 각 도메인 트래픽을 처리할 수 있도록 합니다. 다음에서 `.vhost` 파일, 다음과 같은 기타 파일 `rewrites`, `whitelisting`, `etc` 포함됩니다. |
 | 파일 이름`_rewrite.rules` | `/etc/httpd/conf.d/rewrites/` | `*_rewrite.rules` 파일 저장소 `mod_rewrite` 에 의해 명시적으로 포함되고 사용되는 규칙 `vhost` 파일 |
 | 파일 이름`_whitelist.rules` | `/etc/httpd/conf.d/whitelists/` | `*_ipwhitelist.rules` 파일은 다음 내에서 포함됩니다. `*.vhost` 파일. 화이트리스트에 IP를 허용하는 IP 정규 표현식 또는 거부 규칙이 포함되어 있습니다. IP 주소를 기반으로 가상 호스트 보기를 제한하려는 경우 이러한 파일 중 하나를 생성하여 `*.vhost` 파일 |
 
@@ -43,7 +43,7 @@ Apache 웹 서버는 로 타겟팅할 때 파일의 파일 확장명이 무엇�
 | 파일 | 파일 대상 | 설명 |
 | --- | --- | --- |
 | 파일 이름`.any` | `/etc/httpd/conf.dispatcher.d/` | AEM Dispatcher Apache 모듈은 해당 설정의 소스를 지정합니다. `*.any` 파일. 기본 상위 포함 파일은 입니다. `conf.dispatcher.d/dispatcher.any` |
-| 파일 이름`_farm.any` | 준비: `/etc/httpd/conf.dispatcher.d/available_farms/`<br>활성: `/etc/httpd/conf.dispatcher.d/enabled_farms/`<br><br><div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>참고:</b> 이러한 팜 파일은 `enabled_farms` 폴더만 사용 `symlinks` 에 대한 상대 경로로 `available_farms/*_farm.any` 파일 </div> <br/>`*_farm.any` 파일은 `conf.dispatcher.d/dispatcher.any` 파일. 이러한 상위 팜 파일은 각 렌더링 또는 웹 사이트 유형에 대한 모듈 동작을 제어하기 위해 존재합니다. 파일은에서 만들어집니다. `available_farms` 디렉터리 및 사용 `symlink` 대상: `enabled_farms` 디렉토리.  <br/>에서 이름별로 자동 포함됩니다. `dispatcher.any` 파일.<br/><b>기준선</b> 팜 파일 시작 문자 `000_` 먼저 로드되었는지 확인하십시오.<br><b>사용자 정의</b> 팜 파일은에서 번호 체계를 시작하여 로드해야 합니다. `100_` 를 사용하여 포함 동작을 적절히 조정합니다. |
+| 파일 이름`_farm.any` | 준비: `/etc/httpd/conf.dispatcher.d/available_farms/`<br>활성: `/etc/httpd/conf.dispatcher.d/enabled_farms/`<br><br><b>참고:</b> 이러한 팜 파일은 `enabled_farms` 폴더만 사용 `symlinks` 에 대한 상대 경로로 `available_farms/*_farm.any` 파일 <br/>`*_farm.any` 파일은 `conf.dispatcher.d/dispatcher.any` 파일. 이러한 상위 팜 파일은 각 렌더링 또는 웹 사이트 유형에 대한 모듈 동작을 제어하기 위해 존재합니다. 파일은에서 만들어집니다. `available_farms` 디렉터리 및 사용 `symlink` 대상: `enabled_farms` 디렉토리.  <br/>에서 이름별로 자동 포함됩니다. `dispatcher.any` 파일.<br/><b>기준선</b> 팜 파일 시작 문자 `000_` 먼저 로드되었는지 확인하십시오.<br><b>사용자 정의</b> 팜 파일은에서 번호 체계를 시작하여 로드해야 합니다. `100_` 를 사용하여 포함 동작을 적절히 조정합니다. |
 | 파일 이름`_filters.any` | `/etc/httpd/conf.dispatcher.d/filters/` | `*_filters.any` 파일은 다음 내에서 포함됩니다. `conf.dispatcher.d/enabled_farms/*_farm.any` 파일. 각 팜에는 필터링해야 하는 트래픽을 변경하고 렌더러에게 전달되지 않는 일련의 규칙이 있습니다. |
 | 파일 이름`_vhosts.any` | `/etc/httpd/conf.dispatcher.d/vhosts/` | `*_vhosts.any` 파일은 다음 내에서 포함됩니다. `conf.dispatcher.d/enabled_farms/*_farm.any` 파일. 이러한 파일은 요청을 처리하는 데 사용할 렌더러를 결정하기 위해 blob 일치에 의해 일치되는 호스트 이름 또는 URI 경로 목록입니다 |
 | 파일 이름`_cache.any` | `/etc/httpd/conf.dispatcher.d/cache/` | `*_cache.any` 파일은 다음 내에서 포함됩니다. `conf.dispatcher.d/enabled_farms/*_farm.any` 파일. 이러한 파일은 캐시되는 항목과 캐시되지 않는 항목을 지정합니다. |

@@ -10,9 +10,9 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 8a3f2bb9-3895-45c6-8bb5-15a6d2aac50e
 duration: 354
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 19beb662b63476f4745291338d944502971638a3
 workflow-type: tm+mt
-source-wordcount: '1132'
+source-wordcount: '1130'
 ht-degree: 0%
 
 ---
@@ -59,20 +59,23 @@ AMS에서 기본 설치는 Enterprise Linux를 기본 운영 체제로 사용합
 - 운영 체제에서 완벽하게 지원되는 패치 주기를 충돌이나 수동 조정 없이 허용합니다.
 - 레이블이 잘못 지정된 파일 컨텍스트의 SELinux 위반 방지
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>참고:</b>
-Adobe Managed Services 서버 이미지에는 일반적으로 작은 운영 체제 루트 드라이브가 있습니다.  일반적으로 '/mnt'에 마운트된 별도의 볼륨에 데이터를 넣습니다. 그런 다음 다음 다음 기본 디렉토리의 기본값 대신 해당 볼륨을 사용합니다
+>[!BEGINSHADEBOX &quot;메모&quot;]
+
+Adobe Managed Services 서버 이미지에는 일반적으로 작은 운영 체제 루트 드라이브가 있습니다.  일반적으로 마운트되는 별도의 볼륨에 데이터를 넣습니다. `/mnt`
+그런 다음 다음 다음 기본 디렉터리에 대한 기본값 대신 해당 볼륨을 사용합니다
 
 `DocumentRoot`
 - 기본값:`/var/www/html`
 - AMS:`/mnt/var/www/html`
 
 `Log Directory`
-- 기본값: `/var/log/httpd`
-- AMS: `/mnt/var/log/httpd`
+- 기본값: `/var/log/httpd`
+- AMS: `/mnt/var/log/httpd`
 
 기존 디렉토리와 새 디렉토리가 혼동을 방지하기 위해 원래 마운트 지점에 다시 매핑된다는 점을 기억하십시오.
 별도의 볼륨을 사용하는 것은 중요하지는 않지만 참고할 만한 가치가 있습니다
-</div>
+
+>[!ENDSHADEBOX]
 
 ## AMS 추가 기능
 
@@ -292,9 +295,9 @@ Apache가 새 파일을에 추가할 때 모듈과 구성을 확장하기를 원
 LoadModule dispatcher_module modules/mod_dispatcher.so
 ```
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>알림:</b>
-apache가 제공한 기존 파일을 수정하지 않았습니다.  대신 이동해야 할 디렉터리에 Ours를 추가했습니다.
-</div><br/>
+>[!NOTE]
+>
+>Apache가 제공한 기존 파일을 수정하지 않았습니다. 대신, 우리는 그들이 가고자 하는 디렉터리에 우리의 것을 추가했을 뿐이다.
 
 이제 파일에서 모듈을 사용합니다. <b>`/etc/httpd/conf.d/dispatcher_vhost.conf`</b> 모듈을 초기화하고 초기 모듈별 구성 파일을 로드합니다.
 

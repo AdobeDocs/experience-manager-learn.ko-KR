@@ -10,9 +10,9 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 461873a1-1edf-43a3-b4a3-14134f855d86
 duration: 653
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 19beb662b63476f4745291338d944502971638a3
 workflow-type: tm+mt
-source-wordcount: '2227'
+source-wordcount: '2225'
 ht-degree: 0%
 
 ---
@@ -133,16 +133,17 @@ $ find /mnt/var/www/html/ -type f -name ".stat"
 
 이 파일 수준을 너무 낮게 설정하면 플러시 요청이 의도한 것보다 많은 것을 지울 수 있습니다.  그러면 캐시에서 더 적은 요청이 제공되어 캐시가 더 자주 이탈하여 성능 문제가 발생할 수 있습니다.
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>참고:</b>
+>[!BEGINSHADEBOX &quot;메모&quot;]
 
-설정 `statfilelevel` 합리적인 수준에서.  폴더 구조를 보고 너무 많은 디렉토리를 탐색하지 않고 간결한 플러시를 허용하도록 설정되어 있는지 확인합니다.   시스템의 성능 테스트 중에 사용자의 요구 사항에 맞는지 테스트하여 확인합니다.
+설정 `statfilelevel` 합리적인 수준에서. 폴더 구조를 보고 너무 많은 디렉토리를 탐색하지 않고 간결한 플러시를 허용하도록 설정되어 있는지 확인합니다. 시스템의 성능 테스트 중에 사용자의 요구 사항에 맞는지 테스트하여 확인합니다.
 
-언어를 지원하는 사이트가 좋은 예입니다.  일반적인 콘텐츠 트리에는 다음 디렉터리가 있습니다
+언어를 지원하는 사이트가 좋은 예입니다. 일반적인 콘텐츠 트리에는 다음 디렉터리가 있습니다
 
 `/content/brand1/en/us/`
 
-이 예제에서는 통계 파일 레벨 설정 4를 사용합니다.  이 옵션을 선택하면 아래에 있는 콘텐츠를 플러시할 때 <b>`us`</b> 언어 폴더도 플러시되지 않는 폴더
-</div>
+이 예제에서는 통계 파일 레벨 설정 4를 사용합니다. 이 옵션을 선택하면 아래에 있는 콘텐츠를 플러시할 때 **`us`** 언어 폴더도 플러시되지 않는 폴더
+
+>[!ENDSHADEBOX]
 
 ### 통계 파일 타임스탬프 핸드쉐이크
 
@@ -227,11 +228,11 @@ $ find /mnt/var/www/html/ -type f -name ".stat"
 
 Dispatcher가 캐시 디렉터리로 채우고 관리할 디렉터리를 지정합니다.
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>참고:</b>
-이 디렉토리는 웹 서버가 사용하도록 구성된 도메인의 Apache 문서 루트 설정과 일치해야 합니다.
-
-Apache 문서 루트의 하위 폴더를 활성화하는 각 팜당 중첩된 docroot 폴더가 있으면 매우 안 좋습니다.
-</div>
+>[!NOTE]
+>
+>이 디렉토리는 웹 서버가 사용하도록 구성된 도메인의 Apache 문서 루트 설정과 일치해야 합니다.
+>
+>Apache 문서 루트의 하위 폴더를 활성화하는 각 팜당 중첩된 docroot 폴더가 있으면 매우 안 좋습니다.
 
 ### 통계 파일 레벨
 
@@ -275,13 +276,11 @@ Apache 문서 루트의 하위 폴더를 활성화하는 각 팜당 중첩된 do
    - `/var/www/html/content/damn/brand1/en/.stat`
    - `/var/www/html/content/damn/brand1/en/us/.stat`
 
-
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>참고:</b>
-
-타임스탬프 핸드쉐이크가 발생할 때 가장 가까운 곳을 찾습니다 `.stat` 파일.
-
-다음 권한 보유 `.stat` 파일 레벨 0 및 stat 파일만 `/var/www/html/.stat` 은 아래에 있는 콘텐츠를 의미합니다. `/var/www/html/content/dam/brand1/en/us/` 가장 가까운 곳을 찾고 있습니다 `.stat` 파일을 만들고 5개 폴더를 탐색하여 `.stat` 레벨 0에 있고 날짜를 비교할 수 있는 파일입니다.  높은 수준에서 플러시하면 캐시된 모든 항목이 본질적으로 무효화됩니다.
-</div>
+>[!NOTE]
+>
+>타임스탬프 핸드쉐이크가 발생할 때 가장 가까운 곳을 찾습니다 `.stat` 파일.
+>
+>다음 작업 수행 `.stat` 파일 레벨 0 및 stat 파일만 `/var/www/html/.stat` 은 아래에 있는 콘텐츠를 의미합니다. `/var/www/html/content/dam/brand1/en/us/` 가장 가까운 곳을 찾고 있습니다 `.stat` 파일을 만들고 5개 폴더를 탐색하여 `.stat` 레벨 0에 있고 날짜를 비교할 수 있는 파일입니다. 높은 수준에서 플러시하면 캐시된 모든 항목이 본질적으로 무효화됩니다.
 
 ### 무효화가 허용됨
 

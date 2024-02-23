@@ -10,9 +10,9 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 299b32c3-7922-4eee-aa3a-56039a654f70
 duration: 307
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 19beb662b63476f4745291338d944502971638a3
 workflow-type: tm+mt
-source-wordcount: '1090'
+source-wordcount: '1089'
 ht-degree: 1%
 
 ---
@@ -147,10 +147,9 @@ RUNMODE='sites'
 
 이는 변경할 수 있는 사항은 아니지만 구성 파일에서 활용하는 것이 좋습니다
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>참고:</b>
-
-서비스가 시작될 때만 이 파일이 포함되기 때문입니다.  변경 사항을 적용하려면 서비스를 다시 시작해야 합니다.  다시 로드하는 것만으로는 충분하지 않지만 대신 다시 시작해야 합니다.
-</div>
+>[!NOTE]
+>
+>서비스가 시작될 때만 이 파일이 포함되기 때문입니다.  변경 사항을 적용하려면 서비스를 다시 시작해야 합니다.  다시 로드하는 것만으로는 충분하지 않지만 대신 다시 시작해야 합니다.
 
 ### 변수 파일 (`.vars`)
 
