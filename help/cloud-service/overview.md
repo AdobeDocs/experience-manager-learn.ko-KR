@@ -6,10 +6,10 @@ jira: KT-3289
 last-substantial-update: 2023-09-26T00:00:00Z
 exl-id: 650ba2d9-6083-4772-84c5-1cdb97b5f0e9
 duration: 490
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 6825b0a4c9770f77e5078c81154080e94d3fd5f4
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 4%
+source-wordcount: '156'
+ht-degree: 5%
 
 ---
 
@@ -20,27 +20,6 @@ ht-degree: 4%
 이제 Adobe Experience Manager(AEM)를 as a Cloud Service으로 사용할 수 있습니다. AEM as a Cloud Service은 모든 사용 사례 및 기능을 보존하고 확장하면서 과거의 투자와 혁신을 바탕으로 구축된 차세대 Experience Manager 제품 라인을 소개합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/31085?quality=12&learn=on)
-
-<div id="whats-new-section">
-
-## 새로운 기능
-
-* **[WAF 규칙을 포함한 트래픽 필터 규칙으로 웹 사이트 보호(튜토리얼)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html)**
-  *WAF 규칙을 포함한 트래픽 필터 규칙을 사용하여 웹 사이트를 보호하는 방법을 알아봅니다*
-
-* **[토큰 기반 인증(튜토리얼)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)**
-  *AEM 토큰 기반 인증을 사용하여 HTTP를 통해 as a Cloud Service으로 상호 작용하는 방법에 대해 알아봅니다*
-
-* **[헤드리스 GraphQL(튜토리얼)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)**
-  *AEM GraphQL API를 사용하여 외부 애플리케이션에서 경험을 제공하는 방법을 알아봅니다.*
-
-* **[Asset compute 메타데이터 작업자(튜토리얼)](./asset-compute/advanced/metadata.md)**
-  *asset compute 작업자에서 에셋 메타데이터를 다시 AEM에 작성하는 방법에 대해 알아봅니다*
-
-* **[Asset compute 마이크로서비스 확장성(튜토리얼)](./asset-compute/overview.md)**
-  *사용자 지정 에셋 렌디션을 생성하기 위해 Asset compute 작업자를 개발하는 방법에 대해 알아봅니다*
-
-</div>
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>

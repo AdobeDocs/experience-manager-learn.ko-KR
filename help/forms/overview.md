@@ -6,9 +6,9 @@ role: Developer
 sub-product: Experience Manager Forms
 exl-id: c1972937-56c5-47af-9232-f31bdf69dfbe
 duration: 88
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 6825b0a4c9770f77e5078c81154080e94d3fd5f4
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '203'
 ht-degree: 0%
 
 ---
@@ -16,21 +16,6 @@ ht-degree: 0%
 # AEM Forms 자습서 및 비디오 {#overview}
 
 Adobe Experience Manager(AEM)는 백엔드 프로세스, 비즈니스 규칙 및 데이터와 통합하면서도 복잡한 디지털 양식을 쉽게 생성, 관리, 게시 및 업데이트할 수 있는 솔루션을 제공합니다. 이 사용 안내서에는 AEM Forms의 다양한 기능과 성능에 대한 비디오 및 자습서가 포함되어 있습니다
-
-<div id="whats-new-section">
-
-## 새로운 기능
-
-* **[양식 데이터 모델 서비스 호출 단계에서 오류 메시지 처리](./adaptive-forms/handling-error-messages-in-invoke-fdm-step.md)**
-  *워크플로우 모델의 변수는 해당 데이터 유형을 기반으로 값을 저장하는 방법입니다*
-
-* **[대화형 통신 문서의 다중 시리즈 차트(비디오)](./interactive-communications/multiseriescharts.md)**
-  *동일한 차트에 둘 이상의 시리즈를 표시합니다. 여러 계열 차트는 일반적으로 선, 막대, 열 차트 유형과 관련하여 사용됩니다.*
-
-* **[재사용 가능한 워크플로우 모델 만들기](./adaptive-forms/re-usable-aem-forms-workflow-models-article.md)**
-  *특정 양식에 연결되지 않은 워크플로 모델 만들기*
-
-</div>
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>
@@ -88,8 +73,6 @@ Adobe Experience Manager(AEM)는 백엔드 프로세스, 비즈니스 규칙 및
 </table>
 
 </div>
-
-
 
 
 ## 추가 리소스
