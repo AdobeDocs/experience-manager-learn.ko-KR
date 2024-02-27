@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: f2dceed935f563e83092f8e14133746f4126a212
+source-git-commit: bb902089a709ab00853f4856d9bf42c18a5097e7
 workflow-type: tm+mt
-source-wordcount: '1132'
+source-wordcount: '1134'
 ht-degree: 17%
 
 ---
@@ -80,6 +80,7 @@ ht-degree: 17%
                + [RTE 도구 모음 단추](./developing/extensibility/ui/content-fragments/examples/editor-rte-toolbar.md)
                + [RTE 위젯](./developing/extensibility/ui/content-fragments/examples/editor-rte-widget.md)
                + [RTE 배지](./developing/extensibility/ui/content-fragments/examples/editor-rte-badges.md)
+               + [사용자 정의 필드](./developing/extensibility/ui/content-fragments/examples/editor-custom-field.md)
    + 개발 기본 사항{#basics}
       + [AEM SDK](./developing/basics/aem-sdk.md)
       + [로컬 개발 환경](./developing/basics/local-development-environment.md)
