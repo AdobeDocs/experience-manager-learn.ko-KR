@@ -4,9 +4,9 @@ description: 시즌 3에서는 복잡한 프로젝트를 진행한 경험이 있
 sub-product: Experience Manager Sites, Experience Manager Cloud Manager, Experience Manager Assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
-source-git-commit: 8a88caeb8d894eb281321fc0b28fd41621c5c8db
+source-git-commit: d7608c552fad52492d36fb64587a5939c0cde7a2
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '223'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,19 @@ AEM Engineering의 시즌 3의 클라우드 5 시리즈에 오신 것을 환영�
                 RUM(Explore Real User Monitoring)은 Edge Delivery Services과 함께 작동합니다.
             </p>
         </td>   
-         <td>           
-         </td> 
+ <td>
+            <a href="./season-3/cloud5-edge-workers.md">
+                <img alt="에지 작업자" src="https://video.tv.adobe.com/v/3427589?format=jpeg"/>
+            </a>
+            <div>
+                <a href="./season-3/cloud5-edge-workers.md">
+                <strong>에지 작업자</strong></a>        
+                <br/><em>james Talbot &amp; Amol Anand, AEM 엔지니어링</em>
+            </div>
+            <p>
+                <br/>
+                Edge Delivery Services을 사용하는 에지 작업자의 중요성을 살펴봅니다.
+            </p>
+        </td>   
   </tr>  
 </table>
