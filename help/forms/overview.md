@@ -6,7 +6,7 @@ role: Developer
 sub-product: Experience Manager Forms
 exl-id: c1972937-56c5-47af-9232-f31bdf69dfbe
 duration: 88
-source-git-commit: 6825b0a4c9770f77e5078c81154080e94d3fd5f4
+source-git-commit: acfd982ce471c8510cb59ed4d353f1d47dcfb5dc
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 0%
@@ -16,6 +16,7 @@ ht-degree: 0%
 # AEM Forms 자습서 및 비디오 {#overview}
 
 Adobe Experience Manager(AEM)는 백엔드 프로세스, 비즈니스 규칙 및 데이터와 통합하면서도 복잡한 디지털 양식을 쉽게 생성, 관리, 게시 및 업데이트할 수 있는 솔루션을 제공합니다. 이 사용 안내서에는 AEM Forms의 다양한 기능과 성능에 대한 비디오 및 자습서가 포함되어 있습니다
+
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>

@@ -8,9 +8,9 @@ breadcrumb-title: AEM Forms 튜토리얼
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: 236d288c8b88948c5004ab777169768065df16f2
+source-git-commit: acfd982ce471c8510cb59ed4d353f1d47dcfb5dc
 workflow-type: tm+mt
-source-wordcount: '2001'
+source-wordcount: '2009'
 ht-degree: 2%
 
 ---
@@ -276,6 +276,7 @@ ht-degree: 2%
    + [조각이 있는 pdf를 생성하는 ECMA 스크립트](document-services/using-fragments-in-output-service-watched-folder.md)
    + [하나의 데이터 파일에서 여러 PDF 생성](document-services/generate-multi-record-pdf.md)
    + [모바일 양식 제출 시 PDF 생성](document-services/generate-pdf-from-mobile-form-submission-article.md)
+   + [양식 제출에 기반한 핵심 구성 요소 PDF 생성](document-services/generate-pdf-from-core-component-form-submission.md)
    + [모바일 양식에서 대화형 PDF 생성](document-services/render-interactive-form-using-api.md)
    + [적응형 양식에서 대화형 DoR 생성](document-services/generate-interactive-dor.md)
    + [Reader 확장 자격 증명 구성](document-services/configuring-reader-extension-osgi.md)
