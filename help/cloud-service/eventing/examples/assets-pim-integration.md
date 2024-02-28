@@ -11,7 +11,7 @@ duration: 0
 last-substantial-update: 2024-02-13T00:00:00Z
 jira: KT-14901
 thumbnail: KT-14901.jpeg
-source-git-commit: 6ef17e61190f58942dcf9345b2ea660d972a8f7e
+source-git-commit: 6c01dc8a0e8fd3cc69b21c78da8678e872dcef0c
 workflow-type: tm+mt
 source-wordcount: '1116'
 ht-degree: 0%
@@ -26,6 +26,8 @@ ht-degree: 0%
 >이 자습서에서는 실험적인 AEM as a Cloud Service API를 사용합니다. 이러한 API에 액세스하려면 프리릴리스 소프트웨어 계약에 동의하고 Adobe 엔지니어링을 통해 이러한 API를 사용자 환경에서 수동으로 활성화해야 합니다. 액세스 권한을 요청하려면 Adobe 지원 담당자에게 문의하십시오.
 
 AEM Assets을 PIM(제품 정보 관리) 또는 PLM(제품 라인 관리) 시스템과 같은 서드파티 시스템과 통합하여 에셋 메타데이터를 업데이트하는 방법에 대해 알아봅니다 **기본 AEM IO 이벤트 사용**. AEM Assets 이벤트를 수신하면 비즈니스 요구 사항에 따라 AEM, PIM 또는 두 시스템 모두에서 에셋 메타데이터를 업데이트할 수 있습니다. 그러나 이 예에서는 AEM에서 자산 메타데이터를 업데이트하는 방법을 보여 줍니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3427592?quality=12&learn=on)
 
 자산 메타데이터 업데이트를 실행하려면 **AEM 외부의 코드**, [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/overview/what_is_runtime/)서버리스 플랫폼이 사용됩니다.
 
