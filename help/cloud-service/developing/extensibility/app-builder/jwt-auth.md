@@ -1,5 +1,5 @@
 ---
-title: App Builder 작업에서 액세스 토큰 생성
+title: App Builder 작업에서 JWT 액세스 토큰 생성
 description: App Builder 작업에 사용할 JWT 자격 증명을 사용하여 액세스 토큰을 생성하는 방법을 알아봅니다.
 feature: Developer Tools
 version: Cloud Service
@@ -10,18 +10,18 @@ jira: KT-11743
 last-substantial-update: 2023-01-17T00:00:00Z
 exl-id: 9a3fed96-c99b-43d1-9dba-a4311c65e5b9
 duration: 161
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: c77dd9c2872e7e43863d83837cedbff50a7d3c1a
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 0%
+source-wordcount: '456'
+ht-degree: 1%
 
 ---
 
-# App Builder 작업에서 액세스 토큰 생성
+# App Builder 작업에서 JWT 액세스 토큰 생성
 
 App Builder 작업은 App Builder 앱이 배포되는 Adobe Developer 콘솔 프로젝트와 연결된 Adobe API와 상호 작용해야 할 수 있습니다.
 
-이렇게 하려면 App Builder 작업이 원하는 Adobe Developer 콘솔 프로젝트와 연결된 자체 액세스 토큰을 생성해야 할 수 있습니다.
+이렇게 하려면 App Builder 작업이 원하는 Adobe Developer 콘솔 프로젝트와 연결된 자체 JWT 액세스 토큰을 생성해야 할 수 있습니다.
 
 >[!IMPORTANT]
 >
@@ -61,7 +61,7 @@ JWT_METASCOPES=https://ims-na1.adobelogin.com/s/ent_analytics_bulk_ingest_sdk,ht
 ...
 ```
 
-### 개인 키
+### 비공개 키
 
 다음 `JWT_PRIVATE_KEY` 에서는 지원되지 않는 기본적으로 여러 줄 값이므로 특수 형식이어야 합니다. `.env` 파일. 가장 쉬운 방법은 base64가 개인 키를 인코딩하는 것입니다. 개인 키를 인코딩하는 Base64(`-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----`)은 운영 체제에서 제공하는 기본 도구를 사용하여 수행할 수 있습니다.
 
