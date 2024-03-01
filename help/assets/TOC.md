@@ -7,9 +7,9 @@ sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: bd66ad8698e2017cb53b91cae8f1cea92903f05b
+source-git-commit: 7680564ef0058a362ebf47622e50f96eec2866d7
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '412'
 ht-degree: 18%
 
 ---
@@ -39,6 +39,7 @@ ht-degree: 18%
    + [연결 및 연결 해제](./authoring/relate-unrelate.md)
 
 + 공동 작업{#collaboration}
+   + [시청하기](./collaboration/watch.md)
    + [타임라인 및 받은 편지함](./collaboration/timeline-and-inbox.md)
    + [주석 및 주석](./collaboration/comments-and-annotations.md)
    + [체크인 및 체크아웃](./collaboration/check-in-and-check-out.md)
@@ -73,7 +74,7 @@ ht-degree: 18%
 
 + 공유 및 배포{#sharing}
    + [에셋 다운로드](./sharing/download.md)
-   + [자산 게시](./sharing/publish.md)
+   + [에셋 게시](./sharing/publish.md)
 
    + Brand Portal{#brand-portal}
       + [Brand Portal](./sharing/brand-portal.md)
