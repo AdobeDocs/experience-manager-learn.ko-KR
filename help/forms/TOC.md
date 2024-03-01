@@ -8,9 +8,9 @@ breadcrumb-title: AEM Forms 튜토리얼
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: acfd982ce471c8510cb59ed4d353f1d47dcfb5dc
+source-git-commit: b2062d9c67dc029c8d0e41f82f634f930e8249a6
 workflow-type: tm+mt
-source-wordcount: '2009'
+source-wordcount: '2032'
 ht-degree: 2%
 
 ---
@@ -285,6 +285,14 @@ ht-degree: 2%
    + [문서 인증](document-services/certifying-documents-aem-forms-tutorial.md)
    + [양식 첨부 파일 조합](document-services/assemble-form-attachments.md)
    + [유용한 유틸리티 서비스](document-services/useful-utility-services.md)
++ Forms 디자이너{#forms-designer}
+   + [첫 번째 양식 만들기](forms-designer/create-simple-form.md)
+   + [양식 스크립팅](forms-designer/first-script-designer.md)
+   + [XML 데이터 바인딩](forms-designer/xml-data-binding.md)
+   + [데이터베이스 바인딩](forms-designer/binding-to-mysql-db.md)
+   + [낙서 서명 사용](forms-designer/scribble-signature-form.md)
+   + [디지털 서명 사용](forms-designer/adding-dig-signature-field.md)
+   + [Reader 확장 양식](forms-designer/reader-extending-j2ee.md)
 + 인쇄 채널용 대화형 통신
 {#ic-print-channel-tutorial}
    + [1 - 소개](ic-print-channel-tutorial/introduction.md)
