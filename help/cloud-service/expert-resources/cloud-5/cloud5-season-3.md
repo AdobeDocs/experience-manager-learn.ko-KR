@@ -4,9 +4,9 @@ description: 시즌 3에서는 복잡한 프로젝트를 진행한 경험이 있
 sub-product: Experience Manager Sites, Experience Manager Cloud Manager, Experience Manager Assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
-source-git-commit: d7608c552fad52492d36fb64587a5939c0cde7a2
+source-git-commit: d8d15d8dd820797e829fe664d74867822782a4c1
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '267'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## 소개
 
-AEM Engineering의 시즌 3의 클라우드 5 시리즈에 오신 것을 환영합니다. 모든 제품의 구현 단계에서 가장 중요한 문제 중 하나는 충분한 코드 샘플 및/또는 이러한 샘플, 도구 또는 API에 대한 실시간 데모가 있다는 것입니다. 이 시리즈의 목표는 AEM Edge Delivery 서비스에 대한 유용한 정보를 5분 이내에 제공하는 것입니다.
+AEM Engineering의 시즌 3의 클라우드 5 시리즈에 오신 것을 환영합니다. 모든 제품의 구현 단계에서 가장 중요한 문제 중 하나는 충분한 코드 샘플 및/또는 이러한 샘플, 도구 또는 API에 대한 실시간 데모가 있다는 것입니다. 이 시리즈의 목표는 5분 이내에 AEM Edge Delivery Services에 대한 유용한 정보를 제공하는 것입니다.
 
 ## 제안 상자
 
@@ -56,7 +56,7 @@ AEM Engineering의 시즌 3의 클라우드 5 시리즈에 오신 것을 환영�
                 RUM(Explore Real User Monitoring)은 Edge Delivery Services과 함께 작동합니다.
             </p>
         </td>   
- <td>
+        <td>
             <a href="./season-3/cloud5-edge-workers.md">
                 <img alt="에지 작업자" src="https://video.tv.adobe.com/v/3427589?format=jpeg"/>
             </a>
@@ -70,5 +70,21 @@ AEM Engineering의 시즌 3의 클라우드 5 시리즈에 오신 것을 환영�
                 Edge Delivery Services을 사용하는 에지 작업자의 중요성을 살펴봅니다.
             </p>
         </td>   
-  </tr>  
+    </tr>
+    <tr>
+        <td>
+            <a href="./season-3/cloud5-publish-events.md">
+                <img alt="Edge Delivery Services의 이벤트 게시, 게시 취소" src="https://video.tv.adobe.com/v/3427681?format=jpeg"/>
+            </a>
+            <div>
+                <a href="./season-3/cloud5-publish-events.md">
+                <strong>Edge Delivery Services의 이벤트 게시, 게시 취소</strong></a>        
+                <br/><em>james Talbot &amp; Amol Anand, AEM 엔지니어링</em>
+            </div>
+            <p>
+                <br/>
+                Edge Delivery Services에서 게시 및 게시 취소 시 트리거되는 이벤트와 이러한 이벤트를 사용하는 사용 사례 및 예를 살펴봅니다.
+            </p>
+        </td>   
+    </tr>  
 </table>
