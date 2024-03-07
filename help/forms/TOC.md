@@ -8,9 +8,9 @@ breadcrumb-title: AEM Forms 튜토리얼
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: b2062d9c67dc029c8d0e41f82f634f930e8249a6
+source-git-commit: ae2a2cbde1bf21314cc77863014cb0f013b6e0bb
 workflow-type: tm+mt
-source-wordcount: '2032'
+source-wordcount: '2034'
 ht-degree: 2%
 
 ---
@@ -220,12 +220,13 @@ ht-degree: 2%
    + [PDF 제출 처리](offline-mobile-form-submission/part-two.md)
    + [검토할 워크플로우 PDF](offline-mobile-form-submission/part-three.md)
    + [시스템에 배포](offline-mobile-form-submission/part-four.md)
-+ 제출된 데이터 쿼리{#querying-submitted-data}
-   + [소개](querying-submitted-data/introduction.md)
-   + [JSON 스키마를 기반으로 양식 만들기](querying-submitted-data/part1.md)
-   + [제출된 데이터 저장](querying-submitted-data/part2.md)
-   + [JSON 스키마 저장](querying-submitted-data/part3.md)
-   + [제출된 데이터 쿼리](querying-submitted-data/part4.md)
++ 양식 제출 쿼리{#query-form-submissions}
+   + [소개](query-form-submissions/introduction.md)
+   + [검색 가능한 필드 만들기](query-form-submissions/part1.md)
+   + [사용자 정의 제출 만들기](query-form-submissions/part2.md)
+   + [쿼리 인터페이스 작성](query-form-submissions/part3.md)
+   + [미리 채우기 서비스 쓰기](query-form-submissions/part4.md)
+   + [샘플 배포](query-form-submissions/part5.md)
 + Forms 포털에서 사용자 지정 에셋 유형 나열{#listing-custom-asset-types}
    + [Part1-사용자 정의 에셋 유형 등록](listing-custom-asset-types/part1.md)
    + [2부 - 사용자 지정 템플릿 만들기](listing-custom-asset-types/part2.md)
@@ -286,7 +287,9 @@ ht-degree: 2%
    + [양식 첨부 파일 조합](document-services/assemble-form-attachments.md)
    + [유용한 유틸리티 서비스](document-services/useful-utility-services.md)
 + Forms 디자이너{#forms-designer}
+   + [디자인 보기](forms-designer/design-view.md)
    + [첫 번째 양식 만들기](forms-designer/create-simple-form.md)
+   + [양식 템플릿 만들기](forms-designer/creating-form-template.md)
    + [양식 스크립팅](forms-designer/first-script-designer.md)
    + [XML 데이터 바인딩](forms-designer/xml-data-binding.md)
    + [데이터베이스 바인딩](forms-designer/binding-to-mysql-db.md)
