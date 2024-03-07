@@ -7,9 +7,9 @@ version: 6.5
 badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 duration: 156
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 4f196539ea73d25b480064f7fc349f0ea29d5e0a
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '216'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Acroforms는 Acrobat을 사용하여 만든 양식입니다. Acrobat을 사용�
 
 >[!NOTE]
 >
->Acrobat Sign을 사용하여 서명할 입력 가능한 양식을 전송하려면 해당 필드에 이름을 지정하십시오. 예를 들어 필드에 이름을 지정할 수 있습니다 **Sig_es_:signer1:서명**. Acrobat Sign이 이해하는 구문입니다.
+>Acrobat Sign을 사용하여 서명할 입력 가능한 양식을 전송하려면 해당 필드에 이름을 지정하십시오. 예를 들어 필드에 이름을 지정할 수 있습니다 **`Sig_es_:signer1:signature`**. Acrobat Sign이 이해하는 구문입니다.
 
 >[!NOTE]
 >

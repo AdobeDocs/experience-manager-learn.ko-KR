@@ -11,9 +11,9 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: d851d315-ed0e-46b8-bcd8-417e1e58c0c4
 duration: 335
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 4f196539ea73d25b480064f7fc349f0ea29d5e0a
 workflow-type: tm+mt
-source-wordcount: '1230'
+source-wordcount: '1218'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 ### asset compute 프로젝트에 Console.json 파일 누락{#missing-console-json}
 
-+ __오류:__ 오류: 유효성 검사(.../node_modules/@adobe/asset-compute-client/lib/integrationConfiguration.js에 필수 파일이 없습니다.:XX:YY) at async setupAssetCompute(.../node_modules/@adobe/asset-compute-devtool/src/assetComputeDevTool.js:XX:YY)
++ __오류:__ 오류: 유효성 검사 시 필수 파일 누락(`.../node_modules/@adobe/asset-compute-client/lib/integrationConfiguration.js:XX:YY`비동기 setupAssetCompute( )에서`.../node_modules/@adobe/asset-compute-devtool/src/assetComputeDevTool.js:XX:YY`)
 + __원인:__ 다음 `console.json` asset compute 프로젝트의 루트에 파일이 없습니다.
 + __해결 방법:__ 새 항목 다운로드 `console.json` Adobe I/O 프로젝트 구성
    1. console.adobe.io에서 Asset compute 프로젝트가 사용하도록 구성된 Adobe I/O 프로젝트를 엽니다

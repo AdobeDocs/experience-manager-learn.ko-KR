@@ -8,9 +8,9 @@ type: Tutorial
 version: 6.4,6.5
 last-substantial-update: 2019-06-09T00:00:00Z
 duration: 691
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 4f196539ea73d25b480064f7fc349f0ea29d5e0a
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '600'
 ht-degree: 0%
 
 ---
@@ -32,11 +32,11 @@ ht-degree: 0%
 
 Apache Sling 연결의 풀링된 데이터 소스는 적응형 양식 데이터를 저장하는 데 사용할 데이터베이스를 가리키도록 구성됩니다. 다음 스크린샷은 내 인스턴스에 대한 구성을 보여 줍니다. 다음 속성을 복사하여 붙여넣을 수 있습니다
 
-* 데이터 소스 이름:aemformstutorial - 내 코드에 사용되는 이름입니다.
+* `Datasource Name:aemformstutorial` - 내 코드에 사용되는 이름입니다.
 
-* JDBC 드라이버 클래스:com.mysql.jdbc.Driver
+* `JDBC Driver Class:com.mysql.jdbc.Driver`
 
-* JDBC 연결 URL:jdbc:mysql://localhost:3306/aemformstutorial
+* `JDBC Connection URL:jdbc:mysql://localhost:3306/aemformstutorial`
 
 ![connectionpool](assets/storingdata.PNG)
 

@@ -8,9 +8,9 @@ level: Experienced
 version: 6.4,6.5
 exl-id: f520e7a4-d485-4515-aebc-8371feb324eb
 duration: 67
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 4f196539ea73d25b480064f7fc349f0ea29d5e0a
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '243'
 ht-degree: 1%
 
 ---
@@ -36,9 +36,9 @@ AEM Forms 인스턴스에서 이 기능을 테스트하려면 다음 단계를 �
 
 | 속성 이름 | 값 |
 | ------------------------|---------------------------------------|
-| 데이터 소스 이름 | 저장 및 계속 |
-| JDBC 드라이버 클래스 | com.mysql.cj.jdbc.Driver |
-| JDBC 연결 URI | jdbc:mysql://localhost:3306/aemformstutorial |
+| 데이터 소스 이름 | `SaveAndContinue` |
+| JDBC 드라이버 클래스 | `com.mysql.cj.jdbc.Driver` |
+| JDBC 연결 URI | `jdbc:mysql://localhost:3306/aemformstutorial` |
 
 * 를 엽니다. [적응형 양식](http://localhost:4502/content/dam/formsanddocuments/demostoreandretrieveformdata/jcr:content?wcmmode=disabled)
 * 일부 세부 정보를 입력하고 &quot;저장 후 나중에 계속&quot; 버튼을 클릭합니다.

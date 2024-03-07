@@ -10,9 +10,9 @@ level: Intermediate
 jira: KT-10208
 exl-id: 9053ee29-436a-439a-b592-c3fef9852ea4
 duration: 42
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 4f196539ea73d25b480064f7fc349f0ea29d5e0a
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '143'
 ht-degree: 2%
 
 ---
@@ -30,9 +30,9 @@ AEM 서버에서 이 기능을 사용하려면 아래 지침을 따르십시오
 
 | 속성 이름 | 속성 값 |
 |---|---|
-| 데이터 소스 이름 | 저장 및 계속 |
-| JDBC 드라이버 클래스 | com.mysql.cj.jdbc.Driver |
-| JDBC 연결 URL | jdbc:mysql://localhost:3306/aemformstutorial?autoReconnect=true&amp;useSSL=false&amp;characterEncoding=utf8&amp;useUnicode=true |
+| 데이터 소스 이름 | `SaveAndContinue` |
+| JDBC 드라이버 클래스 | `com.mysql.cj.jdbc.Driver` |
+| JDBC 연결 URL | `jdbc:mysql://localhost:3306/aemformstutorial?autoReconnect=true&useSSL=false&characterEncoding=utf8&useUnicode=true` |
 
 * [icdraft 번들 배포](assets/icdrafts.icdrafts.core-1.0-SNAPSHOT.jar)
 * 다음을 확인하십시오. _CCRDocumentInstanceService를 사용하여 저장 활성화_ 아래 표시된 대로 OSGI 구성에서
