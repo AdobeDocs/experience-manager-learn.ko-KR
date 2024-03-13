@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 466a19a30dd5f81d50c28cb57034800494255d4b
+source-git-commit: 958dc50dfef808470139a2cab214c6cfeb98ff55
 workflow-type: tm+mt
-source-wordcount: '1151'
+source-wordcount: '1156'
 ht-degree: 17%
 
 ---
@@ -390,3 +390,4 @@ ht-degree: 17%
          + [RUM(실시간 사용자 모니터링)](./expert-resources/cloud-5/season-3/cloud5-rum.md)
          + [에지 작업자](./expert-resources/cloud-5/season-3/cloud5-edge-workers.md)
          + [Edge Delivery Services의 이벤트 게시, 게시 취소](./expert-resources/cloud-5/season-3/cloud5-publish-events.md)
+         + [쿼리 인덱스 및 Excel 공식](./expert-resources/cloud-5/season-3/cloud5-query-indexes.md)

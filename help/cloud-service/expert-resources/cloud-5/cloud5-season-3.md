@@ -4,13 +4,13 @@ description: 시즌 3에서는 복잡한 프로젝트를 진행한 경험이 있
 sub-product: Experience Manager Sites, Experience Manager Cloud Manager, Experience Manager Assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
-source-git-commit: d8d15d8dd820797e829fe664d74867822782a4c1
+exl-id: 3bd7b9f5-5775-4572-8b4a-4d09619e20b9
+source-git-commit: 958dc50dfef808470139a2cab214c6cfeb98ff55
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '298'
 ht-degree: 0%
 
 ---
-
 
 # 클라우드 시즌
 
@@ -84,6 +84,20 @@ AEM Engineering의 시즌 3의 클라우드 5 시리즈에 오신 것을 환영�
             <p>
                 <br/>
                 Edge Delivery Services에서 게시 및 게시 취소 시 트리거되는 이벤트와 이러한 이벤트를 사용하는 사용 사례 및 예를 살펴봅니다.
+            </p>
+        </td>  
+        <td>
+            <a href="./season-3/cloud5-query-indexes.md">
+                <img alt="쿼리 인덱스 및 Excel 공식" src="https://video.tv.adobe.com/v/3427787?format=jpeg"/>
+            </a>
+            <div>
+                <a href="./season-3/cloud5-query-indexes.md">
+                <strong>쿼리 인덱스 및 Excel 공식</strong></a>        
+                <br/><em>james Talbot 및 Varun Mitra, AEM 엔지니어링</em>
+            </div>
+            <p>
+                <br/>
+                쿼리 인덱스 및 데이터 세트 조작 및 정렬을 위한 Excel 공식을 작성하는 방법을 살펴봅니다.
             </p>
         </td>   
     </tr>  
