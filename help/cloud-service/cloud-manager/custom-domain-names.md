@@ -11,9 +11,9 @@ duration: null
 last-substantial-update: 2024-03-12T00:00:00Z
 jira: KT-15121
 thumbnail: KT-15121.jpeg
-source-git-commit: 466a19a30dd5f81d50c28cb57034800494255d4b
+source-git-commit: 8230991cebf1a9e994f0dfe96c5590d0c19ef887
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '701'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 이 자습서에서는 샘플 브랜딩 [AEM WKND](https://github.com/adobe/aem-guides-wknd) HTTPS 주소 지정 가능한 사용자 정의 도메인 이름을 추가하여 사이트 개선 `wknd.enablementadobe.com` 전송 계층 보안(TLS) 사용.
 
->[!VIDEO](https://video.tv.adobe.com/v/3427817?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3427903?quality=12&learn=on)
 
 높은 수준의 단계는 다음과 같습니다.
 
@@ -33,16 +33,20 @@ ht-degree: 0%
 
 ## 사전 요구 사항
 
+>[!VIDEO](https://video.tv.adobe.com/v/3427909?quality=12&learn=on)
+
 - [Openssl](https://www.openssl.org/) 및 [파기](https://www.isc.org/blogs/dns-checker/) 로컬 컴퓨터에 설치됩니다.
 - 서드파티 서비스에 대한 액세스:
    - CA(인증 기관) - 다음과 같이 사이트 도메인에 대해 서명된 인증서를 요청합니다 [숫자 인증서](https://www.digicert.com/)
    - DNS(Domain Name System) 호스팅 서비스 - Azure DNS 또는 AWS Route 53과 같은 사용자 정의 도메인에 대한 DNS 레코드를 추가합니다.
 - 액세스 대상: [Adobe Cloud Manager](https://my.cloudmanager.adobe.com/) 비즈니스 소유자 또는 배포 관리자 역할로 사용됩니다.
-- 샘플 [AEM WKND](https://github.com/adobe/aem-guides-wknd) 사이트가 의 AEMCS 환경에 배포됩니다. [제작 프로그램](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs.html) 유형.
+- 샘플 [AEM WKND](https://github.com/adobe/aem-guides-wknd) 사이트가 의 AEMCS 환경에 배포됩니다. [제작 프로그램](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs) 유형.
 
 서드파티 서비스에 액세스할 수 없는 경우 _보안 또는 호스팅 팀과 협력하여 단계를 완료합니다_.
 
 ## SSL 인증서 생성
+
+>[!VIDEO](https://video.tv.adobe.com/v/3427908?quality=12&learn=on)
 
 다음 두 가지 옵션이 있습니다.
 
@@ -78,14 +82,18 @@ Adobe Cloud Manager는 최종 엔티티 인증서 및 인증서 체인을 허용
 
 ## Cloud Manager에 SSL 인증서 추가
 
-Cloud Manager에서 SSL 인증서를 추가하려면 다음을 수행합니다. [SSL 인증서 추가](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate.html) 설명서를 참조하십시오.
+>[!VIDEO](https://video.tv.adobe.com/v/3427906?quality=12&learn=on)
+
+Cloud Manager에서 SSL 인증서를 추가하려면 다음을 수행합니다. [SSL 인증서 추가](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate) 설명서를 참조하십시오.
 
 ## 도메인 이름 확인
 
+>[!VIDEO](https://video.tv.adobe.com/v/3427905?quality=12&learn=on)
+
 도메인 이름을 확인하려면 다음 단계를 수행하십시오.
 
-- 다음을 수행하여 Cloud Manager에 도메인 이름 추가 [사용자 정의 도메인 이름 추가](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name.html) 설명서를 참조하십시오.
-- AEM 관련 추가 [TXT 레코드](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-text-record.html) DNS 호스팅 서비스에서
+- 다음을 수행하여 Cloud Manager에 도메인 이름 추가 [사용자 정의 도메인 이름 추가](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name) 설명서를 참조하십시오.
+- AEM 관련 추가 [TXT 레코드](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-text-record) DNS 호스팅 서비스에서
 - 다음을 사용하여 DNS 서버를 쿼리하여 위의 단계를 확인합니다. `dig` 명령입니다.
 
 ```bash
@@ -121,15 +129,17 @@ _aemverification.wknd.enablementadobe.com. 3600    IN TXT "adobe-aem-verificatio
 
 이 자습서에서는 Azure DNS를 예로 사용합니다. TXT 레코드를 추가하려면 DNS 호스팅 서비스의 설명서를 따라야 합니다.
 
-리뷰 [도메인 이름 상태 확인](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status.html) 문제가 있는 경우 설명서를 참조하십시오.
+리뷰 [도메인 이름 상태 확인](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status) 문제가 있는 경우 설명서를 참조하십시오.
 
 ## DNS 레코드 구성
 
+>[!VIDEO](https://video.tv.adobe.com/v/3427907?quality=12&learn=on)
+
 사용자 정의 도메인에 대한 DNS 레코드를 구성하려면 다음 단계를 따르십시오.
 
-- 루트 도메인(APEX) 또는 하위 도메인(CNAME)과 같은 도메인 유형을 기반으로 DNS 레코드 유형(CNAME 또는 APEX)을 결정하고 다음을 따릅니다. [DNS 설정 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/configure-dns-settings.html) 설명서를 참조하십시오.
+- 루트 도메인(APEX) 또는 하위 도메인(CNAME)과 같은 도메인 유형을 기반으로 DNS 레코드 유형(CNAME 또는 APEX)을 결정하고 다음을 따릅니다. [DNS 설정 구성](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/configure-dns-settings) 설명서를 참조하십시오.
 - DNS 호스팅 서비스에 DNS 레코드를 추가합니다.
-- 다음을 수행하여 DNS 레코드 유효성 검사 트리거 [DNS 레코드 상태 확인](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status.html) 설명서를 참조하십시오.
+- 다음을 수행하여 DNS 레코드 유효성 검사 트리거 [DNS 레코드 상태 확인](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status) 설명서를 참조하십시오.
 
 이 튜토리얼에서 **하위 도메인** `wknd.enablementadobe.com` 는 을 가리키고 있는 CNAME 레코드 유형인 를 사용합니다. `cdn.adobeaemcloud.com` 가 추가됩니다.
 
@@ -137,6 +147,14 @@ _aemverification.wknd.enablementadobe.com. 3600    IN TXT "adobe-aem-verificatio
 
 ## 사이트 확인
 
+>[!VIDEO](https://video.tv.adobe.com/v/3427904?quality=12&learn=on)
+
 사용자 지정 도메인 이름을 사용하여 사이트에 액세스할 수 있는지 확인하려면 웹 브라우저를 열고 사용자 지정 도메인 URL로 이동합니다. 사이트에 액세스할 수 있고 브라우저에 자물쇠 아이콘과의 보안 연결이 표시되어 있는지 확인하십시오.
+
+## 비디오 전체
+
+개요, 사전 요구 사항 및 사용자 정의 도메인 이름을 AEM as a Cloud Service 호스팅 사이트에 추가하는 위의 단계를 보여 주는 종단간 비디오를 볼 수도 있습니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3427817?quality=12&learn=on)
 
 
