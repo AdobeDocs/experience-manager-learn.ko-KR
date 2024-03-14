@@ -5,9 +5,9 @@ sub-product: Experience Manager Sites, Experience Manager Cloud Manager, Experie
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 3bd7b9f5-5775-4572-8b4a-4d09619e20b9
-source-git-commit: 958dc50dfef808470139a2cab214c6cfeb98ff55
+source-git-commit: 2be59ef6c6e42854a614722ced9b40988d9d4881
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '306'
 ht-degree: 0%
 
 ---
@@ -88,16 +88,16 @@ AEM Engineering의 시즌 3의 클라우드 5 시리즈에 오신 것을 환영�
         </td>  
         <td>
             <a href="./season-3/cloud5-query-indexes.md">
-                <img alt="쿼리 인덱스 및 Excel 공식" src="https://video.tv.adobe.com/v/3427787?format=jpeg"/>
+                <img alt="Edge Delivery Services의 쿼리 인덱스 및 Excel 공식" src="https://video.tv.adobe.com/v/3427787?format=jpeg"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-query-indexes.md">
-                <strong>쿼리 인덱스 및 Excel 공식</strong></a>        
+                <strong>쿼리 인덱스 및 Excel 공식 </strong></a>        
                 <br/><em>james Talbot 및 Varun Mitra, AEM 엔지니어링</em>
             </div>
             <p>
                 <br/>
-                쿼리 인덱스 및 데이터 세트 조작 및 정렬을 위한 Excel 공식을 작성하는 방법을 살펴봅니다.
+                Edge Delivery Services 색인과 쿼리에서 데이터 세트를 조작하고 정렬하기 위한 Excel 공식을 작성하는 방법을 살펴봅니다.
             </p>
         </td>   
     </tr>  
