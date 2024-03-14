@@ -9,7 +9,8 @@ version: Cloud Service
 topic: Integrations
 jira: KT-14795
 duration: 60
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+exl-id: 9abe9f9d-8fb3-4e01-a830-1dad1c27274d
+source-git-commit: 3dc1aea74e2a7cf30da9f6fb96ecc5c7edcf6e34
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 0%
@@ -20,11 +21,11 @@ ht-degree: 0%
 
 이전 버전의 AEM Form(6.5)에서는 요청 속성을 사용하여 양식 데이터 모델 지원 적응형 양식을 미리 채우도록 사용자 지정 코드를 작성해야 했습니다. AEM Forms as cloud service에서는 더 이상 사용자 지정 코드를 작성할 필요가 없습니다.
 
-이 문서에서는 양식 데이터 모델 미리 채우기 서비스를 사용하여 sharepoint 목록에서 가져온 데이터로 적응형 양식을 미리 채우기/미리 채우는 데 필요한 단계에 대해 설명합니다.
+이 문서에서는 양식 데이터 모델 미리 채우기 서비스를 사용하여 SharePoint 목록에서 가져온 데이터로 적응형 양식을 미리 채우기/미리 채우는 데 필요한 단계에 대해 설명합니다.
 
-이 문서에서는 다음을 보유한 것으로 가정합니다. [데이터를 sharepoint 목록에 제출하도록 적응형 양식을 구성했습니다.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html?lang=en#connect-af-sharepoint-list)
+이 문서에서는 다음을 보유한 것으로 가정합니다. [SharePoint 목록에 데이터를 제출하도록 적응형 양식을 구성했습니다.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html?lang=en#connect-af-sharepoint-list)
 
-다음은 sharepoint 목록의 데이터입니다
+다음은 SharePoint 목록의 데이터입니다
 ![sharepoint 목록](assets/list-data.png)
 
 적응형 양식에 특정 guid와 연결된 데이터를 미리 채우려면 다음 단계를 수행해야 합니다
@@ -52,7 +53,3 @@ ht-degree: 0%
 ```html
 http://localhost:4502/content/dam/formsanddocuments/contactusform/jcr:content?wcmmode=disabled&submissionid=57e12249-751a-4a38-a81f-0a4422b24412
 ```
-
-
-
-

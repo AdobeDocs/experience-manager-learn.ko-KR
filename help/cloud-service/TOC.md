@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 958dc50dfef808470139a2cab214c6cfeb98ff55
+source-git-commit: 3dc1aea74e2a7cf30da9f6fb96ecc5c7edcf6e34
 workflow-type: tm+mt
-source-wordcount: '1156'
+source-wordcount: '1163'
 ht-degree: 17%
 
 ---
@@ -325,6 +325,7 @@ ht-degree: 17%
       + [하나의 드라이브에 양식 데이터 저장](./forms/forms-cs-one-drive/store-form-submission-one-drive.md)
       + [Sharepoint에 양식 데이터 저장](./forms/forms-cs-sharepoint/store-form-submission-in-sharepoint.md)
       + [SharePoint 목록의 데이터로 양식 미리 채우기](./forms/forms-cs-sharepoint/prefill-data-from-sharepoint-list.md)
+      + [워크플로우를 사용하여 SharePoint 목록에 데이터 삽입](./forms/forms-cs-sharepoint/submit-data-sharepoint-list-workflow.md)
 + Asset compute 확장성{#asset-compute}
    + [개요](./asset-compute/overview.md)
    + 설정{#set-up}
