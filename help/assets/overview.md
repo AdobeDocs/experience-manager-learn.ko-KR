@@ -5,10 +5,10 @@ sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 doc-type: Catalog
 exl-id: 1d0b0183-25ee-4cb4-82a5-3506e7c1c908
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+source-git-commit: 4867b29295a342020e1c96fe495b14dbace5423c
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 20%
+source-wordcount: '175'
+ht-degree: 18%
 
 ---
 
@@ -26,9 +26,9 @@ Adobe Experience Manager(AEM) Assets는 사용자가 웹 기반 저장소에서 
 
 ## AEM Assets 둘러보기
 
-AEM Assets의 의미와 이를 사용하여 조직의 비즈니스 목표를 달성하는 방법을 알아봅니다.
+AEM Assets이 무엇인지, 그리고 이를 사용하여 조직의 비즈니스 목표를 달성하는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/336196?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3427944?learn=on)
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>
