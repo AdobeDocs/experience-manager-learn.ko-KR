@@ -6,25 +6,27 @@ feature: Edge Delivery Services
 topic: Development
 role: Developer
 level: Beginner
-jira: KT-14643
+jira: KT-14643, KT-15202
 doc-type: Catalog
-duration: 30
-last-substantial-update: 2023-05-12T00:00:00Z
+duration: 660
+last-substantial-update: 2024-03-20T00:00:00Z
 exl-id: 4f08bc07-0c9c-42fc-af42-3d51af9f37c4
-source-git-commit: f5f80a898420445335ed34f20aac6579199cc817
+source-git-commit: 9f8b20842cf69439f2d46deecf61154b20881ee0
 workflow-type: tm+mt
-source-wordcount: '329'
-ht-degree: 9%
+source-wordcount: '331'
+ht-degree: 17%
 
 ---
 
 # Edge Delivery Services 비디오
 
-Edge Delivery를 통해 웹 사이트를 빠르게 만드는 방법에 대해 알아보기
+Edge Delivery Services을 사용하여 웹 사이트를 빠르게 만드는 방법에 대해 알아봅니다.
 
-리뷰 [설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html) Edge Delivery 및 기능에 대한 전체 세부 정보.
+>[!VIDEO](https://video.tv.adobe.com/v/3427989/?learn=on)
 
-## Edge Delivery Services 시작
+리뷰 [설명서](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/overview) Edge Delivery Services 및 기능에 대한 전체 세부 사항입니다.
+
+## Edge Delivery Services 시작하기
 
 <div class="columns is-multiline">
     <!-- Prerequisites -->
