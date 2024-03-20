@@ -5,7 +5,7 @@ sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 doc-type: Catalog
 exl-id: 1d0b0183-25ee-4cb4-82a5-3506e7c1c908
-source-git-commit: 4867b29295a342020e1c96fe495b14dbace5423c
+source-git-commit: b879d8e3493599aeecad27f27b0b907c883a0635
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 18%
@@ -22,7 +22,7 @@ Adobe Experience Manager(AEM) Assets는 사용자가 웹 기반 저장소에서 
 >id="aemcloud_assets_overview"
 >title="AEM Assets"
 >abstract="필요한 자산을 빠르게 찾고 편집하는 방법에 대해 알아봅니다."
->additional-url="https://video.tv.adobe.com/v/336196" text="AEM Assets 둘러보기"
+>additional-url="https://video.tv.adobe.com/v/3427944" text="AEM Assets 둘러보기"
 
 ## AEM Assets 둘러보기
 
