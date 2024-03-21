@@ -1,6 +1,6 @@
 ---
 title: Edge Delivery Services 비디오
-description: Edge Delivery를 통해 웹 사이트를 빠르게 만드는 방법에 대해 알아봅니다.
+description: Edge Delivery Services을 사용하여 웹 사이트를 빠르게 만드는 방법에 대해 알아봅니다.
 version: Cloud Service
 feature: Edge Delivery Services
 topic: Development
@@ -11,9 +11,9 @@ doc-type: Catalog
 duration: 660
 last-substantial-update: 2024-03-20T00:00:00Z
 exl-id: 4f08bc07-0c9c-42fc-af42-3d51af9f37c4
-source-git-commit: 9f8b20842cf69439f2d46deecf61154b20881ee0
+source-git-commit: df15dc0426918a0e2263efe6fb0de953f49385df
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '332'
 ht-degree: 17%
 
 ---
