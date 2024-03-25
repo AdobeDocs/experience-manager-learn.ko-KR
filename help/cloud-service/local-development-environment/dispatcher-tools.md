@@ -105,7 +105,7 @@ $ ./aem-sdk-dispatcher-tools-x.x.x-unix.sh
 ## Dispatcher 구성 파일 이해
 
 >[!TIP]
-Experience Manager 프로젝트를에서 만들었습니다. [AEM Project Maven Archetype](https://github.com/adobe/aem-project-archetype) 는 이 Dispatcher 구성 파일 세트를 미리 채우므로 Dispatcher 도구 src 폴더에서 복사할 필요가 없습니다.
+> Experience Manager 프로젝트를에서 만들었습니다. [AEM Project Maven Archetype](https://github.com/adobe/aem-project-archetype) 는 이 Dispatcher 구성 파일 세트를 미리 채우므로 Dispatcher 도구 src 폴더에서 복사할 필요가 없습니다.
 
 Dispatcher 도구는 로컬 개발을 포함하여 모든 환경에 대한 동작을 정의하는 Apache HTTP 웹 서버 및 Dispatcher 구성 파일 세트를 제공합니다.
 
@@ -353,7 +353,7 @@ Phase 3 finished
 
 다음 `host.docker.internal` 는 Docker에 제공된 호스트 이름이며, 호스트에 대해 확인됩니다. Per docs.docker.com ([macOS](https://docs.docker.com/desktop/networking/), [Windows](https://docs.docker.com/desktop/networking/)):
 
->Docker 18.03 이상에서는 특별 DNS 이름 host.docker.internal에 연결하는 것이 좋습니다. 이 이름은 호스트가 사용하는 내부 IP 주소로 확인됩니다
+> Docker 18.03 이상에서는 특별 DNS 이름 host.docker.internal에 연결하는 것이 좋습니다. 이 이름은 호스트가 사용하는 내부 IP 주소로 확인됩니다
 
 날짜 `bin/docker_run src host.docker.internal:4503 8080` 메시지에 결과 표시 __host.docker.internal을 사용할 수 있을 때까지 대기 중__, 다음:
 

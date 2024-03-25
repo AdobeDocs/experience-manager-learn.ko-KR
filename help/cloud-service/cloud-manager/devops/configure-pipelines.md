@@ -23,7 +23,7 @@ ht-degree: 74%
 >id="aemcloud_devops_configurepipeline"
 >title="파이프라인 구성"
 >abstract="Cloud Manager에서 다양한 유형의 파이프라인과 성공적인 프로젝트를 위해 파이프라인을 구성하는 방법을 살펴봅니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=ko#config-pipeline-video" text="Cloud Manager의 파이프라인 구성"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=ko-KR#config-pipeline-video" text="Cloud Manager의 파이프라인 구성"
 
 Cloud Manager에서 다양한 유형의 파이프라인과 성공적인 프로젝트를 위해 파이프라인을 구성하는 방법을 살펴봅니다.
 
