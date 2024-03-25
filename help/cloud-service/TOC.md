@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 7c80bb25b79a77c4a0bb2bbedf8a7c338177b857
+source-git-commit: 9c757ef00776c09a8892f477baad24c58401f4dc
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1163'
 ht-degree: 17%
 
 ---
@@ -107,7 +107,6 @@ ht-degree: 17%
       + [사용자 정의 네임스페이스](./developing/advanced/custom-namespaces.md)
       + [서비스 사용자](./developing/advanced/service-users.md)
       + [웹에 최적화된 이미지 API](./developing/advanced/web-optimized-image-delivery-java-apis.md)
-      + [실제 사용자 모니터링](./developing/advanced/real-user-monitoring.md)
    + 신속한 개발 환경{#rde}
       + [개요](./developing/rde/overview.md)
       + [설정 방법](./developing/rde/how-to-setup.md)
