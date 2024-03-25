@@ -6,10 +6,10 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: f5f80a898420445335ed34f20aac6579199cc817
+source-git-commit: 29f1cc8d891c57e9878c650fd8e02a32bfa73051
 workflow-type: tm+mt
-source-wordcount: '496'
-ht-degree: 18%
+source-wordcount: '500'
+ht-degree: 19%
 
 ---
 
@@ -56,6 +56,8 @@ ht-degree: 18%
    + [론치](page-authoring/launches.md)
    + 동료로부터 학습 {#expert-advice}
       + [사이트 계층 구조 팁](page-authoring/expert-advice/site-hierarchy.md)
++ 생성 AI {#generative-ai}
+   + [변형 생성](./generative-ai/generate-variations.md)
 + 콘텐츠 조각 {#content-fragments}
    + [콘텐츠 조각 콘솔](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html){target=_blank}
    + [콘텐츠 조각 작성](content-fragments/content-fragments-feature-video-use.md)
@@ -84,7 +86,7 @@ ht-degree: 18%
 + 개발 {#developing}
    + [Edge Delivery Services](developing/edge-delivery-services.md)
    + [AEM Project Archetype](developing/aem-project-archetype.md)
-   + [AEM Sites 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html){target=_blank}
+   + [AEM Sites 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR){target=_blank}
    + [AEM Headless 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html){target=_blank}
    + [AEM SPA 편집기 및 반응 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html){target=_blank}
    + [페이지 속성 확장](developing/page-properties-technical-video-develop.md)
