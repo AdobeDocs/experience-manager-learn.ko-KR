@@ -10,7 +10,7 @@ level: Intermediate
 doc-type: Technical Video
 exl-id: 9c139a36-e3c5-407e-af5d-b4fb8860f5a2
 duration: 248
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 2%
@@ -25,7 +25,7 @@ Adobe Experience Manager 6.4는 AEM과 Target 간의 개인화 워크플로를 �
 
 >[!NOTE]
 >
->at.js 클라이언트 라이브러리를 사용하는 것이 좋으며 가장 좋은 방법은 Launch by Adobe, Adobe DTM 또는 타사 태그 관리 솔루션과 같은 태그 관리 솔루션을 사용하여 사이트 페이지에 Target 라이브러리를 추가하는 것입니다
+>at.js 클라이언트 라이브러리를 사용하는 것이 좋으며 가장 좋은 방법은 Adobe Experience Platform의 태그와 같은 태그 관리 솔루션 또는 타사 태그 관리 솔루션을 사용하여 사이트 페이지에 target 라이브러리를 추가하는 것입니다
 
 * 경험 조각 폴더에 적용된 Target 클라우드 서비스 구성은 상위 폴더 바로 아래에 생성된 모든 경험 조각을 상속합니다. 하위 폴더는 상위 클라우드 서비스 구성을 상속하지 않습니다.
 * Target 클라이언트 코드는 Adobe Experience Cloud > Target 실행 > 설정 탭 > 구현 > at.js 설정 편집에서 얻을 수 있습니다.

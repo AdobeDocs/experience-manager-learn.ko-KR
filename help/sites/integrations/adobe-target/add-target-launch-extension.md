@@ -1,6 +1,6 @@
 ---
-title: Launch 속성에 Target 확장 프로그램 추가
-description: Adobe Target 확장을 Adobe Experience Platform Launch 속성에 추가하는 방법을 알아봅니다.
+title: 태그 속성에 Target 확장 추가
+description: Adobe Target 확장을 태그 속성에 추가하는 방법을 알아봅니다.
 version: Cloud Service
 jira: KT-6131
 thumbnail: 41247.jpg
@@ -13,18 +13,18 @@ badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title=
 doc-type: Tutorial
 exl-id: aa48ffef-1105-4d0d-b4b4-12ac5d2eea23
 duration: 297
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
-source-wordcount: '100'
+source-wordcount: '97'
 ht-degree: 3%
 
 ---
 
-# Launch 속성에 Target 확장 프로그램 추가 {#adobe-target-extension}
+# 태그 속성에 Target 확장 추가 {#adobe-target-extension}
 
-이 비디오와 함께 팔로우하려면 다음을 이미 수행해야 합니다. [AEM과 통합된 Experience Platform Launch](../experience-platform/data-collection/tags/overview.md).
+이 비디오와 함께 팔로우하려면 다음을 이미 수행해야 합니다. [AEM과 Adobe Experience Platform의 통합 태그](../experience-platform/data-collection/tags/overview.md).
 
-Experience Platform Launch을 사용하여 AEM 웹 사이트에 Adobe Target을 활성화하는 방법을 알아봅니다.
+태그를 사용하여 AEM 웹 사이트에 Adobe Target을 활성화하는 방법에 대해 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/41247?quality=12&learn=on)
 

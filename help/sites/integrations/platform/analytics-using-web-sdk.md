@@ -14,9 +14,9 @@ badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: 0cc3d3bc-e4ea-4ab2-8878-adbcf0c914f5
 duration: 2330
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
-source-wordcount: '1533'
+source-wordcount: '1529'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Platform Web SDK를 사용하여 Adobe Analytics을 통합할 때 필요한 사�
 + 액세스 대상: **스키마** 데이터 관리 아래
 + 액세스 대상: **데이터 세트** 데이터 관리 아래
 + 액세스 대상: **데이터스트림** 데이터 수집 아래
-+ 액세스 대상: **태그** (이전의 Launch)를 데이터 수집 아래에 둡니다.
++ 액세스 대상: **태그**  데이터 수집 아래
 
 필요한 권한이 없는 경우 시스템 관리자는 [Adobe Admin Console](https://adminconsole.adobe.com/) 필요한 권한을 부여할 수 있습니다.
 

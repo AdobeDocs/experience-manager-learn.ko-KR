@@ -1,6 +1,6 @@
 ---
 title: Target 호출 로드 및 실행
-description: Launch 규칙을 사용하여 매개 변수를 로드하고, 페이지 요청에 전달하며, 사이트 페이지에서 Target 호출을 실행하는 방법을 알아봅니다. 페이지 정보는 검색 및 매개 변수로 전달됩니다. Adobe 클라이언트 데이터 레이어를 사용하면 웹 페이지에서 방문자의 경험에 대한 데이터를 수집 및 저장한 다음 이 데이터에 쉽게 액세스할 수 있습니다.
+description: 태그 규칙을 사용하여 매개 변수를 로드하고, 페이지 요청에 전달하며, 사이트 페이지에서 Target 호출을 실행하는 방법을 알아봅니다.
 feature: Core Components, Adobe Client Data Layer
 version: Cloud Service
 jira: KT-6133
@@ -13,28 +13,28 @@ badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title=
 doc-type: Tutorial
 exl-id: ec048414-2351-4e3d-b5f1-ade035c07897
 duration: 610
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '550'
 ht-degree: 1%
 
 ---
 
 # Target 호출 로드 및 실행 {#load-fire-target}
 
-Launch 규칙을 사용하여 매개 변수를 로드하고, 페이지 요청에 전달하며, 사이트 페이지에서 Target 호출을 실행하는 방법을 알아봅니다. 웹 페이지 정보는 검색 및 매개 변수로 전달됩니다. Adobe 클라이언트 데이터 레이어를 사용하면 웹 페이지에서 방문자의 경험에 대한 데이터를 수집 및 저장한 다음 이 데이터에 쉽게 액세스할 수 있습니다.
+태그 규칙을 사용하여 매개 변수를 로드하고, 페이지 요청에 전달하며, 사이트 페이지에서 Target 호출을 실행하는 방법을 알아봅니다. 웹 페이지 정보는 검색 및 매개 변수로 전달됩니다. Adobe 클라이언트 데이터 레이어를 사용하면 웹 페이지에서 방문자의 경험에 대한 데이터를 수집 및 저장한 다음 이 데이터에 쉽게 액세스할 수 있습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/41243?quality=12&learn=on)
 
 ## 페이지 로드 규칙
 
-Adobe 클라이언트 데이터 레이어는 이벤트 기반 데이터 레이어입니다. AEM Page 데이터 레이어가 로드되면 이벤트를 트리거합니다 `cmp:show` . 비디오에서 `Launch Library Loaded` 사용자 지정 이벤트를 사용하여 규칙이 호출됩니다. 아래에서는 사용자 지정 이벤트 및 데이터 요소에 대한 비디오에 사용된 코드 조각을 찾을 수 있습니다.
+Adobe 클라이언트 데이터 레이어는 이벤트 기반 데이터 레이어입니다. AEM Page 데이터 레이어가 로드되면 이벤트를 트리거합니다 `cmp:show` . 비디오에서 `tags Library Loaded` 사용자 지정 이벤트를 사용하여 규칙이 호출됩니다. 아래에서는 사용자 지정 이벤트 및 데이터 요소에 대한 비디오에 사용된 코드 조각을 찾을 수 있습니다.
 
 ### 사용자 지정 페이지 표시 이벤트{#page-event}
 
 ![이벤트 구성 및 사용자 지정 코드가 표시된 페이지](assets/load-and-fire-target-call.png)
 
-Launch 속성에 새 을(를) 추가합니다. **이벤트** (으)로 **규칙**
+태그 속성에서 새 태그를 추가합니다 **이벤트** (으)로 **규칙**
 
 + __확장:__ 코어
 + __이벤트 유형:__ 사용자 지정 코드
@@ -53,7 +53,7 @@ var pageShownEventHandler = function(coreComponentEvent) {
         // Debug the AEM Component path the show event is associated with
         console.debug("cmp:show event: " + coreComponentEvent.eventInfo.path);
 
-        // Create the Launch Event object
+        // Create the tags Event object
         var launchEvent = {
             // Include the ID of the AEM Component that triggered the event
             id: coreComponentEvent.eventInfo.path,
@@ -61,14 +61,14 @@ var pageShownEventHandler = function(coreComponentEvent) {
             component: window.adobeDataLayer.getState(coreComponentEvent.eventInfo.path)
         };
 
-        //Trigger the Launch Rule, passing in the new `event` object
-        // the `event` obj can now be referenced by the reserved name `event` by other Launch data elements
+        // Trigger the tags Rule, passing in the new `event` object
+        // the `event` obj can now be referenced by the reserved name `event` by other tags data elements
         // i.e `event.component['someKey']`
         trigger(launchEvent);
    }
 }
 
-// With the AEM Core Component event handler, that proxies the event and relevant information to Adobe Launch, defined above...
+// With the AEM Core Component event handler, that proxies the event and relevant information to Data Collection, defined above...
 
 // Initialize the adobeDataLayer global object in a safe way
 window.adobeDataLayer = window.adobeDataLayer || [];
@@ -80,20 +80,20 @@ window.adobeDataLayer.push(function (dataLayer) {
 });
 ```
 
-사용자 지정 함수는 `pageShownEventHandler`및 는 AEM 핵심 구성 요소에서 제공하는 이벤트를 수신하고, 핵심 구성 요소와 관련된 정보를 파생하고, 이벤트 개체로 패키징하며, 페이로드에서 파생된 이벤트 정보로 Launch 이벤트를 트리거합니다.
+사용자 지정 함수는 `pageShownEventHandler`, 및 AEM 핵심 구성 요소에서 제공하는 이벤트를 수신하고, 핵심 구성 요소와 관련된 정보를 파생하고, 이벤트 개체로 패키징하며, 페이로드에서 파생된 이벤트 정보로 태그 이벤트를 트리거합니다.
 
-Launch 규칙은 Launch `trigger(...)` 함수 __전용__ 규칙의 이벤트 사용자 지정 코드 조각 정의 내에서 사용할 수 있습니다.
+태그 규칙은 의 태그를 사용하여 트리거됩니다. `trigger(...)` 함수 __전용__ 규칙의 이벤트 사용자 지정 코드 조각 정의 내에서 사용할 수 있습니다.
 
-다음 `trigger(...)` 함수는 이벤트 개체를 Launch 데이터 요소에 라는 Launch의 다른 예약된 이름으로 노출되는 매개 변수로 사용합니다. `event`. Launch의 데이터 요소는 이제 `event` 과 같은 구문을 사용하는 개체 `event.component['someKey']`.
+다음 `trigger(...)` 함수는 이벤트 개체를 매개 변수로 가져와 태그에 예약된 다른 이름으로 태그 데이터 요소에 노출합니다. `event`. 태그의 데이터 요소는 이제 의 이 이벤트 개체에서 데이터를 참조할 수 있습니다. `event` 과 같은 구문을 사용하는 개체 `event.component['someKey']`.
 
-If `trigger(...)` 는 이벤트의 사용자 지정 코드 이벤트 유형(예: 작업)의 컨텍스트 외부에 사용되며 JavaScript 오류입니다 `trigger is undefined` Launch 속성과 통합된 웹 사이트에서 throw됩니다.
+If `trigger(...)` 는 이벤트의 사용자 지정 코드 이벤트 유형(예: 작업)의 컨텍스트 외부에 사용되며 JavaScript 오류입니다 `trigger is undefined` 는 tags 속성과 통합된 웹 사이트에서 throw됩니다.
 
 
 ### 데이터 요소
 
 ![데이터 요소](assets/data-elements.png)
 
-Adobe 실행 데이터 요소 는 이벤트 객체의 데이터를 매핑합니다 [사용자 지정 페이지 표시 이벤트에서 트리거됨](#page-event) 코어 확장의 사용자 지정 코드 데이터 요소 유형을 통해 Adobe Target에서 사용할 수 있는 변수에 매핑합니다.
+태그 데이터 요소는 이벤트 객체의 데이터를 매핑합니다 [사용자 지정 페이지 표시 이벤트에서 트리거됨](#page-event) 코어 확장의 사용자 지정 코드 데이터 요소 유형을 통해 Adobe Target에서 사용할 수 있는 변수에 매핑합니다.
 
 #### 페이지 ID 데이터 요소
 

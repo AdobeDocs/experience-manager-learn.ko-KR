@@ -10,9 +10,9 @@ badgeVersions: label="AEM Sites 6.5" before-title="false"
 doc-type: Tutorial
 exl-id: 9b191211-2030-4b62-acad-c7eb45b807ca
 duration: 357
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '360'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-> Adobe Target이 있는 AEM 레거시 Cloud Service은 **전용** AEM에서 Target으로 컨텐츠를 게시하기 위해 직접 AEM 작성자와 Adobe Target 백엔드 연결을 설정하는 데 사용됩니다. Adobe Launch는 AEM에서 제공하는 공개 웹 사이트 경험에 Adobe Target을 노출하는 데 사용됩니다.
+> Adobe Target이 있는 AEM 레거시 Cloud Service은 **전용** AEM에서 Target으로 컨텐츠를 게시하기 위해 직접 AEM 작성자와 Adobe Target 백엔드 연결을 설정하는 데 사용됩니다. Adobe Experience Platform의 태그는 AEM에서 제공하는 공개 웹 사이트 경험에 Adobe Target을 노출하는 데 사용됩니다.
 
 AEM Experience Fragment 오퍼를 사용하여 개인화 활동을 지원하기 위해, 다음 장으로 이동하고 레거시 클라우드 서비스를 사용하여 AEM을 Adobe Target과 통합합니다. 이 통합은 AEM에서 Target으로 경험 조각을 HTML/JSON 오퍼로 푸시하고 Target 오퍼를 AEM과 동기화 상태로 유지하는 데 필요합니다. 이 통합은 구현을 위해 필요합니다. [개요 섹션에서 설명한 시나리오 1](./overview.md#personalization-using-aem-experience-fragment).
 
@@ -40,7 +40,7 @@ AEM Experience Fragment 오퍼를 사용하여 개인화 활동을 지원하기 
 
      >[!NOTE]
      >
-     > 고객은 의 Experience Platform Launch 및 Adobe I/O을 제공받아야 합니다. [Adobe 지원](https://helpx.adobe.com/kr/contact/enterprise-support.ec.html) 또는 시스템 관리자에게 문의하십시오
+     > 고객은 의 데이터 수집 및 Adobe I/O을 제공받아야 합니다. [Adobe 지원](https://helpx.adobe.com/kr/contact/enterprise-support.ec.html) 또는 시스템 관리자에게 문의하십시오
 
 ### AEM과 Adobe Target 통합
 

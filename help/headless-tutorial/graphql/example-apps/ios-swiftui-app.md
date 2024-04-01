@@ -13,7 +13,7 @@ last-substantial-update: 2023-05-10T00:00:00Z
 badgeVersions: label="AEM 헤드리스 as a Cloud Service" before-title="false"
 exl-id: 6c5373db-86ec-410b-8a3b-9d4f86e06812
 duration: 308
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
 source-wordcount: '917'
 ht-degree: 0%
@@ -52,7 +52,7 @@ iOS 애플리케이션은 __AEM 게시__ 그러나 iOS 애플리케이션의 구
    $ git clone git@github.com:adobe/aem-guides-wknd-graphql.git
    ```
 
-1. 시작 [Xcode](https://developer.apple.com/xcode/) 및 폴더 열기 `ios-app`
+1. 열기 [Xcode](https://developer.apple.com/xcode/) 및 폴더 열기 `ios-app`
 1. 파일 수정 `Config.xcconfig` 파일 및 업데이트 `AEM_SCHEME` 및 `AEM_HOST` 대상 AEM Publish 서비스와 일치해야 합니다.
 
    ```plain

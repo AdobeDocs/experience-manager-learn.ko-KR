@@ -12,7 +12,7 @@ badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title=
 doc-type: Tutorial
 exl-id: dd6c17ae-8e08-4db3-95f9-081cc7dbd86e
 duration: 323
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 다음 비디오는 AEM을 Adobe Target과 as a Cloud Service으로 연결하는 방법에 대해 소개합니다.
 
-이 통합을 통해 AEM 작성자 서비스는 Adobe Target과 직접 통신하고 AEM의 경험 조각을 오퍼로 Target에 푸시할 수 있습니다.  이 통합은 다음을 수행합니다 *아님* 통합을 위해 Adobe Target JavaScript(AT.js)를 AEM Sites 웹 페이지에 추가합니다. [Target 확장을 사용하여 Launch가 있는 AEM](../experience-platform/data-collection/tags/connect-aem-tag-property-using-ims.md).
+이 통합을 통해 AEM 작성자 서비스는 Adobe Target과 직접 통신하고 AEM의 경험 조각을 오퍼로 Target에 푸시할 수 있습니다.  이 통합은 다음을 수행합니다 *아님* 통합을 위해 Adobe Target JavaScript(AT.js)를 AEM Sites 웹 페이지에 추가합니다. [Target 확장을 사용하는 AEM 및 태그](../experience-platform/data-collection/tags/connect-aem-tag-property-using-ims.md).
 
 >[!VIDEO](https://video.tv.adobe.com/v/41244?quality=12&learn=on)
 

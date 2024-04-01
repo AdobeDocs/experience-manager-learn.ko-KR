@@ -14,9 +14,9 @@ badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service" before-title="false"
 exl-id: 47df99e6-6418-43c8-96fe-85e3c47034d6
 duration: 1360
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
-source-wordcount: '1235'
+source-wordcount: '1232'
 ht-degree: 1%
 
 ---
@@ -45,7 +45,7 @@ Experience Platform Web SDK를 통합할 때 필요한 사항은 다음과 같�
 + 액세스 대상: **스키마** 데이터 관리 아래
 + 액세스 대상: **데이터 세트** 데이터 관리 아래
 + 액세스 대상: **데이터스트림** 데이터 수집 아래
-+ 액세스 대상: **태그** (이전의 Launch)를 데이터 수집 아래에 둡니다.
++ 액세스 대상: **태그** 데이터 수집 아래
 
 필요한 권한이 없는 경우 시스템 관리자는 [Adobe Admin Console](https://adminconsole.adobe.com/) 필요한 권한을 부여할 수 있습니다.
 
@@ -75,7 +75,7 @@ XDM(경험 데이터 모델) 스키마를 사용하면 고객 경험 데이터�
 
 ## 태그 만들기 속성 - Experience Platform
 
-Experience Platform에서 태그(이전의 Launch) 속성을 만들어 WKND 웹 사이트에 Web SDK JavaScript 라이브러리를 추가하는 방법을 알아봅니다. 새로 정의된 태그 속성에는 다음 리소스가 있습니다.
+Experience Platform에서 태그 속성을 만들어 WKND 웹 사이트에 웹 SDK JavaScript 라이브러리를 추가하는 방법을 알아봅니다. 새로 정의된 태그 속성에는 다음 리소스가 있습니다.
 
 + 태그 확장 기능: [코어](https://exchange.adobe.com/apps/ec/100223/adobe-launch-core-extension) 및 [Adobe Experience Platform 웹 SDK](https://exchange.adobe.com/apps/ec/106387/aep-web-sdk)
 + 데이터 요소: WKND 사이트의 Adobe 클라이언트 데이터 레이어를 사용하여 페이지 이름, 사이트 섹션 및 호스트 이름을 추출하는 사용자 지정 코드 유형의 데이터 요소입니다. 또한 이전에 새로 생성된 WKND XDM 스키마 빌드를 준수하는 XDM 개체 유형 데이터 요소입니다 [XDM 스키마 만들기](#create-xdm-schema---experience-platform) 단계.
@@ -139,26 +139,26 @@ Experience Platform에서 태그(이전의 Launch) 속성을 만들어 WKND 웹 
   var pageShownEventHandler = function(evt) {
   // defensive coding to avoid a null pointer exception
   if(evt.hasOwnProperty("eventInfo") && evt.eventInfo.hasOwnProperty("path")) {
-      //trigger Launch Rule and pass event
+      // trigger tags Rule and pass event
       console.debug("cmp:show event: " + evt.eventInfo.path);
       var event = {
-          //include the path of the component that triggered the event
+          // include the path of the component that triggered the event
           path: evt.eventInfo.path,
-          //get the state of the component that triggered the event
+          // get the state of the component that triggered the event
           component: window.adobeDataLayer.getState(evt.eventInfo.path)
       };
   
-      //Trigger the Launch Rule, passing in the new 'event' object
-      // the 'event' obj can now be referenced by the reserved name 'event' by other Launch data elements
+      // Trigger the tags Rule, passing in the new 'event' object
+      // the 'event' obj can now be referenced by the reserved name 'event' by other tags data elements
       // i.e 'event.component['someKey']'
       trigger(event);
       }
   }
   
-  //set the namespace to avoid a potential race condition
+  // set the namespace to avoid a potential race condition
   window.adobeDataLayer = window.adobeDataLayer || [];
   
-  //push the event listener for cmp:show into the data layer
+  // push the event listener for cmp:show into the data layer
   window.adobeDataLayer.push(function (dl) {
       //add event listener for 'cmp:show' and callback to the 'pageShownEventHandler' function
       dl.addEventListener("cmp:show", pageShownEventHandler);
@@ -174,9 +174,9 @@ AEM 핵심 구성 요소와 Adobe 클라이언트 데이터 레이어 통합에 
 
 ## Tag 속성을 AEM에 연결
 
-AEM의 Adobe IMS 및 Adobe Launch 구성 을 통해 최근에 만든 태그 속성을 AEM에 연결하는 방법을 알아봅니다. AEM as a Cloud Service 환경이 설정되면 Adobe 시작을 비롯한 여러 Adobe IMS 기술 계정 구성이 자동으로 생성됩니다. 그러나 AEM 6.5 버전의 경우 수동으로 구성해야 합니다.
+AEM의 Adobe Experience Platform 구성에서 Adobe IMS 및 태그를 통해 최근에 만든 태그 속성을 AEM에 연결하는 방법을 알아봅니다. AEM as a Cloud Service 환경이 설정되면 태그를 비롯한 여러 Adobe IMS 기술 계정 구성이 자동으로 생성됩니다. 그러나 AEM 6.5 버전의 경우 수동으로 구성해야 합니다.
 
-WKND 사이트는 태그 속성을 연결한 후 Adobe Launch 클라우드 서비스 구성을 사용하여 태그 속성의 JavaScript 라이브러리를 웹 페이지에 로드할 수 있습니다.
+WKND 사이트는 태그 속성을 연결한 후 Adobe Experience Platform 클라우드 서비스 구성의 태그를 사용하여 웹 페이지에 태그 속성의 JavaScript 라이브러리를 로드할 수 있습니다.
 
 ### WKND에서 태그 속성 로드 확인
 

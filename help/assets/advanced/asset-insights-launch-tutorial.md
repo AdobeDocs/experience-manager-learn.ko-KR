@@ -1,6 +1,6 @@
 ---
-title: AEM Assets 및 Adobe Launch를 사용하여 자산 통찰력 설정
-description: 5부로 구성된 이 비디오 시리즈에서는 Launch by Adobe을 통해 배포된 Experience Manager에 대한 Asset Insights의 설정 및 구성을 살펴보도록 하겠습니다.
+title: AEM Assets 및 태그를 사용하여 자산 통찰력 설정
+description: 5부로 구성된 이 비디오 시리즈에서는 태그를 통해 배포된 Experience Manager에 대한 자산 통찰력 의 설정 및 구성을 살펴보도록 하겠습니다.
 feature: Asset Insights
 version: 6.4, 6.5
 topic: Integrations
@@ -12,16 +12,16 @@ badgeVersions: label="AEM Assets as a Cloud Service, AEM Assets 6.5" before-titl
 doc-type: Tutorial
 exl-id: 00125fe1-3bb9-4b1a-a83c-61c413403ae2
 duration: 2051
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
-source-wordcount: '811'
+source-wordcount: '739'
 ht-degree: 0%
 
 ---
 
-# AEM Assets 및 Adobe Experience Platform Launch을 사용하여 자산 통찰력 설정
+# AEM Assets 및 태그를 사용하여 자산 통찰력 설정
 
-5부로 구성된 이 비디오 시리즈에서는 Adobe Launch를 통해 배포된 Experience Manager에 대한 자산 통찰력 의 설정 및 구성을 살펴보도록 하겠습니다.
+5부로 구성된 이 비디오 시리즈에서는 태그를 통해 배포된 Experience Manager에 대한 자산 통찰력 의 설정 및 구성을 살펴보도록 하겠습니다.
 
 ## 1부: 자산 통찰력 개요 {#overview}
 
@@ -81,9 +81,9 @@ AEM Assets Insights 구성의 경우 다음 자격 증명이 필요합니다
 * 공유 암호(다음에서 가져올 수 있음) *Adobe Analytics > 관리자 > 회사 설정 > 웹 서비스*).
 * 보고서 세트 (자산 보고에 사용되는 올바른 보고서 세트를 선택해야 합니다.)
 
-## 4부: Adobe Experience Platform Launch을 사용하여 Adobe Analytics 확장 추가 {#part-using-launch-by-adobe-for-adding-adobe-analytics-extension}
+## 4부: Adobe Analytics 확장 추가에 태그 사용 {#part-using-launch-by-adobe-for-adding-adobe-analytics-extension}
 
-Adobe Analytics AEM 확장 추가, 페이지 로드 규칙 만들기 및 Launch와 Adobe IMS 기술 계정 통합.
+Adobe Analytics 확장 추가, 페이지 로드 규칙 만들기 및 Adobe IMS 기술 계정과 AEM 통합.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25946?quality=12&learn=on)
 
@@ -175,13 +175,13 @@ document.querySelectorAll('[data-aem-asset-id]').forEach(function(element) {
 ### 콘솔 디버그 문 {#console-debug-statements}
 
 ```javascript
-//Launch Build Info
+// Tags build info
 _satellite.buildInfo
 
 //Enables debug messages
 _satellite.setDebug(true);
 
-//Asset Insight JS Object
+//Asset Insight JavaScript Object
 assetAnalytics
 
 //List of trackable images
@@ -190,10 +190,8 @@ document.querySelectorAll(".cmp-image__image");
 
 비디오에서 Analytics를 디버깅하는 방법으로 두 개의 Google Chrome 브라우저 확장 기능이 참조됩니다. 다른 브라우저에도 유사한 확장을 사용할 수 있습니다.
 
-* [Launch Switch Chrome 확장 프로그램](https://chrome.google.com/webstore/detail/launch-and-dtm-switch/nlgdemkdapolikbjimjajpmonpbpmipk?hl=en)
-* [Adobe Experience Cloud 디버거](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
+* [Adobe Experience Platform Debugger](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
-다음 Chrome 확장을 사용하여 DTM을 디버그 모드로 전환할 수도 있습니다. [Launch 및 DTM 스위치](https://chrome.google.com/webstore/detail/launch-and-dtm-switch/nlgdemkdapolikbjimjajpmonpbpmipk?hl=en). 이렇게 하면 DTM 배포와 관련된 오류가 있는지 쉽게 확인할 수 있습니다. 또한 모든 브라우저를 통해 DTM을 디버그 모드로 수동으로 전환할 수 있습니다 *개발자 도구 -> JS 콘솔* 다음 코드 조각을 추가하여:
 
 ## 5부 : 분석 추적 테스트 및 인사이트 데이터 동기화{#analytics-tracking-asset-insights}
 

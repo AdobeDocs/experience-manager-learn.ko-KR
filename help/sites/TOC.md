@@ -6,9 +6,9 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: 29f1cc8d891c57e9878c650fd8e02a32bfa73051
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '498'
 ht-degree: 19%
 
 ---
@@ -137,12 +137,12 @@ ht-degree: 19%
       + [FPID 생성](integrations/platform/fpid.md)
       + [웹 SDK](integrations/platform/web-sdk.md)
       + [Platform Web SDK를 사용한 분석](integrations/platform/analytics-using-web-sdk.md)
-   + Experience Platform 데이터 수집 태그(Launch) {#experience-platform-data-collection-tags}
+   + Adobe Experience Platform의 태그 {#experience-platform-data-collection-tags}
       + [개요](integrations/experience-platform/data-collection/tags/overview.md)
       + [태그 속성 만들기](integrations/experience-platform/data-collection/tags/create-tag-property.md)
       + [IMS를 사용하여 AEM 및 Tag 속성 연결](integrations/experience-platform/data-collection/tags/connect-aem-tag-property-using-ims.md)
-      + [AEM Launch Cloud Service 만들기](integrations/experience-platform/data-collection/tags/create-aem-launch-cloud-service.md)
-      + [태그(Launch) 구현 디버깅](integrations/experience-platform/data-collection/tags/debug-tags-implementation.md)
+      + [AEM 태그 만들기 Cloud Service](integrations/experience-platform/data-collection/tags/create-aem-launch-cloud-service.md)
+      + [태그 구현 디버깅](integrations/experience-platform/data-collection/tags/debug-tags-implementation.md)
    + Adobe 클라이언트 데이터 레이어 {#adobe-client-data-layer}
       + [Adobe 클라이언트 데이터 레이어 사용](integrations/adobe-client-data-layer/data-layer-overview.md)
       + [Adobe 클라이언트 데이터 레이어 사용자 지정](integrations/adobe-client-data-layer/data-layer-customize.md)
@@ -152,7 +152,7 @@ ht-degree: 19%
       + [Analysis Workspace을 사용하여 데이터 분석](integrations/analytics/create-analytics-workspace.md)
    + Adobe Target {#target}
       + [개요](integrations/adobe-target/overview.md)
-      + [Launch 속성에 Target 확장 프로그램 추가](integrations/adobe-target/add-target-launch-extension.md)
+      + [태그 속성에 Target 확장 추가](integrations/adobe-target/add-target-launch-extension.md)
       + [Target 호출 로드 및 실행](integrations/adobe-target/load-and-fire-target.md)
       + [Adobe Target Cloud Service 계정 만들기](integrations/adobe-target/setup-aem-target-cloud-service.md)
       + [Adobe Target으로 경험 조각 내보내기](integrations/adobe-target/export-experience-fragment-target.md)

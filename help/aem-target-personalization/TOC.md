@@ -6,10 +6,10 @@ sub-product: Experience Manager Sites
 version: 6.5
 index: y
 jira: KT-2214
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
 source-wordcount: '64'
-ht-degree: 46%
+ht-degree: 35%
 
 ---
 
@@ -22,5 +22,5 @@ ht-degree: 46%
 + [전체 웹 페이지 경험의 개인화](./personalization-use-case-2.md)
 + 구현 {#aem-target-implementation}
    + [소개](./implementation.md)
-   + [Launch 및 Adobe I/O을 사용하는 AEM 및 Adobe Target](./using-launch-adobe-io.md)
+   + [태그 및 Adobe I/O을 사용하는 AEM 및 Adobe Target](./using-launch-adobe-io.md)
    + [이전 Cloud Service을 사용하는 AEM 및 Adobe Target](./using-aem-cloud-services.md)

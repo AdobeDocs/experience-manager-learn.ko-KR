@@ -10,7 +10,7 @@ badgeVersions: label="AEM Sites 6.5" before-title="false"
 doc-type: Tutorial
 exl-id: b632883f-65fd-4f89-bf39-ec2bce352d2d
 duration: 219
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
 source-wordcount: '846'
 ht-degree: 0%
@@ -46,7 +46,7 @@ AEM은 모든 콘텐츠와 에셋을 중앙 위치에 모아 개인화 전략을
 
 **이 시나리오를 구현하려면 다음을 수행해야 합니다.**
 
-* [Launch 및 Adobe I/O을 사용하여 AEM 및 Adobe Target 통합](./implementation.md#integrating-aem-target-options)
+* [태그 및 Adobe I/O을 사용하여 AEM 및 Adobe Target 통합](./implementation.md#integrating-aem-target-options)
 * [이전 Cloud Service을 사용하는 AEM 및 Adobe Target](./implementation.md#integrating-aem-target-options)
 
 ***위의 통합을 구현한 후 다음을 살펴보도록 하겠습니다. [시나리오 세부 정보](./personalization-use-case-1.md).***
@@ -67,7 +67,7 @@ VEC는 Adobe Target의 주요 기능 중 하나입니다. VEC를 통해 마케�
 
 **이 시나리오를 구현하려면 다음을 수행해야 합니다.**
 
-* [Launch 및 Adobe I/O을 사용하여 AEM 및 Adobe Target 통합](./implementation.md#integrating-aem-target-options)
+* [태그 및 Adobe I/O을 사용하여 AEM 및 Adobe Target 통합](./implementation.md#integrating-aem-target-options)
 
 ***위의 통합을 구현한 후 다음을 살펴보도록 하겠습니다. [시나리오 세부 정보.](./personalization-use-case-3.md)***
 
@@ -85,6 +85,6 @@ Adobe Experience Manager과 Adobe Target을 통합하면 사이트 사용자에�
 
 **이 시나리오를 구현하려면 다음을 수행해야 합니다.**
 
-* [Launch 및 Adobe I/O을 사용하여 AEM 및 Adobe Target 통합](./implementation.md#integrating-aem-target-options)
+* [태그 및 Adobe I/O을 사용하여 AEM 및 Adobe Target 통합](./implementation.md#integrating-aem-target-options)
 
 ***위의 통합을 구현한 후 다음을 살펴보도록 하겠습니다. [시나리오 세부 정보.](./personalization-use-case-2.md)***

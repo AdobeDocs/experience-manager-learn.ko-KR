@@ -12,7 +12,7 @@ badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title=
 doc-type: Tutorial
 exl-id: 2d201b48-c0fb-4bb4-a7d8-da9f4702e9ff
 duration: 124
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
 source-wordcount: '460'
 ht-degree: 0%
@@ -28,7 +28,7 @@ AEM에서 호스팅되는 사이트 페이지를 Adobe Target을 사용하여 �
 AEM 웹 사이트의 전체 페이지를 개인화하려면 다음 설정을 완료해야 합니다.
 
 1. [AEM 웹 사이트에 Adobe Target 추가](./add-target-launch-extension.md)
-1. [Launch에서 Adobe Target 호출 트리거](./load-and-fire-target.md)
+1. [태그에서 Adobe Target 호출 트리거](./load-and-fire-target.md)
 
 ## 시나리오 개요
 

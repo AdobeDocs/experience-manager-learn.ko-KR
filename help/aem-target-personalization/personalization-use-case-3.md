@@ -10,9 +10,9 @@ badgeVersions: label="AEM Sites 6.5" before-title="false"
 doc-type: Tutorial
 exl-id: 1550e6a7-04b5-4a40-9d7b-88074283402f
 duration: 165
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '581'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,7 @@ WKND 사이트 홈 페이지에는 카드 레이아웃의 형태로 도시 주�
 
 * **AEM**
    * [AEM 게시 인스턴스](./implementation.md#getting-aem) 4503에서 실행
-   * [Adobe Experience Platform Launch을 사용하여 Adobe Target과 통합된 AEM](./using-launch-adobe-io.md#aem-target-using-launch-by-adobe)
+   * [태그를 사용하여 Adobe Target과 통합된 AEM](./using-launch-adobe-io.md#aem-target-using-launch-by-adobe)
 * **Experience Cloud**
    * 조직에 대한 액세스 Adobe Experience Cloud - `https://<yourcompany>.experiencecloud.adobe.com`
    * Experience Cloud이 프로비저닝됨 [Adobe Target](https://experiencecloud.adobe.com)

@@ -11,7 +11,7 @@ level: Experienced
 exl-id: 3e1d86ab-e0c4-45d4-b998-75a44a7e4a3f
 last-substantial-update: 2020-07-07T00:00:00Z
 duration: 54
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 5%
@@ -32,7 +32,7 @@ Experience Manager 받은 편지함을 사용자 지정하여 열의 기본 제�
 
 ## 열 사용자 지정
 
-[AEM 받은 편지함 시작](http://localhost:4502/aem/inbox)
+[AEM 받은 편지함 열기](http://localhost:4502/aem/inbox)
 Admin Control을 열고 _목록 보기_ 아이콘을 클릭한 다음 선택 _관리자 컨트롤_ 아래 스크린샷에 표시된 대로
 
 ![admin-control](assets/open-customization.png)

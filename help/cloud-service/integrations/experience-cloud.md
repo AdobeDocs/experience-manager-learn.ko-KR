@@ -14,9 +14,9 @@ badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM as a Cloud Service" before-title="false"
 exl-id: 9e856dcc-f042-4e9d-bf97-dd4f72e837e3
 duration: 218
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '682'
 ht-degree: 11%
 
 ---
@@ -95,9 +95,9 @@ Adobe Commerce은 AEM as a Cloud Service과 통합되므로 브랜드가 상거�
 + [AEM Content 및 Commerce 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html)
 
 
-## Adobe Experience Platform 태그
+## Adobe Experience Platform의 태그
 
-Adobe Experience Platform 태그(이전 Adobe Launch, DTM)는 AEM과 원활하게 통합되므로 배포 및 관리를 위한 간단한 방법을 제공합니다 [analytics](#adobe-analytics), [타겟팅](#adobe-target)고객 경험을 사로잡는 데 필요한 , 마케팅 및 광고 태그.
+Adobe Experience Platform의 태그는 AEM과 원활하게 통합되므로 배포 및 관리가 간단한 방법입니다 [analytics](#adobe-analytics), [타겟팅](#adobe-target)고객 경험을 사로잡는 데 필요한 , 마케팅 및 광고 태그.
 
 ### AEM Sites
 
@@ -117,7 +117,7 @@ Adobe Journey Optimizer은 단일 애플리케이션에서 수백만 고객과 �
 
 + [AEM Assets Essentials를 Adobe Journey Optimizer과 통합](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-messages/create-email-content-with-the-message-editor.html?lang=ko-KR)
 
-## Adobe 학습 관리자
+## Adobe Learning Manager
 
 Adobe Learning Manager(이전 Adobe Captivate Prime)는 고객 및 직원에게 개인화된 학습을 제공합니다.
 

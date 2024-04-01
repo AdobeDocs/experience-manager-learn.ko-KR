@@ -9,9 +9,9 @@ level: Beginner
 doc-type: Article
 exl-id: bf4030b0-67c4-4b00-af95-f63e6f79e995
 duration: 809
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
-source-wordcount: '2586'
+source-wordcount: '2589'
 ht-degree: 1%
 
 ---
@@ -623,7 +623,7 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 기능을 확장합니다.
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html" target="_blank">Adobe 실행 통합</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html" target="_blank">Adobe Experience Platform 통합의 태그</a>:</strong>
             Adobe의 차세대 태그 관리 클라우드 서비스와 통합됩니다.</td>
             <td> </td>
             <td> </td>

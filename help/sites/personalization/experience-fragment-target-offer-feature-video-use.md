@@ -9,7 +9,7 @@ level: Beginner
 doc-type: Feature Video
 exl-id: 9ee826cf-389f-4570-bfe1-0d43d3fed3e1
 duration: 588
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 1%
@@ -24,7 +24,7 @@ Adobe Experience Manager은 AEM과 Target 간의 개인화 워크플로를 다�
 
 >[!NOTE]
 >
->권장 사용 `at.js` 클라이언트 라이브러리 및 모범 사례는 Launch by Adobe, Adobe DTM 또는 타사 태그 관리 솔루션과 같은 태그 관리 솔루션을 사용하여 사이트 페이지에 target 라이브러리를 추가하는 것입니다
+>권장 사용 `at.js` 클라이언트 라이브러리 및 모범 사례는 Adobe Experience Platform의 태그 또는 타사 태그 관리 솔루션과 같은 태그 관리 솔루션을 사용하여 사이트 페이지에 target 라이브러리를 추가하는 것입니다
 
 
 * Adobe Experience ManagerAdobe Target 의 AI(인공 지능) 및 머신 러닝과 함께 사용하기 쉽고 강력한 콘텐츠 생성 메커니즘을 통해 콘텐츠 작성자는 중앙 위치에서 모든 채널의 콘텐츠를 만들고 관리할 수 있습니다. 이제 HTML 오퍼로서 경험 조각을 Adobe Target으로 내보낼 수 있으므로 마케터는 이러한 오퍼를 사용하여 보다 개인화된 경험을 만들 수 있는 보다 유연성이 있으며, 이제 만든 각 경험을 테스트하고 확장할 수 있습니다.

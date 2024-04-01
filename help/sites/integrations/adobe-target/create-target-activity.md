@@ -13,7 +13,7 @@ badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title=
 doc-type: Tutorial
 exl-id: f581a4fb-1182-44bb-8c46-4250cf37b55f
 duration: 268
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
 source-wordcount: '115'
 ht-degree: 1%
@@ -31,7 +31,7 @@ AEM 경험 조각 오퍼를 사용하여 Adobe Target 활동을 만들고 테스
 경험 조각 오퍼를 사용하여 Adobe Target 활동을 만들려면 다음 설정을 완료해야 합니다.
 
 1. [AEM 웹 사이트에 Adobe Target 추가](./add-target-launch-extension.md)
-1. [Launch에서 Adobe Target 호출 트리거](./load-and-fire-target.md)
+1. [태그에서 Adobe Target 호출 트리거](./load-and-fire-target.md)
 1. [AEM Author 서비스와 Adobe Target 통합](./setup-aem-target-cloud-service.md)
 1. [Adobe Target으로 AEM 경험 조각 내보내기](./export-experience-fragment-target.md)
 

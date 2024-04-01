@@ -10,9 +10,9 @@ badgeVersions: label="AEM Sites 6.5" before-title="false"
 doc-type: Tutorial
 exl-id: 53cafd06-3a0a-4995-947d-179146b89234
 duration: 159
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '577'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ WKND 사이트는 홈 페이지를 다시 디자인하고 현재 홈 페이지 �
 
 * **AEM**
    * [AEM 작성자 및 게시 인스턴스](./implementation.md#getting-aem) localhost 4502 및 4503에서 각각 실행 중입니다.
-   * [Adobe Experience Platform Launch을 사용하여 Adobe Target과 통합된 AEM](./using-launch-adobe-io.md#aem-target-using-launch-by-adobe)
+   * [태그를 사용하여 Adobe Target과 통합된 AEM](./using-launch-adobe-io.md#aem-target-using-launch-by-adobe)
 * **Experience Cloud**
    * 조직에 대한 액세스 Adobe Experience Cloud - `https://<yourcompany>.experiencecloud.adobe.com`
    * 다음 솔루션으로 프로비저닝된 Experience Cloud
