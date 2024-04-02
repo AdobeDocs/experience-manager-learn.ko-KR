@@ -11,10 +11,10 @@ level: Beginner
 last-substantial-update: 2022-09-03T00:00:00Z
 exl-id: 6fb3199a-02c9-48bc-a6fa-1f767cfd2f2a
 duration: 3592
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 23ae098a1fcb2e6c47fee30f6f45b10e7ff97824
 workflow-type: tm+mt
-source-wordcount: '1278'
-ht-degree: 6%
+source-wordcount: '1301'
+ht-degree: 5%
 
 ---
 
@@ -201,15 +201,32 @@ Adobe I/O CLI가 Cloud Manager와 통신하려면 [Cloud Manager 통합은 Adobe
 1. 에 로그인 [console.adobe.io](https://console.adobe.io)
 1. 연결할 Cloud Manager 제품이 포함된 조직이 Adobe 조직 전환기에서 활성화되어 있는지 확인합니다.
 1. 새로 만들기 또는 기존 열기 [Adobe I/O 프로그램](https://www.adobe.io/apis/experienceplatform/console/docs.html#!AdobeDocs/adobeio-console/master/projects.md)
-   + Adobe I/O 콘솔 프로그램은 통합 관리 방법을 기반으로 통합을 만들거나 사용 및 기존 프로그램을 조직으로 그룹화한 것입니다
+   + Adobe I/O 콘솔 프로젝트는 통합 관리 방법을 기반으로 통합을 만들거나 사용 및 기존 프로젝트를 조직으로 그룹화한 것입니다.
    + 새 프로젝트를 만드는 경우 메시지가 표시되면 &quot;빈 프로젝트&quot;를 선택합니다(또는 &quot;템플릿에서 만들기&quot;).
    + Adobe I/O 콘솔 프로그램은 Cloud Manager 프로그램과 다른 개념입니다
-1. 개발자 - Cloud Service 프로필과 새 Cloud Manager API 통합 만들기
+1. 새 Cloud Manager API 통합 만들기
+   + 더 이상 사용되지 않는 &quot;서비스 계정(JWT)&quot; 인증 유형을 선택합니다(OAuth는 현재 CLI에 대해 지원되지 않음).
+   + 키를 만들거나 업로드합니다.
+   + &quot;개발자 - Cloud Service&quot; 제품 프로필 선택
 1. 서비스 계정(JWT) 자격 증명을 얻으려면 Adobe I/O CLI를 채워야 함 [config.json](https://github.com/adobe/aio-cli-plugin-cloudmanager#authentication)
+
+   ```json
+   //config.json 
+   {
+      "client_id": "Client ID from Service Account (JWT) credential",
+      "client_secret": "Client Secret from Service Account (JWT) credential",
+      "technical_account_id": "Technical Account ID from Service Account (JWT) credential",
+      "ims_org_id": "Organization ID from Service Account (JWT) credential",
+      "meta_scopes": [
+        "ent_cloudmgr_sdk"
+      ]
+   }
+   ```
+
 1. 을(를) 로드합니다 `config.json` Adobe I/O CLI에 파일 삽입
-   + `$ aio config:set ims.contexts.aio-cli-plugin-cloudmanager PATH_TO_CONFIG_JSON_FILE --file --json`
+   + `$ aio config:set ims.contexts.aio-cli-plugin-cloudmanager ./path/to/config.json --file --json`
 1. 을(를) 로드합니다 `private.key` Adobe I/O CLI에 파일 삽입
-   + `$ aio config:set ims.contexts.aio-cli-plugin-cloudmanager.private_key PATH_TO_PRIVATE_KEY_FILE --file`
+   + `$ aio config:set ims.contexts.aio-cli-plugin-cloudmanager.private_key ./path/to/private.key --file`
 
 시작 [명령 실행](https://github.com/adobe/aio-cli-plugin-cloudmanager#commands) Adobe I/O CLI를 통해 Cloud Manager용
 
