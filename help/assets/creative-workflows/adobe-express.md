@@ -12,9 +12,9 @@ last-substantial-update: 2023-12-06T00:00:00Z
 jira: KT-14645
 thumbnail: 3425972.jpeg
 exl-id: d73c4bdc-c1ff-498c-9584-93e6e39f5e39
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: e84f8375c94a2834ac3c61d3860ec92510950934
 workflow-type: tm+mt
-source-wordcount: '86'
+source-wordcount: '88'
 ht-degree: 0%
 
 ---
@@ -25,4 +25,4 @@ Adobe Express을 사용하여 Adobe Experience Manager Assets 내에서 콘텐�
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425972/?learn=on)
 
-을(를) 설정하는 방법 알아보기 [Adobe Express을 위한 AEM Assets 추가 기능](./adobe-express-aem-assets-add-on.md) Adobe Express에서 AEM Assets에 원활하게 액세스할 수 있습니다.
+을(를) 설정하는 방법 알아보기 [Adobe Express과 AEM Assets 기본 통합](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/integration-adobe-express/native-integration-adobe-express) Adobe Express에서 AEM Assets에 원활하게 액세스할 수 있습니다.
