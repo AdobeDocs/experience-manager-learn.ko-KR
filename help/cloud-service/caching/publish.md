@@ -12,7 +12,7 @@ jira: KT-13858
 thumbnail: KT-13858.jpeg
 exl-id: 1a1accbe-7706-4f9b-bf63-755090d03c4c
 duration: 325
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: baf81bb43a659e49728a05f83e7be394f7fbfb35
 workflow-type: tm+mt
 source-wordcount: '1134'
 ht-degree: 1%
@@ -37,7 +37,7 @@ CDN이 콘텐츠를 캐시하는 방법을 구성하는 것은 HTTP 응답에 �
 
 AEM as a Cloud Service CDN은 HTTP 응답만 캐시하며, 다음 기준을 모두 충족해야 합니다.
 
-+ HTTP 요청 상태: `2xx` 또는 `3xx`
++ HTTP 응답 상태: `2xx` 또는 `3xx`
 + HTTP 요청 메서드는 `GET` 또는 `HEAD`
 + 다음 HTTP 응답 헤더 중 하나 이상이 있습니다. `Cache-Control`, `Surrogate-Control`, 또는  `Expires`
 + HTTP 응답은 HTML, JSON, CSS, JS 및 이진 파일을 포함한 모든 콘텐츠 유형일 수 있습니다.
@@ -132,7 +132,7 @@ HTTP 응답이 AEM Dispatcher 캐싱에 적합한 경우 [위 한정자에 따�
 | 컨텐츠 유형 | 기본 CDN 캐시 수명 |
 |:------------ |:---------- |
 | [HTML/JSON/XML](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#html-text) | 무효화될 때까지 |
-| [에셋(이미지, 비디오, 문서 등)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#images) | 사용 안함 |
+| [에셋(이미지, 비디오, 문서 등)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#images) | 사용 안 함 |
 | [지속 쿼리(JSON)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?publish-instances) | 1분 |
 | [클라이언트 라이브러리(JS/CSS)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#client-side-libraries) | 30일 |
 | [기타](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#other-content) | 무효화될 때까지 |
