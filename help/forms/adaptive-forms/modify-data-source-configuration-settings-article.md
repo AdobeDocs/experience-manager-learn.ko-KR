@@ -9,7 +9,7 @@ level: Beginner
 exl-id: 6c63787c-e511-4764-9a03-2c85c394bcc0
 last-substantial-update: 2019-06-09T00:00:00Z
 duration: 36
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 4f818f2ad01d9ecadcf5593aa038c7db15b4d496
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 0%
@@ -28,4 +28,4 @@ AEM Forms 6.5가 출시되면서 이제 위에서 언급한 속성을 쉽게 변
 
 ![64DataSource 구성](assets/64release.gif)
 **AEM 6.5 이상에서 편집 가능한 데이터 소스 구성**
-![65DataSource 구성](assets/modifiabledatasource.jfif)
+![65DataSource 구성](assets/modifiable_data_source.png)

@@ -10,7 +10,7 @@ level: Beginner
 exl-id: f4af7cb9-cc3b-4bec-9428-ab4f1a3cf41a
 last-substantial-update: 2019-07-07T00:00:00Z
 duration: 446
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 4f818f2ad01d9ecadcf5593aa038c7db15b4d496
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 0%
@@ -21,11 +21,11 @@ ht-degree: 0%
 
 AEM Forms 6.5에는 여러 시리즈 차트를 만들고 구성하는 기능이 도입되었습니다. 여러 계열 차트는 일반적으로 라인, 막대, 열 차트 유형과 관련하여 사용됩니다. 다음 차트는 다중 계열 차트의 좋은 예입니다. 이 차트는 일정 기간 동안 3개의 다른 뮤추얼 펀드에서 미화 10,000달러의 성장을 보여줍니다. AEM Forms에서 이러한 종류의 차트를 만들고 사용하려면 적절한 양식 데이터 모델을 만들어야 합니다.
 
-![다중 계열 차트](assets/seriescharts.jfif)
+![다중 계열 차트](assets/series_charts.png)
 
 AEM Forms에서 다중 시리즈 차트를 만들려면 필요한 엔터티와 엔터티 간의 연결을 사용하여 적절한 양식 데이터 모델을 만들어야 합니다. 다음 스크린샷에서는 엔티티와 세 엔티티 간의 연관을 강조 표시합니다. 최상층에는 &#39;조직&#39;이라는 조직이 있는데, 이 조직은 펀드실체와 일대다 연계를 하고 있다. 펀드 엔티티는 결과적으로 퍼포먼스 엔티티와 일대다 관계를 맺고 있습니다.
 
-![양식 데이터 모델](assets/formdatamodel.jfif)
+![양식 데이터 모델](assets/form_data_model.png)
 
 ## 다중 계열 차트에 대한 양식 데이터 모델 만들기
 

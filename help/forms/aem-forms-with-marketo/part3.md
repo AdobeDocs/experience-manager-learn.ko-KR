@@ -10,7 +10,7 @@ badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: 7096340b-8ccf-4f5e-b264-9157232e96ba
 duration: 97
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 4f818f2ad01d9ecadcf5593aa038c7db15b4d496
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 1%
@@ -28,7 +28,7 @@ AEM Forms 데이터 통합을 사용하면 서로 다른 데이터 소스를 구
 1. OData 서비스
 
 AEM Forms과 Marketo의 통합을 위해 RESTful 웹 서비스를 사용하고 있습니다. 통합의 첫 번째 단계는 를 구성하는 것입니다. [데이터 소스.](https://helpx.adobe.com/experience-manager/6-4/forms/using/configure-data-sources.html#ConfigureRESTfulwebservices) 이 자습서의 일부로 제공된 swagger 파일을 사용하십시오. 다음 스크린샷은 데이터 소스를 구성하는 동안 지정해야 하는 중요한 속성을 보여 줍니다.
-![데이터 소스](assets/datasource.jfif)
+![데이터 소스](assets/datasource.png)
 
 &quot;marketo.json&quot;은 Swagger 파일이며 이 자습서 자산의 일부로 제공됩니다.
 속성 호스트는 Marketo 인스턴스에만 적용됩니다.
@@ -51,7 +51,7 @@ AEM Forms과 Marketo의 통합을 위해 RESTful 웹 서비스를 사용하고 �
 1. 서비스 탭 탭
 1. 나열된 유일한 서비스를 선택하고 테스트 서비스 를 클릭합니다.
 1. 유효한 leadId를 입력하고 Test 를 클릭합니다. 모든 것이 잘 진행되면 아래 스크린샷과 같이 리드 세부 정보를 다시 가져와야 합니다
-   ![testresults](assets/testresults.jfif)
+   ![testresults](assets/testresults.png)
 
 ## 다음 단계
 

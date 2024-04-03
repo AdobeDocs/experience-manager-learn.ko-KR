@@ -10,7 +10,7 @@ badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: 6b44e6b2-15f7-45b2-8d21-d47f122c809d
 duration: 84
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 4f818f2ad01d9ecadcf5593aa038c7db15b4d496
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 0%
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 다음 스크린샷에서는 규칙 편집기 설정에 대해 설명합니다
 
-![규칙 편집자](assets/ruleeditor.jfif)
+![규칙 편집자](assets/ruleeditor.png)
 
 ## 디버깅
 
