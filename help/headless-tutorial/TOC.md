@@ -8,10 +8,10 @@ sub-product: Experience Manager Sites
 version: 6.5, Cloud Service
 jira: KT-2963
 index: y
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+source-git-commit: c498783aceaf3bb389baaeaeefbe9d8d0125a82e
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 19%
+source-wordcount: '341'
+ht-degree: 13%
 
 ---
 
@@ -20,10 +20,10 @@ ht-degree: 19%
 
 + [AEM Headless 개요](./overview.md)
 + GraphQL {#graphql}
-   + [AEM Headless 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html){target=_blank}
+   + [AEM Headless 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ko-KR){target=_blank}
    + [개요](./graphql/overview.md)
    + 빠른 설정 {#quick-setup}
-      + [클라우드 서비스](./graphql/quick-setup/cloud-service.md)
+      + [Cloud Service](./graphql/quick-setup/cloud-service.md)
       + [AEM SDK](./graphql/quick-setup/local-sdk.md)
    + 비디오 시리즈{#video-series}
       + [1 - 모델링 기본 사항](./graphql/video-series/modeling-basics.md)
@@ -67,6 +67,7 @@ ht-degree: 19%
    + [현지화된 콘텐츠](./graphql/how-to/localized-content.md)
    + [큰 결과 집합](./graphql/how-to/large-result-sets.md)
    + [미리보기](./graphql/how-to/preview.md)
+   + [보호된 콘텐츠](./graphql/how-to/protected-content.md)
    + [AEM Headless SDK](./graphql/how-to/aem-headless-sdk.md)
    + [AEM 6.5에 GraphiQL 설치](./graphql/how-to/install-graphiql-aem-6-5.md)
    + 예 {#example-apps}
@@ -106,7 +107,7 @@ ht-degree: 19%
    + [개요](./authentication/overview.md)
    + [1 - 로컬 개발 액세스 토큰](./authentication/local-development-access-token.md)
    + [2 - 서비스 자격 증명](./authentication/service-credentials.md)
-+ Content Services {#content-services}
++ 컨텐츠 서비스 {#content-services}
    + [개요](./content-services/overview.md)
    + [1 - 튜토리얼 설정](./content-services/chapter-1.md)
    + [2 - 이벤트 콘텐츠 조각 모델 정의](./content-services/chapter-2.md)
