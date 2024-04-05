@@ -5,9 +5,9 @@ sub-product: Experience Manager Sites, Experience Manager Cloud Manager, Experie
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 3bd7b9f5-5775-4572-8b4a-4d09619e20b9
-source-git-commit: 2be59ef6c6e42854a614722ced9b40988d9d4881
+source-git-commit: 3f30c5bc85b09e2f3bc17fa591a85cd92c811126
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '335'
 ht-degree: 0%
 
 ---
@@ -99,6 +99,20 @@ AEM Engineering의 시즌 3의 클라우드 5 시리즈에 오신 것을 환영�
                 <br/>
                 Edge Delivery Services 색인과 쿼리에서 데이터 세트를 조작하고 정렬하기 위한 Excel 공식을 작성하는 방법을 살펴봅니다.
             </p>
-        </td>   
+        </td>  
+        <td>
+            <a href="./season-3/cloud5-byo-cloudflare-cdn.md">
+                <img alt="고유한 Cloudflare CDN 가져오기" src="https://video.tv.adobe.com/v/3428100?format=jpeg"/>
+            </a>
+            <div>
+                <a href="./season-3/cloud5-byo-cloudflare-cdn.md">
+                <strong>고유한 Cloudflare CDN 가져오기</strong></a>        
+                <br/><em>james Talbot &amp; Kunwar Saluja, AEM 엔지니어링</em>
+            </div>
+            <p>
+                <br/>
+                고유한 Cloudflare CDN을 Edge Delivery Services에 구성하는 방법에 대해 알아봅니다.
+            </p>
+        </td>           
     </tr>  
 </table>
