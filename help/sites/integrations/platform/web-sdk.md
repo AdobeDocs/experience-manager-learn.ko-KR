@@ -14,9 +14,9 @@ badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service" before-title="false"
 exl-id: 47df99e6-6418-43c8-96fe-85e3c47034d6
 duration: 1360
-source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
+source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
 workflow-type: tm+mt
-source-wordcount: '1232'
+source-wordcount: '1229'
 ht-degree: 1%
 
 ---
@@ -180,7 +180,7 @@ WKND 사이트는 태그 속성을 연결한 후 Adobe Experience Platform 클�
 
 ### WKND에서 태그 속성 로드 확인
 
-Adobe Experience Platform Debugger 사용 [크롬](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) 또는 [Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/) 확장에서 태그 속성이 WKND 페이지에 로드되는지 확인합니다. 확인할 수 있습니다.
+Adobe Experience Platform Debugger 사용 [크롬](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) 확장에서 태그 속성이 WKND 페이지에 로드되는지 확인합니다. 확인할 수 있습니다.
 
 + 확장, 버전, 이름 등 태그 속성 세부 정보.
 + Platform Web SDK 라이브러리 버전, 데이터 스트림 ID

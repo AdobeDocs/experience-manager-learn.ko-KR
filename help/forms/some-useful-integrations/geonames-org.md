@@ -10,7 +10,7 @@ level: Intermediate
 exl-id: f1f2cacc-9ec4-46d6-a6af-dac3f663de78
 last-substantial-update: 2021-02-07T00:00:00Z
 duration: 218
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
 workflow-type: tm+mt
 source-wordcount: '610'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/340344?quality=12&learn=on)
 
-이 자습서에서는 다음을 사용했습니다 [Geonames REST API](http://api.geonames.org/) 을 참조하십시오.
+이 자습서에서는 다음을 사용했습니다 [Geonames REST API](https://www.geonames.org/export/web-services.html) 을 참조하십시오.
 이러한 종류의 서비스를 제공하는 다양한 조직이 있으며 REST API를 잘 문서화한다면 데이터 통합 기능을 사용하여 AEM Forms과 쉽게 통합할 수 있습니다
 
 다음 단계에 따라 AEM Forms에서 연속 드롭다운 목록을 구현했습니다
@@ -88,7 +88,7 @@ AEM Forms 데이터 통합은 를 만들고 작업할 수 있는 직관적인 �
 
 다음 에셋을 다운로드하여 계단식 드롭다운 목록 만들기 를 시작할 수 있습니다. 샘플 완료된 Swagger 파일은에서 다운로드할 수 있습니다. [여기](assets/geonames-swagger-files.zip)
 Swagger 파일은 다음 REST API를 설명합니다
-* [모든 국가 가져오기](http://api.geonames.org/countryInfoJSON?username=yourusername)
-* [Geoname 개체의 하위 항목 가져오기](http://api.geonames.org/children?formatted=true&amp;geonameId=6252001&amp;username=yourusername)
+* [모든 국가 가져오기](https://secure.geonames.org/countryInfoJSON?username=yourusername)
+* [Geoname 개체의 하위 항목 가져오기](https://secure.geonames.org/children?formatted=true&amp;geonameId=6252001&amp;username=yourusername)
 
 완료됨 [양식 데이터 모델은 여기에서 다운로드할 수 있습니다.](assets/geonames-api-form-data-model.zip)

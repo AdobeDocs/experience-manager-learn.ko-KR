@@ -13,9 +13,9 @@ badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title=
 doc-type: Tutorial
 exl-id: 647447ca-3c29-4efe-bb3a-d3f53a936a2a
 duration: 279
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '266'
 ht-degree: 1%
 
 ---
@@ -44,11 +44,11 @@ Tags 구현을 디버깅하는 데 사용되는 일반적인 도구 및 기술�
 
 ## Adobe Experience Platform Debugger을 통한 디버깅
 
-Adobe이 Adobe Experience Platform Debugger 제공 [Chrome 확장 프로그램](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) 및 [Firefox 추가 기능](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/) 을 사용하여 디버그하고, 이해하고, 통합에 대한 통찰력을 얻을 수 있습니다.
+Adobe이 Adobe Experience Platform Debugger 제공 [Chrome 확장 프로그램](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) 을 사용하여 디버그하고, 이해하고, 통합에 대한 통찰력을 얻을 수 있습니다.
 
 1. Adobe Experience Platform Debugger 확장을 열고 게시 인스턴스에서 사이트 페이지를 엽니다
 
-1. 다음에서 **Adobe Experience Platform Debugger > 요약 > Adobe Experience Platform 태그** 섹션에서 이름, 버전, 빌드 날짜, 환경 및 확장과 같은 Tag 속성 세부 사항을 확인합니다.
+2. 다음에서 **Adobe Experience Platform Debugger > 요약 > Adobe Experience Platform 태그** 섹션에서 이름, 버전, 빌드 날짜, 환경 및 확장과 같은 Tag 속성 세부 사항을 확인합니다.
 
    ![Adobe Experience Platform Debugger 및 태그 속성 세부 정보](assets/tag-property-details.png)
 

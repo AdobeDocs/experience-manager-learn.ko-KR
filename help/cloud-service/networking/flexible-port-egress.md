@@ -1,5 +1,5 @@
 ---
-title: 유연한 포트 이그레스
+title: 유연한 포트 전송
 description: 유연한 포트 이그레스를 설정하고 사용하여 AEMas a Cloud Service 에서 외부 서비스로의 외부 연결을 지원하는 방법에 대해 알아봅니다.
 version: Cloud Service
 feature: Security
@@ -10,14 +10,14 @@ jira: KT-9350
 thumbnail: KT-9350.jpeg
 exl-id: 5c1ff98f-d1f6-42ac-a5d5-676a54ef683c
 duration: 906
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
 workflow-type: tm+mt
 source-wordcount: '1060'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# 유연한 포트 이그레스
+# 유연한 포트 전송
 
 유연한 포트 이그레스를 설정하고 사용하여 AEMas a Cloud Service 에서 외부 서비스로의 외부 연결을 지원하는 방법에 대해 알아봅니다.
 
@@ -36,7 +36,7 @@ Cloud Manager 프로그램에는 __단일__ 네트워크 인프라 유형. 전�
 유연한 포트 이그레스를 설정할 때 필요한 사항은 다음과 같습니다.
 
 + Cloud Manager API가 활성화된 Adobe Developer 콘솔 프로젝트 및 [Cloud Manager 비즈니스 소유자 권한](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/)
-+ 액세스 대상: [Cloud Manager API 인증 자격 증명](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/authentication/)
++ 액세스 대상: [Cloud Manager API 인증 자격 증명](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)
    + 조직 ID(예: IMS 조직 ID)
    + 클라이언트 ID(예: API 키)
    + 액세스 토큰(예: 전달자 토큰)

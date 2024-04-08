@@ -9,7 +9,7 @@ role: Developer
 level: Beginner
 exl-id: 9bfe3142-bfc1-4886-85ea-d1c6de903484
 duration: 1603
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
 workflow-type: tm+mt
 source-wordcount: '4441'
 ht-degree: 0%
@@ -26,9 +26,9 @@ ht-degree: 0%
 
 ## 소개 {#introduction}
 
-[[!DNL AEM Projects]](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/projects/projects.html) 는 AEM Sites 또는 Assets 구현의 일부로 콘텐츠 생성과 관련된 모든 워크플로 및 작업을 보다 쉽게 관리하고 그룹화할 수 있도록 설계된 AEM의 기능입니다.
+[[!DNL AEM Projects]](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects) 는 AEM Sites 또는 Assets 구현의 일부로 콘텐츠 생성과 관련된 모든 워크플로 및 작업을 보다 쉽게 관리하고 그룹화할 수 있도록 설계된 AEM의 기능입니다.
 
-AEM Projects에는 여러 개가 포함되어 있습니다 [OOTB 프로젝트 템플릿](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/projects/projects.html). 프로젝트를 만들 때 작성자는 사용 가능한 이러한 템플릿 중에서 선택할 수 있습니다. 고유한 비즈니스 요구 사항이 있는 대규모 AEM 구현에서는 요구 사항에 맞게 사용자 지정 프로젝트 템플릿을 만들어야 합니다. 사용자 지정 프로젝트 템플릿을 만들면 개발자는 프로젝트 대시보드를 구성하고, 사용자 지정 워크플로에 연결하고, 프로젝트에 대한 추가 비즈니스 역할을 만들 수 있습니다. 프로젝트 템플릿의 구조를 보고 샘플 템플릿을 만들겠습니다.
+AEM Projects에는 여러 개가 포함되어 있습니다 [OOTB 프로젝트 템플릿](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects). 프로젝트를 만들 때 작성자는 사용 가능한 이러한 템플릿 중에서 선택할 수 있습니다. 고유한 비즈니스 요구 사항이 있는 대규모 AEM 구현에서는 요구 사항에 맞게 사용자 지정 프로젝트 템플릿을 만들어야 합니다. 사용자 지정 프로젝트 템플릿을 만들면 개발자는 프로젝트 대시보드를 구성하고, 사용자 지정 워크플로에 연결하고, 프로젝트에 대한 추가 비즈니스 역할을 만들 수 있습니다. 프로젝트 템플릿의 구조를 보고 샘플 템플릿을 만들겠습니다.
 
 ![사용자 정의 프로젝트 카드](./assets/develop-aem-projects/custom-project-card.png)
 
@@ -39,7 +39,7 @@ AEM Projects에는 여러 개가 포함되어 있습니다 [OOTB 프로젝트 �
 * [완료된 튜토리얼 패키지](./assets/develop-aem-projects/projects-tasks-guide.ui.apps-0.0.1-SNAPSHOT.zip)
 * [GitHub의 전체 코드 저장소](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/feature/projects-tasks-guide)
 
-이 자습서에서는 다음과 같은 몇 가지 기본 지식이 있다고 가정합니다 [AEM 개발 사례](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/the-basics.html) and some familiar친숙함 with [AEM Maven 프로젝트 설정](https://docs.adobe.com/content/help/en/experience-manager-65/developing/devtools/ht-projects-maven.html). 언급된 모든 코드는 참조로 사용되기 위한 것이며 에만 배포해야 합니다. [로컬 개발 AEM 인스턴스](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/deploy.html).
+이 자습서에서는 다음과 같은 몇 가지 기본 지식이 있다고 가정합니다 [AEM 개발 사례](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/introduction/the-basics) and some familiar친숙함 with [AEM Maven 프로젝트 설정](https://docs.adobe.com/content/help/en/experience-manager-65/developing/devtools/ht-projects-maven.html). 언급된 모든 코드는 참조로 사용되기 위한 것이며 에만 배포해야 합니다. [로컬 개발 AEM 인스턴스](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/deploy).
 
 ## 프로젝트 템플릿 구조
 
@@ -69,11 +69,11 @@ AEM Projects에는 여러 개가 포함되어 있습니다 [OOTB 프로젝트 �
 
 ### 가젯 {#gadgets}
 
-이 노드에는 추가 속성이 없지만 가젯 노드의 하위 항목은 새 프로젝트를 만들 때 프로젝트의 대시보드를 채우는 프로젝트 타일을 제어합니다. [프로젝트 타일](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/projects/projects.html) (가젯 또는 포드라고도 함)는 프로젝트의 작업 공간을 채우는 간단한 카드입니다. ootb 타일의 전체 목록은 아래에서 찾을 수 있습니다 : **/libs/cq/gui/components/projects/admin/pod. **프로젝트가 생성된 후 프로젝트 소유자는 언제든지 타일을 추가/제거할 수 있습니다.
+이 노드에는 추가 속성이 없지만 가젯 노드의 하위 항목은 새 프로젝트를 만들 때 프로젝트의 대시보드를 채우는 프로젝트 타일을 제어합니다. [프로젝트 타일](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects) (가젯 또는 포드라고도 함)는 프로젝트의 작업 공간을 채우는 간단한 카드입니다. ootb 타일의 전체 목록은 아래에서 찾을 수 있습니다 : **/libs/cq/gui/components/projects/admin/pod. **프로젝트가 생성된 후 프로젝트 소유자는 언제든지 타일을 추가/제거할 수 있습니다.
 
 ### 역할 {#roles}
 
-세 개 있습니다 [기본 역할](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/projects/projects.html) 모든 프로젝트에 대해: **옵저버**, **편집자**, 및 **소유자**. 역할 노드 아래에 하위 노드를 추가하여 템플릿에 비즈니스별 프로젝트 역할을 추가할 수 있습니다. 그런 다음 이러한 역할을 프로젝트와 연결된 특정 워크플로우에 연결할 수 있습니다.
+세 개 있습니다 [기본 역할](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects) 모든 프로젝트에 대해: **옵저버**, **편집자**, 및 **소유자**. 역할 노드 아래에 하위 노드를 추가하여 템플릿에 비즈니스별 프로젝트 역할을 추가할 수 있습니다. 그런 다음 이러한 역할을 프로젝트와 연결된 특정 워크플로우에 연결할 수 있습니다.
 
 ### 워크플로 {#workflows}
 
@@ -152,7 +152,7 @@ AEM Projects에는 여러 개가 포함되어 있습니다 [OOTB 프로젝트 �
    1. 다른 항목 추가 **nt:unstructured** 노드가 approvers를 roles 노드의 하위 노드로 레이블 지정했습니다.
    1. 문자열 속성 추가 **jcr:title** = &quot;**승인자**&quot;, **롤레클라스** =&quot;**소유자**&quot;, **장미빛**=&quot;**승인자**&quot;.
       1. jcr:title 및 roleid뿐만 아니라 승인자 노드의 이름도 모든 문자열 값이 될 수 있습니다(roleid가 고유한 경우).
-      1. **롤레클라스** 은(는) 다음을 기반으로 해당 역할에 적용되는 권한을 제어합니다. [3개의 OOTB 역할](https://docs.adobe.com/content/docs/en/aem/6-3/author/projects.html): **소유자**, **편집자**, 및 **관찰자**.
+      1. **롤레클라스** 은(는) 다음을 기반으로 해당 역할에 적용되는 권한을 제어합니다. [3개의 OOTB 역할](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects): **소유자**, **편집자**, 및 **관찰자**.
       1. 일반적으로 사용자 정의 역할이 관리자 역할보다 크면 역할은 다음과 같을 수 있습니다. **소유자;** 사진 작가나 디자이너와 같은 보다 구체적인 작성 역할인 경우 **편집자** 롤렉스면 충분할 거야 의 큰 차이점 **소유자** 및 **편집자** 프로젝트 소유자는 프로젝트 속성을 업데이트하고 새 사용자를 프로젝트에 추가할 수 있습니다.
 
    ```shell
@@ -308,7 +308,7 @@ AEM Projects에는 여러 개가 포함되어 있습니다 [OOTB 프로젝트 �
 
    ![워크플로 만들기 대화 상자](./assets/develop-aem-projects/workflow-create-dialog.png)
 
-   [워크플로우 만들기와 관련된 자세한 내용은 여기 를 참조하십시오.](https://docs.adobe.com/content/help/en/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html).
+   [워크플로우 만들기와 관련된 자세한 내용은 여기 를 참조하십시오.](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/extending-aem/extending-workflows/workflows-models).
 
 1. 가장 좋은 방법은 사용자 지정 워크플로를 /etc/workflow/models 아래에 있는 자체 폴더로 그룹화하는 것입니다. CRXDE Lite에서 **&#39;nt:folder&#39;** /etc/workflow/models 아래에 **&quot;aem-guides&quot;**. 하위 폴더를 추가하면 업그레이드나 서비스 팩 설치 중에 사용자 지정 워크플로우를 실수로 덮어쓰지 않습니다.
 
@@ -320,7 +320,7 @@ AEM Projects에는 여러 개가 포함되어 있습니다 [OOTB 프로젝트 �
 
    >[!NOTE]
    >
-   >AEM 6.4 이상을 사용하는 경우 워크플로 위치가 변경되었습니다. 다음을 참조하십시오 [자세한 내용은 여기 를 참조하십시오.](https://docs.adobe.com/content/help/en/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html)
+   >AEM 6.4 이상을 사용하는 경우 워크플로 위치가 변경되었습니다. 다음을 참조하십시오 [자세한 내용은 여기 를 참조하십시오.](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/extending-aem/extending-workflows/workflows-best-practices)
 
    AEM 6.4+를 사용하는 경우 워크플로 모델이 아래에 만들어집니다. `/conf/global/settings/workflow/models`. /conf 디렉토리로 위의 단계를 반복하여 라는 하위 폴더를 추가합니다. `aem-guides` 및 이동 `content-approval-workflow` 그 밑에..
 
@@ -738,7 +738,7 @@ task.setCurrentAssignee(projectApproverGrp);
    >AEM 6.4를 사용하는 경우 워크플로우의 위치가 변경되었습니다. 가리킨 항목 `modelId` 속성을 런타임 워크플로 모델의 위치에 추가합니다. `/var/workflow/models/aem-guides/content-approval-workflow`
    >
    >
-   >다음을 참조하십시오 [워크플로우의 위치 변경에 대한 자세한 내용은 여기 를 참조하십시오.](https://docs.adobe.com/content/help/en/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html)
+   >다음을 참조하십시오 [워크플로우의 위치 변경에 대한 자세한 내용은 여기 를 참조하십시오.](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/extending-aem/extending-workflows/workflows-best-practices)
 
    ```xml
    <contentapproval
@@ -754,4 +754,4 @@ task.setCurrentAssignee(projectApproverGrp);
 
 * [완료된 튜토리얼 패키지 다운로드](./assets/develop-aem-projects/projects-tasks-guide.ui.apps-0.0.1-SNAPSHOT.zip)
 * [GitHub의 전체 코드 저장소](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/feature/projects-tasks-guide)
-* [AEM 프로젝트 설명서](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/projects/projects.html)
+* [AEM 프로젝트 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects)

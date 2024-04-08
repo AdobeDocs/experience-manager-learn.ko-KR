@@ -12,10 +12,10 @@ last-substantial-update: 2022-10-03T00:00:00Z
 doc-type: Technical Video
 exl-id: 40bb55f9-011d-4261-9f44-b1104a591252
 duration: 957
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 3%
+source-wordcount: '234'
+ht-degree: 4%
 
 ---
 
@@ -50,7 +50,7 @@ AEM 사이트 맵은 다음을 사용하여 절대 URL을 지원합니다. [Slin
 
 ### 사이트 맵 스케줄러 OSGi 구성
 
-다음을 정의합니다 [OSGi 공장 구성](http://localhost:4502/system/console/configMgr/org.apache.sling.sitemap.impl.SitemapScheduler) 빈도용(사용) [cron 표현식](http://www.cronmaker.com/)) 사이트 맵은 AEM에서 다시 생성/생성되고 캐시됩니다.
+다음을 정의합니다 [OSGi 공장 구성](http://localhost:4502/system/console/configMgr/org.apache.sling.sitemap.impl.SitemapScheduler) 빈도용(사용) [cron 표현식](https://cron.help/)) 사이트 맵은 AEM에서 다시 생성/생성되고 캐시됩니다.
 
 `ui.config/src/main/jcr_content/apps/wknd/osgiconfig/config.publish`
 
@@ -93,4 +93,4 @@ RewriteRule ^/(.*)$ /content/${CONTENT_FOLDER_NAME}/$1 [PT,L]
 + [Apache Sling 사이트 맵 설명서](https://github.com/apache/sling-org-apache-sling-sitemap#readme)
 + [Sitemap.org 사이트 맵 설명서](https://www.sitemaps.org/protocol.html)
 + [Sitemap.org 사이트 맵 인덱스 파일 설명서](https://www.sitemaps.org/protocol.html#index)
-+ [Cronmaker](http://www.cronmaker.com/)
++ [Cron Helper](https://cron.help/)

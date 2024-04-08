@@ -10,7 +10,7 @@ jira: KT-9352
 thumbnail: KT-9352.jpeg
 exl-id: 74cca740-bf5e-4cbd-9660-b0579301a3b4
 duration: 948
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 2%
@@ -40,7 +40,7 @@ Cloud Manager 프로그램에는 __단일__ 네트워크 인프라 유형. Virtu
 Virtual Private Network를 설정할 때 필요한 사항은 다음과 같습니다.
 
 + Adobe 계정 [Cloud Manager 비즈니스 소유자 권한](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/)
-+ 액세스 대상: [Cloud Manager API 인증 자격 증명](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/authentication/)
++ 액세스 대상: [Cloud Manager API 인증 자격 증명](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)
    + 조직 ID(예: IMS 조직 ID)
    + 클라이언트 ID(예: API 키)
    + 액세스 토큰(예: 전달자 토큰)

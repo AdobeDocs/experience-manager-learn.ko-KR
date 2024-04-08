@@ -1,5 +1,5 @@
 ---
-title: 전용 이그레스 IP 주소
+title: 전용 송신 IP 주소
 description: AEM의 아웃바운드 연결이 전용 IP에서 시작되도록 허용하는 전용 이그레스 IP 주소를 설정하고 사용하는 방법에 대해 알아봅니다.
 version: Cloud Service
 feature: Security
@@ -10,14 +10,14 @@ jira: KT-9351
 thumbnail: KT-9351.jpeg
 exl-id: 311cd70f-60d5-4c1d-9dc0-4dcd51cad9c7
 duration: 926
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
 workflow-type: tm+mt
 source-wordcount: '1142'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# 전용 이그레스 IP 주소
+# 전용 송신 IP 주소
 
 AEM의 아웃바운드 연결이 전용 IP에서 시작되도록 허용하는 전용 이그레스 IP 주소를 설정하고 사용하는 방법에 대해 알아봅니다.
 
@@ -36,7 +36,7 @@ Cloud Manager 프로그램에는 __단일__ 네트워크 인프라 유형. 전�
 전용 이그레스 IP 주소를 설정할 때 필요한 사항은 다음과 같습니다.
 
 + 을 사용한 Cloud Manager API [Cloud Manager 비즈니스 소유자 권한](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/)
-+ 액세스 대상: [Cloud Manager API 인증 인증서](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/authentication/)
++ 액세스 대상: [Cloud Manager API 인증 인증서](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)
    + 조직 ID(예: IMS 조직 ID)
    + 클라이언트 ID(예: API 키)
    + 액세스 토큰(예: 전달자 토큰)
