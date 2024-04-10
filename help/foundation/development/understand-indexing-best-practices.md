@@ -12,13 +12,13 @@ duration: 389
 last-substantial-update: 2024-01-04T00:00:00Z
 jira: KT-14745
 thumbnail: KT-14745.jpeg
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+exl-id: 3fd4c404-18e9-44e5-958f-15235a3091d5
+source-git-commit: 78e8a8472d2dd8128c6ce2f1120cb9a41527f31b
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1693'
 ht-degree: 0%
 
 ---
-
 
 # AEM의 색인 지정 모범 사례
 
@@ -41,21 +41,21 @@ AEM 인스턴스의 성능에 영향을 주지 않는 효율적이고 올바른 
 
 - 검색 요구 사항을 이해하고 OOTB 인덱스가 검색 요구 사항을 지원할 수 있는지 확인합니다. 사용 **쿼리 성능 도구**, 사용 가능한 위치: [로컬 SDK](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) Developer Console을 통해 또는 AEM CS `https://author-pXXXX-eYYYY.adobeaemcloud.com/ui#/aem/libs/granite/operations/content/diagnosistools/queryPerformance.html?appId=aemshell`.
 
-- 최적의 쿼리를 정의하고 [쿼리 최적화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/query-and-indexing-best-practices.html?#optimizing-queries) 순서도 및 [JCR 쿼리 치트 시트](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf?lang=en) 참조하십시오.
+- 최적의 쿼리를 정의하고 [쿼리 최적화](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/query-and-indexing-best-practices) 순서도 및 [JCR 쿼리 치트 시트](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf?lang=en) 참조하십시오.
 
-- OOTB 인덱스가 검색 요구 사항을 지원할 수 없는 경우 두 가지 옵션이 있습니다. 그러나 다음을 검토하십시오. [효율적인 인덱스 생성 팁](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/practices/best-practices-for-queries-and-indexing.html?#should-i-create-an-index)
+- OOTB 인덱스가 검색 요구 사항을 지원할 수 없는 경우 두 가지 옵션이 있습니다. 그러나 다음을 검토하십시오. [효율적인 인덱스 생성 팁](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/practices/best-practices-for-queries-and-indexing)
    - OOTB 인덱스 사용자 정의: 유지 관리 및 업그레이드가 용이하여 선호하는 옵션.
    - 완전히 맞춤화된 색인: 위의 옵션이 작동하지 않는 경우에만 해당됩니다.
 
 ### OOTB 인덱스 사용자 지정
 
-- 위치 **AEMCS**, OOTB 인덱스 사용 사용자 지정 시 **\&lt;ootbindexname>-\&lt;productversion>-custom-\&lt;customversion>** 명명 규칙. 예를 들어, `cqPageLucene-custom-1` 또는 `damAssetLucene-8-custom-1`. 이렇게 하면 OOTB 색인이 업데이트될 때마다 사용자 지정된 색인 정의를 병합하는 데 도움이 됩니다. 다음을 참조하십시오 [기본 제공 색인 변경](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?#changes-to-out-of-the-box-indexes) 을 참조하십시오.
+- 위치 **AEMCS**, OOTB 인덱스 사용 사용자 지정 시 **\&lt;ootbindexname>-\&lt;productversion>-custom-\&lt;customversion>** 명명 규칙. 예를 들어, `cqPageLucene-custom-1` 또는 `damAssetLucene-8-custom-1`. 이렇게 하면 OOTB 색인이 업데이트될 때마다 사용자 지정된 색인 정의를 병합하는 데 도움이 됩니다. 다음을 참조하십시오 [기본 제공 색인 변경](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/indexing) 을 참조하십시오.
 
-- 위치 **AEM 6.X**, 위의 이름 지정 _작동하지 않음_, 그러나 의 추가 속성으로 OOTB 인덱스를 업데이트하기만 하면 됩니다. `indexRules` 노드.
+- 위치 **AEM 6.X**, 위의 이름 지정 _작동하지 않음_, 그러나 의 필요한 속성으로 OOTB 인덱스를 업데이트하기만 하면 됩니다. `indexRules` 노드.
 
 - 항상 CRX DE 패키지 관리자(/crx/packmgr/)를 사용하여 AEM 인스턴스에서 최신 OOTB 인덱스 정의를 복사하고 이름을 변경한 다음 XML 파일 내에 사용자 지정을 추가합니다.
 
-- 다음 위치에 AEM 프로젝트에 인덱스 정의 저장 `ui.apps/src/main/content/jcr_root/_oak_index` 및 Cloud Manager CI/CD 파이프라인을 사용하여 배포합니다. 다음을 참조하십시오 [사용자 정의 색인 정의 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?#deploying-custom-index-definitions) 을 참조하십시오.
+- 다음 위치에 AEM 프로젝트에 인덱스 정의 저장 `ui.apps/src/main/content/jcr_root/_oak_index` 및 Cloud Manager CI/CD 파이프라인을 사용하여 배포합니다. 다음을 참조하십시오 [사용자 정의 색인 정의 배포](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/indexing) 을 참조하십시오.
 
 ### 완전히 맞춤화된 색인
 
@@ -63,13 +63,13 @@ AEM 인스턴스의 성능에 영향을 주지 않는 효율적이고 올바른 
 
 - 완전히 맞춤화된 색인을 만들 때 **\&lt;prefix>.\&lt;customindexname>-\&lt;version>-custom-\&lt;customversion>** 명명 규칙. 예, `wknd.adventures-1-custom-1`. 이렇게 하면 이름 지정 충돌을 방지하는 데 도움이 됩니다. 여기, `wknd` 는 접두사이고, `adventures` 는 사용자 정의 색인 이름입니다. 이 규칙은 AEM 6.X와 AEMCS 모두에 적용할 수 있으며 향후 AEMCS로의 마이그레이션을 준비하는 데 도움이 됩니다.
 
-- AEMCS는 Lucene 인덱스만 지원하므로 향후 AEMCS로의 마이그레이션에 대비하려면 항상 Lucene 인덱스를 사용하십시오. 다음을 참조하십시오 [Lucene 인덱스 및 속성 인덱스 비교](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/practices/best-practices-for-queries-and-indexing.html?#lucene-or-property-indexes) 을 참조하십시오.
+- AEMCS는 Lucene 인덱스만 지원하므로 향후 AEMCS로의 마이그레이션에 대비하려면 항상 Lucene 인덱스를 사용하십시오. 다음을 참조하십시오 [Lucene 인덱스 및 속성 인덱스 비교](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/practices/best-practices-for-queries-and-indexing) 을 참조하십시오.
 
-- OOTB 인덱스와 동일한 노드 유형에 사용자 정의 인덱스를 생성하지 마십시오. 대신, 의 추가 속성을 사용하여 OOTB 인덱스를 맞춤화합니다. `indexRules` 노드. 예를 들어 `dam:Asset` 노드 유형(OOTB 사용자 정의) `damAssetLucene` 색인입니다. _이는 성능 및 기능 문제의 일반적인 근본 원인이었습니다_.
+- OOTB 인덱스와 동일한 노드 유형에 사용자 정의 인덱스를 생성하지 마십시오. 대신,에서 필요한 속성으로 OOTB 인덱스를 사용자 정의합니다. `indexRules` 노드. 예를 들어 `dam:Asset` 노드 유형(OOTB 사용자 정의) `damAssetLucene` 색인입니다. _이는 성능 및 기능 문제의 일반적인 근본 원인이었습니다_.
 
 - 또한 예를 들어 여러 노드 유형을 추가하지 마십시오 `cq:Page` 및 `cq:Tag` 색인 지정 규칙(`indexRules`) 노드. 대신 각 노드 유형에 대해 별도의 인덱스를 만듭니다.
 
-- 위의 섹션에서 언급했듯이 인덱스 정의를 다음 위치에 AEM 프로젝트에 저장합니다. `ui.apps/src/main/content/jcr_root/_oak_index` 및 Cloud Manager CI/CD 파이프라인을 사용하여 배포합니다. 다음을 참조하십시오 [사용자 정의 색인 정의 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?#deploying-custom-index-definitions) 을 참조하십시오.
+- 위의 섹션에서 언급했듯이 인덱스 정의를 다음 위치에 AEM 프로젝트에 저장합니다. `ui.apps/src/main/content/jcr_root/_oak_index` 및 Cloud Manager CI/CD 파이프라인을 사용하여 배포합니다. 다음을 참조하십시오 [사용자 정의 색인 정의 배포](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/indexing) 을 참조하십시오.
 
 - 색인 정의 지침은 다음과 같습니다.
    - 노드 유형(`jcr:primaryType`)은 다음과 같아야 합니다. `oak:QueryIndexDefinition`
@@ -118,7 +118,7 @@ AEM 인스턴스의 성능에 영향을 주지 않는 효율적이고 올바른 
 
 Assets에 대해 omnisearch를 수행하면 사용자 지정 색인의 예상 비용이 낮아 잘못된 결과가 반환됩니다.
 
-에서 사용자 정의 인덱스 만들기 안 함 `dam:Asset` 노드 유형(OOTB 사용자 정의) `damAssetLucene` 에서 추가 속성을 사용한 색인 `indexRules` 노드.
+에서 사용자 정의 인덱스 만들기 안 함 `dam:Asset` 노드 유형(OOTB 사용자 정의) `damAssetLucene` 에 필요한 속성이 있는 색인 `indexRules` 노드.
 
 #### 인덱싱 규칙에 있는 여러 노드 유형
 
@@ -130,7 +130,7 @@ Assets에 대해 omnisearch를 수행하면 사용자 지정 색인의 예상 �
 
 단일 인덱스에 여러 노드 유형을 추가하는 것은 권장되지 않지만, 노드 유형이 과 밀접한 관련이 있는 경우(예: ) 동일한 인덱스에 노드 유형을 인덱싱하는 것이 좋습니다. `cq:Page` 및 `cq:PageContent`.
 
-유효한 솔루션은 OOTB를 사용자 정의하는 것입니다 `cqPageLucene` 및 `damAssetLucene` 색인, 기존 아래에 추가 속성 추가 `indexRules` 노드.
+유효한 솔루션은 OOTB를 사용자 정의하는 것입니다 `cqPageLucene` 및 `damAssetLucene` 색인, 기존 아래에 필요한 속성 추가 `indexRules` 노드.
 
 #### 부재 `queryPaths` 속성
 
@@ -166,6 +166,78 @@ Assets에 대해 omnisearch를 수행하면 사용자 지정 색인의 예상 �
 
 에 대한 사용자 지정 인덱스를 만드는 올바른 사용 사례입니다. [고급 검색](https://jackrabbit.apache.org/oak/docs/query/lucene.html#advanced-search-features) 기능. 단, 인덱스 이름은 **\&lt;prefix>.\&lt;customindexname>-\&lt;version>-custom-\&lt;customversion>** 명명 규칙.
 
+## Apache Tika를 비활성화하여 인덱스 최적화
+
+AEM 사용 [아파치 티카](https://tika.apache.org/) 대상 _파일에서 메타데이터 및 텍스트 컨텐츠 추출_ PDF, Word, Excel 등의 형식입니다. 추출된 콘텐츠는 저장소에 저장되고 Oak Lucene 인덱스로 인덱싱됩니다.
+
+경우에 따라 사용자는 파일/에셋의 콘텐츠 내에서 검색할 능력이 필요하지 않습니다. 이러한 경우 Apache Tika를 비활성화하여 색인화 성능을 향상시킬 수 있습니다. 장점은 다음과 같습니다.
+
+- 신속한 인덱싱
+- 인덱스 크기 감소
+- 하드웨어 사용량 감소
+
+>[!CAUTION]
+>
+>Apache Tika를 비활성화하려면 먼저 검색 요구 사항에 에셋 콘텐츠 내에서 검색할 수 있는 기능이 필요하지 않은지 확인하십시오.
+
+
+### MIME 유형별 비활성화
+
+MIME 유형별로 Apache Tika를 비활성화하려면 다음 단계를 수행하십시오.
+
+- 추가 `tika` 노드 `nt:unstructured` 사용자 지정 또는 OOBT 색인 정의에 를 입력합니다. 다음 예에서는 OOTB에 대해 PDF MIME 유형을 비활성화합니다 `damAssetLucene` 색인입니다.
+
+```xml
+/oak:index/damAssetLucene
+    - jcr:primaryType = "oak:QueryIndexDefinition"
+    - type = "lucene"
+    ...
+    <tika jcr:primaryType="nt:unstructured">
+        <config.xml/>
+    </tika>
+```
+
+- 추가 `config.xml` 아래에 다음 세부 정보가 있는 `tika` 노드.
+
+```xml
+<properties>
+  <parsers>
+    <parser class="org.apache.tika.parser.EmptyParser">
+      <mime>application/pdf</mime>
+      <!-- Add more mime types to disable -->
+  </parsers>
+</properties>
+```
+
+- 저장된 인덱스를 새로 고치려면 `refresh` 다음으로 속성: `true` 색인 정의 노드 아래에서 [색인 정의 속성](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition:~:text=Defaults%20to%2010000-,refresh,-Optional%20boolean%20property) 을 참조하십시오.
+
+다음 이미지는 OOTB를 보여 줍니다 `damAssetLucene` 를 사용하여 색인 지정 `tika` 노드 및 `config.xml` PDF 및 기타 mime 유형을 비활성화하는 파일입니다.
+
+![tika 노드가 포함된 OOTB damAssetLucene 인덱스](./assets/understand-indexing-best-practices/ootb-index-with-tika-node.png)
+
+### 완전히 비활성화
+
+Apache Tika를 완전히 비활성화하려면 아래 단계를 수행하십시오.
+
+- 추가 `includePropertyTypes` 다음에서 속성: `/oak:index/<INDEX-NAME>/indexRules/<NODE-TYPE>` 값을 로 설정합니다. `String`. 예를 들어 아래 이미지에서는 `includePropertyTypes` 다음에 대한 속성이 추가됩니다. `dam:Asset` OOBT의 노드 유형 `damAssetLucene` 색인입니다.
+
+![IncludePropertyTypes 속성](./assets/understand-indexing-best-practices/includePropertyTypes-prop.png)
+
+- 추가 `data` 아래 속성 포함 `properties` 노드, 속성 정의 위의 첫 번째 노드인지 확인합니다. 예를 들어 아래 이미지 를 참조하십시오.
+
+```xml
+/oak:index/<INDEX-NAME>/indexRules/<NODE-TYPE>/properties/data
+    - jcr:primaryType = "nt:unstructured"
+    - type = "String"
+    - name = "jcr:data"
+    - nodeScopeIndex = false
+    - propertyIndex = false
+    - analyze = false
+```
+
+![데이터 속성](./assets/understand-indexing-best-practices/data-prop.png)
+
+- 를 설정하여 업데이트된 색인 정의 색인 재지정 `reindex` 다음으로 속성: `true` 를 입력합니다.
 
 ## 유용한 도구
 
@@ -201,6 +273,7 @@ Assets에 대해 omnisearch를 수행하면 사용자 지정 색인의 예상 �
 
 자세한 내용은 다음 설명서를 참조하십시오.
 
-- [Oak 쿼리 및 색인 지정](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/deploying/queries-and-indexing.html)
-- [쿼리 및 색인화 모범 사례](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/query-and-indexing-best-practices.html)
-- [쿼리 및 색인 생성에 대한 우수 사례](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/practices/best-practices-for-queries-and-indexing.html)
+- [Oak 쿼리 및 색인 지정](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/queries-and-indexing)
+- [쿼리 및 색인화 모범 사례](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/query-and-indexing-best-practices)
+- [쿼리 및 색인 생성에 대한 우수 사례](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/practices/best-practices-for-queries-and-indexing)
+
