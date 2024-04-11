@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 3f30c5bc85b09e2f3bc17fa591a85cd92c811126
+source-git-commit: d62332374e8885e077f8227bcdec6a908c782ccc
 workflow-type: tm+mt
-source-wordcount: '1168'
+source-wordcount: '1171'
 ht-degree: 17%
 
 ---
@@ -393,3 +393,4 @@ ht-degree: 17%
          + [Edge Delivery Services의 이벤트 게시, 게시 취소](./expert-resources/cloud-5/season-3/cloud5-publish-events.md)
          + [쿼리 인덱스 및 Excel 공식](./expert-resources/cloud-5/season-3/cloud5-query-indexes.md)
          + [고유한 Cloudflare CDN 가져오기](./expert-resources/cloud-5/season-3/cloud5-byo-cloudflare-cdn.md)
+         + [AEM Assets 통합](./expert-resources/cloud-5/season-3/cloud5-integrate-assets.md)
