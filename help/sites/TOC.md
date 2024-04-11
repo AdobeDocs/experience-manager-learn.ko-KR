@@ -6,9 +6,9 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
+source-git-commit: be3f8fe8ae5c76e17325fd87d0924cc27f8c3e60
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '501'
 ht-degree: 19%
 
 ---
@@ -36,6 +36,7 @@ ht-degree: 19%
       + [이미지 대체 텍스트](./document-authoring/how-to/image-alt-text.md)
       + [검색 엔진 색인화 방지](./document-authoring/how-to/no-index.md)
       + [응답형 탐색](document-authoring/how-to/responsive-navigation.md)
+      + [GenAI 프롬프트 템플릿](./document-authoring/how-to/prompt-templates-for-content-variations.md)
 + 페이지 작성 {#page-authoring}
    + [작성](page-authoring/aem-sites-authoring-overview.md)
    + [탐색](page-authoring/basic-handling-sites-feature-video-use.md)
@@ -56,7 +57,7 @@ ht-degree: 19%
    + [론치](page-authoring/launches.md)
    + 동료로부터 학습 {#expert-advice}
       + [사이트 계층 구조 팁](page-authoring/expert-advice/site-hierarchy.md)
-+ 생성 AI {#generative-ai}
++ 생성형 AI {#generative-ai}
    + [변형 생성](./generative-ai/generate-variations.md)
 + 콘텐츠 조각 {#content-fragments}
    + [콘텐츠 조각 콘솔](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html){target=_blank}
