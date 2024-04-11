@@ -6,9 +6,9 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: be3f8fe8ae5c76e17325fd87d0924cc27f8c3e60
+source-git-commit: d75c9913e8401bcf86440c0d256b9c3a9d780bbc
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '517'
 ht-degree: 19%
 
 ---
@@ -36,7 +36,11 @@ ht-degree: 19%
       + [이미지 대체 텍스트](./document-authoring/how-to/image-alt-text.md)
       + [검색 엔진 색인화 방지](./document-authoring/how-to/no-index.md)
       + [응답형 탐색](document-authoring/how-to/responsive-navigation.md)
+      + [변형 생성](./document-authoring/how-to/generate-variations.md)
+      + [변형 생성을 위한 Sidekick 구성](./document-authoring/how-to/generate-variations-sidekick-config.md)
       + [GenAI 프롬프트 템플릿](./document-authoring/how-to/prompt-templates-for-content-variations.md)
+      + [GenAI 사용자 정의 프롬프트 템플릿](./document-authoring/how-to/custom-prompt-templates.md)
+      + [GenAI 사용자 정의 프롬프트 템플릿 저장](./document-authoring/how-to/save-custom-prompt-template.md)
 + 페이지 작성 {#page-authoring}
    + [작성](page-authoring/aem-sites-authoring-overview.md)
    + [탐색](page-authoring/basic-handling-sites-feature-video-use.md)
