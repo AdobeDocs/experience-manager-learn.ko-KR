@@ -10,9 +10,9 @@ thumbnail: 335476.jpeg
 last-substantial-update: 2022-09-16T00:00:00Z
 exl-id: a3a9bf59-e9a2-4322-ac93-9c12c70b9a75
 duration: 492
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: a18bf2c8b57eaaac3686a26fa1fb39e6fc075af5
 workflow-type: tm+mt
-source-wordcount: '57'
+source-wordcount: '122'
 ht-degree: 1%
 
 ---
@@ -94,3 +94,5 @@ package com.adobe.aem.wknd.examples.core.adventures;
 
 import org.osgi.annotation.versioning.Version;
 ```
+
+추가 `package-info.java` AEM의 다른 OSGi 번들이 OSGi 서비스 인터페이스(또는 모든 Java 클래스)를 확인할 수 있도록 하는 데 필요합니다. 다음과 같은 경우 `package-info.java` 가 누락되었습니다. Java 패키지 및 해당 Java 인터페이스 또는 클래스는 내보내지지 않습니다. 이 Java 패키지에서 이러한 Java 인터페이스 또는 클래스를 가져오려고 하는 다른 OSGi 번들에는 오류가 표시됩니다 __해결할 수 없음__ AEM OSGi 번들 콘솔에서 다음을 수행합니다.
