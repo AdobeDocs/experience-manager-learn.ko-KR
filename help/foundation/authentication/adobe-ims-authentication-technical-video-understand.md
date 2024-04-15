@@ -12,9 +12,9 @@ exl-id: 52dd8a3f-6461-4acb-87ca-5dd9567d15a6
 last-substantial-update: 2022-10-01T00:00:00Z
 thumbnail: KT-781.jpg
 duration: 431
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: c692ad17a27f244764e3f7c63fc49f54ae4e97e6
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '399'
 ht-degree: 0%
 
 ---
@@ -40,11 +40,7 @@ Adobe Experience Manager은 AEM 인스턴스에 대한 Admin Console 지원 및 
 
 Admin Console 및 Adobe Experience Manager 모두에서 사용자 수준에서 권한 및 액세스를 적용하지 않아야 합니다.
 
-에서 Admin Console 사용자에게는 제품 컨텍스트 수준의 사용자 그룹을 통해 액세스 권한이 부여되어야 합니다. 사용자 그룹은 일반적으로 Adobe Experience Cloud 제품 전반에 걸쳐 그룹의 재사용성을 홍보하기 위해 조직 내 논리적 역할로 가장 잘 표현됩니다.
-
->[!NOTE]
->
-> AEM as a Cloud Service을 사용하는 경우 Admin Console 사용자를 제품 프로필에 직접 할당합니다. Admin Console AEM 사용자 그룹을 통해 제품 프로필로 Admin Console 사용자 간 전이적 권한은 as a Cloud Service으로 지원되지 않습니다.
+Admin Console에서 사용자에게 제품 컨텍스트 수준의 사용자 그룹을 통한 액세스 권한이 부여되어야 합니다. 사용자 그룹은 일반적으로 Adobe Experience Cloud 제품 전반에 걸쳐 그룹의 재사용성을 홍보하기 위해 조직 내 논리적 역할로 가장 잘 표현됩니다.
 
 ### Adobe Experience Manager에서 권한 적용
 
