@@ -8,9 +8,10 @@ role: Developer
 level: Experienced
 jira: KT-15286
 last-substantial-update: 2024-04-05T00:00:00Z
-source-git-commit: 73c15a195c438dd7a07142bba719c6f820bf298a
+exl-id: 099aaeaf-2514-4459-81a7-2843baa1c981
+source-git-commit: 537ed10fc056348266472f3e4a59cbcbf1afdca1
 workflow-type: tm+mt
-source-wordcount: '161'
+source-wordcount: '148'
 ht-degree: 0%
 
 ---
@@ -18,7 +19,7 @@ ht-degree: 0%
 # GuideBridge API를 사용하여 양식 데이터 POST
 
 양식에 대한 &quot;저장 및 다시 시작&quot;에는 사용자가 양식 작성 진행 상황을 저장하고 나중에 다시 시작할 수 있도록 허용하는 작업이 포함됩니다.
-적응형 Forms에서 지리적 위치 API를 사용하려면 다음 단계를 따르십시오. 이 사용 사례를 달성하려면 저장 및 검색을 위해 GuideBridge API를 사용하여 양식 데이터에 액세스하여 REST 엔드포인트로 전송해야 합니다.
+이 사용 사례를 달성하려면 저장 및 검색을 위해 GuideBridge API를 사용하여 양식 데이터에 액세스하여 REST 엔드포인트로 전송해야 합니다.
 
 양식 데이터는 규칙 편집기를 사용하여 단추의 클릭 이벤트에 저장됩니다
 ![규칙 편집자](assets/rule-editor.png)
@@ -32,33 +33,35 @@ ht-degree: 0%
 * @param {string} endpoint in Stringformat
 * @return {string} 
  */
-
-function submitFormDataAndAttachments(endpoint) {
-
+ 
+ function submitFormDataAndAttachments(endpoint) {
     guideBridge.getFormDataObject({
         success: function(resultObj) {
-            afFormData = resultObj.data.data;
-            var formData = new FormData();
+            const afFormData = resultObj.data.data;
+            const formData = new FormData();
             formData.append("dataXml", afFormData);
-            for (i = 0; i < resultObj.data.attachments.length; i++) {
-                var attachment = resultObj.data.attachments[i];
+            resultObj.data.attachments.forEach(attachment => {
                 console.log(attachment.name);
                 formData.append(attachment.name, attachment.data);
-            }
-            var xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status == 200) {
+            });
+            fetch(endpoint, {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => {
+                if (response.ok) {
                     console.log("successfully saved");
-                    var fld = guideBridge.resolveNode("$form.confirmation");
-                    return " Form data was saved successfully";
-
+                    const fld = guideBridge.resolveNode("$form.confirmation");
+                    return "Form data was saved successfully";
+                } else {
+                    throw new Error('Failed to save form data');
                 }
-            };
-            xhttp.open('POST', endpoint)
-            xhttp.send(formData);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
         }
     });
-
 }
 ```
 
