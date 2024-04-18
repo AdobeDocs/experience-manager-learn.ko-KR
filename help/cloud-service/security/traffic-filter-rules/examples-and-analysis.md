@@ -12,9 +12,9 @@ jira: KT-13148
 thumbnail: KT-13148.jpeg
 exl-id: 49becbcb-7965-4378-bb8e-b662fda716b7
 duration: 626
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 7f0f4d1b739cb63b96afc08eb31ab72a507c4722
 workflow-type: tm+mt
-source-wordcount: '1449'
+source-wordcount: '1472'
 ht-degree: 0%
 
 ---
@@ -218,6 +218,8 @@ data:
 또한 **클라이언트 IP, 국가 및 사용자 에이전트별 상위 100개 공격** 패널에는 규칙 구성을 추가로 최적화하는 데 사용할 수 있는 추가 세부 정보가 표시됩니다.
 
 ![ELK Tool Dashboard DoS 상위 100개 요청](./assets/elk-tool-dashboard-dos-top-100.png)
+
+DoS 및 DDoS 공격을 방지하는 방법에 대한 자세한 내용은 [트래픽 필터 규칙을 사용하여 DoS 및 DDoS 공격 차단](../dos/blocking-dos-attack-using-traffic-filter-rules.md) 튜토리얼.
 
 ### WAF 규칙
 
