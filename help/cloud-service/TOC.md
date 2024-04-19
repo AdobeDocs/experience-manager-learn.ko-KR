@@ -6,7 +6,7 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 7f0f4d1b739cb63b96afc08eb31ab72a507c4722
+source-git-commit: 2ab958f672b0d5b029bcdf7937b2f72d43ba651f
 workflow-type: tm+mt
 source-wordcount: '1179'
 ht-degree: 17%
@@ -161,7 +161,7 @@ ht-degree: 17%
       + [Java SQL API를 사용한 SQL 연결](./networking/examples/sql-java-apis.md)
       + [이메일 서비스](./networking/examples/email-service.md)
 + 보안 {#security}
-   + [트래픽 필터 규칙을 사용한 DoS/DDoS 공격 차단](./security/dos/blocking-dos-attack-using-traffic-filter-rules.md)
+   + [트래픽 필터 규칙을 사용한 DoS/DDoS 공격 차단](./security/blocking-dos-attack-using-traffic-filter-rules.md)
    + WAF 규칙을 포함한 트래픽 필터 규칙{#traffic-filter-and-waf-rules}
       + [개요](./security/traffic-filter-rules/overview.md)
       + [설정 방법](./security/traffic-filter-rules/how-to-setup.md)
