@@ -10,7 +10,7 @@ level: Beginner
 exl-id: 4e69e115-12a6-4a57-90da-b91e345c6723
 last-substantial-update: 2023-08-08T00:00:00Z
 duration: 595
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 153ce0ff2d433bdbce05ef7fba4856356c0f6d4c
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 0%
@@ -70,7 +70,7 @@ ht-degree: 0%
 ### SSL 설정 확인
 
 1. SSL을 확인하려면 __HTTPS URL로 이동__ 단추를 클릭합니다.
-1. selg-signed 인증서를 사용하는 경우 `Your connection is not private` 오류.
+1. 자체 서명된 인증서를 사용하는 경우 다음과 같이 표시됩니다. `Your connection is not private` 오류.
 
    ![SSL 설정 - HTTPS에서 AEM 확인](assets/use-the-ssl-wizard/verify-aem-over-ssl.png)
 
