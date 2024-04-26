@@ -9,10 +9,11 @@ level: Intermediate
 jira: KT-9350
 thumbnail: KT-9350.jpeg
 exl-id: 5c1ff98f-d1f6-42ac-a5d5-676a54ef683c
+last-substantial-update: 2024-04-26T00:00:00Z
 duration: 906
-source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
+source-git-commit: 4e3f77a9e687042901cd3b175d68a20df63a9b65
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1280'
 ht-degree: 2%
 
 ---
@@ -25,15 +26,16 @@ ht-degree: 2%
 
 유연한 포트 이그레스에서는 사용자 지정 특정 포트 전달 규칙을 AEM에 as a Cloud Service으로 첨부할 수 있으므로 AEM에서 외부 서비스에 연결할 수 있습니다.
 
-Cloud Manager 프로그램에는 __단일__ 네트워크 인프라 유형. 전용 이그레스 IP 주소가 가장 큰지 확인합니다. [적절한 유형의 네트워크 인프라](./advanced-networking.md)  다음 명령을 실행하기 전에 AEM에서 as a Cloud Service으로 확인하십시오.
+Cloud Manager 프로그램에는 __단일__ 네트워크 인프라 유형. 유연한 포트 이그레스가 가장 적합한지 확인합니다. [적절한 유형의 네트워크 인프라](./advanced-networking.md) 다음 명령을 실행하기 전에 AEM에서 as a Cloud Service으로 확인하십시오.
 
 >[!MORELIKETHIS]
 >
-> AEM as a Cloud Service 읽기 [고급 네트워크 구성 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html#flexible-port-egress) 유연한 포트 이그레스에 대한 자세한 내용.
+> AEM as a Cloud Service 읽기 [고급 네트워크 구성 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking) 유연한 포트 이그레스에 대한 자세한 내용.
+
 
 ## 사전 요구 사항
 
-유연한 포트 이그레스를 설정할 때 필요한 사항은 다음과 같습니다.
+Cloud Manager API를 사용하여 유연한 포트 이그레스를 설정하거나 구성할 때 필요한 사항은 다음과 같습니다.
 
 + Cloud Manager API가 활성화된 Adobe Developer 콘솔 프로젝트 및 [Cloud Manager 비즈니스 소유자 권한](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/)
 + 액세스 대상: [Cloud Manager API 인증 자격 증명](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)
@@ -49,13 +51,45 @@ Cloud Manager 프로그램에는 __단일__ 네트워크 인프라 유형. 전�
 
 이 튜토리얼에서는 `curl` Cloud Manager API 구성을 만듭니다. 제공된 `curl` 명령은 Linux/macOS 구문을 사용합니다. Windows 명령 프롬프트를 사용하는 경우 `\` 줄 바꿈 문자 `^`.
 
+
 ## 프로그램당 유연한 포트 이그레스 활성화
 
 AEMas a Cloud Service 에서 유연한 포트 이그레스를 활성화하여 시작합니다.
 
+>[!BEGINTABS]
+
+>[!TAB Cloud Manager]
+
+Cloud Manager를 사용하여 유연한 포트 이그레스를 활성화할 수 있습니다. 다음 단계에서는 Cloud Manager를 사용하여 AEM에서 as a Cloud Service으로 유연한 포트 이그레스를 활성화하는 방법에 대해 간략히 설명합니다.
+
+1. 에 로그인합니다 [Adobe Experience Manager Cloud Manager](https://experience.adobe.com/cloud-manager/) as a Cloud Manager 비즈니스 소유자.
+1. 원하는 프로그램으로 이동합니다.
+1. 왼쪽 메뉴에서 다음 위치로 이동합니다. __서비스 > 네트워크 인프라__.
+1. 다음 항목 선택 __네트워크 인프라 추가__ 단추를 클릭합니다.
+
+   ![네트워크 인프라 추가](./assets/cloud-manager__add-network-infrastructure.png)
+
+1. 다음에서 __네트워크 인프라 추가__ 대화 상자에서 __유연한 포트 이그레스__ 옵션을 선택하고 __지역__ 전용 이그레스 IP 주소를 만듭니다.
+
+   ![유연한 포트 이그레스 추가](./assets/flexible-port-egress/select-type.png)
+
+1. 선택 __저장__ 유연한 포트 이그레스의 추가를 확인합니다.
+
+   ![유연한 포트 이그레스 생성 확인](./assets/flexible-port-egress/confirmation.png)
+
+1. 네트워크 인프라가 만들어지고 다음으로 표시될 때까지 대기 __준비__. 이 프로세스는 최대 1시간 정도 소요될 수 있습니다.
+
+   ![유연한 포트 이그레스 생성 상태](./assets/flexible-port-egress/ready.png)
+
+유연한 포트 이그레스가 생성되면 아래에 설명된 대로 Cloud Manager API를 사용하여 포트 전달 규칙을 구성할 수 있습니다.
+
+>[!TAB Cloud Manager API]
+
+Cloud Manager API를 사용하여 유연한 포트 이그레스를 활성화할 수 있습니다. 다음 단계에서는 Cloud Manager API를 사용하여 AEM에서 as a Cloud Service으로 유연한 포트 이그레스를 활성화하는 방법에 대해 설명합니다.
+
 1. 먼저 Cloud Manager API를 사용하여에서 고급 네트워킹이 설정된 영역을 확인합니다 [listRegion](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) 작업. 다음 `region name` 는 후속 Cloud Manager API를 호출하는 데 필요합니다. 일반적으로 프로덕션 환경이 있는 영역이 사용됩니다.
 
-   에서 AEM as a Cloud Service 환경 지역 찾기 [Cloud Manager](https://my.cloudmanager.adobe.com) 다음 아래에 [환경 세부 정보](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en#viewing-environment). Cloud Manager에 표시되는 지역 이름은 다음과 같을 수 있습니다. [지역 코드에 매핑됨](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) cloud Manager API에 사용됩니다.
+   에서 AEM as a Cloud Service 환경 지역 찾기 [Cloud Manager](https://my.cloudmanager.adobe.com) 다음 아래에 [환경 세부 정보](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments). Cloud Manager에 표시되는 지역 이름은 다음과 같을 수 있습니다. [지역 코드에 매핑됨](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) cloud Manager API에 사용됩니다.
 
    __listRegions HTTP 요청__
 
@@ -67,7 +101,7 @@ AEMas a Cloud Service 에서 유연한 포트 이그레스를 활성화하여 �
        -H 'Content-Type: application/json' 
    ```
 
-1. Cloud Manager API를 사용하여 Cloud Manager 프로그램에 대해 유연한 포트 이그레스 활성화 [createNetworkInfrastructure](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) 작업. 적절한 항목 사용 `region` Cloud Manager API에서 가져온 코드 `listRegions` 작업.
+2. Cloud Manager API를 사용하여 Cloud Manager 프로그램에 대해 유연한 포트 이그레스 활성화 [createNetworkInfrastructure](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) 작업. 적절한 항목 사용 `region` Cloud Manager API에서 가져온 코드 `listRegions` 작업.
 
    __createNetworkInfrastructure HTTP 요청__
 
@@ -82,7 +116,7 @@ AEMas a Cloud Service 에서 유연한 포트 이그레스를 활성화하여 �
 
    Cloud Manager 프로그램이 네트워크 인프라를 프로비저닝할 때까지 15분 동안 기다립니다.
 
-1. 환경이 완료되었는지 확인합니다. __유연한 포트 이그레스__ cloud Manager API를 사용한 구성 [getNetworkInfrastructure](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) 작업, 사용 `id` 이전 단계의 createNetworkInfrastructure HTTP 요청에서 반환되었습니다.
+3. 환경이 완료되었는지 확인합니다. __유연한 포트 이그레스__ cloud Manager API를 사용한 구성 [getNetworkInfrastructure](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) 작업, 사용 `id` 에서 반환됨 `createNetworkInfrastructure` 이전 단계의 HTTP 요청입니다.
 
    __getNetworkInfrastructure HTTP 요청__
 
@@ -95,6 +129,10 @@ AEMas a Cloud Service 에서 유연한 포트 이그레스를 활성화하여 �
    ```
 
    HTTP 응답에 __상태__ / __준비__. 아직 준비되지 않은 경우 몇 분마다 상태를 다시 확인하십시오.
+
+유연한 포트 이그레스가 생성되면 아래에 설명된 대로 Cloud Manager API를 사용하여 포트 전달 규칙을 구성할 수 있습니다.
+
+>[!ENDTABS]
 
 ## 환경별로 유연한 포트 이그레스 프록시 구성
 
@@ -185,7 +223,7 @@ AEM은 AEM HTTP/HTTPS 프록시에 매핑되는 두 세트의 특수 Java™ 시
 
 >[!TIP]
 >
-> 다음에 대한 AEM as a Cloud Service의 유연한 포트 이그레스 설명서 를 참조하십시오. [전체 라우팅 규칙 세트](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html#flexible-port-egress-traffic-routing).
+> 다음에 대한 AEM as a Cloud Service의 유연한 포트 이그레스 설명서 를 참조하십시오. [전체 라우팅 규칙 세트](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking).
 
 #### 코드 예
 
