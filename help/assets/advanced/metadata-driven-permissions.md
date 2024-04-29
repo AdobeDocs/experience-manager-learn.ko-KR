@@ -9,9 +9,10 @@ level: Intermediate
 jira: KT-13757
 thumbnail: xx.jpg
 doc-type: Tutorial
-source-git-commit: 3b500873ee7307df590ac66dea541a1adf14d726
+exl-id: 57478aa1-c9ab-467c-9de0-54807ae21fb1
+source-git-commit: 03cb7ef0cf79a21ec1b96caf6c11e6f5119f777c
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '682'
 ht-degree: 0%
 
 ---
@@ -42,15 +43,14 @@ ht-degree: 0%
    ```json
    {
      "restrictionPropertyNames":[
-       "status"
+       "status",
+       "brand"
      ],
-     "restrictionPaths":[
-       "/content/dam"
-     ]
+     "enabled":true
    }
    ```
 
-1. 속성 이름 및 제한 경로를 필요한 값으로 바꿉니다.
+1. 속성 이름을 필수 값으로 바꿉니다.
 
 
 제한 기반 액세스 제어 항목을 추가하기 전에 자산에 대한 권한 평가의 대상인 모든 그룹(예: &quot;기여자&quot; 또는 이와 유사한 그룹)에 대한 읽기 액세스를 먼저 거부하도록 새로운 최상위 항목을 추가해야 합니다.
