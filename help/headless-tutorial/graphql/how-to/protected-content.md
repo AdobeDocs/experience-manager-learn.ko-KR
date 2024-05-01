@@ -7,18 +7,24 @@ feature: GraphQL API
 role: Developer, Architect
 level: Intermediate
 jira: KT-15233
-last-substantial-update: 2024-04-01T00:00:00Z
-source-git-commit: c498783aceaf3bb389baaeaeefbe9d8d0125a82e
+last-substantial-update: 2024-05-01T00:00:00Z
+exl-id: c4b093d4-39b8-4f0b-b759-ecfbb6e9e54f
+source-git-commit: a3d2b2343269d2cfc7cecc5817ef1e07a66a88d3
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '1151'
 ht-degree: 0%
 
 ---
 
-
 # AEM Headless에서 콘텐츠 보호
 
 AEM Publish에서 AEM Headless 콘텐츠를 제공할 때 데이터의 무결성과 보안을 유지하는 것은 중요한 콘텐츠를 제공할 때 중요합니다. 이 방법은 AEM Headless GraphQL API 엔드포인트에서 제공하는 콘텐츠를 보호하는 방법을 안내합니다.
+
+이 자습서의 안내서에서는 콘텐츠를 특정 사용자 또는 사용자 그룹만 사용할 수 있도록 하는 데 필요한 엄격한 요구 사항이 있습니다. 개인화된 마케팅 콘텐츠와 PII 또는 개인 금융 데이터와 같은 개인 콘텐츠를 구별하여 혼동과 의도하지 않은 결과를 피하는 것이 중요합니다. 이 튜토리얼에서는 개인 콘텐츠 보호에 대해 설명합니다.
+
+마케팅 콘텐츠를 논할 때, 우리는 개인 사용자 또는 그룹에 맞는 콘텐츠를 언급하고 있으며, 이는 일반적인 소비를 위한 것이 아닙니다. 그러나 이 콘텐츠는 특정 사용자를 대상으로 할 수 있지만 의도한 컨텍스트(예: HTTP 요청 조작을 통해)를 벗어나면 보안, 법적 또는 평판 상의 위험이 발생하지 않는다는 사실을 이해하는 것이 중요합니다.
+
+이 문서에서 다루는 모든 콘텐츠는 비공개로 가정되며, 지정된 사용자 또는 그룹만 볼 수 있음을 강조한다. 마케팅 컨텐츠는 보호가 필요하지 않은 경우가 많으며, 대신 애플리케이션에 의해 특정 사용자에게 전달되는 것을 관리하고 성능을 위해 캐시될 수 있습니다.
 
 이 방법 은 다음을 포함하지 않습니다.
 
@@ -114,4 +120,3 @@ Dispatcher 프로젝트의 Apache 구성 파일에 다음 규칙을 추가하여
 ## AEM Headless GraphQL API 엔드포인트 보호
 
 이 안내서에서는 보안 문제를 해결하지 않습니다. [AEM 헤드리스 GraphQL API 엔드포인트](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/graphql-api/graphql-endpoint) 그 자체이지만, 오히려 그들이 제공하는 콘텐츠를 확보하는 데 주력한다. 익명 사용자를 포함한 모든 사용자는 보호된 콘텐츠가 포함된 엔드포인트에 액세스할 수 있습니다. 사용자의 [폐쇄된 사용자 그룹]이 액세스할 수 있는 컨텐츠만 반환됩니다. 콘텐츠에 액세스할 수 없는 경우 AEM Headless API 응답에는 여전히 200개의 HTTP 응답 상태 코드가 있지만 결과는 비어 있습니다. 일반적으로 콘텐츠 보안은 엔드포인트 자체가 기본적으로 중요한 데이터를 노출하지 않으므로 충분합니다. 끝점을 보호해야 하는 경우 를 통해 AEM 게시에서 끝점에 ACL을 적용합니다. [Sling 저장소 초기화(repoinit) 스크립트](https://sling.apache.org/documentation/bundles/repository-initialization.html#repoinit-parser-test-scenarios).
-
