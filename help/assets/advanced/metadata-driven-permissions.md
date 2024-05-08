@@ -7,12 +7,12 @@ feature: User and Groups
 role: Admin
 level: Intermediate
 jira: KT-13757
-thumbnail: xx.jpg
 doc-type: Tutorial
+last-substantial-update: 2024-05-03T00:00:00Z
 exl-id: 57478aa1-c9ab-467c-9de0-54807ae21fb1
-source-git-commit: 03cb7ef0cf79a21ec1b96caf6c11e6f5119f777c
+source-git-commit: 98b26eb15c2fe7d1cf73fe028b2db24087c813a5
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '738'
 ht-degree: 0%
 
 ---
@@ -31,14 +31,13 @@ ht-degree: 0%
 
 메타데이터 기반 권한을 설정하려면 최신 버전으로 업데이트된 AEM as a Cloud Service 환경에 액세스해야 합니다.
 
+## OSGi 구성 {#configure-permissionable-properties}
 
-## 개발 단계
+메타데이터 기반 권한을 구현하려면 개발자가 AEMas a Cloud Service 에 OSGi 구성을 배포해야 합니다. 이 구성을 통해 특정 에셋 메타데이터 속성을 통해 메타데이터 기반 권한을 강화할 수 있습니다.
 
-메타데이터 기반 권한을 구현하려면 다음을 수행합니다.
-
-1. 액세스 제어에 사용할 자산 메타데이터 속성을 결정합니다. 이 경우 라는 속성이 됩니다. `status`.
-1. OSGi 구성 만들기 `com.adobe.cq.dam.assetmetadatarestrictionprovider.impl.DefaultRestrictionProviderConfiguration.cfg.json` 을 참조하십시오.
-1. 다음 JSON을 생성된 파일에 붙여넣기
+1. 액세스 제어에 사용할 자산 메타데이터 속성을 결정합니다. 속성 이름은 에셋의 JCR 속성 이름입니다 `jcr:content/metadata` 리소스. 이 경우 라는 속성이 됩니다. `status`.
+1. OSGi 구성 만들기 `com.adobe.cq.dam.assetmetadatarestrictionprovider.impl.DefaultRestrictionProviderConfiguration.cfg.json` AEM Maven 프로젝트에서
+1. 작성된 파일에 다음 JSON 붙여넣기:
 
    ```json
    {
@@ -52,34 +51,39 @@ ht-degree: 0%
 
 1. 속성 이름을 필수 값으로 바꿉니다.
 
+## 기본 에셋 권한 재설정
 
 제한 기반 액세스 제어 항목을 추가하기 전에 자산에 대한 권한 평가의 대상인 모든 그룹(예: &quot;기여자&quot; 또는 이와 유사한 그룹)에 대한 읽기 액세스를 먼저 거부하도록 새로운 최상위 항목을 추가해야 합니다.
 
-1. 도구 → 보안 → 권한 화면으로 이동합니다
-1. &quot;기여자&quot; 그룹(또는 모든 사용자 그룹이 속한 다른 사용자 지정 그룹)을 선택합니다
-1. 화면 오른쪽 상단에 있는 &quot;ACE 추가&quot;를 클릭합니다
-1. /content/dam 을 경로에 대해 선택합니다.
-1. 권한에 대한 jcr:read 입력
-1. 권한 유형에 대해 거부 선택
-1. Restrictions에서 rep:ntNames 를 선택하고 dam:Asset 를 Restriction 값으로 입력합니다
-1. 저장을 클릭합니다.
+1. 다음 위치로 이동 __도구 → 보안 → 권한__ 화면
+1. 다음 항목 선택 __참가자__ 그룹(또는 모든 사용자 그룹이 속한 다른 사용자 지정 그룹)
+1. 클릭 __ACE 추가__ 화면의 오른쪽 상단
+1. 선택 `/content/dam` 대상 __경로__
+1. 입력 `jcr:read` 대상 __권한__
+1. 선택 `Deny` 대상 __권한 유형__
+1. 제한에서 다음을 선택합니다. `rep:ntNames` 및 입력 `dam:Asset` (으)로 __제한 값__
+1. 클릭 __저장__
 
 ![액세스 거부](./assets/metadata-driven-permissions/deny-access.png)
 
-이제 액세스 제어 항목을 추가하여 에셋 메타데이터 속성 값에 따라 사용자 그룹에 읽기 액세스 권한을 부여할 수 있습니다.
+## 메타데이터별 자산에 대한 액세스 권한 부여
 
-1. 도구 → 보안 → 권한 화면으로 이동합니다
-1. 원하는 그룹 선택
-1. 화면 오른쪽 상단에 있는 &quot;ACE 추가&quot;를 클릭합니다
-1. Path로 /content/dam(또는 하위 폴더) 선택
-1. 권한에 대한 jcr:read 입력
-1. 권한 유형에 대한 허용 선택
-1. 제한에서 구성된 에셋 메타데이터 속성 이름 중 하나를 선택합니다(OSGi 구성에 정의된 속성이 여기에 포함됨).
-1. 제한 값 필드에 필요한 메타데이터 속성 값을 입력합니다
-1. &quot;+&quot; 아이콘을 클릭하여 액세스 제어 항목에 제한 사항을 추가합니다.
-1. 저장을 클릭합니다.
+이제 액세스 제어 항목을 추가하여 다음을 기반으로 사용자 그룹에 대한 읽기 액세스 권한을 부여할 수 있습니다. [구성된 에셋 메타데이터 속성 값](#configure-permissionable-properties).
+
+1. 다음 위치로 이동 __도구 → 보안 → 권한__ 화면
+1. 에셋에 액세스할 수 있는 사용자 그룹 선택
+1. 클릭 __ACE 추가__ 화면의 오른쪽 상단
+1. 선택 `/content/dam` (또는 하위 폴더) __경로__
+1. 입력 `jcr:read` 대상 __권한__
+1. 선택 `Allow` 대상 __권한 유형__
+1. 아래 __제한 사항__, 다음 중 하나를 선택합니다. [osgi 구성에서 구성된 에셋 메타데이터 속성 이름](#configure-permissionable-properties)
+1. 에 필요한 메타데이터 속성 값을 입력합니다. __제한 값__ 필드
+1. 다음을 클릭합니다. __+__ 액세스 제어 항목에 제한을 추가하는 아이콘
+1. 클릭 __저장__
 
 ![액세스 허용](./assets/metadata-driven-permissions/allow-access.png)
+
+## 적용된 메타데이터 기반 권한
 
 예제 폴더에는 두 개의 자산이 있습니다.
 
@@ -101,10 +105,10 @@ ht-degree: 0%
 >
 > 주의해야 할 사항:
 > 
-> - 메타데이터 속성은 문자열 같음(예: 날짜)을 사용하여 제한에 대해 평가됩니다.
+> - 메타데이터 속성은 다음을 사용하여 제한에 대해 평가됩니다. __문자열 같음__ (`=`) ( 보다 큰 경우 다른 데이터 유형 또는 연산자는 아직 지원되지 않습니다.)`>`) 또는 날짜 속성)
 > - 제한 속성에 대해 여러 값을 허용하려면 &quot;유형 선택&quot; 드롭다운에서 동일한 속성을 선택하고 새 제한 값을 입력하여 액세스 제어 항목에 추가 제한을 추가할 수 있습니다(예: `status=approved`, `status=wip`) &quot;+&quot;를 클릭하여 항목에 제한 추가
 > ![다중 값 허용](./assets/metadata-driven-permissions/allow-multiple-values.png)
-> - 속성 이름이 다른 단일 액세스 제어 항목의 여러 제한 사항(예: `status=approved`, `brand=Adobe`)은 AND 조건으로 평가됩니다. 즉, 선택한 사용자 그룹에게 와 함께 에셋에 대한 읽기 액세스 권한이 부여됩니다. `status=approved AND brand=Adobe`
+> - __AND 제한__ 는 다른 속성 이름을 가진 단일 액세스 제어 항목의 여러 제한을 통해 지원됩니다(예: `status=approved`, `brand=Adobe`)은 AND 조건으로 평가됩니다. 즉, 선택한 사용자 그룹에게 와 함께 에셋에 대한 읽기 액세스 권한이 부여됩니다. `status=approved AND brand=Adobe`
 > ![여러 제한 허용](./assets/metadata-driven-permissions/allow-multiple-restrictions.png)
-> - 메타데이터 속성 제한을 사용하여 새 액세스 제어 항목을 추가하면 항목(예: 제한이 있는 단일 항목)에 대한 OR 조건이 설정됩니다 `status=approved` 및 단일 항목 `brand=Adobe` 이(가) 다음으로 평가됨: `status=approved OR brand=Adobe`
+> - __OR 제한__ 는 메타데이터 속성 제한이 있는 새 액세스 제어 항목을 추가하여 지원됩니다. 이 항목은 제한이 있는 단일 항목과 같은 항목에 대한 OR 조건을 설정합니다. `status=approved` 및 단일 항목 `brand=Adobe` 이(가) 다음으로 평가됨: `status=approved OR brand=Adobe`
 > ![여러 제한 허용](./assets/metadata-driven-permissions/allow-multiple-aces.png)
