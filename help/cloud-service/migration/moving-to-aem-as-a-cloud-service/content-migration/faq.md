@@ -11,9 +11,9 @@ jira: KT-11200
 thumbnail: kt-11200.jpg
 exl-id: bdec6cb0-34a0-4a28-b580-4d8f6a249d01
 duration: 569
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 85d516d57d818d23372ab7482d25e33242ef0426
 workflow-type: tm+mt
-source-wordcount: '2146'
+source-wordcount: '1884'
 ht-degree: 0%
 
 ---
@@ -77,22 +77,6 @@ CTT 추출 프로세스에 사용되는 리소스의 양은 노드 수, Blob 수
 
 클론 환경이 마이그레이션에 사용되는 경우 라이브 프로덕션 서버 리소스 사용률에 영향을 미치지 않지만 라이브 프로덕션과 클론 간 컨텐츠 동기화에 대한 나름의 단점이 있습니다
 
-### Q: 내 소스 작성자 시스템에는 사용자가 작성자 인스턴스에 인증할 수 있도록 SSO가 구성되어 있습니다. 이 경우 CTT의 사용자 매핑 기능을 사용해야 합니까?
-
-간단한 대답은 &quot;**예**&quot;.
-
-CTT 추출 및 수집 **없이** 사용자 매핑은 콘텐츠와 관련 원칙(사용자, 그룹)만 소스 AEM에서 AEMaaCS로 마이그레이션합니다. 그러나 Adobe IMS에 있고 AEMaaCS 인스턴스에 대한 액세스 권한(으로 프로비저닝됨)이 있는 이러한 사용자(ID)가 인증되어야 하는 요구 사항이 있습니다. 의 작업 [사용자 매핑 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/overview-user-mapping-tool-legacy.html) 은 로컬 AEM 사용자를 IMS 사용자에게 매핑하여 인증과 승인이 함께 작동하도록 합니다.
-
-이 경우 SAML ID 공급자는 Authentication 핸들러를 사용하여 AEM에 직접 연결하는 대신 Federated/Enterprise ID을 사용하도록 Adobe IMS에 대해 구성됩니다.
-
-### Q: 내 소스 작성자 시스템에는 사용자가 로컬 AEM 사용자를 사용하여 작성자 인스턴스에 인증할 수 있도록 기본 인증이 구성되어 있습니다. 이 경우 CTT의 사용자 매핑 기능을 사용해야 합니까?
-
-간단한 대답은 &quot;**예**&quot;.
-
-사용자 매핑 없이 CTT 추출 및 수집을 사용하면 콘텐츠와 관련 원칙(사용자, 그룹)이 소스 AEM에서 AEMaaCS로 마이그레이션됩니다. 그러나 Adobe IMS에 있고 AEMaaCS 인스턴스에 대한 액세스 권한(으로 프로비저닝됨)이 있는 이러한 사용자(ID)가 인증되어야 하는 요구 사항이 있습니다. 의 작업 [사용자 매핑 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/overview-user-mapping-tool-legacy.html) 은 로컬 AEM 사용자를 IMS 사용자에게 매핑하여 인증과 승인이 함께 작동하도록 합니다.
-
-이 경우 사용자는 개인 Adobe ID을 사용하고 Adobe ID은 IMS 관리자가 AEMaaCS에 대한 액세스 권한을 제공하는 데 사용합니다.
-
 ### Q: CTT의 컨텍스트에서 &quot;지우기&quot;와 &quot;덮어쓰기&quot;라는 용어는 무엇을 의미합니까?
 
 의 맥락에서 [추출 단계](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#extraction-setup-phase), 옵션은 이전 추출 주기에서 스테이징 컨테이너의 데이터를 덮어쓰거나 차등(추가/업데이트/삭제)을 추가합니다. 스테이징 컨테이너는 아무것도 아니지만 마이그레이션 세트와 연결된 Blob 저장소 컨테이너입니다. 각 마이그레이션 세트는 고유한 스테이징 컨테이너를 가져옵니다.
@@ -107,10 +91,11 @@ CTT 추출 및 수집 **없이** 사용자 매핑은 콘텐츠와 관련 원칙(
    + 모든 에셋을 하나의 마이그레이션 세트의 일부로 마이그레이션하는 것이 허용되는지 확인한 다음 이를 사용하는 사이트를 단계적으로 가져옵니다
 + 현재 상태에서는 게시 계층이 콘텐츠를 제공할 수 있더라도 작성자 수집 프로세스를 통해 콘텐츠 작성에 작성자 인스턴스를 사용할 수 없습니다
    + 즉, 작성자에 수집이 완료될 때까지 콘텐츠 작성 활동이 동결됩니다
++ 그룹은 다음과 같지만 사용자는 더 이상 마이그레이션되지 않습니다.
 
 마이그레이션을 계획하기 전에 문서화된 대로 추출 및 수집 프로세스 추가 를 검토하십시오.
 
-### Q: AEMaaCS 작성자 또는 게시 인스턴스에서 수집이 발생하더라도 최종 사용자가 내 웹 사이트를 사용할 수 있습니까?
+### Q: AEMaaCS 작성자 또는 게시 인스턴스에서 수집이 발생하고 있어도 최종 사용자가 내 웹 사이트를 사용할 수 있습니까?
 
 예. 최종 사용자 트래픽은 컨텐츠 마이그레이션 작업으로 인해 중단되지 않습니다. 단, 작성자 수집은 완료될 때까지 콘텐츠 작성을 중지합니다.
 
@@ -160,7 +145,6 @@ CTT 프로세스에는 아래 리소스에 대한 연결이 필요합니다.
 
 + 대상 AEM as a Cloud Service 환경: `author-p<program_id>-e<env_id>.adobeaemcloud.com`
 + Azure Blob 스토리지 서비스: `casstorageprod.blob.core.windows.net`
-+ 사용자 매핑 IO 끝점: `usermanagement.adobe.io`
 
 에 대한 자세한 내용은 설명서 를 참조하십시오 [소스 연결](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#source-environment-connectivity).
 
@@ -198,7 +182,7 @@ CTT 프로세스에는 아래 리소스에 대한 연결이 필요합니다.
 + 온-프레미스/AMS Prod 작성자 작업 계속
 + 이제부터 다음을 사용하여 다른 모든 마이그레이션 증명 주기를 실행합니다. `wipe=true`
    + 이 작업은 전체 노드 저장소를 마이그레이션하지만 전체 Blob이 아닌 수정된 Blob만 마이그레이션합니다. 대상 AEMaaCS 인스턴스의 Azure blob 저장소에 이전 Blob 집합이 있습니다.
-   + 이 마이그레이션 입증을 통해 마이그레이션 기간, 사용자 매핑, 테스트, 기타 모든 기능의 유효성 검사 등을 측정
+   + 이 마이그레이션 증명을 사용하여 마이그레이션 기간 측정, 테스트, 기타 모든 기능 검증
 + 마지막으로 Go-Live가 있는 주 전에 Wipe=true 마이그레이션을 수행합니다.
    + AEMaaCS에서 Dynamic Media 연결
    + AEM 온-프레미스 소스에서 DM 구성 연결 끊기
