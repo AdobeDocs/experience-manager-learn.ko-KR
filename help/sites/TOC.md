@@ -6,7 +6,7 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: 43a8b1eb7e714b27972c0ea2b1327ab8db044d25
+source-git-commit: 131008cfeb41789582bf821b724f996b7fb6fabb
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 18%
@@ -47,7 +47,7 @@ ht-degree: 18%
       + [생성 변형 작업](./document-authoring/how-to/generate-variations-actions.md)
       + [메타데이터를 사용하여 프롬프트 사용자 지정](./document-authoring/how-to/customizing-prompts-using-metadata.md)
       + [GenAI 신뢰 및 개인정보 보호](./document-authoring/how-to/generate-variations-trust-privacy.md)
-      + [경험 프레임워크](./document-authoring/how-to/experimentation-framework.md)
+      + [실험 프레임워크](./document-authoring/how-to/experimentation-framework.md)
       + [실험 프레임워크 설정](./document-authoring/how-to/setup-experimentation-framework.md)
 + 페이지 작성 {#page-authoring}
    + [작성](page-authoring/aem-sites-authoring-overview.md)
