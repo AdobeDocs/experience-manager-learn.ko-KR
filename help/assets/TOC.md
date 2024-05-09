@@ -7,9 +7,9 @@ sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: 1ab4bc0655c70af7f0401e774823950658dc3f77
+source-git-commit: 5cec056bd50c7ddb8f20dbd6227fe8f21d212a11
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '419'
 ht-degree: 19%
 
 ---
@@ -126,11 +126,12 @@ ht-degree: 19%
       + [이미지 선명하게 하기](dynamic-media/dynamic-media-image-sharpening-feature-video-use.md)
       + [색상 관리](dynamic-media/dynamic-media-color-management-technical-video-setup.md)
    + 비디오 {#video}
-      + [대화형 비디오](dynamic-media/dynamic-media-interactive-video-feature-video-use.md)
-      + [비디오 플레이어](dynamic-media/dynamic-media-video-player-feature-video-use.md)
       + [360 비디오](dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.md)
       + [사용자 지정 비디오 썸네일](dynamic-media/dynamic-media-video-thumbnails-feature-video-use.md)
+      + [DASH 적응형 스트리밍](dynamic-media/dynamic-media-dash.md)
       + [Dynamic Media 스마트 자르기 비디오](dynamic-media/dynamic-media-smart-crop-video.md)
+      + [대화형 비디오](dynamic-media/dynamic-media-interactive-video-feature-video-use.md)
+      + [비디오 플레이어](dynamic-media/dynamic-media-video-player-feature-video-use.md)
    + 뷰어 {#viewers}
       + [뷰어](dynamic-media/dynamic-media-viewer-feature-video-understand.md)
       + [파노라마 및 세로 이미지 뷰어](dynamic-media/panorama-vertical-image-viewer-feature-video-use.md)
