@@ -9,16 +9,16 @@ level: Experienced
 exl-id: 879518db-3f05-4447-86e8-5802537584e5
 last-substantial-update: 2021-06-09T00:00:00Z
 duration: 226
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 7ebc33932153cf024e68fc5932b7972d9da262a7
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '758'
 ht-degree: 0%
 
 ---
 
 # 사용자 정의 프로세스 단계
 
-이 자습서는 사용자 지정 프로세스 단계를 구현해야 하는 AEM Forms 고객을 위한 것입니다. 프로세스 단계는 ECMA 스크립트를 실행하거나 사용자 지정 Java 코드를 호출하여 작업을 수행할 수 있습니다. 이 자습서에서는 프로세스 단계에서 실행되는 WorkflowProcess를 구현하는 데 필요한 단계를 설명합니다.
+이 자습서는 사용자 지정 프로세스 단계를 구현해야 하는 AEM Forms 고객을 위한 것입니다. 프로세스 단계는 ECMA 스크립트를 실행하거나 사용자 지정 Java™ 코드를 호출하여 작업을 수행할 수 있습니다. 이 자습서에서는 프로세스 단계에서 실행되는 WorkflowProcess를 구현하는 데 필요한 단계를 설명합니다.
 
 사용자 지정 프로세스 단계를 구현하는 주요 이유는 AEM Workflow를 확장하기 위해서입니다. 예를 들어 워크플로우 모델에서 AEM Forms 구성 요소를 사용하는 경우 다음 작업을 수행할 수 있습니다
 
@@ -29,22 +29,28 @@ ht-degree: 0%
 
 ## Maven 프로젝트 만들기
 
-첫 번째 단계는 적절한 Adobe Maven Archetype 을 사용하여 Maven 프로젝트를 만드는 것입니다. 자세한 단계는 다음과 같습니다 [기사](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html). Maven 프로젝트를 eclipse로 가져오면 프로세스 단계에서 사용할 수 있는 첫 번째 OSGi 구성 요소 작성을 시작할 수 있습니다.
+첫 번째 단계는 적절한 Adobe Maven Archetype 을 사용하여 Maven 프로젝트를 만드는 것입니다. 자세한 단계는 다음과 같습니다 [기사](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html). Maven 프로젝트를 Eclipse로 가져오면 프로세스 단계에서 사용할 수 있는 첫 번째 OSGi 구성 요소 작성을 시작할 수 있습니다.
 
 
 ### WorkflowProcess를 구현하는 클래스 만들기
 
-eclipse IDE에서 Maven 프로젝트를 엽니다. 확장 **projectname** > **코어** 폴더를 삭제합니다. src/main/java 폴더를 확장합니다. &quot;core&quot;로 끝나는 패키지가 표시됩니다. 이 패키지에서 WorkflowProcess를 구현하는 Java 클래스를 만듭니다. 실행 메서드를 재정의해야 합니다. execute 메서드의 시그니처는 다음과 같습니다. public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments)는 WorkflowException을 throw합니다. execute 메서드는 다음 3개의 변수에 액세스할 수 있습니다
+Eclipse IDE에서 Maven 프로젝트를 엽니다. 확장 **projectname** > **코어** 폴더를 삭제합니다. 확장 `src/main/java` 폴더를 삭제합니다. 다음으로 끝나는 패키지가 표시됩니다. `core`. 이 패키지에서 WorkflowProcess를 구현하는 Java™ 클래스를 만듭니다. execute 메서드를 재정의해야 합니다. execute 메서드의 서명은 다음과 같습니다.
+
+```java
+public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments) throws WorkflowException 
+```
+
+execute 메서드는 다음 세 가지 변수에 대한 액세스 권한을 부여합니다.
 
 **작업 항목**: workItem 변수는 워크플로우와 관련된 데이터에 대한 액세스 권한을 부여합니다. 공개 API 설명서 를 사용할 수 있습니다 [여기.](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
 
-**WorkflowSession**: 이 workflowSession 변수를 사용하면 워크플로우를 제어할 수 있습니다. 공개 API 설명서 를 사용할 수 있습니다 [여기](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
+**WorkflowSession**: 이 workflowSession 변수를 사용하면 워크플로우를 제어할 수 있습니다. 공개 API 설명서 를 사용할 수 있습니다 [여기](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html).
 
 **메타데이터 맵**: 워크플로우와 연결된 모든 메타데이터입니다. 프로세스 단계에 전달되는 모든 프로세스 인수는 MetaDataMap 개체를 사용하여 사용할 수 있습니다.[API 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)
 
 이 자습서에서는 적응형 양식에 추가된 첨부 파일을 AEM 워크플로의 일부로 파일 시스템에 작성할 예정입니다.
 
-이 사용 사례를 달성하기 위해 다음 Java 클래스를 작성했습니다
+이 사용 사례를 달성하기 위해 다음과 같은 Java™ 클래스가 작성되었습니다
 
 이 코드를 살펴보겠습니다
 
@@ -127,7 +133,7 @@ public class WriteFormAttachmentsToFileSystem implements WorkflowProcess {
             }
 ```
 
-1행 - 구성 요소의 속성을 정의합니다. process.label 속성은 아래 스크린샷 중 하나에 표시된 대로 OSGi 구성 요소를 프로세스 단계와 연결할 때 표시되는 내용입니다.
+1행 - 구성 요소의 속성을 정의합니다. 다음 `process.label` 속성은 아래 스크린샷 중 하나에 표시된 대로 OSGi 구성 요소를 프로세스 단계와 연결할 때 표시되는 내용입니다.
 
 13-15행 - 이 OSGi 구성 요소로 전달된 프로세스 인수는 &quot;,&quot; 구분 기호를 사용하여 분할됩니다. 그런 다음 문자열 배열에서 attachmentPath 및 saveToLocation의 값이 추출됩니다.
 
@@ -139,12 +145,12 @@ public class WriteFormAttachmentsToFileSystem implements WorkflowProcess {
 
 ![프로세스 단계](assets/implement-process-step.gif)
 
-QueryBuilder 서비스는 attachmentsPath 폴더 아래에서 nt:file 유형의 노드를 쿼리하는 데 사용됩니다. 나머지 코드는 검색 결과를 반복하여 Document 객체를 만들고 파일 시스템에 저장합니다
+QueryBuilder 서비스는 유형의 노드를 쿼리하는 데 사용됩니다 `nt:file` attachmentsPath 폴더 아래에 있습니다. 나머지 코드는 검색 결과를 반복하여 Document 객체를 만들고 파일 시스템에 저장합니다.
 
 
 >[!NOTE]
 >
->AEM Forms에 고유한 Document 개체를 사용하고 있으므로 maven 프로젝트에 aemfd-client-sdk 종속성을 포함해야 합니다. 그룹 ID는 com.adobe.aemfd이고 아티팩트 ID는 aemfd-client-sdk입니다.
+>AEM Forms에 고유한 Document 개체를 사용하고 있으므로 maven 프로젝트에 aemfd-client-sdk 종속성을 포함해야 합니다. 그룹 ID는 `com.adobe.aemfd` 및 아티팩트 id는 `aemfd-client-sdk`.
 
 #### 빌드 및 배포
 
