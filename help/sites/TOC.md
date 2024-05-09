@@ -6,10 +6,10 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: d75c9913e8401bcf86440c0d256b9c3a9d780bbc
+source-git-commit: 43a8b1eb7e714b27972c0ea2b1327ab8db044d25
 workflow-type: tm+mt
-source-wordcount: '517'
-ht-degree: 19%
+source-wordcount: '549'
+ht-degree: 18%
 
 ---
 
@@ -41,6 +41,14 @@ ht-degree: 19%
       + [GenAI 프롬프트 템플릿](./document-authoring/how-to/prompt-templates-for-content-variations.md)
       + [GenAI 사용자 정의 프롬프트 템플릿](./document-authoring/how-to/custom-prompt-templates.md)
       + [GenAI 사용자 정의 프롬프트 템플릿 저장](./document-authoring/how-to/save-custom-prompt-template.md)
+      + [변형 생성을 위한 타겟 대상](./document-authoring/how-to/using-target-audiences-in-generate-variations.md)
+      + [변형 생성을 위한 대상 CSV 파일](./document-authoring/how-to/using-audiences-csv-file-in-generate-variations.md)
+      + [변형 생성을 위한 Adobe Firefly](./document-authoring/how-to/using-adobe-firefly-for-images-in-generate-variations.md)
+      + [생성 변형 작업](./document-authoring/how-to/generate-variations-actions.md)
+      + [메타데이터를 사용하여 프롬프트 사용자 지정](./document-authoring/how-to/customizing-prompts-using-metadata.md)
+      + [GenAI 신뢰 및 개인정보 보호](./document-authoring/how-to/generate-variations-trust-privacy.md)
+      + [경험 프레임워크](./document-authoring/how-to/experimentation-framework.md)
+      + [실험 프레임워크 설정](./document-authoring/how-to/setup-experimentation-framework.md)
 + 페이지 작성 {#page-authoring}
    + [작성](page-authoring/aem-sites-authoring-overview.md)
    + [탐색](page-authoring/basic-handling-sites-feature-video-use.md)
