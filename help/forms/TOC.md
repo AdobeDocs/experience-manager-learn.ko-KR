@@ -8,9 +8,9 @@ breadcrumb-title: AEM Forms 튜토리얼
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: eb4463ae0270725c5b0bd96e9799bada25b06303
+source-git-commit: 81026b569ae0dc9976f714715682448a41d9f8bc
 workflow-type: tm+mt
-source-wordcount: '2059'
+source-wordcount: '2064'
 ht-degree: 2%
 
 ---
@@ -178,6 +178,7 @@ ht-degree: 2%
    + [PDF 양식을 적응형 양식으로 변환](aem-forms-and-adobe-sign/convert-pdf-form-into-adaptive-form.md)
    + [변환된 적응형 양식 구성](aem-forms-and-adobe-sign/configure-converted-adaptive-form.md)
    + [Acrobat Sign에서 XDP 템플릿 사용](aem-forms-and-adobe-sign/using-xdp-templates-with-adobe-sign.md)
+   + [Acrobat Sign 도우미 메서드 사용](aem-forms-and-adobe-sign/send-documents-signing-using-sign-api.md)
 + 여러 Forms 서명{#sign-multiple-documents}
    + [1 - 소개](sign-multiple-documents/introduction.md)
    + [2 - 데이터 소스 구성](sign-multiple-documents/configure-data-source.md)
