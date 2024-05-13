@@ -11,10 +11,10 @@ doc-type: Catalog
 duration: 40
 last-substantial-update: 2023-12-01T00:00:00Z
 exl-id: 172a477f-d277-43c1-8e47-68870b02203c
-source-git-commit: 43a8b1eb7e714b27972c0ea2b1327ab8db044d25
+source-git-commit: caee59e03da7905b1d57b4325e06501d46d073e6
 workflow-type: tm+mt
-source-wordcount: '915'
-ht-degree: 7%
+source-wordcount: '900'
+ht-degree: 8%
 
 ---
 
@@ -547,7 +547,7 @@ AEM 작성자가 Microsoft Word 또는 Google 문서를 사용하여 문서를 �
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/generate-variations.md" title="변형 생성"
+            <a href="./how-to/generate-variations/overview.md" title="변형 생성"
               tabindex="-1">
               <img class="is-bordered-r-small"
                 src="https://video.tv.adobe.com/v/3428307/?format=jpeg"
@@ -560,10 +560,10 @@ AEM 작성자가 Microsoft Word 또는 Google 문서를 사용하여 문서를 �
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2분</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations.md" title="변형 생성">변형 생성</a>
+              <a href="./how-to/generate-variations/overview.md" title="변형 생성">변형 생성</a>
             </p>
             <p class="is-size-6">Edge Delivery Services에서 변형 생성을 소개하고 마케팅 담당자에게 어떻게 유용할 수 있는지 이해합니다.</p>
-            <a href="./how-to/generate-variations.md" class="spectrum-Button
+            <a href="./how-to/generate-variations/overview.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
@@ -575,15 +575,15 @@ AEM 작성자가 Microsoft Word 또는 Google 문서를 사용하여 문서를 �
     </div>  
     <!--  Configure Sidekick for Generative Variations  -->
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
-      aria-label="Configure Sidekick for Generate Variations" tabindex="7">
+      aria-label="Generate Variations - Configure Sidekick" tabindex="7">
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/generate-variations-sidekick-config.md" title="변형 생성을 위한 Sidekick 구성"
+            <a href="./how-to/generate-variations/configure-sidekick.md" title="변형 생성 - 구성 Sidekick"
               tabindex="-1">
               <img class="is-bordered-r-small"
                 src="https://video.tv.adobe.com/v/3428306/?format=jpeg"
-                alt="변형 생성을 위한 Sidekick 구성">
+                alt="변형 생성 - 구성 Sidekick">
             </a>
           </figure>
         </div>
@@ -592,10 +592,10 @@ AEM 작성자가 Microsoft Word 또는 Google 문서를 사용하여 문서를 �
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1분</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations-sidekick-config.md" title="변형 생성을 위한 Sidekick 구성">변형 생성을 위한 Sidekick 구성</a>
+              <a href="./how-to/generate-variations/configure-sidekick.md" title="변형 생성 - 구성 Sidekick">변형 생성 - 구성 Sidekick</a>
             </p>
             <p class="is-size-6">Edge Delivery Services 문서 작성에서 변형 생성을 위해 사이드 킥을 구성하는 방법을 살펴봅니다.</p>
-            <a href="./how-to/generate-variations-sidekick-config.md" class="spectrum-Button
+            <a href="./how-to/generate-variations/configure-sidekick.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
@@ -607,15 +607,15 @@ AEM 작성자가 Microsoft Word 또는 Google 문서를 사용하여 문서를 �
     </div>          
     <!-- GenAI Prompt Templates -->
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
-      aria-label="Use GenAI Prompt Templates" tabindex="7">
+      aria-label="Generate Variations - Prompt templates" tabindex="7">
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/prompt-templates-for-content-variations.md" title="GenAI 프롬프트 템플릿 사용"
+            <a href="./how-to/generate-variations/prompt-templates.md" title="변형 생성 - 프롬프트 템플릿"
               tabindex="-1">
               <img class="is-bordered-r-small"
                 src="https://video.tv.adobe.com/v/3428307/?format=jpeg"
-                alt="GenAI 프롬프트 템플릿 사용">
+                alt="변형 생성 - 프롬프트 템플릿">
             </a>
           </figure>
         </div>
@@ -624,10 +624,10 @@ AEM 작성자가 Microsoft Word 또는 Google 문서를 사용하여 문서를 �
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2분</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/prompt-templates-for-content-variations.md" title="GenAI 프롬프트 템플릿 사용">GenAI 프롬프트 템플릿</a>
+              <a href="./how-to/generate-variations/prompt-templates.md" title="변형 생성 - 프롬프트 템플릿">변형 생성 - 프롬프트 템플릿</a>
             </p>
-            <p class="is-size-6">콘텐츠 변형을 생성하기 위해 생성 AI 프롬프트 템플릿을 사용하는 방법을 살펴봅니다.</p>
-            <a href="./how-to/prompt-templates-for-content-variations.md" class="spectrum-Button
+            <p class="is-size-6">변형 생성을 위해 프롬프트 템플릿을 사용하는 방법을 살펴봅니다.</p>
+            <a href="./how-to/generate-variations/prompt-templates.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
@@ -639,15 +639,15 @@ AEM 작성자가 Microsoft Word 또는 Google 문서를 사용하여 문서를 �
     </div>    
     <!-- Custom Prompt Templates -->
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
-      aria-label="GenAI Custom Prompt Templates" tabindex="7">
+      aria-label="Generate Variations - Custom prompt templates" tabindex="7">
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/custom-prompt-templates.md" title="GenAI 사용자 정의 프롬프트 템플릿"
+            <a href="./how-to/generate-variations/custom-prompt-templates.md" title="변형 생성 - 사용자 정의 프롬프트 템플릿"
               tabindex="-1">
               <img class="is-bordered-r-small"
                 src="https://video.tv.adobe.com/v/3428316/?format=jpeg"
-                alt="GenAI 사용자 정의 프롬프트 템플릿">
+                alt="변형 생성 - 사용자 정의 프롬프트 템플릿">
             </a>
           </figure>
         </div>
@@ -656,10 +656,10 @@ AEM 작성자가 Microsoft Word 또는 Google 문서를 사용하여 문서를 �
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2분</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/custom-prompt-templates.md" title="GenAI 사용자 정의 프롬프트 템플릿">GenAI 사용자 정의 프롬프트 템플릿</a>
+              <a href="./how-to/generate-variations/custom-prompt-templates.md" title="변형 생성 - 사용자 정의 프롬프트 템플릿">변형 생성 - 사용자 정의 프롬프트 템플릿</a>
             </p>
-            <p class="is-size-6">콘텐츠 변형을 생성하기 위한 생성 AI 사용자 정의 프롬프트 템플릿을 구축하는 방법을 살펴봅니다.</p>
-            <a href="./how-to/custom-prompt-templates.md" class="spectrum-Button
+            <p class="is-size-6">변형 생성을 위한 사용자 정의 프롬프트 템플릿을 작성하는 방법을 살펴봅니다.</p>
+            <a href="./how-to/generate-variations/custom-prompt-templates.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
@@ -671,15 +671,15 @@ AEM 작성자가 Microsoft Word 또는 Google 문서를 사용하여 문서를 �
     </div>    
     <!-- Saving Custom Prompt Templates -->
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
-      aria-label="GenAI Save Prompt Templates" tabindex="7">
+      aria-label="Generate Variations - Save custom prompt templates" tabindex="7">
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/save-custom-prompt-template.md" title="GenAI 저장 프롬프트 템플릿"
+            <a href="./how-to/generate-variations/custom-prompt-templates.md" title="변형 생성 - 사용자 정의 프롬프트 템플릿 저장"
               tabindex="-1">
               <img class="is-bordered-r-small"
                 src="https://video.tv.adobe.com/v/3428317/?format=jpeg"
-                alt="GenAI 저장 프롬프트 템플릿">
+                alt="변형 생성 - 사용자 정의 프롬프트 템플릿 저장">
             </a>
           </figure>
         </div>
@@ -688,10 +688,10 @@ AEM 작성자가 Microsoft Word 또는 Google 문서를 사용하여 문서를 �
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2분</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/save-custom-prompt-template.md" title="GenAI 저장 프롬프트 템플릿">GenAI 저장 프롬프트 템플릿</a>
+              <a href="./how-to/generate-variations/custom-prompt-templates.md" title="변형 생성 - 사용자 정의 프롬프트 템플릿 저장">변형 생성 - 사용자 정의 프롬프트 템플릿 저장</a>
             </p>
-            <p class="is-size-6">콘텐츠 변형을 생성하기 위해 생성 AI 사용자 정의 프롬프트 템플릿을 저장하는 방법을 살펴봅니다.</p>
-            <a href="./how-to/save-custom-prompt-template.md" class="spectrum-Button
+            <p class="is-size-6">변형 생성을 위해 사용자 정의 프롬프트 템플릿을 저장하는 방법을 살펴봅니다.</p>
+            <a href="./how-to/generate-variations/custom-prompt-templates.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
@@ -703,15 +703,15 @@ AEM 작성자가 Microsoft Word 또는 Google 문서를 사용하여 문서를 �
     </div>
     <!-- Using Adobe Target Audiences for Generate Variations -->
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
-      aria-label="Using Adobe Target audiences for Generate Variations" tabindex="7">
+      aria-label="Generate Variations - Using Adobe Target audiences" tabindex="7">
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/using-target-audiences-in-generate-variations.md" title="변형 생성을 위해 Adobe Target 대상 사용"
+            <a href="./how-to/generate-variations/using-target-audiences.md" title="변형 생성 - Adobe Target 대상 사용"
               tabindex="-1">
               <img class="is-bordered-r-small"
                 src="https://video.tv.adobe.com/v/3428792/?format=jpeg"
-                alt="변형 생성을 위해 Adobe Target 대상 사용">
+                alt="변형 생성 - Adobe Target 대상 사용">
             </a>
           </figure>
         </div>
@@ -720,10 +720,10 @@ AEM 작성자가 Microsoft Word 또는 Google 문서를 사용하여 문서를 �
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2분</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/using-target-audiences-in-generate-variations.md" title="변형 생성을 위해 Adobe Target 대상 사용">변형 생성을 위해 Adobe Target 대상 사용</a>
+              <a href="./how-to/generate-variations/using-target-audiences.md" title="변형 생성 - Adobe Target 대상 사용">변형 생성 - Adobe Target 대상 사용</a>
             </p>
             <p class="is-size-6">컨텐츠 변형에 적합한 대상을 타깃팅하기 위해 Adobe Target 대상을 사용하는 방법을 살펴봅니다.</p>
-            <a href="./how-to/using-target-audiences-in-generate-variations.md" class="spectrum-Button
+            <a href="./how-to/generate-variations/using-target-audiences.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
@@ -735,15 +735,15 @@ AEM 작성자가 Microsoft Word 또는 Google 문서를 사용하여 문서를 �
     </div>
     <!-- Using audience CSV files for Generate Variations -->
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
-      aria-label="Using audience CSV files for Generate Variations" tabindex="7">
+      aria-label="Generate Variations - Using CSV file audiences" tabindex="7">
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/using-audiences-csv-file-in-generate-variations.md" title="변형 생성에 대상 CSV 파일 사용"
+            <a href="./how-to/generate-variations/using-csv-file-audiences.md" title="변형 생성 - CSV 파일 대상자 사용"
               tabindex="-1">
               <img class="is-bordered-r-small"
                 src="https://video.tv.adobe.com/v/3428793/?format=jpeg"
-                alt="변형 생성에 대상 CSV 파일 사용">
+                alt="변형 생성 - CSV 파일 대상자 사용">
             </a>
           </figure>
         </div>
@@ -752,10 +752,10 @@ AEM 작성자가 Microsoft Word 또는 Google 문서를 사용하여 문서를 �
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1분</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/using-audiences-csv-file-in-generate-variations.md" title="변형 생성에 대상 CSV 파일 사용">변형 생성에 대상 CSV 파일 사용</a>
+              <a href="./how-to/generate-variations/using-csv-file-audiences.md" title="변형 생성 - CSV 파일 대상자 사용">변형 생성 - CSV 파일 대상자 사용</a>
             </p>
             <p class="is-size-6">콘텐츠 변형에 적합한 대상을 타기팅하기 위해 대상 CSV 파일을 사용하는 방법을 살펴봅니다.</p>
-            <a href="./how-to/using-audiences-csv-file-in-generate-variations.md" class="spectrum-Button
+            <a href="./how-to/generate-variations/using-csv-file-audiences.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
@@ -767,15 +767,15 @@ AEM 작성자가 Microsoft Word 또는 Google 문서를 사용하여 문서를 �
     </div>   
     <!-- Use Adobe Firefly to create images -->
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
-      aria-label="Use Adobe Firefly to create images for Generate Variations" tabindex="7">
+      aria-label="Generate Variations - Use Adobe Firefly" tabindex="7">
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/using-adobe-firefly-for-images-in-generate-variations.md" title="Adobe Firefly을 사용하여 변형 생성을 위한 이미지 만들기"
+            <a href="./how-to/generate-variations/using-adobe-firefly-for-images.md" title="변형 생성 - 사용 Adobe Firefly"
               tabindex="-1">
               <img class="is-bordered-r-small"
                 src="https://video.tv.adobe.com/v/3428794/?format=jpeg"
-                alt="Adobe Firefly을 사용하여 변형 생성을 위한 이미지 만들기">
+                alt="변형 생성 - 사용 Adobe Firefly">
             </a>
           </figure>
         </div>
@@ -784,10 +784,10 @@ AEM 작성자가 Microsoft Word 또는 Google 문서를 사용하여 문서를 �
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1분</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/using-adobe-firefly-for-images-in-generate-variations.md" title="Adobe Firefly을 사용하여 변형 생성을 위한 이미지 만들기">Adobe Firefly을 사용하여 변형 생성을 위한 이미지 만들기</a>
+              <a href="./how-to/generate-variations/using-adobe-firefly-for-images.md" title="변형 생성 - 사용 Adobe Firefly">변형 생성 - 사용 Adobe Firefly</a>
             </p>
-            <p class="is-size-6">Adobe Firefly을 사용하여 콘텐츠 변형에 대한 이미지를 만드는 방법을 살펴봅니다.</p>
-            <a href="./how-to/using-adobe-firefly-for-images-in-generate-variations.md" class="spectrum-Button
+            <p class="is-size-6">Adobe Firefly을 사용하여 콘텐츠 변형에 사용되는 이미지를 만드는 방법을 살펴봅니다.</p>
+            <a href="./how-to/generate-variations/using-adobe-firefly-for-images.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
@@ -799,15 +799,15 @@ AEM 작성자가 Microsoft Word 또는 Google 문서를 사용하여 문서를 �
     </div>  
     <!-- Generate Variations Actions -->
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
-      aria-label="Generative Variation actions" tabindex="7">
+      aria-label="Generate Variations - Actions on a generated variation" tabindex="7">
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/generate-variations-actions.md" title="생성 변형 작업"
+            <a href="./how-to/generate-variations/actions.md" title="변형 생성 - 생성된 변형에 대한 작업"
               tabindex="-1">
               <img class="is-bordered-r-small"
                 src="https://video.tv.adobe.com/v/3428795/?format=jpeg"
-                alt="생성 변형 작업">
+                alt="변형 생성 - 생성된 변형에 대한 작업">
             </a>
           </figure>
         </div>
@@ -816,10 +816,10 @@ AEM 작성자가 Microsoft Word 또는 Google 문서를 사용하여 문서를 �
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1분</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations-actions.md" title="생성 변형 작업">생성 변형 작업</a>
+              <a href="./how-to/generate-variations/actions.md" title="변형 생성 - 생성된 변형에 대한 작업">변형 생성 - 생성된 변형에 대한 작업</a>
             </p>
-            <p class="is-size-6">생성된 변형에서 사용할 수 있는 작업 탐색</p>
-            <a href="./how-to/generate-variations-actions.md" class="spectrum-Button
+            <p class="is-size-6">생성된 콘텐츠 변형에서 사용할 수 있는 작업을 살펴봅니다.</p>
+            <a href="./how-to/generate-variations/actions.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
@@ -829,49 +829,17 @@ AEM 작성자가 Microsoft Word 또는 Google 문서를 사용하여 문서를 �
         </div>
       </div>
     </div>    
-    <!-- Customizing prompts using metadata -->
-    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
-      aria-label="Customizing prompts using metadata" tabindex="7">
-      <div class="card">
-        <div class="card-image">
-          <figure class="image is-16by9">
-            <a href="./how-to/customizing-prompts-using-metadata.md" title="메타데이터를 사용하여 프롬프트 사용자 지정"
-              tabindex="-1">
-              <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3428796/?format=jpeg"
-                alt="메타데이터를 사용하여 프롬프트 사용자 지정">
-            </a>
-          </figure>
-        </div>
-        <div class="card-content is-padded-small">
-          <div class="content">
-            <p style="float: right;font-style: italic; color: #363636"
-              class="is-size-6">2분</p>
-            <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/customizing-prompts-using-metadata.md" title="메타데이터를 사용하여 프롬프트 사용자 지정">메타데이터를 사용하여 프롬프트 사용자 지정</a>
-            </p>
-            <p class="is-size-6">사용자 지정 프롬프트에서 메타데이터 사용 살펴보기</p>
-            <a href="./how-to/customizing-prompts-using-metadata.md" class="spectrum-Button
-              spectrum-Button--outline spectrum-Button--primary
-              spectrum-Button--sizeM">
-              <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">비디오 보기</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>  
     <!-- Trust and privacy in Generative AI -->
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
-      aria-label="Trust and privacy in Generative AI" tabindex="7">
+      aria-label="Generate Variations - Trust and Privacy" tabindex="7">
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/generate-variations-trust-privacy.md" title="생성 AI의 신뢰 및 개인정보 보호"
+            <a href="./how-to/generate-variations/trust-privacy.md" title="변형 생성 - 신뢰 및 개인 정보"
               tabindex="-1">
               <img class="is-bordered-r-small"
                 src="https://video.tv.adobe.com/v/3429060/?format=jpeg"
-                alt="생성 AI의 신뢰 및 개인정보 보호">
+                alt="변형 생성 - 신뢰 및 개인 정보">
             </a>
           </figure>
         </div>
@@ -880,10 +848,10 @@ AEM 작성자가 Microsoft Word 또는 Google 문서를 사용하여 문서를 �
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2분</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations-trust-privacy.md" title="생성 AI의 신뢰 및 개인정보 보호">생성 AI의 신뢰 및 개인정보 보호</a>
+              <a href="./how-to/generate-variations/trust-privacy.md" title="변형 생성 - 신뢰 및 개인 정보">변형 생성 - 신뢰 및 개인 정보</a>
             </p>
-            <p class="is-size-6">Adobe이 생성 AI를 사용할 때 신뢰와 개인 정보를 처리하는 방법 살펴보기</p>
-            <a href="./how-to/generate-variations-trust-privacy.md" class="spectrum-Button
+            <p class="is-size-6">변형 생성을 위해 Adobe이 신뢰와 개인 정보를 처리하는 방법을 살펴봅니다.</p>
+            <a href="./how-to/generate-variations/trust-privacy.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
@@ -946,7 +914,7 @@ AEM 작성자가 Microsoft Word 또는 Google 문서를 사용하여 문서를 �
             <p class="headline is-size-6 has-text-weight-bold">
               <a href="./how-to/setup-experimentation-framework.md" title="실험 프레임워크 설정">실험 프레임워크 설정</a>
             </p>
-            <p class="is-size-6">Edge Delivery Services에서 실험 프레임워크를 설정하는 방법을 살펴보십시오.</p>
+            <p class="is-size-6">Edge Delivery Services 문서 작성에서 실험 프레임워크를 설정하는 방법을 살펴봅니다.</p>
             <a href="./how-to/setup-experimentation-framework.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -956,6 +924,38 @@ AEM 작성자가 Microsoft Word 또는 Google 문서를 사용하여 문서를 �
           </div>
         </div>
       </div>
-    </div>                            
+    </div>
+    <!-- Adding metadata for experimentation -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
+      aria-label="Adding metadata for experimentation" tabindex="7">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9">
+            <a href="./how-to/experimentation-add-metadata.md" title="실험을 위한 메타데이터 추가"
+              tabindex="-1">
+              <img class="is-bordered-r-small"
+                src="https://video.tv.adobe.com/v/3428796/?format=jpeg"
+                alt="실험을 위한 메타데이터 추가">
+            </a>
+          </figure>
+        </div>
+        <div class="card-content is-padded-small">
+          <div class="content">
+            <p style="float: right;font-style: italic; color: #363636"
+              class="is-size-6">2분</p>
+            <p class="headline is-size-6 has-text-weight-bold">
+              <a href="./how-to/experimentation-add-metadata.md" title="실험을 위한 메타데이터 추가">실험을 위한 메타데이터 추가</a>
+            </p>
+            <p class="is-size-6">실험을 위한 메타데이터 추가 탐색</p>
+            <a href="./how-to/experimentation-add-metadata.md" class="spectrum-Button
+              spectrum-Button--outline spectrum-Button--primary
+              spectrum-Button--sizeM">
+              <span class="spectrum-Button-label has-no-wrap
+                has-text-weight-bold">비디오 보기</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>                                
   </div>
 

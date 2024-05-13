@@ -6,10 +6,10 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: 131008cfeb41789582bf821b724f996b7fb6fabb
+source-git-commit: caee59e03da7905b1d57b4325e06501d46d073e6
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 18%
+source-wordcount: '532'
+ht-degree: 19%
 
 ---
 
@@ -36,19 +36,20 @@ ht-degree: 18%
       + [이미지 대체 텍스트](./document-authoring/how-to/image-alt-text.md)
       + [검색 엔진 색인화 방지](./document-authoring/how-to/no-index.md)
       + [응답형 탐색](document-authoring/how-to/responsive-navigation.md)
-      + [변형 생성](./document-authoring/how-to/generate-variations.md)
-      + [변형 생성을 위한 Sidekick 구성](./document-authoring/how-to/generate-variations-sidekick-config.md)
-      + [GenAI 프롬프트 템플릿](./document-authoring/how-to/prompt-templates-for-content-variations.md)
-      + [GenAI 사용자 정의 프롬프트 템플릿](./document-authoring/how-to/custom-prompt-templates.md)
-      + [GenAI 사용자 정의 프롬프트 템플릿 저장](./document-authoring/how-to/save-custom-prompt-template.md)
-      + [변형 생성을 위한 타겟 대상](./document-authoring/how-to/using-target-audiences-in-generate-variations.md)
-      + [변형 생성을 위한 대상 CSV 파일](./document-authoring/how-to/using-audiences-csv-file-in-generate-variations.md)
-      + [변형 생성을 위한 Adobe Firefly](./document-authoring/how-to/using-adobe-firefly-for-images-in-generate-variations.md)
-      + [생성 변형 작업](./document-authoring/how-to/generate-variations-actions.md)
-      + [메타데이터를 사용하여 프롬프트 사용자 지정](./document-authoring/how-to/customizing-prompts-using-metadata.md)
-      + [GenAI 신뢰 및 개인정보 보호](./document-authoring/how-to/generate-variations-trust-privacy.md)
+      + 변형 생성{#generate-variations}
+         + [개요](./document-authoring/how-to/generate-variations/overview.md)
+         + [구성 Sidekick](./document-authoring/how-to/generate-variations/configure-sidekick.md)
+         + [프롬프트 템플릿](./document-authoring/how-to/generate-variations/prompt-templates.md)
+         + [사용자 정의 프롬프트 템플릿](./document-authoring/how-to/generate-variations/custom-prompt-templates.md)
+         + [사용자 정의 프롬프트 템플릿 저장](./document-authoring/how-to/generate-variations/save-custom-prompt-template.md)
+         + [Adobe Target 대상](./document-authoring/how-to/generate-variations/using-target-audiences.md)
+         + [CSV 파일 대상자](./document-authoring/how-to/generate-variations/using-csv-file-audiences.md)
+         + [Adobe Firefly](./document-authoring/how-to/generate-variations/using-adobe-firefly-for-images.md)
+         + [액션](./document-authoring/how-to/generate-variations/actions.md)
+         + [신뢰 및 개인 정보 보호](./document-authoring/how-to/generate-variations/trust-privacy.md)
       + [실험 프레임워크](./document-authoring/how-to/experimentation-framework.md)
       + [실험 프레임워크 설정](./document-authoring/how-to/setup-experimentation-framework.md)
+      + [실험을 위한 메타데이터](./document-authoring/how-to/experimentation-add-metadata.md)
 + 페이지 작성 {#page-authoring}
    + [작성](page-authoring/aem-sites-authoring-overview.md)
    + [탐색](page-authoring/basic-handling-sites-feature-video-use.md)
