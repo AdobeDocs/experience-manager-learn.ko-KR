@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 5f2415b45a99a92c6e2b72dfc80d47f6f899c7ad
+source-git-commit: 14767141348d3d56c154704cc21d39722bb67aec
 workflow-type: tm+mt
-source-wordcount: '1184'
-ht-degree: 17%
+source-wordcount: '1196'
+ht-degree: 16%
 
 ---
 
@@ -112,6 +112,11 @@ ht-degree: 17%
       + [설정 방법](./developing/rde/how-to-setup.md)
       + [사용 방법](./developing/rde/how-to-use.md)
       + [개발 수명 주기](./developing/rde/development-life-cycle.md)
+   + 유니버설 편집기{#universal-editor}
+      + React 앱 편집{#react-app-editing}
+         + [개요](./developing/universal-editor/react-app/overview.md)
+         + [로컬 개발 설정](./developing/universal-editor/react-app/local-development-setup.md)
+         + [Instrument React 앱](./developing/universal-editor/react-app/instrument-to-edit-content.md)
    + [AEM SDK API JavaDocs](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html){target=_blank}
 + 디버깅 AEM{#debugging}
    + AEM SDK 디버깅{#debugging-aem-sdk}
@@ -206,7 +211,7 @@ ht-degree: 17%
       + [코드 리포지토리 현대화 도구](./migration/cloud-acceleration-manager/code-repository-modernizer.md)
       + [Dispatcher 변환기](./migration/cloud-acceleration-manager/dispatcher-converter.md)
       + [인덱스 변환기](./migration/cloud-acceleration-manager/index-converter.md)
-      + [에셋 워크플로 마이그레이션 도구](./migration/cloud-acceleration-manager/asset-workflow-migration-tool.md)
+      + [자산 워크플로 마이그레이션 도구](./migration/cloud-acceleration-manager/asset-workflow-migration-tool.md)
       + [Cloud Acceleration Manager 탐색](./migration/cloud-acceleration-manager/navigating.md)
       + [Cloud Acceleration Manager 사용](./migration/cloud-acceleration-manager/using.md)
 + [컨텐츠 조각](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html){target=_blank}
