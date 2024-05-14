@@ -9,7 +9,7 @@ role: Developer
 level: Beginner
 exl-id: 9bfe3142-bfc1-4886-85ea-d1c6de903484
 duration: 1603
-source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
+source-git-commit: b778fa9334d70b61b0d0fa31b6c62ac03490b11e
 workflow-type: tm+mt
 source-wordcount: '4441'
 ht-degree: 0%
@@ -39,7 +39,7 @@ AEM Projects에는 여러 개가 포함되어 있습니다 [OOTB 프로젝트 �
 * [완료된 튜토리얼 패키지](./assets/develop-aem-projects/projects-tasks-guide.ui.apps-0.0.1-SNAPSHOT.zip)
 * [GitHub의 전체 코드 저장소](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/feature/projects-tasks-guide)
 
-이 자습서에서는 다음과 같은 몇 가지 기본 지식이 있다고 가정합니다 [AEM 개발 사례](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/introduction/the-basics) and some familiar친숙함 with [AEM Maven 프로젝트 설정](https://docs.adobe.com/content/help/en/experience-manager-65/developing/devtools/ht-projects-maven.html). 언급된 모든 코드는 참조로 사용되기 위한 것이며 에만 배포해야 합니다. [로컬 개발 AEM 인스턴스](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/deploy).
+이 자습서에서는 다음과 같은 몇 가지 기본 지식이 있다고 가정합니다 [AEM 개발 사례](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/introduction/the-basics) and some familiar친숙함 with [AEM Maven 프로젝트 설정](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html?lang=en). 언급된 모든 코드는 참조로 사용되기 위한 것이며 에만 배포해야 합니다. [로컬 개발 AEM 인스턴스](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/deploy).
 
 ## 프로젝트 템플릿 구조
 
@@ -129,7 +129,7 @@ AEM Projects에는 여러 개가 포함되어 있습니다 [OOTB 프로젝트 �
    1. 새 항목 추가 **nt:unstructured** authoring-project/gadgets 아래의 노드가 호출됨 **작업**.
    1. 작업 노드에 대한 문자열 속성 추가 **cardWeight** = &quot;100&quot;, **jcr:title**=&quot;Tasks&quot;, 및 **sling:resourceType**=&quot;cq/gui/components/projects/admin/pod/taskpod&quot;.
 
-   이제 [작업 타일](https://experienceleague.adobe.com/docs/#Tasks) 새 프로젝트가 생성되면 기본적으로 표시됩니다.
+   이제 [작업 타일](https://experienceleague.adobe.com/en/docs) 새 프로젝트가 생성되면 기본적으로 표시됩니다.
 
    ```shell
    ../projects/templates/authoring-project
@@ -629,13 +629,13 @@ task.setCurrentAssignee(projectApproverGrp);
 
 1. CRXDE-Lite에서는 아래에 하위 폴더를 만듭니다 `/apps/aem-guides/projects-tasks/projects` &quot;wizards&quot;라는 폴더입니다. 다음에서 기본 마법사를 복사합니다. `/libs/cq/core/content/projects/workflowwizards/default_workflow` 새로 만든 wizards 폴더 아래에서 이름을 로 바꿉니다. **content-approval-start**. 이제 전체 경로는 다음과 같습니다. `/apps/aem-guides/projects-tasks/projects/wizards/content-approval-start`.
 
-   기본 마법사는 2열 마법사로, 워크플로 모델의 제목, 설명 및 썸네일을 표시하는 첫 번째 열이 선택되어 있습니다. 두 번째 열에는 워크플로우 제목, 시작 설명 및 페이로드 경로에 대한 필드가 포함되어 있습니다. 마법사는 표준 Touch UI 양식이며 표준을 사용합니다 [Granite UI 양식 구성 요소](https://experienceleague.adobe.com/docs/) 필드를 채웁니다.
+   기본 마법사는 2열 마법사로, 워크플로 모델의 제목, 설명 및 썸네일을 표시하는 첫 번째 열이 선택되어 있습니다. 두 번째 열에는 워크플로우 제목, 시작 설명 및 페이로드 경로에 대한 필드가 포함되어 있습니다. 마법사는 표준 Touch UI 양식이며 표준을 사용합니다 [Granite UI 양식 구성 요소](https://experienceleague.adobe.com/en/docs) 필드를 채웁니다.
 
    ![콘텐츠 승인 워크플로 마법사](./assets/develop-aem-projects/content-approval-start-wizard.png)
 
 1. 워크플로우에서 첫 번째 작업의 피할당자를 설정하는 데 사용되는 추가 필드를 마법사에 추가합니다( 참조) [워크플로우 모델 만들기](#create-workflow-model): 5단계).
 
-   아래에 `../content-approval-start/jcr:content/items/column2/items` 유형의 새 노드 만들기 `nt:unstructured` 명명된 **&quot;assign&quot;**. 다음과같이 기반으로 하는 프로젝트 사용자 선택기 구성 요소를 사용합니다. [Granite 사용자 선택기 구성 요소](https://experienceleague.adobe.com/docs/)). 이 양식 필드를 사용하면 사용자 및 그룹 선택을 현재 프로젝트에 속하는 사용자만 제한할 수 있습니다.
+   아래에 `../content-approval-start/jcr:content/items/column2/items` 유형의 새 노드 만들기 `nt:unstructured` 명명된 **&quot;assign&quot;**. 다음과같이 기반으로 하는 프로젝트 사용자 선택기 구성 요소를 사용합니다. [Granite 사용자 선택기 구성 요소](https://experienceleague.adobe.com/en/docs)). 이 양식 필드를 사용하면 사용자 및 그룹 선택을 현재 프로젝트에 속하는 사용자만 제한할 수 있습니다.
 
    다음은 의 XML 표현입니다. **할당** 노드:
 
@@ -655,7 +655,7 @@ task.setCurrentAssignee(projectApproverGrp);
 
 1. 또한 워크플로우에서 첫 번째 작업의 우선 순위를 결정하는 우선 순위 선택 필드를 추가합니다( 참조) [워크플로우 모델 만들기](#create-workflow-model): 5단계).
 
-   아래에 `/content-approval-start/jcr:content/items/column2/items` 유형의 새 노드 만들기 `nt:unstructured` 명명된 **우선 순위**. 다음을 사용합니다. [Granite UI 선택 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html) 을 클릭하여 양식 필드를 채웁니다.
+   아래에 `/content-approval-start/jcr:content/items/column2/items` 유형의 새 노드 만들기 `nt:unstructured` 명명된 **우선 순위**. 다음을 사용합니다. [Granite UI 선택 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions) 을 클릭하여 양식 필드를 채웁니다.
 
    아래 **우선 순위** 노드를 추가하겠습니다. **개 항목** 노드 **nt:unstructured**. 아래 **개 항목** 노드 3개의 노드를 추가하여 높음, 중간, 낮음에 대한 선택 옵션을 채웁니다. 각 노드의 유형은 다음과 같습니다 **nt:unstructured** 및 이(가) 있어야 함 **텍스트** 및 **값** 속성. 텍스트와 값 모두 동일한 값이어야 합니다.
 
@@ -691,7 +691,7 @@ task.setCurrentAssignee(projectApproverGrp);
    </priority>
    ```
 
-1. 워크플로우 개시자가 초기 작업의 기한을 설정할 수 있도록 허용합니다. 다음을 사용합니다. [Granite UI DatePicker](https://experienceleague.adobe.com/docs/) 이 입력을 캡처할 양식 필드. 또한 가 있는 숨겨진 필드를 추가합니다. [TypeHint](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html#typehint) 입력이 JCR에서 날짜 유형 속성으로 저장되도록 합니다.
+1. 워크플로우 개시자가 초기 작업의 기한을 설정할 수 있도록 허용합니다. 다음을 사용합니다. [Granite UI DatePicker](https://experienceleague.adobe.com/en/docs) 이 입력을 캡처할 양식 필드. 또한 가 있는 숨겨진 필드를 추가합니다. [TypeHint](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html#typehint) 입력이 JCR에서 날짜 유형 속성으로 저장되도록 합니다.
 
    두 개 추가 **nt:unstructured** xml의 아래에 표시되는 속성이 다음과 같은 노드:
 
