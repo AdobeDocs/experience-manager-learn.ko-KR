@@ -5,10 +5,10 @@ sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 doc-type: Catalog
 exl-id: 1d0b0183-25ee-4cb4-82a5-3506e7c1c908
-source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
+source-git-commit: d0e1513b4e6ea536b40f3dbb69a0f512f7521164
 workflow-type: tm+mt
-source-wordcount: '175'
-ht-degree: 18%
+source-wordcount: '177'
+ht-degree: 20%
 
 ---
 
@@ -56,16 +56,16 @@ AEM Assets이 무엇인지, 그리고 이를 사용하여 조직의 비즈니스
    </p>
 </td>
 <td>
-   <a href="./advanced/asset-insights-launch-tutorial.md">
-   <img alt="AEM Assets Insights" src="./assets/overview/asset-insights.png"/>
+   <a href="../assets-essentials/overview.md">
+   <img alt="AEM Assets 기본 사항" src="../assets-essentials/assets/overview/getting-started.png"/>
    </a>
    <div>
-      <a href="./advanced/asset-insights-launch-tutorial.md">
-      <strong>태그에 AEM Asset Insights 사용</strong>
+      <a href="../assets-essentials/overview.md">
+      <strong>Assets Essentials 시작</strong>
       </a>
    </div>
    <p>
-      <em>에셋 사용 방법에 대한 통찰력 확보</em>
+      <em>개념에서 설계, 게재에 이르기까지 경험 생성 속도를 높입니다.</em>
    <p>
 </td>
 <td>

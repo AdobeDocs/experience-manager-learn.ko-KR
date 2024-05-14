@@ -14,7 +14,7 @@ badgeVersions: label="AEM Assets 기본 사항" before-title="false"
 doc-type: Feature Video
 exl-id: c3961fdf-b8aa-410d-9561-520a248ea5b0
 duration: 324
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: d0e1513b4e6ea536b40f3dbb69a0f512f7521164
 workflow-type: tm+mt
 source-wordcount: '36'
 ht-degree: 11%
@@ -24,5 +24,6 @@ ht-degree: 11%
 # 통합 구성
 
 Adobe Workfront 및 Assets Essentials 통합을 구성하는 방법을 알아봅니다.
+
 
 >[!VIDEO](https://video.tv.adobe.com/v/336254?quality=12&learn=on)
