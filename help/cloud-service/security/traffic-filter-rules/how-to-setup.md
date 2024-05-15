@@ -12,9 +12,9 @@ jira: KT-13148
 thumbnail: KT-13148.jpeg
 exl-id: b67bf642-3341-48d0-8ea9-5f262febf414
 duration: 292
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: c7c78ca56c1d72f13d2dc80229a10704ab0f14ab
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '575'
 ht-degree: 3%
 
 ---
@@ -95,11 +95,11 @@ data:
 
 ### 트래픽을 생성하여 규칙 테스트
 
-규칙을 테스트하기 위해 사용할 수 있는 다양한 타사 도구가 있으며 조직에 선호하는 도구가 있을 수 있습니다. 데모용으로 다음 도구를 사용해 보겠습니다.
+규칙을 테스트하기 위해 사용할 수 있는 다양한 타사 도구가 있으며 조직에 선호하는 도구가 있을 수 있습니다. 데모 목적으로 다음 도구를 사용해 보겠습니다.
 
 - [컬](https://curl.se/) URL 호출 및 응답 코드 확인과 같은 기본 테스트용입니다.
 
-- [Vegeta](https://github.com/tsenart/vegeta) 서비스 거부(DOS)를 수행합니다. 의 설치 지침을 따르십시오. [Vegeta GitHub](https://github.com/tsenart/vegeta#install).
+- [Vegeta](https://github.com/tsenart/vegeta) 서비스 거부(DOS)를 수행합니다. 의 설치 지침을 따릅니다. [Vegeta GitHub](https://github.com/tsenart/vegeta#install).
 
 - [니토](https://github.com/sullo/nikto/wiki) XSS, SQL 주입 등과 같은 잠재적인 문제 및 보안 취약점을 찾을 수 있습니다. 의 설치 지침을 따르십시오. [Nikto GitHub](https://github.com/sullo/nikto).
 
@@ -119,9 +119,11 @@ data:
 
 ### 대시보드 도구를 사용하여 결과 분석
 
-규칙을 만들고, 배포하고, 테스트한 후 다음을 사용하여 결과를 분석할 수 있습니다 **Elasticsearch, Logstash 및 Kibana(ELK)** 대시보드 도구. AEMCS CDN 로그를 구문 분석하여 결과를 다양한 차트 및 그래프 형태로 시각화할 수 있습니다.
+규칙을 만들고, 배포하고, 테스트한 후 다음을 사용하여 결과를 분석할 수 있습니다 **CDN** 로그 및 **AEMCS-CDN-Log-Analysis-Tooling**. 이 툴은 Splunk 및 ELK(Elasticsearch, Logstash 및 Kibana) 스택의 결과를 시각화하기 위한 대시보드 세트를 제공합니다.
 
-대시보드 도구는 다음에서 직접 복제할 수 있습니다. [AEMCS-CDN-Log-Analysis-ELK-Tool GitHub 저장소](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) 을(를) 설치하고 로드하는 단계에 따라 **트래픽 필터 규칙(WAF 포함)** 대시보드입니다.
+도구를에서 복제할 수 있습니다. [AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) GitHub 리포지토리. 그런 다음 지침에 따라 을 설치하고 로드합니다. **CDN 트래픽 대시보드** 및 **WAF 대시보드** 선호하는 가시성 도구에 대한 대시보드
+
+이 자습서에서는 ELK 스택을 사용하겠습니다. 다음 [AEMCS CDN 로그 분석용 ELK Docker 컨테이너](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md) ELK 스택을 설정하는 지침.
 
 - 샘플 대시보드를 로드한 후 Elastic Dashboard Tool 페이지는 다음과 같이 표시되어야 합니다.
 

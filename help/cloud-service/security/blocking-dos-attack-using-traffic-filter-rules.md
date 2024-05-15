@@ -12,9 +12,9 @@ last-substantial-update: 2024-04-19T00:00:00Z
 jira: KT-15184
 thumbnail: KT-15184.jpeg
 exl-id: 60c2306f-3cb6-4a6e-9588-5fa71472acf7
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: c7c78ca56c1d72f13d2dc80229a10704ab0f14ab
 workflow-type: tm+mt
-source-wordcount: '1918'
+source-wordcount: '1968'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ AEM 웹 사이트의 기본 DDoS 보호에 대해 알아보겠습니다.
 - **차단 중:** Adobe CDN은 CDN PoP(Point of Presence)당 특정 IP 주소에서 Adobe 정의 속도를 초과하는 경우 오리진으로의 트래픽을 차단합니다.
 - **경고:** 트래픽이 특정 비율을 초과하면 작업 센터에서 트래픽 스파이크를 원본 경고 알림으로 보냅니다. 이 경고는 지정된 CDN PoP에 대한 트래픽이 _Adobe 정의_ IP 주소당 요청 속도. 다음을 참조하십시오 [트래픽 필터 규칙 경고](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#traffic-filter-rules-alerts) 을 참조하십시오.
 
-기본 제공되는 이러한 보호 기능은 DDoS 공격의 성능 영향을 최소화하는 조직의 기능을 위한 기준선으로 간주되어야 합니다. 각 웹 사이트는 서로 다른 성능 특성을 가지며, Adobe 정의 속도 제한이 충족되기 전에 성능 저하를 볼 수 있으므로 다음을 통해 기본 보호를 확장하는 것이 좋습니다. _고객 구성_.
+기본 제공되는 이러한 보호 기능은 DDoS 공격의 성능 영향을 최소화하는 조직의 기능을 위한 기준선으로 간주되어야 합니다. 각 웹 사이트는 서로 다른 성능 특성을 가지며, Adobe 정의 속도 제한이 충족되기 전에 성능 저하가 발생할 수 있으므로 다음을 통해 기본 보호를 확장하는 것이 좋습니다. _고객 구성_.
 
 고객이 DDoS 공격으로부터 웹 사이트를 보호하기 위해 취할 수 있는 몇 가지 추가 권장 조치를 살펴보겠습니다.
 
@@ -76,14 +76,20 @@ Adobe이 원본 경고에서 트래픽 스파이크를 [작업 센터 알림](ht
 
 ## 트래픽 패턴 분석 {#analyze-traffic}
 
-사이트가 이미 활성화되어 있는 경우 CDN 로그와 다음 방법 중 하나를 사용하여 트래픽 패턴을 분석할 수 있습니다.
+사이트가 이미 활성 상태인 경우 CDN 로그 및 Adobe 제공 대시보드를 사용하여 트래픽 패턴을 분석할 수 있습니다.
+
+- **CDN 트래픽 대시보드**: CDN 및 Origin 요청 비율, 4xx 및 5xx 오류율 및 캐시되지 않은 요청을 통해 트래픽에 대한 통찰력을 제공합니다. 또한 클라이언트 IP 주소당 초당 최대 CND 및 Origin 요청 수와 CDN 구성을 최적화하는 더 많은 통찰력을 제공합니다.
+
+- **CDN 캐시 적중률**: 총 캐시 적중률 및 HIT, PASS 및 MISS 상태별 총 요청 수에 대한 인사이트를 제공합니다. 또한 최상위 히트, 전달 및 누락 URL도 제공합니다.
+
+다음을 사용하여 대시보드 도구 구성 _다음 옵션 중 하나_:
 
 ### ELK - 대시보드 도구 구성
 
 다음 **Elasticsearch, Logstash 및 Kibana(ELK)** Adobe에서 제공하는 대시보드 도구는 CDN 로그를 분석하는 데 사용할 수 있습니다. 이 도구에는 트래픽 패턴을 시각화하는 대시보드가 포함되어 있으므로 속도 제한 트래픽 필터 규칙에 대한 최적의 임계값을 더 쉽게 결정할 수 있습니다.
 
-- 복제 [AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) GitHub 리포지토리.
-- 다음을 수행하여 도구 설정 [ELK 도커 컨테이너를 설정하는 방법](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool?tab=readme-ov-file#how-to-set-up-the-elk-docker-container) 단계.
+- 복제 [AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) GitHub 리포지토리.
+- 다음을 수행하여 도구 설정 [ELK 도커 컨테이너를 설정하는 방법](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md#how-to-set-up-the-elk-docker-containerhow-to-setup-the-elk-docker-container) 단계.
 - 설정의 일부로 `traffic-filter-rules-analysis-dashboard.ndjson` 파일을 사용하여 데이터를 시각화하십시오. 다음 _CDN 트래픽_ 대시보드에는 CDN 에지 및 원본의 IP/POP당 최대 요청 수를 표시하는 시각화가 포함되어 있습니다.
 - 다음에서 [Cloud Manager](https://my.cloudmanager.adobe.com/)의 _환경_ 카드: AEMCS Publish 서비스의 CDN 로그를 다운로드합니다.
 
@@ -95,9 +101,9 @@ Adobe이 원본 경고에서 트래픽 스파이크를 [작업 센터 알림](ht
 
 ### Splunk - 대시보드 도구 구성
 
-다음을 보유한 고객 [Splunk 로그 전달이 활성화됨](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/logging#splunk-logs) 는 트래픽 패턴을 분석하는 새 대시보드를 만들 수 있습니다. 다음 XML 파일은 Splunk에서 대시보드를 만드는 데 도움이 됩니다.
+다음을 보유한 고객 [Splunk 로그 전달이 활성화됨](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/logging#splunk-logs) 는 새 대시보드를 만들어 트래픽 패턴을 분석할 수 있습니다.
 
-- [CDN - 트래픽 대시보드](./assets/traffic-dashboard.xml): 이 대시보드는 CDN 에지 및 원본의 트래픽 패턴에 대한 통찰력을 제공합니다. 여기에는 CDN 에지 및 원본에서 IP/POP당 최대 요청 수를 보여주는 시각화가 포함됩니다.
+Splunk에서 대시보드를 만들려면 다음을 따르십시오 [AEMCS CDN 로그 분석용 Splunk 대시보드](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/READEME.md#splunk-dashboards-for-aemcs-cdn-log-analysis) 단계.
 
 ### 데이터 보기
 

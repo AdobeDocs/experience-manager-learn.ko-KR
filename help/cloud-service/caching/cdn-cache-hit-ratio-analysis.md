@@ -12,9 +12,9 @@ jira: KT-13312
 thumbnail: KT-13312.jpeg
 exl-id: 43aa7133-7f4a-445a-9220-1d78bb913942
 duration: 276
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: c7c78ca56c1d72f13d2dc80229a10704ab0f14ab
 workflow-type: tm+mt
-source-wordcount: '1352'
+source-wordcount: '1458'
 ht-degree: 0%
 
 ---
@@ -37,8 +37,9 @@ CDN 로그는 다음을 포함한 다양한 필드가 포함된 JSON 형식으�
 이 자습서의 목적상 [AEM WKND 프로젝트](https://github.com/adobe/aem-guides-wknd) AEM as a Cloud Service 환경에 배포되고 을 사용하여 소규모 성능 테스트가 트리거됩니다. [Apache JS 편집기](https://jmeter.apache.org/).
 
 이 튜토리얼은 다음 프로세스를 안내하도록 구성되어 있습니다.
+
 1. Cloud Manager를 통해 CDN 로그 다운로드
-1. 로컬로 설치된 대시보드 또는 원격으로 액세스된 Jupityer Notebook(Adobe Experience Platform에 라이선스를 부여한 사용자용)의 두 가지 접근 방식으로 수행할 수 있는 이러한 CDN 로그 분석
+1. 이러한 CDN 로그를 분석하려면 로컬로 설치된 대시보드나 원격으로 액세스하는 Splunk 또는 Jupityer Notebook(Adobe Experience Platform의 라이선스를 구입한 사용자용)의 두 가지 접근 방식을 사용하여 수행할 수 있습니다
 1. CDN 캐시 구성 최적화
 
 ## CDN 로그 다운로드
@@ -60,24 +61,27 @@ CDN 로그를 다운로드하려면 다음 단계를 수행합니다.
 
 ## 다운로드한 CDN 로그 분석
 
-캐시 적중률, MISS 및 PASS 캐시 유형의 상위 URL과 같은 통찰력을 얻으려면 다운로드된 CDN 로그 파일을 분석하십시오. 이러한 통찰력은 를 최적화하는 데 도움이 됩니다. [CDN 캐시 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html) 사이트 성능을 향상시킬 수 있습니다.
+캐시 적중률, MISS 및 PASS 캐시 유형의 상위 URL과 같은 통찰력을 얻으려면 다운로드된 CDN 로그 파일을 분석하십시오. 이러한 통찰력은 를 최적화하는 데 도움이 됩니다. [CDN 캐시 구성](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching) 사이트 성능을 향상시킬 수 있습니다.
 
-CDN 로그를 분석하기 위해 이 문서에서는 두 가지 옵션을 제공합니다. **Elasticsearch, Logstash 및 Kibana(ELK)** [대시보드 도구](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) 및 [Jupyter Notebook](https://jupyter.org/). ELK 대시보드 툴은 랩탑에 로컬로 설치할 수 있으며 Jupityr Notebook 툴은 원격으로 액세스할 수 있습니다 [Adobe Experience Platform의 일부](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data.html?lang=en) 추가 소프트웨어를 설치하지 않고 Adobe Experience Platform 라이센스가 부여된 사용자를 위한 것입니다.
+CDN 로그를 분석하기 위해 이 자습서에서는 다음 세 가지 옵션을 제공합니다.
 
+1. **Elasticsearch, Logstash 및 Kibana(ELK)**: [ELK 대시보드 도구](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md) 로컬에 설치할 수 있습니다.
+1. **스플렁크**: [Splunk 대시보드 도구](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/READEME.md) Splunk 및 [AEMCS 로그 전달 사용](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/logging#splunk-logs) CDN 로그를 수집합니다.
+1. [Jupyter Notebook](https://jupyter.org/): 의 일부로 원격으로 액세스할 수 있습니다. [Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data) 추가 소프트웨어를 설치하지 않고 Adobe Experience Platform 라이선스를 구입한 고객을 위한 것입니다.
 
 ### 옵션 1: ELK 대시보드 도구 사용
 
 다음 [스택](https://www.elastic.co/elastic-stack) 는 데이터를 검색, 분석 및 시각화할 수 있는 확장 가능한 솔루션을 제공하는 툴 세트입니다. 그것은 Elasticsearch, Logstash 및 Kibana로 구성되어 있습니다.
 
-주요 세부 정보를 식별하려면 [AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) 대시보드 도구 프로젝트입니다. 이 프로젝트는 ELK 스택의 도커 컨테이너와 CDN 로그를 분석하기 위해 사전 구성된 Kibana 대시보드를 제공합니다.
+주요 세부 정보를 식별하려면 [AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) 프로젝트. 이 프로젝트는 ELK 스택의 도커 컨테이너와 CDN 로그를 분석하기 위해 사전 구성된 Kibana 대시보드를 제공합니다.
 
-1. 다음 단계를 따릅니다. [ELK 도커 컨테이너를 설정하는 방법](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool#how-to-set-up-the-elk-docker-container) 및 을(를) 가져와야 합니다. **CDN 캐시 적중률** 키바나 대시보드
+1. 다음 단계를 따릅니다. [ELK 도커 컨테이너를 설정하는 방법](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md#how-to-set-up-the-elk-docker-containerhow-to-setup-the-elk-docker-container) 및 을(를) 가져와야 합니다. **CDN 캐시 적중률** 키바나 대시보드
 
 1. CDN 캐시 적중률 및 상위 URL을 식별하려면 다음 단계를 수행합니다.
 
-   1. 다운로드한 CDN 로그 파일을 환경별 폴더 내에 복사합니다.
+   1. 다운로드한 CDN 로그 파일을 환경별 로그 폴더 내에 복사합니다. 예: `ELK/logs/stage`.
 
-   1. 를 엽니다. **CDN 캐시 적중률** 왼쪽 상단 모서리의 탐색 메뉴 > Analytics > 대시보드 > CDN 캐시 적중률 을 클릭하여 대시보드를 만듭니다.
+   1. 를 엽니다. **CDN 캐시 적중률** 왼쪽 상단 모서리를 클릭하여 대시보드 _탐색 메뉴 > Analytics > 대시보드 > CDN 캐시 적중률_.
 
       ![CDN 캐시 적중률 - Kibana Dashboard](assets/cdn-logs-analysis/cdn-cache-hit-ratio-dashboard.png){width="500" zoomable="yes"}
 
@@ -126,11 +130,22 @@ CDN 로그를 분석하기 위해 이 문서에서는 두 가지 옵션을 제�
 
 마찬가지로 분석 요구 사항에 따라 대시보드에 필터를 더 추가합니다.
 
-### 옵션 2: Jupyter Notebook 사용
+### 옵션 2: Splunk 대시보드 도구 사용
 
-로컬로 소프트웨어를 설치하지 않으려는 사용자(예: 이전 섹션의 ELK 대시보드 도구)에게는 다른 옵션이 있지만 Adobe Experience Platform에 대한 라이센스가 필요합니다.
+다음 [스플렁크](https://www.splunk.com/) 는 모니터링 및 문제 해결 목적으로 로그를 집계하고 분석하고 시각화를 만드는 데 도움이 되는 인기 있는 로그 분석 도구입니다.
 
-다음 [Jupyter Notebook](https://jupyter.org/) 는 코드, 텍스트 및 시각화가 포함된 문서를 만들 수 있는 오픈 소스 웹 애플리케이션입니다. 데이터 변환, 시각화 및 통계 모델링에 사용됩니다. 원격으로 액세스할 수 있음 [Adobe Experience Platform의 일부](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data.html?lang=en).
+주요 세부 정보를 식별하려면 [AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) 프로젝트. 이 프로젝트는 CDN 로그를 분석하는 Splunk 대시보드를 제공합니다.
+
+1. 다음 단계를 따릅니다. [AEMCS CDN 로그 분석용 Splunk 대시보드](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/READEME.md) 및 을(를) 가져와야 합니다. **CDN 캐시 적중률** Splunk 대시보드.
+1. 필요한 경우 _색인, 소스 유형 및 기타_ 필터 값은 Splunk 대시보드에 있습니다.
+
+   ![Splunk 대시보드](assets/cdn-logs-analysis/splunk-CHR-dashboard.png){width="500" zoomable="yes"}
+
+### 옵션 3: Jupyter Notebook 사용
+
+로컬로 소프트웨어를 설치하지 않으려는 사용자(즉, 이전 섹션의 ELK 대시보드 도구)에게는 다른 옵션이 있지만 Adobe Experience Platform에 대한 라이센스가 필요합니다.
+
+다음 [Jupyter Notebook](https://jupyter.org/) 는 코드, 텍스트 및 시각화가 포함된 문서를 만들 수 있는 오픈 소스 웹 애플리케이션입니다. 데이터 변환, 시각화 및 통계 모델링에 사용됩니다. 원격으로 액세스할 수 있음 [Adobe Experience Platform의 일부](https://experienceleague.adobe.com/en/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data).
 
 #### 대화형 Python Notebook 파일 다운로드
 
@@ -181,6 +196,6 @@ CDN 로그를 분석하기 위해 이 문서에서는 두 가지 옵션을 제�
 
 CDN 로그를 분석한 후에는 CDN 캐시 구성을 최적화하여 사이트 성능을 향상시킬 수 있습니다. AEM 우수 사례는 캐시 적중률이 90% 이상인 것입니다.
 
-자세한 내용은 [CDN 캐시 구성 최적화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#caching).
+자세한 내용은 [CDN 캐시 구성 최적화](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching).
 
 AEM WKND 프로젝트에는 참조 CDN 구성이 있습니다. 자세한 내용은 다음을 참조하십시오. [CDN 구성](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.d/available_vhosts/wknd.vhost#L137-L190) 다음에서 `wknd.vhost` 파일.
