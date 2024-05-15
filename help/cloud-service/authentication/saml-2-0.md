@@ -8,12 +8,12 @@ role: Architect, Developer
 level: Intermediate
 jira: KT-9351
 thumbnail: 343040.jpeg
-last-substantial-update: 2022-10-17T00:00:00Z
+last-substantial-update: 2024-05-15T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
-duration: 2177
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+duration: 2200
+source-git-commit: 11c9173cbb2da75bfccba278e33fc4ca567bbda1
 workflow-type: tm+mt
-source-wordcount: '3060'
+source-wordcount: '3357'
 ht-degree: 1%
 
 ---
@@ -456,3 +456,66 @@ $ git push adobe saml-auth:develop
 ```
 
 Target Cloud Manager Git 분기 배포(이 예에서는 `develop`), 전체 스택 배포 파이프라인 사용
+
+## SAML 인증 호출
+
+SAML 인증 플로우는 특별히 제작된 링크나 단추를 만들어 AEM Site 웹 페이지에서 호출할 수 있습니다. 아래에 설명된 매개 변수는 필요에 따라 프로그래밍 방식으로 설정할 수 있으므로 예를 들어 로그인 단추는 `saml_request_path`: 성공적인 SAML 인증 시 사용자가 버튼의 컨텍스트에 따라 다른 AEM 페이지로 이동하는 위치입니다.
+
+### GET 요청
+
+SAML 인증은 다음 형식으로 HTTP GET 요청을 만들어 호출할 수 있습니다.
+
+`HTTP GET /system/sling/login`
+
+쿼리 매개 변수를 제공하는 방법:
+
+| 쿼리 매개 변수 이름 | 쿼리 매개 변수 값 |
+|----------------------|-----------------------|
+| `resource` | SAML 인증 핸들러인 모든 JCR 경로 또는 하위 경로는 [Adobe Granite SAML 2.0 인증 핸들러 OSGi 구성](#configure-saml-2-0-authentication-handler) `path` 속성. |
+| `saml_request_path` | SAML 인증이 성공한 후 사용자가 이동해야 하는 URL 경로입니다. |
+
+예를 들어 이 HTML 링크는 SAML 로그인 흐름을 트리거하고, 성공 시 사용자를 로 안내합니다. `/content/wknd/us/en/protected/page.html`. 이러한 쿼리 매개 변수는 필요에 따라 프로그래밍 방식으로 설정할 수 있습니다.
+
+```html
+<a href="/system/sling/login?resource=/content/wknd&saml_request_path=/content/wknd/us/en/protected/page.html">
+    Log in using SAML
+</a>
+```
+
+## POST 요청
+
+SAML 인증은 다음 형식으로 HTTP POST 요청을 만들어 호출할 수 있습니다.
+
+`HTTP POST /system/sling/login`
+
+및 양식 데이터 제공:
+
+| 양식 데이터 이름 | 양식 데이터 값 |
+|----------------------|-----------------------|
+| `resource` | SAML 인증 핸들러인 모든 JCR 경로 또는 하위 경로는 [Adobe Granite SAML 2.0 인증 핸들러 OSGi 구성](#configure-saml-2-0-authentication-handler) `path` 속성. |
+| `saml_request_path` | SAML 인증이 성공한 후 사용자가 이동해야 하는 URL 경로입니다. |
+
+
+예를 들어 이 HTML 단추는 HTTP POST을 사용하여 SAML 로그인 흐름을 트리거하고, 성공 시 사용자를 다음으로 안내합니다. `/content/wknd/us/en/protected/page.html`. 이러한 양식 데이터 매개 변수는 필요에 따라 프로그래밍 방식으로 설정할 수 있습니다.
+
+```html
+<form action="/system/sling/login" method="POST">
+    <input type="hidden" name="resource" value="/content/wknd">
+    <input type="hidden" name="saml_request_path" value="/content/wknd/us/en/protected/page.html">
+    <input type="submit" value="Log in using SAML">
+</form>
+```
+
+### Dispatcher 구성
+
+HTTP GET 및 POST 메서드를 모두 사용하려면 클라이언트가 AEM에 액세스해야 합니다 `/system/sling/login` 종단점입니다. 따라서 AEM Dispatcher를 통해 허용되어야 합니다.
+
+GET 또는 POST 사용 여부에 따라 필요한 URL 패턴 허용
+
+```
+# Allow GET-based SAML authentication invocation
+/0191 { /type "allow" /method "GET" /url "/system/sling/login" /query="*" }
+
+# Allow POST-based SAML authentication invocation
+/0192 { /type "allow" /method "POST" /url "/system/sling/login" }
+```
