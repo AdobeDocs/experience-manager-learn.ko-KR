@@ -7,8 +7,8 @@ role: User
 level: Beginner
 doc-type: Tutorial
 exl-id: 15121896-9196-4ce0-aff2-9178563326b4
-duration: 311
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 253
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 0%
@@ -76,7 +76,7 @@ Dynamic Media Classic의 모든 URL 및 트랜잭션은 데이터베이스의 �
 | ------- | ----------------------- | ------------------------------------------- | ------------------------------- |
 | AA123 | 대체 보기 | AA123_1.tif AA123_2.tif AA123_3.tif | AA123_1 AA123_2 AA123_3 |
 |         | 컬러 보기 | AA123_BLU.tif AA123_RED.tif AA123_BROWN.tif | AA123_BLU AA123_RED AA123_BROWN |
-|         | 색상 견본 | AA123_BLU_SW.tif | AA123_BLU_SW |
+|         | 견본 | AA123_BLU_SW.tif | AA123_BLU_SW |
 |         | 이미지 집합 또는 견본 집합 |                                             | AA123 또는 AA123_SET | — |
 
 이미지 집합 및 견본 집합과 같은 집합 컬렉션을 다룰 때 집합 자체도 고유한 이름을 가져야 합니다. 따라서 이 경우 세트에는 기본 SKU를 해당 이름으로 제공하거나 &quot;_SET&quot; 확장자가 있는 SKU를 제공할 수 있습니다.

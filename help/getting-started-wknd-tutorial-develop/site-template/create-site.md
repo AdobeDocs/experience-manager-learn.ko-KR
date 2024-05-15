@@ -11,8 +11,8 @@ thumbnail: KT-7496.jpg
 doc-type: Tutorial
 exl-id: 6d0fdc4d-d85f-4966-8f7d-d53506a7dd08
 recommendations: noDisplay, noCatalog
-duration: 265
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 198
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '959'
 ht-degree: 0%
@@ -118,7 +118,7 @@ AEM 첫 번째 단계로 as a Cloud Service 환경에 로그인합니다. AEM �
 
    >[!NOTE]
    >
-   > 공유 AEM 환경을 사용하는 경우 고유 식별자를 **사이트 이름**. 예 `wknd-site-johndoe`. 이렇게 하면 여러 사용자가 충돌 없이 동일한 자습서를 완료할 수 있습니다.
+   > 공유 AEM 환경을 사용하는 경우 고유 식별자를 **사이트 이름**. 예, `wknd-site-johndoe`. 이렇게 하면 여러 사용자가 충돌 없이 동일한 자습서를 완료할 수 있습니다.
 
 1. 클릭 **만들기** 사이트를 생성합니다. 클릭 **완료** 다음에서 **성공** AEM이 웹 사이트 생성을 완료하면 대화 상자가 표시됩니다.
 

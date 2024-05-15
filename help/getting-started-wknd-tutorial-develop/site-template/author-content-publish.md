@@ -11,8 +11,8 @@ thumbnail: KT-7497.jpg
 doc-type: Tutorial
 exl-id: 17ca57d1-2b9a-409c-b083-398d38cd6a19
 recommendations: noDisplay, noCatalog
-duration: 355
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 263
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '1285'
 ht-degree: 1%
@@ -60,7 +60,7 @@ ht-degree: 1%
 
 AEM 구성 요소는 웹 페이지의 작은 모듈식 빌딩 블록으로 생각할 수 있습니다. UI를 논리적 청크 또는 구성 요소로 분류하면 관리가 훨씬 쉬워집니다. 구성 요소를 다시 사용하려면 구성 요소를 구성할 수 있어야 합니다. 이 작업은 작성자 대화 상자를 통해 수행됩니다.
 
-AEM은 다음 집합 제공 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 사용할 준비가 된 프로덕션 상태입니다. 다음 **핵심 구성 요소** 과 같은 기본 요소의 범위 [텍스트](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html) 및 [이미지](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) 와 같은 보다 복잡한 UI 요소 [회전판](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html).
+AEM은 다음 집합 제공 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR) 사용할 준비가 된 프로덕션 상태입니다. 다음 **핵심 구성 요소** 과 같은 기본 요소의 범위 [텍스트](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html) 및 [이미지](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) 와 같은 보다 복잡한 UI 요소 [회전판](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html).
 
 그런 다음 AEM 페이지 편집기를 사용하여 몇 가지 구성 요소를 작성합니다.
 
@@ -90,7 +90,7 @@ AEM은 다음 집합 제공 [핵심 구성 요소](https://experienceleague.adob
 
 1. 다음과 같은 구성 요소가 페이지에 있는지 확인합니다. **제목**, **탐색**, **검색** 수정되었습니다. 이러한 영역은 페이지 템플릿의 일부로 구성되며 개별 페이지에서 수정할 수 없습니다. 이 내용은 다음 장에서 더 자세히 알아봅니다.
 
-다른 구성 요소 중 일부를 자유롭게 실험해 보십시오. 각각에 대한 설명서 [핵심 구성 요소는 여기에서 찾을 수 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html). 에 대한 자세한 비디오 시리즈 [페이지 작성은 여기에서 확인할 수 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/aem-sites-authoring-overview.html).
+다른 구성 요소 중 일부를 자유롭게 실험해 보십시오. 각각에 대한 설명서 [핵심 구성 요소는 여기에서 찾을 수 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR). 에 대한 자세한 비디오 시리즈 [페이지 작성은 여기에서 확인할 수 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/aem-sites-authoring-overview.html).
 
 ## 업데이트 게시 {#publish-updates}
 

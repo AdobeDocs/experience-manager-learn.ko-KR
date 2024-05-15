@@ -7,17 +7,17 @@ topic: Development, Architecture, Content Management
 role: Architect, Developer
 level: Beginner
 doc-type: Tutorial
-duration: 0
+duration: 761
 last-substantial-update: 2024-02-13T00:00:00Z
 jira: KT-14901
 thumbnail: KT-14901.jpeg
-source-git-commit: 6c01dc8a0e8fd3cc69b21c78da8678e872dcef0c
+exl-id: 070cbe54-2379-448b-bb7d-3756a60b65f0
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '1116'
 ht-degree: 0%
 
 ---
-
 
 # PIM 통합을 위한 AEM Assets 이벤트
 
@@ -298,4 +298,3 @@ AEM Assets 및 PIM 통합을 확인하려면 다음 단계를 따르십시오.
 - API 인증은 OAuth 서버 간(즉, 클라이언트 자격 증명 흐름)을 사용합니다. 참조: [OAuth 서버 간 자격 증명 구현 안내서](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/).
 - Adobe I/O Runtime 작업 대신 다른 웹후크 또는 Amazon EventBridge를 사용하여 AEM Assets 이벤트를 수신하고 메타데이터 업데이트를 처리할 수 있습니다.
 - AEM Eventing을 통한 자산 이벤트는 기업이 중요한 프로세스를 자동화하고 능률화할 수 있도록 지원하여 컨텐츠 에코시스템 전반의 효율성과 일관성을 향상시킵니다.
-

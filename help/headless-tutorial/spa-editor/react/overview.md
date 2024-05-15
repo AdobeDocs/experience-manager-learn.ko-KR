@@ -11,8 +11,8 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 38802296-8988-4300-a04a-fcbbe98ac810
 last-substantial-update: 2022-08-25T00:00:00Z
-duration: 92
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 71
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '417'
 ht-degree: 20%
@@ -46,7 +46,7 @@ ht-degree: 20%
 * HTML, CSS 및 JavaScript에 대한 기본 지식
 * 에 대한 기본 친숙도 [반응](https://reactjs.org/tutorial/tutorial.html)
 
-*필수는 아니지만 의 기본 사항을 이해하는 것이 좋습니다. [기존 AEM Sites 구성 요소 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html).*
+*필수는 아니지만 의 기본 사항을 이해하는 것이 좋습니다. [기존 AEM Sites 구성 요소 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR).*
 
 ## 로컬 개발 환경 {#local-dev-environment}
 

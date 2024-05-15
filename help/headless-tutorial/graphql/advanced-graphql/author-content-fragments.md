@@ -7,8 +7,8 @@ topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: 998d3678-7aef-4872-bd62-0e6ea3ff7999
-duration: 825
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 609
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '2931'
 ht-degree: 1%
@@ -193,7 +193,7 @@ AEM에서는 콘텐츠 조각 편집기에서 직접 조각 참조를 만들 수
 
 연락처 정보 조각에 다음 정보를 추가합니다.
 
-| 컨텐츠 조각 제목 | 전화 | 이메일 |
+| 컨텐츠 조각 제목 | 모바일 | 이메일 |
 | ------- | -------- | -------- |
 | Stacey Roswells 연락처 정보 | 209-888-0011 | sroswells@wknd.com |
 | Kumar Selvaraj 연락처 정보 | 209-888-0002 | kselvaraj@wknd.com |

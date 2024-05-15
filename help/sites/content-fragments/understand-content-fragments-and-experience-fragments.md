@@ -9,8 +9,8 @@ role: User
 level: Beginner
 doc-type: Article
 exl-id: ccbc68d1-a83e-4092-9a49-53c56c14483e
-duration: 231
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 168
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '829'
 ht-degree: 2%
@@ -100,7 +100,7 @@ Adobe Experience Manager의 콘텐츠 조각 및 경험 조각 은 표면적으�
 </td>
 </tr><tr><td><strong>사용</strong></td>
 <td><ul>
-<li>를 통한 JSON 내보내기 <a href="https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html">AEM 헤드리스 GraphQL API</a></li>
+<li>를 통한 JSON 내보내기 <a href="https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ko-KR">AEM 헤드리스 GraphQL API</a></li>
 <li><a href="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html" target="_blank">AEM 코어 구성 요소 콘텐츠 조각 구성 요소</a> AEM Sites, AEM Screens 또는 경험 조각에서 사용합니다.</li>
 <li>를 통한 JSON 내보내기 <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=en" target="_blank">AEM Content Services</a> 서드파티 소비용</li>
 <li>타깃팅된 오퍼를 위해 Adobe Target으로 JSON 내보내기</li>
@@ -173,7 +173,7 @@ Adobe Experience Manager의 콘텐츠 조각 및 경험 조각 은 표면적으�
 ## 콘텐츠 조각 지원 리소스
 
 + [콘텐츠 조각 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=en&amp;topic=/experience-manager/6-5/assets/morehelp/content-fragments.ug.js)
-+ [Adobe Experience Manager as a Headless CMS 소개](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html)
++ [Adobe Experience Manager as a Headless CMS 소개](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=ko-KR)
 + [AEM에서 컨텐츠 조각 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/content-fragments-feature-video-use.html?lang=en)
 + [AEM WCM 핵심 구성 요소의 콘텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
 + [컨텐츠 조각 및 AEM Headless 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=en)

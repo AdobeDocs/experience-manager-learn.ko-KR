@@ -7,8 +7,8 @@ role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: d6b6d425-842a-43a9-9041-edf78e51d962
-duration: 532
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 467
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '1350'
 ht-degree: 0%
@@ -202,7 +202,7 @@ AEM Content Services를 통해 기본 모바일 경험을 제공하는 방법을
 AEM Content Services 및 AEM as a Headless CMS에 대한 자세한 내용은 Adobe의 다른 설명서 및 지원 자료를 참조하십시오.
 
 * [컨텐츠 조각 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html)
-* [AEM WCM 코어 구성 요소 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [AEM WCM 코어 구성 요소 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)
 * [AEM WCM 코어 구성 요소 구성 요소 라이브러리](https://opensource.adobe.com/aem-core-wcm-components/library.html)
 * [AEM WCM 핵심 구성 요소 GitHub 프로젝트](https://github.com/adobe/aem-core-wcm-components)
 * [구성 요소 내보내기의 코드 샘플](https://github.com/Adobe-Consulting-Services/acs-aem-samples/blob/master/core/src/main/java/com/adobe/acs/samples/models/SampleComponentExporter.java)

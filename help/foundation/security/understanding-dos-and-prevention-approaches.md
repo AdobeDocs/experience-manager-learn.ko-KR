@@ -7,11 +7,11 @@ topic: Security, Development
 role: Admin, Architect, Developer
 level: Beginner
 doc-type: Article
-duration: 0
+duration: 75
 last-substantial-update: 2024-03-30T00:00:00Z
 jira: KT-15219
 exl-id: 1d7dd829-e235-4884-a13f-b6ea8f6b4b0b
-source-git-commit: f84a6cc54838e5bf87cfa173ef17df4ec745ebcb
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 1%
@@ -49,7 +49,7 @@ AEM 환경에서 DoS 및 DDoS 공격을 예방하고 완화하는 데 사용할 
         <tr>
             <td>ModSecurity</td>
             <td>ModSecurity(일명 'mod_security' Apache 모듈)는 웹 애플리케이션에 대한 다양한 공격으로부터 보호하는 오픈 소스 크로스 플랫폼 솔루션입니다.<br/> AEM as a Cloud Service에서는 AEM Author 서비스 앞에 Apache 웹 서버와 AEM Dispatcher가 없으므로 AEM Publish 서비스에만 적용할 수 있습니다.</td>
-            <td colspan="3"><a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection" target="_blank">ModSecurity 활성화 </a></td>
+            <td colspan="3"><a href="https://experienceleague.adobe.com/ko/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection" target="_blank">ModSecurity 활성화 </a></td>
         </tr>
         <tr>
             <td>트래픽 필터 규칙</td>

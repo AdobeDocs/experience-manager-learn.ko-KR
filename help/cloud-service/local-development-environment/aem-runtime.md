@@ -10,8 +10,8 @@ role: Developer
 level: Beginner
 last-substantial-update: 2022-09-02T00:00:00Z
 exl-id: 19f72254-2087-450b-909d-2d90c9821486
-duration: 529
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 411
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '1696'
 ht-degree: 7%
@@ -214,7 +214,7 @@ $ java -jar aem-publish-p4503.jar -r prerelease
 
 >[!NOTE]
 >
-복제 에이전트는 로컬 Quickstart JAR에서만 사용할 수 있으며 컨텐츠 배포 시뮬레이션만 제공합니다.
+> 복제 에이전트는 로컬 Quickstart JAR에서만 사용할 수 있으며 컨텐츠 배포 시뮬레이션만 제공합니다.
 
 1. 에 로그인 **작성자** 서비스 및 다음으로 이동 [http://localhost:4502/etc/replication/agents.author.html](http://localhost:4502/etc/replication/agents.author.html).
 1. 클릭 **기본 에이전트(게시)** 기본 복제 에이전트를 엽니다.
@@ -279,7 +279,7 @@ Quickstart Jar 이름 지정 `aem-<tier>_<environment>-p<port number>.jar` 시�
 
 >[!WARNING]
 >
-Quickstart Jar를 새 버전으로 업데이트하려면 전체 로컬 개발 환경을 교체해야 하므로 로컬 AEM 저장소의 모든 코드, 구성 및 콘텐츠가 손실됩니다. 폐기해서는 안 되는 코드, 구성 또는 콘텐츠가 Git에 안전하게 커밋되거나 로컬 AEM 인스턴스에서 AEM 패키지로 내보내지는지 확인합니다.
+> Quickstart Jar를 새 버전으로 업데이트하려면 전체 로컬 개발 환경을 교체해야 하므로 로컬 AEM 저장소의 모든 코드, 구성 및 콘텐츠가 손실됩니다. 폐기해서는 안 되는 코드, 구성 또는 콘텐츠가 Git에 안전하게 커밋되거나 로컬 AEM 인스턴스에서 AEM 패키지로 내보내지는지 확인합니다.
 
 ### AEM SDK를 업그레이드할 때 콘텐츠 손실을 방지하는 방법
 

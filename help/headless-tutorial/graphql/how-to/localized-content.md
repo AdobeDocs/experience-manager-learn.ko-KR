@@ -9,8 +9,8 @@ level: Intermediate
 jira: KT-10254
 thumbnail: KT-10254.jpeg
 exl-id: 5e3d115b-f3a1-4edc-86ab-3e0713a36d54
-duration: 149
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 130
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '472'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # AEM Headless를 사용한 현지화된 콘텐츠
 
-AEM에서 다음을 제공합니다. [번역 통합 프레임워크](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/translation/integration-framework.html) headless 콘텐츠의 경우 콘텐츠 조각 및 지원 에셋을 로케일에서 사용하기 위해 쉽게 번역할 수 있도록 합니다. 페이지, 경험 조각, 에셋 및 Forms과 같은 다른 AEM 콘텐츠를 번역하는 데 사용되는 것과 동일한 프레임워크입니다. 한 번 [헤드리스 콘텐츠 번역됨](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html), 그리고 게시되어 headless 애플리케이션에서 사용할 준비가 되었습니다.
+AEM에서 다음을 제공합니다. [번역 통합 프레임워크](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/translation/integration-framework.html) headless 콘텐츠의 경우 콘텐츠 조각 및 지원 에셋을 로케일에서 사용하기 위해 쉽게 번역할 수 있도록 합니다. 페이지, 경험 조각, 에셋 및 Forms과 같은 다른 AEM 콘텐츠를 번역하는 데 사용되는 것과 동일한 프레임워크입니다. 한 번 [헤드리스 콘텐츠 번역됨](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html?lang=ko-KR), 그리고 게시되어 headless 애플리케이션에서 사용할 준비가 되었습니다.
 
 ## 에셋 폴더 구조{#assets-folder-structure}
 

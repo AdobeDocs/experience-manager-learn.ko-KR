@@ -8,8 +8,8 @@ role: User
 level: Beginner
 doc-type: Feature Video
 exl-id: 525cd30c-05bf-4f17-b61b-90609ce757ea
-duration: 906
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 878
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '520'
 ht-degree: 2%
@@ -73,7 +73,7 @@ Headless 사용 사례에서 서드파티 채널을 지원하기 위해 콘텐�
 ## 추가 리소스 {#additional-resources}
 
 * [콘텐츠 조각 작성](content-fragments-feature-video-use.md)
-* [AEM WCM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [AEM WCM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)
 * [AEM WCM 핵심 콘텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
 
 비디오 시리즈에서 최종 상태에 대해 AEM 6.4+ 인스턴스에서 아래 패키지를 다운로드하여 설치하려면 다음을 수행하십시오.\

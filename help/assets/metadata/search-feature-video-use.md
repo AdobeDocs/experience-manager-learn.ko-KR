@@ -3,8 +3,8 @@ title: AEM Assets에서 검색 사용
 description: 이 비디오에서는 AEM에 도입된 에셋 검색에 대한 몇 가지 개선 사항을 살펴봅니다. 작성자가 각 메타데이터 속성을 업데이트하여 키워드 검색 결과의 특정 자산을 늘릴 수 있습니다. Assets OmniSearch 술어에 대한 몇 가지 고급 구성도 살펴봅니다.
 version: 6.4, 6.5
 doc-type: Feature Video
-duration: 379
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 373
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '133'
 ht-degree: 0%

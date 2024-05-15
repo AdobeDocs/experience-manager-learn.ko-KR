@@ -13,8 +13,8 @@ mini-toc-levels: 1
 badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM as a Cloud Service" before-title="false"
 exl-id: 9e856dcc-f042-4e9d-bf97-dd4f72e837e3
-duration: 218
-source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
+duration: 135
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '682'
 ht-degree: 11%
@@ -88,7 +88,7 @@ AEMas a Cloud Service 과 Adobe Analytics을 통합하면 고객 여정의 어�
 
 ## Adobe Commerce
 
-Adobe Commerce은 AEM as a Cloud Service과 통합되므로 브랜드가 상거래 경험을 차별화하고 온라인 지출을 빠르게 포착하기 위해 더 빠르게 확장 및 혁신할 수 있습니다. AEM with Commerce는 Experience Manager에 있는 몰입형, 옴니채널 및 개인화된 경험을 다양한 상거래 솔루션과 결합하여 쇼핑 여정의 모든 부분에 차별화된 경험을 제공하여 가치 창출 시간을 줄이고 높은 전환을 유도합니다.
+Adobe Commerce은 AEM as a Cloud Service과 통합되므로 브랜드가 상거래 경험을 차별화하고 온라인 지출을 빠르게 포착하기 위해 더 빠르게 확장 및 혁신할 수 있습니다. AEM과 Commerce은 Experience Manager의 몰입형, 옴니채널 및 개인화된 경험을 다양한 상거래 솔루션과 결합하여 쇼핑 여정의 모든 부분에 차별화된 경험을 제공하여 가치 창출 시간을 줄이고 높은 전환을 유도합니다.
 
 ### AEM Sites
 
@@ -119,7 +119,7 @@ Adobe Journey Optimizer은 단일 애플리케이션에서 수백만 고객과 �
 
 ## Adobe Learning Manager
 
-Adobe Learning Manager(이전 Adobe Captivate Prime)는 고객 및 직원에게 개인화된 학습을 제공합니다.
+Adobe Learning Manager(이전의 Adobe Captivate Prime)는 고객과 직원에게 개인화된 학습을 제공합니다.
 
 ### AEM Sites
 

@@ -11,8 +11,8 @@ thumbnail: KT-6265.jpg
 last-substantial-update: 2022-09-20T00:00:00Z
 doc-type: Tutorial
 exl-id: 80e4cf2e-dff6-41e8-b09b-187cf2e18e00
-duration: 547
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 452
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '1813'
 ht-degree: 0%
@@ -424,7 +424,7 @@ Sling 모델이 [업데이트됨](#sling-model) 이 장 앞부분에서 다음�
 
    >[!NOTE]
    >
-   > 구현 전체에서 재사용되는 오브젝트에 대한 고급 데이터 레이어를 구축하는 경우 데이터 레이어 요소를 고유한 데이터 레이어별 Java™ 오브젝트로 추출하는 것이 좋습니다. 예를 들어 Commerce 핵심 구성 요소에에 대한 인터페이스가 추가되었습니다. `ProductData` 및 `CategoryData` 상거래 구현 내의 많은 구성 요소에서 사용할 수 있기 때문입니다. 리뷰 [aem-cif-core-components 저장소의 코드](https://github.com/adobe/aem-core-cif-components/tree/master/bundles/core/src/main/java/com/adobe/cq/commerce/core/components/datalayer) 을 참조하십시오.
+   > 구현 전체에서 재사용되는 오브젝트에 대한 고급 데이터 레이어를 구축하는 경우 데이터 레이어 요소를 고유한 데이터 레이어별 Java™ 오브젝트로 추출하는 것이 좋습니다. 예를 들어 Commerce 핵심 구성 요소는에 대한 인터페이스를 추가했습니다. `ProductData` 및 `CategoryData` Commerce 구현 내의 많은 구성 요소에서 사용할 수 있기 때문입니다. 리뷰 [aem-cif-core-components 저장소의 코드](https://github.com/adobe/aem-core-cif-components/tree/master/bundles/core/src/main/java/com/adobe/cq/commerce/core/components/datalayer) 을 참조하십시오.
 
 ## 축하합니다! {#congratulations}
 

@@ -10,8 +10,8 @@ level: Beginner
 jira: KT-9291
 exl-id: 1b55b6d2-3bab-4907-af89-c81a3b1a44cb
 last-substantial-update: 2019-07-07T00:00:00Z
-duration: 50
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 39
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '194'
 ht-degree: 0%
@@ -39,7 +39,7 @@ AEM Forms의 도구 모음에 다음 및 이전 단추를 추가하면 기본적
 [다음] 단추를 선택하고 [다음] 단추 텍스트 대신 [다음] 단추의 스타일 속성 시트를 열어야 합니다. 다음 속성 설정
 * Dimension 및 위치
    * 위치: 절대 상단 1px 오른쪽 1px
-* 테두리
+* 경계
    * 테두리 반경: 4px(위쪽, 오른쪽, 아래쪽, 왼쪽)
 
 변경 사항 저장

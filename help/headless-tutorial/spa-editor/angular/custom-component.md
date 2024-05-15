@@ -10,8 +10,8 @@ role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: 6c1c7f2b-f574-458c-b744-b92419c46f23
-duration: 393
-source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
+duration: 308
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '1321'
 ht-degree: 0%
@@ -235,7 +235,7 @@ SPA 편집기의 컨텍스트에서 슬링 모델은 를 사용하는 기능을 
 
    >[!NOTE]
    >
-   다음을 볼 수 있습니다. [여기서 CustomComponentImpl.java를 완료했습니다.](https://github.com/adobe/aem-guides-wknd-spa/blob/Angular/custom-component-solution/core/src/main/java/com/adobe/aem/guides/wknd/spa/angular/core/models/impl/CustomComponentImpl.java).
+   > 다음을 볼 수 있습니다. [여기서 CustomComponentImpl.java를 완료했습니다.](https://github.com/adobe/aem-guides-wknd-spa/blob/Angular/custom-component-solution/core/src/main/java/com/adobe/aem/guides/wknd/spa/angular/core/models/impl/CustomComponentImpl.java).
 
 ## angular 구성 요소 업데이트
 

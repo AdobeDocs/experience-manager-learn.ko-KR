@@ -11,8 +11,8 @@ thumbnail: KT-13466.jpg
 doc-type: article
 last-substantial-update: 2023-06-12T00:00:00Z
 exl-id: 83acbddb-9168-4d8b-84b5-97577d8a1ead
-duration: 555
-source-git-commit: 6f1245e804f0311c3f833ea8b2324cbc95272f52
+duration: 538
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '729'
 ht-degree: 0%
@@ -39,11 +39,11 @@ RTE 배지의 가장 일반적인 사용 사례는 배지와 함께 사용하는
 
 이 예제에서는 다음을 사용하여 작업을 간단하게 합니다 [Adobe 반응 스펙트럼](https://react-spectrum.adobe.com/react-spectrum/index.html) 위젯 또는 대화 상자 UI 및 하드 코딩된 WKND 고객 서비스 전화 번호를 개발하는 프레임워크입니다. 콘텐츠의 편집하지 않고 다른 스타일 측면을 제어하려면 `#` 문자는에서 사용됩니다. `prefix` 및 `suffix` 배지 정의의 특성입니다.
 
-## 확장 지점
+## 확장 기능 포인트
 
 이 예제는 확장 지점까지 확장됩니다 `rte` 를 클릭하여 콘텐츠 조각 편집기의 RTE에 배지를 추가합니다.
 
-| AEM UI 확장 | 확장 지점 |
+| AEM UI 확장 | 확장 기능 포인트 |
 | ------------------------ | --------------------- | 
 | [콘텐츠 조각 편집기](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [리치 텍스트 편집기 배지](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-badges/) 및 [리치 텍스트 편집기 위젯](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-widgets/) |
 

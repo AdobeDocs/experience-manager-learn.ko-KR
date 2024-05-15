@@ -8,7 +8,9 @@ role: Developer
 level: Experienced
 jira: KT-15025
 last-substantial-update: 2024-02-26T00:00:00Z
-source-git-commit: acfd982ce471c8510cb59ed4d353f1d47dcfb5dc
+exl-id: cae160f2-21a5-409c-942d-53061451b249
+duration: 97
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 0%
@@ -124,4 +126,3 @@ public class ConvertJSONToXML implements WorkflowProcess {
 1. 몇 가지 양식 필드를 작성합니다.
 1. 양식을 제출하여 AEM 워크플로우를 시작합니다.
 1. 워크플로의 페이로드 폴더에서 렌더링된 PDF을 찾습니다.
-

@@ -8,8 +8,8 @@ role: Developer
 level: Intermediate
 exl-id: 9c62a7d6-8846-424c-97b8-2e6e3c1501ec
 last-substantial-update: 2021-01-09T00:00:00Z
-duration: 121
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 95
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 0%
@@ -52,7 +52,7 @@ AEM Forms 6.4부터 이제 AEM Workflow의 한 단계로 양식 데이터 모델
 
 1. [에셋 가져오기](assets/postdortodam.zip) 패키지 관리자를 사용하여 AEM에 이 문서와 연결됩니다. 다음을 확인할 수 있습니다
 
-   1. 워크플로우 모델
+   1. 워크플로 모델
    1. AEM Workflow에 제출하도록 구성된 적응형 양식
    1. PostToDam.JSON 파일을 사용하도록 구성된 데이터 소스
    1. 데이터 소스를 사용하는 양식 데이터 모델

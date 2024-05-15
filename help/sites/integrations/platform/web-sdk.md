@@ -13,8 +13,8 @@ thumbnail: KT-13156.jpeg
 badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service" before-title="false"
 exl-id: 47df99e6-6418-43c8-96fe-85e3c47034d6
-duration: 1360
-source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
+duration: 1303
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '1229'
 ht-degree: 1%
@@ -79,7 +79,7 @@ Experience Platform에서 태그 속성을 만들어 WKND 웹 사이트에 웹 S
 
 + 태그 확장 기능: [코어](https://exchange.adobe.com/apps/ec/100223/adobe-launch-core-extension) 및 [Adobe Experience Platform 웹 SDK](https://exchange.adobe.com/apps/ec/106387/aep-web-sdk)
 + 데이터 요소: WKND 사이트의 Adobe 클라이언트 데이터 레이어를 사용하여 페이지 이름, 사이트 섹션 및 호스트 이름을 추출하는 사용자 지정 코드 유형의 데이터 요소입니다. 또한 이전에 새로 생성된 WKND XDM 스키마 빌드를 준수하는 XDM 개체 유형 데이터 요소입니다 [XDM 스키마 만들기](#create-xdm-schema---experience-platform) 단계.
-+ 규칙: 트리거된 Adobe 클라이언트 데이터 레이어를 사용하여 WKND 웹 페이지를 방문할 때마다 Platform Edge Network로 데이터 전송 `cmp:show` 이벤트.
++ 규칙: 트리거된 Adobe 클라이언트 데이터 레이어를 사용하여 WKND 웹 페이지를 방문할 때마다 플랫폼 Edge Network으로 데이터 전송 `cmp:show` 이벤트.
 
 를 사용하여 태그 라이브러리를 빌드하고 게시하는 동안 **게시 플로우**, 다음을 사용할 수 있습니다. **변경된 모든 리소스 추가** 단추를 클릭합니다. 개별 리소스를 식별하고 선택하는 대신 데이터 요소, 규칙 및 태그 확장과 같은 모든 리소스를 선택합니다. 또한 개발 단계에서는 라이브러리를 _개발_ 환경을 확인한 다음 로 승격합니다. _단계_ 또는 _프로덕션_ 환경.
 

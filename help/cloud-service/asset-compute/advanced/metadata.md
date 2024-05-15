@@ -10,8 +10,8 @@ topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 6ece6e82-efe9-41eb-adf8-78d9deed131e
-duration: 500
-source-git-commit: 0400242f6a99bc5209a8b483469d5fd88eac077e
+duration: 432
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '1405'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 일반적인 사용 사례는 다음과 같습니다.
 
 + 추가 메타데이터를 검색하고 자산에 저장해야 하는 PIM(제품 정보 관리 시스템)과 같은 타사 시스템과의 통합
-+ 콘텐츠 및 상거래 AI와 같은 Adobe 서비스와 통합하여 추가 머신 러닝 속성으로 에셋 메타데이터를 강화합니다
++ 컨텐츠 및 Commerce AI와 같은 Adobe 서비스와 통합하여 추가 머신 러닝 속성으로 에셋 메타데이터를 증가시킵니다
 + 바이너리에서 에셋에 대한 메타데이터를 파생하고 AEM as a Cloud Service으로 에셋 메타데이터로 저장
 
 ## 수행할 작업

@@ -8,8 +8,8 @@ role: User
 level: Beginner
 doc-type: Feature Video
 exl-id: d33c033a-9577-4d4e-99be-f3c7e2a4ce73
-duration: 687
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 665
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 11%
@@ -75,7 +75,7 @@ AEM 컨텐츠 조각은 AEM 작성자에서 변형, 요소 및 메타데이터�
 ## 추가 리소스 {#additional-resources}
 
 * [컨텐츠 조각 전달](content-fragments-delivery-feature-video-use.md)
-* [AEM WCM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [AEM WCM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)
 * [AEM WCM 핵심 콘텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
 
 비디오 시리즈에서 최종 상태에 대해 AEM 6.4+ 인스턴스에서 아래 패키지를 다운로드하여 설치하려면 다음을 수행하십시오.

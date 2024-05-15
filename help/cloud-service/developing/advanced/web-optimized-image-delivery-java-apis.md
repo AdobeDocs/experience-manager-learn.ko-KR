@@ -11,8 +11,8 @@ last-substantial-update: 2023-03-30T00:00:00Z
 jira: KT-13014
 thumbnail: KT-13014.jpeg
 exl-id: c6bb9d6d-aef0-42d5-a189-f904bbbd7694
-duration: 331
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 352
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '810'
 ht-degree: 0%
@@ -25,7 +25,7 @@ AEM as a Cloud Service의 웹 최적화 이미지 제공 Java™ API를 사용�
 
 AEM as a Cloud Service 지원 [웹에 최적화된 이미지 제공](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) 는 자산의 최적화된 이미지 웹 렌디션을 자동으로 생성합니다. 웹에 최적화된 이미지 제공은 다음과 같은 세 가지 주요 방법을 사용할 수 있습니다.
 
-1. [AEM 코어 WCM 구성 요소 사용](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+1. [AEM 코어 WCM 구성 요소 사용](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)
 2. 다음을 수행하는 사용자 지정 구성 요소 만들기 [AEM 코어 WCM 구성 요소 이미지 구성 요소를 확장합니다.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/custom-component.html#tackling-the-image-problem)
 3. AssetDelivery Java™ API를 사용하여 웹에 최적화된 이미지 URL을 생성하는 사용자 지정 구성 요소를 만듭니다.
 

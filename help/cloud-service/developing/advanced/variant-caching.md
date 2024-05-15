@@ -5,8 +5,8 @@ role: Architect, Developer
 topic: Development
 feature: CDN Cache, Dispatcher
 exl-id: fdf62074-1a16-437b-b5dc-5fb4e11f1355
-duration: 172
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 149
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '551'
 ht-degree: 1%
@@ -49,7 +49,7 @@ AEM as a cloud service를 설정하고 사용하여 페이지 변형 캐싱을 �
 
 ## 사용
 
-1. 이 기능을 보여 주기 위해 다음을 사용합니다. [WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)의 구현을 예로 들 수 있습니다.
+1. 이 기능을 보여 주기 위해 다음을 사용합니다. [WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR)의 구현을 예로 들 수 있습니다.
 
 1. 구현 [SlingServletFilter](https://sling.apache.org/documentation/the-sling-engine/filters.html) 설정할 AEM에서 `x-aem-variant` http 응답에 대한 쿠키(변형 값 포함).
 

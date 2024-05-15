@@ -10,8 +10,8 @@ role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: f2cf4063-0b08-4b4f-91e6-70e5a148f931
-duration: 152
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 123
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 8%
@@ -36,7 +36,7 @@ ht-degree: 8%
 
 * [Maven AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
 * [AEM SPA 편집기](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-walkthrough.html#content-editing-experience-with-spa)
-* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)
 * [Angular](https://angular.io/)
 
 *자습서의 각 부분을 완료하는 데 1~2시간이 걸릴 것으로 예상합니다.*
@@ -58,7 +58,7 @@ ht-degree: 8%
 * [Apache Maven](https://maven.apache.org/) (3.3.9 이상)
 * [Node.js](https://nodejs.org/en/) 및 [npm](https://www.npmjs.com/)
 
-*필수는 아니지만 의 기본 사항을 이해하는 것이 좋습니다. [기존 AEM Sites 구성 요소 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html).*
+*필수는 아니지만 의 기본 사항을 이해하는 것이 좋습니다. [기존 AEM Sites 구성 요소 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR).*
 
 ## 로컬 개발 환경 {#local-dev-environment}
 

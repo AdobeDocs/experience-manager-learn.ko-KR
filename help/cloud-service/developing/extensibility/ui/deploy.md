@@ -10,8 +10,8 @@ recommendations: noDisplay, noCatalog
 jira: KT-11603
 last-substantial-update: 2023-06-02T00:00:00Z
 exl-id: 2e37165d-c003-4206-8133-54e37ca35b8e
-duration: 214
-source-git-commit: 678bda0ea6f6c727170c596e9d3d5f0687ec830f
+duration: 166
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '765'
 ht-degree: 0%
@@ -76,7 +76,7 @@ AEM as a Cloud Service 환경에서 확장을 사용하려면 Adobe Developer �
 
 ![확장 승인](./assets/deploy/adobe-exchange.png){align="center"}
 
-1. 에 로그인 [Adobe 교환](https://exchange.adobe.com/)
+1. 에 로그인 [Adobe Exchange](https://exchange.adobe.com/)
 1. 다음으로 이동 __관리__ > __검토 보류 중인 앱__
 1. __리뷰__ 확장 App Builder 앱
 1. 확장 변경이 허용되는 경우 __Accept__ 리뷰. 이렇게 하면 Adobe 조직 내의 모든 AEM as a Cloud Service Author 서비스에 확장이 즉시 삽입됩니다.
@@ -91,7 +91,7 @@ App Builder 앱 업데이트 및 확장은 와 동일한 프로세스를 따릅�
 
 새 버전의 확장을 배포하려면 먼저 확장을 취소(또는 제거)해야 합니다. 확장이 해지되었지만 AEM 콘솔에서는 사용할 수 없습니다.
 
-1. 에 로그인 [Adobe 교환](https://exchange.adobe.com/)
+1. 에 로그인 [Adobe Exchange](https://exchange.adobe.com/)
 1. 다음으로 이동 __관리__ > __App Builder 앱__
 1. __취소__ 업데이트할 확장
 
@@ -130,7 +130,7 @@ App Builder 앱 업데이트 및 확장은 와 동일한 프로세스를 따릅�
 
 ![확장 승인](./assets/deploy/adobe-exchange.png){align="center"}
 
-1. 에 로그인 [Adobe 교환](https://exchange.adobe.com/)
+1. 에 로그인 [Adobe Exchange](https://exchange.adobe.com/)
 1. 다음으로 이동 __관리__ > __검토 보류 중인 앱__
 1. __리뷰__ 확장 App Builder 앱
 1. 확장 변경이 허용되는 경우 __Accept__ 리뷰. 이렇게 하면 Adobe 조직 내의 모든 AEM as a Cloud Service Author 서비스에 확장이 즉시 삽입됩니다.
@@ -141,8 +141,8 @@ App Builder 앱 업데이트 및 확장은 와 동일한 프로세스를 따릅�
 
 ![확장 제거](./assets/deploy/revoke.png)
 
-확장을 제거하려면 Adobe Exchange에서 확장을 취소(또는 제거)합니다. 확장이 취소되면 모든 AEM as a Cloud Service Author 서비스에서 제거됩니다.
+확장을 제거하려면 Adobe Exchange에서 취소(또는 제거)합니다. 확장이 취소되면 모든 AEM as a Cloud Service Author 서비스에서 제거됩니다.
 
-1. 에 로그인 [Adobe 교환](https://exchange.adobe.com/)
+1. 에 로그인 [Adobe Exchange](https://exchange.adobe.com/)
 1. 다음으로 이동 __관리__ > __App Builder 앱__
 1. __취소__ 제거할 확장

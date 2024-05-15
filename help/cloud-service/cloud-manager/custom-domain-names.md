@@ -7,17 +7,17 @@ topic: Administration, Architecture
 role: Admin, Developer
 level: Intermediate
 doc-type: Tutorial
-duration: null
+duration: 1042
 last-substantial-update: 2024-03-12T00:00:00Z
 jira: KT-15121
 thumbnail: KT-15121.jpeg
-source-git-commit: 8230991cebf1a9e994f0dfe96c5590d0c19ef887
+exl-id: 8936c3ae-2daf-4d0f-b260-28376ae28087
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '701'
 ht-degree: 0%
 
 ---
-
 
 # 사용자 정의 도메인 이름 추가
 
@@ -92,7 +92,7 @@ Cloud Manager에서 SSL 인증서를 추가하려면 다음을 수행합니다. 
 
 도메인 이름을 확인하려면 다음 단계를 수행하십시오.
 
-- 다음을 수행하여 Cloud Manager에 도메인 이름 추가 [사용자 정의 도메인 이름 추가](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name) 설명서를 참조하십시오.
+- 다음을 수행하여 Cloud Manager에 도메인 이름 추가 [사용자 정의 도메인 이름 추가](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name) 설명서를 참조하십시오.
 - AEM 관련 추가 [TXT 레코드](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-text-record) DNS 호스팅 서비스에서
 - 다음을 사용하여 DNS 서버를 쿼리하여 위의 단계를 확인합니다. `dig` 명령입니다.
 
@@ -156,5 +156,3 @@ _aemverification.wknd.enablementadobe.com. 3600    IN TXT "adobe-aem-verificatio
 개요, 사전 요구 사항 및 사용자 정의 도메인 이름을 AEM as a Cloud Service 호스팅 사이트에 추가하는 위의 단계를 보여 주는 종단간 비디오를 볼 수도 있습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427817?quality=12&learn=on)
-
-

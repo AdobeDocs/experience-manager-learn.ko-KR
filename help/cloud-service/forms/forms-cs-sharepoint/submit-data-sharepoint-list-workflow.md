@@ -8,7 +8,9 @@ level: Beginner
 version: Cloud Service
 topic: Integrations
 jira: KT-15126
-source-git-commit: 3dc1aea74e2a7cf30da9f6fb96ecc5c7edcf6e34
+exl-id: b369ed05-ba25-4b0e-aa3b-e7fc1621067d
+duration: 52
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 1%
@@ -65,4 +67,3 @@ ht-degree: 1%
 ## 양식 테스트
 
 이전 단계에서 만든 양식을 미리 봅니다. 양식을 작성하고 제출하십시오. 양식의 데이터는 SharePoint 목록에 삽입해야 합니다.
-

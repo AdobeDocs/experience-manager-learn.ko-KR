@@ -10,8 +10,8 @@ role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: 49fcd603-ab1a-4f1e-ae1f-49d3ff373439
-duration: 312
-source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
+duration: 252
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '1002'
 ht-degree: 1%
@@ -146,7 +146,7 @@ AEM용 Maven 다중 모듈 프로젝트를 만드는 몇 가지 옵션이 있습
 
    프로젝트에 필요한 모든 사용자 지정 코드는 이러한 패키지에 번들로 제공되며 AEM 런타임에 설치됩니다.
 
-6. 또한 다음과 같은 몇 가지 패키지가 표시됩니다. `spa.project.core` 및 `core.wcm.components`. 이러한 종속성은 Archetype에 의해 자동으로 포함됩니다. 다음에 대한 추가 정보: [AEM 핵심 구성 요소는 여기에서 찾을 수 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html).
+6. 또한 다음과 같은 몇 가지 패키지가 표시됩니다. `spa.project.core` 및 `core.wcm.components`. 이러한 종속성은 Archetype에 의해 자동으로 포함됩니다. 다음에 대한 추가 정보: [AEM 핵심 구성 요소는 여기에서 찾을 수 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR).
 
 ## 콘텐츠 작성
 

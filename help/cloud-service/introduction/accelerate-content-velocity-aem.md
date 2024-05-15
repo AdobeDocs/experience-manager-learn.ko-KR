@@ -3,8 +3,8 @@ title: AEM 스타일 시스템을 사용하여 컨텐츠 속도 가속화
 description: AEM 스타일 시스템을 사용하여 조직의 디자이너, 콘텐츠 작성자 및 개발자가 고객이 기대하는 속도와 규모로 경험을 만들고 제공할 수 있는 권한을 부여하는 방법을 알아봅니다.
 solution: Experience Manager
 exl-id: 449cd133-6ab6-456e-a0ad-30e3dea9b75b
-duration: 216
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 171
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '817'
 ht-degree: 0%

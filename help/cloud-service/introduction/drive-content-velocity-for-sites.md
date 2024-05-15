@@ -3,8 +3,8 @@ title: Adobe Experience Manager으로 컨텐츠 속도를 향상시키는 방법
 description: 기업 조직 내 컨텐츠 속도와 그 가치에 대해 알아봅니다. 효과적인 구현의 4가지 원칙과 그 과정에서 살펴볼 함정에 대해 자세히 알아보십시오.
 solution: Experience Manager
 exl-id: 9d2e05c3-c8eb-4d92-bad0-931e63550438
-duration: 718
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 589
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '2742'
 ht-degree: 0%

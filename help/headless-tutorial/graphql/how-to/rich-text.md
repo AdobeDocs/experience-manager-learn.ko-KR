@@ -9,8 +9,8 @@ topic: Headless, Content Management
 level: Intermediate
 role: Developer
 exl-id: 790a33a9-b4f4-4568-8dfe-7e473a5b68b6
-duration: 821
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 785
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '1409'
 ht-degree: 0%
@@ -63,7 +63,7 @@ AEM GraphQL API는 서식 있는 텍스트를 HTML, 일반 텍스트 또는 순�
 
 GraphQL 쿼리를 만들 때 개발자는 다양한 응답 유형을 `html`, `plaintext`, `markdown`, 및 `json` 여러 줄 필드를 사용하는 경우입니다.
 
-개발자는 [JSON 미리보기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html) GraphQL API를 사용하여 반환할 수 있는 현재 콘텐츠 조각의 모든 값을 표시하는 콘텐츠 조각 편집기.
+개발자는 [JSON 미리보기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=ko-KR) GraphQL API를 사용하여 반환할 수 있는 현재 콘텐츠 조각의 모든 값을 표시하는 콘텐츠 조각 편집기.
 
 ## GraphQL 지속 쿼리
 

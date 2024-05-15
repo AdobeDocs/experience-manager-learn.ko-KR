@@ -8,8 +8,8 @@ level: Beginner
 exl-id: 0056971f-2f89-43b3-bb6f-dd16c2a50370
 thumbnail: 328618.jpg
 last-substantial-update: 2022-07-20T00:00:00Z
-duration: 647
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 626
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 10%
@@ -56,6 +56,6 @@ AEM GraphQL API를 통해 콘텐츠 조각을 사용하는 React 앱을 빌드�
 |                                | AEM GRAPHQL API | AEM Content Services |
 |--------------------------------|:-----------------|:---------------------|
 | 스키마 정의 | 구조화된 컨텐츠 조각 모델 | AEM 구성 요소 |
-| 컨텐트 | 콘텐츠 조각 | AEM 구성 요소 |
+| 콘텐츠 | 콘텐츠 조각 | AEM 구성 요소 |
 | 콘텐츠 검색 | GraphQL 쿼리별 | AEM 페이지별 |
 | 게재 형식 | GRAPHQL JSON | AEM ComponentExporter JSON |

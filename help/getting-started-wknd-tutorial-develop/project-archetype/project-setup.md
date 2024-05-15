@@ -12,8 +12,8 @@ thumbnail: 30152.jpg
 doc-type: Tutorial
 exl-id: bb0cae58-79bd-427f-9116-d46afabdca59
 recommendations: noDisplay, noCatalog
-duration: 578
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 502
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '1684'
 ht-degree: 1%
@@ -191,9 +191,9 @@ AEM용 Maven 다중 모듈 프로젝트를 제작하기 위한 두 가지 옵션
 
 [AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 는 AEM용 표준화된 웹 컨텐츠 관리(WCM) 구성 요소 세트입니다. 이러한 구성 요소는 기본 기능 세트를 제공하며 개별 프로젝트에 대해 스타일링, 사용자 정의 및 확장됩니다.
 
-AEM as a Cloud Service 환경에는 최신 버전의 [AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html). 따라서 AEM에 대해 생성된 프로젝트는 as a Cloud Service으로 수행됩니다. **아님** AEM 핵심 구성 요소 임베드를 포함합니다.
+AEM as a Cloud Service 환경에는 최신 버전의 [AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR). 따라서 AEM에 대해 생성된 프로젝트는 as a Cloud Service으로 수행됩니다. **아님** AEM 핵심 구성 요소 임베드를 포함합니다.
 
-AEM 6.5/6.4 생성 프로젝트의 경우 Archetype이 자동으로 임베드됩니다 [AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 을 클릭합니다. AEM 6.5/6.4에서는 최신 버전이 프로젝트와 함께 배포되도록 AEM 핵심 구성 요소를 포함하는 것이 좋습니다. 핵심 구성 요소 방법에 대한 자세한 정보 [프로젝트에 포함된 내용은 여기에서 확인하십시오.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#core-components).
+AEM 6.5/6.4 생성 프로젝트의 경우 Archetype이 자동으로 임베드됩니다 [AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR) 을 클릭합니다. AEM 6.5/6.4에서는 최신 버전이 프로젝트와 함께 배포되도록 AEM 핵심 구성 요소를 포함하는 것이 좋습니다. 핵심 구성 요소 방법에 대한 자세한 정보 [프로젝트에 포함된 내용은 여기에서 확인하십시오.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#core-components).
 
 ## 소스 제어 관리 {#source-control}
 

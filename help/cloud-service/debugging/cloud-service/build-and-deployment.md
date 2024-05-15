@@ -10,8 +10,8 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: b4985c30-3e5e-470e-b68d-0f6c5cbf4690
-duration: 671
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 534
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '2476'
 ht-degree: 0%
@@ -64,7 +64,7 @@ Adobe AEM Cloud Manager를 사용하면 코드를 쉽게 작성하고 as a Cloud
 + 타이밍 문제로 인해 단위 테스트에 실패했습니다. 단위 테스트가 시간에 민감한 경우 이러한 문제가 발생할 수 있습니다. 강력한 표시기가 다음에 의존합니다. `.sleep(..)` 를 입력합니다.
 + 지원되지 않는 Maven 플러그인 사용
 
-## 코드 스캔
+## 코드 검색
 
 ![코드 스캔](./assets/build-and-deployment/code-scanning.png)
 
@@ -76,7 +76,7 @@ Adobe AEM Cloud Manager를 사용하면 코드를 쉽게 작성하고 as a Cloud
 
 자세한 내용은 AEM 관련 규칙을 참조하십시오. Cloud Manager 설명서 를 참조하십시오. [사용자 지정 AEM 관련 코드 검색 규칙](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/custom-code-quality-rules.html).
 
-## 이미지 작성
+## 이미지 빌드
 
 ![이미지 작성](./assets/build-and-deployment/build-images.png)
 

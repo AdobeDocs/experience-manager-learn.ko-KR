@@ -10,8 +10,8 @@ jira: KT-4321
 thumbnail: 32192.jpg
 doc-type: Feature Video
 exl-id: 41b40982-9796-418e-9bfc-af6fc720e9b8
-duration: 420
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 410
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 47%
@@ -36,7 +36,7 @@ ht-degree: 47%
    * 기타 제목 및 설명
       * 페이지 제목
       * 탐색 제목
-      * 소제목
+      * 자막
       * 설명
    * 설정/해제 시간
    * 별칭 URL

@@ -10,8 +10,8 @@ role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: 0265d3df-3de8-4a25-9611-ddf73d725f6e
-duration: 534
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 435
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '1713'
 ht-degree: 0%
@@ -36,7 +36,7 @@ AEM SPA 편집기에서 사용할 기존 핵심 구성 요소를 확장하는 �
 
 >[!NOTE]
 >
-> 실제 구현에서는 를 사용하는 것이 더 적합할 수 있습니다. [티저 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/teaser.html) 를 확장하는 것 보다 [이미지 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) 을(를) 만들려면 `Card` 구성 요소는 프로젝트 요구 사항에 따라 달라집니다. 항상 를 사용하는 것이 좋습니다. [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 가능한 경우 직접
+> 실제 구현에서는 를 사용하는 것이 더 적합할 수 있습니다. [티저 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/teaser.html) 를 확장하는 것 보다 [이미지 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) 을(를) 만들려면 `Card` 구성 요소는 프로젝트 요구 사항에 따라 달라집니다. 항상 를 사용하는 것이 좋습니다. [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR) 가능한 경우 직접
 
 ## 사전 요구 사항
 

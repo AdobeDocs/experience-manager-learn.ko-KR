@@ -6,8 +6,8 @@ topic: Development
 role: Developer
 level: Beginner
 thumbnail: 30476.jpeg
-duration: 424
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 411
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '290'
 ht-degree: 49%
@@ -29,7 +29,7 @@ Adobe Experience Manager as a Cloud Service의 새로운 기능은? 최신 사�
 
 튜토리얼은 **AEM as a Cloud Service** 이전 버전과 호환 가능 **AEM 6.5+** 및 **AEM 6.4.2+**.
 
-**[여기에서 튜토리얼을 확인하십시오.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)**
+**[여기에서 튜토리얼을 확인하십시오.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR)**
 
 ## WKND를 AEM에 as a Cloud Service 배포{#deploying-wknd-to-aem-as-a-cloud-service}
 

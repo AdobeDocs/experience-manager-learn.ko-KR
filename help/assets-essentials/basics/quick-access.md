@@ -1,5 +1,5 @@
 ---
-title: 빠른 액세스
+title: 바로 가기
 description: 빠른 액세스를 통해 생산성을 높이고, AEM Assets에 대한 개인 렌즈 역할을 하며, 할당된 작업에 필요한 모든 자산을 손쉽게 유지할 수 있어 워크플로를 간소화하는 방법에 대해 알아봅니다.
 version: Cloud Service
 feature: Assets Essentials
@@ -11,15 +11,15 @@ jira: KT-13223
 thumbnail: 3420975.jpeg
 doc-type: Feature Video
 exl-id: 0f62da34-b6d7-42ac-a6f6-08a50483fb25
-duration: 203
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 200
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '75'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
-# 빠른 액세스
+# 바로 가기
 
 내 작업 영역의 빠른 액세스 위젯을 통해 AEM Assets에 대한 개인 렌즈 역할을 하고 할당된 작업에 필요한 모든 자산을 손쉽게 유지함으로써 생산성을 높이고 작업 과정을 간소화하는 방법에 대해 알아봅니다.
 

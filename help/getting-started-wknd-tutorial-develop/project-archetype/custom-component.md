@@ -1,5 +1,5 @@
 ---
-title: 사용자 지정 구성 요소
+title: 사용자 정의 구성 요소
 description: 작성된 콘텐츠를 표시하는 사용자 지정 인라인 구성 요소의 전체 작성을 다룹니다. 비즈니스 논리를 캡슐화하는 슬링 모델 개발을 포함하여 바이라인 구성 요소를 채우고 해당 HTL을 구성 요소 렌더링에 추가합니다.
 version: 6.5, Cloud Service
 feature: Core Components, APIs
@@ -11,15 +11,15 @@ mini-toc-levels: 1
 thumbnail: 30181.jpg
 doc-type: Tutorial
 exl-id: f54f3dc9-6ec6-4e55-9043-7a006840c905
-duration: 1209
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 1039
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '3869'
 ht-degree: 0%
 
 ---
 
-# 사용자 지정 구성 요소 {#custom-component}
+# 사용자 정의 구성 요소 {#custom-component}
 
 이 튜토리얼에서는 사용자 지정의 전체적인 만들기에 대해 설명합니다 `Byline` 대화 상자에서 작성된 콘텐츠를 표시하고 슬링 모델 개발을 탐색하여 구성 요소의 HTL을 채우는 비즈니스 논리를 캡슐화하는 AEM 구성 요소입니다.
 

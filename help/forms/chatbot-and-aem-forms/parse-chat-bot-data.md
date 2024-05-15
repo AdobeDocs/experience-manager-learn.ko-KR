@@ -7,7 +7,9 @@ jira: KT-15344
 topic: Development
 role: User
 level: Intermediate
-source-git-commit: eb4463ae0270725c5b0bd96e9799bada25b06303
+exl-id: 3c304b0a-33f8-49ed-a576-883df4759076
+duration: 22
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 2%
@@ -40,6 +42,3 @@ ChatBot에서 캡처한 데이터는 아래와 같이 사용자가 속성 개체
 ## 다음 단계
 
 [XDP 템플릿과 데이터 병합](./merge-data-with-template.md)
-
-
-

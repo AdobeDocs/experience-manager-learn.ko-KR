@@ -7,8 +7,8 @@ role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: 5aa32791-861a-48e3-913c-36028373b788
-duration: 333
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 311
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 4%
@@ -48,6 +48,6 @@ Headless CMS 시나리오에서, AEM을 사용하여 콘텐츠를 작성하고 �
 |                                | AEM GRAPHQL API | AEM Content Services |
 |--------------------------------|:-----------------|:---------------------|
 | 스키마 정의 | 구조화된 컨텐츠 조각 모델 | AEM 구성 요소 |
-| 컨텐트 | 콘텐츠 조각 | AEM 구성 요소 |
+| 콘텐츠 | 콘텐츠 조각 | AEM 구성 요소 |
 | 콘텐츠 검색 | GraphQL 쿼리별 | AEM 페이지별 |
 | 게재 형식 | GRAPHQL JSON | AEM ComponentExporter JSON |

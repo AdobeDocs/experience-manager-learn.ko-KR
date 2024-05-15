@@ -10,8 +10,8 @@ role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: 197a0c1f-4d0a-4b99-ba89-cdff2e6ac4ec
-duration: 816
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 669
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '2531'
 ht-degree: 0%
@@ -699,7 +699,7 @@ SPA Pages 및 SPA Editor SDK를 사용하여 AEM의 여러 보기를 지원하�
 
    >[!CAUTION]
    >
-   > angular 프로젝트에 매우 엄격한 린팅 규칙이 활성화되어 있습니다. Maven 빌드가 실패하면 오류를 확인하고 **나열된 파일에서 Lint 오류가 발견되었습니다.**&#x200B;을 따르지 않는 경우입니다. 링터에서 발견한 문제를 수정하고 Maven 명령을 다시 실행합니다.
+   > angular 프로젝트에 매우 엄격한 린팅 규칙이 활성화되어 있습니다. Maven 빌드가 실패하면 오류를 확인하고 **나열된 파일에서 Lint 오류가 발견되었습니다.**. 링터에서 발견한 문제를 수정하고 Maven 명령을 다시 실행합니다.
 
 2. AEM에서 SPA 홈 페이지로 이동합니다. [http://localhost:4502/content/wknd-spa-angular/us/en/home.html](http://localhost:4502/content/wknd-spa-angular/us/en/home.html) 브라우저의 개발자 도구를 엽니다. 아래 스크린샷은 Google Chrome 브라우저에서 캡처됩니다.
 

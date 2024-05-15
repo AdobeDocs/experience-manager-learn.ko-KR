@@ -10,8 +10,8 @@ level: Beginner
 jira: KT-9359
 exl-id: f7c1f991-0486-4355-8502-cd5b038537e3
 last-substantial-update: 2019-07-07T00:00:00Z
-duration: 115
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 68
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 14%
@@ -48,10 +48,10 @@ ht-degree: 14%
 |:---|:---|:---|
 | Dimension 및 위치 | 폭 | 50픽셀 |
 | 텍스트 | 글꼴 두께 | 볼드체 |
-| 텍스트 | 컬러 | #FFF |
+| 텍스트 | 색상 | #FFF |
 | 텍스트 | 선 높이 | 3 |
 | 텍스트 | 텍스트 맞춤 | 왼쪽 |
-| 배경 | 컬러 | #056dae |
+| 배경 | 색상 | #056dae |
 
 아래 스크린샷에 표시된 대로 배경 이미지의 스타일을 지정합니다.
 
@@ -69,10 +69,10 @@ ht-degree: 14%
 |:---|:---|:---|
 | Dimension 및 위치 | 폭 | 50픽셀 |
 | 텍스트 | 글꼴 두께 | 볼드체 |
-| 텍스트 | 컬러 | #FFF |
+| 텍스트 | 색상 | #FFF |
 | 텍스트 | 선 높이 | 3 |
 | 텍스트 | 텍스트 맞춤 | 왼쪽 |
-| 배경 | 컬러 | #056dae |
+| 배경 | 색상 | #056dae |
 
 아래 스크린샷에 표시된 대로 배경 이미지의 스타일을 지정합니다.
 

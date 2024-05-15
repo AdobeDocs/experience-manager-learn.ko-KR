@@ -8,8 +8,8 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: c588bdca-b8a8-4de2-97e0-ba08b195699f
-duration: 62
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 50
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '258'
 ht-degree: 0%
@@ -35,4 +35,4 @@ JSON 스키마를 기반으로 적응형 양식을 만들면 다음 단계는 �
 ![데이터 저장됨](assets/datastored.gif)
 
 
-[적응형 Forms을 만드는 데 사용할 수 있는 샘플 JSON 스키마.](assets/samplejsonschemas.zip)을 따르지 않는 경우입니다. JSON 스키마를 가져오려면 zip 파일을 다운로드하고 압축 해제합니다.
+[적응형 Forms을 만드는 데 사용할 수 있는 샘플 JSON 스키마.](assets/samplejsonschemas.zip). JSON 스키마를 가져오려면 zip 파일을 다운로드하고 압축 해제합니다.
