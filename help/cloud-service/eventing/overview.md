@@ -12,9 +12,9 @@ last-substantial-update: 2023-12-07T00:00:00Z
 jira: KT-14649
 thumbnail: KT-14649.jpeg
 exl-id: 142ed6ae-1659-4849-80a3-50132b2f1a86
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: c0aa4049e846a0f24f8a5f5b014dbaf5bfc8eb2d
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '941'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ AEM 이벤트, 정의, 사용 이유 및 시기, 예제에 대해 알아봅니�
 
 >[!IMPORTANT]
 >
->AEM as a Cloud Service 이벤트는 프리릴리스 모드의 등록된 사용자만 사용할 수 있습니다. AEM as a Cloud Service 환경에서 AEM 이벤트를 활성화하려면 [AEM 이벤트 팀](mailto:grp-aem-events@adobe.com).
+>AEM as a Cloud Service 이벤트는 프리릴리스 모드의 등록된 사용자만 사용할 수 있습니다. AEM as a Cloud Service 환경에서 AEM 이벤트를 활성화하려면 <a href="mailto:grp-aem-events@adobe.com">AEM 이벤트 팀</a>.
 
 ## 정의
 
@@ -75,7 +75,7 @@ AEM 이벤트에는 강력한 기능이지만 다음과 같은 몇 가지 제한
 
 ## 활성화 방법
 
-AEM 이벤트는 AEM as a Cloud Service 환경별로 활성화되며 프리릴리스 모드의 환경에서만 사용할 수 있습니다. 연락처 [AEM 이벤트 팀](mailto:grp-aem-events@adobe.com) 를 사용하여 AEM 이벤트를 통해 AEM 환경을 활성화할 수 있습니다.
+AEM 이벤트는 AEM as a Cloud Service 환경별로 활성화되며 프리릴리스 모드의 환경에서만 사용할 수 있습니다. 다음으로 문의: <a href="mailto:grp-aem-events@adobe.com">AEM 이벤트 팀</a> 를 사용하여 AEM 이벤트를 통해 AEM 환경을 활성화할 수 있습니다.
 
 이미 활성화된 경우 다음을 참조하십시오. [AEM Cloud Service 환경에서 AEM 이벤트 활성화](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment) 을 참조하십시오.
 
