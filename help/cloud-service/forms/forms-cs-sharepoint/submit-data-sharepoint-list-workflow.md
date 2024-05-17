@@ -10,9 +10,9 @@ topic: Integrations
 jira: KT-15126
 exl-id: b369ed05-ba25-4b0e-aa3b-e7fc1621067d
 duration: 52
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: e8e51fadaa824d615524a8c4c41aefb656d0391d
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '290'
 ht-degree: 1%
 
 ---
@@ -39,8 +39,9 @@ ht-degree: 1%
 * 이전 단계에서 만든 양식 데이터 모델을 사용하도록 FDM 호출 단계를 구성합니다.
 * ![associate-fdm](assets/fdm-insert-1.png)
 
-* ![map-input-parameters](assets/fdm-insert-2.png)
-* JSON 점 표기법을 사용하십시오. 제출된 데이터는 아래 형식으로 되어 있으며, 우리는 제출된 데이터에서 ContactUS 객체를 추출합니다.
+## 핵심 구성 요소를 기반으로 하는 적응형 양식
+
+제출된 데이터는 다음과 같은 형식입니다. 스크린샷과 같이 양식 데이터 모델 서비스 호출 워크플로우 단계에서 점 표기법을 사용하여 ContactUS 객체를 추출해야 합니다
 
 ```json
 {
@@ -54,6 +55,41 @@ ht-degree: 1%
 ```
 
 
+* ![map-input-parameters](assets/fdm-insert-2.png)
+
+
+## 기초 구성 요소를 기반으로 하는 적응형 양식
+
+제출된 데이터는 다음과 같은 형식입니다. 양식 데이터 모델 서비스 호출 워크플로우 단계에서 점 표기법을 사용하여 ContactUS JSON 개체 추출
+
+```json
+{
+    "afData": {
+        "afUnboundData": {
+            "data": {}
+        },
+        "afBoundData": {
+            "data": {
+                "ContactUS": {
+                    "Title": "Lord",
+                    "HighNetWorth": "true",
+                    "SubmitterName": "John Doe",
+                    "Products": "Forms"
+                }
+            }
+        },
+        "afSubmissionInfo": {
+            "lastFocusItem": "guide[0].guide1[0].guideRootPanel[0].afJsonSchemaRoot[0]",
+            "stateOverrides": {},
+            "signers": {},
+            "afPath": "/content/dam/formsanddocuments/foundationform",
+            "afSubmissionTime": "20240517100126"
+        }
+    }
+}
+```
+
+![foundation-based-form](assets/foundation-based-form.png)
 
 ## AEM 워크플로우를 트리거할 적응형 양식 구성
 
