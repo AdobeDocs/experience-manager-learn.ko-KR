@@ -12,9 +12,9 @@ jira: KT-13312
 thumbnail: KT-13312.jpeg
 exl-id: 43aa7133-7f4a-445a-9220-1d78bb913942
 duration: 276
-source-git-commit: c7c78ca56c1d72f13d2dc80229a10704ab0f14ab
+source-git-commit: 8051f262f978cdf5aff48cb27e5408a7ee3c0b9d
 workflow-type: tm+mt
-source-wordcount: '1458'
+source-wordcount: '1476'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ CDN 로그를 다운로드하려면 다음 단계를 수행합니다.
 
    ![로그 다운로드 - Cloud Manager](assets/cdn-logs-analysis/download-logs.png){width="500" zoomable="yes"}
 
-1. 다음에서 **로그 다운로드** 대화 상자에서 **게시** 드롭다운 메뉴에서 서비스 를 클릭한 다음, **cdn** 행.
+1. 다음에서 **로그 다운로드** 대화 상자에서 **게시** 드롭다운 메뉴에서 서비스 를 클릭한 다음, **CDN** 행.
 
    ![CDN 로그 - Cloud Manager](assets/cdn-logs-analysis/download-cdn-logs.png){width="500" zoomable="yes"}
 
@@ -67,7 +67,7 @@ CDN 로그를 분석하기 위해 이 자습서에서는 다음 세 가지 옵�
 
 1. **Elasticsearch, Logstash 및 Kibana(ELK)**: [ELK 대시보드 도구](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md) 로컬에 설치할 수 있습니다.
 1. **스플렁크**: [Splunk 대시보드 도구](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/READEME.md) Splunk 및 [AEMCS 로그 전달 사용](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/logging#splunk-logs) CDN 로그를 수집합니다.
-1. [Jupyter Notebook](https://jupyter.org/): 의 일부로 원격으로 액세스할 수 있습니다. [Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data) 추가 소프트웨어를 설치하지 않고 Adobe Experience Platform 라이선스를 구입한 고객을 위한 것입니다.
+1. **Jupyter Notebook**: 의 일부로 원격으로 액세스할 수 있습니다. [Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data) 추가 소프트웨어를 설치하지 않고 Adobe Experience Platform 라이선스를 구입한 고객을 위한 것입니다.
 
 ### 옵션 1: ELK 대시보드 도구 사용
 
@@ -140,6 +140,10 @@ CDN 로그를 분석하기 위해 이 자습서에서는 다음 세 가지 옵�
 1. 필요한 경우 _색인, 소스 유형 및 기타_ 필터 값은 Splunk 대시보드에 있습니다.
 
    ![Splunk 대시보드](assets/cdn-logs-analysis/splunk-CHR-dashboard.png){width="500" zoomable="yes"}
+
+>[!NOTE]
+>
+>splunk 대시보드의 UI 및 그래프는 ELK 대시보드와 다르지만 주요 세부 정보는 유사합니다.
 
 ### 옵션 3: Jupyter Notebook 사용
 
