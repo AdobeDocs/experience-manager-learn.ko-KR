@@ -12,7 +12,7 @@ jira: KT-13312
 thumbnail: KT-13312.jpeg
 exl-id: 43aa7133-7f4a-445a-9220-1d78bb913942
 duration: 276
-source-git-commit: 8051f262f978cdf5aff48cb27e5408a7ee3c0b9d
+source-git-commit: 4111ae0cf8777ce21c224991b8b1c66fb01041b3
 workflow-type: tm+mt
 source-wordcount: '1476'
 ht-degree: 0%
@@ -66,7 +66,7 @@ CDN 로그를 다운로드하려면 다음 단계를 수행합니다.
 CDN 로그를 분석하기 위해 이 자습서에서는 다음 세 가지 옵션을 제공합니다.
 
 1. **Elasticsearch, Logstash 및 Kibana(ELK)**: [ELK 대시보드 도구](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md) 로컬에 설치할 수 있습니다.
-1. **스플렁크**: [Splunk 대시보드 도구](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/READEME.md) Splunk 및 [AEMCS 로그 전달 사용](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/logging#splunk-logs) CDN 로그를 수집합니다.
+1. **스플렁크**: [Splunk 대시보드 도구](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/README.md) Splunk 및 [AEMCS 로그 전달 사용](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/logging#splunk-logs) CDN 로그를 수집합니다.
 1. **Jupyter Notebook**: 의 일부로 원격으로 액세스할 수 있습니다. [Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data) 추가 소프트웨어를 설치하지 않고 Adobe Experience Platform 라이선스를 구입한 고객을 위한 것입니다.
 
 ### 옵션 1: ELK 대시보드 도구 사용
@@ -136,7 +136,7 @@ CDN 로그를 분석하기 위해 이 자습서에서는 다음 세 가지 옵�
 
 주요 세부 정보를 식별하려면 [AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) 프로젝트. 이 프로젝트는 CDN 로그를 분석하는 Splunk 대시보드를 제공합니다.
 
-1. 다음 단계를 따릅니다. [AEMCS CDN 로그 분석용 Splunk 대시보드](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/READEME.md) 및 을(를) 가져와야 합니다. **CDN 캐시 적중률** Splunk 대시보드.
+1. 다음 단계를 따릅니다. [AEMCS CDN 로그 분석용 Splunk 대시보드](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/README.md) 및 을(를) 가져와야 합니다. **CDN 캐시 적중률** Splunk 대시보드.
 1. 필요한 경우 _색인, 소스 유형 및 기타_ 필터 값은 Splunk 대시보드에 있습니다.
 
    ![Splunk 대시보드](assets/cdn-logs-analysis/splunk-CHR-dashboard.png){width="500" zoomable="yes"}

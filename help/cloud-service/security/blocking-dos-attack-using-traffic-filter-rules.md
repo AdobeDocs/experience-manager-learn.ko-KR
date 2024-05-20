@@ -12,7 +12,7 @@ last-substantial-update: 2024-04-19T00:00:00Z
 jira: KT-15184
 thumbnail: KT-15184.jpeg
 exl-id: 60c2306f-3cb6-4a6e-9588-5fa71472acf7
-source-git-commit: c7c78ca56c1d72f13d2dc80229a10704ab0f14ab
+source-git-commit: 4111ae0cf8777ce21c224991b8b1c66fb01041b3
 workflow-type: tm+mt
 source-wordcount: '1968'
 ht-degree: 1%
@@ -103,7 +103,7 @@ Adobe이 원본 경고에서 트래픽 스파이크를 [작업 센터 알림](ht
 
 다음을 보유한 고객 [Splunk 로그 전달이 활성화됨](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/logging#splunk-logs) 는 새 대시보드를 만들어 트래픽 패턴을 분석할 수 있습니다.
 
-Splunk에서 대시보드를 만들려면 다음을 따르십시오 [AEMCS CDN 로그 분석용 Splunk 대시보드](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/READEME.md#splunk-dashboards-for-aemcs-cdn-log-analysis) 단계.
+Splunk에서 대시보드를 만들려면 다음을 따르십시오 [AEMCS CDN 로그 분석용 Splunk 대시보드](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/README.md#splunk-dashboards-for-aemcs-cdn-log-analysis) 단계.
 
 ### 데이터 보기
 

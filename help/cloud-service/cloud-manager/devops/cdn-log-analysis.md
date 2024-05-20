@@ -12,7 +12,7 @@ last-substantial-update: 2024-05-17T00:00:00Z
 jira: KT-15505
 thumbnail: KT-15505.jpeg
 exl-id: 830c2486-099b-454f-bc07-6bf36e81ac8d
-source-git-commit: 8051f262f978cdf5aff48cb27e5408a7ee3c0b9d
+source-git-commit: 4111ae0cf8777ce21c224991b8b1c66fb01041b3
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 0%
@@ -60,7 +60,7 @@ ht-degree: 0%
 
 을 활용하는 조직의 경우 [스플렁크](https://www.splunk.com/en_us/products/observability-cloud.html) 및 AEMCS 로그 전달을 Splunk 인스턴스로 활성화한 사용자는 사전 빌드된 대시보드를 빠르게 가져올 수 있습니다. 이 설정을 통해 가속화된 로그 분석을 용이하게 하여 AEM 구현을 최적화하고 DOS 공격과 같은 보안 위협을 완화하는 실행 가능한 통찰력을 제공합니다.
 
-다음을 사용하여 시작할 수 있습니다. [AEMCS CDN 로그 분석용 Splunk 대시보드](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/READEME.md#splunk-dashboards-for-aemcs-cdn-log-analysis) 가이드.
+다음을 사용하여 시작할 수 있습니다. [AEMCS CDN 로그 분석용 Splunk 대시보드](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/README.md#splunk-dashboards-for-aemcs-cdn-log-analysis) 가이드.
 
 
 ## ELK 통합
