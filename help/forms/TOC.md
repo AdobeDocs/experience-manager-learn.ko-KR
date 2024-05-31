@@ -8,9 +8,9 @@ breadcrumb-title: AEM Forms 튜토리얼
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: 81026b569ae0dc9976f714715682448a41d9f8bc
+source-git-commit: e20d9f80cc7e1c6f5f6c81233d9a5178551e2fa2
 workflow-type: tm+mt
-source-wordcount: '2064'
+source-wordcount: '2069'
 ht-degree: 2%
 
 ---
@@ -59,6 +59,7 @@ ht-degree: 2%
    + [Linux에 32비트 패키지 설치](adaptive-forms/installing-aem-form-on-linux.md)
    + [적응형 Forms의 미리 채우기 서비스](adaptive-forms/prefill-service-adaptive-forms-article-use.md)
    + [쿼리 매개 변수를 사용하여 적응형 양식 채우기](adaptive-forms/prepopulating-adaptive-form-using-query-parameters.md)
+   + [AEM Forms의 QR 코드](adaptive-forms/qr-code-aem-forms.md)
    + [적응형 Forms에서 사용자 정의 제출](adaptive-forms/custom-submit-aem-forms-article.md)
    + [적응형 Forms의 CAPTCHA](adaptive-forms/forms-captcha-feature-video-use.md)
    + [규칙 편집기의 사용자 지정 함수](adaptive-forms/custom-functions-aem-forms.md)
