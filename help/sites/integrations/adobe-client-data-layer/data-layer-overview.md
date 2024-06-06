@@ -11,7 +11,7 @@ last-substantial-update: 2021-01-11T00:00:00Z
 doc-type: Tutorial
 exl-id: 066693b7-2b87-45e8-93ec-8bd09a7c263e
 duration: 777
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: dc40b8e022477d2b1d8f0ffe3b5e8bcf13be30b3
 workflow-type: tm+mt
 source-wordcount: '750'
 ht-degree: 6%
@@ -102,7 +102,7 @@ Adobe 클라이언트 데이터 레이어는 웹 페이지에서 방문자의 �
 
    ```js
    function teaserShownHandler(event) {
-       var dataObject = getDataObjectHelper(event, {"@type": "wknd/components/teaser"});
+       var dataObject = getDataObjectHelper(event, {"@type": "wknd/components/carousel/item"});
        if(dataObject != null) {
            console.log("Teaser Shown: " + dataObject['dc:title']);
            console.log(dataObject);
@@ -110,7 +110,7 @@ Adobe 클라이언트 데이터 레이어는 웹 페이지에서 방문자의 �
    }
    ```
 
-   다음 `teaserShownHandler` 함수가 를 호출하면 `getDataObjectHelper` 함수 및 의 필터 전달 `wknd/components/teaser` (으)로 `@type` 다른 구성 요소에 의해 트리거된 이벤트를 필터링합니다.
+   다음 `teaserShownHandler` 함수가 를 호출하면 `getDataObjectHelper` 함수 및 의 필터 전달 `wknd/components/carousel/item` (으)로 `@type` 다른 구성 요소에 의해 트리거된 이벤트를 필터링합니다.
 
 1. 그런 다음 이벤트 리스너를 데이터 레이어에 푸시하여 `cmp:show` 이벤트.
 
