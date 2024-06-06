@@ -7,10 +7,10 @@ sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: 0435cfe082043da1c92a25b0429c508121c0d95c
+source-git-commit: 6736eb9f124d43b6337b74fd9463bd56cee4e15a
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 18%
+source-wordcount: '419'
+ht-degree: 17%
 
 ---
 
@@ -90,7 +90,6 @@ ht-degree: 18%
       + [로컬 AEM에서 Asset Share Commons 설정](./sharing/asset-share-commons-technical-video-setup.md)
       + [테마 자산 공유 Commons](./sharing/asset-share-commons-feature-video-theming.md)
       + [Asset Share Commons 자산 키트](./sharing/asset-share/asset-share-commons-asset-kits.md)
-   + [연결된 자산](./sharing/connected-assets.md)
 
 + Creative 워크플로{#creative-workflows}
    + [Adobe Express 통합](./creative-workflows/adobe-express.md)
@@ -130,7 +129,6 @@ ht-degree: 18%
       + [사용자 지정 비디오 썸네일](dynamic-media/dynamic-media-video-thumbnails-feature-video-use.md)
       + [DASH 적응형 스트리밍](dynamic-media/dynamic-media-dash.md)
       + [Dynamic Media 스마트 자르기 비디오](dynamic-media/dynamic-media-smart-crop-video.md)
-      + [대화형 비디오](dynamic-media/dynamic-media-interactive-video-feature-video-use.md)
       + [비디오 플레이어](dynamic-media/dynamic-media-video-player-feature-video-use.md)
    + 뷰어 {#viewers}
       + [뷰어](dynamic-media/dynamic-media-viewer-feature-video-understand.md)
