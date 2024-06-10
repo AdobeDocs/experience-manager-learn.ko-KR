@@ -12,9 +12,9 @@ doc-type: Tutorial
 exl-id: 8d3026e9-a7e2-4a76-8a16-a8197a5e04e3
 recommendations: noDisplay, noCatalog
 duration: 557
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 58ef1c482f127981083c07e5de5a1aba2f7c3aec
 workflow-type: tm+mt
-source-wordcount: '2546'
+source-wordcount: '2554'
 ht-degree: 0%
 
 ---
@@ -184,6 +184,16 @@ AEM Project Archetype 은 이 통합을 자동으로 설정합니다. 그런 다
    >[!NOTE]
    >
    >`npm install` 새 복제 또는 프로젝트 생성 후와 같이 한 번만 실행해야 합니다.
+
+1. 열기 `ui.frontend/package.json` 및 **스크립트** **시작** 명령 추가 `--env writeToDisk=true`.
+
+   ```json
+   {
+     "scripts": { 
+       "start": "webpack-dev-server --open --config ./webpack.dev.js --env writeToDisk=true",
+     }
+   }
+   ```
 
 1. 에서 Webpack 개발 서버 시작 **시청** 다음 명령을 실행하여 모드:
 
