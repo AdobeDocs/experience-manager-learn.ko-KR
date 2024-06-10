@@ -11,9 +11,9 @@ doc-type: Catalog
 duration: 40
 last-substantial-update: 2023-12-01T00:00:00Z
 exl-id: 172a477f-d277-43c1-8e47-68870b02203c
-source-git-commit: caee59e03da7905b1d57b4325e06501d46d073e6
+source-git-commit: 6a22f523c5cf997a59a5b8579c168b641c009b20
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '1047'
 ht-degree: 8%
 
 ---
@@ -280,6 +280,38 @@ AEM 작성자가 Microsoft Word 또는 Google 문서를 사용하여 문서를 �
         </div>
       </div>
     </div>
+    <!-- Author Authentication -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
+      aria-label="Author Authentication" tabindex="1">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9">
+            <a href="author-authentication.md" title="작성자 인증"
+              tabindex="-1">
+              <img class="is-bordered-r-small"
+                src="https://video.tv.adobe.com/v/3429594/?format=jpeg"
+                alt="작성자 인증">
+            </a>
+          </figure>
+        </div>
+        <div class="card-content is-padded-small">
+          <div class="content">
+            <p style="float: right;font-style: italic; color: #363636"
+              class="is-size-6">2분</p>
+            <p class="headline is-size-6 has-text-weight-bold">
+              <a href="author-authentication.md" title="작성자 인증">작성자 인증</a>
+            </p>
+            <p class="is-size-6">작성자 인증을 구성하는 방법에 대해 알아봅니다.</p>
+            <a href="author-authentication.md" class="spectrum-Button
+              spectrum-Button--outline spectrum-Button--primary
+              spectrum-Button--sizeM">
+              <span class="spectrum-Button-label has-no-wrap
+                has-text-weight-bold">비디오 보기</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>    
 </div>
 
 ## 방법 비디오
@@ -541,6 +573,139 @@ AEM 작성자가 Microsoft Word 또는 Google 문서를 사용하여 문서를 �
         </div>
       </div>
     </div>
+    <!-- Dynamic Media in Edge Delivery Services -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
+      aria-label="Dynamic Media" tabindex="7">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9">
+            <a href="./how-to/using-dynamic-media.md" title="Dynamic Media"
+              tabindex="-1">
+              <img class="is-bordered-r-small"
+                src="https://video.tv.adobe.com/v/3429593/?format=jpeg"
+                alt="Dynamic Media">
+            </a>
+          </figure>
+        </div>
+        <div class="card-content is-padded-small">
+          <div class="content">
+            <p style="float: right;font-style: italic; color: #363636"
+              class="is-size-6">2분</p>
+            <p class="headline is-size-6 has-text-weight-bold">
+              <a href="./how-to/using-dynamic-media.md" title="Dynamic Media">Dynamic Media</a>
+            </p>
+            <p class="is-size-6">최적화된 이미지 제공을 위해 Dynamic Media을 사용하는 방법을 살펴봅니다.</p>
+            <a href="./how-to/using-dynamic-media.md" class="spectrum-Button
+              spectrum-Button--outline spectrum-Button--primary
+              spectrum-Button--sizeM">
+              <span class="spectrum-Button-label has-no-wrap
+                has-text-weight-bold">비디오 보기</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>   
+    <!-- Site Migration using the Importer -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
+      aria-label="Site migration using Importer" tabindex="7">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9">
+            <a href="./how-to/migration-using-importer.md" title="Importer를 사용한 사이트 마이그레이션"
+              tabindex="-1">
+              <img class="is-bordered-r-small"
+                src="https://video.tv.adobe.com/v/3429595/?format=jpeg"
+                alt="Importer를 사용한 사이트 마이그레이션">
+            </a>
+          </figure>
+        </div>
+        <div class="card-content is-padded-small">
+          <div class="content">
+            <p style="float: right;font-style: italic; color: #363636"
+              class="is-size-6">2분</p>
+            <p class="headline is-size-6 has-text-weight-bold">
+              <a href="./how-to/migration-using-importer.md" title="Importer를 사용한 사이트 마이그레이션">Importer를 사용한 사이트 마이그레이션</a>
+            </p>
+            <p class="is-size-6">AEM Importer 도구를 사용하여 사이트를 Edge Delivery Services으로 마이그레이션하는 방법을 살펴보십시오.</p>
+            <a href="./how-to/migration-using-importer.md" class="spectrum-Button
+              spectrum-Button--outline spectrum-Button--primary
+              spectrum-Button--sizeM">
+              <span class="spectrum-Button-label has-no-wrap
+                has-text-weight-bold">비디오 보기</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>     
+    <!-- Customizing the Importer -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
+      aria-label="Customizing the Importer" tabindex="7">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9">
+            <a href="./how-to/customizing-importer.md" title="Importer 사용자 지정"
+              tabindex="-1">
+              <img class="is-bordered-r-small"
+                src="https://video.tv.adobe.com/v/3429596/?format=jpeg"
+                alt="Importer 사용자 지정">
+            </a>
+          </figure>
+        </div>
+        <div class="card-content is-padded-small">
+          <div class="content">
+            <p style="float: right;font-style: italic; color: #363636"
+              class="is-size-6">3분</p>
+            <p class="headline is-size-6 has-text-weight-bold">
+              <a href="./how-to/customizing-importer.md" title="Importer 사용자 지정">Importer 사용자 지정</a>
+            </p>
+            <p class="is-size-6">사이트 마이그레이션을 위해 AEM Importer 도구를 사용자 지정하는 방법을 살펴보십시오.</p>
+            <a href="./how-to/customizing-importer.md" class="spectrum-Button
+              spectrum-Button--outline spectrum-Button--primary
+              spectrum-Button--sizeM">
+              <span class="spectrum-Button-label has-no-wrap
+                has-text-weight-bold">비디오 보기</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bulk importing using Importer -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
+      aria-label="Bulk importing using the Importer" tabindex="7">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9">
+            <a href="./how-to/bulk-importing-using-importer.md" title="Importer를 사용하여 일괄 가져오기"
+              tabindex="-1">
+              <img class="is-bordered-r-small"
+                src="https://video.tv.adobe.com/v/3429597/?format=jpeg"
+                alt="Importer를 사용하여 일괄 가져오기">
+            </a>
+          </figure>
+        </div>
+        <div class="card-content is-padded-small">
+          <div class="content">
+            <p style="float: right;font-style: italic; color: #363636"
+              class="is-size-6">3분</p>
+            <p class="headline is-size-6 has-text-weight-bold">
+              <a href="./how-to/bulk-importing-using-importer.md" title="Importer를 사용하여 일괄 가져오기">Importer를 사용하여 일괄 가져오기</a>
+            </p>
+            <p class="is-size-6">사이트 마이그레이션 중에 AEM Importer 도구를 사용하여 웹 페이지를 일괄 가져오는 방법을 살펴봅니다.</p>
+            <a href="./how-to/bulk-importing-using-importer.md" class="spectrum-Button
+              spectrum-Button--outline spectrum-Button--primary
+              spectrum-Button--sizeM">
+              <span class="spectrum-Button-label has-no-wrap
+                has-text-weight-bold">비디오 보기</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>                
+  </div>
+
+### 변형 비디오 생성
+
+<div class="columns is-multiline">
     <!-- Intro Generate Variation -->
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
       aria-label="Generate Variations" tabindex="7">
@@ -956,6 +1121,5 @@ AEM 작성자가 Microsoft Word 또는 Google 문서를 사용하여 문서를 �
           </div>
         </div>
       </div>
-    </div>                                
+    </div>   
   </div>
-

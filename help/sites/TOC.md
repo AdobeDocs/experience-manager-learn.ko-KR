@@ -6,9 +6,9 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: caee59e03da7905b1d57b4325e06501d46d073e6
+source-git-commit: 6a22f523c5cf997a59a5b8579c168b641c009b20
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '547'
 ht-degree: 19%
 
 ---
@@ -27,6 +27,7 @@ ht-degree: 19%
    + [리디렉션](document-authoring/redirects.md)
    + [벌크 메타데이터](document-authoring/bulk-metadata.md)
    + [페이지 메타데이터](document-authoring/page-metadata.md)
+   + [작성자 인증](document-authoring/author-authentication.md)
    + 방법{#how-to}
       + [문서 감사](./document-authoring/how-to/document-audit.md)
       + [문서 권한](./document-authoring/how-to/document-permissions.md)
@@ -36,6 +37,10 @@ ht-degree: 19%
       + [이미지 대체 텍스트](./document-authoring/how-to/image-alt-text.md)
       + [검색 엔진 색인화 방지](./document-authoring/how-to/no-index.md)
       + [응답형 탐색](document-authoring/how-to/responsive-navigation.md)
+      + [Dynamic Media](./document-authoring/how-to/using-dynamic-media.md)
+      + [Importer를 사용한 사이트 마이그레이션](./document-authoring/how-to/migration-using-importer.md)
+      + [Importer 사용자 지정](./document-authoring/how-to/customizing-importer.md)
+      + [Importer를 사용하여 일괄 가져오기](./document-authoring/how-to/bulk-importing-using-importer.md)
       + 변형 생성{#generate-variations}
          + [개요](./document-authoring/how-to/generate-variations/overview.md)
          + [구성 Sidekick](./document-authoring/how-to/generate-variations/configure-sidekick.md)
