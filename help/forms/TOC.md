@@ -8,9 +8,9 @@ breadcrumb-title: AEM Forms 튜토리얼
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: e20d9f80cc7e1c6f5f6c81233d9a5178551e2fa2
+source-git-commit: 82ef2988d55012ae730e9bbc7adeea547863ba51
 workflow-type: tm+mt
-source-wordcount: '2069'
+source-wordcount: '2080'
 ht-degree: 2%
 
 ---
@@ -304,6 +304,10 @@ ht-degree: 2%
    + [낙서 서명 사용](forms-designer/scribble-signature-form.md)
    + [디지털 서명 사용](forms-designer/adding-dig-signature-field.md)
    + [Reader 확장 양식](forms-designer/reader-extending-j2ee.md)
++ AEM Forms Workbench{#forms-workbench}
+   + [Workbench 소개](aem-forms-workbench/workbench-introduction.md)
+   + [양식 프로세스 만들기](aem-forms-workbench/workbench-creating-a-process.md)
+   + [디버깅 프로세스](aem-forms-workbench/workbench-recording-and-testing-process.md)
 + 인쇄 채널용 대화형 통신
 {#ic-print-channel-tutorial}
    + [1 - 소개](ic-print-channel-tutorial/introduction.md)
