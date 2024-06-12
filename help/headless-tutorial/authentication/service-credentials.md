@@ -12,9 +12,9 @@ last-substantial-update: 2023-01-12T00:00:00Z
 doc-type: Tutorial
 exl-id: e2922278-4d0b-4f28-a999-90551ed65fb4
 duration: 881
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 1a745f4b11007df5636c2fc0bea05d56393ef9c6
 workflow-type: tm+mt
-source-wordcount: '1930'
+source-wordcount: '1963'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,8 @@ ht-degree: 0%
 # 서비스 자격 증명
 
 AEM as a Cloud Service(Adobe Experience Manager)과의 통합을 통해 AEM 서비스를 안전하게 인증할 수 있어야 합니다. AEM 개발자 콘솔에서는 외부 애플리케이션, 시스템 및 서비스가 HTTP를 통해 AEM 작성자 또는 게시 서비스와 프로그래밍 방식으로 상호 작용하는 데 사용되는 서비스 자격 증명에 대한 액세스 권한을 부여합니다.
+
+AEM은 를 사용하여 다른 Adobe 제품과 통합됩니다. [Adobe Developer 콘솔을 통해 관리되는 S2S OAuth](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service). 서비스 계정과의 사용자 정의 통합을 위해 AEM Developer Console에서 JWT 자격 증명이 사용되고 관리됩니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330519?quality=12&learn=on)
 
