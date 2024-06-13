@@ -6,9 +6,9 @@ solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 3bd7b9f5-5775-4572-8b4a-4d09619e20b9
 duration: 74
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: c67fad3da9b9eaa740c4351448108af3b1542912
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '416'
 ht-degree: 0%
 
 ---
@@ -145,5 +145,19 @@ AEM Engineering의 시즌 3의 클라우드 5 시리즈에 오신 것을 환영�
                 AEM Sites 문서 작성에서 사용할 수 있는 새로운 생성 AI 기능을 살펴보십시오.
             </p>
         </td>                
+        <td>
+            <a href="./season-3/cloud5-exploring-universal-editor.md">
+                <img alt="유니버설 편집기 살펴보기" src="https://video.tv.adobe.com/v/3429656?format=jpeg"/>
+            </a>
+            <div>
+                <a href="./season-3/cloud5-exploring-universal-editor.md">
+                <strong>유니버설 편집기 살펴보기</strong></a>        
+                <br/><em>AEM Engineering의 James Talbot 및 Dirk Rudolph</em>
+            </div>
+            <p>
+                <br/>                
+                 Edge Delivery Services이 있는 범용 편집기 및 AEM에 대해 알아봅니다.
+            </p>
+        </td>                    
     </tr>      
 </table>
