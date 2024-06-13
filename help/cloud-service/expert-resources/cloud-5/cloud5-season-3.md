@@ -6,9 +6,9 @@ solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 3bd7b9f5-5775-4572-8b4a-4d09619e20b9
 duration: 74
-source-git-commit: c67fad3da9b9eaa740c4351448108af3b1542912
+source-git-commit: 272ed4e4782b03f284886a3046440960df538286
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '445'
 ht-degree: 0%
 
 ---
@@ -55,6 +55,20 @@ AEM Engineering의 시즌 3의 클라우드 5 시리즈에 오신 것을 환영�
             <p>
                 <br/>
                 RUM(Explore Real User Monitoring)은 Edge Delivery Services과 함께 작동합니다.
+            </p>
+        </td>   
+        <td>
+            <a href="./season-3/cloud5-rum-explorer.md">
+                <img alt="RUM(Real User Monitoring) 탐색기" src="https://video.tv.adobe.com/v/3429772?format=jpeg"/>
+            </a>
+            <div>
+                <a href="./season-3/cloud5-rum-explorer.md">
+                <strong>RUM(Real User Monitoring) 탐색기</strong></a>        
+                <br/><em>james Talbot 및 Damian Langsweirdt, AEM 엔지니어링</em>
+            </div>
+            <p>
+                <br/>
+                RUM(Real User Monitoring) 탐색기 및 액세스 방법에 대해 알아봅니다.
             </p>
         </td>   
         <td>
