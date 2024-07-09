@@ -1,14 +1,14 @@
 ---
 title: 클라우드 - 시즌
-description: 시즌 3에서는 복잡한 프로젝트를 진행한 경험이 있는 전문가와의 심층 인터뷰를 통해 AEM Edge Delivery 서비스에 대해 알아볼 수 있습니다
+description: 시즌3는 복잡한 프로젝트를 진행한 경험이 있는 전문가와의 심층 인터뷰를 통해 AEM Edge Delivery 서비스에 대해 알아볼 수 있도록 했다
 sub-product: Experience Manager Sites, Experience Manager Cloud Manager, Experience Manager Assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 3bd7b9f5-5775-4572-8b4a-4d09619e20b9
 duration: 74
-source-git-commit: 272ed4e4782b03f284886a3046440960df538286
+source-git-commit: cbba149b23b4d8ecad35f263dc282a3da481fc9f
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '416'
 ht-degree: 0%
 
 ---
@@ -57,27 +57,29 @@ AEM Engineering의 시즌 3의 클라우드 5 시리즈에 오신 것을 환영�
                 RUM(Explore Real User Monitoring)은 Edge Delivery Services과 함께 작동합니다.
             </p>
         </td>   
+        <!--
         <td>
             <a href="./season-3/cloud5-rum-explorer.md">
-                <img alt="RUM(Real User Monitoring) 탐색기" src="https://video.tv.adobe.com/v/3429772?format=jpeg"/>
+                <img alt="Real User Monitoring (RUM) Explorer" src="https://video.tv.adobe.com/v/3429772?format=jpeg"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-rum-explorer.md">
-                <strong>RUM(Real User Monitoring) 탐색기</strong></a>        
-                <br/><em>james Talbot 및 Damian Langsweirdt, AEM 엔지니어링</em>
+                <strong>Real User Monitoring (RUM) Explorer</strong></a>        
+                <br/><em>with James Talbot & Damian Langsweirdt, AEM Engineering</em>
             </div>
             <p>
                 <br/>
-                RUM(Real User Monitoring) 탐색기 및 액세스 방법에 대해 알아봅니다.
+                Learn about Real User Monitoring (RUM) Explorer and how to access it.
             </p>
         </td>   
+        -->
         <td>
             <a href="./season-3/cloud5-edge-workers.md">
-                <img alt="에지 작업자" src="https://video.tv.adobe.com/v/3427589?format=jpeg"/>
+                <img alt="Edge 노동자" src="https://video.tv.adobe.com/v/3427589?format=jpeg"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-edge-workers.md">
-                <strong>에지 작업자</strong></a>        
+                <strong>Edge 노동자</strong></a>        
                 <br/><em>james Talbot &amp; Amol Anand, AEM 엔지니어링</em>
             </div>
             <p>
@@ -89,11 +91,11 @@ AEM Engineering의 시즌 3의 클라우드 5 시리즈에 오신 것을 환영�
     <tr>
         <td>
             <a href="./season-3/cloud5-publish-events.md">
-                <img alt="Edge Delivery Services의 이벤트 게시, 게시 취소" src="https://video.tv.adobe.com/v/3427681?format=jpeg"/>
+                <img alt="Publish, Edge Delivery Services의 이벤트 게시 취소" src="https://video.tv.adobe.com/v/3427681?format=jpeg"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-publish-events.md">
-                <strong>Edge Delivery Services의 이벤트 게시, 게시 취소</strong></a>        
+                <strong>Publish, Edge Delivery Services의 이벤트 게시 취소</strong></a>        
                 <br/><em>james Talbot &amp; Amol Anand, AEM 엔지니어링</em>
             </div>
             <p>
