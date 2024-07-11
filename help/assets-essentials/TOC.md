@@ -8,10 +8,10 @@ version: Cloud Service
 feature-set: Experience Manager Assets
 feature: Assets Essentials
 team: TM
-source-git-commit: 0c95df469885b84aa7585975a89811efab0ae5e7
+source-git-commit: a5eb7cb6ba9b806a57a27ad1a0e01609af713656
 workflow-type: tm+mt
-source-wordcount: '77'
-ht-degree: 31%
+source-wordcount: '68'
+ht-degree: 25%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 31%
    + [관리](basics/managing.md)
    + [사용](basics/using.md)
    + [콘텐츠 만들기](basics/creating.md)
-   + [빠른 액세스](basics/quick-access.md)
+   + [바로 가기](basics/quick-access.md)
    + [공동 작업](basics/collaborating.md)
    + [링크 공유](basics/link-sharing.md)
 
@@ -34,6 +34,7 @@ ht-degree: 31%
    + [내 작업 영역](configuring/my-workspace.md)
    + [메타데이터 양식](configuring/metadata-forms.md)
    + [권한 관리](configuring/permissions-management.md)
+   + [분류 체계 관리](configuring/taxonomy-management.md)
 
 + [Creative Cloud 통합](integrations/creative-cloud.md)
 
@@ -42,7 +43,7 @@ ht-degree: 31%
    + [구성](./integrations/workfront/configure.md)
    + [메타데이터 매핑](./integrations/workfront/map-metadata.md)
    + [문서 전송 및 에셋 연결](./integrations/workfront/link-send.md)
-   + [버전 기록](./integrations/workfront/versions.md)
+   + [버전 내역](./integrations/workfront/versions.md)
 
 + [Adobe Journey Optimizer 통합](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-messages/create-email-content-with-the-message-editor.html?lang=ko-KR){target=_blank}
 
