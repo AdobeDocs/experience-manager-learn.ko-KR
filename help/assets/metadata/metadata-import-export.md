@@ -12,10 +12,10 @@ last-substantial-update: 2022-06-13T00:00:00Z
 doc-type: Feature Video
 exl-id: 0681e2c4-8661-436c-9170-9aa841a6fa27
 duration: 419
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 726715890d997ba3bb85f4833e220ac2222b3a42
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 2%
+source-wordcount: '378'
+ht-degree: 1%
 
 ---
 
@@ -26,6 +26,22 @@ Adobe Experience Manager Assets의 메타데이터 가져오기 및 내보내기
 ## 메타데이터 내보내기 {#metadata-export}
 
 >[!VIDEO](https://video.tv.adobe.com/v/22132?quality=12&learn=on)
+
+>[!TIP]
+>
+> Excel에서 메타데이터 내보내기 CSV 파일을 열 때 [Excel Importer](https://support.microsoft.com/en-us/office/import-data-from-a-csv-html-or-text-file-b62efe49-4d5b-4429-b788-e1211b5e90f6) UTF-8 인코딩 CSV 파일 문제를 방지하기 위해 파일을 두 번 클릭하는 대신
+>
+> Excel에서 메타데이터 내보내기 CSV 파일을 열려면 다음 단계를 수행합니다.
+> 
+> 1. Microsoft Excel 열기
+> 1. 선택 __파일 > 새로 만들기__ 빈 스프레드시트를 만들려면
+> 1. 빈 스프레드시트를 연 상태에서 을 선택합니다. __파일 > 가져오기__
+> 1. 선택 __텍스트__ 파일 및 클릭 __가져오기__
+> 1. 파일 시스템에서 내보낸 CSV 파일을 선택하고 __데이터 가져오기__
+> 1. 가져오기 마법사의 1단계에서 다음을 선택합니다 __구분됨__ 및 설정 __파일 원본__ 끝 __유니코드(UTF-8)__, 및 클릭 __다음__
+> 1. 2단계에서 __구분 기호__ 끝 __쉼표__, 및 클릭 __다음__
+> 1. 3단계에서 __열 데이터 형식__ 있는 그대로 및 클릭 __완료__
+> 1. 선택 __가져오기__ 스프레드시트에 데이터를 추가하려면
 
 ## 메타데이터 가져오기 {#metadata-import}
 
