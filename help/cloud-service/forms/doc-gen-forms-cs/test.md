@@ -18,9 +18,10 @@ ht-degree: 0%
 
 # Eclipse 프로젝트 가져오기
 
-을(를) 다운로드하고 압축 해제합니다. [zip 파일](./assets/aem-forms-cs-doc-gen.zip)
+[zip 파일](./assets/aem-forms-cs-doc-gen.zip) 다운로드 및 압축 풀기
 
-Eclipse를 시작하고 프로젝트를 Eclipse로 가져오기 프로젝트에 리소스 폴더에 다음 파일이 포함됩니다.
+Eclipse를 시작하고 프로젝트를 Eclipse로 가져오기
+이 프로젝트에는 리소스 폴더에 있는 다음 파일이 포함됩니다.
 
 * DataFile1,DataFile2 및 DataFile3 - 최종 PDF 파일을 생성하기 위해 템플릿과 병합할 샘플 xml 데이터 파일입니다.
 * custom_fonts.xdp - XDP 템플릿.
@@ -37,6 +38,6 @@ Eclipse를 시작하고 프로젝트를 Eclipse로 가져오기 프로젝트에 
 * Java 애플리케이션으로 Main.java 실행
 
 >[!NOTE]
-> Java 프로그램을 처음 실행하면 HTTP 403 오류가 발생합니다. 이 문제를 해결하려면 다음을 지정하십시오. [AEM의 기술 계정 사용자에게 적절한 권한](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem).
+> Java 프로그램을 처음 실행하면 HTTP 403 오류가 발생합니다. 이 문제를 해결하려면 [AEM의 기술 계정 사용자에게 적절한 권한을 부여](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem)하세요.
 
-**AEM Forms 사용자** 이 강의에서 사용한 역할입니다.
+**AEM Forms 사용자**&#x200B;는 이 강의에 사용한 역할입니다.

@@ -21,7 +21,7 @@ AEM Engineering의 시즌 3의 클라우드 5 시리즈에 오신 것을 환영�
 
 ## 제안 상자
 
-다음 방문: [제안 상자](https://forms.office.com/r/74P5Xz4UH0) 주제 아이디어 제출용
+주제 아이디어를 제출하려면 [제안 상자](https://forms.office.com/r/74P5Xz4UH0)를 방문하세요.
 
 ## 시즌
 
@@ -35,8 +35,8 @@ AEM Engineering의 시즌 3의 클라우드 5 시리즈에 오신 것을 환영�
             </a>
             <div>
                 <a href="./season-3/cloud5-3rd-party-search.md">
-                <strong>서드파티 검색</strong></a>        
-                <br/><em>james Talbot 및 Varun Mitra, AEM 엔지니어링</em>
+                <strong>타사 검색</strong></a>        
+                <br/><em>James Talbot 및 Varun Mitra, AEM 엔지니어링 포함</em>
             </div>
             <p>
                 <br/>
@@ -50,7 +50,7 @@ AEM Engineering의 시즌 3의 클라우드 5 시리즈에 오신 것을 환영�
             <div>
                 <a href="./season-3/cloud5-rum.md">
                 <strong>RUM(실시간 사용자 모니터링)</strong></a>        
-                <br/><em>james Talbot 및 Damian Langsweirdt, AEM 엔지니어링</em>
+                <br/><em>James Talbot 및 Damian Langsweirdt, AEM 엔지니어링 포함</em>
             </div>
             <p>
                 <br/>
@@ -79,8 +79,8 @@ AEM Engineering의 시즌 3의 클라우드 5 시리즈에 오신 것을 환영�
             </a>
             <div>
                 <a href="./season-3/cloud5-edge-workers.md">
-                <strong>Edge 노동자</strong></a>        
-                <br/><em>james Talbot &amp; Amol Anand, AEM 엔지니어링</em>
+                <strong>Edge 작업자</strong></a>        
+                <br/><em>James Talbot &amp; Amol Anand, AEM 엔지니어링 포함</em>
             </div>
             <p>
                 <br/>
@@ -96,7 +96,7 @@ AEM Engineering의 시즌 3의 클라우드 5 시리즈에 오신 것을 환영�
             <div>
                 <a href="./season-3/cloud5-publish-events.md">
                 <strong>Publish, Edge Delivery Services의 이벤트 게시 취소</strong></a>        
-                <br/><em>james Talbot &amp; Amol Anand, AEM 엔지니어링</em>
+                <br/><em>James Talbot &amp; Amol Anand, AEM 엔지니어링 포함</em>
             </div>
             <p>
                 <br/>
@@ -109,8 +109,8 @@ AEM Engineering의 시즌 3의 클라우드 5 시리즈에 오신 것을 환영�
             </a>
             <div>
                 <a href="./season-3/cloud5-query-indexes.md">
-                <strong>쿼리 인덱스 및 Excel 공식 </strong></a>        
-                <br/><em>james Talbot 및 Varun Mitra, AEM 엔지니어링</em>
+                <strong>쿼리 인덱스 및 Excel 수식 </strong></a>        
+                <br/><em>James Talbot 및 Varun Mitra, AEM 엔지니어링 포함</em>
             </div>
             <p>
                 <br/>
@@ -123,8 +123,8 @@ AEM Engineering의 시즌 3의 클라우드 5 시리즈에 오신 것을 환영�
             </a>
             <div>
                 <a href="./season-3/cloud5-byo-cloudflare-cdn.md">
-                <strong>고유한 Cloudflare CDN 가져오기</strong></a>        
-                <br/><em>james Talbot &amp; Kunwar Saluja, AEM 엔지니어링</em>
+                <strong>자체 Cloudflare CDN 가져오기</strong></a>        
+                <br/><em>James Talbot &amp; Kunwar Saluja, AEM 엔지니어링 포함</em>
             </div>
             <p>
                 <br/>
@@ -140,7 +140,7 @@ AEM Engineering의 시즌 3의 클라우드 5 시리즈에 오신 것을 환영�
             <div>
                 <a href="./season-3/cloud5-integrate-assets.md">
                 <strong>문서 작성과 AEM Assets 통합</strong></a>        
-                <br/><em>james Talbot 및 Darin Kuntze, AEM 엔지니어링</em>
+                <br/><em>James Talbot 및 Darin Kuntze, AEM 엔지니어링 포함</em>
             </div>
             <p>
                 <br/>
@@ -168,7 +168,7 @@ AEM Engineering의 시즌 3의 클라우드 5 시리즈에 오신 것을 환영�
             <div>
                 <a href="./season-3/cloud5-exploring-universal-editor.md">
                 <strong>유니버설 편집기 살펴보기</strong></a>        
-                <br/><em>AEM Engineering의 James Talbot 및 Dirk Rudolph</em>
+                <br/><em>James Talbot 및 Dirk Rudolph와 함께, AEM 엔지니어링</em>
             </div>
             <p>
                 <br/>                

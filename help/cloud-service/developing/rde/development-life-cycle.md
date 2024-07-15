@@ -45,4 +45,4 @@ RDE의 주요 이점은 개발 추진력을 유지하는 것입니다.
 
 [로컬 개발 환경 설정](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=ko-KR)
 
-[Adobe Cloud Manager 사용 - CI/CD 프로덕션 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/cicd-production-pipeline.html)
+[Cloud Manager Adobe 사용 - CI/CD 프로덕션 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/cicd-production-pipeline.html)

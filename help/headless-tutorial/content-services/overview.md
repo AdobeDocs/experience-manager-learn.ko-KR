@@ -17,7 +17,7 @@ ht-degree: 4%
 
 # AEM Headless 시작하기 - 콘텐츠 서비스
 
-AEM Content Services는 기존 AEM Pages를 활용하여 headless REST API 끝점을 구성하고 AEM 구성 요소는 이러한 끝점에 표시할 콘텐츠를 정의하거나 참조합니다.
+AEM의 콘텐츠 서비스는 기존 AEM Pages를 활용하여 headless REST API 엔드포인트를 구성하고 AEM 구성 요소는 이러한 엔드포인트에 표시할 콘텐츠를 정의하거나 참조합니다.
 
 AEM Content Services를 사용하면 AEM Sites에서 웹 페이지를 작성하는 데 사용되는 동일한 콘텐츠 추상을 사용하여 이러한 HTTP API의 콘텐츠 및 스키마를 정의할 수 있습니다. AEM Pages 및 AEM 구성 요소를 사용하면 마케터가 모든 애플리케이션을 실행할 수 있는 유연한 JSON API를 빠르게 구성하고 업데이트할 수 있습니다.
 
@@ -35,13 +35,13 @@ Headless CMS 시나리오에서, AEM을 사용하여 콘텐츠를 작성하고 �
 * 이벤트 데이터를 JSON으로 표시하는 AEM Sites 템플릿과 페이지를 사용하여 AEM Content Services 끝점을 정의합니다
 * AEM WCM 핵심 구성 요소를 사용하여 마케터가 JSON 끝점을 작성할 수 있는 방법을 살펴봅니다
 * 모바일 앱에서 AEM Content Services JSON 사용
-   * Android를 사용하는 이유는 이 자습서의 모든 사용자(Windows, macOS 및 Linux)가 기본 앱을 실행하는 데 사용할 수 있는 교차 플랫폼 에뮬레이터가 있기 때문입니다.
+   * Android을 사용하는 이유는 이 자습서의 모든 사용자(Windows, macOS 및 Linux)가 기본 앱을 실행하는 데 사용할 수 있는 교차 플랫폼 에뮬레이터가 있기 때문입니다.
 
 ## GitHub 프로젝트
 
-소스 코드 및 컨텐츠 패키지는 [AEM 안내서 - WKND Mobile GitHub 프로젝트](https://github.com/adobe/aem-guides-wknd-mobile).
+소스 코드 및 컨텐츠 패키지는 [AEM Guides - WKND Mobile GitHub 프로젝트](https://github.com/adobe/aem-guides-wknd-mobile)에서 사용할 수 있습니다.
 
-자습서나 코드에서 문제를 발견하면 [GitHub 문제](https://github.com/adobe/aem-guides-wknd-mobile/issues).
+튜토리얼이나 코드에서 문제가 발견되면 [GitHub 문제](https://github.com/adobe/aem-guides-wknd-mobile/issues)를 남깁니다.
 
 ## AEM GraphQL과 AEM Content Services 비교
 

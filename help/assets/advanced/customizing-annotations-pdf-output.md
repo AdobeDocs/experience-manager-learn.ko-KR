@@ -23,9 +23,9 @@ AEM은 PDF 출력의 사용자 지정을 지원합니다.
 
 ## PDF 주석 sling:OsgiConfig 정의
 
-PDF 주석을 사용자 정의하려면 **sling:OsgiConfig** 아래에 있는 AEM 프로젝트의 노드
+PDF 주석을 사용자 지정하려면 아래의 AEM 프로젝트에서 **sling:OsgiConfig** 노드를 만드십시오.
 
-`/apps/my-project/config.author/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig.xml` 필요에 따라 값을 조정합니다.
+`/apps/my-project/config.author/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig.xml`을(를) 선택하고 필요에 따라 값을 조정합니다.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

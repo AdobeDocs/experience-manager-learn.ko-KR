@@ -30,7 +30,7 @@ ht-degree: 25%
    + [공동 작업](basics/collaborating.md)
    + [링크 공유](basics/link-sharing.md)
 
-+ 구성{#configuring}
++ {#configuring} 구성 중
    + [내 작업 영역](configuring/my-workspace.md)
    + [메타데이터 양식](configuring/metadata-forms.md)
    + [권한 관리](configuring/permissions-management.md)

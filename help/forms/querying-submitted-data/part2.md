@@ -27,7 +27,7 @@ ht-degree: 0%
 
 양식 제출을 처리하기 위해 사용자 정의 제출을 만들었습니다. 이 사용자 정의 제출의 post.request.jsp에서 POST을 서블릿에 전달합니다.
 
-사용자 정의 제출에 대한 자세한 내용은 다음을 참조하십시오. [기사](https://helpx.adobe.com/experience-manager/kt/forms/using/custom-submit-aem-forms-article.html)
+사용자 지정 제출 요청에 대한 자세한 내용은 이 [문서](https://helpx.adobe.com/experience-manager/kt/forms/using/custom-submit-aem-forms-article.html)를 참조하세요.
 
 com.adobe.aemds.guide.utils.GuideSubmitUtils.setForwardPath(slingRequest,&quot;/bin/storeafsubmission&quot;,null,null);
 
@@ -137,7 +137,7 @@ public class HandleAdaptiveFormSubmission extends SlingAllMethodsServlet {
 }
 ```
 
-![connectionpool](assets/connectionpooled.gif)
+![연결 풀](assets/connectionpooled.gif)
 
 이 작업을 시스템에서 수행하려면 다음 단계를 따르십시오
 

@@ -23,7 +23,7 @@ AEM Forms에서 출력 및 Forms 서비스 API를 사용하여 개발하는 방�
 이 문서에서는 다음을 살펴봅니다
 
 * [출력 서비스](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) - 일반적으로 이 서비스는 xml 데이터를 xdp 템플릿 또는 pdf와 병합하여 병합된 pdf를 생성하는 데 사용됩니다.
-* [Forms 서비스](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html) - xdp를 pdf로 렌더링하고 데이터를 PDF 파일에서 내보내고 가져올 수 있는 매우 다양한 서비스입니다.
+* [FormsService](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html) - xdp를 pdf로 렌더링하고 데이터를 PDF 파일로 내보내거나 가져올 수 있는 매우 다양한 서비스입니다.
 
 
 다음 코드 조각은 PDF 파일에서 데이터를 내보냅니다
@@ -52,7 +52,7 @@ Line2는 요청에서 saveLocation을 추출합니다.
 
 
 
-**허용 목록에 추가하다 패키지 설치 후 Adobe Granite CSRF 필터에 다음 URL s을 다운로드하십시오.**
+허용 목록에 추가하다 **패키지를 설치하면 Adobe Granite CSRF 필터에 다음 URL을 다운로드하게 됩니다.**
 
 1. 허용 목록에 추가하다 위에서 언급 한 경로에 아래의 단계를 따르십시오.
 1. [configMgr에 로그인](http://localhost:4502/system/console/configMgr)
@@ -85,8 +85,8 @@ Line2는 요청에서 saveLocation을 추출합니다.
 * **요청 매개 변수 -**
 
    * **xdp_or_pdf_file** : 데이터를 병합할 xdp 또는 pdf 파일
-   * **xmlfile**: xdp_or_pdf_file과 병합되는 xml 데이터 파일
-   * **saveLocation**: 렌더링된 문서를 파일 시스템에 저장하는 위치입니다. 예: c:\\documents\\sample.pdf
+   * **xmlfile**: xdp_or_pdf_file과 병합되는 xml 데이터 파일입니다.
+   * **saveLocation**: 렌더링된 문서를 파일 시스템에 저장할 위치입니다. 예: c:\\documents\\sample.pdf
 
 ### FormsService API 사용
 
@@ -97,9 +97,9 @@ Line2는 요청에서 saveLocation을 추출합니다.
 
 * **요청 매개 변수:**
 
-   * **pdf 파일** : 데이터를 병합할 pdf 파일
-   * **xmlfile**: pdf 파일과 병합되는 xml 데이터 파일
-   * **saveLocation**: 렌더링된 문서를 파일 시스템에 저장하는 위치입니다. 예 `c:\\outputsample.pdf`.
+   * **pdffile** : 데이터를 병합할 pdf 파일입니다.
+   * **xmlfile**: pdf 파일과 병합되는 xml 데이터 파일입니다.
+   * **saveLocation**: 렌더링된 문서를 파일 시스템에 저장할 위치입니다. 예 `c:\\outputsample.pdf`.
 
 #### 데이터 내보내기
 
@@ -107,7 +107,7 @@ Line2는 요청에서 saveLocation을 추출합니다.
 * **POST URL** - http://localhost:4502/content/AemFormsSamples/exportdata.html
 * **요청 매개 변수:**
 
-   * **pdf 파일** : 데이터를 내보낼 pdf 파일
+   * **pdffile** : 데이터를 내보낼 pdf 파일입니다.
    * **saveLocation**: 내보낸 데이터를 파일 시스템에 저장할 위치입니다. 예: c:\\documents\\exported_data.xml
 
 #### XDP 렌더링

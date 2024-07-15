@@ -24,7 +24,7 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->[Dynamic Media 활성화](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html) 이 기능을 사용하려면 AEM에서 을 참조하십시오.
+>이 기능을 사용하려면 AEM에서 [Dynamic Media을 사용](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)하세요.
 
 이 기능은 AEM 6.1 및 6.2 버전에서 기능 팩으로 사용할 수 있습니다.
 

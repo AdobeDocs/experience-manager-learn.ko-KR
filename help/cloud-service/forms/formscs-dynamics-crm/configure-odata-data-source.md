@@ -1,5 +1,5 @@
 ---
-title: Odata 소스 생성 및 구성
+title: Odata Source 만들기 및 구성
 description: Microsoft Dynamics에 연결할 클라우드 서비스 구성을 만들고 구성합니다.
 type: Documentation
 role: Developer

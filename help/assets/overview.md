@@ -16,7 +16,7 @@ ht-degree: 20%
 
 {{edge-delivery-services}}
 
-Adobe Experience Manager(AEM) Assets는 사용자가 웹 기반 저장소에서 디지털 에셋(이미지, 비디오, 문서 및 오디오 클립)을 생성하고, 관리하고, 공유할 수 있도록 하는 AEM Platform의 디지털 에셋 관리 툴입니다. 이 사용 안내서에는 AEM Assets의 다양한 기능과 성능에 대한 비디오 및 튜토리얼이 포함되어 있습니다.
+Adobe Experience Manager(AEM) Assets은 사용자가 웹 기반 저장소에서 디지털 에셋(이미지, 비디오, 문서 및 오디오 클립)을 생성하고, 관리하고, 공유할 수 있도록 하는 AEM Platform의 디지털 에셋 관리 툴입니다. 이 사용 안내서에는 AEM Assets의 다양한 기능과 성능에 대한 비디오 및 튜토리얼이 포함되어 있습니다.
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_assets_overview"
@@ -48,7 +48,7 @@ AEM Assets이 무엇인지, 그리고 이를 사용하여 조직의 비즈니스
    </a>
    <div>
       <a href="./creative-workflows/aem-desktop-app.md">
-      <strong>AEM Desktop App 사용</strong>
+      <strong>AEM 데스크톱 앱 사용</strong>
       </a>
    </div>
    <p>
@@ -65,7 +65,7 @@ AEM Assets이 무엇인지, 그리고 이를 사용하여 조직의 비즈니스
       </a>
    </div>
    <p>
-      <em>개념에서 설계, 게재에 이르기까지 경험 생성 속도를 높입니다.</em>
+      <em>개념에서 디자인, 배달까지 경험 생성 속도를 높입니다.</em>
    <p>
 </td>
 <td>

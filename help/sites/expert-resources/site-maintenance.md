@@ -43,7 +43,7 @@ AEM 인스턴스의 설치 및 유지 관리에 대한 세 가지 옵션이 있�
 
 인덱스를 통해 쿼리를 최대한 신속하게 실행할 수 있으므로 다른 작업에 필요한 리소스를 확보할 수 있습니다. 색인이 맨 위 셰이프인지 확인합니다. AEM은 인덱스를 사용하는 대신 트래버스하는 쿼리를 취소하여 잘못된 쿼리 하나가 전체 AEM 성능에 영향을 주지 않도록 합니다.
 
-#### [Tar 압축/개정 정리](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=en)
+#### [Tar 압축/수정 정리](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=en)
 
 저장소에 대한 각 업데이트는 새 콘텐츠 개정을 만듭니다. 결과적으로 각 업데이트 시 저장소의 크기가 커집니다. 저장소 증가를 제어하지 않으려면 디스크 리소스를 확보하기 위해 이전 버전을 정리해야 합니다.
 
@@ -55,7 +55,7 @@ Lucene 바이너리를 제거하고 실행 중인 데이터 저장소 크기 요
 
 AEM의 에셋이 삭제되면 기본 데이터 저장소 레코드에 대한 참조가 노드 계층 구조에서 제거될 수 있지만 데이터 저장소 레코드 자체는 유지됩니다. 참조되지 않은 이 데이터 저장소 레코드는 보존할 필요가 없는 &quot;가비지&quot;가 됩니다. 참조되지 않은 자산이 많이 존재하는 경우 해당 자산을 제거하고 공간을 보존하며 백업 및 파일 시스템 유지 관리 성능을 최적화하는 것이 좋습니다.
 
-#### [워크플로 삭제](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html)
+#### [워크플로 제거](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html)
 
 워크플로 인스턴스 수를 최소화하면 워크플로 엔진의 성능이 향상되므로 완료되었거나 실행 중인 워크플로 인스턴스를 저장소에서 정기적으로 제거할 수 있습니다.
 
@@ -73,7 +73,7 @@ AEM의 가장 안전한 인스턴스를 보장하기 위해 보안 체크리스�
 
 ## 개발자
 
-사용자 지정 구성 요소를 사용하지 마십시오. - 사용 [핵심 구성 요소](https://www.aemcomponents.dev/). 핵심 구성 요소는 시간의 80~90%, 사용자 지정 구성 요소는 제한적으로만 사용해야 합니다. 이렇게 하려면 페이지의 구성 요소를 보는 새로운 방법이 필요할 수 있습니다. CSS를 사용하는 프론트엔드 개발자가 구성 요소를 쉽게 변경할 수 있음을 알고 있어야 합니다. 또한 이러한 핵심 구성 요소는 서로 임베드되어 매우 복잡한 결과를 얻을 수 있습니다. 창의력을 발휘하십시오!
+사용자 지정 구성 요소를 사용하지 마십시오. [핵심 구성 요소](https://www.aemcomponents.dev/)를 사용하십시오. 핵심 구성 요소는 시간의 80~90%, 사용자 지정 구성 요소는 제한적으로만 사용해야 합니다. 이렇게 하려면 페이지의 구성 요소를 보는 새로운 방법이 필요할 수 있습니다. CSS를 사용하는 프론트엔드 개발자가 구성 요소를 쉽게 변경할 수 있음을 알고 있어야 합니다. 또한 이러한 핵심 구성 요소는 서로 임베드되어 매우 복잡한 결과를 얻을 수 있습니다. 창의력을 발휘하십시오!
 
 ### [스타일 시스템](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=en)
 
@@ -95,8 +95,8 @@ AEM의 가장 안전한 인스턴스를 보장하기 위해 보안 체크리스�
 
 ## 일반
 
-지속적인 학습을 통해 AEM의 변화에 당황하지 마십시오. 과거에 얽매이지 마십시오. 사용 [Experience League](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=en) 및 [Adobe ADLS(디지털 학습 서비스)](https://learning.adobe.com/) 기술을 연마하기 위해.
+지속적인 학습을 통해 AEM의 변화에 당황하지 마십시오. 과거에 얽매이지 마십시오. [Experience League](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=en) 및 [ADLS(디지털 학습 서비스) Adobe](https://learning.adobe.com/)을(를) 사용하여 기술을 연마하세요.
 
 ## 결론
 
-AEM은 큰 시스템이 될 수 있으며, &quot;노래&quot;를 부르려면 다양한 유형의 사람들이 필요합니다. 관리자부터 개발자(프론트엔드 및 하드 코어 Java 개발자 모두)까지 - 작성자까지 모든 사용자를 위한 항목이 있습니다. 그리고 일상적인 관리 업무를 처리하고 싶지 않다면 항상 AMS와 AEM as a Cloud Service이 있습니다.
+AEM은 큰 시스템이 될 수 있으며, &quot;노래&quot;를 부르려면 다양한 유형의 사람들이 필요합니다. 관리자부터 개발자(프론트엔드 및 하드 코어 Java 개발자 모두)까지 - 작성자까지 모든 사용자를 위한 항목이 있습니다. 일상적인 관리를 처리하고 싶지 않다면 항상 AMS와 AEM as a Cloud Service이 있습니다.

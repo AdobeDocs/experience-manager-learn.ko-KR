@@ -23,9 +23,9 @@ ht-degree: 3%
 
 {{aem-headless-trials-promo}}
 
-Headless CMS 시나리오에서, AEM GraphQL API를 사용하여 콘텐츠를 작성하고 노출하고 외부 앱에서 사용하는 방법을 보여 주는 종단간 튜토리얼입니다.
+Headless CMS 시나리오에서, AEM의 GraphQL API를 사용하여 콘텐츠를 작성하고 노출하고 외부 앱에서 사용하는 방법을 보여 주는 종단간 튜토리얼입니다.
 
-이 튜토리얼에서는 AEM GraphQL API 및 Headless 기능을 사용하여 외부 앱에 표시되는 경험을 제공하는 방법을 알아봅니다.
+이 튜토리얼에서는 AEM의 GraphQL API 및 Headless 기능을 사용하여 외부 앱에 표시되는 경험을 제공하는 방법을 알아봅니다.
 
 이 튜토리얼에서는 다음 주제를 다룹니다.
 
@@ -44,18 +44,18 @@ Headless CMS 시나리오에서, AEM GraphQL API를 사용하여 콘텐츠를 �
 * 다음 도구를 로컬에 설치해야 합니다.
    * [Node.js v18](https://nodejs.org/)
    * [Git](https://git-scm.com/)
-   * IDE(예: [Microsoft® Visual Studio 코드](https://code.visualstudio.com/))
+   * IDE(예: [Microsoft® Visual Studio Code](https://code.visualstudio.com/))
 
 ### AEM 환경
 
-이 자습서를 완료하려면 AEM 관리자가 AEM as a Cloud Service 환경에 액세스할 수 있도록 하는 것이 좋습니다. AEM as a Cloud Service 환경에 액세스할 수 없는 경우 [AEM Headless 체험판에 등록](https://commerce.adobe.com/business-trial/sign-up?items%5B0%5D%5Bid%5D=649A1AF5CBC5467A25E84F2561274821&amp;cli=headless_exl_banner_campaign&amp;co=US&amp;lang=en) AEM 헤드리스 기능을 살펴보십시오.
+이 자습서를 완료하려면 AEM 관리자가 AEM as a Cloud Service 환경에 액세스할 수 있도록 하는 것이 좋습니다. AEM as a Cloud Service 환경에 액세스할 수 없는 경우 [AEM Headless 체험판에 등록](https://commerce.adobe.com/business-trial/sign-up?items%5B0%5D%5Bid%5D=649A1AF5CBC5467A25E84F2561274821&amp;cli=headless_exl_banner_campaign&amp;co=US&amp;lang=en)하여 AEM의 Headless 기능을 살펴보십시오.
 
 ## 시작해 보겠습니다!
 
-튜토리얼 시작 [콘텐츠 조각 모델 정의](content-fragment-models.md).
+[콘텐츠 조각 모델 정의](content-fragment-models.md)(으)로 자습서를 시작하십시오.
 
 ## GitHub 프로젝트
 
-소스 코드 및 컨텐츠 패키지는 [AEM 안내서 - WKND GraphQL GitHub 프로젝트](https://github.com/adobe/aem-guides-wknd-graphql).
+소스 코드 및 컨텐츠 패키지는 [AEM Guides - WKND GraphQL GitHub 프로젝트](https://github.com/adobe/aem-guides-wknd-graphql)에서 사용할 수 있습니다.
 
-자습서나 코드에서 문제를 발견하면 [GitHub 문제](https://github.com/adobe/aem-guides-wknd-graphql/issues).
+튜토리얼이나 코드에서 문제가 발견되면 [GitHub 문제](https://github.com/adobe/aem-guides-wknd-graphql/issues)를 남깁니다.

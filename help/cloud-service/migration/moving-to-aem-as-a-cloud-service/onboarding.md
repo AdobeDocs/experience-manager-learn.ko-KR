@@ -1,6 +1,6 @@
 ---
 title: AEM as a Cloud Service에 온보딩
-description: AEM 계약 단계에서 시작하여 Cloud Manager를 사용한 환경 설정에 이르기까지 as a Cloud Service으로 온보딩하는 방법에 대해 알아봅니다.
+description: 계약 단계에서 시작하여 AEM as a Cloud Service을 사용한 환경 설정에 이르기까지 Cloud Manager에 온보딩하는 방법에 대해 알아봅니다.
 version: Cloud Service
 feature: Onboarding
 topic: Migration, Upgrade
@@ -19,21 +19,21 @@ ht-degree: 7%
 
 # AEM as a Cloud Service에 온보딩
 
-AEM 계약 단계에서 시작하여 Cloud Manager를 사용한 환경 설정에 이르기까지 as a Cloud Service으로 온보딩하는 방법에 대해 알아봅니다.
+계약 단계에서 시작하여 AEM as a Cloud Service을 사용한 환경 설정에 이르기까지 Cloud Manager에 온보딩하는 방법에 대해 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336959?quality=12&learn=on)
 
 ## Cloud Manager 및 Admin Console
 
-![높은 수준 다이어그램 온보딩](assets/onboarding-diagram.png)
+![높은 수준의 다이어그램 온보딩](assets/onboarding-diagram.png)
 
-온보딩의 중요한 부분은 AEM Cloud Manager를 사용하여 as a Cloud Service Adobe 프로그램을 만들고 다양한 환경을 프로비저닝하는 것입니다. 다음 [Admin Console](https://adminconsole.adobe.com/) 은 역할을 할당하고 AEM 환경에 조직의 사용자에 대한 액세스 권한을 제공하는 데 사용됩니다.
+온보딩의 중요한 부분은 AEM as a Cloud Service 프로그램을 만들고 Adobe Cloud Manager을 사용하여 다양한 환경을 프로비저닝하는 것입니다. [Admin Console](https://adminconsole.adobe.com/)은(는) 역할을 할당하고 AEM 환경에 조직의 사용자에 대한 액세스 권한을 제공하는 데 사용됩니다.
 
 ## 주요 활동
 
-+ 시스템 관리자는 [Admin Console](https://adminconsole.adobe.com/) 한 명 이상의 사용자를 [Cloud Manager - 비즈니스 소유자](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) 제품 프로필.
-+ 비즈니스 소유자 제품 프로필에 할당된 사용자는 의 셀프서비스 기능을 사용합니다. [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) 끝 [프로그램 만들기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/creating-production-program.html) 및 [환경 추가](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html)
-+ 사용 [Admin Console](https://adminconsole.adobe.com/) 개발자와 사용자를 다른 사용자에게 할당 [Cloud Manager 역할](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) 다양한 AEM 환경에 대한 권한을 부여합니다.
++ 시스템 관리자는 [Admin Console](https://adminconsole.adobe.com/)을(를) 사용하여 하나 이상의 사용자를 [Cloud Manager - 비즈니스 소유자](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) 제품 프로필에 할당합니다.
++ 비즈니스 소유자 제품 프로필에 할당된 사용자가 [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)에서 [프로그램 만들기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/creating-production-program.html) 및 [환경 추가](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html)까지의 셀프서비스 기능을 사용합니다.
++ [Admin Console](https://adminconsole.adobe.com/)을(를) 사용하여 개발자와 사용자를 다른 [Cloud Manager 역할](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)에 할당하고 다양한 AEM 환경에 대한 권한을 부여합니다.
 
 ## 실습 위주의 운동
 

@@ -1,6 +1,6 @@
 ---
 title: Cloud 5 - Cloud Manager의 미스터리 - 경험 감사
-description: Cloud Manager 검사 및 경험 감사 기능 자세히 살펴보기
+description: Cloud Manager 검토 및 경험 감사 기능 살펴보기
 version: Cloud Service
 role: Admin, Developer
 level: Intermediate
@@ -18,7 +18,7 @@ ht-degree: 5%
 
 # Cloud 5 - Cloud Manager의 미스터리 - 경험 감사
 
-세 부분으로 구성된 시리즈 중 첫 번째 부분에서 Cloud Manager의 기본 사항에 대해 알아보고 경험 감사 기능에 초점을 맞춥니다.
+3부로 구성된 시리즈 중 첫 번째 시리즈에서는 Cloud Manager의 기본 사항을 살펴보고 경험 감사 기능에 관심을 기울입니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/343620?quality=12&learn=on)
 

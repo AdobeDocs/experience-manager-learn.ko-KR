@@ -1,6 +1,6 @@
 ---
 title: 응답형 탐색
-description: Edge 게재 문서 작성에서 응답형 탐색을 수행하는 방법을 살펴봅니다.
+description: Edge Delivery 문서 작성에서 응답형 탐색을 수행하는 방법을 살펴봅니다.
 version: 6.5, Cloud Service
 feature: Authoring
 topic: Content Management

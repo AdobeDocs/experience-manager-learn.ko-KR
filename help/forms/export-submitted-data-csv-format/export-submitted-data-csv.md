@@ -45,7 +45,7 @@ ht-degree: 0%
 
 * 37행: Apache Sling 연결의 풀링된 데이터 소스에 액세스합니다.
 
-* 89행: 서비스의 진입점입니다.메서드 `getCSVFile(..)` 는 formName을 입력 매개 변수로 사용하고 지정된 양식 이름과 관련된 제출된 데이터를 가져옵니다.
+* 89행: 서비스의 진입점입니다. `getCSVFile(..)` 메서드는 formName을 입력 매개 변수로 사용하고 지정된 양식 이름과 관련된 제출된 데이터를 가져옵니다.
 
 >[!NOTE]
 >
@@ -265,7 +265,7 @@ public @interface StoreAndExportConfiguration {
 
 ## 서블릿
 
-다음은 를 호출하는 서블릿 코드입니다. `getCSVFile(..)` 서비스 메서드. 이 서비스는 StringBuffer 개체를 반환한 다음 호출 응용 프로그램으로 다시 스트리밍합니다.
+다음은 서비스의 `getCSVFile(..)` 메서드를 호출하는 서블릿 코드입니다. 이 서비스는 StringBuffer 개체를 반환한 다음 호출 응용 프로그램으로 다시 스트리밍합니다.
 
 ```java
 package com.aemforms.storeandexport.core.servlets;
@@ -307,6 +307,6 @@ public class StreamCSVFile extends SlingAllMethodsServlet {
 
 ### 서버에 배포
 
-* 가져오기 [SQL 파일](assets/formsubmissions.sql) MySQL Workbench를 사용하여 MySQL Server에 로그인합니다. 이 작업으로 스키마 호출이 생성됨 **기형문합법** 및 테이블 호출됨 **formsubmissions** 샘플 데이터 포함.
-* 배포 [OSGi 번들](assets/store-export.jar) Felix 웹 콘솔 사용
+* MySQL Workbench를 사용하여 [SQL 파일](assets/formsubmissions.sql)을(를) MySQL 서버로 가져옵니다. 이렇게 하면 일부 샘플 데이터를 사용하여 **aemformstutorial**(이)라는 스키마와 **formsubmissions**(이)라는 테이블이 만들어집니다.
+* Felix 웹 콘솔을 사용하여 [OSGi 번들](assets/store-export.jar) 배포
 * [TimeOffRequest 제출을 가져오려면](http://localhost:4502/bin/streamformdata?formName=timeoffrequestform). CSV 파일을 다시 스트림해야 합니다.

@@ -20,7 +20,7 @@ ht-degree: 0%
 
 이 문서에서는 데이터베이스에서 적응형 양식 데이터를 저장하고 검색하는 단계를 설명합니다. 적응형 양식 데이터를 저장하는 데 MySQL 데이터베이스가 사용되었습니다. 높은 수준에서 사용 사례를 달성하기 위한 단계는 다음과 같습니다.
 
-* [데이터 소스 구성](#Configure-Data-Source)
+* [Data Source 구성](#Configure-Data-Source)
 * [데이터베이스에 데이터를 쓰는 서블릿 만들기](#create-servlet)
 * [저장된 데이터를 가져오기 위한 OSGI 서비스 만들기](#create-osgi-service)
 * [클라이언트 라이브러리 만들기](#create-client-library)
@@ -28,17 +28,17 @@ ht-degree: 0%
 * [기능 데모](#capability-demo)
 * [서버에 배포](#deploy-on-your-server)
 
-## 데이터 소스 구성 {#Configure-Data-Source}
+## Data Source 구성 {#Configure-Data-Source}
 
 Apache Sling 연결의 풀링된 데이터 소스는 적응형 양식 데이터를 저장하는 데 사용할 데이터베이스를 가리키도록 구성됩니다. 다음 스크린샷은 내 인스턴스에 대한 구성을 보여 줍니다. 다음 속성을 복사하여 붙여넣을 수 있습니다
 
-* `Datasource Name:aemformstutorial` - 내 코드에 사용되는 이름입니다.
+* `Datasource Name:aemformstutorial` - 코드에서 사용되는 이름입니다.
 
 * `JDBC Driver Class:com.mysql.jdbc.Driver`
 
 * `JDBC Connection URL:jdbc:mysql://localhost:3306/aemformstutorial`
 
-![connectionpool](assets/storingdata.PNG)
+![연결 풀](assets/storingdata.PNG)
 
 ### 서블릿 만들기 {#create-servlet}
 

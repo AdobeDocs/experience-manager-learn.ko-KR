@@ -8,23 +8,23 @@ role: Developer
 level: Intermediate
 jira: KT-15714
 last-substantial-update: 2023-06-06T00:00:00Z
-source-git-commit: 4b9f784de5fff7d9ba8cf7ddbe1802c271534010
+exl-id: 5492dc7b-f034-4a7f-924d-79e083349e26
+source-git-commit: 8f64864658e521446a91bb4c6475361d22385dc1
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 0%
 
 ---
 
-
 # Github.com webhook 확인
 
-Webhooks를 사용하면 GitHub.com에서 특정 이벤트를 구독하는 통합을 빌드하거나 설정할 수 있습니다. 이러한 이벤트 중 하나가 트리거되면 GitHub는 Webhook의 구성된 URL에 HTTP POST 페이로드를 보냅니다. 그러나 보안상의 이유로 수신 webhook 요청이 실제로 GitHub에서 온 것이며 악의적인 행위자에서 온 것이 아닌지 확인하는 것이 중요합니다. 이 자습서에서는 공유 암호를 사용하여 Adobe App Builder 작업에서 GitHub.com webhook 요청을 확인하는 단계를 안내합니다.
+Webhooks를 사용하면 GitHub.com에서 특정 이벤트를 구독하는 통합을 빌드하거나 설정할 수 있습니다. 이러한 이벤트 중 하나가 트리거되면 GitHub는 Webhook의 구성된 URL에 HTTP POST 페이로드를 보냅니다. 그러나 보안상의 이유로 수신 webhook 요청이 실제로 GitHub에서 온 것이며 악의적인 행위자에서 온 것이 아닌지 확인하는 것이 중요합니다. 이 자습서에서는 공유 암호를 사용하여 App Builder Adobe 작업에서 GitHub.com webhook 요청을 확인하는 단계를 안내합니다.
 
 ## AppBuilder에서 Github 암호 설정
 
-1. **암호 추가 `.env` 파일:**
+1. **파일 `.env`에 암호 추가:**
 
-   App Builder 프로젝트의 `.env` 파일에서 GitHub.com webhook 암호에 대한 사용자 지정 키를 추가합니다.
+   App Builder 프로젝트의 `.env` 파일에서 GitHub.com 웹후크 암호에 대한 사용자 지정 키를 추가합니다.
 
    ```env
    # Specify your secrets here
@@ -33,13 +33,13 @@ Webhooks를 사용하면 GitHub.com에서 특정 이벤트를 구독하는 통�
    GITHUB_SECRET=my-github-webhook-secret-1234!
    ```
 
-2. **업데이트 `ext.config.yaml` 파일:**
+2. **`ext.config.yaml` 파일 업데이트:**
 
-   다음 `ext.config.yaml` GitHub.com webhook 요청을 확인하려면 파일을 업데이트해야 합니다.
+   GitHub.com Webhook 요청을 확인하려면 `ext.config.yaml` 파일을 업데이트해야 합니다.
 
-   - AppBuilder 작업 설정 `web` 구성 대상 `raw` GitHub.com에서 원시 요청 본문을 받습니다.
-   - 아래 `inputs` AppBuilder 작업 구성에서 `GITHUB_SECRET` 키, 매핑하기 `.env` 암호가 포함된 필드. 이 키의 값은 입니다. `.env` 필드 이름 접두사 `$`.
-   - 설정 `require-adobe-auth` AppBuilder 작업 구성의 주석 `false` Adobe 인증을 요구하지 않고 작업을 호출할 수 있도록 합니다.
+   - AppBuilder 작업 `web` 구성을 `raw`(으)로 설정하여 GitHub.com에서 원시 요청 본문을 받습니다.
+   - AppBuilder 작업 구성의 `inputs`에서 `GITHUB_SECRET` 키를 추가하고 암호를 포함하는 `.env` 필드에 매핑합니다. 이 키의 값은 `$` 접두사가 있는 `.env` 필드 이름입니다.
+   - Adobe 인증을 요구하지 않고 작업을 호출할 수 있도록 AppBuilder 작업 구성의 `require-adobe-auth` 주석을 `false`(으)로 설정하십시오.
 
    결과 `ext.config.yaml` 파일은 다음과 같아야 합니다.
 
@@ -69,7 +69,7 @@ Webhooks를 사용하면 GitHub.com에서 특정 이벤트를 구독하는 통�
 
 ## AppBuilder 작업에 확인 코드 추가
 
-그런 다음 아래에 제공된 JavaScript 코드를 추가합니다(에서 복사됨). [GitHub.com의 설명서](https://docs.github.com/en/webhooks/using-webhooks/validating-webhook-deliveries#javascript-example))을 클릭하여 AppBuilder 작업을 수행하십시오. 을(를) 내보내야 합니다 `verifySignature` 함수.
+그런 다음 아래에 제공된 JavaScript 코드([GitHub.com의 설명서](https://docs.github.com/en/webhooks/using-webhooks/validating-webhook-deliveries#javascript-example)에서 복사됨)를 AppBuilder 작업에 추가합니다. `verifySignature` 함수를 내보내야 합니다.
 
 ```javascript
 // src/dx-excshell-1/actions/generic/github-webhook-verification.js
@@ -124,9 +124,9 @@ module.exports = { verifySignature };
 
 ## AppBuilder 작업에서 확인 구현
 
-다음으로, 요청 헤더의 서명을 에서 생성한 서명과 비교하여 요청이 GitHub에서 오는지 확인합니다. `verifySignature` 함수.
+그런 다음 요청 헤더의 서명을 `verifySignature` 함수에서 생성된 서명과 비교하여 요청이 GitHub에서 오는지 확인합니다.
 
-AppBuilder 작업 `index.js`에 다음 코드를 추가합니다. `main` 함수:
+AppBuilder 작업의 `index.js`에서 `main` 함수에 다음 코드를 추가합니다.
 
 
 ```javascript
@@ -208,10 +208,10 @@ async function main(params) {
 
 ## GitHub에서 Webhook 구성
 
-GitHub.com으로 돌아가서 Webhook을 만들 때 GitHub.com에 동일한 암호 값을 제공합니다. 에 지정된 암호 값 사용 `.env` 파일 `GITHUB_SECRET` 키.
+GitHub.com으로 돌아가서 Webhook을 만들 때 GitHub.com에 동일한 암호 값을 제공합니다. `.env` 파일의 `GITHUB_SECRET` 키에 지정된 암호 값을 사용하십시오.
 
-GitHub.com에서 저장소 설정으로 이동하여 웹후크를 편집합니다. Webhook 설정에서 의 비밀 값을 제공합니다. `Secret` 필드. 클릭 __Webhook 업데이트__ 맨 아래에 변경 내용을 저장합니다.
+GitHub.com에서 저장소 설정으로 이동하여 웹후크를 편집합니다. Webhook 설정에서 `Secret` 필드에 비밀 값을 입력합니다. 하단의 __웹후크 업데이트__&#x200B;를 클릭하여 변경 내용을 저장합니다.
 
-![Github 웹후크 비밀](./assets/github-webhook-verification/github-webhook-settings.png)
+![Github 웹후크 암호](./assets/github-webhook-verification/github-webhook-settings.png)
 
-이러한 단계를 수행하면 App Builder 작업이 수신 webhook 요청이 실제로 GitHub.com webhook에서 왔는지를 안전하게 확인할 수 있습니다.
+이러한 단계를 수행하면 App Builder 작업에서 들어오는 webhook 요청이 실제로 GitHub.com webhook에서 왔는지를 안전하게 확인할 수 있습니다.

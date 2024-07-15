@@ -22,7 +22,7 @@ ht-degree: 0%
 이 맞춤형 프로세스 단계는 다른 xml 문서에서 노드를 추출하여 새 xml 문서를 작성하는 것입니다. 제출된 데이터를 xdp 템플릿과 병합하여 pdf를 생성하려면 이 옵션을 사용해야 합니다. 예를 들어 적응형 양식을 제출할 때 xdp 템플릿과 병합해야 하는 데이터는 데이터 요소 내에 있습니다. 이 경우 해당 데이터 요소를 추출하여 다른 xml 문서를 만들어야 합니다.
 
 다음 스크린샷은 사용자 지정 프로세스 단계에 전달하는 데 필요한 인수를 보여 줍니다
-![프로세스 단계](assets/create-xml-process-step.png)
+![process-step](assets/create-xml-process-step.png)
 다음은 매개변수입니다
 * Data.xml - 노드를 추출하려는 xml 파일
 * datatomerge.xml - 추출된 노드로 생성된 새 xml

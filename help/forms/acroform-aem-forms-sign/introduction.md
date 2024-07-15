@@ -31,14 +31,14 @@ ht-degree: 0%
 
 ### 시스템에서 이 기능을 사용하려면 다음 항목이 필요합니다
 
-* 를 사용하여 번들 다운로드 및 배포 [Felix 웹 콘솔](http://localhost:4502/system/console/bundles)
+* [Felix 웹 콘솔](http://localhost:4502/system/console/bundles)을 사용하여 번들 다운로드 및 배포
 * [문서 서비스 번들](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
 * [DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 * [AcroFormsToAEMFormsBundle](https://forms.enablementadobe.com/content/DemoServerBundles/AcroFormToAEMForm.core-1.0-SNAPSHOT.jar)
-* [이 패키지를 다운로드하여 AEM에 가져오기](assets/acro-form-aem-form.zip). 이 패키지에는 Acroform에서 XSD를 만들 수 있는 샘플 워크플로우 및 html 페이지가 포함되어 있습니다
-* 를 엽니다. [configMgr](http://localhost:4502/system/console/configMgr)
+* [이 패키지를 다운로드하여 AEM으로 가져오기](assets/acro-form-aem-form.zip). 이 패키지에는 Acroform에서 XSD를 만들 수 있는 샘플 워크플로우 및 html 페이지가 포함되어 있습니다
+* [configMgr](http://localhost:4502/system/console/configMgr) 열기
    * &#39;Apache Sling 서비스 사용자 매퍼 서비스&#39;를 검색한 다음 를 클릭하여 속성을 엽니다.
-   * 다음을 클릭합니다. `+` 아이콘(더하기): 다음 서비스 매핑 추가
+   * `+` 아이콘(더하기)을 클릭하여 다음 서비스 매핑을 추가합니다
       * `DevelopingWithServiceUser.core:getresourceresolver=data`
       * `DevelopingWithServiceUser.core:getformsresourceresolver=fd-service`
    * &#39;저장&#39; 클릭

@@ -1,6 +1,6 @@
 ---
 title: AEM 콘텐츠 조각 확장
-description: AEM as a Cloud Service 콘텐츠 조각 확장을 빌드하고 배포하는 방법에 대해 알아봅니다.
+description: AEM as a Cloud Service 콘텐츠 조각 확장 기능을 빌드하고 배포하는 방법에 대해 알아봅니다.
 feature: Developer Tools
 version: Cloud Service
 topic: Development
@@ -29,7 +29,7 @@ AEM(Adobe Experience Manager)의 콘텐츠 조각 콘솔 은 콘텐츠 조각을
 
 ![콘텐츠 조각 콘솔](./assets/overview/cfc.png)
 
-[AEM 콘텐츠 조각 콘솔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html) 는 콘텐츠 조각을 나열하고 관리하기 위한 확장 가능한 UI입니다. [AEM 콘텐츠 조각 콘솔 확장이 생성됨](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/code-generation) 사용 `@adobe/aem-cf-admin-ui-ext-tpl` App Builder 템플릿입니다.
+[AEM 콘텐츠 조각 콘솔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html)은(는) 콘텐츠 조각을 나열하고 관리하기 위한 확장 가능한 UI입니다. `@adobe/aem-cf-admin-ui-ext-tpl` App Builder 템플릿을 사용하여 [AEM 콘텐츠 조각 콘솔 확장이 만들어집니다](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/code-generation).
 
 다음 콘텐츠 조각 콘솔 확장 지점을 사용할 수 있습니다.
 
@@ -102,7 +102,7 @@ AEM(Adobe Experience Manager)의 콘텐츠 조각 편집기는 사용자가 콘�
 
 ![콘텐츠 조각 편집기](./assets/overview/cfe.png)
 
-AEM Content Fragments Editor는 콘텐츠 조각을 편집하기 위한 확장 가능한 UI입니다. [AEM 콘텐츠 조각 편집기 확장이 생성됨](https://developer.adobe.com/uix/docs/services/aem-cf-editor/code-generation/) 사용 `@adobe/aem-cf-editor-ui-ext-tpl` App Builder 템플릿입니다.
+AEM Content Fragments Editor는 콘텐츠 조각을 편집하기 위한 확장 가능한 UI입니다. `@adobe/aem-cf-editor-ui-ext-tpl` App Builder 템플릿을 사용하여 [AEM 콘텐츠 조각 편집기 확장이 만들어집니다](https://developer.adobe.com/uix/docs/services/aem-cf-editor/code-generation/).
 
 다음 콘텐츠 조각 편집기 확장 지점을 사용할 수 있습니다.
 

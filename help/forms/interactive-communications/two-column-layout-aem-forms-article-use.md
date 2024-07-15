@@ -21,16 +21,16 @@ ht-degree: 0%
 
 이 짧은 문서에서는 인쇄 채널에서 2열 레이아웃을 만드는 데 필요한 단계를 강조 표시합니다. 사용 사례는 페이지 1이 2열 레이아웃이고 페이지 2가 표준 1열 레이아웃인 2개 페이지 문서를 생성하는 것입니다.
 
-다음은 AEM Forms Designer를 사용하여 2개 열 레이아웃을 만드는 것과 관련된 높은 수준의 단계입니다.
+다음은 AEM Forms Designer을 사용하여 2개 열 레이아웃을 만드는 것과 관련된 높은 수준의 단계입니다.
 
 * 페이지 1 마스터 페이지에서 2개의 콘텐츠 영역 만들기
 * 두 컨텐츠 영역의 이름을 &quot;leftcolumn&quot; 및 &quot;rightcolumn&quot;으로 지정합니다.
 * 하나의 콘텐츠 영역으로 두 번째 마스터 페이지 만들기(기본값)
 * 페이지 매김 탭(제목 없는 하위 양식)(1페이지)과 (제목 없는 하위 양식)(2페이지)을 선택하고 아래 스크린샷과 같이 속성을 설정합니다.
 
-![page1](assets/untitledsubform_paginationproperties.gif)
+![페이지1](assets/untitledsubform_paginationproperties.gif)
 
-![page2](assets/untitled_subformpage2.gif)
+![페이지2](assets/untitled_subformpage2.gif)
 
 페이지 매김 속성이 설정되면 (제목 없는 하위 양식) (1페이지)에서 하위 양식 또는 대상 영역을 추가할 수 있습니다.
 

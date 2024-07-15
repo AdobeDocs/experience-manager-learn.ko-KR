@@ -30,9 +30,9 @@ AEM Forms에서는 이러한 다양한 사용자 정의 함수를 기본적으�
 * 새로 만든 clientlibs 폴더를 선택하고 스크린샷에 표시된 대로 allowProxy 및 categories 속성을 추가한 다음 변경 사항을 저장합니다.
 
 ![client-lib](assets/custom-functions.png)
-* 라는 폴더 만들기 **js** 다음 아래에 **clientlibs** 폴더
-* 라는 파일 만들기 **functions.js** 다음 아래에 **js** 폴더
-* 라는 파일 만들기 **js.txt** 다음 아래에 **clientlibs** 폴더를 삭제합니다. 변경 사항을 저장합니다.
+* **clientlibs** 폴더에 **js** 폴더를 만듭니다.
+* **js** 폴더에 **functions.js** 파일을 만듭니다.
+* **clientlibs** 폴더 아래에 **js.txt**&#x200B;라는 파일을 만듭니다. 변경 사항을 저장합니다.
 * 폴더 구조는 아래 스크린샷과 같아야 합니다.
 
 ![규칙 편집기](assets/folder-structure.png)
@@ -72,10 +72,10 @@ function convertUTC(strUTCString)
 }
 ```
 
-다음을 수행하세요. [jsdoc 참조](https://jsdoc.app/index.html)javascript 함수 주석 추가에 대한 자세한 내용은 을 참조하십시오.
+Javascript 함수에 주석을 추가하는 방법에 대한 자세한 내용은 [jsdoc를 참조](https://jsdoc.app/index.html)하십시오.
 위의 코드에는 두 가지 함수가 있습니다.
-**getCountyNamesList** - 문자열의 배열을 반환합니다.
-**전환 UTC** - UTC 타임스탬프를 로컬 시간대로 변환
+**getCountyNamesList** - 문자열 배열을 반환합니다.
+**convertUTC** - UTC 타임스탬프를 로컬 표준 시간대로 변환합니다.
 
 js.txt를 열고 다음 코드를 붙여넣고 변경 사항을 저장합니다.
 
@@ -87,7 +87,7 @@ functions.js
 #base=js 행은 JavaScript 파일이 있는 디렉토리를 지정합니다.
 아래 줄은 기본 위치를 기준으로 JavaScript 파일의 위치를 나타냅니다.
 
-사용자 지정 함수를 만드는 데 문제가 있는 경우 언제든지 다음 작업을 수행할 수 있습니다. [이 패키지 다운로드 및 설치](assets/custom-functions.zip) AEM 인스턴스에서 다음을 수행합니다.
+사용자 지정 함수를 만드는 데 문제가 있으면 언제든지 AEM 인스턴스에서 [이 패키지를 다운로드하여 설치](assets/custom-functions.zip)할 수 있습니다.
 
 ## 사용자 정의 함수 사용
 

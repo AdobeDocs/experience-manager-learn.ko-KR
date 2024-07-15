@@ -21,6 +21,6 @@ ht-degree: 2%
 
 # AEM 보일러 플레이트
 
-다음을 사용하여 코드 Git 리포지토리 설정 [AEM 보일러플레이트 템플릿](https://github.com/adobe/aem-boilerplate) Edge Delivery Services.
+Edge Delivery Services을 위한 [AEM 상용구 템플릿](https://github.com/adobe/aem-boilerplate)을(를) 사용하여 코드 Git 저장소를 설정하십시오.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425713/?learn=on)

@@ -30,11 +30,11 @@ ht-degree: 1%
 
 * 양식 추가 기능 패키지가 설치된 AEM의 작업 인스턴스
 
-* **localhost:4502에서 AEM Forms 버전 6.4 이상을 실행 중이라고 가정합니다.**
+* **localhost:4502.**&#x200B;에서 AEM Forms 버전 6.4 이상을 실행 중이라고 가정합니다.
 
-* [client-libs-and-logo 다운로드](assets/client-libs-and-logo.zip) 및 [getting-started-fragment](assets/getting-started-fragment.zip) 하드 드라이브에
+* [client-libs-and-logo를 다운로드](assets/client-libs-and-logo.zip) 및 [시작 조각](assets/getting-started-fragment.zip)을 하드 드라이브에 다운로드합니다.
 
-* 다음을 사용하여 zip 파일을 AEM에 가져오기 [패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp)
+* [패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp)를 사용하여 zip 파일을 AEM으로 가져오기
 
 ## 다음 단계
 

@@ -21,7 +21,7 @@ ht-degree: 0%
 Reader 확장을 사용하면 PDF 문서의 사용 권한을 조작할 수 있습니다. 사용 권한은 Acrobat에서 사용할 수 있지만 Adobe Reader에서는 사용할 수 없는 기능과 관련이 있습니다. Reader 확장에서 제어하는 기능에는 문서에 주석을 추가하고, 양식을 작성하고, 문서를 저장하는 기능이 포함되어 있습니다. 사용 권한이 추가된 PDF 문서를 권한 사용 문서라고 합니다. Adobe Reader에서 권한이 활성화된 PDF 문서를 여는 사용자는 해당 문서에 대해 활성화된 작업을 수행할 수 있습니다.
 
 이 사용 사례를 달성하려면 다음을 수행해야 합니다.
-* [Reader 확장 인증서 추가](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) 끝 `fd-service` 사용자.
+* `fd-service`명의 사용자에게 [Reader 확장 인증서를 추가](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html)합니다.
 
 ## 사용자 지정 OSGi 서비스 만들기
 

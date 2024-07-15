@@ -23,7 +23,7 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/27769?quality=12&learn=on)
 
-표는 데이터를 표 형식으로 표시하는 데 사용됩니다. 테이블의 행은 데이터 소스에서 반환한 데이터에 따라 증가하거나 축소해야 합니다. 인쇄 채널 문서의 표를 사용하려면 AEM Forms Designer를 사용하여 레이아웃 파일(xdp 파일)을 만들어야 합니다. 이 레이아웃 파일에서 필요한 열 수가 있는 표를 추가합니다. 요구 사항에 따라 열 필드 개체 유형이 TextField 또는 Numeric Field인지 확인합니다. 각 열에 대해 필드는 데이터 바인딩이 이름 사용으로 설정되어 있는지 확인합니다.
+표는 데이터를 표 형식으로 표시하는 데 사용됩니다. 테이블의 행은 데이터 소스에서 반환한 데이터에 따라 증가하거나 축소해야 합니다. 인쇄 채널 문서의 표를 사용하려면 AEM Forms Designer을 사용하여 레이아웃 파일(xdp 파일)을 만들어야 합니다. 이 레이아웃 파일에서 필요한 열 수가 있는 표를 추가합니다. 요구 사항에 따라 열 필드 개체 유형이 TextField 또는 Numeric Field인지 확인합니다. 각 열에 대해 필드는 데이터 바인딩이 이름 사용으로 설정되어 있는지 확인합니다.
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ ht-degree: 0%
    * 대화형 통신 문서
    * sampleretirementaccountdata.json
 
-* 에서 대화형 통신 문서 열기 [편집 모드](http://localhost:4502/editor.html/content/forms/af/401kstatement/tablesinprintdocument/channels/print.html).
+* 대화형 통신 문서를 [편집 모드](http://localhost:4502/editor.html/content/forms/af/401kstatement/tablesinprintdocument/channels/print.html)에서 엽니다.
 
 * 기여도 섹션에 TableDemo 레이아웃 단편을 추가합니다.
 * 비디오에 표시된 대로 테이블 셀을 적절한 양식 데이터 모델 요소에 바인딩합니다

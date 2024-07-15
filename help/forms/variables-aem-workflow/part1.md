@@ -35,9 +35,9 @@ XML 변수를 사용하여 적응형 양식을 미리 채우거나 적응형 양
 
 >[!NOTE]
 >
->**AEM Forms 6.5.0** - 워크플로우 모델에서 제출된 데이터를 캡처하기 위해 유형 XML의 변수를 만들 때 XSD를 변수와 연결하지 마십시오. 이는 XSD 기반 적응형 양식을 제출할 때 제출된 데이터가 XSD를 준수하지 않기 때문입니다. XSD 컴플레인 데이터는 /afData/afBoundData/ 요소에 포함됩니다.
+>**AEM Forms 6.5.0** - 워크플로 모델에서 제출된 데이터를 캡처하기 위해 XML 유형의 변수를 만드는 경우 XSD를 변수와 연결하지 마십시오. 이는 XSD 기반 적응형 양식을 제출할 때 제출된 데이터가 XSD를 준수하지 않기 때문입니다. XSD 컴플레인 데이터는 /afData/afBoundData/ 요소에 포함됩니다.
 >
->**AEM Forms 6.5.1** - XSD를 XML 변수와 연결하면 스키마 요소를 검색하여 변수 매핑을 수행할 수 있습니다. 스키마 요소에 바인딩되지 않은 양식 데이터에는 액세스할 수 없습니다. 스키마 요소에 바인딩된 데이터와 바인딩되지 않은 데이터에 액세스하는 경우 워크플로우에서 XML 변수에 스키마를 바인딩하지 마십시오.필요한 데이터에 액세스하려면 적절한 XPath 표현식을 사용해야 합니다
+>**AEM Forms 6.5.1** - XSD를 XML 변수와 연결하면 스키마 요소를 탐색하여 변수 매핑을 수행할 수 있습니다. 스키마 요소에 바인딩되지 않은 양식 데이터에는 액세스할 수 없습니다. 스키마 요소에 바인딩된 데이터와 바인딩되지 않은 데이터에 액세스하는 경우 워크플로우에서 XML 변수에 스키마를 바인딩하지 마십시오.필요한 데이터에 액세스하려면 적절한 XPath 표현식을 사용해야 합니다
 
 ## XML 변수 만들기
 
@@ -56,7 +56,7 @@ XML 변수를 사용하여 적응형 양식을 미리 채우거나 적응형 양
 시스템에서 에셋을 작업하려면 다음 단계를 따르십시오.
 
 * [패키지 관리자를 사용하여 자산을 AEM에 다운로드하고 가져옵니다.](assets/xmlandstringvariable.zip)
-* [워크플로우 모델 살펴보기](http://localhost:4502/editor.html/conf/global/settings/workflow/models/vacationrequest.html) 워크플로우에 사용되는 변수를 이해하려면
-* [이메일 서비스 구성](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/notification.html#ConfiguringtheMailService)
+* [워크플로 모델을 탐색합니다](http://localhost:4502/editor.html/conf/global/settings/workflow/models/vacationrequest.html) 워크플로에서 사용되는 변수를 이해합니다.
+* [전자 메일 서비스 구성](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/notification.html#ConfiguringtheMailService)
 * [적응형 양식 열기](http://localhost:4502/content/dam/formsanddocuments/applicationfortimeoff/jcr:content?wcmmode=disabled)
 * 세부사항을 입력하고 양식을 제출하세요.

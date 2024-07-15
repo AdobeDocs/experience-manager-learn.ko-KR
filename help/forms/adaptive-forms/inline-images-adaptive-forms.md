@@ -65,7 +65,7 @@ function consumeImage (file) {
 
 ### 서버에 배포
 
-* 다운로드 및 설치 [클라이언트 라이브러리](assets/inline-image-client-library.zip) AEM 패키지 관리자를 사용하여 AEM 인스턴스에서 을 엽니다.
-* 다운로드 및 설치 [샘플 양식](assets/inline-image-af.zip) AEM 패키지 관리자를 사용하여 AEM 인스턴스에서 을 확인할 수 있습니다.
-* 브라우저를 가리켜서 [인라인 이미지 추가](http://localhost:4502/content/dam/formsanddocuments/addinlineimage/jcr:content?wcmmode=disabled)
+* AEM 패키지 관리자를 사용하여 AEM 인스턴스에 [클라이언트 라이브러리](assets/inline-image-client-library.zip)를 다운로드하여 설치하십시오.
+* AEM 패키지 관리자를 사용하여 AEM 인스턴스에 [샘플 양식](assets/inline-image-af.zip)을(를) 다운로드하여 설치하십시오.
+* 브라우저를 [인라인 이미지 추가](http://localhost:4502/content/dam/formsanddocuments/addinlineimage/jcr:content?wcmmode=disabled)(으)로 지정
 * 이미지를 추가하려면 &quot;사진 첨부&quot; 단추를 클릭하십시오.

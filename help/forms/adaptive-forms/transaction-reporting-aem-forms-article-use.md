@@ -37,7 +37,7 @@ ht-degree: 0%
 
 도구 선택 | Forms | 거래 보고서 보기
 
-또는 다음을 눌러 트랜잭션 보고서를 봅니다. [여기](http://localhost:4502/mnt/overlay/fd/transaction/gui/content/report.html)
+또는 [여기](http://localhost:4502/mnt/overlay/fd/transaction/gui/content/report.html)를 클릭하여 트랜잭션 보고서를 봅니다.
 
 ![트랜잭션 보고](assets/transactionreporting.gif)
 
@@ -49,4 +49,4 @@ PDF 양식 제출, 에이전트 UI를 사용하여 대화형 통신 미리 보�
 
 작성자 인스턴스에서 트랜잭션 보고서를 보는 경우 모든 게시 인스턴스에 역방향 복제가 구성되어 있는지 확인합니다.
 
-거래 보고에 대해 자세히 알아보려면 [여기를 클릭하십시오.](https://helpx.adobe.com/experience-manager/6-4/forms/using/transaction-reports-overview.html)
+트랜잭션 보고에 대한 자세한 내용을 보려면 [여기를 클릭하세요](https://helpx.adobe.com/experience-manager/6-4/forms/using/transaction-reports-overview.html)

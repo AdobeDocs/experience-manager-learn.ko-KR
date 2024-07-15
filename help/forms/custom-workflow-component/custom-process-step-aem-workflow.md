@@ -24,12 +24,13 @@ Java 클래스를 작성하고 클래스를 OSGi 번들로 배포하려면 다�
 
 ## Maven 프로젝트 만들기
 
-첫 번째 단계는 적절한 Adobe Maven Archetype 을 사용하여 Maven 프로젝트를 만드는 것입니다. 자세한 단계는 다음과 같습니다 [기사](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html). Maven 프로젝트를 eclipse로 가져오면 프로세스 단계에서 사용할 수 있는 첫 번째 OSGi 구성 요소 작성을 시작할 수 있습니다.
+첫 번째 단계는 적절한 Adobe Maven Archetype 을 사용하여 Maven 프로젝트를 만드는 것입니다. 자세한 단계는 이 [문서](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)에 나와 있습니다. Maven 프로젝트를 eclipse로 가져오면 프로세스 단계에서 사용할 수 있는 첫 번째 OSGi 구성 요소 작성을 시작할 수 있습니다.
 
 
 ### WorkflowProcess를 구현하는 클래스 만들기
 
-eclipse IDE에서 Maven 프로젝트를 엽니다. 확장 **projectname** > **코어** 폴더를 삭제합니다. src/main/java 폴더를 확장합니다. &quot;core&quot;로 끝나는 패키지가 표시됩니다. 이 패키지에서 WorkflowProcess를 구현하는 Java 클래스를 만듭니다. 실행 메서드를 재정의해야 합니다. execute 메서드의 시그니처는 다음과 같습니다. public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments)는 WorkflowException을 throw합니다
+eclipse IDE에서 Maven 프로젝트를 엽니다. **projectname** > **core** 폴더를 확장합니다. src/main/java 폴더를 확장합니다. &quot;core&quot;로 끝나는 패키지가 표시됩니다. 이 패키지에서 WorkflowProcess를 구현하는 Java 클래스를 만듭니다. 실행 메서드를 재정의해야 합니다. execute 메서드의 시그니처는 다음과 같습니다
+public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments)에서 WorkflowException이 발생합니다.
 
 이 자습서에서는 적응형 양식에 추가된 첨부 파일을 AEM 워크플로의 일부로 파일 시스템에 작성할 예정입니다.
 
@@ -123,7 +124,7 @@ public class WriteFormAttachmentsToFileSystem implements WorkflowProcess {
 
 이 두 값은 워크플로우 구성 요소의 대화 상자를 사용하여 프로세스 인수로 전달됩니다
 
-![프로세스 단계](assets/custom-workflow-component.png)
+![ProcessStep](assets/custom-workflow-component.png)
 
 QueryBuilder 서비스는 attachmentsPath 폴더 아래에서 nt:file 유형의 노드를 쿼리하는 데 사용됩니다. 나머지 코드는 검색 결과를 반복하여 Document 객체를 만들고 파일 시스템에 저장합니다
 
@@ -143,9 +144,9 @@ QueryBuilder 서비스는 attachmentsPath 폴더 아래에서 nt:file 유형의 
 #### 빌드 및 배포
 
 [여기에 설명된 대로 번들을 빌드합니다](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)
-[번들이 배포되어 있고 활성 상태인지 확인합니다.](http://localhost:4502/system/console/bundles)
+[번들이 배포되어 있고 활성 상태인지 확인](http://localhost:4502/system/console/bundles)
 
 ## 다음 단계
 
-사용자 만들기 [사용자 지정 워크플로 구성 요소](./custom-workflow-component.md)
+[사용자 지정 워크플로 구성 요소 만들기](./custom-workflow-component.md)
 

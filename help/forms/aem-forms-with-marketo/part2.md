@@ -131,7 +131,7 @@ MarketoConfigurationService config;
 
 아래 스크린샷은 설정해야 하는 구성 속성을 보여 줍니다. 이러한 구성 속성은 access_token을 가져오기 위해 위에 나열된 코드에서 읽습니다.
 
-![config](assets/configuration-settings.png)
+![구성](assets/configuration-settings.png)
 
 ### 구성
 
@@ -202,7 +202,7 @@ public class MarketoConfigurationService {
 ```
 
 1. 번들을 빌드하고 AEM 서버에 배포합니다.
-1. [브라우저를 configMgr으로 지정](http://localhost:4502/system/console/configMgr) 및에서 &quot;Marketo 자격 증명 서비스 구성&quot;을 검색합니다.
+1. [브라우저를 configMgr](http://localhost:4502/system/console/configMgr)(으)로 가리키고 &quot;Marketo 자격 증명 서비스 구성&quot;을 검색합니다.
 1. Marketo 인스턴스와 관련된 적절한 속성을 지정합니다
 
 ## 다음 단계

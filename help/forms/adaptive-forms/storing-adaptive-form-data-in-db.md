@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## JDBC 연결 풀
 
-* 다음으로 이동 [ConfigMgr](http://localhost:4502/system/console/configMgr)
+* [ConfigMgr](http://localhost:4502/system/console/configMgr)(으)로 이동
 
    * &quot;JDBC 연결 풀&quot;을 검색합니다. 새 Day Commons JDBC 연결 풀을 만듭니다. 데이터베이스별 설정을 지정합니다.
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 ## 데이터베이스 세부 정보 지정
 
-* 검색 대상&#x200B;**데이터베이스 세부 정보 지정**&quot;
+* &quot;**데이터베이스 세부 정보 지정**&quot; 검색
 * 데이터베이스와 관련된 속성을 지정합니다.
    * DataSourceName:이전에 구성한 데이터 소스의 이름입니다.
    * TableName - AF 데이터를 저장할 테이블의 이름
@@ -213,9 +213,9 @@ public class InsertAfData implements WorkflowProcess {
 * configMgr을 사용하여 데이터베이스 세부 정보 지정
 * [Zip 파일을 다운로드하고 하드 드라이브에 내용을 추출하십시오.](assets/article-assets.zip)
 
-   * 다음을 사용하여 jar 파일 배포 [AEM 웹 콘솔](http://localhost:4502/system/console/bundles). 이 jar 파일에는 양식 데이터를 데이터베이스에 저장하는 코드가 포함되어 있습니다.
+   * [AEM 웹 콘솔](http://localhost:4502/system/console/bundles)을 사용하여 jar 파일을 배포합니다. 이 jar 파일에는 양식 데이터를 데이터베이스에 저장하는 코드가 포함되어 있습니다.
 
-   * 두 zip 파일을 로 가져오기 [패키지 관리자를 사용한 AEM](http://localhost:4502/crx/packmgr/index.jsp). 이렇게 하면 다음 항목이 제공됩니다. [샘플 워크플로우](http://localhost:4502/editor.html/conf/global/settings/workflow/models/storeformdata.html) 및 [샘플 적응형 양식](http://localhost:4502/editor.html/content/forms/af/addformdataindb.html) 그러면 양식 제출 시 워크플로우가 트리거됩니다. 워크플로우 단계에서 프로세스 인수를 확인합니다. 이러한 인수는 양식 이름과 적응형 양식 데이터를 포함할 데이터 파일의 이름을 나타냅니다. 데이터 파일은 crx 저장소의 페이로드 폴더에 저장됩니다. 다음 방법에 주목하십시오. [적응형 양식](http://localhost:4502/editor.html/content/forms/af/addformdataindb.html) 제출 및 데이터 파일 구성(data.xml) 시 AEM 워크플로를 트리거하도록 구성되어 있습니다.
+   * 패키지 관리자를 사용하여 [AEM](http://localhost:4502/crx/packmgr/index.jsp)에 두 zip 파일을 가져옵니다. 이렇게 하면 양식 제출 시 워크플로우를 트리거하는 [샘플 워크플로우](http://localhost:4502/editor.html/conf/global/settings/workflow/models/storeformdata.html) 및 [샘플 적응형 양식](http://localhost:4502/editor.html/content/forms/af/addformdataindb.html)이 제공됩니다. 워크플로우 단계에서 프로세스 인수를 확인합니다. 이러한 인수는 양식 이름과 적응형 양식 데이터를 포함할 데이터 파일의 이름을 나타냅니다. 데이터 파일은 crx 저장소의 페이로드 폴더에 저장됩니다. 제출 시 AEM 워크플로와 데이터 파일 구성(data.xml)을 트리거하도록 [적응형 양식](http://localhost:4502/editor.html/content/forms/af/addformdataindb.html)을(를) 구성하는 방법에 주목합니다.
 
    * 양식을 미리 보고 입력한 후 제출합니다. 데이터베이스에 새 행이 만들어집니다.
 

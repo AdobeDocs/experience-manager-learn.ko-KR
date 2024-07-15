@@ -1,6 +1,6 @@
 ---
-title: AEMas a Cloud Service 란?
-description: AEM as a Cloud Service 및 Edge Delivery Services이 무엇인지, 그리고 제공되는 가치를 살펴봅니다.
+title: AEM as a Cloud Service란?
+description: AEM as a Cloud Service 및 Edge Delivery Services이 무엇인지, 그리고 이들이 제공하는 가치를 살펴봅니다.
 role: Architect, Developer
 level: Beginner
 type: Tutorial
@@ -18,10 +18,10 @@ ht-degree: 0%
 
 ---
 
-# AEMas a Cloud Service 란?
+# AEM as a Cloud Service란?
 
 {{edge-delivery-services}}
 
-AEM as a Cloud Service 및 Edge Delivery Services이 무엇인지, 그리고 제공되는 가치를 살펴봅니다.
+AEM as a Cloud Service 및 Edge Delivery Services이 무엇인지, 그리고 이들이 제공하는 가치를 살펴봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330546?quality=12&learn=on)

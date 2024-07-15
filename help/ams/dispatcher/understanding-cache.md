@@ -1,6 +1,6 @@
 ---
 title: Dispatcher 캐싱 이해
-description: Dispatcher 모듈이 캐시를 작동하는 방식을 이해합니다.
+description: Dispatcher 모듈이 캐시에서 작동하는 방식을 이해합니다.
 topic: Administration, Performance
 version: 6.5
 role: Admin
@@ -33,7 +33,7 @@ ht-degree: 0%
 - 게시자
    - `/mnt/var/www/html`
 
-각 요청이 Dispatcher를 통과할 때 요청은 구성된 규칙을 따라 적격 항목의 응답에 로컬로 캐시된 버전을 유지합니다
+각 요청이 Dispatcher을 통과할 때 요청은 구성된 규칙을 따라 적격 항목의 응답에 로컬로 캐시된 버전을 유지합니다
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 ## 구성 파일
 
-Dispatcher는에서 캐시 가능한 대상을 제어합니다. `/cache {` 모든 팜 파일의 섹션에 있는 섹션을 참조하십시오. 
+Dispatcher은 팜 파일의 `/cache {` 섹션에서 캐시 가능한 항목을 제어합니다. 
 AMS 기본 구성 팜에서는 아래와 같이 의 포함을 찾을 수 있습니다.
 
 
@@ -55,7 +55,7 @@ AMS 기본 구성 팜에서는 아래와 같이 의 포함을 찾을 수 있습�
 ```
 
 
-캐시할 내용 또는 캐시하지 않을 내용에 대한 규칙을 생성할 때 설명서를 참조하십시오 [여기](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache)
+캐시할 내용에 대한 규칙을 만들 때 [여기](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache) 설명서를 참조하십시오.
 
 
 ## 캐싱 작성자
@@ -65,7 +65,7 @@ AMS 기본 구성 팜에서는 아래와 같이 의 포함을 찾을 수 있습�
 
 제대로 캐시하기 위해 작성자 팜을 구성하는 전략에 대해 살펴보겠습니다.
 
-기본 작성자입니다. `/cache {` 작성자 팜 파일의 섹션:
+다음은 작성자 팜 파일의 기본 작성자 `/cache {` 섹션입니다.
 
 
 ```
@@ -92,13 +92,13 @@ AMS 기본 구성 팜에서는 아래와 같이 의 포함을 찾을 수 있습�
 }
 ```
 
-여기서 주목할 중요한 사항은 `/docroot` 작성자의 캐시 디렉터리로 설정됩니다.
+여기서 주의해야 할 중요한 점은 `/docroot`이(가) 작성자를 위한 캐시 디렉터리로 설정되어 있다는 것입니다.
 
 >[!NOTE]
 >
->다음을 확인하십시오. `DocumentRoot` 작성자의 `.vhost` 파일이 팜과 일치함 `/docroot` 매개 변수
+>작성자의 `.vhost` 파일에 있는 `DocumentRoot`이(가) 팜 `/docroot` 매개 변수와 일치하는지 확인하십시오.
 
-캐시 규칙에는 파일이 포함됩니다 `/etc/httpd/conf.dispatcher.d/cache/ams_author_cache.any` 에는 다음 규칙이 포함됩니다.
+캐시 규칙 include 문에 다음 규칙이 포함된 `/etc/httpd/conf.dispatcher.d/cache/ams_author_cache.any` 파일이 포함되어 있습니다.
 
 ```
 /0000 { 
@@ -132,15 +132,15 @@ AMS 기본 구성 팜에서는 아래와 같이 의 포함을 찾을 수 있습�
 ```
 
 작성자 시나리오에서 콘텐츠는 항상 그리고 의도적으로 변경됩니다. 자주 변경되지 않는 항목만 캐시합니다.
-캐시할 규칙이 있습니다. `/libs` 기본 AEM 설치의 일부이며 서비스 팩, 누적 수정 팩, 업그레이드 또는 핫픽스를 설치하기 전까지 변경됩니다. 따라서 이러한 요소를 캐시하는 것은 매우 적절하며, 실제로 사이트를 사용하는 최종 사용자의 작성자 경험의 큰 이점이 있습니다.
+`/libs`은(는) 기본 AEM 설치의 일부이며 서비스 팩, 누적 수정 팩, 업그레이드 또는 핫픽스를 설치하기 전까지 변경될 수 있으므로 캐시할 규칙이 있습니다. 따라서 이러한 요소를 캐시하는 것은 매우 적절하며, 실제로 사이트를 사용하는 최종 사용자의 작성자 경험의 큰 이점이 있습니다.
 
 >[!NOTE]
 >
->이러한 규칙은 캐시됩니다 <b>`/apps`</b> 사용자 정의 애플리케이션 코드가 있는 위치입니다. 이 인스턴스에서 코드를 개발 중인 경우 파일을 저장할 때 매우 혼란스러우며 캐시된 복사본을 제공하기 때문에 UI에 가 반영되었는지 표시되지 않습니다. 여기서의 의도는 AEM에 코드를 배포하는 경우 너무 자주 배포되지 않으며 배포 단계의 일부가 작성자 캐시를 지우는 것입니다. 캐시 가능한 코드를 최종 사용자가 더 빨리 실행할 수 있다는 이점이 큽니다.
+>이러한 규칙은 사용자 지정 응용 프로그램 코드가 있는 <b>`/apps`</b>도 캐시합니다. 이 인스턴스에서 코드를 개발 중인 경우 파일을 저장할 때 매우 혼란스러우며 캐시된 복사본을 제공하기 때문에 UI에 가 반영되었는지 표시되지 않습니다. 여기서의 의도는 AEM에 코드를 배포하는 경우 너무 자주 배포되지 않으며 배포 단계의 일부가 작성자 캐시를 지우는 것입니다. 캐시 가능한 코드를 최종 사용자가 더 빨리 실행할 수 있다는 이점이 큽니다.
 
 ## ServeOnStale(예: Stale/SOS에 제공)
 
-이는 Dispatcher 기능의 보석 중 하나입니다. 게시자가 로드 중이거나 응답하지 않으면 일반적으로 502 또는 503 http 응답 코드가 발생합니다. 이 경우 이 기능이 활성화되면 Dispatcher는 새 복사본이 아니더라도 최대한 노력하여 캐시에 있는 콘텐츠를 계속 제공하도록 지침을 받게 됩니다. 기능을 제공하지 않는 오류 메시지를 표시하는 것보다 기능이 있는 경우 제공하는 것이 좋습니다.
+이것은 Dispatcher 기능의 보석 중 하나입니다. 게시자가 로드 중이거나 응답하지 않으면 일반적으로 502 또는 503 http 응답 코드가 발생합니다. 이 경우 이 기능이 활성화되면 Dispatcher은 새 복사본이 아니더라도 캐시에서 콘텐츠가 여전히 최선의 노력으로 제공되는 지침을 받게 됩니다. 기능을 제공하지 않는 오류 메시지를 표시하는 것보다 기능이 있는 경우 제공하는 것이 좋습니다.
 
 >[!NOTE]
 >
@@ -157,21 +157,21 @@ AMS 기본 구성 팜에서는 아래와 같이 의 포함을 찾을 수 있습�
 
 >[!NOTE]
 >
->Dispatcher 모듈의 일반적인 동작 중 하나는 요청에 URI(일반적으로 다음과 같이 표시됨)에 쿼리 매개 변수가 있는 경우입니다 `/content/page.html?myquery=value`) 파일 캐싱을 건너뛰고 AEM 인스턴스로 바로 이동합니다. 이 요청을 동적 페이지로 간주하므로 캐시해서는 안 됩니다. 이로 인해 캐시 효율성에 좋지 않은 영향을 미칠 수 있습니다.
+>Dispatcher 모듈의 일반적인 동작 중 하나는 요청에 URI(일반적으로 `/content/page.html?myquery=value`과(와) 같이 표시됨)에 쿼리 매개 변수가 있는 경우 파일 캐싱을 건너뛰고 AEM 인스턴스로 바로 이동한다는 것입니다. 이 요청을 동적 페이지로 간주하므로 캐시해서는 안 됩니다. 이로 인해 캐시 효율성에 좋지 않은 영향을 미칠 수 있습니다.
 
-이 항목 보기 [기사](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-its-ignoreurlparams-rules-configured-in-an-allow-list-manner) 쿼리 매개 변수가 사이트 성능에 미치는 영향을 보여 줍니다.
+쿼리 매개 변수가 사이트 성능에 미치는 영향을 보여 주는 이 [article](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-its-ignoreurlparams-rules-configured-in-an-allow-list-manner)을(를) 참조하십시오.
 
-기본적으로 `ignoreUrlParams` 허용할 규칙 `*`.  즉, 모든 쿼리 매개 변수는 무시되며 사용된 매개 변수에 관계없이 모든 페이지를 캐시할 수 있습니다.
+기본적으로 `*`을(를) 허용하도록 `ignoreUrlParams` 규칙을 설정합니다.  즉, 모든 쿼리 매개 변수는 무시되며 사용된 매개 변수에 관계없이 모든 페이지를 캐시할 수 있습니다.
 
 다음은 누군가가 URI의 인수 참조를 사용하여 그 사람이 어디에서 왔는지를 아는 소셜 미디어 딥링크 참조 메커니즘을 구축한 예입니다.
 
-*무시 가능한 예:*
+*무시할 수 있는 예:*
 
 - https://www.we-retail.com/home.html?reference=android
 - https://www.we-retail.com/home.html?reference=facebook
 
 페이지는 100% 캐시할 수 있지만 인수가 있으므로 캐시하지 않습니다. 
-구성 `ignoreUrlParams` as a 허용 목록은 이 문제를 해결하는 데 도움이 됩니다.
+`ignoreUrlParams`을(를) 허용 목록으로 구성하면 이 문제를 해결하는 데 도움이 됩니다.
 
 ```
 /cache { 
@@ -180,7 +180,7 @@ AMS 기본 구성 팜에서는 아래와 같이 의 포함을 찾을 수 있습�
     }
 ```
 
-이제 Dispatcher가 요청을 볼 때 요청에 가 있다는 사실을 무시합니다. `query` 매개 변수 `?` 페이지를 참조하고 계속 캐시
+이제 Dispatcher에서 요청을 볼 때 요청에 `?` 참조의 `query` 매개 변수가 있다는 사실을 무시하고 페이지를 캐시합니다
 
 <b>동적 예:</b>
 
@@ -229,10 +229,10 @@ AMS 기본 구성 팜에서는 아래와 같이 의 포함을 찾을 수 있습�
 </html>
 ```
 
-다음을 방문했다면 `/search.html?q=fruit` 그런 다음 fruit를 표시하는 결과와 함께 html을 캐시합니다.
+먼저 `/search.html?q=fruit`을(를) 방문한 경우 HTML을 캐시하고 결과를 표시합니다.
 
-그리고 다음을 방문합니다. `/search.html?q=vegetables` 두 번째지만, 그것은 과일의 결과를 보여줄 것이다.
-이는 의 쿼리 매개 변수 `q` 캐싱과 관련하여 이(가) 무시됩니다.  이 문제를 방지하려면 쿼리 매개 변수를 기반으로 다른 HTML을 렌더링하는 페이지를 기록하고 해당 페이지에 대한 캐싱을 거부해야 합니다.
+그런 다음 `/search.html?q=vegetables`초 후에 방문하지만 과일 결과가 표시됩니다.
+이는 캐싱과 관련하여 `q`의 쿼리 매개 변수가 무시되고 있기 때문입니다.  이 문제를 방지하려면 쿼리 매개 변수를 기반으로 다른 HTML을 렌더링하는 페이지를 기록하고 해당 페이지에 대한 캐싱을 거부해야 합니다.
 
 예:
 
@@ -252,7 +252,7 @@ Javascript를 통해 쿼리 매개 변수를 사용하는 페이지는 이 설�
 
 ## 응답 헤더 캐싱
 
-Dispatcher가 캐시하는 것은 거의 확실합니다 `.html` 페이지 및 clientlib(예: `.js`, `.css`)에 포함되지만, 이름이 같지만 `.h` 파일 확장명. 이렇게 하면 콘텐츠뿐만 아니라 캐시에서 이 콘텐츠와 함께 제공되어야 하는 응답 헤더에 다음 응답이 가능합니다.
+Dispatcher이 `.html`개의 페이지와 clientlib(예: `.js`, `.css`)을 캐시한다는 것은 거의 확실하지만, 이름이 같지만 파일 확장명이 `.h`인 파일의 콘텐츠 옆에 특정 응답 헤더를 캐시할 수도 있다는 것을 알고 계셨나요? 이렇게 하면 콘텐츠뿐만 아니라 캐시에서 이 콘텐츠와 함께 제공되어야 하는 응답 헤더에 다음 응답이 가능합니다.
 
 AEM은 UTF-8 인코딩 이상을 처리할 수 있습니다.
 
@@ -260,7 +260,7 @@ AEM은 UTF-8 인코딩 이상을 처리할 수 있습니다.
 
 캐시된 경우 이러한 값은 기본적으로 제거되며 Apache httpd 웹 서버는 일반적인 파일 처리 방법으로 자산을 처리하는 자체 작업을 수행합니다. 이는 일반적으로 파일 확장명에 따른 MIME 유형 추측으로 제한됩니다.
 
-Dispatcher가 에셋 및 원하는 헤더를 캐시하도록 한 경우 적절한 경험을 노출하고 모든 세부 정보가 클라이언트 브라우저에 표시되도록 할 수 있습니다.
+Dispatcher이 에셋 및 원하는 헤더를 캐시한 경우 적절한 경험을 노출하고 모든 세부 정보가 클라이언트 브라우저에 표시되도록 할 수 있습니다.
 
 다음은 캐시할 헤더가 지정된 팜의 예입니다.
 
@@ -290,11 +290,11 @@ Dispatcher가 에셋 및 원하는 헤더를 캐시하도록 한 경우 적절�
 
 ### 작동 방식의 예:
 
-무효화할 요청이 5개 있는 경우 `/content/exampleco/en/` 모든 일은 3초 이내에 일어난다.
+`/content/exampleco/en/`을(를) 무효화하는 요청이 5개 있는 경우 모두 3초 이내에 발생합니다.
 
-이 기능을 사용하면 캐시 디렉토리를 무효화할 수 있습니다 `/content/exampleco/en/` 5회
+이 기능을 사용하면 캐시 디렉터리 `/content/exampleco/en/`을(를) 5번 무효화합니다.
 
-이 기능을 켜고 5초로 설정하면 캐시 디렉터리가 무효화됩니다. `/content/exampleco/en/` <b>한 번</b>
+이 기능을 켜고 5초로 설정하면 캐시 디렉터리 `/content/exampleco/en/`이(가) 무효화됩니다. <b>한 번</b>
 
 다음은 5초 유예 기간 동안 구성되는 이 기능의 구문 예제입니다.
 
@@ -305,7 +305,7 @@ Dispatcher가 에셋 및 원하는 헤더를 캐시하도록 한 경우 적절�
 
 ## TTL 기반 무효화
 
-Dispatcher 모듈의 새로운 기능은 다음과 같습니다. `Time To Live (TTL)` 캐시된 항목에 대한 기반 무효화 옵션. 항목이 캐시되면 캐시 제어 헤더가 있는지 검색하고 캐시 디렉터리에 동일한 이름과 `.ttl` 확장명.
+Dispatcher 모듈의 최신 기능은 캐시된 항목에 대한 `Time To Live (TTL)` 기반 무효화 옵션입니다. 항목이 캐시되면 캐시 제어 헤더가 있는지 검색하고 동일한 이름과 `.ttl` 확장자를 사용하여 캐시 디렉터리에 파일을 생성합니다.
 
 다음은 팜 구성 파일에 구성된 기능의 예입니다.
 
@@ -316,7 +316,7 @@ Dispatcher 모듈의 새로운 기능은 다음과 같습니다. `Time To Live (
 
 >[!NOTE]
 >
->Dispatcher가 헤더를 준수하도록 TTL 헤더를 보내도록 AEM을 계속 구성해야 합니다. 이 기능을 전환하면 Dispatcher는 AEM에서 송신 캐시 제어 헤더가 있는 파일을 제거할 시기만 알 수 있습니다. AEM이 TTL 헤더 전송을 시작하지 않으면 Dispatcher는 여기서 특별한 작업을 수행하지 않습니다.
+>Dispatcher에서 TTL 헤더를 전송하도록 AEM을 계속 구성해야 합니다. 이 기능을 전환하면 Dispatcher은 AEM의 송신 캐시 제어 헤더가 있는 파일을 제거할 시기만 알 수 있습니다. AEM에서 TTL 헤더를 보내지 않는 경우 Dispatcher은 여기에서 특별한 작업을 수행하지 않습니다.
 
 ## 캐시 필터 규칙
 
@@ -336,6 +336,6 @@ Dispatcher 모듈의 새로운 기능은 다음과 같습니다. `Time To Live (
 
 게시된 사이트를 가능한 한 탐욕스럽게 만들고 모든 것을 캐시하려고 합니다.
 
-캐시될 때 경험을 중단하는 요소가 있는 경우 규칙을 추가하여 해당 항목을 캐시하는 옵션을 제거할 수 있습니다. 위의 예에서 보듯이 csrf 토큰은 캐시되어서는 안 되며 제외되었습니다. 이러한 규칙 작성에 대한 자세한 내용은 을 참조하십시오 [여기](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache)
+캐시될 때 경험을 중단하는 요소가 있는 경우 규칙을 추가하여 해당 항목을 캐시하는 옵션을 제거할 수 있습니다. 위의 예에서 보듯이 csrf 토큰은 캐시되어서는 안 되며 제외되었습니다. 이러한 규칙 작성에 대한 자세한 내용은 [여기](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache)에서 확인할 수 있습니다.
 
 [다음 -> 변수 사용 및 이해](./variables.md)

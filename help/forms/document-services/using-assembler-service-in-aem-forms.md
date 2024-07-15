@@ -103,21 +103,21 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 
 AEM 서버에서 이 기능을 사용하려면
 
-* 다운로드 [AssembleMultipleFiles.zip](assets/assemble-multiple-files.zip) 로컬 시스템으로 이동합니다.
-* 를 사용하여 패키지 업로드 및 설치 [패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp)
-* 다운로드[사용자 정의 문서 서비스 번들](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
-* 다운로드 [서비스 사용자 번들을 사용한 개발](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-* 를 사용하여 번들 배포 및 시작 [felix 웹 콘솔](http://localhost:4502/system/console/bundles)
-* 브라우저를 가리켜서 [AssemblePdf.html](http://localhost:4502/content/DocumentServices/AssemblePdfs.html)
+* 로컬 시스템에 [AssembleMultipleFiles.zip](assets/assemble-multiple-files.zip)을(를) 다운로드합니다.
+* [패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp)를 사용하여 패키지 업로드 및 설치
+* 다운로드[사용자 지정 문서 서비스 번들](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
+* [서비스 사용자 번들로 개발](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar) 다운로드
+* [felix 웹 콘솔](http://localhost:4502/system/console/bundles)을 사용하여 번들 배포 및 시작
+* 브라우저를 [AssemblePdfs.html](http://localhost:4502/content/DocumentServices/AssemblePdfs.html)(으)로 지정
 * PDF 파일 두 개 드래그 앤 드롭
 
 >[!NOTE]
 >
 >AEM Forms 설치가 완료되었는지 확인합니다. 모든 번들은 활성 상태여야 합니다.
 >
->을(를) 추가했는지 확인합니다. -에 언급된 대로 부트 위임 RSA 및 BouncyCastle 라이브러리 [AEM Forms 설치](https://helpx.adobe.com/aem-forms/6-3/installing-configuring-aem-forms-osgi.html)
+>추가되었는지 확인 - 이 [AEM Forms 설치](https://helpx.adobe.com/aem-forms/6-3/installing-configuring-aem-forms-osgi.html)에서 언급한 대로 Boot delegate RSA 및 BouncyCastle 라이브러리를 부팅합니다.
 >
->**이 데모 주의 사항**
+>**이 데모에 대한 주의 사항**
 >
 > * 이 코드는 XFA 기반 PDF 문서를 처리하지 않습니다
 >

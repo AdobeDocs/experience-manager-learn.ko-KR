@@ -36,9 +36,9 @@ AEM Forms을 ACS와 통합하려면 다음 단계를 수행해야 합니다.
 시작하려면 다음 지침을 따르십시오
 
 * [이 자습서와 관련된 에셋을 다운로드하고 압축 해제합니다.](assets/aem-forms-and-acs-bundles.zip)
-* 다음을 사용하여 번들 배포 [Felix 웹 콘솔](http://localhost:4502/system/console/bundles)
+* [Felix 웹 콘솔](http://localhost:4502/system/console/bundles)을 사용하여 번들 배포
 * Felix OSGI 구성에서 Adobe Campaign에 대한 적절한 설정을 제공합니다.
-* [이 문서에 언급된 대로 서비스 사용자 만들기](/help/forms/adaptive-forms/service-user-tutorial-develop.md). 문서와 연결된 OSGi 번들을 배포해야 합니다.
+* [이 문서에 언급된 대로 서비스 사용자를 만듭니다](/help/forms/adaptive-forms/service-user-tutorial-develop.md). 문서와 연결된 OSGi 번들을 배포해야 합니다.
 * etc/key/campaign/private.key에 ACS 개인 키를 저장합니다. etc/key 아래에 campaign이라는 폴더를 만들어야 합니다.
 * [서비스 사용자 &quot;data&quot;에게 캠페인 폴더에 대한 읽기 액세스 권한을 제공합니다.](http://localhost:4502/useradmin)
 

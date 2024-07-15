@@ -1,6 +1,6 @@
 ---
-title: 데이터 소스 구성 설정을 수정합니다.
-description: 데이터 소스 구성 설정에서 호스트 이름 및 기타 설정을 수정합니다.
+title: 데이터 Source 구성 설정을 수정합니다.
+description: 데이터 Source 구성 설정에서 호스트 이름 및 기타 설정을 수정합니다.
 feature: Adaptive Forms
 version: 6.5
 topic: Development
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ---
 
-# 데이터 소스 구성 설정 수정 기능{#ability-to-modify-data-source-configuration-settings}
+# 데이터 Source 구성 설정을 수정하는 기능{#ability-to-modify-data-source-configuration-settings}
 
 AEM Forms 6.4 릴리스까지 데이터 소스가 구성되면 RESTful 서비스를 위한 스키마, 호스트 및 기본 경로를 변경할 수 없습니다. 다른 환경에 대해 데이터 소스를 테스트하려는 경우 문제가 발생했습니다.
 
@@ -24,8 +24,8 @@ AEM Forms 6.5가 출시되면서 이제 위에서 언급한 속성을 쉽게 변
 
 아래 스크린샷은 AEM Forms 6.4 및 Forms 6.5의 데이터 소스 구성 설정을 보여 줍니다
 
-**AEM 6.4의 데이터 소스 구성**
+AEM 6.4의 **데이터 Source 구성**
 
 ![64DataSource 구성](assets/64release.gif)
-**AEM 6.5 이상에서 편집 가능한 데이터 소스 구성**
+**AEM 6.5 이상에서 편집 가능한 데이터 Source 구성**
 ![65DataSource 구성](assets/modifiable_data_source.png)

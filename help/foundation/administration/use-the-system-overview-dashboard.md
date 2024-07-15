@@ -18,16 +18,16 @@ ht-degree: 0%
 
 # 시스템 개요 대시보드 사용
 
-Adobe Experience Manager (AEM) [!UICONTROL 시스템 개요] 는 단일 대시보드에서 AEM 인스턴스의 구성, 하드웨어 및 상태에 대한 높은 수준의 보기를 제공합니다.
+Adobe Experience Manager(AEM) [!UICONTROL 시스템 개요]에서는 단일 대시보드에서 AEM 인스턴스의 구성, 하드웨어 및 상태에 대한 높은 수준의 보기를 제공합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/21340?quality=12&learn=on)
 
-1. 시스템 개요는 다음 위치에서 액세스할 수 있습니다. **AEM 시작** > **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 시스템 개요]**
+1. 시스템 개요는 **AEM 시작** > **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 시스템 개요]**&#x200B;에서 액세스할 수 있습니다.
 
-   다음 위치에 직접 액세스 **`<server-host>/libs/granite/operations/content/systemoverview.html`**
+   **`<server-host>/libs/granite/operations/content/systemoverview.html`**&#x200B;에서 직접
 
-1. 에서 가져온 정보 [!UICONTROL 시스템 개요] 을(를) 클릭하여 내보낼 수 있습니다 [!UICONTROL 다운로드] 단추를 클릭합니다. 이 정보는 다음을 통해서도 노출됩니다 [!DNL REST] 끝점:
-1. 다음은 에서 내보낸 JSON의 샘플 출력입니다. [!UICONTROL 시스템 개요]:
+1. [!UICONTROL 다운로드] 단추를 클릭하여 [!UICONTROL 시스템 개요]의 정보를 내보낼 수 있습니다. 다음 [!DNL REST] 끝점을 통해서도 정보가 노출됩니다.
+1. 다음은 [!UICONTROL 시스템 개요]에서 내보낸 JSON의 샘플 출력입니다.
 
    ```json
    {

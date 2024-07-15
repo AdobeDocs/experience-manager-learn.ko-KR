@@ -1,6 +1,6 @@
 ---
 title: AEM 챔피언 팁 및 요령 - Cloud Manager UI
-description: AEM 챔피언 및 전문가 Rakesh Pasupuleti가 제공하는 Cloud Manager의 UI 사용 방법에 대한 팁을 확인하십시오.
+description: AEM 챔피언이자 전문가인 Rakesh Pasupuleti가 Cloud Manager의 UI를 사용하는 방법에 대한 팁을 확인해 보십시오.
 version: Cloud Service
 feature: Cloud Manager
 topic: Administration
@@ -26,4 +26,4 @@ ht-degree: 2%
 
 ## 추가 리소스 {#additional-resources}
 
-* [Cloud Manager 소개](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/concepts/cloud-manager-introduction.html) - AEM에서 Cloud Manager 사용에 대한 설명서 as a Cloud Service
+* [Cloud Manager 소개](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/concepts/cloud-manager-introduction.html) - AEM as a Cloud Service에서의 Cloud Manager 사용에 대한 설명서

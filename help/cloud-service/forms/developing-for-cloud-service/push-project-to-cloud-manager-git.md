@@ -21,7 +21,8 @@ ht-degree: 1%
 
 이전 단계에서 AEM 프로젝트는 AEM 인스턴스에서 만든 적응형 Forms 및 테마와 동기화되었습니다.
 이제 이러한 변경 사항을 로컬 git 저장소에 추가한 다음 로컬 git 저장소를 cloud manager git 저장소에 푸시해야 합니다.
-명령 프롬프트를 열고 c:\cloudmanager\aem-banking-app으로 이동합니다. 다음 명령을 실행합니다
+명령 프롬프트를 열고 c:\cloudmanager\aem-banking-app으로 이동합니다.
+다음 명령 실행
 
 ```
 git add .

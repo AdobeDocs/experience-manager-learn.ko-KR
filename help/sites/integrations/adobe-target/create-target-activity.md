@@ -9,7 +9,7 @@ topic: Integrations
 role: User
 level: Intermediate
 badgeIntegration: label="통합" type="positive"
-badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
+badgeVersions: label="AEM Sites as a Cloud Service AEM Sites 6.5" before-title="false"
 doc-type: Tutorial
 exl-id: f581a4fb-1182-44bb-8c46-4250cf37b55f
 duration: 260
@@ -37,4 +37,4 @@ AEM 경험 조각 오퍼를 사용하여 Adobe Target 활동을 만들고 테스
 
 ## 지원 링크
 
-* [Adobe Experience Cloud 디버거 - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
+* [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)

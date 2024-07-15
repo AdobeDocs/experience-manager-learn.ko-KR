@@ -25,7 +25,7 @@ ht-degree: 1%
 
 ![이미지](assets/valuable-reports/reports-1.jpg)
 
-_대역폭 및 저장소 보고서는 이 계정을 30GB 저장 용량 제한을 훨씬 초과하는 것으로 표시합니다._
+_대역폭 및 저장소 보고서에 이 계정이 30GB의 저장소 제한을 훨씬 초과하는 것으로 표시됩니다._
 
 ## 이미지 오류 보고서
 
@@ -41,7 +41,7 @@ _이미지 오류 보고서._
 
 Dynamic Media Classic에 대해 자세히 알아보려면 다음 리소스를 살펴보십시오.
 
-- [Experience League의 Dynamic Media Classic - 가치 창출](https://guided.adobe.com/?launch=AEM-5a#recommended/solutions/experience-manager)
-- [Experience League의 Dynamic Media Classic - 더 많은 작업](https://guided.adobe.com/?launch=AEM-6a#recommended/solutions/experience-manager)
-- [Dynamic Media 뉴스레터 아카이브](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/dynamic-media-newsletter.html)
+- Experience League의 [Dynamic Media Classic - 값 가져오기](https://guided.adobe.com/?launch=AEM-5a#recommended/solutions/experience-manager)
+- Experience League의 [Dynamic Media Classic - 더 많은 작업](https://guided.adobe.com/?launch=AEM-6a#recommended/solutions/experience-manager)
+- [Dynamic Media 뉴스레터 보관](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/dynamic-media-newsletter.html)
 - [Dynamic Media Classic 설명서](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html)

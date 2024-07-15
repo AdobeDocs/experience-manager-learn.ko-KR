@@ -21,7 +21,7 @@ ht-degree: 1%
 
 스마트 이미징은 또한 Adobe의 동급 최고의 프리미엄 서비스와 완전히 통합됨으로써 더욱 향상된 성능을 제공합니다. 이 서비스는 인터넷의 기본 경로보다 지연 시간 및/또는 패킷 손실률이 가장 낮은 서버, 네트워크 및 피어링 포인트 사이의 최적 인터넷 경로를 찾습니다.
 
-자세히 알아보기 [스마트 이미징](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/imaging-faq.html).
+[스마트 이미징](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/imaging-faq.html)에 대해 자세히 알아보세요.
 
 ## 스마트 이미징의 이점
 
@@ -33,7 +33,7 @@ ht-degree: 1%
 
 앞에서 언급했듯이 스마트 이미징은 Adobe Sensei AI 기능을 활용하고 기존 이미지 사전 설정과 함께 작동하여 시각적 충실도를 유지하면서 이미지를 WebP와 같은 최적의 차세대 이미지 형식으로 자동으로 변환합니다.
 
-자세히 알아보기 [스마트 이미징 작동 방식](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/imaging-faq.html#how-does-smart-imaging-work): 지원되는 이미지 형식(및 해당 형식을 사용하지 않는 경우에는 어떻게 됩니까)과 같은 세부 정보와 사용 중인 기존 이미지 사전 설정에 미치는 영향을 포함합니다.
+지원되는 이미지 형식(및 해당 형식을 사용하지 않을 경우 발생하는 일)과 같은 세부 정보와 사용 중인 기존 이미지 사전 설정에 미치는 영향을 포함하여 [스마트 이미징 작동 방식](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/imaging-faq.html#how-does-smart-imaging-work)에 대해 자세히 알아보십시오.
 
 ## 스마트 이미징의 영향
 
@@ -51,8 +51,8 @@ ht-degree: 1%
 
 스마트 이미징을 활성화하면 스마트 이미징이 예상대로 작동하는지 확인해야 합니다.
 
-스마트 이미징에 대한 추가 질문이 있을 수 있습니다. 답변이 포함된 자주 묻는 질문(FAQ) 목록을 정리했습니다. 읽기 [FAQ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/imaging-faq.html).
+스마트 이미징에 대한 추가 질문이 있을 수 있습니다. 답변이 포함된 자주 묻는 질문(FAQ) 목록을 정리했습니다. [FAQ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/imaging-faq.html)를 읽어 보세요.
 
 ## 추가 리소스
 
-시청 [Dynamic Media Classic 최적화 페이지 성능 스킬 빌더](https://seminars.adobeconnect.com/pzc1gw0cihpv) 스마트 이미징에 대해 자세히 알아보려면 온디맨드 웨비나를 사용하십시오.
+[Dynamic Media Classic 최적화 페이지 성능 스킬 빌더](https://seminars.adobeconnect.com/pzc1gw0cihpv) 온디맨드 웨비나를 시청하여 스마트 이미징에 대해 자세히 알아보십시오.

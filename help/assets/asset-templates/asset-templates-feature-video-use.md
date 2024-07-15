@@ -1,6 +1,6 @@
 ---
 title: AEM Assets 및 InDesign Server에서 에셋 템플릿 사용
-description: AEM Assets 템플릿을 사용하면 마케터가 디지털 및 인쇄용 디지털 자산을 생성, 관리 및 제공할 수 있습니다. InDesign 서버와 통합할 때 자산 템플릿을 사용하면 마킹 브로셔, 명함, 전단지, 광고 및 엽서를 훨씬 쉽게 만들 수 있습니다.
+description: AEM Assets 템플릿을 사용하면 마케터가 디지털 및 인쇄용 디지털 자산을 생성, 관리 및 제공할 수 있습니다. InDesign 서버와 통합할 때 Assets 템플릿을 사용하면 마킹 브로셔, 명함, 전단지, 광고 및 엽서를 훨씬 쉽게 만들 수 있습니다.
 version: 6.4, 6.5
 topic: Content Management
 feature: Templates
@@ -20,11 +20,11 @@ ht-degree: 0%
 
 # AEM Assets 및 InDesign Server에서 에셋 템플릿 사용{#using-asset-templates-with-aem-assets-and-indesign-server}
 
-AEM Assets 템플릿을 사용하면 마케터가 디지털 및 인쇄용 디지털 자산을 생성, 관리 및 제공할 수 있습니다. InDesign 서버와 통합할 때 자산 템플릿을 사용하면 마킹 브로셔, 명함, 전단지, 광고 및 엽서를 훨씬 쉽게 만들 수 있습니다.
+AEM Assets 템플릿을 사용하면 마케터가 디지털 및 인쇄용 디지털 자산을 생성, 관리 및 제공할 수 있습니다. InDesign 서버와 통합할 때 Assets 템플릿을 사용하면 마킹 브로셔, 명함, 전단지, 광고 및 엽서를 훨씬 쉽게 만들 수 있습니다.
 
 >[!NOTE]
 >
->InDesign Server 구성 단계는 을(를) 참조하십시오. [InDesign Server을 사용하여 에셋 템플릿 설정](asset-templates-technical-video-setup.md).
+>InDesign Server 구성 단계는 [InDesign Server으로 Assets 템플릿 설정](asset-templates-technical-video-setup.md)을 검토하십시오.
 
 ## 개요 {#overview}
 

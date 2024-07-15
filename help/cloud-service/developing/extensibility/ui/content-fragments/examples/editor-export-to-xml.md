@@ -23,13 +23,13 @@ ht-degree: 1%
 
 ![콘텐츠 조각 편집기 헤더 메뉴 확장 예제](./assets/export-to-xml/hero.png){align="center"}
 
-사용자 지정 단추는 다음을 사용하여 콘텐츠 조각 편집기 헤더 메뉴에 추가할 수 있습니다. `headerMenu` 확장 점입니다. 이 예에서는 헤더 메뉴에 단추를 추가하는 방법과 클릭 이벤트를 처리하여 활성 콘텐츠 조각을 XML 또는 CSV로 내보내는 방법을 보여 줍니다.
+사용자 지정 단추는 `headerMenu` 확장 지점을 사용하여 콘텐츠 조각 편집기 헤더 메뉴에 추가할 수 있습니다. 이 예에서는 헤더 메뉴에 단추를 추가하는 방법과 클릭 이벤트를 처리하여 활성 콘텐츠 조각을 XML 또는 CSV로 내보내는 방법을 보여 줍니다.
 
 헤더 단추는 단일 단추나 하위 항목이 있는 단추로 존재할 수 있습니다. 이 예에서는 하위 항목을 사용하여 버튼을 구현하는 방법을 보여 주지만, 단일 버튼을 구현하기 위해 주석 처리된 코드를 포함합니다.
 
 ## 확장 지점
 
-이 예제는 확장 지점까지 확장됩니다 `headerBar` 콘텐츠 조각 편집기에 사용자 지정 단추를 추가합니다.
+이 예제는 확장 지점 `headerBar`까지 확장하여 콘텐츠 조각 편집기에 사용자 지정 단추를 추가합니다.
 
 | AEM UI 확장 | 확장 지점 |
 | ------------------------ | --------------------- | 
@@ -43,9 +43,9 @@ ht-degree: 1%
 
 ### 확장 등록
 
-`ExtensionRegistration.js`index.html 경로에 매핑되는 는 AEM 확장의 진입점이며 다음을 정의합니다.
+index.html 경로에 매핑된 `ExtensionRegistration.js`은(는) AEM 확장의 진입점이며 다음을 정의합니다.
 
-+ 확장 버튼의 위치가 나타납니다(`headerMenu`AEM 제작 환경의 )
++ 확장 단추의 위치가 AEM 제작 환경에 나타납니다(`headerMenu`).
 + getButton() 함수에서 확장 단추의 정의
 + onClick() 함수 또는 하위 항목 목록과 해당 클릭 처리기에 대한 단추의 클릭 처리기입니다.
 
@@ -148,13 +148,13 @@ export default ExtensionRegistration;
 
 #### 컨텐츠 조각 데이터
 
-활성 콘텐츠 조각은 `getContentFragment()` 다음에 대한 메서드 `guestConnection.host.contentFragment` 개체.
+`guestConnection.host.contentFragment` 개체에서 `getContentFragment()` 메서드를 사용하여 활성 콘텐츠 조각을 검색할 수 있습니다.
 
 ```javascript
 const contentFragment = await guestConnection.host.contentFragment.getContentFragment();
 ```
 
-다음 `contentFragment` 객체에는 경로, 모델, 메타데이터, 기본 콘텐츠 및 변형을 포함하여 콘텐츠 조각에 대한 모든 정보가 포함됩니다.
+`contentFragment` 개체에는 경로, 모델, 메타데이터, 기본 콘텐츠 및 변형을 포함하여 콘텐츠 조각에 대한 모든 정보가 들어 있습니다.
 
 ```json
 {

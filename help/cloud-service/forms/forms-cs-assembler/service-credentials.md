@@ -1,6 +1,6 @@
 ---
 title: AEM 서비스 자격 증명
-description: AEM 개발자 콘솔에서 서비스 자격 증명을 다운로드합니다.
+description: AEM의 Developer Console에서 서비스 자격 증명을 다운로드합니다.
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # 서비스 자격 증명
 
-AEMas a Cloud Service 과의 통합은 AEM에 안전하게 인증할 수 있어야 합니다. AEM의 Developer Console은 외부 애플리케이션, 시스템 및 서비스에서 HTTP를 통해 AEM Author 또는 Publish 서비스와 프로그래밍 방식으로 상호 작용하는 데 사용되는 서비스 자격 증명을 생성합니다.
+AEM as a Cloud Service과의 통합은 AEM에 안전하게 인증할 수 있어야 합니다. AEM의 Developer Console은 외부 애플리케이션, 시스템 및 서비스에서 HTTP를 통해 AEM Author 또는 Publish 서비스와 프로그래밍 방식으로 상호 작용하는 데 사용되는 서비스 자격 증명을 생성합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330519?quality=12&learn=on)
 

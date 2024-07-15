@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # 클라우드 5 - 문제 해결... 재작성
 
-이 시리즈의 두 번째 부분에서는 AEMas a Cloud Service 에서 재작성 개발 및 최적화를 가속화할 수 있는 몇 가지 사항을 살펴봅니다.
+이 시리즈의 두 번째 부분에서는 AEM as a Cloud Service에서의 재작성 개발 및 최적화를 가속화할 수 있는 몇 가지 사항을 살펴봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/343600?quality=12&learn=on)
 

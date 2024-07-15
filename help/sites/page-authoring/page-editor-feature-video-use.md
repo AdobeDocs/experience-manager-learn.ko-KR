@@ -29,7 +29,7 @@ AEM Site의 페이지 편집기는 웹 콘텐츠를 만들고 편집할 수 있�
 >[!VIDEO](https://video.tv.adobe.com/v/32011?quality=12&learn=on)
 
 
-다음을 참조하십시오. [페이지 편집기 기능의 전체 개요는 AEM 설명서 를 참조하십시오](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/editing-content.html).
+페이지 편집기 기능의 전체 개요는 [AEM 설명서를 참조하십시오](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/editing-content.html).
 
 ## 추가 리소스 {#additional-resources}
 

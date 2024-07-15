@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ---
 
-# AEM Forms Designer를 사용하여 간단한 양식 만들기
+# AEM Forms Designer을 사용하여 간단한 양식 만들기
 
 1부 - 제목, 이미지, 텍스트 필드 및 날짜 필드 추가
 

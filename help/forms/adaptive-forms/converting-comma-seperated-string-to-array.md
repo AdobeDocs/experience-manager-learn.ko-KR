@@ -34,7 +34,7 @@ ht-degree: 0%
 ![fdm-string-array](assets/string-array-fdm.png)
 
 프로세스 단계에 JSON 개체 경로 및 요소 이름을 전달합니다. 프로세스 단계의 코드는 요소의 쉼표로 구분된 값을 문자열 배열로 바꿉니다.
-![프로세스 단계](assets/create-string-array.png)
+![process-step](assets/create-string-array.png)
 
 >[!NOTE]
 >
@@ -142,4 +142,4 @@ public class CreateStringArray implements WorkflowProcess {
 }
 ```
 
-샘플 번들은 다음과 같을 수 있습니다. [여기에서 다운로드됨](assets/CreateStringArray.CreateStringArray.core-1.0-SNAPSHOT.jar)
+샘플 번들은 [여기에서 다운로드](assets/CreateStringArray.CreateStringArray.core-1.0-SNAPSHOT.jar)할 수 있습니다.

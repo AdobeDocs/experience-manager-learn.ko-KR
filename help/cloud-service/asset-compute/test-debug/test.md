@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # asset compute 작업자 테스트
 
-asset compute 프로젝트는 쉽게 만들고 실행하기 위한 패턴을 정의합니다 [asset compute 작업자 테스트](https://experienceleague.adobe.com/docs/asset-compute/using/extend/test-custom-application.html).
+asset compute 프로젝트는 Asset compute 작업자의 [테스트](https://experienceleague.adobe.com/docs/asset-compute/using/extend/test-custom-application.html)를 쉽게 만들고 실행하기 위한 패턴을 정의합니다.
 
 ## 작업자 테스트의 해부학
 
@@ -45,7 +45,7 @@ asset compute 프로젝트의 테스트 구조는 다음과 같습니다.
 각 테스트 캐스트에는 다음 파일이 있을 수 있습니다.
 
 + `file.<extension>`
-   + 테스트할 소스 파일(확장자는 다음 중 하나일 수 있음: `.link`)
+   + 테스트할 Source 파일(확장명은 `.link`을(를) 제외한 다른 형식일 수 있음)
    + 필수
 + `rendition.<extension>`
    + 예상 렌디션
@@ -55,20 +55,20 @@ asset compute 프로젝트의 테스트 구조는 다음과 같습니다.
    + 옵션
 + `validate`
    + 예상 및 실제 렌디션 파일 경로를 인수로 가져오고 결과가 양호한 경우 종료 코드 0을 반환해야 하며, 유효성 검사나 비교가 실패한 경우 0이 아닌 종료 코드를 반환해야 하는 스크립트.
-   + 선택 사항이며 기본값은 `diff` 명령
+   + 선택 사항이며 기본값은 `diff` 명령입니다.
    + 다른 유효성 검사 도구를 사용하기 위해 도커 실행 명령을 래핑하는 셸 스크립트를 사용합니다
 + `mock-<host-name>.json`
-   + 다음에 대한 JSON 형식의 HTTP 응답 [외부 서비스 통화 조롱](https://www.mock-server.com/mock_server/creating_expectations.html).
+   + [외부 서비스 호출 조롱](https://www.mock-server.com/mock_server/creating_expectations.html)에 대한 JSON 형식의 HTTP 응답입니다.
    + 선택 사항이며, 작업자 코드가 자체의 HTTP 요청을 하는 경우에만 사용됩니다
 
 ## 테스트 사례 작성
 
-이 테스트 사례는 매개 변수가 있는 입력(`params.json`) 입력 파일(`file.jpg`) 예상 PNG 렌디션을 생성합니다(`rendition.png`).
+이 테스트 사례에서는 입력 파일(`file.jpg`)에 대해 매개 변수가 있는 입력(`params.json`)을 어설션하여 예상 PNG 렌디션(`rendition.png`)을 생성합니다.
 
-1. 먼저 자동 생성된 를 삭제합니다. `simple-worker` 테스트 사례 위치: `/test/asset-compute/simple-worker` 이 작업은 무효이므로 작업자는 더 이상 소스를 렌디션에 복사하지 않습니다.
-1. 다음 위치에 새 테스트 사례 폴더를 만듭니다. `/test/asset-compute/worker/success-parameterized` PNG 렌디션을 생성하는 작업자의 성공적인 실행을 테스트합니다.
-1. 다음에서 `success-parameterized` 폴더, 테스트 추가 [입력 파일](./assets/test/success-parameterized/file.jpg) 이 테스트 사례에 대해 이름을 지정합니다. `file.jpg`.
-1. 다음에서 `success-parameterized` 폴더, 이름이 인 새 파일 추가 `params.json` 작업자의 입력 매개변수를 정의합니다.
+1. 작업자가 더 이상 소스를 변환에 복사하지 않으므로 `/test/asset-compute/simple-worker`에서 자동 생성된 `simple-worker` 테스트 사례를 먼저 삭제하십시오.
+1. PNG 렌디션을 생성하는 작업자의 성공적인 실행을 테스트하려면 `/test/asset-compute/worker/success-parameterized`에 새 테스트 사례 폴더를 만드십시오.
+1. `success-parameterized` 폴더에서 이 테스트 사례에 대한 테스트 [입력 파일](./assets/test/success-parameterized/file.jpg)을(를) 추가하고 이름을 `file.jpg`(으)로 지정합니다.
+1. `success-parameterized` 폴더에 작업자의 입력 매개 변수를 정의하는 이름이 `params.json`인 새 파일을 추가합니다.
 
    ```json
    { 
@@ -78,22 +78,22 @@ asset compute 프로젝트의 테스트 구조는 다음과 같습니다.
    }
    ```
 
-   이 값은에 전달된 것과 동일한 키/값입니다 [개발 도구의 Asset compute 프로필 정의](../develop/development-tool.md), 을(를) 줄입니다. `worker` 키.
+   [개발 도구의 Asset compute 프로필 정의](../develop/development-tool.md)에 전달된 동일한 키/값이며 `worker` 키를 줄입니다.
 
-1. 예상 항목 추가 [렌디션 파일](./assets/test/success-parameterized/rendition.png) 이 테스트 사례에 추가하고 이름을 지정합니다. `rendition.png`. 이 파일은 주어진 입력에 대한 작업자의 예상 출력을 나타냅니다 `file.jpg`.
-1. 명령줄에서 을 실행하여 프로젝트 루트 테스트를 실행합니다. `aio app test`
-   + 확인 [Docker 데스크탑](../set-up/development-environment.md#docker) 및 지원 Docker 이미지가 설치 및 시작됨
+1. 예상 [렌디션 파일](./assets/test/success-parameterized/rendition.png)을(를) 이 테스트 사례에 추가하고 이름을 `rendition.png`로 지정합니다. 이 파일은 지정된 입력 `file.jpg`에 대한 작업자의 예상 출력을 나타냅니다.
+1. 명령줄에서 `aio app test`을(를) 실행하여 프로젝트 루트를 테스트합니다.
+   + [Docker 데스크톱](../set-up/development-environment.md#docker) 및 지원되는 Docker 이미지가 설치 및 시작되었는지 확인
    + 실행 중인 개발 도구 인스턴스 종료
 
 ![테스트 - 성공 ](./assets/test/success-parameterized/result.png)
 
 ## 오류 검사 테스트 사례 작성
 
-이 테스트 사례는 다음 경우에 작업자가 적절한 오류를 발생시키는지 확인하기 위해 테스트합니다. `contrast` 매개 변수가 잘못된 값으로 설정되어 있습니다.
+이 테스트 사례는 `contrast` 매개 변수가 잘못된 값으로 설정된 경우 작업자가 적절한 오류를 발생시키는지 확인하기 위해 테스트합니다.
 
-1. 다음 위치에 새 테스트 사례 폴더를 만듭니다. `/test/asset-compute/worker/error-contrast` 잘못된 작업으로 인한 작업자 오류 실행을 테스트하려면 `contrast` 매개 변수 값입니다.
-1. 다음에서 `error-contrast` 폴더, 테스트 추가 [입력 파일](./assets/test/error-contrast/file.jpg) 이 테스트 사례에 대해 이름을 지정합니다. `file.jpg`. 이 파일의 내용은 이 테스트에 중요하지 않습니다. &quot;손상된 소스&quot; 검사를 통과하기 위해 존재해야 합니다. `rendition.instructions` 유효성을 검사하여 이 테스트 사례가 유효한지 확인합니다.
-1. 다음에서 `error-contrast` 폴더, 이름이 인 새 파일 추가 `params.json` 는 내용이 있는 작업자의 입력 매개변수를 정의합니다.
+1. `/test/asset-compute/worker/error-contrast`에 새 테스트 사례 폴더를 만들어 잘못된 `contrast` 매개 변수 값으로 인해 작업자 오류 실행을 테스트하십시오.
+1. `error-contrast` 폴더에서 이 테스트 사례에 대한 테스트 [입력 파일](./assets/test/error-contrast/file.jpg)을(를) 추가하고 이름을 `file.jpg`(으)로 지정합니다. 이 파일의 내용은 이 테스트에 중요하지 않습니다. 이 테스트 케이스가 유효성을 검사하는 `rendition.instructions` 유효성 검사에 도달하려면 &quot;손상된 원본&quot; 검사를 통과하기 위한 파일만 있으면 됩니다.
+1. `error-contrast` 폴더에 내용이 포함된 작업자의 입력 매개 변수를 정의하는 이름이 `params.json`인 새 파일을 추가합니다.
 
    ```json
    {
@@ -102,12 +102,12 @@ asset compute 프로젝트의 테스트 구조는 다음과 같습니다.
    }
    ```
 
-   + 설정 `contrast` 매개 변수 `10`를 throw하려면 대비가 -1과 1 사이여야 하므로 잘못된 값입니다. `RenditionInstructionsError`.
-   + 를 설정하여 테스트에서 적절한 오류가 발생했음을 어설션합니다. `errorReason` 예상 오류와 연결된 &quot;이유&quot;에 대한 키입니다. 이 잘못된 대비 매개 변수는 [사용자 지정 오류](../develop/worker.md#errors), `RenditionInstructionsError`를 선택한 다음 `errorReason` 이 오류의 원인에 대해 또는`rendition_instructions_error` 를 어설션하려면 를 throw합니다.
+   + `contrast` 매개 변수를 `10`(으)로 설정하십시오. `RenditionInstructionsError`을(를) throw하려면 대비가 -1에서 1 사이여야 하므로 잘못된 값입니다.
+   + `errorReason` 키를 예상 오류와 연결된 &quot;reason&quot;으로 설정하여 테스트에서 적절한 오류가 throw되었음을 어설션합니다. 이 잘못된 대비 매개 변수는 [사용자 지정 오류](../develop/worker.md#errors), `RenditionInstructionsError`을(를) throw하므로 `errorReason`을(를) 이 오류의 이유로 설정하거나 `rendition_instructions_error`을(를) throw한다고 어설션합니다.
 
-1. 오류가 발생한 실행 중에는 렌디션이 생성되지 않으므로 `rendition.<extension>` 파일이 필요합니다.
-1. 명령을 실행하여 프로젝트의 루트에서 테스트 세트를 실행합니다. `aio app test`
-   + 확인 [Docker 데스크탑](../set-up/development-environment.md#docker) 및 지원 Docker 이미지가 설치 및 시작됨
+1. 오류 실행 중에는 렌디션을 생성하지 않아야 하므로 `rendition.<extension>` 파일이 필요하지 않습니다.
+1. `aio app test` 명령을 실행하여 프로젝트의 루트에서 테스트 도구 모음을 실행합니다.
+   + [Docker 데스크톱](../set-up/development-environment.md#docker) 및 지원되는 Docker 이미지가 설치 및 시작되었는지 확인
    + 실행 중인 개발 도구 인스턴스 종료
 
 ![테스트 - 오류 대비](./assets/test/error-contrast/result.png)

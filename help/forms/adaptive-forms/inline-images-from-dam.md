@@ -83,8 +83,8 @@ async function createFile(imageName){
 
 ### 서버에 배포
 
-* 다운로드 및 설치 [클라이언트 라이브러리 및 샘플 이미지](assets/InlineDAMImage.zip) AEM 패키지 관리자를 사용하여 AEM 인스턴스에서 을 엽니다.
-* 다운로드 및 설치 [샘플 양식](assets/FieldInspectionForm.zip) AEM 패키지 관리자를 사용하여 AEM 인스턴스에서 을 확인할 수 있습니다.
-* 브라우저를 가리켜서 [파일 검사 양식](http://localhost:4502/content/dam/formsanddocuments/fieldinspection/fieldinspection/jcr:content?wcmmode=disabled)
+* AEM 패키지 관리자를 사용하여 AEM 인스턴스에 [클라이언트 라이브러리와 샘플 이미지](assets/InlineDAMImage.zip)를 다운로드하여 설치하십시오.
+* AEM 패키지 관리자를 사용하여 AEM 인스턴스에 [샘플 양식](assets/FieldInspectionForm.zip)을(를) 다운로드하여 설치하십시오.
+* 브라우저를 [FileInspectionForm](http://localhost:4502/content/dam/formsanddocuments/fieldinspection/fieldinspection/jcr:content?wcmmode=disabled)(으)로 지정
 * 고정장치 중 하나를 선택합니다
 * 양식에 이미지가 표시됩니다.

@@ -42,14 +42,14 @@ Dynamic Media Classic에서 만들 수 있는 네 가지 유형의 세트 (이�
 
 ![이미지](assets/media-sets/image-set-1.jpg)
 
-_이미지 세트의 예_
+_이미지 집합의 예_
 
 위 이미지 세트의 URL은 다음과 같이 표시될 수 있습니다.
 
 ![이미지](assets/media-sets/image-set-url-1.png)
 
-- 를 사용하여 이미지 세트에 대해 자세히 알아보십시오. [이미지 집합에 대한 빠른 시작](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sets/quick-start-image-sets.html).
-- 방법 알아보기 [이미지 집합 만들기](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sets/creating-image-set.html#creating-an-image-set).
+- [이미지 집합 빠른 시작](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sets/quick-start-image-sets.html)을 사용하여 이미지 집합에 대해 자세히 알아보세요.
+- [이미지 집합을 만드는 방법](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sets/creating-image-set.html#creating-an-image-set)을 알아보세요.
 
 ### 견본 집합
 
@@ -61,14 +61,14 @@ _이미지 세트의 예_
 
 ![이미지](assets/media-sets/image-set-2.jpg)
 
-_견본 세트의 예_
+_견본 집합의 예_
 
 위 견본 집합의 URL은 다음과 같이 나타날 수 있습니다.
 
 ![이미지](assets/media-sets/image-set_url.png)
 
-- 을(를) 사용하여 견본 집합에 대해 자세히 알아봅니다. [견본 집합에 대한 빠른 시작](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/swatch-sets/quick-start-swatch-sets.html).
-- 방법 알아보기 [견본 집합 만들기](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/swatch-sets/creating-swatch-set.html#creating-a-swatch-set).
+- [견본 집합에 대한 빠른 시작](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/swatch-sets/quick-start-swatch-sets.html)을 사용하여 견본 집합에 대해 자세히 알아보세요.
+- [견본 집합을 만드는 방법](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/swatch-sets/creating-swatch-set.html#creating-a-swatch-set)을 알아보세요.
 
 ### 회전 집합
 
@@ -84,8 +84,8 @@ _회전 집합의 예_
 
 ![이미지](assets/media-sets/spin-set.png)
 
-- 다음을 사용하여 스핀 세트에 대해 자세히 알아보기 [회전 집합에 대한 빠른 시작](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/spin-sets/quick-start-spin-sets.html).
-- 방법 알아보기 [회전 집합 만들기](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/spin-sets/creating-spin-set.html#creating-a-spin-set).
+- [회전 집합에 대한 빠른 시작](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/spin-sets/quick-start-spin-sets.html)을 사용하여 회전 집합에 대해 자세히 알아보세요.
+- 회전 집합을 [만드는 방법](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/spin-sets/creating-spin-set.html#creating-a-spin-set)을 알아보세요.
 
 ## 혼합 미디어 집합
 
@@ -93,19 +93,19 @@ _회전 집합의 예_
 
 ![이미지](assets/media-sets/image-set-4.png)
 
-_혼합 미디어 세트의 예_
+_혼합 미디어 집합의 예_
 
 위의 혼합 미디어 세트의 URL은 다음과 같이 나타날 수 있습니다.
 
 ![이미지](assets/media-sets/image-set-url-1.png)
 
-- 다음을 사용하여 혼합 미디어 세트에 대해 자세히 알아보기: [혼합 미디어 집합에 대한 빠른 시작](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/mixed-media-sets/quick-start-mixed-media-sets.html).
+- [혼합 미디어 집합에 대한 빠른 시작](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/mixed-media-sets/quick-start-mixed-media-sets.html)이 있는 혼합 미디어 집합에 대해 자세히 알아보세요.
 
-- 방법 알아보기 [혼합 미디어 집합 만들기](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/mixed-media-sets/creating-mixed-media-set.html#creating-a-mixed-media-set).
+- [혼합 미디어 집합을 만드는 방법](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/mixed-media-sets/creating-mixed-media-set.html#creating-a-mixed-media-set)을 알아보세요.
 
 웹 사이트에서 확대/축소, 세트 또는 비디오용 이미지를 표시하려면 Dynamic Media Classic &quot;뷰어&quot;에서 이 이미지를 호출합니다. Dynamic Media Classic에는 견본 세트, 스핀 세트, 비디오 및 기타 많은 리치 미디어 에셋의 뷰어가 포함됩니다.
 
-자세히 알아보기 [AEM Assets 및 Dynamic Media Classic 뷰어](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html).
+[AEM Assets 및 Dynamic Media Classic용 뷰어](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html)에 대해 자세히 알아보세요.
 
 ## 일괄 처리 집합 사전 설정
 
@@ -113,7 +113,7 @@ _혼합 미디어 세트의 예_
 
 각 사전 설정은 정의된 명명 규칙과 일치하는 이미지를 사용하여 세트를 구성하는 방법을 정의하는 고유한 이름의 자체 포함된 명령 세트입니다. 사전 설정에서 먼저 집합에 그룹화할 에셋의 이름 지정 규칙을 정의합니다. 그런 다음 이러한 이미지를 참조하도록 일괄처리 집합 사전 설정을 만들 수 있습니다.
 
-사전 설정을 직접 만들 수는 있지만, 다음 위치에 있습니다. **설정 > 응용 프로그램 설정 > 일괄처리 집합 사전 설정** ) 가장 좋은 방법은 컨설팅 팀이나 기술 지원 팀에서 설정하도록 하는 것입니다. 이유는 다음과 같습니다.
+사전 설정을 직접 만들 수는 있지만(**설정 > 응용 프로그램 설정 > 일괄처리 사전 설정**&#x200B;에서 찾을 수 있음), 컨설팅 팀이나 기술 지원 팀에서 설정하는 것이 좋습니다. 이유는 다음과 같습니다.
 
 - 일괄처리 집합 사전 설정은 설정하기에 복잡할 수 있습니다. 일반 표현식으로 제공되며 개발자가 아닌 경우 이 구문이 낯설거나 혼란스러울 수 있습니다.
 - 만들어지면 기본적으로 켜져 있습니다. &quot;실행 취소&quot; 기능은 없습니다. 수천 개의 이미지 업로드를 시작하고 사전 설정이 잘못 구성된 경우 수동으로 찾아서 삭제해야 하는 수백 또는 수천 개의 끊어진 세트가 발생할 수 있습니다.
@@ -122,17 +122,17 @@ _혼합 미디어 세트의 예_
 
 일괄처리 집합 사전 설정은 업로드 시에만 적용됩니다. 이미지를 업로드한 후에는 실행할 수 없습니다. 따라서 모든 이미지 로드를 시작하기 전에 명명 규칙을 계획하고 사전 설정을 빌드하는 것이 중요합니다.
 
-사전 설정이 생성되면 회사 관리자는 활성 또는 비활성 여부를 선택할 수 있습니다. 활성화는 아래의 업로드 페이지에 표시됩니다. **작업 옵션**&#x200B;반면 비활성 사전 설정은 숨겨집니다.
+사전 설정이 생성되면 회사 관리자는 활성 또는 비활성 여부를 선택할 수 있습니다. 활성은 업로드 페이지의 **작업 옵션** 아래에 표시되지만 비활성 사전 설정은 숨겨집니다.
 
-방법 알아보기 [일괄처리 집합 사전 설정 만들기](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#creating-a-batch-set-preset).
+[일괄처리 집합 사전 설정을 만드는 방법](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#creating-a-batch-set-preset)을 알아보세요.
 
 ### 업로드 시 일괄처리 집합 사전 설정 사용
 
 일괄처리 집합 사전 설정을 만든 후 업로드 시 사용하는 방법은 다음과 같습니다.
 
-1. 클릭 **업로드** 다음 중 하나를 선택합니다 **데스크탑에서** 또는 **FTP를 통해**.
-2. 클릭 **작업 옵션**.
-3. 를 엽니다. **일괄처리 집합 사전 설정** 업로드와 함께 사용하려면 사전 설정을 선택하거나 선택 취소합니다.
+1. **업로드**&#x200B;를 클릭하고 **데스크톱에서** 또는 **FTP를 통해**&#x200B;를 선택합니다.
+2. **작업 옵션**&#x200B;을 클릭합니다.
+3. **일괄처리 집합 사전 설정** 옵션을 열고 업로드에 사용할 사전 설정을 선택하거나 선택 취소합니다.
 4. 업로드가 완료되면 폴더에서 완료된 세트를 찾습니다.
 
-자세히 알아보기 [일괄처리 집합 사전 설정](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#batch-set-presets).
+[일괄처리 집합 사전 설정](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#batch-set-presets)에 대해 자세히 알아보세요.

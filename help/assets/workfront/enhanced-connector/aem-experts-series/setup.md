@@ -11,7 +11,7 @@ thumbnail: 340331.jpeg
 hidefromtoc: false
 last-substantial-update: 2022-09-02T00:00:00Z
 badgeIntegration: label="통합" type="positive"
-badgeVersions: label="AEM Assets as a Cloud Service, AEM Assets 6.5" before-title="false"
+badgeVersions: label="AEM Assets as a Cloud Service AEM Assets 6.5" before-title="false"
 exl-id: f0018d16-af96-4b92-b0fc-6130d812bf8f
 duration: 2479
 source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
@@ -29,4 +29,4 @@ AEM Assets과 Workfront의 결합된 기능을 활용하여 Workfront for Experi
 
 >[!VIDEO](https://video.tv.adobe.com/v/340331?quality=12&learn=on)
 
-_다음 중 1번째 항목입니다. [Workfront for Experience Manager 강화 커넥터에 대한 4부로 구성된 expert 시리즈](./overview.md)_
+_Workfront for Experience Manager 강화 커넥터에 대한 [4부 전문가 시리즈 중 하나입니다](./overview.md)_

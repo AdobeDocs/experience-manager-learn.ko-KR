@@ -22,7 +22,7 @@ ht-degree: 8%
 
 AEM 작성자가 Microsoft Word 또는 Google 문서를 사용하여 문서를 편집하고 게시할 수 있도록 문서 작성을 구성하는 방법을 이해합니다.
 
-리뷰 [설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html) 문서 작성 설정에 대한 전체 세부 정보.
+문서 작성 설정에 대한 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html)를 검토하십시오.
 
 ## 문서 작성 시작하기
 
@@ -140,7 +140,7 @@ AEM 작성자가 Microsoft Word 또는 Google 문서를 사용하여 문서를 �
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1분</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="default-content-and-sections.md" title="기본 컨텐츠 및 섹션">새 편집기 토글</a>
+              <a href="default-content-and-sections.md" title="기본 컨텐츠 및 섹션">새 편집기 전환</a>
             </p>
             <p class="is-size-6">기본 콘텐츠 및 섹션의 문서 작성 개념을 살펴보십시오.</p>
             <a href="default-content-and-sections.md" class="spectrum-Button
@@ -235,7 +235,8 @@ AEM 작성자가 Microsoft Word 또는 Google 문서를 사용하여 문서를 �
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1분</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="bulk-metadata.md" title="대량 메타데이터">언어 복사</a>
+              <a href="bulk-metadata.md" title="대량 메타데이터">언어
+                복사본</a>
             </p>
             <p class="is-size-6">문서 작성에서 벌크 메타데이터가 처리되는 방식을 살펴봅니다.</p>
             <a href="bulk-metadata.md" class="spectrum-Button
@@ -757,7 +758,7 @@ AEM 작성자가 Microsoft Word 또는 Google 문서를 사용하여 문서를 �
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1분</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations/configure-sidekick.md" title="변형 생성 - 구성 Sidekick">변형 생성 - 구성 Sidekick</a>
+              <a href="./how-to/generate-variations/configure-sidekick.md" title="변형 생성 - 구성 Sidekick">변형 생성 - Sidekick 구성</a>
             </p>
             <p class="is-size-6">Edge Delivery Services 문서 작성에서 변형 생성을 위해 사이드 킥을 구성하는 방법을 살펴봅니다.</p>
             <a href="./how-to/generate-variations/configure-sidekick.md" class="spectrum-Button
@@ -821,7 +822,7 @@ AEM 작성자가 Microsoft Word 또는 Google 문서를 사용하여 문서를 �
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2분</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations/custom-prompt-templates.md" title="변형 생성 - 사용자 정의 프롬프트 템플릿">변형 생성 - 사용자 정의 프롬프트 템플릿</a>
+              <a href="./how-to/generate-variations/custom-prompt-templates.md" title="변형 생성 - 사용자 정의 프롬프트 템플릿">변형 생성 - 사용자 지정 프롬프트 템플릿</a>
             </p>
             <p class="is-size-6">변형 생성을 위한 사용자 정의 프롬프트 템플릿을 작성하는 방법을 살펴봅니다.</p>
             <a href="./how-to/generate-variations/custom-prompt-templates.md" class="spectrum-Button
@@ -853,7 +854,7 @@ AEM 작성자가 Microsoft Word 또는 Google 문서를 사용하여 문서를 �
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2분</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations/custom-prompt-templates.md" title="변형 생성 - 사용자 정의 프롬프트 템플릿 저장">변형 생성 - 사용자 정의 프롬프트 템플릿 저장</a>
+              <a href="./how-to/generate-variations/custom-prompt-templates.md" title="변형 생성 - 사용자 정의 프롬프트 템플릿 저장">변형 생성 - 사용자 지정 프롬프트 템플릿 저장</a>
             </p>
             <p class="is-size-6">변형 생성을 위해 사용자 정의 프롬프트 템플릿을 저장하는 방법을 살펴봅니다.</p>
             <a href="./how-to/generate-variations/custom-prompt-templates.md" class="spectrum-Button
@@ -949,7 +950,7 @@ AEM 작성자가 Microsoft Word 또는 Google 문서를 사용하여 문서를 �
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1분</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations/using-adobe-firefly-for-images.md" title="변형 생성 - 사용 Adobe Firefly">변형 생성 - 사용 Adobe Firefly</a>
+              <a href="./how-to/generate-variations/using-adobe-firefly-for-images.md" title="변형 생성 - 사용 Adobe Firefly">변형 생성 - Adobe Firefly 사용</a>
             </p>
             <p class="is-size-6">Adobe Firefly을 사용하여 콘텐츠 변형에 사용되는 이미지를 만드는 방법을 살펴봅니다.</p>
             <a href="./how-to/generate-variations/using-adobe-firefly-for-images.md" class="spectrum-Button
@@ -1013,7 +1014,7 @@ AEM 작성자가 Microsoft Word 또는 Google 문서를 사용하여 문서를 �
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2분</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations/trust-privacy.md" title="변형 생성 - 신뢰 및 개인 정보">변형 생성 - 신뢰 및 개인 정보</a>
+              <a href="./how-to/generate-variations/trust-privacy.md" title="변형 생성 - 신뢰 및 개인 정보">변형 생성 - 신뢰 및 개인 정보 보호</a>
             </p>
             <p class="is-size-6">변형 생성을 위해 Adobe이 신뢰와 개인 정보를 처리하는 방법을 살펴봅니다.</p>
             <a href="./how-to/generate-variations/trust-privacy.md" class="spectrum-Button

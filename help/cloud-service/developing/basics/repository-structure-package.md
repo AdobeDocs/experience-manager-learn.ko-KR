@@ -19,6 +19,6 @@ ht-degree: 2%
 
 # 저장소 구조 패키지
 
-AEM 애플리케이션 탐색 [저장소 구조 패키지](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/repository-structure-package.html), 중요도 및 최적의 정의 방법.
+AEM 응용 프로그램의 [저장소 구조 패키지](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/repository-structure-package.html), 중요도 및 이를 최적으로 정의하는 방법을 살펴봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330550?quality=12&learn=on)

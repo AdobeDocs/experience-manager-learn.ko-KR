@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # 선택한 뉴스레터를 하나의 PDF로 결합
 
-사용자의 선택 사항은 숨겨진 필드에 저장됩니다. 이 숨겨진 필드의 값은 을 사용하여 선택 사항을 하나의 pdf로 결합하는 서블릿에 전달됩니다. [Forms 어셈블러 서비스](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html).
+사용자의 선택 사항은 숨겨진 필드에 저장됩니다. 이 숨겨진 필드의 값은 [Forms 어셈블러 서비스](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html)를 사용하여 선택 항목을 하나의 pdf로 결합하는 서블릿에 전달됩니다.
 
 
 ## 서블릿을 사용하여 PDF 파일 어셈블

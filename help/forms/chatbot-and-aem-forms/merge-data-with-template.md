@@ -22,5 +22,5 @@ ht-degree: 0%
 
 ## OutputService를 사용하여 PDF 생성
 
-다음 [generatePDF](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePDFOutput-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-com.adobe.fd.output.api.PDFOutputOptions-) PDF 생성에 OutputService 메서드가 사용되었습니다.
+OutputService의 [generatePDF](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePDFOutput-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-com.adobe.fd.output.api.PDFOutputOptions-) 메서드를 사용하여 PDF을 생성했습니다.
 그런 다음 생성된 PDF은 Adobe Sign REST API를 사용하여 서명을 위해 전송되었습니다.

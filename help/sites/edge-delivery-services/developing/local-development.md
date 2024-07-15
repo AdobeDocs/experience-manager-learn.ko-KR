@@ -15,7 +15,7 @@ exl-id: 0f3e50f0-88d8-46be-be8b-0f547c3633a6
 source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
 workflow-type: tm+mt
 source-wordcount: '87'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -34,7 +34,7 @@ Edge Delivery Services 개발을 위한 로컬 개발 환경을 설정하는 방
    $ sudo npm install -g @adobe/aem-cli
    ```
 
-1. 디렉터리를 프로젝트 디렉터리인 로 변경합니다. 이 디렉터리는 [AEM 보일러 플레이트](https://github.com/adobe/aem-boilerplate) 템플릿.
+1. [AEM Boilerplate](https://github.com/adobe/aem-boilerplate) 템플릿에서 만든 git 저장소인 프로젝트 디렉터리로 디렉터리를 변경합니다.
 
    ```
    $ git clone git@github.com:my-org/my-project.git

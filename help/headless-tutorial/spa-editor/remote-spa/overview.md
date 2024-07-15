@@ -24,7 +24,7 @@ ht-degree: 2%
 
 AEM SPA Editor를 사용하여 편집 가능한 AEM 콘텐츠로 기존 React 기반(또는 Next.js) 원격 SPA을 추가하려는 개발자를 위한 멀티 파트 튜토리얼에 오신 것을 환영합니다.
 
-이 튜토리얼은 [WKND GraphQL 앱](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html), AEM GraphQL API를 통해 AEM 콘텐츠 조각 콘텐츠를 사용하지만 SPA 콘텐츠의 컨텍스트 내 작성을 제공하지 않는 React 앱입니다.
+이 자습서는 AEM의 GraphQL API에 대해 AEM 콘텐츠 조각 콘텐츠를 사용하는 React 앱인 [WKND SPA 앱](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)을 기반으로 빌드되지만 GraphQL 콘텐츠의 컨텍스트 내 작성은 제공하지 않습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333272?quality=12&learn=on)
 
@@ -32,16 +32,16 @@ AEM SPA Editor를 사용하여 편집 가능한 AEM 콘텐츠로 기존 React �
 
 이 자습서는 원격 SPA 또는 AEM 컨텍스트 밖에서 실행되는 SPA을 업데이트하여 AEM에서 작성된 콘텐츠를 소비 및 제공하는 방법을 보여 주기 위한 것입니다.
 
-자습서의 대부분의 활동은 JavaScript 개발에 중점을 두지만 AEM을 중심으로 하는 중요한 측면이 다룹니다. 이러한 측면에서는 콘텐츠가 AEM에서 작성 및 저장되는 위치를 정의하고 SPA 경로를 AEM Pages에 매핑하는 작업이 포함됩니다.
+자습서의 대부분의 활동은 JavaScript 개발에 중점을 두지만 AEM을 중심으로 중요한 측면이 다룹니다. 이러한 측면에서는 콘텐츠가 AEM에서 작성 및 저장되는 위치를 정의하고 SPA 경로를 AEM Pages에 매핑하는 작업이 포함됩니다.
 
-튜토리얼은 **AEM as a Cloud Service** 및 는 다음 두 개의 프로젝트로 구성됩니다.
+자습서는 **AEM as a Cloud Service**&#x200B;에서 작동하도록 디자인되었으며 두 개의 프로젝트로 구성됩니다.
 
-1. 다음 __AEM 프로젝트__ AEM에 배포해야 하는 구성 및 콘텐츠를 포함합니다.
-1. __WKND 앱__ 프로젝트는 AEM SPA 편집기와 통합할 SPA입니다.
+1. __AEM 프로젝트__&#x200B;에 AEM에 배포해야 하는 구성 및 콘텐츠가 포함되어 있습니다.
+1. __WKND 앱__ 프로젝트는 AEM의 SPA 편집기와 통합할 SPA입니다.
 
 ## 최신 코드
 
-+ 이 자습서 코드의 시작점은 [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/remote-spa-tutorial) 다음에서 `remote-spa-tutorial` 폴더를 삭제합니다.
++ 이 자습서 코드의 시작점은 `remote-spa-tutorial` 폴더의 [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/remote-spa-tutorial)에서 찾을 수 있습니다.
 
 ## 사전 요구 사항
 
@@ -57,15 +57,15 @@ AEM SPA Editor를 사용하여 편집 가능한 AEM 콘텐츠로 기존 React �
 
 이 자습서에서는 다음과 같이 가정합니다.
 
-+ [Microsoft® Visual Studio 코드](https://visualstudio.microsoft.com/) IDE로
-+ 의 작업 디렉터리 `~/Code/aem-guides-wknd-graphql/remote-spa-tutorial`
-+ 에서 작성자 서비스로 AEM SDK 실행 `http://localhost:4502`
-+ 로컬로 AEM SDK 실행 `admin` 암호가 있는 계정 `admin`
-+ SPA 실행 `http://localhost:3000`
++ IDE로 [Microsoft® Visual Studio 코드](https://visualstudio.microsoft.com/)
++ `~/Code/aem-guides-wknd-graphql/remote-spa-tutorial`의 작업 디렉터리
++ `http://localhost:4502`에서 작성자 서비스로 AEM SDK 실행
++ 암호가 `admin`인 로컬 `admin` 계정으로 AEM SDK를 실행하는 중
++ `http://localhost:3000`에서 SPA 실행
 
 >[!NOTE]
 >
-> **로컬 개발 환경을 설정하는 데 도움이 필요하십니까?** 다음을 확인하십시오. [AEM as a Cloud Service SDK를 사용하여 로컬 개발 환경을 설정하는 방법에 대한 다음 안내서입니다](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=ko-KR).
+> **로컬 개발 환경을 설정하는 데 도움이 필요하십니까?** AEM as a Cloud Service SDK를 사용하여 로컬 개발 환경을 설정하는 방법에 대한 [다음 안내서를 확인하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=ko-KR).
 
 ## 1. AEM for SPA 편집기 구성
 
@@ -99,4 +99,4 @@ AEM SPA Editor가 SPA을 작성 컨텍스트에 통합하려면 SPA에 몇 가�
 
 ## 추가 리소스
 
-+ [AEM SPA React 편집 가능한 구성 요소](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
++ [AEM SPA React Editable Components](https://www.npmjs.com/package/@adobe/aem-react-editable-components)

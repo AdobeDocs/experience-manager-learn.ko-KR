@@ -23,7 +23,7 @@ AEM Forms 양식 데이터 모델을 사용하여 Adobe Campaign Standard 프로
 
 ## 사용자 지정 인증 만들기 {#create-custom-authentication}
 
-Swagger 파일을 사용하여 데이터 소스를 만들 때 AEM Forms은 다음과 같은 종류의 인증 유형을 지원합니다
+Swagger 파일을 사용하여 Data Source을 만들 때 AEM Forms은 다음과 같은 유형의 인증 유형을 지원합니다
 
 * 없음
 * OAuth 2.0
@@ -31,7 +31,7 @@ Swagger 파일을 사용하여 데이터 소스를 만들 때 AEM Forms은 다�
 * API 키
 * 사용자 정의 인증
 
-![캠페인](assets/campaignfdm.gif)
+![campaigningfdm](assets/campaignfdm.gif)
 
 Adobe Campaign Standard에 REST를 호출하려면 사용자 지정 인증을 사용해야 합니다.
 
@@ -102,20 +102,21 @@ private Logger log = LoggerFactory.getLogger(CampaignAuthentication.class);
 }
 ```
 
-## 데이터 소스 만들기 {#create-data-source}
+## 데이터 Source 만들기 {#create-data-source}
 
 첫 번째 단계는 Swagger 파일을 만드는 것입니다. Swagger 파일은 Adobe Campaign Standard에서 프로필을 만드는 데 사용할 REST API를 정의합니다. Swagger 파일은 REST API의 입력 매개 변수와 출력 매개 변수를 정의합니다.
 
-데이터 소스는 Swagger 파일을 사용하여 만들어집니다. 데이터 소스를 만들 때 인증 유형을 지정할 수 있습니다. 이 경우 사용자 지정 인증을 사용하여 Adobe Campaign에 대해 인증하려고 합니다. 위에 나열된 코드는 Adobe Campaign에 대해 인증하는 데 사용되었습니다.
+데이터 소스는 Swagger 파일을 사용하여 만들어집니다. Data Source을 만들 때 인증 유형을 지정할 수 있습니다. 이 경우 사용자 지정 인증을 사용하여 Adobe Campaign에 대해 인증하려고 합니다. 위에 나열된 코드는 Adobe Campaign에 대해 인증하는 데 사용되었습니다.
 
-샘플 Swagger 파일은 이 문서와 관련된 에셋의 일부로 제공됩니다.**ACS 인스턴스와 일치하도록 swagger 파일의 호스트 및 basePath를 변경해야 합니다**
+샘플 Swagger 파일은 이 문서와 관련된 에셋의 일부로 제공됩니다.**ACS 인스턴스와 일치하도록 Swagger 파일의 호스트 및 basePath를 변경했는지 확인**
 
 ## 솔루션 테스트 {#test-the-solution}
 
 솔루션을 테스트하려면 다음 단계를 따르십시오.
-* [여기에 설명된 단계를 따랐는지 확인하십시오](aem-forms-with-campaign-standard-getting-started-tutorial.md)
+* [여기에 설명된 대로 단계를 따랐는지 확인](aem-forms-with-campaign-standard-getting-started-tutorial.md)
 * [이 파일을 다운로드하고 압축 해제하여 Swagger 파일을 가져옵니다.](assets/create-acs-profile-swagger-file.zip)
-* Swagger 파일을 사용하여 데이터 소스 생성 양식 데이터 모델 생성 을 선택하고 이전 단계에서 생성된 데이터 소스를 기반으로 합니다
+* Swagger 파일을 사용하여 Data Source 만들기
+양식 데이터 모델을 만들고 이전 단계에서 만든 데이터 Source을 기반으로 합니다
 * 이전 단계에서 만든 양식 데이터 모델을 기반으로 적응형 양식을 만듭니다.
 * 데이터 소스 탭의 다음 요소를 적응형 양식에 끌어다 놓습니다
 

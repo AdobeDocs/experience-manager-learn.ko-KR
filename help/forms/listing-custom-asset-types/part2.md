@@ -25,13 +25,13 @@ ht-degree: 0%
 이 문서에서는 사용자 지정 자산 유형과 OOTB 자산 유형을 동일한 페이지에 표시하는 사용자 지정 템플릿을 만들고 있습니다. 사용자 지정 템플릿을 만들려면 다음 지침을 따르십시오
 
 1. /apps 아래에 sling: 폴더를 만듭니다. 이름을 &quot; myportalcomponent &quot; 로 지정합니다.
-1. &quot;fpContentType&quot; 속성을 추가합니다. 값을 &quot;(으)로 설정&#x200B;**/libs/fd/ fp/formTemplate&quot;.**
+1. &quot;fpContentType&quot; 속성을 추가합니다. 값을 &quot;**/libs/fd/ fp/formTemplate&quot;으로 설정합니다.**
 1. &quot;title&quot; 속성을 추가하고 값을 &quot;custom template&quot;으로 설정합니다. 검색 및 목록 구성 요소의 드롭다운 목록에 표시되는 이름입니다
 1. 이 폴더 아래에 &quot;template.html&quot;을 만듭니다. 이 파일에는 스타일을 지정하고 다양한 에셋 유형을 표시하는 코드가 있습니다.
 
 ![appsfolder](assets/appsfolder_.png)
 
-다음 코드는 검색 및 목록 구성 요소를 사용하는 다양한 유형의 자산을 나열합니다. data-type = &quot;videos&quot; 태그로 표시된 대로 각 에셋 유형에 대해 별도의 html 요소를 만듭니다. &quot;비디오&quot;의 자산 유형에는 &lt;video> 요소를 사용하여 비디오를 인라인으로 재생합니다. &quot;worddocuments&quot;의 에셋 유형의 경우 다른 html 표시를 사용합니다.
+다음 코드는 검색 및 목록 구성 요소를 사용하는 다양한 유형의 자산을 나열합니다. data-type = &quot;videos&quot; 태그로 표시된 대로 각 에셋 유형에 대해 별도의 html 요소를 만듭니다. &quot;videos&quot;의 에셋 유형의 경우 &lt;video> 요소를 사용하여 비디오 인라인을 재생합니다. &quot;worddocuments&quot;의 에셋 유형의 경우 다른 html 표시를 사용합니다.
 
 ```html
 <div class="__FP_boxes-container __FP_single-color">
@@ -75,7 +75,7 @@ ht-degree: 0%
 
 ## 검색 및 목록 구성 요소 구성 {#configure-search-and-lister-component}
 
-사용자 지정 템플릿을 정의한 후에는 이 사용자 지정 템플릿을 &quot;검색 및 목록&quot; 구성 요소와 연결해야 합니다. 브라우저 지정 [이 URL로](http://localhost:4502/editor.html/content/AemForms/CustomPortal.html).
+사용자 지정 템플릿을 정의한 후에는 이 사용자 지정 템플릿을 &quot;검색 및 목록&quot; 구성 요소와 연결해야 합니다. 브라우저 [을(를) 이 URL](http://localhost:4502/editor.html/content/AemForms/CustomPortal.html)(으)로 지정합니다.
 
 디자인 모드로 전환하고 허용된 구성 요소 그룹에 검색 및 목록 구성 요소를 포함하도록 단락 시스템을 구성합니다. 검색 및 목록 작성자 구성 요소는 문서 서비스 그룹의 일부입니다.
 
@@ -105,11 +105,11 @@ ht-degree: 0%
 
 ![assettypes](assets/assettypes.png)
 
-이제 검색 및 목록 포털 구성 요소를 구성했으므로 목록 목록이 작동 중인지 확인할 차례입니다. 브라우저 지정 [이 URL로](http://localhost:4502/content/AemForms/CustomPortal.html?wcmmode=disabled). 결과는 아래 표시된 이미지와 같아야 합니다.
+이제 검색 및 목록 포털 구성 요소를 구성했으므로 목록 목록이 작동 중인지 확인할 차례입니다. 브라우저 [을(를) 이 URL](http://localhost:4502/content/AemForms/CustomPortal.html?wcmmode=disabled)(으)로 지정합니다. 결과는 아래 표시된 이미지와 같아야 합니다.
 
 >[!NOTE]
 >
->포털이 게시 서버에 사용자 지정 자산 유형을 나열하는 경우 &quot;fd-service&quot; 사용자에게 노드에 대한 &quot;읽기&quot; 권한을 부여했는지 확인하십시오. **/apps/fd/fp/extensions/querybuilder**
+>포털에서 게시 서버에 사용자 지정 자산 유형을 나열하는 경우 &quot;fd-service&quot; 사용자에게 **/apps/fd/fp/extensions/querybuilder** 노드에 대해 &quot;읽기&quot; 권한을 부여했는지 확인하십시오.
 
 ![assettypes](assets/assettypeslistings.png)
-[패키지 관리자를 사용하여 이 패키지를 다운로드하여 설치하십시오.](assets/customassettypekt1.zip) 여기에는 검색 및 목록 구성 요소를 사용하여 나열할 자산 유형으로 사용되는 샘플 mp4, word 문서 및 xdp 파일이 포함되어 있습니다
+[패키지 관리자를 사용하여 이 패키지를 다운로드하여 설치하십시오.](assets/customassettypekt1.zip) 여기에는 검색 및 목록 구성 요소를 사용하여 나열할 자산 유형으로 사용되는 샘플 mp4, word 문서 및 xdp 파일이 포함되어 있습니다.

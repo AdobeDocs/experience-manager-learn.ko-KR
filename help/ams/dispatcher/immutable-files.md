@@ -32,7 +32,7 @@ AMS는 시스템을 프로비저닝할 때 모든 것을 기능적이고 안전�
 레이아웃은 사용자의 동작을 변경하고 필요한 변경 사항을 재정의하는 것을 막지 않습니다.  이러한 파일을 변경하는 대신 원본을 대체하는 고유한 파일을 오버레이합니다.
 
 또한 AMS가 최신 수정 사항 및 보안 개선 사항으로 Dispatcher를 패치할 때 파일이 변경되지 않는다는 확신을 가질 수 있습니다.  그러면 계속해서 개선 사항의 이점을 누리고 원하는 변경 사항만 채택할 수 있습니다.
-![레인을 따라 공이 굴러가는 볼링 레인을 보여줍니다.  그 공에는 당신을 나타내는 단어가 적힌 화살표가 있습니다.  거터 범퍼가 올라가 있고 그 위에 immutable 파일이 있습니다.](assets/immutable-files/bowling-file-immutability.png "볼링-파일-불변")
+![레인을 따라 공이 굴러가는 볼링 레인을 표시합니다.  그 공에는 당신을 나타내는 단어가 적힌 화살표가 있습니다.  거터 범퍼가 올라가 있고 그 위에 immutable 파일이 있습니다.](assets/immutable-files/bowling-file-immutability.png "볼링 파일 불변성")
 위의 그림에서 보듯이, 변경 불가능한 파일은 게임을 하는 것을 막지 않습니다.  성능 저하를 방지하고 계속 진행합니다.  이 방법을 사용하면 다음과 같은 몇 가지 주요 기능을 사용할 수 있습니다.
 
 - 사용자 지정은 고유한 안전 공간에서 처리됩니다
@@ -41,7 +41,7 @@ AMS는 시스템을 프로비저닝할 때 모든 것을 기능적이고 안전�
 - 기본 설치와 사용자 지정 구성을 동시에 테스트하면 문제가 사용자 지정으로 인해 발생하는지 아니면 다른 원인으로 인해 발생하는지 식별하는 데 도움이 됩니다.
 
 
-다음은 Dispatcher와 함께 배포되는 파일의 일반적인 목록입니다.
+다음은 Dispatcher과 함께 배포되는 파일의 일반적인 목록입니다.
 
 ```
 /etc/httpd/
@@ -186,7 +186,7 @@ $ lsattr -Rl /etc/httpd 2>/dev/null | grep Immutable
 
 ### 변수
 
-변수를 사용하면 구성 파일 자체를 변경하지 않고도 기능을 변경할 수 있습니다.  변수의 값을 조정하여 구성의 특정 요소를 조정할 수 있습니다.  파일에서 강조할 수 있는 한 가지 예 `/etc/httpd/conf.d/dispatcher_vhost.conf` 은 여기에 표시됩니다.
+변수를 사용하면 구성 파일 자체를 변경하지 않고도 기능을 변경할 수 있습니다.  변수의 값을 조정하여 구성의 특정 요소를 조정할 수 있습니다.  `/etc/httpd/conf.d/dispatcher_vhost.conf` 파일에서 강조할 수 있는 한 가지 예가 다음과 같습니다.
 
 ```
 Include /etc/httpd/conf.d/variables/ams_default.vars
@@ -199,7 +199,7 @@ IfModule disp_apache2.c
 /IfModule
 ```
 
-DispatcherLogLevel 지시문에 `DISP_LOG_LEVEL` 일반적인 값 대신 표시되어야 합니다.  코드의 해당 섹션 위에는 변수 파일에 include 문도 표시됩니다.  변수 파일 `/etc/httpd/conf.d/variables/ams_default.vars` 다음은 우리가 보고 싶은 곳입니다.  다음은 해당 변수 파일의 내용입니다.
+DispatcherLogLevel 지시문에 일반적인 값 대신 `DISP_LOG_LEVEL`의 변수가 있는 방법을 확인하십시오.  코드의 해당 섹션 위에는 변수 파일에 include 문도 표시됩니다.  변수 파일 `/etc/httpd/conf.d/variables/ams_default.vars`은(는) 다음에 살펴볼 위치입니다.  다음은 해당 변수 파일의 내용입니다.
 
 ```
 Define DISP_LOG_LEVEL info
@@ -211,11 +211,11 @@ Define PUBLISH_FORCE_SSL 0
 Define LIVECYCLE_FORCE_SSL 1
 ```
 
-위의 현재 값 을(를) 참조하십시오. `DISP_LOG_LEVEL` 변수가 `info`.  이것을 추적하거나 디버그하거나 선택한 숫자 값/레벨로 조정할 수 있습니다.  이제 로그 수준을 제어하는 모든 곳이 자동으로 조정됩니다.
+위에서 `DISP_LOG_LEVEL` 변수의 현재 값이 `info`입니다.  이것을 추적하거나 디버그하거나 선택한 숫자 값/레벨로 조정할 수 있습니다.  이제 로그 수준을 제어하는 모든 곳이 자동으로 조정됩니다.
 
 ### 오버레이 메서드
 
-최상위 include 파일 이 모든 사용자 정의 작업의 시작이기 때문에 숙지하십시오.  간단한 예제로 시작하기 위해 이 Dispatcher를 가리키려는 새 도메인 이름을 추가하는 시나리오가 있습니다.  is we-retail.adobe.com 을 사용하는 도메인 예입니다.  먼저 변경 사항을 추가할 수 있는 새 구성 파일에 기존 구성 파일을 복사하는 것부터 시작하겠습니다.
+최상위 include 파일 이 모든 사용자 정의 작업의 시작이기 때문에 숙지하십시오.  간단한 예제로 시작하기 위해 이 Dispatcher을 가리키려는 새 도메인 이름을 추가하는 시나리오가 있습니다.  is we-retail.adobe.com 을 사용하는 도메인 예입니다.  먼저 변경 사항을 추가할 수 있는 새 구성 파일에 기존 구성 파일을 복사하는 것부터 시작하겠습니다.
 
 ```
 $ cp /etc/httpd/conf.d/available_vhosts/aem_publish.vhost /etc/httpd/conf.d/available_vhosts/weretail_publish.vhost
@@ -259,13 +259,13 @@ VirtualHost *:80
 /VirtualHost
 ```
 
-이제 다음을 업데이트했습니다. `ServerName` 및 `ServerAlias` 새 도메인 이름과 일치시키고 다른 이동 경로 헤더를 업데이트하는 작업.  이제 Apache가 새 파일을 사용할 수 있도록 새 파일을 활성화해 보겠습니다.
+새 도메인 이름과 일치하도록 `ServerName` 및 `ServerAlias`을(를) 업데이트하고 다른 이동 경로 헤더를 업데이트했습니다.  이제 Apache가 새 파일을 사용할 수 있도록 새 파일을 활성화해 보겠습니다.
 
 ```
 $ cd /etc/httpd/conf.d/enabled_vhosts/; ln -s ../available_vhosts/weretail_publish.vhost .
 ```
 
-이제 Apache 웹 서버는 도메인이 트래픽을 발생시켜야 한다는 것을 알고 있지만 여전히 Dispatcher 모듈에 적용할 새 도메인 이름이 있음을 알려야 합니다.  새 을(를) 만드는 것으로 시작합니다. `*_vhost.any` 파일 `/etc/httpd/conf.dispatcher.d/vhosts/weretail_vhosts.any` 그리고 이 파일 안에 적용할 도메인 이름을 넣겠습니다.
+이제 Apache 웹 서버는 도메인이 트래픽을 발생시켜야 한다는 것을 알고 있지만 여전히 Dispatcher 모듈에 적용할 새 도메인 이름이 있음을 알려야 합니다.  새 `*_vhost.any` 파일 `/etc/httpd/conf.dispatcher.d/vhosts/weretail_vhosts.any`을(를) 만드는 것부터 시작하여 해당 파일 안에 적용할 도메인 이름을 넣겠습니다.
 
 ```
 "we-retail.adobe.com"
@@ -301,7 +301,7 @@ $ cp /etc/httpd/conf.dispatcher.d/available_farms/999_ams_publish_farm.any /etc/
 }
 ```
 
-이제 팜 이름과 이에 사용하는 포함을 업데이트했습니다. `/virtualhosts` 팜 구성의 섹션입니다.  실행 중인 구성에서 사용할 수 있도록 이 새 팜 파일을 활성화해야 합니다.
+팜 이름과 팜 구성의 `/virtualhosts` 섹션에서 사용하는 포함 이름이 업데이트되었습니다.  실행 중인 구성에서 사용할 수 있도록 이 새 팜 파일을 활성화해야 합니다.
 
 ```
 $ cd /etc/httpd/conf.dispatcher.d/enabled_farms/; ln -s ../available_farms/400_weretail_publish_farm.any .

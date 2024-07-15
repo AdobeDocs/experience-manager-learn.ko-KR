@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # Unix 설정에서 다중 사용자 PDFG 변환 문제를 해결하는 절차
 
-*이 비디오에서는 Unix 설정에서 다중 사용자 PDFG 변환 문제를 해결하는 프로세스에 대해 설명합니다.*
+*이 비디오에서는 Unix 설정에서 다중 사용자 PDFG 변환 문제를 해결하는 과정을 설명합니다.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335549?quality=12&learn=on)

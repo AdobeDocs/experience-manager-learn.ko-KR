@@ -1,6 +1,6 @@
 ---
 title: 준비 및 Best Practice Analyzer
-description: Best Practice Analyzer 가 애플리케이션을 Experience Manager as a Cloud Service으로 이동할 수 있도록 지원하는 방법에 대해 알아봅니다
+description: Best Practice Analyzer 가 애플리케이션이 Experience Manager as a Cloud Service 분석기로 이동할 준비를 하는 데 어떻게 도움이 되는지 알아봅니다.
 version: Cloud Service
 feature: Migration
 topic: Migration, Upgrade

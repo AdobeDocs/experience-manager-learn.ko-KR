@@ -11,7 +11,7 @@ thumbnail: 340397.jpeg
 hidefromtoc: false
 last-substantial-update: 2022-09-02T00:00:00Z
 badgeIntegration: label="통합" type="positive"
-badgeVersions: label="AEM Assets as a Cloud Service, AEM Assets 6.5" before-title="false"
+badgeVersions: label="AEM Assets as a Cloud Service AEM Assets 6.5" before-title="false"
 exl-id: 7d44e1b7-7216-431d-b866-6adcc8673d53
 duration: 2844
 source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
@@ -29,4 +29,4 @@ Workfront for AEM 강화 커넥터의 고급 설정에 대해 알아보고 AEM�
 
 >[!VIDEO](https://video.tv.adobe.com/v/340397?quality=12&learn=on)
 
-_의 네 번째 [Workfront for Experience Manager 강화 커넥터에 대한 4부로 구성된 expert 시리즈](./overview.md)_
+_Workfront for Experience Manager 강화 커넥터에 대한 [4부 전문가 시리즈의 4부](./overview.md)_

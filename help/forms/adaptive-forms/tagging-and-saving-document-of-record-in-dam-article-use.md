@@ -160,7 +160,7 @@ public class TagAndStoreDoRinDAM implements WorkflowProcess
 시스템에서 이 샘플을 작업하려면 아래 단계를 따르십시오.
 * [Developingwithserviceuser 번들 배포](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-* [setvalue 번들 다운로드 및 배포](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). 제출된 양식 데이터의 태그를 설정하는 사용자 정의 OSGI 번들입니다.
+* [setvalue 번들을 다운로드하여 배포합니다](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). 제출된 양식 데이터의 태그를 설정하는 사용자 정의 OSGI 번들입니다.
 
 * [샘플 적응형 양식 다운로드](assets/tag-and-store-in-dam-adaptive-form.zip)
 
@@ -168,16 +168,16 @@ public class TagAndStoreDoRinDAM implements WorkflowProcess
 
 * 만들기 를 클릭합니다 | 파일 업로드 및 태그 업로드 및 dam-adaptive-form.zip에 저장
 
-* [문서 에셋 가져오기](assets/tag-and-store-in-dam-assets.zip) AEM 패키지 관리자 사용
-* 를 엽니다. [미리 보기 모드의 샘플 양식](http://localhost:4502/content/dam/formsanddocuments/tagandstoreindam/jcr:content?wcmmode=disabled). **모든 필드 입력** 양식을 제출하십시오.
-* [DAM의 Peak 폴더로 이동](http://localhost:4502/assets.html/content/dam/Peak). Peak 폴더에 DoR이 표시됩니다. 문서의 속성을 확인합니다. 적절하게 태그가 지정되어 있어야 합니다.
+* AEM 패키지 관리자를 사용하여 [문서 에셋 가져오기](assets/tag-and-store-in-dam-assets.zip)
+* 미리 보기 모드에서 [샘플 양식을 엽니다](http://localhost:4502/content/dam/formsanddocuments/tagandstoreindam/jcr:content?wcmmode=disabled). **모든 필드 입력** 및 양식 제출
+* [DAM의 최대 폴더로 이동](http://localhost:4502/assets.html/content/dam/Peak). Peak 폴더에 DoR이 표시됩니다. 문서의 속성을 확인합니다. 적절하게 태그가 지정되어 있어야 합니다.
 축하합니다!! 시스템에 샘플을 성공적으로 설치했습니다.
 
-* 다음을 살펴보겠습니다. [워크플로우](http://localhost:4502/editor.html/conf/global/settings/workflow/models/TagAndStoreDoRinDAM.html) 양식 제출 시 트리거됩니다.
+* 양식 제출 시 트리거되는 [워크플로](http://localhost:4502/editor.html/conf/global/settings/workflow/models/TagAndStoreDoRinDAM.html)를 살펴보겠습니다.
 * 워크플로우의 첫 번째 단계에서는 지원자 이름과 거주 국가를 연결하여 고유한 파일 이름을 만듭니다.
 * 워크플로우의 두 번째 단계는 태그 계층 구조와 태그 지정이 필요한 양식 필드 요소를 전달합니다. 프로세스 단계는 제출된 데이터에서 값을 추출하고 문서에 태그를 지정해야 하는 태그 제목을 구성합니다.
 * DAM의 다른 폴더에 DoR을 저장하려면 아래 스크린샷에 지정된 대로 구성 속성을 사용하여 폴더 위치를 지정합니다.
 
 다른 두 매개 변수는 적응형 양식 제출 옵션에 지정된 대로 DoR 및 데이터 파일 경로와 관련이 있습니다. 여기서 지정하는 값이 적응형 양식 제출 옵션에서 지정한 값과 일치하는지 확인하십시오.
 
-![태그 Dor](assets/tag_dor_service_configuration.gif)
+![Dor 태그](assets/tag_dor_service_configuration.gif)

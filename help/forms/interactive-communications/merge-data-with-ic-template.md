@@ -162,12 +162,12 @@ String params = arg2.get("PROCESS_ARGS","string").toString();
 
 서버에서 테스트하려면 다음 단계를 수행하십시오.
 
-* [일별 CQ 메일 서비스를 구성합니다.](https://helpx.adobe.com/experience-manager/6-5/communities/using/email.html) 첨부 파일로 생성된 문서가 포함된 이메일을 보내는 데 필요합니다.
+* [일별 CQ 메일 서비스를 구성합니다.](https://helpx.adobe.com/experience-manager/6-5/communities/using/email.html) 첨부 파일로 생성된 문서가 포함된 전자 메일을 보내는 데 필요합니다.
 * [서비스 사용자 번들을 사용한 개발 배포](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 * Apache Sling 서비스 사용자 매퍼 서비스 구성에 다음 항목을 추가했습니다
 * **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service**
 * [이 문서와 관련된 에셋을 다운로드하여 파일 시스템에 압축 해제합니다.](assets/prefillservice.zip)
-* [AEM 패키지 관리자를 사용하여 다음 패키지 가져오기](http://localhost:4502/crx/packmgr/index.jsp)
+* [AEM 패키지 관리자를 사용하여 다음 패키지를 가져옵니다](http://localhost:4502/crx/packmgr/index.jsp)
    1. beneficiaryconfirmationic.zip
    2. changeofbeneficiaryform.zip
    3. generatebeneficiaryworkflow.zip
@@ -175,9 +175,9 @@ String params = arg2.get("PROCESS_ARGS","string").toString();
 
    * GenerateIC.GenerateIC.core-1.0-SNAPSHOT.jar. 이 번들에는 이 문서에 언급된 코드가 포함되어 있습니다.
 
-* [ChangeOfBeneficialForm 열기](http://localhost:4502/content/dam/formsanddocuments/changebeneficiary/jcr:content?wcmmode=disabled)
+* [ChangeOfBenefitForm 열기](http://localhost:4502/content/dam/formsanddocuments/changebeneficiary/jcr:content?wcmmode=disabled)
 * 적응형 양식이 아래와 같이 AEM Workflow에 제출되도록 구성되었는지 확인하십시오
   ![이미지](assets/generateic.PNG)
-* [워크플로우 모델을 구성합니다.](http://localhost:4502/editor.html/conf/global/settings/workflow/models/ChangesToBeneficiary.html)프로세스 단계 및 이메일 구성 요소 보내기가 환경에 따라 구성되어 있는지 확인합니다.
-* [ChangeOfBenefitForm을 미리 봅니다.](http://localhost:4502/content/dam/formsanddocuments/changebeneficiary/jcr:content?wcmmode=disabled) 일부 세부 정보를 입력하고 제출
+* [워크플로 모델을 구성합니다.](http://localhost:4502/editor.html/conf/global/settings/workflow/models/ChangesToBeneficiary.html)환경에 따라 프로세스 단계 및 전자 메일 구성 요소 보내기가 구성되어 있는지 확인하십시오.
+* [ChangeOfBenefitForm을 미리 봅니다.](http://localhost:4502/content/dam/formsanddocuments/changebeneficiary/jcr:content?wcmmode=disabled) 세부 정보를 입력하고 제출
 * 워크플로우가 호출되고 IC 인쇄 채널 문서가 첨부 파일로 이메일 구성 요소에 지정된 수신자에게 전송됩니다

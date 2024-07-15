@@ -165,7 +165,7 @@ public void updateSignatureStatus(String formData, String guid) {
 
 ## 서명할 다음 양식 받기
 
-다음 코드는 상태가 0인 주어진 customerID에 대한 다음 서명 양식을 가져오는 데 사용되었습니다. sql 쿼리가 행을 반환하지 않으면 문자열을 반환합니다. **&quot;AllDone&quot;** 지정된 고객 id에 대해 서명할 양식이 더 이상 없음을 나타냅니다.
+다음 코드는 상태가 0인 주어진 customerID에 대한 다음 서명 양식을 가져오는 데 사용되었습니다. SQL 쿼리가 행을 반환하지 않으면 지정된 고객 ID에 대해 서명할 양식이 더 이상 없음을 나타내는 문자열 **&quot;AllDone&quot;**&#x200B;을(를) 반환합니다.
 
 ```java
 @Override
@@ -205,7 +205,7 @@ public String getNextFormToSign(int customerID) {
 
 ## 자산
 
-위에서 언급한 서비스를 사용하는 OSGi 번들은 다음과 같을 수 있습니다. [여기에서 다운로드됨](assets/sign-multiple-forms.jar)
+위에서 언급한 서비스가 포함된 OSGi 번들은 [여기에서 다운로드](assets/sign-multiple-forms.jar)할 수 있습니다.
 
 ## 다음 단계
 

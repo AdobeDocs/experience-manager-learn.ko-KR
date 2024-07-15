@@ -21,9 +21,9 @@ ht-degree: 8%
 + [Cloud Service으로 AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html){target=_blank}
 + [AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html){target=_blank}
 + [AEM Foundation](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html){target=_blank}
-+ [AEM 안내서](https://experienceleague.adobe.com/docs/experience-manager-guides-learn/tutorials/overview.html){target=_blank}
++ [AEM Guides](https://experienceleague.adobe.com/docs/experience-manager-guides-learn/tutorials/overview.html){target=_blank}
 + 여러 단계 Tutorials {#multi}
-   + [AEM Sites 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html){target=_blank}
+   + [AEM Sites 시작](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR){target=_blank}
    + [AEM SPA 편집기 및 반응 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html){target=_blank}
    + [AEM 및 Adobe Target 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html){target=_blank}
    + [AEM 6.x Dynamic Media Classic 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/dynamic-media-classic-tutorial/overview.html){target=_blank}

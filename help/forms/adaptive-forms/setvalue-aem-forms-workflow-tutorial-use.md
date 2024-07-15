@@ -43,15 +43,15 @@ AEM 워크플로우에서 프로세스 단계 를 사용합니다. 이 프로세
 * [샘플 번들 배포](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). 제출된 xml 데이터의 요소 값을 설정할 수 있는 사용자 지정 OSGI 번들입니다
 
 * [zip 파일의 내용 다운로드 및 추출](assets/setvalueassets.zip)
-* 브라우저를 가리켜서 [패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp)
+* 브라우저를 [패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp)(으)로 지정
 * setValueWorkflow.zip을 가져와 설치합니다. 여기에 샘플 워크플로우 모델이 있습니다.
-* 브라우저를 가리켜서 [Forms 및 문서](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* 브라우저를 [Forms 및 문서](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)(으)로 지정
 * 만들기 를 클릭합니다 | 파일 업로드
 * TimeOfRequestForm.zip 업로드
-* 를 엽니다. [TimeOffRequestform](http://localhost:4502/content/dam/formsanddocuments/timeoffapplication/jcr:content?wcmmode=disabled)
+* [TimeOffRequestform](http://localhost:4502/content/dam/formsanddocuments/timeoffapplication/jcr:content?wcmmode=disabled) 열기
 * 3개의 필수 필드를 입력한 다음 제출합니다.
 * AEM에 &#39;admin&#39;으로 로그인(아직 로그인하지 않은 경우)
-* 다음으로 이동 [&quot;AEM 받은 편지함&quot;](http://localhost:4502/aem/inbox)
+* [&quot;AEM 받은 편지함&quot;](http://localhost:4502/aem/inbox)(으)로 이동
 * &quot;휴무 요청 검토&quot; 양식 열기
 * 첫 번째 패널의 필드가 비활성화되어 있습니다. 검토자가 양식을 열고 있기 때문입니다. 또한 이제 요청을 승인 또는 거부하는 패널이 표시됩니다
 

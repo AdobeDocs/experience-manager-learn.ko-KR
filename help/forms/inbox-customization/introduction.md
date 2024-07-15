@@ -33,7 +33,7 @@ Experience Manager 받은 편지함을 사용자 지정하여 열의 기본 제�
 ## 열 사용자 지정
 
 [AEM 받은 편지함 열기](http://localhost:4502/aem/inbox)
-Admin Control을 열고 _목록 보기_ 아이콘을 클릭한 다음 선택 _관리자 컨트롤_ 아래 스크린샷에 표시된 대로
+_목록 보기_ 아이콘을 클릭한 다음 아래 스크린샷과 같이 _관리자 컨트롤_&#x200B;을 선택하여 관리자 컨트롤을 엽니다
 
 ![admin-control](assets/open-customization.png)
 

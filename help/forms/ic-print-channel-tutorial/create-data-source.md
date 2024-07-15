@@ -25,7 +25,7 @@ ht-degree: 1%
 
 >[!VIDEO](https://video.tv.adobe.com/v/27765?quality=12&learn=on)
 
-제공된 swagger 파일을 이 자습서와 관련된 에셋의 일부로 사용하십시오. 에셋은에서 사용할 수 있습니다. [소개](introduction.md) 을 참조하십시오.
+제공된 swagger 파일을 이 자습서와 관련된 에셋의 일부로 사용하십시오. 자산은 이 자습서의 [소개](introduction.md)에서 사용할 수 있습니다.
 
 ## 다음 단계
 

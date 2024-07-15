@@ -1,6 +1,6 @@
 ---
 title: AEM Dispatcher 공통 로그
-description: Dispatcher의 공통 로그 항목을 살펴보고 그 의미와 해결 방법을 알아봅니다.
+description: Dispatcher의 일반적인 로그 항목을 살펴보고 그 의미와 해결 방법을 알아봅니다.
 version: 6.5
 topic: Administration, Performance
 feature: Dispatcher
@@ -86,8 +86,8 @@ Fri Jul 20 17:26:47 2018 D pid 20051 (tid 139937517123328) Filter rejects:
 GET /etc/designs/exampleco/fonts/montserrat-regular/montserrat-regular-webfont.eot HTTP/1.1
 ```
 
-우리의 디자인 파일이 `.eot` 이(가) 차단되고 있으므로 수정하겠습니다.
-따라서 필터 파일을 보고 다음 줄을 추가하여 허용해야 합니다. `.eot` 다음을 통해 파일:
+이는 디자인 파일 `.eot`이(가) 차단되고 있음을 알려주므로 이를 수정하겠습니다.
+따라서 필터 파일을 보고 `.eot`개의 파일을 허용하도록 다음 줄을 추가해야 합니다.
 
 ```
 /0011 { /type "allow" /method "GET" /extension 'eot' /path "/etc/designs/*" }
@@ -109,7 +109,7 @@ Fri Jul 20 22:31:15 2018 W pid 3648 Unable to connect socket to 10.43.3.40:4502:
 Fri Jul 20 22:31:15 2018 W pid 3648 Unable to connect to any backend in farm authorfarm
 ```
 
-이 문제는 팜의 렌더링 섹션에 잘못된 IP 주소가 구성된 경우 발생합니다. 이 인스턴스 또는 AEM 인스턴스가 응답하지 않거나 수신하지 않으므로 Dispatcher가 연결할 수 없습니다.
+이 문제는 팜의 렌더링 섹션에 잘못된 IP 주소가 구성된 경우 발생합니다. 이 인스턴스 또는 AEM 인스턴스가 응답하지 않거나 수신하지 않으므로 Dispatcher에서 연결할 수 없습니다.
 
 방화벽 규칙을 확인하고 AEM 인스턴스가 실행 중이며 정상인지 확인합니다.
 
@@ -120,7 +120,7 @@ Fri Jul 20 22:32:42 2018 I pid 3648 "GET /favicon.ico" 502 - 54034ms authorfarm/
 Fri Jul 20 22:35:45 2018 I pid 3648 "GET /favicon.ico" 503 - 54234ms authorfarm/-
 ```
 
-즉, AEM 인스턴스에 열려 있는 소켓이 있으므로 연결할 수 있으며 응답 시간이 초과됩니다. 즉, AEM 인스턴스가 너무 느리거나 비정상이며 Dispatcher가 팜의 렌더링 섹션에서 구성된 시간 초과 설정에 도달했습니다. 시간 초과 설정을 늘리거나 AEM 인스턴스가 정상이 되도록 합니다.
+즉, AEM 인스턴스에 열려 있는 소켓이 있으므로 연결할 수 있으며 응답 시간이 초과됩니다. 즉, AEM 인스턴스가 너무 느리거나 비정상이며 Dispatcher이 팜의 렌더링 섹션에서 구성된 시간 초과 설정에 도달했습니다. 시간 초과 설정을 늘리거나 AEM 인스턴스가 정상이 되도록 합니다.
 
 ## 캐싱 수준
 
@@ -130,7 +130,7 @@ Fri Jul 20 22:35:45 2018 I pid 3648 "GET /favicon.ico" 503 - 54234ms authorfarm/
 Fri Jul 20 23:00:19 2018 I pid 16004 (tid 140134145820416) Current cache hit ratio: 87.94 %
 ```
 
-렌더링 수준에서 가져오기와 캐시에서 가져오기가 측정되었음을 의미합니다. 캐시에서 80% 이상을 달성하려면 도움말을 따라야 합니다 [여기](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html):
+렌더링 수준에서 가져오기와 캐시에서 가져오기가 측정되었음을 의미합니다. 캐시에서 80% 이상을 달성하려면 [여기](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html)의 도움말을 따라야 합니다.
 
 이 숫자를 가능한 한 높게 지정합니다.
 
@@ -167,9 +167,9 @@ Thu Sep 27 17:35:11 2018 D pid 18936 Vanity URL file (/tmp/vanity_urls) not foun
 Thu Sep 27 17:35:11 2018 W pid 18936 Unable to fetch vanity URLs from 10.43.0.42:4503/libs/granite/dispatcher/content/vanityUrls.html: remote server returned: HTTP/1.1 404 Not Found
 ```
 
-이 오류는 vanity URL을 허용하는 동적 자동 필터를 사용하도록 Dispatcher를 구성했지만 AEM 렌더러에서 패키지를 설치하여 설정을 완료하지 않은 경우 발생합니다.
+이 오류는 vanity URL을 허용하는 동적 자동 필터를 사용하도록 Dispatcher을 구성했지만 AEM 렌더러에서 패키지를 설치하여 설정을 완료하지 않은 경우에 발생합니다.
 
-이 문제를 해결하려면 AEM 인스턴스에 vanity url 기능 팩을 설치하고 익명 사용자가 준비할 수 있도록 허용하십시오. 세부 사항 [여기](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17463.html)
+이 문제를 해결하려면 AEM 인스턴스에 vanity url 기능 팩을 설치하고 익명 사용자가 준비할 수 있도록 허용하십시오. 세부 정보 [여기](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17463.html)
 
 작동 중인 별칭 URL 설정은 다음과 같습니다.
 
@@ -187,11 +187,11 @@ Thu Sep 27 17:40:29 2018 D pid 21844 Loaded 18 vanity URLs from file /tmp/vanity
 Wed Nov 13 17:17:26 2019 W pid 19173:tid 140542738364160 No farm matches host 'we-retail.com', selected last farm 'publishfarm'
 ```
 
-이 오류는에서 사용할 수 있는 모든 팜 파일의 `/etc/httpd/conf.dispatcher.d/enabled_farms/` 다음에서 일치하는 항목을 찾을 수 없습니다. `/virtualhost` 섹션.
+이 오류는 `/etc/httpd/conf.dispatcher.d/enabled_farms/`에서 사용 가능한 모든 팜 파일에서 `/virtualhost` 섹션에서 일치하는 항목을 찾을 수 없음을 나타냅니다.
 
-팜 파일은 요청이 들어 온 도메인 이름 또는 경로를 기반으로 트래픽과 일치합니다. glob 일치를 사용하며, 일치하지 않으면 팜을 제대로 구성하지 않았거나 팜에 입력한 항목에 오타가 있거나, 항목이 완전히 누락된 것입니다. 팜이 항목과 일치하지 않으면 팜 파일 스택에 포함된 마지막 팜이 기본값으로 지정됩니다. 이 예에서는 다음과 같습니다. `999_ams_publish_farm.any` publishfarm의 일반 이름으로 이름이 지정됩니다.
+팜 파일은 요청이 들어 온 도메인 이름 또는 경로를 기반으로 트래픽과 일치합니다. glob 일치를 사용하며, 일치하지 않으면 팜을 제대로 구성하지 않았거나 팜에 입력한 항목에 오타가 있거나, 항목이 완전히 누락된 것입니다. 팜이 항목과 일치하지 않으면 팜 파일 스택에 포함된 마지막 팜이 기본값으로 지정됩니다. 이 예제에서는 publishfarm의 제네릭 이름으로 명명된 `999_ams_publish_farm.any`입니다.
 
-다음은 팜 파일의 예입니다 `/etc/httpd/conf.dispatcher.d/enabled_farms/300_weretail_publish_farm.any` 관련 부분을 강조하기 위해 축소했습니다.
+다음은 관련 부분을 강조하기 위해 축소된 예제 팜 파일 `/etc/httpd/conf.dispatcher.d/enabled_farms/300_weretail_publish_farm.any`입니다.
 
 ## 다음에서 제공된 항목
 
@@ -201,6 +201,6 @@ Wed Nov 13 17:17:26 2019 W pid 19173:tid 140542738364160 No farm matches host 'w
 Tue Nov 26 16:41:34 2019 I pid 9208 (tid 140112092391168) "GET /content/we-retail/us/en.html" - + 24034ms publishfarm/0
 ```
 
-콘텐츠에 대한 GET http 메서드를 통해 페이지를 가져왔습니다 `/content/we-retail/us/en.html` 24034밀리초가 걸렸습니다. 우리가 주목하고 싶었던 부분은 맨 끝에 있다 `publishfarm/0`. 타겟팅하고 일치하는 항목을 확인할 수 있습니다. `publishfarm`. 요청은 렌더링 0에서 가져왔습니다. 즉, 이 페이지는 AEM에서 요청한 다음 캐시되어야 합니다. 이제 이 페이지를 다시 요청하고 로그가 어떻게 되는지 살펴보겠습니다.
+`/content/we-retail/us/en.html` 콘텐츠에 대해 GET http 메서드를 통해 페이지를 가져왔으며, 24034 밀리초가 걸렸습니다. 주목해야 할 부분은 맨 끝 `publishfarm/0`에 있습니다. 타겟팅되고 `publishfarm`과(와) 일치하는 것을 확인할 수 있습니다. 요청은 렌더링 0에서 가져왔습니다. 즉, 이 페이지는 AEM에서 요청한 다음 캐시되어야 합니다. 이제 이 페이지를 다시 요청하고 로그가 어떻게 되는지 살펴보겠습니다.
 
 [다음 -> 읽기 전용 파일](./immutable-files.md)

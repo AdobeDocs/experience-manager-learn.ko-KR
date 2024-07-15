@@ -1,6 +1,6 @@
 ---
-title: AEM as a Cloud Service 건축
-description: Edge Delivery Services을 통해 기본 아키텍처와 중요한 AEM 조각을 as a Cloud Service으로 살펴보십시오.
+title: AEM as a Cloud Service의 건축
+description: Edge Delivery Services을 사용하여 AEM as a Cloud Service의 기본 아키텍처와 중요한 부분을 살펴봅니다.
 role: Architect, Developer
 level: Beginner
 type: Tutorial
@@ -18,10 +18,10 @@ ht-degree: 0%
 
 ---
 
-# AEM as a Cloud Service 건축
+# AEM as a Cloud Service의 건축
 
 {{edge-delivery-services}}
 
-Edge Delivery Services을 통해 기본 아키텍처와 중요한 AEM 조각을 as a Cloud Service으로 살펴보십시오.
+Edge Delivery Services을 사용하여 AEM as a Cloud Service의 기본 아키텍처와 중요한 부분을 살펴봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330542?quality=12&learn=on)

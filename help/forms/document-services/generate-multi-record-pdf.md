@@ -23,7 +23,8 @@ OutputService는 폼 디자인과 데이터를 사용하여 문서를 만들고 
 
 ![multi-record-xml](assets/multi-record-xml.PNG)
 
-데이터 xml에는 2개의 레코드가 있습니다. 각 레코드는 form1 요소에 의해 표시됩니다. 이 xml은 OutputService로 전달됩니다. [generatePDFOutputBatch 메서드](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/OutputService.html) pdf 문서 목록(레코드당 한 개) 가져오기 generatePDFOutputBatch 메서드의 서명은 다음 매개 변수를 사용합니다
+데이터 xml에는 2개의 레코드가 있습니다. 각 레코드는 form1 요소에 의해 표시됩니다. 이 XML은 OutputService [generatePDFOutputBatch 메서드](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/OutputService.html)에 전달됩니다. PDF 문서 목록(레코드당 하나)이 제공됩니다.
+generatePDFOutputBatch 메서드의 서명은 다음 매개 변수를 사용합니다
 
 * 템플릿 - 키로 식별되는 템플릿이 포함된 맵
 * 데이터 - 키로 식별되는 xml 데이터 문서가 포함된 맵
@@ -126,13 +127,13 @@ public Document generateMultiplePdfs(HashMap < String, String > templateMap, Has
 
 서버에서 이 기능을 테스트하려면 아래 지침을 따르십시오.
 
-* [파일 시스템에 zip 파일 콘텐츠 다운로드 및 추출](assets/mult-records-template-and-xml-file.zip).이 zip 파일에는 템플릿과 xml 데이터 파일이 포함되어 있습니다.
+* [zip 파일 내용을 파일 시스템에 다운로드하고 추출하십시오](assets/mult-records-template-and-xml-file.zip).이 zip 파일에는 템플릿과 xml 데이터 파일이 들어 있습니다.
 * [브라우저를 Felix 웹 콘솔로 지정](http://localhost:4502/system/console/bundles)
 * [DevelopingWithServiceUser 번들 배포](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar).
-* [사용자 지정 AEMFormsDocumentServices 번들 배포](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar).OutputService API를 사용하여 pdf를 생성하는 사용자 지정 번들
-* [브라우저에서 패키지 관리자 지정](http://localhost:4502/crx/packmgr/index.jsp)
+* OutputService API를 사용하여 pdf를 생성하는 [사용자 지정 AEMFormsDocumentServices 번들 배포](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar).사용자 지정 번들
+* [브라우저에서 패키지 관리자를 가리키도록 지정](http://localhost:4502/crx/packmgr/index.jsp)
 * [패키지 가져오기 및 설치](assets/generate-multiple-pdf-from-xml.zip). 이 패키지에는 템플릿과 데이터 파일을 삭제할 수 있는 html 페이지가 포함되어 있습니다.
-* [브라우저를 MultiRecords.html로 지정](http://localhost:4502/content/DocumentServices/Multirecord.html?)
+* [브라우저에서 MultiRecords.html을 가리킵니다](http://localhost:4502/content/DocumentServices/Multirecord.html?)
 * 템플릿과 xml 데이터 파일을 함께 끌어서 놓습니다.
 * 생성된 zip 파일을 다운로드합니다. 이 zip 파일에는 출력 서비스에서 생성한 pdf 파일이 포함되어 있습니다.
 

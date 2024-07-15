@@ -28,9 +28,9 @@ ht-degree: 1%
 ## AEM 6.x용 이미지에 대한 사용자 지정 스마트 태그 설정{#set-up}
 
 >[!NOTE]
-> 이미지에 대한 사용자 지정 스마트 태그는 AEMas a Cloud Service 에 대해 자동으로 프로비저닝됩니다.
+> 이미지에 대한 사용자 지정 스마트 태그는 AEM as a Cloud Service에 대해 자동으로 프로비저닝됩니다.
 
-이미지에 대한 사용자 지정 스마트 태그를 사용하려면 [설정할 이미지용 스마트 태그](./image-smart-tags.md#set-up).
+이미지에 대한 사용자 지정 스마트 태그를 사용하려면 [이미지에 대한 스마트 태그가 필요합니다](./image-smart-tags.md#set-up).
 
 스마트 컨텐츠 서비스 및 Adobe I/O을 사용하여 AEM Assets에서 스마트 태그 교육을 구성하는 방법에 대해 알아봅니다. 이미지용 사용자 지정 스마트 태그
 
@@ -38,4 +38,4 @@ ht-degree: 1%
 
 ## 추가 리소스
 
-* AEM 6.4를 사용하려면 [최신 서비스 팩](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html#aem-64).
+* AEM 6.4에는 [최신 서비스 팩](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html#aem-64)이 필요합니다.

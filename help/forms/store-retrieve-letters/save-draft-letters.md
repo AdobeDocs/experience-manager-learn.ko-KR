@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # 초안 문자 저장 및 검색
 
-다음 코드는 편지 인스턴스를 저장하는 데 사용됩니다. 편지 인스턴스의 메타데이터는에 저장됩니다. _icdraft_ 테이블. 고유한 문자열(draftID)이 생성되고 반환됩니다. 그런 다음 이 고유한 문자열을 사용하여 저장된 문자 인스턴스를 검색합니다.
+다음 코드는 편지 인스턴스를 저장하는 데 사용됩니다. 편지 인스턴스의 메타데이터가 _icdraft_ 테이블에 저장됩니다. 고유한 문자열(draftID)이 생성되고 반환됩니다. 그런 다음 이 고유한 문자열을 사용하여 저장된 문자 인스턴스를 검색합니다.
 
 ```java
 public String save(CCRDocumentInstance letterToSave) throws CCRDocumentException {
@@ -168,4 +168,4 @@ AEM Forms은 저장된 문자를 나열하는 기본 사용자 인터페이스�
 
 ### Eclipse 프로젝트
 
-샘플 구현이 있는 eclipse 프로젝트는 다음과 같을 수 있습니다. [여기에서 다운로드됨](assets/icdrafts-eclipse-project.zip)
+샘플 구현이 포함된 eclipse 프로젝트는 [여기에서 다운로드](assets/icdrafts-eclipse-project.zip)할 수 있습니다.

@@ -32,4 +32,4 @@ Cloud Service 통합을 위한 로그인 토큰을 얻는 방법과 이를 위�
 + 기술 계정 인증
 + 생성된 토큰의 단순 사용
 
-이 항목에 대한 자세한 내용을 보려면 다음에서 자습서를 참조하십시오. [토큰 기반 인증](/help/headless-tutorial/authentication/overview.md).
+이 항목에 대한 자세한 내용을 보려면 [토큰 기반 인증](/help/headless-tutorial/authentication/overview.md)에 대한 자습서를 참조할 수 있습니다.

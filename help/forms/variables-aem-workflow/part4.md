@@ -66,14 +66,14 @@ AEM Workflow에서 ArrayList 변수를 사용하려면 제출된 데이터에서
 
 하위 유형 문자열의 ArrayList 변수를 초기화하려면 JSON 점 표기법 또는 XPath 매핑 모드를 사용할 수 있습니다. 다음 스크린샷은 JSON 점 표기법을 사용하여 CustomRoutes 라는 ArrayList 변수를 채우는 것을 보여 줍니다. 아래 스크린샷과 같이 배열 개체의 요소를 가리키고 있는지 확인합니다. CustomRoutes ArrayList를 managerchain 배열 개체의 이름으로 채우는 중입니다.
 그런 다음 CustomRoutes ArrayList를 사용하여 AssignTask 구성 요소에서 경로를 채웁니다
-![사용자 정의 경로](assets/arraylist.jpg)
+![사용자 지정 경로](assets/arraylist.jpg)
 CustomRoutes ArrayList 변수가 제출된 데이터의 값으로 초기화되면 CustomRoutes 변수를 사용하여 AssignTask 구성 요소의 Routes가 채워집니다. 아래 스크린샷은 AssignTask에서 사용자 정의 경로를 보여 줍니다
 ![asingtask](assets/customactions.jpg)
 
 시스템에서 이 워크플로우를 테스트하려면 다음 단계를 따르십시오
 
 * ArrayListVariable.zip 파일을 다운로드하여 파일 시스템에 저장합니다.
-* [zip 파일 가져오기](assets/arraylistvariable.zip) AEM 패키지 관리자 사용
+* AEM 패키지 관리자를 사용하여 [zip 파일 가져오기](assets/arraylistvariable.zip)
 * [TravelExpenseReport 양식 열기](http://localhost:4502/content/dam/formsanddocuments/helpx/travelexpensereport/jcr:content?wcmmode=disabled)
 * 경비 두 개와 관리자 두 명의 이름을 입력하십시오.
 * 제출 버튼을 누릅니다.
@@ -81,4 +81,4 @@ CustomRoutes ArrayList 변수가 제출된 데이터의 값으로 초기화되�
 * &quot;경비 관리자에게 할당&quot;이라는 새 작업이 표시됩니다.
 * 작업과 연결된 양식 열기
 * 관리자 이름을 가진 두 개의 사용자 지정 경로가 표시됩니다
-  [ReviewExpenseReportWorkflow를 탐색합니다.](http://localhost:4502/editor.html/conf/global/settings/workflow/models/ReviewExpenseReport.html) 이 워크플로우는 ArrayList 변수, JSON 유형 변수 및 Or-Split 구성 요소의 규칙 편집기를 사용합니다.
+  [ReviewExpenseReportWorkflow를 살펴봅니다.](http://localhost:4502/editor.html/conf/global/settings/workflow/models/ReviewExpenseReport.html) 이 워크플로에서는 ArrayList 변수, JSON 유형 변수, Or-Split 구성 요소의 규칙 편집기를 사용합니다.

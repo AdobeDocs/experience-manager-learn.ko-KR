@@ -24,7 +24,7 @@ ht-degree: 4%
 ## 전제 조건
 
 * AEM Forms CS 사용 경험
-* Adobe Cloud Manager를 사용하여 코드를 배포한 경험이 있습니다.
+* Adobe Cloud Manager을 사용하여 코드를 배포할 때의 경험입니다.
 * AEM Forms CS의 클라우드 지원 인스턴스에 액세스합니다.
 
 AEM Forms CS에서 위의 사용 사례를 구현하려면 다음이 필요합니다

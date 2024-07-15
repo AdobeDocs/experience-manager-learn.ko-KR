@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # JMX 콘솔에서 매개 변수를 수정하는 단계
 
-*이 비디오는 JMX 콘솔에서 매개변수를 조정하는 단계를 안내합니다.*
+*이 비디오는 JMX 콘솔에서 매개 변수를 수정하는 단계를 안내합니다.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335554?quality=12&learn=on)

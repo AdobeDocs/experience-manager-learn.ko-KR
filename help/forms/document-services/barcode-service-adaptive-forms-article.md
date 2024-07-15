@@ -140,10 +140,10 @@ $(document).ready(function()
 
 시스템에서 이 작업을 실행하려면 다음 단계를 따르십시오.
 
-1. [BarcodeService.zip 다운로드](assets/barcodeservice.zip) 패키지 관리자를 사용하여 AEM으로 가져오기
+1. [BarcodeService.zip 다운로드](assets/barcodeservice.zip) 및 패키지 관리자를 사용하여 AEM으로 가져오기
 1. [사용자 지정 DocumentServices 번들 다운로드 및 설치](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
 1. [DevelopingWithServiceUser 번들 다운로드 및 설치](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 1. [샘플 PDF 양식 다운로드](assets/barcode.pdf)
-1. 브라우저를 가리켜 [샘플 적응형 양식](http://localhost:4502/content/dam/formsanddocuments/barcodedemo/jcr:content?wcmmode=disabled)
+1. 브라우저를 [샘플 적응형 양식](http://localhost:4502/content/dam/formsanddocuments/barcodedemo/jcr:content?wcmmode=disabled)(으)로 지정
 1. 제공된 샘플 PDF 업로드
 1. 데이터로 채워진 양식이 표시됩니다

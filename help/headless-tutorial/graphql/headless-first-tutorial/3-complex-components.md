@@ -35,7 +35,7 @@ AEM(Adobe Experience Manager)의 컨텐츠 조각은 컨텐츠 관리에 대한 
 
    ![create-imagelist-fragment](./assets/3/create-imagelist-fragment.png)
 
-   형식의 조각을 만들려고 합니다. `imagelist` (모델: `imagelist`) 그리고 제목은 다음과 같습니다 `imagelist`.
+   `imagelist` 유형(모델: `imagelist`)의 조각을 만들려고 하며 제목 `imagelist`을(를) 제공합니다.
 
    콘텐츠 조각 편집기에서 조각을 포함하거나 생성할 조각을 선택할 수 있습니다.  조각 만들기를 선택합니다.
 
@@ -43,7 +43,7 @@ AEM(Adobe Experience Manager)의 컨텐츠 조각은 컨텐츠 관리에 대한 
 
 1. 이미지 목록은 다른 조각에 대한 참조를 포함하는 컨테이너 유형 조각이므로 편집기에서 직접 새 오퍼를 만들 수 있습니다.  포함 및 이미지 설명과 문서를 포함하는 오퍼 조각을 만듭니다.  아래에서 텍스트를 잘라내어 붙여넣을 수 있습니다.  카드의 제목으로 조각 제목을 사용하고 있습니다.
 
-   __제 1 조__
+   __문서 1__
 
    _제목_
 
@@ -57,7 +57,7 @@ AEM(Adobe Experience Manager)의 컨텐츠 조각은 컨텐츠 관리에 대한 
    We traveled to Northern Norway to document the joy of surfing in extreme, but breathtakingly beautiful conditions.
    ```
 
-   _기사_
+   _문서_
 
    ```text
    Aloha Spirits in Northern Norway
@@ -82,7 +82,7 @@ AEM(Adobe Experience Manager)의 컨텐츠 조각은 컨텐츠 관리에 대한 
    Like a faint torch, a striking green hue shines through the tent fabric, disappearing just as quickly. The sound of zippers does its best to penetrate the ocean's roar, as we curiously peek our heads out into the freezing wind. Moments after, we sprint out in sweatpants, cameras in hand to document the fabled phenomenon the past week's cloud layer has prevented us from seeing; the Aurora Borealis. It starts with only the faintest streaks of green and blue, seemingly appearing out of thin air, only to vanish before our eyes have had a chance to adjust to the dark. Every pulse becoming more radiant, and before we know it we are gazing in awe at the dancing curtains, shifting colors under starry skies. After a week of battling the elements, it's as if Mother Nature has decided to treat us with just a taste of the breathtaking beauty she is capable of, as if we have finally proven ourselves worthy. With our jaws still open, we watch on as the mesmerizing curtains of emerald green are veiled in a dark cloud layer, and the winds once again take hold of the bay. The exhibition is over for now, but these islands will stay in our minds forever. See you next time, Lofoten, may the forces of life yet again gravitate us towards your majestic shores, because in the hardship of finding what we came for, something else has emerged, a yearning for the undisturbed, the unknown and the truly magical. It's waiting for you no matter where you are in the world.
    ```
 
-   __제 2 조__
+   __문서 2__
 
    _제목_
 
@@ -96,7 +96,7 @@ AEM(Adobe Experience Manager)의 컨텐츠 조각은 컨텐츠 관리에 대한 
    A vibrant red, dusty highway stretches out before us into what seems like infinity, at the far reach of our sights it distorts and shimmers from the afternoon heat, fading into the blue of the horizon. For the past hour the image has stayed roughly the same, apart from the occasional road train flying by, its fifty meters of steel and rubber promptly asking us to give way before disappearing in our rear view mirrors.
    ```
 
-   _기사_
+   _문서_
 
    ```text
    Western Australia by Camper Van
@@ -125,7 +125,7 @@ AEM(Adobe Experience Manager)의 컨텐츠 조각은 컨텐츠 관리에 대한 
    Then there's the surf. A pointbreak breaking for 300 meters down a shallow coral shelf, producing immaculate almond-shaped barrels, grinding down the reef at a barely makeable speed. Even though many of the waves race past me on my struggling backhand, the few that I make it to the end of are some of the best I've ever experienced, and I have a hard time containing my excitement, hooting and hollering to Sofia on the cliffs, with her Canon 5D in hand. The line-up out back is an eclectic mix of old salty men on oversized gun surfboards, young semi-pros with stickered boards, girlfriends on longboards and hippies with dreadlocks and big smiles. Nothing of the notorious localism I have read about online, even though I quickly learn to respect the noticeable pecking order, letting the obviously more skilled crowd get the biggest set waves. There are still plenty of action for everyone, and a friendly smile opens up even the grumpiest old-timer. After the sun has set, the same faces are seen around campfires and tailgate barbeques all over the campground, where many seem to have gotten stuck for the season, ignoring distant calls of civilization urging them to return to normal lives. As the stars come out, we set up our cameras for timelapses, hoping to capture some of the magic that is happening above us, all the while our heads turn heavy from the five hours in the water and the beverages that followed.
    ```
 
-   __제 3 조__
+   __문서 3__
 
    _제목_
 
@@ -139,7 +139,7 @@ AEM(Adobe Experience Manager)의 컨텐츠 조각은 컨텐츠 관리에 대한 
    My backpack feels heavier for every meter, slowly deforming my spine and wearing down my shoulders. My mouth tastes like blood, while salty pearls of sweat find their way to my eyes. I look back up, I'm not there yet, just a few hundred more steps, keep walking, keep counting, block out the pain.
    ```
 
-   _기사_
+   _문서_
 
    ```text
    Ski Touring
@@ -158,7 +158,7 @@ AEM(Adobe Experience Manager)의 컨텐츠 조각은 컨텐츠 관리에 대한 
    Fast forward 5000 years, and although human ingenuity, competition and spirit for invention has further evolved this once crude way of transportation, the principles remain the same. We designed our now countless different models of wooden planks to float on top of powder snow, crafted metal edges to cut through ice, we shaved off every superfluous gram we could find to help us on our journeys, to reach farther, higher and steeper. And today, when in many places, multi-billion dollar corporations charge us big money to ride down over-crowded slopes, many of us are returning to the original way of skiing. Exchanging lift queues for solitude, quantity for quality, and apres-ski beer for trail mix, a new generation of skiers are rediscovering the virtue of earning one's turns, the silence of the mountains, and how far into the unknown a little off-season cardio training can get you.
    ```
 
-   __제 4 조__
+   __문서 4__
 
    _제목_
 
@@ -172,7 +172,7 @@ AEM(Adobe Experience Manager)의 컨텐츠 조각은 컨텐츠 관리에 대한 
    We traveled to Northern Norway to document the joy of surfing in extreme, but breathtakingly beautiful conditions.
    ```
 
-   _기사_
+   _문서_
 
    ```text
    San Diego Surf Spots
@@ -191,7 +191,7 @@ AEM(Adobe Experience Manager)의 컨텐츠 조각은 컨텐츠 관리에 대한 
    Eu facilisis sed odio morbi quis. Consequat semper viverra nam libero justo laoreet sit amet. Eget mi proin sed libero enim sed faucibus. Vitae tempus quam pellentesque nec nam aliquam sem. Justo donec enim diam vulputate ut pharetra sit. Risus sed vulputate odio ut enim blandit volutpat maecenas volutpat. Mauris pellentesque pulvinar pellentesque habitant morbi. Iaculis at erat pellentesque adipiscing. Libero id faucibus nisl tincidunt eget nullam non nisi est. Interdum consectetur libero id faucibus nisl tincidunt. Volutpat odio facilisis mauris sit amet massa. Tristique senectus et netus et malesuada fames ac turpis egestas. Leo vel orci porta non pulvinar neque laoreet suspendisse interdum. Sapien et ligula ullamcorper malesuada proin libero. Interdum consectetur libero id faucibus nisl tincidunt.
    ```
 
-1. 쿼리 편집기로 돌아가서 이 새 구성 요소를 가져오겠습니다.  은(는) 다음을 참조합니다. `OfferModel` 쿼리와 메타데이터에서 카드 제목으로 사용됩니다.
+1. 쿼리 편집기로 돌아가서 이 새 구성 요소를 가져오겠습니다.  쿼리와 메타데이터의 `OfferModel`을(를) 참조하고 있습니다. 이 메타데이터는 카드 제목에 사용됩니다.
 
    ```graphql
    query imageList {
@@ -227,13 +227,13 @@ AEM(Adobe Experience Manager)의 컨텐츠 조각은 컨텐츠 관리에 대한 
    }
    ```
 
-1. 이제 앱에 연결합니다.  다음에서 `home.js`, 새 쿼리를 참조하겠습니다. 위 `useEffect()` 다음을 설정합니다. `list` 및 `setList`.
+1. 이제 앱에 연결합니다.  `home.js`에서 새 쿼리를 참조합니다. `useEffect()` 이상에서는 `list` 및 `setList`을(를) 설정합니다.
 
    ```javascript
    const [list, setList] = useState({});
    ```
 
-   내부 `useEffect()` imagelist 쿼리에 대한 새 요청입니다.
+   `useEffect()` 내에서 imagelist 쿼리에 대한 새 요청이 발생했습니다.
 
    ```javascript
    sdk.runPersistedQuery('pure-headless/imagelist')
@@ -295,7 +295,7 @@ AEM(Adobe Experience Manager)의 컨텐츠 조각은 컨텐츠 관리에 대한 
 
 ## 유니버설 편집기 활성화
 
-1. 추가 `<meta />` 앱에 연결합니다.  열기 `App.js` 파일의 맨 위에 가져오기를 삽입합니다.
+1. `<meta />`을(를) 앱에 추가합니다.  `App.js`을(를) 열고 파일 맨 위에 가져오기를 삽입합니다.
 
    ```javascript
    import { Helmet } from 'react-helmet';
@@ -311,11 +311,11 @@ AEM(Adobe Experience Manager)의 컨텐츠 조각은 컨텐츠 관리에 대한 
 
    >[!TIP]
    >
-   > 헬멧 라이브러리를 사용하여 다음을 기반으로 이 다이내믹함을 만듭니다. `.env` 그러나 파일을 하드 코딩하여 `index.html`.
+   > `.env` 파일을 기반으로 이 동적 파일을 만들기 위해 헬멧 라이브러리를 사용하고 있지만 `index.html`에 하드 코딩할 수 있습니다.
 
 1. 이제 각 카드를 편집할 조각과 데이터 유형을 식별하기 위해 카드 를 업데이트하겠습니다.
 
-   다음 범위 내 `<div className='card' key={card._path}>`
+   `<div className='card' key={card._path}>` 내
 
    추가
 
@@ -331,13 +331,13 @@ AEM(Adobe Experience Manager)의 컨텐츠 조각은 컨텐츠 관리에 대한 
 
 1. 이제 편집할 수 있는 항목을 식별합니다.
 
-   대상: `<h3 />` 추가:
+   `<h3 />`에 추가:
 
    ```javascript
    itemProp="_metadata" itemType="text"
    ```
 
-   대상: `<div />` 추가:
+   `<div />`에 추가:
 
    ```javascript
    itemProp="description" itemType="richtext"
@@ -362,7 +362,7 @@ AEM(Adobe Experience Manager)의 컨텐츠 조각은 컨텐츠 관리에 대한 
    };
    ```
 
-에 대한 최종 코드 `home.js`:
+`home.js`의 최종 코드:
 
 ```javascript
 import React, { useContext, useEffect, useState } from 'react';

@@ -24,7 +24,7 @@ AEM 6.5의 Dynamic Media 뷰어 개선 사항에는 360 비디오 렌더링, 360
 
 >[!NOTE]
 >
->이 비디오에서는 AEM 인스턴스가 Dynamic Media S7 모드에서 실행 중이라고 가정합니다.  [Dynamic Media으로 AEM 설정에 대한 지침은 여기에서 확인할 수 있습니다](https://helpx.adobe.com/kr/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html). 비디오를 업로드할 때 기본적으로 Dynamic Media은 종횡비가 2:1인 경우 푸티지를 360 비디오로 처리합니다. 즉, 너비 대 높이의 비율은 2:1입니다.
+>이 비디오에서는 AEM 인스턴스가 Dynamic Media S7 모드에서 실행 중이라고 가정합니다.  [Dynamic Media을 사용하여 AEM 설정에 대한 지침은 여기에서 찾을 수 있습니다](https://helpx.adobe.com/kr/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html). 비디오를 업로드할 때 기본적으로 Dynamic Media은 종횡비가 2:1인 경우 푸티지를 360 비디오로 처리합니다. 즉, 너비 대 높이의 비율은 2:1입니다.
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ AEM 6.5의 Dynamic Media 뷰어 개선 사항에는 360 비디오 렌더링, 360
    <tr>
       <td>Dynamic Media 실행 모드</td>
       <td>Dynamic Media Scene7 모드만 해당</td>
-      <td>Dynamic Media Scene7 모드만 해당<br>
+      <td>Dynamic Media Scene7 모드만<br>
          <br>
       </td>
    </tr>

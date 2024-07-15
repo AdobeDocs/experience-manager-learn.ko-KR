@@ -24,7 +24,7 @@ ht-degree: 8%
 
 >[!VIDEO](https://video.tv.adobe.com/v/39294?quality=12&learn=on)
 
-이 비디오와 관련된 에셋은 다음 링크에서 다운로드할 수 있습니다
+이 비디오와 관련된 Assets은 다음 링크에서 다운로드할 수 있습니다
 
 * [적응형 양식 템플릿](assets/tenancy-agreement-template.zip)
 * [임차인 계약 양식](assets/rental-agreement-form.zip)

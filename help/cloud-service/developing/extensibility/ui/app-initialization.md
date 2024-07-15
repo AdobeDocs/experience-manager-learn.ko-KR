@@ -28,6 +28,6 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
-> 위의 비디오에서는 App Builder 확장 앱 초기화를 설명하기 위해 콘텐츠 조각 콘솔 확장을 사용하는 방법을 보여 줍니다. 그러나 위에서 설명한 개념은 모든 AEM UI 확장에 적용할 수 있습니다.
+> 위의 비디오에서는 콘텐츠 조각 콘솔 확장을 사용하여 App Builder 확장 앱 초기화를 보여 줍니다. 그러나 위에서 설명한 개념은 모든 AEM UI 확장에 적용할 수 있습니다.
 
-자세한 내용은 Adobe Developer 설명서 를 참조하십시오. [앱 초기화 프로세스에 대한 자세한 설명](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/code-generation/#launch-code-generation-during-project-initialization).
+[앱 초기화 프로세스에 대한 자세한 설명](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/code-generation/#launch-code-generation-during-project-initialization)은 Adobe Developer 설명서를 참조하십시오.

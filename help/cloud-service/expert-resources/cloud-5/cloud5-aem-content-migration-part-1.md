@@ -28,6 +28,6 @@ Darin과 James는 몇 가지 모범 사례와 AMS/On-Prem과의 차이점 등 AE
 + 마이그레이션할 인스턴스 평가
    + BPA - 모범 사례 분석기
    + CAM - 클라우드 가속 관리자
-+ [repostat](https://github.com/chetanmeh/oak-console-scripts/tree/master/src/main/groovy/repostats)
++ [repostats](https://github.com/chetanmeh/oak-console-scripts/tree/master/src/main/groovy/repostats)
 + [AEM 현대화 도구](https://opensource.adobe.com/aem-modernize-tools/)
 + [Cloud Service 마이그레이션 도구](https://github.com/adobe/aem-cloud-service-source-migration)

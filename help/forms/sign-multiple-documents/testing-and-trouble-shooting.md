@@ -22,13 +22,13 @@ ht-degree: 0%
 
 ## 리파이낸스 양식 미리 보기
 
-사용 사례는 고객 서비스 에이전트가 작성하여 제출하면 트리거됩니다 [재융자 형태](http://localhost:4502/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled).
+사용 사례는 고객 서비스 에이전트가 [리파이낸스 양식](http://localhost:4502/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled)을(를) 채워 제출하면 트리거됩니다.
 
 여러 Forms 서명 워크플로우는 이 양식 제출 시 트리거되며 고객은 양식 작성 및 서명 프로세스를 시작하는 링크가 포함된 이메일 알림을 받습니다.
 
 ## 패키지의 양식 작성
 
-고객은 패키지의 첫 번째 양식에 기입하고 서명하도록 제시됩니다. 양식 서명 성공 시 고객은 패키지의 다음 양식으로 이동할 수 있습니다. 모든 양식이 채워지고 서명되면 고객에게 &quot;**AllDone**&quot; 양식입니다.
+고객은 패키지의 첫 번째 양식에 기입하고 서명하도록 제시됩니다. 양식 서명 성공 시 고객은 패키지의 다음 양식으로 이동할 수 있습니다. 모든 양식을 작성하고 서명하면 고객에게 &quot;**AllDone**&quot; 양식이 제공됩니다.
 
 ## 문제 해결
 
@@ -50,4 +50,4 @@ ht-degree: 0%
 
 ### AllDone 양식이 표시되지 않음
 
-패키지에 서명할 양식이 더 이상 없으면 AllDone 양식이 사용자에게 표시됩니다.AllDone 양식이 표시되지 않으면 의 일부인 GetNextFormToSign.js 파일의 33행에 사용된 URL을 확인하십시오. **getnextform** 클라이언트 라이브러리.
+패키지에 서명할 양식이 더 이상 없으면 AllDone 양식이 사용자에게 표시됩니다.AllDone 양식이 표시되지 않으면 **getnextform** 클라이언트 라이브러리에 포함된 GetNextFormToSign.js 파일의 33행에 사용된 URL을 확인하십시오.

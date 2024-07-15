@@ -22,7 +22,7 @@ ht-degree: 1%
 
 ## 워크플로우 구성
 
-1. [편집 모드에서 워크플로 모델 열기](http://localhost:4502/editor.html/conf/global/settings/workflow/models/MergeAcroformData.html).
+1. [편집 모드에서 워크플로 모델을 엽니다](http://localhost:4502/editor.html/conf/global/settings/workflow/models/MergeAcroformData.html).
 2. MergeAcroformData 단계의 구성 속성을 엽니다.
 3. 프로세스 탭을 클릭합니다.
 4. 전달하려는 인수가 서버의 유효한 폴더인지 확인하십시오.
@@ -33,7 +33,7 @@ ht-degree: 1%
 1. 이전 단계에서 만든 스키마를 사용하여 적응형 양식을 만듭니다.
 2. 몇 개의 스키마 요소를에 적응형 양식으로 끌어다 놓습니다.
 3. 적응형 양식의 제출 액션을 구성하여 AEM Workflow(MergeAcroformData)에 제출합니다.
-4. **데이터 파일 경로를 &quot;Data.xml&quot;로 지정해야 합니다. 샘플 코드가 워크플로 페이로드에서 Data.xml이라는 파일을 검색하므로 이 작업이 매우 중요합니다.**
+4. **데이터 파일 경로를 &quot;Data.xml&quot;로 지정하십시오. 샘플 코드가 워크플로 페이로드에서 Data.xml이라는 파일을 검색하므로 매우 중요합니다.**
 5. 적응형 양식을 미리 보고 양식을 입력한 후 제출합니다.
 6. 구성 워크플로 아래에 4단계에서 지정한 폴더에 저장된 병합된 데이터의 PDF이 표시됩니다
 

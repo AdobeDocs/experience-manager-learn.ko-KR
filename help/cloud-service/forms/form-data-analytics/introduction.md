@@ -1,6 +1,6 @@
 ---
 title: AEM Forms을 Adobe Analytics과 통합하여 양식 데이터 필드에 대해 보고합니다
-description: AEM Forms as a Cloud Service을 Adobe Analytics과 통합하여 양식 데이터 필드에 대해 보고합니다
+description: 양식 데이터 필드를 보고하기 위해 AEM Formsas a Cloud Service 와 Adobe Analytics 통합
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
@@ -22,13 +22,13 @@ ht-degree: 2%
 
 # AEM Forms을 Adobe Analytics과 통합하여 양식 데이터 필드에 대해 보고합니다
 
-Experience Platform 태그를 사용하여 적응형 양식에서 AEM Forms as a Cloud Service을 Adobe Analytics과 통합하는 방법을 알아봅니다. 이 예에서는 구성 및 구현 단계를 안내하여 방문자가 양식과 상호 작용하는 방식에 대한 통찰력 있는 보고서를 생성합니다.
+Experience Platform 태그를 사용하여 적응형 양식에서 AEM Formsas a Cloud Service 와 Adobe Analytics을 통합하는 방법을 알아봅니다. 이 예에서는 구성 및 구현 단계를 안내하여 방문자가 양식과 상호 작용하는 방식에 대한 통찰력 있는 보고서를 생성합니다.
 
 ## 사전 요구 사항
 
 이 자습서를 최대한 활용하려면 다음 전제 조건을 충족하는 것이 좋습니다.
 
-* AEM Forms as a Cloud Service 경험
+* AEM Formsas a Cloud Service 와 관련된 일부 경험
 * Experience Platform 태그에 액세스
 * Adobe Analytics 액세스
 

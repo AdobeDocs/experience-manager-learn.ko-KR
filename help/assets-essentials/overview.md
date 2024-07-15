@@ -8,8 +8,8 @@ doc-type: Catalog
 exl-id: 6a8534fa-bc99-438b-9107-2a428e06619c
 source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
-source-wordcount: '134'
-ht-degree: 14%
+source-wordcount: '112'
+ht-degree: 4%
 
 ---
 
@@ -34,7 +34,7 @@ Experience Manager Assets Essentials는 간단한 에셋 관리 및 공동 작�
       </a>
    </div>
    <p>
-      <em>Assets Essentials의 기본 사항을 알아보십시오.</em>
+      <em>Assets Essentials의 기본 사항을 알아보세요!</em>
    </p>
 </td>
 <td>
@@ -60,7 +60,7 @@ Experience Manager Assets Essentials는 간단한 에셋 관리 및 공동 작�
       </a>
    </div>
    <p>
-      <em>Assets Essentials을 Adobe Journey Optimizer과 통합하는 방법에 대해 알아봅니다!</em>
+      <em>Assets Essentials을 Adobe Journey Optimizer과 통합하는 방법을 알아보세요!</em>
    <p>
 </td>
 </table>

@@ -34,7 +34,7 @@ ht-degree: 1%
 서명을 위해 다음 양식으로 이동하는 버튼을 추가했습니다
 ![template-code](assets/template-code.PNG)
 
-summary.jsp에는 다음 코드가 있습니다. 카테고리 ID로 식별되는 클라이언트 라이브러리에 대한 참조가 있습니다. **getnextform**
+summary.jsp에는 다음 코드가 있습니다. 범주 ID **getnextform**&#x200B;으로 식별된 클라이언트 라이브러리에 대한 참조가 있습니다.
 
 ```java
 <%--
@@ -47,7 +47,7 @@ summary.jsp에는 다음 코드가 있습니다. 카테고리 ID로 식별되는
 
 ## 자산
 
-사용자 지정 요약 구성 요소는 다음과 같을 수 있습니다. [여기에서 다운로드됨](assets/custom-summary-step.zip)
+사용자 지정 요약 구성 요소는 [여기에서 다운로드](assets/custom-summary-step.zip)할 수 있습니다.
 
 ## 다음 단계
 

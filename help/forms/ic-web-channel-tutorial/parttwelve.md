@@ -68,7 +68,7 @@ AEM Forms에 로그인합니다.
 
 >[!NOTE]
 >
->다음을 살펴보십시오. **/apps/AEMForms/fetchad/GET.jsp** crx의 파일입니다. String 변수 webChannelDocument가 올바른 통신 문서 경로를 가리키는지 확인하십시오.
+>crx의 **/apps/AEMForms/fetchad/GET.jsp** 파일을 확인하십시오. String 변수 webChannelDocument가 올바른 통신 문서 경로를 가리키는지 확인하십시오.
 
 ## 다음 단계
 

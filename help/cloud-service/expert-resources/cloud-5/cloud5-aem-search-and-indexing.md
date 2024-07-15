@@ -27,4 +27,4 @@ ht-degree: 1%
 
 + 검색 및 색인 [개요](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html)
 + AEM [인덱스 변환기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/index-converter.html)
-+ 전문가 시리즈 [심층 조사](../../../cloud-service/migration/moving-to-aem-as-a-cloud-service/search-and-indexing.md)
++ 전문가 시리즈 [심층 분석](../../../cloud-service/migration/moving-to-aem-as-a-cloud-service/search-and-indexing.md)

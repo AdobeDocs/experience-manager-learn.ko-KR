@@ -43,25 +43,25 @@ React 프로젝트 구성, AEM으로 인증 설정, GraphQL을 사용하여 AEM�
 
 + React 숙련도
 + GraphQL에서의 숙련도
-+ AEM에 대한 기본 지식 as a Cloud Service
++ AEM as a Cloud Service에 대한 기본 지식
 
 ### AEM as a Cloud Service
 
-이 자습서에서는 관리자가 AEM as a Cloud Service 환경에 액세스해야 합니다.
+이 자습서에서는 AEM as a Cloud Service 환경에 대한 관리자 액세스 권한이 필요합니다.
 
 ### 소프트웨어
 
 + [Node.js v16+](https://nodejs.org/en/)
-   + 를 실행하여 노드 버전을 확인합니다. `node -v` 명령줄에서
+   + 명령줄에서 `node -v`을(를) 실행하여 노드 버전을 확인하세요.
 + [npm 6+](https://www.npmjs.com/)
-   + 를 실행하여 npm 버전 확인 `npm -v` 명령줄에서
+   + 명령줄에서 `npm -v`을(를) 실행하여 npm 버전 확인
 + [Git](https://git-scm.com/)
-   + 를 실행하여 git 버전 확인 `git -v` 명령줄에서
+   + 명령줄에서 `git -v`을(를) 실행하여 git 버전 확인
 
-사용 [노드 버전 관리자(nvm)](https://github.com/nvm-sh/nvm) 동일한 컴퓨터에 여러 버전의 node.js가 있는 문제를 해결했습니다.
+[node 버전 관리자(nvm)](https://github.com/nvm-sh/nvm)를 사용하여 동일한 컴퓨터에 여러 버전의 node.js가 있는 문제를 해결하십시오.
 
 컴퓨터에 소프트웨어를 전체적으로 설치할 수 있는 권한이 있는지 확인하십시오.
 
 ## 다음 단계
 
-이제 환경이 설정되었으므로 다음 단계로 이동하겠습니다. [AEM as a Cloud Service으로 콘텐츠 설정 및 작성](./1-content-modeling.md)
+이제 환경이 설정되었으므로 다음 단계로 이동하겠습니다. [AEM as a Cloud Service에서 콘텐츠를 설정하고 작성](./1-content-modeling.md)

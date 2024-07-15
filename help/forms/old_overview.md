@@ -19,12 +19,12 @@ Adobe Experience Manager(AEM)는 백엔드 프로세스, 비즈니스 규칙 및
 ## 새로운 기능
 
 * **[양식 데이터 모델 서비스 호출 단계에서 오류 메시지 처리](./adaptive-forms/handling-error-messages-in-invoke-fdm-step.md)**
-  *워크플로우 모델의 변수는 해당 데이터 유형을 기반으로 값을 저장하는 방법입니다*
+  *워크플로 모델의 변수는 해당 데이터 형식을 기반으로 값을 저장하는 방법입니다*
 
-* **[대화형 통신 문서의 다중 시리즈 차트(비디오)](./interactive-communications/multiseriescharts.md)**
-  *동일한 차트에 둘 이상의 시리즈를 표시합니다. 여러 계열 차트는 일반적으로 선, 막대, 열 차트 유형과 관련하여 사용됩니다.*
+* **[대화형 통신 문서(비디오)의 다중 계열 차트](./interactive-communications/multiseriescharts.md)**
+  *같은 차트에 둘 이상의 계열을 표시합니다. 여러 계열 차트는 일반적으로 선, 막대, 열 차트 유형과 관련하여 사용됩니다.*
 
-* **[재사용 가능한 워크플로우 모델 만들기](./adaptive-forms/re-usable-aem-forms-workflow-models-article.md)**
+* **[재사용 가능한 워크플로 모델 만들기](./adaptive-forms/re-usable-aem-forms-workflow-models-article.md)**
   *특정 양식에 연결되지 않은 워크플로 모델 만들기*
 
 ## 직원 추천
@@ -54,7 +54,7 @@ Adobe Experience Manager(AEM)는 백엔드 프로세스, 비즈니스 규칙 및
     </a>
     </div>
     <p>
-    <em>Interactive Communications는 비즈니스 서신, 문서, 명세서, 혜택 공지, 마케팅 이메일, 청구서 및 환영 키트와 같은 안전하고 개인화된 인터랙티브한 통신의 작성, 수집 및 전달을 중앙 집중화하여 관리합니다. </em>
+    <em>대화형 커뮤니케이션은 비즈니스 서신, 문서, 명세서, 혜택 공지, 마케팅 메일, 청구서 및 환영 키트와 같은 안전하고 개인화된 대화형 통신의 작성, 수집 및 전달을 중앙 집중화하여 관리합니다. </em>
     <p>
   </td>
   <td>
@@ -134,11 +134,11 @@ Adobe Experience Manager(AEM)는 백엔드 프로세스, 비즈니스 규칙 및
     </a>
     <div>
       <a href="https://forms.enablementadobe.com/content/forms/af/rentalagreement.html">
-    <strong>샘플 임대 계약 양식</strong>
+    <strong>임대 계약 양식 샘플</strong>
     </a>
     </div>
     <p>
-    <em>임차인과 임대인 간 임대차계약서를 작성해 AEM Forms, Acrobat Sign 등을 이용해 체결했다</em>
+    <em>임차인과 임대인 간의 임대 계약서에 AEM Forms 및 Acrobat Sign을 사용하여 작성 및 서명했습니다</em>
     <p>
   </td>
   <td>
@@ -151,7 +151,7 @@ Adobe Experience Manager(AEM)는 백엔드 프로세스, 비즈니스 규칙 및
     </a>
     </div>
     <p>
-    <em>동적으로 NDA를 작성하고 Acrobat Sign을 사용하여 서명용으로 전송</em>
+    <em>동적으로 NDA를 만들고 Acrobat Sign을 사용하여 서명용으로 보내기</em>
     </p>
   </td>
   <td>

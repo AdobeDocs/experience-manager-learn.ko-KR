@@ -1,6 +1,6 @@
 ---
 title: 전용 이그레스 IP 주소 및 VPN에 대한 HTTP/HTTPS 연결
-description: AEM 전용 이그레스 IP 주소 및 VPN을 위해 실행되는 as a Cloud Service에서 외부 웹 서비스로 HTTP/HTTPS를 요청하는 방법을 알아봅니다
+description: AEM as a Cloud Service에서 전용 이그레스 IP 주소 및 VPN으로 실행되는 외부 웹 서비스로 HTTP/HTTPS를 요청하는 방법을 알아봅니다
 version: Cloud Service
 feature: Security
 topic: Development, Security
@@ -19,28 +19,28 @@ ht-degree: 0%
 
 # 전용 이그레스 IP 주소 및 VPN에 대한 HTTP/HTTPS 연결
 
-HTTP/HTTPS 연결은 전용 이그레스 IP 주소 또는 VPN을 사용하여 AEMas a Cloud Service 에서 자동으로 프록시되며 특별한 것이 필요하지 않습니다 `portForwards` 규칙.
+HTTP/HTTPS 연결은 전용 이그레스 IP 주소 또는 VPN을 사용하여 AEM as a Cloud Service에서 자동으로 프록시되며 특별한 `portForwards` 규칙이 필요하지 않습니다.
 
 ## 고급 네트워킹 지원
 
 다음 코드 예는 다음 고급 네트워킹 옵션에서 지원됩니다.
 
-다음을 확인합니다. [전용 이그레스 IP 주소 또는 VPN](../advanced-networking.md#advanced-networking) 이 자습서를 수행하기 전에 고급 네트워킹 구성이 설정되었습니다.
+이 자습서를 수행하기 전에 [전용 이그레스 IP 주소 또는 VPN](../advanced-networking.md#advanced-networking) 고급 네트워킹 구성이 설정되었는지 확인하십시오.
 
-| 고급 네트워킹 없음 | [유연한 포트 이그레스](../flexible-port-egress.md) | [전용 이그레스 IP 주소](../dedicated-egress-ip-address.md) | [가상 사설망](../vpn.md) |
+| 고급 네트워킹 없음 | [유연한 포트 이그레스](../flexible-port-egress.md) | [전용 이그레스 IP 주소](../dedicated-egress-ip-address.md) | [가상 개인 네트워크](../vpn.md) |
 |:-----:|:-----:|:------:|:---------:|
 | ✘ | ✘ | ✔ | ✔ |
 
 >[!CAUTION]
 >
-> 이 코드 예는 다음 경우에만 해당됩니다 [전용 이그레스 IP 주소](../dedicated-egress-ip-address.md) 및 [VPN](../vpn.md). 에 대해 유사하지만 다른 코드 예를 사용할 수 있습니다. [유연한 포트 이그레스용 비표준 포트에서의 HTTP/HTTPS 연결](./http-on-non-standard-ports-flexible-port-egress.md).
+> 이 코드 예는 [전용 이그레스 IP 주소](../dedicated-egress-ip-address.md) 및 [VPN](../vpn.md)에만 해당됩니다. [유연한 포트 이그레스용 비표준 포트의 HTTP/HTTPS 연결](./http-on-non-standard-ports-flexible-port-egress.md)에 대해 유사하지만 다른 코드 예제를 사용할 수 있습니다.
 
 ## 코드 예
 
-이 Java™ 코드 예는 8080에서 외부 웹 서버에 HTTP 연결을 만드는 AEM as a Cloud Service으로 실행할 수 있는 OSGi 서비스입니다. HTTPS(또는 HTTP) 연결은 AEM as a Cloud Service에서 자동으로 프록시되며 특별한 개발이 필요하지 않습니다.
+이 Java™ 코드 예는 8080에서 외부 웹 서버에 HTTP 연결을 만드는 AEM as a Cloud Service에서 실행할 수 있는 OSGi 서비스입니다. HTTPS(또는 HTTP) 연결은 AEM as a Cloud Service에서 자동으로 프록시되며 특별한 개발이 필요하지 않습니다.
 
 >[!NOTE]
-> 권장되는 작업 [Java™ 11 HTTP API](https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/package-summary.html) AEM에서 HTTP/HTTPS를 호출하는 데 사용됩니다.
+> AEM에서 HTTP/HTTPS를 호출하는 데 [Java™ 11 HTTP API](https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/package-summary.html)를 사용하는 것이 좋습니다.
 
 + `core/src/com/adobe/aem/wknd/examples/connections/impl/HttpExternalServiceImpl.java`
 

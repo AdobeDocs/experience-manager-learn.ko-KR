@@ -25,7 +25,7 @@ AEM Sites용 사이트 맵을 만들어 SEO를 향상시키는 방법을 알아�
 
 >[!WARNING]
 >
->이 비디오에서는 사이트 맵에서 상대 URL의 사용을 보여 줍니다. 사이트맵 [절대 URL을 사용해야 함](https://sitemaps.org/protocol.html). 다음을 참조하십시오 [구성](#absolute-sitemap-urls) 절대 URL을 활성화하는 방법에 대한 자세한 내용은 아래 비디오에서 다루지 않습니다.
+>이 비디오에서는 사이트 맵에서 상대 URL의 사용을 보여 줍니다. 사이트 맵 [은(는) 절대 URL](https://sitemaps.org/protocol.html)을(를) 사용해야 합니다. 절대 URL을 활성화하는 방법은 [구성](#absolute-sitemap-urls)을 참조하십시오. 아래 비디오에서는 다루지 않습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/337960?quality=12&learn=on)
 
@@ -33,9 +33,9 @@ AEM Sites용 사이트 맵을 만들어 SEO를 향상시키는 방법을 알아�
 
 ### 절대 사이트 맵 URL{#absolute-sitemap-urls}
 
-AEM 사이트 맵은 다음을 사용하여 절대 URL을 지원합니다. [Sling 매핑](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html). 이 작업은 사이트 맵(일반적으로 AEM Publish 서비스)을 생성하는 AEM 서비스에 매핑 노드를 생성하여 수행됩니다.
+AEM의 사이트 맵은 [Sling 매핑](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)을 사용하여 절대 URL을 지원합니다. 이 작업은 사이트맵을 생성하는 AEM 서비스(일반적으로 AEM Publish 서비스)에서 매핑 노드를 생성함으로써 수행됩니다.
 
-에 대한 Sling 매핑 노드 정의의 예 `https://wknd.com` 다음을 정의할 수 있습니다. `/etc/map/https` 다음과 같이:
+`https://wknd.com`에 대한 Sling 매핑 노드 정의의 예는 다음과 같이 `/etc/map/https`에서 정의할 수 있습니다.
 
 | 경로 | 속성 이름 | 속성 유형 | 속성 값 |
 |------|----------|---------------|-------|
@@ -43,14 +43,14 @@ AEM 사이트 맵은 다음을 사용하여 절대 URL을 지원합니다. [Slin
 | `/etc/map/https/wknd-site` | `sling:internalRedirect` | 문자열 | `/content/wknd/(.*)` |
 | `/etc/map/https/wknd-site` | `sling:match` | 문자열 | `wknd.com/$1` |
 
-아래 스크린샷은 유사한 구성을 보여 주지만 `http://wknd.local` (에서 실행 중인 로컬 호스트 이름 매핑 `http`).
+아래 스크린샷은 유사한 구성을 보여 주지만 `http://wknd.local`에 대한 구성(로컬 호스트 이름 매핑 `http`에서 실행 중)을 보여 줍니다.
 
 ![사이트 맵 절대 URL 구성](../assets/sitemaps/sitemaps-absolute-urls.jpg)
 
 
 ### 사이트 맵 스케줄러 OSGi 구성
 
-다음을 정의합니다 [OSGi 공장 구성](http://localhost:4502/system/console/configMgr/org.apache.sling.sitemap.impl.SitemapScheduler) 빈도용(사용) [cron 표현식](https://cron.help/)) 사이트 맵은 AEM에서 다시 생성/생성되고 캐시됩니다.
+[cron 식 사용](https://cron.help/)) 사이트 맵이 AEM에서 다시 생성/생성되고 캐시되는 빈도에 대해 [OSGi 팩터리 구성](http://localhost:4502/system/console/configMgr/org.apache.sling.sitemap.impl.SitemapScheduler)을 정의합니다.
 
 `ui.config/src/main/jcr_content/apps/wknd/osgiconfig/config.publish`
 
@@ -62,7 +62,7 @@ AEM 사이트 맵은 다음을 사용하여 절대 URL을 지원합니다. [Slin
 }
 ```
 
-### Dispatcher 허용 필터 규칙
+### Dispatcher 필터 규칙 허용
 
 사이트 맵 인덱스 및 사이트 맵 파일에 대한 HTTP 요청을 허용합니다.
 
@@ -77,7 +77,7 @@ AEM 사이트 맵은 다음을 사용하여 절대 URL을 지원합니다. [Slin
 
 ### Apache 웹 서버 재작성 규칙
 
-확인 `.xml` 사이트 맵 HTTP 요청은 올바른 기본 AEM 페이지로 라우팅됩니다. URL 단축법을 사용하지 않거나 Sling 매핑을 사용하여 URL 단축법을 사용하는 경우 이 구성은 필요하지 않습니다.
+`.xml` 사이트 맵 HTTP 요청이 올바른 기본 AEM 페이지로 라우팅되었는지 확인합니다. URL 단축법을 사용하지 않거나 Sling 매핑을 사용하여 URL 단축법을 사용하는 경우 이 구성은 필요하지 않습니다.
 
 `dispatcher/src/conf.d/rewrites/rewrite.rules`
 
@@ -93,4 +93,4 @@ RewriteRule ^/(.*)$ /content/${CONTENT_FOLDER_NAME}/$1 [PT,L]
 + [Apache Sling 사이트 맵 설명서](https://github.com/apache/sling-org-apache-sling-sitemap#readme)
 + [Sitemap.org 사이트 맵 설명서](https://www.sitemaps.org/protocol.html)
 + [Sitemap.org 사이트 맵 인덱스 파일 설명서](https://www.sitemaps.org/protocol.html#index)
-+ [Cron Helper](https://cron.help/)
++ [크론 도우미](https://cron.help/)

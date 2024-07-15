@@ -26,18 +26,18 @@ Adobe 클라이언트 데이터 레이어는 웹 페이지에서 방문자의 �
 
 >[!NOTE]
 >
-> AEM 사이트에서 Adobe 클라이언트 데이터 레이어를 활성화하시겠습니까? [여기 지침을 참조하십시오.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation).
+> AEM 사이트에서 Adobe 클라이언트 데이터 레이어를 활성화하시겠습니까? [지침을 참조하세요](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation).
 
 ## 데이터 레이어 살펴보기
 
-브라우저 및 라이브의 개발자 도구를 사용하는 것만으로 Adobe 클라이언트 데이터 레이어의 빌트인 기능에 대한 아이디어를 얻을 수 있습니다 [WKND 참조 사이트](https://wknd.site/us/en.html).
+브라우저의 개발자 도구 및 라이브 [WKND 참조 사이트](https://wknd.site/us/en.html)를 사용하여 Adobe 클라이언트 데이터 레이어의 기본 제공 기능에 대한 아이디어를 얻을 수 있습니다.
 
 >[!NOTE]
 >
 > 아래 스크린샷은 Chrome 브라우저에서 찍은 것입니다.
 
-1. 다음으로 이동 [https://wknd.site/us/en.html](https://wknd.site/us/en.html)
-1. 개발자 도구를 열고 다음 명령을 입력합니다 **콘솔**:
+1. [https://wknd.site/us/en.html](https://wknd.site/us/en.html)(으)로 이동
+1. 개발자 도구를 열고 **콘솔**&#x200B;에 다음 명령을 입력합니다.
 
    ```js
    window.adobeDataLayer.getState();
@@ -60,7 +60,7 @@ Adobe 클라이언트 데이터 레이어는 웹 페이지에서 방문자의 �
    });
    ```
 
-1. 명령 실행 `adobeDataLayer.getState()` 다시 한 번 다음 항목을 찾습니다. `training-data`.
+1. `adobeDataLayer.getState()` 명령을 다시 실행하고 `training-data`의 항목을 찾습니다.
 1. 그런 다음 경로 매개 변수를 추가하여 구성 요소의 특정 상태만 반환합니다.
 
    ```js
@@ -92,13 +92,13 @@ Adobe 클라이언트 데이터 레이어는 웹 페이지에서 방문자의 �
    }
    ```
 
-   위의 코드는 다음을 검사합니다. `event` 개체 및 사용 `adobeDataLayer.getState` 메서드를 사용하여 이벤트를 트리거한 개체의 현재 상태를 가져올 수 있습니다. 그런 다음 도우미 메서드는 `filter` 현재 `dataObject` 반환된 필터 기준을 충족합니다.
+   위의 코드는 `event` 개체를 검사하고 `adobeDataLayer.getState` 메서드를 사용하여 이벤트를 트리거한 개체의 현재 상태를 가져옵니다. 그러면 도우미 메서드가 `filter`을(를) 검사하고 현재 `dataObject`이(가) 필터 조건을 충족하는 경우에만 반환됩니다.
 
    >[!CAUTION]
    >
-   > 이는 중요합니다 **아님** 이 연습을 통해 브라우저를 새로 고치려면, 그렇지 않으면 콘솔 JavaScript가 손실됩니다.
+   > 이 연습에서 브라우저를 새로 고치는 것이 중요합니다. **not**. 그렇지 않으면 콘솔 JavaScript이 손실됩니다.
 
-1. 그런 다음 **티저** 구성 요소는 다음 내에 표시됩니다. **회전판**.
+1. 그런 다음 **Teaser** 구성 요소가 **회전 메뉴**&#x200B;에 표시되면 호출되는 이벤트 처리기를 입력하십시오.
 
    ```js
    function teaserShownHandler(event) {
@@ -110,9 +110,9 @@ Adobe 클라이언트 데이터 레이어는 웹 페이지에서 방문자의 �
    }
    ```
 
-   다음 `teaserShownHandler` 함수가 를 호출하면 `getDataObjectHelper` 함수 및 의 필터 전달 `wknd/components/carousel/item` (으)로 `@type` 다른 구성 요소에 의해 트리거된 이벤트를 필터링합니다.
+   `teaserShownHandler` 함수는 `getDataObjectHelper` 함수를 호출하고 `wknd/components/carousel/item`의 필터를 `@type`(으)로 전달하여 다른 구성 요소에 의해 트리거된 이벤트를 필터링합니다.
 
-1. 그런 다음 이벤트 리스너를 데이터 레이어에 푸시하여 `cmp:show` 이벤트.
+1. 그런 다음 이벤트 리스너를 데이터 레이어로 푸시하여 `cmp:show` 이벤트를 수신합니다.
 
    ```js
    window.adobeDataLayer.push(function (dl) {
@@ -120,13 +120,13 @@ Adobe 클라이언트 데이터 레이어는 웹 페이지에서 방문자의 �
    });
    ```
 
-   다음 `cmp:show` 이벤트는에 새 슬라이드를 표시하는 경우처럼 많은 다른 구성 요소에 의해 트리거됩니다. **회전판**&#x200B;또는에서 새 탭을 선택한 경우 **탭** 구성 요소.
+   `cmp:show` 이벤트는 **회전 메뉴**&#x200B;에 새 슬라이드가 표시되거나 **탭** 구성 요소에서 새 탭을 선택하는 경우와 같이 다양한 구성 요소에 의해 트리거됩니다.
 
 1. 페이지에서 슬라이드 이동을 전환하고 콘솔 명령문을 관찰할 수 있습니다.
 
-   ![회전 메뉴를 전환하고 이벤트 리스너 보기](assets/teaser-console-slides.png)
+   ![회전 메뉴를 전환하고 이벤트 수신기를 봅니다](assets/teaser-console-slides.png)
 
-1. 을(를) 더 이상 듣지 않으려면 `cmp:show` 이벤트, 데이터 레이어에서 이벤트 리스너 제거
+1. `cmp:show` 이벤트 수신을 중지하려면 데이터 레이어에서 이벤트 수신기를 제거하십시오
 
    ```js
    window.adobeDataLayer = window.adobeDataLayer || [];
@@ -149,9 +149,9 @@ Adobe 클라이언트 데이터 레이어는 웹 페이지에서 방문자의 �
    }
    ```
 
-   리소스 유형 확인 `wknd/components/page` 이벤트를 필터링하는 데 사용됩니다.
+   리소스 종류 `wknd/components/page`이(가) 이벤트를 필터링하는 데 사용됩니다.
 
-1. 그런 다음 이벤트 리스너를 데이터 레이어에 푸시하여 `cmp:show` 이벤트, 호출 `pageShownHandler`.
+1. 그런 다음 이벤트 리스너를 데이터 레이어로 푸시하여 `cmp:show` 이벤트를 수신하고 `pageShownHandler`을(를) 호출합니다.
 
    ```js
    window.adobeDataLayer = window.adobeDataLayer || [];
@@ -164,16 +164,16 @@ Adobe 클라이언트 데이터 레이어는 웹 페이지에서 방문자의 �
 
    ![페이지 표시 데이터](assets/page-show-console-data.png)
 
-   다음 `cmp:show` 페이지에 대한 이벤트는 페이지 상단의 각 페이지 로드에서 트리거됩니다. 페이지가 이미 로드된 것이 확실한데 이벤트 처리기가 트리거된 이유는 무엇입니까?
+   페이지에 대한 `cmp:show` 이벤트는 페이지 상단의 각 페이지 로드 시 트리거됩니다. 페이지가 이미 로드된 것이 확실한데 이벤트 처리기가 트리거된 이유는 무엇입니까?
 
-   Adobe 클라이언트 데이터 레이어의 고유한 기능 중 하나는 이벤트 리스너를 등록할 수 있다는 것입니다 **다음 이전** 또는 **이후** 데이터 레이어가 초기화되었으므로 경합 조건을 방지하는 데 도움이 됩니다.
+   Adobe 클라이언트 데이터 레이어의 고유한 기능 중 하나는 데이터 레이어가 초기화되기 전에 **이벤트 리스너를 등록** 또는 **후**&#x200B;할 수 있으므로 경합 조건을 피하는 데 도움이 됩니다.
 
-   데이터 레이어는 순차적으로 발생한 모든 이벤트의 대기열 배열을 유지합니다. 기본적으로 데이터 레이어는에서 발생한 이벤트에 대한 이벤트 콜백을 트리거합니다 **과거** 및 의 이벤트 **미래**. 과거 또는 미래의 이벤트를 필터링할 수 있습니다. [자세한 내용은 설명서에서 확인할 수 있습니다](https://github.com/adobe/adobe-client-data-layer/wiki#addeventlistener).
+   데이터 레이어는 순차적으로 발생한 모든 이벤트의 대기열 배열을 유지합니다. 기본적으로 데이터 계층은 **과거**&#x200B;에 발생한 이벤트와 **미래**&#x200B;에 발생한 이벤트에 대한 이벤트 콜백을 트리거합니다. 과거 또는 미래의 이벤트를 필터링할 수 있습니다. [설명서에서 자세한 정보를 찾을 수 있습니다](https://github.com/adobe/adobe-client-data-layer/wiki#addeventlistener).
 
 
 ## 다음 단계
 
-계속 학습하려면 먼저 다음 두 가지 옵션을 확인하십시오. [페이지 데이터를 수집하여 Adobe Analytics으로 전송](../analytics/collect-data-analytics.md) Adobe 클라이언트 데이터 레이어 사용을 보여 주는 자습서입니다. 두 번째 옵션은 다음과 같은 방법에 대해 알아보는 것입니다. [AEM 구성 요소를 사용하여 Adobe 클라이언트 데이터 레이어 사용자 지정](./data-layer-customize.md)
+먼저 Adobe 클라이언트 데이터 레이어 사용을 보여 주는 [페이지 데이터 수집](../analytics/collect-data-analytics.md) 자습서를 체크 아웃하여 Adobe Analytics으로 전송하는 두 가지 방법으로 학습을 계속할 수 있습니다. 두 번째 옵션은 [AEM 구성 요소를 사용하여 Adobe 클라이언트 데이터 레이어를 사용자 지정하는 방법](./data-layer-customize.md)입니다.
 
 
 ## 추가 리소스 {#additional-resources}

@@ -23,9 +23,9 @@ ht-degree: 0%
 이 사용 사례를 달성하려면 저장 및 검색을 위해 GuideBridge API를 사용하여 양식 데이터에 액세스하여 REST 엔드포인트로 전송해야 합니다.
 
 양식 데이터는 규칙 편집기를 사용하여 단추의 클릭 이벤트에 저장됩니다
-![규칙 편집자](assets/rule-editor.png)
+![규칙 편집기](assets/rule-editor.png)
 
-다음 JavaScript 함수는 데이터를 지정된 엔드포인트로 전송하도록 작성되었습니다.
+다음 JavaScript 함수를 작성하여 지정된 엔드포인트로 데이터를 전송합니다
 
 ```javascript
 /**

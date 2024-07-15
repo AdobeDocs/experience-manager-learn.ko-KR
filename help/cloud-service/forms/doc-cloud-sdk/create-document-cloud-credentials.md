@@ -1,6 +1,6 @@
 ---
 title: Adobe IO 프로젝트 만들기
-description: Adobe Developer 콘솔에서 새 프로젝트 만들기
+description: Adobe Developer Console에서 새 프로젝트 만들기
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
@@ -20,8 +20,8 @@ ht-degree: 0%
 
 # Adobe I/O 프로젝트 만들기
 
-1. 통합을 만드는 첫 번째 단계는 를 만드는 것입니다. [Adobe ID](https://account.adobe.com/)
-1. 로 이동 [Adobe Developer 콘솔](https://console.adobe.io/home)
+1. 통합을 만드는 첫 번째 단계는 [Adobe ID](https://account.adobe.com/)을(를) 만드는 것입니다.
+1. [Adobe Developer Console](https://console.adobe.io/home)(으)로 이동
 1. 1단계에서 만든 Adobe ID을 사용하여 로그인
 1. 새 프로젝트 만들기
 

@@ -1,6 +1,6 @@
 ---
 title: Github.com 저장소 및 AEM Cloud Manager
-description: 개인 GitHub 저장소를 AEM Cloud Manager에 연결하여 코드 품질 검사를 간소화하고 워크플로를 자동화하고 개발 효율성을 향상합니다.
+description: 개인 GitHub 저장소를 AEM Cloud Manager에 연결하여 코드 품질 검사를 간소화하고 워크플로우를 자동화하고 개발 효율성을 향상합니다.
 version: Cloud Service
 topic: Architecture
 feature: Cloud Manager, CI-CD Pipeline
@@ -10,13 +10,13 @@ doc-type: Feature Video
 duration: 496
 last-substantial-update: 2024-05-22T00:00:00Z
 jira: KT-15587
-source-git-commit: 9f3868a0c7e01561c96739c891d68a95912f836d
+exl-id: 24c8032c-068d-4f81-8793-6dd3bc31fba3
+source-git-commit: 1977e5103de72a0db5f446eba539d4ae5b810e74
 workflow-type: tm+mt
 source-wordcount: '58'
 ht-degree: 0%
 
 ---
-
 
 # Github.com 저장소
 

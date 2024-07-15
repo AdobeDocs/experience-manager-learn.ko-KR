@@ -24,12 +24,12 @@ ht-degree: 1%
 
 >[!VIDEO](https://video.tv.adobe.com/v/25173?quality=12&learn=on)
 
-위의 비디오는 의 페이지 속성을 사용자 지정하는 방법을 보여 줍니다. [WKND 참조 사이트](https://github.com/adobe/aem-guides-wknd).
+위의 비디오는 [WKND 참조 사이트](https://github.com/adobe/aem-guides-wknd)에 대한 페이지 속성을 사용자 지정하는 방법을 보여 줍니다.
 
 ## 샘플 WKND 페이지 속성 패키지
 
-제공된 을 사용할 수 있습니다 [샘플 WKND 페이지 속성 패키지](./assets/WKND-PageProperties-Example-Dialog-1.0.zip) 다음 포함 **WKND** 및 **기본** 위 비디오에 표시된 탭 사용자 정의. 다음 **소셜 미디어** 탭 사용자 지정은 (으)로 제공되지 않습니다. [WKND 페이지 구성 요소](https://github.com/adobe/aem-guides-wknd/blob/main/ui.apps/src/main/content/jcr_root/apps/wknd/components/page/.content.xml#L5) 이제 에서는 V3 버전의 WCM 핵심 구성 요소를 사용하며 V3 버전에서는 [소셜 공유는 더 이상 사용되지 않습니다.](https://github.com/adobe/aem-core-wcm-components/pull/1930).
+위의 비디오에 표시된 **WKND** 및 **기본** 탭 사용자 지정을 포함하는 제공된 [샘플 WKND 페이지 속성 패키지](./assets/WKND-PageProperties-Example-Dialog-1.0.zip)를 사용할 수 있습니다. [WKND 페이지 구성 요소](https://github.com/adobe/aem-guides-wknd/blob/main/ui.apps/src/main/content/jcr_root/apps/wknd/components/page/.content.xml#L5)에서 이제 V3 버전의 WCM 핵심 구성 요소를 사용하므로 **SocialMedia** 탭 사용자 지정이 제공되지 않습니다. V3 버전에서는 [소셜 공유가 더 이상 사용되지 않습니다](https://github.com/adobe/aem-core-wcm-components/pull/1930).
 
-그러나 학습 목적으로 다음을 사용하여 WKND 페이지 구성 요소를 WCM 핵심 구성 요소 V2 버전으로 안내할 수 있습니다. `sling:resourceSuperType` 속성 값 및 오버레이 [소셜 미디어](https://github.com/adobe/aem-core-wcm-components/blob/main/content/src/content/jcr_root/apps/core/wcm/components/page/v2/page/_cq_dialog/.content.xml#L95) 탭. 자세한 내용은 [페이지 속성 구성](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/page-properties-views.html#configuring-your-page-properties)
+그러나 학습 목적으로 `sling:resourceSuperType` 속성 값을 사용하여 WKND 페이지 구성 요소를 WCM 핵심 구성 요소의 V2 버전으로 지정하고 [소셜 미디어](https://github.com/adobe/aem-core-wcm-components/blob/main/content/src/content/jcr_root/apps/core/wcm/components/page/v2/page/_cq_dialog/.content.xml#L95) 탭을 오버레이할 수 있습니다. 자세한 내용은 [페이지 속성 구성](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/page-properties-views.html#configuring-your-page-properties)을 참조하세요.
 
 이 샘플 패키지는 학습 목적으로 로컬 AEM SDK 또는 AEM 6.X.X 인스턴스에 설치해야 합니다.

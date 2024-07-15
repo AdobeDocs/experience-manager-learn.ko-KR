@@ -24,7 +24,7 @@ API를 사용하여 대화형 통신 문서를 생성하려면 다음을 수행�
 * 미리 채우기 서비스 만들기
 * 대화형 통신 문서 생성
 
-서비스 이름 `ccm-print-test` 이 서비스에 액세스하는 데 사용됩니다. 이 미리 채우기 서비스가 정의되면 서블릿 또는 워크플로우 프로세스 단계 구현에서 이 서비스에 액세스하여 인쇄 채널 문서를 생성할 수 있습니다.
+서비스 이름 `ccm-print-test`은(는) 이 서비스에 액세스하는 데 사용됩니다. 이 미리 채우기 서비스가 정의되면 서블릿 또는 워크플로우 프로세스 단계 구현에서 이 서비스에 액세스하여 인쇄 채널 문서를 생성할 수 있습니다.
 
 ```java
 package com.acrobatsign.core;
@@ -318,4 +318,4 @@ public String getWidgetURL(String widgetId) throws ClientProtocolException, IOEx
 
 ## 다음 단계
 
-쓰기 [Acrobat Sign API를 노출하는 OSGi 서비스 래퍼](./wrapper-sign-api.md)
+Acrobat Sign API를 노출하려면 [OSGi 서비스 래퍼를 작성하십시오](./wrapper-sign-api.md)

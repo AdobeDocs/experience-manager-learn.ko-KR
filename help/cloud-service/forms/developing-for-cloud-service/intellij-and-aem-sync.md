@@ -21,7 +21,7 @@ ht-degree: 0%
 
 
 Cygwin은 Microsoft Windows에서 기본적으로 실행되는 POSIX 호환 프로그래밍 및 런타임 환경입니다.
-설치 [시그윈](https://www.cygwin.com/). C:\cygwin64 폴더에 설치했습니다.
+[Cygwin](https://www.cygwin.com/)을(를) 설치합니다. C:\cygwin64 폴더에 설치했습니다.
 >[!NOTE]
 > Cygwin 설치와 함께 zip, unzip, curl, rsync 패키지를 설치하십시오.
 
@@ -37,16 +37,16 @@ c:\cloudmanager 아래에 adoberepo라는 폴더를 만듭니다.
 * Ctrl+Alt+S 키를 눌러 설정 창을 시작합니다.
 * 도구->외부 도구 를 선택한 다음 + 기호를 클릭하고 스크린샷에 표시된 대로 다음을 입력합니다.
   ![rep](assets/repo.png)
-* 그룹 드롭다운 필드에 &quot;repo&quot;를 입력하여 repo라는 그룹을 만들어야 하며 작성한 모든 명령은 **보고** 그룹
+* 그룹 드롭다운 필드에 &quot;repo&quot;를 입력하여 repo라는 그룹을 만드십시오. 그리고 만든 모든 명령은 **repo** 그룹에 속합니다
 
 
-**Put 명령**
+**명령 넣기**
 **프로그램**: C:\cygwin64\bin\bash
 **인수**: -l C:\CloudManager\adoberepo\repo put -f \$FilePath\$
 **작업 디렉터리**: \$ProjectFileDir\$
-![put 명령](assets/put-command.png)
+![put-command](assets/put-command.png)
 
-**Get 명령**
+**명령 가져오기**
 **프로그램**: C:\cygwin64\bin\bash
 **인수**: -l C:\CloudManager\adoberepo\repo get -f \$FilePath\$
 **작업 디렉터리**: \$ProjectFileDir\$
@@ -64,8 +64,10 @@ c:\cloudmanager 아래에 adoberepo라는 폴더를 만듭니다.
 **작업 디렉터리**: \$ProjectFileDir\$
 ![diff-command](assets/diff-command.png)
 
-에서 .repo 파일 추출 [repo.zip](assets/repo.zip) AEM 프로젝트 루트 폴더에 넣습니다. (C:\CloudManager\aem-banking-application). .repo 파일을 열고 서버와 자격 증명 설정이 사용자 환경과 일치하는지 확인합니다.
-.gitigore 파일을 열고 파일 하단에 다음을 추가하고 변경 사항을 저장합니다. \# repo .repo
+[repo.zip](assets/repo.zip)에서 .repo 파일을 추출하여 AEM 프로젝트 루트 폴더에 저장합니다. (C:\CloudManager\aem-banking-application). .repo 파일을 열고 서버와 자격 증명 설정이 사용자 환경과 일치하는지 확인합니다.
+.gignore 파일을 열고 파일 하단에 다음을 추가하고 변경 사항을 저장합니다
+\# 리포지토리
+.repo
 
 aem 뱅킹 애플리케이션 프로젝트 내의 프로젝트(예: ui.content )를 선택하고 마우스 오른쪽 버튼을 클릭하면 보고 옵션이 표시되고, 보고 옵션 아래에 이전에 추가한 4개의 명령이 표시됩니다.
 
@@ -76,16 +78,19 @@ aem 뱅킹 애플리케이션 프로젝트 내의 프로젝트(예: ui.content )
 
 * [최신 AEM Forms 추가 기능 다운로드](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)
 
-* 다음 폴더 구조 c:\aemformscs\aem-sdk\author 를 만듭니다.
+* 다음 폴더 구조를 만듭니다
+c:\aemformscs\aem-sdk\author
 
 * AEM SDK zip 파일에서 aem-sdk-quickstart-xxxxxxx.jar 파일을 추출하여 c:\aemformscs\aem-sdk\author 폴더에 넣습니다.jar 파일의 이름을 aem-author-p4502.jar로 바꿉니다
 
-* 명령 프롬프트를 열고 c:\aemformscs\aem-sdk\author으로 이동한 후 다음 명령을 입력합니다 java -jar aem-author-p4502.jar -gui. 이렇게 하면 AEM 설치가 시작됩니다.
+* 명령 프롬프트를 열고 c:\aemformscs\aem-sdk\author으로 이동합니다.
+java -jar aem-author-p4502.jar -gui 명령을 입력합니다. 이렇게 하면 AEM 설치가 시작됩니다.
 * 관리자/관리자 자격 증명을 사용하여 로그인
 * AEM 인스턴스 중지
 * 다음 폴더 구조를 만듭니다.C:\aemformscs\aem-sdk\author\crx-quickstart\install
 * 설치 폴더에 aem-forms-addon-xxxxxx.far 복사
-* 명령 프롬프트를 열고 c:\aemformscs\aem-sdk\author으로 이동한 후 다음 명령을 입력합니다 java -jar aem-author-p4502.jar -gui. 이렇게 하면 AEM 인스턴스에 양식 추가 기능 패키지가 배포됩니다.
+* 명령 프롬프트를 열고 c:\aemformscs\aem-sdk\author으로 이동합니다.
+java -jar aem-author-p4502.jar -gui 명령을 입력합니다. 이렇게 하면 AEM 인스턴스에 양식 추가 기능 패키지가 배포됩니다.
 
 ## 다음 단계
 

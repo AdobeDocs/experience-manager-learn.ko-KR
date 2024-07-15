@@ -27,11 +27,11 @@ ht-degree: 0%
 
 적응형 양식이 제출되면 수신자는 이메일을 받게 됩니다.
 
-![SendEmail](assets/sendemailaction.gif)
+![전자 메일 보내기](assets/sendemailaction.gif)
 
 ## 필요한 구성 {#configurations-needed}
 
-일별 CQ 메일 서비스를 구성해야 합니다. 브라우저를 가리켜서 구성할 수 있습니다. [Felix 구성 관리자](http://localhost:4502/system/console/configMgr)
+일별 CQ 메일 서비스를 구성해야 합니다. 브라우저를 [Felix 구성 관리자](http://localhost:4502/system/console/configMgr)로 지정하여 구성할 수 있습니다.
 
 스크린샷은 adobe 메일 서버에 대한 구성 속성을 보여 줍니다.
 
@@ -39,9 +39,9 @@ ht-degree: 0%
 
 서버에서 이를 시도하려면 다음 지침을 따르십시오.
 
-* [에셋 가져오기](assets/timeoffrequest.zip) 패키지 관리자를 사용하여 AEM에서 이 문서와 연결됩니다.
+* 패키지 관리자를 사용하여 AEM에서 이 문서와 연결된 [자산을 가져옵니다](assets/timeoffrequest.zip).
 
-* 를 엽니다. [TimeOffRequestForm](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled).
+* [TimeOffRequestForm](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)을 엽니다.
 
 * 세부 정보를 입력합니다. 이메일 필드에 유효한 이메일 주소를 입력해야 합니다.
 

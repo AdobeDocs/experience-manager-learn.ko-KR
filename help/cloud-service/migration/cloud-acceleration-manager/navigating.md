@@ -1,6 +1,6 @@
 ---
 title: Cloud Acceleration Manager 탐색
-description: Cloud Acceleration Manager 의 Experience Manager 경험을 as a Cloud Service으로 살펴보십시오.
+description: Cloud Acceleration Manager for Experience Manageras a Cloud Service 의 탐색 경험을 살펴보십시오.
 version: Cloud Service
 feature: Migration
 topic: Migration, Upgrade
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Cloud Acceleration Manager 탐색
 
-Cloud Acceleration Manager 의 Experience Manager 경험을 as a Cloud Service으로 살펴보십시오.
+Cloud Acceleration Manager for Experience Manageras a Cloud Service 의 탐색 경험을 살펴보십시오.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336698?quality=12&learn=on)

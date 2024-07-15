@@ -32,7 +32,7 @@ AEM은 여러 OSGi 콘솔을 제공하며 각각은 AEM의 다양한 측면에 �
 번들 콘솔은 다음 위치에 있습니다.
 
 + 도구 > 작업 > 웹 콘솔 > OSGi > 번들
-+ 또는 다음 위치에서 바로 사용할 수 있습니다. [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
++ 또는 [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)에서 바로 사용할 수 있습니다.
 
 각 번들을 클릭하면 응용 프로그램 디버깅에 도움이 되는 세부 정보가 제공됩니다.
 
@@ -49,7 +49,7 @@ AEM은 여러 OSGi 콘솔을 제공하며 각각은 AEM의 다양한 측면에 �
 구성 요소 콘솔은 다음 위치에 있습니다.
 
 + 도구 > 작업 > 웹 콘솔 > OSGi > 구성 요소
-+ 또는 다음 위치에서 바로 사용할 수 있습니다. [http://localhost:4502/system/console/components](http://localhost:4502/system/console/components)
++ 또는 [http://localhost:4502/system/console/components](http://localhost:4502/system/console/components)에서 바로 사용할 수 있습니다.
 
 디버깅 활동에 도움이 되는 주요 측면:
 
@@ -66,7 +66,7 @@ AEM은 여러 OSGi 콘솔을 제공하며 각각은 AEM의 다양한 측면에 �
 Sling 모델 콘솔은 다음 위치에 있습니다.
 
 + 도구 > 작업 > 웹 콘솔 > 상태 > Sling 모델
-+ 또는 다음 위치에서 바로 사용할 수 있습니다. [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)
++ 또는 [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)에서 바로 사용할 수 있습니다.
 
 디버깅 활동에 도움이 되는 주요 측면:
 

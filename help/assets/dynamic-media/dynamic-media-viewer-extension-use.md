@@ -25,7 +25,7 @@ Dynamic Media 및 Adobe Analytics을 사용하는 고객의 경우 이제 Dynami
 
 >[!NOTE]
 >
-> 이 기능을 사용하려면 Dynamic Media Scene7 모드에서 Adobe Experience Manager을 실행하십시오. 또한 다음을 수행해야 합니다 [AEM 인스턴스와 태그 통합](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html).
+> 이 기능을 사용하려면 Dynamic Media Scene7 모드에서 Adobe Experience Manager을 실행하십시오. [태그를 AEM 인스턴스와 통합](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html)해야 합니다.
 
 Dynamic Media 뷰어 확장 기능 도입으로 이제 Adobe Experience Manager은 Dynamic Media 뷰어(5.13)와 함께 제공된 자산에 대한 고급 분석 지원을 제공하여 Dynamic Media 뷰어를 Sites 페이지에서 사용할 때 이벤트 추적을 보다 세밀하게 제어할 수 있습니다.
 

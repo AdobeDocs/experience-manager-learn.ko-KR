@@ -19,29 +19,29 @@ ht-degree: 0%
 
 # App Builder 작업에서 서버 간 액세스 토큰 생성
 
-App Builder 작업은 를 지원하는 Adobe API와 상호 작용해야 할 수 있습니다 **OAuth 서버 간 자격 증명** 및 는 App Builder 앱이 배포되는 Adobe Developer 콘솔 프로젝트와 연결됩니다.
+App Builder 작업은 **OAuth 서버 간 자격 증명**&#x200B;을 지원하고 App Builder 앱이 배포된 Adobe Developer Console 프로젝트와 연결된 Adobe API와 상호 작용해야 할 수 있습니다.
 
-이 안내서에서는 를 사용하여 액세스 토큰을 생성하는 방법을 설명합니다. _OAuth 서버 간 자격 증명_ App Builder 작업에 사용할 수 있습니다.
+이 안내서에서는 App Builder 작업에 사용할 _OAuth 서버 간 자격 증명_&#x200B;을(를) 사용하여 액세스 토큰을 생성하는 방법을 설명합니다.
 
 >[!IMPORTANT]
 >
 > JWT(서비스 계정) 자격 증명은 OAuth 서버 간 자격 증명을 위해 더 이상 사용되지 않습니다. 그러나 JWT(서비스 계정) 자격 증명만 지원하는 일부 Adobe API와 OAuth 서버 간 마이그레이션이 진행 중입니다. 지원되는 자격 증명을 이해하려면 Adobe API 설명서 를 검토하십시오.
 
-## Adobe Developer 콘솔 프로젝트 구성
+## Adobe Developer Console 프로젝트 구성
 
-Adobe Developer 콘솔 프로젝트에 원하는 Adobe API를 추가하는 동안 _API 구성_ 단계에서 다음을 선택합니다. **OAuth 서버 간** 인증 유형입니다.
+Adobe Developer Console 프로젝트에 원하는 Adobe API를 추가하는 동안 _API 구성_ 단계에서 **OAuth 서버 간** 인증 유형을 선택합니다.
 
-![Adobe Developer 콘솔 - OAuth 서버 간](./assets/s2s-auth/oauth-server-to-server.png)
+![Adobe Developer Console - OAuth 서버 간](./assets/s2s-auth/oauth-server-to-server.png)
 
 위에서 자동으로 만든 통합 서비스 계정을 할당하려면 원하는 제품 프로필을 선택합니다. 따라서 제품 프로필을 통해 서비스 계정 권한이 제어됩니다.
 
-![Adobe Developer 콘솔 - 제품 프로필](./assets/s2s-auth/select-product-profile.png)
+![Adobe Developer Console - 제품 프로필](./assets/s2s-auth/select-product-profile.png)
 
 ## .env 파일
 
-App Builder 프로젝트의 `.env` Adobe Developer 콘솔 프로젝트의 OAuth 서버 간 자격 증명에 대한 사용자 지정 키를 추가합니다. OAuth 서버 간 자격 증명 값은 Adobe Developer 콘솔 프로젝트의 __자격 증명__ > __OAuth 서버 간__ (특정 작업 공간에 해당)
+App Builder 프로젝트의 `.env` 파일에서 Adobe Developer Console 프로젝트의 OAuth 서버 간 자격 증명에 대한 사용자 지정 키를 추가합니다. OAuth 서버 간 자격 증명 값은 지정된 작업 영역에 대한 Adobe Developer Console 프로젝트의 __자격 증명__ > __OAuth 서버 간 자격 증명__&#x200B;에서 얻을 수 있습니다.
 
-![Adobe Developer 콘솔 OAuth 서버 간 자격 증명](./assets/s2s-auth/oauth-server-to-server-credentials.png)
+![Adobe Developer Console OAuth 서버 간 자격 증명](./assets/s2s-auth/oauth-server-to-server-credentials.png)
 
 ```
 ...
@@ -50,11 +50,11 @@ OAUTHS2S_CLIENT_SECRET=p8e-EIRF6kY6EHLBSdw2b-pLUWKodDqJqSz3
 OAUTHS2S_CECREDENTIALS_METASCOPES=AdobeID,openid,ab.manage,additional_info.projectedProductContext,read_organizations,read_profile,account_cluster.read
 ```
 
-값 `OAUTHS2S_CLIENT_ID`, `OAUTHS2S_CLIENT_SECRET`, `OAUTHS2S_CECREDENTIALS_METASCOPES` 는 Adobe Developer 콘솔 프로젝트의 OAuth 서버 간 자격 증명 화면에서 직접 복사할 수 있습니다.
+`OAUTHS2S_CLIENT_ID`, `OAUTHS2S_CLIENT_SECRET`, `OAUTHS2S_CECREDENTIALS_METASCOPES`의 값을 Adobe Developer Console 프로젝트의 OAuth 서버 간 자격 증명 화면에서 직접 복사할 수 있습니다.
 
 ## 입력 매핑
 
-에 OAuth 서버 간 자격 증명 값이 설정된 경우 `.env` 파일에서, 작업 자체에서 읽을 수 있도록 이 매개 변수를 AppBuilder 작업 입력에 매핑해야 합니다. 이렇게 하려면 각 변수에 대한 항목을 `ext.config.yaml` 작업 `inputs` 형식을 사용하여 다음을 수행합니다. `PARAMS_INPUT_NAME: $ENV_KEY`.
+`.env` 파일에 OAuth 서버 간 자격 증명 값이 설정되어 있으면 이 값을 작업 자체에서 읽을 수 있도록 AppBuilder 작업 입력에 매핑해야 합니다. 이렇게 하려면 `ext.config.yaml` 작업 `inputs`의 각 변수에 대한 항목을 `PARAMS_INPUT_NAME: $ENV_KEY` 형식으로 추가하십시오.
 
 예:
 
@@ -83,13 +83,13 @@ runtimeManifest:
             final: true
 ```
 
-아래에 정의된 키 `inputs` 다음에서 사용할 수 있습니다. `params` App Builder 작업에 제공된 개체입니다.
+`inputs`에 정의된 키를 App Builder 작업에 제공된 `params` 개체에서 사용할 수 있습니다.
 
 ## 토큰에 액세스하기 위한 OAuth 서버 간 자격 증명
 
-App Builder 작업에서 OAuth 서버 간 자격 증명을 `params` 개체. 이러한 자격 증명을 사용하여 액세스 토큰을 생성하는 방법 [OAuth 2.0 라이브러리](https://oauth.net/code/). 또는 다음을 사용할 수 있습니다 [노드 가져오기 라이브러리](https://www.npmjs.com/package/node-fetch) 액세스 토큰을 가져오기 위해 Adobe IMS 토큰 엔드포인트에 대한 POST 요청을 수행합니다.
+App Builder 작업에서 OAuth 서버 간 자격 증명을 `params` 개체에서 사용할 수 있습니다. 이 자격 증명을 사용하여 [OAuth 2.0 라이브러리](https://oauth.net/code/)를 사용하여 액세스 토큰을 생성할 수 있습니다. 또는 [노드 가져오기 라이브러리](https://www.npmjs.com/package/node-fetch)를 사용하여 Adobe IMS 토큰 엔드포인트에 대한 POST 요청을 수행하여 액세스 토큰을 가져올 수 있습니다.
 
-다음 예제에서는 를 사용하는 방법을 보여 줍니다. `node-fetch` 액세스 토큰을 가져오기 위해 Adobe IMS 토큰 엔드포인트에 대한 POST 요청을 수행하는 라이브러리입니다.
+다음 예제에서는 `node-fetch` 라이브러리를 사용하여 액세스 토큰을 가져오기 위해 Adobe IMS 토큰 엔드포인트에 대한 POST 요청을 수행하는 방법을 보여 줍니다.
 
 ```javascript
 const fetch = require("node-fetch");

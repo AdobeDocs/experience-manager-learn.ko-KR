@@ -1,6 +1,6 @@
 ---
-title: AEMas a Cloud Service 용 asset compute 마이크로서비스 확장성
-description: 이 튜토리얼에서는 원본 에셋을 원으로 자르고 구성 가능한 대비 및 밝기를 적용하여 에셋 렌디션을 만드는 간단한 Asset compute 작업자를 만드는 과정을 안내합니다. 작업자 자체는 기본이지만 이 자습서에서는 이 작업자를 사용하여 AEMas a Cloud Service 에 사용할 사용자 지정 Asset compute 작업자를 만들고, 개발하고, 배포합니다.
+title: AEM as a Cloud Service을 위한 asset compute 마이크로서비스 확장성
+description: 이 튜토리얼에서는 원본 에셋을 원으로 자르고 구성 가능한 대비 및 밝기를 적용하여 에셋 렌디션을 만드는 간단한 Asset compute 작업자를 만드는 과정을 안내합니다. 작업자 자체는 기본이지만 이 자습서에서는 이 작업자를 사용하여 AEM as a Cloud Service에 사용할 사용자 지정 Asset compute 작업자를 만들고, 개발하고, 배포합니다.
 feature: Asset Compute Microservices
 version: Cloud Service
 doc-type: Tutorial
@@ -23,13 +23,13 @@ ht-degree: 0%
 
 AEM as Cloud Service의 Asset compute 마이크로 서비스는 사용자 정의 에셋 변환을 만들기 위해 AEM에 저장된 에셋의 이진 데이터를 읽고 조작하는 데 사용되는 사용자 정의 작업자의 개발 및 배포를 지원합니다.
 
-AEM 6.x에서는 사용자 지정 AEM AEM Workflow 프로세스를 사용하여 에셋 렌디션을 읽고, 변형하고, 다시 작성하는 반면, as a Cloud Service Asset compute 작업자는 이 요구 사항을 충족합니다.
+AEM 6.x에서 사용자 지정 AEM Workflow 프로세스가 에셋 렌디션을 읽고, 변형하고, 다시 작성하는 데 사용되었지만, AEM as a Cloud Service Asset compute 작업자는 이 요구 사항을 충족합니다.
 
 ## 수행할 작업
 
 >[!VIDEO](https://video.tv.adobe.com/v/40965?quality=12&learn=on)
 
-이 튜토리얼에서는 원본 에셋을 원으로 자르고 구성 가능한 대비 및 밝기를 적용하여 에셋 렌디션을 만드는 간단한 Asset compute 작업자를 만드는 과정을 안내합니다. 작업자 자체는 기본이지만 이 자습서에서는 이 작업자를 사용하여 AEMas a Cloud Service 에 사용할 사용자 지정 Asset compute 작업자를 만들고, 개발하고, 배포합니다.
+이 튜토리얼에서는 원본 에셋을 원으로 자르고 구성 가능한 대비 및 밝기를 적용하여 에셋 렌디션을 만드는 간단한 Asset compute 작업자를 만드는 과정을 안내합니다. 작업자 자체는 기본이지만 이 자습서에서는 이 작업자를 사용하여 AEM as a Cloud Service에 사용할 사용자 지정 Asset compute 작업자를 만들고, 개발하고, 배포합니다.
 
 ### 목표 {#objective}
 
@@ -37,7 +37,7 @@ AEM 6.x에서는 사용자 지정 AEM AEM Workflow 프로세스를 사용하여 
 1. asset compute 프로젝트 만들기 및 구성
 1. 사용자 지정 렌디션을 생성하는 Asset compute 작업자 개발
 1. 에 대한 테스트를 작성하고 사용자 지정 Asset compute 작업자를 디버깅하는 방법을 알아봅니다.
-1. asset compute 작업자를 배포하고 처리 프로필을 통해 AEM as a Cloud Service Author 서비스를 통합합니다.
+1. asset compute 작업자를 배포하고 처리 프로필을 통해 AEM as a Cloud Service 작성자 서비스를 통합합니다
 
 ## 설정
 
@@ -57,7 +57,7 @@ asset compute 프로젝트의 로컬 개발에는 기존 AEM 개발과는 다른
 
 ### App Builder
 
-Asset compute 프로젝트는 특별히 정의된 App Builder 프로젝트로서, 설정 및 배포하려면 Adobe Developer 콘솔에서 App Builder에 액세스해야 합니다.
+Asset compute 프로젝트는 특별히 정의된 App Builder 프로젝트이며, 따라서 프로젝트를 설정하고 배포하려면 Adobe Developer Console의 App Builder에 액세스해야 합니다.
 
 + [App Builder 설정](./set-up/app-builder.md)
 
@@ -73,7 +73,7 @@ asset compute 프로젝트를 만들고 구성한 다음 맞춤형 에셋 렌디
 
 ### 환경 변수 구성
 
-환경 변수는 `.env` 로컬 개발용 파일이며, 로컬 개발에 필요한 Adobe I/O 자격 증명 및 클라우드 스토리지 자격 증명을 제공하는 데 사용됩니다.
+환경 변수는 로컬 개발을 위해 `.env` 파일에서 유지되며 로컬 개발에 필요한 Adobe I/O 자격 증명과 클라우드 저장소 자격 증명을 제공하는 데 사용됩니다.
 
 + [환경 변수 구성](./develop/environment-variables.md)
 
@@ -107,23 +107,23 @@ Asset compute은 작업자를 위한 테스트 세트를 만들기 위한 테스
 
 ### 작업자 디버깅
 
-Asset compute 작업자는 기존 디버깅을 다양한 수준으로 제공합니다 `console.log(..)` 출력, 와 통합 __VS 코드__ 및  __wskdebug__&#x200B;를 사용하면 개발자가 실시간으로 실행될 때 작업자 코드를 단계별로 진행할 수 있습니다.
+Asset compute 작업자는 기존 `console.log(..)` 출력에서 __VS 코드__ 및 __wskdebug__&#x200B;와의 통합에 이르기까지 다양한 수준의 디버깅을 제공하므로 개발자는 작업자 코드를 단계별로 실행하여 실시간으로 실행할 수 있습니다.
 
 + [작업자 디버깅](./test-debug/debug.md)
 
 ## 배포
 
-사용자 정의 Asset compute AEM 작업자를 Adobe I/O Runtime에 배포한 다음 AEM Assets의 처리 프로필을 통해 AEM as a Cloud Service Author에서 호출하여 as a Cloud Service으로 통합하는 방법을 알아봅니다.
+사용자 지정 Asset compute 작업자를 AEM as a Cloud Service에 배포한 다음 AEM Assets의 처리 프로필을 통해 AEM as a Cloud Service 작성자로부터 호출하여 Adobe I/O Runtime과 통합하는 방법을 알아봅니다.
 
 ### Adobe I/O Runtime에 배포
 
-as a Cloud Service으로 사용하려면 asset compute 작업자를 Adobe I/O RuntimeAEM 에 배포해야 합니다.
+AEM as a Cloud Service과 함께 사용하려면 asset compute 작업자를 Adobe I/O Runtime에 배포해야 합니다.
 
 + [처리 프로필 사용](./deploy/runtime.md)
 
 ### AEM 처리 프로필을 통해 작업자 통합
 
-Adobe I/O Runtime에 배포되면 Asset compute AEM 작업자를 as a Cloud Service으로 등록할 수 있습니다. [자산 처리 프로필](../../assets/configuring/processing-profiles.md). 처리 프로필은 에셋에 적용되는 에셋 폴더에 적용됩니다.
+Adobe I/O Runtime에 배포되면 Asset compute 작업자는 [Assets 처리 프로필](../../assets/configuring/processing-profiles.md)을 통해 AEM as a Cloud Service에 등록할 수 있습니다. 처리 프로필은 에셋에 적용되는 에셋 폴더에 적용됩니다.
 
 + [AEM 처리 프로필과 통합](./deploy/processing-profiles.md)
 
@@ -131,7 +131,7 @@ Adobe I/O Runtime에 배포되면 Asset compute AEM 작업자를 as a Cloud Serv
 
 이러한 간략한 튜토리얼은 이전 장에서 수립한 기초 학습을 기반으로 구축되는 보다 고급 사용 사례를 다룹니다.
 
-+ [asset compute 메타데이터 작업자 개발](./advanced/metadata.md) 메타데이터를에 다시 쓸 수 있습니다
++ 메타데이터를 다시 쓸 수 있는 [Asset compute 메타데이터 작업자 개발](./advanced/metadata.md)
 
 ## Github의 코드베이스
 
@@ -139,7 +139,7 @@ Adobe I/O Runtime에 배포되면 Asset compute AEM 작업자를 as a Cloud Serv
 
 + [adobe/aem-guides-wknd-asset-compute](https://github.com/adobe/aem-guides-wknd-asset-compute) @ 마스터 분기
 
-소스 코드에 필수 항목이 포함되어 있지 않습니다. `.env` 또는 `config.json` 파일. 다음을 사용하여 추가하고 구성해야 합니다. [계정 및 서비스](#accounts-and-services) 정보.
+소스 코드에 필요한 `.env` 또는 `config.json` 파일이 포함되어 있지 않습니다. [계정 및 서비스](#accounts-and-services) 정보를 사용하여 추가하고 구성해야 합니다.
 
 ## 추가 리소스
 
@@ -153,7 +153,7 @@ Adobe I/O Runtime에 배포되면 Asset compute AEM 작업자를 as a Cloud Serv
 
 ### API 및 SDK
 
-+ [ASSET COMPUTE SDK](https://github.com/adobe/asset-compute-sdk)
++ [SDK Asset compute](https://github.com/adobe/asset-compute-sdk)
    + [Asset compute 커먼즈](https://github.com/adobe/asset-compute-commons)
    + [Asset compute XMP](https://github.com/adobe/asset-compute-xmp#readme)
 + [Adobe 클라우드 Blobstore 래퍼 라이브러리](https://github.com/adobe/node-cloud-blobstore-wrapper)

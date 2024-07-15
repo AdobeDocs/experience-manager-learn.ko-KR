@@ -18,7 +18,7 @@ ht-degree: 2%
 
 # ChatBot 데이터 분석
 
-A [ChatBot Webhook](https://www.chatbot.com/help/webhooks/what-are-webhooks/) 는 AEM 서블릿에 ChatBot 데이터를 전송하는 데 사용됩니다.
+[ChatBot webhook](https://www.chatbot.com/help/webhooks/what-are-webhooks/)을(를) 사용하여 ChatBot 데이터를 AEM 서블릿으로 보냈습니다.
 ChatBot에서 캡처한 데이터는 아래와 같이 사용자가 속성 개체에 입력한 데이터와 함께 JSON 형식입니다
 ![챗봇 데이터](assets/chat-bot-data.png)
 

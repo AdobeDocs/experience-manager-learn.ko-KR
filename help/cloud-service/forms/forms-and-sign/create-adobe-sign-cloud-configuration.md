@@ -33,7 +33,7 @@ AEM의 클라우드 서비스 구성을 사용하면 AEM과 다른 클라우드 
 
 Abobe Sign 클라우드 구성 구성에 오류가 발생하는 경우 다음 단계를 수행하여 문제를 해결할 수 있습니다
 * Acrobat Sign API 애플리케이션에 지정된 리디렉션 URL이 다음 형식인지 확인합니다
-&lt;your instance=&quot;&quot; name=&quot;&quot;>/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/&lt;container>.
+&lt;인스턴스 이름>/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/&lt;컨테이너>.
 예: https://author-p24107-e32034.adobeaemcloud.com/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/FormsCS. FormsCS는 클라우드 구성을 보유할 컨테이너의 이름입니다
 * oAuth URL이 올바른지 확인하십시오
 * 클라이언트 Id 및 클라이언트 암호 확인

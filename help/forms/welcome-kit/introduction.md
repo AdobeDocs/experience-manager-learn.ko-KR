@@ -24,6 +24,7 @@ ht-degree: 0%
 
 다음이 필요합니다.
 
-양식 추가 기능 패키지가 설치된 AEM의 작업 인스턴스 - 설치된 핵심 구성 요소
+양식 추가 기능 패키지가 설치된 AEM의 작업 인스턴스
+핵심 구성 요소가 설치됨
 
 [이 문서에 따라 설정된 개발 환경](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)

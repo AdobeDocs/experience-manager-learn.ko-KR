@@ -1,6 +1,6 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 비디오 및 자습서
-description: Adobe Experience Manager(AEM) as a Cloud Service에 대한 자습서 모음입니다
+description: Adobe Experience Manager(AEM as a Cloud Service) 튜토리얼 모음입니다
 sub-product: Experience Manager as a Cloud Service
 jira: KT-3289
 last-substantial-update: 2023-09-26T00:00:00Z
@@ -17,7 +17,7 @@ ht-degree: 5%
 
 {{edge-delivery-services}}
 
-이제 Adobe Experience Manager(AEM)를 as a Cloud Service으로 사용할 수 있습니다. AEM as a Cloud Service은 모든 사용 사례 및 기능을 보존하고 확장하면서 과거의 투자와 혁신을 바탕으로 구축된 차세대 Experience Manager 제품 라인을 소개합니다.
+Adobe Experience Manager(AEM as a Cloud Service)를 사용할 수 있습니다. AEM as a Cloud Service은 모든 사용 사례 및 기능을 보존하고 확장하면서 과거의 투자와 혁신을 기반으로 구축된 차세대 Experience Manager 제품군을 도입합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/31085?quality=12&learn=on)
 
@@ -43,7 +43,7 @@ ht-degree: 5%
          </a>
       </div>
       <p>
-         <em>AEM에 액세스하도록 Adobe Admin Console에서 IMS 사용자를 구성합니다.</em>
+         <em>AEM에 액세스할 수 있도록 Adobe Admin Console에서 IMS 사용자를 구성하십시오.</em>
       <p>
    </td>   
    <td>
@@ -56,7 +56,7 @@ ht-degree: 5%
          </a>
       </div>
       <p>
-         <em>AEM as a Cloud Service 개발을 위한 로컬 개발 시스템을 준비하십시오!</em>
+         <em>AEM as a Cloud Service 개발을 위한 로컬 개발 컴퓨터를 준비하세요!</em>
       <p>
    </td>   
    <td>
@@ -69,7 +69,7 @@ ht-degree: 5%
          </a>
       </div>
       <p>
-         <em>AEM as a Cloud Service SDK의 로컬 빠른 시작에서 애플리케이션을 디버깅하는 데 사용되는 도구를 살펴봅니다.</em>
+         <em>AEM as a Cloud Service SDK의 로컬 빠른 시작에서 응용 프로그램을 디버깅하는 데 사용되는 도구를 살펴봅니다.</em>
       <p>
    </td>
 </table>

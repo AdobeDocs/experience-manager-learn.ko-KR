@@ -18,7 +18,7 @@ ht-degree: 4%
 
 # 페이지 구성 요소를 템플릿과 연결
 
-다음 단계는 페이지 구성 요소를 새 적응형 양식 템플릿과 연결하는 것입니다. 이렇게 하면 새 템플릿을 기반으로 하는 적응형 양식이 렌더링될 때마다 페이지 구성 요소의 코드가 실행됩니다. 이 자습서에서는 라는 새로운 적응형 양식 템플릿을 사용합니다. **Azure에서 저장 및 복원** 이(가)에서 만들어졌습니다. **AzurePortalStorage** 폴더를 삭제합니다.
+다음 단계는 페이지 구성 요소를 새 적응형 양식 템플릿과 연결하는 것입니다. 이렇게 하면 새 템플릿을 기반으로 하는 적응형 양식이 렌더링될 때마다 페이지 구성 요소의 코드가 실행됩니다. 이 자습서에서는 **AzurePortalStorage** 폴더에 **StoreAndRestoreFromAzure**라는 새로운 적응형 양식 템플릿을 만들었습니다.
 /conf/AzurePortalStorage/settings/wcm/templates/storeandrestorefromazure/initial/jcr:content 노드로 이동하여 다음 속성을 추가하고 변경 사항을 저장합니다.
 
 | **속성 이름** | **속성 유형** | **속성 값** |
@@ -26,7 +26,9 @@ ht-degree: 4%
 | sling:resourceType | 문자열 | azureportalpagecomponent/component/page/storeandfetch |
 
 /conf/AzurePortalStorage/settings/wcm/templates/storeandrestorermazure/structure/jcr:content 노드로 이동하여 다음 속성을 추가하고 변경 사항을 저장합니다.
-| **속성 이름**  | **속성 유형** | **속성 값**                                    | -------------------- -------------------------------------------------------------------------- | sling:resourceType | 문자열 | azureportalpagecomponent/component/page/storeandfetch |
+| **속성 이름**  | **속성 유형** | **속성 값**                                    |
+-------------------- --------------------------------------------------------------------------
+| sling:resourceType | 문자열            | azureportalpagecomponent/component/page/storeandfetch |
 
 
 ## 다음 단계

@@ -20,7 +20,7 @@ ht-degree: 4%
 
 일반적인 사용 사례는 부분적으로 완료된 PDF 양식에서 적응형 양식을 채울 수 있는 기능입니다.
 
-이 사용 사례를 보여주기 위해 [IRS 양식 F23](./assets/f23.pdf)
+이 사용 사례를 보여 주기 위해 [IRS 양식 F23](./assets/f23.pdf)을 사용합니다.
 
 ## 사전 요구 사항
 
@@ -30,7 +30,7 @@ ht-degree: 4%
 
 * [이 문서에 따라 설정된 개발 환경](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)
 
-* AEM Forms 디자이너
+* AEM Forms Designer
 
 * Acrobat 또는 Reader
 

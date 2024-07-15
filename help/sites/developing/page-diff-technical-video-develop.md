@@ -26,9 +26,9 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->이 비디오는 사용자 지정 CSS를 we.Retail 클라이언트 라이브러리에 추가합니다. 여기서 이러한 변경 사항은 사용자 지정 작성자의 AEM Sites 프로젝트에 적용되어야 합니다. 아래 예제 코드에서는 다음과 같습니다. `my-project`.
+>이 비디오는 사용자 지정 CSS를 we.Retail 클라이언트 라이브러리에 추가합니다. 여기서 이러한 변경 내용은 사용자 지정 작성자의 AEM Sites 프로젝트에 적용되어야 합니다(아래 예제 코드: `my-project`).
 
-AEM 페이지 차이는 의 직접 로드를 통해 OOTB CSS를 가져옵니다. `/libs/cq/gui/components/common/admin/diffservice/clientlibs/diffservice/css/htmldiff.css`.
+AEM의 페이지 차이는 `/libs/cq/gui/components/common/admin/diffservice/clientlibs/diffservice/css/htmldiff.css`의 직접 로드를 통해 OOTB CSS를 가져옵니다.
 
 클라이언트 라이브러리 범주를 사용하는 대신 CSS를 직접 로드하기 때문에 사용자 정의 스타일에 대한 다른 주입 지점을 찾아야 하며, 이 사용자 정의 주입 지점은 프로젝트의 제작 clientlib입니다.
 
@@ -36,7 +36,7 @@ AEM 페이지 차이는 의 직접 로드를 통해 OOTB CSS를 가져옵니다.
 
 ### 작성 clientlib 준비 {#prepare-the-authoring-clientlib}
 
-이(가) 있는지 확인 `authoring` 다음에서 프로젝트에 대한 clientlib `/apps/my-project/clientlib/authoring.`
+`/apps/my-project/clientlib/authoring.`에 프로젝트에 대한 `authoring` clientlib이 있는지 확인하십시오.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -47,7 +47,7 @@ AEM 페이지 차이는 의 직접 로드를 통해 OOTB CSS를 가져옵니다.
 
 ### 사용자 지정 CSS 제공 {#provide-the-custom-css}
 
-프로젝트에 추가 `authoring` clientlib a `css.txt` 이는 오버라이드 스타일을 제공하는 파일이 적다는 것을 가리킵니다. [간단히](https://lesscss.org/) 는 이 예에서 활용하는 클래스 래핑을 비롯한 많은 편리한 기능으로 인해 선호됩니다.
+재정의 스타일을 제공할 수 있는 더 적은 파일을 가리키는 `css.txt`을(를) 프로젝트의 `authoring` clientlib에 추가합니다. [Less](https://lesscss.org/)은(는) 이 예제에서 활용하는 클래스 래핑 등 편리한 기능이 많기 때문에 선호됩니다.
 
 ```shell
 base=./css
@@ -55,7 +55,7 @@ base=./css
 htmldiff.less
 ```
 
-만들기 `less` 다음 위치에 스타일 재정의가 포함된 파일: `/apps/my-project/clientlibs/authoring/css/htmldiff.less`필요한 경우 오버링 스타일을 제공합니다.
+`/apps/my-project/clientlibs/authoring/css/htmldiff.less`에서 스타일 재정의가 포함된 `less` 파일을 만들고 필요한 경우 재정의 스타일을 제공합니다.
 
 ```css
 /* Wrap with body to gives these rules more specificity than the OOTB */
@@ -103,9 +103,9 @@ body {
 
 ### 페이지 구성 요소를 통해 제작 clientlib CSS 포함 {#include-the-authoring-clientlib-css-via-the-page-component}
 
-프로젝트의 기본 페이지에 authoring clientlibs 카테고리를 포함합니다. `/apps/my-project/components/structure/page/customheaderlibs.html` 의 바로 앞에 `</head>` 태그를 지정하여 스타일이 로드되도록 합니다.
+`</head>` 태그 바로 앞에 프로젝트의 기본 페이지 `/apps/my-project/components/structure/page/customheaderlibs.html`에 작성 clientlibs 범주를 포함시켜 스타일이 로드되도록 합니다.
 
-이러한 스타일은 다음으로 제한되어야 합니다. [!UICONTROL 편집] 및 [!UICONTROL 미리보기] WCM 모드.
+이러한 스타일은 [!UICONTROL 편집] 및 [!UICONTROL 미리 보기] WCM 모드로 제한되어야 합니다.
 
 ```xml
 <head>
@@ -117,10 +117,10 @@ body {
 
 위의 스타일이 적용된 비교 페이지의 최종 결과는 다음과 같습니다(HTML이 추가되고 구성 요소가 변경됨).
 
-![페이지 차이](assets/page-diff.png)
+![페이지 차이점](assets/page-diff.png)
 
 ## 추가 리소스 {#additional-resources}
 
 * [we.Retail 샘플 사이트 다운로드](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases)
 * [AEM 클라이언트 라이브러리 사용](https://helpx.adobe.com/kr/experience-manager/6-5/sites/developing/using/clientlibs.html)
-* [간단히 CSS 설명서](https://lesscss.org/)
+* [적은 CSS 설명서](https://lesscss.org/)

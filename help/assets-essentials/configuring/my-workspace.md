@@ -1,6 +1,6 @@
 ---
-title: 내 작업 영역 Assets Essentials
-description: My Workspace의 사용자 구성 가능 위젯을 사용하여 보다 효율적으로 작업하는 방법을 알아봅니다.
+title: Assets Essentials 내 Workspace
+description: Workspace의 사용자 구성 가능 위젯을 사용하여 보다 효율적으로 작업하는 방법을 알아봅니다.
 version: Cloud Service
 feature: Assets Essentials
 topic: Content Management
@@ -19,8 +19,8 @@ ht-degree: 0%
 
 ---
 
-# Assets Essentials의 내 작업 공간
+# Assets Essentials의 내 Workspace
 
-My Workspace의 사용자 구성 가능 위젯을 사용하여 보다 효율적으로 작업하는 방법을 알아봅니다.
+Workspace의 사용자 구성 가능 위젯을 사용하여 보다 효율적으로 작업하는 방법을 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3413809?quality=12&learn=on)

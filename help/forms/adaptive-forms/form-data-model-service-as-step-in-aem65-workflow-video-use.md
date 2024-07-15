@@ -21,14 +21,14 @@ ht-degree: 0%
 
 AEM Forms 6.4부터 이제 양식 데이터 모델 서비스를 AEM Workflow의 일부로 사용할 수 있습니다. 다음 비디오는 AEM Workflow에서 양식 데이터 모델 단계를 구성하는 데 필요한 단계를 안내합니다
 
->이 비디오에서 설명하는 기능을 사용하려면 AEM Forms 6.5.1이 필요합니다
+>이 비디오에 나와 있는 기능을 사용하려면 AEM Forms 6.5.1이 필요합니다.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/28145?quality=12&learn=on)
 
 서버에서 이 기능을 테스트하려면 아래 지침을 따르십시오
 
-* 설명된 대로 SampleRest.war 파일로 tomcat 설정 [여기](https://helpx.adobe.com/experience-manager/kt/forms/using/preparing-datasource-for-form-data-model-tutorial-use.html).Tomcat에 배포된 war 파일에는 지원자의 크레딧 점수를 반환하는 코드가 있습니다.크레딧 점수는 200에서 800 사이의 임의의 숫자입니다
+* [여기](https://helpx.adobe.com/experience-manager/kt/forms/using/preparing-datasource-for-form-data-model-tutorial-use.html)에 설명된 대로 SampleRest.war 파일로 tomcat을 설정합니다.Tomcat에 배포된 war 파일에는 지원자의 크레딧 점수를 반환하는 코드가 있습니다.크레딧 점수는 200에서 800 사이의 난수입니다
 
 * [패키지 관리자를 사용하여 AEM에 에셋 가져오기](assets/aem65-loanapplication.zip)
 * 패키지에는 다음 항목이 포함되어 있습니다.
@@ -36,7 +36,7 @@ AEM Forms 6.4부터 이제 양식 데이터 모델 서비스를 AEM Workflow의 
    * FDM 단계를 사용하는 워크플로우 모델.
    * FDM 단계에서 사용되는 양식 데이터 모델
    * 제출 시 워크플로우를 트리거하는 적응형 양식입니다.
-* 를 엽니다. [모기지 애플리케이션 양식](http://localhost:4502/content/dam/formsanddocuments/loanapplication/jcr:content?wcmmode=disabled). 세부 사항을 입력하고 제출하십시오. 양식 제출 시 [응용 프로그램 워크플로 대여](http://http://localhost:4502/editor.html/conf/global/settings/workflow/models/LoanApplication2.html) 가 트리거됩니다.
+* [MortgageApplicationForm](http://localhost:4502/content/dam/formsanddocuments/loanapplication/jcr:content?wcmmode=disabled)을 엽니다. 세부 사항을 입력하고 제출하십시오. 양식 제출 시 [loanapplication workflow](http://http://localhost:4502/editor.html/conf/global/settings/workflow/models/LoanApplication2.html)이(가) 트리거됩니다.
 
-![ 워크플로우 ](assets/invokefdm651.PNG).
+![ 워크플로 ](assets/invokefdm651.PNG).
 크레딧 점수가 500점 이상인 경우 워크플로우는 Or 분할 구성 요소를 사용하여 애플리케이션을 관리자로 라우팅합니다. 신용 점수가 500점 미만인 경우 지원서가 cavery로 라우팅됩니다.

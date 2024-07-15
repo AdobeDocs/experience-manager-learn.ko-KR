@@ -20,24 +20,24 @@ ht-degree: 0%
 
 # 확장 모달
 
-![AEM UI 확장 모달](./assets/modal/modal.png){align="center"}
+![AEM UI 확장 양식](./assets/modal/modal.png){align="center"}
 
 AEM UI 확장 모달은 AEM UI 확장에 사용자 지정 UI를 첨부하는 방법을 제공합니다.
 
-모델은 React 애플리케이션으로, 다음을 기반으로 합니다. [반응 스펙트럼](https://react-spectrum.adobe.com/react-spectrum/)및 는 다음을 포함하되 이에 제한되지 않고 확장에 필요한 모든 사용자 지정 UI를 만들 수 있습니다.
+모달은 [React Spectrum](https://react-spectrum.adobe.com/react-spectrum/)을(를) 기반으로 하는 React 애플리케이션이며, 다음을 포함하되 이에 제한되지 않는 확장에 필요한 사용자 지정 UI를 만들 수 있습니다.
 
 + 확인 대화 상자
 + [입력 양식](https://react-spectrum.adobe.com/react-spectrum/#forms)
-+ [진행 표시기](https://react-spectrum.adobe.com/react-spectrum/#status)
++ [진행 상태 표시기](https://react-spectrum.adobe.com/react-spectrum/#status)
 + [결과 요약](https://react-spectrum.adobe.com/react-spectrum/#collections)
 + 오류 메시지
 + ... 또는 풀-블로운 멀티-뷰 React 애플리케이션!
 
 ## 모달 경로
 
-모달 경험은 아래에 정의된 확장 App Builder React 앱에 의해 정의됩니다. `web-src` 폴더를 삭제합니다. 모든 React 앱과 마찬가지로 전체 경험은 [React 경로](https://reactrouter.com/en/main/components/routes) 렌더링한 [구성 요소 반응](https://reactjs.org/docs/components-and-props.html).
+모달 경험은 `web-src` 폴더 아래에 정의된 확장 App Builder React 앱에 의해 정의됩니다. 모든 React 앱과 마찬가지로 전체 경험은 [React 구성 요소](https://reactjs.org/docs/components-and-props.html)를 렌더링하는 [React 경로](https://reactrouter.com/en/main/components/routes)을(를) 사용하여 오케스트레이션됩니다.
 
-초기 모달 뷰를 생성하려면 적어도 하나의 루트가 필요하다. 이 초기 경로는 [확장 등록](#extension-registration)의 `onClick(..)` 함수(아래 표시)를 참조하십시오.
+초기 모달 뷰를 생성하려면 적어도 하나의 루트가 필요하다. 이 초기 경로는 아래와 같이 [확장 등록](#extension-registration)의 `onClick(..)` 함수에서 호출됩니다.
 
 
 + `./src/aem-ui-extension/web-src/src/components/App.js`
@@ -81,12 +81,12 @@ function App(props) {
 
 ## 확장 등록
 
-모달을 열려면 를 호출합니다. `guestConnection.host.modal.showUrl(..)` 은(는) 확장에서 만들어집니다. `onClick(..)` 함수. `showUrl(..)` 는 키/값이 있는 JavaScript 개체로 전달됩니다.
+모달을 열려면 확장의 `onClick(..)` 함수에서 `guestConnection.host.modal.showUrl(..)`을(를) 호출합니다. `showUrl(..)`에 키/값이 있는 JavaScript 개체가 전달되었습니다.
 
-+ `title` 사용자에게 표시되는 모달의 제목 이름을 제공합니다
-+ `url` 는 를 호출하는 URL입니다. [React 경로](#modal-routes) 는 모달의 초기 보기를 담당합니다.
++ `title`은(는) 사용자에게 표시되는 모달의 제목 이름을 제공합니다
++ `url`은(는) 모달의 초기 보기를 담당하는 [반응 경로](#modal-routes)을(를) 호출하는 URL입니다.
 
-반드시 다음과 같은 작업을 수행해야 합니다 `url` 전달한 대상 `guestConnection.host.modal.showUrl(..)` 은 확장에서 라우트로 확인되며, 그렇지 않으면 모달에 아무 것도 표시되지 않습니다.
+`guestConnection.host.modal.showUrl(..)`에 전달된 `url`이(가) 확장에서 라우팅되도록 확인해야 합니다. 그렇지 않으면 모달에 아무 것도 표시되지 않습니다.
 
 + `./src/aem-ui-extension/web-src/src/components/ExtensionRegistration.js`
 
@@ -109,7 +109,7 @@ function ExtensionRegistration() {
 
 ## 모달 구성 요소
 
-확장의 각 경로, [이(가) 아닙니다. `index` 경로](./extension-registration.md#app-routes)는 확장 프로그램의 모달에서 렌더링할 수 있는 React 구성 요소에 매핑됩니다.
+확장의 각 경로 [은(는) `index` 경로](./extension-registration.md#app-routes)이(가) 아닌 React 구성 요소에 매핑되며, 이 구성 요소는 확장의 모달에서 렌더링할 수 있습니다.
 
 모달은 간단한 1개 경로 모달에서 복잡한 다중 경로 모달까지 원하는 수의 React 경로로 구성될 수 있습니다.
 
@@ -187,7 +187,7 @@ export default function MyModal() {
 
 ![AEM UI 확장 모달 닫기 단추](./assets/modal/close.png){align="center"}
 
-모달은 자신의 근접 제어를 제공해야 합니다. 이 작업은 다음을 호출하여 수행합니다. `guestConnection.host.modal.close()`.
+모달은 자신의 근접 제어를 제공해야 합니다. 이 작업은 `guestConnection.host.modal.close()`을(를) 호출하여 완료됩니다.
 
 ```javascript
 <ButtonGroup align="end">

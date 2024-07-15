@@ -19,7 +19,7 @@ ht-degree: 1%
 # 사용자 정의 프로세스 단계
 
 
-양식 첨부 파일이 포함된 zip 파일을 만들기 위해 사용자 지정 프로세스 단계가 구현되었습니다. OSGi 번들 생성에 익숙하지 않은 경우 다음을 수행하십시오 [다음 지침을 따르십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en)
+양식 첨부 파일이 포함된 zip 파일을 만들기 위해 사용자 지정 프로세스 단계가 구현되었습니다. OSGi 번들 생성에 익숙하지 않은 경우 [다음 지침을 따르십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en)
 
 사용자 지정 프로세스 단계의 코드는 다음을 수행합니다
 
@@ -160,7 +160,7 @@ public class ZipFormAttachments implements WorkflowProcess {
 
 >[!NOTE]
 >
-> 이름이 인 변수가 있는지 확인하십시오.  *no_of_attachments* 이 코드가 작동하도록 워크플로에 Double 형식을 사용합니다.
+> 이 코드가 작동하도록 워크플로우에 Double 유형의 *no_of_attachments*&#x200B;이라는 변수가 있는지 확인하십시오.
 
 ## 다음 단계
 

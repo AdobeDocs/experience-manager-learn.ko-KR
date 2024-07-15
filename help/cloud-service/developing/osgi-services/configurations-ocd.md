@@ -24,10 +24,10 @@ OSGi 서비스에서 ObjectClassDefinitions를 OSGi 구성 표현으로 만들�
 
 ## 리소스
 
-+ [@Designate JavaDoc](https://javadoc.io/static/com.adobe.aem/aem-sdk-api/2021.7.5658.20210723T140305Z-210600/org/osgi/service/metatype/annotations/Designate.html)
-+ [@ObjectClassDefinition JavaDoc](https://javadoc.io/static/com.adobe.aem/aem-sdk-api/2021.7.5658.20210723T140305Z-210600/org/osgi/service/metatype/annotations/ObjectClassDefinition.html)
-+ [@AttributeDefinition JavaDoc](https://javadoc.io/static/com.adobe.aem/aem-sdk-api/2021.7.5658.20210723T140305Z-210600/org/osgi/service/metatype/annotations/AttributeDefinition.html)
-+ [@Activate JavaDoc](https://javadoc.io/static/com.adobe.aem/aem-sdk-api/2021.7.5658.20210723T140305Z-210600/org/osgi/service/component/annotations/Activate.html)
++ [@Designate JavaDocs](https://javadoc.io/static/com.adobe.aem/aem-sdk-api/2021.7.5658.20210723T140305Z-210600/org/osgi/service/metatype/annotations/Designate.html)
++ [@ObjectClassDefinition JavaDocs](https://javadoc.io/static/com.adobe.aem/aem-sdk-api/2021.7.5658.20210723T140305Z-210600/org/osgi/service/metatype/annotations/ObjectClassDefinition.html)
++ [@AttributeDefinition JavaDocs](https://javadoc.io/static/com.adobe.aem/aem-sdk-api/2021.7.5658.20210723T140305Z-210600/org/osgi/service/metatype/annotations/AttributeDefinition.html)
++ [@Activate JavaDocs](https://javadoc.io/static/com.adobe.aem/aem-sdk-api/2021.7.5658.20210723T140305Z-210600/org/osgi/service/component/annotations/Activate.html)
 
 ## 코드
 

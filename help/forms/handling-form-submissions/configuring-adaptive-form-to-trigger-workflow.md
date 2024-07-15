@@ -27,16 +27,16 @@ ht-degree: 1%
 
 ### 적응형 양식 템플릿 가져오기
 
-* 다운로드 [적응형 양식 템플릿](assets/af-form-template.zip)
+* [적응형 양식 템플릿](assets/af-form-template.zip) 다운로드
 * [패키지 관리자를 사용하여 템플릿 가져오기](http://localhost:4502/crx/packmgr/index.jsp)
 * 적응형 양식 템플릿 업로드 및 설치
 
 ### 샘플 적응형 양식 받기
 
-* 다운로드 [적응형 양식](assets/peak-application-form.zip)
-* 다음으로 이동 [양식 및 문서](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* [적응형 양식](assets/peak-application-form.zip) 다운로드
+* [양식 및 문서](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments) 찾아보기
 * 만들기 -> 파일 업로드 를 클릭합니다.
-* 샘플 적응형 양식은 이라는 폴더에 배치됩니다. [애플리케이션 Forms](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments/applicationforms)
+* 샘플 적응형 양식은 [응용 프로그램 Forms](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments/applicationforms)이라는 폴더에 배치됩니다.
 
 다음 비디오에서는 AEM 워크플로우를 트리거하기 위한 적응형 양식을 구성하는 방법을 설명합니다
 >[!VIDEO](https://video.tv.adobe.com/v/40258?quality=12&learn=on)

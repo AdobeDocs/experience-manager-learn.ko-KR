@@ -20,7 +20,7 @@ ht-degree: 1%
 # Acrobat Sign Web Form이 포함된 AEM Forms
 
 
-이 튜토리얼에서는 의 제출 데이터로 대화형 통신 문서를 생성하는 사용 사례를 안내합니다. [반응](https://react.dev/) Acrobat Sign 웹 양식을 사용하여 서명할 생성된 문서를 앱 및 표시합니다.
+이 튜토리얼에서는 [React](https://react.dev/) 앱에서 전송된 데이터로 대화형 통신 문서를 생성하고 생성된 문서를 Acrobat Sign 웹 양식을 사용하여 서명할 수 있도록 제공하는 사용 사례를 안내합니다.
 
 다음은 사용 사례의 흐름입니다
 
@@ -34,8 +34,8 @@ ht-degree: 1%
 사용 사례가 작동하려면 다음 조건을 충족해야 합니다.
 
 * Forms 추가 기능 패키지가 포함된 AEM 서버
-* An [Acrobat Sign 애플리케이션용 통합 키](https://helpx.adobe.com/sign/kb/how-to-create-an-integration-key.html)
+* Acrobat Sign 응용 프로그램에 대한 [통합 키](https://helpx.adobe.com/sign/kb/how-to-create-an-integration-key.html)
 
 ## 다음 단계
 
-쓰기 [대화형 통신 문서를 생성하기 위한 사용자 지정 OSGi 서비스](./create-ic-document.md) 문서화된 API 사용
+문서화된 API를 사용하여 대화형 통신 문서를 생성하려면 [사용자 지정 OSGi 서비스를 작성하십시오](./create-ic-document.md)

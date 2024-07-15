@@ -19,7 +19,7 @@ ht-degree: 2%
 
 # AEM Headless 웹 구성 요소 배포
 
-AEM Headless [웹 구성 요소](https://developer.mozilla.org/en-US/docs/Web/Web_Components)/JS 배포는 웹 브라우저에서 실행하고 headless 방식으로 AEM의 콘텐츠를 소비하고 상호 작용하는 순수 JavaScript 앱입니다. 웹 구성 요소/JS 배포는 다음과 다릅니다. [SPA 배포](./spa.md) 에서는 강력한 SPA 프레임워크를 사용하지 않으며, 모든 웹 사이트 컨텍스트에 임베드되어 AEM의 콘텐츠를 제공할 수 있습니다.
+AEM Headless [웹 구성 요소](https://developer.mozilla.org/en-US/docs/Web/Web_Components)/JS 배포는 웹 브라우저에서 실행되고 Headless 방식으로 AEM의 콘텐츠를 소비하고 상호 작용하는 순수 JavaScript 앱입니다. 웹 구성 요소/JS 배포는 강력한 SPA 프레임워크를 사용하지 않으며, AEM의 콘텐츠를 표시하기 위해 모든 웹 사이트의 컨텍스트에 포함되어야 한다는 점에서 [SPA 배포](./spa.md)와 다릅니다.
 
 
 ## 배포 구성
@@ -50,9 +50,9 @@ Adobe은 웹 구성 요소의 예를 제공합니다.
            <div class="card-content is-padded-small">
                <div class="content">
                    <p class="headline is-size-6 has-text-weight-bold"><a href="../example-apps/web-component.md" title="웹 구성 요소">웹 구성 요소</a></p>
-                   <p class="is-size-6">AEM Headless GraphQL API의 콘텐츠를 사용하는 순수 JavaScript로 작성된 예제 웹 구성 요소입니다.</p>
+                   <p class="is-size-6">AEM Headless JavaScript API의 콘텐츠를 사용하는 순수 GraphQL으로 작성된 예제 웹 구성 요소입니다.</p>
                    <a href="../example-apps/web-component.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-                       <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">보기 예</span>
+                       <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">예제 보기</span>
                    </a>
                </div>
            </div>

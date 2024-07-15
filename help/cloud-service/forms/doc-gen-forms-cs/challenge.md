@@ -20,4 +20,4 @@ ht-degree: 0%
 
 코드를 수정하여 템플릿의 URL을 POST 요청 매개 변수 중 하나로 전달합니다.
 
-의 코드 `DocumentGeneration.java` 템플릿의 URL을 전달하도록 수정해야 합니다.
+템플릿의 URL을 전달하려면 `DocumentGeneration.java`의 코드를 수정해야 합니다.

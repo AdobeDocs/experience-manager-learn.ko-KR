@@ -10,7 +10,7 @@ jira: KT-9754
 thumbnail: kt-9754.jpeg
 last-substantial-update: 2022-09-02T00:00:00Z
 badgeIntegration: label="통합" type="positive"
-badgeVersions: label="AEM Assets as a Cloud Service, AEM Assets 6.5" before-title="false"
+badgeVersions: label="AEM Assets as a Cloud Service AEM Assets 6.5" before-title="false"
 exl-id: 4f279c0d-270f-433e-b047-88c02f5b1e78
 duration: 49
 source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
@@ -40,8 +40,8 @@ ht-degree: 0%
              src="./assets/setup.png">
       </a>
       <div>
-         <a href="./setup.md"><strong>설정 및 초기 구성</strong></a>
-         <br/><em>1/4 부</em>
+         <a href="./setup.md"><strong>초기 구성 설정</strong></a>
+         <br/><em>파트1/4</em>
       </div>
       <p>
         <br/>
@@ -56,7 +56,7 @@ ht-degree: 0%
       </a>
       <div>
          <a href="./custom-forms.md"><strong>Workfront 사용자 정의 양식 및 메타데이터 매핑</strong></a>
-         <br/><em>2/4 부</em>
+         <br/><em>파트2/4</em>
       </div>
       <p>
         <br/>
@@ -71,7 +71,7 @@ ht-degree: 0%
       </a>
       <div>
          <a href="./aem-tags-project-linked-folders-and-folder-metadata.md"><strong>AEM 태그, 프로젝트 연결 폴더 및 폴더 메타데이터</strong></a>
-         <br/><em>3/4부</em> 
+         <br/><em>파트3/4</em> 
       </div>
       <p>
         <br/>
@@ -86,7 +86,7 @@ ht-degree: 0%
       </a>
       <div>
          <a href="./advanced-settings-and-workflows.md"><strong>고급 설정 및 워크플로</strong></a>
-         <br/><em>4/4부</em>
+         <br/><em>파트4/4</em>
       </div>
       <p>
         <br/>

@@ -49,11 +49,11 @@ Marketo과 AEM Forms을 통합하는 첫 번째 단계는 API를 사용하여 RE
 1. identity_endpoint
 1. 인증 url
 
-[위에서 언급한 속성을 가져오려면 공식 Marketo 설명서를 따르십시오.](https://developers.marketo.com/rest-api/) 또는 Marketo 인스턴스 관리자에게 문의할 수도 있습니다.
+[위에서 언급한 속성을 가져오려면 공식 Marketo 문서를 따르십시오.](https://developers.marketo.com/rest-api/) 또는 Marketo 인스턴스의 관리자에게 문의할 수도 있습니다.
 
 **시작하기 전에**
 
-[이 문서와 관련된 에셋을 다운로드하고 압축 해제합니다.](assets/aemformsandmarketo.zip) zip 파일에는 다음 항목이 포함되어 있습니다.
+[이 문서와 관련된 자산을 다운로드하고 압축 해제합니다.](assets/aemformsandmarketo.zip) zip 파일에 다음 항목이 포함되어 있습니다.
 
 1. BlankTemplatePackage.zip - 적응형 양식 템플릿입니다. 패키지 관리자를 사용하여 가져오십시오.
 1. marketo.json - 데이터 소스를 구성하는 데 사용되는 Swagger 파일입니다.

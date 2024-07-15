@@ -29,7 +29,7 @@ AEM Forms 6.5에는 CheckBox, 라디오 단추 및 이미지 목록과 같은 �
 
 ![규칙 편집기](assets/ruleeditor.png)
 
-**코드 편집기 사용**: 양식에 입력한 값을 기반으로 선택 그룹의 항목을 동적으로 설정하려면 다음과 같이 하십시오. 예를 들어 다음 코드 조각은 확인란의 항목을 적응형 양식의 지원자 이름 및 배우자 필드에 입력한 값으로 설정합니다.
+**코드 편집기 사용**: 양식에 입력한 값에 따라 선택 그룹의 항목을 동적으로 설정하려면 다음을 수행합니다. 예를 들어 다음 코드 조각은 확인란의 항목을 적응형 양식의 지원자 이름 및 배우자 필드에 입력한 값으로 설정합니다.
 
 코드 스니펫에서 확인란 구성 요소인 WorkingMembers 항목을 설정하고 있습니다. 항목에 대한 배열은 적응형 양식의 신청자 이름 및 배우자 텍스트 필드 값을 가져와 동적으로 구축됩니다
 
@@ -89,7 +89,7 @@ else
 **시각적 편집기를 사용하여 항목 추가**
 
 * [에셋 다운로드](assets/usingthevisualeditor.zip)
-* 아직 Tomcat이 없는 경우 설치합니다. [tomcat 설치 지침은 여기에서 확인할 수 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html)
+* 아직 Tomcat이 없는 경우 설치합니다. [tomcat 설치 지침은 여기에서 확인할 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html)
 * [이 zip 파일에 포함된 SampleRest.war 파일을 Tomcat에 배포합니다](assets/sample-rest.zip)
 * [Forms 및 문서 열기](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * 클릭 &quot;만들기 | File Upload(파일 업로드)&quot;를 클릭하고 이전 단계에서 다운로드한 파일을 업로드합니다

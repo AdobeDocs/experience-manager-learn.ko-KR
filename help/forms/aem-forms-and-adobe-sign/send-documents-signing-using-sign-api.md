@@ -23,22 +23,22 @@ ht-degree: 0%
 
 ## 샘플 OSGi 번들 배포
 
-[OSGi 번들 배포](assets/AdobeSignHelperMethods.core-1.0.0-SNAPSHOT.jar) AEM OSGi 웹 콘솔을 통해 AEM OSGi 웹 콘솔의 구성 관리자를 통해 아래와 같이 OSGi 구성을 사용하여 API 통합 키 및 API 사용자를 지정합니다.
+AEM OSGi 웹 콘솔을 통해 [OSGi 번들 배포](assets/AdobeSignHelperMethods.core-1.0.0-SNAPSHOT.jar). AEM OSGi 웹 콘솔의 구성 관리자를 통해 아래와 같이 OSGi 구성을 사용하여 API 통합 키 및 API 사용자를 지정합니다.
 
- 다음 사항에 유의하십시오. `AdobeSignHelperMethods` OSGi 번들은 AEM(Adobe Experience Manager) 제품 코드로 인식되지 않으며 따라서 Adobe 지원에서 지원되지 않습니다.
-![서명 구성](assets/sign-configuration.png)
+ `AdobeSignHelperMethods` OSGi 번들은 AEM(Adobe Experience Manager) 제품 코드로 인식되지 않으므로 Adobe 지원에서 지원되지 않습니다.
+![sign-configuration](assets/sign-configuration.png)
 
 
 ## API 설명서
 
-다음을 통해 사용할 수 있습니다 `AcrobatSignHelperMethods` OSGi 번들에서 제공되는 OSGi 서비스.
+다음은 OSGi 번들에 제공된 `AcrobatSignHelperMethods` OSGi 서비스를 통해 사용할 수 있습니다.
 
 ### getTransientDocumentID
 
 `String getTransientDocumentID(Document documentForSigning) throws IOException`
 
 
-계약 또는 웹 양식을 만드는 데 사용되는 문서입니다. 보낸 사람이 먼저 Acrobat Sign에 문서를 업로드합니다. 이를 다음이라고 합니다. _임시_ 업로드 후 7일 동안만 사용할 수 있기 때문입니다. 이 메서드는 다음을 허용합니다. `com.adobe.aemfd.docmanager.Document` 임시 문서 ID를 반환합니다.
+계약 또는 웹 양식을 만드는 데 사용되는 문서입니다. 보낸 사람이 먼저 Acrobat Sign에 문서를 업로드합니다. 업로드 후 7일 동안만 사용할 수 있으므로 이를 _임시_&#x200B;이라고 합니다. 이 메서드는 `com.adobe.aemfd.docmanager.Document`을(를) 수락하고 임시 문서 ID를 반환합니다.
 
 ### getAgreementID
 
@@ -60,7 +60,7 @@ ht-degree: 0%
 
 ## API 사용
 
-다음 `AcrobatSignHelperMethods` 는 OSGi 서비스이므로 java 코드의 @Reference 주석을 사용하여 주석을 달아야 합니다.
+`AcrobatSignHelperMethods`은(는) OSGi 서비스이므로 Java 코드의 @Reference 주석을 사용하여 주석을 달아야 합니다.
 
 ```java
 ...

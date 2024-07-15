@@ -28,7 +28,7 @@ ht-degree: 8%
 
 1. 페이지 폴더를 마우스 오른쪽 단추로 클릭하고 cq:Component 유형의 storeandfetch라는 노드를 만듭니다.
 1. 변경 내용 저장
-1. 에 다음 속성을 추가합니다 `storeandfetch` 노드 및 저장
+1. `storeandfetch` 노드에 다음 속성을 추가하고 저장합니다.
 
 | **속성 이름** | **속성 유형** | **속성 값** |
 |-------------------------|-------------------|----------------------------------------|
@@ -37,9 +37,9 @@ ht-degree: 8%
 | jcr:title | 문자열 | 적응형 양식 템플릿 페이지 |
 | sling:resourceSuperType | 문자열 | `fd/af/components/page2/aftemplatedpage` |
 
-다음을 복사합니다. `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp` 아래에 붙여 넣습니다. `storeandfetch` 노드. 이름 바꾸기 `aftemplatedpage.jsp` 끝 `storeandfetch.jsp`.
+`/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`을(를) 복사하여 `storeandfetch` 노드 아래에 붙여넣습니다. `aftemplatedpage.jsp`의 이름을 `storeandfetch.jsp`(으)로 변경합니다.
 
-열기 `storeandfetch.jsp` 다음 줄을 추가합니다.
+`storeandfetch.jsp`을(를) 열고 다음 줄을 추가합니다.
 
 ```jsp
 <cq:include script="azureportal.jsp"/>
@@ -58,7 +58,8 @@ ht-degree: 8%
 <cq:include script="azureportal.jsp"/>
 ```
 
-storeandfetch 노드 아래에 azureportal.jsp라는 파일을 생성하고 다음 코드를 azureportal.jsp에 복사한 다음 변경 사항을 저장합니다
+storeandfetch 노드 아래에 azureportal.jsp라는 파일을 생성합니다.
+azureportal.jsp에 다음 코드를 복사하고 변경 사항을 저장합니다
 
 ```jsp
 <%@page session="false" %>
@@ -78,7 +79,7 @@ storeandfetch 노드 아래에 azureportal.jsp라는 파일을 생성하고 다�
 %>
 ```
 
-이 코드에서는 요청 매개 변수의 값을 가져옵니다 **guid** 및 를 BlobId라는 변수에 저장합니다. 그런 다음 이 BlobId가 paramMap 특성을 사용하여 sling 요청으로 전달됩니다. 이 코드가 작동하려면 Azure Storage 지원 양식 데이터 모델을 기반으로 하는 양식이 있고 양식 데이터 모델의 읽기 서비스가 아래 스크린샷에 표시된 대로 BlobId라는 요청 속성에 바인딩되어 있다고 가정합니다.
+이 코드에서는 요청 매개 변수 **guid**&#x200B;의 값을 가져와 BlobId라는 변수에 저장합니다. 그런 다음 이 BlobId가 paramMap 특성을 사용하여 sling 요청으로 전달됩니다. 이 코드가 작동하려면 Azure Storage 지원 양식 데이터 모델을 기반으로 하는 양식이 있고 양식 데이터 모델의 읽기 서비스가 아래 스크린샷에 표시된 대로 BlobId라는 요청 속성에 바인딩되어 있다고 가정합니다.
 
 ![fdm-request-attribute](./assets/fdm-request-attribute.png)
 

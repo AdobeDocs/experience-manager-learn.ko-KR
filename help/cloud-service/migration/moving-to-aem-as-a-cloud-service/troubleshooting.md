@@ -1,5 +1,5 @@
 ---
-title: AEM 문제 해결 as a Cloud Service
+title: AEM as a Cloud Service 문제 해결
 description: AEM SDK, AEM as a Cloud Service 및 빌드 및 배포 프로세스의 문제를 해결하고 디버그하는 방법에 대해 알아봅니다.
 version: Cloud Service
 topic: Migration, Upgrade
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ---
 
-# AEM 문제 해결 as a Cloud Service
+# AEM as a Cloud Service 문제 해결
 
 AEM SDK, AEM as a Cloud Service 및 빌드 및 배포 프로세스의 문제를 해결하고 디버그하는 방법에 대해 알아봅니다.
 

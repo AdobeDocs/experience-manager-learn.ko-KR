@@ -33,7 +33,7 @@ Brand PortalExperience Manager 의 자산 소싱은 서드파티 에이전시 �
 
 *에셋 소싱을 사용하려면 Experience Manager 작성자 6.5 SP2(6.5.2) 이상이 필요합니다*
 
-리뷰 [에셋 소싱에 대한 Experience Manager 작성자 활성화](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=ko-KR) Experience Manager 작성자에 대한 에셋 소싱을 구성하고 설정하는 방법에 대한 지침입니다.
+Experience Manager 작성자에 대한 Experience Manager 소싱 구성 및 설정 방법에 대한 지침은 [자산 소싱에 대한 자산 작성자 활성화](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=ko-KR)를 검토하십시오.
 
 ## Brand Portal 2019년 2월 기능 및 개선 사항{#brand-portal-features-and-enhancements-644}
 
@@ -59,7 +59,7 @@ Brand Portal은 필터링 창의 속성 술어에 대한 부분 텍스트 검색
 
 Brand Portal을 사용하면 검색 쿼리에서 검색 구문에 있는 단어의 일부와 함께 별표(*)를 사용할 수 있습니다.
 
-**사용 사례** :검색된 구문에서 발생하는 정확한 단어를 모를 경우 와일드카드 검색을 사용하여 검색 쿼리의 간격을 채울 수 있습니다.
+**사용 사례**: 검색된 구문에서 발생하는 정확한 단어를 모를 경우 와일드카드 검색을 사용하여 검색 쿼리의 간격을 채울 수 있습니다.
 
 예를 들어, Brand Portal의 검색 양식에서 에셋 제목의 부분 검색에 대해 속성 조건자를 사용하는 경우 climb*을 지정하면 제목 구문에 climb 문자로 시작하는 단어가 포함된 모든 에셋이 반환됩니다.
 
@@ -71,12 +71,12 @@ Brand Portal을 사용하면 검색 쿼리에서 검색 구문에 있는 단어�
 #### 폴더 계층 구조 사용
 
 이제 관리자는 로그인 시 관리자가 아닌 사용자(편집자, 뷰어 및 게스트 사용자)에게 폴더를 표시하는 방법을 구성할 수 있습니다.
-[폴더 계층 구조 활성화](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal-general-configuration.html) 구성이 [일반 설정]의 [관리 도구] 패널에 추가됩니다. 구성이 다음과 같은 경우
+[폴더 계층 구조 사용](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal-general-configuration.html) 구성이 관리 도구 패널의 일반 설정에 추가되었습니다. 구성이 다음과 같은 경우
 
 * 활성화하면 루트 폴더에서 시작하는 폴더 트리가 관리자가 아닌 사용자에게 표시됩니다. 따라서 관리자에게 관리자와 유사한 탐색 경험을 제공할 수 있습니다.
 * 비활성화되어 랜딩 페이지에 공유 폴더만 표시됩니다.
 
-[폴더 계층 구조 활성화](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal-general-configuration.html) 기능(활성화된 경우)을 사용하면 다른 계층에서 공유되는 동일한 이름의 폴더를 구분할 수 있습니다. 이제 로그인하면 관리자가 아닌 사용자에게 공유 폴더의 가상 상위(및 상위) 폴더가 표시됩니다.
+[폴더 계층 구조 사용](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal-general-configuration.html) 기능(활성화된 경우)을 사용하면 서로 다른 계층에서 공유되는 이름이 같은 폴더를 구분할 수 있습니다. 이제 로그인하면 관리자가 아닌 사용자에게 공유 폴더의 가상 상위(및 상위) 폴더가 표시됩니다.
 
 공유 폴더는 가상 폴더의 각 디렉토리 내에 구성됩니다. 잠금 아이콘으로 이러한 가상 폴더를 인식할 수 있습니다.
 
@@ -101,7 +101,7 @@ Dynamic Media 비디오 인코딩은 다음 위치에서 다운로드할 수 있
 
 ### Brand Portal에 예약된 게시
 
-의 자산(및 폴더) 게시 워크플로 [AEM (6.4.2.0)](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html#main-pars_header_9658011) Brand Portal에 대한 작성자 인스턴스를 나중 날짜, 시간으로 예약할 수 있습니다.
+[AEM(6.4.2.0)](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html#main-pars_header_9658011) 작성자 인스턴스에서 Brand Portal으로 Assets(및 폴더) 게시 워크플로우를 나중 날짜, 시간으로 예약할 수 있습니다.
 
 마찬가지로 Brand Portal에서 게시 취소 워크플로우를 예약하여 게시된 자산을 나중에 포털에서 제거할 수 있습니다.
 
@@ -110,9 +110,9 @@ Dynamic Media 비디오 인코딩은 다음 위치에서 다운로드할 수 있
 조직은 URL에 대체 접두사를 사용하여 포털 URL을 사용자 정의할 수 있습니다. 기존 포털 URL에서 테넌트 이름에 대한 별칭을 얻으려면 조직에서 Adobe 지원에 문의해야 합니다.
 
 Brand Portal URL의 접두사만 사용자 정의할 수 있으며 전체 URL은 사용자 정의할 수 없습니다.
-기존 도메인이 있는 조직 `wknd.brand-portal.adobe.com` 가져올 수 있음 `wkndinc.brand-portal.adobe.com` 이(가) 요청 시 만들어졌습니다.
+예를 들어 기존 도메인이 `wknd.brand-portal.adobe.com`인 조직은 요청 시 `wkndinc.brand-portal.adobe.com`을(를) 만들 수 있습니다.
 
-그러나 AEM 작성자 인스턴스는 다음과 같을 수 있습니다. [구성됨](https://helpx.adobe.com/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html) 테넌트 ID URL을 사용하는 경우에만 해당하며 테넌트 별칭(대체) URL은 포함되지 않습니다.
+그러나 AEM 작성자 인스턴스는 테넌트 별칭(대체) URL이 아닌 테넌트 ID URL로만 [구성](https://helpx.adobe.com/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html)될 수 있습니다.
 
 **사용 사례** : 조직은 Adobe이 제공한 URL을 고수하는 대신 포털 URL을 사용자 지정하여 브랜딩 요구 사항을 충족할 수 있습니다.
 
@@ -128,7 +128,7 @@ AEM Brand Portal에서 게스트가 포털에 액세스할 수 있습니다. 게
 
 Brand Portal 사용자는 Aspera 기반의 빠른 다운로드를 활용하여 최대 25배 더 빠르게 속도를 높이고 전 세계 위치에 상관없이 원활한 다운로드 경험을 누릴 수 있습니다. 조직에서 다운로드 가속화가 활성화된 경우 Brand Portal 또는 공유 링크에서 에셋을 더 빨리 다운로드하려면 다운로드 대화 상자에서 다운로드 가속화 활성화 옵션을 선택해야 합니다.
 
-* [Brand Portal에서 다운로드를 가속화하기 위한 안내서](https://helpx.adobe.com/experience-manager/brand-portal/using/accelerated-download.html#main-pars_header)
+* [Brand Portal에서 다운로드를 가속화하는 지침](https://helpx.adobe.com/experience-manager/brand-portal/using/accelerated-download.html#main-pars_header)
 * [Aspera 연결 테스트 서버](https://test-connect.asperasoft.com/)
 
 ### 사용자 로그인 보고서
@@ -155,11 +155,11 @@ Brand Portal 사용자는 Aspera 기반의 빠른 다운로드를 활용하여 �
 ### 기타 개선 사항
 
 * *카드 및 목록 보기의 폴더 계층 구조 경로* — 사용자가 Brand Portal 인스턴스 내에 저장된 폴더의 위치를 알 수 있습니다. 사용자가 서로 다른 폴더 계층 구조 내에서 이름이 같은 폴더를 구분할 수 있도록 지원합니다.
-* *개요 옵션* — 관리자가 아닌 사용자에게 에셋/폴더를 선택한 다음 도구 모음에서 개요 옵션을 선택하여 에셋/폴더에 대한 메타데이터를 제공합니다. 현재 에는 제목, 생성 날짜 및 경로가 표시됩니다
+* *개요 옵션* - 관리자가 아닌 사용자가 에셋/폴더를 선택한 다음 도구 모음에서 개요 옵션을 선택하여 에셋/폴더에 대한 메타데이터를 제공합니다. 현재 에는 제목, 생성 날짜 및 경로가 표시됩니다
 
 ### Adobe I/O 호스트 UI를 사용하여 oAuth 통합 구성
 
-Brand Portal에서 Adobe I/O 사용 [https://legacy-oauth.cloud.adobe.io/](https://legacy-oauth.cloud.adobe.io/) Brand Portal과 AEM Assets 통합을 허용하도록 oAuth 통합을 구성할 수 있는 JWT 애플리케이션을 만드는 인터페이스입니다. 이전에는 OAuth 통합 구성을 위한 UI가에서 호스팅되었습니다. `https://marketing.adobe.com/developer/`. Brand Portal에 자산 및 컬렉션을 게시하기 위해 AEM Assets과 Brand Portal을 통합하는 방법에 대한 자세한 내용은 다음을 참조하십시오. [Brand Portal과 AEM Assets 통합 구성](https://helpx.adobe.com/experience-manager/6-4/assets/using/brand-portal-configuring-integration.html).
+Brand Portal은 Adobe I/O [https://legacy-oauth.cloud.adobe.io/](https://legacy-oauth.cloud.adobe.io/) 인터페이스를 사용하여 JWT 애플리케이션을 만듭니다. 이렇게 하면 Brand Portal과의 AEM Assets 통합을 허용하도록 oAuth 통합을 구성할 수 있습니다. 이전에는 OAuth 통합 구성을 위한 UI가 `https://marketing.adobe.com/developer/`에서 호스팅되었습니다. AEM Assets과 Brand Portal을 통합하여 Brand Portal에 자산 및 컬렉션을 게시하는 방법에 대한 자세한 내용은 [Brand Portal과 AEM Assets 통합 구성](https://helpx.adobe.com/experience-manager/6-4/assets/using/brand-portal-configuring-integration.html)을 참조하세요.
 
 ## Brand Portal 2018년 2월 기능 및 개선 사항{#brand-portal-features-and-enhancements-632}
 
@@ -210,5 +210,5 @@ Brand Portal과 AEM의 정렬을 지향하는 향상된 기능을 제공합니�
 * [가속화된 다운로드 안내서](https://helpx.adobe.com/experience-manager/brand-portal/using/accelerated-download.html#main-pars_header)
 * [AEM Assets Brand Portal Adobe 문서](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal.html)
 * [AEM Assets Dynamic Media Adobe 문서](https://experienceleague.adobe.com/docs/)
-* [Aspera Connect 다운로드](https://downloads.asperasoft.com/connect2/)
+* [Aspera 연결 다운로드](https://downloads.asperasoft.com/connect2/)
 * [Aspera 연결 테스트 서버](https://test-connect.asperasoft.com/)

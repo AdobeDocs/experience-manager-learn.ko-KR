@@ -1,6 +1,6 @@
 ---
 title: 코드 리포지토리 현대화 도구
-description: Core Repository Modernizer 가 어떻게 기존 AEM Maven 프로젝트를 AEMas a Cloud Service 과 호환되도록 자동으로 업데이트하는지에 대해 알아봅니다.
+description: Core Repository Modernizer 가 어떻게 기존 AEM Maven 프로젝트를 AEM as a Cloud Service과 호환되도록 자동으로 업데이트하는지에 대해 알아봅니다.
 version: Cloud Service
 feature: Migration
 topic: Migration, Upgrade
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # 코드 리포지토리 현대화 도구
 
-Core Repository Modernizer 가 어떻게 기존 AEM Maven 프로젝트를 AEMas a Cloud Service 과 호환되도록 자동으로 업데이트하는지에 대해 알아봅니다.
+Core Repository Modernizer 가 어떻게 기존 AEM Maven 프로젝트를 AEM as a Cloud Service과 호환되도록 자동으로 업데이트하는지에 대해 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336694?quality=12&learn=on)

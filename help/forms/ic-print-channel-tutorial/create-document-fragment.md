@@ -25,11 +25,11 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/22350?quality=12&learn=on)
 
-문서 조각에는 대화형 통신 문서의 텍스트 콘텐츠가 들어 있습니다. 이 텍스트 콘텐츠는 정적 텍스트이거나 기본 데이터 모델 요소 값에서 삽입할 수 있습니다. 예 **귀중하 _{name}_**여기서 Dear는 정적 텍스트이고 name은 양식 데이터 모델 요소 이름입니다. 런타임 시 이 작업은 다음으로 확인됩니다.**친애하는 글로리아 리오스**또는&#x200B;**존 제이콥스에게**name 요소의 값에 따라 다릅니다.
+문서 조각에는 대화형 통신 문서의 텍스트 콘텐츠가 들어 있습니다. 이 텍스트 콘텐츠는 정적 텍스트이거나 기본 데이터 모델 요소 값에서 삽입할 수 있습니다. 예를 들어 **Dear _{name}_**입니다. 여기서 Dear는 정적 텍스트이고 name은 양식 데이터 모델 요소 이름입니다. 런타임 시 이름 요소의 값에 따라&#x200B;**Dear Gloria Rios**또는&#x200B;**Dear John Jacobs**로 확인됩니다.
 
 리치 텍스트 편집기는 비즈니스 사용자가 텍스트를 작성하고 양식 데이터 요소를 삽입할 수 있을 만큼 직관적입니다. 문서 조각 편집기에는 텍스트 서식 지정, 글꼴 유형 및 스타일 지정, 특수 문자 삽입 및 하이퍼링크 만들기 기능이 있습니다.
 
-문서 조각 편집기에는 이에 설명된 대로 텍스트에 인라인 조건을 삽입하는 기능도 있습니다 [비디오](https://helpx.adobe.com/experience-manager/kt/forms/using/editing-improvements-correspondence-mgmt-feature-video-use.html)
+문서 단편 편집기에는 이 [비디오](https://helpx.adobe.com/experience-manager/kt/forms/using/editing-improvements-correspondence-mgmt-feature-video-use.html)에 나와 있는 대로 텍스트에 인라인 조건을 삽입하는 기능도 있습니다.
 
 >[!NOTE]
 >

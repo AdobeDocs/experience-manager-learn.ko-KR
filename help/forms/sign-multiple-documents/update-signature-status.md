@@ -21,7 +21,7 @@ ht-degree: 2%
 
 UpdateSignatureStatus 워크플로는 사용자가 서명식을 완료하면 트리거됩니다. 다음은 워크플로의 흐름입니다
 
-![메인 워크플로](assets/update-signature.PNG)
+![main-workflow](assets/update-signature.PNG)
 
 서명 상태 업데이트는 사용자 지정 프로세스 단계입니다.
 사용자 지정 프로세스 단계를 구현하는 주요 이유는 AEM Workflow를 확장하기 위해서입니다. 다음은 서명 상태를 업데이트하는 데 사용되는 사용자 지정 코드입니다.
@@ -71,7 +71,7 @@ public class UpdateSignatureStatusWorkflowStep implements WorkflowProcess {
 
 ## 자산
 
-서명 상태 업데이트 워크플로는 다음과 같을 수 있습니다 [여기에서 다운로드됨](assets/update-signature-status-workflow.zip)
+서명 상태 업데이트 워크플로는 [여기에서 다운로드](assets/update-signature-status-workflow.zip)할 수 있습니다.
 
 ## 다음 단계
 

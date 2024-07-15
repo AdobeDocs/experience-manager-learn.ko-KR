@@ -1,6 +1,6 @@
 ---
 title: JDBC DataSourcePool을 사용한 SQL 연결
-description: AEM JDBC DataSourcePool 및 이그레스 포트를 사용하여 AEM as a Cloud Service에서 SQL 데이터베이스에 연결하는 방법에 대해 알아봅니다.
+description: AEM의 JDBC DataSourcePool 및 이그레스 포트를 사용하여 AEM as a Cloud Service에서 SQL 데이터베이스에 연결하는 방법에 대해 알아봅니다.
 version: Cloud Service
 feature: Security
 topic: Development, Security
@@ -19,15 +19,15 @@ ht-degree: 0%
 
 # JDBC DataSourcePool을 사용한 SQL 연결
 
-SQL 데이터베이스(및 HTTP/HTTPS가 아닌 서비스)에 대한 연결은 AEM에서 프록시되어야 하며 연결을 관리하기 위해 AEM DataSourcePool OSGi 서비스를 사용하여 수행한 연결도 포함됩니다.
+SQL 데이터베이스(및 HTTP/HTTPS가 아닌 서비스)에 대한 연결은 AEM에서 프록시되어야 하며 AEM의 DataSourcePool OSGi 서비스를 사용하여 연결을 관리하는 연결도 포함됩니다.
 
 ## 고급 네트워킹 지원
 
 다음 코드 예는 다음 고급 네트워킹 옵션에서 지원됩니다.
 
-다음을 확인합니다. [적당하](../advanced-networking.md#advanced-networking) 이 자습서를 수행하기 전에 고급 네트워킹 구성이 설정되었습니다.
+이 자습서를 수행하기 전에 [적절함](../advanced-networking.md#advanced-networking) 고급 네트워킹 구성이 설정되었는지 확인하십시오.
 
-| 고급 네트워킹 없음 | [유연한 포트 이그레스](../flexible-port-egress.md) | [전용 이그레스 IP 주소](../dedicated-egress-ip-address.md) | [가상 사설망](../vpn.md) |
+| 고급 네트워킹 없음 | [유연한 포트 이그레스](../flexible-port-egress.md) | [전용 이그레스 IP 주소](../dedicated-egress-ip-address.md) | [가상 개인 네트워크](../vpn.md) |
 |:-----:|:-----:|:------:|:---------:|
 | ✘ | ✔ | ✔ | ✔ |
 
@@ -35,10 +35,10 @@ SQL 데이터베이스(및 HTTP/HTTPS가 아닌 서비스)에 대한 연결은 A
 
 OSGi 구성의 연결 문자열은 다음을 사용합니다.
 
-+ `AEM_PROXY_HOST` 를 통한 값 [OSGi 구성 환경 변수](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#environment-specific-configuration-values) `$[env:AEM_PROXY_HOST;default=proxy.tunnel]` 연결의 호스트로
-+ `30001` 은(는) `portOrig` cloud Manager 포트 전달 매핑 값 `30001` → `mysql.example.com:3306`
++ [OSGi 구성 환경 변수](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#environment-specific-configuration-values) `$[env:AEM_PROXY_HOST;default=proxy.tunnel]`을(를) 통해 연결의 호스트로 `AEM_PROXY_HOST` 값
++ `30001`: Cloud Manager 포트 전달 매핑 `30001` → `mysql.example.com:3306`의 `portOrig` 값
 
-암호는 코드에 저장할 수 없으므로 SQL 연결의 사용자 이름과 암호는 AIO CLI 또는 Cloud Manager API를 사용하여 설정된 OSGi 구성 변수를 통해 제공하는 것이 가장 좋습니다.
+암호는 코드에 저장할 수 없으므로 SQL 연결의 사용자 이름과 암호는 AIO CLI 또는 Cloud Manager API를 사용하여 설정된 OSGi 구성 변수를 통해 제공되는 것이 가장 좋습니다.
 
 + `ui.config/src/jcr_root/apps/wknd-examples/osgiconfig/config/com.day.commons.datasource.jdbcpool.JdbcPoolService~wknd-examples-mysql.cfg.json`
 
@@ -60,8 +60,8 @@ $ aio cloudmanager:set-environment-variables --programId=<PROGRAM_ID> <ENVIRONME
 
 ## 코드 예
 
-이 Java™ 코드 예는 AEM DataSourcePool OSGi 서비스를 통해 외부 MySQL 데이터베이스에 연결하는 OSGi 서비스입니다.
-DataSourcePool OSGi 공장 구성은 포트(`30001`)를 통해 매핑됩니다. `portForwards` 의 규칙 [enableEnvironmentAdvancedNetworkConfiguration](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration) 외부 호스트 및 포트에 대한 작업 `mysql.example.com:3306`.
+이 Java™ 코드 예는 AEM의 DataSourcePool OSGi 서비스를 통해 외부 MySQL 데이터베이스에 연결하는 OSGi 서비스입니다.
+DataSourcePool OSGi 팩터리 구성은 [enableEnvironmentAdvancedNetworkingConfiguration](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration) 작업의 `portForwards` 규칙을 통해 외부 호스트 및 포트 `mysql.example.com:3306`에 매핑된 포트(`30001`)를 지정합니다.
 
 ```json
 ...
@@ -134,11 +134,11 @@ public class JdbcExternalServiceImpl implements ExternalService {
 
 ## MySQL 드라이버 종속성
 
-AEM as a Cloud Service에서는 연결을 지원하기 위해 Java™ 데이터베이스 드라이버를 제공해야 하는 경우가 많습니다. 드라이버를 제공하는 것은 일반적으로 다음을 통해 이러한 드라이버가 포함된 OSGi 번들 아티팩트를 AEM 프로젝트에 포함시킴으로써 가장 잘 수행됩니다. `all` 패키지.
+AEM as a Cloud Service에서는 종종 연결을 지원하기 위해 Java™ 데이터베이스 드라이버를 제공해야 합니다. 드라이버를 제공하는 것은 일반적으로 이러한 드라이버가 포함된 OSGi 번들 아티팩트를 `all` 패키지를 통해 AEM 프로젝트에 포함시켜 가장 잘 수행됩니다.
 
 ### Reactor pom.xml
 
-반응기에 데이터베이스 드라이버 종속성 포함 `pom.xml` 그런 다음 `all` 하위 프로젝트.
+데이터베이스 드라이버 종속성을 `pom.xml` 반응기에 포함한 다음 `all` 하위 프로젝트에서 참조합니다.
 
 + `pom.xml`
 
@@ -160,7 +160,7 @@ AEM as a Cloud Service에서는 연결을 지원하기 위해 Java™ 데이터�
 
 ## 모든 pom.xml
 
-데이터베이스 드라이버 종속성 아티팩트를 `all` AEM 패키지가 배포되고 as a Cloud Service으로 제공됩니다. 다음 아티팩트 __필수__ 데이터베이스 드라이버 Java™ 클래스를 내보내는 OSGi 번들입니다.
+데이터베이스 드라이버 종속성 아티팩트를 AEM as a Cloud Service에 배포하고 사용할 수 있도록 `all` 패키지에 포함하십시오. 이러한 아티팩트 __must__&#x200B;은(는) 데이터베이스 드라이버 Java™ 클래스를 내보내는 OSGi 번들입니다.
 
 + `all/pom.xml`
 

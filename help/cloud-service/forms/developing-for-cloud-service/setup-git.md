@@ -21,7 +21,9 @@ ht-degree: 0%
 
 
 [Git 설치](https://git-scm.com/downloads). 기본 설정을 선택하고 설치 프로세스를 완료할 수 있습니다.
-명령 프롬프트로 이동 git —version에서 c:\cloudmanager\aem-banking-app type으로 이동합니다. 시스템에 설치된 GIT 버전이 표시됩니다
+명령 프롬프트로 이동
+c:\cloudmanager\aem-banking-app으로 이동합니다.
+git —version을 입력합니다. 시스템에 설치된 GIT 버전이 표시됩니다
 
 ## 로컬 Git 저장소 초기화
 
@@ -50,7 +52,7 @@ git commit -m "initial commit"
 ## 로컬 Git 저장소에 Cloud Manager 저장소 등록
 
 Cloud Manager 저장소 액세스
-![담당자 정보 액세스](assets/cloud-manager-repo.png)
+![담당자 정보에 액세스](assets/cloud-manager-repo.png)
 Cloud Manager 저장소 자격 증명 가져오기
 ![get-credentials](assets/cloud-manager-repo1.png)
 
@@ -68,7 +70,7 @@ git config --global user.password "XXXX"
 
 (암호는 cloud manager git 저장소 암호입니다)
 
-Cloud Manager git 저장소를 로컬 git 저장소에 등록합니다. 아래 명령은 연결됩니다 **뱅킹 앱** 원격 cloud manager git 저장소를 사용합니다. 대신 모든 이름을 사용할 수 있습니다. **뱅킹 앱**
+Cloud Manager git 저장소를 로컬 git 저장소에 등록합니다. 아래 명령은 **bankingapp**&#x200B;을(를) 원격 cloud manager git 저장소와 연결합니다. **bankingapp** 대신 어떤 이름이든 사용할 수 있습니다.
 
 
 ```shell

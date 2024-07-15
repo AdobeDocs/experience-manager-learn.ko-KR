@@ -25,7 +25,7 @@ Dynamic Media Snapshot은 Dynamic Media의 최적화된 동적 이미지 제공 
 >[!VIDEO](https://video.tv.adobe.com/v/3419421/?learn=on)
 
 <a href="https://snapshot.scene7.com/" class="spectrum-Button spectrum-Button--primary spectrum-Button--sizeM">
-  <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Dynamic Media 스냅샷 시작</span>
+  <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Dynamic Media 스냅숏 시작</span>
 </a>
 
 ## 추가 리소스

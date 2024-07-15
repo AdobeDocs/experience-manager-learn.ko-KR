@@ -45,7 +45,7 @@ public class HandleFormSubmissison extends SlingAllMethodsServlet {
 
 ## 사용자 정의 제출 핸들러 만들기
 
-에서 사용자 지정 제출 액션을 만듭니다. `apps/bankingapplication` 폴더는에서 만드는 것과 동일한 방식으로 만듭니다. [AEM Forms 이전 버전](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-submit-aem-forms-article.html?lang=en). 이 자습서의 목적을 위해 `apps/bankingapplication` CRX 저장소의 노드입니다.
+[이전 버전의 AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-submit-aem-forms-article.html?lang=en)에서 만들 때와 같은 방법으로 `apps/bankingapplication` 폴더에서 사용자 지정 제출 액션을 만듭니다. 이 자습서에서는 CRX 저장소의 `apps/bankingapplication` 노드 아래에 SubmitToAEMServlet이라는 폴더를 만듭니다.
 
 POST post.request.jsp의 다음 코드는 요청을 /bin/formstutorial에 마운트된 서블릿에 전달하기만 합니다. 이전 단계에서 생성된 것과 동일한 서블릿입니다
 
@@ -53,12 +53,12 @@ POST post.request.jsp의 다음 코드는 요청을 /bin/formstutorial에 마운
 com.adobe.aemds.guide.utils.GuideSubmitUtils.setForwardPath(slingRequest,"/bin/formstutorial",null,null);
 ```
 
-IntelliJ의 AEM 프로젝트에서 `apps/bankingapplication` 폴더를 만들고 새로 만들기 선택 | 새 패키지 대화 상자에서 apps.bankingapplication 뒤에 SubmitToAEMServlet을 패키징하고 입력합니다. SubmitToAEMervlet 노드를 마우스 오른쪽 단추로 클릭하고 저장소를 선택합니다. | Get 명령을 사용하여 AEM 프로젝트를 AEM 서버 저장소와 동기화합니다.
+IntelliJ의 AEM 프로젝트에서 `apps/bankingapplication` 폴더를 마우스 오른쪽 단추로 클릭하고 새로 만들기를 선택합니다 | 새 패키지 대화 상자에서 apps.bankingapplication 뒤에 SubmitToAEMServlet을 패키징하고 입력합니다. SubmitToAEMervlet 노드를 마우스 오른쪽 단추로 클릭하고 저장소를 선택합니다. | Get 명령을 사용하여 AEM 프로젝트를 AEM 서버 저장소와 동기화합니다.
 
 
 ## 적응형 양식 구성
 
-이제 모든 적응형 양식을 구성하여 이라는 이 사용자 정의 제출 핸들러에 제출할 수 있습니다. **AEM 서블릿에 제출**
+이제 **AEM 서블릿에 제출**&#x200B;이라는 이 사용자 지정 제출 처리기에 제출하도록 적응형 양식을 구성할 수 있습니다.
 
 ## 다음 단계
 

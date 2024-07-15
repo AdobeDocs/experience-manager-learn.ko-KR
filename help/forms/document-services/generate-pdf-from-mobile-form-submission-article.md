@@ -116,7 +116,7 @@ function readURL(input) {
 
 * [이 문서와 연결된 패키지를 다운로드하여 설치하십시오.](assets/pdf-from-mobile-form-submission.zip)
 
-* 의 속성 페이지를 보고 제출 URL 및 HTML 렌더링 프로필이 올바르게 설정되었는지 확인합니다.  [xdp](http://localhost:4502/libs/fd/fm/gui/content/forms/formmetadataeditor.html/content/dam/formsanddocuments/schengen.xdp)
+* [xdp](http://localhost:4502/libs/fd/fm/gui/content/forms/formmetadataeditor.html/content/dam/formsanddocuments/schengen.xdp)의 속성 페이지를 보고 제출 URL 및 HTML 렌더링 프로필이 올바르게 설정되었는지 확인하십시오.
 
 * [XDP를 html로 미리 보기](http://localhost:4502/content/dam/formsanddocuments/schengen.xdp/jcr:content)
 

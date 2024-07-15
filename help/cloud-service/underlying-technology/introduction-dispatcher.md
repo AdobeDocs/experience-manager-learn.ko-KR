@@ -18,9 +18,9 @@ ht-degree: 7%
 
 ---
 
-# 소개 [!DNL Dispatcher] {#introduction-dispatcher}
+# [!DNL Dispatcher] 소개 {#introduction-dispatcher}
 
-의 기능 및 기능에 대한 소개 [!DNL dispatcher] AEM 아키텍처의 일부로 사용됩니다.
+AEM 아키텍처의 일부로 [!DNL dispatcher]의 기능을 소개합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32029?quality=12&learn=on)
 

@@ -31,9 +31,9 @@ ht-degree: 0%
 
 - 유니버설 편집기에 대한 간략한 개요
 - 로컬 개발 환경 설정
-   - **AEM SDK**: GraphQL API를 사용하여 React 앱에 대한 콘텐츠 조각 내에 저장된 콘텐츠를 제공합니다.
+   - **AEM SDK**: GraphQL API를 사용하여 React 앱용 콘텐츠 조각 내에 저장된 콘텐츠를 제공합니다.
    - **React 앱**: AEM의 콘텐츠를 표시하는 간단한 사용자 인터페이스입니다.
-   - **유니버설 편집기 서비스**: a _유니버설 편집기 서비스의 로컬 복사본_ 범용 편집기 및 AEM SDK를 바인딩합니다.
+   - **Universal Editor Service**: Universal Editor와 AEM SDK를 바인딩하는 _Universal Editor 서비스의 로컬 복사본_.
 - 범용 편집기를 사용하여 콘텐츠를 편집하기 위해 React 앱을 측정하는 방법
 - 범용 편집기를 사용하여 React 앱 콘텐츠를 편집하는 방법
 
@@ -50,14 +50,14 @@ ht-degree: 0%
 
 ## 샘플 React 앱
 
-이 튜토리얼에서는 [**팀**](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/basic-tutorial#react-app---basic-tutorial---teampersons) 를 샘플 React 앱으로 사용하십시오. 다음 **팀** React 앱은 팀원 목록과 세부 정보를 표시합니다.
+이 자습서에서는 [**WKND Teams**](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/basic-tutorial#react-app---basic-tutorial---teampersons)를 샘플 React 앱으로 사용합니다. **WKND Teams** React 앱에 팀원 목록과 세부 정보가 표시됩니다.
 
-제목, 설명 및 팀원 등 팀 세부 사항은 다음과 같이 저장됩니다. _팀_ AEM의 콘텐츠 조각. 마찬가지로 이름, 약력 및 프로필 사진 등 개인 세부 사항은 다음과 같이 저장됩니다. _개인_ AEM의 콘텐츠 조각.
+제목, 설명, 팀원 등 팀 세부 정보는 AEM에서 _팀_ 콘텐츠 조각으로 저장됩니다. 마찬가지로 이름, 약력 및 프로필 사진 등 개인 세부 정보는 AEM에 _개인_ 콘텐츠 조각으로 저장됩니다.
 
-React 앱의 콘텐츠는 GraphQL API를 사용하여 AEM에서 제공하며 사용자 인터페이스는 두 개의 React 구성 요소를 사용하여 빌드됩니다. `Teams` 및 `Person`.
+React 앱의 콘텐츠는 GraphQL API를 사용하여 AEM에서 제공하며 사용자 인터페이스는 두 개의 React 구성 요소인 `Teams` 및 `Person`을(를) 사용하여 빌드됩니다.
 
-를 빌드하는 방법을 배울 수 있는 해당 튜토리얼이 있습니다. **팀** React 앱. 자습서는 다음과 같습니다 [여기](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview).
+해당 튜토리얼을 통해 **WKND Teams** React 앱을 빌드하는 방법을 배울 수 있습니다. 자습서는 [여기](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview)에서 찾을 수 있습니다.
 
 ## 다음 단계
 
-방법 알아보기 [로컬 개발 환경 설정](./local-development-setup.md).
+[로컬 개발 환경을 설정](./local-development-setup.md)하는 방법에 대해 알아봅니다.

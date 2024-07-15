@@ -24,11 +24,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->AEM **필수** indd 템플릿을 업로드할 때 실행 중인 InDesign 서버에 연결해야 합니다. INDD 파일의 초기 처리 중 일부에는 InDesign 서버가 필요합니다.
+>INDD 템플릿을 업로드할 때 AEM **must**&#x200B;이(가) 실행 중인 InDesign 서버에 연결되어 있어야 합니다. INDD 파일의 초기 처리 중 일부에는 InDesign 서버가 필요합니다.
 
 ## InDesign Server 체험판 다운로드 {#download-indesign-server-trial}
 
-다운로드 [InDesign Server 평가판 다운로드 웹 사이트](https://www.adobeprerelease.com/)
+[InDesign Server 평가판 다운로드 웹 사이트](https://www.adobeprerelease.com/) 다운로드
 
 ## 시작 InDesign Server {#starting-indesign-server}
 

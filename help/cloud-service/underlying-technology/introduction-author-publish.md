@@ -1,6 +1,6 @@
 ---
-title: 작성자 및 게시 계층 소개
-description: Adobe Experience Manager 아키텍처의 일부로 작성자 및 게시 계층을 소개합니다.
+title: 작성자 및 Publish 계층 소개
+description: Adobe Experience Manager의 아키텍처의 일부로 작성자 및 Publish 계층을 소개합니다.
 doc-type: technical video
 version: Cloud Service
 jira: KT-4639
@@ -18,8 +18,8 @@ ht-degree: 0%
 
 ---
 
-# 작성자 및 게시 계층 소개 {#introduction-author-publish}
+# 작성자 및 Publish 계층 소개 {#introduction-author-publish}
 
-Adobe Experience Manager 아키텍처의 일부로 작성자 및 게시 계층을 소개합니다.
+Adobe Experience Manager의 아키텍처의 일부로 작성자 및 Publish 계층을 소개합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32033?quality=12&learn=on)

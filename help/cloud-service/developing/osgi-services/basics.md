@@ -28,9 +28,9 @@ ht-degree: 1%
 
 ## 리소스
 
-+ [@Component JavaDoc](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/org/osgi/service/component/annotations/Component.html)
-+ [@ProviderType JavaDoc](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/org/osgi/annotation/versioning/ProviderType.html)
-+ [@Version JavaDoc](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/org/osgi/annotation/versioning/Version.html)
++ [@Component JavaDocs](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/org/osgi/service/component/annotations/Component.html)
++ [@ProviderType JavaDocs](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/org/osgi/annotation/versioning/ProviderType.html)
++ [@Version JavaDocs](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/org/osgi/annotation/versioning/Version.html)
 
 ## 코드
 
@@ -95,4 +95,4 @@ package com.adobe.aem.wknd.examples.core.adventures;
 import org.osgi.annotation.versioning.Version;
 ```
 
-추가 `package-info.java` AEM의 다른 OSGi 번들이 OSGi 서비스 인터페이스(또는 모든 Java 클래스)를 확인할 수 있도록 하는 데 필요합니다. 다음과 같은 경우 `package-info.java` 가 누락되었습니다. Java 패키지 및 해당 Java 인터페이스 또는 클래스는 내보내지지 않습니다. 이 Java 패키지에서 이러한 Java 인터페이스 또는 클래스를 가져오려고 하는 다른 OSGi 번들에는 오류가 표시됩니다 __해결할 수 없음__ AEM OSGi 번들 콘솔에서 다음을 수행합니다.
+AEM의 다른 OSGi 번들이 OSGi 서비스 인터페이스(또는 모든 Java 클래스)를 확인할 수 있도록 하려면 `package-info.java`을(를) 추가해야 합니다. `package-info.java`이(가) 누락된 경우 Java 패키지 및 해당 Java 인터페이스 또는 클래스를 내보내지 않습니다. 이 Java 패키지에서 이러한 Java 인터페이스 또는 클래스를 가져오려는 다른 OSGi 번들은 AEM의 OSGi 번들 콘솔에서 __해결할 수 없음__ 메시지와 함께 오류가 발생합니다.

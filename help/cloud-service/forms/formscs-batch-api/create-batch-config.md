@@ -22,7 +22,7 @@ ht-degree: 0%
 일괄 처리 API를 사용하려면 일괄 처리 구성을 만들고 해당 구성을 기반으로 실행을 실행합니다. 다음 비디오에서는 API를 사용하여 일괄 구성을 만드는 데모를 보여 줍니다
 
 >[!NOTE]
->AEM 사용자가 다음 그룹에 속하는지 확인하십시오. ```forms-users``` API 호출을 수행할 그룹입니다.
+>API를 호출하려면 AEM 사용자가 ```forms-users``` 그룹에 속하는지 확인하십시오.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/340241?quality=12&learn=on)

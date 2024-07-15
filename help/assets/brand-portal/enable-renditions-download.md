@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Brand Portal에서 렌디션 다운로드 활성화
 
-*이 비디오는 Brand Portal에서 렌디션을 다운로드할 수 있도록 하는 단계를 안내합니다.*
+*이 비디오는 Brand Portal에서 렌디션을 다운로드할 수 있도록 설정하는 단계를 안내합니다.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335449?quality=12&learn=on)

@@ -22,16 +22,16 @@ ht-degree: 0%
 
 로컬 서버에서 이 사용 사례를 사용하려면 아래 단계를 따르십시오.AEM 인스턴스가 localhost, 4502 포트에서 실행 중이라고 가정합니다.
 
-* [패키지 설치](assets/azuredemo.all-1.0.0-SNAPSHOT.zip) 패키지 관리자를 사용합니다.
+* 패키지 관리자를 사용하여 [패키지를 설치](assets/azuredemo.all-1.0.0-SNAPSHOT.zip)합니다.
 
 * OSGi configMgr을 사용하여 Azure 포털 자격 증명을 제공합니다.
   ![azure-portal](assets/azure-portal-config.png)
 스토리지 URI가 슬래시로 끝나고 SAS 토큰이 로 시작하는지 확인합니다.
-* 다음으로 이동 [AzureDemo](http://localhost:4502/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf/azuredemo)
+* [AzureDemo](http://localhost:4502/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf/azuredemo)(으)로 이동
 
 * 사용자 환경과 일치하도록 다음 3개의 데이터 소스의 인증 설정 편집
-  ![data-sources](assets/fdm-data-sources.png)
+  ![데이터 소스](assets/fdm-data-sources.png)
 
-* 미리 보기 및 제출 [ContactUs 양식](http://localhost:4502/content/dam/formsanddocuments/azureportal/contactus/jcr:content?wcmmode=disabled)
+* [ContactUs 양식](http://localhost:4502/content/dam/formsanddocuments/azureportal/contactus/jcr:content?wcmmode=disabled) 미리 보기 및 제출
 
 * [양식 제출 쿼리](http://localhost:4502/content/dam/formsanddocuments/azureportal/queryformsubmissions/jcr:content?wcmmode=disabled)

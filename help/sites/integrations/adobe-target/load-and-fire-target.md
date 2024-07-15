@@ -9,7 +9,7 @@ topic: Integrations
 role: Developer
 level: Intermediate
 badgeIntegration: label="통합" type="positive"
-badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
+badgeVersions: label="AEM Sites as a Cloud Service AEM Sites 6.5" before-title="false"
 doc-type: Tutorial
 exl-id: ec048414-2351-4e3d-b5f1-ade035c07897
 duration: 588
@@ -28,19 +28,19 @@ ht-degree: 1%
 
 ## 페이지 로드 규칙
 
-Adobe 클라이언트 데이터 레이어는 이벤트 기반 데이터 레이어입니다. AEM Page 데이터 레이어가 로드되면 이벤트를 트리거합니다 `cmp:show` . 비디오에서 `tags Library Loaded` 사용자 지정 이벤트를 사용하여 규칙이 호출됩니다. 아래에서는 사용자 지정 이벤트 및 데이터 요소에 대한 비디오에 사용된 코드 조각을 찾을 수 있습니다.
+Adobe 클라이언트 데이터 레이어는 이벤트 기반 데이터 레이어입니다. AEM Page 데이터 레이어가 로드되면 이벤트 `cmp:show`을(를) 트리거합니다. 비디오에서 사용자 지정 이벤트를 사용하여 `tags Library Loaded` 규칙이 호출됩니다. 아래에서는 사용자 지정 이벤트 및 데이터 요소에 대한 비디오에 사용된 코드 조각을 찾을 수 있습니다.
 
 ### 사용자 지정 페이지 표시 이벤트{#page-event}
 
-![이벤트 구성 및 사용자 지정 코드가 표시된 페이지](assets/load-and-fire-target-call.png)
+![이벤트 구성 및 사용자 지정 코드를 표시한 페이지](assets/load-and-fire-target-call.png)
 
-태그 속성에서 새 태그를 추가합니다 **이벤트** (으)로 **규칙**
+Tags 속성에서 새 **Event**&#x200B;을(를) **Rule**&#x200B;에 추가합니다.
 
 + __확장:__ 코어
 + __이벤트 유형:__ 사용자 지정 코드
-+ __이름:__ 페이지 표시 이벤트 핸들러(또는 설명적인 것)
++ __이름:__ 페이지 표시 이벤트 처리기(또는 설명적인 형식)
 
-탭 __편집기 열기__ 을 누르고 다음 코드 스니펫에 붙여넣습니다. 이 코드 __필수__ 다음에 추가: __이벤트 구성__ 및 후속 작업 __작업__.
+__편집기 열기__ 단추를 탭하고 다음 코드 조각에 붙여 넣으십시오. 이 코드 __은(는)__&#x200B;이벤트 구성&#x200B;__및 후속__&#x200B;작업&#x200B;__에 추가되어야__&#x200B;합니다.
 
 ```javascript
 // Define the event handler function
@@ -80,20 +80,20 @@ window.adobeDataLayer.push(function (dataLayer) {
 });
 ```
 
-사용자 지정 함수는 `pageShownEventHandler`, 및 AEM 핵심 구성 요소에서 제공하는 이벤트를 수신하고, 핵심 구성 요소와 관련된 정보를 파생하고, 이벤트 개체로 패키징하며, 페이로드에서 파생된 이벤트 정보로 태그 이벤트를 트리거합니다.
+사용자 지정 함수는 `pageShownEventHandler`을(를) 정의하고 AEM 핵심 구성 요소에서 내보내는 이벤트를 수신하고, 핵심 구성 요소와 관련된 정보를 파생하고, 이벤트 개체로 패키징하고, 페이로드에서 파생된 이벤트 정보로 태그 이벤트를 트리거합니다.
 
-태그 규칙은 의 태그를 사용하여 트리거됩니다. `trigger(...)` 함수 __전용__ 규칙의 이벤트 사용자 지정 코드 조각 정의 내에서 사용할 수 있습니다.
+태그 규칙은 규칙 이벤트의 사용자 지정 코드 코드 조각 정의 내에서 사용할 수 있는 __only__ 태그의 `trigger(...)` 함수를 사용하여 트리거됩니다.
 
-다음 `trigger(...)` 함수는 이벤트 개체를 매개 변수로 가져와 태그에 예약된 다른 이름으로 태그 데이터 요소에 노출합니다. `event`. 태그의 데이터 요소는 이제 의 이 이벤트 개체에서 데이터를 참조할 수 있습니다. `event` 과 같은 구문을 사용하는 개체 `event.component['someKey']`.
+`trigger(...)` 함수는 이벤트 개체를 매개 변수로 사용하여 `event` 태그의 다른 예약된 이름으로 태그 데이터 요소에 노출됩니다. 이제 태그의 데이터 요소는 `event.component['someKey']`과 같은 구문을 사용하여 `event` 개체에서 이 이벤트 개체의 데이터를 참조할 수 있습니다.
 
-If `trigger(...)` 는 이벤트의 사용자 지정 코드 이벤트 유형(예: 작업)의 컨텍스트 외부에 사용되며 JavaScript 오류입니다 `trigger is undefined` 는 tags 속성과 통합된 웹 사이트에서 throw됩니다.
+`trigger(...)`이(가) 이벤트의 사용자 지정 코드 이벤트 형식 컨텍스트(예: 작업)의 외부에서 사용되는 경우 tags 속성과 통합된 웹 사이트에서 JavaScript 오류 `trigger is undefined`이(가) 발생합니다.
 
 
 ### 데이터 요소
 
 ![데이터 요소](assets/data-elements.png)
 
-태그 데이터 요소는 이벤트 객체의 데이터를 매핑합니다 [사용자 지정 페이지 표시 이벤트에서 트리거됨](#page-event) 코어 확장의 사용자 지정 코드 데이터 요소 유형을 통해 Adobe Target에서 사용할 수 있는 변수에 매핑합니다.
+태그 데이터 요소는 코어 확장의 사용자 지정 코드 데이터 요소 유형을 통해 사용자 지정 페이지 표시 이벤트](#page-event)에서 트리거된 이벤트 개체 [의 데이터를 Adobe Target에서 사용할 수 있는 변수에 매핑합니다.
 
 #### 페이지 ID 데이터 요소
 
@@ -146,7 +146,7 @@ if (event && event.component && event.component.hasOwnProperty('dc:title')) {
 #### 솔루션
 
 Target 고객은 테스트나 간단한 개념 입증 용도로 Target에 클라우드 기반 인스턴스를 사용하는 경우가 있습니다. 이러한 도메인 및 기타 많은 다른 도메인은 공용 접미사 목록 의 일부입니다.
-최신 브라우저에서는 다음을 사용자 지정하지 않는 한 이러한 도메인을 사용하는 경우 쿠키를 저장하지 않습니다. `cookieDomain` 을 사용하여 설정 `targetGlobalSettings()`.
+최신 브라우저에서는 `targetGlobalSettings()`을(를) 사용하여 `cookieDomain` 설정을 사용자 지정하지 않는 한 이러한 도메인을 사용하는 경우 쿠키를 저장하지 않습니다.
 
 ```
 window.targetGlobalSettings = {  
@@ -161,6 +161,6 @@ window.targetGlobalSettings = {
 ## 지원 링크
 
 + [Adobe 클라이언트 데이터 레이어 설명서](https://github.com/adobe/adobe-client-data-layer/wiki)
-+ [Adobe Experience Cloud 디버거 - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
++ [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 + [Adobe 클라이언트 데이터 레이어 및 핵심 구성 요소 설명서 사용](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)
 + [Adobe Experience Platform Debugger 소개](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)

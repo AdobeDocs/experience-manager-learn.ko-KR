@@ -26,4 +26,4 @@ ht-degree: 0%
 >[!VIDEO](https://video.tv.adobe.com/v/331757?quality=12&learn=on)
 
 >[!NOTE]
->다음에서 계정을 만드는지 확인하십시오. [Salesforce 개발자 에디션](https://developer.salesforce.com/signup) rest API는 개발자 버전에서 기본적으로 활성화되어 있습니다.
+>REST API는 개발자 버전에서 기본적으로 활성화되어 있으므로 [Salesforce 개발자 버전](https://developer.salesforce.com/signup)에서 계정을 만드십시오.

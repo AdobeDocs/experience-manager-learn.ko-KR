@@ -59,6 +59,6 @@ EmergencyContact.js 파일을 열고 가져오기 메서드의 URL을 환경에 
 
 REACT 앱에서 AEM 끝점에 대한 POST 호출을 활성화하려면 Adobe Granite 원본 간 리소스 공유 정책 구성의 허용된 원본 필드에 적절한 항목을 지정해야 합니다.
 
-![cors-set](assets/cors-settings.png)
+![cors-setting](assets/cors-settings.png)
 
-다음을 참조하십시오 [AEM을 통한 CORS 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html) cors 구성 옵션에 대한 자세한 내용은 을 참조하십시오.
+CORS 구성 옵션에 대한 자세한 내용은 [AEM과 CORS 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)를 참조하십시오.

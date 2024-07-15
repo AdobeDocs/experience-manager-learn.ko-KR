@@ -22,7 +22,7 @@ ht-degree: 0%
 
 AEM 워크플로우에서 적응형 양식을 사용할 때 양식 제출자의 관리자에게 작업을 동적으로 지정할 수 있습니다. 이 사용 사례를 달성하려면 Ldap를 사용하여 AEM을 구성해야 합니다.
 
-LDAP를 사용하여 AEM을 구성하는 데 필요한 단계는에 설명되어 있습니다 [자세한 내용은 여기 를 참조하십시오.](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ldap-config.html)
+LDAP를 사용하여 AEM을 구성하는 데 필요한 단계는 [자세한 정보](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ldap-config.html)에 설명되어 있습니다.
 
 이 문서에서는 Adobe Ldap를 사용하여 AEM을 구성하는 데 사용되는 구성 파일을 첨부합니다. 이러한 파일은 패키지 관리자를 사용하여 가져올 수 있는 패키지에 포함됩니다.
 
@@ -32,7 +32,7 @@ LDAP를 사용하여 AEM을 구성하는 데 필요한 단계는에 설명되어
 
 아래 스크린샷에서는 LDAP에서 AEM으로 가져온 사용자에게 그룹을 할당합니다. 가져온 사용자에게 할당된 forms-users 그룹에 주목합니다. AEM Forms과의 상호 작용을 위해서는 사용자가 이 그룹의 멤버여야 합니다. 또한 AEM의 프로필/관리자 노드 아래에 관리자 속성을 저장합니다.
 
-![싱챈들러](assets/synchandler.gif)
+![Synchandler](assets/synchandler.gif)
 
 LDAP를 구성하고 사용자를 AEM으로 가져온 다음에는 작업을 제출자의 관리자에게 할당하는 워크플로우를 만들 수 있습니다. 이 문서에서는 간단한 1단계 승인 워크플로를 개발했습니다.
 
@@ -62,16 +62,16 @@ String managerPorperty = workflowInitiator.getProperty("profile/manager")[0].get
 
 Manager 속성이 LDAP에 저장되는 방법에 따라 관리자 ID를 가져오기 위해 문자열을 몇 가지 조작해야 할 수 있습니다.
 
-이 문서를 읽고 직접 구현하십시오. [참가자 선택기 .](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
+이 문서를 읽고 자신의 [ParticipantChooser를 구현하십시오.](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
 
 시스템에서 테스트하려면(Adobe 직원의 경우 이 샘플을 즉시 사용할 수 있음)
 
-* [setvalue 번들 다운로드 및 배포](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). 관리자 속성을 설정하기 위한 사용자 지정 OSGI 번들입니다.
+* [setvalue 번들을 다운로드하여 배포합니다](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). 관리자 속성을 설정하기 위한 사용자 지정 OSGI 번들입니다.
 * [DevelopingWithServiceUserBundle 다운로드 및 설치](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-* [패키지 관리자를 사용하여 이 문서와 연결된 자산을 AEM으로 가져옵니다.](assets/aem-forms-ldap.zip).LDAP 구성 파일, 워크플로우 및 적응형 양식이 이 패키지의 일부로 포함됩니다.
+* [패키지 관리자를 사용하여 이 문서와 연결된 Assets을 AEM으로 가져오기](assets/aem-forms-ldap.zip).이 패키지의 일부로 LDAP 구성 파일, 워크플로 및 적응형 양식이 포함됩니다.
 * AEM 적절한 LDAP 자격 증명을 사용하여 LDAP를 구성합니다.
 * LDAP 자격 증명을 사용하여 AEM에 로그인합니다.
-* 를 엽니다. [timeoffrequestform](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
+* [timeoffrequestform](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled) 열기
 * 양식을 작성하고 제출하십시오.
 * 제출자의 매니저는 검토용 양식을 받아야 합니다.
 

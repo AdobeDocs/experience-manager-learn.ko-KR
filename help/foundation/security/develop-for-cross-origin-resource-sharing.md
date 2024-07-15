@@ -1,6 +1,6 @@
 ---
 title: AEM과의 CORS(원본 간 리소스 공유)를 위한 개발
-description: 클라이언트측 JavaScript를 통해 외부 웹 애플리케이션에서 AEM 콘텐츠에 액세스하기 위해 CORS를 활용하는 간단한 예입니다.
+description: 클라이언트측 JavaScript을 통해 외부 웹 애플리케이션에서 AEM 콘텐츠에 액세스하기 위해 CORS를 활용하는 간단한 예입니다.
 version: 6.4, 6.5
 topic: Security, Development
 role: Developer
@@ -18,33 +18,33 @@ ht-degree: 0%
 
 # CORS(원본 간 리소스 공유)를 위한 개발
 
-을 활용하는 간단한 예 [!DNL CORS] 클라이언트측 JavaScript를 통해 외부 웹 애플리케이션에서 AEM 콘텐츠에 액세스 이 예에서는 CORS OSGi 구성을 사용하여 AEM에서 CORS 액세스를 활성화합니다. OSGi 구성 접근 방식은 다음과 같은 경우에 실행 가능합니다.
+클라이언트측 JavaScript을 통해 외부 웹 애플리케이션에서 AEM 콘텐츠에 액세스하는 데 [!DNL CORS]을(를) 활용하는 간단한 예입니다. 이 예에서는 CORS OSGi 구성을 사용하여 AEM에서 CORS 액세스를 활성화합니다. OSGi 구성 접근 방식은 다음과 같은 경우에 실행 가능합니다.
 
 * 단일 원본이 AEM Publish 콘텐츠에 액세스하고 있습니다.
 * AEM 작성자에게는 CORS 액세스 권한이 필요합니다.
 
-AEM Publish에 대한 여러 원본 액세스가 필요한 경우 다음을 참조하십시오. [이 설명서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=en#dispatcher-configuration).
+AEM Publish에 대한 다중 원본 액세스가 필요한 경우 [이 설명서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=en#dispatcher-configuration)를 참조하세요.
 
 >[!VIDEO](https://video.tv.adobe.com/v/18837?quality=12&learn=on)
 
 이 비디오에서:
 
-* **www.example.com** 를 통해 localhost에 매핑 `/etc/hosts`
-* **aem-publish.local** 를 통해 localhost에 매핑 `/etc/hosts`
-* SimpleHTTPServer (래퍼 [[!DNL Python]의 SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html))는 포트 8000을 통해 HTML 페이지를 제공합니다.
-   * _Mac App Store에서 더 이상 사용할 수 없습니다. 다음과 같이 유사 항목 사용 [지브스](https://apps.apple.com/us/app/jeeves-local-http-server/id980824182?mt=12)._
-* [!DNL AEM Dispatcher] 다음에서 실행 중: [!DNL Apache HTTP Web Server] 2.4 및 (으)로 요청 역프록시 설정 `aem-publish.local` 끝 `localhost:4503`.
+* **www.example.com**&#x200B;이(가) `/etc/hosts`을(를) 통해 localhost에 매핑됨
+* **aem-publish.local** `/etc/hosts`을(를) 통해 localhost에 매핑
+* SimpleHTTPServer([[!DNL Python]의 SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html)에 대한 래퍼)가 포트 8000을 통해 HTML 페이지를 제공하고 있습니다.
+   * _더 이상 Mac App Store에서 사용할 수 없습니다. [Jeeves](https://apps.apple.com/us/app/jeeves-local-http-server/id980824182?mt=12)._&#x200B;과(와) 같은 유사한 기능 사용
+* [!DNL AEM Dispatcher]이(가) [!DNL Apache HTTP Web Server] 2.4에서 실행 중이고 `aem-publish.local`에 대한 요청을 `localhost:4503`에 역 프록싱합니다.
 
-자세한 내용은 을(를) 참조하십시오. [AEM의 CORS(원본 간 리소스 공유) 이해](./understand-cross-origin-resource-sharing.md).
+자세한 내용은 [AEM의 CORS(원본 간 리소스 공유) 이해](./understand-cross-origin-resource-sharing.md)를 검토하세요.
 
 ## www.example.com HTML 및 JavaScript
 
 이 웹 페이지에는 다음과 같은 논리가 있습니다
 
 1. 버튼을 클릭하면
-1. 다음을 생성합니다. [!DNL AJAX GET] 요청 대상 `http://aem-publish.local/content/we-retail/.../experience/_jcr_content.1.json`
-1. 를 검색합니다. `jcr:title` json 응답 양식
-1. 삽입 `jcr:title` DOM으로
+1. `http://aem-publish.local/content/we-retail/.../experience/_jcr_content.1.json`에 [!DNL AJAX GET] 요청
+1. JSON 응답에서 `jcr:title`을(를) 검색합니다.
+1. DOM에 `jcr:title` 넣기
 
 ```xml
 <html>
@@ -79,7 +79,7 @@ AEM Publish에 대한 여러 원본 액세스가 필요한 경우 다음을 참�
 
 ## OSGi 공장 구성
 
-용 OSGi 구성 팩토리 [!DNL Cross-Origin Resource Sharing] 을(를) 통해 사용할 수 있습니다.
+[!DNL Cross-Origin Resource Sharing]에 대한 OSGi 구성 팩토리는 다음을 통해 사용할 수 있습니다.
 
 * `http://<host>:<port>/system/console/configMgr > [!UICONTROL Adobe Granite Cross-Origin Resource Sharing Policy]`
 
@@ -103,7 +103,7 @@ Access-Control-Request-Method,Access-Control-Request-Headers]"
 
 ### CORS 요청 헤더 허용
 
-필요한 항목을 허용하려면 [처리를 위해 AEM으로 전달할 HTTP 요청 헤더](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders), Dispatcher에 허용되어야 합니다. `/clientheaders` 구성.
+필요한 [HTTP 요청 헤더가 처리를 위해 AEM에 전달되도록](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders)하려면 Dispatcher의 `/clientheaders` 구성에서 허용되어야 합니다.
 
 ```
 /clientheaders {
@@ -116,7 +116,7 @@ Access-Control-Request-Method,Access-Control-Request-Headers]"
 
 ### CORS 응답 헤더 캐싱
 
-캐시된 콘텐츠에서 CORS 헤더를 캐시하고 제공할 수 있도록 하려면 다음을 추가하십시오 [/cache /headers 구성](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#caching-http-response-headers) AEM 게시로 `dispatcher.any` 파일.
+캐시된 콘텐츠에서 CORS 헤더를 캐시하고 제공할 수 있도록 하려면 다음 [/cache /headers 구성](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#caching-http-response-headers)을(를) AEM Publish `dispatcher.any` 파일에 추가하십시오.
 
 ```
 /publishfarm {
@@ -140,14 +140,14 @@ Access-Control-Request-Method,Access-Control-Request-Headers]"
 }
 ```
 
-**웹 서버 응용 프로그램 다시 시작** 을(를) 변경한 후 `dispatcher.any` 파일.
+`dispatcher.any` 파일을 변경한 후 **웹 서버 응용 프로그램을 다시 시작**&#x200B;합니다.
 
-다음 요청 시 헤더가 적절하게 캐시되도록 하려면 캐시를 완전히 지워야 할 수 있습니다. `/cache /headers` 구성 업데이트.
+`/cache /headers` 구성 업데이트 후 다음 요청에서 헤더가 적절하게 캐시되도록 하려면 캐시를 완전히 지워야 할 수 있습니다.
 
 ## 지원 자료 {#supporting-materials}
 
-* [macOS용 지브스](https://apps.apple.com/us/app/jeeves-local-http-server/id980824182?mt=12)
-* [Python SimpleHTTPServer](https://docs.python.o:qrg/2/library/simplehttpserver.html) (Windows/macOS/Linux 호환)
+* macOS에 대한 [Jeeves](https://apps.apple.com/us/app/jeeves-local-http-server/id980824182?mt=12)
+* [Python SimpleHTTPServer](https://docs.python.o:qrg/2/library/simplehttpserver.html)(Windows/macOS/Linux 호환)
 
 * [AEM의 CORS(원본 간 리소스 공유) 이해](./understand-cross-origin-resource-sharing.md)
 * [원본 간 리소스 공유(W3C)](https://www.w3.org/TR/cors/)

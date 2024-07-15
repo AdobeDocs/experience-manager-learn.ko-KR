@@ -1,6 +1,6 @@
 ---
 title: Managed Services Dispatcher 설명서 Adobe
-description: AMS 프로세스는 Dispatcher 설정에서 적절한 지원을 가져오기 위한 프로세스입니다.
+description: Dispatcher 설정에서 적절한 지원을 받기 위한 AMS 프로세스입니다.
 version: 6.5
 topic: Administration, Performance, Security
 feature: Dispatcher
@@ -19,11 +19,11 @@ ht-degree: 5%
 # Managed Services Dispatcher 설명서 Adobe
 
 AEM 설치가 Adobe Managed Service에서 호스팅되는 경우 이 설명서를 읽어 보십시오.
-아래 문서에서는 제공된 Dispatcher 설정을 올바르게 사용자 지정하고 작업하기 위한 AMS 프로세스를 다룹니다.
+제공된 문서 아래에서는 제공된 Dispatcher 설정을 적절히 사용자 정의하고 작업하기 위한 AMS 프로세스를 다룹니다.
 
 ## 목차
 
-다음은 Dispatcher 설명서를 구성하는 하위 페이지 및 항목입니다.
+다음은 Dispatcher 설명서를 구성하는 하위 페이지 및 주제입니다.
 
 - [&quot;Dispatcher&quot;란?](./what-is-the-dispatcher.md)
 - [기본 파일 레이아웃](./basic-file-layout.md)

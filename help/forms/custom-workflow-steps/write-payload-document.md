@@ -27,7 +27,7 @@ ht-degree: 0%
 ChangeBeneficiary.pdf,c:\confirmation
 ```
 
-첫 번째 인수는 파일 시스템에 저장할 문서의 이름입니다. 두 번째 인수는 문서를 저장할 폴더 위치입니다. 예를 들어 위의 사용 사례에서 문서는 `c:\confirmation\ChangeBeneficiary.pdf`
+첫 번째 인수는 파일 시스템에 저장할 문서의 이름입니다. 두 번째 인수는 문서를 저장할 폴더 위치입니다. 예를 들어 위의 사용 사례에서는 문서가 `c:\confirmation\ChangeBeneficiary.pdf`에 작성되었습니다.
 
 다음 스크린샷은 사용자 지정 프로세스 단계에 전달하는 데 필요한 인수를 보여 줍니다
 ![write-payload-file-system](assets/write-payload-file-system.png)

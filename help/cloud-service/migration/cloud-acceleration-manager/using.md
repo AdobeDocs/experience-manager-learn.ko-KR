@@ -1,5 +1,5 @@
 ---
-title: Cloud Acceleration Manager의 도구 사용
+title: Cloud Acceleration Manager 도구 사용
 description: Cloud Acceleration Manager의 도구 사용에 대한 내레이션 설명입니다.
 version: Cloud Service
 feature: Migration
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ---
 
-# Cloud Acceleration Manager의 도구 사용
+# Cloud Acceleration Manager 도구 사용
 
 Cloud Acceleration Manager의 도구 사용에 대한 내레이션 설명입니다.
 

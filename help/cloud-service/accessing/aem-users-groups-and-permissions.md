@@ -32,5 +32,5 @@ Adobe Experience Manager는 Adobe IMS 사용자, 사용자 그룹 및 제품 프
 
 ## 추가 리소스
 
-+ [Adobe Experience Manager as a Cloud Service에 대한 IMS 지원](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html)
-+ [AEM에서 제공한 사용자 그룹 및 권한](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#built-in-users-and-groups)
++ Adobe Experience Manager as a Cloud Service에 대한 [IMS 지원](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html)
++ [AEM 제공 사용자 그룹 및 해당 권한](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#built-in-users-and-groups)

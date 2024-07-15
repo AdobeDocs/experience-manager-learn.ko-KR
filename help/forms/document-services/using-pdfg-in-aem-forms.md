@@ -21,19 +21,19 @@ ht-degree: 0%
 AEM Forms을 사용하여 PDF을 만들기 위한 드래그 앤 드롭 기능 시연
 
 PDFG는 PDF 생성을 나타냅니다. 즉, 다양한 파일 형식을 PDF 형식으로 변환할 수 있습니다. 가장 일반적인 문서는 Microsoft Office 문서입니다. PDFG는 6.1 이후 AEM Forms의 일부였습니다.
-[PDFG API용 javadoc이 여기에 나열됩니다](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html)
+[PDFG API용 javadoc가 여기에 나열되어 있습니다](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html)
 
 이 문서와 연결된 에셋을 사용하면 MS Office 문서 또는 JPG 파일을 HTML 페이지의 드롭 영역으로 드래그 앤 드롭할 수 있습니다. 문서가 삭제되면 PDFG 서비스를 호출하고 문서를 PDF으로 변환하여 AEM 서버의 파일 시스템에 저장합니다.
 
 데모 자산을 설치하려면 다음 단계를 수행하십시오
 
-1. 이 문서에서 언급한 대로 PDFG 구성 [여기](https://helpx.adobe.com/experience-manager/6-4/forms/using/install-configure-pdf-generator.html).
+1. 이 문서 [여기](https://helpx.adobe.com/experience-manager/6-4/forms/using/install-configure-pdf-generator.html)에 언급된 대로 PDFG를 구성하십시오.
 1. AEM Forms 버전과 관련된 적절한 설명서를 따르십시오.
 1. [패키지 관리자를 사용하여 이 문서와 관련된 에셋을 가져오고 설치합니다.](assets/createpdfgdemov2.zip)
-1. [post.jsp로 이동](http://localhost:4502/apps/AemFormsSamples/components/createPDF/POST.jsp) CRX에서
+1. CRX에서 [post.jsp로 이동](http://localhost:4502/apps/AemFormsSamples/components/createPDF/POST.jsp)
 1. 원하는 대로 저장 위치 변경(9행)
 1. 변경 사항을 저장합니다.
-1. 를 엽니다. [html 페이지](http://localhost:4502/content/DocumentServices/CreatePDFG.html) 변환을 위해 파일을 드래그 앤 드롭하는 데 사용됩니다.
+1. 변환을 위해 파일을 끌어다 놓을 [html 페이지](http://localhost:4502/content/DocumentServices/CreatePDFG.html)를 엽니다.
 1. Word 파일 또는 jpg를 드롭 영역에 드롭합니다.
 1. 입력된 문서는 PDF으로 변환되고 포인트 4에 지정된 것과 동일한 위치에 저장됩니다.
 

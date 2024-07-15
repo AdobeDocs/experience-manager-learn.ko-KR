@@ -28,11 +28,11 @@ ht-degree: 1%
 * 라디오 단추
 
 양식 작성자는 이러한 필드 유형을 아래와 같이 검색 가능한 것으로 표시할 수 있습니다
-![검색 가능 필드](assets/searchable-fields.png)
+![검색 가능한 필드](assets/searchable-fields.png)
 
 다음 구조를 만들어 필드를 확장했습니다
 
-![확장된 필드](assets/extend-component.png)
+![확장 필드](assets/extend-component.png)
 
 다음은 .content.xml 파일의 컨텐츠입니다
 

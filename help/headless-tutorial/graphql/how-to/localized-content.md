@@ -19,15 +19,15 @@ ht-degree: 0%
 
 # AEM Headless를 사용한 현지화된 콘텐츠
 
-AEM에서 다음을 제공합니다. [번역 통합 프레임워크](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/translation/integration-framework.html) headless 콘텐츠의 경우 콘텐츠 조각 및 지원 에셋을 로케일에서 사용하기 위해 쉽게 번역할 수 있도록 합니다. 페이지, 경험 조각, 에셋 및 Forms과 같은 다른 AEM 콘텐츠를 번역하는 데 사용되는 것과 동일한 프레임워크입니다. 한 번 [헤드리스 콘텐츠 번역됨](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html?lang=ko-KR), 그리고 게시되어 headless 애플리케이션에서 사용할 준비가 되었습니다.
+AEM은 Headless 콘텐츠에 대한 [번역 통합 프레임워크](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/translation/integration-framework.html)를 제공하여 콘텐츠 조각 및 지원 에셋을 로케일에서 사용하기 위해 쉽게 번역할 수 있도록 합니다. 페이지, 경험 조각, Assets 및 Forms과 같은 다른 AEM 콘텐츠를 번역하는 데 사용되는 것과 동일한 프레임워크입니다. [Headless 콘텐츠를 번역](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html?lang=ko-KR)하고 게시하면 Headless 애플리케이션에서 사용할 수 있습니다.
 
-## 에셋 폴더 구조{#assets-folder-structure}
+## Assets 폴더 구조{#assets-folder-structure}
 
-AEM에서 현지화된 콘텐츠 조각이 다음을 따르는지 확인합니다. [권장 로컬라이제이션 구조](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/getting-started.html#recommended-structure).
+AEM의 지역화된 콘텐츠 조각이 [권장 지역화 구조](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/getting-started.html#recommended-structure)를 따르는지 확인하십시오.
 
-![현지화된 AEM assets 폴더](./assets/localized-content/asset-folders.jpg)
+![지역화된 AEM 자산 폴더](./assets/localized-content/asset-folders.jpg)
 
-로케일 폴더는 동위 멤버여야 하며 제목이 아닌 폴더 이름이 유효해야 합니다 [ISO 639-1 코드](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) 폴더에 포함된 컨텐츠의 로케일을 나타냅니다.
+로케일 폴더는 형제여야 하며, 폴더 이름은 제목이 아니라 폴더에 포함된 컨텐츠의 로케일을 나타내는 올바른 [ISO 639-1 코드](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)여야 합니다.
 
 로케일 코드는 GraphQL 쿼리에서 반환되는 콘텐츠 조각을 필터링하는 데 사용되는 값이기도 합니다.
 
@@ -39,7 +39,7 @@ AEM에서 현지화된 콘텐츠 조각이 다음을 따르는지 확인합니�
 
 ## GraphQL 지속 쿼리
 
-AEM에서 다음을 제공합니다. `_locale` 로케일 코드 별로 컨텐츠를 자동으로 필터링하는 GraphQL 필터 . 예를 들어 의 모든 영국 모험 쿼리 [WKND 사이트 프로젝트](https://github.com/adobe/aem-guides-wknd) 새 지속 쿼리로 수행할 수 있습니다. `wknd-shared/adventures-by-locale` 다음으로 정의됨:
+AEM은 로케일 코드 별로 콘텐츠를 자동으로 필터링하는 `_locale` GraphQL 필터를 제공합니다. 예를 들어 [WKND 사이트 프로젝트](https://github.com/adobe/aem-guides-wknd)의 모든 영문 모험을 쿼리하는 작업은 다음과 같이 정의된 새 지속 쿼리 `wknd-shared/adventures-by-locale`을(를) 사용하여 수행할 수 있습니다.
 
 ```graphql
 query($locale: String!) {
@@ -52,19 +52,19 @@ query($locale: String!) {
 }
 ```
 
-다음 `$locale` 에 사용되는 변수 `_locale` 필터에는 로케일 코드가 필요합니다(예: `en`, `en_us`, 또는 `de`에 지정된 ) [AEM 자산 폴더 기반 현지화 규칙](#assets-folder-structure).
+`_locale` 필터에 사용되는 `$locale` 변수에는 [AEM의 자산 폴더 기반 로컬라이제이션 규칙](#assets-folder-structure)에 지정된 로케일 코드(예: `en`, `en_us` 또는 `de`)가 필요합니다.
 
 ## React 예
 
-를 사용하여 로케일 선택기를 기반으로 AEM에서 쿼리할 Adventure 콘텐츠를 제어하는 간단한 React 애플리케이션을 만들어 보겠습니다. `_locale` 필터.
+`_locale` 필터를 사용하여 로케일 선택기를 기반으로 AEM에서 쿼리할 Adventure 콘텐츠를 제어하는 간단한 React 응용 프로그램을 만들어 보겠습니다.
 
-날짜 __영어__ 로케일 선택기에서 영어 Adventure Content Fragments가 `/content/dam/wknd/en` 다음과 같은 경우 반환됩니다. __스페인어__ 이(가) 선택된 다음 아래에서 스페인어 콘텐츠 조각 을 선택합니다. `/content/dam/wknd/es`기타 등등.
+로케일 선택기에서 __영어__&#x200B;을(를) 선택하면 `/content/dam/wknd/en`의 영어 Adventure 콘텐츠 조각이 반환되고 __스페인어__&#x200B;를 선택하면 `/content/dam/wknd/es`의 스페인어 콘텐츠 조각 등이 반환됩니다.
 
-![현지화된 React 예제 앱](./assets/localized-content/react-example.png)
+![지역화된 React 예제 앱](./assets/localized-content/react-example.png)
 
-### 만들기 `LocaleContext`{#locale-context}
+### `LocaleContext` 만들기{#locale-context}
 
-먼저 다음을 생성합니다. [React 컨텍스트](https://reactjs.org/docs/context.html) React 응용 프로그램의 구성 요소에서 로케일을 사용할 수 있도록 허용합니다.
+먼저 React 응용 프로그램의 구성 요소에서 로케일을 사용할 수 있도록 [React 컨텍스트](https://reactjs.org/docs/context.html)를 만듭니다.
 
 ```javascript
 // src/LocaleContext.js
@@ -81,9 +81,9 @@ const LocaleContext = React.createContext({
 export default LocaleContext;
 ```
 
-### 만들기 `LocaleSwitcher` 구성 요소 반응{#locale-switcher}
+### `LocaleSwitcher` React 구성 요소 만들기{#locale-switcher}
 
-그런 다음 로케일 전환기 React 구성 요소를 만듭니다. 이 구성 요소는 [LocaleContext의](#locale-context) 값을 사용자의 선택 항목으로 지정합니다.
+그런 다음 사용자의 선택 항목으로 [LocaleContext&#39;s](#locale-context) 값을 설정하는 로케일 전환기 React 구성 요소를 만듭니다.
 
 이 로케일 값은 GraphQL 쿼리를 구동하는 데 사용되며 선택한 로케일과 일치하는 콘텐츠만 반환하도록 합니다.
 
@@ -107,13 +107,13 @@ export default function LocaleSwitcher() {
 }
 ```
 
-### 를 사용하여 콘텐츠 쿼리 `_locale` 필터{#adventures}
+### `_locale` 필터를 사용하여 콘텐츠 쿼리{#adventures}
 
-모험 구성 요소는 모든 모험을 로케일별로 AEM에 쿼리하고 제목을 나열합니다. 이렇게 하려면 React 컨텍스트에 저장된 로케일 값을 `_locale` 필터.
+모험 구성 요소는 모든 모험을 로케일별로 AEM에 쿼리하고 제목을 나열합니다. 이 작업은 React 컨텍스트에 저장된 로케일 값을 `_locale` 필터를 사용하여 쿼리에 전달함으로써 수행됩니다.
 
 이 접근 방식은 애플리케이션의 다른 쿼리로 확장되어 모든 쿼리에 사용자의 로케일 선택에 의해 지정된 콘텐츠만 포함되도록 할 수 있습니다.
 
-AEM에 대한 쿼리는 사용자 지정 React 후크에서 수행됩니다 [getAdventuresByLocale, AEM GraphQL 쿼리 설명서에 자세히 설명됨](./aem-headless-sdk.md).
+AEM에 대한 쿼리는 사용자 지정 React 후크 [getAdventuresByLocale에서 수행됩니다. 자세한 내용은 AEM GraphQL 쿼리 설명서](./aem-headless-sdk.md)를 참조하십시오.
 
 ```javascript
 // src/Adventures.js
@@ -139,9 +139,9 @@ export default function Adventures() {
 }
 ```
 
-### 다음을 정의합니다. `App.js`{#app-js}
+### `App.js` 정의{#app-js}
 
-마지막으로, React 애플리케이션을 와 함께 래핑하여 모두 결합합니다. `LanguageContext.Provider` 로케일 값 설정 이렇게 하면 다른 React 구성 요소가 [로케일 전환기](#locale-switcher), 및 [모험](#adventures) 로케일 선택 상태를 공유합니다.
+마지막으로, 의 React 응용 프로그램을 `LanguageContext.Provider`(으)로 래핑하고 로케일 값을 설정하여 이 응용 프로그램을 모두 연결합니다. 이렇게 하면 다른 React 구성 요소인 [LocaleSwitcher](#locale-switcher) 및 [Adventures](#adventures)에서 로케일 선택 상태를 공유할 수 있습니다.
 
 ```javascript
 // src/App.js

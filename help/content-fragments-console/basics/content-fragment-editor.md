@@ -1,6 +1,6 @@
 ---
 title: 콘텐츠 조각 편집기
-description: AEM 콘텐츠 조각 편집기에 대한 간략한 소개입니다.
+description: AEM의 콘텐츠 조각 편집기에 대한 간략한 소개입니다.
 version: Cloud Service
 feature: Content Fragments
 topic: Content Management
@@ -21,6 +21,6 @@ ht-degree: 0%
 
 # 콘텐츠 조각 편집기
 
-AEM 콘텐츠 조각 편집기에 대한 간략한 소개입니다.
+AEM의 콘텐츠 조각 편집기에 대한 간략한 소개입니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424373/?learn=on)

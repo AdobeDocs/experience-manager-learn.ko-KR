@@ -1,6 +1,6 @@
 ---
-title: Cloud 5 Adobe 앱 빌더
-description: 이 에피소드는 Adobe App Builder를 사용하는 외부 통합 패턴을 분석합니다
+title: Cloud 5 Adobe App Builder
+description: 이 에피소드는 Adobe App Builder을 사용하는 외부 통합 패턴을 파헤칩니다
 version: Cloud Service
 role: Admin, Developer
 level: Intermediate
@@ -17,16 +17,16 @@ ht-degree: 0%
 
 ---
 
-# Cloud 5 Adobe 앱 빌더
+# Cloud 5 Adobe App Builder
 
-Amol Anand가 불참 하여 Adobe App Builder와의 통합 및 사용 위치와 시기에 대한 세부 사항을 제공합니다.
+Amol Anand가 방문하여 Adobe App Builder과의 통합 및 사용 위치와 시기에 대한 세부 사항을 제공합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342375?quality=12&learn=on)
 
 ## 이 비디오에서 다루는 콘텐츠
 
-+ 개요 [App Builder](https://developer.adobe.com/app-builder/docs/overview/)
++ [App Builder](https://developer.adobe.com/app-builder/docs/overview/) 개요
 + [Tutorials 및 코드 랩](https://developer.adobe.com/app-builder/docs/resources/)
 + [로깅 및 모니터링](https://adobedocs.github.io/adobeio-runtime/guides/logging_monitoring.html#retrieving-activations-for-blocking-successful-calls)
-+ 설정 [시스템 제한](https://adobedocs.github.io/adobeio-runtime/guides/system_settings.html)
++ [시스템 제한](https://adobedocs.github.io/adobeio-runtime/guides/system_settings.html) 설정 중
 + [로컬 개발](https://developer.adobe.com/app-builder/docs/resources/debugging/) 팁

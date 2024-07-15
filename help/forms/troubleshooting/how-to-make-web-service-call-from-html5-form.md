@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # HTML5 양식에서 웹 서비스 호출을 만드는 방법
 
-*이 비디오는 HTML5 양식에서 웹 서비스 호출을 수행하는 프로세스를 안내합니다.*
+*이 비디오는 HTML5 양식에서 웹 서비스 호출을 수행하는 과정을 안내합니다.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335505?quality=12&learn=on)

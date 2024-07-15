@@ -21,6 +21,6 @@ ht-degree: 0%
 
 ## PDF 파일 조합
 
-수정 `assemble2pdfs.ddx` 3개의 PDF 파일을 어셈블할 파일입니다.
+`assemble2pdfs.ddx` 파일을 수정하여 3개의 PDF 파일을 어셈블합니다.
 
 세 번째 pdf는 resources/pdffiles 폴더 아래에 배치됩니다.

@@ -27,6 +27,6 @@ ht-degree: 0%
 
 ## Node.js 설치
 
-Edge Delivery Services 개발을 시작하려면 다음을 수행하십시오. [Node.js](https://nodejs.org) 시스템에 를 설치해야 합니다. 를 실행하여 Node.js가 이미 설치되어 있는지 확인할 수 있습니다 `node -v` 명령줄에 현재 버전이 표시됩니다(존재하는 경우). 시스템에 Node.js가 설치되어 있지 않은 경우 아래 비디오에서 자세한 설치 지침을 참조하십시오.
+Edge Delivery Services 개발을 시작하려면 시스템에 [Node.js](https://nodejs.org)을(를) 설치해야 합니다. 명령줄에서 `node -v`을(를) 실행하여 Node.js가 이미 설치되어 있는지 확인할 수 있습니다. 이 경우 현재 버전이 표시됩니다. 시스템에 Node.js가 설치되어 있지 않은 경우 아래 비디오에서 자세한 설치 지침을 참조하십시오.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425710/?learn=on)

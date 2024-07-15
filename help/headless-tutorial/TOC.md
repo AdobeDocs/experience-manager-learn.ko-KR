@@ -61,7 +61,7 @@ ht-degree: 13%
       + [AEM 호스트](./graphql/deployment/configurations/aem-hosts.md)
       + [CORS](./graphql/deployment/configurations/cors.md)
       + [Dispatcher 필터](./graphql/deployment/configurations/dispatcher-filters.md)
-+ 방법 {#how-to}
++ {#how-to}하는 방법
    + [서식 있는 텍스트](./graphql/how-to/rich-text.md)
    + [이미지](./graphql/how-to/images.md)
    + [현지화된 콘텐츠](./graphql/how-to/localized-content.md)
@@ -70,7 +70,7 @@ ht-degree: 13%
    + [보호된 콘텐츠](./graphql/how-to/protected-content.md)
    + [AEM Headless SDK](./graphql/how-to/aem-headless-sdk.md)
    + [AEM 6.5에 GraphiQL 설치](./graphql/how-to/install-graphiql-aem-6-5.md)
-   + 예 {#example-apps}
+   + 예제 {#example-apps}
       + [반응](./graphql/example-apps/react-app.md)
       + [Next.js](./graphql/example-apps/next-js.md)
       + [웹 구성 요소](./graphql/example-apps/web-component.md)
@@ -78,7 +78,7 @@ ht-degree: 13%
       + [Android](./graphql/example-apps/android-app.md)
       + [Node.js](./graphql/example-apps/server-to-server-app.md)
 + SPA 편집기{#spa-editor}
-   + 반응{#react}
+   + React{#react}
       + [개요](./spa-editor/react/overview.md)
       + [1 - 프로젝트 만들기](./spa-editor/react/create-project.md)
       + [2 - SPA 통합](./spa-editor/react/integrate-spa.md)
@@ -101,20 +101,20 @@ ht-degree: 13%
       + [3 - 고정 구성 요소](./spa-editor/remote-spa/spa-fixed-component.md)
       + [4 - 컨테이너 구성 요소](./spa-editor/remote-spa/spa-container-component.md)
       + [5 - 동적 경로](./spa-editor/remote-spa/spa-dynamic-routes.md)
-   + 방법{#how-to}
+   + {#how-to}하는 방법
       + [AEM React Editable Components v2](./spa-editor/how-to/react-core-components-v2.md)
 + 토큰 기반 인증 {#authentication}
    + [개요](./authentication/overview.md)
    + [1 - 로컬 개발 액세스 토큰](./authentication/local-development-access-token.md)
    + [2 - 서비스 자격 증명](./authentication/service-credentials.md)
-+ 컨텐츠 서비스 {#content-services}
++ 콘텐츠 서비스 {#content-services}
    + [개요](./content-services/overview.md)
    + [1 - 튜토리얼 설정](./content-services/chapter-1.md)
    + [2 - 이벤트 콘텐츠 조각 모델 정의](./content-services/chapter-2.md)
    + [3 - 이벤트 콘텐츠 조각 작성](./content-services/chapter-3.md)
    + [4 - Content Services 템플릿 정의](./content-services/chapter-4.md)
    + [5 - Content Services 페이지 작성](./content-services/chapter-5.md)
-   + [6 - 게재를 위해 AEM 게시에서 컨텐츠 노출](./content-services/chapter-6.md)
+   + [6 - 전달을 위해 AEM Publish에서 컨텐츠 노출](./content-services/chapter-6.md)
    + [7 - 모바일 앱에서 AEM Content Services 사용](./content-services/chapter-7.md)
 + 코드 샘플 {#code-samples}
    + [React 앱 필터링](./graphql/code-samples/filtering-react-app.md)

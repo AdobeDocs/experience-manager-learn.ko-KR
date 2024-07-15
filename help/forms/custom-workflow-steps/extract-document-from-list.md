@@ -36,7 +36,7 @@ ht-degree: 0%
 ## 적응형 양식 구성
 
 * 적응형 양식의 제출 액션을 구성하여 AEM 워크플로우 트리거
-  ![submit-action](assets/store-attachments.png)
+  ![제출 액션](assets/store-attachments.png)
 
 ## 솔루션 테스트
 

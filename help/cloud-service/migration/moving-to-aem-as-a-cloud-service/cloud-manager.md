@@ -1,6 +1,6 @@
 ---
-title: AEM Cloud Manager를 as a Cloud Service으로 사용
-description: AEM용 Cloud Manager as a Cloud Service 및 Adobe 관리 서비스(AMS)의 AEM용 Cloud Manager와의 차이점에 대해 알아봅니다.
+title: AEM as a Cloud Service에서 Cloud Manager 사용
+description: AEM as a Cloud Service용 Cloud Manager에 대해 알아보고 AMS(Adobe 관리 서비스)의 AEM용 Cloud Manager과의 차이점에 대해 알아봅니다.
 version: Cloud Service
 feature: Cloud Manager
 topic: Migration, Upgrade
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 # Cloud Manager
 
-AEM용 Cloud Manager as a Cloud Service 및 Adobe 관리 서비스(AMS)의 AEM용 Cloud Manager와의 차이점에 대해 알아봅니다.
+AEM as a Cloud Service용 Cloud Manager에 대해 알아보고 AMS(Adobe 관리 서비스)의 AEM용 Cloud Manager과의 차이점에 대해 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336961?quality=12&learn=on)
 
@@ -48,7 +48,7 @@ AEM용 Cloud Manager as a Cloud Service 및 Adobe 관리 서비스(AMS)의 AEM�
         <td style="width:100%;margin-bottom:1rem;">
             <div style="font-size:1.25rem;font-weight:400;">Cloud Manager 실습</div>
             <p style="margin:1rem 0">
-                AIO CLI Cloud Manager 플러그인을 사용하여 Cloud Manager 파이프라인 트리거를 살펴봅니다.
+                AIO CLI Cloud Manager 플러그인을 사용하여 Cloud Manager 파이프라인을 트리거하는 방법을 살펴봅니다.
             </p>
             <a  rel="noreferrer"
                 target="_blank"

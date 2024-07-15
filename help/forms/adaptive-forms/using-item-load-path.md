@@ -30,6 +30,6 @@ crx에서 이러한 노드를 만들려면 아래에 설명된 단계를 수행�
 * assettypes라는 String 형식의 속성을 만들어야 합니다(요구 사항에 따라 이름을 지정할 수 있음). 속성이 다중 값인지 확인하십시오. 원하는 값을 입력하고 저장합니다.
   ![item-load-path](assets/item-load-path-crx.png)
 
-드롭다운 목록에서 이러한 값을 로드하려면 항목 로드 경로 속성에 다음 경로를 제공합니다  **/content/assets/assettypes**
+드롭다운 목록에서 이러한 값을 로드하려면 항목 로드 경로 속성 **/content/assets/assettypes**&#x200B;에 다음 경로를 제공하십시오.
 
-샘플 패키지는 다음과 같습니다. [여기에서 다운로드됨](assets/item-load-path-package.zip)
+샘플 패키지는 [여기에서 다운로드](assets/item-load-path-package.zip)할 수 있습니다.

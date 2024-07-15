@@ -27,7 +27,7 @@ ht-degree: 2%
 
 * 서블릿에 대한 POST 호출을 수행합니다. 이 서블릿은 데이터베이스에 데이터를 저장하고 양식 첨부 파일은 CRX 저장소에 저장합니다. 데이터베이스에 저장된 데이터는 GUID와 연결됩니다.
 
-* 적응형 양식을 저장된 데이터로 채우려면 GUID와 연관된 데이터를 검색하고 다음을 사용하여 적응형 양식을 채웁니다. **request.setAttribute** 메서드를 사용합니다.
+* 적응형 양식을 저장된 데이터로 채우려면 GUID와 연결된 데이터를 검색하고 **request.setAttribute** 메서드를 사용하여 적응형 양식을 채웁니다.
 
 ## 사용 사례 데모
 
@@ -45,4 +45,4 @@ ht-degree: 2%
 
 ## 다음 단계
 
-[데이터 소스 구성](./configure-data-source.md)
+[Data Source 구성](./configure-data-source.md)

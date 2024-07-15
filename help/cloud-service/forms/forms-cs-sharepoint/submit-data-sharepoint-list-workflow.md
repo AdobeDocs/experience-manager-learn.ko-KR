@@ -22,7 +22,7 @@ ht-degree: 1%
 
 이 문서에서는 AEM 워크플로에서 FDM 호출 단계를 사용하여 SharePoint 목록에 데이터를 삽입하는 데 필요한 단계에 대해 설명합니다.
 
-이 문서에서는 다음을 보유한 것으로 가정합니다. [SharePoint 목록에 데이터를 제출하도록 적응형 양식을 구성했습니다.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html?lang=en#connect-af-sharepoint-list)
+이 문서에서는 데이터를 SharePoint 목록에 제출하기 위해 [적응형 양식을 구성했다고 가정합니다.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html?lang=en#connect-af-sharepoint-list)
 
 
 ## SharePoint 목록 데이터 소스를 기반으로 양식 데이터 모델 만들기
@@ -96,7 +96,7 @@ ht-degree: 1%
 * 이전 단계에서 만든 양식 데이터 모델을 사용하여 적응형 양식을 만듭니다.
 * 데이터 소스의 일부 필드를 양식으로 끌어다 놓습니다.
 * 아래와 같이 양식의 제출 액션을 구성합니다
-* ![submit-action](assets/configure-af.png)
+* ![제출 액션](assets/configure-af.png)
 
 
 

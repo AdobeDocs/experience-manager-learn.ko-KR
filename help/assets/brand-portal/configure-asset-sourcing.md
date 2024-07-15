@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Brand Portal을 사용하여 에셋 소싱 구성
 
-*이 비디오에서는 Brand Portal을 사용하여 에셋 소싱을 구성하는 프로세스를 안내합니다.*
+*이 비디오에서는 Brand Portal을 사용하여 에셋 소싱을 구성하는 과정을 안내합니다.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335451?quality=12&learn=on)

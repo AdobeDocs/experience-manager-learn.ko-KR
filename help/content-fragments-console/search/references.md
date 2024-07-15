@@ -1,6 +1,6 @@
 ---
 title: 참조 - 콘텐츠 조각
-description: AEM 콘텐츠 조각 콘솔 및 편집기를 사용하여 참조된 콘텐츠를 쉽게 관리하는 방법을 알아봅니다.
+description: AEM의 콘텐츠 조각 콘솔 및 편집기를 사용하여 참조된 콘텐츠를 쉽게 관리하는 방법을 알아봅니다.
 version: Cloud Service
 feature: Content Fragments
 topic: Content Management
@@ -21,6 +21,6 @@ ht-degree: 2%
 
 # 참조
 
-AEM 콘텐츠 조각 콘솔 및 편집기를 사용하여 참조된 콘텐츠를 쉽게 이해하고 관리하는 방법에 대해 알아봅니다.
+AEM의 콘텐츠 조각 콘솔 및 편집기를 사용하여 참조된 콘텐츠를 쉽게 이해하고 관리하는 방법에 대해 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420950/?learn=on)

@@ -21,7 +21,7 @@ ht-degree: 0%
 
 일반적인 사용 사례는 양식 작성기에서 입력한 데이터가 포함된 pdf 문서를 표시하는 것입니다.
 
-이 사용 사례를 달성하기 위해 [Adobe PDF 포함 API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html).
+이 사용 사례를 수행하기 위해 [Adobe PDF Embed API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html)를 활용했습니다.
 
 통합을 완료하기 위해 다음 단계를 수행했습니다
 
@@ -31,7 +31,7 @@ POST 호출에서 반환된 pdf를 임베드하기 위해 사용자 지정 구�
 
 ## 클라이언트 라이브러리
 
-다음 코드는 `viewPDF` 확인란 버튼을 클릭합니다. 적응형 양식 데이터, 템플릿 이름을 끝점에 전달하여 PDF를 생성합니다. 그런 다음 생성된 pdf가 임베드 pdf JavaScript 라이브러리를 사용하여 양식 작성기에 표시됩니다.
+`viewPDF` 확인란 단추를 클릭하면 다음 코드가 실행됩니다. 적응형 양식 데이터, 템플릿 이름을 끝점에 전달하여 PDF를 생성합니다. 그런 다음 임베드 pdf JavaScript 라이브러리를 사용하여 생성된 pdf가 양식 작성기에 표시됩니다.
 
 ```javascript
 $(document).ready(function() {
@@ -93,23 +93,24 @@ $(document).ready(function() {
 
 ## xml 데이터에서 XSD 생성
 
-무료 온라인 도구를 사용하여 다음을 수행할 수 있습니다. [xsd 생성](https://www.freeformatter.com/xsd-generator.html) 이전 단계에서 생성된 xml 데이터에서 가져온 것입니다.
+무료 온라인 도구를 사용하여 이전 단계에서 생성된 xml 데이터에서 [XSD를 생성](https://www.freeformatter.com/xsd-generator.html)할 수 있습니다.
 
 ## 템플릿 업로드
 
-xdp 템플릿을에 업로드해야 합니다. [AEM Forms](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments) 만들기 버튼 사용
+만들기 단추를 사용하여 xdp 템플릿을 [AEM Forms](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)에 업로드해야 합니다.
 
 
 ## 적응형 양식 만들기
 
 이전 단계의 XSD를 기반으로 적응형 양식을 만듭니다.
-새 탭을 적응형 양식에 추가합니다. 이 탭에 확인란 구성 요소와 embed-pdf 구성 요소를 추가합니다. 확인란 이름을 viewPDF로 지정합니다.
+새 탭을 적응형 양식에 추가합니다. 이 탭에 확인란 구성 요소 및 embed-pdf 구성 요소 추가
+확인란 이름을 viewPDF로 지정해야 합니다.
 아래 스크린샷과 같이 embed-pdf 구성 요소를 구성합니다
 ![embed-pdf](assets/embed-pdf-configuration.png)
 
-**포함 PDF API 키** - PDF를 포함하는 데 사용할 수 있는 키입니다. 이 키는 localhost에서만 작동합니다. 다음을 만들 수 있습니다. [사용자 키](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) 다른 도메인과 연결합니다.
+**PDF API 키 포함** - PDF를 포함하는 데 사용할 수 있는 키입니다. 이 키는 localhost에서만 작동합니다. [자신의 키](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html)를 만들어 다른 도메인과 연결할 수 있습니다.
 
-**PDF를 반환하는 엔드포인트** - 데이터를 xdp 템플릿과 병합하고 pdf를 반환하는 사용자 지정 서블릿입니다.
+**PDF를 반환하는 끝점** - 데이터를 xdp 템플릿과 병합하고 PDF를 반환하는 사용자 지정 서블릿입니다.
 
 **템플릿 이름** - xdp 경로입니다. 일반적으로 formsanddocuments 폴더에 저장됩니다.
 
@@ -117,7 +118,7 @@ xdp 템플릿을에 업로드해야 합니다. [AEM Forms](http://localhost:4502
 
 ## 사용자 정의 서블릿 만들기
 
-데이터를 XDP 템플릿과 병합하고 pdf를 반환하는 사용자 지정 서블릿이 생성되었습니다. 이를 수행하기 위한 코드가 아래에 나와 있습니다. 사용자 정의 서블릿은 [embedpdf 번들](assets/embedpdf.core-1.0-SNAPSHOT.jar)
+데이터를 XDP 템플릿과 병합하고 pdf를 반환하는 사용자 지정 서블릿이 생성되었습니다. 이를 수행하기 위한 코드가 아래에 나와 있습니다. 사용자 지정 서블릿은 [embedpdf 번들](assets/embedpdf.core-1.0-SNAPSHOT.jar)의 일부입니다.
 
 ```java
 import java.io.ByteArrayInputStream;
@@ -227,9 +228,9 @@ public class StreamPDFToEmbed extends SlingAllMethodsServlet {
 
 로컬 서버에서 테스트하려면 다음 단계를 따르십시오.
 
-1. [임베드된 PDF 번들 다운로드 및 설치](assets/embedpdf.core-1.0-SNAPSHOT.jar).
+1. [embedpdf 번들을 다운로드하여 설치](assets/embedpdf.core-1.0-SNAPSHOT.jar)합니다.
 이 템플릿에는 데이터를 XDP 템플릿과 병합하고 pdf를 다시 스트리밍하는 서블릿이 있습니다.
-1. 다음을 사용하여 Adobe Granite CSRF 필터의 제외된 경로 섹션에 /bin/getPDFToEmbed 경로를 추가합니다. [AEM ConfigMgr](http://localhost:4502/system/console/configMgr). 프로덕션 환경에서는 [CSRF 보호 프레임워크](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/csrf-protection.html?lang=en)
+1. [AEM ConfigMgr](http://localhost:4502/system/console/configMgr)을 사용하여 Adobe Granite CSRF 필터의 제외된 경로 섹션에 /bin/getPDFToEmbed 경로를 추가합니다. 프로덕션 환경에서는 [CSRF 보호 프레임워크](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/csrf-protection.html?lang=en)를 사용하는 것이 좋습니다
 1. [클라이언트 라이브러리 및 사용자 지정 구성 요소 가져오기](assets/embed-pdf.zip)
 1. [적응형 양식 및 템플릿 가져오기](assets/embed-pdf-form-and-xdp.zip)
 1. [적응형 양식 미리 보기](http://localhost:4502/content/dam/formsanddocuments/from1040/jcr:content?wcmmode=disabled)

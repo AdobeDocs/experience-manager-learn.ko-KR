@@ -1,6 +1,6 @@
 ---
 title: AEM SDK란?
-description: AEM용 SDK를 as a Cloud Service으로 사용하고 구성합니다.
+description: AEM as a Cloud Service용 SDK를 사용하고 구성합니다.
 role: Developer
 level: Beginner
 type: Tutorial
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # AEM as a Cloud Service SDK 소개
 
-AEMas a Cloud Service 용 SDK 사용 및 구성.
+AEM as a Cloud Service용 SDK 사용 및 구성.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330552?quality=12&learn=on)

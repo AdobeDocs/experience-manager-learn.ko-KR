@@ -37,7 +37,7 @@ ht-degree: 0%
 
 * 기본 텍스트를 편집하려면 &quot;연필&quot; 아이콘을 선택합니다.
 
-* 기본 텍스트를 &quot;**당신의 은퇴 소득 전망&quot;**
+* 기본 텍스트를 &quot;**노후소득 전망&quot;**(으)로 바꾸기
 
 **RightPanel 대상 영역 구성**
 
@@ -49,23 +49,23 @@ ht-degree: 0%
 
 * 기본 텍스트를 편집하려면 &quot;연필&quot; 아이콘을 선택합니다.
 
-* 기본 텍스트를 &quot;**예상 월간 퇴직 소득&quot;**
+* 기본 텍스트를 &quot;**월간 예상 퇴직 소득&quot;**(으)로 바꾸기
 
 ## 퇴직 소득 Outlook 문서 단편 추가 {#add-retirement-income-outlook-document-fragment}
 
-* 에셋 아이콘을 클릭하고 필터를 적용하여 &quot;문서 조각&quot; 유형의 에셋을 표시합니다. RescapeIncomeOutlook 문서 조각을 왼쪽 패널 대상 영역으로 끌어다 놓습니다.
+* Assets 아이콘을 클릭하고 필터를 적용하여 &quot;문서 단편&quot; 유형의 자산을 표시합니다. RescapeIncomeOutlook 문서 조각을 왼쪽 패널 대상 영역으로 끌어다 놓습니다.
 
-* 다음을 참조할 수 있습니다. [이 페이지로](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/partseven.html) 컨텐츠 영역에 문서 단편 추가 시.
+* 콘텐츠 영역에 문서 조각을 추가하는 방법에 대해 [이 페이지를 참조](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/partseven.html)할 수 있습니다.
 
 ## 예상 월별 소득 차트 추가 {#adding-estimated-monthly-income-chart}
 
 * 오른쪽의 RightPanel 대상 영역을 클릭합니다. 차트 구성 요소를 삽입하려면 &quot;+&quot; 아이콘을 클릭하십시오. 우리는 월 소득 추정치를 표시하기 위해 세로 막대형 차트를 사용할 것이다. 새로 삽입된 차트 구성 요소를 가볍게 탭합니다. &quot;렌치&quot; 아이콘을 선택하여 구성 등록 정보 시트를 엽니다.아래 스크린샷과 같이 다음 등록 정보를 사용하여 차트를 구성합니다.
 
-**AEM Forms 6.4 - 예상 월간 소득 열 차트 구성**
+**AEM Forms 6.4 - 예상 월별 수입 열 차트 구성**
 
 ![form64](assets/estimatedmonthlyincomechart.png)
 
-**AEM Forms 6.5 - 예상 월간 소득 열 차트 구성**
+**AEM Forms 6.5 - 예상 월별 수입 열 차트 구성**
 
 ![forms65](assets/estimatedmonthlyincomechart65.PNG)
 

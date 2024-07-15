@@ -8,7 +8,8 @@ version: Cloud Service
 feature: Document Services
 topic: Development
 jira: KT-15508
-source-git-commit: 97fbe450823c6122a25dc46c851296094894683e
+exl-id: 40617082-4d23-4c91-a016-2d947187052b
+source-git-commit: 1977e5103de72a0db5f446eba539d4ae5b810e74
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 0%
@@ -17,8 +18,8 @@ ht-degree: 0%
 
 # DocAssurance API 사용
 
-다음 [DocAssurance 서비스](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/docassurance/#tag/DocAssurance) 서명, 인증, 서명 필드 추가, 암호화, 암호 해독 등과 같은 PDF 문서를 사용하여 다양한 디지털 서명 또는 암호화 작업을 수행할 수 있는 기능을 제공합니다.
-이 문서에서는 API 사용을 시작하기 위한 Java 코드 조각을 제공합니다. 코드 조각은 액세스 토큰을 사용합니다. [이 문서에서는 액세스 토큰을 생성하는 데 필요한 단계에 대해 설명합니다](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/doc-gen-formscs/introduction)
+[DocAssurance 서비스](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/docassurance/#tag/DocAssurance)에서는 서명, 인증, 서명 필드 추가, 암호화, 암호 해독 등과 같은 PDF 문서를 사용하여 다양한 디지털 서명 또는 암호화 작업을 수행할 수 있습니다.
+이 문서에서는 API 사용을 시작하기 위한 Java 코드 조각을 제공합니다. 코드 조각은 액세스 토큰을 사용합니다. [이 문서에서는 액세스 토큰을 생성하는 데 필요한 단계를 설명합니다](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/doc-gen-formscs/introduction)
 
 
 <span class="preview">이 기능은 얼리어답터 프로그램에서 사용할 수 있습니다. 공식 이메일 ID에서 aem-forms-ea@adobe.com에 작성하여 얼리어답터 프로그램에 참여하고 이 기능에 대한 액세스 권한을 요청할 수 있습니다</span>
@@ -27,7 +28,7 @@ ht-degree: 0%
 ## 전제 조건
 
 * AEM Forms Cloud Service 경험
-* 사용 경험 [Apache HTTP 구성 요소](https://hc.apache.org/httpcomponents-client-4.5.x/)
+* [Apache HTTP 구성 요소](https://hc.apache.org/httpcomponents-client-4.5.x/) 사용 경험
 * AEM Forms Cloud Service 환경에 액세스
 
 ## Inspect 문서
@@ -157,4 +158,4 @@ if (response.getStatusLine().getStatusCode() == 200) {
 
 ### Postman 컬렉션
 
-API의 Postman 컬렉션은 다음과 같을 수 있습니다 [테스트 목적으로 여기에서 다운로드됨](assets/DocAssuranceAPI.postman_collection.json). 기본 인증 또는 전달자 토큰 유형의 인증을 사용하여 API를 호출할 수 있습니다.
+API의 Postman 컬렉션은 [테스트 목적으로 여기에서 다운로드](assets/DocAssuranceAPI.postman_collection.json)할 수 있습니다. 기본 인증 또는 전달자 토큰 유형의 인증을 사용하여 API를 호출할 수 있습니다.

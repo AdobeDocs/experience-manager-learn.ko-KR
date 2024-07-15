@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # 클라이언트 라이브러리 만들기
 
-만들기 [클라이언트 라이브러리](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html) 메서드를 호출하는 코드가 포함됩니다 `doAjaxSubmitWithFileAttachment` / `guideBridge` CSS 클래스로 식별된 버튼의 클릭 이벤트에 대한 API **저장 단추**.  적응형 양식 데이터를 전달하고, `fileMap`및 `mobileNumber` 을(를) 수신 대기하는 엔드포인트로 `**/bin/storeafdatawithattachments`
+CSS 클래스 **저장 단추**&#x200B;에 의해 식별된 단추의 클릭 이벤트에서 `guideBridge` API의 `doAjaxSubmitWithFileAttachment` 메서드를 호출하는 코드를 포함하는 [client lib](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html)을(를) 만듭니다.  `**/bin/storeafdatawithattachments`에서 수신 대기하는 끝점에 적응형 양식 데이터 `fileMap` 및 `mobileNumber`을(를) 전달합니다.
 
 양식 데이터가 저장되면 고유한 애플리케이션 ID가 생성되고 대화 상자에서 사용자에게 표시됩니다. 대화 상자를 닫으면 사용자가 고유한 애플리케이션 ID를 사용하여 저장된 적응형 양식을 검색할 수 있는 양식으로 이동됩니다.
 
@@ -68,9 +68,9 @@ $(document).ready(function () {
 ```
 
 >[!NOTE]
-> 다음을 사용했습니다. [bootbox JavaScript 라이브러리](https://bootboxjs.com/examples.html) 대화상자를 표시하려면
+> [bootbox JavaScript 라이브러리](https://bootboxjs.com/examples.html)를 사용하여 대화 상자를 표시합니다
 
-이 샘플에 사용되는 클라이언트 라이브러리는 다음과 같을 수 있습니다. [여기에서 다운로드했습니다.](assets/store-af-with-attachments-client-lib.zip)
+이 샘플에 사용된 클라이언트 라이브러리는 [여기에서 다운로드할 수 있습니다.](assets/store-af-with-attachments-client-lib.zip)
 
 ## 다음 단계
 

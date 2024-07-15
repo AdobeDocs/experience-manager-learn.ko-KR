@@ -25,12 +25,12 @@ ht-degree: 1%
 
 ![CRXDE Lite](./assets/other-tools/crxde-lite.png)
 
-CRXDE Lite은 AEM 데이터 저장소인 JCR과 상호 작용하기 위한 웹 기반 인터페이스입니다. CRXDE Lite은 노드, 속성, 속성 값 및 권한을 포함하여 JCR을 완전히 볼 수 있도록 합니다.
+CRXDE Lite은 AEM의 데이터 저장소인 JCR과 상호 작용하기 위한 웹 기반 인터페이스입니다. CRXDE Lite은 노드, 속성, 속성 값 및 권한을 포함하여 JCR을 완전히 볼 수 있도록 합니다.
 
 CRXDE Lite 위치:
 
 + 도구 > 일반 > CRXDE Lite
-+ 또는에서 바로 [http://localhost:4502/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp)
++ 또는 [http://localhost:4502/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp)에서 직접
 
 ### 콘텐츠 디버깅
 
@@ -44,7 +44,7 @@ CRXDE Lite은 JCR에 직접 액세스할 수 있습니다. CRXDE Lite을 통해 
 
 ![CRXDE Lite - 콘텐츠 디버깅](./assets/other-tools/crxde-lite__debugging-content.png)
 
-CRXDE Lite을 통해 AEM SDK에 직접 적용한 변경 사항은 추적하고 제어하는 것이 어려울 수 있습니다. 적절하게, CRXDE Lite을 통해 변경한 사항이 AEM 프로젝트의 변경 가능한 콘텐츠 패키지(`ui.content`) Git에 커밋됩니다. 모든 애플리케이션 콘텐츠 변경 사항은 CRXDE Lite을 통해 AEM SDK에 직접 변경하는 것이 아니라 코드 기반에서 시작하여 배포를 통해 AEM SDK로 유입되는 것이 가장 좋습니다.
+CRXDE Lite을 통해 AEM SDK에 직접 적용한 변경 사항은 추적하고 제어하는 것이 어려울 수 있습니다. 적절히, CRXDE Lite을 통해 변경한 사항이 AEM 프로젝트의 변경 가능한 콘텐츠 패키지(`ui.content`)로 돌아가서 Git에 커밋되는지 확인합니다. 모든 애플리케이션 콘텐츠 변경 사항은 CRXDE Lite을 통해 AEM SDK에 직접 변경하는 것이 아니라 코드 기반에서 시작하여 배포를 통해 AEM SDK로 유입되는 것이 가장 좋습니다.
 
 ### 액세스 제어 디버깅
 
@@ -62,11 +62,11 @@ CRXDE Lite의 Test Access Control 콘솔에 액세스하려면 다음으로 이�
 
 결과는 아래에 표시됩니다.
 
-+ __경로__ 평가된 경로를 반복합니다
-+ __사용자__ 경로가 평가된 사용자 또는 그룹을 반복합니다
-+ __사용자__ 선택된 주도자가 속한 주도자를 모두 나열합니다.
++ __경로__&#x200B;이(가) 평가된 경로를 반복합니다
++ __사용자__&#x200B;이(가) 경로가 평가된 사용자 또는 그룹을 반복합니다.
++ __주체__&#x200B;는 선택한 주체가 속한 모든 주체를 나열합니다.
    + 상속을 통해 권한을 제공할 수 있는 전이적 그룹 멤버십을 이해하는 데 유용합니다
-+ __경로의 권한__ 평가된 경로에 대해 선택한 주체가 가진 모든 JCR 권한을 나열합니다.
++ __경로의 권한__&#x200B;은(는) 선택한 주체가 평가된 경로에서 갖는 모든 JCR 권한을 나열합니다.
 
 ## 쿼리 설명
 
@@ -83,7 +83,7 @@ AEM SDK의 로컬 빠른 시작에서 AEM이 쿼리를 해석하고 실행하는
 
 ![QueryBuilder 디버거](./assets/other-tools/query-debugger.png)
 
-QueryBuilder 디버거는 AEM을 사용하여 검색 쿼리를 디버깅하고 이해하는 데 도움이 되는 웹 기반 도구입니다 [QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html) 구문.
+QueryBuilder 디버거는 AEM의 [QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html) 구문을 사용하여 검색 쿼리를 디버깅하고 이해하는 데 도움이 되는 웹 기반 도구입니다.
 
 QueryBuilder 디버거는 다음 위치에 있습니다.
 

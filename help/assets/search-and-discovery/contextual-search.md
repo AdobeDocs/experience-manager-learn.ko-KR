@@ -26,8 +26,8 @@ Adobe Experience Manager Assets에서 컨텍스트 검색 을 사용하여 자�
 
 ## 상황별 검색 전환
 
-모든 사용자에 대한 컨텍스트 검색을 활성화하거나 비활성화하려면 AEM 관리자는 다음으로 이동하여 수행할 수 있습니다. __일반 설정__ 및 전환 __상황별 검색__ 원하는 설정으로 전환합니다.
+모든 사용자에 대한 상황별 검색을 활성화하거나 비활성화하려면 AEM 관리자가 __일반 설정__(으)로 이동한 후 __상황별 검색__ 스위치를 원하는 설정으로 전환하면 됩니다.
 
 기본적으로 모든 사용자에 대해 컨텍스트 검색이 활성화됩니다.
 
-![상황별 검색 활성화](./assets/contextual-search/enable-contextual-search.png)
+![상황별 검색 사용](./assets/contextual-search/enable-contextual-search.png)

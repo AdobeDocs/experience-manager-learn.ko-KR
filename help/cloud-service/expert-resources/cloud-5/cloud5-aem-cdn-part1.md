@@ -1,6 +1,6 @@
 ---
 title: Cloud 5 AEM CDN 1부
-description: AEM의 as a Cloud Service CDN에 대해 자세히 알아보는 1부 입니다.
+description: AEM as a Cloud Service의 CDN에 대해 자세히 알아보는 1부 입니다.
 version: Cloud Service
 feature: Developer Tools
 role: Admin, Developer

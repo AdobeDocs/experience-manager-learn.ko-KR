@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> 아래 비디오는 AEM 6.3에 녹화되었습니다. AEM 6.4+에는 번역 규칙 XML 파일을 저장하는 새로운 저장소 구조가 도입되었습니다. AEM 6.4+에서 번역 구성 UI를 사용하는 경우 규칙이 위치에 저장됩니다 `/conf/global/settings/translation/rules/translation_rules.xml`. 다음을 참조하십시오 [번역할 콘텐츠 식별](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-rules.html) 을 참조하십시오.
+> 아래 비디오는 AEM 6.3에 녹화되었습니다. AEM 6.4+에는 번역 규칙 XML 파일을 저장하는 새로운 저장소 구조가 도입되었습니다. AEM 6.4+에서 번역 구성 UI를 사용하는 경우 규칙이 `/conf/global/settings/translation/rules/translation_rules.xml` 위치에 저장됩니다. 자세한 내용은 [번역할 콘텐츠 식별](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-rules.html)을 참조하십시오.
 
 >[!VIDEO](https://video.tv.adobe.com/v/18135?quality=12&learn=on)
 
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 ## AEM 6.3 이전 {#prior-to-aem}
 
-이전 AEM 버전의 번역 규칙은 번역 워크플로 아래에 있는 XML 파일을 편집하여 수동으로 업데이트되었습니다. `/etc/workflow/models/translation/translation_rules.xml`.
+이전 AEM 버전의 번역 규칙은 번역 워크플로 `/etc/workflow/models/translation/translation_rules.xml` 아래에 있는 XML 파일을 편집하여 수동으로 업데이트되었습니다.
 
 ## 추가 리소스 {#additional-resources}
 

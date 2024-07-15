@@ -34,7 +34,8 @@ ht-degree: 7%
 다음 스크린샷은 정의된 azure_key 및 azure_connection_string 환경 변수를 보여 줍니다.
 ![environment_variables](assets/environment-variables.png)
 
-그런 다음 적절한 환경에서 사용할 구성 파일에 이러한 환경 변수를 지정할 수 있습니다. 예를 들어 모든 작성자 인스턴스가 이러한 환경 변수를 사용하도록 하려면 아래에 지정된 대로 config.author 폴더에 구성 파일을 정의합니다
+그런 다음 구성 파일에 이러한 환경 변수를 지정하여 적절한 환경에서 사용할 수 있습니다
+예를 들어 모든 작성자 인스턴스가 이러한 환경 변수를 사용하도록 하려면 아래에 지정된 대로 config.author 폴더에 구성 파일을 정의합니다
 
 ## 구성 파일 만들기
 
@@ -46,7 +47,7 @@ org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider-integr
 
 ![config.author](assets/config-author.png)
 
-다음 텍스트를 이전 단계에서 만든 파일에 복사합니다. 이 파일의 코드는 accountName 및 accountKey 속성 값을 환경 변수로 재정의합니다. **azure_connection_string** 및 **azure_key**.
+다음 텍스트를 이전 단계에서 만든 파일에 복사합니다. 이 파일의 코드는 **azure_connection_string** 및 **azure_key** 환경 변수로 accountName 및 accountKey 속성 값을 재정의합니다.
 
 ```json
 {

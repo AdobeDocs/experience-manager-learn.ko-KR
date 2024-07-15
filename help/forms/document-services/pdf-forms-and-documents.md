@@ -28,15 +28,15 @@ PDF(Portable Document Format)은 실제로 파일 형식 제품군이며, 이 �
 
 ![Pdfa](assets/pdfa-file-in-acrobat.png)
 
-샘플 파일은 다음과 같습니다. [여기에서 다운로드됨](assets/pdf-file-types.zip)
+샘플 파일은 [여기에서 다운로드됨](assets/pdf-file-types.zip)
 
 ## XML Forms 아키텍처 PDF(XFA PDF)
 
-Adobe은 XFA PDF 양식이라는 용어를 사용하여 AEM Forms Designer로 만든 대화형 및 동적 Forms을 나타냅니다. Designer로 만든 Forms 및 파일은 Adobe의 XML Forms 아키텍처(XFA)를 기반으로 합니다. 여러 가지 방식에서 XFA PDF 파일 형식은 기존 PDF 파일보다 HTML 파일에 더 가깝습니다. 예를 들어 다음 코드는 XFA PDF 파일에서 간단한 텍스트 개체의 모습을 보여 줍니다.
+Adobe은 XFA PDF 양식이라는 용어를 사용하여 AEM Forms Designer으로 만든 대화형 및 동적 Forms을 나타냅니다. Designer으로 만드는 Forms 및 파일은 Adobe의 XML Forms 아키텍처(XFA)를 기반으로 합니다. 여러 가지 방식에서 XFA PDF 파일 형식은 기존 PDF 파일보다 HTML 파일에 더 가깝습니다. 예를 들어 다음 코드는 XFA PDF 파일에서 간단한 텍스트 개체의 모습을 보여 줍니다.
 
 ![텍스트 필드](assets/text-field.JPG)
 
-XFA Forms은 XML을 기반으로 합니다. 이렇게 구조가 잘 되고 유연한 형식을 사용하면 AEM Forms 서버에서 디자이너 파일을 기존 PDF, PDF/A 및 HTML을 비롯한 다양한 형식으로 변환할 수 있습니다. 레이아웃 편집기의 XML 소스 탭을 선택하여 Designer에서 Forms의 전체 XML 구조를 확인할 수 있습니다. AEM Forms Designer에서 정적 및 동적 XFA Forms을 모두 만들 수 있습니다.
+XFA Forms은 XML을 기반으로 합니다. 이렇게 잘 구조화되고 유연한 형식을 통해 AEM Forms 서버는 Designer 파일을 기존 PDF, PDF/A 및 HTML을 비롯한 다양한 형식으로 변환할 수 있습니다. 레이아웃 편집기의 XML Source 탭을 선택하면 Designer에서 Forms의 전체 XML 구조를 확인할 수 있습니다. AEM Forms Designer에서 정적 및 동적 XFA Forms을 모두 만들 수 있습니다.
 
 ## 정적 PDF
 
@@ -50,7 +50,7 @@ XFA Forms은 XML을 기반으로 합니다. 이렇게 구조가 잘 되고 유�
 
 >[!NOTE]
 >
-> XDP를 Adobe 정적 PDF 양식으로 저장하여 AEM Forms Designer를 사용하여 정적 PDF을 만들 수 있습니다
+> XDP를 Adobe 정적 PDF 양식으로 저장하여 AEM Forms Designer을 사용하여 정적 PDF을 만들 수 있습니다
 
 
 
@@ -61,11 +61,11 @@ XFA Forms은 XML을 기반으로 합니다. 이렇게 구조가 잘 되고 유�
 * 동적 양식은 양식의 레이아웃과 페이지 매김을 변경하는 클라이언트측 스크립트를 지원합니다. 예를 들어 Purchase Order.xdp는 동적 양식으로 저장하는 경우 무제한 양의 데이터를 수용하도록 확장되고 페이지가 지정됩니다
 * 동적 양식은 런타임 시 양식의 모든 속성을 지원하는 반면, 정적 양식은 하위 집합만 지원합니다
 
-* [정적 및 동적 pdf 양식의 차이점을 이해하려면 이 문서 를 참조하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents.html#:~:text=Dynamic%20forms%20support%20all%20the,forms%20support%20only%20a%20subset)
+* [정적 및 동적 PDF 양식의 차이점을 이해하려면 이 문서를 참조하세요](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents.html#:~:text=Dynamic%20forms%20support%20all%20the,forms%20support%20only%20a%20subset)
 
 >[!NOTE]
 >
-> XDP를 Adobe 동적 XML 양식으로 저장하여 AEM Forms Designer를 사용하여 동적 PDF를 만들 수 있습니다
+> XDP를 Adobe 동적 XML 양식으로 저장하여 AEM Forms Designer을 사용하여 동적 PDF를 만들 수 있습니다
 
 >[!NOTE]
 >
@@ -86,7 +86,8 @@ XFA Forms은 XML을 기반으로 합니다. 이렇게 구조가 잘 되고 유�
 
 ### 아크로폼
 
-Acroforms는 Adobe의 이전 대화형 형식 기술이며 Acrobat 버전 3으로 거슬러 올라갑니다. Adobe은 [Acrobat Forms API 참조](assets/FormsAPIReference.pdf)2003년 5월자로 결정되어 이 기술에 대한 기술적인 세부 정보를 제공합니다. Acroforms는 다음 항목의 조합입니다.
+Acroforms는 Adobe의 이전 대화형 형식 기술이며 Acrobat 버전 3으로 거슬러 올라갑니다. Adobe은 이 기술에 대한 기술 정보를 제공하기 위해 2003년 5월 날짜의 [Acrobat Forms API 참조](assets/FormsAPIReference.pdf)를 제공합니다. 아크로폼은
+다음 항목:
 
 * 양식의 정적 레이아웃 및 그래픽을 정의하는 기존 PDF.
 * Adobe Acrobat 프로그램의 양식 도구로 맨 위에 볼트로 고정되는 대화형 양식 필드. 이러한 양식 도구는 AEM Forms Designer에서 사용할 수 있는 기능의 작은 하위 집합입니다.
@@ -99,7 +100,7 @@ PDF과 마찬가지로 PDF/A는 ISO 표준 사양입니다. AIIM(Association for
 
 * 모든 콘텐츠는 파일에 포함되어야 하며 하이퍼링크, 글꼴 또는 소프트웨어 프로그램과 같은 외부 소스에 대한 종속성이 없을 수 있습니다.
 * 모든 글꼴은 내장되어야 하며, 전자 문서에 대한 무제한 사용 라이선스가 있는 글꼴이어야 합니다.
-* JavaScript가 허용되지 않음
+* JavaScript이 허용되지 않음
 * 투명도가 허용되지 않음
 * 암호화가 허용되지 않음
 * 오디오 및 비디오 콘텐츠는 허용되지 않습니다.

@@ -29,7 +29,7 @@ AEM Headless SDK는 다양한 플랫폼에서 사용할 수 있습니다.
 
 ## 지속 GraphQL 쿼리
 
-지속 쿼리를 사용하여 GraphQL을 사용하여 AEM 쿼리 (과 반대) [클라이언트 정의 GraphQL 쿼리](#graphl-queries))를 사용하면 개발자가 AEM에서 쿼리를 지속한 다음(결과는 아님) 이름별로 쿼리를 실행하도록 요청할 수 있습니다. 지속 쿼리는 SQL 데이터베이스의 저장 프로시저 개념과 유사합니다.
+[클라이언트 정의 GraphQL 쿼리](#graphl-queries)가 아닌 지속 쿼리를 사용하여 GraphQL을 사용하여 AEM을 쿼리하면 개발자는 AEM에서 쿼리를 지속할 수 있지만 결과를 유지할 수는 없습니다. 그런 다음 이름으로 쿼리를 실행하도록 요청할 수 있습니다. 지속 쿼리는 SQL 데이터베이스의 저장 프로시저 개념과 유사합니다.
 
 지속 쿼리는 CDN 및 AEM Dispatcher 계층에서 캐시 가능한 HTTP GET을 사용하여 실행되므로 클라이언트 정의 GraphQL 쿼리보다 성능이 향상됩니다. 또한 지속 쿼리는 실제로 개발자가 각 콘텐츠 조각 모델의 세부 정보를 이해해야 하는 필요성을 분리하고 API를 정의합니다.
 
@@ -39,15 +39,15 @@ AEM Headless SDK는 다양한 플랫폼에서 사용할 수 있습니다.
 
 +++ JavaScript 예
 
-설치 [@adobe/aem-headless-client-js](https://github.com/adobe/aem-headless-client-js) 를 실행하여 `npm install` Node.js 프로젝트의 루트에 있는 명령입니다.
+Node.js 프로젝트의 루트에서 `npm install` 명령을 실행하여 [@adobe/aem-headless-client-js](https://github.com/adobe/aem-headless-client-js)를 설치하십시오.
 
 ```
 $ npm i @adobe/aem-headless-client-js
 ```
 
-이 코드 예는 다음을 사용하여 AEM을 쿼리하는 방법을 보여 줍니다. [@adobe/aem-headless-client-js](https://github.com/adobe/aem-headless-client-js) 를 사용하는 npm 모듈 `async/await` 구문. JavaScript용 AEM Headless SDK는 [Promise 구문](https://github.com/adobe/aem-headless-client-js#use-aemheadless-client).
+이 코드 예제에서는 `async/await` 구문을 사용하여 [@adobe/aem-headless-client-js](https://github.com/adobe/aem-headless-client-js) npm 모듈을 사용하여 AEM을 쿼리하는 방법을 보여 줍니다. JavaScript용 AEM Headless SDK는 [약속 구문](https://github.com/adobe/aem-headless-client-js#use-aemheadless-client)도 지원합니다.
 
-이 코드는 라는 이름의 지속 쿼리를 가정합니다. `wknd/adventureNames` 이(가) AEM Author에서 만들어지고 AEM Publish에 게시되었습니다.
+이 코드는 이름이 `wknd/adventureNames`인 지속 쿼리가 AEM 작성자에 만들어져 AEM Publish에 게시되었다고 가정합니다.
 
 ```javascript
 import AEMHeadless from '@adobe/aem-headless-client-js';
@@ -90,20 +90,20 @@ let { data, errors } = executePersistedQuery('wknd-shared/adventures-by-slug', {
 
 +++ React useEffect(...) 예
 
-설치 [@adobe/aem-headless-client-js](https://github.com/adobe/aem-headless-client-js) 를 실행하여 `npm install` react 프로젝트의 루트에서 명령.
+React 프로젝트의 루트에서 `npm install` 명령을 실행하여 [@adobe/aem-headless-client-js](https://github.com/adobe/aem-headless-client-js)를 설치하십시오.
 
 ```
 $ npm i @adobe/aem-headless-client-js
 ```
 
-이 코드 예는 를 사용하는 방법을 보여 줍니다. [React useEffect(...) 후크](https://reactjs.org/docs/hooks-effect.html) AEM GraphQL에 대한 비동기 호출을 실행합니다.
+이 코드 예제에서는 [React useEffect(...)를 사용하는 방법을 보여 줍니다. ](https://reactjs.org/docs/hooks-effect.html)을(를) 후크하여 AEM GraphQL에 대한 비동기 호출을 실행합니다.
 
-사용 `useEffect` 다음과 같은 이유로 React에서 비동기 GraphQL 호출을 수행하는 것이 유용합니다.
+`useEffect`을(를) 사용하여 React에서 비동기 GraphQL 호출을 만드는 것은 다음과 같은 이유로 유용합니다.
 
 1. AEM에 대한 비동기 호출에 대한 동기 래퍼를 제공합니다.
 1. AEM을 불필요하게 요청하는 것을 줄입니다.
 
-이 코드는 라는 이름의 지속 쿼리를 가정합니다. `wknd-shared/adventure-by-slug` 은(는) AEM Author에서 만들어지고 GraphiQL을 사용하여 AEM Publish에 게시되었습니다.
+이 코드는 이름이 `wknd-shared/adventure-by-slug`인 지속 쿼리가 AEM 작성자에 만들어지고 GraphiQL을 사용하여 AEM Publish에 게시되었다고 가정합니다.
 
 ```javascript
 import AEMHeadless from '@adobe/aem-headless-client-js';
@@ -186,7 +186,7 @@ export function useAdventureBySlug(slug) {
 }
 ```
 
-사용자 지정 React 호출 `useEffect` React 구성 요소의 다른 위치에서 후크합니다.
+React 구성 요소의 다른 위치에서 사용자 지정 React `useEffect` 후크를 호출합니다.
 
 ```javascript
 import useAdventureBySlug from '...';
@@ -194,7 +194,7 @@ import useAdventureBySlug from '...';
 let { data, errors } = useAdventureBySlug('bali-surf-camp');
 ```
 
-신규 `useEffect` 후크는 React 앱이 사용하는 각 지속 쿼리에 대해 만들 수 있습니다.
+React 앱이 사용하는 각 지속 쿼리에 대해 새 `useEffect` 후크를 만들 수 있습니다.
 
 +++
 
@@ -202,11 +202,11 @@ let { data, errors } = useAdventureBySlug('bali-surf-camp');
 
 ## GraphQL 쿼리
 
-AEM은 클라이언트 정의 GraphQL 쿼리를 지원하지만 사용하는 것은 AEM 모범 사례입니다 [지속 GraphQL 쿼리](#persisted-graphql-queries).
+AEM은 클라이언트 정의 GraphQL 쿼리를 지원하지만 [지속 GraphQL 쿼리](#persisted-graphql-queries)를 사용하는 것이 AEM 모범 사례입니다.
 
 ## Webpack 5+
 
-AEM Headless JS SDK는에 대한 종속성이 있습니다. `util` 기본적으로 Webpack 5+에 포함되지 않습니다. Webpack 5+를 사용 중인데 다음 오류가 표시됩니다.
+AEM Headless JS SDK에 기본적으로 Webpack 5+에 포함되지 않은 `util`에 대한 종속성이 있습니다. Webpack 5+를 사용 중인데 다음 오류가 표시됩니다.
 
 ```
 Compiled with problems:
@@ -223,7 +223,7 @@ If you don't want to include a polyfill, you can use an empty module like this:
     resolve.fallback: { "util": false }
 ```
 
-다음 추가 `devDependencies` (으)로 `package.json` 파일:
+`package.json` 파일에 다음 `devDependencies`을(를) 추가합니다.
 
 ```json
   "devDependencies": {
@@ -237,4 +237,4 @@ If you don't want to include a polyfill, you can use an empty module like this:
   },
 ```
 
-그런 다음 실행 `npm install` 종속성을 설치합니다.
+`npm install`을(를) 실행하여 종속성을 설치하십시오.

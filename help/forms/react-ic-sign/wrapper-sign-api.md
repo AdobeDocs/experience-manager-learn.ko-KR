@@ -21,15 +21,15 @@ ht-degree: 0%
 
 사용자 지정 AEM 번들은 웹 양식을 작성하여 최종 사용자에게 반환하기 위해 개발되었습니다
 
-* [임시 문서 만들기](https://secure.na1.echosign.com/public/docs/restapi/v6#!/transientDocuments/createTransientDocument). 이 호출을 통해 업로드된 문서는 업로드 후 7일 동안만 사용할 수 있으므로 임시 문서라고 합니다. 반환된 임시 문서 ID는 업로드된 파일을 참조해야 하는 API 호출에서 사용할 수 있습니다. 임시 문서 요청은 파일 이름, MIME 유형 및 파일 스트림의 세 부분으로 구성된 다중 부분 요청입니다. 이 요청에서는 한 번에 하나의 파일만 업로드할 수 있습니다.
-* [웹 양식 만들기](https://secure.na1.echosign.com/public/docs/restapi/v6#!/widgets/createWidget).새 웹 양식을 만드는 데 사용되는 기본 끝점입니다. 웹 양식을 즉시 호스팅하기 위해 활성 상태로 웹 양식을 만들었습니다.
-* [웹 양식 검색](https://secure.na1.echosign.com/public/docs/restapi/v6#!/widgets/getWidgets).사용자의 웹 양식을 검색합니다. 그런 다음 이 웹 양식이 문서 서명을 위해 호출 애플리케이션에 표시됩니다.
+* [임시 문서를 만듭니다](https://secure.na1.echosign.com/public/docs/restapi/v6#!/transientDocuments/createTransientDocument). 이 호출을 통해 업로드된 문서는 업로드 후 7일 동안만 사용할 수 있으므로 임시 문서라고 합니다. 반환된 임시 문서 ID는 업로드된 파일을 참조해야 하는 API 호출에서 사용할 수 있습니다. 임시 문서 요청은 파일 이름, MIME 유형 및 파일 스트림의 세 부분으로 구성된 다중 부분 요청입니다. 이 요청에서는 한 번에 하나의 파일만 업로드할 수 있습니다.
+* [웹 양식을 만듭니다](https://secure.na1.echosign.com/public/docs/restapi/v6#!/widgets/createWidget).새 웹 양식을 만드는 데 사용되는 기본 끝점입니다. 웹 양식을 즉시 호스팅하기 위해 활성 상태로 웹 양식을 만들었습니다.
+* [웹 양식을 검색합니다](https://secure.na1.echosign.com/public/docs/restapi/v6#!/widgets/getWidgets).사용자의 웹 양식을 검색합니다. 그런 다음 이 웹 양식이 문서 서명을 위해 호출 애플리케이션에 표시됩니다.
 
 ## Acrobat Sign OSGi 구성 만들기
 
 Acrobat Sign REST API에는 통합 키 및 통합 키와 연결된 이메일이 필요합니다. 이 두 값은 아래와 같이 OSGi 구성 속성으로 제공됩니다
 
-![서명 구성](assets/sign-configuration.png)
+![sign-configuration](assets/sign-configuration.png)
 
 ```java
 package com.acrobatsign.core.configuration;

@@ -24,6 +24,6 @@ ht-degree: 6%
 
 ## 이 비디오에서 다루는 콘텐츠
 
-+ [컨텐츠 조각을 사용한 작업](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments.html)
++ [콘텐츠 조각을 사용하여 작업](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments.html)
 + [경험 조각 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html)
 + [경험 조각 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/experience-fragments.html)

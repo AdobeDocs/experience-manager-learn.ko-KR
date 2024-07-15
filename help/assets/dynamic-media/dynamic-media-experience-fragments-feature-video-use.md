@@ -25,8 +25,8 @@ AEM Assets Dynamic Media은 대화형 미디어 뷰어를 통해 자산 핫스�
 
 >[!NOTE]
 >
->AEM Assets Dynamic Media 핫스팟에서 AEM Experience Fragments를 사용하려면 다음 작업을 수행해야 합니다. [Dynamic Media에서 실행할 AEM](https://experienceleague.adobe.com/docs/) 모드.
+>AEM Assets Dynamic Media 핫스팟에서 AEM Experience Fragments를 사용하려면 [AEM을 Dynamic Media](https://experienceleague.adobe.com/docs/) 모드에서 실행해야 합니다.
 
 비디오에 표시되는 팝업 경험 조각 변형은 아래 AEM 패키지로 사용할 수 있습니다.
 
-다운로드 [경험 구성요소 Dynamic Media Assets](assets/experience-fragmentsdynamic-mediaassets-100.zip)
+[경험 조각 Dynamic Media Assets](assets/experience-fragmentsdynamic-mediaassets-100.zip) 다운로드

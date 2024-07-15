@@ -1,6 +1,6 @@
 ---
 title: AEM Assets에서 일괄 가져오기 사용
-description: AEM의 일괄 가져오기 도구를 as a Cloud Service으로 사용하면 관리자가 클라우드 스토리지(Azure Blob Storage 또는 Amazon S3)에서 에셋을 안전하고 효율적으로 가져올 수 있습니다.
+description: AEM as a Cloud Service의 일괄 가져오기 도구를 사용하면 관리자가 클라우드 스토리지(Azure Blob Storage 또는 Amazon S3)에서 에셋을 안전하고 효율적으로 가져올 수 있습니다.
 version: Cloud Service
 doc-type: technical-video
 feature: Migration
@@ -21,13 +21,13 @@ ht-degree: 0%
 
 # 일괄 가져오기 사용
 
-AEM의 일괄 가져오기 도구를 as a Cloud Service으로 사용하면 관리자가 클라우드 스토리지에서 에셋을 안전하고 효율적으로 가져올 수 있습니다.
+AEM as a Cloud Service의 일괄 가져오기 도구를 사용하면 관리자가 클라우드 저장소에서 자산을 안전하고 효율적으로 가져올 수 있습니다.
 
 >[!BEGINTABS]
 
->[!TAB 에셋 보기]
+>[!TAB Assets 보기]
 
-다음을 사용하여 수많은 파일을 AEM Assets으로 가져오는 방법에 대해 알아봅니다. [자산 보기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/assets-view/assets-view-introduction.html) [일괄 가져오기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view.html), Dropbox은 명확하고 따라하기 쉬운 통합 프로세스를 위한 예제 클라우드 스토리지 공급자의 역할을 합니다.
+명확하고 따라하기 쉬운 통합 프로세스를 위한 예제 클라우드 스토리지 공급자 역할을 하는 Dropbox을 사용하여 [자산 보기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/assets-view/assets-view-introduction.html) [일괄 가져오기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view.html)를 사용하여 AEM Assets으로 수많은 파일을 가져오는 방법에 대해 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3426857/?learn=on)
 
@@ -37,7 +37,7 @@ AEM의 일괄 가져오기 도구를 as a Cloud Service으로 사용하면 관�
 
 >[!TIP]
 >
-> 이 비디오의 입력 소스에는 Azure Blob Storage 및 Amazon S3만 표시되지만 사용 가능한 소스는 시간이 지남에 따라 계속 증가합니다. 지원되는 입력 소스의 전체 목록에 대해서는 제품에서 사용 가능한 옵션을 참조하거나 [설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html#bulk-upload).
+> 이 비디오의 입력 소스에는 Azure Blob Storage 및 Amazon S3만 표시되지만 사용 가능한 소스는 시간이 지남에 따라 계속 증가합니다. 지원되는 입력 소스의 전체 목록에 대해서는 제품에서 사용 가능한 옵션 또는 [설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html#bulk-upload)를 참조하십시오.
 
 ## 일괄 가져오기 예약
 

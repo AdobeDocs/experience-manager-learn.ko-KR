@@ -76,7 +76,7 @@ Asset Share Commons에서 간단한 소개입니다. 이 비디오는 사용자 
 @msgWarningBackgroundColor: @yellow;
 ```
 
-다운로드 [사용자 정의 클라이언트 라이브러리 테마](assets/asc-theme-demo.zip)
+[사용자 지정 클라이언트 라이브러리 테마](assets/asc-theme-demo.zip) 다운로드
 
 ## 추가 리소스{#additional-resources}
 

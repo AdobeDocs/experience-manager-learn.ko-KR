@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # XMLForm 서비스의 bmc 풀 크기를 조정하는 단계(2/2)
 
-*이 비디오는 XMLFormService에 대해 bmc 풀 크기를 조정하는 단계를 안내합니다(2/2).*
+*이 비디오는 XMLFormService(2/2)에 대해 bmc 풀 크기를 조정하는 단계를 안내합니다.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335553?quality=12&learn=on)

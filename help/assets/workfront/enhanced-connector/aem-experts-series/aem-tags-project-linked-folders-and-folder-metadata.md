@@ -11,7 +11,7 @@ thumbnail: 340333.jpeg
 hidefromtoc: false
 last-substantial-update: 2022-09-02T00:00:00Z
 badgeIntegration: label="통합" type="positive"
-badgeVersions: label="AEM Assets as a Cloud Service, AEM Assets 6.5" before-title="false"
+badgeVersions: label="AEM Assets as a Cloud Service AEM Assets 6.5" before-title="false"
 exl-id: 520a75cd-757a-4ae9-acf6-3c1f5e1f3747
 duration: 2633
 source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
@@ -29,8 +29,8 @@ Workfront 데이터를 통해 에셋에서 AEM 태그 사용을 유도하고, �
 
 >[!VIDEO](https://video.tv.adobe.com/v/340333?quality=12&learn=on)
 
-_제3부 [Workfront for Experience Manager 강화 커넥터에 대한 4부로 구성된 expert 시리즈](./overview.md)_
+_Workfront for Experience Manager 강화 커넥터에 대한 [4부 전문가 시리즈의 3부](./overview.md)_
 
 ## 수정 사항
 
-+ __@ 4:34 및 6:20__ AEM 태그 구문이 잘못되었습니다. 비디오 표시 `we-retail:apparel/footwear`. 올바른 구문은 다음과 같습니다. `["we-retail:apparel/footwear"]` 또는 더 일반적으로 `["namespace:tag/childtag"]`.
++ __@ 4:34 및 6:20__ AEM 태그 구문이 잘못되었습니다. 비디오에 `we-retail:apparel/footwear`이(가) 표시됩니다. 올바른 구문은 `["we-retail:apparel/footwear"]` 이상이며 일반적으로 `["namespace:tag/childtag"]`입니다.

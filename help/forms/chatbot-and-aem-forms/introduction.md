@@ -20,9 +20,9 @@ ht-degree: 2%
 
 ChatBot을 사용하여 Adobe Experience Manager Forms(AEM Forms)로 PDF 양식을 작성하고 Adobe Sign을 사용하여 디지털 서명을 위해 전송하는 자습서에 오신 것을 환영합니다.
 
-ChatBot은 [챗봇](https://www.chatbot.com/).
+[챗봇](https://www.chatbot.com/)을 사용하여 ChatBot을 만들었습니다.
 
-이 자습서에서는 ChatBot에서 캡처한 데이터를 [W-9 양식](assets/fw9.xdp)
+이 자습서에서는 ChatBot에서 캡처한 데이터를 [W-9 양식](assets/fw9.xdp)과 병합하게 됩니다
 
 다음 비디오에서는 사용 사례를 보여 줍니다.
 
@@ -32,7 +32,7 @@ ChatBot은 [챗봇](https://www.chatbot.com/).
 
 * AEM Forms에 대한 경험.
 * AEM Forms OutputService를 잘 이해하고 있습니다.
-* AEM Forms Designer를 사용해 보십시오.
+* AEM Forms Designer을 사용해 보십시오.
 
 ## 다음 단계
 

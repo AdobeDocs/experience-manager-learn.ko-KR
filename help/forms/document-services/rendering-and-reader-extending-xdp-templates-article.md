@@ -25,10 +25,10 @@ ht-degree: 0%
 
 이 사용 사례를 달성하려면 다음을 수행해야 합니다.
 
-* &quot;fd-service&quot; 사용자에게 Reader 확장 인증서를 추가합니다. Reader 확장 자격 증명을 추가하는 단계가 나열됩니다 [여기](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html?lang=en)
+* &quot;fd-service&quot; 사용자에게 Reader 확장 인증서를 추가합니다. Reader 확장 자격 증명을 추가하는 단계는 [여기](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html?lang=en)에 나열됩니다.
 
 
-* 의 비디오를 참조할 수도 있습니다. [Reader 확장 자격 증명 구성](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html)
+* [Reader 확장 자격 증명 구성](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html)에 대한 비디오를 참조할 수도 있습니다.
 
 
 * 사용 권한을 렌더링하고 적용하는 사용자 지정 OSGi 서비스를 만듭니다. 이를 수행하기 위한 코드가 아래에 나와 있습니다
@@ -204,5 +204,5 @@ public class RenderAndReaderExtend extends SlingSafeMethodsServlet {
 1. [패키지 관리자를 사용하여 이 문서와 관련된 자산을 AEM으로 다운로드하고 가져옵니다.](assets/renderandextendxdp.zip)
    * 이 패키지에는 샘플 포털 및 xdp 파일이 있습니다.
 1. &quot;fd-service&quot; 사용자에게 Reader 확장 인증서 추가
-1. 브라우저를 가리켜서 [포털 웹 페이지](http://localhost:4502/content/AemForms/ReaderExtensionsXdp.html)
+1. 브라우저를 [포털 웹 페이지](http://localhost:4502/content/AemForms/ReaderExtensionsXdp.html)(으)로 지정
 1. xdp를 사용 권한이 적용된 pdf 파일로 렌더링하려면 pdf 아이콘을 클릭합니다.

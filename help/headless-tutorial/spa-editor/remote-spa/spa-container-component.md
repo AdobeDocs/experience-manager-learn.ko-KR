@@ -21,7 +21,7 @@ ht-degree: 1%
 
 # 편집 가능한 컨테이너 구성 요소
 
-[고정 구성 요소](./spa-fixed-component.md) SPA 컨텐츠를 작성하는 데 약간의 유연성을 제공하지만, 이 접근 방식은 엄격하여 개발자가 편집 가능한 컨텐츠의 정확한 구성을 정의해야 합니다. 작성자가 탁월한 경험을 만들 수 있도록 SPA Editor는 SPA에서 컨테이너 구성 요소를 사용할 수 있도록 지원합니다. 작성자는 컨테이너 구성 요소를 통해 허용된 구성 요소를 드래그하여 컨테이너에 넣고, 기존 AEM Sites 작성에서와 마찬가지로 이 구성 요소를 작성할 수 있습니다.
+[고정 구성 요소](./spa-fixed-component.md)는 SPA 콘텐츠를 작성하는 데 약간의 유연성을 제공하지만, 이 방법은 엄격하여 개발자가 편집 가능한 콘텐츠의 정확한 구성을 정의해야 합니다. 작성자가 탁월한 경험을 만들 수 있도록 SPA Editor는 SPA에서 컨테이너 구성 요소를 사용할 수 있도록 지원합니다. 작성자는 컨테이너 구성 요소를 통해 허용된 구성 요소를 드래그하여 컨테이너에 넣고, 기존 AEM Sites 작성에서와 마찬가지로 이 구성 요소를 작성할 수 있습니다.
 
 ![편집 가능한 컨테이너 구성 요소](./assets/spa-container-component/intro.png)
 
@@ -31,26 +31,26 @@ ht-degree: 1%
 
 컨테이너 구성 요소를 홈 보기에 추가하려면 다음을 수행합니다.
 
-+ AEM React Editable Component 가져오기 `ResponsiveGrid` 구성 요소
++ AEM React Editable 구성 요소의 `ResponsiveGrid` 구성 요소 가져오기
 + ResponsiveGrid 구성 요소에서 사용할 사용자 지정 Editable React 구성 요소(텍스트 및 이미지)를 가져와서 등록합니다
 
 ### ResponsiveGrid 구성 요소 사용
 
 편집 가능한 영역을 홈 보기에 추가하려면 다음을 수행합니다.
 
-1. 열기 및 편집 `react-app/src/components/Home.js`
-1. 가져오기 `ResponsiveGrid` 구성 요소 출처 `@adobe/aem-react-editable-components` 및에 추가합니다. `Home` 구성 요소.
-1. 에서 다음 속성을 설정합니다. `<ResponsiveGrid...>` 구성 요소
+1. `react-app/src/components/Home.js` 열기 및 편집
+1. `@adobe/aem-react-editable-components`에서 `ResponsiveGrid` 구성 요소를 가져와 `Home` 구성 요소에 추가하십시오.
+1. `<ResponsiveGrid...>` 구성 요소에서 다음 특성을 설정합니다.
    + `pagePath = '/content/wknd-app/us/en/home'`
    + `itemPath = 'root/responsivegrid'`
 
-   이에 따라 `ResponsiveGrid` AEM 리소스에서 콘텐츠를 검색할 구성 요소:
+   `ResponsiveGrid` 구성 요소가 AEM 리소스에서 해당 콘텐츠를 검색하도록 지시합니다.
 
    + `/content/wknd-app/us/en/home/jcr:content/root/responsivegrid`
 
-   다음 `itemPath` 에 매핑 `responsivegrid` 에 정의된 노드 `Remote SPA Page` AEM 템플릿에서 생성된 새 AEM 페이지에 자동으로 만들어집니다. `Remote SPA Page` AEM 템플릿입니다.
+   `itemPath`은(는) `Remote SPA Page` AEM 템플릿에 정의된 `responsivegrid` 노드에 매핑되며 `Remote SPA Page` AEM 템플릿에서 만든 새 AEM 페이지에 자동으로 만들어집니다.
 
-   업데이트 `Home.js` 을(를) 추가하려면 `<ResponsiveGrid...>` 구성 요소.
+   `Home.js`을(를) 업데이트하여 `<ResponsiveGrid...>` 구성 요소를 추가합니다.
 
    ```javascript
    ...
@@ -74,7 +74,7 @@ ht-degree: 1%
    }
    ```
 
-다음 `Home.js` 파일은 다음과 같아야 합니다.
+`Home.js` 파일은 다음과 같아야 합니다.
 
 ![Home.js](./assets/spa-container-component/home-js.png)
 
@@ -82,13 +82,13 @@ ht-degree: 1%
 
 SPA Editor에서 제공하는 유연한 작성 경험 컨테이너를 최대한 활용하십시오. 이미 편집 가능한 제목 구성 요소를 만들었지만 작성자가 새로 추가된 ResponsiveGrid 구성 요소에서 편집 가능한 텍스트 및 이미지 구성 요소를 사용할 수 있도록 하는 몇 가지 사항을 더 만들어 보겠습니다.
 
-새로운 편집 가능한 텍스트 및 이미지 반응형 구성 요소는에 노출된 편집 가능한 구성 요소 정의 패턴을 사용하여 만들어집니다. [편집 가능한 고정 구성 요소](./spa-fixed-component.md).
+새로운 편집 가능한 텍스트 및 이미지 반응 구성 요소는 [편집 가능한 고정 구성 요소](./spa-fixed-component.md)에 노출된 편집 가능한 구성 요소 정의 패턴을 사용하여 만들어집니다.
 
 ### 편집 가능한 텍스트 구성 요소
 
 1. IDE에서 SPA 프로젝트 열기
-1. 다음 위치에 React 구성 요소 만들기 `src/components/editable/core/Text.js`
-1. 에 다음 코드를 추가합니다 `Text.js`
+1. `src/components/editable/core/Text.js`에서 React 구성 요소 만들기
+1. `Text.js`에 다음 코드 추가
 
    ```javascript
    import React from 'react'
@@ -115,8 +115,8 @@ SPA Editor에서 제공하는 유연한 작성 경험 컨테이너를 최대한 
    }
    ```
 
-1. 다음 위치에서 편집 가능한 React 구성 요소 만들기 `src/components/editable/EditableText.js`
-1. 에 다음 코드를 추가합니다 `EditableText.js`
+1. `src/components/editable/EditableText.js`에서 편집 가능한 React 구성 요소를 만듭니다.
+1. `EditableText.js`에 다음 코드 추가
 
    ```javascript
    import React from 'react'
@@ -152,8 +152,8 @@ SPA Editor에서 제공하는 유연한 작성 경험 컨테이너를 최대한 
 ### 이미지 구성 요소
 
 1. IDE에서 SPA 프로젝트 열기
-1. 다음 위치에 React 구성 요소 만들기 `src/components/editable/core/Image.js`
-1. 에 다음 코드를 추가합니다 `Image.js`
+1. `src/components/editable/core/Image.js`에서 React 구성 요소 만들기
+1. `Image.js`에 다음 코드 추가
 
    ```javascript
    import React from 'react'
@@ -202,8 +202,8 @@ SPA Editor에서 제공하는 유연한 작성 경험 컨테이너를 최대한 
    };
    ```
 
-1. 다음 위치에서 편집 가능한 React 구성 요소 만들기 `src/components/editable/EditableImage.js`
-1. 에 다음 코드를 추가합니다 `EditableImage.js`
+1. `src/components/editable/EditableImage.js`에서 편집 가능한 React 구성 요소를 만듭니다.
+1. `EditableImage.js`에 다음 코드 추가
 
 ```javascript
 import { EditableComponent, MapTo } from '@adobe/aem-react-editable-components';
@@ -234,8 +234,8 @@ export default EditableImage;
 ```
 
 
-1. SCSS 파일 만들기 `src/components/editable/EditableImage.scss` 의 사용자 지정 스타일을 제공합니다. `EditableImage.scss`. 이러한 스타일은 편집 가능한 React 구성 요소의 CSS 클래스를 대상으로 합니다.
-1. 에 다음 SCSS 추가 `EditableImage.scss`
+1. `EditableImage.scss`에 대한 사용자 지정 스타일을 제공하는 SCSS 파일 `src/components/editable/EditableImage.scss`을(를) 만듭니다. 이러한 스타일은 편집 가능한 React 구성 요소의 CSS 클래스를 대상으로 합니다.
+1. `EditableImage.scss`에 다음 SCSS 추가
 
    ```css
    .cmp-image__image {
@@ -245,7 +245,7 @@ export default EditableImage;
     }
    ```
 
-1. 가져오기 `EditableImage.scss` 위치: `EditableImage.js`
+1. `EditableImage.js`에서 `EditableImage.scss` 가져오기
 
    ```javascript
    ...
@@ -260,11 +260,11 @@ export default EditableImage;
 
 ### 편집 가능한 구성 요소 가져오기
 
-새로 생성된 `EditableText` 및 `EditableImage` React 구성 요소는 SPA에서 참조하며 AEM에서 반환되는 JSON을 기반으로 동적으로 인스턴스화됩니다. SPA에서 이러한 구성 요소를 사용할 수 있도록 하려면에서 해당 구성 요소에 대한 가져오기 구문을 만듭니다. `Home.js`
+새로 만든 `EditableText` 및 `EditableImage` React 구성 요소는 SPA에서 참조되며 AEM에서 반환된 JSON을 기반으로 동적으로 인스턴스화됩니다. 이러한 구성 요소를 SPA에서 사용할 수 있도록 하려면 `Home.js`에서 해당 구성 요소에 대한 가져오기 문을 만드십시오.
 
 1. IDE에서 SPA 프로젝트 열기
-1. 파일 열기 `src/Home.js`
-1. 다음에 대한 가져오기 구문 추가 `AEMText` 및 `AEMImage`
+1. `src/Home.js` 파일을 엽니다.
+1. `AEMText` 및 `AEMImage`에 대한 가져오기 문 추가
 
    ```javascript
    ...
@@ -278,31 +278,31 @@ export default EditableImage;
 
 ![Home.js](./assets/spa-container-component/home-js-imports.png)
 
-이 가져오기가 _아님_ 추가됨, `EditableText` 및 `EditableImage` 코드가 SPA에 의해 호출되지 않으므로 구성 요소는 제공된 리소스 유형에 매핑되지 않습니다.
+이 가져오기가 _not_ 추가된 경우 `EditableText` 및 `EditableImage` 코드가 SPA에 의해 호출되지 않으므로 구성 요소가 제공된 리소스 형식에 매핑되지 않습니다.
 
 ## AEM에서 컨테이너 구성
 
 AEM 컨테이너 구성 요소는 정책을 사용하여 허용된 구성 요소를 지시합니다. SPA Editor는 SPA 구성 요소 대응 요소를 매핑한 AEM 구성 요소만 SPA에서 렌더링할 수 있으므로 중요한 구성입니다. SPA 구현을 제공한 구성 요소만 허용되는지 확인하십시오.
 
-+ `EditableTitle` 매핑됨 `wknd-app/components/title`
-+ `EditableText` 매핑됨 `wknd-app/components/text`
-+ `EditableImage` 매핑됨 `wknd-app/components/image`
++ `EditableTitle`이(가) `wknd-app/components/title`에 매핑됨
++ `EditableText`이(가) `wknd-app/components/text`에 매핑됨
++ `EditableImage`이(가) `wknd-app/components/image`에 매핑됨
 
 원격 SPA 페이지 템플릿의 reponsivegrid 컨테이너를 구성하려면 다음과 같이 하십시오.
 
 1. AEM 작성자에 로그인
-1. 다음으로 이동 __도구 > 일반 > 템플릿 > WKND 앱__
-1. 편집 __보고서 SPA 페이지__
+1. __도구 > 일반 > 템플릿 > WKND 앱으로 이동__
+1. __보고서 SPA 페이지__ 편집
 
-   ![반응형 그리드 정책](./assets/spa-container-component/templates-remote-spa-page.png)
+   ![응답형 격자 정책](./assets/spa-container-component/templates-remote-spa-page.png)
 
-1. 선택 __구조__ 오른쪽 상단의 모드 전환기에서
-1. 탭하여 선택 __레이아웃 컨테이너__
-1. 탭 __정책__ 팝업 막대의 아이콘
+1. 오른쪽 상단의 모드 전환기에서 __구조__&#x200B;를 선택합니다.
+1. 탭하여 __레이아웃 컨테이너__ 선택
+1. 팝업 막대에서 __정책__ 아이콘을 탭합니다.
 
-   ![반응형 그리드 정책](./assets/spa-container-component/templates-policies-action.png)
+   ![응답형 격자 정책](./assets/spa-container-component/templates-policies-action.png)
 
-1. 오른쪽, 아래 __허용된 구성 요소__ 탭, 확장 __WKND 앱 - 콘텐츠__
+1. 오른쪽의 __허용된 구성 요소__ 탭에서 __WKND 앱 - 콘텐츠__&#x200B;를 확장합니다.
 1. 다음 항목만 선택해야 합니다.
    + 이미지
    + 텍스트
@@ -310,58 +310,58 @@ AEM 컨테이너 구성 요소는 정책을 사용하여 허용된 구성 요소
 
    ![원격 SPA 페이지](./assets/spa-container-component/templates-allowed-components.png)
 
-1. 누르기 __완료__
+1. __완료__ 탭
 
 ## AEM에서 컨테이너 작성
 
-SPA이 을 포함하도록 업데이트한 후 `<ResponsiveGrid...>`, 편집 가능한 React 구성 요소 3개 래퍼(`EditableTitle`, `EditableText`, 및 `EditableImage`) 일치하는 템플릿 정책으로 AEM이 업데이트되면 컨테이너 구성 요소에서 컨텐츠 작성을 시작할 수 있습니다.
+SPA이 `<ResponsiveGrid...>`을(를) 포함하도록 업데이트되고, 세 개의 편집 가능한 React 구성 요소(`EditableTitle`, `EditableText` 및 `EditableImage`)에 대한 래퍼가 업데이트되고, AEM이 일치하는 템플릿 정책으로 업데이트되면 컨테이너 구성 요소에서 콘텐츠 작성을 시작할 수 있습니다.
 
 1. AEM 작성자에 로그인
-1. 다음으로 이동 __사이트 > WKND 앱__
-1. 누르기 __홈__ 및 선택 __편집__ 맨 위의 작업 표시줄에서
+1. __사이트 > WKND 앱__(으)로 이동
+1. __홈__&#x200B;을 탭하고 맨 위의 작업 표시줄에서 __편집__&#x200B;을 선택합니다.
    + AEM Project Archetype에서 프로젝트를 생성할 때 자동으로 추가되었으므로 &quot;Hello World&quot; 텍스트 구성 요소가 표시됩니다
-1. 선택 __편집__ 페이지 편집기의 오른쪽 상단에 있는 모드 선택기에서
-1. 를 찾습니다. __레이아웃 컨테이너__ 제목 아래의 편집 가능한 영역
-1. 를 엽니다. __페이지 편집기의 사이드바__&#x200B;을(를) 클릭하고 __구성 요소 보기__
-1. 다음 구성 요소를 __레이아웃 컨테이너__
+1. 페이지 편집기의 오른쪽 상단에 있는 모드 선택기에서 __편집__&#x200B;을 선택합니다.
+1. 제목 아래에서 __레이아웃 컨테이너__ 편집 가능 영역을 찾습니다.
+1. __페이지 편집기의 사이드바__&#x200B;를 열고 __구성 요소 보기__&#x200B;를 선택합니다.
+1. 다음 구성 요소를 __레이아웃 컨테이너__(으)로 끌어옵니다.
    + 이미지
    + 제목
 1. 구성 요소를 드래그하여 다음 순서로 순서를 변경합니다.
    1. 제목
    1. 이미지
    1. 텍스트
-1. __작성자__ 다음 __제목__ 구성 요소
-   1. 제목 구성 요소를 탭하고 __렌치__ 아이콘 위치 __편집__ 제목 구성 요소
+1. __제목__ 구성 요소를 __작성자__
+   1. 제목 구성 요소를 탭하고 __렌치__ 아이콘을 탭하여 제목 구성 요소를 __편집__&#x200B;합니다.
    1. 다음 텍스트를 추가합니다.
-      + 제목: __여름이 다가오고 있어, 최대한 활용하자!__
+      + 제목: __여름이 다가오고 있습니다. 최대한 활용해 보세요!__
       + 유형: __H1__
-   1. 누르기 __완료__
-1. __작성자__ 다음 __이미지__ 구성 요소
-   1. 이미지 구성 요소의 사이드 바에서(에셋 보기로 전환한 후) 이미지를 드래그합니다
-   1. 이미지 구성 요소를 탭하고 __렌치__ 편집할 아이콘
-   1. 다음 확인: __이미지가 장식용임__ 확인란
-   1. 누르기 __완료__
-1. __작성자__ 다음 __텍스트__ 구성 요소
-   1. 텍스트 구성 요소를 탭하고 을 탭하여 텍스트 구성 요소를 편집합니다. __렌치__ 아이콘
+   1. __완료__ 탭
+1. __이미지__ 구성 요소 __작성자__
+   1. 이미지 구성 요소의 측면 막대(Assets 보기로 전환한 후)에서 이미지를 드래그합니다
+   1. 이미지 구성 요소를 탭하고 __렌치__ 아이콘을 탭하여 편집합니다
+   1. __이미지가 장식용임__ 확인란을 선택하십시오.
+   1. __완료__ 탭
+1. __텍스트__ 구성 요소를 __작성자__
+   1. 텍스트 구성 요소를 탭하고 __렌치__ 아이콘을 탭하여 텍스트 구성 요소를 편집합니다
    1. 다음 텍스트를 추가합니다.
-      + _지금 당장, 당신은 모든 1주 모험에서 15%를 얻을 수 있고 2주 이상 모든 모험에서 20%를 할인받을 수 있습니다! 체크아웃할 때 캠페인 코드 SUMMERISCOMING 을 추가하여 할인을 받으십시오!_
-   1. 누르기 __완료__
+      + _현재 1주일 모험은 15%, 2주 이상 모험은 20% 할인됩니다! 체크아웃할 때 캠페인 코드 SUMMERISCOMING을 추가하여 할인 혜택을 받으십시오!_
+   1. __완료__ 탭
 
 1. 이제 구성 요소가 작성되었지만 세로로 스택됩니다.
 
    ![작성된 구성 요소](./assets/spa-container-component/authored-components.png)
 
-구성 요소의 크기와 레이아웃을 조정할 수 있도록 AEM 레이아웃 모드 를 사용하십시오.
+구성 요소의 크기와 레이아웃을 조정할 수 있도록 AEM의 레이아웃 모드 를 사용하십시오.
 
-1. 다음으로 전환 __레이아웃 모드__ 오른쪽 상단의 모드 선택기 사용
-1. __크기 조정__ 이미지 및 텍스트 구성 요소를 나란히 배치할 수 있습니다
-   + __이미지__ 구성 요소는 다음과 같아야 합니다 __8열 너비__
-   + __텍스트__ 구성 요소는 다음과 같아야 합니다 __3열 너비__
+1. 오른쪽 상단의 모드 선택기를 사용하여 __레이아웃 모드__(으)로 전환
+1. 이미지 및 텍스트 구성 요소가 나란히 표시되도록 __크기 조정__
+   + __이미지__ 구성 요소는 __8열__&#x200B;이어야 합니다.
+   + __텍스트__ 구성 요소는 __3열 너비여야 함__
 
    ![레이아웃 구성 요소](./assets/spa-container-component/layout-components.png)
 
-1. __미리 보기__ AEM 페이지 편집기의 변경 사항
-1. 로컬에서 실행 중인 WKND 앱 새로 고침 [http://localhost:3000](http://localhost:3000) 작성된 변경 내용을 보려면!
+1. AEM 페이지 편집기에서 변경 내용을 __미리 보기__
+1. [http://localhost:3000](http://localhost:3000)에서 로컬로 실행 중인 WKND 앱을 새로 고쳐 작성된 변경 내용을 확인합니다.
 
    ![SPA의 컨테이너 구성 요소](./assets/spa-container-component/localhost-final.png)
 
@@ -370,7 +370,7 @@ SPA이 을 포함하도록 업데이트한 후 `<ResponsiveGrid...>`, 편집 가
 
 작성자가 편집 가능한 구성 요소를 WKND 앱에 추가할 수 있는 컨테이너 구성 요소를 추가했습니다. 이제 다음 방법을 이해할 수 있습니다.
 
-+ AEM React Editable 구성 요소 사용 `ResponsiveGrid` SPA 구성 요소
++ SPA에서 AEM React Editable 구성 요소의 `ResponsiveGrid` 구성 요소 사용
 + 컨테이너 구성 요소를 통해 SPA에서 사용할 편집 가능한 React 구성 요소(텍스트 및 이미지)를 만들고 등록합니다
 + SPA 지원 구성 요소를 허용하도록 원격 SPA 페이지 템플릿 구성
 + 컨테이너 구성 요소에 편집 가능한 구성 요소 추가
@@ -378,4 +378,4 @@ SPA이 을 포함하도록 업데이트한 후 `<ResponsiveGrid...>`, 편집 가
 
 ## 다음 단계
 
-다음 단계에서는 이와 동일한 기술을 사용하여 [어드벤처 세부 정보 경로에 편집 가능한 구성 요소 추가](./spa-dynamic-routes.md) SPA에서
+다음 단계에서는 이와 동일한 기술을 사용하여 [편집 가능한 구성 요소를 SPA의 Adventure Details 경로에 추가](./spa-dynamic-routes.md)합니다.

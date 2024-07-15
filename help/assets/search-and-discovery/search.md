@@ -1,6 +1,6 @@
 ---
 title: 검색
-description: AEM Omnisearch를 사용하여 에셋을 빠르게 검색하는 방법에 대해 알아봅니다.
+description: AEM의 Omnisearch를 사용하여 에셋을 빠르게 검색하는 방법에 대해 알아봅니다.
 feature: Search
 version: Cloud Service
 jira: KT-4312
@@ -21,6 +21,6 @@ ht-degree: 9%
 
 # 검색{#aem-assets-search}
 
-AEM Omnisearch를 사용하여 에셋을 빠르게 검색하는 방법에 대해 알아봅니다.
+AEM의 Omnisearch를 사용하여 에셋을 빠르게 검색하는 방법에 대해 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32054?quality=12&learn=on)

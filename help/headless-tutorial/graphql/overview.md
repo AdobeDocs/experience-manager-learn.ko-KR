@@ -20,7 +20,8 @@ ht-degree: 10%
 
 {{aem-headless-trials-promo}}
 
-콘텐츠 조각용 AEM GraphQL API는 외부 클라이언트 애플리케이션이 AEM에서 관리하는 콘텐츠를 사용하여 경험을 렌더링하는 Headless CMS 시나리오를 지원합니다.
+컨텐츠 조각용 AEM의 GraphQL API
+는 외부 클라이언트 애플리케이션이 AEM에서 관리하는 콘텐츠를 사용하여 경험을 렌더링하는 headless CMS 시나리오를 지원합니다.
 
 최신 콘텐츠 게재 API는 Javascript 기반 프론트엔드 애플리케이션의 효율성과 성능을 위한 핵심 요소입니다. REST API를 사용하면 다음과 같은 문제가 발생합니다.
 
@@ -41,13 +42,13 @@ ht-degree: 10%
 
 ## AEM 헤드리스 GraphQL 비디오 시리즈
 
-콘텐츠 조각 및 AEM GraphQL API, 개발 도구에 대한 심층적인 설명을 통해 AEM GraphQL 기능에 대해 알아봅니다.
+콘텐츠 조각 및 AEM의 GraphQL API 및 개발 도구에 대한 심층적인 설명을 통해 AEM의 GraphQL 기능에 대해 알아봅니다.
 
 * [AEM 헤드리스 GraphQL 비디오 시리즈](./video-series/modeling-basics.md)
 
 ## AEM Headless GraphQL 실습 자습서
 
-AEM GraphQL API를 통해 콘텐츠 조각을 사용하는 React 앱을 빌드하여 AEM GraphQL 기능을 살펴보십시오.
+AEM의 GraphQL API를 통해 컨텐츠 조각을 사용하는 React 앱을 빌드하여 AEM의 GraphQL 기능을 살펴보십시오.
 
 * [AEM Headless GraphQL 실습 자습서](./multi-step/overview.md)
 

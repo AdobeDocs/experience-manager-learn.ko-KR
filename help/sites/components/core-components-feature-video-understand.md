@@ -33,5 +33,5 @@ AEM 핵심 구성 요소는 Adobe Experience Manager에서 사용할 표준 구�
 ## 추가 리소스 {#additional-resources}
 
 * [GitHub 프로젝트](https://github.com/adobe/aem-core-wcm-components)
-* [핵심 구성 요소의 예](https://www.aemcomponents.dev/)
+* [핵심 구성 요소 예제](https://www.aemcomponents.dev/)
 * [핵심 구성 요소 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)

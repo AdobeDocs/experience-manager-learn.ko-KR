@@ -21,32 +21,32 @@ ht-degree: 0%
 
 # 사용자 정의 격자 열
 
-![콘텐츠 조각 콘솔 사용자 지정 그리드 열](./assets/custom-grid-columns/hero.png){align="center"}
+![콘텐츠 조각 콘솔 사용자 지정 눈금 열](./assets/custom-grid-columns/hero.png){align="center"}
 
-사용자 지정 격자 열은 다음을 사용하여 콘텐츠 조각 콘솔에 추가할 수 있습니다.  `contentFragmentGrid` 확장 점입니다. 이 예에서는 마지막 수정 날짜를 기반으로 콘텐츠 조각 페이지를 표시하는 사용자 정의 열을 사람이 읽을 수 있는 형식으로 추가하는 방법을 보여 줍니다.
+사용자 지정 표 열은 `contentFragmentGrid` 확장 지점을 사용하여 콘텐츠 조각 콘솔에 추가할 수 있습니다. 이 예에서는 마지막 수정 날짜를 기반으로 콘텐츠 조각 페이지를 표시하는 사용자 정의 열을 사람이 읽을 수 있는 형식으로 추가하는 방법을 보여 줍니다.
 
 ## 확장 지점
 
-이 예제는 확장 지점까지 확장됩니다 `contentFragmentGrid` 콘텐츠 조각 콘솔에 사용자 지정 열을 추가합니다.
+이 예제는 확장 지점 `contentFragmentGrid`까지 확장하여 콘텐츠 조각 콘솔에 사용자 지정 열을 추가합니다.
 
 | AEM UI 확장 | 확장 지점 |
 | ------------------------ | --------------------- | 
-| [콘텐츠 조각 콘솔](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/) | [그리드 열](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/grid-columns/) |
+| [콘텐츠 조각 콘솔](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/) | [표 형태 창](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/grid-columns/) |
 
 ## 확장 예
 
-다음 예제에서는 사용자 지정 열을 만듭니다. `Age` 사람이 읽을 수 있는 형식으로 콘텐츠 조각의 연령을 표시합니다. 기간은 콘텐츠 조각의 마지막 수정 날짜부터 계산됩니다.
+다음 예제에서는 사람이 읽을 수 있는 형식으로 콘텐츠 조각의 날짜를 표시하는 사용자 지정 열 `Age`을(를) 만듭니다. 기간은 콘텐츠 조각의 마지막 수정 날짜부터 계산됩니다.
 
 이 코드는 콘텐츠 조각의 메타데이터를 확장의 등록 파일에서 얻는 방법과 콘텐츠 조각의 JSON 콘텐츠를 변환하는 방법을 보여 줍니다.
 
-이 예에서는 [럭슨](https://moment.github.io/luxon/) 를 통해 설치된 콘텐츠 조각의 연령을 계산하는 라이브러리 `npm i luxon`.
+이 예제에서는 [Luxon](https://moment.github.io/luxon/) 라이브러리를 사용하여 `npm i luxon`을(를) 통해 설치된 콘텐츠 조각의 사용 기간을 계산합니다.
 
 ### 확장 등록
 
-`ExtensionRegistration.js`index.html 경로에 매핑되는 는 AEM 확장의 진입점이며 다음을 정의합니다.
+index.html 경로에 매핑된 `ExtensionRegistration.js`은(는) AEM 확장의 진입점이며 다음을 정의합니다.
 
-+ 확장 위치가 자동으로 삽입됩니다(`contentFragmentGrid`AEM 제작 환경의 )
-+ 에서 사용자 정의 열의 정의 `getColumns()` 함수
++ 확장 위치는 AEM 작성 환경에 자동으로(`contentFragmentGrid`) 삽입됩니다
++ `getColumns()` 함수의 사용자 지정 열 정의
 + 행별 각 사용자 정의 열에 대한 값
 
 ```javascript
@@ -149,7 +149,7 @@ export default ExtensionRegistration;
 
 #### 컨텐츠 조각 데이터
 
-다음 `render(..)` 방법 `getColumns()` 조각 배열이 전달됩니다. 배열의 각 개체는 그리드의 행을 나타내며 콘텐츠 조각에 대한 다음 메타데이터를 포함합니다. 이 메타데이터는 그리드에서 자주 사용되는 사용자 정의 열에 사용할 수 있습니다.
+`getColumns()`의 `render(..)` 메서드가 조각 배열로 전달됩니다. 배열의 각 개체는 그리드의 행을 나타내며 콘텐츠 조각에 대한 다음 메타데이터를 포함합니다. 이 메타데이터는 그리드에서 자주 사용되는 사용자 정의 열에 사용할 수 있습니다.
 
 
 ```javascript
@@ -161,7 +161,7 @@ render: async function (fragments) {
 }
 ```
 
-의 요소로 사용할 수 있는 예제 콘텐츠 조각 JSON `fragments` 의 매개 변수 `render(..)` 메서드를 사용합니다.
+`render(..)` 메서드에서 `fragments` 매개 변수의 요소로 사용할 수 있는 예제 콘텐츠 조각 JSON입니다.
 
 ```json
 {
@@ -208,9 +208,9 @@ render: async function (fragments) {
 
 >[!IMPORTANT]
 >
-> AEM 작성자 인스턴스가 을 허용하도록 구성되었는지 확인합니다. [원본 간 요청](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html) AppBuilder 앱이 실행되고 있는 출처. 허용되는 원본에는 다음이 포함됩니다. `https://localhost:9080`, AppBuilder 스테이지 원본 및 AppBuilder 프로덕션 원본.
+> AEM 작성자 인스턴스가 AppBuilder 앱이 실행 중인 원본에서 [원본 간 요청](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html)을 허용하도록 구성되어 있는지 확인하십시오. 허용되는 원본에는 `https://localhost:9080`, AppBuilder Stage 원본 및 AppBuilder 프로덕션 원본이 포함됩니다.
 >
-> 또는 확장 프로그램에서 사용자 지정을 호출할 수 있습니다 [AppBuilder 작업](../../runtime-action.md) 그러면 확장을 대신하여 AEM Author에 요청합니다.
+> 또는 확장을 대신하여 AEM 작성자에게 요청을 하는 사용자 지정 [AppBuilder 작업](../../runtime-action.md)을 호출할 수 있습니다.
 
 
 ```javascript
@@ -227,9 +227,9 @@ const response = await fetch(`${context.aemHost}${fragment.id.slice('/content/da
 
 #### 열 정의
 
-렌더링 메서드의 결과는 키가 콘텐츠 조각(또는 `fragment.id`). 값은 열에 표시할 값입니다.
+렌더링 메서드의 결과는 키가 콘텐츠 조각(또는 `fragment.id`)의 경로이고 값이 열에 표시할 값인 JavaScript 개체입니다.
 
-예를 들어, 다음에 대한 이 확장 결과 `age` 열:
+예를 들어, `age` 열에 대한 이 확장의 결과는 다음과 같습니다.
 
 ```json
 {

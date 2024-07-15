@@ -1,6 +1,6 @@
 ---
-title: 3D 자산
-description: AEM Assets의 3D 자산 지원에 대해 as a Cloud Service으로 알아보십시오.
+title: 3차원 Assets
+description: AEM Assetsas a Cloud Service 의 3D 자산 지원에 대해 알아보십시오.
 version: Cloud Service
 feature: 3D Assets
 topic: Content Management
@@ -21,6 +21,6 @@ ht-degree: 0%
 
 # 3D 자산
 
-AEM Assets의 3D 자산 지원에 대해 as a Cloud Service으로 알아보십시오.
+AEM Assetsas a Cloud Service 의 3D 자산 지원에 대해 알아보십시오.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420690/?learn=on)

@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # AEM Forms OSGi의 클래스에 대해 디버그 로깅을 활성화하는 절차
 
-*이 비디오는 AEM Forms OSGi의 클래스에 대해 디버그 로깅을 활성화하는 단계를 안내합니다.*
+*이 비디오는 AEM Forms OSGi의 모든 클래스에 대해 디버그 로깅을 활성화하는 단계를 설명합니다.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335521?quality=12&learn=on)

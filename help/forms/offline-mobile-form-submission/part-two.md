@@ -18,12 +18,12 @@ ht-degree: 0%
 
 # PDF 제출 처리
 
-이 부분에서는 AEM Publish에서 실행되는 간단한 서블릿을 만들어 Acrobat/Reader에서 PDF 제출을 처리합니다. 이 서블릿은 제출된 데이터를 로 저장하는 것을 담당하는 AEM 작성자 인스턴스에서 실행되는 서블릿에 HTTP POST 요청을 수행합니다 `nt:file` AEM 작성자 저장소의 노드.
+이 부분에서는 AEM Publish에서 실행하여 Acrobat/Reader에서의 PDF 제출을 처리하는 간단한 서블릿을 만듭니다. 그러면 이 서블릿은 제출된 데이터를 AEM 작성자 저장소의 `nt:file` 노드로 저장하는 역할을 하는 AEM 작성자 인스턴스에서 실행 중인 서블릿에 HTTP POST 요청을 수행합니다.
 
-다음은 PDF 제출을 처리하는 서블릿의 코드입니다. 이 서블릿에서에 마운트된 서블릿에 대한 POST 호출을 만듭니다. **/bin/startworkflow** AEM 작성자 인스턴스. 이 서블릿은 AEM 작성자의 저장소에 양식 데이터를 저장합니다.
+다음은 PDF 제출을 처리하는 서블릿의 코드입니다. 이 서블릿에서는 AEM 작성자 인스턴스의 **/bin/startworkflow**&#x200B;에 탑재된 서블릿에 POST 호출을 수행합니다. 이 서블릿은 AEM 작성자의 저장소에 양식 데이터를 저장합니다.
 
 
-## AEM 게시 서블릿
+## AEM Publish 서블릿
 
 ```java
 package com.aemforms.handlepdfsubmission.core.servlets;
@@ -100,7 +100,7 @@ public class HandlePDFSubmission extends SlingAllMethodsServlet {
 
 ## AEM 작성자 서블릿
 
-다음 단계는 제출된 데이터를 AEM 작성자의 저장소에 저장하는 것입니다. 서블릿이에 마운트됨 `/bin/startworkflow` 제출된 데이터를 저장합니다.
+다음 단계는 제출된 데이터를 AEM 작성자의 저장소에 저장하는 것입니다. `/bin/startworkflow`에 탑재된 서블릿이 제출된 데이터를 저장합니다.
 
 ```java
 import java.io.BufferedReader;
@@ -198,6 +198,6 @@ public class StartWorkflow extends SlingAllMethodsServlet {
 }
 ```
 
-AEM 워크플로 시작 관리자는 유형의 새 리소스가 발생할 때마다 트리거되도록 구성됩니다. `nt:file` 이(가) 다음 아래에 생성됩니다. `/content/pdfsubmissions` 노드. 이 워크플로우는 제출된 데이터를 xdp 템플릿과 병합하여 비대화형 또는 정적 PDF을 만듭니다. 그런 다음 생성된 PDF는 검토 및 승인을 위해 사용자에게 할당됩니다.
+`/content/pdfsubmissions` 노드 아래에 `nt:file` 유형의 새 리소스가 만들어질 때마다 AEM 워크플로 런처가 트리거되도록 구성되어 있습니다. 이 워크플로우는 제출된 데이터를 xdp 템플릿과 병합하여 비대화형 또는 정적 PDF을 만듭니다. 그런 다음 생성된 PDF는 검토 및 승인을 위해 사용자에게 할당됩니다.
 
-제출된 데이터를 다음 위치에 저장하려면 `/content/pdfsubmissions` node, we make use of `GetResolver` OSGi 서비스를 사용하면 다음을 사용하여 제출된 데이터를 저장할 수 있습니다. `fd-service` 모든 AEM Forms 설치에서 사용할 수 있는 시스템 사용자입니다.
+`/content/pdfsubmissions` 노드에 제출된 데이터를 저장하기 위해 `GetResolver` OSGi 서비스를 사용하면 모든 AEM Forms 설치에서 사용할 수 있는 `fd-service` 시스템 사용자를 사용하여 제출된 데이터를 저장할 수 있습니다.

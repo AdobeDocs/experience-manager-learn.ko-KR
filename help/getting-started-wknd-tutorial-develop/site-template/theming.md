@@ -27,13 +27,13 @@ ht-degree: 1%
 
 ## 사전 요구 사항 {#prerequisites}
 
-이 자습서는 여러 부분으로 구성되어 있으며 다음에 설명된 단계를 가정합니다. [페이지 템플릿](./page-templates.md) 챕터가 완료되었습니다.
+이 자습서는 여러 부분으로 구성되어 있으며 [페이지 템플릿](./page-templates.md) 장에 설명된 단계가 완료된 것으로 간주됩니다.
 
 ## 목표
 
 1. 사이트의 테마 소스를 다운로드하고 수정하는 방법에 대해 알아봅니다.
 1. 실시간 미리 보기를 위해 코드를 라이브 사이트에 적용하는 방법에 대해 알아봅니다.
-1. Adobe Cloud Manager의 프론트엔드 파이프라인을 사용하여 컴파일된 CSS 및 JavaScript 업데이트를 테마의 일부로 전달하는 종단간 워크플로를 이해합니다.
+1. Adobe Cloud Manager의 프론트엔드 파이프라인을 사용하여 컴파일된 CSS 및 JavaScript 업데이트를 테마의 일부로 전달하는 엔드 투 엔드 워크플로를 이해합니다.
 
 ## 테마 업데이트 {#theme-update}
 
@@ -50,7 +50,7 @@ ht-degree: 1%
 
 ### 솔루션 파일
 
-의 완료된 스타일 다운로드 [WKND 샘플 테마](assets/theming/WKND-THEME-src-1.1.zip)
+[WKND 샘플 테마](assets/theming/WKND-THEME-src-1.1.zip)의 완성된 스타일을 다운로드합니다.
 
 ## 프론트엔드 파이프라인을 사용하여 테마 배포 {#deploy-theme}
 
@@ -60,7 +60,7 @@ Cloud Manager의 프론트엔드 파이프라인을 사용하여 AEM 환경에 �
 
 비디오의 높은 수준 단계:
 
-1. 새 git 만들기 [cloud Manager의 저장소](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/cloud-manager-repositories.html)
+1. Cloud Manager에서 새 git [리포지토리 만들기](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/cloud-manager-repositories.html)
 1. Cloud Manager git 저장소에 테마 소스 프로젝트를 추가합니다.
 
    ```shell
@@ -71,7 +71,7 @@ Cloud Manager의 프론트엔드 파이프라인을 사용하여 AEM 환경에 �
    $ git remote add origin <CLOUD_MANAGER_GIT_REPOSITORY_URL>
    ```
 
-1. 구성 [프론트엔드 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html) 프론트엔드 코드를 배포하려면 Cloud Manager를 사용하십시오.
+1. Cloud Manager에서 [프론트엔드 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html)을 구성하여 프론트엔드 코드를 배포합니다.
 1. 프론트엔드 파이프라인을 실행하여 타겟 AEM 환경에 업데이트를 배포합니다.
 
 ### 보고서 예
@@ -79,7 +79,7 @@ Cloud Manager의 프론트엔드 파이프라인을 사용하여 AEM 환경에 �
 참조로 사용할 수 있는 두 가지 예제 GitHub 보고서가 있습니다.
 
 * [aem-site-template-standard](https://github.com/adobe/aem-site-template-standard)
-* [aem-site-template-basic-theme-e2e](https://github.com/adobe/aem-site-template-basic-theme-e2e) - &quot;실제&quot; 프로젝트의 예로 사용됩니다.
+* [aem-site-template-basic-theme-e2e](https://github.com/adobe/aem-site-template-basic-theme-e2e) - &quot;실제&quot; 프로젝트의 예제로 사용됩니다.
 
 ## 축하합니다! {#congratulations}
 
@@ -87,4 +87,4 @@ Cloud Manager의 프론트엔드 파이프라인을 사용하여 AEM 환경에 �
 
 ### 다음 단계 {#next-steps}
 
-AEM 개발에 대해 자세히 알아보고 를 사용하여 사이트를 만들어 기본 기술에 대해 더 많이 이해합니다. [AEM Project Archetype](../project-archetype/overview.md).
+[AEM Project Archetype](../project-archetype/overview.md)을(를) 사용하여 사이트를 만들어 AEM 개발에 대해 자세히 알아보고 기본 기술에 대해 더 자세히 알아보십시오.

@@ -38,7 +38,7 @@ Adobe Experience Manager(AEM) Sites는 선도적인 경험 관리 플랫폼입�
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR">
-    <strong>AEM Sites 시작하기</strong>
+    <strong>AEM Sites 시작</strong>
     </a>
     </div>
     <p>
@@ -64,11 +64,11 @@ Adobe Experience Manager(AEM) Sites는 선도적인 경험 관리 플랫폼입�
     </a>
      <div>
       <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html">
-        <strong>AEM SPA 편집기 시작하기</strong>
+        <strong>AEM의 SPA 편집기 시작하기</strong>
       </a>
     </div>
     <p>
-    <em>개발자가 단일 페이지 애플리케이션(SPA)을 AEM과 통합할 수 있는 시작 안내서입니다.</em>
+    <em>SPA(단일 페이지 애플리케이션)를 AEM과 통합하기 위한 개발자 시작 안내서입니다.</em>
     <p>
   </td>
 </tr>

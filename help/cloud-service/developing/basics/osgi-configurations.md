@@ -1,6 +1,6 @@
 ---
-title: AEM에서 OSGi 구성을 사용하는 방법 as a Cloud Service?
-description: AEM에서 OSGi 구성을 정의하고 배포하는 방법을 as a Cloud Service으로 살펴보십시오.
+title: AEM as a Cloud Service에서 OSGi 구성을 사용하는 방법
+description: AEM as a Cloud Service에서 OSGi 구성을 정의하고 배포하는 방법을 살펴보십시오.
 role: Developer
 level: Beginner
 type: Tutorial
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # OSGi 구성
 
-AEM에서 OSGi 구성을 정의하고 배포하는 방법을 as a Cloud Service으로 살펴보십시오.
+AEM as a Cloud Service에서 OSGi 구성을 정의하고 배포하는 방법을 살펴보십시오.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330559?quality=12&learn=on)

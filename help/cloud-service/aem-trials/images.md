@@ -15,9 +15,9 @@ ht-degree: 0%
 
 # AEM 체험판 이미지 색인
 
-이미지 파일을 `assets` 이 파일 옆에 있는 폴더입니다.
+이미지 파일은 이 파일 옆에 있는 `assets` 폴더에 넣어야 합니다.
 
 게시할 각 이미지 파일은 다음 구문을 사용하여 이 파일에서 연결해야 합니다.
 
-![체험판 이미지 개인 계정](./assets/select-personal-account.png)
-![Slack 이메일 이미지](./assets/Slack-email-image.png)
+![평가판 사용 가능 전자 메일 이미지 개인 계정](./assets/select-personal-account.png)
+![Slack 전자 메일 이미지](./assets/Slack-email-image.png)

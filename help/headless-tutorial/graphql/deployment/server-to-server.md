@@ -35,9 +35,9 @@ AEM Headless 서버 간 배포에는 AEM의 콘텐츠를 Headless 방식으로 �
 
 ## 인증 요구 사항
 
-AEM GraphQL API에 대한 승인된 요청은 다음과 같은 다른 앱 유형 때문에 일반적으로 서버 간 앱의 컨텍스트에서 발생합니다. [단일 페이지 앱](./spa.md), [모바일](./mobile.md), 또는 [웹 구성 요소](./web-component.md)는 자격 증명 보안을 유지하기 어려우므로 일반적으로 권한 부여를 사용합니다.
+[단일 페이지 앱](./spa.md), [모바일](./mobile.md) 또는 [웹 구성 요소](./web-component.md)와 같은 다른 앱 유형은 일반적으로 자격 증명 보안을 유지하기 어려우므로 권한 부여를 사용하기 때문에 AEM GraphQL API에 대한 승인된 요청은 일반적으로 서버 간 앱의 컨텍스트에서 발생합니다.
 
-AEM에 대한 요청을 as a Cloud Service으로 승인할 때 다음을 사용하십시오 [서비스 자격 증명 기반 토큰 인증](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html). AEMas a Cloud Service 에 대한 요청 인증에 대한 자세한 내용은 [토큰 기반 인증 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html). 이 튜토리얼에서는 를 사용하여 토큰 기반 인증을 탐색합니다 [AEM ASSETS HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html) 그러나 AEM Headless GraphQL API와 상호 작용하는 앱에도 동일한 개념과 접근 방식을 적용할 수 있습니다.
+AEM as a Cloud Service에 대한 요청을 승인할 때 [서비스 자격 증명 기반 토큰 인증](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html)을 사용하십시오. AEM as a Cloud Service에 대한 요청 인증에 대한 자세한 내용은 [토큰 기반 인증 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)를 검토하세요. 자습서에서는 [AEM Assets HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html)를 사용하여 토큰 기반 인증을 살펴보지만 AEM Headless GraphQL API와 상호 작용하는 앱에도 동일한 개념과 접근 방식을 적용할 수 있습니다.
 
 ## 예제 서버 간 앱
 
@@ -59,7 +59,7 @@ Adobe은 Node.js로 코딩된 서버 간 앱의 예를 제공합니다.
                    <p class="headline is-size-6 has-text-weight-bold"><a href="../example-apps/server-to-server-app.md" title="서버 간 앱">서버 간 앱</a></p>
                    <p class="is-size-6">AEM Headless GraphQL API의 콘텐츠를 사용하는 Node.js로 작성된 예제 서버 간 앱입니다.</p>
                    <a href="../example-apps/server-to-server-app.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-                       <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">보기 예</span>
+                       <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">예제 보기</span>
                    </a>
                </div>
            </div>

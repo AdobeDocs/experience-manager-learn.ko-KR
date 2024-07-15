@@ -28,10 +28,10 @@ AEM Forms에서 Acrobat Sign 사용
 
 >[!VIDEO](https://video.tv.adobe.com/v/18696?quality=12&learn=on)
 
-*이 비디오는 Acrobat Sign 클라우드 서비스를 설정하고 AEM 적응형 양식에 여러 서명 필드를 추가하는 프로세스를 안내합니다.*
+*이 비디오에서는 Acrobat Sign 클라우드 서비스를 설정하고 AEM 적응형 양식에 여러 서명 필드를 추가하는 과정을 안내합니다.*
 
 >[!NOTE]
 >
 >이 기능은 AEM 6.3 이상에서만 사용할 수 있습니다.
 
-다음을 방문하십시오. [AEM Forms 샘플](https://forms.enablementadobe.com/content/samples/samples.html?query=0#formsandsign) 이 기능의 라이브 데모 링크 페이지.
+이 기능의 라이브 데모에 대한 링크를 보려면 [AEM Forms 샘플](https://forms.enablementadobe.com/content/samples/samples.html?query=0#formsandsign) 페이지를 방문하십시오.

@@ -8,35 +8,35 @@ version: Cloud Service
 feature: Adaptive Forms
 topic: Development
 jira: KT-15752
-source-git-commit: a8fc8fa19ae19e27b07fa81fc931eca51cb982a1
+exl-id: 280c9a30-e017-4bc0-9027-096aac82c22c
+source-git-commit: a12b1778413079646814cb25567abfc26a429340
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 1%
 
 ---
 
-
 # 주소 구성 요소 만들기
 
 AEM Forms 로컬 클라우드 준비 인스턴스의 CRXDE에 로그인합니다.
 
-다음을 복사하십시오. ``/apps/bankingapplication/components/adaptiveForm/button`` node로 변경하고 이름을 addressblock으로 변경합니다. addressblock 노드를 선택하고 아래와 같이 속성을 설정합니다.
+``/apps/bankingapplication/components/adaptiveForm/button`` 노드의 복사본을 만들고 이름을 주소 블록으로 바꿉니다. addressblock 노드를 선택하고 아래와 같이 속성을 설정합니다.
 
 >[!NOTE]
 >
-> ``bankingapplication`` 는 Maven 프로젝트를 만들 때 제공된 appId입니다. 이 appId는 사용자 환경에서 다를 수 있습니다. 구성 요소를 복사할 수 있습니다. 버튼 구성 요소를 복사했습니다.
+> ``bankingapplication``은(는) Maven 프로젝트를 만들 때 제공된 appId입니다. 이 appId는 사용자 환경에서 다를 수 있습니다. 구성 요소를 복사할 수 있습니다. 버튼 구성 요소를 복사했습니다.
 
 
-![주소 블록](assets/address-properties.png)
+![address-bloc](assets/address-properties.png)
 
 ## cq-template 노드 속성
 
-다음 항목 선택 ``cq-template`` 노드 아래의 ``addressblock`` 노드 를 만들고 아래와 같이 속성을 설정합니다. fieldType이 panel로 설정된 것을 확인합니다.
+``addressblock`` 노드 아래에서 ``cq-template`` 노드를 선택하고 아래와 같이 속성을 설정합니다. fieldType이 panel로 설정된 것을 확인합니다.
 ![cq-template](assets/cq-template.png)
 
 ## cq-template 아래에 노드 추가
 
-유형의 다음 노드 추가 ``nt:unstructured`` 아래에 ``cq-template``
+``cq-template`` 아래에 ``nt:unstructured`` 유형의 다음 노드 추가
 
 * 주소
 * 도시
@@ -49,24 +49,24 @@ AEM Forms 로컬 클라우드 준비 인스턴스의 CRXDE에 로그인합니다
 
 >[!NOTE]
 >
-> 다음 **_은행 애플리케이션_** 경로에서 는 maven 프로젝트의 appId를 나타냅니다. 이는 귀하의 환경에서 다를 수 있습니다
+> 경로의 **_bankingapplication_**&#x200B;은(는) Maven 프로젝트의 appId를 참조합니다. 이는 귀하의 환경에서 다를 수 있습니다
 
-다음 항목 선택 ``streetaddress`` 노드 를 만들고 아래와 같이 속성을 설정합니다.
+``streetaddress`` 노드를 선택하고 아래와 같이 해당 속성을 설정합니다.
 ![주소](assets/streetaddress.png)
 
 ## 도시 노드의 속성 설정
 
-다음 항목 선택 ``city`` 노드 를 만들고 아래와 같이 속성을 설정합니다.
+``city`` 노드를 선택하고 아래와 같이 해당 속성을 설정합니다.
 ![도시](assets/city.png)
 
 ## zip 노드의 속성 설정
 
-다음 항목 선택 ``zip`` 노드 를 만들고 아래와 같이 속성을 설정합니다.
+``zip`` 노드를 선택하고 아래와 같이 해당 속성을 설정합니다.
 ![zip](assets/zip.png)
 
 ## 상태 노드의 속성 설정
 
-다음 항목 선택 ``state`` 노드 를 만들고 아래와 같이 속성을 설정합니다. fieldType of state - 가 드롭다운으로 설정되어 있습니다.
+``state`` 노드를 선택하고 아래와 같이 해당 속성을 설정합니다. fieldType of state - 가 드롭다운으로 설정되어 있습니다.
 ![상태](assets/state.png)
 
 최종 주소 블록 구성 요소는 다음과 같이 표시됩니다
@@ -76,7 +76,3 @@ AEM Forms 로컬 클라우드 준비 인스턴스의 CRXDE에 로그인합니다
 ## 다음 단계
 
 [프로젝트 배포](./deploy-your-project.md)
-
-
-
-

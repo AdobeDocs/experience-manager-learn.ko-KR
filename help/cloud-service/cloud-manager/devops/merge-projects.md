@@ -1,6 +1,6 @@
 ---
 title: Github Desktop을 사용하여 AEM 프로젝트 병합
-description: AEM Github Desktop을 사용하여 여러 프로젝트를 단일 프로젝트로 병합하여 Cloud Manager를 사용하여 as a Cloud Service으로 배포하는 방법에 대해 알아봅니다.
+description: Github Desktop을 사용하여 여러 프로젝트를 단일 프로젝트로 병합하여 Cloud Manager을 사용하여 AEM as a Cloud Service에 배포하는 방법에 대해 알아봅니다.
 role: Developer
 level: Beginner
 type: Tutorial
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# Cloud Manager를 사용하여 배포를 위해 AEM 프로젝트 병합
+# Cloud Manager을 사용하여 배포를 위해 AEM 프로젝트 병합
 
-AEM Cloud Manager를 사용하여 여러 프로젝트를 단일 프로젝트로 병합하여 as a Cloud Service으로 배포하는 방법에 대해 알아봅니다.
+Cloud Manager을 사용하여 여러 프로젝트를 단일 프로젝트로 병합하여 AEM as a Cloud Service에 배포하는 방법에 대해 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330535?quality=12&learn=on)

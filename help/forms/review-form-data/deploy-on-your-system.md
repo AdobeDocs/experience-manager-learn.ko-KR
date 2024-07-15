@@ -19,10 +19,10 @@ ht-degree: 0%
 
 # 시스템에 자산 배포
 
-배포 [summarize-component](assets/summarize-component.zip).
+[summarize-component](assets/summarize-component.zip)을(를) 배포합니다.
 
-[샘플 적응형 양식 배포](assets/sample-adaptive-form.zip).
+[샘플 적응형 양식을 배포](assets/sample-adaptive-form.zip).
 
 [샘플 양식 미리 보기](http://localhost:4502/content/dam/formsanddocuments/testsummary/jcr:content?wcmmode=disabled)
 
-양식 필드를 입력하고 다음을 클릭하여 요약 화면으로 이동합니다. **다음** 단추를 클릭하여 양식 데이터 검토를 확인합니다. 연필 아이콘을 클릭하여 양식 데이터를 편집할 수도 있습니다.
+양식 필드를 채우고 **다음** 단추를 클릭하여 요약 화면으로 이동하여 양식 데이터 검토를 확인합니다. 연필 아이콘을 클릭하여 양식 데이터를 편집할 수도 있습니다.

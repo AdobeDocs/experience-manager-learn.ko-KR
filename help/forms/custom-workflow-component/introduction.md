@@ -30,4 +30,4 @@ ht-degree: 4%
 
 ## 다음 단계
 
-작성하기 [WorkflowProcess 인터페이스를 구현하여 사용자 지정 java 코드](./custom-process-step-aem-workflow.md)
+WorkflowProcess 인터페이스를 구현하여 [사용자 지정 Java 코드를 작성합니다](./custom-process-step-aem-workflow.md)

@@ -1,5 +1,5 @@
 ---
-title: Assets Essentials에서의 공동 작업
+title: Assets Essentials의 Collaboration
 description: 주석, 주석 및 작업을 사용하여 자산 관리 내에서 공동 작업하는 방법을 알아봅니다.
 version: Cloud Service
 feature: Assets Essentials
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ---
 
-# Assets Essentials에서의 공동 작업
+# Assets Essentials의 Collaboration
 
 댓글, 주석 및 작업을 사용하여 에셋 관리에 대해 공동 작업하는 방법을 알아봅니다.
 

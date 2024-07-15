@@ -30,7 +30,7 @@ Adobe Analytics에서 캡처한 양식 데이터는 도넛 형식으로 표시�
 
 **상태별 제출**
 
-![applicentsbystate](assets/donut.png)
+![applicantsbystate](assets/donut.png)
 
 필드 유효성 검사 오류
 
@@ -51,14 +51,14 @@ _satellite.setDebug(true)
 
 콘솔 창을 열어 놓고 양식과 상호 작용합니다. 이런 걸 보셔야겠네요
 
-![콘솔 디버그](assets/debug.png)
+![console-debug](assets/debug.png)
 
 ## Adobe Experience Platform Debugger 사용
 
-추가 [AEP 디버거 확장](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) (로그인해야 함) 브라우저에 연결하여 더 많은 디버깅 정보를 얻을 수 있습니다
+자세한 디버깅 정보를 보려면 [AEP 디버거 확장](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html)을 브라우저에 추가하십시오(로그인해야 함)
 
-![플랫폼 디버거](assets/platform-debugger.png)
+![platform-debugger](assets/platform-debugger.png)
 
 ## 축하합니다.
 
-AEM Forms as a Cloud Service을 Adobe Analytics과 통합하여 양식 데이터 필드에 대해 보고했습니다.
+양식 데이터 필드에 보고할 AEM Formsas a Cloud Service 와 Adobe Analytics을 통합했습니다.

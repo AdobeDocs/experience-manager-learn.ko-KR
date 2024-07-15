@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ## AEM Assets이 있는 폐쇄형 사용자 그룹(CUG)
 
-* AEM 게시 인스턴스의 자산에 대한 액세스를 제한하도록 설계되었습니다.
+* AEM Publish 인스턴스의 자산에 대한 액세스를 제한하도록 설계되었습니다.
 * 사용자/그룹 집합에 대한 읽기 액세스 권한을 부여합니다.
 * CUG는 폴더 수준에서만 구성할 수 있습니다. 개별 자산에 대해 CUG를 설정할 수 없습니다.
 * CUG 정책은 하위 폴더 및 적용된 에셋에 의해 자동으로 상속됩니다.
@@ -39,12 +39,12 @@ CUG(폐쇄형 사용자 그룹)와 ACL(액세스 제어 목록)은 모두 AEM의
 
 |                   | ACL | CUG |
 | ----------------- | -------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| 의도한 사용 | 에서 콘텐츠에 대한 권한 구성 및 적용 **현재** AEM 인스턴스. | AEM의 콘텐츠에 대한 CUG 정책 구성 **작성자** 인스턴스. AEM의 콘텐츠에 대한 CUG 정책 적용 **게시** 인스턴스. |
-| 권한 수준 | 읽기, 수정, 만들기, 삭제, ACL 읽기, ACL 편집, 복제와 같은 모든 수준의 사용자/그룹에 대해 부여되거나 거부된 권한을 정의합니다. | 사용자/그룹 집합에 대한 읽기 액세스 권한을 부여합니다. 에 대한 읽기 액세스 거부 *다른 모든 항목* 사용자/그룹. |
-| 발행 | ACL은 *아님* 컨텐츠와 함께 게시되었습니다. | CUG 정책 *은(는)* 컨텐츠와 함께 게시되었습니다. |
+| 의도한 사용 | **현재** AEM 인스턴스의 콘텐츠에 대한 권한을 구성하고 적용하십시오. | AEM **작성자** 인스턴스의 콘텐츠에 대한 CUG 정책을 구성합니다. AEM **publish** 인스턴스의 콘텐츠에 대한 CUG 정책을 적용합니다. |
+| 권한 수준 | 읽기, 수정, 만들기, 삭제, ACL 읽기, ACL 편집, 복제와 같은 모든 수준의 사용자/그룹에 대해 부여되거나 거부된 권한을 정의합니다. | 사용자/그룹 집합에 대한 읽기 액세스 권한을 부여합니다. *다른 모든* 사용자/그룹에 대한 읽기 액세스를 거부합니다. |
+| 발행 | ACL이 콘텐츠로 게시된 *not*&#x200B;입니다. | CUG 정책 *은(는)* 콘텐츠로 게시되었습니다. |
 
 ## 지원 링크 {#supporting-links}
 
-* [에셋 및 폐쇄형 사용자 그룹 관리](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=en#closed-user-group)
-* [폐쇄된 사용자 그룹 생성](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html)
-* [Oak 폐쇄된 사용자 그룹 설명서](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html)
+* [Assets 및 폐쇄된 사용자 그룹 관리](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=en#closed-user-group)
+* [폐쇄된 사용자 그룹 만들기](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html)
+* [Oak 폐쇄 사용자 그룹 설명서](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html)

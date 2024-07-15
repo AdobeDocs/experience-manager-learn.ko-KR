@@ -19,14 +19,14 @@ ht-degree: 18%
 
 + [개요](overview.md)
 
-+ 구성{#configuring}
++ {#configuring} 구성 중
    + [기준선 폴더](configuring/baseline-folders.md)
    + [기준선 권한](configuring/baseline-permissions.md)
    + [태그 지정](configuring/tagging.md)
    + [메타데이터 스키마](configuring/metadata-schemas.md)
    + [메타데이터 프로필](configuring/metadata-profiles.md)
    + [메타데이터 폴더 스키마](configuring/metadata-folder-schemas.md)
-   + [자산 관리자 검색 레일](configuring/assets-admin-search-rail.md)
+   + [Assets 관리자 검색 레일](configuring/assets-admin-search-rail.md)
    + [처리 프로필](configuring/processing-profiles.md)
    + [자동 시작 워크플로우](configuring/auto-start-workflows.md)
 
@@ -38,7 +38,7 @@ ht-degree: 18%
    + [렌디션](./authoring/renditions.md)
    + [연결 및 연결 해제](./authoring/relate-unrelate.md)
 
-+ 공동 작업{#collaboration}
++ Collaboration{#collaboration}
    + [시청하기](./collaboration/watch.md)
    + [타임라인 및 받은 편지함](./collaboration/timeline-and-inbox.md)
    + [주석 및 주석](./collaboration/comments-and-annotations.md)
@@ -55,9 +55,9 @@ ht-degree: 18%
    + [유사한 이미지 찾기](./search-and-discovery/find-similar-images.md)
 
 + 고급 기능{#advanced}
-   + [3D 자산](./advanced/3d-assets.md)
+   + [3D Assets](./advanced/3d-assets.md)
    + [주석 PDF 출력](./advanced/customizing-annotations-pdf-output.md)
-   + [자산 보고서](./advanced/asset-reports.md)
+   + [Assets 보고서](./advanced/asset-reports.md)
    + [차단된 태그](./advanced/blocked-tags.md)
    + [아카이브 추출](./advanced/extract-archive.md)
    + [권한(CUG)](./advanced/closed-user-groups.md)
@@ -75,7 +75,7 @@ ht-degree: 18%
    + [Sidekick 플러그인](./edge-delivery-services/sidekick-plugin.md)
 
 + 공유 및 배포{#sharing}
-   + [에셋 다운로드](./sharing/download.md)
+   + [Assets 다운로드](./sharing/download.md)
    + [자산 내보내기](./sharing/export.md)
    + [에셋 게시](./sharing/publish.md)
 
@@ -97,7 +97,7 @@ ht-degree: 18%
    + [Adobe 에셋 링크](./creative-workflows/adobe-asset-link.md)
    + [Adobe Stock](./creative-workflows/adobe-stock.md)
 
-+ Adobe 에셋 링크{#adobe-asset-link}
++ Adobe 자산 링크{#adobe-asset-link}
    + [설정](./adobe-asset-link/setup.md)
    + [Adobe 에셋 링크 액세스](./adobe-asset-link/launch-adobe-asset-link.md)
    + [패널 개요](./adobe-asset-link/panel-overview.md)
@@ -135,7 +135,7 @@ ht-degree: 18%
       + [Adobe Analytics이 있는 뷰어](dynamic-media/dynamic-media-viewer-extension-use.md)
    + 3D {#3d}
       + [Dynamic Media 3D](dynamic-media/dynamic-media-3d-feature-video.md)
-   + AEM Sites에 사용 {#dm-with-aem-sites}
+   + AEM Sites {#dm-with-aem-sites}에서 사용
       + [경험 조각](dynamic-media/dynamic-media-experience-fragments-feature-video-use.md)
       + [Dynamic Media 핵심 구성 요소](dynamic-media/dynamic-media-core-components.md)
 
@@ -145,14 +145,14 @@ ht-degree: 18%
       + [이미지 사전 설정 만들기](dynamic-media/tutorials/creating-image-presets.md)
       + [스마트 자르기 이미지 프로필 만들기](dynamic-media/tutorials/creating-image-profile-smart-crop.md)
       + [비디오 프로필 만들기](dynamic-media/tutorials/creating-video-profile-to-process-videos-in-dynamic-media.md)
-      + [자산 처리 중](dynamic-media/tutorials/how-to-run-dam-update-asset-workflow-on-an-asset-with-dynamic-media-enabled.md)
+      + [Assets 처리 중](dynamic-media/tutorials/how-to-run-dam-update-asset-workflow-on-an-asset-with-dynamic-media-enabled.md)
       + [보안 미리 보기 서버 구성](dynamic-media/tutorials/adding-test-image-server-details-in-dynamic-media-for-secure-preview.md)
       + [URL 및 포함 코드 생성](dynamic-media/tutorials/how-to-generate-public-url-or-embed-code-for-an-asset.md)
       + [내보내기 작업 트리거](dynamic-media/tutorials/how-to-trigger-export-job-in-dynamic-media-during-submit-job-operation-parameter.md)
       + [CDN 캐시 무효화](dynamic-media/tutorials/invalidating-the-cdn-cache-by-way-of-dynamic-media.md)
       + [Dynamic Media 핵심 구성 요소 사용](dynamic-media/tutorials/using-dm-components-on-site-page.md)
       + [Dynamic Media 구성 삭제](dynamic-media/tutorials/deleting-dynamic-media-configuration.md)
-      + [Dynamic Media Classic 앱에서 에셋 다운로드](dynamic-media/tutorials/how-to-download-asset-in-dynamic-media-classic-app.md)
+      + [Dynamic Media Classic 앱에서 Assets 다운로드](dynamic-media/tutorials/how-to-download-asset-in-dynamic-media-classic-app.md)
       + [DYNAMIC MEDIA CLASSIC IPS API](dynamic-media/tutorials/introduction-to-dynamic-media-classic-ips-api.md)
 
 + Workfront 통합{#workfront}
@@ -167,7 +167,7 @@ ht-degree: 18%
          + [고급 설정 및 워크플로](./workfront/enhanced-connector/aem-experts-series/advanced-settings-and-workflows.md)
 
 + 번역 {#translation}
-   + [소스 파일 변환](translation/source-file-translation-feature-video-use.md)
+   + [Source 파일 번역](translation/source-file-translation-feature-video-use.md)
    + [스마트 번역 검색](translation/smart-translation-search-feature-video-use.md)
    + [스마트 번역 검색 설정](translation/smart-translation-search-technical-video-setup.md)
 

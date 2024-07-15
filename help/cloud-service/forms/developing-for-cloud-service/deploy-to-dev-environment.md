@@ -39,7 +39,7 @@ Cloud Manager에 로그인하고 프로그램을 선택합니다.
 변경 사항을 업데이트해야 합니다.
 
 파이프라인 실행
-![실행 파이프라인](assets/run-pipeline.png)
+![파이프라인 실행](assets/run-pipeline.png)
 
 코드가 배포되면 AEM Forms의 클라우드 서비스 인스턴스에 변경 사항이 표시됩니다.
 

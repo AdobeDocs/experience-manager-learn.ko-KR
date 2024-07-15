@@ -1,6 +1,6 @@
 ---
 title: AEM as a Cloud Service 콘텐츠 마이그레이션 FAQ
-description: AEM으로의 콘텐츠 마이그레이션에 대한 FAQ에 대한 답변을 as a Cloud Service으로 제공합니다.
+description: AEM as a Cloud Service으로의 콘텐츠 마이그레이션에 대해 자주 묻는 질문에 대한 답변을 얻으십시오.
 version: Cloud Service
 doc-type: article
 topic: Migration
@@ -20,14 +20,14 @@ ht-degree: 0%
 
 # AEM as a Cloud Service 콘텐츠 마이그레이션 FAQ
 
-AEM으로의 콘텐츠 마이그레이션에 대한 FAQ에 대한 답변을 as a Cloud Service으로 제공합니다.
+AEM as a Cloud Service으로의 콘텐츠 마이그레이션에 대해 자주 묻는 질문에 대한 답변을 얻으십시오.
 
 ## 용어
 
 + **AEMaaCS**: [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/introduction.html)
 + **BPA**: [모범 사례 분석기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html)
-+ **CTT**: [컨텐츠 전송 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html)
-+ **캠**: [Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html)
++ **CTT**: [콘텐츠 전송 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html)
++ **CAM**: [Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html)
 + **IMS**: [Identity Management 시스템](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html)
 + **DM**: [Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-journey/dm-journey-part1.html)
 
@@ -43,17 +43,17 @@ CTT 관련 Adobe 지원 티켓을 만드는 동안 자세한 내용을 제공하
 
 + 컨텐츠 전송 도구 사용(AEM 6.3 이상 → AEMaaCS)
 + 패키지 관리자를 통해(AEM → AEMaaCS)
-+ Assets(S3/Azure → AEMaaCS)에 대한 기본 제공 일괄 가져오기 서비스
++ Assets(S3/Azure → AEMaaCS)용 벌크 가져오기 서비스 기본 제공
 
 ### 질문: CTT를 사용하여 전송할 수 있는 콘텐츠 양에 제한이 있습니까?
 
 아니. 도구로서의 CTT는 AEM 소스에서 추출하여 AEMaaCS로 수집할 수 있습니다. 그러나 AEMaaCS 플랫폼에는 마이그레이션 전에 고려해야 하는 특정 제한이 있습니다.
 
-자세한 내용은 다음을 참조하십시오. [클라우드 마이그레이션 사전 요구 사항](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html).
+자세한 내용은 [클라우드 마이그레이션 사전 요구 사항](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html)을 참조하세요.
 
 ### Q: 소스 시스템의 최신 BPA 보고서가 있습니다. 이 보고서를 어떻게 해야 합니까?
 
-보고서를 CSV로 내보낸 다음 Cloud Acceleration Manager에 업로드합니다. [IMS 조직과 연계됨](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html). 그런 다음 검토 프로세스를 다음과 같이 진행합니다. [준비 단계에 요약됨](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html).
+보고서를 CSV로 내보낸 다음 IMS 조직과 연결된 [Cloud Acceleration Manager에 업로드합니다](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html). 그런 다음 [준비 단계](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html)에 요약된 대로 검토 프로세스를 진행합니다.
 
 도구에서 제공하는 코드 및 콘텐츠 복잡성 평가를 검토하고 코드 리팩터링 백로그 또는 클라우드 마이그레이션 평가를 초래하는 관련 작업 항목을 기록해 두십시오.
 
@@ -79,9 +79,9 @@ CTT 추출 프로세스에 사용되는 리소스의 양은 노드 수, Blob 수
 
 ### Q: CTT의 컨텍스트에서 &quot;지우기&quot;와 &quot;덮어쓰기&quot;라는 용어는 무엇을 의미합니까?
 
-의 맥락에서 [추출 단계](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#extraction-setup-phase), 옵션은 이전 추출 주기에서 스테이징 컨테이너의 데이터를 덮어쓰거나 차등(추가/업데이트/삭제)을 추가합니다. 스테이징 컨테이너는 아무것도 아니지만 마이그레이션 세트와 연결된 Blob 저장소 컨테이너입니다. 각 마이그레이션 세트는 고유한 스테이징 컨테이너를 가져옵니다.
+[추출 단계](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#extraction-setup-phase)의 컨텍스트에서 옵션은 이전 추출 주기에서 스테이징 컨테이너의 데이터를 덮어쓰거나 차등(추가/업데이트/삭제)을 추가하는 것입니다. 스테이징 컨테이너는 아무것도 아니지만 마이그레이션 세트와 연결된 Blob 저장소 컨테이너입니다. 각 마이그레이션 세트는 고유한 스테이징 컨테이너를 가져옵니다.
 
-의 맥락에서 [수집 단계](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html), AEMaaCS의 전체 콘텐츠 저장소를 대체하거나 스테이징 마이그레이션 컨테이너에서 차등(추가/업데이트/삭제) 콘텐츠를 동기화하는 옵션은 +입니다.
+[수집 단계](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html)의 컨텍스트에서 옵션은 + 이며, AEMaaCS의 전체 콘텐츠 저장소를 바꾸거나 스테이징 마이그레이션 컨테이너에서 차등(추가/업데이트/삭제) 콘텐츠를 동기화합니다.
 
 ### Q: 소스 시스템에는 여러 웹 사이트, 관련 에셋, 사용자, 그룹이 있습니다. AEMaaCS로 단계적으로 마이그레이션할 수 있습니까?
 
@@ -103,21 +103,21 @@ CTT 추출 프로세스에 사용되는 리소스의 양은 노드 수, Blob 수
 
 예. 원본 렌디션이 누락되었다는 것은 에셋 바이너리가 애초에 제대로 업로드되지 않았다는 것을 의미합니다. 잘못된 데이터로 간주하여 필요한 경우 패키지 관리자를 사용하여 백업을 검토하고 소스 AEM에서 제거한 후 추출을 실행하십시오. 잘못된 데이터는 에셋 처리 단계에 부정적인 결과를 갖게 됩니다.
 
-### Q: BPA 보고서에 누락과 관련된 항목이 있습니다 `jcr:content` 폴더 노드. 어떻게 해야 하나요?
+### Q: BPA 보고서에 폴더에 대한 `jcr:content` 노드 누락과 관련된 항목이 있습니다. 어떻게 해야 하나요?
 
-날짜 `jcr:content` 은(는) 폴더 수준, 처리 프로필 등과 같은 설정을 전달하는 모든 작업에서 누락됩니다. 부모로부터 받는 것이 이 수준에서 깨질 것이다. 누락된 이유를 검토해 주십시오. `jcr:content`. 이러한 폴더는 마이그레이션할 수 있지만 사용자 환경이 저하되고 나중에 불필요한 문제 해결 주기가 발생할 수 있습니다.
+`jcr:content`이(가) 폴더 수준에서 누락된 경우 처리 프로필 등과 같은 설정을 전파하는 모든 동작이 수행됩니다. 부모로부터 받는 것이 이 수준에서 깨질 것이다. `jcr:content`이(가) 누락된 이유를 검토하십시오. 이러한 폴더는 마이그레이션할 수 있지만 사용자 환경이 저하되고 나중에 불필요한 문제 해결 주기가 발생할 수 있습니다.
 
 ### Q: 마이그레이션 세트를 만들었습니다. 사이즈 확인이 가능한가요?
 
-예, 다음 항목이 있습니다. [크기 확인](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#migration-set-size) ctt의 일부인 피쳐입니다.
+예. CTT의 일부인 [크기 확인](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#migration-set-size) 기능이 있습니다.
 
 ### Q: 마이그레이션(추출, 수집)을 수행하고 있습니다. 추출된 모든 콘텐츠가 타겟에 수집되는지 확인할 수 있습니까?
 
-예, 다음 항목이 있습니다. [유효성 검사](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html) CTT의 일부인 피쳐입니다.
+예. CTT의 일부인 [유효성 검사](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html) 기능이 있습니다.
 
 ### Q: 내 고객은 AEMaaCS Dev에서 AEMaaCS Stage 또는 AEMaaCS Prod와 같은 AEMaaCS 환경 간에 콘텐츠를 이동해야 합니다. 이러한 사용 사례에 콘텐츠 전송 도구를 사용할 수 있습니까?
 
-불행히도, 아닙니다. CTT의 사용 사례는 온-프레미스/AMS 호스팅 AEM 6.3+ 소스에서 AEMaaCS 클라우드 환경으로 콘텐츠를 마이그레이션하는 것입니다. [CTT 설명서를 참조하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html).
+불행히도, 아닙니다. CTT의 사용 사례는 온-프레미스/AMS 호스팅 AEM 6.3+ 소스에서 AEMaaCS 클라우드 환경으로 콘텐츠를 마이그레이션하는 것입니다. [CTT 설명서를 읽어보세요](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html).
 
 ### 질문: 추출 중에 예상되는 문제는 무엇입니까?
 
@@ -139,14 +139,14 @@ CTT 추출 프로세스에 사용되는 리소스의 양은 노드 수, Blob 수
 
 ### Q: CTT가 작동하려면 소스 서버에 아웃바운드 인터넷 연결이 있어야 합니까?
 
-간단한 대답은 &quot;**예**&quot;.
+짧은 대답은 &quot;**예**&quot;입니다.
 
 CTT 프로세스에는 아래 리소스에 대한 연결이 필요합니다.
 
 + 대상 AEM as a Cloud Service 환경: `author-p<program_id>-e<env_id>.adobeaemcloud.com`
-+ Azure Blob 스토리지 서비스: `casstorageprod.blob.core.windows.net`
++ Azure Blob 저장소 서비스: `casstorageprod.blob.core.windows.net`
 
-에 대한 자세한 내용은 설명서 를 참조하십시오 [소스 연결](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#source-environment-connectivity).
+[소스 연결](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#source-environment-connectivity)에 대한 자세한 내용은 설명서를 참조하세요.
 
 ## 에셋 처리 Dynamic Media 관련 질문
 
@@ -166,7 +166,7 @@ CTT 프로세스에는 아래 리소스에 대한 연결이 필요합니다.
 + 소스 클론 인스턴스에서 마이그레이션하는 방법이라면 CTT에 사용할 클론에서 DM 통합을 비활성화하는 것이 안전합니다. 이 단계는 DM에 대한 쓰기를 방지하거나 DM 트래픽에 대한 로드를 방지하기 위한 것입니다.
 + CTT는 소스 AEM에서 AEMaaCS로 마이그레이션 세트의 메타데이터인 노드를 마이그레이션합니다. DM에서 직접 작업을 수행하지 않습니다.
 
-### Q: 소스 AEM에 DM 통합이 있을 때 다른 마이그레이션 접근 방식은 무엇입니까?
+### Q: Source AEM에 DM 통합이 있을 때 다른 마이그레이션 접근 방식은 무엇입니까?
 
 위의 질문과 답변을 미리 읽어주시기 바랍니다
 
@@ -177,10 +177,10 @@ CTT 프로세스에는 아래 리소스에 대한 연결이 필요합니다.
 소스 환경의 자산/노드 수가 하단(~100K)에 있는 경우, 추출 및 수집을 포함하여 24 + 72시간 동안 마이그레이션할 수 있다고 가정할 때 더 나은 접근 방식이 제공됩니다.
 
 + 프로덕션에서 직접 마이그레이션 수행
-+ 다음을 사용하여 AEMaaCS로 초기 추출 및 수집 실행 `wipe=true`
++ `wipe=true`을(를) 사용하여 AEMaaCS로 초기 추출 및 수집 실행
    + 이 단계에서는 모든 노드 및 바이너리를 마이그레이션합니다.
 + 온-프레미스/AMS Prod 작성자 작업 계속
-+ 이제부터 다음을 사용하여 다른 모든 마이그레이션 증명 주기를 실행합니다. `wipe=true`
++ 지금부터 `wipe=true`을(를) 사용하여 다른 모든 마이그레이션 증명 주기를 실행합니다.
    + 이 작업은 전체 노드 저장소를 마이그레이션하지만 전체 Blob이 아닌 수정된 Blob만 마이그레이션합니다. 대상 AEMaaCS 인스턴스의 Azure blob 저장소에 이전 Blob 집합이 있습니다.
    + 이 마이그레이션 증명을 사용하여 마이그레이션 기간 측정, 테스트, 기타 모든 기능 검증
 + 마지막으로 Go-Live가 있는 주 전에 Wipe=true 마이그레이션을 수행합니다.
@@ -207,8 +207,8 @@ CTT 프로세스에는 아래 리소스에 대한 연결이 필요합니다.
 
 ## 추가 리소스
 
-+ [클라우드에서 Experience Manager으로 마이그레이션하기 위한 팁과 요령 ( Summit 2022)](https://business.adobe.com/summit/2022/sessions/tips-and-tricks-for-migrating-to-experience-manage-tw109.html)
++ [클라우드에서 Experience Manager으로 마이그레이션하기 위한 팁과 요령( Summit 2022)](https://business.adobe.com/summit/2022/sessions/tips-and-tricks-for-migrating-to-experience-manage-tw109.html)
 
 + [CTT 전문가 시리즈 비디오](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/content-migration/content-transfer-tool.html)
 
-+ [기타 AEMaaCS 주제에 대한 전문가 시리즈 비디오](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-experts-series.html)
++ [다른 AEMaaCS 주제에 대한 전문가 시리즈 비디오](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-experts-series.html)

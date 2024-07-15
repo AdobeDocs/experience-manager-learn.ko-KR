@@ -25,7 +25,8 @@ AEM Forms 데이터 통합을 사용하면 서로 다른 데이터 소스를 구
 1. AEM 사용자 프로필
 1. RESTful 웹 서비스
 1. SOAP 기반 웹 서비스
-1. OData 서비스 이 문서에서는 AEM 사용자 프로필 정보를 적응형 Forms과 통합하는 방법을 중점적으로 다룹니다.
+1. OData 서비스
+이 문서에서는 AEM 사용자 프로필 정보를 적응형 Forms과 통합하는 방법을 중점적으로 다룹니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17432?quality=12&learn=on)
 

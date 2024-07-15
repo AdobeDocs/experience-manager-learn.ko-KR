@@ -75,22 +75,22 @@ public class MyFirstAEMFormsServlet extends SlingAllMethodsServlet
 
 프로젝트를 빌드하려면 다음 단계를 따르십시오.
 
-* 열기 **명령 프롬프트 창**
-* 다음으로 이동 `c:\aemformsbundles\mysite\core`
-* 명령 실행 `mvn clean install -PautoInstallBundle`
+* **명령 프롬프트 창** 열기
+* `c:\aemformsbundles\mysite\core`(으)로 이동
+* `mvn clean install -PautoInstallBundle` 명령 실행
 * 위의 명령은 localhost:4502에서 실행 중인 AEM 인스턴스에 번들을 자동으로 빌드하고 배포합니다.
 
-번들은 다음 위치에서도 사용할 수 있습니다 `C:\AEMFormsBundles\mysite\core\target`. 번들은 다음을 사용하여 AEM에 배포할 수도 있습니다. [Felix 웹 콘솔.](http://localhost:4502/system/console/bundles)
+다음 위치 `C:\AEMFormsBundles\mysite\core\target`에서도 번들을 사용할 수 있습니다. [Felix 웹 콘솔을 사용하여 AEM에 번들을 배포할 수도 있습니다.](http://localhost:4502/system/console/bundles)
 
 
 ## Servlet Resolver 테스트
 
-브라우저를 가리켜 [servlet resolver URL](http://localhost:4502/system/console/servletresolver?url=%2Fbin%2FmergedataWithAcroform&amp;method=POST). 아래 스크린샷에 표시된 대로 주어진 경로에 대해 호출되는 서블릿을 알려줍니다
+브라우저를 [servlet resolver URL](http://localhost:4502/system/console/servletresolver?url=%2Fbin%2FmergedataWithAcroform&amp;method=POST)로 지정합니다. 아래 스크린샷에 표시된 대로 주어진 경로에 대해 호출되는 서블릿을 알려줍니다
 ![servlet-resolver](assets/servlet-resolver.JPG)
 
 ## Postman을 사용하여 서블릿 테스트
 
-![Postman을 사용하여 서블릿 테스트](assets/test-servlet-postman.JPG)
+![Postman을 사용하여 서블릿을 테스트합니다](assets/test-servlet-postman.JPG)
 
 ## 다음 단계
 

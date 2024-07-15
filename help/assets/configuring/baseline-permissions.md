@@ -21,6 +21,6 @@ ht-degree: 0%
 
 # 기준선 권한
 
-에 대한 사용자 액세스 관리 [기준 자산 폴더](./baseline-folders.md) 는 거버넌스의 중요한 측면이며, 프로세스가 제대로 지원되도록 합니다.
+[기본 자산 폴더](./baseline-folders.md)에서 사용자 액세스를 관리하는 것은 거버넌스의 중요한 측면이며 프로세스가 제대로 지원되도록 합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/37696?quality=12&learn=on)

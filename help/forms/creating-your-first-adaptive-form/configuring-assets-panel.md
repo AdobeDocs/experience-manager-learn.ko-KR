@@ -1,6 +1,6 @@
 ---
-title: 에셋 섹션에 구성 요소 추가 섹션
-description: 에셋 패널에 대한 아코디언 레이아웃을 구성합니다.아코디언 레이아웃은 반복 가능한 섹션을 추가하는 데 더 나은 최종 사용자 경험을 제공합니다.
+title: Assets 섹션에 구성 요소 추가
+description: Assets 패널에 대한 아코디언 레이아웃을 구성합니다.아코디언 레이아웃은 반복 가능한 섹션을 추가하는 데 더 나은 최종 사용자 경험을 제공합니다.
 feature: Adaptive Forms
 version: 6.4,6.5
 jira: KT-4212
@@ -17,11 +17,11 @@ ht-degree: 3%
 
 ---
 
-# 에셋 패널에 구성 요소 추가 {#adding-components-to-assets-section}
+# Assets 패널에 구성 요소 추가 {#adding-components-to-assets-section}
 
-에셋 패널에 대한 아코디언 레이아웃을 구성합니다.아코디언 레이아웃은 반복 가능한 섹션을 추가하는 데 더 나은 최종 사용자 경험을 제공합니다.
+Assets 패널에 대한 아코디언 레이아웃을 구성합니다.아코디언 레이아웃은 반복 가능한 섹션을 추가하는 데 더 나은 최종 사용자 경험을 제공합니다.
 
-**에셋 패널 구성**
+**Assets 패널 구성**
 
 >[!VIDEO](https://video.tv.adobe.com/v/22200?quality=12&learn=on)
 

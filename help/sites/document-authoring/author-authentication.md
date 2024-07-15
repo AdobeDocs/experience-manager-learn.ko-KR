@@ -1,6 +1,6 @@
 ---
 title: 작성자 인증
-description: Edge 게재에서 Sidekick을 사용하도록 작성자 인증을 구성하는 방법에 대해 알아봅니다.
+description: Edge Delivery에서 Sidekick을 사용하도록 작성자 인증을 구성하는 방법을 알아봅니다.
 version: Cloud Service
 feature: Authoring
 topic: Content Management
@@ -10,13 +10,13 @@ doc-type: Technical Video
 duration: 89
 last-substantial-update: 2024-06-07T00:00:00Z
 jira: KT-15674
-source-git-commit: 6a22f523c5cf997a59a5b8579c168b641c009b20
+exl-id: 12738182-69e4-43a7-adf9-7771b0d92773
+source-git-commit: 3001560b62cb4dbec92179a9db42abd84590c400
 workflow-type: tm+mt
 source-wordcount: '33'
 ht-degree: 0%
 
 ---
-
 
 # 작성자 인증
 

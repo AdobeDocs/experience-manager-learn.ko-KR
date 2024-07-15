@@ -21,7 +21,7 @@ ht-degree: 0%
 
 다음은 대문자로 표시된 &quot;핵심 구성 요소&quot;로 수정된 텍스트입니다.
 
-일반적인 시나리오에는 핵심 구성 요소 기반 적응형 양식을 통해 제출된 데이터에서 PDF을 생성하는 작업이 포함됩니다. 이 데이터는 항상 JSON 형식입니다. 렌더링 PDF API를 사용하여 PDF을 생성하려면 JSON 데이터를 XML 형식으로 변환해야 합니다. 다음 `toString` 방법 `org.json.XML` 이 변환에 사용됩니다. 자세한 내용은 [설명서 `org.json.XML.toString` 방법](https://www.javadoc.io/doc/org.json/json/20171018/org/json/XML.html#toString-java.lang.Object-).
+일반적인 시나리오에는 핵심 구성 요소 기반 적응형 양식을 통해 제출된 데이터에서 PDF을 생성하는 작업이 포함됩니다. 이 데이터는 항상 JSON 형식입니다. 렌더링 PDF API를 사용하여 PDF을 생성하려면 JSON 데이터를 XML 형식으로 변환해야 합니다. 이 변환에는 `org.json.XML`의 `toString` 메서드가 사용됩니다. 자세한 내용은 `org.json.XML.toString` 메서드의 [설명서](https://www.javadoc.io/doc/org.json/json/20171018/org/json/XML.html#toString-java.lang.Object-)를 참조하세요.
 
 ## JSON 스키마 기반 적응형 양식
 
@@ -35,15 +35,15 @@ ht-degree: 0%
 1. &quot;파일&quot; > &quot;양식 속성&quot; > &quot;미리 보기&quot;로 이동합니다.
 1. &quot;미리보기 데이터 생성&quot;을 선택합니다.
 1. &quot;생성&quot;을 클릭합니다.
-1. 다음과 같이 의미 있는 파일 이름을 지정합니다. `form-data.xml`.
+1. `form-data.xml`과(와) 같은 의미 있는 파일 이름을 지정하십시오.
 
 ### XML 데이터에서 JSON 스키마 생성
 
-무료 온라인 도구를 활용하여 다음을 수행할 수 있습니다. [xml을 JSON으로 변환](https://jsonformatter.org/xml-to-jsonschema) 이전 단계에서 생성된 XML 데이터를 사용합니다.
+이전 단계에서 생성된 XML 데이터를 사용하여 무료 온라인 도구를 사용하여 [XML을 JSON으로 변환](https://jsonformatter.org/xml-to-jsonschema)할 수 있습니다.
 
 ### JSON을 XML로 변환하는 사용자 지정 워크플로우 프로세스
 
-제공된 코드는 JSON을 XML로 변환하여 이라는 워크플로우 프로세스 변수에 결과 XML을 저장합니다. `dataXml`.
+제공된 코드는 JSON을 XML로 변환하여 워크플로 프로세스 변수 `dataXml`에 결과 XML을 저장합니다.
 
 ```java
 import org.slf4j.LoggerFactory;
@@ -119,10 +119,10 @@ public class ConvertJSONToXML implements WorkflowProcess {
 
 로컬 서버에서 이를 테스트하려면 다음 간소화된 단계를 따르십시오.
 
-1. [AEM OSGi 웹 콘솔을 통해 사용자 정의 번들을 다운로드하여 설치합니다.](assets/convertJsonToXML.core-1.0.0-SNAPSHOT.jar).
-1. [워크플로우 패키지 가져오기](assets/workflow_to_render_pdf.zip).
+1. [AEM OSGi 웹 콘솔을 통해 사용자 지정 번들을 다운로드하여 설치하십시오](assets/convertJsonToXML.core-1.0.0-SNAPSHOT.jar).
+1. [워크플로 패키지를 가져옵니다](assets/workflow_to_render_pdf.zip).
 1. [샘플 적응형 양식 및 XDP 템플릿 가져오기](assets/adaptive_form_and_xdp_template.zip).
-1. [적응형 양식 미리 보기](http://localhost:4502/content/dam/formsanddocuments/f23/jcr:content?wcmmode=disabled).
+1. [적응형 양식을 미리 봅니다](http://localhost:4502/content/dam/formsanddocuments/f23/jcr:content?wcmmode=disabled).
 1. 몇 가지 양식 필드를 작성합니다.
 1. 양식을 제출하여 AEM 워크플로우를 시작합니다.
 1. 워크플로의 페이로드 폴더에서 렌더링된 PDF을 찾습니다.

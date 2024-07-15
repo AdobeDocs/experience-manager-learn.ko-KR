@@ -179,5 +179,5 @@ public class LogWorkflowVariables implements WorkflowProcess {
 
 ## 샘플 번들 배포
 
-[변수 로거 번들 배포](assets/VariableLogger.core-1.0.0-SNAPSHOT.jar) Felix 웹 콘솔 사용.
+Felix 웹 콘솔을 사용하여 [변수 로거 번들 배포](assets/VariableLogger.core-1.0.0-SNAPSHOT.jar).
 이 번들을 AEM 워크플로의 프로세스 단계와 연결하여 String 및 Document 변수의 값을 기록합니다.

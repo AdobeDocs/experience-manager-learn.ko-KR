@@ -14,7 +14,7 @@ duration: 1053
 source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '62'
-ht-degree: 4%
+ht-degree: 11%
 
 ---
 
@@ -26,7 +26,7 @@ AEM 코드에서 서비스 사용자를 만들고 사용하여 AEM 저장소에 
 
 ## 리소스
 
-+ [Sling Repository Initialization (repoinit) 설명서](https://sling.apache.org/documentation/bundles/repository-initialization.html)
++ [Sling 저장소 초기화(repoinit) 설명서](https://sling.apache.org/documentation/bundles/repository-initialization.html)
 + [Sling 서비스 인증 설명서](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html)
 
 ## 코드

@@ -22,7 +22,7 @@ ht-degree: 0%
 
 문서를 인증하려면 데스크탑의 Acrobat DC 또는 서버의 자동화된 프로세스의 일부로 AEM Forms 문서 서비스를 사용할 수 있습니다.
 
-이 문서에서는 AEM Forms Document Services를 사용하여 pdf 문서를 인증하는 샘플 OSGI 번들을 제공합니다. 샘플에 사용된 코드는 다음과 같습니다. [사용 가능한 위치](https://helpx.adobe.com/experience-manager/6-4/forms/using/aem-document-services-programmatically.html)
+이 문서에서는 AEM Forms Document Services를 사용하여 pdf 문서를 인증하는 샘플 OSGI 번들을 제공합니다. 샘플에 사용된 코드는 [여기에서 사용 가능](https://helpx.adobe.com/experience-manager/6-4/forms/using/aem-document-services-programmatically.html)합니다.
 
 AEM Forms을 사용하여 문서를 인증하려면 다음 단계를 수행해야 합니다
 
@@ -42,7 +42,7 @@ AEM Forms을 사용하여 문서를 인증하려면 다음 단계를 수행해�
 
 고유한 OSGi 번들을 작성하고 AEM Forms 클라이언트 SDK를 사용하여 PDF 문서를 인증하는 서비스를 구현할 수 있습니다. 다음 링크는 자체 OSGi 번들을 작성하는 데 유용합니다
 
-* [첫 번째 OSGi 번들 생성](https://helpx.adobe.com/experience-manager/using/maven_arch13.html)
+* [첫 번째 OSGi 번들 만들기](https://helpx.adobe.com/experience-manager/using/maven_arch13.html)
 * [문서 서비스 API 사용](https://helpx.adobe.com/experience-manager/6-4/forms/using/aem-document-services-programmatically.html)
 
 또는 이 튜토리얼 에셋의 일부로 포함된 샘플 번들을 사용할 수 있습니다.
@@ -53,10 +53,10 @@ AEM Forms을 사용하여 문서를 인증하려면 다음 단계를 수행해�
 
 ## 로컬 시스템에서 샘플 테스트
 
-* 다운로드 및 설치 [사용자 정의 문서 서비스 번들](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
-* 다운로드 및 설치 [서비스 사용자 번들을 사용한 개발](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-* [Apache Sling Service User Mapper 서비스에 다음 항목을 추가했는지 확인합니다](http://localhost:4502/system/console/configMgr)
-  **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service** 아래 스크린샷에 표시된 대로
+* [사용자 지정 문서 서비스 번들](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar) 다운로드 및 설치
+* [서비스 사용자 번들로 개발](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)을 다운로드하여 설치하십시오.
+* [Apache Sling 서비스 사용자 매퍼 서비스에 다음 항목을 추가했는지 확인하십시오](http://localhost:4502/system/console/configMgr)
+  아래 스크린샷에 표시된 대로 **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service**
   ![사용자 매퍼](assets/user-mapper-service.PNG)
 * [샘플 적응형 양식 가져오기](assets/certify-pdf-af.zip)
 * [사용자 정의 제출 가져오기 및 설치](assets/custom-submit-certify.zip)

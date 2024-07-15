@@ -35,11 +35,11 @@ public abstract String saveDocumentInCrx(String jcrPath,String fileExtension, Do
 }
 ```
 
-샘플 번들은 다음과 같을 수 있습니다. [여기에서 다운로드됨](assets/aemformsutilityfunctions.aemformsutilityfunctions.core-1.0-SNAPSHOT.jar)
+샘플 번들은 [여기에서 다운로드](assets/aemformsutilityfunctions.aemformsutilityfunctions.core-1.0-SNAPSHOT.jar)할 수 있습니다.
 
 ## 유틸리티 서비스를 사용할 샘플 코드
 
-다음은 문자열에서 org.w3c.dom.Document를 만들고 문서를 변환하여 다음 코드 조각에 표시된 CRX 저장소에 저장하기 위해 JSP 페이지에 사용된 코드입니다.
+다음은 문자열에서 org.w3c.dom.Document를 만들고 문서를 변환하여 다음 코드 조각에 표시된 CRX 저장소에 저장하는 데 사용되는 JSP 페이지에 사용된 코드입니다.
 
 ```java
  aemformsutilityfunctions.core.AemFormsUtilities aemFormsUtilities = sling.getService(aemformsutilityfunctions.core.AemFormsUtilities.class);
@@ -50,7 +50,7 @@ aemFormsUtilities.saveDocumentInCrx("/content/xmlfiles",".xml",xmlStringDoc);
 ## 사전 요구 사항
 
 
-를 배포해야 합니다. [DevelopingWithServiceUserBundle](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/DevelopingWithServiceUser.jar) 번들을 시작합니다.
+[DevelopingWithServiceUserBundle](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/DevelopingWithServiceUser.jar)을(를) 배포하고 번들을 시작해야 합니다.
 
 
-이러한 유틸리티 서비스를 사용하여 CRX 저장소에 문서를 저장하려면 다음을 따르십시오. [서비스 사용자 문서를 사용하여 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/service-user-tutorial-develop.html?lang=en#adaptive-forms). 다음을 제공했는지 확인합니다. [필수 권한](http://localhost:4502/useradmin) fd-service 사용자에게 적절한 CRX 폴더 설정
+이러한 유틸리티 서비스를 사용하여 CRX 저장소에 문서를 저장하려면 [서비스 사용자로 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/service-user-tutorial-develop.html?lang=en#adaptive-forms)을(를) 따르십시오. 적절한 CRX 폴더에 대한 [필요한 권한](http://localhost:4502/useradmin)을(를) fd-service 사용자에게 제공해야 합니다.

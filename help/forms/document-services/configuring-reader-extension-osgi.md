@@ -42,6 +42,6 @@ Reader 확장 자격 증명은 fd-service 사용자와 연결됩니다. fd-servi
 
 pfx 파일의 세부 사항을 나열하는 명령은 입니다. 다음 명령은 사용자가 pfx 파일 과 동일한 디렉터리에 있다고 가정합니다.
 
-**keytool -v -list -storetype pkcs12 -keystore &lt;name of=&quot;&quot; your=&quot;&quot; pfx=&quot;&quot; file=&quot;&quot;>**
+**keytool -v -list -storetype pkcs12 -keystore &lt;이름: .pfx 파일>**
 
 예: keytool -v -list -storetype pkcs12 -keystore 1005566.pfx 여기서 1005566.pfx는 내 pfx 파일의 이름입니다.

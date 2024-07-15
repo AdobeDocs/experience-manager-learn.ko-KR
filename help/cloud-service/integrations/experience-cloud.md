@@ -1,6 +1,6 @@
 ---
 title: Adobe Experience Cloud과 AEM as a Cloud Service 통합
-description: AEM as a Cloud Service과 다른 Adobe Experience Cloud 제품과의 지원되는 통합에 대해 알아봅니다.
+description: AEM as a Cloud Service이 다른 Adobe Experience Cloud 제품과의 지원되는 통합에 대해 알아봅니다.
 version: Cloud Service
 feature: Integrations
 topic: Integrations
@@ -23,22 +23,22 @@ ht-degree: 11%
 
 # Adobe Experience Cloud과 AEM as a Cloud Service 통합
 
-AEM as a Cloud Service과 다른 Adobe Experience Cloud 제품과의 지원되는 통합에 대해 알아봅니다.
+AEM as a Cloud Service이 다른 Adobe Experience Cloud 제품과의 지원되는 통합에 대해 알아봅니다.
 통합 구성 및 사용 방법에 대한 설명서를 보려면 Experience Cloud 제품을 클릭하십시오.
 
 |                                                                   | AEM Sites | AEM Assets | AEM Forms |
 |-------------------------------------------------------------------|:---------:|:----------:|:---------:|
 | [Acrobat Sign](#adobe-acrobat-sign) |           |            | ✔ |
-| 광고 |           |            |          |
+| Advertising |           |            |          |
 | [분석](#adobe-analytics) | ✔ | ✔ | ✔ |
 | Audience Manager |           |            |          |
 | Campaign Classic |           |            |          |
 | Campaign Standard |           |            |          |
-| [상거래](#adobe-commerce) | ✔ | ✔ |          |
+| [Commerce](#adobe-commerce) | ✔ | ✔ |          |
 | Customer Journey Analytics |           |            |          |
 | [Experience Platform 태그](#adobe-experience-platform-tags) | ✔ |            | ✔ |
 | [Journey Optimizer](#adobe-journey-optimizer) |           | ✔ |          |
-| [Learning Manager](#adobe-learning-manager) | ✔ |            |          |
+| [학습 관리자](#adobe-learning-manager) | ✔ |            |          |
 | Marketo Engage |           |            |          |
 | Real-time CDP |           |            |          |
 | [Sensei](#adobe-sensei) | ✔ | ✔ | ✔ |
@@ -57,7 +57,7 @@ Adobe Acrobat Sign(이전의 Acrobat Sign)는 법률, 판매, 급여, HR 및 기
 
 ## Adobe Analytics
 
-AEMas a Cloud Service 과 Adobe Analytics을 통합하면 고객 여정의 어디에서든 컨텐츠 활동을 추적하고 데이터를 분석할 수 있습니다. 또한 다양한 보고 기능, 예측 인텔리전스 등을 활용할 수 있습니다.
+AEM as a Cloud Service과 Adobe Analytics을 통합하면 고객 여정의 어디에서든 컨텐츠 활동을 추적하고 데이터를 분석할 수 있습니다. 또한 다양한 보고 기능, 예측 인텔리전스 등을 활용할 수 있습니다.
 
 ### AEM Sites
 
@@ -66,15 +66,15 @@ AEMas a Cloud Service 과 Adobe Analytics을 통합하면 고객 여정의 어�
 + Adobe 클라이언트 데이터 레이어(ACDL)
 
    + [AEM WCM 핵심 구성 요소에서 ACDL 확장](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/extending.html)
-   + [AEM WCM 핵심 구성 요소와 ACDL 통합](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html)
-   + [ACDL을 통한 이벤트 기반 데이터 처리](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/adobe-client-data-layer.html)
+   + [ACDL과 AEM WCM 핵심 구성 요소 통합](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html)
+   + [ACDL을 사용하여 이벤트 기반 데이터 처리](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/adobe-client-data-layer.html)
    + [ACDL(Adobe 클라이언트 데이터 레이어) 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html)
 
 ### AEM Assets
 
-+ [자산 통찰력 개요](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/assets-insights.html)
-+ [자산 통찰력 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/assets-insights.html#configure-asset-insights)
-+ [자산 통찰력 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html)
++ [Assets 통찰력 개요](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/assets-insights.html)
++ [Assets Insights 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/assets-insights.html#configure-asset-insights)
++ [Assets 통찰력 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html)
 
 ### AEM Forms
 
@@ -88,7 +88,7 @@ AEMas a Cloud Service 과 Adobe Analytics을 통합하면 고객 여정의 어�
 
 ## Adobe Commerce
 
-Adobe Commerce은 AEM as a Cloud Service과 통합되므로 브랜드가 상거래 경험을 차별화하고 온라인 지출을 빠르게 포착하기 위해 더 빠르게 확장 및 혁신할 수 있습니다. AEM과 Commerce은 Experience Manager의 몰입형, 옴니채널 및 개인화된 경험을 다양한 상거래 솔루션과 결합하여 쇼핑 여정의 모든 부분에 차별화된 경험을 제공하여 가치 창출 시간을 줄이고 높은 전환을 유도합니다.
+Adobe Commerce과 AEM as a Cloud Service의 통합을 통해 브랜드는 상거래 경험을 차별화하고 온라인 지출을 빠르게 포착하기 위해 더 빠르게 확장 및 혁신할 수 있습니다. AEM과 Commerce은 Experience Manager의 몰입형, 옴니채널 및 개인화된 경험을 다양한 상거래 솔루션과 결합하여 쇼핑 여정의 모든 부분에 차별화된 경험을 제공하여 가치 창출 시간을 줄이고 높은 전환을 유도합니다.
 
 ### AEM Sites
 
@@ -97,7 +97,7 @@ Adobe Commerce은 AEM as a Cloud Service과 통합되므로 브랜드가 상거�
 
 ## Adobe Experience Platform의 태그
 
-Adobe Experience Platform의 태그는 AEM과 원활하게 통합되므로 배포 및 관리가 간단한 방법입니다 [analytics](#adobe-analytics), [타겟팅](#adobe-target)고객 경험을 사로잡는 데 필요한 , 마케팅 및 광고 태그.
+Adobe Experience Platform의 태그는 AEM과 원활하게 통합되므로 고객 경험에 참여하는 데 필요한 [analytics](#adobe-analytics), [타깃팅](#adobe-target), 마케팅 및 광고 태그를 배포하고 관리하는 간단한 방법을 제공합니다.
 
 ### AEM Sites
 
@@ -115,7 +115,7 @@ Adobe Journey Optimizer은 단일 애플리케이션에서 수백만 고객과 �
 
 ### AEM Assets
 
-+ [AEM Assets Essentials를 Adobe Journey Optimizer과 통합](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-messages/create-email-content-with-the-message-editor.html?lang=ko-KR)
++ [AEM Assets Essentials와 Adobe Journey Optimizer 통합](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-messages/create-email-content-with-the-message-editor.html?lang=ko-KR)
 
 ## Adobe Learning Manager
 
@@ -127,7 +127,8 @@ Adobe Learning Manager(이전의 Adobe Captivate Prime)는 고객과 직원에�
 
 ## Adobe Sensei
 
-Adobe Sensei은 스마트 태그, 스마트 자르기, 시각적 검색 등을 통해 콘텐츠 관리 프로세스를 변환하는 AI 및 머신 러닝 기술을 제공합니다!
+Adobe Sensei은 AI 및 머신 러닝 기술을 제공하여 스마트 태그, 스마트 를 통해 콘텐츠 관리 프로세스를 변환합니다
+자르기, 시각적 검색 등!
 
 ### AEM Sites
 
@@ -136,7 +137,7 @@ Adobe Sensei은 스마트 태그, 스마트 자르기, 시각적 검색 등을 �
 ### AEM Assets
 
 + [이미지용 스마트 태그](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
-+ [이미지용 사용자 지정 스마트 태그](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/custom-smart-tags.html)
++ [이미지에 대한 사용자 지정 스마트 태그](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/custom-smart-tags.html)
 + [비디오용 스마트 태그](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/video-smart-tags.html)
 + [스마트 자르기](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html)
 + [시각적 검색](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search.html)
@@ -155,10 +156,10 @@ Adobe Target은 AEM as a Cloud Service과 통합되어 AEM의 콘텐츠를 기�
 + [Adobe Target 통합 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html)
 + Target에 경험 조각
 
-   + [Target에 경험 조각 게시](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html)
-   + [경험 조각을 JSON으로 Target에 게시](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html)
+   + Target에 대한 [Publish 경험 조각](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html)
+   + [Target에 JSON으로 Publish 경험 조각](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html)
 
-+ [Target에서 AEM Context Hub 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/audiences.html#creating-an-adobe-target-audience-using-the-audience-console)
++ [Target에 AEM Context Hub 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/audiences.html#creating-an-adobe-target-audience-using-the-audience-console)
 + [AEM Sites 및 Target 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/target/overview.html)
 
 ## Adobe Workfront
@@ -171,5 +172,5 @@ Adobe Workfront과 AEM s a Cloud Service의 통합을 통해 디지털 에셋 �
 + [Workfront 강화 커넥터 비디오](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/workfront/enhanced-connector/basics.html)
 + AEM Assets 기본 사항
 
-   + [Adobe Workfront for Assets Essentials 사용 안내서](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&amp;topicId=Content%2FDocuments%2FAdobe_Workfront_for_Experience_Manager_Assets_Essentials%2F_workfront-for-aem-asset-essentials.htm)
+   + [Assets Essentials용 Adobe Workfront 사용 안내서](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&amp;topicId=Content%2FDocuments%2FAdobe_Workfront_for_Experience_Manager_Assets_Essentials%2F_workfront-for-aem-asset-essentials.htm)
    + [Adobe Workfront 및 Assets Essentials 비디오](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/workfront/configure.html)

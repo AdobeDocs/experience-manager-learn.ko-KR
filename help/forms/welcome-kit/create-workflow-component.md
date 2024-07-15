@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ## 워크플로우 프로세스 구현
 
-다음 Java 코드는 워크플로우 구성 요소와 연결되었습니다. 이 코드는 시작 키트 페이지를 만들고, 워크플로우 변수(submitterName 및 documentsSelected)에서 값을 추출합니다. 그런 다음 이러한 값은 페이지에 사용된 구성 요소의 속성으로 설정됩니다. 또한 이 코드는 워크플로우 프로세스 변수의 값을 설정합니다 **welcomekiturl**.
+다음 Java 코드는 워크플로우 구성 요소와 연결되었습니다. 이 코드는 시작 키트 페이지를 만들고, 워크플로우 변수(submitterName 및 documentsSelected)에서 값을 추출합니다. 그런 다음 이러한 값은 페이지에 사용된 구성 요소의 속성으로 설정됩니다. 또한 이 코드는 워크플로 프로세스 변수 **welcomekiturl**&#x200B;의 값을 설정합니다.
 
 ```java
 package com.welcomekit.core.workflowprocess;

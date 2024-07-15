@@ -21,8 +21,8 @@ ht-degree: 0%
 
 # Swagger 파일 만들기
 
-다음을 사용하여 Salesforce REST API 설명 [OPEN API 2.0 사양](https://swagger.io/docs/specification/2-0/basic-structure/)
+[OPEN API 2.0 사양](https://swagger.io/docs/specification/2-0/basic-structure/)을 사용하여 Salesforce REST API에 대해 설명합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/331754?quality=12&learn=on)
 
-다운로드할 수 있는 Swagger 파일은 다음과 같습니다. [사용 가능한 위치](assets/sfdc-rest-swagger.zip)
+Swagger 파일을 다운로드할 수 있습니다. [여기에서 사용 가능](assets/sfdc-rest-swagger.zip)

@@ -61,7 +61,7 @@ AMS에서 기본 설치는 Enterprise Linux를 기본 운영 체제로 사용합
 
 >[!BEGINSHADEBOX &quot;메모&quot;]
 
-Adobe Managed Services 서버 이미지에는 일반적으로 작은 운영 체제 루트 드라이브가 있습니다.  일반적으로 마운트되는 별도의 볼륨에 데이터를 넣습니다. `/mnt`
+Adobe Managed Services 서버 이미지에는 일반적으로 작은 운영 체제 루트 드라이브가 있습니다.  일반적으로 `/mnt`에 탑재된 별도의 볼륨에 데이터를 넣습니다.
 그런 다음 다음 다음 기본 디렉터리에 대한 기본값 대신 해당 볼륨을 사용합니다
 
 `DocumentRoot`
@@ -86,7 +86,7 @@ AMS는 Apache 웹 서버의 기본 설치에 을 추가합니다.
 AMS 기본 문서 루트:
 - 작성자:
    - `/mnt/var/www/author/`
-- 게시:
+- Publish:
    - `/mnt/var/www/html/`
 - 다목적 및 상태 점검 유지 관리
    - `/mnt/var/www/default/`
@@ -95,29 +95,29 @@ AMS 기본 문서 루트:
 
 다음 디렉터리를 사용하면 파일에서 작업할 수 있는 준비 영역이 있는 구성 파일을 빌드할 수 있으며 준비가 되었을 때만 활성화할 수 있습니다.
 - `/etc/httpd/conf.d/available_vhosts/`
-   - 이 폴더는 호출된 모든 VirtualHost/파일을 호스팅합니다. `.vhost`
+   - 이 폴더는 `.vhost`(이)라는 VirtualHost/파일을 모두 호스팅합니다.
 - `/etc/httpd/conf.d/enabled_vhosts/`
-   - 다음을 사용할 준비가 되면 `.vhost` 파일, 파일 `available_vhosts` 폴더에 대한 상대 경로를 사용하여 링크 `enabled_vhosts` 디렉터리
+   - `.vhost` 파일을 사용할 준비가 되면 `available_vhosts` 폴더 내에서 `enabled_vhosts` 디렉터리의 상대 경로를 사용하여 심볼릭 링크를 만듭니다
 
-### 추가 `conf.d` 디렉터리
+### 추가 `conf.d`개 디렉터리
 
 Apache 구성에서 일반적인 추가 부분이 있으며 이러한 파일을 구분하고 하나의 디렉터리에 모든 파일을 보유하지 않을 수 있는 깔끔한 방법을 위해 하위 디렉터리를 만들었습니다
 
 #### 디렉토리 재작성
 
-이 디렉터리에는 `_rewrite.rules` apache 웹 서버를 연결하는 일반적인 RewriteRulesync가 포함된 파일을 만듭니다 [mod_rewrite](https://httpd.apache.org/docs/current/mod/mod_rewrite.html) 모듈
+이 디렉터리에는 Apache 웹 서버 [mod_rewrite](https://httpd.apache.org/docs/current/mod/mod_rewrite.html) 모듈을 연결하는 일반적인 RewriteRulesync가 포함된 `_rewrite.rules` 파일이 모두 포함될 수 있습니다.
 
 - `/etc/httpd/conf.d/rewrites/`
 
 #### 허용 목록 디렉터리
 
-이 디렉터리에는 `_whitelist.rules` 일반 파일을 포함하는 파일을 만듭니다. `IP Allow` 또는 `Require IP`apache 웹 서버를 활성화하는 구문 [액세스 제어](https://httpd.apache.org/docs/2.4/howto/access.html)
+이 디렉터리에는 일반적인 `IP Allow` 또는 Apache 웹 서버 [액세스 제어](https://httpd.apache.org/docs/2.4/howto/access.html)를 사용하는 `Require IP` 구문을 포함하는 `_whitelist.rules` 파일을 모두 포함할 수 있습니다.
 
 - `/etc/httpd/conf.d/whitelists/`
 
 #### 변수 디렉토리
 
-이 디렉터리에는 `.vars` 구성 파일에서 사용할 수 있는 변수가 포함된 파일을 만듭니다
+이 디렉터리에는 구성 파일에서 사용할 수 있는 변수를 포함하는 `.vars` 파일이 모두 들어 있을 수 있습니다.
 
 - `/etc/httpd/conf.d/variables/`
 
@@ -135,41 +135,41 @@ Apache 웹 서버는 매우 확장 가능하며 모듈에 구성 파일이 많�
 
 다음 디렉터리를 사용하면 파일에서 작업할 수 있는 준비 영역이 있는 구성 파일을 빌드할 수 있으며 준비가 되었을 때만 활성화할 수 있습니다.
 - `/etc/httpd/conf.dispatcher.d/available_farms/`
-   - 이 폴더는 `/myfarm {` 파일 호출됨 `_farm.any`
+   - 이 폴더는 이름이 `_farm.any`인 `/myfarm {` 파일을 모두 호스팅합니다.
 - `/etc/httpd/conf.dispatcher.d/enabled_farms/`
    - 팜 파일을 사용할 준비가 되면 available_farms 폴더 내에 enabled_farms 디렉터리의 상대 경로를 사용하여 심볼릭 링크를 만듭니다
 
-### 추가 `conf.dispatcher.d` 디렉터리
+### 추가 `conf.dispatcher.d`개 디렉터리
 
-Dispatcher 팜 파일 구성의 하위 섹션인 추가 조각이 있으며 이러한 파일을 구분하고 하나의 디렉터리에 모든 파일이 없는 깔끔한 방법을 위해 하위 디렉터리를 만들었습니다
+Dispatcher 팜 파일 구성의 하위 섹션인 추가 부분이 있으며, 이러한 파일을 구분하고 하나의 디렉터리에 모든 파일이 없는 깔끔한 방법을 위해 하위 디렉터리를 만들었습니다
 
 #### 캐시 디렉터리
 
-이 디렉터리에는 `_cache.any`, `_invalidate.any` 모듈이 AEM에서 가져온 캐싱 요소와 무효화 규칙 구문을 처리하는 방법에 대한 규칙이 들어 있는 파일을 만듭니다.  이 섹션에 대한 자세한 내용은 여기 를 참조하십시오 [여기](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache)
+이 디렉터리에는 모듈이 AEM에서 가져온 캐싱 요소와 무효화 규칙 구문을 처리하는 방법에 대한 규칙이 들어 있는 `_cache.any`, `_invalidate.any` 파일이 모두 포함되어 있습니다.  이 섹션에 대한 자세한 내용은 여기 [여기](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache)를 참조하세요.
 
 - `/etc/httpd/conf.dispatcher.d/cache/`
 
 #### 클라이언트 헤더 디렉터리
 
-이 디렉터리에는 `_clientheaders.any` 요청이 들어올 때 AEM에 전달할 클라이언트 헤더 목록이 들어 있는 파일을 만듭니다.  이 섹션에 대한 자세한 내용은 다음과 같습니다 [여기](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko-KR)
+이 디렉터리에는 요청이 들어올 때 AEM에 전달할 클라이언트 헤더 목록을 포함하는 만든 모든 `_clientheaders.any` 파일이 들어 있을 수 있습니다.  이 섹션에 대한 자세한 내용은 [여기](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko-KR)를 참조하세요.
 
 - `/etc/httpd/conf.dispatcher.d/clientheaders/`
 
 #### 필터 디렉터리
 
-이 디렉터리에는 `_filters.any` Dispatcher를 통한 트래픽이 AEM에 도달하도록 차단하거나 허용하는 모든 필터 규칙을 포함하는 파일을 만듭니다
+이 디렉터리에는 사용자가 만든 모든 `_filters.any` 파일이 들어 있을 수 있으며, 이 파일에는 모든 필터 규칙이 포함되어 있어 Dispatcher을 통한 트래픽이 AEM에 도달하지 못하도록 차단하거나 허용할 수 있습니다.
 
 - `/etc/httpd/conf.dispatcher.d/filters/`
 
 #### Renders 디렉터리
 
-이 디렉터리에는 `_renders.any` dispatcher가 콘텐츠를 사용할 각 백엔드 서버에 대한 연결 세부 정보가 포함된 파일을 만듭니다.
+이 디렉터리에는 Dispatcher가 콘텐츠를 사용할 각 백 엔드 서버에 대한 연결 세부 정보를 포함하는 `_renders.any` 파일이 모두 포함될 수 있습니다.
 
 - `/etc/httpd/conf.dispatcher.d/renders/`
 
 #### Vhosts 디렉토리
 
-이 디렉터리에는 `_vhosts.any` 특정 팜과 특정 백 엔드 서버의 일치하는 도메인 이름 및 경로 목록이 들어 있는 파일을 만듭니다
+이 디렉터리에는 사용자가 만든 모든 `_vhosts.any` 파일이 들어 있을 수 있으며, 여기에는 특정 팜과 특정 백 엔드 서버의 일치하는 도메인 이름 및 경로 목록이 들어 있습니다.
 
 - `/etc/httpd/conf.dispatcher.d/vhosts/`
 
@@ -276,20 +276,20 @@ Enterprise Linux에는 Apache 웹 서버 패키지(httpd)에 대한 패치 주�
 
 RPM / Yum 명령을 통해 적용된 보안 수정 사항이나 구성 개선 사항이 있는 경우 변경된 파일의 상단에 수정 사항이 적용되지 않기 때문에 설치 횟수가 적은 기본 파일은 더 잘 변경됩니다.
 
-대신 `.rpmnew` 원본 옆에 있는 파일입니다.  이는 원하는 일부 변경 사항을 놓치고 구성 폴더에 불필요한 정보를 더 만들게 됨을 의미합니다.
+대신 원본 옆에 `.rpmnew` 파일이 만들어집니다.  이는 원하는 일부 변경 사항을 놓치고 구성 폴더에 불필요한 정보를 더 만들게 됨을 의미합니다.
 
-즉, 업데이트 설치 중 RPM은 `httpd.conf` 다음 위치에 있을 경우 `unaltered` 명시합니다. *replace* 파일을 클릭하면 중요한 업데이트가 제공됩니다.  다음과 같은 경우 `httpd.conf` 다음과 같음 `altered` then it *이(가) 을(를) 대체하지 않음* 이 파일을 만들면 대신 라는 참조 파일이 만들어집니다. `httpd.conf.rpmnew` 또한 서비스 시작 시 적용되지 않는 파일에 많은 수정 사항이 있습니다.
+즉, 업데이트 설치 중 RPM이 `unaltered` 상태이면 `httpd.conf`을(를) 검사하고 파일을 *바꾸기*&#x200B;하면 중요한 업데이트를 받게 됩니다.  `httpd.conf`이(가) `altered`인 경우 *이(가) 파일을 바꾸지 않고* 대신 `httpd.conf.rpmnew`이라는 참조 파일을 만들며 서비스 시작 시 적용되지 않는 많은 수정 사항이 해당 파일에 있습니다.
 
-Enterprise Linux는 이 사용 사례를 더 나은 방식으로 처리하기 위해 올바르게 설정되었습니다.  이러한 설정은 사용자가 설정한 기본값을 확장하거나 재정의할 수 있는 영역을 제공합니다.  httpd의 기본 설치 내에서 파일을 찾을 수 있습니다. `/etc/httpd/conf/httpd.conf`및 에는 다음과 같은 구문이 있습니다.
+Enterprise Linux는 이 사용 사례를 더 나은 방식으로 처리하기 위해 올바르게 설정되었습니다.  이러한 설정은 사용자가 설정한 기본값을 확장하거나 재정의할 수 있는 영역을 제공합니다.  httpd의 기본 설치 내에서 `/etc/httpd/conf/httpd.conf` 파일을 찾을 수 있으며 다음과 같은 구문이 있습니다.
 
 ```
 Include conf.modules.d/.conf
 IncludeOptional conf.d/.conf
 ```
 
-Apache가 새 파일을에 추가할 때 모듈과 구성을 확장하기를 원한다는 개념입니다. `/etc/httpd/conf.d/` 및 `/etc/httpd/conf.modules.d/` 파일 확장명이 인 디렉토리 `.conf`
+Apache가 파일 확장명이 `.conf`인 `/etc/httpd/conf.d/` 및 `/etc/httpd/conf.modules.d/` 디렉터리에 새 파일을 추가할 때 모듈 및 구성을 확장하기를 원한다는 것이 좋습니다
 
-완벽한 예로 Apache에 Dispatcher 모듈을 추가하면 모듈이 만들어집니다 `.so` 파일 위치 ` /etc/httpd/modules/` 그런 다음 파일을 추가하여 포함시킵니다. `/etc/httpd/conf.modules.d/02-dispatcher.conf` 모듈을 로드할 내용 포함 `.so` 파일
+Apache에 Dispatcher 모듈을 추가할 때 완벽한 예로 ` /etc/httpd/modules/`에 모듈 `.so` 파일을 만든 다음, `/etc/httpd/conf.modules.d/02-dispatcher.conf`에 내용을 포함한 파일을 추가하여 모듈 `.so` 파일을 로드해야 합니다
 
 ```
 LoadModule dispatcher_module modules/mod_dispatcher.so
@@ -299,7 +299,7 @@ LoadModule dispatcher_module modules/mod_dispatcher.so
 >
 >Apache가 제공한 기존 파일을 수정하지 않았습니다. 대신, 우리는 그들이 가고자 하는 디렉터리에 우리의 것을 추가했을 뿐이다.
 
-이제 파일에서 모듈을 사용합니다. <b>`/etc/httpd/conf.d/dispatcher_vhost.conf`</b> 모듈을 초기화하고 초기 모듈별 구성 파일을 로드합니다.
+이제 모듈을 초기화하고 초기 모듈별 구성 파일을 로드하는 <b>`/etc/httpd/conf.d/dispatcher_vhost.conf`</b> 파일에서 모듈을 사용합니다
 
 ```
 <IfModule disp_apache2.c> 

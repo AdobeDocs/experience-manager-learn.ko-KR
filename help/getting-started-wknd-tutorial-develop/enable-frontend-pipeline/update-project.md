@@ -22,7 +22,7 @@ ht-degree: 0%
 
 # 프론트엔드 파이프라인을 사용하도록 전체 스택 AEM 프로젝트 업데이트 {#update-project-enable-frontend-pipeline}
 
-이 장에서는 구성을 __WKND Sites 프로젝트__ 전체 스택 파이프라인 실행이 필요 없이 프론트엔드 파이프라인을 사용하여 JavaScript 및 CSS를 배포합니다. 이렇게 하면 프론트엔드 및 백엔드 객체의 개발 및 배포 라이프사이클을 분리하므로 전체적으로 보다 빠르고 반복적인 개발 프로세스가 가능합니다.
+이 장에서는 전체 스택 파이프라인 실행이 필요하지 않고 프론트엔드 파이프라인을 사용하여 JavaScript 및 CSS를 배포하도록 __WKND Sites 프로젝트__&#x200B;의 구성을 변경합니다. 이렇게 하면 프론트엔드 및 백엔드 객체의 개발 및 배포 라이프사이클을 분리하므로 전체적으로 보다 빠르고 반복적인 개발 프로세스가 가능합니다.
 
 ## 목표 {#objectives}
 
@@ -34,16 +34,16 @@ ht-degree: 0%
 
 ## 사전 요구 사항 {#prerequisites}
 
-이 자습서는 여러 부분으로 구성되어 있으며 다음을 검토했다고 가정합니다. [&#39;ui.frontend&#39; 모듈](./review-uifrontend-module.md).
+여러 부분으로 구성된 자습서이며 [&#39;ui.frontend&#39; 모듈](./review-uifrontend-module.md)을(를) 검토했다고 가정합니다.
 
 
 ## 전체 스택 AEM 프로젝트 변경 사항
 
 세 가지 프로젝트 관련 구성 변경 사항과 테스트 실행을 위해 배포할 스타일 변경이 있으므로 WKND 프로젝트에서 프론트엔드 파이프라인 계약에 사용할 수 있도록 총 4개의 특정 변경 사항이 있습니다.
 
-1. 제거 `ui.frontend` 전체 스택 빌드 주기의 모듈
+1. 전체 스택 빌드 주기에서 `ui.frontend` 모듈 제거
 
-   * 에서 WKND Sites 프로젝트의 루트 `pom.xml` 댓글 달기 `<module>ui.frontend</module>` 하위 모듈 항목입니다.
+   * 에서 WKND Sites 프로젝트의 루트 `pom.xml`이(가) `<module>ui.frontend</module>` 하위 모듈 항목에 주석을 답니다.
 
    ```xml
        ...
@@ -57,7 +57,7 @@ ht-degree: 0%
        ...
    ```
 
-   * 및 의 관련 종속성에 주석 달기 `ui.apps/pom.xml`
+   * `ui.apps/pom.xml`에서 관련 종속성을 댓글로 남깁니다.
 
    ```xml
        ...
@@ -76,9 +76,9 @@ ht-degree: 0%
        ...
    ```
 
-1. 준비 `ui.frontend` 두 개의 새 webpack 구성 파일을 추가하여 프론트엔드 파이프라인 계약에 대한 모듈입니다.
+1. 새 Webpack 구성 파일 두 개를 추가하여 프론트엔드 파이프라인 계약에 대한 `ui.frontend` 모듈을 준비합니다.
 
-   * 기존 항목 복사 `webpack.common.js` 다음으로: `webpack.theme.common.js`, 및 변경 `output` 속성 및 `MiniCssExtractPlugin`, `CopyWebpackPlugin` 다음과 같은 플러그인 구성 매개변수:
+   * 기존 `webpack.common.js`을(를) `webpack.theme.common.js`(으)로 복사하고 `output` 속성과 `MiniCssExtractPlugin`, `CopyWebpackPlugin` 플러그 인 구성 매개 변수를 다음과 같이 변경합니다.
 
    ```javascript
    ...
@@ -100,7 +100,7 @@ ht-degree: 0%
    ...
    ```
 
-   * 기존 항목 복사 `webpack.prod.js` 다음으로: `webpack.theme.prod.js`, 및 변경 `common` 위의 파일에 대한 변수의 위치입니다.
+   * 기존 `webpack.prod.js`을(를) `webpack.theme.prod.js`(으)로 복사하고 `common` 변수의 위치를 위의 파일로 변경합니다.
 
    ```javascript
    ...
@@ -117,7 +117,7 @@ ht-degree: 0%
    >이름을 지정하거나 구성하는 방법은 사용자가 결정합니다.
 
 
-   * 다음에서 `package.json` 파일, 다음을 확인합니다.  `name` 속성 값이 의 사이트 이름과 같습니다. `/conf` 노드. 및 `scripts` 속성, a `build` 이 모듈에서 프론트엔드 파일을 빌드하는 방법을 지시하는 스크립트.
+   * `package.json` 파일에서 `name` 속성 값이 `/conf` 노드의 사이트 이름과 같은지 확인합니다. `scripts` 속성 아래에 이 모듈에서 프론트엔드 파일을 빌드하는 방법을 지시하는 `build` 스크립트가 있습니다.
 
    ```javascript
        {
@@ -133,9 +133,9 @@ ht-degree: 0%
        }
    ```
 
-1. 준비 `ui.content` 두 개의 Sling 구성을 추가하여 프론트엔드 파이프라인용 모듈입니다.
+1. Sling 구성을 두 개 추가하여 프론트엔드 파이프라인에 대한 `ui.content` 모듈을 준비합니다.
 
-   * 다음 위치에 파일 만들기 `com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig` - 여기에는 다음과 같은 모든 프론트엔드 파일이 포함됩니다 `ui.frontend` 모듈은 `dist` webpack 빌드 프로세스를 사용하는 폴더.
+   * `com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig`에 파일 만들기 - 여기에는 `ui.frontend` 모듈이 Webpack 빌드 프로세스를 사용하여 `dist` 폴더에서 생성하는 모든 프론트엔드 파일이 포함됩니다.
 
    ```xml
    ...
@@ -158,10 +158,10 @@ ht-degree: 0%
 
    >[!TIP]
    >
-   >    전체 보기 [HtmlPageItemsConfig](https://github.com/adobe/aem-guides-wknd/blob/feature/frontend-pipeline/ui.content/src/main/content/jcr_root/conf/wknd/_sling_configs/com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig/.content.xml) 다음에서 __AEM WKND Sites 프로젝트__.
+   >    __AEM WKND Sites 프로젝트__&#x200B;에서 전체 [HtmlPageItemsConfig](https://github.com/adobe/aem-guides-wknd/blob/feature/frontend-pipeline/ui.content/src/main/content/jcr_root/conf/wknd/_sling_configs/com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig/.content.xml)를 참조하십시오.
 
 
-   * 두 번째 `com.adobe.aem.wcm.site.manager.config.SiteConfig` (으)로 `themePackageName` 값이 와 같음 `package.json` 및 `name` 속성 값 및 `siteTemplatePath` 을(를) 가리키기 `/libs/wcm/core/site-templates/aem-site-template-stub-2.0.0` 스텁 경로 값.
+   * `themePackageName` 값이 `package.json` 및 `name` 속성 값과 같고 `siteTemplatePath`이(가) `/libs/wcm/core/site-templates/aem-site-template-stub-2.0.0` 스텁 경로 값을 가리키는 `com.adobe.aem.wcm.site.manager.config.SiteConfig`을(를) 두 번째로 사용합니다.
 
    ```xml
    ...
@@ -176,9 +176,9 @@ ht-degree: 0%
 
    >[!TIP]
    >
-   >    참조: 완료 [SiteConfig](https://github.com/adobe/aem-guides-wknd/blob/feature/frontend-pipeline/ui.content/src/main/content/jcr_root/conf/wknd/_sling_configs/com.adobe.aem.wcm.site.manager.config.SiteConfig/.content.xml) 다음에서 __AEM WKND Sites 프로젝트__.
+   >    __AEM WKND Sites 프로젝트__&#x200B;에서 전체 [SiteConfig](https://github.com/adobe/aem-guides-wknd/blob/feature/frontend-pipeline/ui.content/src/main/content/jcr_root/conf/wknd/_sling_configs/com.adobe.aem.wcm.site.manager.config.SiteConfig/.content.xml)을(를) 참조하십시오.
 
-1. 테스트 실행을 위해 프론트엔드 파이프라인을 통해 배포하기 위해 테마 또는 스타일이 변경됨, 변경 중 `text-color` 를 업데이트하여 빨간색을 Adobe(또는 직접 선택할 수 있음)하려면 `ui.frontend/src/main/webpack/base/sass/_variables.scss`.
+1. 테스트 실행을 위해 프론트엔드 파이프라인을 통해 배포하기 위해 테마 또는 스타일이 변경되었으며, `ui.frontend/src/main/webpack/base/sass/_variables.scss`을(를) 업데이트하여 `text-color`을(를) 빨간색으로 Adobe(또는 직접 선택할 수 있음)합니다.
 
    ```css
        $black:     #a40606;
@@ -190,14 +190,14 @@ ht-degree: 0%
 
 >[!AVAILABILITY]
 >
-> 이러한 변경 사항은 내의 GitHub에서 사용할 수 있습니다. [__프론트엔드 파이프라인__](https://github.com/adobe/aem-guides-wknd/tree/feature/frontend-pipeline) 의 분기 __AEM WKND Sites 프로젝트__.
+> 이러한 변경 사항은 __AEM WKND Sites 프로젝트__&#x200B;의 [__프론트엔드 파이프라인__](https://github.com/adobe/aem-guides-wknd/tree/feature/frontend-pipeline) 분기 내에 있는 GitHub에서 사용할 수 있습니다.
 
 
-## 주의 - _프론트엔드 파이프라인 활성화_ 단추
+## 주의 - _프론트엔드 파이프라인 사용_ 단추
 
-다음 [레일 선택기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html) 의 [Site](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html) 옵션은 **프론트엔드 파이프라인 활성화** 사이트 루트 또는 사이트 페이지 선택 시 버튼. 클릭 **프론트엔드 파이프라인 활성화** 단추는 위의 을(를) 재정의합니다. **Sling 구성**, 다음을 확인합니다. **클릭하지 않음** Cloud Manager 파이프라인 실행을 통해 위의 변경 사항 배포 후 이 버튼을 클릭합니다.
+[레일 선택기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html)의 [사이트](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html) 옵션은 사이트 루트 또는 사이트 페이지를 선택할 때 **프론트엔드 파이프라인 사용** 단추를 표시합니다. **프론트엔드 파이프라인 사용** 단추를 클릭하면 위의 **Sling 구성**&#x200B;을 재정의합니다. Cloud Manager 파이프라인 실행을 통해 위의 변경 내용을 배포한 후 **이 단추를 클릭하지 마십시오**.
 
-![프론트엔드 파이프라인 활성화 버튼](assets/enable-front-end-Pipeline-button.png)
+![프론트엔드 파이프라인 사용 단추](assets/enable-front-end-Pipeline-button.png)
 
 실수로 클릭한 경우 파이프라인을 다시 실행하여 프론트엔드 파이프라인 계약 및 변경 사항이 복원되도록 해야 합니다.
 
@@ -207,4 +207,4 @@ ht-degree: 0%
 
 ## 다음 단계 {#next-steps}
 
-다음 장에서는 [프론트엔드 파이프라인을 사용하여 배포](create-frontend-pipeline.md), 프론트엔드 파이프라인을 만들고 실행하고 실행 방법을 확인합니다 __멀리 이동함__ /etc.clientlibs 기반 프론트엔드 리소스 게재.
+다음 장인 [프론트엔드 파이프라인을 사용하여 배포](create-frontend-pipeline.md)에서는 프론트엔드 파이프라인을 만들고 실행하고 __이동__&#x200B;하는 방법을 &#39;/etc.clientlibs&#39; 기반 프론트엔드 리소스 게재에서 확인합니다.

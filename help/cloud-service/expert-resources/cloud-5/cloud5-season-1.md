@@ -1,6 +1,6 @@
 ---
 title: 클라우드 - 시즌
-description: Adobe Experience Manager(AEM)를 구축하는 Adobe의 전문 엔지니어와 이를 제공하는 전문 서비스로부터 as a Cloud Service에 대해 알아봅니다.
+description: Adobe Experience Manager(AEM as a Cloud Service)를 구축하는 Adobe의 전문 엔지니어와 이를 제공하는 전문 서비스에 대해 알아봅니다.
 sub-product: Experience Manager Sites, Experience Manager Cloud Manager, Experience Manager Assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
@@ -17,9 +17,9 @@ ht-degree: 0%
 
 ## 소개
 
-AEM Engineering의 Cloud 5 Series를 시작합니다. 모든 제품의 구현 단계에서 가장 중요한 문제 중 하나는 충분한 코드 샘플 및/또는 이러한 샘플, 도구 또는 API에 대한 실시간 데모가 있다는 것입니다. 이 시리즈의 목표는 5분 이내에 AEM에 대한 유용한 정보를 as a Cloud Service으로 제공하는 것입니다.
+AEM Engineering의 Cloud 5 Series를 시작합니다. 모든 제품의 구현 단계에서 가장 중요한 문제 중 하나는 충분한 코드 샘플 및/또는 이러한 샘플, 도구 또는 API에 대한 실시간 데모가 있다는 것입니다. 이 시리즈의 목표는 5분 이내에 AEM as a Cloud Service에 대한 유용한 정보를 제공하는 것입니다.
 
-다음 방문: [제안 상자](https://forms.office.com/r/74P5Xz4UH0) 주제 아이디어 제출용
+주제 아이디어를 제출하려면 [제안 상자](https://forms.office.com/r/74P5Xz4UH0)를 방문하세요.
 
 ## 시즌
 
@@ -33,11 +33,11 @@ AEM Engineering의 Cloud 5 Series를 시작합니다. 모든 제품의 구현 �
       </a>
       <div>
          <a href="./cloud5-aem-cdn-part1.md"><strong>AEM CDN 심층 분석(1부)</strong></a>         
-         <br/><em>Darin Kuntze 및 James Talbot과 함께 수석 클라우드 아키텍트</em>
+         <br/><em>Darin Kuntze 및 James Talbot, 선임 클라우드 설계자와 함께</em>
       </div>
       <p>
         <br/>
-         1부는 AEM의 as a Cloud Service CDN과 이를 구현에 사용하는 방법에 대해 설명합니다.
+         1부는 AEM as a Cloud Service의 CDN과 이를 구현에 사용하는 방법에 대해 설명합니다.
       </p>
      </td>   
      <td>
@@ -46,11 +46,11 @@ AEM Engineering의 Cloud 5 Series를 시작합니다. 모든 제품의 구현 �
       </a>
       <div>
          <a href="./cloud5-aem-cdn-part2.md"><strong>AEM CDN 심층 분석(2부)</strong></a>
-         <br/><em>Darin Kuntze 및 James Talbot과 함께 수석 클라우드 아키텍트</em>
+         <br/><em>Darin Kuntze 및 James Talbot, 선임 클라우드 설계자와 함께</em>
       </div>
       <p>
         <br/>
-         2부는 AEM as a Cloud Service CDN에 대한 우리의 관찰의 연속이다. 새로운 CDN을 통해 얻을 수 있는 기능에 대한 몇 가지 일반적인 질문과 통념에 대해 답변합니다.
+         2부는 AEM as a Cloud Service CDN에 대한 분석을 계속하는 것입니다. 새로운 CDN을 통해 얻을 수 있는 기능에 대한 몇 가지 일반적인 질문과 통념에 대해 답변합니다.
       </p>
    </td>
      <td>
@@ -59,11 +59,11 @@ AEM Engineering의 Cloud 5 Series를 시작합니다. 모든 제품의 구현 �
         </a>
       <div>
          <a href="./cloud5-aem-log-files.md"><strong>로그 파일 및 로깅</strong></a>
-         <br/><em>Darin Kuntze 및 James Talbot과 함께 수석 클라우드 아키텍트</em>
+         <br/><em>Darin Kuntze 및 James Talbot, 선임 클라우드 설계자와 함께</em>
       </div>
       <p>
         <br/>
-         사용자 인터페이스와 API를 통해 로그에 액세스하는 방법을 포함하여 AEMas a Cloud Service 에서 로그에 액세스하는 방법을 간략하게 살펴봅니다.
+         사용자 인터페이스와 API를 통해 로그에 액세스하는 방법을 포함하여 AEM as a Cloud Service의 로그에 액세스하는 방법을 간략하게 살펴봅니다.
       </p>
    </td> 
   </tr>
@@ -74,7 +74,7 @@ AEM Engineering의 Cloud 5 Series를 시작합니다. 모든 제품의 구현 �
         </a>
       <div>
         <a href="./cloud5-getting-login-token-integrations.md"><strong>액세스 토큰과 통합</strong></a>        
-         <br/><em>Darin Kuntze 및 James Talbot과 함께 수석 클라우드 아키텍트</em>
+         <br/><em>Darin Kuntze 및 James Talbot, 선임 클라우드 설계자와 함께</em>
       </div>
       <p>
         <br/>
@@ -86,8 +86,8 @@ AEM Engineering의 Cloud 5 Series를 시작합니다. 모든 제품의 구현 �
       <img alt="클라우드의 Dispatcher" src="./imgs/005-thumb.png"/>
        </a>  
       <div>
-        <a href="./cloud5-aem-dispatcher-cloud.md"><strong>클라우드의 디스패처</strong></a>
-         <br/><em>Darin Kuntze 및 James Talbot과 함께 수석 클라우드 아키텍트</em>
+        클라우드의 <a href="./cloud5-aem-dispatcher-cloud.md"><strong>Dispatcher</strong></a>
+         <br/><em>Darin Kuntze 및 James Talbot, 선임 클라우드 설계자와 함께</em>
       </div>
       <p>
         <br/>
@@ -100,7 +100,7 @@ AEM Engineering의 Cloud 5 Series를 시작합니다. 모든 제품의 구현 �
         </a>
       <div>
          <a href="./cloud5-aem-content-migration-part-1.md"><strong>마이그레이션(1부)</strong></a>
-         <br/><em>Darin Kuntze 및 James Talbot, 선임 클라우드 아키텍트 및 Applesmith 박사</em>
+         <br/><em>Darin Kuntze 및 James Talbot, 선임 클라우드 아키텍트 및 Dr Applesmith와 함께</em>
       </div>
       <p>
         <br/>
@@ -115,7 +115,7 @@ AEM Engineering의 Cloud 5 Series를 시작합니다. 모든 제품의 구현 �
         </a>
       <div>
         <a href="./cloud5-aem-content-migration-part-2.md"><strong>마이그레이션(2부)</strong></a>     
-         <br/><em>Darin Kuntze 및 James Talbot과 함께 수석 클라우드 아키텍트</em>
+         <br/><em>Darin Kuntze 및 James Talbot, 선임 클라우드 설계자와 함께</em>
       </div>
       <p>
         <br/>
@@ -128,7 +128,7 @@ AEM Engineering의 Cloud 5 Series를 시작합니다. 모든 제품의 구현 �
         </a>
       <div>
          <a href="./cloud5-aem-dispatcher-validator.md"><strong>Dispatcher 검사기</strong></a>
-         <br/><em>Darin Kuntze 및 James Talbot과 함께 수석 클라우드 아키텍트</em>
+         <br/><em>Darin Kuntze 및 James Talbot, 선임 클라우드 설계자와 함께</em>
       </div>
       <p>
         <br/>
@@ -140,8 +140,8 @@ AEM Engineering의 Cloud 5 Series를 시작합니다. 모든 제품의 구현 �
             <img alt="색인 지정 및 검색 팁" src="./imgs/009-thumb.png"/>
         </a>
       <div>
-         <a href="./cloud5-aem-search-and-indexing.md"><strong>색인 지정 및 검색 팁</strong></a>
-         <br/><em>Darin Kuntze 및 James Talbot과 함께 수석 클라우드 아키텍트</em>
+         <a href="./cloud5-aem-search-and-indexing.md"><strong>인덱싱 및 검색 팁</strong></a>
+         <br/><em>Darin Kuntze 및 James Talbot, 선임 클라우드 설계자와 함께</em>
       </div>
       <p>
         <br/>
@@ -152,14 +152,14 @@ AEM Engineering의 Cloud 5 Series를 시작합니다. 모든 제품의 구현 �
     <tr>
         <td>
             <a href="./cloud5-adobe-app-builder.md">
-                <img alt="Adobe 앱 빌더" src="./imgs/010-thumb.png"/>
+                <img alt="App Builder Adobe" src="./imgs/010-thumb.png"/>
             </a>
             <div>
-                <a href="./cloud5-adobe-app-builder.md"><strong>Adobe 앱 빌더</strong></a><br/>        
-                <em>Darin Kuntze 및 James Talbot, 선임 클라우드 아키텍트 및 Amol Anand</em>
+                <a href="./cloud5-adobe-app-builder.md"><strong>App Builder Adobe</strong></a><br/>        
+                <em>Darin Kuntze 및 James Talbot, 선임 클라우드 설계자 및 Amol Anand와 함께</em>
             </div>
             <p><br/>
-                Adobe App Builder로 할 수 있는 멋진 일들을 확인하고, 클라우드 내 맞춤화의 미래에 대해 새로운 정보를 알아보십시오.
+                App Builder Adobe으로 할 수 있는 멋진 몇 가지 사항을 확인하고 클라우드에서 맞춤화의 미래에 대해 새로운 내용을 알아보십시오.
             </p>
         </td>
         <td></td>

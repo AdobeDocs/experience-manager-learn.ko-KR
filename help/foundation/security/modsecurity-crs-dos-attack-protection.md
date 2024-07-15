@@ -21,28 +21,28 @@ ht-degree: 0%
 
 # ModSecurity를 사용하여 AEM 사이트를 DoS 공격으로부터 보호
 
-ModSecurity를 사용하여 DoS(서비스 거부) 공격으로부터 사이트를 보호하는 방법에 대해 알아봅니다. **OWASP ModSecurity 코어 규칙 세트(CRS)** Adobe Experience Manager (AEM) Publish Dispatcher에서.
+AEM(Adobe Experience Manager) Publish Dispatcher에서 **OWASP CRS(ModSecurity Core Rule Set)**&#x200B;를 사용하여 ModSecurity를 사용하여 서비스 거부(DoS) 공격으로부터 사이트를 보호하는 방법을 알아봅니다.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3422976?quality=12&learn=on)
 
 ## 개요
 
-다음 [Open Web Application Security Project® (OWASP)](https://owasp.org/) foundation에서는 [**OWASP 상위 10**](https://owasp.org/www-project-top-ten/) 웹 애플리케이션에 가장 중요한 10가지 보안 문제를 요약한 것입니다.
+[OWASP(Open Web Application Security Project®)](https://owasp.org/) 파운데이션은 웹 응용 프로그램에 대한 10가지 가장 중요한 보안 문제를 요약한 [**OWASP 상위 10**](https://owasp.org/www-project-top-ten/)을 제공합니다.
 
 ModSecurity는 웹 애플리케이션에 대한 다양한 공격으로부터 보호하는 오픈 소스 크로스 플랫폼 솔루션입니다. 또한 HTTP 트래픽 모니터링, 로깅 및 실시간 분석을 허용합니다.
 
-OWSAP®는 [OWASP® ModSecurity 코어 규칙 세트(CRS)](https://github.com/coreruleset/coreruleset). CRS는 일반적인 일련의 집합이다 **공격 탐지** ModSecurity에 사용할 규칙입니다. 따라서 CRS는 최소한의 거짓 경고로 OWASP Top Ten을 포함한 광범위한 공격으로부터 웹 애플리케이션을 보호하는 것을 목표로 합니다.
+OWSAP®는 [OWASP® ModSecurity CRS(Core Rule Set)](https://github.com/coreruleset/coreruleset)도 제공합니다. CRS는 ModSecurity와 함께 사용하기 위한 일반적인 **공격 탐지** 규칙 집합입니다. 따라서 CRS는 최소한의 거짓 경고로 OWASP Top Ten을 포함한 광범위한 공격으로부터 웹 애플리케이션을 보호하는 것을 목표로 합니다.
 
-이 튜토리얼에서는 **보호 기능** 잠재적인 DoS 공격으로부터 사이트를 보호하기 위한 CRS 규칙.
+이 자습서에서는 잠재적인 DoS 공격으로부터 사이트를 보호하기 위해 **DOS-PROTECTION** CRS 규칙을 활성화하고 구성하는 방법을 보여 줍니다.
 
 >[!TIP]
 >
->AEM의 as a Cloud Service을 참고하십시오. [관리 CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html) 대부분의 고객 성능 및 보안 요구 사항을 충족합니다. 그러나 ModSecurity는 추가 보안 계층을 제공하고 고객별 규칙 및 구성을 허용합니다.
+>AEM as a Cloud Service의 [관리 CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html)은(는) 대부분의 고객 성능 및 보안 요구 사항을 충족합니다. 그러나 ModSecurity는 추가 보안 계층을 제공하고 고객별 규칙 및 구성을 허용합니다.
 
 ## Dispatcher 프로젝트 모듈에 CRS 추가
 
-1. 다운로드 및 추출 [최신 OWASP ModSecurity 핵심 규칙 세트](https://github.com/coreruleset/coreruleset/releases).
+1. [최신 OWASP ModSecurity 핵심 규칙 집합](https://github.com/coreruleset/coreruleset/releases)을(를) 다운로드하여 추출하십시오.
 
    ```shell
    # Replace the X.Y.Z with relevent version numbers.
@@ -55,13 +55,13 @@ OWSAP®는 [OWASP® ModSecurity 코어 규칙 세트(CRS)](https://github.com/co
    $ tar -xvzf coreruleset-3.3.5.tar.gz
    ```
 
-1. 만들기 `modsec/crs` 다음 범위 내의 폴더 `dispatcher/src/conf.d/` AEM 프로젝트의 코드에서. 예를 들어 의 로컬 복사본에서 [AEM WKND Sites 프로젝트](https://github.com/adobe/aem-guides-wknd).
+1. AEM 프로젝트의 코드에서 `dispatcher/src/conf.d/` 내에 `modsec/crs` 폴더를 만듭니다. 예를 들어 [AEM WKND Sites 프로젝트](https://github.com/adobe/aem-guides-wknd)의 로컬 복사본에 있습니다.
 
-   ![AEM 프로젝트 코드 내 CRS 폴더 - ModSecurity](assets/modsecurity-crs/crs-folder-in-aem-dispatcher-module.png){width="200" zoomable="yes"}
+   ![AEM 프로젝트 코드 내의 CRS 폴더 - ModSecurity](assets/modsecurity-crs/crs-folder-in-aem-dispatcher-module.png){width="200" zoomable="yes"}
 
-1. 다음을 복사합니다. `coreruleset-X.Y.Z/rules` 다운로드한 CRS 릴리스 패키지의 폴더를 `dispatcher/src/conf.d/modsec/crs` 폴더를 삭제합니다.
-1. 다음을 복사합니다. `coreruleset-X.Y.Z/crs-setup.conf.example` 다운로드한 CRS 릴리스 패키지의 파일을에 `dispatcher/src/conf.d/modsec/crs` 폴더를 만들고 이름을 로 변경합니다. `crs-setup.conf`.
-1. 에서 복사된 모든 CRS 규칙 비활성화 `dispatcher/src/conf.d/modsec/crs/rules` 이름을 로 변경하여 `XXXX-XXX-XXX.conf.disabled`. 아래 명령을 사용하여 모든 파일의 이름을 한 번에 바꿀 수 있습니다.
+1. 다운로드한 CRS 릴리스 패키지의 `coreruleset-X.Y.Z/rules` 폴더를 `dispatcher/src/conf.d/modsec/crs` 폴더로 복사합니다.
+1. 다운로드한 CRS 릴리스 패키지의 `coreruleset-X.Y.Z/crs-setup.conf.example` 파일을 `dispatcher/src/conf.d/modsec/crs` 폴더로 복사하고 이름을 `crs-setup.conf`(으)로 바꿉니다.
+1. 복사된 CRS 규칙을 `XXXX-XXX-XXX.conf.disabled`(으)로 이름을 변경하여 `dispatcher/src/conf.d/modsec/crs/rules`에서 모든 CRS 규칙을 비활성화합니다. 아래 명령을 사용하여 모든 파일의 이름을 한 번에 바꿀 수 있습니다.
 
    ```shell
    # Go inside the newly created rules directory within the dispathcher module
@@ -73,15 +73,15 @@ OWSAP®는 [OWASP® ModSecurity 코어 규칙 세트(CRS)](https://github.com/co
 
    WKND 프로젝트 코드에서 이름이 변경된 CRS 규칙 및 구성 파일을 참조하십시오.
 
-   ![AEM 프로젝트 코드 내에서 비활성화된 CRS 규칙 - ModSecurity ](assets/modsecurity-crs/disabled-crs-rules.png){width="200" zoomable="yes"}
+   ![AEM 프로젝트 코드 내에서 CRS 규칙을 사용하지 않도록 설정 - ModSecurity ](assets/modsecurity-crs/disabled-crs-rules.png){width="200" zoomable="yes"}
 
 ## DoS(서비스 거부) 보호 규칙 활성화 및 구성
 
 서비스 거부(DoS) 보호 규칙을 활성화하고 구성하려면 아래 단계를 따르십시오.
 
-1. 이름을 변경하여 DoS 보호 규칙을 활성화합니다. `REQUEST-912-DOS-PROTECTION.conf.disabled` 끝 `REQUEST-912-DOS-PROTECTION.conf` (또는 제거 `.disabled` (rulename 확장에서) `dispatcher/src/conf.d/modsec/crs/rules` 폴더를 삭제합니다.
-1. 다음을 정의하여 규칙 구성  **DOS_COUNTER_THRESHOLD, DOS_BURST_TIME_SLICE, DOS_BLOCK_TIMEOUT** 변수를 채우는 방법에 따라 페이지를 순서대로 표시합니다.
-   1. 만들기 `crs-setup.custom.conf` 다음 내에 있는 파일: `dispatcher/src/conf.d/modsec/crs` 폴더를 삭제합니다.
+1. `dispatcher/src/conf.d/modsec/crs/rules` 폴더 내에서 `REQUEST-912-DOS-PROTECTION.conf.disabled` 이름을 `REQUEST-912-DOS-PROTECTION.conf`(으)로 바꾸거나 `.disabled`을(를) rulename 확장에서 제거하여 DoS 보호 규칙을 사용하도록 설정합니다.
+1. **DOS_COUNTER_THRESHOLD, DOS_BURST_TIME_SLICE, DOS_BLOCK_TIMEOUT** 변수를 정의하여 규칙을 구성합니다.
+   1. `dispatcher/src/conf.d/modsec/crs` 폴더 내에 `crs-setup.custom.conf` 파일을 만듭니다.
    1. 아래 규칙 코드 조각을 새로 만든 파일에 추가합니다.
 
    ```
@@ -100,7 +100,7 @@ OWSAP®는 [OWASP® ModSecurity 코어 규칙 세트(CRS)](https://github.com/co
        setvar:'tx.dos_block_timeout=600'"    
    ```
 
-이 예제 규칙 구성에서 **DOS_COUNTER_THRESHOLD** 은(는) 25이고, **DOS_BURST_TIME_SLICE** 은(는) 60초이며, **DOS_BLOCK_TIMEOUT** 시간 제한은 600초입니다. 이 구성은 정적 파일을 제외하고 60초 이내에 두 번 이상 발생한 25개 요청을 식별하여 DoS 공격으로 자격을 얻으므로 요청 클라이언트가 600초(또는 10분) 동안 차단됩니다.
+이 예제 규칙 구성에서 **DOS_COUNTER_THRESHOLD**&#x200B;은(는) 25초이고, **DOS_BURST_TIME_SLICE**&#x200B;은(는) 60초이며, **DOS_BLOCK_TIMEOUT** 시간 초과는 600초입니다. 이 구성은 정적 파일을 제외하고 60초 이내에 두 번 이상 발생한 25개 요청을 식별하여 DoS 공격으로 자격을 얻으므로 요청 클라이언트가 600초(또는 10분) 동안 차단됩니다.
 
 >[!WARNING]
 >
@@ -110,9 +110,9 @@ OWSAP®는 [OWASP® ModSecurity 코어 규칙 세트(CRS)](https://github.com/co
 
 CRS를 초기화하려면 일반적인 긍정 오류(false positive)를 제거하고 사이트에 대한 로컬 예외를 추가하려면 아래 단계를 따르십시오.
 
-1. CRS를 초기화하려면 `.disabled` 다음에서 **REQUEST-901-INITIALIZATION** 파일. 즉, `REQUEST-901-INITIALIZATION.conf.disabled` 파일 위치: `REQUEST-901-INITIALIZATION.conf`.
-1. 로컬 IP(127.0.0.1) ping과 같은 일반적인 긍정 오류(false positive)를 제거하려면 다음을 제거합니다. `.disabled` 다음에서 **REQUEST-905-COMMON-EXCEPTION** 파일.
-1. AEM 플랫폼 또는 사이트별 경로와 같은 로컬 예외를 추가하려면 `REQUEST-900-EXCLUSION-RULES-BEFORE-CRS.conf.example` 끝 `REQUEST-900-EXCLUSION-RULES-BEFORE-CRS.conf`
+1. CRS를 초기화하려면 **REQUEST-901-INITIALIZATION** 파일에서 `.disabled`을(를) 제거하십시오. 즉, `REQUEST-901-INITIALIZATION.conf.disabled` 파일의 이름을 `REQUEST-901-INITIALIZATION.conf`(으)로 바꿉니다.
+1. 로컬 IP(127.0.0.1) ping과 같은 일반적인 긍정 오류(false positive)를 제거하려면 **REQUEST-905-COMMON-EXCEPTIONS** 파일에서 `.disabled`을(를) 제거하십시오.
+1. AEM 플랫폼 또는 사이트별 경로와 같은 로컬 예외를 추가하려면 `REQUEST-900-EXCLUSION-RULES-BEFORE-CRS.conf.example`의 이름을 `REQUEST-900-EXCLUSION-RULES-BEFORE-CRS.conf`(으)로 바꾸십시오.
    1. 새로 이름이 변경된 파일에 AEM 플랫폼별 경로 예외를 추가합니다.
 
    ```
@@ -148,7 +148,7 @@ CRS를 초기화하려면 일반적인 긍정 오류(false positive)를 제거�
    ...
    ```
 
-1. 또한 `.disabled` 출처: **REQUEST-910-IP-REFERENTIAL.conf.disabled** IP 신뢰도 블록 확인 및 `REQUEST-949-BLOCKING-EVALUATION.conf.disabled` 예외 항목 점수 확인의 경우.
+1. 또한 **REQUEST-910-IP-REFERENTIAL.conf.disabled**&#x200B;에서 IP 신뢰도 블록 검사에 대해 `.disabled`을(를) 제거하고 `REQUEST-949-BLOCKING-EVALUATION.conf.disabled`에서 예외 항목 점수 검사에 대해 을(를) 제거하십시오.
 
 >[!TIP]
 >
@@ -156,9 +156,9 @@ CRS를 초기화하려면 일반적인 긍정 오류(false positive)를 제거�
 
 ## ModSecurity Apache 구성 추가
 
-ModSecurity(즉, `mod_security` Apache 모듈)에서 아래 단계를 수행합니다.
+ModSecurity(즉, `mod_security` Apache 모듈)를 활성화하려면 아래 단계를 수행하십시오.
 
-1. 만들기 `modsecurity.conf` 위치: `dispatcher/src/conf.d/modsec/modsecurity.conf` (아래 주요 구성 포함)
+1. 아래 키 구성으로 `dispatcher/src/conf.d/modsec/modsecurity.conf`에 `modsecurity.conf`을(를) 만듭니다.
 
    ```
    # Include the baseline crs setup
@@ -208,7 +208,7 @@ ModSecurity(즉, `mod_security` Apache 모듈)에서 아래 단계를 수행합�
    SecDataDir /tmp
    ```
 
-1. 원하는 을 선택합니다 `.vhost` AEM 프로젝트의 Dispatcher 모듈에서 `dispatcher/src/conf.d/available_vhosts`, 예: `wknd.vhost`을(를) 클릭하고 바깥쪽에 아래 항목을 추가합니다. `<VirtualHost>` 차단합니다.
+1. AEM 프로젝트의 Dispatcher 모듈 `dispatcher/src/conf.d/available_vhosts`에서 원하는 `.vhost`을(를) 선택합니다(예: `wknd.vhost`). `<VirtualHost>` 블록 외부에 아래 항목을 추가합니다.
 
    ```
    # Enable the ModSecurity and OWASP CRS
@@ -224,11 +224,11 @@ ModSecurity(즉, `mod_security` Apache 모듈)에서 아래 단계를 수행합�
    </VirtualHost>
    ```
 
-위의 모든 항목 _ModSecurity CRS_ 및 _보호 기능_ 구성은 AEM WKND Sites 프로젝트의 [tutorial/enable-modsecurity-crs-dos-protection](https://github.com/adobe/aem-guides-wknd/tree/tutorial/enable-modsecurity-crs-dos-protection) 리뷰를 위한 분기.
+위의 _ModSecurity CRS_ 및 _DOS-PROTECTION_ 구성은 모두 AEM WKND Sites 프로젝트의 [tutorial/enable-modsecurity-crs-dos-protection](https://github.com/adobe/aem-guides-wknd/tree/tutorial/enable-modsecurity-crs-dos-protection) 분기에서 검토할 수 있습니다.
 
 ### Dispatcher 구성 유효성 검사
 
-AEM을 as a Cloud Service으로 사용할 때 _Dispatcher 구성_ 변경 내용을 적용하려면 다음을 사용하여 로컬에서 유효성을 검사하는 것이 좋습니다. `validate` 스크립트 [AEM SDK의 Dispatcher 도구](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html).
+AEM as a Cloud Service을 사용하여 작업할 때 _Dispatcher 구성_ 변경 사항을 배포하기 전에 [AEM SDK의 Dispatcher 도구](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html)의 `validate` 스크립트를 사용하여 로컬에서 유효성을 검사하는 것이 좋습니다.
 
 ```
 # Go inside Dispatcher SDK 'bin' directory
@@ -240,39 +240,39 @@ $ ./validate.sh <YOUR-AEM-PROJECT-CODE-DIR>/dispatcher/src
 
 ## 배포
 
-Cloud Manager를 사용하여 로컬에서 검증된 Dispatcher 구성 배포 [웹 계층](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?#web-tier-config) 또는 [전체 스택](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?#full-stack-code) 파이프라인. 다음을 사용할 수도 있습니다 [신속한 개발 환경](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html) 더 빠른 처리 시간.
+Cloud Manager [웹 계층](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?#web-tier-config) 또는 [전체 스택](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?#full-stack-code) 파이프라인을 사용하여 로컬로 검증된 Dispatcher 구성을 배포합니다. [빠른 개발 환경](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html)을 사용하여 반환 시간을 단축할 수도 있습니다.
 
 ## 확인
 
-DoS 보호를 확인하기 위해 이 예제에서는 60초 이내에 50개 이상의 요청(25개 요청 임계값과 2회 발생 횟수)을 전송해 보겠습니다. 그러나 이러한 요청은 AEM as a Cloud Service으로 전달되어야 합니다 [기본](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html) 또는 모두 [기타 CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?#point-to-point-CDN) 웹 사이트를 탐색합니다.
+DoS 보호를 확인하기 위해 이 예제에서는 60초 이내에 50개 이상의 요청(25개 요청 임계값과 2회 발생 횟수)을 전송해 보겠습니다. 그러나 이러한 요청은 AEM as a Cloud Service [기본 제공](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html) 또는 웹 사이트를 향해 있는 [기타 CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?#point-to-point-CDN)을 통해 전달되어야 합니다.
 
-CDN 패스스루를 수행하는 한 가지 기술은 가 있는 쿼리 매개 변수를 추가하는 것입니다. **각 사이트 페이지 요청에 대한 새 임의 값**.
+CDN 통과를 수행하는 한 가지 방법은 각 사이트 페이지 요청에 **새로운 무작위 값이 있는 쿼리 매개 변수를 추가하는 것입니다**.
 
-짧은 기간(예: 60초) 내에 더 많은 요청(50초 이상)을 트리거하려면 Apache가 [JMeter](https://jmeter.apache.org/) 또는 [벤치마크 또는 ab 도구](https://httpd.apache.org/docs/2.4/programs/ab.html) 를 사용할 수 있습니다.
+짧은 기간(예: 60초) 내에 더 많은 요청(50초 이상)을 트리거하려면 Apache [JMeter](https://jmeter.apache.org/) 또는 [벤치마크 또는 ab 도구](https://httpd.apache.org/docs/2.4/programs/ab.html)를 사용할 수 있습니다.
 
 ### JMeter 스크립트를 사용하여 DoS 공격 시뮬레이션
 
 JMeter를 사용하여 DoS 공격을 시뮬레이션하려면 아래 단계를 따르십시오.
 
-1. [Apache JMeter 다운로드](https://jmeter.apache.org/download_jmeter.cgi) 및 [설치](https://jmeter.apache.org/usermanual/get-started.html#install) 로컬로
-1. [실행](https://jmeter.apache.org/usermanual/get-started.html#running) 다음을 사용하여 로컬에서 `jmeter` 다음에서 스크립트: `<JMETER-INSTALL-DIR>/bin` 디렉토리.
-1. 샘플 열기 [WKND-DoS-Attack-Simulation-Test](assets/modsecurity-crs/WKND-DoS-Attack-Simulation-Test.jmx) JMX 스크립트를 JMeter로 변환 **열기** 도구 메뉴입니다.
+1. [Apache JMeter 다운로드](https://jmeter.apache.org/download_jmeter.cgi) 및 로컬에서 [설치](https://jmeter.apache.org/usermanual/get-started.html#install)
+1. `<JMETER-INSTALL-DIR>/bin` 디렉터리에서 `jmeter` 스크립트를 사용하여 로컬로 [실행](https://jmeter.apache.org/usermanual/get-started.html#running)합니다.
+1. **열기** 도구 메뉴를 사용하여 샘플 [WKND-DoS-Attack-Simulation-Test](assets/modsecurity-crs/WKND-DoS-Attack-Simulation-Test.jmx) JMX 스크립트를 JMeter로 엽니다.
 
    ![샘플 WKND DoS 공격 JMX 테스트 스크립트 열기 - ModSecurity](assets/modsecurity-crs/open-wknd-dos-attack-jmx-test-script.png)
 
-1. 업데이트 **서버 이름 또는 IP** 의 필드 값 _홈 페이지_ 및 _어드벤처 페이지_ 테스트 AEM 환경 URL과 일치하는 HTTP 요청 샘플러. 샘플 JMeter 스크립트의 다른 세부 사항을 검토하십시오.
+1. 테스트 AEM 환경 URL과 일치하는 _홈 페이지_ 및 _Adventure 페이지_ HTTP 요청 샘플러에서 **서버 이름 또는 IP** 필드 값을 업데이트합니다. 샘플 JMeter 스크립트의 다른 세부 사항을 검토하십시오.
 
    ![AEM 서버 이름 HTTP 요청 JMetere - ModSecurity](assets/modsecurity-crs/aem-server-name-http-request.png)
 
-1. 다음을 눌러 스크립트 실행 **시작** 도구 메뉴에서 단추를 클릭합니다. 스크립트는 WKND 사이트의 인스턴스에 대해 50개의 HTTP 요청(사용자 5명, 루프 카운트 10개)을 전송합니다 _홈 페이지_ 및 _어드벤처 페이지_. 따라서 정적이 아닌 파일에 대한 총 100개의 요청으로 **보호 기능** CRS 규칙 사용자 정의 구성.
+1. 도구 메뉴에서 **시작** 단추를 눌러 스크립트를 실행합니다. 스크립트는 WKND 사이트의 _홈 페이지_ 및 _모험 페이지_&#x200B;에 대해 50개의 HTTP 요청(사용자 5명, 루프 횟수 10개)을 보냅니다. 따라서 정적이 아닌 파일에 대한 총 100개의 요청은 **DOS-PROTECTION** CRS 규칙 사용자 지정 구성당 DoS 공격을 검증합니다.
 
    ![JMeter 스크립트 실행 - ModSecurity](assets/modsecurity-crs/execute-jmeter-script.png)
 
-1. 다음 **테이블에서 결과 보기** JMeter 리스너를 표시합니다. **실패** 요청 번호 ~ 53 이상에 대한 응답 상태입니다.
+1. **테이블의 결과 보기** JMeter 수신기가 요청 번호 ~ 53 이상에 대한 **실패** 응답 상태를 표시합니다.
 
    ![테이블 JMeter - ModSecurity의 결과 보기에서 실패한 응답](assets/modsecurity-crs/failed-response-jmeter.png)
 
-1. 다음 **503 HTTP 응답 코드** 이(가) 실패한 요청에 대해 반환되면 다음을 사용하여 세부 사항을 볼 수 있습니다. **결과 트리 보기** JMeter 리스너입니다.
+1. 실패한 요청에 대해 **503 HTTP 응답 코드**&#x200B;이(가) 반환되었습니다. **결과 트리 보기** JMeter 수신기를 사용하여 세부 정보를 볼 수 있습니다.
 
    ![503 응답 JMeter - ModSecurity](assets/modsecurity-crs/503-response-jmeter.png)
 
@@ -280,8 +280,8 @@ JMeter를 사용하여 DoS 공격을 시뮬레이션하려면 아래 단계를 �
 
 ModSecurity 로거 구성은 DoS 공격 사건의 세부 정보를 기록합니다. 세부 정보를 보려면 아래 단계를 따르십시오.
 
-1. 을(를) 다운로드하여 엽니다. `httpderror` 의 로그 파일 **Dispatcher 게시**.
-1. 단어 검색 `burst` 로그 파일에서 **오류** 라인
+1. **Publish Dispatcher**&#x200B;의 `httpderror` 로그 파일을 다운로드하여 엽니다.
+1. **오류** 줄을 보려면 로그 파일에서 `burst` 단어를 검색하십시오.
 
    ```
    Tue Aug 15 15:19:40.229262 2023 [security2:error] [pid 308:tid 140200050567992] [cm-p46652-e1167810-aem-publish-85df5d9954-bzvbs] [client 192.150.10.209] ModSecurity: Warning. Operator GE matched 2 at IP:dos_burst_counter. [file "/etc/httpd/conf.d/modsec/crs/rules/REQUEST-912-DOS-PROTECTION.conf"] [line "265"] [id "912170"] [msg "Potential Denial of Service (DoS) Attack from 192.150.10.209 - # of Request Bursts: 2"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "paranoia-level/1"] [tag "attack-dos"] [tag "OWASP_CRS"] [tag "capec/1000/210/227/469"] [hostname "publish-p46652-e1167810.adobeaemcloud.com"] [uri "/content/wknd/us/en/adventures.html"] [unique_id "ZNuXi9ft_9sa85dovgTN5gAAANI"]
@@ -291,7 +291,7 @@ ModSecurity 로거 구성은 DoS 공격 사건의 세부 정보를 기록합니�
    Tue Aug 15 15:19:40.515237 2023 [security2:error] [pid 309:tid 140200051428152] [cm-p46652-e1167810-aem-publish-85df5d9954-bzvbs] [client 192.150.10.209] ModSecurity: Access denied with connection close (phase 1). Operator EQ matched 0 at IP. [file "/etc/httpd/conf.d/modsec/crs/rules/REQUEST-912-DOS-PROTECTION.conf"] [line "120"] [id "912120"] [msg "Denial of Service (DoS) attack identified from 192.150.10.209 (1 hits since last alert)"] [ver "OWASP_CRS/3.3.5"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "paranoia-level/1"] [tag "attack-dos"] [tag "OWASP_CRS"] [tag "capec/1000/210/227/469"] [hostname "publish-p46652-e1167810.adobeaemcloud.com"] [uri "/us/en.html"] [unique_id "ZNuXjAN7ZtmIYHGpDEkmmwAAAQw"]
    ```
 
-1. 다음과 같은 세부 사항을 검토합니다. _클라이언트 IP 주소_, 작업, 오류 메시지 및 요청 세부 정보.
+1. _클라이언트 IP 주소_, 작업, 오류 메시지 및 요청 세부 정보 등 세부 정보를 검토하십시오.
 
 ## ModSecurity의 성능에 미치는 영향
 
@@ -299,4 +299,4 @@ ModSecurity 및 관련 규칙을 활성화하면 성능에 몇 가지 영향을 
 
 ### 추가 규칙
 
-이 튜토리얼에서는 **보호 기능** 데모용 CRS 규칙. 적절한 규칙을 이해하고 검토하고 구성하려면 Web Security 전문가와 협력하는 것이 좋습니다.
+이 자습서에서는 데모용으로만 **DOS-PROTECTION** CRS 규칙을 활성화하고 사용자 지정합니다. 적절한 규칙을 이해하고 검토하고 구성하려면 Web Security 전문가와 협력하는 것이 좋습니다.

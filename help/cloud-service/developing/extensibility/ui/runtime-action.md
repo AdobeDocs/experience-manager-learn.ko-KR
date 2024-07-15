@@ -22,7 +22,7 @@ ht-degree: 2%
 
 ![AEM UI 확장 런타임 작업](./assets/runtime-action/action-runtime-flow.png){align="center"}
 
-AEM UI 확장은 선택적으로 다음을 포함할 수 있습니다. [Adobe I/O Runtime 작업](https://developer.adobe.com/runtime/docs/).
+AEM UI 확장은 선택적으로 [Adobe I/O Runtime 작업](https://developer.adobe.com/runtime/docs/)을 포함할 수 있습니다.
 
 Adobe I/O Runtime 작업은 확장에서 호출할 수 있는 서버를 사용하지 않는 함수입니다. 작업은 AEM 또는 다른 Adobe 웹 서비스와 상호 작용해야 하는 작업을 수행하는 데 유용합니다. 일반적으로 작업은 장기 실행(몇 초 이상) 작업을 수행하거나 AEM 또는 기타 웹 서비스에 대한 HTTP 요청을 하는 데 가장 유용합니다.
 
@@ -44,12 +44,12 @@ AEM UI 확장은 특정 AEM UI, 확장 및 해당 지원 작업에 표시되지�
 
 Adobe I/O Runtime 작업은 주로 AEM UI 확장의 두 위치에서 호출됩니다.
 
-1. 다음 [확장 등록](./extension-registration.md) `onClick(..)` 핸들러
-1. 다음 범위 내 [모달](./modal.md)
+1. [확장 등록](./extension-registration.md) `onClick(..)` 처리기
+1. [모달](./modal.md) 내
 
 ### 확장 등록에서
 
-Adobe I/O Runtime 작업은 확장 등록 코드에서 직접 호출할 수 있습니다. 가장 일반적인 사용 사례는 작업을 [머리글 메뉴](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/header-menu/)을 사용하지 않는 의 단추 [모달](./modal.md).
+Adobe I/O Runtime 작업은 확장 등록 코드에서 직접 호출할 수 있습니다. 가장 일반적인 사용 사례는 [모달](./modal.md)을 사용하지 않는 [헤더 메뉴](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/header-menu/)의 단추에 작업을 바인딩하는 것입니다.
 
 + `./src/aem-ui-extension/web-src/src/components/ExtensionRegistration.js`
 
@@ -110,7 +110,7 @@ export default ExtensionRegistration;
 
 ### 모달에서
 
-AEM as a Cloud Service, Adobe 웹 서비스 또는 타사 서비스와의 통신에 의존하는 작업, 특히 더 많은 관련 작업을 수행하기 위해 Adobe I/O Runtime 작업을 모달에서 직접 호출할 수 있습니다.
+더 많은 관련 작업, 특히 AEM as a Cloud Service, Adobe 웹 서비스 또는 서드파티 서비스와의 통신에 의존하는 작업을 수행하기 위해 Adobe I/O Runtime 작업을 모델에서 직접 호출할 수 있습니다.
 
 Adobe I/O Runtime 작업은 서버를 사용하지 않는 Adobe I/O Runtime 환경에서 실행되는 Node.js 기반 JavaScript 애플리케이션입니다. 이러한 작업은 확장 SPA에서 HTTP를 통해 주소 지정할 수 있습니다.
 
@@ -306,8 +306,8 @@ async function main (params) {
 
 다음 AEM HTTP API는 일반적으로 확장에서 AEM과 상호 작용하는 데 사용됩니다.
 
-+ [AEM GRAPHQL API](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ko-KR)
-+ [AEM ASSETS HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html)
++ [AEM GraphQL API](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ko-KR)
++ [AEM Assets HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html)
    + [AEM Assets HTTP API의 콘텐츠 조각 지원](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/assets-api-content-fragments.html)
 + [AEM QueryBuilder API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html)
 + [AEM as a Cloud Service API 참조 완료](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/reference-materials.html)

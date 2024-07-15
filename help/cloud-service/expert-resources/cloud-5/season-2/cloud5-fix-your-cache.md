@@ -18,11 +18,11 @@ ht-degree: 1%
 
 # 클라우드 5 - 문제 해결... 캐시
 
-2부로 구성된 시즌 2 시리즈에서는 AEMas a Cloud Service 에서 캐싱 속도를 높일 수 있는 몇 가지 사항을 살펴봅니다.
+2부로 구성된 시즌 2 시리즈에서는 AEM as a Cloud Service에서의 캐싱 속도를 높일 수 있는 몇 가지 사항을 살펴봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/343475?quality=12&learn=on)
 
 ## 이 비디오에서 다루는 콘텐츠
 
-+ [캐싱 및 콘텐츠 전달](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html)
++ [캐싱 및 콘텐츠 배달](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html)
 + [Google 등대](https://developers.google.com/web/tools/lighthouse)

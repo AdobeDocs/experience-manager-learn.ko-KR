@@ -25,7 +25,7 @@ AEM 6.4.2는 사용자가 AEM에서 직접 Adobe Stock 에셋을 검색, 미리�
 
 >[!NOTE]
 >
->통합하려면 [엔터프라이즈 Adobe Stock 플랜](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html) 서비스 팩 2 이상이 배포된 AEM 6.4 AEM 6.4 서비스 팩 세부 사항은 다음을 참조하십시오 [릴리스 정보](https://helpx.adobe.com/kr/experience-manager/6-4/release-notes/sp-release-notes.html).
+>통합하려면 서비스 팩 2 이상이 배포된 [엔터프라이즈 Adobe Stock 계획](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html) 및 AEM 6.4가 필요합니다. AEM 6.4 서비스 팩에 대한 자세한 내용은 다음 [릴리스 정보](https://helpx.adobe.com/kr/experience-manager/6-4/release-notes/sp-release-notes.html)를 참조하세요.
 
 Adobe Stock 및 AEM Assets 통합을 통해 콘텐츠 작성자와 마케터는 크리에이티브 또는 마케팅 목적으로 스톡 자산에 대한 라이센스를 쉽게 부여하고 사용할 수 있습니다. 위치 필터를 Adobe Stock으로 추가하거나 AEM Assets 기본 탐색을 탐색하고 Adobe Stock Coral UI 아이콘 검색을 클릭하여 옴니 검색을 사용하여 Stock 자산 검색을 수행할 수 있습니다.
 
@@ -47,7 +47,7 @@ Adobe Stock 및 AEM Assets 통합을 통해 콘텐츠 작성자와 마케터는 
 
 ### 자산 스톡 프로필
 
-* 사용자는 아래에서 Adobe Stock 프로필을 선택할 수 있습니다. *사용자 > 내 환경 설정 > Stock 구성*
+* 사용자는 *사용자 > 내 환경 설정 > 재고 구성*&#x200B;에서 Adobe Stock 프로필을 선택할 수 있습니다.
 * 자산 라이센스 창에는 필수 및 선택적 참조를 추가할 수 있습니다.
 * 지역에 따라 Asset Licensing 창의 언어 기본 설정을 선택할 수 있습니다.
 
@@ -61,7 +61,7 @@ Adobe Stock 및 AEM Assets 통합을 통해 콘텐츠 작성자와 마케터는 
 ### 액세스 제어
 
 * 관리자는 Adobe Stock Cloud Service 구성을 설정할 때 Stock 자산에 라이센스를 부여할 수 있는 권한을 특정 사용자/그룹에 제공할 수 있습니다.
-* 특정 사용자/그룹에 Stock 자산에 라이센스를 부여할 권한이 없는 경우 *Stock Asset Search / Asset 라이센스* 기능이 비활성화됩니다.
+* 특정 사용자/그룹에 Stock 자산에 라이선스를 부여할 수 있는 권한이 없는 경우 *Stock 자산 검색/자산 라이선스* 기능이 비활성화됩니다.
 
 ## AEM Assets을 사용하여 Adobe Stock 설정{#set-up-adobe-stock-with-aem-assets}
 
@@ -71,22 +71,22 @@ AEM 6.4.2는 사용자가 AEM에서 직접 Adobe Stock 에셋을 검색, 미리�
 
 >[!NOTE]
 >
->Adobe Stock Cloud Service 구성의 경우 프로덕션 환경 및 라이선스 에셋 경로 지점을 선택해야 합니다. `/content/dam`. 이제 환경 필드가 AEM에서 제거되었습니다.
+>Adobe Stock 클라우드 서비스 구성의 경우 `/content/dam`(으)로 향하는 프로덕션 환경 및 라이선스 자산 경로를 선택해야 합니다. 이제 환경 필드가 AEM에서 제거되었습니다.
 
 >[!NOTE]
 >
->통합하려면 [엔터프라이즈 Adobe Stock 플랜](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html) 및 AEM 6.4 이상 [서비스 팩 2](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=AEM*+6*+4*+Service*+Pack*&amp;2_group.propertyvalues.property=입니다.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&amp;2_group.propertyvalues.operation=equals&amp;2_group.propertyvalues.0_values=target-version%3Aaem%2F6-4&amp;3_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;3_group.propertyvalues.operation=equals&amp;3_group.propertyvalues.0_values=software-type%3Aservice-and-cumulative-fix&amp;orderby=%40jcr%3Acontent%2Fmetadata%2Fdc%3Atitle&amp;orderby.sort=asc&amp;layout=list&amp;p.offset=0&amp;p.limit=24) 배포되었습니다. AEM 6.4 서비스 팩 세부 사항은 다음을 참조하십시오 [릴리스 정보](https://helpx.adobe.com/kr/experience-manager/6-4/release-notes/sp-release-notes.html). 다음에 대한 관리자 권한도 필요합니다. [Adobe I/O 콘솔](https://console.adobe.io/), [Adobe Admin Console](https://adminconsole.adobe.com/) 및 Adobe Experience Manager을 사용하여 통합을 설정할 수 있습니다.
+>통합하려면 [서비스 팩 2](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=AEM*+6*+4*+Service*+Pack*&amp;2_group.propertyvalues.property=입니다.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&amp;2_group.propertyvalues.operation=equals&amp;2_group.propertyvalues.0_values=target-version%3Aaem%2F6-4&amp;3_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;3_group.propertyvalues.operation=equals&amp;3_group.propertyvalues.0_values=software-type%3Aservice-and-cumulative-fix&amp;orderby=%40jcr%3Acontent%2Fmetadata%2Fdc%3Atitle&amp;orderby.sort=asc&amp;layout=list&amp;p.offset=0&amp;p.limit=24)이(가) 배포된 [엔터프라이즈 Adobe Stock 계획](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html) 및 AEM 6.4가 필요합니다. AEM 6.4 서비스 팩에 대한 자세한 내용은 다음 [릴리스 정보](https://helpx.adobe.com/kr/experience-manager/6-4/release-notes/sp-release-notes.html)를 참조하세요. 통합을 설정하려면 [Adobe I/O 콘솔](https://console.adobe.io/), [Adobe Admin Console](https://adminconsole.adobe.com/) 및 Adobe Experience Manager에 대한 관리자 권한도 필요합니다.
 
 ### 설치 {#installations}
 
-* AEM 6.4의 경우 [AEM 서비스 팩 2](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=AEM*+6*+4*+Service*+Pack*&amp;2_group.propertyvalues.property=입니다.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&amp;2_group.propertyvalues.operation=equals&amp;2_group.propertyvalues.0_values=target-version%3Aaem%2F6-4&amp;3_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;3_group.propertyvalues.operation=equals&amp;3_group.propertyvalues.0_values=software-type%3Aservice-and-cumulative-fix&amp;orderby=%40jcr%3Acontent%2Fmetadata%2Fdc%3Atitle&amp;orderby.sort=asc&amp;layout=list&amp;p.offset=0&amp;p.limit=24) 그런 다음 cq-dam-stock-integration-content-1.0.4.zip 파일을 다시 설치합니다.
-* 다음에 대한 관리자 권한이 있는지 확인하십시오. [Adobe I/O 콘솔](https://console.adobe.io/), [Adobe Admin Console](https://adminconsole.adobe.com/) 및 Adobe Experience Manager을 사용하여 통합을 설정할 수 있습니다.
+* AEM 6.4의 경우 [AEM 서비스 팩 2](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=AEM*+6*+4*+Service*+Pack*&amp;2_group.propertyvalues.property=입니다.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&amp;2_group.propertyvalues.operation=equals&amp;2_group.propertyvalues.0_values=target-version%3Aaem%2F6-4&amp;3_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;3_group.propertyvalues.operation=equals&amp;3_group.propertyvalues.0_values=software-type%3Aservice-and-cumulative-fix&amp;orderby=%40jcr%3Acontent%2Fmetadata%2Fdc%3Atitle&amp;orderby.sort=asc&amp;layout=list&amp;p.offset=0&amp;p.limit=24)을 설치한 다음 cq-dam-stock-integration-content-1.0.4.zip 파일을 다시 설치해야 합니다.
+* 통합을 설정하려면 [Adobe I/O 콘솔](https://console.adobe.io/), [Adobe Admin Console](https://adminconsole.adobe.com/) 및 Adobe Experience Manager에 대한 관리자 권한이 있는지 확인하십시오.
 
 #### Adobe I/O 콘솔을 사용하여 Adobe IMS 구성 설정 {#set-up-adobe-ims-configuration-using-adobe-i-o-console}
 
-1. 아래에서 Adobe IMS 기술 계정 구성 만들기 **도구 > 보안**
-2. 다음 항목 선택 *클라우드 솔루션* 다음으로: *Adobe Stock* 새 인증서를 만들거나 구성에 기존 인증서를 다시 사용합니다.
-3. Adobe I/O 콘솔로 이동하여 새 서비스 계정 통합을 만듭니다. *Adobe Stock*.
+1. **도구 > 보안**&#x200B;에서 Adobe IMS 기술 계정 구성 만들기
+2. *클라우드 솔루션*&#x200B;을(를) *Adobe Stock*(으)로 선택하고 새 인증서를 만들거나 기존 인증서를 구성에 다시 사용하십시오.
+3. Adobe I/O 콘솔로 이동하여 *Adobe Stock*&#x200B;에 대한 새 서비스 계정 통합을 만듭니다.
 4. 2단계에서 인증서를 Adobe Stock 서비스 계정 통합에 업로드합니다.
 5. 필요한 Adobe Stock 프로필 구성을 선택하고 서비스 통합을 완료합니다.
 6. 통합 세부 정보를 사용하여 Adobe IMS 기술 계정 구성을 완료합니다
@@ -96,20 +96,20 @@ AEM 6.4.2는 사용자가 AEM에서 직접 Adobe Stock 에셋을 검색, 미리�
 
 #### Adobe Stock Cloud Service 설정 {#set-up-adobe-stock-cloud-services}
 
-1. 아래에서 Adobe Stock에 대한 새 클라우드 서비스 구성 만들기 **도구 > Cloud Service.**
-2. 다음 항목 선택 *Adobe IMS 구성* 의 위 섹션에서 을(를) 만들었습니다. *Adobe Stock Cloud* 구성
+1. **도구 > Cloud Service**&#x200B;에서 Adobe Stock에 대한 새 클라우드 서비스 구성을 만듭니다.
+2. *Adobe Stock Cloud* 구성에 대해 위 섹션에서 만든 *Adobe IMS 구성*&#x200B;을(를) 선택하십시오
 
-3. 다음을 선택하십시오. **환경** 프로덕션으로.
-4. **라이센스가 부여된 자산 경로** 아래의 모든 디렉터리를 가리킬 수 있습니다. `/content/dam`.
+3. PROD로 **ENVIRONMENT**&#x200B;를 선택해야 합니다.
+4. **사용 허가된 자산 경로**&#x200B;은(는) `/content/dam` 아래의 모든 디렉터리를 지정할 수 있습니다.
 5. 로케일을 선택하고 설정을 완료합니다.
 6. Adobe Stock Cloud Service에 사용자/그룹을 추가하여 특정 사용자 또는 그룹에 대한 액세스를 활성화할 수도 있습니다.
 
-![Adobe 에셋 재고 구성](assets/screen_shot_2018-10-22at12425pm.png)
+![Assets Stock 구성 Adobe](assets/screen_shot_2018-10-22at12425pm.png)
 
 ### 추가 리소스
 
 * [기업 주식 계획](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html)
 * [AEM 6.4 서비스 팩 2 릴리스 노트](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html)
-* [AEM 및 Adobe Stock 통합](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/aem-assets-adobe-stock.html)
+* [AEM과 Adobe Stock 통합](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/aem-assets-adobe-stock.html)
 * [Adobe I/O 콘솔 통합 API](https://www.adobe.io/apis/cloudplatform/console/authentication/gettingstarted.html)
 * [Adobe Stock API 문서](https://www.adobe.io/apis/creativecloud/stock/docs.html)

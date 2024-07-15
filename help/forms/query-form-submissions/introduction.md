@@ -33,9 +33,9 @@ ht-degree: 1%
 
 
 
-개발자이고 이 사용 사례 구현에 대한 코드 및 기타 세부 정보를 이해하고자 하는 경우 이를 가져오십시오 [AEM 프로젝트는 VSCode 또는 IntelliJ입니다.](assets/azuredemoproject.zip)
+개발자이고 이 사용 사례 구현에 대한 코드 및 기타 세부 정보를 이해하려면 이 [AEM 프로젝트를 VSCode 또는 IntelliJ로 가져오십시오.](assets/azuredemoproject.zip)
 
-이 샘플을 로컬 시스템에서 작업하려면 다음 단계를 따르십시오 [이 자습서의 5부](./part5.md)
+이 샘플을 로컬 시스템에서 작업하려면 이 자습서의 [part5](./part5.md)에 언급된 단계를 따르십시오.
 
 다음 단계는 솔루션을 만드는 데 포함되었습니다
 

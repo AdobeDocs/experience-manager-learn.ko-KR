@@ -46,13 +46,13 @@ rm -rf ui.frontend/src/main/webpack/components/_helloworld.css
 
 ## 편집
 
-제거 `<div class="helloworld" ...></div>` 출처:
+다음에서 `<div class="helloworld" ...></div>` 제거:
 
 ```
 ui.frontend/src/main/webpack/static/index.html
 ```
 
-제거 `<helloworld>` 구성 요소 인스턴스 정의 위치:
+다음 위치에서 `<helloworld>` 구성 요소 인스턴스 정의 제거:
 
 ```
 ui.content/src/main/content/jcr_root/content/wknd-examples/us/en/.content.xml

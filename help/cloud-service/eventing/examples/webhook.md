@@ -25,51 +25,51 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427051?quality=12&learn=on)
 
-이 예에서 Adobe 제공 사용 _호스팅된 webhook_ 에서는 고유한 웹후크를 설정할 필요 없이 AEM 이벤트를 수신할 수 있습니다. 이 Adobe 제공 웹후크는에서 호스팅됩니다. [결함](https://glitch.com/): 웹 애플리케이션을 구축하고 배포하는 데 도움이 되는 웹 기반 환경을 제공하는 것으로 알려진 플랫폼입니다. 그러나 원하는 경우 자체 웹후크를 사용하는 옵션도 사용할 수 있습니다.
+이 예제에서는 Adobe이 제공한 _호스팅된 webhook_&#x200B;을(를) 사용하면 자체 webhook을 설정할 필요 없이 AEM 이벤트를 받을 수 있습니다. 이 Adobe 제공 웹후크는 웹 응용 프로그램을 빌드하고 배포하는 데 도움이 되는 웹 기반 환경을 제공하는 것으로 알려진 플랫폼인 [Glitch](https://glitch.com/)에서 호스팅됩니다. 그러나 원하는 경우 자체 웹후크를 사용하는 옵션도 사용할 수 있습니다.
 
 ## 사전 요구 사항
 
 이 자습서를 완료하려면 다음이 필요합니다.
 
-- AEM as a Cloud Service 환경 [AEM 이벤트 활성화됨](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment).
+- [AEM 이벤트가 활성화됨](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment)인 AEM as a Cloud Service 환경.
 
-- [AEM 이벤트에 대해 구성된 Adobe Developer 콘솔 프로젝트](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#how-to-subscribe-to-aem-events-in-the-adobe-developer-console).
+- [AEM 이벤트에 대해 Adobe Developer Console 프로젝트가 구성됨](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#how-to-subscribe-to-aem-events-in-the-adobe-developer-console).
 
 >[!IMPORTANT]
 >
->AEM as a Cloud Service 이벤트는 프리릴리스 모드의 등록된 사용자만 사용할 수 있습니다. AEM as a Cloud Service 환경에서 AEM 이벤트를 활성화하려면 [AEM 이벤트 팀](mailto:grp-aem-events@adobe.com).
+>AEM as a Cloud Service 이벤트는 프리릴리스 모드의 등록된 사용자만 사용할 수 있습니다. AEM as a Cloud Service 환경에서 AEM 이벤트를 사용하려면 [AEM 이벤트 팀](mailto:grp-aem-events@adobe.com)에 문의하십시오.
 
 ## Webhook 액세스
 
 Adobe이 제공한 웹후크에 액세스하려면 다음 단계를 따르십시오.
 
-- 다음에 액세스할 수 있는지 확인합니다. [결함 - 호스팅된 웹후크](https://lovely-ancient-coaster.glitch.me/) 새 브라우저 탭에서.
+- 새 브라우저 탭에서 [결함 - 호스트된 웹후크](https://lovely-ancient-coaster.glitch.me/)에 액세스할 수 있는지 확인하십시오.
 
-  ![결함 - 호스팅된 웹후크](../assets/examples/webhook/glitch-hosted-webhook.png)
+  ![결함 - 호스팅된 webhook](../assets/examples/webhook/glitch-hosted-webhook.png)
 
-- 웹후크의 고유한 이름을 입력합니다(예: ). `<YOUR_PETS_NAME>-aem-eventing` 및 클릭 **연결**. 다음이 표시됩니다. `Connected to: ${YOUR-WEBHOOK-URL}` 메시지가 화면에 표시됩니다.
+- 웹후크의 고유 이름(예: `<YOUR_PETS_NAME>-aem-eventing`)을 입력하고 **연결**&#x200B;을 클릭합니다. 화면에 `Connected to: ${YOUR-WEBHOOK-URL}`개의 메시지가 표시됩니다.
 
-  ![결함 - 웹후크 생성](../assets/examples/webhook/glitch-create-webhook.png)
+  ![결함 - 웹후크 만들기](../assets/examples/webhook/glitch-create-webhook.png)
 
-- 다음을 기록합니다. **Webhook URL**. 나중에 이 자습서에서 필요합니다.
+- **Webhook URL**&#x200B;을 메모하세요. 나중에 이 자습서에서 필요합니다.
 
-## Adobe Developer 콘솔 프로젝트에서 Webhook 구성
+## Adobe Developer Console 프로젝트에서 Webhook 구성
 
 위의 웹후크 URL에서 AEM 이벤트를 수신하려면 다음 단계를 따르십시오.
 
-- 다음에서 [Adobe Developer 콘솔](https://developer.adobe.com)로 이동한 다음 를 클릭하여 프로젝트를 엽니다.
+- [Adobe Developer Console](https://developer.adobe.com)에서 프로젝트로 이동한 다음 클릭하여 엽니다.
 
-- 아래 **제품 및 서비스** 섹션에서 줄임표 클릭 `...` 원하는 이벤트 카드 옆에 있는 은 AEM 이벤트를 웹후크로 보내고 을 선택합니다. **편집**.
+- **제품 및 서비스** 섹션에서 웹후크로 AEM 이벤트를 보낼 원하는 이벤트 카드 옆에 있는 생략 부호 `...`을(를) 클릭하고 **편집**&#x200B;을(를) 선택합니다.
 
-  ![Adobe Developer 콘솔 프로젝트 편집](../assets/examples/webhook/adobe-developer-console-project-edit.png)
+  ![Adobe Developer Console 프로젝트 편집](../assets/examples/webhook/adobe-developer-console-project-edit.png)
 
-- 새로 오픈한 **이벤트 등록 구성** 대화 상자, 클릭 **다음** 진행하려면 **이벤트 수신 방법** 단계.
+- 새로 연 **이벤트 등록 구성** 대화 상자에서 **다음**&#x200B;을 클릭하여 **이벤트를 받는 방법** 단계로 진행합니다.
 
-  ![Adobe Developer 콘솔 프로젝트 구성](../assets/examples/webhook/adobe-developer-console-project-configure.png)
+  ![Adobe Developer Console 프로젝트 구성](../assets/examples/webhook/adobe-developer-console-project-configure.png)
 
-- 다음에서 **이벤트 수신 방법** 단계, 선택 **Webhook** 옵션 및 붙여넣기 **Webhook URL** 이전에 Glitch 호스팅 웹후크에서 복사한 다음 **구성된 이벤트 저장**.
+- **이벤트를 받는 방법** 단계에서 **Webhook** 옵션을 선택하고 Glitch 호스팅 Webhook에서 이전에 복사한 **Webhook URL**&#x200B;을(를) 붙여 넣은 다음 **구성된 이벤트 저장**&#x200B;을 클릭합니다.
 
-  ![Adobe Developer 콘솔 프로젝트 Webhook](../assets/examples/webhook/adobe-developer-console-project-webhook.png)
+  ![Adobe Developer Console 프로젝트 Webhook](../assets/examples/webhook/adobe-developer-console-project-webhook.png)
 
 - Glitch webbook 페이지에 GET 요청이 표시되어야 하며, 이 요청은 Adobe I/O 이벤트에서 webhook URL을 확인하기 위해 보낸 챌린지 요청입니다.
 
@@ -78,11 +78,11 @@ Adobe이 제공한 웹후크에 액세스하려면 다음 단계를 따르십시
 
 ## AEM 이벤트 트리거
 
-위의 Adobe Developer 콘솔 프로젝트에 등록된 AEM as a Cloud Service 환경에서 AEM 이벤트를 트리거하려면 다음 단계를 따르십시오.
+위의 Adobe Developer Console 프로젝트에 등록된 AEM as a Cloud Service 환경에서 AEM 이벤트를 트리거하려면 다음 단계를 따르십시오.
 
-- AEM 를 통해 as a Cloud Service 작성자 환경에 액세스하고 로그인합니다. [Cloud Manager](https://my.cloudmanager.adobe.com/).
+- [Cloud Manager](https://my.cloudmanager.adobe.com/)을(를) 통해 AEM as a Cloud Service 작성자 환경에 액세스하고 로그인합니다.
 
-- 다음에 따라 **구독한 이벤트**, 콘텐츠 조각 만들기, 업데이트, 삭제, 게시 또는 게시 취소.
+- **구독한 이벤트**&#x200B;에 따라 콘텐츠 조각을 만들거나, 업데이트하거나, 삭제하거나, 게시하거나, 게시 취소합니다.
 
 ## 이벤트 세부 사항 검토
 
@@ -92,7 +92,7 @@ Adobe이 제공한 웹후크에 액세스하려면 다음 단계를 따르십시
 
 다음은 POST 요청에 대한 주요 세부 정보입니다.
 
-- 경로: `/webhook/${YOUR-WEBHOOK-URL}`, 예 `/webhook/AdobeTM-aem-eventing`
+- 경로: `/webhook/${YOUR-WEBHOOK-URL}`(예: `/webhook/AdobeTM-aem-eventing`)
 
 - headers: Adobe I/O 이벤트에서 보낸 요청 헤더(예: )
 
@@ -154,8 +154,8 @@ Adobe이 제공한 웹후크에 액세스하려면 다음 단계를 따르십시
 }
 ```
 
-AEM 이벤트 세부 사항에 웹후크에서 이벤트를 처리하는 데 필요한 모든 정보가 포함되어 있음을 알 수 있습니다. 예: 이벤트 유형(`type`), 이벤트 소스(`source`), 이벤트 id(`event_id`), 이벤트 시간(`time`) 및 이벤트 데이터(`data`).
+AEM 이벤트 세부 사항에 웹후크에서 이벤트를 처리하는 데 필요한 모든 정보가 포함되어 있음을 알 수 있습니다. 예를 들어 이벤트 유형(`type`), 이벤트 소스(`source`), 이벤트 ID(`event_id`), 이벤트 시간(`time`) 및 이벤트 데이터(`data`)가 있습니다.
 
 ## 추가 리소스
 
-- [결함 웹후크 소스 코드](https://glitch.com/edit/#!/러블리 앤시언트 코스터) 을(를) 참조할 수 있습니다.
+- [결함 웹후크 소스 코드](https://glitch.com/edit/#!/러블리 앤시언트 코스터)을(를) 참조할 수 있습니다.

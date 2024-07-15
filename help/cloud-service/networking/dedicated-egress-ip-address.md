@@ -24,71 +24,71 @@ AEM의 아웃바운드 연결이 전용 IP에서 시작되도록 허용하는 �
 
 ## 전용 이그레스 IP 주소란 무엇입니까?
 
-전용 이그레스 IP 주소를 사용하면 AEMas a Cloud Service 의 요청이 전용 IP 주소를 사용할 수 있으므로 외부 서비스가 이 IP 주소로 들어오는 요청을 필터링할 수 있습니다. 좋아요 [유연한 이그레스 포트](./flexible-port-egress.md), 전용 이그레스 IP를 사용하면 비표준 포트에서의 이그레스를 사용할 수 있습니다.
+전용 이그레스 IP 주소를 사용하면 AEM as a Cloud Service의 요청에서 전용 IP 주소를 사용할 수 있으므로 외부 서비스는 이 IP 주소로 들어오는 요청을 필터링할 수 있습니다. [유연한 이그레스 포트](./flexible-port-egress.md)와 같이 전용 이그레스 IP를 사용하면 비표준 포트에서의 이그레스를 사용할 수 있습니다.
 
-Cloud Manager 프로그램에는 __단일__ 네트워크 인프라 유형. 전용 이그레스 IP 주소가 가장 높은지 확인합니다. [적절한 유형의 네트워크 인프라](./advanced-networking.md) 다음 명령을 실행하기 전에 AEM에서 as a Cloud Service으로 확인하십시오.
+Cloud Manager 프로그램에는 __single__ 네트워크 인프라 유형만 있을 수 있습니다. 다음 명령을 실행하기 전에 전용 이그레스 IP 주소가 AEM as a Cloud Service에 대해 가장 [적합한 유형의 네트워크 인프라](./advanced-networking.md)인지 확인하십시오.
 
 >[!MORELIKETHIS]
 >
-> AEM as a Cloud Service 읽기 [고급 네트워크 구성 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking) 전용 이그레스 IP 주소에 대한 자세한 내용.
+> 전용 이그레스 IP 주소에 대한 자세한 내용은 AEM as a Cloud Service [고급 네트워크 구성 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking)를 참조하십시오.
 
 ## 사전 요구 사항
 
 Cloud Manager API를 사용하여 전용 이그레스 IP 주소를 설정할 때 필요한 사항은 다음과 같습니다.
 
-+ 을 사용한 Cloud Manager API [Cloud Manager 비즈니스 소유자 권한](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/)
-+ 액세스 대상: [Cloud Manager API 인증 인증서](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)
++ [Cloud Manager 비즈니스 소유자 권한이 있는 Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/)
++ [Cloud Manager API 인증 자격 증명](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)에 액세스
    + 조직 ID(예: IMS 조직 ID)
    + 클라이언트 ID(예: API 키)
    + 액세스 토큰(예: 전달자 토큰)
 + Cloud Manager 프로그램 ID
 + Cloud Manager 환경 ID
 
-자세한 내용은 다음 연습에서 Cloud Manager API 자격 증명을 설정, 구성 및 얻는 방법과 이를 사용하여 Cloud Manager API를 호출하는 방법을 참조하십시오.
+자세한 내용은 다음 연습에서 Cloud Manger API 자격 증명을 설정, 구성 및 얻는 방법과 이를 사용하여 Cloud Manager API를 호출하는 방법을 참조하십시오.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342235?quality=12&learn=on)
 
-이 튜토리얼에서는 `curl` Cloud Manager API 구성을 만듭니다. 제공된 `curl` 명령은 Linux/macOS 구문을 사용합니다. Windows 명령 프롬프트를 사용하는 경우 `\` 줄 바꿈 문자 `^`.
+이 자습서에서는 `curl`을(를) 사용하여 Cloud Manager API 구성을 만듭니다. 제공된 `curl` 명령은 Linux/macOS 구문을 사용합니다. Windows 명령 프롬프트를 사용하는 경우 `\` 줄 바꿈 문자를 `^`(으)로 바꾸십시오.
 
 ## 프로그램에서 전용 이그레스 IP 주소 활성화
 
-AEMas a Cloud Service 에서 전용 이그레스 IP 주소를 활성화하고 구성하여 시작합니다.
+AEM as a Cloud Service에서 전용 이그레스 IP 주소를 활성화하고 구성하여 시작합니다.
 
 >[!BEGINTABS]
 
 >[!TAB Cloud Manager]
 
-Cloud Manager를 사용하여 전용 이그레스 IP 주소를 활성화할 수 있습니다. 다음 단계에서는 Cloud Manager를 사용하여 AEM에서 전용 이그레스 IP 주소를 as a Cloud Service으로 활성화하는 방법에 대해 설명합니다.
+Cloud Manager을 사용하여 전용 이그레스 IP 주소를 활성화할 수 있습니다. 다음 단계에서는 Cloud Manager을 사용하여 AEM as a Cloud Service에서 전용 이그레스 IP 주소를 활성화하는 방법에 대해 간략히 설명합니다.
 
-1. 에 로그인합니다 [Adobe Experience Manager Cloud Manager](https://experience.adobe.com/cloud-manager/) as a Cloud Manager 비즈니스 소유자.
+1. [Adobe Experience Manager Cloud Manager](https://experience.adobe.com/cloud-manager/)에 Cloud Manager 비즈니스 소유자로 로그인합니다.
 1. 원하는 프로그램으로 이동합니다.
-1. 왼쪽 메뉴에서 다음 위치로 이동합니다. __서비스 > 네트워크 인프라__.
-1. 다음 항목 선택 __네트워크 인프라 추가__ 단추를 클릭합니다.
+1. 왼쪽 메뉴에서 __서비스 > 네트워크 인프라__&#x200B;로 이동합니다.
+1. __네트워크 인프라 추가__ 단추를 선택하십시오.
 
    ![네트워크 인프라 추가](./assets/cloud-manager__add-network-infrastructure.png)
 
-1. 다음에서 __네트워크 인프라 추가__ 대화 상자에서 __전용 이그레스 IP 주소__ 옵션을 선택하고 __지역__ 전용 이그레스 IP 주소를 만듭니다.
+1. __네트워크 인프라 추가__ 대화 상자에서 __전용 이그레스 IP 주소__ 옵션을 선택한 다음 __지역__&#x200B;을 선택하여 전용 이그레스 IP 주소를 만듭니다.
 
    ![전용 이그레스 IP 주소 추가](./assets/dedicated-egress-ip-address/select-type.png)
 
-1. 선택 __저장__ 전용 이그레스 IP 주소 추가를 확인합니다.
+1. 전용 이그레스 IP 주소의 추가를 확인하려면 __저장__&#x200B;을(를) 선택하십시오.
 
-   ![전용 이그레스 IP 주소 생성 확인](./assets/dedicated-egress-ip-address/confirmation.png)
+   ![전용 이그레스 IP 주소 만들기 확인](./assets/dedicated-egress-ip-address/confirmation.png)
 
-1. 네트워크 인프라가 만들어지고 다음으로 표시될 때까지 대기 __준비__. 이 프로세스는 최대 1시간 정도 소요될 수 있습니다.
+1. 네트워크 인프라가 만들어지고 __준비__(으)로 표시될 때까지 기다립니다. 이 프로세스는 최대 1시간 정도 소요될 수 있습니다.
 
-   ![전용 이그레스 IP 주소 생성 상태](./assets/dedicated-egress-ip-address/ready.png)
+   ![전용 이그레스 IP 주소 만들기 상태](./assets/dedicated-egress-ip-address/ready.png)
 
-이제 만든 전용 이그레스 IP 주소를 사용하여 아래 설명된 대로 Cloud Manager API를 사용하여 구성할 수 있습니다.
+이제 만든 전용 이그레스 IP 주소에서 아래에 설명된 대로 Cloud Manager API를 사용하여 전용 이그레스 IP 주소를 구성할 수 있습니다.
 
 >[!TAB Cloud Manager API]
 
-Cloud Manager API를 사용하여 전용 이그레스 IP 주소를 활성화할 수 있습니다. 다음 단계에서는 Cloud Manager API를 사용하여 AEM에서 전용 이그레스 IP 주소를 as a Cloud Service으로 활성화하는 방법에 대해 간략히 설명합니다.
+Cloud Manager API를 사용하여 전용 이그레스 IP 주소를 활성화할 수 있습니다. 다음 단계에서는 Cloud Manager API를 사용하여 AEM as a Cloud Service에서 전용 이그레스 IP 주소를 활성화하는 방법에 대해 간략히 설명합니다.
 
 
-1. 먼저 Cloud Manager API를 사용하여 고급 네트워킹이 필요한 지역을 결정합니다 [listRegion](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) 작업. 다음 `region name` 는 후속 Cloud Manager API를 호출하는 데 필요합니다. 일반적으로 프로덕션 환경이 있는 영역이 사용됩니다.
+1. 먼저 Cloud Manager API [listRegions](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) 작업을 사용하여 고급 네트워킹이 필요한 지역을 결정합니다. 후속 Cloud Manager API를 호출하려면 `region name`이(가) 필요합니다. 일반적으로 프로덕션 환경이 있는 영역이 사용됩니다.
 
-   에서 AEM as a Cloud Service 환경 지역 찾기 [Cloud Manager](https://my.cloudmanager.adobe.com) 다음 아래에 [환경 세부 정보](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments). Cloud Manager에 표시되는 지역 이름은 다음과 같을 수 있습니다. [지역 코드에 매핑됨](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) cloud Manager API에 사용됩니다.
+   [환경의 세부 정보](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments)에서 [Cloud Manager](https://my.cloudmanager.adobe.com)의 AEM as a Cloud Service 환경 지역을 찾으십시오. Cloud Manager에 표시되는 지역 이름은 Cloud Manager API에서 사용되는 지역 코드 ](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments)에 [매핑될 수 있습니다.
 
    __listRegions HTTP 요청__
 
@@ -100,7 +100,7 @@ Cloud Manager API를 사용하여 전용 이그레스 IP 주소를 활성화할 
        -H 'Content-Type: application/json' 
    ```
 
-2. Cloud Manager API를 사용하여 Cloud Manager 프로그램에 대한 전용 이그레스 IP 주소 활성화 [createNetworkInfrastructure](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) 작업. 적절한 항목 사용 `region` Cloud Manager API에서 가져온 코드 `listRegions` 작업.
+2. Cloud Manager API [createNetworkInfrastructure](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) 작업을 사용하여 Cloud Manager 프로그램에 대한 전용 이그레스 IP 주소를 사용하도록 설정합니다. Cloud Manager API `listRegions` 작업에서 얻은 적절한 `region` 코드를 사용합니다.
 
    __createNetworkInfrastructure HTTP 요청__
 
@@ -115,7 +115,7 @@ Cloud Manager API를 사용하여 전용 이그레스 IP 주소를 활성화할 
 
    Cloud Manager 프로그램이 네트워크 인프라를 프로비저닝할 때까지 15분 동안 기다립니다.
 
-3. 프로그램이 완료되었는지 확인 __전용 이그레스 IP 주소__ cloud Manager API를 사용한 구성 [getNetworkInfrastructure](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) 작업, 사용 `id` 에서 반환됨 `createNetworkInfrastructure` 이전 단계의 HTTP 요청입니다.
+3. 이전 단계의 `createNetworkInfrastructure` HTTP 요청에서 반환된 `id`을(를) 사용하여 Cloud Manager API [getNetworkInfrastructure](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) 작업을 사용하여 프로그램이 __전용 이그레스 IP 주소__ 구성을 완료했는지 확인하십시오.
 
    __getNetworkInfrastructure HTTP 요청__
 
@@ -127,16 +127,16 @@ Cloud Manager API를 사용하여 전용 이그레스 IP 주소를 활성화할 
        -H 'Content-Type: application/json'
    ```
 
-   HTTP 응답에 __상태__ / __준비__. 아직 준비되지 않은 경우 몇 분마다 상태를 다시 확인하십시오.
+   HTTP 응답에 __준비__&#x200B;의 __상태__&#x200B;가 포함되어 있는지 확인하십시오. 아직 준비되지 않은 경우 몇 분마다 상태를 다시 확인하십시오.
 
-이제 만든 전용 이그레스 IP 주소를 사용하여 아래 설명된 대로 Cloud Manager API를 사용하여 구성할 수 있습니다.
+이제 만든 전용 이그레스 IP 주소에서 아래에 설명된 대로 Cloud Manager API를 사용하여 전용 이그레스 IP 주소를 구성할 수 있습니다.
 
 >[!ENDTABS]
 
 
 ## 환경당 전용 이그레스 IP 주소 프록시 구성
 
-1. 구성 __전용 이그레스 IP 주소__ cloud Manager API를 사용하여 각 AEM as a Cloud Service 환경에서 구성 [enableEnvironmentAdvancedNetworkConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) 작업.
+1. Cloud Manager API [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) 작업을 사용하여 각 AEM as a Cloud Service 환경에서 __전용 이그레스 IP 주소__ 구성을 구성합니다.
 
    __enableEnvironmentAdvancedNetworkingConfiguration HTTP 요청__
 
@@ -149,9 +149,9 @@ Cloud Manager API를 사용하여 전용 이그레스 IP 주소를 활성화할 
        -d @./dedicated-egress-ip-address.json
    ```
 
-   에서 JSON 매개 변수 정의 `dedicated-egress-ip-address.json` 다음을 통해 curl에 제공 `... -d @./dedicated-egress-ip-address.json`.
+   `dedicated-egress-ip-address.json`에서 JSON 매개 변수를 정의하고 `... -d @./dedicated-egress-ip-address.json`을(를) 통해 curl에 제공합니다.
 
-   [전용-이그레스-ip-address.json 예 다운로드](./assets/dedicated-egress-ip-address.json). 이 파일은 예제일 뿐입니다. 다음 위치에 설명된 옵션/필수 필드를 기반으로 필요에 따라 파일을 구성합니다. [enableEnvironmentAdvancedNetworkConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/).
+   [전용 이그레스-ip-address.json 예제를 다운로드합니다](./assets/dedicated-egress-ip-address.json). 이 파일은 예제일 뿐입니다. [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)에 문서화된 선택적/필수 필드를 기반으로 파일을 필요에 따라 구성합니다.
 
    ```json
    {
@@ -174,17 +174,17 @@ Cloud Manager API를 사용하여 전용 이그레스 IP 주소를 활성화할 
    }
    ```
 
-   전용 이그레스 IP 주소 구성의 HTTP 서명은 [유연한 송신 포트](./flexible-port-egress.md#enable-dedicated-egress-ip-address-per-environment) 는 또한 선택 사항을 지원합니다. `nonProxyHosts` 구성.
+   전용 이그레스 IP 주소 구성의 HTTP 시그니처는 선택적 `nonProxyHosts` 구성도 지원한다는 점에서 [유연한 이그레스 포트](./flexible-port-egress.md#enable-dedicated-egress-ip-address-per-environment)와 다릅니다.
 
-   `nonProxyHosts` 포트 80 또는 443이 전용 이그레스 IP가 아닌 기본 공유 IP 주소 범위를 통해 라우팅되어야 하는 호스트 집합을 선언합니다. `nonProxyHosts` 공유 IP를 통해 이그레스되는 트래픽은 Adobe에 의해 자동으로 최적화되므로 유용할 수 있습니다.
+   `nonProxyHosts`은(는) 포트 80 또는 443이 전용 이그레스 IP가 아닌 기본 공유 IP 주소 범위를 통해 라우팅되어야 하는 호스트 집합을 선언합니다. `nonProxyHosts`은(는) 공유 IP를 통해 이그레스되는 트래픽이 Adobe에 의해 자동으로 최적화되므로 유용할 수 있습니다.
 
-   각 `portForwards` 매핑에서는 고급 네트워킹이 다음 전달 규칙을 정의합니다.
+   각 `portForwards` 매핑에 대해 고급 네트워킹은 다음 전달 규칙을 정의합니다.
 
    | 프록시 호스트 | 프록시 포트 |  | 외부 호스트 | 외부 포트 |
    |---------------------------------|----------|----------------|------------------|----------|
    | `AEM_PROXY_HOST` | `portForwards.portOrig` | → | `portForwards.name` | `portForwards.portDest` |
 
-1. 각 환경에 대해 Cloud Manager API를 사용하여 이그레스 규칙이 적용되는지 확인합니다 [getEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) 작업.
+1. 각 환경에 대해 Cloud Manager API [getEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) 작업을 사용하여 이그레스 규칙이 적용되는지 확인하십시오.
 
    __getEnvironmentAdvancedNetworkingConfiguration HTTP 요청__
 
@@ -196,19 +196,19 @@ Cloud Manager API를 사용하여 전용 이그레스 IP 주소를 활성화할 
        -H 'Content-Type: application/json'
    ```
 
-1. 전용 이그레스 IP 주소 구성은 Cloud Manager API를 사용하여 업데이트할 수 있습니다 [enableEnvironmentAdvancedNetworkConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) 작업. 기억 `enableEnvironmentAdvancedNetworkingConfiguration` 다음 값: `PUT` 따라서 이 작업을 호출할 때마다 모든 규칙을 제공해야 합니다.
+1. Cloud Manager API [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) 작업을 사용하여 전용 이그레스 IP 주소 구성을 업데이트할 수 있습니다. `enableEnvironmentAdvancedNetworkingConfiguration`은(는) `PUT` 작업이므로 이 작업을 호출할 때마다 모든 규칙을 제공해야 합니다.
 
-1. 다음을 획득 __전용 이그레스 IP 주소__ DNS Resolver 사용(예: [DNSChecker.org](https://dnschecker.org/))를 사용할 수 없습니다. `p{programId}.external.adobeaemcloud.com`또는 를 실행하여 `dig` 명령줄에서 을 클릭합니다.
+1. `p{programId}.external.adobeaemcloud.com` 호스트에서 DNS Resolver(예: [DNSChecker.org](https://dnschecker.org/))를 사용하거나 명령줄에서 `dig`을(를) 실행하여 __전용 이그레스 IP 주소__&#x200B;을(를) 가져옵니다.
 
    ```shell
    $ dig +short p{programId}.external.adobeaemcloud.com
    ```
 
-   호스트 이름은 다음과 같을 수 없습니다. `pinged`, 이그레스 및 _아님_ 인그레스
+   호스트 이름은 `pinged`일 수 없습니다. 이그레스이고 _not_ 및 인그레스입니다.
 
-   AEM 전용 이그레스 IP 주소는 프로그램의 모든 as a Cloud Service 환경에서 공유됩니다.
+   전용 이그레스 IP 주소는 프로그램의 모든 AEM as a Cloud Service 환경에서 공유됩니다.
 
-1. 이제 사용자 지정 AEM 코드 및 구성에서 전용 이그레스 IP 주소를 사용할 수 있습니다. AEM 전용 이그레스 IP 주소를 사용하는 경우 일반적으로 as a Cloud Service으로 연결하는 외부 서비스는 이 전용 IP 주소의 트래픽만 허용하도록 구성됩니다.
+1. 이제 사용자 지정 AEM 코드 및 구성에서 전용 이그레스 IP 주소를 사용할 수 있습니다. 전용 이그레스 IP 주소를 사용할 때 AEM as a Cloud Service이 연결하는 외부 서비스는 이 전용 IP 주소의 트래픽만 허용하도록 구성되는 경우가 많습니다.
 
 ## 전용 이그레스 IP 주소를 통해 외부 서비스에 연결
 
@@ -223,7 +223,7 @@ Cloud Manager API를 사용하여 전용 이그레스 IP 주소를 활성화할 
 
 >[!TIP]
 >
-> 다음에 대한 AEM as a Cloud Service의 전용 이그레스 IP 주소 설명서 를 참조하십시오. [전체 라우팅 규칙 세트](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking).
+> [전체 라우팅 규칙 집합](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking)에 대해서는 AEM as a Cloud Service의 전용 이그레스 IP 주소 설명서를 참조하십시오.
 
 
 ### HTTP/HTTPS
@@ -238,7 +238,7 @@ AEM에서 HTTP/HTTPS 연결을 만들 때 전용 이그레스 IP 주소를 사�
     <a  href="./examples/http-dedicated-egress-ip-vpn.md"><img alt="HTTP/HTTPS" src="./assets/code-examples__http.png"/></a>
     <div><strong><a href="./examples/http-dedicated-egress-ip-vpn.md">HTTP/HTTPS</a></strong></div>
     <p>
-        HTTP/HTTPS 프로토콜을 사용하여 AEM에서 외부 서비스로 as a Cloud Service으로 HTTP/HTTPS 연결을 만드는 Java™ 코드 예입니다.
+        HTTP/HTTPS 프로토콜을 사용하여 AEM as a Cloud Service에서 외부 서비스로의 HTTP/HTTPS 연결을 만드는 Java™ 코드 예입니다.
     </p>
 </td>   
 <td></td>   
@@ -255,7 +255,7 @@ AEM에서 HTTP/HTTPS 연결을 만들 때 전용 이그레스 IP 주소를 사�
 | `AEM_PROXY_HOST` | 비 HTTP/HTTPS 연결용 프록시 호스트 | `System.getenv("AEM_PROXY_HOST")` | `$[env:AEM_PROXY_HOST]` |
 
 
-외부 서비스에 대한 연결은 `AEM_PROXY_HOST` 및 매핑된 포트(`portForwards.portOrig`): AEM이 매핑된 외부 호스트 이름( )으로 라우팅합니다.`portForwards.name`) 및 포트(`portForwards.portDest`).
+외부 서비스에 대한 연결은 `AEM_PROXY_HOST`과(와) 매핑된 포트(`portForwards.portOrig`)를 통해 호출됩니다. 그런 다음 AEM은 매핑된 외부 호스트 이름(`portForwards.name`)과(와) 포트(`portForwards.portDest`)로 라우팅합니다.
 
 | 프록시 호스트 | 프록시 포트 |  | 외부 호스트 | 외부 포트 |
 |---------------------------------|----------|----------------|------------------|----------|
@@ -268,7 +268,7 @@ AEM에서 HTTP/HTTPS 연결을 만들 때 전용 이그레스 IP 주소를 사�
       <a  href="./examples/sql-datasourcepool.md"><img alt="JDBC DataSourcePool을 사용한 SQL 연결" src="./assets//code-examples__sql-osgi.png"/></a>
       <div><strong><a href="./examples/sql-datasourcepool.md">JDBC DataSourcePool을 사용한 SQL 연결</a></strong></div>
       <p>
-            AEM JDBC 데이터 소스 풀을 구성하여 외부 SQL 데이터베이스에 연결하는 Java™ 코드 예입니다.
+            AEM의 JDBC 데이터 소스 풀을 구성하여 외부 SQL 데이터베이스에 연결하는 Java™ 코드 예입니다.
       </p>
     </td>   
    <td>
@@ -279,8 +279,8 @@ AEM에서 HTTP/HTTPS 연결을 만들 때 전용 이그레스 IP 주소를 사�
       </p>
     </td>   
    <td>
-      <a  href="./examples/email-service.md"><img alt="Virtual Private Network(VPN)" src="./assets/code-examples__email.png"/></a>
-      <div><strong><a href="./examples/email-service.md">이메일 서비스</a></strong></div>
+      <a  href="./examples/email-service.md"><img alt="VPN (Virtual Private Network)" src="./assets/code-examples__email.png"/></a>
+      <div><strong><a href="./examples/email-service.md">전자 메일 서비스</a></strong></div>
       <p>
         AEM을 사용하여 외부 이메일 서비스에 연결하는 OSGi 구성 예입니다.
       </p>

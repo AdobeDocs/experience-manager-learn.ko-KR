@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # AEM의 복제 문제 해결 단계
 
-*이 비디오에서는 AEM의 복제 문제를 해결하는 단계를 안내합니다.*
+*이 비디오는 AEM의 복제 문제를 해결하는 단계를 안내합니다.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335471?quality=12&learn=on)

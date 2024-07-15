@@ -17,7 +17,7 @@ ht-degree: 16%
 # Adobe Experience Manager as a Cloud Service 튜토리얼 {#cloud-service}
 
 + [개요](./overview.md)
-+ AEM 체험판 {#aem-trials}
++ AEM 평가판 {#aem-trials}
    + [이미지](./aem-trials/images.md)
 + AEM as a Cloud Service 소개{#introduction}
    + [AEM as a Cloud Service란?](./introduction/what-is-aem-as-a-cloud-service.md)
@@ -47,7 +47,7 @@ ht-degree: 16%
    + [CI/CD 비프로덕션 파이프라인](./cloud-manager/cicd-non-production-pipeline.md)
    + [활동](./cloud-manager/activity.md)
    + [사용자 정의 도메인 이름](./cloud-manager/custom-domain-names.md)
-   + 개발 운영{#devops}
+   + 개발 작업 {#devops}
       + [코드 배포](./cloud-manager/devops/deploy-code.md)
       + [프로젝트 병합](./cloud-manager/devops/merge-projects.md)
       + [파이프라인 구성](./cloud-manager/devops/configure-pipelines.md)
@@ -75,7 +75,7 @@ ht-degree: 16%
          + [Adobe I/O Runtime 작업](./developing/extensibility/ui/runtime-action.md)
          + [확인](./developing/extensibility/ui/verify.md)
          + [배포](./developing/extensibility/ui/deploy.md)
-         + 컨텐츠 조각{#content-fragments}
+         + 콘텐츠 조각{#content-fragments}
             + [개요](./developing/extensibility/ui/content-fragments/overview.md)
             + 예{#examples}
                + [AI 이미지 생성](./developing/extensibility/ui/content-fragments/examples/console-image-generation-and-image-upload.md)
@@ -121,7 +121,7 @@ ht-degree: 16%
          + [로컬 개발 설정](./developing/universal-editor/react-app/local-development-setup.md)
          + [Instrument React 앱](./developing/universal-editor/react-app/instrument-to-edit-content.md)
    + [AEM SDK API JavaDocs](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html){target=_blank}
-+ 디버깅 AEM{#debugging}
++ AEM{#debugging} 디버깅
    + AEM SDK 디버깅{#debugging-aem-sdk}
       + [개요](./debugging/aem-sdk-local-quickstart/overview.md)
       + [로그](./debugging/aem-sdk-local-quickstart/logs.md)
@@ -144,10 +144,10 @@ ht-degree: 16%
    + [AEM Publish 서비스](./caching/publish.md)
    + [AEM Author 서비스](./caching/author.md)
    + [CDN 캐시 적중률 분석](./caching/cdn-cache-hit-ratio-analysis.md)
-   + 방법{#how-to}
+   + {#how-to}하는 방법
       + [캐싱 활성화](./caching/how-to/enable-caching.md)
-      + [캐싱 비활성화](./caching/how-to/disable-caching.md)
-+ AEM 액세스{#accessing}
+      + [캐싱 사용 안 함](./caching/how-to/disable-caching.md)
++ AEM{#accessing}에 액세스
    + [개요](./accessing/overview.md)
    + [Adobe IMS 사용자](./accessing/adobe-ims-users.md)
    + [Adobe IMS 사용자 그룹](./accessing/adobe-ims-user-groups.md)
@@ -196,7 +196,7 @@ ht-degree: 16%
       + [Asset compute 마이크로서비스](./migration/moving-to-aem-as-a-cloud-service/asset-compute-microservices.md)
       + [Dispatcher](./migration/moving-to-aem-as-a-cloud-service/dispatcher.md)
       + [검색 및 색인 지정](./migration/moving-to-aem-as-a-cloud-service/search-and-indexing.md)
-      + 컨텐츠 마이그레이션 {#content-migration}
+      + 콘텐츠 마이그레이션 {#content-migration}
          + [일괄 가져오기 서비스](./migration/moving-to-aem-as-a-cloud-service/content-migration/bulk-import-service.md)
          + [콘텐츠 전송 도구](./migration/moving-to-aem-as-a-cloud-service/content-migration/content-transfer-tool.md)
          + [FAQ](./migration/moving-to-aem-as-a-cloud-service/content-migration/faq.md)
@@ -217,7 +217,7 @@ ht-degree: 16%
       + [자산 워크플로 마이그레이션 도구](./migration/cloud-acceleration-manager/asset-workflow-migration-tool.md)
       + [Cloud Acceleration Manager 탐색](./migration/cloud-acceleration-manager/navigating.md)
       + [Cloud Acceleration Manager 사용](./migration/cloud-acceleration-manager/using.md)
-+ [컨텐츠 조각](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html){target=_blank}
++ [콘텐츠 조각](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html){target=_blank}
 + 양식{#forms}
    + Forms as a Cloud Service 개발{#developing-for-cloud-service}
       + [1 - 시작](./forms/developing-for-cloud-service/getting-started.md)
@@ -245,21 +245,21 @@ ht-degree: 16%
       + [에셋 패널 구성](./forms/create-first-af/configure-assets-panel.md)
       + [시작 패널 구성](./forms/create-first-af/configure-start-panel.md)
       + [도구 모음 추가 및 구성](./forms/create-first-af/add-configure-toolbar.md)
-   + Headless 양식으로 맞춤형 제출 서비스{#custom-submit-headless-forms}
+   + Headless 양식 {#custom-submit-headless-forms}을(를) 사용한 사용자 정의 제출 서비스
       + [1 - 소개](./forms/custom-submit-headless-forms/introduction.md)
       + [2 - 사용자 정의 제출 서비스 만들기](./forms/custom-submit-headless-forms/custom-submit-service.md)
       + [3 - 응답 표시](./forms/custom-submit-headless-forms/handle-response-react-app.md)
-   + 주소 블록 구성 요소 만들기{#create-address-block}
+   + 주소 차단 구성 요소 만들기{#create-address-block}
       + [1 - 소개](./forms/create-address-block-component/introduction.md)
       + [2 - 설정](./forms/create-address-block-component/set-up.md)
       + [3 - 구성 요소 만들기](./forms/create-address-block-component/creating-address-component.md)
       + [4 - 구성 요소 배포](./forms/create-address-block-component/deploy-your-project.md)
-   + AEM Forms 및 분석{#forms-and-analytics}
+   + AEM Forms 및 Analytics{#forms-and-analytics}
       + [소개](./forms/form-data-analytics/introduction.md)
       + [데이터 요소 만들기](./forms/form-data-analytics/data-elements.md)
       + [규칙 만들기](./forms/form-data-analytics/rules.md)
       + [솔루션 테스트](./forms/form-data-analytics/test.md)
-   + AEM Forms CS에서 문서 생성{#doc-gen-formscs}
+   + AEM Forms CS{#doc-gen-formscs}에서 문서 생성
       + [소개](./forms/doc-gen-forms-cs/introduction.md)
       + [서비스 자격 증명 만들기](./forms/doc-gen-forms-cs/service-credentials.md)
       + [JWT 토큰 만들기](./forms/doc-gen-forms-cs/create-jwt.md)
@@ -275,7 +275,7 @@ ht-degree: 16%
       + [USC 일괄 처리 구성 만들기](./forms/formscs-batch-api/configure-usc-batch.md)
       + [일괄 구성 만들기](./forms/formscs-batch-api/create-batch-config.md)
       + [일괄 처리 실행](./forms/formscs-batch-api/execute-batch-generate-documents.md)
-   + Forms CS의 PDF 조작{#forms-cs-assembler}
+   + Forms CS{#forms-cs-assembler}에서 PDF 조작
       + [소개](./forms/forms-cs-assembler/introduction.md)
       + [서비스 자격 증명 만들기](./forms/forms-cs-assembler/service-credentials.md)
       + [JWT 토큰 만들기](./forms/forms-cs-assembler/create-jwt.md)
@@ -284,17 +284,17 @@ ht-degree: 16%
       + [PDF/A 유틸리티](./forms/forms-cs-assembler/pdfa-utilities.md)
       + [솔루션 테스트](./forms/forms-cs-assembler/test.md)
       + [과제](./forms/forms-cs-assembler/challenge.md)
-   + Blob 인덱스 태그를 사용하여 양식 제출 저장{#store-submiited-data-with-metadata-tags}
+   + Blob 인덱스 태그를 사용하여 양식 제출을 저장{#store-submiited-data-with-metadata-tags}
       + [소개](./forms/store-submiited-data-with-metadata-tags/introduction.md)
       + [선택 그룹 구성 요소 확장](./forms/store-submiited-data-with-metadata-tags/extend-choice-group-components.md)
       + [OSGi 구성 만들기](./forms/store-submiited-data-with-metadata-tags/create-osgi-configuration.md)
       + [색인 태그 만들기](./forms/store-submiited-data-with-metadata-tags/create-blob-index-tags.md)
       + [사용자 정의 제출 만들기](./forms/store-submiited-data-with-metadata-tags/create-custom-submit.md)
-   + 핵심 구성 요소 기반 양식 미리 채우기{#prefill-core-component-based-form}
+   + 핵심 구성 요소 기반 양식 {#prefill-core-component-based-form} 미리 채우기
       + [소개](./forms/prefill-core-component-form/introduction.md)
       + [미리 채우기 서비스 쓰기](./forms/prefill-core-component-form/pre-fill-service.md)
       + [솔루션 테스트](./forms/prefill-core-component-form/test-solution.md)
-   + Azure 포털 스토리지{#forms-cs-azure-portal}
+   + Azure 포털 저장소{#forms-cs-azure-portal}
       + [소개](./forms/forms-cs-azure-portal/introduction.md)
       + [양식 데이터 모델 만들기](./forms/forms-cs-azure-portal/create-fdm.md)
       + [Azure Storage에 양식 데이터 저장](./forms/forms-cs-azure-portal/create-af.md)
@@ -313,7 +313,7 @@ ht-degree: 16%
       + [워크플로 스토리지 외부화](./forms/create-aem-workflow/externalize-workflow.md)
       + [워크플로우 모델 만들기](./forms/create-aem-workflow/create-workflow.md)
       + [워크플로우 트리거](./forms/create-aem-workflow/configure-af.md)
-   + Acrobat Sign과 AEM Forms{#forms-and-sign}
+   + AEM Forms{#forms-and-sign}이(가) 있는 Acrobat Sign
       + [소개](./forms/forms-and-sign/introduction.md)
       + [Acrobat Sign API 애플리케이션](./forms/forms-and-sign/create-sign-api-application.md)
       + [Acrobat Sign 클라우드 구성](./forms/forms-and-sign/create-adobe-sign-cloud-configuration.md)
@@ -329,7 +329,7 @@ ht-degree: 16%
       + [Data Source 구성](./forms/formscs-dynamics-crm/configure-odata-data-source.md)
       + [양식 데이터 모델 만들기](./forms/formscs-dynamics-crm/create-form-data-model.md)
       + [적응형 양식 만들기](./forms/formscs-dynamics-crm/create-adaptive-form.md)
-   + Salesforce와 통합{#integrate-with-salesforce}
+   + Salesforce{#integrate-with-salesforce}와 통합
       + [소개](./forms/integrate-with-salesforce/introduction.md)
       + [연결된 앱 만들기](./forms/integrate-with-salesforce/create-connected-app.md)
       + [Swagger 파일 만들기](./forms/integrate-with-salesforce/describe-rest-api.md)
@@ -337,18 +337,18 @@ ht-degree: 16%
       + [양식 데이터 모델 만들기](./forms/integrate-with-salesforce/create-form-data-model.md)
       + [테스트 양식 제출](./forms/integrate-with-salesforce/create-lead-submitting-form.md)
       + [클릭 이벤트 테스트](./forms/integrate-with-salesforce/create-lead-click-event.md)
-   + 양식 제출을 한 드라이브 및 sharepoint에 저장{#one-drive}
+   + 하나의 드라이브 및 sharepoint{#one-drive}에 양식 제출을 저장합니다.
       + [하나의 드라이브에 양식 데이터 저장](./forms/forms-cs-one-drive/store-form-submission-one-drive.md)
       + [Sharepoint에 양식 데이터 저장](./forms/forms-cs-sharepoint/store-form-submission-in-sharepoint.md)
       + [SharePoint 목록의 데이터로 양식 미리 채우기](./forms/forms-cs-sharepoint/prefill-data-from-sharepoint-list.md)
       + [워크플로우를 사용하여 SharePoint 목록에 데이터 삽입](./forms/forms-cs-sharepoint/submit-data-sharepoint-list-workflow.md)
 + Asset compute 확장성{#asset-compute}
    + [개요](./asset-compute/overview.md)
-   + 설정{#set-up}
+   + {#set-up} 설정
       + [계정 및 서비스 프로비저닝](./asset-compute/set-up/accounts-and-services.md)
       + [로컬 개발 환경](./asset-compute/set-up/development-environment.md)
       + [App Builder](./asset-compute/set-up/app-builder.md)
-   + 개발{#develop}
+   + {#develop} 개발
       + [asset compute 프로젝트 만들기](./asset-compute/develop/project.md)
       + [환경 변수 구성](./asset-compute/develop/environment-variables.md)
       + [manifest.yml 구성](./asset-compute/develop/manifest.md)
@@ -357,7 +357,7 @@ ht-degree: 16%
    + 테스트 및 디버그{#test-debug}
       + [작업자 테스트](./asset-compute/test-debug/test.md)
       + [작업자 디버깅](./asset-compute/test-debug/debug.md)
-   + 배포{#deploy}
+   + {#deploy} 배포
       + [Adobe I/O Runtime에 배포](./asset-compute/deploy/runtime.md)
       + [AEM과 통합](./asset-compute/deploy/processing-profiles.md)
    + 고급{#advanced}
@@ -371,7 +371,7 @@ ht-degree: 16%
    + [AEM Sites 및 Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html){target=_blank}
    + [토큰 기반 인증](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html){target=_blank}
 + 전문가 리소스 {#expert-resources}
-   + AEM 챔피언스 {#aem-champions}
+   + AEM 챔피언 {#aem-champions}
       + [Cloud Manager 온보딩 플레이북](./expert-resources/aem-champions/onboarding-playbook.md)
       + [Cloud Manager 환경 유형](./expert-resources/aem-champions/environment-types.md)
       + [CLOUD MANAGER UI](./expert-resources/aem-champions/cloud-manager-ui.md)
@@ -391,7 +391,7 @@ ht-degree: 16%
       + [Dispatcher 검사기](./expert-resources/cloud-5/cloud5-aem-dispatcher-validator.md)
       + [검색 및 색인 지정](./expert-resources/cloud-5/cloud5-aem-search-and-indexing.md)
       + [App Builder Adobe](./expert-resources/cloud-5/cloud5-adobe-app-builder.md)
-      + 시즌{#season-2}
+      + 시즌 2{#season-2}
          + [조각](./expert-resources/cloud-5/season-2/cloud5-experience-v-content-fragments.md)
          + [Repo Modernizer](./expert-resources/cloud-5/season-2/cloud5-repo-modernizer.md)
          + [Admin Console](./expert-resources/cloud-5/season-2/cloud5-admin-console.md)
@@ -402,7 +402,7 @@ ht-degree: 16%
          + [Cloud Manager - 경험 감사](./expert-resources/cloud-5/season-2/cloud5-mocm-experience-audit.md)
          + [Cloud Manager - 단위 테스트](./expert-resources/cloud-5/season-2/cloud5-mocm-unit-tests.md)
          + [Cloud Manager - 기능 테스트](./expert-resources/cloud-5/season-2/cloud5-mocm-functional-tests.md)
-      + 시즌{#season-3}
+      + 시즌 3{#season-3}
          + [타사 검색](./expert-resources/cloud-5/season-3/cloud5-3rd-party-search.md)
          + [RUM(실시간 사용자 모니터링)](./expert-resources/cloud-5/season-3/cloud5-rum.md)
          + [Edge 노동자](./expert-resources/cloud-5/season-3/cloud5-edge-workers.md)

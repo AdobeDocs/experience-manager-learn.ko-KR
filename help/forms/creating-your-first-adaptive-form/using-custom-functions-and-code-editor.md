@@ -21,7 +21,7 @@ ht-degree: 0%
 
 이 부분에서는 사용자 지정 함수와 코드 편집기를 사용하여 비즈니스 규칙을 작성하겠습니다.
 
-을(를) 이미 설치했습니다. [사용자 지정 함수가 있는 ClientLib](assets/client-libs-and-logo.zip) 이 자습서의 앞부분입니다.
+이 자습서에서 이전에 사용자 지정 함수](assets/client-libs-and-logo.zip)을(를) 사용하여 [ClientLib을(를) 이미 설치했습니다.
 
 일반적으로 클라이언트 라이브러리는 CSS와 Javascript 파일로 구성됩니다. 이 클라이언트 라이브러리에는 드롭다운 목록 값을 채우는 함수를 표시하는 javascript 파일이 포함되어 있습니다.
 

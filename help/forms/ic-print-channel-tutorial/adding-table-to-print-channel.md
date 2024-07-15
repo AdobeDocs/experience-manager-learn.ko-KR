@@ -22,7 +22,7 @@ ht-degree: 1%
 # 기여도 섹션에 테이블 추가
 
 이 부분에서는 기여 섹션에 표를 추가합니다.
-다음을 참조하십시오. [인쇄 채널에서 표 사용](/help/forms/interactive-communications/table-in-print-channel-documents-video-use.md) 인쇄 채널 문서에서 표를 사용하는 방법에 대한 자세한 내용은 을 참조하십시오.
+인쇄 채널 문서에서 표를 사용하는 방법에 대한 자세한 내용은 [인쇄 채널에서 표 사용](/help/forms/interactive-communications/table-in-print-channel-documents-video-use.md)을 참조하세요.
 
 AEM Forms에 로그인하고 Adobe Experience Manager > Forms > Forms 및 문서로 이동합니다.
 

@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # 트랜잭션 롤백 문제를 완화하기 위해 PDFG에서 CORBA 시간 제한을 업데이트하는 방법
 
-*이 비디오는 트랜잭션 롤백 문제를 완화하기 위해 Forms PDFG에서 CORBA 시간 초과를 업데이트하는 프로세스에 대해 설명합니다.*
+*이 비디오에서는 트랜잭션 롤백 문제를 완화하기 위해 Forms PDFG에서 CORBA 시간 제한을 업데이트하는 프로세스에 대해 설명합니다.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335512?quality=12&learn=on)

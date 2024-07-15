@@ -28,10 +28,10 @@ Tags 속성에서 두 개의 새 데이터 요소(AppliancesStateOfResidence 및
 
 ## 지원자주국
 
-다음 **지원자주국** 다음을 선택하여 데이터 요소를 구성했습니다. **코어** 확장 프로그램 드롭다운 및 **사용자 지정 코드** 아래 스크린샷에 표시된 대로 데이터 요소 유형용
-![지원자-주 정부](assets/applicantstateofresidence.png)
+아래 스크린샷과 같이 확장 드롭다운에서 **Core** 및 데이터 요소 유형에 대한 **사용자 지정 코드**&#x200B;를 선택하여 **ApplicantStateOfResidence** 데이터 요소를 구성했습니다
+![지원자-주-거주](assets/applicantstateofresidence.png)
 
-다음 사용자 지정 코드를 사용하여 **_상태_** 적응형 양식 필드.
+다음 사용자 지정 코드는 **_상태_** 적응형 양식 필드에서 값을 캡처하는 데 사용되었습니다.
 
 ```javascript
 // use the GuideBridge API to access adaptive form elements
@@ -43,11 +43,11 @@ return ApplicantsStateOfResidence;
 
 ## validationError
 
-다음 **유효성 검사 오류** 다음을 선택하여 데이터 요소를 구성했습니다. **코어** 확장 프로그램 드롭다운 및 **사용자 지정 코드** 아래 스크린샷에 표시된 대로 데이터 요소 유형용
+**ValidationError** 데이터 요소는 아래 스크린샷과 같이 확장 드롭다운에서 **Core** 및 데이터 요소 유형에 대해 **사용자 지정 코드**&#x200B;을(를) 선택하여 구성되었습니다
 
 ![유효성 검사 오류](assets/validation-error.png)
 
-다음 사용자 지정 코드가 작성되어 `validationError` 데이터 요소 값입니다.
+`validationError` 데이터 요소 값을 설정하기 위해 다음 사용자 지정 코드를 작성했습니다.
 
 ```javascript
 var validationError = "";

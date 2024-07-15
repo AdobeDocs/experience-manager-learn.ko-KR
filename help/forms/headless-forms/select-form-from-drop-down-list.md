@@ -18,13 +18,13 @@ ht-degree: 1%
 
 # 드롭다운 목록에서 채울 양식 선택
 
-드롭다운 목록은 옵션 목록을 사용자에게 표시하는 작고 정리된 방법을 제공합니다. 드롭다운 목록의 항목이 의 결과로 채워집니다. [listforms API](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/List-Forms/operation/listForms)
+드롭다운 목록은 옵션 목록을 사용자에게 표시하는 작고 정리된 방법을 제공합니다. 드롭다운 목록에 있는 항목이 [listforms API](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/List-Forms/operation/listForms)의 결과로 채워집니다.
 
-![card-view](./assets/forms-drop-down.png)
+![카드 보기](./assets/forms-drop-down.png)
 
 ## 드롭다운 목록
 
-다음 코드를 사용하여 드롭다운 목록을 listforms API 호출 결과로 채웠습니다. 사용자 선택에 따라 사용자가 작성하여 제출할 수 있도록 적응형 양식이 표시됩니다. [자료 UI 구성 요소](https://mui.com/) 이 인터페이스를 만드는 데 사용되었습니다.
+다음 코드를 사용하여 드롭다운 목록을 listforms API 호출 결과로 채웠습니다. 사용자 선택에 따라 사용자가 작성하여 제출할 수 있도록 적응형 양식이 표시됩니다. 이 인터페이스를 만드는 데 [재질 UI 구성 요소](https://mui.com/)가 사용되었습니다.
 
 ```javascript
 import * as React from 'react';
@@ -126,10 +126,10 @@ const getAFForms =async()=>
 
 이 사용자 인터페이스를 만드는 데 사용된 API 호출은 다음과 같습니다
 
-* [ListForm](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/List-Forms/operation/listForms). 구성 요소가 렌더링될 때 양식 가져오기 호출이 한 번만 수행됩니다. API 호출 결과는 afForms 변수에 저장됩니다.
+* [ListForm](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/List-Forms/operation/listForms) 구성 요소가 렌더링될 때 양식 가져오기 호출이 한 번만 수행됩니다. API 호출 결과는 afForms 변수에 저장됩니다.
 위의 코드에서는 map 함수를 사용하여 afForms를 반복하고 afForms 배열의 모든 항목에 대해 MenuItem 구성 요소가 생성되어 Select 구성 요소에 추가됩니다.
 
-* 양식 가져오기 - 에 대한 get 호출이 수행됨 [getForm](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/Get-Form-Definition): 여기서 id는 드롭다운 목록에서 사용자가 선택한 적응형 양식의 id입니다. 이 GET 호출의 결과는 selectedForm에 저장됩니다.
+* 양식 가져오기 - [getForm](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/Get-Form-Definition)에 대해 get 호출이 수행됩니다. 여기서 ID는 드롭다운 목록에서 사용자가 선택한 적응형 양식의 ID입니다. 이 GET 호출의 결과는 selectedForm에 저장됩니다.
 
 ```
 const resp = await fetch(`/adobe/forms/af/${formID}`);

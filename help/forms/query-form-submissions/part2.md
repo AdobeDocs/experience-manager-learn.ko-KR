@@ -32,7 +32,7 @@ ht-degree: 1%
 
 ![blob-index-tags](assets/blob-index-tags.png)
 
-사용자 정의 제출 코드가 있습니다. **_StoreFormDataWithBlobIndexTagsInAzure_** 또한 Azure에서 데이터를 저장하고 검색하는 코드가 구성 요소에 있습니다. **_SaveAndFetchFromAzure_**
+사용자 지정 제출 코드는 **_StoreFormDataWithBlobIndexTagsInAzure_**&#x200B;에 있으며 Azure에서 데이터를 저장하고 검색하는 코드는 구성 요소 **_SaveAndFetchFromAzure_**&#x200B;에 있습니다.
 
 ## 다음 단계
 

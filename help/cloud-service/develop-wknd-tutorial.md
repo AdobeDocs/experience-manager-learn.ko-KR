@@ -27,13 +27,13 @@ Adobe Experience Manager as a Cloud Service의 새로운 기능은? 최신 사�
 
 >[!VIDEO](https://video.tv.adobe.com/v/30476?quality=12&learn=on)
 
-튜토리얼은 **AEM as a Cloud Service** 이전 버전과 호환 가능 **AEM 6.5+** 및 **AEM 6.4.2+**.
+이 자습서는 **AEM as a Cloud Service**&#x200B;에서 작동하도록 설계되었으며 **AEM 6.5+** 및 **AEM 6.4.2+**&#x200B;과(와) 역으로 호환됩니다.
 
-**[여기에서 튜토리얼을 확인하십시오.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR)**
+**[튜토리얼은 여기에서 확인하십시오!](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR)**
 
-## WKND를 AEM에 as a Cloud Service 배포{#deploying-wknd-to-aem-as-a-cloud-service}
+## AEM as a Cloud Service에 WKND 배포{#deploying-wknd-to-aem-as-a-cloud-service}
 
-AEM WKND 튜토리얼을 완료한 후 아래 비디오를 시청하여 WKND 프로젝트를 as a Cloud Service으로 배포하는 방법에 대한 개요를 살펴보십시오.
+WKND 자습서를 완료한 후 아래 비디오를 통해 AEM as a Cloud Service에 WKND 프로젝트를 배포하는 방법에 대한 개요를 확인하십시오.
 
 >[!VIDEO](https://video.tv.adobe.com/v/30191?quality=12&learn=on)
 
@@ -41,6 +41,6 @@ AEM WKND 튜토리얼을 완료한 후 아래 비디오를 시청하여 WKND 프
 
 1. 서드파티 Git 저장소(이 경우 Github.com)에서 가져온 것이지만, Git 저장소일 수 있습니다.
 2. AEM as a Cloud Service 프로그램에 등록된 업스트림 Adobe Cloud Manager Git 저장소로 푸시됨
-3. AEM Cloud Manager 파이프라인을 통해 as a Cloud Service 환경에 배포됩니다.
+3. Cloud Manager 파이프라인을 통해 AEM as a Cloud Service 환경으로 배포됨
 
-AEM as a Cloud Service에 AEM 프로젝트를 배포하는 방법에 대한 전체 개요는 방법 비디오 시리즈를 시청하십시오 [git를 Adobe Cloud Manager와 통합](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html).
+AEM as a Cloud service에 AEM 프로젝트를 배포하는 방법에 대한 전체 개요는 비디오 시리즈를 통해 [Git을 Adobe Cloud Manager과 통합](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html)하는 방법에 대해 알아보십시오.

@@ -53,7 +53,7 @@ Adobe은 iOS 및 Android™ 모바일 앱의 예를 제공합니다.
                    <p class="headline is-size-6 has-text-weight-bold"><a href="../example-apps/ios-swiftui-app.md" title="iOS 앱">iOS 앱</a></p>
                    <p class="is-size-6">AEM Headless iOS API의 콘텐츠를 사용하는 SwiftUI로 작성된 GraphQL 앱의 예입니다.</p>
                    <a href="../example-apps/ios-swiftui-app.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-                       <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">보기 예</span>
+                       <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">예제 보기</span>
                    </a>
                </div>
            </div>
@@ -72,9 +72,9 @@ Adobe은 iOS 및 Android™ 모바일 앱의 예를 제공합니다.
            <div class="card-content is-padded-small">
                <div class="content">
                    <p class="headline is-size-6 has-text-weight-bold"><a href="../example-apps/android-app.md" title="Android™ 앱">Android™ 앱</a></p>
-                   <p class="is-size-6">AEM Headless GraphQL API의 콘텐츠를 사용하는 Java™ Android™ 앱의 예입니다.</p>
+                   <p class="is-size-6">AEM Headless Android API의 콘텐츠를 사용하는 예제 Java™ GraphQL™ 앱입니다.</p>
                    <a href="../example-apps/android-app.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-                       <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">보기 예</span>
+                       <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">예제 보기</span>
                    </a>
                </div>
            </div>

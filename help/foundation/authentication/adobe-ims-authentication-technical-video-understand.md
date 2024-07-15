@@ -26,7 +26,7 @@ Adobe Experience Manager은 AEM 인스턴스에 대한 Admin Console 지원 및 
 >[!VIDEO](https://video.tv.adobe.com/v/26170?quality=12&learn=on)
 
 * Adobe Experience Manager IMS 인증 지원은 &quot;내부&quot; 사용자(작성자, 검토자, 관리자, 개발자 등)만을 위한 것이며 웹 사이트 방문자와 같은 외부 최종 사용자를 위한 것은 아닙니다.
-* [Admin Console](https://adminconsole.adobe.com/) 는 AEM Managed Services 고객을 IMS 조직으로 나타내고 AEM 인스턴스를 제품 컨텍스트로 나타냅니다. Admin Console 시스템 및 제품 관리자는 을 정의하고 관리할 수 있습니다.
+* [Admin Console](https://adminconsole.adobe.com/)은(는) AEM Managed Services 고객을 IMS 조직으로, AEM 인스턴스를 제품 컨텍스트로 나타냅니다. Admin Console 시스템 및 제품 관리자는 을 정의하고 관리할 수 있습니다.
 * AEM Managed Services은 토폴로지를 Admin Console과 동기화하여 제품 컨텍스트와 AEM 인스턴스 간에 1:1 매핑을 만듭니다.
 * Admin Console의 제품 프로필은 사용자가 액세스할 수 있는 AEM 인스턴스를 결정합니다.
 * 인증 지원에는 SSO용 고객 SAML2 호환 IDP가 포함됩니다.
@@ -44,4 +44,4 @@ Admin Console에서 사용자에게 제품 컨텍스트 수준의 사용자 그�
 
 ### Adobe Experience Manager에서 권한 적용
 
-Adobe Experience Manager에서 Adobe IMS에서 동기화된 사용자 그룹은 라는 용어에 추가되어야 합니다 [AEM 제공 사용자 그룹](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html): AEM에서 특정 작업 세트를 실행할 수 있는 적절한 권한이 사전 구성되어 있습니다. Adobe IMS에서 동기화된 사용자는에 직접 추가해서는 안 됩니다. [AEM 제공 사용자 그룹](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html).
+Adobe Experience Manager에서 Adobe IMS에서 동기화된 사용자 그룹은 &quot;[AEM에서 제공한 사용자 그룹](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html)&quot;에 추가되어야 합니다. 이 그룹은 AEM에서 특정 작업 집합을 실행할 수 있는 적절한 권한으로 사전 구성되어 있습니다. Adobe IMS에서 동기화된 사용자는 [AEM에서 제공한 사용자 그룹](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html)에 직접 추가해서는 안 됩니다.

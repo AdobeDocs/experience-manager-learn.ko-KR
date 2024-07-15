@@ -28,18 +28,18 @@ Archetype 30을 사용하여 생성된 프로젝트를 Archetype 33 프로젝트
 
 * 명령 프롬프트를 열고 c:\cloudmanager로 이동합니다.
 * 최신 Archetype을 사용하여 Maven 프로젝트를 만듭니다.
-* 콘텐츠 복사 및 붙여넣기 [텍스트 파일](assets/creating-maven-project.txt) 명령 프롬프트 창에서 실행하십시오. 다음에 따라 DarchetypeVersion=33을 변경해야 할 수 있습니다. [최신 버전](https://github.com/adobe/aem-project-archetype/releases). Archetype 33에는 새로운 AEM Forms 테마가 포함됩니다.
-이미 aem-banking-application 프로젝트가 있는 cloudmanager 폴더에 새 Maven 프로젝트를 생성하고 있으므로 **DartifactId** aem-banking-application에서 다른 방식으로 변경되었습니다. 이 문서에 aem-banking-application1을 사용했습니다.
+* 명령 프롬프트 창에서 [텍스트 파일](assets/creating-maven-project.txt)의 내용을 복사하여 붙여넣습니다. [최신 버전](https://github.com/adobe/aem-project-archetype/releases)에 따라 DarchetypeVersion=33을 변경해야 할 수 있습니다. Archetype 33에는 새로운 AEM Forms 테마가 포함됩니다.
+이미 aem-banking-application 프로젝트가 있는 cloudmanager 폴더에 새 Maven 프로젝트를 만들고 있으므로 **DartifactId**&#x200B;을(를) aem-banking-application에서 다른 이름으로 변경해야 합니다. 이 문서에 aem-banking-application1을 사용했습니다.
 
 >[!NOTE]
 >
->이 새 프로젝트를 그대로 배포하면 클라우드 서비스 인스턴스에 HandleFormSubmission 및 SubmitToAEMServlet이 없습니다. Cloud Manager를 사용하여 프로젝트를 배포할 때마다 `/apps` 폴더가 삭제되고 덮어쓰기됩니다.
+>이 새 프로젝트를 그대로 배포하면 클라우드 서비스 인스턴스에 HandleFormSubmission 및 SubmitToAEMServlet이 없습니다. 이는 Cloud Manager을 사용하여 프로젝트를 배포할 때마다 `/apps` 폴더 아래의 모든 항목이 삭제되고 덮어쓰기되기 때문입니다.
 
 ## Java 코드 복사
 
 프로젝트가 정상적으로 생성되면 이전 프로젝트에서 이 새 프로젝트에 코드/구성 등을 복사할 수 있습니다
 
-* 에서 HandleFormSubmission 서블릿 복사 ```C:\CloudManager\aem-banking-application\core\src\main\java\com\aem\bankingapplication\core\servlets```
+* ```C:\CloudManager\aem-banking-application\core\src\main\java\com\aem\bankingapplication\core\servlets```에서 HandleFormSubmission 서블릿 복사
 끝
   ```C:\CloudManager\aem-banking-application1\core\src\main\java\com\aem\bankingapplication\core\servlets```
 

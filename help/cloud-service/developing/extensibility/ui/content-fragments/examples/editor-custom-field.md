@@ -24,7 +24,7 @@ AEM 콘텐츠 조각 편집기에서 사용자 지정 필드를 만드는 방법
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427585?learn=on)
 
-AEM UI 확장은 [Adobe 반응 스펙트럼](https://react-spectrum.adobe.com/react-spectrum/index.html) 따라서 프레임워크는 나머지 AEM과 일관된 모양과 느낌을 유지하고 사전 설치된 기능의 광범위한 라이브러리를 보유하여 개발 시간이 단축됩니다.
+AEM UI 확장은 [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html) 프레임워크를 사용하여 개발해야 합니다. 이렇게 하면 나머지 AEM과 일관된 모양과 느낌을 유지하고 사전 설치된 기능의 광범위한 라이브러리가 있으므로 개발 시간이 단축됩니다.
 
 ## 확장 지점
 
@@ -32,17 +32,17 @@ AEM UI 확장은 [Adobe 반응 스펙트럼](https://react-spectrum.adobe.com/re
 
 | AEM UI 확장 | 확장 지점 |
 | ------------------------ | --------------------- | 
-| [콘텐츠 조각 편집기](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [사용자 정의 양식 요소 렌더링](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/custom-fields/) |
+| [콘텐츠 조각 편집기](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [사용자 지정 양식 요소 렌더링](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/custom-fields/) |
 
 ## 확장 예
 
 이 예는 표준 필드를 사전 정의된 SKU의 사용자 지정 드롭다운으로 대체하여 콘텐츠 조각 편집기의 필드 값을 사전 정의된 세트로 제한하는 방법을 보여 줍니다. 작성자는 이 특정 SKU 목록에서 선택할 수 있습니다. SKU는 일반적으로 PIM(제품 정보 관리) 시스템에서 제공되지만, 이 예는 SKU를 정적으로 나열하여 단순화합니다.
 
-이 예제의 소스 코드는 다음과 같습니다. [다운로드 가능](./assets/editor-custom-field/content-fragment-editor-custom-field-src.zip).
+이 예제의 소스 코드는 [다운로드할 수 있습니다](./assets/editor-custom-field/content-fragment-editor-custom-field-src.zip).
 
 ### 콘텐츠 조각 모델 정의
 
-이 예제는 이름이 인 콘텐츠 조각 필드에 바인딩됩니다. `sku` (를 통해) [정규 표현식 일치](#extension-registration) / `^sku$`)을 클릭하여 사용자 지정 필드로 대체합니다. 이 예제에서는 업데이트된 WKND Adventure 콘텐츠 조각 모델을 사용하며 정의는 다음과 같습니다.
+이 예제는 이름이 `sku`인 콘텐츠 조각 필드에 바인딩하여([정규 표현식 일치](#extension-registration)/`^sku$`를 통해) 사용자 지정 필드로 대체합니다. 이 예제에서는 업데이트된 WKND Adventure 콘텐츠 조각 모델을 사용하며 정의는 다음과 같습니다.
 
 ![콘텐츠 조각 모델 정의](./assets/editor-custom-field/content-fragment-editor.png)
 
@@ -51,7 +51,7 @@ AEM UI 확장은 [Adobe 반응 스펙트럼](https://react-spectrum.adobe.com/re
 
 ### 앱 경로
 
-기본 React 구성 요소 `App.js`, 다음을 포함 `/sku-field` 렌더링할 경로 `SkuField` React 구성 요소입니다.
+기본 React 구성 요소 `App.js`에서 `SkuField` React 구성 요소를 렌더링할 `/sku-field` 경로를 포함합니다.
 
 `src/aem-cf-editor-1/web-src/src/components/App.js`
 
@@ -85,14 +85,14 @@ function App() {
 ...
 ```
 
-의 이 사용자 정의 경로 `/sku-field` 에 매핑 `SkuField` 구성 요소는 다음에서 사용됩니다. [확장 등록](#extension-registration).
+`/sku-field`의 이 사용자 지정 경로가 `SkuField` 구성 요소에 매핑되는 경우 [확장 등록](#extension-registration)에서 아래에 사용됩니다.
 
 ### 확장 등록
 
-`ExtensionRegistration.js`index.html 경로에 매핑되는 는 AEM 확장의 진입점이며 다음을 정의합니다.
+index.html 경로에 매핑된 `ExtensionRegistration.js`은(는) AEM 확장의 진입점이며 다음을 정의합니다.
 
-+ 의 위젯 정의 `getDefinitions()` 함수 `fieldNameExp` 및 `url` 속성. 사용 가능한 속성의 전체 목록은 [사용자 정의 양식 요소 렌더링 API 참조](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/custom-fields/#api-reference).
-+ 다음 `url` 속성 값, 상대 URL 경로(`/index.html#/skuField`)를 클릭하여 필드 UI를 로드합니다.
++ `fieldNameExp` 및 `url` 특성이 있는 `getDefinitions()`의 위젯 정의입니다. 사용 가능한 전체 특성 목록은 [사용자 지정 양식 요소 렌더링 API 참조](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/custom-fields/#api-reference)에서 사용할 수 있습니다.
++ 필드 UI를 로드할 상대 URL 경로(`/index.html#/skuField`)인 `url` 특성 값입니다.
 
 `src/aem-cf-editor-1/web-src/src/components/ExtensionRegistration.js`
 
@@ -132,13 +132,13 @@ export default ExtensionRegistration;
 
 ### 사용자 정의 필드
 
-다음 `SkuField` React 구성 요소는 Adobe React 스펙트럼을 선택기 양식으로 사용하여 콘텐츠 조각 편집기를 사용자 정의 UI로 업데이트합니다. 주요 기능은 다음과 같습니다.
+`SkuField` React 구성 요소는 선택기 양식에 Adobe React 스펙트럼을 사용하여 콘텐츠 조각 편집기를 사용자 지정 UI로 업데이트합니다. 주요 기능은 다음과 같습니다.
 
-+ 활용 `useEffect` AEM 콘텐츠 조각 편집기의 초기화 및 연결 시 설정이 완료될 때까지 로드 상태가 표시됩니다.
-+ iFrame 내에서 렌더링하면 를 통해 iFrame의 높이가 동적으로 조정됩니다 `onOpenChange` Adobe React 스펙트럼 선택기의 드롭다운을 수용하는 함수입니다.
-+ 다음을 사용하여 필드 선택 사항을 다시 호스트에 전달 `connection.host.field.onChange(value)` 다음에서 `onSelectionChange` 컨텐츠 조각 모델의 지침에 따라 선택한 값의 유효성을 검사하고 자동으로 저장하는 기능.
++ 설정이 완료될 때까지 로드 상태가 표시된 AEM의 콘텐츠 조각 편집기의 초기화 및 연결에 `useEffect`을(를) 사용합니다.
++ iFrame 내에서 렌더링하면 Adobe React Spectrum 선택기의 드롭다운을 수용하도록 `onOpenChange` 함수를 통해 iFrame의 높이가 동적으로 조정됩니다.
++ `onSelectionChange` 함수의 `connection.host.field.onChange(value)`을(를) 사용하여 필드 선택 사항을 다시 호스트에 전달합니다. 즉, 콘텐츠 조각 모델의 지침에 따라 선택한 값이 유효성이 검사되고 자동 저장됩니다.
 
-사용자 지정 필드는 콘텐츠 조각 편집기에 삽입된 iFrame 내에서 렌더링됩니다. 사용자 지정 필드 코드와 콘텐츠 조각 편집기 간의 통신은 `connection` 개체, 다음에 의해 설정됨 `attach` 함수 위치: `@adobe/uix-guest` 패키지.
+사용자 지정 필드는 콘텐츠 조각 편집기에 삽입된 iFrame 내에서 렌더링됩니다. 사용자 지정 필드 코드와 콘텐츠 조각 편집기 간의 통신은 `@adobe/uix-guest` 패키지에서 `attach` 함수에 의해 설정된 `connection` 개체를 통해서만 가능합니다.
 
 `src/aem-cf-editor-1/web-src/src/components/SkuField.js`
 

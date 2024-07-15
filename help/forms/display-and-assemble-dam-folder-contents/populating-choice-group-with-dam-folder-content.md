@@ -83,7 +83,7 @@ public class ListFolderContent extends SlingSafeMethodsServlet {
 }
 ```
 
-## JavaScript 기능으로 클라이언트 라이브러리 만들기
+## JavaScript 기능을 사용하여 클라이언트 라이브러리 만들기
 
 서블릿은 JavaScript 함수에서 호출됩니다. 함수는 선택 그룹 구성 요소를 채우는 데 사용할 배열 개체를 반환합니다.
 
@@ -111,11 +111,11 @@ function getDAMFolderAssets(damFolder) {
 
 ## 적응형 양식 만들기
 
-적응형 양식 만들기 및 양식과 클라이언트 라이브러리 연결 **listfolderassets**. 양식에 확인란 구성 요소를 추가합니다. 규칙 편집기를 사용하여 스크린샷에 표시된 대로 확인란의 옵션을 채웁니다
-![옵션 설정](assets/set-options-newsletter.png)
+적응형 양식을 만들고 클라이언트 라이브러리 **listfolderassets**와(과) 양식을 연결합니다. 양식에 확인란 구성 요소를 추가합니다. 규칙 편집기를 사용하여 스크린샷에 표시된 대로 확인란의 옵션을 채웁니다
+![set-options](assets/set-options-newsletter.png)
 
-이름이 인 JavaScript 함수를 호출하고 있습니다. **getDAMFolderAssets** 및 를 사용하여 DAM 폴더의 에셋 경로를 양식으로 나열할 수 있습니다.
+**getDAMFolderAssets**(이)라는 javascript 함수를 호출하고 DAM 폴더의 자산 경로를 양식에서 나열하도록 전달합니다.
 
 ## 다음 단계
 
-[선택한 에셋 결합](./assemble-selected-newsletters.md)
+[선택한 Assets 결합](./assemble-selected-newsletters.md)

@@ -21,17 +21,17 @@ ht-degree: 1%
 
 ## empID 매개 변수 가져오기
 
-다음 단계는 url에서 empID 매개 변수에 액세스하는 것입니다. 그런 다음 empID 요청 매개 변수의 값이 **_get_** 양식 데이터 모델의 서비스 작업.
+다음 단계는 url에서 empID 매개 변수에 액세스하는 것입니다. 그런 다음 empID 요청 매개 변수의 값이 양식 데이터 모델의 **_get_** 서비스 작업에 전달됩니다.
 이 교육 과정에서는 다음을 만들고 제공했습니다
 
-* 적응형 양식 템플릿 호출됨 **_FDMDemo_**
-* 호출된 페이지 구성 요소 **_fdmdemo_**
+* 적응형 양식 서식 파일 이름이 **_FDMDemo_**&#x200B;입니다.
+* 페이지 구성 요소 호출: **_fdmdemo_**
 * 페이지 구성 요소에 사용자 지정 jsp 포함됨
 * 적응형 양식 템플릿을 페이지 구성 요소와 연결했습니다.
 
 이렇게 하면 사용자 정의 jsp의 코드가 이 사용자 정의 템플릿을 기반으로 하는 적응형 양식이 렌더링될 때만 실행됩니다
 
-* [패키지 가져오기](assets/template-page-component.zip) 사용 [패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp)
+* [패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp)를 사용하여 [패키지 가져오기](assets/template-page-component.zip)
 * [fdmrequest.jsp 열기](http://localhost:4502/crx/de/index.jsp#/apps/fdmdemo/component/page/fdmdemo/fdmrequest.jsp)
 * 주석 처리된 줄의 주석 처리를 제거합니다.
 * 변경 사항 저장

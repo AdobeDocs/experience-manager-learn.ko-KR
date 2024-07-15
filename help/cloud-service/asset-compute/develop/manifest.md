@@ -20,17 +20,17 @@ ht-degree: 0%
 
 # manifest.yml 구성
 
-다음 `manifest.yml`asset compute 프로젝트의 루트에 있는 에서는 이 프로젝트의 배포할 모든 작업자에 대해 설명합니다.
+asset compute 프로젝트의 루트에 있는 `manifest.yml`은(는) 배포할 이 프로젝트의 모든 작업자를 설명합니다.
 
 ![manifest.yml](./assets/manifest/manifest.png)
 
 ## 기본 작업자 정의
 
-작업자는 아래에 있는 Adobe I/O Runtime 작업 항목으로 정의됩니다. `actions`, 구성 세트로 구성됩니다.
+작업자는 `actions` 아래에 Adobe I/O Runtime 작업 항목으로 정의되어 있으며 일련의 구성으로 구성되어 있습니다.
 
-다른 Adobe I/O 통합에 액세스하는 작업자는 `annotations -> require-adobe-auth` 다음으로 속성: `true` 다음과 같이 [작업자의 Adobe I/O 자격 증명을 노출합니다.](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#access-adobe-apis) 를 통해 `params.auth` 개체. 일반적으로 작업자가 Adobe Photoshop, Lightroom 또는 Sensei API와 같은 Adobe I/O API를 호출할 때 필요하며 작업자별로 전환할 수 있습니다.
+다른 Adobe I/O 통합에 액세스하는 작업자는 `annotations -> require-adobe-auth` 속성을 `true`(으)로 설정해야 합니다. 이 [은(는) `params.auth` 개체를 통해 작업자의 Adobe I/O 자격 증명](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#access-adobe-apis)을(를) 노출합니다. 일반적으로 작업자가 Adobe Photoshop, Lightroom 또는 Sensei API와 같은 Adobe I/O API를 호출할 때 필요하며 작업자별로 전환할 수 있습니다.
 
-1. 자동 생성된 작업자를 열고 검토합니다. `manifest.yml`. 여러 Asset compute 작업자가 포함된 프로젝트는에서 각 작업자에 대한 항목을 정의해야 합니다. `actions` 배열입니다.
+1. 자동 생성된 작업자 `manifest.yml`을(를) 열고 검토합니다. 여러 Asset compute 작업자가 포함된 프로젝트는 `actions` 배열에서 각 작업자에 대한 항목을 정의해야 합니다.
 
 ```yml
 packages:
@@ -49,11 +49,11 @@ packages:
 
 ## 제한 정의
 
-각 작업자는 [제한](https://www.adobe.io/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/guides/system_settings.md) Adobe I/O Runtime에서의 실행 컨텍스트에 따라 매핑할 수 없습니다. 이러한 값은 작업 수행 유형뿐만 아니라 작업자가 계산할 자산의 양, 속도 및 유형에 따라 작업자에게 최적의 크기를 제공하도록 조정되어야 합니다.
+각 작업자는 Adobe I/O Runtime에서 해당 실행 컨텍스트에 대해 [제한](https://www.adobe.io/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/guides/system_settings.md)을 구성할 수 있습니다. 이러한 값은 작업 수행 유형뿐만 아니라 작업자가 계산할 자산의 양, 속도 및 유형에 따라 작업자에게 최적의 크기를 제공하도록 조정되어야 합니다.
 
-리뷰 [Adobe 크기 조정 지침](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#sizing-workers) 제한을 설정하기 전에 Asset compute 작업자는 에셋을 처리할 때 메모리가 부족하여 Adobe I/O Runtime 실행이 종료될 수 있으므로, 모든 후보 에셋을 처리할 수 있는 작업자 크기를 적절히 조절하십시오.
+한도를 설정하기 전에 [Adobe 크기 조정 지침](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#sizing-workers)을 검토하십시오. Asset compute 작업자는 에셋을 처리할 때 메모리가 부족하여 Adobe I/O Runtime 실행이 종료될 수 있으므로, 모든 후보 에셋을 처리할 수 있는 작업자 크기를 적절히 조절하십시오.
 
-1. 추가 `inputs` 섹션 to the new `wknd-asset-compute` 작업 항목. 이를 통해 Asset compute 작업자의 전체 성능 및 리소스 할당을 조정할 수 있습니다.
+1. 새 `wknd-asset-compute` 작업 항목에 `inputs` 섹션을 추가합니다. 이를 통해 Asset compute 작업자의 전체 성능 및 리소스 할당을 조정할 수 있습니다.
 
 ```yml
 packages:
@@ -75,7 +75,7 @@ packages:
 
 ## 완료된 manifest.yml
 
-최종 `manifest.yml` 유사 항목:
+최종 `manifest.yml`은(는) 다음과 같습니다.
 
 ```yml
 packages:
@@ -96,14 +96,14 @@ packages:
 
 ## Github의 manifest.yml
 
-최종 `.manifest.yml` 의 Github에서 사용할 수 있습니다.
+최종 `.manifest.yml`은(는) Github의 다음 위치에서 사용할 수 있습니다.
 
 + [aem-guides-wknd-asset-compute/manifest.yml](https://github.com/adobe/aem-guides-wknd-asset-compute/blob/master/manifest.yml)
 
 
 ## manifest.yml 유효성 검사
 
-생성된 Asset compute `manifest.yml` 가 업데이트되어 로컬 개발 도구를 실행하고 업데이트된 로 성공적으로 시작하는지 확인합니다. `manifest.yml` 설정.
+생성된 Asset compute `manifest.yml`이(가) 업데이트되면 로컬 개발 도구를 실행하고 업데이트된 `manifest.yml` 설정으로 성공적으로 시작하는지 확인하십시오.
 
 asset compute 프로젝트에 대한 Asset compute 개발 도구를 시작하려면 다음을 수행하십시오.
 
@@ -113,12 +113,12 @@ asset compute 프로젝트에 대한 Asset compute 개발 도구를 시작하려
    $ aio app run
    ```
 
-1. 로컬 Asset compute 개발 도구 가 기본 웹 브라우저인 __http://localhost:9000__.
+1. 로컬 Asset compute 개발 도구가 기본 웹 브라우저(__http://localhost:9000__)에서 열립니다.
 
    ![aio 앱 실행](assets/environment-variables/aio-app-run.png)
 
 1. 개발 도구가 초기화될 때 명령줄 출력 및 웹 브라우저에서 오류 메시지를 확인합니다.
-1. asset compute 개발 도구를 중지하려면 `Ctrl-C` 실행한 창에서 `aio app run` 프로세스를 종료합니다.
+1. asset compute 개발 도구를 중지하려면 `aio app run`을(를) 실행한 창에서 `Ctrl-C`을(를) 탭하여 프로세스를 종료하십시오.
 
 ## 문제 해결
 

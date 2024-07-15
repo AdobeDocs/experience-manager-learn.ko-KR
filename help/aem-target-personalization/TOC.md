@@ -17,9 +17,9 @@ ht-degree: 35%
 # AEM 및 Target 시작하기 {#aem-target-tutorial}
 
 + [개요](./overview.md)
-+ [AEM Experience Fragments를 사용한 개인화](./personalization-use-case-1.md)
-+ [Visual Experience Composer를 사용한 개인화](./personalization-use-case-3.md)
-+ [전체 웹 페이지 경험의 개인화](./personalization-use-case-2.md)
++ [AEM Experience Fragments를 사용한 Personalization](./personalization-use-case-1.md)
++ [시각적 경험 작성기를 사용한 Personalization](./personalization-use-case-3.md)
++ [전체 웹 페이지 경험의 Personalization](./personalization-use-case-2.md)
 + 구현 {#aem-target-implementation}
    + [소개](./implementation.md)
    + [태그 및 Adobe I/O을 사용하는 AEM 및 Adobe Target](./using-launch-adobe-io.md)

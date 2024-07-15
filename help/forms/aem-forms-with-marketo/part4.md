@@ -33,11 +33,11 @@ ht-degree: 0%
 
 다음 스크린샷에서는 규칙 편집기 설정에 대해 설명합니다
 
-![규칙 편집자](assets/ruleeditor.png)
+![ruleeditor](assets/ruleeditor.png)
 
 ## 디버깅
 
-이 문서와 함께 제공되는 번들을 사용하는 경우 다음을 활성화할 수 있습니다 [디버그 로그](http://localhost:4502/system/console/slinglog) 다음 클래스의 경우:
+이 문서와 함께 제공되는 번들을 사용하는 경우 다음 클래스에 대해 [디버그 로그](http://localhost:4502/system/console/slinglog)를 사용하도록 설정할 수 있습니다.
 
 + `com.marketoandforms.core.impl.MarketoServiceImpl`
 + `com.marketoandforms.core.MarketoConfigurationService`

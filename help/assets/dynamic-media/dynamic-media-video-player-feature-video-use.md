@@ -66,7 +66,7 @@ ht-degree: 5%
   </tr>
   <tr> 
    <td> <p>데스크탑</p> </td>
-   <td> <p>크롬</p> </td>
+   <td> <p>Chrome</p> </td>
    <td> <p>HLS 비디오 스트리밍</p> </td>
   </tr>
   <tr> 
@@ -76,7 +76,7 @@ ht-degree: 5%
   </tr>
   <tr> 
    <td> <p>모바일</p> </td>
-   <td> <p>Chrome(Android 6 이하)</p> </td>
+   <td> <p>Chrome(Android 6 또는 이전 버전)</p> </td>
    <td> <p>점진적 다운로드</p> </td>
   </tr>
   <tr> 

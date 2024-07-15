@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Forms용 글꼴을 포함하고 서비스 전환을 출력하는 방법
 
-*이 비디오에서는 Forms용 글꼴을 임베드하고 서비스 전환을 출력하는 단계를 안내합니다.*
+*이 비디오에서는 Forms 및 출력 서비스 전환을 위한 글꼴을 포함하는 단계를 안내합니다.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335496?quality=12&learn=on)

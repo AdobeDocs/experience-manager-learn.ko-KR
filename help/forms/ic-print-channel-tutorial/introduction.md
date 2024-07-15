@@ -23,13 +23,13 @@ Interactive Communications는 AEM Forms 6.4의 새로운 기능입니다. 이 �
 
 ## 사전 요구 사항 {#prerequistes}
 
-[패키지 관리자를 사용하여 이 자습서와 관련된 에셋을 다운로드하여 AEM으로 가져옵니다.](assets/gettingstartedassets.zip)이 zip 파일에는 이미지, 문서 단편, 감시 폴더 구성 및 레이아웃 파일(xdp)이 자산 패키지의 일부로 포함되어 있습니다
+[패키지 관리자를 사용하여 이 자습서와 관련된 에셋을 다운로드하여 AEM으로 가져옵니다.](assets/gettingstartedassets.zip)이 zip 파일에는 자산 패키지의 일부로 이미지, 문서 단편, 감시 폴더 구성 및 레이아웃 파일(xdp)이 포함되어 있습니다
 
-[이 파일을 다운로드하고 압축 해제합니다.](assets/warfileandswaggerfile.zip) 이 파일에는 데이터 소스를 구성하는 데 사용해야 하는 Tomcat 및 Swagger 파일에 배포해야 하는 SampleRest.war 파일이 포함되어 있습니다.
+[이 파일을 다운로드하고 압축 해제합니다.](assets/warfileandswaggerfile.zip) 이 파일에는 데이터 원본을 구성하는 데 사용해야 하는 Tomcat 및 Swagger 파일에 배포해야 하는 SampleRest.war 파일이 포함되어 있습니다.
 
 이 자습서를 완료하면 다음 사항을 배울 수 있습니다.
 
-* 데이터 소스 만들기
+* 데이터 Source 만들기
 * 양식 데이터 모델 만들기
 * 문서 단편 만들기
 * 표 및 차트 구성

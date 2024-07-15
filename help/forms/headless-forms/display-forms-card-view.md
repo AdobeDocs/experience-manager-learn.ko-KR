@@ -21,13 +21,13 @@ ht-degree: 0%
 카드 보기 형식은 정보나 데이터를 카드 형태로 제시하는 디자인 패턴이다. 각 카드는 개별 콘텐츠 또는 데이터 항목을 나타내며 일반적으로 특정 요소가 배열된 시각적으로 구분된 컨테이너로 구성됩니다.
 React에서 클릭 가능한 카드는 카드 또는 타일과 유사하며 사용자가 클릭하거나 누를 수 있는 대화형 구성 요소입니다. 사용자가 클릭 가능한 카드를 클릭하거나 탭하면 다른 페이지로 이동하거나, 모달을 열거나, UI를 업데이트하는 등의 지정된 동작이나 동작이 트리거됩니다.
 
-이 문서에서는 [listforms API](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/List-Forms/operation/listForms) 양식을 가져와서 카드 형식으로 표시하고 클릭 이벤트에서 적응형 양식을 엽니다.
+이 문서에서는 [listforms API](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/List-Forms/operation/listForms)를 사용하여 양식을 가져오고 카드 형식으로 양식을 표시하며 클릭 이벤트에서 적응형 양식을 엽니다.
 
-![card-view](./assets/card-view-forms.png)
+![카드 보기](./assets/card-view-forms.png)
 
 ## 카드 템플릿
 
-다음 코드는 카드 템플릿을 디자인하는 데 사용되었습니다. 카드 템플릿에는 Adobe 로고와 함께 적응형 양식의 제목 및 설명이 표시됩니다. [자료 UI 구성 요소](https://mui.com/) 이 레이아웃을 만드는 데 사용되었습니다.
+다음 코드는 카드 템플릿을 디자인하는 데 사용되었습니다. 카드 템플릿에는 Adobe 로고와 함께 적응형 양식의 제목 및 설명이 표시됩니다. 이 레이아웃을 만드는 데 [재질 UI 구성 요소](https://mui.com/)가 사용되었습니다.
 
 
 

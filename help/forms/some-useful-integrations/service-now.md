@@ -1,5 +1,5 @@
 ---
-title: 통합 [!DNL ServiceNow]
+title: ' [!DNL ServiceNow]과 통합'
 description: 양식 데이터 모델을 사용하여 모든 인시던트를 만들고 표시합니다.
 feature: Adaptive Forms
 version: 6.4,6.5
@@ -17,32 +17,32 @@ ht-degree: 0%
 
 ---
 
-# 통합: AEM Forms [!DNL ServiceNow]
+# [!DNL ServiceNow]과(와) AEM Forms 통합
 
-에서 인시던트 만들기 및 표시 [!DNL ServiceNow] AEM Forms에서 양식 데이터 모델 사용.
+AEM Forms의 양식 데이터 모델을 사용하여 [!DNL ServiceNow]에서 인시던트를 만들고 표시합니다.
 
 ## 사전 요구 사항
 
 * [!DNL ServiceNow] 계정입니다.
-* 에 친숙해 [데이터 소스 만들기](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html)
-* 에 친숙해 [양식 데이터 모델](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html)
+* [데이터 소스 만들기](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html)에 익숙함
+* [양식 데이터 모델](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html)에 익숙함
 
-## 샘플 자산
+## 샘플 Assets
 
 이 문서와 함께 제공되는 샘플 에셋에는 다음 항목이 포함됩니다
 
 * 클라우드 서비스 구성
-* 인시던트를 만들고 모든 인시던트를 가져오기 위한 Swagger 파일
+* 장애를 만들고 모두 가져오기 위한 Swagger 파일   문제
 * Swagger 파일을 기반으로 한 양식 데이터 모델
-* 만들고 나열할 적응형 양식 [!DNL ServiceNow] 문제
+* [!DNL ServiceNow]개의 인시던트를 만들고 나열할 적응형 양식
 
 ## 서버에 자산 배포
 
-* 다운로드 [샘플 에셋](assets/service-now.zip)
-* 다음을 사용하여 자산을 AEM에 가져오기 [패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp)
-* 이 통합에 사용되는 Swagger 파일은 ```/conf/9957/settings/cloudconfigs/fdm``` crx 저장소의 폴더
-* 편집 [CreateIncident 클라우드 서비스 구성](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2F9957%2Fsettings%2Fcloudconfigs%2Ffdm%2Fcreateincident)을 입력하여 ServiceNow 인스턴스와 일치시킬 수 있습니다.
-* 편집 [GetAllIncidents 클라우드 서비스 구성](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2F9957%2Fsettings%2Fcloudconfigs%2Ffdm%2Fgetallincidents) 을 입력하여 ServiceNow 인스턴스와 일치시킬 수 있습니다. ServiceNow 인스턴스 자격 증명과 일치하도록 호스트, 사용자 이름 및 암호를 변경해야 합니다.
+* [샘플 자산](assets/service-now.zip) 다운로드
+* [패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp)를 사용하여 자산을 AEM에 가져오기
+* 이 통합에 사용된 Swagger 파일이 crx 저장소의 ```/conf/9957/settings/cloudconfigs/fdm``` 폴더 아래에 있습니다.
+* ServiceNow 인스턴스와 일치하도록 [CreateIncident 클라우드 서비스 구성](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2F9957%2Fsettings%2Fcloudconfigs%2Ffdm%2Fcreateincident)을(를) 편집합니다.
+* ServiceNow 인스턴스와 일치하도록 [GetAllIncidents 클라우드 서비스 구성](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2F9957%2Fsettings%2Fcloudconfigs%2Ffdm%2Fgetallincidents)을(를) 편집합니다. ServiceNow 인스턴스 자격 증명과 일치하도록 호스트, 사용자 이름 및 암호를 변경해야 합니다.
 
 ## ServiceNow 인스턴스 자격 증명에 액세스
 
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 * 인스턴스 암호 관리 를 클릭합니다.
 * 인스턴스 세부 사항은 아래와 같이 표시됩니다
-  ![인스턴스 세부 사항](assets/snow-3.png)
+  ![인스턴스 세부 정보](assets/snow-3.png)
 
 ## 통합 테스트
 

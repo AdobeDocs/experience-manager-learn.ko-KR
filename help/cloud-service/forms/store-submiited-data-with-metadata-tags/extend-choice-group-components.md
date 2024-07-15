@@ -20,7 +20,7 @@ ht-degree: 1%
 # 선택 그룹 구성 요소 확장
 
 checkboxgroup, dropdown 및 radiobutton 핵심 구성 요소를 확장하여 추가 속성 탭을 포함했습니다. 추가 속성 탭에는 필드를 Blob 인덱스 탭으로 사용할지 여부를 나타내는 확인란이 있습니다
-![additional-properties](assets/drop-down-additonal-properties.png). 확인란을 선택하면 다음 스크린샷과 같이 Searchable이라는 속성이 만들어지고 해당 값이 jcr 저장소에서 true로 설정됩니다
+![추가 속성](assets/drop-down-additonal-properties.png). 확인란을 선택하면 다음 스크린샷과 같이 Searchable이라는 속성이 만들어지고 해당 값이 jcr 저장소에서 true로 설정됩니다
 ![검색 가능](assets/searchable-true.png).
 
 _cq_dialog 폴더에 다음 .content.xml을 만들었습니다.

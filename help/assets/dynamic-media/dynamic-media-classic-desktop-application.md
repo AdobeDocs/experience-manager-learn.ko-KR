@@ -37,6 +37,6 @@ Adobe Dynamic Media Classic 데스크탑 앱은 다음 운영 체제와 호환�
 
 ## 지원 자료
 
-* [Adobe Dynamic Media Classic 데스크탑 애플리케이션 설명서](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html)
-* [ADOBE DYNAMIC MEDIA FAQ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/new-ui-2020.html)
-* [Dynamic Media Classic 데스크탑 앱 다운로드](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/new-ui-2020.html)
+* [Adobe Dynamic Media Classic 데스크톱 응용 프로그램 설명서](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html)
+* [Dynamic Media FAQ Adobe](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/new-ui-2020.html)
+* [Dynamic Media Classic 데스크톱 앱 다운로드](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/new-ui-2020.html)

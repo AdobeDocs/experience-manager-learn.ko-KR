@@ -27,7 +27,7 @@ ht-degree: 14%
    + [인증 이해](authentication/authentication-support-article-understand.md)
    + [AMS의 IMS 인증 이해](authentication/adobe-ims-authentication-technical-video-understand.md)
 + Adobe Cloud Manager{#cloud-manager}
-   + [Adobe Cloud Manager 이해](./cloud-manager/understand-cloud-manager-for-aem.md)
+   + [Cloud Manager Adobe 이해](./cloud-manager/understand-cloud-manager-for-aem.md)
    + [CI/CD 파이프라인](./cloud-manager/use-the-cicd-pipeline-in-cloud-manager-for-aem.md)
    + [사용자 지정 권한](./cloud-manager/cloud-permissions.md)
 + 개발 {#development}

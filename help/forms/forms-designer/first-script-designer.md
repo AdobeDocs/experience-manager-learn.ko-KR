@@ -1,5 +1,5 @@
 ---
-title: AEM Forms 디자이너에서 첫 번째 스크립트 만들기
+title: AEM Forms Designer에서 첫 번째 스크립트 만들기
 description: AEM Forms Designer에서 스크립트 만들기 및 테스트에 대해 설명하는 짧은 비디오
 version: 6.5
 feature: Forms Designer,Designer
@@ -21,6 +21,6 @@ ht-degree: 0%
 
 # AEM Forms Shorts Create Simple Form Script
 
-AEM Forms Designer에서 스크립트를 만들고 테스트하는 방법을 설명하는 짧은 비디오
+AEM Forms Designer에서 스크립트 만들기 및 테스트에 대해 설명하는 짧은 비디오
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427627/?learn=on)

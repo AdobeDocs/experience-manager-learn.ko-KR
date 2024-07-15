@@ -22,7 +22,7 @@ ht-degree: 0%
 
 다음은 인터페이스를 구현하는 클래스의 전체 코드입니다.
 
-이 클래스는 2개의 유틸리티 메서드를 사용합니다. `getAccessToken`, `getJWTToken` 및 정적 메서드 `getContentAnalyserRequest` / `GetContentAnalyser` 클래스.
+이 클래스는 2개의 유틸리티 메서드 `getAccessToken`, `getJWTToken` 및 `GetContentAnalyser` 클래스의 정적 메서드 `getContentAnalyserRequest`을(를) 사용합니다.
 
 
 ```java

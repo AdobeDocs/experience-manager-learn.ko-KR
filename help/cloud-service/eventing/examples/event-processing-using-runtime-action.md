@@ -21,39 +21,39 @@ ht-degree: 0%
 
 # Adobe I/O Runtime 작업을 사용하여 AEM 이벤트 처리
 
-다음을 사용하여 수신된 AEM 이벤트를 처리하는 방법 알아보기 [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/overview/what_is_runtime/) 작업. 이 예는 이전 예를 향상시킵니다 [Adobe I/O Runtime 작업 및 AEM 이벤트](runtime-action.md)이 작업을 진행하기 전에 완료했는지 확인하십시오.
+[Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/overview/what_is_runtime/) 액션을 사용하여 받은 AEM 이벤트를 처리하는 방법에 대해 알아보십시오. 이 예제에서는 이전 예제 [Adobe I/O Runtime 작업 및 AEM 이벤트](runtime-action.md)를 향상시킵니다. 이 작업을 진행하기 전에 완료했는지 확인하십시오.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427054?quality=12&learn=on)
 
-이 예에서, 이벤트 처리는 원래 이벤트 데이터 및 수신된 이벤트를 활동 메시지로서 Adobe I/O Runtime 저장소에 저장한다. 단, 이벤트가 인 경우 _콘텐츠 조각 수정됨_ 을 입력한 다음 AEM author service를 호출하여 수정 세부 사항을 찾습니다. 마지막으로 이벤트 세부 사항이 단일 페이지 애플리케이션(SPA)에 표시됩니다.
+이 예에서, 이벤트 처리는 원래 이벤트 데이터 및 수신된 이벤트를 활동 메시지로서 Adobe I/O Runtime 저장소에 저장한다. 그러나 이벤트가 _콘텐츠 조각 수정됨_ 유형인 경우 AEM 작성자 서비스를 호출하여 수정 세부 정보를 찾습니다. 마지막으로 이벤트 세부 사항이 단일 페이지 애플리케이션(SPA)에 표시됩니다.
 
 ## 전제 조건
 
 이 자습서를 완료하려면 다음이 필요합니다.
 
-- AEM as a Cloud Service 환경 [AEM 이벤트 활성화됨](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment). 또한 샘플도 [WKND 사이트](https://github.com/adobe/aem-guides-wknd?#aem-wknd-sites-project) 프로젝트가 배포되어야 합니다.
+- [AEM 이벤트가 활성화됨](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment)인 AEM as a Cloud Service 환경. 또한 샘플 [WKND Sites](https://github.com/adobe/aem-guides-wknd?#aem-wknd-sites-project) 프로젝트를 여기에 배포해야 합니다.
 
-- 액세스 대상: [Adobe Developer 콘솔](https://developer.adobe.com/developer-console/docs/guides/getting-started/).
+- [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started/)에 액세스
 
-- [ADOBE DEVELOPER CLI](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) 가 로컬 컴퓨터에 설치되었습니다.
+- 로컬 컴퓨터에 [Adobe Developer CLI](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/)가 설치되어 있습니다.
 
-- 이전 예에서 로컬로 초기화된 프로젝트 [Adobe I/O Runtime 작업 및 AEM 이벤트](./runtime-action.md#initialize-project-for-local-development).
+- 이전 예제 [Adobe I/O Runtime 작업 및 AEM 이벤트](./runtime-action.md#initialize-project-for-local-development)에서 프로젝트를 로컬로 초기화했습니다.
 
 >[!IMPORTANT]
 >
->AEM as a Cloud Service 이벤트는 프리릴리스 모드의 등록된 사용자만 사용할 수 있습니다. AEM as a Cloud Service 환경에서 AEM 이벤트를 활성화하려면 [AEM 이벤트 팀](mailto:grp-aem-events@adobe.com).
+>AEM as a Cloud Service 이벤트는 프리릴리스 모드의 등록된 사용자만 사용할 수 있습니다. AEM as a Cloud Service 환경에서 AEM 이벤트를 사용하려면 [AEM 이벤트 팀](mailto:grp-aem-events@adobe.com)에 문의하십시오.
 
 ## AEM 이벤트 프로세서 작업
 
-이 예에서 이벤트 프로세서 [작업](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/) 은(는) 다음 작업을 수행합니다.
+이 예에서 이벤트 프로세서 [action](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/)은(는) 다음 작업을 수행합니다.
 
 - 수신된 이벤트를 활동 메시지로 구문 분석합니다.
-- 수신된 이벤트가 의 경우 _콘텐츠 조각 수정됨_ 을(를) 입력하고 AEM author service로 다시 호출하여 수정 세부 사항을 찾습니다.
+- 수신된 이벤트가 _콘텐츠 조각 수정됨_ 유형인 경우 AEM 작성자 서비스로 다시 호출하여 수정 세부 정보를 찾으십시오.
 - Adobe I/O Runtime 저장소에 원래 이벤트 데이터, 활동 메시지 및 수정 세부 사항(있는 경우)을 유지합니다.
 
 위의 작업을 수행하려면 프로젝트에 작업을 추가하고, 위의 작업을 수행할 JavaScript 모듈을 개발하고, 마지막으로 개발된 모듈을 사용하도록 작업 코드를 업데이트하겠습니다.
 
-첨부된 을 참조하십시오 [WKND-AEM-Eventing-Runtime-Action.zip](../assets/examples/event-processing-using-runtime-action/WKND-AEM-Eventing-Runtime-Action.zip) 전체 코드의 파일 및 아래 섹션에서 주요 파일을 강조 표시합니다.
+첨부된 [WKND-AEM-Eventing-Runtime-Action.zip](../assets/examples/event-processing-using-runtime-action/WKND-AEM-Eventing-Runtime-Action.zip) 파일을 참조하여 전체 코드를 확인하십시오. 아래 섹션에서는 주요 파일을 강조 표시합니다.
 
 ### 작업 추가
 
@@ -63,7 +63,7 @@ ht-degree: 0%
   aio app add action
   ```
 
-- 선택 `@adobe/generator-add-action-generic` 작업 템플릿으로 작업 이름을 로 지정합니다. `aem-event-processor`.
+- `@adobe/generator-add-action-generic`을(를) 작업 템플릿으로 선택하고 작업 이름을 `aem-event-processor`(으)로 지정합니다.
 
   ![작업 추가](../assets/examples/event-processing-using-runtime-action/add-action-template.png)
 
@@ -71,7 +71,7 @@ ht-degree: 0%
 
 위에서 언급한 작업을 수행하기 위해 다음 JavaScript 모듈을 개발해 보겠습니다.
 
-- 다음 `src/dx-excshell-1/actions/aem-event-processor/eventValidator.js` 모듈은 수신된 이벤트가 의 이벤트인지 확인합니다. _콘텐츠 조각 수정됨_ 유형.
+- `src/dx-excshell-1/actions/aem-event-processor/eventValidator.js` 모듈은 수신된 이벤트가 _수정된 콘텐츠 조각_ 유형인지 확인합니다.
 
   ```javascript
   async function needsAEMCallback(aemEvent) {
@@ -98,7 +98,7 @@ ht-degree: 0%
   module.exports = needsAEMCallback;
   ```
 
-- 다음 `src/dx-excshell-1/actions/aem-event-processor/loadEventDetailsFromAEM.js` 모듈은 수정 세부 사항을 찾기 위해 AEM 작성자 서비스를 호출합니다.
+- `src/dx-excshell-1/actions/aem-event-processor/loadEventDetailsFromAEM.js` 모듈이 AEM 작성자 서비스를 호출하여 수정 세부 정보를 찾습니다.
 
   ```javascript
   ...
@@ -166,9 +166,9 @@ ht-degree: 0%
   ...
   ```
 
-  을(를) 참조하십시오 [AEM 서비스 자격 증명 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en) 에 대해 자세히 알아보십시오. 또한 [App Builder 구성 파일](https://developer.adobe.com/app-builder/docs/guides/configuration/) 암호 및 작업 매개 변수 관리.
+  자세한 내용은 [AEM 서비스 자격 증명 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en)을 참조하세요. 또한 암호 및 작업 매개 변수 관리를 위한 [App Builder 구성 파일](https://developer.adobe.com/app-builder/docs/guides/configuration/)입니다.
 
-- 다음 `src/dx-excshell-1/actions/aem-event-processor/storeEventData.js` 모듈은 원래 이벤트 데이터, 활동 메시지 및 수정 세부 사항(있는 경우)을 Adobe I/O Runtime 저장소에 저장합니다.
+- `src/dx-excshell-1/actions/aem-event-processor/storeEventData.js` 모듈은 원본 이벤트 데이터, 활동 메시지 및 수정 세부 사항(있는 경우)을 Adobe I/O Runtime 저장소에 저장합니다.
 
   ```javascript
   ...
@@ -193,7 +193,7 @@ ht-degree: 0%
 
 ### 작업 코드 업데이트
 
-마지막으로 다음 위치에 작업 코드를 업데이트합니다. `src/dx-excshell-1/actions/aem-event-processor/index.js` 을 클릭하여 개발된 모듈을 사용합니다.
+마지막으로 개발된 모듈을 사용하려면 `src/dx-excshell-1/actions/aem-event-processor/index.js`에서 작업 코드를 업데이트하십시오.
 
 ```javascript
 ...
@@ -251,10 +251,10 @@ if (params.challenge) {
 
 ## 추가 리소스
 
-- 다음 `src/dx-excshell-1/actions/model` 폴더에 다음 포함: `aemEvent.js` 및 `errors.js` 파일: 작업에서 수신된 이벤트를 구문 분석하고 오류를 처리하는 데 각각 사용됩니다.
-- 다음 `src/dx-excshell-1/actions/load-processed-aem-events` 폴더에는 작업 코드가 포함되어 있습니다. 이 작업은 SPA에서 처리된 AEM 이벤트를 Adobe I/O Runtime 저장소에서 로드하는 데 사용됩니다.
-- 다음 `src/dx-excshell-1/web-src` 폴더에는 처리된 SPA 이벤트를 표시하는 AEM 코드가 포함되어 있습니다.
-- 다음 `src/dx-excshell-1/ext.config.yaml` 파일에는 작업 구성 및 매개 변수가 포함되어 있습니다.
+- `src/dx-excshell-1/actions/model` 폴더에 `aemEvent.js` 및 `errors.js` 파일이 있습니다. 이 파일은 작업에서 수신된 이벤트를 구문 분석하고 오류를 처리하는 데 각각 사용됩니다.
+- `src/dx-excshell-1/actions/load-processed-aem-events` 폴더에 작업 코드가 있습니다. 이 작업은 SPA에서 처리된 AEM 이벤트를 Adobe I/O Runtime 저장소에서 로드하는 데 사용됩니다.
+- `src/dx-excshell-1/web-src` 폴더에는 처리된 AEM 이벤트를 표시하는 SPA 코드가 있습니다.
+- `src/dx-excshell-1/ext.config.yaml` 파일에 작업 구성 및 매개 변수가 포함되어 있습니다.
 
 ## 개념 및 주요 특징
 

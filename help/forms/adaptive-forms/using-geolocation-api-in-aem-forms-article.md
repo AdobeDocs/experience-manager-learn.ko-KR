@@ -22,7 +22,7 @@ ht-degree: 0%
 
 적응형 Forms에서 지리적 위치 API를 사용하려면 다음 단계를 따르십시오.
 
-1. [API 키 가져오기](https://developers.google.com/maps/documentation/javascript/get-api-key) Google에서 Google 지도 플랫폼을 사용합니다. 1년 동안 사용할 수 있는 평가판 키를 얻을 수 있습니다.
+1. Google 맵 플랫폼을 사용하려면 Google에서 [API 키 가져오기](https://developers.google.com/maps/documentation/javascript/get-api-key). 1년 동안 사용할 수 있는 평가판 키를 얻을 수 있습니다.
 
 1. 현재 주소를 저장할 필드가 있는 적응형 양식 조각을 만들었습니다.
 
@@ -94,13 +94,13 @@ showPosition 함수에서 Google API를 사용하여 주어진 위도와 경도�
 서버에 이 기능을 사용하려면 다음 단계를 따르십시오
 
 * AEM Forms 서버를 설치하고 시작합니다.
-> 이 기능은 AEM Forms 6.3 이상에서 테스트되었습니다
+> 이 기능은 AEM Forms 6.3 이상에서 테스트되었습니다.
 * [Google API 키 가져오기](https://developers.google.com/maps/documentation/javascript/get-api-key).
-* [이 문서와 관련된 자산을 AEM에 가져옵니다.](assets/geolocationapi.zip)
-* [편집 모드에서 적응형 양식 조각을 엽니다.](http://localhost:4502/editor.html/content/forms/af/currentaddressfragment.html)
+* [이 문서와 관련된 자산을 AEM으로 가져옵니다.](assets/geolocationapi.zip)
+* [편집 모드에서 적응형 양식 단편을 엽니다.](http://localhost:4502/editor.html/content/forms/af/currentaddressfragment.html)
 * 이미지 선택 구성 요소에 대한 규칙 편집기를 엽니다.
-* 바꾸기 &lt;your_api_key> Google API 키.
+* &lt;your_api_key>를 Google API 키로 바꿉니다.
 * 변경 사항을 저장합니다.
-* [양식 미리 보기](http://localhost:4502/content/dam/formsanddocuments/currentaddressfragment/jcr:content?wcmmode=disabled).
+* [양식을 미리 봅니다](http://localhost:4502/content/dam/formsanddocuments/currentaddressfragment/jcr:content?wcmmode=disabled).
 * &quot;지리적 위치&quot; 아이콘을 클릭합니다.
 * 양식은 현재 위치로 채워야 합니다.

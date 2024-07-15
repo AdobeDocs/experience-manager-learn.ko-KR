@@ -24,7 +24,7 @@ Edge Delivery Services을 사용하여 웹 사이트를 빠르게 만드는 방�
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427989/?learn=on)
 
-리뷰 [설명서](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/overview) Edge Delivery Services 및 기능에 대한 전체 세부 사항입니다.
+Edge Delivery Services 및 해당 기능에 대한 자세한 내용은 [설명서](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/overview)를 검토하십시오.
 
 ## Edge Delivery Services 시작하기
 
@@ -48,7 +48,7 @@ Edge Delivery Services을 사용하여 웹 사이트를 빠르게 만드는 방�
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">5분</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./developing/prerequisites.md" title="사전 요구 사항">개발자 사전 요구 사항</a>
+              <a href="./developing/prerequisites.md" title="사전 요구 사항">개발자 필수 구성 요소</a>
             </p>
             <p class="is-size-6">Edge Delivery Services 개발을 시작하기 위해 필요한 사항.</p>
             <a href="./developing/prerequisites.md" class="spectrum-Button
@@ -70,7 +70,8 @@ Edge Delivery Services을 사용하여 웹 사이트를 빠르게 만드는 방�
             <a href="./developing/aem-boilerplate.md" title="상용구 템플릿 사용"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425713/?format=jpeg" alt="보일러 플레이트 설정">
+                src="https://video.tv.adobe.com/v/3425713/?format=jpeg" alt="설정
+                보일러 판">
             </a>
           </figure>
         </div>
@@ -160,10 +161,10 @@ Edge Delivery Services을 사용하여 웹 사이트를 빠르게 만드는 방�
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./developing/preview-and-publish.md" title="콘텐츠 미리보기 및 게시"
+            <a href="./developing/preview-and-publish.md" title="미리 보기 및 Publish 컨텐츠"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425714/?format=jpeg" alt="콘텐츠 미리보기 및 게시">
+                src="https://video.tv.adobe.com/v/3425714/?format=jpeg" alt="미리 보기 및 Publish 컨텐츠">
             </a>
           </figure>
         </div>
@@ -172,7 +173,7 @@ Edge Delivery Services을 사용하여 웹 사이트를 빠르게 만드는 방�
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1분</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./developing/preview-and-publish.md" title="콘텐츠 미리보기 및 게시">콘텐츠 미리보기 및 게시</a>
+              <a href="./developing/preview-and-publish.md" title="미리 보기 및 Publish 컨텐츠">콘텐츠 미리 보기 및 게시</a>
             </p>
             <p class="is-size-6">AEM Sidekick을 사용하여 콘텐츠를 미리 보고 게시합니다.</p>
             <a href="./developing/preview-and-publish.md" class="spectrum-Button

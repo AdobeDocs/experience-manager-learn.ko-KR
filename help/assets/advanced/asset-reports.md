@@ -1,5 +1,5 @@
 ---
-title: AEM Assets의 자산 보고서
+title: AEM Assets의 Assets 보고서
 description: AEM Assets은 직관적인 사용자 경험을 통해 대규모 저장소에 맞게 확장되는 엔터프라이즈 수준 보고 프레임워크를 제공합니다.
 feature: Asset Reports
 topic: Administration
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ---
 
-# 자산 보고서{#using-reports-in-aem-assets}
+# Assets 보고서{#using-reports-in-aem-assets}
 
 AEM Assets은 직관적인 사용자 경험을 통해 대규모 저장소에 맞게 확장되는 엔터프라이즈 수준 보고 프레임워크를 제공합니다.
 
@@ -28,4 +28,4 @@ AEM Assets은 직관적인 사용자 경험을 통해 대규모 저장소에 맞
 
 >[!IMPORTANT]
 >
->AEM 6.5는 을 구성하는 기능을 제공합니다. [자산 보고서](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html#prerequisite-for-reporting)를 통해 관리자는 추적되어 보고서에 포함되는 항목을 정의할 수 있습니다.
+>AEM 6.5는 [자산 보고서](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html#prerequisite-for-reporting)를 구성하는 기능을 제공하므로 관리자가 보고서에 추적 및 포함되는 항목을 정의할 수 있습니다.

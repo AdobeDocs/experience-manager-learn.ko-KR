@@ -1,5 +1,5 @@
 ---
-title: AEM 데이터 소스 구성
+title: AEM Data Source 구성
 description: 양식 데이터를 저장하고 검색하도록 MySQL 지원 데이터 소스 구성
 feature: Adaptive Forms
 topic: Development
@@ -19,19 +19,19 @@ ht-degree: 3%
 
 # 데이터 소스 구성
 
-AEM에서 외부 데이터베이스와 통합할 수 있는 방법은 여러 가지가 있습니다. 데이터베이스를 통합하는 가장 일반적인 방법 중 하나는 Apache Sling 연결의 풀링된 데이터 소스 구성 속성을 사용하여 [configMgr](http://localhost:4502/system/console/configMgr).
-첫 번째 단계는 적절한 를 다운로드하여 배포하는 것입니다 [MySql 드라이버](https://mvnrepository.com/artifact/mysql/mysql-connector-java) AEM.
+AEM에서 외부 데이터베이스와 통합할 수 있는 방법은 여러 가지가 있습니다. 데이터베이스를 통합하는 가장 일반적인 방법 중 하나는 [configMgr](http://localhost:4502/system/console/configMgr)을 통해 Apache Sling 연결의 풀링된 DataSource 구성 속성을 사용하는 것입니다.
+첫 번째 단계는 AEM에서 적절한 [MySql 드라이버](https://mvnrepository.com/artifact/mysql/mysql-connector-java)를 다운로드하여 배포하는 것입니다.
 Apache Sling 연결의 풀링된 데이터 소스를 만들고 아래 스크린샷에 지정된 속성을 제공합니다. 데이터베이스 스키마는 이 자습서 자산의 일부로 제공됩니다.
 
-![데이터 소스](assets/data-source.PNG)
+![데이터 원본](assets/data-source.PNG)
 
 데이터베이스에는 아래 스크린샷에 표시된 대로 3개의 열이 있는 formdata 라는 하나의 테이블이 있습니다.
 
-![자료 기반](assets/data-base.PNG)
+![데이터 기반](assets/data-base.PNG)
 
 
 >[!NOTE]
->데이터 소스의 이름을 지정하십시오. **기형문합법**. 샘플 코드는 이름을 사용하여 데이터베이스에 연결합니다.
+>데이터 소스의 이름을 **aemformstutorial**&#x200B;로 지정하십시오. 샘플 코드는 이름을 사용하여 데이터베이스에 연결합니다.
 
 | 속성 이름 | 값 |
 | ------------------------|--------------------------------------- |
@@ -41,7 +41,7 @@ Apache Sling 연결의 풀링된 데이터 소스를 만들고 아래 스크린�
 
 ## 자산
 
-스키마를 생성할 SQL 파일은 다음과 같습니다. [여기에서 다운로드됨](assets/sign-multiple-forms.sql). 스키마와 테이블을 만들려면 MySql Workbench를 사용하여 이 파일을 가져와야 합니다.
+스키마를 만들기 위한 SQL 파일은 [여기에서 다운로드](assets/sign-multiple-forms.sql)할 수 있습니다. 스키마와 테이블을 만들려면 MySql Workbench를 사용하여 이 파일을 가져와야 합니다.
 
 ## 다음 단계
 

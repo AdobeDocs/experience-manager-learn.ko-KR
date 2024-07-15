@@ -11,7 +11,7 @@ last-substantial-update: 2023-05-25T00:00:00Z
 jira: KT-13328
 thumbnail: KT-13328.jpeg
 badgeIntegration: label="통합" type="positive"
-badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
+badgeVersions: label="AEM Sites as a Cloud Service AEM Sites 6.5" before-title="false"
 exl-id: 0cc3d3bc-e4ea-4ab2-8878-adbcf0c914f5
 duration: 2252
 source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 # Platform Web SDK와 AEM Sites 및 Adobe Analytics 통합
 
-다음을 알아봅니다. **현대적인 접근 방식** Platform Web SDK를 사용하여 Adobe Experience Manager(AEM)와 Adobe Analytics을 통합하는 방법에 대해 설명합니다. 이 포괄적인 튜토리얼은 원활하게 수집하는 프로세스를 안내합니다 [WKND](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) 페이지 보기 및 CTA 클릭 데이터. 다양한 지표와 차원을 탐색할 수 있는 Adobe Analysis Workspace에서 수집된 데이터를 시각화하여 중요한 통찰력을 얻으십시오. 또한 플랫폼 데이터 세트를 탐색하여 데이터를 확인하고 분석합니다. 이 여정에 참여하여 데이터 기반 의사 결정을 위한 AEM 및 Adobe Analytics의 기능을 활용하십시오.
+Platform Web SDK를 사용하여 Adobe Experience Manager(AEM)와 Adobe Analytics을 통합하는 방법에 대한 **최신 접근 방식**&#x200B;을 알아봅니다. 이 포괄적인 튜토리얼은 [WKND](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) 페이지 보기 및 CTA 클릭 데이터를 원활하게 수집하는 과정을 안내합니다. 다양한 지표와 차원을 탐색할 수 있는 Adobe Analysis Workspace에서 수집된 데이터를 시각화하여 중요한 통찰력을 얻으십시오. 또한 플랫폼 데이터 세트를 탐색하여 데이터를 확인하고 분석합니다. 이 여정에 참여하여 데이터 기반 의사 결정을 위한 AEM 및 Adobe Analytics의 기능을 활용하십시오.
 
 ## 개요
 
@@ -38,30 +38,30 @@ ht-degree: 0%
 
 Platform Web SDK를 사용하여 Adobe Analytics을 통합할 때 필요한 사항은 다음과 같습니다.
 
-에서 설정 단계를 완료했습니다. **[Experience Platform 웹 SDK 통합](./web-sdk.md)** 튜토리얼.
+**[Experience Platform Web SDK 통합](./web-sdk.md)** 자습서에서 설정 단계를 완료했습니다.
 
-위치 **Cloud Service으로 AEM**:
+**Cloud Service으로 AEM**&#x200B;에서:
 
 + [AEM as a Cloud Service 환경에 대한 AEM 관리자 액세스](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html)
 + Cloud Manager에 대한 배포 관리자 액세스
-+ 복제 및 배포 [WKND - 샘플 Adobe Experience Manager 프로젝트](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) AEM as a Cloud Service 환경으로
++ [WKND - 샘플 Adobe Experience Manager 프로젝트](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project)를 복제하여 AEM as a Cloud Service 환경에 배포합니다.
 
-위치 **Adobe Analytics**:
+**Adobe Analytics**&#x200B;에서:
 
-+ 만들기 액세스 **보고서 세트**
-+ 만들기 액세스 **Analysis Workspace**
++ **보고서 세트 만들기**&#x200B;에 액세스
++ **Analysis Workspace** 만들기 액세스
 
-위치 **Experience Platform**:
+**Experience Platform**&#x200B;에서:
 
-+ 기본 프로덕션에 액세스, **Prod** 샌드박스.
-+ 액세스 대상: **스키마** 데이터 관리 아래
-+ 액세스 대상: **데이터 세트** 데이터 관리 아래
-+ 액세스 대상: **데이터스트림** 데이터 수집 아래
-+ 액세스 대상: **태그**  데이터 수집 아래
++ 기본 프로덕션 **Prod** 샌드박스에 액세스합니다.
++ 데이터 관리 아래의 **스키마**&#x200B;에 액세스
++ 데이터 관리에서 **데이터 세트**&#x200B;에 액세스
++ 데이터 수집 아래의 **데이터스트림**&#x200B;에 액세스
++ 데이터 수집 아래의 **태그**&#x200B;에 액세스
 
-필요한 권한이 없는 경우 시스템 관리자는 [Adobe Admin Console](https://adminconsole.adobe.com/) 필요한 권한을 부여할 수 있습니다.
+필요한 권한이 없는 경우 [Adobe Admin Console](https://adminconsole.adobe.com/)을(를) 사용하는 시스템 관리자가 필요한 권한을 부여할 수 있습니다.
 
-Platform Web SDK를 사용하여 AEM과 Analytics의 통합 프로세스를 살펴보기 전에 _필수 구성 요소 및 주요 요소 요약_ 에서 설정된 [Experience Platform 웹 SDK 통합](./web-sdk.md) 튜토리얼. 이는 통합을 위한 견고한 기반을 제공합니다.
+Platform Web SDK를 사용하여 AEM과 Analytics의 통합 프로세스를 살펴보기 전에 [Experience Platform Web SDK 통합](./web-sdk.md) 자습서에서 설정한 필수 구성 요소와 주요 요소를 _다시 살펴보도록 하겠습니다._ 이는 통합을 위한 견고한 기반을 제공합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419873?quality=12&learn=on)
 
@@ -76,13 +76,13 @@ SDR 문서는 구현 계획에 대한 포괄적인 개요를 제공하여 모든
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419874?quality=12&learn=on)
 
-SDR 문서에 포함되어야 하는 개념 및 다양한 요소에 대한 자세한 내용은 다음을 참조하십시오. [솔루션 디자인 참조(SDR) 문서 생성 및 유지 관리](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html). 샘플 Excel 템플릿을 다운로드할 수도 있지만 WKND별 버전도 사용할 수 있습니다 [여기](./assets/Initial-WKND-WebSDK-BRD-SDR.xlsx).
+SDR 문서에 포함되어야 하는 개념 및 다양한 요소에 대한 자세한 내용은 [솔루션 디자인 참조(SDR) 문서 만들기 및 유지 관리](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html)를 참조하십시오. 샘플 Excel 템플릿을 다운로드할 수도 있지만 WKND별 버전은 [여기](./assets/Initial-WKND-WebSDK-BRD-SDR.xlsx)에서 사용할 수 있습니다.
 
 ## Analytics 설정 - 보고서 세트, Analysis Workspace
 
 첫 번째 단계는 Adobe Analytics, 특히 전환 변수(또는 eVar)와 성공 이벤트를 포함하는 보고서 세트를 설정하는 것입니다. 전환 변수는 원인과 결과를 측정하는 데 사용됩니다. 성공 이벤트는 작업을 추적하는 데 사용됩니다.
 
-이 자습서에서는  `eVar5, eVar6, and eVar7` track  _WKND 페이지 이름, WKND CTA ID 및 WKND CTA 이름_ 및 `event7` 추적에 사용됨  _WKND CTA 클릭 이벤트_.
+이 자습서에서는 `eVar5, eVar6, and eVar7`이(가) _WKND 페이지 이름, WKND CTA ID 및 WKND CTA 이름_&#x200B;을(를) 각각 추적하고 `event7`을(를) 사용하여 _WKND CTA 클릭 이벤트_&#x200B;를 추적합니다.
 
 수집된 데이터에서 분석, 통찰력 수집 및 다른 사람과 그러한 통찰력을 공유하려면 Analysis Workspace의 프로젝트가 만들어집니다.
 
@@ -97,41 +97,41 @@ Analytics 설정 및 개념에 대해 자세히 알아보려면 다음 리소스
 
 ## 데이터스트림 업데이트 - Analytics 서비스 추가
 
-데이터 스트림은 Platform Edge Network에 수집된 데이터를 보낼 위치를 지시합니다. 다음에서 [이전 자습서](./web-sdk.md): Experience Platform에 데이터를 전송하도록 데이터 스트림이 구성됩니다. 이 데이터스트림은 데이터를에 구성된 Analytics 보고서 세트로 보내도록 업데이트됩니다. [위](#setup-analytics---report-suite-analysis-workspace) 단계.
+데이터 스트림은 Platform Edge Network에 수집된 데이터를 보낼 위치를 지시합니다. [이전 자습서](./web-sdk.md)에서 데이터 스트림이 데이터를 Experience Platform에 보내도록 구성되어 있습니다. 이 데이터 스트림은 [위](#setup-analytics---report-suite-analysis-workspace) 단계에서 구성된 Analytics 보고서 세트로 데이터를 보내도록 업데이트됩니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419876?quality=12&learn=on)
 
 ## XDM 스키마 만들기
 
-XDM(경험 데이터 모델) 스키마를 사용하면 수집된 데이터를 표준화할 수 있습니다. 다음에서 [이전 자습서](./web-sdk.md)를 사용하는 XDM 스키마 `AEP Web SDK ExperienceEvent` 필드 그룹이 생성됩니다. 또한 이 XDM 스키마를 사용하여 Experience Platform에 수집된 데이터를 저장하는 데이터 세트가 만들어집니다.
+XDM(경험 데이터 모델) 스키마를 사용하면 수집된 데이터를 표준화할 수 있습니다. [이전 자습서](./web-sdk.md)에서 필드 그룹이 `AEP Web SDK ExperienceEvent`인 XDM 스키마가 만들어집니다. 또한 이 XDM 스키마를 사용하여 Experience Platform에 수집된 데이터를 저장하는 데이터 세트가 만들어집니다.
 
 단, 해당 XDM 스키마에는 eVar, 이벤트 데이터를 전송할 Adobe Analytics 관련 필드 그룹이 없습니다. 플랫폼에 eVar, 이벤트 데이터가 저장되지 않도록 기존 스키마를 업데이트하는 대신 새 XDM 스키마를 만듭니다.
 
-새로 생성된 XDM 스키마에는 `AEP Web SDK ExperienceEvent` 및 `Adobe Analytics ExperienceEvent Full Extension` 필드 그룹.
+새로 만든 XDM 스키마에 `AEP Web SDK ExperienceEvent` 및 `Adobe Analytics ExperienceEvent Full Extension` 필드 그룹이 있습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419877?quality=12&learn=on)
 
 
 ## 태그 속성 업데이트
 
-다음에서 [이전 자습서](./web-sdk.md), 태그 속성이 만들어지고, 페이지 보기 데이터를 수집, 매핑 및 전송하는 데이터 요소와 규칙이 있습니다. 다음을 위해 향상되어야 합니다.
+[이전 자습서](./web-sdk.md)에서 태그 속성이 만들어지고 페이지 보기 데이터를 수집, 매핑 및 전송하는 데이터 요소와 규칙이 있습니다. 다음을 위해 향상되어야 합니다.
 
-+ 페이지 이름 매핑 대상 `eVar5`
-+ 트리거 **페이지 보기** Analytics 호출(또는 비콘 보내기)
++ 페이지 이름을 `eVar5`에 매핑
++ **pageview** Analytics 호출 트리거(또는 비콘 보내기)
 + Adobe 클라이언트 데이터 레이어를 사용하여 CTA 데이터 수집
-+ CTA ID 및 이름 매핑 대상 `eVar6` 및 `eVar7` 각각. 또한 CTA 클릭 수 `event7`
-+ 트리거 **링크 클릭** Analytics 호출(또는 비콘 보내기)
++ CTA ID 및 이름을 각각 `eVar6` 및 `eVar7`에 매핑합니다. 또한 `event7`에 대한 CTA 클릭 수입니다.
++ **링크 클릭** Analytics 호출 트리거(또는 비콘 보내기)
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419882?quality=12&learn=on)
 
 >[!TIP]
 >
->비디오에 표시된 데이터 요소 및 규칙 이벤트 코드를 참조에 사용할 수 있습니다. **아래 아코디언 요소 펼치기**. 그러나 Adobe 클라이언트 데이터 레이어를 사용하지 않는 경우 아래 코드를 수정해야 하지만 데이터 요소를 정의하고 규칙 정의에 사용하는 개념이 여전히 적용됩니다.
+>비디오에 표시된 데이터 요소 및 규칙 이벤트 코드를 참조할 수 있습니다. **아래 아코디언 요소를 확장**. 그러나 Adobe 클라이언트 데이터 레이어를 사용하지 않는 경우 아래 코드를 수정해야 하지만 데이터 요소를 정의하고 규칙 정의에 사용하는 개념이 여전히 적용됩니다.
 
 +++ 데이터 요소 및 규칙 이벤트 코드
 
-+ 다음 `Component ID` 데이터 요소 코드.
++ `Component ID` 데이터 요소 코드입니다.
 
   ```javascript
   if(event && event.path && event.path.includes('.')) {    
@@ -143,7 +143,7 @@ XDM(경험 데이터 모델) 스키마를 사용하면 수집된 데이터를 �
   }
   ```
 
-+ 다음 `Component Name` 데이터 요소 코드.
++ `Component Name` 데이터 요소 코드입니다.
 
   ```javascript
   if(event && event.component && event.component.hasOwnProperty('dc:title')) {
@@ -155,7 +155,7 @@ XDM(경험 데이터 모델) 스키마를 사용하면 수집된 데이터를 �
   }    
   ```
 
-+ 다음 `all pages - on load` **규칙 조건** 코드
++ `all pages - on load` **Rule-Condition** 코드
 
   ```javascript
   if(event && event.component && event.component.hasOwnProperty('@type') && event.component.hasOwnProperty('xdm:template')) {
@@ -165,7 +165,7 @@ XDM(경험 데이터 모델) 스키마를 사용하면 수집된 데이터를 �
   }    
   ```
 
-+ 다음 `home page - cta click` **규칙 이벤트** 코드
++ `home page - cta click` **Rule-Event** 코드
 
   ```javascript
   var componentClickedHandler = function(evt) {
@@ -197,7 +197,7 @@ XDM(경험 데이터 모델) 스키마를 사용하면 수집된 데이터를 �
   });    
   ```
 
-+ 다음 `home page - cta click` **규칙 조건** 코드
++ `home page - cta click` **Rule-Condition** 코드
 
   ```javascript
   if(event && event.component && event.component.hasOwnProperty('@type')) {
@@ -214,18 +214,18 @@ XDM(경험 데이터 모델) 스키마를 사용하면 수집된 데이터를 �
 
 +++
 
-AEM 핵심 구성 요소와 Adobe 클라이언트 데이터 레이어 통합에 대한 자세한 내용은 [AEM 핵심 구성 요소와 함께 Adobe 클라이언트 데이터 레이어 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html).
+AEM 핵심 구성 요소와 Adobe 클라이언트 데이터 레이어 통합에 대한 자세한 내용은 [AEM 핵심 구성 요소와 Adobe 클라이언트 데이터 레이어 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html)를 참조하십시오.
 
 
 >[!INFO]
 >
->을(를) 포괄적으로 이해하기 위해 **변수 맵** 솔루션 디자인 참조(SDR) 문서의 탭 속성 세부 정보에서 완료된 WKND별 버전에 액세스하여 다운로드 [여기](./assets/Final-WKND-WebSDK-BRD-SDR.xlsx).
+>SDR(솔루션 디자인 참조) 문서의 **변수 맵** 탭 속성 세부 정보에 대한 포괄적인 이해를 위해 [여기](./assets/Final-WKND-WebSDK-BRD-SDR.xlsx)에서 다운로드할 완료된 WKND별 버전에 액세스하십시오.
 
 
 
 ## WKND에서 업데이트된 태그 속성 확인
 
-업데이트된 태그 속성이 빌드, 게시되고 WKND 사이트 페이지에서 올바르게 작동하는지 확인합니다. Google Chrome 웹 브라우저 사용 [Adobe Experience Platform Debugger 확장](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob):
+업데이트된 태그 속성이 빌드, 게시되고 WKND 사이트 페이지에서 올바르게 작동하는지 확인합니다. Google Chrome 웹 브라우저의 [Adobe Experience Platform Debugger 확장](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) 사용:
 
 + 태그 속성이 최신 버전인지 확인하려면 빌드 날짜를 확인합니다.
 
@@ -241,7 +241,7 @@ AEM 핵심 구성 요소와 Adobe 클라이언트 데이터 레이어 통합에 
 
 ## 데이터 세트 확인 - WKND 페이지 보기, CTA 데이터
 
-데이터 집합은 스키마를 따르는 데이터베이스 테이블과 같은 데이터 수집을 위한 저장 및 관리 구성입니다. 에서 만들어진 데이터 세트 [이전 자습서](./web-sdk.md) 는 페이지 보기 및 CTA 클릭 데이터가 Experience Platform 데이터 세트에 수집되는지 확인하는 데 재사용됩니다. 데이터 세트 UI 내에서 총 레코드, 크기 및 수집된 일괄 처리와 같은 다양한 세부 정보가 시각적으로 호소력 있는 막대 그래프와 함께 표시됩니다.
+데이터 집합은 스키마를 따르는 데이터베이스 테이블과 같은 데이터 수집을 위한 저장 및 관리 구성입니다. [이전 자습서](./web-sdk.md)에서 만든 데이터 집합을 다시 사용하여 페이지 보기 및 CTA 클릭 데이터가 Experience Platform 데이터 집합에 수집되는지 확인합니다. 데이터 세트 UI 내에서 총 레코드, 크기 및 수집된 일괄 처리와 같은 다양한 세부 정보가 시각적으로 호소력 있는 막대 그래프와 함께 표시됩니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419885?quality=12&learn=on)
 
@@ -249,9 +249,9 @@ AEM 핵심 구성 요소와 Adobe 클라이언트 데이터 레이어 통합에 
 
 Analysis Workspace은 유연하고 대화형 방식으로 데이터를 탐색하고 시각화할 수 있는 Adobe Analytics의 강력한 도구입니다. 사용자 지정 보고서를 만들고, 고급 세분화를 수행하고, 다양한 데이터 시각화를 적용할 수 있는 드래그 앤 드롭 인터페이스를 제공합니다.
 
-에서 만든 Analysis Workspace 프로젝트를 다시 열겠습니다. [Analytics 설정](#setup-analytics---report-suite-analysis-workspace) 단계. 다음에서 **상위 페이지** 섹션에서 방문 횟수, 고유 방문자 수, 시작 횟수, 바운스 비율 등과 같은 다양한 지표를 검사합니다. WKND 페이지 및 홈 페이지 CTA의 성능을 평가하려면 WKND별 차원(WKND 페이지 이름, WKND CTA 이름) 및 지표(WKND CTA 클릭 이벤트)를 드래그 앤 드롭합니다. 이러한 통찰력은 마케터가 어떤 CTA가 더 효과적인지 이해하고 비즈니스 목표에 맞게 데이터 중심의 결정을 내리는 데 유용합니다.
+[Analytics 설정](#setup-analytics---report-suite-analysis-workspace) 단계에서 만든 Analysis Workspace 프로젝트를 다시 열겠습니다. **상위 페이지** 섹션에서 방문 횟수, 고유 방문자 수, 시작 횟수, 바운스 비율 등과 같은 다양한 지표를 검사합니다. WKND 페이지 및 홈 페이지 CTA의 성능을 평가하려면 WKND별 차원(WKND 페이지 이름, WKND CTA 이름) 및 지표(WKND CTA 클릭 이벤트)를 드래그 앤 드롭합니다. 이러한 통찰력은 마케터가 어떤 CTA가 더 효과적인지 이해하고 비즈니스 목표에 맞게 데이터 중심의 결정을 내리는 데 유용합니다.
 
-사용자 여정을 시각화하려면 **WKND 페이지 이름** 다양한 경로로 확장됩니다.
+사용자 여정을 시각화하려면 **WKND 페이지 이름**&#x200B;부터 시작하여 다양한 경로로 확장하는 흐름 시각화를 사용하십시오.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419886?quality=12&learn=on)
 
@@ -268,14 +268,14 @@ Analysis Workspace은 유연하고 대화형 방식으로 데이터를 탐색하
 
 >[!AVAILABILITY]
 >
->원하는 경우 **엔드투엔드 비디오** 따라서 개별 설정 단계 비디오 대신 전체 통합 프로세스를 다루는 [여기](https://video.tv.adobe.com/v/3419889/) 액세스할 수 있습니다.
+>개별 설정 단계 비디오 대신 전체 통합 프로세스를 다루는 **종단 간 비디오**&#x200B;를 선호하는 경우 [여기](https://video.tv.adobe.com/v/3419889/)를 클릭하여 액세스할 수 있습니다.
 
 
 ## 추가 리소스
 
-+ [Experience Platform 웹 SDK 통합](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform/web-sdk.html)
-+ [핵심 구성 요소로 Adobe 클라이언트 데이터 레이어 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html)
++ [Experience Platform Web SDK 통합](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform/web-sdk.html)
++ [핵심 구성 요소와 함께 Adobe 클라이언트 데이터 레이어 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html)
 + [Experience Platform 데이터 수집 태그와 AEM 통합](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)
-+ [Adobe Experience Platform Web SDK 및 Edge Network 개요](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html)
-+ [데이터 수집 자습서](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html)
++ [Adobe Experience Platform 웹 SDK 및 Edge Network 개요](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html)
++ [데이터 수집 튜토리얼](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html)
 + [Adobe Experience Platform Debugger 개요](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)

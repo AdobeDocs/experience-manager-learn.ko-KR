@@ -106,4 +106,4 @@ export default function Contact(){
 }
 ```
 
-위의 코드는 적응형 양식에 사용된 구성 요소에 매핑된 기본 html 구성 요소를 사용합니다. 예를 들어 텍스트 입력 적응형 양식 구성 요소를 TextField 구성 요소에 매핑합니다. 문서에 사용된 기본 구성 요소 [여기에서 다운로드할 수 있음](./assets/native-components.zip)
+위의 코드는 적응형 양식에 사용된 구성 요소에 매핑된 기본 html 구성 요소를 사용합니다. 예를 들어 텍스트 입력 적응형 양식 구성 요소를 TextField 구성 요소에 매핑합니다. 문서 [에 사용된 기본 구성 요소는 여기에서 다운로드할 수 있습니다](./assets/native-components.zip)

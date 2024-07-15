@@ -41,7 +41,7 @@ Adobe Experience Manager은 AEM Sites, Assets 및 Forms 사용자가 사용할 �
     </a>
     </div>
     <p>
-    <em>AEM용 Cloud Manager는 AEM 환경을 쉽게 관리, 검사 및 셀프서비스할 수 있는 간단하면서도 강력한 솔루션을 제공합니다.</em>
+    <em>AEM용 Cloud Manager은 AEM 환경을 쉽게 관리, 검사 및 셀프서비스할 수 있는 간단하면서도 강력한 솔루션을 제공합니다.</em>
     <p>
   </td>
    <td>
@@ -50,11 +50,11 @@ Adobe Experience Manager은 AEM Sites, Assets 및 Forms 사용자가 사용할 �
     </a>
      <div>
      <a href="./development/set-up-sling-dynamic-include.md">
-    <strong>Sling Dynamic Include(SDI) 설정</strong>
+    <strong>SDI(Sling Dynamic Include) 설정</strong>
     </a>
     </div>
     <p>
-    <em>Sling SDI(Dynamic Include)를 설정하고 다이내믹 AEM 구성 요소가 항상 새로운 콘텐츠를 제공하도록 하는 방법을 살펴보십시오.</em>
+    <em>Sling SDI(Dynamic Include)를 설정하고 dynamic AEM 구성 요소가 항상 새로운 콘텐츠를 제공하도록 허용하는 방법을 살펴봅니다.</em>
     <p>
   </td>
   <td>

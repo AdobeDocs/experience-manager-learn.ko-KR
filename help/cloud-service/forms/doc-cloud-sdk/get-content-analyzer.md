@@ -26,7 +26,7 @@ ht-degree: 0%
 + 매개 변수
 + 출력.
 
-이에 대한 세부 정보 [양식 매개 변수는 여기에서 사용할 수 있습니다.](https://documentcloud.adobe.com/document-services/index.html#post-createPDF)
+이 [양식 매개 변수의 세부 정보는 여기에서 확인할 수 있습니다.](https://documentcloud.adobe.com/document-services/index.html#post-createPDF)
 
 아래 나열된 샘플 코드는 모든 Office 365 문서 유형에 대한 JSON 조각을 생성합니다.
 

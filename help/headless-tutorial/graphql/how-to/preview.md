@@ -29,18 +29,18 @@ AEM Headless 애플리케이션은 통합 작성 미리보기를 지원합니다
 
 1. 작성자가 액세스할 수 있는 URL에 앱을 배포해야 합니다.
 1. AEM Publish 서비스가 아닌 AEM Author 서비스에 연결하도록 앱을 구성해야 합니다.
-1. 앱을 사용할 수 있는 URL 또는 경로로 디자인해야 합니다. [컨텐츠 조각 경로 또는 ID](#url-expressions) 을 클릭하여 앱 경험에서 미리 보기 위해 표시할 콘텐츠 조각을 선택합니다.
+1. 앱은 [콘텐츠 조각 경로 또는 ID](#url-expressions)를 사용하여 앱 경험에서 미리 보기 위해 표시할 콘텐츠 조각을 선택할 수 있는 URL 또는 경로로 디자인되어야 합니다.
 
 ## URL 미리보기
 
-미리보기 URL, 사용 [URL 표현식](#url-expressions)는 콘텐츠 조각 모델의 속성에 설정됩니다.
+[URL 표현식](#url-expressions)을(를) 사용하는 미리 보기 URL이 콘텐츠 조각 모델의 속성에서 설정됩니다.
 
 ![콘텐츠 조각 모델 미리 보기 URL](./assets/preview/cf-model-preview-url.png)
 
 1. 관리자로 AEM Author 서비스에 로그인합니다
-1. 다음으로 이동 __도구 > 일반 > 콘텐츠 조각 모델__
-1. 다음 항목 선택 __콘텐츠 조각 모델__ 및 선택 __속성__ 맨 위의 작업 표시줄을 구성합니다.
-1. 다음을 사용하여 콘텐츠 조각 모델의 미리보기 URL 입력 [URL 표현식](#url-expressions)
+1. __도구 > 일반 > 콘텐츠 조각 모델__(으)로 이동
+1. __콘텐츠 조각 모델__&#x200B;을(를) 선택하고 맨 위의 작업 표시줄에서 __속성__&#x200B;을(를) 선택합니다.
+1. [URL 표현식](#url-expressions)을(를) 사용하여 콘텐츠 조각 모델의 미리 보기 URL을 입력하십시오.
    + 미리보기 URL은 AEM Author 서비스에 연결하는 앱 배포를 가리켜야 합니다.
 
 ### URL 표현식
@@ -57,12 +57,12 @@ AEM Headless 애플리케이션은 통합 작성 미리보기를 지원합니다
 
 미리보기 URL 예:
 
-+ 의 미리보기 URL __모험__ 모델은 다음과 같을 수 있습니다. `https://preview.app.wknd.site/adventure${contentFragment.path}` 다음으로 확인됨: `https://preview.app.wknd.site/adventure/content/dam/wknd-shared/en/adventures/surf-camp-bali/surf-camp-bali`
-+ 의 미리보기 URL __기사__ 모델은 다음과 같을 수 있습니다. `https://preview.news.wknd.site/${contentFragment.model.name}/${contentFragment.id}.html?variation=${contentFragment.variation}` 확인됨 `https://preview.news.wknd.site/article/99c34317-1901-2ab3-35b6-d7890aa1c23c.html?variation=main`
++ __Adventure__ 모델의 미리 보기 URL은 `https://preview.app.wknd.site/adventure/content/dam/wknd-shared/en/adventures/surf-camp-bali/surf-camp-bali`(으)로 확인되는 `https://preview.app.wknd.site/adventure${contentFragment.path}`처럼 보일 수 있습니다.
++ __Article__ 모델의 미리 보기 URL은 `https://preview.news.wknd.site/article/99c34317-1901-2ab3-35b6-d7890aa1c23c.html?variation=main`을(를) 확인하는 `https://preview.news.wknd.site/${contentFragment.model.name}/${contentFragment.id}.html?variation=${contentFragment.variation}`처럼 보일 수 있습니다.
 
 ## 인앱 미리 보기
 
-구성된 콘텐츠 조각 모델을 사용하는 모든 콘텐츠 조각에는 미리보기 버튼이 있습니다. 미리보기 버튼은 콘텐츠 조각 모델의 미리보기 URL을 열고 열려 있는 콘텐츠 조각의 값을 [URL 표현식](#url-expressions).
+구성된 콘텐츠 조각 모델을 사용하는 모든 콘텐츠 조각에는 미리보기 버튼이 있습니다. 미리 보기 단추를 사용하면 콘텐츠 조각 모델의 미리 보기 URL이 열리고 열린 콘텐츠 조각의 값이 [URL 표현식](#url-expressions)에 삽입됩니다.
 
 ![미리보기 버튼](./assets/preview/preview-button.png)
 
@@ -72,13 +72,13 @@ AEM Headless 애플리케이션은 통합 작성 미리보기를 지원합니다
 
 AEM Headless GraphQL API를 사용하여 AEM의 모험을 표시하는 간단한 React 애플리케이션인 WKND 앱을 살펴보겠습니다.
 
-예제 코드는에서 사용할 수 있습니다. [Github.com](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/preview-tutorial).
+예제 코드는 [Github.com](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/preview-tutorial)에서 사용할 수 있습니다.
 
 ## URL 및 경로
 
-콘텐츠 조각 미리보기에 사용되는 URL 또는 경로는 다음을 사용하여 구성 가능해야 합니다. [URL 표현식](#url-expressions). WKND 앱의 미리보기 활성화 버전에서는 `AdventureDetail` 경로에 바인딩된 구성 요소 `/adventure<CONTENT FRAGMENT PATH>`. 따라서 WKND Adventure 모델의 미리보기 URL을 로 설정해야 합니다. `https://preview.app.wknd.site:3000/adventure${contentFragment.path}` 이 경로로 확인합니다.
+콘텐츠 조각을 미리 보는 데 사용되는 URL 또는 경로는 [URL 표현식](#url-expressions)을 사용하여 구성할 수 있어야 합니다. 이 미리 보기 사용 버전의 WKND 앱에서는 `/adventure<CONTENT FRAGMENT PATH>` 경로에 바인딩된 `AdventureDetail` 구성 요소를 통해 어드벤처 콘텐츠 조각이 표시됩니다. 따라서 이 경로를 확인하려면 WKND Adventure 모델의 미리 보기 URL을 `https://preview.app.wknd.site:3000/adventure${contentFragment.path}`(으)로 설정해야 합니다.
 
-콘텐츠 조각 미리 보기는 앱에 주소 지정 가능한 경로가 있으며 이 경로는 로 채울 수 있는 경우에만 작동합니다. [URL 표현식](#url-expressions) 미리 보기 가능한 방식으로 앱의 해당 콘텐츠 조각을 렌더링합니다.
+콘텐츠 조각 미리 보기는 앱에 미리 보기 가능한 방식으로 해당 콘텐츠 조각을 렌더링하는 [URL 표현식](#url-expressions)(으)로 채울 수 있는 주소 지정 가능한 경로가 있는 경우에만 작동합니다.
 
 + `src/App.js`
 
@@ -109,7 +109,7 @@ export default App;
 
 ### 작성된 콘텐츠 표시
 
-다음 `AdventureDetail` 구성 요소는 를 통해 미리보기 URL에 삽입된 콘텐츠 조각 경로를 구문 분석합니다. `${contentFragment.path}` [URL 표현식](#url-expressions)를 경로 URL에서 사용하고, 이 URL을 사용하여 WKND Adventure를 수집하고 렌더링합니다.
+`AdventureDetail` 구성 요소는 경로 URL에서 `${contentFragment.path}` [URL 식](#url-expressions)을 통해 미리 보기 URL에 삽입된 콘텐츠 조각 경로를 구문 분석하고 이를 사용하여 WKND 모험을 수집하고 렌더링합니다.
 
 + `src/components/AdventureDetail.js`
 

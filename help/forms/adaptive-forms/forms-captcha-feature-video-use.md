@@ -22,7 +22,7 @@ AEM Adaptive Forms과 함께 CAPTCHA 추가 및 사용.
 
 >[!VIDEO](https://video.tv.adobe.com/v/18336?quality=12&learn=on)
 
-*이 비디오는 내장된 AEM CAPTCHA 서비스와 Google의 reCAPTCHA 서비스를 모두 사용하여 AEM 적응형 양식에 CAPTCHA를 추가하는 프로세스를 안내합니다.*
+*이 비디오는 기본 AEM CAPTCHA 서비스와 Google의 reCAPTCHA 서비스를 모두 사용하여 AEM 적응형 양식에 CAPTCHA를 추가하는 과정을 안내합니다.*
 
 >[!NOTE]
 >
@@ -30,11 +30,11 @@ AEM Adaptive Forms과 함께 CAPTCHA 추가 및 사용.
 
 >[!NOTE]
 >
->**게시 인스턴스에서 reCaptcha를 구성하려면 단계를 따르십시오.**
+>**게시 인스턴스에서 reCaptcha를 구성하려면 다음 단계를 수행하십시오**
 >
 >작성자 인스턴스에서 reCaptach 구성
 >
->Felix 열기 [웹 콘솔](http://localhost:4502/system/console/bundles) 작성자 인스턴스에서
+>작성자 인스턴스에서 Felix [웹 콘솔](http://localhost:4502/system/console/bundles)을 엽니다
 >
 >com.adobe.granite.crypto.file 번들 검색
 >
@@ -45,7 +45,7 @@ AEM Adaptive Forms과 함께 CAPTCHA 추가 및 사용.
 >* &lt;author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle20/data
 * HMAC 및 마스터 파일 복사
 >
-를 엽니다. [felix 웹 콘솔](http://localhost:4502/system/console/bundles) 게시 인스턴스에서 확인할 수 있습니다. com.adobe.granite.crypto.file 번들을 검색합니다. 번들 ID를 확인합니다
+게시 인스턴스에서 [felix 웹 콘솔](http://localhost:4502/system/console/bundles)을 엽니다. com.adobe.granite.crypto.file 번들을 검색합니다. 번들 ID를 확인합니다
 >
 게시 인스턴스의 파일 시스템에 있는 번들 ID로 이동합니다
 >
@@ -57,4 +57,4 @@ AEM 게시 서버 다시 시작
 
 ## 지원 자료 {#supporting-materials}
 
-* [Google recaptcha](https://www.google.com/recaptcha)
+* [Google reCAPTCHA](https://www.google.com/recaptcha)

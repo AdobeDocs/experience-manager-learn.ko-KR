@@ -29,7 +29,7 @@ XDP 및 적응형 양식이 스키마를 기반으로 하지 않는 경우 다�
 
 적응형 양식을 만들고 적응형 양식 필드 이름이 xdp 템플릿의 필드 이름과 동일한지 확인합니다.
 xdp 템플릿의 루트 요소 이름을 기록합니다.
-![루트 요소](assets/xfa-root-element.png)
+![root-element](assets/xfa-root-element.png)
 
 ### 클라이언트 라이브러리
 
@@ -78,11 +78,12 @@ xdp가 XSD를 기반으로 하지 않는 경우 다음 단계에 따라 적응�
 
 ### xml 데이터에서 XSD 생성
 
-무료 온라인 도구를 사용하여 다음을 수행할 수 있습니다. [xsd 생성](https://www.freeformatter.com/xsd-generator.html) 이전 단계에서 생성된 xml 데이터에서 가져온 것입니다.
+무료 온라인 도구를 사용하여 이전 단계에서 생성된 xml 데이터에서 [XSD를 생성](https://www.freeformatter.com/xsd-generator.html)할 수 있습니다.
 
 ### 적응형 양식 만들기
 
-이전 단계의 XSD를 기반으로 적응형 양식을 만듭니다. 클라이언트 라이브러리 &quot;irs&quot;를 사용하도록 양식을 연결하십시오. 이 클라이언트 라이브러리에는 호출 응용 프로그램에 PDF을 반환하는 서블릿에 대한 POST 호출을 수행하는 코드가 있습니다. 다음 코드는 _PDF 다운로드_ 클릭됨
+이전 단계의 XSD를 기반으로 적응형 양식을 만듭니다. 클라이언트 라이브러리 &quot;irs&quot;를 사용하도록 양식을 연결하십시오. 이 클라이언트 라이브러리에는 호출 응용 프로그램에 PDF을 반환하는 서블릿에 대한 POST 호출을 수행하는 코드가 있습니다
+_PDF 다운로드_&#x200B;를 클릭하면 다음 코드가 트리거됩니다
 
 ```javascript
 $(document).ready(function() {
@@ -117,7 +118,7 @@ $(document).ready(function() {
 
 ## 사용자 정의 서블릿 만들기
 
-데이터를 XDP 템플릿과 병합하고 pdf를 반환하는 사용자 지정 서블릿을 만듭니다. 이를 수행하기 위한 코드가 아래에 나와 있습니다. 사용자 정의 서블릿은 [AEMFormsDocumentServices.core-1.0-SNAPSHOT 번들](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)).
+데이터를 XDP 템플릿과 병합하고 pdf를 반환하는 사용자 지정 서블릿을 만듭니다. 이를 수행하기 위한 코드가 아래에 나와 있습니다. 사용자 지정 서블릿은 [AEMFormsDocumentServices.core-1.0-SNAPSHOT 번들](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar))의 일부입니다.
 
 ```java
 public class GenerateIInteractiveDor extends SlingAllMethodsServlet {
@@ -217,14 +218,15 @@ public class GenerateIInteractiveDor extends SlingAllMethodsServlet {
 로컬 서버에서 테스트하려면 다음 단계를 따르십시오.
 
 1. [DevelopingWithServiceUser 번들 다운로드 및 설치](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-1. Apache Sling Service 사용자 매퍼 서비스 DevelopingWithServiceUser.core:getformsresourceresolver=fd-service에 다음 항목을 추가합니다.
-1. [사용자 지정 DocumentServices 번들 다운로드 및 설치](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar). 데이터를 XDP 템플릿과 병합하고 pdf를 다시 스트리밍하는 서블릿이 있습니다.
+1. Apache Sling Service User Mapper 서비스에 다음 항목 추가
+DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
+1. [사용자 지정 DocumentServices 번들을 다운로드하여 설치](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)합니다. 데이터를 XDP 템플릿과 병합하고 pdf를 다시 스트리밍하는 서블릿이 있습니다.
 1. [클라이언트 라이브러리 가져오기](assets/generate-interactive-dor-client-lib.zip)
-1. [문서 자산 가져오기(적응형 양식, XDP 템플릿 및 XSD)](assets/generate-interactive-dor-sample-assets.zip)
+1. [문서 Assets 가져오기(적응형 양식, XDP 템플릿 및 XSD)](assets/generate-interactive-dor-sample-assets.zip)
 1. [적응형 양식 미리 보기](http://localhost:4502/content/dam/formsanddocuments/f8918complete/jcr:content?wcmmode=disabled)
 1. 양식 필드 몇 개를 입력합니다.
 1. PDF 다운로드 를 클릭하여 PDF을 가져옵니다. PDF이 다운로드될 때까지 몇 초 동안 기다려야 할 수 있습니다.
 
 >[!NOTE]
 >
->과 동일한 사용 사례를 시도할 수 있습니다. [비 xsd 기반 적응형 양식](http://localhost:4502/content/dam/formsanddocuments/two/jcr:content?wcmmode=disabled). irs clientlib에 있는 streampdf.js의 post 끝점에 적절한 매개 변수를 전달해야 합니다.
+>[비xsd 기반 적응형 양식](http://localhost:4502/content/dam/formsanddocuments/two/jcr:content?wcmmode=disabled)에서 동일한 사용 사례를 시도할 수 있습니다. irs clientlib에 있는 streampdf.js의 post 끝점에 적절한 매개 변수를 전달해야 합니다.

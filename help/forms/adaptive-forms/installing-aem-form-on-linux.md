@@ -37,12 +37,13 @@ AEM Forms OSGi 또는 AEM Forms j2EE가 Linux에 배포된 경우 32비트 버�
 * libXext(X11 프로토콜에 대한 일반적인 확장 라이브러리)
 * 여러 디스플레이에서 데스크탑을 확장할 수 있도록 지원하는 libXinerama(X11 확장) 이 이름은 여러 대의 프로젝터를 사용했던 와이드스크린 영화 형식인 Cinerama의 펜입니다. libXinerama는 RandR 확장과 상호 작용하는 라이브러리입니다.)
 * libXrandr(Xinerama 확장 프로그램은 현재 대부분 사용되지 않으며 RandR 확장 프로그램으로 대체되었습니다.)
-* libXrender (X Rendering Extension Client Library) nss-softokn-freebl (네트워크 보안 서비스용 Freebl 라이브러리)
+* libXrender(X Rendering Extension 클라이언트 라이브러리)
+nss-softokn-freebl (네트워크 보안 서비스용 Freebl 라이브러리)
 * zlib(범용, 무특허, 무손실 데이터 압축 라이브러리)
 
 Red Hat Enterprise Linux 6부터 32비트 버전의 라이브러리는 파일 이름 확장명이 .686이고 64비트 버전은 .x86_64입니다. 예: expat.i686. RHEL 6 이전에는 32비트 버전의 확장명이 .i386이었습니다. 32비트 버전을 설치하기 전에 최신 64비트 버전이 설치되어 있는지 확인하십시오. 라이브러리의 64비트 버전이 설치 중인 32비트 버전보다 오래된 경우 다음과 같은 오류가 발생합니다.
 
-0mError: 보호된 multilib 버전: libsepol-2.5-10.el7.x86_64 != libsepol-2.5-6.el7.i686 [0mError: Multilib 버전 문제를 발견했습니다.]
+0mError: 보호된 multilib 버전: libsepol-2.5-10.el7.x86_64 != libsepol-2.5-6.el7.i686 [0mError: Multilib 버전 문제가 발견되었습니다.]
 
 ## 처음 설치
 
@@ -70,29 +71,60 @@ Red Hat Enterprise Linux에서 YellowDog Update Modifier(YUM)를 사용하여 �
 
 ## 심볼릭 링크
 
-또한 libcurl, libcrypto.so 및 libssl.so 심볼릭 링크를 각각 만들어 libcurl, libcrypto 및 libssl 라이브러리의 최신 32비트 버전을 가리켜야 합니다. /usr/lib/ ln -s /usr/lib/libcurl.so.4.5.0 /usr/lib/libcurl.so ln -s /usr/lib/libcrypto.so.1.1.1c /usr/lib/libcrypto.so ln -s /usr/lib/libssl.so.1.1.1c /usr/lib/libssl.so에서 파일을 찾을 수 있습니다
+또한 libcurl, libcrypto.so 및 libssl.so 심볼릭 링크를 각각 만들어 libcurl, libcrypto 및 libssl 라이브러리의 최신 32비트 버전을 가리켜야 합니다. /usr/lib/
+ln -s /usr/lib/libcurl.so.4.5.0 /usr/lib/libcurl.so
+ln -s /usr/lib/libcrypto.so.1.1.1c /usr/lib/libcrypto.so
+ln -s /usr/lib/libssl.so.1.1.1c /usr/lib/libssl.so
 
 ## 기존 시스템에 대한 업데이트
 
-업데이트 중에 x86_64와 i686 아키텍처 사이에 다음과 같은 충돌이 발생할 수 있습니다. 오류: 트랜잭션 확인 오류: file /lib/ld-2.28.so from install of glibc-2.28-72.el8.i686 conflicts from package glibc32-2.28-42.1.el8.x86_64
+다음과 같이 업데이트 중에 x86_64와 i686 아키텍처 간에 충돌이 발생할 수 있습니다.
+오류: 거래 확인 오류:
+glibc-2.28-72.el8.i686 설치에서 /lib/ld-2.28.so 파일이 glibc32-2.28-42.1.el8.x86_64 패키지의 파일과 충돌합니다.
 
-문제가 발생하면 먼저 문제가 있는 패키지를 설치 해제하십시오. 예: yum remove glibc32-2.28-42.1.el8.x86_64
+이 문제가 발생하면 먼저 다음 경우와 같이 문제가 되는 패키지를 설치 해제합니다.
+yum 제거 glibc32-2.28-42.1.el8.x86_64
 
-이 모든 것을 다 하고, x86_64 및 i686 버전이 정확히 동일하기를 바랍니다. 예를 들어, 이 출력에서 명령에 이르기까지: yum info glibc
+이 모든 작업을 수행하려면 예를 들어 이 출력에서 명령까지 x86_64와 i686 버전이 정확히 동일해야 합니다.
+yum info glibc
 
-마지막 메타데이터 만료 확인: 0:41:33 전 Sat 18 1월 2020 11:37:오전 8시(EST)
-설치된 패키지 이름 : glibc 버전 : 2.28 릴리스 : 72.el8 아키텍처 : i686 크기 : 13M 소스 : glibc-2.28-72.el8.src.rpm 저장소 : @System 리포지토리에서 : BaseOS 요약 : GNU libc 라이브러리 URL : http://www.gnu.org/software/glibc/ 라이선스 : LGPLv2+ 및 LGPLv2+ 예외 및 GPLv2+ 예외 및 BSD와 Inner-Net 및 ISC 및 Public Domain 및 GFDL 설명 : glibc 패키지에는 시스템의 여러 프로그램에서 사용하는 표준 라이브러리가 포함되어 있습니다. 디스크 공간 및 : 메모리를 절약하고 업그레이드를 쉽게 할 수 있도록 공통 시스템 코드가 : 한 곳에 유지되며 프로그램 간에 공유됩니다. 이 특정 패키지 : 가장 중요한 공유 라이브러리 세트( 표준 C : 라이브러리 및 표준 수학 라이브러리)가 포함되어 있습니다. 이 두 라이브러리가 없으면 : Linux 시스템이 작동하지 않습니다.
+마지막 메타데이터 만료 확인: 0:41:33 전, 토 18 일 2020년 1월 11:37:08 AM EST.
+설치된 패키지
+이름 : glibc
+버전 : 2.28
+릴리스 : 72.el8
+아키텍처 : i686
+크기 : 13M
+Source : glibc-2.28-72.el8.src.rpm
+저장소 : @System
+리포지토리에서: BaseOS
+요약 : GNU libc 라이브러리
+URL : http://www.gnu.org/software/glibc/
+라이선스 : 예외가 있는 LGPLv2+ 및 LGPLv2+, 예외가 있는 GPLv2+ 및 GPLv2+, 예외와 BSD 및 Inner-Net 및 ISC와 Public Domain 및 GFDL
+설명 : glibc 패키지는에서 사용하는 표준 라이브러리 를 포함합니다. 시스템의 여러 프로그램. 디스크 공간 및 : 메모리를 절약하고 업그레이드를 쉽게 할 수 있도록 공통 시스템 코드가 : 한 곳에 유지되며 프로그램 간에 공유됩니다. 이 특정 패키지 : 가장 중요한 공유 라이브러리 세트( 표준 C : 라이브러리 및 표준 수학 라이브러리)가 포함되어 있습니다. 이 두 라이브러리가 없으면 : Linux 시스템이 작동하지 않습니다.
 
-이름 : glibc 버전 : 2.28 릴리스 : 72.el8 아키텍처 : x86_64 크기 : 15M 소스 : glibc-2.28-72.el8.src.rpm 저장소 : @System 리포지토리에서 : BaseOS 요약 : GNU libc 라이브러리 URL : http://www.gnu.org/software/glibc/ 라이선스 : LGPLv2+ 및 LGPLv2+ 예외 및 GPLv2+ 예외 및 BSD와 Inner-Net 및 ISC와 Public Domain 및 GFDL 설명 : glibc 패키지에는 시스템의 여러 프로그램에서 사용하는 표준 라이브러리가 포함되어 있습니다. 디스크 공간 및 : 메모리를 절약하고 업그레이드를 쉽게 할 수 있도록 공통 시스템 코드가 : 한 곳에 유지되며 프로그램 간에 공유됩니다. 이 특정 패키지 : 가장 중요한 공유 라이브러리 세트( 표준 C : 라이브러리 및 표준 수학 라이브러리)가 포함되어 있습니다. 이 두 라이브러리가 없으면 : Linux 시스템이 작동하지 않습니다.
+이름 : glibc
+버전 : 2.28
+릴리스 : 72.el8
+아키텍처 : x86_64
+크기 : 15M
+Source : glibc-2.28-72.el8.src.rpm
+저장소 : @System
+리포지토리에서: BaseOS
+요약 : GNU libc 라이브러리
+URL : http://www.gnu.org/software/glibc/
+라이선스 : 예외가 있는 LGPLv2+ 및 LGPLv2+, 예외가 있는 GPLv2+ 및 GPLv2+, 예외와 BSD 및 Inner-Net 및 ISC와 Public Domain 및 GFDL
+설명 : glibc 패키지는에서 사용하는 표준 라이브러리 를 포함합니다. 시스템의 여러 프로그램. 디스크 공간 및 : 메모리를 절약하고 업그레이드를 쉽게 할 수 있도록 공통 시스템 코드가 : 한 곳에 유지되며 프로그램 간에 공유됩니다. 이 특정 패키지 : 가장 중요한 공유 라이브러리 세트( 표준 C : 라이브러리 및 표준 수학 라이브러리)가 포함되어 있습니다. 이 두 라이브러리가 없으면 : Linux 시스템이 작동하지 않습니다.
 
 ## 몇 가지 유용한 yum 명령
 
-yum 목록 설치됨 yum 검색 [part_of_package_name]
-욤 와츠 [package_name]
+yum 목록 설치됨
+yum 검색 [part_of_package_name]
+yum whats 제공 [package_name]
 yum 설치 [package_name]
-yum reinstall [package_name]
+yum 다시 설치 [package_name]
 yum 정보 [package_name]
-연필리스트 [package_name]
-연제거 [package_name]
-yum check-update [package_name]
+yum deplist [package_name]
+yum 제거 [package_name]
+yum 확인-업데이트 [package_name]
 yum 업데이트 [package_name]

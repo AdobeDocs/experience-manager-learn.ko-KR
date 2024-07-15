@@ -21,18 +21,18 @@ ht-degree: 0%
 
 이전 버전의 Adobe Experience Manager(AEM)에서는 저장소에 액세스해야 하는 백엔드 처리에 관리 리소스 확인자가 사용되었습니다. 관리 리소스 확인자는 AEM 6.3에서 더 이상 사용되지 않습니다. 대신 저장소에서 특정 권한이 있는 시스템 사용자가 사용됩니다.
 
-의 세부 정보에 대해 자세히 알아보기 [AEM에서 서비스 사용자 생성 및 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/advanced/service-users.html).
+[AEM에서 서비스 사용자를 만들고 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/advanced/service-users.html)하는 방법에 대해 자세히 알아보세요.
 
 이 문서에서는 시스템 사용자를 만들고 사용자 매퍼 속성을 구성하는 과정을 안내합니다.
 
-1. 다음으로 이동 [http://localhost:4502/crx/explorer/index.jsp](http://localhost:4502/crx/explorer/index.jsp)
+1. [http://localhost:4502/crx/explorer/index.jsp](http://localhost:4502/crx/explorer/index.jsp)(으)로 이동
 1. &#39; admin &#39;(으)로 로그인
 1. &#39; 사용자 관리 &#39; 를 클릭합니다.
 1. &#39; 시스템 사용자 만들기 &#39; 를 클릭합니다.
 1. 사용자 ID 유형을 &#39; data &#39;로 설정하고 녹색 아이콘을 클릭하여 시스템 사용자 생성 프로세스를 완료합니다
 1. [configMgr 열기](http://localhost:4502/system/console/configMgr)
-1. 검색 대상 _Apache Sling 서비스 사용자 매퍼 서비스_ 을(를) 클릭하고 속성을 엽니다.
-1. 다음을 클릭합니다. *+* 아이콘(더하기): 다음 서비스 매핑 추가
+1. _Apache Sling Service 사용자 매퍼 서비스_&#x200B;를 검색하고 클릭하여 속성을 엽니다.
+1. *+* 아이콘(더하기)을 클릭하여 다음 서비스 매핑을 추가합니다
 
    * DevelopingWithServiceUser.core:getresourceresolver=data
    * DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
@@ -44,14 +44,14 @@ ht-degree: 0%
 fd-service 사용자를 대신하여 resource resolver를 가져올 수도 있습니다. 이 서비스 사용자는 문서 서비스에 사용됩니다. 예를 들어 사용 권한 등을 인증/적용하려는 경우 fd-service 사용자의 resource resolver를 사용하여 작업을 수행합니다
 
 1. [이 문서와 관련된 zip 파일을 다운로드하고 압축 해제합니다.](assets/developingwithserviceuser.zip)
-1. 다음으로 이동 [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
+1. [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)(으)로 이동
 1. OSGi 번들 업로드 및 시작
 1. 번들이 활성 상태인지 확인합니다.
-1. 이제 을(를) 정상적으로 만들었습니다. *시스템 사용자* 및 배포 *서비스 사용자 번들*.
+1. 이제 *시스템 사용자*&#x200B;를 만들고 *서비스 사용자 번들*&#x200B;도 배포했습니다.
 
    /content에 대한 액세스 권한을 제공하려면 시스템 사용자(&#39; data &#39;)에게 콘텐츠 노드에 대한 읽기 권한을 제공합니다.
 
-   1. 다음으로 이동 [http://localhost:4502/useradmin](http://localhost:4502/useradmin)
+   1. [http://localhost:4502/useradmin](http://localhost:4502/useradmin)(으)로 이동
    1. 사용자 &#39; 데이터 &#39; 검색 이전 단계에서 만든 시스템 사용자와 동일합니다.
    1. 사용자를 두 번 클릭한 다음 &quot;권한&quot; 탭을 클릭합니다
    1. &#39; 컨텐츠 &#39; 폴더에 &#39; 읽기 &#39; 액세스 권한을 부여합니다.

@@ -60,5 +60,5 @@ ht-degree: 9%
 
 ## 추가 리소스 {#additional-resources}
 
-* [페이지 컨텐츠 편집 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html)
+* [페이지 콘텐츠 설명서 편집](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html)
 * [페이지 작성에 대한 빠른 시작 안내서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)

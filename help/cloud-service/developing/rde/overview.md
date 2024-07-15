@@ -20,7 +20,7 @@ ht-degree: 9%
 
 # 신속한 개발 환경
 
-AEM의 RDE(Rapid Development Environment)에 대해 as a Cloud Service으로 알아보십시오.
+AEM as a Cloud Service의 RDE(Rapid Development Environment)에 대해 알아봅니다.
 
 이 비디오 개요:
 
@@ -31,7 +31,7 @@ AEM의 RDE(Rapid Development Environment)에 대해 as a Cloud Service으로 알
 
 ## 다음 단계
 
-학습 [설정 방법](./how-to-setup.md) AEMas a Cloud Service 의 RDE.
+AEM as a Cloud Service에서 RDE를 [설정](./how-to-setup.md)하는 방법에 대해 알아봅니다.
 
 ## 추가 리소스
 

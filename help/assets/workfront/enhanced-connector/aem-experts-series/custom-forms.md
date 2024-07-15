@@ -10,7 +10,7 @@ jira: KT-9718
 thumbnail: 340332.jpeg
 hidefromtoc: false
 badgeIntegration: label="통합" type="positive"
-badgeVersions: label="AEM Assets as a Cloud Service, AEM Assets 6.5" before-title="false"
+badgeVersions: label="AEM Assets as a Cloud Service AEM Assets 6.5" before-title="false"
 exl-id: 40d76e0c-69f3-4003-9f34-f393e6fb8561
 duration: 3314
 source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
@@ -28,4 +28,4 @@ Workfront 사용자 정의 양식 및 AEM 메타데이터 스키마를 사용하
 
 >[!VIDEO](https://video.tv.adobe.com/v/340332?quality=12&learn=on)
 
-_의 두 번째 편 [Workfront for Experience Manager 강화 커넥터에 대한 4부로 구성된 expert 시리즈](./overview.md)_
+_Workfront for Experience Manager 강화 커넥터에 대한 [4부 전문가 시리즈의 2부](./overview.md)_

@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # 확장 확인
 
-AEM AEM UI 확장은 확장이 속한 Adobe 조직의 as a Cloud Service 환경에 대해 확인할 수 있습니다.
+AEM UI 확장은 확장이 속한 Adobe 조직의 AEM as a Cloud Service 환경을 통해 확인할 수 있습니다.
 
 확장 테스트는 해당 요청에 대해서만 AEM에서 확장을 로드하도록 지시하는 특별히 제작된 URL을 통해 수행됩니다.
 
@@ -28,18 +28,18 @@ AEM AEM UI 확장은 확장이 속한 Adobe 조직의 as a Cloud Service 환경�
 
 >[!IMPORTANT]
 >
-> 위의 비디오에서는 App Builder 확장 앱 미리 보기 및 확인을 보여주는 콘텐츠 조각 콘솔 확장의 사용을 보여 줍니다. 그러나 위에서 설명한 개념은 모든 AEM UI 확장에 적용할 수 있습니다.
+> 위의 비디오에서는 콘텐츠 조각 콘솔 확장을 사용하여 App Builder 확장 앱 미리 보기 및 확인을 보여 줍니다. 그러나 위에서 설명한 개념은 모든 AEM UI 확장에 적용할 수 있습니다.
 
 ## AEM UI URL
 
 ![AEM 콘텐츠 조각 콘솔 URL](./assets/verify/content-fragment-console-url.png){align="center"}
 
-비프로덕션 확장을 AEM에 마운트하는 URL을 만들려면 확장이 삽입되는 AEM UI의 URL을 얻어야 합니다. AEM as a Cloud Service 환경으로 이동하여에서 확장을 확인하고 확장을 미리 볼 UI를 엽니다.
+비프로덕션 확장을 AEM에 마운트하는 URL을 만들려면 확장이 삽입되는 AEM UI의 URL을 얻어야 합니다. AEM as a Cloud Service 환경으로 이동하여 의 확장을 확인하고 확장을 미리 볼 UI를 엽니다.
 
 예를 들어 콘텐츠 조각 콘솔의 확장을 미리 보려면 다음을 수행합니다.
 
-1. AEM 원하는 as a Cloud Service 환경에 로그인합니다.
-1. 다음 항목 선택 __컨텐츠 조각__ 아이콘.
+1. 원하는 AEM as a Cloud Service 환경에 로그인합니다.
+1. __콘텐츠 조각__ 아이콘을 선택합니다.
 1. AEM 콘텐츠 조각 콘솔이 브라우저에서 로드될 때까지 기다립니다.
 1. 브라우저의 주소 표시줄에서 AEM 콘텐츠 조각 콘솔의 URL을 복사합니다. URL은 다음과 유사해야 합니다.
 
@@ -65,14 +65,14 @@ AEM AEM UI 확장은 확장이 속한 Adobe 조직의 as a Cloud Service 환경�
      -> https://experience.adobe.com/?devMode=true#/custom-apps/?localDevUrl=https://localhost:9080
    ```
 
-위에 표시된 로컬 애플리케이션 URL을 확인합니다. `-> https://localhost:9080`
+위에 `-> https://localhost:9080`(으)로 표시된 로컬 응용 프로그램 URL을 참고하십시오.
 
-1. 처음에(연결 오류가 표시될 때마다) 열림 `https://localhost:9080` (또는 로컬 애플리케이션 URL이 무엇이든) 웹 브라우저에서 [https 인증서](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#accepting-the-certificate-first-time-users).
-1. 다음 두 개의 쿼리 매개 변수를 [AEM UI의 URL](#aem-ui-url)
+1. 처음에(연결 오류가 표시될 때마다) 웹 브라우저에서 `https://localhost:9080`(또는 로컬 응용 프로그램 URL이 무엇이든)을 열고 [HTTPS 인증서](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#accepting-the-certificate-first-time-users)를 수동으로 수락합니다.
+1. [AEM UI의 URL](#aem-ui-url)에 다음 두 개의 쿼리 매개 변수를 추가합니다.
    + `&devMode=true`
-   + `&ext=<LOCAL APPLICATION URL>`, 일반적으로 `&ext=https://localhost:9080`.
+   + `&ext=<LOCAL APPLICATION URL>`, 일반적으로 `&ext=https://localhost:9080`입니다.
 
-   위의 두 쿼리 매개 변수(`devMode` 및 `ext`)을 로 사용하는 경우 __첫 번째__ url의 쿼리 매개 변수. AEM 확장 UI의 해시 경로 사용(`#/@wknd/aem/...`), 이렇게 하면 이후에 매개 변수를 잘못 게시합니다. `#` 작동하지 않습니다.
+   위의 두 쿼리 매개 변수(`devMode` 및 `ext`)를 URL에서 __first__ 쿼리 매개 변수로 추가하십시오. AEM의 확장 가능한 UI에서 해시 경로(`#/@wknd/aem/...`)를 사용하므로 `#` 이후 매개 변수를 잘못 게시하면 작동하지 않습니다.
 
    미리보기 URL은 다음과 같아야 합니다.
 
@@ -82,7 +82,7 @@ AEM AEM UI 확장은 확장이 속한 Adobe 조직의 as a Cloud Service 환경�
 
 1. 미리보기 URL을 복사하여 브라우저에 붙여넣습니다.
 
-   + 처음에는 그랬다가 주기적으로 해야 할 수도 있습니다. [https 인증서 수락](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#accepting-the-certificate-first-time-users) 로컬 애플리케이션 호스트(`https://localhost:9080`).
+   + 로컬 응용 프로그램의 호스트(`https://localhost:9080`)에 대해 [HTTPS 인증서를 수락하고](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#accepting-the-certificate-first-time-users)해야 할 수 있습니다.
 
 1. AEM UI는 확인을 위해 로컬 버전의 확장이 삽입되어 로드됩니다.
 
@@ -93,15 +93,15 @@ AEM AEM UI 확장은 확장이 속한 Adobe 조직의 as a Cloud Service 환경�
 ## 스테이지 빌드 확인
 
 1. 확장 프로젝트의 루트에 대한 명령줄을 엽니다.
-1. 스테이지 작업 영역이 활성 상태(또는 확인에 사용되는 작업 영역)인지 확인합니다.
+1. 스테이지 작업 영역이 활성 상태인지 확인합니다(또는 확인에 Workspace을 사용하는 위치 확인).
 
    ```shell
    $ aio app use -w Stage
    ```
 
-   모든 변경 내용 병합 `.env` 및 `.aio`.
+   `.env` 및 `.aio`에 대한 모든 변경 내용을 병합합니다.
 
-1. 업데이트된 확장 App Builder 앱을 배포합니다. 로그인하지 않은 경우 를 실행합니다. `aio login` 첫 번째.
+1. 업데이트된 확장 App Builder 앱을 배포합니다. 로그인하지 않은 경우 먼저 `aio login`을(를) 실행하십시오.
 
    ```shell
    $ aio app deploy
@@ -117,11 +117,11 @@ AEM AEM UI 확장은 확장이 속한 Adobe 조직의 as a Cloud Service 환경�
    Successful deployment 🏄
    ```
 
-1. 다음 두 개의 쿼리 매개 변수를 [AEM UI의 URL](#aem-ui-url)
+1. [AEM UI의 URL](#aem-ui-url)에 다음 두 개의 쿼리 매개 변수를 추가합니다.
    + `&devMode=true`
    + `&ext=<DEPLOYED APPLICATION URL>`
 
-   위의 두 쿼리 매개 변수(`devMode` 및 `ext`)을 로 사용하는 경우 __첫 번째__ 확장 가능한 AEM UI는 해시 경로(`#/@wknd/aem/...`), 이렇게 하면 이후에 매개 변수를 잘못 게시합니다. `#` 작동하지 않습니다.
+   확장 가능한 AEM UI에서 해시 경로(`#/@wknd/aem/...`)를 사용하므로 `#` 이후의 매개 변수를 잘못 사후 수정해도 작동하지 않으므로 위의 두 쿼리 매개 변수(`devMode` 및 `ext`)를 URL의 __first__ 쿼리 매개 변수로 추가하십시오.
 
    미리보기 URL은 다음과 같아야 합니다.
 
@@ -134,18 +134,18 @@ AEM AEM UI 확장은 확장이 속한 Adobe 조직의 as a Cloud Service 환경�
 
 이 접근 방식을 사용할 때 스테이징된 확장은 크래프트 스테이지 URL로 액세스할 때 AEM 콘텐츠 조각 콘솔에만 삽입됩니다.
 
-1. 배포된 확장은 를 실행하여 업데이트할 수 있습니다. `aio app deploy` 또한 이러한 변경 사항은 미리보기 URL을 사용할 때 자동으로 반영됩니다.
-1. 확인을 위해 확장을 제거하려면 다음을 실행합니다. `aio app undeploy`.
+1. 배포된 확장은 `aio app deploy`을(를) 다시 실행하여 업데이트할 수 있으며 이러한 변경 내용은 미리 보기 URL을 사용할 때 자동으로 반영됩니다.
+1. 확인을 위해 확장을 제거하려면 `aio app undeploy`을(를) 실행하십시오.
 
 ## 북마클릿 미리 보기
 
 위에서 설명한 미리 보기 및 미리 보기 URL을 쉽게 만들 수 있도록 확장을 로드하는 JavaScript 북마클릿을 만들 수 있습니다.
 
-아래의 북마클릿은 다음을 미리 봅니다. [로컬 개발 빌드](#verify-local-development-builds) 의 확장 기능 `https://localhost:9080`. 미리 보기 [스테이지 빌드](#verify-stage-builds), 를 사용하여 북마클릿 만들기 `previewApp` 변수를 배포된 App Builder 앱의 URL로 설정합니다.
+아래 북마클릿은 `https://localhost:9080`에서 확장의 [로컬 개발 빌드](#verify-local-development-builds)를 미리 봅니다. [스테이지 빌드](#verify-stage-builds)를 미리 보려면 배포된 App Builder 앱의 URL로 설정된 `previewApp` 변수로 북마클릿을 만드십시오.
 
 1. 브라우저에서 책갈피를 만듭니다.
 1. 책갈피를 편집합니다.
-1. 책갈피에 다음과 같은 의미 있는 이름을 지정합니다. `AEM UI Extension Preview (localhost:9080)`.
+1. 책갈피에 `AEM UI Extension Preview (localhost:9080)`과(와) 같은 의미 있는 이름을 지정하십시오.
 1. 책갈피의 URL을 다음 코드로 설정합니다.
 
    ```javascript
@@ -165,4 +165,4 @@ AEM AEM UI 확장은 확장이 속한 Adobe 조직의 as a Cloud Service 환경�
 
 >[!TIP]
 >
-> App Builder 확장이 로드되지 않는 경우 을 사용할 때 `&ext=https://localhost:9080`을 클릭하고 브라우저 탭에서 직접 해당 호스트와 포트를 연 다음 자체 서명된 인증서를 수락합니다. 그런 다음 북마클릿을 다시 시도하십시오.
+> App Builder 확장이 로드되지 않으면 `&ext=https://localhost:9080`을(를) 사용할 때 브라우저 탭에서 해당 호스트와 포트를 직접 열고 자체 서명된 인증서를 수락합니다. 그런 다음 북마클릿을 다시 시도하십시오.
