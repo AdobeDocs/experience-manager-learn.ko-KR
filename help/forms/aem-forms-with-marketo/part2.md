@@ -10,200 +10,43 @@ badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: f8ba3d5c-0b9f-4eb7-8609-3e540341d5c2
 duration: 137
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 8bde459ae9a6e261cfc3aff308babe9de6e56059
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '213'
 ht-degree: 1%
 
 ---
 
-# Marketo 인증 서비스
+# 데이터 Source 만들기
 
-Marketo의 REST API는 2개의 레그 OAuth 2.0으로 인증됩니다. Marketo에 대해 인증하려면 사용자 지정 인증을 만들어야 합니다. 이 사용자 지정 인증은 일반적으로 OSGI 번들 내에 작성됩니다. 다음 코드는 이 자습서의 일부로 사용된 사용자 지정 인증자를 보여 줍니다.
+Marketo의 REST API는 2개의 레그 OAuth 2.0으로 인증됩니다. 이전 단계에서 다운로드한 Swagger 파일을 사용하여 데이터 소스를 쉽게 만들 수 있습니다
 
-## 사용자 지정 인증 서비스
+## 구성 컨테이너 만들기
 
-다음 코드는 Marketo에 대한 인증에 필요한 access_token이 있는 AuthenticationDetails 개체를 만듭니다
+* AEM에 로그인합니다.
+* 도구 메뉴를 클릭한 다음 아래와 같이 **구성 브라우저**&#x200B;를 클릭합니다.
 
-```java
-package com.marketoandforms.core;
-import org.osgi.service.component.annotations.Component;
-import org.osgi.service.component.annotations.Reference;
- 
-import com.adobe.aemfd.dermis.authentication.api.IAuthentication;
-import com.adobe.aemfd.dermis.authentication.exception.AuthenticationException;
-import com.adobe.aemfd.dermis.authentication.model.AuthenticationDetails;
-import com.adobe.aemfd.dermis.authentication.model.Configuration;
-@Component(service={IAuthentication.class}, immediate=true)
-public class MarketoAuthenticationService implements IAuthentication {
-@Reference
-MarketoService marketoService;
-    @Override
-    public AuthenticationDetails getAuthDetails(Configuration arg0) throws AuthenticationException
-    {
-        AuthenticationDetails auth = new AuthenticationDetails();
-        auth.addHttpHeader("Cache-Control", "no-cache");
-        auth.addHttpHeader("Authorization", "Bearer " + marketoService.getAccessToken());
-        return auth
-    }
- 
-    @Override
-    public String getAuthenticationType() {
-        // TODO Auto-generated method stub
-        return "AemForms With Marketo";
-    }
-}
-```
+* ![도구 메뉴](assets/datasource3.png)
 
-MarketoAuthenticationService는 IAuthentication 인터페이스를 구현합니다. 이 인터페이스는 AEM Forms 클라이언트 SDK의 일부입니다. 이 서비스는 액세스 토큰을 가져오고 토큰을 AuthenticationDetails의 HttpHeader에 삽입합니다. AuthenticationDetails 개체의 HttpHeaders가 채워지면, AuthenticationDetails 개체가 양식 데이터 모델의 진피 레이어로 반환됩니다.
+* **만들기**&#x200B;를 클릭하고 아래와 같이 의미 있는 이름을 제공하십시오. 아래와 같이 클라우드 구성 옵션을 선택해야 합니다
 
-getAuthenticationType 메서드에서 반환된 문자열에 주의하십시오. 이 문자열은 데이터 소스를 구성할 때 사용됩니다.
+* ![구성 컨테이너](assets/datasource4.png)
 
-### 액세스 토큰 가져오기
+## 클라우드 서비스 만들기
 
-단순 인터페이스는 access_token을 반환하는 한 메서드로 정의됩니다. 이 인터페이스를 구현하는 클래스의 코드는 페이지 아래쪽에 나열됩니다.
+* 도구 메뉴로 이동한 다음 클라우드 서비스 -> 데이터 소스 를 클릭합니다.
 
-```java
-package com.marketoandforms.core;
-public interface MarketoService {
-    String getAccessToken();
-}
-```
+* ![클라우드 서비스](assets/datasource5.png)
 
-다음 코드는 REST API 호출을 수행하는 데 사용할 access_token을 반환하는 서비스입니다. 이 서비스의 코드는 GET 호출을 수행하는 데 필요한 구성 매개 변수에 액세스합니다. 보시다시피 GET URL에 client_id,client_secret을 전달하여 access_token을 생성합니다. 그러면 이 access_token이 호출 응용 프로그램으로 반환됩니다.
+* 이전 단계에서 만든 구성 컨테이너를 선택하고 **만들기**&#x200B;를 클릭하여 새 데이터 원본을 만드십시오.의미 있는 이름을 입력하고 서비스 유형 드롭다운 목록에서 RESTful 서비스를 선택한 후 **다음**&#x200B;을 클릭하십시오.
+* ![new-data-source](assets/datasource6.png)
 
-```java
-package com.marketoandforms.core.impl;
-import java.io.IOException;
-import org.apache.http.HttpEntity;
-import org.apache.http.HttpResponse;
-import org.apache.http.ParseException;
-import org.apache.http.client.ClientProtocolException;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.HttpClientBuilder;
-import org.apache.http.util.EntityUtils;
-import org.json.JSONException;
-import org.osgi.service.component.annotations.Component;
-import org.osgi.service.component.annotations.Reference;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import com.marketoandforms.core.*; 
-@Component(service=MarketoService.class,immediate = true)
-public class MarketoServiceImpl implements MarketoService {
-    private final Logger log = LoggerFactory.getLogger(getClass());
-@Reference
-MarketoConfigurationService config;
-    @Override
-    public String getAccessToken()
-    {
-        String AUTH_URL = config.getAUTH_URL();
-        String CLIENT_ID = config.getCLIENT_ID();
-        String CLIENT_SECRET = config.getCLIENT_SECRET();
-        String AUTH_PATH = config.getAUTH_PATH();
-        HttpClient httpClient = HttpClientBuilder.create().build();
-        String getURL = AUTH_URL+AUTH_PATH+"&client_id="+CLIENT_ID+"&client_secret="+CLIENT_SECRET;
-        log.debug("The url to get the access token is "+getURL);
-        HttpGet httpGet = new HttpGet(getURL);
-        httpGet.addHeader("Cache-Control","no-cache");
-        try {
-            HttpResponse httpResponse = httpClient.execute(httpGet);
-            HttpEntity httpEntity = httpResponse.getEntity();
-            org.json.JSONObject responseJSON = new org.json.JSONObject(EntityUtils.toString(httpEntity))
-            return (String)responseJSON.get("access_token");
-        } catch (ClientProtocolException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        } catch (ParseException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        } catch (JSONException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-        return null;
-    }
-}
-```
+* Swagger 파일을 업로드하고 아래 스크린샷과 같이 Marketo 인스턴스와 관련된 부여 유형, 클라이언트 ID, 클라이언트 암호 및 액세스 토큰 URL을 지정합니다.
 
-아래 스크린샷은 설정해야 하는 구성 속성을 보여 줍니다. 이러한 구성 속성은 access_token을 가져오기 위해 위에 나열된 코드에서 읽습니다.
+* 연결을 테스트하고 연결이 성공하면 파란색 **만들기** 단추를 클릭하여 데이터 원본 만들기 프로세스를 완료하십시오.
 
-![구성](assets/configuration-settings.png)
+* ![data-source-config](assets/datasource1.png)
 
-### 구성
-
-다음 코드는 구성 속성을 만드는 데 사용되었습니다. 이러한 속성은 Marketo 인스턴스에만 적용됩니다
-
-```java
-package com.marketoandforms.core;
- 
-import org.osgi.service.metatype.annotations.AttributeDefinition;
-import org.osgi.service.metatype.annotations.ObjectClassDefinition;
- 
-@ObjectClassDefinition(name="Marketo Credentials Service Configuration", description = "Connect Form With Marketo")
-public @interface MarketoConfiguration {
-     @AttributeDefinition(name="Identity Endpoint", description="URL of Marketo Identity Endpoint")
-     String identityEndpoint() default "";
-      @AttributeDefinition(name="Authentication path", description="Marketo authentication path")
-      String authPath() default "";
-      @AttributeDefinition(name="Client ID", description="Client ID")
-      String clientID() default "";
-      @AttributeDefinition(name="Client Secret", description="Client Secret")
-      String clientSecret() default "";
-}
-```
-
-다음 코드는 구성 속성을 읽고 getter 메서드를 통해 이를 반환합니다
-
-```java
-package com.marketoandforms.core;
- 
-import org.osgi.service.component.annotations.Activate;
-import org.osgi.service.component.annotations.Component;
-import org.osgi.service.metatype.annotations.Designate;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-@Component(immediate=true, service={MarketoConfigurationService.class})
-@Designate(ocd=MarketoConfiguration.class)
-public class MarketoConfigurationService {
-    private final Logger log = LoggerFactory.getLogger(getClass());
-    private MarketoConfiguration config;
-    private String AUTH_URL;
-    private String  AUTH_PATH;
-    private String CLIENT_ID ;
-    private String CLIENT_SECRET;
-     @Activate
-      protected final void activate(MarketoConfiguration config) {
-        System.out.println("####In my marketo activating auth service");
-        AUTH_URL = config.identityEndpoint();
-        AUTH_PATH = config.authPath();
-        CLIENT_ID = config.clientID();
-        CLIENT_SECRET = config.clientSecret();
-        log.info("clientID:" + CLIENT_ID);
-        System.out.println("The client id is "+CLIENT_ID+"AUTH PATH"+AUTH_PATH);
-      }
-    public String getAUTH_URL() {
-        return AUTH_URL;
-    }
-   public String getAUTH_PATH() {
-        return AUTH_PATH;
-    }
-    public String getCLIENT_ID() {
-        return CLIENT_ID;
-    }
-
-    public String getCLIENT_SECRET() {
-        return CLIENT_SECRET;
-    }
-}
-```
-
-1. 번들을 빌드하고 AEM 서버에 배포합니다.
-1. [브라우저를 configMgr](http://localhost:4502/system/console/configMgr)(으)로 가리키고 &quot;Marketo 자격 증명 서비스 구성&quot;을 검색합니다.
-1. Marketo 인스턴스와 관련된 적절한 속성을 지정합니다
 
 ## 다음 단계
 

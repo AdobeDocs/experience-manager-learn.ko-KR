@@ -11,9 +11,9 @@ badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 last-substantial-update: 2020-03-20T00:00:00Z
 duration: 77
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 8bde459ae9a6e261cfc3aff308babe9de6e56059
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '354'
 ht-degree: 1%
 
 ---
@@ -53,12 +53,14 @@ Marketo과 AEM Forms을 통합하는 첫 번째 단계는 API를 사용하여 RE
 
 **시작하기 전에**
 
-[이 문서와 관련된 자산을 다운로드하고 압축 해제합니다.](assets/aemformsandmarketo.zip) zip 파일에 다음 항목이 포함되어 있습니다.
+* [이 자습서와 관련된 에셋을 다운로드하고 압축 해제합니다.](assets/marketo-integration-assets.zip)
+
+zip 파일에는 다음 항목이 포함되어 있습니다.
 
 1. BlankTemplatePackage.zip - 적응형 양식 템플릿입니다. 패키지 관리자를 사용하여 가져오십시오.
 1. marketo.json - 데이터 소스를 구성하는 데 사용되는 Swagger 파일입니다.
-1. MarketoAndForms.MarketoAndForms.core-1.0-SNAPSHOT.jar - 사용자 지정 인증을 수행하는 번들입니다. 자습서를 완료할 수 없거나 번들이 예상대로 작동하지 않는 경우 자유롭게 이 자습서를 사용하십시오.
+1. marketo.json에서 marketo 인스턴스를 가리키도록 호스트 속성을 변경해야 합니다
 
 ## 다음 단계
 
-[사용자 지정 인증 만들기](./part2.md)
+[데이터 Source 만들기](./part2.md)

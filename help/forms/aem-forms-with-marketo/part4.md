@@ -10,20 +10,24 @@ badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: 6b44e6b2-15f7-45b2-8d21-d47f122c809d
 duration: 68
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 8bde459ae9a6e261cfc3aff308babe9de6e56059
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '278'
 ht-degree: 0%
 
 ---
 
-# 양식 데이터 모델을 사용하여 적응형 양식 만들기
+# 통합 테스트
 
-다음 단계는 적응형 양식을 만들고 이전 단계에서 만든 양식 데이터 모델을 기반으로 합니다.
-사용자가 리드 ID를 입력하고 Marketo 서비스 탭 아웃 시 ID별로 리드를 가져오는 가 호출됩니다. 그런 다음 서비스 작업의 결과가 적응형 Forms의 해당 필드에 매핑됩니다.
+간단한 양식 가져오기를 만들어 Market에서 Lead 객체를 표시하여 통합을 테스트합니다.
+>[!NOTE]
+>
+>이 기능은 기초 구성 요소를 기반으로 양식을 기반으로 테스트되었습니다.
+
+## 적응형 양식 만들기
 
 1. 적응형 양식을 만들고 &quot;빈 양식 템플릿&quot;을 기반으로 이전 단계에서 만든 양식 데이터 모델과 연결합니다.
-1. 편집 모드로 양식 열기
+1. 편집 모드로 양식을 엽니다.
 1. TextField 구성 요소와 패널 구성 요소를 적응형 양식으로 드래그 앤 드롭합니다. TextField 구성 요소의 제목을 &quot;리드 ID 입력&quot;으로 설정하고 이름을 &quot;리드 ID&quot;로 설정합니다.
 1. 2개의 TextField 구성 요소를 패널 구성 요소로 끌어다 놓습니다.
 1. 두 Textfield 구성 요소의 이름 및 제목을 이름 및 성 로 설정합니다.
@@ -35,12 +39,6 @@ ht-degree: 0%
 
 ![ruleeditor](assets/ruleeditor.png)
 
-## 디버깅
-
-이 문서와 함께 제공되는 번들을 사용하는 경우 다음 클래스에 대해 [디버그 로그](http://localhost:4502/system/console/slinglog)를 사용하도록 설정할 수 있습니다.
-
-+ `com.marketoandforms.core.impl.MarketoServiceImpl`
-+ `com.marketoandforms.core.MarketoConfigurationService`
 
 ## 축하합니다.
 
