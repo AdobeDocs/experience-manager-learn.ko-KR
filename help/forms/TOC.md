@@ -8,9 +8,9 @@ breadcrumb-title: AEM Forms 튜토리얼
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: 82ef2988d55012ae730e9bbc7adeea547863ba51
+source-git-commit: d440662bcfbc8fdea8c1b0e8af7f653b1f8667f9
 workflow-type: tm+mt
-source-wordcount: '2080'
+source-wordcount: '2086'
 ht-degree: 2%
 
 ---
@@ -100,7 +100,7 @@ ht-degree: 2%
    + [JDBC 기반 양식 데이터 모델](adaptive-forms/jdbc-data-model-technical-video-use.md)
    + [양식 데이터 모델에서 두 엔티티 간 연결 만들기](adaptive-forms/association-data-model-technical-video-use.md)
    + [규칙 편집기에서 양식 데이터 모델 호출 서비스 사용](adaptive-forms/service-data-model-technical-video-use.md)
-   + [양식 데이터 모델을 사용하여 Post 바이너리 데이터를 AEM DAM으로 마이그레이션](adaptive-forms/form-data-model-to-post-binary-data-tutorial-use.md)
+   + [양식 데이터 모델을 사용하여 바이너리 데이터를 AEM DAM에 게시](adaptive-forms/form-data-model-to-post-binary-data-tutorial-use.md)
    + [재사용 가능한 워크플로우 모델 생성](adaptive-forms/re-usable-aem-forms-workflow-models-article.md)
    + [사용자 지정 프로세스 단계 AEM 워크플로](adaptive-forms/custom-process-step-aem-workflow.md)
    + [HTML5 Forms 미리 채우기](adaptive-forms/prepopulating-html5-forms-in-aem-forms-article.md)
@@ -240,8 +240,8 @@ ht-degree: 2%
    + [2부 - 사용자 지정 템플릿 만들기](listing-custom-asset-types/part2.md)
 + Marketo{#aem-forms-with-marketo}이(가) 있는 AEM Forms
    + [Part1 - 소개](aem-forms-with-marketo/part1.md)
-   + [2부 - 사용자 지정 인증](aem-forms-with-marketo/part2.md)
-   + [3부 - 데이터 Source](aem-forms-with-marketo/part3.md)
+   + [2부 - 데이터 Source](aem-forms-with-marketo/part2.md)
+   + [파트3 - 양식 데이터 모델](aem-forms-with-marketo/part3.md)
    + [Part4 - 전체 구성](aem-forms-with-marketo/part4.md)
 
 + Adobe Campaign Standard{#aem-forms-with-adobe-campaign}이(가) 있는 AEM Forms
@@ -280,6 +280,7 @@ ht-degree: 2%
    + [AEM Forms에서 감시 폴더 사용](document-services/watched-folders-document-services-article-use.md)
    + [AEM Forms에서 바코드 서비스 사용](document-services/barcode-service-adaptive-forms-article.md)
    + [AEM Forms에서 PDFG 서비스 사용](document-services/using-pdfg-in-aem-forms.md)
+   + [권한 암호로 PDF 암호화](document-services/encrypt-pdf-permissions-password.md)
    + [AEM Forms에서 출력 및 Forms 서비스 사용](document-services/output-and-forms-services-article-develop.md)
    + [출력 서비스에서 xdp 조각 사용](document-services/using-fragments-in-output-service.md)
    + [조각이 있는 pdf를 생성하는 ECMA 스크립트](document-services/using-fragments-in-output-service-watched-folder.md)

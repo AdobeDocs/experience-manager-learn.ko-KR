@@ -11,9 +11,9 @@ badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 last-substantial-update: 2020-03-20T00:00:00Z
 duration: 77
-source-git-commit: 8bde459ae9a6e261cfc3aff308babe9de6e56059
+source-git-commit: 7e0d7e87d72aa1e4450649afa6a962099ceb2db4
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '352'
 ht-degree: 1%
 
 ---
@@ -47,7 +47,6 @@ Marketo과 AEM Forms을 통합하는 첫 번째 단계는 API를 사용하여 RE
 1. client_id
 1. 클라이언트 암호
 1. identity_endpoint
-1. 인증 url
 
 [위에서 언급한 속성을 가져오려면 공식 Marketo 문서를 따르십시오.](https://developers.marketo.com/rest-api/) 또는 Marketo 인스턴스의 관리자에게 문의할 수도 있습니다.
 

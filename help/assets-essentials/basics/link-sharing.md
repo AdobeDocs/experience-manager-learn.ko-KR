@@ -12,7 +12,7 @@ last-substantial-update: 2022-10-08T00:00:00Z
 doc-type: Feature Video
 exl-id: 719d3101-2c27-4165-a9d7-97e6f637d71f
 duration: 161
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 54509339ee8e538daf432b329ddebb55e98bb6d9
 workflow-type: tm+mt
 source-wordcount: '66'
 ht-degree: 0%
@@ -21,6 +21,6 @@ ht-degree: 0%
 
 # 공개 링크 공유
 
-Assets Essentials의 링크 공유를 통해 잘못된 에셋이나 정보를 공유할 위험을 최소화하면서 내부 및 외부 관련자와 에셋을 공유할 수 있는 방법에 대해 알아봅니다.
+AEM Assets의 링크 공유를 통해 잘못된 에셋이나 정보를 공유할 위험을 최소화하면서 내부 및 외부 관련자와 에셋을 공유할 수 있는 방법에 대해 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/341025?quality=12&learn=on)

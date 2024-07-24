@@ -12,14 +12,14 @@ last-substantial-update: 2022-10-06T00:00:00Z
 doc-type: Feature Video
 exl-id: 18e600b6-bc4f-4045-a932-ed72d4ed3ef3
 duration: 435
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 54509339ee8e538daf432b329ddebb55e98bb6d9
 workflow-type: tm+mt
-source-wordcount: '40'
+source-wordcount: '37'
 ht-degree: 0%
 
 ---
 
-# Assets Essentials을 사용하여 콘텐츠 만들기
+# 콘텐츠 만들기
 
 Adobe Photoshop Express을 사용하여 에셋을 업로드하고, 버전을 만들고, 에셋을 편집하는 방법을 알아봅니다.
 

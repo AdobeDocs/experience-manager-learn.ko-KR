@@ -12,15 +12,15 @@ last-substantial-update: 2022-10-03T00:00:00Z
 doc-type: Feature Video
 exl-id: a0accb94-ceef-4ecf-b1f6-f47751114242
 duration: 251
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 54509339ee8e538daf432b329ddebb55e98bb6d9
 workflow-type: tm+mt
-source-wordcount: '40'
-ht-degree: 0%
+source-wordcount: '37'
+ht-degree: 5%
 
 ---
 
-# Assets Essentials 시작
+# 시작
 
-Assets Essentials에 액세스하고 사용자 인터페이스의 주요 기능을 살펴보는 방법에 대해 알아봅니다.
+AEM Assets에 액세스하고 사용자 인터페이스의 주요 기능을 살펴보는 방법에 대해 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336005?quality=12&learn=on)

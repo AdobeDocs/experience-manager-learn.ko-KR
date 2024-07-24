@@ -10,33 +10,16 @@ badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: 7096340b-8ccf-4f5e-b264-9157232e96ba
 duration: 78
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 7e0d7e87d72aa1e4450649afa6a962099ceb2db4
 workflow-type: tm+mt
-source-wordcount: '379'
-ht-degree: 1%
+source-wordcount: '217'
+ht-degree: 3%
 
 ---
 
-# Data Source 구성
+# 양식 데이터 모델 만들기
 
-AEM Forms 데이터 통합을 사용하면 서로 다른 데이터 소스를 구성하고 연결할 수 있습니다. 기본적으로 지원되는 유형은 다음과 같습니다. 그러나 약간의 맞춤화를 통해 다른 데이터 소스와도 통합할 수 있습니다.
-
-1. 관계형 데이터베이스 - MySQL, Microsoft SQL Server, IBM DB2 및 Oracle RDBMS
-1. AEM 사용자 프로필
-1. RESTful 웹 서비스
-1. SOAP 기반 웹 서비스
-1. OData 서비스
-
-AEM Forms과 Marketo의 통합을 위해 RESTful 웹 서비스를 사용하고 있습니다. 통합의 첫 번째 단계는 [데이터 원본을 구성하는 것입니다.](https://helpx.adobe.com/experience-manager/6-4/forms/using/configure-data-sources.html#ConfigureRESTfulwebservices) 이 자습서의 일부로 제공된 swagger 파일을 사용하십시오. 다음 스크린샷은 데이터 소스를 구성하는 동안 지정해야 하는 중요한 속성을 보여 줍니다.
-![datasource](assets/datasource.png)
-
-&quot;marketo.json&quot;은 Swagger 파일이며 이 자습서 자산의 일부로 제공됩니다.
-속성 호스트는 Marketo 인스턴스에만 적용됩니다.
-인증 유형은 사용자 정의이며 인증 구현은 &quot;Marketo이 포함된 AemForms&quot;와 일치해야 합니다. (코드에서 이를 변경하지 않은 경우).
-
-## 양식 데이터 모델 만들기
-
-그런 다음 데이터 소스를 구성한 다음 단계는 이전 단계에서 구성한 데이터 소스를 기반으로 하는 양식 데이터 모델을 만드는 것입니다. 양식 데이터 모델을 만들려면 다음 단계를 수행하십시오.
+데이터 소스를 구성한 후 다음 단계는 이전 단계에서 구성한 데이터 소스를 기반으로 양식 데이터 모델을 만드는 것입니다. 양식 데이터 모델을 만들려면 다음 단계를 수행하십시오.
 
 브라우저를 [데이터 통합 페이지로 가리킵니다.](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm) AEM 인스턴스에서 만든 모든 데이터 통합을 나열합니다.
 

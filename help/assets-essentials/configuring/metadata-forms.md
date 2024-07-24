@@ -1,26 +1,24 @@
 ---
-title: Assets Essentials 메타데이터 Forms
-description: Assets Essentials 메타데이터 Forms을 빠르고 쉽게 구성하여 에셋 메타데이터를 조정할 수 있는 방법에 대해 알아봅니다.
+title: 메타데이터 양식
+description: AEM Assets 메타데이터 Forms을 빠르고 쉽게 구성하여 에셋 메타데이터를 조정할 수 있는 방법에 대해 알아봅니다.
 version: Cloud Service
-feature: Assets Essentials
 topic: Content Management
 role: Admin
 level: Beginner
-jira: KT-10230
-thumbnail: 342154.jpeg
-last-substantial-update: 2022-10-10T00:00:00Z
+jira: KT-15654
+last-substantial-update: 2024-07-19T00:00:00Z
 doc-type: Feature Video
 exl-id: 9e68efbb-38bd-4538-b899-5fd356c9322d
-duration: 648
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+duration: 489
+source-git-commit: 54509339ee8e538daf432b329ddebb55e98bb6d9
 workflow-type: tm+mt
-source-wordcount: '40'
-ht-degree: 0%
+source-wordcount: '39'
+ht-degree: 10%
 
 ---
 
-# Assets Essentials의 메타데이터 Forms
+# 메타데이터 양식
 
-Assets Essentials 메타데이터 Forms을 빠르고 쉽게 구성하여 에셋을 맞춤화하는 방법에 대해 알아봅니다.
+메타데이터 Forms을 빠르고 쉽게 구성하여 AEM Assets에서 사용할 수 있는 에셋 메타데이터를 맞춤화하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/342154?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3431686?quality=12&learn=on)
