@@ -6,10 +6,10 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: 6a22f523c5cf997a59a5b8579c168b641c009b20
+source-git-commit: 4903b0742dca59e621707691f487a430b91e832b
 workflow-type: tm+mt
-source-wordcount: '547'
-ht-degree: 19%
+source-wordcount: '554'
+ht-degree: 18%
 
 ---
 
@@ -112,6 +112,7 @@ ht-degree: 19%
    + [응답형 중단점](developing/responsive-breakpoints.md)
    + [스타일 시스템을 사용하여 개발](developing/style-system-technical-video-understand.md)
    + [스타일 시스템 모범 사례](developing/style-organization-style-system-understand-article.md)
+   + [AEM 스타일 시스템을 사용하여 컨텐츠 속도 가속화](developing/accelerate-content-velocity-aem-style-system.md)
    + [페이지 차이점을 위한 개발](developing/page-diff-technical-video-develop.md)
    + [단순 검색 구현](developing/search-tutorial-develop.md)
    + [소셜 미디어 공유](developing/social-media-sharing-technical-video-use.md)
