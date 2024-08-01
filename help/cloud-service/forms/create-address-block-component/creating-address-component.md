@@ -9,10 +9,10 @@ feature: Adaptive Forms
 topic: Development
 jira: KT-15752
 exl-id: 280c9a30-e017-4bc0-9027-096aac82c22c
-source-git-commit: a12b1778413079646814cb25567abfc26a429340
+source-git-commit: b1de5c163607163bc702ea7b8ea4916c414f2a3a
 workflow-type: tm+mt
-source-wordcount: '272'
-ht-degree: 1%
+source-wordcount: '297'
+ht-degree: 2%
 
 ---
 
@@ -68,6 +68,16 @@ AEM Forms 로컬 클라우드 준비 인스턴스의 CRXDE에 로그인합니다
 
 ``state`` 노드를 선택하고 아래와 같이 해당 속성을 설정합니다. fieldType of state - 가 드롭다운으로 설정되어 있습니다.
 ![상태](assets/state.png)
+
+## 상태 필드의 기본값 설정
+
+``state`` 노드를 선택하고 다음 속성을 추가하십시오.
+
+| 이름 | 유형 | 값 |
+|----------|----------|---------------------|
+| enum | 문자열[] | CA,NY |
+| enumNames | 문자열[] | 캘리포니아, 뉴욕 |
+
 
 최종 주소 블록 구성 요소는 다음과 같이 표시됩니다
 

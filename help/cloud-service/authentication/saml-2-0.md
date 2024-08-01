@@ -11,9 +11,9 @@ thumbnail: 343040.jpeg
 last-substantial-update: 2024-05-15T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
 duration: 2200
-source-git-commit: 11c9173cbb2da75bfccba278e33fc4ca567bbda1
+source-git-commit: 49f8df6e658b35aa3ba6e4f70cd39ff225c46120
 workflow-type: tm+mt
-source-wordcount: '3357'
+source-wordcount: '3919'
 ht-degree: 1%
 
 ---
@@ -441,6 +441,107 @@ IDP에 성공적으로 인증되면 IDP는 IDP에 구성된 AEM의 등록된 `/s
 ```
 
 Apache 웹 서버에서 URL 재작성이 구성(`dispatcher/src/conf.d/rewrites/rewrite.rules`)된 경우 `.../saml_login` 끝점에 대한 요청이 실수로 손상되지 않았는지 확인하십시오.
+
+### 새 환경에서 SAML 사용자에 대해 동적 그룹 멤버십을 활성화하는 방법
+
+새 AEM as a Cloud Service 환경에서 그룹 평가 성능을 크게 향상시키려면 새 환경에서 동적 그룹 멤버십 기능을 활성화하는 것이 좋습니다.
+또한 데이터 동기화가 활성화될 때 필요한 단계입니다. 자세한 내용은 [여기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier)를 참조하세요.
+이렇게 하려면 OSGI 구성 파일에 다음 속성을 추가합니다.
+
+`/apps/example/osgiconfig/config.publish/com.adobe.granite.auth.saml.SamlAuthenticationHandler~example.cfg.json`
+
+이 구성을 통해 사용자 및 그룹은 [Oak 외부 사용자](https://jackrabbit.apache.org/oak/docs/security/authentication/identitymanagement.html)(으)로 만들어집니다. AEM에서 외부 사용자 및 그룹은 `[user name];[idp]` 또는 `[group name];[idp]`(으)로 구성된 기본 `rep:principalName`을(를) 가집니다.
+ACL(액세스 제어 목록)이 사용자 또는 그룹의 PrincipalName과 연결되어 있음을 나타냅니다.
+이전에 `identitySyncType`이(가) 지정되지 않았거나 `default`(으)로 설정된 기존 배포에서 이 구성을 배포하는 경우 새 사용자 및 그룹이 만들어지고 이러한 새 사용자 및 그룹에 ACL을 적용해야 합니다. 외부 그룹은 로컬 사용자를 포함할 수 없습니다. [Repoinit](https://sling.apache.org/documentation/bundles/repository-initialization.html)은(는) 사용자가 로그인을 수행할 때만 만들어지더라도 SAML 외부 그룹에 대한 ACL을 만드는 데 사용할 수 있습니다.
+ACL에서 이 리팩터링을 방지하기 위해 표준 [마이그레이션 기능](#automatic-migration-to-dynamic-group-membership-for-existing-environments)이 구현되었습니다.
+
+### 동적 그룹 멤버십을 사용하여 로컬 및 외부 그룹에 멤버십을 저장하는 방법
+
+로컬 그룹에서 그룹 구성원이 oak 특성에 저장됩니다. `rep:members`. 속성에는 그룹의 모든 멤버에 대한 uid 목록이 포함됩니다. 추가 정보는 [여기](https://jackrabbit.apache.org/oak/docs/security/user/membership.html#member-representation-in-the-repository)에서 찾을 수 있습니다.
+예:
+
+```
+{
+  "jcr:primaryType": "rep:Group",
+  "rep:principalName": "operators",
+  "rep:managedByIdp": "SAML",
+  "rep:members": [
+    "635afa1c-beeb-3262-83c4-38ea31e5549e",
+    "5e496093-feb6-37e9-a2a1-7c87b1cec4b0",
+    ...
+  ],
+   ...
+}
+```
+
+동적 그룹 멤버십이 있는 외부 그룹은 그룹 항목에 멤버를 저장하지 않습니다.
+그룹 멤버십은 대신 사용자 항목에 저장됩니다. 추가 설명서는 [여기](https://jackrabbit.apache.org/oak/docs/security/authentication/external/dynamic.html)에서 찾을 수 있습니다. 예를 들어 이것은 그룹의 OAK 노드입니다.
+
+```
+{
+  "jcr:primaryType": "rep:Group",
+  "jcr:mixinTypes": [
+    "rep:AccessControllable"
+  ],
+  "jcr:createdBy": "",
+  "jcr:created": "Tue Jul 16 2024 08:58:47 GMT+0000",
+  "rep:principalName": "GROUP_1;aem-saml-idp-1",
+  "rep:lastSynced": "Tue Jul 16 2024 08:58:47 GMT+0000",
+  "jcr:uuid": "d9c6af8a-35c0-3064-899a-59af55455cd0",
+  "rep:externalId": "GROUP_1;aem-saml-idp-1",
+  "rep:authorizableId": "GROUP_1;aem-saml-idp-1"
+}
+```
+
+해당 그룹의 사용자 멤버에 대한 노드입니다.
+
+```
+{
+  "jcr:primaryType": "rep:User",
+  "jcr:mixinTypes": [
+    "rep:AccessControllable"
+  ],
+  "surname": "Test",
+  "rep:principalName": "testUser",
+  "rep:externalId": "test;aem-saml-idp-1",
+  "rep:authorizableId": "test",
+  "rep:externalPrincipalNames": [
+    "projects-users;aem-saml-idp-1",
+    "GROUP_2;aem-saml-idp-1",
+    "GROUP_1;aem-saml-idp-1",
+    "operators;aem-saml-idp-1"
+  ],
+  ...
+}
+```
+
+### 기존 환경에 대한 동적 그룹 멤버십으로 자동 마이그레이션
+
+이 마이그레이션이 활성화되면 사용자 인증 중에 수행되며 다음 단계로 구성됩니다.
+1. 로컬 사용자는 원래 사용자 이름을 유지하면서 외부 사용자로 마이그레이션됩니다. 이는 이제 외부 사용자로 기능하는 마이그레이션된 로컬 사용자가 이전 섹션에서 언급한 명명 구문을 따르는 대신 원래 사용자 이름을 유지함을 의미합니다. 값이 `[user name];[idp]`인 속성 `rep:externalId`이(가) 한 개 더 추가됩니다. `PrincipalName` 사용자가 수정되지 않았습니다.
+2. SAML 어설션에 수신된 각 외부 그룹에 대해 외부 그룹이 생성됩니다. 해당 로컬 그룹이 존재하는 경우, 외부 그룹은 로컬 그룹에 멤버로 추가됩니다.
+3. 사용자가 외부 그룹의 구성원으로 추가됩니다.
+4. 그런 다음 로컬 사용자는 자신이 멤버로 있던 모든 Saml 로컬 그룹에서 제거됩니다. Saml 로컬 그룹은 OAK 속성으로 식별됩니다. `rep:managedByIdp`. `syncType` 특성이 지정되지 않았거나 `default`(으)로 설정된 경우 Saml Authentication 처리기에서 이 속성을 설정합니다.
+
+예를 들어 마이그레이션 `user1`이(가) 로컬 사용자이고 로컬 그룹 `group1`의 멤버인 경우 마이그레이션 후 다음 변경 사항이 발생합니다.
+`user1`이(가) 외부 사용자가 됩니다. `rep:externalId` 특성이 이 프로필에 추가되었습니다.
+`user1`이(가) 외부 그룹 `group1;idp`의 구성원이 됩니다.
+`user1`은(는) 더 이상 로컬 그룹의 직접 구성원이 아닙니다. `group1`
+`group1;idp`은(는) 로컬 그룹 `group1`의 구성원입니다.
+`user1`은(는) 상속을 통해 로컬 그룹 `group1`의 멤버입니다.
+
+외부 그룹의 그룹 구성원이 `rep:authorizableId` 특성의 사용자 프로필에 저장됩니다.
+
+### 동적 그룹 멤버십으로 자동 마이그레이션을 구성하는 방법
+
+1. SAML OSGI 구성 파일에서 `"identitySyncType": "idp_dynamic_simplified_id"` 속성을 사용하도록 설정합니다. `com.adobe.granite.auth.saml.SamlAuthenticationHandler~...cfg.json`:
+2. 다음 속성을 사용하여 PID가 `com.adobe.granite.auth.saml.migration.SamlDynamicGroupMembershipMigration~...`인 새 OSGI 서비스를 구성합니다.
+
+```
+{
+  "idpIdentifier": "<vaule of identitySyncType of saml configuration to be migrated>"
+}
+```
 
 ## SAML 구성 배포
 

@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 4903b0742dca59e621707691f487a430b91e832b
+source-git-commit: e7a85e8d072d808683580a201dd10b3a847efaaa
 workflow-type: tm+mt
-source-wordcount: '1222'
-ht-degree: 16%
+source-wordcount: '1234'
+ht-degree: 17%
 
 ---
 
@@ -107,6 +107,7 @@ ht-degree: 16%
       + [페이지 변형 캐싱](./developing/advanced/variant-caching.md)
       + [CSRF 보호](./developing/advanced/csrf-protection.md)
       + [사용자 정의 네임스페이스](./developing/advanced/custom-namespaces.md)
+      + [비밀](./developing/advanced/secrets.md)
       + [서비스 사용자](./developing/advanced/service-users.md)
       + [웹에 최적화된 이미지 API](./developing/advanced/web-optimized-image-delivery-java-apis.md)
    + 신속한 개발 환경{#rde}
@@ -283,6 +284,10 @@ ht-degree: 16%
       + [PDF/A 유틸리티](./forms/forms-cs-assembler/pdfa-utilities.md)
       + [솔루션 테스트](./forms/forms-cs-assembler/test.md)
       + [과제](./forms/forms-cs-assembler/challenge.md)
+   + Marketo과 통합{#froms-cs-with-marketo}
+      + [소개](./forms/forms-cs-with-marketo/part1.md)
+      + [데이터 Source 만들기](./forms/forms-cs-with-marketo/part2.md)
+      + [양식 데이터 모델 만들기](./forms/forms-cs-with-marketo/part3.md)
    + Blob 인덱스 태그를 사용하여 양식 제출을 저장{#store-submiited-data-with-metadata-tags}
       + [소개](./forms/store-submiited-data-with-metadata-tags/introduction.md)
       + [선택 그룹 구성 요소 확장](./forms/store-submiited-data-with-metadata-tags/extend-choice-group-components.md)

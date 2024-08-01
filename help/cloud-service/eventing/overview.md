@@ -12,9 +12,9 @@ last-substantial-update: 2023-12-07T00:00:00Z
 jira: KT-14649
 thumbnail: KT-14649.jpeg
 exl-id: 142ed6ae-1659-4849-80a3-50132b2f1a86
-source-git-commit: c0aa4049e846a0f24f8a5f5b014dbaf5bfc8eb2d
+source-git-commit: efa0a16649c41fab8309786a766483cfeab98867
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '910'
 ht-degree: 0%
 
 ---
@@ -24,10 +24,6 @@ ht-degree: 0%
 AEM 이벤트, 정의, 사용 이유 및 시기, 예제에 대해 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3426686?quality=12&learn=on)
-
->[!IMPORTANT]
->
->AEM as a Cloud Service 이벤트는 프리릴리스 모드의 등록된 사용자만 사용할 수 있습니다. AEM as a Cloud Service 환경에서 AEM 이벤트를 사용하려면 <a href="mailto:grp-aem-events@adobe.com">AEM 이벤트 팀</a>에 문의하십시오.
 
 ## 정의
 

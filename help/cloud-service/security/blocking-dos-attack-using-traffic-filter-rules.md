@@ -12,9 +12,9 @@ last-substantial-update: 2024-04-19T00:00:00Z
 jira: KT-15184
 thumbnail: KT-15184.jpeg
 exl-id: 60c2306f-3cb6-4a6e-9588-5fa71472acf7
-source-git-commit: 4111ae0cf8777ce21c224991b8b1c66fb01041b3
+source-git-commit: 1b493d85303e539e07ba8b080ed55ef2af18bfcb
 workflow-type: tm+mt
-source-wordcount: '1968'
+source-wordcount: '1947'
 ht-degree: 1%
 
 ---
@@ -42,10 +42,6 @@ AEM 웹 사이트의 기본 DDoS 보호에 대해 알아보겠습니다.
 - &quot;경고 작업&quot;을 통해 속도 제한 트래픽 필터 규칙에 대한 **경고**&#x200B;를 구성하면 규칙이 트리거될 때 작업 센터 알림이 전송됩니다.
 - 쿼리 매개 변수를 무시하도록 **요청 변환**&#x200B;을 선언하여 캐시 범위를 늘리십시오.
 
->[!NOTE]
->
->[트래픽 필터 규칙 경고](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#traffic-filter-rules-alerts) 기능이 아직 릴리스되지 않았습니다. 얼리 어답터 프로그램을 통해 액세스 권한을 얻으려면 **<aemcs-waf-adopter@adobe.com>**(으)로 전자 메일을 보내십시오.
-
 ### 비율 제한 트래픽 규칙 변형 {#rate-limit-variations}
 
 비율 제한 트래픽 규칙에는 두 가지 변형이 있습니다.
@@ -72,7 +68,6 @@ AEM 웹 사이트의 기본 DDoS 보호에 대해 알아보겠습니다.
 프로덕션으로 시작하기 전에 규칙을 구성하는 것이 좋습니다. 실제로 많은 조직은 공격 가능성을 나타내는 트래픽 스파이크에 대해 한 번만 규칙을 반응적으로 선언합니다.
 
 Adobe은 지정된 PoP에 대해 단일 IP 주소의 기본 트래픽 임계값을 초과하는 경우 원본 경고에서 [작업 센터 알림](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/actions-center)(으)로 트래픽 스파이크를 보냅니다. 이러한 경고를 받은 경우 비율 제한 트래픽 필터 규칙을 구성하는 것이 좋습니다. 이 기본 경고는 향후 섹션에서 살펴볼 트래픽 필터 규칙을 정의할 때 고객이 명시적으로 활성화해야 하는 경고와 다릅니다.
-
 
 ## 트래픽 패턴 분석 {#analyze-traffic}
 
