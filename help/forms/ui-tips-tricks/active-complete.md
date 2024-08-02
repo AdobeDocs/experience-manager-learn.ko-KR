@@ -11,10 +11,10 @@ jira: KT-9359
 exl-id: f7c1f991-0486-4355-8502-cd5b038537e3
 last-substantial-update: 2019-07-07T00:00:00Z
 duration: 68
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 364d055b7b2e4f273f906c66328fc14f95321611
 workflow-type: tm+mt
 source-wordcount: '328'
-ht-degree: 14%
+ht-degree: 21%
 
 ---
 
@@ -38,14 +38,15 @@ ht-degree: 14%
 ![navigation-tab](assets/navigation-tab.png)
 
 아래 표시된 대로 기본 상태에 대한 CSS 속성을 설정합니다
-| 범주 | 속성 이름  |  속성 값 |
-|:—|:—|:—|
+
+| 범주 | 속성 이름 | 속성 값 |
+|:---|:---|:---|
 | Dimension 및 위치 | 폭 | 50픽셀 |
-| 텍스트 | 글꼴 두께| 굵게 |
+| 텍스트 | 글꼴 두께 | 볼드체 |
 | 텍스트 | 색상 | #FFF |
-|텍스트 | 라인 높이| 3 |
-|텍스트  | 텍스트 정렬 | 왼쪽 |
-|배경| 색상 | #056dae |
+| 텍스트 | 선 높이 | 3 |
+| 텍스트 | 텍스트 맞춤 | 왼쪽 |
+| 배경 | 색상 | #056dae |
 
 변경 사항 저장
 

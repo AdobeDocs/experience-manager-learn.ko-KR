@@ -9,10 +9,10 @@ version: Cloud Service
 topic: Integrations
 exl-id: 7b2b1e1c-820f-4387-a78b-5d889c31eec0
 duration: 25
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 364d055b7b2e4f273f906c66328fc14f95321611
 workflow-type: tm+mt
 source-wordcount: '150'
-ht-degree: 4%
+ht-degree: 8%
 
 ---
 
@@ -26,9 +26,10 @@ ht-degree: 4%
 | sling:resourceType | 문자열 | azureportalpagecomponent/component/page/storeandfetch |
 
 /conf/AzurePortalStorage/settings/wcm/templates/storeandrestorermazure/structure/jcr:content 노드로 이동하여 다음 속성을 추가하고 변경 사항을 저장합니다.
-| **속성 이름**  | **속성 유형** | **속성 값**                                    |
--------------------- --------------------------------------------------------------------------
-| sling:resourceType | 문자열            | azureportalpagecomponent/component/page/storeandfetch |
+
+| **속성 이름** | **속성 유형** | **속성 값** |
+|--------------------|-------------------|-------------------------------------------------------|
+| sling:resourceType | 문자열 | azureportalpagecomponent/component/page/storeandfetch |
 
 
 ## 다음 단계
