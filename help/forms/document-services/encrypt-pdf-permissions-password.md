@@ -9,7 +9,7 @@ level: Intermediate
 jira: KT-15849
 last-substantial-update: 2024-07-19T00:00:00Z
 exl-id: 5df8581c-a44c-449c-bf3b-8cdf57635c4d
-source-git-commit: b823f9e294c42ba258049a942816f9a154a6e1a6
+source-git-commit: d01a56cd1fd3085b0230918b15b4635ba375e346
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # 권한 암호로 PDF 암호화
 
-PDF 문서를 복사, 편집 또는 인쇄하려면 소유자 또는 마스터 암호라고도 하는 권한 암호가 필요합니다. [DocAssuranceService](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/fd/docassurance/client/api/DocAssuranceService.html) API를 사용하여 프로그래밍 방식으로 PDF에 권한 암호를 적용하는 방법에 대해 알아봅니다
+PDF 문서를 복사, 편집 또는 인쇄하려면 소유자 또는 마스터 암호라고도 하는 권한 암호가 필요합니다. [DocAssuranceService](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/fd/docassurance/client/api/DocAssuranceService.html) API를 사용하여 프로그래밍 방식으로 PDF에 권한 암호를 적용하는 방법에 대해 알아봅니다.
 
 다음 JSP 코드는 권한 암호로 PDF을 암호화합니다.
 
