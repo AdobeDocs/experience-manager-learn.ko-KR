@@ -11,9 +11,9 @@ thumbnail: KT-11862.png
 last-substantial-update: 2023-02-15T00:00:00Z
 exl-id: 1d1bcb18-06cd-46fc-be2a-7a3627c1e2b2
 duration: 792
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 60139d8531d65225fa1aa957f6897a6688033040
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '687'
 ht-degree: 0%
 
 ---
@@ -49,17 +49,19 @@ $ mvn clean package
 
 ## AEM-RDE 플러그인을 사용하여 AEM 아티팩트 배포
 
-`aem:rde:install` 명령을 사용하여 다양한 AEM 아티팩트를 배포해 보겠습니다.
+먼저 [최신 `aio` CLI 모듈이 설치되어 있는지 확인합니다](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools#aio-cli).
+
+그런 다음 `aio aem:rde:install` 명령을 사용하여 다양한 AEM 아티팩트를 배포합니다. 이제 다음을 수행해야 합니다
 
 ### `all` 및 `dispatcher` 패키지 배포
 
 일반적인 시작 지점은 먼저 다음 명령을 실행하여 `all` 및 `dispatcher` 패키지를 배포하는 것입니다.
 
 ```shell
-# Install the 'all' package
+# Install the 'all' content package (zip file)
 $ aio aem:rde:install all/target/aem-guides-wknd.all-2.1.3-SNAPSHOT.zip
 
-# Install the 'dispatcher' zip
+# Install the 'dispatcher' deployment artifact (zip file)
 $ aio aem:rde:install dispatcher/target/aem-guides-wknd.dispatcher.cloud-2.1.3-SNAPSHOT.zip
 ```
 
@@ -94,12 +96,13 @@ $ aio aem:rde:install dispatcher/target/aem-guides-wknd.dispatcher.cloud-2.1.3-S
    ...
    ```
 
-1. Maven 빌드를 수행하거나 개별 파일을 동기화하여 로컬 AEM-SDK에서 변경 사항을 확인합니다.
+1. Maven 빌드를 수행하거나 개별 파일을 동기화하여 로컬 AEM SDK에서 변경 사항을 확인합니다.
 
 1. `ui.apps` 패키지를 통해 또는 개별 대화 상자 및 HTL 파일을 배포하여 변경 내용을 RDE에 배포합니다.
 
    ```shell
    # Using 'ui.apps' package
+   
    $ cd ui.apps
    $ mvn clean package
    $ aio aem:rde:install target/aem-guides-wknd.ui.apps-2.1.3-SNAPSHOT.zip

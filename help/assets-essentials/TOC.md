@@ -8,10 +8,10 @@ version: Cloud Service
 feature-set: Experience Manager Assets
 feature: Assets Essentials
 team: TM
-source-git-commit: a5eb7cb6ba9b806a57a27ad1a0e01609af713656
+source-git-commit: 27d4b552d270d92d032384aea0a0f4798d5eca8c
 workflow-type: tm+mt
-source-wordcount: '68'
-ht-degree: 25%
+source-wordcount: '69'
+ht-degree: 26%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 25%
    + [바로 가기](basics/quick-access.md)
    + [공동 작업](basics/collaborating.md)
    + [링크 공유](basics/link-sharing.md)
-
+   + [보고서](basics/reports.md)
 + {#configuring} 구성 중
    + [내 작업 영역](configuring/my-workspace.md)
    + [메타데이터 양식](configuring/metadata-forms.md)
