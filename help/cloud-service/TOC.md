@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: e7a85e8d072d808683580a201dd10b3a847efaaa
+source-git-commit: 13657903c37b90c6d854dcba317dc1801d869de0
 workflow-type: tm+mt
-source-wordcount: '1234'
-ht-degree: 17%
+source-wordcount: '1254'
+ht-degree: 16%
 
 ---
 
@@ -45,7 +45,6 @@ ht-degree: 17%
    + [CI/CD 프로덕션 파이프라인](./cloud-manager/cicd-production-pipeline.md)
    + [CI/CD 비프로덕션 파이프라인](./cloud-manager/cicd-non-production-pipeline.md)
    + [활동](./cloud-manager/activity.md)
-   + [사용자 정의 도메인 이름](./cloud-manager/custom-domain-names.md)
    + 개발 작업 {#devops}
       + [코드 배포](./cloud-manager/devops/deploy-code.md)
       + [프로젝트 병합](./cloud-manager/devops/merge-projects.md)
@@ -107,6 +106,7 @@ ht-degree: 17%
       + [페이지 변형 캐싱](./developing/advanced/variant-caching.md)
       + [CSRF 보호](./developing/advanced/csrf-protection.md)
       + [사용자 정의 네임스페이스](./developing/advanced/custom-namespaces.md)
+      + [HTL에서 Sling 모델 매개 변수화](./developing/advanced/sling-model-parameters.md)
       + [비밀](./developing/advanced/secrets.md)
       + [서비스 사용자](./developing/advanced/service-users.md)
       + [웹에 최적화된 이미지 API](./developing/advanced/web-optimized-image-delivery-java-apis.md)
@@ -138,6 +138,10 @@ ht-degree: 17%
       + 위험{#risks}
          + [순회 경고](./debugging/cloud-service/risks/traversals.md)
 + 컨텐츠 전달{#content-delivery}
+   + [사용자 정의 도메인 이름](./content-delivery/custom-domain-names.md)
+   + [Adobe 관리 CDN을 사용한 사용자 정의 도메인 이름](./content-delivery/custom-domain-name-with-adobe-managed-cdn.md)
+   + [고객 CDN을 사용한 사용자 정의 도메인 이름](./content-delivery/custom-domain-names-with-customer-managed-cdn.md)
+   + [캐싱](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/overview){target=_blank}
    + [URL 리디렉션](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/url-redirection.html){target=_blank}
 + 캐싱{#caching}
    + [개요](./caching/overview.md)
