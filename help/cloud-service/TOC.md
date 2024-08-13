@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 13657903c37b90c6d854dcba317dc1801d869de0
+source-git-commit: 07225f1ae4455e2fa69c8e488851361c725fe9e8
 workflow-type: tm+mt
-source-wordcount: '1254'
+source-wordcount: '1258'
 ht-degree: 16%
 
 ---
@@ -45,6 +45,7 @@ ht-degree: 16%
    + [CI/CD 프로덕션 파이프라인](./cloud-manager/cicd-production-pipeline.md)
    + [CI/CD 비프로덕션 파이프라인](./cloud-manager/cicd-non-production-pipeline.md)
    + [활동](./cloud-manager/activity.md)
+   + [사용자 지정 도메인 이름](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names){target=_blank}
    + 개발 작업 {#devops}
       + [코드 배포](./cloud-manager/devops/deploy-code.md)
       + [프로젝트 병합](./cloud-manager/devops/merge-projects.md)
