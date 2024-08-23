@@ -1,6 +1,6 @@
 ---
 title: Adobe CDN - 캐싱을 넘어선 고급 기능
-description: CDN에서 트래픽 구성, CDN 오류 페이지 등과 같은 캐싱을 넘어선 Adobe CDN의 고급 기능에 대해 알아봅니다.
+description: CDN에서 트래픽 구성, 토큰 및 자격 증명 설정, CDN 오류 페이지 등과 같은 캐싱을 넘어 Adobe CDN의 고급 기능에 대해 알아봅니다.
 version: Cloud Service
 feature: Website Performance, CDN Cache
 topic: Architecture, Performance, Content Management
@@ -11,9 +11,9 @@ duration: 0
 last-substantial-update: 2024-08-21T00:00:00Z
 jira: KT-15123
 thumbnail: KT-15123.jpeg
-source-git-commit: cc7fa9bbaa775b0216c839be079504c2b5467878
+source-git-commit: 10f9ca66a1669e1207237128469852ec7514d110
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Adobe CDN - 캐싱을 넘어선 고급 기능
 
-CDN에서 트래픽 구성, CDN 오류 페이지 등과 같은 캐싱을 넘어선 Adobe CDN의 고급 기능에 대해 알아봅니다.
+CDN(Adobe Content Delivery Network)에서 트래픽 구성, 토큰 및 자격 증명 설정, CDN 오류 페이지 등과 같은 캐싱을 넘어선 CDN의 고급 기능에 대해 알아봅니다.
 
 Adobe CDN은 콘텐츠 캐싱 외에 웹 사이트 성능을 최적화하는 데 도움이 되는 몇 가지 고급 기능을 제공합니다. 이러한 기능에는 다음이 포함됩니다.
 
@@ -50,8 +50,7 @@ _CDN 자격 증명 및 인증 구성_&#x200B;과 관련된 주요 기능에 대�
 
 - **API 토큰 제거**: 캐시에서 단일 또는 그룹 또는 모든 리소스를 제거하기 위한 고유한 제거 키를 만들 수 있습니다.
 - **기본 인증**: 웹 사이트 또는 웹 사이트의 일부에 대한 액세스를 제한하려는 경우 간단한 인증 메커니즘입니다. 주로 라이브로 전환되기 전에 다양한 검토 프로세스의 일부로 필요합니다.
-- **HTTP 헤더 유효성 검사**: 고객 관리 CDN이 트래픽을 Adobe CDN으로 라우팅하는 경우 사용됩니다. Adobe CDN이 `X-AEM-Edge-Key` 헤더 값을 기반으로 들어오는 요청의 유효성을 검사합니다.
-`X-AEM-Edge-Key` 헤더에 대해 고유한 값을 만들 수 있습니다.
+- **HTTP 헤더 유효성 검사**: 고객 관리 CDN이 트래픽을 Adobe CDN으로 라우팅하는 경우 사용됩니다. Adobe CDN이 `X-AEM-Edge-Key` 헤더 값을 기반으로 들어오는 요청의 유효성을 검사합니다. `X-AEM-Edge-Key` 헤더에 대해 고유한 값을 만들 수 있습니다.
 
 ## CDN 오류 페이지
 
@@ -87,7 +86,7 @@ data:
           location: /us/en/top3.html
 ```
 
-## 추가 리소스
+## 관련 Tutorials
 
 [트래픽 필터 규칙으로 웹 사이트 보호](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview)
 
@@ -100,7 +99,3 @@ data:
 [CDN 자격 증명 및 인증 구성](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication)
 
 [CDN 오류 페이지 구성](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages)
-
-
-
-
