@@ -4,10 +4,10 @@ breadcrumb-title: AEM Foundation 튜토리얼
 user-guide-description: Adobe Experience Manager Foundation에 대한 비디오 및 튜토리얼 모음입니다.
 sub-product: Experience Manager
 index: y
-source-git-commit: a504ace72b1b90c6e7c711a939595b95f24733e6
+source-git-commit: 1e1a33986e202ce2af9cf2d03eca7895514465df
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 14%
+source-wordcount: '241'
+ht-degree: 13%
 
 ---
 
@@ -15,6 +15,7 @@ ht-degree: 14%
 # AEM Foundation 비디오 및 튜토리얼 {#foundation}
 
 + [개요](./overview.md)
++ [POC](./poc.md)
 + 관리 {#administration}
    + [AEM을 업그레이드해야 하는 이유 이해하기](./administration/understand-reasons-to-upgrade.md)
    + [oak-run.jar를 사용하여 인덱스 관리](./administration/use-oak-run-jar-to-manage-indexes.md)
@@ -26,6 +27,7 @@ ht-degree: 14%
    + [OAuth 범위](authentication/oauth-code-sample-develop.md)
    + [인증 이해](authentication/authentication-support-article-understand.md)
    + [AMS의 IMS 인증 이해](authentication/adobe-ims-authentication-technical-video-understand.md)
+   + [JWT에서 OAuth로 자격 증명 마이그레이션](authentication/jwt-to-oauth-migration.md)
 + Adobe Cloud Manager{#cloud-manager}
    + [Cloud Manager Adobe 이해](./cloud-manager/understand-cloud-manager-for-aem.md)
    + [CI/CD 파이프라인](./cloud-manager/use-the-cicd-pipeline-in-cloud-manager-for-aem.md)
@@ -48,6 +50,7 @@ ht-degree: 14%
    + [ModSecurity CRS DoS 공격 방지](./security/modsecurity-crs-dos-attack-protection.md)
    + [개인 인증서가 있는 API에 대한 HTTPS 연결](./security/call-internal-apis-having-private-certificate.md)
    + [AEM의 상호 TLS(mTLS) 인증](./security/mutual-tls-authentication.md)
+   + [JWT에서 OAuth로의 자격 증명 마이그레이션](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/authentication/jwt-to-oauth-migration){target=_blank}
 + 워크플로 {#workflow}
    + [워크플로우 편집기 사용](./workflow/use-the-workflow-editor.md)
    + [워크플로우 사용](./workflow/use-workflow.md)
