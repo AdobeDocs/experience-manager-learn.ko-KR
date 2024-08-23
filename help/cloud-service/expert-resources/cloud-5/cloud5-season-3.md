@@ -6,9 +6,9 @@ solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 3bd7b9f5-5775-4572-8b4a-4d09619e20b9
 duration: 74
-source-git-commit: cbba149b23b4d8ecad35f263dc282a3da481fc9f
+source-git-commit: 7ef37a71f1daefee484478c3194907d5ce918af4
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '445'
 ht-degree: 0%
 
 ---
@@ -174,6 +174,21 @@ AEM Engineering의 시즌 3의 클라우드 5 시리즈에 오신 것을 환영�
                 <br/>                
                  Edge Delivery Services이 있는 범용 편집기 및 AEM에 대해 알아봅니다.
             </p>
-        </td>                    
+        </td>
+        <td>
+            <a href="./season-3/cloud5-import-sites-to-edge-delivery-services.md">
+                <img alt="Edge Delivery Services을 사용하여 AEM Sites으로 사이트 가져오기" 
+                     src="https://video.tv.adobe.com/v/3431603?format=jpeg"/>
+            </a>
+            <div>
+                <a href="./season-3/cloud5-import-sites-to-edge-delivery-services.md">
+                <strong>사이트 가져오기</strong></a>        
+                <br/><em>James Talbot 및 Varun Mitra, 클라우드 아키텍트와 함께</em>
+            </div>
+            <p>
+                <br/>                
+                 Edge Delivery Services을 사용하여 AEM Sites으로 사이트를 가져오는 방법에 대해 알아봅니다.
+            </p>
+        </td>
     </tr>      
 </table>

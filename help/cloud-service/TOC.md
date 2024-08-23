@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 07225f1ae4455e2fa69c8e488851361c725fe9e8
+source-git-commit: 7ef37a71f1daefee484478c3194907d5ce918af4
 workflow-type: tm+mt
-source-wordcount: '1258'
+source-wordcount: '1275'
 ht-degree: 16%
 
 ---
@@ -151,7 +151,8 @@ ht-degree: 16%
    + [CDN 캐시 적중률 분석](./caching/cdn-cache-hit-ratio-analysis.md)
    + {#how-to}하는 방법
       + [캐싱 활성화](./caching/how-to/enable-caching.md)
-      + [캐싱 사용 안 함](./caching/how-to/disable-caching.md)
+      + [캐싱 비활성화](./caching/how-to/disable-caching.md)
+      + [캐시 제거](./caching/how-to/purge-cache.md)
 + AEM{#accessing}에 액세스
    + [개요](./accessing/overview.md)
    + [Adobe IMS 사용자](./accessing/adobe-ims-users.md)
@@ -259,6 +260,10 @@ ht-degree: 16%
       + [2 - 설정](./forms/create-address-block-component/set-up.md)
       + [3 - 구성 요소 만들기](./forms/create-address-block-component/creating-address-component.md)
       + [4 - 구성 요소 배포](./forms/create-address-block-component/deploy-your-project.md)
+   + 클릭 가능한 이미지 구성 요소 만들기{#clickable-image-component}
+      + [1 - 소개](./forms/clickable-image-component/introduction.md)
+      + [2 - 구성 요소 만들기](./forms/clickable-image-component/create-component.md)
+      + [3 - 클릭 이벤트 처리](./forms/clickable-image-component/handle-click-event.md)
    + AEM Forms 및 Analytics{#forms-and-analytics}
       + [소개](./forms/form-data-analytics/introduction.md)
       + [데이터 요소 만들기](./forms/form-data-analytics/data-elements.md)
@@ -421,3 +426,4 @@ ht-degree: 16%
          + [AEM Assets 통합](./expert-resources/cloud-5/season-3/cloud5-integrate-assets.md)
          + [AEM Sites용 생성 AI](./expert-resources/cloud-5/season-3/cloud5-generative-ai-for-aem-sites.md)
          + [유니버설 편집기 살펴보기](./expert-resources/cloud-5/season-3/cloud5-exploring-universal-editor.md)
+         + [사이트 가져오기](./expert-resources/cloud-5/season-3/cloud5-import-sites-to-edge-delivery-services.md)

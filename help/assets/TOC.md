@@ -7,10 +7,10 @@ sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: f344f6c2fdf763a55c18a0db9625ccbe408919e2
+source-git-commit: 3eb4ed310e08f9dd8a527fdb7c42062b285db84e
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 18%
+source-wordcount: '417'
+ht-degree: 17%
 
 ---
 
@@ -62,6 +62,7 @@ ht-degree: 18%
    + [아카이브 추출](./advanced/extract-archive.md)
    + [권한(CUG)](./advanced/closed-user-groups.md)
    + [메타데이터 기반 권한](./advanced/metadata-driven-permissions.md)
+   + [비디오 자막](./advanced/video-closed-captions.md)
    + [워터마크](./advanced/watermarks.md)
 
 + 고급 메타데이터 관리{#metadata}
@@ -73,6 +74,9 @@ ht-degree: 18%
 
 + Edge Delivery Services{#edge-delivery-services}
    + [Sidekick 플러그인](./edge-delivery-services/sidekick-plugin.md)
+
++ Content Hub{#content-hub}
+   + [Assets 및 승인 프로세스 업로드](./content-hub/uploading-assets-and-approval-process.md)
 
 + 공유 및 배포{#sharing}
    + [Assets 다운로드](./sharing/download.md)
