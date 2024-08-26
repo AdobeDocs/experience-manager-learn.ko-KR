@@ -12,9 +12,9 @@ last-substantial-update: 2024-08-12T00:00:00Z
 jira: KT-15121
 thumbnail: KT-15121.jpeg
 exl-id: 8936c3ae-2daf-4d0f-b260-28376ae28087
-source-git-commit: 07225f1ae4455e2fa69c8e488851361c725fe9e8
+source-git-commit: f92e66d6edc929bff1e8cae6adb7f408352aeb77
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '726'
 ht-degree: 0%
 
 ---
@@ -150,7 +150,7 @@ _aemverification.wknd.enablementadobe.com. 3600    IN TXT "adobe-aem-verificatio
 
 사용자 지정 도메인 이름을 사용하여 사이트에 액세스할 수 있는지 확인하려면 웹 브라우저를 열고 사용자 지정 도메인 URL로 이동합니다. 사이트에 액세스할 수 있고 브라우저에 자물쇠 아이콘과의 보안 연결이 표시되어 있는지 확인하십시오.
 
-## 비디오 전체
+## 엔드투엔드 비디오
 
 AEM as a Cloud Service 호스팅 사이트에 사용자 정의 도메인 이름을 추가하기 위한 개요, 사전 요구 사항 및 위 단계를 설명하는 엔드 투 엔드 비디오를 시청할 수도 있습니다.
 
