@@ -9,9 +9,9 @@ level: Experienced
 exl-id: ea433667-81db-40f7-870d-b16630128871
 last-substantial-update: 2020-07-07T00:00:00Z
 duration: 129
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: f3f5c4c4349c8d02c88e1cf91dbf18f58db1e67e
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '357'
 ht-degree: 0%
 
 ---
@@ -196,10 +196,18 @@ public class GetReaderExtendedPDF extends SlingAllMethodsServlet {
 
 로컬 서버에서 테스트하려면 다음 단계를 따르십시오.
 1. [DevelopingWithServiceUser 번들 다운로드 및 설치](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-1. [ares.ares.core-ares 번들 다운로드 및 설치](assets/ares.ares.core-ares.jar). 여기에 사용자 정의 서비스와 서블릿이 있어 사용 권한을 적용하고 pdf를 다시 스트리밍합니다
+
+1. 아래 표시된 대로 configMgr 콘솔을 사용하여 Apache Sling 사용자 매퍼 서비스에 다음 항목을 추가합니다
+
+```
+       DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
+```
+
+![user-mapper](assets/user-mapper-service.PNG)
+1. [ares.ares.core-ares 번들 다운로드 및 설치](assets/ares.ares.core-ares.jar). 여기에 사용자 정의 서비스와 서블릿이 있어 사용 권한을 적용하고 pdf를 다시 스트리밍할 수 있습니다.
 1. [클라이언트 라이브러리 가져오기 및 사용자 정의 제출](assets/applyaresdemo.zip)
 1. [적응형 양식 가져오기](assets/applyaresform.zip)
-1. &quot;fd-service&quot; 사용자에게 Reader 확장 인증서를 추가합니다. 별칭이 &quot;ares&quot;인지 확인합니다.
+1. &quot;fd-service&quot; 사용자에게 Reader 확장 인증서를 추가합니다. 별칭이 &quot;**ares**&quot;인지 확인하십시오.
 1. [적응형 양식 미리 보기](http://localhost:4502/content/dam/formsanddocuments/applyreaderextensions/jcr:content?wcmmode=disabled)
 1. 적절한 권한을 선택하고 PDF 파일을 업로드하십시오
 1. 제출 을 클릭하여 Reader 확장 PDF을 가져옵니다
