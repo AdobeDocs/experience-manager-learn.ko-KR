@@ -11,9 +11,9 @@ duration: 0
 last-substantial-update: 2024-08-21T00:00:00Z
 jira: KT-15123
 thumbnail: KT-15123.jpeg
-source-git-commit: 10f9ca66a1669e1207237128469852ec7514d110
+source-git-commit: 65e77a329226ca7c7ccb1e583d2a045074feeb3d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '546'
 ht-degree: 0%
 
 ---
@@ -31,12 +31,13 @@ Adobe CDN은 콘텐츠 캐싱 외에 웹 사이트 성능을 최적화하는 데
 
 이러한 기능은 **셀프 서비스** 기능입니다. AEM 프로젝트의 `cdn.yaml` 파일에서 구성되고 Cloud Manager 구성 파이프라인을 사용하여 배포됩니다.
 
+>[!VIDEO](https://video.tv.adobe.com/v/3433104?quality=12&learn=on)
+
 ## CDN에서 트래픽 구성
 
 _CDN에서 트래픽 구성_&#x200B;과 관련된 주요 기능에 대해 알아보겠습니다.
 
-- **DoS 공격 방지:** Adobe CDN이 네트워크에서 DoS 공격을 흡수합니다.
-레이어를 추가하여 원본 서버에 도달하지 못하도록 합니다.
+- **DoS 공격 방지:** Adobe CDN은 네트워크 계층에서 DoS 공격을 흡수하여 원본 서버에 도달하지 못하도록 합니다.
 - **속도 제한:** 원본 서버에 너무 많은 요청이 포함되는 것을 방지하기 위해 CDN에서 속도 제한을 구성할 수 있습니다.
 - **웹 응용 프로그램 방화벽(WAF):** WAF은 SQL 삽입, 사이트 간 스크립팅 등과 같은 일반적인 웹 응용 프로그램 취약점으로부터 웹 사이트를 보호합니다. 이 기능을 사용하려면 Enhanced Security 라이센스 또는 WAF-DDoS Protection 라이센스가 필요합니다.
 - **요청 변환:** 헤더 설정 또는 설정 해제, 쿼리 매개 변수, 쿠키 수정 등과 같은 수신 요청을 수정합니다.
