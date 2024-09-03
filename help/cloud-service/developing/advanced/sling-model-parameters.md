@@ -7,13 +7,13 @@ feature: Sling Model
 role: Developer
 jira: KT-15923
 level: Intermediate, Experienced
-source-git-commit: f45d04b489771b9d3613cb4ce5e7b94d531ac783
+exl-id: 5d852617-720a-4a00-aecd-26d0ab77d9b3
+source-git-commit: ba744f95f8d1f0b982cd5430860f0cb0945a4cda
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 0%
 
 ---
-
 
 # HTL에서 Sling 모델 매개 변수화
 
@@ -127,4 +127,3 @@ public interface ParameterizedModel {
 ```
 
 이는 AEM의 매개 변수가 있는 Sling 모델이 HTL을 통해 제공되는 입력 매개 변수를 기반으로 영향을 받는 방법을 보여 줍니다.
-

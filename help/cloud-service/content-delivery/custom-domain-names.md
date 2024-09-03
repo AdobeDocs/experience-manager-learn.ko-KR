@@ -11,7 +11,8 @@ duration: 130
 last-substantial-update: 2024-08-09T00:00:00Z
 jira: KT-15946
 thumbnail: KT-15946.jpeg
-source-git-commit: 07225f1ae4455e2fa69c8e488851361c725fe9e8
+exl-id: e11ff38c-e823-4631-a5b0-976c2d11353e
+source-git-commit: ba744f95f8d1f0b982cd5430860f0cb0945a4cda
 workflow-type: tm+mt
 source-wordcount: '600'
 ht-degree: 1%
@@ -83,4 +84,3 @@ Adobe 관리 CDN 또는 고객 관리 CDN을 사용하여 도메인 이름을 �
 
 **[Adobe 관리 CDN을 사용하는 사용자 지정 도메인 이름](./custom-domain-name-with-adobe-managed-cdn.md)**: 이 자습서에서는 Adobe 관리 CDN을 사용하는 **AEM as a Cloud Service 웹 사이트에 사용자 지정 도메인 이름을 추가하는 방법**을 배웁니다.
 **[고객 관리 CDN을 사용한 사용자 지정 도메인 이름](./custom-domain-names-with-customer-managed-cdn.md)**: 이 자습서에서는 고객 관리 CDN을 사용한 **AEM as a Cloud Service 웹 사이트에 사용자 지정 도메인 이름을 추가하는 방법**&#x200B;을 배웁니다.
-

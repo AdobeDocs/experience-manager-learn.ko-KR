@@ -8,9 +8,9 @@ breadcrumb-title: AEM Forms 튜토리얼
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: d440662bcfbc8fdea8c1b0e8af7f653b1f8667f9
+source-git-commit: 9545fae5a5f5edd6f525729e648b2ca34ddbfd9f
 workflow-type: tm+mt
-source-wordcount: '2086'
+source-wordcount: '2089'
 ht-degree: 2%
 
 ---
@@ -75,7 +75,7 @@ ht-degree: 2%
    + [GeoLocation API 사용](adaptive-forms/using-geolocation-api-in-aem-forms-article.md)
    + [거래 보고 사용](adaptive-forms/transaction-reporting-aem-forms-article-use.md)
    + [AEM Forms의 사용자 프로필 데이터 통합](adaptive-forms/user-profile-data-integration-feature-video-use.md)
-   + [AEM Forms을 사용한 Microsoft Dynamics](adaptive-forms/using-ms-dynamics-with-aem-forms.md)
+   + [Microsoft Dynamics와 AEM Forms](adaptive-forms/using-ms-dynamics-with-aem-forms.md)
    + [규칙 편집기 개선 사항](adaptive-forms/rule-editor-improvements-feature-video-use.md)
    + [규칙 편집기에 대한 액세스 제한](adaptive-forms/restricting-rule-editor-aem-forms-technical-video-use.md)
    + [테마 편집기 개선 사항](adaptive-forms/theme-editor-improvements-feature-video-use.md)
@@ -104,7 +104,7 @@ ht-degree: 2%
    + [재사용 가능한 워크플로우 모델 생성](adaptive-forms/re-usable-aem-forms-workflow-models-article.md)
    + [사용자 지정 프로세스 단계 AEM 워크플로](adaptive-forms/custom-process-step-aem-workflow.md)
    + [HTML5 Forms 미리 채우기](adaptive-forms/prepopulating-html5-forms-in-aem-forms-article.md)
-   + [Salesforce를 사용한 양식 데이터 모델](adaptive-forms/using-adaptive-forms-with-sales-force-integration-tutorial.md)
+   + [Salesforce을 사용한 양식 데이터 모델](adaptive-forms/using-adaptive-forms-with-sales-force-integration-tutorial.md)
    + [Choice 구성 요소에 동적으로 항목 추가](adaptive-forms/choice-group-items-adding-dynamically-article.md)
 + ChatBot{#chatbot-and-aem-forms}(으)로 PDF 양식 채우기
    + [1 - 소개](chatbot-and-aem-forms/introduction.md)
@@ -224,10 +224,11 @@ ht-degree: 2%
    + [샘플 자산 배포](storing-retrieving-form-data/part6.md)
 + 모바일 양식 제출에서 AEM 워크플로우 트리거{#offline-mobile-form-submission}
    + [소개](offline-mobile-form-submission/introduction.md)
-   + [사용자 지정 프로필](offline-mobile-form-submission/part-one.md)
-   + [PDF 제출 처리](offline-mobile-form-submission/part-two.md)
-   + [검토할 워크플로우 PDF](offline-mobile-form-submission/part-three.md)
-   + [시스템에 배포](offline-mobile-form-submission/part-four.md)
+   + [사용자 지정 프로필](offline-mobile-form-submission/custom-profile.md)
+   + [양식 제출 처리](offline-mobile-form-submission/handle-form-submission.md)
+   + [제출된 데이터 저장](offline-mobile-form-submission/author-servlet.md)
+   + [검토할 워크플로우 PDF](offline-mobile-form-submission/review-workflow.md)
+   + [시스템에 배포](offline-mobile-form-submission/deploy-assets.md)
 + 양식 제출 쿼리{#query-form-submissions}
    + [소개](query-form-submissions/introduction.md)
    + [검색 가능한 필드 만들기](query-form-submissions/part1.md)
