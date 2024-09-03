@@ -12,9 +12,9 @@ last-substantial-update: 2024-08-13T00:00:00Z
 jira: KT-15963
 thumbnail: KT-15963.jpeg
 exl-id: 5d81f6ee-a7df-470f-84b9-12374c878a1b
-source-git-commit: ba744f95f8d1f0b982cd5430860f0cb0945a4cda
+source-git-commit: 0639217a3bab7799eec3bbcc40c1a69ed1b12682
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '924'
 ht-degree: 0%
 
 ---
@@ -68,6 +68,8 @@ data:
            type: authenticate # The type of the action, must be authenticate
            authenticator: purge-auth # The name of the authenticator to be used, must match the name from the above authenticators list               
 ```
+
+위의 규칙에서 `purgeKey1`과(와) `purgeKey2`은(는) 중단 없이 암호 회전을 지원하기 위해 처음부터 추가됩니다. 그러나 `purgeKey1`로만 시작하여 나중에 암호를 회전할 때 `purgeKey2`을(를) 추가할 수 있습니다.
 
 1. 변경 사항을 저장하고, 커밋하고, Adobe 업스트림 저장소에 푸시합니다.
 
