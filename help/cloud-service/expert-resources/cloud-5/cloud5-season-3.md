@@ -6,9 +6,9 @@ solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 3bd7b9f5-5775-4572-8b4a-4d09619e20b9
 duration: 74
-source-git-commit: 7ef37a71f1daefee484478c3194907d5ce918af4
+source-git-commit: 177cddea03595b686ec75f129c8be7bb14e4c631
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '482'
 ht-degree: 0%
 
 ---
@@ -175,6 +175,8 @@ AEM Engineering의 시즌 3의 클라우드 5 시리즈에 오신 것을 환영�
                  Edge Delivery Services이 있는 범용 편집기 및 AEM에 대해 알아봅니다.
             </p>
         </td>
+    </tr>  
+    <tr>
         <td>
             <a href="./season-3/cloud5-import-sites-to-edge-delivery-services.md">
                 <img alt="Edge Delivery Services을 사용하여 AEM Sites으로 사이트 가져오기" 
@@ -190,5 +192,20 @@ AEM Engineering의 시즌 3의 클라우드 5 시리즈에 오신 것을 환영�
                  Edge Delivery Services을 사용하여 AEM Sites으로 사이트를 가져오는 방법에 대해 알아봅니다.
             </p>
         </td>
-    </tr>      
+        <td>
+            <a href="./season-3/cloud5-using-admin-api.md">
+                <img alt="Edge Delivery Services에 관리 API 사용" 
+                     src="https://video.tv.adobe.com/v/3433158?format=jpeg"/>
+            </a>
+            <div>
+                <a href="./season-3/cloud5-using-admin-api.md">
+                <strong>관리 API 사용</strong></a>        
+                <br/><em>James Talbot 및 Varun Mitra, 클라우드 아키텍트와 함께</em>
+            </div>
+            <p>
+                <br/>                
+                 콘텐츠 및 코드의 라이프사이클을 관리하기 위해 Edge Delivery Services에서 관리 API를 사용하는 방법에 대해 알아봅니다.
+            </p>
+        </td>    
+    </tr>    
 </table>

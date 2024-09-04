@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: f3f5c4c4349c8d02c88e1cf91dbf18f58db1e67e
+source-git-commit: 177cddea03595b686ec75f129c8be7bb14e4c631
 workflow-type: tm+mt
-source-wordcount: '1289'
+source-wordcount: '1292'
 ht-degree: 16%
 
 ---
@@ -385,7 +385,7 @@ ht-degree: 16%
 
 + 여러 단계 Tutorials{#multi-step-tutorials}
    + [AEM Sites 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR){target=_blank}
-   + [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html){target=_blank}
+   + [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ko-KR){target=_blank}
    + [SPA 편집기(React)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html){target=_blank}
    + [AEM Sites 및 Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html){target=_blank}
    + [토큰 기반 인증](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html){target=_blank}
@@ -432,3 +432,4 @@ ht-degree: 16%
          + [AEM Sites용 생성 AI](./expert-resources/cloud-5/season-3/cloud5-generative-ai-for-aem-sites.md)
          + [유니버설 편집기 살펴보기](./expert-resources/cloud-5/season-3/cloud5-exploring-universal-editor.md)
          + [사이트 가져오기](./expert-resources/cloud-5/season-3/cloud5-import-sites-to-edge-delivery-services.md)
+         + [관리 API 사용](./expert-resources/cloud-5/season-3/cloud5-using-admin-api.md)
