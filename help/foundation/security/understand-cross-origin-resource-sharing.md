@@ -10,7 +10,7 @@ role: Developer
 level: Intermediate
 exl-id: 6009d9cf-8aeb-4092-9e8c-e2e6eec46435
 duration: 240
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 6922d885c25d0864560ab3b8e38907060ff3cc70
 workflow-type: tm+mt
 source-wordcount: '1011'
 ht-degree: 1%
@@ -187,7 +187,7 @@ Dispatcher 4.1.1 이상 응답 헤더를 캐시할 수 있습니다. 이렇게 �
 
 ### CORS 요청 헤더 허용
 
-필요한 [HTTP 요청 헤더가 처리를 위해 AEM에 전달되도록](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders)하려면 Dispatcher의 `/clientheaders` 구성에서 허용되어야 합니다.
+필요한 [HTTP 요청 헤더가 처리를 위해 AEM으로 통과하도록 허용](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders)하려면 Dispatcher의 `/clientheaders` 구성에서 허용되어야 합니다.
 
 ```
 /clientheaders {
