@@ -9,9 +9,11 @@ level: Experienced
 exl-id: 58582acd-cabb-4e28-9fd3-598d3cbac43c
 last-substantial-update: 2020-01-07T00:00:00Z
 duration: 138
-source-git-commit: 9545fae5a5f5edd6f525729e648b2ca34ddbfd9f
+jira: KT-16142
+badgeVersions: label="AEM Forms 6.5" before-title="false"
+source-git-commit: 8cadbe92a7a2f47c33b0ca0fcf7313dc418ae7a4
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '498'
 ht-degree: 0%
 
 ---
@@ -128,7 +130,6 @@ public Document generateMultiplePdfs(HashMap < String, String > templateMap, Has
 서버에서 이 기능을 테스트하려면 아래 지침을 따르십시오.
 
 * [샘플 자산을 다운로드합니다](assets/mult-records-template-and-xml-file.zip).이 zip 파일에는 템플릿과 xml 데이터 파일이 들어 있습니다.
-* [가져오기]
 * [브라우저를 Felix 웹 콘솔로 지정](http://localhost:4502/system/console/bundles)
 * [DevelopingWithServiceUser 번들 배포](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar).
 * configMgr을 사용하여 Apache Sling 서비스 사용자 매퍼 서비스에 다음 항목을 추가합니다.
@@ -136,6 +137,8 @@ public Document generateMultiplePdfs(HashMap < String, String > templateMap, Has
 ```java
 DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
 ```
+
+
 
 ![user-mapper-service](assets/user-mapper-service-fd-service.png)
 
