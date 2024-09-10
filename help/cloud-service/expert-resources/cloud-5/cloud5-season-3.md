@@ -6,9 +6,9 @@ solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 3bd7b9f5-5775-4572-8b4a-4d09619e20b9
 duration: 74
-source-git-commit: 177cddea03595b686ec75f129c8be7bb14e4c631
+source-git-commit: af962fa9ede0781929e4e7cbbd6b5f00a9dfb0d9
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '511'
 ht-degree: 0%
 
 ---
@@ -206,6 +206,21 @@ AEM Engineering의 시즌 3의 클라우드 5 시리즈에 오신 것을 환영�
                 <br/>                
                  콘텐츠 및 코드의 라이프사이클을 관리하기 위해 Edge Delivery Services에서 관리 API를 사용하는 방법에 대해 알아봅니다.
             </p>
-        </td>    
+        </td>   
+        <td>
+            <a href="./season-3/cloud5-lighthouse-score-optimization.md">
+                <img alt="Lighthouse 점수 최적화" 
+                     src="https://video.tv.adobe.com/v/3433378?format=jpeg"/>
+            </a>
+            <div>
+                <a href="./season-3/cloud5-lighthouse-score-optimization.md">
+                <strong>등대 점수 최적화</strong></a>        
+                <br/><em>James Talbot 및 Varun Mitra, 클라우드 아키텍트와 함께</em>
+            </div>
+            <p>
+                <br/>                
+                 등대 점수가 무엇이며 등대 점수를 최상으로 얻을 수 있는 기술에 대해 알아봅니다.
+            </p>
+        </td>            
     </tr>    
 </table>
