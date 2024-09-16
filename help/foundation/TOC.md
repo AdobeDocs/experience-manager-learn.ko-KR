@@ -4,10 +4,10 @@ breadcrumb-title: AEM Foundation 튜토리얼
 user-guide-description: Adobe Experience Manager Foundation에 대한 비디오 및 튜토리얼 모음입니다.
 sub-product: Experience Manager
 index: y
-source-git-commit: 231ca44f9708ab0b239e4cbf363e8cf2695eedc2
+source-git-commit: 33415305f6aa183373eaef4bb4978a59325c8a32
 workflow-type: tm+mt
-source-wordcount: '240'
-ht-degree: 13%
+source-wordcount: '244'
+ht-degree: 14%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 13%
 + Adobe Cloud Manager{#cloud-manager}
    + [Cloud Manager Adobe 이해](./cloud-manager/understand-cloud-manager-for-aem.md)
    + [CI/CD 파이프라인](./cloud-manager/use-the-cicd-pipeline-in-cloud-manager-for-aem.md)
-   + [사용자 지정 권한](./cloud-manager/cloud-permissions.md)
+   + [사용자 정의 권한](./cloud-manager/cloud-permissions.md)
 + 개발 {#development}
    + [Sling 모델 내보내기 개발](./development/develop-sling-model-exporter.md)
    + [로컬 AEM 개발 환경 설정](./development/set-up-a-local-aem-development-environment.md)
@@ -38,6 +38,7 @@ ht-degree: 13%
    + [Java API 모범 사례 이해](./development/understand-java-api-best-practices.md)
    + [Sling 모델 내보내기 이해](./development/understand-sling-model-exporter.md)
    + [Oak 색인화 모범 사례 이해](./development/understand-indexing-best-practices.md)
+   + [서드파티 아티팩트 설치](./development/install-third-party-artifacts.md)
 + 프로젝트 {#projects}
    + [AEM 프로젝트 개발](./projects/develop-aem-projects.md)
    + [프로젝트 마스터 사용](./projects/use-project-masters.md)
