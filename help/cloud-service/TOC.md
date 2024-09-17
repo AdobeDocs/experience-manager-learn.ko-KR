@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: af962fa9ede0781929e4e7cbbd6b5f00a9dfb0d9
+source-git-commit: 285c652460ff00301d183defc56c07b3f74d8e5c
 workflow-type: tm+mt
-source-wordcount: '1295'
+source-wordcount: '1300'
 ht-degree: 16%
 
 ---
@@ -302,7 +302,7 @@ ht-degree: 16%
    + Marketo과 통합{#froms-cs-with-marketo}
       + [소개](./forms/forms-cs-with-marketo/part1.md)
       + [데이터 Source 만들기](./forms/forms-cs-with-marketo/part2.md)
-      + [양식 데이터 모델 만들기](./forms/forms-cs-with-marketo/part3.md)
+      + [Forms 데이터 모델 만들기](./forms/forms-cs-with-marketo/part3.md)
    + Blob 인덱스 태그를 사용하여 양식 제출을 저장{#store-submiited-data-with-metadata-tags}
       + [소개](./forms/store-submiited-data-with-metadata-tags/introduction.md)
       + [선택 그룹 구성 요소 확장](./forms/store-submiited-data-with-metadata-tags/extend-choice-group-components.md)
@@ -315,7 +315,7 @@ ht-degree: 16%
       + [솔루션 테스트](./forms/prefill-core-component-form/test-solution.md)
    + Azure 포털 저장소{#forms-cs-azure-portal}
       + [소개](./forms/forms-cs-azure-portal/introduction.md)
-      + [양식 데이터 모델 만들기](./forms/forms-cs-azure-portal/create-fdm.md)
+      + [Forms 데이터 모델 만들기](./forms/forms-cs-azure-portal/create-fdm.md)
       + [Azure Storage에 양식 데이터 저장](./forms/forms-cs-azure-portal/create-af.md)
       + [미리 채우기 양식](./forms/forms-cs-azure-portal/prefill-af-storage.md)
       + [쿼리 제출](./forms/forms-cs-azure-portal/query-submitted-data.md)
@@ -346,7 +346,7 @@ ht-degree: 16%
    + Microsoft Dynamics와 통합{#formscs-dynamics-crm}
       + [Dynamics 응용 프로그램 만들기](./forms/formscs-dynamics-crm/create-dynamics-account.md)
       + [Data Source 구성](./forms/formscs-dynamics-crm/configure-odata-data-source.md)
-      + [양식 데이터 모델 만들기](./forms/formscs-dynamics-crm/create-form-data-model.md)
+      + [Forms 데이터 모델 만들기](./forms/formscs-dynamics-crm/create-form-data-model.md)
       + [적응형 양식 만들기](./forms/formscs-dynamics-crm/create-adaptive-form.md)
    + Salesforce{#integrate-with-salesforce}와 통합
       + [소개](./forms/integrate-with-salesforce/introduction.md)
@@ -433,4 +433,6 @@ ht-degree: 16%
          + [유니버설 편집기 살펴보기](./expert-resources/cloud-5/season-3/cloud5-exploring-universal-editor.md)
          + [사이트 가져오기](./expert-resources/cloud-5/season-3/cloud5-import-sites-to-edge-delivery-services.md)
          + [관리 API 사용](./expert-resources/cloud-5/season-3/cloud5-using-admin-api.md)
-         + [Lighthouse 점수 최적화](./expert-resources/cloud-5/season-3/cloud5-lighthouse-score-optimization.md)
+         + [등대 점수 최적화 - Part1](./expert-resources/cloud-5/season-3/cloud5-lighthouse-score-optimization-part1.md)
+         + [등대 점수 최적화 - Part2](./expert-resources/cloud-5/season-3/cloud5-lighthouse-score-optimization-part2.md)
+
