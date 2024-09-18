@@ -8,10 +8,10 @@ breadcrumb-title: AEM Forms 튜토리얼
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: 9545fae5a5f5edd6f525729e648b2ca34ddbfd9f
+source-git-commit: 5f42678502a785ead29982044d1f3f5ecf023e0f
 workflow-type: tm+mt
-source-wordcount: '2089'
-ht-degree: 2%
+source-wordcount: '2101'
+ht-degree: 1%
 
 ---
 
@@ -54,7 +54,7 @@ ht-degree: 2%
    + [2 - OSGi 서비스 만들기](creating-your-first-osgi-bundle/create-osgi-service.md)
    + [3 - Sling 서블릿 만들기](creating-your-first-osgi-bundle/create-servlet.md)
    + [4 - 서드파티 번들 포함](creating-your-first-osgi-bundle/include-third-party-jars.md)
-+ 적응형 양식 {#adaptive-forms}
++ 적응형 Forms {#adaptive-forms}
    + [Windows에서 AEM Forms 설치](adaptive-forms/installing-aem-form-on-windows-tutorial-use.md)
    + [Linux에 32비트 패키지 설치](adaptive-forms/installing-aem-form-on-linux.md)
    + [적응형 Forms의 미리 채우기 서비스](adaptive-forms/prefill-service-adaptive-forms-article-use.md)
@@ -222,13 +222,19 @@ ht-degree: 2%
    + [클라이언트 라이브러리](storing-retrieving-form-data/part4.md)
    + [적응형 양식 템플릿](storing-retrieving-form-data/part5.md)
    + [샘플 자산 배포](storing-retrieving-form-data/part6.md)
-+ 모바일 양식 제출에서 AEM 워크플로우 트리거{#offline-mobile-form-submission}
-   + [소개](offline-mobile-form-submission/introduction.md)
-   + [사용자 지정 프로필](offline-mobile-form-submission/custom-profile.md)
-   + [양식 제출 처리](offline-mobile-form-submission/handle-form-submission.md)
-   + [제출된 데이터 저장](offline-mobile-form-submission/author-servlet.md)
-   + [검토할 워크플로우 PDF](offline-mobile-form-submission/review-workflow.md)
-   + [시스템에 배포](offline-mobile-form-submission/deploy-assets.md)
++ PDF 양식 제출{#offline-mobile-form-submission}에서 AEM 워크플로 트리거 중
+   + [파트 - 1](offline-mobile-form-submission/introduction.md)
+   + [파트 - 2](offline-mobile-form-submission/custom-profile.md)
+   + [파트 - 3](offline-mobile-form-submission/handle-form-submission.md)
+   + [파트 - 4](offline-mobile-form-submission/author-servlet.md)
+   + [파트 - 5](offline-mobile-form-submission/review-workflow.md)
+   + [파트 - 6](offline-mobile-form-submission/deploy-assets.md)
++ 모바일 양식 제출 시 AEM 워크플로우 트리거{#trigger-aem-workflow-on-mobile-form-submission}
+   + [파트 - 1](trigger-aem-workflow-on-mobile-form-submission/introduction.md)
+   + [파트 - 2](trigger-aem-workflow-on-mobile-form-submission/handle-form-submission.md)
+   + [파트 - 3](trigger-aem-workflow-on-mobile-form-submission/author-servlet.md)
+   + [파트 - 4](trigger-aem-workflow-on-mobile-form-submission/review-workflow.md)
+   + [파트 - 5](trigger-aem-workflow-on-mobile-form-submission/deploy-assets.md)
 + 양식 제출 쿼리{#query-form-submissions}
    + [소개](query-form-submissions/introduction.md)
    + [검색 가능한 필드 만들기](query-form-submissions/part1.md)
