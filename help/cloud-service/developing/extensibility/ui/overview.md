@@ -13,7 +13,7 @@ duration: 50
 source-git-commit: 12d7f8f0afc1c19f289c847771cb9f4f965c650c
 workflow-type: tm+mt
 source-wordcount: '275'
-ht-degree: 0%
+ht-degree: 15%
 
 ---
 
@@ -26,7 +26,7 @@ App Builder은 AEM에서 확장 지점을 잘 정의하도록 바인딩된 확�
 >[!CONTEXTUALHELP]
 >id="aemcloud_learn_extensibility_app_builder"
 >title="Adobe Developer App Builder 및 AEM Headless 시작하기"
->abstract="AEM App Builder을 통해 개발자는 JavaScript 및 React를 사용하여 AEM UI를 빠르게 사용자 정의하고 확장하여 원활한 통합과 빠른 배포를 지원하는 방법에 대해 알아봅니다."
+>abstract="AEM App Builder를 통해 개발자가 JavaScript와 React를 사용하여 AEM UI를 빠르게 사용자 정의하고 확장하여 원활한 통합과 신속한 배포를 지원하는 방법에 대해 알아봅니다."
 
 ## AEM UI 확장 개발
 
