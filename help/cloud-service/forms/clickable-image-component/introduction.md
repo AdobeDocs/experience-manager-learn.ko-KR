@@ -1,6 +1,6 @@
 ---
 title: 클릭 가능한 이미지 구성 요소 만들기
-description: AEM Forms Cloud Service에서 클릭 가능한 이미지 구성 요소 만들기
+description: AEM Forms Cloud Service에서 클릭 가능한 이미지 구성 요소를 만듭니다.
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -10,14 +10,14 @@ topic: Development
 jira: KT-15968
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 exl-id: c451472f-d282-4662-9852-8a3e73c5c853
-source-git-commit: ba744f95f8d1f0b982cd5430860f0cb0945a4cda
+source-git-commit: 1fa202910e6c9d21532c6027647c5f3909931e0e
 workflow-type: tm+mt
-source-wordcount: '132'
+source-wordcount: '136'
 ht-degree: 0%
 
 ---
 
-# 소개
+# 클릭 가능한 이미지 소개
 
 Forms에서 클릭 가능한 이미지를 사용하면 보다 매력적이고 직관적이며 시각적으로 호소력 있는 사용자 경험을 만들 수 있습니다. 이 문서에서는 특히 디자인 유연성, 성능 및 사용자 경험 측면에서 여러 이점을 제공하므로 클릭 가능한 이미지용 SVG을 사용했습니다.
 SVG은 Adobe Illustrator 또는 무료 온라인 도구를 사용하여 만들 수 있습니다. 사용 사례를 보여주기 위해 [USA Map from](https://simplemaps.com/resources/svg-us)simplemaps를 사용했습니다.
