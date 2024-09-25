@@ -11,9 +11,9 @@ duration: 0
 last-substantial-update: 2024-09-24T00:00:00Z
 jira: KT-15123
 thumbnail: KT-15123.jpeg
-source-git-commit: d11b07441d8c46ce9a352e4c623ddc1781b9b9be
+source-git-commit: 01e6ef917d855e653eccfe35a2d7548f12628604
 workflow-type: tm+mt
-source-wordcount: '1355'
+source-wordcount: '1566'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ AEM as a Cloud Service 호스팅 웹 사이트에 대한 사용자 지정 오류
 이 자습서에서는 다음 사항을 학습합니다.
 
 - 기본 오류 페이지
-- 에서 제공된 오류 페이지
+- 오류 페이지가 제공되는 위치
    - AEM 서비스 유형 - 작성자, 게시, 미리보기
    - Adobe 관리 CDN
 - 오류 페이지를 사용자 지정하는 옵션
@@ -50,8 +50,14 @@ _AEM 서비스 유형_(작성자, 게시, 미리보기) 또는 _Adobe 관리 CDN
 
 | 다음에서 제공된 오류 페이지 | 세부 사항 |
 |---------------------|:-----------------------:|
-| AEM 서비스 유형 - 작성자, 게시, 미리보기 | 페이지 요청이 AEM 서비스 유형에서 제공되면 오류 페이지가 AEM 서비스 유형에서 제공됩니다. |
-| Adobe 관리 CDN | Adobe 관리 CDN _이(가) AEM 서비스 유형_(원본 서버)에 연결할 수 없으면 Adobe 관리 CDN에서 오류 페이지가 제공됩니다. **있을 수 없는 이벤트이지만 언급할 가치가 있습니다.** |
+| AEM 서비스 유형 - 작성자, 게시, 미리보기 | 페이지 요청이 AEM 서비스 유형에서 제공되고 위의 오류 시나리오가 발생하면 오류 페이지가 AEM 서비스 유형에서 제공됩니다. |
+| Adobe 관리 CDN | Adobe 관리 CDN _이(가) AEM 서비스 유형_(원본 서버)에 연결할 수 없으면 Adobe 관리 CDN에서 오류 페이지가 제공됩니다. **있을 수 없는 이벤트이지만 계획할 가치가 있습니다.** |
+
+
+예를 들어 AEM 서비스 유형 및 Adobe 관리 CDN에서 제공되는 기본 오류 페이지는 다음과 같습니다.
+
+![기본 AEM 오류 페이지](./assets/aem-default-error-pages.png)
+
 
 그러나 내 브랜드와 일치하고 더 나은 사용자 환경을 제공하기 위해 _AEM 서비스 유형과 Adobe 관리 오류 페이지를 모두 사용자 지정_&#x200B;할 수 있습니다.
 
@@ -89,9 +95,13 @@ _AEM 서비스 유형_(작성자, 게시, 미리보기) 또는 _Adobe 관리 CDN
 
 - WKND 사이트 페이지가 올바르게 렌더링되는지 확인합니다.
 
-## 오류 페이지를 사용자 지정하는 ErrorDocument Apache 지시문{#errordocument-directive}
+## AEM에서 제공하는 오류 페이지를 사용자 지정하는 ErrorDocument Apache 지시문{#errordocument}
 
-[AEM WKND](https://github.com/adobe/aem-guides-wknd) 프로젝트가 `ErrorDocument` Apache 지시문을 사용하여 사용자 지정 오류 페이지를 표시하는 방법을 검토해 보겠습니다.
+AEM 제공 오류 페이지를 사용자 지정하려면 `ErrorDocument` Apache 지시문을 사용하십시오.
+
+AEM as a Cloud Service에서 `ErrorDocument` Apache 지시문 옵션은 게시 및 미리보기 서비스 유형에만 적용할 수 있습니다. Apache + Dispatcher은 배포 아키텍처의 일부가 아니므로 작성자 서비스 유형에 적용할 수 없습니다.
+
+[AEM WKND](https://github.com/adobe/aem-guides-wknd) 프로젝트에서 `ErrorDocument` Apache 지시문을 사용하여 사용자 지정 오류 페이지를 표시하는 방법을 검토해 보겠습니다.
 
 - `ui.content.sample` 모듈에 브랜드 [오류 페이지](https://github.com/adobe/aem-guides-wknd/tree/main/ui.content.sample/src/main/content/jcr_root/content/wknd/language-masters/en/errors) @ `/content/wknd/language-masters/en/errors`이(가) 있습니다. [로컬 AEM](http://localhost:4502/sites.html/content/wknd/language-masters/en/errors) 또는 AEM as a Cloud Service `https://author-p<ID>-e<ID>.adobeaemcloud.com/ui#/aem/sites.html/content/wknd/language-masters/en/errors` 환경에서 검토하십시오.
 
@@ -123,28 +133,61 @@ _AEM 서비스 유형_(작성자, 게시, 미리보기) 또는 _Adobe 관리 CDN
 
 - [https://publish-p105881-e991000.adobeaemcloud.com/us/en/foo/bar.html](https://publish-p105881-e991000.adobeaemcloud.com/us/en/foo/bar.html)과 같이 환경에 잘못된 페이지 이름이나 경로를 입력하여 WKND 사이트의 사용자 지정 오류 페이지를 검토하십시오.
 
-## 오류 페이지를 사용자 지정하는 ACS AEM Commons-Error 페이지 핸들러{#acs-aem-commons-error-page-handler}
+## AEM 제공 오류 페이지를 사용자 지정하는 ACS AEM Commons-Error 페이지 핸들러{#acs-aem-commons}
 
-ACS AEM Commons 오류 페이지 핸들러를 사용하여 오류 페이지를 사용자 지정하려면 [사용 방법](https://adobe-consulting-services.github.io/acs-aem-commons/features/error-handler/index.html#how-to-use) 섹션을 검토하십시오.
+_모든 AEM 서비스 유형_&#x200B;에서 AEM 제공 오류 페이지를 사용자 지정하려면 [ACS AEM Commons 오류 페이지 처리기](https://adobe-consulting-services.github.io/acs-aem-commons/features/error-handler/index.html) 옵션을 사용할 수 있습니다.
 
-## 오류 페이지를 사용자 지정하는 CDN 오류 페이지{#cdn-error-pages}
+. 자세한 단계별 지침은 [사용 방법](https://adobe-consulting-services.github.io/acs-aem-commons/features/error-handler/index.html#how-to-use) 섹션을 참조하십시오.
+
+## CDN 제공 오류 페이지를 사용자 정의하는 CDN 오류 페이지{#cdn-error-pages}
+
+Adobe 관리 CDN에서 제공하는 오류 페이지를 사용자 정의하려면 CDN 오류 페이지 옵션을 사용합니다.
 
 Adobe 관리 CDN이 AEM 서비스 유형(원본 서버)에 도달할 수 없는 경우 CDN 오류 페이지를 구현하여 오류 페이지를 사용자 지정하겠습니다.
 
 >[!IMPORTANT]
 >
-> Adobe 관리 CDN이 AEM 서비스 유형(원본 서버)에 도달할 수 없는 것은 드문 경우이지만 계획할 가치가 있습니다.
+> _Adobe 관리 CDN이 AEM 서비스 유형에 도달할 수 없습니다._(원본 서버)은 **있을 수 없는 이벤트**&#x200B;이지만 계획할 가치가 있습니다.
+
+CDN 오류 페이지를 구현하는 높은 수준의 단계는 다음과 같습니다.
+
+- 사용자 지정 오류 페이지 콘텐츠를 단일 페이지 애플리케이션(SPA)으로 개발합니다.
+- CDN 오류 페이지에 필요한 정적 파일을 공개적으로 액세스할 수 있는 위치에 호스팅합니다.
+- CDN 규칙(errorPages)을 구성하고 위의 정적 파일을 참조합니다.
+- Cloud Manager 파이프라인을 사용하여 구성된 CDN 규칙을 AEM as a Cloud Service 환경에 배포합니다.
+- CDN 오류 페이지를 테스트합니다.
 
 
 ### CDN 오류 페이지 개요
 
-CDN 오류 페이지는 Adobe 관리 CDN에 의해 SPA(단일 페이지 애플리케이션)로 구현됩니다.
+CDN 오류 페이지는 Adobe 관리 CDN에 의해 SPA(단일 페이지 애플리케이션)로 구현됩니다. Adobe 관리 CDN에 의해 전달된 SPA HTML 문서에는 최소 HTML 코드 조각이 포함되어 있습니다. 사용자 지정 오류 페이지 콘텐츠는 JavaScript 파일을 사용하여 동적으로 생성됩니다. JavaScript 파일은 고객이 공개적으로 액세스할 수 있는 위치에서 개발 및 호스팅해야 합니다.
 
-WKND별 브랜드 콘텐츠는 JavaScript 파일을 사용하여 동적으로 생성되어야 합니다. JavaScript 파일은 공개적으로 액세스할 수 있는 위치에 호스팅해야 합니다. 따라서 다음 정적 파일은 공개적으로 액세스할 수 있는 위치에서 개발 및 호스팅해야 합니다.
+Adobe 관리 CDN에 의해 전달된 HTML 코드 조각의 구조는 다음과 같습니다.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    ...
+
+    <title>{title}</title>
+    <link rel="icon" href="{icoUrl}">
+    <link rel="stylesheet" href="{cssUrl}">
+  </head>
+  <body>
+    <script src="{jsUrl}"></script>
+  </body>
+</html>
+```
+
+HTML 스니펫에는 다음 자리 표시자가 포함됩니다.
 
 1. **jsUrl**: HTML 요소를 동적으로 만들어 오류 페이지 콘텐츠를 렌더링하기 위한 JavaScript 파일의 절대 URL입니다.
 1. **cssUrl**: 오류 페이지 컨텐츠의 스타일을 지정하는 CSS 파일의 절대 URL입니다.
 1. **icoUrl**: favicon의 절대 URL입니다.
+
+
 
 ### 사용자 지정 오류 페이지 개발
 
@@ -339,9 +382,11 @@ CDN 오류 페이지를 테스트하려면 아래 단계를 수행합니다.
 
 ## 요약
 
-이 자습서에서는 AEM as a Cloud Service 호스팅 웹 사이트에 대해 사용자 지정 오류 페이지를 구현하는 방법을 배웠습니다.
+이 자습서에서는 오류 페이지가 제공되는 기본 오류 페이지 및 오류 페이지를 사용자 지정하는 옵션에 대해 배웠습니다. `ErrorDocument` Apache 지시문, `ACS AEM Commons Error Page Handler` 및 `CDN Error Pages` 옵션을 사용하여 사용자 지정 오류 페이지를 구현하는 방법을 배웠습니다.
 
-또한 Adobe 관리 CDN이 AEM 서비스 유형(원본 서버)에 도달할 수 없는 경우 오류 페이지를 사용자 지정하는 CDN 오류 페이지 옵션에 대한 자세한 단계를 배웠습니다.
+## 추가 리소스
 
+- [CDN 오류 페이지 구성](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages)
 
+- [Cloud Manager - 파이프라인 구성](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#config-deployment-pipeline)
 
