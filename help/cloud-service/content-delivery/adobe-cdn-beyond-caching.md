@@ -11,13 +11,13 @@ duration: 0
 last-substantial-update: 2024-08-21T00:00:00Z
 jira: KT-15123
 thumbnail: KT-15123.jpeg
-source-git-commit: 65e77a329226ca7c7ccb1e583d2a045074feeb3d
+exl-id: 8948a900-01e9-49ed-9ce5-3a057f5077e4
+source-git-commit: 8795024a7b5e6d10cb2ff2f770dd3d080af85e68
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 0%
 
 ---
-
 
 # Adobe CDN - 캐싱을 넘어선 고급 기능
 
@@ -95,8 +95,9 @@ data:
 
 [CDN 캐시를 제거하는 방법](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)
 
+[CDN 오류 페이지 구성](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages)
+
 [CDN에서 트래픽 구성](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#client-side-redirectors)
 
 [CDN 자격 증명 및 인증 구성](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication)
 
-[CDN 오류 페이지 구성](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages)
