@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: acecb13a5b7f3c75bc6cd8eb36d398f8cebfe0a6
+source-git-commit: a224d375605b0abc2f521bfd6992239c77095572
 workflow-type: tm+mt
-source-wordcount: '1303'
+source-wordcount: '1300'
 ht-degree: 16%
 
 ---
@@ -217,7 +217,6 @@ ht-degree: 16%
       + [소개](./migration/cloud-acceleration-manager/introduction.md)
       + [준비 및 Best Practice Analyzer](./migration/cloud-acceleration-manager/readiness-and-best-practice-analyzer.md)
       + [구현 단계](./migration/cloud-acceleration-manager/implementation-phase.md)
-      + [콘텐츠 전송 도구](./migration/cloud-acceleration-manager/content-transfer-tool.md)
       + [코드 리팩터링 도구](./migration/cloud-acceleration-manager/code-refactoring-tools.md)
       + [코드 리포지토리 현대화 도구](./migration/cloud-acceleration-manager/code-repository-modernizer.md)
       + [Dispatcher 변환기](./migration/cloud-acceleration-manager/dispatcher-converter.md)
