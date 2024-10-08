@@ -7,9 +7,9 @@ sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: e7692aceded07426a9c1afce9275e82a5af6b0fb
+source-git-commit: d31094c11a023e711f2b49801bb03200f919e8e8
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '431'
 ht-degree: 17%
 
 ---
@@ -79,6 +79,7 @@ ht-degree: 17%
    + [Content Hub 설정](./content-hub/settingup-content-hub.md)
    + [Assets 및 승인 프로세스 업로드](./content-hub/uploading-assets-and-approval-process.md)
    + [Assets 액세스 및 다운로드](./content-hub/accessing-and-downloading-assets.md)
+   + [Adobe Express을 사용하여 이미지 변형 만들기](./content-hub/creating-image-variants-using-adobe-express.md)
 
 + 공유 및 배포{#sharing}
    + [Assets 다운로드](./sharing/download.md)
