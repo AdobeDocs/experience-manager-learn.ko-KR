@@ -11,9 +11,9 @@ last-substantial-update: 2022-07-20T00:00:00Z
 doc-type: Tutorial
 thumbnail: aem-local-dev-env.jpg
 duration: 4537
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: d731a7131b997fa272013e8d62aa2251e25c08e4
 workflow-type: tm+mt
-source-wordcount: '2413'
+source-wordcount: '2423'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Adobe Experience Manager 또는 AEM용 개발 시 로컬 개발 환경을 설정
 
 로컬 AEM 인스턴스를 참조할 때 개발자의 개인 컴퓨터에서 실행되는 Adobe Experience Manager 사본에 대해 이야기하고 있습니다. ***모두*** AEM 개발은 로컬 AEM 인스턴스에 대해 코드를 작성하고 실행하는 것으로 시작해야 합니다.
 
-AEM을 처음 사용하는 경우 두 가지 기본 실행 모드를 설치할 수 있습니다. ***작성자*** 및 ***Publish***. ***작성자*** [실행 모드](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configure-runmodes.html?lang=en)는 디지털 마케터가 콘텐츠를 만들고 관리하는 데 사용하는 환경입니다. 대부분의 경우 개발하면 작성자 인스턴스에 코드를 배포하게 됩니다. 페이지를 만들고 구성 요소를 추가 및 구성할 수 있습니다. AEM Sites은 WYSIWYG 작성 CMS이므로 작성 인스턴스에 대해 CSS 및 JavaScript의 대부분을 테스트할 수 있습니다.
+AEM을 처음 사용하는 경우 두 가지 기본 실행 모드를 설치할 수 있습니다. ***작성자*** 및 ***Publish***. ***작성자*** [실행 모드](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configure-runmodes.html?lang=en)는 디지털 마케터가 콘텐츠를 만들고 관리하는 데 사용하는 환경입니다. 대부분의 경우 개발하면 작성자 인스턴스에 코드를 배포하게 됩니다. 페이지를 만들고 구성 요소를 추가 및 구성할 수 있습니다. AEM Sites은 WYSIWYG 제작 CMS이므로 작성 인스턴스에 대해 CSS와 JavaScript의 대부분을 테스트할 수 있습니다.
 
 또한 로컬 ***Publish*** 인스턴스에 대해 *중요* 테스트 코드입니다. ***Publish*** 인스턴스는 웹 사이트 방문자가 상호 작용하는 AEM 환경입니다. ***Publish*** 인스턴스는 ***작성자*** 인스턴스와 동일한 기술 스택이지만 구성 및 권한에 따라 몇 가지 주요 차이점이 있습니다. 더 높은 수준의 환경으로 승격하기 전에 로컬 ***Publish*** 인스턴스에 대해 코드를 테스트해야 합니다.
 
@@ -181,6 +181,7 @@ IDE를 사용하는 경우 Maven 프로필 탭에서 `classic`을(를) 확인하
 * **[보고](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#integration-into-visual-studio-code)** - JCR 콘텐츠용 FTP와 유사한 도구
 * **[aemfed](https://aemfed.io/)** - AEM 프론트엔드 워크플로 속도 향상
 * Visual Studio 코드용 **[AEM 동기화](https://marketplace.visualstudio.com/items?itemName=Yinkai15.aemsync)** - 커뮤니티 지원&#42; 확장
+* **[WKND 프로젝트](https://github.com/adobe/aem-guides-wknd)** - 이 비디오에 표시된 AEM 프로젝트의 예입니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25907?quality=12&learn=on)
 
