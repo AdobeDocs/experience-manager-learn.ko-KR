@@ -6,9 +6,9 @@ solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 3bd7b9f5-5775-4572-8b4a-4d09619e20b9
 duration: 74
-source-git-commit: 285c652460ff00301d183defc56c07b3f74d8e5c
+source-git-commit: 4806312931038cc31e6bcf67f242483f62723387
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '566'
 ht-degree: 0%
 
 ---
@@ -237,6 +237,21 @@ AEM Engineering의 시즌 3의 클라우드 5 시리즈에 오신 것을 환영�
             <p>
                 <br/>                
                  총 차단 시간을 향상시키는 기술에 대해 알아봅니다.
+            </p>
+        </td>            
+        <td>
+            <a href="./season-3/cloud5-lighthouse-score-optimization-part3.md">
+                <img alt="등대 점수 최적화 - 3부"
+                     src="https://video.tv.adobe.com/v/3435001?format=jpeg"/>
+            </a>
+            <div>
+                <a href="./season-3/cloud5-lighthouse-score-optimization-part3.md">
+                <strong>등대 점수 최적화 - 파트3</strong></a>
+                <br/><em>James Talbot 및 Varun Mitra, 클라우드 아키텍트와 함께</em>
+            </div>
+            <p>
+                <br/>                
+                 LCP(Largest Contentanmating Paint)를 개선하는 기술에 대해 알아봅니다.
             </p>
         </td>            
     </tr>        
