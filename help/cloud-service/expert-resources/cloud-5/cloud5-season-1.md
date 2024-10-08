@@ -6,10 +6,10 @@ solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 210e5483-d79e-47ac-aa09-b6956cca2e62
 duration: 112
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: ffd90bec7ef63cac96590e59b1b5a92d043cbc03
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 0%
+source-wordcount: '443'
+ht-degree: 1%
 
 ---
 
@@ -105,47 +105,6 @@ AEM Engineering의 Cloud 5 Series를 시작합니다. 모든 제품의 구현 �
       <p>
         <br/>
          클라우드로 마이그레이션하기 위한 팁과 요령 중 하나(둘 중 하나)입니다. 첫 번째 부분에서 우리의 주요 초점은 마이그레이션 준비 할 수있는 모범 사례 및 준비 작업입니다.
-      </p>
-   </td> 
-  </tr>
-<tr>
-   <td>
-        <a href="./cloud5-aem-content-migration-part-2.md">
-            <img alt="마이그레이션(2부)" src="./imgs/007-thumb.png"/>
-        </a>
-      <div>
-        <a href="./cloud5-aem-content-migration-part-2.md"><strong>마이그레이션(2부)</strong></a>     
-         <br/><em>Darin Kuntze 및 James Talbot, 선임 클라우드 설계자와 함께</em>
-      </div>
-      <p>
-        <br/>
-         클라우드로 마이그레이션하기 위한 팁과 요령 중 2부(2부)입니다. 2부는 주로 마이그레이션에 사용할 수 있는 도구를 사용하는 것입니다.
-      </p>
-     </td>   
-     <td>
-        <a href="./cloud5-aem-dispatcher-validator.md">
-            <img alt="Dispatcher 검사기" src="./imgs/008-thumb.png"/>
-        </a>
-      <div>
-         <a href="./cloud5-aem-dispatcher-validator.md"><strong>Dispatcher 검사기</strong></a>
-         <br/><em>Darin Kuntze 및 James Talbot, 선임 클라우드 설계자와 함께</em>
-      </div>
-      <p>
-        <br/>
-         이전 마이그레이션 논의의 발판으로, Dispatcher 유효성 검사기와 이 검사기가 수행할 수 있는 몇 가지 작업을 살펴보겠습니다.
-      </p>
-   </td>
-     <td>
-        <a href="./cloud5-aem-search-and-indexing.md">
-            <img alt="색인 지정 및 검색 팁" src="./imgs/009-thumb.png"/>
-        </a>
-      <div>
-         <a href="./cloud5-aem-search-and-indexing.md"><strong>인덱싱 및 검색 팁</strong></a>
-         <br/><em>Darin Kuntze 및 James Talbot, 선임 클라우드 설계자와 함께</em>
-      </div>
-      <p>
-        <br/>
-         색인화 및 검색과 같이 복잡한 작업의 경우, 팀은 개발 시간을 최적화하고 문제가 되기 전에 문제를 해결하는 몇 가지 쉬운 성과를 보여줍니다.
       </p>
    </td> 
   </tr>
