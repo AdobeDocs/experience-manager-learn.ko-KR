@@ -12,9 +12,9 @@ last-substantial-update: 2023-12-07T00:00:00Z
 jira: KT-14649
 thumbnail: KT-14649.jpeg
 exl-id: 142ed6ae-1659-4849-80a3-50132b2f1a86
-source-git-commit: efa0a16649c41fab8309786a766483cfeab98867
+source-git-commit: 8d9e6bc44164ff3acfa2c7eadffc60bbc5e8306e
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '883'
 ht-degree: 0%
 
 ---
@@ -127,13 +127,4 @@ AEM 이벤트를 소비하는 기본 메서드는 _push_ 메서드와 _pull_ 메
         </p>
       </td>
   </tr>    
-  <tr>
-    <td>
-        <a  href="./examples/assets-pim-integration.md"><img alt="PIM 통합을 위한 AEM Assets 이벤트" src="./assets/examples/assets-pim-integration/PIM-integration-tile.png"/></a>
-        <div><strong><a href="./examples/assets-pim-integration.md">PIM 통합을 위한 AEM Assets 이벤트</a></strong></div>
-        <p>
-          메타데이터 업데이트를 위해 AEM Assets 및 PIM(제품 정보 관리) 시스템을 통합하는 방법을 알아봅니다.
-        </p>
-      </td>
-  </tr>  
 </table>
