@@ -11,7 +11,7 @@ thumbnail: KT-10587.jpg
 mini-toc-levels: 2
 exl-id: 3fe175f7-6213-439a-a02c-af3f82b6e3b7
 duration: 136
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: f1b13bba9e83ac1d25f2af23ff2673554726eb19
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 1%
@@ -53,7 +53,7 @@ SPA 및 AEM 트래픽이 공유 도메인에서 라우팅되는 방법은 여러
 
 다음은 AEM과 동일한 도메인에서 호스팅되는 경우 SPA 프로덕션 배포에 필요한 배포 구성입니다.
 
-| SPA이에 연결 | AEM Author | AEM 게시 | AEM 미리 보기 |
+| SPA이 Analytics에 → | AEM Author | AEM 게시 | AEM 미리 보기 |
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
 | [Dispatcher 필터](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | CORS(원본 간 리소스 공유) | ✘ | ✘ | ✘ |
@@ -70,7 +70,7 @@ AEM과 SPA은 서로 다른 도메인에서 액세스되므로 웹 브라우저�
 
 다음은 AEM이 아닌 다른 도메인에서 호스팅되는 경우 SPA 프로덕션 배포에 필요한 배포 구성입니다.
 
-| SPA이에 연결 | AEM Author | AEM 게시 | AEM 미리 보기 |
+| SPA이 Analytics에 → | AEM Author | AEM 게시 | AEM 미리 보기 |
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
 | [Dispatcher 필터](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | [CORS(원본 간 리소스 공유)](./configurations/cors.md) | ✔ | ✔ | ✔ |
