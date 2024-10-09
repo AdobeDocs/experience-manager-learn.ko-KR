@@ -10,7 +10,7 @@ jira: KT-10797
 thumbnail: kt-10797.jpg
 exl-id: 9d4aab4c-82af-4917-8c1b-3935f19691e6
 duration: 31
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 089bcf71f03bdbb6d21337cc23452afb33ce8098
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 2%
@@ -26,7 +26,7 @@ AEM Headless [웹 구성 요소](https://developer.mozilla.org/en-US/docs/Web/We
 
 웹 구성 요소/JS 배포를 위해서는 다음 배포 구성이 적용되어야 합니다.
 
-| 웹 구성 요소/JS 앱이에 연결 | AEM Author | AEM 게시 | AEM 미리 보기 |
+| Web Component/JS 앱이 AEM에 → | AEM Author | AEM 게시 | AEM 미리 보기 |
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
 | [Dispatcher 필터](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | [CORS(원본 간 리소스 공유)](./configurations/cors.md) | ✔ | ✔ | ✔ |
