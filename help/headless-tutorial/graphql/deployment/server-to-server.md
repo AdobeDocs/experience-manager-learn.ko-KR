@@ -10,7 +10,7 @@ jira: KT-10798
 thumbnail: kt-10798.jpg
 exl-id: d4ae08d9-dc43-4414-ab75-26853186a301
 duration: 48
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: b607ea10e0eed73b70751b1dd76266a4812d5280
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 1%
@@ -27,7 +27,7 @@ AEM Headless 서버 간 배포에는 AEM의 콘텐츠를 Headless 방식으로 �
 
 서버 간 앱 배포를 위해서는 다음 배포 구성이 적용되어야 합니다.
 
-| 서버 간 앱 연결 대상 | AEM Author | AEM 게시 | AEM 미리 보기 |
+| 서버 간 앱을 서버에 → | AEM Author | AEM 게시 | AEM 미리 보기 |
 |---------------------------------------------------------------:|:----------:|:-----------:|:-----------:|
 | [Dispatcher 필터](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | CORS(원본 간 리소스 공유) | ✘ | ✘ | ✘ |

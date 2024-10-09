@@ -10,7 +10,7 @@ jira: KT-10796
 thumbnail: KT-10796.jpg
 exl-id: 1f536079-b3ce-4807-be88-804378e75d37
 duration: 31
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 23ea95cfdf7e4c9fde4b53e9f68079b4d267ca20
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 2%
@@ -27,7 +27,7 @@ AEM Headless API에 대한 HTTP 연결은 브라우저의 컨텍스트에서 시
 
 모바일 앱 배포를 위해서는 다음 배포 구성이 적용되어야 합니다.
 
-| 모바일 앱이에 연결 | AEM Author | AEM 게시 | AEM 미리 보기 |
+| 모바일 앱이 DTM에 → | AEM Author | AEM 게시 | AEM 미리 보기 |
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
 | [Dispatcher 필터](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | CORS(원본 간 리소스 공유) | ✘ | ✘ | ✘ |
