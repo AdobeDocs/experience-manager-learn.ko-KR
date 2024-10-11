@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 8d9e6bc44164ff3acfa2c7eadffc60bbc5e8306e
+source-git-commit: 86d282b426402c9ad6be84e9db92598d0dc54f85
 workflow-type: tm+mt
-source-wordcount: '1297'
+source-wordcount: '1307'
 ht-degree: 16%
 
 ---
@@ -269,6 +269,11 @@ ht-degree: 16%
       + [데이터 요소 만들기](./forms/form-data-analytics/data-elements.md)
       + [규칙 만들기](./forms/form-data-analytics/rules.md)
       + [솔루션 테스트](./forms/form-data-analytics/test.md)
+   + 단추 변형 만들기{#style-system}
+      + [소개](./forms/style-system/introduction.md)
+      + [정책 정의](./forms/style-system/style-policy.md)
+      + [변형 정의](./forms/style-system/create-variations.md)
+      + [테스트 변형](./forms/style-system/build.md)
    + 세로 탭 사용{#using-vertical-tabs}
       + [1. 소개](./forms/using-vertical-tabs/introduction.md)
       + [2. 양식 만들기](./forms/using-vertical-tabs/create-af.md)
