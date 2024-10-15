@@ -12,9 +12,9 @@ last-substantial-update: 2023-12-07T00:00:00Z
 jira: KT-14649
 thumbnail: KT-14649.jpeg
 exl-id: 142ed6ae-1659-4849-80a3-50132b2f1a86
-source-git-commit: 8d9e6bc44164ff3acfa2c7eadffc60bbc5e8306e
+source-git-commit: ede52c6c9feb0b35bc3729e28591cb4e7c7600f7
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '833'
 ht-degree: 0%
 
 ---
@@ -67,13 +67,12 @@ AEM Eventing은 시스템 아키텍처 및 운영 효율성에 대한 다양한 
 AEM 이벤트에는 강력한 기능이지만 다음과 같은 몇 가지 제한 사항을 고려해야 합니다.
 
 - **가용성이 AEM as a Cloud Service으로 제한됨**: 현재 AEM Eventing은 AEM as a Cloud Service에서만 사용할 수 있습니다.
-- **제한된 이벤트 지원**: 현재 AEM 콘텐츠 조각 이벤트만 지원됩니다. 다만 향후 행사가 추가되면서 그 범위는 확대될 것으로 보인다.
+
+- **사용 가능한 이벤트 유형**: 사용 가능한 이벤트 유형의 현재 목록을 검토하십시오. [여기](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#available-event-types).
 
 ## 활성화 방법
 
-AEM 이벤트는 AEM as a Cloud Service 환경별로 활성화되며 프리릴리스 모드의 환경에서만 사용할 수 있습니다. AEM 이벤트를 사용하여 AEM 환경을 활성화하려면 <a href="mailto:grp-aem-events@adobe.com">AEM 이벤트 팀</a>에 문의하십시오.
-
-이미 사용하도록 설정한 경우 다음 단계에 대해 [AEM Cloud Service 환경에서 AEM 이벤트 사용](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment)을 참조하십시오.
+다음 단계는 [AEM Cloud Service 환경에서 AEM 이벤트 사용](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment)을 참조하십시오.
 
 ## 구독 방법
 
