@@ -11,9 +11,9 @@ topic: Development
 jira: KT-13520
 exl-id: c23275d7-daf7-4a42-83b6-4d04b297c470
 duration: 115
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: b4df652fcda0af5d01077b97aa7fa17cfe2abf4b
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '453'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ AEM Forms에서는 대부분의 사용 사례를 충족하는 다양한 제출 �
 
 ## AEM 프로젝트 만들기
 
-기존 AEM Forms Cloud Service 프로젝트가 이미 있는 경우 [사용자 지정 제출 서비스로 이동](#Write-the-custom-submit-service)할 수 있습니다.
+기존 AEM Forms as a Cloud Service 프로젝트가 이미 있는 경우 [사용자 지정 제출 서비스로 이동](#Write-the-custom-submit-service)할 수 있습니다.
 
 * c 드라이브에 cloudmanager라는 폴더를 만듭니다.
 * 새로 만든 이 폴더로 이동

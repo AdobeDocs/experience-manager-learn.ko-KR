@@ -1,5 +1,5 @@
 ---
-title: AEM Forms Cloud Service에서 세로 탭 사용
+title: AEM Formsas a Cloud Service 에서 세로 탭 사용
 description: 세로 탭을 사용하여 적응형 양식 만들기
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
@@ -12,9 +12,9 @@ thumbnail: 331891.jpg
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 jira: KT-16023
 exl-id: c5bbd35e-fd15-4293-901e-c81faf6025f9
-source-git-commit: ba744f95f8d1f0b982cd5430860f0cb0945a4cda
+source-git-commit: b4df652fcda0af5d01077b97aa7fa17cfe2abf4b
 workflow-type: tm+mt
-source-wordcount: '109'
+source-wordcount: '111'
 ht-degree: 0%
 
 ---

@@ -1,6 +1,6 @@
 ---
 title: 클릭 가능한 이미지 구성 요소 만들기
-description: AEM Forms Cloud Service에서 클릭 가능한 이미지 구성 요소를 만듭니다.
+description: AEM Formsas a Cloud Service 에서 클릭 가능한 이미지 구성 요소를 만듭니다.
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -10,9 +10,9 @@ topic: Development
 jira: KT-15968
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 exl-id: c451472f-d282-4662-9852-8a3e73c5c853
-source-git-commit: 1fa202910e6c9d21532c6027647c5f3909931e0e
+source-git-commit: b4df652fcda0af5d01077b97aa7fa17cfe2abf4b
 workflow-type: tm+mt
-source-wordcount: '136'
+source-wordcount: '138'
 ht-degree: 0%
 
 ---

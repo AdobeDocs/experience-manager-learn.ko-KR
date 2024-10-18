@@ -1,5 +1,5 @@
 ---
-title: AEM Forms Cloud Service 및 Marketo 통합(3부)
+title: AEM Forms as a Cloud Service 및 Marketo 통합(3부)
 description: AEM Forms 양식 데이터 모델을 사용하여 AEM Forms과 Marketo을 통합하는 방법을 알아봅니다.
 feature: Form Data Model,Integration
 version: Cloud Service
@@ -11,14 +11,14 @@ badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 last-substantial-update: 2024-07-24T00:00:00Z
 jira: KT-15876
 exl-id: 43737765-b1ea-4594-853a-d78f41136b5e
-source-git-commit: ba744f95f8d1f0b982cd5430860f0cb0945a4cda
+source-git-commit: b4df652fcda0af5d01077b97aa7fa17cfe2abf4b
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '237'
 ht-degree: 2%
 
 ---
 
-# 양식 데이터 모델 만들기
+# Forms 데이터 모델 만들기
 
 데이터 소스를 구성한 후 다음 단계는 이전 단계에서 구성한 데이터 소스를 기반으로 양식 데이터 모델을 만드는 것입니다. 양식 데이터 모델을 만들려면 다음 단계를 수행하십시오.
 

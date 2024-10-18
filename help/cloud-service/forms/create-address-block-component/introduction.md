@@ -1,6 +1,6 @@
 ---
 title: 주소 구성 요소를 만드는 중
-description: AEM Forms Cloud Service에서 새 주소 핵심 구성 요소 만들기
+description: AEM Formsas a Cloud Service 에서 새 주소 핵심 구성 요소 만들기
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -10,7 +10,7 @@ topic: Development
 jira: KT-15752
 exl-id: 21b6640e-5cfa-4902-9660-a2b1c91b285d
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
-source-git-commit: ed64dd303a384d48f76c9b8e8e925f5d3b8f3247
+source-git-commit: b4df652fcda0af5d01077b97aa7fa17cfe2abf4b
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 47%
@@ -27,7 +27,7 @@ Adobe Experience Manager(AEM)에서 구성 요소는 페이지와 양식을 작�
 
 ## 사전 요구 사항
 
-* AEM Forms Cloud Service 인스턴스에 액세스
+* AEM Forms as a Cloud Service 인스턴스에 액세스
 * AEM Forms 모듈을 사용하여 양식을 개발한 몇 가지 경험
 * AEM/AEM Forms(Git, IntelliJ 등)용 개발 환경 설정 경험
 
