@@ -10,16 +10,17 @@ level: Experienced
 last-substantial-update: 2024-09-17T00:00:00Z
 jira: kt-16215
 badgeVersions: label="AEM Forms 6.5" before-title="false"
-source-git-commit: 5f42678502a785ead29982044d1f3f5ecf023e0f
+source-git-commit: c6ffa8f7a398b01fc12e1e2efe4382c941900496
 workflow-type: tm+mt
-source-wordcount: '198'
+source-wordcount: '195'
 ht-degree: 1%
 
 ---
 
 # 모바일 양식 제출 시 AEM 워크플로우 트리거
 
-일반적인 사용 사례는 데이터 캡처 활동에 대한 HTML으로 XDP를 렌더링하는 것입니다. 이 양식을 제출하면 AEM 워크플로우를 트리거해야 할 수 있습니다. AEM 워크플로에서는 데이터를 xdp 템플릿과 병합하고 검토 및 승인을 위해 생성된 PDF을 제공할 수 있습니다. 양식은 게시 인스턴스에서 렌더링되고 워크플로는 AEM 처리 인스턴스에서 트리거됩니다.
+일반적인 사용 사례는 XDP를 데이터 캡처 활동에 대한 HTML으로 렌더링하는 것입니다. 이 양식을 제출하면 AEM 워크플로우를 트리거해야 할 수 있습니다. AEM 워크플로에서는 데이터를 XDP 템플릿과 병합하고 검토 및 승인을 위해 생성된 PDF을 제공할 수 있습니다. 양식이 게시 인스턴스에서 렌더링되고 워크플로가 AEM 처리 인스턴스에서 트리거됩니다.
+
 사용 사례에는 다음 단계가 포함됩니다
 
 * 사용자가 HTML5 양식(XDP의 HTML5 렌디션)을 작성하여 제출합니다.
