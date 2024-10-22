@@ -10,9 +10,9 @@ topic: Development
 feature: Adaptive Forms
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 jira: KT-16276
-source-git-commit: 86d282b426402c9ad6be84e9db92598d0dc54f85
+source-git-commit: a0de7eaa391749b6b0d90e7cf3e363c2d5a232b5
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '229'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,11 @@ ht-degree: 0%
 # 변경 사항 테스트
 
 **&quot;핵심 구성 요소가 있는 빈 구성 요소&quot;** 템플릿을 기반으로 적응형 양식을 만듭니다. 양식에 3개의 버튼을 드래그 앤 드롭하고 &quot;Corporate&quot;, &quot;Marketing&quot; 및 &quot;Default&quot;로 레이블을 지정합니다.
-그림과 같이 페인트 브러시를 선택하여 회사 및 마케팅 버튼에 적절한 스타일 변형을 할당합니다
+아래 그림과 같이 페인트 브러시를 선택하여 회사 및 마케팅 버튼에 적절한 스타일 변형을 할당합니다.
 
 ![스타일](assets/marketing-variation.png)
+
+세 번째 버튼에는 기본 스타일이 적용됩니다.
 
 ## 테마 프로젝트 빌드
 
