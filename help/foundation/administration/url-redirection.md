@@ -7,14 +7,14 @@ feature: Operations, Dispatcher
 role: Developer, Architect
 level: Intermediate
 jira: KT-11466
-last-substantial-update: 2022-10-14T00:00:00Z
+last-substantial-update: 2024-10-22T00:00:00Z
 index: y
 doc-type: Article
 exl-id: 8e64f251-e5fd-4add-880e-9d54f8e501a6
 duration: 164
-source-git-commit: 3cc9b4fa0a30d36638a8c28a73663ffa455ba4a3
+source-git-commit: 9e093e87c8c369ddd750be4a7dc30e2bf86495d5
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '878'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ AEM의 URL 리디렉션 솔루션은 다음과 같습니다.
 | AEM 관리 CDN을 통한 Edge에서 [1}](#at-edge-via-aem-managed-cdn) | ✔ | ✘ | ✔ | Edge/CDN(기본 제공) |
 | [자체 CDN(BYOCDN) 가져오기를 통한 Edge에서](#at-edge-via-bring-your-own-cdn) | ✘ | ✘ | ✔ | Edge/CDN(BYOCDN) |
 | [Dispatcher 구성으로서의 Apache `mod_rewrite` 규칙](#apache-mod_rewrite-module) | ✔ | ✘ | ✔ | Dispatcher |
-| [ACS Commons - 맵 관리자 리디렉션](#redirect-map-manager) | ✘ | ✔ | ✘ | Dispatcher |
+| [ACS Commons - 맵 관리자 리디렉션](#redirect-map-manager) | ✘ | ✔ | ✔ | Dispatcher |
 | [ACS Commons - 리디렉션 관리자](#redirect-manager) | ✘ | ✔ | ✔ | AEM |
 | [`Redirect` 페이지 속성](#the-redirect-page-property) | ✘ | ✔ | ✔ | AEM |
 
@@ -76,7 +76,7 @@ AEM as a Cloud Service에서 이러한 리디렉션 규칙은 AEM 코드의 일�
 
 #### 맵 관리자 리디렉션
 
-[리디렉션 맵 관리자](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html)를 사용하면 AEM 6.x 관리자가 Apache 웹 서버에 직접 액세스하거나 Apache 웹 서버를 다시 시작하지 않아도 [Apache RewriteMap](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html) 파일을 쉽게 유지 관리하고 게시할 수 있습니다. 이 기능을 사용하면 권한 사용자가 개발 팀이나 AEM 배포의 도움 없이 AEM의 콘솔에서 리디렉션 규칙을 만들고, 업데이트하고, 삭제할 수 있습니다. 리디렉션 맵 관리자가 **AEM as a Cloud Service과 호환되지 않습니다**.
+[리디렉션 맵 관리자](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html)를 사용하면 AEM 관리자가 Apache 웹 서버에 직접 액세스하거나 Apache 웹 서버를 다시 시작하지 않아도 [Apache RewriteMap](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html) 파일을 쉽게 유지 관리하고 게시할 수 있습니다. 이 기능을 사용하면 권한 사용자가 개발 팀이나 AEM 배포의 도움 없이 AEM의 콘솔에서 리디렉션 규칙을 만들고, 업데이트하고, 삭제할 수 있습니다. 리디렉션 관리자가 **AEM as a Cloud Service**&#x200B;과(와) **AEM 6.x** 모두 호환됩니다.
 
 #### 리디렉션 관리자
 
