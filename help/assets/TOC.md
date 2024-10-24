@@ -7,10 +7,10 @@ sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: d31094c11a023e711f2b49801bb03200f919e8e8
+source-git-commit: 3e7668067f9e001b92011a3735fc8debe829e1c9
 workflow-type: tm+mt
-source-wordcount: '431'
-ht-degree: 17%
+source-wordcount: '425'
+ht-degree: 19%
 
 ---
 
@@ -76,10 +76,12 @@ ht-degree: 17%
    + [Sidekick 플러그인](./edge-delivery-services/sidekick-plugin.md)
 
 + Content Hub{#content-hub}
-   + [Content Hub 설정](./content-hub/settingup-content-hub.md)
-   + [Assets 및 승인 프로세스 업로드](./content-hub/uploading-assets-and-approval-process.md)
-   + [Assets 액세스 및 다운로드](./content-hub/accessing-and-downloading-assets.md)
-   + [Adobe Express을 사용하여 이미지 변형 만들기](./content-hub/creating-image-variants-using-adobe-express.md)
+   + [설정](./content-hub/set-up.md)
+   + [자산 추가](./content-hub/add-assets.md)
+   + [Assets 다운로드](./content-hub/download-assets.md)
+   + [Adobe Express을 사용한 이미지 변형](./content-hub/image-variants.md)
+   + [컬렉션](./content-hub/collections.md)
+   + [공유](./content-hub/share.md)
 
 + 공유 및 배포{#sharing}
    + [Assets 다운로드](./sharing/download.md)
