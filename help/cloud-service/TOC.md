@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 7dca86137d476418c39af62c3c7fa612635c0583
+source-git-commit: 1ed08d7784833b6c49139da525341af5ee587345
 workflow-type: tm+mt
-source-wordcount: '1322'
+source-wordcount: '1325'
 ht-degree: 15%
 
 ---
@@ -279,6 +279,7 @@ ht-degree: 15%
       + [1. 소개](./forms/using-vertical-tabs/introduction.md)
       + [2. 양식 만들기](./forms/using-vertical-tabs/create-af.md)
       + [3. 탐색](./forms/using-vertical-tabs/navigation.md)
+      + [4. 아이콘 추가](./forms/using-vertical-tabs/icons.md)
    + 출력 및 양식 서비스 사용{#forms-cs-output-and-forms-service}
       + [PDF 생성](./forms/forms-cs-output-and-forms-service/outputservice.md)
    + AEM Forms CS{#doc-gen-formscs}에서 문서 생성
@@ -350,12 +351,12 @@ ht-degree: 15%
       + [제출된 양식 데이터 구문 분석](./forms/forms-cs-and-power-automate/send-email-notification.md)
       + [DoR을 전자 메일 첨부 파일로 보내기](./forms/forms-cs-and-power-automate/send-dor-email-attachment.md)
       + [제출된 데이터에서 양식 첨부 파일 추출](./forms/forms-cs-and-power-automate/send-af-attachments-in-email.md)
-   + Microsoft Dynamics와 통합{#formscs-dynamics-crm}
+   + Microsoft Dynamics과 통합{#formscs-dynamics-crm}
       + [Dynamics 응용 프로그램 만들기](./forms/formscs-dynamics-crm/create-dynamics-account.md)
       + [Data Source 구성](./forms/formscs-dynamics-crm/configure-odata-data-source.md)
       + [Forms 데이터 모델 만들기](./forms/formscs-dynamics-crm/create-form-data-model.md)
       + [적응형 양식 만들기](./forms/formscs-dynamics-crm/create-adaptive-form.md)
-   + Salesforce{#integrate-with-salesforce}와 통합
+   + Salesforce과 통합{#integrate-with-salesforce}
       + [소개](./forms/integrate-with-salesforce/introduction.md)
       + [연결된 앱 만들기](./forms/integrate-with-salesforce/create-connected-app.md)
       + [Swagger 파일 만들기](./forms/integrate-with-salesforce/describe-rest-api.md)
