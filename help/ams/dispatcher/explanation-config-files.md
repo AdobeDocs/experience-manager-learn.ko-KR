@@ -10,9 +10,9 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: ec8e2804-1fd6-4e95-af6d-07d840069c8b
 duration: 379
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: ef9c70e7895176e3cd535141a5de3c49886e666e
 workflow-type: tm+mt
-source-wordcount: '1688'
+source-wordcount: '1694'
 ht-degree: 0%
 
 ---
@@ -119,7 +119,7 @@ Enterprise Linux에 설치된 Apache 웹 서버에서 기능 및 구성을 확�
 
 ### Apache 기준선에는 다음이 포함됩니다.
 
-![](assets/explanation-config-files/Apache-Webserver-Baseline-Includes.png)
+![Apache HTTPD 웹 서버 기준선에 포함되는 항목](assets/explanation-config-files/Apache-Webserver-Baseline-Includes.png)
 
 위의 다이어그램에서 볼 수 있듯이 httpd 바이너리는 httpd.conf 파일만 구성 파일로 봅니다.  이 파일에는 다음 명령문이 포함되어 있습니다.
 
