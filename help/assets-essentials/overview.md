@@ -6,10 +6,10 @@ last-substantial-update: 2022-10-01T00:00:00Z
 thumbnail: aem-assets-essentials-videos.jpg
 doc-type: Catalog
 exl-id: 6a8534fa-bc99-438b-9107-2a428e06619c
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+source-git-commit: cd82b877a3b5b4d3459e3d024af9a8dd26cfc3f5
 workflow-type: tm+mt
-source-wordcount: '112'
-ht-degree: 4%
+source-wordcount: '118'
+ht-degree: 1%
 
 ---
 
@@ -39,7 +39,7 @@ Experience Manager Assets Essentials는 간단한 에셋 관리 및 공동 작�
 </td>
 <td>
    <a href="https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html">
-   <img alt="" src="./assets/overview/assets-essentials-docs.png"/>
+   <img alt="Assets Essentials 설명서" src="./assets/overview/assets-essentials-docs.png"/>
    </a>
    <div>
       <a href="https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html">
@@ -52,7 +52,7 @@ Experience Manager Assets Essentials는 간단한 에셋 관리 및 공동 작�
 </td>
 <td>
    <a href="https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-messages/create-email-content-with-the-message-editor.html?lang=ko-KR">
-   <img alt="Adobe Journey Optimizer" src="./assets/overview/adobe-journey-optimizer.png" />
+   <img alt="Adobe Journey Optimizer 및 Assets Essentials" src="./assets/overview/adobe-journey-optimizer.png" />
    </a>
    <div>
       <a href="https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-messages/create-email-content-with-the-message-editor.html?lang=ko-KR">
