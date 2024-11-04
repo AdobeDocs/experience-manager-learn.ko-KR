@@ -14,7 +14,7 @@ badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service AEM Sites 6.5" before-title="false"
 exl-id: 0cc3d3bc-e4ea-4ab2-8878-adbcf0c914f5
 duration: 2252
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 774267b4f4c65c79f185fa3b33383ce9ddd136cb
 workflow-type: tm+mt
 source-wordcount: '1529'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Platform Web SDK를 사용하여 Adobe Experience Manager(AEM)와 Adobe Analytic
 
 ## 개요
 
-사용자 행동에 대한 통찰력을 얻는 것은 모든 마케팅 팀에 중요한 목표입니다. 팀은 사용자가 콘텐츠와 상호 작용하는 방법을 이해함으로써 정보에 입각한 결정을 내리고 전략을 최적화하며 더 나은 결과를 얻을 수 있습니다. 가상의 엔티티인 WKND 마케팅 팀은 이 목표를 달성하기 위해 웹 사이트에서 Adobe Analytics을 구현하도록 목표를 설정했습니다. 기본 목표는 페이지 보기 수와 홈페이지 콜 투 액션(CTA) 클릭수의 두 가지 주요 지표에 대한 데이터를 수집하는 것입니다.
+사용자 행동에 대한 통찰력을 얻는 것은 모든 마케팅 팀에 중요한 목표입니다. 팀은 사용자가 콘텐츠와 상호 작용하는 방법을 이해함으로써 정보에 입각한 결정을 내리고 전략을 최적화하며 더 나은 결과를 얻을 수 있습니다. 가상의 엔티티인 WKND 마케팅 팀은 이 목표를 달성하기 위해 웹 사이트에서 Adobe Analytics을 구현하도록 목표를 설정했습니다. 기본 목표는 페이지 보기 수와 홈페이지 콜 투 액션(CTA) 클릭 수, 이렇게 두 가지 주요 지표에 대한 데이터를 수집하는 것입니다.
 
 페이지 보기를 추적하여 어떤 페이지가 사용자의 가장 큰 관심을 받는지 분석할 수 있습니다. 또한 홈페이지 CTA 클릭 수를 추적하면 팀의 콜 투 액션 요소의 효과에 대한 중요한 통찰력을 얻을 수 있습니다. 이 데이터는 어떤 CTA가 사용자와 공감 중이며, 조정이 필요한 CTA를 식별하며, 사용자 참여를 강화하고 전환을 유도하는 새로운 기회를 포착할 수 있습니다.
 
@@ -42,7 +42,7 @@ Platform Web SDK를 사용하여 Adobe Analytics을 통합할 때 필요한 사�
 
 **Cloud Service으로 AEM**&#x200B;에서:
 
-+ [AEM as a Cloud Service 환경에 대한 AEM 관리자 액세스](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html)
++ [AEM as a Cloud Service 환경에 대한 AEM 관리자 액세스](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=ko-KR)
 + Cloud Manager에 대한 배포 관리자 액세스
 + [WKND - 샘플 Adobe Experience Manager 프로젝트](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project)를 복제하여 AEM as a Cloud Service 환경에 배포합니다.
 
@@ -82,7 +82,7 @@ SDR 문서에 포함되어야 하는 개념 및 다양한 요소에 대한 자�
 
 첫 번째 단계는 Adobe Analytics, 특히 전환 변수(또는 eVar)와 성공 이벤트를 포함하는 보고서 세트를 설정하는 것입니다. 전환 변수는 원인과 결과를 측정하는 데 사용됩니다. 성공 이벤트는 작업을 추적하는 데 사용됩니다.
 
-이 자습서에서는 `eVar5, eVar6, and eVar7`이(가) _WKND 페이지 이름, WKND CTA ID 및 WKND CTA 이름_&#x200B;을(를) 각각 추적하고 `event7`을(를) 사용하여 _WKND CTA 클릭 이벤트_&#x200B;를 추적합니다.
+이 자습서에서는 `eVar5, eVar6, and eVar7`에서 _WKND 페이지 이름, WKND CTA ID 및 WKND CTA 이름_&#x200B;을 각각 추적하고 `event7`을(를) 사용하여 _WKND CTA 클릭 이벤트_&#x200B;를 추적합니다.
 
 수집된 데이터에서 분석, 통찰력 수집 및 다른 사람과 그러한 통찰력을 공유하려면 Analysis Workspace의 프로젝트가 만들어집니다.
 
@@ -92,7 +92,7 @@ Analytics 설정 및 개념에 대해 자세히 알아보려면 다음 리소스
 
 + [보고서 세트](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite.html)
 + [전환 변수](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/conversion-var-admin.html)
-+ [성공 이벤트](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-events/success-event.html)
++ [성공 이벤트](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-event)
 + [Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html)
 
 ## 데이터스트림 업데이트 - Analytics 서비스 추가
@@ -229,7 +229,7 @@ AEM 핵심 구성 요소와 Adobe 클라이언트 데이터 레이어 통합에 
 
 + 태그 속성이 최신 버전인지 확인하려면 빌드 날짜를 확인합니다.
 
-+ PageView와 HomePage CTA 클릭 모두에 대한 XDM 이벤트 데이터를 확인하려면 확장 프로그램 내의 웹 SDK Experience Platform 메뉴 옵션을 사용합니다.
++ PageView와 HomePage CTA 클릭 모두에 대한 XDM 이벤트 데이터를 확인하려면 확장 내에서 웹 SDK Experience Platform 메뉴 옵션을 사용합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419883?quality=12&learn=on)
 
@@ -249,7 +249,7 @@ AEM 핵심 구성 요소와 Adobe 클라이언트 데이터 레이어 통합에 
 
 Analysis Workspace은 유연하고 대화형 방식으로 데이터를 탐색하고 시각화할 수 있는 Adobe Analytics의 강력한 도구입니다. 사용자 지정 보고서를 만들고, 고급 세분화를 수행하고, 다양한 데이터 시각화를 적용할 수 있는 드래그 앤 드롭 인터페이스를 제공합니다.
 
-[Analytics 설정](#setup-analytics---report-suite-analysis-workspace) 단계에서 만든 Analysis Workspace 프로젝트를 다시 열겠습니다. **상위 페이지** 섹션에서 방문 횟수, 고유 방문자 수, 시작 횟수, 바운스 비율 등과 같은 다양한 지표를 검사합니다. WKND 페이지 및 홈 페이지 CTA의 성능을 평가하려면 WKND별 차원(WKND 페이지 이름, WKND CTA 이름) 및 지표(WKND CTA 클릭 이벤트)를 드래그 앤 드롭합니다. 이러한 통찰력은 마케터가 어떤 CTA가 더 효과적인지 이해하고 비즈니스 목표에 맞게 데이터 중심의 결정을 내리는 데 유용합니다.
+[Analytics 설정](#setup-analytics---report-suite-analysis-workspace) 단계에서 만든 Analysis Workspace 프로젝트를 다시 열겠습니다. **상위 페이지** 섹션에서 방문 횟수, 고유 방문자 수, 시작 횟수, 바운스 비율 등과 같은 다양한 지표를 검사합니다. WKND 페이지 및 홈 페이지 CTA의 성능을 평가하려면 WKND 관련 차원(WKND 페이지 이름, WKND CTA 이름) 및 지표(WKND CTA 클릭 이벤트)를 드래그 앤 드롭합니다. 이러한 통찰력은 마케터가 어떤 CTA가 더 효과적인지 이해하고 비즈니스 목표에 맞게 데이터 중심의 결정을 내리는 데 유용합니다.
 
 사용자 여정을 시각화하려면 **WKND 페이지 이름**&#x200B;부터 시작하여 다양한 경로로 확장하는 흐름 시각화를 사용하십시오.
 
