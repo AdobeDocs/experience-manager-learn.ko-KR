@@ -13,7 +13,7 @@ exl-id: b5722fe2-93bf-4b25-8e08-4cb8206771cb
 badgeIntegration: label="통합" type="positive"
 last-substantial-update: 2022-06-15T00:00:00Z
 duration: 443
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 606607b85fae012e76d57b0b35820247a6862e32
 workflow-type: tm+mt
 source-wordcount: '2072'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Adobe Experience Manager 사이트에서 캡처한 데이터를 Adobe Analytics 
 
 ## 빌드할 항목 {#what-build}
 
-WKND 마케팅 팀이 홈 페이지에서 성과가 가장 좋은 `Call to Action (CTA)` 단추를 알고 싶어합니다. 이 자습서에서는 **Analysis Workspace**&#x200B;에서 프로젝트를 만들어 다양한 CTA 버튼의 성능을 시각화하고 사이트에서의 사용자 동작을 이해합니다. Adobe Analytics을 사용하여 사용자가 WKND 홈 페이지에서 CTA(콜 투 액션) 버튼을 클릭하면 다음 정보가 캡처됩니다.
+WKND 마케팅 팀이 홈 페이지에서 성과가 가장 좋은 `Call to Action (CTA)` 단추를 알고 싶어합니다. 이 자습서에서는 **Analysis Workspace**&#x200B;에서 프로젝트를 만들어 다양한 CTA 버튼의 성능을 시각화하고 사이트에서의 사용자 동작을 이해합니다. Adobe Analytics을 사용하여 사용자가 WKND 홈 페이지에서 작업 호출(CTA) 버튼을 클릭하면 다음 정보가 캡처됩니다.
 
 **분석 변수**
 
@@ -45,7 +45,7 @@ WKND 마케팅 팀이 홈 페이지에서 성과가 가장 좋은 `Call to Actio
 ### 목표 {#objective}
 
 1. 보고서 세트를 만들거나 기존 보고서 세트를 사용합니다.
-1. 보고서 세트에서 [전환 변수(eVars)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/conversion-var-admin.html) 및 [성공 이벤트(이벤트)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-events/success-event.html)를 구성합니다.
+1. 보고서 세트에서 [전환 변수(eVars)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/conversion-var-admin.html) 및 [성공 이벤트(이벤트)](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-event)를 구성합니다.
 1. 인사이트를 빠르게 구축, 분석 및 공유할 수 있는 도구를 사용하여 데이터를 분석할 [Analysis Workspace 프로젝트](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html)를 만드십시오.
 1. 다른 팀 구성원과 Analysis Workspace 프로젝트를 공유합니다.
 
@@ -69,7 +69,7 @@ eVar는 다음과 같이 원인과 영향을 측정하는 데 가장 잘 사용�
 * 어떤 배너 광고가 궁극적으로 등록을 초래합니까
 * 주문하기 전에 내부 검색을 사용한 횟수
 
-성공 이벤트는 추적할 수 있는 작업입니다. 성공 이벤트가 무엇인지 결정합니다. 예를 들어 방문자가 CTA 버튼을 클릭하는 경우 클릭 이벤트를 성공 이벤트로 간주할 수 있습니다.
+성공 이벤트는 추적할 수 있는 작업입니다. 성공 이벤트가 무엇인지 결정합니다. 예를 들어 방문자가 CTA 버튼을 클릭하면 클릭 이벤트가 성공 이벤트로 간주할 수 있습니다.
 
 ### eVar 구성
 
@@ -101,7 +101,7 @@ eVar는 다음과 같이 원인과 영향을 측정하는 데 가장 잘 사용�
 
 ### 성공 이벤트 구성
 
-다음으로, CTA 버튼 클릭을 추적하는 이벤트를 만들겠습니다.
+다음으로, CTA 단추 클릭을 추적하는 이벤트를 만들겠습니다.
 
 1. **보고서 세트 관리자** 창에서 **보고서 세트 ID**&#x200B;를 선택하고 **설정 편집**&#x200B;을 클릭합니다.
 1. **전환** > **성공 이벤트**&#x200B;를 클릭합니다.
@@ -116,7 +116,7 @@ eVar는 다음과 같이 원인과 영향을 측정하는 데 가장 잘 사용�
 
 Analysis Workspace은 분석을 빌드하고 통찰력을 빠르게 공유할 수 있는 유연한 브라우저 도구입니다. 드래그 앤 드롭 인터페이스를 사용하여 분석을 작성하고, 시각화를 추가하여 데이터를 생동감 있게 표현하고, 데이터 세트를 큐레이션하고, 조직 내 누구와도 프로젝트를 공유 및 예약할 수 있습니다.
 
-다음으로 [프로젝트](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/freeform-overview.html#analysis-workspace)를 만들어 사이트 전체의 CTA 버튼 성능을 분석하는 대시보드를 만듭니다.
+그런 다음 [프로젝트](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/freeform-overview.html#analysis-workspace)를 만들어 사이트 전체의 CTA 단추 성능을 분석하는 대시보드를 만듭니다.
 
 1. Analytics 도구 모음에서 **Workspace**&#x200B;을(를) 선택하고 **새 프로젝트 만들기**&#x200B;를 클릭합니다.
 
@@ -160,11 +160,11 @@ Analysis Workspace은 분석을 빌드하고 통찰력을 빠르게 공유할 �
    * **이후**
      ![eVar5 지표](assets/create-analytics-workspace/evar5-metrics.png)
 
-1. 사용자가 WKND 사이트 페이지에 있을 때 CTA 버튼과 상호 작용하는 방법을 이해하려면 버튼 ID(eVar8) 지표를 추가하여 추가로 분류해야 합니다.
+1. 사용자가 WKND Site 페이지에 있을 때 CTA 버튼과 상호 작용하는 방법을 이해하려면 버튼 ID(eVar8) 지표를 추가하여 추가로 분류해야 합니다.
 
    ![eVar8](assets/create-analytics-workspace/evar8.png)
 
-1. 아래에서는 WKND Site를 페이지 템플릿으로 분류하고 WKND Site CTA(클릭 투 액션) 버튼과의 사용자 상호 작용에 의해 추가로 분류된 시각적 표현을 볼 수 있습니다.
+1. 아래에서는 WKND Site를 페이지 템플릿으로 분류하고 WKND Site 클릭 투 액션(CTA) 버튼과의 사용자 상호 작용에 의해 추가로 분류된 시각적 표현을 볼 수 있습니다.
 
    ![eVar8](assets/create-analytics-workspace/evar8-metric.png)
 
@@ -240,7 +240,7 @@ Analytics 분류는 Analytics 변수 데이터를 카테고리별로 분류한 �
 
    ![Workspace 단추 ID](assets/create-analytics-workspace/workspace-report-button-id.png)
 
-1. 그런 다음 CTA(작업 호출) 단추의 ID를 표시하는 작업 영역의 **단추 ID** 지표를 이전 단계에서 만든 분류 이름으로 바꿉니다.
+1. 그런 다음 작업 영역에서 작업 호출(CTA) 단추의 ID를 표시하는 **단추 ID** 지표를 이전 단계에서 만든 분류 이름으로 바꿉니다.
 
 1. 구성 요소 파인더에서 **WKND CTA 단추**&#x200B;를 검색하고 **WKND CTA 단추(단추 ID)** 차원을 단추 ID 지표로 드래그 앤 드롭한 다음 바꿉니다.
 
@@ -249,8 +249,8 @@ Analytics 분류는 Analytics 변수 데이터를 카테고리별로 분류한 �
    * **이후**
      ![다음 뒤에 있는 Workspace 단추](assets/create-analytics-workspace/wknd-button-after.png)
 
-1. 이제 CTA(콜 투 액션) 버튼의 버튼 ID가 포함된 버튼 ID 지표가 분류 템플릿에 제공된 해당 이름으로 대체되었음을 알 수 있습니다.
-1. Analytics Workspace 표를 WKND 홈 페이지와 비교하고 CTA 단추 클릭 수 및 분석에 대해 알아보겠습니다. 작업 영역 자유 형식 테이블 데이터를 기반으로 사용자가 **SKI NOW** 단추를 22번, WKND Home Page Camping in Western Australia **자세히 보기** 단추를 4번 클릭한 것이 확실합니다.
+1. 이제 클릭 유도 문안(CTA) 단추의 단추 ID가 포함된 단추 ID 지표가 분류 템플릿에 제공된 해당 이름으로 대체되었습니다.
+1. Analytics Workspace 표를 WKND 홈 페이지와 비교하고 CTA 단추 클릭 수 및 그 분석에 대해 살펴보겠습니다. 작업 영역 자유 형식 테이블 데이터를 기반으로 사용자가 **SKI NOW** 단추를 22번, WKND Home Page Camping in Western Australia **자세히 보기** 단추를 4번 클릭한 것이 확실합니다.
 
    ![CTA 보고서](assets/create-analytics-workspace/workspace-report-buttons-wknd.png)
 
