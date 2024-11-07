@@ -12,9 +12,9 @@ index: y
 doc-type: Article
 exl-id: 8e64f251-e5fd-4add-880e-9d54f8e501a6
 duration: 164
-source-git-commit: d5dff9378f31acb0fbce0bb86e2d0022ee725f83
+source-git-commit: 50ddda35adbb3af0b66a6e24a135fd5b94a3fb3a
 workflow-type: tm+mt
-source-wordcount: '884'
+source-wordcount: '885'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ AEM as a Cloud Service에서 이러한 리디렉션 규칙은 AEM 코드의 일�
 
 #### 맵 관리자 리디렉션
 
-[리디렉션 맵 관리자](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html)를 사용하면 AEM 관리자가 Apache 웹 서버에 직접 액세스하거나 Apache 웹 서버를 다시 시작하지 않아도 [Apache RewriteMap](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html) 파일을 쉽게 유지 관리하고 게시할 수 있습니다. 이 기능을 사용하면 권한 사용자가 개발 팀이나 AEM 배포의 도움 없이 AEM의 콘솔에서 리디렉션 규칙을 만들고, 업데이트하고, 삭제할 수 있습니다. 리디렉션 관리자가 **AEM as a Cloud Service**([파이프라인 없는 URL 리디렉션](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects) 전략 참조)과 **AEM 6.x** 모두 호환됩니다.
+[리디렉션 맵 관리자](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html)를 사용하면 AEM 관리자가 Apache 웹 서버에 직접 액세스하거나 Apache 웹 서버를 다시 시작하지 않아도 [Apache RewriteMap](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html) 파일을 쉽게 유지 관리하고 게시할 수 있습니다. 이 기능을 사용하면 권한 사용자가 개발 팀이나 AEM 배포의 도움 없이 AEM의 콘솔에서 리디렉션 규칙을 만들고, 업데이트하고, 삭제할 수 있습니다. 리디렉션 맵 관리자가 **AEM as a Cloud Service**([파이프라인 없는 URL 리디렉션](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects) 전략 참조)과 **AEM 6.x** 모두 호환됩니다.
 
 #### 리디렉션 관리자
 
