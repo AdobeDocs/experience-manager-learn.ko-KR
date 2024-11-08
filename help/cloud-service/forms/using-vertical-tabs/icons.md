@@ -1,5 +1,5 @@
 ---
-title: AEM Formsas a Cloud Service 에서 세로 탭 사용
+title: 사용자 정의 아이콘 추가
 description: 세로 탭에 사용자 지정 아이콘 추가
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
@@ -11,9 +11,10 @@ feature: Adaptive Forms
 thumbnail: 331891.jpg
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 jira: KT-16418
-source-git-commit: 1ed08d7784833b6c49139da525341af5ee587345
+exl-id: 20e44be0-5490-4414-9183-bb2d2a80bdf0
+source-git-commit: faa859897b6b9fbb0acff02000611de216ddda3e
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '676'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ ht-degree: 0%
 
 * 향상된 유용성: 아이콘은 각 탭의 목적을 빠르게 전달할 수 있어 사용자가 원하는 내용을 한눈에 쉽게 찾을 수 있습니다. 아이콘과 같은 시각적 큐를 사용하면 보다 직관적으로 탐색할 수 있습니다.
 
-* 시각적 계층 구조 및 포커스: 아이콘은 탭 간의 보다 명확한 분리를 만들어 시각적 계층을 향상시킵니다. 이는 중요한 탭이 돋보이고 사용자의 주의를 더 효과적으로 유도하는 데 도움이 될 수 있습니다.
+* 시각적 계층 구조 및 포커스: 아이콘은 탭 간의 보다 명확한 분리를 만들어 시각적 계층을 향상시킵니다. 이는 중요한 탭이 돋보이고 사용자의 주의를 효과적으로 유도하는 데 도움이 될 수 있습니다.
 이 문서에 따라 아래와 같이 아이콘을 배치할 수 있습니다
 
 ![아이콘](assets/icons.png)
@@ -42,9 +43,9 @@ Visual Studio 코드 또는 선택한 다른 편집기에서 테마 프로젝트
 
 ## 아이콘을 저장할 아이콘 맵 만들기
 
-_variable.scss 파일에 대한 icon-map을 만듭니다. SCSS 맵 $icon-map은 키-값 쌍의 컬렉션입니다. 여기서 각 키는 아이콘 이름(예: 홈, 패밀리 등)을 나타내고 각 값은 해당 아이콘과 연결된 이미지 파일의 경로입니다.
+_variable.scss 파일에 icon-map을 만듭니다. SCSS 맵 $icon-map은 키-값 쌍의 컬렉션입니다. 여기서 각 키는 아이콘 이름(예: 홈, 패밀리 등)을 나타내고 각 값은 해당 아이콘과 연결된 이미지 파일의 경로입니다.
 
-![variable-scss](assets/variable.scss)
+![variable-scss](assets/variable_scss.png)
 
 ```css
 $icon-map: (
@@ -81,8 +82,7 @@ _mixin.scss에 다음 코드 추가
 
 추가 아이콘-세로 탭 mixin은 세로 탭의 텍스트 옆에 사용자 지정 아이콘을 추가하도록 설계되었습니다. 이 옵션을 사용하면 이미지를 탭에 아이콘으로 쉽게 포함하고, 텍스트 옆에 배치한 다음 스타일링하여 일관성과 정렬을 보장할 수 있습니다.
 
-Mixin 분류
-다음은 mixin의 각 부분이 수행하는 작업입니다.
+Mixin 분류: mixin의 각 부분이 수행하는 작업:
 
 매개 변수:
 
