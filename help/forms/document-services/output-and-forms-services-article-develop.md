@@ -9,7 +9,7 @@ level: Intermediate
 last-substantial-update: 2024-01-29T00:00:00Z
 exl-id: d268d5d6-f24f-4db9-b8e0-07dd769c6005
 duration: 122
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 12af84e3d9be24fabb01a64eced6279749668599
 workflow-type: tm+mt
 source-wordcount: '565'
 ht-degree: 0%
@@ -119,3 +119,4 @@ Line2는 요청에서 saveLocation을 추출합니다.
    * xdpName: pdf로 렌더링할 xdp 파일의 이름
 
 [이 Postman 컬렉션을 가져와서 API를 테스트할 수 있습니다.](assets/UsingDocumentServicesInAEMForms.postman_collection.json)
+
