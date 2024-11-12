@@ -7,10 +7,10 @@ sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: 511823c39f0141155bc1efd7fc599b4b9b05ce69
+source-git-commit: 197f8b0d664971283cd893417a43e4e85e1b4923
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '434'
+ht-degree: 17%
 
 ---
 
@@ -18,6 +18,10 @@ ht-degree: 0%
 # AEM Assets 비디오 및 튜토리얼 {#assets}
 
 + [개요](overview.md)
+
++ 비디오 재생 목록{#video-playlists}
+   + [관리자 보기](playlists/admin-view.md)
+   + [자산 보기](playlists/assets-view.md)
 
 + {#configuring} 구성 중
    + [기준선 폴더](configuring/baseline-folders.md)
@@ -36,7 +40,7 @@ ht-degree: 0%
    + [기본 작업](./authoring/basic-operations.md)
    + [메타데이터](./authoring/metadata.md)
    + [렌디션](./authoring/renditions.md)
-   + [연결 및 연결 해제](./authoring/relate-unrelate.md)
+   + [관계 설정 및 관계 해제](./authoring/relate-unrelate.md)
 
 + Collaboration{#collaboration}
    + [시청하기](./collaboration/watch.md)
@@ -44,18 +48,18 @@ ht-degree: 0%
    + [주석 및 주석](./collaboration/comments-and-annotations.md)
    + [체크인 및 체크아웃](./collaboration/check-in-and-check-out.md)
    + [버전](./collaboration/versions.md)
-   + [작업 리뷰](./collaboration/review-task.md)
+   + [리뷰 작업](./collaboration/review-task.md)
 
 + 검색 및 검색{#search-and-discovery}
    + [검색](./search-and-discovery/search.md)
    + [상황별 검색](./search-and-discovery/contextual-search.md)
    + [Adobe Firefly 통합](./search-and-discovery/adobe-firefly.md)
    + [컬렉션](./search-and-discovery/collections.md)
-   + [검색 증폭](./search-and-discovery/search-boost.md)
+   + [검색 증가](./search-and-discovery/search-boost.md)
    + [유사한 이미지 찾기](./search-and-discovery/find-similar-images.md)
 
 + 고급 기능{#advanced}
-   + [3D Assets](./advanced/3d-assets.md)
+   + [3D 자산](./advanced/3d-assets.md)
    + [주석 PDF 출력](./advanced/customizing-annotations-pdf-output.md)
    + [Assets 보고서](./advanced/asset-reports.md)
    + [차단된 태그](./advanced/blocked-tags.md)
@@ -66,7 +70,7 @@ ht-degree: 0%
    + [워터마크](./advanced/watermarks.md)
 
 + 고급 메타데이터 관리{#metadata}
-   + [계단식 메타데이터](metadata/cascade-metadata-feature-video-use.md)
+   + [연속 메타데이터](metadata/cascade-metadata-feature-video-use.md)
    + [이미지용 스마트 태그](metadata/image-smart-tags.md)
    + [이미지용 사용자 지정 스마트 태그](metadata/custom-smart-tags.md)
    + [비디오용 스마트 태그](metadata/video-smart-tags.md)
@@ -78,16 +82,16 @@ ht-degree: 0%
 + Content Hub{#content-hub}
    + [개요](./content-hub/overview.md)
    + [설정](./content-hub/set-up.md)
-   + [자산 추가](./content-hub/add-assets.md)
-   + [Assets 다운로드](./content-hub/download-assets.md)
+   + [에셋 추가](./content-hub/add-assets.md)
+   + [자산 다운로드](./content-hub/download-assets.md)
    + [Adobe Express을 사용한 이미지 변형](./content-hub/image-variants.md)
    + [컬렉션](./content-hub/collections.md)
    + [공유](./content-hub/share.md)
 
 + 공유 및 배포{#sharing}
-   + [Assets 다운로드](./sharing/download.md)
+   + [자산 다운로드](./sharing/download.md)
    + [자산 내보내기](./sharing/export.md)
-   + [에셋 게시](./sharing/publish.md)
+   + [Publish assets](./sharing/publish.md)
 
    + Brand Portal{#brand-portal}
       + [Brand Portal](./sharing/brand-portal.md)
@@ -115,10 +119,10 @@ ht-degree: 0%
    + [다운로드 및 업로드](./adobe-asset-link/download-and-upload.md)
    + [체크인 체크아웃](./adobe-asset-link/check-in-check-out.md)
    + [버전 관리 및 주석](./adobe-asset-link/file-versioning-and-comments.md)
-   + [복사 배치](./adobe-asset-link/place-copy.md)
+   + [사본 배치](./adobe-asset-link/place-copy.md)
    + [연결 배치](./adobe-asset-link/place-linked.md)
    + [배치만(FPO)](./adobe-asset-link/for-placement-only.md)
-   + [자산 검색](./adobe-asset-link/asset-search.md)
+   + [에셋 검색](./adobe-asset-link/asset-search.md)
 
 + 콘텐츠 자동화{#content-automation}
    + [개요](./content-automation/overview.md)
@@ -151,11 +155,11 @@ ht-degree: 0%
 
    + Tutorials {#tutorials}
       + [회전 메뉴 세트 만들기](dynamic-media/tutorials/creating-different-kinds-of-sets-with-aem-dynamic-media-carousel-sets.md)
-      + [이미지 집합 만들기](dynamic-media/tutorials/creating-different-kinds-of-sets-with-aem-dynamic-media-image-sets.md)
+      + [이미지 집합을 만드는 중](dynamic-media/tutorials/creating-different-kinds-of-sets-with-aem-dynamic-media-image-sets.md)
       + [이미지 사전 설정 만들기](dynamic-media/tutorials/creating-image-presets.md)
       + [스마트 자르기 이미지 프로필 만들기](dynamic-media/tutorials/creating-image-profile-smart-crop.md)
       + [비디오 프로필 만들기](dynamic-media/tutorials/creating-video-profile-to-process-videos-in-dynamic-media.md)
-      + [Assets 처리 중](dynamic-media/tutorials/how-to-run-dam-update-asset-workflow-on-an-asset-with-dynamic-media-enabled.md)
+      + [자산 처리 중](dynamic-media/tutorials/how-to-run-dam-update-asset-workflow-on-an-asset-with-dynamic-media-enabled.md)
       + [보안 미리 보기 서버 구성](dynamic-media/tutorials/adding-test-image-server-details-in-dynamic-media-for-secure-preview.md)
       + [URL 및 포함 코드 생성](dynamic-media/tutorials/how-to-generate-public-url-or-embed-code-for-an-asset.md)
       + [내보내기 작업 트리거](dynamic-media/tutorials/how-to-trigger-export-job-in-dynamic-media-during-submit-job-operation-parameter.md)
@@ -169,7 +173,7 @@ ht-degree: 0%
    + 향상된 커넥터{#enhanced-connector}
       + [향상된 커넥터 기본 사항](./workfront/enhanced-connector/basics.md)
       + [프로젝트 폴더](./workfront/enhanced-connector/project-folders.md)
-      + AEM 전문가 시리즈{#aem-experts-series}
+      + AEM Experts 시리즈{#aem-experts-series}
          + [개요](./workfront/enhanced-connector/aem-experts-series/overview.md)
          + [설정](./workfront/enhanced-connector/aem-experts-series/setup.md)
          + [Workfront forms 및 AEM 메타데이터](./workfront/enhanced-connector/aem-experts-series/custom-forms.md)
