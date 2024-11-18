@@ -9,7 +9,7 @@ last-substantial-update: 2024-11-01T00:00:00Z
 doc-type: Catalog
 duration: 60
 exl-id: 76af4062-4d8d-4908-bd3d-ce5a8af2111a
-source-git-commit: c939bf218211ef4f515ac8c7eea67cc5425eb3a9
+source-git-commit: 95ff2a6d99039d541092fcc45e9fc45f1a8a2b6a
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 1%
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # AEM Assets Assets 비디오 재생 목록 보기
 
-이러한 목록을 탐색하여 AEM Assets as a Cloud Service 재생 최적화, 구성 최적화, 사용 및 크리에이티브 워크플로우와의 원활한 통합을 다룹니다. AEM Assetsas a Cloud Service 으로 성공하는 데 필요한 통찰력을 얻으십시오.
+이러한 목록을 탐색하여 AEM Assets as a Cloud Service Assets 재생 보기, 구성, 최적화 사용 및 크리에이티브 워크플로우와의 원활한 통합을 다룹니다. AEM Assetsas a Cloud Service 으로 성공하는 데 필요한 통찰력을 얻으십시오.
 
 ## Assets 보기 구성
 
