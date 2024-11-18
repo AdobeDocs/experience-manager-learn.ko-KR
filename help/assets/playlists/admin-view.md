@@ -1,5 +1,5 @@
 ---
-title: AEM Assets 관리자 보기 재생 목록
+title: AEM Assets 관리자 보기 비디오 재생 목록
 description: 제품 기술을 향상시키기 위해 고안된 이 비디오 플레이리스트 컬렉션으로 AEM Assets as a Cloud Service Admin 기능을 활용하는 방법에 대해 알아봅니다.
 version: Cloud Service
 topic: Content Management
@@ -9,9 +9,9 @@ last-substantial-update: 2024-11-01T00:00:00Z
 doc-type: Catalog
 duration: 60
 exl-id: 924b3bab-e0ed-4b07-bded-344aab61eac5
-source-git-commit: 0905e084001dafa5445d3ea9d42b07c592af9149
+source-git-commit: bee9c6dfa7a2e3c55f6ec938cffff4622d800004
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '558'
 ht-degree: 0%
 
 ---
