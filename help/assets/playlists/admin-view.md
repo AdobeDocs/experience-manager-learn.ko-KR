@@ -9,16 +9,16 @@ last-substantial-update: 2024-11-01T00:00:00Z
 doc-type: Catalog
 duration: 60
 exl-id: 924b3bab-e0ed-4b07-bded-344aab61eac5
-source-git-commit: d95c0cfc64f22efa1490fb1e0d787b8d76006add
+source-git-commit: 33e0ded0cdcb5d8ed146fdc59c6f37495cd251eb
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '561'
 ht-degree: 0%
 
 ---
 
 # 관리자 보기를 위한 비디오 재생 목록
 
-![AEM Assets 관리 보기](./assets/admin-view.png){align=center}
+![AEM Assets 관리자 보기](./assets/admin-view.png){align="center"}
 
 이러한 목록을 탐색하여 AEM Assets as a Cloud Service 재생 최적화, 구성 최적화, 사용 및 크리에이티브 워크플로우와의 원활한 통합을 다룹니다. AEM Assetsas a Cloud Service 으로 성공하는 데 필요한 통찰력을 얻으십시오.
 
