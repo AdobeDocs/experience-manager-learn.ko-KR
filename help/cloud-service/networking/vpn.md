@@ -11,9 +11,9 @@ thumbnail: KT-9352.jpeg
 exl-id: 74cca740-bf5e-4cbd-9660-b0579301a3b4
 last-substantial-update: 2024-04-27T00:00:00Z
 duration: 919
-source-git-commit: 1183fc5614f9547b56f22bafd9b54e10279f310f
+source-git-commit: 29ac030f3774da2c514525f7cb85f6f48b84369f
 workflow-type: tm+mt
-source-wordcount: '1472'
+source-wordcount: '1467'
 ht-degree: 1%
 
 ---
@@ -49,9 +49,7 @@ Cloud Manager API를 사용하여 Virtual Private Network를 설정할 때 필�
 + Cloud Manager 환경 ID
 + 필요한 모든 연결 매개 변수에 액세스할 수 있는 **경로 기반** 가상 개인 네트워크입니다.
 
-자세한 내용은 다음 연습에서 Cloud Manger API 자격 증명을 설정, 구성 및 얻는 방법과 이를 사용하여 Cloud Manager API를 호출하는 방법을 참조하십시오.
-
->[!VIDEO](https://video.tv.adobe.com/v/342235?quality=12&learn=on)
+자세한 내용을 보려면 [Cloud Manger API 자격 증명을 설정, 구성 및 얻는 방법](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/app-builder/server-to-server-auth)을 검토하여 Cloud Manager API를 호출하는 데 사용하십시오.
 
 이 자습서에서는 `curl`을(를) 사용하여 Cloud Manager API 구성을 만듭니다. 제공된 `curl` 명령은 Linux/macOS 구문을 사용합니다. Windows 명령 프롬프트를 사용하는 경우 `\` 줄 바꿈 문자를 `^`(으)로 바꾸십시오.
 
