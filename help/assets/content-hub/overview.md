@@ -9,13 +9,13 @@ level: Beginner
 doc-type: Catalog
 duration: 45
 last-substantial-update: 2024-10-31T00:00:00Z
-source-git-commit: 16bccf53b8f7507f64dd53a7152192630e3f8ec8
+exl-id: ea7b852e-b40d-44ef-ba63-69081e68456e
+source-git-commit: b5f8f545772a9b3f4d15e4816d53f81a513c716c
 workflow-type: tm+mt
-source-wordcount: '481'
-ht-degree: 6%
+source-wordcount: '467'
+ht-degree: 7%
 
 ---
-
 
 # AEM Assets Content Hub
 
@@ -32,6 +32,7 @@ Adobe Experience Manager Assets as a Cloud Service Content Hub에서 에셋을 �
 <!-- CARDS
 
 * https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/set-up {title = Set up}
+* https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/configure {title = Configure}
 * https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/add-assets {title = Add assets}
 * https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/download-assets {title = Download assets}
 * https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/image-variants {title = Create image variants}
@@ -45,8 +46,8 @@ Adobe Experience Manager Assets as a Cloud Service Content Hub에서 에셋을 �
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/set-up" title="설정">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3433513/?format=jpeg&nocache=1730408523156" alt="설정"
+                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/set-up" title="설정" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3433513/?format=jpeg&nocache=1732113280955" alt="설정"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -54,12 +55,35 @@ Adobe Experience Manager Assets as a Cloud Service Content Hub에서 에셋을 �
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/set-up" title="설정">설정</a>
+                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/set-up" target="_blank" rel="referrer" title="설정">설정</a>
                     </p>
-                    <p class="is-size-6">Adobe Cloud Manager 프로그램 및 에셋 추가 기능을 사용하여 Experience Manager Assets Content Hub을 설정하는 방법에 대해 알아봅니다. 제품 프로필을 사용하여 사용자의 액세스를 구성하는 방법도 알아봅니다.</p>
+                    <p class="is-size-6">AEM as a Cloud Service에서 Adobe Experience Manager Assets Content Hub을 설정하는 방법에 대해 알아봅니다.</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/set-up" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">튜토리얼 받기</span>
+                <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/set-up" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">시청</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Configure">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/configure" title="구성" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3439311/?format=jpeg&nocache=1732113280958" alt="구성"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/configure" target="_blank" rel="referrer" title="구성">구성</a>
+                    </p>
+                    <p class="is-size-6">조직의 요구 사항에 맞게 사용 가능한 탭을 탐색하고 구성 옵션을 사용자 지정하는 방법을 알아봅니다.</p>
+                </div>
+                <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/configure" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">시청</span>
                 </a>
             </div>
         </div>
@@ -68,8 +92,8 @@ Adobe Experience Manager Assets as a Cloud Service Content Hub에서 에셋을 �
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/add-assets" title="에셋 추가">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3432980/?format=jpeg&nocache=1730408523136" alt="에셋 추가"
+                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/add-assets" title="에셋 추가" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3432980/?format=jpeg&nocache=1732113280960" alt="에셋 추가"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -77,12 +101,12 @@ Adobe Experience Manager Assets as a Cloud Service Content Hub에서 에셋을 �
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/add-assets" title="에셋 추가">자산 추가</a>
+                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/add-assets" target="_blank" rel="referrer" title="에셋 추가">자산 추가</a>
                     </p>
                     <p class="is-size-6">Adobe Experience Manager Assets Content Hub에서 에셋을 업로드하고, 태그를 적용하고 승인 워크플로를 이해하는 방법에 대해 알아봅니다.</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/add-assets" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">튜토리얼 받기</span>
+                <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/add-assets" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">자세히 알아보기</span>
                 </a>
             </div>
         </div>
@@ -91,8 +115,8 @@ Adobe Experience Manager Assets as a Cloud Service Content Hub에서 에셋을 �
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/download-assets" title="자산 다운로드">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3433135/?format=jpeg&nocache=1730408523154" alt="자산 다운로드"
+                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/download-assets" title="자산 다운로드" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3433135/?format=jpeg&nocache=1732113280972" alt="자산 다운로드"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -100,12 +124,12 @@ Adobe Experience Manager Assets as a Cloud Service Content Hub에서 에셋을 �
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/download-assets" title="자산 다운로드">자산 다운로드</a>
+                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/download-assets" target="_blank" rel="referrer" title="자산 다운로드">자산 다운로드</a>
                     </p>
                     <p class="is-size-6">Adobe Experience Manager Assets Content Hub에서 에셋을 탐색, 검색, 필터링 및 다운로드하는 방법을 알아봅니다.</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/download-assets" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">튜토리얼 받기</span>
+                <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/download-assets" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">시청</span>
                 </a>
             </div>
         </div>
@@ -114,8 +138,8 @@ Adobe Experience Manager Assets as a Cloud Service Content Hub에서 에셋을 �
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/image-variants" title="이미지 변형 만들기">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435003/?format=jpeg&nocache=1730408523138" alt="이미지 변형 만들기"
+                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/image-variants" title="이미지 변형 만들기" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435003/?format=jpeg&nocache=1732113280971" alt="이미지 변형 만들기"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -123,12 +147,12 @@ Adobe Experience Manager Assets as a Cloud Service Content Hub에서 에셋을 �
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/image-variants" title="이미지 변형 만들기">이미지 변형 만들기</a>
+                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/image-variants" target="_blank" rel="referrer" title="이미지 변형 만들기">이미지 변형 만들기</a>
                     </p>
                     <p class="is-size-6">Experience Manager Assets Content Hub 내에서 Adobe Express을 사용하여 이미지 변형을 만들고 편집하는 방법을 알아봅니다.</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/image-variants" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">튜토리얼 받기</span>
+                <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/image-variants" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">시청</span>
                 </a>
             </div>
         </div>
@@ -137,8 +161,8 @@ Adobe Experience Manager Assets as a Cloud Service Content Hub에서 에셋을 �
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/collections" title="컬렉션">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435687/?format=jpeg&nocache=1730408523160" alt="컬렉션"
+                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/collections" title="컬렉션" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435687/?format=jpeg&nocache=1732113280972" alt="컬렉션"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -146,12 +170,12 @@ Adobe Experience Manager Assets as a Cloud Service Content Hub에서 에셋을 �
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/collections" title="컬렉션">컬렉션</a>
+                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/collections" target="_blank" rel="referrer" title="컬렉션">컬렉션</a>
                     </p>
                     <p class="is-size-6">AEM Assets Content Hub에서 컬렉션을 만들고 사용하여 에셋 액세스를 간소화하고 공동 리소스 공유를 촉진하여 다양한 프로젝트에서 효율적이고 체계적인 팀워크를 보장하는 방법을 알아봅니다.</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/collections" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">비디오 보기</span>
+                <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/collections" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">시청</span>
                 </a>
             </div>
         </div>
@@ -160,8 +184,8 @@ Adobe Experience Manager Assets as a Cloud Service Content Hub에서 에셋을 �
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/share" title="공유">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435685/?format=jpeg&nocache=1730408523158" alt="공유"
+                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/share" title="공유" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435685/?format=jpeg&nocache=1732113280986" alt="공유"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -169,25 +193,18 @@ Adobe Experience Manager Assets as a Cloud Service Content Hub에서 에셋을 �
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/share" title="공유">공유</a>
+                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/share" target="_blank" rel="referrer" title="공유">공유</a>
                     </p>
                     <p class="is-size-6">AEM Assets Content Hub에서 팀 구성원과 에셋 및 컬렉션을 공유하여 효과적인 팀워크를 도모하고 에셋 공유를 보호하는 방법에 대해 알아봅니다.</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/share" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">비디오 보기</span>
+                <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/share" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">시청</span>
                 </a>
             </div>
         </div>
     </div>
 </div>
 <!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
-
-
-
-
-
-
-
 
 ## Content Hub 설명서
 
@@ -207,7 +224,7 @@ Content Hub Content Hub을 이해하고 최대한 활용하는 데 도움이 되
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/product-overview" title="Content Hub 설명서">
+                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/product-overview" title="Content Hub 설명서" target="_blank" rel="referrer">
                         <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/product-overview./media_1ef4ad26652365b140f1a06c31df8ebc6546850df.png?width=400&format=png&optimize=medium" alt="Content Hub 설명서"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
@@ -216,12 +233,12 @@ Content Hub Content Hub을 이해하고 최대한 활용하는 데 도움이 되
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/product-overview" title="Content Hub 설명서">Content Hub 설명서</a>
+                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/product-overview" target="_blank" rel="referrer" title="Content Hub 설명서">Content Hub 설명서</a>
                     </p>
-                    <p class="is-size-6">Content Hub, 주요 이점, 액세스 방법, Content Hub에서 사용할 수 있는 옵션에 대한 피드백을 제공하는 방법에 대해 자세히 알아보십시오.</p>
+                    <p class="is-size-6">이 설명서는 Content Hub의 주요 이점, 액세스 방법 및 사용 가능한 옵션에 대한 피드백을 제공하는 방법에 대해 알아보는 진입점 역할을 합니다.</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/product-overview" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">설명서 읽기</span>
+                <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/product-overview" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">자세히 알아보기</span>
                 </a>
             </div>
         </div>
@@ -230,7 +247,7 @@ Content Hub Content Hub을 이해하고 최대한 활용하는 데 도움이 되
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/deploy-content-hub" title="Content Hub 배포">
+                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/deploy-content-hub" title="Content Hub 배포" target="_blank" rel="referrer">
                         <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/deploy-content-hub./media_13f7f053438556286beebdf1266b2d2bf18469b68.png?width=400&format=png&optimize=medium" alt="Content Hub 배포"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
@@ -239,12 +256,12 @@ Content Hub Content Hub을 이해하고 최대한 활용하는 데 도움이 되
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/deploy-content-hub" title="Content Hub 배포">Content Hub 배포</a>
+                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/deploy-content-hub" target="_blank" rel="referrer" title="Content Hub 배포">Content Hub 배포</a>
                     </p>
-                    <p class="is-size-6">Content Hub을 배포하고 활성화하고 다양한 유형의 권한을 가진 사용자에게 액세스를 제공하는 방법(자산 업로드, Adobe Express 사용자)과 사용자에게 관리자 권한을 제공하는 방법에 대해 알아봅니다.</p>
+                    <p class="is-size-6">사용자에게 에셋 업로드 및 관리자 액세스 권한을 비롯한 다양한 권한을 제공하여 Content Hub을 배포하고 활성화하는 방법에 대해 알아봅니다.</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/deploy-content-hub" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">설명서 읽기</span>
+                <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/deploy-content-hub" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">자세히 알아보기</span>
                 </a>
             </div>
         </div>
@@ -253,7 +270,7 @@ Content Hub Content Hub을 이해하고 최대한 활용하는 데 도움이 되
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/frequently-asked-questions-content-hub" title="CONTENT HUB FAQ">
+                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/frequently-asked-questions-content-hub" title="CONTENT HUB FAQ" target="_blank" rel="referrer">
                         <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/frequently-asked-questions-content-hub./media_1fbf2b11f65863898a615041cf5cc7a79b2f8942d.png?width=400&format=png&optimize=medium" alt="CONTENT HUB FAQ"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
@@ -262,12 +279,12 @@ Content Hub Content Hub을 이해하고 최대한 활용하는 데 도움이 되
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/frequently-asked-questions-content-hub" title="CONTENT HUB FAQ">Content Hub FAQ</a>
+                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/frequently-asked-questions-content-hub" target="_blank" rel="referrer" title="CONTENT HUB FAQ">Content Hub FAQ</a>
                     </p>
                     <p class="is-size-6">Content Hub에 대해 가장 자주 묻는 질문(FAQ) 중 일부에 대한 응답을 얻을 수 있습니다.</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/frequently-asked-questions-content-hub" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">설명서 읽기</span>
+                <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/frequently-asked-questions-content-hub" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">자세히 알아보기</span>
                 </a>
             </div>
         </div>
@@ -275,8 +292,5 @@ Content Hub Content Hub을 이해하고 최대한 활용하는 데 도움이 되
 </div>
 <!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
 
-
-
-
-
-
+<br/>
+<br/>
