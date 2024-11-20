@@ -11,13 +11,13 @@ jira: KT-16515
 thumbnail: KT-16515.jpeg
 last-substantial-update: 2024-11-20T00:00:00Z
 duration: 0
-source-git-commit: 6b8a8dc5cdcddfa2d8572bfd195bc67906882f67
+exl-id: 23b2be0d-a8d4-4521-96ba-78b70f4e9cba
+source-git-commit: 316e08e6647d6fd731cd49ae1bc139ce57c3a7f4
 workflow-type: tm+mt
 source-wordcount: '880'
 ht-degree: 1%
 
 ---
-
 
 # AEM API 개요{#aem-apis-overview}
 
@@ -71,7 +71,7 @@ OpenAPI 기반 AEM API와 Adobe API 액세스에 대한 중요한 개념을 자�
 
 **양식**
 
-- [Forms Acrobat 서비스](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/): 양식 및 문서 작업을 위한 API입니다.
+- [Forms Communications API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/): 양식 및 문서 작업을 위한 API입니다.
 
 향후 릴리스에서는 추가 사용 사례를 지원하기 위해 더 많은 OpenAPI 기반 AEM API가 추가됩니다.
 
