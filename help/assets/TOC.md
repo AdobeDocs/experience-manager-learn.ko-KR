@@ -7,9 +7,9 @@ sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: abc6b4df7026f702b3cdaac34fd8ac790670aaa0
+source-git-commit: 30745ba12e9b1bd9e1f3f137c68456efb67cf39a
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '445'
 ht-degree: 17%
 
 ---
@@ -76,9 +76,6 @@ ht-degree: 17%
    + [비디오용 스마트 태그](metadata/video-smart-tags.md)
    + [메타데이터 가져오기 및 내보내기](metadata/metadata-import-export.md)
 
-+ Edge Delivery Services{#edge-delivery-services}
-   + [Sidekick 플러그인](./edge-delivery-services/sidekick-plugin.md)
-
 + Content Hub{#content-hub}
    + [개요](./content-hub/overview.md)
    + [설정](./content-hub/set-up.md)
@@ -88,6 +85,12 @@ ht-degree: 17%
    + [Adobe Express을 사용한 이미지 변형](./content-hub/image-variants.md)
    + [컬렉션](./content-hub/collections.md)
    + [공유](./content-hub/share.md)
+
++ Edge Delivery Services{#edge-delivery-services}
+   + [Sidekick 플러그인](./edge-delivery-services/sidekick-plugin.md)
+
++ Adobe GenStudio{#adobe-genstudio}
+   + [AEM Assets 및 GenStudio for Performance Marketing](https://experienceleague.adobe.com/en/docs/integrations-learn/experience-cloud/tutorials/genstudio-for-performance-marketing-experience-manager/overview)
 
 + 공유 및 배포{#sharing}
    + [자산 다운로드](./sharing/download.md)
