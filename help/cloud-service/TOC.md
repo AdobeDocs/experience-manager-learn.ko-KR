@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 6b8a8dc5cdcddfa2d8572bfd195bc67906882f67
+source-git-commit: e4a9ed215603e1a1726a5a031c1c18f93d438355
 workflow-type: tm+mt
-source-wordcount: '1335'
+source-wordcount: '1331'
 ht-degree: 15%
 
 ---
@@ -397,7 +397,7 @@ ht-degree: 15%
    + [문제 해결](./asset-compute/troubleshooting.md)
 
 + 여러 단계 Tutorials{#multi-step-tutorials}
-   + [AEM Sites 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko){target=_blank}
+   + [AEM Sites 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR){target=_blank}
    + [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ko-KR){target=_blank}
    + [SPA 편집기(React)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html){target=_blank}
    + [AEM Sites 및 Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html){target=_blank}
@@ -435,7 +435,6 @@ ht-degree: 15%
          + [Cloud Manager - 기능 테스트](./expert-resources/cloud-5/season-2/cloud5-mocm-functional-tests.md)
       + 시즌 3{#season-3}
          + [타사 검색](./expert-resources/cloud-5/season-3/cloud5-3rd-party-search.md)
-         + [RUM(실시간 사용자 모니터링)](./expert-resources/cloud-5/season-3/cloud5-rum.md)
          + [Edge 노동자](./expert-resources/cloud-5/season-3/cloud5-edge-workers.md)
          + [Publish, Edge Delivery Services의 이벤트 게시 취소](./expert-resources/cloud-5/season-3/cloud5-publish-events.md)
          + [쿼리 인덱스 및 Excel 공식](./expert-resources/cloud-5/season-3/cloud5-query-indexes.md)

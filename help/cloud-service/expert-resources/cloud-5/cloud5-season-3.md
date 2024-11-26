@@ -6,9 +6,9 @@ solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 3bd7b9f5-5775-4572-8b4a-4d09619e20b9
 duration: 74
-source-git-commit: 4806312931038cc31e6bcf67f242483f62723387
+source-git-commit: e4a9ed215603e1a1726a5a031c1c18f93d438355
 workflow-type: tm+mt
-source-wordcount: '566'
+source-wordcount: '541'
 ht-degree: 0%
 
 ---
@@ -44,36 +44,6 @@ AEM Engineering의 시즌 3의 클라우드 5 시리즈에 오신 것을 환영�
             </p>
         </td>   
         <td>
-            <a href="./season-3/cloud5-rum.md">
-                <img alt="RUM(실시간 사용자 모니터링)" src="https://video.tv.adobe.com/v/3427495?format=jpeg"/>
-            </a>
-            <div>
-                <a href="./season-3/cloud5-rum.md">
-                <strong>RUM(실시간 사용자 모니터링)</strong></a>        
-                <br/><em>James Talbot 및 Damian Langsweirdt, AEM 엔지니어링 포함</em>
-            </div>
-            <p>
-                <br/>
-                RUM(Explore Real User Monitoring)은 Edge Delivery Services과 함께 작동합니다.
-            </p>
-        </td>   
-        <!--
-        <td>
-            <a href="./season-3/cloud5-rum-explorer.md">
-                <img alt="Real User Monitoring (RUM) Explorer" src="https://video.tv.adobe.com/v/3429772?format=jpeg"/>
-            </a>
-            <div>
-                <a href="./season-3/cloud5-rum-explorer.md">
-                <strong>Real User Monitoring (RUM) Explorer</strong></a>        
-                <br/><em>with James Talbot & Damian Langsweirdt, AEM Engineering</em>
-            </div>
-            <p>
-                <br/>
-                Learn about Real User Monitoring (RUM) Explorer and how to access it.
-            </p>
-        </td>   
-        -->
-        <td>
             <a href="./season-3/cloud5-edge-workers.md">
                 <img alt="Edge 노동자" src="https://video.tv.adobe.com/v/3427589?format=jpeg"/>
             </a>
@@ -87,8 +57,6 @@ AEM Engineering의 시즌 3의 클라우드 5 시리즈에 오신 것을 환영�
                 Edge Delivery Services을 사용하는 에지 작업자의 중요성을 살펴봅니다.
             </p>
         </td>   
-    </tr>
-    <tr>
         <td>
             <a href="./season-3/cloud5-publish-events.md">
                 <img alt="Publish, Edge Delivery Services의 이벤트 게시 취소" src="https://video.tv.adobe.com/v/3427681?format=jpeg"/>
@@ -103,6 +71,8 @@ AEM Engineering의 시즌 3의 클라우드 5 시리즈에 오신 것을 환영�
                 Edge Delivery Services에서 게시 및 게시 취소 시 트리거되는 이벤트와 이러한 이벤트를 사용하는 사용 사례 및 예를 살펴봅니다.
             </p>
         </td>  
+    </tr>
+    <tr>
         <td>
             <a href="./season-3/cloud5-query-indexes.md">
                 <img alt="Edge Delivery Services의 쿼리 인덱스 및 Excel 공식" src="https://video.tv.adobe.com/v/3427787?format=jpeg"/>
@@ -131,8 +101,6 @@ AEM Engineering의 시즌 3의 클라우드 5 시리즈에 오신 것을 환영�
                 고유한 Cloudflare CDN을 Edge Delivery Services에 구성하는 방법에 대해 알아봅니다.
             </p>
         </td>           
-    </tr>  
-    <tr>
         <td>
             <a href="./season-3/cloud5-integrate-assets.md">
                 <img alt="문서 작성과 AEM Assets 통합" src="https://video.tv.adobe.com/v/3428302?format=jpeg"/>
@@ -146,7 +114,9 @@ AEM Engineering의 시즌 3의 클라우드 5 시리즈에 오신 것을 환영�
                 <br/>
                 AEM Assets을 문서 작성과 통합하는 방법을 살펴봅니다.
             </p>
-        </td>        
+        </td>
+    </tr>
+    <tr>
         <td>
             <a href="./season-3/cloud5-generative-ai-for-aem-sites.md">
                 <img alt="AEM Sites의 생성 AI" src="https://video.tv.adobe.com/v/3428436?format=jpeg"/>
@@ -175,8 +145,6 @@ AEM Engineering의 시즌 3의 클라우드 5 시리즈에 오신 것을 환영�
                  Edge Delivery Services이 있는 범용 편집기 및 AEM에 대해 알아봅니다.
             </p>
         </td>
-    </tr>  
-    <tr>
         <td>
             <a href="./season-3/cloud5-import-sites-to-edge-delivery-services.md">
                 <img alt="Edge Delivery Services을 사용하여 AEM Sites으로 사이트 가져오기" 
@@ -192,6 +160,8 @@ AEM Engineering의 시즌 3의 클라우드 5 시리즈에 오신 것을 환영�
                  Edge Delivery Services을 사용하여 AEM Sites으로 사이트를 가져오는 방법에 대해 알아봅니다.
             </p>
         </td>
+    </tr>
+    <tr>
         <td>
             <a href="./season-3/cloud5-using-admin-api.md">
                 <img alt="Edge Delivery Services에 관리 API 사용" 
@@ -222,8 +192,6 @@ AEM Engineering의 시즌 3의 클라우드 5 시리즈에 오신 것을 환영�
                  등대 점수가 무엇이며 등대 점수를 최상으로 얻을 수 있는 기술에 대해 알아봅니다.
             </p>
         </td>            
-    </tr> 
-    <tr>
         <td>
             <a href="./season-3/cloud5-lighthouse-score-optimization-part2.md">
                 <img alt="등대 점수 최적화 - 2부"
@@ -238,7 +206,9 @@ AEM Engineering의 시즌 3의 클라우드 5 시리즈에 오신 것을 환영�
                 <br/>                
                  총 차단 시간을 향상시키는 기술에 대해 알아봅니다.
             </p>
-        </td>            
+        </td>   
+    </tr>
+    <tr>
         <td>
             <a href="./season-3/cloud5-lighthouse-score-optimization-part3.md">
                 <img alt="등대 점수 최적화 - 3부"
