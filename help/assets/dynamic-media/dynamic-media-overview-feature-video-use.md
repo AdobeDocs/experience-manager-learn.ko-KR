@@ -9,9 +9,9 @@ level: Beginner
 doc-type: Feature Video
 exl-id: 59462cb4-d379-4e58-b786-ff8dbae6191c
 duration: 2516
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: fd372c7ee387504e4316a6ca657a77fe0a0c511e
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '855'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,12 @@ ht-degree: 0%
 # AEM Assets에서 Dynamic Media 사용 {#understanding-aem-dynamic-media}
 
 이 멀티 파트 비디오 시리즈는 Adobe Experience Manager Dynamic Media을 컨텐츠 서비스 서비스로 사용하여 미디어 컨텐츠를 관리하고 액세스하는 방법에 대한 개요를 제공합니다. Dynamic Media을 사용하면 Experience Manager Assets의 고유한 기능인 다이내믹 디지털 경험을 관리하고 게시할 수 있습니다. Dell의 프레임워크 및 구성 요소 제품군을 통해 마케터는 모든 장치에서 대화형 멀티미디어 경험을 사용자 정의하고 전달할 수 있습니다.
+
+## Dynamic Media 라이브 데모
+
+[![AEM Assets Dynamic Media 라이브 데모](./assets/overview/live-demo.png)](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)
+
+최첨단 솔루션이 구현되는 [**라이브 데모**](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)를 통해 Dynamic Media Adobe의 가능성을 살펴보십시오. [**다이내믹 Assets**](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/dynamic-assets.html)이(가) 워크플로를 간소화하고 컨텐츠 관리를 향상시키는 방법을 알아보고 모든 채널에서 Captivate 대상을 찾는 [**대화형 경험**](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/interactive-experiences.html)을 살펴보십시오. [Dynamic Media에서 콘텐츠 전략을 변형하는 방법을 확인하십시오](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)!
 
 ## Dynamic Media 개요
 
