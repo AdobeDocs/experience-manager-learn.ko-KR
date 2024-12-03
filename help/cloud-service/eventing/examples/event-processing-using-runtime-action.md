@@ -12,7 +12,7 @@ last-substantial-update: 2024-01-30T00:00:00Z
 jira: KT-14879
 thumbnail: KT-14879.jpeg
 exl-id: c362011e-89e4-479c-9a6c-2e5caa3b6e02
-source-git-commit: 315bc1029b133f2ae857196f65e39229caaecaa1
+source-git-commit: 933493afff905bf27ba3d752c543c2e92732bc4c
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 0%
@@ -259,4 +259,3 @@ if (params.challenge) {
 - 이벤트 처리는 Adobe I/O Runtime 작업을 사용하여 수행할 수 있습니다.
 - 런타임 작업은 내부 응용 프로그램, 서드파티 솔루션 및 Adobe 솔루션과 같은 시스템과 통신할 수 있습니다.
 - 런타임 작업은 콘텐츠 변경을 중심으로 설계된 비즈니스 프로세스의 진입점 역할을 합니다.
-
