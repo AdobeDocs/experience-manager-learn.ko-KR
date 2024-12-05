@@ -13,10 +13,10 @@ duration: 532
 last-substantial-update: 2024-06-13T00:00:00Z
 jira: KT-15715
 exl-id: 2f029feb-7273-48e4-91a4-2ac0bf697356
-source-git-commit: ae3912140498f0c305a140305a9d191d0bc151b7
+source-git-commit: 5976e220ac54e901be5f064dbf541d901fccfec5
 workflow-type: tm+mt
-source-wordcount: '44'
-ht-degree: 0%
+source-wordcount: '56'
+ht-degree: 3%
 
 ---
 
@@ -25,3 +25,7 @@ ht-degree: 0%
 AEM 엔지니어링의 Dirk Rudolph가 유니버설 에디터와 Edge Delivery Services 및 AEM과의 작동 방식에 대해 인터뷰합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3429656/?learn=on)
+
+## 추가 리소스
+
+[클라우드 5 시즌 3](../cloud5-season-3.md) 페이지에서 관련 비디오를 시청하십시오.

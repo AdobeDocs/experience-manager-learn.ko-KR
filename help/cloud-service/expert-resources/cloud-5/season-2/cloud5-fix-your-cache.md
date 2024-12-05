@@ -9,10 +9,10 @@ hidefromtoc: true
 recommendations: noDisplay, noCatalog
 exl-id: 591ed430-80b3-49fa-b52f-0d07a2e5ac0e
 duration: 311
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 5976e220ac54e901be5f064dbf541d901fccfec5
 workflow-type: tm+mt
-source-wordcount: '61'
-ht-degree: 1%
+source-wordcount: '73'
+ht-degree: 4%
 
 ---
 
@@ -26,3 +26,7 @@ ht-degree: 1%
 
 + [캐싱 및 콘텐츠 배달](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html)
 + [Google 등대](https://developers.google.com/web/tools/lighthouse)
+
+## 추가 리소스
+
+[클라우드 5 시즌 2](../cloud5-season-2.md) 페이지에서 관련 비디오를 시청하십시오.

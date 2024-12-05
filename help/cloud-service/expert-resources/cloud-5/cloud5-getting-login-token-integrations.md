@@ -9,10 +9,10 @@ hidefromtoc: true
 thumbnail: 341277.jpeg
 exl-id: 41d78e6b-7076-4f4f-8d2c-4bf969b61024
 duration: 314
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 5976e220ac54e901be5f064dbf541d901fccfec5
 workflow-type: tm+mt
-source-wordcount: '103'
-ht-degree: 0%
+source-wordcount: '115'
+ht-degree: 1%
 
 ---
 
@@ -33,3 +33,7 @@ Cloud Service 통합을 위한 로그인 토큰을 얻는 방법과 이를 위�
 + 생성된 토큰의 단순 사용
 
 이 항목에 대한 자세한 내용을 보려면 [토큰 기반 인증](/help/headless-tutorial/authentication/overview.md)에 대한 자습서를 참조할 수 있습니다.
+
+## 추가 리소스
+
+[클라우드 5 시즌 1](cloud5-season-1.md) 페이지에서 관련 비디오를 시청하십시오.

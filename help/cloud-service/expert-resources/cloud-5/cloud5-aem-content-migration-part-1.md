@@ -10,10 +10,10 @@ recommendations: noDisplay, noCatalog
 thumbnail: 342133.jpeg
 exl-id: 817ea20d-d902-4497-83d3-5800ed6aaa8f
 duration: 315
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 5976e220ac54e901be5f064dbf541d901fccfec5
 workflow-type: tm+mt
-source-wordcount: '88'
-ht-degree: 4%
+source-wordcount: '100'
+ht-degree: 6%
 
 ---
 
@@ -31,3 +31,7 @@ Darin과 James는 몇 가지 모범 사례와 AMS/On-Prem과의 차이점 등 AE
 + [repostats](https://github.com/chetanmeh/oak-console-scripts/tree/master/src/main/groovy/repostats)
 + [AEM 현대화 도구](https://opensource.adobe.com/aem-modernize-tools/)
 + [Cloud Service 마이그레이션 도구](https://github.com/adobe/aem-cloud-service-source-migration)
+
+## 추가 리소스
+
+[클라우드 5 시즌 1](cloud5-season-1.md) 페이지에서 관련 비디오를 시청하십시오.

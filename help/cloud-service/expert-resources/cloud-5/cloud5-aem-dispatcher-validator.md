@@ -10,10 +10,10 @@ hidefromtoc: true
 recommendations: noDisplay, noCatalog
 exl-id: e95e7530-100d-4495-abae-4c568e7978b3
 duration: 310
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 5976e220ac54e901be5f064dbf541d901fccfec5
 workflow-type: tm+mt
-source-wordcount: '64'
-ht-degree: 0%
+source-wordcount: '76'
+ht-degree: 2%
 
 ---
 
@@ -29,3 +29,7 @@ AEM 개발 워크플로에서 Dispatcher 유효성 검사기를 사용하는 방
 + [Dispatcher 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/validation-debug.html)
 + 오류 문제 해결
 + 디버깅을 위해 Dispatcher 로그 및 실행 모드 사용
+
+## 추가 리소스
+
+[클라우드 5 시즌 1](cloud5-season-1.md) 페이지에서 관련 비디오를 시청하십시오.

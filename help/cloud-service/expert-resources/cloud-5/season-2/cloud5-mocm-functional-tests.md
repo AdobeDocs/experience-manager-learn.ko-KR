@@ -9,10 +9,10 @@ hidefromtoc: true
 recommendations: noDisplay, noCatalog
 exl-id: 5d9d70ab-3aaa-4e88-b0f8-e8cfe73cc617
 duration: 310
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 5976e220ac54e901be5f064dbf541d901fccfec5
 workflow-type: tm+mt
-source-wordcount: '78'
-ht-degree: 0%
+source-wordcount: '90'
+ht-degree: 2%
 
 ---
 
@@ -27,3 +27,7 @@ AEM as a Cloud Service은 맨 위에 구축된 애플리케이션을 사용하�
 + [기능 테스트](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/test-results/functional-testing.html)
 + [AEM 연기 테스트](https://github.com/adobe/aem-test-samples/)
 + [AEM 테스트 클라이언트](https://github.com/adobe/aem-testing-clients/)
+
+## 추가 리소스
+
+[클라우드 5 시즌 2](../cloud5-season-2.md) 페이지에서 관련 비디오를 시청하십시오.

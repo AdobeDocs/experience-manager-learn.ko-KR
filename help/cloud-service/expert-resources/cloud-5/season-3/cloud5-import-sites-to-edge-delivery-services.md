@@ -13,10 +13,10 @@ hidefromtoc: true
 recommendations: noDisplay, noCatalog
 jira: KT-15844
 exl-id: 82b607e9-8f2e-4e81-b3ee-a50a660be9a0
-source-git-commit: ba744f95f8d1f0b982cd5430860f0cb0945a4cda
+source-git-commit: 5976e220ac54e901be5f064dbf541d901fccfec5
 workflow-type: tm+mt
-source-wordcount: '68'
-ht-degree: 0%
+source-wordcount: '80'
+ht-degree: 2%
 
 ---
 
@@ -25,3 +25,7 @@ ht-degree: 0%
 이 비디오에서는 Edge Delivery Services을 사용하여 기존 사이트를 AEM Sites으로 쉽게 가져올 수 있도록 가져오기 도구를 사용하고 맞춤화하기 위한 모범 사례에 대해 설명합니다. Varun Mitra와 클라우드 아키텍트
 
 >[!VIDEO](https://video.tv.adobe.com/v/3431603/?learn=on)
+
+## 추가 리소스
+
+[클라우드 5 시즌 3](../cloud5-season-3.md) 페이지에서 관련 비디오를 시청하십시오.

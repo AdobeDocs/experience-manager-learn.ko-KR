@@ -10,10 +10,10 @@ hidefromtoc: true
 recommendations: noDisplay, noCatalog
 exl-id: 799539ba-00aa-40c0-89de-cab38b0066a3
 duration: 312
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 5976e220ac54e901be5f064dbf541d901fccfec5
 workflow-type: tm+mt
-source-wordcount: '72'
-ht-degree: 0%
+source-wordcount: '84'
+ht-degree: 2%
 
 ---
 
@@ -30,3 +30,7 @@ Amol Anand가 방문하여 Adobe App Builder과의 통합 및 사용 위치와 �
 + [로깅 및 모니터링](https://adobedocs.github.io/adobeio-runtime/guides/logging_monitoring.html#retrieving-activations-for-blocking-successful-calls)
 + [시스템 제한](https://adobedocs.github.io/adobeio-runtime/guides/system_settings.html) 설정 중
 + [로컬 개발](https://developer.adobe.com/app-builder/docs/resources/debugging/) 팁
+
+## 추가 리소스
+
+[클라우드 5 시즌 1](cloud5-season-1.md) 페이지에서 관련 비디오를 시청하십시오.

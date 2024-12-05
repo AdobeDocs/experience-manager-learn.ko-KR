@@ -11,10 +11,10 @@ jira: KT-9797
 thumbnail: 340760.jpeg
 exl-id: 8b608b05-48ee-434f-8d5a-6c5ff1969dcf
 duration: 297
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 5976e220ac54e901be5f064dbf541d901fccfec5
 workflow-type: tm+mt
-source-wordcount: '87'
-ht-degree: 0%
+source-wordcount: '99'
+ht-degree: 2%
 
 ---
 
@@ -27,8 +27,12 @@ ht-degree: 0%
 ## 이 시리즈의 첫 번째 부분에서 다루는 콘텐츠
 
 + AEM CDN [개요](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html)
-+ WAF(Web Application Firewall) 기능
++ 웹 애플리케이션 방화벽(WAF) 기능
 + IP 제한 사항
 + DDOS 보호
 
 [2부 보기](cloud5-aem-cdn-part2.md)
+
+## 추가 리소스
+
+[클라우드 5 시즌 1](cloud5-season-1.md) 페이지에서 관련 비디오를 시청하십시오.
