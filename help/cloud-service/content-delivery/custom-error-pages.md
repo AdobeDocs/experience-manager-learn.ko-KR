@@ -8,16 +8,16 @@ role: Developer
 level: Beginner, Intermediate
 doc-type: Tutorial
 duration: 0
-last-substantial-update: 2024-09-24T00:00:00Z
+last-substantial-update: 2024-12-04T00:00:00Z
 jira: KT-15123
 thumbnail: KT-15123.jpeg
-source-git-commit: 01e6ef917d855e653eccfe35a2d7548f12628604
+exl-id: c3bfbe59-f540-43f9-81f2-6d7731750fc6
+source-git-commit: 97680d95d4cd3cb34956717a88c15a956286c416
 workflow-type: tm+mt
-source-wordcount: '1566'
+source-wordcount: '1657'
 ht-degree: 0%
 
 ---
-
 
 # 사용자 지정 오류 페이지
 
@@ -50,14 +50,18 @@ _AEM 서비스 유형_(작성자, 게시, 미리보기) 또는 _Adobe 관리 CDN
 
 | 다음에서 제공된 오류 페이지 | 세부 사항 |
 |---------------------|:-----------------------:|
-| AEM 서비스 유형 - 작성자, 게시, 미리보기 | 페이지 요청이 AEM 서비스 유형에서 제공되고 위의 오류 시나리오가 발생하면 오류 페이지가 AEM 서비스 유형에서 제공됩니다. |
+| AEM 서비스 유형 - 작성자, 게시, 미리보기 | 페이지 요청이 AEM 서비스 유형에서 제공되고 위의 오류 시나리오가 발생하면 오류 페이지가 AEM 서비스 유형에서 제공됩니다. 기본적으로 `x-aem-error-pass: true` 헤더가 설정되지 않은 경우 5XX 오류 페이지가 Adobe 관리 CDN 오류 페이지로 재정의됩니다. |
 | Adobe 관리 CDN | Adobe 관리 CDN _이(가) AEM 서비스 유형_(원본 서버)에 연결할 수 없으면 Adobe 관리 CDN에서 오류 페이지가 제공됩니다. **있을 수 없는 이벤트이지만 계획할 가치가 있습니다.** |
+
+>[!NOTE]
+>
+>AEM as Cloud Service에서 CDN은 백엔드에서 5XX 오류가 수신될 때 일반 오류 페이지를 제공합니다. 백엔드의 실제 응답을 통과하려면 응답에 헤더 `x-aem-error-pass: true`을(를) 추가해야 합니다.
+>이는 AEM 또는 Apache/Dispatcher 계층에서 온 응답에만 작동합니다. 중간 인프라 계층에서 발생하는 기타 예기치 않은 오류는 여전히 일반 오류 페이지를 표시합니다.
 
 
 예를 들어 AEM 서비스 유형 및 Adobe 관리 CDN에서 제공되는 기본 오류 페이지는 다음과 같습니다.
 
 ![기본 AEM 오류 페이지](./assets/aem-default-error-pages.png)
-
 
 그러나 내 브랜드와 일치하고 더 나은 사용자 환경을 제공하기 위해 _AEM 서비스 유형과 Adobe 관리 오류 페이지를 모두 사용자 지정_&#x200B;할 수 있습니다.
 
@@ -110,22 +114,33 @@ AEM as a Cloud Service에서 `ErrorDocument` Apache 지시문 옵션은 게시 �
    - [DispatcherPassError](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.d/available_vhosts/wknd.vhost#L133) 값이 1로 설정되어 Dispatcher에서 모든 오류를 처리할 수 있습니다.
 
   ```
+  # In `wknd.vhost` file:
+  
   ...
-  # ErrorDocument directive in wknd.vhost file
+  
+  ## ErrorDocument directive
   ErrorDocument 404 ${404_PAGE}
   ErrorDocument 500 ${500_PAGE}
   ErrorDocument 502 ${500_PAGE}
   ErrorDocument 503 ${500_PAGE}
   ErrorDocument 504 ${500_PAGE}
   
+  ## Add Header for 5XX error page response
+  <IfModule mod_headers.c>
+    ### By default, CDN overrides 5XX error pages. To allow the actual response of the backend to pass through, add the header x-aem-error-pass: true
+    Header set x-aem-error-pass "true" "expr=%{REQUEST_STATUS} >= 500 && %{REQUEST_STATUS} < 600"
+  </IfModule>
+  
   ...
-  # DispatcherPassError value in wknd.vhost file
+  ## DispatcherPassError directive
   <IfModule disp_apache2.c>
       ...
       DispatcherPassError        1
   </IfModule>
   
-  # Custom error pages path in custom.vars file
+  # In `custom.vars` file
+  ...
+  ## Define the error page paths
   Define 404_PAGE /content/wknd/us/en/errors/404.html
   Define 500_PAGE /content/wknd/us/en/errors/500.html
   ...
@@ -370,7 +385,7 @@ Azure Blob Storage에서 정적 파일을 호스팅해 보겠습니다. 그러�
 
 CDN 오류 페이지를 테스트하려면 아래 단계를 수행합니다.
 
-- 브라우저를 열고 Publish 환경 URL로 이동하고 URL에 `cdnstatus?code=404`을(를) 추가합니다(예: [https://publish-p105881-e991000.adobeaemcloud.com/cdnstatus?code=404](https://publish-p105881-e991000.adobeaemcloud.com/cdnstatus?code=404)). 또는 [사용자 지정 도메인 URL](https://wknd.enablementadobe.com/cdnstatus?code=404)을(를) 사용하여 액세스합니다
+- 브라우저에서 AEM as a Cloud Service의 Publish URL로 이동하고 URL에 `cdnstatus?code=404`을(를) 추가합니다(예: [https://publish-p105881-e991000.adobeaemcloud.com/cdnstatus?code=404](https://publish-p105881-e991000.adobeaemcloud.com/cdnstatus?code=404)). 또는 [사용자 지정 도메인 URL](https://wknd.enablementadobe.com/cdnstatus?code=404)을(를) 사용하여 액세스합니다
 
   ![WKND - CDN 오류 페이지](./assets/wknd-cdn-error-page.png)
 
@@ -389,4 +404,3 @@ CDN 오류 페이지를 테스트하려면 아래 단계를 수행합니다.
 - [CDN 오류 페이지 구성](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages)
 
 - [Cloud Manager - 파이프라인 구성](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#config-deployment-pipeline)
-
