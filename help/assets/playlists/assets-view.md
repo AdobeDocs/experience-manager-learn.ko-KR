@@ -9,9 +9,9 @@ last-substantial-update: 2024-11-20T00:00:00Z
 doc-type: Catalog
 duration: 60
 exl-id: 76af4062-4d8d-4908-bd3d-ce5a8af2111a
-source-git-commit: b98f5321a4545d8b9d89d8d599723acc296cf0d4
+source-git-commit: cce071c22a14669344318ad00d57a4fccc956a33
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '405'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ AEM Assetsas a Cloud Service 가 팀 및 프로젝트에 원활하게 작동하�
 <!-- CARDS
 
 * https://experienceleague.adobe.com/en/playlists/experience-manager-all-configure-administrative-access
-* https://experienceleague.adobe.com/en/playlists/experience-manager-assets-get-started-assets-essentials
+* https://experienceleague.adobe.com/en/playlists/experience-manager-assets-get-started-assets-essentials {title=Get started with Assets view}
 
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
@@ -70,7 +70,7 @@ AEM Assetsas a Cloud Service 가 팀 및 프로젝트에 원활하게 작동하�
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-get-started-assets-essentials" target="_blank" rel="referrer" title="AEM Assets Essentials 시작하기">AEM Assets Essentials 시작</a>
+                        <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-get-started-assets-essentials" target="_blank" rel="referrer" title="Assets 보기 시작">Assets 보기 시작</a>
                     </p>
                     <p class="is-size-6">AEM Assets Essentials가 어떻게 부서의 에셋 관리를 간소화할 수 있는지 알아봅니다.</p>
                 </div>
@@ -162,6 +162,8 @@ AEM Assetsas a Cloud Service 과 크리에이티브 도구를 통합하여 원�
 <!-- CARDS
 
 * https://experienceleague.adobe.com/en/playlists/experience-manager-assets-manage-creative-workflows-with-workfront-and-assets-essentials
+  { title = Manage Creative Workflows Using Workfront and AEM Assets }
+  { description = Learn how Adobe Workfront and AEM Assets help your organization manage the creative workflow. }
 
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
@@ -179,9 +181,9 @@ AEM Assetsas a Cloud Service 과 크리에이티브 도구를 통합하여 원�
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-manage-creative-workflows-with-workfront-and-assets-essentials" target="_blank" rel="referrer" title="Workfront 및 Assets Essentials을 사용하여 크리에이티브 워크플로 관리">Workfront 및 Assets Essentials을 사용하여 Creative 워크플로 관리</a>
+                        <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-manage-creative-workflows-with-workfront-and-assets-essentials" target="_blank" rel="referrer" title="Workfront 및 Assets Essentials을 사용하여 크리에이티브 워크플로 관리">Workfront 및 AEM Assets을 사용하여 Creative 워크플로 관리</a>
                     </p>
-                    <p class="is-size-6">Adobe Workfront 및 Experience Manager Assets Essentials가 조직에서 크리에이티브 워크플로우를 관리하는 데 어떻게 도움이 되는지에 대해 알아봅니다.</p>
+                    <p class="is-size-6">Adobe Workfront 및 AEM Assets을 통해 귀사에서 크리에이티브 워크플로우를 관리하는 방법을 알아봅니다.</p>
                 </div>
                 <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-manage-creative-workflows-with-workfront-and-assets-essentials" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">시청</span>
