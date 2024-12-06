@@ -9,7 +9,7 @@ role: Developer
 level: Beginner
 exl-id: 9bfe3142-bfc1-4886-85ea-d1c6de903484
 duration: 1417
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 54a7f93637545a4467c4c587bbc3d1d0de5c64a1
 workflow-type: tm+mt
 source-wordcount: '4441'
 ht-degree: 0%
@@ -39,7 +39,7 @@ AEM Projects에는 여러 [OOTB 프로젝트 템플릿](https://experienceleague
 * [완료된 튜토리얼 패키지](./assets/develop-aem-projects/projects-tasks-guide.ui.apps-0.0.1-SNAPSHOT.zip)
 * [GitHub의 전체 코드 리포지토리](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/feature/projects-tasks-guide)
 
-이 자습서에서는 [AEM 개발 사례](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/developing/introduction/the-basics)에 대한 일부 기본 지식과 [AEM Maven 프로젝트 설정](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html?lang=en)에 대한 일부 친숙함을 가정합니다. 언급된 모든 코드는 참조로 사용하기 위한 것이며 [로컬 개발 AEM 인스턴스](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/deploying/deploying/deploy)에만 배포해야 합니다.
+이 자습서에서는 [AEM 개발 사례](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/developing/introduction/the-basics)에 대한 일부 기본 지식과 [AEM Maven 프로젝트 설정](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html)에 대한 일부 친숙함을 가정합니다. 언급된 모든 코드는 참조로 사용하기 위한 것이며 [로컬 개발 AEM 인스턴스](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/deploying/deploying/deploy)에만 배포해야 합니다.
 
 ## 프로젝트 템플릿 구조
 
