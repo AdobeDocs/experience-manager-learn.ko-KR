@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: f9a1fb40aabb6fdc1157e1f2576f9c0d9cf1b099
+source-git-commit: 891fd1cfdcb82a6d4f1bb031cfa11893a69d0546
 workflow-type: tm+mt
-source-wordcount: '1346'
+source-wordcount: '1356'
 ht-degree: 16%
 
 ---
@@ -416,9 +416,10 @@ ht-degree: 16%
    + [AEM 전문가 시리즈](./expert-resources/expert-series/aem-experts-series.md)
    + 클라우드 5{#cloud-5}
       + [소개](./expert-resources/cloud-5/cloud5-introduction.md)
+      + [시즌](./expert-resources/cloud-5/cloud5-season-4.md)
       + [시즌](./expert-resources/cloud-5/cloud5-season-1.md)
-      + [시즌](./expert-resources/cloud-5/cloud5-season-2.md)
       + [시즌](./expert-resources/cloud-5/cloud5-season-3.md)
+      + [시즌](./expert-resources/cloud-5/cloud5-season-2.md)
       + [AEM CDN 1부](./expert-resources/cloud-5/cloud5-aem-cdn-part1.md)
       + [AEM CDN 2부](./expert-resources/cloud-5/cloud5-aem-cdn-part2.md)
       + [AEM 로그 파일](./expert-resources/cloud-5/cloud5-aem-log-files.md)
@@ -453,4 +454,7 @@ ht-degree: 16%
          + [등대 점수 최적화 - Part1](./expert-resources/cloud-5/season-3/cloud5-lighthouse-score-optimization-part1.md)
          + [등대 점수 최적화 - Part2](./expert-resources/cloud-5/season-3/cloud5-lighthouse-score-optimization-part2.md)
          + [등대 점수 최적화 - Part3](./expert-resources/cloud-5/season-3/cloud5-lighthouse-score-optimization-part3.md)
-
+      + 시즌 4{#season-4}
+         + [모범 사례](./expert-resources/cloud-5/season-4/cloud5-edge-delivery-services-best-practices.md)
+         + [검색 최적화](./expert-resources/cloud-5/season-4/cloud5-search-optimization.md)
+         + [Google 맵](./expert-resources/cloud-5/season-4/cloud5-google-maps.md)
