@@ -7,9 +7,9 @@ recommendations: noDisplay, noCatalog
 duration: 30
 last-substantial-update: 2024-12-15T00:00:00Z
 exl-id: ede3fb19-d803-4b21-8c03-4283f7b4f7f4
-source-git-commit: 1ac985246f81d69340af80b1b457f1a4de8da2b0
+source-git-commit: 155fc2ec8df735888be303242d6221a64e31daad
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '243'
 ht-degree: 0%
 
 ---
@@ -37,19 +37,20 @@ AEM Engineering의 Cloud 5 시리즈 4에 오신 것을 환영합니다. 모든 
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
 <div class="columns">
-    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="" Development best practices for Edge Delivery Services"">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Development best practices for Edge Delivery Services">
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./season-4/cloud5-edge-delivery-services-best-practices.md" title="" Development best practices for Edge Delivery Services"" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3440978/?format=jpeg&amp;nocache=1734040055526" alt="" Development best practices for Edge Delivery Services"" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    <a href="./season-4/cloud5-edge-delivery-services-best-practices.md" title="Edge Delivery Services을 위한 개발 우수 사례" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3440978/?format=jpeg&nocache=1734040055526" alt="Edge Delivery Services을 위한 개발 우수 사례"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
             </div>
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./season-4/cloud5-edge-delivery-services-best-practices.md" target="_blank" rel="referrer" title="" Development best practices for Edge Delivery Services"">"Edge Delivery Services에 대한 개발 모범 사례"</a>
+                        <a href="./season-4/cloud5-edge-delivery-services-best-practices.md" target="_blank" rel="referrer" title="Edge Delivery Services을 위한 개발 우수 사례">Edge Delivery Services을 위한 개발 모범 사례</a>
                     </p>
                     <p class="is-size-6">숙련된 설계자와 함께 Edge Delivery Services에서 개발하기 위한 기술을 살펴봅니다.</p>
                 </div>
