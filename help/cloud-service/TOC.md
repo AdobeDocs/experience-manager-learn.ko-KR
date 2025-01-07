@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 9c0c0594d8bcecbf1e0daf7f3c5d7146adcdb08f
+source-git-commit: d5745a17af6b72b1871925dd7c50cbbb152012fe
 workflow-type: tm+mt
-source-wordcount: '1356'
+source-wordcount: '1361'
 ht-degree: 16%
 
 ---
@@ -143,7 +143,8 @@ ht-degree: 16%
          + [순회 경고](./debugging/cloud-service/risks/traversals.md)
 + AEM API{#aem-apis}
    + [개요](./apis/overview.md)
-   + [OpenAPI 기반 AEM API 호출](./apis/invoke-openapi-based-aem-apis.md)
+   + [OpenAPI 기반 AEM API(서버 간)](./apis/invoke-openapi-based-aem-apis.md)
+   + [OpenAPI 기반 AEM API(사용자 인증)](./apis/invoke-openapi-based-aem-apis-from-web-app.md)
 + 컨텐츠 전달{#content-delivery}
    + [사용자 정의 도메인 이름](./content-delivery/custom-domain-names.md)
    + [Adobe 관리 CDN을 사용한 사용자 정의 도메인 이름](./content-delivery/custom-domain-name-with-adobe-managed-cdn.md)

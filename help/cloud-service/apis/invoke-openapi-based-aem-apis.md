@@ -1,6 +1,6 @@
 ---
 title: OpenAPI 기반 AEM API를 호출하는 방법
-description: 사용자 정의 애플리케이션에서 AEM as a Cloud Service에서 OpenAPI 기반 AEM API를 구성하고 호출하는 방법에 대해 알아봅니다.
+description: OAuth 서버 간 인증을 사용하여 사용자 지정 애플리케이션에서 AEM as a Cloud Service에서 OpenAPI 기반 AEM API를 구성하고 호출하는 방법에 대해 알아봅니다.
 version: Cloud Service
 feature: Developing
 topic: Development, Architecture, Content Management
@@ -12,16 +12,18 @@ thumbnail: KT-16516.jpeg
 last-substantial-update: 2024-11-20T00:00:00Z
 duration: 0
 exl-id: 24c641e7-ab4b-45ee-bbc7-bf6b88b40276
-source-git-commit: 316e08e6647d6fd731cd49ae1bc139ce57c3a7f4
+source-git-commit: d5745a17af6b72b1871925dd7c50cbbb152012fe
 workflow-type: tm+mt
-source-wordcount: '1761'
+source-wordcount: '1800'
 ht-degree: 0%
 
 ---
 
-# OpenAPI 기반 AEM API를 호출하는 방법{#invoke-openapi-based-aem-apis}
+# 서버 간 인증을 위해 OpenAPI 기반 AEM API 호출{#invoke-openapi-based-aem-apis}
 
-사용자 정의 애플리케이션에서 AEM as a Cloud Service에서 OpenAPI 기반 AEM API를 구성하고 호출하는 방법에 대해 알아봅니다.
+_OAuth 서버 간_ 인증을 사용하여 사용자 지정 응용 프로그램에서 AEM as a Cloud Service에서 OpenAPI 기반 AEM API를 구성하고 호출하는 방법에 대해 알아봅니다.
+
+OAuth 서버 간 인증은 사용자 상호 작용 없이 API 액세스가 필요한 백엔드 서비스에 이상적입니다. 클라이언트 응용 프로그램을 인증하기 위해 OAuth 2.0 _client_credentials_ 권한 유형을 사용합니다.
 
 >[!AVAILABILITY]
 >
@@ -30,7 +32,7 @@ ht-degree: 0%
 이 튜토리얼에서는 다음 방법을 알아봅니다.
 
 - AEM as a Cloud Service 환경에 대한 OpenAPI 기반 AEM API 액세스를 활성화합니다.
-- OAuth 서버 간 인증을 사용하여 AEM API에 액세스하도록 ADC(Adobe Developer Console) 프로젝트를 만들고 구성합니다.
+- _OAuth 서버 간 인증_&#x200B;을 사용하여 AEM API에 액세스할 수 있는 Adobe Developer Console(ADC) 프로젝트를 만들고 구성하십시오.
 - 특정 에셋에 대한 메타데이터를 검색하기 위해 Assets 작성자 API를 호출하는 샘플 NodeJS 애플리케이션을 개발합니다.
 
 시작하기 전에 [Adobe API 및 관련 개념 액세스](overview.md#accessing-adobe-apis-and-related-concepts) 섹션을 검토했는지 확인하십시오.

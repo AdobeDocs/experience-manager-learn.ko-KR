@@ -12,10 +12,10 @@ thumbnail: KT-16515.jpeg
 last-substantial-update: 2024-11-20T00:00:00Z
 duration: 0
 exl-id: 23b2be0d-a8d4-4521-96ba-78b70f4e9cba
-source-git-commit: 316e08e6647d6fd731cd49ae1bc139ce57c3a7f4
+source-git-commit: d5745a17af6b72b1871925dd7c50cbbb152012fe
 workflow-type: tm+mt
-source-wordcount: '880'
-ht-degree: 1%
+source-wordcount: '1024'
+ht-degree: 2%
 
 ---
 
@@ -85,6 +85,16 @@ OpenAPI 기반 AEM API는 다음과 같은 인증 방법을 지원합니다.
 
 - **OAuth 단일 페이지 앱 자격 증명**: 브라우저에서 실행 중인 SPA용으로 설계되었으며, 백엔드 서버가 없는 사용자를 대신하여 API에 액세스해야 합니다. 인증 코드 흐름을 보호하기 위해 _authorization_code_ 권한 유형을 사용하고 PKCE(Proof Key for Code Exchange)를 사용하는 클라이언트측 보안 메커니즘에 의존합니다. 자세한 내용은 [OAuth 단일 페이지 앱 자격 증명](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation/#oauth-single-page-app-credential)을 참조하십시오.
 
+### OAuth 서버 간 자격 증명과 OAuth 웹 앱/단일 페이지 앱 자격 증명 간의 차이점{#difference-between-oauth-server-to-server-and-oauth-web-app-single-page-app-credentials}
+
+| | OAuth 서버 간 | OAuth 사용자 인증(웹 앱) |
+| --- | --- | --- |
+| 인증 목적 | 기계 간 상호 작용을 위해 설계되었습니다. | 사용자 중심의 상호 작용을 위해 설계되었습니다. |
+| 토큰 비헤이비어 | 클라이언트 애플리케이션 자체를 나타내는 액세스 토큰에 문제가 있습니다. | 인증된 사용자를 대신하여 액세스 토큰을 발행합니다. |
+| 사용 사례 | 사용자 상호 작용 없이 API 액세스가 필요한 백엔드 서비스 | 사용자를 대신하여 API에 액세스하는 프론트엔드 및 백엔드 구성 요소가 있는 웹 애플리케이션. |
+| 보안 고려 사항 | 중요한 자격 증명(`client_id`, `client_secret`)을 백 엔드 시스템에 안전하게 저장합니다. | 사용자 인증 및 고유한 임시 액세스 토큰이 부여됩니다. 중요한 자격 증명(`client_id`, `client_secret`)을 백 엔드 시스템에 안전하게 저장합니다. |
+| Grant Type | _client_credentials_ | _authorization_code_ |
+
 ## Adobe API 및 관련 개념 액세스{#accessing-adobe-apis-and-related-concepts}
 
 Adobe API에 액세스하려면 먼저 다음 주요 개념을 이해해야 합니다.
@@ -102,4 +112,7 @@ Adobe API에 액세스하려면 먼저 다음 주요 개념을 이해해야 합�
 다양한 AEM API 유형에 대해 이해하고 있으며,
 OpenAPI 기반 AEM API 및 Adobe API 액세스에 대한 주요 개념으로, 이제 AEM과 상호 작용하는 사용자 정의 애플리케이션 구축을 시작할 준비가 되었습니다.
 
-[OpenAPI 기반 AEM API를 호출하는 방법](invoke-openapi-based-aem-apis.md) 자습서를 시작하겠습니다.
+다음으로 시작하겠습니다.
+
+- [서버 간 인증을 위해 OpenAPI 기반 AEM API 호출](invoke-openapi-based-aem-apis.md) 자습서, OpenAPI 기반 AEM API _OAuth 서버 간 자격 증명을 사용하여_&#x200B;에 액세스하는 방법을 보여 줍니다.
+- [웹 앱에서 사용자 인증을 사용하여 OpenAPI 기반 AEM API 호출](invoke-openapi-based-aem-apis-from-web-app.md) 자습서를 통해 _OAuth 웹 앱 자격 증명을 사용하여 웹 애플리케이션에서 OpenAPI 기반 AEM API에 액세스하는 방법을 보여 줍니다_.
