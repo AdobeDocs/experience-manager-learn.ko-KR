@@ -1,5 +1,5 @@
 ---
-title: 웹 앱에서 OpenAPI 기반 AEM API를 호출하는 방법
+title: 웹 앱에서 사용자 인증을 통해 OpenAPI 기반 AEM API 호출
 description: OAuth 웹 앱 인증을 사용하여 사용자 지정 웹 앱에서 AEM as a Cloud Service에서 OpenAPI 기반 AEM API를 호출하는 방법에 대해 알아봅니다.
 version: Cloud Service
 feature: Developing
@@ -9,15 +9,15 @@ level: Intermediate
 doc-type: Tutorial
 jira: KT-16718
 thumbnail: KT-16718.jpeg
-last-substantial-update: 2024-12-17T00:00:00Z
+last-substantial-update: 2025-01-09T00:00:00Z
 duration: 0
-source-git-commit: d5745a17af6b72b1871925dd7c50cbbb152012fe
+exl-id: dc35256a-3873-413f-b282-90948efd5f31
+source-git-commit: 3e91387368943b1b0d62c57f8172a0306758b28f
 workflow-type: tm+mt
-source-wordcount: '2399'
+source-wordcount: '2433'
 ht-degree: 0%
 
 ---
-
 
 # 웹 앱에서 사용자 인증을 통해 OpenAPI 기반 AEM API 호출{#invoke-openapi-based-aem-apis-from-web-app}
 
@@ -36,6 +36,8 @@ OAuth 웹 앱 인증은 **사용자를 대신하여 AEM API에 액세스**&#x200
 WKND PIM 앱은 AEM as a Cloud Service 내에 저장된 제품 속성 및 자산 메타데이터를 관리하도록 설계된 샘플 웹 애플리케이션입니다. 이 예에서는 웹 앱을 Adobe API와 원활하게 통합하여 사용자 중심의 효율적인 워크플로우를 제공하는 방법을 보여 줍니다.
 
 Adobe Developer Console(ADC) 프로젝트가 OAuth 웹 앱 인증을 사용하여 Assets 작성자 API에 액세스하도록 구성되어 있습니다. _authorization_code_ 권한 부여 흐름을 시작하는 데 필요한 _client_id_ 및 _client_secret_&#x200B;을(를) WKND-PIM 웹 앱에 제공합니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/34260?quality=12&learn=on)
 
 다음 다이어그램은 WKND-PIM 웹 앱 _Assets 작성자 API와 상호 작용하기 위한 사용자별 액세스 토큰을 가져오는 중_&#x200B;의 기능 흐름을 보여 줍니다.
 
@@ -66,7 +68,7 @@ WKND-PIM 웹 앱은 [Node.js](https://nodejs.org/en) 및 [Express](https://expre
 
 ## 이 자습서를 사용하는 방법{#how-to-use-this-tutorial}
 
-[웹 앱 키 코드 조각 검토](#review-web-app-key-code-snippets) 섹션을 통해 WKND-PIM 웹 앱에서 사용되는 OAuth 웹 앱 인증 흐름 및 API 호출 코드 조각을 이해할 수 있습니다. 또는 직접 [설치 및 실행](#setup-run-web-app) 섹션으로 이동하여 로컬 컴퓨터에서 WKND-PIM 웹 앱을 설치 및 실행합니다.
+[웹 앱 키 코드 조각 검토](#review-web-app-key-code-snippets) 섹션을 통해 WKND-PIM 웹 앱에서 사용되는 OAuth 웹 앱 인증 흐름 및 API 호출 코드 조각을 이해할 수 있습니다. 또는 직접 [웹 앱 설치 및 실행](#setup-run-web-app) 섹션으로 이동하여 로컬 컴퓨터에서 WKND-PIM 웹 앱을 설정하고 실행합니다.
 
 ## 웹 앱 키 코드 조각 검토{#review-web-app-key-code-snippets}
 
@@ -403,6 +405,11 @@ OpenAPI 기반 AEM API 호출은 액세스 토큰이 안전하게 관리되고 �
 ### 액세스 토큰 새로 고침
 
 액세스 토큰이 만료되기 전에 새로 고치려면 새로 고침 토큰 플로우를 구현할 수 있습니다. 그러나 자습서를 단순화하기 위해 WKND-PIM 웹 앱은 새로 고침 토큰 플로우를 구현하지 않습니다.
+
+
+>[!TIP]
+>
+>다음 섹션을 따라 수행하여 로컬 컴퓨터에서 WKND-PIM 웹 앱을 테스트하고 OAuth 웹 앱 인증 흐름 및 API 호출을 통해 실습 경험을 얻을 수 있습니다.
 
 ## 웹 앱 설정 및 실행
 
