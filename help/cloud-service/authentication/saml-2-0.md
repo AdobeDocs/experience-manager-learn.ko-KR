@@ -11,9 +11,9 @@ thumbnail: 343040.jpeg
 last-substantial-update: 2024-05-15T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
 duration: 2200
-source-git-commit: 87dd4873152d4690abb1efcfebd43d10033afa0a
+source-git-commit: a1f7395cc5f83174259d7a993fefc9964368b4bc
 workflow-type: tm+mt
-source-wordcount: '3919'
+source-wordcount: '4037'
 ht-degree: 1%
 
 ---
@@ -43,7 +43,7 @@ AEM Publish SAML 통합의 일반적인 흐름은 다음과 같습니다.
    + IDP에서 자격 증명을 입력하라는 메시지가 표시됩니다.
    + 사용자가 이미 IDP로 인증되었으므로 추가 자격 증명을 제공할 필요가 없습니다.
 1. IDP는 사용자의 데이터가 포함된 SAML 어설션을 생성하고 IDP의 개인 인증서를 사용하여 서명합니다.
-1. IDP는 사용자의 웹 브라우저를 통해 HTTP POST을 통해 AEM Publish에 SAML 어설션을 전송합니다.
+1. IDP는 사용자의 웹 브라우저(EACH_PROTECTED_PATH/saml_login)를 통해 HTTP POST을 통해 AEM Publish에 SAML 어설션을 보냅니다.
 1. AEM Publish은 SAML 어설션을 수신하고 IDP 공개 인증서를 사용하여 SAML 어설션의 무결성 및 신뢰성을 확인합니다.
 1. AEM Publish은 SAML 2.0 OSGi 구성 및 SAML 어설션의 컨텐츠를 기반으로 AEM 사용자 레코드를 관리합니다.
    + 사용자 만들기
@@ -440,6 +440,9 @@ IDP에 성공적으로 인증되면 IDP는 IDP에 구성된 AEM의 등록된 `/s
 /0190 { /type "allow" /method "POST" /url "*/saml_login" }
 ```
 
+>[!NOTE]
+>다양한 보호 경로 및 개별 IDP 끝점을 위해 AEM에서 여러 SAML 구성을 배포할 때 IDP가 ANGULAR_PROTECTED_PATH/saml_login 끝점에 게시하여 AEM 측에서 적절한 SAML 구성을 선택해야 합니다. 동일한 보호된 경로에 대해 중복 SAML 구성이 있는 경우 SAML 구성을 선택하면 임의로 선택됩니다.
+
 Apache 웹 서버에서 URL 재작성이 구성(`dispatcher/src/conf.d/rewrites/rewrite.rules`)된 경우 `.../saml_login` 끝점에 대한 요청이 실수로 손상되지 않았는지 확인하십시오.
 
 ### 새 환경에서 SAML 사용자에 대해 동적 그룹 멤버십을 활성화하는 방법
@@ -561,6 +564,12 @@ $ git push adobe saml-auth:develop
 ## SAML 인증 호출
 
 SAML 인증 플로우는 특별히 제작된 링크나 단추를 만들어 AEM Site 웹 페이지에서 호출할 수 있습니다. 아래 설명된 매개 변수는 필요에 따라 프로그래밍 방식으로 설정할 수 있으므로, 예를 들어 로그인 단추는 단추의 컨텍스트에 따라 SAML 인증이 성공하면 사용자가 받는 `saml_request_path`을(를) 다른 AEM 페이지로 설정할 수 있습니다.
+
+## SAML을 사용하는 동안 보안 캐싱
+
+AEM 게시 인스턴스에서는 대부분의 페이지가 일반적으로 캐시됩니다. 그러나 SAML로 보호된 경로의 경우 캐싱은 비활성화되거나 auth_checker 구성을 사용하여 보안 캐싱을 활성화해야 합니다. 자세한 내용은 제공된 세부 정보를 참조하십시오[여기](https://experienceleague.adobe.com/ko/docs/experience-manager-dispatcher/using/configuring/permissions-cache)
+
+auth_checker를 활성화하지 않고 보호된 경로를 캐시하는 경우 예기치 않은 동작이 발생할 수 있습니다.
 
 ### GET 요청
 
