@@ -12,7 +12,7 @@ thumbnail: KT-16718.jpeg
 last-substantial-update: 2025-01-09T00:00:00Z
 duration: 0
 exl-id: dc35256a-3873-413f-b282-90948efd5f31
-source-git-commit: 52749190860961ed2baf4c3c3cd7a6b55a87af58
+source-git-commit: 7fe1116de7cf69b3b7ce14ac0b97906f8986546b
 workflow-type: tm+mt
 source-wordcount: '2433'
 ht-degree: 0%
@@ -37,8 +37,8 @@ WKND PIM 앱은 AEM as a Cloud Service 내에 저장된 제품 속성 및 자산
 
 Adobe Developer Console(ADC) 프로젝트가 OAuth 웹 앱 인증을 사용하여 Assets 작성자 API에 액세스하도록 구성되어 있습니다. _authorization_code_ 권한 부여 흐름을 시작하는 데 필요한 _client_id_ 및 _client_secret_&#x200B;을(를) WKND-PIM 웹 앱에 제공합니다.
 
-
 >[!VIDEO](https://video.tv.adobe.com/v/3442757?quality=12&learn=on)
+
 
 다음 다이어그램은 WKND-PIM 웹 앱 _Assets 작성자 API와 상호 작용하기 위한 사용자별 액세스 토큰을 가져오는 중_&#x200B;의 기능 흐름을 보여 줍니다.
 
