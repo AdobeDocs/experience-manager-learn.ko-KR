@@ -12,9 +12,9 @@ last-substantial-update: 2023-12-07T00:00:00Z
 jira: KT-14649
 thumbnail: KT-14649.jpeg
 exl-id: 142ed6ae-1659-4849-80a3-50132b2f1a86
-source-git-commit: ede52c6c9feb0b35bc3729e28591cb4e7c7600f7
+source-git-commit: 99aa43460a76460175123a5bfe5138767491252b
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '860'
 ht-degree: 0%
 
 ---
@@ -125,5 +125,14 @@ AEM 이벤트를 소비하는 기본 메서드는 _push_ 메서드와 _pull_ 메
           Adobe I/O Runtime 작업을 사용하여 수신된 AEM 이벤트를 처리하는 방법을 알아봅니다. 이벤트 처리에는 AEM 콜백, 이벤트 데이터 지속성 및 SPA에서의 표시가 포함됩니다.
         </p>
       </td>
-  </tr>    
+  </tr>
+  <tr>
+    <td>
+        <a  href="./examples/assets-pim-integration.md"><img alt="PIM 통합을 위한 AEM Assets 이벤트" src="./assets/examples/assets-pim-integration/PIM-integration-tile.png"/></a>
+        <div><strong><a href="./examples/assets-pim-integration.md">PIM 통합을 위한 AEM Assets 이벤트</a></strong></div>
+        <p>
+          메타데이터 업데이트를 위해 AEM Assets 및 PIM(제품 정보 관리) 시스템을 통합하는 방법을 알아봅니다.
+        </p>
+      </td>
+  </tr> 
 </table>

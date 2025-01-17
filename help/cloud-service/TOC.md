@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: d5745a17af6b72b1871925dd7c50cbbb152012fe
+source-git-commit: 99aa43460a76460175123a5bfe5138767491252b
 workflow-type: tm+mt
-source-wordcount: '1361'
+source-wordcount: '1366'
 ht-degree: 16%
 
 ---
@@ -197,6 +197,7 @@ ht-degree: 16%
       + [저널링 - AEM 이벤트 로드](./eventing/examples/journaling.md)
       + [Adobe I/O Runtime 작업 - AEM 이벤트 수신](./eventing/examples/runtime-action.md)
       + [Adobe I/O Runtime 작업 - AEM 이벤트 처리](./eventing/examples/event-processing-using-runtime-action.md)
+      + [AEM Assets 이벤트 - PIM 통합](./eventing/examples/assets-pim-integration.md)
 + 마이그레이션 {#migration}
    + [콘텐츠 전송 도구](./migration/content-transfer-tool.md)
    + [자산 일괄 가져오기](./migration/bulk-import.md)
