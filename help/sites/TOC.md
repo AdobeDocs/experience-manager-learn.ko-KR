@@ -6,9 +6,9 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: 4903b0742dca59e621707691f487a430b91e832b
+source-git-commit: e8ce91b0be577ec6cf8f3ab07ba9ff09c7e7a6ab
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '582'
 ht-degree: 18%
 
 ---
@@ -76,7 +76,7 @@ ht-degree: 18%
    + 피어 {#expert-advice}에서 학습
       + [사이트 계층 구조 팁](page-authoring/expert-advice/site-hierarchy.md)
 + 생성형 AI {#generative-ai}
-   + [변형 생성](./generative-ai/generate-variations.md)
+   + [베리에이션 생성](./generative-ai/generate-variations.md)
 + 콘텐츠 조각 {#content-fragments}
    + [콘텐츠 조각 콘솔](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html){target=_blank}
    + [콘텐츠 조각 작성](content-fragments/content-fragments-feature-video-use.md)
@@ -98,6 +98,16 @@ ht-degree: 18%
       + [문서 구조](edge-delivery-services/developing/document-structure.md)
       + [로컬 개발](edge-delivery-services/developing/local-development.md)
       + [Git](edge-delivery-services/developing/git.md)
+      + 범용 편집기 {#universal-editor}
+         + [개요](./edge-delivery-services/developing/universal-editor/0-overview.md)
+         + [새 코드 프로젝트](./edge-delivery-services/developing/universal-editor/1-new-code-project.md)
+         + [새 AEM 사이트](./edge-delivery-services/developing/universal-editor/2-new-aem-site.md)
+         + [로컬 개발 환경](./edge-delivery-services/developing/universal-editor/3-local-development-environment.md)
+         + [웹 사이트 브랜딩](./edge-delivery-services/developing/universal-editor/4-website-branding.md)
+         + [새 블록](./edge-delivery-services/developing/universal-editor/5-new-block.md)
+         + [블록 작성](./edge-delivery-services/developing/universal-editor/6-author-block.md)
+         + [CSS만 포함된 블록](./edge-delivery-services/developing/universal-editor/7a-block-css.md)
+         + [CSS 및 JS로 차단](./edge-delivery-services/developing/universal-editor/7b-block-js-css.md)
    + 방법{#how-to}
       + [피드](edge-delivery-services/how-to/rss.md)
       + [소셜 미디어 공유](edge-delivery-services/how-to/social-media-sharing.md)
@@ -117,7 +127,7 @@ ht-degree: 18%
    + [단순 검색 구현](developing/search-tutorial-develop.md)
    + [소셜 미디어 공유](developing/social-media-sharing-technical-video-use.md)
    + [구성 요소 아이콘 사용자 정의](developing/component-icons-technical-video-develop.md)
-+ 개인 맞춤화 {#personalization}
++ 개인화 {#personalization}
    + [Adobe Target과 통합](https://helpx.adobe.com/marketing-cloud/how-to/aem-target.html){target=_blank}
    + [경험 조각 및 Adobe Target 설정](personalization/experience-fragment-target-technical-video-setup.md)
    + [Adobe Target에서 경험 조각 사용](personalization/experience-fragment-target-offer-feature-video-use.md)
@@ -156,7 +166,7 @@ ht-degree: 18%
    + Experience Platform {#experience-platform}
       + [FPID 생성](integrations/platform/fpid.md)
       + [웹 SDK](integrations/platform/web-sdk.md)
-      + [Platform Web SDK를 사용한 분석](integrations/platform/analytics-using-web-sdk.md)
+      + [Platform Web SDK을 사용한 Analytics](integrations/platform/analytics-using-web-sdk.md)
    + Adobe Experience Platform {#experience-platform-data-collection-tags}의 태그
       + [개요](integrations/experience-platform/data-collection/tags/overview.md)
       + [태그 속성 만들기](integrations/experience-platform/data-collection/tags/create-tag-property.md)
