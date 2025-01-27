@@ -11,22 +11,22 @@ thumbnail: KT-11862.png
 last-substantial-update: 2023-02-15T00:00:00Z
 exl-id: 1d1bcb18-06cd-46fc-be2a-7a3627c1e2b2
 duration: 792
-source-git-commit: 60139d8531d65225fa1aa957f6897a6688033040
+source-git-commit: d199ff3b9f4d995614c193f52dc90270f2283adf
 workflow-type: tm+mt
-source-wordcount: '687'
+source-wordcount: '792'
 ht-degree: 0%
 
 ---
 
 # 신속한 개발 환경 사용 방법
 
-AEM as a Cloud Service에서 **RDE(Rapid Development Environment)를 사용하는 방법**&#x200B;을 알아봅니다. 즐겨찾는 IDE(통합 개발 환경)에서 최종 코드에 대한 개발 주기를 단축하기 위해 코드 및 콘텐츠를 배포합니다.
+AEM as a Cloud Service의 RDE(Rapid Development Environment)를 **사용하는 방법**&#x200B;을 알아봅니다. 즐겨찾는 IDE(통합 개발 환경)에서 최종 코드에 대한 개발 주기를 단축하기 위해 코드 및 콘텐츠를 배포합니다.
 
 [AEM WKND Sites 프로젝트](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project)를 사용하여 즐겨찾는 IDE에서 AEM-RDE의 `install` 명령을 실행하여 다양한 AEM 아티팩트를 RDE에 배포하는 방법에 대해 알아봅니다.
 
 - AEM 코드 및 콘텐츠 패키지(모두, ui.apps) 배포
 - OSGi 번들 및 구성 파일 배포
-- Apache 및 Dispatcher 구성 배포 를 zip 파일로
+- zip 파일로 Apache 및 Dispatcher 구성 배포
 - HTL, `.content.xml`(대화 상자 XML) 배포와 같은 개별 파일
 - `status, reset and delete`과(와) 같은 다른 RDE 명령 검토
 
@@ -96,7 +96,7 @@ $ aio aem:rde:install dispatcher/target/aem-guides-wknd.dispatcher.cloud-2.1.3-S
    ...
    ```
 
-1. Maven 빌드를 수행하거나 개별 파일을 동기화하여 로컬 AEM SDK에서 변경 사항을 확인합니다.
+1. Maven 빌드를 수행하거나 개별 파일을 동기화하여 로컬 AEM SDK의 변경 사항을 확인합니다.
 
 1. `ui.apps` 패키지를 통해 또는 개별 대화 상자 및 HTL 파일을 배포하여 변경 내용을 RDE에 배포합니다.
 
@@ -191,7 +191,7 @@ Apache 또는 Dispatcher 구성 파일 **을(를) 개별적으로 배포할 수 
    ...
    ```
 
-1. 변경 내용을 로컬에서 확인합니다. 자세한 내용은 [로컬에서 Dispatcher 실행](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html#run-dispatcher-locally)을 참조하십시오.
+1. 변경 내용을 로컬에서 확인합니다. 자세한 내용은 [로컬에서 Dispatcher 실행](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools)을 참조하십시오.
 1. 다음 명령을 실행하여 변경 사항을 RDE에 배포합니다.
 
    ```shell
@@ -200,7 +200,49 @@ Apache 또는 Dispatcher 구성 파일 **을(를) 개별적으로 배포할 수 
    $ aio aem:rde:install target/aem-guides-wknd.dispatcher.cloud-2.1.3-SNAPSHOT.zip
    ```
 
+1. RDE에서 변경 사항을 확인합니다.
+
+### YAML(구성) 파일 배포
+
+CDN, 유지 관리 작업, 로그 전달 및 AEM API 인증 구성 파일은 `install` 명령을 사용하여 RDE에 배포할 수 있습니다. 이러한 구성은 AEM 프로젝트의 `config` 폴더에서 YAML 파일로 관리됩니다. 자세한 내용은 [지원되는 구성](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/config-pipeline#configurations)을 참조하십시오.
+
+구성 파일을 배포하는 방법에 대해 알아보려면 `cdn` 구성 파일을 개선하고 RDE에 배포해 보겠습니다.
+
+1. `config` 폴더에서 `cdn.yaml` 파일 열기
+1. 원하는 구성을 업데이트합니다. 예를 들어 속도 제한을 초당 200개의 요청으로 업데이트합니다.
+
+   ```yaml
+   kind: "CDN"
+   version: "1"
+   metadata:
+     envTypes: ["dev", "stage", "prod"]
+   data:
+     trafficFilters:
+       rules:
+       #  Block client for 5m when it exceeds an average of 100 req/sec to origin on a time window of 10sec
+       - name: limit-origin-requests-client-ip
+         when:
+           reqProperty: tier
+           equals: 'publish'
+         rateLimit:
+           limit: 200 # updated rate limit
+           window: 10
+           count: fetches
+           penalty: 300
+           groupBy:
+             - reqProperty: clientIp
+         action: log
+   ...
+   ```
+
+1. 다음 명령을 실행하여 변경 사항을 RDE에 배포합니다
+
+   ```shell
+   $ aio aem:rde:install -t env-config ./config/cdn.yaml
+   ```
+
 1. RDE에서 변경 사항 확인
+
 
 ## 추가 AEM RDE 플러그인 명령
 
@@ -222,7 +264,7 @@ aem rde restart  Restart the author and publish of an RDE
 aem rde status   Get a list of the bundles and configs deployed to the current rde.
 ```
 
-위의 명령을 사용하면 즐겨 찾는 IDE에서 RDE를 관리하여 개발/배포 수명 주기를 단축할 수 있습니다.
+위의 명령을 사용하여 IDE에서 RDE를 관리하여 개발/배포 수명 주기를 단축할 수 있습니다.
 
 ## 다음 단계
 
@@ -231,8 +273,8 @@ RDE를 사용한 [개발/배포 수명 주기](./development-life-cycle.md)에 �
 
 ## 추가 리소스
 
-[RDE 명령 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html#rde-cli-commands)
+[RDE 명령 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments)
 
 AEM 빠른 개발 환경과의 상호 작용을 위한 [Adobe I/O Runtime CLI 플러그인](https://github.com/adobe/aio-cli-plugin-aem-rde#aio-cli-plugin-aem-rde)
 
-[AEM 프로젝트 설정](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html)
+[AEM 프로젝트 설정](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup)
