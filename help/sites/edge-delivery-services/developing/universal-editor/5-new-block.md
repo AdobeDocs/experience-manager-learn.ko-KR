@@ -9,13 +9,13 @@ level: Beginner
 doc-type: Tutorial
 jira: KT-15832
 duration: 900
-source-git-commit: e8ce91b0be577ec6cf8f3ab07ba9ff09c7e7a6ab
+exl-id: 9698c17a-0ac8-426d-bccb-729b048cabd1
+source-git-commit: fcd2d7ae7a0bddb0d80aada2f206be7629b676e3
 workflow-type: tm+mt
-source-wordcount: '1566'
+source-wordcount: '1705'
 ht-degree: 0%
 
 ---
-
 
 # 새 블록 만들기
 
@@ -136,6 +136,12 @@ $ git checkout -b teaser origin/main
 - [요소 그룹화](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#element-grouping) 및 [CTA의 필드 축소](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse)을 사용하여 텍스트 콘텐츠 필드를 함께 그룹화합니다.
 
 [필드 축소](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse), [요소 그룹화](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#element-grouping) 또는 [형식 유추](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#type-inference)에 익숙하지 않은 경우 올바른 구조의 블록 모델을 만드는 데 필수이므로 연결된 설명서를 검토한 후 계속하십시오.
+
+아래 예에서:
+
+- [형식 유추](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#type-inference)은(는) `image` 필드에서 `<img>` HTML 요소를 자동으로 만드는 데 사용됩니다. `image` 및 `imageAlt` 필드와 함께 필드 축소법을 사용하여 `<img>` HTML 요소를 만듭니다. `src` 특성은 `image` 필드의 값으로 설정되어 있고 `alt` 특성은 `imageAlt` 필드의 값으로 설정되어 있습니다.
+- `textContent`은(는) 필드를 분류하는 데 사용되는 그룹 이름입니다. 의미론적이어야 하지만 이 블록에 고유한 것일 수 있습니다. 이렇게 하면 최종 HTML 출력의 동일한 `<div>` 요소 내에서 이 접두사가 있는 모든 필드를 렌더링하도록 유니버설 편집기에 알립니다.
+- 필드 축소도 클릭 유도 문안(CTA)에 대해 `textContent` 그룹 내에 적용됩니다. [형식 유추](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#type-inference)를 통해 `<a>`(으)로 CTA이 만들어졌습니다. `cta` 필드는 `<a>` 요소의 `href` 특성을 설정하는 데 사용되며 `ctaText` 필드는 `<a ...>` 태그 내의 링크에 대한 텍스트 콘텐츠를 제공합니다.
 
 [!BADGE /blocks/teaser/_teaser.json]{type=Neutral tooltip="아래 코드 샘플의 파일 이름입니다."}
 
