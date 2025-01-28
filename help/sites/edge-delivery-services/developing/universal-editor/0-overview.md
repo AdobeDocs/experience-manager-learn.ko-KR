@@ -8,9 +8,9 @@ role: Developer
 level: Beginner
 doc-type: Catalog
 jira: KT-15832
-duration: 89
+duration: 88
 exl-id: aeac08a2-75a0-4adb-b32e-0e7f85e7eb1d
-source-git-commit: aa8ea183639c4c63be74f7ef1ce099c89454c099
+source-git-commit: 9dd07383a3d46d1bbecd2dc8574e6d06a0535fee
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 0%
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 AEM as a Cloud Service에서 코드 프로젝트를 만들고 새 사이트를 구성하는 방법에 대해 알아봅니다. 이 설정을 사용하면 범용 편집기를 사용하여 컨텐츠를 원활하게 개발하고 Edge Delivery Services을 통해 컨텐츠를 빠르게 전달할 수 있습니다.
 
-<!-- XCARDS 
+<!-- CARDS 
 
 * ./1-new-code-project.md
 * ./2-new-aem-site.md
@@ -87,7 +87,7 @@ AEM as a Cloud Service에서 코드 프로젝트를 만들고 새 사이트를 �
 ## 개발 설정
 
 빠른 웹 사이트 개발을 활성화하기 위해 로컬 개발 환경을 구성하는 방법에 대해 알아봅니다. 이 설정을 통해 범용 편집기로 원활한 사이트 생성 및 Edge Delivery Services을 통한 효율적인 콘텐츠 전달을 가능하게 하여 원활하고 최적화된 개발 워크플로를 보장합니다.
-<!-- XCARDS 
+<!-- CARDS 
 
 * ./3-local-development-environment.md
 * ./4-website-branding.md
@@ -163,7 +163,7 @@ AEM as a Cloud Service에서 코드 프로젝트를 만들고 새 사이트를 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./5-new-block.md" title="블록 만들기" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="assets/5-new-block/teaser-block.png" alt="블록 만들기"
+                        <img class="is-bordered-r-small" src="./assets/5-new-block/card.png" alt="블록 만들기"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -186,7 +186,7 @@ AEM as a Cloud Service에서 코드 프로젝트를 만들고 새 사이트를 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./6-author-block.md" title="블록 작성" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="assets/6-author-block/open-new-site.png" alt="블록 작성"
+                        <img class="is-bordered-r-small" src="./assets/6-author-block/card.png" alt="블록 작성"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -209,7 +209,7 @@ AEM as a Cloud Service에서 코드 프로젝트를 만들고 새 사이트를 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./7a-block-css.md" title="CSS를 사용하여 블록 개발" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="assets/7a-block-css/inspect-block-dom.png" alt="CSS를 사용하여 블록 개발"
+                        <img class="is-bordered-r-small" src="./assets/7a-block-css/card.png" alt="CSS를 사용하여 블록 개발"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -232,7 +232,7 @@ AEM as a Cloud Service에서 코드 프로젝트를 만들고 새 사이트를 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./7b-block-js-css.md" title="CSS 및 JS를 사용하여 블록 개발" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="assets/7a-block-css/inspect-block-dom.png" alt="CSS 및 JS를 사용하여 블록 개발"
+                        <img class="is-bordered-r-small" src="./assets/7b-block-js-css/card.png" alt="CSS 및 JS를 사용하여 블록 개발"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
