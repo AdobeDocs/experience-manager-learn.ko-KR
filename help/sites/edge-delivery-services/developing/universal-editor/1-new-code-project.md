@@ -9,13 +9,13 @@ level: Beginner
 doc-type: Tutorial
 jira: KT-15832
 duration: 900
-source-git-commit: e8ce91b0be577ec6cf8f3ab07ba9ff09c7e7a6ab
+exl-id: e1fb7a58-2bba-4952-ad53-53ecf80836db
+source-git-commit: 9b10d79190d805b86884f033e040891655c3c890
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '269'
 ht-degree: 1%
 
 ---
-
 
 # Edge Delivery Services 코드 프로젝트 만들기
 
@@ -32,7 +32,7 @@ Edge Delivery Services 및 유니버설 편집기용 AEM 웹 사이트를 만들
 3. **AEM 코드 동기화 GitHub 앱을 설치**&#x200B;하고 저장소에 대한 액세스 권한을 부여합니다. [앱은 여기에서 찾을 수 있습니다](https://github.com/apps/aem-code-sync).
 4. **올바른 AEM 작성자 서비스를 가리키도록 새 프로젝트의`fstab.yaml`**&#x200B;을(를) 구성합니다.
 
-   * 실험하기 위해 더 낮은 AEM as a Cloud Service 환경(Stage, Dev 또는 RDE)을 사용할 수 있지만, 실제 웹 사이트 구현은 프로덕션 AEM Author 서비스를 사용하도록 구성해야 합니다.
+   * 실험하려면 하위 AEM as a Cloud Service 환경(스테이징 또는 개발)을 사용할 수 있지만 실제 웹 사이트 구현은 프로덕션 AEM 서비스를 사용하도록 구성해야 합니다.
 
 5. **새 프로젝트의`paths.json`**&#x200B;을(를) 편집하여 AEM 작성자 서비스 경로를 웹 사이트의 루트에 매핑합니다.
 
