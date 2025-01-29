@@ -9,9 +9,10 @@ level: Beginner
 doc-type: Tutorial
 jira: KT-15832
 duration: 500
-source-git-commit: e8ce91b0be577ec6cf8f3ab07ba9ff09c7e7a6ab
+exl-id: d1ebcaf4-cea6-4820-8b05-3a0c71749d33
+source-git-commit: 567d2803c5cee274104b38f847820f7665320195
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
@@ -43,3 +44,4 @@ AEM Author에서 사이트를 만든 후 [로컬 개발 환경](./3-local-develo
 3. **대상**&#x200B;에서 **미리 보기**&#x200B;를 선택하고 **다음**&#x200B;을 클릭합니다.
 4. **하위 설정 포함**&#x200B;에서 **하위 설정 포함**&#x200B;을 선택하고 다른 옵션을 선택 취소한 다음 **확인**&#x200B;을 클릭합니다.
 5. 미리 볼 사이트의 콘텐츠를 게시하려면 **Publish**&#x200B;을(를) 클릭하십시오.
+6. 미리보기에 게시하면 페이지가 Edge Delivery Services 미리보기 환경에서 사용할 수 있습니다(페이지는 AEM 미리보기 서비스에 표시되지 않음).
