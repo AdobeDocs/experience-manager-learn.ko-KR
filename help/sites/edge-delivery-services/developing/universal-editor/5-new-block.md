@@ -10,9 +10,9 @@ doc-type: Tutorial
 jira: KT-15832
 duration: 900
 exl-id: 9698c17a-0ac8-426d-bccb-729b048cabd1
-source-git-commit: fcd2d7ae7a0bddb0d80aada2f206be7629b676e3
+source-git-commit: 775821f37df87905ea176b11ecf0ed4a42d00940
 workflow-type: tm+mt
-source-wordcount: '1705'
+source-wordcount: '1742'
 ht-degree: 0%
 
 ---
@@ -322,6 +322,8 @@ $ git checkout -b teaser origin/main
 | `definition.plugins.xwalk.page.resourceType` | 유니버설 편집기에서 구성 요소를 렌더링하기 위한 Sling 리소스 유형을 정의합니다. 항상 `core/franklin/components/block/v#/block` 리소스 형식을 사용하십시오. |
 | `definition.plugins.xwalk.page.template.name` | 블록의 이름입니다. 블록의 폴더 이름과 일치하도록 대/소문자를 줄이고 하이픈을 사용해야 합니다. 이 값은 범용 편집기에서 블록 인스턴스에 레이블을 지정하는 데도 사용됩니다. |
 | `definition.plugins.xwalk.page.template.model` | 이 정의를 유니버설 편집기에서 블록에 대해 표시되는 작성 필드를 제어하는 `model` 정의에 연결합니다. 이 값은 `model.id` 값과 일치해야 합니다. |
+| `definition.plugins.xwalk.page.template.classes` | 블록 HTML 요소의 `class` 특성에 값을 추가하는 선택적 속성입니다. 이렇게 하면 동일한 블록의 변형이 허용됩니다. [클래스 필드 추가](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block#block-options)를 블록의 [모델](#block-model)에 사용하면 `classes` 값을 편집할 수 있습니다. |
+
 
 다음은 블록 정의에 대한 JSON 예입니다.
 
