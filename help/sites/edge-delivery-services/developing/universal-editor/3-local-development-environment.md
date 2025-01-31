@@ -10,7 +10,7 @@ doc-type: Tutorial
 jira: KT-15832
 duration: 700
 exl-id: 187c305a-eb86-4229-9896-a74f5d9d822e
-source-git-commit: 6f0cbdd638ed909b5897521557b65dcf74ac1012
+source-git-commit: ecf37e1f964d0cda90eeca11b224ab950727d2ad
 workflow-type: tm+mt
 source-wordcount: '967'
 ht-degree: 1%
@@ -187,8 +187,8 @@ $ npm run lint:fix
 
 | NPM 스크립트 | 명령 | 설명 |
 |------------------|------------------------------------------------|-------------------------------------------------------|
-| `lint:js:fix` | `npm run lint:js --fix` | JavaScript 린팅 문제를 자동으로 수정합니다. |
-| `lint:css:fix` | `stylelint blocks/**/*.css styles/*.css --fix` | CSS 연결 문제를 자동으로 수정합니다. |
+| `lint:js:fix` | `npm run lint:js -- --fix` | JavaScript 린팅 문제를 자동으로 수정합니다. |
+| `lint:css:fix` | `stylelint blocks/**/*.css styles/*.css -- --fix` | CSS 연결 문제를 자동으로 수정합니다. |
 | `lint:fix` | `npm run lint:js:fix && npm run lint:css:fix` | 빠른 정리를 위해 JS 및 CSS 수정 스크립트를 모두 실행합니다. |
 
 >[!TAB package.json 예]
@@ -200,8 +200,8 @@ $ npm run lint:fix
   ...
   "scripts": [
     ...,
-    "lint:js:fix": "npm run lint:js --fix",
-    "lint:css:fix": "npm run lint:css --fix",
+    "lint:js:fix": "npm run lint:js -- --fix",
+    "lint:css:fix": "npm run lint:css -- --fix",
     "lint:fix": "npm run lint:js:fix && npm run lint:css:fix",
     ...
   ]
