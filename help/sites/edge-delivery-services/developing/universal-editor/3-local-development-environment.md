@@ -9,13 +9,13 @@ level: Beginner
 doc-type: Tutorial
 jira: KT-15832
 duration: 700
-source-git-commit: e8ce91b0be577ec6cf8f3ab07ba9ff09c7e7a6ab
+exl-id: 187c305a-eb86-4229-9896-a74f5d9d822e
+source-git-commit: 6f0cbdd638ed909b5897521557b65dcf74ac1012
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '967'
 ht-degree: 1%
 
 ---
-
 
 # 로컬 개발 환경 설정
 
@@ -65,7 +65,7 @@ Edge Delivery Services 웹 사이트 프로젝트를 위한 개발 도구 및 �
 
 ## GitHub 리포지토리 복제
 
-AEM Edge Delivery Services 코드 프로젝트가 포함된 [GitHub 저장소](./1-new-code-project.md)를 로컬 개발 환경에 복제합니다.
+AEM Edge Delivery Services 코드 프로젝트를 포함하는 새 코드 프로젝트 챕터](./1-new-code-project.md)에서 만든 [GitHub 리포지토리를 로컬 개발 환경에 복제합니다.
 
 ![GitHub 리포지토리 복제](./assets/3-local-development-environment/github-clone.png)
 
@@ -120,6 +120,8 @@ info: Enabled reverse proxy to https://main--aem-wknd-eds-ue--<YOUR_ORG>.aem.pag
 ```
 
 AEM CLI가 브라우저에서 웹 사이트(`http://localhost:3000/`)를 엽니다. 프로젝트의 변경 내용이 웹 브라우저에서 자동으로 핫 로드되는 반면, 콘텐츠 변경 내용 [을(를) 미리 보기 환경에 게시하고 웹 브라우저를 새로 고쳐야 합니다](./6-author-block.md).
+
+웹 사이트가 404 페이지로 열리는 경우 [새 코드 프로젝트](./1-new-code-project.md)에서 업데이트된 [fstab.yaml 또는 paths.json](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/edge-dev-getting-started#create-github-project)이 잘못 구성되었거나 변경 내용이 `main` 분기에 커밋되지 않았을 수 있습니다.
 
 ## JSON 조각 작성
 
@@ -208,4 +210,3 @@ $ npm run lint:fix
 ```
 
 >[!ENDTABS]
-
