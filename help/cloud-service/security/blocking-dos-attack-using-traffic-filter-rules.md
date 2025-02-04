@@ -12,9 +12,9 @@ last-substantial-update: 2024-04-19T00:00:00Z
 jira: KT-15184
 thumbnail: KT-15184.jpeg
 exl-id: 60c2306f-3cb6-4a6e-9588-5fa71472acf7
-source-git-commit: 1b493d85303e539e07ba8b080ed55ef2af18bfcb
+source-git-commit: 0e8b76b6e870978c6db9c9e7a07a6259e931bdcc
 workflow-type: tm+mt
-source-wordcount: '1947'
+source-wordcount: '1924'
 ht-degree: 1%
 
 ---
@@ -109,7 +109,7 @@ ELK 및 Splunk 대시보드에서 다음 시각화를 사용할 수 있습니다
   **ELK 대시보드**:
   ![ELK 대시보드 - IP/POP당 최대 요청](./assets/elk-edge-max-per-ip-pop.png)
 
-  **Splunk 대시보드**:\
+  **Splunk 대시보드**:
   ![Splunk 대시보드 - IP/POP당 최대 요청](./assets/splunk-edge-max-per-ip-pop.png)
 
 - **클라이언트 IP 및 POP당 원본 RPS**: 이 시각화는 원본의 IP/POP당 최대 요청 수 **을(를) 표시합니다**. 시각화의 피크는 최대 요청 수를 나타냅니다.
@@ -168,10 +168,10 @@ data:
           count: all # count all requests
           groupBy:
             - reqProperty: clientIp
-        action: 
+        action:
           type: log
-          experimental_alert: true
-    #  Prevent attack at origin by blocking client for 5 minutes if they make more than 100 requests per second on average            
+          alert: true
+    #  Prevent attack at origin by blocking client for 5 minutes if they make more than 100 requests per second on average
       - name: prevent-dos-attacks-origin
         when:
           reqProperty: tier
@@ -183,17 +183,12 @@ data:
           count: fetches # count only fetches
           groupBy:
             - reqProperty: clientIp
-        action: 
+        action:
           type: log
-          experimental_alert: true   
-          
+          alert: true
 ```
 
 원본 및 에지 규칙이 모두 선언되고 Alert 속성이 `true`(으)로 설정되어 임계값이 충족될 때마다 경고를 받을 수 있으므로 공격을 나타낼 수 있습니다.
-
->[!NOTE]
->
->experimental_alert 앞에 있는 _experimental_ 접두사는 경고 기능이 해제되면 제거됩니다. 얼리 어답터 프로그램에 참여하려면 **<aemcs-waf-adopter@adobe.com>**&#x200B;에게 전자 메일을 보내십시오.
 
 작업 유형은 처음에 기록하도록 설정되므로 합법적인 트래픽이 이러한 비율을 초과하지 않도록 몇 시간 또는 며칠 동안 트래픽을 모니터링할 수 있습니다. 며칠 후 차단 모드로 변경합니다.
 
@@ -211,13 +206,13 @@ AEMCS 환경에 변경 사항을 배포하려면 아래 단계를 따르십시�
 kind: "CDN"
 version: "1"
 metadata:
-  envTypes: 
+  envTypes:
     - dev
     - stage
-    - prod  
-data:  
-  experimental_requestTransformations:
-    rules:            
+    - prod
+data:
+  requestTransformations:
+    rules:
       - name: unset-all-query-params-except-those-needed
         when:
           reqProperty: tier
@@ -229,7 +224,7 @@ data:
 
 ## 트래픽 필터 규칙 경고 수신 {#receiving-alerts}
 
-위에서 언급했듯이 트래픽 필터 규칙에 *experimental_alert: true*&#x200B;가 포함되어 있으면 규칙이 일치할 때 경고가 수신됩니다.
+위에서 언급했듯이 트래픽 필터 규칙에 *경고: true*&#x200B;가 포함된 경우 규칙이 일치하면 경고가 수신됩니다.
 
 ## 경고에 대한 작업 {#acting-on-alerts}
 
@@ -242,7 +237,7 @@ data:
 >[!CAUTION]
 >
 > 프로덕션 환경에서는 이러한 단계를 수행하지 마십시오. 다음 단계는 시뮬레이션 목적으로만 사용됩니다.
-> 
+>
 >트래픽 급증을 나타내는 경고가 표시되면 [트래픽 패턴 분석](#analyzing-traffic-patterns) 섹션으로 진행하십시오.
 
 공격을 시뮬레이션하려면 [Apache Benchmark](https://httpd.apache.org/docs/2.4/programs/ab.html), [Apache JMeter](https://jmeter.apache.org/), [Vegeta](https://github.com/tsenart/vegeta) 등의 도구를 사용할 수 있습니다.
