@@ -10,9 +10,9 @@ doc-type: Tutorial
 jira: KT-15832
 duration: 700
 exl-id: 187c305a-eb86-4229-9896-a74f5d9d822e
-source-git-commit: ecf37e1f964d0cda90eeca11b224ab950727d2ad
+source-git-commit: 66bc4cb6f992c64b1a7e32310ce3e26515f3d380
 workflow-type: tm+mt
-source-wordcount: '967'
+source-wordcount: '973'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,11 @@ Edge Delivery Services 웹 사이트 프로젝트를 위한 개발 도구 및 �
 
 ## 개발 토폴로지
 
-범용 편집기로 편집할 수 있는 Edge Delivery Services 웹 사이트 프로젝트의 개발 토폴로지는 다음 측면으로 구성됩니다.
+이 비디오는 범용 편집기로 편집할 수 있는 Edge Delivery Services 웹 사이트 프로젝트의 개발 토폴로지에 대한 개요를 제공합니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3443978/?learn=on&enablevpops)
+
++++추가 개발 토폴로지 세부 정보 참조
 
 - **GitHub 저장소**:
    - **목적**: 웹 사이트의 코드(CSS 및 JavaScript)를 호스팅합니다.
@@ -54,6 +58,8 @@ Edge Delivery Services 웹 사이트 프로젝트를 위한 개발 도구 및 �
       - 분기 기반 개발을 위한 **GitHub 저장소**&#x200B;의 로컬 복제입니다.
       - 개발 서버 역할을 하는 **AEM CLI**&#x200B;은(는) 핫리로드 환경을 위해 로컬 코드 변경 사항을 **미리 보기 환경**&#x200B;에 적용합니다.
    - **워크플로**: 개발자는 로컬에서 코드를 작성하고, 작업 분기에 변경 내용을 커밋하고, 분기를 GitHub로 푸시하고, **유니버설 편집기**&#x200B;에서 유효성을 검사하고(지정된 분기 사용), 프로덕션 배포가 준비되면 **주 분기**&#x200B;에 병합합니다.
+
++++
 
 ## 사전 요구 사항
 
