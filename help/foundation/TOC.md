@@ -4,9 +4,9 @@ breadcrumb-title: AEM Foundation 튜토리얼
 user-guide-description: Adobe Experience Manager Foundation에 대한 비디오 및 튜토리얼 모음입니다.
 sub-product: Experience Manager
 index: y
-source-git-commit: 33415305f6aa183373eaef4bb4978a59325c8a32
+source-git-commit: f3e1bef93e53de19cf917a915c0fb836f7d3c194
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '249'
 ht-degree: 14%
 
 ---
@@ -21,6 +21,7 @@ ht-degree: 14%
    + [온라인 개정 정리 사용](./administration/use-online-revision-clean-up.md)
    + [시스템 개요 대시보드 사용](./administration/use-the-system-overview-dashboard.md)
    + [URL 리디렉션](./administration/url-redirection.md)
+   + [파이프라인 없는 구성을 사용하는 URL 리디렉션](./administration/url-redirects-using-pipeline-free-configurations.md)
 + 인증 {#authentication}
    + [OKTA 및 AEM](authentication/okta-saml-integration.md)
    + [OAuth 범위](authentication/oauth-code-sample-develop.md)
