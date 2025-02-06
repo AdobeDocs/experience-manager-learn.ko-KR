@@ -10,9 +10,9 @@ doc-type: Tutorial
 jira: KT-15832
 duration: 900
 exl-id: a5cd9906-7e7a-43dd-a6b2-e80f67d37992
-source-git-commit: ceb82c48af10191cece72fe5f53dd79287f805d0
+source-git-commit: ecd3ce33204fa6f3f2c27ebf36e20ec26e429981
 workflow-type: tm+mt
-source-wordcount: '1308'
+source-wordcount: '1315'
 ht-degree: 0%
 
 ---
@@ -292,6 +292,8 @@ Edge Delivery Services 프로젝트는 웹 글꼴의 사용을 최적화하여 �
 웹 글꼴은 크기 때문에 성능에 영향을 주는 경우가 많으므로 CLS(Cumulative Layout Shift) 점수가 높아지고 전체 Lighthouse 점수가 낮아질 수 있습니다. 웹 글꼴을 로드하는 동안 즉각적인 텍스트가 표시되도록 하기 위해 Edge Delivery Services 프로젝트는 브라우저 기반 대체 글꼴을 사용합니다. 이 접근 방식은 원하는 글꼴이 적용되는 동안 원활한 사용자 경험을 유지하는 데 도움이 됩니다.
 
 최상의 대체 글꼴을 선택하려면 Adobe의 [Helix 글꼴 대체 Chrome 확장](https://www.aem.live/developer/font-fallback)을 사용하십시오. 이 확장 프로그램은 사용자 지정 글꼴이 로드되기 전에 브라우저에서 사용할 글꼴과 거의 일치하는 글꼴을 결정합니다. 결과 대체 글꼴 선언을 `styles/styles.css` 파일에 추가하여 성능을 개선하고 원활한 사용자 경험을 보장해야 합니다.
+
+![Helix 글꼴 대체 Chrome 확장](./assets/4-website-branding/font-fallback-chrome-plugin.png){align=center}
 
 [Helix 글꼴 대체 Chrome 확장](https://www.aem.live/developer/font-fallback)을 사용하려면 웹 페이지에 Edge Delivery Services 웹 사이트에서 사용되는 것과 동일한 변형에 적용된 웹 글꼴이 있는지 확인하십시오. 이 자습서에서는 [wknd.site](http://wknd.site/us/en.html)의 확장을 보여 줍니다. 웹 사이트를 개발할 때는 [wknd.site](http://wknd.site/us/en.html)이 아닌 작업 중인 사이트에 확장을 적용하십시오.
 
