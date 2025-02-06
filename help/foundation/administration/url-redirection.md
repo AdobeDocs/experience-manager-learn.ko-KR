@@ -12,9 +12,9 @@ index: y
 doc-type: Article
 exl-id: 8e64f251-e5fd-4add-880e-9d54f8e501a6
 duration: 164
-source-git-commit: 2b5f7a033921270113eb7f41df33444c4f3d7723
+source-git-commit: 515c4020e1c358b5ee044a81affc8d7e1e4ff4eb
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '949'
 ht-degree: 0%
 
 ---
@@ -76,14 +76,13 @@ AEM as a Cloud Service에서 이러한 리디렉션 규칙은 AEM 코드의 일�
 
 #### 맵 관리자 리디렉션
 
-[리디렉션 맵 관리자](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html)를 사용하면 AEM 관리자가 Apache 웹 서버에 직접 액세스하거나 Apache 웹 서버를 다시 시작하지 않아도 [Apache RewriteMap](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html) 파일을 쉽게 유지 관리하고 게시할 수 있습니다. 이 기능을 사용하면 권한 사용자가 개발 팀이나 AEM 배포의 도움 없이 AEM의 콘솔에서 리디렉션 규칙을 만들고, 업데이트하고, 삭제할 수 있습니다. 리디렉션 맵 관리자가 **AEM as a Cloud Service**([파이프라인 없는 URL 리디렉션](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects) 전략 및 관련 [자습서](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/url-redirects-using-pipeline-free-configurations#acs-commons---redirect-map-manager) 참조)과 **AEM 6.x** 모두 호환됩니다.
+[리디렉션 맵 관리자](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html)를 사용하면 AEM 관리자가 Apache 웹 서버에 직접 액세스하거나 Apache 웹 서버를 다시 시작하지 않아도 [Apache RewriteMap](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html) 파일을 쉽게 유지 관리하고 게시할 수 있습니다. 이 기능을 사용하면 권한 사용자가 개발 팀이나 AEM 배포의 도움 없이 AEM의 콘솔에서 리디렉션 규칙을 만들고, 업데이트하고, 삭제할 수 있습니다. 리디렉션 맵 관리자가 **AEM as a Cloud Service**([파이프라인 없는 URL 리디렉션](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects) 전략 참조)과 **AEM 6.x** 모두 호환됩니다.
 
 #### 리디렉션 관리자
 
 [리디렉션 관리자](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/index.html)를 사용하면 AEM의 사용자가 AEM에서 리디렉션을 쉽게 유지 관리하고 게시할 수 있습니다. 구현은 Java™ 서블릿 필터를 기반으로 하므로 일반적인 JVM 리소스 소비를 사용합니다. 또한 이 기능을 사용하면 AEM 개발 팀과 AEM 배포에 대한 종속성이 제거됩니다. 리디렉션 관리자가 **AEM as a Cloud Service**&#x200B;과(와) **AEM 6.x** 모두 호환됩니다. 초기 리디렉션 요청이 AEM Publish 서비스에 도달해야 기본적으로 301/302(대부분) CDN의 캐시 301/302를 생성하여 후속 요청이 edge/CDN에서 리디렉션될 수 있습니다.
 
-[리디렉션 관리자](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/index.html)는 [Apache RewriteMap](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html)에 대해 [리디렉션을 텍스트 파일로 컴파일](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/subpages/rewritemap.html)하여 **AEM as a Cloud Service**&#x200B;에 대해 [파이프라인 없는 URL 리디렉션](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects) 전략을 지원하므로 직접 액세스하거나 다시 시작하지 않고도 Apache 웹 서버에서 사용되는 리디렉션을 업데이트할 수 있습니다. 자세한 내용은 [자습서](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/url-redirects-using-pipeline-free-configurations#acs-commons---redirect-manager)를 참조하세요.
-이 시나리오에서는 초기 리디렉션 요청이 AEM Publish 서비스가 아닌 Apache 웹 서버에 도달합니다.
+[리디렉션 관리자](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/index.html)는 [Apache RewriteMap](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html)에 대해 [리디렉션을 텍스트 파일로 컴파일](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/subpages/rewritemap.html)하여 **AEM as a Cloud Service**&#x200B;에 대해 [파이프라인 없는 URL 리디렉션](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects) 전략을 지원하므로 직접 액세스하거나 다시 시작하지 않고도 Apache 웹 서버에서 사용되는 리디렉션을 업데이트할 수 있습니다. 이 시나리오에서는 초기 리디렉션 요청이 AEM Publish 서비스가 아닌 Apache 웹 서버에 도달합니다.
 
 ### `Redirect` 페이지 속성
 
