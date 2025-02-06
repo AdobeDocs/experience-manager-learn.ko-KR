@@ -12,9 +12,9 @@ thumbnail: KT-16718.jpeg
 last-substantial-update: 2025-01-09T00:00:00Z
 duration: 0
 exl-id: dc35256a-3873-413f-b282-90948efd5f31
-source-git-commit: 7fe1116de7cf69b3b7ce14ac0b97906f8986546b
+source-git-commit: 2b5f7a033921270113eb7f41df33444c4f3d7723
 workflow-type: tm+mt
-source-wordcount: '2433'
+source-wordcount: '2462'
 ht-degree: 0%
 
 ---
@@ -410,7 +410,7 @@ OpenAPI 기반 AEM API 호출은 액세스 토큰이 안전하게 관리되고 �
 
 >[!TIP]
 >
->다음 섹션을 따라 수행하여 로컬 컴퓨터에서 WKND-PIM 웹 앱을 테스트하고 OAuth 웹 앱 인증 흐름 및 API 호출을 통해 실습 경험을 얻을 수 있습니다.
+>다음 섹션에 따라 로컬 컴퓨터에서 WKND-PIM 웹 앱을 테스트하고 OAuth 웹 앱 인증 흐름 및 API 호출을 통해 실습 경험을 얻을 수 있습니다.
 
 ## 웹 앱 설정 및 실행
 
@@ -519,6 +519,11 @@ ADC 프로젝트의 OAuth 웹 앱 자격 증명 ClientID가 AEM 인스턴스와 
    ```
 
    `<ADC Project's OAuth Web App credential ClientID>`을(를) ADC 프로젝트의 OAuth 웹 앱 자격 증명의 실제 ClientID로 바꿉니다. 이 자습서에서 사용되는 API 끝점은 작성자 계층에서만 사용할 수 있지만 다른 API의 경우 yaml 구성에는 _publish_ 또는 _미리보기_ 노드도 있을 수 있습니다.
+
+   >[!CAUTION]
+   >
+   > 데모 목적으로 모든 환경에 동일한 ClientID가 사용됩니다. 더 나은 보안 및 제어를 위해 환경(개발, 단계, 프로덕션)별로 별도의 ClientID를 사용하는 것이 좋습니다.
+
 
 1. 구성 변경 사항을 Git 저장소에 커밋하고 변경 사항을 원격 저장소에 푸시합니다.
 

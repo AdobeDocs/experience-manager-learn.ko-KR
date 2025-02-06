@@ -12,9 +12,9 @@ last-substantial-update: 2024-02-13T00:00:00Z
 jira: KT-14901
 thumbnail: KT-14901.jpeg
 exl-id: 070cbe54-2379-448b-bb7d-3756a60b65f0
-source-git-commit: 99aa43460a76460175123a5bfe5138767491252b
+source-git-commit: 2b5f7a033921270113eb7f41df33444c4f3d7723
 workflow-type: tm+mt
-source-wordcount: '1489'
+source-wordcount: '1517'
 ht-degree: 0%
 
 ---
@@ -126,6 +126,11 @@ ADC 프로젝트의 OAuth 서버 간 자격 증명 ClientID가 AEM 인스턴스�
   ```
 
   `<ADC Project's OAuth Server-to-Server credential ClientID>`을(를) ADC 프로젝트의 OAuth 서버 간 자격 증명의 실제 ClientID로 바꿉니다.
+
+  >[!CAUTION]
+  >
+  > 데모 목적으로 모든 환경에 동일한 ClientID가 사용됩니다. 더 나은 보안 및 제어를 위해 환경(개발, 단계, 프로덕션)별로 별도의 ClientID를 사용하는 것이 좋습니다.
+
 
 - 구성 변경 사항을 Git 저장소에 커밋하고 변경 사항을 원격 저장소에 푸시합니다.
 

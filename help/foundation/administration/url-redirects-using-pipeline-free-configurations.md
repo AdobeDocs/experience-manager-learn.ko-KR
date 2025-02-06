@@ -11,9 +11,9 @@ duration: 0
 last-substantial-update: 2025-02-05T00:00:00Z
 jira: KT-15739
 thumbnail: KT-15739.jpeg
-source-git-commit: f3e1bef93e53de19cf917a915c0fb836f7d3c194
+source-git-commit: 2b5f7a033921270113eb7f41df33444c4f3d7723
 workflow-type: tm+mt
-source-wordcount: '954'
+source-wordcount: '962'
 ht-degree: 0%
 
 ---
@@ -236,10 +236,13 @@ RewriteRule ^(.*)$ ${skicampaign:%{$1}|/} [L,R=301]
 
 브라우저 또는 `curl` 명령을 사용하여 URL 리디렉션을 테스트해 보겠습니다. `/ski/westcoast` URL에 액세스하여 `/us/en/adventures/tahoe-skiing.html`(으)로 리디렉션되는지 확인하십시오.
 
-
 ## 요약
 
 이 자습서에서는 AEM as a Cloud Service 환경에서 파이프라인 없는 구성을 사용하여 URL 리디렉션을 관리하는 방법을 배웠습니다.
 
 마케팅 팀은 URL 리디렉션을 텍스트 파일의 키-값 쌍으로 관리하고 DAM에 업로드하거나 ACS Commons - Redirect Map Manager 또는 Redirect Manager를 사용할 수 있습니다. Dispatcher 구성이 업데이트되어 URL 리디렉션을 RewriteMap으로 로드하고 수신 요청에 적용합니다.
 
+## 추가 리소스
+
+- [파이프라인 없는 URL 리디렉션](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects)
+- [URL 리디렉션](url-redirection.md)

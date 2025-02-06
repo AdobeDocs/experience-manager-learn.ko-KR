@@ -12,7 +12,7 @@ thumbnail: KT-16515.jpeg
 last-substantial-update: 2024-11-20T00:00:00Z
 duration: 0
 exl-id: 23b2be0d-a8d4-4521-96ba-78b70f4e9cba
-source-git-commit: d5745a17af6b72b1871925dd7c50cbbb152012fe
+source-git-commit: 2b5f7a033921270113eb7f41df33444c4f3d7723
 workflow-type: tm+mt
 source-wordcount: '1024'
 ht-degree: 2%
@@ -75,7 +75,7 @@ OpenAPI 기반 AEM API와 Adobe API 액세스에 대한 중요한 개념을 자�
 
 향후 릴리스에서는 추가 사용 사례를 지원하기 위해 더 많은 OpenAPI 기반 AEM API가 추가됩니다.
 
-## 인증 지원{#authentication-support}
+### 인증 지원{#authentication-support}
 
 OpenAPI 기반 AEM API는 다음과 같은 인증 방법을 지원합니다.
 
@@ -95,7 +95,7 @@ OpenAPI 기반 AEM API는 다음과 같은 인증 방법을 지원합니다.
 | 보안 고려 사항 | 중요한 자격 증명(`client_id`, `client_secret`)을 백 엔드 시스템에 안전하게 저장합니다. | 사용자 인증 및 고유한 임시 액세스 토큰이 부여됩니다. 중요한 자격 증명(`client_id`, `client_secret`)을 백 엔드 시스템에 안전하게 저장합니다. |
 | Grant Type | _client_credentials_ | _authorization_code_ |
 
-## Adobe API 및 관련 개념 액세스{#accessing-adobe-apis-and-related-concepts}
+### Adobe API 및 관련 개념 액세스{#accessing-adobe-apis-and-related-concepts}
 
 Adobe API에 액세스하려면 먼저 다음 주요 개념을 이해해야 합니다.
 
