@@ -6,9 +6,9 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: e8ce91b0be577ec6cf8f3ab07ba9ff09c7e7a6ab
+source-git-commit: 2722a4d4a34172e2f418f571f9de3872872e682a
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '585'
 ht-degree: 18%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 18%
       + [Importer를 사용하여 일괄 가져오기](./document-authoring/how-to/bulk-importing-using-importer.md)
       + 변형 생성{#generate-variations}
          + [개요](./document-authoring/how-to/generate-variations/overview.md)
-         + [구성 Sidekick](./document-authoring/how-to/generate-variations/configure-sidekick.md)
+         + [Sidekick 구성](./document-authoring/how-to/generate-variations/configure-sidekick.md)
          + [프롬프트 템플릿](./document-authoring/how-to/generate-variations/prompt-templates.md)
          + [사용자 정의 프롬프트 템플릿](./document-authoring/how-to/generate-variations/custom-prompt-templates.md)
          + [사용자 정의 프롬프트 템플릿 저장](./document-authoring/how-to/generate-variations/save-custom-prompt-template.md)
@@ -108,6 +108,8 @@ ht-degree: 18%
          + [블록 작성](./edge-delivery-services/developing/universal-editor/6-author-block.md)
          + [CSS만 포함된 블록](./edge-delivery-services/developing/universal-editor/7a-block-css.md)
          + [CSS 및 JS로 차단](./edge-delivery-services/developing/universal-editor/7b-block-js-css.md)
+         + 방법{#how-to}
+            + [블록 옵션](./edge-delivery-services/developing/universal-editor/how-to/block-options.md)
    + 방법{#how-to}
       + [피드](edge-delivery-services/how-to/rss.md)
       + [소셜 미디어 공유](edge-delivery-services/how-to/social-media-sharing.md)
@@ -170,7 +172,7 @@ ht-degree: 18%
    + Adobe Experience Platform {#experience-platform-data-collection-tags}의 태그
       + [개요](integrations/experience-platform/data-collection/tags/overview.md)
       + [태그 속성 만들기](integrations/experience-platform/data-collection/tags/create-tag-property.md)
-      + [IMS를 사용하여 AEM 및 Tag 속성 연결](integrations/experience-platform/data-collection/tags/connect-aem-tag-property-using-ims.md)
+      + [IMS를 사용하여 AEM 및 태그 속성 연결](integrations/experience-platform/data-collection/tags/connect-aem-tag-property-using-ims.md)
       + [AEM 태그 만들기 Cloud Service](integrations/experience-platform/data-collection/tags/create-aem-launch-cloud-service.md)
       + [태그 구현 디버깅](integrations/experience-platform/data-collection/tags/debug-tags-implementation.md)
    + Adobe 클라이언트 데이터 레이어 {#adobe-client-data-layer}

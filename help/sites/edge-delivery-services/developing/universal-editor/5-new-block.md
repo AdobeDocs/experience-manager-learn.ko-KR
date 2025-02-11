@@ -10,9 +10,9 @@ doc-type: Tutorial
 jira: KT-15832
 duration: 900
 exl-id: 9698c17a-0ac8-426d-bccb-729b048cabd1
-source-git-commit: 775821f37df87905ea176b11ecf0ed4a42d00940
+source-git-commit: 2722a4d4a34172e2f418f571f9de3872872e682a
 workflow-type: tm+mt
-source-wordcount: '1742'
+source-wordcount: '1767'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ $ git checkout -b teaser origin/main
 블록 JSON은 블록의 세 가지 주요 측면을 정의합니다.
 
 - **정의**: 유니버설 편집기에서 블록을 편집 가능한 구성 요소로 등록하여 블록 모델 및 선택적으로 필터에 연결합니다.
-- **모델**: 블록의 작성 필드와 이러한 필드를 의미 체계 Edge Delivery Services HTML으로 렌더링하는 방법을 지정합니다.
+- **모델**: 블록의 작성 필드와 이러한 필드가 의미 있는 Edge Delivery Services HTML으로 렌더링되는 방법을 지정합니다.
 - **필터**: 유니버설 편집기를 통해 블록을 추가할 수 있는 컨테이너를 제한하도록 필터링 규칙을 구성합니다. 대부분의 블록은 컨테이너가 아니라 다른 컨테이너 블록의 필터에 추가됩니다.
 
 `/blocks/teaser/_teaser.json`에 다음의 초기 구조로 정확한 순서로 새 파일을 만듭니다. 키가 작동하지 않으면 제대로 빌드되지 않을 수 있습니다.
@@ -276,7 +276,7 @@ $ git checkout -b teaser origin/main
 }
 ```
 
-블록의 Edge Delivery Services HTML은 각 필드의 값을 별도의 `div`에 렌더링하므로 콘텐츠 이해, 스타일 적용 및 HTML 구조 조정이 복잡해져 원하는 디자인을 달성할 수 있습니다.
+블록에 대한 Edge Delivery Services HTML은 각 필드의 값을 별도의 `div`에 렌더링하므로 콘텐츠 이해, 스타일 적용 및 HTML 구조 조정이 복잡해져 원하는 디자인을 달성할 수 있습니다.
 
 ```html
 <div>
@@ -379,7 +379,7 @@ $ git checkout -b teaser origin/main
 
 ![차단 필터](./assets/5-new-block/filters.png)
 
-섹션 블록과 같은 Adobe 제공 블록은 프로젝트의 `models` 폴더에 필터를 저장합니다. 조정하려면 Adobe이 제공한 블록(예: `/models/_section.json`)에 대한 JSON 파일을 찾아 티저의 ID(`teaser`)를 필터 목록에 추가합니다. 구성은 티저 구성 요소를 섹션 컨테이너 블록에 추가할 수 있다는 신호를 유니버설 편집기에 보냅니다.
+섹션 블록과 같은 Adobe 제공 블록은 프로젝트의 `models` 폴더에 필터를 저장합니다. 조정하려면 Adobe에서 제공한 블록에 대한 JSON 파일(예: `/models/_section.json`)을 찾은 다음 필터 목록에 티저의 ID(`teaser`)를 추가하십시오. 구성은 티저 구성 요소를 섹션 컨테이너 블록에 추가할 수 있다는 신호를 유니버설 편집기에 보냅니다.
 
 [!BADGE /models/_section.json]{type=Neutral tooltip="아래 코드 샘플의 파일 이름입니다."}
 
@@ -420,15 +420,11 @@ $ npm run lint:js
 
 ## 프로젝트 JSON 작성
 
-블록 JSON 파일(`blocks/teaser/_teaser.json`, `models/_section.json`)을 구성한 후 프로젝트의 `component-models.json`, `component-definitions.json` 및 `component-filters.json` 파일로 컴파일해야 합니다. 프로젝트의 [JSON 빌드](./3-local-development-environment.md#build-json-fragments) npm 스크립트를 실행하여 컴파일을 수행합니다.
+블록 JSON 파일(예: `blocks/teaser/_teaser.json`, `models/_section.json`)을 구성하면 프로젝트의 `component-models.json`, `component-definitions.json` 및 `component-filters.json` 파일에 자동으로 컴파일됩니다. 이 컴파일을 [AEM Boilerplate XWalk 프로젝트 템플릿](https://github.com/adobe-rnd/aem-boilerplate-xwalk)에 포함된 [Husky](https://typicode.github.io/husky/) 사전 커밋 후크에서 자동으로 처리합니다.
 
-```bash
-# ~/Code/aem-wknd-eds-ue
+프로젝트의 [빌드 JSON](./3-local-development-environment.md#build-json-fragments) NPM 스크립트를 사용하여 빌드를 수동으로 또는 프로그래밍 방식으로 트리거할 수도 있습니다.
 
-$ npm run build:json
-```
-
-## 블록 정의 배포
+## 블록 JSON 배포
 
 유니버설 편집기에서 블록을 사용하려면 프로젝트를 커밋하고 GitHub 리포지토리의 분기(이 경우 `teaser` 분기)로 푸시해야 합니다.
 
@@ -439,7 +435,8 @@ Universal Editor가 사용하는 정확한 분기 이름은 Universal Editor의 
 
 $ git add .
 $ git commit -m "Add teaser block JSON files so it is available in Universal Editor"
+# JSON files are compiled automatically and added to the commit via a husky precommit hook
 $ git push origin teaser
 ```
 
-쿼리 매개 변수 `?ref=teaser`을(를) 사용하여 유니버설 편집기를 열면 새 `teaser` 블록이 블록 팔레트에 나타납니다. 블록에는 스타일이 없습니다. 블록의 필드를 [전역 CSS](./4-website-branding.md#global-css)를 통해서만 스타일이 지정된 의미 HTML으로 렌더링합니다.
+쿼리 매개 변수 `?ref=teaser`을(를) 사용하여 유니버설 편집기를 열면 새 `teaser` 블록이 블록 팔레트에 나타납니다. 블록에는 스타일이 없습니다. 블록의 필드를 [전역 CSS](./4-website-branding.md#global-css)를 통해서만 스타일이 지정된 의미 있는 HTML으로 렌더링합니다.

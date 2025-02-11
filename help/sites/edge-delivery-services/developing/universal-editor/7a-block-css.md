@@ -10,7 +10,7 @@ doc-type: Tutorial
 jira: KT-15832
 duration: 900
 exl-id: 14cda9d4-752b-4425-a469-8b6f283ce1db
-source-git-commit: ecd3ce33204fa6f3f2c27ebf36e20ec26e429981
+source-git-commit: 2722a4d4a34172e2f418f571f9de3872872e682a
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%
@@ -23,11 +23,11 @@ Edge Delivery Services의 블록은 CSS를 사용하여 스타일링됩니다. �
 
 이상적으로 블록은 JavaScript을 사용하여 DOM을 수정하거나 CSS 클래스를 추가하지 않고 스타일링에만 CSS가 필요합니다. JavaScript의 필요성은 블록의 [콘텐츠 모델링](./5-new-block.md#block-model) 및 복잡성에 따라 다릅니다. 필요한 경우 [JavaScript 차단](./7b-block-js-css.md)을 추가할 수 있습니다.
 
-CSS 전용 접근 방식을 사용하면 블록의 (대부분) 기본 의미 체계 HTML 요소를 타겟팅하고 스타일을 지정합니다.
+CSS 전용 접근 방식을 사용하면 블록의 (대부분) 기본 의미 있는 HTML 요소가 타겟팅되고 스타일링됩니다.
 
-## 블록 HTML
+## HTML 차단
 
-블록의 스타일을 지정하려면 먼저 Edge Delivery Services에 의해 노출된 DOM을 스타일링할 수 있는 것으로 검토하십시오. DOM은 AEM CLI의 로컬 개발 환경에서 제공하는 블록을 검사하여 찾을 수 있습니다. 유니버설 편집기의 DOM은 약간 다르므로 사용하지 마십시오.
+블록 스타일을 지정하는 방법을 이해하려면 먼저 Edge Delivery Services에서 공개한 DOM을 검토하십시오. 스타일링할 수 있는 기능이기 때문입니다. DOM은 AEM CLI의 로컬 개발 환경에서 제공하는 블록을 검사하여 찾을 수 있습니다. 유니버설 편집기의 DOM은 약간 다르므로 사용하지 마십시오.
 
 >[!BEGINTABS]
 
@@ -75,7 +75,7 @@ Edge Delivery Services JavaScript에서 유추한 요소로 [자동으로 증가
 
 스타일을 지정할 DOM을 찾으려면 로컬 개발 환경에서 스타일이 지정되지 않은 블록이 있는 페이지를 열고 블록을 선택한 다음 DOM을 검사하십시오.
 
-![Inspect DOM 차단](./assets/7a-block-css/inspect-block-dom.png)
+![블록 DOM 검사](./assets/7a-block-css/inspect-block-dom.png)
 
 >[!ENDTABS]
 
@@ -99,15 +99,16 @@ Edge Delivery Services의 JavaScript이 티저 블록을 나타내는 페이지�
     left: 50%; 
     transform: translateX(-50%);
     height: 500px;
+    overflow: hidden; 
 
     /* The image is rendered to the first div in the block */
-    & picture {
+    picture {
         position: absolute;
         z-index: -1;
         inset: 0;
         box-sizing: border-box;
 
-        & img {
+        img {
             object-fit: cover;
             object-position: center;
             width: 100%;
@@ -143,53 +144,52 @@ Edge Delivery Services의 JavaScript이 티저 블록을 나타내는 페이지�
         **/
 
         /* Regardless of the authored heading level, we only want one style the heading */
-        & h1,
-        & h2,
-        & h3,
-        & h4,
-        & h5,
-        & h6 {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
             font-size: var(--heading-font-size-xl);
             margin: 0;
         }
 
-        & h1::after,
-        & h2::after,
-        & h3::after,
-        & h4::after,
-        & h5::after,
-        & h6::after {
+        h1::after,
+        h2::after,
+        h3::after,
+        h4::after,
+        h5::after,
+        h6::after {
             border-bottom: 0;
         }
 
-        & p {
+        p {
             font-size: var(--body-font-size-s);
             margin-bottom: 1rem;
         }
 
         /* Add underlines to links in the text */
-        & a:hover {
+        a:hover {
             text-decoration: underline;
         }
 
         /* Add specific spacing to buttons. These button CSS classes are automatically added by Edge Delivery Services. */
-        & .button-container {
+        .button-container {
             margin: 0;
             padding: 0;
-        }
 
-        & .button {
-            background-color: var(--primary-color);
-            border-radius: 0;
-            color: var(--dark-color);
-            font-size: var(--body-font-size-xs);
-            font-weight: bold;
-            padding: 1em 2.5em;
-            margin: 0;
-            text-transform: uppercase;
+            .button {
+                background-color: var(--primary-color);
+                border-radius: 0;
+                color: var(--dark-color);
+                font-size: var(--body-font-size-xs);
+                font-weight: bold;
+                padding: 1em 2.5em;
+                margin: 0;
+                text-transform: uppercase;
+            }
         }
     }
-
 }
 
 /** Animations 

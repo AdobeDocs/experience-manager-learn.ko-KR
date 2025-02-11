@@ -1,6 +1,6 @@
 ---
 title: CSS 및 JS를 사용하여 블록 개발
-description: CSS와 JavaScript for Edge Delivery Services을 사용하여 블록을 개발하고 범용 편집기를 사용하여 편집할 수 있습니다.
+description: CSS와 Edge Delivery Services용 JavaScript을 사용하여 유니버설 편집기를 사용하여 편집할 수 있는 블록을 개발합니다.
 version: Cloud Service
 feature: Edge Delivery Services
 topic: Development
@@ -10,7 +10,7 @@ doc-type: Tutorial
 jira: KT-15832
 duration: 900
 exl-id: 41c4cfcf-0813-46b7-bca0-7c13de31a20e
-source-git-commit: ecd3ce33204fa6f3f2c27ebf36e20ec26e429981
+source-git-commit: 2722a4d4a34172e2f418f571f9de3872872e682a
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 0%
@@ -31,13 +31,13 @@ ht-degree: 0%
 
 이 접근 방식은 다음 시나리오에서 특히 유용합니다.
 
-- **외부 CSS 관리:** 블록의 CSS가 Edge Delivery Services 외부에서 관리되고 해당 HTML 구조와 일치하지 않는 경우.
+- **외부 CSS 관리:** 블록의 CSS가 Edge Delivery Services 외부에서 관리되고 HTML 구조와 일치하지 않는 경우.
 - **추가 특성:** 접근성을 위한 [ARIA](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA) 또는 [microdata](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata)와 같은 추가 특성이 필요한 경우.
 - **JavaScript 개선 사항:** 이벤트 리스너와 같은 대화형 기능이 필요한 경우.
 
 이 방법은 브라우저 기반의 JavaScript DOM 조작을 사용하지만 DOM을 수정할 때, 특히 요소를 이동할 때 주의해야 합니다. 이러한 변경 사항으로 인해 유니버설 편집기의 작성 경험이 중단될 수 있습니다. 블록의 [콘텐츠 모델](./5-new-block.md#block-model)은(는) 광범위한 DOM 변경의 필요성을 최소화하도록 신중하게 디자인되어야 합니다.
 
-## 블록 HTML
+## HTML 차단
 
 블록 개발에 접근하려면 먼저 Edge Delivery Services에 의해 노출된 DOM을 검토하십시오. 구조는 JavaScript으로 개선되고 CSS로 스타일링됩니다.
 
@@ -85,7 +85,7 @@ ht-degree: 0%
 
 꾸밀 DOM을 찾으려면 로컬 개발 환경에서 꾸미지 않은 블록으로 페이지를 열고 블록을 선택한 다음 DOM을 검사합니다.
 
-![Inspect DOM 차단](./assets/7a-block-css/inspect-block-dom.png)
+![블록 DOM 검사](./assets/7a-block-css/inspect-block-dom.png)
 
 >[!ENDTABS]
 
@@ -195,27 +195,32 @@ export default function decorate(block) {
     left: 50%; 
     transform: translateX(-50%);
     height: 500px;
+    overflow: hidden; 
 
     /* The teaser image */
-    & .image-wrapper {
+    .image-wrapper {
         position: absolute;
         z-index: -1;
         inset: 0;
         box-sizing: border-box;
         overflow: hidden; 
 
-        & .image {
+        .image {
             object-fit: cover;
             object-position: center;
             width: 100%;
             height: 100%;
             transform: scale(1); 
             transition: transform 0.6s ease-in-out;
+
+            .zoom {
+                transform: scale(1.1);
+            }            
         }
     }
 
     /* The teaser text content */
-    & .content {
+    .content {
         position: absolute;
         bottom: 0;
         left: 50%;
@@ -225,55 +230,51 @@ export default function decorate(block) {
         width: 80vw;
         max-width: 1200px;
   
-        & .title {
+        .title {
             font-size: var(--heading-font-size-xl);
             margin: 0;
         }
 
-        & .title::after {
+        .title::after {
             border-bottom: 0;
         }
 
-        & p {
+        p {
             font-size: var(--body-font-size-s);
             margin-bottom: 1rem;
             animation: teaser-fade-in .6s;
-        }
-
-        & p.terms-and-conditions {
-            font-size: var(--body-font-size-xs);
-            color: var(--secondary-color);
-            padding: .5rem 1rem;
-            font-style: italic;
-            border: solid var(--light-color);
-            border-width: 0 0 0 10px;
+        
+            &.terms-and-conditions {
+                font-size: var(--body-font-size-xs);
+                color: var(--secondary-color);
+                padding: .5rem 1rem;
+                font-style: italic;
+                border: solid var(--light-color);
+                border-width: 0 0 0 10px;
+            }
         }
 
         /* Add underlines to links in the text */
-        & a:hover {
+        a:hover {
             text-decoration: underline;
         }
 
         /* Add specific spacing to buttons. These button CSS classes are automatically added by Edge Delivery Services. */
-        & .button-container {
+        .button-container {
             margin: 0;
             padding: 0;
+        
+            .button {   
+                background-color: var(--primary-color);
+                border-radius: 0;
+                color: var(--dark-color);
+                font-size: var(--body-font-size-xs);
+                font-weight: bold;
+                padding: 1em 2.5em;
+                margin: 0;
+                text-transform: uppercase;
+            }
         }
-
-        & .button {   
-            background-color: var(--primary-color);
-            border-radius: 0;
-            color: var(--dark-color);
-            font-size: var(--body-font-size-xs);
-            font-weight: bold;
-            padding: 1em 2.5em;
-            margin: 0;
-            text-transform: uppercase;
-        }
-    }
-
-    & .zoom {
-        transform: scale(1.1);
     }
 }
 
@@ -311,7 +312,7 @@ Terms and conditions: By signing up, you agree to the rules for participation an
 
 ## 개발 미리보기
 
-CSS와 JavaScript이 추가되면 AEM CLI의 로컬 개발 환경은 변경 사항을 핫 로드하여 코드가 블록에 미치는 영향을 빠르고 쉽게 시각화할 수 있습니다. CTA 위로 마우스를 가져간 후 티저의 이미지가 확대되고 축소되는지 확인합니다.
+CSS와 JavaScript이 추가되면 AEM CLI의 로컬 개발 환경은 변경 사항을 핫 로드하여, 코드가 블록에 미치는 영향을 빠르고 쉽게 시각화할 수 있습니다. CTA 위로 마우스를 가져간 후 티저의 이미지가 확대되고 축소되는지 확인합니다.
 
 ![CSS 및 JS를 사용한 티저의 로컬 개발 미리 보기](./assets/7b-block-js-css/local-development-preview.png)
 
