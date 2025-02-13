@@ -4,9 +4,9 @@ breadcrumb-title: AEM Foundation 튜토리얼
 user-guide-description: Adobe Experience Manager Foundation에 대한 비디오 및 튜토리얼 모음입니다.
 sub-product: Experience Manager
 index: y
-source-git-commit: 515c4020e1c358b5ee044a81affc8d7e1e4ff4eb
+source-git-commit: bc2f4655631f28323a39ed5b4c7878613296a0ba
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '248'
 ht-degree: 14%
 
 ---
@@ -21,6 +21,7 @@ ht-degree: 14%
    + [온라인 개정 정리 사용](./administration/use-online-revision-clean-up.md)
    + [시스템 개요 대시보드 사용](./administration/use-the-system-overview-dashboard.md)
    + [URL 리디렉션](./administration/url-redirection.md)
+   + [파이프라인 없는 URL 리디렉션 구현](./administration/implementing-pipeline-free-url-redirects.md)
 + 인증 {#authentication}
    + [OKTA 및 AEM](authentication/okta-saml-integration.md)
    + [OAuth 범위](authentication/oauth-code-sample-develop.md)
@@ -28,7 +29,7 @@ ht-degree: 14%
    + [AMS의 IMS 인증 이해](authentication/adobe-ims-authentication-technical-video-understand.md)
    + [JWT에서 OAuth로 자격 증명 마이그레이션](authentication/jwt-to-oauth-migration.md)
 + Adobe Cloud Manager{#cloud-manager}
-   + [Cloud Manager Adobe 이해](./cloud-manager/understand-cloud-manager-for-aem.md)
+   + [Adobe Cloud Manager 이해](./cloud-manager/understand-cloud-manager-for-aem.md)
    + [CI/CD 파이프라인](./cloud-manager/use-the-cicd-pipeline-in-cloud-manager-for-aem.md)
    + [사용자 정의 권한](./cloud-manager/cloud-permissions.md)
 + 개발 {#development}
@@ -57,12 +58,12 @@ ht-degree: 14%
    + [받은 편지함 사용](./workflow/use-the-inbox.md)
 + 문제 해결 {#troubleshooting}
    + [에셋 다운로드 보고서를 활성화하는 방법](./troubleshooting/how-to-enable-asset-download-report.md)
-   + [AEM6.4에서 강제 리컴파일링하는 방법](./troubleshooting/how-to-force-recompilation.md)
+   + [AEM 6.4에서 강제 리컴파일링하는 방법](./troubleshooting/how-to-force-recompilation.md)
    + [AEM의 색인화 관련 문제를 조사하는 방법](./troubleshooting/how-to-investigate-indexing-related-issues.md)
    + [AEM에서 SAML 관련 문제를 조사하는 방법](./troubleshooting/how-to-investigate-saml-related-issues.md)
    + [AEM에서 검색 관련 문제를 조사하는 방법](./troubleshooting/how-to-investigate-search-related-issues.md)
    + [Oak 로그인 토큰 세션 만료를 설정하는 방법](./troubleshooting/how-to-set-the-oak-login-token-session-expiration.md)
    + [Jetty 구성과 관련된 문제를 해결하는 방법](./troubleshooting/how-to-troubleshoot-issues-related-to-jetty-configuration.md)
    + [성능 관련 문제를 해결하는 방법](./troubleshooting/how-to-troubleshoot-performance-related-issues.md)
-   + [AEM의 메모리 관련 문제를 해결하는 절차](./troubleshooting/steps-to-resolve-memory-related-issues.md)
+   + [AEM의 메모리 관련 문제를 해결하는 단계](./troubleshooting/steps-to-resolve-memory-related-issues.md)
    + [AEM의 복제 문제 해결 단계](./troubleshooting/steps-to-resolve-replication-issues.md)
