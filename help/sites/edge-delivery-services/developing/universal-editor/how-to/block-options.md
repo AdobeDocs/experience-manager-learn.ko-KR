@@ -1,21 +1,21 @@
 ---
 title: 블록 옵션
-description: 서로 다른 모양과 동작을 갖도록 전환할 수 있는 블록을 개발합니다.
+description: 여러 디스플레이 옵션을 사용하여 블록을 작성하는 방법에 대해 알아봅니다.
 version: Cloud Service
 feature: Edge Delivery Services
 topic: Development
 role: Developer
 level: Beginner
 doc-type: Tutorial
-jira: null
+jira: KT-17296
 duration: 700
-source-git-commit: 2722a4d4a34172e2f418f571f9de3872872e682a
+exl-id: f41dff22-bd47-4ea0-98cc-f5ca30b22c4b
+source-git-commit: ae3ade0f31846776aa9bdd3a615d6514b626f48d
 workflow-type: tm+mt
-source-wordcount: '1961'
+source-wordcount: '1958'
 ht-degree: 0%
 
 ---
-
 
 # 옵션을 사용하여 블록 개발
 

@@ -1,6 +1,6 @@
 ---
 title: Edge Delivery Services 및 유니버설 편집기 개발자 자습서
-description: AEM Universal Editor에서 작성되고 Edge Delivery Services을 사용하여 제공되는 새 웹 사이트 개발의 기본 사항에 대해 알아봅니다.
+description: AEM Universal Editor에서 작성 및 Edge Delivery Services을 사용하여 제공되는 새 웹 사이트 개발의 기본 사항에 대해 알아봅니다.
 version: Cloud Service
 feature: Edge Delivery Services
 topic: Development
@@ -10,9 +10,9 @@ doc-type: Catalog
 jira: KT-15832
 duration: 88
 exl-id: aeac08a2-75a0-4adb-b32e-0e7f85e7eb1d
-source-git-commit: 9dd07383a3d46d1bbecd2dc8574e6d06a0535fee
+source-git-commit: ae3ade0f31846776aa9bdd3a615d6514b626f48d
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '558'
 ht-degree: 0%
 
 ---
@@ -21,11 +21,11 @@ ht-degree: 0%
 
 ![Edge Delivery Services 및 유니버설 편집기 개발자 자습서](./assets/0-overview/hero.png)
 
-이 튜토리얼에서는 강력한 작성, 범용 편집기 및 Edge Delivery Services을 사용한 빠른 전달을 결합하는 AEM 웹 사이트 구축의 기본 사항에 대해 알아봅니다. 마지막으로 새 프로젝트를 만들고, 로컬 개발 환경을 설정하고, 새 블록을 만드는 방법에 대한 기본 사항을 이해할 수 있습니다.
+이 자습서에서는 Edge Delivery Services을 사용하여 강력한 작성 및 범용 편집기와 번개처럼 빠른 전달을 결합하는 AEM 웹 사이트 구축의 기본 사항에 대해 알아봅니다. 마지막으로 새 프로젝트를 만들고, 로컬 개발 환경을 설정하고, 새 블록을 만드는 방법에 대한 기본 사항을 이해할 수 있습니다.
 
 ## 프로젝트 설정
 
-AEM as a Cloud Service에서 코드 프로젝트를 만들고 새 사이트를 구성하는 방법에 대해 알아봅니다. 이 설정을 사용하면 범용 편집기를 사용하여 컨텐츠를 원활하게 개발하고 Edge Delivery Services을 통해 컨텐츠를 빠르게 전달할 수 있습니다.
+AEM as a Cloud Service에서 코드 프로젝트를 만들고 새 사이트를 구성하는 방법에 대해 알아봅니다. 이 설정을 사용하면 범용 편집기를 사용하여 콘텐츠를 원활하게 개발하고 Edge Delivery Services을 통해 빠른 콘텐츠를 전달할 수 있습니다.
 
 <!-- CARDS 
 
@@ -50,7 +50,7 @@ AEM as a Cloud Service에서 코드 프로젝트를 만들고 새 사이트를 �
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="./1-new-code-project.md" target="_blank" rel="referrer" title="코드 프로젝트 만들기">코드 프로젝트 만들기</a>
                     </p>
-                    <p class="is-size-6">범용 편집기를 사용하여 편집할 수 있는 Edge Delivery Services 코드 프로젝트를 만듭니다.</p>
+                    <p class="is-size-6">범용 편집기를 사용하여 편집할 수 있는 Edge Delivery Services용 코드 프로젝트를 만듭니다.</p>
                 </div>
                 <a href="./1-new-code-project.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">자세히 알아보기</span>
@@ -73,7 +73,7 @@ AEM as a Cloud Service에서 코드 프로젝트를 만들고 새 사이트를 �
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="./2-new-aem-site.md" target="_blank" rel="referrer" title="AEM 사이트 만들기">AEM 사이트 만들기</a>
                     </p>
-                    <p class="is-size-6">범용 편집기를 사용하여 편집할 수 있는 Edge Delivery Services을 위한 AEM Sites 사이트를 만듭니다.</p>
+                    <p class="is-size-6">범용 편집기를 사용하여 편집할 수 있는 AEM Sites for Edge Delivery Services에서 사이트를 만듭니다.</p>
                 </div>
                 <a href="./2-new-aem-site.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">자세히 알아보기</span>
@@ -86,7 +86,7 @@ AEM as a Cloud Service에서 코드 프로젝트를 만들고 새 사이트를 �
 
 ## 개발 설정
 
-빠른 웹 사이트 개발을 활성화하기 위해 로컬 개발 환경을 구성하는 방법에 대해 알아봅니다. 이 설정을 통해 범용 편집기로 원활한 사이트 생성 및 Edge Delivery Services을 통한 효율적인 콘텐츠 전달을 가능하게 하여 원활하고 최적화된 개발 워크플로를 보장합니다.
+빠른 웹 사이트 개발을 활성화하기 위해 로컬 개발 환경을 구성하는 방법에 대해 알아봅니다. 이 설정을 통해 범용 편집기로 원활한 사이트 생성 및 Edge Delivery Services을 통한 효율적인 콘텐츠 전달을 가능하게 하여 원활하고 최적화된 개발 워크플로를 보장할 수 있습니다.
 <!-- CARDS 
 
 * ./3-local-development-environment.md
@@ -100,7 +100,7 @@ AEM as a Cloud Service에서 코드 프로젝트를 만들고 새 사이트를 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./3-local-development-environment.md" title="로컬 개발 환경 설정" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="assets/3-local-development-environment/github-clone.png" alt="로컬 개발 환경 설정"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443978/?format=jpeg&nocache=1739374885708" alt="로컬 개발 환경 설정"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -110,7 +110,7 @@ AEM as a Cloud Service에서 코드 프로젝트를 만들고 새 사이트를 �
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="./3-local-development-environment.md" target="_blank" rel="referrer" title="로컬 개발 환경 설정">로컬 개발 환경 설정</a>
                     </p>
-                    <p class="is-size-6">Edge Delivery Services과 함께 제공되고 범용 편집기로 편집할 수 있는 사이트에 대한 로컬 개발 환경을 설정합니다.</p>
+                    <p class="is-size-6">Edge Delivery Services으로 제공되고 유니버설 편집기로 편집할 수 있는 사이트에 대한 로컬 개발 환경을 설정합니다.</p>
                 </div>
                 <a href="./3-local-development-environment.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">자세히 알아보기</span>
@@ -242,9 +242,46 @@ AEM as a Cloud Service에서 코드 프로젝트를 만들고 새 사이트를 �
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="./7b-block-js-css.md" target="_blank" rel="referrer" title="CSS 및 JS를 사용하여 블록 개발">CSS 및 JS를 사용하여 블록 개발</a>
                     </p>
-                    <p class="is-size-6">CSS와 JavaScript for Edge Delivery Services을 사용하여 블록을 개발하고 범용 편집기를 사용하여 편집할 수 있습니다.</p>
+                    <p class="is-size-6">CSS와 Edge Delivery Services용 JavaScript을 사용하여 유니버설 편집기를 사용하여 편집할 수 있는 블록을 개발합니다.</p>
                 </div>
                 <a href="./7b-block-js-css.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">자세히 알아보기</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
+
+## 다음 단계
+
+이 자습서를 완료했으므로 이러한 집중 사용 방법을 사용하여 학습한 내용을 빌드하십시오. 이 안내서는 여기에서 설명하는 코드 및 개념을 확장하며 역할별 사용 사례, 고급 기법 및 Edge Delivery Services 및 유니버설 편집기 개발 기술을 향상시키는 추가 팁을 살펴봅니다.
+
+<!-- CARDS 
+
+* ./how-to/block-options.md
+
+-->
+<!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
+<div class="columns">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Block options">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="./how-to/block-options.md" title="블록 옵션" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="how-to/assets/block-options/main.png" alt="블록 옵션"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="./how-to/block-options.md" target="_blank" rel="referrer" title="블록 옵션">옵션 차단</a>
+                    </p>
+                    <p class="is-size-6">여러 디스플레이 옵션을 사용하여 블록을 작성하는 방법에 대해 알아봅니다.</p>
+                </div>
+                <a href="./how-to/block-options.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">자세히 알아보기</span>
                 </a>
             </div>
