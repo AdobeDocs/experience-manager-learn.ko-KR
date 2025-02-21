@@ -11,7 +11,7 @@ thumbnail: KT-11862.png
 last-substantial-update: 2023-02-15T00:00:00Z
 exl-id: 1d1bcb18-06cd-46fc-be2a-7a3627c1e2b2
 duration: 792
-source-git-commit: d199ff3b9f4d995614c193f52dc90270f2283adf
+source-git-commit: 98d67d5b624b386c6a579cd03117372bc9058acb
 workflow-type: tm+mt
 source-wordcount: '792'
 ht-degree: 0%
@@ -22,9 +22,9 @@ ht-degree: 0%
 
 AEM as a Cloud Service의 RDE(Rapid Development Environment)를 **사용하는 방법**&#x200B;을 알아봅니다. 즐겨찾는 IDE(통합 개발 환경)에서 최종 코드에 대한 개발 주기를 단축하기 위해 코드 및 콘텐츠를 배포합니다.
 
-[AEM WKND Sites 프로젝트](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project)를 사용하여 즐겨찾는 IDE에서 AEM-RDE의 `install` 명령을 실행하여 다양한 AEM 아티팩트를 RDE에 배포하는 방법에 대해 알아봅니다.
+[AEM WKND Sites 프로젝트](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project)를 사용하여 즐겨 찾는 IDE에서 AEM-RDE의 `install` 명령을 실행하여 다양한 AEM 아티팩트를 RDE에 배포하는 방법에 대해 알아봅니다.
 
-- AEM 코드 및 콘텐츠 패키지(모두, ui.apps) 배포
+- AEM 코드 및 컨텐츠 패키지(모두, ui.apps) 배포
 - OSGi 번들 및 구성 파일 배포
 - zip 파일로 Apache 및 Dispatcher 구성 배포
 - HTL, `.content.xml`(대화 상자 XML) 배포와 같은 개별 파일
@@ -126,7 +126,7 @@ $ aio aem:rde:install dispatcher/target/aem-guides-wknd.dispatcher.cloud-2.1.3-S
 $ aio aem:rde:install --help
 ```
 
-플래그는 설명이 따로 필요하지 않으므로 `-s` 플래그는 작성자 또는 게시 서비스에만 배포를 타깃팅하는 데 유용합니다. **content-file 또는 content-xml** 파일을 `-p` 플래그와 함께 배포할 때 `-t` 플래그를 사용하여 AEM RDE 환경에서 대상 JCR 경로를 지정하십시오.
+플래그는 설명이 따로 필요하지 않으므로 `-s` 플래그는 작성자 또는 게시 서비스에만 배포를 타깃팅하는 데 유용합니다. `-p` 플래그와 함께 **content-file 또는 content-xml** 파일을 배포할 때 `-t` 플래그를 사용하여 AEM RDE 환경에서 대상 JCR 경로를 지정하십시오.
 
 ### OSGi 번들 배포
 
@@ -238,7 +238,7 @@ CDN, 유지 관리 작업, 로그 전달 및 AEM API 인증 구성 파일은 `in
 1. 다음 명령을 실행하여 변경 사항을 RDE에 배포합니다
 
    ```shell
-   $ aio aem:rde:install -t env-config ./config/cdn.yaml
+   $ aio aem:rde:install -t env-config ./config
    ```
 
 1. RDE에서 변경 사항 확인
@@ -275,6 +275,6 @@ RDE를 사용한 [개발/배포 수명 주기](./development-life-cycle.md)에 �
 
 [RDE 명령 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments)
 
-AEM 빠른 개발 환경과의 상호 작용을 위한 [Adobe I/O Runtime CLI 플러그인](https://github.com/adobe/aio-cli-plugin-aem-rde#aio-cli-plugin-aem-rde)
+[AEM 빠른 개발 환경과의 상호 작용을 위한 Adobe I/O Runtime CLI 플러그인](https://github.com/adobe/aio-cli-plugin-aem-rde#aio-cli-plugin-aem-rde)
 
 [AEM 프로젝트 설정](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup)
