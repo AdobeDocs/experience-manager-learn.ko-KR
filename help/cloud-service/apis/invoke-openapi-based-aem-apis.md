@@ -12,9 +12,9 @@ thumbnail: KT-16516.jpeg
 last-substantial-update: 2024-11-20T00:00:00Z
 duration: 0
 exl-id: 24c641e7-ab4b-45ee-bbc7-bf6b88b40276
-source-git-commit: 2b5f7a033921270113eb7f41df33444c4f3d7723
+source-git-commit: b3d053a09dfc8989441a21bf0d8c4771d816106f
 workflow-type: tm+mt
-source-wordcount: '1831'
+source-wordcount: '1855'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ OAuth 서버 간 인증은 사용자 상호 작용 없이 API 액세스가 필�
 이 튜토리얼에서는 다음 방법을 알아봅니다.
 
 - AEM as a Cloud Service 환경에 대한 OpenAPI 기반 AEM API 액세스를 활성화합니다.
-- _OAuth 서버 간 인증_&#x200B;을 사용하여 AEM API에 액세스할 수 있는 Adobe Developer Console(ADC) 프로젝트를 만들고 구성하십시오.
+- _OAuth 서버 간 인증_&#x200B;을 사용하여 AEM API에 액세스할 수 있도록 Adobe Developer Console(ADC) 프로젝트를 만들고 구성하십시오.
 - 특정 에셋에 대한 메타데이터를 검색하기 위해 Assets 작성자 API를 호출하는 샘플 NodeJS 애플리케이션을 개발합니다.
 
 시작하기 전에 [Adobe API 및 관련 개념 액세스](overview.md#accessing-adobe-apis-and-related-concepts) 섹션을 검토했는지 확인하십시오.
@@ -103,9 +103,9 @@ _Admin Console_ 창에 새로 추가된 제품 프로필이 표시됩니다.
 
 ## AEM API 액세스 활성화
 
-새 제품 프로필을 사용하면 ADC(Adobe Developer Console)에서 OpenAPI 기반 AEM API 액세스가 가능합니다.
+새 제품 프로필을 사용하면 Adobe Developer Console(ADC)에서 OpenAPI 기반 AEM API 액세스가 가능합니다.
 
-새로 추가된 제품 프로필은 사전 정의된 ACL(액세스 제어 목록)이 있는 AEM 사용자 그룹을 나타내는 _서비스_&#x200B;와(과) 연결되어 있습니다. _서비스_&#x200B;를 사용하여 AEM API에 대한 액세스 수준을 제어합니다.
+새로 추가된 제품 프로필은 사전 정의된 ACL(액세스 제어 목록)이 있는 AEM 사용자 그룹을 나타내는 _서비스_&#x200B;와 연결되어 있습니다. _서비스_&#x200B;를 사용하여 AEM API에 대한 액세스 수준을 제어합니다.
 
 제품 프로필과 연결된 _서비스_&#x200B;를 선택하거나 선택 해제하여 액세스 수준을 줄이거나 늘릴 수도 있습니다.
 
@@ -117,7 +117,7 @@ _Admin Console_ 창에 새로 추가된 제품 프로필이 표시됩니다.
 
 ![AEM Assets API 사용자 서비스를 제품 프로필과 연결](assets/associate-aem-assets-api-users-service-with-product-profile.png)
 
-현대화 전 AEM 작성자 인스턴스에서는 두 개의 제품 프로필(**AEM Administrators-XXX** 및 **AEM Users-XXX**)을 사용할 수 있었습니다. 이러한 기존 제품 프로필을 새 서비스와 연결할 수도 있습니다.
+현대화 전 AEM 작성자 인스턴스에서는 **AEM Administrators-XXX** 및 **AEM Users-XXX**&#x200B;라는 두 개의 제품 프로필을 사용할 수 있었습니다. 이러한 기존 제품 프로필을 새 서비스와 연결할 수도 있습니다.
 
 ## Adobe Developer Console(ADC) 프로젝트 만들기
 
@@ -163,12 +163,16 @@ _Admin Console_ 창에 새로 추가된 제품 프로필이 표시됩니다.
 
    ![제품 프로필 선택](assets/select-product-profile.png)
 
+   >[!CAUTION]
+   >
+   >    서비스 계정(기술 계정) 사용자는 **AEM 관리자 - XX - XX** 제품 프로필과 연결되어 전체 액세스 권한을 받습니다.
+
+
 1. AEM API 및 인증 구성을 검토하십시오.
 
    ![AEM API 구성](assets/aem-api-configuration.png)
 
    ![인증 구성](assets/authentication-configuration.png)
-
 
 ## ADC 프로젝트 통신을 사용하도록 AEM 인스턴스 구성
 
@@ -211,7 +215,7 @@ Assets Author API를 호출하는 샘플 NodeJS 애플리케이션을 개발해 
 
 Java, Python 등의 다른 프로그래밍 언어를 사용하여 응용 프로그램을 개발할 수 있습니다.
 
-테스트용으로 [Postman](https://www.postman.com/), [curl](https://curl.se/) 또는 기타 REST 클라이언트를 사용하여 AEM API를 호출할 수 있습니다.
+테스트 목적으로 [Postman](https://www.postman.com/), [curl](https://curl.se/) 또는 기타 REST 클라이언트를 사용하여 AEM API를 호출할 수 있습니다.
 
 ### API 검토
 
@@ -229,7 +233,7 @@ GET https://{bucket}.adobeaemcloud.com/adobe/assets/{assetId}/metadata
 
 - 또는 브라우저의 요소 관리자에서 자산을 검사하여 `assetId`을(를) 가져올 수 있습니다. `data-id="urn:aaid:aem:..."` 특성을 찾습니다.
 
-  ![Inspect 자산](assets/inspect-asset.png)
+  ![자산 검사](assets/inspect-asset.png)
 
 ### 브라우저를 사용하여 API 호출
 
@@ -505,5 +509,5 @@ GET https://{bucket}.adobeaemcloud.com/adobe/assets/{assetId}/metadata
 
 ## 요약
 
-이 자습서에서는 사용자 지정 애플리케이션에서 OpenAPI 기반 AEM API를 호출하는 방법에 대해 알아보았습니다. AEM API 액세스를 활성화하고, ADC(Adobe Developer Console) 프로젝트를 만들고 구성했습니다.
-ADC 프로젝트에서 AEM API를 추가하고, 인증 유형을 구성하고, 제품 프로필을 연결했습니다. 또한 ADC 프로젝트 통신을 사용하도록 AEM 인스턴스를 구성하고 Assets 작성자 API를 호출하는 샘플 NodeJS 애플리케이션을 개발했습니다.
+이 자습서에서는 사용자 지정 애플리케이션에서 OpenAPI 기반 AEM API를 호출하는 방법에 대해 알아보았습니다. AEM API 액세스를 활성화하고 ADC(Adobe Developer Console) 프로젝트를 만들고 구성했습니다.
+ADC 프로젝트에서 AEM API를 추가하고, 인증 유형을 구성하고, 제품 프로필을 연결했습니다. 또한 ADC 프로젝트 통신을 사용할 수 있도록 AEM 인스턴스를 구성하고 Assets 작성자 API를 호출하는 샘플 NodeJS 애플리케이션을 개발했습니다.
