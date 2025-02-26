@@ -1,6 +1,6 @@
 ---
 title: 서비스 사용자
-description: AEM 코드에서 서비스 사용자를 만들고 사용하여 AEM 저장소에 대한 제어된 프로그래밍 방식 액세스를 제공하는 방법에 대해 알아봅니다.
+description: AEM 코드에서 서비스 사용자를 만들고 사용하여 제어된 프로그래밍 방식 AEM 저장소 액세스를 제공하는 방법에 대해 알아봅니다.
 version: Cloud Service
 topic: Development
 feature: OSGI, Security
@@ -11,16 +11,16 @@ thumbnail: 337530.jpeg
 last-substantial-update: 2022-10-10T00:00:00Z
 exl-id: 66f627e4-863d-45d7-bc68-7ec108a1c271
 duration: 1053
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 7d114e59c0fb975994540e0af2e3d31a09c5a38f
 workflow-type: tm+mt
-source-wordcount: '62'
-ht-degree: 11%
+source-wordcount: '96'
+ht-degree: 7%
 
 ---
 
 # 서비스 사용자
 
-AEM 코드에서 서비스 사용자를 만들고 사용하여 AEM 저장소에 대한 제어된 프로그래밍 방식 액세스를 제공하는 방법에 대해 알아봅니다.
+AEM 코드에서 서비스 사용자를 만들고 사용하여 제어된 프로그래밍 방식 AEM 저장소 액세스를 제공하는 방법에 대해 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/337530?quality=12&learn=on)
 
@@ -121,6 +121,8 @@ public class ContentStatisticsImpl implements ContentStatistics {
 ```
 
 ### org.apache.sling.jcr.repoinit.RepositoryInitializer-wknd-examples-statistics.config
+
+일부 Sling Repository Initializer 지시문은 `ACLOptions`과(와) 같은 `.config` 확장에서 지원되지 않습니다. 고급 지시문을 사용하려면 `.cfg.json` 형식을 사용하십시오. 여기서 Sling Repository Initializer 지시문의 각 줄은 별도의 문자열 리터럴입니다.
 
 `/ui.config/src/main/content/jcr_root/apps/wknd-examples/osgiconfig/config.author/org.apache.sling.jcr.repoinit.RepositoryInitializer-wknd-examples-statistics.config`
 
