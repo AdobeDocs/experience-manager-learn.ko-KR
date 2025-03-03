@@ -6,9 +6,9 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: 2722a4d4a34172e2f418f571f9de3872872e682a
+source-git-commit: 52b7e6afbfe448fd350e84c3e8987973c87c4718
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '588'
 ht-degree: 18%
 
 ---
@@ -110,6 +110,7 @@ ht-degree: 18%
          + [CSS 및 JS로 차단](./edge-delivery-services/developing/universal-editor/7b-block-js-css.md)
          + 방법{#how-to}
             + [블록 옵션](./edge-delivery-services/developing/universal-editor/how-to/block-options.md)
+            + [머리글 및 바닥글](./edge-delivery-services/developing/universal-editor/how-to/header-and-footer.md)
    + 방법{#how-to}
       + [피드](edge-delivery-services/how-to/rss.md)
       + [소셜 미디어 공유](edge-delivery-services/how-to/social-media-sharing.md)

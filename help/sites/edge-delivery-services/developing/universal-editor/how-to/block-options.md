@@ -10,9 +10,9 @@ doc-type: Tutorial
 jira: KT-17296
 duration: 700
 exl-id: f41dff22-bd47-4ea0-98cc-f5ca30b22c4b
-source-git-commit: ae3ade0f31846776aa9bdd3a615d6514b626f48d
+source-git-commit: 52b7e6afbfe448fd350e84c3e8987973c87c4718
 workflow-type: tm+mt
-source-wordcount: '1958'
+source-wordcount: '1961'
 ht-degree: 0%
 
 ---
@@ -404,7 +404,7 @@ AEM Author 서비스에서 새 페이지를 만들어 개발용 티저 블록을
 
 ### 미리보기에 게시
 
-티저 블록이 페이지에 추가되면 **발행물 관리** 및 AEM 작성자의 사이트 관리자를 사용하여 [미리보기에 페이지를 게시](../6-author-block.md)합니다.
+티저 블록이 페이지에 추가되면 **게시** 단추를 사용하여 [미리 보기에 페이지를 게시](../6-author-block.md)하고 유니버설 편집기에서 **미리 보기**&#x200B;에 게시를 선택하십시오.
 
 ## HTML 차단
 

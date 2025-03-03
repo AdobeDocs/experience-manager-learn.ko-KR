@@ -1,6 +1,6 @@
 ---
 title: 목록 변수를 채우는 맞춤형 프로세스 단계
-description: 유형 문서 및 문자열의 목록 변수를 채우는 맞춤형 프로세스 단계
+description: Adobe Experience Manager에서 유형 문서 및 문자열의 목록 변수를 채우는 사용자 지정 프로세스 단계를 만드는 방법을 알아봅니다.
 feature: Workflow
 topic: Development
 version: 6.5
@@ -9,28 +9,29 @@ level: Beginner
 kt: kt-8063
 exl-id: 09d9eabf-4815-4159-b6c7-cf2ebc8a2df5
 duration: 68
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 52b7e6afbfe448fd350e84c3e8987973c87c4718
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '170'
 ht-degree: 1%
 
 ---
 
+
 # 사용자 정의 프로세스 단계
 
+이 안내서에서는 Adobe Experience Manager에서 배열 목록 유형의 목록 변수를 첨부 파일 및 첨부 파일 이름으로 채우는 사용자 지정 프로세스 단계를 안내합니다. 이러한 변수는 이메일 전송 워크플로우 구성 요소에 필수적입니다.
 
-배열 목록 유형의 워크플로 변수를 첨부 파일 및 첨부 파일 이름으로 채우는 사용자 지정 프로세스 단계가 구현되었습니다. 그런 다음 이 변수는 이메일 보내기 워크플로우 구성 요소에서 사용됩니다. OSGi 번들 생성에 익숙하지 않은 경우 [다음 지침을 따르십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en)
+OSGi 번들 만들기에 익숙하지 않은 경우 다음 [지침](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en)을(를) 따르십시오.
 
-사용자 지정 프로세스 단계의 코드는 다음을 수행합니다
+사용자 지정 프로세스 단계의 코드는 다음 작업을 수행합니다.
 
-* 페이로드 폴더 아래의 모든 적응형 양식 첨부 파일을 쿼리합니다. 폴더 이름은 프로세스 단계에 프로세스 인수로 전달됩니다.
-
-* `listOfDocuments` 워크플로 변수 채우기
-* `attachmentNames` 워크플로 변수 채우기
-* 워크플로 변수(`no_of_attachments`)의 값 설정
+1. 페이로드 폴더 아래의 모든 적응형 양식 첨부 파일에 대한 쿼리 폴더 이름은 단계에 프로세스 인수로 전달됩니다.
+2. `listOfDocuments` 워크플로 변수를 채웁니다.
+3. `attachmentNames` 워크플로 변수를 채웁니다.
+4. 워크플로 변수 `no_of_attachments`의 값을 설정합니다.
 
 ```java
- package com.aemforms.formattachments.core;
+package com.aemforms.formattachments.core;
 
 import java.io.InputStream;
 import java.util.HashMap;
@@ -57,9 +58,8 @@ import com.day.cq.search.result.SearchResult;
 
 @Component(property = {
         Constants.SERVICE_DESCRIPTION + "=PopulateListOfDocuments",
-        "process.label" + "=PopulateListOfDocuments"
+        "process.label=PopulateListOfDocuments"
 })
-
 public class PopulateListOfDocuments implements WorkflowProcess {
 
         private static final Logger log = LoggerFactory.getLogger(PopulateListOfDocuments.class);
@@ -70,7 +70,7 @@ public class PopulateListOfDocuments implements WorkflowProcess {
         public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments) throws WorkflowException
         {
                 String payloadPath = workItem.getWorkflowData().getPayload().toString();
-                log.debug("The payload path  is" + payloadPath);
+                log.debug("The payload path is" + payloadPath);
                 MetaDataMap metaDataMap = workItem.getWorkflow().getWorkflowData().getMetaDataMap();
                 Session session = workflowSession.adaptTo(Session.class);
                 Map < String, String > map = new HashMap < String, String > ();
@@ -112,10 +112,11 @@ public class PopulateListOfDocuments implements WorkflowProcess {
 
 >[!NOTE]
 >
-> 코드가 작동하도록 워크플로우에 다음 변수가 정의되어 있는지 확인하십시오
-> *listOfDocuments* - ArrayList of Documents 유형의 변수
-> *attachmentNames* - String의 ArrayList 유형 변수
-> *no_of_attachments* - Double 유형의 변수
+> 코드가 작동하도록 워크플로우에 다음 변수가 정의되어 있는지 확인합니다.
+> 
+> - `listOfDocuments`: ArrayList of Documents 형식의 변수
+> - `attachmentNames`: String의 ArrayList 유형 변수
+> - `no_of_attachments`: Double 형식의 변수
 
 ## 다음 단계
 
