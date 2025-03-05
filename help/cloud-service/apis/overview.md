@@ -1,118 +1,307 @@
 ---
 title: AEM API 개요
-description: Adobe Experience Manager(AEM)의 다양한 API 유형에 대해 알아보고 일반적으로 OpenAPI 기반 AEM API라고 하는 OpenAPI 사양 기반 API에 대한 개요를 살펴보십시오.
+description: Adobe Experience Manager(AEM)의 다양한 API 유형에 대해 알아보고 통합을 위해 선택할 API를 이해합니다.
 version: Cloud Service
 feature: Developing
 topic: Development, Architecture, Content Management
 role: Architect, Developer, Leader
 level: Beginner
 doc-type: Article
-jira: KT-16515
-thumbnail: KT-16515.jpeg
-last-substantial-update: 2024-11-20T00:00:00Z
+jira: KT-17425
+thumbnail: KT-17425.jpeg
+last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 23b2be0d-a8d4-4521-96ba-78b70f4e9cba
-source-git-commit: 2b5f7a033921270113eb7f41df33444c4f3d7723
+source-git-commit: e4cf47e14fa7dfc39ab4193d35ba9f604eabf99f
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '945'
 ht-degree: 2%
 
 ---
 
 # AEM API 개요{#aem-apis-overview}
 
-Adobe Experience Manager(AEM as a Cloud Service)의 다양한 API 유형에 대해 알아보고 [OpenAPI 사양(OAS)](https://swagger.io/specification/) 기반 AEM API(일반적으로 OpenAPI 기반 AEM API라고 함)에 대한 개요를 살펴보십시오.
+Adobe Experience Manager(AEM)의 다양한 API 유형에 대해 알아보고 통합을 위해 선택할 API를 이해합니다.
 
-AEM as a Cloud Service은 컨텐츠, 자산 및 양식을 만들고, 읽고, 업데이트하고, 삭제하기 위한 다양한 API를 제공합니다. 이러한 API를 통해 개발자는 AEM과 상호 작용하는 사용자 정의 애플리케이션을 만들 수 있습니다.
+AEM에서 컨텐츠, 자산 및 양식을 만들고, 읽고, 업데이트하고, 삭제하기 위해 개발자는 다양한 API를 사용할 수 있습니다. 이러한 API를 통해 개발자는 AEM과 상호 작용하는 사용자 지정 애플리케이션을 만들 수 있습니다.
 
-AEM에서 다양한 유형의 API를 살펴보고 Adobe API에 액세스하는 주요 개념을 이해해 보겠습니다.
+AEM의 다양한 API 유형을 살펴보고 통합을 위해 선택할 API를 이해해 보겠습니다.
 
 ## AEM API 유형{#types-of-aem-apis}
 
-AEM은 작성자 및 게시 서비스 유형과 상호 작용하기 위한 레거시 및 최신 API를 모두 제공합니다.
+AEM은 작성자 및 게시 서비스 유형과 상호 작용하기 위한 다음 API를 제공합니다.
 
-- **이전 API**: 이전 AEM 버전에서 도입된 이전 API는 이전 버전과의 호환성을 위해 계속 지원됩니다.
-
-- **최신 API**: REST, OpenAPI 사양에 따라 이러한 API는 현재 API 디자인 모범 사례를 따르며 새로운 통합을 위해 권장됩니다.
-
-
-| AEM API 유형 | 사양 | 사용 가능 | 사용 사례 | 예 |
+| AEM API 유형 | 설명 | 사용 가능 | 사용 사례 | API 예 |
 | --- | --- | --- | --- | --- |
-| 기존(비 RESTful) API | Sling 서블릿 | AEM 6.X, AEM as a Cloud Service | 이전 통합, 이전 버전과의 호환성 | [Query Builder API](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api) 외 |
-| RESTful API | HTTP, JSON | AEM 6.X, AEM as a Cloud Service | CRUD 작업, 최신 애플리케이션 | [Assets HTTP API](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets), [워크플로 REST API](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/extending-aem/extending-workflows/workflows-program-interaction#using-the-workflow-rest-api), [콘텐츠 서비스용 JSON 내보내기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/components-templates/json-exporter) 및 기타 |
-| GRAPHQL API | GraphQL | AEM 6.X, AEM as a Cloud Service | 헤드리스 CMS, SPA, 모바일 앱 | [GraphQL API](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/graphql-api/content-fragments) |
-| OpenAPI 기반 AEM API | REST, OpenAPI | **AEM as a Cloud Service 전용** | API 우선 개발, 최신 애플리케이션 | [Assets 작성자 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/), [폴더 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/folders/), [AEM Sites API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/sites/delivery/), [Forms Acrobat 서비스](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) 및 기타 |
+| OpenAPI 기반 AEM API | Assets, Sites 및 Forms에 대해 표준화되고 기계가 읽을 수 있는 API입니다. | **AEM as a Cloud Service 전용** | API 우선 개발, 최신 애플리케이션 | [Assets 작성자 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/), [폴더 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/folders/), [AEM Sites API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/sites/delivery/), [Forms Acrobat 서비스](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) 및 기타 |
+| RESTful API | AEM 리소스와 상호 작용하기 위한 기존 REST 엔드포인트입니다. | AEM 6.X, AEM as a Cloud Service | CRUD 작업, 최신 애플리케이션 | [Assets HTTP API](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets), [워크플로 REST API](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/extending-aem/extending-workflows/workflows-program-interaction#using-the-workflow-rest-api), [콘텐츠 서비스용 JSON 내보내기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/components-templates/json-exporter) 및 기타 |
+| GRAPHQL API | 유연한 쿼리를 통해 구조화된 콘텐츠를 효율적으로 검색할 수 있도록 최적화되었습니다. | AEM 6.X, AEM as a Cloud Service | 헤드리스 CMS, SPA, 모바일 앱 | [GraphQL API](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/graphql-api/content-fragments) |
+| 기존(비 RESTful) API | JCR, Sling 모델, 쿼리 빌더 등과 같은 이전 API입니다. | AEM 6.X, AEM as a Cloud Service | 이전 통합, 이전 버전과의 호환성 | [Query Builder API](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api) 외 |
 
->[!IMPORTANT]
->
->OpenAPI 기반 AEM API는 AEM as a Cloud Service에서만 사용할 수 있으며 AEM 6.X와 호환되지 않습니다.
+자세한 내용은 [Adobe Experience Manager as a Cloud Service API](https://developer.adobe.com/experience-cloud/experience-manager-apis/) 페이지를 참조하십시오.
 
-AEM API에 대한 자세한 내용은 [Adobe Experience Manager as a Cloud Service API](https://developer.adobe.com/experience-cloud/experience-manager-apis/)를 참조하십시오.
+## 선택할 API{#which-api-to-choose}
 
-OpenAPI 기반 AEM API와 Adobe API 액세스에 대한 중요한 개념을 자세히 살펴보겠습니다.
+통합을 위한 API를 선택할 때 다음 요소를 고려하십시오.
 
-## OpenAPI 기반 AEM API{#openapi-based-aem-apis}
+- **사용 사례**: AEM API에서 사용 사례를 지원하는지 여부를 결정합니다. 가능한 경우 _OpenAPI 기반 AEM API를 사용_&#x200B;하십시오. OpenAPI는 AEM과 상호 작용하는 표준화된 최신 접근 방식을 제공합니다. OpenAPI 기반 API를 사용할 수 없는 경우 RESTful API 또는 GraphQL API 및 최후의 수단으로 기존 API를 사용하는 것이 좋습니다.
 
->[!AVAILABILITY]
->
->OpenAPI 기반 AEM API는 조기 액세스 프로그램의 일부로 사용할 수 있습니다. 액세스하는 데 관심이 있는 경우 사용 사례에 대한 설명을 포함하여 [aem-apis@adobe.com](mailto:aem-apis@adobe.com)에 전자 메일을 보내는 것이 좋습니다.
+- **호환성**: 선택한 API가 AEM 버전과 호환되는지 확인하십시오. 예를 들어 _OpenAPI 기반 AEM API는 AEM as a Cloud Service에만 해당되며_ AEM 6.X에서는 사용할 수 없습니다.
 
-[OpenAPI 사양](https://swagger.io/specification/)(이전 Swagger)은 RESTful API를 정의하는 데 널리 사용되는 표준입니다. AEM as a Cloud Service은 여러 OpenAPI Specification 기반 API(또는 간단히 OpenAPI 기반 AEM API)를 제공하므로 AEM의 작성자 또는 게시 서비스 유형과 상호 작용하는 사용자 정의 애플리케이션을 더 쉽게 만들 수 있습니다. 다음은 몇 가지 예입니다.
+- **AEM 서비스 유형: 작성자와 게시 비교**: API의 액세스 모델은 서로 다르기 때문에 작성자 또는 게시 서비스에서 API를 실행하는지에 따라 API의 선택 여부도 달라집니다. AEM 작성자 서비스는 콘텐츠 작성에 사용되며 항상 인증이 필요합니다. AEM Publish 서비스는 컨텐츠 전달에 사용되며 사용 사례에 따라 인증이 필요하지 않을 수 있습니다.
 
-**사이트**
+- **인증**: API에서 사용할 인증 방법을 지원하는지 확인하십시오. 예:
+   - **OpenAPI 기반 AEM API**: 클라이언트 자격 증명(서버 간), 인증 코드(웹 앱) 및 코드 교환(단일 페이지 앱) 권한 유형을 위한 증명 키를 포함하여 OAuth 2.0 인증을 지원합니다. 다른 AEM API는 OAuth 2.0 인증을 지원하지 않습니다.
+   - **RESTful API**: JSON 웹 토큰(JWT) 인증을 지원하며 토큰 기반 인증으로도 알려져 있습니다.
 
-- [사이트 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/sites/delivery/): 콘텐츠 조각을 사용하여 작업할 수 있는 API입니다.
+## JSON 웹 토큰(JWT)과 OAuth 2.0 간의 차이점{#difference-between-jwt-and-oauth}
 
-**Assets**
+AEM API에 사용되는 두 가지 일반적인 인증 메커니즘인 JSON 웹 토큰(JWT)과 OAuth 2.0을 비교해봅시다.
 
-- [폴더 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/folders/): 폴더 만들기, 목록, 삭제와 같은 폴더 작업에 필요한 API입니다.
-
-- [Assets 작성자 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/): 에셋 및 해당 메타데이터로 작업하기 위한 API입니다.
-
-**양식**
-
-- [Forms Communications API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/): 양식 및 문서 작업을 위한 API입니다.
-
-향후 릴리스에서는 추가 사용 사례를 지원하기 위해 더 많은 OpenAPI 기반 AEM API가 추가됩니다.
-
-### 인증 지원{#authentication-support}
-
-OpenAPI 기반 AEM API는 다음과 같은 인증 방법을 지원합니다.
-
-- **OAuth 서버 간 자격 증명**: 사용자 상호 작용 없이 API 액세스가 필요한 백엔드 서비스에 이상적입니다. _client_credentials_ 권한 유형을 사용하여 서버 수준에서 보안 액세스 관리를 사용하도록 설정합니다. 자세한 내용은 [OAuth 서버 간 자격 증명](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/#oauth-server-to-server-credential)을 참조하십시오.
-
-- **OAuth 웹 앱 자격 증명**: 사용자를 대신하여 AEM API에 액세스하는 프런트 엔드 및 _백 엔드_ 구성 요소가 있는 웹 애플리케이션에 적합합니다. 백 엔드 서버가 비밀과 토큰을 안전하게 관리하는 _authorization_code_ 권한 유형을 사용합니다. 자세한 내용은 [OAuth 웹 앱 자격 증명](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation/#oauth-web-app-credential)을 참조하십시오.
-
-- **OAuth 단일 페이지 앱 자격 증명**: 브라우저에서 실행 중인 SPA용으로 설계되었으며, 백엔드 서버가 없는 사용자를 대신하여 API에 액세스해야 합니다. 인증 코드 흐름을 보호하기 위해 _authorization_code_ 권한 유형을 사용하고 PKCE(Proof Key for Code Exchange)를 사용하는 클라이언트측 보안 메커니즘에 의존합니다. 자세한 내용은 [OAuth 단일 페이지 앱 자격 증명](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation/#oauth-single-page-app-credential)을 참조하십시오.
-
-### OAuth 서버 간 자격 증명과 OAuth 웹 앱/단일 페이지 앱 자격 증명 간의 차이점{#difference-between-oauth-server-to-server-and-oauth-web-app-single-page-app-credentials}
-
-| | OAuth 서버 간 | OAuth 사용자 인증(웹 앱) |
+| 기능 | JSON 웹 토큰(JWT) | OAuth 2.0 |
 | --- | --- | --- |
-| 인증 목적 | 기계 간 상호 작용을 위해 설계되었습니다. | 사용자 중심의 상호 작용을 위해 설계되었습니다. |
-| 토큰 비헤이비어 | 클라이언트 애플리케이션 자체를 나타내는 액세스 토큰에 문제가 있습니다. | 인증된 사용자를 대신하여 액세스 토큰을 발행합니다. |
-| 사용 사례 | 사용자 상호 작용 없이 API 액세스가 필요한 백엔드 서비스 | 사용자를 대신하여 API에 액세스하는 프론트엔드 및 백엔드 구성 요소가 있는 웹 애플리케이션. |
-| 보안 고려 사항 | 중요한 자격 증명(`client_id`, `client_secret`)을 백 엔드 시스템에 안전하게 저장합니다. | 사용자 인증 및 고유한 임시 액세스 토큰이 부여됩니다. 중요한 자격 증명(`client_id`, `client_secret`)을 백 엔드 시스템에 안전하게 저장합니다. |
-| Grant Type | _client_credentials_ | _authorization_code_ |
+| 다음에서 사용됨 | RESTful API | OpenAPI 기반 AEM API(RESTful 또는 기타 API에서 지원되지 않음) |
+| 용도 | 서비스 인증 | 사용자 또는 서비스 인증 |
+| 사용자 상호 작용 | 사용자 상호 작용이 필요하지 않음 | 인증 코드 및 단일 페이지 앱 부여 유형에 필요한 사용자 상호 작용 |
+| 최적의 대상 | 서버 간 API 호출 | 앱 및 사용자에 대한 안전하고 허가된 액세스 |
+| 필수 정보 | JWT 서명을 위한 개인 키 | OAuth 2.0용 클라이언트 ID 및 클라이언트 암호 |
+| 토큰 만료 | 단기간, 종종 새로 고침이 필요함 | 액세스 토큰은 수명이 짧습니다. 새로 고침 토큰은 오래 지속되며 새 액세스 토큰을 가져오는 데 사용됩니다 |
+| 자격 증명 관리 | [AEM Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console) | [Adobe Developer Console](https://developer.adobe.com/developer-console/) |
 
-### Adobe API 및 관련 개념 액세스{#accessing-adobe-apis-and-related-concepts}
+## OpenAPI 기반 AEM API
 
-Adobe API에 액세스하려면 먼저 다음 주요 개념을 이해해야 합니다.
+OpenAPI 기반 AEM API에 대한 자세한 내용 및 [OpenAPI 기반 AEM API](./openapis/overview.md) 안내서에서 Adobe API에 액세스하는 중요한 개념에 대해 알아봅니다.
 
-- **[Adobe Developer Console](https://developer.adobe.com/)**: Adobe API, SDK, 실시간 이벤트, 서버리스 기능 등에 액세스하기 위한 개발자 허브입니다. AEM 응용 프로그램 디버깅에 사용되는 _AEM_ Developer Console과 다릅니다.
+### 사용 사례
 
-- **[Adobe Developer Console 프로젝트](https://developer.adobe.com/developer-console/docs/guides/projects/)**: API 통합, 이벤트 및 런타임 기능을 관리하는 중앙 위치입니다. 여기에서 API를 구성하고, 인증을 설정하고, 필요한 자격 증명을 생성합니다.
+<!-- CARDS
+{target = _self}
 
-- **[제품 프로필](https://helpx.adobe.com/kr/enterprise/using/manage-product-profiles.html)**: 제품 프로필은 AEM, Adobe Target, Adobe Analytics 등과 같은 Adobe 제품에 대한 사용자 또는 응용 프로그램 액세스를 제어할 수 있는 권한 사전 설정을 제공합니다. 모든 Adobe 제품에는 사전 정의된 제품 프로필이 연결되어 있습니다.
+* ./openapis/use-cases/invoke-api-using-oauth-s2s.md
+  {title = Invoke API using Server-to-Server authentication}
+  {description = Learn how to invoke OpenAPI-based AEM APIs from a custom NodeJS application using OAuth Server-to-Server authentication.}
+  {image = ./openapis/assets/s2s/OAuth-S2S.png}
+* ./openapis/use-cases/invoke-api-using-oauth-web-app.md
+  {title = Invoke API using Web App authentication}
+  {description = Learn how to invoke OpenAPI-based AEM APIs from a custom web application using OAuth Web App authentication.}
+  {image = ./openapis/assets/web-app/OAuth-WebApp.png}  
+-->
+<!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
+<div class="columns">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Invoke API using Server-to-Server authentication">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="./openapis/use-cases/invoke-api-using-oauth-s2s.md" title="서버 간 인증을 사용하여 API 호출" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="./openapis/assets/s2s/OAuth-S2S.png" alt="서버 간 인증을 사용하여 API 호출"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="./openapis/use-cases/invoke-api-using-oauth-s2s.md" target="_self" rel="referrer" title="서버 간 인증을 사용하여 API 호출">서버 간 인증을 사용하여 API 호출</a>
+                    </p>
+                    <p class="is-size-6">OAuth 서버 간 인증을 사용하여 사용자 지정 NodeJS 애플리케이션에서 OpenAPI 기반 AEM API를 호출하는 방법에 대해 알아봅니다.</p>
+                </div>
+                <a href="./openapis/use-cases/invoke-api-using-oauth-s2s.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">자세히 알아보기</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Invoke API using Web App authentication">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="./openapis/use-cases/invoke-api-using-oauth-web-app.md" title="웹 앱 인증을 사용하여 API 호출" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="./openapis/assets/web-app/OAuth-WebApp.png" alt="웹 앱 인증을 사용하여 API 호출"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="./openapis/use-cases/invoke-api-using-oauth-web-app.md" target="_self" rel="referrer" title="웹 앱 인증을 사용하여 API 호출">웹 앱 인증을 사용하여 API 호출</a>
+                    </p>
+                    <p class="is-size-6">OAuth 웹 앱 인증을 사용하여 사용자 지정 웹 애플리케이션에서 OpenAPI 기반 AEM API를 호출하는 방법에 대해 알아봅니다.</p>
+                </div>
+                <a href="./openapis/use-cases/invoke-api-using-oauth-web-app.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">자세히 알아보기</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
 
-- **서비스**: 서비스는 실제 권한을 정의하며 제품 프로필과 연결됩니다. 권한 사전 설정을 줄이거나 늘리려면 제품 프로필과 연결된 서비스를 선택 취소하거나 선택할 수 있습니다. 따라서 제품 및 해당 API에 대한 액세스 수준을 제어할 수 있습니다. AEM as a Cloud Service에서 서비스는 저장소 노드에 대해 사전 정의된 ACL(액세스 제어 목록)이 있는 사용자 그룹을 나타내므로 세분화된 권한 관리가 가능합니다.
 
-## 다음 단계{#next-steps}
 
-다양한 AEM API 유형에 대해 이해하고 있으며,
-OpenAPI 기반 AEM API 및 Adobe API 액세스에 대한 주요 개념으로, 이제 AEM과 상호 작용하는 사용자 정의 애플리케이션 구축을 시작할 준비가 되었습니다.
+## GraphQL API - 예
 
-다음으로 시작하겠습니다.
+[GraphQL Headless 시작하기 - GraphQL](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview)에서 AEM API와 이를 사용하는 방법에 대해 자세히 알아보세요.
 
-- [서버 간 인증을 위해 OpenAPI 기반 AEM API 호출](invoke-openapi-based-aem-apis.md) 자습서, OpenAPI 기반 AEM API _OAuth 서버 간 자격 증명을 사용하여_&#x200B;에 액세스하는 방법을 보여 줍니다.
-- [웹 앱에서 사용자 인증을 사용하여 OpenAPI 기반 AEM API 호출](invoke-openapi-based-aem-apis-from-web-app.md) 자습서를 통해 _OAuth 웹 앱 자격 증명을 사용하여 웹 애플리케이션에서 OpenAPI 기반 AEM API에 액세스하는 방법을 보여 줍니다_.
+### 사용 사례
+
+<!-- CARDS
+{target = _self}
+
+* https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/spa#example-single-page-app
+  {title = Single Page Application (SPA)}
+  {description = Learn how to build a Single Page Application (SPA) that fetches content from AEM using GraphQL APIs.}
+  {image = ./assets/react-app-card.png}
+* https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/mobile#example-mobile-apps
+  {title = Mobile App}
+  {description = Learn how to build a mobile app that fetches content from AEM using GraphQL APIs.}
+  {image = ./assets/ios-app-card.png}
+* https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/web-component#example-web-component
+  {title = Web Component}
+  {description = Learn how to build a web component that fetches content from AEM using GraphQL APIs.}
+  {image = ./assets/web-component-card.png}
+-->
+<!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
+<div class="columns">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Single Page Application (SPA)">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/spa#example-single-page-app" title="SPA(단일 페이지 애플리케이션)" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="./assets/react-app-card.png" alt="SPA(단일 페이지 애플리케이션)"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/spa#example-single-page-app" target="_self" rel="referrer" title="SPA(단일 페이지 애플리케이션)">단일 페이지 응용 프로그램(SPA)</a>
+                    </p>
+                    <p class="is-size-6">GraphQL API를 사용하여 AEM에서 콘텐츠를 가져오는 SPA(단일 페이지 애플리케이션)를 구축하는 방법을 알아봅니다.</p>
+                </div>
+                <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/spa#example-single-page-app" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">자세히 알아보기</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Mobile App">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/mobile#example-mobile-apps" title="모바일 앱" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="./assets/ios-app-card.png" alt="모바일 앱"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/mobile#example-mobile-apps" target="_self" rel="referrer" title="모바일 앱">모바일 앱</a>
+                    </p>
+                    <p class="is-size-6">GraphQL API를 사용하여 AEM에서 콘텐츠를 가져오는 모바일 앱을 빌드하는 방법을 알아봅니다.</p>
+                </div>
+                <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/mobile#example-mobile-apps" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">자세히 알아보기</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Web Component">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/web-component#example-web-component" title="웹 구성 요소" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="./assets/web-component-card.png" alt="웹 구성 요소"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/web-component#example-web-component" target="_self" rel="referrer" title="웹 구성 요소">웹 구성 요소</a>
+                    </p>
+                    <p class="is-size-6">GraphQL API를 사용하여 AEM에서 콘텐츠를 가져오는 웹 구성 요소를 빌드하는 방법을 알아봅니다.</p>
+                </div>
+                <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/web-component#example-web-component" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">자세히 알아보기</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
+
+## RESTful API - 예
+
+[Assets HTTP API](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets) 및 [JSON 내보내기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/components-templates/json-exporter)와 같은 RESTful API에 대해 자세히 알아보세요.
+
+### 사용 사례
+
+<!-- CARDS
+{target = _self}
+
+* https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview
+  {title = Invoke API using Server-to-Server authentication}
+  {description = Learn how to build a native mobile app that fetches content from AEM using Content Services RESTful APIs.}
+  {image = ./assets/RESTful-Content-Service.png}
+* https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview
+  {title = Token-based Authentication for RESTful APIs}
+  {description = Learn how to invoke RESTful APIs using JSON Web Token (JWT) authentication.}
+  {image = ./assets/RESTful-TokenAuth.png}
+-->
+<!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
+<div class="columns">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Invoke API using Server-to-Server authentication">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview" title="서버 간 인증을 사용하여 API 호출" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="./assets/RESTful-Content-Service.png" alt="서버 간 인증을 사용하여 API 호출"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview" target="_self" rel="referrer" title="서버 간 인증을 사용하여 API 호출">서버 간 인증을 사용하여 API 호출</a>
+                    </p>
+                    <p class="is-size-6">Content Services RESTful API를 사용하여 AEM에서 콘텐츠를 가져오는 기본 모바일 앱을 빌드하는 방법을 알아봅니다.</p>
+                </div>
+                <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">자세히 알아보기</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Token-based Authentication for RESTful APIs">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview" title="RESTful API에 대한 토큰 기반 인증" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="./assets/RESTful-TokenAuth.png" alt="RESTful API에 대한 토큰 기반 인증"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview" target="_self" rel="referrer" title="RESTful API에 대한 토큰 기반 인증">RESTful API에 대한 토큰 기반 인증</a>
+                    </p>
+                    <p class="is-size-6">JSON 웹 토큰(JWT) 인증을 사용하여 RESTful API를 호출하는 방법에 대해 알아봅니다.</p>
+                </div>
+                <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">자세히 알아보기</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
+
+

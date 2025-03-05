@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 99aa43460a76460175123a5bfe5138767491252b
+source-git-commit: e4cf47e14fa7dfc39ab4193d35ba9f604eabf99f
 workflow-type: tm+mt
-source-wordcount: '1366'
-ht-degree: 16%
+source-wordcount: '1377'
+ht-degree: 15%
 
 ---
 
@@ -125,7 +125,7 @@ ht-degree: 16%
          + [로컬 개발 설정](./developing/universal-editor/react-app/local-development-setup.md)
          + [Instrument React 앱](./developing/universal-editor/react-app/instrument-to-edit-content.md)
    + [AEM SDK API JavaDocs](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html){target=_blank}
-+ AEM{#debugging} 디버깅
++ AEM 디버깅{#debugging}
    + AEM SDK 디버깅{#debugging-aem-sdk}
       + [개요](./debugging/aem-sdk-local-quickstart/overview.md)
       + [로그](./debugging/aem-sdk-local-quickstart/logs.md)
@@ -143,8 +143,14 @@ ht-degree: 16%
          + [순회 경고](./debugging/cloud-service/risks/traversals.md)
 + AEM API{#aem-apis}
    + [개요](./apis/overview.md)
-   + [OpenAPI 기반 AEM API(서버 간)](./apis/invoke-openapi-based-aem-apis.md)
-   + [OpenAPI 기반 AEM API(사용자 인증)](./apis/invoke-openapi-based-aem-apis-from-web-app.md)
+   + OpenAPI{#openapis}
+      + [개요](./apis/openapis/overview.md)
+      + [설정 방법](./apis/openapis/setup.md)
+      + [서버 간 인증](./apis/openapis/use-cases/invoke-api-using-oauth-s2s.md)
+      + [사용자 인증(웹 앱)](./apis/openapis/use-cases/invoke-api-using-oauth-web-app.md)
+      + {#how-to}하는 방법
+         + [자격 증명 및 제품 프로필 관리](./apis/openapis/how-to/credentials-and-product-profile-management.md)
+         + [권한 관리](./apis/openapis/how-to/services-user-group-permission-management.md)
 + 컨텐츠 전달{#content-delivery}
    + [사용자 정의 도메인 이름](./content-delivery/custom-domain-names.md)
    + [Adobe 관리 CDN을 사용한 사용자 정의 도메인 이름](./content-delivery/custom-domain-name-with-adobe-managed-cdn.md)
@@ -162,7 +168,7 @@ ht-degree: 16%
       + [캐싱 활성화](./caching/how-to/enable-caching.md)
       + [캐싱 비활성화](./caching/how-to/disable-caching.md)
       + [캐시 제거](./caching/how-to/purge-cache.md)
-+ AEM{#accessing}에 액세스
++ AEM 액세스{#accessing}
    + [개요](./accessing/overview.md)
    + [Adobe IMS 사용자](./accessing/adobe-ims-users.md)
    + [Adobe IMS 사용자 그룹](./accessing/adobe-ims-user-groups.md)
@@ -208,7 +214,7 @@ ht-degree: 16%
       + [BPA 및 CAM](./migration/moving-to-aem-as-a-cloud-service/bpa-and-cam.md)
       + [AEM 현대화 도구](./migration/moving-to-aem-as-a-cloud-service/aem-modernization-tools.md)
       + [저장소 현대화](./migration/moving-to-aem-as-a-cloud-service/repository-modernization.md)
-      + [Asset compute 마이크로서비스](./migration/moving-to-aem-as-a-cloud-service/asset-compute-microservices.md)
+      + [Asset Compute Microservices](./migration/moving-to-aem-as-a-cloud-service/asset-compute-microservices.md)
       + [Dispatcher](./migration/moving-to-aem-as-a-cloud-service/dispatcher.md)
       + [검색 및 색인 지정](./migration/moving-to-aem-as-a-cloud-service/search-and-indexing.md)
       + 콘텐츠 마이그레이션 {#content-migration}
@@ -233,7 +239,7 @@ ht-degree: 16%
       + [Cloud Acceleration Manager 사용](./migration/cloud-acceleration-manager/using.md)
 + [콘텐츠 조각](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html){target=_blank}
 + 양식{#forms}
-   + Forms as a Cloud Service 개발{#developing-for-cloud-service}
+   + Forms as a Cloud Service용 개발{#developing-for-cloud-service}
       + [1 - 시작](./forms/developing-for-cloud-service/getting-started.md)
       + [2 - IntelliJ 설치](./forms/developing-for-cloud-service/intellij-set-up.md)
       + [3 - Git 설정](./forms/developing-for-cloud-service/setup-git.md)
@@ -242,7 +248,7 @@ ht-degree: 16%
       + [6 - 사용자 지정 제출 핸들러](./forms/developing-for-cloud-service/custom-submit-to-servlet.md)
       + [7 - 리소스 유형을 사용하여 서블릿 등록](./forms/developing-for-cloud-service/registering-servlet-using-resourcetype.md)
       + [8 - Forms 포털 구성 요소 활성화](./forms/developing-for-cloud-service/forms-portal-components.md)
-      + [9 - Cloud Service 및 FDM 포함](./forms/developing-for-cloud-service/azure-storage-fdm.md)
+      + [9 - Cloud Services 및 FDM 포함](./forms/developing-for-cloud-service/azure-storage-fdm.md)
       + [10 - 컨텍스트 인식 클라우드 구성](./forms/developing-for-cloud-service/context-aware-fdm.md)
       + [11 - Cloud Manager으로 푸시](./forms/developing-for-cloud-service/push-project-to-cloud-manager-git.md)
       + [12 - 개발 환경에 배포](./forms/developing-for-cloud-service/deploy-to-dev-environment.md)
@@ -311,7 +317,7 @@ ht-degree: 16%
       + [USC 일괄 처리 구성 만들기](./forms/formscs-batch-api/configure-usc-batch.md)
       + [일괄 구성 만들기](./forms/formscs-batch-api/create-batch-config.md)
       + [일괄 처리 실행](./forms/formscs-batch-api/execute-batch-generate-documents.md)
-   + Forms CS{#forms-cs-assembler}에서 PDF 조작
+   + Forms CS{#forms-cs-assembler}의 PDF 조작
       + [소개](./forms/forms-cs-assembler/introduction.md)
       + [서비스 자격 증명 만들기](./forms/forms-cs-assembler/service-credentials.md)
       + [JWT 토큰 만들기](./forms/forms-cs-assembler/create-jwt.md)
@@ -382,14 +388,14 @@ ht-degree: 16%
       + [Sharepoint에 양식 데이터 저장](./forms/forms-cs-sharepoint/store-form-submission-in-sharepoint.md)
       + [SharePoint 목록의 데이터로 양식 미리 채우기](./forms/forms-cs-sharepoint/prefill-data-from-sharepoint-list.md)
       + [워크플로우를 사용하여 SharePoint 목록에 데이터 삽입](./forms/forms-cs-sharepoint/submit-data-sharepoint-list-workflow.md)
-+ Asset compute 확장성{#asset-compute}
++ Asset Compute 확장성{#asset-compute}
    + [개요](./asset-compute/overview.md)
    + {#set-up} 설정
       + [계정 및 서비스 프로비저닝](./asset-compute/set-up/accounts-and-services.md)
       + [로컬 개발 환경](./asset-compute/set-up/development-environment.md)
       + [App Builder](./asset-compute/set-up/app-builder.md)
    + {#develop} 개발
-      + [asset compute 프로젝트 만들기](./asset-compute/develop/project.md)
+      + [Asset Compute 프로젝트 만들기](./asset-compute/develop/project.md)
       + [환경 변수 구성](./asset-compute/develop/environment-variables.md)
       + [manifest.yml 구성](./asset-compute/develop/manifest.md)
       + [작업자 개발](./asset-compute/develop/worker.md)
@@ -404,10 +410,10 @@ ht-degree: 16%
       + [메타데이터 작업자](./asset-compute/advanced/metadata.md)
    + [문제 해결](./asset-compute/troubleshooting.md)
 
-+ 여러 단계 Tutorials{#multi-step-tutorials}
++ 여러 단계 자습서{#multi-step-tutorials}
    + [AEM Sites 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR){target=_blank}
    + [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ko-KR){target=_blank}
-   + [SPA 편집기(React)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html){target=_blank}
+   + [SPA 편집기(반응)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html){target=_blank}
    + [AEM Sites 및 Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html){target=_blank}
    + [토큰 기반 인증](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html){target=_blank}
 + 전문가 리소스 {#expert-resources}
@@ -430,7 +436,7 @@ ht-degree: 16%
       + [마이그레이션 1](./expert-resources/cloud-5/cloud5-aem-content-migration-part-1.md)
       + [Dispatcher 검사기](./expert-resources/cloud-5/cloud5-aem-dispatcher-validator.md)
       + [검색 및 색인 지정](./expert-resources/cloud-5/cloud5-aem-search-and-indexing.md)
-      + [App Builder Adobe](./expert-resources/cloud-5/cloud5-adobe-app-builder.md)
+      + [Adobe App Builder](./expert-resources/cloud-5/cloud5-adobe-app-builder.md)
       + 시즌 2{#season-2}
          + [조각](./expert-resources/cloud-5/season-2/cloud5-experience-v-content-fragments.md)
          + [Repo Modernizer](./expert-resources/cloud-5/season-2/cloud5-repo-modernizer.md)
@@ -445,7 +451,7 @@ ht-degree: 16%
       + 시즌 3{#season-3}
          + [타사 검색](./expert-resources/cloud-5/season-3/cloud5-3rd-party-search.md)
          + [Edge 노동자](./expert-resources/cloud-5/season-3/cloud5-edge-workers.md)
-         + [Publish, Edge Delivery Services의 이벤트 게시 취소](./expert-resources/cloud-5/season-3/cloud5-publish-events.md)
+         + [Edge Delivery Services에서 이벤트 게시, 게시 취소](./expert-resources/cloud-5/season-3/cloud5-publish-events.md)
          + [쿼리 인덱스 및 Excel 공식](./expert-resources/cloud-5/season-3/cloud5-query-indexes.md)
          + [고유한 Cloudflare CDN 가져오기](./expert-resources/cloud-5/season-3/cloud5-byo-cloudflare-cdn.md)
          + [AEM Assets 통합](./expert-resources/cloud-5/season-3/cloud5-integrate-assets.md)
