@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: e4cf47e14fa7dfc39ab4193d35ba9f604eabf99f
+source-git-commit: a72f533b36940ce735d5c01d1625c6f477ef4850
 workflow-type: tm+mt
-source-wordcount: '1377'
+source-wordcount: '1387'
 ht-degree: 15%
 
 ---
@@ -309,8 +309,12 @@ ht-degree: 15%
       + [템플릿과 데이터 병합](./forms/doc-gen-forms-cs/merge-data-with-template.md)
       + [솔루션 테스트](./forms/doc-gen-forms-cs/test.md)
       + [과제](./forms/doc-gen-forms-cs/challenge.md)
-   + DocAssurance API 사용{#doc-assurance-api}
-      + [샘플 코드 조각](./forms/doc-assurance-api/using-doc-assurance-api.md)
+   + Forms 문서 서비스 API 사용{#forms-document-services-api}
+      + [소개](./forms/forms-document-services/introduction.md)
+      + [OpenAPI 구성](./forms/forms-document-services/using-open-api.md)
+      + [액세스 토큰 생성](./forms/forms-document-services/generate-access-token.md)
+      + [사용 권한 적용](./forms/forms-document-services/make-api-calls.md)
+      + [샘플 코드](./forms/forms-document-services/sample-project.md)
    + 일괄 처리 API를 사용하여 문서 생성{#formscs-batch-api}
       + [소개](./forms/formscs-batch-api/introduction.md)
       + [Azure 스토리지 구성](./forms/formscs-batch-api/configure-azure-storage.md)
