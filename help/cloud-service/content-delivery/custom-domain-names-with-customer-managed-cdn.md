@@ -12,7 +12,7 @@ last-substantial-update: 2024-06-21T00:00:00Z
 jira: KT-15945
 thumbnail: KT-15945.jpeg
 exl-id: fa9ee14f-130e-491b-91b6-594ba47a7278
-source-git-commit: ba744f95f8d1f0b982cd5430860f0cb0945a4cda
+source-git-commit: 98f1996dbeb6a683f98ae654e8fa13f6c7a2f9b2
 workflow-type: tm+mt
 source-wordcount: '1051'
 ht-degree: 0%
@@ -201,16 +201,16 @@ HTTP 헤더 유효성 검사 CDN 규칙을 구성하고 배포하려면 다음 �
   kind: "CDN"
   version: "1"
   metadata:
-  envTypes: ["prod"]
+    envTypes: ["prod"]
   data:
-  authentication:
+    authentication:
       authenticators:
-      - name: edge-auth
+        - name: edge-auth
           type: edge
           edgeKey1: ${{CDN_EDGEKEY_080124}}
           edgeKey2: ${{CDN_EDGEKEY_110124}}
       rules:
-      - name: edge-auth-rule
+        - name: edge-auth-rule
           when: { reqProperty: tier, equals: "publish" }
           action:
           type: authenticate
@@ -220,7 +220,7 @@ HTTP 헤더 유효성 검사 CDN 규칙을 구성하고 배포하려면 다음 �
 - Cloud Manager UI를 사용하여 비밀 유형 환경 변수(CDN_EDGEKEY_080124, CDN_EDGEKEY_110124)를 만듭니다.
 - Cloud Manager 파이프라인을 사용하여 AEM as a Cloud Service 환경에 HTTP 헤더 유효성 검사 CDN 규칙을 배포합니다.
 
-## X-AEM-Edge-Key HTTP 헤더에 암호 전달
+## X-AEM-Edge-키 HTTP 헤더에서 암호 전달
 
 >[!VIDEO](https://video.tv.adobe.com/v/3432567?quality=12&learn=on)
 
