@@ -9,13 +9,13 @@ level: Beginner
 doc-type: Tutorial
 jira: KT-15832
 duration: 500
-source-git-commit: e8ce91b0be577ec6cf8f3ab07ba9ff09c7e7a6ab
+exl-id: ca356d38-262d-4c30-83a0-01c8a1381ee6
+source-git-commit: 77beb9f543bc6dc8c1ab4993c969375ce3e238e8
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '376'
 ht-degree: 0%
 
 ---
-
 
 # 블록 작성
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 1. 블록의 정의와 모델이 정확한지 검증한다.
 1. 개발자가 블록의 의미론적 HTML을 검토할 수 있도록 해 개발의 밑거름이 된다.
-1. 이를 통해 미리 보기 환경에 콘텐츠와 의미 HTML 모두를 배포할 수 있으므로 더 빠른 블록 개발을 지원합니다.
+1. 이를 통해 콘텐츠와 시맨틱 HTML을 모두 미리보기 환경에 배포할 수 있으므로 보다 빠른 블록 개발을 지원합니다.
 
 ## `teaser` 분기의 코드를 사용하여 유니버설 편집기 열기
 
@@ -54,11 +54,11 @@ ht-degree: 0%
 
    ![유니버설 편집기 - 작성자 블록](./assets/6-author-block/author-block.png)
 
-8. 작성을 완료한 후 이전 브라우저 탭(AEM Sites 관리)으로 전환하고 티저 페이지를 선택한 다음 **게시 관리**&#x200B;를 클릭하고 **미리 보기**&#x200B;를 선택한 다음 변경 내용을 미리 보기 환경에 게시합니다. 그러면 변경 내용이 웹 사이트의 `aem.page` 도메인에 게시됩니다.
-   ![AEM Sites - Publish 또는 미리 보기](./assets/6-author-block/publish-to-preview.png)
+8. 작성을 완료한 후 유니버설 편집기의 오른쪽 상단에 있는 **게시** 단추를 선택하고 **미리 보기**&#x200B;에 게시를 선택한 다음 변경 내용을 미리 보기 환경에 게시합니다. 그러면 변경 내용이 웹 사이트의 `aem.page` 도메인에 게시됩니다.
+   ![AEM Sites - 게시 또는 미리 보기](./assets/6-author-block/publish-to-preview.png)
 
 9. 변경 내용이 미리보기에 게시될 때까지 기다렸다가 [http://localhost:3000/branches/teaser](http://localhost:3000/branches/teaser)에서 [AEM CLI](./3-local-development-environment.md#install-the-aem-cli)를 통해 웹 페이지를 여십시오.
 
    ![로컬 사이트 - 새로 고침](./assets/6-author-block/preview.png)
 
-이제 작성된 티저 블록의 콘텐츠 및 의미 체계 HTML을 미리 보기 웹 사이트에서 사용할 수 있으며 로컬 개발 환경에서 AEM CLI를 사용하여 개발할 준비가 되었습니다.
+이제 작성된 티저 블록의 컨텐츠 및 의미 있는 HTML을 미리 보기 웹 사이트에서 사용할 수 있으며 로컬 개발 환경에서 AEM CLI를 사용하여 개발할 준비가 되었습니다.

@@ -7,9 +7,9 @@ sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: efaf77a9f8e68f679be3469c39697b57366684b3
+source-git-commit: 77beb9f543bc6dc8c1ab4993c969375ce3e238e8
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '450'
 ht-degree: 17%
 
 ---
@@ -62,7 +62,7 @@ ht-degree: 17%
    + [3D 자산](./advanced/3d-assets.md)
    + [주석 PDF 출력](./advanced/customizing-annotations-pdf-output.md)
    + [Assets 보고서](./advanced/asset-reports.md)
-   + [Content credentials](./advanced/content-credentials.md)
+   + [콘텐츠 자격 증명](./advanced/content-credentials.md)
    + [차단된 태그](./advanced/blocked-tags.md)
    + [아카이브 추출](./advanced/extract-archive.md)
    + [권한(CUG)](./advanced/closed-user-groups.md)
@@ -71,7 +71,7 @@ ht-degree: 17%
    + [워터마크](./advanced/watermarks.md)
 
 + 고급 메타데이터 관리{#metadata}
-   + [연속 메타데이터](metadata/cascade-metadata-feature-video-use.md)
+   + [계단식 메타데이터](metadata/cascade-metadata-feature-video-use.md)
    + [이미지용 스마트 태그](metadata/image-smart-tags.md)
    + [이미지용 사용자 지정 스마트 태그](metadata/custom-smart-tags.md)
    + [비디오용 스마트 태그](metadata/video-smart-tags.md)
@@ -81,7 +81,7 @@ ht-degree: 17%
    + [개요](./content-hub/overview.md)
    + [설정](./content-hub/set-up.md)
    + [구성](./content-hub/configure.md)
-   + [에셋 추가](./content-hub/add-assets.md)
+   + [자산 추가](./content-hub/add-assets.md)
    + [자산 다운로드](./content-hub/download-assets.md)
    + [Adobe Express을 사용한 이미지 변형](./content-hub/image-variants.md)
    + [컬렉션](./content-hub/collections.md)
@@ -96,7 +96,7 @@ ht-degree: 17%
 + 공유 및 배포{#sharing}
    + [자산 다운로드](./sharing/download.md)
    + [자산 내보내기](./sharing/export.md)
-   + [Publish assets](./sharing/publish.md)
+   + [자산 게시](./sharing/publish.md)
 
    + Brand Portal{#brand-portal}
       + [Brand Portal](./sharing/brand-portal.md)
@@ -112,13 +112,13 @@ ht-degree: 17%
 + Creative 워크플로{#creative-workflows}
    + [Adobe Express 통합](./creative-workflows/adobe-express.md)
    + [Adobe Express 및 AEM Assets](./creative-workflows/adobe-express-aem-assets.md)
-   + [AEM Desktop App](./creative-workflows/aem-desktop-app.md)
-   + [Adobe 에셋 링크](./creative-workflows/adobe-asset-link.md)
+   + [AEM 데스크탑 앱](./creative-workflows/aem-desktop-app.md)
+   + [Adobe Asset Link](./creative-workflows/adobe-asset-link.md)
    + [Adobe Stock](./creative-workflows/adobe-stock.md)
 
 + Adobe 자산 링크{#adobe-asset-link}
    + [설정](./adobe-asset-link/setup.md)
-   + [Adobe 에셋 링크 액세스](./adobe-asset-link/launch-adobe-asset-link.md)
+   + [Adobe 자산 링크 액세스](./adobe-asset-link/launch-adobe-asset-link.md)
    + [패널 개요](./adobe-asset-link/panel-overview.md)
    + [파일 및 컬렉션](./adobe-asset-link/files-and-collections.md)
    + [다운로드 및 업로드](./adobe-asset-link/download-and-upload.md)
@@ -131,13 +131,14 @@ ht-degree: 17%
 
 + 콘텐츠 자동화{#content-automation}
    + [개요](./content-automation/overview.md)
-   + [크리에이티브 작업](./content-automation/creative-operations.md)
+   + [Creative 작업](./content-automation/creative-operations.md)
    + [Photoshop 작업](./content-automation/photoshop-actions.md)
 
 + Dynamic Media{#dynamic-media}
    + [Dynamic Media 개요](dynamic-media/dynamic-media-overview-feature-video-use.md)
    + [Dynamic Media Classic 데스크탑 애플리케이션](dynamic-media/dynamic-media-classic-desktop-application.md)
    + 이미지 {#images}
+      + [Dynamic Media 템플릿](dynamic-media/dynamic-media-templates.md)
       + [Dynamic Media 스냅샷](dynamic-media/dynamic-media-snapshot.md)
       + [스마트 자르기](dynamic-media/smart-crop-feature-video-use.md)
       + [이미지 선명하게 하기](dynamic-media/dynamic-media-image-sharpening-feature-video-use.md)
@@ -156,9 +157,9 @@ ht-degree: 17%
       + [Dynamic Media 3D](dynamic-media/dynamic-media-3d-feature-video.md)
    + AEM Sites {#dm-with-aem-sites}에서 사용
       + [경험 조각](dynamic-media/dynamic-media-experience-fragments-feature-video-use.md)
-      + [Dynamic Media 핵심 구성 요소](dynamic-media/dynamic-media-core-components.md)
+      + [Dynamic Media 코어 구성 요소](dynamic-media/dynamic-media-core-components.md)
 
-   + Tutorials {#tutorials}
+   + 튜토리얼 {#tutorials}
       + [회전 메뉴 세트 만들기](dynamic-media/tutorials/creating-different-kinds-of-sets-with-aem-dynamic-media-carousel-sets.md)
       + [이미지 집합을 만드는 중](dynamic-media/tutorials/creating-different-kinds-of-sets-with-aem-dynamic-media-image-sets.md)
       + [이미지 사전 설정 만들기](dynamic-media/tutorials/creating-image-presets.md)
@@ -169,7 +170,7 @@ ht-degree: 17%
       + [URL 및 포함 코드 생성](dynamic-media/tutorials/how-to-generate-public-url-or-embed-code-for-an-asset.md)
       + [내보내기 작업 트리거](dynamic-media/tutorials/how-to-trigger-export-job-in-dynamic-media-during-submit-job-operation-parameter.md)
       + [CDN 캐시 무효화](dynamic-media/tutorials/invalidating-the-cdn-cache-by-way-of-dynamic-media.md)
-      + [Dynamic Media 핵심 구성 요소 사용](dynamic-media/tutorials/using-dm-components-on-site-page.md)
+      + [Dynamic Media 코어 구성 요소 사용](dynamic-media/tutorials/using-dm-components-on-site-page.md)
       + [Dynamic Media 구성 삭제](dynamic-media/tutorials/deleting-dynamic-media-configuration.md)
       + [Dynamic Media Classic 앱에서 Assets 다운로드](dynamic-media/tutorials/how-to-download-asset-in-dynamic-media-classic-app.md)
       + [DYNAMIC MEDIA CLASSIC IPS API](dynamic-media/tutorials/introduction-to-dynamic-media-classic-ips-api.md)
@@ -178,7 +179,7 @@ ht-degree: 17%
    + 향상된 커넥터{#enhanced-connector}
       + [향상된 커넥터 기본 사항](./workfront/enhanced-connector/basics.md)
       + [프로젝트 폴더](./workfront/enhanced-connector/project-folders.md)
-      + AEM Experts 시리즈{#aem-experts-series}
+      + AEM 전문가 시리즈{#aem-experts-series}
          + [개요](./workfront/enhanced-connector/aem-experts-series/overview.md)
          + [설정](./workfront/enhanced-connector/aem-experts-series/setup.md)
          + [Workfront forms 및 AEM 메타데이터](./workfront/enhanced-connector/aem-experts-series/custom-forms.md)
