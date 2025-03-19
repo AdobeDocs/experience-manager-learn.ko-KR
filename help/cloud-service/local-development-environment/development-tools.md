@@ -1,6 +1,6 @@
 ---
 title: AEM as a Cloud Service 개발을 위한 개발 도구 설정
-description: 로컬에서 AEM에 대해 개발하는 데 필요한 모든 기준선 도구를 사용하여 로컬 개발 시스템을 설정합니다.
+description: 로컬에서 AEM에 대해 개발하는 데 필요한 모든 기본 도구를 사용하여 로컬 개발 시스템을 설정합니다.
 feature: Developer Tools
 version: Cloud Service
 jira: KT-4267
@@ -11,9 +11,9 @@ level: Beginner
 last-substantial-update: 2022-09-03T00:00:00Z
 exl-id: 6fb3199a-02c9-48bc-a6fa-1f767cfd2f2a
 duration: 3508
-source-git-commit: e7a85e8d072d808683580a201dd10b3a847efaaa
+source-git-commit: b865156776865b1155af7c7f3bd234bd337be796
 workflow-type: tm+mt
-source-wordcount: '1301'
+source-wordcount: '1308'
 ht-degree: 5%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 5%
 >title="개발 도구 설정"
 >abstract="AEM(Adobe Experience Manager) 개발을 위해 최소한의 개발 도구 세트를 설치하고 개발자 시스템에 설정해야 합니다. 이러한 도구로는 Java, Maven, Adobe I/O CLI, 개발 IDE 등이 있습니다."
 >additional-url="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines" text="개발 지침"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/basics/aem-sdk" text="개발 기본 사항"
+>additional-url="https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/basics/aem-sdk" text="개발 기본 사항"
 
 AEM(Adobe Experience Manager) 개발을 위해 최소한의 개발 도구 세트를 설치하고 개발자 시스템에 설정해야 합니다. 이러한 도구는 AEM 프로젝트의 개발 및 빌드를 지원합니다.
 
@@ -33,10 +33,10 @@ AEM(Adobe Experience Manager) 개발을 위해 최소한의 개발 도구 세트
 
 ## Java 설치
 
-Experience Manager은 Java 애플리케이션이므로 개발 및 AEM as a Cloud Service SDK를 지원하려면 Java SDK가 필요합니다.
+Experience Manager은 Java 애플리케이션이므로 개발 및 AEM as a Cloud Service SDK을 지원하려면 Java SDK이 필요합니다.
 
 1. [최신 릴리스 Java 11 SDK 다운로드 및 설치](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atoling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)
-1. 다음 명령을 실행하여 Oracle Java 11 SDK가 설치되어 있는지 확인합니다.
+1. 다음 명령을 실행하여 Oracle Java 11 SDK이 설치되어 있는지 확인합니다.
 
 >[!BEGINTABS]
 
@@ -152,7 +152,7 @@ Homebrew를 사용하는 경우 아래 섹션에서 __Homebrew를 사용하여 �
 
 ## Maven 설치
 
-Apache Maven은 AEM Project Maven Archetype에서 생성된 AEM 프로젝트를 빌드하는 데 사용되는 오픈 소스 Java 명령줄 툴입니다. 모든 주요 IDE([IntelliJ IDEA](https://www.jetbrains.com/idea/), [Visual Studio Code](https://code.visualstudio.com/), [Eclipse](https://www.eclipse.org/) 등) 통합된 Maven 지원
+Apache Maven은 AEM Project Maven Archetype에서 생성된 AEM 프로젝트를 빌드하는 데 사용되는 오픈 소스 Java 명령줄 툴입니다. 모든 주요 IDE([IntelliJ IDEA](https://www.jetbrains.com/idea/), [Visual Studio Code](https://code.visualstudio.com/), [Eclipse](https://www.eclipse.org/) 등)에 Maven 지원이 통합되었습니다.
 
 
 >[!BEGINTABS]
@@ -176,9 +176,9 @@ Apache Maven은 AEM Project Maven Archetype에서 생성된 AEM 프로젝트를 
 
 ## Adobe I/O CLI 설정{#aio-cli}
 
-[Adobe I/O CLI](https://github.com/adobe/aio-cli) 또는 `aio`은(는) [Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager) 및 [Asset compute](https://github.com/adobe/aio-cli-plugin-asset-compute)을(를) 포함하여 다양한 Adobe 서비스에 대한 명령줄 액세스를 제공합니다. Adobe I/O CLI는 개발자에게 다음과 같은 기능을 제공하기 때문에 AEM as a Cloud Service에서 개발에 필수적인 역할을 합니다.
+[Adobe I/O CLI](https://github.com/adobe/aio-cli) 또는 `aio`은(는) [Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager) 및 [Asset Compute](https://github.com/adobe/aio-cli-plugin-asset-compute)을(를) 포함하여 다양한 Adobe 서비스에 대한 명령줄 액세스를 제공합니다. Adobe I/O CLI는 개발자에게 다음과 같은 기능을 제공하기 때문에 AEM as a Cloud Service에서 개발에 필수적인 역할을 합니다.
 
-+ AEM as a Cloud Service 서비스의 테일 로그
++ AEM as a Cloud Services의 테일 로그
 + CLI에서 Cloud Manager 파이프라인 관리
 + [AEM 빠른 개발 환경](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html)에 배포
 
@@ -205,42 +205,27 @@ Adobe I/O CLI가 Cloud Manager과 통신하려면 Adobe I/O 콘솔에서 [Cloud 
    + 새 프로젝트를 만드는 경우 메시지가 표시되면 &quot;빈 프로젝트&quot;를 선택합니다(또는 &quot;템플릿에서 만들기&quot;).
    + Adobe I/O 콘솔 프로그램은 Cloud Manager 프로그램과 다른 개념입니다
 1. 새 Cloud Manager API 통합 만들기
-   + 더 이상 사용되지 않는 &quot;서비스 계정(JWT)&quot; 인증 유형을 선택합니다(OAuth는 현재 CLI에 대해 지원되지 않음).
-   + 키를 만들거나 업로드합니다.
-   + &quot;개발자 - Cloud Service&quot; 제품 프로필 선택
-1. JWT(서비스 계정) 자격 증명을 획득하려면 Adobe I/O CLI의 [config.json](https://github.com/adobe/aio-cli-plugin-cloudmanager#authentication)을(를) 채워야 합니다.
-
-   ```json
-   //config.json 
-   {
-      "client_id": "Client ID from Service Account (JWT) credential",
-      "client_secret": "Client Secret from Service Account (JWT) credential",
-      "technical_account_id": "Technical Account ID from Service Account (JWT) credential",
-      "ims_org_id": "Organization ID from Service Account (JWT) credential",
-      "meta_scopes": [
-        "ent_cloudmgr_sdk"
-      ]
-   }
-   ```
-
+   + &quot;Oauth 서버 간&quot; 자격 증명 유형을 선택합니다.
+   + &quot;배포 관리자 - Cloud Service&quot; 제품 프로필을 선택합니다.
+   + 구성된 API 저장
+1. 새로 만든 &quot;OAuth 서버 간&quot; 자격 증명을 열고 오른쪽 상단 작업 표시줄에서 &quot;JSON 다운로드&quot;를 선택하여 자격 증명을 획득하려면 Adobe I/O CLI의 [config.json](https://github.com/adobe/aio-cli-plugin-cloudmanager#authentication)을(를) 채워야 합니다.
+1. 다운로드한 JSON 파일을 열고 모든 키의 이름을 소문자로 바꿉니다. 예를 들어 `CLIENT_ID`은(는) `client_id`이(가) 됩니다.
 1. Adobe I/O CLI에 `config.json` 파일 로드
-   + `$ aio config:set ims.contexts.aio-cli-plugin-cloudmanager ./path/to/config.json --file --json`
-1. Adobe I/O CLI에 `private.key` 파일 로드
-   + `$ aio config:set ims.contexts.aio-cli-plugin-cloudmanager.private_key ./path/to/private.key --file`
+   + `$ aio config:set ims.contexts.aio-cli-plugin-cloudmanager /path/to/downloaded/json --file --json`
 
 Adobe I/O CLI를 통해 Cloud Manager에 대해 [명령 실행](https://github.com/adobe/aio-cli-plugin-cloudmanager#commands)을 시작합니다.
 
-### AEM Rapid Development Environment 플러그인 설정{#rde}
+### AEM 빠른 개발 환경 플러그인 설정{#rde}
 
 AEM 빠른 개발 환경 플러그인을 사용하면 aio CLI가 `aio aem:rde` 명령을 통해 AEM as a Cloud Service [빠른 개발 환경](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html)과(와) 상호 작용할 수 있습니다.
 
 1. `aio plugins:install @adobe/aio-cli-plugin-aem-rde`을(를) 실행하여 [AEM 빠른 개발 환경 플러그 인](https://github.com/adobe/aio-cli-plugin-aem-rde)을(를) 설치합니다.
 
-### Adobe I/O CLI Asset compute 플러그인 설정{#aio-asset-compute}
+### Adobe I/O CLI Asset Compute 플러그인 설정{#aio-asset-compute}
 
-Adobe I/O Cloud Manager 플러그인을 사용하면 aio CLI에서 `aio asset-compute` 명령을 통해 Asset compute 작업자를 생성하고 실행할 수 있습니다.
+Adobe I/O Cloud Manager 플러그인을 사용하면 aio CLI에서 `aio asset-compute` 명령을 통해 Asset Compute 작업자를 생성하고 실행할 수 있습니다.
 
-1. `aio plugins:install @adobe/aio-cli-plugin-asset-compute`을(를) 실행하여 [aio Asset compute 플러그인](https://github.com/adobe/aio-cli-plugin-asset-compute)을(를) 설치합니다.
+1. `aio plugins:install @adobe/aio-cli-plugin-asset-compute`을(를) 실행하여 [aio Asset Compute 플러그인](https://github.com/adobe/aio-cli-plugin-asset-compute)을(를) 설치합니다.
 
 ## 개발 IDE 설정
 
@@ -248,7 +233,7 @@ AEM 개발은 주로 Java 및 프론트엔드(JavaScript, CSS 등) 개발 및 XM
 
 ### IntelliJ IDEA
 
-__[IntelliJ IDEA](https://www.jetbrains.com/idea/)__&#x200B;은(는) Java 개발용 강력한 IDE입니다. IntelliJ IDEA는 무료 커뮤니티 에디션과 상용(유료) Ultimate 버전의 두 가지 버전으로 제공됩니다. 무료 커뮤니티 버전은 AEM 개발에 충분하지만, Ultimate [기능 집합을 확장](https://www.jetbrains.com/idea/download)합니다.
+__[IntelliJ IDEA](https://www.jetbrains.com/idea/)__&#x200B;은(는) Java 개발용 강력한 IDE입니다. IntelliJ IDEA는 무료 커뮤니티 버전과 상용(유료) Ultimate 버전, 이렇게 두 가지 버전으로 제공됩니다. 사용 가능한 커뮤니티 버전은 AEM 개발에 충분하지만, Ultimate [이(가) 기능 집합을 확장](https://www.jetbrains.com/idea/download)합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26089?quality=12&learn=on)
 
@@ -257,16 +242,16 @@ __[IntelliJ IDEA](https://www.jetbrains.com/idea/)__&#x200B;은(는) Java 개발
 
 ### Microsoft Visual Studio 코드
 
-__[Visual Studio Code](https://code.visualstudio.com/)__(VS Code)는 프런트 엔드 개발자를 위한 무료 오픈 소스 도구입니다. Adobe 도구인 __[repo](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#integration-into-visual-studio-code)__&#x200B;를 사용하여 콘텐츠 동기화를 AEM과 통합하도록 Visual Studio 코드를 설정할 수 있습니다.
+__[Visual Studio Code](https://code.visualstudio.com/)__(VS Code)는 프런트 엔드 개발자를 위한 무료 오픈 소스 도구입니다. Visual Studio Code는 Adobe 도구인 __[repo](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#integration-into-visual-studio-code)__&#x200B;를 사용하여 AEM과 콘텐츠 동기화를 통합하도록 설정할 수 있습니다.
 
-Visual Studio Code는 주로 프론트엔드 코드(JavaScript, CSS 및 HTML)를 만드는 프론트엔드 개발자에게 이상적인 선택입니다. VS 코드는 [확장](https://code.visualstudio.com/docs/java/java-tutorial)을 통해 Java를 지원하지만 더 많은 Java용으로 제공되는 일부 고급 기능이 부족할 수 있습니다.
+Visual Studio Code는 주로 프론트엔드 코드인 JavaScript, CSS 및 HTML을 만드는 프론트엔드 개발자에게 이상적인 선택입니다. VS 코드는 [확장](https://code.visualstudio.com/docs/java/java-tutorial)을 통해 Java를 지원하지만 더 많은 Java용으로 제공되는 일부 고급 기능이 부족할 수 있습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25907?quality=12&learn=on)
 
 + [Visual Studio 코드 다운로드](https://code.visualstudio.com/Download)
 + [보고서 도구 다운로드](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#integration-into-visual-studio-code)
 + [aemfed VS 코드 확장 다운로드](https://aemfed.io/)
-+ [AEM Sync VS 코드 확장 다운로드](https://marketplace.visualstudio.com/items?itemName=Yinkai15.aemsync)
++ [AEM 동기화 VS 코드 확장 다운로드](https://marketplace.visualstudio.com/items?itemName=Yinkai15.aemsync)
 
 ### Eclipse
 
