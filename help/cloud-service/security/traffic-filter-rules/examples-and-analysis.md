@@ -12,7 +12,7 @@ jira: KT-13148
 thumbnail: KT-13148.jpeg
 exl-id: 49becbcb-7965-4378-bb8e-b662fda716b7
 duration: 532
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 67091c068634e6c309afaf78942849db626128f6
 workflow-type: tm+mt
 source-wordcount: '1472'
 ht-degree: 0%
@@ -23,21 +23,21 @@ ht-degree: 0%
 
 Adobe Experience Manager as a Cloud Service(AEMCS) CDN 로그 및 대시보드 도구를 사용하여 다양한 유형의 트래픽 필터 규칙을 선언하고 결과를 분석하는 방법에 대해 알아봅니다.
 
-이 섹션에서는 WAF 규칙을 비롯한 트래픽 필터 규칙의 실제 예를 살펴봅니다. [AEM WKND Sites 프로젝트](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project)를 사용하여 URI(또는 경로), IP 주소, 요청 수 및 다양한 공격 유형을 기반으로 요청을 기록, 허용 및 차단하는 방법에 대해 알아봅니다.
+이 섹션에서는 WAF 규칙을 포함하여 트래픽 필터 규칙의 실제 예를 살펴봅니다. [AEM WKND Sites 프로젝트](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project)를 사용하여 URI(또는 경로), IP 주소, 요청 수 및 다양한 공격 유형을 기반으로 요청을 기록, 허용 및 차단하는 방법에 대해 알아봅니다.
 
-또한 AEM CS CDN 로그를 수집하는 대시보드 도구를 사용하여 Adobe 제공 샘플 대시보드를 통해 필수 지표를 시각화하는 방법에 대해 알아봅니다.
+또한 Adobe에서 제공하는 샘플 대시보드를 통해 필수 지표를 시각화하기 위해 AEMCS CDN 로그를 수집하는 대시보드 도구를 사용하는 방법에 대해 알아봅니다.
 
-특정 요구 사항에 맞게 사용자 정의 대시보드를 개선하고 만들어 더 자세한 통찰력을 얻고 AEM 사이트에 대한 규칙 구성을 최적화할 수 있습니다.
+특정 요구 사항에 맞게 사용자 정의 대시보드를 개선하고 만들어 보다 심층적인 통찰력을 얻고 AEM 사이트에 대한 규칙 구성을 최적화할 수 있습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425404?quality=12&learn=on)
 
 ## 예
 
-WAF 규칙을 비롯한 트래픽 필터 규칙의 다양한 예를 살펴보겠습니다. 이전 [설정 방법](./how-to-setup.md) 장에 설명된 대로 필요한 설정 프로세스를 완료했으며 [AEM WKND Sites 프로젝트](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project)를 복제했는지 확인하십시오.
+WAF 규칙을 포함하여 트래픽 필터 규칙의 다양한 예를 살펴보겠습니다. 이전 [설정 방법](./how-to-setup.md) 장에 설명된 대로 필요한 설정 프로세스를 완료했으며 [AEM WKND Sites 프로젝트](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project)를 복제했는지 확인하십시오.
 
 ### 요청 로깅
 
-AEM Publish 서비스에 대한 **WKND 로그인 및 로그아웃 경로의 요청 로깅**&#x200B;부터 시작합니다.
+AEM Publish 서비스에 대해 **WKND 로그인 및 로그아웃 경로의 요청 로깅**&#x200B;부터 시작합니다.
 
 - WKND 프로젝트의 `/config/cdn.yaml` 파일에 다음 규칙을 추가합니다.
 
@@ -67,11 +67,11 @@ data:
 
 - 변경 사항을 커밋하고 Cloud Manager Git 저장소에 푸시합니다.
 
-- Cloud Manager `Dev-Config` 구성 파이프라인 [이전에 만든](how-to-setup.md#deploy-rules-through-cloud-manager)을(를) 사용하여 AEM 개발 환경에 변경 내용을 배포합니다.
+- Cloud Manager `Dev-Config` 구성 파이프라인 [이전에 만든](how-to-setup.md#deploy-rules-through-cloud-manager)을(를) 사용하여 AEM 개발 환경에 변경 사항을 배포합니다.
 
   ![Cloud Manager 구성 파이프라인](./assets/cloud-manager-config-pipeline.png)
 
-- Publish 서비스에서 프로그램의 WKND 사이트에 로그인하고 로그아웃하여 규칙을 테스트합니다(예: `https://publish-pXXXX-eYYYY.adobeaemcloud.com/us/en.html`). `asmith/asmith`을(를) 사용자 이름과 암호로 사용할 수 있습니다.
+- 게시 서비스에서 프로그램의 WKND 사이트에 로그인하고 로그아웃하여 규칙을 테스트합니다(예: `https://publish-pXXXX-eYYYY.adobeaemcloud.com/us/en.html`). `asmith/asmith`을(를) 사용자 이름과 암호로 사용할 수 있습니다.
 
   ![WKND 로그인](./assets/wknd-login.png)
 
@@ -200,7 +200,7 @@ data:
 - DoS 공격을 시뮬레이션하려면 다음 [Vegeta](https://github.com/tsenart/vegeta) 명령을 사용합니다.
 
   ```shell
-  $ echo "GET https://publish-pXXXX-eYYYY.adobeaemcloud.com/us/en.html" | vegeta attack -rate=120 -duration=5s | vegeta report
+  $ echo "GET https://publish-pXXXX-eYYYY.adobeaemcloud.com/us/en.html" | vegeta attack -rate=120 -duration=60s | vegeta report
   ```
 
   이 명령은 5초 동안 120개의 요청을 만들고 보고서를 출력합니다. 보시는 것처럼 성공률은 32.5%입니다. 나머지 항목에 대해서는 406 HTTP 응답 코드가 수신되므로 트래픽이 차단되었음을 알 수 있습니다.
@@ -225,15 +225,15 @@ DoS 및 DDoS 공격을 방지하는 방법에 대한 자세한 내용은 [트래
 
 지금까지의 트래픽 필터 규칙 예는 모든 Sites 및 Forms 고객이 구성할 수 있습니다.
 
-다음으로, 향상된 보안 또는 WAF-DDoS 보호 라이센스를 구입한 고객이 더 정교한 공격으로부터 웹 사이트를 보호하기 위해 고급 규칙을 구성할 수 있는 경험에 대해 알아보겠습니다.
+다음으로, 향상된 보안 또는 WAF-DDoS 보호 라이센스를 구입한 고객이 고급 규칙을 구성하여 보다 정교한 공격으로부터 웹 사이트를 보호할 수 있는 경험에 대해 알아보겠습니다.
 
 계속하기 전에 트래픽 필터 규칙 설명서 [설정 단계](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=en#setup)에 설명된 대로 프로그램에 대해 WAF-DDoS 보호를 사용하도록 설정하십시오.
 
 #### WAFFlags가 없는 경우
 
-WAF 규칙이 선언되기 전이라도 먼저 경험을 살펴보겠습니다. 프로그램에서 WAF-DDoS가 활성화되면 CDN은 기본적으로 악성 트래픽의 일치를 기록하므로 적절한 규칙을 마련할 수 있는 올바른 정보를 보유하고 있습니다.
+WAF 규칙이 선언되기 전에도 경험을 먼저 살펴보겠습니다. 프로그램에서 WAF-DDoS가 활성화되면 CDN은 기본적으로 악성 트래픽의 일치를 기록하므로 적절한 규칙을 마련할 수 있는 올바른 정보를 보유하고 있습니다.
 
-먼저 WAF 규칙을 추가하지 않거나 `wafFlags` 속성을 사용하여 WKND 사이트를 공격하고 결과를 분석해 보겠습니다.
+먼저 WAF 규칙을 추가하거나 `wafFlags` 속성을 사용하지 않고 WKND 사이트를 공격하고 결과를 분석해 보겠습니다.
 
 - 공격을 시뮬레이션하려면 아래의 [Nikto](https://github.com/sullo/nikto) 명령을 사용합니다. 이 명령은 6분 동안 약 700개의 악성 요청을 보냅니다.
 
@@ -253,7 +253,7 @@ WAF 규칙이 선언되기 전이라도 먼저 경험을 살펴보겠습니다. 
 
 ![ELK 도구 대시보드 WAF 플래그 지정된 요청](./assets/elk-tool-dashboard-waf-flagged.png)
 
-**WAF 플래그 분포** 및 **상위 공격** 패널에 추가 세부 정보가 표시되는 방법을 참고하십시오. 이러한 추가 세부 정보는 규칙 구성을 최적화하는 데 사용할 수 있습니다.
+**WAF 플래그 배포** 및 **상위 공격** 패널에 추가 세부 정보가 표시되는 방법을 참고하십시오. 이러한 추가 세부 정보는 규칙 구성을 최적화하는 데 사용할 수 있습니다.
 
 ![ELK 도구 대시보드 WAF 플래그 공격 요청](./assets/elk-tool-dashboard-waf-flagged-top-attacks-1.png)
 
@@ -321,7 +321,7 @@ data:
 
 이번에는 **차단된 요청** 아래에 항목이 표시되고 클라이언트 IP(cli_ip), 호스트, url, 작업(waf_action) 및 규칙 이름(waf_match) 열에 해당 값이 표시됩니다.
 
-![ELK 도구 대시보드 WAF 차단된 요청](./assets/elk-tool-dashboard-waf-blocked.png)
+![ELK 도구 대시보드 WAF 차단 요청](./assets/elk-tool-dashboard-waf-blocked.png)
 
 또한 **WAF 플래그 배포** 및 **상위 공격** 패널에 추가 세부 정보가 표시됩니다.
 

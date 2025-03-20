@@ -12,7 +12,7 @@ last-substantial-update: 2024-06-21T00:00:00Z
 jira: KT-15945
 thumbnail: KT-15945.jpeg
 exl-id: fa9ee14f-130e-491b-91b6-594ba47a7278
-source-git-commit: 98f1996dbeb6a683f98ae654e8fa13f6c7a2f9b2
+source-git-commit: 67091c068634e6c309afaf78942849db626128f6
 workflow-type: tm+mt
 source-wordcount: '1051'
 ht-degree: 0%
@@ -213,8 +213,8 @@ HTTP 헤더 유효성 검사 CDN 규칙을 구성하고 배포하려면 다음 �
         - name: edge-auth-rule
           when: { reqProperty: tier, equals: "publish" }
           action:
-          type: authenticate
-          authenticator: edge-auth
+            type: authenticate
+            authenticator: edge-auth
   ```
 
 - Cloud Manager UI를 사용하여 비밀 유형 환경 변수(CDN_EDGEKEY_080124, CDN_EDGEKEY_110124)를 만듭니다.

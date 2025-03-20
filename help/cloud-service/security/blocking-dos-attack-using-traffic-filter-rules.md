@@ -12,7 +12,7 @@ last-substantial-update: 2024-04-19T00:00:00Z
 jira: KT-15184
 thumbnail: KT-15184.jpeg
 exl-id: 60c2306f-3cb6-4a6e-9588-5fa71472acf7
-source-git-commit: 0e8b76b6e870978c6db9c9e7a07a6259e931bdcc
+source-git-commit: 67091c068634e6c309afaf78942849db626128f6
 workflow-type: tm+mt
 source-wordcount: '1924'
 ht-degree: 1%
@@ -31,14 +31,14 @@ AEM 웹 사이트의 기본 DDoS 보호에 대해 알아보겠습니다.
 
 - **캐싱:** 캐싱 정책이 좋으면 CDN이 대부분의 요청이 원본으로 이동하지 않고 성능 저하를 일으키므로 DDoS 공격의 영향은 더 제한됩니다.
 - **자동 크기 조정:** 트래픽 스파이크를 처리하기 위해 AEM 작성자 및 게시 서비스가 자동 크기 조정을 수행하지만 급격한 트래픽 증가에 영향을 받을 수 있습니다.
-- **차단:** Adobe CDN은 CDN PoP(Point of Presence)당 특정 IP 주소의 Adobe 정의 속도를 초과하는 경우 원본으로의 트래픽을 차단합니다.
+- **차단:** Adobe CDN은 CDN PoP(Point of Presence)당 특정 IP 주소에서 Adobe 정의 속도를 초과하는 경우 원본으로의 트래픽을 차단합니다.
 - **경고:** 트래픽이 특정 비율을 초과할 때 작업 센터에서 트래픽 스파이크를 원본 경고 알림으로 보냅니다. 지정된 CDN PoP에 대한 트래픽이 IP 주소당 _Adobe 정의_ 요청 속도를 초과하면 이 경고가 실행됩니다. 자세한 내용은 [트래픽 필터 규칙 경고](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#traffic-filter-rules-alerts)를 참조하십시오.
 
-기본 제공되는 이러한 보호 기능은 DDoS 공격의 성능 영향을 최소화하는 조직의 기능을 위한 기준선으로 간주되어야 합니다. 각 웹 사이트에는 서로 다른 성능 특성이 있으므로 Adobe 정의 속도 제한이 충족되기 전에 성능이 저하될 수 있으므로 _고객 구성_&#x200B;을 통해 기본 보호를 확장하는 것이 좋습니다.
+기본 제공되는 이러한 보호 기능은 DDoS 공격의 성능 영향을 최소화하는 조직의 기능을 위한 기준선으로 간주되어야 합니다. 각 웹 사이트에는 서로 다른 성능 특성이 있으며 Adobe 정의 속도 제한이 충족되기 전에 성능 저하가 나타날 수 있으므로 _고객 구성_&#x200B;을 통해 기본 보호를 확장하는 것이 좋습니다.
 
 고객이 DDoS 공격으로부터 웹 사이트를 보호하기 위해 취할 수 있는 몇 가지 추가 권장 조치를 살펴보겠습니다.
 
-- PoP당 단일 IP 주소에서 특정 비율을 초과하는 트래픽을 차단하려면 **비율 제한 트래픽 필터 규칙**&#x200B;을 선언하십시오. 이는 일반적으로 Adobe 정의 비율 제한보다 낮은 임계값입니다.
+- PoP당 단일 IP 주소에서 특정 비율을 초과하는 트래픽을 차단하려면 **비율 제한 트래픽 필터 규칙**&#x200B;을 선언하십시오. 이는 일반적으로 Adobe에서 정의한 비율 제한보다 낮은 임계값입니다.
 - &quot;경고 작업&quot;을 통해 속도 제한 트래픽 필터 규칙에 대한 **경고**&#x200B;를 구성하면 규칙이 트리거될 때 작업 센터 알림이 전송됩니다.
 - 쿼리 매개 변수를 무시하도록 **요청 변환**&#x200B;을 선언하여 캐시 범위를 늘리십시오.
 
@@ -53,7 +53,7 @@ AEM 웹 사이트의 기본 DDoS 보호에 대해 알아보겠습니다.
 
 아래 단계는 고객이 웹 사이트를 보호해야 하는 가능한 프로세스를 반영합니다.
 
-1. 비율 제한 트래픽 필터 규칙의 필요성을 인식합니다. 이는 원본 경고에서 Adobe의 즉시 사용 가능한 트래픽 스파이크를 수신한 결과이거나 성공적인 DDoS의 위험을 줄이기 위해 예방 조치를 취하는 사전 예방적 결정일 수 있습니다.
+1. 비율 제한 트래픽 필터 규칙의 필요성을 인식합니다. 이는 원본 경고에서 Adobe의 기본 제공 트래픽 스파이크를 받은 결과이거나 성공적인 DDoS의 위험을 줄이기 위해 예방 조치를 취하는 사전 예방적 결정일 수 있습니다.
 1. 사이트가 이미 활성화되어 있는 경우 대시보드를 사용하여 트래픽 패턴을 분석하여 비율 제한 트래픽 필터 규칙에 대한 최적의 임계값을 결정합니다. 사이트가 아직 라이브가 아닌 경우 트래픽 예상 값을 기반으로 값을 선택합니다.
 1. 이전 단계의 값을 사용하여 비율 제한 트래픽 필터 규칙을 구성합니다. 임계값이 충족될 때마다 알림을 받을 수 있도록 해당 경고를 활성화해야 합니다.
 1. 트래픽 스파이크가 발생할 때마다 트래픽 필터 규칙 경고를 수신하여 조직이 악의적인 행위자에 의해 타깃팅될 가능성이 있는지에 대한 중요한 통찰력을 제공합니다.
@@ -63,15 +63,15 @@ AEM 웹 사이트의 기본 DDoS 보호에 대해 알아보겠습니다.
 
 ## 규칙 구성의 필요성 인식 {#recognize-the-need}
 
-앞에서 언급했듯이 기본적으로 Adobe은 CDN에서 특정 속도를 초과하는 트래픽을 차단하지만 일부 웹 사이트의 경우 해당 임계값 아래로 성능이 저하될 수 있습니다. 따라서 속도 제한 트래픽 필터 규칙을 구성해야 합니다.
+앞에서 언급했듯이 Adobe은 기본적으로 CDN에서 특정 속도를 초과하는 트래픽을 차단하지만 일부 웹 사이트의 경우 해당 임계값 아래로 성능이 저하될 수 있습니다. 따라서 속도 제한 트래픽 필터 규칙을 구성해야 합니다.
 
 프로덕션으로 시작하기 전에 규칙을 구성하는 것이 좋습니다. 실제로 많은 조직은 공격 가능성을 나타내는 트래픽 스파이크에 대해 한 번만 규칙을 반응적으로 선언합니다.
 
-Adobe은 지정된 PoP에 대해 단일 IP 주소의 기본 트래픽 임계값을 초과하는 경우 원본 경고에서 [작업 센터 알림](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/actions-center)(으)로 트래픽 스파이크를 보냅니다. 이러한 경고를 받은 경우 비율 제한 트래픽 필터 규칙을 구성하는 것이 좋습니다. 이 기본 경고는 향후 섹션에서 살펴볼 트래픽 필터 규칙을 정의할 때 고객이 명시적으로 활성화해야 하는 경고와 다릅니다.
+지정된 PoP에 대해 단일 IP 주소의 기본 트래픽 임계값이 초과되면 Adobe에서 원본 경고에 [작업 센터 알림](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/actions-center)&#x200B;(으)로 트래픽 스파이크를 보냅니다. 이러한 경고를 받은 경우 비율 제한 트래픽 필터 규칙을 구성하는 것이 좋습니다. 이 기본 경고는 향후 섹션에서 살펴볼 트래픽 필터 규칙을 정의할 때 고객이 명시적으로 활성화해야 하는 경고와 다릅니다.
 
 ## 트래픽 패턴 분석 {#analyze-traffic}
 
-사이트가 이미 활성 상태인 경우 CDN 로그 및 Adobe 제공 대시보드를 사용하여 트래픽 패턴을 분석할 수 있습니다.
+사이트가 이미 활성화되어 있는 경우 CDN 로그 및 Adobe 제공 대시보드를 사용하여 트래픽 패턴을 분석할 수 있습니다.
 
 - **CDN 트래픽 대시보드**: CDN 및 원본 요청 속도, 4xx 및 5xx 오류율 및 캐시되지 않은 요청을 통해 트래픽에 대한 통찰력을 제공합니다. 또한 클라이언트 IP 주소당 초당 최대 CND 및 Origin 요청 수와 CDN 구성을 최적화하는 더 많은 통찰력을 제공합니다.
 
@@ -142,7 +142,7 @@ ELK 및 Splunk 대시보드에서 다음 시각화를 사용할 수 있습니다
 
 위의 설명에 따라 값을 사용하여 AEM 프로젝트의 `/config/cdn.yaml` 파일에서 **속도 제한 트래픽 필터** 규칙을 구성합니다. 필요한 경우 웹 보안 팀에 문의하여 비율 제한 값이 적절하고 합법적인 트래픽을 차단하지 않는지 확인하십시오.
 
-자세한 내용은 [AEM 프로젝트에 규칙 만들기](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#create-rules-in-your-aem-project)를 참조하십시오.
+자세한 내용은 [AEM 프로젝트에서 규칙 만들기](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#create-rules-in-your-aem-project)를 참조하십시오.
 
 ```yaml
 kind: CDN
@@ -247,12 +247,12 @@ data:
 다음 [Vegeta](https://github.com/tsenart/vegeta) 명령을 사용하여 웹 사이트에 많은 요청을 할 수 있습니다.
 
 ```shell
-$ echo "GET https://<YOUR-WEBSITE-DOMAIN>" | vegeta attack -rate=120 -duration=5s | vegeta report
+$ echo "GET https://<YOUR-WEBSITE-DOMAIN>" | vegeta attack -rate=120 -duration=60s | vegeta report
 ```
 
 위 명령은 5초 동안 120개의 요청을 하고 보고서를 출력합니다. 웹 사이트가 속도 제한이 없다고 가정할 경우 트래픽이 급증할 수 있습니다.
 
 ### 원본 요청
 
-CDN 캐시를 무시하고 원본(AEM Publish 서비스)에 대한 요청을 수행하려면 URL에 고유한 쿼리 매개 변수를 추가할 수 있습니다. [JMeter 스크립트를 사용하여 DoS 시뮬레이션](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection#simulate-dos-attack-using-jmeter-script)에서 샘플 Apache JMeter 스크립트를 참조하십시오.
+CDN 캐시를 무시하고 원본(AEM Publish 서비스)에 요청하려면 URL에 고유한 쿼리 매개 변수를 추가할 수 있습니다. [JMeter 스크립트를 사용하여 DoS 시뮬레이션](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection#simulate-dos-attack-using-jmeter-script)에서 샘플 Apache JMeter 스크립트를 참조하십시오.
 
