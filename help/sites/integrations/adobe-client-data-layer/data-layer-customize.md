@@ -1,7 +1,7 @@
 ---
 title: AEM 구성 요소를 사용하여 Adobe 클라이언트 데이터 레이어 사용자 지정
-description: 사용자 지정 AEM 구성 요소의 콘텐츠를 사용하여 Adobe 클라이언트 데이터 레이어를 사용자 지정하는 방법에 대해 알아봅니다. AEM 핵심 구성 요소에서 제공하는 API를 사용하여 데이터 계층을 확장하고 사용자 지정하는 방법을 알아봅니다.
-version: Cloud Service
+description: 사용자 지정 AEM 구성 요소의 콘텐츠를 사용하여 Adobe 클라이언트 데이터 레이어를 사용자 지정하는 방법에 대해 알아봅니다. AEM 핵심 구성 요소에서 제공하는 API를 사용하여 데이터 레이어를 확장하고 맞춤화하는 방법에 대해 알아봅니다.
+version: Experience Manager as a Cloud Service
 topic: Integrations
 feature: Adobe Client Data Layer, Core Components
 role: Developer
@@ -12,7 +12,7 @@ last-substantial-update: 2022-09-20T00:00:00Z
 doc-type: Tutorial
 exl-id: 80e4cf2e-dff6-41e8-b09b-187cf2e18e00
 duration: 452
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1813'
 ht-degree: 0%
@@ -37,11 +37,11 @@ ht-degree: 0%
 
 ## 사전 요구 사항 {#prerequisites}
 
-이 자습서를 완료하려면 **로컬 개발 환경**&#x200B;이 필요합니다. 스크린샷 및 비디오는 macOS에서 실행되는 AEM as a Cloud Service SDK를 사용하여 캡처됩니다. 명령 및 코드는 별도로 명시하지 않는 한 로컬 운영 체제와 독립적입니다.
+이 자습서를 완료하려면 **로컬 개발 환경**&#x200B;이 필요합니다. 스크린샷 및 비디오는 macOS에서 실행되는 AEM as a Cloud Service SDK을 사용하여 캡처됩니다. 명령 및 코드는 별도로 명시하지 않는 한 로컬 운영 체제와 독립적입니다.
 
-AEM as a Cloud Service을 처음 사용하십니까?**** AEM as a Cloud Service SDK를 사용하여 로컬 개발 환경을 설정하는 방법에 대한 [다음 안내서를 확인하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=ko-KR).
+AEM as a Cloud Service을 처음 사용하십니까?**** AEM as a Cloud Service SDK을 사용하여 로컬 개발 환경을 설정하는 방법에 대한 [다음 안내서를 확인하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=ko).
 
-**AEM 6.5를 처음 사용하십니까?** 로컬 개발 환경 설정에 대한 [다음 안내서를 확인하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=ko-KR).
+**AEM 6.5를 처음 사용하십니까?** 로컬 개발 환경 설정에 대한 [다음 안내서를 확인하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=ko).
 
 ## WKND 참조 사이트 다운로드 및 배포 {#set-up-wknd-site}
 
@@ -175,12 +175,12 @@ AEM as a Cloud Service을 처음 사용하십니까?**** AEM as a Cloud Service 
 
 `Byline` [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html?lang=en)을(를) 업데이트합니다. HTL(HTML 템플릿 언어)은 구성 요소의 HTML을 렌더링하는 데 사용되는 템플릿입니다.
 
-각 AEM 구성 요소의 특수 데이터 특성 `data-cmp-data-layer`을(를) 사용하여 해당 데이터 계층을 표시합니다. AEM 핵심 구성 요소에서 제공하는 JavaScript이 이 데이터 속성을 찾습니다. 이 데이터 특성의 값은 Byline Sling 모델의 `getData()` 메서드에서 반환된 JSON 문자열로 채워지고 Adobe 클라이언트 데이터 레이어에 삽입됩니다.
+각 AEM 구성 요소의 특수 데이터 특성 `data-cmp-data-layer`을(를) 사용하여 해당 데이터 계층을 표시합니다. AEM 핵심 구성 요소에서 제공하는 JavaScript이 이 데이터 속성을 찾습니다. 이 데이터 속성의 값은 Byline Sling 모델의 `getData()` 메서드에서 반환된 JSON 문자열로 채워지고 Adobe 클라이언트 데이터 레이어에 삽입됩니다.
 
 1. `aem-guides-wknd` 프로젝트를 IDE로 엽니다. `ui.apps` 모듈로 이동합니다.
 1. `ui.apps/src/main/content/jcr_root/apps/wknd/components/byline/byline.html`에서 `byline.html` 파일을 엽니다.
 
-   ![줄 HTML](assets/adobe-client-data-layer/byline-html-template.png)
+   ![바이라인 HTML](assets/adobe-client-data-layer/byline-html-template.png)
 
 1. `data-cmp-data-layer` 특성을 포함하도록 `byline.html` 업데이트:
 
@@ -235,9 +235,9 @@ AEM as a Cloud Service을 처음 사용하십니까?**** AEM as a Cloud Service 
 
 ## 클릭 이벤트 추가 {#click-event}
 
-Adobe 클라이언트 데이터 레이어는 이벤트를 기반으로 하며 작업을 트리거하는 가장 일반적인 이벤트 중 하나는 `cmp:click` 이벤트입니다. AEM 핵심 구성 요소를 사용하면 데이터 요소 `data-cmp-clickable`을(를) 통해 구성 요소를 쉽게 등록할 수 있습니다.
+Adobe 클라이언트 데이터 레이어는 이벤트 기반이며 작업을 트리거하는 가장 일반적인 이벤트 중 하나는 `cmp:click` 이벤트입니다. AEM 핵심 구성 요소를 사용하면 데이터 요소 `data-cmp-clickable`을(를) 통해 구성 요소를 쉽게 등록할 수 있습니다.
 
-클릭 가능한 요소는 일반적으로 CTA 버튼 또는 탐색 링크입니다. 안타깝게도 Byline 구성 요소에는 이러한 항목이 없지만 다른 사용자 정의 구성 요소에서 일반적일 수 있으므로 어쨌든 등록하겠습니다.
+클릭 가능한 요소는 일반적으로 CTA 단추 또는 탐색 링크입니다. 안타깝게도 Byline 구성 요소에는 이러한 항목이 없지만 다른 사용자 정의 구성 요소에서 일반적일 수 있으므로 어쨌든 등록하겠습니다.
 
 1. IDE에서 `ui.apps` 모듈 열기
 1. `ui.apps/src/main/content/jcr_root/apps/wknd/components/byline/byline.html`에서 `byline.html` 파일을 엽니다.
@@ -300,7 +300,7 @@ Adobe 클라이언트 데이터 레이어는 이벤트를 기반으로 하며 �
 
 ## DataLayerBuilder 유틸리티 사용 {#data-layer-builder}
 
-슬링 모델이 챕터 앞에서 [업데이트됨](#sling-model)일 때 `HashMap`을(를) 사용하고 각 속성을 수동으로 설정하여 JSON 문자열을 만들도록 선택했습니다. 이 방법은 작은 일회성 구성 요소에 대해서는 잘 작동하지만, AEM 핵심 구성 요소를 확장하는 구성 요소에 대해서는 추가 코드가 많이 생길 수 있습니다.
+슬링 모델이 챕터 앞에서 [업데이트됨](#sling-model)일 때 `HashMap`을(를) 사용하고 각 속성을 수동으로 설정하여 JSON 문자열을 만들도록 선택했습니다. 이 방법은 작은 일회성 구성 요소에 잘 작동하지만, AEM 핵심 구성 요소를 확장하는 구성 요소에 대해서는 추가 코드가 많이 생길 수 있습니다.
 
 대부분의 일괄 처리를 수행하기 위한 유틸리티 클래스 `DataLayerBuilder`이(가) 있습니다. 이렇게 하면 구현이 원하는 속성만 확장할 수 있습니다. `DataLayerBuilder`을(를) 사용하도록 Sling 모델을 업데이트하겠습니다.
 
@@ -428,7 +428,7 @@ Adobe 클라이언트 데이터 레이어는 이벤트를 기반으로 하며 �
 
 ## 축하합니다! {#congratulations}
 
-AEM 구성 요소를 사용하여 Adobe 클라이언트 데이터 레이어 를 확장하고 사용자 지정하는 몇 가지 방법을 살펴보았습니다.
+AEM 구성 요소를 사용하여 Adobe 클라이언트 데이터 레이어 를 확장하고 맞춤화하는 몇 가지 방법을 살펴보았습니다.
 
 ## 추가 리소스 {#additional-resources}
 

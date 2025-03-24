@@ -1,7 +1,7 @@
 ---
 title: 클라이언트 라이브러리 및 프론트엔드 워크플로
 description: 클라이언트 라이브러리를 사용하여 Adobe Experience Manager(AEM) Sites 구현을 위한 CSS 및 JavaScript을 배포하고 관리하는 방법에 대해 알아봅니다. Webpack 프로젝트인 ui.frontend 모듈을 전체 빌드 프로세스에 통합하는 방법에 대해 알아봅니다.
-version: 6.4, 6.5, Cloud Service
+version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: Core Components, AEM Project Archetype
 topic: Content Management, Development
 role: Developer
@@ -12,7 +12,7 @@ doc-type: Tutorial
 exl-id: 8d3026e9-a7e2-4a76-8a16-a8197a5e04e3
 recommendations: noDisplay, noCatalog
 duration: 557
-source-git-commit: 58ef1c482f127981083c07e5de5a1aba2f7c3aec
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '2554'
 ht-degree: 0%
@@ -86,7 +86,7 @@ ht-degree: 0%
 
 클라이언트측 라이브러리에는 몇 가지 제한 사항이 있습니다. 가장 주목할 만한 것은 Sass, LESS 및 TypeScript와 같이 인기 있는 프런트 엔드 언어에 대한 지원이 제한적이라는 것입니다. 자습서에서는 **ui.frontend** 모듈이 이 문제를 해결하는 데 어떻게 도움이 되는지 살펴보겠습니다.
 
-시작 코드 베이스를 로컬 AEM 인스턴스에 배포하고 [http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html)(으)로 이동합니다. 이 페이지는 스타일이 지정되지 않았습니다. WKND 브랜드를 위한 클라이언트측 라이브러리를 구현하여 페이지에 CSS 및 JavaScript을 추가하겠습니다.
+스타터 코드 베이스를 로컬 AEM 인스턴스에 배포하고 [http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html)&#x200B;(으)로 이동합니다. 이 페이지는 스타일이 지정되지 않았습니다. WKND 브랜드를 위한 클라이언트측 라이브러리를 구현하여 페이지에 CSS 및 JavaScript을 추가하겠습니다.
 
 ## 클라이언트측 라이브러리 조직 {#organization}
 
@@ -129,11 +129,11 @@ ht-degree: 0%
 
    ![main.scss - 진입점](assets/client-side-libraries/main-scss.png)
 
-   `main.scss`은(는) `ui.frontend` 모듈에서 Sass 파일의 진입점입니다. 여기에는 프로젝트의 여러 Sass 파일 전체에서 사용할 일련의 브랜드 변수가 포함된 `_variables.scss` 파일이 포함됩니다. `_base.scss` 파일도 포함되어 있으며 HTML 요소에 대한 몇 가지 기본 스타일을 정의합니다. 정규식에는 `src/main/webpack/components` 아래의 개별 구성 요소 스타일에 대한 스타일이 포함되어 있습니다. 다른 정규식에 `src/main/webpack/site/styles` 아래의 파일이 포함되어 있습니다.
+   `main.scss`은(는) `ui.frontend` 모듈에서 Sass 파일의 진입점입니다. 여기에는 프로젝트의 여러 Sass 파일 전체에서 사용할 일련의 브랜드 변수가 포함된 `_variables.scss` 파일이 포함됩니다. `_base.scss` 파일도 포함되어 있으며 HTML 요소의 몇 가지 기본 스타일을 정의합니다. 정규식에는 `src/main/webpack/components` 아래의 개별 구성 요소 스타일에 대한 스타일이 포함되어 있습니다. 다른 정규식에 `src/main/webpack/site/styles` 아래의 파일이 포함되어 있습니다.
 
-1. 파일 `main.ts`을(를) Inspect 합니다. 여기에는 프로젝트에서 `.js` 또는 `.ts` 파일을 수집하는 `main.scss` 및 정규식이 포함됩니다. 이 진입점은 [Webpack 구성 파일](https://webpack.js.org/configuration/)에서 전체 `ui.frontend` 모듈의 진입점으로 사용됩니다.
+1. `main.ts` 파일을 검사합니다. 여기에는 프로젝트에서 `.js` 또는 `.ts` 파일을 수집하는 `main.scss` 및 정규식이 포함됩니다. 이 진입점은 [Webpack 구성 파일](https://webpack.js.org/configuration/)에서 전체 `ui.frontend` 모듈의 진입점으로 사용됩니다.
 
-1. `src/main/webpack/site/styles` 아래 파일을 Inspect:
+1. `src/main/webpack/site/styles` 아래 파일 검사:
 
    ![스타일 파일](assets/client-side-libraries/style-files.png)
 
@@ -143,7 +143,7 @@ ht-degree: 0%
 
    ![구성 요소 Sass 파일](assets/client-side-libraries/component-sass-files.png)
 
-   각 파일은 [아코디언 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/accordion.html?lang=en)와 같은 핵심 구성 요소에 매핑됩니다. 각 핵심 구성 요소는 스타일 규칙을 사용하여 특정 CSS 클래스를 더 쉽게 타깃팅할 수 있도록 [블록 요소 수정자](https://getbem.com/) 또는 BEM 표기법으로 빌드되었습니다. 각 구성 요소에 대해 서로 다른 BEM 규칙을 사용하여 AEM Project Archetype에서 `/components` 아래의 파일을 검색했습니다.
+   각 파일은 [아코디언 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/accordion.html?lang=en)와 같은 핵심 구성 요소에 매핑됩니다. 각 핵심 구성 요소는 스타일 규칙을 사용하여 특정 CSS 클래스를 더 쉽게 타깃팅할 수 있도록 [블록 요소 수정자](https://getbem.com/) 또는 BEM 표기법으로 빌드되었습니다. `/components` 아래의 파일은 각 구성 요소에 대해 서로 다른 BEM 규칙을 사용하여 AEM Project Archetype에 의해 스텁아웃되었습니다.
 
 1. WKND 기본 스타일 **[wknd-base-styles-src-v3.zip](/help/getting-started-wknd-tutorial-develop/project-archetype/assets/client-side-libraries/wknd-base-styles-src-v3.zip)** 및 **unzip** 파일을 다운로드합니다.
 
@@ -163,9 +163,9 @@ ht-degree: 0%
 
    ![변경된 파일](assets/client-side-libraries/changed-files-uifrontend.png)
 
-   Inspect에서 변경된 파일을 확인하여 WKND 스타일 구현의 세부 사항을 확인할 수 있습니다.
+   변경된 파일을 검사하여 WKND 스타일 구현에 대한 세부 사항을 확인합니다.
 
-## ui.frontend 통합 Inspect {#ui-frontend-integration}
+## ui.frontend 통합 검사 {#ui-frontend-integration}
 
 **ui.frontend** 모듈에 빌드된 주요 통합 조각 [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator)은(는) Webpack/npm 프로젝트에서 컴파일된 CSS 및 JS 아티팩트를 가져와 AEM 클라이언트측 라이브러리로 변환합니다.
 
@@ -222,19 +222,19 @@ AEM Project Archetype 은 이 통합을 자동으로 설정합니다. 그런 다
    >
    >JS 및 CSS를 축소하는 `npm run prod` 프로필도 있습니다. Maven을 통해 Webpack 빌드가 트리거될 때마다 표준 컴파일입니다. [ui.frontend 모듈에 대한 자세한 내용은 여기](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)를 참조하십시오.
 
-1. `ui.frontend/dist/clientlib-site/site.css` 아래의 `site.css` 파일을 Inspect 합니다. Sass 소스 파일을 기반으로 컴파일된 CSS입니다.
+1. `ui.frontend/dist/clientlib-site/site.css` 아래의 `site.css` 파일을 검사합니다. Sass 소스 파일을 기반으로 컴파일된 CSS입니다.
 
    ![분산 사이트 css](assets/client-side-libraries/ui-frontend-dist-site-css.png)
 
-1. 파일 `ui.frontend/clientlib.config.js`을(를) Inspect 합니다. `/dist`의 콘텐츠를 클라이언트 라이브러리로 변환하고 `ui.apps` 모듈로 이동하는 npm 플러그인 [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator)에 대한 구성 파일입니다.
+1. `ui.frontend/clientlib.config.js` 파일을 검사합니다. `/dist`의 콘텐츠를 클라이언트 라이브러리로 변환하고 `ui.apps` 모듈로 이동하는 npm 플러그인 [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator)에 대한 구성 파일입니다.
 
-1. `ui.apps/src/main/content/jcr_root/apps/wknd/clientlibs/clientlib-site/css/site.css`의 **ui.apps** 모듈에서 `site.css` 파일을 Inspect으로 가져옵니다. **ui.frontend** 모듈에서 `site.css` 파일의 동일한 복사본이어야 합니다. **ui.apps** 모듈에 있으므로 AEM에 배포할 수 있습니다.
+1. `ui.apps/src/main/content/jcr_root/apps/wknd/clientlibs/clientlib-site/css/site.css`의 **ui.apps** 모듈에서 `site.css` 파일을 검사하십시오. **ui.frontend** 모듈에서 `site.css` 파일의 동일한 복사본이어야 합니다. 이제 **ui.apps** 모듈에 있으므로 AEM에 배포할 수 있습니다.
 
    ![ui.apps clientlib-site](assets/client-side-libraries/ui-apps-clientlib-site-css.png)
 
    >[!NOTE]
    >
-   > 빌드 시간 동안 **clientlib-site**&#x200B;이(가) 컴파일되므로 **npm** 또는 **maven**&#x200B;을 사용하여 **ui.apps** 모듈의 소스 제어에서 무시해도 됩니다. **ui.apps** 아래에 있는 `.gitignore` 파일을 Inspect으로 가져옵니다.
+   > 빌드 시간 동안 **clientlib-site**&#x200B;이(가) 컴파일되므로 **npm** 또는 **maven**&#x200B;을 사용하여 **ui.apps** 모듈의 소스 제어에서 무시해도 됩니다. **ui.apps** 아래에서 `.gitignore` 파일을 검사합니다.
 
 1. AEM에서 LA Skatepark 문서를 엽니다. [http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html).
 
@@ -246,11 +246,11 @@ AEM Project Archetype 은 이 통합을 자동으로 설정합니다. 그런 다
 
    >[!NOTE]
    >
-   > 프로젝트 `mvn clean install -PautoInstallSinglePackage`의 루트에서 Maven 빌드가 트리거될 때 ui.frontend 코드를 빌드하고 AEM에 배포하기 위해 위에서 수행한 단계가 자동으로 실행됩니다.
+   > 프로젝트 `mvn clean install -PautoInstallSinglePackage`의 루트에서 Maven 빌드가 트리거될 때 위에서 수행한 ui.frontend 코드 빌드 및 AEM 배포 단계가 자동으로 실행됩니다.
 
 ## 스타일 변경
 
-그런 다음 `ui.frontend` 모듈을 약간 변경하여 `npm run watch`이(가) 로컬 AEM 인스턴스에 자동으로 스타일을 배포하는지 확인합니다.
+그런 다음 `ui.frontend` 모듈을 약간 변경하여 `npm run watch`이(가) 로컬 AEM 인스턴스에 스타일을 자동으로 배포하는지 확인합니다.
 
 1. `ui.frontend` 모듈에서 `ui.frontend/src/main/webpack/site/_variables.scss` 파일을 엽니다.
 1. `$brand-primary` 색 변수 업데이트:
@@ -343,9 +343,9 @@ Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 �
 
 ### Webpack 개발 서버 - 정적 마크업 {#webpack-dev-static}
 
-앞의 두 연습에서는 **ui.frontend** 모듈에서 여러 Sass 파일이 업데이트되고 빌드 프로세스를 통해 이러한 변경 내용이 AEM에 반영되었음을 확인했습니다. 다음으로 [webpack-dev-server](https://webpack.js.org/configuration/dev-server/)를 사용하여 **static** HTML에 대해 프론트엔드 스타일을 빠르게 개발하는 기술을 살펴보겠습니다.
+앞의 두 연습에서는 **ui.frontend** 모듈의 여러 Sass 파일이 업데이트되고 빌드 프로세스를 통해 이러한 변경 내용이 AEM에 반영되었음을 확인했습니다. 다음으로 [webpack-dev-server](https://webpack.js.org/configuration/dev-server/)를 사용하여 **static** HTML에 대해 프론트엔드 스타일을 빠르게 개발하는 기술을 살펴보겠습니다.
 
-이 기술은 대부분의 스타일과 프론트엔드 코드를 AEM 환경에 쉽게 액세스할 수 없는 전용 프론트엔드 개발자가 수행하는 경우에 유용합니다. 이 기술은 또한 FED가 HTML에 직접 수정을 할 수 있도록 하며, 이는 이후 AEM 개발자에게 넘겨 구성 요소로 구현할 수 있습니다.
+이 기술은 대부분의 스타일과 프론트엔드 코드를 AEM 환경에 쉽게 액세스할 수 없는 전용 프론트엔드 개발자가 수행하는 경우에 유용합니다. 또한 이 기술을 통해 FED는 HTML을 직접 수정할 수 있으며, 이후 이를 AEM 개발자에게 넘겨 구성 요소로 구현할 수 있습니다.
 
 1. LA 스케이트파크 문서 페이지의 페이지 원본을 [http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html?wcmmode=disabled](http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html?wcmmode=disabled)에 복사합니다.
 1. IDE를 다시 엽니다. AEM에서 복사한 태그를 `src/main/webpack/static` 아래의 **ui.frontend** 모듈에 있는 `index.html`에 붙여 넣습니다.
@@ -405,7 +405,7 @@ Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 �
 
 ### 클라이언트측 라이브러리 디버깅 {#debugging-clientlibs}
 
-**categories** 및 **embed**&#x200B;의 다른 메서드를 사용하여 여러 클라이언트 라이브러리를 포함하면 문제를 해결하는 데 번거로울 수 있습니다. AEM은 이 작업에 도움이 되는 몇 가지 도구를 노출합니다. 가장 중요한 도구 중 하나는 AEM에서 LESS 파일을 다시 컴파일하고 CSS를 생성하도록 하는 **클라이언트 라이브러리 다시 빌드**&#x200B;입니다.
+**categories** 및 **embed**&#x200B;의 다른 메서드를 사용하여 여러 클라이언트 라이브러리를 포함하면 문제를 해결하는 데 번거로울 수 있습니다. AEM은 이 작업에 도움이 되는 몇 가지 도구를 제공합니다. 가장 중요한 도구 중 하나는 AEM에서 LESS 파일을 다시 컴파일하고 CSS를 생성하도록 하는 **클라이언트 라이브러리 다시 빌드**&#x200B;입니다.
 
 * [**덤프 라이브러리**](http://localhost:4502/libs/granite/ui/content/dumplibs.html) - AEM 인스턴스에 등록된 클라이언트 라이브러리를 나열합니다. `<host>/libs/granite/ui/content/dumplibs.html`
 

@@ -1,25 +1,25 @@
 ---
 title: AEM 워크플로의 변수[Part4]
 description: AEM 워크플로우에서 XML, JSON, ArrayList, Document 유형의 변수 사용
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 feature: Adaptive Forms, Workflow
 role: Developer
 level: Beginner
 exl-id: 269e43f7-24cf-4786-9439-f51bfe91d39c
 duration: 102
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%
 
 ---
 
-# AEM Workflow의 ArrayList 변수
+# AEM 워크플로의 ArrayList 변수
 
 AEM Forms 6.5에 ArrayList 유형의 변수가 도입되었습니다. ArrayList 변수를 사용하는 일반적인 사용 사례는 AssignTask에서 사용할 사용자 정의 경로를 정의하는 것입니다.
 
-AEM Workflow에서 ArrayList 변수를 사용하려면 제출된 데이터에서 반복 요소를 생성하는 적응형 양식을 만들어야 합니다. 일반적인 방법은 배열 요소를 포함하는 스키마를 정의하는 것입니다. 이 문서의 목적을 위해 배열 요소가 포함된 간단한 JSON 스키마를 만들었습니다. 사용 사례는 직원이 경비 보고서를 작성하는 것입니다. 경비 보고서에서 제출자의 관리자 이름과 관리자의 관리자 이름을 캡처합니다. 관리자의 이름은 managerchain이라는 배열에 저장됩니다. 아래 스크린샷에는 경비 보고서 양식과 적응형 Forms 제출의 데이터가 표시됩니다.
+AEM 워크플로에서 ArrayList 변수를 사용하려면 제출된 데이터에서 반복 요소를 생성하는 적응형 양식을 만들어야 합니다. 일반적인 방법은 배열 요소를 포함하는 스키마를 정의하는 것입니다. 이 문서의 목적을 위해 배열 요소가 포함된 간단한 JSON 스키마를 만들었습니다. 사용 사례는 직원이 경비 보고서를 작성하는 것입니다. 경비 보고서에서 제출자의 관리자 이름과 관리자의 관리자 이름을 캡처합니다. 관리자의 이름은 managerchain이라는 배열에 저장됩니다. 아래 스크린샷에는 경비 보고서 양식과 적응형 Forms 제출의 데이터가 표시됩니다.
 
 ![경비 보고서](assets/expensereport.jpg)
 

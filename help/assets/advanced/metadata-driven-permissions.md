@@ -1,7 +1,7 @@
 ---
 title: AEM Assets의 메타데이터 기반 권한
 description: 메타데이터 기반 권한은 폴더 구조가 아닌 에셋 메타데이터 속성에 따라 액세스를 제한하는 데 사용되는 기능입니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Administration, Security
 feature: User and Groups
 role: Admin
@@ -11,7 +11,7 @@ doc-type: Tutorial
 last-substantial-update: 2024-05-03T00:00:00Z
 exl-id: 57478aa1-c9ab-467c-9de0-54807ae21fb1
 duration: 158
-source-git-commit: 6e08e6830c4e2ab27e813d262f4f51c6aae2909b
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 0%

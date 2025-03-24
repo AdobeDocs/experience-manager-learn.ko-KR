@@ -1,7 +1,7 @@
 ---
 title: Adobe Experience Cloud과 AEM as a Cloud Service 통합
 description: AEM as a Cloud Service이 다른 Adobe Experience Cloud 제품과의 지원되는 통합에 대해 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Integrations
 topic: Integrations
 role: Leader, Architect, Admin, Developer
@@ -14,17 +14,17 @@ badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM as a Cloud Service" before-title="false"
 exl-id: 9e856dcc-f042-4e9d-bf97-dd4f72e837e3
 duration: 135
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '682'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
 # Adobe Experience Cloud과 AEM as a Cloud Service 통합
 
 AEM as a Cloud Service이 다른 Adobe Experience Cloud 제품과의 지원되는 통합에 대해 알아봅니다.
-통합 구성 및 사용 방법에 대한 설명서를 보려면 Experience Cloud 제품을 클릭하십시오.
+통합 구성 및 사용 방법에 대한 설명서를 보려면 Experience Cloud 제품 을 클릭하십시오.
 
 |                                                                   | AEM Sites | AEM Assets | AEM Forms |
 |-------------------------------------------------------------------|:---------:|:----------:|:---------:|
@@ -38,7 +38,7 @@ AEM as a Cloud Service이 다른 Adobe Experience Cloud 제품과의 지원되�
 | Customer Journey Analytics |           |            |          |
 | [Experience Platform 태그](#adobe-experience-platform-tags) | ✔ |            | ✔ |
 | [Journey Optimizer](#adobe-journey-optimizer) |           | ✔ |          |
-| [학습 관리자](#adobe-learning-manager) | ✔ |            |          |
+| [Learning Manager](#adobe-learning-manager) | ✔ |            |          |
 | Marketo Engage |           |            |          |
 | Real-time CDP |           |            |          |
 | [Sensei](#adobe-sensei) | ✔ | ✔ | ✔ |
@@ -66,7 +66,7 @@ AEM as a Cloud Service과 Adobe Analytics을 통합하면 고객 여정의 어�
 + Adobe 클라이언트 데이터 레이어(ACDL)
 
    + [AEM WCM 핵심 구성 요소에서 ACDL 확장](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/extending.html)
-   + [ACDL과 AEM WCM 핵심 구성 요소 통합](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html)
+   + [AEM WCM 핵심 구성 요소와 ACDL 통합](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html)
    + [ACDL을 사용하여 이벤트 기반 데이터 처리](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/adobe-client-data-layer.html)
    + [ACDL(Adobe 클라이언트 데이터 레이어) 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html)
 
@@ -92,7 +92,7 @@ Adobe Commerce과 AEM as a Cloud Service의 통합을 통해 브랜드는 상거
 
 ### AEM Sites
 
-+ [AEM Content 및 Commerce 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html)
++ [AEM 컨텐츠 및 Commerce 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html)
 
 
 ## Adobe Experience Platform의 태그
@@ -119,7 +119,7 @@ Adobe Journey Optimizer은 단일 애플리케이션에서 수백만 고객과 �
 
 ## Adobe Learning Manager
 
-Adobe Learning Manager(이전의 Adobe Captivate Prime)는 고객과 직원에게 개인화된 학습을 제공합니다.
+Adobe Learning Manager(이전 Adobe Captivate Prime)은 고객 및 직원에게 개인화된 학습을 제공합니다.
 
 ### AEM Sites
 
@@ -144,7 +144,7 @@ Adobe Sensei은 AI 및 머신 러닝 기술을 제공하여 스마트 태그, �
 
 ### AEM Forms
 
-+ [Automated forms conversion 서비스](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html)
++ [자동 양식 전환 서비스](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html)
 
 
 ## Adobe Target
@@ -156,10 +156,10 @@ Adobe Target은 AEM as a Cloud Service과 통합되어 AEM의 콘텐츠를 기�
 + [Adobe Target 통합 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html)
 + Target에 경험 조각
 
-   + Target에 대한 [Publish 경험 조각](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html)
-   + [Target에 JSON으로 Publish 경험 조각](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html)
+   + [Target에 경험 조각 게시](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html)
+   + [경험 조각을 JSON으로 Target에 게시](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html)
 
-+ [Target에 AEM Context Hub 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/audiences.html#creating-an-adobe-target-audience-using-the-audience-console)
++ [Target에서 AEM Context Hub 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/audiences.html#creating-an-adobe-target-audience-using-the-audience-console)
 + [AEM Sites 및 Target 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/target/overview.html)
 
 ## Adobe Workfront

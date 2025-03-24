@@ -2,20 +2,20 @@
 title: AEM 워크플로우의 변수[Part1]
 description: AEM 워크플로우에서 XML, JSON, ArrayList, Document 유형의 변수 사용
 feature: Adaptive Forms, Workflow
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 exl-id: f9782684-3a74-4080-9680-589d3f901617
 duration: 561
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 0%
 
 ---
 
-# AEM Workflow의 XML 변수
+# AEM 워크플로의 XML 변수
 
 XML 유형의 변수는 일반적으로 XSD 기반 적응형 양식이 있고, 워크플로우의 적응형 양식 제출에서 값을 추출하려는 경우 사용됩니다.
 

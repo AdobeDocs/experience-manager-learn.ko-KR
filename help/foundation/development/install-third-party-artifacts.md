@@ -1,7 +1,7 @@
 ---
 title: 타사 아티팩트 설치 - 공개 Maven 저장소에서 사용할 수 없음
 description: AEM 프로젝트를 빌드하고 배포할 때 공개 Maven 저장소에서 *사용할 수 없는 타사 아티팩트를 설치하는 방법을 알아봅니다.
-version: 6.5, Cloud Service
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: OSGI
 topic: Development
 role: Architect, Developer
@@ -11,13 +11,13 @@ duration: 0
 last-substantial-update: 2024-09-13T00:00:00Z
 jira: KT-16207
 thumbnail: KT-16207.jpeg
-source-git-commit: 33415305f6aa183373eaef4bb4978a59325c8a32
+exl-id: 0cec14b3-4be5-4666-a36c-968ea2fc634f
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1569'
 ht-degree: 0%
 
 ---
-
 
 # 타사 아티팩트 설치 - 공개 Maven 저장소에서 사용할 수 없음
 
@@ -31,7 +31,7 @@ AEM 프로젝트를 빌드하고 배포할 때 공용 Maven 저장소에서 *사
 
 ## 표준 시나리오
 
-일반적으로 공개 Maven 저장소에 AEM 프로젝트의 `pom.xml` 파일에 종속성으로 *사용할 수 있는*&#x200B;타사 번들을 설치합니다.
+일반적으로 AEM 프로젝트의 `pom.xml` 파일에 종속되어 있는 공개 Maven 저장소에 *사용할 수 있는*&#x200B;서드파티 번들을 설치합니다.
 
 예:
 
@@ -63,7 +63,7 @@ AEM 프로젝트를 빌드하고 배포할 때 공용 Maven 저장소에서 *사
 
 ## 설정
 
-- AEM 6.X 또는 AEMCS(AEM as a Cloud Service) 로컬 개발 환경 또는 RDE 환경을 설정합니다.
+- AEM 6.X 또는 AEM as a Cloud Service(AEMCS) 로컬 개발 환경 또는 RDE 환경을 설정합니다.
 
 - AEM WKND 프로젝트를 복제하고 배포합니다.
 
@@ -178,7 +178,7 @@ AEM WKND 프로젝트의 `my-example-bundle`에서 `HelloWorldService` OSGi 서�
 
 - 브라우저의 URL `http://localhost:4502/bin/sayhello`에 액세스하여 `SayHello` 서블릿이 예상대로 작동하는지 확인하십시오.
 
-- 위의 변경 사항을 AEM WKND 프로젝트의 저장소에 커밋합니다. 그런 다음 Cloud Manager 파이프라인을 실행하여 RDE 또는 AEM 환경에서 변경 사항을 확인합니다.
+- 위의 변경 사항을 AEM WKND 프로젝트의 저장소에 커밋합니다. 그런 다음 Cloud Manager 파이프라인을 실행하여 RDE 또는 AEM 환경의 변경 사항을 확인합니다.
 
   ![SayHello 서블릿 확인 - 번들 서비스](./assets/install-third-party-articafcts/verify-sayhello-servlet-bundle-service.png)
 
@@ -188,7 +188,7 @@ AEM WKND 프로젝트의 [tutorial/install-third-party-bundle](https://github.co
 
 공개 Maven 저장소에서 사용할 수 없는 OSGi 번들은 다음 단계에 따라 AEM 프로젝트에 설치할 수 있습니다.
 
-- OSGi 번들을 `all` 모듈의 `jcr_root/apps/<PROJECT-NAME>-vendor-packages/container/install` 디렉터리에 복사합니다. 이 단계는 AEM 인스턴스에 번들을 패키징하고 배포하는 데 필요합니다.
+- OSGi 번들을 `all` 모듈의 `jcr_root/apps/<PROJECT-NAME>-vendor-packages/container/install` 디렉터리에 복사합니다. 이 단계는 번들을 패키징하고 AEM 인스턴스에 배포하는 데 필요합니다.
 
 - 루트 및 코어 모듈의 `pom.xml` 파일을 업데이트하여 `system` 범위 및 `systemPath`이(가) 번들 파일을 가리키는 종속성으로 OSGi 번들을 추가합니다. 이 단계는 프로젝트를 컴파일하는 데 필요합니다.
 
@@ -327,7 +327,7 @@ AEM WKND 프로젝트에서 `my-example-jar`의 `MyHelloWorldService`을(를) �
 
 - 브라우저의 URL `http://localhost:4502/bin/sayhello`에 액세스하여 `SayHello` 서블릿이 예상대로 작동하는지 확인하십시오.
 
-- 위의 변경 사항을 AEM WKND 프로젝트의 저장소에 커밋합니다. 그런 다음 Cloud Manager 파이프라인을 실행하여 RDE 또는 AEM 환경에서 변경 사항을 확인합니다.
+- 위의 변경 사항을 AEM WKND 프로젝트의 저장소에 커밋합니다. 그런 다음 Cloud Manager 파이프라인을 실행하여 RDE 또는 AEM 환경의 변경 사항을 확인합니다.
 
   ![SayHello 서블릿 확인 - JAR 서비스](./assets/install-third-party-articafcts/verify-sayhello-servlet-jar-service.png)
 
@@ -369,7 +369,7 @@ ACS AEM Commons 패키지는 공개 Maven 저장소에서 사용할 수 있습�
   $mvn clean install
   ```
 
-- 로컬로 빌드된 패키지는 @ `all/target`에 있으며 .zip 파일이 두 개 있습니다. 하나는 AEM as a Cloud Service을 위한 것이고 다른 하나는 AEM 6.X를 위한 것입니다.`-cloud`
+- 로컬로 빌드된 패키지는 @ `all/target`에 있으며 두 개의 .zip 파일이 있습니다. 하나는 AEM as a Cloud Service을 위한 것이고 다른 하나는 AEM 6.X를 위한 것입니다.`-cloud`
 
 - AEM WKND 프로젝트의 `all` 모듈에서 `all/src/main/content/jcr_root/apps/wknd-vendor-packages/container/install` 디렉터리 구조를 만듭니다. `/all/src/main/content` 디렉터리가 있습니다. `jcr_root/apps/wknd-vendor-packages/container/install` 디렉터리만 만들면 됩니다.
 
@@ -391,7 +391,7 @@ ACS AEM Commons 패키지는 공개 Maven 저장소에서 사용할 수 있습�
 
      ![ACS AEM Commons 스냅숏 버전 번들](./assets/install-third-party-articafcts/acs-aem-commons-snapshot-bundle.png)
 
-- 위의 변경 사항을 AEM WKND 프로젝트의 저장소에 커밋합니다. 그런 다음 Cloud Manager 파이프라인을 실행하여 RDE 또는 AEM 환경에서 변경 사항을 확인합니다.
+- 위의 변경 사항을 AEM WKND 프로젝트의 저장소에 커밋합니다. 그런 다음 Cloud Manager 파이프라인을 실행하여 RDE 또는 AEM 환경의 변경 사항을 확인합니다.
 
 ### 주요 학습{#key-learnings-package}
 
@@ -402,4 +402,4 @@ ACS AEM Commons 패키지는 공개 Maven 저장소에서 사용할 수 있습�
 
 ## 요약
 
-이 자습서에서는 AEM 프로젝트를 빌드하고 배포할 때 공개 Maven 저장소에서 사용할 수 없는 서드파티 아티팩트(번들, Java jar 및 패키지)를 설치하는 방법을 배웠습니다.
+이 자습서에서는 AEM 프로젝트를 빌드하고 배포할 때 공개 Maven 저장소에서 사용할 수 없는 서드파티 아티팩트(번들, Java Jar 및 패키지)를 설치하는 방법을 배웠습니다.

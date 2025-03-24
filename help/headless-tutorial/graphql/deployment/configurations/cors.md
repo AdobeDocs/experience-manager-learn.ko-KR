@@ -1,7 +1,7 @@
 ---
 title: AEM GraphQL에 대한 CORS 구성
 description: AEM GraphQL에서 사용할 CORS(원본 간 리소스 공유)를 구성하는 방법에 대해 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: GraphQL API
 topic: Headless, Content Management
 role: Developer, Architect
@@ -11,7 +11,7 @@ thumbnail: KT-10830.jpg
 exl-id: 394792e4-59c8-43c1-914e-a92cdfde2f8a
 last-substantial-update: 2024-03-22T00:00:00Z
 duration: 185
-source-git-commit: 1ad0c609ca0edb34e556c1453462c6d1041f5807
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '603'
 ht-degree: 2%
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 # CORS(원본 간 리소스 공유)
 
-Adobe Experience Manager as a Cloud Service의 CORS(원본 간 리소스 공유)는 비 AEM 웹 속성을 사용하여 AEM의 GraphQL API 및 기타 AEM Headless 리소스에 대한 브라우저 기반 클라이언트측 호출을 수행할 수 있도록 합니다.
+Adobe Experience Manager as a Cloud Service의 CORS(원본 간 리소스 공유)를 사용하면 AEM 이외 웹 속성을 사용하여 AEM의 GraphQL API 및 기타 AEM Headless 리소스에 대한 브라우저 기반 클라이언트측 호출을 할 수 있습니다.
 
 >[!TIP]
 >
@@ -36,18 +36,18 @@ AEM에 연결하는 클라이언트가 AEM과 동일한 원본(호스트 또는 
 
 ## AEM Author
 
-AEM Author 서비스에서 CORS를 활성화하는 것은 AEM Publish 및 AEM Preview 서비스와 다릅니다. AEM Author 서비스는 AEM Author 서비스의 실행 모드 폴더에 OSGi 구성을 추가해야 하며 Dispatcher 구성을 사용하지 않습니다.
+AEM Author 서비스에서 CORS를 활성화하는 것은 AEM Publish 및 AEM 미리보기 서비스와 다릅니다. AEM Author 서비스는 AEM Author 서비스의 실행 모드 폴더에 OSGi 구성을 추가해야 하며 Dispatcher 구성을 사용하지 않습니다.
 
 ### OSGi 구성
 
 AEM CORS OSGi 구성 팩토리는 CORS HTTP 요청을 수락하는 허용 기준을 정의합니다.
 
-| 클라이언트가에 연결 | AEM Author | AEM 게시 | AEM 미리 보기 |
+| 클라이언트가에 연결 | AEM Author | AEM 게시 | AEM 미리보기 |
 |-------------------------------------:|:----------:|:-------------:|:-------------:|
 | CORS OSGi 구성 필요 | ✔ | ✘ | ✘ |
 
 
-아래 예제는 AEM Author(`../config.author/..`)에 대한 OSGi 구성을 정의하므로 AEM Author 서비스에서만 활성화됩니다.
+아래 예제는 AEM 작성자(`../config.author/..`)에 대한 OSGi 구성을 정의하므로 AEM 작성자 서비스에서만 활성화됩니다.
 
 주요 구성 속성은 다음과 같습니다.
 
@@ -57,7 +57,7 @@ AEM CORS OSGi 구성 팩토리는 CORS HTTP 요청을 수락하는 허용 기준
    + 경험 조각을 지원하려면 다음 패턴을 추가하십시오. `/content/experience-fragments/.*`
 + `supportedmethods`은(는) CORS 요청에 허용된 HTTP 메서드를 지정합니다. AEM GraphQL 지속 쿼리(및 경험 조각)를 지원하려면 `GET` 을(를) 추가하십시오.
 + AEM 작성자에 대한 요청이 승인되어야 하므로 `supportedheaders`에 `"Authorization"`이(가) 포함됩니다.
-+ AEM 작성자에 대한 요청이 승인되어야 하므로 `supportscredentials`이(가) `true`(으)로 설정되었습니다.
++ AEM 작성자에 대한 요청이 승인되어야 하므로 `supportscredentials`이(가) `true`(으)로 설정됩니다.
 
 [CORS OSGi 구성에 대해 자세히 알아보세요.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)
 
@@ -102,18 +102,18 @@ AEM CORS OSGi 구성 팩토리는 CORS HTTP 요청을 수락하는 허용 기준
 
 ## AEM 게시
 
-AEM Publish(및 미리보기) 서비스에서 CORS를 활성화하는 것은 AEM 작성자 서비스와 다릅니다. AEM Publish 서비스를 사용하려면 AEM Dispatcher 구성을 AEM Publish Dispatcher 구성에 추가해야 합니다. AEM Publish은 [OSGi 구성](#osgi-configuration)을 사용하지 않습니다.
+AEM 게시(및 미리보기) 서비스에서 CORS를 활성화하는 것은 AEM 작성자 서비스와 다릅니다. AEM Publish 서비스를 사용하려면 AEM Dispatcher 구성을 AEM의 Dispatcher 구성에 추가해야 합니다. AEM 게시는 [OSGi 구성](#osgi-configuration)을 사용하지 않습니다.
 
 AEM Publish에서 CORS를 구성할 때 다음을 확인하십시오.
 
-+ AEM Dispatcher 프로젝트의 `clientheaders.any` 파일에서 `Origin` 헤더(이전에 추가된 경우)를 제거하여 `Origin` HTTP 요청 헤더를 AEM Publish 서비스로 보낼 수 없습니다. `Access-Control-` 헤더는 `clientheaders.any` 파일에서 제거해야 하며 AEM Publish 서비스가 아니라 Dispatcher에서 관리합니다.
++ AEM Dispatcher 프로젝트의 `clientheaders.any` 파일에서 `Origin` 헤더(이전에 추가된 경우)를 제거하여 `Origin` HTTP 요청 헤더를 AEM Publish 서비스로 보낼 수 없습니다. `Access-Control-` 헤더는 `clientheaders.any` 파일에서 제거해야 하며 Dispatcher에서 관리하며 AEM Publish 서비스는 관리하지 않습니다.
 + AEM Publish 서비스에서 [CORS OSGi 구성](#osgi-configuration)을 사용하도록 설정한 경우 이를 제거하고 해당 구성을 아래 설명된 [Dispatcher vhost 구성](#set-cors-headers-in-vhost)(으)로 마이그레이션해야 합니다.
 
 ### Dispatcher 구성
 
-AEM Publish(및 미리보기) 서비스의 Dispatcher이 CORS를 지원하도록 구성되어야 합니다.
+AEM 게시(및 미리보기) 서비스의 Dispatcher은 CORS를 지원하도록 구성해야 합니다.
 
-| 클라이언트가에 연결 | AEM Author | AEM 게시 | AEM 미리 보기 |
+| 클라이언트가에 연결 | AEM Author | AEM 게시 | AEM 미리보기 |
 |-------------------------------------:|:----------:|:-------------:|:-------------:|
 | Dispatcher CORS 구성 필요 | ✘ | ✔ | ✔ |
 
@@ -178,7 +178,7 @@ AEM Publish(및 미리보기) 서비스의 Dispatcher이 CORS를 지원하도록
    </VirtualHost>
    ```
 
-3. 아래 행에서 정규 표현식을 업데이트하여 AEM Publish 서비스에 액세스하는 데 원하는 원본을 일치시키십시오. 여러 출처가 필요한 경우 이 라인을 복제하고 각 출처/출처 패턴에 대해 업데이트합니다.
+3. 아래 행에서 정규 표현식을 업데이트하여 AEM Publish 서비스에 액세스하는 데 필요한 원본을 일치시키십시오. 여러 출처가 필요한 경우 이 라인을 복제하고 각 출처/출처 패턴에 대해 업데이트합니다.
 
    ```
    SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*.your-domain.tld(:\d+)?$)#" CORSTrusted=true

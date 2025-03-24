@@ -1,15 +1,15 @@
 ---
 title: AEM Assets을 사용한 Dynamic Media 개요
-description: 이 비디오 시리즈에서는 Adobe Experience Manager Dynamic Media을 컨텐츠 서비스 서비스로 사용하여 미디어 컨텐츠를 관리하고 액세스하는 방법에 대한 개요를 제공합니다. Dynamic Media을 사용하면 Experience Manager Assets의 고유한 기능인 다이내믹 디지털 경험을 관리하고 게시할 수 있습니다. Dell의 프레임워크 및 구성 요소 제품군을 통해 마케터는 모든 장치에서 대화형 멀티미디어 경험을 사용자 정의하고 전달할 수 있습니다.
+description: 이 비디오 시리즈에서는 Adobe Experience Manager Dynamic Media를 콘텐츠 서비스 서비스로 사용하여 미디어 콘텐츠를 관리하고 액세스하는 방법에 대한 개요를 제공합니다. Dynamic Media를 사용하면 Experience Manager Assets의 고유한 기능인 다이내믹 디지털 경험을 관리하고 게시할 수 있습니다. Dell의 프레임워크 및 구성 요소 제품군을 통해 마케터는 모든 장치에서 대화형 멀티미디어 경험을 사용자 정의하고 전달할 수 있습니다.
 feature: Smart Crop, Video Profiles, Image Profiles, Viewer Presets, 360 VR Video, Image Sets, Spin Sets
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Content Management
 role: User
 level: Beginner
 doc-type: Feature Video
 exl-id: 59462cb4-d379-4e58-b786-ff8dbae6191c
 duration: 2516
-source-git-commit: fd372c7ee387504e4316a6ca657a77fe0a0c511e
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '855'
 ht-degree: 0%
@@ -18,13 +18,13 @@ ht-degree: 0%
 
 # AEM Assets에서 Dynamic Media 사용 {#understanding-aem-dynamic-media}
 
-이 멀티 파트 비디오 시리즈는 Adobe Experience Manager Dynamic Media을 컨텐츠 서비스 서비스로 사용하여 미디어 컨텐츠를 관리하고 액세스하는 방법에 대한 개요를 제공합니다. Dynamic Media을 사용하면 Experience Manager Assets의 고유한 기능인 다이내믹 디지털 경험을 관리하고 게시할 수 있습니다. Dell의 프레임워크 및 구성 요소 제품군을 통해 마케터는 모든 장치에서 대화형 멀티미디어 경험을 사용자 정의하고 전달할 수 있습니다.
+이 멀티 파트 비디오 시리즈는 Adobe Experience Manager Dynamic Media를 콘텐츠 서비스 서비스로 사용하여 미디어 콘텐츠를 관리하고 액세스하는 방법에 대한 개요를 제공합니다. Dynamic Media를 사용하면 Experience Manager Assets의 고유한 기능인 다이내믹 디지털 경험을 관리하고 게시할 수 있습니다. Dell의 프레임워크 및 구성 요소 제품군을 통해 마케터는 모든 장치에서 대화형 멀티미디어 경험을 사용자 정의하고 전달할 수 있습니다.
 
 ## Dynamic Media 라이브 데모
 
 [![AEM Assets Dynamic Media 라이브 데모](./assets/overview/live-demo.png)](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)
 
-최첨단 솔루션이 구현되는 [**라이브 데모**](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)를 통해 Dynamic Media Adobe의 가능성을 살펴보십시오. [**다이내믹 Assets**](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/dynamic-assets.html)이(가) 워크플로를 간소화하고 컨텐츠 관리를 향상시키는 방법을 알아보고 모든 채널에서 Captivate 대상을 찾는 [**대화형 경험**](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/interactive-experiences.html)을 살펴보십시오. [Dynamic Media에서 콘텐츠 전략을 변형하는 방법을 확인하십시오](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)!
+최첨단 솔루션이 구현되는 [**라이브 데모**](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)를 통해 Adobe Dynamic Media의 가능성을 살펴보십시오. [**다이내믹 Assets**](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/dynamic-assets.html)이(가) 워크플로를 간소화하고 컨텐츠 관리를 향상시키는 방법을 알아보고 모든 채널에서 Captivate 대상을 찾는 [**대화형 경험**](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/interactive-experiences.html)을 살펴보십시오. [Dynamic Media가 콘텐츠 전략을 어떻게 변형할 수 있는지 확인](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)!
 
 ## Dynamic Media 개요
 
@@ -34,7 +34,7 @@ ht-degree: 0%
 >
 >여기에 표시된 기능은 DMS7이 대체한 DMHybrid 실행 모드가 아닌 현재 지원되는 실행 모드인 Dynamic Media DMS7 실행 모드에서 사용할 수 있습니다.
 
-이 비디오에서는 Adobe Experience Manager Dynamic Media을 컨텐츠 제공 서비스로 사용하여 미디어 컨텐츠를 관리하고 액세스하는 방법에 대해 설명합니다. Dynamic Media은 필요한 소모성 변형 또는 파생 표현물의 무제한 세트를 이행하도록 요청할 수 있는 이미지 에셋 또는 비디오 에셋을 업로드하는 단일 기본 에셋 방법론에서 작동합니다. 포함됨:
+이 비디오에서는 Adobe Experience Manager Dynamic Media를 콘텐츠 서비스 서비스로 사용하여 미디어 콘텐츠를 관리하고 액세스하는 방법에 대해 설명합니다. Dynamic Media는 필요한 소모성 변형 또는 파생 렌디션의 무제한 세트를 이행하도록 요청할 수 있는 이미지 에셋 또는 비디오 에셋을 업로드하는 단일 기본 에셋 방법론에서 작동합니다. 포함됨:
 
 * URL에 대한 단일 기본 에셋 제공 서비스 설명
 * 이미지 처리 옵션
@@ -50,7 +50,7 @@ ht-degree: 0%
 >
 >여기에 표시된 기능은 DMS7이 대체한 DMHybrid 실행 모드가 아닌 현재 지원되는 실행 모드인 Dynamic Media DMS7 실행 모드에서 사용할 수 있습니다. 이 비디오는 1부 비디오(Dynamic Media 개요)에 설명된 개념을 참조합니다.
 
-이 비디오는 Adobe Experience Manager Dynamic Media에서 미디어 콘텐츠를 관리하는 방법을 설명합니다. 또한 반응형 페이지 너비를 기반으로 최적화하기 위해 구성 요소를 사용하여 AEM Sites에서 쉽게 사용할 수 있습니다. 대화형 이미지 배너를 손쉽게 만들고 컨텐츠 관리 시스템에서 사용할 복사 URL을 생성합니다.
+이 비디오에서는 미디어 콘텐츠를 Adobe Experience Manager Dynamic Media에서 관리하고 구성 요소와 함께 AEM Sites에서 쉽게 사용할 수 있는 방법을 설명합니다. 반응형 페이지 너비를 기반으로 최적화하도록 간단하고 자동으로 잘립니다. 대화형 이미지 배너를 손쉽게 만들고 컨텐츠 관리 시스템에서 사용할 복사 URL을 생성합니다.
 
 * AEM Sites Dynamic Media 구성 요소 유연성
 * 이미지 사전 설정을 사용하여 로컬로 다운로드
@@ -86,7 +86,7 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/27319?quality=12&learn=on)
 
-이 비디오에서는 Dynamic Media의 URL 수정자를 사용하여 소스 파일 자체의 기능(배경 투명도, 클리핑 패스 및 자르기 및 텍스트 포함)을 변수로 활용하기 위해 이미지 크기를 조정하는 방법을 설명합니다.
+이 비디오에서는 이미지 크기를 조정하는 것뿐만 아니라 Dynamic Media의 URL 수정자를 사용하여 소스 파일 자체의 기능(배경 투명도, 클리핑 패스 및 자르기 및 텍스트 포함)을 변수로 활용하는 방법에 대해 설명합니다.
 
 * Dynamic Media 수정자 필드에서 URL 수정자 사용
 * 투명도를 사용하여 이미지의 배경색 변경

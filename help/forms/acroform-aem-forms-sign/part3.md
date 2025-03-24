@@ -3,11 +3,11 @@ title: AEM Forms이 포함된 Acroforms
 description: Acroforms와 AEM Forms 통합 자습서의 3부. 시스템에서 워크플로 및 적응형 양식을 테스트합니다.
 feature: adaptive-forms
 doc-type: Tutorial
-version: 6.5
+version: Experience Manager 6.5
 badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 duration: 45
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 1%
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # 시스템에서 이 기능 테스트
 
-[이 패키지를 다운로드하여 AEM에 가져오기](assets/acro-form-aem-form.zip)
+[이 패키지를 AEM에 다운로드하여 가져오기](assets/acro-form-aem-form.zip)
 이 패키지에는 업로드된 Acroform에서 스키마를 만들 수 있는 샘플 워크플로우 및 html 페이지가 포함되어 있습니다.
 
 ## 워크플로우 구성
@@ -32,10 +32,10 @@ ht-degree: 1%
 
 1. 이전 단계에서 만든 스키마를 사용하여 적응형 양식을 만듭니다.
 2. 몇 개의 스키마 요소를에 적응형 양식으로 끌어다 놓습니다.
-3. 적응형 양식의 제출 액션을 구성하여 AEM Workflow(MergeAcroformData)에 제출합니다.
+3. 적응형 양식의 제출 액션을 구성하여 AEM 워크플로(MergeAcroformData)에 제출합니다.
 4. **데이터 파일 경로를 &quot;Data.xml&quot;로 지정하십시오. 샘플 코드가 워크플로 페이로드에서 Data.xml이라는 파일을 검색하므로 매우 중요합니다.**
 5. 적응형 양식을 미리 보고 양식을 입력한 후 제출합니다.
-6. 구성 워크플로 아래에 4단계에서 지정한 폴더에 저장된 병합된 데이터의 PDF이 표시됩니다
+6. 병합 데이터가 구성 워크플로 아래의 4단계에서 지정된 폴더에 저장된 PDF이 표시됩니다
 
 >[!NOTE]
 >

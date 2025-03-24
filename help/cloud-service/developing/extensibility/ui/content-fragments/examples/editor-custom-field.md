@@ -2,7 +2,7 @@
 title: 콘텐츠 조각 콘솔 - 사용자 정의 필드
 description: AEM 콘텐츠 조각 편집기에서 사용자 지정 필드를 만드는 방법을 알아봅니다.
 feature: Developer Tools, Content Fragments
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 role: Developer
 level: Intermediate
 doc-type: Tutorial
@@ -11,7 +11,7 @@ last-substantial-update: 2024-02-27T00:00:00Z
 jira: KT-14903
 thumbnail: KT-14903.jpeg
 exl-id: 563bab0e-21e3-487c-9bf3-de15c3a81aba
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 1%
@@ -24,7 +24,7 @@ AEM 콘텐츠 조각 편집기에서 사용자 지정 필드를 만드는 방법
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427585?learn=on)
 
-AEM UI 확장은 [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html) 프레임워크를 사용하여 개발해야 합니다. 이렇게 하면 나머지 AEM과 일관된 모양과 느낌을 유지하고 사전 설치된 기능의 광범위한 라이브러리가 있으므로 개발 시간이 단축됩니다.
+AEM UI 확장은 AEM의 나머지 부분과 일관된 모양과 느낌을 유지하고 사전 설치된 기능의 광범위한 라이브러리를 사용하므로 [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html) 프레임워크를 사용하여 개발해야 하며 개발 시간이 단축됩니다.
 
 ## 확장 지점
 
@@ -132,10 +132,10 @@ export default ExtensionRegistration;
 
 ### 사용자 정의 필드
 
-`SkuField` React 구성 요소는 선택기 양식에 Adobe React 스펙트럼을 사용하여 콘텐츠 조각 편집기를 사용자 지정 UI로 업데이트합니다. 주요 기능은 다음과 같습니다.
+`SkuField` React 구성 요소는 선택기 양식에 Adobe React Spectrum을 사용하여 콘텐츠 조각 편집기를 사용자 지정 UI로 업데이트합니다. 주요 기능은 다음과 같습니다.
 
-+ 설정이 완료될 때까지 로드 상태가 표시된 AEM의 콘텐츠 조각 편집기의 초기화 및 연결에 `useEffect`을(를) 사용합니다.
-+ iFrame 내에서 렌더링하면 Adobe React Spectrum 선택기의 드롭다운을 수용하도록 `onOpenChange` 함수를 통해 iFrame의 높이가 동적으로 조정됩니다.
++ 초기화에 `useEffect`을(를) 사용하고 AEM의 콘텐츠 조각 편집기에 연결하며 설정이 완료될 때까지 로드 상태가 표시됩니다.
++ iFrame 내에서 렌더링하면 Adobe React 스펙트럼 선택기의 드롭다운을 수용하도록 `onOpenChange` 함수를 통해 iFrame의 높이가 동적으로 조정됩니다.
 + `onSelectionChange` 함수의 `connection.host.field.onChange(value)`을(를) 사용하여 필드 선택 사항을 다시 호스트에 전달합니다. 즉, 콘텐츠 조각 모델의 지침에 따라 선택한 값이 유효성이 검사되고 자동 저장됩니다.
 
 사용자 지정 필드는 콘텐츠 조각 편집기에 삽입된 iFrame 내에서 렌더링됩니다. 사용자 지정 필드 코드와 콘텐츠 조각 편집기 간의 통신은 `@adobe/uix-guest` 패키지에서 `attach` 함수에 의해 설정된 `connection` 개체를 통해서만 가능합니다.

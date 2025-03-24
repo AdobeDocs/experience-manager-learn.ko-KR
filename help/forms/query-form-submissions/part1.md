@@ -3,7 +3,7 @@ title: 특정 필드를 검색할 수 있도록 설정
 description: Azure 포털에 저장된 양식 제출을 쿼리하는 단계를 안내하는 다중 파트 튜토리얼입니다.
 feature: Adaptive Forms
 doc-type: Tutorial
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
@@ -11,7 +11,7 @@ jira: KT-14884
 last-substantial-update: 2024-03-03T00:00:00Z
 exl-id: 1fb7ca83-0ba6-48a3-b3d3-079d0ef89245
 duration: 32
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 1%

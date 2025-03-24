@@ -2,14 +2,14 @@
 title: 카드를 클릭하여 양식 표시
 description: 카드 보기에서 양식 드릴다운
 feature: Adaptive Forms
-version: 6.5
+version: Experience Manager 6.5
 jira: KT-13372
 topic: Development
 role: User
 level: Intermediate
 exl-id: c8684cd9-b9c5-4b5b-b990-27c5700cea9f
 duration: 28
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '61'
 ht-degree: 3%

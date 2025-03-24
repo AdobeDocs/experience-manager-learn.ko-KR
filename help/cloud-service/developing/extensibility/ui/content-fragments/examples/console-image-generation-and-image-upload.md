@@ -2,7 +2,7 @@
 title: 사용자 지정 콘텐츠 조각 콘솔 확장을 통한 OpenAI 이미지 생성
 description: OpenAI 또는 DALL·E 2를 사용하여 자연어 설명에서 디지털 이미지를 생성하고 사용자 지정 콘텐츠 조각 콘솔 확장을 사용하여 생성된 이미지를 AEM에 업로드하는 방법을 알아봅니다.
 feature: Developer Tools, Content Fragments
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Beginner
@@ -12,16 +12,16 @@ doc-type: article
 last-substantial-update: 2024-01-26T00:00:00Z
 exl-id: f3047f1d-1c46-4aee-9262-7aab35e9c4cb
 duration: 1438
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1289'
 ht-degree: 0%
 
 ---
 
-# OpenAI를 사용하여 AEM 이미지 에셋 생성
+# OpenAI를 사용한 AEM 이미지 에셋 생성
 
-OpenAI 또는 DALL·E 2를 사용하여 이미지를 생성하고 컨텐츠 속도를 위해 AEM DAM에 업로드하는 방법에 대해 알아봅니다.
+OpenAI 또는 DALL·E 2를 사용하여 이미지를 생성하고 컨텐츠 속도를 위해 AEM DAM에 업로드하는 방법을 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3413093?quality=12&learn=on)
 
@@ -39,12 +39,12 @@ OpenAI 또는 DALL·E 2를 사용하여 이미지를 생성하고 컨텐츠 속�
 
 1. 콘텐츠 조각을 선택하고 [작업 표시줄](#extension-registration)에서 확장의 `Generate Image` 단추를 클릭하면 [모달](#modal)이 열립니다.
 1. [모달](#modal)은(는) [React Spectrum](https://react-spectrum.adobe.com/react-spectrum/)을(를) 사용하여 빌드된 사용자 지정 입력 양식을 표시합니다.
-1. 양식을 제출하면 사용자가 제공한 `Image Description` 텍스트, 선택한 컨텐츠 조각 및 AEM 호스트가 [사용자 지정 Adobe I/O Runtime 작업](#adobe-io-runtime-action)에 전송됩니다.
+1. 양식을 제출하면 사용자가 제공한 `Image Description` 텍스트, 선택한 컨텐츠 조각 및 AEM 호스트가 [사용자 지정 Adobe I/O Runtime 작업](#adobe-io-runtime-action)으로 전송됩니다.
 1. [Adobe I/O Runtime 작업](#adobe-io-runtime-action)이 입력의 유효성을 검사합니다.
 1. 그런 다음 OpenAI의 [이미지 생성](https://beta.openai.com/docs/guides/images/image-generation-beta) API를 호출하고 `Image Description` 텍스트를 사용하여 생성할 이미지를 지정합니다.
 1. [이미지 생성](https://beta.openai.com/docs/guides/images/image-generation-beta) 끝점은 프롬프트 요청 매개 변수 값을 사용하여 크기가 _1024x1024_&#x200B;픽셀인 원본 이미지를 만들고 생성된 이미지 URL을 응답으로 반환합니다.
 1. [Adobe I/O Runtime 작업](#adobe-io-runtime-action)은(는) 생성된 이미지를 App Builder 런타임에 다운로드합니다.
-1. 그런 다음 App Builder 런타임에서 사전 정의된 경로를 통해 AEM DAM으로 이미지 업로드를 시작합니다.
+1. 그런 다음 App Builder 런타임에서 사전 정의된 경로 아래에 있는 AEM DAM으로의 이미지 업로드를 시작합니다.
 1. AEM as a Cloud Service은 이미지를 DAM에 저장하고 Adobe I/O Runtime 작업에 대한 성공 또는 실패 응답을 반환합니다. 성공한 업로드 응답은 Adobe I/O Runtime 작업에서 AEM에 대한 다른 HTTP 요청을 사용하여 선택한 콘텐츠 조각의 이미지 속성 값을 업데이트합니다.
 1. 모달은 Adobe I/O Runtime 작업에서 응답을 받고, 새로 생성되어 업로드된 이미지의 AEM 에셋 세부 정보 링크를 제공합니다.
 
@@ -148,7 +148,7 @@ OpenAI 또는 DALL·E 2를 사용하여 이미지를 생성하고 컨텐츠 속�
 
 `index.html` 경로에 매핑된 `ExtensionRegistration.js`은(는) AEM 확장의 진입점이며 다음을 정의합니다.
 
-1. 확장 단추의 위치가 AEM 제작 환경에 나타납니다(`actionBar` 또는 `headerMenu`).
+1. 확장 단추의 위치가 AEM 작성 환경에 나타납니다(`actionBar` 또는 `headerMenu`).
 1. `getButtons()` 함수에서 확장 단추의 정의
 1. `onClick()` 함수에서 단추의 클릭 처리기
 
@@ -218,9 +218,9 @@ export default ExtensionRegistration;
 1. 로드 중, 사용자가 대기해야 함을 나타냄
 1. 사용자에게 한 번에 하나의 콘텐츠 조각만 선택하라는 경고 메시지
 1. 사용자가 자연어로 이미지 설명을 제공할 수 있는 이미지 생성 양식입니다.
-1. 새로 생성되고 업로드된 이미지의 AEM 에셋 세부 정보 링크를 제공하는 이미지 생성 작업의 응답입니다.
+1. 새로 생성되어 업로드된 이미지의 AEM 에셋 세부 정보 링크를 제공하는 이미지 생성 작업의 응답입니다.
 
-중요한 것은 확장에서 AEM과의 모든 상호 작용을 [AppBuilder Adobe I/O Runtime 작업](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/)에 위임해야 한다는 것입니다. 이 작업은 [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/)에서 실행되는 별도의 서버를 사용하지 않는 프로세스입니다.
+중요한 점은 확장에서 AEM을 사용하는 모든 상호 작용은 [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/)에서 실행되는 별도의 서버리스 프로세스인 [AppBuilder Adobe I/O Runtime 작업](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/)에 위임해야 한다는 것입니다.
 Adobe I/O Runtime 작업을 사용하여 AEM과 통신하며, 이는 CORS(원본 간 리소스 공유) 연결 문제를 방지하기 위한 것입니다.
 
 _이미지 생성_ 양식이 제출되면 사용자 지정 `onSubmitHandler()`이(가) Adobe I/O Runtime 작업을 호출하여 이미지 설명, 현재 AEM 호스트(도메인) 및 사용자의 AEM 액세스 토큰을 전달합니다. 그런 다음 작업은 OpenAI의 [이미지 생성](https://beta.openai.com/docs/guides/images/image-generation-beta) API를 호출하여 제출된 이미지 설명을 사용하여 이미지를 생성합니다. 다음으로 [AEM 업로드](https://github.com/adobe/aem-upload) 노드 모듈의 `DirectBinaryUpload` 클래스를 사용하면 생성된 이미지가 AEM에 업로드되고 마지막으로 [AEM 콘텐츠 조각 API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html)를 사용하여 콘텐츠 조각을 업데이트합니다.
@@ -488,7 +488,7 @@ export default function GenerateImageModal() {
 ### Adobe I/O Runtime 작업
 
 AEM 확장 App Builder 앱은 0개 이상의 Adobe I/O Runtime 작업을 정의하거나 사용할 수 있습니다.
-Adobe 런타임 작업은 AEM, Adobe 또는 서드파티 웹 서비스와 상호 작용해야 하는 작업을 담당합니다.
+Adobe Runtime 작업은 AEM, Adobe 또는 서드파티 웹 서비스와 상호 작용해야 하는 작업을 담당합니다.
 
 이 예제 앱에서는 `generate-image` Adobe I/O Runtime 작업이 다음을 담당합니다.
 

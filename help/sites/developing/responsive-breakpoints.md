@@ -1,7 +1,7 @@
 ---
 title: 응답형 중단점
 description: AEM 반응형 페이지 편집기에 대한 새 반응형 중단점을 구성하는 방법에 대해 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Page Editor
 topic: Mobile, Development
 role: Developer
@@ -12,7 +12,7 @@ jira: KT-11664
 thumbnail: kt-11664.jpeg
 exl-id: 8b48c28f-ba7f-4255-be96-a7ce18ca208b
 duration: 52
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 0%
@@ -25,7 +25,7 @@ AEM 반응형 페이지 편집기에 대한 새 반응형 중단점을 구성하
 
 ## CSS 중단점 만들기
 
-먼저, 응답형 AEM 사이트가 준수하는 AEM 반응형 그리드 CSS에서 미디어 중단점을 만듭니다.
+먼저 반응형 AEM 사이트가 준수하는 AEM 반응형 그리드 CSS에서 미디어 중단점을 만듭니다.
 
 `/ui.apps/src/main/content/jcr_root/apps/[app name]/clientlibs/clientlib-grid/less/grid.less` 파일에서 모바일 에뮬레이터와 함께 사용할 중단점을 만듭니다. CSS 중단점을 AEM 반응형 페이지 편집기 중단점에 매핑하므로 각 중단점에 대한 `max-width`을(를) 메모하십시오.
 
@@ -49,7 +49,7 @@ AEM 반응형 페이지 편집기에 대한 새 반응형 중단점을 구성하
 
 ## 장치 그룹 만들기
 
-에뮬레이터를 [AEM 페이지 편집기에서 사용할 수 있도록 ](#update-the-templates-device-group) 그룹화합니다.
+에뮬레이터를 [AEM 페이지 편집기에서 사용할 수 있도록](#update-the-templates-device-group) 그룹화합니다.
 
 `/ui.apps/src/main/content/jcr_root` 아래에 `/apps/settings/mobile/groups/<name of device group>` 노드 구조를 만듭니다.
 

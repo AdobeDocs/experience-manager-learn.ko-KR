@@ -2,7 +2,7 @@
 title: 신속한 개발 환경을 이용한 개발 수명 주기
 description: 신속한 개발 환경과 RDE의 주요 이점을 사용하여 새로운 개발 수명 주기가 어떻게 표시되는지 알아봅니다.
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Beginner
@@ -11,10 +11,10 @@ thumbnail: KT-11863.png
 last-substantial-update: 2023-02-15T00:00:00Z
 exl-id: 062672f6-d03c-44da-9ac5-3d1ecff1a628
 duration: 153
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '116'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -43,6 +43,6 @@ RDE의 주요 이점은 개발 추진력을 유지하는 것입니다.
 
 [여러 개발자 공동 작업 시나리오](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html#multiple-developers-collaborating-on-the-same-rde)
 
-[로컬 개발 환경 설정](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=ko-KR)
+[로컬 개발 환경 설정](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=ko)
 
-[Cloud Manager Adobe 사용 - CI/CD 프로덕션 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/cicd-production-pipeline.html)
+[Adobe Cloud Manager 사용 - CI/CD 프로덕션 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/cicd-production-pipeline.html)

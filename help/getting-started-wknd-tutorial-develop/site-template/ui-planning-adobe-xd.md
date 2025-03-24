@@ -1,7 +1,7 @@
 ---
 title: Adobe XD을 통한 UI 계획 | AEM 빠른 사이트 생성
 description: Adobe XD UI Kit를 사용하여 Adobe Experience Manager Sites 구현을 디자인하고 가속화하는 방법을 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Content Management
 feature: Core Components
 role: Developer
@@ -12,7 +12,7 @@ doc-type: Tutorial
 exl-id: 3155e0fa-56b7-4a52-8eef-fee488e95f68
 recommendations: noDisplay, noCatalog
 duration: 646
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 2%
@@ -46,7 +46,7 @@ ht-degree: 2%
 높은 수준의 단계:
 
 1. [표준 사이트 템플릿 XD 파일](https://github.com/adobe/aem-site-template-standard/raw/main/files/wireframe.xd)을 다운로드합니다.
-1. Adobe XD의 UI 키트 Inspect.
+1. Adobe XD에서 UI 키트를 검사합니다.
 1. 디자인을 프론트엔드 개발자에게 전달하는 것을 시뮬레이션합니다.
 
 ## WKND UI 키트 {#wknd-ui-kit}
@@ -56,7 +56,7 @@ ht-degree: 2%
 높은 수준의 단계:
 
 1. [WKND 문서 XD 파일](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-0.0.2/AEM_UI-kit-WKND-article-design.xd)을 다운로드합니다.
-1. Inspect WKND 문서 템플릿에 대한 디자인입니다.
+1. WKND 문서 템플릿에 대한 디자인을 검사합니다.
 
 ## 축하합니다! {#congratulations}
 

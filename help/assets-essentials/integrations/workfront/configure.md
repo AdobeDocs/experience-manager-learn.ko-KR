@@ -1,7 +1,7 @@
 ---
 title: Adobe Workfront 및 Assets Essentials 통합 구성
-description: Workfront 및 Assets Essentials 통합을 구성하는 방법을 알아봅니다.
-version: Cloud Service
+description: Workfront 및 Assets Essentials 통합을 구성하는 방법에 대해 알아봅니다.
+version: Experience Manager as a Cloud Service
 feature: Assets Essentials
 topic: Content Management, Integrations
 role: User
@@ -14,7 +14,7 @@ badgeVersions: label="AEM Assets 기본 사항" before-title="false"
 doc-type: Feature Video
 exl-id: c3961fdf-b8aa-410d-9561-520a248ea5b0
 duration: 322
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '36'
 ht-degree: 11%
@@ -23,7 +23,7 @@ ht-degree: 11%
 
 # 통합 구성
 
-Adobe Workfront 및 Assets Essentials 통합을 구성하는 방법을 알아봅니다.
+Adobe Workfront 및 Assets Essentials 통합을 구성하는 방법에 대해 알아봅니다.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/336254?quality=12&learn=on)

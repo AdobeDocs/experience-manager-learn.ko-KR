@@ -2,7 +2,7 @@
 title: 개인 인증서가 있는 내부 API 호출
 description: 비공개 또는 자체 서명된 인증서가 있는 내부 API를 호출하는 방법을 알아봅니다.
 feature: Security
-version: 6.5, Cloud Service
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 topic: Security, Development
 role: Admin, Architect, Developer
 level: Experienced
@@ -12,7 +12,7 @@ doc-type: Article
 last-substantial-update: 2023-08-25T00:00:00Z
 exl-id: c88aa724-9680-450a-9fe8-96e14c0c6643
 duration: 332
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 0%
@@ -73,7 +73,7 @@ _개인 인증서 또는 자체 서명된 인증서_&#x200B;가 있는 API 끝�
 
 1. 개인 인증서를 가져오려면 **인증서 파일 선택** 단추를 클릭하고 확장명이 `.cer`인 원하는 인증서 파일을 선택하십시오. **제출** 단추를 클릭하여 가져옵니다.
 
-1. 아래와 같이 Java™ 코드를 업데이트합니다. `@Reference`을(를) 사용하여 AEM의 `KeyStoreService`을(를) 가져오려면 호출 코드가 OSGi 구성 요소/서비스이거나 Sling 모델이어야 합니다(여기에서 `@OsgiService`이(가) 사용됨).
+1. 아래와 같이 Java™ 코드를 업데이트합니다. `@Reference`을(를) 사용하여 AEM의 `KeyStoreService`을(를) 가져오려면 호출 코드가 OSGi 구성 요소/서비스이거나 Sling 모델이어야 합니다(여기서 `@OsgiService`이(가) 사용됨).
 
    ```java
    ...
@@ -137,12 +137,12 @@ _개인 인증서 또는 자체 서명된 인증서_&#x200B;가 있는 API 끝�
    * `KeyStoreService` 및 `ResourceResolver`을(를) 사용하여 글로벌 AEM TrustStore를 가져오면 `getAEMTrustStore(...)` 메서드가 이를 수행합니다.
    * `SSLContextBuilder`의 개체를 만듭니다. Java™ [API 세부 정보](https://javadoc.io/static/org.apache.httpcomponents/httpcore/4.4.8/index.html?org/apache/http/ssl/SSLContextBuilder.html)를 참조하십시오.
    * `loadTrustMaterial(KeyStore truststore,TrustStrategy trustStrategy)` 메서드를 사용하여 `SSLContextBuilder`에 전역 AEM TrustStore를 로드합니다.
-   * 위의 메서드에서 `TrustStrategy`에 대해 `null`을(를) 전달하면 API 실행 중에 AEM 신뢰할 수 있는 인증서만 성공하게 됩니다.
+   * 위의 메서드에서 `TrustStrategy`에 대해 `null`을(를) 전달하면 API 실행 중에 AEM의 신뢰할 수 있는 인증서만 성공하게 됩니다.
 
 
 >[!CAUTION]
 >
->언급된 접근 방식을 사용하여 실행할 때 유효한 CA 발급 인증서가 있는 API 호출이 실패합니다. 이 메서드를 따를 때는 AEM 신뢰할 수 있는 인증서가 있는 API 호출만 성공할 수 있습니다.
+>언급된 접근 방식을 사용하여 실행할 때 유효한 CA 발급 인증서가 있는 API 호출이 실패합니다. 이 메서드를 따를 때는 AEM의 신뢰할 수 있는 인증서가 있는 API 호출만 성공할 수 있습니다.
 >
 >올바른 CA 발급 인증서의 API 호출을 실행하려면 [표준 접근 방식](#prototypical-api-invocation-code-using-httpclient)을 사용하십시오. 즉, 이전에 언급된 메서드를 사용하여 개인 인증서와 연결된 API만 실행해야 합니다.
 
@@ -157,4 +157,4 @@ _개인 인증서 또는 자체 서명된 인증서_&#x200B;가 있는 API 끝�
 
 비디오에서 데모된 샘플 Node.js 프로젝트는 [여기](assets/internal-api-call/REST-APIs.zip)에서 다운로드할 수 있습니다.
 
-AEM 서블릿 코드는 WKND Sites 프로젝트의 `tutorial/web-api-invocation` 분기 [see](https://github.com/adobe/aem-guides-wknd/tree/tutorial/web-api-invocation/core/src/main/java/com/adobe/aem/guides/wknd/core/servlets)에서 사용할 수 있습니다.
+AEM 서블릿 코드는 WKND Sites 프로젝트의 `tutorial/web-api-invocation` 분기 [참조](https://github.com/adobe/aem-guides-wknd/tree/tutorial/web-api-invocation/core/src/main/java/com/adobe/aem/guides/wknd/core/servlets)에서 사용할 수 있습니다.

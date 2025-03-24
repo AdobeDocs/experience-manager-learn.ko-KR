@@ -1,7 +1,7 @@
 ---
 title: CDN 캐시 적중률 분석
 description: AEM as a Cloud Service에서 제공한 CDN 로그를 분석하는 방법을 알아봅니다. 캐시 적중률, 최적화를 위한 MISS 및 PASS 캐시 유형의 상위 URL과 같은 통찰력을 얻으십시오.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Operations, CDN Cache
 topic: Administration, Performance
 role: Admin, Architect, Developer
@@ -12,7 +12,7 @@ jira: KT-13312
 thumbnail: KT-13312.jpeg
 exl-id: 43aa7133-7f4a-445a-9220-1d78bb913942
 duration: 276
-source-git-commit: 4111ae0cf8777ce21c224991b8b1c66fb01041b3
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1476'
 ht-degree: 0%
@@ -30,9 +30,9 @@ CDN 로그는 `url`, `cache`을(를) 포함한 다양한 필드가 포함된 JSO
 
 | 캐시 상태 </br> 가능한 값 | 설명 |
 |------------------------------------|:-----------------------------------------------------:|
-| 히트 | 요청된 데이터는 CDN 캐시에서 _찾으며 AEM 서버에 fetch_ 요청을 수행할 필요가 없습니다. |
-| 미스 | 요청된 데이터가 CDN 캐시에서 _발견되지 않았으므로 AEM 서버에서_&#x200B;을(를) 요청해야 합니다. |
-| 통과 | 요청된 데이터는 _캐시되지 않도록 명시적으로 설정_&#x200B;되어 있으며 항상 AEM 서버에서 검색됩니다. |
+| 히트 | 요청한 데이터는 CDN 캐시에서 _찾으며 AEM 서버에 대한 fetch_ 요청을 수행할 필요가 없습니다. |
+| 미스 | 요청한 데이터가 CDN 캐시에서 _없습니다. AEM 서버에서_&#x200B;을(를) 요청해야 합니다. |
+| 통과 | 요청한 데이터는 _캐시되지 않도록 명시적으로 설정_&#x200B;되어 있으며 항상 AEM 서버에서 검색됩니다. |
 
 이 자습서에서는 [AEM WKND 프로젝트](https://github.com/adobe/aem-guides-wknd)가 AEM as a Cloud Service 환경에 배포되고 [Apache JMeter](https://jmeter.apache.org/)를 사용하여 소규모 성능 테스트가 트리거됩니다.
 
@@ -71,7 +71,7 @@ CDN 로그를 분석하기 위해 이 자습서에서는 다음 세 가지 옵�
 
 ### 옵션 1: ELK 대시보드 도구 사용
 
-[ELK 스택](https://www.elastic.co/elastic-stack)은(는) 데이터를 검색, 분석 및 시각화할 수 있는 확장 가능한 솔루션을 제공하는 도구 집합입니다. 그것은 Elasticsearch, Logstash 및 Kibana로 구성되어 있습니다.
+[ELK 스택](https://www.elastic.co/elastic-stack)은(는) 데이터를 검색, 분석 및 시각화할 수 있는 확장 가능한 솔루션을 제공하는 도구 집합입니다. Elasticsearch, 로스타시, 키바나 등으로 구성되어 있다.
 
 주요 세부 정보를 식별하려면 [AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) 프로젝트를 사용합니다. 이 프로젝트는 ELK 스택의 도커 컨테이너와 CDN 로그를 분석하기 위해 사전 구성된 Kibana 대시보드를 제공합니다.
 
@@ -156,8 +156,8 @@ CDN 로그를 분석하기 위해 이 자습서에서는 다음 세 가지 옵�
 먼저 CDN 로그 분석에 도움이 되는 [AEM-as-a-CloudService - CDN 로그 분석 - Jupyter Notebook](./assets/cdn-logs-analysis/aemcs_cdn_logs_analysis.ipynb) 파일을 다운로드합니다. 이 &quot;대화형 Python Notebook&quot; 파일은 설명이 가능하지만, 각 섹션의 주요 사항은 다음과 같습니다.
 
 - **추가 라이브러리 설치**: `termcolor` 및 `tabulate` Python 라이브러리를 설치합니다.
-- **CDN 로그 로드**: `log_file` 변수 값을 사용하여 CDN 로그 파일을 로드합니다. 해당 값을 업데이트하십시오. 또한 이 CDN 로그를 [Pandas DataFrame](https://pandas.pydata.org/docs/reference/frame.html)(으)로 변환합니다.
-- **분석 수행**: 첫 번째 코드 블록은 _총, HTML, JS/CSS 및 이미지 요청에 대한 분석 결과 표시_입니다. 캐시 적중률 비율, 막대 및 원형 차트를 제공합니다.
+- **CDN 로그 로드**: `log_file` 변수 값을 사용하여 CDN 로그 파일을 로드합니다. 해당 값을 업데이트하십시오. 또한 이 CDN 로그를 [Pandas DataFrame](https://pandas.pydata.org/docs/reference/frame.html)&#x200B;(으)로 변환합니다.
+- **분석 수행**: 첫 번째 코드 블록은 _총, HTML, JS/CSS 및 이미지 요청에 대한 분석 결과 표시_입니다. 캐시 적중률, 막대 및 원형 차트를 제공합니다.
 두 번째 코드 블록은 _HTML, JS/CSS 및 이미지에 대한 상위 5개 MISS 및 PASS 요청 URL_&#x200B;입니다. URL 및 해당 카운트를 테이블 형식으로 표시합니다.
 
 #### Jupyter Notebook 실행
@@ -190,7 +190,7 @@ CDN 로그를 분석하기 위해 이 자습서에서는 다음 세 가지 옵�
 
    ![전자 필기장 로그 파일 값 업데이트](assets/cdn-logs-analysis/output-cache-hit-ratio.png){width="500" zoomable="yes"}
 
-1. HTML, JS/CSS 및 이미지에 대한 **상위 5개 MISS 및 PASS 요청 URL** 코드 셀을 실행하면 출력에 상위 5개 MISS 및 PASS 요청 URL이 표시됩니다.
+1. HTML, JS/CSS 및 Image **코드 셀에 대한**&#x200B;상위 5개 MISS 및 PASS 요청 URL을 실행한 후 출력에 상위 5개 MISS 및 PASS 요청 URL이 표시됩니다.
 
    ![전자 필기장 로그 파일 값 업데이트](assets/cdn-logs-analysis/output-top-urls.png){width="500" zoomable="yes"}
 

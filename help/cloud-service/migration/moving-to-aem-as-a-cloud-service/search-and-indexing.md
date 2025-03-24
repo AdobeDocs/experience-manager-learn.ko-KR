@@ -1,7 +1,7 @@
 ---
 title: AEM as a Cloud Service에서 검색 및 인덱싱
 description: AEM as a Cloud Service의 검색 인덱스, AEM 6 인덱스 정의를 변환하는 방법 및 인덱스를 배포하는 방법에 대해 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Search
 topic: Migration, Upgrade
 role: Developer
@@ -10,7 +10,7 @@ jira: KT-8634
 thumbnail: 336963.jpeg
 exl-id: f752df86-27d4-4dbf-a3cb-ee97b7d9a17e
 duration: 1231
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # 검색 및 색인 지정
 
-AEM as a Cloud Service의 검색 인덱스, AEM 6 인덱스 정의를 AEM as a Cloud Service과 호환되도록 변환하는 방법, 인덱스를 AEM as a Cloud Service에 배포하는 방법에 대해 알아봅니다.
+AEM as a Cloud Service의 검색 인덱스, AEM 6 인덱스 정의를 AEM as a Cloud Service과 호환되도록 변환하는 방법 및 인덱스를 AEM as a Cloud Service에 배포하는 방법에 대해 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336963?quality=12&learn=on)
 
@@ -33,8 +33,8 @@ AEM as a Cloud Service의 검색 인덱스, AEM 6 인덱스 정의를 AEM as a C
 
 ## 주요 활동
 
-+ [Adobe I/O Workflow Migrator](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationindex-converter) 도구를 사용하여 Asset compute 마이크로서비스를 사용하도록 에셋 처리 워크플로를 마이그레이션하십시오.
-+ [로컬 개발 환경](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=ko-KR)을 설정하고 사용자 지정된 인덱스를 배포합니다. 업데이트된 인덱스가 최신 상태인지 확인하십시오.
++ [Adobe I/O Workflow Migrator](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationindex-converter) 도구를 사용하여 Asset Compute 마이크로서비스를 사용하도록 에셋 처리 워크플로를 마이그레이션하십시오.
++ [로컬 개발 환경](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=ko)을 설정하고 사용자 지정된 인덱스를 배포합니다. 업데이트된 인덱스가 최신 상태인지 확인하십시오.
 + 업데이트된 코드 베이스를 AEM as a Cloud Service 개발 환경에 배포하고 계속 확인합니다.
 + 기본 제공 인덱스 **ALWAYS**&#x200B;을(를) 수정하는 경우 최신 릴리스에서 실행 중인 AEM as a Cloud Service 환경에서 최신 인덱스 정의를 복사하십시오. 복사한 색인 정의를 필요에 맞게 수정합니다.
 

@@ -1,7 +1,7 @@
 ---
 title: AEM Assets에서 Source 파일 번역 사용
-description: Adobe Experience Manager(AEM) Assets을 사용하면 새로운 관련 Assets 기능을 사용하여 공통 속성을 공유하는 에셋을 식별하고 관련 에셋으로 표시할 수 있습니다. 또한 사용자가 에셋 간의 소스/파생 관계를 정의할 수 있으므로 에셋의 출처를 사용자가 쉽게 식별할 수 있습니다. 파생된 에셋에서 번역 워크플로를 실행하면 소스 파일이 참조하는 모든 에셋이 가져오고 이를 번역에 포함하므로 다중 사이트를 유지 관리하는 노력이 줄어듭니다.
-version: 6.4, 6.5
+description: Adobe Experience Manager(AEM) Assets을 사용하면 새로운 관련 Assets 기능을 사용하여 공통 속성을 공유하는 에셋을 식별하고 관련으로 표시할 수 있습니다. 또한 사용자가 에셋 간의 소스/파생 관계를 정의할 수 있으므로 에셋의 출처를 사용자가 쉽게 식별할 수 있습니다. 파생된 에셋에서 번역 워크플로를 실행하면 소스 파일이 참조하는 모든 에셋이 가져오고 이를 번역에 포함하므로 다중 사이트를 유지 관리하는 노력이 줄어듭니다.
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Content Management
 feature: Translation
 role: User
@@ -12,7 +12,7 @@ thumbnail: 18331.jpg
 doc-type: Feature Video
 exl-id: 19155d51-18a7-42ca-9a73-1b5fa1355d58
 duration: 248
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '285'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # AEM Assets에서 Source 파일 번역 사용 {#using-source-file-translation-with-aem-assets}
 
-Adobe Experience Manager(AEM) Assets을 사용하면 새로운 관련 Assets 기능을 사용하여 공통 속성을 공유하는 에셋을 식별하고 관련 에셋으로 표시할 수 있습니다. 또한 사용자가 에셋 간의 소스/파생 관계를 정의할 수 있으므로 에셋의 출처를 사용자가 쉽게 식별할 수 있습니다. 파생된 에셋에서 번역 워크플로를 실행하면 소스 파일이 참조하는 모든 에셋이 가져오고 이를 번역에 포함하므로 다중 사이트를 유지 관리하는 노력이 줄어듭니다.
+Adobe Experience Manager(AEM) Assets을 사용하면 새로운 관련 Assets 기능을 사용하여 공통 속성을 공유하는 에셋을 식별하고 관련으로 표시할 수 있습니다. 또한 사용자가 에셋 간의 소스/파생 관계를 정의할 수 있으므로 에셋의 출처를 사용자가 쉽게 식별할 수 있습니다. 파생된 에셋에서 번역 워크플로를 실행하면 소스 파일이 참조하는 모든 에셋이 가져오고 이를 번역에 포함하므로 다중 사이트를 유지 관리하는 노력이 줄어듭니다.
 
 ## 다중 사이트 자산 Source 파일 관리 {#multisite-asset-source-file-management}
 

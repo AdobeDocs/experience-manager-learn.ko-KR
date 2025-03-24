@@ -1,7 +1,7 @@
 ---
 title: 컨텐츠 전송 도구를 사용한 컨텐츠 마이그레이션
 description: 컨텐츠 전송 도구 가 AEM 6에서 AEM as a Cloud Service으로 컨텐츠를 마이그레이션하는 방법에 대해 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Migration, Upgrade
 feature: Migration
 role: Developer
@@ -10,7 +10,7 @@ jira: KT-8919
 thumbnail: 336970.jpeg
 exl-id: c51ce8e3-e83c-4f8b-a835-70335ed3a5b9
 duration: 1362
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 3%
@@ -34,10 +34,10 @@ ht-degree: 3%
 
 + [최신 콘텐츠 전송 도구](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=Content*+Transfer*+Tool*&amp;1_group.propertyvalues.property=입니다.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atoling&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=2)를 다운로드합니다.
 + AEM Author 6.3 이상의 최종 콘텐츠를 AEM as a Cloud Service Author 서비스로 전송합니다.
-   + 전송할 최종 콘텐츠가 포함된 AEM 6.3+ 작성자에 콘텐츠 전송 도구를 설치합니다.
+   + 전송할 최종 콘텐츠가 포함된 AEM 6.3 이상 작성자에 콘텐츠 전송 도구를 설치합니다.
    + 컨텐츠 전송 도구를 일괄로 실행하여 컨텐츠 세트를 전송합니다.
 + AEM Publish 6.3 이상의 최종 콘텐츠를 AEM as a Cloud Service Publish 서비스로 전송합니다.
-   + 전송할 최종 콘텐츠가 포함된 AEM 6.3+ Publish에 콘텐츠 전송 도구를 설치합니다.
+   + 전송할 최종 콘텐츠가 포함된 AEM 6.3+ 게시에서 콘텐츠 전송 도구를 설치합니다.
    + 컨텐츠 전송 도구를 일괄로 실행하여 컨텐츠 세트를 전송합니다.
 + 원할 경우, 마지막 컨텐츠 전송 이후 새 컨텐츠를 전송하여 AEM as a Cloud Service에서 &quot;추가&quot; 컨텐츠
 
@@ -66,7 +66,7 @@ ht-degree: 3%
         <td style="width:100%;margin-bottom:1rem;">
             <div style="font-size:1.25rem;font-weight:400;">컨텐츠 전송 도구를 사용하여 실습</div>
             <p style="margin:1rem 0">
-                컨텐츠 전송 도구 가 컨텐츠를 AEM 6에서 AEM as a Cloud Service으로 자동으로 이동하는 방법을 알아봅니다.
+                컨텐츠 전송 도구 가 컨텐츠를 AEM 6에서 AEM as a Cloud Service으로 자동으로 이동하는 방법을 탐색합니다.
             </p>
             <a  rel="noreferrer"
                 target="_blank"

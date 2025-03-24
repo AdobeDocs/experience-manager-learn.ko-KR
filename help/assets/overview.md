@@ -1,14 +1,14 @@
 ---
 title: AEM Assets 비디오 및 튜토리얼
-description: AEM Asset 지원 및 지원을 받으려면 비디오를 시청하십시오.
+description: 비디오를 통해 AEM Asset 지원 및 지원을 받으십시오.
 sub-product: Experience Manager Assets
-version: 6.4, 6.5, Cloud Service
+version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 doc-type: Catalog
 exl-id: 1d0b0183-25ee-4cb4-82a5-3506e7c1c908
-source-git-commit: d0e1513b4e6ea536b40f3dbb69a0f512f7521164
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '177'
-ht-degree: 20%
+ht-degree: 21%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 20%
 
 {{edge-delivery-services}}
 
-Adobe Experience Manager(AEM) Assets은 사용자가 웹 기반 저장소에서 디지털 에셋(이미지, 비디오, 문서 및 오디오 클립)을 생성하고, 관리하고, 공유할 수 있도록 하는 AEM Platform의 디지털 에셋 관리 툴입니다. 이 사용 안내서에는 AEM Assets의 다양한 기능과 성능에 대한 비디오 및 튜토리얼이 포함되어 있습니다.
+Adobe Experience Manager(AEM) Assets은 사용자가 웹 기반 저장소에서 디지털 에셋(이미지, 비디오, 문서 및 오디오 클립)을 생성하고, 관리하고, 공유할 수 있도록 하는 AEM 플랫폼의 디지털 에셋 관리 툴입니다. 이 사용 안내서에는 AEM Assets의 다양한 기능과 성능에 대한 비디오 및 튜토리얼이 포함되어 있습니다.
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_assets_overview"
@@ -61,7 +61,7 @@ AEM Assets이 무엇인지, 그리고 이를 사용하여 조직의 비즈니스
    </a>
    <div>
       <a href="../assets-essentials/overview.md">
-      <strong>Assets Essentials 시작</strong>
+      <strong>Assets Essentials 시작하기</strong>
       </a>
    </div>
    <p>
@@ -78,7 +78,7 @@ AEM Assets이 무엇인지, 그리고 이를 사용하여 조직의 비즈니스
       </a>
    </div>
    <p>
-      <em>Dynamic Media을 사용하여 미디어 콘텐츠 관리 및 액세스</em>
+      <em>Dynamic Media를 사용하여 미디어 콘텐츠 관리 및 액세스</em>
    <p>
 </td>
 </table>

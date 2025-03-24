@@ -1,7 +1,7 @@
 ---
-title: AEM의 색인 지정 모범 사례
+title: AEM의 색인화 모범 사례
 description: AEM의 색인 지정 모범 사례에 대해 알아봅니다.
-version: 6.4, 6.5, Cloud Service
+version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 sub-product: Experience Manager, Experience Manager Sites
 feature: Search
 doc-type: Article
@@ -13,18 +13,18 @@ last-substantial-update: 2024-01-04T00:00:00Z
 jira: KT-14745
 thumbnail: KT-14745.jpeg
 exl-id: 3fd4c404-18e9-44e5-958f-15235a3091d5
-source-git-commit: 54a7f93637545a4467c4c587bbc3d1d0de5c64a1
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1693'
 ht-degree: 1%
 
 ---
 
-# AEM의 색인 지정 모범 사례
+# AEM의 색인화 모범 사례
 
-Adobe Experience Manager(AEM)의 색인 지정 모범 사례에 대해 알아봅니다. Apache [Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/query.html)이(가) AEM에서 콘텐츠 검색을 지원하며 주요 사항은 다음과 같습니다.
+Adobe Experience Manager(AEM)의 색인 지정 모범 사례에 대해 알아봅니다. Apache [Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/query.html)은(는) AEM에서 컨텐츠 검색을 지원합니다. 핵심 사항은 다음과 같습니다.
 
-- 기본적으로 AEM은 검색 및 쿼리 기능을 지원하는 다양한 인덱스(예: `damAssetLucene`, `cqPageLucene` 등)를 제공합니다.
+- 기본적으로 AEM은 `damAssetLucene`, `cqPageLucene` 등과 같은 검색 및 쿼리 기능을 지원하는 다양한 인덱스를 제공합니다.
 - 모든 인덱스 정의는 `/oak:index` 노드 아래의 저장소에 저장됩니다.
 - AEM as a Cloud Service은 Oak Lucene 인덱스만 지원합니다.
 - 인덱스 구성은 AEM 프로젝트 코드베이스에서 관리되고 Cloud Manager CI/CD 파이프라인을 사용하여 배포되어야 합니다.
@@ -55,7 +55,7 @@ AEM 인스턴스의 성능에 영향을 주지 않는 효율적이고 올바른 
 
 - 항상 CRX DE 패키지 관리자(/crx/packmgr/)를 사용하여 AEM 인스턴스에서 최신 OOTB 인덱스 정의를 복사하고 이름을 변경한 다음 XML 파일 내에 사용자 지정을 추가합니다.
 
-- 색인 정의를 `ui.apps/src/main/content/jcr_root/_oak_index`의 AEM 프로젝트에 저장하고 Cloud Manager CI/CD 파이프라인을 사용하여 배포합니다. 자세한 내용은 [사용자 지정 인덱스 정의 배포](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/operations/indexing)를 참조하십시오.
+- 인덱스 정의를 `ui.apps/src/main/content/jcr_root/_oak_index`의 AEM 프로젝트에 저장하고 Cloud Manager CI/CD 파이프라인을 사용하여 배포합니다. 자세한 내용은 [사용자 지정 인덱스 정의 배포](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/operations/indexing)를 참조하십시오.
 
 ### 완전히 맞춤화된 색인
 
@@ -168,7 +168,7 @@ Assets에서 omnisearch를 수행하는 경우 사용자 정의 색인의 예상
 
 ## Apache Tika를 비활성화하여 인덱스 최적화
 
-AEM에서는 PDF, Word, Excel 등과 같은 _파일에서 메타데이터 및 텍스트 콘텐츠 추출_&#x200B;을 위해 [Apache Tika](https://tika.apache.org/)을 사용합니다. 추출된 콘텐츠는 저장소에 저장되고 Oak Lucene 인덱스로 인덱싱됩니다.
+AEM은 PDF, Word, Excel 등과 같은 _파일에서 메타데이터 및 텍스트 콘텐츠 추출_&#x200B;을 위해 [Apache Tika](https://tika.apache.org/)을 사용합니다. 추출된 콘텐츠는 저장소에 저장되고 Oak Lucene 인덱스로 인덱싱됩니다.
 
 경우에 따라 사용자는 파일/에셋의 콘텐츠 내에서 검색할 능력이 필요하지 않습니다. 이러한 경우 Apache Tika를 비활성화하여 색인화 성능을 향상시킬 수 있습니다. 장점은 다음과 같습니다.
 
@@ -253,7 +253,7 @@ Apache Tika를 완전히 비활성화하려면 아래 단계를 수행하십시�
 
 ### 쿼리 성능 도구
 
-Developer Console 또는 `https://author-pXXXX-eYYYY.adobeaemcloud.com/ui#/aem/libs/granite/operations/content/diagnosistools/queryPerformance.html?appId=aemshell`을(를) 통해 [로컬 SDK](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) 및 AEMCS에서 사용할 수 있는 OOTB _쿼리 성능 도구_&#x200B;를 통해 **쿼리 성능을 분석** 및 [JCR 쿼리 치트 시트](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf?lang=en)하여 최적의 쿼리를 정의할 수 있습니다.
+Developer Console 또는 `https://author-pXXXX-eYYYY.adobeaemcloud.com/ui#/aem/libs/granite/operations/content/diagnosistools/queryPerformance.html?appId=aemshell`을(를) 통해 [로컬 SDK](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) 및 AEMCS에서 사용할 수 있는 OOTB _쿼리 성능 도구_&#x200B;를 통해 **쿼리 성능을 분석** 및 [JCR 쿼리 치트 시트](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf?lang=en)에서 최적의 쿼리를 정의할 수 있습니다.
 
 ### 문제 해결 도구 및 팁
 

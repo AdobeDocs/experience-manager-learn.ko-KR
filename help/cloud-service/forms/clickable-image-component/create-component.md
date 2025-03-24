@@ -1,15 +1,15 @@
 ---
 title: 클릭 가능한 이미지 구성 요소 만들기
-description: AEM Formsas a Cloud Service 에서 클릭 가능한 이미지 구성 요소 만들기
+description: AEM Forms as a Cloud Service에서 클릭 가능한 이미지 구성 요소 만들기
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Adaptive Forms
 topic: Development
 jira: KT-15968
 exl-id: b635f171-775d-480e-bf7a-c92ab4af0aee
-source-git-commit: b4df652fcda0af5d01077b97aa7fa17cfe2abf4b
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 1%
@@ -47,7 +47,7 @@ svg 노드 아래에 .content.xml 이라는 파일을 만듭니다. 새로 만�
 
 ## svg.html 만들기
 
-svg.html이라는 파일을 만듭니다. 이 파일은 USA 맵의 SVG을 렌더링합니다. [svg.html](assets/svg.html)의 내용을 새로 만든 파일에 복사합니다. 당신이 복사한 것은 미국 지도 SVG입니다. 파일을 저장합니다.
+svg.html이라는 파일을 만듭니다. 이 파일은 USA 맵의 SVG을 렌더링합니다. [svg.html](assets/svg.html)의 내용을 새로 만든 파일에 복사합니다. 당신이 복사한 것은 미국 SVG 지도입니다. 파일을 저장합니다.
 
 ## 프로젝트 배포
 

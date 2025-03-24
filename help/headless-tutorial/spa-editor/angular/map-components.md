@@ -1,8 +1,8 @@
 ---
 title: SPA 구성 요소를 AEM 구성 요소에 매핑 | AEM SPA 편집기 및 Angular 시작하기
-description: AEM SPA Editor JS SDK를 사용하여 Angular 구성 요소를 Adobe Experience Manager(AEM) 구성 요소에 매핑하는 방법에 대해 알아봅니다. 구성 요소 매핑을 통해 사용자는 AEM SPA 편집기 내에서 기존의 AEM 작성과 유사하게 SPA 구성 요소를 동적으로 업데이트할 수 있습니다.
+description: AEM SPA Editor JS SDK을 사용하여 Angular 구성 요소를 Adobe Experience Manager(AEM) 구성 요소에 매핑하는 방법을 알아봅니다. 구성 요소 매핑을 통해 사용자는 AEM SPA 편집기 내에서 기존 AEM 작성과 유사하게 SPA 구성 요소를 동적으로 업데이트할 수 있습니다.
 feature: SPA Editor
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 jira: KT-5311
 thumbnail: 5311-spa-angular.jpg
 topic: SPA
@@ -11,7 +11,7 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 19a8917c-a1e7-4293-9ce1-9f4c1a565861
 duration: 509
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '2213'
 ht-degree: 0%
@@ -20,19 +20,19 @@ ht-degree: 0%
 
 # SPA 구성 요소를 AEM 구성 요소에 매핑 {#map-components}
 
-AEM SPA Editor JS SDK를 사용하여 Angular 구성 요소를 Adobe Experience Manager(AEM) 구성 요소에 매핑하는 방법에 대해 알아봅니다. 구성 요소 매핑을 통해 사용자는 AEM SPA 편집기 내에서 기존의 AEM 작성과 유사하게 SPA 구성 요소를 동적으로 업데이트할 수 있습니다.
+AEM SPA Editor JS SDK을 사용하여 Angular 구성 요소를 Adobe Experience Manager(AEM) 구성 요소에 매핑하는 방법을 알아봅니다. 구성 요소 매핑을 통해 사용자는 AEM SPA 편집기 내에서 기존 AEM 작성과 유사하게 SPA 구성 요소를 동적으로 업데이트할 수 있습니다.
 
-이 장에서는 AEM JSON 모델 API에 대해 자세히 알아보고 AEM 구성 요소에 의해 노출된 JSON 콘텐츠를 어떻게 자동으로 Angular 구성 요소에 prop으로 삽입할 수 있는지 살펴봅니다.
+이 장에서는 AEM JSON 모델 API에 대해 자세히 알아보고 AEM 구성 요소에 의해 노출된 JSON 콘텐츠를 어떻게 Angular 구성 요소에 prop으로 자동으로 삽입할 수 있는지 살펴봅니다.
 
 ## 목표
 
 1. AEM 구성 요소를 SPA 구성 요소에 매핑하는 방법을 알아봅니다.
 2. **Container** 구성 요소와 **Content** 구성 요소의 차이점을 이해합니다.
-3. 기존 AEM 구성 요소에 매핑되는 새 Angular 구성 요소를 만듭니다.
+3. 기존 Angular 구성 요소에 매핑되는 새 AEM 구성 요소를 만듭니다.
 
 ## 빌드할 내용
 
-이 장에서는 제공된 `Text` SPA 구성 요소를 AEM `Text` 구성 요소에 매핑하는 방법을 검사합니다. SPA에서 사용하고 AEM에서 작성할 수 있는 새 `Image` SPA 구성 요소가 만들어집니다. **레이아웃 컨테이너** 및 **템플릿 편집기** 정책의 기본 기능을 사용하여 모양이 약간 더 다양한 보기를 만듭니다.
+이 장에서는 제공된 `Text` SPA 구성 요소가 AEM `Text` 구성 요소에 매핑되는 방식을 검사합니다. SPA에서 사용하고 AEM에서 작성할 수 있는 새 `Image` SPA 구성 요소가 만들어집니다. **레이아웃 컨테이너** 및 **템플릿 편집기** 정책의 기본 기능을 사용하여 모양이 약간 더 다양한 보기를 만듭니다.
 
 ![챕터 샘플 최종 작성](./assets/map-components/final-page.png)
 
@@ -72,15 +72,15 @@ AEM SPA Editor JS SDK를 사용하여 Angular 구성 요소를 Adobe Experience 
 
 *AEM 구성 요소를 Angular 구성 요소에 매핑하는 방법에 대한 높은 수준의 개요*
 
-## 텍스트 구성 요소 Inspect
+## 텍스트 구성 요소 검사
 
 [AEM Project Archetype](https://github.com/adobe/aem-project-archetype)은(는) AEM [텍스트 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html)에 매핑된 `Text` 구성 요소를 제공합니다. AEM에서 *content*&#x200B;을(를) 렌더링한다는 점에서 **content** 구성 요소의 예입니다.
 
 구성 요소가 어떻게 작동하는지 살펴보겠습니다.
 
-### Inspect JSON 모델
+### JSON 모델 검사
 
-1. SPA 코드로 이동하기 전에 AEM에서 제공하는 JSON 모델을 이해하는 것이 중요합니다. [핵심 구성 요소 라이브러리](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/text.html)(으)로 이동하여 텍스트 구성 요소에 대한 페이지를 봅니다. 핵심 구성 요소 라이브러리는 모든 AEM 핵심 구성 요소의 예를 제공합니다.
+1. SPA 코드로 이동하기 전에 AEM에서 제공하는 JSON 모델을 이해하는 것이 중요합니다. [핵심 구성 요소 라이브러리](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/text.html)&#x200B;(으)로 이동하여 텍스트 구성 요소에 대한 페이지를 봅니다. 핵심 구성 요소 라이브러리는 모든 AEM 핵심 구성 요소의 예를 제공합니다.
 2. 다음 예제 중 하나에 대해 **JSON** 탭을 선택하십시오.
 
    ![텍스트 JSON 모델](./assets/map-components/text-json.png)
@@ -91,7 +91,7 @@ AEM SPA Editor JS SDK를 사용하여 Angular 구성 요소를 Adobe Experience 
 
    `text` 및 `richText`은(는) SPA 구성 요소에 노출되는 추가 속성입니다.
 
-### 텍스트 구성 요소 Inspect
+### 텍스트 구성 요소 검사
 
 1. 새 터미널을 열고 프로젝트 내의 `ui.frontend` 폴더로 이동합니다. `npm install`을(를) 실행한 다음 `npm start`을(를) 실행하여 **Webpack 개발 서버**&#x200B;를 시작합니다.
 
@@ -173,11 +173,11 @@ AEM SPA Editor JS SDK를 사용하여 Angular 구성 요소를 Adobe Experience 
 
    `richText` 속성을 **true** / **false** 간에 전환하여 렌더링 논리의 작동 여부를 확인해 보십시오.
 
-8. `ui.frontend/src/app/components/text/text.component.html`의 Inspect **text.component.html**.
+8. `ui.frontend/src/app/components/text/text.component.html`에서 **text.component.html**&#x200B;을(를) 검사합니다.
 
    구성 요소의 전체 내용이 `innerHTML` 속성으로 설정되었으므로 이 파일은 비어 있습니다.
 
-9. `ui.frontend/src/app/app.module.ts`의 **app.module.ts**&#x200B;을(를) Inspect에 추가했습니다.
+9. `ui.frontend/src/app/app.module.ts`에서 **app.module.ts**&#x200B;을(를) 검사합니다.
 
    ```js
    @NgModule({
@@ -200,15 +200,15 @@ AEM SPA Editor JS SDK를 사용하여 Angular 구성 요소를 Adobe Experience 
 
 그런 다음 AEM [이미지 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html)에 매핑된 `Image` Angular 구성 요소를 만듭니다. `Image` 구성 요소는 **content** 구성 요소의 또 다른 예입니다.
 
-### JSON INSPECT
+### JSON 검사
 
 SPA 코드로 이동하기 전에 AEM에서 제공하는 JSON 모델을 검사합니다.
 
-1. [핵심 구성 요소 라이브러리의 이미지 예제](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/image.html)(으)로 이동합니다.
+1. [핵심 구성 요소 라이브러리의 이미지 예제](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/image.html)&#x200B;(으)로 이동합니다.
 
    ![이미지 핵심 구성 요소 JSON](./assets/map-components/image-json.png)
 
-   `src`, `alt` 및 `title`의 속성을 사용하여 SPA `Image` 구성 요소를 채웁니다.
+   `src`, `alt` 및 `title`의 속성은 SPA `Image` 구성 요소를 채우는 데 사용됩니다.
 
    >[!NOTE]
    >
@@ -327,7 +327,7 @@ SPA 코드로 이동하기 전에 AEM에서 제공하는 JSON 모델을 검사�
 
    >[!NOTE]
    >
-   > AEM SPA 편집기 자리 표시자가 올바르게 작동하는 `:host-context` 규칙은 **중요**&#x200B;입니다. AEM 페이지 편집기에서 작성되도록 하는 모든 SPA 구성 요소에는 최소한 이 규칙이 필요합니다.
+   > AEM SPA 편집기 자리 표시자가 올바르게 작동하려면 `:host-context` 규칙이 **중요**&#x200B;입니다. AEM 페이지 편집기에서 작성되도록 의도된 모든 SPA 구성 요소에는 최소한 이 규칙이 필요합니다.
 
 6. `app.module.ts`을(를) 열고 `ImageComponent`을(를) `entryComponents` 배열에 추가합니다.
 
@@ -353,7 +353,7 @@ SPA 코드로 이동하기 전에 AEM에서 제공하는 JSON 모델을 검사�
 
 ## AEM에서 정책 업데이트
 
-`ImageComponent` 구성 요소는 **Webpack 개발 서버**&#x200B;에만 표시됩니다. 그런 다음 업데이트된 SPA을 AEM에 배포하고 템플릿 정책을 업데이트합니다.
+`ImageComponent` 구성 요소는 **Webpack 개발 서버**&#x200B;에만 표시됩니다. 그런 다음 업데이트된 SPA를 AEM에 배포하고 템플릿 정책을 업데이트합니다.
 
 1. **Webpack 개발 서버**&#x200B;를 중지하고 프로젝트의 **root**&#x200B;에서 Maven 기술을 사용하여 변경 사항을 AEM에 배포합니다.
 
@@ -398,7 +398,7 @@ SPA 코드로 이동하기 전에 AEM에서 제공하는 JSON 모델을 검사�
 
    정책 업데이트를 저장하려면 **완료**&#x200B;를 클릭하십시오.
 
-6. **홈 페이지** [http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html)(으)로 이동합니다.
+6. **홈 페이지** [http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html)&#x200B;(으)로 이동합니다.
 
    **전체 화면** 모드에서 `Text` 구성 요소를 편집하고 추가 단락 스타일을 추가할 수도 있습니다.
 
@@ -412,7 +412,7 @@ SPA 코드로 이동하기 전에 AEM에서 제공하는 JSON 모델을 검사�
 
    ![패키지 관리자 설치 wknd.all](./assets/map-components/package-manager-wknd-all.png)
 
-## 레이아웃 컨테이너 Inspect
+## 레이아웃 컨테이너 검사
 
 **레이아웃 컨테이너**&#x200B;에 대한 지원은 AEM SPA Editor SDK에서 자동으로 제공됩니다. **레이아웃 컨테이너**&#x200B;은(는) **컨테이너** 구성 요소입니다. 컨테이너 구성 요소는 *other* 구성 요소를 나타내고 동적으로 인스턴스화하는 JSON 구조를 수락하는 구성 요소입니다.
 
@@ -428,7 +428,7 @@ SPA 코드로 이동하기 전에 AEM에서 제공하는 JSON 모델을 검사�
 
    `AEMResponsiveGridComponent`은(는) AEM SPA Editor SDK의 일부로 구현되며 `import-components`을(를) 통해 프로젝트에 포함됩니다.
 
-2. 브라우저에서 [http://localhost:4502/content/wknd-spa-angular/us/en.model.json](http://localhost:4502/content/wknd-spa-angular/us/en.model.json)(으)로 이동
+2. 브라우저에서 [http://localhost:4502/content/wknd-spa-angular/us/en.model.json](http://localhost:4502/content/wknd-spa-angular/us/en.model.json)&#x200B;(으)로 이동
 
    ![JSON 모델 API - 응답형 격자](./assets/map-components/responsive-grid-modeljson.png)
 
@@ -436,7 +436,7 @@ SPA 코드로 이동하기 전에 AEM에서 제공하는 JSON 모델을 검사�
 
    SPA 편집기에서 [레이아웃 모드](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html#defining-layouts-layout-mode)를 사용하여 구성 요소 크기를 다시 조정하는 것과 동일한 기능을 사용할 수 있습니다.
 
-3. [http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html)(으)로 돌아갑니다. **이미지** 구성 요소를 추가하고 **레이아웃** 옵션을 사용하여 크기를 다시 조정해 보십시오.
+3. [http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html)&#x200B;(으)로 돌아갑니다. **이미지** 구성 요소를 추가하고 **레이아웃** 옵션을 사용하여 크기를 다시 조정해 보십시오.
 
    ![레이아웃 모드를 사용하여 이미지 크기 조정](./assets/map-components/responsive-grid-layout-change.gif)
 
@@ -462,13 +462,13 @@ SPA 코드로 이동하기 전에 AEM에서 제공하는 JSON 모델을 검사�
 
 ### 다음 단계 {#next-steps}
 
-[탐색 및 라우팅](navigation-routing.md) - SPA Editor SDK를 사용하여 AEM Pages에 매핑하여 SPA에서 여러 보기를 지원하는 방법에 대해 알아봅니다. 동적 탐색은 Angular 라우터를 사용하여 구현되고 기존 헤더 구성 요소에 추가됩니다.
+[탐색 및 라우팅](navigation-routing.md) - SPA 편집기 SDK을 사용하여 AEM 페이지에 매핑하여 SPA에서 여러 보기를 지원하는 방법에 대해 알아봅니다. 동적 탐색은 Angular 라우터를 사용하여 구현되고 기존 헤더 구성 요소에 추가됩니다.
 
 ## 보너스 - 소스 제어에 구성 유지 {#bonus}
 
 대부분의 경우, 특히 AEM 프로젝트 시작 시 소스 제어에 템플릿 및 관련 콘텐츠 정책과 같은 구성을 유지하는 것이 중요합니다. 이렇게 하면 모든 개발자가 동일한 콘텐츠 및 구성 세트에 대해 작업하고 환경 간에 추가적인 일관성을 보장할 수 있습니다. 일단 프로젝트가 일정 수준의 완성도에 도달하면 템플릿을 관리하는 관행을 특별한 고급 사용자 그룹에게 이관할 수 있습니다.
 
-다음 몇 단계는 Visual Studio 코드 IDE 및 [VSCode AEM 동기화](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync)를 사용하지만 AEM의 로컬 인스턴스에서 **끌어오기** 또는 **가져오기** 콘텐츠를 사용하도록 구성한 모든 도구와 IDE를 사용하여 수행할 수 있습니다.
+다음 몇 단계는 Visual Studio Code IDE 및 [VSCode AEM 동기화](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync)를 사용하지만 AEM의 로컬 인스턴스에서 **끌어오기** 또는 **가져오기** 콘텐츠를 사용하도록 구성한 모든 도구와 IDE를 사용하여 수행할 수 있습니다.
 
 1. Visual Studio 코드 IDE에서 Marketplace 확장을 통해 **VSCode AEM Sync**&#x200B;가 설치되어 있는지 확인합니다.
 
@@ -476,13 +476,13 @@ SPA 코드로 이동하기 전에 AEM에서 제공하는 JSON 모델을 검사�
 
 2. 프로젝트 탐색기에서 **ui.content** 모듈을 확장하고 `/conf/wknd-spa-angular/settings/wcm/templates`(으)로 이동합니다.
 
-3. `templates` 폴더를 **마우스 오른쪽 단추로 클릭**&#x200B;하고 **AEM Server에서 가져오기**&#x200B;를 선택합니다.
+3. `templates` 폴더를 **마우스 오른쪽 단추로 클릭**&#x200B;하고 **AEM 서버에서 가져오기**&#x200B;를 선택합니다.
 
    ![VSCode 가져오기 템플릿](assets/map-components/import-aem-servervscode.png)
 
 4. 콘텐츠를 가져오려면 단계를 반복하되 `/conf/wknd-spa-angular/settings/wcm/policies`에 있는 **정책** 폴더를 선택하십시오.
 
-5. `ui.content/src/main/content/META-INF/vault/filter.xml`에 있는 `filter.xml` 파일을 Inspect으로 가져옵니다.
+5. `ui.content/src/main/content/META-INF/vault/filter.xml`에 있는 `filter.xml` 파일을 검사합니다.
 
    ```xml
    <!--ui.content filter.xml-->

@@ -1,16 +1,16 @@
 ---
-title: AEM 프로젝트를 cloud manager 저장소에 푸시
+title: AEM 프로젝트를 cloud manager 저장소로 푸시
 description: 로컬 git 저장소를 cloud manager 저장소로 푸시
 solution: Experience Manager
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 jira: KT-8851
 exl-id: e61cea37-b931-49c6-9e5d-899628535480
 duration: 32
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 # AEM 프로젝트를 cloud manager git 저장소로 푸시
 
-이전 단계에서 AEM 프로젝트는 AEM 인스턴스에서 만든 적응형 Forms 및 테마와 동기화되었습니다.
+이전 단계에서 AEM 프로젝트를 AEM 인스턴스에서 만든 적응형 Forms 및 테마와 동기화했습니다.
 이제 이러한 변경 사항을 로컬 git 저장소에 추가한 다음 로컬 git 저장소를 cloud manager git 저장소에 푸시해야 합니다.
 명령 프롬프트를 열고 c:\cloudmanager\aem-banking-app으로 이동합니다.
 다음 명령 실행

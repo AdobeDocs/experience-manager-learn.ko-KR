@@ -2,7 +2,7 @@
 title: 제출된 데이터를 문자열 변수에 저장
 description: 바인딩된 데이터를 추출하고 유형 문자열의 워크플로 변수에 저장하는 사용자 지정 프로세스 단계
 feature: Adaptive Forms
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
@@ -11,7 +11,7 @@ last-substantial-update: 2022-10-02T00:00:00Z
 thumbnail: string-variable.jpg
 exl-id: 65dcbfbb-7eb5-4fa3-aeb3-587c59ee2fe9
 duration: 74
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 0%

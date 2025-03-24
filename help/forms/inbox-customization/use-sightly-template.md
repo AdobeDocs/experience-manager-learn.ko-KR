@@ -3,14 +3,14 @@ title: Sightly 템플릿을 사용하여 받은 편지함 데이터 표시
 description: Sightly 템플릿을 사용하여 워크플로우의 추가 데이터를 표시하려면 사용자 지정 열을 추가하십시오.
 feature: Adaptive Forms
 doc-type: article
-version: 6.5
+version: Experience Manager 6.5
 jira: KT-5830
 topic: Development
 role: Developer
 level: Experienced
 exl-id: d09b46ed-3516-44cf-a616-4cb6e9dfdf41
 duration: 68
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 0%

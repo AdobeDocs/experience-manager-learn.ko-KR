@@ -1,7 +1,7 @@
 ---
 title: VPN (Virtual Private Network)
-description: AEM과 내부 서비스 간에 보안 통신 채널을 만들기 위해 AEM as a Cloud Service을 VPN과 연결하는 방법에 대해 알아봅니다.
-version: Cloud Service
+description: AEM as a Cloud Service과 VPN을 연결하여 AEM과 내부 서비스 간에 보안 통신 채널을 만드는 방법을 알아봅니다.
+version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Security
 role: Architect, Developer
@@ -11,7 +11,7 @@ thumbnail: KT-9352.jpeg
 exl-id: 74cca740-bf5e-4cbd-9660-b0579301a3b4
 last-substantial-update: 2024-04-27T00:00:00Z
 duration: 919
-source-git-commit: 29ac030f3774da2c514525f7cb85f6f48b84369f
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1467'
 ht-degree: 1%
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # VPN (Virtual Private Network)
 
-AEM과 내부 서비스 간에 보안 통신 채널을 만들기 위해 AEM as a Cloud Service을 VPN과 연결하는 방법에 대해 알아봅니다.
+AEM as a Cloud Service과 VPN을 연결하여 AEM과 내부 서비스 간에 보안 통신 채널을 만드는 방법을 알아봅니다.
 
 ## 가상 사설망이란?
 
@@ -240,7 +240,7 @@ Cloud Manager API를 사용하여 가상 개인 네트워크를 활성화할 수
    }
    ```
 
-   `nonProxyHosts`은(는) 포트 80 또는 443이 전용 이그레스 IP가 아닌 기본 공유 IP 주소 범위를 통해 라우팅되어야 하는 호스트 집합을 선언합니다. `nonProxyHosts`은(는) 공유 IP를 통해 이그레스되는 트래픽이 Adobe에 의해 자동으로 최적화되므로 유용할 수 있습니다.
+   `nonProxyHosts`은(는) 포트 80 또는 443이 전용 이그레스 IP가 아닌 기본 공유 IP 주소 범위를 통해 라우팅되어야 하는 호스트 집합을 선언합니다. 공유 IP를 통해 이그레스되는 트래픽이 Adobe에서 자동으로 최적화되므로 `nonProxyHosts`이(가) 유용할 수 있습니다.
 
    각 `portForwards` 매핑에 대해 고급 네트워킹은 다음 전달 규칙을 정의합니다.
 
@@ -280,7 +280,7 @@ Virtual Private Network가 활성화되면 AEM 코드 및 구성은 이 코드�
 
 ### HTTP/HTTPS
 
-AEM에서 HTTP/HTTPS 연결을 만들 때 VPN을 사용하면 HTTP/HTTPS 연결이 AEM에서 자동으로 프록시됩니다. HTTP/HTTPS 연결을 지원하는 데 추가적인 코드나 구성은 필요하지 않습니다.
+AEM에서 HTTP/HTTPS 연결을 만들 때 VPN을 사용하면 HTTP/HTTPS 연결이 자동으로 AEM 외부로 프록시됩니다. HTTP/HTTPS 연결을 지원하는 데 추가적인 코드나 구성은 필요하지 않습니다.
 
 >[!TIP]
 >
@@ -304,14 +304,14 @@ AEM에서 HTTP/HTTPS 연결을 만들 때 VPN을 사용하면 HTTP/HTTPS 연결�
 
 ### 비 HTTP/HTTPS 연결 코드 예
 
-비HTTP/HTTPS 연결을 만드는 경우(예: SQL, SMTP 등) AEM에서 AEM이 제공하는 특수 호스트 이름을 통해 연결해야 합니다.
+비HTTP/HTTPS 연결을 만드는 경우(예: SQL, SMTP 등). AEM에서 연결은 AEM에서 제공하는 특수 호스트 이름을 통해 이루어져야 합니다.
 
 | 변수 이름 | 사용 | Java™ 코드 | OSGi 구성 |
 | - |  - | - | - |
 | `AEM_PROXY_HOST` | 비 HTTP/HTTPS 연결용 프록시 호스트 | `System.getenv("AEM_PROXY_HOST")` | `$[env:AEM_PROXY_HOST]` |
 
 
-외부 서비스에 대한 연결은 `AEM_PROXY_HOST`과(와) 매핑된 포트(`portForwards.portOrig`)를 통해 호출됩니다. 그런 다음 AEM은 매핑된 외부 호스트 이름(`portForwards.name`)과(와) 포트(`portForwards.portDest`)로 라우팅합니다.
+외부 서비스에 대한 연결은 `AEM_PROXY_HOST` 및 매핑된 포트(`portForwards.portOrig`)를 통해 호출되며, AEM은 매핑된 외부 호스트 이름(`portForwards.name`) 및 포트(`portForwards.portDest`)로 라우팅됩니다.
 
 | 프록시 호스트 | 프록시 포트 |  | 외부 호스트 | 외부 포트 |
 |---------------------------------|----------|----------------|------------------|----------|
@@ -359,10 +359,10 @@ AEM에서 HTTP/HTTPS 연결을 만들 때 VPN을 사용하면 HTTP/HTTPS 연결�
       </p>
     </td>
    <td>
-      <a  href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking"><img alt="AEM Publish에 대한 경로 기반 VPN 액세스 제한" src="./assets/code_examples__vpn-path-allow-list.png"/></a>
-      <div><strong><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking">AEM Publish에 대한 경로 기반 VPN 액세스 제한</a></strong></div>
+      <a  href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking"><img alt="AEM 게시에 대한 경로 기반 VPN 액세스 제한" src="./assets/code_examples__vpn-path-allow-list.png"/></a>
+      <div><strong><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking">AEM 게시에 대한 경로 기반 VPN 액세스 제한</a></strong></div>
       <p>
-            AEM Publish의 특정 경로에 대한 VPN 액세스 권한이 필요합니다.
+            AEM 게시의 특정 경로에 대한 VPN 액세스 권한이 필요합니다.
       </p>
     </td>
    <td></td>

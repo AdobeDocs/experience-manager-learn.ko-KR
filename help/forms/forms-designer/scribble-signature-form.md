@@ -1,7 +1,7 @@
 ---
 title: Forms Designer에서 스크리블 서명 사용
 description: AEM Forms에 스크리블 서명 추가를 설명하는 짧은 비디오
-version: 6.5
+version: Experience Manager 6.5
 feature: Forms Designer,Designer
 topic: Development
 role: User
@@ -12,7 +12,7 @@ last-substantial-update: 2024-02-29T00:00:00Z
 jira: KT-15059
 thumbnail: 3427626.jpeg
 exl-id: f7609163-b386-40b9-bdf7-53ec01091e00
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '34'
 ht-degree: 0%

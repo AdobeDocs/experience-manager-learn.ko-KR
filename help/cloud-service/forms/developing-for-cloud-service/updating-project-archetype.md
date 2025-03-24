@@ -5,13 +5,13 @@ solution: Experience Manager
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: AEM Project Archetype
 jira: KT-9534
 exl-id: c2cd9c52-6f00-4cfe-a972-665093990e5d
 duration: 67
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 0%
@@ -55,4 +55,4 @@ Archetype 30을 사용하여 생성된 프로젝트를 Archetype 33 프로젝트
 
 >[!NOTE]
 >
->콘텐츠(적응형 Forms, 양식 데이터 모델 등)를 새 프로젝트에 동기화하려면 IntelliJ 프로젝트에서 적절한 폴더 구조를 만든 다음 저장소 도구의 Get 명령을 사용하여 AEM 인스턴스와 IntelliJ 프로젝트를 동기화해야 합니다.
+>콘텐츠(적응형 Forms, 양식 데이터 모델 등)를 새 프로젝트에 동기화하려면 IntelliJ 프로젝트에서 적절한 폴더 구조를 만든 다음 저장소 도구의 Get 명령을 사용하여 IntelliJ 프로젝트를 AEM 인스턴스와 동기화해야 합니다.

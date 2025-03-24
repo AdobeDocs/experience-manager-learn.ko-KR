@@ -2,7 +2,7 @@
 title: AEM UI 확장 Adobe I/O Runtime 작업
 description: AEM UI 확장 모달을 만드는 방법을 알아봅니다.
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Beginner
@@ -11,7 +11,7 @@ jira: KT-11603
 last-substantial-update: 2024-01-26T00:00:00Z
 exl-id: 3062900a-0461-4c6f-81e6-c76a7f613804
 duration: 240
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 2%
@@ -24,7 +24,7 @@ ht-degree: 2%
 
 AEM UI 확장은 선택적으로 [Adobe I/O Runtime 작업](https://developer.adobe.com/runtime/docs/)을 포함할 수 있습니다.
 
-Adobe I/O Runtime 작업은 확장에서 호출할 수 있는 서버를 사용하지 않는 함수입니다. 작업은 AEM 또는 다른 Adobe 웹 서비스와 상호 작용해야 하는 작업을 수행하는 데 유용합니다. 일반적으로 작업은 장기 실행(몇 초 이상) 작업을 수행하거나 AEM 또는 기타 웹 서비스에 대한 HTTP 요청을 하는 데 가장 유용합니다.
+Adobe I/O Runtime 작업은 확장에서 호출할 수 있는 서버를 사용하지 않는 함수입니다. 작업은 AEM 또는 기타 Adobe 웹 서비스와 상호 작용해야 하는 작업을 수행하는 데 유용합니다. 일반적으로 작업은 오래 실행되는(몇 초 이상) 작업을 수행하거나 AEM 또는 기타 웹 서비스에 대한 HTTP 요청을 하는 데 가장 유용합니다.
 
 Adobe I/O Runtime 작업을 사용하여 작업을 수행하면 다음과 같은 이점이 있습니다.
 
@@ -32,13 +32,13 @@ Adobe I/O Runtime 작업을 사용하여 작업을 수행하면 다음과 같은
 + 사용자가 작업을 중단할 수 없습니다(예: 브라우저를 새로 고치는 경우).
 + 작업은 비동기적이므로 사용자를 차단하지 않고 필요한 만큼 실행할 수 있습니다
 
-AEM UI 확장의 맥락에서 작업은 종종 AEM as a Cloud Service과 직접 통신하는 데 사용됩니다.
+AEM UI 확장 컨텍스트에서 작업은 종종 AEM as a Cloud Service과 직접 통신하는 데 사용됩니다.
 
-+ 선택한 콘텐츠 또는 현재 콘텐츠에 대한 AEM에서 관련 데이터 수집
++ AEM에서 선택한 콘텐츠 또는 현재 콘텐츠에 대한 관련 데이터 수집
 + 콘텐츠에 대한 사용자 지정 작업 수행
 + 맞춤형 콘텐츠 제작
 
-AEM UI 확장은 특정 AEM UI, 확장 및 해당 지원 작업에 표시되지만 사용자 지정 AEM API 끝점을 포함하여 사용 가능한 AEM HTTP API를 호출할 수 있습니다.
+AEM UI 확장은 특정 AEM UI, 확장 및 지원 작업에 표시되지만 사용자 지정 AEM API 끝점을 포함하여 사용 가능한 AEM HTTP API를 호출할 수 있습니다.
 
 ## 작업 호출
 
@@ -306,7 +306,7 @@ async function main (params) {
 
 다음 AEM HTTP API는 일반적으로 확장에서 AEM과 상호 작용하는 데 사용됩니다.
 
-+ [AEM GraphQL API](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ko-KR)
++ [AEM GraphQL API](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
 + [AEM Assets HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html)
    + [AEM Assets HTTP API의 콘텐츠 조각 지원](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/assets-api-content-fragments.html)
 + [AEM QueryBuilder API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html)
@@ -318,7 +318,7 @@ async function main (params) {
 다음은 Adobe I/O Runtime 작업 개발에 유용한 npm 모듈입니다.
 
 + [@adobe/aio-sdk](https://www.npmjs.com/package/@adobe/aio-sdk)
-   + [Core SDK](https://github.com/adobe/aio-sdk-core)
+   + [핵심 SDK](https://github.com/adobe/aio-sdk-core)
    + [상태 라이브러리](https://github.com/adobe/aio-lib-state)
    + [파일 라이브러리](https://github.com/adobe/aio-lib-files)
    + [Adobe Target 라이브러리](https://github.com/adobe/aio-lib-target)
@@ -326,6 +326,6 @@ async function main (params) {
    + [Adobe Campaign Standard 라이브러리](https://github.com/adobe/aio-lib-campaign-standard)
    + [Adobe 고객 프로필 라이브러리](https://github.com/adobe/aio-lib-customer-profile)
    + [Adobe Audience Manager 고객 데이터 라이브러리](https://github.com/adobe/aio-lib-audience-manager-cd)
-   + [Adobe I/O 이벤트](https://github.com/adobe/aio-lib-events)
+   + [Adobe I/O Events](https://github.com/adobe/aio-lib-events)
 + [@adobe/aio-lib-core-networking](https://github.com/adobe/aio-lib-core-networking)
 + [@adobe/node-httptransfer](https://github.com/adobe/node-httptransfer)

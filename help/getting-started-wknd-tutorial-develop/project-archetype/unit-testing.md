@@ -1,7 +1,7 @@
 ---
 title: 단위 테스트
 description: 사용자 지정 구성 요소 자습서에서 만든 Byline 구성 요소의 Sling 모델 동작을 확인하는 단위 테스트를 구현합니다.
-version: 6.5, Cloud Service
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: APIs, AEM Project Archetype
 topic: Content Management, Development
 role: Developer
@@ -13,7 +13,7 @@ doc-type: Tutorial
 exl-id: b926c35e-64ad-4507-8b39-4eb97a67edda
 recommendations: noDisplay, noCatalog
 duration: 706
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '2923'
 ht-degree: 0%
@@ -65,19 +65,19 @@ _시스템에 Java™ 8과 Java™ 11이 모두 설치되어 있으면 VS 코드
 
 1. 단위 테스트의 기본 사항을 이해합니다.
 1. AEM 코드를 테스트하는 데 일반적으로 사용되는 프레임워크 및 도구에 대해 알아봅니다.
-1. 단위 테스트를 작성할 때 AEM 리소스를 조롱하거나 시뮬레이트하기 위한 옵션을 이해합니다.
+1. 단위 테스트를 작성할 때 AEM 리소스를 비웃거나 시뮬레이션하는 옵션을 이해합니다.
 
 ## 배경 {#unit-testing-background}
 
-이 자습서에서는 Byline 구성 요소의 [Sling 모델](https://sling.apache.org/documentation/bundles/models.html)([사용자 지정 AEM 구성 요소 만들기](custom-component.md)에서 생성됨)에 대해 [단위 테스트](https://en.wikipedia.org/wiki/Unit_testing)를 작성하는 방법을 알아봅니다. 단위 테스트는 Java™으로 작성된 빌드 시간 테스트로서 Java™ 코드의 예상 동작을 확인합니다. 각 단위 테스트는 일반적으로 작으며 예상 결과에 대해 방법(또는 작업 단위)의 출력을 확인합니다.
+이 자습서에서는 Byline 구성 요소의 [Sling 모델](https://sling.apache.org/documentation/bundles/models.html)&#x200B;([사용자 지정 AEM 구성 요소 만들기](custom-component.md)에서 생성됨)에 대해 [단위 테스트](https://en.wikipedia.org/wiki/Unit_testing)를 작성하는 방법을 알아봅니다. 단위 테스트는 Java™으로 작성된 빌드 시간 테스트로서 Java™ 코드의 예상 동작을 확인합니다. 각 단위 테스트는 일반적으로 작으며 예상 결과에 대해 방법(또는 작업 단위)의 출력을 확인합니다.
 
-AEM 모범 사례를 사용하고 다음을 사용합니다.
+AEM 우수 사례를 사용하고 다음을 사용합니다.
 
 * [JUnit 5](https://junit.org/junit5/)
 * [모키토 테스트 프레임워크](https://site.mockito.org/)
-* [wcm.io 테스트 프레임워크](https://wcm.io/testing/)([Apache Sling Mocks](https://sling.apache.org/documentation/development/sling-mock.html)에서 빌드)
+* [wcm.io 테스트 프레임워크](https://wcm.io/testing/)&#x200B;([Apache Sling Mocks](https://sling.apache.org/documentation/development/sling-mock.html)에서 빌드)
 
-## 장치 테스트 및 Cloud Manager Adobe {#unit-testing-and-adobe-cloud-manager}
+## 장치 테스트 및 Adobe Cloud Manager {#unit-testing-and-adobe-cloud-manager}
 
 [Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)은(는) 단위 테스트 실행 및 [코드 검사 보고](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-quality-testing.html)를 CI/CD 파이프라인에 통합하여 단위 테스트 AEM 코드의 모범 사례를 장려하고 홍보하는 데 도움이 됩니다.
 
@@ -213,13 +213,13 @@ AEM 모범 사례를 사용하고 다음을 사용합니다.
 
 이 자습서에서는 후자의 접근 방식이 사용됩니다(이전 장에서 작업 **BylineImpl.java**&#x200B;을(를) 이미 만들었으므로). 이러한 점 때문에, 우리는 그것의 공적인 방법 뿐만 아니라 그것의 구현 세부사항 중 일부를 검토하고 이해해야 한다. 좋은 테스트는 입력과 출력에만 신경 써야 하므로 이는 반대로 들릴 수 있지만 AEM에서 작업할 때 작업 테스트를 구성하기 위해 이해해야 하는 다양한 구현 고려 사항이 있습니다.
 
-AEM의 컨텍스트에서 TDD는 일정 수준의 전문성을 필요로 하며 AEM 개발 및 AEM 코드의 단위 테스트에 능숙한 AEM 개발자가 가장 잘 채택합니다.
+AEM의 맥락에서 TDD는 일정 수준의 전문성을 필요로 하며, AEM 개발 및 AEM 코드의 단위 테스트에 능숙한 AEM 개발자가 가장 잘 채택합니다.
 
 ## AEM 테스트 컨텍스트 설정  {#setting-up-aem-test-context}
 
 AEM용으로 작성된 대부분의 코드는 JCR, Sling 또는 AEM API에 의존하며, 이를 위해서는 실행 중인 AEM의 컨텍스트가 제대로 실행되어야 합니다.
 
-실행 중인 AEM 인스턴스의 컨텍스트 외부에서 빌드 시 단위 테스트가 실행되므로 이러한 컨텍스트는 없습니다. 이 작업을 용이하게 하기 위해 [wcm.io의 AEM AEM Mocks](https://wcm.io/testing/aem-mock/usage.html)은(는) 이러한 API가 _대부분_&#x200B;에서 실행되는 것처럼 작동하도록 하는 모의 컨텍스트를 만듭니다.
+단위 테스트는 실행 중인 AEM 인스턴스의 컨텍스트 외부에 있는 빌드 시 실행되므로 이러한 컨텍스트는 없습니다. 이를 용이하게 하기 위해 [wcm.io의 AEM AEM Mocks](https://wcm.io/testing/aem-mock/usage.html)는 이러한 API가 _대부분_&#x200B;에서 실행되는 것처럼 작동하도록 하는 모의 컨텍스트를 만듭니다.
 
 1. **BylineImplTest.java** 파일에 `@ExtendWith`(으)로 데코레이트된 JUnit 확장명으로 추가하여 **BylineImplTest.java**&#x200B;의 **wcm.io** `AemContext`을(를) 사용하여 AEM 컨텍스트를 만듭니다. 확장은 필요한 모든 초기화 및 정리 작업을 처리합니다. 모든 테스트 메서드에 사용할 수 있는 `AemContext`의 클래스 변수를 만듭니다.
 

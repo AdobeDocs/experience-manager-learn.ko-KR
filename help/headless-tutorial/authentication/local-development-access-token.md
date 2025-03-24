@@ -1,7 +1,7 @@
 ---
 title: 로컬 개발 액세스 토큰
 description: AEM 로컬 개발 액세스 토큰은 HTTP를 통해 AEM Author 또는 Publish 서비스와 프로그래밍 방식으로 상호 작용하는 AEM as a Cloud Service과의 통합 개발을 가속화하는 데 사용됩니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: APIs
 jira: KT-6785
 thumbnail: 330477.jpg
@@ -12,7 +12,7 @@ last-substantial-update: 2023-01-12T00:00:00Z
 doc-type: Tutorial
 exl-id: 197444cb-a68f-4d09-9120-7b6603e1f47d
 duration: 572
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1067'
 ht-degree: 0%
@@ -29,7 +29,7 @@ AEM as a Cloud Service에 프로그래밍 방식으로 액세스해야 하는 �
 
 ![로컬 개발 액세스 토큰을 가져오는 중](assets/local-development-access-token/getting-a-local-development-access-token.png)
 
-로컬 개발 액세스 토큰은 토큰을 생성한 사용자로서의 AEM Author 및 Publish 서비스에 대한 액세스 권한과 함께 액세스를 제공합니다. 개발 토큰임에도 불구하고 이 토큰을 공유하거나 소스 제어에 저장하지 마십시오.
+로컬 개발 액세스 토큰은 토큰을 생성한 사용자로서 해당 권한과 함께 AEM Author 및 Publish 서비스에 대한 액세스를 제공합니다. 개발 토큰임에도 불구하고 이 토큰을 공유하거나 소스 제어에 저장하지 마십시오.
 
 1. [Adobe Admin Console](https://adminconsole.adobe.com/)에서 개발자가 다음 구성원의 구성원인지 확인합니다.
    + __Cloud Manager - 개발자__ IMS 제품 프로필(AEM Developer Console에 대한 액세스 권한 부여)
@@ -59,16 +59,16 @@ AEM as a Cloud Service에 프로그래밍 방식으로 액세스해야 하는 �
 
 ### 샘플 외부 애플리케이션
 
-로컬 개발자 액세스 토큰을 사용하여 HTTPS를 통해 AEM as a Cloud Service에 프로그래밍 방식으로 액세스하는 방법을 보여 주는 간단한 외부 JavaScript 애플리케이션을 만듭니다. 이는 프레임워크 또는 언어에 관계없이 AEM 외부에서 실행되는 _any_ 응용 프로그램 또는 시스템이 액세스 토큰을 사용하여 AEM as a Cloud Service을 프로그래밍 방식으로 인증하고 액세스하는 방법을 보여 줍니다. [다음 섹션](./service-credentials.md)에서 이 응용 프로그램 코드를 업데이트하여 프로덕션 사용을 위한 토큰을 생성하는 방법을 지원합니다.
+로컬 개발자 액세스 토큰을 사용하여 HTTPS를 통해 AEM as a Cloud Service에 프로그래밍 방식으로 액세스하는 방법을 보여 주는 간단한 외부 JavaScript 애플리케이션을 만듭니다. 이는 프레임워크나 언어에 관계없이 AEM 외부에서 실행되는 _any_ 응용 프로그램 또는 시스템이 액세스 토큰을 사용하여 AEM as a Cloud Service을 프로그래밍 방식으로 인증하고 액세스하는 방법을 보여 줍니다. [다음 섹션](./service-credentials.md)에서 이 응용 프로그램 코드를 업데이트하여 프로덕션 사용을 위한 토큰을 생성하는 방법을 지원합니다.
 
-이 샘플 애플리케이션은 명령줄에서 실행되며 다음 플로우를 사용하여 AEM Assets HTTP API를 사용하여 AEM 에셋 메타데이터를 업데이트합니다.
+이 샘플 애플리케이션은 명령줄에서 실행되며 다음 흐름을 사용하여 AEM Assets HTTP API를 사용하여 AEM 에셋 메타데이터를 업데이트합니다.
 
 1. 명령줄(`getCommandLineParams()`)에서 매개 변수를 읽습니다.
 1. AEM as a Cloud Service(`getAccessToken(...)`) 인증에 사용되는 액세스 토큰을 가져옵니다.
 1. 명령줄 매개 변수(`listAssetsByFolder(...)`)에 지정된 AEM 자산 폴더의 모든 자산을 나열합니다.
 1. 명령줄 매개 변수(`updateMetadata(...)`)에 지정된 값으로 나열된 자산의 메타데이터 업데이트
 
-액세스 토큰을 사용하여 AEM에 프로그래밍 방식으로 인증할 때 주요 요소는 다음 형식으로 AEM에 수행된 모든 HTTP 요청에 인증 HTTP 요청 헤더를 추가하는 것입니다.
+액세스 토큰을 사용하여 AEM에 프로그래밍 방식으로 인증하는 데 있어서의 주요 요소는 다음 형식으로 AEM에 대한 모든 HTTP 요청에 인증 HTTP 요청 헤더를 추가하는 것입니다.
 
 + `Authorization: Bearer ACCESS_TOKEN`
 

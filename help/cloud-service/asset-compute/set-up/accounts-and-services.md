@@ -1,8 +1,8 @@
 ---
-title: asset compute 확장성을 위한 계정 및 서비스 설정
-description: asset compute 작업자를 개발하려면 Microsoft 또는 Amazon에서 제공하는 AEM as a Cloud Service, App Builder 및 클라우드 스토리지를 포함한 계정 및 서비스에 액세스해야 합니다.
+title: Asset Compute 확장성을 위한 계정 및 서비스 설정
+description: Asset Compute 작업자를 개발하려면 Microsoft 또는 Amazon에서 제공하는 AEM as a Cloud Service, App Builder 및 클라우드 스토리지를 포함한 계정 및 서비스에 액세스해야 합니다.
 feature: Asset Compute Microservices
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: Tutorial
 jira: KT-6264
 thumbnail: 40377.jpg
@@ -11,7 +11,7 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: 707657ad-221e-4dab-ac2a-46a4fcbc55bc
 duration: 212
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '592'
 ht-degree: 2%
@@ -39,15 +39,15 @@ ht-degree: 2%
 
 ## AEM as a Cloud Service{#aem-as-a-cloud-service}
 
-사용자 지정 Asset compute 작업자를 호출하도록 AEM Assets 처리 프로필을 구성하려면 AEM as a Cloud Service 환경에 액세스해야 합니다.
+사용자 지정 AEM as a Cloud Service 작업자를 호출하도록 AEM Assets 처리 프로필을 구성하려면 Asset Compute 환경에 액세스해야 합니다.
 
 샌드박스 프로그램 또는 비샌드박스 개발 환경을 사용하는 것이 좋습니다.
 
-로컬 AEM SDK는 Asset compute 마이크로서비스와 통신할 수 없으므로 진정한 AEM as a Cloud Service 환경이 필요하므로 로컬 AEM SDK만으로는 이 자습서를 완료할 수 없습니다.
+로컬 AEM SDK이 Asset Compute 마이크로서비스와 통신할 수 없으므로, 대신 진정한 AEM as a Cloud Service 환경이 필요하므로 로컬 AEM SDK만으로는 이 자습서를 완료할 수 없습니다.
 
 ## App Builder{#app-builder}
 
-[App Builder](https://developer.adobe.com/app-builder/) 프레임워크는 Adobe의 서버리스 플랫폼인 Adobe I/O Runtime에 사용자 지정 작업을 빌드하고 배포하는 데 사용됩니다. AEM Asset compute 프로젝트는 특별히 제작된 App Builder 프로젝트로, 처리 프로필을 통해 AEM Assets과 통합되며 에셋 바이너리에 액세스하고 처리하는 기능을 제공합니다.
+[App Builder](https://developer.adobe.com/app-builder/) 프레임워크는 Adobe의 서버리스 플랫폼인 Adobe I/O Runtime에 사용자 지정 작업을 빌드하고 배포하는 데 사용됩니다. AEM Asset Compute 프로젝트는 특별히 제작된 App Builder 프로젝트로, 처리 프로필 을 통해 AEM Assets과 통합되며 에셋 바이너리에 액세스하고 처리하는 기능을 제공합니다.
 
 App Builder에 액세스하려면 미리보기에 등록하십시오.
 
@@ -57,9 +57,9 @@ App Builder에 액세스하려면 미리보기에 등록하십시오.
 
 ## 클라우드 스토리지
 
-asset compute 프로젝트의 로컬 개발을 위해서는 클라우드 스토리지가 필요합니다.
+Asset Compute 프로젝트의 로컬 개발을 위해 클라우드 스토리지가 필요합니다.
 
-asset compute 작업자를 AEM as a Cloud Service에서 직접 사용하기 위해 Adobe I/O Runtime에 배포할 경우 AEM이 자산을 읽고 렌디션을 쓸 클라우드 저장소를 제공하기 때문에 이 클라우드 스토리지가 엄격히 필요하지 않습니다.
+Asset Compute 작업자가 AEM as a Cloud Service에서 직접 사용하기 위해 Adobe I/O Runtime에 배포되는 경우, AEM이 자산을 읽고 렌디션을 쓸 클라우드 스토리지를 제공하므로 이 클라우드 스토리지는 엄격히 필요하지 않습니다.
 
 ### Microsoft Azure Blob 저장소{#azure-blob-storage}
 
@@ -76,7 +76,7 @@ _Azure Blob 저장소를 프로비전하는 클릭스루(오디오 없음)_
 1. 새 Blob 저장소 계정을 만들려면 __+ 추가__&#x200B;를 탭하세요.
 1. 필요에 따라 새 __리소스 그룹__&#x200B;을(를) 만듭니다. 예: `aem-as-a-cloud-service`
 1. __저장소 계정 이름__&#x200B;을(를) 지정하십시오. 예: `aemguideswkndassetcomput`
-   + 로컬 Asset compute 개발 도구에서 [클라우드 저장소 구성](../develop/environment-variables.md)에 사용되는 __저장소 계정 이름__
+   + 로컬 Asset Compute 개발 도구에서 [클라우드 저장소 구성](../develop/environment-variables.md)에 사용되는 __저장소 계정 이름__
    + [클라우드 저장소를 구성](../develop/environment-variables.md)할 때도 저장소 계정과 연결된 __액세스 키__&#x200B;가 필요합니다.
 1. 다른 모든 항목은 기본값으로 두고 __검토 + 만들기__ 단추를 탭합니다.
    + 필요한 경우 가까운 __위치__&#x200B;를 선택하십시오.

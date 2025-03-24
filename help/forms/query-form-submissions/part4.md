@@ -3,7 +3,7 @@ title: 제출된 데이터 및 첨부 파일로 양식 미리 채우기
 description: Azure 포털에 저장된 양식 제출을 쿼리하는 단계를 안내하는 다중 파트 튜토리얼입니다.
 feature: Adaptive Forms
 doc-type: Tutorial
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
@@ -11,7 +11,7 @@ jira: kt-14884
 last-substantial-update: 2024-03-03T00:00:00Z
 exl-id: b83ffa66-5614-4e3e-84f9-e9ba57fc0955
 duration: 14
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 2%

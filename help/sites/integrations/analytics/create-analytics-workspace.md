@@ -1,7 +1,7 @@
 ---
 title: Analysis Workspace을 사용하여 데이터 분석
 description: Adobe Experience Manager 사이트에서 캡처한 데이터를 Adobe Analytics 보고서 세트의 지표 및 차원에 매핑하는 방법을 알아봅니다. Adobe Analytics의 Analysis Workspace 기능을 사용하여 자세한 보고 대시보드를 작성하는 방법을 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Integrations
 feature: Adobe Client Data Layer
 role: User
@@ -13,7 +13,7 @@ exl-id: b5722fe2-93bf-4b25-8e08-4cb8206771cb
 badgeIntegration: label="통합" type="positive"
 last-substantial-update: 2022-06-15T00:00:00Z
 duration: 443
-source-git-commit: 606607b85fae012e76d57b0b35820247a6862e32
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '2072'
 ht-degree: 0%
@@ -55,13 +55,13 @@ WKND 마케팅 팀이 홈 페이지에서 성과가 가장 좋은 `Call to Actio
 
 * [Adobe Analytics 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html)이 활성화된 **태그 속성**
 * **Adobe Analytics** 테스트/개발 보고서 세트 ID 및 추적 서버. [보고서 세트 만들기](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html)에 대한 다음 설명서를 참조하세요.
-* [Experience Platform 디버거](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) 브라우저 확장이 [WKND 사이트](https://wknd.site/us/en.html) 또는 Adobe 데이터 레이어가 활성화된 AEM 사이트에 로드된 태그 속성으로 구성되었습니다.
+* [Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) 브라우저 확장이 [WKND 사이트](https://wknd.site/us/en.html) 또는 Adobe 데이터 레이어가 활성화된 AEM 사이트에 로드된 태그 속성으로 구성되었습니다.
 
 ## 전환 변수 (eVar) 및 성공 이벤트 (이벤트)
 
 Custom Insight 전환 변수(또는 eVar)는 사이트에서 선택한 웹 페이지의 Adobe 코드에 삽입됩니다. 주요 목적은 사용자 지정 마케팅 보고서에서 전환 성공 지표를 세그먼트화하는 것입니다. eVar은 방문 기반일 수 있으며 쿠키와 유사하게 작동합니다. eVar 변수로 전달된 값은 사전 결정된 기간 동안 사용자를 따릅니다.
 
-eVar을 방문자의 값으로 설정하면 Adobe은 값이 만료되기 전까지 해당 값을 자동으로 기억합니다. eVar 값이 활성화되는 동안 방문자가 발생하는 모든 성공 이벤트는 eVar 값에 대해 계산됩니다.
+eVar을 방문자 값으로 설정하면 Adobe은 값이 만료되기 전까지 해당 값을 자동으로 기억합니다. eVar 값이 활성 상태인 동안 방문자가 발생하는 모든 성공 이벤트는 eVar 값에 대해 계산됩니다.
 
 eVar는 다음과 같이 원인과 영향을 측정하는 데 가장 잘 사용됩니다.
 
@@ -122,7 +122,7 @@ Analysis Workspace은 분석을 빌드하고 통찰력을 빠르게 공유할 �
 
    ![Workspace](assets/create-analytics-workspace/create-workspace.png)
 
-1. **빈 프로젝트**&#x200B;에서 시작하도록 선택하거나 Adobe 또는 조직에서 만든 사용자 지정 템플릿에서 제공하는 미리 빌드된 템플릿 중 하나를 선택하십시오. 분석 또는 염두에 둔 사용 사례에 따라 여러 템플릿을 사용할 수 있습니다. 사용 가능한 다양한 템플릿 옵션에 대해 [자세히 알아보기](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html).
+1. **빈 프로젝트**&#x200B;에서 시작하도록 선택하거나 Adobe에서 제공하는 미리 빌드된 템플릿 또는 조직에서 만든 사용자 지정 템플릿 중 하나를 선택합니다. 분석 또는 염두에 둔 사용 사례에 따라 여러 템플릿을 사용할 수 있습니다. 사용 가능한 다양한 템플릿 옵션에 대해 [자세히 알아보기](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html).
 
    Workspace 프로젝트에서 패널, 테이블, 시각화 및 구성 요소는 왼쪽 레일에서 액세스됩니다. 프로젝트의 빌딩 블록을 구성합니다.
 
@@ -144,9 +144,9 @@ Analysis Workspace은 분석을 빌드하고 통찰력을 빠르게 공유할 �
 * `event8` - `CTA Button Click event`
 * `prop8` - `CTA Button Id`
 
-1. **Page** 차원 구성 요소를 자유 형식 테이블로 끌어서 놓습니다. 이제 테이블 내에 표시된 페이지 이름(eVar 9) 및 해당 페이지 보기(발생 횟수)를 표시하는 시각화를 볼 수 있습니다.
+1. **Page** 차원 구성 요소를 자유 형식 테이블로 끌어서 놓습니다. 이제 테이블 내에 표시된 페이지 이름(eVar9) 및 해당 페이지 보기 수(발생 횟수)를 표시하는 시각화를 볼 수 있습니다.
 
-   ![페이지 Dimension](assets/create-analytics-workspace/evar9-dimension.png)
+   ![Dimension 페이지](assets/create-analytics-workspace/evar9-dimension.png)
 
 1. **CTA 클릭**(event8) 지표를 발생 횟수 지표로 드래그 앤 드롭한 다음 바꿉니다. 이제 페이지의 페이지 이름(eVar9) 및 해당 CTA 클릭 이벤트 수를 표시하는 시각화를 볼 수 있습니다.
 
@@ -204,7 +204,7 @@ Analytics 분류는 Analytics 변수 데이터를 카테고리별로 분류한 �
 
 분류를 마케팅 보고서로 가져오기 전에 분류 데이터 파일을 만드는 데 도움이 되는 템플릿을 다운로드할 수 있습니다. 데이터 파일은 원하는 분류를 열 머리글로 사용한 다음, 해당 분류 머리글 아래에 보고 데이터 세트를 구성합니다.
 
-다음으로 단추 ID(eVar8) 변수에 대한 분류 템플릿을 다운로드하겠습니다
+다음으로 버튼 ID(eVar8) 변수에 대한 분류 템플릿을 다운로드하겠습니다
 
 1. **관리자** > **분류 가져오기**(으)로 이동
 1. **템플릿 다운로드** 탭에서 전환 변수에 대한 분류 템플릿을 다운로드하겠습니다.
@@ -217,14 +217,14 @@ Analytics 분류는 Analytics 변수 데이터를 카테고리별로 분류한 �
 
 1. **다운로드**&#x200B;를 클릭하고 템플릿 파일을 로컬 시스템에 저장합니다. 템플릿 파일은 탭으로 구분된 데이터 파일(.tab 파일 확장명)이며 대부분의 스프레드시트 애플리케이션에서 지원합니다.
 1. 선택한 편집기를 사용하여 탭으로 구분된 데이터 파일을 엽니다.
-1. 섹션의 9단계에서 각 eVar9 값에 대해 탭으로 구분된 파일에 단추 ID(eVar9) 및 해당 단추 이름을 추가합니다.
+1. 버튼 ID(eVar9) 및 해당 버튼 이름을 섹션의 9단계에서 각 eVar9 값에 대한 탭으로 구분된 파일에 추가합니다.
 
    ![키 값](assets/create-analytics-workspace/key-value.png)
 
 1. 탭으로 구분된 파일을 **저장**&#x200B;합니다.
 1. **파일 가져오기** 탭으로 이동합니다.
 1. 파일 가져오기 대상을 구성합니다.
-   * **보고서 세트 선택** : WKND Site AEM(보고서 세트)
+   * **보고서 세트 선택** : WKND 사이트 AEM(보고서 세트)
    * **분류할 데이터 집합** : 단추 Id(전환 변수 eVar8)
 1. **파일 선택** 옵션을 클릭하여 탭에서 구분된 파일을 시스템에서 업로드한 다음 **파일 가져오기**&#x200B;를 클릭합니다
 

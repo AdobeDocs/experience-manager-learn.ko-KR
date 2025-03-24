@@ -2,7 +2,7 @@
 title: App Builder 작업에서 서버 간 액세스 토큰 생성
 description: App Builder 작업에 사용할 OAuth 서버 간 자격 증명을 사용하여 액세스 토큰을 생성하는 방법을 알아봅니다.
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Intermediate
@@ -10,7 +10,7 @@ jira: KT-14724
 last-substantial-update: 2024-02-29T00:00:00Z
 duration: 122
 exl-id: 919cb9de-68f8-4380-940a-17274183298f
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 0%
@@ -25,11 +25,11 @@ App Builder 작업은 **OAuth 서버 간 자격 증명**&#x200B;을 지원하고
 
 >[!IMPORTANT]
 >
-> JWT(서비스 계정) 자격 증명은 OAuth 서버 간 자격 증명을 위해 더 이상 사용되지 않습니다. 그러나 JWT(서비스 계정) 자격 증명만 지원하는 일부 Adobe API와 OAuth 서버 간 마이그레이션이 진행 중입니다. 지원되는 자격 증명을 이해하려면 Adobe API 설명서 를 검토하십시오.
+> JWT(서비스 계정) 자격 증명은 OAuth 서버 간 자격 증명을 위해 더 이상 사용되지 않습니다. 그러나 JWT(서비스 계정) 자격 증명과 OAuth 서버 간 마이그레이션만 지원하는 일부 Adobe API가 아직 진행 중입니다. 지원되는 자격 증명을 이해하려면 Adobe API 설명서 를 검토하십시오.
 
 ## Adobe Developer Console 프로젝트 구성
 
-Adobe Developer Console 프로젝트에 원하는 Adobe API를 추가하는 동안 _API 구성_ 단계에서 **OAuth 서버 간** 인증 유형을 선택합니다.
+원하는 Adobe API를 Adobe Developer Console 프로젝트에 추가하는 동안 _API 구성_ 단계에서 **OAuth 서버 간** 인증 유형을 선택합니다.
 
 ![Adobe Developer Console - OAuth 서버 간](./assets/s2s-auth/oauth-server-to-server.png)
 

@@ -1,7 +1,7 @@
 ---
 title: 웹 사이트 브랜딩 추가
 description: Edge Delivery Services 사이트에 대한 전역 CSS, CSS 변수 및 웹 글꼴을 정의합니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Development
 role: Developer
@@ -10,7 +10,7 @@ doc-type: Tutorial
 jira: KT-15832
 duration: 900
 exl-id: a5cd9906-7e7a-43dd-a6b2-e80f67d37992
-source-git-commit: ecd3ce33204fa6f3f2c27ebf36e20ec26e429981
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1315'
 ht-degree: 0%
@@ -96,7 +96,7 @@ CSS 변수 사용자 지정을 시작하려면 다음 단계를 따르십시오.
 
 Bare 요소는 CSS 클래스를 사용하는 대신 요소 이름을 통해 직접 스타일링됩니다. 예를 들어 `.page-heading` CSS 클래스의 스타일을 지정하는 대신 `h1 { ... }`을(를) 사용하여 `h1` 요소에 스타일을 적용합니다.
 
-`styles/styles.css` 파일에서 기본 스타일 집합이 기본 HTML 요소에 적용됩니다. Edge Delivery Services 웹 사이트는 Edge Delivery 서비스의 기본 의미 체계 HTML과 일치하므로 기본 요소를 사용하는 우선 순위를 지정합니다.
+`styles/styles.css` 파일에서 기본 스타일 집합이 기본 HTML 요소에 적용됩니다. Edge Delivery Services 웹 사이트는 Edge Delivery Service의 기본 의미 있는 HTML과 일치하므로 기본 요소를 사용하는 우선 순위를 지정합니다.
 
 WKND 브랜딩에 맞추기 위해 `styles.css`에서 일부 기본 요소의 스타일을 지정해 보겠습니다.
 
@@ -295,7 +295,7 @@ Edge Delivery Services 프로젝트는 웹 글꼴의 사용을 최적화하여 �
 
 ![Helix 글꼴 대체 Chrome 확장](./assets/4-website-branding/font-fallback-chrome-plugin.png){align=center}
 
-[Helix 글꼴 대체 Chrome 확장](https://www.aem.live/developer/font-fallback)을 사용하려면 웹 페이지에 Edge Delivery Services 웹 사이트에서 사용되는 것과 동일한 변형에 적용된 웹 글꼴이 있는지 확인하십시오. 이 자습서에서는 [wknd.site](http://wknd.site/us/en.html)의 확장을 보여 줍니다. 웹 사이트를 개발할 때는 [wknd.site](http://wknd.site/us/en.html)이 아닌 작업 중인 사이트에 확장을 적용하십시오.
+[Helix 글꼴 대체 Chrome 확장](https://www.aem.live/developer/font-fallback)을 사용하려면 웹 페이지에 Edge Delivery Services 웹 사이트에서 사용되는 것과 동일한 변형으로 적용된 웹 글꼴이 있는지 확인하십시오. 이 자습서에서는 [wknd.site](http://wknd.site/us/en.html)의 확장을 보여 줍니다. 웹 사이트를 개발할 때는 [wknd.site](http://wknd.site/us/en.html)이 아닌 작업 중인 사이트에 확장을 적용하십시오.
 
 ```css
 /* styles/styles.css */
@@ -385,10 +385,10 @@ $ git push origin wknd-styles
    ```
 
    * `Fix #1`이(가) 이전에 만든 GitHub 문제를 참조합니다.
-   * 테스트 URL은 AEM 코드 동기화에 유효성 검사 및 비교에 사용할 분기를 알려줍니다. &quot;After&quot; URL은 작업 분기 `wknd-styles`을(를) 사용하여 코드 변경이 웹 사이트 성능에 미치는 영향을 확인합니다.
+   * 테스트 URL은 AEM 코드 동기화에게 유효성 검사 및 비교에 사용할 분기를 알려줍니다. &quot;After&quot; URL은 작업 분기 `wknd-styles`을(를) 사용하여 코드 변경이 웹 사이트 성능에 미치는 영향을 확인합니다.
 
 6. **끌어오기 요청 만들기**&#x200B;를 클릭합니다.
-7. [AEM 코드 동기화 GitHub 앱](./1-new-code-project.md)에서 **전체 품질 검사**&#x200B;를 기다리는 중입니다. 실패할 경우 오류를 해결하고 검사를 다시 실행합니다.
+7. [AEM 코드 동기화 GitHub 앱](./1-new-code-project.md)에서 **품질 검사 완료**&#x200B;까지 기다립니다. 실패할 경우 오류를 해결하고 검사를 다시 실행합니다.
 8. 검사가 통과되면 **끌어오기 요청을 병합**&#x200B;하여 `main`하세요.
 
 변경 사항이 `main`에 병합되면 프로덕션에 배포된 것으로 간주되지 않으며 이러한 업데이트에 따라 새로운 개발을 진행할 수 있습니다.

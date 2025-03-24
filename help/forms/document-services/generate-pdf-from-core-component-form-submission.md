@@ -1,7 +1,7 @@
 ---
 title: 핵심 구성 요소 기반 적응형 양식의 데이터를 사용하여 PDF 생성
 description: 워크플로우에서 XDP 템플릿과 핵심 구성 요소 기반 양식 제출의 데이터 병합
-version: 6.5
+version: Experience Manager 6.5
 feature: Forms Service
 topic: Development
 role: Developer
@@ -10,18 +10,18 @@ jira: KT-15025
 last-substantial-update: 2024-02-26T00:00:00Z
 exl-id: cae160f2-21a5-409c-942d-53061451b249
 duration: 97
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 0%
 
 ---
 
-# 핵심 구성 요소 기반 양식 제출의 데이터로 PDF 생성
+# 핵심 구성 요소 기반 양식 제출의 데이터를 사용하여 PDF 생성
 
 다음은 대문자로 표시된 &quot;핵심 구성 요소&quot;로 수정된 텍스트입니다.
 
-일반적인 시나리오에는 핵심 구성 요소 기반 적응형 양식을 통해 제출된 데이터에서 PDF을 생성하는 작업이 포함됩니다. 이 데이터는 항상 JSON 형식입니다. 렌더링 PDF API를 사용하여 PDF을 생성하려면 JSON 데이터를 XML 형식으로 변환해야 합니다. 이 변환에는 `org.json.XML`의 `toString` 메서드가 사용됩니다. 자세한 내용은 `org.json.XML.toString` 메서드의 [설명서](https://www.javadoc.io/doc/org.json/json/20171018/org/json/XML.html#toString-java.lang.Object-)를 참조하세요.
+일반적인 시나리오에는 핵심 구성 요소 기반 적응형 양식을 통해 제출된 데이터에서 PDF을 생성하는 작업이 포함됩니다. 이 데이터는 항상 JSON 형식입니다. Render PDF API를 사용하여 PDF을 생성하려면 JSON 데이터를 XML 형식으로 변환해야 합니다. 이 변환에는 `org.json.XML`의 `toString` 메서드가 사용됩니다. 자세한 내용은 `org.json.XML.toString` 메서드의 [설명서](https://www.javadoc.io/doc/org.json/json/20171018/org/json/XML.html#toString-java.lang.Object-)를 참조하세요.
 
 ## JSON 스키마 기반 적응형 양식
 
@@ -125,4 +125,4 @@ public class ConvertJSONToXML implements WorkflowProcess {
 1. [적응형 양식을 미리 봅니다](http://localhost:4502/content/dam/formsanddocuments/f23/jcr:content?wcmmode=disabled).
 1. 몇 가지 양식 필드를 작성합니다.
 1. 양식을 제출하여 AEM 워크플로우를 시작합니다.
-1. 워크플로의 페이로드 폴더에서 렌더링된 PDF을 찾습니다.
+1. 워크플로우의 페이로드 폴더에서 렌더링된 PDF을 찾습니다.

@@ -4,14 +4,14 @@ description: AEM의 Developer Console에서 서비스 자격 증명을 다운로
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Adaptive Forms
 topic: Development
 jira: KT-8192
 thumbnail: 330519.jpg
 exl-id: 74cb8c30-4c41-426c-a1b5-fc595a3167c8
 duration: 453
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '109'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # AEM Forms 서비스 자격 증명
 
-AEM as a Cloud Service과의 통합은 AEM에 안전하게 인증할 수 있어야 합니다. AEM의 Developer Console은 외부 애플리케이션, 시스템 및 서비스에서 HTTP를 통해 AEM 작성자 또는 Publish 서비스와 프로그래밍 방식으로 상호 작용하는 데 사용되는 서비스 자격 증명을 생성합니다.
+AEM as a Cloud Service과의 통합은 AEM에 안전하게 인증할 수 있어야 합니다. AEM의 Developer Console은 외부 애플리케이션, 시스템 및 서비스에서 HTTP를 통해 AEM Author 또는 Publish 서비스와 프로그래밍 방식으로 상호 작용하는 데 사용되는 서비스 자격 증명을 생성합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330519?quality=12&learn=on)
 

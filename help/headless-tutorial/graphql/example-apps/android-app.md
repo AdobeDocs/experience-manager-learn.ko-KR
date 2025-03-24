@@ -1,7 +1,7 @@
 ---
 title: Android 앱 - AEM Headless 예
-description: 예제 애플리케이션은 AEM(Adobe Experience Manager)의 Headless 기능을 살펴볼 수 있는 좋은 방법입니다. 이 Android 애플리케이션은 AEM의 GraphQL API를 사용하여 콘텐츠를 쿼리하는 방법을 보여 줍니다.
-version: Cloud Service
+description: 예제 애플리케이션은 Adobe Experience Manager(AEM)의 Headless 기능을 살펴볼 수 있는 좋은 방법입니다. 이 Android 애플리케이션은 AEM의 GraphQL API를 사용하여 콘텐츠를 쿼리하는 방법을 보여 줍니다.
+version: Experience Manager as a Cloud Service
 mini-toc-levels: 2
 jira: KT-10588
 thumbnail: KT-10588.jpg
@@ -10,19 +10,19 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 last-substantial-update: 2023-05-10T00:00:00Z
-badgeVersions: label="AEM as a Cloud Service Headless" before-title="false"
+badgeVersions: label="AEM 헤드리스 as a Cloud Service" before-title="false"
 exl-id: 7873e263-b05a-4170-87a9-59e8b7c65faa
 duration: 160
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '614'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # Android 앱
 
-예제 애플리케이션은 AEM(Adobe Experience Manager)의 Headless 기능을 살펴볼 수 있는 좋은 방법입니다. 이 Android 애플리케이션은 AEM의 GraphQL API를 사용하여 콘텐츠를 쿼리하는 방법을 보여 줍니다. [Java용 AEM Headless 클라이언트](https://github.com/adobe/aem-headless-client-java)는 GraphQL 쿼리를 실행하고 데이터를 Java 개체에 매핑하여 앱을 실행하는 데 사용됩니다.
+예제 애플리케이션은 Adobe Experience Manager(AEM)의 Headless 기능을 살펴볼 수 있는 좋은 방법입니다. 이 Android 애플리케이션은 AEM의 GraphQL API를 사용하여 콘텐츠를 쿼리하는 방법을 보여 줍니다. [Java용 AEM Headless 클라이언트](https://github.com/adobe/aem-headless-client-java)는 GraphQL 쿼리를 실행하고 데이터를 Java 개체에 매핑하여 앱을 실행하는 데 사용됩니다.
 
 ![AEM Headless가 포함된 Android Java 앱](./assets/android-java-app/android-app.png)
 
@@ -42,7 +42,7 @@ Android 애플리케이션은 다음 AEM 배포 옵션과 함께 작동합니다
 
 + [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
 
-Android 응용 프로그램은 __AEM Publish__ 환경에 연결하도록 디자인되었지만, Android 응용 프로그램의 구성에서 인증을 제공하는 경우 AEM 작성자의 콘텐츠를 소싱할 수 있습니다.
+Android 응용 프로그램은 __AEM 게시__ 환경에 연결하도록 디자인되었지만 Android 응용 프로그램의 구성에서 인증을 제공하는 경우 AEM 작성자의 콘텐츠를 소싱할 수 있습니다.
 
 ## 사용 방법
 
@@ -69,7 +69,7 @@ Android 응용 프로그램은 __AEM Publish__ 환경에 연결하도록 디자�
    contentApi.password=password123
    ```
 
-1. [Android 가상 장치](https://developer.android.com/studio/run/managing-avds)(최소 API 28)를 다운로드합니다.
+1. [Android 가상 장치](https://developer.android.com/studio/run/managing-avds)&#x200B;(최소 API 28)를 다운로드합니다.
 1. Android 에뮬레이터를 사용하여 앱을 빌드하고 배포합니다.
 
 
@@ -94,7 +94,7 @@ builder.tokenAuth(token)
 
 ### 지속 쿼리
 
-AEM Headless 우수 사례에 따라 iOS 애플리케이션은 AEM GraphQL 지속 쿼리를 사용하여 어드벤처 데이터를 쿼리합니다. 이 응용 프로그램에서는 두 개의 지속 쿼리를 사용합니다.
+AEM Headless 모범 사례에 따라 iOS 애플리케이션은 AEM GraphQL 지속 쿼리를 사용하여 어드벤처 데이터를 쿼리합니다. 이 응용 프로그램에서는 두 개의 지속 쿼리를 사용합니다.
 
 + 속성 집합이 포함된 AEM의 모든 모험을 반환하는 `wknd/adventures-all` 지속 쿼리입니다. 이 지속 쿼리는 초기 보기의 모험 목록을 구동합니다.
 
@@ -177,7 +177,7 @@ query($slug: String!) {
 
 AEM의 지속 쿼리는 HTTP GET을 통해 실행되므로, [Java용 AEM Headless 클라이언트](https://github.com/adobe/aem-headless-client-java)를 사용하여 AEM에 대해 지속 GraphQL 쿼리를 실행하고 어드벤처 콘텐츠를 앱에 로드합니다.
 
-각 지속 쿼리에는 AEM HTTP GET 끝점을 비동기적으로 호출하고 사용자 지정 정의 [데이터 모델](#data-models)을(를) 사용하여 모험 데이터를 반환하는 해당 &quot;loader&quot; 클래스가 있습니다.
+각 지속 쿼리에는 AEM HTTP GET 끝점을 비동기적으로 호출하고 사용자 지정 정의 [데이터 모델](#data-models)을(를) 사용하여 모험 데이터를 반환하는 해당 &quot;로더&quot; 클래스가 있습니다.
 
 + `loader/AdventuresLoader.java`
 

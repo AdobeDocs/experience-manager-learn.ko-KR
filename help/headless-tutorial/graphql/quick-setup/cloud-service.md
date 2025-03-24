@@ -1,7 +1,7 @@
 ---
-title: AEM as a Cloud Service용 AEM Headless 빠른 설정
-description: AEM Headless 빠른 설정은 WKND Site 샘플 프로젝트의 콘텐츠 및 AEM Headless GraphQL API에 대한 콘텐츠를 사용하는 React 앱을 사용하여 AEM Headless를 실습해 볼 수 있도록 합니다.
-version: Cloud Service
+title: AEM as a Cloud Service용 AEM 헤드리스 빠른 설정
+description: AEM Headless 빠른 설정은 WKND Site 샘플 프로젝트 및 AEM Headless GraphQL API를 통해 콘텐츠를 사용하는 React 앱의 콘텐츠를 사용하여 AEM Headless를 실습할 수 있도록 합니다.
+version: Experience Manager as a Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
@@ -10,14 +10,14 @@ jira: KT-9442
 thumbnail: 339073.jpg
 exl-id: 62e807b7-b1a4-4344-9b1e-2c626b869e10
 duration: 781
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1078'
 ht-degree: 0%
 
 ---
 
-# AEM as a Cloud Service용 AEM Headless 빠른 설정
+# AEM as a Cloud Service용 AEM 헤드리스 빠른 설정
 
 AEM Headless 빠른 설정은 WKND Site 샘플 프로젝트 및 AEM Headless GraphQL API에 대한 콘텐츠를 사용하는 샘플 React 앱(SPA)의 콘텐츠를 사용하여 AEM Headless를 실습해 볼 수 있도록 합니다.
 
@@ -27,7 +27,7 @@ AEM Headless 빠른 설정은 WKND Site 샘플 프로젝트 및 AEM Headless Gra
 
 + AEM as a Cloud Service 샌드박스 환경(개발 권장)
 + AEM as a Cloud Service 및 Cloud Manager 액세스
-   + AEM as a Cloud Service에 대한 __AEM 관리자__ 액세스
+   + AEM 관리자 __AEM as a Cloud Service 액세스__
    + Cloud Manager - 배포 관리자&#x200B;__Cloud Manager 액세스__
 + 다음 도구를 로컬에 설치해야 합니다.
    + [Node.js v18](https://nodejs.org/en/)
@@ -36,12 +36,12 @@ AEM Headless 빠른 설정은 WKND Site 샘플 프로젝트 및 AEM Headless Gra
 
 ## 1. Cloud Manager Git 저장소 만들기
 
-먼저 WKND 사이트를 배포하는 데 사용되는 Cloud Manager Git 저장소를 생성합니다. WKND Site 는 빠른 설정의 React 앱에서 사용하는 컨텐츠(컨텐츠 조각) 및 GraphQL AEM 엔드포인트가 포함된 샘플 AEM 웹 사이트 프로젝트입니다.
+먼저 WKND 사이트를 배포하는 데 사용되는 Cloud Manager Git 저장소를 생성합니다. WKND 사이트 는 빠른 설정의 React 앱에서 사용하는 컨텐츠(컨텐츠 조각) 및 GraphQL AEM 끝점을 포함하는 샘플 AEM 웹 사이트 프로젝트입니다.
 
 _단계 스크린캐스트_
 >[!VIDEO](https://video.tv.adobe.com/v/339073?quality=12&learn=on)
 
-1. [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)(으)로 이동
+1. [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)&#x200B;(으)로 이동
 1. 이 빠른 설정에 사용할 AEM as a Cloud Service 환경이 포함된 Cloud Manager __프로그램__&#x200B;을(를) 선택하십시오
 1. WKND 사이트 프로젝트에 대한 Git 저장소 만들기
    1. 위쪽 탐색에서 __저장소__ 선택
@@ -87,7 +87,7 @@ _단계 스크린캐스트_
 
 WKND 사이트 프로젝트가 Cloud Manager Git 저장소로 푸시되면 Cloud Manager 파이프라인을 사용하여 AEM as a Cloud Service에 배포할 수 없습니다.
 
-WKND 사이트 프로젝트는 AEM Headless GraphQL API에 대해 React 앱이 사용하는 샘플 콘텐츠를 제공합니다.
+WKND 사이트 프로젝트는 AEM Headless GraphQL API를 통해 React 앱이 사용하는 샘플 콘텐츠를 제공합니다.
 
 _단계 스크린캐스트_
 >[!VIDEO](https://video.tv.adobe.com/v/339075?quality=12&learn=on)
@@ -143,7 +143,7 @@ _단계 스크린캐스트_
 
    1. Cloud Manager의 위쪽 탐색에서 __환경__&#x200B;을 선택합니다.
    1. __개발__ 환경 선택
-   1. __Publish 서비스(AEM 및 Dispatcher)__ 링크 __환경 세그먼트__ 테이블을 찾습니다.
+   1. __게시 서비스(AEM 및 Dispatcher)__ 링크 __환경 세그먼트__ 테이블을 찾습니다.
    1. 링크의 주소를 복사하여 AEM as a Cloud Service Publish 서비스의 URI로 사용합니다
 
 1. IDE에서 변경 내용을 `.env.development`에 저장합니다.
@@ -159,7 +159,7 @@ _단계 스크린캐스트_
 
 ## 5. AEM에서 컨텐츠 편집
 
-AEM Headless GraphQL API의 콘텐츠에 연결하고 콘텐츠를 사용하는 샘플 WKND React 앱을 사용하여 AEM Author 서비스에서 콘텐츠를 작성하고 React 앱의 경험이 함께 어떻게 업데이트되는지 확인합니다.
+AEM Headless GraphQL API에 연결하고 콘텐츠를 사용하는 샘플 WKND React 앱을 사용하여 AEM Author 서비스에서 콘텐츠를 작성하고 React 앱의 경험이 어떻게 업데이트되는지 함께 확인합니다.
 
 _단계 스크린캐스트_
 >[!VIDEO](https://video.tv.adobe.com/v/339077?quality=12&learn=on)
@@ -175,7 +175,7 @@ _단계 스크린캐스트_
    + 가격: `3500`
    + 기본 이미지: `/content/dam/wknd-shared/en/activities/cycling/mountain-biking.jpg`
 1. 상단 작업 표시줄에서 __저장__ 선택
-1. 상단 작업 표시줄의 __에서__&#x200B;빠른 Publish __을(를) 선택합니다...__
+1. 상단 작업 표시줄의 __에서__&#x200B;빠른 게시&#x200B;__을(를) 선택합니다...__
 1. [http://localhost:3000](http://localhost:3000)에서 실행 중인 React 앱을 새로 고치십시오.
 1. React 앱에서 지금 업데이트된 사이클링 어드벤처를 선택하고 콘텐츠 조각에 대한 콘텐츠 변경 사항을 확인합니다.
 
@@ -191,7 +191,7 @@ _단계 스크린캐스트_
 
 축하합니다! AEM Headless를 사용하여 React 앱을 구동했습니다!
 
-React 앱이 AEM as a Cloud Service의 콘텐츠를 어떻게 사용하는지 자세히 알아보려면 [AEM Headless 자습서](../multi-step/overview.md)를 확인하십시오. 자습서에서는 AEM의 콘텐츠 조각을 만드는 방법과 이 React 앱이 해당 콘텐츠를 JSON으로 사용하는 방법을 살펴봅니다.
+React 앱이 AEM as a Cloud Service의 콘텐츠를 사용하는 방법을 자세히 이해하려면 [AEM Headless 자습서](../multi-step/overview.md)를 확인하십시오. 이 튜토리얼에서는 AEM의 콘텐츠 조각을 만드는 방법과 이 React 앱이 해당 콘텐츠를 JSON으로 사용하는 방법을 살펴봅니다.
 
 ### 다음 단계
 

@@ -1,7 +1,7 @@
 ---
 title: 문서 작성 설정
 description: 문서 작성을 위해 작성자를 위한 환경을 설정하는 방법에 대한 안내서입니다.
-version: 6.5, Cloud Service
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: Authoring
 topic: Content Management
 role: User
@@ -12,7 +12,7 @@ jira: KT-14465
 thumbnail: 3425699.jpeg
 duration: 108
 exl-id: 3a378f4a-1d08-4f77-997a-d7cd19ad7021
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '33'
 ht-degree: 0%

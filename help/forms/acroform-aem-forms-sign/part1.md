@@ -1,13 +1,13 @@
 ---
 title: AEM Forms이 포함된 Acroforms
-description: Acroforms와 AEM Forms 통합의 1부. Acroform을 사용하여 적응형 양식을 만들고 데이터를 병합하여 PDF을 가져옵니다.
+description: Acroforms와 AEM Forms 통합의 1부. Acroform을 사용하여 적응형 양식을 만들고 데이터를 병합하여 PDF을 가져올 수 있습니다.
 feature: adaptive-forms
 doc-type: Tutorial
-version: 6.5
+version: Experience Manager 6.5
 badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 duration: 144
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 0%

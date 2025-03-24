@@ -1,7 +1,7 @@
 ---
 title: 사이트맵
 description: AEM Sites용 사이트 맵을 만들어 SEO를 향상시키는 방법을 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Core Components
 topic: Content Management
 role: Developer
@@ -12,7 +12,7 @@ last-substantial-update: 2022-10-03T00:00:00Z
 doc-type: Technical Video
 exl-id: 40bb55f9-011d-4261-9f44-b1104a591252
 duration: 937
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 4%
@@ -33,7 +33,7 @@ AEM Sites용 사이트 맵을 만들어 SEO를 향상시키는 방법을 알아�
 
 ### 절대 사이트 맵 URL{#absolute-sitemap-urls}
 
-AEM의 사이트 맵은 [Sling 매핑](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)을 사용하여 절대 URL을 지원합니다. 이 작업은 사이트맵을 생성하는 AEM 서비스(일반적으로 AEM Publish 서비스)에서 매핑 노드를 생성함으로써 수행됩니다.
+AEM의 사이트 맵은 [Sling 매핑](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)을 사용하여 절대 URL을 지원합니다. 이 작업은 사이트 맵을 생성하는 AEM 서비스(일반적으로 AEM Publish 서비스)에서 매핑 노드를 생성하여 수행됩니다.
 
 `https://wknd.com`에 대한 Sling 매핑 노드 정의의 예는 다음과 같이 `/etc/map/https`에서 정의할 수 있습니다.
 
@@ -50,7 +50,7 @@ AEM의 사이트 맵은 [Sling 매핑](https://sling.apache.org/documentation/th
 
 ### 사이트 맵 스케줄러 OSGi 구성
 
-[cron 식 사용](https://cron.help/)) 사이트 맵이 AEM에서 다시 생성/생성되고 캐시되는 빈도에 대해 [OSGi 팩터리 구성](http://localhost:4502/system/console/configMgr/org.apache.sling.sitemap.impl.SitemapScheduler)을 정의합니다.
+AEM에서 사이트 맵이 다시 생성/생성되고 캐시되는 빈도에 대해 [OSGi 팩터리 구성](http://localhost:4502/system/console/configMgr/org.apache.sling.sitemap.impl.SitemapScheduler)을 정의합니다([cron 표현식](https://cron.help/) 사용).
 
 `ui.config/src/main/jcr_content/apps/wknd/osgiconfig/config.publish`
 

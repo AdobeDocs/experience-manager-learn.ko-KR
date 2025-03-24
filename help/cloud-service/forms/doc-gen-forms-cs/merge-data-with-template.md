@@ -1,24 +1,24 @@
 ---
 title: XDP 템플릿과 데이터 병합
-description: 필요한 매개 변수를 사용하여 끝점에 대한 POST 요청 만들기
+description: 필요한 매개 변수를 사용하여 끝점에 대한 POST 요청 수행
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Output Service
 topic: Development
 jira: KT-8185
 thumbnail: 332439.jpg
 exl-id: d144b3f6-7c7a-46a7-bc5f-1767895749d0
 duration: 49
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 0%
 
 ---
 
-# POST 호출 만들기
+# POST 호출 수행
 
 
 다음 단계는 필요한 매개 변수를 사용하여 끝점에 대한 HTTP POST 호출을 수행하는 것입니다. 템플릿과 데이터 파일은 리소스 파일로 제공됩니다. 생성된 pdf의 속성은 요청의 옵션 매개 변수를 통해 지정됩니다. embedFonts 속성은 생성된 pdf에 사용자 정의 글꼴을 포함하는 데 사용됩니다.[이 설명서에 따라 사용자 지정 글꼴을 Forms 클라우드 인스턴스에 배포하십시오.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-set-up.html?lang=en) 속성이 options.json 리소스 파일에 지정되어 있습니다. 따라서 끝점에는 요청 헤더에 액세스 토큰을 전달하는 토큰 기반 인증이 있습니다.

@@ -2,7 +2,7 @@
 title: AEM SDK 디버깅을 위한 기타 도구
 description: 다양한 다른 도구는 AEM SDK의 로컬 빠른 시작을 디버깅하는 데 도움이 될 수 있습니다.
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: Tutorial
 jira: KT-5251
 topic: Development
@@ -10,7 +10,7 @@ role: Developer
 level: Beginner, Intermediate
 exl-id: 11fb83e9-dbaf-46e5-8102-ae8cc716c6ba
 duration: 107
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '514'
 ht-degree: 1%
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 CRXDE Lite은 AEM의 데이터 저장소인 JCR과 상호 작용하기 위한 웹 기반 인터페이스입니다. CRXDE Lite은 노드, 속성, 속성 값 및 권한을 포함하여 JCR을 완전히 볼 수 있도록 합니다.
 
-CRXDE Lite 위치:
+CRXDE Lite은 다음 위치에 있습니다.
 
 + 도구 > 일반 > CRXDE Lite
 + 또는 [http://localhost:4502/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp)에서 직접
@@ -44,7 +44,7 @@ CRXDE Lite은 JCR에 직접 액세스할 수 있습니다. CRXDE Lite을 통해 
 
 ![CRXDE Lite - 콘텐츠 디버깅](./assets/other-tools/crxde-lite__debugging-content.png)
 
-CRXDE Lite을 통해 AEM SDK에 직접 적용한 변경 사항은 추적하고 제어하는 것이 어려울 수 있습니다. 적절히, CRXDE Lite을 통해 변경한 사항이 AEM 프로젝트의 변경 가능한 콘텐츠 패키지(`ui.content`)로 돌아가서 Git에 커밋되는지 확인합니다. 모든 애플리케이션 콘텐츠 변경 사항은 CRXDE Lite을 통해 AEM SDK에 직접 변경하는 것이 아니라 코드 기반에서 시작하여 배포를 통해 AEM SDK로 유입되는 것이 가장 좋습니다.
+CRXDE Lite을 통해 AEM SDK에 직접 변경한 사항은 추적하고 제어하는 것이 어려울 수 있습니다. 적절하게, CRXDE Lite을 통해 변경한 내용이 AEM 프로젝트의 변경 가능한 콘텐츠 패키지(`ui.content`)로 돌아가 Git에 커밋되는지 확인합니다. 모든 애플리케이션 컨텐츠 변경 사항은 CRXDE Lite을 통해 AEM SDK에 직접 변경하는 것이 아니라 코드베이스에서 비롯되어 배포를 통해 AEM SDK으로 유입되는 것이 이상적입니다.
 
 ### 액세스 제어 디버깅
 
@@ -72,7 +72,7 @@ CRXDE Lite의 Test Access Control 콘솔에 액세스하려면 다음으로 이�
 
 ![쿼리 설명](./assets/other-tools/explain-query.png)
 
-AEM SDK의 로컬 빠른 시작에서 AEM이 쿼리를 해석하고 실행하는 방법에 대한 주요 통찰력을 제공하는 쿼리 웹 기반 도구 및 AEM에서 수행적 방식으로 쿼리를 실행하는 데 유용한 도구를 설명합니다.
+AEM에서 쿼리를 해석하고 실행하는 방법에 대한 주요 통찰력을 제공하는 AEM SDK 로컬 빠른 시작과 AEM에서 수행적 방식으로 쿼리가 실행되고 있는지 확인할 수 있는 유용한 도구를 통해 쿼리 웹 기반 도구를 설명합니다.
 
 쿼리 설명 위치는 다음과 같습니다.
 

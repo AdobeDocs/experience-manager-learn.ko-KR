@@ -5,12 +5,13 @@ solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: Adaptive Forms
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 jira: KT-16517
-source-git-commit: f9a1fb40aabb6fdc1157e1f2576f9c0d9cf1b099
+exl-id: ab9bd406-e25e-4e3c-9f67-ad440a8db57e
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 0%
@@ -39,4 +40,3 @@ String jsonPath = "/content/dam/mydata/" + getContinent() + ".json"; // Update p
 * 대화 상자 편집기를 사용하여 국가 구성 요소를 구성하고 대륙을 포함한 다양한 속성을 설정합니다
   ![콘텐츠](assets/select-continent.png)
 * 양식을 미리 보고 국가 드롭다운이 예상대로 작동하는지 확인하십시오.
-

@@ -1,8 +1,8 @@
 ---
-title: asset compute 프로젝트의 manifest.yml 구성
-description: asset compute 프로젝트의 manifest.yml은 배포할 이 프로젝트의 모든 작업자에 대해 설명합니다.
+title: Asset Compute 프로젝트의 manifest.yml 구성
+description: Asset Compute 프로젝트의 manifest.yml은 배포할 이 프로젝트의 모든 작업자에 대해 설명합니다.
 feature: Asset Compute Microservices
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: Tutorial
 jira: KT-6281
 thumbnail: KT-6281.jpg
@@ -11,7 +11,7 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: 766bfaff-ade0-41c8-a395-e79dfb4b3d76
 duration: 115
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # manifest.yml 구성
 
-asset compute 프로젝트의 루트에 있는 `manifest.yml`은(는) 배포할 이 프로젝트의 모든 작업자를 설명합니다.
+Asset Compute 프로젝트의 루트에 있는 `manifest.yml`은(는) 배포할 이 프로젝트의 모든 작업자를 설명합니다.
 
 ![manifest.yml](./assets/manifest/manifest.png)
 
@@ -30,7 +30,7 @@ asset compute 프로젝트의 루트에 있는 `manifest.yml`은(는) 배포할 
 
 다른 Adobe I/O 통합에 액세스하는 작업자는 `annotations -> require-adobe-auth` 속성을 `true`(으)로 설정해야 합니다. 이 [은(는) `params.auth` 개체를 통해 작업자의 Adobe I/O 자격 증명](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#access-adobe-apis)을(를) 노출합니다. 일반적으로 작업자가 Adobe Photoshop, Lightroom 또는 Sensei API와 같은 Adobe I/O API를 호출할 때 필요하며 작업자별로 전환할 수 있습니다.
 
-1. 자동 생성된 작업자 `manifest.yml`을(를) 열고 검토합니다. 여러 Asset compute 작업자가 포함된 프로젝트는 `actions` 배열에서 각 작업자에 대한 항목을 정의해야 합니다.
+1. 자동 생성된 작업자 `manifest.yml`을(를) 열고 검토합니다. 여러 Asset Compute 작업자가 포함된 프로젝트는 `actions` 배열에서 각 작업자에 대한 항목을 정의해야 합니다.
 
 ```yml
 packages:
@@ -51,9 +51,9 @@ packages:
 
 각 작업자는 Adobe I/O Runtime에서 해당 실행 컨텍스트에 대해 [제한](https://www.adobe.io/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/guides/system_settings.md)을 구성할 수 있습니다. 이러한 값은 작업 수행 유형뿐만 아니라 작업자가 계산할 자산의 양, 속도 및 유형에 따라 작업자에게 최적의 크기를 제공하도록 조정되어야 합니다.
 
-한도를 설정하기 전에 [Adobe 크기 조정 지침](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#sizing-workers)을 검토하십시오. Asset compute 작업자는 에셋을 처리할 때 메모리가 부족하여 Adobe I/O Runtime 실행이 종료될 수 있으므로, 모든 후보 에셋을 처리할 수 있는 작업자 크기를 적절히 조절하십시오.
+한도를 설정하기 전에 [Adobe 크기 조정 지침](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#sizing-workers)을 검토하십시오. Asset Compute 작업자는 에셋을 처리할 때 메모리가 부족하여 Adobe I/O Runtime 실행이 종료될 수 있으므로, 모든 후보 에셋을 처리할 수 있는 작업자 크기를 적절히 조절하십시오.
 
-1. 새 `wknd-asset-compute` 작업 항목에 `inputs` 섹션을 추가합니다. 이를 통해 Asset compute 작업자의 전체 성능 및 리소스 할당을 조정할 수 있습니다.
+1. 새 `wknd-asset-compute` 작업 항목에 `inputs` 섹션을 추가합니다. 이를 통해 Asset Compute 작업자의 전체 성능 및 리소스 할당을 조정할 수 있습니다.
 
 ```yml
 packages:
@@ -103,22 +103,22 @@ packages:
 
 ## manifest.yml 유효성 검사
 
-생성된 Asset compute `manifest.yml`이(가) 업데이트되면 로컬 개발 도구를 실행하고 업데이트된 `manifest.yml` 설정으로 성공적으로 시작하는지 확인하십시오.
+생성된 Asset Compute `manifest.yml`이(가) 업데이트되면 로컬 개발 도구를 실행하고 업데이트된 `manifest.yml` 설정으로 성공적으로 시작하는지 확인하십시오.
 
-asset compute 프로젝트에 대한 Asset compute 개발 도구를 시작하려면 다음을 수행하십시오.
+Asset Compute 프로젝트용 Asset Compute 개발 도구를 시작하려면 다음을 수행하십시오.
 
-1. asset compute 프로젝트 루트의 명령줄을 열고(VS 코드에서 터미널 > 새 터미널을 통해 IDE에서 직접 열 수 있음) 다음 명령을 실행합니다.
+1. Asset Compute 프로젝트 루트에서 명령줄을 열고(VS 코드에서 터미널 > 새 터미널을 통해 IDE에서 직접 열 수 있음) 다음 명령을 실행합니다.
 
    ```
    $ aio app run
    ```
 
-1. 로컬 Asset compute 개발 도구가 기본 웹 브라우저(__http://localhost:9000__)에서 열립니다.
+1. 로컬 Asset Compute 개발 도구가 기본 웹 브라우저(__http://localhost:9000__)에서 열립니다.
 
    ![aio 앱 실행](assets/environment-variables/aio-app-run.png)
 
 1. 개발 도구가 초기화될 때 명령줄 출력 및 웹 브라우저에서 오류 메시지를 확인합니다.
-1. asset compute 개발 도구를 중지하려면 `aio app run`을(를) 실행한 창에서 `Ctrl-C`을(를) 탭하여 프로세스를 종료하십시오.
+1. Asset Compute 개발 도구를 중지하려면 `aio app run`을(를) 실행한 창에서 `Ctrl-C`을(를) 탭하여 프로세스를 종료하십시오.
 
 ## 문제 해결
 

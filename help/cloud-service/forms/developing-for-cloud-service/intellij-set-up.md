@@ -5,12 +5,12 @@ solution: Experience Manager
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 jira: KT-8843
 exl-id: 34840d28-ad47-4a69-b15d-cd9593626527
 duration: 43
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 0%
@@ -24,7 +24,7 @@ ht-degree: 0%
 ## AEM 프로젝트 가져오기
 
 * IntelliJ 시작
-* 이전 단계에서 생성한 AEM 프로젝트를 가져옵니다. 프로젝트를 가져온 후에는 화면이 이 ![aem-banking-app](assets/aem-banking-app.png)과(와) 같이 표시되어야 합니다. 일반적으로 core,ui.apps,ui.config 및 ui.content 하위 프로젝트를 사용하여 작업할 수 있습니다.
+* 이전 단계에서 만든 AEM 프로젝트를 가져옵니다. 프로젝트를 가져온 후에는 화면이 이 ![aem-banking-app](assets/aem-banking-app.png)과(와) 같이 표시되어야 합니다. 일반적으로 core,ui.apps,ui.config 및 ui.content 하위 프로젝트를 사용하여 작업할 수 있습니다.
 * Maven 및 터미널 창이 표시되지 않으면 보기->도구 창으로 이동하여 Maven 및 터미널 을 선택하십시오.
 
 ## 글꼴 모듈 추가

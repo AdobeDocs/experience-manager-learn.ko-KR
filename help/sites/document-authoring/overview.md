@@ -1,7 +1,7 @@
 ---
 title: 문서 작성 비디오
 description: AEM에서 문서 작성을 설정하고 구성하는 방법에 대해 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Authoring
 topic: Content Management
 role: User
@@ -11,7 +11,7 @@ doc-type: Catalog
 duration: 40
 last-substantial-update: 2023-12-01T00:00:00Z
 exl-id: 172a477f-d277-43c1-8e47-68870b02203c
-source-git-commit: 6a22f523c5cf997a59a5b8579c168b641c009b20
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1047'
 ht-degree: 8%
@@ -20,7 +20,7 @@ ht-degree: 8%
 
 # 문서 작성 비디오
 
-AEM 작성자가 Microsoft Word 또는 Google 문서를 사용하여 문서를 편집하고 게시할 수 있도록 문서 작성을 구성하는 방법을 이해합니다.
+AEM 작성자가 Microsoft Word 또는 Google Docs을 사용하여 문서를 편집하고 게시할 수 있도록 문서 작성을 구성하는 방법을 이해합니다.
 
 문서 작성 설정에 대한 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html)를 검토하십시오.
 
@@ -595,7 +595,7 @@ AEM 작성자가 Microsoft Word 또는 Google 문서를 사용하여 문서를 �
             <p class="headline is-size-6 has-text-weight-bold">
               <a href="./how-to/using-dynamic-media.md" title="Dynamic Media">Dynamic Media</a>
             </p>
-            <p class="is-size-6">최적화된 이미지 제공을 위해 Dynamic Media을 사용하는 방법을 살펴봅니다.</p>
+            <p class="is-size-6">최적화된 이미지 제공을 위해 Dynamic Media를 사용하는 방법을 살펴봅니다.</p>
             <a href="./how-to/using-dynamic-media.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -691,7 +691,7 @@ AEM 작성자가 Microsoft Word 또는 Google 문서를 사용하여 문서를 �
             <p class="headline is-size-6 has-text-weight-bold">
               <a href="./how-to/bulk-importing-using-importer.md" title="Importer를 사용하여 일괄 가져오기">Importer를 사용하여 일괄 가져오기</a>
             </p>
-            <p class="is-size-6">사이트 마이그레이션 중에 AEM Importer 도구를 사용하여 웹 페이지를 일괄 가져오는 방법을 살펴봅니다.</p>
+            <p class="is-size-6">사이트 마이그레이션 중에 AEM Importer 도구를 사용하여 웹 페이지를 대량으로 가져오는 방법을 살펴봅니다.</p>
             <a href="./how-to/bulk-importing-using-importer.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -728,7 +728,7 @@ AEM 작성자가 Microsoft Word 또는 Google 문서를 사용하여 문서를 �
             <p class="headline is-size-6 has-text-weight-bold">
               <a href="./how-to/generate-variations/overview.md" title="변형 생성">변형 생성</a>
             </p>
-            <p class="is-size-6">Edge Delivery Services에서 변형 생성을 소개하고 마케팅 담당자에게 어떻게 유용할 수 있는지 이해합니다.</p>
+            <p class="is-size-6">Edge Delivery Services에서 변형 생성을 소개하고 마케터가 어떻게 유용할 수 있는지 이해합니다.</p>
             <a href="./how-to/generate-variations/overview.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -745,11 +745,11 @@ AEM 작성자가 Microsoft Word 또는 Google 문서를 사용하여 문서를 �
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/generate-variations/configure-sidekick.md" title="변형 생성 - 구성 Sidekick"
+            <a href="./how-to/generate-variations/configure-sidekick.md" title="변형 생성 - Sidekick 구성"
               tabindex="-1">
               <img class="is-bordered-r-small"
                 src="https://video.tv.adobe.com/v/3428306/?format=jpeg"
-                alt="변형 생성 - 구성 Sidekick">
+                alt="변형 생성 - Sidekick 구성">
             </a>
           </figure>
         </div>
@@ -758,7 +758,7 @@ AEM 작성자가 Microsoft Word 또는 Google 문서를 사용하여 문서를 �
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1분</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations/configure-sidekick.md" title="변형 생성 - 구성 Sidekick">변형 생성 - Sidekick 구성</a>
+              <a href="./how-to/generate-variations/configure-sidekick.md" title="변형 생성 - Sidekick 구성">변형 생성 - Sidekick 구성</a>
             </p>
             <p class="is-size-6">Edge Delivery Services 문서 작성에서 변형 생성을 위해 사이드 킥을 구성하는 방법을 살펴봅니다.</p>
             <a href="./how-to/generate-variations/configure-sidekick.md" class="spectrum-Button
@@ -937,11 +937,11 @@ AEM 작성자가 Microsoft Word 또는 Google 문서를 사용하여 문서를 �
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/generate-variations/using-adobe-firefly-for-images.md" title="변형 생성 - 사용 Adobe Firefly"
+            <a href="./how-to/generate-variations/using-adobe-firefly-for-images.md" title="변형 생성 - Adobe Firefly 사용"
               tabindex="-1">
               <img class="is-bordered-r-small"
                 src="https://video.tv.adobe.com/v/3428794/?format=jpeg"
-                alt="변형 생성 - 사용 Adobe Firefly">
+                alt="변형 생성 - Adobe Firefly 사용">
             </a>
           </figure>
         </div>
@@ -950,7 +950,7 @@ AEM 작성자가 Microsoft Word 또는 Google 문서를 사용하여 문서를 �
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1분</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations/using-adobe-firefly-for-images.md" title="변형 생성 - 사용 Adobe Firefly">변형 생성 - Adobe Firefly 사용</a>
+              <a href="./how-to/generate-variations/using-adobe-firefly-for-images.md" title="변형 생성 - Adobe Firefly 사용">변형 생성 - Adobe Firefly 사용</a>
             </p>
             <p class="is-size-6">Adobe Firefly을 사용하여 콘텐츠 변형에 사용되는 이미지를 만드는 방법을 살펴봅니다.</p>
             <a href="./how-to/generate-variations/using-adobe-firefly-for-images.md" class="spectrum-Button
@@ -1016,7 +1016,7 @@ AEM 작성자가 Microsoft Word 또는 Google 문서를 사용하여 문서를 �
             <p class="headline is-size-6 has-text-weight-bold">
               <a href="./how-to/generate-variations/trust-privacy.md" title="변형 생성 - 신뢰 및 개인 정보">변형 생성 - 신뢰 및 개인 정보 보호</a>
             </p>
-            <p class="is-size-6">변형 생성을 위해 Adobe이 신뢰와 개인 정보를 처리하는 방법을 살펴봅니다.</p>
+            <p class="is-size-6">Adobe에서 변형 생성을 위한 신뢰 및 개인 정보 보호 를 처리하는 방법을 살펴봅니다.</p>
             <a href="./how-to/generate-variations/trust-privacy.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">

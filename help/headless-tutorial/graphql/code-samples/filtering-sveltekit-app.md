@@ -1,7 +1,7 @@
 ---
 title: Simple SvelteKit 앱
 description: 콘텐츠 조각을 사용하여 모델링된 WKND 모험을 표시하는 간단한 SvelteKit 앱입니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
@@ -14,7 +14,7 @@ recommendations: noCatalog, noDisplay
 hidefromtoc: true
 exl-id: 2e5bd50e-c0d7-4292-8097-e0a17f41a91a
 duration: 22
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 0%
@@ -29,5 +29,5 @@ ht-degree: 0%
 
 이 코드:
 
-+ AEM Publish 서비스에 연결하며 인증이 필요하지 않습니다.
++ AEM Publish 서비스에 연결하며 인증이 필요하지 않습니다
 + WKND의 지속 쿼리 `wknd-shared/adventures-all` 및 `wknd-shared/adventures-by-slug`을(를) 사용합니다.

@@ -1,7 +1,7 @@
 ---
 title: 콘텐츠 조각 미리보기
-description: 모든 작성자가 콘텐츠 조각 미리보기를 사용하여 콘텐츠 변경 사항이 AEM Headless 경험에 미치는 영향을 빠르게 확인하는 방법에 대해 알아봅니다.
-version: Cloud Service
+description: 모든 작성자가 콘텐츠 조각 미리보기를 사용하여 콘텐츠 변경 사항이 AEM Headless 경험에 미치는 영향을 빠르게 확인하는 방법을 알아봅니다.
+version: Experience Manager as a Cloud Service
 feature: Content Fragments
 topic: Headless, Content Management, Development
 role: Architect, Developer
@@ -12,7 +12,7 @@ jira: KT-10841
 thumbnail: 3416906.jpeg
 exl-id: 247d40a3-ff67-4c1f-86bf-3794d7ce3e32
 duration: 463
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # 콘텐츠 조각 미리보기
 
-AEM Headless 애플리케이션은 통합 작성 미리보기를 지원합니다. 미리보기 경험은 AEM 작성자의 콘텐츠 조각 편집기를 사용자 정의 앱(HTTP를 통해 주소 지정 가능)과 연결하므로 미리보고 있는 콘텐츠 조각을 렌더링하는 앱에 대한 딥 링크를 사용할 수 있습니다.
+AEM Headless 애플리케이션은 통합 작성 미리보기를 지원합니다. 미리보기 경험은 AEM 작성자의 콘텐츠 조각 편집기를 사용자 정의 앱(HTTP를 통해 주소 지정 가능)과 연결하여 미리보고 있는 콘텐츠 조각을 렌더링하는 앱에 대한 딥 링크를 허용합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3416906?quality=12&learn=on)
 
@@ -37,7 +37,7 @@ AEM Headless 애플리케이션은 통합 작성 미리보기를 지원합니다
 
 ![콘텐츠 조각 모델 미리 보기 URL](./assets/preview/cf-model-preview-url.png)
 
-1. 관리자로 AEM Author 서비스에 로그인합니다
+1. 관리자로 AEM 작성자 서비스에 로그인합니다
 1. __도구 > 일반 > 콘텐츠 조각 모델__(으)로 이동
 1. __콘텐츠 조각 모델__&#x200B;을(를) 선택하고 맨 위의 작업 표시줄에서 __속성__&#x200B;을(를) 선택합니다.
 1. [URL 표현식](#url-expressions)을(를) 사용하여 콘텐츠 조각 모델의 미리 보기 URL을 입력하십시오.

@@ -2,7 +2,7 @@
 title: 핵심 구성 요소 확장 | AEM SPA 편집기 및 반응 시작하기
 description: AEM SPA 편집기에서 사용할 기존 핵심 구성 요소에 대한 JSON 모델을 확장하는 방법을 알아봅니다. 기존 구성 요소에 속성 및 콘텐츠를 추가하는 방법을 이해하는 것은 AEM SPA Editor 구현의 기능을 확장하는 강력한 기술입니다. Sling 리소스 병합의 Sling 모델 및 기능을 확장하기 위해 전달 패턴을 사용하는 방법에 대해 알아봅니다.
 feature: SPA Editor, Core Components
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 jira: KT-5879
 thumbnail: 5879-spa-react.jpg
 topic: SPA
@@ -11,7 +11,7 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 44433595-08bc-4a82-9232-49d46c31b07b
 duration: 316
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1058'
 ht-degree: 0%
@@ -36,7 +36,7 @@ AEM SPA 편집기에서 사용할 기존 핵심 구성 요소를 확장하는 �
 
 ## 사전 요구 사항
 
-[로컬 개발 환경](overview.md#local-dev-environment)을 설정하는 데 필요한 도구 및 지침을 검토하십시오. 이 시점에서 자습서에서는 사용자가 AEM SPA Editor 기능을 확실히 이해하고 있다고 가정합니다.
+[로컬 개발 환경](overview.md#local-dev-environment)을 설정하는 데 필요한 도구 및 지침을 검토하십시오. 이 시점에서 자습서에서는 사용자가 AEM SPA 편집기 기능을 잘 이해하고 있다고 가정합니다.
 
 ## Sling 리소스 슈퍼 유형을 통한 상속 {#sling-resource-super-type}
 
@@ -60,7 +60,7 @@ AEM SPA 편집기에서 사용할 기존 핵심 구성 요소를 확장하는 �
 
 ## cq:editConfig {#cq-edit-config}
 
-`_cq_editConfig.xml` 파일은 AEM 제작 UI의 드래그 앤 드롭 동작을 지시합니다. 이미지 구성 요소를 확장할 때 리소스 유형이 구성 요소 자체와 일치해야 합니다.
+`_cq_editConfig.xml` 파일은 AEM 작성 UI에서 끌어서 놓기 동작을 지시합니다. 이미지 구성 요소를 확장할 때 리소스 유형이 구성 요소 자체와 일치해야 합니다.
 
 1. `ui.apps` 모듈에서 `banner` 아래에 이름이 `_cq_editConfig.xml`인 다른 파일을 만듭니다.
 1. `_cq_editConfig.xml`을(를) 다음 XML로 채우기:
@@ -313,7 +313,7 @@ SPA 편집기에서 배너 구성 요소를 사용하려면 `wknd-spa-react/comp
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-1. `Banner` 구성 요소를 **허용된 구성 요소**(으)로 추가하도록 SPA 템플릿의 정책을 업데이트합니다.
+1. SPA 템플릿의 정책을 업데이트하여 `Banner` 구성 요소를 **허용된 구성 요소**(으)로 추가합니다.
 
 1. SPA 페이지로 이동하고 SPA 페이지 중 하나에 `Banner` 구성 요소를 추가합니다.
 

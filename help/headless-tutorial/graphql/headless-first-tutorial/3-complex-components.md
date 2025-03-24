@@ -1,7 +1,7 @@
 ---
 title: 복잡한 이미지 목록 구성 요소 빌드 - AEM Headless 첫 번째 자습서
 description: 콘텐츠 조각, 콘텐츠 참조 및 이미지를 사용하여 작업하는 방법을 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Development
 role: Developer
@@ -12,7 +12,7 @@ jira: KT-13270
 thumbnail: KT-13270.jpeg
 exl-id: ad06b0f3-afa7-4661-aa66-0674d2e6bb43
 duration: 732
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '594'
 ht-degree: 1%
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 콘텐츠 조각, 중첩된 콘텐츠 조각 참조 및 참조된 이미지 에셋을 렌더링하는 복잡한 이미지 목록 구성 요소를 만드는 방법을 살펴보는 이 튜토리얼 장을 시작합니다. 범용 편집기를 사용하여 React 앱을 편집할 수 있도록 만들어 한 단계 더 진행하겠습니다.
 
-AEM(Adobe Experience Manager)의 컨텐츠 조각은 컨텐츠 관리에 대한 구조화된 접근 방식을 제공합니다. 콘텐츠 조각을 사용하여 이미지 목록 구성 요소를 채우고 중첩된 참조를 처리하며 참조된 이미지 에셋을 표시합니다.
+Adobe Experience Manager(AEM)의 컨텐츠 조각은 컨텐츠 관리에 대한 구조화된 접근 방식을 제공합니다. 콘텐츠 조각을 사용하여 이미지 목록 구성 요소를 채우고 중첩된 참조를 처리하며 참조된 이미지 에셋을 표시합니다.
 
 이 자습서에서는 이미지 목록 구성 요소를 빌드하고, 중첩된 참조를 처리하고, 참조된 이미지 에셋을 렌더링하고, 유니버설 편집기를 통합하는 과정을 안내합니다. 범용 편집기를 사용하여 종속성을 설정하고, 구성 요소 구조를 디자인하고, 콘텐츠 조각을 검색 및 구문 분석하고, 앱을 편집할 수 있도록 설정하는 방법에 대해 알아봅니다.
 
@@ -422,4 +422,4 @@ export default Home;
 
 ## 축하합니다!
 
-AEM Headless API에서 완전히 제공되며 범용 편집기로 편집할 수 있는 AEM Headless 경험을 만들었습니다.
+AEM Headless API로 완전히 제공되며 범용 편집기로 편집할 수 있는 AEM Headless 경험을 만들었습니다.

@@ -1,7 +1,7 @@
 ---
 title: oak-run.jar를 사용하여 인덱스 관리
 description: oak-run.jar의 index 명령은 인덱스 통계 수집, 인덱스 일관성 검사 실행 및 인덱스 자체 리인덱싱 등 AEM에서 Oak 인덱스를 관리하는 여러 기능을 통합합니다.
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 feature: Search
 doc-type: Technical Video
 topic: Performance
@@ -9,7 +9,7 @@ role: Developer
 level: Experienced
 exl-id: be49718e-f1f5-4ab2-9c9d-6430a52bb439
 duration: 726
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 0%
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/21475?quality=12&learn=on)
 
-* 사용된 [[!DNL oak-run.jar]](https://repository.apache.org/service/local/artifact/maven/redirect?r=releases&amp;g=org.apache.jackrabbit&amp;a=oak-run&amp;v=1.8.0) 버전은 AEM 인스턴스에 사용된 Oak 버전과 일치해야 합니다.
+* 사용된 [[!DNL oak-run.jar]](https://repository.apache.org/service/local/artifact/maven/redirect?r=releases&amp;g=org.apache.jackrabbit&amp;a=oak-run&amp;v=1.8.0)의 버전은 AEM 인스턴스에 사용된 Oak 버전과 일치해야 합니다.
 * [!DNL oak-run.jar]을(를) 사용하여 인덱스를 관리하면 다양한 플래그가 있는 **[!DNL index]** 명령을 사용하여 다양한 작업을 지원합니다.
 
    * `java -jar oak-run*.jar index ...`
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 * [!DNL oak-run.jar]을(를) 사용하는 [!DNL TarMK]의 온라인 인덱싱이 `oak:queryIndexDefinition` 노드에서 `reindex=true`을(를) 설정하는 것보다 빠릅니다. 이렇게 성능이 향상되더라도 [!DNL oak-run.jar]을(를) 사용하는 온라인 인덱싱에는 인덱싱을 수행하기 위한 유지 관리 기간이 필요합니다.
 
-* [!DNL oak-run.jar]을(를) 사용하는 [!DNL TarMK]의 온라인 인덱싱은 AEM의 인스턴스 유지 관리 창 외부의 AEM 인스턴스에 대해 **실행하지**&#x200B;해야 합니다.
+* [!DNL oak-run.jar]을(를) 사용하는 [!DNL TarMK]의 온라인 인덱싱은 AEM의 인스턴스 유지 관리 창 외부의 AEM 인스턴스에 대해 **실행할 수 없습니다**.
 
 ## oak-run.jar을 사용한 TarMK 오프라인 색인화
 
@@ -65,12 +65,12 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/21480?quality=12&learn=on)
 
-* [!DNL oak-run.jar]을(를) 사용하여 [!DNL TarMK]에 대한 대역 외 인덱싱이 사용 중인 AEM 인스턴스에 미치는 영향을 최소화합니다.
+* [!DNL oak-run.jar]을(를) 사용하여 [!DNL TarMK]에서 대역 외 인덱싱을 수행하면 사용 중인 AEM 인스턴스에 대한 인덱싱의 영향이 최소화됩니다.
 * 대역 외 색인화는 다시 색인화하는 시간이 사용 가능한 유지 관리 기간을 초과하는 AEM 설치에 권장되는 색인화 방법입니다.
 
 ## oak-run.jar을 사용한 MongoMK 온라인 색인화
 
-* [!DNL MongoMK] 및 [!DNL RDBMK]에 [!DNL oak-run.jar]이(가) 있는 온라인 인덱스는 [!DNL MongoMK](및 [!DNL RDBMK]) AEM 설치에 대한 리인덱싱/인덱싱의 권장 방법입니다. **다른 메서드는 [!DNL MongoMK] 또는 [!DNL RDBMK]에 사용할 수 없습니다.**
+* [!DNL MongoMK] 및 [!DNL RDBMK]에 [!DNL oak-run.jar]이(가) 있는 온라인 인덱스는 [!DNL MongoMK]&#x200B;(및 [!DNL RDBMK]) AEM 설치에 대한 리인덱싱/인덱싱의 권장 방법입니다. **다른 메서드는 [!DNL MongoMK] 또는 [!DNL RDBMK]에 사용할 수 없습니다.**
 * 이 인덱싱은 클러스터의 단일 AEM 인스턴스에 대해서만 실행해야 합니다.
 * 저장소 순회가 단일 [!DNL MongoDB] 노드에서만 수행되므로 [!DNL MongoMK]의 온라인 인덱싱은 실행 중인 AEM 클러스터에 대해 실행해도 안전합니다. 다른 노드에서는 성능에 큰 영향을 주지 않고 요청을 계속 제공할 수 있습니다.
 

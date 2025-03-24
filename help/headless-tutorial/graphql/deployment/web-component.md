@@ -1,7 +1,7 @@
 ---
 title: AEM Headless 웹 구성 요소 배포
 description: 웹 구성 요소/순수 JS 기반 AEM Headless 배포에 대한 배포 고려 사항에 대해 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: GraphQL API
 topic: Headless, Content Management
 role: Developer, Architect
@@ -10,7 +10,7 @@ jira: KT-10797
 thumbnail: kt-10797.jpg
 exl-id: 9d4aab4c-82af-4917-8c1b-3935f19691e6
 duration: 31
-source-git-commit: 089bcf71f03bdbb6d21337cc23452afb33ce8098
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 2%
@@ -26,7 +26,7 @@ AEM Headless [웹 구성 요소](https://developer.mozilla.org/en-US/docs/Web/We
 
 웹 구성 요소/JS 배포를 위해서는 다음 배포 구성이 적용되어야 합니다.
 
-| Web Component/JS 앱이 AEM에 → | AEM Author | AEM 게시 | AEM 미리 보기 |
+| Web Component/JS 앱이 AEM에 → | AEM Author | AEM 게시 | AEM 미리보기 |
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
 | [Dispatcher 필터](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | [CORS(원본 간 리소스 공유)](./configurations/cors.md) | ✔ | ✔ | ✔ |
@@ -34,7 +34,7 @@ AEM Headless [웹 구성 요소](https://developer.mozilla.org/en-US/docs/Web/We
 
 ## 예제 웹 구성 요소
 
-Adobe은 웹 구성 요소의 예를 제공합니다.
+Adobe은 예제 웹 구성 요소를 제공합니다.
 
 <div class="columns is-multiline">
     <!-- Web Component -->

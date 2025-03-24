@@ -1,7 +1,7 @@
 ---
 title: AEM으로 OKTA 구성
 description: OKTA를 사용하여 SSO(Single Sign-On)를 사용하기 위한 다양한 구성 설정을 이해합니다.
-version: 6.5
+version: Experience Manager 6.5
 topic: Integrations, Security, Administration
 feature: Integrations
 role: Admin
@@ -11,7 +11,7 @@ last-substantial-update: 2023-03-01T00:00:00Z
 doc-type: Tutorial
 exl-id: 460e9bfa-1b15-41b9-b8b7-58b2b1252576
 duration: 157
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '753'
 ht-degree: 0%
@@ -41,7 +41,7 @@ SAML 어설션은 암호화되므로 OKTA와 AEM 간에 보안 통신을 허용�
 아직 초기화되지 않은 경우 [트러스트 스토어를 초기화합니다](http://localhost:4502/libs/granite/security/content/truststore.html).
 Trust Store 암호를 기억하십시오. 이 암호는 나중에 이 프로세스에서 사용해야 합니다.
 
-* [글로벌 신뢰 저장소](http://localhost:4502/libs/granite/security/content/truststore.html)(으)로 이동합니다.
+* [글로벌 신뢰 저장소](http://localhost:4502/libs/granite/security/content/truststore.html)&#x200B;(으)로 이동합니다.
 * &quot;CER 파일에서 인증서 추가&quot;를 클릭합니다. OKTA에서 제공한 IdP 인증서를 추가하고 제출 을 클릭합니다.
 
   >[!NOTE]
@@ -56,8 +56,8 @@ Trust Store 암호를 기억하십시오. 이 암호는 나중에 이 프로세�
 
 ### SAML 인증 처리기 구성
 
-[configMgr](http://localhost:4502/system/console/configMgr)(으)로 이동합니다.
-&quot;Granite SAML 2.0 Authentication Handler Adobe&quot;를 검색하여 엽니다.
+[configMgr](http://localhost:4502/system/console/configMgr)&#x200B;(으)로 이동합니다.
+&quot;Adobe Granite SAML 2.0 Authentication Handler&quot;를 검색하여 엽니다.
 아래에 지정된 대로 다음 속성을 제공합니다
 다음은 지정해야 하는 주요 속성입니다.
 
@@ -71,7 +71,7 @@ Trust Store 암호를 기억하십시오. 이 암호는 나중에 이 프로세�
 * **암호화 사용**:false
 * **CRX 사용자 자동 만들기**:true
 * **그룹에 추가**:true
-* **기본 그룹**:oktausers(사용자가 추가되는 그룹입니다. AEM 내의 기존 그룹을 제공할 수 있습니다.)
+* **기본 그룹**:oktausers(사용자가 추가되는 그룹입니다. AEM 내에서 기존 그룹을 제공할 수 있습니다.)
 * **NamedIDPolicy**: 요청한 제목을 나타내는 데 사용할 이름 식별자의 제약 조건을 지정합니다. 강조 표시된 다음 문자열 **urn:oasis:names:tc:SAML:2.0:nameidformat:emailAddress**&#x200B;을(를) 복사하여 붙여 넣으십시오
 * **동기화된 특성** - AEM 프로필의 SAML 어설션에 저장되는 특성입니다.
 
@@ -79,7 +79,7 @@ Trust Store 암호를 기억하십시오. 이 암호는 나중에 이 프로세�
 
 ### Apache Sling Referrer 필터 구성
 
-[configMgr](http://localhost:4502/system/console/configMgr)(으)로 이동합니다.
+[configMgr](http://localhost:4502/system/console/configMgr)&#x200B;(으)로 이동합니다.
 &quot;Apache Sling Referrer Filter&quot;를 검색하여 엽니다. 아래에 지정된 대로 다음 속성을 설정합니다.
 
 * **Allow Empty**: false
@@ -97,7 +97,7 @@ AEM에서 OKTA 통합을 설정할 때 AEM의 SAML 인증 핸들러에 대한 DE
 
 AEM에서 OKTA 통합을 설정할 때 AEM의 SAML 인증 핸들러에 대한 DEBUG 로그를 검토하는 것이 좋습니다. 로그 수준을 DEBUG로 설정하려면 AEM OSGi 웹 콘솔을 통해 새 Sling 로거 구성을 만드십시오.
 **로그 소음을 줄이려면 단계 및 프로덕션에서 이 로거를 제거하거나 사용하지 않도록 설정하십시오.**
-* [configMgr](http://localhost:4502/system/console/configMgr)(으)로 이동
+* [configMgr](http://localhost:4502/system/console/configMgr)&#x200B;(으)로 이동
 
 * &quot;Apache Sling Logging Logger 구성&quot; 검색 및 열기
 * 다음 구성으로 로거를 만듭니다.

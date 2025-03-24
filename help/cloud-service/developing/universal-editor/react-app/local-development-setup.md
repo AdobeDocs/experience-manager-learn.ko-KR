@@ -1,7 +1,7 @@
 ---
 title: 로컬 개발 설정
 description: 샘플 React 앱의 콘텐츠를 편집할 수 있도록 범용 편집기에 대한 로컬 개발 환경을 설정하는 방법에 대해 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Developer Tools, Headless
 topic: Development, Content Management
 role: Architect, Developer
@@ -12,7 +12,7 @@ last-substantial-update: 2024-04-19T00:00:00Z
 jira: KT-15359
 thumbnail: KT-15359.png
 exl-id: 47bef697-5253-493a-b9f9-b26c27d2db56
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '787'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # 로컬 개발 설정
 
-AEM 범용 편집기를 사용하여 React 앱의 콘텐츠를 편집하는 로컬 개발 환경을 설정하는 방법에 대해 알아봅니다.
+AEM 유니버설 편집기를 사용하여 React 앱의 콘텐츠를 편집하도록 로컬 개발 환경을 설정하는 방법에 대해 알아봅니다.
 
 ## 사전 요구 사항
 
@@ -33,7 +33,7 @@ AEM 범용 편집기를 사용하여 React 앱의 콘텐츠를 편집하는 로�
    - [Git](https://git-scm.com/downloads)
    - [Visual Studio Code](https://code.visualstudio.com/)와 같은 IDE 또는 코드 편집기
 - 다음을 다운로드하여 설치합니다.
-   - [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime#download-the-aem-as-a-cloud-service-sdk): 여기에는 개발 목적으로 AEM Author 및 Publish을 로컬로 실행하는 데 사용되는 Quickstart Jar가 포함되어 있습니다.
+   - [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime#download-the-aem-as-a-cloud-service-sdk): 여기에는 개발 목적으로 로컬에서 AEM 작성자 및 게시를 실행하는 데 사용되는 Quickstart Jar가 포함되어 있습니다.
    - [유니버설 편집기 서비스](https://experienceleague.adobe.com/en/docs/experience-cloud/software-distribution/home): 유니버설 편집기 서비스의 로컬 복사본으로, 기능의 하위 집합이 있으며 소프트웨어 배포 포털에서 다운로드할 수 있습니다.
    - [local-ssl-proxy](https://www.npmjs.com/package/local-ssl-proxy#local-ssl-proxy): 로컬 개발을 위해 자체 서명된 인증서를 사용하는 간단한 로컬 SSL HTTP 프록시입니다. AEM Universal Editor를 편집기에서 로드하려면 React 앱의 HTTPS URL이 필요합니다.
 
@@ -43,10 +43,10 @@ AEM 범용 편집기를 사용하여 React 앱의 콘텐츠를 편집하는 로�
 
 ### AEM SDK
 
-WKND Teams React 앱의 콘텐츠를 제공하려면 로컬 AEM SDK에 다음 패키지를 설치하십시오.
+WKND Teams React 앱에 대한 콘텐츠를 제공하려면 로컬 AEM SDK에 다음 패키지를 설치하십시오.
 
 - [WKND Teams - 콘텐츠 패키지](./assets/basic-tutorial-solution.content.zip): 콘텐츠 조각 모델, 콘텐츠 조각 및 지속 GraphQL 쿼리가 포함되어 있습니다.
-- [WKND Teams - 구성 패키지](./assets/basic-tutorial-solution.ui.config.zip): CORS(원본 간 리소스 공유) 및 토큰 인증 처리기 구성을 포함합니다. CORS는 비 AEM 웹 속성을 사용하여 AEM의 GraphQL API에 대한 브라우저 기반 클라이언트측 호출을 수행하고 토큰 인증 핸들러를 사용하여 AEM에 대한 각 요청을 인증합니다.
+- [WKND Teams - 구성 패키지](./assets/basic-tutorial-solution.ui.config.zip): CORS(원본 간 리소스 공유) 및 토큰 인증 처리기 구성을 포함합니다. CORS는 AEM이 아닌 웹 속성을 사용하여 AEM의 GraphQL API에 대한 브라우저 기반 클라이언트측 호출을 수행하고 토큰 인증 핸들러를 사용하여 AEM에 대한 각 요청을 인증합니다.
 
   ![WKND 팀 - 패키지](./assets/wknd-teams-packages.png)
 
@@ -119,9 +119,9 @@ Universal Editor Service listening on port 8000 as HTTP Server
 
 ### 로컬 SSL HTTP 프록시
 
-AEM Universal Editor를 사용하려면 HTTPS를 통해 React 앱이 제공되어야 합니다. 로컬 개발을 위해 자체 서명된 인증서를 사용하는 로컬 SSL HTTP 프록시를 설정해 보겠습니다.
+AEM 유니버설 편집기를 사용하려면 HTTPS를 통해 React 앱이 제공되어야 합니다. 로컬 개발을 위해 자체 서명된 인증서를 사용하는 로컬 SSL HTTP 프록시를 설정해 보겠습니다.
 
-아래 단계에 따라 로컬 SSL HTTP 프록시를 설정하고 HTTPS를 통해 AEM SDK 및 Universal Editor 서비스를 제공합니다.
+로컬 SSL HTTP 프록시를 설정하고 HTTPS를 통해 AEM SDK 및 유니버설 편집기 서비스를 제공하려면 아래 단계를 따르십시오.
 
 1. `local-ssl-proxy` 패키지를 전체적으로 설치합니다.
 
@@ -156,7 +156,7 @@ WKND Teams React 앱에 대해 HTTPS를 활성화하려면 아래 단계를 따�
    }
    ```
 
-1. HTTPS 프로토콜 및 AEM SDK의 로컬 SSL HTTP 프록시 포트를 사용하도록 `.env.development` 파일의 `REACT_APP_HOST_URI`을(를) 업데이트합니다.
+1. AEM SDK의 HTTPS 프로토콜 및 로컬 SSL HTTP 프록시 포트를 사용하도록 `.env.development` 파일에서 `REACT_APP_HOST_URI`을(를) 업데이트합니다.
 
    ```bash
    REACT_APP_HOST_URI=https://localhost:8443

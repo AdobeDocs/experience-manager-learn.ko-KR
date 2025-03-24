@@ -1,8 +1,8 @@
 ---
-title: AEM Assets의 Asset compute 확장성 문제 해결
-description: 다음은 AEM Assets용 사용자 지정 Asset compute 작업자를 개발 및 배포할 때 발생할 수 있는 일반적인 문제와 오류 및 해결 방법에 대한 색인입니다.
+title: AEM Assets의 Asset Compute 확장성 문제 해결
+description: 다음은 AEM Assets용 사용자 지정 Asset Compute 작업자를 개발 및 배포할 때 발생할 수 있는 일반적인 문제와 오류 및 해결 방법에 대한 색인입니다.
 feature: Asset Compute Microservices
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: Tutorial
 jira: KT-5802
 thumbnail: KT-5802.jpg
@@ -11,16 +11,16 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: d851d315-ed0e-46b8-bcd8-417e1e58c0c4
 duration: 260
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1218'
 ht-degree: 0%
 
 ---
 
-# asset compute 확장성 문제 해결
+# Asset Compute 확장성 문제 해결
 
-다음은 AEM Assets용 사용자 지정 Asset compute 작업자를 개발 및 배포할 때 발생할 수 있는 일반적인 문제와 오류 및 해결 방법에 대한 색인입니다.
+다음은 AEM Assets용 사용자 지정 Asset Compute 작업자를 개발 및 배포할 때 발생할 수 있는 일반적인 문제와 오류 및 해결 방법에 대한 색인입니다.
 
 ## 개발{#develop}
 
@@ -35,14 +35,14 @@ ht-degree: 0%
 
 ## 개발 도구{#development-tool}
 
-### asset compute 프로젝트에 Console.json 파일 누락{#missing-console-json}
+### Asset Compute 프로젝트에서 Console.json 파일 누락{#missing-console-json}
 
 + __오류:__ 오류: 비동기 setupAssetCompute(`.../node_modules/@adobe/asset-compute-devtool/src/assetComputeDevTool.js:XX:YY`)에 유효성 검사(`.../node_modules/@adobe/asset-compute-client/lib/integrationConfiguration.js:XX:YY`)에 필요한 파일이 없습니다.
-+ __원인:__ `console.json` 파일이 Asset compute 프로젝트의 루트에 없습니다.
++ __원인:__ Asset Compute 프로젝트의 루트에 `console.json` 파일이 없습니다.
 + __해결 방법:__ Adobe I/O 프로젝트에서 새 `console.json` 다운로드
-   1. console.adobe.io에서 Asset compute 프로젝트가 사용하도록 구성된 Adobe I/O 프로젝트를 엽니다
+   1. console.adobe.io에서 Asset Compute 프로젝트가 사용하도록 구성된 Adobe I/O 프로젝트를 엽니다
    1. 오른쪽 상단에서 __다운로드__ 단추를 탭합니다.
-   1. 파일 이름 `console.json`을(를) 사용하여 다운로드한 파일을 Asset compute 프로젝트의 루트에 저장합니다
+   1. 파일 이름 `console.json`을(를) 사용하여 다운로드한 파일을 Asset Compute 프로젝트의 루트에 저장합니다.
 
 ### manifest.yml의 잘못된 YAML 들여쓰기{#incorrect-yaml-indentation}
 
@@ -64,7 +64,7 @@ ht-degree: 0%
 
 ### Source 파일 드롭다운이 잘못됨{#source-files-dropdown-incorrect}
 
-Asset compute 개발 도구는 오래된 데이터를 가져오는 상태로 들어갈 수 있으며 잘못된 항목을 표시하는 __Source 파일__ 드롭다운에서 가장 잘 보입니다.
+Asset Compute 개발 도구는 오래된 데이터를 가져오는 상태로 들어갈 수 있으며 잘못된 항목을 표시하는 __Source 파일__ 드롭다운에서 가장 잘 보입니다.
 
 + __오류:__ Source 파일 드롭다운에 잘못된 항목이 표시됩니다.
 + __원인:__ 오래된 캐시된 브라우저 상태로 인해
@@ -72,9 +72,9 @@ Asset compute 개발 도구는 오래된 데이터를 가져오는 상태로 들
 
 ### 누락되었거나 잘못된 devToolToken 쿼리 매개 변수{#missing-or-invalid-devtooltoken-query-parameter}
 
-+ __오류:__ Asset compute 개발 도구의 &quot;승인되지 않은&quot; 알림
++ __오류:__ Asset Compute 개발 도구의 &quot;승인되지 않은&quot; 알림
 + __원인:__ `devToolToken`이(가) 없거나 잘못되었습니다.
-+ __해결 방법:__ Asset compute 개발 도구 브라우저 창을 닫고 `aio app run` 명령을 통해 시작된 실행 중인 개발 도구 프로세스를 종료한 다음 `aio app run`을(를) 사용하여 개발 도구를 다시 시작합니다.
++ __해결 방법:__ Asset Compute 개발 도구 브라우저 창을 닫고 `aio app run` 명령을 통해 시작된 실행 중인 개발 도구 프로세스를 종료한 다음 `aio app run`을(를) 사용하여 개발 도구를 다시 시작합니다.
 
 ### 소스 파일을 제거할 수 없음{#unable-to-remove-source-files}
 
@@ -98,7 +98,7 @@ Asset compute 개발 도구는 오래된 데이터를 가져오는 상태로 들
 
 + __오류:__ 오류: 렌디션 &#39;rendition.xxx&#39;가 예상과 다릅니다.
 + __원인:__ 작업자가 테스트 사례에 제공된 `rendition.<extension>`과(와) 다른 렌디션을 출력했습니다.
-   + 예상 `rendition.<extension>` 파일이 테스트 사례에서 로컬로 생성된 렌디션과 정확히 동일한 방식으로 만들어지지 않은 경우 비트마다 차이가 있을 수 있으므로 테스트가 실패할 수 있습니다. 예를 들어 Asset compute 작업자가 API를 사용하여 대비를 변경하고, Adobe Photoshop CC의 대비를 조정하여 예상 결과를 만드는 경우 파일이 동일하게 표시될 수 있지만 비트의 사소한 변형이 다를 수 있습니다.
+   + 예상 `rendition.<extension>` 파일이 테스트 사례에서 로컬로 생성된 렌디션과 정확히 동일한 방식으로 만들어지지 않은 경우 비트마다 차이가 있을 수 있으므로 테스트가 실패할 수 있습니다. 예를 들어 Asset Compute 작업자가 API를 사용하여 대비를 변경하고 Adobe Photoshop CC의 대비를 조정하여 예상된 결과를 만드는 경우 파일이 동일하게 표시될 수 있지만 비트의 작은 변형이 다를 수 있습니다.
 + __해결 방법:__ `/build/test-worker/<worker-name>/<test-run-timestamp>/<test-case>/rendition.<extension>`(으)로 이동하여 테스트의 렌디션 출력을 검토하고 테스트 사례의 예상 렌디션 파일과 비교합니다. 정확한 예상 에셋을 만들려면 다음 중 하나를 수행하십시오.
    + 개발 도구를 사용하여 렌디션을 생성하고 올바른 렌디션인지 확인한 다음 이를 예상 렌디션 파일로 사용합니다
    + 또는 `/build/test-worker/<worker-name>/<test-run-timestamp>/<test-case>/rendition.<extension>`에서 테스트 생성 파일의 유효성을 검사하고 올바른 파일의 유효성을 검사한 다음 필요한 렌디션 파일로 사용하십시오
@@ -113,7 +113,7 @@ Asset compute 개발 도구는 오래된 데이터를 가져오는 상태로 들
 
 ### 중단점이 일시 중단되지 않음{#breakpoints-no-pausing}
 
-+ __오류__: 디버그 가능한 개발 도구에서 Asset compute 작업자를 실행할 때 VS 코드가 중단점에서 일시 중지되지 않습니다.
++ __오류__: 디버그 가능한 개발 도구에서 Asset Compute 작업자를 실행할 때 VS 코드가 중단점에서 일시 중지되지 않습니다.
 
 #### VS 코드 디버거가 연결되지 않음{#vs-code-debugger-not-attached}
 
@@ -123,11 +123,11 @@ Asset compute 개발 도구는 오래된 데이터를 가져오는 상태로 들
 #### 작업자 실행이 시작된 후 연결된 VS 코드 디버거{#vs-code-debugger-attached-after-worker-execution-began}
 
 + __원인:__ 개발 도구에서 __실행__&#x200B;을 탭하기 전에 VS 코드 디버거가 연결되지 않았습니다.
-+ __해결 방법:__ VS 코드의 디버그 콘솔(보기 > 디버그 콘솔)을 검토하여 디버거가 연결되었는지 확인한 다음 개발 도구에서 Asset compute 작업자를 다시 실행하십시오.
++ __해결 방법:__ VS 코드의 디버그 콘솔(보기 > 디버그 콘솔)을 검토하여 디버거가 연결되었는지 확인한 다음 개발 도구에서 Asset Compute 작업자를 다시 실행하십시오.
 
 ### 디버깅하는 동안 작업자 시간 초과{#worker-times-out-while-debugging}
 
-+ __오류__: Debug Console 보고서 &quot;작업이 -XXX밀리초 내에 시간 초과됩니다&quot; 또는 [Asset compute 개발 도구의](./develop/development-tool.md) 렌디션 미리 보기가 무기한 회전되거나
++ __오류__: Debug Console 보고서 &quot;작업이 -XXX밀리초 내에 시간 초과됩니다&quot; 또는 [Asset Compute 개발 도구의](./develop/development-tool.md) 렌디션 미리 보기가 무기한 회전되거나
 + __원인__: 디버깅하는 동안 [manifest.yml](./develop/manifest.md)에 정의된 작업자 시간 제한이 초과되었습니다.
 + __해결 방법__: [manifest.yml](./develop/manifest.md)에서 작업자 시간 제한을 일시적으로 늘리거나 디버깅 활동을 가속화합니다.
 
@@ -145,7 +145,7 @@ Asset compute 개발 도구는 오래된 데이터를 가져오는 상태로 들
 
 ## 배포{#deploy}
 
-### AEM의 에셋에서 사용자 정의 렌디션 누락{#custom-rendition-missing-from-asset}
+### AEM의 에셋에서 사용자 정의 렌디션이 누락됨{#custom-rendition-missing-from-asset}
 
 + __오류:__ 새 자산 및 다시 처리된 자산이 처리되었지만 사용자 지정 렌디션이 없습니다
 

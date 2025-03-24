@@ -1,7 +1,7 @@
 ---
 title: Dispatcher 구성 파일에 대한 설명
 description: 구성 파일, 이름 지정 규칙 등을 이해할 수 있습니다.
-version: 6.5
+version: Experience Manager 6.5
 topic: Administration
 feature: Dispatcher
 role: Admin
@@ -10,7 +10,7 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: ec8e2804-1fd6-4e95-af6d-07d840069c8b
 duration: 379
-source-git-commit: ef9c70e7895176e3cd535141a5de3c49886e666e
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1694'
 ht-degree: 0%
@@ -42,14 +42,14 @@ Apache 웹 서버는 `Include` 또는 `IncludeOptional` 문으로 타깃팅할 �
 
 | 파일 | 파일 대상 | 설명 |
 | --- | --- | --- |
-| 파일 이름`.any` | `/etc/httpd/conf.dispatcher.d/` | AEM Dispatcher Apache 모듈은 `*.any`개 파일에서 해당 설정의 출처를 지정합니다. 기본 상위 포함 파일은 `conf.dispatcher.d/dispatcher.any`입니다. |
+| 파일 이름`.any` | `/etc/httpd/conf.dispatcher.d/` | AEM Dispatcher Apache 모듈은 `*.any`개 파일에서 해당 설정을 소스화합니다. 기본 상위 포함 파일은 `conf.dispatcher.d/dispatcher.any`입니다. |
 | 파일 이름`_farm.any` | 준비 단계: `/etc/httpd/conf.dispatcher.d/available_farms/`<br>활성: `/etc/httpd/conf.dispatcher.d/enabled_farms/`<br><br><b>참고:</b> 이러한 팜 파일은 `enabled_farms` 폴더에 복사되지 않지만 `symlinks`을(를) 사용하여 `available_farms/*_farm.any` 파일의 상대 경로를 지정하십시오. <br/>`*_farm.any` 파일이 `conf.dispatcher.d/dispatcher.any` 파일 내에 포함되어 있습니다. 이러한 상위 팜 파일은 각 렌더링 또는 웹 사이트 유형에 대한 모듈 동작을 제어하기 위해 존재합니다. 파일이 `available_farms` 디렉터리에 만들어지고 `enabled_farms` 디렉터리에 `symlink`(으)로 활성화되었습니다.  <br/>`dispatcher.any` 파일의 이름별로 자동 포함됩니다.<br/><b>기준선</b> 팜 파일이 먼저 로드되었는지 확인하기 위해 `000_`(으)로 시작합니다.<br><b>사용자 지정</b> 팜 파일은 올바른 포함 동작을 위해 `100_`에서 번호 구성표를 시작한 후에 로드해야 합니다. |
 | 파일 이름`_filters.any` | `/etc/httpd/conf.dispatcher.d/filters/` | `*_filters.any`개의 파일이 `conf.dispatcher.d/enabled_farms/*_farm.any`개 파일 내에 포함되어 있습니다. 각 팜에는 필터링해야 하는 트래픽을 변경하고 렌더러에게 전달되지 않는 일련의 규칙이 있습니다. |
 | 파일 이름`_vhosts.any` | `/etc/httpd/conf.dispatcher.d/vhosts/` | `*_vhosts.any`개의 파일이 `conf.dispatcher.d/enabled_farms/*_farm.any`개 파일 내에 포함되어 있습니다. 이러한 파일은 요청을 처리하는 데 사용할 렌더러를 결정하기 위해 blob 일치에 의해 일치되는 호스트 이름 또는 URI 경로 목록입니다 |
 | 파일 이름`_cache.any` | `/etc/httpd/conf.dispatcher.d/cache/` | `*_cache.any`개의 파일이 `conf.dispatcher.d/enabled_farms/*_farm.any`개 파일 내에 포함되어 있습니다. 이러한 파일은 캐시되는 항목과 캐시되지 않는 항목을 지정합니다. |
 | 파일 이름`_invalidate_allowed.any` | `/etc/httpd/conf.dispatcher.d/cache/` | `*_invalidate_allowed.any`개의 파일이 `conf.dispatcher.d/enabled_farms/*_farm.any`개 파일 내에 포함되어 있습니다. 플러시 및 무효화 요청을 전송할 수 있는 IP 주소를 지정합니다. |
 | 파일 이름`_clientheaders.any` | `/etc/httpd/conf.dispatcher.d/clientheaders/` | `*_clientheaders.any`개의 파일이 `conf.dispatcher.d/enabled_farms/*_farm.any`개 파일 내에 포함되어 있습니다. 각 렌더러에 전달할 클라이언트 헤더를 지정합니다. |
-| 파일 이름`_renders.any` | `/etc/httpd/conf.dispatcher.d/renders/` | `*_renders.any`개의 파일이 `conf.dispatcher.d/enabled_farms/*_farm.any`개 파일 내에 포함되어 있습니다. 각 렌더러에 대해 IP, 포트 및 시간 제한 설정을 지정합니다. 적절한 렌더러는 Dispatcher에서 요청을 페치/프록시할 수 있는 AEM 시스템 또는 livecycle server일 수 있습니다. |
+| 파일 이름`_renders.any` | `/etc/httpd/conf.dispatcher.d/renders/` | `*_renders.any`개의 파일이 `conf.dispatcher.d/enabled_farms/*_farm.any`개 파일 내에 포함되어 있습니다. 각 렌더러에 대해 IP, 포트 및 시간 제한 설정을 지정합니다. 적절한 렌더러는 Dispatcher에서 요청을 페치/프록시할 수 있는 livecycle 서버 또는 AEM 시스템일 수 있습니다. |
 
 ## 회피된 문제
 

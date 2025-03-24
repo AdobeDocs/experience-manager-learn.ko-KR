@@ -1,15 +1,15 @@
 ---
 title: 주소 구성 요소를 만드는 중
-description: AEM Formsas a Cloud Service 에서 새 주소 핵심 구성 요소 만들기
+description: AEM Forms as a Cloud Service에서 새 주소 핵심 구성 요소 만들기
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Adaptive Forms
 topic: Development
 jira: KT-15752
 exl-id: be25be52-2914-4820-9356-678a326f8edc
-source-git-commit: b4df652fcda0af5d01077b97aa7fa17cfe2abf4b
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # 프로젝트 배포
 
-AEM Forms as a Cloud Service 인스턴스에 프로젝트를 배포하기 전에 AEM Forms의 로컬 클라우드 준비 인스턴스에 프로젝트를 배포하는 것이 좋습니다.
+AEM Forms as a Cloud Service에 프로젝트를 배포하기 전에 AEM Forms의 로컬 클라우드 준비 인스턴스에 프로젝트를 배포하는 것이 좋습니다.
 
 ## 변경 사항을 AEM 프로젝트와 동기화
 

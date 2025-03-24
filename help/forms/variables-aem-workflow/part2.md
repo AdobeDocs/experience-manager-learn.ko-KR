@@ -1,14 +1,14 @@
 ---
 title: AEM 워크플로우의 변수[Part2]
 description: AEM 워크플로우에서 XML, JSON, ArrayList, Document 유형의 변수 사용
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 feature: Adaptive Forms, Workflow
 role: Developer
 level: Beginner
 exl-id: e7d3e0be-5194-47c2-a668-ce78e727986e
 duration: 354
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # AEM Workflow에 있는 JSON 유형의 변수
 
-이제 AEM Forms 6.5부터 AEM Workflow에서 JSON 유형의 변수를 만들 수 있습니다. AEM Workflow에 JSON 스키마를 기반으로 하는 적응형 Forms을 제출하거나 양식 데이터 모델 호출 작업의 결과를 저장하려는 경우, 일반적으로 JSON 유형의 변수를 만듭니다. 다음 비디오에서는 AEM 워크플로에서 JSON 유형의 변수를 만들고 사용하는 데 필요한 단계를 안내합니다
+이제 AEM Forms 6.5부터 AEM Workflow에 JSON 유형의 변수를 만들 수 있습니다. JSON 스키마를 기반으로 한 적응형 Forms을 AEM Workflow에 제출하거나 양식 데이터 모델 호출 작업의 결과를 저장하려는 경우, 일반적으로 JSON 유형의 변수를 만듭니다. 다음 비디오에서는 AEM 워크플로에서 JSON 유형의 변수를 만들고 사용하는 데 필요한 단계를 안내합니다
 
 **AEM Forms 6.5.0을 사용하는 경우**
 

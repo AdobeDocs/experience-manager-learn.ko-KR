@@ -1,7 +1,7 @@
 ---
 title: AEM GraphQL에 대한 AEM 호스트 관리
 description: AEM Headless 앱에서 AEM 호스트를 구성하는 방법에 대해 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: GraphQL API
 topic: Headless, Content Management
 role: Developer, Architect
@@ -10,7 +10,7 @@ jira: KT-10831
 thumbnail: KT-10831.jpg
 exl-id: a932147c-2245-4488-ba1a-99c58045ee2b
 duration: 496
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1614'
 ht-degree: 0%
@@ -19,10 +19,10 @@ ht-degree: 0%
 
 # AEM 호스트 관리
 
-AEM Headless 애플리케이션을 배포하려면 올바른 AEM 호스트/도메인이 사용되도록 AEM URL이 구성되는 방식에 주의를 기울여야 합니다. 알아야 하는 기본 URL/요청 유형은 다음과 같습니다.
+AEM Headless 애플리케이션을 배포하려면 올바른 AEM 호스트/도메인이 사용되도록 AEM URL을 구성하는 방법에 주의를 기울여야 합니다. 알아야 하는 기본 URL/요청 유형은 다음과 같습니다.
 
 + __[AEM GraphQL API](#aem-graphql-api-requests)__&#x200B;에 대한 HTTP 요청
-+ 콘텐츠 조각에서 참조되고 AEM에서 전달된 이미지 에셋에 대한 __[이미지 URL](#aem-image-urls)__
++ 콘텐츠 조각에서 참조하고 AEM에서 제공한 이미지 에셋에 대한 __[이미지 URL](#aem-image-urls)__
 
 일반적으로 AEM Headless 앱은 GraphQL API 및 이미지 요청 모두에 대해 단일 AEM 서비스와 상호 작용합니다. AEM 서비스는 AEM Headless 앱 배포를 기반으로 다음과 같이 변경됩니다.
 
@@ -32,7 +32,7 @@ AEM Headless 애플리케이션을 배포하려면 올바른 AEM 호스트/도�
 | 작성 미리보기 | 프로덕션 | 미리보기 |
 | 개발 | 개발 | 게시 |
 
-배포 유형 순열을 처리하기 위해 각 앱 배포는 연결할 AEM 서비스를 지정하는 구성을 사용하여 빌드됩니다. 그런 다음 구성된 AEM 서비스의 호스트/도메인을 사용하여 AEM GraphQL API URL 및 이미지 URL을 구성합니다. 빌드 종속 구성 관리에 대한 올바른 접근 방식을 결정하려면 프레임워크에 따라 접근 방식이 다르므로 AEM Headless 앱의 프레임워크(예: React, iOS, Android™ 등) 설명서를 참조하십시오.
+배포 유형 순열을 처리하기 위해 각 앱 배포는 연결할 AEM 서비스를 지정하는 구성을 사용하여 빌드됩니다. 그런 다음 구성된 AEM 서비스의 호스트/도메인을 사용하여 AEM GraphQL API URL 및 이미지 URL을 구성합니다. 빌드 종속 구성 관리에 대한 올바른 접근 방식을 결정하려면 프레임워크에 따라 접근 방식이 다르므로 AEM Headless 앱의 프레임워크(예: React, iOS™ Android 등) 설명서를 참조하십시오.
 
 | 클라이언트 유형 | [단일 페이지 앱(SPA)](../spa.md) | [웹 구성 요소/JS](../web-component.md) | [모바일](../mobile.md) | [서버 간](../server-to-server.md) |
 |------------------------------------------:|:---------------------:|:----------------:|:---------:|:----------------:|
@@ -42,9 +42,9 @@ AEM Headless 애플리케이션을 배포하려면 올바른 AEM 호스트/도�
 
 ## AEM GraphQL API 요청
 
-Headless 앱에서 AEM의 GraphQL API로의 HTTP GET 요청은 위의 [표](#managing-aem-hosts)에 설명된 대로 올바른 AEM 서비스와 상호 작용하도록 구성해야 합니다.
+위의 [표](#managing-aem-hosts)에 설명된 대로 Headless 앱에서 AEM의 GraphQL API로의 HTTP GET 요청은 올바른 AEM 서비스와 상호 작용하도록 구성해야 합니다.
 
-[AEM Headless SDK](../../how-to/aem-headless-sdk.md)(브라우저 기반 JavaScript, 서버 기반 JavaScript 및 Java™에서 사용 가능)를 사용하는 경우 AEM 호스트는 연결할 AEM 서비스로 AEM Headless 클라이언트 개체를 초기화할 수 있습니다.
+[AEM Headless SDK](../../how-to/aem-headless-sdk.md)(브라우저 기반 JavaScript, 서버 기반 JavaScript 및 Java™에서 사용 가능)를 사용하는 경우 AEM 호스트는 연결할 AEM 서비스를 사용하여 AEM Headless 클라이언트 개체를 초기화할 수 있습니다.
 
 사용자 지정 AEM Headless 클라이언트를 개발할 때 AEM 서비스의 호스트가 빌드 매개 변수를 기반으로 매개 변수화가 가능한지 확인하십시오.
 
@@ -54,9 +54,9 @@ Headless 앱에서 AEM의 GraphQL API로의 HTTP GET 요청은 위의 [표](#man
 
 +++ React 예
 
-이 예는 [AEM Headless React 앱](../../example-apps/react-app.md)을 기반으로 대략적으로, 환경 변수를 기반으로 다른 AEM 서비스에 연결하도록 AEM GraphQL API 요청을 구성하는 방법을 보여 줍니다.
+이 예제는 [AEM Headless React 앱](../../example-apps/react-app.md)을 기반으로 하며, 환경 변수를 기반으로 다른 AEM 서비스에 연결하도록 AEM GraphQL API 요청을 구성하는 방법을 보여 줍니다.
 
-React 앱은 [JavaScript용 AEM Headless 클라이언트](../../how-to/aem-headless-sdk.md)를 사용하여 AEM의 GraphQL API와 상호 작용해야 합니다. AEM Headless Client for JavaScript에서 제공하는 AEM Headless 클라이언트는 연결되는 AEM 서비스 호스트로 초기화되어야 합니다.
+React 앱은 [JavaScript용 AEM Headless 클라이언트](../../how-to/aem-headless-sdk.md)를 사용하여 AEM의 GraphQL API와 상호 작용해야 합니다. JavaScript용 AEM Headless 클라이언트에서 제공하는 AEM Headless 클라이언트는 연결되는 AEM 서비스 호스트로 초기화되어야 합니다.
 
 #### React 환경 파일
 
@@ -86,7 +86,7 @@ REACT_APP_AEM_HOST=https://publish-p123-e456.adobeaemcloud.com
 ...
 ```
 
-#### AEM Headless 클라이언트
+#### AEM 헤드리스 클라이언트
 
 [JavaScript용 AEM Headless 클라이언트](../../how-to/aem-headless-sdk.md)에는 AEM의 GraphQL API에 대한 HTTP 요청을 하는 AEM Headless 클라이언트가 포함되어 있습니다. AEM Headless 클라이언트는 활성 `.env` 파일의 값을 사용하여 상호 작용하는 AEM 호스트로 초기화되어야 합니다.
 
@@ -110,7 +110,7 @@ export const aemHeadlessClient = new AEMHeadless({
 });
 ```
 
-#### React useEffect(...) 후크
+#### React useEffect(..) 후크
 
 사용자 지정 React useEffect 후크는 보기를 렌더링하는 React 구성 요소를 대신하여 AEM 호스트로 초기화된 AEM Headless 클라이언트를 호출합니다.
 
@@ -164,7 +164,7 @@ let { data, error } = useAdventureByPath('/content/dam/wknd-shared/en/adventures
 
 +++ iOS™ 예
 
-[예제 AEM Headless iOS™ 앱](../../example-apps/ios-swiftui-app.md)을 기반으로 하는 이 예제는 [빌드별 구성 변수](https://developer.apple.com/documentation/xcode/adding-a-build-configuration-file-to-your-project?changes=l_3)를 기반으로 다른 AEM 호스트에 연결하도록 AEM GraphQL API 요청을 구성하는 방법을 보여 줍니다.
+[예제 AEM Headless iOS™ 앱](../../example-apps/ios-swiftui-app.md)을 기반으로 하는 이 예제는 AEM GraphQL API 요청을 [빌드별 구성 변수](https://developer.apple.com/documentation/xcode/adding-a-build-configuration-file-to-your-project?changes=l_3)를 기반으로 다른 AEM 호스트에 연결하도록 구성하는 방법을 보여 줍니다.
 
 iOS™ 앱을 사용하려면 사용자 지정 AEM Headless 클라이언트가 AEM의 GraphQL API와 상호 작용해야 합니다. AEM 서비스 호스트를 구성할 수 있도록 AEM Headless 클라이언트를 작성해야 합니다.
 
@@ -185,7 +185,7 @@ AEM_HOST = publish-p123-e789.adobeaemcloud.com
 
 #### 사용자 지정 AEM Headless 클라이언트 초기화
 
-[예제 AEM Headless iOS 앱](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/ios-app)은(는) `AEM_SCHEME` 및 `AEM_HOST`에 대한 구성 값으로 초기화된 사용자 지정 AEM Headless 클라이언트를 사용합니다.
+[예제 AEM 헤드리스 iOS 앱](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/ios-app)은(는) `AEM_SCHEME` 및 `AEM_HOST`에 대한 구성 값으로 초기화된 사용자 지정 AEM 헤드리스 클라이언트를 사용합니다.
 
 ```swift
 ...
@@ -195,7 +195,7 @@ let aemHost: String = try Configuration.value(for: "AEM_HOST")      // publish-p
 let aemHeadlessClient = Aem(scheme: aemScheme, host: aemHost);
 ```
 
-사용자 지정 AEM Headless 클라이언트(`api/Aem.swift`)에 구성된 AEM `scheme` 및 `host`(으)로 AEM GraphQL API 요청을 접두사로 사용하는 `makeRequest(..)` 메서드가 포함되어 있습니다.
+사용자 지정 AEM Headless 클라이언트(`api/Aem.swift`)에 구성된 AEM `scheme` 및 `host`(으)로 AEM GraphQL API 요청 앞에 오는 메서드 `makeRequest(..)`이(가) 포함되어 있습니다.
 
 + `api/Aem.swift`
 
@@ -225,12 +225,12 @@ private func makeRequest(persistedQueryName: String, params: [String: String] = 
 
 [예제 AEM Headless Android™ 앱](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/android-app)을 기반으로 하는 이 예제는 빌드별(또는 버전) 구성 변수를 기반으로 다른 AEM 서비스에 연결하도록 AEM GraphQL API 요청을 구성하는 방법을 보여 줍니다.
 
-Android™ 앱(Java™으로 작성된 경우)은 [AEM Headless Client for Java™](https://github.com/adobe/aem-headless-client-java)을 사용하여 AEM의 GraphQL API와 상호 작용해야 합니다. AEM Headless Client for Java™에서 제공하는 AEM Headless 클라이언트는 연결되는 AEM 서비스 호스트로 초기화되어야 합니다.
+Android™ 앱(Java™으로 작성된 경우)은 [AEM Headless Client for Java™](https://github.com/adobe/aem-headless-client-java)을 사용하여 AEM의 GraphQL API와 상호 작용해야 합니다. Java™용 AEM Headless 클라이언트에서 제공하는 AEM Headless 클라이언트는 연결되는 AEM 서비스 호스트로 초기화되어야 합니다.
 
 #### 구성 파일 작성
 
 Android™ 앱은 다양한 용도로 아티팩트를 빌드하는 데 사용되는 &quot;productFlavors&quot;를 정의합니다.
-이 예에서는 두 개의 Android™ 제품 버전을 정의하여 개발(`dev`) 및 프로덕션(`prod`)에 대해 서로 다른 AEM 서비스 호스트(`AEM_HOST`) 값을 제공하는 방법을 보여줍니다.
+이 예는 개발(`dev`) 및 프로덕션(`prod`)에서 사용하는 서로 다른 AEM 서비스 호스트(`AEM_HOST`) 값을 제공하는 두 개의 Android™ 제품 버전을 정의하는 방법을 보여줍니다.
 
 앱의 `build.gradle` 파일에 이름이 `env`인 새 `flavorDimension`이(가) 만들어집니다.
 
@@ -290,7 +290,7 @@ public class AdventuresLoader extends AsyncTaskLoader<AdventureList> {
 
 [위의 표](#managing-aem-hosts)에 설명된 대로 AEM에 대한 Headless 앱의 이미지 요청은 올바른 AEM 서비스와 상호 작용하도록 구성해야 합니다.
 
-Adobe은 AEM GraphQL API의 `_dynamicUrl` 필드를 통해 사용할 수 있는 [최적화된 이미지](../../how-to/images.md)를 사용할 것을 권장합니다. `_dynamicUrl` 필드는 AEM GraphQL API를 쿼리하는 데 사용되는 AEM 서비스 호스트 접두사로 추가할 수 있는 호스트 없는 URL을 반환합니다. GraphQL 응답의 `_dynamicUrl` 필드에 대한 모습은 다음과 같습니다.
+Adobe에서는 AEM GraphQL API의 `_dynamicUrl` 필드를 통해 사용할 수 있는 [최적화된 이미지](../../how-to/images.md)를 사용할 것을 권장합니다. `_dynamicUrl` 필드는 AEM GraphQL API를 쿼리하는 데 사용되는 AEM 서비스 호스트에 접두사가 추가될 수 있는 호스트 없는 URL을 반환합니다. GraphQL 응답의 `_dynamicUrl` 필드에 대한 모습은 다음과 같습니다.
 
 ```json
 {
@@ -381,7 +381,7 @@ REACT_APP_AEM_HOST=https://publish-p123-e456.adobeaemcloud.com
 
 React 구성 요소는 `REACT_APP_AEM_HOST` 환경 변수를 가져오고 이미지 `_dynamicUrl` 값 앞에 추가하여 완전히 해결 가능한 이미지 URL을 제공합니다.
 
-동일한 `REACT_APP_AEM_HOST` 환경 변수는 `useAdventureByPath(..)` 사용자 지정 useEffect 후크에서 AEM의 GraphQL 데이터를 가져오는 데 사용되는 AEM Headless 클라이언트를 초기화하는 데 사용됩니다. 동일한 변수를 사용하여 GraphQL API 요청을 이미지 URL로 구성합니다. React 앱이 두 사용 사례 모두에 대해 동일한 AEM 서비스와 상호 작용하는지 확인하십시오.
+동일한 `REACT_APP_AEM_HOST` 환경 변수를 사용하여 AEM에서 GraphQL 데이터를 가져오는 데 사용되는 `useAdventureByPath(..)` 사용자 지정 useEffect 후크에서 사용되는 AEM Headless 클라이언트를 초기화합니다. 동일한 변수를 사용하여 GraphQL API 요청을 이미지 URL로 구성합니다. React 앱이 두 사용 사례 모두에 대해 동일한 AEM 서비스와 상호 작용하는지 확인하십시오.
 
 + &#39;src/components/AdventureDetail.js&#39;
 
@@ -481,7 +481,7 @@ struct AdventureListItemView: View {
 #### 구성 파일 작성
 
 Android™ 앱은 다양한 용도로 아티팩트를 빌드하는 데 사용되는 &quot;productFlavors&quot;를 정의합니다.
-이 예에서는 두 개의 Android™ 제품 버전을 정의하여 개발(`dev`) 및 프로덕션(`prod`)에 대해 서로 다른 AEM 서비스 호스트(`AEM_HOST`) 값을 제공하는 방법을 보여줍니다.
+이 예는 개발(`dev`) 및 프로덕션(`prod`)에서 사용하는 서로 다른 AEM 서비스 호스트(`AEM_HOST`) 값을 제공하는 두 개의 Android™ 제품 버전을 정의하는 방법을 보여줍니다.
 
 앱의 `build.gradle` 파일에 이름이 `env`인 새 `flavorDimension`이(가) 만들어집니다.
 
@@ -512,7 +512,7 @@ android {
 
 #### AEM 이미지 로드 중
 
-Android™은 `ImageGetter`을(를) 사용하여 AEM에서 이미지 데이터를 가져오고 로컬로 캐시합니다. `prepareDrawableFor(..)`에서 활성 빌드 구성에 정의된 AEM 서비스 호스트가 AEM에 해결 가능한 URL을 만드는 이미지 경로의 접두사로 사용됩니다.
+Android™은 `ImageGetter`을(를) 사용하여 AEM에서 이미지 데이터를 가져오고 로컬로 캐시합니다. `prepareDrawableFor(..)`에서 활성 빌드 구성에 정의된 AEM 서비스 호스트를 사용하여 AEM에 해결 가능한 URL을 만드는 이미지 경로의 접두사가 됩니다.
 
 + `app/src/main/java/com/adobe/wknd/androidapp/loader/RemoteImagesCache.java`
 

@@ -2,14 +2,14 @@
 title: AEM에서 번역 규칙 설정
 description: 사용자는 번역 구성 UI를 통해 AEM Sites에서 콘텐츠를 번역하기 위한 규칙을 관리할 수 있습니다. 이 비디오에서는 사용자 지정 구성 요소에 대한 새 번역 규칙 만들기에 대해 자세히 설명합니다.
 feature: Language Copy
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Localization
 role: User
 level: Beginner
 doc-type: Technical Video
 exl-id: 359da531-839c-4680-abf9-c880cc700159
 duration: 542
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '283'
 ht-degree: 0%
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/18135?quality=12&learn=on)
 
-번역 규칙은 번역을 위해 추출될 AEM의 콘텐츠를 식별합니다. 즉시 사용 가능한 번역 규칙은 텍스트 구성 요소 및 이미지 구성 요소에 대한 대체 텍스트와 같은 일반적인 사용 사례를 다룹니다. 프로젝트 번역 요구 사항에 따라 추가 규칙이 필요할 수 있습니다. 일반적으로 번역 규칙을 사용하여 다음을 지정할 수 있습니다.
+번역 규칙은 번역을 위해 추출할 AEM 콘텐츠를 식별합니다. 즉시 사용 가능한 번역 규칙은 텍스트 구성 요소 및 이미지 구성 요소에 대한 대체 텍스트와 같은 일반적인 사용 사례를 다룹니다. 프로젝트 번역 요구 사항에 따라 추가 규칙이 필요할 수 있습니다. 일반적으로 번역 규칙을 사용하여 다음을 지정할 수 있습니다.
 
 1. 경로 및/또는 리소스 유형에 따라 변환해야 하는 속성입니다
 2. 변환해서는 안 되는 속성에 대한 필터
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 ## AEM 6.3 이전 {#prior-to-aem}
 
-이전 AEM 버전의 번역 규칙은 번역 워크플로 `/etc/workflow/models/translation/translation_rules.xml` 아래에 있는 XML 파일을 편집하여 수동으로 업데이트되었습니다.
+이전 AEM 버전에서는 번역 워크플로 `/etc/workflow/models/translation/translation_rules.xml` 아래에 있는 XML 파일을 편집하여 번역 규칙을 수동으로 업데이트했습니다.
 
 ## 추가 리소스 {#additional-resources}
 

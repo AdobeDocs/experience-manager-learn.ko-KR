@@ -5,12 +5,12 @@ feature: Adaptive Forms
 type: Documentation
 role: Developer
 level: Beginner
-version: 6.5
+version: Experience Manager 6.5
 topic: Integrations
 jira: KT-14794
 exl-id: 488ef5ff-c67d-40e1-b69d-6f2a968d642b
 duration: 17
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 4%
@@ -21,7 +21,7 @@ ht-degree: 4%
 
 이 자습서에서는 제출된 데이터와 첨부 파일을 사용하여 **핵심 구성 요소** 기반 양식을 미리 채우는 간단한 사용 사례를 구현하는 방법을 알아봅니다.
 
-## 전제 조건
+## 사전 요구 사항
 
 * 핵심 구성 요소가 포함된 AEM Forms 경험
 * AEM 프로젝트 빌드 및 배포에 대한 경험입니다.

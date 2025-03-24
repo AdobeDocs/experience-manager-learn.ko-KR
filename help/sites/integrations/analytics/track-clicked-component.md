@@ -1,7 +1,7 @@
 ---
 title: 클릭한 구성 요소를 Adobe Analytics에서 추적
 description: 이벤트 기반 Adobe 클라이언트 데이터 레이어를 사용하여 Adobe Experience Manager 사이트에서 특정 구성 요소의 클릭 수를 추적합니다. 태그 규칙을 사용하여 이러한 이벤트를 수신하고 추적 링크 비콘을 사용하여 Adobe Analytics 보고서 세트에 데이터를 전송하는 방법에 대해 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Integrations
 feature: Adobe Client Data Layer
 role: Developer
@@ -12,7 +12,7 @@ badgeIntegration: label="통합" type="positive"
 doc-type: Tutorial
 exl-id: ab051363-d3e8-4c07-b1fa-3a5d24757496
 duration: 394
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1750'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 # 클릭한 구성 요소를 Adobe Analytics에서 추적
 
-이벤트 기반의 [AEM 핵심 구성 요소와 함께 Adobe 클라이언트 데이터 레이어](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)를 사용하여 Adobe Experience Manager 사이트에서 특정 구성 요소의 클릭을 추적합니다. 태그 속성의 규칙을 사용하여 클릭 이벤트를 수신하고, 구성 요소별로 필터링하고, 추적 링크 비콘이 있는 Adobe Analytics으로 데이터를 전송하는 방법에 대해 알아봅니다.
+이벤트 기반의 [Adobe Client Data Layer를 AEM 핵심 구성 요소와 함께 사용](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)하여 Adobe Experience Manager 사이트에서 특정 구성 요소의 클릭을 추적합니다. 태그 속성의 규칙을 사용하여 클릭 이벤트를 수신하고, 구성 요소별로 필터링하고, 추적 링크 비콘이 있는 Adobe Analytics으로 데이터를 전송하는 방법에 대해 알아봅니다.
 
 ## 빌드할 항목 {#what-build}
 
@@ -41,9 +41,9 @@ WKND 마케팅 팀이 홈 페이지에서 성과가 가장 좋은 `Call to Actio
 
 * [Adobe Analytics 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html)이 활성화된 **Tag 속성**
 * **Adobe Analytics** 테스트/개발 보고서 세트 ID 및 추적 서버. [보고서 세트 만들기](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html)에 대한 다음 설명서를 참조하세요.
-* [WKND 사이트](https://wknd.site/us/en.html) 또는 Experience Platform 데이터 계층이 활성화된 AEM 사이트에 로드된 태그 속성으로 구성된 [Adobe 디버거](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) 브라우저 확장.
+* [WKND 사이트](https://wknd.site/us/en.html) 또는 Adobe 데이터 레이어가 활성화된 AEM 사이트에서 로드된 태그 속성으로 구성된 [Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) 브라우저 확장 프로그램.
 
-## 버튼 및 티저 스키마 Inspect
+## 버튼 및 티저 스키마 검사
 
 태그 속성에서 규칙을 만들기 전에 Button 및 Teaser](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#item)에 대한 [스키마를 검토하고 데이터 레이어 구현에서 검사하는 것이 좋습니다.
 
@@ -85,15 +85,15 @@ WKND 마케팅 팀이 홈 페이지에서 성과가 가장 좋은 `Call to Actio
 
 ## CTA 클릭 규칙 만들기
 
-Adobe 클라이언트 데이터 레이어는 **event** 기반 데이터 레이어입니다. 핵심 구성 요소를 클릭할 때마다 데이터 레이어를 통해 `cmp:click` 이벤트가 발송됩니다. `cmp:click` 이벤트를 수신 대기하려면 규칙을 만들어 보겠습니다.
+Adobe 클라이언트 데이터 계층은 **이벤트** 기반 데이터 계층입니다. 핵심 구성 요소를 클릭할 때마다 데이터 레이어를 통해 `cmp:click` 이벤트가 발송됩니다. `cmp:click` 이벤트를 수신 대기하려면 규칙을 만들어 보겠습니다.
 
-1. Experience Platform 로 이동하고 AEM Site와 통합된 태그 속성으로 이동합니다.
+1. Experience Platform 로 이동한 다음 AEM 사이트와 통합된 태그 속성으로 이동합니다.
 1. 태그 속성 UI에서 **규칙** 섹션으로 이동한 다음 **규칙 추가**&#x200B;를 클릭합니다.
-1. 규칙 이름을 **클릭한 CTA**&#x200B;로 지정합니다.
+1. 규칙 이름을 **CTA이 클릭함**&#x200B;으로 지정합니다.
 1. **이벤트** > **추가**&#x200B;를 클릭하여 **이벤트 구성** 마법사를 엽니다.
 1. **이벤트 유형** 필드에 대해 **사용자 지정 코드**&#x200B;를 선택합니다.
 
-   ![CTA가 클릭한 규칙에 이름을 지정하고 사용자 지정 코드 이벤트를 추가합니다](assets/track-clicked-component/custom-code-event.png)
+   ![CTA이 클릭한 규칙에 이름을 지정하고 사용자 지정 코드 이벤트를 추가합니다](assets/track-clicked-component/custom-code-event.png)
 
 1. 기본 패널에서 **편집기 열기**&#x200B;를 클릭하고 다음 코드 조각을 입력합니다.
 
@@ -147,19 +147,19 @@ Adobe 클라이언트 데이터 레이어는 **event** 기반 데이터 레이�
 
    사용자 지정 이벤트에서 호출된 `trigger()` 메서드에서 `event` 개체가 전달되었습니다. `component` 개체는 데이터 계층 `getState()` 메서드에서 파생된 구성 요소의 현재 상태이며 클릭을 트리거한 요소입니다.
 
-1. 변경 사항을 저장하고 태그 속성에서 [빌드](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html)를 실행하여 AEM 사이트에서 사용되는 [환경](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=ko-KR)(으)로 코드를 승격합니다.
+1. 변경 사항을 저장하고 태그 속성에서 [빌드](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html)를 실행하여 코드를 AEM 사이트에서 사용되는 [환경](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=ko)&#x200B;(으)로 승격합니다.
 
    >[!NOTE]
    >
-   > [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)을 사용하여 포함 코드를 **개발** 환경으로 전환하면 유용할 수 있습니다.
+   > [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)을(를) 사용하여 포함 코드를 **개발** 환경으로 전환하면 유용할 수 있습니다.
 
-1. [WKND 사이트](https://wknd.site/us/en.html)(으)로 이동하고 개발자 도구를 열어 콘솔을 봅니다. **로그 유지** 확인란도 선택하십시오.
+1. [WKND 사이트](https://wknd.site/us/en.html)&#x200B;(으)로 이동하고 개발자 도구를 열어 콘솔을 봅니다. **로그 유지** 확인란도 선택하십시오.
 
 1. 다른 페이지로 이동하려면 **티저** 또는 **단추** CTA 단추 중 하나를 클릭하십시오.
 
    ![클릭할 CTA 단추](assets/track-clicked-component/cta-button-to-click.png)
 
-1. 개발자 콘솔에서 **클릭한 CTA** 규칙이 실행되었는지 확인합니다.
+1. 개발자 콘솔에서 **CTA 클릭** 규칙이 실행되었는지 확인합니다.
 
    ![CTA 단추 클릭됨](assets/track-clicked-component/cta-button-clicked-log.png)
 
@@ -169,7 +169,7 @@ Adobe 클라이언트 데이터 레이어는 **event** 기반 데이터 레이�
 
 ### 구성 요소 ID
 
-1. Experience Platform 로 이동하고 AEM Site와 통합된 태그 속성으로 이동합니다.
+1. Experience Platform 로 이동한 다음 AEM 사이트와 통합된 태그 속성으로 이동합니다.
 1. **데이터 요소** 섹션으로 이동한 다음 **새 데이터 요소 추가**&#x200B;를 클릭합니다.
 1. **이름** 필드에 **구성 요소 ID**&#x200B;을(를) 입력하십시오.
 1. **데이터 요소 유형** 필드에 대해 **사용자 지정 코드**&#x200B;를 선택합니다.
@@ -209,13 +209,13 @@ Adobe 클라이언트 데이터 레이어는 **event** 기반 데이터 레이�
 
 ## CTA 클릭 규칙에 조건 추가
 
-그런 다음 **클릭한 CTA** 규칙을 업데이트하여 **티저** 또는 **단추**&#x200B;에 대해 `cmp:click` 이벤트가 실행된 경우에만 규칙이 실행되도록 합니다. 티저의 CTA는 데이터 레이어에서 별도의 개체로 간주되므로 상위 항목을 확인하여 티저에서 가져온 것임을 확인해야 합니다.
+그런 다음 **CTA 클릭됨** 규칙을 업데이트하여 **티저** 또는 **단추**&#x200B;에 대해 `cmp:click` 이벤트가 실행된 경우에만 규칙이 실행되도록 합니다. 티저의 CTA은 데이터 레이어에서 별도의 객체로 간주되므로 상위 항목을 확인하여 티저에서 왔는지를 확인하는 것이 중요합니다.
 
-1. 태그 속성 UI에서 이전에 만든 **클릭한 CTA** 규칙으로 이동합니다.
+1. Tag Property UI에서 이전에 만든 **CTA 클릭** 규칙으로 이동합니다.
 1. **Conditions**&#x200B;에서 **추가**&#x200B;를 클릭하여 **Condition 구성** 마법사를 엽니다.
 1. **조건 유형** 필드에 대해 **사용자 지정 코드**&#x200B;를 선택합니다.
 
-   ![CTA가 클릭한 조건 사용자 지정 코드](assets/track-clicked-component/custom-code-condition.png)
+   ![CTA 클릭 조건 사용자 지정 코드](assets/track-clicked-component/custom-code-condition.png)
 
 1. **편집기 열기**&#x200B;를 클릭하고 사용자 지정 코드 편집기에 다음을 입력합니다.
 
@@ -239,9 +239,9 @@ Adobe 클라이언트 데이터 레이어는 **event** 기반 데이터 레이�
 
 ## Analytics 변수 설정 및 추적 링크 비콘 트리거
 
-현재 **클릭한 CTA** 규칙은 콘솔 문만 출력합니다. 그런 다음 데이터 요소와 Analytics 확장을 사용하여 Analytics 변수를 **action**(으)로 설정합니다. **추적 링크**&#x200B;를 트리거하고 수집된 데이터를 Adobe Analytics으로 보내는 추가 작업도 설정해 보겠습니다.
+현재 **CTA 클릭** 규칙은 콘솔 문만 출력합니다. 그런 다음 데이터 요소와 Analytics 확장을 사용하여 Analytics 변수를 **action**(으)로 설정합니다. **추적 링크**&#x200B;를 트리거하고 수집된 데이터를 Adobe Analytics으로 보내는 추가 작업도 설정해 보겠습니다.
 
-1. **클릭한 CTA** 규칙에서 **코어 - 사용자 지정 코드** 동작(콘솔 문)을 **제거**&#x200B;합니다.
+1. **CTA 클릭** 규칙에서 **코어 - 사용자 지정 코드** 동작(콘솔 문)을 **제거**&#x200B;합니다.
 
    ![사용자 지정 코드 작업 제거](assets/track-clicked-component/remove-console-statements.png)
 
@@ -270,25 +270,25 @@ Adobe 클라이언트 데이터 레이어는 **event** 기반 데이터 레이�
 
    ![송신 링크 비콘에 대한 구성](assets/track-clicked-component/analytics-send-beacon-link-track.png)
 
-   위의 구성은 데이터 요소 **구성 요소 제목**&#x200B;의 동적 변수와 정적 문자열 **클릭한 CTA**&#x200B;을(를) 결합합니다.
+   위의 구성은 데이터 요소 **구성 요소 제목**&#x200B;의 동적 변수와 정적 문자열 **CTA 클릭**&#x200B;을(를) 결합합니다.
 
-1. 변경 사항을 저장합니다. 이제 **클릭한 CTA** 규칙에 다음 구성이 있어야 합니다.
+1. 변경 사항을 저장합니다. 이제 **CTA 클릭** 규칙에 다음 구성이 있어야 합니다.
 
    ![최종 태그 규칙 구성](assets/track-clicked-component/final-page-loaded-config.png)
 
    * **1.** `cmp:click` 이벤트를 수신 대기합니다.
    * **2.** 이벤트가 **Button** 또는 **Teaser**&#x200B;에 의해 트리거되었는지 확인하십시오.
-   * **3.** **구성 요소 ID**&#x200B;를 **eVar**, **prop** 및 **이벤트**(으)로 추적하도록 Analytics 변수를 설정합니다.
+   * **3.** Analytics 변수를 설정하여 **구성 요소 ID**&#x200B;를 **eVar**, **prop** 및 **이벤트**(으)로 추적합니다.
    * **4.** Analytics 추적 링크 비콘을 보냅니다(**하지 않음** 페이지 보기로 취급).
 
 1. 모든 변경 사항을 저장하고 태그 라이브러리를 빌드하여 적절한 환경으로 승격합니다.
 
 ## 추적 링크 비콘 및 Analytics 호출의 유효성 검사
 
-**클릭한 CTA** 규칙이 Analytics 비콘을 보내면 Experience Platform 디버거를 사용하여 Analytics 추적 변수를 볼 수 있습니다.
+**CTA 클릭됨** 규칙이 Analytics 비콘을 보내면 Experience Platform Debugger를 사용하여 Analytics 추적 변수를 볼 수 있습니다.
 
 1. 브라우저에서 [WKND 사이트](https://wknd.site/us/en.html)를 엽니다.
-1. 디버거 아이콘 ![Experience platform Debugger 아이콘](assets/track-clicked-component/experience-cloud-debugger.png)을 클릭하여 Experience Platform 디버거를 엽니다.
+1. 디버거 아이콘 ![Experience platform Debugger 아이콘](assets/track-clicked-component/experience-cloud-debugger.png)을 클릭하여 Experience Platform Debugger를 엽니다.
 1. 앞에서 설명한 대로 디버거가 태그 속성을 *사용자* 개발 환경에 매핑하고 있으며 **콘솔 로깅**&#x200B;이 선택되어 있는지 확인하십시오.
 1. Analytics 메뉴를 열고 보고서 세트가 *내* 보고서 세트로 설정되어 있는지 확인하십시오.
 
@@ -298,7 +298,7 @@ Adobe 클라이언트 데이터 레이어는 **event** 기반 데이터 레이�
 
    ![클릭할 CTA 단추](assets/track-clicked-component/cta-button-to-click.png)
 
-1. Experience Platform 디버거로 돌아가서 아래로 스크롤하여 **네트워크 요청** > *보고서 세트*&#x200B;를 확장합니다. **eVar**, **prop** 및 **이벤트** 집합을 찾을 수 있습니다.
+1. Experience Platform Debugger로 돌아가서 아래로 스크롤하여 **네트워크 요청** > *보고서 세트*&#x200B;를 확장합니다. **eVar**, **prop** 및 **event** 집합을 찾을 수 있어야 합니다.
 
    ![클릭 시 추적되는 Analytics 이벤트, evar 및 prop](assets/track-clicked-component/evar-prop-link-clicked-tracked-debugger.png)
 
@@ -306,13 +306,13 @@ Adobe 클라이언트 데이터 레이어는 **event** 기반 데이터 레이�
 
    ![바닥글에서 탐색 링크를 클릭합니다](assets/track-clicked-component/click-navigation-link-footer.png)
 
-1. 브라우저 콘솔에서 &quot;CTA 클릭&quot;된 규칙에 대한 *&quot;사용자 지정 코드&quot; 메시지가 충족되지 않았습니다*.
+1. &quot;CTA이 클릭함&quot; 규칙에 대한 *&quot;사용자 지정 코드&quot; 메시지가 충족되지 않았는지 브라우저 콘솔에서 관찰하십시오*.
 
    위의 메시지는 리소스 형식을 확인하는 [규칙에 대한 조건](#add-a-condition-to-the-cta-clicked-rule) 때문에 탐색 구성 요소가 `cmp:click` 이벤트 *but*&#x200B;을(를) 트리거하기 때문입니다.
 
    >[!NOTE]
    >
-   > 콘솔 로그가 표시되지 않으면 Experience Platform 디버거의 **Experience Platform 태그**&#x200B;에서 **콘솔 로깅**&#x200B;을 확인하십시오.
+   > 콘솔 로그가 표시되지 않으면 Experience Platform Debugger의 **Experience Platform 태그**&#x200B;에서 **콘솔 로깅**&#x200B;을 확인하십시오.
 
 ## 축하합니다!
 

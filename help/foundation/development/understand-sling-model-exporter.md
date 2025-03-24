@@ -1,7 +1,7 @@
 ---
 title: AEM의 Sling 모델 내보내기 이해
 description: Apache Sling 모델 1.3.0은 Sling 모델 개체를 사용자 지정 추상으로 내보내거나 직렬화하는 우아한 방법인 Sling 모델 내보내기를 도입했습니다. 이 문서에서는 Sling 모델을 사용하여 HTL 스크립트를 채우는 기존의 사용 사례를 Sling 모델 내보내기 프레임워크를 활용하여 Sling 모델을 JSON으로 직렬화하는 방법과 나란히 다룹니다.
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 sub-product: Experience Manager, Experience Manager Sites
 feature: APIs
 doc-type: Article
@@ -10,7 +10,7 @@ role: Developer
 level: Beginner
 exl-id: 03cdf5d1-3253-44c9-ae1f-ec5d3c562427
 duration: 133
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '568'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Apache [!DNL Sling Models] 1.3.0에서는 [!DNL Sling Model] 개체를 사용자
 
 [!DNL Sling Models]의 기존 사용 사례는 리소스 또는 요청에 대한 비즈니스 추상화를 제공하는 것입니다. 이 리소스 또는 요청은 HTL 스크립트(또는 이전 JSP)에 비즈니스 기능에 액세스하기 위한 인터페이스를 제공합니다.
 
-일반적인 패턴은 AEM 구성 요소 또는 페이지를 나타내는 [!DNL Sling Models]을(를) 개발하고 [!DNL Sling Model] 개체를 사용하여 HTL 스크립트에 데이터를 제공하고 HTML의 최종 결과는 브라우저에 표시됩니다.
+일반적인 패턴은 AEM 구성 요소 또는 페이지를 나타내는 [!DNL Sling Models]을(를) 개발하고 [!DNL Sling Model] 개체를 사용하여 브라우저에 표시되는 HTML의 최종 결과와 함께 HTL 스크립트에 데이터를 제공하는 것입니다.
 
 ### Sling 모델 HTTP 요청 흐름
 
@@ -41,7 +41,7 @@ Apache [!DNL Sling Models] 1.3.0에서는 [!DNL Sling Model] 개체를 사용자
 
 1. 스크립트는 [!DNL Sling Model] 개체를 사용하여 HTML 렌디션을 생성합니다.
 
-1. 스크립트에서 생성된 HTML이 HTTP 응답에서 반환됩니다.
+1. 스크립트에서 생성한 HTML이 HTTP 응답에서 반환됩니다.
 
 HTL을 통해 [!DNL Sling Model]을(를) 쉽게 활용할 수 있으므로 이 기존 패턴은 HTML 생성 컨텍스트에서 잘 작동합니다. HTL이 이러한 형식의 정의에 자연스럽게 영향을 주지 않기 때문에 JSON 또는 XML과 같은 보다 구조화된 데이터를 만드는 것은 훨씬 지루한 작업입니다.
 

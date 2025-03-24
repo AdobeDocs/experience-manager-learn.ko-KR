@@ -2,7 +2,7 @@
 title: 벌크 속성 업데이트 예 AEM 콘텐츠 조각 콘솔 확장
 description: 콘텐츠 조각의 속성을 대량으로 업데이트하는 AEM 콘텐츠 조각 콘솔 확장의 예입니다.
 feature: Developer Tools, Content Fragments
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Beginner
@@ -12,7 +12,7 @@ doc-type: article
 last-substantial-update: 2024-01-26T00:00:00Z
 exl-id: fbfb5c10-95f8-4875-88dd-9a941d7a16fd
 duration: 1362
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '769'
 ht-degree: 0%
@@ -32,8 +32,8 @@ ht-degree: 0%
 1. 콘텐츠 조각을 선택하고 [작업 모음](#extension-registration)에서 확장 단추를 클릭하면 [모달](#modal)이 열립니다.
 2. [모달](#modal)은(는) [React Spectrum](https://react-spectrum.adobe.com/react-spectrum/)을(를) 사용하여 빌드된 사용자 지정 입력 양식을 표시합니다.
 3. 양식을 제출하면 선택한 콘텐츠 조각 목록과 AEM 호스트가 [사용자 지정 Adobe I/O Runtime 작업](#adobe-io-runtime-action)에 전송됩니다.
-4. [Adobe I/O Runtime 작업](#adobe-io-runtime-action)은(는) 입력을 확인하고 선택한 콘텐츠 조각을 업데이트하기 위해 AEM에 대한 HTTP PUT 요청을 수행합니다.
-5. 지정된 PUT을 업데이트할 각 콘텐츠 조각에 대한 일련의 HTTP 속성입니다.
+4. [Adobe I/O Runtime 작업](#adobe-io-runtime-action)은(는) 입력을 확인하고 선택한 콘텐츠 조각을 업데이트하기 위해 AEM에 HTTP PUT 요청을 수행합니다.
+5. 지정된 속성을 업데이트할 각 콘텐츠 조각에 대한 일련의 HTTP PUT입니다.
 6. AEM as a Cloud Service은 콘텐츠 조각에 대한 속성 업데이트를 유지하고 Adobe I/O Runtime 작업에 대한 성공 또는 실패 응답을 반환합니다.
 7. 모달은 Adobe I/O Runtime 작업에서 응답을 수신했으며 성공한 벌크 업데이트 목록을 표시합니다.
 
@@ -91,7 +91,7 @@ ht-degree: 0%
 
 `index.html` 경로에 매핑된 `ExtensionRegistration.js`은(는) AEM 확장의 진입점이며 다음을 정의합니다.
 
-1. 확장 단추의 위치가 AEM 제작 환경에 나타납니다(`actionBar` 또는 `headerMenu`).
+1. 확장 단추의 위치가 AEM 작성 환경에 나타납니다(`actionBar` 또는 `headerMenu`).
 1. `getButtons()` 함수에서 확장 단추의 정의
 1. `onClick()` 함수에서 단추의 클릭 처리기
 
@@ -168,10 +168,10 @@ export default ExtensionRegistration;
 1. 사용자가 업데이트할 속성 이름과 값을 지정할 수 있도록 해 주는 벌크 속성 업데이트 양식
 1. 업데이트된 콘텐츠 조각과 업데이트할 수 없는 콘텐츠 조각을 나열하는 벌크 속성 업데이트 작업의 응답입니다
 
-중요한 것은 확장에서 AEM과의 모든 상호 작용을 [AppBuilder Adobe I/O Runtime 작업](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/)에 위임해야 한다는 것입니다. 이 작업은 [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/)에서 실행되는 별도의 서버를 사용하지 않는 프로세스입니다.
+중요한 점은 확장에서 AEM을 사용하는 모든 상호 작용은 [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/)에서 실행되는 별도의 서버리스 프로세스인 [AppBuilder Adobe I/O Runtime 작업](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/)에 위임해야 한다는 것입니다.
 Adobe I/O Runtime 작업을 사용하여 AEM과 통신하면 CORS(원본 간 리소스 공유) 연결 문제를 방지할 수 있습니다.
 
-일괄 속성 업데이트 양식이 제출되면 사용자 지정 `onSubmitHandler()`이(가) Adobe I/O Runtime 작업을 호출하여 현재 AEM 호스트(도메인)와 사용자의 AEM 액세스 토큰을 전달합니다. 그러면 [AEM 콘텐츠 조각 API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html)를 호출하여 콘텐츠 조각을 업데이트합니다.
+벌크 속성 업데이트 양식이 제출되면 사용자 지정 `onSubmitHandler()`이(가) Adobe I/O Runtime 작업을 호출하여 현재 AEM 호스트(도메인)와 사용자의 AEM 액세스 토큰을 전달합니다. 그러면 콘텐츠 조각을 업데이트하기 위해 [AEM 콘텐츠 조각 API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html)가 호출됩니다.
 
 Adobe I/O Runtime 작업의 응답을 받으면 모달이 업데이트되어 벌크 속성 업데이트 작업의 결과가 표시됩니다.
 
@@ -434,7 +434,7 @@ export default function BulkPropertyUpdateModal() {
 ### Adobe I/O Runtime 작업
 
 AEM 확장 App Builder 앱은 0개 이상의 Adobe I/O Runtime 작업을 정의하거나 사용할 수 있습니다.
-Adobe 런타임 작업은 AEM 또는 기타 Adobe 웹 서비스와 상호 작용해야 하는 작업을 담당해야 합니다.
+Adobe Runtime 작업은 AEM 또는 기타 Adobe 웹 서비스와 상호 작용해야 하는 작업을 담당해야 합니다.
 
 이 예제 앱에서는 기본 이름 `generic`을(를) 사용하는 Adobe I/O Runtime 작업이 다음을 담당합니다.
 

@@ -2,14 +2,14 @@
 title: AEM Assets에서 Dynamic Media 360 비디오 및 사용자 지정 비디오 썸네일 사용
 description: AEM 6.5의 Dynamic Media 뷰어 개선 사항에는 360 비디오 렌더링, 360 미디어 뷰어(video360Social 및 video360VR)에 대한 지원 추가 및 사용자 지정 비디오 썸네일을 선택하는 기능이 포함됩니다.
 feature: Video Profiles
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Content Management
 role: User
 level: Beginner
 doc-type: Feature Video
 exl-id: 4ee0b68f-3897-4104-8615-9de8dbb8f327
 duration: 656
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 3%
@@ -24,7 +24,7 @@ AEM 6.5의 Dynamic Media 뷰어 개선 사항에는 360 비디오 렌더링, 360
 
 >[!NOTE]
 >
->이 비디오에서는 AEM 인스턴스가 Dynamic Media S7 모드에서 실행 중이라고 가정합니다.  [Dynamic Media을 사용하여 AEM 설정에 대한 지침은 여기에서 찾을 수 있습니다](https://helpx.adobe.com/kr/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html). 비디오를 업로드할 때 기본적으로 Dynamic Media은 종횡비가 2:1인 경우 푸티지를 360 비디오로 처리합니다. 즉, 너비 대 높이의 비율은 2:1입니다.
+>이 비디오에서는 AEM 인스턴스가 Dynamic Media S7 모드에서 실행 중이라고 가정합니다.  [Dynamic Media를 사용하여 AEM을 설정하는 방법은 여기에서 찾을 수 있습니다](https://helpx.adobe.com/kr/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html). 비디오를 업로드할 때 기본적으로 Dynamic Media는 종횡비가 2:1인 경우 푸티지를 360 비디오로 처리합니다. 즉, 너비 대 높이의 비율은 2:1입니다.
 
 >[!NOTE]
 >
@@ -36,7 +36,7 @@ AEM 6.5의 Dynamic Media 뷰어 개선 사항에는 360 비디오 렌더링, 360
 
 ## Dynamic Media 360 비디오
 
-이제 Dynamic Media 비디오에서는 비디오에 대한 사용자 지정 썸네일을 선택하는 기능을 지원합니다. 사용자는 AEM Assets에서 기존 에셋을 선택하거나 비디오 프레임을 썸네일로 선택할 수 있습니다.
+Dynamic Media 비디오는 이제 비디오에 대한 사용자 지정 썸네일 선택 기능을 지원합니다. 사용자는 AEM Assets에서 기존 에셋을 선택하거나 비디오 프레임을 썸네일로 선택할 수 있습니다.
 
 ## Dynamic 360 Media 뷰어
 
@@ -49,7 +49,7 @@ AEM 6.5의 Dynamic Media 뷰어 개선 사항에는 360 비디오 렌더링, 360
    </tr>
    <tr>
       <td>Dynamic Media 실행 모드</td>
-      <td>Dynamic Media Scene7 모드만 해당</td>
+      <td>Dynamic Media Scene7 모드만</td>
       <td>Dynamic Media Scene7 모드만<br>
          <br>
       </td>
@@ -90,7 +90,7 @@ AEM 6.5의 Dynamic Media 뷰어 개선 사항에는 360 비디오 렌더링, 360
       </td>
    </tr>
    <tr>
-      <td>HTML5 플레이어</td>
+      <td>HTML 플레이어</td>
       <td>예</td>
       <td>예</td>
    </tr>

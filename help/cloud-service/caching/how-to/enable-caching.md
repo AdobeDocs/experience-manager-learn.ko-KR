@@ -1,7 +1,7 @@
 ---
 title: CDN 캐싱을 활성화하는 방법
 description: AEM as a Cloud Service CDN에서 HTTP 응답 캐싱을 활성화하는 방법을 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Operations, CDN Cache
 topic: Administration, Performance
 role: Admin, Architect, Developer
@@ -12,7 +12,7 @@ jira: KT-14224
 thumbnail: KT-14224.jpeg
 exl-id: 544c3230-6eb6-4f06-a63c-f56d65c0ff4b
 duration: 174
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 0%
@@ -23,30 +23,30 @@ ht-degree: 0%
 
 AEM as a Cloud Service CDN에서 HTTP 응답 캐싱을 활성화하는 방법을 알아봅니다. 응답 캐싱은 `Cache-Control`, `Surrogate-Control` 또는 `Expires` HTTP 응답 캐시 헤더에 의해 제어됩니다.
 
-이러한 캐시 헤더는 일반적으로 `mod_headers`을(를) 사용하여 AEM Dispatcher vhost 구성에서 설정되지만 AEM Publish 자체에서 실행되는 사용자 지정 Java™ 코드에서도 설정할 수 있습니다.
+이러한 캐시 헤더는 일반적으로 `mod_headers`을(를) 사용하여 AEM Dispatcher vhost 구성에서 설정되지만 AEM 게시 자체에서 실행되는 사용자 지정 Java™ 코드에서도 설정할 수 있습니다.
 
 ## 기본 캐싱 동작
 
-사용자 지정 구성이 없으면 기본값이 사용됩니다. [AEM Project Archetype](https://github.com/adobe/aem-project-archetype) 기반 `mynewsite` AEM 프로젝트가 배포되면 다음 스크린샷에서 AEM Publish 및 작성자에 대한 기본 캐싱 동작을 볼 수 있습니다.
+사용자 지정 구성이 없으면 기본값이 사용됩니다. [AEM Project Archetype](https://github.com/adobe/aem-project-archetype) 기반 `mynewsite` AEM 프로젝트가 배포되면 다음 스크린샷에서 AEM Publish 및 Author의 기본 캐싱 동작을 확인할 수 있습니다.
 
 ![기본 캐싱 동작](../assets/how-to/aem-publish-default-cache-headers.png){width="800" zoomable="yes"}
 
-자세한 내용은 [AEM Publish - 기본 캐시 수명](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/publish.html#cdn-cache-life) 및 [AEM 작성자 - 기본 캐시 수명](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/author.html?#default-cache-life)을 검토하십시오.
+자세한 내용은 [AEM 게시 - 기본 캐시 수명](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/publish.html#cdn-cache-life) 및 [AEM 작성자 - 기본 캐시 수명](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/author.html?#default-cache-life)을 검토하십시오.
 
-요약하면, AEM as a Cloud Service은 AEM Publish의 대부분의 콘텐츠 유형(HTML, JSON, JS, CSS 및 Assets)과 AEM Author의 일부 콘텐츠 유형(JS, CSS)을 캐시합니다.
+요약하면, AEM as a Cloud Service은 AEM Publish에서 대부분의 콘텐츠 유형(HTML, JSON, JS, CSS 및 Assets)과 AEM Author에서 몇 가지 콘텐츠 유형(JS, CSS)을 캐시합니다.
 
 ## 캐싱 활성화
 
 기본 캐싱 동작을 변경하려면 두 가지 방법으로 캐시 헤더를 업데이트할 수 있습니다.
 
-1. **Dispatcher vhost 구성:** AEM Publish에만 사용할 수 있습니다.
-1. **사용자 지정 Java™ 코드:** AEM Publish과 작성자 모두에서 사용할 수 있습니다.
+1. **Dispatcher vhost 구성:** AEM 게시에만 사용할 수 있습니다.
+1. **사용자 지정 Java™ 코드:**&#x200B;은(는) AEM 게시와 작성자 모두에서 사용할 수 있습니다.
 
 이러한 각 옵션을 검토해 보겠습니다.
 
 ### Dispatcher vhost 구성
 
-이 옵션은 캐싱을 활성화하는 데 권장되는 접근 방식이지만, AEM Publish에만 사용할 수 있습니다. 캐시 헤더를 업데이트하려면 Apache HTTP Server의 vhost 파일에서 `mod_headers` 모듈 및 `<LocationMatch>` 지시문을 사용합니다. 일반 구문은 다음과 같습니다.
+이 옵션은 캐싱을 활성화하는 데 권장되는 방법입니다. 하지만 AEM 게시에만 사용할 수 있습니다. 캐시 헤더를 업데이트하려면 Apache HTTP Server의 vhost 파일에서 `mod_headers` 모듈 및 `<LocationMatch>` 지시문을 사용합니다. 일반 구문은 다음과 같습니다.
 
 ```
 <LocationMatch "$URL$ || $URL_REGEX$">
@@ -107,7 +107,7 @@ AEM as a Cloud Service CDN에서 HTTP 응답 캐싱을 활성화하는 방법을
 
 ### 사용자 지정 Java™ 코드
 
-이 옵션은 AEM Publish과 작성자 모두에 사용할 수 있습니다. 그러나 AEM Author에서 캐싱을 활성화하고 기본 캐싱 동작을 유지하는 것은 권장되지 않습니다.
+이 옵션은 AEM 게시와 작성자 모두에서 사용할 수 있습니다. 그러나 AEM Author에서 캐싱을 활성화하고 기본 캐싱 동작을 유지하는 것은 권장되지 않습니다.
 
 캐시 헤더를 업데이트하려면 사용자 지정 Java™ 코드의 `HttpServletResponse` 개체(Sling 서블릿, Sling 서블릿 필터)를 사용합니다. 일반 구문은 다음과 같습니다.
 

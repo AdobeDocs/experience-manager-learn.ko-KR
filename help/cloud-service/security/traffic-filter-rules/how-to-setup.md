@@ -1,7 +1,7 @@
 ---
 title: WAF 규칙을 포함한 트래픽 필터 규칙을 설정하는 방법
 description: WAF 규칙을 포함한 트래픽 필터 규칙의 결과를 만들고, 배포하고, 테스트하고, 분석하도록 설정하는 방법에 대해 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Security
 topic: Security, Administration, Architecture
 role: Admin, Architect
@@ -12,7 +12,7 @@ jira: KT-13148
 thumbnail: KT-13148.jpeg
 exl-id: b67bf642-3341-48d0-8ea9-5f262febf414
 duration: 292
-source-git-commit: c7c78ca56c1d72f13d2dc80229a10704ab0f14ab
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 3%
@@ -21,7 +21,7 @@ ht-degree: 3%
 
 # WAF 규칙을 포함한 트래픽 필터 규칙을 설정하는 방법
 
-WAF 규칙을 포함하여 **트래픽 필터 규칙을 설정하는 방법**&#x200B;을 알아보세요. 결과 생성, 배포, 테스트 및 분석에 대해 알아보십시오.
+WAF 규칙을 포함한 **트래픽 필터 규칙을 설정하는 방법**&#x200B;을 알아봅니다. 결과 생성, 배포, 테스트 및 분석에 대해 알아보십시오.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425407?quality=12&learn=on)
 
@@ -30,7 +30,7 @@ WAF 규칙을 포함하여 **트래픽 필터 규칙을 설정하는 방법**&#x
 설정 프로세스에는 다음이 포함됩니다.
 
 - 적절한 AEM 프로젝트 구조 및 구성 파일을 사용하여 _규칙을 만드는 중_.
-- Adobe Cloud Manager의 구성 파이프라인을 사용하여 _규칙을 배포_.
+- Adobe Cloud Manager의 구성 파이프라인을 사용하여 _규칙 배포_
 - 트래픽을 생성하기 위해 다양한 도구를 사용하여 _규칙 테스트_.
 - AEMCS CDN 로그 및 대시보드 도구를 사용하여 _결과 분석_.
 
@@ -136,4 +136,4 @@ AEM Guides WKND Sites 프로젝트 내에서 `cdn.yaml` 파일의 예를 참조�
 
 ## 다음 단계
 
-AEM WKND Sites 프로젝트를 사용하여 [예 및 결과 분석](./examples-and-analysis.md) 장에서 WAF 규칙을 포함한 트래픽 필터 규칙을 선언하는 방법을 알아봅니다.
+WAF WKND Sites 프로젝트를 사용하여 [예 및 결과 분석](./examples-and-analysis.md) 장에서 AEM 규칙을 포함한 트래픽 필터 규칙을 선언하는 방법을 알아봅니다.

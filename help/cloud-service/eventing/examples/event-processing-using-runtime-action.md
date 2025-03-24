@@ -1,7 +1,7 @@
 ---
 title: Adobe I/O Runtime 작업을 사용하여 AEM 이벤트 처리
 description: Adobe I/O Runtime 작업을 사용하여 수신된 AEM 이벤트를 처리하는 방법을 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Developing, App Builder
 topic: Development, Architecture, Content Management
 role: Architect, Developer
@@ -12,7 +12,7 @@ last-substantial-update: 2024-01-30T00:00:00Z
 jira: KT-14879
 thumbnail: KT-14879.jpeg
 exl-id: c362011e-89e4-479c-9a6c-2e5caa3b6e02
-source-git-commit: efa0a16649c41fab8309786a766483cfeab98867
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 0%
@@ -21,17 +21,17 @@ ht-degree: 0%
 
 # Adobe I/O Runtime 작업을 사용하여 AEM 이벤트 처리
 
-[Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/overview/what_is_runtime/) 액션을 사용하여 받은 AEM 이벤트를 처리하는 방법에 대해 알아보십시오. 이 예제에서는 이전 예제 [Adobe I/O Runtime 작업 및 AEM 이벤트](runtime-action.md)를 향상시킵니다. 이 작업을 진행하기 전에 완료했는지 확인하십시오.
+[Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/overview/what_is_runtime/) 액션을 사용하여 받은 AEM 이벤트를 처리하는 방법에 대해 알아보십시오. 이 예제에서는 이전 예인 [Adobe I/O Runtime 작업 및 AEM 이벤트](runtime-action.md)를 향상시킵니다. 이 작업을 진행하기 전에 완료했는지 확인하십시오.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427054?quality=12&learn=on)
 
-이 예에서, 이벤트 처리는 원래 이벤트 데이터 및 수신된 이벤트를 활동 메시지로서 Adobe I/O Runtime 저장소에 저장한다. 그러나 이벤트가 _콘텐츠 조각 수정됨_ 유형인 경우 AEM 작성자 서비스를 호출하여 수정 세부 정보를 찾습니다. 마지막으로 이벤트 세부 사항이 단일 페이지 애플리케이션(SPA)에 표시됩니다.
+이 예에서, 이벤트 처리는 원래 이벤트 데이터 및 수신된 이벤트를 활동 메시지로서 Adobe I/O Runtime 저장소에 저장한다. 그러나 이벤트가 _콘텐츠 조각 수정됨_ 유형인 경우 AEM 작성자 서비스를 호출하여 수정 세부 정보를 찾습니다. 마지막으로 단일 페이지 애플리케이션(SPA)에 이벤트 세부 사항이 표시됩니다.
 
-## 전제 조건
+## 사전 요구 사항
 
 이 자습서를 완료하려면 다음이 필요합니다.
 
-- [AEM 이벤트가 활성화됨](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment)인 AEM as a Cloud Service 환경. 또한 샘플 [WKND Sites](https://github.com/adobe/aem-guides-wknd?#aem-wknd-sites-project) 프로젝트를 여기에 배포해야 합니다.
+- [AEM 이벤트 사용](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment)이 설정된 AEM as a Cloud Service 환경. 또한 샘플 [WKND Sites](https://github.com/adobe/aem-guides-wknd?#aem-wknd-sites-project) 프로젝트를 여기에 배포해야 합니다.
 
 - [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started/)에 액세스
 
@@ -248,7 +248,7 @@ if (params.challenge) {
 ## 추가 리소스
 
 - `src/dx-excshell-1/actions/model` 폴더에 `aemEvent.js` 및 `errors.js` 파일이 있습니다. 이 파일은 작업에서 수신된 이벤트를 구문 분석하고 오류를 처리하는 데 각각 사용됩니다.
-- `src/dx-excshell-1/actions/load-processed-aem-events` 폴더에 작업 코드가 있습니다. 이 작업은 SPA에서 처리된 AEM 이벤트를 Adobe I/O Runtime 저장소에서 로드하는 데 사용됩니다.
+- `src/dx-excshell-1/actions/load-processed-aem-events` 폴더에 작업 코드가 있습니다. 이 작업은 SPA에서 Adobe I/O Runtime 저장소에서 처리된 AEM 이벤트를 로드하는 데 사용됩니다.
 - `src/dx-excshell-1/web-src` 폴더에는 처리된 AEM 이벤트를 표시하는 SPA 코드가 있습니다.
 - `src/dx-excshell-1/ext.config.yaml` 파일에 작업 구성 및 매개 변수가 포함되어 있습니다.
 
@@ -257,5 +257,5 @@ if (params.challenge) {
 이벤트 처리 요구 사항은 프로젝트마다 다르지만 이 예제의 주요 사항은 다음과 같습니다.
 
 - 이벤트 처리는 Adobe I/O Runtime 작업을 사용하여 수행할 수 있습니다.
-- 런타임 작업은 내부 응용 프로그램, 서드파티 솔루션 및 Adobe 솔루션과 같은 시스템과 통신할 수 있습니다.
+- 런타임 작업은 내부 애플리케이션, 서드파티 솔루션 및 Adobe 솔루션과 같은 시스템과 통신할 수 있습니다.
 - 런타임 작업은 콘텐츠 변경을 중심으로 설계된 비즈니스 프로세스의 진입점 역할을 합니다.

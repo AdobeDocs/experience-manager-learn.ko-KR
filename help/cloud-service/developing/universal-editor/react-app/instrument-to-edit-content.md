@@ -1,7 +1,7 @@
 ---
 title: 범용 편집기를 사용하여 콘텐츠를 편집할 React 앱 계측
 description: 범용 편집기를 사용하여 콘텐츠를 편집하기 위해 React 앱을 계측하는 방법에 대해 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Developer Tools, Headless
 topic: Development, Content Management
 role: Architect, Developer
@@ -12,7 +12,7 @@ last-substantial-update: 2024-04-19T00:00:00Z
 jira: KT-15359
 thumbnail: KT-15359.png
 exl-id: 2a25cd44-cbd1-465e-ae3f-d3876e915114
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1606'
 ht-degree: 0%
@@ -129,9 +129,9 @@ export default App;
 
 ## 메타데이터 추가 - 로컬 유니버설 편집기 서비스 구성
 
-Adobe이 호스팅하는 유니버설 편집기 서비스 대신, 유니버설 편집기 서비스의 로컬 복사본이 로컬 개발에 사용됩니다. 로컬 서비스는 Universal Editor와 AEM SDK를 바인딩하므로 로컬 Universal Editor 서비스 메타데이터를 WKND Teams React 앱에 추가하겠습니다.
+Adobe에서 호스팅하는 유니버설 편집기 서비스 대신, 유니버설 편집기 서비스의 로컬 복사본이 로컬 개발에 사용됩니다. 로컬 서비스는 범용 편집기 및 AEM SDK을 바인딩하므로 로컬 범용 편집기 서비스 메타데이터를 WKND Teams React 앱에 추가하겠습니다.
 
-이러한 구성 설정은 HTML 파일에 `<meta>` 태그로 저장됩니다. 로컬 유니버설 편집기 서비스 메타데이터의 구문은 다음과 같습니다.
+이러한 구성 설정은 HTML 파일에서도 `<meta>` 태그로 저장됩니다. 로컬 유니버설 편집기 서비스 메타데이터의 구문은 다음과 같습니다.
 
 ```html
 <meta name="urn:adobe:aue:config:service" content="<url>">
@@ -212,7 +212,7 @@ _팀 제목 및 팀 설명_&#x200B;과 같은 WKND Teams React 앱의 콘텐츠�
 
    ![유니버설 편집기 - WKND 팀 제목 및 설명 편집 가능](./assets/universal-editor-wknd-teams-title-desc-editable.png)
 
-1. 인라인 편집 또는 속성 레일을 사용하여 팀 제목이나 설명을 편집하려고 하면 로드 회전자가 표시되지만 콘텐츠를 편집할 수는 없습니다. 왜냐하면 범용 편집기는 콘텐츠 로드 및 저장에 대한 AEM 리소스 세부 사항을 알지 못하기 때문입니다.
+1. 인라인 편집 또는 속성 레일을 사용하여 팀 제목이나 설명을 편집하려고 하면 로드 회전자가 표시되지만 콘텐츠를 편집할 수는 없습니다. 왜냐하면 범용 편집기는 콘텐츠 로드 및 저장에 대한 AEM 리소스 세부 사항을 인식하지 못합니다.
 
    ![유니버설 편집기 - WKND 팀 제목 및 설명 로드](./assets/universal-editor-wknd-teams-title-desc-editable-loading.png)
 
@@ -252,11 +252,11 @@ _팀 제목 및 팀 설명_&#x200B;과 같은 WKND Teams React 앱의 콘텐츠�
 
    `data-aue-resource` 특성 값은 팀 콘텐츠 조각의 AEM 리소스 경로입니다. `urn:aemconnection:` 접두사는 연결 메타데이터에 정의된 콘텐츠 원본의 짧은 이름을 사용합니다.
 
-1. WKND Teams React 앱을 로드하는 브라우저에서 유니버설 편집기 페이지를 새로 고칩니다. 이제 최상위 팀 요소를 편집할 수 있지만 속성 레일이 여전히 콘텐츠를 로드하지 않고 있음을 알 수 있습니다. 브라우저의 네트워크 탭에 콘텐츠를 로드하는 `details` 요청에 대한 401 Unauthorized 오류가 표시됩니다. 인증에 IMS 토큰을 사용하려고 하지만 로컬 AEM SDK는 IMS 인증을 지원하지 않습니다.
+1. WKND Teams React 앱을 로드하는 브라우저에서 유니버설 편집기 페이지를 새로 고칩니다. 이제 최상위 팀 요소를 편집할 수 있지만 속성 레일이 여전히 콘텐츠를 로드하지 않고 있음을 알 수 있습니다. 브라우저의 네트워크 탭에 콘텐츠를 로드하는 `details` 요청에 대한 401 Unauthorized 오류가 표시됩니다. 인증에 IMS 토큰을 사용하려고 하지만 로컬 AEM SDK에서 IMS 인증을 지원하지 않습니다.
 
    ![유니버설 편집기 - WKND 팀 편집 가능](./assets/universal-editor-wknd-teams-team-editable.png)
 
-1. 401 승인되지 않은 오류를 수정하려면 범용 편집기의 **Authentication headers** 옵션을 사용하여 로컬 AEM SDK 인증 세부 정보를 유니버설 편집기에 제공해야 합니다. 로컬 AEM SDK로 `admin:admin` 자격 증명에 대해 값을 `Basic YWRtaW46YWRtaW4=`(으)로 설정합니다.
+1. 401 Unauthorized 오류를 수정하려면 유니버설 편집기의 **Authentication headers** 옵션을 사용하여 로컬 AEM SDK 인증 세부 정보를 유니버설 편집기에 제공해야 합니다. 로컬 AEM SDK으로 `admin:admin` 자격 증명에 대해 값을 `Basic YWRtaW46YWRtaW4=`(으)로 설정합니다.
 
    ![유니버설 편집기 - 인증 헤더 추가](./assets/universal-editor-wknd-teams-team-editable-auth.png)
 
@@ -266,9 +266,9 @@ _팀 제목 및 팀 설명_&#x200B;과 같은 WKND Teams React 앱의 콘텐츠�
 
 #### 모자 밑
 
-속성 레일은 로컬 범용 편집기 서비스를 사용하여 AEM 리소스의 콘텐츠를 로드합니다. 브라우저의 네트워크 탭을 사용하여 컨텐츠를 로드하기 위해 로컬 유니버설 편집기 서비스(`https://localhost:8001/details`)에 대한 POST 요청을 볼 수 있습니다.
+속성 레일은 로컬 범용 편집기 서비스를 사용하여 AEM 리소스의 콘텐츠를 로드합니다. 브라우저의 네트워크 탭을 사용하면 로컬 유니버설 편집기 서비스(`https://localhost:8001/details`)에 콘텐츠 로드를 위한 POST 요청을 볼 수 있습니다.
 
-인라인 편집 또는 속성 레일을 사용하여 콘텐츠를 편집할 때 로컬 범용 편집기 서비스를 사용하여 변경 사항이 AEM 리소스에 다시 저장됩니다. 브라우저의 네트워크 탭을 사용하여 콘텐츠를 저장하기 위한 로컬 유니버설 편집기 서비스(`https://localhost:8001/update` 또는 `https://localhost:8001/patch`)에 대한 POST 요청을 볼 수 있습니다.
+인라인 편집 또는 속성 레일을 사용하여 콘텐츠를 편집할 때 로컬 유니버설 편집기 서비스를 사용하여 변경 사항이 AEM 리소스에 다시 저장됩니다. 브라우저의 네트워크 탭을 사용하여 콘텐츠를 저장하기 위한 로컬 유니버설 편집기 서비스(`https://localhost:8001/update` 또는 `https://localhost:8001/patch`)에 대한 POST 요청을 볼 수 있습니다.
 
 ![유니버설 편집기 - WKND 팀 편집 가능](./assets/universal-editor-under-the-hood-request.png)
 
@@ -311,7 +311,7 @@ _팀 제목 및 팀 설명_&#x200B;과 같은 WKND Teams React 앱의 콘텐츠�
    export default Teams;
    ```
 
-   팀 구성원이 AEM에 `Person` 콘텐츠 조각으로 저장되어 콘텐츠의 이동/삭제 가능한 부분을 표시하는 데 도움이 되므로 `data-aue-type` 특성의 값은 `component`입니다.
+   팀 구성원이 AEM에서 `Person` 콘텐츠 조각으로 저장되고 콘텐츠의 이동/삭제 가능한 부분을 표시하는 데 도움이 되므로 `data-aue-type` 특성의 값은 `component`입니다.
 
 1. WKND Teams React 앱을 로드하는 브라우저에서 유니버설 편집기 페이지를 새로 고칩니다. 이제 속성 레일을 사용하여 팀원을 편집할 수 있습니다.
 
@@ -325,7 +325,7 @@ _팀 제목 및 팀 설명_&#x200B;과 같은 WKND Teams React 앱의 콘텐츠�
 
 지금까지 기존 콘텐츠를 편집 가능하게 만들었지만 새 콘텐츠를 추가하려면 어떻게 합니까? 유니버설 편집기를 사용하여 WKND 팀에 팀원을 추가 또는 삭제하는 기능을 추가하겠습니다. 따라서 콘텐츠 작성자는 AEM으로 이동하여 팀원을 추가하거나 삭제할 필요가 없습니다.
 
-그러나 빠른 요약하면 WKND 팀 멤버는 AEM에서 `Person` 콘텐츠 조각으로 저장되고 `teamMembers` 속성을 사용하여 팀 콘텐츠 조각과 연결됩니다. AEM에서 모델 정의를 검토하려면 [my-project](http://localhost:4502/libs/dam/cfm/models/console/content/models.html/conf/my-project)을(를) 방문하세요.
+그러나 빠른 요약하면 WKND 팀원은 AEM에서 `Person` 콘텐츠 조각으로 저장되고 `teamMembers` 속성을 사용하여 팀 콘텐츠 조각과 연결됩니다. AEM에서 모델 정의를 검토하려면 [my-project](http://localhost:4502/libs/dam/cfm/models/console/content/models.html/conf/my-project)을(를) 방문하세요.
 
 1. 먼저 구성 요소 정의 파일 `/public/static/component-definition.json`을(를) 만듭니다. 이 파일에는 `Person` 콘텐츠 조각에 대한 구성 요소 정의가 포함되어 있습니다. `aem/cf` 플러그인을 사용하면 적용할 기본값을 제공하는 모델 및 템플릿을 기반으로 콘텐츠 조각을 삽입할 수 있습니다.
 
@@ -413,7 +413,7 @@ _팀 제목 및 팀 설명_&#x200B;과 같은 WKND Teams React 앱의 콘텐츠�
 
 #### 모자 밑
 
-콘텐츠 추가 및 삭제 작업은 로컬 범용 편집기 서비스에서 수행합니다. AEM에 콘텐츠를 추가하거나 삭제하기 위해 로컬 유니버설 편집기 서비스에 자세한 페이로드를 사용하여 `/add` 또는 `/remove`에 대한 POST 요청이 이루어집니다.
+콘텐츠 추가 및 삭제 작업은 로컬 범용 편집기 서비스에서 수행합니다. 자세한 페이로드를 사용하여 `/add` 또는 `/remove`에 대한 POST 요청은 콘텐츠를 AEM에 추가하거나 삭제하기 위해 로컬 유니버설 편집기 서비스에 수행됩니다.
 
 ## 솔루션 파일
 

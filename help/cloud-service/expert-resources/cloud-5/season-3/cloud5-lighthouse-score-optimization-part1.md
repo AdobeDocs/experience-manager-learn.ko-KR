@@ -1,7 +1,7 @@
 ---
 title: 등대 점수 최적화 - 1부
-description: 등대 점수가 무엇인지, 그리고 Edge Delivery Services에서 가능한 최고의 등대 점수를 얻기 위한 기술에 대해 알아봅니다.
-version: Cloud Service
+description: 등대 점수가 무엇이며 Edge Delivery Services에서 가능한 최고의 등대 점수를 얻기 위한 기술에 대해 알아봅니다.
+version: Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Development
 role: Developer, Leader, User
@@ -13,7 +13,7 @@ recommendations: noDisplay, noCatalog
 last-substantial-update: 2024-09-10T00:00:00Z
 jira: KT-16146
 exl-id: 32ffe5fd-48b6-4bc6-b79c-5b14a335ecfd
-source-git-commit: 5976e220ac54e901be5f064dbf541d901fccfec5
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '67'
 ht-degree: 2%
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 # 등대 점수 최적화 - 1부
 
-클라우드 아키텍트 Varun Mitra와 함께 등대 점수가 무엇이며 Edge Delivery Services에서 가장 좋은 등대 점수를 얻기 위한 기술에 대해 알아봅니다.
+Cloud Architect의 Varun Mitra와 함께 Edge Delivery Services에서 등대 점수가 얼마나 되는지, 그리고 등대 점수에서 최고의 점수를 얻기 위한 기술에 대해 알아보십시오.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3433378/?learn=on)
 

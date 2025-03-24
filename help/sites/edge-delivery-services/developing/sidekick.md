@@ -1,7 +1,7 @@
 ---
 title: AEM Sidekick 및 Edge Delivery Services
-description: Edge Delivery Services에서 Sidekick을 사용하여 콘텐츠를 실시간으로 가져옵니다.
-version: 6.5, Cloud Service
+description: Edge Delivery Services에서 Sidekick을 사용하여 콘텐츠를 실시간으로 가져올 수 있습니다.
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Development
 role: Developer
@@ -12,7 +12,7 @@ jira: KT-14481
 thumbnail: 3425715.jpeg
 duration: 136
 exl-id: 47fc8774-43c1-4e0b-8101-cff628059b09
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '31'
 ht-degree: 6%

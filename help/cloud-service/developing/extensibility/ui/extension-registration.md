@@ -2,7 +2,7 @@
 title: AEM UI 확장 등록
 description: AEM UI 확장을 등록하는 방법에 대해 알아봅니다.
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Beginner
@@ -11,7 +11,7 @@ jira: KT-11603
 last-substantial-update: 2023-06-02T00:00:00Z
 exl-id: ef2290d9-ba40-429b-b10d-e82d6c1c20f6
 duration: 85
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 0%
@@ -55,7 +55,7 @@ function App(props) {
 
 `ExtensionRegistration.js`은(는) 확장의 인덱스 경로를 통해 즉시 로드되어야 하며, 확장의 등록 지점을 처리합니다.
 
-[App Builder 앱 확장을 초기화](./app-initialization.md)할 때 선택한 AEM UI 확장 템플릿에 따라 다른 확장 지점이 지원됩니다.
+[AEM 앱 확장을 초기화](./app-initialization.md)할 때 선택한 App Builder UI 확장 템플릿에 따라 다른 확장 지점이 지원됩니다.
 
 + [콘텐츠 조각 UI 확장 지점](./content-fragments/overview.md#extension-points)
 
@@ -73,7 +73,7 @@ AEM UI 확장은 사용자 지정 로직을 실행하여 확장이 표시되는 
 + AEM 호스트(`new URLSearchParams(window.location.search).get('repo')`)를 사용하여 확장을 로드해야 하는지 확인합니다.
    + 특정 프로그램의 일부인 AEM 환경에서만 확장을 표시합니다(아래 예제에 표시됨).
    + 특정 AEM 환경(AEM 호스트)에서만 확장을 표시합니다.
-+ [Adobe I/O Runtime 작업](./runtime-action.md)을 사용하여 AEM에 대한 HTTP 호출을 수행하여 현재 사용자에게 확장이 표시되어야 하는지 확인합니다.
++ [Adobe I/O Runtime 작업](./runtime-action.md)을 사용하여 현재 사용자에게 확장이 표시되어야 하는지 확인하기 위해 AEM에 대한 HTTP 호출을 만듭니다.
 
 아래 예제에서는 확장을 `p12345` 프로그램의 모든 환경으로 제한하는 방법을 보여 줍니다.
 

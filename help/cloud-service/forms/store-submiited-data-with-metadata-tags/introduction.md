@@ -5,13 +5,13 @@ feature: Adaptive Forms
 type: Documentation
 role: Developer
 level: Beginner
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Integrations
 jira: KT-14501
 duration: 24
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 exl-id: a8531e82-18cd-4b32-8148-d6fc5f6e51c6
-source-git-commit: b4df652fcda0af5d01077b97aa7fa17cfe2abf4b
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '136'
 ht-degree: 3%
@@ -23,7 +23,7 @@ ht-degree: 3%
 이 자습서에서는 Azure 스토리지에 Blob 인덱스 태그를 사용하여 양식 제출을 저장하는 간단한 사용 사례를 구현하는 방법을 알아봅니다. Blob 인덱스 태그는 키-값 인덱스 태그 속성을 사용하여 데이터 관리 및 검색 기능을 제공합니다. 단일 컨테이너 내에서 또는 저장소 계정의 모든 컨테이너에서 개체를 분류하고 찾을 수 있습니다.
 ![blob-index-tags](assets/blob-with-index-tags.png)
 
-## 전제 조건
+## 사전 요구 사항
 
 * AEM Forms CS 사용 경험
 * Cloud Manager를 사용하여 코드를 배포한 경험이 있습니다.

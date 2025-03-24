@@ -2,7 +2,7 @@
 title: AEM Sites을 사용하여 페이지 게시
 description: Adobe Experience Manager Sites은 콘텐츠 게시 및 게시 취소를 위한 몇 가지 옵션을 제공합니다. 이 비디오에서는 다양한 방법과 그 기능에 대해 살펴봅니다.
 feature-set: Experience Manager
-version: 6.4, 6.5, Cloud Service
+version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 jira: KT-4322
 thumbnail: 32193.jpg
 feature: Publishing
@@ -12,7 +12,7 @@ level: Beginner
 doc-type: Feature Video
 exl-id: 6dc66195-f438-4366-a5e2-486145e4b6d7
 duration: 400
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '128'
 ht-degree: 1%
@@ -30,9 +30,9 @@ AEM Sites은 콘텐츠 게시 및 게시 취소를 위한 몇 가지 옵션을 �
 AEM Sites은 작성자의 워크플로를 기반으로 하여 콘텐츠를 게시하거나 게시를 취소할 수 있는 몇 가지 방법을 제공합니다.
 
 * AEM Sites 페이지 편집기에서 현재 페이지 게시
-   * 현재 페이지를 Publish에 추가하고 참조를 선택적으로 선택할 수 있습니다.
+   * 현재 페이지를 게시하고 참조를 선택적으로 선택할 수 있습니다.
    * 현재 페이지 게시 취소
-* AEM Sites 관리자의 빠른 Publish
+* AEM Sites 관리자의 빠른 게시
    * 선택한 페이지를 한 번 클릭으로 게시하고 게시되지 않은 모든 참조를 자동으로 게시합니다.
 * AEM Sites 관리자의 게시 관리
    * 벌크 게시 및 게시 취소 컨텐츠를 자세히 관리할 수 있는 강력한 콘솔.

@@ -1,18 +1,18 @@
 ---
-title: Adobe Experience Manager Forms을 Cloud Service과 Document Cloud 통합
+title: Document Cloud과 Adobe Experience Manager Forms as Cloud Service 통합
 description: Document Cloud REST API를 사용하여 PDF 만들기
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 thumbnail: 333241.jpg
 jira: KT-7857
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 exl-id: dbff8764-67d5-43fa-bd41-918c638a9afa
 duration: 89
-source-git-commit: b4df652fcda0af5d01077b97aa7fa17cfe2abf4b
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '45'
 ht-degree: 2%

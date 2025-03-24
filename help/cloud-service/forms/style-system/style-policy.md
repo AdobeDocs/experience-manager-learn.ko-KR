@@ -5,12 +5,13 @@ solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: Adaptive Forms
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 jira: KT-16276
-source-git-commit: 86d282b426402c9ad6be84e9db92598d0dc54f85
+exl-id: 52205a93-d03c-430c-a707-b351ab333939
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '139'
 ht-degree: 3%
@@ -19,7 +20,7 @@ ht-degree: 3%
 
 # 구성 요소 정책에 스타일 정의
 
-* 로컬 클라우드 지원 AEM 인스턴스에 로그인하고 도구로 이동합니다. | 일반 | 템플릿 | 프로젝트 이름.
+* 로컬 클라우드 지원 AEM 인스턴스에 로그인하고 도구로 이동합니다 | 일반 | 템플릿 | 프로젝트 이름.
 
 * 편집 모드에서 **핵심 구성 요소가 있는 공백** 템플릿을 선택하여 엽니다.
 * 버튼 구성 요소의 정책 아이콘을 클릭하여 정책 편집기를 엽니다.

@@ -1,7 +1,7 @@
 ---
 title: AEM Assets Assets 보기용 비디오 플레이리스트
-description: 제품 지식을 향상하기 위해 선별된 비디오 플레이리스트로 Assets 보기에서 AEM Assetsas a Cloud Service 를 탐색하는 방법에 대해 알아보십시오.
-version: Cloud Service
+description: 제품 지식을 향상하기 위해 선별된 비디오 플레이리스트로 Assets 보기에서 AEM Assets as a Cloud Service을 탐색하는 방법에 대해 알아보십시오.
+version: Experience Manager as a Cloud Service
 topic: Content Management
 role: User
 level: Beginner
@@ -9,7 +9,7 @@ last-substantial-update: 2024-11-20T00:00:00Z
 doc-type: Catalog
 duration: 60
 exl-id: 76af4062-4d8d-4908-bd3d-ce5a8af2111a
-source-git-commit: cce071c22a14669344318ad00d57a4fccc956a33
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 1%
@@ -20,11 +20,11 @@ ht-degree: 1%
 
 ![AEM Assets Assets 보기](./assets/assets-view.png){align="center"}
 
-이러한 목록을 탐색하여 AEM Assets as a Cloud Service Assets 재생 보기, 구성, 최적화 사용 및 크리에이티브 워크플로우와의 원활한 통합을 다룹니다. AEM Assetsas a Cloud Service 으로 성공하는 데 필요한 통찰력을 얻으십시오.
+이러한 플레이리스트를 탐색하여 구성, 최적화, 사용 및 크리에이티브 워크플로우와의 원활한 통합을 포함하여 AEM Assets as a Cloud Service Assets 보기를 마스터합니다. AEM Assets as a Cloud Service으로 성공하는 데 필요한 통찰력을 얻으십시오.
 
 ## Assets 보기 구성
 
-AEM Assetsas a Cloud Service 가 팀 및 프로젝트에 원활하게 작동하도록 하기 위한 설정 및 구성을 시작하십시오.
+필수 설정 및 구성을 시작하여 AEM Assets as a Cloud Service이 팀 및 프로젝트에서 원활하게 작동하도록 합니다.
 
 <!-- CARDS
 
@@ -157,7 +157,7 @@ Pro처럼 Assets 보기 인터페이스를 탐색하고 자산을 효율적으�
 
 ## 크리에이티브 워크플로우와 AEM Assets 연결
 
-AEM Assetsas a Cloud Service 과 크리에이티브 도구를 통합하여 원활한 공동 작업을 수행할 수 있도록 함으로써 통합적이고 효율적인 워크플로를 보장합니다.
+AEM Assets as a Cloud Service과 크리에이티브 도구를 통합하여 통합적이고 효율적인 워크플로를 보장함으로써 원활한 공동 작업을 수행할 수 있습니다.
 
 <!-- CARDS
 
@@ -172,8 +172,8 @@ AEM Assetsas a Cloud Service 과 크리에이티브 도구를 통합하여 원�
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-manage-creative-workflows-with-workfront-and-assets-essentials" title="Workfront 및 Assets Essentials을 사용하여 크리에이티브 워크플로 관리" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_1781139425d77174a992697a33d097a8bd5b54d5b.jpeg?width=400&format=pjpg&optimize=medium" alt="Workfront 및 Assets Essentials을 사용하여 크리에이티브 워크플로 관리"
+                    <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-manage-creative-workflows-with-workfront-and-assets-essentials" title="Workfront 및 Assets Essentials를 사용하여 Creative 워크플로 관리" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_1781139425d77174a992697a33d097a8bd5b54d5b.jpeg?width=400&format=pjpg&optimize=medium" alt="Workfront 및 Assets Essentials를 사용하여 Creative 워크플로 관리"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -181,7 +181,7 @@ AEM Assetsas a Cloud Service 과 크리에이티브 도구를 통합하여 원�
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-manage-creative-workflows-with-workfront-and-assets-essentials" target="_blank" rel="referrer" title="Workfront 및 Assets Essentials을 사용하여 크리에이티브 워크플로 관리">Workfront 및 AEM Assets을 사용하여 Creative 워크플로 관리</a>
+                        <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-manage-creative-workflows-with-workfront-and-assets-essentials" target="_blank" rel="referrer" title="Workfront 및 Assets Essentials를 사용하여 Creative 워크플로 관리">Workfront 및 AEM Assets을 사용하여 Creative 워크플로 관리</a>
                     </p>
                     <p class="is-size-6">Adobe Workfront 및 AEM Assets을 통해 귀사에서 크리에이티브 워크플로우를 관리하는 방법을 알아봅니다.</p>
                 </div>

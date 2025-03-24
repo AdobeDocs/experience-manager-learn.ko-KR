@@ -1,7 +1,7 @@
 ---
 title: 저장소 현대화
 description: 저장소 현대화, 변경 가능한 콘텐츠 및 변경 불가능한 콘텐츠, 패키지 구조 및 저장소 현대화 CLI 도구에 대해 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Developer Tools
 topic: Migration, Upgrade
 role: Developer
@@ -10,7 +10,7 @@ jira: KT-8630
 thumbnail: 336958.jpeg
 exl-id: e9bd9035-1f2d-4a34-a581-9c1ec2c7bc04
 duration: 1305
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 0%
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 ## 주요 활동
 
-* [Adobe I/O 리포지토리 현대화 도구](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationrepository-modernizer) 도구를 사용하여 AEM as a Cloud Service 프로젝트의 예상 구조와 일치하도록 프로젝트를 다시 구성하십시오.
+* [Adobe I/O Repository Modernizer](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationrepository-modernizer) 도구를 사용하여 AEM as a Cloud Service 프로젝트의 예상 구조와 일치하도록 프로젝트를 다시 구성하십시오.
 * 업데이트된 코드 베이스에서 빌드 오류를 수동으로 조정하고 수정합니다.
-* [로컬 개발 환경](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=ko-KR)을 설정하고 업데이트된 코드 베이스를 배포합니다. 프로젝트가 안정적인 상태가 될 때까지 반복합니다.
+* [로컬 개발 환경](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=ko)을 설정하고 업데이트된 코드 베이스를 배포합니다. 프로젝트가 안정적인 상태가 될 때까지 반복합니다.
 * 업데이트된 코드 베이스를 AEM as a Cloud Service 개발 환경에 배포하고 계속 확인합니다.

@@ -1,7 +1,7 @@
 ---
 title: OpenAPI 기반 AEM API
 description: 인증 지원, 주요 개념 및 Adobe API에 액세스하는 방법을 포함하여 OpenAPI 기반 AEM API에 대해 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Developing
 topic: Development, Architecture, Content Management
 role: Architect, Developer, Leader
@@ -11,13 +11,13 @@ jira: KT-16515
 thumbnail: KT-16515.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
-source-git-commit: e4cf47e14fa7dfc39ab4193d35ba9f604eabf99f
+exl-id: 0eb0054d-0c0a-4ac0-b7b2-fdaceaa6479b
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '835'
 ht-degree: 1%
 
 ---
-
 
 # OpenAPI 기반 AEM API
 
@@ -188,4 +188,3 @@ OpenAPI 기반 AEM API에 액세스할 수 있도록 AEM as a Cloud Service 환�
     </div>
 </div>
 <!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
-

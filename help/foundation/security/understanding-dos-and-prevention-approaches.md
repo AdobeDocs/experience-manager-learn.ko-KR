@@ -1,7 +1,7 @@
 ---
 title: DoS/DDoS 방지 이해
 description: AEM에 대한 DoS 및 DDoS 공격을 예방하고 완화하는 방법에 대해 알아봅니다.
-version: 6.5, Cloud Service
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: Security
 topic: Security, Development
 role: Admin, Architect, Developer
@@ -11,7 +11,7 @@ duration: 75
 last-substantial-update: 2024-03-30T00:00:00Z
 jira: KT-15219
 exl-id: 1d7dd829-e235-4884-a13f-b6ea8f6b4b0b
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 1%
@@ -36,19 +36,19 @@ AEM 환경에서 DoS 및 DDoS 공격을 예방하고 완화하는 데 사용할 
             <td><strong>설명</strong></td>
             <td><strong>AEM as a Cloud Service</strong></td>
             <td><strong>AEM 6.5 (AMS)</strong></td>
-            <td><strong>AEM 6.5(온프레미스)</strong></td>
+            <td><strong>AEM 6.5 (온프레미스)</strong></td>
         </tr>
         <tr>
-            <td>WAF(Web Application Firewall)</td>
+            <td>웹 애플리케이션 방화벽(WAF)</td>
             <td>다양한 유형의 공격으로부터 웹 애플리케이션을 보호하기 위해 설계된 보안 솔루션입니다.</td>
             <td>
             <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/examples-and-analysis#waf-rules" target="_blank">WAF-DDoS 보호 라이선스</a></td>
-            <td>AMS 계약을 통한 <a href="https://docs.aws.amazon.com/waf/" target="_blank">AWS</a> 또는 <a href="https://azure.microsoft.com/en-us/products/web-application-firewall" target="_blank">Azure</a> WAF.</td>
+            <td>AMS 계약을 통해 <a href="https://docs.aws.amazon.com/waf/" target="_blank">AWS</a> 또는 <a href="https://azure.microsoft.com/en-us/products/web-application-firewall" target="_blank">Azure</a> WAF.</td>
             <td>선호하는 WAF</td>
         </tr>
         <tr>
             <td>ModSecurity</td>
-            <td>ModSecurity(일명 'mod_security' Apache 모듈)는 웹 애플리케이션에 대한 다양한 공격으로부터 보호하는 오픈 소스 크로스 플랫폼 솔루션입니다.<br/> AEM as a Cloud ServiceAEM Publish 에서는 AEM Author 서비스 앞에 Apache 웹 서버와 AEM Dispatcher이 없으므로 Apache Author 서비스에만 해당됩니다.</td>
+            <td>ModSecurity(일명 'mod_security' Apache 모듈)는 웹 애플리케이션에 대한 다양한 공격으로부터 보호하는 오픈 소스 크로스 플랫폼 솔루션입니다.<br/> AEM as a Cloud Service에서는 AEM Author 서비스 앞에 Apache 웹 서버와 AEM Dispatcher이 없으므로 AEM Publish 서비스에만 적용할 수 있습니다.</td>
             <td colspan="3"><a href="https://experienceleague.adobe.com/ko/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection" target="_blank">ModSecurity 활성화 </a></td>
         </tr>
         <tr>
@@ -61,7 +61,7 @@ AEM 환경에서 DoS 및 DDoS 공격을 예방하고 완화하는 데 사용할 
     </tbody>
 </table>
 
-## Post 사고 분석 및 지속적인 개선
+## 사고 후 분석 및 지속적인 개선
 
 DoS/DDoS 공격을 식별하고 방지하는 단일 크기 표준 흐름은 없지만 조직의 보안 프로세스에 따라 다릅니다. **인시던트 후 분석 및 지속적인 개선**&#x200B;은(는) 프로세스의 중요한 단계입니다. 다음은 고려해야 할 몇 가지 모범 사례입니다.
 

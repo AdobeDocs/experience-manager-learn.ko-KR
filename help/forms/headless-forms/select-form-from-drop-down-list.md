@@ -2,14 +2,14 @@
 title: 사용 가능한 양식 목록에서 양식 선택
 description: listforms API를 사용하여 드롭다운 목록 채우기
 feature: Adaptive Forms
-version: 6.5
+version: Experience Manager 6.5
 jira: KT-13346
 topic: Development
 role: User
 level: Intermediate
 exl-id: 49b6a172-8c96-4fc6-8d31-c2109f65faac
 duration: 88
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 1%

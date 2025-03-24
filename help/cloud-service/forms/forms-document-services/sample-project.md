@@ -4,18 +4,18 @@ description: 사용자 환경에서 가져오고 실행할 수 있는 샘플 프
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Document Services
 topic: Development
 jira: KT-17479
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
-source-git-commit: a72f533b36940ce735d5c01d1625c6f477ef4850
+exl-id: f1fcc4bb-cc31-45e8-b7bb-688ef6a236bb
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 0%
 
 ---
-
 
 # 로컬 환경에서 테스트합니다.
 
@@ -37,4 +37,3 @@ ht-degree: 0%
 
 * 실행 확인
    * 터미널 창에서 출력 확인
-

@@ -1,7 +1,7 @@
 ---
 title: AEM as a Cloud Service 콘텐츠 마이그레이션 FAQ
 description: AEM as a Cloud Service으로의 콘텐츠 마이그레이션에 대해 자주 묻는 질문에 대한 답변을 얻으십시오.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: article
 topic: Migration
 feature: Migration
@@ -11,7 +11,7 @@ jira: KT-11200
 thumbnail: kt-11200.jpg
 exl-id: bdec6cb0-34a0-4a28-b580-4d8f6a249d01
 duration: 399
-source-git-commit: e29eaefb20d466126d0d31ad8eb598b63a0cebcd
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1884'
 ht-degree: 0%
@@ -37,7 +37,7 @@ CTT 관련 Adobe 지원 티켓을 만드는 동안 자세한 내용을 제공하
 
 ## 일반 콘텐츠 마이그레이션 질문
 
-### Q: 콘텐츠를 Cloud Service으로 AEM에 마이그레이션하는 다양한 방법은 무엇입니까?
+### Q: 콘텐츠를 AEM as Cloud Services로 마이그레이션하는 다양한 방법은 무엇입니까?
 
 세 가지 다른 방법을 사용할 수 있습니다
 
@@ -47,7 +47,7 @@ CTT 관련 Adobe 지원 티켓을 만드는 동안 자세한 내용을 제공하
 
 ### 질문: CTT를 사용하여 전송할 수 있는 콘텐츠 양에 제한이 있습니까?
 
-아니. 도구로서의 CTT는 AEM 소스에서 추출하여 AEMaaCS로 수집할 수 있습니다. 그러나 AEMaaCS 플랫폼에는 마이그레이션 전에 고려해야 하는 특정 제한이 있습니다.
+아니요. 도구로서의 CTT는 AEM 소스에서 추출하여 AEMaaCS로 수집할 수 있습니다. 그러나 AEMaaCS 플랫폼에는 마이그레이션 전에 고려해야 하는 특정 제한이 있습니다.
 
 자세한 내용은 [클라우드 마이그레이션 사전 요구 사항](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html)을 참조하세요.
 
@@ -101,7 +101,7 @@ CTT 추출 프로세스에 사용되는 리소스의 양은 노드 수, Blob 수
 
 ### Q: BPA 보고서에는 누락된 원본 렌디션과 관련된 항목이 표시됩니다. 추출하기 전에 원천 세척해야 하나요?
 
-예. 원본 렌디션이 누락되었다는 것은 에셋 바이너리가 애초에 제대로 업로드되지 않았다는 것을 의미합니다. 잘못된 데이터로 간주하여 필요한 경우 패키지 관리자를 사용하여 백업을 검토하고 소스 AEM에서 제거한 후 추출을 실행하십시오. 잘못된 데이터는 에셋 처리 단계에 부정적인 결과를 갖게 됩니다.
+예. 원본 렌디션이 누락되었다는 것은 에셋 바이너리가 애초에 제대로 업로드되지 않았다는 것을 의미합니다. 잘못된 데이터로 간주하여 필요한 경우 패키지 관리자를 사용하여 백업하고 소스 AEM에서 제거한 후 추출을 실행하십시오. 잘못된 데이터는 에셋 처리 단계에 부정적인 결과를 갖게 됩니다.
 
 ### Q: BPA 보고서에 폴더에 대한 `jcr:content` 노드 누락과 관련된 항목이 있습니다. 어떻게 해야 하나요?
 
@@ -148,17 +148,17 @@ CTT 프로세스에는 아래 리소스에 대한 연결이 필요합니다.
 
 [소스 연결](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#source-environment-connectivity)에 대한 자세한 내용은 설명서를 참조하세요.
 
-## 에셋 처리 Dynamic Media 관련 질문
+## 자산 처리 Dynamic Media 관련 질문
 
 ### Q: AEMaaCS에서 에셋을 수집한 후 자동으로 재처리됩니까?
 
-아니. 자산을 처리하려면 재처리 요청이 시작되어야 합니다.
+아니요. 자산을 처리하려면 재처리 요청이 시작되어야 합니다.
 
 ### Q: AEMaaCS에서 수집 후 자산이 자동으로 다시 인덱싱됩니까?
 
 예. 자산은 AEMaaCS에서 사용할 수 있는 색인 정의에 따라 다시 색인화됩니다.
 
-### Q: 소스 AEM은 Dynamic Media과 통합되었습니다. 콘텐츠 마이그레이션 전에 고려해야 할 구체적인 사항이 있습니까?
+### Q: 소스 AEM은 Dynamic Media와 통합되었습니다. 콘텐츠 마이그레이션 전에 고려해야 할 구체적인 사항이 있습니까?
 
 예. 소스 AEM에 Dynamic Media 통합이 있는 경우 다음 사항을 고려하십시오.
 
@@ -185,7 +185,7 @@ CTT 프로세스에는 아래 리소스에 대한 연결이 필요합니다.
    + 이 마이그레이션 증명을 사용하여 마이그레이션 기간 측정, 테스트, 기타 모든 기능 검증
 + 마지막으로 Go-Live가 있는 주 전에 Wipe=true 마이그레이션을 수행합니다.
    + AEMaaCS에서 Dynamic Media 연결
-   + AEM 온-프레미스 소스에서 DM 구성 연결 끊기
+   + AEM 온-프레미스 소스에서 DM 구성 연결 해제
 
 이 옵션을 사용하면 마이그레이션을 일대일(즉, 온프레미스 개발 → AEMaaCS 개발 등)로 실행할 수 있습니다. 각 환경에서 DM 구성 이동
 
@@ -207,7 +207,7 @@ CTT 프로세스에는 아래 리소스에 대한 연결이 필요합니다.
 
 ## 추가 리소스
 
-+ [클라우드에서 Experience Manager으로 마이그레이션하기 위한 팁과 요령( Summit 2022)](https://business.adobe.com/summit/2022/sessions/tips-and-tricks-for-migrating-to-experience-manage-tw109.html)
++ [클라우드에서 Experience Manager(Summit 2022)로 마이그레이션하기 위한 팁과 요령](https://business.adobe.com/summit/2022/sessions/tips-and-tricks-for-migrating-to-experience-manage-tw109.html)
 
 + [CTT 전문가 시리즈 비디오](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/content-migration/content-transfer-tool.html)
 

@@ -1,7 +1,7 @@
 ---
 title: 사용자 정의 네임스페이스
 description: 사용자 지정 네임스페이스를 정의하고 AEM as a Cloud Service에 배포하는 방법을 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development, Content Management
 feature: Metadata
 role: Developer
@@ -11,7 +11,7 @@ thumbnail: 3412319.jpg
 last-substantial-update: 2022-12-14T00:00:00Z
 exl-id: e86ddc9d-ce44-407a-a20c-fb3297bb0eb2
 duration: 496
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 2%
@@ -26,7 +26,7 @@ ht-degree: 2%
 
 + JCR 시스템 속성에 대한 `jcr`
 + AEM(이전의 Adobe CQ) 속성에 대한 `cq`
-+ DAM 자산에 관련된 AEM 속성의 `dam`
++ DAM 자산과 관련된 AEM 속성의 `dam`
 + 더블린 코어 속성에 대한 `dc`
 
 ... 그리고 많은 다른 사람.

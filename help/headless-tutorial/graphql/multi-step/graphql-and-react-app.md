@@ -1,7 +1,7 @@
 ---
 title: GraphQL API를 사용하여 AEM을 쿼리하는 React 앱 빌드 - AEM Headless 시작하기 - GraphQL
-description: Adobe Experience Manager(AEM) 및 GraphQL을 시작합니다. AEM GraphQL API에서 컨텐츠/데이터를 가져오는 React 앱을 빌드합니다. AEM Headless JS SDK를 사용하는 방법도 알아보십시오.
-version: Cloud Service
+description: Adobe Experience Manager(AEM) 및 GraphQL을 시작합니다. AEM GraphQL API에서 컨텐츠/데이터를 가져오는 React 앱을 빌드합니다. AEM Headless JS SDK을 사용하는 방법도 알아보십시오.
+version: Experience Manager as a Cloud Service
 mini-toc-levels: 1
 jira: KT-6716
 thumbnail: KT-6716.jpg
@@ -11,7 +11,7 @@ role: Developer
 level: Beginner
 exl-id: 772b595d-2a25-4ae6-8c6e-69a646143147
 duration: 410
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1181'
 ht-degree: 0%
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ## 사전 요구 사항
 
-이 다중 파트 자습서의 이전 부분에 설명된 단계가 완료되었거나 [basic-tutorial-solution.content.zip](assets/explore-graphql-api/basic-tutorial-solution.content.zip)이(가) AEM as a Cloud Service 작성자 및 Publish 서비스에 설치되어 있다고 가정합니다.
+이 다중 파트 자습서의 이전 부분에 설명된 단계가 완료되었거나 [basic-tutorial-solution.content.zip](assets/explore-graphql-api/basic-tutorial-solution.content.zip)이(가) AEM as a Cloud Service 작성자 및 게시 서비스에 설치되어 있다고 가정합니다.
 
 _이 장의 IDE 스크린샷은 [Visual Studio 코드](https://code.visualstudio.com/)_&#x200B;에서 가져옵니다.
 
@@ -41,9 +41,9 @@ _이 장의 IDE 스크린샷은 [Visual Studio 코드](https://code.visualstudio
 방법 알아보기:
 
 - 예제 React 앱을 다운로드하여 시작합니다.
-- [AEM Headless JS SDK를 사용하여 AEM의 GraphQL 끝점을 쿼리합니다](https://github.com/adobe/aem-headless-client-js)
-- 팀 및 참조된 멤버 목록을 AEM에 쿼리
-- 팀 구성원의 세부 사항에 대해 AEM 쿼리
+- [AEM Headless JS SDK](https://github.com/adobe/aem-headless-client-js)를 사용하여 AEM의 GraphQL 끝점을 쿼리합니다.
+- AEM에 팀 및 참조된 멤버 목록을 쿼리합니다
+- AEM에서 팀원의 세부 사항을 쿼리합니다
 
 ## 샘플 React 앱 가져오기
 
@@ -69,9 +69,9 @@ React 앱을 다운로드하려면:
 
    ![VSCode의 React 앱](./assets/graphql-and-external-app/react-app-in-vscode.png)
 
-1. AEM as a Cloud Service Publish 서비스에 연결하려면 `.env.development`을(를) 업데이트하십시오.
+1. `.env.development`을(를) 업데이트하여 AEM as a Cloud Service 게시 서비스에 연결합니다.
 
-   - `REACT_APP_HOST_URI`의 값을 AEM as a Cloud Service의 Publish URL로 설정합니다(예: `REACT_APP_HOST_URI=https://publish-p123-e456.adobeaemcloud.com`) 및 `REACT_APP_AUTH_METHOD`의 값을 `none`에 변환
+   - `REACT_APP_HOST_URI`의 값을 AEM as a Cloud Service의 게시 URL로 설정합니다(예: `REACT_APP_HOST_URI=https://publish-p123-e456.adobeaemcloud.com`) 및 `REACT_APP_AUTH_METHOD`의 값을 `none`에 변환
 
    >[!NOTE]
    >
@@ -110,7 +110,7 @@ React 앱을 다운로드하려면:
 
 샘플 React 앱에는 다음 세 가지 주요 부분이 있습니다.
 
-1. `src/api` 폴더에 AEM에 GraphQL 쿼리를 만드는 데 사용되는 파일이 있습니다.
+1. `src/api` 폴더에는 AEM에 GraphQL 쿼리를 만드는 데 사용되는 파일이 포함되어 있습니다.
    - `src/api/aemHeadlessClient.js`은(는) AEM과의 통신에 사용되는 AEM Headless 클라이언트를 초기화하고 내보냅니다.
    - `src/api/usePersistedQueries.js`이(가) [사용자 지정 React 후크를 구현함](https://react.dev/learn/reusing-logic-with-custom-hooks#custom-hooks-sharing-logic-between-components) AEM GraphQL에서 `Teams.js` 및 `Person.js` 보기 구성 요소로 데이터를 반환합니다.
 
@@ -119,13 +119,13 @@ React 앱을 다운로드하려면:
 
 ## AEMHeadless 개체 검토
 
-`aemHeadlessClient.js` 파일에서 AEM과의 통신에 사용되는 `AEMHeadless` 개체를 만드는 방법을 검토하십시오.
+`aemHeadlessClient.js` 파일에서 AEM과 통신하는 데 사용되는 `AEMHeadless` 개체를 만드는 방법을 검토하십시오.
 
 1. `src/api/aemHeadlessClient.js` 열기
 
 1. 1-40행을 검토합니다.
 
-   - JavaScript용 [AEM Headless 클라이언트 ](https://github.com/adobe/aem-headless-client-js)의 11행 `AEMHeadless` 선언을 가져옵니다.
+   - JavaScript용 [AEM Headless 클라이언트](https://github.com/adobe/aem-headless-client-js)의 11행 `AEMHeadless` 선언을 가져옵니다.
 
    - `.env.development`, 14-22행 및 화살표 함수 식 `setAuthorization`, 31-40행에 정의된 변수를 기반으로 한 권한 부여의 구성입니다.
 
@@ -516,4 +516,4 @@ module.exports = function(app) {
 
 ## 축하합니다!{#congratulations}
 
-축하합니다! AEM의 GraphQL API의 데이터를 기본 자습서의 일부로 소비하고 표시할 React 앱을 만들었습니다!
+축하합니다! 기본 자습서의 일부로 AEM의 GraphQL API의 데이터를 사용하고 표시할 React 앱을 만들었습니다!

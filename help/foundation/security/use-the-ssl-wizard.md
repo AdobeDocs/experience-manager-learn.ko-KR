@@ -1,7 +1,7 @@
 ---
 title: AEM에서 SSL 마법사 사용
-description: HTTPS를 통해 실행할 AEM 인스턴스를 더 쉽게 설정할 수 있는 Adobe Experience Manager의 SSL 설정 마법사.
-version: 6.5, Cloud Service
+description: Adobe Experience Manager의 SSL 설정 마법사를 사용하여 HTTPS에서 실행할 AEM 인스턴스를 더 쉽게 설정할 수 있습니다.
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 jira: KT-13839
 doc-type: Technical Video
 topic: Security
@@ -10,7 +10,7 @@ level: Beginner
 exl-id: 4e69e115-12a6-4a57-90da-b91e345c6723
 last-substantial-update: 2023-08-08T00:00:00Z
 duration: 564
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 0%
@@ -88,7 +88,7 @@ _호스트 이름_ 및 _포트_&#x200B;을(를) 업데이트하려면 __SSL 커�
 
 ### 개인 키 및 자체 서명된 인증서 생성
 
-위의 비디오는 자체 서명된 인증서를 사용하는 AEM 작성자 인스턴스에 대한 SSL의 설정 및 구성을 보여 줍니다. [[!DNL OpenSSL]](https://www.openssl.org/)을(를) 사용하는 아래 명령은 마법사의 2단계에서 사용할 개인 키와 인증서를 생성할 수 있습니다.
+위의 비디오에서는 자체 서명된 인증서를 사용하는 AEM 작성자 인스턴스의 SSL 설정 및 구성을 보여 줍니다. [[!DNL OpenSSL]](https://www.openssl.org/)을(를) 사용하는 아래 명령은 마법사의 2단계에서 사용할 개인 키와 인증서를 생성할 수 있습니다.
 
 ```shell
 ### Create Private Key

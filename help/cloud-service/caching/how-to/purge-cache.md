@@ -1,7 +1,7 @@
 ---
 title: CDN 캐시를 제거하는 방법
 description: AEM as a Cloud Service CDN에서 캐시된 HTTP 응답을 제거하거나 제거하는 방법을 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Operations, CDN Cache
 topic: Administration, Performance
 role: Admin, Architect, Developer
@@ -12,7 +12,7 @@ last-substantial-update: 2024-08-13T00:00:00Z
 jira: KT-15963
 thumbnail: KT-15963.jpeg
 exl-id: 5d81f6ee-a7df-470f-84b9-12374c878a1b
-source-git-commit: 0639217a3bab7799eec3bbcc40c1a69ed1b12682
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '924'
 ht-degree: 0%
@@ -127,7 +127,7 @@ Surrogate-Key: <SURROGATE_KEY>
 - **PURGE`<URL>`**: `PURGE` 메서드 다음에 제거할 리소스의 URL 경로가 옵니다.
 - **호스트:`<AEM_SERVICE_SPECIFIC_DOMAIN>`**: AEM 서비스의 도메인을 지정합니다.
 - **X-AEM-Purge-Key:`<PURGE_API_TOKEN>`**: 제거 API 토큰 값이 포함된 사용자 지정 헤더입니다.
-- **X-AEM-Purge:`<PURGE_TYPE>`**: 제거 작업의 유형을 지정하는 사용자 지정 헤더입니다. 값은 `hard`, `soft` 또는 `all`일 수 있습니다. 다음 표에서는 각 삭제 유형에 대해 설명합니다.
+- **X-AEM-제거:`<PURGE_TYPE>`**: 제거 작업의 유형을 지정하는 사용자 지정 헤더입니다. 값은 `hard`, `soft` 또는 `all`일 수 있습니다. 다음 표에서는 각 삭제 유형에 대해 설명합니다.
 
   | 삭제 유형 | 설명 |
   |:------------:|:-------------:|

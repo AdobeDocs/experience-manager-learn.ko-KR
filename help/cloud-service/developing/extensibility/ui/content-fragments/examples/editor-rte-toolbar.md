@@ -2,7 +2,7 @@
 title: 리치 텍스트 편집기(RTE) 도구 모음에 사용자 지정 단추 추가
 description: AEM 콘텐츠 조각 편집기에서 사용자 지정 단추를 리치 텍스트 편집기(RTE) 도구 모음에 추가하는 방법을 알아봅니다
 feature: Developer Tools, Content Fragments
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Beginner
@@ -12,7 +12,7 @@ doc-type: article
 last-substantial-update: 2023-06-12T00:00:00Z
 exl-id: 6fd93d3b-6d56-43c5-86e6-2e2685deecc9
 duration: 345
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%
@@ -51,7 +51,7 @@ index.html 경로에 매핑된 `ExtensionRegistration.js`은(는) AEM 확장의 
 
 + `id, tooltip and icon` 특성이 있는 `getCustomButtons()` 함수의 RTE 도구 모음 단추 정의입니다.
 + `onClick()` 함수에서 단추의 클릭 처리기입니다.
-+ 클릭 처리기 함수는 `state` 개체를 인수로 수신하여 RTE의 콘텐츠를 HTML 또는 텍스트 형식으로 가져옵니다. 그러나 이 예제에서는 사용되지 않습니다.
++ 클릭 처리기 함수는 `state` 개체를 인수로 수신하여 HTML 또는 텍스트 형식으로 RTE의 콘텐츠를 가져옵니다. 그러나 이 예제에서는 사용되지 않습니다.
 + 클릭 처리기 함수는 명령 배열을 반환합니다. 이 배열에는 `type` 및 `value` 특성이 있는 개체가 있습니다. `value` 특성 HTML 코드 조각인 콘텐츠를 삽입하기 위해 `type` 특성은 `insertContent`을(를) 사용합니다. 콘텐츠를 대체할 사용 사례가 있으면 `replaceContent` 명령 유형을 사용하십시오.
 
 `insertContent` 값은 HTML 문자열 `<div class=\"cmp-contentfragment__element-tip\"><div>TIP</div><div>Add your tip text here...</div></div>`입니다. 값을 표시하는 데 사용되는 CSS 클래스 `cmp-contentfragment__element-tip`이(가) 위젯에 정의되지 않고 이 콘텐츠 조각 필드가 표시되는 웹 경험에 구현됩니다.

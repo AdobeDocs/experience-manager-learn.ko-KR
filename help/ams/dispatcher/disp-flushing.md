@@ -1,7 +1,7 @@
 ---
 title: AEM Dispatcher 플러싱
 description: AEM이 Dispatcher에서 이전 캐시 파일을 무효화하는 방법을 이해합니다.
-version: 6.5
+version: Experience Manager 6.5
 topic: Administration
 feature: Dispatcher
 role: Admin
@@ -10,7 +10,7 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 461873a1-1edf-43a3-b4a3-14134f855d86
 duration: 520
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '2225'
 ht-degree: 0%
@@ -75,7 +75,7 @@ Dispatcher 모듈은 POST 요청이 AEM 렌더링에 전달될 때 또는 플러
 - CQ-Action
    - 요청에 따라 AEM 변수를 사용하며 값은 일반적으로 *활성화 또는 삭제*&#x200B;입니다.
 - CQ-Handle
-   - 요청에 따라 AEM 변수를 사용하며 값은 일반적으로 `/content/dam/logo.jpg`과(와) 같이 플러시된 항목에 대한 전체 경로입니다.
+   - 요청에 따라 AEM 변수를 사용하며 값은 일반적으로 `/content/dam/logo.jpg`과(와) 같이 플러시된 항목의 전체 경로입니다.
 - CQ-Path
    - 요청에 따라 AEM 변수를 사용하며 값은 일반적으로 `/content/dam`과(와) 같이 플러시되는 항목의 전체 경로입니다.
 - 호스트

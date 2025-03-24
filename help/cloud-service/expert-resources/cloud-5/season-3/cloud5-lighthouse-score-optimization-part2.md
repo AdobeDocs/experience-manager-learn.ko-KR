@@ -1,7 +1,7 @@
 ---
 title: 등대 점수 최적화 - 2부
 description: 총 차단 시간을 향상시키고 Edge Delivery Services 프로젝트에서 가장 높은 등대 점수를 얻는 기술에 대해 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Development
 role: Developer, Leader, User
@@ -13,7 +13,7 @@ recommendations: noDisplay, noCatalog
 last-substantial-update: 2024-09-17T00:00:00Z
 jira: KT-16146
 exl-id: 4d01f350-1bdd-49df-a99d-dce1ad378364
-source-git-commit: 5976e220ac54e901be5f064dbf541d901fccfec5
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '64'
 ht-degree: 3%

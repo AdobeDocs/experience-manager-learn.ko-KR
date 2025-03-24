@@ -2,14 +2,14 @@
 title: 대화 상자를 사용하여 맞춤형 프로세스 단계 구현
 description: 사용자 정의 프로세스 단계를 사용하여 파일 시스템에 적응형 양식 첨부 파일 작성
 feature: Workflow
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 last-substantial-update: 2021-06-09T00:00:00Z
 exl-id: 149d2c8c-bf44-4318-bba8-bec7e25da01b
 duration: 135
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Java 클래스를 작성하고 클래스를 OSGi 번들로 배포하려면 다�
 
 ## Maven 프로젝트 만들기
 
-첫 번째 단계는 적절한 Adobe Maven Archetype 을 사용하여 Maven 프로젝트를 만드는 것입니다. 자세한 단계는 이 [문서](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)에 나와 있습니다. Maven 프로젝트를 eclipse로 가져오면 프로세스 단계에서 사용할 수 있는 첫 번째 OSGi 구성 요소 작성을 시작할 수 있습니다.
+첫 번째 단계는 적절한 Adobe Maven Archetype을 사용하여 Maven 프로젝트를 만드는 것입니다. 자세한 단계는 이 [문서](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)에 나와 있습니다. Maven 프로젝트를 eclipse로 가져오면 프로세스 단계에서 사용할 수 있는 첫 번째 OSGi 구성 요소 작성을 시작할 수 있습니다.
 
 
 ### WorkflowProcess를 구현하는 클래스 만들기
@@ -118,9 +118,9 @@ public class WriteFormAttachmentsToFileSystem implements WorkflowProcess {
 ```
 
 
-* attachmentsPath - 적응형 양식의 제출 액션을 구성하여 AEM Workflow를 호출했을 때 적응형 양식에 지정한 위치와 동일합니다. 첨부 파일을 워크플로우의 페이로드와 관련하여 AEM에 저장할 폴더의 이름입니다.
+* attachmentsPath - 적응형 양식의 제출 액션을 구성하여 AEM 워크플로우를 호출할 때 적응형 양식에 지정한 위치와 동일합니다. 워크플로우의 페이로드를 기준으로 AEM에 첨부 파일을 저장할 폴더의 이름입니다.
 
-* saveToLocation - 첨부 파일을 AEM 서버의 파일 시스템에 저장할 위치입니다.
+* saveToLocation - AEM 서버의 파일 시스템에 첨부 파일을 저장할 위치입니다.
 
 이 두 값은 워크플로우 구성 요소의 대화 상자를 사용하여 프로세스 인수로 전달됩니다
 

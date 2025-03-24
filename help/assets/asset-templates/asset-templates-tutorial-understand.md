@@ -1,7 +1,7 @@
 ---
 title: AEM Assets의 InDesign 파일 및 자산 템플릿 이해
-description: 이 비디오 튜토리얼에서는 AEM Assets의 에셋 템플릿 기능에 사용할 InDesign 파일 및 모든 관련 고려 사항을 정의하는 과정을 안내합니다.
-version: 6.4, 6.5
+description: 이 비디오 튜토리얼에서는 InDesign의 자산 템플릿 기능에 사용할 AEM Assets 파일 및 모든 관련 고려 사항을 정의하는 과정을 안내합니다.
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Content Management
 feature: Templates
 role: User
@@ -9,7 +9,7 @@ level: Intermediate
 doc-type: Tutorial
 exl-id: c418e94a-b18e-429a-b41c-2bf32e158598
 duration: 909
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 0%
@@ -18,14 +18,14 @@ ht-degree: 0%
 
 # AEM Assets의 InDesign 파일 및 자산 템플릿 이해 {#understanding-indesign-files-and-asset-templates-in-aem-assets}
 
-이 비디오 튜토리얼에서는 AEM Assets의 에셋 템플릿 기능에 사용할 InDesign 파일 및 모든 관련 고려 사항을 정의하는 과정을 안내합니다.
+이 비디오 튜토리얼에서는 InDesign의 자산 템플릿 기능에 사용할 AEM Assets 파일 및 모든 관련 고려 사항을 정의하는 과정을 안내합니다.
 
 ## InDesign 템플릿 파일 구성 {#constructing-the-indesign-template-file}
 
 >[!VIDEO](https://video.tv.adobe.com/v/19293?quality=12&learn=on)
 
 1. [**InDesign 파일 템플릿**](assets/asset-templates-tutorial-video--supporting-files.zip) 다운로드 및 열기
-2. **태그 패널을 열고** 태그 명명 규칙을 검토하고 InDesign 파일에서 작성자 가능 요소에 이미 태그가 지정되어 있습니다. 태그가 지정된 요소만 AEM에서 편집할 수 있습니다.
+2. **태그 패널을 열고** 태그 명명 규칙을 검토하고 InDesign 파일의 작성자 가능 요소에 이미 태그가 지정되어 있습니다. 태그가 지정된 요소만 AEM에서 편집할 수 있습니다.
 
    * **창 > 유틸리티 > 태그**
 
@@ -51,20 +51,20 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >잘못 구성된 InDesign 파일이 AEM Asset 템플릿 문제의 가장 일반적인 원인이므로 태깅과 구조가 깔끔하고 정확한지 확인하십시오.
+   >잘못 구성된 InDesign 파일이 AEM 자산 템플릿 문제의 가장 일반적인 원인이므로 태깅과 구조가 깔끔하고 올바른지 확인하십시오.
 
 ## AEM Assets에서 에셋 템플릿 만들기 및 작성 {#creating-and-authoring-an-asset-template-in-aem-assets}
 
 >[!VIDEO](https://video.tv.adobe.com/v/19294?quality=12&learn=on)
 
-1. 포트 8080에서 **시작 InDesign Server**.
+1. 포트 8080에서 **InDesign Server 시작**.
 2. **AEM 작성자 인스턴스가 InDesign Server과 상호 작용하도록 구성되었는지**(또는 그 반대) 확인합니다.
 
    * [IDS 작업자 Cloud Service 구성](http://localhost:4502/etc/cloudservices/proxy/ids.html)
    * [클라우드 프록시 Cloud Service 구성](http://localhost:4502/etc/cloudservices/proxy.html)
    * [AEM 외부화 OSGi 구성](http://localhost:4502/system/console/configMgr)
 
-3. **AEM Assets에 InDesign 파일을 업로드했습니다**. AEM 워크플로와 InDesign Server에서 에셋을 완전히 처리할 수 있도록 허용합니다.
+3. **InDesign 파일을 AEM Assets에 업로드했습니다**. AEM Workflow 및 InDesign Server에서 자산을 완전히 처리할 수 있도록 허용합니다.
 4. **Assets > 템플릿**&#x200B;에서 **새 템플릿을 만들고** #4단계에서 AEM에 업로드된 InDesign 파일을 선택합니다.
 5. **#5단계에서 만든 자산 템플릿을 편집**&#x200B;하고 편집 가능한 필드를 작성합니다.
 6. 자산 템플릿의 최종 고화질 변환을 생성하려면 **완료**&#x200B;를 클릭하십시오.

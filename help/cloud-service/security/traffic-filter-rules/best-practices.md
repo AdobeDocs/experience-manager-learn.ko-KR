@@ -1,7 +1,7 @@
 ---
 title: WAF 규칙을 포함한 트래픽 필터 규칙에 대한 우수 사례
 description: WAF 규칙을 포함한 트래픽 필터 규칙에 대한 권장 모범 사례를 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Security
 topic: Security, Administration, Architecture
 role: Admin, Architect
@@ -12,7 +12,7 @@ jira: KT-13148
 thumbnail: KT-13148.jpeg
 exl-id: 4a7acdd2-f442-44ee-8560-f9cb64436acf
 duration: 170
-source-git-commit: c7c78ca56c1d72f13d2dc80229a10704ab0f14ab
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 0%
@@ -91,7 +91,7 @@ data:
 
 ## WAF 규칙 모범 사례
 
-프로그램에 대해 WAF에 라이센스가 부여되고 활성화되면 규칙에 선언하지 않았더라도 일치하는 트래픽 WAF 플래그가 차트 및 요청 로그에 표시됩니다. 따라서 항상 잠재적으로 새로운 악성 트래픽을 알고 있으며 필요에 따라 규칙을 만들 수 있습니다. 선언된 규칙에 반영되지 않은 WAF 플래그를 보고 선언하는 것이 좋습니다.
+WAF에 라이센스가 부여되고 프로그램에 대해 활성화되면 규칙에 선언하지 않았더라도 일치하는 WAF 플래그가 차트 및 요청 로그에 표시됩니다. 따라서 항상 잠재적으로 새로운 악성 트래픽을 알고 있으며 필요에 따라 규칙을 만들 수 있습니다. 선언된 규칙에 반영되지 않은 WAF 플래그를 보고 선언하는 것이 좋습니다.
 
 AEM 프로젝트에 대한 아래 WAF 규칙을 고려하십시오. 그러나 `action` 및 `wafFlags` 속성에 대해 원하는 값은 보안 팀과 협력하여 결정해야 합니다.
 

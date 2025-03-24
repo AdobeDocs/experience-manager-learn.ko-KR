@@ -1,7 +1,7 @@
 ---
 title: 전용 이그레스 IP 주소 및 VPN에 대한 HTTP/HTTPS 연결
 description: AEM as a Cloud Service에서 전용 이그레스 IP 주소 및 VPN으로 실행되는 외부 웹 서비스로 HTTP/HTTPS를 요청하는 방법을 알아봅니다
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Security
 role: Architect, Developer
@@ -10,7 +10,7 @@ jira: KT-9354
 thumbnail: KT-9354.jpeg
 exl-id: a565bc3a-675f-4d5e-b83b-c14ad70a800b
 duration: 70
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 0%

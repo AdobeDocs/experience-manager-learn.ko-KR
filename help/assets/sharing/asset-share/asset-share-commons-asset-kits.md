@@ -1,7 +1,7 @@
 ---
 title: Asset Share Commons 자산 키트
 description: Asset Share Common의 자산 키트를 사용하여 AEM Assets 폴더 또는 컬렉션의 자산을 나열하는 맞춤형 공유 가능한 웹 페이지를 생성하는 방법을 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Content Management
 feature: Asset Distribution
 role: Admin, Architect, Developer, User
@@ -12,7 +12,7 @@ jira: KT-11868
 thumbnail: 3415467.jpeg
 exl-id: fb8adf75-02d7-44e5-a84e-e0731100dc58
 duration: 643
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '71'
 ht-degree: 0%

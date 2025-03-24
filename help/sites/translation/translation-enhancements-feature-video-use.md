@@ -1,7 +1,7 @@
 ---
 title: AEM의 번역 개선 사항
-description: AEM의 강력한 번역 프레임워크를 사용하면 지원되는 번역 공급업체에서 AEM 콘텐츠를 원활하게 번역할 수 있습니다. 최신 개선 사항에 대해 알아봅니다.
-version: 6.4, 6.5
+description: AEM의 강력한 번역 프레임워크를 통해 지원되는 번역 공급업체에서 AEM 콘텐츠를 원활하게 번역할 수 있습니다. 최신 개선 사항에 대해 알아봅니다.
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Localization
 feature: Multi Site Manager, Language Copy
 role: User
@@ -9,7 +9,7 @@ level: Beginner
 doc-type: Feature Video
 exl-id: 21633308-ffe4-4023-affe-59269504da69
 duration: 677
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # 다중 사이트 관리자의 번역 개선 사항 {#translation-enhancements}
 
-AEM의 강력한 번역 프레임워크를 사용하면 지원되는 번역 공급업체에서 AEM 콘텐츠를 원활하게 번역할 수 있습니다.
+AEM의 강력한 번역 프레임워크를 통해 지원되는 번역 공급업체에서 AEM 콘텐츠를 원활하게 번역할 수 있습니다.
 
 ## AEM 6.5의 번역 개선 사항
 
@@ -32,7 +32,7 @@ AEM 6.5 번역 개선 사항은 다음과 같습니다.
 
 **JSON 형식으로 번역 개체 내보내기**: AEM 6.4 및 이전 버전은 번역 개체의 XML 및 XLIFF 형식을 지원합니다. 이제 시스템 콘솔 [!UICONTROL 구성 관리자]를 사용하여 내보내기 형식을 JSON 형식으로 구성할 수 있습니다. [!UICONTROL 번역 플랫폼 구성]을 찾은 다음 내보내기 형식을 JSON으로 선택할 수 있습니다.
 
-**번역 메모리(TMS)에서 번역된 AEM 콘텐츠 업데이트**: AEM에 대한 액세스 권한이 없는 로컬 작성자는 이미 AEM으로 다시 수집된 번역된 콘텐츠를 TM(TMS의 번역 메모리)에서 직접 업데이트하고, TMS에서 AEM으로 번역 작업을 다시 보내어 AEM의 번역을 업데이트할 수 있습니다
+**번역 메모리에 번역된 AEM 콘텐츠 업데이트**: AEM에 대한 액세스 권한이 없는 로컬 작성자는 이미 AEM으로 다시 수집된 번역된 콘텐츠를 TM(TMS의 번역 메모리)에서 직접 업데이트하고, 번역 작업을 TMS에서 AEM으로 다시 보내어 AEM의 번역을 업데이트할 수 있습니다
 
 ## AEM 6.4의 번역 개선 사항
 

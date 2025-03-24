@@ -1,14 +1,14 @@
 ---
 title: AEM as a Cloud Service에서 암호 관리
-description: AEM에서 제공하는 도구 및 기술을 사용하여 중요한 정보를 보호함으로써 애플리케이션이 안전하고 기밀로 유지되도록 하여 AEM as a Cloud Service 내에서 기밀을 관리하기 위한 모범 사례에 대해 알아보십시오.
-version: Cloud Service
+description: AEM에서 제공하는 도구와 기술을 사용하여 중요한 정보를 보호하고 애플리케이션이 안전하고 기밀로 유지되도록 하여 AEM as a Cloud Service 내에서 기밀을 관리하기 위한 모범 사례에 대해 알아보십시오.
+version: Experience Manager as a Cloud Service
 topic: Development, Security
 feature: OSGI, Cloud Manager
 role: Developer
 jira: KT-15880
 level: Intermediate, Experienced
 exl-id: 856b7da4-9ee4-44db-b245-4fdd220e8a4e
-source-git-commit: ba744f95f8d1f0b982cd5430860f0cb0945a4cda
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 0%
@@ -17,9 +17,9 @@ ht-degree: 0%
 
 # AEM as a Cloud Service에서 암호 관리
 
-API 키 및 암호와 같은 보안을 관리하는 것은 애플리케이션 보안을 유지하는 데 매우 중요합니다. Adobe Experience Manager(AEM as a Cloud Service)는 기밀을 안전하게 처리할 수 있는 강력한 도구를 제공합니다.
+API 키 및 암호와 같은 보안을 관리하는 것은 애플리케이션 보안을 유지하는 데 매우 중요합니다. Adobe Experience Manager(AEM) as a Cloud Service은 비밀을 안전하게 처리할 수 있는 강력한 도구를 제공합니다.
 
-이 자습서에서는 AEM 내에서 비밀을 관리하는 모범 사례에 대해 알아봅니다. Dell은 AEM에서 제공하는 도구와 기술을 활용하여 고객의 중요한 정보를 보호함으로써 고객의 애플리케이션이 안전하고 기밀로 유지될 수 있도록 합니다.
+이 자습서에서는 AEM 내에서 비밀을 관리하는 모범 사례에 대해 알아봅니다. AEM에서 제공하는 도구와 기술을 활용하여 중요한 정보를 보호함으로써 애플리케이션의 보안 및 기밀성을 보장합니다.
 
 이 자습서에서는 AEM Java 개발, OSGi 서비스, Sling 모델 및 Adobe Cloud Manager에 대한 작업 지식을 가정합니다.
 
@@ -82,7 +82,7 @@ public interface SecretsManager {
 
 OSGi 서비스의 비밀 값을 표시하려면 [OSGi 비밀 구성 값](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi#secret-configuration-values)을 사용하여 OSGi 구성에 매핑하십시오. OSGi 속성 이름을 `SecretsManager.getSecret()` 메서드에서 비밀 값을 검색할 키로 정의합니다.
 
-AEM Maven 프로젝트의 OSGi 구성 파일 `/apps/example/osgiconfig/config/com.example.core.util.impl.SecretsManagerImpl.cfg.json`에서 암호를 정의합니다. 각 속성은 AEM에서 노출된 암호를 나타내며, 값은 Cloud Manager을 통해 설정됩니다. 키는 `SecretsManager` 서비스에서 비밀 값을 검색하는 데 사용되는 OSGi 속성 이름입니다.
+AEM Maven 프로젝트의 OSGi 구성 파일 `/apps/example/osgiconfig/config/com.example.core.util.impl.SecretsManagerImpl.cfg.json`에서 암호를 정의합니다. 각 속성은 Cloud Manager에서 노출된 암호를 나타내며, 값은 AEM을 통해 설정됩니다. 키는 `SecretsManager` 서비스에서 비밀 값을 검색하는 데 사용되는 OSGi 속성 이름입니다.
 
 ```json
 {
@@ -167,4 +167,4 @@ OSGi 서비스 및 구성을 갖추게 되면 마지막 단계에서 Cloud Manag
 1. 암호를 유지하려면 **추가**&#x200B;를 선택하십시오.
 1. 필요한 만큼 비밀을 추가합니다. 완료되면 **저장**&#x200B;을 선택하여 변경 내용을 AEM 환경에 즉시 적용합니다.
 
-비밀에 대해 Cloud Manager 구성을 사용하면 AEM 애플리케이션을 다시 배포하지 않고도 다양한 환경 또는 서비스에 대해 다양한 값을 적용하고 비밀을 순환할 수 있는 이점을 제공합니다.
+암호에 Cloud Manager 구성을 사용하면 AEM 애플리케이션을 재배포하지 않고도 다양한 환경 또는 서비스에 대해 다양한 값을 적용하고 암호를 순환할 수 있습니다.

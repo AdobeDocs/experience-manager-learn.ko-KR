@@ -7,13 +7,13 @@ topic: Content Management
 role: Architect, Developer, Admin, User
 level: Beginner
 doc-type: Feature Video
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 jira: KT-194
 thumbnail: 331785.jpg
 last-substantial-update: 2021-06-09T00:00:00Z
 exl-id: 84d2b240-5ecc-4230-97a0-6c2faead8d1a
 duration: 228
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 2%
@@ -35,4 +35,4 @@ Experience Fragments를 통해 콘텐츠 작성자는 Sites 페이지 및 서드
 * 여러 채널(소유한 채널과 서드파티 터치포인트 모두)에서 경험 재사용
 * 특정 사용 사례를 위한 경험 변형 만들기
 * 라이브 카피 사용에 따른 변형 동기화 유지
-* facebook 및 Pinterest에 대한 소셜 Post 환경 기본 제공
+* Facebook 및 Pinterest에 대한 소셜 게시물 환경 기본 제공

@@ -1,7 +1,7 @@
 ---
 title: AEM에서 Sling 모델 내보내기 개발
-description: 이 기술에서는 Sling 모델 익스포터와 함께 사용할 AEM을 설정하고, 익스포터 프레임워크를 사용하여 기존 Sling 모델을 JSON으로의 렌디션으로 개선하며, 익스포터 옵션 및 Jackson 주석을 사용하여 출력을 추가로 사용자 정의하는 방법에 대해 안내합니다.
-version: 6.4, 6.5
+description: 이 기술에서는 Sling 모델 익스포터와 함께 사용할 AEM을 설정하고, 익스포터 프레임워크를 사용하여 기존 Sling 모델을 JSON으로의 렌디션으로 개선하며, 익스포터 옵션 및 Jackson 주석을 사용하여 출력을 추가로 사용자 정의하는 방법에 대해 설명합니다.
+version: Experience Manager 6.4, Experience Manager 6.5
 sub-product: Experience Manager, Experience Manager Sites
 feature: APIs
 doc-type: Technical Video
@@ -10,7 +10,7 @@ role: Developer
 level: Intermediate
 exl-id: fc321ed1-5cf7-4bbe-adc6-c4905af7b43c
 duration: 932
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Sling 모델 내보내기 개발
 
-이 기술에서는 Sling 모델 익스포터와 함께 사용할 AEM을 설정하고, 익스포터 프레임워크를 사용하여 기존 Sling 모델을 JSON으로의 렌디션으로 개선하며, 익스포터 옵션 및 Jackson 주석을 사용하여 출력을 추가로 사용자 정의하는 방법에 대해 안내합니다.
+이 기술에서는 Sling 모델 익스포터와 함께 사용할 AEM을 설정하고, 익스포터 프레임워크를 사용하여 기존 Sling 모델을 JSON으로의 렌디션으로 개선하며, 익스포터 옵션 및 Jackson 주석을 사용하여 출력을 추가로 사용자 정의하는 방법에 대해 설명합니다.
 
 Sling 모델 내보내기는 Sling 모델 v1.3.0에 도입되었습니다. 이 새로운 기능을 사용하면 모델 을 다른 Java 개체로 내보내거나 더 일반적으로 JSON과 같은 다른 형식으로 직렬화하는 방법을 정의하는 슬링 모델에 새 주석을 추가할 수 있습니다.
 
@@ -29,13 +29,13 @@ Apache Sling은 다른 웹 서비스 및 JavaScript 애플리케이션과 같은
 
 >[!VIDEO](https://video.tv.adobe.com/v/16862?quality=12&learn=on)
 
-[!DNL Sling Model Exporter]은(는) [!DNL Apache Sling] 프로젝트의 기능이며 AEM 제품 릴리스 주기에 직접 바인딩되어 있지 않습니다. [!DNL Sling Model Exporter]은(는) AEM 6.3 이상과 호환됩니다.
+[!DNL Sling Model Exporter]은(는) [!DNL Apache Sling] 프로젝트의 기능이며 AEM 제품 릴리스 주기에 직접 바인딩되지 않습니다. [!DNL Sling Model Exporter]은(는) AEM 6.3 이상과 호환됩니다.
 
 ## [!DNL Sling Model Exporter]의 사용 사례
 
 >[!VIDEO](https://video.tv.adobe.com/v/16863?quality=12&learn=on)
 
-[!DNL Sling Model Exporter]은(는) HTL(또는 이전의 JSP)을 통해 HTML 변환을 지원하고 프로그래밍 방식의 웹 서비스 또는 JavaScript 애플리케이션에서 사용할 수 있도록 JSON과 동일한 비즈니스 표현을 표시하는 비즈니스 논리를 이미 포함하는 Sling 모델을 활용하는 데 적합합니다.
+[!DNL Sling Model Exporter]은(는) HTL(또는 이전의 JSP)을 통해 HTML 렌디션을 지원하고 프로그래밍 방식의 웹 서비스 또는 JavaScript 애플리케이션에서 사용할 수 있도록 JSON과 동일한 비즈니스 표현을 표시하는 비즈니스 논리를 이미 포함하는 Sling 모델을 활용하는 데 적합합니다.
 
 ## 슬링 모델 내보내기 만들기
 

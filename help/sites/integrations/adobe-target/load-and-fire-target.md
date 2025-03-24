@@ -2,18 +2,18 @@
 title: Target 호출 로드 및 실행
 description: 태그 규칙을 사용하여 매개 변수를 로드하고, 페이지 요청에 전달하며, 사이트 페이지에서 Target 호출을 실행하는 방법을 알아봅니다.
 feature: Core Components, Adobe Client Data Layer
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 jira: KT-6133
 thumbnail: 41243.jpg
 topic: Integrations
 role: Developer
 level: Intermediate
 badgeIntegration: label="통합" type="positive"
-badgeVersions: label="AEM Sites as a Cloud Service AEM Sites 6.5" before-title="false"
+badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 doc-type: Tutorial
 exl-id: ec048414-2351-4e3d-b5f1-ade035c07897
 duration: 588
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '544'
 ht-degree: 1%
@@ -28,7 +28,7 @@ ht-degree: 1%
 
 ## 페이지 로드 규칙
 
-Adobe 클라이언트 데이터 레이어는 이벤트 기반 데이터 레이어입니다. AEM Page 데이터 레이어가 로드되면 이벤트 `cmp:show`을(를) 트리거합니다. 비디오에서 사용자 지정 이벤트를 사용하여 `tags Library Loaded` 규칙이 호출됩니다. 아래에서는 사용자 지정 이벤트 및 데이터 요소에 대한 비디오에 사용된 코드 조각을 찾을 수 있습니다.
+Adobe 클라이언트 데이터 레이어는 이벤트 기반 데이터 레이어입니다. AEM 페이지 데이터 레이어가 로드되면 이벤트 `cmp:show`을(를) 트리거합니다. 비디오에서 사용자 지정 이벤트를 사용하여 `tags Library Loaded` 규칙이 호출됩니다. 아래에서는 사용자 지정 이벤트 및 데이터 요소에 대한 비디오에 사용된 코드 조각을 찾을 수 있습니다.
 
 ### 사용자 지정 페이지 표시 이벤트{#page-event}
 

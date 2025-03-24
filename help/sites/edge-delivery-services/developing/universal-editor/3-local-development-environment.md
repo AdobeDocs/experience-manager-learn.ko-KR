@@ -1,7 +1,7 @@
 ---
 title: 로컬 개발 환경 설정
 description: Edge Delivery Services으로 제공되고 유니버설 편집기로 편집할 수 있는 사이트에 대한 로컬 개발 환경을 설정합니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Development
 role: Developer
@@ -10,7 +10,7 @@ doc-type: Tutorial
 jira: KT-15832
 duration: 700
 exl-id: 187c305a-eb86-4229-9896-a74f5d9d822e
-source-git-commit: 2722a4d4a34172e2f418f571f9de3872872e682a
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 1%
@@ -67,7 +67,7 @@ Edge Delivery Services 웹 사이트 프로젝트의 개발 도구 및 프로세
 
 1. [Git](https://git-scm.com/)
 1. [Node.js 및 npm](https://nodejs.org)
-1. [Microsoft Visual Studio Code](https://code.visualstudio.com/)(또는 유사한 코드 편집기)
+1. [Microsoft Visual Studio Code](https://code.visualstudio.com/)&#x200B;(또는 유사한 코드 편집기)
 
 ## GitHub 리포지토리 복제
 

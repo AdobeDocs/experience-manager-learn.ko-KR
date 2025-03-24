@@ -1,14 +1,14 @@
 ---
 title: AEM GraphQL API 살펴보기 - AEM Headless의 고급 개념 - GraphQL
 description: GraphiQL IDE를 사용하여 GraphQL 쿼리를 보냅니다. 필터, 변수 및 지시문을 사용하는 고급 쿼리에 대해 알아봅니다. 여러 줄 텍스트 필드의 참조를 포함하는 조각 및 콘텐츠 참조를 쿼리합니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: bd7916be-8caa-4321-add0-4c9031306d60
 duration: 438
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1307'
 ht-degree: 0%
@@ -40,7 +40,7 @@ AEM의 GraphQL API를 사용하면 콘텐츠 조각 데이터를 다운스트림
 
 개발자는 [GraphiQL 탐색기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html) 도구를 사용하여 현재 AEM 환경의 콘텐츠에 대해 쿼리를 만들고 테스트할 수 있습니다. 또한 GraphiQL 도구를 통해 사용자는 프로덕션 설정에서 클라이언트 애플리케이션에서 사용할 쿼리를 **유지 또는 저장**&#x200B;할 수 있습니다.
 
-다음으로 내장된 GraphiQL 탐색기를 사용하여 AEM GraphQL API의 강력한 기능을 살펴보십시오.
+그런 다음 내장된 GraphiQL 탐색기를 사용하여 AEM GraphQL API의 강력한 기능을 살펴보십시오.
 
 1. AEM 시작 화면에서 **도구** > **일반** > **GraphQL 쿼리 편집기**&#x200B;로 이동합니다.
 
@@ -48,7 +48,7 @@ AEM의 GraphQL API를 사용하면 콘텐츠 조각 데이터를 다운스트림
 
 >[!IMPORTANT]
 >
->에서 GraphiQL 탐색기(GraphiQL IDE라고도 함) 도구의 일부 AEM(6.X.X) 버전은 수동으로 설치해야 합니다. [여기](../how-to/install-graphiql-aem-6-5.md)의 지침을 따르십시오.
+>에서 GraphiQL 탐색기(GraphiQL IDE라고도 함) 도구 AEM(6.X.X)의 일부 버전은 수동으로 설치해야 합니다. [여기](../how-to/install-graphiql-aem-6-5.md)의 지침을 따르십시오.
 
 1. 오른쪽 상단 모서리에서 끝점이 **WKND 공유 끝점**(으)로 설정되어 있는지 확인하십시오. 여기서 _끝점_ 드롭다운 값을 변경하면 왼쪽 상단 모서리에 기존 _지속 쿼리_&#x200B;가 표시됩니다.
 

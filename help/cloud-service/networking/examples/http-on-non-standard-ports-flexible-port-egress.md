@@ -1,7 +1,7 @@
 ---
 title: 유연한 포트 이그레스용 비표준 포트에서의 HTTP/HTTPS 연결
 description: 유연한 포트 이그레스용 비표준 포트에서 실행 중인 외부 웹 서비스에 AEM as a Cloud Service에서 HTTP/HTTPS를 요청하는 방법을 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Security
 role: Architect, Developer
@@ -10,7 +10,7 @@ jira: KT-9354
 thumbnail: KT-9354.jpeg
 exl-id: c8cc0385-9e94-4120-9fb1-aeccbfcc8aa4
 duration: 86
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 0%

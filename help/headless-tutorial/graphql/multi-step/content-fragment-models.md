@@ -1,7 +1,7 @@
 ---
 title: 콘텐츠 조각 모델 정의 - AEM Headless 시작하기 - GraphQL
 description: Adobe Experience Manager(AEM) 및 GraphQL을 시작합니다. AEM에서 콘텐츠 조각 모델을 사용하여 콘텐츠를 모델링하고 스키마를 구축하는 방법을 알아봅니다. 기존 모델을 검토하고 모델을 만듭니다. 스키마를 정의하는 데 사용할 수 있는 다양한 데이터 유형에 대해 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 mini-toc-levels: 1
 jira: KT-6712
 thumbnail: 22452.jpg
@@ -11,10 +11,10 @@ role: Developer
 level: Beginner
 exl-id: 9400d9f2-f828-4180-95a7-2ac7b74cd3c9
 duration: 228
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1110'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -112,7 +112,7 @@ ht-degree: 1%
 
    ![최종 사용자 모델](assets/content-fragment-models/final-author-model.png)
 
-1. 변경 내용을 저장하려면 **저장**&#x200B;을 클릭하세요.
+1. **저장**&#x200B;을 클릭하여 변경 내용을 저장합니다.
 
 ### 팀 모델 만들기
 
@@ -157,29 +157,29 @@ ht-degree: 1%
 
    ![최종 팀 모델](assets/content-fragment-models/final-team-model.png)
 
-1. 변경 내용을 저장하려면 **저장**&#x200B;을 클릭하세요.
+1. **저장**&#x200B;을 클릭하여 변경 내용을 저장합니다.
 
 1. 이제 다음 두 가지 모델을 사용하여 작업할 수 있습니다.
 
    ![모델 두 개](assets/content-fragment-models/two-new-models.png)
 
-## Publish 프로젝트 구성 및 콘텐츠 조각 모델
+## 프로젝트 구성 및 콘텐츠 조각 모델 게시
 
 검토 및 확인 후 `Project Configuration` 및 `Content Fragment Model` 게시
 
 1. AEM 시작 화면에서 **도구** > **일반** > **구성 브라우저**&#x200B;로 이동합니다.
 
-1. **내 프로젝트** 옆의 확인란을 탭하고 **Publish**&#x200B;을 탭합니다.
+1. **내 프로젝트** 옆의 확인란을 탭하고 **게시**&#x200B;를 탭합니다.
 
-   ![Publish 프로젝트 구성](assets/content-fragment-models/publish-project-config.png)
+   ![프로젝트 구성 게시](assets/content-fragment-models/publish-project-config.png)
 
 1. AEM 시작 화면에서 **도구** > **일반** > **콘텐츠 조각 모델**&#x200B;로 이동합니다.
 
 1. **내 프로젝트** 폴더로 이동합니다.
 
-1. **사람** 및 **팀** 모델을 탭하고 **Publish**&#x200B;을 탭하세요.
+1. **사람** 및 **팀** 모델을 탭하고 **게시**&#x200B;를 탭합니다.
 
-   ![Publish 콘텐츠 조각 모델](assets/content-fragment-models/publish-content-fragment-model.png)
+   ![콘텐츠 조각 모델 게시](assets/content-fragment-models/publish-content-fragment-model.png)
 
 ## 축하합니다! {#congratulations}
 

@@ -1,8 +1,8 @@
 ---
-title: asset compute 작업자 테스트
-description: asset compute 프로젝트는 Asset compute 작업자의 테스트를 쉽게 만들고 실행하기 위한 패턴을 정의합니다.
+title: Asset Compute 작업자 테스트
+description: Asset Compute 프로젝트는 Asset Compute 작업자의 테스트를 쉽게 만들고 실행하기 위한 패턴을 정의합니다.
 feature: Asset Compute Microservices
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: Tutorial
 jira: KT-6284
 thumbnail: KT-6284.jpg
@@ -11,22 +11,22 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: 04992caf-b715-4701-94a8-6257e9bd300c
 duration: 142
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '613'
 ht-degree: 0%
 
 ---
 
-# asset compute 작업자 테스트
+# Asset Compute 작업자 테스트
 
-asset compute 프로젝트는 Asset compute 작업자의 [테스트](https://experienceleague.adobe.com/docs/asset-compute/using/extend/test-custom-application.html)를 쉽게 만들고 실행하기 위한 패턴을 정의합니다.
+Asset Compute 프로젝트는 Asset Compute 작업자의 [테스트](https://experienceleague.adobe.com/docs/asset-compute/using/extend/test-custom-application.html)를 쉽게 만들고 실행하기 위한 패턴을 정의합니다.
 
 ## 작업자 테스트의 해부학
 
-Asset compute 작업자의 테스트는 테스트 세트로 구분되며, 각 테스트 세트 내에서 하나 이상의 테스트 케이스가 테스트할 조건을 어설션합니다.
+Asset Compute 작업자의 테스트는 테스트 세트로 구분되며 각 테스트 세트 내에서 하나 이상의 테스트 케이스가 테스트할 조건을 어설션합니다.
 
-asset compute 프로젝트의 테스트 구조는 다음과 같습니다.
+Asset Compute 프로젝트의 테스트 구조는 다음과 같습니다.
 
 ```
 /actions/<worker-name>/index.js
@@ -78,7 +78,7 @@ asset compute 프로젝트의 테스트 구조는 다음과 같습니다.
    }
    ```
 
-   [개발 도구의 Asset compute 프로필 정의](../develop/development-tool.md)에 전달된 동일한 키/값이며 `worker` 키를 줄입니다.
+   [개발 도구의 Asset Compute 프로필 정의](../develop/development-tool.md)에 전달된 것과 동일한 키/값이며 `worker` 키를 줄입니다.
 
 1. 예상 [렌디션 파일](./assets/test/success-parameterized/rendition.png)을(를) 이 테스트 사례에 추가하고 이름을 `rendition.png`로 지정합니다. 이 파일은 지정된 입력 `file.jpg`에 대한 작업자의 예상 출력을 나타냅니다.
 1. 명령줄에서 `aio app test`을(를) 실행하여 프로젝트 루트를 테스트합니다.

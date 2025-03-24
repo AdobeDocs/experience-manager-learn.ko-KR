@@ -1,7 +1,7 @@
 ---
 title: 페이지 템플릿
 description: 페이지 템플릿을 만들고 수정하는 방법을 알아봅니다. 페이지 템플릿과 페이지 간의 관계를 이해합니다. 컨텐츠에 대한 세분화된 거버넌스 및 브랜드 일관성을 제공하기 위해 페이지 템플릿의 정책을 구성하는 방법에 대해 알아봅니다.  잘 구성된 매거진 문서 템플릿은 Adobe XD의 목차를 기반으로 만들어집니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Content Management
 feature: Core Components, Editable Templates, Page Editor
 role: Developer
@@ -12,7 +12,7 @@ doc-type: Tutorial
 exl-id: 261ec68f-36f4-474f-a6e4-7a2f9cea691b
 recommendations: noDisplay, noCatalog
 duration: 1561
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '628'
 ht-degree: 0%
@@ -41,13 +41,13 @@ ht-degree: 0%
 
 페이지를 만들 때 새 페이지를 만들 때 기준으로 사용되는 템플릿을 선택해야 합니다. 템플릿은 결과 페이지, 초기 콘텐츠 및 허용된 구성 요소의 구조를 정의합니다.
 
-[페이지 템플릿](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=ko-KR)에는 세 가지 기본 영역이 있습니다.
+[페이지 템플릿](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=ko)에는 세 가지 기본 영역이 있습니다.
 
 1. **구조** - 템플릿의 일부인 구성 요소를 정의합니다. 콘텐츠 작성자는 편집할 수 없습니다.
 1. **초기 콘텐츠** - 템플릿이 시작되는 구성 요소를 정의하며 콘텐츠 작성자는 해당 구성 요소를 편집 및/또는 삭제할 수 있습니다.
 1. **정책** - 구성 요소의 작동 방식과 작성자가 사용할 수 있는 옵션에 대한 구성을 정의합니다.
 
-그런 다음 AEM에서 모형의 구조와 일치하는 새 템플릿을 만듭니다. 이 문제는 AEM의 로컬 인스턴스에서 발생합니다. 아래 비디오에 나와 있는 단계를 따르십시오.
+그런 다음 AEM에서 목차의 구조와 일치하는 새 템플릿을 만듭니다. 이 문제는 AEM의 로컬 인스턴스에서 발생합니다. 아래 비디오에 나와 있는 단계를 따르십시오.
 
 >[!VIDEO](https://video.tv.adobe.com/v/332915?quality=12&learn=on)
 

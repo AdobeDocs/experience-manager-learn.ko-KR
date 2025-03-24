@@ -1,7 +1,7 @@
 ---
 title: Edge Delivery Services을 위한 로컬 개발 환경 설정
-description: Edge Delivery Services을 위한 로컬 개발 환경을 설정하는 방법.
-version: 6.5, Cloud Service
+description: Edge Delivery Services용 로컬 개발 환경을 설정하는 방법
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Development
 role: Developer
@@ -12,7 +12,7 @@ jira: KT-14483
 thumbnail: 3425717.jpeg
 duration: 169
 exl-id: 0f3e50f0-88d8-46be-be8b-0f547c3633a6
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '87'
 ht-degree: 1%
@@ -34,7 +34,7 @@ Edge Delivery Services 개발을 위한 로컬 개발 환경을 설정하는 방
    $ sudo npm install -g @adobe/aem-cli
    ```
 
-1. [AEM Boilerplate](https://github.com/adobe/aem-boilerplate) 템플릿에서 만든 git 저장소인 프로젝트 디렉터리로 디렉터리를 변경합니다.
+1. [AEM 상용구](https://github.com/adobe/aem-boilerplate) 템플릿에서 만든 git 저장소인 프로젝트 디렉터리로 디렉터리를 변경합니다.
 
    ```
    $ git clone git@github.com:my-org/my-project.git

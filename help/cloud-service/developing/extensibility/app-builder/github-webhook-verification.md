@@ -2,14 +2,14 @@
 title: Github.com webhook 확인
 description: App Builder 작업에서 Github.com의 Webhook 요청을 확인하는 방법을 알아봅니다.
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Intermediate
 jira: KT-15714
 last-substantial-update: 2023-06-06T00:00:00Z
 exl-id: 5492dc7b-f034-4a7f-924d-79e083349e26
-source-git-commit: 8f64864658e521446a91bb4c6475361d22385dc1
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Github.com webhook 확인
 
-Webhooks를 사용하면 GitHub.com에서 특정 이벤트를 구독하는 통합을 빌드하거나 설정할 수 있습니다. 이러한 이벤트 중 하나가 트리거되면 GitHub는 Webhook의 구성된 URL에 HTTP POST 페이로드를 보냅니다. 그러나 보안상의 이유로 수신 webhook 요청이 실제로 GitHub에서 온 것이며 악의적인 행위자에서 온 것이 아닌지 확인하는 것이 중요합니다. 이 자습서에서는 공유 암호를 사용하여 App Builder Adobe 작업에서 GitHub.com webhook 요청을 확인하는 단계를 안내합니다.
+Webhooks를 사용하면 GitHub.com에서 특정 이벤트를 구독하는 통합을 빌드하거나 설정할 수 있습니다. 이러한 이벤트 중 하나가 트리거되면 GitHub는 Webhook의 구성된 URL에 HTTP POST 페이로드를 전송합니다. 그러나 보안상의 이유로 수신 webhook 요청이 실제로 GitHub에서 온 것이며 악의적인 행위자에서 온 것이 아닌지 확인하는 것이 중요합니다. 이 자습서에서는 공유 암호를 사용하여 Adobe App Builder 작업에서 GitHub.com webhook 요청을 확인하는 단계를 안내합니다.
 
 ## AppBuilder에서 Github 암호 설정
 
@@ -39,7 +39,7 @@ Webhooks를 사용하면 GitHub.com에서 특정 이벤트를 구독하는 통�
 
    - AppBuilder 작업 `web` 구성을 `raw`(으)로 설정하여 GitHub.com에서 원시 요청 본문을 받습니다.
    - AppBuilder 작업 구성의 `inputs`에서 `GITHUB_SECRET` 키를 추가하고 암호를 포함하는 `.env` 필드에 매핑합니다. 이 키의 값은 `$` 접두사가 있는 `.env` 필드 이름입니다.
-   - Adobe 인증을 요구하지 않고 작업을 호출할 수 있도록 AppBuilder 작업 구성의 `require-adobe-auth` 주석을 `false`(으)로 설정하십시오.
+   - AppBuilder 작업 구성의 `require-adobe-auth` 주석을 `false`(으)로 설정하여 Adobe 인증을 필요로 하지 않고 작업을 호출할 수 있도록 합니다.
 
    결과 `ext.config.yaml` 파일은 다음과 같아야 합니다.
 

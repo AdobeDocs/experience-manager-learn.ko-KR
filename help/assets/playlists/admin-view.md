@@ -1,7 +1,7 @@
 ---
 title: AEM Assets 관리자 보기 비디오 재생 목록
-description: 제품 기술을 향상시키기 위해 고안된 이 비디오 플레이리스트 컬렉션으로 AEM Assets as a Cloud Service Admin 기능을 활용하는 방법에 대해 알아봅니다.
-version: Cloud Service
+description: 제품 기술을 향상시키기 위해 고안된 이 비디오 플레이리스트 컬렉션으로 AEM Assets as a Cloud Service 관리 기능을 활용하는 방법을 알아봅니다.
+version: Experience Manager as a Cloud Service
 topic: Content Management
 role: User
 level: Beginner
@@ -9,7 +9,7 @@ last-substantial-update: 2024-11-01T00:00:00Z
 doc-type: Catalog
 duration: 60
 exl-id: 924b3bab-e0ed-4b07-bded-344aab61eac5
-source-git-commit: 33e0ded0cdcb5d8ed146fdc59c6f37495cd251eb
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '561'
 ht-degree: 0%
@@ -20,11 +20,11 @@ ht-degree: 0%
 
 ![AEM Assets 관리자 보기](./assets/admin-view.png){align="center"}
 
-이러한 목록을 탐색하여 AEM Assets as a Cloud Service 재생 최적화, 구성 최적화, 사용 및 크리에이티브 워크플로우와의 원활한 통합을 다룹니다. AEM Assetsas a Cloud Service 으로 성공하는 데 필요한 통찰력을 얻으십시오.
+이러한 플레이리스트를 탐색하여 구성, 최적화, 사용 및 크리에이티브 워크플로우와의 원활한 통합을 포함하여 AEM Assets as a Cloud Service 관리 보기를 마스터합니다. AEM Assets as a Cloud Service으로 성공하는 데 필요한 통찰력을 얻으십시오.
 
 ## 관리 보기 구성
 
-AEM Assetsas a Cloud Service 가 팀 및 프로젝트에 원활하게 작동하도록 하기 위한 설정 및 구성을 시작하십시오.
+필수 설정 및 구성을 시작하여 AEM Assets as a Cloud Service이 팀 및 프로젝트에서 원활하게 작동하도록 합니다.
 
 <!-- CARDS
 
@@ -208,7 +208,7 @@ Pro처럼 관리 인터페이스를 탐색하고 에셋을 효율적으로 관�
 
 ## 크리에이티브 워크플로우와 AEM Assets 연결
 
-AEM Assetsas a Cloud Service 과 크리에이티브 도구를 통합하여 원활한 공동 작업을 수행할 수 있도록 함으로써 통합적이고 효율적인 워크플로를 보장합니다.
+AEM Assets as a Cloud Service과 크리에이티브 도구를 통합하여 통합적이고 효율적인 워크플로를 보장함으로써 원활한 공동 작업을 수행할 수 있습니다.
 
 <!-- CARDS
 
@@ -245,8 +245,8 @@ AEM Assetsas a Cloud Service 과 크리에이티브 도구를 통합하여 원�
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-use-creative-operations-with-content-automation" title="AEM Assets Content Automation을 통해 크리에이티브 작업 사용" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_1d229d6d304f8ef16f59a8e759bd1b55a9b3b4d1d.jpeg?width=400&format=pjpg&optimize=medium" alt="AEM Assets Content Automation을 통해 크리에이티브 작업 사용"
+                    <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-use-creative-operations-with-content-automation" title="AEM Assets Content Automation과 함께 Creative 작업 사용" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_1d229d6d304f8ef16f59a8e759bd1b55a9b3b4d1d.jpeg?width=400&format=pjpg&optimize=medium" alt="AEM Assets Content Automation과 함께 Creative 작업 사용"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -254,7 +254,7 @@ AEM Assetsas a Cloud Service 과 크리에이티브 도구를 통합하여 원�
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-use-creative-operations-with-content-automation" target="_blank" rel="referrer" title="AEM Assets Content Automation을 통해 크리에이티브 작업 사용">AEM Assets Content Automation에서 크리에이티브 작업 사용</a>
+                        <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-use-creative-operations-with-content-automation" target="_blank" rel="referrer" title="AEM Assets Content Automation과 함께 Creative 작업 사용">AEM Assets Content Automation에서 Creative 작업 사용</a>
                     </p>
                     <p class="is-size-6">Content Automation 추가 기능을 사용하여 Adobe Experience Manager Assets에서 Creative Cloud 작업을 수행하는 방법에 대해 알아봅니다.</p>
                 </div>

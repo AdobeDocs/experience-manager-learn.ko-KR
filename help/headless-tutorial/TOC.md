@@ -5,10 +5,10 @@ breadcrumb-title: AEM Headless 튜토리얼
 feature-set: Experience Manager, Experience Manager Assets, Experience Manager Sites
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
-version: 6.5, Cloud Service
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 jira: KT-2963
 index: y
-source-git-commit: c498783aceaf3bb389baaeaeefbe9d8d0125a82e
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '341'
 ht-degree: 13%
@@ -18,9 +18,9 @@ ht-degree: 13%
 
 # AEM Headless 시작하기{#getting-started-with-aem-headless}
 
-+ [AEM Headless 개요](./overview.md)
++ [AEM 헤드리스 개요](./overview.md)
 + GraphQL {#graphql}
-   + [AEM Headless 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ko-KR){target=_blank}
+   + [AEM 헤드리스 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html){target=_blank}
    + [개요](./graphql/overview.md)
    + 빠른 설정 {#quick-setup}
       + [Cloud Service](./graphql/quick-setup/cloud-service.md)
@@ -49,7 +49,7 @@ ht-degree: 13%
    + Headless 첫 번째 자습서{#headless-first}
       + [개요](./graphql/headless-first-tutorial/overview.md)
       + [1 - 콘텐츠 모델링](./graphql/headless-first-tutorial/1-content-modeling.md)
-      + [2 - AEM Headless API 및 반응](./graphql/headless-first-tutorial/2-aem-headless-apis-and-react.md)
+      + [2 - AEM 헤드리스 API 및 반응](./graphql/headless-first-tutorial/2-aem-headless-apis-and-react.md)
       + [3 - 복잡한 구성 요소](./graphql/headless-first-tutorial/3-complex-components.md)
 + 배포{#deployments}
    + [개요](./graphql/deployment/overview.md)
@@ -68,7 +68,7 @@ ht-degree: 13%
    + [큰 결과 집합](./graphql/how-to/large-result-sets.md)
    + [미리보기](./graphql/how-to/preview.md)
    + [보호된 콘텐츠](./graphql/how-to/protected-content.md)
-   + [AEM Headless SDK](./graphql/how-to/aem-headless-sdk.md)
+   + [AEM 헤드리스 SDK](./graphql/how-to/aem-headless-sdk.md)
    + [AEM 6.5에 GraphiQL 설치](./graphql/how-to/install-graphiql-aem-6-5.md)
    + 예제 {#example-apps}
       + [반응](./graphql/example-apps/react-app.md)
@@ -97,7 +97,7 @@ ht-degree: 13%
    + 원격 SPA{#remote-spa}
       + [개요](./spa-editor/remote-spa/overview.md)
       + [1 - AEM 구성](./spa-editor/remote-spa/aem-configure.md)
-      + [2 - SPA BOOTSTRAP](./spa-editor/remote-spa/spa-bootstrap.md)
+      + [2 - Bootstrap 더 SPA](./spa-editor/remote-spa/spa-bootstrap.md)
       + [3 - 고정 구성 요소](./spa-editor/remote-spa/spa-fixed-component.md)
       + [4 - 컨테이너 구성 요소](./spa-editor/remote-spa/spa-container-component.md)
       + [5 - 동적 경로](./spa-editor/remote-spa/spa-dynamic-routes.md)
@@ -114,12 +114,12 @@ ht-degree: 13%
    + [3 - 이벤트 콘텐츠 조각 작성](./content-services/chapter-3.md)
    + [4 - Content Services 템플릿 정의](./content-services/chapter-4.md)
    + [5 - Content Services 페이지 작성](./content-services/chapter-5.md)
-   + [6 - 전달을 위해 AEM Publish에서 컨텐츠 노출](./content-services/chapter-6.md)
+   + [6 - 게재를 위해 AEM 게시에서 컨텐츠 노출](./content-services/chapter-6.md)
    + [7 - 모바일 앱에서 AEM Content Services 사용](./content-services/chapter-7.md)
 + 코드 샘플 {#code-samples}
    + [React 앱 필터링](./graphql/code-samples/filtering-react-app.md)
    + [사전 설정 앱 필터링](./graphql/code-samples/filtering-preact-app.md)
-   + [angular 앱 필터링](./graphql/code-samples/filtering-angular-app.md)
+   + [Angular 앱 필터링](./graphql/code-samples/filtering-angular-app.md)
    + [Vue 앱 필터링](./graphql/code-samples/filtering-vue-app.md)
    + [jQuery 및 Handlebars를 사용한 필터링](./graphql/code-samples/filtering-jquery-handlebars.md)
    + [SvelteKit 앱 필터링](./graphql/code-samples/filtering-sveltekit-app.md)

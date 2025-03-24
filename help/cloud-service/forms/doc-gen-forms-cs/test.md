@@ -4,12 +4,12 @@ description: Main.java를 실행하여 솔루션을 테스트합니다.
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Adaptive Forms
 topic: Development
 exl-id: f6536af2-e4b8-46ca-9b44-a0eb8f4fdca9
 duration: 43
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 Eclipse를 시작하고 프로젝트를 Eclipse로 가져오기
 이 프로젝트에는 리소스 폴더에 있는 다음 파일이 포함됩니다.
 
-* DataFile1,DataFile2 및 DataFile3 - 최종 PDF 파일을 생성하기 위해 템플릿과 병합할 샘플 xml 데이터 파일입니다.
+* DataFile1, DataFile2 및 DataFile3 - 템플릿과 병합하여 최종 PDF 파일을 생성할 샘플 xml 데이터 파일
 * custom_fonts.xdp - XDP 템플릿.
 * service_token.json - 이 파일의 컨텐츠를 계정별 자격 증명으로 바꿔야 합니다.
 * options.json - 이 파일에 지정된 옵션은 API에 의해 생성된 PDF 파일의 속성을 설정하는 데 사용됩니다

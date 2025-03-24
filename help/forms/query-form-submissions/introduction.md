@@ -3,7 +3,7 @@ title: 양식 제출 쿼리
 description: Azure 포털에 저장된 양식 제출을 쿼리하는 단계를 안내하는 다중 파트 튜토리얼입니다.
 feature: Adaptive Forms
 doc-type: Tutorial
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
@@ -11,7 +11,7 @@ jira: KT-14884
 last-substantial-update: 2024-03-03T00:00:00Z
 exl-id: 08c97626-73a9-43d2-955c-b97fbb5f2e9a
 duration: 185
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 1%
@@ -33,7 +33,7 @@ ht-degree: 1%
 
 
 
-개발자이고 이 사용 사례 구현에 대한 코드 및 기타 세부 정보를 이해하려면 이 [AEM 프로젝트를 VSCode 또는 IntelliJ로 가져오십시오.](assets/azuredemoproject.zip)
+개발자이고 이 사용 사례 구현의 코드 및 기타 세부 정보를 이해하려면 이 [AEM 프로젝트를 VSCode 또는 IntelliJ로 가져오십시오.](assets/azuredemoproject.zip)
 
 이 샘플을 로컬 시스템에서 작업하려면 이 자습서의 [part5](./part5.md)에 언급된 단계를 따르십시오.
 

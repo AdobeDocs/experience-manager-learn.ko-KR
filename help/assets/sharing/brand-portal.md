@@ -2,7 +2,7 @@
 title: Brand Portal 사용
 description: AEM Author 및 AEM Assets Brand Portal 통합에 대한 비디오 둘러보기.
 feature: Brand Portal
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Content Management
 role: User
 level: Beginner
@@ -10,9 +10,9 @@ last-substantial-update: 2022-06-15T00:00:00Z
 doc-type: Feature Video
 exl-id: 42f13a19-52bf-413d-a141-63f1f0910dce
 duration: 2460
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
-source-wordcount: '1703'
+source-wordcount: '1702'
 ht-degree: 0%
 
 ---
@@ -23,17 +23,17 @@ Adobe Experience Manager(AEM) Assets Brand Portal 통합의 비디오 안내서�
 
 ## Brand Portal 2019년 9월 기능 및 개선 사항
 
-Brand Portal의 2019년 9월에는 Experience Manager 속도를 높이고 콘텐츠 작성자와 서드파티 크리에이티브 및 기여자 간에 에셋을 쉽고 빠르게 교환할 수 있는 Asset Sourcing이 가장 눈에 띄게 도입되었습니다.
+Brand Portal의 2019년 9월은 컨텐츠 속도를 높이고 Experience Manager 작성자와 서드파티 크리에이티브 및 기여자 간에 자산을 쉽고 빠르게 교환할 수 있는 Asset Sourcing을 가장 눈에 띄게 도입했습니다.
 
 ### Brand Portal 에셋 소싱{#asset-sourcing}
 
-Brand PortalExperience Manager 의 자산 소싱은 서드파티 에이전시 및 팀의 자산을 수집하는 데 사용되며 검토 및 사용을 위해 자산 작성자와 원활하게 동기화합니다.
+Brand Portal의 에셋 소싱을 사용하여 서드파티 에이전시 및 팀의 에셋을 수집하고 검토 및 사용하기 위해 다시 Experience Manager Author로 원활하게 동기화합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29365?quality=12&learn=on)
 
 *에셋 소싱을 사용하려면 Experience Manager 작성자 6.5 SP2(6.5.2) 이상이 필요합니다*
 
-Experience Manager 작성자에 대한 Experience Manager 소싱 구성 및 설정 방법에 대한 지침은 [자산 소싱에 대한 자산 작성자 활성화](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=ko-KR)를 검토하십시오.
+Experience Manager 작성자에 대한 자산 소싱을 구성하고 설정하는 방법에 대한 지침은 [자산 소싱에 Experience Manager 작성자 사용](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=ko-KR)을 검토하십시오.
 
 ## Brand Portal 2019년 2월 기능 및 개선 사항{#brand-portal-features-and-enhancements-644}
 
@@ -84,11 +84,11 @@ Brand Portal을 사용하면 검색 쿼리에서 검색 구문에 있는 단어�
 
 ### Dynamic Media 비디오 렌디션 지원
 
-AEM Author 인스턴스가 Dynamic Media 하이브리드 모드에 있는 사용자는 원본 비디오 파일 외에 Dynamic Media 렌디션을 미리 보고 다운로드할 수 있습니다.
+AEM 작성자 인스턴스가 Dynamic Media 하이브리드 모드에 있는 사용자는 원본 비디오 파일 외에 Dynamic Media 렌디션을 미리 보고 다운로드할 수 있습니다.
 
-특정 테넌트 계정에서 Dynamic Media 렌디션을 미리 보고 다운로드할 수 있도록 하려면 관리자는 관리 도구 패널의 비디오 구성에서 Dynamic Media 구성(비디오 서비스 URL(DM-게이트웨이 URL) 및 Dynamic Video를 가져오는 등록 ID)을 지정해야 합니다.
+특정 테넌트 계정에서 Dynamic Media 렌디션을 미리 보고 다운로드할 수 있도록 하려면 관리자는 관리 도구 패널의 비디오 구성에서 Dynamic Media 구성(비디오 서비스 URL(DM-게이트웨이 URL) 및 Dynamic Video를 가져오기 위한 등록 ID)을 지정해야 합니다.
 
-Dynamic Media 비디오는 다음에서 미리 볼 수 있습니다.
+Dynamic Media 비디오는 다음 위치에서 미리 볼 수 있습니다.
 
 * 자산 세부 사항 페이지
 * 에셋의 카드 보기
@@ -101,7 +101,7 @@ Dynamic Media 비디오 인코딩은 다음 위치에서 다운로드할 수 있
 
 ### Brand Portal에 예약된 게시
 
-[AEM(6.4.2.0)](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html#main-pars_header_9658011) 작성자 인스턴스에서 Brand Portal으로 Assets(및 폴더) 게시 워크플로우를 나중 날짜, 시간으로 예약할 수 있습니다.
+[AEM(6.4.2.0)](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html#main-pars_header_9658011) 작성자 인스턴스에서 Brand Portal으로 Assets(및 폴더) 게시 워크플로우를 나중에 예약할 수 있습니다.
 
 마찬가지로 Brand Portal에서 게시 취소 워크플로우를 예약하여 게시된 자산을 나중에 포털에서 제거할 수 있습니다.
 
@@ -114,7 +114,7 @@ Brand Portal URL의 접두사만 사용자 정의할 수 있으며 전체 URL은
 
 그러나 AEM 작성자 인스턴스는 테넌트 별칭(대체) URL이 아닌 테넌트 ID URL로만 [구성](https://helpx.adobe.com/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html)될 수 있습니다.
 
-**사용 사례** : 조직은 Adobe이 제공한 URL을 고수하는 대신 포털 URL을 사용자 지정하여 브랜딩 요구 사항을 충족할 수 있습니다.
+**사용 사례** : 조직은 Adobe에서 제공한 URL을 고수하는 대신 포털 URL을 사용자 지정하여 브랜딩 요구 사항을 충족할 수 있습니다.
 
 ## Brand Portal 2018년 12월 기능 및 개선 사항{#brand-portal-features-and-enhancements-642}
 
@@ -157,7 +157,7 @@ Brand Portal 사용자는 Aspera 기반의 빠른 다운로드를 활용하여 �
 * *카드 및 목록 보기의 폴더 계층 구조 경로* — 사용자가 Brand Portal 인스턴스 내에 저장된 폴더의 위치를 알 수 있습니다. 사용자가 서로 다른 폴더 계층 구조 내에서 이름이 같은 폴더를 구분할 수 있도록 지원합니다.
 * *개요 옵션* - 관리자가 아닌 사용자가 에셋/폴더를 선택한 다음 도구 모음에서 개요 옵션을 선택하여 에셋/폴더에 대한 메타데이터를 제공합니다. 현재 에는 제목, 생성 날짜 및 경로가 표시됩니다
 
-### Adobe I/O 호스트 UI를 사용하여 oAuth 통합 구성
+### Adobe I/O이 oAuth 통합 구성을 위한 UI를 호스팅함
 
 Brand Portal은 Adobe I/O [https://legacy-oauth.cloud.adobe.io/](https://legacy-oauth.cloud.adobe.io/) 인터페이스를 사용하여 JWT 애플리케이션을 만듭니다. 이렇게 하면 Brand Portal과의 AEM Assets 통합을 허용하도록 oAuth 통합을 구성할 수 있습니다. 이전에는 OAuth 통합 구성을 위한 UI가 `https://marketing.adobe.com/developer/`에서 호스팅되었습니다. AEM Assets과 Brand Portal을 통합하여 Brand Portal에 자산 및 컬렉션을 게시하는 방법에 대한 자세한 내용은 [Brand Portal과 AEM Assets 통합 구성](https://helpx.adobe.com/experience-manager/6-4/assets/using/brand-portal-configuring-integration.html)을 참조하세요.
 

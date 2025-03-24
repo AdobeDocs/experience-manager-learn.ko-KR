@@ -1,7 +1,7 @@
 ---
-title: AEM as a Cloud Service으로 이동하기 위해 AEM 현대화 도구 사용
+title: AEM 현대화 도구를 사용하여 AEM as a Cloud Service으로 이동
 description: AEM 현대화 도구 를 사용하여 기존 AEM 프로젝트 및 콘텐츠를 AEM as a Cloud Service과 호환되도록 업그레이드하는 방법에 대해 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Migration, Upgrade
 feature: Migration
 role: Developer
@@ -10,7 +10,7 @@ jira: KT-8629
 thumbnail: 336965.jpeg
 exl-id: 310f492c-0095-4015-81a4-27d76f288138
 duration: 2502
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 1%
@@ -42,12 +42,12 @@ AEM 현대화 도구 를 사용하여 기존 AEM Sites 콘텐츠를 AEM as a Clo
 
 ![AEM 현대화 도구 수명 주기](./assets/aem-modernization-tools.png)
 
-AEM 현대화 도구는 레거시 정적 템플릿, 기초 구성 요소 및 parsys로 구성된 기존 AEM 페이지를 편집 가능한 템플릿, AEM 코어 WCM 구성 요소 및 레이아웃 컨테이너와 같은 최신 접근 방식을 사용하도록 자동으로 변환합니다.
+AEM 현대화 도구는 편집 가능한 템플릿, AEM 코어 WCM 구성 요소 및 레이아웃 컨테이너와 같은 최신 접근 방식을 사용하도록 레거시 정적 템플릿, 기초 구성 요소 및 parsys로 구성된 기존 AEM 페이지를 자동으로 변환합니다.
 
 ## 주요 활동
 
 + AEM 6.x 프로덕션을 복제하여 AEM 현대화 도구 실행
-+ 패키지 관리자를 통해 AEM 6.x 프로덕션 클론에 [최신 AEM 현대화 도구](https://github.com/adobe/aem-modernize-tools/releases/latest)를 다운로드하여 설치하십시오.
++ 패키지 관리자를 통해 AEM 6.x 프로덕션 클론에 [최신 AEM 현대화 도구](https://github.com/adobe/aem-modernize-tools/releases/latest)를 다운로드하고 설치합니다
 
 + [페이지 구조 변환기](https://opensource.adobe.com/aem-modernize-tools/pages/structure/about.html)는 레이아웃 컨테이너를 사용하여 정적 템플릿의 기존 페이지 콘텐츠를 매핑된 편집 가능한 템플릿으로 업데이트합니다.
    + OSGi 구성을 사용하여 전환 규칙 정의
@@ -105,5 +105,5 @@ AEM 현대화 도구는 레거시 정적 템플릿, 기초 구성 요소 및 par
 + [AEM 현대화 도구 설명서](https://opensource.adobe.com/aem-modernize-tools/)
 + [AEM Gems - AEM 현대화 세트 소개](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/Introducing-the-AEM-Modernization-Suite.html)
 
-1. 로컬 AEM SDK에 새로 현대화한 wknd 레거시 사이트를 배포합니다. AEM ASK는 여기에서 다운로드할 수 있습니다.
+1. 로컬 AEM SDK에 새로 현대화된 wknd 레거시 사이트를 배포합니다. AEM ASK는 여기에서 다운로드할 수 있습니다.
    + [소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html).

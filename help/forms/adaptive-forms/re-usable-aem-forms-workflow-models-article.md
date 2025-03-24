@@ -2,14 +2,14 @@
 title: 재사용 가능한 AEM Forms 워크플로 모델
 description: 적응형 Forms과 독립적인 워크플로우 모델을 만드는 방법을 알아봅니다.
 feature: Workflow
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 3354a58b-d58e-4ddb-8f90-648554a64db8
 last-substantial-update: 2020-06-09T00:00:00Z
 duration: 58
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 0%
@@ -23,7 +23,7 @@ AEM Forms 6.5 릴리스부터 특정 적응형 양식에 연결되지 않은 워
 이러한 워크플로우를 디자인하려면 다음 단계를 수행하십시오
 
 1. AEM에 로그인
-1. 브라우저를 [워크플로 모델](http://localhost:4502/libs/cq/workflow/admin/console/content/models.html)(으)로 지정
+1. 브라우저를 [워크플로 모델](http://localhost:4502/libs/cq/workflow/admin/console/content/models.html)&#x200B;(으)로 지정
 1. 워크플로 모델을 추가하려면 __만들기 > 모델 만들기__&#x200B;를 클릭하십시오.
 1. 워크플로우 모델에 적절한 이름 및 제목 을 입력한 다음 완료 를 클릭합니다
 1. 새로 만든 모델을 편집 모드로 엽니다.

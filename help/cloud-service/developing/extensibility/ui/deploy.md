@@ -1,8 +1,8 @@
 ---
 title: AEM UI 확장 배포
-description: AEM UI 확장을 배포하는 방법을 알아봅니다.
+description: AEM UI 확장 기능을 배포하는 방법을 알아봅니다.
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Beginner
@@ -11,7 +11,7 @@ jira: KT-11603
 last-substantial-update: 2023-06-02T00:00:00Z
 exl-id: 2e37165d-c003-4206-8133-54e37ca35b8e
 duration: 166
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '765'
 ht-degree: 0%
@@ -28,9 +28,9 @@ AEM as a Cloud Service 환경에서 사용하려면 확장 App Builder 앱을 �
    + __프로덕션__ 작업 영역에 모든 AEM as a Cloud Service에서 사용할 수 있는 확장 배포가 포함되어 있습니다.
    + __Stage__ 작업 영역은 개발자 작업 영역으로 작동합니다. 스테이지 작업 영역에 배포된 확장은 AEM as a Cloud Service에서 사용할 수 없습니다.
 Adobe Developer Console 작업 영역은 AEM as a Cloud Service 환경 유형과 직접적인 상관 관계가 없습니다.
-+ Production Workspace에 배포된 확장은 확장이 존재하는 Adobe 조직의 모든 AEM as a Cloud Service 환경에 표시됩니다.
++ 프로덕션 작업 영역에 배포된 확장은 확장이 존재하는 Adobe 조직의 모든 AEM as a Cloud Service 환경에 표시됩니다.
 AEM as a Cloud Service 호스트 이름](https://developer.adobe.com/uix/docs/guides/publication/#enabling-extension-only-on-specific-aem-environments)을(를) 확인하는 [조건부 논리를 추가하여 확장이 등록된 환경으로 제한할 수 없습니다.
-+ AEM as a Cloud Service에서 여러 확장을 사용할 수 있습니다. Adobe은 단일 비즈니스 목표를 해결하기 위해 App Builder 앱을 사용하는 각 확장을 권장합니다. 즉, 단일 확장 App Builder 앱은 일반적인 비즈니스 목표를 지원하는 여러 확장 지점을 구현할 수 있습니다.
++ AEM as a Cloud Service에서 여러 확장을 사용할 수 있습니다. Adobe은 단일 비즈니스 목표를 해결하기 위해 각 확장 App Builder 앱을 사용할 것을 권장합니다. 즉, 단일 확장 App Builder 앱은 일반적인 비즈니스 목표를 지원하는 여러 확장 지점을 구현할 수 있습니다.
 
 ## 초기 배포
 
@@ -43,7 +43,7 @@ AEM as a Cloud Service 환경에서 사용할 수 있는 확장을 사용하려�
 
 ### 확장 배포
 
-프로덕션 작업 영역에 확장을 배포합니다. 프로덕션 작업 영역에 배포된 확장은 확장이 배포되는 Adobe 조직의 모든 AEM as a Cloud Service 작성자 서비스에 자동으로 추가됩니다.
+프로덕션 작업 영역에 확장을 배포합니다. 프로덕션 작업 영역에 배포된 확장은 확장이 배포된 Adobe 조직의 모든 AEM as a Cloud Service 작성자 서비스에 자동으로 추가됩니다.
 
 1. 업데이트된 확장 App Builder 앱의 루트에 대한 명령줄을 엽니다.
 1. 프로덕션 작업 영역이 활성 상태인지 확인합니다.
@@ -97,7 +97,7 @@ App Builder 앱 업데이트 및 확장은 [초기 배포](#initial-deployment)�
 
 ### 확장 배포
 
-프로덕션 작업 영역에 확장을 배포합니다. 프로덕션 작업 영역에 배포된 확장은 확장이 배포되는 Adobe 조직의 모든 AEM as a Cloud Service 작성자 서비스에 자동으로 추가됩니다.
+프로덕션 작업 영역에 확장을 배포합니다. 프로덕션 작업 영역에 배포된 확장은 확장이 배포된 Adobe 조직의 모든 AEM as a Cloud Service 작성자 서비스에 자동으로 추가됩니다.
 
 1. 업데이트된 확장 App Builder 앱의 루트에 대한 명령줄을 엽니다.
 1. 프로덕션 작업 영역이 활성 상태인지 확인합니다.

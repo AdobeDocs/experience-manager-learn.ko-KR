@@ -1,7 +1,7 @@
 ---
 title: AEM Dispatcher vanity URL 기능
 description: 콘텐츠를 게재 가장자리에 더 가깝게 매핑하기 위해 AEM이 규칙 다시 작성을 사용하여 vanity URL 및 추가 기술을 처리하는 방법을 이해합니다.
-version: 6.5
+version: Experience Manager 6.5
 topic: Administration, Performance
 feature: Dispatcher
 role: Admin
@@ -10,7 +10,7 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 53baef9c-aa4e-4f18-ab30-ef9f4f5513ee
 duration: 244
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1159'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## 개요
 
-이 문서는 AEM에서 컨텐츠 전달 가장자리에 더 가깝게 매핑하기 위해 규칙 다시 작성을 사용하여 단축 URL 및 일부 추가 기법을 처리하는 방법을 이해하는 데 도움이 됩니다
+이 문서는 AEM이 규칙 다시 작성을 사용하여 콘텐츠를 게재 가장자리에 더 가깝게 매핑하여 단축 URL 및 일부 추가 기법을 처리하는 방법을 이해하는 데 도움이 됩니다
 
 ## 단축 URL 소개
 
@@ -50,7 +50,7 @@ AEM 작성자에게는 AEM의 컨텐츠 일부에 대한 단축 url 속성을 �
 
 #### Touch UI:
 
-![사이트 편집기 화면의 AEM 제작 UI에 대한 드롭다운 대화 상자 메뉴](assets/disp-vanity-url/aem-page-properties-drop-down.png "aem-page-properties-drop-down")
+![사이트 편집기 화면의 AEM 작성 UI에 대한 드롭다운 대화 상자 메뉴](assets/disp-vanity-url/aem-page-properties-drop-down.png "aem-page-properties-drop-down")
 
 ![aem 페이지 속성 대화 상자 페이지](assets/disp-vanity-url/aem-page-properties.png "aem-page-properties")
 
@@ -178,7 +178,7 @@ AEM을 사용하여 단축 항목을 제어하면 다음과 같은 이점이 있
 
 두 가지 방법을 모두 사용하되 다음 경우에 사용할 권고 사항 및 기준은 다음과 같습니다.
 
-- 단축이 임시적이고 계획된 트래픽이 낮은 수준인 경우 AEM 내장 기능을 사용하십시오
+- 단축이 임시적이고 계획된 트래픽이 낮은 수준인 경우 AEM 기본 기능을 사용하십시오
 - 단축이 자주 변경되지 않고 자주 사용하는 스테이플 끝점인 경우 `mod_rewrite` 규칙을 사용하십시오.
 - 단축 네임스페이스(예: `/aboutus`)를 동일한 AEM 인스턴스의 많은 브랜드에 대해 다시 사용해야 하는 경우 규칙 다시 작성을 사용하십시오.
 

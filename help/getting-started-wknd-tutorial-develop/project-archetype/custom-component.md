@@ -1,7 +1,7 @@
 ---
 title: 사용자 정의 구성 요소
 description: 작성된 콘텐츠를 표시하는 사용자 지정 인라인 구성 요소의 전체 작성을 다룹니다. 비즈니스 논리를 캡슐화하는 슬링 모델 개발을 포함하여 바이라인 구성 요소를 채우고 해당 HTL을 구성 요소 렌더링에 추가합니다.
-version: 6.5, Cloud Service
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: Core Components, APIs
 topic: Content Management, Development
 role: Developer
@@ -12,7 +12,7 @@ thumbnail: 30181.jpg
 doc-type: Tutorial
 exl-id: f54f3dc9-6ec6-4e55-9043-7a006840c905
 duration: 1039
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '3869'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # 사용자 정의 구성 요소 {#custom-component}
 
-이 자습서에서는 대화 상자에서 작성된 콘텐츠를 표시하는 사용자 지정 `Byline` AEM 구성 요소를 완전히 만들고 구성 요소의 HTL을 채우는 비즈니스 논리를 캡슐화하는 슬링 모델 개발을 살펴봅니다.
+이 튜토리얼에서는 대화 상자에서 작성된 콘텐츠를 표시하는 사용자 지정 `Byline` AEM 구성 요소를 완전히 만들고 구성 요소의 HTL을 채우는 비즈니스 논리를 캡슐화하는 슬링 모델 개발을 살펴봅니다.
 
 ## 사전 요구 사항 {#prerequisites}
 
@@ -80,7 +80,7 @@ Byline 구성 요소의 구현에는 byline 콘텐츠를 수집하는 대화 상
 
 ## Byline 구성 요소 만들기 {#create-byline-component}
 
-먼저 Byline Component 노드 구조를 만들고 대화 상자를 정의합니다. AEM의 구성 요소를 나타내고 JCR에서의 해당 위치로 구성 요소의 리소스 유형을 암시적으로 정의합니다.
+먼저 Byline Component 노드 구조를 만들고 대화 상자를 정의합니다. AEM의 구성 요소를 나타내며 JCR에서의 위치로 구성 요소의 리소스 유형을 암시적으로 정의합니다.
 
 대화 상자는 콘텐츠 작성자가 제공할 수 있는 인터페이스를 표시합니다. 이 구현의 경우 AEM WCM 핵심 구성 요소의 **Image** 구성 요소는 Byline의 이미지 작성 및 렌더링을 처리하는 데 사용되므로 이 구성 요소의 `sling:resourceSuperType`(으)로 설정해야 합니다.
 
@@ -107,7 +107,7 @@ Byline 구성 요소의 구현에는 byline 콘텐츠를 수집하는 대화 상
 
 ### HTL 스크립트 만들기 {#create-the-htl-script}
 
-1. `byline` 폴더 안에 구성 요소의 HTML 프레젠테이션을 담당하는 `byline.html` 파일을 추가하십시오. Sling이 이 리소스 유형을 렌더링하는 데 사용하는 기본 스크립트가 되므로 파일과 동일한 파일의 이름을 지정하는 것이 중요합니다.
+1. `byline` 폴더 안에 구성 요소의 HTML 프레젠테이션을 담당하는 `byline.html` 파일을 추가합니다. Sling이 이 리소스 유형을 렌더링하는 데 사용하는 기본 스크립트가 되므로 파일과 동일한 파일의 이름을 지정하는 것이 중요합니다.
 
 1. `byline.html`에 다음 코드를 추가하십시오.
 
@@ -288,7 +288,7 @@ Byline 구성 요소의 구현에는 byline 콘텐츠를 수집하는 대화 상
 
 ## 페이지에 구성 요소 추가 {#add-the-component-to-a-page}
 
-AEM 구성 요소 개발에 초점을 맞추고 단순하게 유지하기 위해 현재 상태의 Byline 구성 요소를 Article 페이지에 추가하여 `cq:Component` 노드 정의가 올바른지 확인하겠습니다. 또한 AEM에서 새 구성 요소 정의를 인식하고 구성 요소의 대화 상자가 작성에 작동하는지 확인합니다.
+AEM 구성 요소 개발에 초점을 맞추고 단순하게 유지하기 위해 현재 상태의 Byline 구성 요소를 문서 페이지에 추가하여 `cq:Component` 노드 정의가 올바른지 확인하겠습니다. 또한 AEM에서 새 구성 요소 정의를 인식하고 구성 요소의 대화 상자가 작성에 작동하는지 확인합니다.
 
 ### AEM Assets에 이미지 추가
 
@@ -328,7 +328,7 @@ AEM 구성 요소 개발에 초점을 맞추고 단순하게 유지하기 위해
 
    AEM 작성자는 대화 상자를 통해 구성 요소를 구성하고 작성합니다. 이 시점에서 Byline 구성 요소 개발 시 데이터 수집을 위한 대화 상자가 포함되지만 작성된 콘텐츠를 렌더링하는 논리는 아직 추가되지 않았습니다. 따라서 자리 표시자만 표시됩니다.
 
-1. 대화 상자를 저장한 후 [CRXDE Lite](http://localhost:4502/crx/de/index.jsp#/content/wknd/us/en/magazine/guide-la-skateparks/jcr%3Acontent/root/container/container/byline)(으)로 이동하여 구성 요소의 콘텐츠가 AEM 페이지 아래의 byline 구성 요소 콘텐츠 노드에 어떻게 저장되는지 검토하십시오.
+1. 대화 상자를 저장한 후 [CRXDE Lite](http://localhost:4502/crx/de/index.jsp#/content/wknd/us/en/magazine/guide-la-skateparks/jcr%3Acontent/root/container/container/byline)&#x200B;(으)로 이동하여 AEM 페이지 아래의 byline 구성 요소 콘텐츠 노드에 구성 요소의 콘텐츠가 저장되는 방법을 검토하십시오.
 
    LA Skate Parks 페이지 아래에서 Byline 구성 요소 콘텐츠 노드(예: `/content/wknd/us/en/magazine/guide-la-skateparks/jcr:content/root/container/container/byline`)를 찾습니다.
 
@@ -346,7 +346,7 @@ Sling 모델은 JCR에서 Java™ 변수로의 데이터 매핑을 촉진하고 
 
 ### Maven 종속성 검토 {#maven-dependency}
 
-Byline Sling 모델은 AEM에서 제공하는 여러 Java™ API를 사용합니다. 이러한 API는 `core` 모듈의 POM 파일에 나열된 `dependencies`을(를) 통해 사용할 수 있습니다. 이 자습서에 사용된 프로젝트는 AEM as a Cloud Service용으로 빌드되었습니다. 그러나 AEM 6.5/6.4와 이전 버전과 호환되므로 독특합니다. 따라서 Cloud Service과 AEM 6.x에 대한 종속성이 모두 포함됩니다.
+Byline Sling 모델은 AEM에서 제공하는 여러 Java™ API를 사용합니다. 이러한 API는 `core` 모듈의 POM 파일에 나열된 `dependencies`을(를) 통해 사용할 수 있습니다. 이 자습서에 사용된 프로젝트는 AEM as a Cloud Service용으로 빌드되었습니다. 하지만 AEM 6.5/6.4와 이전 버전과 호환되므로 독특합니다. 따라서 Cloud Service 및 AEM 6.x에 대한 종속성이 모두 포함됩니다.
 
 1. `<src>/aem-guides-wknd/core/pom.xml` 아래에서 `pom.xml` 파일을 엽니다.
 1. `aem-sdk-api` - **AEM as a Cloud Service 전용**&#x200B;에 대한 종속성을 찾습니다.
@@ -358,7 +358,7 @@ Byline Sling 모델은 AEM에서 제공하는 여러 Java™ API를 사용합니
    </dependency>
    ```
 
-   [aem-sdk-api](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en)에는 AEM에서 공개한 모든 공개 Java™ API가 포함되어 있습니다. 이 프로젝트를 빌드할 때 기본적으로 `aem-sdk-api`이(가) 사용됩니다. 버전은 `aem-guides-wknd/pom.xml`에 있는 프로젝트의 루트에서 상위 반응기 pom에 유지됩니다.
+   [aem-sdk-api](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en)에는 AEM에 의해 노출된 모든 공개 Java™ API가 포함되어 있습니다. 이 프로젝트를 빌드할 때 기본적으로 `aem-sdk-api`이(가) 사용됩니다. 버전은 `aem-guides-wknd/pom.xml`에 있는 프로젝트의 루트에서 상위 반응기 pom에 유지됩니다.
 
 1. `uber-jar`에 대한 종속성 찾기 - **AEM 6.5/6.4 전용**
 
@@ -508,7 +508,7 @@ Byline Sling 모델은 AEM에서 제공하는 여러 Java™ API를 사용합니
 
    이 주석과 해당 매개 변수를 검토해 보겠습니다.
 
-   * `@Model` 주석이 AEM에 배포될 때 BylineImpl이 Sling 모델로 등록됩니다.
+   * `@Model` 주석은 BylineImpl을 AEM에 배포할 때 Sling 모델로 등록합니다.
    * `adaptables` 매개 변수는 이 모델을 요청으로 조정할 수 있도록 지정합니다.
    * `adapters` 매개 변수를 사용하면 구현 클래스를 Byline 인터페이스에 등록할 수 있습니다. 이를 통해 HTL 스크립트는 인터페이스를 통해(직접 구현하지 않고) 슬링 모델을 호출할 수 있습니다. [어댑터에 대한 자세한 내용은 여기를 참조하십시오](https://sling.apache.org/documentation/bundles/models.html#specifying-an-alternate-adapter-class-since-110).
    * `resourceType`은(는) Byline 구성 요소 리소스 유형(이전에 만든)을 가리키며, 구현이 여러 개인 경우 올바른 모델을 해결하는 데 도움이 됩니다. [모델 클래스를 리소스 형식과 연결하는 방법에 대한 자세한 내용은 ](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)에서 확인할 수 있습니다.
@@ -861,7 +861,7 @@ public class BylineImpl implements Byline {
 
 ### 인라인 HTL 업데이트
 
-1. 다음 골격 HTML 구조로 **byline.html**&#x200B;을(를) 업데이트합니다.
+1. 다음 기본 HTML 구조로 **byline.html**&#x200B;을(를) 업데이트합니다.
 
    ```html
    <div data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
@@ -923,7 +923,7 @@ HTL 식의 `@` 연산자를 통해 식이 추가됩니다.
 
 ### 조건부로 자리 표시자 표시 {#conditionally-displaying-the-placeholder}
 
-AEM 구성 요소용 HTL 스크립트는 **자리 표시자 패러다임**&#x200B;을 사용하여 구성 요소가 잘못 작성되고 AEM Publish **에 표시되지 않음을 나타내는 시각적 큐를 작성자**&#x200B;에게 제공합니다. 이 결정을 유도하는 규칙은 구성 요소의 지원 Sling 모델에서 메서드를 구현하는 것입니다(이 경우: `Byline.isEmpty()`).
+AEM 구성 요소에 대한 대부분의 HTL 스크립트는 **자리 표시자 패러다임**&#x200B;을 사용하여 구성 요소가 잘못 작성되고 AEM Publish **에 표시되지 않는다는 것을 나타내는 시각적 큐를 작성자**&#x200B;에게 제공합니다. 이 결정을 유도하는 규칙은 구성 요소의 지원 Sling 모델에서 메서드를 구현하는 것입니다(이 경우: `Byline.isEmpty()`).
 
 `isEmpty()` 메서드가 Byline Sling 모델에서 호출되고 결과(또는 `!` 연산자를 통해 음수)가 이름이 `hasContent`인 HTL 변수에 저장됩니다.
 
@@ -938,7 +938,7 @@ AEM 구성 요소용 HTL 스크립트는 **자리 표시자 패러다임**&#x200
    </div>
    ```
 
-   `data-sly-test`을(를) 사용하는 것이 중요합니다. HTL `test` 블록은 모두 HTL 변수를 설정하고 해당 HTML 요소를 렌더링/렌더링하지 않습니다. HTL 표현식 평가 결과를 기반으로 합니다. true이면 HTML 요소가 렌더링되고 그렇지 않으면 렌더링되지 않습니다.
+   `data-sly-test`을(를) 사용하는 것이 중요합니다. HTL `test` 블록은 HTL 변수를 설정하고 있는 HTML 요소를 렌더링/렌더링하지 않습니다. HTL 표현식 평가 결과를 기반으로 합니다. true이면 HTML 요소가 렌더링되고, 그렇지 않으면 렌더링되지 않습니다.
 
    이제 이 HTL 변수 `hasContent`을(를) 사용하여 조건부로 자리 표시자를 표시하거나 숨길 수 있습니다.
 
@@ -1009,7 +1009,7 @@ AEM 구성 요소용 HTL 스크립트는 **자리 표시자 패러다임**&#x200
 
 ### 스타일이 지정되지 않은 Byline 구성 요소 검토 {#reviewing-the-unstyled-byline-component}
 
-1. 업데이트를 배포한 후 [LA Skateparks에 대한 Ultimate 안내서](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html) 페이지로 이동하거나, 챕터 앞부분에서 Byline 구성 요소를 추가한 위치로 이동합니다.
+1. 업데이트를 배포한 후 [LA Skateparks에 대한 Ultimate 안내서](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html) 페이지로 이동하거나 챕터 앞부분에 바이라인 구성 요소를 추가한 위치로 이동합니다.
 
 1. 이제 **이미지**, **이름** 및 **직업**&#x200B;이 나타나고 스타일이 지정되지 않았지만 작동하는 Byline 구성 요소가 있습니다.
 
@@ -1082,7 +1082,7 @@ Byline 구성 요소의 기본 스타일을 추가합니다.
    $ npm run watch
    ```
 
-1. 브라우저로 돌아가서 [LA SkateParks 문서](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html)(으)로 이동합니다. 구성 요소에 업데이트된 스타일이 표시됩니다.
+1. 브라우저로 돌아가서 [LA SkateParks 문서](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html)&#x200B;(으)로 이동합니다. 구성 요소에 업데이트된 스타일이 표시됩니다.
 
    ![줄 구성 요소를 마쳤습니다](assets/custom-component/final-byline-component.png)
 

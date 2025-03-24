@@ -1,7 +1,7 @@
 ---
-title: 웹 구성 요소/JS - AEM Headless 예
-description: 예제 애플리케이션은 AEM(Adobe Experience Manager)의 Headless 기능을 살펴볼 수 있는 좋은 방법입니다. 이 웹 구성 요소/JS 애플리케이션은 지속 쿼리를 사용하여 AEM의 GraphQL API를 사용하여 콘텐츠를 쿼리하는 방법을 보여 줍니다.
-version: Cloud Service
+title: 웹 구성 요소/JS - AEM Headless 예제
+description: 예제 애플리케이션은 Adobe Experience Manager(AEM)의 Headless 기능을 살펴볼 수 있는 좋은 방법입니다. 이 웹 구성 요소/JS 애플리케이션은 지속 쿼리를 사용하여 AEM의 GraphQL API를 사용하여 콘텐츠를 쿼리하는 방법을 보여 줍니다.
+version: Experience Manager as a Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
@@ -9,10 +9,10 @@ level: Beginner
 jira: KT-10797
 thumbnail: kt-10797.jpg
 last-substantial-update: 2023-05-10T00:00:00Z
-badgeVersions: label="AEM as a Cloud Service Headless" before-title="false"
+badgeVersions: label="AEM 헤드리스 as a Cloud Service" before-title="false"
 exl-id: 4f090809-753e-465c-9970-48cf0d1e4790
 duration: 129
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 0%
@@ -21,9 +21,9 @@ ht-degree: 0%
 
 # 웹 구성 요소
 
-예제 애플리케이션은 AEM(Adobe Experience Manager)의 Headless 기능을 살펴볼 수 있는 좋은 방법입니다. 이 웹 구성 요소 애플리케이션은 지속 쿼리를 사용하여 AEM의 GraphQL API를 사용하여 콘텐츠를 쿼리하고 순수 JavaScript 코드를 사용하여 UI의 일부를 렌더링하는 방법을 보여 줍니다.
+예제 애플리케이션은 Adobe Experience Manager(AEM)의 Headless 기능을 살펴볼 수 있는 좋은 방법입니다. 이 웹 구성 요소 애플리케이션은 지속 쿼리를 사용하여 AEM의 GraphQL API를 사용하여 콘텐츠를 쿼리하고 순수 JavaScript 코드를 사용하여 UI의 일부를 렌더링하는 방법을 보여 줍니다.
 
-![AEM Headless가 있는 웹 구성 요소](./assets/web-component/web-component.png)
+![AEM Headless를 사용한 웹 구성 요소](./assets/web-component/web-component.png)
 
 GitHub에서 [소스 코드 보기](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/web-component)
 
@@ -39,7 +39,7 @@ GitHub에서 [소스 코드 보기](https://github.com/adobe/aem-guides-wknd-gra
 웹 구성 요소는 다음 AEM 배포 옵션과 함께 작동합니다.
 
 + [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
-+ [AEM Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=ko-KR)를 사용하여 로컬 설정
++ [AEM 클라우드 서비스 SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=ko)을 사용하여 로컬 설정
    + [JDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atoling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14) 필요(로컬 AEM 6.5 또는 AEM SDK에 연결하는 경우)
 
 이 예제 앱은 [basic-tutorial-solution.content.zip](../multi-step/assets/explore-graphql-api/basic-tutorial-solution.content.zip)을 설치하고 필요한 [배포 구성](../deployment/web-component.md)을 준비합니다.
@@ -47,7 +47,7 @@ GitHub에서 [소스 코드 보기](https://github.com/adobe/aem-guides-wknd-gra
 
 >[!IMPORTANT]
 >
->웹 구성 요소는 __AEM Publish__ 환경에 연결하도록 디자인되었지만 웹 구성 요소의 [`person.js`](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/web-component/src/person.js#L11) 파일에 인증이 제공된 경우 AEM 작성자의 콘텐츠를 소싱할 수 있습니다.
+>웹 구성 요소는 __AEM 게시__ 환경에 연결하도록 디자인되었지만 웹 구성 요소의 [`person.js`](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/web-component/src/person.js#L11) 파일에 인증이 제공된 경우 AEM 작성자의 콘텐츠를 소싱할 수 있습니다.
 
 ## 사용 방법
 
@@ -93,7 +93,7 @@ GitHub에서 [소스 코드 보기](https://github.com/adobe/aem-guides-wknd-gra
    $ npm start
    ```
 
-1. 새 브라우저 창에서 [http://localhost:8080](http://localhost:8080)에 웹 구성 요소를 포함하는 정적 HTML 페이지가 열립니다.
+1. 새 브라우저 창에서 [http://localhost:8080](http://localhost:8080)에 웹 구성 요소를 임베드하는 정적 HTML 페이지가 열립니다.
 1. _개인 정보_ 웹 구성 요소가 웹 페이지에 표시됩니다.
 
 ## 코드

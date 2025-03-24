@@ -1,7 +1,7 @@
 ---
 title: 트래픽 필터 규칙(WAF 규칙 포함)으로 웹 사이트 보호
-description: WAF(Web Application Firewall) 규칙의 하위 범주를 포함하여 트래픽 필터 규칙에 대해 알아봅니다. 규칙을 만들고, 배포하고, 테스트하는 방법. 또한 결과를 분석하여 AEM 사이트를 보호하십시오.
-version: Cloud Service
+description: 웹 애플리케이션 방화벽(WAF) 규칙의 하위 범주를 포함하여 트래픽 필터 규칙에 대해 알아봅니다. 규칙을 만들고, 배포하고, 테스트하는 방법. 또한 결과를 분석하여 AEM 사이트를 보호하십시오.
+version: Experience Manager as a Cloud Service
 feature: Security
 topic: Security, Administration, Architecture
 role: Admin, Architect
@@ -12,7 +12,7 @@ jira: KT-13148
 thumbnail: KT-13148.jpeg
 exl-id: e6d67204-2f76-441c-a178-a34798fe266d
 duration: 165
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 13%
@@ -21,7 +21,7 @@ ht-degree: 13%
 
 # 트래픽 필터 규칙(WAF 규칙 포함)으로 웹 사이트 보호
 
-AEMCS(AEM as a Cloud Service)의 **WAF(Web Application Firewall) 규칙**&#x200B;의 하위 범주를 포함하여 **트래픽 필터 규칙**&#x200B;에 대해 알아봅니다. 규칙을 만들고, 배포하고, 테스트하는 방법에 대해 알아보십시오. 또한 결과를 분석하여 AEM 사이트를 보호하십시오.
+AEMCS(AEM as a Cloud Service)의 **웹 응용 프로그램 방화벽(WAF) 규칙**&#x200B;의 하위 범주를 포함하여 **트래픽 필터 규칙**&#x200B;에 대해 알아봅니다. 규칙을 만들고, 배포하고, 테스트하는 방법에 대해 알아보십시오. 또한 결과를 분석하여 AEM 사이트를 보호하십시오.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425401?quality=12&learn=on)
 

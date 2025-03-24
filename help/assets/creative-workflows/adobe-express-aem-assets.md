@@ -1,7 +1,7 @@
 ---
 title: AEM Assets과 Adobe Express 통합
-description: AEM Assets과의 Adobe Express 통합을 사용하여 모든 팀원의 생산성 및 접근성을 향상하고 콘텐츠 공급망을 최적화하는 방법에 대해 알아봅니다.
-version: Cloud Service
+description: Adobe Express과 AEM Assets의 통합을 사용하여 모든 팀원의 생산성 및 접근성을 향상하고 콘텐츠 공급망을 최적화하는 방법에 대해 알아봅니다.
+version: Experience Manager as a Cloud Service
 feature: Integrations
 topic: Integrations, Content Management, Content Supply Chain
 role: User
@@ -11,7 +11,7 @@ jira: KT-15375
 doc-type: Feature Video
 duration: 583
 exl-id: 951bb255-e3e7-4bd5-9d48-7ff0469860af
-source-git-commit: 04037791eb5fe7a3b390b29d5c25f3260e5d41c9
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '61'
 ht-degree: 1%

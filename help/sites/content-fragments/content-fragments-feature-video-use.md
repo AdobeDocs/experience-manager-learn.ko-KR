@@ -1,15 +1,15 @@
 ---
 title: AEM에서 컨텐츠 조각 작성
-description: 콘텐츠 조각 은 텍스트 기반 콘텐츠를 지원하는 채널과 독립적으로 작성 및 관리할 수 있는 AEM의 콘텐츠 추상화입니다.
+description: 컨텐츠 조각은 텍스트 기반 컨텐츠를 지원하는 채널과 독립적으로 작성 및 관리할 수 있도록 하는 AEM의 컨텐츠 추상화입니다.
 feature: Content Fragments
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Content Management
 role: User
 level: Beginner
 doc-type: Feature Video
 exl-id: d33c033a-9577-4d4e-99be-f3c7e2a4ce73
 duration: 665
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 11%
@@ -18,9 +18,9 @@ ht-degree: 11%
 
 # 콘텐츠 조각 작성 {#authoring-content-fragments}
 
-콘텐츠 조각 은 텍스트 기반 콘텐츠를 지원하는 채널과 독립적으로 작성 및 관리할 수 있는 AEM의 콘텐츠 추상화입니다.
+컨텐츠 조각은 텍스트 기반 컨텐츠를 지원하는 채널과 독립적으로 작성 및 관리할 수 있도록 하는 AEM의 컨텐츠 추상화입니다.
 
-AEM 콘텐츠 조각 은 텍스트 기반 편집 콘텐츠로서, 디자인 또는 레이아웃 정보가 없는 순수 콘텐츠로 간주되지만 구조화된 일부 데이터 요소를 포함할 수 있습니다. 콘텐츠 조각은 일반적으로 채널에 관계없이 사용할 수 있는 콘텐츠로 만들어지며, 여러 채널에서 사용되고 재사용됩니다. 이렇게 되면 콘텐츠가 컨텍스트별 경험으로 래핑됩니다.
+AEM 컨텐츠 조각 은 텍스트 기반 편집 컨텐츠로서, 디자인 또는 레이아웃 정보가 없는 순수 컨텐츠로 간주되지만 구조화된 데이터 요소를 포함할 수 있습니다. 콘텐츠 조각은 일반적으로 채널에 관계없이 사용할 수 있는 콘텐츠로 만들어지며, 여러 채널에서 사용되고 재사용됩니다. 이렇게 되면 콘텐츠가 컨텍스트별 경험으로 래핑됩니다.
 
 이 비디오 시리즈는 AEM에서 컨텐츠 조각의 작성 라이프 사이클을 다룹니다. [콘텐츠 조각 배달에 대한 자세한 내용은 여기](content-fragments-delivery-feature-video-use.md)를 참조하세요.
 
@@ -38,7 +38,7 @@ AEM 콘텐츠 조각 은 텍스트 기반 편집 콘텐츠로서, 디자인 또�
 
 >[!VIDEO](https://video.tv.adobe.com/v/22452?quality=12&learn=on)
 
-콘텐츠 조각의 데이터 스키마인 AEM 콘텐츠 조각 모델은 AEM의 [[!UICONTROL 구성 브라우저]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html)를 통해 활성화해야 합니다. 이렇게 하면 구성 단위로 콘텐츠 조각 모델을 정의할 수 있습니다.
+콘텐츠 조각의 데이터 스키마인 AEM 콘텐츠 조각 모델은 AEM의 [[!UICONTROL 구성 브라우저]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html)를 통해 활성화해야 합니다. 이를 통해 구성 단위로 콘텐츠 조각 모델을 정의할 수 있습니다.
 
 ## 콘텐츠 조각 만들기 {#creating-content-fragments}
 
@@ -75,9 +75,9 @@ AEM 컨텐츠 조각은 AEM 작성자에서 변형, 요소 및 메타데이터�
 ## 추가 리소스 {#additional-resources}
 
 * [컨텐츠 조각 전달](content-fragments-delivery-feature-video-use.md)
-* [AEM WCM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)
+* [AEM WCM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [AEM WCM 핵심 콘텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
 
-비디오 시리즈에서 최종 상태에 대해 AEM 6.4+ 인스턴스에서 아래 패키지를 다운로드하여 설치하려면 다음을 수행하십시오.
+비디오 시리즈에서 최종 상태에 대해 AEM 6.4 이상 인스턴스에서 아래 패키지를 다운로드하여 설치하려면 다음을 수행하십시오.
 
 **[aem_demo_fluid-experiencecontent-fragments-100.zip](assets/aem_demo_fluid-experiencescontent-fragments-100.zip)**

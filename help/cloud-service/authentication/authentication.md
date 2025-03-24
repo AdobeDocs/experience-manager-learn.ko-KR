@@ -1,7 +1,7 @@
 ---
 title: AEM as a Cloud Service에서의 인증
 description: AEM as a Cloud Service의 인증에 대해 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Integrations, Security
 role: Architect, Developer
@@ -11,7 +11,7 @@ thumbnail: KT-10436.png
 last-substantial-update: 2022-10-14T00:00:00Z
 exl-id: 4dba6c09-2949-4153-a9bc-d660a740f8f7
 duration: 28
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 3%
@@ -56,7 +56,7 @@ AEM as a Cloud Service은 여러 인증 옵션을 지원하며 서비스 유형�
       <a  href="../../headless-tutorial/authentication/overview.md"><img alt="토큰" src="./assets/card--token.png"/></a>
       <div><strong><a href="../../headless-tutorial/authentication/overview.md">토큰 인증</a></strong></div>
       <p>
-        응용 프로그램 및 미들웨어가 API 서비스 토큰을 사용하여 AEM에 인증할 수 있도록 허용합니다.
+        응용 프로그램 및 미들웨어가 API 서비스 토큰을 사용하여 AEM을 인증할 수 있도록 허용합니다.
       </p>
     </td>   
   </tr>

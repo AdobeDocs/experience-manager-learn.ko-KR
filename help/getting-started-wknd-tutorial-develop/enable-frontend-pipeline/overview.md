@@ -1,7 +1,7 @@
 ---
 title: 표준 AEM Project Archetype에 프론트엔드 파이프라인 사용
-description: 표준 AEM 프로젝트에 대해 프론트엔드 파이프라인을 활성화하여 CSS, JavaScript, 글꼴, 아이콘 등의 정적 리소스를 보다 신속하게 배포하는 방법에 대해 알아봅니다. 또한 AEM의 전체 스택 백엔드 개발과 프론트엔드 개발 분리
-version: Cloud Service
+description: CSS, JavaScript, 글꼴, 아이콘과 같은 정적 리소스를 더 빨리 배포하기 위해 표준 AEM 프로젝트에 프론트엔드 파이프라인을 활성화하는 방법을 알아봅니다. 또한 AEM에서 프론트엔드 개발과 전체 스택 백엔드 개발을 분리합니다.
+version: Experience Manager as a Cloud Service
 feature: AEM Project Archetype, Cloud Manager, CI-CD Pipeline
 topic: Content Management, Development, Development, Architecture
 role: Developer, Architect, Admin
@@ -15,7 +15,7 @@ last-substantial-update: 2022-09-23T00:00:00Z
 doc-type: Tutorial
 exl-id: b795e7e8-f611-4fc3-9846-1d3f1a28ccbc
 duration: 206
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 1%
@@ -24,10 +24,10 @@ ht-degree: 1%
 
 # 표준 AEM Project Archetype에 프론트엔드 파이프라인 사용{#enable-front-end-pipeline-standard-aem-project}
 
-[AEM Project Archetype](https://github.com/adobe/aem-project-archetype)을(를) 사용하여 만든 [AEM WKND Sites 프로젝트](https://github.com/adobe/aem-guides-wknd)(즉, 표준 AEM 프로젝트)를 활성화하여 프론트엔드 파이프라인을 사용하여 CSS, JavaScript, 글꼴 및 아이콘과 같은 프론트엔드 리소스를 배포하여 개발부터 배포까지의 주기를 단축하는 방법에 대해 알아봅니다. AEM의 전체 스택 백엔드 개발과 프론트엔드 개발 분리 또한 이러한 프론트엔드 리소스가 AEM 리포지토리에서 __제공되지 않고__ CDN에서 제공되는 방법에 대해 알아봅니다. 이는 게재 패러다임의 변화입니다.
+[AEM Project Archetype](https://github.com/adobe/aem-project-archetype)을(를) 사용하여 만든 [AEM WKND Sites 프로젝트](https://github.com/adobe/aem-guides-wknd)&#x200B;(즉, 표준 AEM 프로젝트)를 활성화하여 프론트엔드 파이프라인을 사용하여 CSS, JavaScript, 글꼴 및 아이콘과 같은 프론트엔드 리소스를 배포하여 개발부터 배포까지의 주기를 단축하는 방법에 대해 알아봅니다. AEM에서 프론트엔드 개발과 전체 스택 백엔드 개발의 분리. 또한 이러한 프론트엔드 리소스가 AEM 리포지토리에서 __제공되지 않고__ CDN에서 제공되는 방법에 대해 알아봅니다. 이는 게재 패러다임의 변화입니다.
 
 
-기본 제공 CDN에 `ui.frontend` 아티팩트만 빌드하고 배포하고 AEM에 해당 위치를 알리는 새 프론트엔드 파이프라인이 Adobe Cloud Manager에서 만들어집니다. 웹 페이지의 HTML 생성 중 AEM에서 `<link>` 및 `<script>` 태그는 `href` 특성 값에서 이 아티팩트 위치를 참조하십시오.
+기본 제공 CDN에 `ui.frontend` 아티팩트만 빌드 및 배포하고 해당 위치를 AEM에 알리는 새 프론트엔드 파이프라인이 Adobe Cloud Manager에서 만들어집니다. 웹 페이지의 HTML 생성 중 AEM에서 `<link>` 및 `<script>` 태그는 `href` 특성 값에서 이 아티팩트 위치를 참조합니다.
 
 그러나 WKND Sites AEM 프로젝트 변환 후 프론트엔드 개발자는 자체 배포 파이프라인이 있는 AEM의 전체 스택 백엔드 개발과 병행하여 작업할 수 있습니다.
 

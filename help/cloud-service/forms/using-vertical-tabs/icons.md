@@ -5,14 +5,14 @@ solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: Adaptive Forms
 thumbnail: 331891.jpg
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 jira: KT-16418
 exl-id: 20e44be0-5490-4414-9183-bb2d2a80bdf0
-source-git-commit: faa859897b6b9fbb0acff02000611de216ddda3e
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '676'
 ht-degree: 0%
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 ## 사전 요구 사항
 
-이 문서를 팔로우하려면 Git, cloud manager를 사용하여 AEM 프로젝트 생성 및 배포, AEM cloud manager의 프론트엔드 파이프라인 설정 및 약간의 CSS에 익숙해야 합니다. 위에서 언급한 주제에 익숙하지 않은 경우 [테마를 사용하여 핵심 구성 요소 스타일링](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components#rename-env-file-theme-folder) 문서를 팔로우하십시오.
+이 문서를 팔로우하려면 Git, cloud manager를 사용하여 AEM 프로젝트 생성 및 배포, AEM cloud manager에서의 프론트엔드 파이프라인 설정 및 약간의 CSS에 익숙해야 합니다. 위에서 언급한 주제에 익숙하지 않은 경우 [테마를 사용하여 핵심 구성 요소 스타일링](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components#rename-env-file-theme-folder) 문서를 팔로우하십시오.
 
 ## 테마에 아이콘 추가
 

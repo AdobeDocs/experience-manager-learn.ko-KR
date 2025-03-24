@@ -1,7 +1,7 @@
 ---
 title: Java™ API를 사용한 SQL 연결
 description: Java™ SQL API 및 이그레스 포트를 사용하여 AEM as a Cloud Service에서 SQL 데이터베이스에 연결하는 방법에 대해 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Security
 role: Architect, Developer
@@ -10,7 +10,7 @@ jira: KT-9356
 thumbnail: KT-9356.jpeg
 exl-id: ec9d37cb-70b6-4414-a92b-3b84b3f458ab
 duration: 124
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Java™ API를 사용한 SQL 연결
 
-SQL 데이터베이스(및 HTTP/HTTPS가 아닌 다른 서비스)에 대한 연결은 AEM 외부로 프록시화되어야 합니다.
+SQL 데이터베이스(및 HTTP/HTTPS가 아닌 다른 서비스)에 대한 연결은 AEM 외부로 프록시되어야 합니다.
 
 [전용 이그레스 ip 주소](../dedicated-egress-ip-address.md)를 사용 중이고 서비스가 Adobe 또는 Azure에 있는 경우는 이 규칙에서 예외입니다.
 

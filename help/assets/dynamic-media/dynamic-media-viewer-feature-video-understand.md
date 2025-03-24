@@ -1,25 +1,25 @@
 ---
-title: AEM Dynamic Media을 사용한 자산 뷰어 이해
-description: AEM 작성자는 AEM Dynamic Media 뷰어 개선 사항을 통해 웹 사이트 사용자에게 에셋이 표시되는 방식을 정의하고 맞춤화할 수 있습니다.
+title: AEM Dynamic Media를 사용한 에셋 뷰어 이해
+description: AEM Dynamic Media 뷰어 개선 사항을 통해 AEM 작성자는 웹 사이트 사용자에게 에셋을 제공하는 방법을 정의하고 맞춤화할 수 있습니다.
 sub-product: Experience Manager Assets
 feature: Viewer Presets, Image Profiles
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Content Management
 role: Developer
 level: Intermediate
 doc-type: Feature Video
 exl-id: db4fc561-2368-4df8-9b02-fc08afa00805
 duration: 254
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 0%
 
 ---
 
-# AEM Dynamic Media을 사용한 자산 뷰어 이해{#understanding-the-asset-viewer-with-aem-dynamic-media}
+# AEM Dynamic Media를 사용한 에셋 뷰어 이해{#understanding-the-asset-viewer-with-aem-dynamic-media}
 
-AEM 작성자는 AEM Dynamic Media 뷰어 개선 사항을 통해 웹 사이트 사용자에게 에셋이 표시되는 방식을 정의하고 맞춤화할 수 있습니다.
+AEM Dynamic Media 뷰어 개선 사항을 통해 AEM 작성자는 웹 사이트 사용자에게 에셋을 제공하는 방법을 정의하고 맞춤화할 수 있습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17783?quality=12&learn=on)
 

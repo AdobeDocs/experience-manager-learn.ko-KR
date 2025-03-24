@@ -1,7 +1,7 @@
 ---
 title: OAuth 서버 간 인증을 사용하여 OpenAPI 기반 AEM API 호출
 description: OAuth 서버 간 인증을 사용하여 사용자 지정 애플리케이션에서 AEM as a Cloud Service에서 OpenAPI 기반 AEM API를 호출하는 방법에 대해 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Developing
 topic: Development, Architecture, Content Management
 role: Architect, Developer, Leader
@@ -11,7 +11,8 @@ jira: KT-16516
 thumbnail: KT-16516.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
-source-git-commit: e4cf47e14fa7dfc39ab4193d35ba9f604eabf99f
+exl-id: 8338a905-c4a2-4454-9e6f-e257cb0db97c
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1692'
 ht-degree: 2%

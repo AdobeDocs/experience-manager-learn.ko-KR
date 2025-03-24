@@ -1,16 +1,16 @@
 ---
 title: 저장소 도구로 IntelliJ 설정
-description: AEM Cloud 준비 인스턴스와 동기화하도록 IntelliJ 준비
+description: AEM 클라우드 지원 인스턴스와 동기화하도록 IntelliJ 준비
 solution: Experience Manager
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 jira: KT-8844
 exl-id: 9a7ed792-ca0d-458f-b8dd-9129aba37df6
 duration: 92
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 0%
@@ -84,7 +84,7 @@ c:\aemformscs\aem-sdk\author
 * AEM SDK zip 파일에서 aem-sdk-quickstart-xxxxxxx.jar 파일을 추출하여 c:\aemformscs\aem-sdk\author 폴더에 넣습니다.jar 파일의 이름을 aem-author-p4502.jar로 바꿉니다
 
 * 명령 프롬프트를 열고 c:\aemformscs\aem-sdk\author으로 이동합니다.
-java -jar aem-author-p4502.jar -gui 명령을 입력합니다. 이렇게 하면 AEM 설치가 시작됩니다.
+java -jar aem-author-p4502.jar -gui 명령을 입력합니다. 그러면 AEM 설치가 시작됩니다.
 * 관리자/관리자 자격 증명을 사용하여 로그인
 * AEM 인스턴스 중지
 * 다음 폴더 구조를 만듭니다.C:\aemformscs\aem-sdk\author\crx-quickstart\install

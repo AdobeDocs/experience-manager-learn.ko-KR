@@ -3,7 +3,7 @@ title: AEM Forms의 자동 완성 기능
 description: 검색 및 필터링을 활용하여 사용자가 입력할 때 미리 채워진 값 목록을 빠르게 찾아 선택할 수 있습니다.
 feature: Adaptive Forms
 type: Tutorial
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
@@ -11,7 +11,7 @@ jira: KT-11374
 last-substantial-update: 2022-11-01T00:00:00Z
 exl-id: e9a696f9-ba63-462d-93a8-e9a7a1e94e72
 duration: 47
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 0%

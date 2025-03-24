@@ -1,9 +1,9 @@
 ---
-title: HTML5 양식 제출 시 AEM 워크플로우 트리거 - 사용자 정의 프로필 만들기
-description: 사용자 정의 프로필을 만들어 부분적으로 채워진 HTML 5 양식의 데이터가 있는 대화형 pdf를 다운로드합니다
+title: HTML5 양식 제출에서 AEM 워크플로우 트리거 - 사용자 정의 프로필 만들기
+description: 사용자 지정 프로필을 만들어 부분적으로 채워진 HTML5 양식의 데이터가 있는 대화형 pdf를 다운로드합니다
 feature: Mobile Forms
 doc-type: article
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
@@ -11,7 +11,7 @@ jira: kt-16133
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: b6e3acee-4a07-4d00-b3a1-f7aedda21e6e
 duration: 102
-source-git-commit: 9545fae5a5f5edd6f525729e648b2ca34ddbfd9f
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 0%

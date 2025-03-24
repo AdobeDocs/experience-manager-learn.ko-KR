@@ -1,7 +1,7 @@
 ---
 title: 프론트엔드 파이프라인을 사용하도록 전체 스택 AEM 프로젝트 업데이트
 description: 프론트엔드 아티팩트만 빌드하고 배포할 수 있도록 전체 스택 AEM 프로젝트를 업데이트하여 프론트엔드 파이프라인에 활성화하는 방법에 대해 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: AEM Project Archetype, Cloud Manager, CI-CD Pipeline
 topic: Content Management, Development, Development, Architecture
 role: Developer, Architect, Admin
@@ -13,7 +13,7 @@ recommendations: noDisplay, noCatalog
 doc-type: Tutorial
 exl-id: c4a961fb-e440-4f78-b40d-e8049078b3c0
 duration: 307
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 0%
@@ -178,7 +178,7 @@ ht-degree: 0%
    >
    >    __AEM WKND Sites 프로젝트__&#x200B;에서 전체 [SiteConfig](https://github.com/adobe/aem-guides-wknd/blob/feature/frontend-pipeline/ui.content/src/main/content/jcr_root/conf/wknd/_sling_configs/com.adobe.aem.wcm.site.manager.config.SiteConfig/.content.xml)을(를) 참조하십시오.
 
-1. 테스트 실행을 위해 프론트엔드 파이프라인을 통해 배포하기 위해 테마 또는 스타일이 변경되었으며, `ui.frontend/src/main/webpack/base/sass/_variables.scss`을(를) 업데이트하여 `text-color`을(를) 빨간색으로 Adobe(또는 직접 선택할 수 있음)합니다.
+1. 테스트 실행을 위해 프론트엔드 파이프라인을 통해 배포하기 위해 테마 또는 스타일이 변경되었으며, `ui.frontend/src/main/webpack/base/sass/_variables.scss`을(를) 업데이트하여 `text-color`을(를) Adobe 빨간색으로 변경하고 있습니다(또는 직접 선택할 수 있음).
 
    ```css
        $black:     #a40606;

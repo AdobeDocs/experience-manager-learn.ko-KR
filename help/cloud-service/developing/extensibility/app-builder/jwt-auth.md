@@ -2,7 +2,7 @@
 title: App Builder 작업에서 JWT 액세스 토큰 생성
 description: App Builder 작업에 사용할 JWT 자격 증명을 사용하여 액세스 토큰을 생성하는 방법을 알아봅니다.
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Intermediate
@@ -10,7 +10,7 @@ jira: KT-11743
 last-substantial-update: 2023-01-17T00:00:00Z
 exl-id: 9a3fed96-c99b-43d1-9dba-a4311c65e5b9
 duration: 151
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 1%
@@ -50,7 +50,7 @@ JWT_PRIVATE_KEY=LS0tLS1C..kQgUFJJVkFURSBLRVktLS0tLQ==
 
 ### 메타스코프
 
-App Builder 작업이 상호 작용하는 Adobe API 및 해당 메타스코프를 결정합니다. `JWT_METASCOPES` 키에 쉼표 구분 기호가 있는 메타스코프를 나열합니다. 유효한 메타스코프는 [Adobe의 JWT 메타스코프 설명서](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/Scopes/)에 나열되어 있습니다.
+App Builder 작업이 상호 작용하는 Adobe API 및 해당 메타스코프를 확인합니다. `JWT_METASCOPES` 키에 쉼표 구분 기호가 있는 메타스코프를 나열합니다. 올바른 메타스코프는 [Adobe의 JWT 메타스코프 설명서](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/Scopes/)에 나와 있습니다.
 
 
 예를 들어 `.env`의 `JWT_METASCOPES` 키에 다음 값을 추가할 수 있습니다.

@@ -6,9 +6,9 @@ user-guide-description: 초보자 및 숙련된 AEM Forms 개발자를 위한 AE
 solution: Experience Manager, Experience Manager Forms
 breadcrumb-title: AEM Forms 튜토리얼
 sub-product: Experience Manager Forms
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 index: y
-source-git-commit: 5f42678502a785ead29982044d1f3f5ecf023e0f
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '2101'
 ht-degree: 1%
@@ -39,7 +39,7 @@ ht-degree: 1%
    + [외부 끝점으로 제출 중](handling-form-submissions/submitting-adaptive-forms-to-external-server-article-use.md)
    + [이메일 전송 중](handling-form-submissions/sending-email-on-adaptive-form-submission.md)
    + [유료 휴무 요청 워크플로](handling-form-submissions/paid-time-off-request-workflow.md)
-   + [AEM Workflow를 트리거하는 적응형 양식 구성 - 비디오](handling-form-submissions/configure-af-to-trigger-aem-workflow.md)
+   + [AEM 워크플로우를 트리거하는 적응형 양식 구성 - 비디오](handling-form-submissions/configure-af-to-trigger-aem-workflow.md)
    + [작업 알림 할당 사용자 지정](handling-form-submissions/customize-assign-task-notification.md)
 + 유용한 통합{#some-useful-integrations}
    + [2단계 인증](some-useful-integrations/two-factor-authentication.md)
@@ -54,7 +54,7 @@ ht-degree: 1%
    + [2 - OSGi 서비스 만들기](creating-your-first-osgi-bundle/create-osgi-service.md)
    + [3 - Sling 서블릿 만들기](creating-your-first-osgi-bundle/create-servlet.md)
    + [4 - 서드파티 번들 포함](creating-your-first-osgi-bundle/include-third-party-jars.md)
-+ 적응형 Forms {#adaptive-forms}
++ 적응형 양식 {#adaptive-forms}
    + [Windows에서 AEM Forms 설치](adaptive-forms/installing-aem-form-on-windows-tutorial-use.md)
    + [Linux에 32비트 패키지 설치](adaptive-forms/installing-aem-form-on-linux.md)
    + [적응형 Forms의 미리 채우기 서비스](adaptive-forms/prefill-service-adaptive-forms-article-use.md)
@@ -75,7 +75,7 @@ ht-degree: 1%
    + [GeoLocation API 사용](adaptive-forms/using-geolocation-api-in-aem-forms-article.md)
    + [거래 보고 사용](adaptive-forms/transaction-reporting-aem-forms-article-use.md)
    + [AEM Forms의 사용자 프로필 데이터 통합](adaptive-forms/user-profile-data-integration-feature-video-use.md)
-   + [Microsoft Dynamics와 AEM Forms](adaptive-forms/using-ms-dynamics-with-aem-forms.md)
+   + [Microsoft Dynamics과 AEM Forms](adaptive-forms/using-ms-dynamics-with-aem-forms.md)
    + [규칙 편집기 개선 사항](adaptive-forms/rule-editor-improvements-feature-video-use.md)
    + [규칙 편집기에 대한 액세스 제한](adaptive-forms/restricting-rule-editor-aem-forms-technical-video-use.md)
    + [테마 편집기 개선 사항](adaptive-forms/theme-editor-improvements-feature-video-use.md)
@@ -91,22 +91,22 @@ ht-degree: 1%
    + [DB에 양식 첨부 파일 삽입](adaptive-forms/inserting-form-attachment-in-db.md)
    + [데이터 Source 구성 수정](adaptive-forms/modify-data-source-configuration-settings-article.md)
    + [양식 데이터 모델 속성 재정의](adaptive-forms/override-fdm-values.md)
-   + [AEM 6.4 Workflow의 양식 데이터 모델 서비스](adaptive-forms/form-data-model-service-as-step-in-workflow-video-use.md)
+   + [AEM 6.4 워크플로의 양식 데이터 모델 서비스](adaptive-forms/form-data-model-service-as-step-in-workflow-video-use.md)
    + [양식 데이터 모델 서비스 단계에서 오류 메시지 처리](adaptive-forms/handling-error-messages-in-invoke-fdm-step.md)
-   + [AEM 6.5.1 Workflow의 양식 데이터 모델 서비스](adaptive-forms/form-data-model-service-as-step-in-aem65-workflow-video-use.md)
+   + [AEM 6.5.1 워크플로의 양식 데이터 모델 서비스](adaptive-forms/form-data-model-service-as-step-in-aem65-workflow-video-use.md)
    + [Data Source을 사용하지 않는 양식 데이터 모델](adaptive-forms/form-data-model-without-data-source-feature-video-use.md)
    + [계산된 양식 데이터 모델 요소](adaptive-forms/computed-form-data-model-elements-aem-forms-feature-video.md)
    + [AEM Forms에서 JDBC 데이터 Source 설정](adaptive-forms/data-integration-technical-video-setup.md)
    + [JDBC 기반 양식 데이터 모델](adaptive-forms/jdbc-data-model-technical-video-use.md)
    + [양식 데이터 모델에서 두 엔티티 간 연결 만들기](adaptive-forms/association-data-model-technical-video-use.md)
    + [규칙 편집기에서 양식 데이터 모델 호출 서비스 사용](adaptive-forms/service-data-model-technical-video-use.md)
-   + [양식 데이터 모델을 사용하여 바이너리 데이터를 AEM DAM에 게시](adaptive-forms/form-data-model-to-post-binary-data-tutorial-use.md)
+   + [양식 데이터 모델을 사용하여 AEM DAM에 이진 데이터 게시](adaptive-forms/form-data-model-to-post-binary-data-tutorial-use.md)
    + [재사용 가능한 워크플로우 모델 생성](adaptive-forms/re-usable-aem-forms-workflow-models-article.md)
-   + [사용자 지정 프로세스 단계 AEM 워크플로](adaptive-forms/custom-process-step-aem-workflow.md)
+   + [맞춤형 프로세스 단계 AEM 워크플로](adaptive-forms/custom-process-step-aem-workflow.md)
    + [HTML5 Forms 미리 채우기](adaptive-forms/prepopulating-html5-forms-in-aem-forms-article.md)
    + [Salesforce을 사용한 양식 데이터 모델](adaptive-forms/using-adaptive-forms-with-sales-force-integration-tutorial.md)
    + [Choice 구성 요소에 동적으로 항목 추가](adaptive-forms/choice-group-items-adding-dynamically-article.md)
-+ ChatBot{#chatbot-and-aem-forms}(으)로 PDF 양식 채우기
++ ChatBot{#chatbot-and-aem-forms}을(를) 사용하여 PDF 양식 채우기
    + [1 - 소개](chatbot-and-aem-forms/introduction.md)
    + [2 - ChatBot 데이터 구문 분석](chatbot-and-aem-forms/parse-chat-bot-data.md)
    + [3 - PDF 만들기](chatbot-and-aem-forms/merge-data-with-template.md)
@@ -175,7 +175,7 @@ ht-degree: 1%
    + [적응형 양식 만들기 및 구성](aem-forms-and-adobe-sign/create-and-configure-adaptive-form.md)
    + [단일 서명자를 위한 적응형 양식 구성](aem-forms-and-adobe-sign/configure-adaptive-form-for-single-signer.md)
    + [서명자 2명을 위한 적응형 양식 구성](aem-forms-and-adobe-sign/configure-adaptive-form-for-two-signers.md)
-   + [automated forms conversion 서비스 구성](aem-forms-and-adobe-sign/configure-automated-forms-conversion-service.md)
+   + [자동 양식 전환 서비스 구성](aem-forms-and-adobe-sign/configure-automated-forms-conversion-service.md)
    + [PDF 양식을 적응형 양식으로 변환](aem-forms-and-adobe-sign/convert-pdf-form-into-adaptive-form.md)
    + [변환된 적응형 양식 구성](aem-forms-and-adobe-sign/configure-converted-adaptive-form.md)
    + [Acrobat Sign에서 XDP 템플릿 사용](aem-forms-and-adobe-sign/using-xdp-templates-with-adobe-sign.md)
@@ -201,7 +201,7 @@ ht-degree: 1%
    + [1-소개](custom-workflow-component/introduction.md)
    + [2-Write Java 코드](custom-workflow-component/custom-process-step-aem-workflow.md)
    + [3-워크플로 구성 요소 만들기](custom-workflow-component/custom-workflow-component.md)
-+ AEM Workflow의 변수{#variables-aem-workflow}
++ AEM 워크플로우의 변수{#variables-aem-workflow}
    + [소개 - 워크플로의 변수](variables-aem-workflow/introduction.md)
    + [XML 변수](variables-aem-workflow/part1.md)
    + [JSON 변수](variables-aem-workflow/part2.md)
@@ -222,14 +222,14 @@ ht-degree: 1%
    + [클라이언트 라이브러리](storing-retrieving-form-data/part4.md)
    + [적응형 양식 템플릿](storing-retrieving-form-data/part5.md)
    + [샘플 자산 배포](storing-retrieving-form-data/part6.md)
-+ PDF 양식 제출{#offline-mobile-form-submission}에서 AEM 워크플로 트리거 중
++ PDF 양식 제출에서 AEM 워크플로우 트리거{#offline-mobile-form-submission}
    + [파트 - 1](offline-mobile-form-submission/introduction.md)
    + [파트 - 2](offline-mobile-form-submission/custom-profile.md)
    + [파트 - 3](offline-mobile-form-submission/handle-form-submission.md)
    + [파트 - 4](offline-mobile-form-submission/author-servlet.md)
    + [파트 - 5](offline-mobile-form-submission/review-workflow.md)
    + [파트 - 6](offline-mobile-form-submission/deploy-assets.md)
-+ 모바일 양식 제출 시 AEM 워크플로우 트리거{#trigger-aem-workflow-on-mobile-form-submission}
++ 모바일 양식 제출에서 AEM 워크플로우 트리거{#trigger-aem-workflow-on-mobile-form-submission}
    + [파트 - 1](trigger-aem-workflow-on-mobile-form-submission/introduction.md)
    + [파트 - 2](trigger-aem-workflow-on-mobile-form-submission/handle-form-submission.md)
    + [파트 - 3](trigger-aem-workflow-on-mobile-form-submission/author-servlet.md)
@@ -281,7 +281,7 @@ ht-degree: 1%
 + 문서 서비스 {#document-services}
    + [PDF forms 유형](document-services/pdf-forms-and-documents.md)
    + [적응형 양식에 pdf 포함](document-services/embed-pdf-inline.md)
-   + [PDF의 슬라이드 구성 요소](document-services/display-pdf-in-carousel.md)
+   + [PDF의 회전 메뉴 구성 요소](document-services/display-pdf-in-carousel.md)
    + [AEM Forms에서 어셈블러 서비스 사용](document-services/using-assembler-service-in-aem-forms.md)
    + [어셈블러 서비스를 통한 XDP 결합](document-services/xdp-stitching-using-assembler-service.md)
    + [AEM Forms에서 감시 폴더 사용](document-services/watched-folders-document-services-article-use.md)
@@ -292,12 +292,12 @@ ht-degree: 1%
    + [출력 서비스에서 xdp 조각 사용](document-services/using-fragments-in-output-service.md)
    + [조각이 있는 pdf를 생성하는 ECMA 스크립트](document-services/using-fragments-in-output-service-watched-folder.md)
    + [하나의 데이터 파일에서 여러 PDF 생성](document-services/generate-multi-record-pdf.md)
-   + [모바일 양식 제출 시 PDF 생성](document-services/generate-pdf-from-mobile-form-submission-article.md)
-   + [양식 제출에 기반한 핵심 구성 요소 PDF 생성](document-services/generate-pdf-from-core-component-form-submission.md)
+   + [모바일 양식 제출로 PDF 생성](document-services/generate-pdf-from-mobile-form-submission-article.md)
+   + [핵심 구성 요소에 기반한 양식 제출로 PDF 생성](document-services/generate-pdf-from-core-component-form-submission.md)
    + [모바일 양식에서 대화형 PDF 생성](document-services/render-interactive-form-using-api.md)
    + [적응형 양식에서 대화형 DoR 생성](document-services/generate-interactive-dor.md)
    + [Reader 확장 자격 증명 구성](document-services/configuring-reader-extension-osgi.md)
-   + [XDP 표현물에 대한 PDF에 사용 권한 적용](document-services/rendering-and-reader-extending-xdp-templates-article.md)
+   + [XDP 표현물로 PDF에 사용 권한 적용](document-services/rendering-and-reader-extending-xdp-templates-article.md)
    + [업로드된 PDF에 사용 권한 적용](document-services/apply-reader-extension-rights-to-pdf.md)
    + [문서 인증](document-services/certifying-documents-aem-forms-tutorial.md)
    + [양식 첨부 파일 조합](document-services/assemble-form-attachments.md)
@@ -311,7 +311,7 @@ ht-degree: 1%
    + [데이터베이스 바인딩](forms-designer/binding-to-mysql-db.md)
    + [낙서 서명 사용](forms-designer/scribble-signature-form.md)
    + [디지털 서명 사용](forms-designer/adding-dig-signature-field.md)
-   + [Reader 확장 양식](forms-designer/reader-extending-j2ee.md)
+   + [양식 확장 Reader](forms-designer/reader-extending-j2ee.md)
 + AEM Forms Workbench{#forms-workbench}
    + [Workbench 소개](aem-forms-workbench/workbench-introduction.md)
    + [양식 프로세스 만들기](aem-forms-workbench/workbench-creating-a-process.md)
@@ -425,7 +425,7 @@ ht-degree: 1%
    + [일반: AEM Forms OSGi에 SSL을 활성화하는 단계](troubleshooting/steps-to-enable-ssl-for-aem-forms-osgi.md)
    + [일반: lc_turnkey.xml에 사용할 키 저장소 암호를 암호화하는 단계](troubleshooting/steps-to-encrypt-keystore-password-to-be-used-in-lc-turnkey-xml.md)
    + [일반: AEM-Forms-JEE의 사용자를 위한 기본 암호를 재설정하는 단계](troubleshooting/steps-to-reset-default-password-for-users-in-aem-forms-jee.md)
-   + [일반: AEM-Forms-OSGI에서 사용자의 기본 암호를 재설정하는 단계](troubleshooting/steps-to-reset-default-password-for-users-in-aem-forms-osgi.md)
+   + [일반: AEM-Forms-OSGI에서 사용자를 위한 기본 암호를 재설정하는 단계](troubleshooting/steps-to-reset-default-password-for-users-in-aem-forms-osgi.md)
    + [일반: 클러스터에서 gemfire 로케이터를 설정하고 관련 구성을 수행하는 절차](troubleshooting/steps-to-set-up-gemfire-locators-in-a-cluster-and-perform-related-configuration.md)
 
 

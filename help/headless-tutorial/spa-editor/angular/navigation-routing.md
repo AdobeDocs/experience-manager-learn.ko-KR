@@ -1,8 +1,8 @@
 ---
 title: 탐색 및 라우팅 추가 | AEM SPA 편집기 및 Angular 시작하기
-description: SPA Pages 및 SPA Editor SDK를 사용하여 AEM의 여러 보기를 지원하는 방법에 대해 알아봅니다. 동적 탐색은 Angular 경로를 사용하여 구현되고 기존 헤더 구성 요소에 추가됩니다.
+description: AEM Pages 및 SPA Editor SDK을 사용하여 SPA의 여러 보기가 지원되는 방법에 대해 알아봅니다. 동적 탐색은 Angular 경로를 사용하여 구현되고 기존 헤더 구성 요소에 추가됩니다.
 feature: SPA Editor
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 jira: KT-5312
 thumbnail: 5312-spa-angular.jpg
 topic: SPA
@@ -11,7 +11,7 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 197a0c1f-4d0a-4b99-ba89-cdff2e6ac4ec
 duration: 669
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '2531'
 ht-degree: 0%
@@ -20,12 +20,12 @@ ht-degree: 0%
 
 # 탐색 및 라우팅 추가 {#navigation-routing}
 
-SPA Pages 및 SPA Editor SDK를 사용하여 AEM의 여러 보기를 지원하는 방법에 대해 알아봅니다. 동적 탐색은 Angular 경로를 사용하여 구현되고 기존 헤더 구성 요소에 추가됩니다.
+AEM Pages 및 SPA Editor SDK을 사용하여 SPA의 여러 보기가 지원되는 방법에 대해 알아봅니다. 동적 탐색은 Angular 경로를 사용하여 구현되고 기존 헤더 구성 요소에 추가됩니다.
 
 ## 목표
 
-1. SPA Editor를 사용할 때 사용할 수 있는 SPA 모델 라우팅 옵션을 이해합니다.
-2. [Angular 라우팅](https://angular.io/guide/router)을 사용하여 SPA의 다양한 보기 사이를 이동하는 방법을 알아봅니다.
+1. SPA 편집기를 사용할 때 사용할 수 있는 SPA 모델 라우팅 옵션을 이해합니다.
+2. [Angular 라우팅](https://angular.io/guide/router)을 사용하여 SPA의 다양한 보기 사이를 탐색하는 방법을 알아봅니다.
 3. AEM 페이지 계층 구조에 의해 실행되는 동적 탐색 구현
 
 ## 빌드할 내용
@@ -66,9 +66,9 @@ SPA Pages 및 SPA Editor SDK를 사용하여 AEM의 여러 보기를 지원하�
 
 [GitHub](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/navigation-routing-solution)에서 완성된 코드를 항상 보거나 `Angular/navigation-routing-solution` 분기로 전환하여 로컬에서 코드를 확인할 수 있습니다.
 
-## Inspect HeaderComponent 업데이트 {#inspect-header}
+## HeaderComponent 업데이트 검사 {#inspect-header}
 
-이전 장에서는 `HeaderComponent` 구성 요소가 `app.component.html`을(를) 통해 포함된 순수 Angular 구성 요소로 추가되었습니다. 이 장에서는 `HeaderComponent` 구성 요소가 앱에서 제거되고 [템플릿 편집기](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=ko-KR)를 통해 추가됩니다. 이렇게 하면 사용자가 AEM 내에서 `HeaderComponent`의 탐색 메뉴를 구성할 수 있습니다.
+이전 장에서는 `HeaderComponent` 구성 요소가 `app.component.html`을(를) 통해 포함된 순수 Angular 구성 요소로 추가되었습니다. 이 장에서는 `HeaderComponent` 구성 요소가 앱에서 제거되고 [템플릿 편집기](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=ko)를 통해 추가됩니다. 이렇게 하면 사용자가 AEM 내에서 `HeaderComponent`의 탐색 메뉴를 구성할 수 있습니다.
 
 >[!NOTE]
 >
@@ -99,9 +99,9 @@ SPA Pages 및 SPA Editor SDK를 사용하여 AEM의 여러 보기를 지원하�
    MapTo('wknd-spa-angular/components/header')(withRouter(Header), HeaderEditConfig);
    ```
 
-   `items`에 대한 `@Input()` 주석을 메모하십시오. `items`에 AEM에서 전달된 탐색 개체 배열이 포함됩니다.
+   `items`에 대한 `@Input()` 주석을 메모하십시오. `items`에는 AEM에서 전달된 탐색 개체 배열이 포함됩니다.
 
-3. `ui.apps` 모듈에서 AEM `Header` 구성 요소의 구성 요소 정의 검사: `ui.apps/src/main/content/jcr_root/apps/wknd-spa-angular/components/header/.content.xml`:
+3. `ui.apps` 모듈에서 AEM `Header` 구성 요소의 구성 요소 정의를 검사합니다. `ui.apps/src/main/content/jcr_root/apps/wknd-spa-angular/components/header/.content.xml`:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -117,7 +117,7 @@ SPA Pages 및 SPA Editor SDK를 사용하여 AEM의 여러 보기를 지원하�
 
 ## SPA 템플릿에 HeaderComponent 추가 {#add-header-template}
 
-1. 브라우저를 열고 AEM, [http://localhost:4502/](http://localhost:4502/)에 로그인합니다. 시작 코드 베이스를 이미 배포해야 합니다.
+1. 브라우저를 열고 AEM([http://localhost:4502/](http://localhost:4502/))에 로그인합니다. 시작 코드 베이스를 이미 배포해야 합니다.
 2. **[!UICONTROL SPA 페이지 템플릿]**(으)로 이동합니다. [http://localhost:4502/editor.html/conf/wknd-spa-angular/settings/wcm/templates/spa-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd-spa-angular/settings/wcm/templates/spa-page-template/structure.html).
 3. 가장 바깥쪽의 **[!UICONTROL 루트 레이아웃 컨테이너]**&#x200B;를 선택하고 **[!UICONTROL 정책]** 아이콘을 클릭합니다. 작성을 위해 잠기지 않은 **[!UICONTROL 레이아웃 컨테이너]**&#x200B;를 선택하려면 **not**&#x200B;에 주의하십시오.
 
@@ -164,13 +164,13 @@ SPA Pages 및 SPA Editor SDK를 사용하여 AEM의 여러 보기를 지원하�
 
 ## 하위 페이지 만들기
 
-그런 다음 AEM에서 다른 보기 역할을 할 추가 페이지를 SPA에서 만듭니다. AEM에서 제공하는 JSON 모델의 계층 구조도 함께 살펴볼 것이다.
+그런 다음 SPA에서 다양한 보기 역할을 할 AEM에서 추가 페이지를 만듭니다. 또한 AEM에서 제공하는 JSON 모델의 계층 구조도 검사할 것입니다.
 
 1. **사이트** 콘솔로 이동합니다. [http://localhost:4502/sites.html/content/wknd-spa-angular/us/en/home](http://localhost:4502/sites.html/content/wknd-spa-angular/us/en/home). **WKND SPA Angular 홈 페이지**&#x200B;를 선택하고 **[!UICONTROL 만들기]** > **[!UICONTROL 페이지]**&#x200B;를 클릭합니다.
 
    ![새 페이지 만들기](assets/navigation-routing/create-new-page.png)
 
-2. **[!UICONTROL 템플릿]**&#x200B;에서 **[!UICONTROL SPA 페이지]**&#x200B;를 선택합니다. **[!UICONTROL 속성]**&#x200B;에서 **[!UICONTROL 제목]** 및 **&quot;페이지-1&quot;**&#x200B;에 대한 **&quot;페이지 1&quot;**&#x200B;을(를) 이름으로 입력하십시오.
+2. **[!UICONTROL 템플릿]**&#x200B;에서 **[!UICONTROL SPA 페이지]**&#x200B;을(를) 선택합니다. **[!UICONTROL 속성]**&#x200B;에서 **[!UICONTROL 제목]** 및 **&quot;페이지-1&quot;**&#x200B;에 대한 **&quot;페이지 1&quot;**&#x200B;을(를) 이름으로 입력하십시오.
 
    ![초기 페이지 속성을 입력하십시오](assets/navigation-routing/initial-page-properties.png)
 
@@ -187,7 +187,7 @@ SPA Pages 및 SPA Editor SDK를 사용하여 AEM의 여러 보기를 지원하�
 
    ![샘플 사이트 계층 구조](assets/navigation-routing/wknd-spa-sample-site-hierarchy.png)
 
-6. 새 탭에서 AEM에서 제공하는 JSON 모델 API를 엽니다. [http://localhost:4502/content/wknd-spa-angular/us/en.model.json](http://localhost:4502/content/wknd-spa-angular/us/en.model.json). 이 JSON 콘텐츠는 SPA이 처음 로드될 때 요청됩니다. 외부 구조는 다음과 같습니다.
+6. 새 탭에서 AEM에서 제공하는 JSON 모델 API를 엽니다. [http://localhost:4502/content/wknd-spa-angular/us/en.model.json](http://localhost:4502/content/wknd-spa-angular/us/en.model.json). SPA가 처음 로드될 때 이 JSON 콘텐츠가 요청됩니다. 외부 구조는 다음과 같습니다.
 
    ```json
    {
@@ -210,17 +210,17 @@ SPA Pages 및 SPA Editor SDK를 사용하여 AEM의 여러 보기를 지원하�
    }
    ```
 
-   `:children`에서 만들어진 각 페이지에 대한 항목이 표시됩니다. 모든 페이지의 컨텐츠는 이 초기 JSON 요청에 있습니다. 콘텐츠가 클라이언트측에서 이미 사용 가능하기 때문에 탐색 라우팅이 구현되면 SPA의 후속 보기가 빠르게 로드됩니다.
+   `:children`에서 만들어진 각 페이지에 대한 항목이 표시됩니다. 모든 페이지의 컨텐츠는 이 초기 JSON 요청에 있습니다. 탐색 라우팅이 구현되면 SPA의 후속 보기가 빠르게 로드됩니다. 콘텐츠는 이미 클라이언트측에서 사용할 수 있기 때문입니다.
 
-   초기 JSON 요청에 SPA 콘텐츠의 **ALL**&#x200B;을(를) 로드하는 것은 좋지 않습니다. 초기 페이지 로드 속도가 느려질 수 있기 때문입니다. 다음으로 페이지 계층 깊이가 수집되는 방식을 살펴보겠습니다.
+   초기 JSON 요청에서 SPA의 **ALL** 콘텐츠를 로드하는 것은 좋지 않습니다. 이렇게 하면 초기 페이지 로드 속도가 느려질 수 있습니다. 다음으로 페이지 계층 깊이가 수집되는 방식을 살펴보겠습니다.
 
-7. [http://localhost:4502/editor.html/conf/wknd-spa-angular/settings/wcm/templates/spa-app-template/structure.html](http://localhost:4502/editor.html/conf/wknd-spa-angular/settings/wcm/templates/spa-app-template/structure.html)의 **SPA 루트** 템플릿으로 이동합니다.
+7. [http://localhost:4502/editor.html/conf/wknd-spa-angular/settings/wcm/templates/spa-app-template/structure.html](http://localhost:4502/editor.html/conf/wknd-spa-angular/settings/wcm/templates/spa-app-template/structure.html)에서 **SPA 루트** 템플릿으로 이동합니다.
 
    **[!UICONTROL 페이지 속성 메뉴]** > **[!UICONTROL 페이지 정책]**&#x200B;을 클릭합니다.
 
    ![SPA 루트에 대한 페이지 정책 열기](assets/navigation-routing/open-page-policy.png)
 
-8. **SPA 루트** 템플릿에는 수집된 JSON 콘텐츠를 제어할 수 있는 **[!UICONTROL 계층 구조]** 탭이 추가로 있습니다. **[!UICONTROL 구조 깊이]**&#x200B;은(는) 사이트 계층 구조에서 **루트** 아래에 있는 하위 페이지를 수집하는 정도를 결정합니다. **[!UICONTROL 구조 패턴]** 필드를 사용하여 정규 표현식에 따라 추가 페이지를 필터링할 수도 있습니다.
+8. **SPA 루트** 템플릿에는 수집된 JSON 콘텐츠를 제어하는 추가 **[!UICONTROL 계층 구조]** 탭이 있습니다. **[!UICONTROL 구조 깊이]**&#x200B;은(는) 사이트 계층 구조에서 **루트** 아래에 있는 하위 페이지를 수집하는 정도를 결정합니다. **[!UICONTROL 구조 패턴]** 필드를 사용하여 정규 표현식에 따라 추가 페이지를 필터링할 수도 있습니다.
 
    **[!UICONTROL 구조 깊이]**&#x200B;을(를) **&quot;2&quot;**(으)로 업데이트:
 
@@ -252,7 +252,7 @@ SPA Pages 및 SPA Editor SDK를 사용하여 AEM의 여러 보기를 지원하�
 
    **페이지 3** 경로가 초기 JSON 모델에서 제거되었습니다. `/content/wknd-spa-angular/us/en/home/page-2/page-3`.
 
-   나중에 AEM SPA Editor SDK가 추가 콘텐츠를 동적으로 로드하는 방법을 살펴보겠습니다.
+   나중에 AEM SPA Editor SDK 가 추가 콘텐츠를 동적으로 로드하는 방법에 대해 알아보겠습니다.
 
 ## 탐색 구현
 
@@ -312,7 +312,7 @@ SPA Pages 및 SPA Editor SDK를 사용하여 AEM의 여러 보기를 지원하�
 
    AEM 페이지의 계층적 특성은 탐색 메뉴를 채우는 데 사용할 수 있는 JSON에서 모델링됩니다. `Header` 구성 요소가 [탐색 핵심 구성 요소](https://www.aemcomponents.dev/content/core-components-examples/library/core-structure/navigation.html)의 모든 기능을 상속하고 JSON을 통해 노출된 콘텐츠가 자동으로 Angular `@Input` 주석에 매핑된다는 점을 상기하십시오.
 
-2. 새 터미널 창을 열고 SPA 프로젝트의 `ui.frontend` 폴더로 이동합니다. angular CLI 도구를 사용하여 새 `NavigationComponent`을(를) 만듭니다.
+2. 새 터미널 창을 열고 SPA 프로젝트의 `ui.frontend` 폴더로 이동합니다. Angular CLI 도구를 사용하여 새 `NavigationComponent`을(를) 만듭니다.
 
    ```shell
    $ cd ui.frontend
@@ -324,7 +324,7 @@ SPA Pages 및 SPA Editor SDK를 사용하여 AEM의 여러 보기를 지원하�
    UPDATE src/app/app.module.ts (2032 bytes)
    ```
 
-3. 다음으로 새로 만든 `components/navigation` 디렉터리에 Angular CLI를 사용하여 이름이 `NavigationLink`인 클래스를 만듭니다.
+3. 그런 다음 새로 만든 `components/navigation` 디렉터리에서 Angular CLI를 사용하여 이름이 `NavigationLink`인 클래스를 만듭니다.
 
    ```shell
    $ cd src/app/components/navigation/
@@ -516,7 +516,7 @@ SPA Pages 및 SPA Editor SDK를 사용하여 AEM의 여러 보기를 지원하�
    $ npm start
    ```
 
-2. 브라우저 탭을 열고 [http://localhost:4200/](http://localhost:4200/)(으)로 이동합니다.
+2. 브라우저 탭을 열고 [http://localhost:4200/](http://localhost:4200/)&#x200B;(으)로 이동합니다.
 
    **Webpack 개발 서버**&#x200B;는 AEM(`ui.frontend/proxy.conf.json`)의 로컬 인스턴스에서 JSON 모델을 프록시하도록 구성해야 합니다. 이렇게 하면 자습서의 앞부분에서 AEM에서 만든 콘텐츠에 대해 직접 코드를 작성할 수 있습니다.
 
@@ -581,7 +581,7 @@ SPA Pages 및 SPA Editor SDK를 사용하여 AEM의 여러 보기를 지원하�
 
    ![헤더 탐색 완료](assets/navigation-routing/completed-header.png)
 
-   메뉴 전환을 클릭하여 탐색을 열면 채워진 탐색 링크가 표시됩니다. SPA의 다른 보기로 이동할 수 있어야 합니다.
+   메뉴 전환을 클릭하여 탐색을 열면 채워진 탐색 링크가 표시됩니다. SPA의 다른 보기로 이동할 수 있습니다.
 
 ## SPA 라우팅 이해
 
@@ -632,11 +632,11 @@ SPA Pages 및 SPA Editor SDK를 사용하여 AEM의 여러 보기를 지원하�
 
    `routes: Routes = [];` 배열은 Angular 구성 요소 매핑에 대한 경로 또는 탐색 경로를 정의합니다.
 
-   `AemPageMatcher`은(는) 사용자 지정 Angular 라우터 [UrlMatcher](https://angular.io/api/router/UrlMatcher)이며, 이 Angular 응용 프로그램의 일부인 AEM의 페이지와 &quot;유사&quot;하는 모든 페이지와 일치합니다.
+   `AemPageMatcher`은(는) 사용자 지정 Angular 라우터 [UrlMatcher](https://angular.io/api/router/UrlMatcher)로서, 이 Angular 애플리케이션의 일부인 AEM의 페이지와 &quot;유사&quot;하는 모든 항목을 찾습니다.
 
    `PageComponent`은(는) AEM의 페이지를 나타내는 Angular 구성 요소이며 일치하는 경로를 렌더링하는 데 사용됩니다. `PageComponent`은(는) 나중에 자습서에서 검토됩니다.
 
-   AEM SPA Editor JS SDK에서 제공하는 `AemPageDataResolver`은(는) AEM의 경로인 route URL을 .html 확장자를 포함한 의 리소스 경로로 변환하는 데 사용되는 사용자 지정 [Angular 라우터 해결자](https://angular.io/api/router/Resolve)입니다. AEM의 리소스 경로는 확장자를 제외한 페이지 경로입니다.
+   AEM SPA Editor JS SDK에서 제공한 `AemPageDataResolver`은(는) AEM의 경로인 경로 URL(예: the.html 확장 포함)을 확장보다 작은 페이지 경로인 AEM의 리소스 경로로 변환하는 데 사용되는 사용자 지정 [Angular Router Resolver](https://angular.io/api/router/Resolve)입니다.
 
    예를 들어 `AemPageDataResolver`은(는) 경로의 URL `content/wknd-spa-angular/us/en/home.html`을(를) `/content/wknd-spa-angular/us/en/home`의 경로로 변환합니다. JSON 모델 API의 경로를 기반으로 페이지의 콘텐츠를 확인하는 데 사용됩니다.
 
@@ -668,7 +668,7 @@ SPA Pages 및 SPA Editor SDK를 사용하여 AEM의 여러 보기를 지원하�
 
    `PageComponent`은(는) AEM에서 검색한 JSON을 처리하는 데 필요하며 경로를 렌더링하기 위한 Angular 구성 요소로 사용됩니다.
 
-   angular 라우터 모듈에서 제공하는 `ActivatedRoute`에는 이 Angular 페이지 구성 요소 인스턴스에 로드해야 하는 AEM 페이지의 JSON 콘텐츠를 나타내는 상태가 포함되어 있습니다.
+   Angular 라우터 모듈에서 제공하는 `ActivatedRoute`에는 이 Angular 페이지 구성 요소 인스턴스에 로드해야 하는 AEM 페이지의 JSON 콘텐츠를 나타내는 상태가 포함되어 있습니다.
 
    `ModelManagerService`, 경로를 기반으로 JSON 데이터를 가져오고 해당 데이터를 클래스 변수 `path`, `items`, `itemsOrder`에 매핑합니다. 그러면 [AEMPageComponent](https://www.npmjs.com/package/@adobe/cq-angular-editable-components#aempagecomponent.md)에 전달됩니다.
 
@@ -684,11 +684,11 @@ SPA Pages 및 SPA Editor SDK를 사용하여 AEM의 여러 보기를 지원하�
    </aem-page>
    ```
 
-   `aem-page`에 [AEMPageComponent](https://www.npmjs.com/package/@adobe/cq-angular-editable-components#aempagecomponent.md)가 포함되어 있습니다. 변수 `path`, `items` 및 `itemsOrder`이(가) `AEMPageComponent`에 전달됩니다. 그런 다음 SPA Editor JavaScript SDK를 통해 제공되는 `AemPageComponent`은(는) 이 데이터를 반복하고 [구성 요소 매핑 자습서](./map-components.md)에 표시된 대로 JSON 데이터를 기반으로 Angular 구성 요소를 동적으로 인스턴스화합니다.
+   `aem-page`에 [AEMPageComponent](https://www.npmjs.com/package/@adobe/cq-angular-editable-components#aempagecomponent.md)가 포함되어 있습니다. 변수 `path`, `items` 및 `itemsOrder`이(가) `AEMPageComponent`에 전달됩니다. 그런 다음 SPA 편집기 JavaScript SDK을 통해 제공된 `AemPageComponent`은(는) 이 데이터를 반복하고 [구성 요소 매핑 자습서](./map-components.md)에 표시된 대로 JSON 데이터를 기반으로 Angular 구성 요소를 동적으로 인스턴스화합니다.
 
-   `PageComponent`은(는) `AEMPageComponent`의 프록시일 뿐이며 JSON 모델을 Angular 구성 요소에 올바르게 매핑하기 위한 대규모 작업을 수행하는 `AEMPageComponent`입니다.
+   `PageComponent`은(는) 실제로 `AEMPageComponent`의 프록시이며 JSON 모델을 Angular 구성 요소에 올바르게 매핑하기 위한 대규모 작업을 수행하는 `AEMPageComponent`입니다.
 
-## AEM의 SPA 라우팅 Inspect
+## AEM에서 SPA 라우팅 검사
 
 1. 터미널을 열고 **Webpack 개발 서버**&#x200B;가 시작되면 중지합니다. 프로젝트의 루트로 이동한 다음 Maven 기술을 사용하여 프로젝트를 AEM에 배포합니다.
 
@@ -699,11 +699,11 @@ SPA Pages 및 SPA Editor SDK를 사용하여 AEM의 여러 보기를 지원하�
 
    >[!CAUTION]
    >
-   > angular 프로젝트에 매우 엄격한 린팅 규칙이 활성화되어 있습니다. Maven 빌드가 실패하면 오류를 확인하고 나열된 파일에서 **Lint 오류가 있는지 확인하십시오.**. 링터에서 발견한 문제를 수정하고 Maven 명령을 다시 실행합니다.
+   > Angular 프로젝트에는 매우 엄격한 린팅 규칙이 활성화되어 있습니다. Maven 빌드가 실패하면 오류를 확인하고 나열된 파일에서 **Lint 오류가 있는지 확인하십시오.**. 링터에서 발견한 문제를 수정하고 Maven 명령을 다시 실행합니다.
 
-2. AEM에서 SPA 홈 페이지([http://localhost:4502/content/wknd-spa-angular/us/en/home.html](http://localhost:4502/content/wknd-spa-angular/us/en/home.html))로 이동하여 브라우저의 개발자 도구를 엽니다. 아래 스크린샷은 Google Chrome 브라우저에서 캡처됩니다.
+2. AEM의 SPA 홈 페이지([http://localhost:4502/content/wknd-spa-angular/us/en/home.html](http://localhost:4502/content/wknd-spa-angular/us/en/home.html))로 이동하여 브라우저의 개발자 도구를 엽니다. 아래 스크린샷은 Google Chrome 브라우저에서 캡처됩니다.
 
-   페이지를 새로 고치면 SPA 루트인 `/content/wknd-spa-angular/us/en.model.json`에 대한 XHR 요청이 표시됩니다. 자습서에서 이전에 만든 SPA Root 템플릿에 대한 계층 깊이 구성에 따라 세 개의 하위 페이지만 포함됩니다. 여기에는 **페이지 3**&#x200B;이(가) 포함되지 않습니다.
+   페이지를 새로 고치면 SPA 루트인 `/content/wknd-spa-angular/us/en.model.json`에 대한 XHR 요청이 표시됩니다. 자습서에서 이전에 만든 SPA 루트 템플릿에 대한 계층 구조 깊이 구성에 따라 하위 페이지가 세 개만 포함됩니다. 여기에는 **페이지 3**&#x200B;이(가) 포함되지 않습니다.
 
    ![초기 JSON 요청 - SPA 루트](assets/navigation-routing/initial-json-request.png)
 
@@ -717,15 +717,15 @@ SPA Pages 및 SPA Editor SDK를 사용하여 AEM의 여러 보기를 지원하�
 
    AEM 모델 관리자는 **페이지 3** JSON 콘텐츠를 사용할 수 없다는 것을 이해하고 추가 XHR 요청을 자동으로 트리거합니다.
 
-4. 다양한 탐색 링크를 사용하여 SPA 탐색을 계속합니다. 추가적인 XHR 요청이 수행되지 않으며 전체 페이지 새로 고침이 발생하지 않는지 확인합니다. 이렇게 하면 최종 사용자가 SPA을 빠르게 사용할 수 있으며 불필요한 요청을 다시 AEM으로 줄일 수 있습니다.
+4. 다양한 탐색 링크를 사용하여 SPA를 계속 탐색합니다. 추가적인 XHR 요청이 수행되지 않으며 전체 페이지 새로 고침이 발생하지 않는지 확인합니다. 이렇게 하면 최종 사용자에게 SPA가 신속하게 제공되고 AEM에 대한 불필요한 요청이 줄어듭니다.
 
    ![탐색 구현](assets/navigation-routing/final-navigation-implemented.gif)
 
-5. [http://localhost:4502/content/wknd-spa-angular/us/en/home/page-2.html](http://localhost:4502/content/wknd-spa-angular/us/en/home/page-2.html)(으)로 직접 이동하여 딥링크를 실험해 보십시오. 브라우저의 뒤로 단추가 계속 작동하는지 확인하십시오.
+5. [http://localhost:4502/content/wknd-spa-angular/us/en/home/page-2.html](http://localhost:4502/content/wknd-spa-angular/us/en/home/page-2.html)&#x200B;(으)로 직접 이동하여 딥링크를 실험해 보십시오. 브라우저의 뒤로 단추가 계속 작동하는지 확인하십시오.
 
 ## 축하합니다! {#congratulations}
 
-축하합니다. SPA Editor SDK를 사용하여 AEM Pages에 매핑함으로써 SPA의 여러 보기를 지원하는 방법에 대해 알아보았습니다. 동적 탐색은 Angular 라우팅을 사용하여 구현되었으며 `Header` 구성 요소에 추가되었습니다.
+축하합니다. SPA 편집기 SDK을 사용하여 AEM 페이지에 매핑하여 SPA의 여러 보기를 지원하는 방법에 대해 알아보았습니다. 동적 탐색은 Angular 라우팅을 사용하여 구현되었으며 `Header` 구성 요소에 추가되었습니다.
 
 [GitHub](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/navigation-routing-solution)에서 완성된 코드를 항상 보거나 `Angular/navigation-routing-solution` 분기로 전환하여 로컬에서 코드를 확인할 수 있습니다.
 

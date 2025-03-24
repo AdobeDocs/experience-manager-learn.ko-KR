@@ -1,7 +1,7 @@
 ---
 title: AEM 챔피언 팁 및 요령 - Cloud Manager 환경 유형
-description: AEM 챔피언이자 전문가인 Rakesh Pasupuleti에서 Cloud Manager의 환경 유형에 대한 팁을 확인하십시오.
-version: Cloud Service
+description: AEM 챔피언 및 전문가 Rakesh Pasupuleti로부터 Cloud Manager 환경 유형에 대한 팁을 확인하십시오.
+version: Experience Manager as a Cloud Service
 feature: Cloud Manager
 topic: Administration
 role: Admin, Architect
@@ -11,7 +11,7 @@ last-substantial-update: 2023-05-11T00:00:00Z
 jira: KT-13229
 exl-id: 66159aac-a5ca-47fb-b374-f0fe5f8e1198
 duration: 306
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '90'
 ht-degree: 3%

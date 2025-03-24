@@ -1,7 +1,7 @@
 ---
 title: WAF 규칙을 포함한 트래픽 필터 규칙의 예 및 결과 분석
 description: WAF 규칙 예를 포함하여 다양한 트래픽 필터 규칙에 대해 알아봅니다. 또한 AEMCS(AEM as a Cloud Service) CDN 로그를 사용하여 결과를 분석하는 방법도 설명합니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Security
 topic: Security, Administration, Architecture
 role: Admin, Architect
@@ -12,7 +12,7 @@ jira: KT-13148
 thumbnail: KT-13148.jpeg
 exl-id: 49becbcb-7965-4378-bb8e-b662fda716b7
 duration: 532
-source-git-commit: 67091c068634e6c309afaf78942849db626128f6
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1472'
 ht-degree: 0%

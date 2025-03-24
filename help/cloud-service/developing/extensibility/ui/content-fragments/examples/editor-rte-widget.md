@@ -2,7 +2,7 @@
 title: 리치 텍스트 편집기(RTE)에 위젯 추가
 description: AEM 콘텐츠 조각 편집기에서 RTE(리치 텍스트 편집기)에 위젯을 추가하는 방법을 알아봅니다
 feature: Developer Tools, Content Fragments
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Beginner
@@ -12,7 +12,7 @@ doc-type: article
 last-substantial-update: 2023-06-12T00:00:00Z
 exl-id: 167a4b11-1202-4c7a-b022-f3f996348a4e
 duration: 476
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '553'
 ht-degree: 0%
@@ -31,7 +31,7 @@ RTE(리치 텍스트 편집기)에서 동적 콘텐츠를 추가하려면 **위�
 
 **위젯**&#x200B;은(는) `rte` 확장 포인트를 사용하여 콘텐츠 조각 편집기의 **RTE**&#x200B;에 추가됩니다. `rte` 확장 지점의 `getWidgets()` 메서드를 사용하면 하나 이상의 위젯이 추가됩니다. `{` 특수 키를 눌러 컨텍스트 메뉴 옵션을 연 다음 원하는 위젯을 선택하여 사용자 지정 대화 상자 UI를 로드함으로써 트리거됩니다.
 
-이 예에서는 RTE 콘텐츠 내에서 WKND 모험별 할인 코드를 찾고, 선택하고, 추가하기 위해 _할인 코드 목록_&#x200B;이라는 위젯을 추가하는 방법을 보여 줍니다. 이러한 할인 코드는 OMS(Order Management 시스템), PIM(제품 정보 관리), 자체 개발 애플리케이션 또는 Adobe AppBuilder 작업과 같은 외부 시스템에서 관리할 수 있습니다.
+이 예에서는 RTE 콘텐츠 내에서 WKND 모험별 할인 코드를 찾고, 선택하고, 추가하기 위해 _할인 코드 목록_&#x200B;이라는 위젯을 추가하는 방법을 보여 줍니다. 이러한 할인 코드는 OMS(Order Management System), PIM(제품 정보 관리), 자체 개발 애플리케이션 또는 Adobe AppBuilder 작업과 같은 외부 시스템에서 관리할 수 있습니다.
 
 이 예제에서는 [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html) 프레임워크를 사용하여 위젯 또는 대화 상자 UI와 하드 코딩된 WKND 어드벤처 이름, 할인 코드 데이터를 개발합니다.
 

@@ -1,7 +1,7 @@
 ---
 title: AEM Assets에서 메타데이터 가져오기 및 내보내기 사용
 description: Adobe Experience Manager Assets의 메타데이터 가져오기 및 내보내기 기능을 사용하는 방법에 대해 알아봅니다. 가져오기 및 내보내기 기능을 사용하여 콘텐츠 작성자는 기존 에셋에 대한 메타데이터를 대량으로 업데이트할 수 있습니다.
-version: 6.4, 6.5, Cloud Service
+version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 topic: Content Management
 feature: Metadata
 role: Admin
@@ -12,7 +12,7 @@ last-substantial-update: 2022-06-13T00:00:00Z
 doc-type: Feature Video
 exl-id: 0681e2c4-8661-436c-9170-9aa841a6fa27
 duration: 419
-source-git-commit: 726715890d997ba3bb85f4833e220ac2222b3a42
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 1%

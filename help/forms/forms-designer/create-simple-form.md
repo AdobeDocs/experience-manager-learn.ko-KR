@@ -1,7 +1,7 @@
 ---
 title: 디자이너를 사용하여 간단한 양식 만들기
 description: 간단한 양식 만들기를 설명하는 짧은 비디오(2분 미만)
-version: 6.5
+version: Experience Manager 6.5
 feature: Forms Designer,Designer
 topic: Development
 role: User
@@ -12,7 +12,7 @@ last-substantial-update: 2024-02-29T00:00:00Z
 jira: KT-15053
 thumbnail: 3427620.jpeg
 exl-id: ac482951-9941-4c14-95b2-29d274fa610e
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '46'
 ht-degree: 0%

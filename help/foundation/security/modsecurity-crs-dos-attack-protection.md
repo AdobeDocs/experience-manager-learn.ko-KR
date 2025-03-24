@@ -1,8 +1,8 @@
 ---
 title: ModSecurity를 사용하여 DoS 공격으로부터 AEM 사이트 보호
-description: ModSecurity를 사용하여 OWASP CRS(ModSecurity Core Rule Set)를 사용하여 DoS(Denial of Service) 공격으로부터 사이트를 보호하는 방법을 알아봅니다.
+description: ModSecurity가 OWASP CRS(ModSecurity Core Rule Set)를 사용하여 DoS(Denial of Service) 공격으로부터 사이트를 보호하는 방법을 알아봅니다.
 feature: Security
-version: 6.5, Cloud Service
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 topic: Security, Development
 role: Admin, Architect
 level: Experienced
@@ -12,23 +12,23 @@ doc-type: Article
 last-substantial-update: 2023-08-18T00:00:00Z
 exl-id: 9f689bd9-c846-4c3f-ae88-20454112cf9a
 duration: 783
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
-source-wordcount: '1172'
+source-wordcount: '1171'
 ht-degree: 0%
 
 ---
 
-# ModSecurity를 사용하여 AEM 사이트를 DoS 공격으로부터 보호
+# ModSecurity를 사용하여 DoS 공격으로부터 AEM 사이트 보호
 
-AEM(Adobe Experience Manager) Publish Dispatcher에서 **OWASP CRS(ModSecurity Core Rule Set)**&#x200B;를 사용하여 ModSecurity를 사용하여 서비스 거부(DoS) 공격으로부터 사이트를 보호하는 방법을 알아봅니다.
+ModSecurity를 사용하여 Adobe Experience Manager(AEM) Publish Dispatcher에서 **OWASP ModSecurity CRS(Core Rule Set)**&#x200B;를 사용하여 DoS(서비스 거부) 공격으로부터 사이트를 보호하는 방법에 대해 알아봅니다.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3422976?quality=12&learn=on)
 
 ## 개요
 
-[OWASP(Open Web Application Security Project®)](https://owasp.org/) 파운데이션은 웹 응용 프로그램에 대한 10가지 가장 중요한 보안 문제를 요약한 [**OWASP 상위 10**](https://owasp.org/www-project-top-ten/)을 제공합니다.
+[Open Web Application Security Project®(OWASP)](https://owasp.org/) 파운데이션은 웹 응용 프로그램에 가장 중요한 10가지 보안 문제를 요약한 [**OWASP Top 10**](https://owasp.org/www-project-top-ten/)을 제공합니다.
 
 ModSecurity는 웹 애플리케이션에 대한 다양한 공격으로부터 보호하는 오픈 소스 크로스 플랫폼 솔루션입니다. 또한 HTTP 트래픽 모니터링, 로깅 및 실시간 분석을 허용합니다.
 
@@ -55,9 +55,9 @@ OWSAP®는 [OWASP® ModSecurity CRS(Core Rule Set)](https://github.com/corerules
    $ tar -xvzf coreruleset-3.3.5.tar.gz
    ```
 
-1. AEM 프로젝트의 코드에서 `dispatcher/src/conf.d/` 내에 `modsec/crs` 폴더를 만듭니다. 예를 들어 [AEM WKND Sites 프로젝트](https://github.com/adobe/aem-guides-wknd)의 로컬 복사본에 있습니다.
+1. AEM 프로젝트 코드에서 `dispatcher/src/conf.d/` 내에 `modsec/crs` 폴더를 만듭니다. 예를 들어 [AEM WKND Sites 프로젝트](https://github.com/adobe/aem-guides-wknd)의 로컬 복사본에 있습니다.
 
-   ![AEM 프로젝트 코드 내의 CRS 폴더 - ModSecurity](assets/modsecurity-crs/crs-folder-in-aem-dispatcher-module.png){width="200" zoomable="yes"}
+   ![AEM 프로젝트 코드 내 CRS 폴더 - ModSecurity](assets/modsecurity-crs/crs-folder-in-aem-dispatcher-module.png){width="200" zoomable="yes"}
 
 1. 다운로드한 CRS 릴리스 패키지의 `coreruleset-X.Y.Z/rules` 폴더를 `dispatcher/src/conf.d/modsec/crs` 폴더로 복사합니다.
 1. 다운로드한 CRS 릴리스 패키지의 `coreruleset-X.Y.Z/crs-setup.conf.example` 파일을 `dispatcher/src/conf.d/modsec/crs` 폴더로 복사하고 이름을 `crs-setup.conf`(으)로 바꿉니다.
@@ -260,7 +260,7 @@ JMeter를 사용하여 DoS 공격을 시뮬레이션하려면 아래 단계를 �
 
    ![샘플 WKND DoS 공격 JMX 테스트 스크립트 열기 - ModSecurity](assets/modsecurity-crs/open-wknd-dos-attack-jmx-test-script.png)
 
-1. 테스트 AEM 환경 URL과 일치하는 _홈 페이지_ 및 _Adventure 페이지_ HTTP 요청 샘플러에서 **서버 이름 또는 IP** 필드 값을 업데이트합니다. 샘플 JMeter 스크립트의 다른 세부 사항을 검토하십시오.
+1. 테스트 AEM 환경 URL과 일치하는 _홈 페이지_ 및 _모험 페이지_ HTTP 요청 샘플러에서 **서버 이름 또는 IP** 필드 값을 업데이트합니다. 샘플 JMeter 스크립트의 다른 세부 사항을 검토하십시오.
 
    ![AEM 서버 이름 HTTP 요청 JMetere - ModSecurity](assets/modsecurity-crs/aem-server-name-http-request.png)
 
@@ -280,7 +280,7 @@ JMeter를 사용하여 DoS 공격을 시뮬레이션하려면 아래 단계를 �
 
 ModSecurity 로거 구성은 DoS 공격 사건의 세부 정보를 기록합니다. 세부 정보를 보려면 아래 단계를 따르십시오.
 
-1. **Publish Dispatcher**&#x200B;의 `httpderror` 로그 파일을 다운로드하여 엽니다.
+1. **Dispatcher 게시**&#x200B;의 `httpderror` 로그 파일을 다운로드하여 엽니다.
 1. **오류** 줄을 보려면 로그 파일에서 `burst` 단어를 검색하십시오.
 
    ```

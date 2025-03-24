@@ -1,7 +1,7 @@
 ---
 title: 콘텐츠 조각 작성 - AEM Headless 시작하기 - GraphQL
 description: Adobe Experience Manager(AEM) 및 GraphQL을 시작합니다. 콘텐츠 조각 모델을 기반으로 새 콘텐츠 조각을 만들고 편집합니다. 콘텐츠 조각의 변형을 만드는 방법을 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 mini-toc-levels: 1
 jira: KT-6713
 thumbnail: 22451.jpg
@@ -11,7 +11,7 @@ role: Developer
 level: Beginner
 exl-id: 701fae92-f740-4eb6-8133-1bc45a472d0f
 duration: 173
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '853'
 ht-degree: 3%
@@ -50,7 +50,7 @@ ht-degree: 3%
 
    ![폴더 속성 열기](assets/author-content-fragments/open-folder-properties.png)
 
-1. **Cloud Service** 탭을 탭합니다. 클라우드 구성 탭에서 경로 파인더를 사용하여 **내 프로젝트** 구성을 선택합니다. 값은 `/conf/my-project`이어야 합니다.
+1. **클라우드 서비스** 탭을 탭합니다. 클라우드 구성 탭에서 경로 파인더를 사용하여 **내 프로젝트** 구성을 선택합니다. 값은 `/conf/my-project`이어야 합니다.
 
    ![클라우드 구성 설정](assets/author-content-fragments/set-cloud-config-my-project.png)
 
@@ -146,13 +146,13 @@ ht-degree: 3%
    >
    >**새 콘텐츠 조각** 단추를 사용하여 콘텐츠 조각을 인라인으로 만들 수도 있습니다.
 
-1. 팀 Alpha 조각에 변경 사항을 저장하려면 **저장 및 닫기**&#x200B;를 탭하세요.
+1. **저장 및 닫기**&#x200B;를 탭하여 Team Alpha 조각에 대한 변경 사항을 저장합니다.
 
-## Publish 컨텐츠 조각
+## 콘텐츠 조각 게시
 
 >[!TIP]
 >
->로컬 AEM SDK 사용자의 경우: AEM Assets UI를 활용하여 아래에 요약된 콘텐츠 조각 UI 대신 콘텐츠 조각을 게시할 수 있습니다. 자세한 지침은 [AEM 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing.html#publishing-and-referencing-a-fragment)를 참조하세요.
+>로컬 AEM SDK 사용자의 경우: AEM Assets UI를 활용하여 아래에 설명된 콘텐츠 조각 UI 대신 콘텐츠 조각을 게시할 수 있습니다. 자세한 지침은 [AEM 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing.html#publishing-and-referencing-a-fragment)를 참조하세요.
 
 검토 및 확인 후 작성된 `Content Fragments`을(를) 게시합니다.
 
@@ -160,8 +160,8 @@ ht-degree: 3%
 
 1. 왼쪽 레일에서 **내 프로젝트**&#x200B;를 확장하고 **영어**&#x200B;를 탭합니다.
 
-1. 콘텐츠 조각 옆에 있는 확인란을 탭하고 **Publish**을 탭합니다.
-   ![Publish 콘텐츠 조각](assets/author-content-fragments/publish-content-fragment.png)
+1. 콘텐츠 조각 옆에 있는 확인란을 탭하고 **게시**를 탭합니다.
+   ![콘텐츠 조각 게시](assets/author-content-fragments/publish-content-fragment.png)
 
 ## 축하합니다! {#congratulations}
 
@@ -169,7 +169,7 @@ ht-degree: 3%
 
 ## 다음 단계 {#next-steps}
 
-다음 장인 [GraphQL API 탐색](explore-graphql-api.md)에서는 내장된 GrapiQL 도구를 사용하여 AEM의 GraphQL API를 탐색합니다. AEM이 콘텐츠 조각 모델을 기반으로 GraphQL 스키마를 자동으로 생성하는 방법을 알아봅니다. GraphQL 구문을 사용하여 기본 쿼리를 구성해 봅니다.
+다음 장인 [GraphQL API 탐색](explore-graphql-api.md)에서는 내장된 GraphiQL 도구를 사용하여 AEM의 GraphQL API를 탐색합니다. AEM이 콘텐츠 조각 모델을 기반으로 GraphQL 스키마를 자동으로 생성하는 방법을 알아봅니다. GraphQL 구문을 사용하여 기본 쿼리를 구성해 봅니다.
 
 ## 관련 설명서
 

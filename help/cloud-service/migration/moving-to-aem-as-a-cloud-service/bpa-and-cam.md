@@ -1,7 +1,7 @@
 ---
 title: BPA 및 CAM 프로젝트 설정
 description: Best Practices Analyzer 및 Cloud Acceleration Manager이 AEM as a Cloud Service으로 마이그레이션하기 위한 맞춤형 안내서를 제공하는 방법에 대해 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Developer Tools
 topic: Migration, Upgrade
 role: Developer
@@ -10,7 +10,7 @@ jira: KT-8627
 thumbnail: 336957.jpeg
 exl-id: f8289dd4-b293-4b8f-b14d-daec091728c0
 duration: 680
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 2%
@@ -32,7 +32,7 @@ BPA 패키지는 프로덕션 AEM 6.x 환경의 클론에 설치해야 합니다
 ## 주요 활동
 
 + 프로덕션 6.x 환경의 클론을 만듭니다. 콘텐츠를 마이그레이션하고 코드를 리팩터링할 때 프로덕션 환경의 클론을 만들면 다양한 도구와 변경 사항을 테스트할 수 있습니다.
-+ [소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)에서 최신 BPA 도구를 다운로드하고 AEM 6.x 복제된 환경에 설치합니다.
++ [소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)에서 최신 BPA 도구를 다운로드하고 AEM 6.x 복제 환경에 설치합니다.
 + BPA 도구를 사용하여 CAM(Cloud Acceleration Manager)에 업로드할 수 있는 보고서를 생성합니다. CAM은 [https://experience.adobe.com/](https://experience.adobe.com/) > **Experience Manager** > **Cloud Acceleration Manager**&#x200B;을 통해 액세스합니다.
 + CAM을 사용하여 AEM as a Cloud Service으로 이동하기 위해 현재 코드 베이스 및 환경에 대해 업데이트해야 하는 사항에 대한 지침을 제공합니다.
 

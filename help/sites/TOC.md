@@ -5,8 +5,8 @@ breadcrumb-title: AEM Sites 튜토리얼
 feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
-version: 6.4, 6.5, Cloud Service
-source-git-commit: 52b7e6afbfe448fd350e84c3e8987973c87c4718
+version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 18%
@@ -76,7 +76,7 @@ ht-degree: 18%
    + 피어 {#expert-advice}에서 학습
       + [사이트 계층 구조 팁](page-authoring/expert-advice/site-hierarchy.md)
 + 생성형 AI {#generative-ai}
-   + [베리에이션 생성](./generative-ai/generate-variations.md)
+   + [변형 생성](./generative-ai/generate-variations.md)
 + 콘텐츠 조각 {#content-fragments}
    + [콘텐츠 조각 콘솔](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html){target=_blank}
    + [콘텐츠 조각 작성](content-fragments/content-fragments-feature-video-use.md)

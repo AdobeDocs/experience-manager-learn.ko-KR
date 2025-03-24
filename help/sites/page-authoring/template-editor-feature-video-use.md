@@ -2,7 +2,7 @@
 title: AEM Sites에서 편집 가능한 페이지 템플릿 사용
 description: 편집 가능한 템플릿을 사용하면 전문 작성자가 페이지 템플릿을 만들고 업데이트할 수 있으며 AEM Sites을 사용하여 고급 정책 구성을 관리할 수 있습니다.
 feature: Editable Templates
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-193
 topic: Content Management
 role: User
@@ -10,10 +10,10 @@ level: Beginner
 doc-type: Feature Video
 exl-id: 2213d1f2-37ed-4897-a68d-04ef423395a3
 duration: 369
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '189'
-ht-degree: 1%
+ht-degree: 5%
 
 ---
 

@@ -1,14 +1,14 @@
 ---
 title: HTL에서 Sling 모델 매개 변수화
-description: HTL의 매개 변수를 AEM의 Sling 모델로 전달하는 방법을 알아봅니다.
-version: Cloud Service
+description: HTL에서 AEM의 Sling 모델로 매개 변수를 전달하는 방법을 알아봅니다.
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: Sling Model
 role: Developer
 jira: KT-15923
 level: Intermediate, Experienced
 exl-id: 5d852617-720a-4a00-aecd-26d0ab77d9b3
-source-git-commit: ba744f95f8d1f0b982cd5430860f0cb0945a4cda
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # HTL에서 Sling 모델 매개 변수화
 
-Adobe Experience Manager(AEM)는 동적 및 적응식 웹 애플리케이션을 구축하기 위한 강력한 프레임워크를 제공합니다. Sling 모델을 매개 변수화하여 유연성과 재사용성을 향상시키는 강력한 기능 중 하나입니다. 이 튜토리얼에서는 매개 변수가 있는 Sling 모델을 만들고 HTL(HTML 템플릿 언어)에서 사용하여 다이내믹 콘텐츠를 렌더링하는 방법을 안내합니다.
+Adobe Experience Manager(AEM)는 동적이고 적응성 있는 웹 애플리케이션을 구축하기 위한 강력한 프레임워크를 제공합니다. Sling 모델을 매개 변수화하여 유연성과 재사용성을 향상시키는 강력한 기능 중 하나입니다. 이 튜토리얼에서는 매개 변수가 있는 Sling 모델을 만들고 HTL(HTML 템플릿 언어)에서 사용하여 다이내믹 콘텐츠를 렌더링하는 방법을 안내합니다.
 
 ## HTL 스크립트
 
@@ -126,4 +126,4 @@ public interface ParameterizedModel {
 </p>
 ```
 
-이는 AEM의 매개 변수가 있는 Sling 모델이 HTL을 통해 제공되는 입력 매개 변수를 기반으로 영향을 받는 방법을 보여 줍니다.
+이는 HTL을 통해 제공되는 입력 매개 변수를 기반으로 AEM의 매개 변수가 있는 Sling 모델이 영향을 받는 방법을 보여 줍니다.

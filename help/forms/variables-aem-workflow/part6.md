@@ -1,7 +1,7 @@
 ---
 title: AEM 워크플로우의 변수 로깅[Part6]
 description: AEM 워크플로우 변수 값 기록
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 feature: Adaptive Forms, Workflow
 role: Developer
@@ -9,7 +9,7 @@ level: Beginner
 jira: KT-13783
 exl-id: 6afb3a52-9879-4393-8efd-ec3e5c303063
 duration: 84
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '125'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # AEM Workflow에 변수 값 기록
 
-변수의 값을 기록하는 것은 소프트웨어 개발의 일반적인 관례입니다. 개발자는 AEM 워크플로우가 어떻게 실행되는지 추적 및 이해하고, 문제를 진단하고, AEM 워크플로우 내의 데이터 흐름을 모니터링할 수 있습니다.
+변수의 값을 기록하는 것은 소프트웨어 개발의 일반적인 관례입니다. 개발자는 AEM 워크플로우가 어떻게 실행되는지 추적 및 이해하고, 문제를 진단하고, AEM 워크플로우 내에서 데이터 흐름을 모니터링할 수 있습니다.
 
 
 

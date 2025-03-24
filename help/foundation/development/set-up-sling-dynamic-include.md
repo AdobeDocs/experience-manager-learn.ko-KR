@@ -1,7 +1,7 @@
 ---
 title: AEM용 Sling Dynamic Include 설정
 description: Apache HTTP 웹 서버에서 실행되는 AEM Dispatcher과 함께 Apache Sling Dynamic Include를 설치하고 사용하는 방법에 대한 비디오 설명입니다.
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 sub-product: Experience Manager, Experience Manager Sites
 feature: APIs
 doc-type: Technical Video
@@ -10,7 +10,7 @@ role: Developer
 level: Experienced
 exl-id: 6c504710-be8f-4b44-bd8a-aaf480ae6d8a
 duration: 863
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # [!DNL Sling Dynamic Include] 설정
 
-[!DNL Apache HTTP Web Server]에서 실행 중인 [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)와 함께 [!DNL Apache Sling Dynamic Include]을(를) 설치하고 사용하는 방법에 대한 비디오 연습입니다.
+[!DNL Apache HTTP Web Server]에서 실행 중인 [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko-KR)와 함께 [!DNL Apache Sling Dynamic Include]을(를) 설치하고 사용하는 방법에 대한 비디오 연습입니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17040?quality=12&learn=on)
 

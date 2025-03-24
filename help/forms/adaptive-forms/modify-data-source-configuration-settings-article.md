@@ -2,14 +2,14 @@
 title: 데이터 Source 구성 설정을 수정합니다.
 description: 데이터 Source 구성 설정에서 호스트 이름 및 기타 설정을 수정합니다.
 feature: Adaptive Forms
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 6c63787c-e511-4764-9a03-2c85c394bcc0
 last-substantial-update: 2019-06-09T00:00:00Z
 duration: 28
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 0%
@@ -24,8 +24,8 @@ AEM Forms 6.5가 출시되면서 이제 위에서 언급한 속성을 쉽게 변
 
 아래 스크린샷은 AEM Forms 6.4 및 Forms 6.5의 데이터 소스 구성 설정을 보여 줍니다
 
-AEM 6.4의 **데이터 Source 구성**
+**AEM 6.4의 Data Source 구성**
 
 ![64DataSource 구성](assets/64release.gif)
-**AEM 6.5 이상에서 편집 가능한 데이터 Source 구성**
+**AEM 6.5 이상에서 편집 가능한 Data Source 구성**
 ![65DataSource 구성](assets/modifiable_data_source.png)

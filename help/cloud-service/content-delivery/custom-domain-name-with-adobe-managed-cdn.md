@@ -1,7 +1,7 @@
 ---
 title: Adobe 관리 CDN을 사용한 사용자 정의 도메인 이름
 description: Adobe 관리 CDN을 사용하는 AEM as a Cloud Service 웹 사이트에 사용자 정의 도메인 이름을 구현하는 방법에 대해 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Cloud Manager, Operations
 topic: Administration, Architecture
 role: Admin, Architect, Developer
@@ -12,7 +12,7 @@ last-substantial-update: 2024-08-12T00:00:00Z
 jira: KT-15121
 thumbnail: KT-15121.jpeg
 exl-id: 8936c3ae-2daf-4d0f-b260-28376ae28087
-source-git-commit: f92e66d6edc929bff1e8cae6adb7f408352aeb77
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '726'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Adobe CDN(Content Delivery Network)을 사용하는 AEM as a Cloud Service 웹 �
 
 높은 수준의 단계는 다음과 같습니다.
 
-![Adobe CDN을 사용하는 사용자 지정 도메인 이름](./assets/add-custom-domain-name-with-Adobe-CDN.png){width="800" zoomable="yes"}
+Adobe CDN을 사용하는 ![사용자 지정 도메인 이름](./assets/add-custom-domain-name-with-Adobe-CDN.png){width="800" zoomable="yes"}
 
 ## 사전 요구 사항
 
@@ -39,7 +39,7 @@ Adobe CDN(Content Delivery Network)을 사용하는 AEM as a Cloud Service 웹 �
 - 서드파티 서비스에 대한 액세스:
    - CA(인증 기관) - [DigitCert](https://www.digicert.com/)와 같이 사이트 도메인에 대해 서명된 인증서를 요청합니다.
    - DNS(Domain Name System) 호스팅 서비스 - Azure DNS 또는 AWS Route 53과 같은 사용자 정의 도메인에 대한 DNS 레코드를 추가합니다.
-- **비즈니스 소유자** 또는 **Adobe Cloud Manager 관리자** 역할로 [배포 관리자](https://my.cloudmanager.adobe.com/)에 액세스합니다.
+- **비즈니스 소유자** 또는 **배포 관리자** 역할로 [Adobe Cloud Manager](https://my.cloudmanager.adobe.com/)에 액세스합니다.
 - 샘플 [AEM WKND](https://github.com/adobe/aem-guides-wknd) 사이트가 [프로덕션 프로그램](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs) 유형의 AEM as a Cloud Service 환경에 배포되었습니다.
 
 서드파티 서비스에 액세스할 수 없는 경우 _보안 또는 호스팅 팀과 협력하여 단계를 완료합니다_.
@@ -142,7 +142,7 @@ _aemverification.wknd.enablementadobe.com. 3600    IN TXT "adobe-aem-verificatio
 
 이 자습서에서는 **하위 도메인** `wknd.enablementadobe.com`이(가) 사용되면 `cdn.adobeaemcloud.com`을(를) 가리키는 CNAME 레코드 종류가 추가됩니다.
 
-그러나 **루트 도메인**&#x200B;을 사용하는 경우 Adobe에서 제공한 특정 IP 주소를 가리키는 APEX 레코드 종류(예: A, ALIAS 또는 ANAME)를 추가해야 합니다.
+그러나 **루트 도메인**&#x200B;을 사용하는 경우 Adobe에서 제공하는 특정 IP 주소를 가리키는 APEX 레코드 유형(예: A, ALIAS 또는 ANAME)을 추가해야 합니다.
 
 ## 사이트 확인
 

@@ -1,7 +1,7 @@
 ---
 title: 사용자 지정 오류 페이지
 description: AEM as a Cloud Service 호스팅 웹 사이트에 대한 사용자 지정 오류 페이지를 구현하는 방법을 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Brand Experiences, Configuring, Developing
 topic: Content Management, Development
 role: Developer
@@ -12,7 +12,7 @@ last-substantial-update: 2024-12-04T00:00:00Z
 jira: KT-15123
 thumbnail: KT-15123.jpeg
 exl-id: c3bfbe59-f540-43f9-81f2-6d7731750fc6
-source-git-commit: 97680d95d4cd3cb34956717a88c15a956286c416
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1657'
 ht-degree: 0%
@@ -50,20 +50,20 @@ _AEM 서비스 유형_(작성자, 게시, 미리보기) 또는 _Adobe 관리 CDN
 
 | 다음에서 제공된 오류 페이지 | 세부 사항 |
 |---------------------|:-----------------------:|
-| AEM 서비스 유형 - 작성자, 게시, 미리보기 | 페이지 요청이 AEM 서비스 유형에서 제공되고 위의 오류 시나리오가 발생하면 오류 페이지가 AEM 서비스 유형에서 제공됩니다. 기본적으로 `x-aem-error-pass: true` 헤더가 설정되지 않은 경우 5XX 오류 페이지가 Adobe 관리 CDN 오류 페이지로 재정의됩니다. |
+| AEM 서비스 유형 - 작성자, 게시, 미리보기 | 페이지 요청이 AEM 서비스 유형에서 제공되고 위의 오류 시나리오가 발생하면 오류 페이지가 AEM 서비스 유형에서 제공됩니다. 기본적으로 `x-aem-error-pass: true` 헤더가 설정되지 않은 경우 Adobe 관리 CDN 오류 페이지로 5XX 오류 페이지가 재정의됩니다. |
 | Adobe 관리 CDN | Adobe 관리 CDN _이(가) AEM 서비스 유형_(원본 서버)에 연결할 수 없으면 Adobe 관리 CDN에서 오류 페이지가 제공됩니다. **있을 수 없는 이벤트이지만 계획할 가치가 있습니다.** |
 
 >[!NOTE]
 >
->AEM as Cloud Service에서 CDN은 백엔드에서 5XX 오류가 수신될 때 일반 오류 페이지를 제공합니다. 백엔드의 실제 응답을 통과하려면 응답에 헤더 `x-aem-error-pass: true`을(를) 추가해야 합니다.
->이는 AEM 또는 Apache/Dispatcher 계층에서 온 응답에만 작동합니다. 중간 인프라 계층에서 발생하는 기타 예기치 않은 오류는 여전히 일반 오류 페이지를 표시합니다.
+>AEM as Cloud Service에서 CDN은 백엔드에서 5XX 오류를 받으면 일반 오류 페이지를 제공합니다. 백엔드의 실제 응답을 통과하려면 응답에 헤더 `x-aem-error-pass: true`을(를) 추가해야 합니다.
+>AEM 또는 Apache/Dispatcher 계층에서 온 응답에만 작동합니다. 중간 인프라 계층에서 발생하는 기타 예기치 않은 오류는 여전히 일반 오류 페이지를 표시합니다.
 
 
 예를 들어 AEM 서비스 유형 및 Adobe 관리 CDN에서 제공되는 기본 오류 페이지는 다음과 같습니다.
 
 ![기본 AEM 오류 페이지](./assets/aem-default-error-pages.png)
 
-그러나 내 브랜드와 일치하고 더 나은 사용자 환경을 제공하기 위해 _AEM 서비스 유형과 Adobe 관리 오류 페이지를 모두 사용자 지정_&#x200B;할 수 있습니다.
+하지만 내 브랜드와 일치하고 더 나은 사용자 환경을 제공하기 위해 _AEM 서비스 유형과 Adobe 관리 CDN 오류 페이지를 모두 사용자 지정_&#x200B;할 수 있습니다.
 
 ## 오류 페이지를 사용자 지정하는 옵션
 
@@ -80,7 +80,7 @@ _AEM 서비스 유형_(작성자, 게시, 미리보기) 또는 _Adobe 관리 CDN
 
 이 자습서에서는 _ErrorDocument_ 지시문, _ACS AEM Commons 오류 페이지 핸들러_ 및 _CDN 오류 페이지_ 옵션을 사용하여 오류 페이지를 사용자 지정하는 방법을 알아봅니다. 이 자습서를 수행하려면 다음이 필요합니다.
 
-- [로컬 AEM 개발 환경](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) 또는 AEM as a Cloud Service 환경입니다. _CDN 오류 페이지_ 옵션은 AEM as a Cloud Service 환경에 적용할 수 있습니다.
+- [로컬 AEM 개발 환경](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) 또는 AEM as a Cloud Service 환경. _CDN 오류 페이지_ 옵션은 AEM as a Cloud Service 환경에 적용할 수 있습니다.
 
 - 오류 페이지를 사용자 지정하는 [AEM WKND 프로젝트](https://github.com/adobe/aem-guides-wknd).
 
@@ -99,13 +99,13 @@ _AEM 서비스 유형_(작성자, 게시, 미리보기) 또는 _Adobe 관리 CDN
 
 - WKND 사이트 페이지가 올바르게 렌더링되는지 확인합니다.
 
-## AEM에서 제공하는 오류 페이지를 사용자 지정하는 ErrorDocument Apache 지시문{#errordocument}
+## ErrorDocument Apache 지시문을 사용하여 AEM에서 제공하는 오류 페이지{#errordocument}
 
-AEM 제공 오류 페이지를 사용자 지정하려면 `ErrorDocument` Apache 지시문을 사용하십시오.
+AEM에서 제공하는 오류 페이지를 사용자 지정하려면 `ErrorDocument` Apache 지시문을 사용하십시오.
 
 AEM as a Cloud Service에서 `ErrorDocument` Apache 지시문 옵션은 게시 및 미리보기 서비스 유형에만 적용할 수 있습니다. Apache + Dispatcher은 배포 아키텍처의 일부가 아니므로 작성자 서비스 유형에 적용할 수 없습니다.
 
-[AEM WKND](https://github.com/adobe/aem-guides-wknd) 프로젝트에서 `ErrorDocument` Apache 지시문을 사용하여 사용자 지정 오류 페이지를 표시하는 방법을 검토해 보겠습니다.
+[AEM WKND](https://github.com/adobe/aem-guides-wknd) 프로젝트에서 `ErrorDocument` Apache 지시문을 사용하여 사용자 지정 오류 페이지를 표시하는 방법을 살펴보겠습니다.
 
 - `ui.content.sample` 모듈에 브랜드 [오류 페이지](https://github.com/adobe/aem-guides-wknd/tree/main/ui.content.sample/src/main/content/jcr_root/content/wknd/language-masters/en/errors) @ `/content/wknd/language-masters/en/errors`이(가) 있습니다. [로컬 AEM](http://localhost:4502/sites.html/content/wknd/language-masters/en/errors) 또는 AEM as a Cloud Service `https://author-p<ID>-e<ID>.adobeaemcloud.com/ui#/aem/sites.html/content/wknd/language-masters/en/errors` 환경에서 검토하십시오.
 
@@ -150,7 +150,7 @@ AEM as a Cloud Service에서 `ErrorDocument` Apache 지시문 옵션은 게시 �
 
 ## AEM 제공 오류 페이지를 사용자 지정하는 ACS AEM Commons-Error 페이지 핸들러{#acs-aem-commons}
 
-_모든 AEM 서비스 유형_&#x200B;에서 AEM 제공 오류 페이지를 사용자 지정하려면 [ACS AEM Commons 오류 페이지 처리기](https://adobe-consulting-services.github.io/acs-aem-commons/features/error-handler/index.html) 옵션을 사용할 수 있습니다.
+_모든 AEM 서비스 유형_&#x200B;에서 AEM에 제공된 오류 페이지를 사용자 지정하려면 [ACS AEM Commons 오류 페이지 처리기](https://adobe-consulting-services.github.io/acs-aem-commons/features/error-handler/index.html) 옵션을 사용할 수 있습니다.
 
 . 자세한 단계별 지침은 [사용 방법](https://adobe-consulting-services.github.io/acs-aem-commons/features/error-handler/index.html#how-to-use) 섹션을 참조하십시오.
 
@@ -196,7 +196,7 @@ Adobe 관리 CDN에 의해 전달된 HTML 코드 조각의 구조는 다음과 �
 </html>
 ```
 
-HTML 스니펫에는 다음 자리 표시자가 포함됩니다.
+HTML 스니펫에는 다음 자리 표시자가 포함되어 있습니다.
 
 1. **jsUrl**: HTML 요소를 동적으로 만들어 오류 페이지 콘텐츠를 렌더링하기 위한 JavaScript 파일의 절대 URL입니다.
 1. **cssUrl**: 오류 페이지 컨텐츠의 스타일을 지정하는 CSS 파일의 절대 URL입니다.
@@ -206,7 +206,7 @@ HTML 스니펫에는 다음 자리 표시자가 포함됩니다.
 
 ### 사용자 지정 오류 페이지 개발
 
-WKND별 브랜드 오류 페이지 콘텐츠를 SPA(단일 페이지 애플리케이션)으로 개발해 보겠습니다.
+WKND별 브랜드 오류 페이지 콘텐츠를 단일 페이지 애플리케이션(SPA)으로 개발해 보겠습니다.
 
 데모 목적으로 [React](https://react.dev/)를 사용해 보겠습니다. 하지만 모든 JavaScript 프레임워크 또는 라이브러리를 사용할 수 있습니다.
 
@@ -385,13 +385,13 @@ Azure Blob Storage에서 정적 파일을 호스팅해 보겠습니다. 그러�
 
 CDN 오류 페이지를 테스트하려면 아래 단계를 수행합니다.
 
-- 브라우저에서 AEM as a Cloud Service의 Publish URL로 이동하고 URL에 `cdnstatus?code=404`을(를) 추가합니다(예: [https://publish-p105881-e991000.adobeaemcloud.com/cdnstatus?code=404](https://publish-p105881-e991000.adobeaemcloud.com/cdnstatus?code=404)). 또는 [사용자 지정 도메인 URL](https://wknd.enablementadobe.com/cdnstatus?code=404)을(를) 사용하여 액세스합니다
+- 브라우저에서 AEM as a Cloud Service의 게시 URL로 이동하고 `cdnstatus?code=404`을(를) URL에 추가합니다(예: [https://publish-p105881-e991000.adobeaemcloud.com/cdnstatus?code=404](https://publish-p105881-e991000.adobeaemcloud.com/cdnstatus?code=404)). 또는 [사용자 지정 도메인 URL](https://wknd.enablementadobe.com/cdnstatus?code=404)을(를) 사용하여 액세스합니다
 
   ![WKND - CDN 오류 페이지](./assets/wknd-cdn-error-page.png)
 
 - 지원되는 코드는 403, 404, 406, 500 및 503입니다.
 
-- Azure Blob 저장소에서 정적 파일이 로드되었는지 확인하려면 브라우저 네트워크 탭을 확인하십시오. Adobe 관리 CDN에서 전달하는 HTML 문서에는 최소한의 콘텐츠가 포함되어 있으며 JavaScript 파일은 브랜딩된 오류 페이지 콘텐츠를 동적으로 만듭니다.
+- Azure Blob 저장소에서 정적 파일이 로드되었는지 확인하려면 브라우저 네트워크 탭을 확인하십시오. Adobe 관리 CDN에서 제공하는 HTML 문서에는 최소한의 컨텐츠가 포함되어 있으며 JavaScript 파일은 브랜딩된 오류 페이지 컨텐츠를 동적으로 만듭니다.
 
   ![CDN 오류 페이지 네트워크 탭](./assets/wknd-cdn-error-page-network-tab.png)
 

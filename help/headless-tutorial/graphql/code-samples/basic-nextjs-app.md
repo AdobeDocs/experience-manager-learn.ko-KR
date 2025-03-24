@@ -1,7 +1,7 @@
 ---
 title: 기본 Next.js 앱
 description: WKND 모험 목록 및 세부 사항을 표시하는 기본 Next.js 앱입니다
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 mini-toc-levels: 1
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
@@ -14,7 +14,7 @@ hide: true
 hidefromtoc: true
 exl-id: 2d4396dc-2346-4561-b040-eba0ab62a96f
 duration: 22
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 0%
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 이 코드:
 
-+ AEM Publish 서비스에 연결하며 인증이 필요하지 않습니다.
++ AEM Publish 서비스에 연결하며 인증이 필요하지 않습니다
 + WKND의 지속 쿼리 `wknd-shared/adventures-all` 및 `wknd-shared/adventures-by-slug`을(를) 사용합니다.
 
 이 Next.js 앱의 빌드 방법에 대한 자세한 내용을 보려면 [예제 Next.js 앱 설명서](../example-apps/next-js.md)를 검토하십시오.

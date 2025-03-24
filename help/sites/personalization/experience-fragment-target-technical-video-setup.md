@@ -1,8 +1,8 @@
 ---
 title: AEM에서 경험 조각 및 Adobe Target 통합 설정
-description: Adobe Experience Manager 6.4는 AEM과 Target 간의 개인화 워크플로를 다시 상상합니다. AEM 내에서 생성된 경험은 이제 HTML 오퍼로서 Adobe Target에 직접 전달할 수 있습니다. 이를 통해 마케터는 다양한 채널에서 콘텐츠를 원활하게 테스트하고 개인화할 수 있습니다.
+description: Adobe Experience Manager 6.4는 AEM과 Target 간의 개인화 워크플로를 다시 이미지화합니다. AEM 내에서 만든 경험은 이제 HTML 오퍼로서 Adobe Target에 직접 전달할 수 있습니다. 이를 통해 마케터는 다양한 채널에서 콘텐츠를 원활하게 테스트하고 개인화할 수 있습니다.
 feature: Experience Fragments
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 discoiquuid: 16cb0b92-9398-4fd2-b8c3-f4b7675ef72c
 topic: Personalization
 role: Admin, Developer
@@ -10,7 +10,7 @@ level: Intermediate
 doc-type: Technical Video
 exl-id: 9c139a36-e3c5-407e-af5d-b4fb8860f5a2
 duration: 238
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 2%
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 # 경험 조각 및 Adobe Target 통합 설정{#set-up-experience-fragments-and-adobe-target-integration}
 
-Adobe Experience Manager 6.4는 AEM과 Target 간의 개인화 워크플로를 다시 상상합니다. AEM 내에서 생성된 경험은 이제 HTML 오퍼로서 Adobe Target에 직접 전달할 수 있습니다. 이를 통해 마케터는 다양한 채널에서 콘텐츠를 원활하게 테스트하고 개인화할 수 있습니다.
+Adobe Experience Manager 6.4는 AEM과 Target 간의 개인화 워크플로를 다시 이미지화합니다. AEM 내에서 만든 경험은 이제 HTML 오퍼로서 Adobe Target에 직접 전달할 수 있습니다. 이를 통해 마케터는 다양한 채널에서 콘텐츠를 원활하게 테스트하고 개인화할 수 있습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/22380?quality=12&learn=on)
 

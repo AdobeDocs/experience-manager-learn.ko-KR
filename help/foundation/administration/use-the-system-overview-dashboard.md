@@ -1,7 +1,7 @@
 ---
 title: AEM에서 시스템 개요 대시보드 사용
-description: 이전 버전의 AEM 관리자는 AEM 인스턴스의 전체 화면을 보기 위해 여러 위치를 확인해야 했습니다. 시스템 개요는 단일 대시보드에서 AEM 인스턴스의 구성, 하드웨어 및 상태를 전체적으로 개괄적으로 살펴봄으로써 이를 해결하기 위한 것입니다.
-version: 6.4, 6.5
+description: 이전 버전의 AEM 관리자는 AEM 인스턴스의 전체 이미지를 가져오려면 여러 위치를 확인해야 했습니다. 시스템 개요는 단일 대시보드에서 AEM 인스턴스의 구성, 하드웨어 및 상태를 전체적으로 개괄적으로 살펴봄으로써 이를 해결하기 위한 것입니다.
+version: Experience Manager 6.4, Experience Manager 6.5
 feature: Operations
 doc-type: Technical Video
 topic: Administration
@@ -9,7 +9,7 @@ role: Admin
 level: Beginner
 exl-id: af8f499c-4955-44b5-8f21-085263ca31a3
 duration: 357
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '142'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # 시스템 개요 대시보드 사용
 
-Adobe Experience Manager(AEM) [!UICONTROL 시스템 개요]에서는 단일 대시보드에서 AEM 인스턴스의 구성, 하드웨어 및 상태에 대한 높은 수준의 보기를 제공합니다.
+Adobe Experience Manager(AEM) [!UICONTROL 시스템 개요]에서는 단일 대시보드에서 AEM 인스턴스의 구성, 하드웨어 및 상태를 전체적으로 자세히 볼 수 있습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/21340?quality=12&learn=on)
 

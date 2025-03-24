@@ -1,8 +1,8 @@
 ---
 title: AEM의 mTLS(Mutual Transport Layer Security) 인증
-description: mTLS(상호 전송 계층 보안) 인증이 필요한 웹 API로 AEM에서 HTTPS를 호출하는 방법에 대해 알아봅니다.
+description: AEM에서 mTLS(Mutual Transport Layer Security) 인증이 필요한 웹 API로 HTTPS를 호출하는 방법을 알아봅니다.
 feature: Security
-version: 6.5, Cloud Service
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 topic: Security, Development
 role: Admin, Architect, Developer
 level: Experienced
@@ -12,7 +12,7 @@ doc-type: Article
 last-substantial-update: 2023-10-10T00:00:00Z
 exl-id: 7238f091-4101-40b5-81d9-87b4d57ccdb2
 duration: 495
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '731'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # AEM의 mTLS(Mutual Transport Layer Security) 인증
 
-mTLS(상호 전송 계층 보안) 인증이 필요한 웹 API로 AEM에서 HTTPS를 호출하는 방법에 대해 알아봅니다.
+AEM에서 mTLS(Mutual Transport Layer Security) 인증이 필요한 웹 API로 HTTPS를 호출하는 방법을 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424855?quality=12&learn=on)
 
@@ -35,7 +35,7 @@ javax.net.ssl.SSLHandshakeException: Received fatal alert: certificate_required
 
 이 문제는 클라이언트가 자신을 인증하기 위한 인증서를 제공하지 않을 때 발생합니다.
 
-[Apache HttpClient](https://hc.apache.org/httpcomponents-client-4.5.x/index.html) 및 **AEM의 KeyStore 및 TrustStore**&#x200B;을(를) 사용하여 mTLS 인증이 필요한 API를 성공적으로 호출하는 방법에 대해 알아보겠습니다.
+[Apache HttpClient](https://hc.apache.org/httpcomponents-client-4.5.x/index.html) 및 **AEM의 KeyStore 및 TrustStore**&#x200B;를 사용하여 mTLS 인증이 필요한 API를 성공적으로 호출하는 방법에 대해 알아보겠습니다.
 
 
 ## HttpClient 및 AEM KeyStore 자료 로드
@@ -122,13 +122,13 @@ AEM 인증서를 가져오려면 아래 단계를 따르십시오.
 
    ![AEM 개인 키 및 인증서 가져옴](assets/mutual-tls-authentication/aem-privatekey-cert-imported.png)
 
-API 공급자가 자체 서명된 CA 인증서를 사용하는 경우 받은 인증서를 AEM의 TrustStore로 가져오려면 [여기](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/call-internal-apis-having-private-certificate.html#httpclient-and-load-aem-truststore-material)의 단계를 따릅니다.
+API 공급자가 자체 서명된 CA 인증서를 사용하는 경우 받은 인증서를 AEM의 TrustStore로 가져와서 [여기](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/call-internal-apis-having-private-certificate.html#httpclient-and-load-aem-truststore-material)의 단계를 따릅니다.
 
 마찬가지로, AEM에서 자체 서명된 CA 인증서를 사용하는 경우 API 공급자에게 가져오도록 요청합니다.
 
 ### HttpClient를 사용한 프로토타입 mTLS API 호출 코드
 
-아래와 같이 Java™ 코드를 업데이트합니다. `@Reference` 주석을 사용하여 AEM의 `KeyStoreService` 서비스를 가져오려면 호출 코드가 OSGi 구성 요소/서비스이거나 Sling 모델이어야 합니다(여기에서 `@OsgiService`이(가) 사용됨).
+아래와 같이 Java™ 코드를 업데이트합니다. `@Reference` 주석을 사용하여 AEM의 `KeyStoreService` 서비스를 가져오려면 호출 코드가 OSGi 구성 요소/서비스이거나 Sling 모델이어야 합니다(여기서 `@OsgiService`이(가) 사용됨).
 
 
 ```java
@@ -214,7 +214,7 @@ private KeyStore getAEMTrustStore(KeyStoreService keyStoreService, ResourceResol
 
 - OSGi 구성 요소에 OOTB `com.adobe.granite.keystore.KeyStoreService` OSGi 서비스를 삽입합니다.
 - `KeyStoreService` 및 `ResourceResolver`을(를) 사용하여 사용자의 AEM KeyStore를 가져옵니다. `getAEMKeyStore(...)` 메서드가 이를 수행합니다.
-- API 공급자가 자체 서명된 CA 인증서를 사용하는 경우 전역 AEM TrustStore를 가져오면 `getAEMTrustStore(...)` 메서드가 이를 수행합니다.
+- API 공급자가 자체 서명된 CA 인증서를 사용하는 경우 `getAEMTrustStore(...)` 메서드에서 전역 AEM TrustStore를 가져옵니다.
 - `SSLContextBuilder`의 개체를 만듭니다. Java™ [API 세부 정보](https://javadoc.io/static/org.apache.httpcomponents/httpcore/4.4.8/index.html?org/apache/http/ssl/SSLContextBuilder.html)를 참조하십시오.
 - `loadKeyMaterial(final KeyStore keystore,final char[] keyPassword)` 메서드를 사용하여 사용자의 AEM KeyStore를 `SSLContextBuilder`에 로드합니다.
 - 키 저장소 암호는 키 저장소를 만들 때 설정된 암호이며 OSGi 구성에 저장해야 합니다. [암호 구성 값](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#secret-configuration-values)을 참조하십시오.
@@ -223,10 +223,10 @@ private KeyStore getAEMTrustStore(KeyStoreService keyStoreService, ResourceResol
 
 개인 인증서로 mTLS API를 효과적으로 호출하는 기존 접근 방법에는 JVM 키 저장소 수정이 포함됩니다. Java™ [keytool](https://docs.oracle.com/en/java/javase/11/tools/keytool.html#GUID-5990A2E4-78E3-47B7-AE75-6D1826259549) 명령을 사용하여 개인 인증서를 가져오면 됩니다.
 
-그러나 이 방법은 보안 모범 사례와 일치하지 않으며 AEM은 **사용자별 KeyStores 및 전역 TrustStore** 및 [KeyStoreService](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/adobe/granite/keystore/KeyStoreService.html)을(를) 활용하여 더 나은 옵션을 제공합니다.
+그러나 이 방법은 보안 모범 사례와 일치하지 않으며 AEM은 **사용자별 KeyStore 및 글로벌 TrustStore** 및 [KeyStoreService](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/adobe/granite/keystore/KeyStoreService.html)을(를) 활용하여 더 나은 옵션을 제공합니다.
 
 ## 솔루션 패키지
 
 비디오에서 데모된 샘플 Node.js 프로젝트는 [여기](assets/internal-api-call/REST-APIs.zip)에서 다운로드할 수 있습니다.
 
-AEM 서블릿 코드는 WKND Sites 프로젝트의 `tutorial/web-api-invocation` 분기 [see](https://github.com/adobe/aem-guides-wknd/tree/tutorial/web-api-invocation/core/src/main/java/com/adobe/aem/guides/wknd/core/servlets)에서 사용할 수 있습니다.
+AEM 서블릿 코드는 WKND Sites 프로젝트의 `tutorial/web-api-invocation` 분기 [참조](https://github.com/adobe/aem-guides-wknd/tree/tutorial/web-api-invocation/core/src/main/java/com/adobe/aem/guides/wknd/core/servlets)에서 사용할 수 있습니다.

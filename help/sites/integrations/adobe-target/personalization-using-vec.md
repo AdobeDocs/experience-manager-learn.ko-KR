@@ -1,7 +1,7 @@
 ---
 title: 시각적 경험 작성기를 사용한 Personalization
 description: 시각적 경험 작성기를 사용하여 Adobe Target 활동을 만드는 방법을 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 jira: KT-6352
 thumbnail: 6352-personalization-using-vec.jpg
 topic: Integrations
@@ -9,11 +9,11 @@ feature: Integrations
 role: Developer
 level: Intermediate
 badgeIntegration: label="통합" type="positive"
-badgeVersions: label="AEM Sites as a Cloud Service AEM Sites 6.5" before-title="false"
+badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 doc-type: Tutorial
 exl-id: becf2bed-0541-45e8-9ce2-f9fb023234e0
 duration: 101
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 0%
@@ -39,7 +39,7 @@ WKND 사이트 홈 페이지에는 로컬 활동 또는 도시 주변에서 수�
 
 1. [Adobe Experience Cloud](https://experience.adobe.com/)에 로그인하고 __Target__&#x200B;을 탭하고 __활동__ 탭으로 이동합니다.
 
-   + Experience Cloud 대시보드에 __Target__&#x200B;이 표시되지 않는 경우 오른쪽 상단의 조직 전환기에서 올바른 Adobe 조직이 선택되어 있고 해당 사용자에게 [Adobe Admin Console](https://adminconsole.adobe.com/)의 Target에 대한 액세스 권한이 부여되었는지 확인하십시오.
+   + Experience Cloud 대시보드에 __Target__&#x200B;이 표시되지 않으면 오른쪽 상단의 조직 전환기에서 올바른 Adobe 조직이 선택되었는지, 해당 사용자에게 [Adobe Admin Console](https://adminconsole.adobe.com/)의 Target에 대한 액세스 권한이 부여되었는지 확인하십시오.
 
 1. **활동 만들기** 단추를 클릭한 다음 **A/B 테스트** 활동을 선택하십시오.
 
@@ -53,7 +53,7 @@ WKND 사이트 홈 페이지에는 로컬 활동 또는 도시 주변에서 수�
 
    ![경험 A](assets/experience.png)
 
-1. 페이지에서 이미지 또는 텍스트를 선택하여 수정을 시작하거나 코드 편집기를 사용하여 요소를 선택하고 HTML 할 수 있습니다.
+1. 페이지에서 이미지 또는 텍스트를 선택하여 수정을 시작하거나 코드 편집기를 사용하여 HTML 요소를 선택하고 사용할 수 있습니다.
 
    ![요소](assets/select-element.png)
 

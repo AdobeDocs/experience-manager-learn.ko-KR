@@ -1,7 +1,7 @@
 ---
 title: React 앱 - AEM Headless 예
-description: 예제 애플리케이션은 AEM(Adobe Experience Manager)의 Headless 기능을 살펴볼 수 있는 좋은 방법입니다. 이 React 애플리케이션은 지속 쿼리를 사용하여 AEM의 GraphQL API를 사용하여 콘텐츠를 쿼리하는 방법을 보여 줍니다.
-version: Cloud Service
+description: 예제 애플리케이션은 Adobe Experience Manager(AEM)의 Headless 기능을 살펴볼 수 있는 좋은 방법입니다. 이 React 애플리케이션은 지속 쿼리를 사용하여 AEM의 GraphQL API를 사용하여 콘텐츠를 쿼리하는 방법을 보여 줍니다.
+version: Experience Manager as a Cloud Service
 mini-toc-levels: 1
 jira: KT-10715
 thumbnail: KT-10715.jpg
@@ -11,9 +11,9 @@ role: Developer
 level: Beginner
 last-substantial-update: 2023-05-10T00:00:00Z
 exl-id: b1ab2a13-8b0e-4d7f-82b5-78b1dda248ba
-badgeVersions: label="AEM as a Cloud Service Headless" before-title="false"
+badgeVersions: label="AEM 헤드리스 as a Cloud Service" before-title="false"
 duration: 256
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 # React 앱{#react-app}
 
-예제 애플리케이션은 AEM(Adobe Experience Manager)의 Headless 기능을 살펴볼 수 있는 좋은 방법입니다. 이 React 애플리케이션은 지속 쿼리를 사용하여 AEM의 GraphQL API를 사용하여 콘텐츠를 쿼리하는 방법을 보여 줍니다. JavaScript용 AEM Headless 클라이언트는 앱을 구동하는 GraphQL 지속 쿼리를 실행하는 데 사용됩니다.
+예제 애플리케이션은 Adobe Experience Manager(AEM)의 Headless 기능을 살펴볼 수 있는 좋은 방법입니다. 이 React 애플리케이션은 지속 쿼리를 사용하여 AEM의 GraphQL API를 사용하여 콘텐츠를 쿼리하는 방법을 보여 줍니다. JavaScript용 AEM Headless 클라이언트는 앱을 구동하는 GraphQL 지속 쿼리를 실행하는 데 사용됩니다.
 
 ![AEM Headless로 앱 반응](./assets/react-app/react-app.png)
 
@@ -39,13 +39,13 @@ GitHub에서 [소스 코드 보기](https://github.com/adobe/aem-guides-wknd-gra
 
 ## AEM 요구 사항
 
-React 응용 프로그램은 다음 AEM 배포 옵션과 함께 작동합니다. 모든 배포를 사용하려면 [WKND 사이트 v3.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest)을(를) 설치해야 합니다.
+React 애플리케이션은 다음 AEM 배포 옵션과 함께 작동합니다. 모든 배포를 사용하려면 [WKND 사이트 v3.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest)을(를) 설치해야 합니다.
 
 + [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
-+ [AEM Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=ko-KR)를 사용하여 로컬 설정
++ [AEM 클라우드 서비스 SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=ko)을 사용하여 로컬 설정
    + [JDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atoling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14) 필요
 
-React 응용 프로그램은 __AEM Publish__ 환경에 연결하도록 디자인되었지만 React 응용 프로그램의 구성에서 인증을 제공하는 경우 AEM 작성자의 콘텐츠를 소싱할 수 있습니다.
+React 응용 프로그램은 __AEM 게시__ 환경에 연결하도록 디자인되었지만 React 응용 프로그램의 구성에서 인증을 제공하는 경우 AEM 작성자의 콘텐츠를 소싱할 수 있습니다.
 
 ## 사용 방법
 
@@ -91,7 +91,7 @@ React 응용 프로그램은 __AEM Publish__ 환경에 연결하도록 디자인
 
 ## 코드
 
-다음은 React 애플리케이션이 빌드되는 방법, AEM Headless에 연결하여 GraphQL 지속 쿼리를 사용하여 콘텐츠를 검색하는 방법 및 해당 데이터를 제공하는 방법에 대한 요약입니다. 전체 코드는 [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app)에서 찾을 수 있습니다.
+다음은 React 애플리케이션이 빌드되는 방법, AEM 지속 쿼리를 사용하여 콘텐츠를 검색하기 위해 GraphQL Headless에 연결하는 방법 및 해당 데이터가 표시되는 방법에 대한 요약입니다. 전체 코드는 [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app)에서 찾을 수 있습니다.
 
 
 ### 지속 쿼리
@@ -211,7 +211,7 @@ query ($slug: String!, $imageFormat:AssetTransformFormat=JPG, $imageSeoName: Str
 
 ### GraphQL 지속 쿼리 실행
 
-AEM의 지속 쿼리는 HTTP GET을 통해 실행되므로, [JavaScript용 AEM Headless 클라이언트](https://github.com/adobe/aem-headless-client-js)를 사용하여 AEM에 대해 [지속 GraphQL 쿼리를 실행](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md#aemheadlessrunpersistedquerypath-variables-options--promiseany)하고 어드벤처 콘텐츠를 앱에 로드합니다.
+AEM의 지속 쿼리는 HTTP GET을 통해 실행되므로, JavaScript용 [AEM Headless 클라이언트](https://github.com/adobe/aem-headless-client-js)를 사용하여 AEM에 대해 [지속 GraphQL 쿼리를 실행](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md#aemheadlessrunpersistedquerypath-variables-options--promiseany)하고 어드벤처 콘텐츠를 앱에 로드합니다.
 
 각 지속 쿼리에는 AEM HTTP GET 지속 쿼리 끝점을 비동기적으로 호출하고 모험 데이터를 반환하는 `src/api/usePersistedQueries.js`의 해당 React [useEffect](https://reactjs.org/docs/hooks-effect.html) 후크가 있습니다.
 
@@ -293,16 +293,16 @@ React 애플리케이션은 두 개의 뷰를 사용하여 웹 경험에 어드�
 
 ### 환경 변수
 
-AEM 환경에 연결하는 데 여러 [환경 변수](https://create-react-app.dev/docs/adding-custom-environment-variables)가 사용됩니다. 기본적으로 `http://localhost:4503`에서 실행 중인 AEM Publish에 연결합니다. `.env.development` 파일을 업데이트하여 AEM 연결 변경:
+여러 [환경 변수](https://create-react-app.dev/docs/adding-custom-environment-variables)를 사용하여 AEM 환경에 연결합니다. 기본적으로 `http://localhost:4503`에서 실행 중인 AEM Publish에 연결합니다. `.env.development` 파일을 업데이트하여 AEM 연결 변경:
 
 + `REACT_APP_HOST_URI=https://publish-p123-e456.adobeaemcloud.com`: AEM 대상 호스트로 설정합니다.
 + `REACT_APP_GRAPHQL_ENDPOINT=/content/graphql/global/endpoint.json`: GraphQL 끝점 경로를 설정합니다. 이 앱은 지속 쿼리만 사용하므로 이 React 앱에서는 사용되지 않습니다.
 + `REACT_APP_AUTH_METHOD=`: 기본 인증 방법입니다. 선택 사항이며, 기본적으로 인증이 사용되지 않습니다.
    + `service-token`: 서비스 자격 증명을 사용하여 AEM as a Cloud Service에서 액세스 토큰을 얻습니다.
    + `dev-token`: AEM as a Cloud Service에서 로컬 개발에 개발 토큰 사용
-   + `basic`: 로컬 AEM 작성자와 로컬 개발에 사용자/패스 사용
+   + `basic`: 로컬 AEM 작성자와 함께 로컬 개발에 사용자/패스 사용
    + 인증 없이 AEM에 연결하려면 비워 둡니다.
-+ `REACT_APP_AUTHORIZATION=admin:admin`: AEM 작성자 환경에 연결할 때 사용할 기본 인증 자격 증명을 설정합니다(개발용으로만 사용). Publish 환경에 연결하는 경우에는 이 설정이 필요하지 않습니다.
++ `REACT_APP_AUTHORIZATION=admin:admin`: AEM 작성자 환경에 연결할 때 사용할 기본 인증 자격 증명을 설정합니다(개발용으로만 사용). 게시 환경에 연결하는 경우에는 이 설정이 필요하지 않습니다.
 + `REACT_APP_DEV_TOKEN`: 개발 토큰 문자열입니다. 기본 인증(user:pass) 이외의 원격 인스턴스에 연결하려면 클라우드 콘솔의 DEV 토큰과 함께 Bearer 인증을 사용할 수 있습니다
 + `REACT_APP_SERVICE_TOKEN`: 서비스 자격 증명 파일의 경로입니다. 원격 인스턴스에 연결하려면 서비스 토큰(Developer Console에서 파일 다운로드)을 사용하여 인증을 수행할 수도 있습니다.
 

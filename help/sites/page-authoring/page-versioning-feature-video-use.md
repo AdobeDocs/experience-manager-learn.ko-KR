@@ -1,7 +1,7 @@
 ---
-title: AEM 사이트 페이지에 대한 페이지 버전 생성
+title: AEM 사이트 페이지에 대한 페이지 버전 만들기
 description: 다음 비디오에서는 페이지 버전을 만들고, 미리 보고, 페이지 버전을 복원하고, 현재 페이지 버전을 저장된 페이지 버전과 비교하는 방법을 강조합니다.
-version: 6.4, 6.5, Cloud Service
+version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 jira: KT-4630
 thumbnail: 32151.jpg
 topic: Content Management
@@ -11,7 +11,7 @@ level: Beginner
 doc-type: Feature Video
 exl-id: cc659581-031d-4f2a-90c1-cf721e481689
 duration: 288
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 5%

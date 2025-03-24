@@ -1,7 +1,7 @@
 ---
 title: AEM Sites에서 구성 요소 콘솔 사용
 description: 구성 요소 콘솔은 개발자 및 관리자에게 사이트 구현의 다양한 구성 요소를 모두 관리할 수 있는 중앙 위치를 제공합니다. 다음 비디오에서는 구성 요소 콘솔의 기능에 대해 자세히 설명합니다.
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 feature: Core Components
 topic: Content Management
 role: User
@@ -9,7 +9,7 @@ level: Intermediate
 doc-type: Feature Video
 exl-id: 6f33f121-5564-4c46-ab56-7ea382a0ab5a
 duration: 224
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 1%

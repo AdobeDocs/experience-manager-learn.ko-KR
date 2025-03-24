@@ -1,7 +1,7 @@
 ---
 title: AEM Assets에서 계단식 메타데이터 사용
 description: 고급 메타데이터 관리를 사용하면 계단식 필드 규칙을 만들어 AEM Assets의 메타데이터 간에 상황별 관계를 형성할 수 있습니다. 아래 비디오에서는 필드 요구 사항, 가시성 및 상황별 선택 사항에 대한 새로운 동적 규칙을 보여 줍니다. 이 비디오에서는 관리자가 이러한 규칙을 사용자 지정 메타데이터 스키마에 적용하는 데 필요한 단계도 자세히 설명합니다.
-version: 6.4, 6.5, Cloud Service
+version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 topic: Content Management
 feature: Metadata
 role: User
@@ -12,7 +12,7 @@ last-substantial-update: 2022-06-08T00:00:00Z
 doc-type: Feature Video
 exl-id: 73e793e0-a20e-4954-ba1a-471b2cd85120
 duration: 345
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '190'
 ht-degree: 0%

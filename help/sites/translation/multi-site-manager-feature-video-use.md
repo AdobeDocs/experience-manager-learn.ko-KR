@@ -2,14 +2,14 @@
 title: AEM Sites에서 다중 사이트 관리자 사용
 description: 라이브 카피 개요 및 블루프린트 구성 관리자는 다중 사이트 관리자 작업을 위한 Touch UI 사용 인터페이스입니다.
 feature: Multi Site Manager
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Localization
 role: User
 level: Beginner
 doc-type: Feature Video
 exl-id: 00746678-da23-4d0a-b775-e1de4ed87c56
 duration: 507
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '124'
 ht-degree: 4%
@@ -18,7 +18,7 @@ ht-degree: 4%
 
 # 다중 사이트 관리자 사용 {#using-multi-site-manager-with-aem-sites}
 
-Live Copy 개요 및 블루프린트 구성 관리자는 Adobe Experience Manager Sites에서 [다중 사이트 관리자](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/msm-and-translation.html)와(과) 함께 작업하기 위한 AEM 작성자 인터페이스입니다.
+Live Copy 개요 및 블루프린트 구성 관리자는 AEM에서 [다중 사이트 관리자](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/msm-and-translation.html)와(과) 함께 작업하기 위한 Adobe Experience Manager Sites 작성자 인터페이스입니다.
 
 ## Live Copy 개요 {#live-copy-overview}
 

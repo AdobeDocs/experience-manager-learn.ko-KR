@@ -1,7 +1,7 @@
 ---
 title: AEM Sites 시작하기 - 구성 요소 기본 사항
-description: 간단한 'HelloWorld' 예제를 통해 Adobe Experience Manager(AEM) Sites 구성 요소의 기본 기술을 이해합니다. HTL, Sling 모델, 클라이언트측 라이브러리 및 작성자 대화 상자의 주제를 살펴봅니다.
-version: 6.5, Cloud Service
+description: 간단한 'HelloWorld' 예제를 통해 Adobe Experience Manager(AEM) 사이트 구성 요소의 기본 기술을 이해합니다. HTL, Sling 모델, 클라이언트측 라이브러리 및 작성자 대화 상자의 주제를 살펴봅니다.
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: Core Components, Developer Tools
 topic: Content Management, Development
 role: Developer
@@ -13,7 +13,7 @@ doc-type: Tutorial
 exl-id: 7fd021ef-d221-4113-bda1-4908f3a8629f
 recommendations: noDisplay, noCatalog
 duration: 1715
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 # 구성 요소 기본 사항 {#component-basics}
 
-이 장에서는 간단한 `HelloWorld` 예제를 통해 Adobe Experience Manager(AEM) Sites 구성 요소의 기본 기술을 살펴보겠습니다. 작성, HTL, 슬링 모델, 클라이언트측 라이브러리 등의 주제를 다루는 기존 구성 요소는 약간 수정됩니다.
+이 장에서는 간단한 `HelloWorld` 예제를 통해 Adobe Experience Manager(AEM) Sites 구성 요소의 기본 기술에 대해 살펴보겠습니다. 작성, HTL, 슬링 모델, 클라이언트측 라이브러리 등의 주제를 다루는 기존 구성 요소는 약간 수정됩니다.
 
 ## 사전 요구 사항 {#prerequisites}
 
@@ -112,7 +112,7 @@ HTML 템플릿 언어 또는 **[HTL](https://experienceleague.adobe.com/docs/exp
 
 1. IDE로 전환하고 프로젝트를 `ui.apps` 모듈로 엽니다.
 1. `helloworld.html` 파일을 열고 HTML 마크업을 업데이트합니다.
-1. 파일 변경 내용을 로컬 AEM 인스턴스와 동기화하려면 [VSCode AEM 동기화](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync)와 같은 IDE 도구를 사용하십시오.
+1. [VSCode AEM 동기화](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync)와 같은 IDE 도구를 사용하여 파일 변경 내용을 로컬 AEM 인스턴스와 동기화합니다.
 1. 브라우저로 돌아가서 구성 요소 렌더링이 변경되었는지 확인합니다.
 1. 다음 위치에서 `HelloWorld` 구성 요소에 대한 대화 상자를 정의하는 `.content.xml` 파일을 엽니다.
 
@@ -172,7 +172,7 @@ HTML 템플릿 언어 또는 **[HTL](https://experienceleague.adobe.com/docs/exp
 
 ## Sling 모델 {#sling-models}
 
-Sling 모델은 JCR에서 Java™ 변수로 데이터를 쉽게 매핑하는 주석 기반 Java™ &quot;POJO&quot;(일반 이전 Java™ 개체)입니다. 또한 AEM의 컨텍스트에서 개발할 때 몇 가지 다른 좋은 점을 제공합니다.
+Sling 모델은 JCR에서 Java™ 변수로 데이터를 쉽게 매핑하는 주석 기반 Java™ &quot;POJO&quot;(일반 이전 Java™ 개체)입니다. 또한 AEM의 컨텍스트에서 개발할 때 몇 가지 다른 이점을 제공합니다.
 
 다음으로 `HelloWorldModel` Sling 모델을 업데이트하여 JCR에 저장된 값에 비즈니스 논리를 적용한 후 페이지에 출력해 보겠습니다.
 
@@ -279,7 +279,7 @@ Sling 모델은 JCR에서 Java™ 변수로 데이터를 쉽게 매핑하는 주
    </div>
    ```
 
-1. Eclipse Developer 플러그인을 사용하거나 Maven 기술을 사용하여 변경 사항을 AEM의 로컬 인스턴스에 배포합니다.
+1. Eclipse 개발자 플러그인을 사용하거나 Maven 기술을 사용하여 변경 사항을 AEM의 로컬 인스턴스에 배포합니다.
 
 ## 클라이언트측 라이브러리 {#client-side-libraries}
 
@@ -295,7 +295,7 @@ Sling 모델은 JCR에서 Java™ 변수로 데이터를 쉽게 매핑하는 주
 
 1. 터미널 창을 열고 `ui.frontend` 디렉터리로 이동합니다.
 
-1. `ui.frontend` 디렉터리에 있는 동안 `npm install npm-run-all --save-dev` 명령을 실행하여 [npm-run-all](https://www.npmjs.com/package/npm-run-all) 노드 모듈을 설치합니다. 이 단계는 **Archetype 39에서 생성된 AEM 프로젝트에 필요합니다**. 향후 Archetype 버전에서는 필요하지 않습니다.
+1. `ui.frontend` 디렉터리에 있는 동안 `npm install npm-run-all --save-dev` 명령을 실행하여 [npm-run-all](https://www.npmjs.com/package/npm-run-all) 노드 모듈을 설치합니다. 이 단계는 **Archetype 39에서 생성한 AEM 프로젝트**&#x200B;에 필요합니다. 향후 Archetype 버전에서는 필요하지 않습니다.
 
 1. 그런 다음 `npm run watch` 명령을 실행합니다.
 
@@ -314,7 +314,7 @@ Sling 모델은 JCR에서 Java™ 변수로 데이터를 쉽게 매핑하는 주
    }
    ```
 
-1. 터미널에 `ui.frontend` 모듈이 컴파일되고 변경 내용을 AEM의 로컬 인스턴스와 동기화하고 있음을 나타내는 활동이 표시됩니다.
+1. 터미널에는 `ui.frontend` 모듈이 컴파일되고 변경 내용을 AEM의 로컬 인스턴스와 동기화하고 있음을 나타내는 활동이 표시됩니다.
 
    ```shell
    Entrypoint site 214 KiB = clientlib-site/site.css 8.45 KiB clientlib-site/site.js 206 KiB

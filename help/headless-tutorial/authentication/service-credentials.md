@@ -1,7 +1,7 @@
 ---
 title: 서비스 자격 증명
-description: 외부 애플리케이션, 시스템 및 서비스가 HTTP를 통해 작성자 또는 Publish 서비스와 프로그래밍 방식으로 상호 작용하는 데 사용되는 서비스 자격 증명을 사용하는 방법에 대해 알아봅니다.
-version: Cloud Service
+description: 외부 애플리케이션, 시스템 및 서비스가 HTTP를 통해 작성자 또는 게시 서비스와 프로그래밍 방식으로 상호 작용하는 데 사용되는 서비스 자격 증명을 사용하는 방법에 대해 알아봅니다.
+version: Experience Manager as a Cloud Service
 feature: APIs
 jira: KT-6785
 thumbnail: 330519.jpg
@@ -12,7 +12,7 @@ last-substantial-update: 2023-01-12T00:00:00Z
 doc-type: Tutorial
 exl-id: e2922278-4d0b-4f28-a999-90551ed65fb4
 duration: 881
-source-git-commit: 1a745f4b11007df5636c2fc0bea05d56393ef9c6
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1963'
 ht-degree: 0%
@@ -21,9 +21,9 @@ ht-degree: 0%
 
 # 서비스 자격 증명
 
-AEM as a Cloud Service(Adobe Experience Manager)과의 통합을 통해 AEM 서비스를 안전하게 인증할 수 있어야 합니다. AEM의 Developer Console은 외부 애플리케이션, 시스템 및 서비스가 HTTP를 통해 AEM 작성자 또는 Publish 서비스와 프로그래밍 방식으로 상호 작용하는 데 사용되는 서비스 자격 증명에 대한 액세스 권한을 부여합니다.
+Adobe Experience Manager(AEM) as a Cloud Service과의 통합은 AEM 서비스를 안전하게 인증할 수 있어야 합니다. AEM의 Developer Console은 외부 애플리케이션, 시스템 및 서비스가 HTTP를 통해 AEM 작성자 또는 게시 서비스와 프로그래밍 방식으로 상호 작용하는 데 사용되는 서비스 자격 증명에 대한 액세스 권한을 부여합니다.
 
-AEM은 Adobe Developer Console을 통해 관리되는 [S2S OAuth](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)를 사용하여 다른 Adobe 제품과 통합됩니다. 서비스 계정과 사용자 정의 통합의 경우 AEM Developer Console에서 JWT 자격 증명이 사용되고 관리됩니다.
+AEM은 Adobe Developer Console을 통해 관리되는 [S2S OAuth](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)를 사용하여 다른 Adobe 제품과 통합됩니다. 서비스 계정과의 사용자 정의 통합을 위해 AEM Developer Console에서 JWT 자격 증명을 사용 및 관리합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330519?quality=12&learn=on)
 
@@ -46,7 +46,7 @@ AEM은 Adobe Developer Console을 통해 관리되는 [S2S OAuth](https://experi
 
 ### 기술 계정 만들기
 
-로컬 개발 액세스 토큰과 달리 서비스 자격 증명은 다운로드하기 전에 Adobe 조직 IMS 관리자가 기술 계정을 만들어야 합니다. AEM에 프로그래밍 방식으로 액세스해야 하는 각 클라이언트에 대해 개별 기술 계정을 만들어야 합니다.
+로컬 개발 액세스 토큰과 달리 서비스 자격 증명은 Adobe 조직 IMS 관리자가 기술 계정을 만든 후에 다운로드해야 합니다. AEM에 프로그래밍 방식으로 액세스해야 하는 각 클라이언트에 대해 개별 기술 계정을 만들어야 합니다.
 
 ![기술 계정 만들기](assets/service-credentials/initialize-service-credentials.png)
 
@@ -88,7 +88,7 @@ AEM as Cloud Service 환경의 서비스 자격 증명이 초기화되면 Adobe 
 
 ## 서비스 자격 증명 설치
 
-서비스 자격 증명은 AEM as a Cloud Service 인증에 사용되는 액세스 토큰으로 교환되는 JWT를 생성하는 데 필요한 세부 정보를 제공합니다. 서비스 자격 증명은 AEM에 액세스하는 데 사용하는 외부 응용 프로그램, 시스템 또는 서비스에서 액세스할 수 있는 보안 위치에 저장해야 합니다. 서비스 자격 증명을 관리하는 방법 및 위치는 고객별로 다릅니다.
+서비스 자격 증명은 AEM as a Cloud Service 인증에 사용되는 액세스 토큰으로 교환되는 JWT를 생성하는 데 필요한 세부 정보를 제공합니다. 서비스 자격 증명은 AEM에 액세스하는 데 사용하는 외부 애플리케이션, 시스템 또는 서비스에서 액세스할 수 있는 안전한 위치에 저장해야 합니다. 서비스 자격 증명을 관리하는 방법 및 위치는 고객별로 다릅니다.
 
 간소화를 위해 이 자습서에서는 명령줄을 통해 의 서비스 자격 증명을 전달합니다. 그러나 IT 보안 팀과 협력하여 조직의 보안 지침에 따라 이러한 자격 증명을 저장하고 액세스하는 방법을 이해하십시오.
 
@@ -186,7 +186,7 @@ function getCommandLineParams() {
     
     서비스 자격 증명이 365일마다 만료되는 동안 JWT 및 해당 액세스 토큰은 자주 만료되며 만료되기 전에 새로 고쳐야 합니다. Adobe IMS에서 제공하는 &#39;refresh_token&#39;(https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/OAuth/OAuth.md)을 사용하면 됩니다#access-tokens
 
-1. 이러한 변경 사항이 적용되면 AEM Developer Console에서 서비스 자격 증명 JSON이 다운로드되어 이 `index.js`과(와) 동일한 폴더에 `service_token.json`(으)로 저장되었습니다. 이제 응용 프로그램을 실행하여 명령줄 매개 변수 `file`을(를) `service_token.json`(으)로 바꾸고, AEM에서 효과가 나타나도록 `propertyValue`을(를) 새 값으로 업데이트하겠습니다.
+1. 이러한 변경 사항이 적용되면 AEM Developer Console에서 서비스 자격 증명 JSON이 다운로드되어 이 `index.js`과(와) 동일한 폴더에 `service_token.json`(으)로 저장되었습니다. 이제 응용 프로그램을 실행하여 명령줄 매개 변수 `file`을(를) `service_token.json`(으)로 바꾸고 AEM에서 효과가 나타나도록 `propertyValue`을(를) 새 값으로 업데이트하겠습니다.
 
    ```shell
    $ node index.js \
@@ -209,11 +209,11 @@ function getCommandLineParams() {
 
    __403 - 금지됨__ 줄은 AEM as a Cloud Service에 대한 HTTP API 호출의 오류를 나타냅니다. 이 403 금지된 오류는 에셋의 메타데이터를 업데이트하려고 할 때 발생합니다.
 
-   그 이유는 서비스 자격 증명에서 파생된 액세스 토큰이 자동으로 생성된 기술 계정 AEM 사용자를 사용하여 AEM에 대한 요청을 인증하기 때문이며, 기본적으로 읽기 액세스 권한만 있습니다. 응용 프로그램에 AEM에 대한 쓰기 액세스 권한을 제공하려면 액세스 토큰과 연결된 기술 계정 AEM 사용자에게 AEM에서 권한이 부여되어야 합니다.
+   그 이유는 서비스 자격 증명에서 파생된 액세스 토큰이 자동으로 만든 기술 계정 AEM 사용자를 사용하여 AEM에 대한 요청을 인증하며, 기본적으로 읽기 액세스만 가능하기 때문입니다. AEM에 애플리케이션 쓰기 액세스 권한을 제공하려면 액세스 토큰과 연결된 기술 계정 AEM 사용자에게 AEM에서 권한이 부여되어야 합니다.
 
 ## AEM에서 액세스 구성
 
-서비스 자격 증명에서 파생된 액세스 토큰은 __기여자__ AEM 사용자 그룹에 멤버십이 있는 기술 계정 AEM 사용자를 사용합니다.
+서비스 자격 증명에서 파생된 액세스 토큰은 __기여자__ AEM 사용자 그룹의 구성원이 있는 기술 계정 AEM 사용자를 사용합니다.
 
 ![서비스 자격 증명 - 기술 계정 AEM 사용자](./assets/service-credentials/technical-account-user.png)
 
@@ -224,7 +224,7 @@ function getCommandLineParams() {
 1. __도구__ > __보안__ > __사용자__(으)로 이동
 1. 1단계에서 식별된 __로그인 이름__&#x200B;을 사용하는 AEM 사용자를 찾아 해당 __속성__&#x200B;을 엽니다.
 1. __그룹__ 탭으로 이동하여 __DAM 사용자__ 그룹(에셋에 대한 쓰기 액세스 권한으로 사용)을 추가합니다.
-   + [AEM에서 제공한 사용자 그룹 목록을 확인](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#built-in-users-and-groups)하여 최적의 사용 권한을 얻으려면 서비스 사용자를에 추가하십시오. 충분한 AEM 제공 사용자 그룹이 없는 경우 고유한 사용자 그룹을 만들고 적절한 권한을 추가합니다.
+   + 최적의 사용 권한을 얻으려면 [AEM에서 제공한 사용자 그룹 목록을](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#built-in-users-and-groups)에 추가하십시오. AEM에서 제공한 사용자 그룹으로 충분하지 않은 경우 직접 만들고 적절한 권한을 추가합니다.
 1. __저장 후 닫기__ 탭
 
 AEM에서 자산에 대한 쓰기 권한을 가질 수 있는 기술 계정을 사용하여 애플리케이션을 다시 실행하십시오.

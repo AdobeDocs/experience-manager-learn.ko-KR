@@ -1,15 +1,15 @@
 ---
 title: AEM Assets Dynamic Media에서 파노라마 및 세로 이미지 뷰어 사용
-description: AEM 6.4의 Dynamic Media 뷰어 개선 사항에는 파노라마 이미지 뷰어, 파노라마 가상 현실 이미지 뷰어 및 수직 이미지 뷰어의 추가 기능이 포함됩니다. Panoramic Viewer는 사용자 정의 개발 없이도 실내, 숙소, 위치 또는 환경에 대한 매력적이고 몰입 경험을 제공하는 손쉬운 방법을 제공합니다.
+description: AEM 6.4의 Dynamic Media 뷰어 개선 사항에는 파노라마 이미지 뷰어, 파노라마 Virtual Reality 이미지 뷰어 및 수직 이미지 뷰어가 포함됩니다. Panoramic Viewer는 사용자 정의 개발 없이도 실내, 숙소, 위치 또는 환경에 대한 매력적이고 몰입 경험을 제공하는 손쉬운 방법을 제공합니다.
 feature: Video Profiles, Video Profiles, 360 VR Video
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Content Management
 role: User
 level: Beginner
 doc-type: Feature Video
 exl-id: 6b2f7533-8ce0-4134-b1ae-b3c5d15a05e6
 duration: 535
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 0%
@@ -18,13 +18,13 @@ ht-degree: 0%
 
 # AEM Assets Dynamic Media에서 파노라마 및 세로 이미지 뷰어 사용{#using-panorama-and-vertical-image-viewer-with-aem-assets-dynamic-media}
 
-AEM 6.4의 Dynamic Media 뷰어 개선 사항에는 파노라마 이미지 뷰어, 파노라마 가상 현실 이미지 뷰어 및 수직 이미지 뷰어의 추가 기능이 포함됩니다. Panoramic Viewer는 사용자 정의 개발 없이도 실내, 숙소, 위치 또는 환경에 대한 매력적이고 몰입 경험을 제공하는 손쉬운 방법을 제공합니다.
+AEM 6.4의 Dynamic Media 뷰어 개선 사항에는 파노라마 이미지 뷰어, 파노라마 Virtual Reality 이미지 뷰어 및 수직 이미지 뷰어가 포함됩니다. Panoramic Viewer는 사용자 정의 개발 없이도 실내, 숙소, 위치 또는 환경에 대한 매력적이고 몰입 경험을 제공하는 손쉬운 방법을 제공합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/24156?quality=12&learn=on)
 
 >[!NOTE]
 >
->이 비디오에서는 AEM 인스턴스가 Dynamic Media S7 모드에서 실행 중이라고 가정합니다. [Dynamic Media에서 AEM 설정에 대한 지침은 여기에서 확인할 수 있습니다.](https://helpx.adobe.com/kr/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
+>이 비디오에서는 AEM 인스턴스가 Dynamic Media S7 모드에서 실행 중이라고 가정합니다. [Dynamic Media를 사용하여 AEM을 설정하는 방법에 대한 지침은 여기에서 확인할 수 있습니다.](https://helpx.adobe.com/kr/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
 
 ## 파노라마 및 파노라마 VR 뷰어
 
@@ -49,7 +49,7 @@ AEM 6.4의 Dynamic Media 뷰어 개선 사항에는 파노라마 이미지 뷰�
   </tr>
   <tr>
    <td>Dynamic Media 실행 모드</td>
-   <td>Dynamic Media Scene7 모드만 해당</td>
+   <td>Dynamic Media Scene7 모드만</td>
    <td>DMS7 및 Dynamic Media</td>
   </tr>
   <tr>

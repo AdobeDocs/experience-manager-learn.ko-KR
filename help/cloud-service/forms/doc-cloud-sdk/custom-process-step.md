@@ -1,17 +1,17 @@
 ---
 title: 맞춤형 프로세스 단계 만들기
-description: Document Cloud을 사용하여 Word, Excel 첨부 파일을 PDF으로 변환하는 맞춤형 프로세스 단계.
+description: Document Cloud을 사용하여 word, excel 첨부 파일을 PDF으로 변환하는 맞춤형 프로세스 단계입니다.
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 thumbnail: 7837.jpg
 jira: KT-7837
 exl-id: 24a788bb-f0dc-4774-91ab-26fde2de098f
 duration: 55
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '77'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 다음은 기본 파일을 변환하고 변환된 pdf로 바꾸는 사용자 지정 프로세스 단계의 전체 코드입니다.
 이 사용자 지정 단계는 워크플로에서 프로세스 인수로 제공되는 폴더 이름 아래에 있는 모든 첨부 파일을 검색합니다.
-이 맞춤형 프로세스 단계는 맞춤형 DocumentCloudSDKervice 의 메서드를 사용하여 PDF의 을 만듭니다.
+이 맞춤형 프로세스 단계는 맞춤형 DocumentCloudSDKervice 의 메서드를 사용하여 PDF의 을(를) 생성합니다.
 
 
 ```java

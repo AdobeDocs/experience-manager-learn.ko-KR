@@ -1,7 +1,7 @@
 ---
 title: 스타일 시스템을 사용하여 개발
 description: Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 구현하고 핵심 구성 요소를 재사용하는 방법에 대해 알아봅니다. 이 튜토리얼에서는 스타일 시스템에서 템플릿 편집기의 브랜드별 CSS 및 고급 정책 구성을 사용하여 핵심 구성 요소를 확장하는 개발 방법을 다룹니다.
-version: 6.5, Cloud Service
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: Core Components, Style System
 topic: Content Management, Development
 role: Developer
@@ -13,7 +13,7 @@ doc-type: Tutorial
 exl-id: 5b490132-cddc-4024-92f1-e5c549afd6f1
 recommendations: noDisplay, noCatalog
 duration: 358
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1555'
 ht-degree: 0%
@@ -63,7 +63,7 @@ Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 �
 
 ## 목표
 
-1. 스타일 시스템을 사용하여 브랜드별 CSS를 AEM 핵심 구성 요소에 적용하는 방법을 이해할 수 있습니다.
+1. 스타일 시스템을 사용하여 브랜드별 CSS를 AEM 핵심 구성 요소에 적용하는 방법을 이해합니다.
 1. BEM 표기법과 이를 사용하여 스타일의 범위를 신중하게 지정하는 방법에 대해 알아봅니다.
 1. 편집 가능한 템플릿을 사용하여 고급 정책 구성을 적용합니다.
 
@@ -81,7 +81,7 @@ Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 �
 
 스타일 시스템의 일반적인 개념은 작성자가 구성 요소가 어떻게 표시되어야 하는지에 대한 다양한 스타일을 선택할 수 있다는 것입니다. &quot;스타일&quot;은 구성 요소의 외부 div에 삽입되는 추가 CSS 클래스에서 지원됩니다. 이러한 스타일 클래스를 기반으로 클라이언트 라이브러리에서 CSS 규칙이 추가되어 구성 요소의 모양이 변경됩니다.
 
-여기에서 [스타일 시스템에 대한 자세한 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/style-system.html)를 찾을 수 있습니다. 또한 스타일 시스템을 이해하는 데 유용한 [기술 비디오](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/style-system-technical-video-understand.html)가 있습니다.
+여기에서 [스타일 시스템에 대한 자세한 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/style-system.html?lang=ko)를 찾을 수 있습니다. 또한 스타일 시스템을 이해하는 데 유용한 [기술 비디오](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/style-system-technical-video-understand.html)가 있습니다.
 
 ## 밑줄 스타일 - 제목 {#underline-style}
 
@@ -115,7 +115,7 @@ Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 �
 
    >[!NOTE]
    >
-   > 값 `cmp-title--underline`이(가) 구성 요소의 HTML 마크업의 외부 div에서 CSS 클래스를 채웁니다.
+   > 값 `cmp-title--underline`은(는) 구성 요소의 HTML 마크업의 외부 div에서 CSS 클래스를 채웁니다.
 
 ### 밑줄 스타일 적용
 
@@ -155,7 +155,7 @@ Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 �
    $ npm run watch
    ```
 
-   이렇게 하면 `ui.frontend` 모듈의 변경 내용을 모니터링하고 변경 내용을 AEM 인스턴스에 동기화하는 프로세스가 시작됩니다.
+   `ui.frontend` 모듈의 변경 내용을 모니터링하고 변경 내용을 AEM 인스턴스에 동기화하는 프로세스를 시작합니다.
 
 
 1. IDE를 반환하고 `ui.frontend/src/main/webpack/components/_title.scss`에서 `_title.scss` 파일을 엽니다.

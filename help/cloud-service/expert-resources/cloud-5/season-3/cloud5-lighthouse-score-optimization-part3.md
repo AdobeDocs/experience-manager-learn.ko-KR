@@ -1,7 +1,7 @@
 ---
 title: 등대 점수 최적화 - 3부
 description: LCP(Largest Contentable Paint)를 개선하고 Edge Delivery Services 프로젝트에서 가장 높은 등대 점수를 얻는 기술에 대해 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Development
 role: Developer, Leader, User
@@ -13,7 +13,7 @@ jira: KT-16300
 hidefromtoc: true
 recommendations: noDisplay, noCatalog
 exl-id: 0f74a746-b16e-4b95-97f1-55e3002d7f7f
-source-git-commit: 5976e220ac54e901be5f064dbf541d901fccfec5
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '66'
 ht-degree: 3%

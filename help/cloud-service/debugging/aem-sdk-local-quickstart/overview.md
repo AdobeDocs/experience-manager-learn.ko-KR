@@ -1,15 +1,15 @@
 ---
 title: AEM SDK 디버깅
-description: AEM SDK는 개발자가 사용하는 기본 개발 환경이며 AEM 및 배포된 애플리케이션을 디버깅하는 다양한 방법을 지원합니다.
+description: AEM SDK은 개발자가 사용하는 주요 개발 환경이며 AEM 및 배포된 애플리케이션을 디버깅하는 다양한 방법을 지원합니다.
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: Tutorial
 topic: Development
 role: Developer
 level: Beginner, Intermediate
 exl-id: e27cf3de-ef89-44d7-819b-157f85f5a80f
 duration: 41
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 0%
@@ -34,7 +34,7 @@ AEM SDK의 로컬 빠른 시작에서 실행되는 Java 코드의 원격 디버�
 
 ## OSGi 웹 콘솔
 
-AEM SDK의 로컬 빠른 시작에는 애플리케이션이 AEM에서 인식되고 작동하는 방식을 이해하는 데 유용한 로컬 AEM 런타임에 대한 다양한 정보 및 자체 검사를 제공하는 OSGi 웹 콘솔이 있습니다.
+AEM SDK의 로컬 빠른 시작에는 애플리케이션이 AEM에서 인식되고 작동하는 방식을 이해하는 데 유용한 다양한 정보와 로컬 AEM 런타임에 대한 자체 검사를 제공하는 OSGi 웹 콘솔이 있습니다.
 
 [OSGi 웹 콘솔을 사용하여 AEM SDK 디버깅](./osgi-web-consoles.md)
 

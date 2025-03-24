@@ -1,7 +1,7 @@
 ---
 title: AEM Dispatcher 공통 로그
 description: Dispatcher의 일반적인 로그 항목을 살펴보고 그 의미와 해결 방법을 알아봅니다.
-version: 6.5
+version: Experience Manager 6.5
 topic: Administration, Performance
 feature: Dispatcher
 role: Admin
@@ -10,7 +10,7 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 7fe1b4a5-6813-4ece-b3da-40af575ea0ed
 duration: 229
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '796'
 ht-degree: 0%
@@ -201,6 +201,6 @@ Wed Nov 13 17:17:26 2019 W pid 19173:tid 140542738364160 No farm matches host 'w
 Tue Nov 26 16:41:34 2019 I pid 9208 (tid 140112092391168) "GET /content/we-retail/us/en.html" - + 24034ms publishfarm/0
 ```
 
-`/content/we-retail/us/en.html` 콘텐츠에 대해 GET http 메서드를 통해 페이지를 가져왔으며, 24034 밀리초가 걸렸습니다. 주목해야 할 부분은 맨 끝 `publishfarm/0`에 있습니다. 타겟팅되고 `publishfarm`과(와) 일치하는 것을 확인할 수 있습니다. 요청은 렌더링 0에서 가져왔습니다. 즉, 이 페이지는 AEM에서 요청한 다음 캐시되어야 합니다. 이제 이 페이지를 다시 요청하고 로그가 어떻게 되는지 살펴보겠습니다.
+콘텐츠 `/content/we-retail/us/en.html`에 대해 GET http 메서드를 통해 페이지를 가져왔으며, 24034밀리초가 걸렸습니다. 주목해야 할 부분은 맨 끝 `publishfarm/0`에 있습니다. 타겟팅되고 `publishfarm`과(와) 일치하는 것을 확인할 수 있습니다. 요청은 렌더링 0에서 가져왔습니다. 즉, 이 페이지는 AEM에서 요청한 다음 캐시되어야 합니다. 이제 이 페이지를 다시 요청하고 로그가 어떻게 되는지 살펴보겠습니다.
 
 [다음 -> 읽기 전용 파일](./immutable-files.md)

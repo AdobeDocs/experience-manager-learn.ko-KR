@@ -1,7 +1,7 @@
 ---
 title: AEM과의 CORS(원본 간 리소스 공유) 이해
-description: Adobe Experience Manager의 CORS(원본 간 리소스 공유)를 사용하면 비 AEM 웹 속성을 사용하여 인증되거나 인증되지 않은 클라이언트측에서 AEM을 호출하여 콘텐츠를 가져오거나 AEM과 직접 상호 작용할 수 있습니다.
-version: 6.4, 6.5
+description: Adobe Experience Manager의 CORS(원본 간 리소스 공유)는 비 AEM 웹 속성을 사용하여 인증되거나 인증되지 않은 AEM에 대한 클라이언트측 호출을 수행하여 콘텐츠를 가져오거나 AEM과 직접 상호 작용할 수 있도록 합니다.
+version: Experience Manager 6.4, Experience Manager 6.5
 sub-product: Experience Manager, Experience Manager Sites
 feature: Security, APIs
 doc-type: Article
@@ -10,7 +10,7 @@ role: Developer
 level: Intermediate
 exl-id: 6009d9cf-8aeb-4092-9e8c-e2e6eec46435
 duration: 240
-source-git-commit: 6922d885c25d0864560ab3b8e38907060ff3cc70
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1011'
 ht-degree: 1%
@@ -19,14 +19,14 @@ ht-degree: 1%
 
 # 원본 간 리소스 공유 이해([!DNL CORS])
 
-Adobe Experience Manager의 원본 간 리소스 공유([!DNL CORS])를 사용하면 비 AEM 웹 속성을 사용하여 인증되거나 인증되지 않은 클라이언트측에서 AEM을 호출하여 콘텐츠를 가져오거나 AEM과 직접 상호 작용할 수 있습니다.
+Adobe Experience Manager의 원본 간 리소스 공유([!DNL CORS])를 사용하면 인증되거나 인증되지 않은 클라이언트측 AEM을 호출하여 콘텐츠를 가져오거나 AEM과 직접 상호 작용할 수 있는 AEM 이외 웹 속성을 사용할 수 있습니다.
 
 이 문서에 설명된 OSGI 구성은 다음 작업에 충분합니다.
 
-1. AEM Publish에서 단일 원본 리소스 공유
+1. AEM 게시의 단일 원본 리소스 공유
 2. AEM 작성자에 대한 CORS 액세스
 
-AEM Publish에서 다중 원본 CORS 액세스가 필요한 경우 [이 설명서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=en#dispatcher-configuration)를 참조하세요.
+AEM 게시에서 다중 원본 CORS 액세스가 필요한 경우 [이 설명서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=en#dispatcher-configuration)를 참조하세요.
 
 ## Adobe Granite 원본 간 리소스 공유 정책 OSGi 구성
 
@@ -36,7 +36,7 @@ CORS 구성은 AEM에서 OSGi 구성 팩토리로 관리되며 각 정책은 팩
 
 ![Adobe Granite 원본 간 리소스 공유 정책 OSGi 구성](./assets/understand-cross-origin-resource-sharing/cors-osgi-config.png)
 
-[!DNL Adobe Granite Cross-Origin Resource Sharing Policy](`com.adobe.granite.cors.impl.CORSPolicyImpl`)
+[!DNL Adobe Granite Cross-Origin Resource Sharing Policy]&#x200B;(`com.adobe.granite.cors.impl.CORSPolicyImpl`)
 
 ### 정책 선택
 
@@ -181,9 +181,9 @@ Dispatcher 4.1.1 이상 응답 헤더를 캐시할 수 있습니다. 이렇게 �
 
 | 캐시 가능 | 환경 | 인증 상태 | 설명 |
 |-----------|-------------|-----------------------|-------------|
-| 아니요 | AEM 게시 | 인증됨 | AEM Author의 Dispatcher 캐싱은 작성되지 않은 정적 에셋으로 제한됩니다. 따라서 HTTP 응답 헤더를 포함하여 AEM Author에 대부분의 리소스를 캐시하는 것이 어렵고 비현실적입니다. |
+| 아니요 | AEM 게시 | 인증됨 | AEM 작성자의 Dispatcher 캐싱은 작성되지 않은 정적 자산으로 제한됩니다. 따라서 HTTP 응답 헤더를 포함하여 AEM Author에 대부분의 리소스를 캐시하는 것이 어렵고 비현실적입니다. |
 | 아니요 | AEM 게시 | 인증됨 | 인증된 요청에 대해 CORS 헤더를 캐시하지 마십시오. 이는 요청하는 사용자의 인증/권한 부여 상태가 전달된 리소스에 미치는 영향을 판단하기 어렵기 때문에 인증된 요청을 캐시하지 않는다는 일반적인 지침을 따릅니다. |
-| 예 | AEM 게시 | 익명 | Dispatcher에서 캐시 가능한 익명 요청은 응답 헤더도 캐시할 수 있으므로 향후 CORS 요청이 캐시된 콘텐츠에 액세스할 수 있습니다. AEM Publish **must**&#x200B;에서 CORS 구성을 변경한 후에는 영향을 받는 캐시된 리소스가 무효화되어야 합니다. 우수 사례에서는 영향을 줄 수 있는 캐시된 콘텐츠를 확인하기 어렵기 때문에 Dispatcher 캐시가 삭제되는 코드 또는 구성 배포에 대해 설명합니다. |
+| 예 | AEM 게시 | 익명 | Dispatcher에서 캐시 가능한 익명 요청은 응답 헤더도 캐시할 수 있으므로 향후 CORS 요청이 캐시된 콘텐츠에 액세스할 수 있습니다. AEM 게시 **must**&#x200B;에서 CORS 구성을 변경한 후에는 영향을 받는 캐시된 리소스가 무효화되어야 합니다. 우수 사례에서는 영향을 줄 수 있는 캐시된 콘텐츠를 확인하기 어렵기 때문에 Dispatcher 캐시가 삭제되는 코드 또는 구성 배포에 대해 설명합니다. |
 
 ### CORS 요청 헤더 허용
 
@@ -200,7 +200,7 @@ Dispatcher 4.1.1 이상 응답 헤더를 캐시할 수 있습니다. 이렇게 �
 
 ### CORS 응답 헤더 캐싱
 
-캐시된 콘텐츠에서 CORS 헤더를 캐시하고 제공할 수 있도록 하려면 다음 [/cache /headers 구성](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#caching-http-response-headers)을(를) AEM Publish `dispatcher.any` 파일에 추가하십시오.
+캐시된 콘텐츠에서 CORS 헤더를 캐시하고 제공할 수 있도록 하려면 다음 [/cache /headers 구성](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#caching-http-response-headers)을(를) AEM 게시 `dispatcher.any` 파일에 추가하십시오.
 
 ```
 /publishfarm {

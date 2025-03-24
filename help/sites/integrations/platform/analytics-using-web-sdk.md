@@ -1,7 +1,7 @@
 ---
-title: Platform Web SDK와 AEM Sites 및 Adobe Analytics 통합
+title: Platform Web SDK과 AEM Sites 및 Adobe Analytics 통합
 description: 최신 Platform Web SDK 접근 방식을 사용하여 AEM Sites 및 Adobe Analytics을 통합합니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Integrations
 topic: Integrations, Architecture
 role: Admin, Architect, Data Architect, Developer
@@ -11,19 +11,19 @@ last-substantial-update: 2023-05-25T00:00:00Z
 jira: KT-13328
 thumbnail: KT-13328.jpeg
 badgeIntegration: label="통합" type="positive"
-badgeVersions: label="AEM Sites as a Cloud Service AEM Sites 6.5" before-title="false"
+badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: 0cc3d3bc-e4ea-4ab2-8878-adbcf0c914f5
 duration: 2252
-source-git-commit: 774267b4f4c65c79f185fa3b33383ce9ddd136cb
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1529'
 ht-degree: 0%
 
 ---
 
-# Platform Web SDK와 AEM Sites 및 Adobe Analytics 통합
+# Platform Web SDK과 AEM Sites 및 Adobe Analytics 통합
 
-Platform Web SDK를 사용하여 Adobe Experience Manager(AEM)와 Adobe Analytics을 통합하는 방법에 대한 **최신 접근 방식**&#x200B;을 알아봅니다. 이 포괄적인 튜토리얼은 [WKND](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) 페이지 보기 및 CTA 클릭 데이터를 원활하게 수집하는 과정을 안내합니다. 다양한 지표와 차원을 탐색할 수 있는 Adobe Analysis Workspace에서 수집된 데이터를 시각화하여 중요한 통찰력을 얻으십시오. 또한 플랫폼 데이터 세트를 탐색하여 데이터를 확인하고 분석합니다. 이 여정에 참여하여 데이터 기반 의사 결정을 위한 AEM 및 Adobe Analytics의 기능을 활용하십시오.
+Platform Web SDK을 사용하여 Adobe Experience Manager(AEM)와 Adobe Analytics을 통합하는 방법에 대한 **최신 접근 방식**&#x200B;을 알아봅니다. 이 포괄적인 튜토리얼은 [WKND](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) 페이지 보기 및 CTA 클릭 데이터를 원활하게 수집하는 과정을 안내합니다. 다양한 지표와 차원을 탐색할 수 있는 Adobe Analysis Workspace에서 수집된 데이터를 시각화하여 중요한 통찰력을 얻으십시오. 또한 플랫폼 데이터 세트를 탐색하여 데이터를 확인하고 분석합니다. 이 여정에 참여하여 데이터 기반 의사 결정을 위한 AEM 및 Adobe Analytics의 기능을 활용하십시오.
 
 ## 개요
 
@@ -36,11 +36,11 @@ Platform Web SDK를 사용하여 Adobe Experience Manager(AEM)와 Adobe Analytic
 
 ## 사전 요구 사항
 
-Platform Web SDK를 사용하여 Adobe Analytics을 통합할 때 필요한 사항은 다음과 같습니다.
+Platform Web SDK을 사용하여 Adobe Analytics을 통합할 때 필요한 사항은 다음과 같습니다.
 
 **[Experience Platform Web SDK 통합](./web-sdk.md)** 자습서에서 설정 단계를 완료했습니다.
 
-**Cloud Service으로 AEM**&#x200B;에서:
+**AEM as Cloud Service**&#x200B;에서:
 
 + [AEM as a Cloud Service 환경에 대한 AEM 관리자 액세스](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=ko-KR)
 + Cloud Manager에 대한 배포 관리자 액세스
@@ -61,7 +61,7 @@ Platform Web SDK를 사용하여 Adobe Analytics을 통합할 때 필요한 사�
 
 필요한 권한이 없는 경우 [Adobe Admin Console](https://adminconsole.adobe.com/)을(를) 사용하는 시스템 관리자가 필요한 권한을 부여할 수 있습니다.
 
-Platform Web SDK를 사용하여 AEM과 Analytics의 통합 프로세스를 살펴보기 전에 [Experience Platform Web SDK 통합](./web-sdk.md) 자습서에서 설정한 필수 구성 요소와 주요 요소를 _다시 살펴보도록 하겠습니다._ 이는 통합을 위한 견고한 기반을 제공합니다.
+Platform Web SDK을 사용하여 AEM과 Analytics의 통합 프로세스를 살펴보기 전에 [Experience Platform Web SDK 통합](./web-sdk.md) 자습서에서 설정한 필수 구성 요소와 주요 요소를 _다시 살펴봅니다_. 이는 통합을 위한 견고한 기반을 제공합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419873?quality=12&learn=on)
 
@@ -97,7 +97,7 @@ Analytics 설정 및 개념에 대해 자세히 알아보려면 다음 리소스
 
 ## 데이터스트림 업데이트 - Analytics 서비스 추가
 
-데이터 스트림은 Platform Edge Network에 수집된 데이터를 보낼 위치를 지시합니다. [이전 자습서](./web-sdk.md)에서 데이터 스트림이 데이터를 Experience Platform에 보내도록 구성되어 있습니다. 이 데이터 스트림은 [위](#setup-analytics---report-suite-analysis-workspace) 단계에서 구성된 Analytics 보고서 세트로 데이터를 보내도록 업데이트됩니다.
+데이터 스트림은 Platform Edge Network에 수집된 데이터를 보낼 위치를 지시합니다. [이전 자습서](./web-sdk.md)에서 데이터 스트림이 데이터를 Experience Platform으로 보내도록 구성되어 있습니다. 이 데이터 스트림은 [위](#setup-analytics---report-suite-analysis-workspace) 단계에서 구성된 Analytics 보고서 세트로 데이터를 보내도록 업데이트됩니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419876?quality=12&learn=on)
 
@@ -105,7 +105,7 @@ Analytics 설정 및 개념에 대해 자세히 알아보려면 다음 리소스
 
 XDM(경험 데이터 모델) 스키마를 사용하면 수집된 데이터를 표준화할 수 있습니다. [이전 자습서](./web-sdk.md)에서 필드 그룹이 `AEP Web SDK ExperienceEvent`인 XDM 스키마가 만들어집니다. 또한 이 XDM 스키마를 사용하여 Experience Platform에 수집된 데이터를 저장하는 데이터 세트가 만들어집니다.
 
-단, 해당 XDM 스키마에는 eVar, 이벤트 데이터를 전송할 Adobe Analytics 관련 필드 그룹이 없습니다. 플랫폼에 eVar, 이벤트 데이터가 저장되지 않도록 기존 스키마를 업데이트하는 대신 새 XDM 스키마를 만듭니다.
+단, 해당 XDM 스키마에는 Adobe Analytics, 이벤트 데이터를 전송할 eVar 관련 필드 그룹이 없습니다. 기존 스키마를 업데이트하는 대신 새로운 XDM 스키마를 만들어 플랫폼에 eVar 이벤트 데이터를 저장하지 않도록 합니다.
 
 새로 만든 XDM 스키마에 `AEP Web SDK ExperienceEvent` 및 `Adobe Analytics ExperienceEvent Full Extension` 필드 그룹이 있습니다.
 
@@ -214,7 +214,7 @@ XDM(경험 데이터 모델) 스키마를 사용하면 수집된 데이터를 �
 
 +++
 
-AEM 핵심 구성 요소와 Adobe 클라이언트 데이터 레이어 통합에 대한 자세한 내용은 [AEM 핵심 구성 요소와 Adobe 클라이언트 데이터 레이어 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html)를 참조하십시오.
+AEM 핵심 구성 요소와 Adobe 클라이언트 데이터 레이어 통합에 대한 자세한 내용은 [AEM 핵심 구성 요소와 Adobe 클라이언트 데이터 레이어 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html)을 참조하십시오.
 
 
 >[!INFO]
@@ -229,7 +229,7 @@ AEM 핵심 구성 요소와 Adobe 클라이언트 데이터 레이어 통합에 
 
 + 태그 속성이 최신 버전인지 확인하려면 빌드 날짜를 확인합니다.
 
-+ PageView와 HomePage CTA 클릭 모두에 대한 XDM 이벤트 데이터를 확인하려면 확장 내에서 웹 SDK Experience Platform 메뉴 옵션을 사용합니다.
++ PageView와 HomePage CTA Click 모두에 대한 XDM 이벤트 데이터를 확인하려면 확장 프로그램 내의 Experience Platform Web SDK 메뉴 옵션을 사용합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419883?quality=12&learn=on)
 
@@ -241,7 +241,7 @@ AEM 핵심 구성 요소와 Adobe 클라이언트 데이터 레이어 통합에 
 
 ## 데이터 세트 확인 - WKND 페이지 보기, CTA 데이터
 
-데이터 집합은 스키마를 따르는 데이터베이스 테이블과 같은 데이터 수집을 위한 저장 및 관리 구성입니다. [이전 자습서](./web-sdk.md)에서 만든 데이터 집합을 다시 사용하여 페이지 보기 및 CTA 클릭 데이터가 Experience Platform 데이터 집합에 수집되는지 확인합니다. 데이터 세트 UI 내에서 총 레코드, 크기 및 수집된 일괄 처리와 같은 다양한 세부 정보가 시각적으로 호소력 있는 막대 그래프와 함께 표시됩니다.
+데이터 집합은 스키마를 따르는 데이터베이스 테이블과 같은 데이터 수집을 위한 저장 및 관리 구성입니다. [이전 자습서](./web-sdk.md)에서 만든 데이터 세트를 다시 사용하여 페이지 보기 및 CTA 클릭 데이터가 Experience Platform 데이터 세트에 수집되는지 확인합니다. 데이터 세트 UI 내에서 총 레코드, 크기 및 수집된 일괄 처리와 같은 다양한 세부 정보가 시각적으로 호소력 있는 막대 그래프와 함께 표시됩니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419885?quality=12&learn=on)
 
@@ -257,7 +257,7 @@ Analysis Workspace은 유연하고 대화형 방식으로 데이터를 탐색하
 
 ## 요약
 
-좋습니다! Platform Web SDK를 사용하여 페이지 보기 및 CTA 클릭 데이터를 수집하고, 분석하기 위한 AEM 및 Adobe Analytics 설정을 완료했습니다.
+좋습니다! Platform Web SDK을 사용하여 페이지 보기 및 AEM 클릭 데이터를 수집하고, 분석하기 위해 Adobe Analytics 및 CTA 설정을 완료했습니다.
 
 마케팅 팀이 콘텐츠를 최적화하고 데이터 기반 결정을 내릴 수 있도록 하기 위해, Adobe Analytics 구현은 사용자 행동에 대한 통찰력을 얻고 정보에 입각한 결정을 내리는 데 매우 중요합니다.
 
@@ -276,6 +276,6 @@ Analysis Workspace은 유연하고 대화형 방식으로 데이터를 탐색하
 + [Experience Platform Web SDK 통합](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform/web-sdk.html)
 + [핵심 구성 요소와 함께 Adobe 클라이언트 데이터 레이어 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html)
 + [Experience Platform 데이터 수집 태그와 AEM 통합](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)
-+ [Adobe Experience Platform 웹 SDK 및 Edge Network 개요](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html)
++ [Adobe Experience Platform Web SDK 및 Edge Network 개요](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html)
 + [데이터 수집 튜토리얼](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html)
 + [Adobe Experience Platform Debugger 개요](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)

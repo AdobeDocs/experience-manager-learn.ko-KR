@@ -1,7 +1,7 @@
 ---
 title: Importer 사용자 지정
 description: 사이트 마이그레이션 중에 최대의 결과를 얻도록 AEM Importer를 사용자 지정하는 방법을 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Migration
 topic: Content Management
 role: Developer, User, Architect
@@ -11,7 +11,7 @@ duration: 167
 last-substantial-update: 2024-06-07T00:00:00Z
 jira: KT-15676
 exl-id: db0038f3-2782-4778-a68f-36620697de10
-source-git-commit: 3001560b62cb4dbec92179a9db42abd84590c400
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '43'
 ht-degree: 0%

@@ -3,7 +3,7 @@ title: 왼쪽 탐색 탭에 아이콘으로 스타일 지정
 description: 활성화된/완료된 탭을 표시하는 아이콘 추가
 feature: Adaptive Forms
 type: Tutorial
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
@@ -11,7 +11,7 @@ jira: KT-9359
 exl-id: f7c1f991-0486-4355-8502-cd5b038537e3
 last-substantial-update: 2019-07-07T00:00:00Z
 duration: 68
-source-git-commit: 364d055b7b2e4f273f906c66328fc14f95321611
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 21%
@@ -41,7 +41,7 @@ ht-degree: 21%
 
 | 범주 | 속성 이름 | 속성 값 |
 |:---|:---|:---|
-| Dimension 및 위치 | 폭 | 50픽셀 |
+| 차원 및 위치 | 폭 | 50픽셀 |
 | 텍스트 | 글꼴 두께 | 볼드체 |
 | 텍스트 | 색상 | #FFF |
 | 텍스트 | 선 높이 | 3 |
@@ -56,7 +56,7 @@ ht-degree: 21%
 
 | 범주 | 속성 이름 | 속성 값 |
 |:---|:---|:---|
-| Dimension 및 위치 | 폭 | 50픽셀 |
+| 차원 및 위치 | 폭 | 50픽셀 |
 | 텍스트 | 글꼴 두께 | 볼드체 |
 | 텍스트 | 색상 | #FFF |
 | 텍스트 | 선 높이 | 3 |
@@ -77,7 +77,7 @@ ht-degree: 21%
 
 | 범주 | 속성 이름 | 속성 값 |
 |:---|:---|:---|
-| Dimension 및 위치 | 폭 | 50픽셀 |
+| 차원 및 위치 | 폭 | 50픽셀 |
 | 텍스트 | 글꼴 두께 | 볼드체 |
 | 텍스트 | 색상 | #FFF |
 | 텍스트 | 선 높이 | 3 |

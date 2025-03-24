@@ -1,30 +1,30 @@
 ---
-title: AEM Dynamic Media을 통한 색상 관리 이해
-description: 이 비디오에서는 Dynamic Media 색상 관리 및 AEM Assets용에서 색상 교정 미리 보기 기능을 제공하는 데 사용할 수 있는 방법에 대해 알아봅니다.
+title: AEM Dynamic Media를 통한 색상 관리 이해
+description: 이 비디오에서는 Dynamic Media 색상 관리 및 AEM Assets용에서 색상 수정 미리 보기 기능을 제공하는 데 사용할 수 있는 방법에 대해 알아봅니다.
 feature: Image Profiles, Video Profiles
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Content Management
 role: Developer
 level: Intermediate
 doc-type: Feature Video
 exl-id: a733532b-db64-43f6-bc43-f7d422d5071a
 duration: 274
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 11%
 
 ---
 
-# AEM Dynamic Media을 통한 색상 관리 이해{#understanding-color-management-with-aem-dynamic-media}
+# AEM Dynamic Media를 통한 색상 관리 이해{#understanding-color-management-with-aem-dynamic-media}
 
-이 비디오에서는 Dynamic Media 색상 관리 및 AEM Assets용에서 색상 교정 미리 보기 기능을 제공하는 데 사용할 수 있는 방법에 대해 알아봅니다.
+이 비디오에서는 Dynamic Media 색상 관리 및 AEM Assets용에서 색상 수정 미리 보기 기능을 제공하는 데 사용할 수 있는 방법에 대해 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16792?quality=12&learn=on)
 
 >[!NOTE]
 >
->이 기능을 사용하려면 AEM에서 [Dynamic Media을 사용](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)하세요.
+>이 기능을 사용하려면 AEM에서 [Dynamic Media를 사용](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)하세요.
 
 이 기능은 AEM 6.1 및 6.2 버전에서 기능 팩으로 사용할 수 있습니다.
 
@@ -86,7 +86,7 @@ ht-degree: 11%
 />
 ```
 
-### 기본 Adobe 색상 프로파일 목록은 아래에 나와 있습니다 {#list-of-default-adobe-color-profiles-are-listed-below}
+### 기본 Adobe 색상 프로파일 목록은 다음과 같습니다 {#list-of-default-adobe-color-profiles-are-listed-below}
 
 | 이름 | 색상 공간 | 설명 |
 | ------------------- | ---------- | ------------------------------------- |

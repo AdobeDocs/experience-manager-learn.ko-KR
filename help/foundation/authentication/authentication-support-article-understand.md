@@ -1,7 +1,7 @@
 ---
 title: AEM 6.x에서 인증 지원
 description: AEM 6.x에서 지원하는 인증 메커니즘에 대한 통합 보기.
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 feature: User and Groups
 doc-type: Article
 jira: KT-406
@@ -12,7 +12,7 @@ exl-id: 96c542ae-6ab6-4d8a-94df-a58b03469320
 last-substantial-update: 2022-09-10T00:00:00Z
 thumbnail: KT-406.jpg
 duration: 22
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 7%
@@ -21,7 +21,7 @@ ht-degree: 7%
 
 # AEM 6.x에서 인증 지원
 
-AEM에서 지원하는 인증(및 경우에 따라 권한 부여) 메커니즘에 대한 통합 보기.
+AEM에서 지원하는 인증(및 경우에 따라 권한 부여) 메커니즘에 대한 통합 보기입니다.
 
 *다음 표에서는 사용자가 AEM에 인증하는 방법을 설명합니다.*
 
@@ -95,4 +95,4 @@ AEM에서 지원하는 인증(및 경우에 따라 권한 부여) 메커니즘�
     </tbody>
 </table>
 
-*⁕커뮤니티 프로젝트를 통해 제공되지만 Adobe에서 직접 지원하지 않습니다.*
+{0⁕}커뮤니티 프로젝트를 통해 제공되지만 Adobe에서 직접 지원하지 않습니다.**

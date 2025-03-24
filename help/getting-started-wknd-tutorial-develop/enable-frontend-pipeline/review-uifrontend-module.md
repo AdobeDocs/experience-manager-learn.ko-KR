@@ -1,7 +1,7 @@
 ---
 title: 전체 스택 프로젝트의 ui.frontend 모듈 검토
 description: Maven 기반 전체 스택 AEM Sites 프로젝트의 프론트엔드 개발, 배포 및 게재 수명 주기를 검토합니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: AEM Project Archetype, Cloud Manager, CI-CD Pipeline
 topic: Content Management, Development, Development, Architecture
 role: Developer, Architect, Admin
@@ -13,7 +13,7 @@ recommendations: noDisplay, noCatalog
 doc-type: Tutorial
 exl-id: 65e8d41e-002a-4d80-a050-5366e9ebbdea
 duration: 364
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 0%
@@ -27,8 +27,8 @@ ht-degree: 0%
 
 ## 목표 {#objective}
 
-* AEM 전체 스택 프로젝트에서 프론트엔드 아티팩트의 빌드 및 배포 흐름 이해
-* AEM 전체 스택 프로젝트의 `ui.frontend` 모듈 [webpack](https://webpack.js.org/) 구성 검토
+* AEM 전체 스택 프로젝트의 프론트엔드 아티팩트의 빌드 및 배포 흐름 이해
+* AEM 전체 스택 프로젝트의 `ui.frontend` 모듈 [webpack](https://webpack.js.org/) 구성을 검토하십시오.
 * AEM 클라이언트 라이브러리(clientlibs라고도 함) 생성 프로세스
 
 ## AEM 전체 스택 및 빠른 사이트 생성 프로젝트에 대한 프론트엔드 배포 플로우
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 ## AEM 전체 스택 프로젝트 프론트엔드 아티팩트 흐름 {#flow-of-frontend-artifacts}
 
-다음은 전체 스택 AEM 프로젝트에서 프론트엔드 아티팩트의 __개발, 배포 및 게재__ 흐름을 개략적으로 보여 주는 것입니다.
+다음은 전체 스택 AEM 프로젝트에서 프론트엔드 아티팩트의 __개발, 배포 및 게재__ 흐름에 대한 높은 수준의 표현입니다.
 
 ![프론트엔드 아티팩트의 개발, 배포 및 게재](assets/Dev-Deploy-Delivery-AEM-Project.png)
 

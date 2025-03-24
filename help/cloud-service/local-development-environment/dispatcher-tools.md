@@ -1,7 +1,7 @@
 ---
 title: AEM as a Cloud Service 개발을 위한 Dispatcher 도구 설정
-description: AEM SDK의 Dispatcher 도구는 로컬에서 Dispatcher을 쉽게 설치, 실행 및 해결할 수 있도록 하여 AEM(Adobe Experience Manager) 프로젝트의 로컬 개발을 용이하게 합니다.
-version: Cloud Service
+description: AEM SDK의 Dispatcher 도구를 사용하면 로컬에서 Dispatcher을 쉽게 설치, 실행 및 해결할 수 있으므로 Adobe Experience Manager(AEM) 프로젝트의 로컬 개발을 용이하게 할 수 있습니다.
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: Dispatcher, Developer Tools
 role: Developer
@@ -11,9 +11,9 @@ thumbnail: 30603.jpg
 last-substantial-update: 2023-03-14T00:00:00Z
 exl-id: 9320e07f-be5c-42dc-a4e3-aab80089c8f7
 duration: 624
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
-source-wordcount: '1621'
+source-wordcount: '1620'
 ht-degree: 4%
 
 ---
@@ -51,16 +51,16 @@ AEM as a Cloud Service SDK에는 Dispatcher을 로컬에서 구성 및 시뮬레
 
 + 로컬 AEM Publish 서비스에 최신 [AEM 참조 웹 사이트](https://github.com/adobe/aem-guides-wknd/releases)를 설치할 수도 있습니다. 이 웹 사이트는 이 자습서에서 작동하는 Dispatcher을 시각화하는 데 사용됩니다.
 
-1. 로컬 개발 컴퓨터에 최신 버전의 [Docker](https://www.docker.com/)(Docker Desktop 2.2.0.5+ / Docker Engine v19.03.9+)를 설치하고 시작합니다.
+1. 로컬 개발 컴퓨터에 최신 버전의 [Docker](https://www.docker.com/)&#x200B;(Docker Desktop 2.2.0.5+ / Docker Engine v19.03.9+)을 설치하고 시작합니다.
 
-## AEM SDK의 일부로 Dispatcher 도구 다운로드
+## Dispatcher 도구 다운로드 (AEM SDK의 일부)
 
 AEM as a Cloud Service SDK 또는 AEM SDK에는 개발을 위해 로컬에서 Dispatcher 모듈을 사용하여 Apache HTTP 웹 서버를 실행하는 데 사용되는 Dispatcher 도구와 호환되는 QuickStart Jar가 포함되어 있습니다.
 
-AEM as a Cloud Service SDK가 [로컬 AEM 런타임을 설정](./aem-runtime.md)에 이미 다운로드된 경우 다시 다운로드할 필요가 없습니다.
+AEM as a Cloud Service SDK이 [로컬 AEM 런타임을 설정](./aem-runtime.md)하는 데 이미 다운로드된 경우 다시 다운로드할 필요가 없습니다.
 
 1. Adobe ID으로 [experience.adobe.com/#/downloads](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=AEM*+SDK*&amp;1_group.propertyvalues.property=입니다.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atoling&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=1)에 로그인합니다.
-   + AEM as a Cloud Service SDK를 다운로드하려면 Adobe 조직 __must__&#x200B;을(를) AEM as a Cloud Service에 대해 프로비저닝해야 합니다.
+   + AEM as a Cloud Service SDK을 다운로드하려면 Adobe 조직 __must__&#x200B;을(를) AEM as a Cloud Service에 대해 프로비저닝해야 합니다.
 1. 다운로드할 최신 __AEM SDK__ 결과 행을 클릭합니다.
 
 ## AEM SDK zip에서 Dispatcher 도구 추출
@@ -69,7 +69,7 @@ AEM as a Cloud Service SDK가 [로컬 AEM 런타임을 설정](./aem-runtime.md)
 >
 > Windows 사용자는 로컬 Dispatcher 도구가 들어 있는 폴더의 경로에 공백이나 특수 문자를 사용할 수 없습니다. 경로에 공백이 있으면 `docker_run.cmd`이(가) 실패합니다.
 
-Dispatcher 도구 버전은 AEM SDK의 버전과 다릅니다. Dispatcher Tools 버전이 AEM as a Cloud Service 버전과 일치하는 AEM SDK 버전을 통해 제공되는지 확인하십시오.
+Dispatcher 도구 버전은 AEM SDK과 다릅니다. Dispatcher 도구 버전이 AEM as a Cloud Service 버전과 일치하는 AEM SDK 버전을 통해 제공되는지 확인합니다.
 
 1. 다운로드한 `aem-sdk-xxx.zip` 파일 압축 풀기
 1. `~/aem-sdk/dispatcher`에 Dispatcher 도구 압축 풀기
@@ -199,7 +199,7 @@ $ ./bin/docker_run_hot_reload.sh ./src host.docker.internal:4503 8080
 
 >[!ENDTABS]
 
-포트 4503에서 로컬로 실행되는 AEM as a Cloud Service SDK의 Publish 서비스는 `http://localhost:8080`의 Dispatcher을 통해 사용할 수 있습니다.
+포트 4503에서 로컬로 실행되는 AEM as a Cloud Service SDK의 게시 서비스는 `http://localhost:8080`의 Dispatcher을 통해 사용할 수 있습니다.
 
 Experience Manager 프로젝트의 Dispatcher 구성에 대해 Dispatcher 도구를 실행하려면 프로젝트의 `dispatcher/src` 폴더를 가리킵니다.
 
@@ -268,16 +268,16 @@ $ DISP_LOG_LEVEL=Debug REWRITE_LOG_LEVEL=Debug ./bin/docker_run_hot_reload.sh ~/
 
 ### 로그 파일 액세스
 
-Docker 컨테이너에서 Apache 웹 서버 및 AEM Dispatcher 로그에 직접 액세스할 수 있습니다.
+Apache 웹 서버 및 AEM Dispatcher 로그는 Docker 컨테이너에서 직접 액세스할 수 있습니다.
 
 + [Docker 컨테이너의 로그 액세스](../debugging/aem-sdk-local-quickstart/logs.md#dispatcher-tools-access-logs)
 + [로컬 파일 시스템에 Docker 로그 복사](../debugging/aem-sdk-local-quickstart/logs.md#dispatcher-tools-copy-logs)
 
 ## Dispatcher 도구를 업데이트해야 하는 경우{#dispatcher-tools-version}
 
-Dispatcher Tools 버전은 Experience Manager에 비해 덜 자주 증가하므로 Dispatcher Tools는 로컬 개발 환경에서 더 적은 업데이트를 필요로 합니다.
+Dispatcher Tools 버전은 Experience Manager보다 덜 자주 증가하므로 Dispatcher Tools는 로컬 개발 환경에서 더 적은 업데이트를 필요로 합니다.
 
-권장되는 Experience Manager 도구 버전은 Dispatcher as a Cloud Service 버전과 일치하는 AEM as a Cloud Service SDK와 번들로 제공되는 것입니다. AEM as a Cloud Service 버전은 [Cloud Manager](https://my.cloudmanager.adobe.com/)을 통해 찾을 수 있습니다.
+권장되는 Dispatcher 도구 버전은 Experience Manager as a Cloud Service 버전과 일치하는 AEM as a Cloud Service SDK과 번들로 제공되는 버전입니다. AEM as a Cloud Service 버전은 [Cloud Manager](https://my.cloudmanager.adobe.com/)을 통해 찾을 수 있습니다.
 
 + __Cloud Manager > 환경__, __AEM 릴리스__ 레이블에 지정된 환경당
 
@@ -393,7 +393,7 @@ Waiting until host.docker.internal is available
 ## 추가 리소스
 
 + [AEM SDK 다운로드](https://experience.adobe.com/#/downloads)
-+ [Cloud Manager Adobe](https://my.cloudmanager.adobe.com/)
++ [Adobe Cloud Manager](https://my.cloudmanager.adobe.com/)
 + [도커 다운로드](https://www.docker.com/)
-+ [AEM 참조 웹 사이트(WKND) 다운로드](https://github.com/adobe/aem-guides-wknd/releases)
-+ [Dispatcher 설명서 Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
++ [WKND(AEM 참조 웹 사이트) 다운로드](https://github.com/adobe/aem-guides-wknd/releases)
++ [Experience Manager Dispatcher 설명서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko-KR)

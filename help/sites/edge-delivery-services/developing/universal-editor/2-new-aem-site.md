@@ -1,7 +1,7 @@
 ---
 title: AEM 사이트 만들기
 description: 범용 편집기를 사용하여 편집할 수 있는 AEM Sites for Edge Delivery Services에서 사이트를 만듭니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Development
 role: Developer
@@ -10,7 +10,7 @@ doc-type: Tutorial
 jira: KT-15832
 duration: 500
 exl-id: d1ebcaf4-cea6-4820-8b05-3a0c71749d33
-source-git-commit: ae3ade0f31846776aa9bdd3a615d6514b626f48d
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 0%

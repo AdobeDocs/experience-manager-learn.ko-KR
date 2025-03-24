@@ -1,14 +1,14 @@
 ---
 title: 클라이언트 애플리케이션 통합 - AEM Headless의 고급 개념 - GraphQL
 description: 지속 쿼리를 구현하고 WKND 앱에 통합합니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: d0576962-a86a-4742-8635-02be1ec3243f
 duration: 241
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '927'
 ht-degree: 1%
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 ## 사전 요구 사항 {#prerequisites}
 
-이 문서는 여러 부분으로 구성된 자습서의 일부입니다. 이 장을 진행하기 전에 이전 장이 완료되었는지 확인하십시오. WKND 클라이언트 응용 프로그램이 AEM 게시 서비스에 연결되므로 **다음 내용을 AEM 게시 서비스에 게시**&#x200B;해야 합니다.
+이 문서는 여러 부분으로 구성된 자습서의 일부입니다. 이 장을 진행하기 전에 이전 장이 완료되었는지 확인하십시오. WKND 클라이언트 응용 프로그램이 AEM 게시 서비스에 연결되므로 **다음 항목을 AEM 게시 서비스에 게시했습니다**.
 
 * 프로젝트 구성
 * GraphQL 엔드포인트
@@ -40,11 +40,11 @@ ht-degree: 1%
 1. [Advanced-GraphQL-Tutorial-Solution-Package-1.2.zip](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/Advanced-GraphQL-Tutorial-Solution-Package-1.2.zip)을 다운로드합니다.
 1. AEM에서 **도구** > **배포** > **패키지**(으)로 이동하여 **패키지 관리자**&#x200B;에 액세스합니다.
 1. 이전 단계에서 다운로드한 패키지(zip 파일)를 업로드하고 설치합니다.
-1. 패키지를 AEM Publish 서비스에 복제
+1. 패키지를 AEM Publish 서비스로 복제
 
 ## 목표 {#objectives}
 
-이 자습서에서는 [JavaScript용 AEM Headless Client](https://github.com/adobe/aem-headless-client-js)를 사용하여 지속 쿼리에 대한 요청을 샘플 WKND GraphQL React 앱에 통합하는 방법을 알아봅니다.
+이 자습서에서는 [GraphQL용 AEM Headless 클라이언트](https://github.com/adobe/aem-headless-client-js)를 사용하여 지속 쿼리에 대한 요청을 샘플 WKND JavaScript React 앱에 통합하는 방법을 알아봅니다.
 
 ## 샘플 클라이언트 애플리케이션 복제 및 실행 {#clone-client-app}
 
@@ -84,9 +84,9 @@ ht-degree: 1%
 
    >[!NOTE]
    > 
-   > 위의 지침은 React 앱을 **AEM Publish 서비스**&#x200B;에 연결하되, **AEM 작성자 서비스**&#x200B;에 연결하여 대상 AEM as a Cloud Service 환경에 대한 로컬 개발 토큰을 얻는 것입니다.
+   > 위의 지침은 React 앱을 **AEM Publish 서비스**&#x200B;에 연결하는 것이지만, **AEM 작성자 서비스**&#x200B;에 연결하여 대상 AEM as a Cloud Service 환경에 대한 로컬 개발 토큰을 얻는 것입니다.
    >
-   > 기본 인증을 사용하여 AEMaaCS SDK를 사용하여 [로컬 작성자 인스턴스](/help/headless-tutorial/graphql/quick-setup/local-sdk.md)에 앱을 연결할 수도 있습니다.
+   > 기본 인증을 사용하여 AEMaaCS SDK](/help/headless-tutorial/graphql/quick-setup/local-sdk.md)를 사용하여 [로컬 작성자 인스턴스에 앱을 연결할 수도 있습니다.
 
 
 1. 터미널을 열고 다음 명령을 실행합니다.
@@ -106,7 +106,7 @@ ht-degree: 1%
 
 1. 브라우저의 개발자 도구를 열고 `XHR` 요청을 검사합니다.
 
-   ![GraphQL POST](assets/client-application-integration/graphql-persisted-query.png)
+   ![GraphQL 게시](assets/client-application-integration/graphql-persisted-query.png)
 
    프로젝트 구성 이름(`wknd-shared`), 지속 쿼리 이름(`adventure-by-slug`), 변수 이름(`slug`), 값(`yosemite-backpacking`) 및 특수 문자 인코딩을 사용하여 GraphQL 끝점에 대한 `GET`개의 요청이 표시됩니다.
 
@@ -145,7 +145,7 @@ WKND React 앱의 기본 보기는 모든 모험 목록이며 _캠핑, 사이클
 
 * 위와 같이 `useAdventureBySlug(slug)` 후크는 `src/api/usePersistedQueries.js` 파일에 정의되어 있습니다. `aemHeadlessClient.js`을(를) 통해 `AEMHeadless`에 위임하여 `wknd-shared/adventure-by-slug` 지속 쿼리를 호출합니다.
 
-* 쿼리 실행에 성공하면 `AdventureDetail.js`의 `AdventureDetailRender(..)` 렌더링 함수가 HTML 요소를 추가하여 Adventure 세부 정보를 표시합니다.
+* 쿼리 실행에 성공하면 `AdventureDetail.js`의 `AdventureDetailRender(..)` 렌더링 함수가 HTML 요소를 추가하여 모험의 세부 정보를 표시합니다.
 
 
 ## 코드 개선

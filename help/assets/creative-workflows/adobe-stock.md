@@ -1,8 +1,8 @@
 ---
 title: AEM Assets에서 Adobe Stock assets 사용
-description: AEM은 사용자가 AEM에서 직접 Adobe Stock 에셋을 검색, 미리보기, 저장 및 라이선스를 제공할 수 있습니다. 조직은 이제 Adobe Stock 엔터프라이즈 플랜을 AEM Assets과 통합하여 AEM의 강력한 자산 관리 기능과 함께 라이선스가 있는 자산을 이제 귀사의 광고 및 마케팅 프로젝트에 폭넓게 사용할 수 있도록 할 수 있습니다.
+description: AEM은 사용자가 AEM에서 직접 Adobe Stock 에셋을 검색, 미리보기, 저장 및 라이선스를 제공할 수 있습니다. 이제 조직은 Adobe Stock 엔터프라이즈 플랜을 AEM Assets과 통합하여 AEM의 강력한 자산 관리 기능을 통해 라이선스가 있는 자산을 이제 귀사의 광고 및 마케팅 프로젝트에 폭넓게 사용할 수 있도록 할 수 있습니다.
 feature: Adobe Stock
-version: 6.5
+version: Experience Manager 6.5
 topic: Content Management
 role: User
 level: Beginner
@@ -10,7 +10,7 @@ last-substantial-update: 2022-06-26T00:00:00Z
 doc-type: Feature Video
 exl-id: a3c3a01e-97a6-494f-b7a9-22057e91f4eb
 duration: 1079
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 1%
@@ -19,13 +19,13 @@ ht-degree: 1%
 
 # AEM Assets에서 Adobe Stock 사용{#using-adobe-stock-assets-with-aem-assets}
 
-AEM 6.4.2는 사용자가 AEM에서 직접 Adobe Stock 에셋을 검색, 미리보기, 저장 및 라이선스할 수 있는 기능을 제공합니다. 조직은 이제 Adobe Stock 엔터프라이즈 플랜을 AEM Assets과 통합하여 AEM의 강력한 자산 관리 기능과 함께 라이선스가 있는 자산을 이제 귀사의 광고 및 마케팅 프로젝트에 폭넓게 사용할 수 있도록 할 수 있습니다.
+AEM 6.4.2는 사용자가 AEM에서 직접 Adobe Stock 에셋을 검색, 미리보기, 저장 및 라이선스를 제공할 수 있습니다. 이제 조직은 Adobe Stock 엔터프라이즈 플랜을 AEM Assets과 통합하여 AEM의 강력한 자산 관리 기능을 통해 라이선스가 있는 자산을 이제 귀사의 광고 및 마케팅 프로젝트에 폭넓게 사용할 수 있도록 할 수 있습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/24678?quality=12&learn=on)
 
 >[!NOTE]
 >
->통합하려면 서비스 팩 2 이상이 배포된 [엔터프라이즈 Adobe Stock 계획](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html) 및 AEM 6.4가 필요합니다. AEM 6.4 서비스 팩에 대한 자세한 내용은 다음 [릴리스 정보](https://helpx.adobe.com/kr/experience-manager/6-4/release-notes/sp-release-notes.html)를 참조하세요.
+>통합하려면 서비스 팩 2 이상이 배포된 [엔터프라이즈 Adobe Stock 계획](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html) 및 AEM 6.4가 필요합니다. AEM 6.4 서비스 팩에 대한 자세한 내용은 이 [릴리스 정보](https://helpx.adobe.com/kr/experience-manager/6-4/release-notes/sp-release-notes.html)를 참조하세요.
 
 Adobe Stock 및 AEM Assets 통합을 통해 콘텐츠 작성자와 마케터는 크리에이티브 또는 마케팅 목적으로 스톡 자산에 대한 라이센스를 쉽게 부여하고 사용할 수 있습니다. 위치 필터를 Adobe Stock으로 추가하거나 AEM Assets 기본 탐색을 탐색하고 Adobe Stock Coral UI 아이콘 검색을 클릭하여 옴니 검색을 사용하여 Stock 자산 검색을 수행할 수 있습니다.
 
@@ -65,7 +65,7 @@ Adobe Stock 및 AEM Assets 통합을 통해 콘텐츠 작성자와 마케터는 
 
 ## AEM Assets을 사용하여 Adobe Stock 설정{#set-up-adobe-stock-with-aem-assets}
 
-AEM 6.4.2는 사용자가 AEM에서 직접 Adobe Stock 에셋을 검색, 미리보기, 저장 및 라이선스할 수 있는 기능을 제공합니다. 이 비디오는 Adobe I/O 콘솔을 사용하여 AEM Assets으로 Adobe 재고를 설정하는 방법에 대한 빠른 연습을 다룹니다.
+AEM 6.4.2는 사용자가 AEM에서 직접 Adobe Stock 에셋을 검색, 미리보기, 저장 및 라이선스를 제공할 수 있습니다. 이 비디오에서는 Adobe I/O 콘솔을 사용하여 AEM Assets으로 Adobe Stocks를 설정하는 방법에 대해 간략하게 설명합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25043?quality=12&learn=on)
 
@@ -75,7 +75,7 @@ AEM 6.4.2는 사용자가 AEM에서 직접 Adobe Stock 에셋을 검색, 미리�
 
 >[!NOTE]
 >
->통합하려면 [서비스 팩 2](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=AEM*+6*+4*+Service*+Pack*&amp;2_group.propertyvalues.property=입니다.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&amp;2_group.propertyvalues.operation=equals&amp;2_group.propertyvalues.0_values=target-version%3Aaem%2F6-4&amp;3_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;3_group.propertyvalues.operation=equals&amp;3_group.propertyvalues.0_values=software-type%3Aservice-and-cumulative-fix&amp;orderby=%40jcr%3Acontent%2Fmetadata%2Fdc%3Atitle&amp;orderby.sort=asc&amp;layout=list&amp;p.offset=0&amp;p.limit=24)이(가) 배포된 [엔터프라이즈 Adobe Stock 계획](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html) 및 AEM 6.4가 필요합니다. AEM 6.4 서비스 팩에 대한 자세한 내용은 다음 [릴리스 정보](https://helpx.adobe.com/kr/experience-manager/6-4/release-notes/sp-release-notes.html)를 참조하세요. 통합을 설정하려면 [Adobe I/O 콘솔](https://console.adobe.io/), [Adobe Admin Console](https://adminconsole.adobe.com/) 및 Adobe Experience Manager에 대한 관리자 권한도 필요합니다.
+>통합하려면 [서비스 팩 2](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=AEM*+6*+4*+Service*+Pack*&amp;2_group.propertyvalues.property=입니다.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&amp;2_group.propertyvalues.operation=equals&amp;2_group.propertyvalues.0_values=target-version%3Aaem%2F6-4&amp;3_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;3_group.propertyvalues.operation=equals&amp;3_group.propertyvalues.0_values=software-type%3Aservice-and-cumulative-fix&amp;orderby=%40jcr%3Acontent%2Fmetadata%2Fdc%3Atitle&amp;orderby.sort=asc&amp;layout=list&amp;p.offset=0&amp;p.limit=24)이(가) 배포된 [엔터프라이즈 Adobe Stock 계획](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html) 및 AEM 6.4가 필요합니다. AEM 6.4 서비스 팩에 대한 자세한 내용은 이 [릴리스 정보](https://helpx.adobe.com/kr/experience-manager/6-4/release-notes/sp-release-notes.html)를 참조하세요. 또한 통합을 설정하려면 [Adobe I/O 콘솔](https://console.adobe.io/), [Adobe Admin Console](https://adminconsole.adobe.com/) 및 Adobe Experience Manager에 대한 관리자 권한이 필요합니다.
 
 ### 설치 {#installations}
 
@@ -94,9 +94,9 @@ AEM 6.4.2는 사용자가 AEM에서 직접 Adobe Stock 에셋을 검색, 미리�
 
 ![Adobe IMS 기술 계정](assets/screen_shot_2018-10-22at12219pm.png)
 
-#### Adobe Stock Cloud Service 설정 {#set-up-adobe-stock-cloud-services}
+#### Adobe Stock 클라우드 서비스 설정 {#set-up-adobe-stock-cloud-services}
 
-1. **도구 > Cloud Service**&#x200B;에서 Adobe Stock에 대한 새 클라우드 서비스 구성을 만듭니다.
+1. **도구 > 클라우드 서비스에서 Adobe Stock에 대한 새 클라우드 서비스 구성을 만듭니다.**
 2. *Adobe Stock Cloud* 구성에 대해 위 섹션에서 만든 *Adobe IMS 구성*&#x200B;을(를) 선택하십시오
 
 3. PROD로 **ENVIRONMENT**&#x200B;를 선택해야 합니다.
@@ -104,7 +104,7 @@ AEM 6.4.2는 사용자가 AEM에서 직접 Adobe Stock 에셋을 검색, 미리�
 5. 로케일을 선택하고 설정을 완료합니다.
 6. Adobe Stock Cloud Service에 사용자/그룹을 추가하여 특정 사용자 또는 그룹에 대한 액세스를 활성화할 수도 있습니다.
 
-![Assets Stock 구성 Adobe](assets/screen_shot_2018-10-22at12425pm.png)
+![Adobe Assets Stock 구성](assets/screen_shot_2018-10-22at12425pm.png)
 
 ### 추가 리소스
 

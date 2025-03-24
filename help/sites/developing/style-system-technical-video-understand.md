@@ -1,15 +1,15 @@
 ---
 title: AEM 스타일 시스템에 대한 코드 작성 방법 이해
-description: 이 비디오에서는 스타일 시스템을 사용하여 Adobe Experience Manager의 핵심 제목 구성 요소 스타일을 지정하는 데 사용되는 CSS(또는 LESS) 및 JavaScript의 구조, 이러한 스타일이 HTML 및 DOM에 적용되는 방법에 대해 살펴봅니다.
+description: 이 비디오에서는 스타일 시스템을 사용하여 Adobe Experience Manager의 핵심 제목 구성 요소 스타일을 지정하는 데 사용되는 CSS(또는 LESS) 및 JavaScript의 구조 및 이러한 스타일이 HTML 및 DOM에 적용되는 방법에 대해 살펴봅니다.
 feature: Style System
-version: 6.4, 6.5, Cloud Service
+version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Intermediate, Experienced
 doc-type: Technical Video
 exl-id: 8fbc3819-3214-4c58-8629-a27eb6f0c545
 duration: 1005
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1065'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # 스타일 시스템에 대한 코드 작성 방법 이해{#understanding-how-to-code-for-the-aem-style-system}
 
-이 비디오에서는 스타일 시스템을 사용하여 Experience Manager의 핵심 제목 구성 요소 스타일을 지정하는 데 사용된 CSS(또는 [!DNL LESS]) 및 JavaScript의 구조, 그리고 이러한 스타일이 HTML 및 DOM에 적용되는 방법에 대해 살펴봅니다.
+이 비디오에서는 스타일 시스템을 사용하여 Experience Manager의 핵심 제목 구성 요소 스타일을 지정하는 데 사용된 CSS(또는 [!DNL LESS]) 및 JavaScript의 구조 및 이러한 스타일이 HTML 및 DOM에 적용되는 방법을 살펴봅니다.
 
 
 ## 스타일 시스템에 대한 코드 작성 방법 이해 {#understanding-how-to-code-for-the-style-system}
@@ -63,7 +63,7 @@ CSS를 선호하는 사용자의 경우 이 코드 조각 아래에 이 [!DNL LE
 }
 ```
 
-위의 [!DNL LESS]은(는) 기본적으로 다음 CSS에 대한 Experience Manager으로 컴파일됩니다.
+위의 [!DNL LESS]은(는) Experience Manager에서 기본적으로 다음 CSS로 컴파일됩니다.
 
 ```css
 /* CSS */
@@ -148,7 +148,7 @@ jQuery(function ($) {
 
 ### HTML 우수 사례 {#html-best-practices}
 
-* HTML(HTL을 통해 생성됨)는 가능한 한 구조적으로 의미 있는 것이어야 합니다. 요소의 불필요한 그룹화/중첩을 피하십시오.
+* HTML(HTL을 통해 생성됨)는 가능한 한 구조적으로 의미적이어야 합니다. 불필요한 요소 그룹화/중첩을 피하십시오.
 * HTML 요소는 BEM 스타일 CSS 클래스를 통해 주소 지정할 수 있어야 합니다.
 
 **양호** - 구성 요소의 모든 요소는 BEM 표기법을 통해 주소 지정 가능합니다.
@@ -175,7 +175,7 @@ jQuery(function ($) {
 
 * 나중에 백엔드를 개발하여 노출해야 하는 데이터가 너무 적으면 더 많은 데이터를 노출하고 숨기는 것이 좋습니다.
 
-   * 작성자 가능 콘텐츠 전환을 구현하면 이 HTML을 기울이지 않게 하는 데 도움이 될 수 있으며, 이를 통해 작성자는 HTML에 작성되는 콘텐츠 요소를 선택할 수 있습니다. 는 모든 스타일에 사용할 수 없는 HTML에 이미지를 작성할 때 특히 중요할 수 있습니다.
+   * 작성자 가능 콘텐츠 전환을 구현하면 이 HTML을 안정적으로 유지하는 데 도움이 될 수 있으며, 이를 통해 작성자는 HTML에 작성되는 콘텐츠 요소를 선택할 수 있습니다. 모든 스타일에 사용할 수 없는 HTML에 이미지를 작성할 때 특히 가 중요할 수 있습니다.
    * CSS에 의해 숨겨진 이벤트 이미지를 불필요하게 가져올 때 값비싼 리소스(예: 이미지)가 기본적으로 노출되는 경우는 이 규칙에서 예외입니다.
 
       * 최신 이미지 구성 요소는 종종 JavaScript을 사용하여 사용 사례(뷰포트)에 가장 적합한 이미지를 선택하고 로드합니다.
@@ -190,7 +190,7 @@ jQuery(function ($) {
 >
 >[BEM](https://en.bem.info/)의 다른 테넌트는 모두 맞춰야 합니다.
 
-* [LESS](https://lesscss.org/)(AEM 기본적으로 지원됨) 또는 [SCSS](https://sass-lang.com/)(사용자 지정 빌드 시스템 필요)와 같은 전처리기(preprocessor)를 사용하여 CSS 정의를 지우고 다시 사용할 수 있도록 하십시오.
+* [LESS](https://lesscss.org/)&#x200B;(기본적으로 AEM에서 지원) 또는 [SCSS](https://sass-lang.com/)&#x200B;(사용자 지정 빌드 시스템 필요)와 같은 전처리기(preprocessor)를 사용하여 CSS 정의를 지우고 다시 사용할 수 있도록 하십시오.
 
 * 선택기 가중치/특이성을 균일하게 유지합니다. 따라서 식별하기 어려운 CSS 캐스케이드 충돌을 피하고 해결하는 데 도움이 됩니다.
 * 각 스타일을 개별 파일로 구성합니다.
@@ -240,11 +240,11 @@ jQuery(function ($) {
 * Style-JavaScript은 주로 CSS의 스타일링을 지원하도록 구성 요소의 DOM을 조작하는 데 사용해야 합니다.
 * 구성 요소가 페이지에 여러 번 표시되는 경우 Javascript 사용을 재평가하고 계산/계산 및 다시 그리기 비용을 이해합니다.
 * 구성 요소가 페이지에 여러 번 나타날 수 있는 경우 비동기적으로(AJAX을 통해) 새 데이터/콘텐츠를 가져오는 경우 Javascript 사용을 다시 평가합니다.
-* Publish 및 작성 경험을 모두 처리합니다.
+* 게시 및 작성 경험을 모두 처리합니다.
 * 가능하면 style-Javascript를 다시 사용하십시오.
    * 예를 들어, 구성 요소의 여러 스타일을 사용하여 이미지를 배경 이미지로 옮겨야 하는 경우 style-JavaScript을 한 번 구현하여 여러 `BLOCK--MODIFIERs`에 연결할 수 있습니다.
 * 가능한 경우 스타일-JavaScript을 기능 JavaScript과 구분합니다.
-* HTL을 통해 이러한 DOM 변경 사항을 HTML에서 직접 매니페스트하는 것과 비교하여 JavaScript의 비용을 평가합니다.
+* HTL을 통해 직접 JavaScript에서 이러한 DOM 변경 사항을 매니페스트하는 것과 비교하여 HTML의 비용을 평가합니다.
    * 스타일-JavaScript을 사용하는 구성 요소에 서버측 수정이 필요한 경우, 이때 JavaScript 조작을 사용할 수 있는지 여부와 구성 요소의 성능 및 지원 가능성에 대한 영향/결과를 평가합니다.
 
 #### 성능 고려 사항 {#performance-considerations}

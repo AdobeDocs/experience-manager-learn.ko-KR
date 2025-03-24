@@ -3,14 +3,14 @@ title: 사용자 정의 열 추가
 description: 사용자 정의 열을 추가하여 워크플로우의 추가 데이터 표시
 feature: Adaptive Forms
 doc-type: article
-version: 6.5
+version: Experience Manager 6.5
 jira: KT-5830
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 0b141b37-6041-4f87-bd50-dade8c0fee7d
 duration: 75
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 * [검토 워크플로우 가져오기](assets/review-workflow.zip)
 * [워크플로 검토](http://localhost:4502/editor.html/conf/global/settings/workflow/models/reviewworkflow.html)
 
-이 워크플로우에는 두 개의 변수(isMarked 및 income)가 정의되어 있으며 변수 설정 구성 요소를 사용하여 값이 설정됩니다. 이러한 변수는 AEM 받은 편지함에 추가될 열로 사용할 수 있습니다
+이 워크플로우에는 두 개의 변수(isMarked 및 income)가 정의되어 있으며 변수 설정 구성 요소를 사용하여 값이 설정됩니다. 이러한 변수는 AEM 받은 편지함에 추가할 열로 사용할 수 있습니다
 
 ## 서비스 만들기
 

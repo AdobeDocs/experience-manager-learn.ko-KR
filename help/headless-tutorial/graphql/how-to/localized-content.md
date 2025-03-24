@@ -1,7 +1,7 @@
 ---
 title: AEM Headless로 현지화된 콘텐츠 사용
-description: GraphQL을 사용하여 현지화된 콘텐츠를 AEM에 쿼리하는 방법에 대해 알아봅니다.
-version: Cloud Service
+description: GraphQL을 사용하여 AEM에 지역화된 콘텐츠를 쿼리하는 방법에 대해 알아봅니다.
+version: Experience Manager as a Cloud Service
 feature: GraphQL API
 topic: Headless
 role: Developer
@@ -10,20 +10,20 @@ jira: KT-10254
 thumbnail: KT-10254.jpeg
 exl-id: 5e3d115b-f3a1-4edc-86ab-3e0713a36d54
 duration: 130
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '472'
 ht-degree: 0%
 
 ---
 
-# AEM Headless를 사용한 현지화된 콘텐츠
+# AEM Headless로 현지화된 콘텐츠
 
-AEM은 Headless 콘텐츠에 대한 [번역 통합 프레임워크](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/translation/integration-framework.html)를 제공하여 콘텐츠 조각 및 지원 에셋을 로케일에서 사용하기 위해 쉽게 번역할 수 있도록 합니다. 페이지, 경험 조각, Assets 및 Forms과 같은 다른 AEM 콘텐츠를 번역하는 데 사용되는 것과 동일한 프레임워크입니다. [Headless 콘텐츠를 번역](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html?lang=ko-KR)하고 게시하면 Headless 애플리케이션에서 사용할 수 있습니다.
+AEM은 Headless 콘텐츠를 위한 [번역 통합 프레임워크](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/translation/integration-framework.html)를 제공하여 콘텐츠 조각 및 지원 에셋을 로케일에서 사용하기 위해 쉽게 번역할 수 있도록 합니다. 페이지, 경험 조각, Assets 및 Forms과 같은 다른 AEM 콘텐츠를 번역하는 데 사용되는 것과 동일한 프레임워크입니다. [Headless 콘텐츠를 번역](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html)하고 게시하면 Headless 애플리케이션에서 사용할 수 있습니다.
 
 ## Assets 폴더 구조{#assets-folder-structure}
 
-AEM의 지역화된 콘텐츠 조각이 [권장 지역화 구조](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/getting-started.html#recommended-structure)를 따르는지 확인하십시오.
+AEM의 지역화된 콘텐츠 조각이 [권장된 지역화 구조](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/getting-started.html#recommended-structure)를 따르는지 확인하십시오.
 
 ![지역화된 AEM 자산 폴더](./assets/localized-content/asset-folders.jpg)
 
@@ -39,7 +39,7 @@ AEM의 지역화된 콘텐츠 조각이 [권장 지역화 구조](https://experi
 
 ## GraphQL 지속 쿼리
 
-AEM은 로케일 코드 별로 콘텐츠를 자동으로 필터링하는 `_locale` GraphQL 필터를 제공합니다. 예를 들어 [WKND 사이트 프로젝트](https://github.com/adobe/aem-guides-wknd)의 모든 영문 모험을 쿼리하는 작업은 다음과 같이 정의된 새 지속 쿼리 `wknd-shared/adventures-by-locale`을(를) 사용하여 수행할 수 있습니다.
+AEM에서는 로케일 코드 별로 콘텐츠를 자동으로 필터링하는 `_locale` GraphQL 필터를 제공합니다. 예를 들어 [WKND 사이트 프로젝트](https://github.com/adobe/aem-guides-wknd)의 모든 영문 모험을 쿼리하는 작업은 다음과 같이 정의된 새 지속 쿼리 `wknd-shared/adventures-by-locale`을(를) 사용하여 수행할 수 있습니다.
 
 ```graphql
 query($locale: String!) {
@@ -109,7 +109,7 @@ export default function LocaleSwitcher() {
 
 ### `_locale` 필터를 사용하여 콘텐츠 쿼리{#adventures}
 
-모험 구성 요소는 모든 모험을 로케일별로 AEM에 쿼리하고 제목을 나열합니다. 이 작업은 React 컨텍스트에 저장된 로케일 값을 `_locale` 필터를 사용하여 쿼리에 전달함으로써 수행됩니다.
+모험 구성 요소는 AEM에서 로케일별로 모든 모험 페이지를 쿼리하고 제목을 나열합니다. 이 작업은 React 컨텍스트에 저장된 로케일 값을 `_locale` 필터를 사용하여 쿼리에 전달함으로써 수행됩니다.
 
 이 접근 방식은 애플리케이션의 다른 쿼리로 확장되어 모든 쿼리에 사용자의 로케일 선택에 의해 지정된 콘텐츠만 포함되도록 할 수 있습니다.
 

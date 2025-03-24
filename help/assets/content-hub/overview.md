@@ -1,7 +1,7 @@
 ---
 title: AEM Assets Content Hub
 description: AEN Assets as a Cloud Service의 Content Hub에 대해 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Asset Management, Upload, Marketing Campaigns
 topic: Content Supply Chain, Content Management
 role: User
@@ -10,10 +10,10 @@ doc-type: Catalog
 duration: 60
 last-substantial-update: 2024-11-20T00:00:00Z
 exl-id: ea7b852e-b40d-44ef-ba63-69081e68456e
-source-git-commit: 3a64b985bac3e13755a37064f5e55547b0eb8496
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '467'
-ht-degree: 7%
+ht-degree: 10%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 7%
 
 ![AEM Assets Content Hub](./assets/overview/hero.png){align=center}
 
-Adobe Experience Manager Assets as a Cloud Service Content Hub에서 에셋을 업로드하고, 태그를 적용하고, 승인 워크플로를 이해하는 방법에 대해 알아봅니다.
+Adobe Experience Manager Assets as a Cloud Service Content Hub에서 에셋을 업로드하고, 태그를 적용하고 승인 워크플로를 이해하는 방법에 대해 알아봅니다.
 
 
 ## Content Hub 비디오
@@ -92,8 +92,8 @@ Adobe Experience Manager Assets as a Cloud Service Content Hub에서 에셋을 �
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/add-assets" title="에셋 추가" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3432980/?format=jpeg&nocache=1732113280960" alt="에셋 추가"
+                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/add-assets" title="자산 추가" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3432980/?format=jpeg&nocache=1732113280960" alt="자산 추가"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -101,7 +101,7 @@ Adobe Experience Manager Assets as a Cloud Service Content Hub에서 에셋을 �
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/add-assets" target="_blank" rel="referrer" title="에셋 추가">자산 추가</a>
+                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/add-assets" target="_blank" rel="referrer" title="자산 추가">자산 추가</a>
                     </p>
                     <p class="is-size-6">Adobe Experience Manager Assets Content Hub에서 에셋을 업로드하고, 태그를 적용하고 승인 워크플로를 이해하는 방법에 대해 알아봅니다.</p>
                 </div>
@@ -149,7 +149,7 @@ Adobe Experience Manager Assets as a Cloud Service Content Hub에서 에셋을 �
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/image-variants" target="_blank" rel="referrer" title="이미지 변형 만들기">이미지 변형 만들기</a>
                     </p>
-                    <p class="is-size-6">Experience Manager Assets Content Hub 내에서 Adobe Express을 사용하여 이미지 변형을 만들고 편집하는 방법을 알아봅니다.</p>
+                    <p class="is-size-6">Experience Manager Assets Content Hub 내에서 Adobe Express을 사용하여 이미지 변형을 만들고 편집하는 방법에 대해 알아봅니다.</p>
                 </div>
                 <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/image-variants" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">시청</span>
@@ -281,7 +281,7 @@ Content Hub Content Hub을 이해하고 최대한 활용하는 데 도움이 되
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/frequently-asked-questions-content-hub" target="_blank" rel="referrer" title="CONTENT HUB FAQ">Content Hub FAQ</a>
                     </p>
-                    <p class="is-size-6">Content Hub에 대해 가장 자주 묻는 질문(FAQ) 중 일부에 대한 응답을 얻을 수 있습니다.</p>
+                    <p class="is-size-6">Content Hub에 대한 가장 자주 묻는 질문(FAQ)에 대한 답변을 받아 보십시오.</p>
                 </div>
                 <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/frequently-asked-questions-content-hub" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">자세히 알아보기</span>

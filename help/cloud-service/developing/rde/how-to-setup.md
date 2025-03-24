@@ -2,7 +2,7 @@
 title: 신속한 개발 환경을 설정하는 방법
 description: AEM as a Cloud Service을 위한 신속한 개발 환경을 설정하는 방법에 대해 알아봅니다.
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Beginner
@@ -11,7 +11,7 @@ thumbnail: KT-11861.png
 last-substantial-update: 2024-06-04T00:00:00Z
 exl-id: ab9ee81a-176e-4807-ba39-1ea5bebddeb2
 duration: 485
-source-git-commit: f714adaa9bb637c0c7b17837c1d4b9f2be737c5c
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '668'
 ht-degree: 0%
@@ -35,7 +35,7 @@ AEM as a Cloud Service에서 **RDE(빠른 개발 환경)를 설정하는 방법*
 
 다음은 로컬에 설치해야 합니다.
 
-- [Node.js](https://nodejs.org/en/)(LTS - 장기 지원)
+- [Node.js](https://nodejs.org/en/)&#x200B;(LTS - 장기 지원)
 - [npm 8+](https://docs.npmjs.com/)
 
 ## 로컬 설정
@@ -60,7 +60,7 @@ RDE와 상호 작용하려면 aio CLI에 플러그인이 설치되어 있고 조
 
 `aio cli`의 `plugins:install` 명령을 사용하여 AEM RDE 플러그인을 설치하고 설정합니다.
 
-1. `aio cli`의 `plugins:install` 명령을 사용하여 aio CLI의 AEM RDE 플러그인을 설치하십시오.
+1. `aio cli`의 `plugins:install` 명령을 사용하여 aio CLI의 AEM RDE 플러그인을 설치합니다.
 
    ```shell
    $ aio plugins:install @adobe/aio-cli-plugin-aem-rde    
@@ -160,7 +160,7 @@ RDE와 상호 작용하도록 aio CLI 플러그인을 구성해야 합니다.
 $ aio aem:rde:status
 ```
 
-RDE 상태 정보는 작성자 및 게시 서비스의 환경 상태, _AEM 프로젝트_ 번들 및 구성 목록과 같이 표시됩니다.
+RDE 상태 정보는 환경 상태, 작성자 및 게시 서비스의 _AEM 프로젝트_ 번들 및 구성 목록과 같이 표시됩니다.
 
 ## 다음 단계
 
@@ -175,6 +175,6 @@ RDE 상태 정보는 작성자 및 게시 서비스의 환경 상태, _AEM 프�
 
 [aio CLI 사용 및 명령](https://github.com/adobe/aio-cli#usage)
 
-AEM 빠른 개발 환경과의 상호 작용을 위한 [Adobe I/O Runtime CLI 플러그인](https://github.com/adobe/aio-cli-plugin-aem-rde#aio-cli-plugin-aem-rde)
+[AEM 빠른 개발 환경과의 상호 작용을 위한 Adobe I/O Runtime CLI 플러그인](https://github.com/adobe/aio-cli-plugin-aem-rde#aio-cli-plugin-aem-rde)
 
 [Cloud Manager aio CLI 플러그인](https://github.com/adobe/aio-cli-plugin-cloudmanager)

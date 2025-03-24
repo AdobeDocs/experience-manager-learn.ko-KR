@@ -1,14 +1,14 @@
 ---
 title: AEM Headless의 고급 개념 - GraphQL
 description: Adobe Experience Manager(AEM) GraphQL API의 고급 개념을 설명하는 종단간 자습서입니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: daae6145-5267-4958-9abe-f6b7f469f803
 duration: 441
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1052'
 ht-degree: 0%
@@ -19,17 +19,17 @@ ht-degree: 0%
 
 {{aem-headless-trials-promo}}
 
-이 종단간 튜토리얼은 AEM(Adobe Experience Manager) Headless 및 GraphQL의 기본 사항을 다루는 [기본 튜토리얼](../multi-step/overview.md)을 계속합니다. 고급 자습서에서는 클라이언트 애플리케이션에서 GraphQL 지속 쿼리를 사용하는 등 콘텐츠 조각 모델, 콘텐츠 조각 및 AEM GraphQL 지속 쿼리를 사용하여 작업하는 측면을 자세히 설명합니다.
+이 종단간 튜토리얼은 Adobe Experience Manager(AEM) Headless 및 GraphQL의 기본 사항을 다루는 [기본 튜토리얼](../multi-step/overview.md)을 계속합니다. 고급 자습서에서는 클라이언트 애플리케이션에서 GraphQL 지속 쿼리를 사용하는 등 콘텐츠 조각 모델, 콘텐츠 조각 및 AEM GraphQL 지속 쿼리를 사용하여 작업하는 측면을 자세히 설명합니다.
 
 ## 사전 요구 사항
 
 AEM as a Cloud Service에 대한 [빠른 설정](../quick-setup/cloud-service.md)을 완료하여 AEM as a Cloud Service 환경을 구성하십시오.
 
-이 고급 자습서를 진행하기 전에 이전 [기본 자습서](../multi-step/overview.md) 및 [비디오 시리즈](../video-series/modeling-basics.md) 자습서를 완료하는 것이 좋습니다. 로컬 AEM 환경을 사용하여 자습서를 완료할 수 있지만 이 자습서에서는 AEM as a Cloud Service의 워크플로우만 다룹니다.
+이 고급 자습서를 진행하기 전에 이전 [기본 자습서](../multi-step/overview.md) 및 [비디오 시리즈](../video-series/modeling-basics.md) 자습서를 완료하는 것이 좋습니다. 로컬 AEM 환경을 사용하여 자습서를 완료할 수 있지만, 이 자습서에서는 AEM as a Cloud Service의 워크플로우만 다룹니다.
 
 >[!CAUTION]
 >
->AEM as a Cloud Service 환경에 액세스할 수 없는 경우 로컬 SDK를 사용하여 [AEM Headless 빠른 설정](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/quick-setup/local-sdk.html)을 완료할 수 있습니다. 하지만 콘텐츠 조각 탐색과 같은 일부 제품 UI 페이지는 다르다는 점에 유의해야 합니다.
+>AEM as a Cloud Service 환경에 액세스할 수 없는 경우 로컬 SDK을 사용하여 [AEM Headless 빠른 설정](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/quick-setup/local-sdk.html)을 완료할 수 있습니다. 하지만 콘텐츠 조각 탐색과 같은 일부 제품 UI 페이지는 다르다는 점에 유의해야 합니다.
 
 
 
@@ -41,9 +41,9 @@ AEM as a Cloud Service에 대한 [빠른 설정](../quick-setup/cloud-service.md
 * 중첩된 콘텐츠 및 조각 참조로 작업하는 동안 콘텐츠 조각을 작성하고 콘텐츠 조각 작성 거버넌스에 대한 폴더 정책을 구성합니다.
 * 변수 및 지시문과 함께 GraphQL 쿼리를 사용하여 AEM GraphQL API 기능을 살펴보십시오.
 * AEM의 매개 변수를 사용하여 GraphQL 쿼리를 지속하고 지속된 쿼리와 함께 캐시 제어 매개 변수를 사용하는 방법을 알아봅니다.
-* AEM Headless JavaScript SDK를 사용하여 지속 쿼리에 대한 요청을 샘플 WKND GraphQL React 앱에 통합합니다.
+* AEM Headless GraphQL SDK을 사용하여 지속 쿼리에 대한 요청을 샘플 WKND JavaScript React 앱에 통합합니다.
 
-## AEM Headless 개요의 고급 개념
+## AEM Headless의 고급 개념 개요
 
 다음 비디오에서는 이 자습서에서 다루는 개념에 대한 높은 수준의 개요를 제공합니다. 이 자습서에는 고급 데이터 유형이 포함된 콘텐츠 조각 모델을 정의하고, 콘텐츠 조각을 중첩하며, AEM에서 GraphQL 쿼리를 지속하는 작업이 포함되어 있습니다.
 
@@ -56,12 +56,12 @@ AEM as a Cloud Service에 대한 [빠른 설정](../quick-setup/cloud-service.md
 
 ## 프로젝트 설정
 
-WKND 사이트 프로젝트에는 필요한 모든 구성이 있으므로 [빠른 설정](../quick-setup/cloud-service.md)을 완료한 후 바로 자습서를 시작할 수 있습니다. 이 섹션에서는 고유한 AEM Headless 프로젝트를 만들 때 사용할 수 있는 몇 가지 중요한 단계만 강조합니다.
+WKND 사이트 프로젝트에는 필요한 모든 구성이 있으므로 [빠른 설정](../quick-setup/cloud-service.md)을 완료한 후 바로 자습서를 시작할 수 있습니다. 이 섹션에서는 고유한 AEM Headless 프로젝트를 만들 때 사용할 수 있는 몇 가지 중요한 단계만 강조 표시합니다.
 
 
 ### 기존 구성 검토
 
-AEM에서 새 프로젝트를 시작하는 첫 번째 단계는 구성, 작업 공간 및 GraphQL API 엔드포인트를 만드는 것입니다. 구성을 검토하거나 만들려면 **도구** > **일반** > **구성 브라우저**&#x200B;로 이동하십시오.
+AEM에서 새 프로젝트를 시작하는 첫 번째 단계는 구성 및 작업 공간을 만들고 GraphQL API 끝점을 만드는 것입니다. 구성을 검토하거나 만들려면 **도구** > **일반** > **구성 브라우저**&#x200B;로 이동하십시오.
 
 ![구성 브라우저로 이동](assets/overview/create-configuration.png)
 
@@ -107,7 +107,7 @@ AEM에서 새 프로젝트를 시작하는 첫 번째 단계는 구성, 작업 �
 
 ![속성 선택](assets/overview/properties.png)
 
-그런 다음 **Cloud Service** 탭으로 이동하여 **클라우드 구성** 필드에서 폴더 아이콘을 선택합니다.
+그런 다음 **클라우드 서비스** 탭으로 이동하여 **클라우드 구성** 필드에서 폴더 아이콘을 선택합니다.
 
 ![클라우드 구성](assets/overview/cloud-conf.png)
 
@@ -130,7 +130,7 @@ AEM에서 새 프로젝트를 시작하는 첫 번째 단계는 구성, 작업 �
 
 [React 앱 - 고급 자습서 - WKND 모험](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/advanced-tutorial/README.md) 프로젝트를 사용하여 샘플 응용 프로그램을 검토하고 탐색할 수 있습니다. 이 샘플 애플리케이션은 지속 GraphQL 쿼리를 호출하여 AEM에서 콘텐츠를 검색하고 몰입형 경험에서 렌더링합니다.
 
-## 시작
+## 시작하기
 
 이 고급 자습서를 시작하려면 다음 단계를 따르십시오.
 

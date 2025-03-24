@@ -1,7 +1,7 @@
 ---
 title: AEM as a Cloud Service에서 Cloud Manager 사용
-description: AEM as a Cloud Service용 Cloud Manager에 대해 알아보고 AMS(Adobe 관리 서비스)의 AEM용 Cloud Manager과의 차이점에 대해 알아봅니다.
-version: Cloud Service
+description: AEM as a Cloud Service용 Cloud Manager에 대해 알아보고 Adobe Manage Services(AMS)의 AEM용 Cloud Manager과의 차이점에 대해 알아봅니다.
+version: Experience Manager as a Cloud Service
 feature: Cloud Manager
 topic: Migration, Upgrade
 role: Architect, Developer
@@ -10,7 +10,7 @@ jira: KT-8632
 thumbnail: 336961.jpeg
 exl-id: 9c641a90-be62-49c1-b8c0-d45d26055b94
 duration: 843
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 2%
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 # Cloud Manager
 
-AEM as a Cloud Service용 Cloud Manager에 대해 알아보고 AMS(Adobe 관리 서비스)의 AEM용 Cloud Manager과의 차이점에 대해 알아봅니다.
+AEM as a Cloud Service용 Cloud Manager에 대해 알아보고 Adobe Manage Services(AMS)의 AEM용 Cloud Manager과의 차이점에 대해 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336961?quality=12&learn=on)
 

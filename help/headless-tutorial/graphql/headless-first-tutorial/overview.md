@@ -1,7 +1,7 @@
 ---
 title: AEM Headless 첫 번째 자습서
-description: AEM Headless 첫 번째 애플리케이션이 되는 방법을 알아봅니다.
-version: Cloud Service
+description: AEM Headless 첫 번째 애플리케이션인 방법을 알아봅니다.
+version: Experience Manager as a Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Development
 role: Developer
@@ -12,7 +12,7 @@ jira: KT-13270
 thumbnail: KT-13270.jpeg
 exl-id: b0ac4b50-5fe5-41a1-9530-8e593d7000c9
 duration: 89
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 2%
@@ -25,11 +25,11 @@ ht-degree: 2%
 
 AEM Headless API 및 GraphQL에서 완벽하게 작동하는 React를 사용하여 웹 경험을 구축하는 방법에 대한 자습서를 시작합니다. 이 튜토리얼에서는 React, Adobe Experience Manager(AEM) Headless API 및 GraphQL의 기능을 결합하여 동적 및 대화형 웹 애플리케이션을 만드는 프로세스를 안내합니다.
 
-React는 간소화, 재사용성 및 구성 요소 기반 아키텍처로 알려진 사용자 인터페이스 구축을 위해 널리 사용되는 JavaScript 라이브러리입니다. AEM은 강력한 컨텐츠 관리 기능을 제공하며 개발자가 다양한 채널 및 애플리케이션을 통해 AEM에 저장된 컨텐츠 및 데이터에 액세스할 수 있도록 해주는 Headless API를 제공합니다.
+React는 간소화, 재사용성 및 구성 요소 기반 아키텍처로 알려진 사용자 인터페이스 구축을 위해 널리 사용되는 JavaScript 라이브러리입니다. AEM은 강력한 컨텐츠 관리 기능을 제공하고 개발자가 다양한 채널 및 애플리케이션을 통해 AEM에 저장된 컨텐츠 및 데이터에 액세스할 수 있도록 해주는 Headless API를 제공합니다.
 
-AEM Headless API를 활용하면 AEM 인스턴스에서 콘텐츠, 에셋 및 데이터를 검색하고 이를 사용하여 React 애플리케이션을 실행할 수 있습니다. API에 대한 유연한 쿼리 언어인 GraphQL은 AEM 인스턴스에서 특정 데이터를 요청하는 효율적이고 정확한 방법을 제공하여 React와 AEM 간의 원활한 통합을 지원합니다.
+AEM Headless API를 활용하면 AEM 인스턴스에서 컨텐츠, 자산 및 데이터를 검색하고 이를 사용하여 React 애플리케이션을 구동할 수 있습니다. API에 대한 유연한 쿼리 언어인 GraphQL은 AEM 인스턴스에서 특정 데이터를 요청하는 효율적이고 정확한 방법을 제공하여 React와 AEM 간에 매끄럽게 통합할 수 있습니다.
 
-![AEM Headless 첫 번째 자습서](./assets/overview/overview.png)
+![AEM 헤드리스 첫 번째 자습서](./assets/overview/overview.png)
 
 이 자습서에서는 GraphQL과 함께 React 및 AEM Headless API를 사용하여 웹 경험을 구축하는 단계별 프로세스를 안내합니다. 개발 환경을 설정하고, React와 AEM을 연결하고, GraphQL 쿼리를 사용하여 콘텐츠를 검색하고, 웹 애플리케이션에서 동적으로 렌더링하는 방법에 대해 알아봅니다.
 

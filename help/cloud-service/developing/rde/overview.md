@@ -1,8 +1,8 @@
 ---
 title: 신속한 개발 환경
-description: AEM 빠른 개발 환경에 대해 알아보고, 개발 환경과 개발 주기에서 배포 주기까지 개발 속도를 높이는 데 어떻게 도움이 되는지 알아봅니다.
+description: AEM 신속한 개발 환경, 해당 환경과 개발에서 배포 주기까지의 속도를 높이는 데 어떻게 도움이 되는지에 대해 알아봅니다.
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Beginner
@@ -11,10 +11,10 @@ thumbnail: KT-11860.png
 last-substantial-update: 2023-02-15T00:00:00Z
 exl-id: 8fc6d0ef-8753-480b-a504-e7943de8883c
 duration: 99
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '87'
-ht-degree: 9%
+ht-degree: 11%
 
 ---
 

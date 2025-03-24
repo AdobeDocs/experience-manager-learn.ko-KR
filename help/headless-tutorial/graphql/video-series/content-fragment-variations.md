@@ -1,7 +1,7 @@
 ---
 title: 콘텐츠 조각 변형
 description: 콘텐츠 조각의 변형을 만들고 몇 가지 일반적인 사용 사례를 살펴보는 방법에 대해 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Headless, Content Management
 feature: Content Fragments, GraphQL API
 role: Developer
@@ -11,7 +11,7 @@ thumbnail: 333295.jpg
 last-substantial-update: 2023-05-17T00:00:00Z
 exl-id: c7fb28b8-494f-47d6-95b7-01ef444abe99
 duration: 340
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '68'
 ht-degree: 8%

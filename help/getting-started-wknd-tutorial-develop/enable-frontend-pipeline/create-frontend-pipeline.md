@@ -1,7 +1,7 @@
 ---
 title: 프론트엔드 파이프라인을 사용하여 배포
 description: 프론트엔드 리소스를 빌드하고 AEM as a Cloud Service의 기본 제공 CDN에 배포하는 프론트엔드 파이프라인을 만들고 실행하는 방법에 대해 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: AEM Project Archetype, Cloud Manager, CI-CD Pipeline
 topic: Content Management, Development, Development, Architecture
 role: Developer, Architect, Admin
@@ -13,7 +13,7 @@ recommendations: noDisplay, noCatalog
 doc-type: Tutorial
 exl-id: d6da05e4-bd65-4625-b9a4-cad8eae3c9d7
 duration: 225
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 # 프론트엔드 파이프라인을 사용하여 배포
 
-이 장에서는 Cloud Manager Adobe에서 프론트엔드 파이프라인을 만들고 실행합니다. `ui.frontend` 모듈에서만 파일을 빌드하고 AEM as a Cloud Service의 기본 제공 CDN에 배포합니다. 따라서 `/etc.clientlibs` 기반 프론트엔드 리소스 배달에서 벗어납니다.
+이 장에서는 Adobe Cloud Manager에서 프론트엔드 파이프라인을 만들고 실행합니다. `ui.frontend` 모듈에서만 파일을 빌드하고 AEM as a Cloud Service의 기본 제공 CDN에 배포합니다. 따라서 `/etc.clientlibs` 기반 프론트엔드 리소스 배달에서 벗어납니다.
 
 
 ## 목표 {#objectives}
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 ## 사전 요구 사항 {#prerequisites}
 
-이 자습서는 여러 부분으로 구성되어 있으며 [표준 AEM 프로젝트 업데이트](./update-project.md)에 설명된 단계를 완료했다고 가정합니다.
+여러 부분으로 구성된 자습서이며 [표준 AEM 프로젝트 업데이트](./update-project.md)에 설명된 단계가 완료된 것으로 간주됩니다.
 
 Cloud Manager에서 파이프라인을 만들고 배포할 수 있는 [권한](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=en#role-definitions)과(와) AEM as a Cloud Service 환경에 대한 [액세스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html)이 있는지 확인하십시오.
 
@@ -70,7 +70,7 @@ __코드 위치__ 필드의 __가장 중요한__ 값은 `/ui.frontend`이고 마
 
 ## 배포 시퀀스
 
-* 먼저 새로 이름이 변경된 __FullStack WKND Deploy to Dev__ 파이프라인을 실행하여 AEM 저장소에서 WKND clientlib 파일을 제거합니다. 가장 중요한 것은 __Sling 구성__ 파일(`SiteConfig`, `HtmlPageItemsConfig`)을 추가하여 프론트엔드 파이프라인 계약에 대한 AEM을 준비하는 것입니다.
+* 먼저 새로 이름이 변경된 __FullStack WKND Deploy to Dev__ 파이프라인을 실행하여 AEM 저장소에서 WKND clientlib 파일을 제거합니다. 가장 중요한 것은 __Sling 구성__ 파일(`SiteConfig`, `HtmlPageItemsConfig`)을 추가하여 AEM에서 프론트엔드 파이프라인 계약을 준비하도록 하는 것입니다.
 
 ![스타일이 지정되지 않은 WKND 사이트](assets/unstyled-wknd-site.png)
 
@@ -87,7 +87,7 @@ __코드 위치__ 필드의 __가장 중요한__ 값은 `/ui.frontend`이고 마
 
 ## 스타일 변경 사항 및 새로운 게재 패러다임 확인
 
-* WKND 사이트의 모든 페이지를 열면 텍스트 색상 us __Adobe 빨간색__&#x200B;을(를) 볼 수 있고 CDN에서 프론트엔드 리소스(CSS, JS) 파일이 전달됩니다. 리소스 요청 호스트 이름이 `https://static-pXX-eYY.p123-e456.adobeaemcloud.com/$HASH_VALUE$/theme/site.css`(으)로 시작하며 마찬가지로 `HtmlPageItemsConfig` 파일에서 참조한 site.js 또는 기타 정적 리소스도 시작합니다.
+* WKND 사이트의 페이지를 열면 텍스트 색상 us __Adobe Red__&#x200B;을(를) 볼 수 있고 CDN에서 프론트엔드 리소스(CSS, JS) 파일이 전달됩니다. 리소스 요청 호스트 이름이 `https://static-pXX-eYY.p123-e456.adobeaemcloud.com/$HASH_VALUE$/theme/site.css`(으)로 시작하며 마찬가지로 `HtmlPageItemsConfig` 파일에서 참조한 site.js 또는 기타 정적 리소스도 시작합니다.
 
 
 ![새로 스타일이 지정된 WKND 사이트](assets/newly-styled-wknd-site.png)
@@ -96,7 +96,7 @@ __코드 위치__ 필드의 __가장 중요한__ 값은 `/ui.frontend`이고 마
 
 >[!TIP]
 >
->여기에서 `$HASH_VALUE$`은(는) __FrontEnd WKND를 Dev__ 파이프라인의 __CONTENT HASH__ 필드에 표시되는 것과 동일합니다. AEM에 프론트엔드 리소스의 CDN URL이 통지되며 값은 __prefixPath__ 속성 아래 `/conf/wknd/sling:configs/com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig/jcr:content`에 저장됩니다.
+>여기에서 `$HASH_VALUE$`은(는) __FrontEnd WKND를 Dev__ 파이프라인의 __CONTENT HASH__ 필드에 표시되는 것과 동일합니다. AEM은 프론트엔드 리소스의 CDN URL에 대한 알림을 받습니다. 값은 __prefixPath__ 속성 아래 `/conf/wknd/sling:configs/com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig/jcr:content`에 저장됩니다.
 
 
 ![해시 값 상관 관계](assets/hash-value-correlartion.png)

@@ -3,14 +3,14 @@ title: Windows에서 AEM Forms을 설치하기 위한 간소화된 단계
 description: Windows에서 AEM Forms을 설치하는 빠르고 간편한 단계
 feature: Adaptive Forms
 type: Tutorial
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Admin
 level: Beginner
 exl-id: 80288765-0b51-44a9-95d3-3bdb2da38615
 last-substantial-update: 2020-06-09T00:00:00Z
 duration: 113
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '545'
 ht-degree: 1%
@@ -40,7 +40,7 @@ AEM Forms을 설치하려면 [공식 설명서](https://helpx.adobe.com/kr/exper
 
 * 적절한 JDK가 설치되어 있는지 확인합니다.
    * 필요한 AEM 6.2: Oracle SE 8 JDK 1.8.x(64비트)
-   * AEM 6.3 및 AEM 6.4 필요: Oracle SE 8 JDK 1.8.x(64비트)
+   * 필요한 AEM 6.3 및 AEM 6.4: Oracle SE 8 JDK 1.8.x(64비트)
    * AEM 6.5 JDK 8 또는 JDK 11이 필요합니다.
    * [공식 JDK 요구 사항](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/introduction/technical-requirements.html?lang=ko-KR)이 여기에 나열됩니다.
 * JAVA_HOME이 설치된 JDK를 가리키도록 설정되어 있는지 확인합니다.
@@ -86,4 +86,4 @@ AEM Forms을 설치하려면 [공식 설명서](https://helpx.adobe.com/kr/exper
 1. 변경 사항을 저장합니다.
 
 축하합니다!!! 이제 시스템에 AEM Forms을 설치하고 구성했습니다.
-필요에 따라 서버에서 [Reader 확장](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) 또는 [PDFG](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html)를 구성할 수 있습니다
+필요에 따라 서버에서 [Reader 확장 기능](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) 또는 [PDFG](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html)을 구성할 수 있습니다

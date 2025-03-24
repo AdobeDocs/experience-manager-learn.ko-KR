@@ -1,7 +1,7 @@
 ---
 title: 테마 설정 워크플로 | AEM 빠른 사이트 생성
 description: Adobe Experience Manager 사이트의 테마 소스를 업데이트하여 브랜드별 스타일을 적용하는 방법에 대해 알아봅니다. 프록시 서버를 사용하여 CSS 및 Javascript 업데이트의 실시간 미리 보기를 보는 방법에 대해 알아봅니다. 이 튜토리얼에서는 Adobe Cloud Manager의 프론트엔드 파이프라인을 사용하여 AEM 사이트에 테마 업데이트를 배포하는 방법에 대해서도 설명합니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Core Components
 topic: Content Management, Development
 role: Developer
@@ -12,7 +12,7 @@ doc-type: Tutorial
 exl-id: 98946462-1536-45f9-94e2-9bc5d41902d4
 recommendations: noDisplay, noCatalog
 duration: 1275
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '458'
 ht-degree: 1%
@@ -43,7 +43,7 @@ ht-degree: 1%
 
 비디오의 높은 수준 단계:
 
-1. 프록시 개발 서버와 함께 사용할 AEM에서 로컬 사용자를 만듭니다.
+1. 프록시 개발 서버와 함께 사용할 AEM 로컬 사용자를 만듭니다.
 1. AEM에서 테마 소스를 다운로드하고 VSCode와 같은 로컬 IDE를 사용하여 엽니다.
 1. 테마 소스를 수정하고 프록시 개발 서버를 사용하여 CSS 및 JavaScript 변경 내용을 실시간으로 미리 봅니다.
 1. 잡지 기사가 WKND 브랜드 스타일 및 모형과 일치하도록 테마 소스를 업데이트합니다.
@@ -72,7 +72,7 @@ Cloud Manager의 프론트엔드 파이프라인을 사용하여 AEM 환경에 �
    ```
 
 1. Cloud Manager에서 [프론트엔드 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html)을 구성하여 프론트엔드 코드를 배포합니다.
-1. 프론트엔드 파이프라인을 실행하여 타겟 AEM 환경에 업데이트를 배포합니다.
+1. 프론트엔드 파이프라인을 실행하여 대상 AEM 환경에 업데이트를 배포합니다.
 
 ### 보고서 예
 
@@ -83,8 +83,8 @@ Cloud Manager의 프론트엔드 파이프라인을 사용하여 AEM 환경에 �
 
 ## 축하합니다! {#congratulations}
 
-축하합니다. 방금 AEM에 테마를 업데이트하고 배포했습니다!
+축하합니다. 방금 테마를 업데이트하고 AEM에 배포했습니다!
 
 ### 다음 단계 {#next-steps}
 
-[AEM Project Archetype](../project-archetype/overview.md)을(를) 사용하여 사이트를 만들어 AEM 개발에 대해 자세히 알아보고 기본 기술에 대해 더 자세히 알아보십시오.
+[AEM Project Archetype](../project-archetype/overview.md)을(를) 사용하여 사이트를 만들어 AEM 개발에 대해 자세히 알아보고 기본 기술에 대해 자세히 알아보십시오.

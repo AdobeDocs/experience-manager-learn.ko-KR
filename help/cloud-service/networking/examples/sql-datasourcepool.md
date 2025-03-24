@@ -1,7 +1,7 @@
 ---
 title: JDBC DataSourcePool을 사용한 SQL 연결
 description: AEM의 JDBC DataSourcePool 및 이그레스 포트를 사용하여 AEM as a Cloud Service에서 SQL 데이터베이스에 연결하는 방법에 대해 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Security
 role: Architect, Developer
@@ -10,7 +10,7 @@ jira: KT-9355
 thumbnail: KT-9355.jpeg
 exl-id: c1a26dcb-b2ae-4015-b865-2ce32f4fa869
 duration: 117
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # JDBC DataSourcePool을 사용한 SQL 연결
 
-SQL 데이터베이스(및 HTTP/HTTPS가 아닌 서비스)에 대한 연결은 AEM에서 프록시되어야 하며 AEM의 DataSourcePool OSGi 서비스를 사용하여 연결을 관리하는 연결도 포함됩니다.
+SQL 데이터베이스(및 기타 비HTTP/HTTPS 서비스)에 대한 연결은 연결을 관리하기 위해 AEM의 DataSourcePool OSGi 서비스를 사용하여 생성된 연결을 포함하여 AEM에서 프록시화되어야 합니다.
 
 ## 고급 네트워킹 지원
 

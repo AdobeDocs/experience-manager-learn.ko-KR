@@ -1,7 +1,7 @@
 ---
 title: AEM Headless 서버 간 배포
 description: 서버 간 AEM Headless 배포를 위한 배포 고려 사항에 대해 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: GraphQL API
 topic: Headless, Content Management
 role: Developer, Architect
@@ -10,7 +10,7 @@ jira: KT-10798
 thumbnail: kt-10798.jpg
 exl-id: d4ae08d9-dc43-4414-ab75-26853186a301
 duration: 48
-source-git-commit: b607ea10e0eed73b70751b1dd76266a4812d5280
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 1%
@@ -19,15 +19,15 @@ ht-degree: 1%
 
 # AEM Headless 서버 간 배포
 
-AEM Headless 서버 간 배포에는 AEM의 콘텐츠를 Headless 방식으로 사용하고 상호 작용하는 서버측 애플리케이션 또는 프로세스가 포함됩니다.
+AEM Headless 서버 간 배포에는 Headless 방식으로 AEM의 콘텐츠를 소비하고 상호 작용하는 서버측 애플리케이션 또는 프로세스가 포함됩니다.
 
-브라우저 컨텍스트에서 AEM Headless API에 대한 HTTP 연결이 시작되지 않으므로 서버 간 배포는 최소 구성이 필요합니다.
+AEM Headless API에 대한 HTTP 연결은 브라우저의 컨텍스트에서 시작되지 않으므로 서버 간 배포는 최소 구성이 필요합니다.
 
 ## 배포 구성
 
 서버 간 앱 배포를 위해서는 다음 배포 구성이 적용되어야 합니다.
 
-| 서버 간 앱을 서버에 → | AEM Author | AEM 게시 | AEM 미리 보기 |
+| 서버 간 앱을 서버에 → | AEM Author | AEM 게시 | AEM 미리보기 |
 |---------------------------------------------------------------:|:----------:|:-----------:|:-----------:|
 | [Dispatcher 필터](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | CORS(원본 간 리소스 공유) | ✘ | ✘ | ✘ |

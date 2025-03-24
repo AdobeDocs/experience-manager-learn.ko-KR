@@ -2,7 +2,7 @@
 title: 구성 요소 확장 | AEM SPA 편집기 및 Angular 시작하기
 description: AEM SPA 편집기에서 사용할 기존 핵심 구성 요소를 확장하는 방법을 알아봅니다. 기존 구성 요소에 속성 및 콘텐츠를 추가하는 방법을 이해하는 것은 AEM SPA Editor 구현의 기능을 확장하는 강력한 기술입니다. Sling 리소스 병합의 Sling 모델 및 기능을 확장하기 위해 위임 패턴을 사용하는 방법에 대해 알아봅니다.
 feature: SPA Editor, Core Components
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 jira: KT-5871
 thumbnail: 5871-spa-angular.jpg
 topic: SPA
@@ -11,7 +11,7 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 0265d3df-3de8-4a25-9611-ddf73d725f6e
 duration: 435
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1713'
 ht-degree: 0%
@@ -36,7 +36,7 @@ AEM SPA 편집기에서 사용할 기존 핵심 구성 요소를 확장하는 �
 
 >[!NOTE]
 >
-> 실제 구현에서는 프로젝트 요구 사항에 따라 [이미지 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html)를 확장하여 `Card` 구성 요소를 만드는 것보다 [티저 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/teaser.html)를 사용하는 것이 더 적절할 수 있습니다. 가능하면 항상 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)를 직접 사용하는 것이 좋습니다.
+> 실제 구현에서는 프로젝트 요구 사항에 따라 [이미지 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html)를 확장하여 `Card` 구성 요소를 만드는 것보다 [티저 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/teaser.html)를 사용하는 것이 더 적절할 수 있습니다. 가능하면 항상 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)를 직접 사용하는 것이 좋습니다.
 
 ## 사전 요구 사항
 
@@ -70,9 +70,9 @@ AEM SPA 편집기에서 사용할 기존 핵심 구성 요소를 확장하는 �
 
 [GitHub](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/extend-component-solution)에서 완성된 코드를 항상 보거나 `Angular/extend-component-solution` 분기로 전환하여 코드를 로컬로 확인할 수 있습니다.
 
-## Inspect 초기 카드 구현
+## 초기 카드 구현 검사
 
-초기 카드 구성 요소는 챕터 스타터 코드에서 제공했습니다. Inspect 는 카드 구현의 시작점입니다.
+초기 카드 구성 요소는 챕터 스타터 코드에서 제공했습니다. 카드 구현의 시작 지점을 검사합니다.
 
 1. 선택한 IDE에서 `ui.apps` 모듈을 엽니다.
 2. `ui.apps/src/main/content/jcr_root/apps/wknd-spa-angular/components/card`(으)로 이동하여 `.content.xml` 파일을 봅니다.
@@ -90,7 +90,7 @@ AEM SPA 편집기에서 사용할 기존 핵심 구성 요소를 확장하는 �
 
    `sling:resourceSuperType` 속성은 `Card` 구성 요소가 WKND SPA 이미지 구성 요소에서 기능을 상속함을 나타내는 `wknd-spa-angular/components/image`을(를) 가리킵니다.
 
-3. `ui.apps/src/main/content/jcr_root/apps/wknd-spa-angular/components/image/.content.xml` 파일을 Inspect:
+3. `ui.apps/src/main/content/jcr_root/apps/wknd-spa-angular/components/image/.content.xml` 파일 검사:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -130,7 +130,7 @@ AEM SPA 편집기에서 사용할 기존 핵심 구성 요소를 확장하는 �
 
    ![Angular 구성 요소 시작](assets/extend-component/angular-card-component-start.png)
 
-7. 파일 `card.component.ts`을(를) Inspect 합니다.
+7. `card.component.ts` 파일을 검사합니다.
 
    표준 `MapTo` 함수를 사용하여 AEM `Card` 구성 요소에 매핑하기 위해 구성 요소를 이미 스터드했습니다.
 
@@ -152,16 +152,16 @@ AEM SPA 편집기에서 사용할 기존 핵심 구성 요소를 확장하는 �
 
 ## 템플릿 정책 업데이트
 
-이 초기 `Card` 구현으로 AEM SPA 편집기의 기능을 검토하십시오. 초기 `Card` 구성 요소를 보려면 템플릿 정책을 업데이트해야 합니다.
+이 초기 `Card` 구현에서는 AEM SPA 편집기의 기능을 검토합니다. 초기 `Card` 구성 요소를 보려면 템플릿 정책을 업데이트해야 합니다.
 
-1. 아직 배포하지 않은 경우 스타터 코드를 AEM의 로컬 인스턴스에 배포합니다.
+1. 아직 배포하지 않은 경우 AEM의 로컬 인스턴스에 시작 코드를 배포합니다.
 
    ```shell
    $ cd aem-guides-wknd-spa
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-2. [http://localhost:4502/editor.html/conf/wknd-spa-angular/settings/wcm/templates/spa-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd-spa-angular/settings/wcm/templates/spa-page-template/structure.html)에 있는 SPA 페이지 템플릿으로 이동합니다.
+2. [http://localhost:4502/editor.html/conf/wknd-spa-angular/settings/wcm/templates/spa-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd-spa-angular/settings/wcm/templates/spa-page-template/structure.html)의 SPA 페이지 템플릿으로 이동합니다.
 3. 레이아웃 컨테이너의 정책을 업데이트하여 새 `Card` 구성 요소를 허용된 구성 요소로 추가합니다.
 
    ![레이아웃 컨테이너 정책 업데이트](assets/extend-component/card-component-allowed.png)
@@ -174,7 +174,7 @@ AEM SPA 편집기에서 사용할 기존 핵심 구성 요소를 확장하는 �
 
 그런 다음 AEM SPA 편집기를 사용하여 `Card` 구성 요소를 작성합니다.
 
-1. [http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html)(으)로 이동합니다.
+1. [http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html)&#x200B;(으)로 이동합니다.
 2. `Edit` 모드에서 `Card` 구성 요소를 `Layout Container`에 추가합니다.
 
    ![새 구성 요소 삽입](assets/extend-component/insert-custom-component.png)
@@ -188,7 +188,7 @@ AEM SPA 편집기에서 사용할 기존 핵심 구성 요소를 확장하는 �
 
    ![텍스트 구성 요소 탭](assets/extend-component/card-component-text.png)
 
-   **카드 경로** - SPA 홈 페이지 아래에서 페이지를 선택합니다.
+   **카드 경로** - SPA 홈 페이지 아래에서 페이지를 선택하십시오.
 
    **CTA 텍스트** - &quot;자세한 내용&quot;
 
@@ -200,7 +200,7 @@ AEM SPA 편집기에서 사용할 기존 핵심 구성 요소를 확장하는 �
 
    현재 대화 상자를 업데이트한 후 추가 변경 사항이 표시되지 않습니다. 새 필드를 Angular 구성 요소에 노출하려면 `Card` 구성 요소에 대한 Sling 모델을 업데이트해야 합니다.
 
-7. 새 탭을 열고 [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/content/wknd-spa-angular/us/en/home/jcr%3Acontent/root/responsivegrid/card)(으)로 이동합니다. `/content/wknd-spa-angular/us/en/home/jcr:content/root/responsivegrid` 아래의 콘텐츠 노드를 Inspect하여 `Card` 구성 요소 콘텐츠를 찾습니다.
+7. 새 탭을 열고 [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/content/wknd-spa-angular/us/en/home/jcr%3Acontent/root/responsivegrid/card)&#x200B;(으)로 이동합니다. `/content/wknd-spa-angular/us/en/home/jcr:content/root/responsivegrid` 아래의 콘텐츠 노드를 검사하여 `Card` 구성 요소 콘텐츠를 찾으십시오.
 
    ![CRXDE-Lite 구성 요소 속성](assets/extend-component/crxde-lite-properties.png)
 
@@ -378,9 +378,9 @@ AEM SPA 편집기에서 사용할 기존 핵심 구성 요소를 확장하는 �
 
    JSON 모델은 `CardImpl` Sling 모델에서 메서드를 업데이트한 후 추가 키/값 쌍으로 업데이트됩니다.
 
-## angular 구성 요소 업데이트
+## Angular 구성 요소 업데이트
 
-이제 JSON 모델이 `ctaLinkURL`, `ctaText`, `cardTitle` 및 `cardLastModified`에 대한 새 속성으로 채워졌으므로 Angular 구성 요소를 업데이트하여 표시할 수 있습니다.
+이제 JSON 모델이 `ctaLinkURL`, `ctaText`, `cardTitle` 및 `cardLastModified`에 대한 새 속성으로 채워졌으므로 이를 표시하도록 Angular 구성 요소를 업데이트할 수 있습니다.
 
 1. IDE로 돌아가서 `ui.frontend` 모듈을 엽니다. 필요한 경우 새 터미널 창에서 Webpack 개발 서버를 시작하여 변경 사항을 실시간으로 확인합니다.
 
@@ -450,14 +450,14 @@ AEM SPA 편집기에서 사용할 기존 핵심 구성 요소를 확장하는 �
    >
    > 완료된 [Angular 카드 구성 요소 코드는 여기에서 볼 수 있습니다](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/extend-component-solution/ui.frontend/src/app/components/card).
 
-5. Maven을 사용하여 프로젝트의 루트에서 AEM에 전체 변경 사항을 배포합니다.
+5. Maven을 사용하여 프로젝트의 루트에서 AEM에 대한 모든 변경 사항을 배포합니다.
 
    ```shell
    $ cd aem-guides-wknd-spa
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-6. 업데이트된 구성 요소를 보려면 [http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html)(으)로 이동하십시오.
+6. 업데이트된 구성 요소를 보려면 [http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html)&#x200B;(으)로 이동하십시오.
 
    ![AEM에서 카드 구성 요소를 업데이트했습니다](assets/extend-component/updated-card-in-aem.png)
 

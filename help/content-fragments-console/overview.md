@@ -1,7 +1,7 @@
 ---
 title: 콘텐츠 조각 콘솔 비디오
-description: 콘텐츠 조각을 쉽게 관리 및 작성할 수 있는 AEM의 콘텐츠 조각 콘솔에 대해 알아봅니다!
-version: Cloud Service
+description: 콘텐츠 조각 관리 및 작성을 용이하게 하는 AEM의 콘텐츠 조각 콘솔에 대해 알아봅니다!
+version: Experience Manager as a Cloud Service
 feature: Content Fragments
 topic: Content Management
 role: User
@@ -10,7 +10,7 @@ jira: KT-14200
 last-substantial-update: 2023-05-12T00:00:00Z
 doc-type: Catalog
 exl-id: d92c36e2-fbfa-43a3-8c5f-0371cc99f352
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '241'
 ht-degree: 11%

@@ -1,7 +1,7 @@
 ---
-title: Next.js - AEM Headless 예
-description: 예제 애플리케이션은 AEM(Adobe Experience Manager)의 Headless 기능을 살펴볼 수 있는 좋은 방법입니다. 이 Next.js 애플리케이션은 지속 쿼리를 사용하여 AEM의 GraphQL API를 사용하여 콘텐츠를 쿼리하는 방법을 보여 줍니다.
-version: Cloud Service
+title: Next.js - AEM Headless 예제
+description: 예제 애플리케이션은 Adobe Experience Manager(AEM)의 Headless 기능을 살펴볼 수 있는 좋은 방법입니다. 이 Next.js 애플리케이션은 지속 쿼리를 사용하여 AEM의 GraphQL API를 사용하여 콘텐츠를 쿼리하는 방법을 보여 줍니다.
+version: Experience Manager as a Cloud Service
 mini-toc-levels: 1
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
@@ -10,10 +10,10 @@ level: Beginner
 jira: KT-10721
 thumbnail: KT-10721.jpg
 last-substantial-update: 2023-05-10T00:00:00Z
-badgeVersions: label="AEM as a Cloud Service Headless" before-title="false"
+badgeVersions: label="AEM 헤드리스 as a Cloud Service" before-title="false"
 exl-id: 4f67bb37-416a-49d9-9d7b-06c3573909ca
 duration: 210
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '744'
 ht-degree: 0%
@@ -22,9 +22,9 @@ ht-degree: 0%
 
 # Next.js 앱
 
-예제 애플리케이션은 AEM(Adobe Experience Manager)의 Headless 기능을 살펴볼 수 있는 좋은 방법입니다. 이 Next.js 애플리케이션은 지속 쿼리를 사용하여 AEM의 GraphQL API를 사용하여 콘텐츠를 쿼리하는 방법을 보여 줍니다. JavaScript용 AEM Headless 클라이언트는 앱을 구동하는 GraphQL 지속 쿼리를 실행하는 데 사용됩니다.
+예제 애플리케이션은 Adobe Experience Manager(AEM)의 Headless 기능을 살펴볼 수 있는 좋은 방법입니다. 이 Next.js 애플리케이션은 지속 쿼리를 사용하여 AEM의 GraphQL API를 사용하여 콘텐츠를 쿼리하는 방법을 보여 줍니다. JavaScript용 AEM Headless 클라이언트는 앱을 구동하는 GraphQL 지속 쿼리를 실행하는 데 사용됩니다.
 
-![AEM Headless가 있는 Next.js 앱](./assets/next-js/next-js.png)
+![AEM Headless가 포함된 Next.js 앱](./assets/next-js/next-js.png)
 
 GitHub에서 [소스 코드 보기](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/next-js)
 
@@ -39,7 +39,7 @@ GitHub에서 [소스 코드 보기](https://github.com/adobe/aem-guides-wknd-gra
 
 Next.js 앱은 다음 AEM 배포 옵션과 함께 작동합니다. 모든 배포를 사용하려면 AEM as a Cloud Service 환경에 [WKND 공유 v3.0.0+](https://github.com/adobe/aem-guides-wknd-shared/releases/latest) 또는 [WKND 사이트 v3.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest)을(를) 설치해야 합니다.
 
-이 예제 Next.js 앱은 __AEM Publish__ 서비스에 연결하도록 설계되었습니다.
+이 예제 Next.js 앱은 __AEM 게시__ 서비스에 연결하도록 설계되었습니다.
 
 ### AEM 작성자 요구 사항
 
@@ -61,9 +61,9 @@ Next.js는 __AEM Publish__ 서비스에 연결하고 보호되지 않은 콘텐�
    ...
    ```
 
-   AEM Author 서비스에 연결하는 경우 AEM Author 서비스는 기본적으로 안전하므로 인증을 제공해야 합니다.
+   AEM Author 서비스에 연결하는 경우 기본적으로 AEM Author 서비스가 안전하므로 인증을 제공해야 합니다.
 
-   로컬 AEM 계정 집합 `AEM_AUTH_METHOD=basic`을(를) 사용하고 `AEM_AUTH_USER` 및 `AEM_AUTH_PASSWORD` 속성에 사용자 이름과 암호를 제공하려면 다음을 수행합니다.
+   로컬 AEM 계정 집합 `AEM_AUTH_METHOD=basic`을(를) 사용하고 `AEM_AUTH_USER` 및 `AEM_AUTH_PASSWORD` 속성에 사용자 이름과 암호를 제공하려면 다음을 수행하십시오.
 
    ```plain
    ...
@@ -105,7 +105,7 @@ Next.js는 __AEM Publish__ 서비스에 연결하고 보호되지 않은 콘텐�
 
 ## 코드
 
-다음은 Next.js 앱이 빌드되는 방법, GraphQL 지속 쿼리를 사용하여 콘텐츠를 검색하기 위해 AEM Headless에 연결하는 방법 및 이러한 데이터가 표시되는 방법에 대한 요약입니다. 전체 코드는 [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/next-js)에서 찾을 수 있습니다.
+다음은 Next.js 앱이 빌드되는 방법, AEM 지속 쿼리를 사용하여 콘텐츠를 검색하기 위해 GraphQL Headless에 연결하는 방법 및 이러한 데이터가 표시되는 방법에 대한 요약입니다. 전체 코드는 [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/next-js)에서 찾을 수 있습니다.
 
 ### 지속 쿼리
 
@@ -224,7 +224,7 @@ query ($slug: String!, $imageFormat:AssetTransformFormat=JPG, $imageSeoName: Str
 
 ### GraphQL 지속 쿼리 실행
 
-AEM의 지속 쿼리는 HTTP GET을 통해 실행되므로, [JavaScript용 AEM Headless 클라이언트](https://github.com/adobe/aem-headless-client-js)를 사용하여 AEM에 대해 [지속 GraphQL 쿼리를 실행](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md#aemheadlessrunpersistedquerypath-variables-options--promiseany)하고 어드벤처 콘텐츠를 앱에 로드합니다.
+AEM의 지속 쿼리는 HTTP GET을 통해 실행되므로, JavaScript용 [AEM Headless 클라이언트](https://github.com/adobe/aem-headless-client-js)를 사용하여 AEM에 대해 [지속 GraphQL 쿼리를 실행](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md#aemheadlessrunpersistedquerypath-variables-options--promiseany)하고 어드벤처 콘텐츠를 앱에 로드합니다.
 
 각 지속 쿼리에는 AEM GraphQL 끝점을 호출하고 모험 데이터를 반환하는 `src/lib//aem-headless-client.js`에 해당 함수가 있습니다.
 

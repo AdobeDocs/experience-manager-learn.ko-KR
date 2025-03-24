@@ -1,7 +1,7 @@
 ---
 title: 파이프라인 없는 URL 리디렉션 구현
 description: AEM as a Cloud Service에서 파이프라인 없는 URL 리디렉션을 구현하여 개발자가 필요 없이 마케팅 팀이 리디렉션을 관리할 수 있도록 하는 방법에 대해 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Operations, Dispatcher
 topic: Development, Content Management, Administration
 role: Architect, Developer, User
@@ -12,7 +12,7 @@ last-substantial-update: 2025-02-05T00:00:00Z
 jira: KT-15739
 thumbnail: KT-15739.jpeg
 exl-id: 3b0f5971-38b8-4b9e-b90e-9de7432e0e9d
-source-git-commit: bc4f1d7dd345dbaf7532367425c90fe1a718249c
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '973'
 ht-degree: 0%

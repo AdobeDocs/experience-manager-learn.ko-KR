@@ -2,14 +2,14 @@
 title: 카드 보기에서 가져온 양식 표시
 description: listforms API를 사용하여 양식 표시
 feature: Adaptive Forms
-version: 6.5
+version: Experience Manager 6.5
 jira: KT-13311
 topic: Development
 role: User
 level: Intermediate
 exl-id: c01ad68e-23c9-4564-8e3e-1924af34a493
 duration: 91
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 0%
@@ -85,7 +85,7 @@ DisplayForm.js로 이동하기 위해 Main.js에 다음 경로를 정의했습�
 
 ## 양식 가져오기
 
-listforms API는 AEM 서버에서 양식을 가져오는 데 사용되었습니다. API는 JSON 오브젝트 배열을 반환하며, 각 JSON 오브젝트는 양식을 나타냅니다.
+AEM 서버에서 양식을 가져오는 데 listforms API가 사용되었습니다. API는 JSON 오브젝트 배열을 반환하며, 각 JSON 오브젝트는 양식을 나타냅니다.
 
 ```javascript
 import { useState,useEffect } from "react";

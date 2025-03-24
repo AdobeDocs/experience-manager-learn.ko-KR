@@ -1,7 +1,7 @@
 ---
-title: 로컬 AEM SDK를 사용한 AEM Headless 빠른 설정
-description: Adobe Experience Manager(AEM) 및 GraphQL을 시작합니다. AEM SDK를 설치하고 샘플 콘텐츠를 추가한 다음 GraphQL API를 사용하여 AEM의 콘텐츠를 사용하는 애플리케이션을 배포합니다. AEM이 옴니채널 경험을 어떻게 강화하는지 알아보십시오.
-version: Cloud Service
+title: 로컬 AEM SDK을 사용한 AEM Headless 빠른 설정
+description: Adobe Experience Manager(AEM) 및 GraphQL을 시작합니다. AEM SDK을 설치하고 샘플 콘텐츠를 추가한 다음 GraphQL API를 사용하여 AEM의 콘텐츠를 사용하는 애플리케이션을 배포합니다. AEM이 옴니채널 경험을 어떻게 강화하는지 알아보십시오.
+version: Experience Manager as a Cloud Service
 mini-toc-levels: 1
 jira: KT-6386
 thumbnail: KT-6386.jpg
@@ -11,14 +11,14 @@ role: Developer
 level: Beginner
 exl-id: d2da6efa-1f77-4391-adda-e3180c42addc
 duration: 242
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1151'
 ht-degree: 1%
 
 ---
 
-# 로컬 AEM SDK를 사용한 AEM Headless 빠른 설정 {#setup}
+# 로컬 AEM SDK을 사용한 AEM Headless 빠른 설정 {#setup}
 
 AEM Headless 빠른 설정은 WKND Site 샘플 프로젝트 및 AEM Headless GraphQL API에 대한 콘텐츠를 사용하는 샘플 React 앱(SPA)의 콘텐츠를 사용하여 AEM Headless를 실습해 볼 수 있도록 합니다. 이 안내서에서는 [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html)를 사용합니다.
 
@@ -32,7 +32,7 @@ AEM Headless 빠른 설정은 WKND Site 샘플 프로젝트 및 AEM Headless Gra
 
 ## 1. AEM SDK 설치 {#aem-sdk}
 
-이 설정은 [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?#aem-as-a-cloud-service-sdk)를 사용하여 AEM의 GraphQL API를 탐색합니다. 이 섹션에서는 AEM SDK를 설치하고 작성자 모드에서 실행하는 방법에 대한 빠른 안내서를 제공합니다. 로컬 개발 환경 [을(를) 설정하는 자세한 안내서는 여기](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html#local-development-environment-set-up)에서 확인할 수 있습니다.
+이 설정에서는 [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?#aem-as-a-cloud-service-sdk)를 사용하여 AEM의 GraphQL API를 살펴봅니다. 이 섹션에서는 AEM SDK을 설치하고 작성자 모드에서 실행하는 방법에 대한 빠른 안내서를 제공합니다. 로컬 개발 환경 [을(를) 설정하는 자세한 안내서는 여기](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html#local-development-environment-set-up)에서 확인할 수 있습니다.
 
 >[!NOTE]
 >
@@ -60,7 +60,7 @@ AEM Headless 빠른 설정은 WKND Site 샘플 프로젝트 및 AEM Headless Gra
 
 ## 2. 샘플 콘텐츠 설치 {#install-sample-content}
 
-**WKND 참조 사이트**&#x200B;의 샘플 콘텐츠를 사용하여 자습서를 가속화합니다. WKND는 AEM 트레이닝과 함께 자주 사용되는 가상의 라이프스타일 브랜드입니다.
+**WKND 참조 사이트**&#x200B;의 샘플 콘텐츠를 사용하여 자습서를 가속화합니다. WKND는 AEM 교육에 자주 사용되는 가상 생활 스타일 브랜드입니다.
 
 WKND 사이트에는 [GraphQL 끝점](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/content-fragments.html)을 노출하는 데 필요한 구성이 포함되어 있습니다. 실제 구현에서는 문서화된 단계에 따라 고객 프로젝트에 [GraphQL 끝점을 포함](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/content-fragments.html)합니다. [CORS](#cors-config)도 WKND 사이트의 일부로 패키지되었습니다. 외부 응용 프로그램에 대한 액세스 권한을 부여하려면 CORS 구성이 필요합니다. [CORS](#cors-config)에 대한 자세한 내용은 아래에서 확인할 수 있습니다.
 
@@ -121,7 +121,7 @@ WKND 사이트에는 [GraphQL 끝점](https://experienceleague.adobe.com/docs/ex
    REACT_APP_AUTHORIZATION=admin:admin
    ```
 
-   로컬 AEM SDK에 대해 `REACT_APP_HOST_URI`점을 확보하십시오. 이 빠른 시작은 편의상 React 앱을 **AEM 작성자**&#x200B;에 연결합니다. **작성자** 서비스에는 인증이 필요하므로 앱은 `admin` 사용자를 사용하여 연결을 설정합니다. AEM Author에 앱을 연결하는 것은 개발 중에 일반적인 관례입니다. 변경 사항을 게시하지 않고도 콘텐츠를 빠르게 반복할 수 있기 때문입니다.
+   로컬 AEM SDK에 대해 `REACT_APP_HOST_URI`점을 확인합니다. 이 빠른 시작은 편의상 React 앱을 **AEM 작성자**&#x200B;에 연결합니다. **작성자** 서비스에는 인증이 필요하므로 앱은 `admin` 사용자를 사용하여 연결을 설정합니다. AEM 작성자에 앱을 연결하는 것은 변경 사항을 게시하지 않고도 콘텐츠를 빠르게 반복할 수 있으므로 개발 중에 일반적인 방법입니다.
 
    >[!NOTE]
    >
@@ -154,7 +154,7 @@ WKND 사이트에는 [GraphQL 끝점](https://experienceleague.adobe.com/docs/ex
 
 React 앱이 실행 중인 경우 AEM에서 콘텐츠를 업데이트하고 변경 사항이 앱에 반영되었는지 확인합니다.
 
-1. AEM [http://localhost:4502](http://localhost:4502)(으)로 이동합니다.
+1. AEM [http://localhost:4502](http://localhost:4502)&#x200B;(으)로 이동합니다.
 1. **Assets** > **파일** > **WKND 공유** > **영어** > **모험** > **[Bali Surf Camp](http://localhost:4502/assets.html/content/dam/wknd-shared/en/adventures/bali-surf-camp)**(으)로 이동합니다.
 
    ![Bali Surf Camp 폴더](assets/setup/bali-surf-camp-folder.png)
@@ -164,7 +164,7 @@ React 앱이 실행 중인 경우 AEM에서 콘텐츠를 업데이트하고 변�
 
    ![콘텐츠 조각 수정](assets/setup/modify-content-fragment-bali.png)
 
-1. 변경 내용을 저장하려면 **저장**&#x200B;을 클릭하세요.
+1. **저장**&#x200B;을 클릭하여 변경 내용을 저장합니다.
 1. 변경 내용을 보려면 [http://localhost:3000](http://localhost:3000)에서 React 앱을 새로 고치십시오.
 
    ![업데이트된 Bali Surf Camp Adventure](assets/setup/overnight-bali-surf-camp-changes.png)
@@ -180,7 +180,7 @@ React 앱이 실행 중인 경우 AEM에서 콘텐츠를 업데이트하고 변�
 
 ## 축하합니다!{#congratulations}
 
-축하합니다. 이제 GraphQL에서 AEM 콘텐츠를 사용하는 외부 애플리케이션이 있습니다. 언제든지 React 앱에서 코드를 검사하고 기존 콘텐츠 조각을 수정해 보십시오.
+축하합니다. 이제 GraphQL으로 AEM 콘텐츠를 사용하는 외부 애플리케이션이 있습니다. 언제든지 React 앱에서 코드를 검사하고 기존 콘텐츠 조각을 수정해 보십시오.
 
 ### 다음 단계
 

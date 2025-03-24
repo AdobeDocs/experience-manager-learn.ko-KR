@@ -1,7 +1,7 @@
 ---
 title: 단순 검색 구현 안내서
-description: 단순 검색 구현은 2017 Summit lab AEM Search Demystified의 자료입니다. 이 페이지에는 이 실습의 자료가 포함되어 있습니다. 실습 가이드 투어는 이 페이지의 프레젠테이션 섹션에서 실습 통합 문서를 참조하십시오.
-version: 6.4, 6.5
+description: 단순 검색 구현은 2017년 Summit 랩 AEM Search Demystified의 자료입니다. 이 페이지에는 이 실습의 자료가 포함되어 있습니다. 실습 가이드 투어는 이 페이지의 프레젠테이션 섹션에서 실습 통합 문서를 참조하십시오.
+version: Experience Manager 6.4, Experience Manager 6.5
 feature: Search
 topic: Development
 role: Developer
@@ -11,7 +11,7 @@ exl-id: aa268c5f-d29e-4868-a58b-444379cb83be
 last-substantial-update: 2022-08-10T00:00:00Z
 thumbnail: 32090.jpg
 duration: 138
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 1%
@@ -78,7 +78,7 @@ ht-degree: 1%
 * [Sling 모델](https://sling.apache.org/documentation/bundles/models.html)
 * [슬링 모델 내보내기](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130)
 * [QueryBuilder API](https://experienceleague.adobe.com/docs/)
-* [AEM Chrome 플러그인](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode)([설명서 페이지](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/))
+* [AEM Chrome 플러그인](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode)&#x200B;([설명서 페이지](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/))
 
 ## 수정 및 추가 작업 {#corrections-and-follow-up}
 
@@ -86,7 +86,7 @@ ht-degree: 1%
 
 1. **다시 인덱싱을 중지하는 방법**
 
-   [AEM 웹 콘솔 > JMX](http://localhost:4502/system/console/jmx)을 통해 사용할 수 있는 IndexStats MBean을 통해 다시 인덱싱을 중지할 수 있습니다.
+   [AEM 웹 콘솔 > JMX](http://localhost:4502/system/console/jmx)에서 사용할 수 있는 IndexStats MBean을 통해 다시 인덱싱을 중지할 수 있습니다.
 
    * [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats)
       * 다시 인덱싱을 중단하려면 `abortAndPause()`을(를) 실행하십시오. `resume()`이(가) 호출될 때까지 색인을 추가 다시 색인화하도록 잠급니다.
@@ -107,11 +107,11 @@ ht-degree: 1%
    * 쿼리는 인덱스의 쿼리 경로 범위와 동일한 경로 제한을 지정하거나 해당 인덱스의 하위 항목이어야 합니다.
    * 범위가 넓은 인덱스(예: `/oak:index/cqPageLucene`)도 데이터를 인덱싱하므로 중복 수집 및 디스크 사용 비용이 발생합니다.
    * 중복 구성 관리(예: 동일한 쿼리 세트를 충족해야 하는 경우 여러 테넌트 인덱스에 동일한 indexRules 추가)
-   * 이 방법은 AEM Author에서와 같이 사용자 지정 사이트 검색을 위해 AEM Publish 계층에서 가장 잘 제공되며, 쿼리는 서로 다른 테넌트에 대한 콘텐츠 트리 높은 곳에서 실행되는 것이 일반적입니다(예: OmniSearch를 통해). 서로 다른 색인 정의로 인해 경로 제한에만 따라 다른 동작이 발생할 수 있습니다.
+   * 이 방법은 AEM Author에서와 같이, 사용자 지정 사이트 검색을 위해 AEM Publish 계층에서 가장 잘 제공되며, 일반적으로 쿼리는 서로 다른 테넌트에 대한 콘텐츠 트리 상향에서 실행됩니다(예: OmniSearch를 통해). 서로 다른 인덱스 정의로 인해 경로 제한만 기반으로 다른 동작이 발생할 수 있습니다.
 
 3. **사용 가능한 모든 분석기 목록은 어디에 있습니까?**
 
-   Oak은 AEM에서 사용하기 위해 lucene 제공 분석기 구성 요소 집합을 노출합니다.
+   Oak은 AEM에서 사용하기 위해 lucene 제공 분석기 구성 요소 세트를 노출합니다.
 
    * [Apache Oak 분석기 설명서](https://jackrabbit.apache.org/oak/docs/query/lucene.html#analyzers)
       * [토큰라이저](https://cwiki.apache.org/confluence/display/solr/Tokenizers)

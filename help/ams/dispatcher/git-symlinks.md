@@ -1,7 +1,7 @@
 ---
 title: GIT에 심볼릭 링크를 올바르게 추가
 description: Dispatcher 구성에서 작업할 때 심볼릭 링크를 추가하는 방법과 위치에 대한 지침입니다.
-version: 6.5
+version: Experience Manager 6.5
 topic: Administration
 feature: Dispatcher
 role: Admin
@@ -10,7 +10,7 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 6e751586-e92e-482d-83ce-6fcae4c1102c
 duration: 295
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1231'
 ht-degree: 0%
@@ -176,7 +176,7 @@ Source: [Git - git-config 설명서](https://git-scm.com/docs/git-config#Documen
 
 Windows에서 Git의 동작은 여기에 잘 설명되어 있습니다. 심볼 링크 · git-for-windows/git Wiki · GitHub
 
-> `Info`: 위에 연결된 설명서에 나열된 가정은 Windows(특히 NTFS)에서 AEM 개발자의 설정이 가능하거나 파일 심볼릭 링크와 디렉터리 심볼릭 링크만 있는 경우 문제 없는 것 같습니다
+> `Info`: 위에 연결된 설명서에 나열된 가정은 Windows(특히 NTFS)에서 AEM 개발자의 설정이 가능하거나 파일 심볼릭 링크와 디렉터리 심볼릭 링크만 있는 경우 가능한 것으로 보입니다.
 
 [Windows용 Git 버전 2.10.2](https://github.com/git-for-windows/git/releases/tag/v2.10.2.windows.1)부터 설치 관리자에는 심볼 링크 지원을 활성화하는 [명시적 옵션이 있으므로 좋은 소식이 있습니다.](https://github.com/git-for-windows/git/issues/921)
 
@@ -228,7 +228,7 @@ MSYS=winsymlinks:nativestrict ln -s test_vhost_symlink ../dispatcher/src/conf.d/
 
 #### 요약
 
-Microsoft Windows OS에서 Git 처리 심볼릭 링크가 올바르게(적어도 현재 AEM Dispatcher 구성 기준의 범위에 대해) 제공되려면 다음이 필요합니다.
+Microsoft Windows OS에서 Git 처리 심볼릭 링크가 올바르게(적어도 현재 AEM Dispatcher 구성 기준의 범위) 유지되려면 다음이 필요합니다.
 
 | 항목 | 최소 버전/구성 | 권장 버전/구성 |
 |------|---------------------------------|-------------------------------------|

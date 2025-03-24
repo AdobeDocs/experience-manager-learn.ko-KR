@@ -4,14 +4,14 @@ description: 배치를 실행하여 문서 생성 프로세스를 시작합니�
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Output Service
 topic: Development
 jira: KT-9674
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 exl-id: 17f91f81-96d8-49d6-b1e3-53d8899695ae
 duration: 219
-source-git-commit: 426020f59c7103829b7b7b74acb0ddb7159b39fa
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '87'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # 일괄 처리 구성 실행
 
-배치를 실행하려면 다음 API에 POST 요청을 수행합니다
+배치를 실행하려면 다음 API에 대한 POST 요청을 수행합니다
 
 ```xml
 <baseURL>/confi/<configName>/execution

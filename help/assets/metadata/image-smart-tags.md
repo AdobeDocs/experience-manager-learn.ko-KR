@@ -5,14 +5,14 @@ topic: Content Management
 feature: Smart Tags
 role: User
 level: Intermediate
-version: 6.4, 6.5, Cloud Service
+version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 jira: KT-645
 thumbnail: 17019.jpg
 last-substantial-update: 2022-06-09T00:00:00Z
 doc-type: Feature Video
 exl-id: c72dc489-70e6-48ca-99a8-663d4c0652ba
 duration: 574
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 0%
@@ -25,7 +25,7 @@ AEM Assets의 이미지용 스마트 태그는 이미지 에셋에 파생된 메
 
 >[!VIDEO](https://video.tv.adobe.com/v/17019?quality=12&learn=on)
 
-## AEM 6.x에 대해 설정{#set-up}
+## AEM 6.x용 설정{#set-up}
 
 >[!NOTE]
 > 이미지용 스마트 태그는 AEM as a Cloud Service에 대해 자동으로 프로비저닝됩니다.

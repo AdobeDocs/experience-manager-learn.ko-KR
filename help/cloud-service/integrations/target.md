@@ -1,7 +1,7 @@
 ---
 title: AEM Headless 및 Target 통합
-description: Experience Platform Web SDK를 사용하여 AEM Headless와 Adobe Target을 통합하여 Headless 경험을 개인화하는 방법에 대해 알아봅니다.
-version: Cloud Service
+description: AEM Headless 및 Adobe Target을 통합하여 Experience Platform Web SDK을 사용하여 Headless 경험을 개인화하는 방법에 대해 알아봅니다.
+version: Experience Manager as a Cloud Service
 feature: Content Fragments, Integrations
 topic: Personalization, Headless
 role: Admin, Developer
@@ -11,10 +11,10 @@ last-substantial-update: 2023-05-09T00:00:00Z
 jira: KT-12433
 thumbnail: KT-12433.jpeg
 badgeIntegration: label="통합" type="positive"
-badgeVersions: label="AEM as a Cloud Service Headless" before-title="false"
+badgeVersions: label="AEM 헤드리스 as a Cloud Service" before-title="false"
 exl-id: be886c64-9b8e-498d-983c-75f32c34be4b
 duration: 1549
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1618'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 # AEM Headless 및 Target 통합
 
-AEM 콘텐츠 조각을 Adobe Target으로 내보내고 Adobe Experience Platform Web SDK의 alloy.js를 사용하여 Headless 경험을 개인화하는 데 사용하여 AEM Headless를 Adobe Target과 통합하는 방법을 알아봅니다. [React WKND 앱](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html)을 사용하여 콘텐츠 조각 오퍼를 사용하는 개인화된 Target 활동을 경험에 추가하여 WKND 모험을 홍보하는 방법을 탐색합니다.
+AEM 컨텐츠 조각을 Adobe Target으로 내보내고 이를 사용하여 AEM Web SDK의 alloy.js를 사용하여 Headless 경험을 개인화하여 Adobe Target과 Adobe Experience Platform Headless를 통합하는 방법을 알아봅니다. [React WKND 앱](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html?lang=ko-KR)을 사용하여 콘텐츠 조각 오퍼를 사용하는 개인화된 Target 활동을 경험에 추가하여 WKND 모험을 홍보하는 방법을 탐색합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3416585/?quality=12&learn=on)
 
@@ -36,11 +36,11 @@ AEM 콘텐츠 조각을 Adobe Target으로 내보내고 Adobe Experience Platfor
 5. AEM 작성자에서 Target으로 [콘텐츠 조각 내보내기](#export-content-fragments)
 6. Adobe Target에서 [콘텐츠 조각 오퍼를 사용하여 활동 만들기](#activity)
 7. Experience Platform에서 [Experience Platform 데이터스트림 만들기](#datastream-id)
-8. Adobe Web SDK를 사용하여 [React 기반 AEM Headless 앱에 개인화를 통합](#code)합니다.
+8. [Adobe Web SDK을 사용하여 React 기반 AEM Headless 앱에 개인화를 통합](#code)합니다.
 
 ## Adobe IMS 구성{#adobe-ims-configuration}
 
-AEM과 Adobe Target 간의 인증을 용이하게 하는 Adobe IMS 구성입니다.
+AEM과 Adobe Target 간의 인증을 용이하게 하는 Adobe IMS 구성
 
 Adobe IMS 구성을 만드는 방법에 대한 단계별 지침은 [설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integration-adobe-target-ims.html)를 검토하십시오.
 
@@ -48,7 +48,7 @@ Adobe IMS 구성을 만드는 방법에 대한 단계별 지침은 [설명서](h
 
 ## Adobe Target Cloud Service{#adobe-target-cloud-service}
 
-Adobe Target Cloud Service은 컨텐츠 조각을 Adobe Target으로 쉽게 내보낼 수 있도록 AEM에 만들어집니다.
+Adobe Target Cloud Service은 컨텐츠 조각을 Adobe Target으로 내보낼 수 있도록 AEM에 만들어집니다.
 
 Adobe Target Cloud Service을 만드는 방법에 대한 단계별 지침은 [설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html)를 검토하십시오.
 
@@ -64,9 +64,9 @@ Adobe Target Cloud Service을 만드는 방법에 대한 단계별 지침은 [�
 1. DAM 관리자로 __AEM 작성자 서비스__&#x200B;에 로그인합니다.
 1. __Assets > 파일__(으)로 이동하여 `/conf`이(가) 적용된 자산 폴더를 찾습니다.
 1. 자산 폴더를 선택하고 맨 위의 작업 표시줄에서 __속성__&#x200B;을 선택합니다.
-1. __Cloud Service__ 탭 선택
-1. 클라우드 구성이 Adobe Target Cloud Service 구성을 포함하는 컨텍스트 인식 구성(`/conf`)으로 설정되어 있는지 확인하십시오.
-1. __Cloud Service 구성__ 드롭다운에서 __Adobe Target__&#x200B;을(를) 선택합니다.
+1. __클라우드 서비스__ 탭 선택
+1. 클라우드 구성이 Adobe Target 클라우드 서비스 구성을 포함하는 컨텍스트 인식 구성(`/conf`)으로 설정되어 있는지 확인하십시오.
+1. __Adobe Target 구성__ 드롭다운에서 __Cloud Service__&#x200B;을(를) 선택합니다.
 1. 오른쪽 상단에서 __저장 및 닫기__ 선택
 
 +++
@@ -81,7 +81,7 @@ Adobe Target Cloud Service을 만드는 방법에 대한 단계별 지침은 [�
 
 +++확장 을 통한 단계별 지침
 
-1. Adobe Admin Console에서 Adobe Target 제품을 관리할 수 있는 사용자로 Experience Cloud에 로그인합니다
+1. Experience Cloud에서 Adobe Target 제품을 관리할 수 있는 사용자로 Adobe Admin Console에 로그인합니다
 1. [Adobe Admin Console](https://adminconsole.adobe.com) 열기
 1. __제품__&#x200B;을 선택한 다음 __Adobe Target__&#x200B;을 엽니다.
 1. __제품 프로필__ 탭에서 __*DefaultWorkspace*__&#x200B;을(를) 선택합니다
@@ -115,9 +115,9 @@ Adobe Target Cloud Service을 만드는 방법에 대한 단계별 지침은 [�
 1. 오른쪽 상단의 __Workspace 전환기__&#x200B;에서 기본 Workspace이 선택되어 있는지 확인하십시오.
 1. 위쪽 탐색에서 __오퍼__ 탭을 선택합니다.
 1. __유형__ 드롭다운을 선택하고 __콘텐츠 조각__&#x200B;을 선택합니다.
-1. AEM에서 내보낸 콘텐츠 조각이 목록에 표시되는지 확인
+1. AEM에서 내보낸 컨텐츠 조각이 목록에 표시되는지 확인
    + 오퍼 위로 마우스를 가져간 후 __보기__ 단추를 선택하세요.
-   + __오퍼 정보__&#x200B;를 검토하고 AEM Author 서비스에서 바로 콘텐츠 조각을 여는 __AEM 딥링크__&#x200B;를 확인하세요.
+   + __오퍼 정보__&#x200B;를 검토하고 AEM 작성자 서비스에서 바로 콘텐츠 조각을 여는 __AEM 딥링크__&#x200B;를 확인하세요
 
 +++
 
@@ -166,11 +166,11 @@ Adobe Target에서는 컨텐츠 조각 오퍼 JSON을 컨텐츠로 사용하는 
 
 ## Experience Platform 데이터 스트림 ID{#datastream-id}
 
-AEM Headless 앱이 [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html)를 사용하여 Adobe Target과 상호 작용하려면 [Adobe 데이터스트림](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-datastream.html) ID가 필요합니다.
+AEM Headless 앱이 [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html)을(를) 사용하여 Adobe Target과 상호 작용하려면 [Adobe 데이터스트림](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-datastream.html) ID가 필요합니다.
 
 +++확장 을 통한 단계별 지침
 
-1. [Adobe Experience Cloud](https://experience.adobe.com/)(으)로 이동
+1. [Adobe Experience Cloud](https://experience.adobe.com/)&#x200B;(으)로 이동
 1. __Experience Platform__ 열기
 1. __데이터 수집 > 데이터스트림__&#x200B;을 선택하고 __새 데이터스트림__&#x200B;을 선택합니다.
 1. 새 데이터 스트림 마법사에서 다음을 입력합니다.
@@ -186,7 +186,7 @@ AEM Headless 앱이 [Adobe Experience Platform Web SDK](https://experienceleague
       + Target 환경은 __관리 > 호스트__&#x200B;의 Adobe Target에서 설정할 수 있습니다.
    + 대상 타사 ID 네임스페이스: __비워 둠__
 1. __저장__ 선택
-1. 오른쪽에서 [Web SDK Adobe](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html) 구성 호출에 사용할 __데이터 스트림 ID__&#x200B;을(를) 복사합니다.
+1. 오른쪽에서 [Adobe Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html) 구성 호출에 사용할 __데이터 스트림 ID__&#x200B;를 복사합니다.
 
 +++
 
@@ -196,7 +196,7 @@ AEM Headless 앱이 [Adobe Experience Platform Web SDK](https://experienceleague
 
 ## AEM Headless 앱에 개인화 추가{#code}
 
-이 튜토리얼에서는 [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html)를 통해 Adobe Target에서 콘텐츠 조각 오퍼를 사용하여 간단한 React 앱을 개인화하는 방법을 살펴봅니다. 이 접근 방식을 사용하여 모든 JavaScript 기반 웹 경험을 개인화할 수 있습니다.
+이 자습서에서는 [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html)를 통해 Adobe Target에서 컨텐츠 조각 오퍼를 사용하여 간단한 React 앱을 개인화하는 방법을 살펴봅니다. 이 접근 방식을 사용하여 모든 JavaScript 기반 웹 경험을 개인화할 수 있습니다.
 
 Android™ 및 iOS 모바일 경험은 [Adobe의 Mobile SDK](https://developer.adobe.com/client-sdks/documentation/)를 사용하여 유사한 패턴에 따라 개인화할 수 있습니다.
 
@@ -232,21 +232,21 @@ Android™ 및 iOS 모바일 경험은 [Adobe의 Mobile SDK](https://developer.a
    $ npm run start
    ```
 
-1. [Adobe Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html#option-3%3A-using-the-npm-package)를 NPM 패키지로 설치합니다.
+1. NPM 패키지로 [Adobe Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html#option-3%3A-using-the-npm-package)을(를) 설치합니다.
 
    ```shell
    $ cd ~/Code/aem-guides-wknd-graphql/personalization-tutorial
    $ npm install @adobe/alloy
    ```
 
-   코드에서 Web SDK를 사용하여 활동 위치별로 콘텐츠 조각 오퍼 JSON을 가져올 수 있습니다.
+   웹 SDK은 코드에서 활동 위치별로 컨텐츠 조각 오퍼 JSON을 가져오는 데 사용할 수 있습니다.
 
-   웹 SDK를 구성할 때 두 개의 ID가 필요합니다.
+   웹 SDK을 구성할 때는 두 개의 ID가 필요합니다.
 
    + [데이터 스트림 ID](#datastream-id)인 `edgeConfigId`
    + `orgId` __Experience Cloud > 프로필 > 계정 정보 > 현재 조직 ID에서 찾을 수 있는 AEM as a Cloud Service/Target Adobe 조직 ID__
 
-   Web SDK를 호출할 때 Adobe Target 활동 위치(예: `wknd-adventure-promo`)를 `decisionScopes` 배열의 값으로 설정해야 합니다.
+   웹 SDK을 호출할 때 Adobe Target 활동 위치(예: `wknd-adventure-promo`)를 `decisionScopes` 배열의 값으로 설정해야 합니다.
 
    ```javascript
    import { createInstance } from "@adobe/alloy";

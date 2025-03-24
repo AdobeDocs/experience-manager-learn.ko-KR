@@ -1,7 +1,7 @@
 ---
 title: Adobe Experience Manager Sites에서 구성 요소 아이콘 맞춤화
 description: 구성 요소 아이콘을 사용하면 작성자가 아이콘이나 의미 있는 약어로 구성 요소를 빠르게 식별할 수 있습니다. 이제 작성자가 웹 경험을 더 빠르게 빌드하는 데 필요한 구성 요소를 찾을 수 있습니다.
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 feature: Core Components
 topic: Development
 role: User
@@ -9,7 +9,7 @@ level: Intermediate
 doc-type: Technical Video
 exl-id: 37dc26aa-0773-4749-8c8b-4544bd4d5e5f
 duration: 379
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '361'
 ht-degree: 0%
@@ -74,9 +74,9 @@ PNG 이미지의 크기가 **20px, 20px**(으)로 조정됩니다. 그러나 Ret
 
 ### SVG 이미지 {#svg-images}
 
-SVG 이미지(벡터 기반)를 구성 요소 아이콘에 사용할 수 있습니다. SVG 이미지를 구성 요소 아이콘으로 구성하려면 원하는 SVG을 **[cq:Component]** 아래에 **cq:icon.svg**(이)라는 **nt:file**(으)로 추가하십시오.
+SVG 이미지(벡터 기반)는 구성 요소 아이콘에 사용할 수 있습니다. SVG 이미지를 구성 요소 아이콘으로 구성하려면 원하는 SVG을 **[cq:Component]** 아래에 **cq:icon.svg**(이)라는 **nt:file**(으)로 추가하십시오.
 
-SVG 이미지의 배경색은 **#707070**(으)로 설정되어야 하며 크기는 **20px x 20px.**&#x200B;이어야 합니다.
+SVG 이미지의 배경색은 **#707070**(으)로 설정되어야 하며 크기는 **20px x 20px입니다.**&#x200B;입니다.
 
 ```plain
 /apps/.../components/content/my-component

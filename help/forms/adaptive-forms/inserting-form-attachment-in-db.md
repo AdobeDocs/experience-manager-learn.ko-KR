@@ -2,7 +2,7 @@
 title: 데이터베이스에 양식 첨부 파일 삽입
 description: AEM 워크플로우를 사용하여 데이터베이스에 양식 첨부 파일을 삽입합니다.
 feature: Adaptive Forms
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
@@ -10,7 +10,7 @@ jira: KT-10488
 exl-id: e8a6cab8-423b-4a8e-b2b7-9b24ebe23834
 last-substantial-update: 2020-06-09T00:00:00Z
 duration: 82
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 1%
@@ -29,7 +29,7 @@ ht-degree: 1%
 양식 데이터를 저장할 newhire라는 테이블을 만들었습니다. 양식 첨부 파일을 저장하려면 **LONGBLOB** 유형의 열 이름 그림을 확인하십시오.
 ![테이블 스키마](assets/insert-picture-table.png)
 
-## 양식 데이터 모델 만들기
+## Forms 데이터 모델 만들기
 
 MySQL 데이터베이스와 통신하기 위해 양식 데이터 모델을 만들었습니다. 다음을 만들어야 합니다
 

@@ -1,8 +1,8 @@
 ---
 title: SPA 통합 | AEM SPA 편집기 및 Angular 시작하기
-description: angular으로 작성된 단일 페이지 애플리케이션(SPA)의 소스 코드를 Adobe Experience Manager(AEM) 프로젝트와 통합하는 방법에 대해 알아봅니다. angular의 CLI 도구와 같은 최신 프런트 엔드 도구를 사용하여 AEM JSON 모델 API에 대해 SPA을 신속하게 개발하는 방법에 대해 알아봅니다.
+description: Angular으로 작성된 단일 페이지 애플리케이션(SPA)의 소스 코드를 Adobe Experience Manager(AEM) 프로젝트와 통합하는 방법에 대해 알아봅니다. Angular의 CLI 도구와 같은 최신 프런트 엔드 도구를 사용하여 AEM JSON 모델 API에 대해 SPA를 신속하게 개발하는 방법에 대해 알아봅니다.
 feature: SPA Editor
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 jira: KT-5310
 thumbnail: 5310-spa-angular.jpg
 topic: SPA
@@ -11,7 +11,7 @@ level: Beginner
 doc-type: Tutorial
 exl-id: e9386885-86de-4e43-933c-2f0a2c04a2f2
 duration: 536
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '2045'
 ht-degree: 0%
@@ -20,11 +20,11 @@ ht-degree: 0%
 
 # SPA 통합 {#integrate-spa}
 
-angular으로 작성된 단일 페이지 애플리케이션(SPA)의 소스 코드를 Adobe Experience Manager(AEM) 프로젝트와 통합하는 방법에 대해 알아봅니다. Webpack 개발 서버와 같은 최신 프론트엔드 도구를 사용하여 AEM JSON 모델 API에 대해 SPA을 빠르게 개발하는 방법에 대해 알아봅니다.
+Angular으로 작성된 단일 페이지 애플리케이션(SPA)의 소스 코드를 Adobe Experience Manager(AEM) 프로젝트와 통합하는 방법에 대해 알아봅니다. Webpack 개발 서버와 같은 최신 프론트엔드 도구를 사용하여 AEM JSON 모델 API에 대해 SPA를 신속하게 개발하는 방법에 대해 알아봅니다.
 
 ## 목표
 
-1. SPA 프로젝트가 클라이언트측 라이브러리와 AEM에 어떻게 통합되는지 이해합니다.
+1. SPA 프로젝트가 클라이언트측 라이브러리와 함께 AEM과 통합되는 방법을 이해합니다.
 2. 전용 프론트엔드 개발을 위해 로컬 개발 서버를 사용하는 방법을 알아봅니다.
 3. AEM JSON 모델 API에 대한 개발을 위해 **프록시** 및 정적 **mock** 파일의 사용을 살펴봅니다
 
@@ -34,7 +34,7 @@ angular으로 작성된 단일 페이지 애플리케이션(SPA)의 소스 코�
 
 ![AEM의 새 헤더](./assets/integrate-spa/final-header-component.png)
 
-*정적 `Header` 구성 요소를 추가하도록 SPA이 확장되었습니다*
+*SPA가 확장되어 정적 `Header` 구성 요소를 추가합니다*
 
 ## 사전 요구 사항
 
@@ -66,9 +66,9 @@ angular으로 작성된 단일 페이지 애플리케이션(SPA)의 소스 코�
 
 ## 통합 접근 방식 {#integration-approach}
 
-두 개의 모듈이 AEM 프로젝트의 일부로 만들어졌습니다. `ui.apps` 및 `ui.frontend`
+두 개의 모듈이 AEM 프로젝트의 일부로 만들어졌습니다. `ui.apps` 및 `ui.frontend`.
 
-`ui.frontend` 모듈은 모든 SPA 소스 코드를 포함하는 [webpack](https://webpack.js.org/) 프로젝트입니다. 대부분의 SPA 개발 및 테스트는 Webpack 프로젝트에서 수행됩니다. 프로덕션 빌드가 트리거되면 SPA이 Webpack을 사용하여 빌드되고 컴파일됩니다. 컴파일된 아티팩트(CSS 및 Javascript)는 `ui.apps` 모듈에 복사된 다음 AEM 런타임에 배포됩니다.
+`ui.frontend` 모듈은 모든 SPA 소스 코드를 포함하는 [webpack](https://webpack.js.org/) 프로젝트입니다. SPA 개발 및 테스트의 대부분은 Webpack 프로젝트에서 수행됩니다. 프로덕션 빌드가 트리거되면 SPA가 Webpack을 사용하여 빌드되고 컴파일됩니다. 컴파일된 아티팩트(CSS 및 Javascript)는 `ui.apps` 모듈에 복사된 다음 AEM 런타임에 배포됩니다.
 
 ![ui.frontend 높은 수준의 아키텍처](assets/integrate-spa/ui-frontend-architecture.png)
 
@@ -76,9 +76,9 @@ angular으로 작성된 단일 페이지 애플리케이션(SPA)의 소스 코�
 
 프론트엔드 빌드에 대한 추가 정보는 [여기에서 찾을 수 있음](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html).
 
-## Inspect SPA 통합 {#inspect-spa-integration}
+## SPA 통합 검사 {#inspect-spa-integration}
 
-그런 다음 `ui.frontend` 모듈을 검사하여 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html)에 의해 자동 생성된 SPA을 이해합니다.
+그런 다음 `ui.frontend` 모듈을 검사하여 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html)에서 자동으로 생성된 SPA를 이해합니다.
 
 1. 선택한 IDE에서 WKND SPA에 대한 AEM 프로젝트를 엽니다. 이 자습서에서는 [Visual Studio 코드 IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code)를 사용합니다.
 
@@ -109,7 +109,7 @@ angular으로 작성된 단일 페이지 애플리케이션(SPA)의 소스 코�
    "@adobe/cq-spa-page-model-manager": "^1.1.3",
    ```
 
-   위의 모듈은 [AEM SPA Editor JS SDK](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-blueprint.html)를 구성하고 SPA 구성 요소를 AEM 구성 요소에 매핑하는 기능을 제공합니다.
+   위의 모듈은 [AEM SPA Editor JS SDK](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-blueprint.html)을(를) 구성하고 SPA 구성 요소를 AEM 구성 요소에 매핑할 수 있는 기능을 제공합니다.
 
 5. `package.json` 파일에 여러 `scripts`이(가) 정의되어 있습니다.
 
@@ -123,19 +123,19 @@ angular으로 작성된 단일 페이지 애플리케이션(SPA)의 소스 코�
    }
    ```
 
-   이러한 스크립트는 일반적인 [Angular CLI 명령](https://angular.io/cli/build)을 기반으로 하지만 더 큰 AEM 프로젝트에서 작동하도록 약간 수정되었습니다.
+   이러한 스크립트는 일반적인 [Angular CLI 명령](https://angular.io/cli/build)을 기반으로 하지만 좀 더 큰 AEM 프로젝트에서 작동하도록 약간 수정되었습니다.
 
    `start` - 로컬 웹 서버를 사용하여 로컬로 Angular 앱을 실행합니다. 로컬 AEM 인스턴스의 콘텐츠를 프록시하도록 업데이트되었습니다.
 
-   `build` - 프로덕션 배포를 위해 Angular 앱을 컴파일합니다. `&& clientlib`을(를) 추가하면 빌드 중에 컴파일된 SPA을 클라이언트측 라이브러리로 `ui.apps` 모듈에 복사됩니다. 이 작업을 용이하게 하기 위해 npm 모듈 [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator)을(를) 사용합니다.
+   `build` - 프로덕션 배포를 위해 Angular 앱을 컴파일합니다. `&& clientlib`을(를) 추가하면 빌드 중에 컴파일된 SPA를 클라이언트측 라이브러리로 `ui.apps` 모듈에 복사됩니다. 이 작업을 용이하게 하기 위해 npm 모듈 [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator)을(를) 사용합니다.
 
    사용 가능한 스크립트에 대한 자세한 내용은 [여기](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html)를 참조하세요.
 
-6. 파일 `ui.frontend/clientlib.config.js`을(를) Inspect 합니다. 이 구성 파일은 [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator#clientlibconfigjs)에서 클라이언트 라이브러리를 생성하는 방법을 결정하는 데 사용됩니다.
+6. `ui.frontend/clientlib.config.js` 파일을 검사합니다. 이 구성 파일은 [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator#clientlibconfigjs)에서 클라이언트 라이브러리를 생성하는 방법을 결정하는 데 사용됩니다.
 
-7. 파일 `ui.frontend/pom.xml`을(를) Inspect 합니다. 이 파일은 `ui.frontend` 폴더를 [Maven 모듈](https://maven.apache.org/guides/mini/guide-multiple-modules.html)(으)로 변환합니다. Maven 빌드 중에 SPA에서 [frontend-maven-plugin](https://github.com/eirslett/frontend-maven-plugin)을(를) **test** 및 **build**&#x200B;하도록 `pom.xml` 파일이 업데이트되었습니다.
+7. `ui.frontend/pom.xml` 파일을 검사합니다. 이 파일은 `ui.frontend` 폴더를 [Maven 모듈](https://maven.apache.org/guides/mini/guide-multiple-modules.html)&#x200B;(으)로 변환합니다. Maven 빌드 중 SPA에서 [frontend-maven-plugin](https://github.com/eirslett/frontend-maven-plugin)을(를) **test** 및 **build**&#x200B;하도록 `pom.xml` 파일이 업데이트되었습니다.
 
-8. `ui.frontend/src/app/app.component.ts`에 `app.component.ts` 파일을 Inspect:
+8. `ui.frontend/src/app/app.component.ts`에서 `app.component.ts` 파일 검사:
 
    ```js
    import { Constants } from '@adobe/cq-angular-editable-components';
@@ -182,7 +182,7 @@ angular으로 작성된 단일 페이지 애플리케이션(SPA)의 소스 코�
 
    >[!CAUTION]
    >
-   > 이 프로젝트에서 사용하는 **@angular/cli**&#x200B;의 버전은 **9.1.7**&#x200B;입니다. angular CLI 버전을 계속 동기화하는 것이 좋습니다.
+   > 이 프로젝트에서 사용하는 **@angular/cli**&#x200B;의 버전은 **9.1.7**&#x200B;입니다. Angular CLI 버전을 계속 동기화하는 것이 좋습니다.
 
 3. `ui.frontend` 폴더 내에서 Angular CLI `ng generate component` 명령을 실행하여 새 `Header` 구성 요소를 만듭니다.
 
@@ -196,7 +196,7 @@ angular으로 작성된 단일 페이지 애플리케이션(SPA)의 소스 코�
    UPDATE src/app/app.module.ts (1809 bytes)
    ```
 
-   `ui.frontend/src/app/components/header`에 새 Angular 헤더 구성 요소의 뼈대가 만들어집니다.
+   `ui.frontend/src/app/components/header`에 새 Angular 헤더 구성 요소에 대한 뼈대가 만들어집니다.
 
 4. 선택한 IDE에서 `aem-guides-wknd-spa` 프로젝트를 엽니다. `ui.frontend/src/app/components/header` 폴더로 이동합니다.
 
@@ -256,17 +256,17 @@ angular으로 작성된 단일 페이지 애플리케이션(SPA)의 소스 코�
 
    `ui.apps` 패키지가 AEM의 로컬 실행 인스턴스에 배포됩니다.
 
-10. 브라우저 탭을 열고 [http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html)(으)로 이동합니다. 이제 SPA에 `Header` 구성 요소의 콘텐츠가 표시됩니다.
+10. 브라우저 탭을 열고 [http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html)&#x200B;(으)로 이동합니다. 이제 SPA에 `Header` 구성 요소의 콘텐츠가 표시됩니다.
 
    ![초기 헤더 구현](assets/integrate-spa/initial-header-implementation.png)
 
-   프로젝트 루트(즉, `mvn clean install -PautoInstallSinglePackage`)에서 Maven 빌드를 트리거할 때 **7-9** 단계가 자동으로 실행됩니다. 이제 SPA과 AEM 클라이언트측 라이브러리 간 통합의 기본 사항을 이해해야 합니다. 여전히 AEM에서 `Text` 구성 요소를 편집하고 추가할 수 있지만 `Header` 구성 요소는 편집할 수 없습니다.
+   프로젝트 루트(즉, `mvn clean install -PautoInstallSinglePackage`)에서 Maven 빌드를 트리거할 때 **7-9** 단계가 자동으로 실행됩니다. 이제 SPA와 AEM 클라이언트측 라이브러리 간의 통합에 대한 기본 사항을 이해해야 합니다. AEM에서 `Text` 구성 요소를 편집하고 추가할 수 있지만 `Header` 구성 요소는 편집할 수 없습니다.
 
 ## Webpack 개발 서버 - JSON API 프록시 {#proxy-json}
 
-이전 연습에서 보듯이 빌드를 수행하고 클라이언트 라이브러리를 AEM의 로컬 인스턴스와 동기화하는 데 몇 분이 소요됩니다. 최종 테스트에 사용할 수 있지만 대부분의 SPA 개발에는 적합하지 않습니다.
+이전 연습에서 보듯이 빌드를 수행하고 클라이언트 라이브러리를 AEM의 로컬 인스턴스와 동기화하는 데 몇 분이 소요됩니다. 이는 최종 테스트에 사용할 수 있지만, 대부분의 SPA 개발에는 적합하지 않습니다.
 
-[Webpack 개발 서버](https://webpack.js.org/configuration/dev-server/)를 사용하여 SPA을 신속하게 개발할 수 있습니다. SPA은 AEM에서 생성한 JSON 모델에 의해 구동됩니다. 이 연습에서는 실행 중인 AEM 인스턴스의 JSON 콘텐츠를 [Angular 프로젝트](https://angular.io/guide/build)에 의해 구성된 개발 서버로 **프록시**&#x200B;합니다.
+[Webpack 개발 서버](https://webpack.js.org/configuration/dev-server/)를 사용하여 SPA를 신속하게 개발할 수 있습니다. SPA는 AEM에서 생성한 JSON 모델에 의해 구동됩니다. 이 연습에서는 실행 중인 AEM 인스턴스의 JSON 콘텐츠를 [Angular 프로젝트](https://angular.io/guide/build)에 의해 구성된 개발 서버로 **프록시**&#x200B;합니다.
 
 1. IDE로 돌아가서 `ui.frontend/proxy.conf.json`에 **proxy.conf.json** 파일을 엽니다.
 
@@ -284,7 +284,7 @@ angular으로 작성된 단일 페이지 애플리케이션(SPA)의 소스 코�
    ]
    ```
 
-   [Angular 앱](https://angular.io/guide/build#proxying-to-a-backend-server)은(는) 프록시 API 요청에 대한 쉬운 메커니즘을 제공합니다. `context`에 지정된 패턴이 로컬 AEM 빠른 시작인 `localhost:4502`을(를) 통해 프록시됩니다.
+   [Angular 앱](https://angular.io/guide/build#proxying-to-a-backend-server)은(는) API 요청을 프록시하기 쉬운 메커니즘을 제공합니다. `context`에 지정된 패턴은 로컬 AEM 빠른 시작인 `localhost:4502`을(를) 통해 프록시됩니다.
 
 2. `ui.frontend/src/index.html`에서 **index.html** 파일을 엽니다. 개발 서버에서 사용하는 루트 HTML 파일입니다.
 
@@ -310,11 +310,11 @@ angular으로 작성된 단일 페이지 애플리케이션(SPA)의 소스 코�
    ℹ ｢wds｣: 404s will fallback to //index.html
    ```
 
-4. 새 브라우저 탭을 열고 [http://localhost:4200/content/wknd-spa-angular/us/en/home.html](http://localhost:4200/content/wknd-spa-angular/us/en/home.html)(으)로 이동합니다.
+4. 새 브라우저 탭을 열고 [http://localhost:4200/content/wknd-spa-angular/us/en/home.html](http://localhost:4200/content/wknd-spa-angular/us/en/home.html)&#x200B;(으)로 이동합니다.
 
    ![Webpack 개발 서버 - 프록시 json](assets/integrate-spa/webpack-dev-server-1.png)
 
-   AEM과 동일한 콘텐츠가 표시되어야 하지만 작성 기능은 활성화되어 있지 않습니다.
+   AEM과 동일한 콘텐츠가 표시되지만 작성 기능이 활성화되어 있지 않아야 합니다.
 
 5. IDE로 돌아가서 `ui.frontend/src/assets`에 `img`(이)라는 새 폴더를 만드십시오.
 6. 다음 WKND 로고를 다운로드하여 `img` 폴더에 추가합니다.
@@ -347,9 +347,9 @@ angular으로 작성된 단일 페이지 애플리케이션(SPA)의 소스 코�
 
 빠른 개발에 대한 또 다른 접근 방식은 정적 JSON 파일을 사용하여 JSON 모델로 작동하는 것입니다. JSON을 &quot;조롱&quot;하여 로컬 AEM 인스턴스에 대한 종속성을 제거합니다. 또한 프론트엔드 개발자는 JSON 모델을 업데이트하여 기능을 테스트하고 나중에 백엔드 개발자가 구현하는 JSON API의 변경 사항을 유도할 수 있습니다.
 
-모의 JSON의 초기 설정에서는 **로컬 AEM 인스턴스가 필요합니다**.
+초기 모의 JSON 설정에는 **로컬 AEM 인스턴스가 필요합니다**.
 
-1. 브라우저에서 [http://localhost:4502/content/wknd-spa-angular/us/en.model.json](http://localhost:4502/content/wknd-spa-angular/us/en.model.json)(으)로 이동합니다.
+1. 브라우저에서 [http://localhost:4502/content/wknd-spa-angular/us/en.model.json](http://localhost:4502/content/wknd-spa-angular/us/en.model.json)&#x200B;(으)로 이동합니다.
 
    애플리케이션을 구동하는 AEM에서 내보낸 JSON입니다. JSON 출력을 복사합니다.
 
@@ -406,7 +406,7 @@ angular으로 작성된 단일 페이지 애플리케이션(SPA)의 소스 코�
 
    전용 **dev** 구성을 만들면 **mocks** 폴더가 개발 중에만 사용되고 프로덕션 빌드의 AEM에 배포되지 않습니다.
 
-6. angular **browser.json** 파일에서 다음 **browserTarget** 구성을 업데이트하여 새 **dev** 구성을 사용합니다.
+6. **angular.json** 파일에서 다음에 **browserTarget** 구성을 업데이트하여 새 **dev** 구성을 사용합니다.
 
    ```diff
      ...
@@ -445,13 +445,13 @@ angular으로 작성된 단일 페이지 애플리케이션(SPA)의 소스 코�
    > ng serve --open --proxy-config ./proxy.mock.conf.json
    ```
 
-   [http://localhost:4200/content/wknd-spa-angular/us/en/home.html](http://localhost:4200/content/wknd-spa-angular/us/en/home.html)(으)로 이동하면 동일한 SPA이 표시되지만 이제 **mock** JSON 파일에서 콘텐츠가 가져옵니다.
+   [http://localhost:4200/content/wknd-spa-angular/us/en/home.html](http://localhost:4200/content/wknd-spa-angular/us/en/home.html)&#x200B;(으)로 이동하면 동일한 SPA가 표시되지만, 이제 **mock** JSON 파일에서 콘텐츠를 가져옵니다.
 
 9. 이전에 만든 **en.model.json** 파일을 약간 변경합니다. 업데이트된 콘텐츠는 즉시 **Webpack 개발 서버**&#x200B;에 반영되어야 합니다.
 
    ![모의 모델 json 업데이트](./assets/integrate-spa/webpack-mock-model.gif)
 
-   JSON 모델을 조작하고 라이브 SPA에서 효과를 확인할 수 있으므로 개발자가 JSON 모델 API를 이해하는 데 도움이 됩니다. 또한 프론트엔드 및 백엔드 개발을 동시에 수행할 수 있습니다.
+   JSON 모델을 조작하고 라이브 SPA에서 효과를 확인할 수 있으므로 개발자가 JSON 모델 API를 이해하는 데 도움이 될 수 있습니다. 또한 프론트엔드 및 백엔드 개발을 동시에 수행할 수 있습니다.
 
 ## Sass로 스타일 추가
 
@@ -630,7 +630,7 @@ angular으로 작성된 단일 페이지 애플리케이션(SPA)의 소스 코�
 
 ## AEM에 SPA 업데이트 배포
 
-**Header**&#x200B;에 대한 변경 내용은 현재 **Webpack 개발 서버**&#x200B;를 통해서만 볼 수 있습니다. 업데이트된 SPA을 AEM에 배포하여 변경 사항을 확인합니다.
+**Header**&#x200B;에 대한 변경 내용은 현재 **Webpack 개발 서버**&#x200B;를 통해서만 볼 수 있습니다. 업데이트된 SPA를 AEM에 배포하여 변경 사항을 확인합니다.
 
 1. **Webpack 개발 서버**&#x200B;를 중지합니다.
 2. `/aem-guides-wknd-spa` 프로젝트의 루트로 이동한 다음 Maven을 사용하여 AEM에 프로젝트를 배포합니다.
@@ -640,18 +640,18 @@ angular으로 작성된 단일 페이지 애플리케이션(SPA)의 소스 코�
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-3. [http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html)(으)로 이동합니다. 로고와 스타일이 적용된 업데이트된 **머리글**&#x200B;이 표시됩니다.
+3. [http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html)&#x200B;(으)로 이동합니다. 로고와 스타일이 적용된 업데이트된 **머리글**&#x200B;이 표시됩니다.
 
    ![AEM에서 업데이트된 헤더](assets/integrate-spa/final-header-component.png)
 
-   이제 업데이트된 SPA이 AEM에 있으므로 작성을 계속할 수 있습니다.
+   업데이트된 SPA가 AEM에 있으므로 작성을 계속할 수 있습니다.
 
 ## 축하합니다! {#congratulations}
 
-축하합니다. SPA을 업데이트하고 AEM과의 통합을 살펴보았습니다. 이제 **Webpack 개발 서버**&#x200B;를 사용하여 AEM JSON 모델 API에 대해 SPA을 개발하는 두 가지 방법을 알게 되었습니다.
+축하합니다. SPA를 업데이트하고 AEM과의 통합을 살펴보았습니다. 이제 **Webpack 개발 서버**&#x200B;를 사용하여 AEM JSON 모델 API에 대해 SPA를 개발하는 두 가지 방법을 알게 되었습니다.
 
 [GitHub](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/integrate-spa-solution)에서 완성된 코드를 항상 보거나 `Angular/integrate-spa-solution` 분기로 전환하여 로컬에서 코드를 확인할 수 있습니다.
 
 ### 다음 단계 {#next-steps}
 
-[SPA 구성 요소를 AEM 구성 요소에 매핑](map-components.md) - AEM SPA Editor JS SDK를 사용하여 Angular 구성 요소를 AEM(Adobe Experience Manager) 구성 요소에 매핑하는 방법에 대해 알아봅니다. 구성 요소 매핑을 통해 작성자는 기존 SPA 작성과 유사하게 AEM SPA 편집기 내에서 AEM 구성 요소를 동적으로 업데이트할 수 있습니다.
+[AEM 구성 요소에 SPA 구성 요소 매핑](map-components.md) - AEM SPA Editor JS SDK을 사용하여 Angular 구성 요소를 Adobe Experience Manager(AEM) 구성 요소에 매핑하는 방법에 대해 알아봅니다. 구성 요소 매핑을 통해 작성자는 기존 AEM 작성과 유사하게 AEM SPA 편집기 내에서 SPA 구성 요소를 동적으로 업데이트할 수 있습니다.

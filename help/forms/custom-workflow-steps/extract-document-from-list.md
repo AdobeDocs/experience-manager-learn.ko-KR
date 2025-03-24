@@ -2,7 +2,7 @@
 title: AEM 워크플로의 문서 목록에서 문서 추출
 description: 문서 목록에서 특정 문서를 추출하는 사용자 지정 워크플로 구성 요소
 feature: Adaptive Forms
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
@@ -10,7 +10,7 @@ kt: kt-13918
 last-substantial-update: 2023-09-12T00:00:00Z
 exl-id: b0baac71-3074-49d5-9686-c9955b096abb
 duration: 56
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 0%
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 ## 적응형 양식 구성
 
-* 적응형 양식의 제출 액션을 구성하여 AEM 워크플로우 트리거
+* 적응형 양식의 제출 액션을 구성하여 AEM 워크플로 트리거
   ![제출 액션](assets/store-attachments.png)
 
 ## 솔루션 테스트

@@ -1,16 +1,16 @@
 ---
-title: PDF을 PDF/A로 변환합니다.
+title: PDF을 PDF/A로 전환합니다.
 description: HTTP 끝점을 사용하여 Forms CA에서 PDF/A 파일을 만들고 확인합니다
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Output Service
 topic: Development
 jira: KT-10105
 exl-id: a4955104-8a87-4add-85c7-c3e3395f5f1a
 duration: 65
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 3%
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 # PDF/A 문서 만들기 및 유효성 검사
 
-PDF/A는 전자 문서의 보관 및 장기 보존에 사용하도록 전문화된 휴대용 문서 형식(PDF)의 ISO 표준 버전입니다. PDF/A는 글꼴 연결(PDF 포함과 반대) 및 암호화와 같이 장기간 보관에 적합하지 않은 기능을 금지하여 글꼴과 다릅니다.
+PDF/A는 전자 문서의 보관 및 장기 보존에 사용하도록 전문화된 PDF(Portable Document Format)의 ISO 표준 버전입니다. PDF/A는 글꼴 연결(글꼴 임베드와 반대) 및 암호화와 같이 장기간 보관에 적합하지 않은 기능을 금지하여 PDF과 다릅니다.
 
 ## PDF/A로 변환
 
@@ -95,7 +95,7 @@ public class PDFAUtilities {
 
 ## PDF/A 유효성 검사
 
-다음 코드는 주어진 PDF/A 준수 PDF의 유효성을 검사하는 데 사용됩니다.
+다음 코드는 주어진 PDF for PDF/A 준수 여부를 확인하는 데 사용됩니다.
 
 ```java
 public void validatePDFA(String postURL) {

@@ -5,13 +5,13 @@ feature: Adaptive Forms
 type: Documentation
 role: Developer
 level: Beginner
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Integrations
 jira: KT-15126
 exl-id: b369ed05-ba25-4b0e-aa3b-e7fc1621067d
 duration: 52
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
-source-git-commit: b4df652fcda0af5d01077b97aa7fa17cfe2abf4b
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 1%
@@ -92,7 +92,7 @@ ht-degree: 1%
 
 ![foundation-based-form](assets/foundation-based-form.png)
 
-## AEM 워크플로우를 트리거할 적응형 양식 구성
+## AEM 워크플로우를 트리거하는 적응형 양식 구성
 
 * 이전 단계에서 만든 양식 데이터 모델을 사용하여 적응형 양식을 만듭니다.
 * 데이터 소스의 일부 필드를 양식으로 끌어다 놓습니다.

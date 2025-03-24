@@ -1,7 +1,7 @@
 ---
 title: AEM Headless API 및 React - AEM Headless 첫 번째 자습서
 description: AEM의 GraphQL API에서 컨텐츠 조각 데이터를 검색하고 React 앱에 표시하는 방법을 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Development
 role: Developer
@@ -12,24 +12,24 @@ jira: KT-13270
 thumbnail: KT-13270.jpeg
 exl-id: 2b726473-5a32-4046-bce8-6da3c57a1b60
 duration: 225
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '856'
 ht-degree: 0%
 
 ---
 
-# AEM Headless API 및 반응
+# AEM 헤드리스 API 및 React
 
-AEM Headless SDK를 사용하여 Adobe Experience Manager(AEM) Headless API와 연결하기 위한 React 앱 구성을 살펴보는 이 튜토리얼 장을 시작합니다. AEM의 GraphQL API에서 컨텐츠 조각 데이터를 검색하고 React 앱에 표시하는 방법을 다룹니다.
+AEM Headless SDK을 사용하여 Adobe Experience Manager(AEM) Headless API와 연결하기 위한 React 앱 구성을 살펴보는 이 튜토리얼 장을 시작합니다. AEM의 GraphQL API에서 컨텐츠 조각 데이터를 검색하고 React 앱에 표시하는 방법을 다룹니다.
 
-AEM Headless API를 사용하면 모든 클라이언트 앱에서 AEM 콘텐츠에 액세스할 수 있습니다. AEM Headless SDK를 사용하여 AEM Headless API에 연결하도록 React 앱을 구성하는 과정을 안내합니다. 이 설정은 React 앱과 AEM 간에 재사용 가능한 통신 채널을 설정합니다.
+AEM Headless API를 사용하면 모든 클라이언트 앱에서 AEM 콘텐츠에 액세스할 수 있습니다. AEM Headless SDK을 사용하여 AEM Headless API에 연결하도록 React 앱을 구성하는 과정을 안내합니다. 이 설정은 React 앱과 AEM 간에 재사용 가능한 통신 채널을 설정합니다.
 
-다음으로 AEM Headless SDK를 사용하여 AEM의 GraphQL API에서 콘텐츠 조각 데이터를 검색합니다. AEM의 컨텐츠 조각은 구조화된 컨텐츠 관리를 제공합니다. AEM Headless SDK를 사용하면 GraphQL을 사용하여 콘텐츠 조각 데이터를 쉽게 쿼리하고 가져올 수 있습니다.
+다음으로 AEM Headless SDK을 사용하여 AEM의 GraphQL API에서 컨텐츠 조각 데이터를 검색합니다. AEM의 컨텐츠 조각은 구조화된 컨텐츠 관리를 제공합니다. AEM Headless SDK을 활용하여 GraphQL을 사용하여 콘텐츠 조각 데이터를 쉽게 쿼리하고 가져올 수 있습니다.
 
 콘텐츠 조각 데이터가 생성되면 React 앱에 통합됩니다. 매력적인 방식으로 데이터 형식을 지정하고 표시하는 방법을 배우게 됩니다. React 구성 요소에서 콘텐츠 조각 데이터를 처리하고 렌더링하는 모범 사례를 다루며, 앱의 UI와 매끄럽게 통합됩니다.
 
-자습서 전체에서 설명, 코드 예제 및 실용적인 팁을 제공합니다. 결국 AEM Headless API에 연결하도록 React 앱을 구성하고, AEM Headless SDK를 사용하여 콘텐츠 조각 데이터를 검색한 다음 React 앱에 원활하게 표시할 수 있습니다. 시작해 보겠습니다!
+자습서 전체에서 설명, 코드 예제 및 실용적인 팁을 제공합니다. 결국 AEM Headless API에 연결하도록 React 앱을 구성하고, AEM Headless SDK을 사용하여 콘텐츠 조각 데이터를 검색한 다음, React 앱에 원활하게 표시할 수 있습니다. 시작해 보겠습니다!
 
 
 ## React 앱 복제
@@ -138,7 +138,7 @@ AEM Headless API를 사용하면 모든 클라이언트 앱에서 AEM 콘텐츠�
    export default App;
    ```
 
-1. `AEMHeadless` SDK를 가져옵니다. 이 SDK는 앱에서 AEM의 Headless API와 상호 작용하는 데 사용하는 도우미 라이브러리입니다.
+1. `AEMHeadless` SDK을 가져옵니다. 이 SDK은 AEM의 Headless API와 상호 작용하기 위해 앱에서 사용하는 도우미 라이브러리입니다.
 
    이 가져오기 문을 `home.js`에 추가합니다.
 
@@ -167,7 +167,7 @@ AEM Headless API를 사용하면 모든 클라이언트 앱에서 AEM 콘텐츠�
    }
    ```
 
-1. `context` 변수가 변경되면 AEM Headless SDK가 변경되어야 하므로 `useEffect()` 내에서 AEM Headless SDK를 초기화합니다.
+1. `context` 변수가 변경되면 AEM Headless SDK이 변경되어야 하므로 `useEffect()` 내에서 AEM Headless SDK을 초기화합니다.
 
    ```javascript
    useEffect(() => {
@@ -184,7 +184,7 @@ AEM Headless API를 사용하면 모든 클라이언트 앱에서 AEM 콘텐츠�
    > `.env` 파일의 요소를 읽는 `context.js` 파일이 `/utils` 아래에 있습니다. 참고로 `context.url`은(는) AEM as a Cloud Service 환경의 URL입니다. `context.endpoint`은(는) 이전 단원에서 만든 끝점에 대한 전체 경로입니다. 마지막으로 `context.token`은(는) 개발자 토큰입니다.
 
 
-1. AEM Headless SDK에서 제공되는 콘텐츠를 노출하는 React 상태를 만듭니다.
+1. AEM Headless SDK에서 오는 콘텐츠를 노출하는 React 상태를 만듭니다.
 
    ```javascript
    const Home = () => {
@@ -193,7 +193,7 @@ AEM Headless API를 사용하면 모든 클라이언트 앱에서 AEM 콘텐츠�
    }
    ```
 
-1. 앱을 AEM에 연결합니다. 이전 단원에서 만든 지속 쿼리를 사용합니다. AEM Headless SDK가 초기화된 후 `useEffect` 내에 다음 코드를 추가하겠습니다. 아래 표시된 대로 `useEffect`을(를) `context` 변수에 종속되도록 합니다.
+1. 앱을 AEM에 연결합니다. 이전 단원에서 만든 지속 쿼리를 사용합니다. AEM Headless SDK이 초기화된 후 `useEffect` 내에 다음 코드를 추가하겠습니다. 아래 표시된 대로 `useEffect`을(를) `context` 변수에 종속되도록 합니다.
 
 
    ```javascript
@@ -217,7 +217,7 @@ AEM Headless API를 사용하면 모든 클라이언트 앱에서 AEM 콘텐츠�
 
    ![Chrome 개발 도구](./assets/2/dev-tools.png)
 
-   AEM Headless SDK는 GraphQL에 대한 요청을 인코딩하고 제공된 매개 변수를 추가합니다. 브라우저에서 요청을 열 수 있습니다.
+   AEM Headless SDK은 GraphQL에 대한 요청을 인코딩하고 제공된 매개 변수를 추가합니다. 브라우저에서 요청을 열 수 있습니다.
 
    >[!NOTE]
    >
@@ -257,7 +257,7 @@ AEM Headless API를 사용하면 모든 클라이언트 앱에서 AEM 콘텐츠�
 
 ## 다음 단계
 
-축하합니다! AEM Headless SDK를 사용하여 AEM Headless API와 통합하도록 React 앱을 업데이트했습니다!
+축하합니다! AEM Headless SDK을 사용하여 AEM Headless API와 통합하도록 React 앱을 업데이트했습니다!
 
 다음으로, AEM에서 참조된 콘텐츠 조각을 동적으로 렌더링하는 보다 복잡한 이미지 목록 구성 요소를 만들어 보겠습니다.
 

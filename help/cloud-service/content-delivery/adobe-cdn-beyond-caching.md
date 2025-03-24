@@ -1,7 +1,7 @@
 ---
 title: Adobe CDN - 캐싱을 넘어선 고급 기능
-description: CDN에서 트래픽 구성, 토큰 및 자격 증명 설정, CDN 오류 페이지 등과 같은 캐싱을 넘어 Adobe CDN의 고급 기능에 대해 알아봅니다.
-version: Cloud Service
+description: CDN에서 트래픽 구성, 토큰 및 자격 증명 설정, CDN 오류 페이지 등과 같은 캐싱을 넘어선 Adobe CDN의 고급 기능에 대해 알아봅니다.
+version: Experience Manager as a Cloud Service
 feature: Website Performance, CDN Cache
 topic: Architecture, Performance, Content Management
 role: Developer, Architect, User, Leader
@@ -12,7 +12,7 @@ last-substantial-update: 2024-08-21T00:00:00Z
 jira: KT-15123
 thumbnail: KT-15123.jpeg
 exl-id: 8948a900-01e9-49ed-9ce5-3a057f5077e4
-source-git-commit: 0e8b76b6e870978c6db9c9e7a07a6259e931bdcc
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Adobe CDN - 캐싱을 넘어선 고급 기능
 
-CDN(Adobe Content Delivery Network)에서 트래픽 구성, 토큰 및 자격 증명 설정, CDN 오류 페이지 등과 같은 캐싱을 넘어선 CDN의 고급 기능에 대해 알아봅니다.
+CDN(Adobe Content Delivery Network)에서 트래픽 구성, 토큰 및 자격 증명 설정, CDN 오류 페이지 등과 같은 캐싱 이상의 고급 기능에 대해 알아봅니다.
 
 Adobe CDN은 콘텐츠 캐싱 외에 웹 사이트 성능을 최적화하는 데 도움이 되는 몇 가지 고급 기능을 제공합니다. 이러한 기능에는 다음이 포함됩니다.
 
@@ -42,7 +42,7 @@ _CDN에서 트래픽 구성_&#x200B;과 관련된 주요 기능에 대해 알아
 - **웹 응용 프로그램 방화벽(WAF):** WAF은 SQL 삽입, 사이트 간 스크립팅 등과 같은 일반적인 웹 응용 프로그램 취약점으로부터 웹 사이트를 보호합니다. 이 기능을 사용하려면 Enhanced Security 라이센스 또는 WAF-DDoS Protection 라이센스가 필요합니다.
 - **요청 변환:** 헤더 설정 또는 설정 해제, 쿼리 매개 변수, 쿠키 수정 등과 같은 수신 요청을 수정합니다.
 - **응답 변환:** 헤더를 설정하거나 해제하는 등의 보내는 응답을 수정합니다.
-- **원본 선택:** 요청 URL을 기반으로 다른 원본 서버(Adobe 및 비Adobe)로 트래픽을 라우팅합니다.
+- **원본 선택:** 요청 URL을 기반으로 다른 원본 서버(Adobe 및 Adobe 이외)로 트래픽을 라우팅합니다.
 - **URL 리디렉션:** 다른 절대 또는 상대 URL로 리디렉션 요청(HTTP 301/302)을 리디렉션합니다.
 
 ## CDN 자격 증명 및 인증 구성
@@ -87,7 +87,7 @@ data:
           location: /us/en/top3.html
 ```
 
-## 관련 Tutorials
+## 관련 자습서
 
 [트래픽 필터 규칙으로 웹 사이트 보호](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview)
 

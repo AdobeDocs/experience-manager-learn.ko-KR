@@ -1,8 +1,8 @@
 ---
 title: 사용자 지정 구성 요소 만들기 | AEM SPA 편집기 및 Angular 시작하기
-description: AEM SPA 편집기에 사용할 사용자 지정 구성 요소를 만드는 방법을 알아봅니다. 작성자 대화 상자 및 Sling 모델을 개발하여 JSON 모델을 확장하여 사용자 지정 구성 요소를 채우는 방법에 대해 알아봅니다.
+description: AEM SPA 편집기에서 사용할 사용자 지정 구성 요소를 만드는 방법을 알아봅니다. 작성자 대화 상자 및 Sling 모델을 개발하여 JSON 모델을 확장하여 사용자 지정 구성 요소를 채우는 방법에 대해 알아봅니다.
 feature: SPA Editor
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 jira: KT-5831
 thumbnail: 5831-spa-angular.jpg
 topic: SPA
@@ -11,7 +11,7 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 6c1c7f2b-f574-458c-b744-b92419c46f23
 duration: 308
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1321'
 ht-degree: 0%
@@ -20,17 +20,17 @@ ht-degree: 0%
 
 # 사용자 지정 구성 요소 만들기 {#custom-component}
 
-AEM SPA 편집기에 사용할 사용자 지정 구성 요소를 만드는 방법을 알아봅니다. 작성자 대화 상자 및 Sling 모델을 개발하여 JSON 모델을 확장하여 사용자 지정 구성 요소를 채우는 방법에 대해 알아봅니다.
+AEM SPA 편집기에서 사용할 사용자 지정 구성 요소를 만드는 방법을 알아봅니다. 작성자 대화 상자 및 Sling 모델을 개발하여 JSON 모델을 확장하여 사용자 지정 구성 요소를 채우는 방법에 대해 알아봅니다.
 
 ## 목표
 
 1. AEM에서 제공하는 JSON 모델 API를 조작하는 Sling 모델의 역할을 이해합니다.
 2. AEM 구성 요소 대화 상자를 만드는 방법을 이해합니다.
-3. SPA 편집기 프레임워크와 호환되는 **custom** AEM 구성 요소를 만드는 방법에 대해 알아봅니다.
+3. SPA 편집기 프레임워크와 호환되는 **사용자 지정** AEM 구성 요소를 만드는 방법을 알아봅니다.
 
 ## 빌드할 내용
 
-이전 장에서는 SPA 구성 요소를 개발하고 *기존* AEM 핵심 구성 요소에 매핑하는 데 중점을 둡니다. 이 장에서는 *새* AEM 구성 요소를 만들고 확장하고 AEM에서 제공하는 JSON 모델을 조작하는 방법에 중점을 둡니다.
+이전 장에서는 SPA 구성 요소를 개발하여 *기존* AEM 핵심 구성 요소에 매핑하는 데 중점을 둡니다. 이 장에서는 *새* AEM 구성 요소를 만들고 확장하고 AEM에서 제공하는 JSON 모델을 조작하는 방법에 중점을 둡니다.
 
 간단한 `Custom Component`은(는) 새로운 AEM 구성 요소를 만드는 데 필요한 단계를 보여 줍니다.
 
@@ -156,13 +156,13 @@ AEM 구성 요소는 노드 및 속성으로 정의됩니다. 프로젝트에서
    >
    > 핵심 구성 요소 정의를 보면 훨씬 많은 [대화 상자의 예제를 볼 수 있습니다](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components). [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/libs/granite/ui/components/coral/foundation/form)의 `/libs/granite/ui/components/coral/foundation/form` 아래에서 사용할 수 있는 `select`, `textarea`, `pathfield`과(와) 같은 추가 양식 필드를 볼 수도 있습니다.
 
-   기존 AEM 구성 요소의 경우 일반적으로 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) 스크립트가 필요합니다. SPA은 구성 요소를 렌더링하므로 HTL 스크립트가 필요하지 않습니다.
+   기존 AEM 구성 요소의 경우 일반적으로 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) 스크립트가 필요합니다. SPA는 구성 요소를 렌더링하므로 HTL 스크립트가 필요하지 않습니다.
 
 ## Sling 모델 만들기
 
 Sling 모델은 JCR에서 Java™ 변수로 데이터를 쉽게 매핑하는 주석 기반 Java™ &quot;POJO&quot;(일반 이전 Java™ 개체)입니다. [Sling 모델](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html#sling-models)은 일반적으로 AEM 구성 요소에 대한 복잡한 서버측 비즈니스 논리를 캡슐화하는 기능을 합니다.
 
-SPA 편집기의 컨텍스트에서 Sling 모델은 [Sling 모델 내보내기 도구](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=ko-KR)를 사용하는 기능을 통해 JSON 모델을 통해 구성 요소의 콘텐츠를 노출합니다.
+SPA 편집기의 컨텍스트에서 슬링 모델은 [슬링 모델 내보내기 도구](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=ko)를 사용하는 기능을 통해 JSON 모델을 통해 구성 요소의 콘텐츠를 노출합니다.
 
 1. 선택한 IDE에서 `core` 모듈을 엽니다. `CustomComponent.java` 및 `CustomComponentImpl.java`이(가) 이미 만들어져 챕터 시작 코드의 일부로 스텁아웃되었습니다.
 
@@ -203,7 +203,7 @@ SPA 편집기의 컨텍스트에서 Sling 모델은 [Sling 모델 내보내기 �
    static final String RESOURCE_TYPE = "wknd-spa-angular/components/custom-component";
    ```
 
-   구성 요소의 리소스 유형은 Sling 모델을 AEM 구성 요소에 바인딩하고 궁극적으로 Angular 구성 요소에 매핑하는 것입니다.
+   구성 요소의 리소스 유형은 슬링 모델을 AEM 구성 요소에 바인딩하고 궁극적으로 Angular 구성 요소에 매핑하는 것입니다.
 
 6. 구성 요소 리소스 형식을 반환하려면 `getExportedType()` 메서드를 `CustomComponentImpl` 클래스에 추가하십시오.
 
@@ -214,7 +214,7 @@ SPA 편집기의 컨텍스트에서 Sling 모델은 [Sling 모델 내보내기 �
    }
    ```
 
-   이 메서드는 `ComponentExporter` 인터페이스를 구현할 때 필요하며 Angular 구성 요소에 매핑을 허용하는 리소스 형식을 노출합니다.
+   이 메서드는 `ComponentExporter` 인터페이스를 구현하고 Angular 구성 요소에 매핑을 허용하는 리소스 형식을 노출할 때 필요합니다.
 
 7. 작성자 대화 상자에서 지속되는 `message` 속성의 값을 반환하도록 `getMessage()` 메서드를 업데이트합니다. `@ValueMap` 주석을 사용하여 JCR 값 `message`을(를) Java™ 변수에 매핑합니다.
 
@@ -237,7 +237,7 @@ SPA 편집기의 컨텍스트에서 Sling 모델은 [Sling 모델 내보내기 �
    >
    > 여기서 [완료된 CustomComponentImpl.java를 볼 수 있습니다](https://github.com/adobe/aem-guides-wknd-spa/blob/Angular/custom-component-solution/core/src/main/java/com/adobe/aem/guides/wknd/spa/angular/core/models/impl/CustomComponentImpl.java).
 
-## angular 구성 요소 업데이트
+## Angular 구성 요소 업데이트
 
 사용자 지정 구성 요소에 대한 Angular 코드가 이미 생성되었습니다. 그런 다음 몇 가지 업데이트를 통해 Angular 구성 요소를 AEM 구성 요소에 매핑합니다.
 
@@ -278,7 +278,7 @@ SPA 편집기의 컨텍스트에서 Sling 모델은 [Sling 모델 내보내기 �
 
 그런 다음 AEM으로 이동하여 업데이트를 확인하고 `Custom Component`을(를) SPA에 추가할 수 있도록 합니다.
 
-1. [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)(으)로 이동하여 새 Sling 모델의 등록을 확인하십시오.
+1. [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)&#x200B;(으)로 이동하여 새 Sling 모델의 등록을 확인하십시오.
 
    ```plain
    com.adobe.aem.guides.wknd.spa.angular.core.models.impl.CustomComponentImpl - wknd-spa-angular/components/custom-component
@@ -288,7 +288,7 @@ SPA 편집기의 컨텍스트에서 Sling 모델은 [Sling 모델 내보내기 �
 
    `CustomComponentImpl`이(가) `wknd-spa-angular/components/custom-component` 구성 요소와 연결되어 있고 슬링 모델 익스포터를 통해 등록되었음을 나타내는 위의 두 줄이 표시됩니다.
 
-2. [http://localhost:4502/editor.html/conf/wknd-spa-angular/settings/wcm/templates/spa-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd-spa-angular/settings/wcm/templates/spa-page-template/structure.html)에 있는 SPA 페이지 템플릿으로 이동합니다.
+2. [http://localhost:4502/editor.html/conf/wknd-spa-angular/settings/wcm/templates/spa-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd-spa-angular/settings/wcm/templates/spa-page-template/structure.html)의 SPA 페이지 템플릿으로 이동합니다.
 3. 레이아웃 컨테이너의 정책을 업데이트하여 새 `Custom Component`을(를) 허용된 구성 요소로 추가합니다.
 
    ![레이아웃 컨테이너 정책 업데이트](assets/custom-component/custom-component-allowed.png)
@@ -301,7 +301,7 @@ SPA 편집기의 컨텍스트에서 Sling 모델은 [Sling 모델 내보내기 �
 
 그런 다음 AEM SPA 편집기를 사용하여 `Custom Component`을(를) 작성합니다.
 
-1. [http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html)(으)로 이동합니다.
+1. [http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html)&#x200B;(으)로 이동합니다.
 2. `Edit` 모드에서 `Custom Component`을(를) `Layout Container`에 추가합니다.
 
    ![새 구성 요소 삽입](assets/custom-component/insert-custom-component.png)
@@ -316,7 +316,7 @@ SPA 편집기의 컨텍스트에서 Sling 모델은 [Sling 모델 내보내기 �
 
    ![모든 대문자로 표시된 메시지](assets/custom-component/message-displayed.png)
 
-5. [http://localhost:4502/content/wknd-spa-angular/us/en.model.json](http://localhost:4502/content/wknd-spa-angular/us/en.model.json)(으)로 이동하여 JSON 모델을 봅니다. `wknd-spa-angular/components/custom-component` 검색:
+5. [http://localhost:4502/content/wknd-spa-angular/us/en.model.json](http://localhost:4502/content/wknd-spa-angular/us/en.model.json)&#x200B;(으)로 이동하여 JSON 모델을 봅니다. `wknd-spa-angular/components/custom-component` 검색:
 
    ```json
    "custom_component_208183317": {

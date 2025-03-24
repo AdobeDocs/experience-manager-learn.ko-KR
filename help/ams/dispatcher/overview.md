@@ -1,7 +1,7 @@
 ---
-title: Managed Services Dispatcher 설명서 Adobe
+title: Adobe Managed Services Dispatcher 설명서
 description: Dispatcher 설정에서 적절한 지원을 받기 위한 AMS 프로세스입니다.
-version: 6.5
+version: Experience Manager 6.5
 topic: Administration, Performance, Security
 feature: Dispatcher
 role: Admin
@@ -9,14 +9,14 @@ level: Beginner
 thumbnail: xx.jpg
 doc-type: Catalog
 exl-id: 4f72d010-f488-490a-83fb-38ff1b1e8183
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 5%
 
 ---
 
-# Managed Services Dispatcher 설명서 Adobe
+# Adobe Managed Services Dispatcher 설명서
 
 AEM 설치가 Adobe Managed Service에서 호스팅되는 경우 이 설명서를 읽어 보십시오.
 제공된 문서 아래에서는 제공된 Dispatcher 설정을 적절히 사용자 정의하고 작업하기 위한 AMS 프로세스를 다룹니다.

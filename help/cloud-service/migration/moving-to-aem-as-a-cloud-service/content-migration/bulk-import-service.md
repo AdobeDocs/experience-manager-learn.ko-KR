@@ -1,7 +1,7 @@
 ---
 title: 일괄 가져오기 서비스를 사용한 컨텐츠 마이그레이션
-description: AEM as a Cloud Service의 일괄 가져오기 서비스 를 사용하여 AEM이 아닌 소스에서 에셋을 가져오는 방법에 대해 알아봅니다.
-version: Cloud Service
+description: AEM as a Cloud Services의 일괄 가져오기 서비스 를 사용하여 AEM이 아닌 소스에서 에셋을 가져오는 방법에 대해 알아봅니다.
+version: Experience Manager as a Cloud Service
 topic: Migration, Upgrade
 feature: Migration
 role: Developer
@@ -10,7 +10,7 @@ jira: KT-8918
 thumbnail: 336969.jpeg
 exl-id: 4944d3d9-52a0-4255-9e6c-eb119160e400
 duration: 650
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # 일괄 가져오기 서비스
 
-AEM as a Cloud Service의 일괄 가져오기 서비스 를 사용하여 AEM이 아닌 소스에서 에셋을 가져오는 방법에 대해 알아봅니다.
+AEM as a Cloud Services의 일괄 가져오기 서비스 를 사용하여 AEM이 아닌 소스에서 에셋을 가져오는 방법에 대해 알아봅니다.
 
 
 

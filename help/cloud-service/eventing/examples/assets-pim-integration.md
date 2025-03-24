@@ -1,7 +1,7 @@
 ---
 title: PIM 통합을 위한 AEM Assets 이벤트
 description: 에셋 메타데이터 업데이트를 위해 AEM Assets 및 PIM(제품 정보 관리) 시스템을 통합하는 방법을 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Developing, App Builder
 topic: Development, Architecture, Content Management
 role: Architect, Developer
@@ -12,7 +12,7 @@ last-substantial-update: 2024-02-13T00:00:00Z
 jira: KT-14901
 thumbnail: KT-14901.jpeg
 exl-id: 070cbe54-2379-448b-bb7d-3756a60b65f0
-source-git-commit: 2b5f7a033921270113eb7f41df33444c4f3d7723
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1517'
 ht-degree: 0%
@@ -25,11 +25,11 @@ ht-degree: 0%
 >
 >이 자습서에서는 OpenAPI 기반 AEM API를 사용합니다. 이 기능은 조기 액세스 프로그램의 일부로 사용할 수 있습니다. 이 프로그램에 액세스하는 데 관심이 있는 경우 사용 사례에 대한 설명을 [aem-apis@adobe.com](mailto:aem-apis@adobe.com)에 전자 메일로 보내십시오.
 
-AEM 이벤트를 수신하고 OpenAPI 기반 Assets Author API를 사용하여 AEM에서 콘텐츠 상태를 업데이트하도록 작동하는 방법에 대해 알아봅니다.
+OpenAPI 기반 AEM Author API를 사용하여 AEM 이벤트를 수신하고 이 이벤트를 사용하여 Assets의 컨텐츠 상태를 업데이트하는 방법에 대해 알아봅니다.
 
 수신된 이벤트를 처리하는 방법은 비즈니스 요구 사항에 따라 다릅니다. 예를 들어 이벤트 데이터를 사용하여 서드파티 시스템이나 AEM 또는 둘 다를 업데이트할 수 있습니다.
 
-이 예에서는 PIM(제품 정보 관리) 시스템과 같은 서드파티 시스템을 AEM as a Cloud Service Assets과 통합하는 방법을 보여 줍니다. AEM Assets 이벤트를 수신하면 PIM 시스템에서 추가 메타데이터를 검색하고 AEM에서 자산 메타데이터를 업데이트하도록 처리됩니다. 업데이트된 에셋 메타데이터에는 SKU, 공급업체 이름 또는 기타 제품 세부 사항과 같은 추가 정보가 포함될 수 있습니다.
+이 예에서는 PIM(제품 정보 관리) 시스템과 같은 서드파티 시스템을 AEM as a Cloud Service Assets과 통합하는 방법을 보여 줍니다. AEM Assets 이벤트를 수신하면 PIM 시스템에서 추가 메타데이터를 검색하고 AEM에서 에셋 메타데이터를 업데이트하도록 처리됩니다. 업데이트된 에셋 메타데이터에는 SKU, 공급업체 이름 또는 기타 제품 세부 사항과 같은 추가 정보가 포함될 수 있습니다.
 
 AEM Assets 이벤트를 받고 처리하기 위해 [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/overview/what_is_runtime/), 서버리스 플랫폼이 사용됩니다. 그러나 서드파티 시스템의 Webhook이나 Amazon EventBridge와 같은 다른 이벤트 처리 시스템도 사용할 수 있습니다.
 
@@ -38,8 +38,8 @@ AEM Assets 이벤트를 받고 처리하기 위해 [Adobe I/O Runtime](https://d
 ![PIM 통합을 위한 AEM Assets 이벤트](../assets/examples/assets-pim-integration/aem-assets-pim-integration.png)
 
 1. AEM 작성자 서비스는 자산 업로드가 완료되고 모든 자산 처리 활동도 완료되면 _자산 처리 완료됨_ 이벤트를 트리거합니다. 에셋 처리가 완료될 때까지 기다리면 메타데이터 추출과 같은 기본 제공 처리가 완료됩니다.
-1. 이벤트가 [Adobe I/O 이벤트](https://developer.adobe.com/events/) 서비스로 전송됩니다.
-1. 이벤트 Adobe I/O 서비스에서 이벤트를 [Adobe I/O Runtime 작업](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/)에 전달하여 처리합니다.
+1. 이벤트가 [Adobe I/O Events](https://developer.adobe.com/events/) 서비스로 전송됩니다.
+1. Adobe I/O Events 서비스가 처리를 위해 이벤트를 [Adobe I/O Runtime 작업](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/)에 전달합니다.
 1. Adobe I/O Runtime 작업은 PIM 시스템의 API를 호출하여 SKU, 공급자 정보 또는 기타 세부 정보와 같은 추가 메타데이터를 검색합니다.
 1. 그런 다음 OpenAPI 기반 [Assets 작성자 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)를 사용하여 PIM에서 검색한 추가 메타데이터가 AEM Assets에서 업데이트됩니다.
 
@@ -47,7 +47,7 @@ AEM Assets 이벤트를 받고 처리하기 위해 [Adobe I/O Runtime](https://d
 
 이 자습서를 완료하려면 다음이 필요합니다.
 
-- [AEM 이벤트가 활성화됨](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment)인 AEM as a Cloud Service 환경. 또한 샘플 [WKND Sites](https://github.com/adobe/aem-guides-wknd?#aem-wknd-sites-project) 프로젝트를 여기에 배포해야 합니다.
+- [AEM 이벤트 사용](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment)이 설정된 AEM as a Cloud Service 환경. 또한 샘플 [WKND Sites](https://github.com/adobe/aem-guides-wknd?#aem-wknd-sites-project) 프로젝트를 여기에 배포해야 합니다.
 
 - [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started/)에 액세스
 
@@ -77,7 +77,7 @@ AEM Assets 이벤트를 수신하고 이전 단계에서 만든 Adobe I/O Runtim
 
 - ADC에서 3단계에서 만든 [프로젝트](https://developer.adobe.com/console/projects)로 이동합니다. 해당 프로젝트에서 `aio app deploy`을(를) 4단계 지침의 일부로 실행할 때 런타임 작업이 배포되는 `Stage` 작업 영역을 선택하십시오.
 
-- **서비스 추가** 단추를 클릭하고 **이벤트** 옵션을 선택합니다. **Experience Cloud 추가** 대화 상자에서 **이벤트** > **AEM Assets**&#x200B;을 선택하고 **다음**을 클릭합니다.
+- **서비스 추가** 단추를 클릭하고 **이벤트** 옵션을 선택합니다. **이벤트 추가** 대화 상자에서 **Experience Cloud** > **AEM Assets**&#x200B;을 선택하고 **다음**을 클릭합니다.
   ![AEM Assets 이벤트 - 이벤트 추가](../assets/examples/assets-pim-integration/add-aem-assets-event.png)
 
 - **이벤트 등록 구성** 단계에서 원하는 AEMCS 인스턴스, _자산 처리 완료_ 이벤트 및 OAuth 서버 간 인증 유형을 선택합니다.
@@ -88,7 +88,7 @@ AEM Assets 이벤트를 수신하고 이전 단계에서 만든 Adobe I/O Runtim
 
   ![AEM Assets 이벤트 - 이벤트 수신](../assets/examples/assets-pim-integration/receive-aem-assets-event.png)
 
-- 마찬가지로 **서비스 추가** 단추를 클릭하고 **API** 옵션을 선택하십시오. **API 추가** 양식에서 **Experience Cloud** > **AEM Assets 작성자 API**&#x200B;를 선택하고 **다음**&#x200B;을 클릭합니다.
+- 마찬가지로 **서비스 추가** 단추를 클릭하고 **API** 옵션을 선택하십시오. **API 추가** 모달에서 **Experience Cloud** > **AEM Assets 작성자 API**&#x200B;를 선택하고 **다음**&#x200B;을 클릭합니다.
 
   ![AEM Assets 작성자 API 추가 - 프로젝트 구성](../assets/examples/assets-pim-integration/add-aem-api.png)
 
@@ -331,10 +331,10 @@ AEM Assets 및 PIM 통합을 확인하려면 AEM Assets의 **모험** 폴더에 
 
 ## 개념 및 주요 특징
 
-엔터프라이즈에서 AEM과 PIM과 같은 다른 시스템 간의 에셋 메타데이터 동기화가 필요한 경우가 많습니다. AEM 이벤트를 사용하면 이러한 요구 사항을 충족할 수 있습니다.
+엔터프라이즈에서 AEM과 PIM과 같은 기타 시스템 간의 에셋 메타데이터 동기화가 필요한 경우가 많습니다. AEM 이벤트를 사용하면 이러한 요구 사항을 충족할 수 있습니다.
 
-- 에셋 메타데이터 검색 코드는 AEM의 외부에서 실행되어 AEM Author 서비스의 로드를 방지하므로 독립적으로 확장하는 이벤트 기반 아키텍처입니다.
+- 에셋 메타데이터 검색 코드는 AEM 외부에서 실행되어 AEM Author 서비스의 로드를 방지하므로 독립적으로 확장하는 이벤트 기반 아키텍처입니다.
 - 새로 도입된 Assets 작성자 API는 AEM에서 에셋 메타데이터를 업데이트하는 데 사용됩니다.
 - API 인증은 OAuth 서버 간(즉, 클라이언트 자격 증명 흐름)을 사용합니다. [OAuth 서버 간 자격 증명 구현 안내서](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)를 참조하십시오.
 - Adobe I/O Runtime 작업 대신 다른 웹후크 또는 Amazon EventBridge를 사용하여 AEM Assets 이벤트를 수신하고 메타데이터 업데이트를 처리할 수 있습니다.
-- AEM Eventing을 통한 자산 이벤트는 기업이 중요한 프로세스를 자동화하고 능률화할 수 있도록 지원하여 컨텐츠 에코시스템 전반의 효율성과 일관성을 향상시킵니다.
+- AEM Eventing을 통한 에셋 이벤트는 기업이 중요한 프로세스를 자동화하고 능률화할 수 있도록 지원하여 콘텐츠 생태계 전반의 효율성과 일관성을 증진합니다.

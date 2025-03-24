@@ -3,14 +3,14 @@ title: 컨텐츠 조각 및 경험 조각
 description: 콘텐츠 조각과 경험 조각 간의 유사점과 차이점, 각 유형 사용 시기 및 방법에 대해 알아봅니다.
 sub-product: Experience Manager Assets, Experience Manager Sites
 feature: Content Fragments, Experience Fragments
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Content Management
 role: User
 level: Beginner
 doc-type: Article
 exl-id: ccbc68d1-a83e-4092-9a49-53c56c14483e
 duration: 168
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '829'
 ht-degree: 2%
@@ -33,7 +33,7 @@ Adobe Experience Manager의 콘텐츠 조각 및 경험 조각 은 표면적으�
 </ul>
 </td>
 <td><ul>
-<li>콘텐츠 및 프레젠테이션을 정의하는 하나 이상의 AEM 구성 요소로 구성된 재사용 가능한 복합 구성 요소로서 자체적으로 의미가 있는 <strong>경험</strong>을(를) 구성합니다.</li>
+<li>콘텐츠 및 프레젠테이션을 정의하는 하나 이상의 AEM 구성 요소로 구성된 재사용 가능한 합성 기능으로, 자체적으로 의미가 있는 <strong>경험</strong>을(를) 구성합니다.</li>
 </ul>
 </td>
 </tr><tr><td><strong>핵심 개념</strong></td>
@@ -71,7 +71,7 @@ Adobe Experience Manager의 콘텐츠 조각 및 경험 조각 은 표면적으�
 </td>
 <td><ul>
 <li>변형은 채널별 또는 컨텍스트별</li>
-<li>변형은 AEM Live Copy를 통해 동기화된 상태로 유지됩니다.</li>
+<li>변형이 AEM Live Copy를 통해 동기화됨</li>
 <li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html" target="_blank">빌딩 블록</a>을(를) 통해 변형 간 콘텐츠 재사용 허용</li>
 </ul>
 </td>
@@ -100,9 +100,9 @@ Adobe Experience Manager의 콘텐츠 조각 및 경험 조각 은 표면적으�
 </td>
 </tr><tr><td><strong>사용</strong></td>
 <td><ul>
-<li><a href="https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ko-KR">AEM Headless GraphQL API</a>를 통해 JSON 내보내기</li>
+<li><a href="https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html">AEM 헤드리스 GraphQL API</a>를 통해 JSON 내보내기</li>
 <li>AEM Sites, AEM Screens 또는 경험 조각에서 사용할 <a href="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html" target="_blank">AEM 핵심 구성 요소 콘텐츠 조각 구성 요소</a>.</li>
-<li>타사 소비를 위해 <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=en" target="_blank">AEM Content Services</a>를 통해 JSON 내보내기</li>
+<li>서드파티 소비를 위해 <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=en" target="_blank">AEM Content Services</a>를 통해 JSON 내보내기</li>
 <li>타깃팅된 오퍼를 위해 Adobe Target으로 JSON 내보내기</li>
 <li>타사 소비를 위해 AEM HTTP Assets API를 통한 JSON</li>
 </ul>
@@ -131,12 +131,12 @@ Adobe Experience Manager의 콘텐츠 조각 및 경험 조각 은 표면적으�
 </td>
 </tr><tr><td><strong>설명서</strong></td>
 <td><ul>
-<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=en&amp;topic=/experience-manager/6-5/assets/morehelp/content-fragments.ug.js" target="_blank">AEM Content Fragments 사용 안내서</a></li>
+<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=en&amp;topic=/experience-manager/6-5/assets/morehelp/content-fragments.ug.js" target="_blank">AEM 콘텐츠 조각 사용 안내서</a></li>
 <li><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/content-fragments-feature-video-use.html?lang=en" target="_blank">AEM에서 컨텐츠 조각 사용</a></li>
 </ul>
 </td>
 <td><ul>
-<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html?lang=en" target="_blank">경험 조각에 대한 Adobe 설명서</a></li>
+<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html?lang=en" target="_blank">경험 조각의 Adobe 설명서</a></li>
 </ul>
 </td>
 </tr></tbody></table>
@@ -153,7 +153,7 @@ Adobe Experience Manager의 콘텐츠 조각 및 경험 조각 은 표면적으�
 + 컨텐츠 조각은 다음 사용자가 노출/사용할 수 있습니다.
    + AEM WCM 핵심 구성 요소의 콘텐츠 조각 구성 요소를 통해 **AEM Sites**(또는 AEM Screens)에서 콘텐츠 조각을 사용합니다.
    + AEM Headless GraphQL API를 사용하여 Headless 앱의 **콘텐츠 조각**&#x200B;을(를) 사용합니다.
-   + 읽기 전용 사용 사례에 대해 **AEM Content Services** 및 API 페이지를 통해 콘텐츠 조각 변형 콘텐츠를 JSON으로 노출합니다.
+   + 읽기 전용 사용 사례에 대해 **AEM Content Services** 및 API 페이지를 통해 콘텐츠 조각 변형 콘텐츠를 JSON으로 노출
    + CRUD 사용 사례에 대해 **AEM Assets HTTP API**&#x200B;를 통해 AEM Assets에 직접 호출하여 콘텐츠 조각 콘텐츠(모든 변형)를 JSON으로 직접 노출
 
 ## 경험 조각 아키텍처
@@ -165,15 +165,15 @@ Adobe Experience Manager의 콘텐츠 조각 및 경험 조각 은 표면적으�
 + 경험 조각 **변형**&#x200B;은(는) 편집 가능한 템플릿을 준수하지만 경험(콘텐츠 및 디자인)에 변형이 있습니다.
 + 경험 조각은 다음 사용자가 노출/소비할 수 있습니다.
    + AEM 경험 조각 구성 요소를 통해 AEM Sites(또는 AEM Screens)에서 경험 조각 사용.
-   + **AEM Content Services** 및 API 페이지를 통해 경험 조각 변형 컨텐츠를 JSON(포함된 HTML 포함)으로 노출
+   + **AEM Content Services** 및 API 페이지를 통해 경험 조각 변형 컨텐츠를 JSON(임베드된 HTML 포함)으로 노출
    + 경험 조각 변형을 **&quot;일반 HTML&quot;**(으)로 직접 노출
-   + 경험 조각을 **Adobe Target**(으)로 HTML 또는 JSON 오퍼로 내보내는 중입니다.
+   + 경험 조각을 **Adobe Target**&#x200B;에 HTML 또는 JSON 오퍼로 내보내는 중입니다.
    + AEM Sites은 기본적으로 HTML 오퍼를 지원하지만, JSON 오퍼에는 사용자 지정 개발이 필요합니다.
 
 ## 콘텐츠 조각 지원 리소스
 
 + [콘텐츠 조각 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=en&amp;topic=/experience-manager/6-5/assets/morehelp/content-fragments.ug.js)
-+ [Adobe Experience Manager as a Headless CMS 소개](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=ko-KR)
++ [Adobe Experience Manager as a Headless CMS 소개](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html)
 + [AEM에서 콘텐츠 조각 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/content-fragments-feature-video-use.html?lang=en)
 + [AEM WCM 핵심 구성 요소의 콘텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
 + [콘텐츠 조각 및 AEM Headless 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=en)
@@ -184,4 +184,4 @@ Adobe Experience Manager의 콘텐츠 조각 및 경험 조각 은 표면적으�
 + 경험 조각의 [Adobe 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html?lang=en)
 + [AEM 경험 조각 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html?lang=en)
 + [AEM 경험 조각 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html?lang=en)
-+ [Adobe Target에서 AEM Experience Fragments 사용](https://medium.com/adobetech/experience-fragments-and-adobe-target-d8d74381b9b2)
++ [Adobe Target에서 AEM 경험 조각 사용](https://medium.com/adobetech/experience-fragments-and-adobe-target-d8d74381b9b2)

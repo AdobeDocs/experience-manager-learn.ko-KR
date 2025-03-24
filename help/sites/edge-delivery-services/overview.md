@@ -1,7 +1,7 @@
 ---
 title: Edge Delivery Services 비디오
 description: Edge Delivery Services을 사용하여 웹 사이트를 빠르게 만드는 방법에 대해 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Development
 role: Developer
@@ -11,7 +11,7 @@ doc-type: Catalog
 duration: 660
 last-substantial-update: 2024-03-20T00:00:00Z
 exl-id: 4f08bc07-0c9c-42fc-af42-3d51af9f37c4
-source-git-commit: e8ce91b0be577ec6cf8f3ab07ba9ff09c7e7a6ab
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 15%
@@ -59,7 +59,7 @@ Edge Delivery Services 및 해당 기능에 대한 자세한 내용은 [설명�
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial" target="_blank" rel="referrer" title="문서 기반 작성 및 Edge Delivery Services 자습서">문서 기반 작성 및 Edge Delivery Services 자습서</a>
                     </p>
-                    <p class="is-size-6">문서 기반 작성을 사용하여 작성된 Edge Delivery Services 웹 사이트를 만드는 방법에 대해 알아봅니다.</p>
+                    <p class="is-size-6">문서 기반 작성을 사용하여 작성된 Edge Delivery Services 웹 사이트를 만드는 방법을 알아봅니다.</p>
                 </div>
                 <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">자습서 시작</span>
@@ -80,7 +80,7 @@ Edge Delivery Services 및 해당 기능에 대한 자세한 내용은 [설명�
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./developing/universal-editor/0-overview.md" target="_blank" rel="referrer" title="범용 편집기 및 Edge Delivery Services 자습서">범용 편집기 및 Edge Delivery Services 자습서</a>
+                        <a href="./developing/universal-editor/0-overview.md" target="_blank" rel="referrer" title="범용 편집기 및 Edge Delivery Services 자습서">유니버설 편집기 및 Edge Delivery Services 자습서</a>
                     </p>
                     <p class="is-size-6">범용 편집기로 작성된 Edge Delivery Services 웹 사이트를 만드는 기본 사항에 대해 알아봅니다.</p>
                 </div>
@@ -120,7 +120,7 @@ Edge Delivery Services 및 해당 기능에 대한 자세한 내용은 [설명�
             <p class="headline is-size-6 has-text-weight-bold">
               <a href="./developing/prerequisites.md" title="사전 요구 사항">개발자 필수 구성 요소</a>
             </p>
-            <p class="is-size-6">Edge Delivery Services 개발을 시작하기 위해 필요한 사항.</p>
+            <p class="is-size-6">Edge Delivery Services을 사용하여 개발하기 위해 필요한 사항.</p>
             <a href="./developing/prerequisites.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -231,10 +231,10 @@ Edge Delivery Services 및 해당 기능에 대한 자세한 내용은 [설명�
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./developing/preview-and-publish.md" title="미리 보기 및 Publish 컨텐츠"
+            <a href="./developing/preview-and-publish.md" title="콘텐츠 미리보기 및 게시"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425714/?format=jpeg" alt="미리 보기 및 Publish 컨텐츠">
+                src="https://video.tv.adobe.com/v/3425714/?format=jpeg" alt="콘텐츠 미리보기 및 게시">
             </a>
           </figure>
         </div>
@@ -243,7 +243,7 @@ Edge Delivery Services 및 해당 기능에 대한 자세한 내용은 [설명�
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1분</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./developing/preview-and-publish.md" title="미리 보기 및 Publish 컨텐츠">콘텐츠 미리 보기 및 게시</a>
+              <a href="./developing/preview-and-publish.md" title="콘텐츠 미리보기 및 게시">콘텐츠 미리 보기 및 게시</a>
             </p>
             <p class="is-size-6">AEM Sidekick을 사용하여 콘텐츠를 미리 보고 게시합니다.</p>
             <a href="./developing/preview-and-publish.md" class="spectrum-Button

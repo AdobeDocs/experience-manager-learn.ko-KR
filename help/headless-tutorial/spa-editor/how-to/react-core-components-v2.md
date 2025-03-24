@@ -1,7 +1,7 @@
 ---
 title: AEM React Editable Components v2 사용법
-description: AEM React Editable Components v2를 사용하여 React 앱을 구동하는 방법에 대해 알아봅니다.
-version: Cloud Service
+description: AEM React Editable Components v2를 사용하여 React 앱을 실행하는 방법에 대해 알아봅니다.
+version: Experience Manager as a Cloud Service
 topic: Headless
 feature: SPA Editor
 role: Developer
@@ -11,10 +11,10 @@ thumbnail: kt-10900.jpeg
 doc-type: Tutorial
 exl-id: e055b356-dd26-4366-8608-5a0ccf5b4c49
 duration: 190
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '525'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -37,7 +37,7 @@ AEM React Editable Components v2에 대한 자세한 내용 및 코드 샘플은
 
 ## AEM 페이지
 
-AEM React Editable Components 는 SPA Editor 또는 Remote SPA React 앱에서 모두 작동합니다. 편집 가능한 React 구성 요소를 채우는 콘텐츠는 [SPA 페이지 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-page-component.html)를 확장하는 AEM 페이지를 통해 노출되어야 합니다. 편집 가능한 React 구성 요소에 매핑되는 AEM 구성 요소는 AEM의 [구성 요소 내보내기 프레임워크](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/json-exporter-components.html)(예: [AEM 코어 WCM 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR))를 구현해야 합니다.
+AEM React Editable Components 는 SPA Editor 또는 Remote SPA React 앱에서 모두 작동합니다. 편집 가능한 React 구성 요소를 채우는 콘텐츠는 [SPA 페이지 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-page-component.html)를 확장하는 AEM 페이지를 통해 노출되어야 합니다. 편집 가능한 React 구성 요소에 매핑되는 AEM 구성 요소는 AEM의 [구성 요소 내보내기 프레임워크](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/json-exporter-components.html)&#x200B;(예: [AEM 코어 WCM 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html))를 구현해야 합니다.
 
 
 ## 종속성
@@ -68,7 +68,7 @@ AEM React Editable Components v2를 사용하기 위한 React 앱의 최소 종�
 
 ## SPA 편집기
 
-SPA 편집기 기반 React 앱에서 AEM React Editable Components를 사용하는 경우, AEM `ModelManager` SDK가 SDK로 제공됩니다.
+SPA 편집기 기반 React 앱에서 AEM React Editable Components를 사용하는 경우 AEM `ModelManager` SDK이 SDK으로 표시됩니다.
 
 1. AEM에서 컨텐츠 검색
 1. React Edible 구성 요소를 AEM 콘텐츠로 채웁니다.
@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 ```
 
-`ModelManager`에서 제공한 `pageModel`을(를) 통해 `<Page>`이(가) AEM 페이지의 JSON 표현으로 전달됩니다. `<Page>` 구성 요소는 `MapTo(..)`을(를) 통해 리소스 형식에 자신을 등록하는 React 구성 요소와 `resourceType`을(를) 일치시켜 `pageModel`의 개체에 대해 React 구성 요소를 동적으로 만듭니다.
+`ModelManager`에서 제공한 `pageModel`을(를) 통해 `<Page>`이(가) JSON으로 AEM 페이지의 표시로 전달됩니다. `<Page>` 구성 요소는 `MapTo(..)`을(를) 통해 리소스 형식에 자신을 등록하는 React 구성 요소와 `resourceType`을(를) 일치시켜 `pageModel`의 개체에 대해 React 구성 요소를 동적으로 만듭니다.
 
 ## 편집 가능한 구성 요소
 
@@ -178,8 +178,8 @@ export default MapTo("wknd-examples/components/example")(EditableExample);
 
 편집 가능한 구성 요소는 재사용하고 서로 임베드할 수 있습니다. 한 편집 가능한 구성 요소를 다른 구성 요소에 포함할 때 고려해야 할 두 가지 사항이 있습니다.
 
-1. 임베디드 구성 요소에 대한 AEM의 JSON 콘텐츠는 임베디드 구성 요소를 충족하기 위한 콘텐츠를 포함해야 합니다. 이 작업은 필수 데이터를 수집하는 AEM 구성 요소에 대한 대화 상자를 생성하여 수행합니다.
-1. React 구성 요소의 &quot;편집할 수 없는&quot; 인스턴스는 `<EditableComponent>`(으)로 래핑된 &quot;편집 가능한&quot; 인스턴스가 아니라 포함되어야 합니다. 이유는 포함된 구성 요소에 `<EditableComponent>` 래퍼가 있는 경우 SPA 편집기에서 외부 포함 구성 요소가 아닌 편집 chrome(파란색 가리키기 상자)으로 내부 구성 요소를 드레스하려고 하기 때문입니다.
+1. 임베디드 구성 요소에 대한 AEM의 JSON 콘텐츠는 임베디드 구성 요소를 충족하기 위한 콘텐츠를 포함해야 합니다. 이 작업은 필요한 데이터를 수집하는 AEM 구성 요소에 대한 대화 상자를 만들어 수행합니다.
+1. React 구성 요소의 &quot;편집할 수 없는&quot; 인스턴스는 `<EditableComponent>`(으)로 래핑된 &quot;편집 가능한&quot; 인스턴스가 아니라 포함되어야 합니다. 그 이유는 포함된 구성 요소에 `<EditableComponent>` 래퍼가 있으면 SPA 편집기에서 외부 포함 구성 요소가 아닌 편집 크롬(파란색 가리키기 상자)으로 내부 구성 요소를 드레스하려고 하기 때문입니다.
 
 + `HTTP GET /content/.../home.model.json`
 

@@ -2,14 +2,14 @@
 title: 맞춤형 프로세스 단계 구현
 description: 사용자 정의 프로세스 단계를 사용하여 파일 시스템에 적응형 양식 첨부 파일 작성
 feature: Workflow
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 879518db-3f05-4447-86e8-5802537584e5
 last-substantial-update: 2021-06-09T00:00:00Z
 duration: 203
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '758'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 이 자습서는 사용자 지정 프로세스 단계를 구현해야 하는 AEM Forms 고객을 위한 것입니다. 프로세스 단계는 ECMA 스크립트를 실행하거나 사용자 지정 Java™ 코드를 호출하여 작업을 수행할 수 있습니다. 이 자습서에서는 프로세스 단계에서 실행되는 WorkflowProcess를 구현하는 데 필요한 단계를 설명합니다.
 
-사용자 지정 프로세스 단계를 구현하는 주요 이유는 AEM Workflow를 확장하기 위해서입니다. 예를 들어 워크플로우 모델에서 AEM Forms 구성 요소를 사용하는 경우 다음 작업을 수행할 수 있습니다
+사용자 지정 프로세스 단계를 구현하는 주요 이유는 AEM 워크플로를 확장하기 위해서입니다. 예를 들어 워크플로우 모델에서 AEM Forms 구성 요소를 사용하는 경우 다음 작업을 수행할 수 있습니다
 
 * 적응형 양식 첨부 파일을 파일 시스템에 저장
 * 제출된 데이터 조작
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ## Maven 프로젝트 만들기
 
-첫 번째 단계는 적절한 Adobe Maven Archetype 을 사용하여 Maven 프로젝트를 만드는 것입니다. 자세한 단계는 이 [문서](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)에 나와 있습니다. Maven 프로젝트를 Eclipse로 가져오면 프로세스 단계에서 사용할 수 있는 첫 번째 OSGi 구성 요소 작성을 시작할 수 있습니다.
+첫 번째 단계는 적절한 Adobe Maven Archetype을 사용하여 Maven 프로젝트를 만드는 것입니다. 자세한 단계는 이 [문서](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)에 나와 있습니다. Maven 프로젝트를 Eclipse로 가져오면 프로세스 단계에서 사용할 수 있는 첫 번째 OSGi 구성 요소 작성을 시작할 수 있습니다.
 
 
 ### WorkflowProcess를 구현하는 클래스 만들기
@@ -137,9 +137,9 @@ public class WriteFormAttachmentsToFileSystem implements WorkflowProcess {
 
 13-15행 - 이 OSGi 구성 요소로 전달된 프로세스 인수는 &quot;,&quot; 구분 기호를 사용하여 분할됩니다. 그런 다음 문자열 배열에서 attachmentPath 및 saveToLocation의 값이 추출됩니다.
 
-* attachmentPath - 적응형 양식의 제출 액션을 구성하여 AEM Workflow를 호출했을 때 적응형 양식에 지정한 위치와 동일합니다. 첨부 파일을 워크플로우의 페이로드와 관련하여 AEM에 저장할 폴더의 이름입니다.
+* attachmentPath - 적응형 양식의 제출 액션을 구성하여 AEM 워크플로우를 호출할 때 적응형 양식에 지정한 위치와 동일합니다. 워크플로우의 페이로드를 기준으로 AEM에 첨부 파일을 저장할 폴더의 이름입니다.
 
-* saveToLocation - 첨부 파일을 AEM 서버의 파일 시스템에 저장할 위치입니다.
+* saveToLocation - AEM 서버의 파일 시스템에 첨부 파일을 저장할 위치입니다.
 
 이 두 값은 아래 스크린샷과 같이 프로세스 인수로 전달됩니다.
 

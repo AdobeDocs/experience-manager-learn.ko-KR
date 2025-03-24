@@ -1,7 +1,7 @@
 ---
 title: GraphQL API 살펴보기 - AEM Headless 시작하기 - GraphQL
 description: Adobe Experience Manager(AEM) 및 GraphQL을 시작합니다. 내장된 GraphiQL IDE를 사용하여 AEM의 GraphQL API를 살펴보십시오. AEM이 콘텐츠 조각 모델을 기반으로 GraphQL 스키마를 자동으로 생성하는 방법을 알아봅니다. GraphQL 구문을 사용하여 기본 쿼리를 구성해 봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 mini-toc-levels: 1
 jira: KT-6714
 thumbnail: KT-6714.jpg
@@ -11,7 +11,7 @@ role: Developer
 level: Beginner
 exl-id: 508b0211-fa21-4a73-b8b4-c6c34e3ba696
 duration: 332
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1416'
 ht-degree: 1%
@@ -67,7 +67,7 @@ AEM의 GraphQL API는 콘텐츠 조각의 데이터를 다운스트림 애플리
 
 개발자는 [GraphiQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html) 도구를 통해 현재 AEM 환경의 콘텐츠에 대한 쿼리를 만들고 테스트할 수 있습니다. 또한 GraphiQL 도구를 통해 사용자는 프로덕션 설정에서 클라이언트 애플리케이션에서 사용할 쿼리를 **유지 또는 저장**&#x200B;할 수 있습니다.
 
-이제 내장된 GraphiQL IDE를 사용하여 AEM GraphQL API의 강력한 기능을 살펴보십시오.
+이제 내장된 GraphiQL IDE를 사용하여 AEM의 GraphQL API의 강력한 기능을 살펴보십시오.
 
 1. AEM 시작 화면에서 **도구** > **일반** > **GraphQL 쿼리 편집기**&#x200B;로 이동합니다.
 
@@ -75,7 +75,7 @@ AEM의 GraphQL API는 콘텐츠 조각의 데이터를 다운스트림 애플리
 
    >[!NOTE]
    >
-   > 에서 이전 버전의 AEM에 GraphiQL IDE가 빌드되지 않을 수 있습니다. 이 [지침](#install-graphiql)에 따라 수동으로 설치할 수 있습니다.
+   > 에서 이전 버전의 AEM에는 GraphiQL IDE가 빌드되지 않을 수 있습니다. 이 [지침](#install-graphiql)에 따라 수동으로 설치할 수 있습니다.
 
 1. 오른쪽 상단 모서리에서 끝점이 **내 프로젝트 끝점**(으)로 설정되어 있는지 확인하십시오.
 
@@ -216,7 +216,7 @@ AEM의 GraphQL API는 콘텐츠 조각의 데이터를 다운스트림 애플리
 
    ![쿼리 변수를 사용하여 필터링](assets/explore-graphql-api/using-query-variables-filter.png)
 
-   복잡한 쿼리를 필터링하고 만드는 다른 많은 옵션이 있습니다. [AEM에서 GraphQL을 사용하는 방법 알아보기 - 샘플 콘텐츠 및 쿼리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html)를 참조하세요.
+   복잡한 쿼리를 필터링하고 만드는 다른 많은 옵션이 있습니다. [AEM과 함께 GraphQL을 사용하는 방법 알아보기 - 샘플 콘텐츠 및 쿼리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html)를 참조하세요.
 
 1. 프로필 사진을 가져오기 위해 위의 쿼리 향상
 
@@ -372,21 +372,21 @@ AEM의 GraphQL API는 콘텐츠 조각의 데이터를 다운스트림 애플리
    ![최종 지속 쿼리](assets/explore-graphql-api/final-persisted-queries.png)
 
 
-## Publish GraphQL 끝점 및 지속 쿼리
+## GraphQL 엔드포인트 및 지속 쿼리 게시
 
 검토 및 확인 후 `GraphQL Endpoint` 및 `Persisted Queries` 게시
 
 1. AEM 시작 화면에서 **도구** > **일반** > **GraphQL**(으)로 이동합니다.
 
-1. **내 프로젝트 끝점** 옆에 있는 확인란을 탭하고 **Publish**&#x200B;을 탭합니다.
+1. **내 프로젝트 끝점** 옆에 있는 확인란을 탭하고 **게시**&#x200B;를 탭합니다.
 
-   ![Publish GraphQL 끝점](assets/explore-graphql-api/publish-graphql-endpoint.png)
+   ![GraphQL 끝점 게시](assets/explore-graphql-api/publish-graphql-endpoint.png)
 
 1. AEM 시작 화면에서 **도구** > **일반** > **GraphQL 쿼리 편집기**&#x200B;로 이동합니다.
 
-1. 지속 쿼리 패널에서 **모든 팀** 쿼리를 탭하고 **Publish**&#x200B;을 탭합니다.
+1. 지속 쿼리 패널에서 **모든 팀** 쿼리를 탭하고 **게시**&#x200B;를 탭합니다.
 
-   ![Publish 지속 쿼리](assets/explore-graphql-api/publish-persisted-query.png)
+   ![지속 쿼리 게시](assets/explore-graphql-api/publish-persisted-query.png)
 
 1. `person-by-name` 쿼리에 대해 위 단계를 반복합니다.
 
@@ -396,7 +396,7 @@ AEM의 GraphQL API는 콘텐츠 조각의 데이터를 다운스트림 애플리
 
 ## 추가 리소스
 
-GraphQL 쿼리에 대해 자세히 알아보려면 [AEM에서 GraphQL을 사용하는 방법 알아보기 - 샘플 콘텐츠 및 쿼리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html)를 참조하세요.
+GraphQL 쿼리에 대해 자세히 알아보려면 [AEM과 함께 GraphQL을 사용하는 방법 알아보기 - 샘플 콘텐츠 및 쿼리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html)를 참조하세요.
 
 ## 축하합니다! {#congratulations}
 
@@ -408,5 +408,5 @@ GraphQL 쿼리에 대해 자세히 알아보려면 [AEM에서 GraphQL을 사용�
 
 ## GraphiQL 도구 설치(선택 사항) {#install-graphiql}
 
-에서 GraphiQL IDE 도구를 수동으로 설치해야 하는 일부 AEM(6.X.X) 버전은 [여기](../how-to/install-graphiql-aem-6-5.md)의 지침을 사용하십시오.
+의 일부 AEM 버전(6.X.X)에서는 GraphiQL IDE 도구를 수동으로 설치해야 합니다. [여기](../how-to/install-graphiql-aem-6-5.md)의 지침을 사용하십시오.
 

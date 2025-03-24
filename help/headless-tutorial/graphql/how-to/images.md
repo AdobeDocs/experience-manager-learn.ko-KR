@@ -1,7 +1,7 @@
 ---
 title: AEM Headless로 최적화된 이미지 사용
 description: AEM Headless로 최적화된 이미지 URL을 요청하는 방법에 대해 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Headless
 feature: GraphQL API
 role: Developer
@@ -11,7 +11,7 @@ thumbnail: KT-10253.jpeg
 last-substantial-update: 2023-04-19T00:00:00Z
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
 duration: 300
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '843'
 ht-degree: 4%
@@ -22,17 +22,17 @@ ht-degree: 4%
 
 이미지는 [풍부하고 매력적인 AEM Headless 경험 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html)의 중요한 측면입니다. AEM Headless는 이미지 에셋 관리 및 최적화된 전달을 지원합니다.
 
-AEM Headless 콘텐츠 모델링에 사용된 콘텐츠 조각은 종종 Headless 경험에 표시되기 위한 이미지 에셋을 참조합니다. AEM의 GraphQL 쿼리를 작성하여 이미지를 참조하는 위치에 따라 이미지에 URL을 제공할 수 있습니다.
+AEM Headless 콘텐츠 모델링에 사용된 콘텐츠 조각은 종종 Headless 경험에 표시되기 위한 이미지 에셋을 참조합니다. AEM의 GraphQL 쿼리를 작성하여 이미지가 참조되는 위치에 따라 이미지에 URL을 제공할 수 있습니다.
 
 `ImageRef` 형식에는 콘텐츠 참조에 대한 네 가지 URL 옵션이 있습니다.
 
 + `_path`은(는) AEM에서 참조된 경로이며 AEM 원본(호스트 이름)을 포함하지 않습니다.
 + `_dynamicUrl`은(는) 이미지 에셋의 웹에 최적화된 게재를 위한 URL입니다.
-   + `_dynamicUrl`에 AEM 원본이 없으므로 도메인(AEM 작성자 또는 AEM Publish 서비스)은 클라이언트 응용 프로그램에서 제공해야 합니다.
+   + `_dynamicUrl`에 AEM 원본이 없으므로 도메인(AEM 작성자 또는 AEM 게시 서비스)은 클라이언트 응용 프로그램에서 제공해야 합니다.
 + `_authorUrl`은(는) AEM 작성자의 이미지 에셋에 대한 전체 URL입니다.
-   + [AEM 작성자](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html)를 사용하여 headless 응용 프로그램의 미리 보기 환경을 제공할 수 있습니다.
-+ `_publishUrl`은(는) AEM Publish의 이미지 자산에 대한 전체 URL입니다.
-   + [AEM Publish](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html)은(는) 일반적으로 headless 응용 프로그램의 프로덕션 배포에서 이미지를 표시하는 위치입니다.
+   + [AEM 작성자](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html)를 사용하여 headless 애플리케이션의 미리 보기 환경을 제공할 수 있습니다.
++ `_publishUrl`은(는) AEM 게시의 이미지 자산에 대한 전체 URL입니다.
+   + [AEM 게시](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html)는 일반적으로 headless 응용 프로그램의 프로덕션 배포에서 이미지를 표시하는 위치입니다.
 
 `_dynamicUrl`은(는) 이미지 자산 게재에 사용할 권장 URL이며 가능한 경우 `_path`, `_authorUrl` 및 `_publishUrl`의 사용을 대체해야 합니다.
 
@@ -106,7 +106,7 @@ query($path: String!, $imageFormat: AssetTransformFormat=JPG, $imageSeoName: Str
 | `flip` | 이미지를 뒤집습니다. | ✘ | `HORIZONTAL`, `VERTICAL`, `HORIZONTAL_AND_VERTICAL` |
 | `quality` | 이미지 품질(원본 품질 비율). | ✘ | 1-100 |
 | `width` | 출력 이미지의 픽셀 단위 폭입니다. `size`이(가) 제공되면 `width`이(가) 무시됩니다. | ✘ | 양의 정수 |
-| `preferWebP` | `format`과(와) 관계없이 브라우저에서 WebP를 지원하는 경우 `true`과(와) AEM에서 WebP를 제공하는 경우. | ✘ | `true`, `false` |
+| `preferWebP` | `format`에 관계없이 `true`과(와) AEM에서 브라우저가 지원하는 경우 WebP를 제공하는 경우. | ✘ | `true`, `false` |
 
 
 ## GraphQL 응답
@@ -142,7 +142,7 @@ let dynamicUrl = AEM_HOST + data.adventureByPath.item.primaryImage._dynamicUrl;
 <img src={dynamicUrl} alt={data.adventureByPath.item.title}/>
 ```
 
-`_dynamicUrl`에는 AEM 도메인이 포함되어 있지 않으므로 확인할 이미지 URL의 원본을 제공해야 합니다.
+`_dynamicUrl`에는 AEM 도메인이 포함되어 있지 않으므로 확인하려는 이미지 URL에 원하는 원본을 제공해야 합니다.
 
 ## 응답형 URL
 
@@ -196,9 +196,9 @@ srcset](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#
 
 ### 예제 코드
 
-이 간단한 React 앱은 [AEM Headless SDK](./aem-headless-sdk.md)를 사용하여 AEM Headless API에 어드벤처 콘텐츠를 쿼리하고 [img 요소(srcset](#img-element-with-srcset) 및 [사진 요소](#picture-element))를 사용하여 웹에 최적화된 이미지를 표시합니다. `srcset` 및 `sources`은(는) 사용자 지정 `setParams` 함수를 사용하여 웹에 최적화된 배달 쿼리 매개 변수를 이미지의 `_dynamicUrl`에 추가하므로 웹 클라이언트의 요구 사항에 따라 배달되는 이미지 렌디션을 변경합니다.
+이 간단한 React 앱은 [AEM Headless SDK](./aem-headless-sdk.md)를 사용하여 AEM Headless API에 어드벤처 콘텐츠를 쿼리하고 [isl 요소(srcset 포함)](#img-element-with-srcset) 및 [사진 요소](#picture-element))를 사용하여 웹에 최적화된 이미지를 표시합니다. `srcset` 및 `sources`은(는) 사용자 지정 `setParams` 함수를 사용하여 웹에 최적화된 배달 쿼리 매개 변수를 이미지의 `_dynamicUrl`에 추가하므로 웹 클라이언트의 요구 사항에 따라 배달되는 이미지 렌디션을 변경합니다.
 
-AEM에 대한 쿼리는 AEM Headless SDK를 사용하는 사용자 지정 React 후크 [useAdventureByPath](./aem-headless-sdk.md#graphql-persisted-queries)에서 수행됩니다.
+AEM에 대한 쿼리는 AEM Headless SDK을 사용하는 사용자 지정 React 후크 [useAdventureByPath](./aem-headless-sdk.md#graphql-persisted-queries)에서 수행됩니다.
 
 ```javascript
 // src/App.js

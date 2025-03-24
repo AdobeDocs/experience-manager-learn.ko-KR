@@ -1,8 +1,8 @@
 ---
-title: AEM 처리 프로필과 Asset compute 작업자 통합
-description: AEM as a Cloud Service은 AEM Assets 처리 프로필을 통해 Adobe I/O Runtime에 배포된 Asset compute 작업자와 통합됩니다. 처리 프로필은 사용자 정의 작업자를 사용하여 특정 에셋을 처리하고 작업자가 생성한 파일을 에셋 변환으로 저장하도록 작성자 서비스에 구성됩니다.
+title: Asset Compute 작업자와 AEM 처리 프로필 통합
+description: AEM as a Cloud Service은 AEM Assets 처리 프로필을 통해 Adobe I/O Runtime에 배포된 Asset Compute 작업자와 통합됩니다. 처리 프로필은 사용자 정의 작업자를 사용하여 특정 에셋을 처리하고 작업자가 생성한 파일을 에셋 변환으로 저장하도록 작성자 서비스에 구성됩니다.
 feature: Asset Compute Microservices
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: Tutorial
 jira: KT-6287
 thumbnail: KT-6287.jpg
@@ -11,7 +11,7 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: 1b398c8c-6b4e-4046-b61e-b44c45f973ef
 duration: 126
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # AEM 처리 프로필과 통합
 
-asset compute 작업자가 AEM as a Cloud Service에서 사용자 지정 렌디션을 생성하려면 처리 프로필 을 통해 AEM as a Cloud Service Author 서비스에 등록해야 합니다. 해당 처리 프로필의 대상인 모든 에셋은 업로드 또는 재처리 시 작업자를 호출하고 사용자 지정 렌디션을 생성하여 에셋의 렌디션을 통해 사용할 수 있도록 합니다.
+Asset Compute 작업자가 AEM as a Cloud Service에서 사용자 지정 렌디션을 생성하려면 처리 프로필 을 통해 AEM as a Cloud Service Author 서비스에 등록해야 합니다. 해당 처리 프로필의 대상인 모든 에셋은 업로드 또는 재처리 시 작업자를 호출하고 사용자 지정 렌디션을 생성하여 에셋의 렌디션을 통해 사용할 수 있도록 합니다.
 
 ## 처리 프로필 정의
 
@@ -28,7 +28,7 @@ asset compute 작업자가 AEM as a Cloud Service에서 사용자 지정 렌디�
 
 ![프로필 처리 중](./assets/processing-profiles/new-processing-profile.png)
 
-1. __AEM 관리자__(으)로 AEM as a Cloud Service 작성자 서비스에 로그인합니다. 튜토리얼이므로 샌드박스의 개발 환경 또는 환경을 사용하는 것이 좋습니다.
+1. __AEM as a Cloud Service 관리자__(으)로 AEM 작성자 서비스에 로그인합니다. 튜토리얼이므로 샌드박스의 개발 환경 또는 환경을 사용하는 것이 좋습니다.
 1. __도구 > Assets > 처리 프로필__(으)로 이동
 1. __만들기__ 단추 누르기
 1. 처리 프로필 이름 지정, `WKND Asset Renditions`
@@ -51,7 +51,7 @@ asset compute 작업자가 AEM as a Cloud Service에서 사용자 지정 렌디�
       + __매개 변수 추가__ 탭
          + 키: `brightness`
          + 값: `0.10`
-      + asset compute 작업자에게 전달되고 `rendition.instructions` JavaScript 개체를 통해 사용할 수 있는 키/값 쌍입니다.
+      + Asset Compute 작업자에게 전달되고 `rendition.instructions` JavaScript 개체를 통해 사용할 수 있는 키/값 쌍입니다.
    + __MIME 유형__
       + __포함 항목:__ `image/jpeg`, `image/png`, `image/gif`, `image/bmp`, `image/tiff`
          + 이 MIME 유형은 작업자의 npm 모듈에만 해당됩니다. 이 목록은 사용자 정의 작업자가 처리하는 것을 제한합니다.
@@ -75,11 +75,11 @@ asset compute 작업자가 AEM as a Cloud Service에서 사용자 지정 렌디�
 
 ## 완료되었습니다.
 
-축하합니다! AEM as a Cloud Service Asset compute 마이크로서비스를 확장하는 방법에 대한 [자습서](../overview.md)를 완료했습니다! 이제 AEM as a Cloud Service 작성자 서비스에서 사용할 사용자 정의 Asset compute 작업자를 설정, 개발, 테스트, 디버그 및 배포할 수 있는 권한이 있어야 합니다.
+축하합니다! AEM as a Cloud Service Asset Compute 마이크로서비스를 확장하는 방법에 대한 [자습서](../overview.md)를 완료했습니다! 이제 AEM as a Cloud Service 작성자 서비스에서 사용할 사용자 정의 Asset Compute 작업자를 설정, 개발, 테스트, 디버그 및 배포할 수 있는 권한이 있어야 합니다.
 
 ### Github에서 전체 프로젝트 소스 코드 검토
 
-최종 Asset compute 프로젝트는 Github의 다음 위치에서 사용할 수 있습니다.
+최종 Asset Compute 프로젝트는 Github의 다음 위치에서 사용할 수 있습니다.
 
 + [aem-guides-wknd-asset-compute](https://github.com/adobe/aem-guides-wknd-asset-compute)
 
@@ -87,5 +87,5 @@ _Github는 프로젝트의 최종 상태로, 작업자 및 테스트 사례로 �
 
 ## 문제 해결
 
-+ [AEM의 에셋에서 사용자 정의 렌디션 누락](../troubleshooting.md#custom-rendition-missing-from-asset)
++ [AEM의 에셋에서 사용자 정의 렌디션이 누락됨](../troubleshooting.md#custom-rendition-missing-from-asset)
 + [AEM에서 자산 처리 실패](../troubleshooting.md#asset-processing-fails)

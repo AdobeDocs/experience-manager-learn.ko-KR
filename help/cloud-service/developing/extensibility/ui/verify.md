@@ -2,7 +2,7 @@
 title: AEM UI 확장 확인
 description: 프로덕션에 배포하기 전에 AEM UI 확장을 미리 보고, 테스트하고, 확인하는 방법을 알아봅니다.
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Beginner
@@ -11,7 +11,7 @@ jira: KT-11603, KT-13382
 last-substantial-update: 2023-06-02T00:00:00Z
 exl-id: c5c1df23-1c04-4c04-b0cd-e126c31d5acc
 duration: 600
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 0%
@@ -20,15 +20,15 @@ ht-degree: 0%
 
 # 확장 확인
 
-AEM UI 확장은 확장이 속한 Adobe 조직의 AEM as a Cloud Service 환경을 통해 확인할 수 있습니다.
+AEM UI 확장은 확장이 속한 Adobe 조직의 모든 AEM as a Cloud Service 환경에서 확인할 수 있습니다.
 
-확장 테스트는 해당 요청에 대해서만 AEM에서 확장을 로드하도록 지시하는 특별히 제작된 URL을 통해 수행됩니다.
+확장 테스트는 AEM에 해당 요청에 대해서만 확장을 로드하도록 지시하는 특별히 제작된 URL을 통해 수행됩니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3412877?quality=12&learn=on)
 
 >[!IMPORTANT]
 >
-> 위의 비디오에서는 콘텐츠 조각 콘솔 확장을 사용하여 App Builder 확장 앱 미리 보기 및 확인을 보여 줍니다. 그러나 위에서 설명한 개념은 모든 AEM UI 확장에 적용할 수 있습니다.
+> 위의 비디오에서는 콘텐츠 조각 콘솔 확장을 사용하여 App Builder 확장 앱 미리 보기 및 확인을 보여 줍니다. 그러나 다루는 개념은 모든 AEM UI 확장에 적용할 수 있습니다.
 
 ## AEM UI URL
 
@@ -40,8 +40,8 @@ AEM UI 확장은 확장이 속한 Adobe 조직의 AEM as a Cloud Service 환경�
 
 1. 원하는 AEM as a Cloud Service 환경에 로그인합니다.
 1. __콘텐츠 조각__ 아이콘을 선택합니다.
-1. AEM 콘텐츠 조각 콘솔이 브라우저에서 로드될 때까지 기다립니다.
-1. 브라우저의 주소 표시줄에서 AEM 콘텐츠 조각 콘솔의 URL을 복사합니다. URL은 다음과 유사해야 합니다.
+1. AEM 콘텐츠 조각 콘솔이 브라우저에 로드될 때까지 기다립니다.
+1. 브라우저의 주소 표시줄에서 AEM 콘텐츠 조각 콘솔 URL을 복사합니다. URL은 다음과 유사해야 합니다.
 
    ```
    https://experience.adobe.com/?repo=author-p1234-e5678.adobeaemcloud.com#/@wknd/aem/cf/admin
@@ -88,7 +88,7 @@ AEM UI 확장은 확장이 속한 Adobe 조직의 AEM as a Cloud Service 환경�
 
 >[!IMPORTANT]
 >
->이 접근 방식을 사용할 때 개발 중인 확장은 경험에만 영향을 주며 AEM UI의 다른 모든 사용자는 주입된 확장 없이 UI를 경험합니다.
+>이 접근 방식을 사용할 때 개발 중인 확장은 사용자의 경험에만 영향을 주며 AEM UI의 다른 모든 사용자는 주입된 확장 없이 UI를 경험하게 됩니다.
 
 ## 스테이지 빌드 확인
 

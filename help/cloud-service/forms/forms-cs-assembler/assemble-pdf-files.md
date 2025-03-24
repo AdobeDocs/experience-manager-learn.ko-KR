@@ -1,27 +1,27 @@
 ---
 title: DDX 호출 작업을 사용하여 PDF 파일 어셈블
-description: 필요한 매개 변수를 사용하여 DDX 끝점 호출을 위한 POST 요청 만들기
+description: 필요한 매개 변수로 DDX 끝점을 호출하기 위해 POST 요청을 만듭니다
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Output Service
 topic: Development
 jira: KT-9980
 exl-id: 693dac88-84f3-4051-8e46-3105093711a3
 duration: 56
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '124'
 ht-degree: 0%
 
 ---
 
-# POST 호출 만들기
+# POST 호출 수행
 
 
 다음 단계는 필요한 매개 변수를 사용하여 끝점에 대한 HTTP POST 호출을 수행하는 것입니다. DDX 및 pdf 파일은 리소스 파일로 제공됩니다. 끝점에 요청 헤더에 액세스 토큰을 전달하는 토큰 기반 인증이 있습니다.
-어셈블러 서비스를 사용하는 경우 DDX(Document Description XML)라는 XML 기반 언어를 사용하여 원하는 출력을 설명합니다. DDX는 문서의 구성 요소를 나타내는 선언적 마크업 언어입니다.다음 DDX는 PDF 소스 요소에서 식별된 두 pdf 문서를 병합하는 데 사용되었습니다.
+어셈블러 서비스를 사용하는 경우 DDX(Document Description XML)라는 XML 기반 언어를 사용하여 원하는 출력을 설명합니다. DDX는 문서의 구성 요소를 나타내는 선언적 마크업 언어입니다. 다음 DDX는 PDF 소스 요소에서 식별된 두 pdf 문서를 병합하는 데 사용되었습니다.
 
 ```xml
 <DDX xmlns="http://ns.adobe.com/DDX/1.0/">

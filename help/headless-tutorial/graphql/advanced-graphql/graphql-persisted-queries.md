@@ -1,14 +1,14 @@
 ---
 title: 지속 GraphQL 쿼리 - AEM Headless의 고급 개념 - GraphQL
 description: Adobe Experience Manager(AEM) Headless의 고급 개념 이 장에서는 매개 변수를 사용하여 지속 GraphQL 쿼리를 만들고 업데이트하는 방법에 대해 알아봅니다. 지속 쿼리에 캐시 제어 매개 변수를 전달하는 방법을 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: 6a8e90ae-0765-4066-9df4-a3e4d2cda285
 duration: 183
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '760'
 ht-degree: 1%
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # 지속 GraphQL 쿼리
 
-지속 쿼리는 Adobe Experience Manager(AEM) 서버에 저장된 쿼리입니다. 클라이언트는 쿼리 이름이 있는 HTTP GET 요청을 전송하여 실행할 수 있습니다. 이 접근 방식의 이점은 정확성입니다. 클라이언트측 GraphQL 쿼리는 캐시할 수 없는 HTTP POST 요청을 사용하여 실행할 수도 있지만, 지속 쿼리는 HTTP 캐시 또는 CDN에 의해 캐시될 수 있으므로 성능이 향상됩니다. 지속 쿼리를 사용하면 쿼리가 서버에 캡슐화되고 AEM 관리자가 이를 완벽하게 제어할 수 있으므로 요청을 단순화하고 보안을 향상시킬 수 있습니다. AEM GraphQL API로 작업할 때 지속 쿼리를 사용하는 것이 **모범 사례이며 적극 권장**&#x200B;됩니다.
+지속 쿼리는 Adobe Experience Manager(AEM) 서버에 저장된 쿼리입니다. 클라이언트는 쿼리 이름이 있는 HTTP GET 요청을 전송하여 실행할 수 있습니다. 이 접근 방식의 이점은 정확성입니다. 클라이언트측 GraphQL 쿼리는 캐시할 수 없는 HTTP POST 요청을 사용하여 실행할 수도 있지만, 지속 쿼리는 HTTP 캐시 또는 CDN에 의해 캐시될 수 있으므로 성능이 향상됩니다. 지속 쿼리를 사용하면 쿼리를 서버에 캡슐화하고 AEM 관리자가 이를 완벽하게 제어할 수 있으므로 요청을 단순화하고 보안을 향상시킬 수 있습니다. AEM GraphQL API를 사용하여 작업할 때 지속 쿼리를 사용하는 것이 **모범 사례이며 적극 권장**&#x200B;됩니다.
 
 이전 장에서는 WKND 앱에 대한 데이터를 수집하기 위한 몇 가지 고급 GraphQL 쿼리를 살펴보았습니다. 이 장에서는 AEM에 쿼리를 지속하고 지속 쿼리에서 캐시 제어를 사용하는 방법에 대해 알아봅니다.
 

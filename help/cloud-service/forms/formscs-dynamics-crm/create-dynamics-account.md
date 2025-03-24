@@ -4,13 +4,13 @@ description: Azure Active Directory를 사용하여 동적 계정 만들기 및 
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Adaptive Forms, Integrations
 topic: Development
 jira: KT-9839
 exl-id: ec4ed3e1-98ae-41ce-9891-09da3321edd5
 duration: 407
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '99'
 ht-degree: 0%
@@ -25,6 +25,6 @@ Microsoft Dynamics 계정에 [로그인](https://dynamics.microsoft.com/en-us/).
 >다시 시도 URI를 가져오려면 아래 URI의 서버 및 포트 번호로 대체하십시오. Azure Active Directory를 사용하여 응용 프로그램을 구성할 때 이 다시 시도 URI가 필요합니다.
 >https://[서버]:[포트]/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
 
-다음 비디오에서는 Microsoft Dynamics를 Azure Active Directory에 등록하는 단계를 안내합니다.
+다음 비디오에서는 Azure Active Directory에 Microsoft Dynamics을 등록하는 단계를 안내합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/340743?quality=12&learn=on)

@@ -1,8 +1,8 @@
 ---
-title: AEM Sites을 사용한 응답형 레이아웃 이해
+title: AEM Sites를 통한 반응형 레이아웃 이해
 description: AEM에서는 레이아웃 컨테이너 구성 요소를 사용하여 페이지에 대한 응답형 레이아웃을 가질 수 있습니다. 콘텐츠 작성자는 반응형 레이아웃 을 사용하여 다양한 디바이스에 대한 반응형 콘텐츠를 만들고 AEM 내에서 최종 사용자 경험을 미리 볼 수 있습니다.
 feature: Page Editor, Editable Templates
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-4252
 thumbnail: 32012.jpg
 topic: Content Management
@@ -11,10 +11,10 @@ level: Intermediate
 doc-type: Feature Video
 exl-id: c125c0e0-1ed2-463e-bd34-767d009479eb
 duration: 367
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '104'
-ht-degree: 1%
+ht-degree: 7%
 
 ---
 

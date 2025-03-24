@@ -2,14 +2,14 @@
 title: 포함할 적응형 양식의 JSON 가져오기
 description: API를 사용하여 적응형 양식의 JSON을 가져옵니다
 feature: Adaptive Forms
-version: 6.5
+version: Experience Manager 6.5
 jira: KT-13285
 topic: Development
 role: User
 level: Intermediate
 exl-id: ee534724-54ea-48e1-8c92-de1c56a928d4
 duration: 50
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 1%
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # 양식의 JSON 가져오기
 
-AEM Forms 작성자 인스턴스에 로그인하고 **핵심 구성 요소가 있는 빈 항목** 템플릿을 사용하여 새 적응형 항목을 만듭니다. Publish 인스턴스에 양식을 게시합니다.
+AEM Forms 작성자 인스턴스에 로그인하고 **핵심 구성 요소가 있는 빈 항목** 템플릿을 사용하여 새 적응형 항목을 만듭니다. 양식을 게시 인스턴스에 게시합니다.
 
 양식을 임베드하려면 먼저 게시 서버에 대해 get 호출을 수행하여 적응형 양식의 json을 가져옵니다.
 

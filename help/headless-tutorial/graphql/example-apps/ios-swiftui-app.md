@@ -1,7 +1,7 @@
 ---
-title: iOS 앱 - AEM Headless 예
-description: 예제 애플리케이션은 AEM(Adobe Experience Manager)의 Headless 기능을 살펴볼 수 있는 좋은 방법입니다. 이 iOS 애플리케이션은 지속 쿼리를 사용하여 AEM의 GraphQL API를 사용하여 콘텐츠를 쿼리하는 방법을 보여 줍니다.
-version: Cloud Service
+title: iOS 앱 - AEM Headless 예제
+description: 예제 애플리케이션은 Adobe Experience Manager(AEM)의 Headless 기능을 살펴볼 수 있는 좋은 방법입니다. 이 iOS 애플리케이션은 지속 쿼리를 사용하여 AEM의 GraphQL API를 사용하여 콘텐츠를 쿼리하는 방법을 보여 줍니다.
+version: Experience Manager as a Cloud Service
 mini-toc-levels: 2
 jira: KT-10587
 thumbnail: KT-10587.jpg
@@ -10,10 +10,10 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 last-substantial-update: 2023-05-10T00:00:00Z
-badgeVersions: label="AEM as a Cloud Service Headless" before-title="false"
+badgeVersions: label="AEM 헤드리스 as a Cloud Service" before-title="false"
 exl-id: 6c5373db-86ec-410b-8a3b-9d4f86e06812
 duration: 278
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '917'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 # iOS 앱
 
-예제 애플리케이션은 AEM(Adobe Experience Manager)의 Headless 기능을 살펴볼 수 있는 좋은 방법입니다. 이 iOS 애플리케이션은 지속 쿼리를 사용하여 AEM의 GraphQL API를 사용하여 콘텐츠를 쿼리하는 방법을 보여 줍니다.
+예제 애플리케이션은 Adobe Experience Manager(AEM)의 Headless 기능을 살펴볼 수 있는 좋은 방법입니다. 이 iOS 애플리케이션은 지속 쿼리를 사용하여 AEM의 GraphQL API를 사용하여 콘텐츠를 쿼리하는 방법을 보여 줍니다.
 
 ![AEM Headless가 포함된 iOS SwiftUI 앱](./assets/ios-swiftui-app/ios-app.png)
 
@@ -32,7 +32,7 @@ GitHub에서 [소스 코드 보기](https://github.com/adobe/aem-guides-wknd-gra
 
 다음 도구를 로컬에 설치해야 합니다.
 
-+ [Xcode](https://developer.apple.com/xcode/)(macOS 필요)
++ [Xcode](https://developer.apple.com/xcode/)&#x200B;(macOS 필요)
 + [Git](https://git-scm.com/)
 
 ## AEM 요구 사항
@@ -40,9 +40,9 @@ GitHub에서 [소스 코드 보기](https://github.com/adobe/aem-guides-wknd-gra
 iOS 애플리케이션은 다음 AEM 배포 옵션과 함께 작동합니다. 모든 배포를 사용하려면 [WKND 사이트 v3.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest)을(를) 설치해야 합니다.
 
 + [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
-+ [AEM Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=ko-KR)를 사용하여 로컬 설정
++ [AEM 클라우드 서비스 SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=ko)을 사용하여 로컬 설정
 
-iOS 응용 프로그램은 __AEM Publish__ 환경에 연결하도록 디자인되었지만, iOS 응용 프로그램의 구성에서 인증을 제공하는 경우 AEM 작성자의 콘텐츠를 소싱할 수 있습니다.
+iOS 응용 프로그램은 __AEM 게시__ 환경에 연결하도록 디자인되었지만 iOS 응용 프로그램의 구성에서 인증을 제공하는 경우 AEM 작성자의 콘텐츠를 소싱할 수 있습니다.
 
 ## 사용 방법
 
@@ -53,7 +53,7 @@ iOS 응용 프로그램은 __AEM Publish__ 환경에 연결하도록 디자인�
    ```
 
 1. [Xcode](https://developer.apple.com/xcode/)을(를) 열고 `ios-app` 폴더를 엽니다.
-1. `Config.xcconfig` 파일을 수정하고 대상 AEM Publish 서비스와 일치하도록 `AEM_SCHEME` 및 `AEM_HOST`을(를) 업데이트합니다.
+1. `Config.xcconfig` 파일을 수정하고 대상 AEM 게시 서비스와 일치하도록 `AEM_SCHEME` 및 `AEM_HOST`을(를) 업데이트합니다.
 
    ```plain
    // The http/https protocol scheme used to access the AEM_HOST
@@ -84,7 +84,7 @@ iOS 응용 프로그램은 __AEM Publish__ 환경에 연결하도록 디자인�
    ```
 
 1. Xcode를 사용하여 애플리케이션을 빌드하고 앱을 iOS 시뮬레이터에 배포합니다.
-1. WKND 사이트의 모험 목록이 애플리케이션에 표시되어야 합니다. 모험을 선택하면 어드벤처 세부 정보가 열립니다. 모험 목록 보기에서 를 가져와서 AEM에서 데이터를 새로 고칩니다.
+1. WKND 사이트의 모험 목록이 애플리케이션에 표시되어야 합니다. 모험을 선택하면 어드벤처 세부 정보가 열립니다. 모험 목록 보기에서 를 가져와서 AEM의 데이터를 새로 고칩니다.
 
 ## 코드
 
@@ -92,7 +92,7 @@ iOS 응용 프로그램은 __AEM Publish__ 환경에 연결하도록 디자인�
 
 ### 지속 쿼리
 
-AEM Headless 우수 사례에 따라 iOS 애플리케이션은 AEM GraphQL 지속 쿼리를 사용하여 어드벤처 데이터를 쿼리합니다. 이 응용 프로그램에서는 두 개의 지속 쿼리를 사용합니다.
+AEM Headless 모범 사례에 따라 iOS 애플리케이션은 AEM GraphQL 지속 쿼리를 사용하여 어드벤처 데이터를 쿼리합니다. 이 응용 프로그램에서는 두 개의 지속 쿼리를 사용합니다.
 
 + 속성 집합이 포함된 AEM의 모든 모험을 반환하는 `wknd/adventures-all` 지속 쿼리입니다. 이 지속 쿼리는 초기 보기의 모험 목록을 구동합니다.
 
@@ -193,15 +193,15 @@ query ($slug: String!, $imageFormat:AssetTransformFormat=JPG, $imageSeoName: Str
 
 ### GraphQL 지속 쿼리 실행
 
-AEM의 지속 쿼리는 HTTP GET을 통해 실행되므로 Apollo와 같은 HTTP POST을 사용하는 일반적인 GraphQL 라이브러리를 사용할 수 없습니다. 대신 AEM에 대한 지속 쿼리 HTTP GET 요청을 실행하는 사용자 지정 클래스를 만듭니다.
+AEM의 지속 쿼리는 HTTP GET을 통해 실행되므로 Apollo와 같은 HTTP POST를 사용하는 일반적인 GraphQL 라이브러리를 사용할 수 없습니다. 대신 AEM에 대한 지속 쿼리 HTTP GET 요청을 실행하는 사용자 지정 클래스를 만듭니다.
 
 `AEM/Aem.swift`은(는) AEM Headless와의 모든 상호 작용에 사용되는 `Aem` 클래스를 인스턴스화합니다. 패턴은 다음과 같습니다.
 
 1. 각 지속 쿼리에는 해당 공개 함수(예: `getAdventures(..)` 또는 `getAdventureBySlug(..)`) 모험 데이터를 가져오기 위해 iOS 응용 프로그램의 보기를 호출합니다.
-1. 공용 함수는 AEM Headless에 비동기 HTTP GET 요청을 호출하고 JSON 데이터를 반환하는 개인 함수 `makeRequest(..)`을(를) 호출합니다.
+1. 공용 함수는 AEM Headless에 대한 비동기 HTTP GET 요청을 호출하고 JSON 데이터를 반환하는 개인 함수 `makeRequest(..)`을(를) 호출합니다.
 1. 각 퍼블릭 펀드는 JSON 데이터를 디코딩한 다음, Adventure 데이터를 보기에 반환하기 전에 필요한 확인 또는 변환을 수행합니다.
 
-   + AEM의 GraphQL JSON 데이터는 AEM Headless가 반환한 JSON 개체에 매핑되는 `AEM/Models.swift`에 정의된 구조/클래스를 사용하여 디코딩됩니다.
+   + AEM의 GraphQL JSON 데이터는 AEM Headless에서 반환된 JSON 개체에 매핑되는 `AEM/Models.swift`에 정의된 구조/클래스를 사용하여 디코딩됩니다.
 
 ```swift
     /// # getAdventures(..)
@@ -262,7 +262,7 @@ SwiftUI는 애플리케이션의 다양한 보기에 사용됩니다. Apple은 [
 
 + `WKNDAdventuresApp.swift`
 
-  응용 프로그램의 항목이며 `aem.getAdventures()`을(를) 통해 모든 모험 데이터를 가져오는 데 `.onAppear` 이벤트 처리기를 사용하는 `AdventureListView`이(가) 포함되어 있습니다. 공유 `aem` 개체가 여기에서 초기화되어 다른 보기에 [EnvironmentObject](https://developer.apple.com/documentation/swiftui/environmentobject)(으)로 노출됩니다.
+  응용 프로그램의 항목이며 `aem.getAdventures()`을(를) 통해 모든 모험 데이터를 가져오는 데 `.onAppear` 이벤트 처리기를 사용하는 `AdventureListView`이(가) 포함되어 있습니다. 공유 `aem` 개체가 여기에서 초기화되어 다른 보기에 [EnvironmentObject](https://developer.apple.com/documentation/swiftui/environmentobject)&#x200B;(으)로 노출됩니다.
 
 + `Views/AdventureListView.swift`
 
@@ -278,15 +278,15 @@ SwiftUI는 애플리케이션의 다양한 보기에 사용됩니다. Apple은 [
 
 ### 원격 이미지
 
-어드벤처 콘텐츠 조각에서 참조하는 이미지는 AEM에서 제공합니다. 이 iOS 앱은 GraphQL 응답의 경로 `_dynamicUrl` 필드를 사용하며 `AEM_SCHEME` 및 `AEM_HOST` 접두사를 사용하여 정규화된 URL을 만듭니다. AE SDK에 대해 개발하는 경우 `_dynamicUrl`이(가) null을 반환하므로 개발 대체 항목이 이미지의 `_path` 필드로 설정됩니다.
+어드벤처 콘텐츠 조각에서 참조하는 이미지는 AEM에서 제공합니다. 이 iOS 앱은 GraphQL 응답의 경로 `_dynamicUrl` 필드를 사용하며 `AEM_SCHEME` 및 `AEM_HOST` 접두사를 사용하여 정규화된 URL을 만듭니다. AE SDK에 대해 개발하는 경우 `_dynamicUrl`이(가) null을 반환하므로 개발 대체 항목이 이미지의 `_path` 필드로 반환됩니다.
 
 인증이 필요한 AEM의 보호된 리소스에 연결하는 경우 자격 증명을 이미지 요청에도 추가해야 합니다.
 
 [SDWebImageSwiftUI](https://github.com/SDWebImage/SDWebImageSwiftUI) 및 [SDWebImage](https://github.com/SDWebImage/SDWebImage)은(는) `AdventureListItemView` 및 `AdventureDetailView` 보기에서 어드벤처 이미지를 채우는 AEM의 원격 이미지를 로드하는 데 사용됩니다.
 
-`aem` 클래스(`AEM/Aem.swift`의)는 두 가지 방법으로 AEM 이미지의 사용을 용이하게 합니다.
+`aem` 클래스(`AEM/Aem.swift`의)는 두 가지 방법으로 AEM 이미지 사용을 용이하게 합니다.
 
-1. `aem.imageUrl(path: String)`은(는) 보기에서 AEM 구성표 앞에 추가하고 이미지의 경로를 호스팅하여 정규화된 URL을 만드는 데 사용됩니다.
+1. `aem.imageUrl(path: String)`은(는) 보기에 AEM의 체계를 미리 추가하고 이미지의 경로를 호스팅하여 정규화된 URL을 만드는 데 사용됩니다.
 
    ```swift
    // adventure.image() => /adobe/dynamicmedia/deliver/dm-aid--741ed388-d5f8-4797-8095-10c896dc9f1d/example.jpg?quality=80&preferwebp=true

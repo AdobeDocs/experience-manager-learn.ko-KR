@@ -1,7 +1,7 @@
 ---
 title: AEM Headless에서 큰 결과 세트로 작업하는 방법
-description: AEM Headless를 사용하여 큰 결과 세트로 작업하는 방법을 알아봅니다.
-version: Cloud Service
+description: AEM Headless를 사용하여 대규모 결과 세트로 작업하는 방법을 알아봅니다.
+version: Experience Manager as a Cloud Service
 topic: Headless
 feature: GraphQL API
 role: Architect, Developer
@@ -12,14 +12,14 @@ jira: KT-13102
 thumbnail: 3418381.jpeg
 exl-id: 304b4d80-27bd-4336-b2ff-4b613a30f712
 duration: 308
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '843'
 ht-degree: 1%
 
 ---
 
-# AEM Headless의 큰 결과 세트
+# AEM Headless의 대규모 결과 세트
 
 AEM Headless GraphQL 쿼리는 큰 결과를 반환할 수 있습니다. 이 문서에서는 최상의 애플리케이션 성능을 보장하기 위해 AEM Headless에서 큰 결과로 작업하는 방법에 대해 설명합니다.
 

@@ -1,7 +1,7 @@
 ---
 title: AEM as a Cloud Service의 리더 인스턴스에서 작업을 실행하는 방법
 description: AEM as a Cloud Service의 리더 인스턴스에서 작업을 실행하는 방법을 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: OSGI, Cloud Manager
 role: Architect, Developer
@@ -11,17 +11,17 @@ duration: 0
 last-substantial-update: 2024-10-23T00:00:00Z
 jira: KT-16399
 thumbnail: KT-16399.jpeg
-source-git-commit: 7dca86137d476418c39af62c3c7fa612635c0583
+exl-id: b8b88fc1-1de1-4b5e-8c65-d94fcfffc5a5
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '557'
 ht-degree: 0%
 
 ---
 
-
 # AEM as a Cloud Service의 리더 인스턴스에서 작업을 실행하는 방법
 
-AEM as a Cloud Service의 일부로 AEM Author 서비스의 리더 인스턴스에서 작업을 실행하는 방법을 배우고 한 번만 실행되도록 구성하는 방법을 이해합니다.
+AEM as a Cloud Service의 일부로 AEM Author 서비스의 리더 인스턴스에서 작업을 실행하는 방법을 알아보고 한 번만 실행되도록 구성하는 방법을 이해합니다.
 
 슬링 작업은 시스템 또는 사용자가 트리거한 이벤트를 처리하도록 설계된 백그라운드에서 작동하는 비동기 작업입니다. 기본적으로 이러한 작업은 클러스터의 모든 인스턴스(포드)에 균등하게 분배됩니다.
 
@@ -136,7 +136,7 @@ public class SimpleJobConsumerImpl implements JobConsumer {
 
 AEM 작성자 서비스에서 작업을 한 번만 실행하려면 아래에 설명된 [작업 큐 구성](#how-to-run-a-job-on-the-leader-instance)을 추가하십시오.
 
-[Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#cloud-manager)에서 AEM Author 서비스의 로그를 검토하여 확인할 수 있습니다.
+[Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#cloud-manager)에서 AEM 작성자 서비스의 로그를 검토하여 확인할 수 있습니다.
 
 ![모든 인스턴스에서 작업 처리](./assets/run-job-once/job-processed-by-all-instances.png)
 
@@ -151,11 +151,11 @@ AEM 작성자 서비스에서 작업을 한 번만 실행하려면 아래에 설
 <DD.MM.YYYY HH:mm:ss.SSS> INFO [com.adobe.aem.guides.wknd.core.sling.jobs.impl.SimpleJobConsumerImpl] Processing WKND Job, and Job metadata is: Created in activate method
 ```
 
-각 AEM 작성자 인스턴스(`68775db964-nxxcx` 및 `68775db964-r4zk7`)에 대해 하나씩 두 개의 로그 항목이 있으며, 이는 각 인스턴스(pod)가 작업을 처리했음을 나타냅니다.
+각 AEM 작성자 인스턴스(`68775db964-nxxcx` 및 `68775db964-r4zk7`)에 대해 하나씩, 각 인스턴스(pod)에서 작업을 처리했음을 나타내는 두 개의 로그 항목이 있습니다.
 
 ## 리더 인스턴스에서 작업을 실행하는 방법
 
-AEM Author 서비스에서 _작업을 한 번만_ 실행하려면 **정렬됨** 유형의 새 Sling 작업 큐를 만들고 작업 항목(`wknd/simple/job/topic`)을 이 큐와 연결하십시오. 이 구성을 사용하면 리더 AEM 작성자 인스턴스(pod)에서만 작업을 처리할 수 있습니다.
+AEM 작성자 서비스에서 _한 번만_ 작업을 실행하려면 **주문** 유형의 새 Sling 작업 큐를 만들고 작업 주제(`wknd/simple/job/topic`)를 이 큐와 연결하십시오. 이 구성을 사용하면 리더 AEM 작성자 인스턴스(pod)에서만 작업을 처리할 수 있습니다.
 
 AEM 프로젝트의 `ui.config` 모듈에서 OSGi 구성 파일(`org.apache.sling.event.jobs.QueueConfiguration~wknd.cfg.json`)을 만들고 `ui.config/src/main/content/jcr_root/apps/wknd/osgiconfig/config.author` 폴더에 저장합니다.
 
@@ -177,7 +177,7 @@ AEM 프로젝트의 `ui.config` 모듈에서 OSGi 구성 파일(`org.apache.slin
 - 큐 유형이 `ORDERED`(으)로 설정되어 있습니다.
 - 최대 병렬 작업 수가 `1`(으)로 설정되어 있습니다.
 
-위의 구성을 배포하면 작업이 리더 인스턴스에서만 처리되어 전체 AEM Author 서비스에서 한 번만 실행됩니다.
+위의 구성을 배포하면 작업이 리더 인스턴스에서만 처리되어 전체 AEM 작성자 서비스에서 한 번만 실행됩니다.
 
 ```
 <DD.MM.YYYY HH:mm:ss.SSS> [cm-pxxxx-exxxx-aem-author-7475cf85df-qdbq5] *INFO* [FelixLogListener] Events.Service.org.apache.sling.event Service [QueueMBean for queue WKND Queue - ORDERED,7755, [org.apache.sling.event.jobs.jmx.StatisticsMBean]] ServiceEvent REGISTERED

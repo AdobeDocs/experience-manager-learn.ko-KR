@@ -5,7 +5,7 @@ solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Adaptive Forms
 topic: Integrations, Development
 jira: KT-12557
@@ -13,7 +13,7 @@ badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 exl-id: 43665a1e-4101-4b54-a6e0-d189e825073e
 duration: 38
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 1%
@@ -38,7 +38,7 @@ Adobe Analytics에서 캡처한 양식 데이터는 도넛 형식으로 표시�
 
 ## 디버깅
 
-적응형 양식이 Adobe 실행 구성을 포함하는 것과 동일한 구성 컨테이너를 사용하고 있는지 확인하십시오.
+적응형 양식이 Adobe Launch 구성이 포함된 것과 동일한 구성 컨테이너를 사용하고 있는지 확인합니다.
 
 양식이 Adobe Analytics에 데이터를 보내고 있는지 확인하려면 다음을 수행하십시오
 
@@ -55,10 +55,10 @@ _satellite.setDebug(true)
 
 ## Adobe Experience Platform Debugger 사용
 
-자세한 디버깅 정보를 보려면 [AEP 디버거 확장](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html)을 브라우저에 추가하십시오(로그인해야 함)
+[AEP 디버거 확장](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html)을(를) 브라우저에 추가하여 자세한 디버깅 정보를 확인하십시오
 
 ![platform-debugger](assets/platform-debugger.png)
 
 ## 축하합니다.
 
-양식 데이터 필드에 보고할 AEM Formsas a Cloud Service 와 Adobe Analytics을 통합했습니다.
+AEM Forms as a Cloud Service과 Adobe Analytics을 통합하여 양식 데이터 필드에 대해 보고했습니다.

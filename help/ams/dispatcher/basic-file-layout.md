@@ -1,7 +1,7 @@
 ---
 title: AMS Dispatcher 기본 파일 레이아웃
 description: 기본 Apache 및 Dispatcher 파일 레이아웃을 이해합니다.
-version: 6.5
+version: Experience Manager 6.5
 topic: Administration, Development
 feature: Dispatcher
 role: Admin
@@ -10,7 +10,7 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 8a3f2bb9-3895-45c6-8bb5-15a6d2aac50e
 duration: 308
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1130'
 ht-degree: 0%
@@ -86,7 +86,7 @@ AMS는 Apache 웹 서버의 기본 설치에 을 추가합니다.
 AMS 기본 문서 루트:
 - 작성자:
    - `/mnt/var/www/author/`
-- Publish:
+- 게시:
    - `/mnt/var/www/html/`
 - 다목적 및 상태 점검 유지 관리
    - `/mnt/var/www/default/`

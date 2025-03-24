@@ -5,18 +5,18 @@ solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: Adaptive Forms
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 jira: KT-16276
-source-git-commit: 1ed08d7784833b6c49139da525341af5ee587345
+exl-id: 4a02f494-ca0e-42d4-bbb9-6223ff8685e3
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '253'
 ht-degree: 0%
 
 ---
-
 
 # 변경 사항 테스트
 
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 * 테마 프로젝트의 dist 폴더 아래에 있는 theme.css 파일을 엽니다.전체 파일 내용을 선택하고 복사합니다.
 * 이전 단계에서 만든 양식을 미리 봅니다.
-* 버튼 중 하나를 마우스 오른쪽 버튼으로 클릭하고 Inspect 를 선택하여 개발자 콘솔을 엽니다.
+* 버튼 중 하나를 마우스 오른쪽 버튼으로 클릭하고 검사 를 선택하여 개발자 콘솔을 엽니다.
 * 개발자 콘솔에서 theme.css를 클릭하여 theme.css를 엽니다.
 * CTR-A를 사용하여 theme.css의 전체 콘텐츠를 선택하고 삭제 버튼을 누릅니다.
 * 이전 단계에서 빌드한 theme.css의 콘텐츠를 복사하여 붙여넣습니다.
@@ -50,4 +50,3 @@ ht-degree: 0%
 ## 변경 사항 푸시
 
 변경 사항에 만족하면 [프론트엔드 파이프라인](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline)을 사용하여 변경 사항을 클라우드 인스턴스에 푸시할 수 있습니다.
-

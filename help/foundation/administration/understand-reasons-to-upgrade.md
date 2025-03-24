@@ -1,7 +1,7 @@
 ---
 title: 업그레이드해야 하는 이유 이해하기
 description: 최신 버전의 Adobe Experience Manager 6으로 업그레이드하는 것을 고려하는 고객을 위한 주요 기능에 대한 높은 수준의 분류입니다.
-version: 6.5
+version: Experience Manager 6.5
 topic: Upgrade
 feature: Release Information
 role: Leader, Architect, Developer, Admin, User
@@ -9,7 +9,7 @@ level: Beginner
 doc-type: Article
 exl-id: bf4030b0-67c4-4b00-af95-f63e6f79e995
 duration: 538
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '2588'
 ht-degree: 1%
@@ -34,8 +34,8 @@ Adobe Experience Manager 6.5는 다음을 통해 시스템의 안정성, 성능 
 
 AEM Sites은 웹 사이트 생성 및 구축을 가속화하기 위해 고안된 다양한 기능을 도입했습니다.
 
-+ **SPA 편집기** 지원을 통해 SPA(단일 페이지 애플리케이션)를 AEM에서 완전히 작성할 수 있으므로 마케터에게 친숙한 풍부한 작성 환경을 지원합니다.
-+_0}JavaScript SDK**, SPA 프로젝트 시작 키트 및 지원 빌드 도구를 통해 프론트엔드 개발자는 SPA Editor와 호환되는 단일 페이지 애플리케이션을 AEM과는 독립적으로 개발할 수 있습니다.**
++ **SPA 편집기** 지원을 통해 AEM에서 SPA(단일 페이지 애플리케이션)를 완전히 작성할 수 있으므로 마케터에게 친숙한 풍부한 작성 환경을 지원합니다.
++_0}JavaScript SDK**, SPA 프로젝트 시작 키트 및 지원 빌드 도구를 사용하면 프론트엔드 개발자가 AEM과 독립적으로 SPA 편집기 호환 단일 페이지 애플리케이션을 개발할 수 있습니다.**
 + **핵심 구성 요소**&#x200B;은(는) 기존 핵심 구성 요소에 다양한 개선 사항과 함께 다양한 새 구성 요소와 **구성 요소 라이브러리**&#x200B;를 추가합니다.
 + **번역** 추가 개선 사항을 통해 AEM Sites 번역을 간소화할 수 있습니다.
 
@@ -51,17 +51,17 @@ AEM은 AEM 외부의 콘텐츠를 쉽게 사용할 수 있도록 새롭고 개�
 
 AEM Assets은 DAM의 사용, 관리 및 이해를 개선하기 위해 풍부한 에셋 관리 기능을 기반으로 하고 있습니다. AEM 6.5는 Adobe Creative Cloud과 크리에이티브 워크플로 간의 통합을 지속적으로 개선합니다.
 
-+ **Adobe 자산 링크**&#x200B;는 Adobe Creative Cloud 도구에서 크리에이티브를 AEM Assets에 직접 연결합니다.
++ **Adobe Asset Link** 은(는) Adobe Creative Cloud 도구에서 크리에이티브를 AEM Assets에 직접 연결합니다.
 + **Adobe Stock** 통합을 사용하면 AEM Assets 환경에서 Adobe Stock 이미지에 직접 액세스하여 원활한 콘텐츠 검색 환경을 만들 수 있습니다.
 + **AEM 데스크톱 앱**&#x200B;은(는) 버전 2.0을 릴리스하고 성능과 안정성을 향상시키면서 자체 구현을 다시 구상합니다.
 + **연결된 Assets**&#x200B;은(는) 개별 AEM Sites 인스턴스를 지원하여 다른 AEM Assets 인스턴스의 자산에 원활하게 액세스하고 사용할 수 있습니다.
-+ **Dynamic Media**&#x200B;의 비디오 지원이 업데이트되었습니다(예: **360개 비디오** 및 **사용자 지정 비디오 썸네일**).
++ **Dynamic Media**&#x200B;의 비디오 지원이 업데이트되었습니다(예: **360 비디오** 및 **사용자 지정 비디오 썸네일**).
 
 ### 콘텐츠 인텔리전스
 
 AEM은 머신 러닝 및 인공 지능을 활용하여 모든 경험을 개선하면서 스마트 기술과의 통합을 지속적으로 구축하고 있습니다.
 
-+ **Adobe 자산 링크**&#x200B;에 **시각적 유사성 검색**&#x200B;이 추가되어 **Adobe Creative Cloud 도구** 내에서 유사한 이미지를 쉽게 검색하고 사용할 수 있습니다.
++ **Adobe Asset Link**&#x200B;은(는) **시각적 유사성 검색**&#x200B;을(를) 추가하여 **Adobe Creative Cloud 도구** 내에서 유사한 이미지를 쉽게 검색하고 사용할 수 있도록 합니다.
 
 ### 통합
 
@@ -71,10 +71,10 @@ AEM은 다른 Adobe 서비스와 통합할 수 있는 기능을 확장합니다.
 
 ### AMS CLOUD MANAGER
 
-Adobe Managed Services(AMS) 고객에게만 제공되는 [Cloud Manager](https://adobe.ly/2HODmsv)은(는) 다음 기능을 제공합니다.
+Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https://adobe.ly/2HODmsv)은(는) 다음 기능을 제공합니다.
 
-+ Cloud Manager은 AEM 배포 지원을 AEM Sites에서 **AEM Assets**(으)로 확장합니다. **에셋 처리에 대한 자동화된 성능 테스트**&#x200B;를 포함합니다.
-+ 사전 정의된 임계값에서 AEM Publish 계층의 **자동 크기 조정**&#x200B;을 통해 최종 사용자가 최적의 환경을 유지할 수 있습니다.
++ Cloud Manager은 **자산 처리의 자동화된 성능 테스트**&#x200B;를 포함하여 AEM 배포 지원을 AEM Sites에서 **AEM Assets**(으)로 확장합니다.
++ 사전 정의된 임계값에서 AEM 게시 계층의 **자동 크기 조정**&#x200B;을 통해 최종 사용자가 최적의 환경을 유지할 수 있습니다.
 + **비프로덕션 파이프라인**&#x200B;을 통해 개발 팀은 Cloud Manager을 활용하여 코드 품질을 지속적으로 확인하고 더 낮은 환경(개발 및 QA)에 배포할 수 있습니다.
 + **CI/CD 파이프라인 API**&#x200B;를 통해 고객이 프로그래밍 방식으로 Cloud Manager에 참여하여 온-프레미스 개발 인프라와의 통합 가능성을 높일 수 있습니다.
 
@@ -171,7 +171,7 @@ Adobe Managed Services(AMS) 고객에게만 제공되는 [Cloud Manager](https:/
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/aem-with-mongodb.html" target="_blank">MongoMK 성능 및 안정성</a>:</strong>
-            MongoMK는 AEM 6.0으로 도입된 이후 계속 개선되었습니다.</td>
+            AEM 6.0으로 도입된 이후 MongoMK에 대한 지속적인 개선이 이루어졌습니다.</td>
             <td> </td>
             <td> </td>
             <td>✔</td>
@@ -226,7 +226,7 @@ Adobe Managed Services(AMS) 고객에게만 제공되는 [Cloud Manager](https:/
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/upgrade.html" target="_blank">업그레이드 개선 사항</a>:</strong>
-            업그레이드 개선을 통해 AEM을 더 쉽고 빠르게 즉각적으로 업그레이드할 수 있습니다.</td>
+            업그레이드 개선 사항을 통해 AEM을 보다 쉽고 빠르게 즉각적으로 업그레이드할 수 있습니다.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -260,7 +260,7 @@ Adobe Managed Services(AMS) 고객에게만 제공되는 [Cloud Manager](https:/
         </tr>
         <tr>
             <td><strong><a href="https://adobe.ly/2HODmsv" target="_blank">Cloud Manager</a>: </strong>
-                Adobe Managed Services(AMS) 고객에게만 독점적인 Cloud Manager은 최신 CI/CD 파이프라인을 통해 개발 및 배포를 가속화합니다.</td>
+                Adobe Managed Services(AMS) 고객에게만 국한된 Cloud Manager은 최신 CI/CD 파이프라인을 통해 개발 및 배포를 가속화합니다.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -410,7 +410,7 @@ Adobe Managed Services(AMS) 고객에게만 제공되는 [Cloud Manager](https:/
     </tr>
     <tr>
         <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ims-config-and-admin-console.html" target="_blank">Adobe IMS 인증 지원</a><br>
- </strong>Adobe IMS(Identity Management System)를 통해 AEM 작성자 인스턴스에 대한 액세스를 중앙에서 관리하는 AMS(Managed Services) Adobe 전용.</td>
+ </strong>Adobe Managed Services(AMS)만 사용할 수 있으며 Adobe IMS(Identity Management System)를 통해 AEM 작성자 인스턴스에 대한 액세스를 중앙에서 관리합니다.</td>
         <td> </td>
         <td> </td>
         <td> </td>
@@ -435,7 +435,7 @@ Adobe Managed Services(AMS) 고객에게만 제공되는 [Cloud Manager](https:/
 <table>
     <thead>
         <tr>
-            <td><strong>사이트 기능</strong></td>
+            <td><strong>Sites 기능</strong></td>
             <td>5.6.x</td>
             <td>6.0</td>
             <td>6.1</td>
@@ -503,7 +503,7 @@ Adobe Managed Services(AMS) 고객에게만 제공되는 [Cloud Manager](https:/
         </tr>
         <tr>
             <td><strong>스타일 시스템:</strong>
-            컨텍스트 내 스타일 시스템을 사용하여 시각적 모양을 정의하여 AEM 구성 요소 재사용을 늘립니다.</td>
+            컨텍스트 내 스타일 시스템을 사용하여 시각적 모양을 정의하여 AEM 구성 요소의 재사용 횟수를 늘립니다.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -580,7 +580,7 @@ Adobe Managed Services(AMS) 고객에게만 제공되는 [Cloud Manager](https:/
         </tr>
         <tr>
             <td><strong>콘텐츠 서비스:</strong>
-            장치 및 애플리케이션 전반에서 사용할 AEM의 콘텐츠를 JSON으로 내보냅니다.</td>
+            여러 디바이스와 애플리케이션에서 사용할 수 있도록 AEM의 콘텐츠를 JSON으로 내보냅니다.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -718,7 +718,7 @@ Adobe Managed Services(AMS) 고객에게만 제공되는 [Cloud Manager](https:/
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/task-content.html" target="_blank">작업</a> 및 워크플로 관리:</strong>
-            AEM Projects를 활용하는 디지털 에셋의 검토 및 승인을 위해 사전 빌드된 워크플로우 및 작업.</td>
+            AEM 프로젝트를 활용하는 디지털 에셋의 검토 및 승인을 위해 사전 빌드된 워크플로우 및 작업입니다.</td>
             <td> </td>
             <td>✔</td>
             <td>✔</td>
@@ -784,7 +784,7 @@ Adobe Managed Services(AMS) 고객에게만 제공되는 [Cloud Manager](https:/
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/touch-ui-asset-insights.html" target="_blank">자산 통찰력</a>:</strong>
-            Adobe Analytics을 활용하여 디지털 에셋의 고객 상호 작용을 캡처하고 AEM에서 볼 수 있습니다.</td>
+            Adobe Analytics을 활용하여 AEM에서 디지털 에셋과 보기의 고객 상호 작용을 캡처합니다.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -828,7 +828,7 @@ Adobe Managed Services(AMS) 고객에게만 제공되는 [Cloud Manager](https:/
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/indesign.html" target="_blank">Adobe InDesign Server 통합</a>:</strong>
-            제품 카탈로그를 생성합니다. InDesign 템플릿을 기반으로 브로셔, 전단지 및 인쇄 광고를 제작할 수 있습니다.</td>
+            제품 카탈로그를 생성합니다. InDesign 템플릿을 기반으로 브로셔, 전단지 및 인쇄 광고를 만들 수 있습니다.</td>
             <td> </td>
             <td> </td>
             <td>✔</td>
@@ -839,7 +839,7 @@ Adobe Managed Services(AMS) 고객에게만 제공되는 [Cloud Manager](https:/
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/desktop-app/aem-desktop-app.html" target="_blank">AEM 데스크톱 앱</a>:</strong>
-            Creative Suite 제품을 사용하여 편집할 자산을 로컬 데스크톱에 동기화합니다.
+            Creative Suite 제품을 사용하여 편집할 자산을 로컬 데스크탑에 동기화합니다.
             </td>
             <td> </td>
             <td> </td>
@@ -851,7 +851,7 @@ Adobe Managed Services(AMS) 고객에게만 제공되는 [Cloud Manager](https:/
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/imaging-transcoding-library.html" target="_blank">Adobe 이미징 라이브러리</a>:</strong>
-                고품질 파일 조작에 사용되는 <br> Photoshop 및 Acrobat PDF 라이브러리.</td>
+                <br> Photoshop 및 Acrobat PDF 라이브러리가 고품질 파일 조작에 사용되었습니다.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -862,7 +862,7 @@ Adobe Managed Services(AMS) 고객에게만 제공되는 [Cloud Manager](https:/
         </tr>
         <tr>
             <td><strong><a href="https://www.adobe.com/kr/creativecloud/business/enterprise/adobe-asset-link.html" target="_blank">Adobe 자산 링크</a>:</strong>
-            클라우드 애플리케이션 만들기 Adobe에서 직접 AEM Assets에 액세스합니다.</td>
+            Adobe 클라우드 애플리케이션 만들기에서 AEM Assets에 직접 액세스합니다.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -964,7 +964,7 @@ Adobe Managed Services(AMS) 고객에게만 제공되는 [Cloud Manager](https:/
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/delivering-dynamic-media-assets.html" target="_blank">배달</a>:</strong>
-            HTTP/2 프로토콜을 통한 Dynamic Media 콘텐츠 연결 또는 임베드 및 전달을 위한 유연한 옵션.</td>
+            HTTP/2 프로토콜을 통해 Dynamic Media 콘텐츠를 연결 또는 포함하고 전달하기 위한 유연한 옵션입니다.</td>
             <td> </td>
             <td>✔</td>
             <td>✔</td>
@@ -974,7 +974,7 @@ Adobe Managed Services(AMS) 고객에게만 제공되는 [Cloud Manager](https:/
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong>Scene7에서 Dynamic Media으로 업그레이드:</strong>
+            <td><strong>Scene7에서 Dynamic Media로 업그레이드:</strong>
             마스터 자산을 마이그레이션하고 기존 S7 URL을 계속 사용하는 기능.</td>
             <td> </td>
             <td> </td>

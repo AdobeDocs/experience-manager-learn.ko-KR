@@ -2,7 +2,7 @@
 title: 로그를 사용하여 AEM SDK 디버깅
 description: 로그는 AEM 응용 프로그램을 디버깅하기 위해 최전방 역할을 하지만 배포된 AEM 응용 프로그램의 적절한 로깅에 의존합니다.
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: Tutorial
 jira: KT-5252
 topic: Development
@@ -10,7 +10,7 @@ role: Developer
 level: Beginner, Intermediate
 exl-id: 91aa4a10-47fe-4313-acd2-ca753e5484d9
 duration: 411
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # 로그를 사용하여 AEM SDK 디버깅
 
-AEM SDK의 로그에 액세스하면 AEM SDK 로컬 quickstart Jar 또는 Dispatcher 도구&#39; 가 AEM 애플리케이션 디버깅에 대한 주요 통찰력을 제공할 수 있습니다.
+AEM SDK 로그에 액세스하면 AEM SDK 로컬 quickstart Jar 또는 Dispatcher 도구 가 AEM 애플리케이션 디버깅에 대한 주요 통찰력을 제공할 수 있습니다.
 
 ## AEM 로그
 
@@ -27,13 +27,13 @@ AEM SDK의 로그에 액세스하면 AEM SDK 로컬 quickstart Jar 또는 Dispat
 
 로그는 AEM 응용 프로그램을 디버깅하기 위해 최전방 역할을 하지만 배포된 AEM 응용 프로그램의 적절한 로깅에 의존합니다. Adobe은 AEM SDK의 로컬 빠른 시작과 AEM as a Cloud Service의 개발 환경에서 로그 가시성을 표준화하여 구성 트위들링과 재배포를 감소하므로 로컬 개발 및 AEM as a Cloud Service 개발 로깅 구성을 가능한 유사하게 유지하는 것을 권장합니다.
 
-[AEM Project Archetype](https://github.com/adobe/aem-project-archetype)은(는) 다음 위치에 있는 Sling Logger OSGi 구성을 통해 로컬 개발을 위해 AEM 응용 프로그램의 Java 패키지에 대한 디버그 수준에서 로깅을 구성합니다.
+[AEM Project Archetype](https://github.com/adobe/aem-project-archetype)은(는) 다음 위치에 있는 Sling Logger OSGi 구성을 통해 로컬 개발을 위해 AEM 애플리케이션의 Java 패키지에 대한 디버그 수준에서 로깅을 구성합니다.
 
 `ui.apps/src/main/content/jcr_root/apps/example/config/org.apache.sling.commons.log.LogManager.factory.config-example.cfg.json`
 
 `error.log`에 로그인합니다.
 
-기본 로깅이 로컬 개발에 충분하지 않은 경우 AEM SDK의 로컬 빠른 시작의 로그 지원 웹 콘솔을 통해 ([/system/console/slinglog](http://localhost:4502/system/console/slinglog))에서 애드혹 로깅을 구성할 수 있지만, AEM as a Cloud Service 개발 환경에서도 이러한 동일한 로그 구성이 필요하지 않으면 애드혹 변경이 Git에 지속되지 않는 것이 좋습니다. 로그 지원 콘솔을 통한 변경 사항은 AEM SDK의 로컬 빠른 시작의 저장소에 직접 유지됩니다.
+기본 로깅이 로컬 개발에 충분하지 않은 경우 AEM SDK의 로컬 빠른 시작의 로그 지원 웹 콘솔을 통해 ([/system/console/slinglog](http://localhost:4502/system/console/slinglog))에 Ad Hoc 로깅을 구성할 수 있지만, AEM as a Cloud Service 개발 환경에서도 이러한 동일한 로그 구성이 필요하지 않으면 Ad Hoc 변경 사항이 Git에 지속되지 않는 것이 좋습니다. 로그 지원 콘솔을 통한 변경 사항은 AEM SDK의 로컬 빠른 시작의 저장소에 직접 유지됩니다.
 
 Java 로그 문은 `error.log` 파일에서 볼 수 있습니다.
 

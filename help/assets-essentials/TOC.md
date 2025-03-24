@@ -1,14 +1,14 @@
 ---
 user-guide-title: AEM Assets Essentials 비디오
-user-guide-description: Adobe Experience Manager Assets Essentials에 대한 비디오 컬렉션입니다.
+user-guide-description: Adobe Experience Manager Assets Essentials에 대한 비디오 모음입니다.
 breadcrumb-title: AEM Assets Essentials 비디오
 solution: Experience Manager, Experience Manager Assets
 sub-product: Experience Manager Assets
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature-set: Experience Manager Assets
 feature: Assets Essentials
 team: TM
-source-git-commit: 27d4b552d270d92d032384aea0a0f4798d5eca8c
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '69'
 ht-degree: 26%
@@ -20,7 +20,7 @@ ht-degree: 26%
 
 + [개요](overview.md)
 
-+ [시작](./getting-started.md)
++ [시작하기](./getting-started.md)
 
 + 기본 사항{#basics}
    + [관리](basics/managing.md)

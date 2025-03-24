@@ -1,7 +1,7 @@
 ---
 title: AEM과의 CORS(원본 간 리소스 공유)를 위한 개발
-description: 클라이언트측 JavaScript을 통해 외부 웹 애플리케이션에서 AEM 콘텐츠에 액세스하기 위해 CORS를 활용하는 간단한 예입니다.
-version: 6.4, 6.5
+description: CORS를 활용하여 클라이언트측 JavaScript을 통해 외부 웹 애플리케이션에서 AEM 콘텐츠에 액세스하는 간단한 예입니다.
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Security, Development
 role: Developer
 level: Beginner
@@ -9,7 +9,7 @@ feature: Security
 doc-type: Technical Video
 exl-id: 867cf74e-44e7-431b-ac8f-41b63c370635
 duration: 333
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '318'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 클라이언트측 JavaScript을 통해 외부 웹 애플리케이션에서 AEM 콘텐츠에 액세스하는 데 [!DNL CORS]을(를) 활용하는 간단한 예입니다. 이 예에서는 CORS OSGi 구성을 사용하여 AEM에서 CORS 액세스를 활성화합니다. OSGi 구성 접근 방식은 다음과 같은 경우에 실행 가능합니다.
 
-* 단일 원본이 AEM Publish 콘텐츠에 액세스하고 있습니다.
+* 단일 원본이 AEM 게시 콘텐츠에 액세스하고 있습니다.
 * AEM 작성자에게는 CORS 액세스 권한이 필요합니다.
 
 AEM Publish에 대한 다중 원본 액세스가 필요한 경우 [이 설명서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=en#dispatcher-configuration)를 참조하세요.
@@ -103,7 +103,7 @@ Access-Control-Request-Method,Access-Control-Request-Headers]"
 
 ### CORS 요청 헤더 허용
 
-필요한 [HTTP 요청 헤더가 처리를 위해 AEM에 전달되도록](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders)하려면 Dispatcher의 `/clientheaders` 구성에서 허용되어야 합니다.
+필요한 [HTTP 요청 헤더가 처리를 위해 AEM으로 통과하도록 허용](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders)하려면 Dispatcher의 `/clientheaders` 구성에서 허용되어야 합니다.
 
 ```
 /clientheaders {
@@ -116,7 +116,7 @@ Access-Control-Request-Method,Access-Control-Request-Headers]"
 
 ### CORS 응답 헤더 캐싱
 
-캐시된 콘텐츠에서 CORS 헤더를 캐시하고 제공할 수 있도록 하려면 다음 [/cache /headers 구성](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#caching-http-response-headers)을(를) AEM Publish `dispatcher.any` 파일에 추가하십시오.
+캐시된 콘텐츠에서 CORS 헤더를 캐시하고 제공할 수 있도록 하려면 다음 [/cache /headers 구성](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#caching-http-response-headers)을(를) AEM 게시 `dispatcher.any` 파일에 추가하십시오.
 
 ```
 /publishfarm {
@@ -147,7 +147,7 @@ Access-Control-Request-Method,Access-Control-Request-Headers]"
 ## 지원 자료 {#supporting-materials}
 
 * macOS에 대한 [Jeeves](https://apps.apple.com/us/app/jeeves-local-http-server/id980824182?mt=12)
-* [Python SimpleHTTPServer](https://docs.python.o:qrg/2/library/simplehttpserver.html)(Windows/macOS/Linux 호환)
+* [Python SimpleHTTPServer](https://docs.python.o:qrg/2/library/simplehttpserver.html)&#x200B;(Windows/macOS/Linux 호환)
 
 * [AEM의 CORS(원본 간 리소스 공유) 이해](./understand-cross-origin-resource-sharing.md)
 * [원본 간 리소스 공유(W3C)](https://www.w3.org/TR/cors/)

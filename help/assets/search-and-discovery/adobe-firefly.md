@@ -1,7 +1,7 @@
 ---
 title: 검색 및 Adobe Firefly
 description: Adobe Firefly과 통합된 AEM Assets이 빈 검색 결과를 생산적인 에셋 생성 경험으로 변환하는 방법에 대해 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Content Management
 feature: Search, Generative AI
 role: User
@@ -11,7 +11,7 @@ duration: 104
 last-substantial-update: 2024-05-09T00:00:00Z
 jira: KT-15486
 exl-id: 4da5eb7e-fd8c-4a27-a824-1fb72c95933e
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '85'
 ht-degree: 0%

@@ -5,23 +5,23 @@ solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: Adaptive Forms
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 jira: KT-16517
-source-git-commit: f9a1fb40aabb6fdc1157e1f2576f9c0d9cf1b099
+exl-id: f4a18f02-61a2-4fa3-bfbb-41bf696cd2a8
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 0%
 
 ---
 
-
 # 구성 요소에 대한 슬링 모델 만들기
 
-AEM의 Sling 모델 은 구성 요소에 대한 백엔드 논리 개발을 간소화하는 데 사용되는 Java 기반 프레임워크입니다. 개발자가 주석을 사용하여 AEM 리소스(JCR 노드)의 데이터를 Java 개체에 매핑할 수 있도록 해 주므로, 구성 요소에 대한 동적 데이터를 깔끔하고 효율적으로 처리할 수 있습니다.
-이 클래스인 CountriesDropDownImpl은 AEM(Adobe Experience Manager) 프로젝트에서 CountriesDropDown 인터페이스의 구현입니다. 사용자가 선택한 대륙을 기반으로 국가를 선택할 수 있는 드롭다운 구성 요소의 전원을 켭니다. 드롭다운 데이터는 AEM DAM(Digital Asset Manager)에 저장된 JSON 파일에서 동적으로 로드됩니다.
+AEM의 슬링 모델 은 구성 요소에 대한 백엔드 논리 개발을 간소화하는 데 사용되는 Java 기반 프레임워크입니다. 개발자가 주석을 사용하여 AEM 리소스(JCR 노드)의 데이터를 Java 오브젝트에 매핑할 수 있으므로 구성 요소에 대한 동적 데이터를 깔끔하고 효율적으로 처리할 수 있습니다.
+이 클래스인 CountriesDropDownImpl은 AEM(Adobe Experience Manager) 프로젝트에서 CountriesDropDown 인터페이스를 구현한 것입니다. 사용자가 선택한 대륙을 기반으로 국가를 선택할 수 있는 드롭다운 구성 요소의 전원을 켭니다. 드롭다운 데이터는 AEM DAM(Digital Asset Manager)에 저장된 JSON 파일에서 동적으로 로드됩니다.
 
 클래스의 **필드**
 

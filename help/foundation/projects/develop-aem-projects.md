@@ -1,7 +1,7 @@
 ---
 title: AEM에서 프로젝트 개발
-description: AEM 프로젝트용으로 개발하는 방법을 설명하는 개발 자습서입니다. 이 튜토리얼에서는 콘텐츠 작성 워크플로 및 작업 관리를 위해 AEM 내에서 새 프로젝트를 만드는 데 사용할 수 있는 사용자 지정 프로젝트 템플릿을 만듭니다.
-version: 6.4, 6.5
+description: AEM 프로젝트용으로 개발하는 방법을 보여 주는 개발 자습서입니다. 이 튜토리얼에서는 컨텐츠 작성 워크플로 및 작업 관리를 위해 AEM 내에서 새 프로젝트를 만드는 데 사용할 수 있는 사용자 지정 프로젝트 템플릿을 만듭니다.
+version: Experience Manager 6.4, Experience Manager 6.5
 feature: Projects, Workflow
 doc-type: Tutorial
 topic: Development
@@ -9,7 +9,7 @@ role: Developer
 level: Beginner
 exl-id: 9bfe3142-bfc1-4886-85ea-d1c6de903484
 duration: 1417
-source-git-commit: 54a7f93637545a4467c4c587bbc3d1d0de5c64a1
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '4441'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # AEM에서 프로젝트 개발
 
-[!DNL AEM Projects]에 대해 개발하는 방법을 보여 주는 개발 튜토리얼입니다. 이 튜토리얼에서는 콘텐츠 작성 워크플로 및 작업 관리를 위해 AEM 내에서 프로젝트를 만드는 데 사용할 수 있는 사용자 지정 프로젝트 템플릿을 만듭니다.
+[!DNL AEM Projects]에 대해 개발하는 방법을 보여 주는 개발 튜토리얼입니다. 이 튜토리얼에서는 컨텐츠 작성 워크플로 및 작업 관리를 위해 AEM 내에서 프로젝트를 만드는 데 사용할 수 있는 사용자 지정 프로젝트 템플릿을 만듭니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16904?quality=12&learn=on)
 
@@ -69,7 +69,7 @@ AEM Projects에는 여러 [OOTB 프로젝트 템플릿](https://experienceleague
 
 ### 가젯 {#gadgets}
 
-이 노드에는 추가 속성이 없지만 가젯 노드의 하위 항목은 새 프로젝트를 만들 때 프로젝트의 대시보드를 채우는 프로젝트 타일을 제어합니다. [프로젝트 타일](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects)(가젯 또는 포드라고도 함)은 프로젝트의 작업 공간을 채우는 간단한 카드입니다. ootb 타일의 전체 목록은 아래에서 찾을 수 있습니다 : **/libs/cq/gui/components/projects/admin/pod. **프로젝트가 생성된 후 프로젝트 소유자는 언제든지 타일을 추가/제거할 수 있습니다.
+이 노드에는 추가 속성이 없지만 가젯 노드의 하위 항목은 새 프로젝트를 만들 때 프로젝트의 대시보드를 채우는 프로젝트 타일을 제어합니다. [프로젝트 타일](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects)&#x200B;(가젯 또는 포드라고도 함)은 프로젝트의 작업 공간을 채우는 간단한 카드입니다. ootb 타일의 전체 목록은 아래에서 찾을 수 있습니다 : **/libs/cq/gui/components/projects/admin/pod. **프로젝트가 생성된 후 프로젝트 소유자는 언제든지 타일을 추가/제거할 수 있습니다.
 
 ### 역할 {#roles}
 
@@ -90,7 +90,7 @@ AEM Projects에는 여러 [OOTB 프로젝트 템플릿](https://experienceleague
 
 ## 프로젝트 템플릿 만들기 {#creating-project-template}
 
-노드를 주로 복사/구성하기 때문에 CRXDE Lite을 사용합니다. 로컬 AEM 인스턴스에서 [CRXDE Lite](http://localhost:4502/crx/de/index.jsp)을 엽니다.
+노드를 주로 복사/구성하기 때문에 CRXDE Lite을 사용합니다. 로컬 AEM 인스턴스에서 [CRXDE Lite](http://localhost:4502/crx/de/index.jsp)을(를) 엽니다.
 
 1. `/apps/&lt;your-app-folder&gt;` 아래에 `projects`(이)라는 폴더를 만들어 시작합니다. `templates` 아래에 다른 폴더를 만듭니다.
 
@@ -177,7 +177,7 @@ AEM Projects에는 여러 [OOTB 프로젝트 템플릿](https://experienceleague
    ```
 
 1. 콘텐츠 작성자가 프로젝트 템플릿을 쉽게 식별할 수 있도록 사용자 정의 썸네일을 추가할 수 있습니다. 권장 크기는 319x319픽셀입니다.
-   1. CRXDE Lite에서 **thumbnail.png**(이)라는 가젯, 역할 및 워크플로 노드의 형제 파일로 파일을 만듭니다.
+   1. CRXDE Lite에서 **thumbnail.png**&#x200B;라는 가젯, 역할 및 워크플로 노드의 형제 파일로 파일을 만듭니다.
    1. 저장한 다음 `jcr:content` 노드로 이동하여 `jcr:data` 속성을 두 번 클릭합니다(&#39;보기&#39;를 클릭하지 않음).
       1. `jcr:data` 파일 편집 대화 상자가 표시되면 사용자 지정 미리 보기를 업로드할 수 있습니다.
 
@@ -264,7 +264,7 @@ AEM Projects에는 여러 [OOTB 프로젝트 템플릿](https://experienceleague
 
 ## 왜 워크플로우입니까?
 
-일반적으로 승인 프로세스를 중심으로 하는 AEM 워크플로에서는 참가자 워크플로 단계를 사용했습니다. AEM의 받은 편지함에는 작업 및 워크플로에 대한 세부 정보와 AEM Projects와의 향상된 통합이 포함되어 있습니다. 이러한 기능을 통해 프로젝트 작업 만들기 프로세스 단계를 사용하는 것이 더 매력적인 옵션이 됩니다.
+일반적으로 승인 프로세스를 중심으로 하는 AEM 워크플로는 참가자 워크플로 단계를 사용했습니다. AEM의 받은 편지함에는 작업 및 워크플로에 대한 세부 정보와 AEM 프로젝트와의 향상된 통합이 포함되어 있습니다. 이러한 기능을 통해 프로젝트 작업 만들기 프로세스 단계를 사용하는 것이 더 매력적인 옵션이 됩니다.
 
 ### 작업을 수행하는 이유
 
@@ -322,12 +322,12 @@ AEM Projects에는 여러 [OOTB 프로젝트 템플릿](https://experienceleague
    >
    >AEM 6.4 이상을 사용하는 경우 워크플로 위치가 변경되었습니다. 자세한 내용은 [여기](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/extending-aem/extending-workflows/workflows-best-practices)를 참조하세요.
 
-   AEM 6.4 이상을 사용하는 경우 `/conf/global/settings/workflow/models` 아래에 워크플로 모델이 만들어집니다. /conf 디렉터리를 사용하여 위의 단계를 반복하고 이름이 `aem-guides`인 하위 폴더를 추가한 다음 그 아래로 `content-approval-workflow`을(를) 이동합니다.
+   AEM 6.4 이상을 사용하는 경우 `/conf/global/settings/workflow/models`에 워크플로 모델이 만들어집니다. /conf 디렉터리를 사용하여 위의 단계를 반복하고 이름이 `aem-guides`인 하위 폴더를 추가한 다음 그 아래로 `content-approval-workflow`을(를) 이동합니다.
 
    ![최신 워크플로 정의 위치](./assets/develop-aem-projects/modern-workflow-definition-location.png)
 6.4+의 워크플로 모델 위치
 
-1. 지정된 워크플로우에 워크플로우 단계를 추가하는 기능이 AEM 6.3에 도입되었습니다. 단계는 워크플로우 정보 탭의 받은 편지함에서 사용자에게 표시됩니다. 워크플로우의 현재 단계와 워크플로의 이전 및 이후 단계를 사용자에게 보여 줍니다.
+1. 지정된 워크플로우에 워크플로우 단계를 추가하는 기능은 AEM 6.3에 도입되었습니다. 단계는 워크플로우 정보 탭의 받은 편지함에서 사용자에게 표시됩니다. 워크플로우의 현재 단계와 워크플로의 이전 및 이후 단계를 사용자에게 보여 줍니다.
 
    단계를 구성하려면 Sidekick에서 페이지 속성 대화 상자를 엽니다. 네 번째 탭에는 &quot;단계&quot;라는 레이블이 지정됩니다. 다음 값을 추가하여 이 워크플로우의 세 단계를 구성합니다.
 
@@ -341,7 +341,7 @@ AEM Projects에는 여러 [OOTB 프로젝트 템플릿](https://experienceleague
 
    ![워크플로 진행률 표시줄](./assets/develop-aem-projects/workflow-info-progress.png)
 
-   AEM 받은 편지함에서 볼 수 있는 워크플로 진행률 표시줄.
+   AEM 받은 편지함에서 볼 수 있는 워크플로우 진행률 표시줄.
 
    필요한 경우 사용자가 선택할 때 워크플로 축소판으로 사용되는 페이지 속성에 **이미지**&#x200B;를 업로드할 수 있습니다. 이미지 크기는 319x319픽셀이어야 합니다. 사용자가 워크플로우를 선택하려고 하면 페이지 속성에 **설명**&#x200B;을 추가하는 작업도 표시됩니다.
 
@@ -478,7 +478,7 @@ AEM Projects에는 여러 [OOTB 프로젝트 템플릿](https://experienceleague
        "Send Back for Revision"
    ```
 
-   일반 승인 경로이므로 작업의 우선순위는 Medium으로 설정됩니다. 또한 승인자 그룹에 작업을 완료하는 데 5일이 제공됩니다. 할당자는 고급 설정 탭에서 동적으로 할당되므로 작업 탭에 비어 있습니다. 승인자 그룹에 이 작업을 완료할 때 두 가지 가능한 경로를 제공합니다. **&quot;승인과 Publish&quot;**(콘텐츠를 승인하여 게시할 수 있는 경우) 및 **&quot;수정을 위해 다시 보내기&quot;**(원본 편집기에서 수정해야 하는 문제가 있는 경우). 승인자는 워크플로가 반환되는지 여부를 원래 편집자가 보게 되는 주석을 달 수 있습니다.
+   일반 승인 경로이므로 작업의 우선순위는 Medium으로 설정됩니다. 또한 승인자 그룹에 작업을 완료하는 데 5일이 제공됩니다. 할당자는 고급 설정 탭에서 동적으로 할당되므로 작업 탭에 비어 있습니다. 승인자 그룹에 이 작업을 완료할 때 두 가지 가능한 경로를 제공합니다. **&quot;승인 및 게시&quot;**(콘텐츠를 승인하여 게시할 수 있는 경우) 및 **&quot;수정을 위해 다시 전송&quot;**(원본 편집기에서 수정해야 하는 문제가 있는 경우). 승인자는 워크플로가 반환되는지 여부를 원래 편집자가 보게 되는 주석을 달 수 있습니다.
 
 이 자습서의 앞부분에서 승인자 역할을 포함한 프로젝트 템플릿을 만들었습니다. 이 템플릿에서 새 프로젝트가 생성될 때마다 승인자 역할에 대한 프로젝트별 그룹이 생성됩니다. 참가자 단계와 마찬가지로 작업도 사용자 또는 그룹에게만 할당할 수 있습니다. 승인자 그룹에 해당하는 프로젝트 그룹에 이 작업을 할당하려고 합니다. 프로젝트 내에서 실행되는 모든 워크플로에는 프로젝트 역할을 프로젝트별 그룹에 매핑하는 메타데이터가 있습니다.
 
@@ -539,7 +539,7 @@ task.setCurrentAssignee(projectApproverGrp);
 
 1. 승인자 그룹에는 추가 수정을 위해 워크플로우를 원래 편집기로 다시 보내는 옵션이 있으므로 **이동** 단계를 사용하여 마지막으로 수행한 작업을 읽고 워크플로우를 시작으로 라우팅하거나 워크플로우를 계속하도록 합니다.
 
-   다시 조인하는 OR 분할 아래에 있는 이동 단계 구성 요소(워크플로 아래의 Sidekick에 있음)를 드래그 앤 드롭합니다. 두 번 클릭하고 대화 상자에서 다음 속성을 구성합니다.
+   다시 조인하는 OR 분할 아래에 있는 이동 단계 구성 요소(워크플로우 아래 Sidekick에 있음)를 드래그 앤 드롭합니다. 두 번 클릭하고 대화 상자에서 다음 속성을 구성합니다.
 
    ```
    Common Tab
@@ -735,7 +735,7 @@ task.setCurrentAssignee(projectApproverGrp);
 
    >[!NOTE]
    >
-   >AEM 6.4를 사용하는 경우 워크플로우의 위치가 변경되었습니다. `modelId` 속성을 `/var/workflow/models/aem-guides/content-approval-workflow` 아래의 런타임 워크플로 모델의 위치로 지정합니다.
+   >AEM 6.4를 사용하는 경우 워크플로우 위치가 변경되었습니다. `modelId` 속성을 `/var/workflow/models/aem-guides/content-approval-workflow` 아래의 런타임 워크플로 모델의 위치로 지정합니다.
    >
    >
    >워크플로우 위치 변경에 대한 자세한 내용은 [여기 를 참조하십시오.](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/extending-aem/extending-workflows/workflows-best-practices)

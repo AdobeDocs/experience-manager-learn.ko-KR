@@ -1,7 +1,7 @@
 ---
 title: Webhooks 및 AEM 이벤트
 description: 웹후크에서 AEM 이벤트를 수신하고 페이로드, 헤더 및 메타데이터 등 이벤트 세부 사항을 검토하는 방법에 대해 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Developing, App Builder
 topic: Development, Architecture, Content Management
 role: Architect, Developer
@@ -12,7 +12,7 @@ last-substantial-update: 2023-01-29T00:00:00Z
 jira: KT-14732
 thumbnail: KT-14732.jpeg
 exl-id: 00954d74-c4c7-4dac-8d23-7140c49ae31f
-source-git-commit: efa0a16649c41fab8309786a766483cfeab98867
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '520'
 ht-degree: 0%
@@ -25,20 +25,20 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427051?quality=12&learn=on)
 
-이 예제에서는 Adobe이 제공한 _호스팅된 webhook_&#x200B;을(를) 사용하면 자체 webhook을 설정할 필요 없이 AEM 이벤트를 받을 수 있습니다. 이 Adobe 제공 웹후크는 웹 응용 프로그램을 빌드하고 배포하는 데 도움이 되는 웹 기반 환경을 제공하는 것으로 알려진 플랫폼인 [Glitch](https://glitch.com/)에서 호스팅됩니다. 그러나 원하는 경우 자체 웹후크를 사용하는 옵션도 사용할 수 있습니다.
+이 예에서는 Adobe에서 제공하는 _호스팅된 webhook_&#x200B;을(를) 사용하면 자체 웹후크를 설정할 필요 없이 AEM 이벤트를 받을 수 있습니다. 이 Adobe 제공 웹후크는 웹 응용 프로그램을 빌드하고 배포하는 데 도움이 되는 웹 기반 환경을 제공하는 것으로 알려진 플랫폼인 [Glitch](https://glitch.com/)에서 호스팅됩니다. 그러나 원하는 경우 자체 웹후크를 사용하는 옵션도 사용할 수 있습니다.
 
 ## 사전 요구 사항
 
 이 자습서를 완료하려면 다음이 필요합니다.
 
-- [AEM 이벤트가 활성화됨](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment)인 AEM as a Cloud Service 환경.
+- [AEM 이벤트 사용](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment)이 설정된 AEM as a Cloud Service 환경.
 
 - [AEM 이벤트에 대해 Adobe Developer Console 프로젝트가 구성됨](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#how-to-subscribe-to-aem-events-in-the-adobe-developer-console).
 
 
 ## Webhook 액세스
 
-Adobe이 제공한 웹후크에 액세스하려면 다음 단계를 따르십시오.
+Adobe에서 제공한 웹후크에 액세스하려면 다음 단계를 따르십시오.
 
 - 새 브라우저 탭에서 [결함 - 호스트된 웹후크](https://lovely-ancient-coaster.glitch.me/)에 액세스할 수 있는지 확인하십시오.
 
@@ -68,7 +68,7 @@ Adobe이 제공한 웹후크에 액세스하려면 다음 단계를 따르십시
 
   ![Adobe Developer Console 프로젝트 Webhook](../assets/examples/webhook/adobe-developer-console-project-webhook.png)
 
-- Glitch webbook 페이지에 GET 요청이 표시되어야 하며, 이 요청은 Adobe I/O 이벤트에서 webhook URL을 확인하기 위해 보낸 챌린지 요청입니다.
+- Glitch webbook 페이지에 GET 요청이 표시되어야 하며, 이 요청은 Adobe I/O Events에서 webhook URL을 확인하기 위해 보낸 챌린지 요청입니다.
 
   ![결함 - 요청](../assets/examples/webhook/glitch-challenge-request.png)
 
@@ -83,15 +83,15 @@ Adobe이 제공한 웹후크에 액세스하려면 다음 단계를 따르십시
 
 ## 이벤트 세부 사항 검토
 
-위의 단계를 완료하면 AEM 이벤트가 webhook에 전달되는 것을 볼 수 있습니다. Glitch webhook 페이지에서 POST 요청을 찾습니다.
+위의 단계를 완료하면 AEM 이벤트가 웹후크로 전달되는 것을 볼 수 있습니다. Glitch webhook 페이지에서 POST 요청을 찾습니다.
 
 ![결함 - POST 요청](../assets/examples/webhook/glitch-post-request.png)
 
-다음은 POST 요청에 대한 주요 세부 정보입니다.
+다음은 POST 요청의 주요 세부 정보입니다.
 
 - 경로: `/webhook/${YOUR-WEBHOOK-URL}`(예: `/webhook/AdobeTM-aem-eventing`)
 
-- headers: Adobe I/O 이벤트에서 보낸 요청 헤더(예: )
+- headers: Adobe I/O Events에서 보낸 요청 헤더(예: )
 
 ```json
 {
@@ -117,7 +117,7 @@ Adobe이 제공한 웹후크에 액세스하려면 다음 단계를 따르십시
 }
 ```
 
-- body/payload: Adobe I/O 이벤트에 의해 전송된 요청 본문(예: )
+- body/payload: Adobe I/O Events에서 보낸 요청 본문(예: )
 
 ```json
 {
@@ -151,7 +151,7 @@ Adobe이 제공한 웹후크에 액세스하려면 다음 단계를 따르십시
 }
 ```
 
-AEM 이벤트 세부 사항에 웹후크에서 이벤트를 처리하는 데 필요한 모든 정보가 포함되어 있음을 알 수 있습니다. 예를 들어 이벤트 유형(`type`), 이벤트 소스(`source`), 이벤트 ID(`event_id`), 이벤트 시간(`time`) 및 이벤트 데이터(`data`)가 있습니다.
+AEM 이벤트 세부 사항에 웹후크에서 이벤트를 처리하는 데 필요한 모든 정보가 포함되어 있음을 볼 수 있습니다. 예를 들어 이벤트 유형(`type`), 이벤트 소스(`source`), 이벤트 ID(`event_id`), 이벤트 시간(`time`) 및 이벤트 데이터(`data`)가 있습니다.
 
 ## 추가 리소스
 

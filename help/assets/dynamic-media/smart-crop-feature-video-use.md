@@ -2,7 +2,7 @@
 title: AEM Assets Dynamic Media에서 스마트 자르기 사용
 description: 스마트 자르기는 Adobe Sensei을 사용하여 반응형 디자인을 위한 콘텐츠 자르기에 드는 시간과 비용을 없애줍니다.
 feature: Smart Crop, Image Profiles
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Content Management
 role: User
 level: Beginner
@@ -10,7 +10,7 @@ jira: KT-784
 doc-type: Feature Video
 exl-id: 295bbfb6-241f-41c0-972d-d9688863cea1
 duration: 443
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 0%
@@ -25,9 +25,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->이 비디오에서는 AEM 인스턴스가 Dynamic Media S7 모드에서 실행 중이라고 가정합니다. [Dynamic Media에서 AEM 설정에 대한 지침은 여기에서 확인할 수 있습니다.](https://helpx.adobe.com/kr/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
+>이 비디오에서는 AEM 인스턴스가 Dynamic Media S7 모드에서 실행 중이라고 가정합니다. [Dynamic Media를 사용하여 AEM을 설정하는 방법에 대한 지침은 여기에서 확인할 수 있습니다.](https://helpx.adobe.com/kr/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
 
-## Adobe Experience Manager의 Dynamic Media 스마트 자르기 기능은 다음을 포함합니다
+## Adobe Experience Manager의 Dynamic Media 스마트 자르기 기능에는 다음이 포함됩니다
 
 * AEM Asset 관리자는 장치 너비와 높이를 기반으로 스마트 자르기에 대한 이미지 프로필을 쉽게 만들 수 있습니다.
 * 개별 에셋에 대해 스마트 자르기를 수행하거나 폴더 내의 모든 에셋에 대해 스마트 자르기를 수행할 수 있습니다.

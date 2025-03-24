@@ -2,7 +2,7 @@
 title: 콘텐츠 조각 콘솔의 사용자 지정 그리드 열
 description: 사용자 지정 그리드 열을 콘텐츠 조각 콘솔에 추가하는 방법에 대해 알아봅니다.
 feature: Developer Tools, Content Fragments
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Beginner
@@ -12,7 +12,7 @@ doc-type: article
 last-substantial-update: 2023-06-07T00:00:00Z
 exl-id: 87143cf9-e932-4ad6-afe2-cce093c520f4
 duration: 198
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 index.html 경로에 매핑된 `ExtensionRegistration.js`은(는) AEM 확장의 진입점이며 다음을 정의합니다.
 
-+ 확장 위치는 AEM 작성 환경에 자동으로(`contentFragmentGrid`) 삽입됩니다
++ 확장 위치는 AEM 작성 환경에서 자체(`contentFragmentGrid`)를 주입합니다
 + `getColumns()` 함수의 사용자 지정 열 정의
 + 행별 각 사용자 정의 열에 대한 값
 
@@ -210,7 +210,7 @@ render: async function (fragments) {
 >
 > AEM 작성자 인스턴스가 AppBuilder 앱이 실행 중인 원본에서 [원본 간 요청](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html)을 허용하도록 구성되어 있는지 확인하십시오. 허용되는 원본에는 `https://localhost:9080`, AppBuilder Stage 원본 및 AppBuilder 프로덕션 원본이 포함됩니다.
 >
-> 또는 확장을 대신하여 AEM 작성자에게 요청을 하는 사용자 지정 [AppBuilder 작업](../../runtime-action.md)을 호출할 수 있습니다.
+> 또는 확장 프로그램이 확장 프로그램을 대신하여 AEM 작성자에게 요청하는 사용자 지정 [AppBuilder 작업](../../runtime-action.md)을 호출할 수 있습니다.
 
 
 ```javascript

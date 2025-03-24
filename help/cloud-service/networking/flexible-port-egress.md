@@ -1,7 +1,7 @@
 ---
 title: 유연한 포트 전송
 description: 유연한 포트 이그레스를 설정하고 사용하여 AEM as a Cloud Service에서 외부 서비스로의 외부 연결을 지원하는 방법에 대해 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Security
 role: Architect, Developer
@@ -11,7 +11,7 @@ thumbnail: KT-9350.jpeg
 exl-id: 5c1ff98f-d1f6-42ac-a5d5-676a54ef683c
 last-substantial-update: 2024-04-26T00:00:00Z
 duration: 870
-source-git-commit: 29ac030f3774da2c514525f7cb85f6f48b84369f
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1275'
 ht-degree: 2%
@@ -24,7 +24,7 @@ ht-degree: 2%
 
 ## 유연한 포트 이그레스란 무엇입니까?
 
-유연한 포트 이그레스에서는 사용자 지정 특정 포트 전달 규칙을 AEM as a Cloud Service에 연결하여 AEM에서 외부 서비스에 연결할 수 있습니다.
+유연한 포트 이그레스에서는 사용자 지정 특정 포트 전달 규칙을 AEM as a Cloud Service에 첨부할 수 있으므로 AEM에서 외부 서비스에 연결할 수 있습니다.
 
 Cloud Manager 프로그램에는 __single__ 네트워크 인프라 유형만 있을 수 있습니다. 다음 명령을 실행하기 전에 유연한 포트 이그레스가 AEM as a Cloud Service에 가장 [적합한 네트워크 인프라 유형](./advanced-networking.md)인지 확인하십시오.
 
@@ -207,9 +207,9 @@ Cloud Manager API를 사용하여 유연한 포트 이그레스를 활성화할 
 
 ### 비표준 포트에서의 HTTP/HTTPS
 
-AEM에서 비표준 포트(80/443이 아닌 포트)에 대한 HTTP/HTTPS 연결을 만드는 경우 자리 표시자를 통해 제공되는 특수 호스트 및 포트를 통해 연결을 만들어야 합니다.
+AEM에서 비표준 포트(80/443이 아님)에 대한 HTTP/HTTPS 연결을 만드는 경우 자리 표시자를 통해 제공되는 특수 호스트 및 포트를 통해 연결해야 합니다.
 
-AEM은 AEM의 HTTP/HTTPS 프록시에 매핑되는 두 세트의 특수 Java™ 시스템 변수를 제공합니다.
+AEM은 AEM의 HTTP/HTTPS 프록시에 매핑되는 두 세트의 특별한 Java™ 시스템 변수를 제공합니다.
 
 | 변수 이름 | 사용 | Java™ 코드 | OSGi 구성 |
 | - |  - | - | - |
@@ -241,14 +241,14 @@ AEM은 AEM의 HTTP/HTTPS 프록시에 매핑되는 두 세트의 특수 Java™ 
 
 ### 외부 서비스에 대한 비 HTTP/HTTPS 연결
 
-비HTTP/HTTPS 연결을 만드는 경우(예: SQL, SMTP 등) AEM에서 AEM이 제공하는 특수 호스트 이름을 통해 연결해야 합니다.
+비HTTP/HTTPS 연결을 만드는 경우(예: SQL, SMTP 등). AEM에서 연결은 AEM에서 제공하는 특수 호스트 이름을 통해 이루어져야 합니다.
 
 | 변수 이름 | 사용 | Java™ 코드 | OSGi 구성 |
 | - |  - | - | - |
 | `AEM_PROXY_HOST` | 비 HTTP/HTTPS 연결용 프록시 호스트 | `System.getenv().getOrDefault("AEM_PROXY_HOST", "proxy.tunnel")` | `$[env:AEM_PROXY_HOST;default=proxy.tunnel]` |
 
 
-외부 서비스에 대한 연결은 `AEM_PROXY_HOST`과(와) 매핑된 포트(`portForwards.portOrig`)를 통해 호출됩니다. 그런 다음 AEM은 매핑된 외부 호스트 이름(`portForwards.name`)과(와) 포트(`portForwards.portDest`)로 라우팅합니다.
+외부 서비스에 대한 연결은 `AEM_PROXY_HOST` 및 매핑된 포트(`portForwards.portOrig`)를 통해 호출되며, AEM은 매핑된 외부 호스트 이름(`portForwards.name`) 및 포트(`portForwards.portDest`)로 라우팅됩니다.
 
 | 프록시 호스트 | 프록시 포트 |  | 외부 호스트 | 외부 포트 |
 |---------------------------------|----------|----------------|------------------|----------|

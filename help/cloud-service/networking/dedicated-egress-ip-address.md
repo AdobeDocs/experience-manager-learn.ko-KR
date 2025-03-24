@@ -1,7 +1,7 @@
 ---
 title: 전용 송신 IP 주소
 description: AEM의 아웃바운드 연결이 전용 IP에서 시작되도록 허용하는 전용 이그레스 IP 주소를 설정하고 사용하는 방법에 대해 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Security
 role: Architect, Developer
@@ -11,7 +11,7 @@ thumbnail: KT-9351.jpeg
 exl-id: 311cd70f-60d5-4c1d-9dc0-4dcd51cad9c7
 last-substantial-update: 2024-04-26T00:00:00Z
 duration: 891
-source-git-commit: 29ac030f3774da2c514525f7cb85f6f48b84369f
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1360'
 ht-degree: 1%
@@ -174,7 +174,7 @@ Cloud Manager API를 사용하여 전용 이그레스 IP 주소를 활성화할 
 
    전용 이그레스 IP 주소 구성의 HTTP 시그니처는 선택적 `nonProxyHosts` 구성도 지원한다는 점에서 [유연한 이그레스 포트](./flexible-port-egress.md#enable-dedicated-egress-ip-address-per-environment)와 다릅니다.
 
-   `nonProxyHosts`은(는) 포트 80 또는 443이 전용 이그레스 IP가 아닌 기본 공유 IP 주소 범위를 통해 라우팅되어야 하는 호스트 집합을 선언합니다. `nonProxyHosts`은(는) 공유 IP를 통해 이그레스되는 트래픽이 Adobe에 의해 자동으로 최적화되므로 유용할 수 있습니다.
+   `nonProxyHosts`은(는) 포트 80 또는 443이 전용 이그레스 IP가 아닌 기본 공유 IP 주소 범위를 통해 라우팅되어야 하는 호스트 집합을 선언합니다. 공유 IP를 통해 이그레스되는 트래픽이 Adobe에서 자동으로 최적화되므로 `nonProxyHosts`이(가) 유용할 수 있습니다.
 
    각 `portForwards` 매핑에 대해 고급 네트워킹은 다음 전달 규칙을 정의합니다.
 
@@ -246,14 +246,14 @@ AEM에서 HTTP/HTTPS 연결을 만들 때 전용 이그레스 IP 주소를 사�
 
 ### 외부 서비스에 대한 비 HTTP/HTTPS 연결
 
-비HTTP/HTTPS 연결을 만드는 경우(예: SQL, SMTP 등) AEM에서 AEM이 제공하는 특수 호스트 이름을 통해 연결해야 합니다.
+비HTTP/HTTPS 연결을 만드는 경우(예: SQL, SMTP 등). AEM에서 연결은 AEM에서 제공하는 특수 호스트 이름을 통해 이루어져야 합니다.
 
 | 변수 이름 | 사용 | Java™ 코드 | OSGi 구성 |
 | - |  - | - | - |
 | `AEM_PROXY_HOST` | 비 HTTP/HTTPS 연결용 프록시 호스트 | `System.getenv("AEM_PROXY_HOST")` | `$[env:AEM_PROXY_HOST]` |
 
 
-외부 서비스에 대한 연결은 `AEM_PROXY_HOST`과(와) 매핑된 포트(`portForwards.portOrig`)를 통해 호출됩니다. 그런 다음 AEM은 매핑된 외부 호스트 이름(`portForwards.name`)과(와) 포트(`portForwards.portDest`)로 라우팅합니다.
+외부 서비스에 대한 연결은 `AEM_PROXY_HOST` 및 매핑된 포트(`portForwards.portOrig`)를 통해 호출되며, AEM은 매핑된 외부 호스트 이름(`portForwards.name`) 및 포트(`portForwards.portDest`)로 라우팅됩니다.
 
 | 프록시 호스트 | 프록시 포트 |  | 외부 호스트 | 외부 포트 |
 |---------------------------------|----------|----------------|------------------|----------|

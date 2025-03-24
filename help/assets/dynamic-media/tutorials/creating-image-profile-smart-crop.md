@@ -1,7 +1,7 @@
 ---
 title: AEM Dynamic Media에서 스마트 자르기 이미지 프로필 만들기
 description: Dynamic Media에서 스마트 자르기 구성
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 role: Developer
 level: Intermediate
 feature: Smart Crop
@@ -9,7 +9,7 @@ topic: Development
 doc-type: Tutorial
 exl-id: 117e4ba4-2d60-40a6-b267-c2e1d99df808
 duration: 152
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '41'
 ht-degree: 0%

@@ -1,7 +1,7 @@
 ---
 title: AEM Headless로 서식 있는 텍스트 사용
-description: Adobe Experience Manager 컨텐츠 조각이 포함된 여러 줄 서식 있는 텍스트 편집기를 사용하여 컨텐츠를 작성하고 참조된 컨텐츠를 임베드하는 방법과 AEM의 GraphQL API에서 Headless 애플리케이션에서 사용할 수 있도록 서식 있는 텍스트를 JSON으로 제공하는 방법에 대해 알아봅니다.
-version: Cloud Service
+description: Adobe Experience Manager 컨텐츠 조각이 포함된 여러 줄 서식 있는 텍스트 편집기를 사용하여 컨텐츠를 작성하고 참조된 컨텐츠를 임베드하는 방법과 AEM의 GraphQL API에서 Headless 애플리케이션에서 사용할 JSON으로 서식 있는 텍스트가 제공되는 방법에 대해 알아봅니다.
+version: Experience Manager as a Cloud Service
 doc-type: article
 jira: KT-9985
 feature: Content Fragments, GraphQL API
@@ -10,7 +10,7 @@ level: Intermediate
 role: Developer
 exl-id: 790a33a9-b4f4-4568-8dfe-7e473a5b68b6
 duration: 785
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1409'
 ht-degree: 0%
@@ -63,7 +63,7 @@ AEM의 GraphQL API는 서식 있는 텍스트를 HTML, 일반 텍스트 또는 �
 
 GraphQL 쿼리를 만들 때 개발자는 여러 줄 필드에서 `html`, `plaintext`, `markdown` 및 `json`의 다른 응답 형식을 선택할 수 있습니다.
 
-개발자는 콘텐츠 조각 편집기에서 [JSON 미리 보기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=ko-KR)를 사용하여 GraphQL API를 사용하여 반환할 수 있는 현재 콘텐츠 조각의 모든 값을 표시할 수 있습니다.
+개발자는 콘텐츠 조각 편집기에서 [JSON 미리 보기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html)를 사용하여 GraphQL API를 사용하여 반환할 수 있는 현재 콘텐츠 조각의 모든 값을 표시할 수 있습니다.
 
 ## GraphQL 지속 쿼리
 
@@ -351,7 +351,7 @@ const nodeMap = {
 
 ![콘텐츠 조각 참조 삽입](assets/rich-text/insert-contentfragment.png)
 
-위의 스크린샷은 여러 줄 필드에 삽입되는 또 다른 콘텐츠 조각인 LA Skate Parks에 대한 Ultimate Guide를 보여 줍니다. 필드에 삽입할 수 있는 콘텐츠 조각 유형은 콘텐츠 조각 모델의 [여러 줄 데이터 형식](#multi-line-data-type)에서 **허용된 콘텐츠 조각 모델** 구성에 의해 제어됩니다.
+위의 스크린샷은 여러 줄 필드에 삽입되는 다른 콘텐츠 조각인 LA Skate Parks에 대한 Ultimate 안내서를 보여 줍니다. 필드에 삽입할 수 있는 콘텐츠 조각 유형은 콘텐츠 조각 모델의 [여러 줄 데이터 형식](#multi-line-data-type)에서 **허용된 콘텐츠 조각 모델** 구성에 의해 제어됩니다.
 
 ## GraphQL을 사용하여 인라인 참조 쿼리
 
@@ -360,7 +360,7 @@ GraphQL API를 사용하면 개발자가 여러 줄 필드에 삽입된 모든 �
 예를 들어 다음과 같은 작업을 수행할 수 있습니다.
 
 * React Router 또는 Next.js를 사용하는 것과 같은 단일 페이지 애플리케이션을 구현할 때 다른 콘텐츠 조각에 대한 링크를 관리하기 위한 사용자 지정 라우팅 논리를 포함합니다
-* AEM Publish 환경에 대한 절대 경로를 `src` 값으로 사용하여 인라인 이미지를 렌더링합니다.
+* AEM 게시 환경에 대한 절대 경로를 `src` 값으로 사용하여 인라인 이미지를 렌더링합니다.
 * 추가적인 사용자 지정 속성을 사용하여 다른 콘텐츠 조각에 대한 임베드된 참조를 렌더링하는 방법을 결정합니다.
 
 GraphQL 쿼리를 구성할 때 `json` 반환 형식을 사용하고 `_references` 개체를 포함하십시오.
@@ -545,4 +545,4 @@ const renderReference = {
 1. 조각 참조를 허용하도록 콘텐츠 조각 모델의 다중 라인 텍스트 필드 업데이트
 2. 콘텐츠 조각 편집기를 사용하여 여러 줄 텍스트 필드에 이미지를 포함하고 다른 조각을 참조합니다.
 3. 여러 줄 텍스트 응답을 JSON으로 포함하는 GraphQL 쿼리와 사용된 `_references`을(를) 만드는 중입니다.
-4. 리치 텍스트 응답의 인라인 참조를 렌더링하는 React SPA 작성.
+4. 리치 텍스트 응답의 인라인 참조를 렌더링하는 React SPA 작성

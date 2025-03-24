@@ -2,14 +2,14 @@
 title: 시작 키트 만들기
 description: 제출된 양식 데이터를 기반으로 에셋을 다운로드할 수 있는 링크가 있는 AEM 사이트 페이지를 만듭니다.
 feature: Adaptive Forms
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 last-substantial-update: 2022-12-14T00:00:00Z
 exl-id: 7aba25d1-0d4d-4c49-8132-f844a288e8f3
 duration: 19
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 0%

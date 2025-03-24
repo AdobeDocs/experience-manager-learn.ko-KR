@@ -1,8 +1,8 @@
 ---
 title: CRXDE Lite
-description: CRXDE Lite은 AEM as a Cloud Service 개발자 환경을 디버깅하기 위한 고전적이면서도 강력한 도구입니다. CRXDE Lite은 디버깅이 모든 리소스 및 속성을 검사하고, JCR의 변경 가능한 부분을 조작하고 권한을 조사하는 것을 돕는 기능 제품군을 제공합니다.
+description: CRXDE Lite은 AEM as a Cloud Service 개발자 환경을 디버깅하기 위한 고전적이면서도 강력한 도구입니다. CRXDE Lite은 모든 리소스 및 속성을 검사하고, JCR의 변경 가능한 부분을 조작하고 권한을 조사하는 디버깅을 지원하는 기능의 제품군을 제공합니다.
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: Tutorial
 kt: KT-5481
 thumbnail: kt-5481.jpg
@@ -11,7 +11,7 @@ role: Developer
 level: Beginner
 exl-id: f3f2c89f-6ec1-49d3-91c7-10a42b897780
 duration: 125
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '613'
 ht-degree: 0%
@@ -20,18 +20,18 @@ ht-degree: 0%
 
 # CRXDE Lite을 사용하여 AEM as a Cloud Service 디버깅
 
-CRXDE Lite은 AEM as a Cloud Service 개발 환경(및 로컬 AEM SDK)에서 __전용__&#x200B;입니다.
+CRXDE Lite은 로컬 AEM SDK과 AEM as a Cloud Service 개발 환경에서만 __사용할 수 있습니다__.
 
-## AEM Author의 CRXDE Lite 액세스
+## AEM 작성자의 CRXDE Lite 액세스
 
 CRXDE Lite은 AEM as a Cloud Service 개발 환경에서 __only__&#x200B;에 액세스할 수 있으며 스테이지 또는 프로덕션 환경에서는 __not__&#x200B;입니다.
 
 AEM 작성자의 CRXDE Lite에 액세스하려면:
 
 1. AEM as a Cloud Service AEM Author 서비스에 로그인합니다.
-1. 도구 > 일반 > CRXDE Lite 로 이동합니다.
+1. 도구 > 일반 > CRXDE Lite으로 이동합니다.
 
-이렇게 하면 AEM 작성자에 로그인하는 데 사용되는 자격 증명 및 권한을 사용하여 CRXDE Lite이 열립니다.
+이렇게 하면 CRXDE Lite 작성자에 로그인하는 데 사용되는 자격 증명 및 권한을 사용하여 AEM이 열립니다.
 
 ## 콘텐츠 디버깅
 
@@ -47,8 +47,8 @@ CRXDE Lite은 JCR에 직접 액세스할 수 있습니다. CRXDE Lite을 통해 
 
 ![CRXDE Lite - 콘텐츠 디버깅](./assets/crxde-lite/debugging-content.png)
 
-CRXDE Lite을 통해 AEM as a Cloud Service 개발 환경에서 런타임 시 변경 가능한 콘텐츠를 변경하는 것은 신중해야 합니다.
-CRXDE Lite을 통해 AEM에 직접 수행된 모든 변경 사항은 추적하고 제어하는 것이 어려울 수 있습니다. 적절하게, CRXDE Lite을 통해 변경한 사항이 AEM 프로젝트의 변경 가능한 콘텐츠 패키지(`ui.content`)로 돌아가서 Git에 커밋되어 문제가 해결되었는지 확인합니다. 모든 애플리케이션 콘텐츠 변경 사항은 CRXDE Lite을 통해 AEM에 직접 변경하는 것이 아니라 코드 기반에서 시작하여 배포를 통해 AEM으로 유입되는 것이 이상적입니다.
+CRXDE Lite을 통해 AEM as a Cloud Service 개발 환경에서 런타임 시 변경 가능한 콘텐츠를 변경하는 것은 신중하게 수행해야 합니다.
+CRXDE Lite을 통해 AEM에 직접 변경한 사항은 추적하고 제어하는 것이 어려울 수 있습니다. 적절하게, 문제가 해결될 수 있도록 CRXDE Lite을 통해 변경한 사항이 AEM 프로젝트의 변경 가능한 콘텐츠 패키지(`ui.content`)로 돌아가 Git에 커밋되는지 확인합니다. 모든 애플리케이션 컨텐츠 변경 사항은 CRXDE Lite을 통해 AEM에 직접 변경하는 것이 아니라 코드베이스에서 비롯되어 배포를 통해 AEM으로 유입되는 것이 이상적입니다.
 
 ### 액세스 제어 디버깅
 
@@ -74,10 +74,10 @@ CRXDE Lite의 Test Access Control 콘솔에 액세스하려면 다음으로 이�
 
 ### 지원되지 않는 디버깅 활동
 
-다음은 CRXDE Lite 시 __수행할 수 없는__&#x200B;디버깅 작업입니다.
+다음은 CRXDE Lite에서 __수행할 수 없는__&#x200B;디버깅 활동입니다.
 
 ### OSGi 구성 디버깅
 
-배포된 OSGi 구성은 CRXDE Lite을 통해 검토할 수 없습니다. OSGi 구성은 `/apps/example/config.xxx`에 있는 AEM 프로젝트의 `ui.apps` 코드 패키지에서 유지되지만, AEM as a Cloud Service 환경에 배포하면 OSGi 구성 리소스가 JCR로 유지되지 않으므로 CRXDE Lite을 통해 표시되지 않습니다.
+배포된 OSGi 구성은 CRXDE Lite을 통해 검토할 수 없습니다. OSGi 구성은 `/apps/example/config.xxx`의 AEM 프로젝트 `ui.apps` 코드 패키지에서 유지되지만, AEM as a Cloud Service 환경에 배포하면 OSGi 구성 리소스가 JCR로 유지되지 않으므로 CRXDE Lite을 통해 표시되지 않습니다.
 
 대신 [Developer Console > 구성](./developer-console.md#configurations)을 사용하여 배포된 OSGi 구성을 검토하십시오.

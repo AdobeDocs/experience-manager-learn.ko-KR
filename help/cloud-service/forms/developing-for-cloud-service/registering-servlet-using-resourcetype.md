@@ -5,13 +5,13 @@ solution: Experience Manager
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: Developer Tools
 jira: KT-14581
 duration: 90
 exl-id: 2a33a9a9-1eef-425d-aec5-465030ee9b74
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 2%
@@ -24,7 +24,7 @@ ht-degree: 2%
 
 * 경로 바인딩 서블릿은 기본 JCR 저장소 ACL을 사용하여 액세스를 제어할 수 없습니다
 * 경로 바인딩 서블릿은 경로에만 등록할 수 있으며 리소스 유형은 등록할 수 없습니다(즉, 접미사 처리 없음)
-* 경로 바인딩 서블릿이 활성화되지 않은 경우(예: 번들이 누락되었거나 시작되지 않은 경우) POST으로 인해 예기치 않은 결과가 발생할 수 있습니다. 일반적으로 `/bin/xyz`에 노드를 만들어 서블릿 경로 바인딩을 오버레이합니다.
+* 경로 바인딩 서블릿이 활성화되지 않은 경우(예: 번들이 누락되었거나 시작되지 않은 경우, POST가 예상치 못한 결과를 초래할 수 있음) 일반적으로 `/bin/xyz`에 노드를 만들어 서블릿 경로 바인딩을 오버레이합니다.
 이 매핑은 저장소만 보는 개발자에게 투명하지 않습니다
 이러한 단점을 고려할 때 서블릿을 경로가 아닌 리소스 유형에 바인딩하는 것이 좋습니다
 
@@ -107,7 +107,7 @@ http://localhost:4502/content/fetchchoices/jcr:content.json?formPath=/content/fo
 
 ## AEM 프로젝트 동기화
 
-1. 즐겨찾는 편집기에서 AEM 프로젝트를 엽니다. 여기에 intelliJ를 사용했습니다.
+1. 즐겨 찾는 편집기에서 AEM 프로젝트를 엽니다. 여기에 intelliJ를 사용했습니다.
 1. `\aem-banking-application\ui.content\src\main\content\jcr_root\content` 아래에 `fetchchoices` 폴더 만들기
 1. `fetchchoices` 폴더를 마우스 오른쪽 단추로 클릭하고 `repo | Get Command`을(를) 선택합니다. 이 메뉴 항목은 이 자습서의 이전 장에서 설정됩니다.
 

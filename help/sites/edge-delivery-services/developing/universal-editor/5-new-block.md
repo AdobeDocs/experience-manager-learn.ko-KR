@@ -1,7 +1,7 @@
 ---
 title: 블록 만들기
 description: 범용 편집기로 편집할 수 있는 Edge Delivery Services 웹 사이트용 블록을 빌드합니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Development
 role: Developer
@@ -10,7 +10,7 @@ doc-type: Tutorial
 jira: KT-15832
 duration: 900
 exl-id: 9698c17a-0ac8-426d-bccb-729b048cabd1
-source-git-commit: 2722a4d4a34172e2f418f571f9de3872872e682a
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1767'
 ht-degree: 0%
@@ -101,7 +101,7 @@ $ git checkout -b teaser origin/main
 
 | JSON 속성 | 설명 |
 |---------------|-----------------------------------------------------------------------------------------------------------------------|
-| `component` | [필드 형식](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/field-types#component-types)(예: `text`, `reference` 또는 `aem-content`). |
+| `component` | [필드 형식](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/field-types#component-types)&#x200B;(예: `text`, `reference` 또는 `aem-content`). |
 | `name` | 값이 AEM에 저장되는 JCR 속성에 매핑되는 필드의 이름입니다. |
 | `label` | 범용 편집기에서 작성자에게 표시되는 레이블입니다. |
 

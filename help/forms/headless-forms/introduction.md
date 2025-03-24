@@ -1,15 +1,15 @@
 ---
-title: SPA에서 headless 적응형 양식 사용
+title: SPA에서 Headless 적응형 양식 사용
 description: SPA에서 Headless 연락처 양식 구현
 feature: Adaptive Forms
-version: 6.5
+version: Experience Manager 6.5
 jira: KT-13285
 topic: Development
 role: User
 level: Intermediate
 exl-id: 7b457ce8-f11a-4e2b-8548-6ac3910cb61e
 duration: 24
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '124'
 ht-degree: 2%
@@ -24,7 +24,7 @@ ht-degree: 2%
 
 이 문서에서는 기존 단일 페이지 앱이 SPA 웹 사이트에 Headless 적응형 양식을 나열하고 표시하려고 한다고 가정합니다.
 
-다음 스크린샷은 contact us 양식이 SPA에 임베드되는 것을 보여 줍니다
+다음 스크린샷은 SPA에 포함된 연락처 양식을 보여 줍니다
 
 ![contact-us-form](./assets/contact-us-form.png)
 

@@ -1,7 +1,7 @@
 ---
 title: 콘텐츠 모델링 - AEM Headless 첫 번째 튜토리얼
-description: AEM에서 컨텐츠 조각을 활용하고, 조각 모델을 만들고, GraphQL 엔드포인트를 사용하는 방법에 대해 알아봅니다.
-version: Cloud Service
+description: AEM에서 컨텐츠 조각, 조각 모델 만들기 및 GraphQL 엔드포인트를 사용하는 방법을 알아봅니다.
+version: Experience Manager as a Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Development
 role: Developer
@@ -12,7 +12,7 @@ jira: KT-13270
 thumbnail: KT-13270.jpeg
 exl-id: 6e5e3cb4-9a47-42af-86af-da33fd80cb47
 duration: 175
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '785'
 ht-degree: 9%
@@ -21,17 +21,17 @@ ht-degree: 9%
 
 # 콘텐츠 모델링
 
-Adobe Experience Manager(AEM)의 콘텐츠 조각 및 GraphQL 종단점에 대한 자습서 챕터를 시작합니다. 콘텐츠 조각 활용, 조각 모델 생성 및 AEM의 GraphQL 엔드포인트 사용에 대해 설명합니다.
+Adobe Experience Manager(AEM)의 콘텐츠 조각 및 GraphQL 종단점에 대한 자습서 챕터를 시작합니다. 콘텐츠 조각 활용, 조각 모델 생성 및 AEM에서의 GraphQL 엔드포인트 사용에 대해 설명합니다.
 
 콘텐츠 조각 은 채널 전반의 콘텐츠를 관리하는 구조화된 접근 방식을 제공하여 유연성과 재사용성을 제공합니다. AEM에서 컨텐츠 조각을 활성화하면 모듈식 컨텐츠를 만들 수 있으므로 일관성과 적응성을 높일 수 있습니다.
 
-먼저 AEM에서 컨텐츠 조각을 활성화하는 방법을 안내하고, 원활한 통합을 위해 필요한 구성 및 설정을 설명합니다.
+먼저 AEM에서 컨텐츠 조각을 활성화하는 방법을 안내하고, 원활한 통합을 위해 필요한 구성 및 설정을 다룹니다.
 
 다음으로 구조 및 속성을 정의하는 조각 모델 생성을 다룹니다. 콘텐츠 요구 사항에 맞게 모델을 설계하고 효과적으로 관리하는 방법에 대해 알아봅니다.
 
 그런 다음 모델에서 콘텐츠 조각을 만드는 방법을 보여 주고 작성 및 게시에 대한 단계별 지침을 제공합니다.
 
-또한 AEM GraphQL 종단점 정의에 대해 알아보겠습니다. GraphQL은 AEM에서 데이터를 효율적으로 검색하고 원하는 데이터를 노출하도록 끝점을 설정하고 구성합니다. 지속 쿼리는 성능 및 캐싱을 최적화합니다.
+또한 AEM GraphQL 엔드포인트를 정의하는 방법을 살펴봅니다. GraphQL은 AEM에서 데이터를 효율적으로 검색하며, 원하는 데이터를 노출하도록 엔드포인트를 설정하고 구성합니다. 지속 쿼리는 성능 및 캐싱을 최적화합니다.
 
 자습서 전체에서 설명, 코드 예제 및 실용적인 팁을 제공합니다. 결국 콘텐츠 조각을 활성화하고, 조각 모델을 생성하고, 조각을 생성하고, AEM GraphQL 끝점 및 지속 쿼리를 정의하는 기술을 갖게 됩니다. 시작해 보겠습니다!
 
@@ -111,7 +111,7 @@ Adobe Experience Manager(AEM)의 콘텐츠 조각 및 GraphQL 종단점에 대�
 
 1. __만들기__&#x200B;를 클릭하고 새 끝점에 이름을 지정한 다음 새로 만든 구성을 선택합니다.
 
-   ![AEM Headless GraphQL 끝점](./assets/1/endpoint.png)
+   ![AEM 헤드리스 GraphQL 끝점](./assets/1/endpoint.png)
 
 ## GraphQL 지속 쿼리
 
@@ -193,6 +193,6 @@ Adobe Experience Manager(AEM)의 콘텐츠 조각 및 GraphQL 종단점에 대�
 
 ## 다음 단계
 
-축하합니다! 콘텐츠 조각 및 GraphQL 종단점을 만들 수 있도록 AEM as a Cloud Service을 구성했습니다. 또한 콘텐츠 조각 모델 및 콘텐츠 조각을 만들고 GraphQL 엔드포인트 및 지속 쿼리를 정의했습니다. 이제 다음 튜토리얼 장으로 이동하여 이 장에서 만든 콘텐츠 조각 및 GraphQL 엔드포인트를 사용하는 AEM Headless React 애플리케이션을 만드는 방법을 배울 준비가 되었습니다.
+축하합니다! 콘텐츠 조각 및 GraphQL 종단점을 만들 수 있도록 AEM as a Cloud Service을 구성했습니다. 또한 콘텐츠 조각 모델 및 콘텐츠 조각을 만들고 GraphQL 엔드포인트 및 지속 쿼리를 정의했습니다. 이제 다음 튜토리얼 장으로 이동하여 이 장에서 만든 콘텐츠 조각 및 GraphQL 끝점을 사용하는 AEM Headless React 애플리케이션을 만드는 방법을 배울 준비가 되었습니다.
 
 [다음 장: AEM Headless API 및 반응](./2-aem-headless-apis-and-react.md)

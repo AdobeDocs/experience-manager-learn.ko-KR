@@ -2,7 +2,7 @@
 title: AEM UI 확장성
 description: App Builder을 사용하여 확장을 만드는 AEM UI 확장성에 대해 알아봅니다.
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Beginner
@@ -10,7 +10,7 @@ recommendations: noDisplay
 last-substantial-update: 2023-06-02T00:00:00Z
 exl-id: 73f5d90d-e007-41a0-9bb3-b8f36a9b1547
 duration: 50
-source-git-commit: 12d7f8f0afc1c19f289c847771cb9f4f965c650c
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '275'
 ht-degree: 15%
@@ -19,7 +19,7 @@ ht-degree: 15%
 
 # AEM UI 확장성 {#aem-ui-extensibility}
 
-Adobe Experience Manager(AEM)은 디지털 경험을 만들기 위한 강력한 UI(사용자 인터페이스)를 제공합니다. UI를 사용자 정의하고 확장하기 위해 Adobe에서 App Builder을 도입했습니다. 이 도구를 사용하는 개발자는 JavaScript 및 React를 사용하여 복잡한 코딩 없이 사용자 경험을 향상시킬 수 있습니다.
+Adobe Experience Manager(AEM)는 디지털 경험을 만들기 위한 강력한 UI(사용자 인터페이스)를 제공합니다. Adobe에서는 UI를 사용자 정의하고 확장하기 위해 App Builder을 도입했습니다. 이 도구를 사용하는 개발자는 JavaScript 및 React를 사용하여 복잡한 코딩 없이 사용자 경험을 향상시킬 수 있습니다.
 
 App Builder은 AEM에서 확장 지점을 잘 정의하도록 바인딩된 확장을 만들 수 있는 구현 레이어를 제공합니다. App Builder은 AEM과 원활하게 통합되어 실시간 미리보기 및 테스트를 허용합니다. AEM에 변경 사항을 빠르고 간편하게 배포할 수 있습니다. 개발자는 App Builder을 사용하여 시간과 노력을 절약함으로써 신속한 프로토타이핑과 관련자와의 협업을 가능하게 합니다.
 
@@ -32,7 +32,7 @@ App Builder은 AEM에서 확장 지점을 잘 정의하도록 바인딩된 확�
 
 AEM의 다양한 UI에는 다른 확장 지점이 있지만 기본 개념은 동일합니다.
 
-아래에 연결된 비디오 및 연습에서는 다양한 활동을 보여주기 위해 콘텐츠 조각 콘솔 확장 의 사용을 보여 줍니다. 그러나 위에서 설명한 개념은 모든 AEM UI 확장에 적용할 수 있습니다.
+아래에 연결된 비디오 및 연습에서는 다양한 활동을 보여주기 위해 콘텐츠 조각 콘솔 확장 의 사용을 보여 줍니다. 그러나 다루는 개념은 모든 AEM UI 확장에 적용할 수 있습니다.
 
 1. [Adobe Developer Console 프로젝트 만들기](./adobe-developer-console-project.md)
 1. [확장 초기화](./app-initialization.md)

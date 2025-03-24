@@ -1,7 +1,7 @@
 ---
 title: AEM Headless SDK 사용
-description: AEM Headless SDK를 사용하여 GraphQL 쿼리를 만드는 방법에 대해 알아봅니다.
-version: Cloud Service
+description: AEM Headless SDK을 사용하여 GraphQL 쿼리를 만드는 방법에 대해 알아봅니다.
+version: Experience Manager as a Cloud Service
 topic: Headless
 feature: GraphQL API
 role: Developer
@@ -10,18 +10,18 @@ jira: KT-10269
 thumbnail: KT-10269.jpeg
 exl-id: 922a464a-2286-4132-9af8-f5a1fb5ce268
 duration: 200
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 6%
 
 ---
 
-# AEM Headless SDK
+# AEM 헤드리스 SDK
 
-AEM Headless SDK는 클라이언트가 HTTP를 통해 AEM Headless API와 빠르고 쉽게 상호 작용하는 데 사용할 수 있는 라이브러리 세트입니다.
+AEM Headless SDK은 클라이언트가 HTTP를 통해 AEM Headless API와 빠르고 쉽게 상호 작용하는 데 사용할 수 있는 라이브러리 세트입니다.
 
-AEM Headless SDK는 다양한 플랫폼에서 사용할 수 있습니다.
+AEM Headless SDK은 다양한 플랫폼에서 사용할 수 있습니다.
 
 + [클라이언트측 브라우저용 AEM Headless SDK (JavaScript)](https://github.com/adobe/aem-headless-client-js)
 + [서버측/Node.js용 AEM Headless SDK (JavaScript)](https://github.com/adobe/aem-headless-client-nodejs)
@@ -29,9 +29,9 @@ AEM Headless SDK는 다양한 플랫폼에서 사용할 수 있습니다.
 
 ## 지속 GraphQL 쿼리
 
-[클라이언트 정의 GraphQL 쿼리](#graphl-queries)가 아닌 지속 쿼리를 사용하여 GraphQL을 사용하여 AEM을 쿼리하면 개발자는 AEM에서 쿼리를 지속할 수 있지만 결과를 유지할 수는 없습니다. 그런 다음 이름으로 쿼리를 실행하도록 요청할 수 있습니다. 지속 쿼리는 SQL 데이터베이스의 저장 프로시저 개념과 유사합니다.
+[클라이언트 정의 AEM 쿼리](#graphl-queries)가 아닌 지속 쿼리를 사용하여 GraphQLGraphQL 를 쿼리하면 개발자는 AEM에서 쿼리를 지속한 다음(결과가 아님) 이름별로 쿼리를 실행하도록 요청할 수 있습니다. 지속 쿼리는 SQL 데이터베이스의 저장 프로시저 개념과 유사합니다.
 
-지속 쿼리는 CDN 및 AEM Dispatcher 계층에서 캐시 가능한 HTTP GET을 사용하여 실행되므로 클라이언트 정의 GraphQL 쿼리보다 성능이 향상됩니다. 또한 지속 쿼리는 실제로 개발자가 각 콘텐츠 조각 모델의 세부 정보를 이해해야 하는 필요성을 분리하고 API를 정의합니다.
+지속 쿼리는 CDN 및 GraphQL Dispatcher 계층에서 캐시 가능한 HTTP GET을 사용하여 실행되므로 클라이언트 정의 AEM 쿼리보다 성능이 향상됩니다. 또한 지속 쿼리는 실제로 개발자가 각 콘텐츠 조각 모델의 세부 정보를 이해해야 하는 필요성을 분리하고 API를 정의합니다.
 
 ### 코드 예{#persisted-graphql-queries-code-examples}
 
@@ -45,9 +45,9 @@ Node.js 프로젝트의 루트에서 `npm install` 명령을 실행하여 [@adob
 $ npm i @adobe/aem-headless-client-js
 ```
 
-이 코드 예제에서는 `async/await` 구문을 사용하여 [@adobe/aem-headless-client-js](https://github.com/adobe/aem-headless-client-js) npm 모듈을 사용하여 AEM을 쿼리하는 방법을 보여 줍니다. JavaScript용 AEM Headless SDK는 [약속 구문](https://github.com/adobe/aem-headless-client-js#use-aemheadless-client)도 지원합니다.
+이 코드 예제에서는 `async/await` 구문을 사용하여 [@adobe/aem-headless-client-js](https://github.com/adobe/aem-headless-client-js) npm 모듈을 사용하여 AEM을 쿼리하는 방법을 보여 줍니다. JavaScript용 AEM Headless SDK도 [약속 구문](https://github.com/adobe/aem-headless-client-js#use-aemheadless-client)을 지원합니다.
 
-이 코드는 이름이 `wknd/adventureNames`인 지속 쿼리가 AEM 작성자에 만들어져 AEM Publish에 게시되었다고 가정합니다.
+이 코드는 이름이 `wknd/adventureNames`인 지속 쿼리가 AEM Author에서 만들어져 AEM Publish에 게시된 것으로 가정합니다.
 
 ```javascript
 import AEMHeadless from '@adobe/aem-headless-client-js';
@@ -96,12 +96,12 @@ React 프로젝트의 루트에서 `npm install` 명령을 실행하여 [@adobe/
 $ npm i @adobe/aem-headless-client-js
 ```
 
-이 코드 예제에서는 [React useEffect(...)를 사용하는 방법을 보여 줍니다. ](https://reactjs.org/docs/hooks-effect.html)을(를) 후크하여 AEM GraphQL에 대한 비동기 호출을 실행합니다.
+이 코드 예제에서는 [React useEffect(...) hook](https://reactjs.org/docs/hooks-effect.html)을(를) 사용하여 AEM GraphQL에 대한 비동기 호출을 실행하는 방법을 보여 줍니다.
 
 `useEffect`을(를) 사용하여 React에서 비동기 GraphQL 호출을 만드는 것은 다음과 같은 이유로 유용합니다.
 
 1. AEM에 대한 비동기 호출에 대한 동기 래퍼를 제공합니다.
-1. AEM을 불필요하게 요청하는 것을 줄입니다.
+1. AEM에 대한 불필요한 요청을 줄입니다.
 
 이 코드는 이름이 `wknd-shared/adventure-by-slug`인 지속 쿼리가 AEM 작성자에 만들어지고 GraphiQL을 사용하여 AEM Publish에 게시되었다고 가정합니다.
 
