@@ -11,7 +11,7 @@ level: Beginner
 last-substantial-update: 2022-09-02T00:00:00Z
 exl-id: 19f72254-2087-450b-909d-2d90c9821486
 duration: 411
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 99e3cadc71ca4e26f9e4034085788dfc5407d1bb
 workflow-type: tm+mt
 source-wordcount: '1696'
 ht-degree: 7%
@@ -66,7 +66,7 @@ $ java --version
 
 AEM as a Cloud Service SDK 또는 AEM SDK에는 개발을 위해 로컬에서 AEM 작성자 및 게시를 실행하는 데 사용되는 Quickstart Jar와 호환되는 버전의 Dispatcher 도구가 포함되어 있습니다.
 
-1. Adobe ID으로 [https://experience.adobe.com/#/downloads](https://experience.adobe.com/#/downloads)에 로그인합니다.
+1. Adobe ID으로 [https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)에 로그인합니다.
    + AEM as a Cloud Service SDK을 다운로드하려면 Adobe 조직 __을(를) AEM as a Cloud Service에 대해 프로비저닝해야__&#x200B;합니다.
 1. __AEM as a Cloud Service__ 탭으로 이동
 1. __내림차순__ 순서로 __게시 날짜__&#x200B;별로 정렬
@@ -96,7 +96,7 @@ AEM as a Cloud Service SDK 또는 AEM SDK에는 개발을 위해 로컬에서 AE
 
 ```shell
 $ mkdir -p ~/aem-sdk/author
-$ cp aem-sdk-Quickstart-XXX.jar ~/aem-sdk/author/aem-author-p4502.jar
+$ cp aem-sdk-quickstart-XXX.jar ~/aem-sdk/author/aem-author-p4502.jar
 $ cd ~/aem-sdk/author
 $ java -jar aem-author-p4502.jar
 ```
@@ -105,7 +105,7 @@ $ java -jar aem-author-p4502.jar
 
 ```shell
 $ mkdir -p c:\Users\<My User>\aem-sdk\author
-$ copy aem-sdk-Quickstart-XXX.jar c:\Users\<My User>\aem-sdk\author\aem-author-p4502.jar
+$ copy aem-sdk-quickstart-XXX.jar c:\Users\<My User>\aem-sdk\author\aem-author-p4502.jar
 $ cd c:\Users\<My User>\aem-sdk\author
 $ java -jar aem-author-p4502.jar
 ```
@@ -114,7 +114,7 @@ $ java -jar aem-author-p4502.jar
 
 ```shell
 $ mkdir -p ~/aem-sdk/author
-$ cp aem-sdk-Quickstart-XXX.jar ~/aem-sdk/author/aem-author-p4502.jar
+$ cp aem-sdk-quickstart-XXX.jar ~/aem-sdk/author/aem-author-p4502.jar
 $ cd ~/aem-sdk/author
 $ java -jar aem-author-p4502.jar
 ```
@@ -141,7 +141,7 @@ $ java -jar aem-author-p4502.jar
 
 ```shell
 $ mkdir -p ~/aem-sdk/publish
-$ cp aem-sdk-Quickstart-XXX.jar ~/aem-sdk/publish/aem-publish-p4503.jar
+$ cp aem-sdk-quickstart-XXX.jar ~/aem-sdk/publish/aem-publish-p4503.jar
 $ cd ~/aem-sdk/publish
 $ java -jar aem-publish-p4503.jar
 ```
@@ -150,7 +150,7 @@ $ java -jar aem-publish-p4503.jar
 
 ```shell
 $ mkdir -p c:\Users\<My User>\aem-sdk\publish
-$ copy aem-sdk-Quickstart-XXX.jar c:\Users\<My User>\aem-sdk\publish\aem-publish-p4503.jar
+$ copy aem-sdk-quickstart-XXX.jar c:\Users\<My User>\aem-sdk\publish\aem-publish-p4503.jar
 $ cd c:\Users\<My User>\aem-sdk\publish
 $ java -jar aem-publish-p4503.jar
 ```
@@ -159,7 +159,7 @@ $ java -jar aem-publish-p4503.jar
 
 ```shell
 $ mkdir -p ~/aem-sdk/publish
-$ cp aem-sdk-Quickstart-XXX.jar ~/aem-sdk/publish/aem-publish-p4503.jar
+$ cp aem-sdk-quickstart-XXX.jar ~/aem-sdk/publish/aem-publish-p4503.jar
 $ cd ~/aem-sdk/publish
 $ java -jar aem-publish-p4503.jar
 ```
