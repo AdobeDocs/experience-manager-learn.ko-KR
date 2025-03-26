@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Experience Manager as a Cloud Service
 team: TM
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 4412e1aca73290bbcf35161db754dab65144c3c9
 workflow-type: tm+mt
-source-wordcount: '1389'
-ht-degree: 15%
+source-wordcount: '1380'
+ht-degree: 16%
 
 ---
 
@@ -27,7 +27,6 @@ ht-degree: 15%
    + [Cloud Manager](./introduction/cloud-manager.md)
    + 전략 및 사고 리더십{#strategy}
       + [Experience Manager - 거버넌스 및 인력 모델 및 원형](./introduction/experience-manager-governance-and-staffing-models.md)
-      + [Adobe Experience Manager으로 컨텐츠 속도를 향상시키는 방법](./introduction/drive-content-velocity-for-sites.md)
 + Experience Cloud 통합{#integrations}
    + [통합](./integrations/experience-cloud.md)
    + [Adobe Target](./integrations/target.md)
