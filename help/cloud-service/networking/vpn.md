@@ -11,9 +11,9 @@ thumbnail: KT-9352.jpeg
 exl-id: 74cca740-bf5e-4cbd-9660-b0579301a3b4
 last-substantial-update: 2024-04-27T00:00:00Z
 duration: 919
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: e1bea4320ed7a8b6d45f674649ba9ba946054b17
 workflow-type: tm+mt
-source-wordcount: '1467'
+source-wordcount: '1556'
 ht-degree: 1%
 
 ---
@@ -21,6 +21,12 @@ ht-degree: 1%
 # VPN (Virtual Private Network)
 
 AEM as a Cloud Service과 VPN을 연결하여 AEM과 내부 서비스 간에 보안 통신 채널을 만드는 방법을 알아봅니다.
+
+>[!IMPORTANT]
+>
+>Cloud Manager UI를 통해 또는 API 호출을 사용하여 VPN 및 포트 전달을 구성할 수 있습니다. 이 자습서에서는 API 메서드에 중점을 둡니다.
+>
+>UI를 사용하려면 [AEM as a Cloud Service을 위한 고급 네트워킹 구성](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking)을 참조하십시오.
 
 ## 가상 사설망이란?
 
@@ -49,9 +55,13 @@ Cloud Manager API를 사용하여 Virtual Private Network를 설정할 때 필�
 + Cloud Manager 환경 ID
 + 필요한 모든 연결 매개 변수에 액세스할 수 있는 **경로 기반** 가상 개인 네트워크입니다.
 
-자세한 내용을 보려면 [Cloud Manger API 자격 증명을 설정, 구성 및 얻는 방법](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/app-builder/server-to-server-auth)을 검토하여 Cloud Manager API를 호출하는 데 사용하십시오.
+자세한 내용은 [Cloud Manger API 자격 증명을 설정, 구성 및 얻는 방법](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/app-builder/server-to-server-auth)을 검토하여 Cloud Manager API 호출을 수행하는 데 사용하십시오.
 
-이 자습서에서는 `curl`을(를) 사용하여 Cloud Manager API 구성을 만듭니다. 제공된 `curl` 명령은 Linux/macOS 구문을 사용합니다. Windows 명령 프롬프트를 사용하는 경우 `\` 줄 바꿈 문자를 `^`(으)로 바꾸십시오.
+>[!IMPORTANT]
+>
+>이 자습서에서는 `curl`을(를) 사용하여 Cloud Manager API 구성을 만듭니다.*프로그래밍 방식을 선호하는 경우*. 제공된 `curl` 명령은 Linux® 또는 macOS 구문을 가정합니다. Windows 명령 프롬프트를 사용하는 경우 `\` 줄 바꿈 문자를 `^`(으)로 바꾸십시오.
+>
+>또는 Cloud Manager UI를 통해 동일한 작업을 완료할 수 있습니다. *UI 접근 방식을 선호하는 경우* AEM as a Cloud Service에 대한 [고급 네트워킹 구성](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking)을 참조하십시오.
 
 ## 프로그램당 Virtual Private Network 사용
 
@@ -240,7 +250,7 @@ Cloud Manager API를 사용하여 가상 개인 네트워크를 활성화할 수
    }
    ```
 
-   `nonProxyHosts`은(는) 포트 80 또는 443이 전용 이그레스 IP가 아닌 기본 공유 IP 주소 범위를 통해 라우팅되어야 하는 호스트 집합을 선언합니다. 공유 IP를 통해 이그레스되는 트래픽이 Adobe에서 자동으로 최적화되므로 `nonProxyHosts`이(가) 유용할 수 있습니다.
+   `nonProxyHosts`은(는) 포트 80 또는 443이 전용 이그레스 IP가 아닌 기본 공유 IP 주소 범위를 통해 라우팅되어야 하는 호스트 집합을 선언합니다. `nonProxyHosts`은(는) Adobe에서 자동으로 최적화하는 공유 IP를 통해 트래픽이 증가할 때 유용할 수 있습니다.
 
    각 `portForwards` 매핑에 대해 고급 네트워킹은 다음 전달 규칙을 정의합니다.
 
@@ -272,9 +282,9 @@ Cloud Manager API를 사용하여 가상 개인 네트워크를 활성화할 수
 Virtual Private Network가 활성화되면 AEM 코드 및 구성은 이 코드를 사용하여 VPN을 통해 외부 서비스를 호출할 수 있습니다. AEM에서 다르게 처리하는 외부 호출에는 두 가지 유형이 있습니다.
 
 1. 외부 서비스에 대한 HTTP/HTTPS 호출
-   + 표준 80 또는 443 포트 이외의 포트에서 실행되는 서비스에 대한 HTTP/HTTPS 호출을 포함합니다.
+   + 이러한 외부 서비스에는 표준 포트 80 또는 443 이외의 다른 포트에서 실행되는 서비스에 대한 HTTP/HTTPS 호출이 포함됩니다.
 1. 외부 서비스에 대한 비 HTTP/HTTPS 호출
-   + 메일 서버, SQL 데이터베이스 또는 HTTP/HTTPS가 아닌 다른 프로토콜에서 실행되는 서비스와의 연결과 같은 HTTP가 아닌 호출을 포함합니다.
+   + 이러한 외부 서비스에는 메일 서버, SQL 데이터베이스 연결 또는 HTTP/HTTPS 이외의 프로토콜을 사용하는 서비스와 같은 비 HTTP 호출이 포함됩니다.
 
 표준 포트(80/443)의 AEM에서 HTTP/HTTPS 요청은 기본적으로 허용되지만, 아래 설명된 대로 적절하게 구성되지 않은 경우 VPN 연결을 사용하지 마십시오.
 
@@ -344,7 +354,7 @@ AEM에서 HTTP/HTTPS 연결을 만들 때 VPN을 사용하면 HTTP/HTTPS 연결�
     </td>
 </tr></table>
 
-### VPN을 통한 AEM as a Cloud Service 액세스 제한
+### VPN을 통해 AEM as a Cloud Service에 대한 액세스 제한
 
 가상 사설망 구성은 AEM as a Cloud Service 환경에 대한 액세스를 VPN으로 제한합니다.
 
