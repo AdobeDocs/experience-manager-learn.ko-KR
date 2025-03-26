@@ -1,15 +1,15 @@
 ---
 title: AEM Forms의 양식 편집기 개선 사항
-description: AEM 6.3은 이 릴리스에서 적응형 양식 및 문서의 작성 환경을 단순화하는 몇 가지 새로운 기능과 개선 사항을 도입했습니다. 향상된 기능을 통해 마켓 출시 시간을 단축하고 비즈니스 사용자가 양식 및 문서를 사용할 수 있습니다
+description: AEM 6.3은 이 릴리스에서 적응형 양식 및 문서 작성 환경을 단순화하는 몇 가지 새로운 기능과 개선 사항을 도입했습니다. 향상된 기능을 통해 마켓 출시 시간을 단축하고 비즈니스 사용자가 양식 및 문서를 사용할 수 있습니다
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: User
 level: Beginner
 exl-id: a2d21f2e-3dbb-454f-8a02-101dc3af9b1e
 last-substantial-update: 2020-02-09T00:00:00Z
 duration: 522
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # AEM Forms의 양식 편집기 개선 사항 {#form-editor-improvements-in-aem-forms}
 
-AEM 6.3은 이 릴리스에서 적응형 양식 및 문서의 작성 환경을 단순화하는 몇 가지 새로운 기능과 개선 사항을 도입했습니다. 향상된 기능을 통해 마켓 출시 시간을 단축하고 비즈니스 사용자가 양식 및 문서를 사용할 수 있습니다
+AEM 6.3은 이 릴리스에서 적응형 양식 및 문서 작성 환경을 단순화하는 몇 가지 새로운 기능과 개선 사항을 도입했습니다. 향상된 기능을 통해 마켓 출시 시간을 단축하고 비즈니스 사용자가 양식 및 문서를 사용할 수 있습니다
 
 >[!VIDEO](https://video.tv.adobe.com/v/19500?quality=12&learn=on)
 

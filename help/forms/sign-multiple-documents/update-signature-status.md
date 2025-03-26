@@ -1,8 +1,8 @@
 ---
 title: 데이터베이스에서 양식의 서명 상태 업데이트
-description: AEM 워크플로를 사용하여 데이터베이스에서 서명된 양식의 서명 상태 업데이트
+description: AEM 워크플로우를 사용하여 데이터베이스에 있는 서명된 양식의 서명 상태 업데이트
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-6888
 thumbnail: 6888.jpg
 topic: Development
@@ -10,7 +10,7 @@ role: Developer
 level: Experienced
 exl-id: 75852a4b-7008-4c65-bab1-cc5dbf525e20
 duration: 42
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 2%
@@ -24,7 +24,7 @@ UpdateSignatureStatus 워크플로는 사용자가 서명식을 완료하면 트
 ![main-workflow](assets/update-signature.PNG)
 
 서명 상태 업데이트는 사용자 지정 프로세스 단계입니다.
-사용자 지정 프로세스 단계를 구현하는 주요 이유는 AEM Workflow를 확장하기 위해서입니다. 다음은 서명 상태를 업데이트하는 데 사용되는 사용자 지정 코드입니다.
+사용자 지정 프로세스 단계를 구현하는 주요 이유는 AEM 워크플로를 확장하기 위해서입니다. 다음은 서명 상태를 업데이트하는 데 사용되는 사용자 지정 코드입니다.
 이 사용자 지정 프로세스 단계의 코드는 SignMultipleForms 서비스를 참조합니다.
 
 

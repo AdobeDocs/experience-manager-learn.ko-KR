@@ -2,14 +2,14 @@
 title: 적응형 Forms에서 Geolocation API 사용
 description: 지리적 위치 API를 사용하여 양식의 주소 필드 채우기
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 50db6155-ee83-4ddb-9e3a-56e8709222db
 last-substantial-update: 2020-03-20T00:00:00Z
 duration: 88
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 0%
@@ -77,7 +77,7 @@ var url = "https://maps.googleapis.com/maps/api/geocode/json?latlng="+position.c
 
 ![geoloaction api로 필드 채우기](assets/capture-4.gif)
 
-1행에서는 현재 위치를 가져오는 데 사용되는 지리적 위치 API HTML을 사용합니다. 현재 위치가 얻어지면 현재 위치를 showPosition 함수로 전달합니다.
+1행에서는 HTML 지리적 위치 API를 사용하여 현재 위치를 가져옵니다. 현재 위치가 얻어지면 현재 위치를 showPosition 함수로 전달합니다.
 
 showPosition 함수에서 Google API를 사용하여 주어진 위도와 경도에 대한 주소 세부 정보를 가져옵니다.
 

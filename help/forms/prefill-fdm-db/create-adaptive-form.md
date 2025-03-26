@@ -2,7 +2,7 @@
 title: 적응형 양식 만들기
 description: 양식 데이터 모델의 미리 채우기 서비스를 사용하도록 적응형 양식 만들기 및 구성
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-5813
 thumbnail: kt-5813.jpg
 topic: Development
@@ -10,10 +10,10 @@ role: User
 level: Beginner
 exl-id: c8d4eed8-9e2b-458c-90d8-832fc9e0ad3f
 duration: 124
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '598'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -67,7 +67,7 @@ ht-degree: 2%
 
 다음 단계는 사원의 수익자를 표 형식으로 표시하는 것입니다. 제공된 샘플 양식에는 4개의 열과 단일 행이 있는 테이블이 있습니다. 수혜자 수에 따라 성장하도록 표를 구성해야 한다.
 
-* 편집 모드로 양식을 엽니다.
+* 편집 모드에서 양식을 엽니다.
 * 루트 패널->수혜자->테이블 확장
 * Row1을 선택하고 렌치 아이콘을 클릭하여 등록 정보 시트를 엽니다.
 * 바인드 참조를 **/newhire/GetEmployeeBenefits**(으)로 설정합니다.

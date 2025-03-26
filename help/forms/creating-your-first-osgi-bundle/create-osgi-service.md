@@ -2,14 +2,14 @@
 title: AEM Forms을 사용하여 첫 번째 OSGi 서비스 만들기
 description: AEM Forms을 사용하여 첫 번째 OSGi 서비스 구축
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 2f15782e-b60d-40c6-b95b-6c7aa8290691
 last-substantial-update: 2021-04-23T00:00:00Z
 duration: 87
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 0%
@@ -107,9 +107,9 @@ JSP 페이지가 포함된 샘플 패키지는 [여기에서 다운로드](asset
 
 ## 패키지 테스트
 
-[패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp)를 사용하여 AEM에 패키지를 가져와 설치합니다.
+[패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp)를 사용하여 AEM으로 패키지를 가져와 설치합니다.
 
-Postman을 사용하여 아래 스크린샷과 같이 POST 호출을 수행하고 입력 매개 변수를 제공합니다
+Postman을 사용하여 POST 호출을 수행하고 아래 스크린샷에 표시된 대로 입력 매개 변수를 제공합니다
 ![postman](assets/test-service-postman.JPG)
 
 ## 다음 단계

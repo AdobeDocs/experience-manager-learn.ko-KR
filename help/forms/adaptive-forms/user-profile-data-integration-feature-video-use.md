@@ -2,14 +2,14 @@
 title: AEM Forms과 사용자 프로필 데이터 통합 사용
 description: AEM 사용자 프로필 정보를 적응형 Forms과 통합
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 4f2b6669-d61e-400d-8657-dddb28ae35f4
 last-substantial-update: 2019-03-20T00:00:00Z
 duration: 353
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '98'
 ht-degree: 0%
@@ -26,7 +26,7 @@ AEM Forms 데이터 통합을 사용하면 서로 다른 데이터 소스를 구
 1. RESTful 웹 서비스
 1. SOAP 기반 웹 서비스
 1. OData 서비스
-이 문서에서는 AEM 사용자 프로필 정보를 적응형 Forms과 통합하는 방법을 중점적으로 다룹니다.
+이 문서에서는 AEM 사용자 프로필 정보와 적응형 Forms 통합을 중점적으로 다룹니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17432?quality=12&learn=on)
 

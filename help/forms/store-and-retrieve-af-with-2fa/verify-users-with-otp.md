@@ -3,7 +3,7 @@ title: OTP로 사용자 확인
 description: OTP를 사용하여 애플리케이션 번호와 연결된 모바일 번호를 확인합니다.
 feature: Adaptive Forms
 type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-6594
 thumbnail: 6594.jpg
 topic: Development
@@ -11,7 +11,7 @@ role: Developer
 level: Experienced
 exl-id: d486d5de-efd9-4dd3-9d9c-1bef510c6073
 duration: 84
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '403'
 ht-degree: 0%
@@ -51,7 +51,7 @@ OpenAPI 사양(이전 Swagger 사양)은 REST API에 대한 API 설명 포맷입
 
 AEM/AEM Forms을 타사 애플리케이션과 통합하려면 클라우드 서비스 구성에서 Swagger 파일을 사용하여 [REST 기반 데이터 소스를](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html)해야 합니다. 완성된 데이터 소스는 이 교육 과정 에셋의 일부로 제공됩니다.
 
-## 양식 데이터 모델 만들기
+## Forms 데이터 모델 만들기
 
 AEM Forms 데이터 통합은 [양식 데이터 모델](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html)을(를) 만들고 작업할 수 있는 직관적인 사용자 인터페이스를 제공합니다. 양식 데이터 모델은 데이터 교환을 위해 데이터 소스를 사용합니다.
 완료된 양식 데이터 모델은 [여기에서 다운로드](assets/sms-2fa-fdm.zip)할 수 있습니다.

@@ -2,14 +2,14 @@
 title: API를 사용하여 AEM Forms으로 기록 문서 생성
 description: 프로그래밍 방식으로 DOR(Document Of Record) 생성
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 9a3b2128-a383-46ea-bcdc-6015105c70cc
 last-substantial-update: 2023-01-26T00:00:00Z
 duration: 67
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 0%
@@ -77,9 +77,9 @@ session.save();
 
 **문제 해결 팁**
 
-PDF이 새 브라우저 탭에 표시되지 않음:
+PDF이 새 브라우저 탭에 표시되지 않습니다.
 
 1. 브라우저에서 팝업을 차단하지 않도록 하십시오
-1. AEM 서버를 관리자(적어도 Windows에서)로 시작하는지 확인하십시오.
+1. 관리자로 AEM 서버를 시작하는지 확인합니다(Windows에서 시작).
 1. &#39;DevelopingWithServiceUser&#39; 번들이 *활성 상태*&#x200B;에 있는지 확인하십시오.
 1. [시스템 사용자](http://localhost:4502/useradmin) &#39; fd-service&#39;에게 다음 노드 `/content/usergenerated/content/aemformsenablement`에 대한 읽기, 수정 및 만들기 권한이 있는지 확인하십시오.

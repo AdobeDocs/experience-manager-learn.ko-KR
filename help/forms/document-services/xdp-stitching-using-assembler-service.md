@@ -2,14 +2,14 @@
 title: 어셈블러 서비스를 사용한 XDP 결합
 description: AEM Forms에서 어셈블러 서비스를 사용하여 xdp 결합
 feature: Assembler
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 last-substantial-update: 2022-12-19T00:00:00Z
 exl-id: e116038f-7d86-41ee-b1b0-7b8569121d6d
 duration: 91
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '346'
 ht-degree: 0%
@@ -72,7 +72,7 @@ AEM 서버에서 이 기능을 사용하려면
 * [패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp)를 사용하여 패키지 업로드 및 설치
 * 샘플 xdp 및 DDX 파일을 가져오려면 [이 zip 파일의 압축을 풉니다](assets/xdp-and-ddx.zip)
 
-허용 목록에 추가하다 **패키지를 설치하면 Adobe Granite CSRF 필터에 다음 URL을 다운로드하게 됩니다.**
+**패키지를 설치하면 Adobe Granite CSRF 필터에 다음 URL이 허용 목록 됩니다.**
 
 1. 허용 목록에 추가하다 위에서 언급 한 경로에 아래의 단계를 따르십시오.
 1. [configMgr에 로그인](http://localhost:4502/system/console/configMgr)
@@ -80,7 +80,7 @@ AEM 서버에서 이 기능을 사용하려면
 1. 제외된 섹션에 다음 경로를 추가하고 `/content/AemFormsSamples/assemblerservice`을(를) 저장합니다.
 1. &quot;Sling Referrer filter&quot; 검색
 1. &quot;비우기 허용&quot; 확인란을 선택합니다. (이 설정은 테스트 목적으로만 사용해야 함)
-샘플 코드를 테스트하는 방법에는 여러 가지가 있습니다. 가장 빠르고 쉬운 방법은 Postman 앱을 사용하는 것입니다. Postman을 사용하면 서버에 POST 요청을 할 수 있습니다. 시스템에 Postman 앱을 설치합니다.
+샘플 코드를 테스트하는 방법에는 여러 가지가 있습니다. 가장 빠르고 쉬운 방법은 Postman 앱을 사용하는 것입니다. Postman을 사용하면 서버에 POST 요청을 수행할 수 있습니다. 시스템에 Postman 앱을 설치합니다.
 앱을 실행하고 다음 URL을 입력하여 데이터 내보내기 API를 테스트합니다
 http://localhost:4502/content/AemFormsSamples/assemblerservice.html
 

@@ -2,7 +2,7 @@
 title: 여러 문서 서명 문제 해결 솔루션
 description: 테스트 및 문제 해결 솔루션
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-6960
 thumbnail: 6960.jpg
 topic: Development
@@ -10,7 +10,7 @@ role: Developer
 level: Intermediate
 exl-id: 99cba29e-4ae3-4160-a4c7-a5b6579618c0
 duration: 81
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 ### 이메일 알림의 링크가 작동하지 않음
 
-전자 메일 알림의 링크는 동적으로 생성됩니다. AEM 서버가 localhost:4502에서 실행되고 있지 않은 경우 여러 Forms 서명 워크플로의 Forms To Sign 저장 단계의 인수에 올바른 서버 이름과 포트를 제공하십시오.
+전자 메일 알림의 링크는 동적으로 생성됩니다. AEM 서버가 localhost:4502에서 실행되고 있지 않은 경우 여러 Forms 서명 워크플로의 Forms To Sign 저장 단계의 인수에 올바른 서버 이름과 포트를 제공하십시오
 
 ### 양식에 서명할 수 없음
 

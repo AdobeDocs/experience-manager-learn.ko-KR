@@ -1,7 +1,7 @@
 ---
 title: 기록 문서 인라인 표시
 description: 적응형 양식 데이터를 XDP 템플릿과 병합하고 document cloud embed pdf API를 사용하여 PDF 인라인을 표시합니다.
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 feature: Forms Service
 topic: Development
 role: Developer
@@ -10,7 +10,7 @@ jira: KT-9411
 exl-id: 327ffe26-e88e-49f0-9f5a-63e2a92e1c8a
 last-substantial-update: 2021-07-07T00:00:00Z
 duration: 165
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 0%
@@ -108,7 +108,7 @@ $(document).ready(function() {
 아래 스크린샷과 같이 embed-pdf 구성 요소를 구성합니다
 ![embed-pdf](assets/embed-pdf-configuration.png)
 
-**PDF API 키 포함** - PDF를 포함하는 데 사용할 수 있는 키입니다. 이 키는 localhost에서만 작동합니다. [자신의 키](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html)를 만들어 다른 도메인과 연결할 수 있습니다.
+**PDF API 키 포함** - pdf를 포함하는 데 사용할 수 있는 키입니다. 이 키는 localhost에서만 작동합니다. [자신의 키](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html)를 만들어 다른 도메인과 연결할 수 있습니다.
 
 **PDF를 반환하는 끝점** - 데이터를 xdp 템플릿과 병합하고 PDF를 반환하는 사용자 지정 서블릿입니다.
 
@@ -235,4 +235,4 @@ public class StreamPDFToEmbed extends SlingAllMethodsServlet {
 1. [적응형 양식 및 템플릿 가져오기](assets/embed-pdf-form-and-xdp.zip)
 1. [적응형 양식 미리 보기](http://localhost:4502/content/dam/formsanddocuments/from1040/jcr:content?wcmmode=disabled)
 1. 양식 필드 몇 개 입력
-1. 탭으로 이동하여 PDF 보기 탭을 만듭니다. pdf 보기 확인란을 선택합니다. 적응형 양식 데이터로 채워진 양식에 pdf가 표시됩니다
+1. 탭으로 이동하여 PDF 보기를 표시합니다. pdf 보기 확인란을 선택합니다. 적응형 양식 데이터로 채워진 양식에 pdf가 표시됩니다

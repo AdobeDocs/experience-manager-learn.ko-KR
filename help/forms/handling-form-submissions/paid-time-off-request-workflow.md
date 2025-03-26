@@ -3,7 +3,7 @@ title: 단순 유료 휴무 요청 워크플로
 description: AEM Workflow에서 적응형 양식 패널 숨기기 및 표시
 feature: Adaptive Forms
 doc-type: article
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 discoiquuid: 1c4822e6-76ce-446b-98cb-408900d68b24
 topic: Development
 role: Developer
@@ -11,7 +11,7 @@ level: Experienced
 exl-id: 9342bd2f-2ba9-42ee-9224-055649ac3c90
 last-substantial-update: 2020-07-07T00:00:00Z
 duration: 592
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 0%
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 위의 요구 사항을 충족하기 위해 양식의 **initialstep**&#x200B;이라는 숨겨진 필드를 사용하며 기본값은 Yes로 설정됩니다.양식이 제출되면 워크플로의 첫 번째 단계에서 initialstep의 값을 No로 설정합니다. 양식에 initialstep 값을 기반으로 적절한 섹션을 숨기고 표시하는 비즈니스 규칙이 있습니다.
 
-**AEM 워크플로를 트리거하도록 양식 구성**
+**AEM 워크플로우를 트리거할 양식 구성**
 
 >[!VIDEO](https://video.tv.adobe.com/v/28406?quality=12&learn=on)
 

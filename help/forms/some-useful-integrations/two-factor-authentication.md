@@ -2,7 +2,7 @@
 title: SMS 2단계 인증
 description: 사용자가 특정 활동을 수행하려는 경우 사용자의 ID를 확인하는 데 도움이 되도록 추가 보안 계층을 추가합니다
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-6317
 topic: Development
 role: Developer
@@ -10,7 +10,7 @@ level: Experienced
 exl-id: c2c55406-6da6-42be-bcc0-f34426b3291a
 last-substantial-update: 2021-07-07T00:00:00Z
 duration: 115
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '557'
 ht-degree: 0%
@@ -50,7 +50,7 @@ OpenAPI 사양(이전 Swagger 사양)은 REST API에 대한 API 설명 포맷입
 
 AEM/AEM Forms을 타사 애플리케이션과 통합하려면 클라우드 서비스 구성에서 [데이터 소스를 만들기](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html)해야 합니다.
 
-## 양식 데이터 모델 만들기
+## Forms 데이터 모델 만들기
 
 AEM Forms 데이터 통합은 [양식 데이터 모델](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html)을(를) 만들고 작업할 수 있는 직관적인 사용자 인터페이스를 제공합니다. 양식 데이터 모델은 데이터 교환을 위해 데이터 소스를 사용합니다.
 완료된 양식 데이터 모델은 [여기에서 다운로드](assets/sms-2fa-fdm.zip)할 수 있습니다.

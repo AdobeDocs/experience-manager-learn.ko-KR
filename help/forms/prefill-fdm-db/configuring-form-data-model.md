@@ -2,7 +2,7 @@
 title: 양식 데이터 모델 구성
 description: RDBMS 데이터 소스를 기반으로 양식 데이터 모델 만들기
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-5812
 thumbnail: kt-5812.jpg
 topic: Development
@@ -10,7 +10,7 @@ role: Developer
 level: Beginner
 exl-id: 5fa4638f-9faa-40e0-a20d-fdde3dbb528a
 duration: 103
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '491'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 RDBMS 지원 양식 데이터 모델을 만드는 첫 번째 단계는 Apache Sling 연결의 풀링된 데이터 소스를 구성하는 것입니다. 데이터 소스를 구성하려면 아래 단계를 따르십시오.
 
-* 브라우저를 [configMgr](http://localhost:4502/system/console/configMgr)(으)로 지정
+* 브라우저를 [configMgr](http://localhost:4502/system/console/configMgr)&#x200B;(으)로 지정
 * **Apache Sling 연결의 풀링된 데이터 소스** 검색
 * 새 항목을 추가하고 스크린샷에 표시된 대로 값을 제공합니다.
 * ![데이터 원본](assets/data-source.png)
@@ -35,7 +35,7 @@ RDBMS 지원 양식 데이터 모델을 만드는 첫 번째 단계는 Apache Sl
 
 ## 양식 데이터 모델 만들기
 
-* 브라우저를 [데이터 통합](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm)(으)로 지정
+* 브라우저를 [데이터 통합](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm)&#x200B;(으)로 지정
 * _만들기_->_양식 데이터 모델_&#x200B;을 클릭합니다.
 * **직원**&#x200B;과 같은 양식 데이터 모델에 의미 있는 이름과 제목을 입력하십시오.
 * _다음_ 클릭

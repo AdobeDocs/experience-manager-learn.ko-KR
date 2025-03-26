@@ -1,16 +1,16 @@
 ---
-title: HTML5 양식 제출에 대한 AEM 워크플로우 트리거 - 양식 제출 처리
-description: HTML5 양식을 제출할 때 AEM 워크플로우를 트리거하고 제출된 데이터를 저장소에 저장하는 방법을 알아봅니다.
+title: HTML5 양식 제출에서 AEM 워크플로우 트리거 - 양식 제출 처리
+description: HTML5 양식이 제출될 때 AEM 워크플로우를 트리거하고 제출된 데이터를 저장소에 저장하는 방법을 알아봅니다.
 feature: Mobile Forms
 doc-type: article
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 level: Experienced
 exl-id: eafeafe1-7a72-4023-b5bb-d83b056ba207
 duration: 116
-source-git-commit: 9545fae5a5f5edd6f525729e648b2ca34ddbfd9f
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 # 제출된 데이터 저장
 
 다음 단계는 제출된 데이터를 AEM 작성자의 저장소에 저장하는 것입니다. `/bin/startworkflow`에 탑재된 서블릿이 제출된 데이터를 저장합니다.
-AEM 워크플로 시작 관리자는 &lt;node_to_store_submitted_data> 노드 아래에 `nt:file` 유형의 새 리소스가 만들어질 때마다 트리거되도록 구성되어 있습니다. 이 워크플로우는 제출된 데이터를 xdp 템플릿과 병합하여 비대화형 또는 정적 PDF을 만듭니다. 그런 다음 생성된 PDF는 검토 및 승인을 위해 사용자에게 할당됩니다.
+`nt:file` 유형의 새 리소스가 &lt;node_to_store_submitted_data> 노드 아래에 만들어질 때마다 AEM 워크플로 런처가 트리거되도록 구성되어 있습니다. 이 워크플로우는 제출된 데이터를 xdp 템플릿과 병합하여 비대화형 또는 정적 PDF을 만듭니다. 그런 다음 생성된 PDF는 검토 및 승인을 위해 사용자에게 할당됩니다.
 
 제출된 데이터를 &lt;node_to_store_submitted_data> 노드에 저장하기 위해 모든 AEM Forms 설치에서 사용할 수 있는 `fd-service` 시스템 사용자를 사용하여 제출된 데이터를 저장할 수 있는 `GetResolver` OSGi 서비스를 사용합니다.
 

@@ -2,7 +2,7 @@
 title: ' [!DNL ServiceNow]과 통합'
 description: 양식 데이터 모델을 사용하여 모든 인시던트를 만들고 표시합니다.
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-9957
 topic: Development
 role: Developer
@@ -10,7 +10,7 @@ level: Intermediate
 exl-id: 93a177b0-7852-44da-89cc-836d127be4e7
 last-substantial-update: 2022-07-07T00:00:00Z
 duration: 47
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 0%
@@ -39,7 +39,7 @@ AEM Forms의 양식 데이터 모델을 사용하여 [!DNL ServiceNow]에서 인
 ## 서버에 자산 배포
 
 * [샘플 자산](assets/service-now.zip) 다운로드
-* [패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp)를 사용하여 자산을 AEM에 가져오기
+* [패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp)를 사용하여 AEM에 자산 가져오기
 * 이 통합에 사용된 Swagger 파일이 crx 저장소의 ```/conf/9957/settings/cloudconfigs/fdm``` 폴더 아래에 있습니다.
 * ServiceNow 인스턴스와 일치하도록 [CreateIncident 클라우드 서비스 구성](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2F9957%2Fsettings%2Fcloudconfigs%2Ffdm%2Fcreateincident)을(를) 편집합니다.
 * ServiceNow 인스턴스와 일치하도록 [GetAllIncidents 클라우드 서비스 구성](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2F9957%2Fsettings%2Fcloudconfigs%2Ffdm%2Fgetallincidents)을(를) 편집합니다. ServiceNow 인스턴스 자격 증명과 일치하도록 호스트, 사용자 이름 및 암호를 변경해야 합니다.

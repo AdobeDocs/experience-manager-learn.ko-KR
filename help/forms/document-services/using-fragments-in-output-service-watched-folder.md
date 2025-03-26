@@ -2,7 +2,7 @@
 title: 감시 폴더로 출력 서비스에서 조각 사용
 description: crx 저장소에 있는 조각으로 PDF 문서 생성
 feature: Output Service
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
@@ -10,7 +10,7 @@ last-substantial-update: 2022-09-07T00:00:00Z
 thumbnail: ecma-fragments.jpg
 exl-id: 6b0bd2f1-b8ee-4f96-9813-8c11aedd3621
 duration: 84
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 # ECMA 스크립트를 사용하여 조각이 있는 PDF 문서 생성{#developing-with-output-and-forms-services-in-aem-forms}
 
 
-이 문서에서는 출력 서비스를 사용하여 xdp 조각을 사용하여 pdf 파일을 생성합니다. 기본 xdp와 조각은 crx 저장소에 있습니다. AEM의 파일 시스템 폴더 구조를 모방하는 것이 중요합니다. 예를 들어 xdp의 조각 폴더에서 조각을 사용하는 경우 AEM의 기본 폴더 아래에 **조각**&#x200B;이라는 폴더를 만들어야 합니다. 기본 폴더에는 기본 xdp 템플릿이 포함됩니다. 예를 들어 파일 시스템에 다음 구조가 있는 경우
+이 문서에서는 출력 서비스를 사용하여 xdp 조각을 사용하여 pdf 파일을 생성합니다. 기본 xdp와 조각은 crx 저장소에 있습니다. AEM에서 파일 시스템 폴더 구조를 모방하는 것이 중요합니다. 예를 들어 xdp의 조각 폴더에서 조각을 사용 중인 경우 AEM의 기본 폴더 아래에 **조각**&#x200B;이라는 폴더를 만들어야 합니다. 기본 폴더에는 기본 xdp 템플릿이 포함됩니다. 예를 들어 파일 시스템에 다음 구조가 있는 경우
 * c:\xdptemplates - 여기에 기본 xdp 템플릿이 포함됩니다.
 * c:\xdptemplates\fragments - 이 폴더에는 조각이 포함되며 기본 템플릿은 아래와 같이 조각을 참조합니다.
   ![fragment-xdp](assets/survey-fragment.png).

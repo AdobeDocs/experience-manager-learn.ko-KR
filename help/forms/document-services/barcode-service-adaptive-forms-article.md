@@ -2,14 +2,14 @@
 title: 적응형 Forms이 포함된 바코드 서비스
 description: 바코드 서비스를 사용하여 바코드를 디코딩하고 추출된 데이터에서 양식 필드를 채웁니다.
 feature: Barcoded Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: f89cd02d-3ffe-42c6-b547-c0445f912ee8
 last-substantial-update: 2020-02-07T00:00:00Z
 duration: 115
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '354'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 이 문서에서는 Barcode Service를 사용하여 적응형 양식을 채우는 방법을 보여줍니다. 사용 사례는 다음과 같습니다.
 
-1. 사용자가 바코드가 포함된 PDF을 적응형 양식 첨부 파일로 추가합니다.
+1. 사용자가 바코드가 있는 PDF을 적응형 양식 첨부 파일로 추가합니다.
 1. 첨부 파일의 경로가 서블릿으로 전송됩니다.
 1. 서블릿이 바코드를 디코딩하고 데이터를 JSON 형식으로 반환합니다.
 1. 그런 다음 디코딩된 데이터를 사용하여 적응형 양식이 채워집니다
@@ -95,7 +95,7 @@ public class DecodeBarCode extends SlingSafeMethodsServlet {
 }
 ```
 
-다음 코드는 적응형 양식에서 참조하는 클라이언트 라이브러리의 일부입니다. 사용자가 적응형 양식에 첨부 파일을 추가하면 이 코드가 트리거됩니다. 코드는 GET 매개 변수에서 전달된 첨부 파일의 경로를 사용하여 서블릿을 호출합니다. 그런 다음 서블릿 호출에서 수신된 데이터를 사용하여 적응형 양식을 채웁니다.
+다음 코드는 적응형 양식에서 참조하는 클라이언트 라이브러리의 일부입니다. 사용자가 적응형 양식에 첨부 파일을 추가하면 이 코드가 트리거됩니다. 코드는 요청 매개변수에서 전달된 첨부 파일의 경로를 사용하여 서블릿에 대한 GET 호출을 만듭니다. 그런 다음 서블릿 호출에서 수신된 데이터를 사용하여 적응형 양식을 채웁니다.
 
 ```javascript
 $(document).ready(function()
@@ -143,7 +143,7 @@ $(document).ready(function()
 1. [BarcodeService.zip 다운로드](assets/barcodeservice.zip) 및 패키지 관리자를 사용하여 AEM으로 가져오기
 1. [사용자 지정 DocumentServices 번들 다운로드 및 설치](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
 1. [DevelopingWithServiceUser 번들 다운로드 및 설치](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-1. [샘플 PDF 양식 다운로드](assets/barcode.pdf)
-1. 브라우저를 [샘플 적응형 양식](http://localhost:4502/content/dam/formsanddocuments/barcodedemo/jcr:content?wcmmode=disabled)(으)로 지정
+1. [샘플 PDF Form 다운로드](assets/barcode.pdf)
+1. 브라우저를 [샘플 적응형 양식](http://localhost:4502/content/dam/formsanddocuments/barcodedemo/jcr:content?wcmmode=disabled)&#x200B;(으)로 지정
 1. 제공된 샘플 PDF 업로드
 1. 데이터로 채워진 양식이 표시됩니다

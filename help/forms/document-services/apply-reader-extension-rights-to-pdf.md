@@ -1,7 +1,7 @@
 ---
 title: 업로드된 PDF에 사용 권한 적용
 description: PDF에 사용 권한 적용
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 feature: Reader Extensions
 topic: Development
 role: Developer
@@ -9,7 +9,7 @@ level: Experienced
 exl-id: ea433667-81db-40f7-870d-b16630128871
 last-substantial-update: 2020-07-07T00:00:00Z
 duration: 129
-source-git-commit: f3f5c4c4349c8d02c88e1cf91dbf18f58db1e67e
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 0%
@@ -18,10 +18,10 @@ ht-degree: 0%
 
 # Reader 확장 적용
 
-Reader 확장을 사용하면 PDF 문서의 사용 권한을 조작할 수 있습니다. 사용 권한은 Acrobat에서 사용할 수 있지만 Adobe Reader에서는 사용할 수 없는 기능과 관련이 있습니다. Reader 확장에서 제어하는 기능에는 문서에 주석을 추가하고, 양식을 작성하고, 문서를 저장하는 기능이 포함되어 있습니다. 사용 권한이 추가된 PDF 문서를 권한 사용 문서라고 합니다. Adobe Reader에서 권한이 활성화된 PDF 문서를 여는 사용자는 해당 문서에 대해 활성화된 작업을 수행할 수 있습니다.
+Reader 확장을 사용하면 PDF 문서에서 사용 권한을 조작할 수 있습니다. 사용 권한은 Acrobat에서 사용할 수 있지만 Adobe Reader에서는 사용할 수 없는 기능과 관련이 있습니다. Reader 확장에서 제어하는 기능에는 문서에 주석을 추가하고, 양식을 작성하고, 문서를 저장하는 기능이 포함되어 있습니다. 사용 권한이 추가된 PDF 문서를 권한 사용 문서라고 합니다. Adobe Reader에서 권한이 활성화된 PDF 문서를 여는 사용자는 해당 문서에 대해 활성화된 작업을 수행할 수 있습니다.
 
 이 사용 사례를 달성하려면 다음을 수행해야 합니다.
-* `fd-service`명의 사용자에게 [Reader 확장 인증서를 추가](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html)합니다.
+* `fd-service` 사용자에게 [Reader 확장 인증서를 추가](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html)합니다.
 
 ## 사용자 지정 OSGi 서비스 만들기
 
@@ -73,7 +73,7 @@ public class ApplyUsageRights implements ReaderExtendPDF {
 
 ## Reader 확장 PDF을 스트리밍할 서블릿 만들기
 
-다음 단계는 Reader 확장 PDF을 사용자에게 반환하기 위해 POST 메소드로 서블릿을 만드는 것입니다. 이 경우 PDF을 파일 시스템에 저장하라는 메시지가 표시됩니다. 이는 PDF이 동적 PDF으로 렌더링되고 브라우저와 함께 제공되는 pdf 뷰어가 동적 pdf를 처리하지 않기 때문입니다.
+다음 단계는 POST 메서드로 서블릿을 만들어 사용자에게 Reader 확장 PDF을 반환하는 것입니다. 이 경우 사용자는 PDF을 파일 시스템에 저장하라는 메시지가 표시됩니다. 이는 PDF이 동적 PDF으로 렌더링되고 브라우저와 함께 제공되는 pdf 뷰어가 동적 pdf를 처리하지 않기 때문입니다.
 
 다음은 서블릿에 대한 코드입니다. 서블릿은 적응형 양식의 사용자 정의 제출 작업에서 호출됩니다.
 서블릿은 UsageRights 개체를 만들고 적응형 양식에서 사용자가 입력한 값을 기반으로 이 속성을 설정합니다. 그런 다음 서블릿은 이 목적을 위해 생성된 서비스의 applyUsageRights 메서드를 호출합니다.
@@ -207,7 +207,7 @@ public class GetReaderExtendedPDF extends SlingAllMethodsServlet {
 1. [ares.ares.core-ares 번들 다운로드 및 설치](assets/ares.ares.core-ares.jar). 여기에 사용자 정의 서비스와 서블릿이 있어 사용 권한을 적용하고 pdf를 다시 스트리밍할 수 있습니다.
 1. [클라이언트 라이브러리 가져오기 및 사용자 정의 제출](assets/applyaresdemo.zip)
 1. [적응형 양식 가져오기](assets/applyaresform.zip)
-1. &quot;fd-service&quot; 사용자에게 Reader 확장 인증서를 추가합니다. 별칭이 &quot;**ares**&quot;인지 확인하십시오.
+1. Reader 확장 인증서를 &quot;fd-service&quot; 사용자에게 추가합니다. 별칭이 &quot;**ares**&quot;인지 확인하십시오.
 1. [적응형 양식 미리 보기](http://localhost:4502/content/dam/formsanddocuments/applyreaderextensions/jcr:content?wcmmode=disabled)
 1. 적절한 권한을 선택하고 PDF 파일을 업로드하십시오
-1. 제출 을 클릭하여 Reader 확장 PDF을 가져옵니다
+1. 제출 을 클릭하여 Reader Extended PDF을 가져옵니다.

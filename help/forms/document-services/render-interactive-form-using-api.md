@@ -1,28 +1,28 @@
 ---
-title: AEM Forms에서 Forms Services를 사용하여 대화형 PDF 렌더링
+title: AEM Forms에서 Forms Services를 사용하여 인터랙티브한 PDF 렌더링
 description: AEM Forms에서 Forms 서비스 API를 사용하여 대화형 PDF 렌더링
 feature: Forms Service
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: 9b2ef4c9-8360-480d-9165-f56a959635fb
 last-substantial-update: 2020-07-07T00:00:00Z
 duration: 75
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '341'
 ht-degree: 0%
 
 ---
 
-# AEM Forms에서 Forms Services를 사용하여 대화형 PDF 렌더링
+# AEM Forms에서 Forms Services를 사용하여 인터랙티브한 PDF 렌더링
 
 AEM Forms에서 Forms 서비스 API를 사용하여 대화형 PDF 렌더링
 
 이 문서에서는 다음 서비스를 살펴보겠습니다
 
-* FormsService - 다양한 용도로 사용할 수 있는 서비스로, PDF 파일에서 데이터를 내보내고 가져올 수 있으며 xml 데이터를 xdp 템플릿으로 병합하여 대화형 pdf를 생성할 수 있습니다
+* FormsService - 다양한 용도로 사용할 수 있는 서비스로, PDF 파일에서 로 데이터를 내보내고 가져올 수 있으며 xml 데이터를 xdp 템플릿으로 병합하여 대화형 pdf를 생성할 수도 있습니다
 
 AEM Forms API용 공식 [javadoc이 여기에 나열되어 있습니다](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/package-summary.html)
 

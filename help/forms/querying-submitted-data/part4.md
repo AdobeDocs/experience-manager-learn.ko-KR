@@ -3,13 +3,13 @@ title: JSON 스키마 및 데이터가 포함된 AEM Forms[Part4]
 description: JSON 스키마를 사용한 적응형 양식 만들기 및 제출된 데이터 쿼리와 관련된 단계를 안내하는 다중 파트 튜토리얼입니다.
 feature: Adaptive Forms
 doc-type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: a8d8118d-f4a1-483f-83b4-77190f6a42a4
 duration: 99
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 0%
@@ -35,7 +35,7 @@ ht-degree: 0%
 >
 >이 자습서의 현재 버전은 여러 열에 대한 쿼리를 지원하지 않습니다.
 
-쿼리를 수행할 양식을 선택하면 **/bin/getdatakeysfromschema**&#x200B;에 대한 GET 호출이 수행됩니다. 이 GET 호출은 양식의 스키마와 연결된 필수 필드를 반환합니다. 그런 다음 QueryBuilder의 드롭다운 목록에 필수 필드를 채워 쿼리를 작성합니다.
+쿼리를 수행할 양식을 선택하면 **/bin/getdatakeysfromschema**&#x200B;에 대해 GET 호출이 수행됩니다. 이 GET 호출은 양식의 스키마와 연결된 필수 필드를 반환합니다. 그런 다음 QueryBuilder의 드롭다운 목록에 필수 필드를 채워 쿼리를 작성합니다.
 
 다음 코드 조각은 JSONSchemaOperations 서비스의 getRequiredColumnsFromSchema 메서드를 호출합니다. 스키마의 속성 및 필수 요소를 이 메서드 호출에 전달합니다. 이 함수 호출에서 반환된 배열은 쿼리 빌더 드롭다운 목록을 채우는 데 사용됩니다
 
@@ -73,5 +73,5 @@ aemformswithjson에서 &#42;을(를) 선택합니다.  formsubmissions에서 JSO
 1. 샘플 json 스키마를 사용하여 적응형 양식 만들기
 1. &quot;customsubmithelpx&quot; 사용자 정의 제출 액션에 제출하도록 적응형 양식 구성
 1. 양식 작성 및 제출
-1. 브라우저를 [dashboard.html](http://localhost:4502/content/AemForms/dashboard.html)(으)로 지정
+1. 브라우저를 [dashboard.html](http://localhost:4502/content/AemForms/dashboard.html)&#x200B;(으)로 지정
 1. 양식 선택 및 간단한 쿼리 수행

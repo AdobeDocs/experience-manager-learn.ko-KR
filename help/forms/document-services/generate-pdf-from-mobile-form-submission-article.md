@@ -2,14 +2,14 @@
 title: HTM5 양식 제출에서 PDF 생성
 description: 모바일 양식 제출에서 PDF 생성
 feature: Mobile Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 91b4a134-44a7-474e-b769-fe45562105b2
 last-substantial-update: 2020-01-07T00:00:00Z
 duration: 132
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # HTM5 양식 제출에서 PDF 생성 {#generate-pdf-from-htm-form-submission}
 
-이 문서에서는 HTML5(즉, 모바일 Forms) 양식 제출에서 pdf를 생성하는 단계를 설명합니다. 이 데모에서는 이미지를 HTML5 양식에 추가하고 이미지를 최종 pdf로 병합하는 데 필요한 단계도 설명합니다.
+이 문서에서는 HTML5(즉, 모바일 Forms) 양식 제출에서 pdf를 생성하는 단계를 설명합니다. 이 데모에서는 HTML5 양식에 이미지를 추가하고 이미지를 최종 pdf로 병합하는 데 필요한 단계도 설명합니다.
 
 
 제출된 데이터를 xdp 템플릿에 병합하려면 다음을 수행합니다
@@ -116,8 +116,8 @@ function readURL(input) {
 
 * [이 문서와 연결된 패키지를 다운로드하여 설치하십시오.](assets/pdf-from-mobile-form-submission.zip)
 
-* [xdp](http://localhost:4502/libs/fd/fm/gui/content/forms/formmetadataeditor.html/content/dam/formsanddocuments/schengen.xdp)의 속성 페이지를 보고 제출 URL 및 HTML 렌더링 프로필이 올바르게 설정되었는지 확인하십시오.
+* [xdp](http://localhost:4502/libs/fd/fm/gui/content/forms/formmetadataeditor.html/content/dam/formsanddocuments/schengen.xdp)의 속성 페이지를 보고 제출 URL 및 HTML 렌더링 프로필이 올바르게 설정되었는지 확인하십시오
 
 * [XDP를 html로 미리 보기](http://localhost:4502/content/dam/formsanddocuments/schengen.xdp/jcr:content)
 
-* 양식에 이미지를 추가하고 제출합니다. 이미지가 포함된 PDF을 다시 받아야 합니다.
+* 양식에 이미지를 추가하고 제출합니다. 이미지가 포함된 PDF을 다시 가져와야 합니다.

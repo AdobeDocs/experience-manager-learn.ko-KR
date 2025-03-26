@@ -1,16 +1,16 @@
 ---
 title: AEM 적응형 Forms에서 자동화된 테스트 사용
-description: Calvin SDK를 사용한 적응형 Forms 자동 테스트
+description: Calvin SDK을 사용한 적응형 Forms 자동 테스트
 feature: Adaptive Forms
 doc-type: article
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 5a1364f3-e81c-4c92-8972-4fdc24aecab1
 last-substantial-update: 2020-09-10T00:00:00Z
 duration: 101
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '436'
 ht-degree: 0%
@@ -19,9 +19,9 @@ ht-degree: 0%
 
 # AEM 적응형 Forms에서 자동화된 테스트 사용 {#using-automated-tests-with-aem-adaptive-forms}
 
-Calvin SDK를 사용한 적응형 Forms 자동 테스트
+Calvin SDK을 사용한 적응형 Forms 자동 테스트
 
-Calvin SDK는 적응형 Forms 개발자가 적응형 Forms을 테스트할 수 있는 유틸리티 API입니다. Calvin SDK는 [Hobbes.js 테스트 프레임워크](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)의 맨 위에 빌드되었습니다. Calvin SDK는 AEM Forms 6.3 이상에서 사용할 수 있습니다.
+Calvin SDK은 적응형 Forms 개발자가 적응형 Forms을 테스트할 수 있는 유틸리티 API입니다. Calvin SDK은 [Hobbes.js 테스트 프레임워크](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)의 맨 위에 빌드되었습니다. Calvin SDK은 AEM Forms 6.3 이상에서 사용할 수 있습니다.
 
 이 자습서에서는 다음을 만듭니다.
 
@@ -29,7 +29,7 @@ Calvin SDK는 적응형 Forms 개발자가 적응형 Forms을 테스트할 수 �
 * 테스트 세트에는 하나 이상의 테스트 사례가 포함됩니다.
 * 테스트 사례에는 하나 이상의 작업이 포함됩니다.
 
-## 시작 {#getting-started}
+## 시작하기 {#getting-started}
 
 [패키지 관리자를 사용하여 Assets 다운로드 및 설치](assets/testingadaptiveformsusingcalvinsdk1.zip)패키지에는 샘플 스크립트와 여러 적응형 Forms이 포함되어 있습니다. 이러한 적응형 Forms은 AEM Forms 6.3 버전을 사용하여 작성됩니다. AEM Forms 6.4 이상에서 테스트하는 경우 AEM Forms 버전과 관련된 새 양식을 만드는 것이 좋습니다. 샘플 스크립트는 적응형 Forms을 테스트할 수 있는 다양한 Calvin SDK API를 보여 줍니다. AEM 적응형 Forms을 테스트하는 일반 단계는 다음과 같습니다.
 

@@ -3,7 +3,7 @@ title: 사용자 지정 자산 유형 등록
 description: AEMForms 포털에 나열할 사용자 지정 자산 유형 활성화
 feature: Adaptive Forms
 doc-type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 discoiquuid: 99944f44-0985-4320-b437-06c5adfc60a1
 topic: Development
 role: Developer
@@ -11,7 +11,7 @@ level: Experienced
 exl-id: da613092-e03b-467c-9b9e-668142df4634
 last-substantial-update: 2019-07-11T00:00:00Z
 duration: 129
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '644'
 ht-degree: 0%
@@ -55,7 +55,7 @@ AEMForms 포털에 나열할 사용자 지정 자산 유형 활성화
 1. 적응형 양식
 1. 양식 템플릿
 1. PDF forms
-1. Document(정적 PDF)
+1. 문서(정적 PDF)
 
 **사용자 지정 자산 유형을 등록하는 단계**
 

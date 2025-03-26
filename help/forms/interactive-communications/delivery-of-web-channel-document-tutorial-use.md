@@ -2,14 +2,14 @@
 title: 대화형 통신 문서 게재 - 웹 채널 AEM Forms
 description: 이메일의 링크를 통한 웹 채널 문서 게재
 feature: Interactive Communication
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 50858100-3d0c-42bd-87b8-f626212669e2
 last-substantial-update: 2019-07-07T00:00:00Z
 duration: 60
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 0%
@@ -46,4 +46,4 @@ wrapperRequest.getRequestDispatcher("/content/forms/af/401kstatement/irastatemen
 
 양식 데이터 모달의 읽기 서비스를 위해 정의된 요청 속성
 
-[샘플 AEM 패키지](assets/webchanneldelivery.zip).
+[AEM 패키지 샘플](assets/webchanneldelivery.zip).

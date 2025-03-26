@@ -2,7 +2,7 @@
 title: 연속 드롭다운 목록
 description: 이전 드롭다운 목록 선택 사항을 기반으로 드롭다운 목록 채우기.
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-9724
 topic: Development
 role: Developer
@@ -10,7 +10,7 @@ level: Intermediate
 exl-id: f1f2cacc-9ec4-46d6-a6af-dac3f663de78
 last-substantial-update: 2021-02-07T00:00:00Z
 duration: 185
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '610'
 ht-degree: 0%
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 ## 개발자 계정 만들기
 
-[Geonames](https://www.geonames.org/login)(으)로 개발자 계정을 만드십시오. 사용자 이름을 기록해 둡니다. 이 사용자 이름은 geonames.org의 REST API를 호출하는 데 필요합니다.
+[Geonames](https://www.geonames.org/login)&#x200B;(으)로 개발자 계정을 만드십시오. 사용자 이름을 기록해 둡니다. 이 사용자 이름은 geonames.org의 REST API를 호출하는 데 필요합니다.
 
 ## Swagger/OpenAPI 파일 만들기
 
@@ -57,7 +57,7 @@ AEM/AEM Forms을 타사 애플리케이션과 통합하려면 클라우드 서�
 2개의 데이터 소스(하나는 모든 국가를 가져오고 다른 하나는 하위 요소를 가져오기 위해)를 만들어야 합니다
 
 
-## 양식 데이터 모델 만들기
+## Forms 데이터 모델 만들기
 
 AEM Forms 데이터 통합은 [양식 데이터 모델](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html)을(를) 만들고 작업할 수 있는 직관적인 사용자 인터페이스를 제공합니다. 이전 단계에서 만든 데이터 소스를 기반으로 양식 데이터 모델을 만듭니다. 2개의 데이터 소스를 포함하는 양식 데이터 모델
 

@@ -2,14 +2,14 @@
 title: 데이터 속성을 사용하여 HTML5 Forms을 미리 채웁니다.
 description: 백엔드 소스에서 데이터를 가져와 HTML 5 양식을 채웁니다.
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: ab0f5282-383b-4be6-9c57-cded6ab37528
 last-substantial-update: 2020-01-09T00:00:00Z
 duration: 94
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 0%
@@ -19,13 +19,13 @@ ht-degree: 0%
 # 데이터 속성을 사용하여 HTML5 Forms 미리 채우기 {#prepopulate-html-forms-using-data-attribute}
 
 
-AEM Forms을 사용하여 HTML 형식으로 렌더링된 XDP 템플릿은 HTML5 또는 모바일 Forms라고 합니다. 일반적인 사용 사례는 이러한 양식을 렌더링할 때 미리 채우는 것입니다.
+AEM Forms을 사용하여 HTML 형식으로 렌더링된 XDP 템플릿은 HTML5 또는 Mobile Forms라고 합니다. 일반적인 사용 사례는 이러한 양식을 렌더링할 때 미리 채우는 것입니다.
 
-데이터를 HTML으로 렌더링할 때 xdp 템플릿과 병합하는 방법에는 두 가지가 있습니다.
+HTML으로 렌더링할 때 데이터를 xdp 템플릿과 병합하는 방법에는 두 가지가 있습니다.
 
 **dataRef**: URL에서 dataRef 매개 변수를 사용할 수 있습니다. 이 매개 변수는 템플릿과 병합되는 데이터 파일의 절대 경로를 지정합니다. 이 매개 변수는 XML 형식으로 데이터를 반환하는 나머지 서비스의 URL일 수 있습니다.
 
-**data**: 이 매개 변수는 템플릿과 병합되는 UTF-8 인코딩 데이터 바이트를 지정합니다. 이 매개 변수를 지정하면 dataRef 매개 변수를 HTML5 양식에서 무시합니다. 가장 좋은 방법은 데이터 접근 방식을 사용하는 것입니다.
+**data**: 이 매개 변수는 템플릿과 병합되는 UTF-8 인코딩 데이터 바이트를 지정합니다. 이 매개 변수를 지정하면 HTML5 양식에서 dataRef 매개 변수를 무시합니다. 가장 좋은 방법은 데이터 접근 방식을 사용하는 것입니다.
 
 권장 접근 방법은 양식의 미리 채우기를 원하는 데이터로 요청의 데이터 속성을 설정하는 것입니다.
 

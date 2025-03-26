@@ -1,15 +1,16 @@
 ---
-title: HTML5 양식 제출에 대한 AEM 워크플로우 트리거 - 활용 사례 작업
+title: HTML5 양식 제출에서 AEM 워크플로우 트리거 - 활용 사례 작업
 description: 로컬 시스템에 샘플 자산 배포
 feature: Mobile Forms
 doc-type: article
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 jira: kt-16215
 badgeVersions: label="AEM Forms 6.5" before-title="false"
-source-git-commit: 5f42678502a785ead29982044d1f3f5ecf023e0f
+exl-id: 9417235f-2e8d-45c7-86eb-104478a69a19
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 0%
@@ -45,7 +46,7 @@ DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
 
 * [MobileFormToWorkflow 번들 설치](assets/MobileFormToWorkflow.core-1.0.0-SNAPSHOT.jar)
 
-* [configMgr](http://localhost:4503/system/console/configMgr)을 사용하여 AEM 서버 자격 증명에 제출된 데이터를 저장하려면 작성자 인스턴스의 사용자 이름/암호와 AEM 저장소의 **기존 위치**를 지정하십시오. AEM Workflow Server에 끝점의 URL을 그대로 둘 수 있습니다. 지정된 노드의 제출에서 데이터를 추출하고 저장하는 종단점입니다.
+* 작성자 인스턴스의 사용자 이름/암호와 AEM 저장소의 **기존 위치**&#x200B;를 지정하여 [configMgr](http://localhost:4503/system/console/configMgr)을 사용하여 제출된 데이터를 AEM 서버 자격 증명에 저장하십시오. AEM Workflow Server에 엔드포인트의 URL을 그대로 둘 수 있습니다. 지정된 노드의 제출에서 데이터를 추출하고 저장하는 종단점입니다.
   ![publish-config](assets/publish-config.png)
 
 * [서비스 사용자 번들로 개발 배포](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip?lang=en)
@@ -59,7 +60,7 @@ DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
 * [w9.xdp의 고급 속성을 편집합니다](http://localhost:4502/libs/fd/fm/gui/content/forms/formmetadataeditor.html/content/dam/formsanddocuments/w9.xdp). 제출 URL 및 렌더링 프로필이 아래와 같이 올바르게 설정되어 있는지 확인하십시오.
   ![xdp-advanced-properties](assets/mobile-form-properties.png)
 
-* Publish w9.xdp
+* w9.xdp 게시
 * 게시 인스턴스에 로그인
 * [w9 양식 미리 보기](http://localhost:4503/content/dam/formsanddocuments/w9.xdp/jcr:content)
 * 일부 양식 필드 입력 및 양식 제출

@@ -2,14 +2,14 @@
 title: 적응형 Forms에서 인라인 이미지 표시
 description: 업로드된 이미지를 적응형 Forms에 인라인으로 표시
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 4a69513d-992c-435a-a520-feb9085820e7
 last-substantial-update: 2020-06-09T00:00:00Z
 duration: 58
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 0%
@@ -67,5 +67,5 @@ function consumeImage (file) {
 
 * AEM 패키지 관리자를 사용하여 AEM 인스턴스에 [클라이언트 라이브러리](assets/inline-image-client-library.zip)를 다운로드하여 설치하십시오.
 * AEM 패키지 관리자를 사용하여 AEM 인스턴스에 [샘플 양식](assets/inline-image-af.zip)을(를) 다운로드하여 설치하십시오.
-* 브라우저를 [인라인 이미지 추가](http://localhost:4502/content/dam/formsanddocuments/addinlineimage/jcr:content?wcmmode=disabled)(으)로 지정
+* 브라우저를 [인라인 이미지 추가](http://localhost:4502/content/dam/formsanddocuments/addinlineimage/jcr:content?wcmmode=disabled)&#x200B;(으)로 지정
 * 이미지를 추가하려면 &quot;사진 첨부&quot; 단추를 클릭하십시오.

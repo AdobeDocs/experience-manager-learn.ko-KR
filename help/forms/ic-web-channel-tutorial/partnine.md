@@ -3,14 +3,14 @@ title: 계정 잔액 패널에 테이블 추가
 description: 첫 번째 대화형 통신 문서를 만들기 위한 9단계 자습서입니다.이 부분에서는 [계정 잔액] 패널에 표를 추가합니다.
 feature: Interactive Communication
 doc-type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 discoiquuid: 28a9d88d-635b-47a2-8a78-54ddeabc4406
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 1e43c459-8824-40e8-8f05-24b8b0646346
 duration: 454
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '159'
 ht-degree: 1%
@@ -37,7 +37,7 @@ AEM Forms 6.4 릴리스에서는 대화형 통신 문서의 표를 사용하여 
 
 >[!VIDEO](https://video.tv.adobe.com/v/22360?quality=12&learn=on)
 
-웹 채널 문서에서 테이블 구성 - AEM Form 6.5
+웹 채널 문서에서 표 구성 - AEM Form 6.5
 
 >[!VIDEO](https://video.tv.adobe.com/v/27847?quality=12&learn=on)
 

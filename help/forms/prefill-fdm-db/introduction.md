@@ -2,7 +2,7 @@
 title: 양식 데이터 모델을 사용하여 양식 미리 채우기
 description: 양식 데이터 모델의 요청 속성을 사용하여 적응형 양식 미리 채우기
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-4419
 thumbnail: 36387.jpg
 topic: Development
@@ -11,7 +11,7 @@ level: Intermediate
 exl-id: be519d58-1caa-42ea-97a9-7cd38ce8faca
 last-substantial-update: 2021-01-07T00:00:00Z
 duration: 177
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '112'
 ht-degree: 2%

@@ -2,7 +2,7 @@
 title: OCR 데이터 추출
 description: 정부에서 발급한 문서에서 데이터를 추출하여 양식을 채웁니다.
 feature: Barcoded Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-6679
 topic: Development
 role: Developer
@@ -10,7 +10,7 @@ level: Intermediate
 exl-id: 1532a865-4664-40d9-964a-e64463b49587
 last-substantial-update: 2019-07-07T00:00:00Z
 duration: 145
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '661'
 ht-degree: 0%
@@ -85,7 +85,7 @@ OpenAPI 사양(이전 Swagger 사양)은 REST API에 대한 API 설명 포맷입
 
 AEM/AEM Forms을 타사 애플리케이션과 통합하려면 클라우드 서비스 구성에서 [데이터 소스를 만들기](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html)해야 합니다. [swagger 파일](assets/drivers-license-swagger.zip)을 사용하여 데이터 원본을 만드십시오.
 
-## 양식 데이터 모델 만들기
+## Forms 데이터 모델 만들기
 
 AEM Forms 데이터 통합은 [양식 데이터 모델](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html)을(를) 만들고 작업할 수 있는 직관적인 사용자 인터페이스를 제공합니다. 이전 단계에서 만든 데이터 소스를 기반으로 양식 데이터 모델을 만듭니다.
 

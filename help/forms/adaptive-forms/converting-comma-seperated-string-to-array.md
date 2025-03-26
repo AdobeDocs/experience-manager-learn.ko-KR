@@ -2,7 +2,7 @@
 title: AEM Forms Workflow에서 쉼표로 구분된 문자열을 문자열 배열로 변환
 description: 양식 데이터 모델에 입력 매개 변수 중 하나로 문자열이 있는 경우 양식 데이터 모델의 제출 액션을 호출하기 전에 적응형 양식의 제출 액션에서 생성된 데이터를 마사지해야 합니다.
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
@@ -10,7 +10,7 @@ jira: KT-8507
 exl-id: 9ad69407-2413-416f-9cec-43f88989b31d
 last-substantial-update: 2021-06-09T00:00:00Z
 duration: 115
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '340'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## 프로세스 단계 만들기
 
-프로세스 단계는 AEM 워크플로에서 특정 논리를 실행하려는 경우 사용됩니다. 프로세스 단계는 ECMA 스크립트 또는 OSGi 서비스와 연결할 수 있습니다. 사용자 지정 프로세스 단계는 OSGi 서비스를 실행합니다.
+AEM 워크플로에서 특정 논리를 실행하도록 하려면 프로세스 단계를 사용합니다. 프로세스 단계는 ECMA 스크립트 또는 OSGi 서비스와 연결할 수 있습니다. 사용자 지정 프로세스 단계는 OSGi 서비스를 실행합니다.
 
 제출된 데이터는 다음과 같은 형식입니다. businessUnits 요소의 값은 쉼표로 구분된 문자열로서, 문자열 배열로 변환해야 합니다.
 

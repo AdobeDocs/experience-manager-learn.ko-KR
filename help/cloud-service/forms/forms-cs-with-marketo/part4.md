@@ -2,7 +2,7 @@
 title: AEM Forms과 Marketo(4부)
 description: AEM Forms 양식 데이터 모델을 사용하여 AEM Forms을 Marketo과 통합하는 방법에 대한 자습서입니다.
 feature: Adaptive Forms, Form Data Model
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Integrations, Development
 role: Developer
 level: Experienced
@@ -10,16 +10,17 @@ badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 exl-id: 6b44e6b2-15f7-45b2-8d21-d47f122c809d
 duration: 68
-source-git-commit: 426020f59c7103829b7b7b74acb0ddb7159b39fa
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '281'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 # 통합 테스트
 
 간단한 양식 가져오기를 만들어 Market에서 리드 오브젝트를 표시하여 통합을 테스트합니다.
+
 >[!NOTE]
 >
 >이 기능은 기초 구성 요소를 기반으로 양식을 기반으로 테스트되었습니다.
@@ -27,7 +28,7 @@ ht-degree: 0%
 ## 적응형 양식 만들기
 
 1. 적응형 양식을 만들고 &quot;빈 양식 템플릿&quot;을 기반으로 이전 단계에서 만든 양식 데이터 모델과 연결합니다.
-1. 편집 모드로 양식을 엽니다.
+1. 편집 모드에서 양식을 엽니다.
 1. TextField 구성 요소와 패널 구성 요소를 적응형 양식으로 드래그 앤 드롭합니다. TextField 구성 요소의 제목을 &quot;리드 ID 입력&quot;으로 설정하고 이름을 &quot;리드 ID&quot;로 설정합니다.
 1. 2개의 TextField 구성 요소를 패널 구성 요소로 끌어다 놓습니다.
 1. 두 Textfield 구성 요소의 이름 및 제목을 이름 및 성 로 설정합니다.

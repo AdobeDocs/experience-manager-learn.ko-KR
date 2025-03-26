@@ -1,15 +1,16 @@
 ---
-title: HTML5 양식 제출로 AEM 워크플로우 트리거 - PDF 검토 및 승인
+title: HTML5 양식 제출에서 AEM 워크플로우 트리거 - PDF 검토 및 승인
 description: 제출된 PDF을 검토하는 워크플로우
 feature: Mobile Forms
 doc-type: article
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 jira: kt-16215
 badgeVersions: label="AEM Forms 6.5" before-title="false"
-source-git-commit: 5f42678502a785ead29982044d1f3f5ecf023e0f
+exl-id: ec60d017-8b29-4185-a097-d809e18df4a7
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 1%
@@ -18,7 +19,7 @@ ht-degree: 1%
 
 # 제출된 PDF을 검토하고 승인하는 워크플로우
 
-마지막 및 마지막 단계는 검토 및 승인을 위한 정적 또는 비대화형 PDF을 생성하는 AEM 워크플로우를 만드는 것입니다. 워크플로는 `/content/formsubmissions` 노드에 구성된 AEM 런처를 통해 트리거됩니다.
+마지막 및 마지막 단계는 검토 및 승인을 위해 정적 또는 비대화형 AEM을 생성하는 PDF 워크플로우를 만드는 것입니다. 워크플로는 `/content/formsubmissions` 노드에 구성된 AEM 런처를 통해 트리거됩니다.
 
 다음 스크린샷은 워크플로우와 관련된 단계를 보여 줍니다.
 
@@ -30,7 +31,7 @@ XDP 템플릿과 템플릿에 병합할 데이터가 여기에 지정됩니다. 
 
 ![워크플로](assets/generate-pdf1.PNG)
 
-생성된 PDF이 `submittedPDF`(이)라는 워크플로 변수에 할당됩니다.
+생성된 PDF은 `submittedPDF`(이)라는 워크플로 변수에 할당됩니다.
 
 ![워크플로](assets/generate-pdf2.PNG)
 

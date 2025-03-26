@@ -2,7 +2,7 @@
 title: 서명 프로세스를 트리거할 주 워크플로우 만들기
 description: 데이터베이스에 서명할 양식을 저장하는 워크플로우 만들기
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 thumbnail: 6887.jpg
 jira: KT-6887
 topic: Development
@@ -10,7 +10,7 @@ role: Developer
 level: Intermediate
 exl-id: 338d9522-f6da-4aa7-b5d8-b9fff39ea94b
 duration: 70
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 1%
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 **서명에 Forms 저장**&#x200B;은(는) 사용자 지정 프로세스 단계입니다.
 
-사용자 지정 프로세스 단계를 구현하는 목적은 AEM Workflow를 확장하는 것입니다. 다음 코드는 사용자 지정 프로세스 단계를 구현합니다. 이 코드는 서명할 양식 이름을 추출하고 제출된 양식 데이터를 SignMultipleForms 서비스의 `insertData` 메서드에 전달합니다. 그런 다음 `insertData` 메서드는 데이터 원본 **aemformstuorial**&#x200B;에 의해 식별된 데이터베이스에 행을 삽입합니다.
+사용자 지정 프로세스 단계를 구현하는 목적은 AEM 워크플로우를 확장하는 것입니다. 다음 코드는 사용자 지정 프로세스 단계를 구현합니다. 이 코드는 서명할 양식 이름을 추출하고 제출된 양식 데이터를 SignMultipleForms 서비스의 `insertData` 메서드에 전달합니다. 그런 다음 `insertData` 메서드는 데이터 원본 **aemformstuorial**&#x200B;에 의해 식별된 데이터베이스에 행을 삽입합니다.
 
 이 사용자 지정 프로세스 단계의 코드는 `SignMultipleForms` 서비스를 참조합니다.
 

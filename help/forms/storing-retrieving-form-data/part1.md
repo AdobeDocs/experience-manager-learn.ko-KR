@@ -1,14 +1,14 @@
 ---
 title: MySQL 데이터베이스에서 양식 데이터 저장 및 검색 - 데이터 구성 Source
 description: 양식 데이터 저장 및 검색과 관련된 단계를 안내하는 다중 파트 튜토리얼
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 feature: Adaptive Forms
 topic: Development
 role: Developer
 level: Experienced
 exl-id: dccca658-3373-4de2-8589-21ccba2b7ba6
 duration: 36
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 1%
@@ -17,8 +17,8 @@ ht-degree: 1%
 
 # Data Source 구성
 
-AEM에서 외부 데이터베이스와의 통합을 활성화하는 방법에는 여러 가지가 있습니다. 데이터베이스 통합의 가장 일반적인 표준 방법 중 하나는 [configMgr](http://localhost:4502/system/console/configMgr)을 통해 Apache Sling 연결의 풀링된 DataSource 구성 속성을 사용하는 것입니다.
-첫 번째 단계는 AEM에서 적절한 [MySql 드라이버](https://mvnrepository.com/artifact/mysql/mysql-connector-java)를 다운로드하여 배포하는 것입니다.
+AEM을 통해 외부 데이터베이스와 통합할 수 있는 방법에는 여러 가지가 있습니다. 데이터베이스 통합의 가장 일반적인 표준 방법 중 하나는 [configMgr](http://localhost:4502/system/console/configMgr)을 통해 Apache Sling 연결의 풀링된 DataSource 구성 속성을 사용하는 것입니다.
+첫 번째 단계는 AEM에서 적절한 [MySql 드라이버](https://mvnrepository.com/artifact/mysql/mysql-connector-java)를 다운로드하고 배포하는 것입니다.
 Apache Sling 연결의 풀링된 데이터 소스를 만들고 아래 스크린샷에 지정된 속성을 제공합니다. 데이터베이스 스키마는 이 자습서 자산의 일부로 제공됩니다.
 
 ![데이터 원본](assets/save-continue.PNG)

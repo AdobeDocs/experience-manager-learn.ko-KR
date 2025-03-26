@@ -1,15 +1,15 @@
 ---
 title: AEM Forms을 사용한 자동화된 Forms 테스트 이해
-description: AEM 6.3 Forms은 hobbes.js 프레임워크 위에 구축된 Calvin SDK를 사용하여 적응형 Forms용 AEM 내에서 테스트 사례를 만들 수 있는 기능을 도입했습니다
+description: AEM 6.3 Forms은 hobbes.js 프레임워크 위에 구축된 Calvin SDK을 사용하여 적응형 Forms용 AEM 내에서 테스트 사례를 만들 수 있는 기능을 도입했습니다
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 6122859a-35eb-49d9-a146-3b304fa40413
 last-substantial-update: 2020-09-10T00:00:00Z
 duration: 425
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '88'
 ht-degree: 1%
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # AEM Forms을 사용한 자동화된 Forms 테스트 이해{#understanding-automated-forms-testing-with-aem-forms}
 
-AEM 6.3 Forms에서는 사용자가 hobbes.js 프레임워크 위에 구축된 Calvin SDK를 사용하여 적응형 Forms용 AEM 내에서 테스트 사례를 만들 수 있는 기능을 도입했습니다.
+AEM 6.3 Forms은 hobbes.js 프레임워크 위에 구축된 Calvin SDK을 사용하여 적응형 Forms용 AEM 내에서 테스트 사례를 만들 수 있는 기능을 도입했습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/19700?quality=12&learn=on)
 

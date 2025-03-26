@@ -2,14 +2,14 @@
 title: 적응형 Forms Workflow에서 워크플로우 주석 캡처
 description: AEM Workflow에서 워크플로우 주석 캡처
 feature: Workflow
-version: 6.4
+version: Experience Manager 6.4
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 5c250bbb-bac6-427d-8aca-1fbb1229e02c
 last-substantial-update: 2020-10-10T00:00:00Z
 duration: 73
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 0%
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 이 요구 사항을 충족하기 위해 설명을 캡처하고 이러한 설명을 워크플로우 메타데이터 속성으로 저장하는 데 사용할 수 있는 샘플 OSGi 번들이 제공됩니다.
 
-다음 스크린샷은 [AEM Workflow](http://localhost:4502/editor.html/conf/global/settings/workflow/models/CaptureComments.html)에서 프로세스 단계를 사용하여 댓글을 캡처하고 메타데이터 속성으로 저장하는 방법을 보여 줍니다. &quot;워크플로우 주석 캡처&quot;는 프로세스 단계에서 사용해야 하는 Java 클래스의 이름입니다. 주석을 포함할 메타데이터 속성 이름을 전달해야 합니다. 아래 스크린샷에서 managerComments는 주석을 저장할 메타데이터 속성입니다.
+다음 스크린샷은 [AEM 워크플로](http://localhost:4502/editor.html/conf/global/settings/workflow/models/CaptureComments.html)에서 프로세스 단계를 사용하여 댓글을 캡처하고 메타데이터 속성으로 저장하는 방법을 보여 줍니다. &quot;워크플로우 주석 캡처&quot;는 프로세스 단계에서 사용해야 하는 Java 클래스의 이름입니다. 주석을 포함할 메타데이터 속성 이름을 전달해야 합니다. 아래 스크린샷에서 managerComments는 주석을 저장할 메타데이터 속성입니다.
 
 ![workflowcomments1](assets/workflowcomments1.gif)
 
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 * [파일 시스템에 이 문서와 관련된 자산을 다운로드하고 압축 해제합니다](assets/capturecomments.zip) 자산에는 워크플로 모델 및 샘플 적응형 양식이 포함되어 있습니다.
 
-* 패키지 관리자를 사용하여 AEM에 zip 파일 2개 가져오기
+* 패키지 관리자를 사용하여 2개의 zip 파일을 AEM으로 가져오기
 
 * [이 URL로 이동하여 양식 미리 보기](http://localhost:4502/content/dam/formsanddocuments/capturecomments/jcr:content?wcmmode=disabled)
 

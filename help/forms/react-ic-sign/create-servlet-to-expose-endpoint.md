@@ -2,7 +2,7 @@
 title: 웹 양식 URL을 반환하기 위해 호출할 수 있는 끝점을 표시합니다.
 description: 웹 양식 URL을 반환하는 AEM 서블릿 만들기
 feature: Adaptive Forms,Acrobat Sign
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
@@ -10,7 +10,7 @@ jira: KT-13099
 last-substantial-update: 2023-04-13T00:00:00Z
 exl-id: 3b7632bd-3820-4c1e-aa3f-8a6a4fc26847
 duration: 38
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '70'
 ht-degree: 2%
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 # Acrobat Sign 웹 양식 URL 만들기
 
-POST 끝점을 노출하기 위해 다음 코드를 작성했습니다. 이 끝점은 제출된 데이터에서 icTemplateName을 추출하고 최종 사용자가 서명할 Acrobat Sign 웹 양식 URL을 반환합니다.
+다음 코드는 POST 끝점을 노출하도록 작성되었습니다. 이 끝점은 제출된 데이터에서 icTemplateName을 추출하고 최종 사용자가 서명할 Acrobat Sign 웹 양식 URL을 반환합니다.
 
 
 ```java

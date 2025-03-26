@@ -1,15 +1,15 @@
 ---
 title: DAM에 AEM Forms DoR 태그 지정 및 저장
-description: 이 문서에서는 AEM DAM에 AEM Forms에서 생성한 DoR을 저장하고 태그 지정하는 사용 사례를 살펴봅니다. 제출된 양식 데이터를 기반으로 문서에 대한 태깅을 수행합니다.
+description: 이 문서에서는 AEM DAM에서 AEM Forms에 의해 생성된 DoR을 저장하고 태그 지정하는 사용 사례를 살펴봅니다. 제출된 양식 데이터를 기반으로 문서에 대한 태깅을 수행합니다.
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 832f04b4-f22f-4cf9-8136-e3c1081de7a9
 last-substantial-update: 2019-03-20T00:00:00Z
 duration: 191
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 0%
@@ -18,9 +18,9 @@ ht-degree: 0%
 
 # DAM에 AEM Forms DoR 태그 지정 및 저장 {#tagging-and-storing-aem-forms-dor-in-dam}
 
-이 문서에서는 AEM DAM에 AEM Forms에서 생성한 DoR을 저장하고 태그 지정하는 사용 사례를 살펴봅니다. 제출된 양식 데이터를 기반으로 문서에 대한 태깅을 수행합니다.
+이 문서에서는 AEM DAM에서 AEM Forms에 의해 생성된 DoR을 저장하고 태그 지정하는 사용 사례를 살펴봅니다. 제출된 양식 데이터를 기반으로 문서에 대한 태깅을 수행합니다.
 
-고객의 일반적인 요구는 AEM DAM에 AEM Forms에서 생성한 기록 문서(DoR)를 저장하고 태그를 지정하는 것입니다. 문서의 태깅은 적응형 Forms의 제출 데이터를 기반으로 해야 합니다. 예를 들어 제출된 데이터의 고용 상태가 &quot;사용 중지됨&quot;인 경우 &quot;사용 중지됨&quot; 태그로 문서에 태그를 지정하고 문서를 DAM에 저장하려고 합니다.
+일반적인 고객 요구는 AEM Forms에서 생성한 DoR(기록 문서)을 AEM DAM에 저장하고 태그를 지정하는 것입니다. 문서의 태깅은 적응형 Forms의 제출 데이터를 기반으로 해야 합니다. 예를 들어 제출된 데이터의 고용 상태가 &quot;사용 중지됨&quot;인 경우 &quot;사용 중지됨&quot; 태그로 문서에 태그를 지정하고 문서를 DAM에 저장하려고 합니다.
 
 사용 사례는 다음과 같습니다.
 

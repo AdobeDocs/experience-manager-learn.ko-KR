@@ -3,14 +3,14 @@ title: 데이터를 병합하여 인쇄 채널 문서 생성
 description: 입력 스트림에 포함된 데이터를 병합하여 인쇄 채널 문서를 생성하는 방법을 알아봅니다
 feature: Interactive Communication
 doc-type: article
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: 3bfbb4ef-0c51-445a-8d7b-43543a5fa191
 last-substantial-update: 2019-07-07T00:00:00Z
 duration: 151
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 0%

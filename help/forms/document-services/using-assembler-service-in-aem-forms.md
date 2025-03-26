@@ -2,14 +2,14 @@
 title: AEM Forms에서 어셈블러 서비스 사용
 description: AEM Forms에서 어셈블러 서비스를 사용하여 여러 pdf 파일 어셈블하기
 feature: Assembler
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 18da12ea-b1ea-48e4-979e-3cb59584dfbd
 last-substantial-update: 2020-07-07T00:00:00Z
 duration: 76
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 0%
@@ -108,7 +108,7 @@ AEM 서버에서 이 기능을 사용하려면
 * 다운로드[사용자 지정 문서 서비스 번들](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
 * [서비스 사용자 번들로 개발](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar) 다운로드
 * [felix 웹 콘솔](http://localhost:4502/system/console/bundles)을 사용하여 번들 배포 및 시작
-* 브라우저를 [AssemblePdfs.html](http://localhost:4502/content/DocumentServices/AssemblePdfs.html)(으)로 지정
+* 브라우저를 [AssemblePdfs.html](http://localhost:4502/content/DocumentServices/AssemblePdfs.html)&#x200B;(으)로 지정
 * PDF 파일 두 개 드래그 앤 드롭
 
 >[!NOTE]

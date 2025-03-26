@@ -2,7 +2,7 @@
 title: 서버에 샘플 에셋 배포
 description: 로컬 서버에서 사용 사례를 작업합니다.
 feature: Adaptive Forms,Acrobat Sign
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
@@ -10,7 +10,7 @@ jira: KT-13099
 last-substantial-update: 2023-04-13T00:00:00Z
 exl-id: f12f83fa-673a-454c-aa52-6ea769a182b7
 duration: 36
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '157'
 ht-degree: 0%
@@ -57,7 +57,7 @@ EmergencyContact.js 파일을 열고 가져오기 메서드의 URL을 환경에 
  
 ```
 
-REACT 앱에서 AEM 끝점에 대한 POST 호출을 활성화하려면 Adobe Granite 원본 간 리소스 공유 정책 구성의 허용된 원본 필드에 적절한 항목을 지정해야 합니다.
+REACT 앱에서 AEM 엔드포인트에 대한 POST를 활성화하려면 Adobe Granite 원본 간 리소스 공유 정책 구성의 허용된 원본 필드에 적절한 항목을 지정해야 합니다.
 
 ![cors-setting](assets/cors-settings.png)
 

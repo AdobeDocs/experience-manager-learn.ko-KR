@@ -3,7 +3,7 @@ title: 샘플 배포
 description: 로컬 AEM Forms 인스턴스에서 실행되는 사용 사례 가져오기
 feature: Adaptive Forms
 type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-6602
 thumbnail: 6602.jpg
 topic: Development
@@ -11,7 +11,7 @@ role: Developer
 level: Intermediate
 exl-id: cdfae631-86d7-438f-9baf-afd621802723
 duration: 186
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 1%
@@ -34,13 +34,13 @@ ht-degree: 1%
 
 이전 단계에서 만든 데이터베이스 스키마를 가리키는 **StoreAndRetrieveAfData**&#x200B;이라는 Apache Sling 연결의 풀링된 DataSource를 만들어야 합니다. OSGi 번들의 코드는 이 데이터 소스 이름을 사용합니다.
 
-## 양식 데이터 모델 만들기
+## Forms 데이터 모델 만들기
 
 양식 데이터 모델은 **StoreAndRetrieveAfData**&#x200B;이라는 이 데이터 원본을 기반으로 만들어야 합니다. 이 양식 데이터 모델은 애플리케이션 ID와 연결된 휴대폰 번호를 가져오는 데 사용됩니다. 양식 데이터 모델은 [여기에서 다운로드할 수 있습니다.](assets/2-Factor-Authentication-DataSource-and-FDM.zip)
 
 ## Nexmo로 개발자 계정 만들기
 
-OTP 코드를 보내고 확인하기 위해 [Nexmo](https://dashboard.nexmo.com/)(으)로 개발자 계정을 만드십시오. API 키 및 API 암호 키를 기록합니다. 데이터 소스 및 양식 데이터 모델은 이 서비스에 대해 이미 만들어졌으며 이전 단계에서 언급한 자산에 포함됩니다.
+OTP 코드를 보내고 확인하기 위해 [Nexmo](https://dashboard.nexmo.com/)&#x200B;(으)로 개발자 계정을 만드십시오. API 키 및 API 암호 키를 기록합니다. 데이터 소스 및 양식 데이터 모델은 이 서비스에 대해 이미 만들어졌으며 이전 단계에서 언급한 자산에 포함됩니다.
 
 ## 다음 OSGi 번들 배포
 

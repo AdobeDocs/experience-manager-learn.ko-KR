@@ -2,7 +2,7 @@
 title: 항목 로드 경로를 사용하여 드롭다운 목록 채우기
 description: crx 노드에서 값을 읽을 수 있도록 드롭다운 목록을 구성하고 채웁니다.
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-10961
 topic: Development
 role: Developer
@@ -11,7 +11,7 @@ last-substantial-update: 2022-09-20T00:00:00Z
 thumbnail: item-load.jpg
 exl-id: 89c486c8-95c3-4cd4-bf8e-a1b3558f17d6
 duration: 34
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 0%

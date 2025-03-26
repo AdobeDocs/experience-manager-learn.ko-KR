@@ -3,7 +3,7 @@ title: 클라이언트 라이브러리 만들기
 description: 클라이언트 라이브러리를 만들어 "저장 및 종료" 버튼의 클릭 이벤트를 처리합니다.
 feature: Adaptive Forms
 type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-6597
 thumbnail: 6597.pg
 topic: Development
@@ -11,7 +11,7 @@ role: Developer
 level: Intermediate
 exl-id: c90eea73-bd44-40af-aa98-d766aa572415
 duration: 42
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '140'
 ht-degree: 1%

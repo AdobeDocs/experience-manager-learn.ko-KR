@@ -3,7 +3,7 @@ title: 작업 알림 할당 사용자 지정
 description: 작업 알림 할당 전자 메일에 양식 데이터 포함
 feature: Workflow
 doc-type: article
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-6279
 thumbnail: KT-6279.jpg
 topic: Development
@@ -12,7 +12,7 @@ level: Experienced
 exl-id: 0cb74afd-87ff-4e79-a4f4-a4634ac48c51
 last-substantial-update: 2020-07-07T00:00:00Z
 duration: 144
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 0%

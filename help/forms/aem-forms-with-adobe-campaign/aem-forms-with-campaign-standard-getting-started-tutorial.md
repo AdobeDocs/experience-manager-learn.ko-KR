@@ -2,7 +2,7 @@
 title: AEM Forms 및 Adobe Campaign Standard 통합
 description: AEM Forms 양식 데이터 모델을 사용하여 AEM Forms을 Adobe Campaign Standard과 통합하여 ACS 캠페인 프로필 정보 등을 가져옵니다.
 feature: Adaptive Forms, Form Data Model
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Integrations, Development
 role: Developer
 level: Experienced
@@ -11,7 +11,7 @@ badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 last-substantial-update: 2020-03-20T00:00:00Z
 duration: 44
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 1%
@@ -30,7 +30,7 @@ AEM Forms을 ACS와 통합하려면 다음 단계를 수행해야 합니다.
 
 * [ACS 인스턴스에 대한 API 액세스를 설정합니다.](https://experienceleague.adobe.com/docs/campaign-standard/using/working-with-apis/get-started-apis.html?lang=en)
 * JSON 웹 토큰을 만듭니다.
-* JSON 웹 토큰을 액세스 토큰에 대한 Adobe Identity Management 서비스와 교환합니다.
+* JSON 웹 토큰을 Adobe Identity Management Service와 교환하여 액세스 토큰을 얻습니다.
 * ACS 인스턴스에 대한 모든 요청에서 X-API-Key와 함께 인증 HTTP 헤더에 이 액세스 토큰을 포함합니다.
 
 시작하려면 다음 지침을 따르십시오

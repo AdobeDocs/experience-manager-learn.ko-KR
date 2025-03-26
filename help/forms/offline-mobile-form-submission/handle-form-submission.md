@@ -1,15 +1,16 @@
 ---
-title: HTML5 양식 제출에 대한 AEM 워크플로우 트리거 - PDF 제출 처리
+title: HTML5 양식 제출에서 AEM 워크플로우 트리거 - PDF 제출 처리
 description: HTML5/PDF 양식 제출 처리
 feature: Mobile Forms
 doc-type: article
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 jira: kt-16133
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 level: Experienced
-source-git-commit: 9545fae5a5f5edd6f525729e648b2ca34ddbfd9f
+exl-id: ef8ed87d-37c1-4d01-8df6-7a78c328703d
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '146'
 ht-degree: 1%
@@ -18,12 +19,12 @@ ht-degree: 1%
 
 # 양식 제출 처리
 
-이 부분에서는 AEM Publish에서 실행하여 PDFform 또는 HTML5 양식 제출을 처리하는 간단한 서블릿을 만듭니다. 이 서블릿은 제출된 데이터를 AEM 작성자 저장소의 `nt:file` 노드로 저장하는 역할을 하는 AEM 작성자 인스턴스에서 실행 중인 서블릿에 HTTP POST 요청을 수행합니다.
+이 부분에서는 PDFform 또는 HTML5 양식 제출을 처리하기 위해 AEM Publish에서 실행되는 간단한 서블릿을 만듭니다. 이 서블릿은 제출된 데이터를 AEM 작성자 저장소의 `nt:file` 노드로 저장하는 역할을 하는 AEM 작성자 인스턴스에서 실행 중인 서블릿에 HTTP POST 요청을 수행합니다.
 
-다음은 PDF/HTML5 양식 제출을 처리하는 서블릿의 코드입니다. 이 서블릿에서는 AEM 작성자 인스턴스의 **/bin/startworkflow**&#x200B;에 탑재된 서블릿에 POST 호출을 수행합니다. 이 서블릿은 AEM 작성자의 저장소에 양식 데이터를 저장합니다.
+다음은 PDF/HTML5 양식 제출을 처리하는 서블릿의 코드입니다. 이 서블릿에서는 AEM 작성자 인스턴스의 **/bin/startworkflow**&#x200B;에 탑재된 서블릿에 대한 POST 호출을 수행합니다. 이 서블릿은 양식 데이터를 AEM 작성자 저장소에 저장합니다.
 
 
-## AEM Publish 서블릿
+## AEM 게시 서블릿
 
 다음 코드는 PDF/HTML5 양식 제출을 처리합니다. 이 코드는 게시 인스턴스에서 실행됩니다.
 

@@ -2,7 +2,7 @@
 title: AEM Forms과 Acrobat Sign 통합
 description: Acrobat Sign과 AEM Forms을 통합하여 복잡한 트랜잭션을 자동화하고 원활한 디지털 경험의 일부로서 합법적인 전자 서명을 포함할 수 있습니다.
 feature: Adaptive Forms, Acrobat Sign
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Integrations, Development
 role: Developer
 level: Beginner
@@ -11,7 +11,7 @@ badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 last-substantial-update: 2020-03-20T00:00:00Z
 duration: 31
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 12%

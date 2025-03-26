@@ -4,12 +4,12 @@ description: 제출자의 관리자에게 AEM Forms 워크플로 작업 할당
 feature: Adaptive Forms, Workflow
 topic: Integrations
 role: Developer
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 level: Intermediate
 exl-id: 2e9754ff-49fe-4260-b911-796bcc4fd266
 last-substantial-update: 2021-09-18T00:00:00Z
 duration: 111
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 0%
@@ -69,7 +69,7 @@ Manager 속성이 LDAP에 저장되는 방법에 따라 관리자 ID를 가져�
 * [setvalue 번들을 다운로드하여 배포합니다](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). 관리자 속성을 설정하기 위한 사용자 지정 OSGI 번들입니다.
 * [DevelopingWithServiceUserBundle 다운로드 및 설치](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 * [패키지 관리자를 사용하여 이 문서와 연결된 Assets을 AEM으로 가져오기](assets/aem-forms-ldap.zip).이 패키지의 일부로 LDAP 구성 파일, 워크플로 및 적응형 양식이 포함됩니다.
-* AEM 적절한 LDAP 자격 증명을 사용하여 LDAP를 구성합니다.
+* 적절한 LDAP 자격 증명을 사용하여 LDAP로 AEM을 구성합니다.
 * LDAP 자격 증명을 사용하여 AEM에 로그인합니다.
 * [timeoffrequestform](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled) 열기
 * 양식을 작성하고 제출하십시오.

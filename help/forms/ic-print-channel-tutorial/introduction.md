@@ -3,14 +3,14 @@ title: 인쇄 채널용 첫 번째 대화형 통신 만들기
 description: 인쇄 채널용 대화형 통신을 만드는 데 필요한 단계를 알아봅니다. Interactive Communications는 AEM Forms 6.4의 새로운 기능입니다.
 feature: Interactive Communication
 doc-type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 1949aeff-ae56-4abd-8e63-23c2fb4859f2
 last-substantial-update: 2019-08-07T00:00:00Z
 duration: 31
-source-git-commit: 61d97738e295d9dc39281cb59e6ef1ca73944387
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 4%

@@ -2,14 +2,14 @@
 title: Forms Workflow의 이메일 전송 단계 사용
 description: 이메일 보내기 단계는 AEM Forms 6.4에서 도입되었습니다. 이 단계를 사용하여 첨부 파일이 있거나 없는 이메일을 보낼 수 있는 비즈니스 프로세스 또는 워크플로우를 빌드할 수 있습니다. 다음 비디오는 이메일 구성 요소 전송을 구성하는 단계를 안내합니다
 feature: Workflow
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 21e58bbc-c1d6-4d41-a4d4-f522a3a5d4a7
 last-substantial-update: 2020-06-09T00:00:00Z
 duration: 314
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 0%
@@ -25,8 +25,8 @@ ht-degree: 0%
 이 문서의 일부로 다음 사용 사례를 소개합니다.
 
 1. 사용자가 휴가 요청 양식을 작성합니다.
-1. 양식 제출 시 AEM 워크플로가 트리거됩니다
-1. AEM Workflow는 이메일 전송 구성 요소를 사용하여 DoR이 첨부 파일로 포함된 이메일을 전송합니다
+1. 양식 제출 시 AEM 워크플로우가 트리거됩니다
+1. AEM 워크플로는 이메일 전송 구성 요소를 사용하여 DoR이 첨부 파일로 포함된 이메일을 전송합니다
 
 이메일 보내기 단계를 사용하기 전에 [configMgr](http://localhost:4502/system/console/configMgr)에서 일별 CQ 메일 서비스를 구성해야 합니다. 사용자 환경에 맞는 값 제공
 
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->AEM Forms 6.5 이상에서는 메타데이터 속성을 만드는 데 이 사용자 지정 코드가 필요하지 않습니다. AEM 워크플로에서 변수 기능을 사용하십시오.
+>AEM Forms 6.5 이상에서는 메타데이터 속성을 만드는 데 이 사용자 지정 코드가 필요하지 않습니다. AEM 워크플로우에서 변수 기능을 사용하십시오.
 
 이메일 전송 구성 요소의 첨부 파일 탭이 아래 스크린샷에 따라 구성되어 있는지 확인하십시오
 ![전자 메일 첨부 파일 보내기 탭](assets/sendemailcomponentconfigure.jpg)&quot;DOR.pdf&quot; 값은 적응형 양식의 제출 옵션에 지정된 기록 문서 경로에 지정된 값과 일치해야 합니다.

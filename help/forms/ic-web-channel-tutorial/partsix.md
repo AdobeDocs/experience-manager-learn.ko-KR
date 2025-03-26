@@ -4,13 +4,13 @@ description: 첫 번째 대화형 통신 문서를 만들기 위한 여러 단�
 discoiquuid: b44ff855-9ead-471e-8f0f-b562b88a5337
 feature: Interactive Communication
 doc-type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 exl-id: a0a0c8dc-5302-446c-9fec-e23fe1320e34
 duration: 33
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 1%

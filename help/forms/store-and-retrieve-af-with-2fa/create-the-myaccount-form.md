@@ -3,7 +3,7 @@ title: MyAccountForm 만들기
 description: 응용 프로그램 ID 및 전화 번호를 성공적으로 확인하면 부분적으로 완료된 양식을 검색하도록 myaccount 양식을 만듭니다.
 feature: Adaptive Forms
 type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-6599
 thumbnail: 6599.jpg
 topic: Development
@@ -11,7 +11,7 @@ role: User
 level: Beginner
 exl-id: 1ecd8bc0-068f-4557-bce4-85347c295ce0
 duration: 53
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 0%
@@ -46,7 +46,7 @@ com.adobe.aemds.guide.utils.GuideSubmitUtils.setForwardPath(slingRequest,"/bin/r
 
 * MyAccountForm은 [여기에서 다운로드](assets/my-account-form.zip)할 수 있습니다.
 
-* 샘플 양식은 올바르게 렌더링하기 위해 AEM으로 가져와야 하는 [사용자 지정 적응형 양식 템플릿](assets/custom-template-with-page-component.zip)을(를) 기반으로 합니다.
+* 샘플 양식은 샘플 양식을 올바르게 렌더링하기 위해 AEM으로 가져와야 하는 [사용자 지정 적응형 양식 템플릿](assets/custom-template-with-page-component.zip)을 기반으로 합니다.
 
 * MyAccountForm 제출과 연결된 [사용자 지정 제출 처리기](assets/custom-submit-my-account-form.zip)를 AEM으로 가져와야 합니다.
 

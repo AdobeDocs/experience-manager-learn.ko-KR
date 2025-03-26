@@ -1,15 +1,15 @@
 ---
 title: 적응형 양식 데이터 저장
-description: AEM 워크플로의 일부로 DataBase에 적응형 양식 데이터 저장
+description: 적응형 양식 데이터를 AEM 워크플로의 일부로 DataBase에 저장
 feature: Adaptive Forms, Form Data Model
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 3dd552da-fc7c-4fc7-97ec-f20b6cc33df0
 last-substantial-update: 2020-03-20T00:00:00Z
 duration: 146
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## JDBC 연결 풀
 
-* [ConfigMgr](http://localhost:4502/system/console/configMgr)(으)로 이동
+* [ConfigMgr](http://localhost:4502/system/console/configMgr)&#x200B;(으)로 이동
 
    * &quot;JDBC 연결 풀&quot;을 검색합니다. 새 Day Commons JDBC 연결 풀을 만듭니다. 데이터베이스별 설정을 지정합니다.
 
@@ -215,7 +215,7 @@ public class InsertAfData implements WorkflowProcess {
 
    * [AEM 웹 콘솔](http://localhost:4502/system/console/bundles)을 사용하여 jar 파일을 배포합니다. 이 jar 파일에는 양식 데이터를 데이터베이스에 저장하는 코드가 포함되어 있습니다.
 
-   * 패키지 관리자를 사용하여 [AEM](http://localhost:4502/crx/packmgr/index.jsp)에 두 zip 파일을 가져옵니다. 이렇게 하면 양식 제출 시 워크플로우를 트리거하는 [샘플 워크플로우](http://localhost:4502/editor.html/conf/global/settings/workflow/models/storeformdata.html) 및 [샘플 적응형 양식](http://localhost:4502/editor.html/content/forms/af/addformdataindb.html)이 제공됩니다. 워크플로우 단계에서 프로세스 인수를 확인합니다. 이러한 인수는 양식 이름과 적응형 양식 데이터를 포함할 데이터 파일의 이름을 나타냅니다. 데이터 파일은 crx 저장소의 페이로드 폴더에 저장됩니다. 제출 시 AEM 워크플로와 데이터 파일 구성(data.xml)을 트리거하도록 [적응형 양식](http://localhost:4502/editor.html/content/forms/af/addformdataindb.html)을(를) 구성하는 방법에 주목합니다.
+   * 패키지 관리자를 사용하여 [AEM](http://localhost:4502/crx/packmgr/index.jsp)로 두 zip 파일을 가져옵니다. 이렇게 하면 양식 제출 시 워크플로우를 트리거하는 [샘플 워크플로우](http://localhost:4502/editor.html/conf/global/settings/workflow/models/storeformdata.html) 및 [샘플 적응형 양식](http://localhost:4502/editor.html/content/forms/af/addformdataindb.html)이 제공됩니다. 워크플로우 단계에서 프로세스 인수를 확인합니다. 이러한 인수는 양식 이름과 적응형 양식 데이터를 포함할 데이터 파일의 이름을 나타냅니다. 데이터 파일은 crx 저장소의 페이로드 폴더에 저장됩니다. 제출 및 데이터 파일 구성(data.xml) 시 AEM 워크플로를 트리거하도록 [적응형 양식](http://localhost:4502/editor.html/content/forms/af/addformdataindb.html)을(를) 구성하는 방법에 주목합니다.
 
    * 양식을 미리 보고 입력한 후 제출합니다. 데이터베이스에 새 행이 만들어집니다.
 

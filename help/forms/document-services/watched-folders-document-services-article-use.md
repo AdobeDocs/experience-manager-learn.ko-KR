@@ -2,14 +2,14 @@
 title: AEM Forms에서 감시 폴더 사용
 description: AEM Forms에서 감시 폴더 구성 및 사용
 feature: Output Service
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: abb74d44-d1b9-44d6-a49f-36c01acfecb4
 last-substantial-update: 2020-07-07T00:00:00Z
 duration: 86
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 이 문서에서는 감시 폴더 메커니즘을 통한 출력 서비스를 사용하여 템플릿과 데이터를 병합하는 사용 사례를 다룹니다.
 
-출력 서비스는 AEM Document Services의 일부인 OSGi 서비스입니다. 출력 서비스는 AEM Forms Designer의 다양한 출력 형식 및 출력 디자인 기능을 지원합니다. 출력 서비스는 XFA 템플릿 및 XML 데이터를 변환하여 다양한 형식의 인쇄 문서를 생성할 수 있습니다.
+출력 서비스는 AEM 문서 서비스의 일부인 OSGi 서비스입니다. 출력 서비스는 AEM Forms Designer의 다양한 출력 형식 및 출력 디자인 기능을 지원합니다. 출력 서비스는 XFA 템플릿 및 XML 데이터를 변환하여 다양한 형식의 인쇄 문서를 생성할 수 있습니다.
 
 출력 서비스에 대해 자세히 알아보려면 [여기를 클릭하세요](https://helpx.adobe.com/aem-forms/6/output-service.html).
 시스템에서 감시 폴더를 설정하려면 아래 단계를 따르십시오.

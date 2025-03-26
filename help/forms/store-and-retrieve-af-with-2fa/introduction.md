@@ -3,7 +3,7 @@ title: MySQL 데이터베이스에서 첨부 파일이 있는 양식 데이터 �
 description: 여러 부분으로 구성된 튜토리얼을 통해 첨부 파일이 있는 양식 데이터 저장 및 검색 단계를 안내합니다.
 feature: Adaptive Forms
 type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-6593
 thumbnail: 327122.jpg
 topic: Development
@@ -12,7 +12,7 @@ level: Experienced
 exl-id: b278652f-6c09-4abc-b92e-20bfaf2e791a
 last-substantial-update: 2020-11-07T00:00:00Z
 duration: 148
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 2%

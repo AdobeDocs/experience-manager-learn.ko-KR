@@ -2,14 +2,14 @@
 title: AEM Forms에서 사용자 정의 제출 작성
 description: 적응형 양식에 대한 사용자 정의 제출 액션을 빠르고 간편하게 만들 수 있는 방법
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 64b586a6-e9ef-4a3d-8528-55646ab03cc4
 last-substantial-update: 2021-04-09T00:00:00Z
 duration: 51
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 1%
@@ -40,7 +40,7 @@ ht-degree: 1%
 
 
 * 변경 내용 저장
-* POST CustomSubmitHelpx 노드 아래에 post.user.jsp라는 새 파일을 만듭니다.적응형 양식이 제출되면 이 JSP가 호출됩니다. 이 파일에서 요구 사항에 따라 JSP 코드를 작성할 수 있습니다. 다음 코드는 요청을 서블릿에 전달합니다.
+* CustomSubmitHelpx 노드 아래에 post.POST.jsp라는 새 파일을 만듭니다.적응형 양식이 제출되면 이 JSP가 호출됩니다. 이 파일에서 요구 사항에 따라 JSP 코드를 작성할 수 있습니다. 다음 코드는 요청을 서블릿에 전달합니다.
 
 ```java
 <%

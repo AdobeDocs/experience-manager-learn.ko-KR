@@ -3,7 +3,7 @@ title: Data Source 구성
 description: MySQL 데이터베이스를 가리키는 DataSource 만들기
 feature: Adaptive Forms
 type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-6541
 thumbnail: 6541.jpg
 topic: Development
@@ -11,7 +11,7 @@ role: Developer
 level: Beginner
 exl-id: a87ff428-15f7-43c9-ad03-707eab6216a9
 duration: 64
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 3%
@@ -20,7 +20,7 @@ ht-degree: 3%
 
 # Data Source 구성
 
-AEM에서 외부 데이터베이스와의 통합을 활성화하는 방법에는 여러 가지가 있습니다. 데이터베이스 통합의 가장 일반적인 표준 사례 중 하나는 [configMgr](http://localhost:4502/system/console/configMgr)을 통해 Apache Sling 연결의 풀링된 DataSource 구성 속성을 사용하는 것입니다.
+AEM에서 외부 데이터베이스와 통합할 수 있는 방법에는 여러 가지가 있습니다. 데이터베이스 통합의 가장 일반적인 표준 사례 중 하나는 [configMgr](http://localhost:4502/system/console/configMgr)을 통해 Apache Sling 연결의 풀링된 DataSource 구성 속성을 사용하는 것입니다.
 첫 번째 단계는 적절한 [MySQL 드라이버](https://mvnrepository.com/artifact/mysql/mysql-connector-java)를 다운로드하여 AEM에 배포하는 것입니다.
 그런 다음 해당 데이터베이스와 관련된 Sling 연결 풀링된 DataSource 속성을 설정합니다. 다음 스크린샷은 이 자습서에 사용된 설정을 보여 줍니다. 데이터베이스 스키마는 이 자습서 자산의 일부로 제공됩니다.
 
@@ -51,7 +51,7 @@ AEM에서 외부 데이터베이스와의 통합을 활성화하는 방법에는
 [데이터베이스 스키마](assets/data-base-schema.sql)를 가져와서 데이터베이스를 만드십시오.
 mySQL Workbench 사용.
 
-## 양식 데이터 모델 만들기
+## Forms 데이터 모델 만들기
 
 양식 데이터 모델을 만들고 이전 단계에서 만든 데이터 소스를 기반으로 합니다.
 아래 스크린샷과 같이 이 양식 데이터 모델의 **get** 서비스를 구성하십시오.

@@ -1,16 +1,16 @@
 ---
 title: 워크플로우에서 단계로 양식 데이터 모델 서비스 사용
-description: 이제 AEM Forms 6.4부터 양식 데이터 모델을 AEM Workflow의 일부로 사용할 수 있습니다. 다음 비디오는 AEM Workflow에서 양식 데이터 모델 단계를 구성하는 데 필요한 단계를 안내합니다.
+description: 이제 AEM Forms 6.4부터 양식 데이터 모델을 AEM Workflow의 일부로 사용할 수 있습니다. 다음 비디오는 AEM 워크플로에서 양식 데이터 모델 단계를 구성하는 데 필요한 단계를 안내합니다.
 feature: Workflow
 type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: 0c77a853-fa71-46ac-8626-99bc69d6222d
 last-substantial-update: 2020-06-09T00:00:00Z
 duration: 205
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # 워크플로우에서 단계로 양식 데이터 모델 서비스 사용 {#using-form-data-model-service-as-step-in-workflow}
 
-이제 AEM Forms 6.4부터 양식 데이터 모델을 AEM Workflow의 일부로 사용할 수 있습니다. 다음 비디오는 AEM Workflow에서 양식 데이터 모델 단계를 구성하는 데 필요한 단계를 안내합니다
+이제 AEM Forms 6.4부터 양식 데이터 모델을 AEM Workflow의 일부로 사용할 수 있습니다. 다음 비디오는 AEM 워크플로에서 양식 데이터 모델 단계를 구성하는 데 필요한 단계를 안내합니다
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/21719?quality=12&learn=on)
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 * [여기](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html)에 설명된 대로 SampleRest.war 파일로 tomcat을 설정합니다.Tomcat에 배포된 war 파일에는 지원자의 크레딧 점수를 반환하는 코드가 있습니다. 크레딧 스코어는 200에서 800 사이의 임의의 숫자입니다
 
-* [패키지 관리자를 사용하여 자산을 AEM으로 가져오기](assets/invoke-fdm-as-service-step.zip). 패키지에는 다음이 포함됩니다.
+* [패키지 관리자를 사용하여 AEM으로 에셋 가져오기](assets/invoke-fdm-as-service-step.zip). 패키지에는 다음이 포함됩니다.
 
    * FDM 단계를 사용하는 워크플로우 모델.
    * FDM 단계에서 사용되는 양식 데이터 모델

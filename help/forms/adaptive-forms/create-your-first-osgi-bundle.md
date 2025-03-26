@@ -1,15 +1,15 @@
 ---
-title: AEM Forms를 사용하여 첫 번째 OSGi 번들 생성
+title: AEM Forms를 사용하여 첫 번째 OSGi 번들 만들기
 description: Maven 및 eclipse를 사용하여 첫 번째 OSGi 번들 구축
 feature: Adaptive Forms
 doc-type: article
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 last-substantial-update: 2021-06-09T00:00:00Z
 duration: 177
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '816'
 ht-degree: 0%
@@ -30,7 +30,7 @@ OSGi 번들은 Java 코드, 리소스 및 번들과 그 의존성을 설명하�
 ![데이터 원본](assets/java-home.JPG)
 
 >[!NOTE]
-> JDK 15는 사용하지 마십시오. AEM에서는 지원되지 않습니다.
+> JDK 15는 사용하지 마십시오. AEM에서 지원하지 않습니다.
 
 ### JDK 버전 테스트
 
@@ -118,7 +118,7 @@ Enter 키를 눌러 다른 속성의 기본값을 적용합니다.
 
 ## 프로젝트 빌드
 
-OSGi 서비스 또는 서블릿을 작성했으면 프로젝트를 빌드하여 Felix 웹 콘솔을 사용하여 배포할 수 있는 OSGi 번들을 생성해야 합니다. Maven 프로젝트에 적절한 클라이언트 SDK를 포함하려면 [AEMFD 클라이언트 SDK](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/)를 참조하십시오. 아래와 같이 핵심 프로젝트 `pom.xml`의 종속성 섹션에 AEM FD 클라이언트 SDK를 포함해야 합니다.
+OSGi 서비스 또는 서블릿을 작성했으면 프로젝트를 빌드하여 Felix 웹 콘솔을 사용하여 배포할 수 있는 OSGi 번들을 생성해야 합니다. Maven 프로젝트에 적절한 클라이언트 SDK을 포함하려면 [AEMFD 클라이언트 SDK](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/)을(를) 참조하십시오. 아래와 같이 핵심 프로젝트 `pom.xml`의 종속성 섹션에 AEM FD 클라이언트 SDK을 포함해야 합니다.
 
 ```xml
 <dependency>

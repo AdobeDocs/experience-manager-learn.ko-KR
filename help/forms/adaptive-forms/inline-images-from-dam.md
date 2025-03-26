@@ -2,7 +2,7 @@
 title: 적응형 Forms에서 DAM 이미지 인라인 표시
 description: 적응형 Forms에서 DAM 이미지 인라인 표시
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
@@ -11,7 +11,7 @@ thumbnail: inline-dam.jpg
 kt: kt-11307
 exl-id: 339eb16e-8ad8-4b98-939c-b4b5fd04d67e
 duration: 60
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 0%
@@ -83,8 +83,8 @@ async function createFile(imageName){
 
 ### 서버에 배포
 
-* AEM 패키지 관리자를 사용하여 AEM 인스턴스에 [클라이언트 라이브러리와 샘플 이미지](assets/InlineDAMImage.zip)를 다운로드하여 설치하십시오.
+* AEM 패키지 관리자를 사용하여 AEM 인스턴스에 [클라이언트 라이브러리 및 샘플 이미지](assets/InlineDAMImage.zip)를 다운로드하여 설치하십시오.
 * AEM 패키지 관리자를 사용하여 AEM 인스턴스에 [샘플 양식](assets/FieldInspectionForm.zip)을(를) 다운로드하여 설치하십시오.
-* 브라우저를 [FileInspectionForm](http://localhost:4502/content/dam/formsanddocuments/fieldinspection/fieldinspection/jcr:content?wcmmode=disabled)(으)로 지정
+* 브라우저를 [FileInspectionForm](http://localhost:4502/content/dam/formsanddocuments/fieldinspection/fieldinspection/jcr:content?wcmmode=disabled)&#x200B;(으)로 지정
 * 고정장치 중 하나를 선택합니다
 * 양식에 이미지가 표시됩니다.

@@ -3,13 +3,13 @@ title: JSON 스키마 및 데이터가 포함된 AEM Forms[Part2]
 description: JSON 스키마를 사용한 적응형 양식 만들기 및 제출된 데이터 쿼리와 관련된 단계를 안내하는 다중 파트 튜토리얼입니다.
 feature: Adaptive Forms
 doc-type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 29195c70-af12-4a22-8484-3c87a1e07378
 duration: 110
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 제출된 데이터를 데이터베이스에 저장하기 위해 바인딩된 데이터와 양식 이름 및 스토어를 추출하는 서블릿을 작성하겠습니다. 양식 제출을 처리하고 afBoundData를 데이터베이스에 저장하는 전체 코드는 아래에 나와 있습니다.
 
-양식 제출을 처리하기 위해 사용자 정의 제출을 만들었습니다. 이 사용자 정의 제출의 post.request.jsp에서 POST을 서블릿에 전달합니다.
+양식 제출을 처리하기 위해 사용자 정의 제출을 만들었습니다. 이 사용자 정의 제출의 post.POST.jsp에서는 요청을 서블릿에 전달합니다.
 
 사용자 지정 제출 요청에 대한 자세한 내용은 이 [문서](https://helpx.adobe.com/experience-manager/kt/forms/using/custom-submit-aem-forms-article.html)를 참조하세요.
 

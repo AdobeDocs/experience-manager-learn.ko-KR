@@ -3,7 +3,7 @@ title: POST 제출 시 에이전트 UI 열기
 description: 인쇄 채널용 첫 번째 대화형 통신 문서를 만들기 위한 여러 단계 자습서 중 11번째 부분입니다. 이 부분에서는 양식 제출 시 임시 서신을 만들기 위한 에이전트 ui 인터페이스를 시작합니다.
 feature: Interactive Communication
 doc-type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-6168
 thumbnail: 40122.jpg
 topic: Development
@@ -11,7 +11,7 @@ role: Developer
 level: Intermediate
 exl-id: 509b4d0d-9f3c-46cb-8ef7-07e831775086
 duration: 170
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 0%
@@ -61,10 +61,10 @@ wrapperRequest.getRequestDispatcher("/aem/forms/createcorrespondence.html").incl
 * _Adobe Granite CSRF 필터_ 검색
 * 제외된 경로에 _/content/getprintchannel_ 추가
 * 변경 사항을 저장합니다.
-* [POST.jsp](http://localhost:4502/apps/AEMForms/openprintchannel/POST.jsp)을 엽니다. FormFieldRequestParameter에 전달된 문자열이 올바른 documentId인지 확인하십시오.(19행)
+* [POST.jsp 열기](http://localhost:4502/apps/AEMForms/openprintchannel/POST.jsp). FormFieldRequestParameter에 전달된 문자열이 올바른 documentId인지 확인하십시오.(19행)
 * [웹 페이지를 열고](http://localhost:4502/content/OpenPrintChannel.html) 계정 번호를 입력하고 양식을 제출합니다.
 * 에이전트 UI 인터페이스는 양식에 입력한 계정 번호에 따라 미리 채워진 데이터로 열려야 합니다.
 
 >[!NOTE]
 >
->이 작업을 수행하려면 양식 데이터 모델의 Get 작업 입력 매개 변수가 &quot;accountnumber&quot;라는 요청 속성에 바인딩되어 있는지 확인하십시오. bindingvalue의 이름을 다른 이름으로 변경하는 경우, 변경 사항이 POST.jsp의 25행에 반영되었는지 확인하십시오
+>이 작업을 수행하려면 양식 데이터 모델의 Get 작업 입력 매개 변수가 &quot;accountnumber&quot;라는 요청 속성에 바인딩되어 있는지 확인하십시오. 바인딩 값의 이름을 다른 이름으로 변경하는 경우 변경 사항이 POST.jsp의 25행에 반영되었는지 확인합니다

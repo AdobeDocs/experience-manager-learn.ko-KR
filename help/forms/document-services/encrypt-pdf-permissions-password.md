@@ -2,14 +2,14 @@
 title: 권한 암호로 PDF 암호화
 description: DocAssuranceService를 사용하여 PDF 암호화
 feature: Document Services
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
 jira: KT-15849
 last-substantial-update: 2024-07-19T00:00:00Z
 exl-id: 5df8581c-a44c-449c-bf3b-8cdf57635c4d
-source-git-commit: d01a56cd1fd3085b0230918b15b4635ba375e346
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 0%
@@ -72,6 +72,6 @@ PDF 문서를 복사, 편집 또는 인쇄하려면 소유자 또는 마스터 �
 
 ## 샘플 테스트
 
-샘플 코드를 테스트하는 방법에는 여러 가지가 있습니다. 가장 빠르고 쉬운 방법은 Postman 앱을 사용하는 것입니다. Postman을 통해 서버에 POST 요청을 할 수 있습니다. 다음 스크린샷은 post 요청이 작동하는 데 필요한 요청 매개 변수를 보여 줍니다. 요청을 제출하기 전에 적절한 인증 유형을 지정해야 합니다.
+샘플 코드를 테스트하는 방법에는 여러 가지가 있습니다. 가장 빠르고 쉬운 방법은 Postman 앱을 사용하는 것입니다. Postman을 통해 서버에 POST 요청을 수행할 수 있습니다. 다음 스크린샷은 POST 요청이 작동하는 데 필요한 요청 매개 변수를 보여 줍니다. 요청을 제출하기 전에 적절한 인증 유형을 지정해야 합니다.
 
 ![encrypt-pdf-postman](assets/encrypt-pdf-postman.png)

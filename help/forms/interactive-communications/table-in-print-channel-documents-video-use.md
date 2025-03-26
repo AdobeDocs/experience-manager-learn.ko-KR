@@ -3,14 +3,14 @@ title: AEM Forms 인쇄 채널 문서에서 표 구성 요소 사용
 description: 다음 비디오는 인쇄 채널 문서를 위해 대화형 통신에서 표 구성 요소를 사용하는 데 필요한 단계를 안내합니다.
 feature: Interactive Communication
 doc-type: technical video
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: 54afd047-c6e6-4557-9336-39420f30df88
 last-substantial-update: 2019-07-07T00:00:00Z
 duration: 277
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '258'
 ht-degree: 0%
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 * [하드 드라이브에 에셋 파일을 다운로드하고 압축 해제합니다.](assets/usingtablesinprintchannel.zip)
 
-* 패키지 관리자를 사용하여 AEM으로 두 zip 파일 가져오기
+* 패키지 관리자를 사용하여 두 zip 파일을 AEM으로 가져오기
 
 * 이 문서와 연결된 자산에 포함되는 항목은 다음과 같습니다.
 

@@ -2,14 +2,14 @@
 title: AEM Forms에서 트랜잭션 보고 사용
 description: AEM Forms의 트랜잭션 보고서를 사용하면 AEM Forms 배포에서 지정된 날짜 이후 발생한 모든 트랜잭션의 수를 유지할 수 있습니다.
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 36c38cb6-6f6a-4328-abf5-7a30059b66ce
 last-substantial-update: 2019-03-20T00:00:00Z
 duration: 68
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 0%
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 트랜잭션은 지정된 기간(버퍼 초기화 시간 + 역방향 복제 시간) 동안 버퍼에 남아 있습니다. 기본적으로 거래 수가 거래 보고서에 반영되는 데 약 90초가 소요됩니다.
 
-PDF 양식 제출, 에이전트 UI를 사용하여 대화형 통신 미리 보기 또는 비표준 양식 제출 방법과 같은 작업은 트랜잭션으로 간주되지 않습니다. AEM Forms은 이러한 트랜잭션을 기록하는 API를 제공합니다. 사용자 지정 구현에서 API를 호출하여 트랜잭션을 기록합니다.
+PDF 양식 제출, 에이전트 UI를 사용하여 대화형 통신 미리 보기 또는 비표준 양식 제출 방법과 같은 작업은 트랜잭션으로 계산되지 않습니다. AEM Forms은 이러한 트랜잭션을 기록하는 API를 제공합니다. 사용자 지정 구현에서 API를 호출하여 트랜잭션을 기록합니다.
 
 작성자 인스턴스에서 트랜잭션 보고서를 보는 경우 모든 게시 인스턴스에 역방향 복제가 구성되어 있는지 확인합니다.
 

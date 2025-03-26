@@ -2,14 +2,14 @@
 title: AEM Forms에서 첫 번째 서블릿 만들기
 description: 데이터를 양식 템플릿과 병합하기 위한 첫 번째 슬링 서블릿을 빌드합니다.
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 72728ed7-80a2-48b5-ae7f-d744db8a524d
 last-substantial-update: 2021-04-23T00:00:00Z
 duration: 55
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 0%

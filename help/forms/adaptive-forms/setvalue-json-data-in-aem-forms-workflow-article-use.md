@@ -2,14 +2,14 @@
 title: AEM Forms Workflow에서 Json 데이터 요소 값 설정
 description: 적응형 양식이 AEM Workflow의 다른 사용자에게 라우팅되므로 양식을 검토하는 사람에 따라 특정 필드나 패널을 숨기거나 비활성화해야 하는 요구 사항이 있습니다. 이러한 사용 사례를 충족하기 위해 일반적으로 숨겨진 필드의 값을 설정합니다. 이 숨겨진 필드의 값에 따라 비즈니스 규칙을 작성하여 적절한 패널이나 필드를 숨기거나 비활성화할 수 있습니다.
 feature: Adaptive Forms
-version: 6.4
+version: Experience Manager 6.4
 topic: Development
 role: Developer
 level: Experienced
 exl-id: fbe6d341-7941-46f5-bcd8-58b99396d351
 last-substantial-update: 2021-06-09T00:00:00Z
 duration: 126
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '656'
 ht-degree: 0%
@@ -45,16 +45,16 @@ afData.afUnboundData.data.initialStep,N
 * [setvalue 번들을 다운로드하여 배포합니다](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). 제출된 JSON 데이터의 요소 값을 설정할 수 있는 사용자 지정 OSGI 번들입니다.
 
 * [zip 파일의 내용 다운로드 및 추출](assets/set-value-jsondata.zip)
-   * 브라우저를 [패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp)(으)로 지정
+   * 브라우저를 [패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp)&#x200B;(으)로 지정
       * SetValueOfElementInJSONDataWorkflow.zip을 가져와 설치하십시오.이 패키지에는 양식과 연결된 샘플 워크플로 모델 및 양식 데이터 모델이 있습니다.
 
-* 브라우저를 [Forms 및 문서](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)(으)로 지정
+* 브라우저를 [Forms 및 문서](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)&#x200B;(으)로 지정
 * 만들기 를 클릭합니다 | 파일 업로드
 * TimeOffRequestForm.zip 파일 업로드
   **이 양식은 AEM Forms 6.4를 사용하여 작성되었습니다. AEM Forms 6.4 이상**&#x200B;에 있는지 확인하세요.
 * [양식](http://localhost:4502/content/dam/formsanddocuments/timeoffrequest/jcr:content?wcmmode=disabled) 열기
 * 시작 및 종료 날짜를 입력하고 양식을 제출합니다.
-* [&quot;받은 편지함&quot;](http://localhost:4502/aem/inbox)(으)로 이동
+* [&quot;받은 편지함&quot;](http://localhost:4502/aem/inbox)&#x200B;(으)로 이동
 * 작업과 연결된 양식을 엽니다.
 * 첫 번째 패널의 필드가 비활성화되어 있습니다.
 * 이제 요청을 승인 또는 거절하는 패널이 표시됩니다.

@@ -2,7 +2,7 @@
 title: SendGrid와 AEM Forms 통합
 description: AEM Forms을 사용하여 SengGrid 클라우드 기반 이메일 게재 플랫폼을 활용합니다.
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-13605
 topic: Development
 role: Developer
@@ -10,7 +10,7 @@ level: Intermediate
 last-substantial-update: 2023-07-14T00:00:00Z
 exl-id: 62b73f4b-69d8-4ede-9d57-3d6472d25d5a
 duration: 118
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 0%
