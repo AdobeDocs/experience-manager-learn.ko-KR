@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Experience Manager as a Cloud Service
 team: TM
-source-git-commit: 4412e1aca73290bbcf35161db754dab65144c3c9
+source-git-commit: 52aad0b0e568ff7e4acd23742fc70f10b1dd14ee
 workflow-type: tm+mt
-source-wordcount: '1380'
-ht-degree: 16%
+source-wordcount: '1383'
+ht-degree: 15%
 
 ---
 
@@ -148,6 +148,7 @@ ht-degree: 16%
       + [설정 방법](./apis/openapis/setup.md)
       + [서버 간 인증](./apis/openapis/use-cases/invoke-api-using-oauth-s2s.md)
       + [사용자 인증(웹 앱)](./apis/openapis/use-cases/invoke-api-using-oauth-web-app.md)
+      + [사용자 인증(SPA)](./apis/openapis/use-cases/invoke-api-using-oauth-single-page-app.md)
       + {#how-to}하는 방법
          + [자격 증명 및 제품 프로필 관리](./apis/openapis/how-to/credentials-and-product-profile-management.md)
          + [권한 관리](./apis/openapis/how-to/services-user-group-permission-management.md)

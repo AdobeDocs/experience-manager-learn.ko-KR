@@ -12,10 +12,10 @@ thumbnail: KT-16515.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 0eb0054d-0c0a-4ac0-b7b2-fdaceaa6479b
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 52aad0b0e568ff7e4acd23742fc70f10b1dd14ee
 workflow-type: tm+mt
-source-wordcount: '835'
-ht-degree: 1%
+source-wordcount: '885'
+ht-degree: 2%
 
 ---
 
@@ -136,7 +136,11 @@ OpenAPI 기반 AEM API에 액세스할 수 있도록 AEM as a Cloud Service 환�
 * ./use-cases/invoke-api-using-oauth-web-app.md
   {title = Invoke API using Web App authentication}
   {description = Learn how to invoke OpenAPI-based AEM APIs from a custom web application using OAuth Web App authentication.}
-  {image = ./assets/web-app/OAuth-WebApp.png}  
+  {image = ./assets/web-app/OAuth-WebApp.png}
+* ./use-cases/invoke-api-using-oauth-single-page-app.md
+  {title = Invoke API using Single Page App authentication}
+  {description = Learn how to invoke OpenAPI-based AEM APIs from a custom Single Page App (SPA) using OAuth Single Page App authentication.}
+  {image = ./assets/spa/OAuth-SPA.png}  
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
 <div class="columns">
@@ -181,6 +185,29 @@ OpenAPI 기반 AEM API에 액세스할 수 있도록 AEM as a Cloud Service 환�
                     <p class="is-size-6">OAuth 웹 앱 인증을 사용하여 사용자 지정 웹 애플리케이션에서 OpenAPI 기반 AEM API를 호출하는 방법에 대해 알아봅니다.</p>
                 </div>
                 <a href="./use-cases/invoke-api-using-oauth-web-app.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">자세히 알아보기</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Invoke API using Single Page App authentication">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="./use-cases/invoke-api-using-oauth-single-page-app.md" title="단일 페이지 앱 인증을 사용하여 API 호출" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="./assets/spa/OAuth-SPA.png" alt="단일 페이지 앱 인증을 사용하여 API 호출"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="./use-cases/invoke-api-using-oauth-single-page-app.md" target="_self" rel="referrer" title="단일 페이지 앱 인증을 사용하여 API 호출">단일 페이지 앱 인증을 사용하여 API 호출</a>
+                    </p>
+                    <p class="is-size-6">OAuth 단일 페이지 앱 인증을 사용하여 사용자 지정 SPA(단일 페이지 앱)에서 OpenAPI 기반 AEM API를 호출하는 방법에 대해 알아봅니다.</p>
+                </div>
+                <a href="./use-cases/invoke-api-using-oauth-single-page-app.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">자세히 알아보기</span>
                 </a>
             </div>
