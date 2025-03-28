@@ -12,9 +12,9 @@ thumbnail: KT-17425.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 23b2be0d-a8d4-4521-96ba-78b70f4e9cba
-source-git-commit: 52aad0b0e568ff7e4acd23742fc70f10b1dd14ee
+source-git-commit: b7cd1bb9584359e8bf8a168f8c062be54399f5ac
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '998'
 ht-degree: 4%
 
 ---
@@ -272,7 +272,7 @@ OpenAPI 기반 AEM API에 대한 자세한 내용 및 [OpenAPI 기반 AEM API](.
 {target = _self}
 
 * https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview
-  {title = Invoke API using Server-to-Server authentication}
+  {title = Using Content Services for Headless App}
   {description = Learn how to build a native mobile app that fetches content from AEM using Content Services RESTful APIs.}
   {image = ./assets/RESTful-Content-Service.png}
 * https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview
@@ -282,12 +282,12 @@ OpenAPI 기반 AEM API에 대한 자세한 내용 및 [OpenAPI 기반 AEM API](.
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
 <div class="columns">
-    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Invoke API using Server-to-Server authentication">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Using Content Services for Headless App">
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview" title="서버 간 인증을 사용하여 API 호출" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="./assets/RESTful-Content-Service.png" alt="서버 간 인증을 사용하여 API 호출"
+                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview" title="Headless 앱용 Content Services 사용" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="./assets/RESTful-Content-Service.png" alt="Headless 앱용 Content Services 사용"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -295,7 +295,7 @@ OpenAPI 기반 AEM API에 대한 자세한 내용 및 [OpenAPI 기반 AEM API](.
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview" target="_self" rel="referrer" title="서버 간 인증을 사용하여 API 호출">서버 간 인증을 사용하여 API 호출</a>
+                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview" target="_self" rel="referrer" title="Headless 앱용 Content Services 사용">Headless 앱용 Content Services 사용</a>
                     </p>
                     <p class="is-size-6">Content Services RESTful API를 사용하여 AEM에서 콘텐츠를 가져오는 기본 모바일 앱을 빌드하는 방법을 알아봅니다.</p>
                 </div>
