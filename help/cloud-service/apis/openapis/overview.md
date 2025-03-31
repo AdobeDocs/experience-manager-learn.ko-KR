@@ -12,10 +12,10 @@ thumbnail: KT-16515.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 0eb0054d-0c0a-4ac0-b7b2-fdaceaa6479b
-source-git-commit: 52aad0b0e568ff7e4acd23742fc70f10b1dd14ee
+source-git-commit: 34aaecb7b82d7fae068549fad3ec9a4895fb9ec7
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 2%
+source-wordcount: '1015'
+ht-degree: 1%
 
 ---
 
@@ -59,15 +59,18 @@ OpenAPI 기반 AEM API는 다음 권한 유형을 포함하여 OAuth 2.0 인증�
 
 - **OAuth 단일 페이지 앱 자격 증명**: 브라우저에서 실행 중인 SPA를 위해 설계되었으며, 백엔드 서버가 없는 사용자를 대신하여 API에 액세스해야 합니다. 인증 코드 흐름을 보호하기 위해 _authorization_code_ 권한 유형을 사용하고 PKCE(Proof Key for Code Exchange)를 사용하는 클라이언트측 보안 메커니즘에 의존합니다. 자세한 내용은 [OAuth 단일 페이지 앱 자격 증명](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation/#oauth-single-page-app-credential)을 참조하십시오.
 
-## OAuth 서버 간 자격 증명과 OAuth 웹 앱/단일 페이지 앱 자격 증명 간의 차이점{#difference-between-oauth-server-to-server-and-oauth-web-app-single-page-app-credentials}
+## OAuth 서버 간 자격 증명과 웹 앱 간 자격 증명 및 단일 페이지 앱 자격 증명 간의 차이점{#difference-between-oauth-server-to-server-vs-web-app-vs-single-page-app-credentials}
 
-| | OAuth 서버 간 | OAuth 사용자 인증(웹 앱) |
-| --- | --- | --- |
-| 인증 목적 | 기계 간 상호 작용을 위해 설계되었습니다. | 사용자 중심의 상호 작용을 위해 설계되었습니다. |
-| 토큰 비헤이비어 | 클라이언트 애플리케이션 자체를 나타내는 액세스 토큰에 문제가 있습니다. | 인증된 사용자를 대신하여 액세스 토큰을 발행합니다. |
-| 사용 사례 | 사용자 상호 작용 없이 API 액세스가 필요한 백엔드 서비스 | 사용자를 대신하여 API에 액세스하는 프론트엔드 및 백엔드 구성 요소가 있는 웹 애플리케이션. |
-| 보안 고려 사항 | 중요한 자격 증명(`client_id`, `client_secret`)을 백 엔드 시스템에 안전하게 저장합니다. | 사용자 인증 및 고유한 임시 액세스 토큰이 부여됩니다. 중요한 자격 증명(`client_id`, `client_secret`)을 백 엔드 시스템에 안전하게 저장합니다. |
-| Grant Type | _client_credentials_ | _authorization_code_ |
+다음 표에서는 OpenAPI 기반 AEM API에서 지원되는 세 가지 OAuth 인증 방법의 차이점을 요약합니다.
+
+|  | OAuth 서버 간 | OAuth 웹 앱 | OAuth 단일 페이지 앱(SPA) |
+| --- | --- | --- | --- |
+| **인증 목적** | 기계 간 상호 작용을 위해 설계되었습니다. | _백 엔드_&#x200B;를 사용하는 웹 앱에서의 사용자 기반 상호 작용을 위해 디자인되었습니다. | _클라이언트측 JavaScript 응용 프로그램_&#x200B;에서 사용자 중심의 상호 작용을 위해 설계되었습니다. |
+| **토큰 동작** | 클라이언트 애플리케이션 자체를 나타내는 액세스 토큰에 문제가 있습니다. | 백엔드를 통해 인증된 사용자 _을(를) 대신하여 액세스 토큰을 발행합니다_. | 프론트엔드 전용 흐름&#x200B;_을 통해 인증된 사용자_&#x200B;을(를) 대신하여 액세스 토큰을 발행합니다. |
+| **사용 사례** | 사용자 상호 작용 없이 API 액세스가 필요한 백엔드 서비스 | 사용자를 대신하여 API에 액세스하는 프론트엔드 및 백엔드 구성 요소가 있는 웹 애플리케이션. | 백엔드 없이 사용자 대신 API에 액세스하는 순수 프론트엔드(JavaScript) 애플리케이션. |
+| **보안 고려 사항** | 중요한 자격 증명(`client_id`, `client_secret`)을 백 엔드 시스템에 안전하게 저장합니다. | 사용자 인증 후에는 백엔드 호출을 통해 자신의 _임시 액세스 토큰_&#x200B;이 부여됩니다. 액세스 토큰에 대한 인증 코드를 교환하기 위해 중요한 자격 증명(`client_id`, `client_secret`)을 백엔드 시스템에 안전하게 저장하십시오. | 사용자 인증 후에는 프론트엔드 호출을 통해 _임시 액세스 토큰이 부여됩니다_. `client_secret`은(는) 프론트엔드 앱에 저장하기에 안전하지 않으므로 사용하지 않습니다. PKCE를 사용하여 액세스 토큰에 대한 인증 코드를 교환합니다. |
+| **권한 부여 형식** | _client_credentials_ | _authorization_code_ | _authorization_code_(**PKCE** 포함) |
+| **Adobe Developer Console 자격 증명 유형** | OAuth 서버 간 | OAuth 웹 앱 | OAuth 단일 페이지 앱 |
 
 ## Adobe API 및 관련 개념 액세스{#accessing-adobe-apis-and-related-concepts}
 

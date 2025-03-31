@@ -11,13 +11,13 @@ jira: KT-17430
 thumbnail: KT-17430.jpg
 last-substantial-update: 2025-03-28T00:00:00Z
 duration: 0
-source-git-commit: 52aad0b0e568ff7e4acd23742fc70f10b1dd14ee
+exl-id: 9fb92127-9dea-4a1d-b1f7-8fb98cabf188
+source-git-commit: 34aaecb7b82d7fae068549fad3ec9a4895fb9ec7
 workflow-type: tm+mt
-source-wordcount: '2103'
+source-wordcount: '2104'
 ht-degree: 0%
 
 ---
-
 
 # OAuth 단일 페이지 앱을 사용하여 OpenAPI 기반 AEM API 호출
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 OAuth 단일 페이지 앱 인증은 브라우저에서 실행되는 JavaScript 기반 애플리케이션에 이상적입니다. 백엔드 서버가 없거나 사용자 대신 AEM API와 상호 작용하기 위해 액세스 토큰을 가져와야 하는지 여부.
 
-PKCE 흐름은 OAuth 2.0 _authorization_code_ 부여 유형을 확장하여 인증 코드 차단을 방지하여 보안을 강화합니다. 자세한 내용은 [OAuth 서버 간 자격 증명과 OAuth 웹 앱/단일 페이지 앱 자격 증명 간의 차이점](../overview.md#difference-between-oauth-server-to-server-and-oauth-web-appsingle-page-app-credentials)을 참조하십시오.
+PKCE 흐름은 OAuth 2.0 _authorization_code_ 부여 유형을 확장하여 인증 코드 차단을 방지하여 보안을 강화합니다. 자세한 내용은 [OAuth 서버 대 서버 및 웹 앱과 단일 페이지 앱 자격 증명 간의 차이점](../overview.md#difference-between-oauth-server-to-server-vs-web-app-vs-single-page-app-credentials) 섹션을 참조하십시오.
 
 >[!AVAILABILITY]
 >

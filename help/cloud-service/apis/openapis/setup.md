@@ -12,7 +12,7 @@ thumbnail: KT-17426.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 1df4c816-b354-4803-bb6c-49aa7d7404c6
-source-git-commit: 52aad0b0e568ff7e4acd23742fc70f10b1dd14ee
+source-git-commit: 34aaecb7b82d7fae068549fad3ec9a4895fb9ec7
 workflow-type: tm+mt
 source-wordcount: '1253'
 ht-degree: 1%
@@ -123,7 +123,7 @@ ADC 프로젝트를 만든 후 원하는 AEM API를 추가하고, 인증을 설�
 
    ![인증 선택](./assets/s2s/select-authentication.png)
 
-   서버 간 인증은 사용자 상호 작용 없이 API 액세스가 필요한 백엔드 서비스에 이상적입니다. 웹 앱 및 단일 페이지 앱 인증 옵션은 사용자를 대신하여 API 액세스가 필요한 애플리케이션에 적합합니다. 자세한 내용은 [OAuth 서버 간 자격 증명과 OAuth 웹 앱/단일 페이지 앱 자격 증명 간의 차이점](./overview.md#difference-between-oauth-server-to-server-and-oauth-web-app-single-page-app-credentials)을 참조하십시오.
+   서버 간 인증은 사용자 상호 작용 없이 API 액세스가 필요한 백엔드 서비스에 이상적입니다. 웹 앱 및 단일 페이지 앱 인증 옵션은 사용자를 대신하여 API 액세스가 필요한 애플리케이션에 적합합니다. 자세한 내용은 [OAuth 서버 간 자격 증명과 웹 앱 간 자격 증명 및 단일 페이지 앱 자격 증명 간의 차이점](./overview.md#difference-between-oauth-server-to-server-vs-web-app-vs-single-page-app-credentials)을 참조하십시오.
 
 1. 필요한 경우 보다 쉽게 식별할 수 있도록 API의 이름을 변경할 수 있습니다. 데모 목적으로 기본 이름이 사용됩니다.
 
