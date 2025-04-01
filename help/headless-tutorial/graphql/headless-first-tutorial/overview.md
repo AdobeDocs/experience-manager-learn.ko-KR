@@ -12,7 +12,7 @@ jira: KT-13270
 thumbnail: KT-13270.jpeg
 exl-id: b0ac4b50-5fe5-41a1-9530-8e593d7000c9
 duration: 89
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: bd0f42fa37b7bbe19bf0d7fc65801198e64cbcd9
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 2%
@@ -20,8 +20,6 @@ ht-degree: 2%
 ---
 
 # AEM Headless 첫 번째 자습서
-
-{{aem-headless-trials-promo}}
 
 AEM Headless API 및 GraphQL에서 완벽하게 작동하는 React를 사용하여 웹 경험을 구축하는 방법에 대한 자습서를 시작합니다. 이 튜토리얼에서는 React, Adobe Experience Manager(AEM) Headless API 및 GraphQL의 기능을 결합하여 동적 및 대화형 웹 애플리케이션을 만드는 프로세스를 안내합니다.
 

@@ -12,7 +12,7 @@ level: Beginner
 last-substantial-update: 2022-10-17T00:00:00Z
 exl-id: 41e15a2c-758b-4e7d-9d23-ef671c1dc155
 duration: 54
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: bd0f42fa37b7bbe19bf0d7fc65801198e64cbcd9
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 3%
@@ -21,9 +21,7 @@ ht-degree: 3%
 
 # AEM Headless 시작하기 - GraphQL
 
-{{aem-headless-trials-promo}}
-
-Headless CMS 시나리오에서, AEM의 GraphQL API를 사용하여 콘텐츠를 작성하고 노출하고 외부 앱에서 사용하는 방법을 보여 주는 종단간 튜토리얼입니다.
+Headless CMS 시나리오에서, AEM의 GraphQL API를 사용하여 콘텐츠를 작성하고 외부 앱에서 사용하는 방법을 보여 주는 종단간 튜토리얼입니다.
 
 이 튜토리얼에서는 AEM의 GraphQL API 및 Headless 기능을 사용하여 외부 앱에 표시되는 경험을 제공하는 방법을 알아봅니다.
 
@@ -33,7 +31,7 @@ Headless CMS 시나리오에서, AEM의 GraphQL API를 사용하여 콘텐츠를
 * 콘텐츠 조각 모델을 만들어 데이터 모델링
 * 이전에 만든 모델을 기반으로 콘텐츠 조각을 만듭니다.
 * 통합 GraphiQL 개발 도구를 사용하여 AEM의 콘텐츠 조각을 쿼리하는 방법을 살펴봅니다.
-* AEM에 GraphQL 쿼리를 저장하거나 지속하려면
+* GraphQL 쿼리를 AEM에 저장하거나 지속하려면
 * 샘플 React 앱에서 지속 GraphQL 쿼리 사용
 
 ## 사전 요구 사항 {#prerequisites}

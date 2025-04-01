@@ -1,6 +1,6 @@
 ---
-title: AEM의 Headless Tutorials
-description: Adobe Experience Manager용 Headless CMS 튜토리얼 모음입니다. API, 프레임워크 및 예제 애플리케이션별 튜토리얼을 살펴보십시오.
+title: AEM의 Headless 튜토리얼
+description: Adobe Experience Manager을 위한 헤드리스 CMS 자습서 모음입니다. API, 프레임워크 및 예제 애플리케이션별 튜토리얼을 살펴보십시오.
 feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
@@ -8,16 +8,14 @@ level: Beginner
 doc-type: Catalog
 recommendations: disable, exclude
 exl-id: 57f88d79-9879-4bb9-a3db-9fec95e3a0bd
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+source-git-commit: bd0f42fa37b7bbe19bf0d7fc65801198e64cbcd9
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 1%
 
 ---
 
-# AEM의 Headless Tutorials{#aem-headless-tutorials}
-
-{{aem-headless-trials-promo}}
+# AEM의 Headless 튜토리얼{#aem-headless-tutorials}
 
 Adobe Experience Manager(AEM)에는 Headless 엔드포인트를 정의하고 콘텐츠를 JSON으로 전달하기 위한 여러 옵션이 있습니다. 실습형 튜토리얼을 사용하여 다양한 옵션을 사용하는 방법을 살펴보고 자신에게 적합한 옵션을 선택하십시오.
 
@@ -25,16 +23,16 @@ Adobe Experience Manager(AEM)에는 Headless 엔드포인트를 정의하고 콘
 >
 >이 튜토리얼 컬렉션은 **배워서**&#x200B;하기를 원하는 사용자를 위해 설계되었습니다. 처음부터 개념을 배우려면 [AEM Headless 개발자 여정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/developer/overview.html)을 확인하십시오. 이 튜토리얼 세트와 여정은 서로 보완됩니다.
 
-## API별 Tutorials
+## API별 자습서
 
 <table>
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ko-KR">
       <img alt="GRAPHQL API" src="./assets/graphql-icon.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html">
+      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ko-KR">
     <strong>GraphQL API</strong>
     </a>
     </div>
@@ -73,7 +71,7 @@ Adobe Experience Manager(AEM)에는 Headless 엔드포인트를 정의하고 콘
 
 ## 예제 애플리케이션
 
-예제 애플리케이션은 AEM(Adobe Experience Manager)의 Headless 기능을 살펴볼 수 있는 좋은 방법입니다. 이 완료된 예제를 다운로드하여 설치하고 바로 시작하십시오.
+예제 애플리케이션은 Adobe Experience Manager(AEM)의 Headless 기능을 살펴볼 수 있는 좋은 방법입니다. 이 완료된 예제를 다운로드하여 설치하고 바로 시작하십시오.
 
 <table>
 <tr>
@@ -87,7 +85,7 @@ Adobe Experience Manager(AEM)에는 Headless 엔드포인트를 정의하고 콘
     </a>
     </div>
     <p>
-    <em>AEM의 GraphQL API에서 제공하는 iOS 응용 프로그램입니다.</em>
+    <em>AEM의 GraphQL API를 기반으로 하는 iOS 애플리케이션입니다.</em>
     <p>
   </td>
   <td>
@@ -119,7 +117,7 @@ Adobe Experience Manager(AEM)에는 Headless 엔드포인트를 정의하고 콘
 </tr>
 </table>
 
-## 프레임워크별 Tutorials
+## 프레임워크별 튜토리얼
 
 사용된 기술을 기반으로 다음 튜토리얼을 찾아보십시오. 컨텍스트 내 작성 및 경험 관리 옵션을 통해 AEM이 순수한 Headless 사용 사례를 넘어서는 방법에 대해 알아봅니다.
 
@@ -130,7 +128,7 @@ Adobe Experience Manager(AEM)에는 Headless 엔드포인트를 정의하고 콘
       <img alt="React - 헤드리스" src="./assets/react-headless.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html">
+      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ko-KR">
     <strong>React - Headless</strong>
     </a>
     </div>
