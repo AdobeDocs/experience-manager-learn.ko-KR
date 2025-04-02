@@ -12,9 +12,9 @@ thumbnail: KT-17428.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 277b4789-b035-4904-b489-c827c970fb55
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: f125cffc72a6f0eb558492f8dde6f4f30bc074ec
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '726'
 ht-degree: 0%
 
 ---
@@ -93,24 +93,25 @@ _제품 프로필_&#x200B;은(는) 자격 증명에 대한 _권한(또는 권한
 
 AEM API용 제품 프로필을 추가하려면 ADC 프로젝트의 **API** 섹션에서 **제품 프로필 편집**&#x200B;을 클릭하고 **API 구성** 대화 상자에서 원하는 제품 프로필을 선택한 다음 변경 사항을 저장하십시오.
 
-    ![제품 프로필 편집](../assets/how-to/edit-product-profiles.png)
+![제품 프로필 편집](../assets/how-to/edit-product-profiles.png)
 
 필요한 서비스와 연결된 원하는 제품 프로필(예: **AEM 관리자 - 작성자 - 프로그램 XXX - 환경 XXX**)을 선택한 다음 변경 사항을 저장합니다.
 
-    ![제품 프로필 선택](../assets/how-to/select-product-profile.png)
+![제품 프로필 선택](../assets/how-to/select-product-profile.png)
 
 **AEM 관리자 - 작성자 - 프로그램 XXX - 환경 XXX** 제품 프로필은 **AEM 관리자** 서비스 및 **AEM Assets API 사용자** 서비스 모두에 연결되어 있습니다. 후자가 없으면 사용 가능한 제품 프로필 목록에 제품 프로필이 표시되지 않습니다.
 
-    ![제품 프로필 서비스](../assets/how-to/product-profile-services.png)
+![제품 프로필 서비스](../assets/how-to/product-profile-services.png)
 
 이제 자산 메타데이터 업데이트에 대한 **PATCH** 요청이 문제 없이 작동합니다.
 
-    ![PATCH 요청](../assets/how-to/patch-request.png)
+![PATCH 요청](../assets/how-to/patch-request.png)
 
 
 >[!TAB 제품 프로필 제거]
 
 AEM API의 제품 프로필을 제거하려면 ADC 프로젝트의 **API** 섹션에서 **제품 프로필 편집**&#x200B;을 클릭하고 **API 구성** 대화 상자에서 원하는 제품 프로필을 선택 취소하고 변경 사항을 저장하십시오.
+
 ![제품 프로필 선택 취소](../assets/how-to/deselect-product-profile.png)
 
 >[!ENDTABS]
