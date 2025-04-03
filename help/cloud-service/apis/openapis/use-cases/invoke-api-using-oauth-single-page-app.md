@@ -12,7 +12,7 @@ thumbnail: KT-17430.jpg
 last-substantial-update: 2025-03-28T00:00:00Z
 duration: 0
 exl-id: 9fb92127-9dea-4a1d-b1f7-8fb98cabf188
-source-git-commit: 22d3c0058c04a1d812a95a47472f96efaa597513
+source-git-commit: 7212bec910320847e9375dd1956a8cf76df1d579
 workflow-type: tm+mt
 source-wordcount: '2104'
 ht-degree: 0%
@@ -62,7 +62,9 @@ Adobe Developer Console(ADC) 프로젝트가 OAuth 단일 페이지 앱 인증�
 >
 >ADC 프로젝트가 _client_secret_&#x200B;을(를) 제공하지 않습니다. 대신 SPA는 _액세스 토큰_&#x200B;에 대한 인증 코드를 안전하게 교환하기 위해 _code_verifier_ 및 _code_challenge_&#x200B;을(를) 생성합니다. 클라이언트 측에 클라이언트 암호를 저장할 필요가 없으므로 보안이 강화됩니다.
 
+
 >[!VIDEO](https://video.tv.adobe.com/v/3456964?quality=12&learn=on)
+
 
 
 다음 다이어그램은 WKND SPA _OpenAPI 기반 AEM API를 호출하기 위해 사용자별 액세스 토큰을 가져오는_&#x200B;의 기능 흐름을 보여 줍니다.
