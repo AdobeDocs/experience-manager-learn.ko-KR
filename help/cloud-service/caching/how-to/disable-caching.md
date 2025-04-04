@@ -12,9 +12,9 @@ jira: KT-14224
 thumbnail: KT-14224.jpeg
 exl-id: 22b1869e-5bb5-437d-9cb5-2d27f704c052
 duration: 100
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: a98ca7ddc155190b63664239d604d11ad470fdf5
 workflow-type: tm+mt
-source-wordcount: '400'
+source-wordcount: '432'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,10 @@ AEM as a Cloud Service CDN에서 HTTP 응답 캐싱을 비활성화하는 방법
 
 ## 기본 캐싱 동작
 
-[AEM Project Archetype](./enable-caching.md#default-caching-behavior) 기반 AEM 프로젝트가 배포되면 AEM 게시 및 작성자에 대한 기본 캐싱 동작을 검토하십시오.
+AEM as a Cloud Service의 CDN에서 HTTP 응답 캐싱은 원본 `Cache-Control`, `Surrogate-Control` 또는 `Expires`의 다음 HTTP 응답 헤더에 의해 제어됩니다.  `Cache-Control`에 `private`, `no-cache` 또는 `no-store`이(가) 포함된 원본 응답은 캐시되지 않습니다.
+
+AEM Project Archetype 기반 AEM 프로젝트가 배포되면 AEM 게시 및 작성자에 대한 [기본 캐싱 동작](./enable-caching.md#default-caching-behavior)을 검토하십시오.
+
 
 ## 캐싱 비활성화
 
@@ -53,10 +56,14 @@ AEM as a Cloud Service CDN에서 HTTP 응답 캐싱을 비활성화하는 방법
 <LocationMatch "$URL$ || $URL_REGEX$">
     # Removes the response header of this name, if it exists. If there are multiple headers of the same name, all will be removed.
     Header unset Cache-Control
+    Header unset Surroagate-Control
     Header unset Expires
 
-    # Instructs the CDN to not cache the response.
-    Header set Cache-Control "private"
+    # Instructs the Browser and the CDN to not cache the response.
+    Header always set Cache-Control "private"
+
+    # Instructs only the CDN to not cache the response.
+    Header always set Surrogate-Control "private"
 </LocationMatch>
 ```
 
@@ -75,8 +82,8 @@ AEM as a Cloud Service CDN에서 HTTP 응답 캐싱을 비활성화하는 방법
        Header unset Cache-Control
        Header unset Expires
    
-       # Instructs the CDN to not cache the response.
-       Header set Cache-Control "private"
+       # Instructs the Browser and the CDN to not cache the response.
+       Header always set Cache-Control "private"
    </LocationMatch>
    ```
 
