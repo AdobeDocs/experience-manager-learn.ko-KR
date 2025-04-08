@@ -12,9 +12,9 @@ thumbnail: KT-17426.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 1df4c816-b354-4803-bb6c-49aa7d7404c6
-source-git-commit: 34aaecb7b82d7fae068549fad3ec9a4895fb9ec7
+source-git-commit: b17e228c33ff2e3f2ee2d7e13da65a648c5df79d
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: '1291'
 ht-degree: 1%
 
 ---
@@ -68,12 +68,11 @@ _Admin Console_ 창에 새로 추가된 제품 프로필이 표시됩니다.
 
 위의 단계는 AEM as a Cloud Service 환경의 현대화를 완료합니다.
 
-## AEM API 액세스 활성화
+## AEM API 액세스 활성화{#enable-aem-apis-access}
 
 _새 제품 프로필_&#x200B;이 있으면 ADC(Adobe Developer Console)에서 OpenAPI 기반 AEM API 액세스가 가능합니다. [Adobe Developer Console(ADC)](./overview.md#accessing-adobe-apis-and-related-concepts)은(는) Adobe API, SDK, 실시간 이벤트, 서버리스 기능 등에 액세스하기 위한 개발자 허브입니다.
 
-새로 추가된 제품 프로필은 미리 정의된 ACL(액세스 제어 목록)이 있는 _AEM 사용자 그룹_&#x200B;을 나타내는 _서비스_와(과) 연결되어 있습니다.
-_서비스_&#x200B;를 사용하여 AEM API에 대한 액세스 수준을 제어합니다.
+새로 추가된 제품 프로필은 미리 정의된 ACL(액세스 제어 목록)이 있는 _AEM 사용자 그룹_&#x200B;을 나타내는 _서비스_&#x200B;와(과) 연결되어 있습니다. _서비스_&#x200B;를 사용하여 AEM API에 대한 액세스 수준을 제어합니다.
 
 제품 프로필과 연결된 _서비스_&#x200B;를 선택하거나 선택 해제하여 액세스 수준을 줄이거나 늘릴 수도 있습니다.
 
@@ -81,9 +80,13 @@ _서비스_&#x200B;를 사용하여 AEM API에 대한 액세스 수준을 제어
 
 ![제품 프로필과 연결된 서비스 검토](./assets/setup/review-services-associated-with-product-profile.png)
 
-기본적으로 **AEM Assets API 사용자** 서비스는 제품 프로필과 연결되어 있지 않습니다. 새로 추가된 **AEM Assets Collaborator 사용자 - 작성자 - 프로그램 XXX - 환경 XXX** 제품 프로필과 연결합니다. 이 연결 후에 ADC 프로젝트의 _자산 작성자 API_&#x200B;에서 원하는 인증을 설정하고 인증 계정을 제품 프로필과 연결할 수 있습니다.
+기본적으로 **AEM Assets API 사용자** 서비스는 제품 프로필과 연결되어 있지 않습니다. 새로 추가된 **AEM Assets Collaborator 사용자 - 작성자 - 프로그램 XXX - 환경 XXX** 제품 프로필과 연결합니다. 이 연결 후에 ADC 프로젝트 _자산 작성자 API_&#x200B;에서 원하는 서버 간 인증을 설정하고 ADC 프로젝트(다음 단계에서 생성)의 인증 계정을 제품 프로필과 연결할 수 있습니다.
 
 ![AEM Assets API 사용자 서비스를 제품 프로필과 연결](./assets/setup/associate-aem-assets-api-users-service-with-product-profile.png)
+
+>[!IMPORTANT]
+>
+>위의 단계는 AEM Assets API에 대해 서버 간 인증을 활성화하는 데 중요합니다. 이 연결이 없으면 AEM Assets API를 서버 간 인증 방법과 함께 사용할 수 없습니다.
 
 ## Adobe Developer Console(ADC) 프로젝트 만들기
 
