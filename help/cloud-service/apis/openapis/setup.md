@@ -12,7 +12,7 @@ thumbnail: KT-17426.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 1df4c816-b354-4803-bb6c-49aa7d7404c6
-source-git-commit: b17e228c33ff2e3f2ee2d7e13da65a648c5df79d
+source-git-commit: 7ec2db883ba485b4062db84630cf94c8ed0967ee
 workflow-type: tm+mt
 source-wordcount: '1291'
 ht-degree: 1%
@@ -27,22 +27,25 @@ OpenAPI 기반 AEM API에 액세스할 수 있도록 AEM as a Cloud Service 환�
 >
 >OpenAPI 기반 AEM API는 조기 액세스 프로그램의 일부로 사용할 수 있습니다. 액세스하는 데 관심이 있는 경우 사용 사례에 대한 설명을 포함하여 [aem-apis@adobe.com](mailto:aem-apis@adobe.com)에 전자 메일을 보내는 것이 좋습니다.
 
+>[!VIDEO](https://video.tv.adobe.com/v/3457510?quality=12&learn=on)
+
+
 상위 레벨 설정 프로세스에는 다음 단계가 포함됩니다.
 
 1. AEM as a Cloud Service 환경의 현대화.
 1. AEM API 액세스를 활성화합니다.
-1. Adobe Developer Console(ADC) 프로젝트를 만듭니다.
+1. Adobe Systems 개발자 콘솔(ADC) 프로젝트를 만들기
 1. ADC 프로젝트 구성
-1. ADC 프로젝트 통신을 사용하도록 AEM 인스턴스를 구성합니다.
+1. ADC 프로젝트 통신을 활성화하도록 AEM 인스턴스를 구성합니다.
 
-## AEM as a Cloud Service 환경 현대화
+## Cloud Service 환경으로서의 AEM 현대화{#modernization-of-aem-as-a-cloud-service-environment}
 
 AEM as a Cloud Service 환경 현대화는 다음 단계를 포함하는 환경당 1회 활동입니다.
 
 - AEM 릴리스 **2024.10.18459.20241031T210302Z** 이상으로 업데이트합니다.
 - 릴리스 2024.10.18459.20241031T210302Z 전에 환경이 생성된 경우 새 제품 프로필을 추가합니다.
 
-### AEM 인스턴스 업데이트
+### AEM 인스턴스 업데이트{#update-aem-instance}
 
 AEM 인스턴스를 업데이트하려면 Adobe [Cloud Manager](https://my.cloudmanager.adobe.com/)의 _환경_ 섹션에서 환경 이름 옆에 있는 _줄임표_ 아이콘을 선택한 다음 **업데이트** 옵션을 선택하십시오.
 
@@ -54,7 +57,7 @@ AEM 인스턴스를 업데이트하려면 Adobe [Cloud Manager](https://my.cloud
 
 Fullstack 파이프라인의 이름은 **Dev :: Fullstack-Deploy**&#x200B;이고 AEM 환경의 이름은 **wknd-program-dev**&#x200B;입니다. 이름이 다를 수 있습니다.
 
-### 새 제품 프로필 추가
+### 새 제품 프로필 추가{#add-new-product-profiles}
 
 AEM 인스턴스에 새 제품 프로필을 추가하려면 Adobe [Cloud Manager](https://my.cloudmanager.adobe.com/)의 _환경_ 섹션에서 환경 이름 옆에 있는 _줄임표_ 아이콘을 선택하고 **제품 프로필 추가** 옵션을 선택합니다.
 
@@ -88,7 +91,7 @@ _새 제품 프로필_&#x200B;이 있으면 ADC(Adobe Developer Console)에서 O
 >
 >위의 단계는 AEM Assets API에 대해 서버 간 인증을 활성화하는 데 중요합니다. 이 연결이 없으면 AEM Assets API를 서버 간 인증 방법과 함께 사용할 수 없습니다.
 
-## Adobe Developer Console(ADC) 프로젝트 만들기
+## Adobe Developer Console(ADC) 프로젝트 만들기{#adc-project}
 
 ADC 프로젝트는 원하는 API를 추가하고, 인증을 설정하고, 인증 계정을 제품 프로필과 연결하는 데 사용됩니다.
 
@@ -110,7 +113,7 @@ ADC 프로젝트를 만들려면 다음을 수행하십시오.
 
    ![프로젝트 이름 편집](./assets/setup/edit-project-name.png)
 
-## ADC 프로젝트 구성
+## ADC 프로젝트 구성{#configure-adc-project}
 
 ADC 프로젝트를 만든 후 원하는 AEM API를 추가하고, 인증을 설정하고, 인증 계정을 제품 프로필과 연결해야 합니다.
 
@@ -136,15 +139,15 @@ ADC 프로젝트를 만든 후 원하는 AEM API를 추가하고, 인증을 설�
 
    ![제품 프로필 선택](./assets/s2s/select-product-profile.png)
 
-1. AEM API 및 인증 구성을 검토하십시오.
+1. AEM API 및 인증 구성을 검토합니다.
 
    ![AEM API 구성](./assets/s2s/aem-api-configuration.png)
 
-   ![인증 구성](./assets/s2s/authentication-configuration.png)
+   ![Authentication 구성](./assets/s2s/authentication-configuration.png)
 
-**OAuth 웹 앱** 또는 **OAuth 단일 페이지 앱** 인증 방법을 선택하는 경우 제품 프로필 연결 메시지가 표시되지 않지만 응용 프로그램 리디렉션 URI가 필요합니다. 응용 프로그램 리디렉션 URI는 인증 코드로 인증한 후 사용자를 응용 프로그램으로 리디렉션하는 데 사용됩니다. 관련 사용 사례 튜토리얼에서는 이러한 인증 특정 구성을 간략하게 설명합니다.
+OAuth 웹 앱&#x200B;**또는** OAuth 단일 페이지 앱&#x200B;**인증 방법을 선택하는**&#x200B;경우 제품 프로필 연결은 표시되지 않지만 애플리케이션 리디렉션 URI는 필요합니다. 애플리케이션 리디렉션 URI는 인증 코드로 인증한 후 사용자를 애플리케이션으로 리디렉션하는 데 사용됩니다. 관련 사용 사례 자습서에서는 이러한 인증별 구성을 간략하게 설명합니다.
 
-## ADC 프로젝트 통신을 사용하도록 AEM 인스턴스 구성
+## ADC 프로젝트 통신을 사용하도록 AEM 인스턴스 구성{#configure-aem-instance}
 
 ADC 프로젝트의 ClientID가 AEM 인스턴스와 통신할 수 있도록 하려면 AEM 인스턴스를 구성해야 합니다.
 
