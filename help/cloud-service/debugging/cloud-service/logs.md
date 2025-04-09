@@ -11,9 +11,9 @@ role: Developer
 level: Beginner
 exl-id: d0bd64bd-9e6c-4a28-a8d9-52bb37b27a09
 duration: 229
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 0363505b426d6e4733c57409e17e9d69f7a567c7
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '962'
 ht-degree: 1%
 
 ---
@@ -167,14 +167,7 @@ __Pod cm-p12345-e56789-aem-author-abcdefg-2222__
 
 ## 권장 로그 수준{#log-levels}
 
-AEM as a Cloud Service 환경당 로그 수준에 대한 Adobe의 일반적인 지침은 다음과 같습니다.
-
-+ 로컬 개발(AEM SDK): `DEBUG`
-+ 개발: `DEBUG`
-+ 단계: `WARN`
-+ 프로덕션: `ERROR`
-
-각 환경 유형에 가장 적합한 로그 수준을 설정하는 것은 AEM as a Cloud Service을 사용하는 것이며, 로그 수준은 코드에서 유지됩니다
+AEM as a Cloud Service 환경당 로그 수준에 대한 Adobe의 일반적인 지침은 AEM의 기본 로그 설정(기본 로그 수준 `INFO`)을 준수하는 것입니다. Adobe에서는 사용자 지정 코드도 로그 문으로 계측하여 로그 수준 `INFO`에서 실행할 수 있도록 할 것을 권장합니다. 로그 수준은 코드에서 유지 관리됩니다.
 
 + Java 로그 구성은 OSGi 구성에서 유지 관리됩니다.
 + Dispatcher 프로젝트의 Apache 웹 서버 및 Dispatcher 로그 수준
