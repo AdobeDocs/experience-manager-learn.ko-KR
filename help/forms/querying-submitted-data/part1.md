@@ -9,7 +9,7 @@ role: Developer
 level: Experienced
 exl-id: c588bdca-b8a8-4de2-97e0-ba08b195699f
 duration: 50
-source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
+source-git-commit: ed8749f312dc5ad18e047163bcae28d6753b6f8c
 workflow-type: tm+mt
 source-wordcount: '258'
 ht-degree: 0%
@@ -17,7 +17,6 @@ ht-degree: 0%
 ---
 
 # JSON 스키마를 기반으로 하는 적응형 양식 만들기
-
 
 AEM Forms 6.3 릴리스에서는 JSON 스키마를 기반으로 하는 적응형 Forms을 만드는 기능이 도입되었습니다. JSON 스키마를 사용한 적응형 Forms 만들기에 대한 자세한 내용은 이 [문서](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-json-schema-form-model.html)에 자세히 설명되어 있습니다.
 
@@ -31,8 +30,6 @@ JSON 스키마를 기반으로 적응형 양식을 만들면 다음 단계는 �
 >
 >json 스키마 파일의 이름이 적절하게 지정되었는지 확인하십시오. 예를 들어 &lt;name>schema.json 형식으로 이름을 지정해야 합니다. 따라서 스키마 파일이 mortgage.schema.json 또는 credit.schema.json이 될 수 있습니다.
 
-
 ![데이터 저장됨](assets/datastored.gif)
-
 
 적응형 Forms을 만드는 데 사용할 수 있는 [샘플 JSON 스키마.](assets/samplejsonschemas.zip). JSON 스키마를 가져오려면 zip 파일을 다운로드하고 압축 해제합니다.
