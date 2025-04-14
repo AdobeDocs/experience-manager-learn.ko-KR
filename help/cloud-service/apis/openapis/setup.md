@@ -12,7 +12,7 @@ thumbnail: KT-17426.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 1df4c816-b354-4803-bb6c-49aa7d7404c6
-source-git-commit: 7ec2db883ba485b4062db84630cf94c8ed0967ee
+source-git-commit: 4cdab2b243af74a8075ae65e8f24e7f56ef2a23b
 workflow-type: tm+mt
 source-wordcount: '1291'
 ht-degree: 1%
@@ -34,11 +34,11 @@ OpenAPI 기반 AEM API에 액세스할 수 있도록 AEM as a Cloud Service 환�
 
 1. AEM as a Cloud Service 환경의 현대화.
 1. AEM API 액세스를 활성화합니다.
-1. Adobe Systems 개발자 콘솔(ADC) 프로젝트를 만들기
-1. ADC 프로젝트 구성
-1. ADC 프로젝트 통신을 활성화하도록 AEM 인스턴스를 구성합니다.
+1. Adobe Developer Console(ADC) 프로젝트를 만듭니다.
+1. ADC 프로젝트를 구성합니다.
+1. ADC 프로젝트 통신을 사용하도록 AEM 인스턴스를 구성합니다.
 
-## Cloud Service 환경으로서의 AEM 현대화{#modernization-of-aem-as-a-cloud-service-environment}
+## AEM as a Cloud Service 환경 현대화{#modernization-of-aem-as-a-cloud-service-environment}
 
 AEM as a Cloud Service 환경 현대화는 다음 단계를 포함하는 환경당 1회 활동입니다.
 
@@ -139,13 +139,13 @@ ADC 프로젝트를 만든 후 원하는 AEM API를 추가하고, 인증을 설�
 
    ![제품 프로필 선택](./assets/s2s/select-product-profile.png)
 
-1. AEM API 및 인증 구성을 검토합니다.
+1. AEM API 및 인증 구성을 검토하십시오.
 
    ![AEM API 구성](./assets/s2s/aem-api-configuration.png)
 
-   ![Authentication 구성](./assets/s2s/authentication-configuration.png)
+   ![인증 구성](./assets/s2s/authentication-configuration.png)
 
-OAuth 웹 앱&#x200B;**또는** OAuth 단일 페이지 앱&#x200B;**인증 방법을 선택하는**&#x200B;경우 제품 프로필 연결은 표시되지 않지만 애플리케이션 리디렉션 URI는 필요합니다. 애플리케이션 리디렉션 URI는 인증 코드로 인증한 후 사용자를 애플리케이션으로 리디렉션하는 데 사용됩니다. 관련 사용 사례 자습서에서는 이러한 인증별 구성을 간략하게 설명합니다.
+**OAuth 웹 앱** 또는 **OAuth 단일 페이지 앱** 인증 방법을 선택하는 경우 제품 프로필 연결 메시지가 표시되지 않지만 응용 프로그램 리디렉션 URI가 필요합니다. 응용 프로그램 리디렉션 URI는 인증 코드로 인증한 후 사용자를 응용 프로그램으로 리디렉션하는 데 사용됩니다. 관련 사용 사례 튜토리얼에서는 이러한 인증 특정 구성을 간략하게 설명합니다.
 
 ## ADC 프로젝트 통신을 사용하도록 AEM 인스턴스 구성{#configure-aem-instance}
 
