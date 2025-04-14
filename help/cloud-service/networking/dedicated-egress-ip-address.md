@@ -11,9 +11,9 @@ thumbnail: KT-9351.jpeg
 exl-id: 311cd70f-60d5-4c1d-9dc0-4dcd51cad9c7
 last-substantial-update: 2024-04-26T00:00:00Z
 duration: 891
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 24d634fd1e62e873bc1dbb3ac0cd18f70129ee86
 workflow-type: tm+mt
-source-wordcount: '1360'
+source-wordcount: '1370'
 ht-degree: 1%
 
 ---
@@ -226,7 +226,7 @@ Cloud Manager API를 사용하여 전용 이그레스 IP 주소를 활성화할 
 
 ### HTTP/HTTPS
 
-AEM에서 HTTP/HTTPS 연결을 만들 때 전용 이그레스 IP 주소를 사용하는 경우 HTTP/HTTPS 연결은 전용 이그레스 IP 주소를 사용하여 AEM에서 자동으로 프록시됩니다. HTTP/HTTPS 연결을 지원하는 데 추가적인 코드나 구성은 필요하지 않습니다.
+AEM에서 HTTP/HTTPS 연결을 만들 때 전용 이그레스 IP 주소를 사용하는 경우 HTTP/HTTPS 연결은 전용 이그레스 IP 주소를 사용하여 AEM에서 자동으로 프록시됩니다. 전용 이그레스 IP 주소 고급 네트워킹을 설정하는 것 외에 HTTP/HTTPS 연결을 지원하는 데 추가적인 코드나 구성은 필요하지 않습니다.
 
 #### 코드 예
 
