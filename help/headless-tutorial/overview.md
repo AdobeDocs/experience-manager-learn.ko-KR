@@ -8,9 +8,9 @@ level: Beginner
 doc-type: Catalog
 recommendations: disable, exclude
 exl-id: 57f88d79-9879-4bb9-a3db-9fec95e3a0bd
-source-git-commit: bd0f42fa37b7bbe19bf0d7fc65801198e64cbcd9
+source-git-commit: 46d65df60ce7a4cda7ff3aa3fb21c1ee60f59bc6
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '375'
 ht-degree: 1%
 
 ---
@@ -117,7 +117,7 @@ Adobe Experience Manager(AEM)에는 Headless 엔드포인트를 정의하고 콘
 </tr>
 </table>
 
-## 프레임워크별 튜토리얼
+## 튜토리얼
 
 사용된 기술을 기반으로 다음 튜토리얼을 찾아보십시오. 컨텍스트 내 작성 및 경험 관리 옵션을 통해 AEM이 순수한 Headless 사용 사례를 넘어서는 방법에 대해 알아봅니다.
 
@@ -137,6 +137,19 @@ Adobe Experience Manager(AEM)에는 Headless 엔드포인트를 정의하고 콘
     <p>
   </td>
   <td>
+    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/universal-editor/react-app-editing/overview">
+      <img alt="React - 유니버설 편집기를 통해 콘텐츠 편집" src="./assets/react-universal-editor.png" />
+    </a>
+     <div>
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/universal-editor/react-app-editing/overview">
+        <strong>React - 유니버설 편집기를 통해 콘텐츠 편집</strong>
+      </a>
+    </div>
+    <p>
+    <em>범용 편집기를 사용하여 React 응용 프로그램의 콘텐츠를 편집하십시오.</em>
+    <p>
+  </td>  
+  <td>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/remote-spa/overview.html">
     <img alt="React - 원격 편집기" src="./assets/react-remote.png" />
     </a>
@@ -149,6 +162,8 @@ Adobe Experience Manager(AEM)에는 Headless 엔드포인트를 정의하고 콘
     <em>원격으로 호스팅된 React 응용 프로그램의 컨텍스트 내 일부를 작성합니다.</em>
     </p>
   </td>
+</tr>
+<tr>  
   <td>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html">
       <img alt="React - SPA 편집기" src="./assets/react-spa-editor.png" />
@@ -162,8 +177,6 @@ Adobe Experience Manager(AEM)에는 Headless 엔드포인트를 정의하고 콘
     <em>AEM SPA 편집기를 사용하여 전체 React 앱 환경을 관리하십시오.</em>
     <p>
   </td>
-</tr>
-<tr>  
   <td>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html">
     <img alt="Android - 콘텐츠 서비스" src="./assets/android.png" />
@@ -190,6 +203,5 @@ Adobe Experience Manager(AEM)에는 Headless 엔드포인트를 정의하고 콘
     <em>인증할 개발자 및 서비스 토큰을 사용하여 Node.js 앱을 빌드합니다.</em>
     <p>
   </td>
-  <td></td>
 </tr>
 </table>
