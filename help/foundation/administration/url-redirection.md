@@ -12,7 +12,7 @@ index: y
 doc-type: Article
 exl-id: 8e64f251-e5fd-4add-880e-9d54f8e501a6
 duration: 164
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 62887c6251b09ac22664cfeb9c5513363efb555e
 workflow-type: tm+mt
 source-wordcount: '961'
 ht-degree: 0%
@@ -50,7 +50,7 @@ AEM의 URL 리디렉션 솔루션은 다음과 같습니다.
 
 이 옵션은 AEM as a Cloud Service 고객만 사용할 수 있습니다.
 
-[AEM 관리 CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn)은(는) Edge 수준에서 리디렉션 솔루션을 제공하므로 원본으로의 왕복 시간이 줄어듭니다. [클라이언트측 리디렉션](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#client-side-redirectors) 기능을 사용하면 AEM 프로젝트 코드에서 리디렉션 규칙을 구성하고 [구성 파이프라인](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#deploy-rules-through-cloud-manager)을 사용하여 배포할 수 있습니다. CDN 구성 파일(`cdn.yaml`) 크기는 100KB를 초과할 수 없습니다.
+[AEM 관리 CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn)은(는) Edge 수준에서 리디렉션 솔루션을 제공하므로 원본으로의 왕복 시간이 줄어듭니다. [서버측 리디렉션](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#server-side-redirectors) 기능을 사용하면 AEM 프로젝트 코드에서 리디렉션 규칙을 구성하고 [구성 파이프라인](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#deploy-rules-through-cloud-manager)을 사용하여 배포할 수 있습니다. CDN 구성 파일(`cdn.yaml`) 크기는 100KB를 초과할 수 없습니다.
 
 Edge 또는 CDN 수준에서 리디렉션을 관리하면 성능이 향상됩니다.
 
