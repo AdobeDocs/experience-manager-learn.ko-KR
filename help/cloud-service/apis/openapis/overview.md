@@ -12,9 +12,9 @@ thumbnail: KT-16515.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 0eb0054d-0c0a-4ac0-b7b2-fdaceaa6479b
-source-git-commit: 34aaecb7b82d7fae068549fad3ec9a4895fb9ec7
+source-git-commit: 182d7b76411ab885ab93b7724b97bf75cc52323c
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '1002'
 ht-degree: 1%
 
 ---
@@ -45,10 +45,6 @@ ht-degree: 1%
 
 향후 릴리스에서는 추가 사용 사례를 지원하기 위해 더 많은 OpenAPI 기반 AEM API가 추가됩니다.
 
->[!AVAILABILITY]
->
->OpenAPI 기반 AEM API는 조기 액세스 프로그램의 일부로 사용할 수 있습니다. 액세스하는 데 관심이 있는 경우 사용 사례에 대한 설명을 포함하여 [aem-apis@adobe.com](mailto:aem-apis@adobe.com)에 전자 메일을 보내는 것이 좋습니다.
-
 ## 인증 지원{#authentication-support}
 
 OpenAPI 기반 AEM API는 다음 권한 유형을 포함하여 OAuth 2.0 인증을 지원합니다.
@@ -71,6 +67,7 @@ OpenAPI 기반 AEM API는 다음 권한 유형을 포함하여 OAuth 2.0 인증�
 | **보안 고려 사항** | 중요한 자격 증명(`client_id`, `client_secret`)을 백 엔드 시스템에 안전하게 저장합니다. | 사용자 인증 후에는 백엔드 호출을 통해 자신의 _임시 액세스 토큰_&#x200B;이 부여됩니다. 액세스 토큰에 대한 인증 코드를 교환하기 위해 중요한 자격 증명(`client_id`, `client_secret`)을 백엔드 시스템에 안전하게 저장하십시오. | 사용자 인증 후에는 프론트엔드 호출을 통해 _임시 액세스 토큰이 부여됩니다_. `client_secret`은(는) 프론트엔드 앱에 저장하기에 안전하지 않으므로 사용하지 않습니다. PKCE를 사용하여 액세스 토큰에 대한 인증 코드를 교환합니다. |
 | **권한 부여 형식** | _client_credentials_ | _authorization_code_ | _authorization_code_(**PKCE** 포함) |
 | **Adobe Developer Console 자격 증명 유형** | OAuth 서버 간 | OAuth 웹 앱 | OAuth 단일 페이지 앱 |
+| **튜토리얼** | [서버 간 인증을 사용하여 API 호출](./use-cases/invoke-api-using-oauth-s2s.md) | [웹 앱 인증을 사용하여 API 호출](./use-cases/invoke-api-using-oauth-web-app.md) | [단일 페이지 앱 인증을 사용하여 API 호출](./use-cases/invoke-api-using-oauth-single-page-app.md) |
 
 ## Adobe API 및 관련 개념 액세스{#accessing-adobe-apis-and-related-concepts}
 
