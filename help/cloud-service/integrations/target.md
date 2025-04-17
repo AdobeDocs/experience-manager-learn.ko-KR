@@ -14,7 +14,7 @@ badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM 헤드리스 as a Cloud Service" before-title="false"
 exl-id: be886c64-9b8e-498d-983c-75f32c34be4b
 duration: 1549
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: adc2f352544b4718522073642c6bf971b3600616
 workflow-type: tm+mt
 source-wordcount: '1618'
 ht-degree: 0%
@@ -42,9 +42,7 @@ AEM 컨텐츠 조각을 Adobe Target으로 내보내고 이를 사용하여 AEM 
 
 AEM과 Adobe Target 간의 인증을 용이하게 하는 Adobe IMS 구성
 
-Adobe IMS 구성을 만드는 방법에 대한 단계별 지침은 [설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integration-adobe-target-ims.html)를 검토하십시오.
-
->[!VIDEO](https://video.tv.adobe.com/v/3416495/?quality=12&learn=on)
+Adobe IMS 구성을 만드는 방법에 대한 단계별 지침은 [설명서](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/integrations/target#adobe-target-cloud-service)를 검토하십시오.
 
 ## Adobe Target Cloud Service{#adobe-target-cloud-service}
 
