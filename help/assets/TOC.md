@@ -7,10 +7,10 @@ sub-product: Experience Manager Assets
 version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: ebc609ae621ea5d4d0eba0e28202448b6eaeb8cc
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 17%
+source-wordcount: '454'
+ht-degree: 21%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 17%
    + [자산 보기](playlists/assets-view.md)
    + [관리자 보기](playlists/admin-view.md)
 
-+ {#configuring} 구성 중
++ 구성{#configuring}
    + [기준선 폴더](configuring/baseline-folders.md)
    + [기준선 권한](configuring/baseline-permissions.md)
    + [태그 지정](configuring/tagging.md)
@@ -42,7 +42,7 @@ ht-degree: 17%
    + [렌디션](./authoring/renditions.md)
    + [관계 설정 및 관계 해제](./authoring/relate-unrelate.md)
 
-+ Collaboration{#collaboration}
++ 공동 작업{#collaboration}
    + [시청하기](./collaboration/watch.md)
    + [타임라인 및 받은 편지함](./collaboration/timeline-and-inbox.md)
    + [주석 및 주석](./collaboration/comments-and-annotations.md)
@@ -86,6 +86,8 @@ ht-degree: 17%
    + [Adobe Express을 사용한 이미지 변형](./content-hub/image-variants.md)
    + [컬렉션](./content-hub/collections.md)
    + [공유](./content-hub/share.md)
+   + 사용 사례{#use-cases}
+      + [자산 관리](./content-hub/use-cases/manage-assets.md)
 
 + Edge Delivery Services{#edge-delivery-services}
    + [Sidekick 플러그인](./edge-delivery-services/sidekick-plugin.md)
@@ -116,7 +118,7 @@ ht-degree: 17%
    + [Adobe Asset Link](./creative-workflows/adobe-asset-link.md)
    + [Adobe Stock](./creative-workflows/adobe-stock.md)
 
-+ Adobe 자산 링크{#adobe-asset-link}
++ Adobe Asset Link{#adobe-asset-link}
    + [설정](./adobe-asset-link/setup.md)
    + [Adobe 자산 링크 액세스](./adobe-asset-link/launch-adobe-asset-link.md)
    + [패널 개요](./adobe-asset-link/panel-overview.md)
@@ -155,7 +157,7 @@ ht-degree: 17%
       + [Adobe Analytics이 있는 뷰어](dynamic-media/dynamic-media-viewer-extension-use.md)
    + 3D {#3d}
       + [Dynamic Media 3D](dynamic-media/dynamic-media-3d-feature-video.md)
-   + AEM Sites {#dm-with-aem-sites}에서 사용
+   + AEM Sites에 사용 {#dm-with-aem-sites}
       + [경험 조각](dynamic-media/dynamic-media-experience-fragments-feature-video-use.md)
       + [Dynamic Media 코어 구성 요소](dynamic-media/dynamic-media-core-components.md)
 
