@@ -12,9 +12,9 @@ thumbnail: KT-16516.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 8338a905-c4a2-4454-9e6f-e257cb0db97c
-source-git-commit: b17e228c33ff2e3f2ee2d7e13da65a648c5df79d
+source-git-commit: 610fe6fc91a400baa9d7f5d40a6a5c2084f93ed0
 workflow-type: tm+mt
-source-wordcount: '1719'
+source-wordcount: '1687'
 ht-degree: 2%
 
 ---
@@ -24,10 +24,6 @@ ht-degree: 2%
 _OAuth 서버 간_ 인증을 사용하여 사용자 지정 애플리케이션에서 AEM as a Cloud Service의 OpenAPI 기반 AEM API를 호출하는 방법에 대해 알아봅니다.
 
 OAuth 서버 간 인증은 사용자 상호 작용 없이 API 액세스가 필요한 백엔드 서비스에 이상적입니다. 클라이언트 응용 프로그램을 인증하기 위해 OAuth 2.0 _client_credentials_ 권한 유형을 사용합니다.
-
->[!AVAILABILITY]
->
->OpenAPI 기반 AEM API는 조기 액세스 프로그램의 일부로 사용할 수 있습니다. 액세스하는 데 관심이 있는 경우 사용 사례에 대한 설명을 포함하여 [aem-apis@adobe.com](mailto:aem-apis@adobe.com)에 전자 메일을 보내는 것이 좋습니다.
 
 ## 학습 내용{#what-you-learn}
 
@@ -65,7 +61,7 @@ OAuth 서버 간 인증은 사용자 상호 작용 없이 API 액세스가 필�
 1. ADC 프로젝트 구성
    1. Assets 작성자 API 추가
    1. OAuth 서버 간 인증 방법으로 인증 방법 구성
-   1. Associate Product Profile with the authentication configuration
+   1. 제품 프로필을 인증 구성과 연결
 1. ADC 프로젝트 통신을 사용하도록 AEM 인스턴스 구성
 1. 샘플 NodeJS 애플리케이션 개발
 1. 엔드 투 엔드 흐름 확인
@@ -89,7 +85,7 @@ OAuth 서버 간 인증은 사용자 상호 작용 없이 API 액세스가 필�
 
    ![AEM API 추가](../assets/s2s/add-aem-api.png)
 
-1. Next, in the _Configure API_ dialog, select the **Server-to-Server** authentication option and click **Next**. 서버 간 인증은 사용자 상호 작용 없이 API 액세스가 필요한 백엔드 서비스에 이상적입니다.
+1. 그런 다음 _API 구성_ 대화 상자에서 **서버 간** 인증 옵션을 선택하고 **다음**&#x200B;을(를) 클릭합니다. 서버 간 인증은 사용자 상호 작용 없이 API 액세스가 필요한 백엔드 서비스에 이상적입니다.
 
    ![인증 선택](../assets/s2s/select-authentication.png)
 
@@ -176,17 +172,17 @@ GET https://{bucket}.adobeaemcloud.com/adobe/../assets/{assetId}/metadata
 
 >[!BEGINTABS]
 
->[!TAB Run-the-sample-application]
+>[!TAB 샘플 응용 프로그램 실행]
 
-1. Download the sample [demo-nodejs-app-to-invoke-aem-openapi](../assets/s2s/demo-nodejs-app-to-invoke-aem-openapi.zip) application zip file and extract it.
+1. 샘플 [demo-nodejs-app-to-invoke-aem-openapi](../assets/s2s/demo-nodejs-app-to-invoke-aem-openapi.zip) 응용 프로그램 zip 파일을 다운로드하고 압축을 풉니다.
 
-1. Navigate to the extracted folder and install the dependencies.
+1. 추출된 폴더로 이동하고 종속성을 설치합니다.
 
    ```bash
    $ npm install
    ```
 
-1. Replace the placeholders in the `.env` file with the actual values from the ADC Project&#39;s OAuth Server-to-Server credential.
+1. `.env` 파일의 자리 표시자를 ADC 프로젝트의 OAuth 서버 간 자격 증명의 실제 값으로 바꿉니다.
 
 1. `src/index.js` 파일의 `<BUCKETNAME>` 및 `<ASSETID>`을(를) 실제 값으로 바꾸십시오.
 
@@ -213,7 +209,7 @@ GET https://{bucket}.adobeaemcloud.com/adobe/../assets/{assetId}/metadata
    $ npm install dotenv
    ```
 
-1. Open the project in your favorite code editor and update the `package.json` file to add the `type` to `module`.
+1. 즐겨 찾는 코드 편집기에서 프로젝트를 열고 `package.json` 파일을 업데이트하여 `type`을(를) `module`에 추가합니다.
 
    ```json
    {
@@ -464,9 +460,9 @@ API가 성공적으로 호출되면 ADC 프로젝트의 OAuth 서버 간 자격 
 
 403 오류를 수정하려면 다음 두 가지 옵션이 필요합니다.
 
-- ADC 프로젝트에서 OAuth 서버 간 자격 증명의 관련 제품 프로필을 _만들기, 업데이트, 삭제_(CUD)에 필요한 권한이 있는 적절한 제품 프로필로 업데이트하십시오(예: **AEM 관리자 - 작성자 - 프로그램 XXX - 환경 XXX**). For more information, see [How To - API&#39;s connected credentials and Product Profile management](../how-to/credentials-and-product-profile-management.md) article.
+- ADC 프로젝트에서 OAuth 서버 간 자격 증명의 관련 제품 프로필을 _만들기, 업데이트, 삭제_(CUD)에 필요한 권한이 있는 적절한 제품 프로필로 업데이트하십시오(예: **AEM 관리자 - 작성자 - 프로그램 XXX - 환경 XXX**). 자세한 내용은 [방법 - API의 연결된 자격 증명 및 제품 프로필 관리](../how-to/credentials-and-product-profile-management.md) 문서를 참조하십시오.
 
-- Using AEM Project, update the associated AEM Service user group&#39;s (for example, AEM Assets Collaborator Users - Service) permissions in AEM Author to allow _Create, Update, Delete_ (CUD) of the asset metadata. 자세한 내용은 [방법 - AEM 서비스 사용자 그룹 권한 관리](../how-to/services-user-group-permission-management.md) 문서를 참조하십시오.
+- AEM Project를 사용하여 연결된 AEM 서비스 사용자 그룹(예: AEM Assets Collaborator Users - Service)의 AEM 작성자 권한을 업데이트하여 _CUD(자산 메타데이터 만들기, 업데이트, 삭제_)를 허용합니다. 자세한 내용은 [방법 - AEM 서비스 사용자 그룹 권한 관리](../how-to/services-user-group-permission-management.md) 문서를 참조하십시오.
 
 ## 요약
 

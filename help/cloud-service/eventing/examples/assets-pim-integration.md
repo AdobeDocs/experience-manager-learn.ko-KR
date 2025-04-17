@@ -12,9 +12,9 @@ last-substantial-update: 2024-02-13T00:00:00Z
 jira: KT-14901
 thumbnail: KT-14901.jpeg
 exl-id: 070cbe54-2379-448b-bb7d-3756a60b65f0
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 610fe6fc91a400baa9d7f5d40a6a5c2084f93ed0
 workflow-type: tm+mt
-source-wordcount: '1517'
+source-wordcount: '1518'
 ht-degree: 0%
 
 ---
@@ -106,13 +106,13 @@ AEM Assets 이벤트를 수신하고 이전 단계에서 만든 Adobe I/O Runtim
 
 ADC 프로젝트의 OAuth 서버 간 자격 증명 ClientID가 AEM 인스턴스와 통신할 수 있도록 하려면 AEM 인스턴스를 구성해야 합니다.
 
-이 작업은 AEM 프로젝트의 `config.yaml` 파일에서 구성을 정의하여 수행됩니다. 그런 다음 Cloud Manager에서 구성 파이프라인을 사용하여 `config.yaml` 파일을 배포합니다.
+이 작업은 AEM 프로젝트의 `api.yaml` 파일에서 구성을 정의하여 수행됩니다. 그런 다음 Cloud Manager에서 구성 파이프라인을 사용하여 `api.yaml` 파일을 배포합니다.
 
-- AEM 프로젝트에서 `config` 폴더에서 `config.yaml` 파일을 찾거나 만듭니다.
+- AEM 프로젝트에서 `config` 폴더에서 `api.yaml` 파일을 찾거나 만듭니다.
 
-  ![구성 YAML 찾기](../assets/examples/assets-pim-integration/locate-config-yaml.png)
+  ![API YAML 찾기](../assets/examples/assets-pim-integration/locate-api-yaml.png)
 
-- `config.yaml` 파일에 다음 구성을 추가합니다.
+- `api.yaml` 파일에 다음 구성을 추가합니다.
 
   ```yaml
   kind: "API"
@@ -134,9 +134,9 @@ ADC 프로젝트의 OAuth 서버 간 자격 증명 ClientID가 AEM 인스턴스�
 
 - 구성 변경 사항을 Git 저장소에 커밋하고 변경 사항을 원격 저장소에 푸시합니다.
 
-- Cloud Manager의 구성 파이프라인 을 사용하여 위의 변경 사항을 배포합니다. 명령줄 도구를 사용하여 RDE에 `config.yaml` 파일을 설치할 수도 있습니다.
+- Cloud Manager의 구성 파이프라인 을 사용하여 위의 변경 사항을 배포합니다. 명령줄 도구를 사용하여 RDE에 `api.yaml` 파일을 설치할 수도 있습니다.
 
-  ![config.yaml 배포](../assets/examples/assets-pim-integration/config-pipeline.png)
+  ![API YAML 배포](../assets/examples/assets-pim-integration/config-pipeline.png)
 
 ### 런타임 작업 개발
 

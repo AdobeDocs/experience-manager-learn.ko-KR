@@ -12,9 +12,9 @@ thumbnail: KT-17426.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 1df4c816-b354-4803-bb6c-49aa7d7404c6
-source-git-commit: 4cdab2b243af74a8075ae65e8f24e7f56ef2a23b
+source-git-commit: 610fe6fc91a400baa9d7f5d40a6a5c2084f93ed0
 workflow-type: tm+mt
-source-wordcount: '1291'
+source-wordcount: '1274'
 ht-degree: 1%
 
 ---
@@ -23,12 +23,7 @@ ht-degree: 1%
 
 OpenAPI 기반 AEM API에 액세스할 수 있도록 AEM as a Cloud Service 환경을 설정하는 방법에 대해 알아봅니다.
 
->[!AVAILABILITY]
->
->OpenAPI 기반 AEM API는 조기 액세스 프로그램의 일부로 사용할 수 있습니다. 액세스하는 데 관심이 있는 경우 사용 사례에 대한 설명을 포함하여 [aem-apis@adobe.com](mailto:aem-apis@adobe.com)에 전자 메일을 보내는 것이 좋습니다.
-
 >[!VIDEO](https://video.tv.adobe.com/v/3457510?quality=12&learn=on)
-
 
 상위 레벨 설정 프로세스에는 다음 단계가 포함됩니다.
 
@@ -151,14 +146,13 @@ ADC 프로젝트를 만든 후 원하는 AEM API를 추가하고, 인증을 설�
 
 ADC 프로젝트의 ClientID가 AEM 인스턴스와 통신할 수 있도록 하려면 AEM 인스턴스를 구성해야 합니다.
 
-이 작업은 의 `config.yaml` 파일에서 API 구성을 정의하여 수행됩니다.
-AEM 프로젝트 를 참조하고 Cloud Manager에서 구성 파이프라인을 사용하여 배포합니다.
+이 작업은 YAML 파일에서 API 구성을 정의하고 Cloud Manager의 구성 파이프라인 을 사용하여 배포함으로써 수행됩니다. YAML 파일은 AEM 인스턴스와 통신할 수 있는 ADC 프로젝트에서 허용되는 ClientID를 정의합니다.
 
-1. AEM 프로젝트에서 `config` 폴더에서 `config.yaml` 파일을 찾거나 만듭니다.
+1. AEM 프로젝트에서 `config` 폴더에서 `api.yaml` 파일을 찾거나 만듭니다.
 
-   ![구성 YAML 찾기](./assets/setup/locate-config-yaml.png)
+   ![API YAML 찾기](./assets/setup/locate-api-yaml.png){width="500" zoomable="no"}
 
-1. `config.yaml` 파일에 다음 구성을 추가합니다.
+1. `api.yaml` 파일에 다음 구성을 추가합니다.
 
    ```yaml
    kind: "API"
@@ -179,9 +173,9 @@ AEM 프로젝트 를 참조하고 Cloud Manager에서 구성 파이프라인을 
 
 1. 구성 변경 사항을 커밋하고 Cloud Manager 파이프라인이 연결된 원격 Git 저장소에 변경 사항을 푸시합니다.
 
-1. Cloud Manager의 구성 파이프라인 을 사용하여 위의 변경 사항을 배포합니다. 명령줄 도구를 사용하여 RDE에 `config.yaml` 파일을 설치할 수도 있습니다.
+1. Cloud Manager의 구성 파이프라인 을 사용하여 위의 변경 사항을 배포합니다. 명령줄 도구를 사용하여 RDE에 `api.yaml` 파일을 설치할 수도 있습니다.
 
-   ![config.yaml 배포](./assets/setup/config-pipeline.png)
+   ![YAML 배포](./assets/setup/config-pipeline.png)
 
 ## 다음 단계
 

@@ -12,9 +12,9 @@ thumbnail: KT-16718.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 9cf7c318-2be4-4b26-bd6f-0c80d002db45
-source-git-commit: 34aaecb7b82d7fae068549fad3ec9a4895fb9ec7
+source-git-commit: 610fe6fc91a400baa9d7f5d40a6a5c2084f93ed0
 workflow-type: tm+mt
-source-wordcount: '2245'
+source-wordcount: '2213'
 ht-degree: 0%
 
 ---
@@ -24,10 +24,6 @@ ht-degree: 0%
 OAuth 웹 앱을 사용하는 사용자 지정 웹 앱의 사용자 기반 인증을 사용하여 AEM as a Cloud Service에서 OpenAPI 기반 AEM API를 호출하는 방법에 대해 알아봅니다.
 
 OAuth 웹 앱 인증은 **사용자를 대신하여 AEM API에 액세스**&#x200B;해야 하는 프론트엔드 및 _백엔드_ 구성 요소가 있는 웹 애플리케이션에 이상적입니다. OAuth 2.0 _authorization_code_ 권한 유형을 사용하여 AEM API에 액세스할 수 있는 사용자 대신 액세스 토큰을 가져옵니다. 자세한 내용은 [OAuth 서버 간 인증서와 웹 앱 간 인증서와 단일 페이지 앱 자격 증명 간의 차이점](../overview.md#difference-between-oauth-server-to-server-vs-web-app-vs-single-page-app-credentials)을 참조하십시오.
-
->[!AVAILABILITY]
->
->OpenAPI 기반 AEM API는 조기 액세스 프로그램의 일부로 사용할 수 있습니다. 액세스하는 데 관심이 있는 경우 사용 사례에 대한 설명을 포함하여 [aem-apis@adobe.com](mailto:aem-apis@adobe.com)에 전자 메일을 보내는 것이 좋습니다.
 
 ## 학습 내용{#what-you-learn}
 

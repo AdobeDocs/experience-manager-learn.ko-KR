@@ -12,9 +12,9 @@ thumbnail: KT-17430.jpg
 last-substantial-update: 2025-03-28T00:00:00Z
 duration: 0
 exl-id: 9fb92127-9dea-4a1d-b1f7-8fb98cabf188
-source-git-commit: 3d42029f193f293631585314983956618d707244
+source-git-commit: 610fe6fc91a400baa9d7f5d40a6a5c2084f93ed0
 workflow-type: tm+mt
-source-wordcount: '2113'
+source-wordcount: '2081'
 ht-degree: 0%
 
 ---
@@ -26,10 +26,6 @@ ht-degree: 0%
 OAuth 단일 페이지 앱 인증은 브라우저에서 실행되는 JavaScript 기반 애플리케이션에 이상적입니다. 백엔드 서버가 없거나 사용자 대신 AEM API와 상호 작용하기 위해 액세스 토큰을 가져와야 하는지 여부.
 
 PKCE 흐름은 OAuth 2.0 _authorization_code_ 부여 유형을 확장하여 인증 코드 차단을 방지하여 보안을 강화합니다. 자세한 내용은 [OAuth 서버 대 서버 및 웹 앱과 단일 페이지 앱 자격 증명 간의 차이점](../overview.md#difference-between-oauth-server-to-server-vs-web-app-vs-single-page-app-credentials) 섹션을 참조하십시오.
-
->[!AVAILABILITY]
->
->OpenAPI 기반 AEM API는 조기 액세스 프로그램의 일부로 사용할 수 있습니다. 액세스하는 데 관심이 있는 경우 사용 사례에 대한 설명을 포함하여 [aem-apis@adobe.com](mailto:aem-apis@adobe.com)에 전자 메일을 보내는 것이 좋습니다.
 
 ## 학습 내용{#what-you-learn}
 
