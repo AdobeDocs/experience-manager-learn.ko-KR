@@ -11,7 +11,7 @@ level: Intermediate, Experienced
 doc-type: Tutorial
 exl-id: 63c23f22-533d-486c-846b-fae22a4d68db
 duration: 253
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
 workflow-type: tm+mt
 source-wordcount: '621'
 ht-degree: 0%
@@ -73,5 +73,5 @@ Node.js 애플리케이션의 실행 흐름은 다음과 같습니다.
 
 + [예제 애플리케이션 다운로드](./assets/aem-guides_token-authentication-external-application.zip)
 + JWT 생성 및 교환의 기타 코드 샘플
-   + [Node.js, Java, Python, C#.NET 및 PHP 코드 샘플](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/samples/)
+   + [Node.js, Java, Python, C#.NET 및 PHP 코드 샘플](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/samples)
    + [JavaScript/Axios 기반 코드 샘플](https://github.com/adobe/aemcs-api-client-lib)

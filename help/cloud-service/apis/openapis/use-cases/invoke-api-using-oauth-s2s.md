@@ -12,7 +12,7 @@ thumbnail: KT-16516.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 8338a905-c4a2-4454-9e6f-e257cb0db97c
-source-git-commit: 610fe6fc91a400baa9d7f5d40a6a5c2084f93ed0
+source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
 workflow-type: tm+mt
 source-wordcount: '1687'
 ht-degree: 2%
@@ -50,7 +50,7 @@ OAuth 서버 간 인증은 사용자 상호 작용 없이 API 액세스가 필�
 
 - 샘플 [WKND Sites](https://github.com/adobe/aem-guides-wknd?#aem-wknd-sites-project) 프로젝트를 여기에 배포해야 합니다.
 
-- [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started/)에 액세스
+- [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started)에 액세스
 
 - 로컬 컴퓨터에 [Node.js](https://nodejs.org/en/)을(를) 설치하여 샘플 NodeJS 응용 프로그램을 실행합니다.
 
@@ -117,7 +117,7 @@ Java, Python 등의 다른 프로그래밍 언어를 사용하여 응용 프로�
 
 ### API 검토
 
-응용 프로그램을 개발하기 전에 _Assets 작성자 API_&#x200B;에서 [지정된 에셋의 메타데이터 배달](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/../assets/author/#operation/getAssetMetadata) 끝점을 검토해 보겠습니다. API 구문은 다음과 같습니다.
+응용 프로그램을 개발하기 전에 _Assets 작성자 API_&#x200B;에서 [지정된 에셋의 메타데이터 배달](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/#operation/getAssetMetadata) 끝점을 검토해 보겠습니다. API 구문은 다음과 같습니다.
 
 ```http
 GET https://{bucket}.adobeaemcloud.com/adobe/../assets/{assetId}/metadata
@@ -471,4 +471,4 @@ ADC 프로젝트에서 AEM API를 추가하고, 인증 유형을 구성하고, �
 
 ## 추가 리소스
 
-- [OAuth 서버 간 자격 증명 구현 안내서](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)
+- [OAuth 서버 간 자격 증명 구현 안내서](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)

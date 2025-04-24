@@ -12,7 +12,7 @@ last-substantial-update: 2024-02-13T00:00:00Z
 jira: KT-14901
 thumbnail: KT-14901.jpeg
 exl-id: 070cbe54-2379-448b-bb7d-3756a60b65f0
-source-git-commit: 610fe6fc91a400baa9d7f5d40a6a5c2084f93ed0
+source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
 workflow-type: tm+mt
 source-wordcount: '1518'
 ht-degree: 0%
@@ -49,7 +49,7 @@ AEM Assets 이벤트를 받고 처리하기 위해 [Adobe I/O Runtime](https://d
 
 - [AEM 이벤트 사용](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment)이 설정된 AEM as a Cloud Service 환경. 또한 샘플 [WKND Sites](https://github.com/adobe/aem-guides-wknd?#aem-wknd-sites-project) 프로젝트를 여기에 배포해야 합니다.
 
-- [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started/)에 액세스
+- [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started)에 액세스
 
 - 로컬 컴퓨터에 [Adobe Developer CLI](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/)가 설치되어 있습니다.
 
@@ -335,6 +335,6 @@ AEM Assets 및 PIM 통합을 확인하려면 AEM Assets의 **모험** 폴더에 
 
 - 에셋 메타데이터 검색 코드는 AEM 외부에서 실행되어 AEM Author 서비스의 로드를 방지하므로 독립적으로 확장하는 이벤트 기반 아키텍처입니다.
 - 새로 도입된 Assets 작성자 API는 AEM에서 에셋 메타데이터를 업데이트하는 데 사용됩니다.
-- API 인증은 OAuth 서버 간(즉, 클라이언트 자격 증명 흐름)을 사용합니다. [OAuth 서버 간 자격 증명 구현 안내서](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)를 참조하십시오.
+- API 인증은 OAuth 서버 간(즉, 클라이언트 자격 증명 흐름)을 사용합니다. [OAuth 서버 간 자격 증명 구현 안내서](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)를 참조하십시오.
 - Adobe I/O Runtime 작업 대신 다른 웹후크 또는 Amazon EventBridge를 사용하여 AEM Assets 이벤트를 수신하고 메타데이터 업데이트를 처리할 수 있습니다.
 - AEM Eventing을 통한 에셋 이벤트는 기업이 중요한 프로세스를 자동화하고 능률화할 수 있도록 지원하여 콘텐츠 생태계 전반의 효율성과 일관성을 증진합니다.

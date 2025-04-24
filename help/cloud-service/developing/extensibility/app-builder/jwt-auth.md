@@ -10,7 +10,7 @@ jira: KT-11743
 last-substantial-update: 2023-01-17T00:00:00Z
 exl-id: 9a3fed96-c99b-43d1-9dba-a4311c65e5b9
 duration: 151
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 1%
@@ -50,7 +50,7 @@ JWT_PRIVATE_KEY=LS0tLS1C..kQgUFJJVkFURSBLRVktLS0tLQ==
 
 ### 메타스코프
 
-App Builder 작업이 상호 작용하는 Adobe API 및 해당 메타스코프를 확인합니다. `JWT_METASCOPES` 키에 쉼표 구분 기호가 있는 메타스코프를 나열합니다. 올바른 메타스코프는 [Adobe의 JWT 메타스코프 설명서](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/Scopes/)에 나와 있습니다.
+App Builder 작업이 상호 작용하는 Adobe API 및 해당 메타스코프를 확인합니다. `JWT_METASCOPES` 키에 쉼표 구분 기호가 있는 메타스코프를 나열합니다. 올바른 메타스코프는 [Adobe의 JWT 메타스코프 설명서](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/scopes)에 나와 있습니다.
 
 
 예를 들어 `.env`의 `JWT_METASCOPES` 키에 다음 값을 추가할 수 있습니다.

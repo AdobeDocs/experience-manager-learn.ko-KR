@@ -12,7 +12,7 @@ thumbnail: KT-17425.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 23b2be0d-a8d4-4521-96ba-78b70f4e9cba
-source-git-commit: b7cd1bb9584359e8bf8a168f8c062be54399f5ac
+source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
 workflow-type: tm+mt
 source-wordcount: '998'
 ht-degree: 4%
@@ -33,7 +33,7 @@ AEM은 작성자 및 게시 서비스 유형과 상호 작용하기 위한 다�
 
 | AEM API 유형 | 설명 | 사용 가능 | 사용 사례 | API 예 |
 | --- | --- | --- | --- | --- |
-| OpenAPI 기반 AEM API | Assets, Sites 및 Forms에 대해 표준화되고 기계가 읽을 수 있는 API입니다. | **AEM as a Cloud Service 전용** | API 우선 개발, 최신 애플리케이션 | [Assets 작성자 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/), [폴더 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/folders/), [AEM Sites API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/sites/delivery/), [Forms Acrobat 서비스](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) 및 기타 |
+| OpenAPI 기반 AEM API | Assets, Sites 및 Forms에 대해 표준화되고 기계가 읽을 수 있는 API입니다. | **AEM as a Cloud Service 전용** | API 우선 개발, 최신 애플리케이션 | [Assets 작성자 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/), [폴더 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/folders/), [AEM Sites API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/), [Forms Acrobat 서비스](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) 및 기타 |
 | RESTful API | AEM 리소스와 상호 작용하기 위한 기존 REST 엔드포인트입니다. | AEM 6.X, AEM as a Cloud Service | CRUD 작업, 최신 애플리케이션 | [Assets HTTP API](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets), [워크플로 REST API](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/extending-aem/extending-workflows/workflows-program-interaction#using-the-workflow-rest-api), [콘텐츠 서비스용 JSON 내보내기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/components-templates/json-exporter) 및 기타 |
 | GRAPHQL API | 유연한 쿼리를 통해 구조화된 콘텐츠를 효율적으로 검색할 수 있도록 최적화되었습니다. | AEM 6.X, AEM as a Cloud Service | 헤드리스 CMS, SPA, 모바일 앱 | [GraphQL API](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/graphql-api/content-fragments) |
 | 기존(비 RESTful) API | JCR, Sling 모델, 쿼리 빌더 등과 같은 이전 API입니다. | AEM 6.X, AEM as a Cloud Service | 이전 통합, 이전 버전과의 호환성 | [Query Builder API](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api) 외 |
