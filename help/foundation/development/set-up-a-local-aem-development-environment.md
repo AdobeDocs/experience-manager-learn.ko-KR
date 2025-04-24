@@ -11,9 +11,9 @@ last-substantial-update: 2022-07-20T00:00:00Z
 doc-type: Tutorial
 thumbnail: aem-local-dev-env.jpg
 duration: 4537
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 3ad201aad77e71b42d46d69fdda50bcc77316151
 workflow-type: tm+mt
-source-wordcount: '2423'
+source-wordcount: '2408'
 ht-degree: 0%
 
 ---
@@ -179,7 +179,6 @@ IDE를 사용하는 경우 Maven 프로필 탭에서 `classic`을(를) 확인하
 
 * [**다운로드**](https://code.visualstudio.com/Download) **Visual Studio 코드**
 * **[보고](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#integration-into-visual-studio-code)** - JCR 콘텐츠용 FTP와 유사한 도구
-* **[aemfed](https://aemfed.io/)** - AEM 프론트엔드 워크플로 속도 향상
 * Visual Studio 코드용 **[AEM 동기화](https://marketplace.visualstudio.com/items?itemName=Yinkai15.aemsync)** - 커뮤니티 지원&#42; 확장
 * **[WKND 프로젝트](https://github.com/adobe/aem-guides-wknd)** - 이 비디오에 표시된 AEM 프로젝트의 예입니다.
 
@@ -189,8 +188,7 @@ IDE를 사용하는 경우 Maven 프로필 탭에서 `classic`을(를) 확인하
 * 00:53 - Maven과 소스 코드 작성 및 배포
 * 04:03 - Push code changes 와 Repo 명령줄 도구
 * 08:29 - Pull code changes 와 Repo 명령줄 도구
-* 10:40 - aemfed 도구로 코드 변경 푸시
-* 14:24 - 문제 해결, 클라이언트 라이브러리 다시 빌드
+* 10:32 - 문제 해결, 클라이언트 라이브러리 다시 빌드
 
 ### [!DNL CRXDE Lite]
 

@@ -12,9 +12,9 @@ doc-type: Tutorial
 exl-id: 8d3026e9-a7e2-4a76-8a16-a8197a5e04e3
 recommendations: noDisplay, noCatalog
 duration: 557
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 3ad201aad77e71b42d46d69fdda50bcc77316151
 workflow-type: tm+mt
-source-wordcount: '2554'
+source-wordcount: '2432'
 ht-degree: 0%
 
 ---
@@ -394,14 +394,6 @@ Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 �
    > 정적 마크업의 이미지 src는 로컬 AEM 인스턴스의 라이브 이미지 구성 요소를 가리킵니다. 이미지에 대한 경로가 변경되거나, AEM이 시작되지 않았거나, 브라우저가 로컬 AEM 인스턴스에 로그인하지 않은 경우 이미지가 끊어진 것으로 표시됩니다. 외부 리소스로 전달하는 경우 이미지를 정적 참조로 바꿀 수도 있습니다.
 
 1. `CTRL+C`을(를) 입력하여 명령줄에서 Webpack 서버를 **중지**&#x200B;할 수 있습니다.
-
-### 비어 있음 {#develop-aemfed}
-
-**[aemfed](https://aemfed.io/)**&#x200B;은(는) 프론트엔드 개발 속도를 높이는 데 사용할 수 있는 오픈 소스 명령줄 도구입니다. 이 서비스는 [aemsync](https://www.npmjs.com/package/aemsync), [Browsersync](https://browsersync.io/) 및 [Sling 로그 추적기](https://sling.apache.org/documentation/bundles/log-tracers.html)에서 제공됩니다.
-
-`aemfed`은(는) **ui.apps** 모듈 내에서 파일 변경 내용을 수신하고 실행 중인 AEM 인스턴스와 직접 자동으로 동기화하도록 설계되었습니다. 로컬 브라우저는 변경 사항을 기반으로 자동으로 새로 고침되므로 프론트엔드 개발 속도가 빨라집니다. 또한 Sling 로그 추적기 와 함께 작동하여 모든 서버측 오류를 터미널에 직접 자동으로 표시하도록 빌드되었습니다.
-
-**ui.apps** 모듈 내에서 많은 작업을 하고 있고 HTL 스크립트를 수정하고 사용자 지정 구성 요소를 만드는 경우 **aemfed**&#x200B;을(를) 사용하면 강력한 도구가 될 수 있습니다. [전체 설명서는 여기에 있습니다](https://github.com/abmaonline/aemfed).
 
 ### 클라이언트측 라이브러리 디버깅 {#debugging-clientlibs}
 

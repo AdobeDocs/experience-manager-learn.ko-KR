@@ -11,9 +11,9 @@ level: Beginner
 last-substantial-update: 2022-09-03T00:00:00Z
 exl-id: 6fb3199a-02c9-48bc-a6fa-1f767cfd2f2a
 duration: 3508
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 3ad201aad77e71b42d46d69fdda50bcc77316151
 workflow-type: tm+mt
-source-wordcount: '1308'
+source-wordcount: '1302'
 ht-degree: 5%
 
 ---
@@ -250,7 +250,6 @@ Visual Studio Code는 주로 프론트엔드 코드인 JavaScript, CSS 및 HTML�
 
 + [Visual Studio 코드 다운로드](https://code.visualstudio.com/Download)
 + [보고서 도구 다운로드](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#integration-into-visual-studio-code)
-+ [aemfed VS 코드 확장 다운로드](https://aemfed.io/)
 + [AEM 동기화 VS 코드 확장 다운로드](https://marketplace.visualstudio.com/items?itemName=Yinkai15.aemsync)
 
 ### Eclipse
