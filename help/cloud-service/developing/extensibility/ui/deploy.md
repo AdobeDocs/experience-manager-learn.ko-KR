@@ -11,9 +11,9 @@ jira: KT-11603
 last-substantial-update: 2023-06-02T00:00:00Z
 exl-id: 2e37165d-c003-4206-8133-54e37ca35b8e
 duration: 166
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 1049f605eb1c3b68e70e34d4cdad31858b076858
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '847'
 ht-degree: 0%
 
 ---
@@ -94,6 +94,22 @@ App Builder 앱 업데이트 및 확장은 [초기 배포](#initial-deployment)�
 1. [Adobe Exchange](https://exchange.adobe.com/)에 로그인
 1. __관리__ > __App Builder 앱__(으)로 이동
 1. 업데이트할 확장을 __취소__
+
+확장을 취소한 후에도 Extension Manager에서 취소됨 상태로 표시됩니다. 완전히 제거하려면 프로젝트를 제거해야 합니다.
+
+프로젝트 제거 버튼은 오른쪽 상단에 있습니다.
+
+![삭제 버튼](./assets/deploy/extension-delete-button.png){align="center"}
+
+확장이 취소되지 않을 때까지 프로젝트를 삭제할 수 없습니다.
+
+![프로젝트를 삭제할 수 없습니다](./assets/deploy/extension-can-not-delete-project.png){align="center"}
+
+확장이 취소되면 프로젝트를 제거할 수 있습니다.
+
+![프로젝트를 삭제할 수 없습니다](./assets/deploy/extension-delete-procject.png){align="center"}
+
+프로젝트를 제거한 후에는 확장이 더 이상 Extension Manager에 표시되지 않습니다.
 
 ### 확장 배포
 
