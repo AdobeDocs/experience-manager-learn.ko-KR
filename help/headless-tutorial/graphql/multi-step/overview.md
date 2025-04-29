@@ -12,9 +12,9 @@ level: Beginner
 last-substantial-update: 2022-10-17T00:00:00Z
 exl-id: 41e15a2c-758b-4e7d-9d23-ef671c1dc155
 duration: 54
-source-git-commit: bd0f42fa37b7bbe19bf0d7fc65801198e64cbcd9
+source-git-commit: 888b00396f1d5d0b2dcb6895affdadf2907162fa
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '238'
 ht-degree: 3%
 
 ---
@@ -46,7 +46,7 @@ Headless CMS 시나리오에서, AEM의 GraphQL API를 사용하여 콘텐츠를
 
 ### AEM 환경
 
-이 자습서를 완료하려면 AEM 관리자가 AEM as a Cloud Service 환경에 액세스할 수 있도록 하는 것이 좋습니다. AEM as a Cloud Service 환경에 액세스할 수 없는 경우 [AEM Headless 체험판에 등록](https://commerce.adobe.com/business-trial/sign-up?items%5B0%5D%5Bid%5D=649A1AF5CBC5467A25E84F2561274821&amp;cli=headless_exl_banner_campaign&amp;co=US&amp;lang=en)하여 AEM의 Headless 기능을 살펴보십시오.
+이 자습서를 완료하려면 AEM 관리자가 AEM as a Cloud Service 환경에 액세스할 수 있도록 하는 것이 좋습니다.
 
 ## 시작해 보겠습니다!
 
