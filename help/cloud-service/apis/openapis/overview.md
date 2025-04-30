@@ -12,9 +12,9 @@ thumbnail: KT-16515.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 0eb0054d-0c0a-4ac0-b7b2-fdaceaa6479b
-source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
+source-git-commit: 58ae9e503bd278479d78d4df6ffe39356d5ec59b
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1100'
 ht-degree: 1%
 
 ---
@@ -54,6 +54,15 @@ OpenAPI 기반 AEM API는 다음 권한 유형을 포함하여 OAuth 2.0 인증�
 - **OAuth 웹 앱 자격 증명**: 사용자를 대신하여 AEM API에 액세스하는 프론트엔드 및 _백엔드_ 구성 요소가 있는 웹 애플리케이션에 적합합니다. 백 엔드 서버가 비밀과 토큰을 안전하게 관리하는 _authorization_code_ 권한 유형을 사용합니다. 자세한 내용은 [OAuth 웹 앱 자격 증명](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation#oauth-web-app-credential)을 참조하십시오.
 
 - **OAuth 단일 페이지 앱 자격 증명**: 브라우저에서 실행 중인 SPA를 위해 설계되었으며, 백엔드 서버가 없는 사용자를 대신하여 API에 액세스해야 합니다. 인증 코드 흐름을 보호하기 위해 _authorization_code_ 권한 유형을 사용하고 PKCE(Proof Key for Code Exchange)를 사용하는 클라이언트측 보안 메커니즘에 의존합니다. 자세한 내용은 [OAuth 단일 페이지 앱 자격 증명](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation#oauth-single-page-app-credential)을 참조하십시오.
+
+## 사용할 인증 방법{#auth-method-decision}
+
+사용할 인증 방법을 결정할 때는 다음 사항을 고려하십시오.
+
+![사용할 인증 방법](./assets/overview/which-authentication-method-to-use.png)
+
+AEM 사용자 컨텍스트가 관련될 때마다 사용자 인증(웹 앱 또는 단일 페이지 앱)을 기본 선택으로 해야 합니다. 이렇게 하면 저장소의 모든 작업이 인증된 사용자에게 올바르게 귀속되고 해당 사용자는 권한이 부여된 권한으로만 제한됩니다.
+서버 간(또는 기술 시스템 계정)을 사용하여 개별 사용자를 대신하여 작업을 수행하면 보안 모델이 생략되고 권한 에스컬레이션 및 부정확한 감사와 같은 위험이 발생합니다.
 
 ## OAuth 서버 간 자격 증명과 웹 앱 간 자격 증명 및 단일 페이지 앱 자격 증명 간의 차이점{#difference-between-oauth-server-to-server-vs-web-app-vs-single-page-app-credentials}
 
