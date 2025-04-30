@@ -8,10 +8,10 @@ breadcrumb-title: AEM Forms 튜토리얼
 sub-product: Experience Manager Forms
 version: Experience Manager 6.4, Experience Manager 6.5
 index: y
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: c4b5a015f1c0d5e3877886052476871548ec9b0e
 workflow-type: tm+mt
-source-wordcount: '2101'
-ht-degree: 1%
+source-wordcount: '2104'
+ht-degree: 2%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 1%
 + [개요](overview.md)
 + [따라야 할 모범 사례](adaptive-forms/best-practices-adaptive-forms.md)
 + [AEM Author로 OKTA 인증 설정](adaptive-forms/single-sign-on-with-okta.md)
-+ 첫 번째 적응형 양식 {#creating-your-first-adaptive-form}을(를) 만드는 중
++ 첫 번째 적응형 양식 만들기 {#creating-your-first-adaptive-form}
    + [1 - 소개 및 설정](creating-your-first-adaptive-form/introduction-and-setup.md)
    + [2 - 적응형 양식 템플릿 만들기](creating-your-first-adaptive-form/create-adaptive-form-template.md)
    + [3 - 양식 조각 만들기](creating-your-first-adaptive-form/create-form-fragment.md)
@@ -31,7 +31,7 @@ ht-degree: 1%
    + [7 - 소득 패널에 테이블 추가](creating-your-first-adaptive-form/adding-table-to-income-panel.md)
    + [8 - 에셋 패널 구성](creating-your-first-adaptive-form/configuring-assets-panel.md)
    + [9 - 사용자 지정 함수 및 코드 편집기 사용](creating-your-first-adaptive-form/using-custom-functions-and-code-editor.md)
-+ 양식 제출 {#handling-af-form-submissions} 처리
++ 양식 제출 처리 {#handling-af-form-submissions}
    + [검토 작업 과정 만들기](handling-form-submissions/creating-a-review-workflow.md)
    + [워크플로우를 트리거하기 위한 적응형 양식 구성](handling-form-submissions/configuring-adaptive-form-to-trigger-workflow.md)
    + [감사 인사 페이지 표시](handling-form-submissions/submitting-adaptive-forms-thank-you-page-article-use.md)
@@ -49,7 +49,7 @@ ht-degree: 1%
    + [SendGrid를 사용하여 이메일 보내기](some-useful-integrations/send-grid.md)
    + [Azure Storage에 양식 데이터 저장](some-useful-integrations/store-form-data-in-azure-storage.md)
    + [Azure Blob으로 양식 채우기](some-useful-integrations/fetch-form-data-from-azure-storage.md)
-+ OSGi 번들 {#creating-your-first-osgi-bundle}을(를) 만드는 중
++ OSGi 번들 생성 {#creating-your-first-osgi-bundle}
    + [1 - 환경 설정](creating-your-first-osgi-bundle/create-your-first-osgi-bundle.md)
    + [2 - OSGi 서비스 만들기](creating-your-first-osgi-bundle/create-osgi-service.md)
    + [3 - Sling 서블릿 만들기](creating-your-first-osgi-bundle/create-servlet.md)
@@ -106,7 +106,7 @@ ht-degree: 1%
    + [HTML5 Forms 미리 채우기](adaptive-forms/prepopulating-html5-forms-in-aem-forms-article.md)
    + [Salesforce을 사용한 양식 데이터 모델](adaptive-forms/using-adaptive-forms-with-sales-force-integration-tutorial.md)
    + [Choice 구성 요소에 동적으로 항목 추가](adaptive-forms/choice-group-items-adding-dynamically-article.md)
-+ ChatBot{#chatbot-and-aem-forms}을(를) 사용하여 PDF 양식 채우기
++ ChatBot으로 PDF 양식 채우기{#chatbot-and-aem-forms}
    + [1 - 소개](chatbot-and-aem-forms/introduction.md)
    + [2 - ChatBot 데이터 구문 분석](chatbot-and-aem-forms/parse-chat-bot-data.md)
    + [3 - PDF 만들기](chatbot-and-aem-forms/merge-data-with-template.md)
@@ -117,7 +117,7 @@ ht-degree: 1%
    + [2 - 선택 그룹 채우기](display-and-assemble-dam-folder-contents/populating-choice-group-with-dam-folder-content.md)
    + [3 - 선택한 에셋 결합](display-and-assemble-dam-folder-contents/assemble-selected-newsletters.md)
    + [4 - 에셋을 로컬로 배포](display-and-assemble-dam-folder-contents/deploy-on-your-system.md)
-+ 양식 데이터 모델 {#prefill-fdm-db}을(를) 사용하여 적응형 양식 미리 채우기
++ 양식 데이터 모델을 사용하여 적응형 양식 미리 채우기{#prefill-fdm-db}
    + [1 - 소개](prefill-fdm-db/introduction.md)
    + [2 - 데이터베이스 테이블 만들기](prefill-fdm-db/create-database-tables.md)
    + [3 - 양식 데이터 모델 구성](prefill-fdm-db/configuring-form-data-model.md)
@@ -143,7 +143,7 @@ ht-degree: 1%
    + [2 - 사용자 정의 제출 만들기](prefill-form-with-data-attachments/create-custom-submit.md)
    + [3 - OSGi 구성 만들기](prefill-form-with-data-attachments/create-osgi-configuration.md)
    + [4 - 미리 채우기 서비스 만들기](prefill-form-with-data-attachments/create-prefill-service.md)
-+ 적응형 양식{#store-and-retrieve-af-with-2fa} 저장 및 검색
++ 적응형 양식 저장 및 검색{#store-and-retrieve-af-with-2fa}
    + [1 - 소개](store-and-retrieve-af-with-2fa/introduction.md)
    + [2 - Data Source 구성](store-and-retrieve-af-with-2fa/configure-data-source.md)
    + [3 - 양식 첨부 파일 저장](store-and-retrieve-af-with-2fa/store-form-attachments.md)
@@ -163,7 +163,7 @@ ht-degree: 1%
    + [5 - 솔루션 테스트](import-data-from-pdf-form/test-the-solution.md)
 + 제출된 데이터를 CSV 형식으로 내보내기{#export-submitted-data-csv-format}
    + [제출된 데이터 내보내기](export-submitted-data-csv-format/export-submitted-data-csv.md)
-+ HTML5 Forms{#html5-forms}
++ HTML5 양식{#html5-forms}
    + [HTML5 양식 만들기](html5-forms/create-html5-form.md)
    + [HTML5 양식 제출 처리](html5-forms/handle-html5-form-submission.md)
 + AEM Forms 및 Acrobat Sign{#forms-and-sign}
@@ -192,7 +192,7 @@ ht-degree: 1%
    + [9 - 초기 양식 만들기](sign-multiple-documents/create-initial-form.md)
    + [10 - 서명용 양식 만들기](sign-multiple-documents/create-forms-for-signing.md)
    + [11 - 솔루션 테스트](sign-multiple-documents/testing-and-trouble-shooting.md)
-+ 사용자 지정 워크플로 단계{#custom-workflow-steps}
++ 사용자 정의 워크플로 단계{#custom-workflow-steps}
    + [xml 문서에서 노드 추출](custom-workflow-steps/extract-xml-node.md)
    + [파일 시스템에 문서 저장](custom-workflow-steps/write-payload-document.md)
    + [제출된 데이터를 문자열 변수에 저장](custom-workflow-steps/save-submitted-data-in-string-variable.md)
@@ -201,7 +201,7 @@ ht-degree: 1%
    + [1-소개](custom-workflow-component/introduction.md)
    + [2-Write Java 코드](custom-workflow-component/custom-process-step-aem-workflow.md)
    + [3-워크플로 구성 요소 만들기](custom-workflow-component/custom-workflow-component.md)
-+ AEM 워크플로우의 변수{#variables-aem-workflow}
++ AEM 워크플로의 변수{#variables-aem-workflow}
    + [소개 - 워크플로의 변수](variables-aem-workflow/introduction.md)
    + [XML 변수](variables-aem-workflow/part1.md)
    + [JSON 변수](variables-aem-workflow/part2.md)
@@ -214,7 +214,7 @@ ht-degree: 1%
    + [1 - 소개](review-form-data/introduction.md)
    + [2 - 구성 요소 만들기](review-form-data/create-component.md)
    + [3 - 에셋 배포](review-form-data/deploy-on-your-system.md)
-+ MySQL DB{#storing-and-retrieving-form-data}에 양식 데이터 저장 및 검색
++ MySQL DB에 양식 데이터 저장 및 검색{#storing-and-retrieving-form-data}
    + [소개](storing-retrieving-form-data/introduction.md)
    + [Data Source 구성](storing-retrieving-form-data/part1.md)
    + [데이터를 저장하는 서비스](storing-retrieving-form-data/part3.md)
@@ -229,7 +229,7 @@ ht-degree: 1%
    + [파트 - 4](offline-mobile-form-submission/author-servlet.md)
    + [파트 - 5](offline-mobile-form-submission/review-workflow.md)
    + [파트 - 6](offline-mobile-form-submission/deploy-assets.md)
-+ 모바일 양식 제출에서 AEM 워크플로우 트리거{#trigger-aem-workflow-on-mobile-form-submission}
++ 모바일 양식 제출로 AEM 워크플로우 트리거{#trigger-aem-workflow-on-mobile-form-submission}
    + [파트 - 1](trigger-aem-workflow-on-mobile-form-submission/introduction.md)
    + [파트 - 2](trigger-aem-workflow-on-mobile-form-submission/handle-form-submission.md)
    + [파트 - 3](trigger-aem-workflow-on-mobile-form-submission/author-servlet.md)
@@ -242,16 +242,16 @@ ht-degree: 1%
    + [쿼리 인터페이스 작성](query-form-submissions/part3.md)
    + [미리 채우기 서비스 쓰기](query-form-submissions/part4.md)
    + [샘플 배포](query-form-submissions/part5.md)
-+ Forms Portal에서 사용자 지정 에셋 유형 나열{#listing-custom-asset-types}
++ Forms 포털에서 사용자 지정 에셋 유형 나열{#listing-custom-asset-types}
    + [Part1-사용자 정의 에셋 유형 등록](listing-custom-asset-types/part1.md)
    + [2부 - 사용자 지정 템플릿 만들기](listing-custom-asset-types/part2.md)
-+ Marketo{#aem-forms-with-marketo}이(가) 있는 AEM Forms
++ AEM Forms과 Marketo{#aem-forms-with-marketo}
    + [Part1 - 소개](aem-forms-with-marketo/part1.md)
    + [2부 - 데이터 Source](aem-forms-with-marketo/part2.md)
    + [파트3 - 양식 데이터 모델](aem-forms-with-marketo/part3.md)
    + [Part4 - 전체 구성](aem-forms-with-marketo/part4.md)
 
-+ Adobe Campaign Standard{#aem-forms-with-adobe-campaign}이(가) 있는 AEM Forms
++ AEM Forms과 Adobe Campaign Standard{#aem-forms-with-adobe-campaign}
    + [1 - 소개](aem-forms-with-adobe-campaign/aem-forms-with-campaign-standard-getting-started-tutorial.md)
    + [2 - 토큰 생성](aem-forms-with-adobe-campaign/partone.md)
    + [3 - 양식 제출로 ACS 프로필 만들기](aem-forms-with-adobe-campaign/parttwo.md)
@@ -263,7 +263,7 @@ ht-degree: 1%
    + [시작 키트 구성 요소 만들기](welcome-kit/create-welcomekit-component.md)
    + [워크플로우 구성 요소 만들기](welcome-kit/create-workflow-component.md)
    + [솔루션 테스트](welcome-kit/testing-the-solution.md)
-+ Headless Forms API {#embed-form-spa}
++ 헤드리스 Forms API {#embed-form-spa}
    + [1 - 소개](headless-forms/introduction.md)
    + [2 - 종속성 설치](headless-forms/install-af-react-libraries.md)
    + [3 - 양식 가져오기](headless-forms/fetch-the-form.md)
@@ -272,7 +272,7 @@ ht-degree: 1%
    + [6 - 선택한 양식 표시](headless-forms/open-form-card-view.md)
    + [7 - 양식 제출 처리](headless-forms/display-thank-you-message.md)
 
-+ Forms 및 Acrobat Sign {#react-ic-sign}과(와) React 앱
++ Forms 및 Acrobat Sign과 React 앱 {#react-ic-sign}
    + [1 - 소개](react-ic-sign/introduction.md)
    + [2 - 문서 생성](react-ic-sign/create-ic-document.md)
    + [3 - Acrobat Sign API 래퍼](react-ic-sign/wrapper-sign-api.md)
@@ -316,7 +316,7 @@ ht-degree: 1%
    + [Workbench 소개](aem-forms-workbench/workbench-introduction.md)
    + [양식 프로세스 만들기](aem-forms-workbench/workbench-creating-a-process.md)
    + [디버깅 프로세스](aem-forms-workbench/workbench-recording-and-testing-process.md)
-+ 인쇄 채널용 대화형 통신
++ 인쇄 채널용 대화형 통신 
 {#ic-print-channel-tutorial}
    + [1 - 소개](ic-print-channel-tutorial/introduction.md)
    + [2 - Tomcat 설정](ic-print-channel-tutorial/set-up-tomcat.md)
@@ -330,7 +330,7 @@ ht-degree: 1%
    + [10 - 인쇄 채널에 표 추가](ic-print-channel-tutorial/adding-table-to-print-channel.md)
    + [11 - 감시 폴더를 사용하여 문서 생성](ic-print-channel-tutorial/using-watched-folder-to-generate-document.md)
    + [12 - 양식 제출에서 에이전트 UI 열기](ic-print-channel-tutorial/opening-agent-ui-on-form-submission.md)
-+ 초안 편지 {#store-retrieve-letters} 저장 및 검색
++ 초안 문자 저장 및 검색 {#store-retrieve-letters}
    + [소개](store-retrieve-letters/introduction.md)
    + [구현](store-retrieve-letters/save-draft-letters.md)
    + [샘플 배포](store-retrieve-letters/deploy-on-your-server.md)
@@ -343,8 +343,9 @@ ht-degree: 1%
    + [AEM Forms 인쇄 채널 문서에서 표 구성 요소 사용](interactive-communications/table-in-print-channel-documents-video-use.md)
    + [감시 폴더를 사용하여 인쇄 채널용 대화형 통신 문서 생성](interactive-communications/generating-interactive-communications-print-document-using-api-tutorial-use.md)
    + [텍스트 편집기 사용자 지정](interactive-communications/customize-text-editor.md)
-
-+ 웹 채널 {#ic-web-channel-tutorial}에 대한 대화형 통신
++ ExL 뉴스레터{#exl-newsletters}
+   + [아카이브](./newsletters/archives.md)
++ 웹 채널용 대화형 통신 {#ic-web-channel-tutorial}
    + [1 - 소개](ic-web-channel-tutorial/introduction.md)
    + [2 - Tomcat 설정](ic-web-channel-tutorial/partone.md)
    + [3 - 데이터 Source 만들기](ic-web-channel-tutorial/parttwo.md)

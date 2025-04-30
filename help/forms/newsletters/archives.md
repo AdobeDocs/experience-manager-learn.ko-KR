@@ -1,7 +1,9 @@
 ---
 title: Experience League 월간 뉴스레터 아카이브.
 description: 뉴스레터의 보관된 버전을 다운로드합니다.
-source-git-commit: 8ae09d66b856a15f48977aeef7580b65368014e2
+hidefromtoc: true
+hide: true
+source-git-commit: c4b5a015f1c0d5e3877886052476871548ec9b0e
 workflow-type: tm+mt
 source-wordcount: '45'
 ht-degree: 0%
