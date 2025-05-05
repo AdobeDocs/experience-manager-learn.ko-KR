@@ -28,7 +28,7 @@ ht-degree: 10%
 
 이러한 문제를 해결하기 위해 GraphQL은 클라이언트가 AEM에 필요한 콘텐츠만 쿼리하고 단일 API 호출을 사용하여 수신할 수 있는 쿼리 기반 API를 제공합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3452886?quality=12&learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/328618?quality=12&learn=on)
 
 이 비디오는 AEM에서 구현된 GraphQL API에 대한 개요입니다. AEM의 GraphQL API는 헤드리스 배포의 일부로서 다운스트림 애플리케이션에 AEM 컨텐츠 조각을 제공하도록 설계되었습니다.
 
@@ -36,7 +36,7 @@ ht-degree: 10%
 >id="aemcloud_learn_headless_graphql_overview"
 >title="AEM Headless 시작하기 - GraphQL"
 >abstract="GraphQL을 사용하여 콘텐츠 조각을 게재하는 방법에 대해 알아봅니다."
->additional-url="https://video.tv.adobe.com/v/3452886?captions=kor" text="AEM의 GraphQL 개요"
+>additional-url="https://video.tv.adobe.com/v/328618" text="AEM의 GraphQL 개요"
 
 ## AEM 헤드리스 GraphQL 비디오 시리즈
 
