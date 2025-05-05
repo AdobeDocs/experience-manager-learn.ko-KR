@@ -23,4 +23,4 @@ ht-degree: 9%
 
 컬렉션이 AEM Assets에 대한 대체 보기와 기능을 제공하는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/32053?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36887?quality=12&learn=on&captions=kor)

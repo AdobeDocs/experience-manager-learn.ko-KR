@@ -22,4 +22,4 @@ ht-degree: 0%
 
 *이 비디오는 AEM에서 SAML 관련 문제를 조사하는 단계를 안내합니다.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335466?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418302?quality=12&learn=on&captions=kor)

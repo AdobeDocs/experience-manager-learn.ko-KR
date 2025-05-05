@@ -28,4 +28,4 @@ ht-degree: 68%
 
 Cloud Manager Git 저장소를 외부 Git 저장소와 통합하고 프로젝트를 AEM as a Cloud Service에 배포합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/330534?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345867?quality=12&learn=on&captions=kor)

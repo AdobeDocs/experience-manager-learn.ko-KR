@@ -25,4 +25,4 @@ ht-degree: 0%
 서비스 계정(JWT) 자격 증명은 더 이상 사용되지 않는 것으로 표시되었지만, 2025년 1월 27일까지 계속 작동합니다. 따라서 2025년 1월 27일 이전에 새로운 OAuth 서버 간 자격 증명을 사용하려면 애플리케이션이나 통합을 마이그레이션해야 합니다. 자세한 내용은 [마이그레이션 안내서](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration)를 참조하세요.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3432960/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449245/?learn=on&captions=kor)

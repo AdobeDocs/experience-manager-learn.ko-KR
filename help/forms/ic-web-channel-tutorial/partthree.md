@@ -25,7 +25,7 @@ ht-degree: 0%
 
 **AEM Forms 6.5 이상에서 양식 데이터 모델 만들기**
 
->[!VIDEO](https://video.tv.adobe.com/v/27765?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34227?quality=12&learn=on&captions=kor)
 
 양식 데이터 모델은 올바르게 구성된 데이터 Source에 따라 다릅니다. 이전 단계에서 구성한 데이터 Source을 이 양식 데이터 모델의 기반으로 사용합니다.
 

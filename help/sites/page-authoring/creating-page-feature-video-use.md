@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Adobe Experience Manager에서 페이지 템플릿을 사용하여 사이트 페이지를 만드는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/31827?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37213?quality=12&learn=on&captions=kor)

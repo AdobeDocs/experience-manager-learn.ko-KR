@@ -23,4 +23,4 @@ ht-degree: 0%
 
 AEM의 체크인 및 체크아웃 기능을 사용하여 에셋에 대한 다중 사용자 공동 작업을 용이하게 하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/32048?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36906?quality=12&learn=on&captions=kor)

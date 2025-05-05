@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Edge Delivery Services 문서 작성에서 저장, 복사, 등급 등을 포함하여 생성된 콘텐츠 변형에서 사용할 수 있는 작업을 살펴봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428795/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437292/?learn=on&captions=kor)

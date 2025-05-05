@@ -70,4 +70,4 @@ Felix 웹 콘솔을 사용하여 DevelopingWithServiceUser.jar 파일을 배포�
 
 ## 사용 사례 데모
 
->[!VIDEO](https://video.tv.adobe.com/v/327122?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/346932?quality=12&learn=on&captions=kor)

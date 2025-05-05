@@ -22,4 +22,4 @@ ht-degree: 0%
 
 컨텐츠 조각 컨텐츠 필드가 경험 조각 및 페이지와 같은 다양한 유형의 AEM 컨텐츠 참조를 지원하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3419313/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3436769/?learn=on&captions=kor)

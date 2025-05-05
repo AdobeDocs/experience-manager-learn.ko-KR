@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Power Automate 워크플로에서 DoR을 추출하고 이메일 첨부 파일로 전송합니다.
 다음 비디오에서는 제출된 데이터에서 DoR을 추출하는 데 필요한 단계에 대해 설명합니다
->[!VIDEO](https://video.tv.adobe.com/v/346731?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3413037?quality=12&learn=on&captions=kor)

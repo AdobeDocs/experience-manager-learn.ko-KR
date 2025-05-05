@@ -22,4 +22,4 @@ ht-degree: 0%
 
 AEM Sites의 Live Copy와 블루프린트 간의 관계를 파악합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/36676?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41577?quality=12&learn=on&captions=kor)

@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *이 비디오는 Windows Server 2016에서 폴더 권한을 확인하는 추가 단계를 안내합니다.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335519?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417212?quality=12&learn=on&captions=kor)

@@ -25,4 +25,4 @@ ht-degree: 0%
 
 AEM 문서 작성을 통해 문서에 권한을 부여하는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425724/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438108/?learn=on&captions=kor)

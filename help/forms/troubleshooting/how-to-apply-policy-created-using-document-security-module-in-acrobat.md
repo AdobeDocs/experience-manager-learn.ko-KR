@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *이 비디오는 Acrobat의 문서 보안 모듈을 사용하여 만든 정책을 적용하는 과정을 안내합니다.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335486?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417202?quality=12&learn=on&captions=kor)

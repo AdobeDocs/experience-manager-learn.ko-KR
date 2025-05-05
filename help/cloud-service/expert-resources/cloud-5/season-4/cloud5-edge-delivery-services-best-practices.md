@@ -24,4 +24,4 @@ ht-degree: 0%
 
 숙련된 건축가와 함께 Edge Delivery Services에서 개발하기 위한 기술을 살펴봅니다. 키란은 그가 프로젝트에서 직면한 많은 문제들과 그것들을 해결하는 방법에 대해 여러분에게 알려줄 것입니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3440978/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3441007/?learn=on&enablevpops&captions=kor)

@@ -26,7 +26,7 @@ AEM Sites의 페이지 차이 기능 에서는 페이지에서 변경된 콘텐�
 
 ## 페이지 버전 비교 {#comparing-page-versions}
 
->[!VIDEO](https://video.tv.adobe.com/v/32152?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36798?quality=12&learn=on&captions=kor)
 
 **HTML 변경 사항**
 

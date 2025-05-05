@@ -25,4 +25,4 @@ ht-degree: 0%
 
 AEM 문서 작성을 사용하여 작성된 문서를 감사하는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425722/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437718/?learn=on&captions=kor)

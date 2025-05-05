@@ -20,7 +20,7 @@ ht-degree: 1%
 
 AEM 6.3 Forms은 hobbes.js 프레임워크 위에 구축된 Calvin SDK을 사용하여 적응형 Forms용 AEM 내에서 테스트 사례를 만들 수 있는 기능을 도입했습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/19700?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35601?quality=12&learn=on&captions=kor)
 
 >[!NOTE]
 >

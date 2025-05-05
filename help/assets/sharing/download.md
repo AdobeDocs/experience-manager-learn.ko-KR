@@ -23,4 +23,4 @@ ht-degree: 5%
 
 사용 및 공유를 위해 자산 및 해당 표현물을 로컬 시스템에 다운로드하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/35090?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/39512?quality=12&learn=on&captions=kor)

@@ -25,4 +25,4 @@ ht-degree: 6%
 
 Workfront 필드와 Assets Essentials 속성 간의 메타데이터 매핑을 구성하는 방법과 매핑된 값을 표시하도록 Assets Essentials를 구성하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/336458?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3422624?quality=12&learn=on&captions=kor)

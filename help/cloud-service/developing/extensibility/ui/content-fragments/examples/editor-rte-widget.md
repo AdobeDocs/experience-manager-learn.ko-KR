@@ -23,7 +23,7 @@ ht-degree: 0%
 
 AEM 콘텐츠 조각 편집기에서 RTE(리치 텍스트 편집기)에 위젯을 추가하는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3420822?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447439?quality=12&learn=on&captions=kor)
 
 RTE(리치 텍스트 편집기)에서 동적 콘텐츠를 추가하려면 **위젯** 기능을 사용할 수 있습니다. 위젯은 RTE의 단순 또는 복잡한 UI를 통합하는 데 도움이 되며 UI는 원하는 JS 프레임워크를 사용하여 만들 수 있습니다. RTE에서 `{` 특수 키를 눌러 열린 대화 상자로 생각할 수 있습니다.
 

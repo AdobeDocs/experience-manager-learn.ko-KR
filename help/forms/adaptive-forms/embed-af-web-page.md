@@ -24,7 +24,7 @@ ht-degree: 29%
 
 다음 비디오에서는 웹 페이지에 적응형 또는 HTML5 양식을 임베드하는 데 필요한 단계에 대해 설명합니다.
 최상의 사전 요구 사항, 모범 사례 등은 [설명서](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-external-web-page.html?lang=ko)를 참조하세요.
->[!VIDEO](https://video.tv.adobe.com/v/335893?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418456?quality=12&learn=on&captions=kor)
 
 [ 비디오에 사용된 샘플 파일은 ](assets/embedding-af-web-page.zip)에서 다운로드할 수 있습니다.
 

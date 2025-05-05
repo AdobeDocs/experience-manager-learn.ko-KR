@@ -22,4 +22,4 @@ ht-degree: 0%
 
 AEM Forms의 미리 채우기 서비스를 사용하여 Azure Blob Storage에서 적응형 양식을 채우는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/335714?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3419007?quality=12&learn=on&captions=kor)

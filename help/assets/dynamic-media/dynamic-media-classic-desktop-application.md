@@ -22,7 +22,7 @@ ht-degree: 1%
 
 Adobe에서는 Adobe Flash Player에 의존하지 않는 기능과 동등한 인터페이스와 브라우저에 유사한 경험을 제공하는 Dynamic Media Classic용 데스크탑 애플리케이션을 도입했습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/36645?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327763?quality=12&learn=on&captions=kor)
 
 >[!NOTE]
 >

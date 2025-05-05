@@ -25,7 +25,7 @@ Adobe Experience Manager Assets의 메타데이터 가져오기 및 내보내기
 
 ## 메타데이터 내보내기 {#metadata-export}
 
->[!VIDEO](https://video.tv.adobe.com/v/22132?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34868?quality=12&learn=on&captions=kor)
 
 >[!TIP]
 >
@@ -45,7 +45,7 @@ Adobe Experience Manager Assets의 메타데이터 가져오기 및 내보내기
 
 ## 메타데이터 가져오기 {#metadata-import}
 
->[!VIDEO](https://video.tv.adobe.com/v/21374?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3413186?quality=12&learn=on&captions=kor)
 
 >[!NOTE]
 >

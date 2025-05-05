@@ -24,7 +24,7 @@ ht-degree: 18%
 
 사이트 편집기의 UI를 사용하여 Adobe Experience Manager Sites에서 페이지를 작성하는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/31828?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36953?quality=12&learn=on&captions=kor)
 
 이 비디오에서는 다음 기능에 대해 설명합니다.
 

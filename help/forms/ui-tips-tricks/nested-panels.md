@@ -36,7 +36,7 @@ ht-degree: 0%
 
 이 기본 동작을 변경하려면 다음을 수행해야 합니다
 
->[!VIDEO](https://video.tv.adobe.com/v/338369?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438638?quality=12&learn=on&captions=kor)
 
 
 코드 편집기를 사용하여 **다음** 단추의 클릭 이벤트에 다음 코드를 추가하십시오
@@ -57,7 +57,7 @@ window.guideBridge.setFocus(null, 'prevItemDeep', true);
 
 스타일 편집기를 사용하여 탭 하위 패널의 제목을 숨깁니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/338370?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439135?quality=12&learn=on&captions=kor)
 
 >[!NOTE]
 >

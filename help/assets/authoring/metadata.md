@@ -23,4 +23,4 @@ ht-degree: 8%
 
 AEM Assets에서 메타데이터에 액세스하고 상호 작용하는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/32045?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37119?quality=12&learn=on&captions=kor)

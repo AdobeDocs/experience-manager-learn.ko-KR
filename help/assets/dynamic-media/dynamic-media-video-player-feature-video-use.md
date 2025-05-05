@@ -21,7 +21,7 @@ ht-degree: 5%
 
 데스크톱 클라이언트와 브라우저에서 응용 비디오 스트리밍을 지원하기 위해 Flash 런타임에 의존하던 AEM Dynamic Media 비디오 플레이어가 Flash 기반 컨텐츠 스트리밍에 대해 더 공격적이 되었습니다. HLS(Apple의 HTTP 라이브 스트리밍 비디오 전송 프로토콜)가 도입됨에 따라 이제 플래시에 의존하지 않고 콘텐츠를 스트리밍할 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/16791?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33649?quality=12&learn=on&captions=kor)
 
 ## Non Flash Video Player를 빠르게 살펴봅니다. {#quick-look-into-non-flash-video-player}
 

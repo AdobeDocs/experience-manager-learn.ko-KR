@@ -26,7 +26,7 @@ AEM 사이트의 페이지 편집기는 웹 콘텐츠를 만들고 편집할 수
 
 다음 비디오는 페이지 편집기의 주요 기능 중 일부를 소개합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/32011?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37197?quality=12&learn=on&captions=kor)
 
 
 페이지 편집기 기능의 전체 개요는 [AEM 설명서를 참조하십시오](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/editing-content.html?lang=ko).

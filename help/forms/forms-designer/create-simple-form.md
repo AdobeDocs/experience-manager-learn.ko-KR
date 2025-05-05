@@ -23,13 +23,13 @@ ht-degree: 0%
 
 1부 - 제목, 이미지, 텍스트 필드 및 날짜 필드 추가
 
->[!VIDEO](https://video.tv.adobe.com/v/3427620/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439733/?learn=on&captions=kor)
 
 2부 - 사용자 정의 오브젝트 및 양식 단편 추가 및 만들기
 
->[!VIDEO](https://video.tv.adobe.com/v/3427621/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439588/?learn=on&captions=kor)
 
 도움말 콘텐츠 액세스
 
->[!VIDEO](https://video.tv.adobe.com/v/3427622/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437240/?learn=on&captions=kor)
 

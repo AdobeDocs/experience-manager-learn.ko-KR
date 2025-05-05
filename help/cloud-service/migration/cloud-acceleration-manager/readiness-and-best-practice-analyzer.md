@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Best Practice Analyzer 가 AEM 온프레미스 또는 Adobe Managed Services에서 Experience Manager as a Cloud Service으로 전환하는 데 어떻게 도움이 되는지에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/336690?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3446460?quality=12&learn=on&captions=kor)

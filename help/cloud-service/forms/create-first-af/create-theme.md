@@ -23,4 +23,4 @@ ht-degree: 18%
 
 테마에는 구성 요소 및 패널의 스타일 지정 세부 정보가 포함되어 있으며 다른 양식에서 테마를 다시 사용할 수 있습니다. 스타일에는 배경색, 상태 색상, 투명도, 정렬과 크기와 같은 속성이 포함됩니다. 테마를 양식에 적용하면 지정된 스타일이 양식의 해당 구성 요소를 반영합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/332229?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3424876?quality=12&learn=on&captions=kor)

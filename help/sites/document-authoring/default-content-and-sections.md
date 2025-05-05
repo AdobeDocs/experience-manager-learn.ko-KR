@@ -25,4 +25,4 @@ ht-degree: 0%
 
 기본 콘텐츠 및 섹션의 문서 작성 개념과 이를 통해 더 나은 사이트를 만드는 방법에 대해 자세히 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425702/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437982/?learn=on&captions=kor)

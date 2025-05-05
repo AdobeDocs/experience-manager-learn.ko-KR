@@ -23,7 +23,7 @@ ht-degree: 2%
 서명 문서 구성 요소를 사용하여 AEM 워크플로를 만듭니다. 자동 생성된 DoR을 사용하여 서명 구성 요소를 사용하여 서명을 전송합니다.
 이 비디오에서는 서명을 위해 문서를 전송할 수 있는 효과적인 워크플로우를 만드는 데 필요한 다양한 단계를 설명합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/38182?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327823?quality=12&learn=on&captions=kor)
 
 ## 다음 단계
 

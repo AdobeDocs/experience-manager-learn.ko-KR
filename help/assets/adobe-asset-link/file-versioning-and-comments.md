@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Adobe Asset Link 패널을 사용하면 패널 내에서 썸네일, 기본 메타데이터 및 버전과 같은 AEM Assets의 자산에 대한 파일 세부 정보에 액세스할 수 있습니다. 파일 버전을 만들고, 미리 보고, 비교하는 방법을 살펴봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/34048?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38633?quality=12&learn=on&captions=kor)

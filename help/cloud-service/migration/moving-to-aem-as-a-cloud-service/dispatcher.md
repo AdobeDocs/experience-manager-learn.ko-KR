@@ -22,7 +22,7 @@ ht-degree: 4%
 
 AEM 6용 AEM의 주목할 만한 변경 사항, Dispatcher 변환 도구 및 Dispatcher 도구 SDK 사용 방법에 초점을 맞춰 AEM as a Cloud Service용 Dispatcher Dispatcher에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/336962?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3455403?quality=12&learn=on&captions=kor)
 
 ## Dispatcher 변환기
 

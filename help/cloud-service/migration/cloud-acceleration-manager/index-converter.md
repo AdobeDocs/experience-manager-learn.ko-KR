@@ -21,4 +21,4 @@ ht-degree: 9%
 
 인덱스 변환기 가 어떻게 기존 AEM 인덱스 정의를 AEM as a Cloud Service과 호환되도록 자동으로 변환하는지에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/336696?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3443780?quality=12&learn=on&captions=kor)

@@ -28,4 +28,4 @@ Adobe Experience Manager(AEM)의 콘텐츠 조각 모델 간의 관계를 만드
 + 리치 텍스트 필드 내에서 다른 콘텐츠 조각에 딥링크하는 방법에 대해 알아봅니다
 + 참조된 콘텐츠 조각 내에서 데이터를 반환하는 GraphQL 쿼리 만들기
 
->[!VIDEO](https://video.tv.adobe.com/v/332859?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3412902?quality=12&learn=on&captions=kor)

@@ -22,4 +22,4 @@ ht-degree: 6%
 
 AEM Assets Assets 보기에서 태그 지정 분류를 관리하는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3431081/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447373/?learn=on&captions=kor)

@@ -24,7 +24,7 @@ ht-degree: 1%
 
 태그 규칙을 사용하여 매개 변수를 로드하고, 페이지 요청에 전달하며, 사이트 페이지에서 Target 호출을 실행하는 방법을 알아봅니다. 웹 페이지 정보는 검색 및 매개 변수로 전달됩니다. Adobe 클라이언트 데이터 레이어를 사용하면 웹 페이지에서 방문자의 경험에 대한 데이터를 수집 및 저장한 다음 이 데이터에 쉽게 액세스할 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/41243?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/329001?quality=12&learn=on&captions=kor)
 
 ## 페이지 로드 규칙
 

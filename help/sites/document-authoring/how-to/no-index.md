@@ -25,4 +25,4 @@ ht-degree: 0%
 
 AEM 문서 작성을 사용하여 작성된 웹 페이지가 검색 엔진에 의해 인덱싱되지 않도록 하는 방법을 살펴봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425726/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438123/?learn=on&captions=kor)

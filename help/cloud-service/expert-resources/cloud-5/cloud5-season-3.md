@@ -31,7 +31,7 @@ AEM Engineering의 시즌 3의 클라우드 5 시리즈에 오신 것을 환영�
     <tr>
         <td>
             <a href="./season-3/cloud5-3rd-party-search.md">
-                <img alt="서드파티 검색" src="https://video.tv.adobe.com/v/3427040?format=jpeg"/>
+                <img alt="서드파티 검색" src="https://video.tv.adobe.com/v/3452617?format=jpeg&captions=kor"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-3rd-party-search.md">
@@ -45,7 +45,7 @@ AEM Engineering의 시즌 3의 클라우드 5 시리즈에 오신 것을 환영�
         </td>   
         <td>
             <a href="./season-3/cloud5-edge-workers.md">
-                <img alt="Edge 노동자" src="https://video.tv.adobe.com/v/3427589?format=jpeg"/>
+                <img alt="Edge 노동자" src="https://video.tv.adobe.com/v/3448136?format=jpeg&captions=kor"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-edge-workers.md">
@@ -59,7 +59,7 @@ AEM Engineering의 시즌 3의 클라우드 5 시리즈에 오신 것을 환영�
         </td>   
         <td>
             <a href="./season-3/cloud5-publish-events.md">
-                <img alt="Publish, Edge Delivery Services의 이벤트 게시 취소" src="https://video.tv.adobe.com/v/3427681?format=jpeg"/>
+                <img alt="Publish, Edge Delivery Services의 이벤트 게시 취소" src="https://video.tv.adobe.com/v/3446663?format=jpeg&captions=kor"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-publish-events.md">
@@ -75,7 +75,7 @@ AEM Engineering의 시즌 3의 클라우드 5 시리즈에 오신 것을 환영�
     <tr>
         <td>
             <a href="./season-3/cloud5-query-indexes.md">
-                <img alt="Edge Delivery Services의 쿼리 인덱스 및 Excel 공식" src="https://video.tv.adobe.com/v/3427787?format=jpeg"/>
+                <img alt="Edge Delivery Services의 쿼리 인덱스 및 Excel 공식" src="https://video.tv.adobe.com/v/3453770?format=jpeg&captions=kor"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-query-indexes.md">
@@ -89,7 +89,7 @@ AEM Engineering의 시즌 3의 클라우드 5 시리즈에 오신 것을 환영�
         </td>  
         <td>
             <a href="./season-3/cloud5-byo-cloudflare-cdn.md">
-                <img alt="고유한 Cloudflare CDN 가져오기" src="https://video.tv.adobe.com/v/3428100?format=jpeg"/>
+                <img alt="고유한 Cloudflare CDN 가져오기" src="https://video.tv.adobe.com/v/3452543?format=jpeg&captions=kor"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-byo-cloudflare-cdn.md">
@@ -103,7 +103,7 @@ AEM Engineering의 시즌 3의 클라우드 5 시리즈에 오신 것을 환영�
         </td>           
         <td>
             <a href="./season-3/cloud5-integrate-assets.md">
-                <img alt="문서 작성과 AEM Assets 통합" src="https://video.tv.adobe.com/v/3428302?format=jpeg"/>
+                <img alt="문서 작성과 AEM Assets 통합" src="https://video.tv.adobe.com/v/3448947?format=jpeg&captions=kor"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-integrate-assets.md">

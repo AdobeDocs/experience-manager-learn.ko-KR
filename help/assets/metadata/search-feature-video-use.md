@@ -18,10 +18,10 @@ ht-degree: 0%
 
 ## 에셋 메타데이터로 검색 부스팅 {#search-boost-asset}
 
->[!VIDEO](https://video.tv.adobe.com/v/16766?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3410339?quality=12&learn=on&captions=kor)
 
 ## 다중 값 및 태그 검색 술어의 고급 구성 {#multi-value-tag-predicates}
 
 **다중 값 검색 조건자**&#x200B;을(를) 사용하여 검색 결과의 텍스트를 쉽게 일치시킬 수 있습니다. 자산 검색 결과를 보다 효율적으로 필터링할 수 있도록 태그 조건자에 대한 몇 가지 개선 사항도 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/16457?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33664?quality=12&learn=on&captions=kor)

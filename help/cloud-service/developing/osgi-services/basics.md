@@ -24,7 +24,7 @@ ht-degree: 1%
 + Java POJO를 OSGi 서비스로 변환하는 방법
 + OSGi 서비스를 Java 인터페이스에 바인딩하는 방법
 
->[!VIDEO](https://video.tv.adobe.com/v/335476?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417187?quality=12&learn=on&captions=kor)
 
 ## 리소스
 

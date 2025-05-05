@@ -28,7 +28,7 @@ ht-degree: 75%
 
 AEM 작성자 서비스에 액세스해야 하는 사용자는 [Adobe의 Admin Console](https://adminconsole.adobe.com)에서 [Adobe IMS 사용자](https://helpx.adobe.com/kr/enterprise/using/set-up-identity.html)&#x200B;(으)로 관리됩니다. Adobe IMS 사용자의 유형, Admin Console에서 액세스 및 관리되는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/39149?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327559?quality=12&learn=on&captions=kor)
 
 ## 추가 리소스
 

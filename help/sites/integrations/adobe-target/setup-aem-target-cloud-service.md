@@ -25,7 +25,7 @@ ht-degree: 0%
 
 이 통합을 통해 AEM 작성자 서비스는 Adobe Target과 직접 통신하고 AEM의 경험 조각을 오퍼로 Target에 푸시할 수 있습니다.  이 통합은 Target 확장을 사용하여 [AEM과 태그를 통합](../experience-platform/data-collection/tags/connect-aem-tag-property-using-ims.md)하기 위해 Adobe Target JavaScript(AT.js)를 AEM Sites 웹 페이지에 *추가하지*&#x200B;않습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/41244?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/329018?quality=12&learn=on&captions=kor)
 
 >[!CAUTION]
 >

@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *이 비디오에서는 AEM Forms PDFG용 Unix 설정에서 OpenOffice 관련 오류를 해결하는 과정을 안내합니다.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335551?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417252?quality=12&learn=on&captions=kor)

@@ -23,14 +23,14 @@ ht-degree: 0%
 
 AEM Assets의 이미지용 스마트 태그는 이미지 에셋에 파생된 메타데이터 태그를 자동으로 추가하여 AEM Assets의 검색을 강화하므로 적합한 이미지를 더 쉽고 빠르게 찾을 수 있도록 하여 작성 경험이 향상됩니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/17019?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3444061?quality=12&learn=on&captions=kor)
 
 ## AEM 6.x용 설정{#set-up}
 
 >[!NOTE]
 > 이미지용 스마트 태그는 AEM as a Cloud Service에 대해 자동으로 프로비저닝됩니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/17023?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3444172?quality=12&learn=on&captions=kor)
 
 스마트 컨텐츠 서비스를 사용하기 전에 Adobe I/O에서 통합을 만들기 위해 다음을 확인하십시오.
 

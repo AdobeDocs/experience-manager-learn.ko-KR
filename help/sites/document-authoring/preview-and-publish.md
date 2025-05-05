@@ -25,4 +25,4 @@ ht-degree: 0%
 
 문서 작성을 사용하여 콘텐츠를 만들고 게시하는 방법에 대한 단계별 안내서입니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425700/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441348/?learn=on&captions=kor)

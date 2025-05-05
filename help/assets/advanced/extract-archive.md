@@ -23,4 +23,4 @@ ht-degree: 5%
 
 자산 계층을 간편하게 구성하고 DAM에 바로 업로드할 수 있는 ZIP 추출 기능을 소개하는 유용한 비디오로 AEM Assets에서 효율적인 디지털 자산 관리를 마스터하는 방법을 알아보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/3426368/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447149/?learn=on&captions=kor)

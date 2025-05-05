@@ -26,7 +26,7 @@ ChatBot을 사용하여 PDF 양식을 Adobe Experience Manager Forms(AEM Forms)�
 
 다음 비디오에서는 사용 사례를 보여 줍니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428432?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441799?learn=on&captions=kor)
 
 ## 전제 조건
 

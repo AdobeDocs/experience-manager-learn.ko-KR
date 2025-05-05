@@ -21,4 +21,4 @@ ht-degree: 0%
 
 이 비디오는 Dynamic Media에서 이미지 사전 설정을 만드는 단계를 안내합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/335459?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418242?quality=12&learn=on&captions=kor)

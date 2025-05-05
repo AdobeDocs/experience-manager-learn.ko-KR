@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Azure 스토리지 지원 양식 데이터 모델 만들기
 
->[!VIDEO](https://video.tv.adobe.com/v/335385?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3419022?quality=12&learn=on&captions=kor)

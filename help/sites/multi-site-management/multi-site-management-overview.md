@@ -19,4 +19,4 @@ ht-degree: 0%
 
 다음 비디오에서는 AEM Sites의 다중 사이트 관리에 대한 기본 개념에 대한 개요를 제공합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/33594?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36862?quality=12&learn=on&captions=kor)

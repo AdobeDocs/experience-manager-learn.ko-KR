@@ -23,7 +23,7 @@ ht-degree: 1%
 
 **테이블 구성 요소 추가 및 구성**
 
->[!VIDEO](https://video.tv.adobe.com/v/22198?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326908?quality=12&learn=on&captions=kor)
 
 
 
@@ -44,7 +44,7 @@ ht-degree: 1%
 ## 총계를 계산할 규칙 만들기 {#create-rule-to-calculate-grand-total}
 
 
->[!VIDEO](https://video.tv.adobe.com/v/22197?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326897?quality=12&learn=on&captions=kor)
 
 ## 다음 단계
 

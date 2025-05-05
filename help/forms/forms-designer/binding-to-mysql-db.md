@@ -23,4 +23,4 @@ ht-degree: 0%
 
 AEM 양식을 MySql 데이터베이스에 바인딩하는 방법을 설명하는 짧은 비디오입니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3427624/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439566/?learn=on&captions=kor)

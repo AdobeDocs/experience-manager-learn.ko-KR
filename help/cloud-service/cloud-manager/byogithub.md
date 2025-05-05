@@ -22,4 +22,4 @@ ht-degree: 0%
 
 능률적인 코드 품질 관리 및 자동화된 워크플로를 위해 개인 GitHub 저장소를 AEM Cloud Manager에 연결하는 방법에 대해 알아봅니다. 통합 확인 및 원활한 공동 작업을 통해 개발 프로세스를 향상시킬 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429302/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3452422/?learn=on&captions=kor)

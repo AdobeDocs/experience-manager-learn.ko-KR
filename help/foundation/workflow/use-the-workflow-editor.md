@@ -23,4 +23,4 @@ ht-degree: 0%
 
 워크플로는 Experience Manager에서 비즈니스 프로세스 관리를 가능하게 하며 콘텐츠의 자동 처리는 물론 인간의 의사 결정이 필요한 거버넌스 및 프로세스를 촉진하는 데 사용됩니다. 워크플로는 일련의 단계로 구성되어 [!UICONTROL 워크플로 모델 편집기]에서 만들고 관리하는 워크플로 모델을 통해 정의됩니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/22201?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35607?quality=12&learn=on&captions=kor)

@@ -27,7 +27,7 @@ AEM의 클라우드 서비스 구성을 사용하면 AEM과 다른 클라우드 
 
 다음 비디오에서는 AEM을 Acrobat Sign과 통합하기 위한 클라우드 서비스 구성을 만드는 데 필요한 단계를 설명합니다
 
->[!VIDEO](https://video.tv.adobe.com/v/332437?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3411772?quality=12&learn=on&captions=kor)
 
 ## 문제 해결
 

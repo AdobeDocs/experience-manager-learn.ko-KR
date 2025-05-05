@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *이 비디오는 HTML5 양식에서 웹 서비스 호출을 수행하는 과정을 안내합니다.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335505?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3416895?quality=12&learn=on&captions=kor)

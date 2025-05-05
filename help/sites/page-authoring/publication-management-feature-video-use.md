@@ -25,7 +25,7 @@ ht-degree: 1%
 
 AEM Sites은 콘텐츠 게시 및 게시 취소를 위한 몇 가지 옵션을 제공합니다. 이 비디오에서는 다양한 방법과 그 기능에 대해 살펴봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/32193?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36863?quality=12&learn=on&captions=kor)
 
 AEM Sites은 작성자의 워크플로를 기반으로 하여 콘텐츠를 게시하거나 게시를 취소할 수 있는 몇 가지 방법을 제공합니다.
 

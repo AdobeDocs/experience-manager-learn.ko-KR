@@ -26,7 +26,7 @@ ht-degree: 0%
 >API를 호출하려면 AEM 사용자가 ```forms-users``` 그룹에 속하는지 확인하십시오.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/340241?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343702?quality=12&learn=on&captions=kor)
 
 ## 일괄 처리 구성 만들기
 

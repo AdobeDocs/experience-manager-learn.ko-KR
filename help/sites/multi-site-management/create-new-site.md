@@ -22,4 +22,4 @@ ht-degree: 0%
 
 사이트 만들기 마법사를 사용하여 기존 언어 사본에서 국가 사이트를 만드는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/36684?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41544?quality=12&learn=on&captions=kor)

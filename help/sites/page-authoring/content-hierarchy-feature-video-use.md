@@ -24,4 +24,4 @@ ht-degree: 0%
 
 AEM Sites에서 조직의 사이트 페이지를 만들고 구성하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/31785?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3410351?quality=12&learn=on&captions=kor)

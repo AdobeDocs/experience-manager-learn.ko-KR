@@ -29,7 +29,7 @@ Brand Portal의 2019년 9월은 컨텐츠 속도를 높이고 Experience Manager
 
 Brand Portal의 에셋 소싱을 사용하여 서드파티 에이전시 및 팀의 에셋을 수집하고 검토 및 사용하기 위해 다시 Experience Manager Author로 원활하게 동기화합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/29365?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32893?quality=12&learn=on&captions=kor)
 
 *에셋 소싱을 사용하려면 Experience Manager 작성자 6.5 SP2(6.5.2) 이상이 필요합니다*
 
@@ -37,7 +37,7 @@ Experience Manager 작성자에 대한 자산 소싱을 구성하고 설정하�
 
 ## Brand Portal 2019년 2월 기능 및 개선 사항{#brand-portal-features-and-enhancements-644}
 
->[!VIDEO](https://video.tv.adobe.com/v/26354?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41132?quality=12&learn=on&captions=kor)
 
 Brand Portal의 2019년 2월 릴리스는 텍스트 검색 및 주요 고객 요청에 대한 개선 사항에 중점을 둡니다.
 
@@ -165,7 +165,7 @@ Brand Portal은 Adobe I/O [https://legacy-oauth.cloud.adobe.io/](https://legacy-
 
 Brand Portal과 AEM의 정렬을 지향하는 향상된 기능을 제공합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/26354?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41132?quality=12&learn=on&captions=kor)
 
 ### 탐색 개선 사항
 

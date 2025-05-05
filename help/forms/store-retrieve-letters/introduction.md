@@ -26,7 +26,7 @@ ht-degree: 0%
 
 다음 비디오에서는 사용 사례를 보여 줍니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/342129?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441447?quality=12&learn=on&captions=kor)
 
 ## 전제 조건
 

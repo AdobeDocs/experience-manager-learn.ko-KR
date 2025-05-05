@@ -20,4 +20,4 @@ ht-degree: 0%
 
 *이 비디오는 사용할 네트워크 로그/도구를 캡처하는 단계를 안내합니다.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335491?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417829?quality=12&learn=on&captions=kor)

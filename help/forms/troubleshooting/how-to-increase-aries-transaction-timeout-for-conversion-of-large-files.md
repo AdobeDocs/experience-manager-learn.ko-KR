@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *이 비디오는 대용량 파일 전환과 관련된 문제를 해결하기 위해 &quot;aries.transaction.timeout&quot;을 늘리는 과정을 안내합니다.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335502?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437828?quality=12&learn=on&captions=kor)

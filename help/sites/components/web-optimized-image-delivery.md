@@ -23,4 +23,4 @@ ht-degree: 0%
 
 AEM 핵심 구성 요소를 사용하여 AEM as a Cloud Service 사이트에서 웹에 최적화된 이미지 제공 기능을 활성화하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/346064?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449999?quality=12&learn=on&captions=kor)

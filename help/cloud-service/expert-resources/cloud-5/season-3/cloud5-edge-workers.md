@@ -21,7 +21,7 @@ ht-degree: 3%
 
 AEM Sites 및 Edge Delivery Services에서 에지 작업자의 중요성과 이를 백엔드 시스템과 통합하는 방법을 살펴봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3427589?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448136?learn=on&captions=kor)
 
 ## 추가 리소스
 

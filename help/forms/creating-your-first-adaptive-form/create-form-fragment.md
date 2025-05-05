@@ -21,7 +21,7 @@ ht-degree: 3%
 조각은 양식의 재사용 가능한 부분입니다. 예를 들어 조각에는 주소 블록이나 법적 텍스트가 포함될 수 있습니다. 조각을 사용하면 많은 수의 양식을 간편하게 만들고 유지 관리할 수 있습니다.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/37325?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326683?quality=12&learn=on&captions=kor)
 
 
 

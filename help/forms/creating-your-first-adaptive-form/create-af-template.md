@@ -22,7 +22,7 @@ ht-degree: 5%
 여기서 만든 템플릿은 향후 적응형 양식의 기초입니다.
 다음 비디오는 적응형 양식 템플릿을 만드는 기본 프로세스를 보여 줍니다
 
->[!VIDEO](https://video.tv.adobe.com/v/37324?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326695?quality=12&learn=on&captions=kor)
 
 자세한 내용은 [적응형 양식 템플릿 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html?lang=ko)를 참조하세요
 

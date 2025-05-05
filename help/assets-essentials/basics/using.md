@@ -23,4 +23,4 @@ ht-degree: 0%
 
 AEM Assets에서 에셋을 필터링, 검색 및 다운로드하는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/335861?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418462?quality=12&learn=on&captions=kor)

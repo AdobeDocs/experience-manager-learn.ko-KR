@@ -21,5 +21,5 @@ ht-degree: 0%
 
 이 비디오에 표시된 대로 사용 사례 개선
 
->[!VIDEO](https://video.tv.adobe.com/v/335800?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3436570?quality=12&learn=on&captions=kor)
 

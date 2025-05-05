@@ -161,7 +161,7 @@ IDE를 사용하는 경우 Maven 프로필 탭에서 `classic`을(를) 확인하
 1. [!DNL IntelliJ IDEA] 다운로드 및 설치: [https://www.jetbrains.com/idea/download](https://www.jetbrains.com/idea/download)
 1. [!DNL Repo] 설치(명령줄 도구): [https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#installation)
 
->[!VIDEO](https://video.tv.adobe.com/v/26089?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/39745?quality=12&learn=on&captions=kor)
 
 * 00:00 - Maven 프로젝트 가져오기
 * 05:47 - Maven과 소스 코드 작성 및 배포

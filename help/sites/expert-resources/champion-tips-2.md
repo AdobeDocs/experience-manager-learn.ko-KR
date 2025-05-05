@@ -17,4 +17,4 @@ ht-degree: 0%
 
 # AEM 챔피언 팁 및 요령: 세션 2
 
->[!VIDEO](https://video.tv.adobe.com/v/3409427?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439844?quality=12&learn=on&captions=kor)

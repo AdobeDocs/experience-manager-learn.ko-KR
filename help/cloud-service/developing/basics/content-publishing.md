@@ -21,4 +21,4 @@ ht-degree: 0%
 
 컨텐츠 배포 및 Adobe 파이프라인 개념을 포함하여 AEM as a Cloud Service에서 컨텐츠 게시가 작동하는 방식을 살펴봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/330554?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/346191?quality=12&learn=on&captions=kor)

@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *이 비디오는 FormsIVS 및 OutputIVS 샘플을 사용하여 UI에서 부하 테스트를 실행하는 단계를 안내합니다.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335507?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441488?quality=12&learn=on&captions=kor)

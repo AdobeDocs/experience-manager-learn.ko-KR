@@ -48,7 +48,7 @@ ht-degree: 0%
 >
 > 이전 장을 성공적으로 완료한 경우 프로젝트를 재사용하고 스타터 프로젝트 체크 아웃 단계를 건너뛸 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/330985?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345305?quality=12&learn=on&captions=kor)
 
 새 명령줄 터미널을 열고 다음 작업을 수행합니다.
 
@@ -88,7 +88,7 @@ ht-degree: 0%
 
 구성 요소는 웹 페이지의 작은 모듈식 빌딩 블록으로 생각할 수 있습니다. 구성 요소를 재사용하려면 구성 요소를 구성할 수 있어야 합니다. 이 작업은 작성자 대화 상자를 통해 수행됩니다. 다음으로 간단한 구성 요소를 작성하고 대화 상자의 값이 AEM에서 어떻게 유지되는지 검사해 보겠습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/330986?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345295?quality=12&learn=on&captions=kor)
 
 다음은 위 비디오에서 수행되는 높은 수준의 단계입니다.
 
@@ -106,7 +106,7 @@ HTML 템플릿 언어 또는 **[HTL](https://experienceleague.adobe.com/docs/exp
 
 다음으로 `HelloWorld` HTL 스크립트를 업데이트하여 텍스트 메시지 앞에 추가 인사말을 표시하겠습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/330987?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345288?quality=12&learn=on&captions=kor)
 
 다음은 위 비디오에서 수행되는 높은 수준의 단계입니다.
 
@@ -176,7 +176,7 @@ Sling 모델은 JCR에서 Java™ 변수로 데이터를 쉽게 매핑하는 주
 
 다음으로 `HelloWorldModel` Sling 모델을 업데이트하여 JCR에 저장된 값에 비즈니스 논리를 적용한 후 페이지에 출력해 보겠습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/330988?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36084?quality=12&learn=on&captions=kor)
 
 1. `HelloWorld` 구성 요소와 함께 사용되는 슬링 모델인 `HelloWorldModel.java` 파일을 엽니다.
 
@@ -289,7 +289,7 @@ Sling 모델은 JCR에서 Java™ 변수로 데이터를 쉽게 매핑하는 주
 
 그런 다음 `HelloWorld` 구성 요소의 CSS 스타일을 업데이트합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/340750?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/344337?quality=12&learn=on&captions=kor)
 
 다음은 위 비디오에서 수행되는 높은 수준의 단계입니다.
 

@@ -23,7 +23,7 @@ ht-degree: 12%
 
 AEM Assets에서 감시 에셋, 폴더 또는 컬렉션이 변경될 때마다 알림을 받는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3427646/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439632/?learn=on&captions=kor)
 
 >[!TIP]
 >

@@ -24,7 +24,7 @@ ht-degree: 5%
 
 페이지 버전 관리는 콘텐츠 작성자가 페이지 버전을 작성하여 페이지와 연결된 변경 사항을 추적하는 데 도움이 되며 버전을 미리 보고, 버전을 복원하고, 버전을 페이지의 현재 버전과 비교하는 옵션을 제공합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/32151?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36844?quality=12&learn=on&captions=kor)
 
 버전 관리는 특정 시점에 페이지의 스냅샷을 만듭니다. 버전 관리로 다음과 같은 작업을 수행할 수 있습니다.
 * 페이지의 새 버전 만들기

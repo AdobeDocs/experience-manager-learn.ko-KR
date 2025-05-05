@@ -20,7 +20,7 @@ ht-degree: 0%
 
 AEM의 캘린더 보기는 더 쉬운 프로젝트 관리 및 스케줄링을 위해 캘린더 보기에서 프로젝트 및 작업을 추적합니다. 달력 보기를 사용하면 현재 진행 중, 계획 중, 곧 마감 및 납기가 지난 프로젝트 및 작업에 대한 전체 가시성을 확보할 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/16804?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34588?quality=12&learn=on&captions=kor)
 
 달력 보기를 사용하면 다음 기능을 통해 프로젝트 및 작업을 보다 효율적으로 관리할 수 있습니다.
 

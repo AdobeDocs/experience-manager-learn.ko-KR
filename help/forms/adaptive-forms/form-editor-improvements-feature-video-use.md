@@ -20,7 +20,7 @@ ht-degree: 0%
 
 AEM 6.3은 이 릴리스에서 적응형 양식 및 문서 작성 환경을 단순화하는 몇 가지 새로운 기능과 개선 사항을 도입했습니다. 향상된 기능을 통해 마켓 출시 시간을 단축하고 비즈니스 사용자가 양식 및 문서를 사용할 수 있습니다
 
->[!VIDEO](https://video.tv.adobe.com/v/19500?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33246?quality=12&learn=on&captions=kor)
 
 **적응형 양식 편집기에 대한 몇 가지 주요 개선 사항:**
 

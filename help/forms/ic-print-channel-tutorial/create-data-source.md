@@ -23,7 +23,7 @@ ht-degree: 1%
 
 이 부분에서는 REST 지원 데이터 소스를 만듭니다.  다음 비디오는 데이터 소스를 만드는 단계를 안내합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/27765?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34227?quality=12&learn=on&captions=kor)
 
 제공된 swagger 파일을 이 자습서와 관련된 에셋의 일부로 사용하십시오. 자산은 이 자습서의 [소개](introduction.md)에서 사용할 수 있습니다.
 

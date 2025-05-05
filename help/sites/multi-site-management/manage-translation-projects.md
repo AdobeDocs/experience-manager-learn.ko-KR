@@ -22,4 +22,4 @@ ht-degree: 12%
 
 언어 사본에 대한 번역 프로젝트를 작성, 편집 및 관리하는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/36486?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41626?quality=12&learn=on&captions=kor)

@@ -24,7 +24,7 @@ AEM Forms 6.4에서 웹 채널 문서 템플릿 만들기
 >[!VIDEO](https://video.tv.adobe.com/v/22342?quality=12&learn=on)
 
 AEM Forms 6.5에서 웹 채널 문서 템플릿 만들기
->[!VIDEO](https://video.tv.adobe.com/v/27807?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34261?quality=12&learn=on&captions=kor)
 
 템플릿에는 다양한 종류의 문서 조각을 보관할 대상 영역/자리 표시자가 있습니다. 예를 들어 템플릿에 로고에 대한 대상 영역과 텍스트 컨텐츠에 대한 다른 대상 영역이 있을 수 있습니다.
 

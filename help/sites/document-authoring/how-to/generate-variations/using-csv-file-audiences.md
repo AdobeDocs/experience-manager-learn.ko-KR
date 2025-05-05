@@ -24,4 +24,4 @@ ht-degree: 0%
 
 CSV 파일 대상을 사용하여 Edge Delivery Services 문서 작성에서 관련 콘텐츠를 사용하여 적절한 대상을 타기팅하는 방법을 탐색합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428793/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3436894/?learn=on&captions=kor)

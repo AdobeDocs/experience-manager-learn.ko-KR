@@ -21,4 +21,4 @@ ht-degree: 0%
 
 AEM의 콘텐츠 조각 UI를 통해 빠른 필터링을 사용하여 콘텐츠 조각을 쉽게 찾을 수 있는 방법을 알아봅니다. 이 기능을 사용하면 특정 콘텐츠 조각을 빠르고 쉽게 찾을 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3419310/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3436703/?learn=on&captions=kor)

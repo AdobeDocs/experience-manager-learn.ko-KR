@@ -20,7 +20,7 @@ ht-degree: 11%
 
 이 비디오에서는 Dynamic Media 색상 관리 및 AEM Assets용에서 색상 수정 미리 보기 기능을 제공하는 데 사용할 수 있는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/16792?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34585?quality=12&learn=on&captions=kor)
 
 >[!NOTE]
 >

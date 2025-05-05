@@ -21,4 +21,4 @@ ht-degree: 0%
 
 AEM SDK, AEM as a Cloud Service 및 빌드 및 배포 프로세스의 문제를 해결하고 디버그하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/336964?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3454666?quality=12&learn=on&captions=kor)

@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Cloud Manager의 목적과 AEM as a Cloud Service 사용 방법을 살펴봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/330545?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/346170?quality=12&learn=on&captions=kor)

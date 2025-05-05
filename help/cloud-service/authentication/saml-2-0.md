@@ -56,7 +56,7 @@ AEM Publish SAML 통합의 일반적인 흐름은 다음과 같습니다.
 
 ## 구성 연습
 
->[!VIDEO](https://video.tv.adobe.com/v/343040?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3455349?quality=12&learn=on&captions=kor)
 
 이 비디오는 AEM as a Cloud Service Publish 서비스와 SAML 2.0 통합을 설정하고 Okta를 IDP로 사용하는 방법에 대해 안내합니다.
 

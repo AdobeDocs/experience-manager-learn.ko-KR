@@ -22,7 +22,7 @@ ht-degree: 3%
 
 **첫 번째 적응형 양식 만들기**
 
->[!VIDEO](https://video.tv.adobe.com/v/22173?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327847?quality=12&learn=on&captions=kor)
 
 ## 다음 단계
 

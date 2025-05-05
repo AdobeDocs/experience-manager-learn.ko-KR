@@ -22,4 +22,4 @@ ht-degree: 0%
 
 *이 비디오는 에셋 다운로드 보고서를 사용하도록 설정하는 단계를 안내합니다.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335463?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418284?quality=12&learn=on&captions=kor)

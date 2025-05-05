@@ -24,4 +24,4 @@ ht-degree: 2%
 
 Acrobat Sign 클라우드 구성을 사용할 적응형 양식 만들기
 
->[!VIDEO](https://video.tv.adobe.com/v/332438?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3411753?quality=12&learn=on&captions=kor)

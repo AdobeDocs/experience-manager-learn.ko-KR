@@ -21,4 +21,4 @@ ht-degree: 0%
 
 이 비디오는 AEM Dynamic Media로 회전 메뉴 세트를 만드는 과정을 안내합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/335380?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418230?quality=12&learn=on&captions=kor)

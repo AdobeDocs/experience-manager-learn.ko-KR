@@ -23,4 +23,4 @@ ht-degree: 0%
 
 AEM Forms Designer에서 스크립트 만들기 및 테스트에 대해 설명하는 짧은 비디오
 
->[!VIDEO](https://video.tv.adobe.com/v/3427627/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3443714/?learn=on&captions=kor)

@@ -23,4 +23,4 @@ ht-degree: 0%
 
 AEM Assets as a Cloud Service의 3D 자산 지원에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3420690/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3423677/?learn=on&captions=kor)

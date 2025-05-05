@@ -22,4 +22,4 @@ ht-degree: 0%
 
 다음 비디오는 양식 데이터 모델을 만들고 구성하는 단계를 안내합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/340790?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3444799?quality=12&learn=on&captions=kor)

@@ -24,7 +24,7 @@ ht-degree: 2%
 
 Edge Delivery Services의 게시 및 게시 취소에 따라 트리거되는 이벤트와 이러한 이벤트를 사용하는 사용 사례 및 예를 살펴봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3427681?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3446663?learn=on&captions=kor)
 
 ## 추가 리소스
 

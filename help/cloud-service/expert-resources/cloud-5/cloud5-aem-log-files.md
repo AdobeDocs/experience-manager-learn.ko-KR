@@ -20,7 +20,7 @@ ht-degree: 4%
 
 사용자 인터페이스와 API를 통해 로그에 액세스하는 방법을 포함하여 AEM as a Cloud Service의 로그에 액세스하는 방법에 대해 자세히 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/341156?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448485?quality=12&learn=on&captions=kor)
 
 ## 이 비디오에서 다루는 콘텐츠
 

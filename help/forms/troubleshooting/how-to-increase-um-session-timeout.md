@@ -22,4 +22,4 @@ ht-degree: 0%
 
 *이 비디오는 UM 세션 시간 제한을 늘리는 과정을 안내합니다.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335503?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417653?quality=12&learn=on&captions=kor)

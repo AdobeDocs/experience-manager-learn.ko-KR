@@ -24,7 +24,7 @@ ht-degree: 2%
 
 타임워프는 작성자가 과거의 특정 시간에 페이지 상태를 빠르게 검토할 수 있는 방법을 제공하는 Adobe Experience Manager Sites의 기능입니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/17453?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3410308?quality=12&learn=on&captions=kor)
 
 ## 추가 리소스 {#more-resources}
 

@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Edge Delivery Services에서 페이지를 삭제하는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425973/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438097/?learn=on&captions=kor)

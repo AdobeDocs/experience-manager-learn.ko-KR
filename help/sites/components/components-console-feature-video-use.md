@@ -20,7 +20,7 @@ ht-degree: 1%
 
 구성 요소 콘솔은 개발자 및 관리자에게 사이트 구현의 다양한 구성 요소를 모두 관리할 수 있는 중앙 위치를 제공합니다. 다음 비디오에서는 구성 요소 콘솔의 기능에 대해 자세히 설명합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/17417?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33674?quality=12&learn=on&captions=kor)
 
 구성 요소 콘솔 은 다음 기능을 제공합니다.
 

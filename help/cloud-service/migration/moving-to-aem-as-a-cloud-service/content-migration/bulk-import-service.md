@@ -23,7 +23,7 @@ AEM as a Cloud Services의 일괄 가져오기 서비스 를 사용하여 AEM이
 
 
 
->[!VIDEO](https://video.tv.adobe.com/v/336969?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3453286?quality=12&learn=on&captions=kor)
 
 ## 일괄 가져오기 서비스 사용
 

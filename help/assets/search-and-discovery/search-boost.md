@@ -21,4 +21,4 @@ ht-degree: 7%
 
 # 검색 증폭
 
->[!VIDEO](https://video.tv.adobe.com/v/16766?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3410339?quality=12&learn=on&captions=kor)

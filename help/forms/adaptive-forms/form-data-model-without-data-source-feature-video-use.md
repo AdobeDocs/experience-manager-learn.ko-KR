@@ -20,7 +20,7 @@ ht-degree: 0%
 
 이제 AEM Forms 6.4부터 양식 데이터 모델(FDM)을 데이터 소스와 연결하지 않고 정의할 수 있습니다. 다음 비디오는 데이터 소스 없이 FDM을 만드는 단계를 안내합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/21414?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34869?quality=12&learn=on&captions=kor)
 
 이렇게 하면 다음과 같은 이점이 있습니다.
 

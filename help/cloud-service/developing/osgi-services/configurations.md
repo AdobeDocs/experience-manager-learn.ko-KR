@@ -20,7 +20,7 @@ ht-degree: 3%
 
 OSGi 구성 키/값 쌍을 사용하여 OSGi 구성 데이터를 정의하고 OSGi 서비스에 노출하는 낮은 수준의 접근 방식에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/335729?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417824?quality=12&learn=on&captions=kor)
 
 ## 리소스
 

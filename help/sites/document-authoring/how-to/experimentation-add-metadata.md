@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Edge Delivery Services 문서 작성에서 실험을 위한 메타데이터 추가를 탐색합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428796/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3440116/?learn=on&captions=kor)

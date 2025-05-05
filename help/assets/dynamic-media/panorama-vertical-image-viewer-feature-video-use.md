@@ -20,7 +20,7 @@ ht-degree: 0%
 
 AEM 6.4의 Dynamic Media 뷰어 개선 사항에는 파노라마 이미지 뷰어, 파노라마 Virtual Reality 이미지 뷰어 및 수직 이미지 뷰어가 포함됩니다. Panoramic Viewer는 사용자 정의 개발 없이도 실내, 숙소, 위치 또는 환경에 대한 매력적이고 몰입 경험을 제공하는 손쉬운 방법을 제공합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/24156?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35631?quality=12&learn=on&captions=kor)
 
 >[!NOTE]
 >

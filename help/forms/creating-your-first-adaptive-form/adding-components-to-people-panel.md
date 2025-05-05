@@ -23,15 +23,15 @@ ht-degree: 2%
 
 **AEM Forms 6.3 및 6.4에서 사용자 패널 구성**
 
->[!VIDEO](https://video.tv.adobe.com/v/22193?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326925?quality=12&learn=on&captions=kor)
 
 **AEM Forms 6.5 이상에서 사람 패널 구성**
 
->[!VIDEO](https://video.tv.adobe.com/v/28385?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326941?quality=12&learn=on&captions=kor)
 
 **배우자 세부 정보 규칙**
 
->[!VIDEO](https://video.tv.adobe.com/v/22195?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326933?quality=12&learn=on&captions=kor)
 
 ## 다음 단계
 

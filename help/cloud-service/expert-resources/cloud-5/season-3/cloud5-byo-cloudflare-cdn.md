@@ -23,7 +23,7 @@ ht-degree: 4%
 
 고유한 Cloudflare CDN을 Edge Delivery Services에 구성하는 방법을 살펴봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428100/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3452543/?quality=12&learn=on&captions=kor)
 
 ## 추가 리소스
 

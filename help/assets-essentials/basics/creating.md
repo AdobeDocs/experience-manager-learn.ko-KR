@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Adobe Photoshop Express을 사용하여 에셋을 업로드하고, 버전을 만들고, 에셋을 편집하는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/335746?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418452?quality=12&learn=on&captions=kor)

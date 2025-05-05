@@ -24,4 +24,4 @@ ht-degree: 0%
 
 트렌치의 이야기 - 에지 전달 서비스를 Google 맵과 통합하는 방법과 통합을 통해 성능을 최적화하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3440977/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3440996/?learn=on&enablevpops&captions=kor)

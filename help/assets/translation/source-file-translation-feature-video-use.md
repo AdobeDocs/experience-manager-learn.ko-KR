@@ -25,7 +25,7 @@ Adobe Experience Manager(AEM) Assets을 사용하면 새로운 관련 Assets 기
 
 ## 다중 사이트 자산 Source 파일 관리 {#multisite-asset-source-file-management}
 
->[!VIDEO](https://video.tv.adobe.com/v/18331?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34663?quality=12&learn=on&captions=kor)
 
 관련 Assets을 통해 사용자는 공유 특성, 속성 및 워크플로를 사용하여 에셋을 보다 효율적으로 교차 연결하고 관리할 수 있습니다.
 

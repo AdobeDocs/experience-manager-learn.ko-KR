@@ -23,4 +23,4 @@ ht-degree: 3%
 
 댓글, 주석 및 작업을 사용하여 에셋 관리에 대해 공동 작업하는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/335856?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418447?quality=12&learn=on&captions=kor)

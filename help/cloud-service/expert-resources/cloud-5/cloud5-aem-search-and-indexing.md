@@ -21,7 +21,7 @@ ht-degree: 3%
 
 검색과 색인화의 깊은 물결에 대한 빠른 탐구. 보다 효과적으로 교육을 제공하는 데 도움이 되기를 바라는 어려운 주제입니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/342374?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448113?quality=12&learn=on&captions=kor)
 
 ## 이 비디오에서 다루는 콘텐츠
 

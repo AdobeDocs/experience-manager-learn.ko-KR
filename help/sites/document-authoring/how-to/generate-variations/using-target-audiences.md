@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Edge Delivery Services 문서 작성에서 Adobe Target 대상을 사용하여 적절한 대상자를 관련 콘텐츠로 타겟팅하는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428792/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437762/?learn=on&captions=kor)

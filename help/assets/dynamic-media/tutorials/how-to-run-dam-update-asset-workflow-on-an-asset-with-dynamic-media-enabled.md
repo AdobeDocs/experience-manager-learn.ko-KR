@@ -21,4 +21,4 @@ ht-degree: 0%
 
 이 비디오는 Dynamic Media가 활성화된 에셋에서 DAM 에셋 업데이트 워크플로우를 실행하는 프로세스를 안내합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/335456?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418272?quality=12&learn=on&captions=kor)

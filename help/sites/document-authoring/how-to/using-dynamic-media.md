@@ -24,4 +24,4 @@ ht-degree: 0%
 
 최적화된 이미지 및 비디오 전송을 위해 Edge Delivery Services에서 Dynamic Media를 사용하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429593/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438911/?learn=on&captions=kor)

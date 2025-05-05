@@ -23,7 +23,7 @@ ht-degree: 5%
 
 편집 가능한 템플릿을 사용하면 전문 작성자가 페이지 템플릿을 만들고 업데이트할 수 있으며 Adobe Experience Manager(AEM) Sites에서 고급 정책 구성을 관리할 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/326784?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449618?quality=12&learn=on&captions=kor)
 
 편집 가능한 템플릿 은 새 AEM Sites을 구축하는 데 권장되는 사항입니다.
 

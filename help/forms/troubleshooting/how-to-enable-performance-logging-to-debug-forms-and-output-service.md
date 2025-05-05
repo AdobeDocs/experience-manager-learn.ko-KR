@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *이 비디오에서는 AEM Forms에서 성능 로깅을 사용하여 Forms 및 출력 서비스와 관련된 문제를 디버깅하는 과정을 안내합니다.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335499?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439722?quality=12&learn=on&captions=kor)

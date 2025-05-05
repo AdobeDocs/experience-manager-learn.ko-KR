@@ -25,4 +25,4 @@ ht-degree: 1%
 
 이 비디오에서는 양식 작성기와 서명자가 동일한 사람인 양식을 구성합니다
 
->[!VIDEO](https://video.tv.adobe.com/v/332439?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3411759?quality=12&learn=on&captions=kor)

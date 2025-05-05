@@ -27,7 +27,7 @@ AEM as a Cloud Service의 RDE(Rapid Development Environment)에 대해 알아봅
 - RDE란?
 - 개발에서 배포 주기까지의 속도를 높이는 데 어떻게 도움이 됩니까?
 
->[!VIDEO](https://video.tv.adobe.com/v/3414128?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3453605?quality=12&learn=on&captions=kor)
 
 ## 다음 단계
 

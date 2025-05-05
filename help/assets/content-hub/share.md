@@ -22,4 +22,4 @@ ht-degree: 0%
 
 AEM Assets Content Hub에서 팀 구성원과 에셋 및 컬렉션을 공유하여 효과적인 팀워크를 도모하고 에셋 공유를 보호하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3435685/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3445362/?learn=on&captions=kor)

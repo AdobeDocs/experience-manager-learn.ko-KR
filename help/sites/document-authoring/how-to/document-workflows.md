@@ -25,4 +25,4 @@ ht-degree: 0%
 
 AEM 문서 작성과 함께 문서 워크플로를 사용하는 방법을 살펴봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425720/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438297/?learn=on&captions=kor)

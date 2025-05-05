@@ -24,5 +24,5 @@ ht-degree: 0%
 
 Edge Delivery Services 문서 작성에서 변형 생성을 위해 프롬프트 템플릿을 사용하는 방법을 살펴봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428307/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441338/?learn=on&captions=kor)
 

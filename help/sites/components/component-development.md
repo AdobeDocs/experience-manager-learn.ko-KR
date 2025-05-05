@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Adobe Experience Manager Sites을 사용한 구성 요소 개발에 대한 개요입니다. 대화 상자, Sling 모델, HTL스크립트 및 클라이언트측 라이브러리에 대한 소개가 포함되어 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/32547?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36522?quality=12&learn=on&captions=kor)

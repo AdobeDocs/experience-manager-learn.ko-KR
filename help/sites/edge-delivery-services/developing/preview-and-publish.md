@@ -23,4 +23,4 @@ ht-degree: 0%
 
 [AEM Sidekick](./sidekick.md)을(를) 사용하여 Edge Delivery Services으로 콘텐츠를 미리 보고 게시합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425714/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3434716/?learn=on&captions=kor)

@@ -23,4 +23,4 @@ ht-degree: 0%
 
 AEM Assets 권한 관리를 통해 조직이 자산에 대한 액세스를 제어하고, 브랜드를 보호하며, 규정 준수를 보장하는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/342113?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345462?quality=12&learn=on&captions=kor)

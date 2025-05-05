@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Edge Delivery Services을 사용한 문서 작성에서 AEM Sidekick을 통해 작성자 인증을 구성하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429594/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438185/?learn=on&captions=kor)

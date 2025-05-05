@@ -23,4 +23,4 @@ ht-degree: 0%
 
 최종 사용자가 AdobeAcrobat Reader에서 AEM Forms을 채우고 저장할 수 있도록 Reader PDF forms 확장 기능을 사용하는 방법에 대해 설명하는 짧은 비디오입니다
 
->[!VIDEO](https://video.tv.adobe.com/v/3427629/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439522/?learn=on&captions=kor)

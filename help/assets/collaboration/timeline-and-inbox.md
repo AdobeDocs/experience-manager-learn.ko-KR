@@ -24,4 +24,4 @@ ht-degree: 0%
 
 공동 작업에 사용되는 AEM Assets의 주요 웹 콘솔에 대해 숙지하십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/32051?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36860?quality=12&learn=on&captions=kor)

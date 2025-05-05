@@ -28,5 +28,5 @@ ht-degree: 8%
 + 실제 시나리오에서 변형을 사용하는 방법을 알아봅니다
 + 특정 변형 요청을 위한 GraphQL 구문 검토
 
->[!VIDEO](https://video.tv.adobe.com/v/333295?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449327?quality=12&learn=on&captions=kor)
 

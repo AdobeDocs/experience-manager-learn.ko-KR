@@ -21,4 +21,4 @@ ht-degree: 0%
 
 이 비디오는 Dynamic Media Classic 앱을 사용하여 안전하게 미리 볼 수 있도록 Dynamic Media에 테스트 이미지 서버(클라이언트 IP 필터) 세부 정보를 추가하는 과정을 안내합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/335462?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418278?quality=12&learn=on&captions=kor)

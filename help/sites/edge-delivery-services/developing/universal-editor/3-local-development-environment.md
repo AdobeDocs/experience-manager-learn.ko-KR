@@ -27,7 +27,7 @@ Edge Delivery Services 웹 사이트 프로젝트의 개발 도구 및 프로세
 
 이 비디오는 범용 편집기로 편집할 수 있는 Edge Delivery Services 웹 사이트 프로젝트의 개발 토폴로지에 대한 개요를 제공합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3443978/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3443985/?learn=on&enablevpops&captions=kor)
 
 +++추가 개발 토폴로지 세부 정보 참조
 

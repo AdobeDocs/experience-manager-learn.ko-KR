@@ -23,4 +23,4 @@ ht-degree: 3%
 
 태그는 Assets의 폴더 계층 구조에서 에셋을 관리하기 위한 필수 도구입니다. 태깅 분류 설정은 사용자가 AEM에서 에셋을 검색하고 구성할 수 있도록 하는 데 중요합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/34073?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37316?quality=12&learn=on&captions=kor)

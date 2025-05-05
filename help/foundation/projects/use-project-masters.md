@@ -22,7 +22,7 @@ ht-degree: 0%
 
 프로젝트 마스터는 [!DNL AEM Projects]을(를) 통해 사용자 및 팀 관리를 크게 간소화합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/17740?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3410333?quality=12&learn=on&captions=kor)
 
 이제 관리자는 **[!DNL Master Project]**&#x200B;을(를) 만들고 사용자를 프로젝트 팀의 일부로 역할/권한에 할당할 수 있습니다. 프로젝트는 기본 프로젝트에서 만들 수 있으며 자동으로 팀 멤버십을 상속합니다. 이는 다음과 같은 몇 가지 이점을 제공합니다.
 

@@ -22,5 +22,5 @@ ht-degree: 0%
 
 Asset Link 패널에서 AEM Assets 파일 및 컬렉션에 빠르고 쉽게 액세스하는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/33884?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38665?quality=12&learn=on&captions=kor)
 

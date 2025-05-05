@@ -23,4 +23,4 @@ ht-degree: 0%
 
 AEM Assets의 링크 공유를 통해 잘못된 에셋이나 정보를 공유할 위험을 최소화하면서 내부 및 외부 관련자와 에셋을 공유할 수 있는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/341025?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345009?quality=12&learn=on&captions=kor)

@@ -47,7 +47,7 @@ ht-degree: 0%
 
 ## SSL 인증서 생성
 
->[!VIDEO](https://video.tv.adobe.com/v/3427908?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441495?quality=12&learn=on&captions=kor)
 
 다음 두 가지 옵션이 있습니다.
 
@@ -222,7 +222,7 @@ HTTP 헤더 유효성 검사 CDN 규칙을 구성하고 배포하려면 다음 �
 
 ## X-AEM-Edge-키 HTTP 헤더에서 암호 전달
 
->[!VIDEO](https://video.tv.adobe.com/v/3432567?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3445052?quality=12&learn=on&captions=kor)
 
 고객 CDN을 업데이트하여 `X-AEM-Edge-Key` HTTP 헤더에서 암호를 전달합니다. 이 암호는 Adobe CDN에서 고객 CDN으로부터 요청이 오고 있는지 확인하고 `Host` 헤더 값을 고객 CDN으로부터 받은 `X-Forwarded-Host`의 값으로 변환하는 데 사용됩니다.
 

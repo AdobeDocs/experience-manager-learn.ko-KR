@@ -21,4 +21,4 @@ ht-degree: 0%
 
 AEM as a Cloud Service에서 OSGi 구성을 정의하고 배포하는 방법을 살펴보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/330559?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345875?quality=12&learn=on&captions=kor)

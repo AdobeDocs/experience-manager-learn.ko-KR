@@ -28,15 +28,15 @@ ht-degree: 0%
 
 ## 드롭다운 목록을 채우는 기능 {#function-to-populate-drop-down-list}
 
->[!VIDEO](https://video.tv.adobe.com/v/22282?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326881?quality=12&learn=on&captions=kor)
 
 ### 패널의 요약 제목 설정 {#set-the-summary-title-of-panels}
 
->[!VIDEO](https://video.tv.adobe.com/v/28387?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33083?quality=12&learn=on&captions=kor)
 
 #### 패널 유효성 검사 {#validate-panels-using-rule-editor}
 
->[!VIDEO](https://video.tv.adobe.com/v/28409?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33076?quality=12&learn=on&captions=kor)
 
 다음은 패널 필드의 유효성을 검사하는 데 사용되는 코드입니다
 

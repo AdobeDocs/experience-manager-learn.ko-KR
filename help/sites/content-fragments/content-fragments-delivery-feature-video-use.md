@@ -30,7 +30,7 @@ Adobe Experience Manager(AEM) 컨텐츠 조각은 텍스트 기반 에디토리�
 
 ## 웹 페이지에서 컨텐츠 조각 사용 {#using-content-fragments-in-web-pages}
 
->[!VIDEO](https://video.tv.adobe.com/v/22449?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34811?quality=12&learn=on&captions=kor)
 
 컨텐츠 조각은 AEM Sites WCM 핵심 구성 요소 [컨텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=ko)를 사용하여 AEM 페이지에서 또는 유사한 방식으로 경험 조각에서 사용할 수 있습니다.
 
@@ -38,7 +38,7 @@ Adobe Experience Manager(AEM) 컨텐츠 조각은 텍스트 기반 에디토리�
 
 ## 컨텐츠 조각을 JSON으로 노출 {#exposing-content-fragments-as-json}
 
->[!VIDEO](https://video.tv.adobe.com/v/22448?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34813?quality=12&learn=on&captions=kor)
 
 AEM Content Services를 사용하면 콘텐츠를 정규화된 JSON 형식으로 변환하는 AEM 페이지 기반 HTTP 엔드포인트를 쉽게 만들 수 있습니다.
 
@@ -49,7 +49,7 @@ AEM Content Services를 사용하면 콘텐츠를 정규화된 JSON 형식으로
 
 ## Assets HTTP API 사용
 
->[!VIDEO](https://video.tv.adobe.com/v/26390?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41129?quality=12&learn=on&captions=kor)
 
 AEM 6.5에 처음 도입된 는 Assets HTTP API를 통해 콘텐츠 조각에 대한 지원을 개선했습니다. 이렇게 하면 개발자가 콘텐츠 조각에 대해 만들기, 읽기, 업데이트 및 삭제(CRUD) 작업을 손쉽게 수행할 수 있습니다.
 

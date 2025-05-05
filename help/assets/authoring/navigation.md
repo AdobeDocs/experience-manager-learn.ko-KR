@@ -23,4 +23,4 @@ ht-degree: 12%
 
 AEM Assets 탐색에 대한 기본 사항을 살펴보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/32046?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37101?quality=12&learn=on&captions=kor)

@@ -23,4 +23,4 @@ ht-degree: 0%
 
 AEM Form을 XML Data Source에 바인딩하는 방법을 설명하는 짧은 비디오
 
->[!VIDEO](https://video.tv.adobe.com/v/3427625/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439833/?learn=on&captions=kor)

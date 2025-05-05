@@ -21,4 +21,4 @@ ht-degree: 0%
 
 모범 사례와 예를 사용하여 Dispatcher가 AEM as Cloud Service 및 Cloud Manager과 함께 작동하는 방식을 살펴봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/330538?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345846?quality=12&learn=on&captions=kor)

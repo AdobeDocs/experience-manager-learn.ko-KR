@@ -25,4 +25,4 @@ ht-degree: 7%
 
 Workfront 문서를 Assets Essentials로 전송하고 Assets Essentials 에셋을 Workfront에 연결하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/336255?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3423892?quality=12&learn=on&captions=kor)

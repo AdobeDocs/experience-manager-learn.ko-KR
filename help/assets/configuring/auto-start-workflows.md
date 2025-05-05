@@ -23,7 +23,7 @@ ht-degree: 0%
 
 자동 시작 워크플로우는 자산 처리가 완료되면 업로드 또는 재처리 시 사용자 지정 워크플로를 자동으로 호출하여 AEM as a Cloud Service의 자산 처리를 확장합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/37323?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326766?quality=12&learn=on&captions=kor)
 
 >[!NOTE]
 >

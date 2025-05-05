@@ -24,4 +24,4 @@ ht-degree: 7%
 
 Adobe Workfront 및 Experience Manager Assets Essentials가 Workfront 문서 및 Assets Essentials 에셋의 버전을 유지 관리하는 데 어떻게 도움이 되는지에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/336314?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3422619?quality=12&learn=on&captions=kor)

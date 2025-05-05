@@ -29,11 +29,11 @@ AEM as a Cloud Service의 일괄 가져오기 도구를 사용하면 관리자�
 
 명확하고 따라하기 쉬운 통합 프로세스를 위한 예제 클라우드 스토리지 공급자 역할을 하는 AEM Assets을 사용하여 [자산 보기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/assets-view/assets-view-introduction.html?lang=ko) [일괄 가져오기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view.html?lang=ko)를 사용하여 여러 파일을 Dropbox으로 가져오는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3426857/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3451966/?learn=on&captions=kor)
 
 >[!TAB 관리 보기]
 
->[!VIDEO](https://video.tv.adobe.com/v/329680?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/341391?quality=12&learn=on&captions=kor)
 
 >[!TIP]
 >

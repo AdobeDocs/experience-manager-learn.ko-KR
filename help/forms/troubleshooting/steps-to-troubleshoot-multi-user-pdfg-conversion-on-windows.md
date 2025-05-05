@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *이 비디오에서는 Windows 설치 시 다중 사용자 PDFG 변환 문제를 해결하는 과정을 설명합니다.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335550?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417227?quality=12&learn=on&captions=kor)

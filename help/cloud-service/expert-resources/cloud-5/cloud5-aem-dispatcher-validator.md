@@ -21,7 +21,7 @@ ht-degree: 2%
 
 AEM 개발 워크플로에서 Dispatcher 유효성 검사기를 사용하는 방법에 대한 빠른 예입니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/342358?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448426?quality=12&learn=on&captions=kor)
 
 ## 이 비디오에서 다루는 콘텐츠
 

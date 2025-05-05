@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *이 비디오에서는 Forms PDFG 서비스에서 응용 프로그램 서버의 트랜잭션 시간 제한을 변경하는 과정을 설명합니다.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335555?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417603?quality=12&learn=on&captions=kor)

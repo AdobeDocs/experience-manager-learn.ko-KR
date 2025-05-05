@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Microsoft OneDrive에 적응형 양식 데이터를 저장합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3415792/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3431102/?quality=12&learn=on&captions=kor)

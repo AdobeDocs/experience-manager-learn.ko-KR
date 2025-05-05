@@ -21,4 +21,4 @@ ht-degree: 0%
 
 이 비디오는 Dynamic Media Classic 앱에서 에셋을 다운로드하는 단계를 안내합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/335458?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417834?quality=12&learn=on&captions=kor)

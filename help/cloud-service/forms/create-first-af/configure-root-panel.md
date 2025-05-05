@@ -23,4 +23,4 @@ ht-degree: 0%
 
 루트 패널에 하위 패널을 추가하고 하위 패널의 레이아웃을 구성합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/332238?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447283?quality=12&learn=on&captions=kor)

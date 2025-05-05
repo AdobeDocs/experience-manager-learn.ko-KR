@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *이 비디오는 Designer에서 PDF 미리 보기를 사용하도록 설정하는 단계를 안내합니다.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335500?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417687?quality=12&learn=on&captions=kor)

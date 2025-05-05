@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Adobe Firefly과 통합된 Adobe Experience Manager Assets이 빈 검색 결과를 생산적인 자산 생성 경험으로 변환하여 사용자가 워크플로우 내에서 직접 자산을 손쉽게 찾고 업로드할 수 있도록 하는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429070/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438264/?learn=on&captions=kor)
 
 
 >[!TIP]

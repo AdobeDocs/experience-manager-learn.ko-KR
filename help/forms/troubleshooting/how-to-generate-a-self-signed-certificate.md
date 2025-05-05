@@ -20,4 +20,4 @@ ht-degree: 0%
 
 *이 비디오는 자체 서명된 인증서를 생성하는 단계를 안내합니다.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335539?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417172?quality=12&learn=on&captions=kor)

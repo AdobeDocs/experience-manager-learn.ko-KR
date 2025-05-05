@@ -23,7 +23,7 @@ ht-degree: 4%
 
 AEM Desktop App을 사용하여 데스크톱의 AEM에서 관리하는 모든 에셋에 모든 애플리케이션 및 파일 형식에 대한 액세스를 단순화합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/28868?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32781?quality=12&learn=on&captions=kor)
 
 + 전용 데스크탑 애플리케이션을 사용한 검색 및 탐색을 통해 AEM에서 에셋을 탐색합니다
 + 최적화된 대역폭 관리를 통해 대용량의 많은 에셋을 업로드하고 다운로드할 수 있습니다.

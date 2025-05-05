@@ -23,4 +23,4 @@ ht-degree: 0%
 
 
 
->[!VIDEO](https://video.tv.adobe.com/v/41238?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/328985?quality=12&learn=on&captions=kor)

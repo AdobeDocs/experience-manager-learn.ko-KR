@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *이 비디오에서는 Forms 및 출력 서비스 전환을 위한 글꼴을 포함하는 단계를 안내합니다.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335496?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3436481?quality=12&learn=on&captions=kor)

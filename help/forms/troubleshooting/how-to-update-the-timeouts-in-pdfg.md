@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *이 비디오에서는 Forms PDFG 서비스에서 서버 전환 및 서버 전역 시간 제한을 업데이트하는 프로세스에 대해 설명합니다.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335514?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417608?quality=12&learn=on&captions=kor)

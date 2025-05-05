@@ -25,7 +25,7 @@ Adobe Experience Manager as a Cloud Service의 새로운 기능은? 최신 사�
 
 ## WKND 개발자 튜토리얼 {#wknd-developer-tutorial}
 
->[!VIDEO](https://video.tv.adobe.com/v/30476?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36102?quality=12&learn=on&captions=kor)
 
 이 자습서는 **AEM as a Cloud Service**&#x200B;에서 작동하도록 설계되었으며 **AEM 6.5+** 및 **AEM 6.4.2+**&#x200B;과(와) 역으로 호환됩니다.
 
@@ -35,7 +35,7 @@ Adobe Experience Manager as a Cloud Service의 새로운 기능은? 최신 사�
 
 WKND 자습서를 완료한 후 아래 비디오를 통해 AEM as a Cloud Service에 WKND 프로젝트를 배포하는 방법에 대한 개요를 확인하십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/30191?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32992?quality=12&learn=on&captions=kor)
 
 이 비디오에서는 WKND 사이트 프로젝트의 모습을 보여 줍니다.
 

@@ -24,5 +24,5 @@ ht-degree: 0%
 
 Edge Delivery Services 문서 작성에서 변형 생성을 위해 사이드 킥을 구성하는 방법을 살펴봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428306/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3436996/?learn=on&captions=kor)
 

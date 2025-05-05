@@ -24,7 +24,7 @@ ht-degree: 14%
 
 Adobe Experience Manager Sites 페이지에 대한 기본 페이지 관리 작업을 수행하는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/32147?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37205?quality=12&learn=on&captions=kor)
 
 
 ## 추가 리소스 {#additional-resources}

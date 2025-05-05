@@ -24,7 +24,7 @@ ht-degree: 3%
 
 Edge Delivery Services을 사용하여 데이터 세트를 조작하고 정렬하기 위한 쿼리 인덱스 및 Excel 공식을 작성하는 방법을 살펴봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3427787/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3453770/?learn=on&captions=kor)
 
 ## 추가 리소스
 

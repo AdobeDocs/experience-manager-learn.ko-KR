@@ -35,7 +35,7 @@ ht-degree: 2%
 
 사용자 지정 네임스페이스는 [Sling Repository Initialization(repoinit)](https://sling.apache.org/documentation/bundles/repository-initialization.html) 스크립트에서 관리되고 OSGi 구성으로 AEM as a Cloud Service에 배포되며 [AEM 프로젝트의](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko) `ui.config` 프로젝트에 추가됩니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3412319?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3416848?quality=12&learn=on&captions=kor)
 
 ## 리소스
 

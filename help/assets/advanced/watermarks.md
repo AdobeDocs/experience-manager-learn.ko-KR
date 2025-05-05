@@ -23,4 +23,4 @@ ht-degree: 0%
 
 AEM as a Cloud Service의 워터마킹 기능을 사용하면 PNG 이미지를 사용하여 사용자 정의 이미지 렌디션을 워터마킹할 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/41536?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/329458?quality=12&learn=on&captions=kor)

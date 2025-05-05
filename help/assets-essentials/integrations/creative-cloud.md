@@ -26,4 +26,4 @@ AEM Assets을 Adobe Creative Cloud Libraries와 통합하여 다음과 같은 �
 + Creative Cloud Libraries을 통해 원활하게 액세스할 수 있는 AEM Assets 파일
 + AEM Assets에 공유할 Creative Cloud Libraries 파일
 
->[!VIDEO](https://video.tv.adobe.com/v/3432401?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3444015?quality=12&learn=on&captions=kor)

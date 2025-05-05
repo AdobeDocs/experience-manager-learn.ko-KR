@@ -47,11 +47,11 @@ XML 변수를 사용하여 적응형 양식을 미리 채우거나 적응형 양
 
 **XML 변수를 스키마와 매핑합니다. AEM Forms 6.5.1 이상에서 이 기능 사용**
 
->[!VIDEO](https://video.tv.adobe.com/v/28098?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35397?quality=12&learn=on&captions=kor)
 
 #### 이메일 전송에서 변수 사용
 
->[!VIDEO](https://video.tv.adobe.com/v/26441?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35398?quality=12&learn=on&captions=kor)
 
 시스템에서 에셋을 작업하려면 다음 단계를 따르십시오.
 

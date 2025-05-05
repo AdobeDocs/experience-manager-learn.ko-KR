@@ -21,4 +21,4 @@ ht-degree: 0%
 
 이 비디오에서는 제출 작업 작업 매개 변수 중에 Dynamic Media에서 내보내기 작업을 트리거하는 단계를 안내합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/335454?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417839?quality=12&learn=on&captions=kor)

@@ -22,4 +22,4 @@ ht-degree: 0%
 
 다음 비디오는 Microsoft Dynamics과 연결하기 위한 클라우드 서비스 구성을 만드는 단계를 안내합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/340758?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448305?quality=12&learn=on&captions=kor)

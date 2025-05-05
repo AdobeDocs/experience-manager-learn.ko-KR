@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Sales Force Form 데이터 모델을 기반으로 적응형 양식을 만들고 버튼 클릭 이벤트로 Salesforce의 잠재 고객 생성 테스트
 
->[!VIDEO](https://video.tv.adobe.com/v/331892?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3411583?quality=12&learn=on&captions=kor)

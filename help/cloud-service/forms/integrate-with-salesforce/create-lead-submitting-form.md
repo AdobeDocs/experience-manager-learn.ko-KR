@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Sales Force 양식 데이터 모델을 기반으로 적응형 양식을 만들고 양식을 제출하여 Salesforce에서 잠재 고객 생성 테스트
 
->[!VIDEO](https://video.tv.adobe.com/v/331758?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3411565?quality=12&learn=on&captions=kor)

@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *이 비디오는 모바일 양식의 디버그 로그를 캡처하는 단계를 안내합니다.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335516?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438594?quality=12&learn=on&captions=kor)

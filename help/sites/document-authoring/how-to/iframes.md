@@ -25,4 +25,4 @@ ht-degree: 0%
 
 AEM 문서 작성과 함께 iFrame을 사용하여 콘텐츠를 임베드하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425719/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438396/?learn=on&captions=kor)

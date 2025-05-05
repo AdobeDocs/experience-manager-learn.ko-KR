@@ -533,7 +533,7 @@ const renderReference = {
 
 ## 전체적인 예
 
->[!VIDEO](https://video.tv.adobe.com/v/342105?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449707?quality=12&learn=on&captions=kor)
 
 >[!NOTE]
 >

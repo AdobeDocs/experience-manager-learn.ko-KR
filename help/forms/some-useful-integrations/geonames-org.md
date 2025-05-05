@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## 사용 사례 데모
 
->[!VIDEO](https://video.tv.adobe.com/v/340344?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437316?quality=12&learn=on&captions=kor)
 
 이 자습서에서는 이 기능을 보여주기 위해 [Geonames REST API](https://www.geonames.org/export/web-services.html)를 사용했습니다.
 이러한 종류의 서비스를 제공하는 다양한 조직이 있으며 REST API를 잘 문서화한다면 데이터 통합 기능을 사용하여 AEM Forms과 쉽게 통합할 수 있습니다

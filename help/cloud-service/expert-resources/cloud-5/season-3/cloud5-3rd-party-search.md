@@ -21,7 +21,7 @@ ht-degree: 4%
 
 타사 검색을 Edge Delivery Services에 가장 잘 통합할 수 있는 방법을 살펴봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3427040?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3452617?quality=12&learn=on&captions=kor)
 
 ## 추가 리소스
 

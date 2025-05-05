@@ -28,5 +28,5 @@ GraphQL 쿼리를 만들어 Adobe Experience Manager(AEM)의 콘텐츠를 반환
 + 콘텐츠 조각 목록 및 단일 콘텐츠 조각을 쿼리하는 방법에 대해 알아봅니다
 + 특정 데이터 속성을 필터링하고 요청하는 방법을 알아봅니다
 
->[!VIDEO](https://video.tv.adobe.com/v/332860?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3412895?quality=12&learn=on&captions=kor)
 

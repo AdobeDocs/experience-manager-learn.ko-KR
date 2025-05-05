@@ -22,7 +22,7 @@ ht-degree: 2%
 다음 단계는 양식 데이터 모델을 사용하여 AEM Forms CS와 Azure Storage 간의 통합을 만드는 것입니다.
 다음 비디오에서는 통합을 만드는 데 필요한 단계를 안내합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/335385?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3419022?quality=12&learn=on&captions=kor)
 
 이 자습서에서는 CreditApplications라는 엔터티를 사용하여 SaveAndRetrieveFromAzurePortal이라는 양식 데이터 모델을 만들었습니다
 ![fdm-entity](./assets/fdm-entity.png)

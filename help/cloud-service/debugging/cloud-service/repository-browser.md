@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Repository Browser는 AEM의 기본 데이터 저장소에 대한 가시성을 제공하여 AEM as a Cloud Service 환경을 손쉽게 디버깅할 수 있도록 하는 강력한 도구입니다. Repository Browser는 프로덕션, 스테이징, 개발뿐만 아니라 작성자, 게시자 및 미리보기 서비스에서 AEM의 리소스 및 속성에 대한 읽기 전용 보기를 지원합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/341464?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447061?quality=12&learn=on&captions=kor)
 
 리포지토리 브라우저는 AEM as a Cloud Service 환경에서만 __사용할 수 있습니다__. 로컬 AEM SDK을 디버깅하려면 [CRXDE Lite](../aem-sdk-local-quickstart/other-tools.md#crxde-lite)을(를) 사용하십시오.
 

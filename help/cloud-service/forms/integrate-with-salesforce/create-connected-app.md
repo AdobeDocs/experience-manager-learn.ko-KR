@@ -24,7 +24,7 @@ ht-degree: 0%
 연결된 앱은 API 및 표준 프로토콜(예: SAML, OAuth 및 OpenID Connect)을 사용하여 외부 애플리케이션을 Salesforce과 통합할 수 있는 프레임워크입니다. 연결된 앱은 이러한 프로토콜을 사용하여 외부 앱을 인증, 승인 및 제공합니다.
 <!--- 331757 was the old video -->
 
->[!VIDEO](https://video.tv.adobe.com/v/3447257?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447264?quality=12&learn=on&captions=kor)
 
 >[!NOTE]
 >REST API는 개발자 버전에서 기본적으로 활성화되어 있으므로 [Salesforce 개발자 버전](https://developer.salesforce.com/signup)에서 계정을 만드십시오.

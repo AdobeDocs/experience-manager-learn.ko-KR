@@ -20,4 +20,4 @@ ht-degree: 0%
 
 *이 비디오는 데이터베이스 초기화가 작동하지 않는 경우 수동으로 부트스트랩하는 프로세스를 안내합니다.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335515?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3436276?quality=12&learn=on&captions=kor)

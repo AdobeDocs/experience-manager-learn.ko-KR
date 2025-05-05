@@ -24,7 +24,7 @@ AEM UI 확장은 확장이 속한 Adobe 조직의 모든 AEM as a Cloud Service 
 
 확장 테스트는 AEM에 해당 요청에 대해서만 확장을 로드하도록 지시하는 특별히 제작된 URL을 통해 수행됩니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3412877?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417483?quality=12&learn=on&captions=kor)
 
 >[!IMPORTANT]
 >

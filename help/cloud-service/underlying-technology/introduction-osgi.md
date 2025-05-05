@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Adobe Experience Manager의 기반이 되는 [!DNL Java] 응용 프로그램의 동적 모듈식 아키텍처인 [!DNL OSGi]을(를) 소개합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/32031?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37048?quality=12&learn=on&captions=kor)

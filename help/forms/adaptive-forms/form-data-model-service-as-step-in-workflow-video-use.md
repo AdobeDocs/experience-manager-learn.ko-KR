@@ -22,7 +22,7 @@ ht-degree: 0%
 이제 AEM Forms 6.4부터 양식 데이터 모델을 AEM Workflow의 일부로 사용할 수 있습니다. 다음 비디오는 AEM 워크플로에서 양식 데이터 모델 단계를 구성하는 데 필요한 단계를 안내합니다
 
 
->[!VIDEO](https://video.tv.adobe.com/v/21719?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33260?quality=12&learn=on&captions=kor)
 
 서버에서 이 기능을 테스트하려면 아래 지침을 따르십시오
 * [setvalue 번들을 다운로드하여 배포합니다](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). 메타데이터 속성을 설정하는 사용자 지정 OSGI 번들입니다.

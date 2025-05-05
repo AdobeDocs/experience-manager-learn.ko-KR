@@ -32,4 +32,4 @@ AEM Forms 6.5.13에는 양식 데이터 모델을 다양한 서비스 종단점�
 
 >[!NOTE]
 >이 비디오에서 설명하는 기능을 사용하려면 AEM Forms 6.5.13이 필요합니다
->[!VIDEO](https://video.tv.adobe.com/v/343762?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3410233?quality=12&learn=on&captions=kor)

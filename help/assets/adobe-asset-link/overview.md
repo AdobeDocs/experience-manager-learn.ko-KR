@@ -51,7 +51,7 @@ Adobe Creative Cloud for enterprise용 Adobe Asset Link 확장은 Creative Cloud
 
 Adobe Asset Link는 Adobe Asset Link와 AEM 간의 InDesign 직접 연결 지원을 제공합니다. InDesign 직접 연결 지원을 사용하면 Adobe Asset Link 패널을 통해 AEM에서 InDesign으로 디지털 에셋을 배치(__연결 배치__ 또는 __복사 배치__)하거나 드래그하여 놓을 수 있습니다. 또한 *For Placement Only+(FPO) 표현물을 소개합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/28988?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37237?quality=12&learn=on&captions=kor)
 
 >[!NOTE]
 >

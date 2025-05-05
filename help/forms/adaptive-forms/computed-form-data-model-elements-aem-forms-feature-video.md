@@ -28,8 +28,8 @@ ht-degree: 0%
 
 ## 월급 계산 요소 생성
 
->[!VIDEO](https://video.tv.adobe.com/v/23855?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35617?quality=12&learn=on&captions=kor)
 
 ### StateandZip 계산된 요소 만들기
 
->[!VIDEO](https://video.tv.adobe.com/v/23856?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35619?quality=12&learn=on&captions=kor)

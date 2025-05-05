@@ -25,4 +25,4 @@ ht-degree: 0%
 
 기본 콘텐츠, 블록 등을 사용하여 문서 작성을 구성하는 방법을 살펴봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425701/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438819/?learn=on&captions=kor)

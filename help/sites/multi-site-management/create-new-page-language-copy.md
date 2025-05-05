@@ -22,4 +22,4 @@ ht-degree: 0%
 
 기존 언어 사본에서 페이지를 만든 다음 해당 콘텐츠를 다른 언어 사본으로 변환하는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/36682?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41552?quality=12&learn=on&captions=kor)

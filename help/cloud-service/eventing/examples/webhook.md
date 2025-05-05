@@ -23,7 +23,7 @@ ht-degree: 0%
 
 웹후크에서 AEM 이벤트를 수신하고 페이로드, 헤더 및 메타데이터 등 이벤트 세부 사항을 검토하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3427051?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449755?quality=12&learn=on&captions=kor)
 
 이 예에서는 Adobe에서 제공하는 _호스팅된 webhook_&#x200B;을(를) 사용하면 자체 웹후크를 설정할 필요 없이 AEM 이벤트를 받을 수 있습니다. 이 Adobe 제공 웹후크는 웹 응용 프로그램을 빌드하고 배포하는 데 도움이 되는 웹 기반 환경을 제공하는 것으로 알려진 플랫폼인 [Glitch](https://glitch.com/)에서 호스팅됩니다. 그러나 원하는 경우 자체 웹후크를 사용하는 옵션도 사용할 수 있습니다.
 

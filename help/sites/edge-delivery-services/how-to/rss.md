@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Edge Delivery Services Sidekick을 사용자 지정하는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425725/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438006/?learn=on&captions=kor)

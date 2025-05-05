@@ -28,7 +28,7 @@ AEM Forms 데이터 통합을 사용하면 서로 다른 데이터 소스를 구
 
 이 비디오는 AEM Forms이 백엔드 데이터 소스로서 Microsoft Dynamics과 협력하여 대화형 맞춤형 커뮤니케이션을 제공하는 방법을 보여 주는 워크플로우를 안내합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/20971?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34682?quality=12&learn=on&captions=kor)
 
 >[!NOTE]
 >

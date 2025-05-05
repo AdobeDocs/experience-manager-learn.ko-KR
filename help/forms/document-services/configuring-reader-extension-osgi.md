@@ -37,7 +37,7 @@ Reader 확장 자격 증명은 fd-service 사용자와 연결됩니다. fd-servi
 
 비디오의 지침에 따라 fd-service 사용자에게 자격 증명을 추가하십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/335849?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447294?quality=12&learn=on&captions=kor)
 
 
 pfx 파일의 세부 사항을 나열하는 명령은 입니다. 다음 명령은 사용자가 pfx 파일 과 동일한 디렉터리에 있다고 가정합니다.

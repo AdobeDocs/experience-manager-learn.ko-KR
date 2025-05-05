@@ -22,4 +22,4 @@ ht-degree: 0%
 
 AEM을 통해 콘텐츠 조각 변형 내의 RTE 필드를 손쉽게 비교하고 동기화하는 방법에 대해 알아봅니다. 이러한 변형을 비교 및 동기화하면 콘텐츠 조각을 사용하는 모든 채널에서 일관된 메시지를 보장할 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3419314/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437555/?learn=on&captions=kor)

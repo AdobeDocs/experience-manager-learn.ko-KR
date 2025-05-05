@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # AEM SDK 원격 디버깅
 
->[!VIDEO](https://video.tv.adobe.com/v/34338?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38164?quality=12&learn=on&captions=kor)
 
 AEM SDK의 로컬 빠른 시작을 사용하면 IDE에서 원격 Java 디버깅을 사용할 수 있으므로 AEM에서 라이브 코드 실행을 단계별로 진행하여 정확한 실행 흐름을 파악할 수 있습니다.
 

@@ -23,4 +23,4 @@ ht-degree: 0%
 
 AEM Forms Designer의 디자이너 보기에 대한 짧은 비디오
 
->[!VIDEO](https://video.tv.adobe.com/v/3427615/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3436824/?learn=on&captions=kor)

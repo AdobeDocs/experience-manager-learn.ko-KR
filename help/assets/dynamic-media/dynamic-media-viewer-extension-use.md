@@ -21,7 +21,7 @@ ht-degree: 1%
 
 Dynamic Media 및 Adobe Analytics을 사용하는 고객의 경우 이제 Dynamic Media 뷰어 확장 기능을 사용하여 웹 사이트에서 Dynamic Media 뷰어의 사용을 추적할 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/29308?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32897?quality=12&learn=on&captions=kor)
 
 >[!NOTE]
 >

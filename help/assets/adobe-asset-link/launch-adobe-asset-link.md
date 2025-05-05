@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Adobe Asset Link는 콘텐츠 작성 프로세스에서 광고 팀과 마케터 간의 협업을 강화합니다. 가장 익숙한 Creative Cloud 데스크탑 앱을 종료하지 않고도 Adobe Experience Manager Assets(AEM Assets)에 저장된 컨텐츠에 액세스할 수 있습니다. Creative Cloud 데스크탑 애플리케이션에서 Adobe Asset Link 패널을 시작하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/33733?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38682?quality=12&learn=on&captions=kor)

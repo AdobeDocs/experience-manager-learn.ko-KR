@@ -23,4 +23,4 @@ ht-degree: 0%
 
 적응형 양식 제출 시 Power Automate 흐름을 호출합니다. 다음 비디오에서는 Forms CS를 구성하고 Microsoft Power Automate와 통합하는 데 필요한 단계를 보여줍니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/345675?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3412133?quality=12&learn=on&captions=kor)

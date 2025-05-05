@@ -21,7 +21,7 @@ ht-degree: 1%
 
 AEM 6.4.2는 사용자가 AEM에서 직접 Adobe Stock 에셋을 검색, 미리보기, 저장 및 라이선스를 제공할 수 있습니다. 이제 조직은 Adobe Stock 엔터프라이즈 플랜을 AEM Assets과 통합하여 AEM의 강력한 자산 관리 기능을 통해 라이선스가 있는 자산을 이제 귀사의 광고 및 마케팅 프로젝트에 폭넓게 사용할 수 있도록 할 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/24678?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35634?quality=12&learn=on&captions=kor)
 
 >[!NOTE]
 >
@@ -67,7 +67,7 @@ Adobe Stock 및 AEM Assets 통합을 통해 콘텐츠 작성자와 마케터는 
 
 AEM 6.4.2는 사용자가 AEM에서 직접 Adobe Stock 에셋을 검색, 미리보기, 저장 및 라이선스를 제공할 수 있습니다. 이 비디오에서는 Adobe I/O 콘솔을 사용하여 AEM Assets으로 Adobe Stocks를 설정하는 방법에 대해 간략하게 설명합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/25043?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/329654?quality=12&learn=on&captions=kor)
 
 >[!NOTE]
 >

@@ -31,4 +31,4 @@ ht-degree: 1%
 + 버전 에셋
 + 자산 자동 게시
 
->[!VIDEO](https://video.tv.adobe.com/v/337575?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3454302?quality=12&learn=on&captions=kor)

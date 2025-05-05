@@ -20,7 +20,7 @@ ht-degree: 0%
 
 AEM 적응형 Forms과 함께 CAPTCHA 추가 및 사용
 
->[!VIDEO](https://video.tv.adobe.com/v/18336?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34676?quality=12&learn=on&captions=kor)
 
 *이 비디오에서는 기본 제공 AEM CAPTCHA 서비스와 Google의 reCAPTCHA 서비스를 모두 사용하여 AEM 적응형 양식에 CAPTCHA를 추가하는 과정을 안내합니다.*
 

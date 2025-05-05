@@ -22,4 +22,4 @@ ht-degree: 0%
 
 구성 요소 수준에서 Live Copy 와 블루프린트 간 상속을 관리하는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/36678?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41602?quality=12&learn=on&captions=kor)

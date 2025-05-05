@@ -23,4 +23,4 @@ ht-degree: 11%
 
 AEM에서 에셋 버전을 만들고 유지 관리하는 방법을 살펴봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/32052?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37147?quality=12&learn=on&captions=kor)

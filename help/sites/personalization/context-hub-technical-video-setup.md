@@ -20,7 +20,7 @@ ht-degree: 2%
 
 ContextHub는 컨텍스트 데이터를 저장, 조작 및 표시하기 위한 프레임워크입니다. ContextHub Javascript API를 사용하면 저장소에 액세스하여 데이터를 필요에 따라 작성, 업데이트 및 삭제할 수 있습니다. 따라서 ContextHub는 페이지의 데이터 계층을 나타냅니다. 이 페이지에서는 AEM 사이트 페이지에 Context Hub를 추가하는 방법에 대해 설명합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/23765?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34820?quality=12&learn=on&captions=kor)
 
 >[!NOTE]
 >

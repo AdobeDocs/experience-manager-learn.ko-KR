@@ -25,7 +25,7 @@ ht-degree: 0%
 
 AEM Publish에 대한 다중 원본 액세스가 필요한 경우 [이 설명서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=ko#dispatcher-configuration)를 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/18837?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33348?quality=12&learn=on&captions=kor)
 
 이 비디오에서:
 

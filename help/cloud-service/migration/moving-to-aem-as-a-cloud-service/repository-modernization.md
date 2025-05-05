@@ -21,7 +21,7 @@ ht-degree: 0%
 
 저장소 현대화, 변경 가능한 콘텐츠 및 변경 불가능한 콘텐츠, 패키지 구조 및 저장소 현대화 CLI 도구에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/336958?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3454799?quality=12&learn=on&captions=kor)
 
 ## 저장소 현대화 도구
 

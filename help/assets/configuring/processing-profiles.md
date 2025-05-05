@@ -23,4 +23,4 @@ ht-degree: 0%
 
 처리 프로필은 AEM as a Cloud Service에서 자산에 대해 만들 변환을 정의합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/35597?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/40084?quality=12&learn=on&captions=kor)

@@ -25,4 +25,4 @@ ht-degree: 1%
 
 [AEM Assets Sidekick 플러그인](https://www.hlx.live/developer/configuring-aem-assets-sidekick-plugin)을 사용하여 관리 자산을 Edge Delivery Services을 통해 제공되는 영향력이 큰 경험에 통합하는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3424615/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3435829/?learn=on&captions=kor)

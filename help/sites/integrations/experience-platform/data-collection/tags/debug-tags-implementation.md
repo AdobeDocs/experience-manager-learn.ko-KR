@@ -24,7 +24,7 @@ ht-degree: 1%
 
 Tags 구현을 디버깅하는 데 사용되는 일반적인 도구 및 기술에 대한 소개입니다. 브라우저의 개발자 콘솔 및 Experience Platform 디버거 확장을 사용하여 Tags 구현의 주요 측면을 식별하고 해결하는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/38567?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327407?quality=12&learn=on&captions=kor)
 
 ## Satellite 개체를 통한 클라이언트측 디버깅
 

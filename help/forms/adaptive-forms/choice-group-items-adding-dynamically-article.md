@@ -67,7 +67,7 @@ else
 
 **규칙 편집기를 사용하여 항목 추가**
 
->[!VIDEO](https://video.tv.adobe.com/v/26847?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36242?quality=12&learn=on&captions=kor)
 
 **코드 편집기를 사용하여 항목 추가**
 

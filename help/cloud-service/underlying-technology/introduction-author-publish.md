@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Adobe Experience Manager 아키텍처의 일부로 작성자 및 게시 계층을 소개합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/32033?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37046?quality=12&learn=on&captions=kor)

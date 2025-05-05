@@ -22,7 +22,7 @@ AEM의 강력한 번역 프레임워크를 통해 지원되는 번역 공급업�
 
 ## AEM 6.5의 번역 개선 사항
 
->[!VIDEO](https://video.tv.adobe.com/v/27405?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34360?quality=12&learn=on&captions=kor)
 
 AEM 6.5 번역 개선 사항은 다음과 같습니다.
 
@@ -36,7 +36,7 @@ AEM 6.5 번역 개선 사항은 다음과 같습니다.
 
 ## AEM 6.4의 번역 개선 사항
 
->[!VIDEO](https://video.tv.adobe.com/v/21309?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/30943?quality=12&learn=on&captions=kor)
 
 이제 작성자가 사이트 관리자 또는 프로젝트 관리자에서 직접 다국어 번역 프로젝트를 빠르고 쉽게 만들고, 이러한 프로젝트를 설정하여 론치를 자동으로 홍보하고, 자동화를 위한 예약까지 설정할 수 있습니다.
 

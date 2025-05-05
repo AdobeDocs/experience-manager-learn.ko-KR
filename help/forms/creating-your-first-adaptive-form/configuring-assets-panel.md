@@ -23,10 +23,10 @@ Assets 패널에 대한 아코디언 레이아웃을 구성합니다.아코디�
 
 **Assets 패널 구성**
 
->[!VIDEO](https://video.tv.adobe.com/v/22200?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326889?quality=12&learn=on&captions=kor)
 
 **요약 제목 설정**
->[!VIDEO](https://video.tv.adobe.com/v/28387?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33083?quality=12&learn=on&captions=kor)
 
 ## 다음 단계
 

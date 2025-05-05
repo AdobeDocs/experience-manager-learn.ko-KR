@@ -23,6 +23,6 @@ ht-degree: 2%
 
 AEM Author에서 AEM Publish로 에셋 및 해당 표현물을 게시하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/330932?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/344743?quality=12&learn=on&captions=kor)
 
 _자산을 게시하기 전에 AEM Assets 배포에 AEM 게시 서비스 라이선스가 있는지 확인하십시오._

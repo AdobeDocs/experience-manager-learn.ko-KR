@@ -22,4 +22,4 @@ ht-degree: 0%
 
 AEM Assets Dynamic Media의 DASH 적응형 스트리밍 프로토콜을 사용하여 제공된 비디오가 사용 가능한 대역폭에 맞게 조정되고 원활한 재생 환경이 보장되는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429072/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3443624/?learn=on&captions=kor)

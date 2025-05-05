@@ -190,7 +190,7 @@ Adobe Experience Platform Debugger [Chrome](https://chrome.google.com/webstore/d
 + Platform Web SDK 라이브러리 버전, 데이터 스트림 ID
 + Experience Platform Web SDK에서 `events` 부분으로 XDM 개체
 
->[!VIDEO](https://video.tv.adobe.com/v/3418897?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3454505?quality=12&learn=on&captions=kor)
 
 ## 데이터 세트 만들기 - Experience Platform
 

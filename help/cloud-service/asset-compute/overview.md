@@ -27,7 +27,7 @@ AEM 6.x 사용자 지정 AEM Workflow 프로세스를 사용하여 에셋 렌디
 
 ## 수행할 작업
 
->[!VIDEO](https://video.tv.adobe.com/v/40965?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3410118?quality=12&learn=on&captions=kor)
 
 이 튜토리얼에서는 원본 에셋을 원으로 자르고 구성 가능한 대비와 밝기를 적용하는 간단한 Asset Compute 작업자를 만드는 과정을 안내합니다. 작업자 자체는 기본이지만 이 자습서에서는 이 작업자를 사용하여 AEM as a Cloud Service과 함께 사용할 사용자 지정 Asset Compute 작업자를 만들고, 개발하고, 배포하는 방법을 살펴봅니다.
 

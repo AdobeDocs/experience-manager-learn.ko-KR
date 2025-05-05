@@ -25,4 +25,4 @@ ht-degree: 0%
 
 문서 작성에서 벌크 메타데이터를 처리하는 방법과 작성자가 기술적 전문 지식 없이 벌크 메타데이터를 업데이트하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425705/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438426/?learn=on&captions=kor)

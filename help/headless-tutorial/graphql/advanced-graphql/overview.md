@@ -45,7 +45,7 @@ AEM as a Cloud Service에 대한 [빠른 설정](../quick-setup/cloud-service.md
 
 다음 비디오에서는 이 자습서에서 다루는 개념에 대한 높은 수준의 개요를 제공합니다. 이 자습서에는 고급 데이터 유형이 포함된 콘텐츠 조각 모델을 정의하고, 콘텐츠 조각을 중첩하며, AEM에서 GraphQL 쿼리를 지속하는 작업이 포함되어 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/340035?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3446134?quality=12&learn=on&captions=kor)
 
 >[!CAUTION]
 >

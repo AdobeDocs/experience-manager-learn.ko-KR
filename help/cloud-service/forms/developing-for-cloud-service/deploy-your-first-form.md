@@ -29,7 +29,7 @@ FormTemplates와 BankingApplication이라는 두 개의 폴더를 만드십시�
 
 IntelliJ 및 보고 도구를 사용하여 이러한 자산을 AEM 프로젝트에 동기화하려면 다음 비디오를 시청하십시오
 
->[!VIDEO](https://video.tv.adobe.com/v/336937?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448629?quality=12&learn=on&captions=kor)
 
 ## 다음 단계
 

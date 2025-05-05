@@ -43,7 +43,7 @@ ht-degree: 1%
 
 다음 비디오에서는 콘텐츠 조각 모델에 대해 간략히 소개하고 이 자습서에서 해당 모델을 사용하는 방법을 제공합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/340037?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449526?quality=12&learn=on&captions=kor)
 
 ## 콘텐츠 조각 모델 만들기 {#create-models}
 

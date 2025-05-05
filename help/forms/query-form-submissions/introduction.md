@@ -22,7 +22,7 @@ ht-degree: 1%
 
 다음 비디오에서는 사용 사례를 설명합니다
 
->[!VIDEO](https://video.tv.adobe.com/v/3427096?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3443503?learn=on&captions=kor)
 
 
 이 자습서를 따르려면 다음에 액세스할 수 있는 것이 좋습니다

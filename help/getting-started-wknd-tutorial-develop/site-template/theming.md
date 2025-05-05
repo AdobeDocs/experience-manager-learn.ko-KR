@@ -39,7 +39,7 @@ ht-degree: 1%
 
 다음으로, 사이트가 WKND 브랜드의 모양과 느낌과 일치하도록 테마 소스를 변경합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/332918?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3453627?quality=12&learn=on&captions=kor)
 
 비디오의 높은 수준 단계:
 

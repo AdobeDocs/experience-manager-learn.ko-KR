@@ -27,4 +27,4 @@ ht-degree: 45%
 
 코드에 있는 컴파일 오류와 이 코드가 AEM as a Cloud Service의 모범 사례를 따르는지 여부를 살펴봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/330540?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345722?quality=12&learn=on&captions=kor)

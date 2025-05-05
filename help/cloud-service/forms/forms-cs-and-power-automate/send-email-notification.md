@@ -23,4 +23,4 @@ ht-degree: 0%
 
 양식 제출에서 필드 값을 추출하여 Microsoft Power Automate를 사용하여 적응형 양식 제출자에게 이메일 알림을 보냅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/345957?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3431482?quality=12&learn=on&captions=kor)

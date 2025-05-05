@@ -23,4 +23,4 @@ ht-degree: 0%
 # 소개 비디오
 
 
->[!VIDEO](https://video.tv.adobe.com/v/332571?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3411778?quality=12&learn=on&captions=kor)

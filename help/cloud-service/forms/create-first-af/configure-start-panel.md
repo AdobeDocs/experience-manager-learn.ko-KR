@@ -23,4 +23,4 @@ ht-degree: 0%
 
 리치 텍스트 편집기를 사용하여 정적 텍스트 구성 요소에서 텍스트 스타일을 지정합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/332235?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3440121?quality=12&learn=on&captions=kor)

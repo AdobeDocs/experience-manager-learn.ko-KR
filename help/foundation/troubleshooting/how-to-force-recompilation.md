@@ -22,4 +22,4 @@ ht-degree: 0%
 
 *이 비디오는 모든 Sling 스크립트 jsps, java 및 sightly를 다시 컴파일하는 단계를 안내합니다.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335464?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418260?quality=12&learn=on&captions=kor)

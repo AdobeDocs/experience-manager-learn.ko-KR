@@ -27,7 +27,7 @@ ht-degree: 40%
 
 Adobe IMS 제품 프로필은 사용자가 AEM Author 서비스에 로그인할 수 있는 권한을 부여하며, 사용자가 멤버로 속한 제품 프로필에 따라 액세스 기준을 제공합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/39156?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327579?quality=12&learn=on&captions=kor)
 
 ## 추가 리소스
 

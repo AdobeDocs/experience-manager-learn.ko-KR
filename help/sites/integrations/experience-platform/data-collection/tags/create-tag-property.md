@@ -24,7 +24,7 @@ ht-degree: 0%
 
 Adobe Experience Manager과 통합하기 위한 최소 구성으로 태그 속성을 만드는 방법을 알아봅니다. 사용자는 Tag UI에 대해 소개하고 확장, 규칙 및 게시 워크플로우에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/38553?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327452?quality=12&learn=on&captions=kor)
 
 ## 태그 속성 만들기
 

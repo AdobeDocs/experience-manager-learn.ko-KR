@@ -22,7 +22,7 @@ ht-degree: 6%
 
 Adobe 클라이언트 데이터 레이어는 웹 페이지에서 방문자의 경험에 대한 데이터를 수집 및 저장한 다음 이 데이터에 쉽게 액세스할 수 있는 표준 방법을 제공합니다. Adobe 클라이언트 데이터 레이어는 독립적인 플랫폼이지만 핵심 구성 요소에 완전히 통합되어 AEM에 사용됩니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/41195?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330114?quality=12&learn=on&captions=kor)
 
 >[!NOTE]
 >

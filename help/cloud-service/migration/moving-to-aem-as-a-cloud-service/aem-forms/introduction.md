@@ -21,4 +21,4 @@ ht-degree: 0%
 
 AEM Forms as a Cloud Service에서 지원하는 사용 사례 및 기능에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/336968?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3443374?quality=12&learn=on&captions=kor)

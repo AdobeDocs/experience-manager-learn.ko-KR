@@ -21,4 +21,4 @@ ht-degree: 0%
 
 AEM Maven 프로젝트의 구조 및 하위 프로젝트와 이들 프로젝트의 용도에 대해 간략히 살펴봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/334280?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417167?quality=12&learn=on&captions=kor)

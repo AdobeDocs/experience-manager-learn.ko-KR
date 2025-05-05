@@ -341,7 +341,7 @@ AEM UI 확장성 코드 예제 컬렉션을 시작합니다! 이 리소스는 Ad
       <div class="card-image">
         <figure class="image is-16by9">
           <a href="./examples/editor-custom-field.md" title="사용자 정의 필드" tabindex="-1">
-            <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3427585?format=jpeg" alt="사용자 정의 필드">
+            <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3437641?format=jpeg&captions=kor" alt="사용자 정의 필드">
           </a>
         </figure>
       </div>

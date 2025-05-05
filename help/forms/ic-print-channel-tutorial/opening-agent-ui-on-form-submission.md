@@ -26,7 +26,7 @@ ht-degree: 0%
 
 다음 비디오는 사용 사례를 보여 줍니다
 
->[!VIDEO](https://video.tv.adobe.com/v/40122?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/328993?quality=12&learn=on&captions=kor)
 
 ```java
 String accountNumber = request.getParameter("accountnumber"))

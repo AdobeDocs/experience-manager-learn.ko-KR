@@ -25,4 +25,4 @@ ht-degree: 0%
 
 AEM 문서 작성을 사용하여 작성된 페이지의 이미지에 대체 텍스트를 추가하는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425721/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438682/?learn=on&captions=kor)

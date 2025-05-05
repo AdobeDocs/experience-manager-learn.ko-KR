@@ -21,4 +21,4 @@ ht-degree: 0%
 
 구성 가능한 이미지 자산인 Dynamic Media 템플릿, 모범 사례 및 개인화된 콘텐츠 제공에 대한 수요를 충족하는 방법을 살펴봅니다. 템플릿을 만들고 관리하는 방법 및 이를 사용하여 규모에 맞게 개인화된 콘텐츠를 제공하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3451727/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3451734/?learn=on&enablevpops&captions=kor)

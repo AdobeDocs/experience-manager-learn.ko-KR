@@ -24,7 +24,7 @@ ht-degree: 1%
 
 AEM 경험 조각 오퍼를 사용하여 Adobe Target 활동을 만들고 테스트하는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/41246?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/328968?quality=12&learn=on&captions=kor)
 
 ## 사전 요구 사항
 

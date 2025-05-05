@@ -22,4 +22,4 @@ ht-degree: 0%
 
 사이트 전체의 상속을 보거나 관리하거나 라이브 카피 개요 콘솔을 사용하여 롤아웃 작업을 수행하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/36680?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326738?quality=12&learn=on&captions=kor)

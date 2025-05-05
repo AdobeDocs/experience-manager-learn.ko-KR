@@ -21,7 +21,7 @@ ht-degree: 2%
 
 Amol Anand가 방문하여 Adobe App Builder과의 통합 및 사용 위치와 시기에 대한 개요를 제공합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/342375?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/346484?quality=12&learn=on&captions=kor)
 
 ## 이 비디오에서 다루는 콘텐츠
 

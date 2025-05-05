@@ -41,7 +41,7 @@ ht-degree: 2%
 
 ## 표준 사이트 템플릿 UI 키트 {#standard-site-template-uikit}
 
->[!VIDEO](https://video.tv.adobe.com/v/338680?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448437?quality=12&learn=on&captions=kor)
 
 높은 수준의 단계:
 
@@ -51,7 +51,7 @@ ht-degree: 2%
 
 ## WKND UI 키트 {#wknd-ui-kit}
 
->[!VIDEO](https://video.tv.adobe.com/v/30214?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36124?quality=12&learn=on&captions=kor)
 
 높은 수준의 단계:
 

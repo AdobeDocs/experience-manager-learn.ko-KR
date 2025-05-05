@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## 스타일 시스템에 대한 코드 작성 방법 이해 {#understanding-how-to-code-for-the-style-system}
 
->[!VIDEO](https://video.tv.adobe.com/v/21538?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35605?quality=12&learn=on&captions=kor)
 
 제공된 AEM 패키지(**technical-review.sites.style-system-1.0.0.zip**)는 예제 제목 스타일, We.Retail 레이아웃 컨테이너 및 제목 구성 요소에 대한 샘플 정책, 샘플 페이지를 설치합니다.
 

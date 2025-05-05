@@ -22,7 +22,7 @@ ht-degree: 1%
 
 AEM Forms 및 Sign 통합을 통해 기존 XDP 템플릿 활용
 
->[!VIDEO](https://video.tv.adobe.com/v/39705?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327807?quality=12&learn=on&captions=kor)
 
 이 비디오와 관련된 Assets은 다음 링크에서 다운로드할 수 있습니다
 

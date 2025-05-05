@@ -24,4 +24,4 @@ ht-degree: 0%
 
 AEM Forms 워크플로 구성 요소를 사용하여 워크플로 모델을 만듭니다. 상태 변수의 값을 기준으로 워크플로우를 분기하려면 Or-Split 구성 요소를 사용합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/332434?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3453198?quality=12&learn=on&captions=kor)

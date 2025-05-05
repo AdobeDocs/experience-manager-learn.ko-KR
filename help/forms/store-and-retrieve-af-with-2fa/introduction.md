@@ -31,7 +31,7 @@ ht-degree: 2%
 
 ## 사용 사례 데모
 
->[!VIDEO](https://video.tv.adobe.com/v/327122?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/346932?quality=12&learn=on&captions=kor)
 
 ## 사전 요구 사항
 

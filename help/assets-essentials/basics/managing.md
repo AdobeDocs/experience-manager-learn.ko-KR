@@ -22,4 +22,4 @@ ht-degree: 0%
 
 폴더 구조 만들기의 기본 사항, 이동, 복사 및 이름 바꾸기와 같은 기본 작업 및 컬렉션에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/335733?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3413853?quality=12&learn=on&captions=kor)

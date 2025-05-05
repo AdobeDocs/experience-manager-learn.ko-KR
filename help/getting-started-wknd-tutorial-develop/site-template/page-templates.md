@@ -49,7 +49,7 @@ ht-degree: 0%
 
 그런 다음 AEM에서 목차의 구조와 일치하는 새 템플릿을 만듭니다. 이 문제는 AEM의 로컬 인스턴스에서 발생합니다. 아래 비디오에 나와 있는 단계를 따르십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/332915?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3413001?quality=12&learn=on&captions=kor)
 
 다음 썸네일을 사용하여 템플릿을 식별(또는 자체 업로드!)할 수 있습니다.
 
@@ -66,7 +66,7 @@ ht-degree: 0%
 
 사이트 템플릿에서 머리글과 바닥글을 생성했습니다. 그런 다음, mockup과 일치하도록 경험 조각 을 업데이트합니다. 아래 비디오에 나와 있는 단계를 따르십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/332916?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447806?quality=12&learn=on&captions=kor)
 
 아래 비디오에 대한 높은 수준의 단계:
 
@@ -78,7 +78,7 @@ ht-degree: 0%
 
 그런 다음 잡지 기사 페이지 템플릿을 사용하여 새 페이지를 만듭니다. 사이트 모형과 일치하도록 페이지 콘텐츠를 작성합니다. 아래 비디오에 나와 있는 단계를 따르십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/332917?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343315?quality=12&learn=on&captions=kor)
 
 [제공된 텍스트](./assets/page-templates/la-skateparks-copy.txt)를 사용하여 문서 본문을 채우십시오.
 

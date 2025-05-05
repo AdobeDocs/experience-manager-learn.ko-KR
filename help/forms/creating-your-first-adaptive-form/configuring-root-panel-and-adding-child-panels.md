@@ -22,7 +22,7 @@ ht-degree: 2%
 루트 패널에 하위 패널을 추가합니다.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/28536?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326917?quality=12&learn=on&captions=kor)
 
 >[!NOTE]
 >하위 패널을 루트 패널에 추가할 때 **편집 모드에 있는지 확인하십시오. 편집 단추는 브라우저의 오른쪽 상단에 있습니다.**

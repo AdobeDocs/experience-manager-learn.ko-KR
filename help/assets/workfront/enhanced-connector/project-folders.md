@@ -29,4 +29,4 @@ ht-degree: 1%
 + 폴더 메타데이터 매핑
 + 폴더 메타데이터 상속
 
->[!VIDEO](https://video.tv.adobe.com/v/337586?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3454766?quality=12&learn=on&captions=kor)

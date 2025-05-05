@@ -20,4 +20,4 @@ ht-degree: 0%
 
 *이 비디오는 클러스터에 gemfire 로케이터를 설정하고 관련 구성을 수행하는 단계를 안내합니다.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335544?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417182?quality=12&learn=on&captions=kor)

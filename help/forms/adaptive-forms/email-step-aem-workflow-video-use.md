@@ -20,7 +20,7 @@ ht-degree: 0%
 
 이메일 보내기 단계는 AEM Forms 6.4에서 도입되었습니다. 이 단계를 사용하여 첨부 파일이 있거나 없는 이메일을 보낼 수 있는 비즈니스 프로세스 또는 워크플로우를 빌드할 수 있습니다. 다음 비디오는 이메일 구성 요소 보내기를 구성하는 단계를 안내합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/21499?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34815?quality=12&learn=on&captions=kor)
 
 이 문서의 일부로 다음 사용 사례를 소개합니다.
 

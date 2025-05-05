@@ -23,7 +23,7 @@ ht-degree: 16%
 
 이전 단계에서 만든 Swagger 파일을 사용하여 REST 지원 데이터 소스를 만듭니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/331755?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3411553?quality=12&learn=on&captions=kor)
 
 | 설정 | 값 |
 |---------------------|-----------------------------------------------------------------|

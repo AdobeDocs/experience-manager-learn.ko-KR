@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *이 비디오는 Oak 로그인 토큰 세션 만료를 설정하는 단계를 안내합니다.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335468?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418254?quality=12&learn=on&captions=kor)

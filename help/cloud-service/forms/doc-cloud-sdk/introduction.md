@@ -23,4 +23,4 @@ ht-degree: 2%
 
 Adobe Experience Manager Forms as a Cloud Service 및 Document Cloud API 통합을 위한 사용 사례를 소개합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/333241?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3413007?quality=12&learn=on&captions=kor)

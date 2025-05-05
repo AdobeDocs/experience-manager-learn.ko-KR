@@ -40,7 +40,7 @@ automated forms conversion 서비스를 사용하려면 다음이 필요합니�
 
 * 이 비디오에서는 로컬 AEM Forms 인스턴스를 Adobe 클라우드의 Automated forms conversion 서비스에 연결하는 데 필요한 단계에 대해 설명합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/39493?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327726?quality=12&learn=on&captions=kor)
 
 ## 다음 단계
 

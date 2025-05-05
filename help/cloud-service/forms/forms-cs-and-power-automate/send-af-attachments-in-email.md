@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Power Automate 워크플로에서 양식 첨부 파일을 추출하고 전자 메일로 첨부 파일을 보냅니다.
 다음 비디오에서는 제출된 데이터에서 첨부 파일을 형성하는 데 필요한 단계에 대해 설명합니다.
->[!VIDEO](https://video.tv.adobe.com/v/3409017?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3413031?quality=12&learn=on&captions=kor)
 
 다음은 JSON 스키마 구문 분석 단계에서 사용해야 하는 첨부 파일 개체 스키마입니다
 

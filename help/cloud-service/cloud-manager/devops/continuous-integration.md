@@ -27,4 +27,4 @@ ht-degree: 86%
 
 Adobe Cloud Manager를 사용하여 모범 사례와 지속적인 통합에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/330536?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345853?quality=12&learn=on&captions=kor)

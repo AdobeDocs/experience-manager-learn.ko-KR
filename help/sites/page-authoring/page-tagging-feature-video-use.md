@@ -24,4 +24,4 @@ ht-degree: 0%
 
 태깅을 사용하여 Adobe Experience Manager에서 웹 페이지를 유지 관리하고 구성하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/32150?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36821?quality=12&learn=on&captions=kor)

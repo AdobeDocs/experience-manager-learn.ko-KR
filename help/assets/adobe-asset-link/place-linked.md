@@ -23,4 +23,4 @@ ht-degree: 0%
 
 연결 배치 작업을 사용하여 AEM Assets에서 자산을 사용하는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/34839?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38611?quality=12&learn=on&captions=kor)

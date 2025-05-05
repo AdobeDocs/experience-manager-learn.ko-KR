@@ -31,10 +31,10 @@ ht-degree: 53%
 
 [CI/CD 프로덕션 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/pipelines/configuring-production-pipelines.html?lang=ko) 구성은 파이프라인을 시작하는 트리거, 프로덕션 배포를 제어하는 매개 변수 및 성능 테스트 매개 변수를 정의합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/26314?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327606?quality=12&learn=on&captions=kor)
 
 ### 파이프라인 실행
 
 [CI/CD 프로덕션 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=ko)을(를) 사용하여 스테이지를 통해 코드를 빌드하고 프로덕션 환경에 배포하여 값까지의 시간을 단축합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/26317?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327613?quality=12&learn=on&captions=kor)

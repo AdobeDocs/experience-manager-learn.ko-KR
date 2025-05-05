@@ -26,7 +26,7 @@ ht-degree: 0%
 
 AEM as a Cloud Service용 Adobe Asset Link 설정 방법, 사용자 자격 및 AEM as a Cloud Service 구성 방법, Adobe Asset Link 설치 및 사용 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/338824?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343261?quality=12&learn=on&captions=kor)
 
 위의 비디오에 표시되지 않으면 Creative Cloud 패키지 관리자의 __관리 패키지__ 옵션을 통해 Adobe 자산 링크를 추가할 수 있습니다.
 
@@ -37,11 +37,11 @@ AEM as a Cloud Service용 Adobe Asset Link 설정 방법, 사용자 자격 및 A
 
 Adobe Managed Services 또는 온프레미스에서 실행되는 AEM 6용 Adobe Asset Link를 설정하는 방법, 사용자 자격 및 AEM as a Cloud Service을 구성하는 방법, Adobe Asset Link를 설치하고 사용하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/338823?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3434116?quality=12&learn=on&captions=kor)
 
 
 ## 도메인 트러스트에 대한 Asset Link 설정
 
 도메인 트러스트가 무엇인지, Adobe Asset Link를 Experience Manager Assets과 함께 사용하기 위한 의미가 무엇인지, 도메인 트러스트를 설정하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/338825?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3454153?quality=12&learn=on&captions=kor)

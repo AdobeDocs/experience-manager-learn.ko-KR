@@ -25,7 +25,7 @@ ht-degree: 0%
 
 AEM 컨텐츠 조각을 Adobe Target으로 내보내고 이를 사용하여 AEM Web SDK의 alloy.js를 사용하여 Headless 경험을 개인화하여 Adobe Target과 Adobe Experience Platform Headless를 통합하는 방법을 알아봅니다. [React WKND 앱](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html?lang=ko-KR)을 사용하여 콘텐츠 조각 오퍼를 사용하는 개인화된 Target 활동을 경험에 추가하여 WKND 모험을 홍보하는 방법을 탐색합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3416585/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3422153/?quality=12&learn=on&captions=kor)
 
 이 자습서에서는 AEM 및 Adobe Target 설정과 관련된 단계를 다룹니다.
 
@@ -50,7 +50,7 @@ Adobe Target Cloud Service은 컨텐츠 조각을 Adobe Target으로 내보낼 �
 
 Adobe Target Cloud Service을 만드는 방법에 대한 단계별 지침은 [설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html?lang=ko)를 검토하십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/3416499/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3422651/?quality=12&learn=on&captions=kor)
 
 
 ## 에셋 폴더 구성{#configure-asset-folders}
@@ -71,7 +71,7 @@ Adobe Target Cloud Service을 만드는 방법에 대한 단계별 지침은 [�
 
 <br/>
 
->[!VIDEO](https://video.tv.adobe.com/v/3416504/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3422659/?quality=12&learn=on&captions=kor)
 
 ## AEM Target 통합 권한{#permission}
 
@@ -90,7 +90,7 @@ Adobe Target Cloud Service을 만드는 방법에 대한 단계별 지침은 [�
 
 <br/>
 
->[!VIDEO](https://video.tv.adobe.com/v/3416505/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441980/?quality=12&learn=on&captions=kor)
 
 ## Target으로 콘텐츠 조각 내보내기{#export-content-fragments}
 
@@ -121,7 +121,7 @@ Adobe Target Cloud Service을 만드는 방법에 대한 단계별 지침은 [�
 
 <br/>
 
->[!VIDEO](https://video.tv.adobe.com/v/3416506/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3422675/?quality=12&learn=on&captions=kor)
 
 ## 콘텐츠 조각 오퍼를 사용한 Target 활동{#activity}
 
@@ -160,7 +160,7 @@ Adobe Target에서는 컨텐츠 조각 오퍼 JSON을 컨텐츠로 사용하는 
 
 <br/>
 
->[!VIDEO](https://video.tv.adobe.com/v/3416507/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3444788/?quality=12&learn=on&captions=kor)
 
 ## Experience Platform 데이터 스트림 ID{#datastream-id}
 
@@ -190,7 +190,7 @@ AEM Headless 앱이 [Adobe Experience Platform Web SDK](https://experienceleague
 
 <br/>
 
->[!VIDEO](https://video.tv.adobe.com/v/3416500/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3422178/?quality=12&learn=on&captions=kor)
 
 ## AEM Headless 앱에 개인화 추가{#code}
 

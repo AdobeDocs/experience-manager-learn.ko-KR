@@ -23,7 +23,7 @@ ht-degree: 0%
 
 AEM Assets은 직관적인 사용자 경험을 통해 대규모 저장소에 맞게 확장되는 엔터프라이즈 수준 보고 프레임워크를 제공합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/22140?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3410284?quality=12&learn=on&captions=kor)
 
 
 >[!IMPORTANT]

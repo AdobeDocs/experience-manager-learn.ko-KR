@@ -24,7 +24,7 @@ ht-degree: 3%
 
 AEM 경험 조각을 Adobe Target 오퍼로 내보내는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/41245?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/328976?quality=12&learn=on&captions=kor)
 
 ## 다음 단계
 

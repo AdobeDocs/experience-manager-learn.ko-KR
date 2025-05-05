@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Adobe에서 Edge Delivery Services 문서 작성의 변형 생성을 위한 신뢰 및 개인 정보를 처리하는 방법을 살펴봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429060/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3440021/?learn=on&captions=kor)

@@ -21,7 +21,7 @@ ht-degree: 0%
 
 AEM Dynamic Media 뷰어 개선 사항을 통해 AEM 작성자는 웹 사이트 사용자에게 에셋을 제공하는 방법을 정의하고 맞춤화할 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/17783?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35600?quality=12&learn=on&captions=kor)
 
 몇 가지 주요 개선 사항은 다음과 같습니다.
 

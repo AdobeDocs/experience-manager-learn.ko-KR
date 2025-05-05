@@ -23,4 +23,4 @@ ht-degree: 0%
 
 AEM Assets의 유사한 이미지 찾기 를 통해 요구 사항에 가장 적합한 이미지를 쉽게 찾는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3426796/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438484/?learn=on&captions=kor)

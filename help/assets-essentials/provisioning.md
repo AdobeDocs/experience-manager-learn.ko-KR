@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Cloud Manager을 사용하여 Assets Essentials를 배포하고 사용자 액세스를 프로비저닝하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/335952?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418816?quality=12&learn=on&captions=kor)

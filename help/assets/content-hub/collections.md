@@ -22,4 +22,4 @@ ht-degree: 0%
 
 AEM Assets Content Hub에서 컬렉션을 만들고 사용하여 에셋 액세스를 간소화하고 공동 리소스 공유를 촉진하여 다양한 프로젝트에서 효율적이고 체계적인 팀워크를 보장하는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3435687/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3445307/?learn=on&captions=kor)

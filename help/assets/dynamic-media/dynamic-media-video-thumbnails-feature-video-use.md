@@ -20,11 +20,11 @@ ht-degree: 0%
 
 AEM Assets 사용자 지정 비디오 썸네일을 사용하면 작성자가 생성된 썸네일 세트에서 적절한 썸네일을 선택할 수 있습니다. 비디오에 대해 생성된 썸네일 수는 손쉽게 맞춤화할 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/16467?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33666?quality=12&learn=on&captions=kor)
 
 ## 비디오 썸네일 사용자 지정
 
->[!VIDEO](https://video.tv.adobe.com/v/18867?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33671?quality=12&learn=on&captions=kor)
 
 >[!NOTE]
 >

@@ -21,4 +21,4 @@ ht-degree: 0%
 
 AEM Forms Workbench 사용자 인터페이스를 안내하는 짧은 비디오
 
->[!VIDEO](https://video.tv.adobe.com/v/3429493/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439810/?learn=on&captions=kor)

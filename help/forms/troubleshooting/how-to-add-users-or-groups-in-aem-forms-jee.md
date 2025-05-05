@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *이 비디오는 사용자 관리에서 사용자 및 그룹을 추가하는 과정을 안내합니다.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335485?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417658?quality=12&learn=on&captions=kor)

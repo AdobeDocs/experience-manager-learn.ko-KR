@@ -21,7 +21,7 @@ ht-degree: 2%
 
 AEM as a Cloud Service용 Cloud Manager에 대해 알아보고 Adobe Manage Services(AMS)의 AEM용 Cloud Manager과의 차이점에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/336961?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3453902?quality=12&learn=on&captions=kor)
 
 ## 실습 위주의 운동
 

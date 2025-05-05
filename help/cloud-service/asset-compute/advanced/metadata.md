@@ -30,7 +30,7 @@ ht-degree: 0%
 
 ## 수행할 작업
 
->[!VIDEO](https://video.tv.adobe.com/v/327313?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437018?quality=12&learn=on&captions=kor)
 
 이 자습서에서는 이미지 에셋에서 가장 일반적으로 사용되는 색상을 파생하고 색상 이름을 AEM의 에셋 메타데이터에 다시 작성하는 Asset Compute 메타데이터 작업자를 만듭니다. 작업자 자체는 기본이지만 이 자습서에서는 이 작업자를 사용하여 Asset Compute 작업자를 사용하여 AEM as a Cloud Service의 에셋에 메타데이터를 다시 쓰는 방법을 살펴봅니다.
 

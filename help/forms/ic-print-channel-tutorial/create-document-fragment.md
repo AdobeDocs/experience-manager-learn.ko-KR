@@ -23,7 +23,7 @@ ht-degree: 0%
 
 이 부분에서는 수신자 이름과 주소를 포함하는 문서 조각을 만듭니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/22350?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34859?quality=12&learn=on&captions=kor)
 
 문서 조각에는 대화형 통신 문서의 텍스트 콘텐츠가 들어 있습니다. 이 텍스트 콘텐츠는 정적 텍스트이거나 기본 데이터 모델 요소 값에서 삽입할 수 있습니다. 예를 들어 **Dear _{name}_**&#x200B;입니다. 여기서 Dear는 정적 텍스트이고 name은 양식 데이터 모델 요소 이름입니다. 런타임 시 이름 요소의 값에 따라&#x200B;**Dear Gloria Rios**&#x200B;또는&#x200B;**Dear John Jacobs**&#x200B;로 확인됩니다.
 

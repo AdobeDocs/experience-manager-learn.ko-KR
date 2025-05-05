@@ -21,4 +21,4 @@ ht-degree: 0%
 
 AEM Forms as a Cloud Service이 디지털 등록 사용 사례를 지원하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/336966?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3455141?quality=12&learn=on&captions=kor)

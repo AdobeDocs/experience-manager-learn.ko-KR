@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Workbench에서 간단한 양식 프로세스를 만드는 과정을 안내하는 짧은 비디오
 
->[!VIDEO](https://video.tv.adobe.com/v/3429494/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3440232/?learn=on&captions=kor)

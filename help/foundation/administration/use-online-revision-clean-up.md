@@ -20,7 +20,7 @@ ht-degree: 0%
 
 빈번한 오프라인 개정 정리의 필요성을 완화하는 온라인 개정 정리에 대한 간략한 소개입니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/17004?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/30472?quality=12&learn=on&captions=kor)
 
 ## 지원 자료
 

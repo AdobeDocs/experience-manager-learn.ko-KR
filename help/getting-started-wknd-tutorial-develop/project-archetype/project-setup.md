@@ -36,7 +36,7 @@ ht-degree: 1%
 
 ## 빌드할 항목 {#what-build}
 
->[!VIDEO](https://video.tv.adobe.com/v/30152?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36108?quality=12&learn=on&captions=kor)
 
 이 장에서는 [Adobe Experience Manager Project Archetype](https://github.com/adobe/aem-project-archetype)을(를) 사용하여 새 AEM 프로젝트를 생성합니다. AEM 프로젝트에는 Sites 구현에 사용되는 전체 코드, 콘텐츠 및 구성이 포함됩니다. 이 장에서 생성된 프로젝트는 WKND Site 구현의 기반 역할을 하며 향후 장에서 빌드됩니다.
 

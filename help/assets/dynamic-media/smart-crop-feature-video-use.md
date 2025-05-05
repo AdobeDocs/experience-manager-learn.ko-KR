@@ -21,7 +21,7 @@ ht-degree: 0%
 
 스마트 자르기는 Adobe Sensei을 사용하여 반응형 디자인을 위한 콘텐츠 자르기에 드는 시간과 비용을 없애줍니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/21519?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35624?quality=12&learn=on&captions=kor)
 
 >[!NOTE]
 >

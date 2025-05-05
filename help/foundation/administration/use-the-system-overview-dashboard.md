@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Adobe Experience Manager(AEM) [!UICONTROL 시스템 개요]에서는 단일 대시보드에서 AEM 인스턴스의 구성, 하드웨어 및 상태를 전체적으로 자세히 볼 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/21340?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35604?quality=12&learn=on&captions=kor)
 
 1. 시스템 개요는 **AEM 시작** > **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 시스템 개요]**&#x200B;에서 액세스할 수 있습니다.
 

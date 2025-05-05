@@ -21,4 +21,4 @@ ht-degree: 0%
 
 비디오 파일이 Dynamic Media를 사용하여 AEM Assets에 업로드되면 폐쇄 캡션이 자동으로 생성됩니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3432627/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3446394/?learn=on&captions=kor)

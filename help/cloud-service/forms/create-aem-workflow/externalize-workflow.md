@@ -23,4 +23,4 @@ ht-degree: 0%
 
 AEM Forms CS에는 변수, 첨부 파일 등과 같은 워크플로 데이터를 외부 스토리지 계정에 저장할 수 있는 새로운 기능이 제공됩니다. 이 비디오에서는 워크플로 데이터를 Azure 스토리지에 저장하는 방법을 보여 줍니다
 
->[!VIDEO](https://video.tv.adobe.com/v/339610?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342968?quality=12&learn=on&captions=kor)

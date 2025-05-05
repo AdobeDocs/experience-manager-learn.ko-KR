@@ -20,7 +20,7 @@ ht-degree: 3%
 
 OSGi 서비스에서 ObjectClassDefinitions를 OSGi 구성 표현으로 만들고 지정하는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/335730?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417818?quality=12&learn=on&captions=kor)
 
 ## 리소스
 

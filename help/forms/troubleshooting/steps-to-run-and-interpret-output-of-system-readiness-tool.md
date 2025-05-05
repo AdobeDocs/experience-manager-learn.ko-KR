@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *이 비디오는 AEM Forms PDFG SRT(System Readiness Tool)의 출력을 실행하고 해석하는 과정을 안내합니다.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335543?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417237?quality=12&learn=on&captions=kor)

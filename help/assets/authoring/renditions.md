@@ -23,4 +23,4 @@ ht-degree: 7%
 
 AEM Assets의 렌디션과 이러한 렌디션을 미리 보는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/32047?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36973?quality=12&learn=on&captions=kor)

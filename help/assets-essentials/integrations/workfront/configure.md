@@ -26,4 +26,4 @@ ht-degree: 11%
 Adobe Workfront 및 Assets Essentials 통합을 구성하는 방법에 대해 알아봅니다.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/336254?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3423887?quality=12&learn=on&captions=kor)

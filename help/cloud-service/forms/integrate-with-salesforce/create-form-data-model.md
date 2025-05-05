@@ -23,4 +23,4 @@ ht-degree: 10%
 
 이전 단계에서 구성한 데이터 소스를 기반으로 양식 데이터 모델 만들기
 
->[!VIDEO](https://video.tv.adobe.com/v/331756?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3411547?quality=12&learn=on&captions=kor)

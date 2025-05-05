@@ -21,4 +21,4 @@ ht-degree: 10%
 
 메타데이터 Forms을 빠르고 쉽게 구성하여 AEM Assets에서 사용할 수 있는 에셋 메타데이터를 맞춤화하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3431686?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3452054?quality=12&learn=on&captions=kor)

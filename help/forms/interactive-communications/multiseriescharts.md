@@ -29,11 +29,11 @@ AEM Forms에서 다중 시리즈 차트를 만들려면 필요한 엔터티와 �
 
 ## 다중 계열 차트에 대한 양식 데이터 모델 만들기
 
->[!VIDEO](https://video.tv.adobe.com/v/26352?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33041?quality=12&learn=on&captions=kor)
 
 ### Line 시리즈 차트 구성
 
->[!VIDEO](https://video.tv.adobe.com/v/26353?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33046?quality=12&learn=on&captions=kor)
 
 시스템에서 테스트하려면 다음 단계를 따르십시오
 

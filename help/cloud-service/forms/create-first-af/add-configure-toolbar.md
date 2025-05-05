@@ -23,4 +23,4 @@ ht-degree: 0%
 
 도구 모음은 일반적으로 양식 컨테이너 수준에서 추가됩니다. 도구 모음에는 양식의 다음 및 이전 패널로 이동하고, 양식을 제출하고, 양식 데이터를 저장하는 버튼이 포함될 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/332236?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3424951?quality=12&learn=on&captions=kor)

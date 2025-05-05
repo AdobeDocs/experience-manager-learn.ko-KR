@@ -36,13 +36,13 @@ AEM 컨텐츠 조각 은 텍스트 기반 편집 컨텐츠로서, 디자인 또�
 
 ## 콘텐츠 조각 모델 정의 {#defining-content-fragment-models}
 
->[!VIDEO](https://video.tv.adobe.com/v/22452?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34807?quality=12&learn=on&captions=kor)
 
 콘텐츠 조각의 데이터 스키마인 AEM 콘텐츠 조각 모델은 AEM의 [[!UICONTROL 구성 브라우저]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html?lang=ko)를 통해 활성화해야 합니다. 이를 통해 구성 단위로 콘텐츠 조각 모델을 정의할 수 있습니다.
 
 ## 콘텐츠 조각 만들기 {#creating-content-fragments}
 
->[!VIDEO](https://video.tv.adobe.com/v/22451?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34809?quality=12&learn=on&captions=kor)
 
 AEM 구성은 AEM Assets 폴더 계층에 적용되어 해당 콘텐츠 조각 모델을 콘텐츠 조각으로 만들 수 있습니다. 콘텐츠 조각은 콘텐츠를 요소의 컬렉션으로 모델링할 수 있는 풍부한 양식 기반 작성 경험을 지원합니다.
 
@@ -53,7 +53,7 @@ AEM 구성은 AEM Assets 폴더 계층에 적용되어 해당 콘텐츠 조각 �
 
 ## 컨텐츠 조각 다운로드 {#downloading-content-fragments}
 
->[!VIDEO](https://video.tv.adobe.com/v/22450?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34810?quality=12&learn=on&captions=kor)
 
 AEM 컨텐츠 조각은 AEM 작성자에서 변형, 요소 및 메타데이터가 포함된 Zip 파일로 다운로드할 수 있습니다.
 
@@ -62,7 +62,7 @@ AEM 컨텐츠 조각은 AEM 작성자에서 변형, 요소 및 메타데이터�
 
 ## 컨텐츠 조각 편집 기능 {#editorial-capabilities}
 
->[!VIDEO](https://video.tv.adobe.com/v/25891?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/39656?quality=12&learn=on&captions=kor)
 
 >[!NOTE]
 >

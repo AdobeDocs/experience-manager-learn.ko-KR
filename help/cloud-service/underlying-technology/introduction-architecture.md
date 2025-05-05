@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Adobe Experience Manager의 기술 스택에 포함된 [!DNL OSGi], [!DNL JCR], [!DNL Oak] 및 [!DNL Sling]의 기술을 소개합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/32034?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37045?quality=12&learn=on&captions=kor)

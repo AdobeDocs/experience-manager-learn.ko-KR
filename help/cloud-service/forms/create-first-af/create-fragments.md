@@ -23,4 +23,4 @@ ht-degree: 0%
 
 조각을 사용하면 많은 수의 양식을 간편하게 만들고 유지 관리할 수 있습니다. 양식을 작성할 때 필요한 조각에 대한 참조를 삽입하면 조각이 양식에 나타납니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/332231?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438423?quality=12&learn=on&captions=kor)

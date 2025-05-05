@@ -25,4 +25,4 @@ ht-degree: 4%
 
 문서 작성에서 리디렉션이 작동하는 방식 및 작성자가 기술 전문 지식 없이도 손쉽게 리디렉션을 설정할 수 있는 방법에 대해 자세히 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425704/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438550/?learn=on&captions=kor)

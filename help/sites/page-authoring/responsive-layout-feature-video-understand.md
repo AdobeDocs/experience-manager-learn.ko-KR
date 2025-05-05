@@ -24,7 +24,7 @@ ht-degree: 7%
 
 Adobe Experience Manager Sites을 사용하면 작성자가 응답형 사이트 디자인을 용이하게 하기 위해 장치 너비에 따라 구성 요소의 너비를 관리할 수 있습니다. 레이아웃 모드 및 레이아웃 컨테이너를 사용하여 사용자는 AEM UI를 종료하지 않고도 다양한 디바이스에 대한 응답형 콘텐츠를 만들고 최종 사용자 경험을 미리 볼 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/32012?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37178?quality=12&learn=on&captions=kor)
 
 ## 추가 리소스 {#additional-resources}
 

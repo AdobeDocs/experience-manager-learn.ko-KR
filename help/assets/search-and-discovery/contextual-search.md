@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Adobe Experience Manager Assets에서 컨텍스트 검색 을 사용하여 자연어 쿼리가 있는 에셋을 효율적으로 찾는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428667/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438960/?learn=on&captions=kor)
 
 ## 상황별 검색 전환
 

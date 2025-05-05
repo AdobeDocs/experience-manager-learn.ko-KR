@@ -20,4 +20,4 @@ ht-degree: 0%
 
 *이 비디오는 JBoss 관리 콘솔에 대한 관리 사용자를 추가하는 단계를 안내합니다.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335484?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418361?quality=12&learn=on&captions=kor)

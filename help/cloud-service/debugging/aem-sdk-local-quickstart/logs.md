@@ -23,7 +23,7 @@ AEM SDK 로그에 액세스하면 AEM SDK 로컬 quickstart Jar 또는 Dispatche
 
 ## AEM 로그
 
->[!VIDEO](https://video.tv.adobe.com/v/34334?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38163?quality=12&learn=on&captions=kor)
 
 로그는 AEM 응용 프로그램을 디버깅하기 위해 최전방 역할을 하지만 배포된 AEM 응용 프로그램의 적절한 로깅에 의존합니다. Adobe은 AEM SDK의 로컬 빠른 시작과 AEM as a Cloud Service의 개발 환경에서 로그 가시성을 표준화하여 구성 트위들링과 재배포를 감소하므로 로컬 개발 및 AEM as a Cloud Service 개발 로깅 구성을 가능한 유사하게 유지하는 것을 권장합니다.
 

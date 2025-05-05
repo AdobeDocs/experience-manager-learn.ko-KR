@@ -23,4 +23,4 @@ ht-degree: 0%
 
 AEM Forms에 스크리블 서명 추가하기에 대해 설명하는 짧은 비디오입니다
 
->[!VIDEO](https://video.tv.adobe.com/v/3427626/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437327/?learn=on&captions=kor)

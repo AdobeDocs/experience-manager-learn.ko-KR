@@ -26,7 +26,7 @@ OSGi 서비스를 다음에 바인딩하는 방법을 포함하여 OSGi 구성 �
 
 ...라이프사이클 이벤트
 
->[!VIDEO](https://video.tv.adobe.com/v/335475?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417192?quality=12&learn=on&captions=kor)
 
 ## 리소스
 

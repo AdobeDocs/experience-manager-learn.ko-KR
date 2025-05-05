@@ -28,4 +28,4 @@ ht-degree: 1%
 1. AEM에서 기술 계정에 대한 액세스 구성
 1. 액세스 토큰을 사용하여 HTTP 호출 수행
 
->[!VIDEO](https://video.tv.adobe.com/v/334859?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342224?quality=12&learn=on&captions=kor)

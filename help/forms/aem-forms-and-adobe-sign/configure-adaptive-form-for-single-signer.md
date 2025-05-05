@@ -23,7 +23,7 @@ ht-degree: 4%
 
 이 비디오에서는 단일 서명자로 적응형 양식을 구성하는 데 필요한 다양한 단계를 설명합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/39475?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327736?quality=12&learn=on&captions=kor)
 
 이 비디오와 관련된 Assets은 다음 링크에서 다운로드할 수 있습니다
 

@@ -22,4 +22,4 @@ ht-degree: 0%
 
 기존 번역 프로젝트에 번역 작업을 추가하는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/36488?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41642?quality=12&learn=on&captions=kor)

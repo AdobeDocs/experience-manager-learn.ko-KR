@@ -20,7 +20,7 @@ ht-degree: 3%
 
 AEM 6.5의 Dynamic Media 뷰어 개선 사항에는 360 비디오 렌더링, 360 미디어 뷰어(video360Social 및 video360VR)에 대한 지원 추가 및 사용자 지정 비디오 썸네일을 선택하는 기능이 포함됩니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/26391?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34735?quality=12&learn=on&captions=kor)
 
 >[!NOTE]
 >

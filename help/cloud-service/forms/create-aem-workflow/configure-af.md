@@ -24,4 +24,4 @@ ht-degree: 0%
 
 검토 워크플로우를 트리거할 적응형 양식 구성
 
->[!VIDEO](https://video.tv.adobe.com/v/332435?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3446511?quality=12&learn=on&captions=kor)

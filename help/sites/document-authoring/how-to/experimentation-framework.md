@@ -24,4 +24,4 @@ ht-degree: 0%
 
 마케터가 Edge Delivery Services 문서 작성에 가장 효과적인 콘텐츠 변형을 테스트할 수 있는 실험 프레임워크를 탐색합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429061/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437861/?learn=on&captions=kor)

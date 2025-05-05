@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Adobe Firefly을 사용하여 Edge Delivery Services 문서 작성에서 적합한 대상을 타깃팅할 수 있는 컨텐츠 변형에 사용되는 이미지를 만드는 방법을 살펴봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428794/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438363/?learn=on&captions=kor)

@@ -24,7 +24,7 @@ Acrobat Sign 플랫폼과 통합하려면 Acrobat Sign에서 API 애플리케이
 
 다음 비디오에서는 Acrobat Sign API 애플리케이션을 만드는 데 필요한 단계에 대해 설명합니다
 
->[!VIDEO](https://video.tv.adobe.com/v/38178?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327839?quality=12&learn=on&captions=kor)
 
 ## 다음 단계
 

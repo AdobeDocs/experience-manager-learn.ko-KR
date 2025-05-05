@@ -20,7 +20,7 @@ ht-degree: 1%
 
 Cloud Service 통합을 위한 로그인 토큰을 얻는 방법과 이를 위한 몇 가지 사용 사례에 대한 심층적인 안내서입니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/341277?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448644?quality=12&learn=on&captions=kor)
 
 ## 이 비디오에서 다루는 콘텐츠
 

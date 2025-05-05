@@ -20,7 +20,7 @@ ht-degree: 3%
 
 소셜 미디어 공유 구성 요소 설정 및 사용을 살펴봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/18897?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/31080?quality=12&learn=on&captions=kor)
 
 이 비디오는 [We.Retail](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail#weretail) 샘플 웹 사이트를 사용하여 소셜 미디어 공유 구성 요소([AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)의 일부)의 다음 기능에 대해 살펴봅니다.
 

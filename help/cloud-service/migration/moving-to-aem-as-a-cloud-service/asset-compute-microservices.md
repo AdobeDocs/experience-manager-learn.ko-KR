@@ -21,7 +21,7 @@ ht-degree: 1%
 
 AEM Assets as a Cloud Service의 asset compute 마이크로 서비스를 통해 기존 AEM 워크플로의 이러한 역할을 대체하여 에셋에 대한 렌디션을 자동으로 효율적으로 생성하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/336990?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3454291?quality=12&learn=on&captions=kor)
 
 ## 워크플로우 마이그레이션 도구
 

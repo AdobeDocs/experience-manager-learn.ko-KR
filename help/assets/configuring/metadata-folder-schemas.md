@@ -23,4 +23,4 @@ ht-degree: 0%
 
 메타데이터 폴더 스키마를 사용하면 에셋에서 직접 이뤄지는 것이 아니라 에셋 폴더 자체와 관련된 메타데이터를 관리하고 검토할 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/34071?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37298?quality=12&learn=on&captions=kor)

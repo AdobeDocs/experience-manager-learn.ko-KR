@@ -21,4 +21,4 @@ ht-degree: 0%
 
 이 비디오는 Dynamic Media에서 비디오를 처리하기 위해 비디오 프로필을 만드는 과정을 안내합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/335382?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417803?quality=12&learn=on&captions=kor)

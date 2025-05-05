@@ -22,4 +22,4 @@ ht-degree: 0%
 
 AEM Sites에서 언어 사본 을 사용하여 다국어 사이트를 제작하는 방법에 대한 개요를 살펴보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/36487?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41618?quality=12&learn=on&captions=kor)

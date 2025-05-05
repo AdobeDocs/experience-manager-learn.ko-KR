@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Workbench에서 양식 프로세스의 디버깅을 안내하는 짧은 비디오
 
->[!VIDEO](https://video.tv.adobe.com/v/3429495/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439822/?learn=on&captions=kor)

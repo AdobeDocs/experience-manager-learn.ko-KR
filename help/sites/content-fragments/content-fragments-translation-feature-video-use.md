@@ -22,7 +22,7 @@ ht-degree: 2%
 
 Adobe Experience Manager을 사용하여 콘텐츠 조각을 현지화하고 번역하는 방법에 대해 알아봅니다. 콘텐츠 조각과 연결된 혼합 미디어 에셋도 추출하고 번역할 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/18131?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3410327?quality=12&learn=on&captions=kor)
 
 ## 콘텐츠 조각 번역 사용 사례 {#content-fragment-translation-use-cases}
 

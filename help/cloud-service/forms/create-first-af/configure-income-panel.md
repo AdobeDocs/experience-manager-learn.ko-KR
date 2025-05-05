@@ -23,4 +23,4 @@ ht-degree: 0%
 
 테이블 구성 요소를 소득 패널에 추가하여 신청자의 소득 소스를 캡처합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/332233?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3425124?quality=12&learn=on&captions=kor)

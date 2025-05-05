@@ -22,4 +22,4 @@ ht-degree: 0%
 
 언어 사본 만들기 마법사를 사용하여 AEM 사이트에 사용할 언어 사본을 만드는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/36483?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41610?quality=12&learn=on&captions=kor)

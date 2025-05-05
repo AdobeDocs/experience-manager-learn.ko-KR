@@ -28,4 +28,4 @@ GraphQL 엔드포인트를 활성화하고, 쿼리를 실행하고, 게시하고
 + 엔드포인트에 대해 GraphQL 쿼리를 실행하는 방법 알아보기
 + GraphQL 엔드포인트를 게시하는 방법 이해
 
->[!VIDEO](https://video.tv.adobe.com/v/333339?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3445030?quality=12&learn=on&captions=kor)

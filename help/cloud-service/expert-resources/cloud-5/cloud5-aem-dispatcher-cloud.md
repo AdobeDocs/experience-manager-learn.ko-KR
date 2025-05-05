@@ -22,7 +22,7 @@ ht-degree: 2%
 
 Darin과 James는 몇 가지 모범 사례와 AMS/On-Prem과의 차이점 등 AEM Cloud의 Dispatcher에 대해 설명합니다. 또한 클라우드로의 마이그레이션에 대해서도 다룹니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/342067?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448382?quality=12&learn=on&captions=kor)
 
 ## 이 비디오에서 다루는 콘텐츠
 

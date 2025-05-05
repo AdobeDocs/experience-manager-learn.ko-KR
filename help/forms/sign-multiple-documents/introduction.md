@@ -22,7 +22,7 @@ ht-degree: 3%
 담보대출을 신청하든 새 은행 계좌를 개설하든 여러 양식에 기입하고 서명해야 합니다. AEM Forms과 Acrobat Sign을 통합하면 여러 양식을 쉽게 작성하고 서명할 수 있습니다.
 다음 비디오에서는 여러 양식에 서명하는 사용 사례를 안내합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/330165?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3444975?quality=12&learn=on&captions=kor)
 
 ## 사전 요구 사항
 

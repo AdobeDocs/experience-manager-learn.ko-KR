@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Git을 사용하여 Edge Delivery Services 개발 환경을 구성합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425718/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441833/?learn=on&captions=kor)

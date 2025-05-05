@@ -21,4 +21,4 @@ ht-degree: 0%
 
 이 비디오는 Dynamic Media를 통해 CDN 캐시를 무효화하는 프로세스를 안내합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/335457?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418224?quality=12&learn=on&captions=kor)

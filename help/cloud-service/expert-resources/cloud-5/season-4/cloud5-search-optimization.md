@@ -24,4 +24,4 @@ ht-degree: 0%
 
 많은 수의 레코드를 처리할 때 쿼리 및 검색 최적화를 사용하여 라이트하우스 점수를 100매까지 획득하십시오. 쿼리 인덱스를 최적화하고 검색 기능을 향상시키며 최상의 성능 최적화를 위해 쿼리 인덱스를 나누는 기법을 사용합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3440976/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3440985/?learn=on&enablevpops&captions=kor)

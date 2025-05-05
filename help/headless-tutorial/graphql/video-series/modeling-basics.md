@@ -28,4 +28,4 @@ GraphQL에서 사용할 Adobe Experience Manager(AEM)에서 컨텐츠 조각을 
 + 콘텐츠 조각 모델을 빌드하는 데 사용되는 다양한 데이터 유형에 대해 알아봅니다
 + 콘텐츠 조각 모델이 GraphQL API를 구동하는 방법 이해
 
->[!VIDEO](https://video.tv.adobe.com/v/332858?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3412908?quality=12&learn=on&captions=kor)

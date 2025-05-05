@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Edge Delivery Services 문서 작성에서 실험 프레임워크를 설정하는 방법을 살펴봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429062/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438935/?learn=on&captions=kor)

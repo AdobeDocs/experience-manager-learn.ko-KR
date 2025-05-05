@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Azure Blob 저장 공간 백엔드 양식 데이터 모델을 만듭니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/335423?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3419012?quality=12&learn=on&captions=kor)

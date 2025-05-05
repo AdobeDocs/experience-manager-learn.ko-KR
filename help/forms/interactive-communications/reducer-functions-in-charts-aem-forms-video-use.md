@@ -59,4 +59,4 @@ ht-degree: 0%
 
 다음 비디오는 감속기 기능 사용과 관련된 단계를 안내합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/21368?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38218?quality=12&learn=on&captions=kor)

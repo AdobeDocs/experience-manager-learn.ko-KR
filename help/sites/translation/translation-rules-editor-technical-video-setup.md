@@ -24,7 +24,7 @@ ht-degree: 0%
 >
 > 아래 비디오는 AEM 6.3에 녹화되었습니다. AEM 6.4+에는 번역 규칙 XML 파일을 저장하는 새로운 저장소 구조가 도입되었습니다. AEM 6.4+에서 번역 구성 UI를 사용하는 경우 규칙이 `/conf/global/settings/translation/rules/translation_rules.xml` 위치에 저장됩니다. 자세한 내용은 [번역할 콘텐츠 식별](https://helpx.adobe.com/kr/experience-manager/6-5/sites/administering/using/tc-rules.html)을 참조하십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/18135?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34671?quality=12&learn=on&captions=kor)
 
 번역 규칙은 번역을 위해 추출할 AEM 콘텐츠를 식별합니다. 즉시 사용 가능한 번역 규칙은 텍스트 구성 요소 및 이미지 구성 요소에 대한 대체 텍스트와 같은 일반적인 사용 사례를 다룹니다. 프로젝트 번역 요구 사항에 따라 추가 규칙이 필요할 수 있습니다. 일반적으로 번역 규칙을 사용하여 다음을 지정할 수 있습니다.
 

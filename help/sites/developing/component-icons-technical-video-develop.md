@@ -20,7 +20,7 @@ ht-degree: 0%
 
 구성 요소 아이콘을 사용하면 작성자가 아이콘이나 의미 있는 약어로 구성 요소를 빠르게 식별할 수 있습니다. 이제 작성자가 웹 경험을 더 빠르게 빌드하는 데 필요한 구성 요소를 찾을 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/16778?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33677?quality=12&learn=on&captions=kor)
 
 이제 구성 요소 브라우저가 일관된 회색 테마로 표시되어 다음을 표시합니다.
 

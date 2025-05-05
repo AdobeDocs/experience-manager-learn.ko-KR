@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Adobe Experience Manager Assets as a Cloud Service 추가 기능과 Adobe Creative Cloud 서비스 API를 통합하여 자산을 처리하는 컨텐츠 자동화 추가 기능을 사용하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/336540?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3423911?quality=12&learn=on&captions=kor)

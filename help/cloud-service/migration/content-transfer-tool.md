@@ -22,7 +22,7 @@ ht-degree: 2%
 
 컨텐츠 전송 도구는 컨텐츠를 온-프레미스 또는 AMS 호스팅 버전의 AEM에서 AEM as a Cloud Service 환경으로 마이그레이션하는 데 권장하는 방법입니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/35460?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327072?quality=12&learn=on&captions=kor)
 
 ## 추가 리소스 {#additional-resources}
 

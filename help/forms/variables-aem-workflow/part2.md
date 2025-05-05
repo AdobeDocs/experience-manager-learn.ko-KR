@@ -30,7 +30,7 @@ ht-degree: 0%
 
 워크플로우 모델에서 스키마를 JSON 유형의 변수와 매핑할 수 있습니다. 그런 다음 스키마 브라우저를 사용하여 스키마 요소를 워크플로우 모델의 문자열/숫자 변수와 매핑할 수 있습니다
 
->[!VIDEO](https://video.tv.adobe.com/v/28097?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35394?quality=12&learn=on&captions=kor)
 
 시스템에서 에셋을 작업하려면 다음 단계를 따르십시오.
 

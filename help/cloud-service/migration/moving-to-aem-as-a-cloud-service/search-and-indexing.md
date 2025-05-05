@@ -21,7 +21,7 @@ ht-degree: 0%
 
 AEM as a Cloud Service의 검색 인덱스, AEM 6 인덱스 정의를 AEM as a Cloud Service과 호환되도록 변환하는 방법 및 인덱스를 AEM as a Cloud Service에 배포하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/336963?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3454721?quality=12&learn=on&captions=kor)
 
 ## 인덱스 변환기 도구
 

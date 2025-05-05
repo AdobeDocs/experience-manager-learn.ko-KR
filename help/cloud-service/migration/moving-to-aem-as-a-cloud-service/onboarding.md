@@ -21,7 +21,7 @@ ht-degree: 7%
 
 계약 단계에서 시작하여 AEM as a Cloud Service을 사용한 환경 설정에 이르기까지 Cloud Manager에 온보딩하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/336959?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3431508?quality=12&learn=on&captions=kor)
 
 ## Cloud Manager 및 Admin Console
 

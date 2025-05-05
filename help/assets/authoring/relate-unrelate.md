@@ -23,4 +23,4 @@ ht-degree: 0%
 
 AEM에서 에셋 간의 관계를 설정하고 관리하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/331107?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/346827?quality=12&learn=on&captions=kor)

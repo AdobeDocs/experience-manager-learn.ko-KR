@@ -27,4 +27,4 @@ ht-degree: 0%
 
 비디오에 따라 Adobe I/O 프로젝트를 만드십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/333220?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3440099?quality=12&learn=on&captions=kor)

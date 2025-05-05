@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Microsoft Sharepoint에서 적응형 양식 데이터를 구성하고 저장하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3415793/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3452532/?quality=12&learn=on&captions=kor)

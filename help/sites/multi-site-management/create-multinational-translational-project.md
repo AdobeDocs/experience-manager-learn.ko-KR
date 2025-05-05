@@ -22,4 +22,4 @@ ht-degree: 0%
 
 AEM의 프로젝트 콘솔에서 언어 사본 의 다국어 번역 프로젝트를 만들어 편집 및 관리하는 방법을 알아봅니다
 
->[!VIDEO](https://video.tv.adobe.com/v/36485?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326746?quality=12&learn=on&captions=kor)

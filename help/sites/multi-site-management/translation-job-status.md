@@ -22,4 +22,4 @@ ht-degree: 16%
 
 번역 작업 또는 작업 항목과 관련된 다양한 상태를 이해합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/36685?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41560?quality=12&learn=on&captions=kor)

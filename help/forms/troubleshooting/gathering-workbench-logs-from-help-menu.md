@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *이 비디오는 도움말 메뉴에서 Workbench 로그를 수집하는 과정을 안내합니다.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335501?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417222?quality=12&learn=on&captions=kor)

@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Live Copy 만들기 마법사를 사용하여 블루프린트에서 사이트의 Live Copy를 만드는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/36677?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41585?quality=12&learn=on&captions=kor)

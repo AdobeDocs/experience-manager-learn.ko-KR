@@ -20,7 +20,7 @@ ht-degree: 7%
 
 3부로 구성된 시리즈 중 첫 번째 시리즈에서는 Cloud Manager의 기본 사항을 살펴보고 경험 감사 기능에 관심을 기울입니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/343620?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449184?quality=12&learn=on&captions=kor)
 
 ## 이 비디오에서 다루는 콘텐츠
 

@@ -23,4 +23,4 @@ ht-degree: 0%
 
 AEM Assets as a Cloud Service에서 [Assets 보기 및 관리자 보기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/overview.html?lang=ko#persona-based-experiences) 간을 효율적으로 전환하여 원활한 에셋 관리를 보장하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3426806/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439038/?learn=on&captions=kor)

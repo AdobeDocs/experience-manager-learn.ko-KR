@@ -20,7 +20,7 @@ ht-degree: 0%
 
 AEM 6.3의 적응형 양식용 테마 편집기 개선 사항
 
->[!VIDEO](https://video.tv.adobe.com/v/19497?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34679?quality=12&learn=on&captions=kor)
 
 >[!NOTE]
 >

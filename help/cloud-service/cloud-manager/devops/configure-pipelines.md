@@ -27,4 +27,4 @@ ht-degree: 74%
 
 Cloud Manager에서 다양한 유형의 파이프라인과 성공적인 프로젝트를 위해 파이프라인을 구성하는 방법을 살펴봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/330539?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345839?quality=12&learn=on&captions=kor)

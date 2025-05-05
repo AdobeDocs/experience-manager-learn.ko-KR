@@ -22,7 +22,7 @@ ht-degree: 0%
 
 AEM Workflow는 AEM에서 콘텐츠를 공동 작업, 관리 및 처리하는 방법을 제공합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/27848?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3410290?quality=12&learn=on&captions=kor)
 
 >[!NOTE]
 >

@@ -22,7 +22,7 @@ ht-degree: 1%
 
 페이지 속성에 대한 메타데이터 필드를 사용자 지정하는 것은 모든 Sites 구현의 일반적인 요구 사항입니다. 이 비디오에서는 Sling 리소스 병합의 기능을 사용하여 이를 수행하는 가장 효과적인 방법에 대해 자세히 설명합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/25173?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3410345?quality=12&learn=on&captions=kor)
 
 위의 비디오는 [WKND 참조 사이트](https://github.com/adobe/aem-guides-wknd)에 대한 페이지 속성을 사용자 지정하는 방법을 보여 줍니다.
 

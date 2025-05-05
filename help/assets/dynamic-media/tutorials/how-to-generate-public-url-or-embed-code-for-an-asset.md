@@ -21,4 +21,4 @@ ht-degree: 0%
 
 이 비디오는 에셋에 대한 공개 URL 또는 포함 코드를 생성하는 단계를 안내합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/335364?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417844?quality=12&learn=on&captions=kor)

@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Adobe Asset Link는 크리에이티브 사용자에게 InDesign, Photoshop 및 Illustrator의 인앱 패널을 사용하여 AEM Assets에 저장된 에셋을 검색, 체크아웃 및 체크인할 수 있는 기능을 제공합니다. Adobe Asset Link 패널의 UI 및 기능에 대해 소개합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/33734?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38674?quality=12&learn=on&captions=kor)

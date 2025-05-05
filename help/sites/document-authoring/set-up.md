@@ -25,4 +25,4 @@ ht-degree: 0%
 
 작성자를 위한 문서 작성 설정 방법에 대한 안내서입니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425699/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438869/?learn=on&captions=kor)

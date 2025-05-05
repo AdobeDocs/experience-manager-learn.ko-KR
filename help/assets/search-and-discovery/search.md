@@ -23,4 +23,4 @@ ht-degree: 9%
 
 AEM의 Omnisearch를 사용하여 에셋을 빠르게 검색하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/32054?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37032?quality=12&learn=on&captions=kor)

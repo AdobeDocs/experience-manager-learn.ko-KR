@@ -22,7 +22,7 @@ ht-degree: 3%
 
 다음 비디오에서는 DoR을 자동으로 생성하도록 적응형 양식을 만들고 구성하는 데 필요한 단계를 중점적으로 다룹니다. 또한 이 비디오에서는 AEM 워크플로우를 트리거하기 위한 적응형 양식을 구성하는 데 필요한 단계를 안내합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/38348?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327815?quality=12&learn=on&captions=kor)
 
 ## 다음 단계
 

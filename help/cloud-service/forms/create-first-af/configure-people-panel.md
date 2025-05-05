@@ -23,4 +23,4 @@ ht-degree: 0%
 
 사람 패널에 배우자 세부 정보 조각을 추가합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/332234?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3425106?quality=12&learn=on&captions=kor)

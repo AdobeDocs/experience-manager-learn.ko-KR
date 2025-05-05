@@ -23,4 +23,4 @@ ht-degree: 0%
 
 AEM 에셋용 FPO(For Placement Only) 렌디션을 만들고 사용하는 방법을 살펴봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/34259?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38603?quality=12&learn=on&captions=kor)

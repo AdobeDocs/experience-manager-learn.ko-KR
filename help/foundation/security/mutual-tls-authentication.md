@@ -23,7 +23,7 @@ ht-degree: 0%
 
 AEM에서 mTLS(Mutual Transport Layer Security) 인증이 필요한 웹 API로 HTTPS를 호출하는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3424855?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447866?quality=12&learn=on&captions=kor)
 
 mTLS 또는 양방향 TLS 인증은 **클라이언트와 서버가 서로 인증하도록**&#x200B;하여 TLS 프로토콜의 보안을 강화합니다. 이 인증은 디지털 인증서를 사용하여 수행됩니다. 강력한 보안 및 신원 확인이 중요한 시나리오에서 일반적으로 사용됩니다.
 

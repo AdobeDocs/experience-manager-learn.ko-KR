@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Adobe Experience Manager Assets Content Hub에서 에셋을 업로드하고, 태그를 적용하고 승인 워크플로를 이해하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3432980/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3450289/?learn=on&captions=kor)

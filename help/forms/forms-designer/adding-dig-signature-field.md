@@ -23,4 +23,4 @@ ht-degree: 0%
 
 AEM Forms에 디지털 서명을 추가하는 방법에 대해 설명하는 짧은 비디오
 
->[!VIDEO](https://video.tv.adobe.com/v/3427623/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439533/?learn=on&captions=kor)

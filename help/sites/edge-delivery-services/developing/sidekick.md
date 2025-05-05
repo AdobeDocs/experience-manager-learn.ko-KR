@@ -23,4 +23,4 @@ ht-degree: 6%
 
 Edge Delivery Services의 AEM Sidekick을 사용하여 콘텐츠를 실시간으로 가져올 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425715/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441293/?learn=on&captions=kor)

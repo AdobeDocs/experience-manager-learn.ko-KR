@@ -21,4 +21,4 @@ ht-degree: 0%
 
 주요 구현 단계 또는 Cloud Acceleration Manager을 사용한 AEM as a Cloud Service으로의 전환에 대해 검토하고 이해합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/336691?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438286?quality=12&learn=on&captions=kor)

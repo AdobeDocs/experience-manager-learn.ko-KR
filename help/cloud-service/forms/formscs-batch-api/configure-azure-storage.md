@@ -23,4 +23,4 @@ ht-degree: 1%
 Azure 저장소 계정에는 Blob, 파일 공유, 큐, 테이블 및 디스크를 포함한 모든 Azure 저장소 데이터 개체가 포함되어 있습니다. 저장소 계정은 HTTP 또는 HTTPS를 통해 전 세계 어디에서나 액세스할 수 있는 Azure 저장소 데이터에 대한 고유한 네임스페이스를 제공합니다. 스토리지 계정의 데이터는 내구성과 가용성이 높고 안전하며 대규모로 확장할 수 있습니다.
 다음 비디오에서는 Azure 스토리지 계정을 구성하는 과정을 안내합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/340127?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343723?quality=12&learn=on&captions=kor)

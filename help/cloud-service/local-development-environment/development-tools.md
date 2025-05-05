@@ -235,7 +235,7 @@ AEM 개발은 주로 Java 및 프론트엔드(JavaScript, CSS 등) 개발 및 XM
 
 __[IntelliJ IDEA](https://www.jetbrains.com/idea/)__&#x200B;은(는) Java 개발용 강력한 IDE입니다. IntelliJ IDEA는 무료 커뮤니티 버전과 상용(유료) Ultimate 버전, 이렇게 두 가지 버전으로 제공됩니다. 사용 가능한 커뮤니티 버전은 AEM 개발에 충분하지만, Ultimate [이(가) 기능 집합을 확장](https://www.jetbrains.com/idea/download)합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/26089?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/39745?quality=12&learn=on&captions=kor)
 
 + [IntelliJ IDEA 다운로드](https://www.jetbrains.com/idea/download)
 + [보고서 도구 다운로드](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#installation)

@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Adobe Asset을 사용하면 작업 중인 크리에이티브 앱에서 직접 AEM Assets을 체크아웃할 수 있으며 편집을 바로 시작할 수 있습니다. Creative Cloud 앱에서 에셋을 편집한 후 적절한 버전 관리 및 주석을 사용하여 AEM Assets으로 다시 에셋을 쉽게 체크 인할 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/33886?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38645?quality=12&learn=on&captions=kor)

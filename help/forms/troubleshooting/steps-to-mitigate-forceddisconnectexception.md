@@ -20,4 +20,4 @@ ht-degree: 0%
 
 *이 비디오는 ForcedDisconnectException을 완화하는 가능한 원인과 단계를 안내합니다*
 
->[!VIDEO](https://video.tv.adobe.com/v/335483?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438726?quality=12&learn=on&captions=kor)

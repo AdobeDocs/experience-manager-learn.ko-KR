@@ -23,6 +23,6 @@ ht-degree: 0%
 
 [OPEN API 2.0 사양](https://swagger.io/docs/specification/2-0/basic-structure/)을 사용하여 Salesforce REST API를 설명합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/331754?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3411571?quality=12&learn=on&captions=kor)
 
 Swagger 파일을 다운로드할 수 있습니다. [여기에서 사용 가능](assets/sfdc-rest-swagger.zip)

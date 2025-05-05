@@ -21,4 +21,4 @@ ht-degree: 0%
 
 AEM as a Cloud Service용 [AEM Maven 프로젝트](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=ko#developing)를 구조화하는 모범 사례를 살펴보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/330557?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345891?quality=12&learn=on&captions=kor)

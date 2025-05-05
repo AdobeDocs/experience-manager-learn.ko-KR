@@ -32,4 +32,4 @@ ht-degree: 0%
 
 다음 비디오에서는 일괄 처리 구성의 트리거를 보여 줍니다
 
->[!VIDEO](https://video.tv.adobe.com/v/340242?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343709?quality=12&learn=on&captions=kor)

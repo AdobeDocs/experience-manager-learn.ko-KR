@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Dynamic Media Smart Crop for video는 Adobe Sensei을 사용하여 비디오에서 관심 영역을 지능적으로 추적하여 비디오가 모든 화면 크기에서 최상의 상태로 보이도록 합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/37958?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326472?quality=12&learn=on&captions=kor)
 
 >[!NOTE]
 >

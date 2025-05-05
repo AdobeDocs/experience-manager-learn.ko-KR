@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Edge Delivery Services을 사용하여 소셜 미디어 공유를 위해 콘텐츠를 최적화하는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425974/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439444/?learn=on&captions=kor)

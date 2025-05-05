@@ -31,11 +31,11 @@ ht-degree: 0%
 
 **AEM 워크플로우를 트리거할 양식 구성**
 
->[!VIDEO](https://video.tv.adobe.com/v/28406?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33085?quality=12&learn=on&captions=kor)
 
 **워크플로 연습**
 
->[!VIDEO](https://video.tv.adobe.com/v/28407?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33090?quality=12&learn=on&captions=kor)
 
 **휴무 요청 양식의 제출자 보기**
 

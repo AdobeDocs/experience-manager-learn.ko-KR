@@ -289,7 +289,7 @@ Dispatcher Tools 버전은 Experience Manager보다 덜 자주 증가하므로 D
 
 Apache 및 Dispatcher 구성의 기본 세트가 정기적으로 향상되고 AEM as a Cloud Service SDK 버전과 함께 릴리스됩니다. 기본 구성 개선 사항을 AEM 프로젝트에 통합하고 [로컬 유효성 검사](#validate-configurations) 및 Cloud Manager 파이프라인 오류를 방지하는 것이 좋습니다. `.../dispatcher-sdk-x.x.x/bin` 폴더의 `update_maven.sh` 스크립트를 사용하여 업데이트합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3416744?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32987?quality=12&learn=on&captions=kor)
 
 *이 비디오에서는 설명 목적으로 macOS을 사용합니다. 동일한 Windows/Linux 명령을 사용하여 유사한 결과를 얻을 수 있습니다.*
 

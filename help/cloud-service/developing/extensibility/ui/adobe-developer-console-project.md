@@ -24,7 +24,7 @@ ht-degree: 0%
 
 다른 Adobe 서비스에 대한 액세스를 정의하고 배포를 관리하는 Adobe Developer Console 프로젝트를 만듭니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3412875?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3442021?quality=12&learn=on&captions=kor)
 
 >[!IMPORTANT]
 >

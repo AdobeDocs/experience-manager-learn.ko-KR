@@ -35,21 +35,21 @@ ht-degree: 0%
 
 ## 색인 통계
 
->[!VIDEO](https://video.tv.adobe.com/v/21477?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34856?quality=12&learn=on&captions=kor)
 
 * `oak-run.jar`이(가) 오프라인 분석을 위해 모든 인덱스 정의, 중요한 인덱스 통계 및 인덱스 컨텐츠를 덤프합니다.
 * 인덱스 통계 수집은 사용 중인 AEM 인스턴스에서 실행해도 안전합니다.
 
 ## 색인 일관성 검사
 
->[!VIDEO](https://video.tv.adobe.com/v/21476?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36865?quality=12&learn=on&captions=kor)
 
 * `oak-run.jar`은(는) lucene Oak 색인이 손상되었는지 빠르게 확인합니다.
 * 일관성 검사는 일관성 검사 수준 1과 2에 대해 사용 중인 AEM 인스턴스에서 실행해도 안전합니다.
 
 ## [!DNL oak-run.jar]을(를) 사용한 TarMK 온라인 인덱싱 {#tarmkonlineindexingwithoakrunjar}
 
->[!VIDEO](https://video.tv.adobe.com/v/21479?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36867?quality=12&learn=on&captions=kor)
 
 * [!DNL oak-run.jar]을(를) 사용하는 [!DNL TarMK]의 온라인 인덱싱이 `oak:queryIndexDefinition` 노드에서 `reindex=true`을(를) 설정하는 것보다 빠릅니다. 이렇게 성능이 향상되더라도 [!DNL oak-run.jar]을(를) 사용하는 온라인 인덱싱에는 인덱싱을 수행하기 위한 유지 관리 기간이 필요합니다.
 
@@ -57,13 +57,13 @@ ht-degree: 0%
 
 ## oak-run.jar을 사용한 TarMK 오프라인 색인화
 
->[!VIDEO](https://video.tv.adobe.com/v/21478?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36866?quality=12&learn=on&captions=kor)
 
 * 단일 [!DNL oak-run.jar] 명령이 필요하지만 AEM 인스턴스를 종료해야 하므로 [!DNL oak-run.jar]을(를) 사용하는 [!DNL TarMK]의 오프라인 인덱싱은 [!DNL TarMK]에 대해 가장 간단한 [!DNL oak-run.jar] 기반 인덱싱 접근 방식입니다.
 
 ## oak-run.jar을 사용한 TarMK 대역 외 인덱싱
 
->[!VIDEO](https://video.tv.adobe.com/v/21480?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/340812?quality=12&learn=on&captions=kor)
 
 * [!DNL oak-run.jar]을(를) 사용하여 [!DNL TarMK]에서 대역 외 인덱싱을 수행하면 사용 중인 AEM 인스턴스에 대한 인덱싱의 영향이 최소화됩니다.
 * 대역 외 색인화는 다시 색인화하는 시간이 사용 가능한 유지 관리 기간을 초과하는 AEM 설치에 권장되는 색인화 방법입니다.

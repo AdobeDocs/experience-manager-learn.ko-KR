@@ -21,4 +21,4 @@ ht-degree: 0%
 
 이 비디오는 AEM Sites 웹 페이지에서 Dynamic Media 지원 코어 구성 요소를 사용하는 프로세스를 안내합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/335461?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417724?quality=12&learn=on&captions=kor)

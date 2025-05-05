@@ -20,4 +20,4 @@ ht-degree: 0%
 
 *이 비디오는 lc_turnkey.xml에 사용할 키 저장소 암호를 암호화하는 단계를 안내합니다.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335538?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417699?quality=12&learn=on&captions=kor)

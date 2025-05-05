@@ -23,4 +23,4 @@ ht-degree: 7%
 
 메타데이터 스키마는 사용자가 AEM에서 에셋 메타데이터와 상호 작용하는 인터페이스를 정의하며, 에셋에 대한 정의 및 애플리케이션은 디지털 에셋 관리에 중요합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/33696?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37307?quality=12&learn=on&captions=kor)

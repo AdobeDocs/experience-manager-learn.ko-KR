@@ -25,4 +25,4 @@ ht-degree: 0%
 
 문서 작성에서 블록과 자동 블록을 사용하는 방법과 이렇게 하면 사이트 및 작성 경험이 어떻게 개선되는지 살펴보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425703/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439511/?learn=on&captions=kor)

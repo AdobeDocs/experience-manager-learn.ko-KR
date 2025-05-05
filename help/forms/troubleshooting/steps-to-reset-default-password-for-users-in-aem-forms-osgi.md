@@ -20,4 +20,4 @@ ht-degree: 0%
 
 *이 비디오는 AEM Forms OSGi에서 관리자의 기본 암호를 재설정하는 단계를 안내합니다.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335542?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417714?quality=12&learn=on&captions=kor)

@@ -24,7 +24,7 @@ ht-degree: 0%
 
 확장이 표시되는 위치와 수행되는 작업을 정의하는 AEM UI 확장 App Builder 앱을 초기화합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3412876?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447083?quality=12&learn=on&captions=kor)
 
 >[!IMPORTANT]
 >

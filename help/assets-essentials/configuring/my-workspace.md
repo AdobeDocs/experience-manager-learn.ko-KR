@@ -23,4 +23,4 @@ ht-degree: 7%
 
 Workspace의 사용자 구성 가능 위젯을 사용하여 보다 효율적으로 작업하는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3413809?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418581?quality=12&learn=on&captions=kor)

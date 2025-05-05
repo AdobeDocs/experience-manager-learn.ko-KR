@@ -29,7 +29,7 @@ ht-degree: 2%
 * 양식 데이터 모델의 요청 속성 사용
 
 다음 비디오에서는 과정에 대한 개요를 제공합니다
->[!VIDEO](https://video.tv.adobe.com/v/36387?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3409947?quality=12&learn=on&captions=kor)
 
 ## 사전 요구 사항
 

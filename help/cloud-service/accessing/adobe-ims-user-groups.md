@@ -27,4 +27,4 @@ ht-degree: 65%
 
  Adobe IMS 사용자 그룹은 AEM에 노출되는 사용자의 논리적 집합을 설정하며, 이를 활용하여 AEM 사용자에 대한 세부 조정 권한을 정의할 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/39150?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327871?quality=12&learn=on&captions=kor)

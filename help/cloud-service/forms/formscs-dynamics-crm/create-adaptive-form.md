@@ -22,4 +22,4 @@ ht-degree: 0%
 
 다음 비디오는 리드 오브젝트를 만들고 표시하기 위해 적응형 양식을 만들고 구성하는 단계를 안내합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/340791?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449315?quality=12&learn=on&captions=kor)

@@ -22,4 +22,4 @@ ht-degree: 0%
 
 AEM Forms의 메타데이터 서비스를 사용하여 Azure Blob Storage에서 적응형 양식 데이터를 쿼리하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/335717?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3419017?quality=12&learn=on&captions=kor)

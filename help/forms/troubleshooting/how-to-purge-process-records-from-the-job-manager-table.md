@@ -20,4 +20,4 @@ ht-degree: 0%
 
 *이 비디오는 작업 관리자에서 프로세스 레코드를 제거하는 단계를 안내합니다.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335577?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437674?quality=12&learn=on&captions=kor)

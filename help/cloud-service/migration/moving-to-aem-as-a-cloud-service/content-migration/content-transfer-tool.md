@@ -22,7 +22,7 @@ ht-degree: 3%
 
 컨텐츠 전송 도구 가 AEM 6.3+에서 AEM as a Cloud Service으로 컨텐츠를 마이그레이션하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/336970?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3454754?quality=12&learn=on&captions=kor)
 
 ## 컨텐츠 전송 도구 사용
 

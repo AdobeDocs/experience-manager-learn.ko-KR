@@ -21,4 +21,4 @@ ht-degree: 0%
 
 AEM Maven Project Archetype을 사용하여 새 AEM 애플리케이션 프로젝트를 만들어 모범 사례에 맞추고 AEM 개발을 가속화하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/330551?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345912?quality=12&learn=on&captions=kor)

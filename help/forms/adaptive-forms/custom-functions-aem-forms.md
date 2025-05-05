@@ -85,4 +85,4 @@ functions.js
 ## 사용자 정의 함수 사용
 
 다음 비디오에서는 적응형 양식의 규칙 편집기에서 사용자 지정 기능을 사용하는 것과 관련된 단계를 설명합니다
->[!VIDEO](https://video.tv.adobe.com/v/340305?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3445848?quality=12&learn=on&captions=kor)

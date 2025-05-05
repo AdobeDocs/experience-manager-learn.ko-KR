@@ -23,7 +23,7 @@ ht-degree: 3%
 
 AEM Assets을 문서 작성과 통합하여 Edge Delivery Services과 탁월한 경험을 제공하는 방법을 살펴볼 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428302/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448947/?quality=12&learn=on&captions=kor)
 
 
 ## 추가 리소스

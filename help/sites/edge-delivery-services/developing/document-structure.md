@@ -23,4 +23,4 @@ ht-degree: 0%
 
 섹션, 기본 컨텐츠 등을 사용하여 Edge Delivery Services 문서를 작성하는 방법을 살펴봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425716/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3445196/?learn=on&captions=kor)

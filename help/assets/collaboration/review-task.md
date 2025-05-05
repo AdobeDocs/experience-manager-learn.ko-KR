@@ -23,4 +23,4 @@ ht-degree: 12%
 
 AEM Assets의 검토 작업이 가장 일반적인 검토 및 승인 워크플로를 용이하게 하는 방법을 살펴봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/32050?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36771?quality=12&learn=on&captions=kor)

@@ -22,4 +22,4 @@ ht-degree: 1%
 
 AEM Assets과 [Adobe Express](https://www.adobe.com/kr/express/) 통합을 사용하여 콘텐츠 공급망을 최적화하고 모든 팀원의 생산성과 접근성을 향상시키는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425193/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3453139/?learn=on&captions=kor)

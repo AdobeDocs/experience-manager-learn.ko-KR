@@ -23,4 +23,4 @@ ht-degree: 2%
 
 Edge Delivery Services용 [AEM 상용구 템플릿](https://github.com/adobe/aem-boilerplate)을(를) 사용하여 코드 Git 저장소를 설정합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425713/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3434618/?learn=on&captions=kor)

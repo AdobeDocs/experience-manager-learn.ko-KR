@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Edge Delivery Services을 사용하여 문서 작성으로 사이트를 마이그레이션하는 동안 효율성과 정확성을 극대화하도록 AEM Importer를 사용자 지정하는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429596/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3444252/?learn=on&captions=kor)
