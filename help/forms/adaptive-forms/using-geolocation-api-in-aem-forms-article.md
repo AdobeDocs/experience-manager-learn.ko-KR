@@ -95,12 +95,12 @@ showPosition 함수에서 Google API를 사용하여 주어진 위도와 경도�
 
 * AEM Forms 서버를 설치하고 시작합니다.
 > 이 기능은 AEM Forms 6.3 이상에서 테스트되었습니다.
-* [Google API 키 가져오기](https://developers.google.com/maps/documentation/javascript/get-api-key).
-* [이 문서와 관련된 자산을 AEM으로 가져옵니다.](assets/geolocationapi.zip)
-* [편집 모드에서 적응형 양식 단편을 엽니다.](http://localhost:4502/editor.html/content/forms/af/currentaddressfragment.html)
-* 이미지 선택 구성 요소에 대한 규칙 편집기를 엽니다.
-* &lt;your_api_key>를 Google API 키로 바꿉니다.
-* 변경 사항을 저장합니다.
-* [양식을 미리 봅니다](http://localhost:4502/content/dam/formsanddocuments/currentaddressfragment/jcr:content?wcmmode=disabled).
-* &quot;지리적 위치&quot; 아이콘을 클릭합니다.
-* 양식은 현재 위치로 채워야 합니다.
+>* [Google API 키 가져오기](https://developers.google.com/maps/documentation/javascript/get-api-key).
+>* [이 문서와 관련된 자산을 AEM으로 가져옵니다.](assets/geolocationapi.zip)
+>* [편집 모드에서 적응형 양식 단편을 엽니다.](http://localhost:4502/editor.html/content/forms/af/currentaddressfragment.html)
+>* 이미지 선택 구성 요소에 대한 규칙 편집기를 엽니다.
+>* &lt;your_api_key>를 Google API 키로 바꿉니다.
+>* 변경 사항을 저장합니다.
+>* [양식을 미리 봅니다](http://localhost:4502/content/dam/formsanddocuments/currentaddressfragment/jcr:content?wcmmode=disabled).
+>* &quot;지리적 위치&quot; 아이콘을 클릭합니다.
+>* 양식은 현재 위치로 채워야 합니다.

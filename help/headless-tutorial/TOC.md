@@ -61,7 +61,7 @@ ht-degree: 13%
       + [AEM 호스트](./graphql/deployment/configurations/aem-hosts.md)
       + [CORS](./graphql/deployment/configurations/cors.md)
       + [Dispatcher 필터](./graphql/deployment/configurations/dispatcher-filters.md)
-+ {#how-to}하는 방법
++ 하는 방법{#how-to}
    + [서식 있는 텍스트](./graphql/how-to/rich-text.md)
    + [이미지](./graphql/how-to/images.md)
    + [현지화된 콘텐츠](./graphql/how-to/localized-content.md)
@@ -101,7 +101,7 @@ ht-degree: 13%
       + [3 - 고정 구성 요소](./spa-editor/remote-spa/spa-fixed-component.md)
       + [4 - 컨테이너 구성 요소](./spa-editor/remote-spa/spa-container-component.md)
       + [5 - 동적 경로](./spa-editor/remote-spa/spa-dynamic-routes.md)
-   + {#how-to}하는 방법
+   + 하는 방법{#how-to}
       + [AEM React Editable Components v2](./spa-editor/how-to/react-core-components-v2.md)
 + 토큰 기반 인증 {#authentication}
    + [개요](./authentication/overview.md)

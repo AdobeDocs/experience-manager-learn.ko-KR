@@ -59,28 +59,38 @@ WKND 사이트는 홈 페이지를 다시 디자인하고 현재 홈 페이지 �
 1. 마케터는 리디렉션 오퍼를 경험으로 사용하고, 성공 목표와 지표가 추가된 새 홈 페이지에 할당된 100% 웹 사이트 트래픽을 사용하여 A/B 타겟 활동을 만듭니다.
    1. Adobe Target 창에서 **활동** 탭으로 이동합니다.
    2. **활동 만들기** 단추를 클릭하고 **A/B 테스트**(으)로 활동 유형을 선택합니다.
+
       ![Adobe Target - 활동 만들기](assets/personalization-use-case-2/create-ab-activity.png)
    3. **웹** 채널을 선택하고 **시각적 경험 작성기**&#x200B;를 선택합니다.
-   4. **활동 URL**&#x200B;을 입력하고 **다음**을 클릭하여 시각적 경험 작성기를 엽니다.
+   4. **활동 URL**&#x200B;을 입력하고 **다음**&#x200B;을 클릭하여 시각적 경험 작성기를 엽니다.
+
       ![Adobe Target - 활동 만들기](assets/personalization-use-case-2/create-activity-ab-name.png)
-   5. **시각적 경험 작성기**&#x200B;를 로드하려면 브라우저에서 **안전하지 않은 스크립트 로드 허용**을(를) 활성화하고 페이지를 다시 로드하십시오.
+   5. **시각적 경험 작성기**&#x200B;를 로드하려면 브라우저에서 **안전하지 않은 스크립트 로드 허용**&#x200B;을(를) 활성화하고 페이지를 다시 로드하십시오.
+
       ![경험 타깃팅 활동](assets/personalization-use-case-1/load-unsafe-scripts.png)
    6. Visual Experience Composer 편집기에서 WKND Site 홈 페이지가 열려 있습니다.
+
       ![VEC](assets/personalization-use-case-2/vec.png)
    7. **경험 B** 위로 마우스를 가져간 후 다른 옵션 보기를 선택하십시오.
+
       ![경험 B](assets/personalization-use-case-2/redirect-url.png)
    8. **URL로 리디렉션** 옵션을 선택하고 새 WKND 홈 페이지의 URL을 입력합니다. (http://localhost:4503/content/wknd/en1.html)
+
       ![경험 B](assets/personalization-use-case-2/redirect-url-2.png)
    9. 변경 내용을 **저장**&#x200B;하고 다음 활동 만들기 단계를 계속합니다.
-   10. **트래픽 할당 방법**&#x200B;을 수동으로 선택하고 **경험 B**에 100% 트래픽을 할당합니다.
-      ![경험 B 트래픽](assets/personalization-use-case-2/traffic.png)
+   10. **트래픽 할당 방법**&#x200B;을 수동으로 선택하고 **경험 B**&#x200B;에 100% 트래픽을 할당합니다.
+
+       ![경험 B 트래픽](assets/personalization-use-case-2/traffic.png)
    11. **다음**&#x200B;을 클릭합니다.
-   12. 활동에 대한 **목표 지표**를 제공하고 A/B 테스트를 저장하고 닫습니다.
-      ![A/B 테스트 목표 지표](assets/personalization-use-case-2/goal-metric.png)
+   12. 활동에 대한 **목표 지표**&#x200B;를 제공하고 A/B 테스트를 저장하고 닫습니다.
+
+       ![A/B 테스트 목표 지표](assets/personalization-use-case-2/goal-metric.png)
    13. 활동에 대한 이름(**WKND 홈 페이지 다시 디자인**)을 입력하고 변경 사항을 저장하십시오.
-   14. 활동 세부 정보 화면에서 활동을 **활성화**하세요.
-      ![활동 활성화](assets/personalization-use-case-2/ab-activate.png)
+   14. 활동 세부 정보 화면에서 활동을 **활성화**&#x200B;하세요.
+
+       ![활동 활성화](assets/personalization-use-case-2/ab-activate.png)
    15. WKND 홈 페이지(http://localhost:4503/content/wknd/en.html)로 이동한 다음 다시 설계된 WKND 사이트 홈 페이지(http://localhost:4503/content/wknd/en1.html)로 리디렉션됩니다.
+
       ![다시 디자인된 WKND 홈 페이지](assets/personalization-use-case-2/WKND-home-page-redesign.png)
 
 ## 요약

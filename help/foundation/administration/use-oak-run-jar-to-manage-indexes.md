@@ -74,7 +74,7 @@ ht-degree: 0%
 * 이 인덱싱은 클러스터의 단일 AEM 인스턴스에 대해서만 실행해야 합니다.
 * 저장소 순회가 단일 [!DNL MongoDB] 노드에서만 수행되므로 [!DNL MongoMK]의 온라인 인덱싱은 실행 중인 AEM 클러스터에 대해 실행해도 안전합니다. 다른 노드에서는 성능에 큰 영향을 주지 않고 요청을 계속 제공할 수 있습니다.
 
-[!DNL MongoMK]의 온라인 인덱싱을 수행하는 [!DNL oak-run.jar] 인덱스 명령은 세그먼트 저장소 매개 변수가 노드 저장소를 포함하는 [!DNL MongoDB] 인스턴스를 가리키는 것과 다른  [!DNL oak-run.jar]](#tarmkonlineindexingwithoakrunjar)을(를) 사용하는  [!DNL TarMK] 온라인 인덱싱과 [동일합니다.
+[!DNL MongoMK]의 온라인 인덱싱을 수행하는 [!DNL oak-run.jar] 인덱스 명령은 세그먼트 저장소 매개 변수가 노드 저장소를 포함하는 [!DNL MongoDB] 인스턴스를 가리키는 것과 다른  [!DNL oak-run.jar][&#128279;](#tarmkonlineindexingwithoakrunjar)을(를) 사용하는  [!DNL TarMK] 온라인 인덱싱과 동일합니다.
 
 ```
 java -jar oak-run*.jar index

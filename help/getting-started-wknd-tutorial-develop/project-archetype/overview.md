@@ -57,7 +57,7 @@ Adobe Experience Manager(AEM)을 처음 사용하는 개발자를 위해 설계�
 
 >[!NOTE]
 >
-> AEM as a Cloud Service을 처음 사용하십니까?**** AEM as a Cloud Service SDK을 사용하여 로컬 개발 환경을 설정하는 방법에 대한 [다음 안내서를 확인하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=ko).
+> AEM as a Cloud Service을 처음 사용하십니까?**&#x200B;** AEM as a Cloud Service SDK을 사용하여 로컬 개발 환경을 설정하는 방법에 대한 [다음 안내서를 확인하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=ko).
 >
 > **AEM 6.5를 처음 사용하십니까?** 로컬 개발 환경 설정에 대한 [다음 안내서를 확인하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=ko).
 

@@ -23,7 +23,7 @@ ht-degree: 0%
 
 CDN에서 캐시된 컨텐츠는 요청이 Apache/dispatcher 또는 AEM 게시로 돌아올 때까지 기다릴 필요가 없는 웹 사이트 사용자가 경험하는 지연을 줄입니다. 이를 고려하여 CDN 캐시 적중률을 최적화하여 CDN에서 캐시할 수 있는 컨텐츠의 양을 최대화하는 것이 좋습니다.
 
-최적화를 위해 AEM as a Cloud Service에서 제공한 **CDN 로그**&#x200B;를 분석하고 **캐시 적중률**, **MISS _및_PASS _캐시 유형**의 상위 URL을 얻는 방법에 대해 알아봅니다._
+최적화를 위해 AEM as a Cloud Service에서 제공한 **CDN 로그**&#x200B;를 분석하고 **캐시 적중률**, **MISS _및_PASS _캐시 유형**&#x200B;의 상위 URL을 얻는 방법에 대해 알아봅니다._
 
 
 CDN 로그는 `url`, `cache`을(를) 포함한 다양한 필드가 포함된 JSON 형식으로 사용할 수 있습니다. 자세한 내용은 [CDN 로그 형식](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/logging.html?lang=en#cdn-log:~:text=Toggle%20Text%20Wrapping-,Log%20Format,-The%20CDN%20logs)을 참조하십시오. `cache` 필드는 캐시의 _상태_&#x200B;에 대한 정보를 제공하며 가능한 값은 HIT, MISS 또는 PASS입니다. 가능한 값에 대한 세부 사항을 검토해 보겠습니다.

@@ -43,17 +43,17 @@ AEM 적응형 Forms과 함께 CAPTCHA 추가 및 사용
 >작성자 인스턴스의 파일 시스템에 있는 번들 ID로 이동합니다
 >
 >* &lt;author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle20/data
-* HMAC 및 마스터 파일 복사
+>* HMAC 및 마스터 파일 복사
 >
-게시 인스턴스에서 [felix 웹 콘솔](http://localhost:4502/system/console/bundles)을 엽니다. com.adobe.granite.crypto.file 번들을 검색합니다. 번들 ID를 확인합니다
+>게시 인스턴스에서 [felix 웹 콘솔](http://localhost:4502/system/console/bundles)을 엽니다. com.adobe.granite.crypto.file 번들을 검색합니다. 번들 ID를 확인합니다
 >
-게시 인스턴스의 파일 시스템에 있는 번들 ID로 이동합니다
+>게시 인스턴스의 파일 시스템에 있는 번들 ID로 이동합니다
 >
-* &lt;publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle20/data
-* 기존 HMAC 및 마스터 파일을 삭제합니다.
-* 작성자 인스턴스에서 복사한 HMAC 및 마스터 파일 붙여넣기
+>* &lt;publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle20/data
+>* 기존 HMAC 및 마스터 파일을 삭제합니다.
+>* 작성자 인스턴스에서 복사한 HMAC 및 마스터 파일 붙여넣기
 >
-AEM 게시 서버 다시 시작
+>AEM 게시 서버 다시 시작
 
 ## 지원 자료 {#supporting-materials}
 

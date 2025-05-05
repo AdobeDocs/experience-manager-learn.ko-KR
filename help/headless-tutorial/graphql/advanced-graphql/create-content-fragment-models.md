@@ -123,7 +123,7 @@ Adobe Experience Manager에는 몇 가지 기본 제공 유효성 검사 메서�
 
 1. 이미지 파일 크기와 크기를 제한하려면 콘텐츠 참조 필드에 대한 몇 가지 유효성 검사 옵션을 살펴보겠습니다.
 
-   **지정된 파일 크기만 수락**에서 &quot;작거나 같음&quot;을 선택하면 아래에 추가 필드가 나타납니다.
+   **지정된 파일 크기만 수락**&#x200B;에서 &quot;작거나 같음&quot;을 선택하면 아래에 추가 필드가 나타납니다.
    ![지정된 파일 크기만 수락](assets/define-content-fragment-models/accept-specified-file-size.png)
 
 1. **Max**&#x200B;에 &quot;5&quot;를 입력하고 **단위 선택**&#x200B;에 &quot;메가바이트(MB)&quot;를 선택합니다. 이 유효성 검사에서는 지정된 크기의 이미지만 선택할 수 있습니다.

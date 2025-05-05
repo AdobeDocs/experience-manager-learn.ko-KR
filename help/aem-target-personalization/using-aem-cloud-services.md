@@ -25,7 +25,7 @@ ht-degree: 1%
 >
 > Adobe Target이 있는 AEM 레거시 Cloud Service은 AEM에서 Target으로 컨텐츠를 게시하기 위해 AEM 작성자와 Adobe Target 백엔드 연결을 직접 설정하는 데 **전용**&#x200B;입니다. Adobe Experience Platform의 태그는 AEM에서 제공하는 공개 웹 사이트 경험에 Adobe Target을 노출하는 데 사용됩니다.
 
-AEM Experience Fragment 오퍼를 사용하여 개인화 활동을 지원하기 위해, 다음 장으로 이동하고 레거시 클라우드 서비스를 사용하여 AEM을 Adobe Target과 통합합니다. 이 통합은 AEM에서 Target으로 경험 조각을 HTML/JSON 오퍼로 푸시하고 Target 오퍼를 AEM과 동기화 상태로 유지하는 데 필요합니다. 이 통합은 개요 섹션](./overview.md#personalization-using-aem-experience-fragment)에서 설명한 [시나리오 1을 구현하는 데 필요합니다.
+AEM Experience Fragment 오퍼를 사용하여 개인화 활동을 지원하기 위해, 다음 장으로 이동하고 레거시 클라우드 서비스를 사용하여 AEM을 Adobe Target과 통합합니다. 이 통합은 AEM에서 Target으로 경험 조각을 HTML/JSON 오퍼로 푸시하고 Target 오퍼를 AEM과 동기화 상태로 유지하는 데 필요합니다. 이 통합은 개요 섹션[&#128279;](./overview.md#personalization-using-aem-experience-fragment)에서 설명한 시나리오 1을 구현하는 데 필요합니다.
 
 ## 사전 요구 사항
 

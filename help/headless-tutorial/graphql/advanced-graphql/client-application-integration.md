@@ -86,7 +86,7 @@ ht-degree: 1%
    > 
    > 위의 지침은 React 앱을 **AEM Publish 서비스**&#x200B;에 연결하는 것이지만, **AEM 작성자 서비스**&#x200B;에 연결하여 대상 AEM as a Cloud Service 환경에 대한 로컬 개발 토큰을 얻는 것입니다.
    >
-   > 기본 인증을 사용하여 AEMaaCS SDK](/help/headless-tutorial/graphql/quick-setup/local-sdk.md)를 사용하여 [로컬 작성자 인스턴스에 앱을 연결할 수도 있습니다.
+   > 기본 인증을 사용하여 AEMaaCS SDK[&#128279;](/help/headless-tutorial/graphql/quick-setup/local-sdk.md)를 사용하여 로컬 작성자 인스턴스에 앱을 연결할 수도 있습니다.
 
 
 1. 터미널을 열고 다음 명령을 실행합니다.

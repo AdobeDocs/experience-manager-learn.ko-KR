@@ -186,7 +186,7 @@ document.body.innerHTML=`<picture>
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418556/?quality=12&learn=on)
 
-srcset](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset)이(가) 있는 [Img 요소는 `sizes` 특성과 함께 사용하여 화면 크기별로 다른 이미지 에셋을 제공합니다. 이미지 세트는 다양한 화면 크기에 대해 다양한 이미지 에셋을 제공할 때 유용합니다.
+srcset[&#128279;](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset)이(가) 있는 Img 요소는 `sizes` 특성과 함께 사용하여 화면 크기별로 다른 이미지 에셋을 제공합니다. 이미지 세트는 다양한 화면 크기에 대해 다양한 이미지 에셋을 제공할 때 유용합니다.
 
 ### 그림 요소
 

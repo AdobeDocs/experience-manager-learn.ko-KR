@@ -48,7 +48,7 @@ Azure 스토리지 컨테이너와 상호 작용할 수 있는 인증 방법인 
 
 ## Blob SAS 토큰 및 저장소 URI를 제공합니다.
 
-코드를 보다 일반화하기 위해 아래 표시된 대로 OSGi 구성을 사용하여 두 속성을 구성할 수 있습니다. _**aemformstutorial**_&#x200B;은(는) 저장소 계정의 이름이고 _**formsubmissions**_은(는) 데이터를 저장할 컨테이너입니다.
+코드를 보다 일반화하기 위해 아래 표시된 대로 OSGi 구성을 사용하여 두 속성을 구성할 수 있습니다. _&#x200B;**aemformstutorial**&#x200B;_&#x200B;은(는) 저장소 계정의 이름이고 _&#x200B;**formsubmissions**&#x200B;_은(는) 데이터를 저장할 컨테이너입니다.
 스토리지 URI 끝에 /가 있고 SAS 토큰이 다음으로 시작하는지 확인하십시오.
 ![osgi-configuration](./assets/azure-portal-osgi-configuration.png)
 

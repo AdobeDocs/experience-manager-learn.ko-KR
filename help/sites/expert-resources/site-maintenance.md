@@ -59,7 +59,7 @@ AEM의 에셋이 삭제되면 기본 데이터 저장소 레코드에 대한 참
 
 워크플로 인스턴스 수를 최소화하면 워크플로 엔진의 성능이 향상되므로 완료되었거나 실행 중인 워크플로 인스턴스를 저장소에서 정기적으로 제거할 수 있습니다.
 
-#### [감사 로그 유지 관리](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/operations-audit-log.html
+#### [감사 로그 유지 관리] (https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/operations-audit-log.html
 
 감사 로깅에 적합한 AEM 이벤트는 많은 보관된 데이터를 생성합니다. 이 데이터는 복제, 에셋 업로드 및 기타 시스템 활동으로 인해 시간이 지남에 따라 빠르게 증가할 수 있습니다.
 

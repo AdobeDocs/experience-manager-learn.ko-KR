@@ -82,5 +82,5 @@ Adobe 관리 CDN 또는 고객 관리 CDN을 사용하여 도메인 이름을 �
 
 도메인 이름 관리 프로세스를 이해했으므로 아래 자습서에 따라 AEM as a Cloud Service 웹 사이트에 대한 사용자 정의 도메인 이름을 구현할 수 있습니다.
 
-**[Adobe 관리 CDN을 사용하는 사용자 지정 도메인 이름](./custom-domain-name-with-adobe-managed-cdn.md)**: 이 자습서에서는 사용자 지정 도메인 이름을 Adobe 관리 CDN을 사용하는 **AEM as a Cloud Service 웹 사이트에 추가**하는 방법에 대해 알아봅니다.
+**[Adobe 관리 CDN을 사용하는 사용자 지정 도메인 이름](./custom-domain-name-with-adobe-managed-cdn.md)**: 이 자습서에서는 사용자 지정 도메인 이름을 Adobe 관리 CDN을 사용하는 **AEM as a Cloud Service 웹 사이트에 추가**&#x200B;하는 방법에 대해 알아봅니다.
 **[고객 관리 CDN을 사용한 사용자 지정 도메인 이름](./custom-domain-names-with-customer-managed-cdn.md)**: 이 자습서에서는 고객 관리 CDN을 사용한 **AEM as a Cloud Service 웹 사이트에 사용자 지정 도메인 이름을 추가하는 방법**&#x200B;을 배웁니다.

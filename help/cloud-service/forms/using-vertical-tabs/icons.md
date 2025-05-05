@@ -134,7 +134,7 @@ data-icon-name이라는 사용자 지정 데이터 속성을 탭 이름 값으�
 프론트엔드 파이프라인을 사용하여 업데이트된 테마를 배포합니다.
 아래 그림과 같이 세로 탭 구성 요소에 대한 스타일 변형을 만듭니다
 ![style-variation](assets/verticaltab-style-variation.png)
-css 클래스 _**cmp-verticaltab—marketing**_과(와) 연결된 Marketing이라는 스타일 변형을 만들었습니다.
+css 클래스 _&#x200B;**cmp-verticaltab—marketing**&#x200B;_과(와) 연결된 Marketing이라는 스타일 변형을 만들었습니다.
 세로 탭 구성 요소를 사용하여 적응형 양식을 만듭니다. 세로 탭 구성 요소를 마케팅 스타일 변형과 연결합니다.
 수직 탭에 탭 두 개를 추가하고 홈, 패밀리와 같이 아이콘 맵에 정의된 이미지와 일치하도록 탭 이름을 지정합니다.
 ![home-icon](assets/tab-name.png)

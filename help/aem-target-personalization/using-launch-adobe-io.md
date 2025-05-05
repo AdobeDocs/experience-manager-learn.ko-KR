@@ -126,7 +126,7 @@ Target 확장은 다음 두 가지 주요 부분으로 구성됩니다.
 2. 개발에서 스테이징 환경으로의 변경 사항을 Publish 합니다.
    >[!VIDEO](https://video.tv.adobe.com/v/28419?quality=12&learn=on)
 3. **스테이징용 빌드 옵션**&#x200B;을(를) 실행합니다.
-4. 빌드가 완료되면 **게시용으로 승인**을 실행하여 변경 내용을 스테이징 환경에서 프로덕션 환경으로 이동합니다.
+4. 빌드가 완료되면 **게시용으로 승인**&#x200B;을 실행하여 변경 내용을 스테이징 환경에서 프로덕션 환경으로 이동합니다.
    ![프로덕션에 스테이징](assets/using-launch-adobe-io/build-staging.png)
 5. 마지막으로 **프로덕션에 빌드 및 Publish** 옵션을 실행하여 변경 내용을 프로덕션에 푸시합니다.
    ![프로덕션에 빌드 및 Publish](assets/using-launch-adobe-io/build-and-publish.png)

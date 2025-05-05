@@ -207,6 +207,7 @@ Deploy to 단계를 디버깅하기 전에 [AEM as a Cloud Service 로그](./log
 1. 배포의 일부인 하나 이상의 콘텐츠 패키지가 `/var`에 쓰기되는지 확인하고 있습니다.
 1. 기본(굵게) 배포 큐가 다음 위치에서 차단되었는지 확인:
    + AEM 작성자 > 도구 > 배포 > 배포
+
      ![차단된 배포 큐](./assets/build-and-deployment/deploy-to__var--distribution.png)
 1. 후속 배포가 실패하면 로그 다운로드 버튼을 사용하여 Cloud Manager의 &quot;배포 대상&quot; 로그를 다운로드합니다.
 

@@ -160,7 +160,7 @@ ht-degree: 3%
 
 1. 왼쪽 레일에서 **내 프로젝트**&#x200B;를 확장하고 **영어**&#x200B;를 탭합니다.
 
-1. 콘텐츠 조각 옆에 있는 확인란을 탭하고 **게시**를 탭합니다.
+1. 콘텐츠 조각 옆에 있는 확인란을 탭하고 **게시**&#x200B;를 탭합니다.
    ![콘텐츠 조각 게시](assets/author-content-fragments/publish-content-fragment.png)
 
 ## 축하합니다! {#congratulations}

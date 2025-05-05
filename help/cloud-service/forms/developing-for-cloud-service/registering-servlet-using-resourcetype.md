@@ -35,7 +35,7 @@ IntelliJ에서 AEM 뱅킹 프로젝트를 시작합니다. 아래 스크린샷�
 
 ## 샘플 서블릿
 
-다음 서블릿은 Sling 리소스 유형에 바인딩되어 있습니다. _**azure/fetchchoices**_
+다음 서블릿은 Sling 리소스 유형에 바인딩되어 있습니다. _&#x200B;**azure/fetchchoices**&#x200B;_
 
 
 

@@ -58,7 +58,7 @@ function handleFiles(formData) {
 }
 ```
 
-**_/bin/ExtractDataFromPDF_**에 탑재된 서블릿은 PDF 파일에서 데이터를 추출하고 추출된 데이터가 저장된 crx 노드의 경로를 반환합니다.
+**_/bin/ExtractDataFromPDF_**&#x200B;에 탑재된 서블릿은 PDF 파일에서 데이터를 추출하고 추출된 데이터가 저장된 crx 노드의 경로를 반환합니다.
 그런 다음 [GuideBridge setData](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html#setData__anchor) 메서드를 사용하여 적응형 양식의 데이터를 설정합니다.
 
 ## 다음 단계

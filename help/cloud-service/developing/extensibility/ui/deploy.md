@@ -29,7 +29,7 @@ AEM as a Cloud Service 환경에서 사용하려면 확장 App Builder 앱을 �
    + __Stage__ 작업 영역은 개발자 작업 영역으로 작동합니다. 스테이지 작업 영역에 배포된 확장은 AEM as a Cloud Service에서 사용할 수 없습니다.
 Adobe Developer Console 작업 영역은 AEM as a Cloud Service 환경 유형과 직접적인 상관 관계가 없습니다.
 + 프로덕션 작업 영역에 배포된 확장은 확장이 존재하는 Adobe 조직의 모든 AEM as a Cloud Service 환경에 표시됩니다.
-AEM as a Cloud Service 호스트 이름](https://developer.adobe.com/uix/docs/guides/publication/#enabling-extension-only-on-specific-aem-environments)을(를) 확인하는 [조건부 논리를 추가하여 확장이 등록된 환경으로 제한할 수 없습니다.
+AEM as a Cloud Service 호스트 이름[&#128279;](https://developer.adobe.com/uix/docs/guides/publication/#enabling-extension-only-on-specific-aem-environments)을(를) 확인하는 조건부 논리를 추가하여 확장이 등록된 환경으로 제한할 수 없습니다.
 + AEM as a Cloud Service에서 여러 확장을 사용할 수 있습니다. Adobe은 단일 비즈니스 목표를 해결하기 위해 각 확장 App Builder 앱을 사용할 것을 권장합니다. 즉, 단일 확장 App Builder 앱은 일반적인 비즈니스 목표를 지원하는 여러 확장 지점을 구현할 수 있습니다.
 
 ## 초기 배포

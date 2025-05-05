@@ -28,7 +28,7 @@ ht-degree: 18%
    + [벌크 메타데이터](document-authoring/bulk-metadata.md)
    + [페이지 메타데이터](document-authoring/page-metadata.md)
    + [작성자 인증](document-authoring/author-authentication.md)
-   + {#how-to}하는 방법
+   + 하는 방법{#how-to}
       + [문서 감사](./document-authoring/how-to/document-audit.md)
       + [문서 권한](./document-authoring/how-to/document-permissions.md)
       + [문서 버전](./document-authoring/how-to/document-versions.md)
@@ -73,7 +73,7 @@ ht-degree: 18%
    + [스타일 시스템](page-authoring/style-system-feature-video-use.md)
    + [타임워프](page-authoring/timewarp-feature-video-use.md)
    + [론치](page-authoring/launches.md)
-   + 피어 {#expert-advice}에서 학습
+   + 피어에서 학습 {#expert-advice}
       + [사이트 계층 구조 팁](page-authoring/expert-advice/site-hierarchy.md)
 + 생성형 AI {#generative-ai}
    + [변형 생성](./generative-ai/generate-variations.md)
@@ -170,7 +170,7 @@ ht-degree: 18%
       + [FPID 생성](integrations/platform/fpid.md)
       + [웹 SDK](integrations/platform/web-sdk.md)
       + [Platform Web SDK을 사용한 Analytics](integrations/platform/analytics-using-web-sdk.md)
-   + Adobe Experience Platform {#experience-platform-data-collection-tags}의 태그
+   + Adobe Experience Platform의 태그 {#experience-platform-data-collection-tags}
       + [개요](integrations/experience-platform/data-collection/tags/overview.md)
       + [태그 속성 만들기](integrations/experience-platform/data-collection/tags/create-tag-property.md)
       + [IMS를 사용하여 AEM 및 태그 속성 연결](integrations/experience-platform/data-collection/tags/connect-aem-tag-property-using-ims.md)
@@ -192,7 +192,7 @@ ht-degree: 18%
       + [경험 조각 오퍼를 사용하여 Target 활동 만들기](integrations/adobe-target/create-target-activity.md)
       + [시각적 경험 작성기를 사용한 Personalization](integrations/adobe-target/personalization-using-vec.md)
       + [전체 웹 페이지 경험의 Personalization](integrations/adobe-target/personalization-web-page.md)
-+ 피어 {#expert-resources}에서 학습
++ 피어에서 학습 {#expert-resources}
    + [개요](expert-resources/learn-from-your-peers-overview.md)
    + [AEM Sites 성숙도 평가](expert-resources/maturity-assessment.md)
    + [사이트 유지 관리](expert-resources/site-maintenance.md)

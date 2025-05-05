@@ -37,7 +37,7 @@ ht-degree: 0%
 
    * **AEM Forms 6.3**&#x200B;을 사용하는 경우 콜백 URL은 https://gbedekar-w7-1:6443/etc/cloudservices/fdm/createlead.html입니다. 이 URL에서 createlead 는 내 양식 데이터 모델의 이름입니다.
 
-   * AEM Forms 6**4**를 사용하는 경우 콜백 URL은 https://gbedekar-w7-:6443/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html입니다.
+   * AEM Forms 6&#x200B;**4**&#x200B;를 사용하는 경우 콜백 URL은 https://gbedekar-w7-:6443/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html입니다.
 
 이 예에서 gbedekar -w7-1:6443은 내 서버의 이름과 AEM이 실행 중인 포트입니다.
 
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 * &quot;만들기&quot; 클릭
 
-**다음 화면 **
+**다음 화면 &#x200B;**
 
 * Swagger 소스 파일에 대한 옵션으로 &quot;파일&quot;을 선택합니다. 이전에 다운로드한 파일을 찾습니다.
 * 인증 유형을 OAuth2.0으로 선택
@@ -69,7 +69,7 @@ ht-degree: 0%
 * OAuth Url은 - **https://login.salesforce.com/services/oauth2/authorize**&#x200B;입니다.
 * 토큰 URL 새로 고침 - **https://na5.salesforce.com/services/oauth2/token**
 * **액세스 토큰 Url - https://na5.salesforce.com/services/oauth2/token**
-* 인증 범위: ** api   chatter_api 전체 id   openid   refresh_token visualforce 웹**
+* 인증 범위: **&#x200B; api   chatter_api 전체 id   openid   refresh_token visualforce 웹**
 * 인증 핸들러: 권한 부여 전달자
 * &quot;OAUTH에 연결 &quot;.모든 것이 잘 작동하면 오류가 표시되지 않습니다
 
@@ -102,7 +102,7 @@ SFDC에서 리드 개체를 만들려면 POST 서비스를 포함하도록 양�
    * OAuth Url은 - **https://login.salesforce.com/services/oauth2/authorize**&#x200B;입니다.
    * 토큰 URL 새로 고침 - **https://na5.salesforce.com/services/oauth2/token**
    * 액세스 토큰 Ur **l - https://na5.salesforce.com/services/oauth2/token**
-   * 인증 범위: ** api chatter_api 전체 id openid refresh_token visualforce 웹**
+   * 인증 범위: **&#x200B; api chatter_api 전체 id openid refresh_token visualforce 웹**
    * 인증 핸들러: 권한 부여 전달자
    * &quot;OAuth에 연결&quot; 버튼을 클릭합니다. 오류가 표시되면 이전 단계를 검토하여 모든 정보가 정확하게 입력되었는지 확인하십시오.
 

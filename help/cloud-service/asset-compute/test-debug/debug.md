@@ -98,6 +98,7 @@ _wskdebug를 사용하여 Asset Compute 작업자 디버깅의 클릭스루(오�
 1. [작업 영역별 환경 변수](../deploy/runtime.md)이(가) 디버깅이 필요한 작업 영역을 기준으로 `AIO_runtime_namespace` 및 `AIO_runtime_auth`을(를) 통해 설정되어 있는지 확인하십시오.
 1. 명령줄에서 `aio app logs`을(를) 실행합니다.
    + 작업 영역에서 트래픽이 많이 발생하는 경우 `--limit` 플래그를 통해 활성화 로그 수를 확장합니다.
+
      `$ aio app logs --limit=25`
 1. 가장 최근(제공된 `--limit`개까지) 활성화 로그가 검토용 명령의 출력으로 반환됩니다.
 

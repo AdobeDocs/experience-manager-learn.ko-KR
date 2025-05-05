@@ -87,7 +87,7 @@ AEM as a Cloud Service SDK 또는 AEM SDK에는 개발을 위해 로컬에서 AE
    + `java -jar aem-author-p4502.jar`
       + 관리자 암호를 `admin`(으)로 제공하십시오. 모든 관리자 암호는 사용할 수 있지만, 로컬 개발에 기본값을 사용하여 재구성할 필요가 없도록 하는 것이 좋습니다.
 
-   *두 번 클릭](#troubleshooting-double-click)하여 AEM을 Cloud Service Quickstart Jar [로 시작할 수*&#x200B;없습니다.
+   *두 번 클릭[&#128279;](#troubleshooting-double-click)하여 AEM을 Cloud Service Quickstart Jar 로 시작할 수*&#x200B;없습니다.
 1. 웹 브라우저의 [http://localhost:4502](http://localhost:4502)에서 로컬 AEM 작성자 서비스에 액세스합니다
 
 >[!BEGINTABS]
@@ -132,7 +132,7 @@ $ java -jar aem-author-p4502.jar
    + `java -jar aem-publish-p4503.jar`
       + 관리자 암호를 `admin`(으)로 제공하십시오. 모든 관리자 암호는 사용할 수 있지만, 로컬 개발에 기본값을 사용하여 재구성할 필요가 없도록 하는 것이 좋습니다.
 
-   *두 번 클릭](#troubleshooting-double-click)하여 AEM을 Cloud Service Quickstart Jar [로 시작할 수*&#x200B;없습니다.
+   *두 번 클릭[&#128279;](#troubleshooting-double-click)하여 AEM을 Cloud Service Quickstart Jar 로 시작할 수*&#x200B;없습니다.
 1. 웹 브라우저의 [http://localhost:4503](http://localhost:4503)에서 로컬 AEM 게시 서비스에 액세스합니다
 
 >[!BEGINTABS]

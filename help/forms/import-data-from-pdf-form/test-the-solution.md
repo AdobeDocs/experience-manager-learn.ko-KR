@@ -23,4 +23,4 @@ ht-degree: 0%
 * OSGi 웹 콘솔을 사용하여 번들을 다운로드하고 배포합니다[사용자 지정 문서 서비스 번들](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
 * OSGi 웹 콘솔을 사용하여 번들을 다운로드하고 배포합니다. [서비스 사용자 번들로 개발](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 * OSGi 웹 콘솔을 사용하여 번들을 다운로드하여 배포[pdf 파일에서 데이터 가져오기](./assets/onlineToOffline.core-1.0.0-SNAPSHOT.jar)
-* _**Apache Sling 서비스 사용자 매퍼 서비스**_ OSGi 구성 콘솔에서 _**DevelopingWithServiceUser.core:getresourceresolver=data**_ 항목을 추가합니다.
+* _&#x200B;**Apache Sling 서비스 사용자 매퍼 서비스**&#x200B;_ OSGi 구성 콘솔에서 _&#x200B;**DevelopingWithServiceUser.core:getresourceresolver=data**&#x200B;_ 항목을 추가합니다.

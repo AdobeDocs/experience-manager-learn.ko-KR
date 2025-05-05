@@ -120,7 +120,7 @@ Dispatcher의 팜 파일에는 구성 섹션이 있습니다.
 
 따라서 URI의 AEM 인스턴스를 방문하면 해당 인스턴스가 가져오는 내용이 표시됩니다.
 
-/libs/granite/dispatcher/content/vanityUrls.html](assets/disp-vanity-url/vanity-url-component.png "vanity-url-component")에서 렌더링된 컨텐츠의 ![스크린샷
+/libs/granite/dispatcher/content/vanityUrls.html![&#128279;](assets/disp-vanity-url/vanity-url-component.png "vanity-url-component")에서 렌더링된 컨텐츠의 스크린샷
 
 말 그대로 매우 간단한 목록입니다
 

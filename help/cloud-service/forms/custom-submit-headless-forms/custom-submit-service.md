@@ -35,7 +35,7 @@ AEM Forms에서는 대부분의 사용 사례를 충족하는 다양한 제출 �
 
 ## 사용자 정의 제출 서비스 작성{#Write-the-custom-submit-service}
 
-IntelliJ를 시작하고 AEM 프로젝트를 엽니다. 아래 스크린샷과 같이 **HandleRegistrationFormSubmission**이라는 새 Java 클래스를 만듭니다.
+IntelliJ를 시작하고 AEM 프로젝트를 엽니다. 아래 스크린샷과 같이 **HandleRegistrationFormSubmission**&#x200B;이라는 새 Java 클래스를 만듭니다.
 ![사용자 지정 제출 서비스](./assets/custom-submit-service.png)
 
 다음 코드는 서비스를 구현하기 위해 작성되었습니다
@@ -88,7 +88,7 @@ public class HandleRegistrationFormSubmission implements FormSubmitActionService
 
 ## 앱 아래에 crx 노드 만들기
 
-ui.apps 노드를 확장하면 아래 스크린샷과 같이 앱 노드 아래에 **HandleRegistrationFormSubmission**이라는 새 패키지가 만들어집니다
+ui.apps 노드를 확장하면 아래 스크린샷과 같이 앱 노드 아래에 **HandleRegistrationFormSubmission**&#x200B;이라는 새 패키지가 만들어집니다
 ![crx-node](./assets/crx-node.png)
 **HandleRegistrationFormSubmission**&#x200B;에 .content.xml이라는 파일을 만듭니다. 다음 코드를 복사하여 .content.xml에 붙여넣습니다
 

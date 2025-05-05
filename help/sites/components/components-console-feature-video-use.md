@@ -29,7 +29,7 @@ ht-degree: 1%
 * [!UICONTROL 정책]: 지정된 구성 요소와 연결된 템플릿에 대한 기존 정책을 표시합니다.
 * [!UICONTROL 라이브 사용량]: 구성 요소가 포함된 페이지 목록을 표시합니다.
 
-구성 요소 콘솔은 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL 구성 요소]**에 있습니다.
+구성 요소 콘솔은 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL 구성 요소]**&#x200B;에 있습니다.
 구성 요소 콘솔 URL(로컬 AEM 작성자): [http://localhost:4502/libs/wcm/core/content/sites/components.html](http://localhost:4502/libs/wcm/core/content/sites/components.html)
 
 ## 추가 리소스 {#additional-resources}

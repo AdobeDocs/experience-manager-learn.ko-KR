@@ -23,7 +23,7 @@ Adobe Experience Manager(AEM)는 동적이고 적응성 있는 웹 애플리케�
 
 이 예에서 HTL 스크립트는 `ParameterizedModel` Sling 모델에 두 개의 매개 변수를 보냅니다. 이 모델은 `getValue()` 메서드에서 이러한 매개 변수를 조작하고 표시할 결과를 반환합니다.
 
-이 예제에서는 두 개의 String 매개 변수를 전달하지만, `@RequestAttribute`](#sling-model-implementation)(으)로 주석을 단 [Sling 모델 필드 형식이 HTL에서 전달된 개체 또는 값의 형식과 일치하는 경우 어떤 형식이든 Sling 모델에 전달할 수 있습니다.
+이 예제에서는 두 개의 String 매개 변수를 전달하지만, `@RequestAttribute`[&#128279;](#sling-model-implementation)(으)로 주석을 단 Sling 모델 필드 형식이 HTL에서 전달된 개체 또는 값의 형식과 일치하는 경우 어떤 형식이든 Sling 모델에 전달할 수 있습니다.
 
 ```html
 <sly data-sly-use.myModel="${'com.example.core.models.ParameterizedModel' @ myParameterOne='Hello', myParameterTwo='World'}"

@@ -28,7 +28,7 @@ ht-degree: 1%
 
 ## 데이터베이스 만들기
 
-이 샘플은 MySQL 데이터베이스를 사용하여 적응형 양식 데이터를 저장합니다. 스키마 파일](assets/data-base-schema.sql)을(를) MySQL Workbench로 가져와서 [데이터베이스 스키마를 만들어야 합니다.
+이 샘플은 MySQL 데이터베이스를 사용하여 적응형 양식 데이터를 저장합니다. 스키마 파일[&#128279;](assets/data-base-schema.sql)을(를) MySQL Workbench로 가져와서 데이터베이스 스키마를 만들어야 합니다.
 
 ## 데이터 소스 만들기
 

@@ -28,4 +28,4 @@ AEM Assets 사용자 지정 비디오 썸네일을 사용하면 작성자가 생
 
 >[!NOTE]
 >
->Dynamic Media](https://experienceleague.adobe.com/docs/) 모드에서 [AEM 인스턴스를 실행해야 합니다.
+>Dynamic Media[&#128279;](https://experienceleague.adobe.com/docs/) 모드에서 AEM 인스턴스를 실행해야 합니다.

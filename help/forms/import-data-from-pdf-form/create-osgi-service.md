@@ -63,7 +63,7 @@ public String getFormData(Document pdfForm) {
 }
 ```
 
-다음은 적절한 네임스페이스로 _**topmostSubForm**_&#x200B;을(를) 추출하기 위해 작성된 유틸리티 함수입니다
+다음은 적절한 네임스페이스로 _&#x200B;**topmostSubForm**&#x200B;_&#x200B;을(를) 추출하기 위해 작성된 유틸리티 함수입니다
 
 ```java
 private static org.w3c.dom.Node getChildByTagName(org.w3c.dom.Node parent, String tagName) {

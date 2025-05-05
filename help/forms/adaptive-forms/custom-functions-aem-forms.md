@@ -77,7 +77,7 @@ js.txt를 열고 다음 코드를 붙여넣고 변경 사항을 저장합니다.
 functions.js
 ```
 
-#base=js 행은 JavaScript 파일이 있는 디렉토리를 지정합니다.
+&#x200B;#base=js 행은 JavaScript 파일이 있는 디렉토리를 지정합니다.
 아래 줄은 기본 위치를 기준으로 JavaScript 파일의 위치를 나타냅니다.
 
 사용자 지정 함수를 만드는 데 문제가 있으면 언제든지 AEM 인스턴스에서 [이 패키지를 다운로드하여 설치](assets/custom-functions.zip)할 수 있습니다.

@@ -71,7 +71,7 @@ Edge Delivery Services 웹 사이트 프로젝트의 개발 도구 및 프로세
 
 ## GitHub 리포지토리 복제
 
-AEM Edge Delivery Services 코드 프로젝트를 포함하는 새 코드 프로젝트 챕터](./1-new-code-project.md)에서 만든 [GitHub 리포지토리를 로컬 개발 환경에 복제합니다.
+AEM Edge Delivery Services 코드 프로젝트를 포함하는 새 코드 프로젝트 챕터[&#128279;](./1-new-code-project.md)에서 만든 GitHub 리포지토리를 로컬 개발 환경에 복제합니다.
 
 ![GitHub 리포지토리 복제](./assets/3-local-development-environment/github-clone.png)
 

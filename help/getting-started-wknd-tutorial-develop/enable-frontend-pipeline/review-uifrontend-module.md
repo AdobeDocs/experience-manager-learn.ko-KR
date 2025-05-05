@@ -56,7 +56,7 @@ ht-degree: 0%
 
 개발 단계에서는 `ui.frontend/src/main/webpack` 폴더에서 CSS, JS 파일을 업데이트하여 스타일링 및 리브랜딩과 같은 프런트 엔드 변경 작업을 수행합니다. 그런 다음 빌드 시간 동안 [webpack](https://webpack.js.org/) 모듈 번들러 및 maven 플러그인은 이러한 파일을 `ui.apps` 모듈에서 최적화된 AEM clientlib으로 바꿉니다.
 
-Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html)에서 [__전체 스택__ 파이프라인을 실행할 때 프론트엔드 변경 내용이 AEM as a Cloud Service 환경에 배포됩니다.
+Cloud Manager[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html)에서 __전체 스택__ 파이프라인을 실행할 때 프론트엔드 변경 내용이 AEM as a Cloud Service 환경에 배포됩니다.
 
 프론트엔드 리소스는 `/etc.clientlibs/`(으)로 시작하는 URI 경로를 통해 웹 브라우저에 전달되며 일반적으로 AEM Dispatcher 및 CDN에서 캐시됩니다.
 

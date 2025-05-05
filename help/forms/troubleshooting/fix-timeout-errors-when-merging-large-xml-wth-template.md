@@ -31,7 +31,7 @@ POST /services/OutputService/GeneratePdfOutput HTTP/1.1] com.adobe.fd.output.int
 
 * AEM 서버 중지
 * AEM 설치의 crx-quickstart 폴더에 **install** 폴더를 만듭니다.
-* 다음 콘텐츠로 **org.apache.aries.transaction.config**라는 파일을 만듭니다.
+* 다음 콘텐츠로 **org.apache.aries.transaction.config**&#x200B;라는 파일을 만듭니다.
 aries.transaction.timeout=&quot;1200&quot;
 를 클릭합니다. 요구 사항에 따라 시간 초과 값을 변경할 수 있습니다. 시간 제한 값은 초 단위입니다.
 

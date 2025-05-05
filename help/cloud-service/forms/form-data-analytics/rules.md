@@ -31,7 +31,7 @@ Tags 속성에서 2개의 새 [규칙](https://experienceleague.adobe.com/docs/p
 
 **필드 유효성 검사 오류** 규칙은 적응형 양식 필드에 유효성 검사 오류가 있을 때마다 트리거됩니다. 예를 들어, 전화 번호나 이메일이 예상 형식이 아닌 경우 유효성 검사 오류 메시지가 표시됩니다.
 
-스크린샷과 같이 이벤트를 _**Adobe Experience Manager Forms-Error**_(으)로 설정하여 필드 유효성 검사 오류 규칙을 구성합니다.
+스크린샷과 같이 이벤트를 _&#x200B;**Adobe Experience Manager Forms-Error**&#x200B;_(으)로 설정하여 필드 유효성 검사 오류 규칙을 구성합니다.
 
 
 
@@ -45,11 +45,11 @@ Adobe Analytics - 변수 설정 은 다음과 같이 구성됩니다
 
 적응형 양식이 성공적으로 제출될 때마다 양식 제출 규칙이 트리거됩니다.
 
-양식 제출 규칙이 _**Adobe Experience Manager Forms - 제출**_ 이벤트를 사용하여 구성되었습니다.
+양식 제출 규칙이 _&#x200B;**Adobe Experience Manager Forms - 제출**&#x200B;_ 이벤트를 사용하여 구성되었습니다.
 
 ![form-submit-rule](assets/form-submit-rule.png)
 
-양식 제출 규칙에서 데이터 요소 _**AppliancesStateOfResidence**_&#x200B;의 값은 prop5에 매핑되고 데이터 요소 FormTitle의 값은 prop8에 매핑됩니다.
+양식 제출 규칙에서 데이터 요소 _&#x200B;**AppliancesStateOfResidence**&#x200B;_&#x200B;의 값은 prop5에 매핑되고 데이터 요소 FormTitle의 값은 prop8에 매핑됩니다.
 
 Adobe Analytics - 변수 설정은 다음과 같이 구성됩니다.
 ![form-submit-rule-set-variables](assets/form-submit-set-variable.png)

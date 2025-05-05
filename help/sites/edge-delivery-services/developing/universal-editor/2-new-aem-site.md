@@ -30,9 +30,9 @@ AEM 사이트는 웹 사이트의 콘텐츠를 저장 및 작성하는 곳입니
    * 사이트 제목: `WKND (Universal Editor)`
    * 사이트 이름: `aem-wknd-eds-ue`
 
-      * 사이트 이름 값은 `paths.json`](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/path-mapping)에 추가된 사이트 경로 이름 [과(와) 일치해야 합니다.
+      * 사이트 이름 값은 `paths.json`[&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/path-mapping)에 추가된 사이트 경로 이름 과(와) 일치해야 합니다.
 
-2. **AEM 작성 사이트 서식 파일이 있는 Edge Delivery Services](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases)에서 최신 서식 파일을 가져옵니다**.[
+2. **AEM 작성 사이트 서식 파일이 있는 Edge Delivery Services[&#128279;](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases)에서 최신 서식 파일을 가져옵니다**.
 3. **GitHub 저장소 이름과 일치하도록 사이트 이름을**&#x200B;로 지정하고 GitHub URL을 저장소의 URL로 설정합니다.
 
 ## 미리 볼 새 사이트 게시

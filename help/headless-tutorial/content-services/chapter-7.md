@@ -27,7 +27,7 @@ ht-degree: 0%
 
 Android은 Windows, macOs 및 Linux에서 Android 에뮬레이터를 실행할 수 있는 기능, 그 인기 및 AEM 개발자가 잘 이해하는 언어인 Java로 작성할 수 있기 때문에 자습서에 사용됩니다.
 
-*자습서의 Android 모바일 앱은 Android 모바일 앱을 빌드하거나 Android 개발 모범 사례를 전달하는 방법을 지시하기 위한 것이 아니라 모바일 애플리케이션에서 AEM Content Services를 사용하는 방법을 설명하기 위한 것입니다.*****
+*자습서의 Android 모바일 앱은 Android 모바일 앱을 빌드하거나 Android 개발 모범 사례를 전달하는 방법을 지시하기 위한 것이 아니라 모바일 애플리케이션에서 AEM Content Services를 사용하는 방법을 설명하기 위한 것입니다.**&#x200B;***
 
 ### AEM Content Services가 모바일 앱 경험을 제공하는 방법
 

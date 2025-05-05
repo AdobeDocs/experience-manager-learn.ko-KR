@@ -43,7 +43,7 @@ Developer Console에 액세스하여 사용하려면 [Adobe의 Admin Console](ht
 1. Adobe 조직 전환기에서 Developer Console에서 검사할 환경과 관련된 Adobe 조직을 볼 수 있는지 확인합니다.
 1. Developer Console에 로그인하려면 개발자가 다음 역할 중 하나의 멤버여야 합니다.
    + [Cloud Manager 제품의 __개발자 - Cloud Service__ 제품 프로필](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-cloud-manager.html#assign-developer): 이 경우 개발자는 선택한 Developer Console URL에서 사용할 수 있는 환경의 전체 목록을 보게 됩니다. Cloud Manager에서 개발 환경 또는 RDE를 선택한 경우 동일한 프로그램의 다른 개발 환경 또는 RDE가 나타날 수 있습니다.
-   + __AEM 작성자__](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html#aem-product-profiles)의 [__AEM 관리자__ 제품 프로필: 이 경우 이전 글머리 기호에 설명된 환경 목록은 이 역할이 할당된 관련 제품 프로필로 제한됩니다.
+   + __AEM 작성자__[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html#aem-product-profiles)의 __AEM 관리자__ 제품 프로필: 이 경우 이전 글머리 기호에 설명된 환경 목록은 이 역할이 할당된 관련 제품 프로필로 제한됩니다.
 1. 개발자는 [__AEM 사용자__ 또는 __AEM 관리자__ AEM 작성자 및/또는 게시의 제품 프로필](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html#aem-product-profiles)의 멤버여야 합니다.
    + 이 멤버십이 없으면 [상태](#status) 덤프가 시간 초과되고 승인되지 않은 오류 401이 발생합니다.
 
@@ -54,7 +54,7 @@ Developer Console에 액세스하여 사용하려면 [Adobe의 Admin Console](ht
 다음을 확인하십시오.
 
 + Cloud Manager을 통해 선택한 환경에 대한 세 점을 클릭하여 올바른 Developer Console URL을 선택하고 Developer Console을 선택합니다.
-+ [Cloud Manager 제품의 __개발자 - Cloud Service__ 제품 프로필](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-cloud-manager.html#assign-developer)을 통해 전체 환경 목록을 확인하거나, 찾을 수 없는 환경에 대해 __AEM 작성자__](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html#aem-product-profiles)의 [__AEM 관리자__ 제품 프로필에 속해 있습니다.
++ [Cloud Manager 제품의 __개발자 - Cloud Service__ 제품 프로필](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-cloud-manager.html#assign-developer)을 통해 전체 환경 목록을 확인하거나, 찾을 수 없는 환경에 대해 __AEM 작성자__[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html#aem-product-profiles)의 __AEM 관리자__ 제품 프로필에 속해 있습니다.
 
 #### 401 상태를 덤프할 때 승인되지 않은 오류 발생
 

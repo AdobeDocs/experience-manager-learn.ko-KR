@@ -92,7 +92,7 @@ AEM 우수 사례를 사용하고 다음을 사용합니다.
 1. Apache Sling 모크스
 1. AEM Mocks 테스트 프레임워크(io.wcm 기준)
 
-**JUnit5**, **Mockito 및 **AEM Mocks** 테스트 종속성은 [AEM Maven Archetype](project-setup.md)을(를) 사용하여 설정하는 동안 프로젝트에 자동으로 추가됩니다.
+**JUnit5**, **Mockito 및 &#x200B;** AEM Mocks** 테스트 종속성은 [AEM Maven Archetype](project-setup.md)을(를) 사용하여 설정하는 동안 프로젝트에 자동으로 추가됩니다.
 
 1. 이러한 종속성을 보려면 **aem-guides-wknd/pom.xml**&#x200B;에서 상위 Reactor POM을 열고 `<dependencies>..</dependencies>`(으)로 이동한 다음 `<!-- Testing -->`에서 io.wcm을 통해 JUnit, Mockito, Apache Sling Mocks 및 AEM Mock Tests에 대한 종속성을 확인하십시오.
 1. `io.wcm.testing.aem-mock.junit5`이(가) **4.1.0**(으)로 설정되어 있는지 확인하십시오.
@@ -197,7 +197,7 @@ AEM 우수 사례를 사용하고 다음을 사용합니다.
 
 *`core/src/test/java/com/adobe/aem/guides/wknd/core/models/impl/BylineImplTest.java`*
 
-1. `BylineImplTest.java` 파일을 마우스 오른쪽 단추로 클릭하고 **실행**을 탭하여 JUnit 테스트 사례를 실행합니다.
+1. `BylineImplTest.java` 파일을 마우스 오른쪽 단추로 클릭하고 **실행**&#x200B;을 탭하여 JUnit 테스트 사례를 실행합니다.
 예상대로 모든 테스트가 아직 구현되지 않아 실패합니다.
 
    ![junit 테스트로 실행](assets/unit-testing/run-junit-tests.png)

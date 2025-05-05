@@ -39,7 +39,7 @@ ht-degree: 0%
 
 이 자습서를 완료하려면 **로컬 개발 환경**&#x200B;이 필요합니다. 스크린샷 및 비디오는 macOS에서 실행되는 AEM as a Cloud Service SDK을 사용하여 캡처됩니다. 명령 및 코드는 별도로 명시하지 않는 한 로컬 운영 체제와 독립적입니다.
 
-AEM as a Cloud Service을 처음 사용하십니까?**** AEM as a Cloud Service SDK을 사용하여 로컬 개발 환경을 설정하는 방법에 대한 [다음 안내서를 확인하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=ko).
+AEM as a Cloud Service을 처음 사용하십니까?**&#x200B;** AEM as a Cloud Service SDK을 사용하여 로컬 개발 환경을 설정하는 방법에 대한 [다음 안내서를 확인하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=ko).
 
 **AEM 6.5를 처음 사용하십니까?** 로컬 개발 환경 설정에 대한 [다음 안내서를 확인하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=ko).
 

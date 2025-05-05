@@ -93,7 +93,7 @@ window.adobeDataLayer.push(function (dataLayer) {
 
 ![데이터 요소](assets/data-elements.png)
 
-태그 데이터 요소는 코어 확장의 사용자 지정 코드 데이터 요소 유형을 통해 사용자 지정 페이지 표시 이벤트](#page-event)에서 트리거된 이벤트 개체 [의 데이터를 Adobe Target에서 사용할 수 있는 변수에 매핑합니다.
+태그 데이터 요소는 코어 확장의 사용자 지정 코드 데이터 요소 유형을 통해 사용자 지정 페이지 표시 이벤트[&#128279;](#page-event)에서 트리거된 이벤트 개체 의 데이터를 Adobe Target에서 사용할 수 있는 변수에 매핑합니다.
 
 #### 페이지 ID 데이터 요소
 

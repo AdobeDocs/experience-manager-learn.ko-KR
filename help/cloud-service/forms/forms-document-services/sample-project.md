@@ -28,6 +28,7 @@ ht-degree: 0%
    * `resources/credentials/server_credentials.json` 파일을 찾습니다.
    * 여정을 열고 **사용자 환경에 맞는 자격 증명을 업데이트**&#x200B;합니다.
    * 다음에 대한 유효한 값이 포함되어 있는지 확인합니다.
+
      `clientId`, `clientSecret`,`adobeIMSV3TokenEndpointURL` 및
      `scopes`
 

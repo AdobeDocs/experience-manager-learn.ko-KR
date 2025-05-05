@@ -111,7 +111,7 @@ function getDAMFolderAssets(damFolder) {
 
 ## 적응형 양식 만들기
 
-적응형 양식을 만들고 클라이언트 라이브러리 **listfolderassets**와(과) 양식을 연결합니다. 양식에 확인란 구성 요소를 추가합니다. 규칙 편집기를 사용하여 스크린샷에 표시된 대로 확인란의 옵션을 채웁니다
+적응형 양식을 만들고 클라이언트 라이브러리 **listfolderassets**&#x200B;와(과) 양식을 연결합니다. 양식에 확인란 구성 요소를 추가합니다. 규칙 편집기를 사용하여 스크린샷에 표시된 대로 확인란의 옵션을 채웁니다
 ![set-options](assets/set-options-newsletter.png)
 
 **getDAMFolderAssets**(이)라는 javascript 함수를 호출하고 DAM 폴더의 자산 경로를 양식에서 나열하도록 전달합니다.

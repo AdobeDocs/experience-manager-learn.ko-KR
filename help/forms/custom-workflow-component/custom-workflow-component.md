@@ -51,7 +51,7 @@ SaveFiles 노드를 선택하고 해당 속성을 검사합니다.
 작성자는 아래 스크린샷에 표시된 대로 인수를 지정합니다
 ![workflow-component](assets/custom-workflow-component.png)
 
-값은 메타데이터 노드의 속성으로 저장됩니다. 예를 들어 값 **c:\formsattachments**은(는) 메타데이터 노드의 saveToLocation 속성에 저장됩니다
+값은 메타데이터 노드의 속성으로 저장됩니다. 예를 들어 값 **c:\formsattachments**&#x200B;은(는) 메타데이터 노드의 saveToLocation 속성에 저장됩니다
 ![저장 위치](assets/save-to-location.png)
 
 ## cq:editConfig

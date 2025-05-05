@@ -312,7 +312,7 @@ AEM Project Archetype에서 머리글과 바닥글을 생성했습니다. 그런
 
    HTL을 여러 스크립트로 세분화하는 다른 이유는 프록시 구성 요소가 개별 스크립트를 재정의하여 사용자 지정 비즈니스 논리를 구현할 수 있도록 하기 위해서입니다. HTL 스크립트 `customfooterlibs.html` 및 `customheaderlibs.html`은(는) 프로젝트를 구현하여 재정의할 명시적 목적으로 만들어집니다.
 
-   이 문서](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html)을(를) 읽고 Editable Template이 [콘텐츠 페이지의 렌더링에 어떤 영향을 미치는지 자세히 알아볼 수 있습니다.
+   이 문서[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html)을(를) 읽고 Editable Template이 콘텐츠 페이지의 렌더링에 어떤 영향을 미치는지 자세히 알아볼 수 있습니다.
 
 1. `/libs/core/wcm/components/breadcrumb/v2/breadcrumb`의 탐색 표시와 같은 다른 핵심 구성 요소를 Inspect에 추가합니다. 이동 경로 구성 요소에 대한 마크업이 최종적으로 생성되는 방법을 이해하려면 `breadcrumb.html` 스크립트를 봅니다.
 
@@ -321,7 +321,7 @@ AEM Project Archetype에서 머리글과 바닥글을 생성했습니다. 그런
 특히 AEM 프로젝트를 시작할 때 소스 제어에 템플릿 및 관련 콘텐츠 정책과 같은 구성을 유지하는 것이 중요합니다. 이렇게 하면 모든 개발자가 동일한 콘텐츠 및 구성 세트에 대해 작업하고 환경 간에 추가적인 일관성을 보장할 수 있습니다. 일단 프로젝트가 일정 수준의 완성도에 도달하면 템플릿을 관리하는 관행을 특별한 고급 사용자 그룹에게 이관할 수 있습니다.
 
 
-지금은 템플릿이 다른 코드 조각처럼 처리되어 프로젝트의 일부로 **문서 페이지 템플릿**을(를) 동기화합니다.
+지금은 템플릿이 다른 코드 조각처럼 처리되어 프로젝트의 일부로 **문서 페이지 템플릿**&#x200B;을(를) 동기화합니다.
 지금까지 코드가 AEM 프로젝트에서 AEM의 로컬 인스턴스로 푸시되었습니다. **문서 페이지 템플릿**&#x200B;이(가) AEM의 로컬 인스턴스에서 직접 만들어졌으므로 템플릿을 AEM 프로젝트로 **가져오기**&#x200B;해야 합니다. **ui.content** 모듈은 이러한 특정 목적을 위해 AEM 프로젝트에 포함됩니다.
 
 다음 몇 단계는 [VSCode AEM Sync](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync&amp;ssr=false#overview) 플러그인을 사용하여 VSCode IDE에서 수행됩니다. 그러나 **가져오기**&#x200B;하거나 AEM의 로컬 인스턴스에서 콘텐츠를 가져오도록 구성한 IDE를 사용하여 작업을 수행할 수 있습니다.

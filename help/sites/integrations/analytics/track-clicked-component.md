@@ -45,7 +45,7 @@ WKND 마케팅 팀이 홈 페이지에서 성과가 가장 좋은 `Call to Actio
 
 ## 버튼 및 티저 스키마 검사
 
-태그 속성에서 규칙을 만들기 전에 Button 및 Teaser](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#item)에 대한 [스키마를 검토하고 데이터 레이어 구현에서 검사하는 것이 좋습니다.
+태그 속성에서 규칙을 만들기 전에 Button 및 Teaser[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#item)에 대한 스키마를 검토하고 데이터 레이어 구현에서 검사하는 것이 좋습니다.
 
 1. [WKND 홈 페이지로 이동](https://wknd.site/us/en.html)
 1. 브라우저의 개발자 도구를 열고 **콘솔**&#x200B;로 이동합니다. 다음 명령을 실행합니다.
@@ -189,7 +189,7 @@ Adobe 클라이언트 데이터 계층은 **이벤트** 기반 데이터 계층�
 
    >[!NOTE]
    >
-   > `event` 개체는 태그 속성에서 **Rule**&#x200B;을(를) 트리거한 이벤트를 기반으로 사용 가능하고 범위가 지정된다는 점을 상기하십시오. 데이터 요소의 값은 규칙 내에서 데이터 요소가 *참조*&#x200B;될 때까지 설정되지 않습니다. 따라서 이전 단계 *에서 만든&#x200B;**Page Loaded**규칙과 같은 규칙 내에서 이 데이터 요소를 사용하는 것이 안전하지만*&#x200B;은(는) 다른 컨텍스트에서 사용해도 안전하지 않습니다.
+   > `event` 개체는 태그 속성에서 **Rule**&#x200B;을(를) 트리거한 이벤트를 기반으로 사용 가능하고 범위가 지정된다는 점을 상기하십시오. 데이터 요소의 값은 규칙 내에서 데이터 요소가 *참조*&#x200B;될 때까지 설정되지 않습니다. 따라서 이전 단계 *에서 만든&#x200B;**Page Loaded**&#x200B;규칙과 같은 규칙 내에서 이 데이터 요소를 사용하는 것이 안전하지만*&#x200B;은(는) 다른 컨텍스트에서 사용해도 안전하지 않습니다.
 
 
 ### 구성 요소 제목

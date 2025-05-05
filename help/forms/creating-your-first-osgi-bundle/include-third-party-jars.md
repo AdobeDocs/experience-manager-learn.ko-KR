@@ -50,7 +50,7 @@ OSGi 번들이 파일 시스템에 있는 경우 프로젝트의 기본 디렉�
 
 이 번들을 **c:\aemformsbundles** 폴더에 있는 AEM 프로젝트 **AEMFormsProcessStep**&#x200B;에 추가합니다.
 
-* 프로젝트의 C:\aemformsbundles\AEMFormsProcessStep\all\src\main\content\META-INF\vault 폴더에서 **filter.xml**을 엽니다.
+* 프로젝트의 C:\aemformsbundles\AEMFormsProcessStep\all\src\main\content\META-INF\vault 폴더에서 **filter.xml**&#x200B;을 엽니다.
 필터 요소의 루트 특성을 메모합니다.
 
 * 다음 폴더 구조를 만듭니다 C:\aemformsbundles\AEMFormsProcessStep\all\src\main\content\jcr_root\apps\AEMFormsProcessStep-vendor-packages\application\install

@@ -179,7 +179,7 @@ AEM Content Fragments Editor는 콘텐츠 조각을 편집하기 위한 확장 �
       </div>
       <div class="card-content is-padded-small">
         <div class="content">
-          <p class="headline is-size-6 has-text-weight-bold"><a href="https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-badges/ " title="리치 텍스트 편집기 배지" target="_blank" rel="referrer">리치 텍스트 편집기 배지</a></p>
+          <p class="headline is-size-6 has-text-weight-bold"><a href="https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-badges/" title="리치 텍스트 편집기 배지" target="_blank" rel="referrer">리치 텍스트 편집기 배지</a></p>
           <p class="is-size-6">RTE 내에서 편집할 수 없는 스타일의 블록을 사용자 지정합니다.</p>
           <a href="https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-badges/" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" target="_blank" rel="referrer">
             <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">문서 보기</span>
