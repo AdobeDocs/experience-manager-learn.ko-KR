@@ -42,6 +42,6 @@ AEM 6.5 번역 개선 사항은 다음과 같습니다.
 
 ## 추가 리소스 {#additional-resources}
 
-* [다국어 사이트를 위한 콘텐츠 번역](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/translation.html)
-* [https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-manage.html](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-manage.html)
-* [번역 모범 사례](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-bp.html)
+* [다국어 사이트를 위한 콘텐츠 번역](https://helpx.adobe.com/kr/experience-manager/6-5/sites/administering/using/translation.html)
+* [https://helpx.adobe.com/kr/experience-manager/6-5/sites/administering/using/tc-manage.html](https://helpx.adobe.com/kr/experience-manager/6-5/sites/administering/using/tc-manage.html)
+* [번역 모범 사례](https://helpx.adobe.com/kr/experience-manager/6-5/sites/administering/using/tc-bp.html)

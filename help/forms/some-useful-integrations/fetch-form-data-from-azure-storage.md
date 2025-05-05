@@ -22,7 +22,7 @@ ht-degree: 0%
 이 문서에서는 적응형 양식을 Azure 스토리지에 저장된 데이터로 채우는 방법을 보여 줍니다.
 적응형 양식 데이터를 Azure 스토리지에 저장했으며 이제 적응형 양식에 해당 데이터를 미리 채우려고 한다고 가정합니다.
 >[!NOTE]
->이 문서의 코드는 적응형 양식을 기반으로 하는 핵심 구성 요소에서는 작동하지 않습니다.[핵심 구성 요소 기반 적응형 양식에 대한 동등한 문서는 여기에서 확인할 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/prefill-form-with-data-attachments/introduction.html?lang=en)
+>이 문서의 코드는 적응형 양식을 기반으로 하는 핵심 구성 요소에서는 작동하지 않습니다.[핵심 구성 요소 기반 적응형 양식에 대한 동등한 문서는 여기에서 확인할 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/prefill-form-with-data-attachments/introduction.html?lang=ko)
 
 
 ## GET 요청 만들기
@@ -86,7 +86,7 @@ if(guid!=null&&!guid.isEmpty())
 
 * [샘플 적응형 양식 가져오기](./assets/bank-account-sample-form.zip)
 
-* [OSGi 구성 콘솔을 사용하여 Azure 포털 구성에서 적절한 값을 지정하십시오.](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/some-useful-integrations/store-form-data-in-azure-storage.html?lang=en#provide-the-blob-sas-token-and-storage-uri)
+* [OSGi 구성 콘솔을 사용하여 Azure 포털 구성에서 적절한 값을 지정하십시오.](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/some-useful-integrations/store-form-data-in-azure-storage.html?lang=ko#provide-the-blob-sas-token-and-storage-uri)
 
 * [BankAccount 양식 미리 보기 및 제출](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled)
 

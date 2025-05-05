@@ -21,7 +21,7 @@ ht-degree: 0%
 
 이전 버전의 Adobe Experience Manager(AEM)에서는 저장소에 액세스해야 하는 백엔드 처리에 관리 리소스 확인자가 사용되었습니다. 관리 리소스 확인자는 AEM 6.3에서 더 이상 사용되지 않습니다. 대신 저장소에서 특정 권한이 있는 시스템 사용자가 사용됩니다.
 
-[AEM에서 서비스 사용자를 만들고 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/advanced/service-users.html)하는 방법에 대해 자세히 알아보세요.
+[AEM에서 서비스 사용자를 만들고 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/advanced/service-users.html?lang=ko)하는 방법에 대해 자세히 알아보세요.
 
 이 문서에서는 시스템 사용자를 만들고 사용자 매퍼 속성을 구성하는 과정을 안내합니다.
 

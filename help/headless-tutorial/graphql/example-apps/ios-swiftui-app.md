@@ -39,7 +39,7 @@ GitHub에서 [소스 코드 보기](https://github.com/adobe/aem-guides-wknd-gra
 
 iOS 애플리케이션은 다음 AEM 배포 옵션과 함께 작동합니다. 모든 배포를 사용하려면 [WKND 사이트 v3.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest)을(를) 설치해야 합니다.
 
-+ [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
++ [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=ko)
 + [AEM 클라우드 서비스 SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=ko)을 사용하여 로컬 설정
 
 iOS 응용 프로그램은 __AEM 게시__ 환경에 연결하도록 디자인되었지만 iOS 응용 프로그램의 구성에서 인증을 제공하는 경우 AEM 작성자의 콘텐츠를 소싱할 수 있습니다.
@@ -76,7 +76,7 @@ iOS 응용 프로그램은 __AEM 게시__ 환경에 연결하도록 디자인되
 
    __토큰 인증__
 
-   `AEM_TOKEN`은(는) WKND GraphQL 콘텐츠에 액세스할 수 있는 AEM 사용자를 인증하는 [액세스 토큰](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)입니다.
+   `AEM_TOKEN`은(는) WKND GraphQL 콘텐츠에 액세스할 수 있는 AEM 사용자를 인증하는 [액세스 토큰](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=ko)입니다.
 
    ```plain
    AEM_AUTH_TYPE = token
@@ -333,5 +333,5 @@ SwiftUI 네이티브 [AsyncImage](https://developer.apple.com/documentation/swif
 
 ## 추가 리소스
 
-+ [AEM Headless 시작하기 - GraphQL 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html)
++ [AEM Headless 시작하기 - GraphQL 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=ko)
 + [SwiftUI 목록 및 탐색 자습서](https://developer.apple.com/tutorials/swiftui/building-lists-and-navigation)

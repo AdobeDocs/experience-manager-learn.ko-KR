@@ -85,20 +85,20 @@ AEM API에는 기본 설정 순서로 다음 Java™ 패키지로 식별되는 �
 
 ### 쿼리 API
 
-AEM은 여러 쿼리 언어를 지원합니다. 세 가지 주요 언어는 [JCR-SQL2](https://docs.jboss.org/jbossdna/0.7/manuals/reference/html/jcr-query-and-search.html), XPath 및 [AEM 쿼리 빌더](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html)입니다.
+AEM은 여러 쿼리 언어를 지원합니다. 세 가지 주요 언어는 [JCR-SQL2](https://docs.jboss.org/jbossdna/0.7/manuals/reference/html/jcr-query-and-search.html), XPath 및 [AEM 쿼리 빌더](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html?lang=ko)입니다.
 
 가장 중요한 문제는 코드 베이스 전반에 걸쳐 일관된 쿼리 언어를 유지함으로써 복잡성과 이해 비용을 줄이는 것입니다.
 
 [!DNL Apache Oak]이(가) 최종 쿼리 실행을 위해 JCR-SQL2에 트랜스-더미하므로 모든 쿼리 언어에는 효과적으로 동일한 성능 프로필이 있으며 JCR-SQL2로의 전환 시간은 쿼리 시간 자체에 비해 무시할 수 있습니다.
 
-기본 API는 [AEM Query Builder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html)로, 최상위 수준의 추상화이며 쿼리에 대한 결과를 구성, 실행 및 검색하기 위한 강력한 API를 제공하며, 다음을 제공합니다.
+기본 API는 [AEM Query Builder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html?lang=ko)로, 최상위 수준의 추상화이며 쿼리에 대한 결과를 구성, 실행 및 검색하기 위한 강력한 API를 제공하며, 다음을 제공합니다.
 
 * 간단한 매개 변수가 있는 쿼리 구문(맵으로 모델링된 쿼리 매개 변수)
-* 기본 [Java™ API 및 HTTP API](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)
-* [AEM 쿼리 디버거](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html)
-* 일반적인 쿼리 요구 사항을 지원하는 [AEM 조건자](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-predicate-reference.html)
+* 기본 [Java™ API 및 HTTP API](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko)
+* [AEM 쿼리 디버거](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html?lang=ko)
+* 일반적인 쿼리 요구 사항을 지원하는 [AEM 조건자](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-predicate-reference.html?lang=ko)
 
-* 사용자 지정 [쿼리 조건자](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)의 개발을 허용하는 확장 가능한 API
+* 사용자 지정 [쿼리 조건자](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko)의 개발을 허용하는 확장 가능한 API
 * JCR-SQL2 및 XPath는 [[!DNL Sling]](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/ResourceResolver.html#findResources-java.lang.String-java.lang.String-) 및 [JCR API](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html)를 통해 직접 실행할 수 있으며 각각 [[!DNL Sling] 리소스](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/Resource.html) 또는 [JCR 노드](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html)를 반환합니다.
 
 >[!CAUTION]
@@ -132,7 +132,7 @@ AEM은 여러 쿼리 언어를 지원합니다. 세 가지 주요 언어는 [JCR
    * [스케줄러](https://sling.apache.org/documentation/bundles/scheduler-service-commons-scheduler.html)
    * [Sling 모델](https://sling.apache.org/documentation/bundles/models.html)
 
-* [서비스 사용자](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html)
+* [서비스 사용자](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html?lang=ko)
 
 ## JCR API
 
@@ -154,7 +154,7 @@ JCR은 AEM의 콘텐츠 저장소이지만 해당 API는 콘텐츠와 상호 작
 
 ### JCR API의 일반적인 사용
 
-* [액세스 제어 관리](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html)
+* [액세스 제어 관리](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html?lang=ko)
 * [승인 가능한 관리(사용자/그룹)](https://jackrabbit.apache.org/api/2.12/org/apache/jackrabbit/api/security/user/package-summary.html)
 * JCR 관찰(JCR 이벤트 수신)
 * 딥 노드 구조 만들기

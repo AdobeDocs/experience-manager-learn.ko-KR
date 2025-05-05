@@ -65,7 +65,7 @@ AEM의 GraphQL API는 콘텐츠 조각의 데이터를 다운스트림 애플리
 
 ## GraphiQL IDE 사용
 
-개발자는 [GraphiQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html) 도구를 통해 현재 AEM 환경의 콘텐츠에 대한 쿼리를 만들고 테스트할 수 있습니다. 또한 GraphiQL 도구를 통해 사용자는 프로덕션 설정에서 클라이언트 애플리케이션에서 사용할 쿼리를 **유지 또는 저장**&#x200B;할 수 있습니다.
+개발자는 [GraphiQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html?lang=ko) 도구를 통해 현재 AEM 환경의 콘텐츠에 대한 쿼리를 만들고 테스트할 수 있습니다. 또한 GraphiQL 도구를 통해 사용자는 프로덕션 설정에서 클라이언트 애플리케이션에서 사용할 쿼리를 **유지 또는 저장**&#x200B;할 수 있습니다.
 
 이제 내장된 GraphiQL IDE를 사용하여 AEM의 GraphQL API의 강력한 기능을 살펴보십시오.
 
@@ -216,7 +216,7 @@ AEM의 GraphQL API는 콘텐츠 조각의 데이터를 다운스트림 애플리
 
    ![쿼리 변수를 사용하여 필터링](assets/explore-graphql-api/using-query-variables-filter.png)
 
-   복잡한 쿼리를 필터링하고 만드는 다른 많은 옵션이 있습니다. [AEM과 함께 GraphQL을 사용하는 방법 알아보기 - 샘플 콘텐츠 및 쿼리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html)를 참조하세요.
+   복잡한 쿼리를 필터링하고 만드는 다른 많은 옵션이 있습니다. [AEM과 함께 GraphQL을 사용하는 방법 알아보기 - 샘플 콘텐츠 및 쿼리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html?lang=ko)를 참조하세요.
 
 1. 프로필 사진을 가져오기 위해 위의 쿼리 향상
 
@@ -280,7 +280,7 @@ AEM의 GraphQL API는 콘텐츠 조각의 데이터를 다운스트림 애플리
 
 ## 쿼리 지속 {#persist-queries}
 
-개발자가 쿼리에서 반환된 쿼리 및 결과 데이터에 만족하면 다음 단계로 쿼리를 AEM에 저장하거나 지속합니다. [지속 쿼리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html)는 GraphQL API를 클라이언트 응용 프로그램에 노출하기 위한 기본 메커니즘입니다. 쿼리가 지속되면 GET 요청을 사용하여 요청하고 Dispatcher 및 CDN 계층에서 캐시할 수 있습니다. 지속 쿼리의 성능이 훨씬 뛰어납니다. 지속 쿼리는 성능 이점 외에도 추가 데이터가 클라이언트 애플리케이션에 실수로 노출되지 않도록 합니다. [지속 쿼리에 대한 자세한 내용은 여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html)에서 확인할 수 있습니다.
+개발자가 쿼리에서 반환된 쿼리 및 결과 데이터에 만족하면 다음 단계로 쿼리를 AEM에 저장하거나 지속합니다. [지속 쿼리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?lang=ko)는 GraphQL API를 클라이언트 응용 프로그램에 노출하기 위한 기본 메커니즘입니다. 쿼리가 지속되면 GET 요청을 사용하여 요청하고 Dispatcher 및 CDN 계층에서 캐시할 수 있습니다. 지속 쿼리의 성능이 훨씬 뛰어납니다. 지속 쿼리는 성능 이점 외에도 추가 데이터가 클라이언트 애플리케이션에 실수로 노출되지 않도록 합니다. [지속 쿼리에 대한 자세한 내용은 여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?lang=ko)에서 확인할 수 있습니다.
 
 그런 다음 두 개의 간단한 쿼리를 지속하면 다음 장에서 사용됩니다.
 
@@ -396,7 +396,7 @@ AEM의 GraphQL API는 콘텐츠 조각의 데이터를 다운스트림 애플리
 
 ## 추가 리소스
 
-GraphQL 쿼리에 대해 자세히 알아보려면 [AEM과 함께 GraphQL을 사용하는 방법 알아보기 - 샘플 콘텐츠 및 쿼리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html)를 참조하세요.
+GraphQL 쿼리에 대해 자세히 알아보려면 [AEM과 함께 GraphQL을 사용하는 방법 알아보기 - 샘플 콘텐츠 및 쿼리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html?lang=ko)를 참조하세요.
 
 ## 축하합니다! {#congratulations}
 

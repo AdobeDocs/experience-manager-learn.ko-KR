@@ -88,7 +88,7 @@ AEM Project Archetype 기반 AEM 프로젝트가 배포되면 AEM 게시 및 작
    ```
 
    `dispatcher/src/conf.d/enabled_vhosts` 디렉터리의 vhost 파일이 `dispatcher/src/conf.d/available_vhosts` 디렉터리의 파일에 대해 **symlinks**&#x200B;이므로 없는 경우 symlink를 만드십시오.
-1. [Cloud Manager - 웹 계층 구성 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?#web-tier-config-pipelines) 또는 [RDE 명령](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html?lang=en#deploy-apache-or-dispatcher-configuration)을 사용하여 원하는 AEM as a Cloud Service 환경에 vhost 변경 사항을 배포합니다.
+1. [Cloud Manager - 웹 계층 구성 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?lang=ko&#web-tier-config-pipelines) 또는 [RDE 명령](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html?lang=ko#deploy-apache-or-dispatcher-configuration)을 사용하여 원하는 AEM as a Cloud Service 환경에 vhost 변경 사항을 배포합니다.
 
 ### 사용자 지정 Java™ 코드
 

@@ -256,7 +256,7 @@ jQuery(function ($) {
 
 ## 추가 리소스 {#additional-resources}
 
-* [스타일 시스템 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/style-system.html)
+* [스타일 시스템 설명서](https://helpx.adobe.com/kr/experience-manager/6-5/sites/authoring/using/style-system.html)
 * [AEM 클라이언트 라이브러리 만들기](https://helpx.adobe.com/kr/experience-manager/6-5/sites/developing/using/clientlibs.html)
 * [BEM(Block Element Modifier) 설명서 웹 사이트](https://getbem.com/)
 * [더 적은 설명서 웹 사이트](https://lesscss.org/)

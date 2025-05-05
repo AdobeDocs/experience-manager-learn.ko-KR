@@ -65,7 +65,7 @@ AEM 6.4의 Dynamic Media 뷰어 개선 사항에는 파노라마 이미지 뷰�
  </tbody>
 </table>
 
-[Scene7 모드에서 Dynamic Media 구성](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dms7.html)
+[Scene7 모드에서 Dynamic Media 구성](https://helpx.adobe.com/kr/experience-manager/6-5/assets/using/config-dms7.html)
 
 [하이브리드 모드에서 Dynamic Media 구성](https://helpx.adobe.com/kr/experience-manager/6-5/assets/using/config-dynamic.html)
 

@@ -25,7 +25,7 @@ HTML5 forms는 HTML5 형식의 XFA 양식 템플릿(xdp) 렌더링을 제공하�
 
 ## 전제 조건
 
-AEM Forms의 작업 인스턴스가 있는지 확인하십시오. AEM Forms을 설치하고 구성하려면 [설치 안내서](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html)를 따르십시오.
+AEM Forms의 작업 인스턴스가 있는지 확인하십시오. AEM Forms을 설치하고 구성하려면 [설치 안내서](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html?lang=ko)를 따르십시오.
 
 ## 첫 번째 HTML5 양식 만들기
 
@@ -57,6 +57,6 @@ xdp 템플릿의 고급 속성을 사용하면 게시 날짜, 제출 처리기, 
 
 **제출 URL** - HTML5 양식 제출을 처리하는 URL입니다. 다음 단원에서 이 내용을 다루겠습니다. 여기에 제출 URL을 지정하지 않으면 양식 데이터를 브라우저에 반환하는 기본 제출 처리기가 호출됩니다.
 
-**HTML 렌더링 프로필** - HTML5 양식에는 양식 템플릿의 모바일 렌더링을 활성화하기 위해 REST 끝점으로 노출되는 프로필 개념이 있습니다. 대부분의 경우 기본 렌더링 프로필이 양식을 렌더링하는 데 충분해야 합니다. 기본 렌더링 프로필이 사용자의 요구 사항에 맞지 않으면 [사용자 지정 프로필](https://experienceleague.adobe.com/docs/experience-manager-65/forms/html5-forms/custom-profile.html)을 만들어 양식과 연결할 수 있습니다.
+**HTML 렌더링 프로필** - HTML5 양식에는 양식 템플릿의 모바일 렌더링을 활성화하기 위해 REST 끝점으로 노출되는 프로필 개념이 있습니다. 대부분의 경우 기본 렌더링 프로필이 양식을 렌더링하는 데 충분해야 합니다. 기본 렌더링 프로필이 사용자의 요구 사항에 맞지 않으면 [사용자 지정 프로필](https://experienceleague.adobe.com/docs/experience-manager-65/forms/html5-forms/custom-profile.html?lang=ko)을 만들어 양식과 연결할 수 있습니다.
 
 **미리 채우기 서비스** - 미리 채우기 서비스는 일반적으로 백엔드 데이터 소스에서 가져온 데이터로 양식을 채우는 데 사용됩니다.

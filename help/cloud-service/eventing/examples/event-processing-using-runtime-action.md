@@ -162,7 +162,7 @@ ht-degree: 0%
   ...
   ```
 
-  자세한 내용은 [AEM 서비스 자격 증명 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en)을 참조하세요. 또한 암호 및 작업 매개 변수 관리를 위한 [App Builder 구성 파일](https://developer.adobe.com/app-builder/docs/guides/configuration/)입니다.
+  자세한 내용은 [AEM 서비스 자격 증명 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=ko)을 참조하세요. 또한 암호 및 작업 매개 변수 관리를 위한 [App Builder 구성 파일](https://developer.adobe.com/app-builder/docs/guides/configuration/)입니다.
 
 - `src/dx-excshell-1/actions/aem-event-processor/storeEventData.js` 모듈은 원본 이벤트 데이터, 활동 메시지 및 수정 세부 사항(있는 경우)을 Adobe I/O Runtime 저장소에 저장합니다.
 

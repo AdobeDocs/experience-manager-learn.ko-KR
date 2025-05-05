@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ![Repository Modernizer](./assets/repository-modernizer.png)
 
-코드 베이스를 리팩터링하는 과정의 일부로 [Repository Modernizer 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/repo-modernizer.html)를 사용하여 6.x 코드 베이스를 보다 최신 구조로 재구성하십시오.
+코드 베이스를 리팩터링하는 과정의 일부로 [Repository Modernizer 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/repo-modernizer.html?lang=ko)를 사용하여 6.x 코드 베이스를 보다 최신 구조로 재구성하십시오.
 
 ## 주요 활동
 

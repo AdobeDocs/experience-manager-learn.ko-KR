@@ -61,7 +61,7 @@ AEM Headless 애플리케이션의 가장 일반적인 배포 패턴은 애플�
 
 현재 **작성자** 모드에서 실행 중인 SDK 인스턴스가 있습니다. SDK을 **게시** 모드에서 시작하여 AEM 게시 환경을 시뮬레이션할 수도 있습니다.
 
-로컬 개발 환경 [을(를) 설정하는 자세한 안내서는 여기](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=en#local-development-environment-set-up)에서 확인할 수 있습니다.
+로컬 개발 환경 [을(를) 설정하는 자세한 안내서는 여기](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=ko#local-development-environment-set-up)에서 확인할 수 있습니다.
 
 1. 로컬 파일 시스템에서 게시 인스턴스를 설치할 전용 폴더(예: `~/aem-sdk/publish`)를 만듭니다.
 1. 이전 장의 작성자 인스턴스에 사용된 Quickstart jar 파일을 복사하여 `publish` 디렉터리에 붙여넣습니다. 또는 [소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)&#x200B;(으)로 이동하여 최신 SDK을 다운로드하고 Quickstart jar 파일을 추출합니다.
@@ -312,7 +312,7 @@ React 앱은 Webpack 서버를 사용하여 시작할 수 있지만 개발용입
 1. 작성자 인스턴스를 시작하고( 아직 시작되지 않은 경우) 패키지 관리자([http://localhost:4502/crx/packmgr/index.jsp](http://localhost:4502/crx/packmgr/index.jsp))로 이동합니다.
 1. 패키지 [EnableReplicationAgent.zip](./assets/publish-deployment/EnableReplicationAgent.zip)을(를) 다운로드하고 패키지 관리자를 사용하여 설치하십시오.
 
-   이 패키지는 작성자 인스턴스가 게시 인스턴스에 콘텐츠를 게시할 수 있도록 하는 구성을 설치합니다. [이 구성에 대한 수동 단계는 여기에서 찾을 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=en#content-distribution).
+   이 패키지는 작성자 인스턴스가 게시 인스턴스에 콘텐츠를 게시할 수 있도록 하는 구성을 설치합니다. [이 구성에 대한 수동 단계는 여기에서 찾을 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=ko#content-distribution).
 
    >[!NOTE]
    >
@@ -410,5 +410,5 @@ AEM은 기본적으로 안전하며 AEM이 아닌 웹 속성에서 클라이언�
 
 * [GraphQL에서 콘텐츠 조각을 사용하여 Headless 콘텐츠 게재](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-graphql.html?lang=ko-KR)
 * [콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html?lang=ko-KR)
-* [토큰 기반 인증](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication)
-* [AEM as a Cloud Service에 코드 배포](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html?lang=en#cloud-manager)
+* [토큰 기반 인증](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=ko#authentication)
+* [AEM as a Cloud Service에 코드 배포](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html?lang=ko#cloud-manager)

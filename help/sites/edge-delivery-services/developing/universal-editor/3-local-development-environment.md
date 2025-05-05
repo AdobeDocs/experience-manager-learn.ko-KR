@@ -127,7 +127,7 @@ info: Enabled reverse proxy to https://main--aem-wknd-eds-ue--<YOUR_ORG>.aem.pag
 
 AEM CLI가 브라우저에서 웹 사이트(`http://localhost:3000/`)를 엽니다. 프로젝트의 변경 내용이 웹 브라우저에서 자동으로 핫 로드되는 반면, 콘텐츠 변경 내용 [을(를) 미리 보기 환경에 게시하고 웹 브라우저를 새로 고쳐야 합니다](./6-author-block.md).
 
-웹 사이트가 404 페이지로 열리는 경우 [새 코드 프로젝트](./1-new-code-project.md)에서 업데이트된 [fstab.yaml 또는 paths.json](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/edge-dev-getting-started#create-github-project)이 잘못 구성되었거나 변경 내용이 `main` 분기에 커밋되지 않았을 수 있습니다.
+웹 사이트가 404 페이지로 열리는 경우 [새 코드 프로젝트](./1-new-code-project.md)에서 업데이트된 [fstab.yaml 또는 paths.json](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/edge-dev-getting-started#create-github-project)이 잘못 구성되었거나 변경 내용이 `main` 분기에 커밋되지 않았을 수 있습니다.
 
 ## JSON 조각 작성
 

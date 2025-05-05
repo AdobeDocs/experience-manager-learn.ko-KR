@@ -25,7 +25,7 @@ ht-degree: 2%
 
 >[!VIDEO](https://video.tv.adobe.com/v/27828?quality=12&learn=on)
 
-[이 문서에 따라 적응형 양식 템플릿 및 페이지 구성 요소를 만드는 과정을 이해할 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/storing-and-retrieving-form-data/part5.html?lang=en#storing-and-retrieving-form-data)
+[이 문서에 따라 적응형 양식 템플릿 및 페이지 구성 요소를 만드는 과정을 이해할 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/storing-and-retrieving-form-data/part5.html?lang=ko#storing-and-retrieving-form-data)
 
 
 ## 자산

@@ -26,7 +26,7 @@ AEM 개발 워크플로에서 Dispatcher 유효성 검사기를 사용하는 방
 ## 이 비디오에서 다루는 콘텐츠
 
 + Dispatcher 및 SDK 개요
-+ [Dispatcher 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/validation-debug.html)
++ [Dispatcher 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/validation-debug.html?lang=ko)
 + 오류 문제 해결
 + 디버깅을 위해 Dispatcher 로그 및 실행 모드 사용
 

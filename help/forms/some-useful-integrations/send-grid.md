@@ -32,8 +32,8 @@ AEM Forms에서 SendGrid 동적 템플릿을 사용하여 전자 메일을 보�
 AEM Forms에서 SendGrid 동적 템플릿을 사용하여 이메일 전송을 진행하기 전에 다음 사전 요구 사항을 충족하는지 확인하십시오.
 
 1. **SendGrid 계정**: [https://sendgrid.com](https://sendgrid.com)에서 SendGrid 계정에 등록하여 이메일 게재 서비스에 액세스합니다. SendGrid를 AEM Forms과 통합하려면 계정 자격 증명이 필요합니다.
-1. **데이터 원본 만들기에 익숙함**: AEM Forms에서 데이터 원본을 만드는 데 대한 작업 지식을 가지고 있습니다. 필요한 경우 자세한 지침은 [데이터 원본 만들기](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html)에 대한 설명서를 참조하세요.
-1. **양식 데이터 모델에 익숙함**: AEM Forms의 양식 데이터 모델에 대한 개념을 이해합니다. 필요한 경우 [양식 데이터 모델 만들기](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html)에 대한 설명서를 검토하여 필요한 내용을 이해하십시오.
+1. **데이터 원본 만들기에 익숙함**: AEM Forms에서 데이터 원본을 만드는 데 대한 작업 지식을 가지고 있습니다. 필요한 경우 자세한 지침은 [데이터 원본 만들기](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html?lang=ko)에 대한 설명서를 참조하세요.
+1. **양식 데이터 모델에 익숙함**: AEM Forms의 양식 데이터 모델에 대한 개념을 이해합니다. 필요한 경우 [양식 데이터 모델 만들기](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=ko)에 대한 설명서를 검토하여 필요한 내용을 이해하십시오.
 
 이러한 전제 조건을 충족하면 AEM Forms의 SendGrid 동적 템플릿을 사용하여 이메일을 효과적으로 보낼 수 있는 필수 지식과 리소스를 갖추게 됩니다.
 

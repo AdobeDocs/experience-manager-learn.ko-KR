@@ -28,8 +28,8 @@ ht-degree: 1%
 
 <!-- CARDS
 
-* https://experienceleague.adobe.com/en/playlists/experience-manager-all-configure-administrative-access
-* https://experienceleague.adobe.com/en/playlists/experience-manager-assets-get-started-assets-essentials {title=Get started with Assets view}
+* https://experienceleague.adobe.com/ko/playlists/experience-manager-all-configure-administrative-access
+* https://experienceleague.adobe.com/ko/playlists/experience-manager-assets-get-started-assets-essentials {title=Get started with Assets view}
 
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
@@ -38,8 +38,8 @@ ht-degree: 1%
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-all-configure-administrative-access" title="Experience Manager에 대한 관리 액세스 구성" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_1130bb3c4cd41705ba451f3219632a7d57f9b3f85.jpeg?width=400&format=pjpg&optimize=medium" alt="Experience Manager에 대한 관리 액세스 구성"
+                    <a href="https://experienceleague.adobe.com/ko/playlists/experience-manager-all-configure-administrative-access" title="Experience Manager에 대한 관리 액세스 구성" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/ko/playlists/media_1130bb3c4cd41705ba451f3219632a7d57f9b3f85.jpeg?width=400&format=pjpg&optimize=medium" alt="Experience Manager에 대한 관리 액세스 구성"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -47,11 +47,11 @@ ht-degree: 1%
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-all-configure-administrative-access" target="_blank" rel="referrer" title="Experience Manager에 대한 관리 액세스 구성">Experience Manager에 대한 관리 액세스 구성</a>
+                        <a href="https://experienceleague.adobe.com/ko/playlists/experience-manager-all-configure-administrative-access" target="_blank" rel="referrer" title="Experience Manager에 대한 관리 액세스 구성">Experience Manager에 대한 관리 액세스 구성</a>
                     </p>
                     <p class="is-size-6">사용자가 Adobe IMS를 사용하여 AEM as a Cloud Service에 인증하는 방법과 Adobe IMS 사용자, 사용자 그룹 및 제품 프로필을 사용하여 AEM 및 해당 기능에 대한 액세스를 제어하는 방법을 탐색합니다.</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-all-configure-administrative-access" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/ko/playlists/experience-manager-all-configure-administrative-access" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">시청</span>
                 </a>
             </div>
@@ -61,8 +61,8 @@ ht-degree: 1%
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-get-started-assets-essentials" title="AEM Assets Essentials 시작하기" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_1bdc0e38944ddc90ff77140bb859bb728cc5d4065.jpeg?width=400&format=pjpg&optimize=medium" alt="AEM Assets Essentials 시작하기"
+                    <a href="https://experienceleague.adobe.com/ko/playlists/experience-manager-assets-get-started-assets-essentials" title="AEM Assets Essentials 시작하기" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/ko/playlists/media_1bdc0e38944ddc90ff77140bb859bb728cc5d4065.jpeg?width=400&format=pjpg&optimize=medium" alt="AEM Assets Essentials 시작하기"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -70,11 +70,11 @@ ht-degree: 1%
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-get-started-assets-essentials" target="_blank" rel="referrer" title="Assets 보기 시작">Assets 보기 시작</a>
+                        <a href="https://experienceleague.adobe.com/ko/playlists/experience-manager-assets-get-started-assets-essentials" target="_blank" rel="referrer" title="Assets 보기 시작">Assets 보기 시작</a>
                     </p>
                     <p class="is-size-6">AEM Assets Essentials가 어떻게 부서의 에셋 관리를 간소화할 수 있는지 알아봅니다.</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-get-started-assets-essentials" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/ko/playlists/experience-manager-assets-get-started-assets-essentials" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">시청</span>
                 </a>
             </div>
@@ -98,8 +98,8 @@ Pro처럼 Assets 보기 인터페이스를 탐색하고 자산을 효율적으�
 
 <!-- CARDS
 
-* https://experienceleague.adobe.com/en/playlists/experience-manager-assets-generate-image-assets-with-adobe-firefly
-* https://experienceleague.adobe.com/en/playlists/experience-manager-assets-assets-view-search-use
+* https://experienceleague.adobe.com/ko/playlists/experience-manager-assets-generate-image-assets-with-adobe-firefly
+* https://experienceleague.adobe.com/ko/playlists/experience-manager-assets-assets-view-search-use
 
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
@@ -108,8 +108,8 @@ Pro처럼 Assets 보기 인터페이스를 탐색하고 자산을 효율적으�
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-generate-image-assets-with-adobe-firefly" title="Adobe Firefly을 사용하여 이미지 Assets 생성" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_16fdb25830809ba4c0fe9fda9afa150b64b0f83f5.jpeg?width=400&format=pjpg&optimize=medium" alt="Adobe Firefly을 사용하여 이미지 Assets 생성"
+                    <a href="https://experienceleague.adobe.com/ko/playlists/experience-manager-assets-generate-image-assets-with-adobe-firefly" title="Adobe Firefly을 사용하여 이미지 Assets 생성" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/ko/playlists/media_16fdb25830809ba4c0fe9fda9afa150b64b0f83f5.jpeg?width=400&format=pjpg&optimize=medium" alt="Adobe Firefly을 사용하여 이미지 Assets 생성"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -117,11 +117,11 @@ Pro처럼 Assets 보기 인터페이스를 탐색하고 자산을 효율적으�
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-generate-image-assets-with-adobe-firefly" target="_blank" rel="referrer" title="Adobe Firefly을 사용하여 이미지 Assets 생성">Adobe Firefly을 사용하여 이미지 Assets 생성</a>
+                        <a href="https://experienceleague.adobe.com/ko/playlists/experience-manager-assets-generate-image-assets-with-adobe-firefly" target="_blank" rel="referrer" title="Adobe Firefly을 사용하여 이미지 Assets 생성">Adobe Firefly을 사용하여 이미지 Assets 생성</a>
                     </p>
                     <p class="is-size-6">AEM Assets이 Adobe Firefly 및 Gen AI를 사용하여 콘텐츠 속도를 높이는 방법에 대해 알아봅니다.</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-generate-image-assets-with-adobe-firefly" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/ko/playlists/experience-manager-assets-generate-image-assets-with-adobe-firefly" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">시청</span>
                 </a>
             </div>
@@ -131,8 +131,8 @@ Pro처럼 Assets 보기 인터페이스를 탐색하고 자산을 효율적으�
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-assets-view-search-use" title="AEM Assets Assets 보기에서 검색하여 Assets 찾기" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_10a54527c0613cd760d10f3c5c95141203d88a0aa.jpeg?width=400&format=pjpg&optimize=medium" alt="AEM Assets Assets 보기에서 검색하여 Assets 찾기"
+                    <a href="https://experienceleague.adobe.com/ko/playlists/experience-manager-assets-assets-view-search-use" title="AEM Assets Assets 보기에서 검색하여 Assets 찾기" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/ko/playlists/media_10a54527c0613cd760d10f3c5c95141203d88a0aa.jpeg?width=400&format=pjpg&optimize=medium" alt="AEM Assets Assets 보기에서 검색하여 Assets 찾기"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -140,11 +140,11 @@ Pro처럼 Assets 보기 인터페이스를 탐색하고 자산을 효율적으�
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-assets-view-search-use" target="_blank" rel="referrer" title="AEM Assets Assets 보기에서 검색하여 Assets 찾기">AEM Assets Assets 보기에서 검색하여 Assets 찾기</a>
+                        <a href="https://experienceleague.adobe.com/ko/playlists/experience-manager-assets-assets-view-search-use" target="_blank" rel="referrer" title="AEM Assets Assets 보기에서 검색하여 Assets 찾기">AEM Assets Assets 보기에서 검색하여 Assets 찾기</a>
                     </p>
                     <p class="is-size-6">AEM Assets Assets 보기 검색을 통해 에셋을 빠르고 쉽게 찾는 방법에 대해 알아봅니다.</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-assets-view-search-use" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/ko/playlists/experience-manager-assets-assets-view-search-use" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">시청</span>
                 </a>
             </div>
@@ -161,7 +161,7 @@ AEM Assets as a Cloud Service과 크리에이티브 도구를 통합하여 통�
 
 <!-- CARDS
 
-* https://experienceleague.adobe.com/en/playlists/experience-manager-assets-manage-creative-workflows-with-workfront-and-assets-essentials
+* https://experienceleague.adobe.com/ko/playlists/experience-manager-assets-manage-creative-workflows-with-workfront-and-assets-essentials
   { title = Manage Creative Workflows Using Workfront and AEM Assets }
   { description = Learn how Adobe Workfront and AEM Assets help your organization manage the creative workflow. }
 
@@ -172,8 +172,8 @@ AEM Assets as a Cloud Service과 크리에이티브 도구를 통합하여 통�
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-manage-creative-workflows-with-workfront-and-assets-essentials" title="Workfront 및 Assets Essentials를 사용하여 Creative 워크플로 관리" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_1781139425d77174a992697a33d097a8bd5b54d5b.jpeg?width=400&format=pjpg&optimize=medium" alt="Workfront 및 Assets Essentials를 사용하여 Creative 워크플로 관리"
+                    <a href="https://experienceleague.adobe.com/ko/playlists/experience-manager-assets-manage-creative-workflows-with-workfront-and-assets-essentials" title="Workfront 및 Assets Essentials를 사용하여 Creative 워크플로 관리" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/ko/playlists/media_1781139425d77174a992697a33d097a8bd5b54d5b.jpeg?width=400&format=pjpg&optimize=medium" alt="Workfront 및 Assets Essentials를 사용하여 Creative 워크플로 관리"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -181,11 +181,11 @@ AEM Assets as a Cloud Service과 크리에이티브 도구를 통합하여 통�
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-manage-creative-workflows-with-workfront-and-assets-essentials" target="_blank" rel="referrer" title="Workfront 및 Assets Essentials를 사용하여 Creative 워크플로 관리">Workfront 및 AEM Assets을 사용하여 Creative 워크플로 관리</a>
+                        <a href="https://experienceleague.adobe.com/ko/playlists/experience-manager-assets-manage-creative-workflows-with-workfront-and-assets-essentials" target="_blank" rel="referrer" title="Workfront 및 Assets Essentials를 사용하여 Creative 워크플로 관리">Workfront 및 AEM Assets을 사용하여 Creative 워크플로 관리</a>
                     </p>
                     <p class="is-size-6">Adobe Workfront 및 AEM Assets을 통해 귀사에서 크리에이티브 워크플로우를 관리하는 방법을 알아봅니다.</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-manage-creative-workflows-with-workfront-and-assets-essentials" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/ko/playlists/experience-manager-assets-manage-creative-workflows-with-workfront-and-assets-essentials" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">시청</span>
                 </a>
             </div>

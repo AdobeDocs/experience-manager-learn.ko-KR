@@ -34,7 +34,7 @@ ht-degree: 1%
 사용 사례가 작동하려면 다음 조건을 충족해야 합니다.
 
 * Forms 추가 기능 패키지가 포함된 AEM 서버
-* Acrobat Sign 응용 프로그램에 대한 [통합 키](https://helpx.adobe.com/sign/kb/how-to-create-an-integration-key.html)
+* Acrobat Sign 응용 프로그램에 대한 [통합 키](https://helpx.adobe.com/kr/sign/kb/how-to-create-an-integration-key.html)
 
 ## 다음 단계
 

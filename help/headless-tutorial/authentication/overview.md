@@ -37,7 +37,7 @@ AEM은 GraphQL, AEM 컨텐츠 서비스에서 Assets HTTP API에 이르기까지
 
 ## 외부 애플리케이션 개요
 
-이 자습서에서는 명령줄에서 실행되는 [단순 Node.js 응용 프로그램](./assets/aem-guides_token-authentication-external-application.zip)을 사용하여 [Assets HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html)를 사용하여 AEM as a Cloud Service에서 에셋 메타데이터를 업데이트합니다.
+이 자습서에서는 명령줄에서 실행되는 [단순 Node.js 응용 프로그램](./assets/aem-guides_token-authentication-external-application.zip)을 사용하여 [Assets HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=ko)를 사용하여 AEM as a Cloud Service에서 에셋 메타데이터를 업데이트합니다.
 
 Node.js 애플리케이션의 실행 흐름은 다음과 같습니다.
 

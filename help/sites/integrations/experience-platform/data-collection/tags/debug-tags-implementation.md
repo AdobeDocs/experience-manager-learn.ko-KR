@@ -54,6 +54,6 @@ Adobe은 Adobe Experience Platform Debugger [Chrome 확장](https://chrome.googl
 
 ## 추가 리소스 {#additional-resources}
 
-+ [Adobe Experience Platform Debugger 소개](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)
++ [Adobe Experience Platform Debugger 소개](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html?lang=ko)
 
-+ [위성 개체 참조](https://experienceleague.adobe.com/docs/experience-platform/tags/client-side/satellite-object.html)
++ [위성 개체 참조](https://experienceleague.adobe.com/docs/experience-platform/tags/client-side/satellite-object.html?lang=ko)

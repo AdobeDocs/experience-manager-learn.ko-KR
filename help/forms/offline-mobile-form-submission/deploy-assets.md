@@ -32,7 +32,7 @@ ht-degree: 0%
 
 * [사용자 지정 프로필 가져오기](assets/customprofile.zip) HTML5 양식의 데이터를 XDP와 병합하고 대화형 PDF를 반환합니다.
 
-* [서비스 사용자 번들로 개발 배포](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip?lang=en)
+* [서비스 사용자 번들로 개발 배포](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip?lang=ko)
 configMgr을 사용하여 Apache Sling 서비스 사용자 매퍼 서비스에 다음 항목을 추가합니다
 
 ```
@@ -52,7 +52,7 @@ DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
 * 작성자 인스턴스의 사용자 이름/암호와 AEM 저장소의 **기존 위치**&#x200B;를 지정하여 [configMgr](http://localhost:4503/system/console/configMgr)을 사용하여 제출된 데이터를 AEM 서버 자격 증명에 저장하십시오. AEM Workflow Server에 엔드포인트의 URL을 그대로 둘 수 있습니다. 지정된 노드의 제출에서 데이터를 추출하고 저장하는 종단점입니다.
   ![publish-config](assets/publish-config.png)
 
-* [서비스 사용자 번들로 개발 배포](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip?lang=en)
+* [서비스 사용자 번들로 개발 배포](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip?lang=ko)
 * [osgi 구성을 엽니다](http://localhost:4503/system/console/configMgr).
 * **Apache Sling 레퍼러 필터**&#x200B;를 검색합니다. 비어 있음 확인란이 선택되어 있는지 확인합니다.
 * [사용자 지정 프로필 가져오기](assets/customprofile.zip) HTML5 양식의 데이터를 XDP와 병합하고 대화형 PDF를 반환합니다.

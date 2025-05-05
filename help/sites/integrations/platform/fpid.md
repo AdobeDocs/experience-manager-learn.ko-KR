@@ -26,7 +26,7 @@ AEM Publish를 통해 전달된 Adobe Experience Manager(AEM) 사이트를 Adobe
 
 FPID 쿠키는 JavaScript을 사용하여 클라이언트측 쿠키를 만드는 대신 서버(AEM Publish)에서 설정해야 합니다. Safari 및 Firefox와 같은 최신 브라우저는 JavaScript에서 생성한 쿠키를 차단하거나 빠르게 만료할 수 있기 때문입니다.
 
-[첫 번째 장치 ID와 Experience Cloud ID가 함께 작동하는 방법에 대한 자세한 내용을 알아보려면 지원 설명서를 읽어 보십시오](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids.html?lang=en).
+[첫 번째 장치 ID와 Experience Cloud ID가 함께 작동하는 방법에 대한 자세한 내용을 알아보려면 지원 설명서를 읽어 보십시오](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids.html?lang=ko).
 
 다음은 웹 호스트로 AEM을 사용할 때 FPID가 작동하는 방식에 대한 개요입니다.
 
@@ -163,8 +163,8 @@ public class FpidServlet extends SlingAllMethodsServlet {
 
 이 JavaScript 스크립트는 일반적으로 다음 방법 중 하나를 사용하여 페이지에 추가됩니다.
 
-+ Adobe Experience Platform의 [태그](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
-+ [AEM 클라이언트 라이브러리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/clientlibs.html?lang=en)
++ Adobe Experience Platform의 [태그](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ko)
++ [AEM 클라이언트 라이브러리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/clientlibs.html?lang=ko)
 
 사용자 지정 AEM FPID 서블릿에 대한 XHR 호출은 비동기적이지만 속도가 빠르므로 사용자가 AEM에서 제공하는 웹 페이지를 방문한 다음 요청이 완료되기 전에 다른 곳으로 이동할 수 있습니다.
 이 경우 AEM에서 웹 페이지를 다음 페이지 로드할 때 동일한 프로세스가 다시 시도됩니다.
@@ -172,9 +172,9 @@ public class FpidServlet extends SlingAllMethodsServlet {
 AEM FPID 서블릿(`/bin/aep/fpid`)에 대한 HTTP GET은 임의 쿼리 매개 변수로 매개 변수화되어 브라우저와 AEM Publish 서비스 간의 인프라가 요청 응답을 캐시하지 않도록 합니다.
 마찬가지로 캐싱 방지를 지원하기 위해 `Cache-Control: no-store` 요청 헤더가 추가됩니다.
 
-AEM FPID 서블릿을 호출하면 FPID가 JSON 응답에서 검색되고 [Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/tags-configuration/install-web-sdk.html?lang=en)에서 이 FPID를 Experience Platform API로 전송하는 데 사용됩니다.
+AEM FPID 서블릿을 호출하면 FPID가 JSON 응답에서 검색되고 [Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/tags-configuration/install-web-sdk.html?lang=ko)에서 이 FPID를 Experience Platform API로 전송하는 데 사용됩니다.
 
-[identityMap에서 FPID 사용](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html#identityMap)에 대한 자세한 내용은 Experience Platform 설명서를 참조하십시오
+[identityMap에서 FPID 사용](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=ko#identityMap)에 대한 자세한 내용은 Experience Platform 설명서를 참조하십시오
 
 ```javascript
 ...
@@ -239,6 +239,6 @@ AEM FPID 서블릿을 호출하면 FPID가 JSON 응답에서 검색되고 [Platf
 
 Platform Web SDK을 사용하여 ID 데이터를 관리하고 자사 디바이스 ID(FPID)에 대해서는 다음 Experience Platform 설명서를 검토하십시오.
 
-+ [자사 장치 ID 생성](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids.html)
-+ [Platform Web SDK의 자사 장치 ID](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html)
-+ [Platform Web SDK의 ID 데이터](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html)
++ [자사 장치 ID 생성](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids.html?lang=ko)
++ [Platform Web SDK의 자사 장치 ID](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=ko)
++ [Platform Web SDK의 ID 데이터](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html?lang=ko)

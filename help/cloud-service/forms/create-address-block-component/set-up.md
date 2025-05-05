@@ -20,13 +20,13 @@ ht-degree: 2%
 
 이미 개발 환경을 설정한 경우 자습서의 이 부분을 안전하게 건너뛸 수 있습니다.
 
-[Maven 프로젝트 만들기](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/getting-started)
+[Maven 프로젝트 만들기](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/getting-started)
 
-[IntelliJ 설치](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-set-up) - 이 자습서의 글꼴 모듈 추가를 건너뛸 수 있습니다.
+[IntelliJ 설치](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-set-up) - 이 자습서의 글꼴 모듈 추가를 건너뛸 수 있습니다.
 
-[Git 초기화](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/setup-git)
+[Git 초기화](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/setup-git)
 
-[AEM Forms의 로컬 클라우드 지원 인스턴스와 IntelliJ 동기화](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-and-aem-sync)
+[AEM Forms의 로컬 클라우드 지원 인스턴스와 IntelliJ 동기화](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-and-aem-sync)
 
 ## 다음 단계
 

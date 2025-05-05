@@ -28,7 +28,7 @@ ht-degree: 0%
 * [setvalue 번들을 다운로드하여 배포합니다](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). 메타데이터 속성을 설정하는 사용자 지정 OSGI 번들입니다.
 >AEM Forms 6.5 이상에서는 이 기능을 [여기에서 설명](form-data-model-service-as-step-in-aem65-workflow-video-use.md)과 같이 즉시 사용할 수 있습니다.
 
-* [여기](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html)에 설명된 대로 SampleRest.war 파일로 tomcat을 설정합니다.Tomcat에 배포된 war 파일에는 지원자의 크레딧 점수를 반환하는 코드가 있습니다. 크레딧 스코어는 200에서 800 사이의 임의의 숫자입니다
+* [여기](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html?lang=ko)에 설명된 대로 SampleRest.war 파일로 tomcat을 설정합니다.Tomcat에 배포된 war 파일에는 지원자의 크레딧 점수를 반환하는 코드가 있습니다. 크레딧 스코어는 200에서 800 사이의 임의의 숫자입니다
 
 * [패키지 관리자를 사용하여 AEM으로 에셋 가져오기](assets/invoke-fdm-as-service-step.zip). 패키지에는 다음이 포함됩니다.
 

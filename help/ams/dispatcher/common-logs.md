@@ -33,7 +33,7 @@ ht-degree: 0%
 
 ```
 Fri Jul 20 03:35:09 2018 W pid 8300 (tid 139937910880384) /etc/httpd/conf/publish-filters.any:5: Allowing requests with globs is considered unsafe.
-Please consult the documentation at 'https://www.adobe.com/go/docs_dispatcher_config_en' on how to use attributes 
+Please consult the documentation at 'https://www.adobe.com/go/docs_dispatcher_config_kr' on how to use attributes 
 method/url/query/protocol/path/selectors/extension/suffix instead.
 ```
 
@@ -130,7 +130,7 @@ Fri Jul 20 22:35:45 2018 I pid 3648 "GET /favicon.ico" 503 - 54234ms authorfarm/
 Fri Jul 20 23:00:19 2018 I pid 16004 (tid 140134145820416) Current cache hit ratio: 87.94 %
 ```
 
-렌더링 수준에서 가져오기와 캐시에서 가져오기가 측정되었음을 의미합니다. 캐시에서 80% 이상을 달성하려면 [여기](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html)의 도움말을 따라야 합니다.
+렌더링 수준에서 가져오기와 캐시에서 가져오기가 측정되었음을 의미합니다. 캐시에서 80% 이상을 달성하려면 [여기](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html?lang=ko)의 도움말을 따라야 합니다.
 
 이 숫자를 가능한 한 높게 지정합니다.
 
@@ -169,7 +169,7 @@ Thu Sep 27 17:35:11 2018 W pid 18936 Unable to fetch vanity URLs from 10.43.0.42
 
 이 오류는 vanity URL을 허용하는 동적 자동 필터를 사용하도록 Dispatcher을 구성했지만 AEM 렌더러에서 패키지를 설치하여 설정을 완료하지 않은 경우에 발생합니다.
 
-이 문제를 해결하려면 AEM 인스턴스에 vanity url 기능 팩을 설치하고 익명 사용자가 준비할 수 있도록 허용하십시오. 세부 정보 [여기](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17463.html)
+이 문제를 해결하려면 AEM 인스턴스에 vanity url 기능 팩을 설치하고 익명 사용자가 준비할 수 있도록 허용하십시오. 세부 정보 [여기](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17463.html?lang=ko)
 
 작동 중인 별칭 URL 설정은 다음과 같습니다.
 

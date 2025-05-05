@@ -136,7 +136,7 @@ public class SimpleJobConsumerImpl implements JobConsumer {
 
 AEM 작성자 서비스에서 작업을 한 번만 실행하려면 아래에 설명된 [작업 큐 구성](#how-to-run-a-job-on-the-leader-instance)을 추가하십시오.
 
-[Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#cloud-manager)에서 AEM 작성자 서비스의 로그를 검토하여 확인할 수 있습니다.
+[Cloud Manager](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#cloud-manager)에서 AEM 작성자 서비스의 로그를 검토하여 확인할 수 있습니다.
 
 ![모든 인스턴스에서 작업 처리](./assets/run-job-once/job-processed-by-all-instances.png)
 

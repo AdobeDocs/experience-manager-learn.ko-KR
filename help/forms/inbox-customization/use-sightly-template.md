@@ -26,7 +26,7 @@ Sightly 템플릿을 사용하여 받은 편지함 열에 표시할 데이터의
 
 ## Sightly 템플릿
 
-다음은 sightly 템플릿입니다. 템플릿의 코드에는 소득에 따라 아이콘이 표시됩니다. 아이콘은 AEM과 함께 제공되는 [coral ui 아이콘 라이브러리](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons)의 일부로 사용할 수 있습니다.
+다음은 sightly 템플릿입니다. 템플릿의 코드에는 소득에 따라 아이콘이 표시됩니다. 아이콘은 AEM과 함께 제공되는 [coral ui 아이콘 라이브러리](https://helpx.adobe.com/kr/experience-manager/6-3/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons)의 일부로 사용할 수 있습니다.
 
 ```java
 <template data-sly-template.incomeTemplate="${@ item}>">
@@ -80,7 +80,7 @@ return val;
 
 >[!NOTE]
 >
->이 문서에서는 사용자가 이 시리즈의 [이전 문서](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/inbox-customization/add-married-column.html)에서 [샘플 워크플로](assets/review-workflow.zip) 및 [샘플 양식](assets/snap-form.zip)을 설치했다고 가정합니다.
+>이 문서에서는 사용자가 이 시리즈의 [이전 문서](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/inbox-customization/add-married-column.html?lang=ko)에서 [샘플 워크플로](assets/review-workflow.zip) 및 [샘플 양식](assets/snap-form.zip)을 설치했다고 가정합니다.
 
 * [crx에 관리자로 로그인](http://localhost:4502/crx/de/index.jsp)
 * [sightly 템플릿 가져오기](assets/sightly-template.zip)

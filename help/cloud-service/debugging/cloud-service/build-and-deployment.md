@@ -70,11 +70,11 @@ Adobe Cloud Manager을 사용하면 코드를 쉽게 빌드하고 AEM as a Cloud
 
 코드 스캔은 Java 및 AEM 관련 모범 사례를 혼합하여 정적 코드 분석을 수행합니다.
 
-코드에 심각한 보안 취약점이 존재하는 경우 코드 스캔으로 인해 빌드 오류가 발생합니다. 더 적은 위반은 재정의할 수 있지만 수정되는 것이 좋습니다. 코드 검사가 불완전하여 [긍정 오류](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/overview-test-results.html#dealing-with-false-positives)가 발생할 수 있습니다.
+코드에 심각한 보안 취약점이 존재하는 경우 코드 스캔으로 인해 빌드 오류가 발생합니다. 더 적은 위반은 재정의할 수 있지만 수정되는 것이 좋습니다. 코드 검사가 불완전하여 [긍정 오류](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/overview-test-results.html?lang=ko#dealing-with-false-positives)가 발생할 수 있습니다.
 
 코드 스캔 문제를 해결하려면 **세부 정보 다운로드** 단추를 통해 Cloud Manager에서 제공한 CSV 형식의 보고서를 다운로드하고 항목을 검토하십시오.
 
-자세한 내용은 AEM 관련 규칙을 참조하십시오. Cloud Manager 설명서의 [사용자 지정 AEM 관련 코드 스캔 규칙](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/custom-code-quality-rules.html)을 참조하십시오.
+자세한 내용은 AEM 관련 규칙을 참조하십시오. Cloud Manager 설명서의 [사용자 지정 AEM 관련 코드 스캔 규칙](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/custom-code-quality-rules.html?lang=ko)을 참조하십시오.
 
 ## 이미지 빌드
 
@@ -102,7 +102,7 @@ set the 'mergeConfigurations' flag to 'true' if you want to merge multiple confi
 #### 원인 2
 
 + __원인:__ AEM 프로젝트에 동일한 코드 패키지가 두 번 잘못 포함되어 해당 패키지에 포함된 모든 OSGi 구성이 중복됩니다.
-+ __해결 방법:__ 모든 프로젝트에 포함된 패키지의 모든 pom.xml을 검토하고 `filevault-package-maven-plugin` [구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html#cloud-manager-target)이 `<cloudManagerTarget>none</cloudManagerTarget>`(으)로 설정되어 있는지 확인하십시오.
++ __해결 방법:__ 모든 프로젝트에 포함된 패키지의 모든 pom.xml을 검토하고 `filevault-package-maven-plugin` [구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=ko#cloud-manager-target)이 `<cloudManagerTarget>none</cloudManagerTarget>`(으)로 설정되어 있는지 확인하십시오.
 
 ### 잘못된 repoinit 스크립트
 
@@ -230,8 +230,8 @@ Deploy to 단계를 디버깅하기 전에 [AEM as a Cloud Service 로그](./log
 + __원인:__ AEM 게시 서비스에 콘텐츠 패키지를 배포하는 데 사용되는 AEM의 복제 서비스 사용자가 AEM 게시의 `/var`에 쓸 수 없습니다. 따라서 콘텐츠 패키지를 AEM Publish 서비스로 배포하지 못합니다.
 + __해결 방법:__ 이 문제를 해결하기 위한 다음 방법은 기본 설정 순서대로 나열되어 있습니다.
    1. `/var` 리소스가 필요하지 않은 경우 응용 프로그램의 일부로 배포된 콘텐츠 패키지에서 `/var`의 리소스를 제거합니다.
-   2. `/var` 리소스가 필요한 경우 [repoinit](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#repoinit)를 사용하여 노드 구조를 정의합니다. Repoinit 스크립트는 OSGi 실행 모드를 통해 AEM 작성자, AEM 게시 또는 둘 다에 타깃팅할 수 있습니다.
-   3. `/var` 리소스가 AEM 작성자에만 필요하며 [repoinit](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#repoinit)을(를) 사용하여 합리적으로 모델링할 수 없는 경우 이 리소스를 [AEM 작성자 실행 모드 폴더(`<target>/apps/example-packages/content/install.author</target>`)의 `all` 패키지에 포함](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html#embeddeds)하여 AEM 작성자에만 설치된 개별 콘텐츠 패키지로 이동하십시오.
+   2. `/var` 리소스가 필요한 경우 [repoinit](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=ko#repoinit)를 사용하여 노드 구조를 정의합니다. Repoinit 스크립트는 OSGi 실행 모드를 통해 AEM 작성자, AEM 게시 또는 둘 다에 타깃팅할 수 있습니다.
+   3. `/var` 리소스가 AEM 작성자에만 필요하며 [repoinit](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=ko#repoinit)을(를) 사용하여 합리적으로 모델링할 수 없는 경우 이 리소스를 [AEM 작성자 실행 모드 폴더(`<target>/apps/example-packages/content/install.author</target>`)의 `all` 패키지에 포함](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=ko#embeddeds)하여 AEM 작성자에만 설치된 개별 콘텐츠 패키지로 이동하십시오.
    4. 이 [Adobe KB](https://helpx.adobe.com/in/experience-manager/kb/cm/cloudmanager-deploy-fails-due-to-sling-distribution-aem.html)에 설명된 대로 `sling-distribution-importer` 서비스 사용자에게 적절한 ACL을 제공하십시오.
 
 ### Adobe 지원 사례 만들기

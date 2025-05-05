@@ -24,7 +24,7 @@ Java 클래스를 작성하고 클래스를 OSGi 번들로 배포하려면 다�
 
 ## Maven 프로젝트 만들기
 
-첫 번째 단계는 적절한 Adobe Maven Archetype을 사용하여 Maven 프로젝트를 만드는 것입니다. 자세한 단계는 이 [문서](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)에 나와 있습니다. Maven 프로젝트를 eclipse로 가져오면 프로세스 단계에서 사용할 수 있는 첫 번째 OSGi 구성 요소 작성을 시작할 수 있습니다.
+첫 번째 단계는 적절한 Adobe Maven Archetype을 사용하여 Maven 프로젝트를 만드는 것입니다. 자세한 단계는 이 [문서](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=ko)에 나와 있습니다. Maven 프로젝트를 eclipse로 가져오면 프로세스 단계에서 사용할 수 있는 첫 번째 OSGi 구성 요소 작성을 시작할 수 있습니다.
 
 
 ### WorkflowProcess를 구현하는 클래스 만들기
@@ -143,7 +143,7 @@ QueryBuilder 서비스는 attachmentsPath 폴더 아래에서 nt:file 유형의 
 
 #### 빌드 및 배포
 
-[여기에 설명된 대로 번들을 빌드합니다](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)
+[여기에 설명된 대로 번들을 빌드합니다](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=ko)
 [번들이 배포되어 있고 활성 상태인지 확인](http://localhost:4502/system/console/bundles)
 
 ## 다음 단계

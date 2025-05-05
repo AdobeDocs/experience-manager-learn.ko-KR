@@ -57,6 +57,6 @@ XML 변수를 사용하여 적응형 양식을 미리 채우거나 적응형 양
 
 * [패키지 관리자를 사용하여 자산을 AEM에 다운로드하고 가져옵니다.](assets/xmlandstringvariable.zip)
 * [워크플로 모델을 탐색합니다](http://localhost:4502/editor.html/conf/global/settings/workflow/models/vacationrequest.html) 워크플로에서 사용되는 변수를 이해합니다.
-* [전자 메일 서비스 구성](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/notification.html#ConfiguringtheMailService)
+* [전자 메일 서비스 구성](https://helpx.adobe.com/kr/experience-manager/6-5/sites/administering/using/notification.html#ConfiguringtheMailService)
 * [적응형 양식 열기](http://localhost:4502/content/dam/formsanddocuments/applicationfortimeoff/jcr:content?wcmmode=disabled)
 * 세부사항을 입력하고 양식을 제출하세요.

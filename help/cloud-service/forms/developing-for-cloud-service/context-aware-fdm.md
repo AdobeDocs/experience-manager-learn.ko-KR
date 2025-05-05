@@ -27,7 +27,7 @@ ht-degree: 7%
 
 ## 환경 변수 만들기
 
-표준 환경 변수는 Cloud Manager를 통해 구성 및 관리할 수 있습니다. 런타임 환경에 제공되며 OSGi 구성에서 사용할 수 있습니다. [환경 변수는 변경되는 내용에 따라 환경별 값 또는 환경 비밀일 수 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables.html?lang=en)
+표준 환경 변수는 Cloud Manager를 통해 구성 및 관리할 수 있습니다. 런타임 환경에 제공되며 OSGi 구성에서 사용할 수 있습니다. [환경 변수는 변경되는 내용에 따라 환경별 값 또는 환경 비밀일 수 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables.html?lang=ko)
 
 
 

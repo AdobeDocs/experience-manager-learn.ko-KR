@@ -100,7 +100,7 @@ ht-degree: 0%
 
 ## HTL(HTML 템플릿 언어) 및 대화 상자 {#htl-dialogs}
 
-HTML 템플릿 언어 또는 **[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/getting-started.html)**&#x200B;은(는) AEM 구성 요소에서 콘텐츠를 렌더링하는 데 사용하는 가벼운 서버측 템플릿 언어입니다.
+HTML 템플릿 언어 또는 **[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/getting-started.html?lang=ko)**&#x200B;은(는) AEM 구성 요소에서 콘텐츠를 렌더링하는 데 사용하는 가벼운 서버측 템플릿 언어입니다.
 
 **대화 상자**&#x200B;는 구성 요소에 사용할 수 있는 구성을 정의합니다.
 
@@ -262,7 +262,7 @@ Sling 모델은 JCR에서 Java™ 변수로 데이터를 쉽게 매핑하는 주
 
    이제 `HelloWord`을(를) 사용하여 `model` 변수를 통해 HTL에서 `HelloWorld` 모델 인스턴스를 사용할 수 있습니다. 이러한 메서드 호출에서는 단축된 메서드 구문을 사용할 수 있습니다. 예를 들어 `${model.getTitle()}`은(는) `${model.title}`에 단락될 수 있습니다.
 
-   마찬가지로 모든 HTL 스크립트에는 Sling 모델 개체와 동일한 구문을 사용하여 액세스할 수 있는 [전역 개체](https://experienceleague.adobe.com/docs/experience-manager-htl/content/global-objects.html)가 삽입됩니다.
+   마찬가지로 모든 HTL 스크립트에는 Sling 모델 개체와 동일한 구문을 사용하여 액세스할 수 있는 [전역 개체](https://experienceleague.adobe.com/docs/experience-manager-htl/content/global-objects.html?lang=ko)가 삽입됩니다.
 
    ```html
    <div class="cmp-helloworld" data-cmp-is="helloworld" 
@@ -285,7 +285,7 @@ Sling 모델은 JCR에서 Java™ 변수로 데이터를 쉽게 매핑하는 주
 
 클라이언트측 라이브러리 `clientlibs`은(는) AEM Sites 구현에 필요한 CSS 및 JavaScript 파일을 구성하고 관리하는 메커니즘을 제공합니다. 클라이언트측 라이브러리는 AEM의 페이지에 CSS 및 JavaScript을 포함하는 표준 방법입니다.
 
-[ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) 모듈은 빌드 프로세스에 통합되는 연결 해제된 [webpack](https://webpack.js.org/) 프로젝트입니다. 이를 통해 Sass, LESS 및 TypeScript와 같이 인기 있는 프론트엔드 라이브러리를 사용할 수 있습니다. `ui.frontend` 모듈은 [클라이언트측 라이브러리 챕터](/help/getting-started-wknd-tutorial-develop/project-archetype/client-side-libraries.md)에서 자세히 살펴봅니다.
+[ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=ko) 모듈은 빌드 프로세스에 통합되는 연결 해제된 [webpack](https://webpack.js.org/) 프로젝트입니다. 이를 통해 Sass, LESS 및 TypeScript와 같이 인기 있는 프론트엔드 라이브러리를 사용할 수 있습니다. `ui.frontend` 모듈은 [클라이언트측 라이브러리 챕터](/help/getting-started-wknd-tutorial-develop/project-archetype/client-side-libraries.md)에서 자세히 살펴봅니다.
 
 그런 다음 `HelloWorld` 구성 요소의 CSS 스타일을 업데이트합니다.
 

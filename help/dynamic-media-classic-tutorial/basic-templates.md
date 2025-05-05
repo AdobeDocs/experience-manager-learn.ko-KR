@@ -63,8 +63,8 @@ Photoshop에서와 같이 모든 레이어를 단일 파일에 넣고 표시하�
 
 템플릿 프로젝트는 비즈니스 규칙 및 애플리케이션의 필요에 따라 비교적 단순하거나 매우 복잡할 수 있습니다. 기본 템플릿은 이미지 서버에서 호출되지만 Dynamic Media Classic 환경의 유연성으로 인해 다른 템플릿 내에 템플릿을 중첩할 수도 있으므로 일반적으로 명명된 변수에 의해 연결될 수 있는 상당히 복잡한 이미지를 만들 수 있습니다.
 
-- [템플릿 기본 사항](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html)에 대해 자세히 알아보세요.
-- [기본 템플릿](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template.html#creating_a_template)을 만드는 방법을 알아봅니다.
+- [템플릿 기본 사항](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html?lang=ko)에 대해 자세히 알아보세요.
+- [기본 템플릿](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template.html?lang=ko#creating_a_template)을 만드는 방법을 알아봅니다.
 
 ## 기본 템플릿 만들기
 
@@ -186,7 +186,7 @@ _그림자가 있는 레이어와 없는 레이어_
 
 그림자 효과는 레이어에서 가로 또는 세로로 오프셋되지만 광선 효과는 모든 방향에서 고르게 적용됩니다. 내부 효과는 레이어의 불투명한 부분 위에 작용하는 반면, 외부 효과는 투명한 영역에만 영향을 줍니다.
 
-[레이어 효과 추가](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template.html#using-shadow-and-glow-effects-on-layers)에 대해 자세히 알아보세요.
+[레이어 효과 추가](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template.html?lang=ko#using-shadow-and-glow-effects-on-layers)에 대해 자세히 알아보세요.
 
 ### 매개 변수 추가
 
@@ -223,7 +223,7 @@ Dynamic Media Classic 조건에서 매개 변수는 URL을 통해 조작할 수 
 >
 >속성이 표시되지 않기 때문에 매개 변수를 추가할 수 없습니까? 레이어의 속성을 기본값에서 변경(이동, 크기 조정, 숨기기 등)하기만 하면 됩니다. 이제 속성이 노출된 것을 확인해야 합니다.
 
-[템플릿 매개 변수](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template-parameters.html)에 대해 자세히 알아보세요.
+[템플릿 매개 변수](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template-parameters.html?lang=ko)에 대해 자세히 알아보세요.
 
 ## 텍스트 레이어를 사용하여 템플릿 만들기
 
@@ -312,7 +312,7 @@ RTF를 검사할 때, 각 설정이 변경할 위치인지 파악해야 합니�
 - RGB 값 \red56\green53\blue4 을 볼 수 있습니다. 이 값은 텍스트 색입니다.
 - 글자 크기가 20이지만 20이라는 숫자는 보이지 않습니다. 그러나 \fs40 명령이 표시됩니다. 몇 가지 이상한 이유로 RTF는 글꼴을 반점으로 측정합니다. 따라서 \fs40은 글꼴 크기입니다.
 
-매개 변수를 만들 수 있는 충분한 정보가 있지만, 이미지 제공 설명서에 모든 RTF 명령에 대한 전체 참조가 있습니다. [이미지 제공 설명서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/c-text-formatting.html#concept-0d3136db7f6f49668274541cd4b6364c)를 참조하세요.
+매개 변수를 만들 수 있는 충분한 정보가 있지만, 이미지 제공 설명서에 모든 RTF 명령에 대한 전체 참조가 있습니다. [이미지 제공 설명서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/c-text-formatting.html?lang=ko#concept-0d3136db7f6f49668274541cd4b6364c)를 참조하세요.
 
 #### 텍스트 레이어에 매개 변수 추가
 
@@ -330,7 +330,7 @@ RTF를 검사할 때, 각 설정이 변경할 위치인지 파악해야 합니�
 >
 >텍스트 색상에 매개 변수를 추가하려면 빨강, 녹색 및 파랑에 대한 매개 변수를 별도로 추가합니다. 예를 들어 RTF가 `\red56\green53\blue46`이면 값 56, 53 및 46에 대해 별도의 빨간색, 녹색 및 파란색 매개 변수를 추가합니다. URL에서 다음 세 가지를 모두 호출하여 색상을 변경합니다. `&$red=56&$green=53&$blue=46`.
 
-[동적 텍스트 매개 변수를 만드는 방법](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template-parameters.html#creating-dynamic-text-parameters)을 알아보세요.
+[동적 텍스트 매개 변수를 만드는 방법](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template-parameters.html?lang=ko#creating-dynamic-text-parameters)을 알아보세요.
 
 ## 템플릿 URL 게시 및 생성
 
@@ -344,7 +344,7 @@ RTF를 검사할 때, 각 설정이 변경할 위치인지 파악해야 합니�
 
 게시를 실행하여 변경 사항이 이미지 서버에 실시간으로 푸시되는지 확인해야 합니다. 다양한 이미지 에셋 레이어, 동적 텍스트용 글꼴 및 템플릿 자체 등 게시해야 하는 사항을 염두에 두십시오. 이미지 세트 및 스핀 세트와 같은 다른 Dynamic Media Classic 리치 미디어 자산과 마찬가지로, 기본 템플릿은 인공 구성입니다. 이 템플릿은 일련의 이미지 제공 명령을 사용하여 이미지 및 글꼴을 참조하는 데이터베이스의 라인 항목입니다. 따라서 템플릿을 게시할 때는 이미지 서버의 데이터를 업데이트하기만 하면 됩니다.
 
-[템플릿 게시](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/publishing-templates.html)에 대해 자세히 알아보세요.
+[템플릿 게시](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/publishing-templates.html?lang=ko)에 대해 자세히 알아보세요.
 
 ### 템플릿 URL 구성
 

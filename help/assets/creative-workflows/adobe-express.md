@@ -24,4 +24,4 @@ Adobe Express을 사용하여 Adobe Experience Manager Assets 내에서 콘텐�
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425972/?learn=on)
 
-또한 Adobe Express에서 AEM Assets에 원활하게 액세스할 수 있도록 [Adobe Express과 AEM Assets 기본 통합](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/integration-adobe-express/native-integration-adobe-express)을 설정하는 방법에 대해 알아봅니다.
+또한 Adobe Express에서 AEM Assets에 원활하게 액세스할 수 있도록 [Adobe Express과 AEM Assets 기본 통합](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/integration-adobe-express/native-integration-adobe-express)을 설정하는 방법에 대해 알아봅니다.

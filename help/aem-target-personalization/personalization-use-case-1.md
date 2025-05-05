@@ -60,8 +60,8 @@ WKND 사이트는 미국 전역의 **SkateFest Challenge**&#x200B;을(를) 웹 �
 1. AEM 콘텐츠 편집기는 요구 사항을 기반으로 콘텐츠 블록에 대한 경험 조각을 만들어 Adobe Target에 오퍼로 내보냅니다. 미국의 모든 상태에 대해 개인화된 콘텐츠를 제공하기 위해 콘텐츠 작성자는 경험 조각 마스터 변형을 한 개 만든 다음 각 상태에 대해 한 개씩 50개의 다른 변형을 만들 수 있습니다. 관련 이미지 및 텍스트가 있는 각 상태 변형에 대한 콘텐츠는 수동으로 편집할 수 있습니다. 경험 조각을 작성할 때 콘텐츠 편집기는 에셋 파인더 옵션을 사용하여 AEM Assets 내에서 사용할 수 있는 모든 에셋에 빠르게 액세스할 수 있습니다. 경험 조각을 Adobe Target으로 내보내면 해당 변형도 모두 Adobe Target에 오퍼로 푸시됩니다.
 
 1. AEM에서 오퍼로 경험 조각을 Adobe Target으로 내보낸 후 마케터는 이러한 오퍼를 사용하여 Target에서 활동을 만들 수 있습니다. 마케터는 WKND site SkateFest 캠페인을 기반으로 각 상태의 WKND 사이트 방문자에게 개인화된 경험을 만들어 제공해야 합니다. 경험 타깃팅 활동을 만들려면 마케터는 대상을 식별해야 합니다. WKND SkateFest 캠페인의 경우 WKND 웹 사이트를 방문하는 위치에 따라 50개의 개별 대상을 만들어야 합니다.
-   * [대상](https://experienceleague.adobe.com/docs/target/using/introduction/target-key-concepts.html#section_3F32DA46BDF947878DD79DBB97040D01)은(는) 활동에 대한 대상을 정의하며 타깃팅을 사용할 수 있는 모든 곳에서 사용됩니다. Target 대상은 정의된 방문자 기준 세트입니다. 오퍼를 특정 대상(또는 세그먼트)에 타기팅할 수 있습니다. 해당 대상에 속하는 방문자에게만 이들을 타깃으로 하는 경험이 표시됩니다.  예를 들어 특정 브라우저나 특정 지리적 위치의 방문자로 구성된 대상에 오퍼를 전달할 수 있습니다.
-   * [오퍼](https://experienceleague.adobe.com/docs/target/using/introduction/target-key-concepts.html#section_973D4CC4CEB44711BBB9A21BF74B89E9)는 캠페인이나 활동 중에 웹 페이지에 표시되는 콘텐츠입니다. 웹 페이지를 테스트할 때 위치에 있는 서로 다른 오퍼를 사용하여 각 경험의 성공 여부를 측정합니다. 오퍼에는 다음을 비롯한 다양한 유형의 콘텐츠가 포함될 수 있습니다.
+   * [대상](https://experienceleague.adobe.com/docs/target/using/introduction/target-key-concepts.html?lang=ko#section_3F32DA46BDF947878DD79DBB97040D01)은(는) 활동에 대한 대상을 정의하며 타깃팅을 사용할 수 있는 모든 곳에서 사용됩니다. Target 대상은 정의된 방문자 기준 세트입니다. 오퍼를 특정 대상(또는 세그먼트)에 타기팅할 수 있습니다. 해당 대상에 속하는 방문자에게만 이들을 타깃으로 하는 경험이 표시됩니다.  예를 들어 특정 브라우저나 특정 지리적 위치의 방문자로 구성된 대상에 오퍼를 전달할 수 있습니다.
+   * [오퍼](https://experienceleague.adobe.com/docs/target/using/introduction/target-key-concepts.html?lang=ko#section_973D4CC4CEB44711BBB9A21BF74B89E9)는 캠페인이나 활동 중에 웹 페이지에 표시되는 콘텐츠입니다. 웹 페이지를 테스트할 때 위치에 있는 서로 다른 오퍼를 사용하여 각 경험의 성공 여부를 측정합니다. 오퍼에는 다음을 비롯한 다양한 유형의 콘텐츠가 포함될 수 있습니다.
       * 이미지
       * 텍스트
       * **HTML**

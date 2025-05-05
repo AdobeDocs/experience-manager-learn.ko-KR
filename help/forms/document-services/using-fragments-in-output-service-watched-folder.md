@@ -32,7 +32,7 @@ ht-degree: 0%
 ![양식&amp;문서](assets/fragment-folder-structure-ui.png)
 
 
-* 출력 서비스 - 일반적으로 이 서비스는 xml 데이터를 xdp 템플릿 또는 pdf와 병합하여 병합된 pdf를 생성하는 데 사용됩니다. 자세한 내용은 출력 서비스에 대한 [javadoc](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html)을(를) 참조하십시오. 이 샘플에서는 crx 저장소에 있는 조각을 사용하고 있습니다.
+* 출력 서비스 - 일반적으로 이 서비스는 xml 데이터를 xdp 템플릿 또는 pdf와 병합하여 병합된 pdf를 생성하는 데 사용됩니다. 자세한 내용은 출력 서비스에 대한 [javadoc](https://helpx.adobe.com/kr/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html)을(를) 참조하십시오. 이 샘플에서는 crx 저장소에 있는 조각을 사용하고 있습니다.
 
 
 다음 ECMA 스크립트가 PDF 생성에 사용되었습니다. 코드에서 ResourceResolver 및 ResourceResolverHelper를 사용합니다. ResourceResolver가 필요한 이유는 이 코드가 사용자 컨텍스트 외부에서 실행되기 때문입니다.

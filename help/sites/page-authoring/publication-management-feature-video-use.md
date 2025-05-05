@@ -39,4 +39,4 @@ AEM Sites은 작성자의 워크플로를 기반으로 하여 콘텐츠를 게�
 
 ## 추가 리소스 {#additional-resources}
 
-* [페이지 게시 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/publishing-pages.html)
+* [페이지 게시 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/publishing-pages.html?lang=ko)

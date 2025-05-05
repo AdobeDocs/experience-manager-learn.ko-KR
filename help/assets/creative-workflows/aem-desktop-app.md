@@ -36,4 +36,4 @@ AEM Desktop App을 사용하여 데스크톱의 AEM에서 관리하는 모든 �
 
 ## 추가 리소스
 
-+ [최신 AEM 데스크톱 앱 다운로드](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html)
++ [최신 AEM 데스크톱 앱 다운로드](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=ko)

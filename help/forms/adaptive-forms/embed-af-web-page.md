@@ -23,7 +23,7 @@ ht-degree: 29%
 임베드된 적응형 양식은 완전한 기능을 갖추고 있으며 사용자는 페이지를 떠나지 않고 양식을 작성하고 제출할 수 있습니다. 이로써 사용자는 웹 페이지의 다른 요소 컨텍스트에 남아 있는 동시에 양식과 상호 작용할 수 있습니다.
 
 다음 비디오에서는 웹 페이지에 적응형 또는 HTML5 양식을 임베드하는 데 필요한 단계에 대해 설명합니다.
-최상의 사전 요구 사항, 모범 사례 등은 [설명서](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-external-web-page.html)를 참조하세요.
+최상의 사전 요구 사항, 모범 사례 등은 [설명서](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-external-web-page.html?lang=ko)를 참조하세요.
 >[!VIDEO](https://video.tv.adobe.com/v/335893?quality=12&learn=on)
 
 [ 비디오에 사용된 샘플 파일은 ](assets/embedding-af-web-page.zip)에서 다운로드할 수 있습니다.

@@ -22,7 +22,7 @@ ht-degree: 0%
 
 AEM 워크플로우에서 적응형 양식을 사용할 때 양식 제출자의 관리자에게 작업을 동적으로 지정할 수 있습니다. 이 사용 사례를 달성하려면 Ldap를 사용하여 AEM을 구성해야 합니다.
 
-LDAP를 사용하여 AEM을 구성하는 데 필요한 단계는 [자세한 정보](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ldap-config.html)에 설명되어 있습니다.
+LDAP를 사용하여 AEM을 구성하는 데 필요한 단계는 [자세한 정보](https://helpx.adobe.com/kr/experience-manager/6-5/sites/administering/using/ldap-config.html)에 설명되어 있습니다.
 
 이 문서에서는 Adobe Ldap를 사용하여 AEM을 구성하는 데 사용되는 구성 파일을 첨부합니다. 이러한 파일은 패키지 관리자를 사용하여 가져올 수 있는 패키지에 포함됩니다.
 

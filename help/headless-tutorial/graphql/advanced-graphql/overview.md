@@ -27,7 +27,7 @@ AEM as a Cloud Service에 대한 [빠른 설정](../quick-setup/cloud-service.md
 
 >[!CAUTION]
 >
->AEM as a Cloud Service 환경에 액세스할 수 없는 경우 로컬 SDK을 사용하여 [AEM Headless 빠른 설정](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/quick-setup/local-sdk.html)을 완료할 수 있습니다. 하지만 콘텐츠 조각 탐색과 같은 일부 제품 UI 페이지는 다르다는 점에 유의해야 합니다.
+>AEM as a Cloud Service 환경에 액세스할 수 없는 경우 로컬 SDK을 사용하여 [AEM Headless 빠른 설정](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/quick-setup/local-sdk.html?lang=ko)을 완료할 수 있습니다. 하지만 콘텐츠 조각 탐색과 같은 일부 제품 UI 페이지는 다르다는 점에 유의해야 합니다.
 
 
 
@@ -49,7 +49,7 @@ AEM as a Cloud Service에 대한 [빠른 설정](../quick-setup/cloud-service.md
 
 >[!CAUTION]
 >
->이 비디오(2시 25분)에는 GraphQL 쿼리를 살펴보기 위해 패키지 관리자를 통해 GraphiQL 쿼리 편집기를 설치하는 방법에 대한 설명이 나와 있습니다. 그러나 최신 버전의 AEM as Cloud Service에서는 기본 제공 **GraphiQL 탐색기**&#x200B;가 제공되므로 패키지를 설치할 필요가 없습니다. 자세한 내용은 [GraphiQL IDE 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html)을 참조하십시오.
+>이 비디오(2시 25분)에는 GraphQL 쿼리를 살펴보기 위해 패키지 관리자를 통해 GraphiQL 쿼리 편집기를 설치하는 방법에 대한 설명이 나와 있습니다. 그러나 최신 버전의 AEM as Cloud Service에서는 기본 제공 **GraphiQL 탐색기**&#x200B;가 제공되므로 패키지를 설치할 필요가 없습니다. 자세한 내용은 [GraphiQL IDE 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html?lang=ko)을 참조하십시오.
 
 
 ## 프로젝트 설정
@@ -79,7 +79,7 @@ AEM에서 새 프로젝트를 시작하는 첫 번째 단계는 구성 및 작�
 
 >[!NOTE]
 >
-> 끝점을 저장한 후에는 보안 콘솔 방문에 대한 모달이 표시되며, 이를 통해 끝점에 대한 액세스를 구성하려는 경우 보안 설정을 조정할 수 있습니다. 그러나 보안 권한 자체는 이 자습서에서 다루지 않습니다. 자세한 내용은 [AEM 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html)를 참조하세요.
+> 끝점을 저장한 후에는 보안 콘솔 방문에 대한 모달이 표시되며, 이를 통해 끝점에 대한 액세스를 구성하려는 경우 보안 설정을 조정할 수 있습니다. 그러나 보안 권한 자체는 이 자습서에서 다루지 않습니다. 자세한 내용은 [AEM 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=ko)를 참조하세요.
 
 ### WKND 콘텐츠 구조 및 언어 루트 폴더 검토
 

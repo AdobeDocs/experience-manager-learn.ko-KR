@@ -60,7 +60,7 @@ Cloud Manager의 프론트엔드 파이프라인을 사용하여 AEM 환경에 �
 
 비디오의 높은 수준 단계:
 
-1. Cloud Manager에서 새 git [리포지토리 만들기](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/cloud-manager-repositories.html)
+1. Cloud Manager에서 새 git [리포지토리 만들기](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/cloud-manager-repositories.html?lang=ko)
 1. Cloud Manager git 저장소에 테마 소스 프로젝트를 추가합니다.
 
    ```shell
@@ -71,7 +71,7 @@ Cloud Manager의 프론트엔드 파이프라인을 사용하여 AEM 환경에 �
    $ git remote add origin <CLOUD_MANAGER_GIT_REPOSITORY_URL>
    ```
 
-1. Cloud Manager에서 [프론트엔드 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html)을 구성하여 프론트엔드 코드를 배포합니다.
+1. Cloud Manager에서 [프론트엔드 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?lang=ko)을 구성하여 프론트엔드 코드를 배포합니다.
 1. 프론트엔드 파이프라인을 실행하여 대상 AEM 환경에 업데이트를 배포합니다.
 
 ### 보고서 예

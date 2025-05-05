@@ -26,5 +26,5 @@ Experience Manager 핵심 구성 요소의 일부인 이미지 구성 요소는 
 
 ## 추가 리소스
 
-* [이미지 핵심 구성 요소 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=en#dynamic-media)
-* [Dynamic Media 명령 참조](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en#image-serving-api)
+* [이미지 핵심 구성 요소 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=ko#dynamic-media)
+* [Dynamic Media 명령 참조](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=ko#image-serving-api)

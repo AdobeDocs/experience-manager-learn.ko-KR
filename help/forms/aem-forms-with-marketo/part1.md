@@ -25,13 +25,13 @@ Adobe의 일부인 Marketo은 이메일, 모바일, 소셜, 디지털 광고, �
 
 이제 AEM Forms의 양식 데이터 모델을 사용하여 AEM Form을 Marketo과 원활하게 통합할 수 있습니다.
 
-[양식 데이터 모델에 대해 자세히 알아보기](https://helpx.adobe.com/experience-manager/6-5/forms/using/data-integration.html)
+[양식 데이터 모델에 대해 자세히 알아보기](https://helpx.adobe.com/kr/experience-manager/6-5/forms/using/data-integration.html)
 
 Marketo은 시스템 기능 중 대부분을 원격으로 실행할 수 있도록 하는 REST API를 노출합니다. 프로그램 제작에서 리드 일괄 가져오기에 이르기까지 Marketo 인스턴스를 세밀하게 제어할 수 있는 많은 옵션이 있습니다. 양식 데이터 모델을 사용하여 AEM Forms을 Marketo과 통합하는 것은 매우 간단합니다.
 
 >[!NOTE]
 >
->이 튜토리얼은 특히 AEM Forms 6.5에 맞게 조정되었습니다. AEM Forms as a Cloud Service을 Adobe Marketo Engage과 통합하려는 경우 [해당 통합에 대한 전용 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/integrate-adaptive-form-with-market-engage/integrate-form-to-marketo-engage)를 참조하십시오.
+>이 튜토리얼은 특히 AEM Forms 6.5에 맞게 조정되었습니다. AEM Forms as a Cloud Service을 Adobe Marketo Engage과 통합하려는 경우 [해당 통합에 대한 전용 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/forms/integrate/services/integrate-adaptive-form-with-market-engage/integrate-form-to-marketo-engage)를 참조하십시오.
 
 이 튜토리얼에서는 양식 데이터 모델을 사용하여 AEM Forms과 Marketo을 통합하는 단계를 설명합니다. 자습서를 완료하면 Marketo에 대해 사용자 지정 인증을 수행하는 OSGi 번들이 생깁니다. 또한 제공된 swagger 파일을 사용하여 데이터 소스를 구성하게 됩니다.
 

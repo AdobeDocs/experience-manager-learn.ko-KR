@@ -43,10 +43,10 @@ BPA 패키지는 프로덕션 AEM 6.x 환경의 클론에 설치해야 합니다
 실습형 운동을 시도하기 전에 위의 비디오와 다음 자료를 시청하고 이해했는지 확인하십시오.
 
 + [AEM as a Cloud Service에 대해 다르게 생각](./introduction.md)
-+ [AEM as a Cloud Service이란?](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/what-is-aem-as-a-cloud-service.html?lang=en)
-+ [AEM as a Cloud Service 아키텍처](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html?lang=en)
-+ [변경 가능한 콘텐츠 및 변경 불가능한 콘텐츠](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/basics/mutable-immutable.html?lang=en)
-+ [AEM as a Cloud Service 및 AEM 6.x용 개발 차이점](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#developing)
++ [AEM as a Cloud Service이란?](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/what-is-aem-as-a-cloud-service.html?lang=ko)
++ [AEM as a Cloud Service 아키텍처](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html?lang=ko)
++ [변경 가능한 콘텐츠 및 변경 불가능한 콘텐츠](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/basics/mutable-immutable.html?lang=ko)
++ [AEM as a Cloud Service 및 AEM 6.x용 개발 차이점](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=ko#developing)
 
 <table style="border-width:0">
     <tr>

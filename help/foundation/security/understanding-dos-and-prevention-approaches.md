@@ -42,7 +42,7 @@ AEM 환경에서 DoS 및 DDoS 공격을 예방하고 완화하는 데 사용할 
             <td>웹 애플리케이션 방화벽(WAF)</td>
             <td>다양한 유형의 공격으로부터 웹 애플리케이션을 보호하기 위해 설계된 보안 솔루션입니다.</td>
             <td>
-            <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/examples-and-analysis#waf-rules" target="_blank">WAF-DDoS 보호 라이선스</a></td>
+            <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/examples-and-analysis#waf-rules" target="_blank">WAF-DDoS 보호 라이선스</a></td>
             <td>AMS 계약을 통해 <a href="https://docs.aws.amazon.com/waf/" target="_blank">AWS</a> 또는 <a href="https://azure.microsoft.com/en-us/products/web-application-firewall" target="_blank">Azure</a> WAF.</td>
             <td>선호하는 WAF</td>
         </tr>
@@ -54,7 +54,7 @@ AEM 환경에서 DoS 및 DDoS 공격을 예방하고 완화하는 데 사용할 
         <tr>
             <td>트래픽 필터 규칙</td>
             <td>트래픽 필터 규칙을 사용하여 CDN 계층에서 요청을 차단하거나 허용할 수 있습니다.</td>
-            <td><a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/examples-and-analysis" target="_blank">트래픽 필터 규칙 예</a></td>
+            <td><a href="https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/examples-and-analysis" target="_blank">트래픽 필터 규칙 예</a></td>
             <td><a href="https://docs.aws.amazon.com/waf/latest/developerguide/waf-rule-statement-type-rate-based.html" target="_blank">AWS</a> 또는 <a href="https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/rate-limiting-overview" target="_blank">Azure</a> 규칙 제한 기능.</td>
             <td>선호하는 솔루션</td>
         </tr>

@@ -55,7 +55,7 @@ OAuth 서버 간 클릭
 
 이미 AEM Forms 프로젝트가 있는 경우 [다음 지침에 따라](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis)Adobe Developer Console 프로젝트의 OAuth 서버 간 자격 증명 ClientID를 사용하여 AEM 인스턴스와 통신할 수 있습니다
 
-AEM Forms 프로젝트가 없는 경우 이 설명서에 따라 [AEM Forms 프로젝트를 만드십시오.](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/getting-started)을(를) 만든 다음 이 설명서를 사용하여 Adobe Developer Console 프로젝트의 OAuth 서버 간 자격 증명 ClientID를 사용하여 AEM 인스턴스 [과(와) 통신할 수 있습니다.](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis)
+AEM Forms 프로젝트가 없는 경우 이 설명서에 따라 [AEM Forms 프로젝트를 만드십시오.](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/getting-started)을(를) 만든 다음 이 설명서를 사용하여 Adobe Developer Console 프로젝트의 OAuth 서버 간 자격 증명 ClientID를 사용하여 AEM 인스턴스 [과(와) 통신할 수 있습니다.](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis)
 
 
 ## 다음 단계

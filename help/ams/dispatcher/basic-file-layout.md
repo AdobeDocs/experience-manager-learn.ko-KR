@@ -145,7 +145,7 @@ Dispatcher 팜 파일 구성의 하위 섹션인 추가 부분이 있으며, 이
 
 #### 캐시 디렉터리
 
-이 디렉터리에는 모듈이 AEM에서 가져온 캐싱 요소와 무효화 규칙 구문을 처리하는 방법에 대한 규칙이 들어 있는 `_cache.any`, `_invalidate.any` 파일이 모두 포함되어 있습니다.  이 섹션에 대한 자세한 내용은 여기 [여기](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache)를 참조하세요.
+이 디렉터리에는 모듈이 AEM에서 가져온 캐싱 요소와 무효화 규칙 구문을 처리하는 방법에 대한 규칙이 들어 있는 `_cache.any`, `_invalidate.any` 파일이 모두 포함되어 있습니다.  이 섹션에 대한 자세한 내용은 여기 [여기](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#configuring-the-dispatcher-cache-cache)를 참조하세요.
 
 - `/etc/httpd/conf.dispatcher.d/cache/`
 

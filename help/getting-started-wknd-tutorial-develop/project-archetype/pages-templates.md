@@ -23,7 +23,7 @@ ht-degree: 0%
 
 {{edge-delivery-services-and-page-editor}}
 
-이 장에서는 기본 페이지 구성 요소와 편집 가능한 템플릿 간의 관계를 살펴보겠습니다. [Adobe XD](https://helpx.adobe.com/support/xd.html)의 일부 모형을 기반으로 스타일이 지정되지 않은 문서 템플릿을 만드는 방법을 알아봅니다. 템플릿을 작성하는 과정에서 편집 가능한 템플릿의 핵심 구성 요소 및 고급 정책 구성에 대해 다룹니다.
+이 장에서는 기본 페이지 구성 요소와 편집 가능한 템플릿 간의 관계를 살펴보겠습니다. [Adobe XD](https://helpx.adobe.com/kr/support/xd.html)의 일부 모형을 기반으로 스타일이 지정되지 않은 문서 템플릿을 만드는 방법을 알아봅니다. 템플릿을 작성하는 과정에서 편집 가능한 템플릿의 핵심 구성 요소 및 고급 정책 구성에 대해 다룹니다.
 
 ## 사전 요구 사항 {#prerequisites}
 
@@ -74,7 +74,7 @@ ht-degree: 0%
 
 ## Adobe XD을 통한 UI 계획 {#adobexd}
 
-일반적으로 새 웹 사이트에 대한 계획은 모형과 정적 디자인에서 시작됩니다. [Adobe XD](https://helpx.adobe.com/support/xd.html)은(는) 사용자 환경을 구축하는 디자인 도구입니다. 다음으로 문서 페이지 템플릿의 구조를 계획하는 데 도움이 되는 UI 키트 및 모형을 검사해 보겠습니다.
+일반적으로 새 웹 사이트에 대한 계획은 모형과 정적 디자인에서 시작됩니다. [Adobe XD](https://helpx.adobe.com/kr/support/xd.html)은(는) 사용자 환경을 구축하는 디자인 도구입니다. 다음으로 문서 페이지 템플릿의 구조를 계획하는 데 도움이 되는 UI 키트 및 모형을 검사해 보겠습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/30214?quality=12&learn=on)
 
@@ -82,13 +82,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> 일반 [AEM 핵심 구성 요소 UI 키트 또한 사용자 지정 프로젝트의 시작점으로 사용할 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/AEM-CoreComponents-UI-Kit.xd).
+> 일반 [AEM 핵심 구성 요소 UI 키트 또한 사용자 지정 프로젝트의 시작점으로 사용할 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/AEM-CoreComponents-UI-Kit.xd?lang=ko).
 
 ## 문서 페이지 템플릿 만들기
 
 페이지를 만들 때 페이지를 만드는 기반으로 사용되는 템플릿을 선택해야 합니다. 템플릿은 결과 페이지, 초기 콘텐츠 및 허용된 구성 요소의 구조를 정의합니다.
 
-[편집 가능한 템플릿](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html)에는 세 가지 기본 영역이 있습니다.
+[편집 가능한 템플릿](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=ko)에는 세 가지 기본 영역이 있습니다.
 
 1. **구조** - 템플릿의 일부인 구성 요소를 정의합니다. 콘텐츠 작성자는 편집할 수 없습니다.
 1. **초기 콘텐츠** - 템플릿이 시작되는 구성 요소를 정의하며 콘텐츠 작성자는 해당 구성 요소를 편집 및/또는 삭제할 수 있습니다.
@@ -160,7 +160,7 @@ ht-degree: 0%
 
 ## 경험 조각으로 머리글 및 바닥글 업데이트 {#experience-fragments}
 
-머리글이나 바닥글과 같은 전역 콘텐츠를 만들 때 일반적으로 사용하는 방법은 [경험 조각](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html)입니다. 경험 조각 을 사용하면 여러 구성 요소를 결합하여 참조 가능한 단일 구성 요소를 만들 수 있습니다. 경험 조각은 다중 사이트 관리 및 [로컬라이제이션](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html?lang=en)을 지원할 수 있는 이점이 있습니다.
+머리글이나 바닥글과 같은 전역 콘텐츠를 만들 때 일반적으로 사용하는 방법은 [경험 조각](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html?lang=ko)입니다. 경험 조각 을 사용하면 여러 구성 요소를 결합하여 참조 가능한 단일 구성 요소를 만들 수 있습니다. 경험 조각은 다중 사이트 관리 및 [로컬라이제이션](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html?lang=ko)을 지원할 수 있는 이점이 있습니다.
 
 AEM Project Archetype에서 머리글과 바닥글을 생성했습니다. 그런 다음, mockup과 일치하도록 경험 조각 을 업데이트합니다. 아래 비디오에 나와 있는 단계를 따르십시오.
 
@@ -262,7 +262,7 @@ AEM Project Archetype에서 머리글과 바닥글을 생성했습니다. 그런
 
    페이지 구성 요소 아래에는 HTL 스크립트 `customfooterlibs.html`과(와) `customheaderlibs.html`이(가) 두 개만 있습니다. *이 구성 요소가 페이지를 어떻게 렌더링합니까?*
 
-   `sling:resourceSuperType` 속성은 `core/wcm/components/page/v2/page`을(를) 가리킵니다. 이 속성을 사용하면 WKND의 페이지 구성 요소는 핵심 구성 요소 페이지 구성 요소의 기능을 **모두**&#x200B;상속할 수 있습니다. 이는 [프록시 구성 요소 패턴](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html#ProxyComponentPattern)이라는 이름의 첫 번째 예입니다. 자세한 내용은 [여기](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html)를 참조하세요.
+   `sling:resourceSuperType` 속성은 `core/wcm/components/page/v2/page`을(를) 가리킵니다. 이 속성을 사용하면 WKND의 페이지 구성 요소는 핵심 구성 요소 페이지 구성 요소의 기능을 **모두**&#x200B;상속할 수 있습니다. 이는 [프록시 구성 요소 패턴](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html?lang=ko#ProxyComponentPattern)이라는 이름의 첫 번째 예입니다. 자세한 내용은 [여기](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html?lang=ko)를 참조하세요.
 
 1. WKND 구성 요소 내의 다른 구성 요소인 `/apps/wknd/components/breadcrumb`의 `Breadcrumb` 구성 요소를 Inspect에 추가했습니다. 동일한 `sling:resourceSuperType` 속성을 찾을 수 있지만 이번에는 `core/wcm/components/breadcrumb/v2/breadcrumb`을(를) 가리킵니다. 프록시 구성 요소 패턴을 사용하여 핵심 구성 요소를 포함하는 또 다른 예입니다. 실제로 WKND 코드 베이스의 모든 구성 요소는 AEM 핵심 구성 요소(사용자 지정 데모 HelloWorld 구성 요소 제외)의 프록시입니다. 사용자 지정 코드를 작성하기 *전*&#x200B;에 가능한 한 핵심 구성 요소의 기능을 많이 재사용하는 것이 좋습니다.
 
@@ -312,7 +312,7 @@ AEM Project Archetype에서 머리글과 바닥글을 생성했습니다. 그런
 
    HTL을 여러 스크립트로 세분화하는 다른 이유는 프록시 구성 요소가 개별 스크립트를 재정의하여 사용자 지정 비즈니스 논리를 구현할 수 있도록 하기 위해서입니다. HTL 스크립트 `customfooterlibs.html` 및 `customheaderlibs.html`은(는) 프로젝트를 구현하여 재정의할 명시적 목적으로 만들어집니다.
 
-   이 문서[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html)을(를) 읽고 Editable Template이 콘텐츠 페이지의 렌더링에 어떤 영향을 미치는지 자세히 알아볼 수 있습니다.
+   이 문서[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=ko)을(를) 읽고 Editable Template이 콘텐츠 페이지의 렌더링에 어떤 영향을 미치는지 자세히 알아볼 수 있습니다.
 
 1. `/libs/core/wcm/components/breadcrumb/v2/breadcrumb`의 탐색 표시와 같은 다른 핵심 구성 요소를 Inspect에 추가합니다. 이동 경로 구성 요소에 대한 마크업이 최종적으로 생성되는 방법을 이해하려면 `breadcrumb.html` 스크립트를 봅니다.
 

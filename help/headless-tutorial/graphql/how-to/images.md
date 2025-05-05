@@ -20,7 +20,7 @@ ht-degree: 4%
 
 # AEM Headless로 최적화된 이미지 {#images-with-aem-headless}
 
-이미지는 [풍부하고 매력적인 AEM Headless 경험 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html)의 중요한 측면입니다. AEM Headless는 이미지 에셋 관리 및 최적화된 전달을 지원합니다.
+이미지는 [풍부하고 매력적인 AEM Headless 경험 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=ko)의 중요한 측면입니다. AEM Headless는 이미지 에셋 관리 및 최적화된 전달을 지원합니다.
 
 AEM Headless 콘텐츠 모델링에 사용된 콘텐츠 조각은 종종 Headless 경험에 표시되기 위한 이미지 에셋을 참조합니다. AEM의 GraphQL 쿼리를 작성하여 이미지가 참조되는 위치에 따라 이미지에 URL을 제공할 수 있습니다.
 
@@ -30,9 +30,9 @@ AEM Headless 콘텐츠 모델링에 사용된 콘텐츠 조각은 종종 Headles
 + `_dynamicUrl`은(는) 이미지 에셋의 웹에 최적화된 게재를 위한 URL입니다.
    + `_dynamicUrl`에 AEM 원본이 없으므로 도메인(AEM 작성자 또는 AEM 게시 서비스)은 클라이언트 응용 프로그램에서 제공해야 합니다.
 + `_authorUrl`은(는) AEM 작성자의 이미지 에셋에 대한 전체 URL입니다.
-   + [AEM 작성자](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html)를 사용하여 headless 애플리케이션의 미리 보기 환경을 제공할 수 있습니다.
+   + [AEM 작성자](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html?lang=ko)를 사용하여 headless 애플리케이션의 미리 보기 환경을 제공할 수 있습니다.
 + `_publishUrl`은(는) AEM 게시의 이미지 자산에 대한 전체 URL입니다.
-   + [AEM 게시](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html)는 일반적으로 headless 응용 프로그램의 프로덕션 배포에서 이미지를 표시하는 위치입니다.
+   + [AEM 게시](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html?lang=ko)는 일반적으로 headless 응용 프로그램의 프로덕션 배포에서 이미지를 표시하는 위치입니다.
 
 `_dynamicUrl`은(는) 이미지 자산 게재에 사용할 권장 URL이며 가능한 경우 `_path`, `_authorUrl` 및 `_publishUrl`의 사용을 대체해야 합니다.
 
@@ -50,7 +50,7 @@ AEM Headless 콘텐츠 모델링에 사용된 콘텐츠 조각은 종종 Headles
 
 이미지 참조가 포함된 콘텐츠 조각 필드가 __콘텐츠 참조__ 데이터 형식인지 확인하십시오.
 
-필드 유형은 필드를 선택하고 오른쪽의 __속성__ 탭을 검사하여 [콘텐츠 조각 모델](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-models.html)에서 검토됩니다.
+필드 유형은 필드를 선택하고 오른쪽의 __속성__ 탭을 검사하여 [콘텐츠 조각 모델](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-models.html?lang=ko)에서 검토됩니다.
 
 ![이미지에 대한 콘텐츠 참조가 있는 콘텐츠 조각 모델](./assets/images/content-fragment-model.jpeg)
 

@@ -46,4 +46,4 @@ AEM Assets의 이미지용 스마트 태그는 이미지 에셋에 파생된 메
 
 ## 추가 리소스
 
-* [AEM Assets 스마트 태그 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/smart-tags.html)
+* [AEM Assets 스마트 태그 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/smart-tags.html?lang=ko)

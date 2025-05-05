@@ -28,7 +28,7 @@ Adobe Experience Manager을 사용하여 콘텐츠 조각을 현지화하고 번
 
 콘텐츠 조각은 AEM이 외부 번역 서비스로 전송하기 위해 추출하는 인식된 콘텐츠 유형입니다. 몇 가지 사용 사례가 즉시 지원됩니다.
 
-1. 콘텐츠 조각은 [언어 복사 및 번역을 위해 Assets 콘솔에서 직접 선택할 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html).
+1. 콘텐츠 조각은 [언어 복사 및 번역을 위해 Assets 콘솔에서 직접 선택할 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html?lang=ko).
 2. Sites 페이지에서 참조된 콘텐츠 조각은 언어 복사를 위해 Sites 페이지를 선택하면 해당 언어 폴더로 복사되고 번역을 위해 추출됩니다.
 3. 콘텐츠 조각 내에 임베드된 인라인 미디어 에셋은 추출하고 번역할 수 있습니다.
 4. 콘텐츠 조각과 연결된 에셋 컬렉션은 추출되고 번역될 수 있습니다.

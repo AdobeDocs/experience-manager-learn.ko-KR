@@ -162,7 +162,7 @@ String params = arg2.get("PROCESS_ARGS","string").toString();
 
 서버에서 테스트하려면 다음 단계를 수행하십시오.
 
-* [일별 CQ 메일 서비스를 구성합니다.](https://helpx.adobe.com/experience-manager/6-5/communities/using/email.html) 첨부 파일로 생성된 문서가 포함된 전자 메일을 보내는 데 필요합니다.
+* [일별 CQ 메일 서비스를 구성합니다.](https://helpx.adobe.com/kr/experience-manager/6-5/communities/using/email.html) 첨부 파일로 생성된 문서가 포함된 전자 메일을 보내는 데 필요합니다.
 * [서비스 사용자 번들을 사용한 개발 배포](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 * Apache Sling 서비스 사용자 매퍼 서비스 구성에 다음 항목을 추가했습니다
 * **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service**

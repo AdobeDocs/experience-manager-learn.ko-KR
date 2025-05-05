@@ -223,7 +223,7 @@ export default ExtensionRegistration;
 중요한 점은 확장에서 AEM을 사용하는 모든 상호 작용은 [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/)에서 실행되는 별도의 서버리스 프로세스인 [AppBuilder Adobe I/O Runtime 작업](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/)에 위임해야 한다는 것입니다.
 Adobe I/O Runtime 작업을 사용하여 AEM과 통신하며, 이는 CORS(원본 간 리소스 공유) 연결 문제를 방지하기 위한 것입니다.
 
-_이미지 생성_ 양식이 제출되면 사용자 지정 `onSubmitHandler()`이(가) Adobe I/O Runtime 작업을 호출하여 이미지 설명, 현재 AEM 호스트(도메인) 및 사용자의 AEM 액세스 토큰을 전달합니다. 그런 다음 작업은 OpenAI의 [이미지 생성](https://beta.openai.com/docs/guides/images/image-generation-beta) API를 호출하여 제출된 이미지 설명을 사용하여 이미지를 생성합니다. 다음으로 [AEM 업로드](https://github.com/adobe/aem-upload) 노드 모듈의 `DirectBinaryUpload` 클래스를 사용하면 생성된 이미지가 AEM에 업로드되고 마지막으로 [AEM 콘텐츠 조각 API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html)를 사용하여 콘텐츠 조각을 업데이트합니다.
+_이미지 생성_ 양식이 제출되면 사용자 지정 `onSubmitHandler()`이(가) Adobe I/O Runtime 작업을 호출하여 이미지 설명, 현재 AEM 호스트(도메인) 및 사용자의 AEM 액세스 토큰을 전달합니다. 그런 다음 작업은 OpenAI의 [이미지 생성](https://beta.openai.com/docs/guides/images/image-generation-beta) API를 호출하여 제출된 이미지 설명을 사용하여 이미지를 생성합니다. 다음으로 [AEM 업로드](https://github.com/adobe/aem-upload) 노드 모듈의 `DirectBinaryUpload` 클래스를 사용하면 생성된 이미지가 AEM에 업로드되고 마지막으로 [AEM 콘텐츠 조각 API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html?lang=ko)를 사용하여 콘텐츠 조각을 업데이트합니다.
 
 Adobe I/O Runtime 작업의 응답을 받으면 모달이 업데이트되어 이미지 생성 작업의 결과가 표시됩니다.
 
@@ -482,7 +482,7 @@ export default function GenerateImageModal() {
 
 >[!NOTE]
 >
->`buildAssetDetailsURL()` 함수에서 `aemAssetdetailsURL` 변수 값은 [통합 셸](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html#overview)이 사용된다고 가정합니다. 통합 셸을 사용하지 않도록 설정한 경우 변수 값에서 `/ui#/aem`을(를) 제거해야 합니다.
+>`buildAssetDetailsURL()` 함수에서 `aemAssetdetailsURL` 변수 값은 [통합 셸](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=ko#overview)이 사용된다고 가정합니다. 통합 셸을 사용하지 않도록 설정한 경우 변수 값에서 `/ui#/aem`을(를) 제거해야 합니다.
 
 
 ### Adobe I/O Runtime 작업

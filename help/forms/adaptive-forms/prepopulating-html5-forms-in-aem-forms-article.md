@@ -33,7 +33,7 @@ slingRequest.setAttribute(&quot;data&quot;, content);
 
 이 예제에서는 콘텐츠로 데이터 속성을 설정합니다. 콘텐츠는 양식을 미리 채울 데이터를 나타냅니다. 일반적으로 내부 서비스에 대한 REST 호출을 수행하여 &quot;콘텐츠&quot;를 가져옵니다.
 
-이 사용 사례를 달성하려면 사용자 지정 프로필을 만들어야 합니다. 사용자 지정 프로필 만들기에 대한 자세한 내용은 [여기](https://helpx.adobe.com/aem-forms/6/html5-forms/custom-profile.html)의 AEM Forms 설명서에 명확하게 설명되어 있습니다.
+이 사용 사례를 달성하려면 사용자 지정 프로필을 만들어야 합니다. 사용자 지정 프로필 만들기에 대한 자세한 내용은 [여기](https://helpx.adobe.com/kr/aem-forms/6/html5-forms/custom-profile.html)의 AEM Forms 설명서에 명확하게 설명되어 있습니다.
 
 사용자 지정 프로필을 만들면 백엔드 시스템을 호출하여 데이터를 가져오는 JSP 파일을 만듭니다. 데이터를 가져오면 slingRequest.setAttribute(&quot;data&quot;, content);를 사용하여 양식을 미리 채웁니다
 

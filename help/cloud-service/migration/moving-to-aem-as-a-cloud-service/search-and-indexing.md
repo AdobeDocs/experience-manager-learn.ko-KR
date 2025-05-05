@@ -29,7 +29,7 @@ AEM as a Cloud Service의 검색 인덱스, AEM 6 인덱스 정의를 AEM as a C
 
 코드 베이스를 리팩터링하는 과정의 일부로 [인덱스 변환기 도구](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationindex-converter)를 사용하여 사용자 지정 Oak 인덱스 정의를 AEM as a Cloud Service 호환 인덱스 정의로 변환합니다.
 
-[인덱스 변환기 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/index-converter.html)에서 전체 및 현재 인덱스 변환기 기능 집합을 검토하십시오.
+[인덱스 변환기 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/index-converter.html?lang=ko)에서 전체 및 현재 인덱스 변환기 기능 집합을 검토하십시오.
 
 ## 주요 활동
 

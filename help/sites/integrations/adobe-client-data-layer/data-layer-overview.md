@@ -26,7 +26,7 @@ Adobe 클라이언트 데이터 레이어는 웹 페이지에서 방문자의 �
 
 >[!NOTE]
 >
-> AEM 사이트에서 Adobe 클라이언트 데이터 레이어를 활성화하시겠습니까? [지침을 참조하세요](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation).
+> AEM 사이트에서 Adobe 클라이언트 데이터 레이어를 활성화하시겠습니까? [지침을 참조하세요](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=ko#installation-activation).
 
 ## 데이터 레이어 살펴보기
 
@@ -179,4 +179,4 @@ Adobe 클라이언트 데이터 레이어는 웹 페이지에서 방문자의 �
 ## 추가 리소스 {#additional-resources}
 
 * [Adobe 클라이언트 데이터 레이어 설명서](https://github.com/adobe/adobe-client-data-layer/wiki)
-* [Adobe 클라이언트 데이터 레이어 및 핵심 구성 요소 설명서 사용](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)
+* [Adobe 클라이언트 데이터 레이어 및 핵심 구성 요소 설명서 사용](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=ko)

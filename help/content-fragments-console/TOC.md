@@ -32,5 +32,5 @@ ht-degree: 9%
    + [새 편집기 토글](editor/new-editor-toggle.md)
    + [비자산 콘텐츠 참조](editor/non-asset-content-references.md)
    + [RTE 변형 비교](editor/rte-variant-compare.md)
-+ [확장성](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/extensibility/content-fragments/overview.html)
-+ [설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html){target=_blank}
++ [확장성](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/extensibility/content-fragments/overview.html?lang=ko)
++ [설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=ko){target=_blank}

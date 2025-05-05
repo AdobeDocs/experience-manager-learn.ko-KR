@@ -54,7 +54,7 @@ ht-degree: 0%
    -->
    ```
 
-1. (선택 사항) 마지막 단계를 반복하여 [편집 가능한 템플릿](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/page-templates-editable.html)의 잠긴(초기) 콘텐츠에 있는 구성 요소를 [!DNL SDI]을(를) 통해서도 제공할 수 있습니다. 추가 구성의 이유는 편집 가능한 템플릿의 잠긴 콘텐츠가 `/content` 대신 `/conf`에서 제공되기 때문입니다.
+1. (선택 사항) 마지막 단계를 반복하여 [편집 가능한 템플릿](https://helpx.adobe.com/kr/experience-manager/6-5/sites/developing/using/page-templates-editable.html)의 잠긴(초기) 콘텐츠에 있는 구성 요소를 [!DNL SDI]을(를) 통해서도 제공할 수 있습니다. 추가 구성의 이유는 편집 가능한 템플릿의 잠긴 콘텐츠가 `/content` 대신 `/conf`에서 제공되기 때문입니다.
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -148,7 +148,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->ESI(Edge-side includes) 제공에 [!DNL Sling Dynamic Includes]을(를) 사용하는 경우 Dispatcher 캐시에 관련 [응답 헤더를 캐시해야 합니다](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#CachingHTTPResponseHeaders). 가능한 헤더에는 다음이 포함됩니다.
+>ESI(Edge-side includes) 제공에 [!DNL Sling Dynamic Includes]을(를) 사용하는 경우 Dispatcher 캐시에 관련 [응답 헤더를 캐시해야 합니다](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#CachingHTTPResponseHeaders). 가능한 헤더에는 다음이 포함됩니다.
 >
 >* &quot;Cache-Control&quot;
 >* &quot;Content-Disposition&quot;

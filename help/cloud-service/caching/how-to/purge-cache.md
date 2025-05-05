@@ -104,7 +104,7 @@ data:
 
 1. Cloud Manager에서 **파이프라인** 섹션으로 이동합니다.
 
-1. 새 파이프라인을 만들거나 **Config** 파일만 배포하는 기존 파이프라인을 선택하십시오. 자세한 단계는 [구성 파이프라인 만들기](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#deploy-rules-through-cloud-manager)를 참조하십시오.
+1. 새 파이프라인을 만들거나 **Config** 파일만 배포하는 기존 파이프라인을 선택하십시오. 자세한 단계는 [구성 파이프라인 만들기](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#deploy-rules-through-cloud-manager)를 참조하십시오.
 
 1. CDN 규칙을 배포하려면 **실행** 단추를 클릭하십시오.
 

@@ -29,5 +29,5 @@ Adobe Experience Manager Sites 페이지에 대한 기본 페이지 관리 작�
 
 ## 추가 리소스 {#additional-resources}
 
-* [페이지 콘텐츠 설명서 편집](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html)
-* [페이지 작성에 대한 빠른 시작 안내서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)
+* [페이지 콘텐츠 설명서 편집](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html?lang=ko)
+* [페이지 작성에 대한 빠른 시작 안내서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=ko)

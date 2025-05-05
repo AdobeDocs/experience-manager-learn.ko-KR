@@ -26,7 +26,7 @@ Adobe Experience Manager의 원본 간 리소스 공유([!DNL CORS])를 사용�
 1. AEM 게시의 단일 원본 리소스 공유
 2. AEM 작성자에 대한 CORS 액세스
 
-AEM 게시에서 다중 원본 CORS 액세스가 필요한 경우 [이 설명서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=en#dispatcher-configuration)를 참조하세요.
+AEM 게시에서 다중 원본 CORS 액세스가 필요한 경우 [이 설명서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=ko#dispatcher-configuration)를 참조하세요.
 
 ## Adobe Granite 원본 간 리소스 공유 정책 OSGi 구성
 
@@ -187,7 +187,7 @@ Dispatcher 4.1.1 이상 응답 헤더를 캐시할 수 있습니다. 이렇게 �
 
 ### CORS 요청 헤더 허용
 
-필요한 [HTTP 요청 헤더가 처리를 위해 AEM으로 통과하도록 허용](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders)하려면 Dispatcher의 `/clientheaders` 구성에서 허용되어야 합니다.
+필요한 [HTTP 요청 헤더가 처리를 위해 AEM으로 통과하도록 허용](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#specifying-the-http-headers-to-pass-through-clientheaders)하려면 Dispatcher의 `/clientheaders` 구성에서 허용되어야 합니다.
 
 ```
 /clientheaders {

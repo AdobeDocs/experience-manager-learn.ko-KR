@@ -33,10 +33,10 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->일반적으로 프론트엔드 파이프라인은 일반적으로 [AEM 빠른 사이트 만들기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/overview.html?lang=en)와 함께 사용되며 자세한 내용은 관련 자습서 [AEM Sites 시작하기 - 빠른 사이트 만들기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/overview.html)를 참조하십시오. 따라서 이 자습서와 관련 비디오에서 이 자습서에 대해 언급한 내용을 보면 중요한 개념을 설명하는 몇 가지 직접 또는 간접적인 비교가 있는지 확인하는 것입니다.
+>일반적으로 프론트엔드 파이프라인은 일반적으로 [AEM 빠른 사이트 만들기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/overview.html?lang=ko)와 함께 사용되며 자세한 내용은 관련 자습서 [AEM Sites 시작하기 - 빠른 사이트 만들기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/overview.html?lang=ko)를 참조하십시오. 따라서 이 자습서와 관련 비디오에서 이 자습서에 대해 언급한 내용을 보면 중요한 개념을 설명하는 몇 가지 직접 또는 간접적인 비교가 있는지 확인하는 것입니다.
 
 
-관련 [여러 단계 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/overview.html)에서는 빠른 사이트 생성 기능을 사용하여 WKND의 가상 라이프스타일 브랜드를 위한 AEM 사이트를 구현하는 과정을 안내합니다. 프론트엔드 파이프라인 작업을 이해하려면 [테마 설정 워크플로](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/theming.html)를 검토하는 것도 도움이 됩니다.
+관련 [여러 단계 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/overview.html?lang=ko)에서는 빠른 사이트 생성 기능을 사용하여 WKND의 가상 라이프스타일 브랜드를 위한 AEM 사이트를 구현하는 과정을 안내합니다. 프론트엔드 파이프라인 작업을 이해하려면 [테마 설정 워크플로](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/theming.html?lang=ko)를 검토하는 것도 도움이 됩니다.
 
 ## 프론트엔드 파이프라인에 대한 개요, 이점 및 고려 사항
 
@@ -49,9 +49,9 @@ ht-degree: 1%
 
 ## 사전 요구 사항
 
-이 자습서의 배포 단계는 Adobe Cloud Manager에서 수행되며, __배포 관리자__ 역할이 있는지 확인하고, Cloud Manager [역할 정의](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=en#role-definitions)를 참조하십시오.
+이 자습서의 배포 단계는 Adobe Cloud Manager에서 수행되며, __배포 관리자__ 역할이 있는지 확인하고, Cloud Manager [역할 정의](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=ko#role-definitions)를 참조하십시오.
 
-이 자습서를 완료할 때는 [샌드박스 프로그램](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html) 및 [개발 환경](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html)을 사용하십시오.
+이 자습서를 완료할 때는 [샌드박스 프로그램](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html?lang=ko) 및 [개발 환경](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=ko)을 사용하십시오.
 
 ## 다음 단계 {#next-steps}
 

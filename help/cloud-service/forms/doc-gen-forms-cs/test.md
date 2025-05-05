@@ -38,6 +38,6 @@ Eclipse를 시작하고 프로젝트를 Eclipse로 가져오기
 * Java 애플리케이션으로 Main.java 실행
 
 >[!NOTE]
-> Java 프로그램을 처음 실행하면 HTTP 403 오류가 발생합니다. 이 문제를 해결하려면 [AEM의 기술 계정 사용자에게 적절한 권한을 부여](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem)하세요.
+> Java 프로그램을 처음 실행하면 HTTP 403 오류가 발생합니다. 이 문제를 해결하려면 [AEM의 기술 계정 사용자에게 적절한 권한을 부여](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=ko#configure-access-in-aem)하세요.
 
 **AEM Forms 사용자**&#x200B;는 이 강의에 사용한 역할입니다.

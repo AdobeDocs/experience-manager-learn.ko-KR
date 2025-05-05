@@ -39,7 +39,7 @@ ContextHub 기능을 활성화하고 ContextHub JavaScript 라이브러리에 �
 
 ## 사이트 구성 및 ContextHub 세그먼트 {#site-configuration-and-contexthub-segments}
 
-ContextHub에는 세그먼트를 관리하고 현재 컨텍스트에 대해 해결할 세그먼트를 결정하는 세그먼테이션 엔진이 포함되어 있습니다. 여러 개의 세그먼트가 정의됩니다. Javascript API를 사용하여 [확인된 세그먼트를 결정](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/ch-adding.html#DeterminingResolvedContextHubSegments)할 수 있습니다. [[!UICONTROL 구성 브라우저]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html)에서 사이트의 ContextHub 세그먼트를 사용하도록 설정하십시오.
+ContextHub에는 세그먼트를 관리하고 현재 컨텍스트에 대해 해결할 세그먼트를 결정하는 세그먼테이션 엔진이 포함되어 있습니다. 여러 개의 세그먼트가 정의됩니다. Javascript API를 사용하여 [확인된 세그먼트를 결정](https://helpx.adobe.com/kr/experience-manager/6-5/sites/developing/using/ch-adding.html#DeterminingResolvedContextHubSegments)할 수 있습니다. [[!UICONTROL 구성 브라우저]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html?lang=ko)에서 사이트의 ContextHub 세그먼트를 사용하도록 설정하십시오.
 
 ## 세그먼트 만들기 {#create-segments}
 
@@ -53,7 +53,7 @@ ContextHub에는 세그먼트를 관리하고 현재 컨텍스트에 대해 해�
 
 아래에서 ContextHub 및 세그멘테이션에 대해 자세히 알아볼 수 있습니다.
 
-* [ContextHub](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/contexthub.html)
-* [페이지에 Context Hub 추가 및 저장소 액세스](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/ch-adding.html)
-* [세그멘테이션 이해](https://helpx.adobe.com/experience-manager/6-5/sites/classic-ui-authoring/using/classic-personalization-campaigns-segmentation.html)
-* [ContextHub를 사용하여 세분화 구성](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/segmentation.html)
+* [ContextHub](https://helpx.adobe.com/kr/experience-manager/6-5/sites/developing/using/contexthub.html)
+* [페이지에 Context Hub 추가 및 저장소 액세스](https://helpx.adobe.com/kr/experience-manager/6-5/sites/developing/using/ch-adding.html)
+* [세그멘테이션 이해](https://helpx.adobe.com/kr/experience-manager/6-5/sites/classic-ui-authoring/using/classic-personalization-campaigns-segmentation.html)
+* [ContextHub를 사용하여 세분화 구성](https://helpx.adobe.com/kr/experience-manager/6-5/sites/administering/using/segmentation.html)

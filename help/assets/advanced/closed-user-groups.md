@@ -45,6 +45,6 @@ CUG(폐쇄형 사용자 그룹)와 ACL(액세스 제어 목록)은 모두 AEM의
 
 ## 지원 링크 {#supporting-links}
 
-* [Assets 및 폐쇄된 사용자 그룹 관리](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=en#closed-user-group)
-* [폐쇄된 사용자 그룹 만들기](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html)
+* [Assets 및 폐쇄된 사용자 그룹 관리](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=ko#closed-user-group)
+* [폐쇄된 사용자 그룹 만들기](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=ko)
 * [Oak 폐쇄 사용자 그룹 설명서](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html)

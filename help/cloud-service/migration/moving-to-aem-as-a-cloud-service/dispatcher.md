@@ -28,13 +28,13 @@ AEM 6용 AEM의 주목할 만한 변경 사항, Dispatcher 변환 도구 및 Dis
 
 ![Dispatcher 변환기](./assets/dispatcher-converter-diagram.png)
 
-코드 베이스를 리팩터링하는 과정의 일부로, [AEM Dispatcher 변환기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/dispatcher-transformation-utility-tools.html)를 사용하여 기존 온-프레미스 또는 Adobe Managed Services Dispatcher 구성을 AEM as a Cloud Service 호환 Dispatcher 구성으로 리팩터링하십시오.
+코드 베이스를 리팩터링하는 과정의 일부로, [AEM Dispatcher 변환기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/dispatcher-transformation-utility-tools.html?lang=ko)를 사용하여 기존 온-프레미스 또는 Adobe Managed Services Dispatcher 구성을 AEM as a Cloud Service 호환 Dispatcher 구성으로 리팩터링하십시오.
 
 ## 주요 활동
 
 + 기존 Dispatcher 구성을 마이그레이션하려면 [Adobe I/O Dispatcher 변환기 도구](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#aio-aem-migrationdispatcher-converter)를 사용하십시오.
 + 모범 사례로 [AEM Project Archetype](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/dispatcher.cloud)의 Dispatcher 모듈을 참조하십시오.
-+ Cloud Service 환경에서 테스트하기 전에 Dispatcher의 유효성을 검사하도록 [로컬 Dispatcher 도구를 설정](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html)합니다.
++ Cloud Service 환경에서 테스트하기 전에 Dispatcher의 유효성을 검사하도록 [로컬 Dispatcher 도구를 설정](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=ko)합니다.
 
 ## 실습 위주의 운동
 

@@ -178,7 +178,7 @@ Define WERETAIL_DOMAIN www.weretail.com
 Define WERETAIL_ALT_DOMAIN www..weretail.net
 ```
 
-고유한 변수를 만들 때 파일의 이름을 해당 내용에 따라 지정하고 수동 [여기](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17477.html#naming-convention)에 제공된 이름 지정 표준을 따르도록 지정합니다.  위의 예에서 변수 파일이 구성 파일에 사용할 변수로 다른 DNS 항목을 호스팅함을 볼 수 있습니다.
+고유한 변수를 만들 때 파일의 이름을 해당 내용에 따라 지정하고 수동 [여기](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17477.html?lang=ko#naming-convention)에 제공된 이름 지정 표준을 따르도록 지정합니다.  위의 예에서 변수 파일이 구성 파일에 사용할 변수로 다른 DNS 항목을 호스팅함을 볼 수 있습니다.
 
 ## 변수 사용
 

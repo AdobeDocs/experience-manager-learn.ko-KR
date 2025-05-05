@@ -42,9 +42,9 @@ Developer Console에 액세스하여 사용하려면 [Adobe의 Admin Console](ht
 
 1. Adobe 조직 전환기에서 Developer Console에서 검사할 환경과 관련된 Adobe 조직을 볼 수 있는지 확인합니다.
 1. Developer Console에 로그인하려면 개발자가 다음 역할 중 하나의 멤버여야 합니다.
-   + [Cloud Manager 제품의 __개발자 - Cloud Service__ 제품 프로필](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-cloud-manager.html#assign-developer): 이 경우 개발자는 선택한 Developer Console URL에서 사용할 수 있는 환경의 전체 목록을 보게 됩니다. Cloud Manager에서 개발 환경 또는 RDE를 선택한 경우 동일한 프로그램의 다른 개발 환경 또는 RDE가 나타날 수 있습니다.
-   + __AEM 작성자__[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html#aem-product-profiles)의 __AEM 관리자__ 제품 프로필: 이 경우 이전 글머리 기호에 설명된 환경 목록은 이 역할이 할당된 관련 제품 프로필로 제한됩니다.
-1. 개발자는 [__AEM 사용자__ 또는 __AEM 관리자__ AEM 작성자 및/또는 게시의 제품 프로필](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html#aem-product-profiles)의 멤버여야 합니다.
+   + [Cloud Manager 제품의 __개발자 - Cloud Service__ 제품 프로필](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-cloud-manager.html?lang=ko#assign-developer): 이 경우 개발자는 선택한 Developer Console URL에서 사용할 수 있는 환경의 전체 목록을 보게 됩니다. Cloud Manager에서 개발 환경 또는 RDE를 선택한 경우 동일한 프로그램의 다른 개발 환경 또는 RDE가 나타날 수 있습니다.
+   + __AEM 작성자__[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html?lang=ko#aem-product-profiles)의 __AEM 관리자__ 제품 프로필: 이 경우 이전 글머리 기호에 설명된 환경 목록은 이 역할이 할당된 관련 제품 프로필로 제한됩니다.
+1. 개발자는 [__AEM 사용자__ 또는 __AEM 관리자__ AEM 작성자 및/또는 게시의 제품 프로필](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html?lang=ko#aem-product-profiles)의 멤버여야 합니다.
    + 이 멤버십이 없으면 [상태](#status) 덤프가 시간 초과되고 승인되지 않은 오류 401이 발생합니다.
 
 ### Developer Console 액세스 문제 해결
@@ -54,7 +54,7 @@ Developer Console에 액세스하여 사용하려면 [Adobe의 Admin Console](ht
 다음을 확인하십시오.
 
 + Cloud Manager을 통해 선택한 환경에 대한 세 점을 클릭하여 올바른 Developer Console URL을 선택하고 Developer Console을 선택합니다.
-+ [Cloud Manager 제품의 __개발자 - Cloud Service__ 제품 프로필](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-cloud-manager.html#assign-developer)을 통해 전체 환경 목록을 확인하거나, 찾을 수 없는 환경에 대해 __AEM 작성자__[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html#aem-product-profiles)의 __AEM 관리자__ 제품 프로필에 속해 있습니다.
++ [Cloud Manager 제품의 __개발자 - Cloud Service__ 제품 프로필](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-cloud-manager.html?lang=ko#assign-developer)을 통해 전체 환경 목록을 확인하거나, 찾을 수 없는 환경에 대해 __AEM 작성자__[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html?lang=ko#aem-product-profiles)의 __AEM 관리자__ 제품 프로필에 속해 있습니다.
 
 #### 401 상태를 덤프할 때 승인되지 않은 오류 발생
 
@@ -110,7 +110,7 @@ AEM as a Cloud Service Author 및 Publish 서비스는 다운타임 없이 트�
 + 각 OSGi 구성 요소의 상태 제공(활성 또는 미충족 여부 포함)
 + 충족되지 않은 서비스 참조에 세부 정보를 제공하면 OSGi 구성 요소가 활성화될 수 있습니다
 + OSGi 구성 요소에 바인딩된 OSGi 속성 및 해당 값 나열.
-   + [OSGi 환경 구성 변수](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#environment-specific-configuration-values)를 통해 삽입된 실제 값을 표시합니다.
+   + [OSGi 환경 구성 변수](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=ko#environment-specific-configuration-values)를 통해 삽입된 실제 값을 표시합니다.
 
 ### 구성
 
@@ -119,7 +119,7 @@ AEM as a Cloud Service Author 및 Publish 서비스는 다운타임 없이 트�
 디버깅에 도움이 되는 구성:
 
 + OSGi 구성 요소별 OSGi 속성 및 해당 값 나열
-   + [OSGi 환경 구성 변수](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#environment-specific-configuration-values)를 통해 삽입된 실제 값은 표시되지 않습니다. 삽입된 값은 위의 [구성 요소](#components)를 참조하십시오.
+   + [OSGi 환경 구성 변수](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=ko#environment-specific-configuration-values)를 통해 삽입된 실제 값은 표시되지 않습니다. 삽입된 값은 위의 [구성 요소](#components)를 참조하십시오.
 + 잘못 구성된 속성 찾기 및 확인
 
 ### Oak 인덱스

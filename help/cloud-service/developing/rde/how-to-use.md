@@ -49,7 +49,7 @@ $ mvn clean package
 
 ## AEM-RDE 플러그인을 사용하여 AEM 아티팩트 배포
 
-먼저 [최신 `aio` CLI 모듈이 설치되어 있는지 확인합니다](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools#aio-cli).
+먼저 [최신 `aio` CLI 모듈이 설치되어 있는지 확인합니다](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools#aio-cli).
 
 그런 다음 `aio aem:rde:install` 명령을 사용하여 다양한 AEM 아티팩트를 배포합니다. 이제 다음을 수행해야 합니다
 
@@ -204,7 +204,7 @@ Apache 또는 Dispatcher 구성 파일 **을(를) 개별적으로 배포할 수 
 
 ### YAML(구성) 파일 배포
 
-CDN, 유지 관리 작업, 로그 전달 및 AEM API 인증 구성 파일은 `install` 명령을 사용하여 RDE에 배포할 수 있습니다. 이러한 구성은 AEM 프로젝트의 `config` 폴더에서 YAML 파일로 관리됩니다. 자세한 내용은 [지원되는 구성](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/config-pipeline#configurations)을 참조하십시오.
+CDN, 유지 관리 작업, 로그 전달 및 AEM API 인증 구성 파일은 `install` 명령을 사용하여 RDE에 배포할 수 있습니다. 이러한 구성은 AEM 프로젝트의 `config` 폴더에서 YAML 파일로 관리됩니다. 자세한 내용은 [지원되는 구성](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/operations/config-pipeline#configurations)을 참조하십시오.
 
 구성 파일을 배포하는 방법에 대해 알아보려면 `cdn` 구성 파일을 개선하고 RDE에 배포해 보겠습니다.
 
@@ -273,8 +273,8 @@ RDE를 사용한 [개발/배포 수명 주기](./development-life-cycle.md)에 �
 
 ## 추가 리소스
 
-[RDE 명령 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments)
+[RDE 명령 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments)
 
 [AEM 빠른 개발 환경과의 상호 작용을 위한 Adobe I/O Runtime CLI 플러그인](https://github.com/adobe/aio-cli-plugin-aem-rde#aio-cli-plugin-aem-rde)
 
-[AEM 프로젝트 설정](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup)
+[AEM 프로젝트 설정](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup)

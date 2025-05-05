@@ -44,4 +44,4 @@ IntelliJ를 시작하고 아래와 같이 ``ui.apps`` 폴더 아래의 adaptiveF
 
 ## 프로젝트를 클라우드 환경에 배포
 
-모든 것이 로컬 개발 환경에서 잘 보이는 경우 다음 단계는 cloud manager를 사용하여 [클라우드 인스턴스에 배포하는 것입니다.](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/push-project-to-cloud-manager-git)
+모든 것이 로컬 개발 환경에서 잘 보이는 경우 다음 단계는 cloud manager를 사용하여 [클라우드 인스턴스에 배포하는 것입니다.](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/push-project-to-cloud-manager-git)

@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # 로컬 AEM SDK을 사용한 AEM Headless 빠른 설정 {#setup}
 
-AEM Headless 빠른 설정은 WKND Site 샘플 프로젝트 및 AEM Headless GraphQL API에 대한 콘텐츠를 사용하는 샘플 React 앱(SPA)의 콘텐츠를 사용하여 AEM Headless를 실습해 볼 수 있도록 합니다. 이 안내서에서는 [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html)를 사용합니다.
+AEM Headless 빠른 설정은 WKND Site 샘플 프로젝트 및 AEM Headless GraphQL API에 대한 콘텐츠를 사용하는 샘플 React 앱(SPA)의 콘텐츠를 사용하여 AEM Headless를 실습해 볼 수 있도록 합니다. 이 안내서에서는 [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=ko)를 사용합니다.
 
 ## 사전 요구 사항 {#prerequisites}
 
@@ -32,7 +32,7 @@ AEM Headless 빠른 설정은 WKND Site 샘플 프로젝트 및 AEM Headless Gra
 
 ## 1. AEM SDK 설치 {#aem-sdk}
 
-이 설정에서는 [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?#aem-as-a-cloud-service-sdk)를 사용하여 AEM의 GraphQL API를 살펴봅니다. 이 섹션에서는 AEM SDK을 설치하고 작성자 모드에서 실행하는 방법에 대한 빠른 안내서를 제공합니다. 로컬 개발 환경 [을(를) 설정하는 자세한 안내서는 여기](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html#local-development-environment-set-up)에서 확인할 수 있습니다.
+이 설정에서는 [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=ko&#aem-as-a-cloud-service-sdk)를 사용하여 AEM의 GraphQL API를 살펴봅니다. 이 섹션에서는 AEM SDK을 설치하고 작성자 모드에서 실행하는 방법에 대한 빠른 안내서를 제공합니다. 로컬 개발 환경 [을(를) 설정하는 자세한 안내서는 여기](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=ko#local-development-environment-set-up)에서 확인할 수 있습니다.
 
 >[!NOTE]
 >
@@ -62,7 +62,7 @@ AEM Headless 빠른 설정은 WKND Site 샘플 프로젝트 및 AEM Headless Gra
 
 **WKND 참조 사이트**&#x200B;의 샘플 콘텐츠를 사용하여 자습서를 가속화합니다. WKND는 AEM 교육에 자주 사용되는 가상 생활 스타일 브랜드입니다.
 
-WKND 사이트에는 [GraphQL 끝점](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/content-fragments.html)을 노출하는 데 필요한 구성이 포함되어 있습니다. 실제 구현에서는 문서화된 단계에 따라 고객 프로젝트에 [GraphQL 끝점을 포함](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/content-fragments.html)합니다. [CORS](#cors-config)도 WKND 사이트의 일부로 패키지되었습니다. 외부 응용 프로그램에 대한 액세스 권한을 부여하려면 CORS 구성이 필요합니다. [CORS](#cors-config)에 대한 자세한 내용은 아래에서 확인할 수 있습니다.
+WKND 사이트에는 [GraphQL 끝점](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/content-fragments.html?lang=ko)을 노출하는 데 필요한 구성이 포함되어 있습니다. 실제 구현에서는 문서화된 단계에 따라 고객 프로젝트에 [GraphQL 끝점을 포함](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/content-fragments.html?lang=ko)합니다. [CORS](#cors-config)도 WKND 사이트의 일부로 패키지되었습니다. 외부 응용 프로그램에 대한 액세스 권한을 부여하려면 CORS 구성이 필요합니다. [CORS](#cors-config)에 대한 자세한 내용은 아래에서 확인할 수 있습니다.
 
 1. WKND 사이트용 컴파일된 최신 AEM 패키지를 다운로드합니다. [aem-guides-wknd.all-x.x.x.zip](https://github.com/adobe/aem-guides-wknd/releases/latest).
 
@@ -98,7 +98,7 @@ WKND 사이트에는 [GraphQL 끝점](https://experienceleague.adobe.com/docs/ex
 
 >[!NOTE]
 >
-> Cloud Service 환경을 사용하는 경우 WKND 참조 사이트와 같은 코드 베이스를 Cloud Service 환경에 [배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#coding-against-the-right-aem-version)하는 방법에 대한 설명서를 참조하십시오.
+> Cloud Service 환경을 사용하는 경우 WKND 참조 사이트와 같은 코드 베이스를 Cloud Service 환경에 [배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=ko#coding-against-the-right-aem-version)하는 방법에 대한 설명서를 참조하십시오.
 
 ## 3. WKND React 앱 다운로드 및 실행 {#sample-app}
 

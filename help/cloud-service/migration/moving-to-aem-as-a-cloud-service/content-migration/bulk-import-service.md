@@ -33,7 +33,7 @@ AEM as a Cloud Services의 일괄 가져오기 서비스 를 사용하여 AEM이
 
 >[!TIP]
 >
-> 이 비디오의 입력 소스에는 Azure Blob Storage 및 Amazon S3만 표시되지만 사용 가능한 소스는 시간이 지남에 따라 계속 증가합니다. 지원되는 입력 소스의 전체 목록에 대해서는 제품에서 사용 가능한 옵션 또는 [설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html#bulk-upload)를 참조하십시오.
+> 이 비디오의 입력 소스에는 Azure Blob Storage 및 Amazon S3만 표시되지만 사용 가능한 소스는 시간이 지남에 따라 계속 증가합니다. 지원되는 입력 소스의 전체 목록에 대해서는 제품에서 사용 가능한 옵션 또는 [설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=ko#bulk-upload)를 참조하십시오.
 
 ## 주요 활동
 
@@ -43,6 +43,6 @@ AEM as a Cloud Services의 일괄 가져오기 서비스 를 사용하여 AEM이
 
 ## 기타 리소스
 
-+ [일괄 가져오기 서비스 구성 옵션](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html#configure-bulk-ingestor-tool)
-+ 자산 수집의 [Adobe Developers Live 세션](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/feb2021/asset-bulk-ingestion.html)
++ [일괄 가져오기 서비스 구성 옵션](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=ko#configure-bulk-ingestor-tool)
++ 자산 수집의 [Adobe Developers Live 세션](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/feb2021/asset-bulk-ingestion.html?lang=ko)
 

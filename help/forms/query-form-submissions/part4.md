@@ -24,7 +24,7 @@ ht-degree: 2%
 
 Azure 포털에서 BlobId와 연결된 데이터를 가져오는 데 미리 채우기 서비스가 사용되었습니다.
 
-[데이터 및 첨부 파일로 양식 미리 채우기에 대한 별도의 문서를 여기에서 사용할 수 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/prefill-form-with-data-attachments/introduction.html)
+[데이터 및 첨부 파일로 양식 미리 채우기에 대한 별도의 문서를 여기에서 사용할 수 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/prefill-form-with-data-attachments/introduction.html?lang=ko)
 
 ## 다음 단계
 

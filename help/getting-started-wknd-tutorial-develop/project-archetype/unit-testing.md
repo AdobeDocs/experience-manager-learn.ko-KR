@@ -79,7 +79,7 @@ AEM 우수 사례를 사용하고 다음을 사용합니다.
 
 ## 장치 테스트 및 Adobe Cloud Manager {#unit-testing-and-adobe-cloud-manager}
 
-[Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)은(는) 단위 테스트 실행 및 [코드 검사 보고](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-quality-testing.html)를 CI/CD 파이프라인에 통합하여 단위 테스트 AEM 코드의 모범 사례를 장려하고 홍보하는 데 도움이 됩니다.
+[Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=ko)은(는) 단위 테스트 실행 및 [코드 검사 보고](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-quality-testing.html?lang=ko)를 CI/CD 파이프라인에 통합하여 단위 테스트 AEM 코드의 모범 사례를 장려하고 홍보하는 데 도움이 됩니다.
 
 단위 테스트 코드는 모든 코드 기반에 좋은 방법이지만, Cloud Manager을 사용할 때는 Cloud Manager이 실행할 수 있는 단위 테스트를 제공하여 코드 품질 테스트 및 보고 기능을 활용하는 것이 중요합니다.
 

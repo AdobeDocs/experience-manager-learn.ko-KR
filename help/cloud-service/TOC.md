@@ -38,7 +38,7 @@ ht-degree: 18%
    + [Author 및 Publish 서비스](./underlying-technology/introduction-author-publish.md)
    + [Dispatcher](./underlying-technology/introduction-dispatcher.md)
 + Edge Delivery Services {#edge-delivery-services}
-   + [AEM Assets Sidekick 플러그인](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/edge-delivery-services/sidekick-plugin.html){target=_blank}
+   + [AEM Assets Sidekick 플러그인](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/edge-delivery-services/sidekick-plugin.html?lang=ko){target=_blank}
 + Cloud Manager {#cloud-manager}
    + [프로그램](./cloud-manager/programs.md)
    + [환경](./cloud-manager/environments.md)
@@ -46,7 +46,7 @@ ht-degree: 18%
    + [CI/CD 프로덕션 파이프라인](./cloud-manager/cicd-production-pipeline.md)
    + [CI/CD 비프로덕션 파이프라인](./cloud-manager/cicd-non-production-pipeline.md)
    + [활동](./cloud-manager/activity.md)
-   + [사용자 지정 도메인 이름](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names){target=_blank}
+   + [사용자 지정 도메인 이름](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names){target=_blank}
    + [콘텐츠 복원](./cloud-manager/content-restore.md)
    + 개발 운영{#devops}
       + [코드 배포](./cloud-manager/devops/deploy-code.md)
@@ -156,10 +156,10 @@ ht-degree: 18%
    + [사용자 정의 도메인 이름](./content-delivery/custom-domain-names.md)
    + [Adobe 관리 CDN을 사용한 사용자 정의 도메인 이름](./content-delivery/custom-domain-name-with-adobe-managed-cdn.md)
    + [고객 CDN을 사용한 사용자 정의 도메인 이름](./content-delivery/custom-domain-names-with-customer-managed-cdn.md)
-   + [캐싱](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/overview){target=_blank}
+   + [캐싱](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/caching/overview){target=_blank}
    + [Adobe CDN - 캐싱 이상](./content-delivery/adobe-cdn-beyond-caching.md)
    + [사용자 정의 오류 페이지](./content-delivery/custom-error-pages.md)
-   + [URL 리디렉션](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/url-redirection.html){target=_blank}
+   + [URL 리디렉션](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/url-redirection.html?lang=ko){target=_blank}
 + 캐싱{#caching}
    + [개요](./caching/overview.md)
    + [AEM Publish 서비스](./caching/publish.md)
@@ -238,7 +238,7 @@ ht-degree: 18%
       + [자산 워크플로 마이그레이션 도구](./migration/cloud-acceleration-manager/asset-workflow-migration-tool.md)
       + [Cloud Acceleration Manager 탐색](./migration/cloud-acceleration-manager/navigating.md)
       + [Cloud Acceleration Manager 사용](./migration/cloud-acceleration-manager/using.md)
-+ [콘텐츠 조각](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html){target=_blank}
++ [콘텐츠 조각](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html?lang=ko){target=_blank}
 + Forms{#forms}
    + Forms as a Cloud Service용 개발{#developing-for-cloud-service}
       + [1 - 시작](./forms/developing-for-cloud-service/getting-started.md)
@@ -418,9 +418,9 @@ ht-degree: 18%
 + 여러 단계 자습서{#multi-step-tutorials}
    + [AEM Sites 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR){target=_blank}
    + [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ko-KR){target=_blank}
-   + [SPA 편집기(반응)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html){target=_blank}
-   + [AEM Sites 및 Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html){target=_blank}
-   + [토큰 기반 인증](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html){target=_blank}
+   + [SPA 편집기(반응)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html?lang=ko){target=_blank}
+   + [AEM Sites 및 Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html?lang=ko){target=_blank}
+   + [토큰 기반 인증](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=ko){target=_blank}
 + 전문가 리소스 {#expert-resources}
    + AEM 챔피언스 {#aem-champions}
       + [Cloud Manager 온보딩 플레이북](./expert-resources/aem-champions/onboarding-playbook.md)

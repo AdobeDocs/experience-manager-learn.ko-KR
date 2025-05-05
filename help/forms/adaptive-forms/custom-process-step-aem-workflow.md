@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ## Maven 프로젝트 만들기
 
-첫 번째 단계는 적절한 Adobe Maven Archetype을 사용하여 Maven 프로젝트를 만드는 것입니다. 자세한 단계는 이 [문서](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)에 나와 있습니다. Maven 프로젝트를 Eclipse로 가져오면 프로세스 단계에서 사용할 수 있는 첫 번째 OSGi 구성 요소 작성을 시작할 수 있습니다.
+첫 번째 단계는 적절한 Adobe Maven Archetype을 사용하여 Maven 프로젝트를 만드는 것입니다. 자세한 단계는 이 [문서](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=ko)에 나와 있습니다. Maven 프로젝트를 Eclipse로 가져오면 프로세스 단계에서 사용할 수 있는 첫 번째 OSGi 구성 요소 작성을 시작할 수 있습니다.
 
 
 ### WorkflowProcess를 구현하는 클래스 만들기
@@ -42,9 +42,9 @@ public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaData
 
 execute 메서드는 다음 세 가지 변수에 대한 액세스 권한을 부여합니다.
 
-**WorkItem**: workItem 변수는 워크플로우와 관련된 데이터에 대한 액세스 권한을 부여합니다. 공개 API 설명서는 [여기](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)에서 사용할 수 있습니다.
+**WorkItem**: workItem 변수는 워크플로우와 관련된 데이터에 대한 액세스 권한을 부여합니다. 공개 API 설명서는 [여기](https://helpx.adobe.com/kr/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)에서 사용할 수 있습니다.
 
-**WorkflowSession**: 이 workflowSession 변수는 워크플로를 제어하는 기능을 제공합니다. 공개 API 설명서는 [여기](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)에서 사용할 수 있습니다.
+**WorkflowSession**: 이 workflowSession 변수는 워크플로를 제어하는 기능을 제공합니다. 공개 API 설명서는 [여기](https://helpx.adobe.com/kr/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)에서 사용할 수 있습니다.
 
 **MetaDataMap**: 워크플로와 연결된 모든 메타데이터입니다. 프로세스 단계에 전달되는 모든 프로세스 인수는 MetaDataMap 개체를 사용하여 사용할 수 있습니다.[API 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)
 
@@ -154,7 +154,7 @@ QueryBuilder 서비스는 attachmentsPath 폴더 아래에서 `nt:file` 유형�
 
 #### 빌드 및 배포
 
-[여기에 설명된 대로 번들을 빌드합니다](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)
+[여기에 설명된 대로 번들을 빌드합니다](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=ko)
 [번들이 배포되어 있고 활성 상태인지 확인](http://localhost:4502/system/console/bundles)
 
 워크플로우 모델을 만듭니다. 워크플로우 모델에서 프로세스 단계를 끌어서 놓습니다. 프로세스 단계를 &quot;파일 시스템에 적응형 양식 첨부 파일 저장&quot;과 연결합니다.

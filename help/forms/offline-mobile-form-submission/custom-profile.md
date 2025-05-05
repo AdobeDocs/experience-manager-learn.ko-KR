@@ -127,7 +127,7 @@ public class GeneratePDFFromMobileFormData extends SlingAllMethodsServlet implem
 
 ### 대화형 PDF 렌더링
 
-다음 코드는 [Forms 서비스 API](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/forms/api/FormsService.html)를 사용하여 모바일 양식의 데이터로 대화형 PDF을 렌더링합니다.
+다음 코드는 [Forms 서비스 API](https://helpx.adobe.com/kr/aem-forms/6/javadocs/com/adobe/fd/forms/api/FormsService.html)를 사용하여 모바일 양식의 데이터로 대화형 PDF을 렌더링합니다.
 
 ```java
 package com.aemforms.mobileforms.core.documentservices.impl;

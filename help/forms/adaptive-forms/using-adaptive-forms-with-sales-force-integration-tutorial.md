@@ -27,8 +27,8 @@ ht-degree: 0%
 * 이 페이지 하단으로 스크롤하여 Swagger 파일을 다운로드하고 하드 드라이브에 저장하십시오.
 * SSL이 활성화된 AEM Forms
 
-   * [AEM 6.3에서 SSL을 사용하기 위한 공식 설명서](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/ssl-by-default.html)
-   * [AEM 6.4에서 SSL을 사용하기 위한 공식 설명서](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/ssl-by-default.html)
+   * [AEM 6.3에서 SSL을 사용하기 위한 공식 설명서](https://helpx.adobe.com/kr/experience-manager/6-3/sites/administering/using/ssl-by-default.html)
+   * [AEM 6.4에서 SSL을 사용하기 위한 공식 설명서](https://helpx.adobe.com/kr/experience-manager/6-4/sites/administering/using/ssl-by-default.html)
 
 * Salesforce 계정이 있어야 합니다.
 * 연결된 앱을 만들어야 합니다. 앱을 만들기 위한 공식 설명서 양식 Salesforce은 [여기](https://help.salesforce.com/articleView?id=connected_app_create.htm&amp;type=0)에 나열되어 있습니다.
@@ -73,7 +73,7 @@ ht-degree: 0%
 * 인증 핸들러: 권한 부여 전달자
 * &quot;OAUTH에 연결 &quot;.모든 것이 잘 작동하면 오류가 표시되지 않습니다
 
-Salesforce을 사용하여 양식 데이터 모델을 만든 후에는 방금 만든 데이터 Source을 사용하여 양식 데이터 통합을 만들 수 있습니다. 양식 데이터 통합을 만드는 데 필요한 공식 설명서는 [여기](https://helpx.adobe.com/aem-forms/6-3/data-integration.html)입니다.
+Salesforce을 사용하여 양식 데이터 모델을 만든 후에는 방금 만든 데이터 Source을 사용하여 양식 데이터 통합을 만들 수 있습니다. 양식 데이터 통합을 만드는 데 필요한 공식 설명서는 [여기](https://helpx.adobe.com/kr/aem-forms/6-3/data-integration.html)입니다.
 
 SFDC에서 리드 개체를 만들려면 POST 서비스를 포함하도록 양식 데이터 모델을 구성해야 합니다.
 
@@ -106,7 +106,7 @@ SFDC에서 리드 개체를 만들려면 POST 서비스를 포함하도록 양�
    * 인증 핸들러: 권한 부여 전달자
    * &quot;OAuth에 연결&quot; 버튼을 클릭합니다. 오류가 표시되면 이전 단계를 검토하여 모든 정보가 정확하게 입력되었는지 확인하십시오.
 
-Salesforce을 사용하여 Data Source을 만든 다음 방금 만든 Data Source을 사용하여 양식 데이터 통합을 만들 수 있습니다. 이에 대한 설명서 링크는 [여기](https://helpx.adobe.com/experience-manager/6-4/forms/using/create-form-data-models.html)입니다.
+Salesforce을 사용하여 Data Source을 만든 다음 방금 만든 Data Source을 사용하여 양식 데이터 통합을 만들 수 있습니다. 이에 대한 설명서 링크는 [여기](https://helpx.adobe.com/kr/experience-manager/6-4/forms/using/create-form-data-models.html)입니다.
 
 SFDC에서 리드 개체를 만들려면 POST 서비스를 포함하도록 양식 데이터 모델을 구성해야 합니다.
 

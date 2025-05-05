@@ -28,7 +28,7 @@ ht-degree: 0%
 
 GitHub에서 [소스 코드 보기](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app)
 
-이 React 앱을 빌드하는 방법을 설명하는 [전체 단계별 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html)를 사용할 수 있습니다.
+이 React 앱을 빌드하는 방법을 설명하는 [전체 단계별 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=ko)를 사용할 수 있습니다.
 
 ## 사전 요구 사항 {#prerequisites}
 
@@ -41,7 +41,7 @@ GitHub에서 [소스 코드 보기](https://github.com/adobe/aem-guides-wknd-gra
 
 React 애플리케이션은 다음 AEM 배포 옵션과 함께 작동합니다. 모든 배포를 사용하려면 [WKND 사이트 v3.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest)을(를) 설치해야 합니다.
 
-+ [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
++ [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=ko)
 + [AEM 클라우드 서비스 SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=ko)을 사용하여 로컬 설정
    + [JDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atoling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14) 필요
 
@@ -314,4 +314,4 @@ AEM 작성자 환경에 연결하는 경우 해당 [인증 방법을 구성해�
 
 ### CORS(원본 간 리소스 공유)
 
-이 React 응용 프로그램은 대상 AEM 환경에서 실행되는 AEM 기반 CORS 구성을 사용하며 React 앱이 개발 모드의 `http://localhost:3000`에서 실행된다고 가정합니다.  CORS를 설정하고 구성하는 방법에 대한 자세한 내용은 [AEM Headless 배포 설명서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/spa.html)를 검토하십시오.
+이 React 응용 프로그램은 대상 AEM 환경에서 실행되는 AEM 기반 CORS 구성을 사용하며 React 앱이 개발 모드의 `http://localhost:3000`에서 실행된다고 가정합니다.  CORS를 설정하고 구성하는 방법에 대한 자세한 내용은 [AEM Headless 배포 설명서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/spa.html?lang=ko)를 검토하십시오.

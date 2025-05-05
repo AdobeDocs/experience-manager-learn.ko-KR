@@ -50,7 +50,7 @@ aemFormsUtilities.saveDocumentInCrx("/content/xmlfiles",".xml",xmlStringDoc);
 ## 사전 요구 사항
 
 
-[DevelopingWithServiceUserBundle](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/DevelopingWithServiceUser.jar)을(를) 배포하고 번들을 시작해야 합니다.
+[DevelopingWithServiceUserBundle](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/DevelopingWithServiceUser.jar?lang=ko)을(를) 배포하고 번들을 시작해야 합니다.
 
 
-이러한 유틸리티 서비스를 사용하여 CRX 저장소에 문서를 저장하려면 [서비스 사용자로 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/service-user-tutorial-develop.html?lang=en#adaptive-forms)을(를) 따르십시오. 적절한 CRX 폴더에 대한 [필요한 권한](http://localhost:4502/useradmin)을(를) fd-service 사용자에게 제공해야 합니다.
+이러한 유틸리티 서비스를 사용하여 CRX 저장소에 문서를 저장하려면 [서비스 사용자로 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/service-user-tutorial-develop.html?lang=ko#adaptive-forms)을(를) 따르십시오. 적절한 CRX 폴더에 대한 [필요한 권한](http://localhost:4502/useradmin)을(를) fd-service 사용자에게 제공해야 합니다.

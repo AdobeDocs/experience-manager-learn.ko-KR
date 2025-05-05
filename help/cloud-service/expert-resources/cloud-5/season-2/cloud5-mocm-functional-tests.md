@@ -24,7 +24,7 @@ AEM as a Cloud Service은 맨 위에 구축된 애플리케이션을 사용하�
 
 ## 이 비디오에서 다루는 콘텐츠
 
-+ [기능 테스트](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/test-results/functional-testing.html)
++ [기능 테스트](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/test-results/functional-testing.html?lang=ko)
 + [AEM 연기 테스트](https://github.com/adobe/aem-test-samples/)
 + [AEM 테스트 클라이언트](https://github.com/adobe/aem-testing-clients/)
 

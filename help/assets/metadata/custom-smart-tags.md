@@ -38,4 +38,4 @@ ht-degree: 1%
 
 ## 추가 리소스
 
-* AEM 6.4에는 [최신 서비스 팩](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html#aem-64)이 필요합니다.
+* AEM 6.4에는 [최신 서비스 팩](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=ko#aem-64)이 필요합니다.

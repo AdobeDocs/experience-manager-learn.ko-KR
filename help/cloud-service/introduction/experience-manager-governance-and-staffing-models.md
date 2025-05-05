@@ -134,4 +134,4 @@ AEM을 실행하고 운영하려면 다음 요소를 고려하십시오.
 
 거버넌스 및 직원 배치 모델 및 Archetype에 대한 자세한 내용은 1시간 패널 토론 [역할 Archetype 및  [!DNL AEM Assets] 및 [!DNL Sites]](https://adobecustomersuccess.adobeconnect.com/p8ml5nmy0758mp4/)에 대한 운영 프레임워크 만들기 를 참조하십시오.
 
-[고객 성공](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html) 허브에서 전략 및 사고 리더십에 대해 자세히 알아보세요.
+[고객 성공](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html?lang=ko) 허브에서 전략 및 사고 리더십에 대해 자세히 알아보세요.

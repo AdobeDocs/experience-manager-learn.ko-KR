@@ -21,7 +21,7 @@ Adobe Experience Manager(AEM)에는 Headless 엔드포인트를 정의하고 콘
 
 >[!TIP]
 >
->이 튜토리얼 컬렉션은 **배워서**&#x200B;하기를 원하는 사용자를 위해 설계되었습니다. 처음부터 개념을 배우려면 [AEM Headless 개발자 여정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/developer/overview.html)을 확인하십시오. 이 튜토리얼 세트와 여정은 서로 보완됩니다.
+>이 튜토리얼 컬렉션은 **배워서**&#x200B;하기를 원하는 사용자를 위해 설계되었습니다. 처음부터 개념을 배우려면 [AEM Headless 개발자 여정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/developer/overview.html?lang=ko)을 확인하십시오. 이 튜토리얼 세트와 여정은 서로 보완됩니다.
 
 ## API별 자습서
 
@@ -41,11 +41,11 @@ Adobe Experience Manager(AEM)에는 Headless 엔드포인트를 정의하고 콘
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=ko">
     <img alt="토큰 기반 인증" src="./assets/token-auth-icon.png" />
     </a>
     <div>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=ko">
     <strong>토큰 인증</strong>
     </a>
     </div>
@@ -54,11 +54,11 @@ Adobe Experience Manager(AEM)에는 Headless 엔드포인트를 정의하고 콘
     </p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=ko">
       <img alt="Content Services" src="./assets/content-services.png" />
     </a>
      <div>
-      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html">
+      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=ko">
         <strong>콘텐츠 서비스</strong>
       </a>
     </div>
@@ -76,11 +76,11 @@ Adobe Experience Manager(AEM)에는 Headless 엔드포인트를 정의하고 콘
 <table>
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/ios-swiftui-app.html">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/ios-swiftui-app.html?lang=ko">
       <img alt="iOS 예" src="./assets/ios-example.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/ios-swiftui-app.html">
+      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/ios-swiftui-app.html?lang=ko">
     <strong>iOS SwiftUI 예</strong>
     </a>
     </div>
@@ -89,11 +89,11 @@ Adobe Experience Manager(AEM)에는 Headless 엔드포인트를 정의하고 콘
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/android-app.html">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/android-app.html?lang=ko">
     <img alt="Android 예" src="./assets/android-example.png" />
     </a>
     <div>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/android-app.html">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/android-app.html?lang=ko">
     <strong>Android™ 예</strong>
     </a>
     </div>
@@ -102,11 +102,11 @@ Adobe Experience Manager(AEM)에는 Headless 엔드포인트를 정의하고 콘
     </p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/react-app.html">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/react-app.html?lang=ko">
       <img alt="React 예" src="./assets/react-example.png" />
     </a>
      <div>
-      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/react-app.html">
+      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/react-app.html?lang=ko">
         <strong>React 예제</strong>
       </a>
     </div>
@@ -124,7 +124,7 @@ Adobe Experience Manager(AEM)에는 Headless 엔드포인트를 정의하고 콘
 <table>
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=ko">
       <img alt="React - 헤드리스" src="./assets/react-headless.png" />
     </a>
     <div>
@@ -137,11 +137,11 @@ Adobe Experience Manager(AEM)에는 Headless 엔드포인트를 정의하고 콘
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/universal-editor/react-app-editing/overview">
+    <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/universal-editor/react-app-editing/overview">
       <img alt="React - 유니버설 편집기를 통해 콘텐츠 편집" src="./assets/react-universal-editor.png" />
     </a>
      <div>
-      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/universal-editor/react-app-editing/overview">
+      <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/universal-editor/react-app-editing/overview">
         <strong>React - 유니버설 편집기를 통해 콘텐츠 편집</strong>
       </a>
     </div>
@@ -150,11 +150,11 @@ Adobe Experience Manager(AEM)에는 Headless 엔드포인트를 정의하고 콘
     <p>
   </td>  
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/remote-spa/overview.html">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/remote-spa/overview.html?lang=ko">
     <img alt="React - 원격 편집기" src="./assets/react-remote.png" />
     </a>
     <div>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/remote-spa/overview.html">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/remote-spa/overview.html?lang=ko">
     <strong>React - 원격 편집기</strong>
     </a>
     </div>
@@ -165,11 +165,11 @@ Adobe Experience Manager(AEM)에는 Headless 엔드포인트를 정의하고 콘
 </tr>
 <tr>  
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=ko">
       <img alt="React - SPA 편집기" src="./assets/react-spa-editor.png" />
     </a>
      <div>
-      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html">
+      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=ko">
         <strong>React - SPA 편집기</strong>
       </a>
     </div>
@@ -178,11 +178,11 @@ Adobe Experience Manager(AEM)에는 Headless 엔드포인트를 정의하고 콘
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=ko">
     <img alt="Android - 콘텐츠 서비스" src="./assets/android.png" />
     </a>
     <div>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=ko">
     <strong>Android - 콘텐츠 서비스</strong>
     </a>
     </div>
@@ -191,11 +191,11 @@ Adobe Experience Manager(AEM)에는 Headless 엔드포인트를 정의하고 콘
     </p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=ko">
       <img alt="Node.js - 인증" src="./assets/node-js.png" />
     </a>
      <div>
-      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html">
+      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=ko">
         <strong>Node.js - 인증</strong>
       </a>
     </div>

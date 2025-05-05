@@ -23,7 +23,7 @@ ht-degree: 1%
 
 AEM as a Cloud Service(AEMCS) 관리 CDN에서 **속도 제한 트래픽 필터** 규칙 및 기타 전략을 사용하여 DoS(서비스 거부) 및 DDoS(분산 서비스 거부) 공격을 차단하는 방법에 대해 알아봅니다. 이러한 공격은 CDN 및 잠재적으로 AEM Publish 서비스(즉, 원본)에서 트래픽 스파이크를 발생시키며 사이트 응답성 및 가용성에 영향을 줄 수 있습니다.
 
-이 자습서는 _트래픽 패턴을 분석하고 속도 제한을 구성하는 방법 [트래픽 필터 규칙](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf)_&#x200B;을 안내하여 이러한 공격을 완화합니다. 또한 이 자습서에서는 의심되는 공격이 있을 때 알림을 받을 수 있도록 [경고를 구성](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#traffic-filter-rules-alerts)하는 방법에 대해 설명합니다.
+이 자습서는 _트래픽 패턴을 분석하고 속도 제한을 구성하는 방법 [트래픽 필터 규칙](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf)_&#x200B;을 안내하여 이러한 공격을 완화합니다. 또한 이 자습서에서는 의심되는 공격이 있을 때 알림을 받을 수 있도록 [경고를 구성](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#traffic-filter-rules-alerts)하는 방법에 대해 설명합니다.
 
 ## 보호 이해
 
@@ -32,7 +32,7 @@ AEM 웹 사이트의 기본 DDoS 보호에 대해 알아보겠습니다.
 - **캐싱:** 캐싱 정책이 좋으면 CDN이 대부분의 요청이 원본으로 이동하지 않고 성능 저하를 일으키므로 DDoS 공격의 영향은 더 제한됩니다.
 - **자동 크기 조정:** 트래픽 스파이크를 처리하기 위해 AEM 작성자 및 게시 서비스가 자동 크기 조정을 수행하지만 급격한 트래픽 증가에 영향을 받을 수 있습니다.
 - **차단:** Adobe CDN은 CDN PoP(Point of Presence)당 특정 IP 주소에서 Adobe 정의 속도를 초과하는 경우 원본으로의 트래픽을 차단합니다.
-- **경고:** 트래픽이 특정 비율을 초과할 때 작업 센터에서 트래픽 스파이크를 원본 경고 알림으로 보냅니다. 지정된 CDN PoP에 대한 트래픽이 IP 주소당 _Adobe 정의_ 요청 속도를 초과하면 이 경고가 실행됩니다. 자세한 내용은 [트래픽 필터 규칙 경고](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#traffic-filter-rules-alerts)를 참조하십시오.
+- **경고:** 트래픽이 특정 비율을 초과할 때 작업 센터에서 트래픽 스파이크를 원본 경고 알림으로 보냅니다. 지정된 CDN PoP에 대한 트래픽이 IP 주소당 _Adobe 정의_ 요청 속도를 초과하면 이 경고가 실행됩니다. 자세한 내용은 [트래픽 필터 규칙 경고](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#traffic-filter-rules-alerts)를 참조하십시오.
 
 기본 제공되는 이러한 보호 기능은 DDoS 공격의 성능 영향을 최소화하는 조직의 기능을 위한 기준선으로 간주되어야 합니다. 각 웹 사이트에는 서로 다른 성능 특성이 있으며 Adobe 정의 속도 제한이 충족되기 전에 성능 저하가 나타날 수 있으므로 _고객 구성_&#x200B;을 통해 기본 보호를 확장하는 것이 좋습니다.
 
@@ -67,7 +67,7 @@ AEM 웹 사이트의 기본 DDoS 보호에 대해 알아보겠습니다.
 
 프로덕션으로 시작하기 전에 규칙을 구성하는 것이 좋습니다. 실제로 많은 조직은 공격 가능성을 나타내는 트래픽 스파이크에 대해 한 번만 규칙을 반응적으로 선언합니다.
 
-지정된 PoP에 대해 단일 IP 주소의 기본 트래픽 임계값이 초과되면 Adobe에서 원본 경고에 [작업 센터 알림](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/actions-center)&#x200B;(으)로 트래픽 스파이크를 보냅니다. 이러한 경고를 받은 경우 비율 제한 트래픽 필터 규칙을 구성하는 것이 좋습니다. 이 기본 경고는 향후 섹션에서 살펴볼 트래픽 필터 규칙을 정의할 때 고객이 명시적으로 활성화해야 하는 경고와 다릅니다.
+지정된 PoP에 대해 단일 IP 주소의 기본 트래픽 임계값이 초과되면 Adobe에서 원본 경고에 [작업 센터 알림](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/operations/actions-center)&#x200B;(으)로 트래픽 스파이크를 보냅니다. 이러한 경고를 받은 경우 비율 제한 트래픽 필터 규칙을 구성하는 것이 좋습니다. 이 기본 경고는 향후 섹션에서 살펴볼 트래픽 필터 규칙을 정의할 때 고객이 명시적으로 활성화해야 하는 경고와 다릅니다.
 
 ## 트래픽 패턴 분석 {#analyze-traffic}
 
@@ -96,7 +96,7 @@ Adobe에서 제공하는 **Elasticsearch, Logstash 및 Kibana(ELK)** 대시보�
 
 ### Splunk - 대시보드 도구 구성
 
-[Splunk 로그 전달이 활성화됨](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/logging#splunk-logs)인 고객은 새 대시보드를 만들어 트래픽 패턴을 분석할 수 있습니다.
+[Splunk 로그 전달이 활성화됨](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/developing/logging#splunk-logs)인 고객은 새 대시보드를 만들어 트래픽 패턴을 분석할 수 있습니다.
 
 Splunk에서 대시보드를 만들려면 [AEMCS CDN 로그 분석용 Splunk 대시보드](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/README.md#splunk-dashboards-for-aemcs-cdn-log-analysis)를 따르십시오.
 
@@ -142,7 +142,7 @@ ELK 및 Splunk 대시보드에서 다음 시각화를 사용할 수 있습니다
 
 위의 설명에 따라 값을 사용하여 AEM 프로젝트의 `/config/cdn.yaml` 파일에서 **속도 제한 트래픽 필터** 규칙을 구성합니다. 필요한 경우 웹 보안 팀에 문의하여 비율 제한 값이 적절하고 합법적인 트래픽을 차단하지 않는지 확인하십시오.
 
-자세한 내용은 [AEM 프로젝트에서 규칙 만들기](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#create-rules-in-your-aem-project)를 참조하십시오.
+자세한 내용은 [AEM 프로젝트에서 규칙 만들기](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#create-rules-in-your-aem-project)를 참조하십시오.
 
 ```yaml
 kind: CDN
@@ -195,12 +195,12 @@ data:
 AEMCS 환경에 변경 사항을 배포하려면 아래 단계를 따르십시오.
 
 - 위의 변경 사항을 커밋하고 Cloud Manager Git 저장소에 푸시합니다.
-- Cloud Manager의 구성 파이프라인을 사용하여 AEMCS 환경에 변경 사항을 배포합니다. 자세한 내용은 [Cloud Manager을 통해 규칙 배포](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#deploy-rules-through-cloud-manager)를 참조하세요.
+- Cloud Manager의 구성 파이프라인을 사용하여 AEMCS 환경에 변경 사항을 배포합니다. 자세한 내용은 [Cloud Manager을 통해 규칙 배포](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#deploy-rules-through-cloud-manager)를 참조하세요.
 - **속도 제한 트래픽 필터 규칙**&#x200B;이(가) 예상대로 작동하는지 확인하려면 [공격 시뮬레이션](#attack-simulation) 섹션에 설명된 대로 공격을 시뮬레이션할 수 있습니다. 요청 수를 규칙에 설정된 비율 제한 값보다 큰 값으로 제한합니다.
 
 ### 요청 변환 규칙 구성 {#configure-request-transform-rules}
 
-속도 제한 트래픽 필터 규칙 외에 [변환 요청](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations)을 사용하여 애플리케이션에서 필요하지 않은 쿼리 매개 변수를 설정 해제하여 캐시 무효화 기술을 통해 캐시를 우회하는 방법을 최소화하는 것이 좋습니다. 예를 들어 `search` 및 `campaignId` 쿼리 매개 변수만 허용하려는 경우 다음 규칙을 선언할 수 있습니다.
+속도 제한 트래픽 필터 규칙 외에 [변환 요청](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations)을 사용하여 애플리케이션에서 필요하지 않은 쿼리 매개 변수를 설정 해제하여 캐시 무효화 기술을 통해 캐시를 우회하는 방법을 최소화하는 것이 좋습니다. 예를 들어 `search` 및 `campaignId` 쿼리 매개 변수만 허용하려는 경우 다음 규칙을 선언할 수 있습니다.
 
 ```yaml
 kind: "CDN"
@@ -254,5 +254,5 @@ $ echo "GET https://<YOUR-WEBSITE-DOMAIN>" | vegeta attack -rate=120 -duration=6
 
 ### 원본 요청
 
-CDN 캐시를 무시하고 원본(AEM Publish 서비스)에 요청하려면 URL에 고유한 쿼리 매개 변수를 추가할 수 있습니다. [JMeter 스크립트를 사용하여 DoS 시뮬레이션](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection#simulate-dos-attack-using-jmeter-script)에서 샘플 Apache JMeter 스크립트를 참조하십시오.
+CDN 캐시를 무시하고 원본(AEM Publish 서비스)에 요청하려면 URL에 고유한 쿼리 매개 변수를 추가할 수 있습니다. [JMeter 스크립트를 사용하여 DoS 시뮬레이션](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection#simulate-dos-attack-using-jmeter-script)에서 샘플 Apache JMeter 스크립트를 참조하십시오.
 

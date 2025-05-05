@@ -27,7 +27,7 @@ AEM Assets as a Cloud Service의 asset compute 마이크로 서비스를 통해 
 
 ![자산 워크플로우 마이그레이션 도구](./assets/asset-workflow-migration.png)
 
-코드 베이스를 리팩터링하는 과정의 일부로 [자산 워크플로우 마이그레이션 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/asset-workflow-migration-tool.html)를 사용하여 기존 워크플로우를 마이그레이션하여 AEM as a Cloud Service의 Asset Compute 마이크로서비스를 사용하십시오.
+코드 베이스를 리팩터링하는 과정의 일부로 [자산 워크플로우 마이그레이션 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/asset-workflow-migration-tool.html?lang=ko)를 사용하여 기존 워크플로우를 마이그레이션하여 AEM as a Cloud Service의 Asset Compute 마이크로서비스를 사용하십시오.
 
 ## 주요 활동
 

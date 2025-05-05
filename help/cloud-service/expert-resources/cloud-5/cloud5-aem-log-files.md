@@ -24,7 +24,7 @@ ht-degree: 4%
 
 ## 이 비디오에서 다루는 콘텐츠
 
-+ 로그 파일 [개요](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html)
++ 로그 파일 [개요](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html?lang=ko)
 + UI를 통해 로그 파일 액세스
 + Adobe CLI 사용
    + [Adobe I/O 확장 가능 CLI](https://github.com/adobe/aio-cli)

@@ -69,7 +69,7 @@ AEM Forms을 설치하려면 [공식 설명서](https://helpx.adobe.com/kr/exper
    * **sling.bootdelegation.class.com.rsa.jsafe.provider.JsafeJCE=com.rsa.&#42;** **sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider=org.bouncycastle.&#42;**
 * 문서 서비스가 작동하려면 다음 두 속성이 필요합니다
 * sling.properties 파일을 저장합니다.
-* [적절한 양식 추가 패키지 다운로드](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en)
+* [적절한 양식 추가 패키지 다운로드](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko)
 * [패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp)를 사용하여 패키지에 양식 추가 기능을 설치하십시오.
 * 추가 기능 패키지를 설치한 후 다음 단계를 수행해야 합니다
 
@@ -86,4 +86,4 @@ AEM Forms을 설치하려면 [공식 설명서](https://helpx.adobe.com/kr/exper
 1. 변경 사항을 저장합니다.
 
 축하합니다!!! 이제 시스템에 AEM Forms을 설치하고 구성했습니다.
-필요에 따라 서버에서 [Reader 확장 기능](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) 또는 [PDFG](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html)을 구성할 수 있습니다
+필요에 따라 서버에서 [Reader 확장 기능](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html?lang=ko) 또는 [PDFG](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html?lang=ko)을 구성할 수 있습니다

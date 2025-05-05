@@ -46,7 +46,7 @@ ht-degree: 1%
 
 ## 프로젝트 만들기 {#create}
 
-AEM용 Maven 다중 모듈 프로젝트를 제작하기 위한 두 가지 옵션이 있습니다. 이 자습서에서는 [Maven AEM Project Archetype **35**](https://github.com/adobe/aem-project-archetype)을(를) 사용합니다. Cloud Manager은 또한 [AEM 응용 프로그램 프로젝트 만들기를 시작할 수 있는 UI 마법사를 제공합니다](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/project-creation/using-the-wizard.html). Cloud Manager UI에서 생성된 기본 프로젝트는 Archetype을 직접 사용하는 것과 동일한 구조를 갖습니다.
+AEM용 Maven 다중 모듈 프로젝트를 제작하기 위한 두 가지 옵션이 있습니다. 이 자습서에서는 [Maven AEM Project Archetype **35**](https://github.com/adobe/aem-project-archetype)을(를) 사용합니다. Cloud Manager은 또한 [AEM 응용 프로그램 프로젝트 만들기를 시작할 수 있는 UI 마법사를 제공합니다](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/project-creation/using-the-wizard.html?lang=ko). Cloud Manager UI에서 생성된 기본 프로젝트는 Archetype을 직접 사용하는 것과 동일한 구조를 갖습니다.
 
 >[!NOTE]
 >
@@ -176,24 +176,24 @@ AEM용 Maven 다중 모듈 프로젝트를 제작하기 위한 두 가지 옵션
 
 생성된 AEM 프로젝트는 각각 다른 역할을 가진 개별 Maven 모듈로 구성됩니다. 이 자습서와 대부분의 개발은 다음 모듈에 중점을 둡니다.
 
-* [core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/core.html) - Java 코드, 주로 백엔드 개발자입니다.
-* [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) - 주로 프론트엔드 개발자를 위한 CSS, JavaScript, Sass, TypeScript용 소스 코드를 포함합니다.
-* [ui.apps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uiapps.html) - 구성 요소 및 대화 상자 정의를 포함하며, 컴파일된 CSS 및 JavaScript을 클라이언트 라이브러리로 임베드합니다.
-* [ui.content](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.html) - 구조적 콘텐츠와 편집 가능한 템플릿, 메타데이터 스키마(/content, /conf)와 같은 구성을 포함합니다.
+* [core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/core.html?lang=ko) - Java 코드, 주로 백엔드 개발자입니다.
+* [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=ko) - 주로 프론트엔드 개발자를 위한 CSS, JavaScript, Sass, TypeScript용 소스 코드를 포함합니다.
+* [ui.apps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uiapps.html?lang=ko) - 구성 요소 및 대화 상자 정의를 포함하며, 컴파일된 CSS 및 JavaScript을 클라이언트 라이브러리로 임베드합니다.
+* [ui.content](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.html?lang=ko) - 구조적 콘텐츠와 편집 가능한 템플릿, 메타데이터 스키마(/content, /conf)와 같은 구성을 포함합니다.
 
 * **모두** - 위의 모듈을 AEM 환경에 배포할 수 있는 단일 패키지로 결합하는 빈 Maven 모듈입니다.
 
 ![Maven 프로젝트 다이어그램](assets/project-setup/project-pom-structure.png)
 
-Maven 모듈 **모두**&#x200B;에 대한 자세한 내용은 [AEM Project Archetype 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)를 참조하세요.
+Maven 모듈 **모두**&#x200B;에 대한 자세한 내용은 [AEM Project Archetype 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko)를 참조하세요.
 
 ### 핵심 구성 요소 포함 {#core-components}
 
-[AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)는 AEM용 표준화된 WCM(웹 콘텐츠 관리) 구성 요소 집합입니다. 이러한 구성 요소는 기본 기능 세트를 제공하며 개별 프로젝트에 대해 스타일링, 사용자 정의 및 확장됩니다.
+[AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)는 AEM용 표준화된 WCM(웹 콘텐츠 관리) 구성 요소 집합입니다. 이러한 구성 요소는 기본 기능 세트를 제공하며 개별 프로젝트에 대해 스타일링, 사용자 정의 및 확장됩니다.
 
-AEM as a Cloud Service 환경에는 최신 버전의 [AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)가 포함되어 있습니다. 따라서 AEM as a Cloud Service에 대해 생성된 프로젝트에는 AEM 핵심 구성 요소 임베드가 **포함되지 않습니다**.
+AEM as a Cloud Service 환경에는 최신 버전의 [AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)가 포함되어 있습니다. 따라서 AEM as a Cloud Service에 대해 생성된 프로젝트에는 AEM 핵심 구성 요소 임베드가 **포함되지 않습니다**.
 
-AEM 6.5/6.4 생성 프로젝트의 경우 Archetype은 프로젝트에 [AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)를 자동으로 임베드합니다. AEM 6.5/6.4에서는 최신 버전이 프로젝트와 함께 배포되도록 AEM 핵심 구성 요소를 포함하는 것이 좋습니다. 프로젝트에 [포함된 핵심 구성 요소에 대한 자세한 내용은 여기](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#core-components)에서 확인할 수 있습니다.
+AEM 6.5/6.4 생성 프로젝트의 경우 Archetype은 프로젝트에 [AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)를 자동으로 임베드합니다. AEM 6.5/6.4에서는 최신 버전이 프로젝트와 함께 배포되도록 AEM 핵심 구성 요소를 포함하는 것이 좋습니다. 프로젝트에 [포함된 핵심 구성 요소에 대한 자세한 내용은 여기](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=ko#core-components)에서 확인할 수 있습니다.
 
 ## Source 컨트롤 관리 {#source-control}
 
@@ -221,7 +221,7 @@ AEM Project Archetype은 파일을 안전하게 무시할 수 있는 시작점�
 
 ### 핵심 모듈 {#core-module}
 
-**[core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/core.html)** 모듈에 프로젝트와 연결된 모든 Java™ 코드가 포함되어 있습니다. **core** 모듈 빌드는 OSGi 번들을 AEM에 배포합니다. 이 모듈만 만들려면:
+**[core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/core.html?lang=ko)** 모듈에 프로젝트와 연결된 모든 Java™ 코드가 포함되어 있습니다. **core** 모듈 빌드는 OSGi 번들을 AEM에 배포합니다. 이 모듈만 만들려면:
 
 1. `core` 폴더(`aem-guides-wknd` 아래)로 이동:
 
@@ -255,7 +255,7 @@ AEM Project Archetype은 파일을 안전하게 무시할 수 있는 시작점�
 
 ### Ui.apps 및 Ui.content 모듈 {#apps-content-module}
 
-**[ui.apps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uiapps.html)** Maven 모듈에는 `/apps` 아래 사이트에 필요한 모든 렌더링 코드가 포함되어 있습니다. 여기에는 [clientlibs](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html)라는 AEM 형식으로 저장된 CSS/JS가 포함됩니다. 동적 HTML 렌더링용 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) 스크립트도 여기에 포함됩니다. **ui.apps** 모듈은 JCR의 구조에 대한 맵으로 간주할 수 있지만 파일 시스템에 저장되고 소스 제어에 커밋될 수 있는 형식으로 간주할 수 있습니다. **ui.apps** 모듈에는 코드만 포함되어 있습니다.
+**[ui.apps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uiapps.html?lang=ko)** Maven 모듈에는 `/apps` 아래 사이트에 필요한 모든 렌더링 코드가 포함되어 있습니다. 여기에는 [clientlibs](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=ko)라는 AEM 형식으로 저장된 CSS/JS가 포함됩니다. 동적 HTML 렌더링용 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=ko) 스크립트도 여기에 포함됩니다. **ui.apps** 모듈은 JCR의 구조에 대한 맵으로 간주할 수 있지만 파일 시스템에 저장되고 소스 제어에 커밋될 수 있는 형식으로 간주할 수 있습니다. **ui.apps** 모듈에는 코드만 포함되어 있습니다.
 
 이 모듈만 만들려면:
 
@@ -327,7 +327,7 @@ AEM Project Archetype은 파일을 안전하게 무시할 수 있는 시작점�
 
    포트 **4504**&#x200B;에서 실행 중인 AEM 인스턴스가 없으면 빌드 오류가 다시 발생합니다. `aem.port` 매개 변수가 `aem-guides-wknd/pom.xml`의 POM 파일에 정의되어 있습니다.
 
-**[ui.content](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.html)** 모듈은 **ui.apps** 모듈과 동일한 방식으로 구성됩니다. 유일한 차이점은 **ui.content** 모듈에 **변경 가능** 콘텐츠라고 하는 콘텐츠가 포함되어 있다는 것입니다. **변경 가능** 콘텐츠는 기본적으로 소스 제어 **에 저장된 템플릿, 정책 또는 폴더 구조와 같은 비코드 구성을 참조하지만**&#x200B;은(는) AEM 인스턴스에서 직접 수정할 수 있습니다. 이 내용은 페이지 및 템플릿 챕터에서 자세히 알아봅니다.
+**[ui.content](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.html?lang=ko)** 모듈은 **ui.apps** 모듈과 동일한 방식으로 구성됩니다. 유일한 차이점은 **ui.content** 모듈에 **변경 가능** 콘텐츠라고 하는 콘텐츠가 포함되어 있다는 것입니다. **변경 가능** 콘텐츠는 기본적으로 소스 제어 **에 저장된 템플릿, 정책 또는 폴더 구조와 같은 비코드 구성을 참조하지만**&#x200B;은(는) AEM 인스턴스에서 직접 수정할 수 있습니다. 이 내용은 페이지 및 템플릿 챕터에서 자세히 알아봅니다.
 
 **ui.apps** 모듈을 빌드하는 데 사용되는 것과 동일한 Maven 명령을 사용하여 **ui.content** 모듈을 빌드할 수 있습니다. **ui.content** 폴더 내에서 위의 단계를 자유롭게 반복하십시오.
 

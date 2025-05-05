@@ -49,4 +49,4 @@ ht-degree: 0%
 
 ## 변경 사항 푸시
 
-변경 사항에 만족하면 [프론트엔드 파이프라인](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline)을 사용하여 변경 사항을 클라우드 인스턴스에 푸시할 수 있습니다.
+변경 사항에 만족하면 [프론트엔드 파이프라인](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline)을 사용하여 변경 사항을 클라우드 인스턴스에 푸시할 수 있습니다.

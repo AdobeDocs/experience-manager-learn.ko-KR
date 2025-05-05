@@ -117,11 +117,11 @@ ht-degree: 1%
 
 ## 코드 검토
 
-[기본 자습서 - AEM의 GraphQL API를 사용하는 React 앱을 빌드합니다](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/graphql-and-react-app.html#review-the-aemheadless-object) 단계에서는 전문 지식을 얻기 위해 몇 가지 주요 파일을 검토하고 개선했습니다. WKND 앱을 개선하기 전에 주요 파일을 검토하십시오.
+[기본 자습서 - AEM의 GraphQL API를 사용하는 React 앱을 빌드합니다](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/graphql-and-react-app.html?lang=ko#review-the-aemheadless-object) 단계에서는 전문 지식을 얻기 위해 몇 가지 주요 파일을 검토하고 개선했습니다. WKND 앱을 개선하기 전에 주요 파일을 검토하십시오.
 
-* [AEMHeadless 개체 검토](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/graphql-and-react-app.html#review-the-aemheadless-object)
+* [AEMHeadless 개체 검토](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/graphql-and-react-app.html?lang=ko#review-the-aemheadless-object)
 
-* [AEM GraphQL 지속 쿼리를 실행하도록 구현](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/graphql-and-react-app.html#implement-to-run-aem-graphql-persisted-queries)
+* [AEM GraphQL 지속 쿼리를 실행하도록 구현](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/graphql-and-react-app.html?lang=ko#implement-to-run-aem-graphql-persisted-queries)
 
 ### `Adventures` React 구성 요소 검토
 

@@ -41,8 +41,8 @@ RDE의 주요 이점은 개발 추진력을 유지하는 것입니다.
 
 ## 추가 리소스
 
-[여러 개발자 공동 작업 시나리오](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html#multiple-developers-collaborating-on-the-same-rde)
+[여러 개발자 공동 작업 시나리오](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html?lang=ko#multiple-developers-collaborating-on-the-same-rde)
 
 [로컬 개발 환경 설정](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=ko)
 
-[Adobe Cloud Manager 사용 - CI/CD 프로덕션 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/cicd-production-pipeline.html)
+[Adobe Cloud Manager 사용 - CI/CD 프로덕션 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/cicd-production-pipeline.html?lang=ko)

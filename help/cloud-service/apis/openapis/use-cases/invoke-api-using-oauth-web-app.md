@@ -493,7 +493,7 @@ OpenAPI 기반 AEM API 호출은 액세스 토큰이 안전하게 관리되고 �
 
 기본적으로 WKND Sites 프로젝트에는 제품 속성을 표시하는 데 필요한 에셋 메타데이터 스키마가 없습니다. AEM 인스턴스의 에셋 폴더에 에셋 메타데이터 스키마를 만들고 적용해 보겠습니다.
 
-1. AEM as a Cloud Service 자산 인스턴스에 로그인합니다. [자산 보기](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/authoring/switch-views)를 사용하여 `/content/dam/wknd-shared/en` 폴더로 이동합니다.
+1. AEM as a Cloud Service 자산 인스턴스에 로그인합니다. [자산 보기](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/authoring/switch-views)를 사용하여 `/content/dam/wknd-shared/en` 폴더로 이동합니다.
 
    ![폴더로 이동](../assets/web-app/navigate-to-folder.png)
 

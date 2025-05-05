@@ -20,7 +20,7 @@ ht-degree: 0%
 
 아래 나열된 단계에 따라 로컬 AEM 인스턴스에서 이 사용 사례를 작업하십시오.
 
-* zip 파일에 포함된 [DevelopingWithServiceUser 번들 배포](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip).
+* zip 파일에 포함된 [DevelopingWithServiceUser 번들 배포](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip?lang=ko).
 
 * [configMgr](http://localhost:4502/system/console/configMgr)을 사용하여 Apache Sling 서비스 사용자 매퍼 서비스 **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service**&#x200B;에 다음 항목을 추가하십시오.
 

@@ -29,11 +29,11 @@ AEMCS(AEM as a Cloud Service)의 **웹 응용 프로그램 방화벽(WAF) 규칙
 
 보안 위반 위험을 줄이는 것이 모든 조직의 최우선 과제입니다. AEMCS는 웹 사이트 및 애플리케이션을 보호하기 위해 WAF 규칙을 포함한 트래픽 필터 규칙 기능을 제공합니다.
 
-트래픽 필터 규칙은 [기본 제공 CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html)에 배포되며 요청이 AEM 인프라에 도달하기 전에 평가됩니다. 이 기능을 사용하면 웹 사이트의 보안을 크게 강화하여 합법적인 요청만 AEM 인프라에 액세스할 수 있도록 할 수 있습니다.
+트래픽 필터 규칙은 [기본 제공 CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=ko)에 배포되며 요청이 AEM 인프라에 도달하기 전에 평가됩니다. 이 기능을 사용하면 웹 사이트의 보안을 크게 강화하여 합법적인 요청만 AEM 인프라에 액세스할 수 있도록 할 수 있습니다.
 
 이 튜토리얼에서는 WAF 규칙을 포함한 트래픽 필터 규칙의 생성, 배포, 테스트 및 결과 분석 과정을 안내합니다.
 
-[이 문서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=en)에서 트래픽 필터 규칙에 대해 자세히 알아볼 수 있습니다.
+[이 문서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=ko)에서 트래픽 필터 규칙에 대해 자세히 알아볼 수 있습니다.
 
 >[!IMPORTANT]
 >

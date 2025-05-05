@@ -25,12 +25,12 @@ AEM 사이트는 웹 사이트의 콘텐츠를 저장 및 작성하는 곳입니
 
 ![Edge Delivery Services 및 유니버설 편집기를 위한 새 AEM 사이트](./assets/2-new-aem-site/new-site.png)
 
-새 AEM 사이트를 만들려면 [설명서에 설명된 자세한 단계](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/edge-dev-getting-started#create-aem-site)를 따르십시오.  다음은 이 자습서에 사용된 값을 포함하여 단계가 요약된 목록입니다.
+새 AEM 사이트를 만들려면 [설명서에 설명된 자세한 단계](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/edge-dev-getting-started#create-aem-site)를 따르십시오.  다음은 이 자습서에 사용된 값을 포함하여 단계가 요약된 목록입니다.
 1. AEM 작성자의 **새 사이트를 만듭니다**. 이 자습서에서는 다음 사이트 이름을 사용합니다.
    * 사이트 제목: `WKND (Universal Editor)`
    * 사이트 이름: `aem-wknd-eds-ue`
 
-      * 사이트 이름 값은 `paths.json`[&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/path-mapping)에 추가된 사이트 경로 이름 과(와) 일치해야 합니다.
+      * 사이트 이름 값은 `paths.json`[&#128279;](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/path-mapping)에 추가된 사이트 경로 이름 과(와) 일치해야 합니다.
 
 2. **AEM 작성 사이트 서식 파일이 있는 Edge Delivery Services[&#128279;](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases)에서 최신 서식 파일을 가져옵니다**.
 3. **GitHub 저장소 이름과 일치하도록 사이트 이름을**&#x200B;로 지정하고 GitHub URL을 저장소의 URL로 설정합니다.

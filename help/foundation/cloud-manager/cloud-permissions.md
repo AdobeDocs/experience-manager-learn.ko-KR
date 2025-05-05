@@ -21,6 +21,6 @@ ht-degree: 0%
 
 # Cloud Manager 사용자 지정 권한
 
-AEM에서 Cloud Manager [사용자 지정 권한](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/custom-permissions.html)을(를) 사용하여 효율적이고 안전한 프로젝트 관리 및 배포를 보장하면서 전략적으로 다양한 팀의 액세스를 관리하는 방법에 대해 알아봅니다.
+AEM에서 Cloud Manager [사용자 지정 권한](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/custom-permissions.html?lang=ko)을(를) 사용하여 효율적이고 안전한 프로젝트 관리 및 배포를 보장하면서 전략적으로 다양한 팀의 액세스를 관리하는 방법에 대해 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425892/?learn=on)

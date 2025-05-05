@@ -24,7 +24,7 @@ ht-degree: 0%
 * [Adobe Sign 래퍼 번들](assets/AcrobatSign.core-1.0.0-SNAPSHOT.jar)
 
 * [샘플 대화형 통신 템플릿](assets/waiver-interactive-communication.zip)
-* [DevelopingWithServiceUser 번들 배포](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip)
+* [DevelopingWithServiceUser 번들 배포](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip?lang=ko)
 * OSGi configMgr 을 사용하여 Apache Sling 서비스 사용자 매퍼 서비스에 다음 항목을 추가합니다
   **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service**
 
@@ -61,4 +61,4 @@ REACT 앱에서 AEM 엔드포인트에 대한 POST를 활성화하려면 Adobe G
 
 ![cors-setting](assets/cors-settings.png)
 
-CORS 구성 옵션에 대한 자세한 내용은 [AEM과 CORS 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)를 참조하십시오.
+CORS 구성 옵션에 대한 자세한 내용은 [AEM과 CORS 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=ko)를 참조하십시오.

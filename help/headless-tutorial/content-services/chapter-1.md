@@ -23,7 +23,7 @@ ht-degree: 1%
 * AEM WCM 코어 구성 요소 2.4.0 이상
    * 아래 [WKND 모바일 AEM 응용 프로그램 콘텐츠 패키지에 포함됨](#wknd-mobile-application-packages)
 
-이 자습서를 시작하기 전에 다음 AEM 인스턴스가 [설치되어 있고 로컬 컴퓨터에서 실행 중인지 확인](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#Default%20Local%20Install)합니다.
+이 자습서를 시작하기 전에 다음 AEM 인스턴스가 [설치되어 있고 로컬 컴퓨터에서 실행 중인지 확인](https://helpx.adobe.com/kr/experience-manager/6-5/sites/deploying/using/deploy.html#Default%20Local%20Install)합니다.
 
 * **포트 4502**&#x200B;의 **AEM 작성자**
 * **포트 4503**&#x200B;의 **AEM Publish**

@@ -71,14 +71,14 @@ ht-degree: 3%
    * 제목*: **영어**
    * 이름: **en**
 
-   가장 좋은 방법은 다국어 지원을 위한 프로젝트를 설정하는 것입니다. 자세한 내용은 [다음 문서 페이지](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html)를 참조하세요.
+   가장 좋은 방법은 다국어 지원을 위한 프로젝트를 설정하는 것입니다. 자세한 내용은 [다음 문서 페이지](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html?lang=ko)를 참조하세요.
 
 
 ## 콘텐츠 조각 만들기 {#create-content-fragment}
 
 >[!TIP]
 >
->로컬 AEM SDK 사용자의 경우: AEM Assets UI를 활용하여 아래에 요약된 콘텐츠 조각 UI 대신 콘텐츠 조각을 만들고 작성할 수 있습니다. 자세한 지침은 [AEM 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing.html)를 참조하세요.
+>로컬 AEM SDK 사용자의 경우: AEM Assets UI를 활용하여 아래에 요약된 콘텐츠 조각 UI 대신 콘텐츠 조각을 만들고 작성할 수 있습니다. 자세한 지침은 [AEM 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing.html?lang=ko)를 참조하세요.
 
 다음으로 **팀** 및 **개인** 모델을 기반으로 여러 콘텐츠 조각을 만듭니다.
 
@@ -152,7 +152,7 @@ ht-degree: 3%
 
 >[!TIP]
 >
->로컬 AEM SDK 사용자의 경우: AEM Assets UI를 활용하여 아래에 설명된 콘텐츠 조각 UI 대신 콘텐츠 조각을 게시할 수 있습니다. 자세한 지침은 [AEM 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing.html#publishing-and-referencing-a-fragment)를 참조하세요.
+>로컬 AEM SDK 사용자의 경우: AEM Assets UI를 활용하여 아래에 설명된 콘텐츠 조각 UI 대신 콘텐츠 조각을 게시할 수 있습니다. 자세한 지침은 [AEM 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing.html?lang=ko#publishing-and-referencing-a-fragment)를 참조하세요.
 
 검토 및 확인 후 작성된 `Content Fragments`을(를) 게시합니다.
 
@@ -173,5 +173,5 @@ ht-degree: 3%
 
 ## 관련 설명서
 
-* [콘텐츠 조각 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing.html)
-* [변형 - 조각 콘텐츠 작성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-variations.html)
+* [콘텐츠 조각 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing.html?lang=ko)
+* [변형 - 조각 콘텐츠 작성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-variations.html?lang=ko)

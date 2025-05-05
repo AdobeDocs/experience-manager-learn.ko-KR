@@ -20,7 +20,7 @@ ht-degree: 0%
 
 프로그래밍 방식으로 DOR(Document Of Record) 생성
 
-이 문서에서는 `com.adobe.aemds.guide.addon.dor.DoRService API`을(를) 사용하여 프로그래밍 방식으로 **기록 문서**&#x200B;를 생성하는 방법을 보여 줍니다. [기록 문서](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html)은(는) 적응형 양식으로 캡처된 데이터의 PDF 버전입니다.
+이 문서에서는 `com.adobe.aemds.guide.addon.dor.DoRService API`을(를) 사용하여 프로그래밍 방식으로 **기록 문서**&#x200B;를 생성하는 방법을 보여 줍니다. [기록 문서](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=ko)은(는) 적응형 양식으로 캡처된 데이터의 PDF 버전입니다.
 
 1. 다음은 코드 조각입니다. 첫 번째 라인은 DOR 서비스를 받습니다.
 1. DoROptions를 설정합니다.

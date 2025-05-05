@@ -80,7 +80,7 @@ _AEM 서비스 유형_(작성자, 게시, 미리보기) 또는 _Adobe 관리 CDN
 
 이 자습서에서는 _ErrorDocument_ 지시문, _ACS AEM Commons 오류 페이지 핸들러_ 및 _CDN 오류 페이지_ 옵션을 사용하여 오류 페이지를 사용자 지정하는 방법을 알아봅니다. 이 자습서를 수행하려면 다음이 필요합니다.
 
-- [로컬 AEM 개발 환경](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) 또는 AEM as a Cloud Service 환경. _CDN 오류 페이지_ 옵션은 AEM as a Cloud Service 환경에 적용할 수 있습니다.
+- [로컬 AEM 개발 환경](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) 또는 AEM as a Cloud Service 환경. _CDN 오류 페이지_ 옵션은 AEM as a Cloud Service 환경에 적용할 수 있습니다.
 
 - 오류 페이지를 사용자 지정하는 [AEM WKND 프로젝트](https://github.com/adobe/aem-guides-wknd).
 
@@ -95,7 +95,7 @@ _AEM 서비스 유형_(작성자, 게시, 미리보기) 또는 _Adobe 관리 CDN
   $ mvn clean install -PautoInstallSinglePackage -PautoInstallSinglePackagePublish
   ```
 
-- AEM as a Cloud Service 환경의 경우 [전체 스택 파이프라인](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#full-stack-pipeline)을 실행하여 AEM WKND 프로젝트를 배포하려면 [비프로덕션 파이프라인](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/cloud-manager/cicd-non-production-pipeline) 예를 참조하십시오.
+- AEM as a Cloud Service 환경의 경우 [전체 스택 파이프라인](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#full-stack-pipeline)을 실행하여 AEM WKND 프로젝트를 배포하려면 [비프로덕션 파이프라인](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/cloud-manager/cicd-non-production-pipeline) 예를 참조하십시오.
 
 - WKND 사이트 페이지가 올바르게 렌더링되는지 확인합니다.
 
@@ -375,7 +375,7 @@ Azure Blob Storage에서 정적 파일을 호스팅해 보겠습니다. 그러�
 
 1. Cloud Manager에서 **파이프라인** 섹션으로 이동합니다.
 
-1. 새 파이프라인을 만들거나 **Config** 파일만 배포하는 기존 파이프라인을 선택하십시오. 자세한 단계는 [구성 파이프라인 만들기](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#deploy-rules-through-cloud-manager)를 참조하십시오.
+1. 새 파이프라인을 만들거나 **Config** 파일만 배포하는 기존 파이프라인을 선택하십시오. 자세한 단계는 [구성 파이프라인 만들기](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#deploy-rules-through-cloud-manager)를 참조하십시오.
 
 1. CDN 규칙을 배포하려면 **실행** 단추를 클릭하십시오.
 
@@ -401,6 +401,6 @@ CDN 오류 페이지를 테스트하려면 아래 단계를 수행합니다.
 
 ## 추가 리소스
 
-- [CDN 오류 페이지 구성](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages)
+- [CDN 오류 페이지 구성](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages)
 
-- [Cloud Manager - 파이프라인 구성](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#config-deployment-pipeline)
+- [Cloud Manager - 파이프라인 구성](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#config-deployment-pipeline)

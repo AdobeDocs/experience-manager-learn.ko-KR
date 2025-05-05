@@ -43,5 +43,5 @@ Dynamic Media Classic에 대해 자세히 알아보려면 다음 리소스를 �
 
 - Experience League의 [Dynamic Media Classic - 값 가져오기](https://guided.adobe.com/?launch=AEM-5a#recommended/solutions/experience-manager)
 - Experience League의 [Dynamic Media Classic - 더 많은 작업](https://guided.adobe.com/?launch=AEM-6a#recommended/solutions/experience-manager)
-- [Dynamic Media 뉴스레터 보관](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/dynamic-media-newsletter.html)
-- [Dynamic Media Classic 설명서](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html)
+- [Dynamic Media 뉴스레터 보관](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/dynamic-media-newsletter.html?lang=ko)
+- [Dynamic Media Classic 설명서](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html?lang=ko)

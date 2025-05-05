@@ -34,7 +34,7 @@ CSRF 토큰이 POST, PUT 또는 DELETE 요청과 함께 전송되지 않으면 A
 [INFO][POST /path/to/aem/endpoint HTTP/1.1][com.adobe.granite.csrf.impl.CSRFFilter] doFilter: the provided CSRF token is invalid
 ```
 
-AEM의 CSRF 보호에 대한 자세한 내용은 [설명서를 참조하십시오](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/csrf-protection.html).
+AEM의 CSRF 보호에 대한 자세한 내용은 [설명서를 참조하십시오](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/csrf-protection.html?lang=ko).
 
 
 ## CSRF 클라이언트 라이브러리

@@ -30,7 +30,7 @@ Cloud Manager 프로그램에는 __single__ 네트워크 인프라 유형만 있
 
 >[!MORELIKETHIS]
 >
-> 전용 이그레스 IP 주소에 대한 자세한 내용은 AEM as a Cloud Service [고급 네트워크 구성 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking)를 참조하십시오.
+> 전용 이그레스 IP 주소에 대한 자세한 내용은 AEM as a Cloud Service [고급 네트워크 구성 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking)를 참조하십시오.
 
 ## 사전 요구 사항
 
@@ -44,7 +44,7 @@ Cloud Manager API를 사용하여 전용 이그레스 IP 주소를 설정할 때
 + Cloud Manager 프로그램 ID
 + Cloud Manager 환경 ID
 
-자세한 내용을 보려면 [Cloud Manger API 자격 증명을 설정, 구성 및 얻는 방법](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/app-builder/server-to-server-auth)을 검토하여 Cloud Manager API를 호출하는 데 사용하십시오.
+자세한 내용을 보려면 [Cloud Manger API 자격 증명을 설정, 구성 및 얻는 방법](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/extensibility/app-builder/server-to-server-auth)을 검토하여 Cloud Manager API를 호출하는 데 사용하십시오.
 
 이 자습서에서는 `curl`을(를) 사용하여 Cloud Manager API 구성을 만듭니다. 제공된 `curl` 명령은 Linux/macOS 구문을 사용합니다. Windows 명령 프롬프트를 사용하는 경우 `\` 줄 바꿈 문자를 `^`(으)로 바꾸십시오.
 
@@ -86,7 +86,7 @@ Cloud Manager API를 사용하여 전용 이그레스 IP 주소를 활성화할 
 
 1. 먼저 Cloud Manager API [listRegions](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) 작업을 사용하여 고급 네트워킹이 필요한 지역을 결정합니다. 후속 Cloud Manager API를 호출하려면 `region name`이(가) 필요합니다. 일반적으로 프로덕션 환경이 있는 영역이 사용됩니다.
 
-   [환경의 세부 정보](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments)에서 [Cloud Manager](https://my.cloudmanager.adobe.com)의 AEM as a Cloud Service 환경 지역을 찾으십시오. Cloud Manager에 표시되는 지역 이름은 Cloud Manager API에서 사용되는 지역 코드 [&#128279;](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments)에 매핑될 수 있습니다.
+   [환경의 세부 정보](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments)에서 [Cloud Manager](https://my.cloudmanager.adobe.com)의 AEM as a Cloud Service 환경 지역을 찾으십시오. Cloud Manager에 표시되는 지역 이름은 Cloud Manager API에서 사용되는 지역 코드 [&#128279;](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments)에 매핑될 수 있습니다.
 
    __listRegions HTTP 요청__
 
@@ -221,7 +221,7 @@ Cloud Manager API를 사용하여 전용 이그레스 IP 주소를 활성화할 
 
 >[!TIP]
 >
-> [전체 라우팅 규칙 집합](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking)에 대해서는 AEM as a Cloud Service의 전용 이그레스 IP 주소 설명서를 참조하십시오.
+> [전체 라우팅 규칙 집합](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking)에 대해서는 AEM as a Cloud Service의 전용 이그레스 IP 주소 설명서를 참조하십시오.
 
 
 ### HTTP/HTTPS

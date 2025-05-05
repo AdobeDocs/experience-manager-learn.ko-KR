@@ -1302,11 +1302,11 @@ AEM Author 및 Publish을 즉시 설치하는 경우 토폴로지가 약간 이�
 
 그동안 클라이언트가 해당 콘텐츠를 요청하면 Dispatcher에서 오래된 콘텐츠를 요청하고 저장합니다.
 
-보다 신뢰할 수 있는 설정은 컨텐츠를 받은 Publish 시스템 _after_&#x200B;에서 무효화 요청을 보냅니다. 문서 &quot;[게시 인스턴스에서 Dispatcher 캐시 무효화](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#InvalidatingDispatcherCachefromaPublishingInstance)&quot;는 세부 정보를 설명합니다.
+보다 신뢰할 수 있는 설정은 컨텐츠를 받은 Publish 시스템 _after_&#x200B;에서 무효화 요청을 보냅니다. 문서 &quot;[게시 인스턴스에서 Dispatcher 캐시 무효화](https://helpx.adobe.com/kr/experience-manager/dispatcher/using/page-invalidate.html#InvalidatingDispatcherCachefromaPublishingInstance)&quot;는 세부 정보를 설명합니다.
 
 **참조**
 
-[helpx.adobe.com - 게시 인스턴스에서 Dispatcher 캐시 무효화](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#InvalidatingDispatcherCachefromaPublishingInstance)
+[helpx.adobe.com - 게시 인스턴스에서 Dispatcher 캐시 무효화](https://helpx.adobe.com/kr/experience-manager/dispatcher/using/page-invalidate.html#InvalidatingDispatcherCachefromaPublishingInstance)
 
 ### HTTP 헤더 및 헤더 캐싱
 
@@ -1454,7 +1454,7 @@ AEM에서 해당 매핑을 구현해야 합니다. AEM은 잘린 형식에 따�
 
 * [apache.org - Mod 다시 작성](https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html)
 
-* [helpx.adobe.com - 리소스 매핑](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/resource-mapping.html)
+* [helpx.adobe.com - 리소스 매핑](https://helpx.adobe.com/kr/experience-manager/6-4/sites/deploying/using/resource-mapping.html)
 
 ### 오류 처리
 
@@ -1506,11 +1506,11 @@ Dispatcher은 기본적으로 리소스를 전달할 때 권한을 확인하지 
 
 **옵션 2**. 일반적으로 &quot;캐싱하지 않음&quot;은 좋지 않은 생각입니다. 그 길로 가면 제외되는 트래픽의 양과 중요한 리소스의 수가 작은지 확인합니다. 또는 Publish 시스템에 일부 메모리 내 캐시가 설치되어 있어야 Publish 시스템에서 결과 로드를 처리할 수 있습니다. 이 시리즈의 Part III에 있는 해당 로드에 대해 자세히 알아보십시오.
 
-**옵션 3**. &quot;권한 구분 캐싱&quot;은 흥미로운 접근 방식입니다. Dispatcher은 리소스를 캐시하고 있지만 전달하기 전에 AEM 시스템에 캐시할 수 있는지 여부를 묻습니다. 이렇게 하면 Dispatcher에서 Publish으로 추가 요청이 작성되지만, 페이지가 이미 캐시된 경우 일반적으로 Publish 시스템에서 페이지를 다시 렌더링하지 않습니다. 그러나 이 접근 방식에서는 몇 가지 사용자 지정 구현이 필요합니다. 자세한 내용은 [권한 구분 캐싱](https://helpx.adobe.com/experience-manager/dispatcher/using/permissions-cache.html) 문서에서 확인하세요.
+**옵션 3**. &quot;권한 구분 캐싱&quot;은 흥미로운 접근 방식입니다. Dispatcher은 리소스를 캐시하고 있지만 전달하기 전에 AEM 시스템에 캐시할 수 있는지 여부를 묻습니다. 이렇게 하면 Dispatcher에서 Publish으로 추가 요청이 작성되지만, 페이지가 이미 캐시된 경우 일반적으로 Publish 시스템에서 페이지를 다시 렌더링하지 않습니다. 그러나 이 접근 방식에서는 몇 가지 사용자 지정 구현이 필요합니다. 자세한 내용은 [권한 구분 캐싱](https://helpx.adobe.com/kr/experience-manager/dispatcher/using/permissions-cache.html) 문서에서 확인하세요.
 
 **참조**
 
-* [helpx.adobe.com - 권한 구분 캐싱](https://helpx.adobe.com/experience-manager/dispatcher/using/permissions-cache.html)
+* [helpx.adobe.com - 권한 구분 캐싱](https://helpx.adobe.com/kr/experience-manager/dispatcher/using/permissions-cache.html)
 
 ### 유예 기간 설정
 
@@ -1635,7 +1635,7 @@ Dispatcher의 캐시 디렉터리를 살펴보면 타임스탬프로 표시된 �
 
 **참조**
 
-[helpx.adobe.com - AEM에서 캐시된 페이지 무효화](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html)
+[helpx.adobe.com - AEM에서 캐시된 페이지 무효화](https://helpx.adobe.com/kr/experience-manager/dispatcher/using/page-invalidate.html)
 
 ### Publish 시스템 보호
 
@@ -1690,7 +1690,7 @@ Dispatcher을 필터로 사용하는 또 다른 방법은 `dispatcher.any`에서
 
 [apache.org- sethandler 지시문](https://httpd.apache.org/docs/2.4/mod/core.html#sethandler)
 
-[helpx.adobe.com - 콘텐츠 필터에 대한 액세스 구성](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#ConfiguringAccesstoContentfilter)
+[helpx.adobe.com - 콘텐츠 필터에 대한 액세스 구성](https://helpx.adobe.com/kr/experience-manager/dispatcher/using/dispatcher-configuration.html#ConfiguringAccesstoContentfilter)
 
 ### 정규 표현식 및 글로브를 사용한 필터링
 
@@ -1843,7 +1843,7 @@ Globs를 사용하고 싶을 때는
 
 **참조**
 
-[helpx.adobe.com - glob 속성에 대한 패턴 디자인](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#DesigningPatternsforglobProperties)
+[helpx.adobe.com - glob 속성에 대한 패턴 디자인](https://helpx.adobe.com/kr/experience-manager/dispatcher/using/dispatcher-configuration.html#DesigningPatternsforglobProperties)
 
 ### 프로토콜 사양
 
@@ -1906,17 +1906,17 @@ CQ-Handle: <path-pattern>
 
 ## 추가 리소스
 
-Dispatcher 캐싱에 대한 유용한 개요 및 소개: [https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)
+Dispatcher 캐싱에 대한 유용한 개요 및 소개: [https://helpx.adobe.com/kr/experience-manager/dispatcher/using/dispatcher.html](https://helpx.adobe.com/kr/experience-manager/dispatcher/using/dispatcher.html)
 
-모든 지시문이 포함된 Dispatcher 설명서에 대해 설명합니다. [https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html](https://helpx.adobe.com/kr/experience-manager/dispatcher/using/dispatcher-configuration.html)
+모든 지시문이 포함된 Dispatcher 설명서에 대해 설명합니다. [https://helpx.adobe.com/kr/experience-manager/dispatcher/using/dispatcher-configuration.html](https://helpx.adobe.com/kr/experience-manager/dispatcher/using/dispatcher-configuration.html)
 
-몇 가지 자주 묻는 질문: [https://helpx.adobe.com/experience-manager/using/dispatcher-faq.html](https://helpx.adobe.com/experience-manager/using/dispatcher-faq.html)
+몇 가지 자주 묻는 질문: [https://helpx.adobe.com/kr/experience-manager/using/dispatcher-faq.html](https://helpx.adobe.com/kr/experience-manager/using/dispatcher-faq.html)
 
 Dispatcher 최적화에 대한 웨비나 녹화 - 적극 권장: [https://my.adobeconnect.com/p7th2gf8k43?proto=true](https://my.adobeconnect.com/p7th2gf8k43?proto=true)
 
 프레젠테이션 &quot;컨텐츠 무효화의 저평가된 능력&quot;, &quot;adaptTo()&quot; 컨퍼런스(Potsdam 2018 [https://adapt.to/2018/en/schedule/the-underappreciated-power-of-content-invalidation.html](https://adapt.to/2018/en/schedule/the-underappreciated-power-of-content-invalidation.html))
 
-AEM에서 캐시된 페이지 무효화: [https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html)
+AEM에서 캐시된 페이지 무효화: [https://helpx.adobe.com/kr/experience-manager/dispatcher/using/page-invalidate.html](https://helpx.adobe.com/kr/experience-manager/dispatcher/using/page-invalidate.html)
 
 ## 다음 단계
 

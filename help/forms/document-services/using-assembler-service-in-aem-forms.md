@@ -115,7 +115,7 @@ AEM 서버에서 이 기능을 사용하려면
 >
 >AEM Forms 설치가 완료되었는지 확인합니다. 모든 번들은 활성 상태여야 합니다.
 >
->추가되었는지 확인 - 이 [AEM Forms 설치](https://helpx.adobe.com/aem-forms/6-3/installing-configuring-aem-forms-osgi.html)에서 언급한 대로 Boot delegate RSA 및 BouncyCastle 라이브러리를 부팅합니다.
+>추가되었는지 확인 - 이 [AEM Forms 설치](https://helpx.adobe.com/kr/aem-forms/6-3/installing-configuring-aem-forms-osgi.html)에서 언급한 대로 Boot delegate RSA 및 BouncyCastle 라이브러리를 부팅합니다.
 >
 >**이 데모에 대한 주의 사항**
 >

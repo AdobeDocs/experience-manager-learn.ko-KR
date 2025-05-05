@@ -55,7 +55,7 @@ ht-degree: 0%
 
 * Assets 아이콘을 클릭하고 필터를 적용하여 &quot;문서 단편&quot; 유형의 자산을 표시합니다. RescapeIncomeOutlook 문서 조각을 왼쪽 패널 대상 영역으로 끌어다 놓습니다.
 
-* 콘텐츠 영역에 문서 조각을 추가하는 방법에 대해 [이 페이지를 참조](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/partseven.html)할 수 있습니다.
+* 콘텐츠 영역에 문서 조각을 추가하는 방법에 대해 [이 페이지를 참조](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/partseven.html?lang=ko)할 수 있습니다.
 
 ## 예상 월별 소득 차트 추가 {#adding-estimated-monthly-income-chart}
 

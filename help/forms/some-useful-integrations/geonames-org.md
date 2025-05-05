@@ -53,13 +53,13 @@ OpenAPI 사양(이전 Swagger 사양)은 REST API에 대한 API 설명 포맷입
 
 ## 데이터 소스 만들기
 
-AEM/AEM Forms을 타사 애플리케이션과 통합하려면 클라우드 서비스 구성에서 [데이터 소스를 만들기](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html)해야 합니다. [Swagger 파일](assets/geonames-swagger-files.zip)을 사용하여 데이터 원본을 만드십시오.
+AEM/AEM Forms을 타사 애플리케이션과 통합하려면 클라우드 서비스 구성에서 [데이터 소스를 만들기](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html?lang=ko)해야 합니다. [Swagger 파일](assets/geonames-swagger-files.zip)을 사용하여 데이터 원본을 만드십시오.
 2개의 데이터 소스(하나는 모든 국가를 가져오고 다른 하나는 하위 요소를 가져오기 위해)를 만들어야 합니다
 
 
 ## Forms 데이터 모델 만들기
 
-AEM Forms 데이터 통합은 [양식 데이터 모델](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html)을(를) 만들고 작업할 수 있는 직관적인 사용자 인터페이스를 제공합니다. 이전 단계에서 만든 데이터 소스를 기반으로 양식 데이터 모델을 만듭니다. 2개의 데이터 소스를 포함하는 양식 데이터 모델
+AEM Forms 데이터 통합은 [양식 데이터 모델](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=ko)을(를) 만들고 작업할 수 있는 직관적인 사용자 인터페이스를 제공합니다. 이전 단계에서 만든 데이터 소스를 기반으로 양식 데이터 모델을 만듭니다. 2개의 데이터 소스를 포함하는 양식 데이터 모델
 
 ![fdm](assets/geonames-fdm.png)
 

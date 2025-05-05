@@ -163,7 +163,7 @@ data:
 
 IP 주소의 요청을 차단하여 **DoS 공격을 방지**&#x200B;합니다. 초당 100개의 요청을 수행하여 5분 동안 차단됩니다.
 
-- WKND 프로젝트의 `/config/cdn.yaml` 파일에 다음 [속도 제한 트래픽 필터 규칙](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html#ratelimit-structure)을(를) 추가합니다.
+- WKND 프로젝트의 `/config/cdn.yaml` 파일에 다음 [속도 제한 트래픽 필터 규칙](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=ko#ratelimit-structure)을(를) 추가합니다.
 
 ```yaml
 kind: CDN
@@ -227,7 +227,7 @@ DoS 및 DDoS 공격을 방지하는 방법에 대한 자세한 내용은 [트래
 
 다음으로, 향상된 보안 또는 WAF-DDoS 보호 라이센스를 구입한 고객이 고급 규칙을 구성하여 보다 정교한 공격으로부터 웹 사이트를 보호할 수 있는 경험에 대해 알아보겠습니다.
 
-계속하기 전에 트래픽 필터 규칙 설명서 [설정 단계](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=en#setup)에 설명된 대로 프로그램에 대해 WAF-DDoS 보호를 사용하도록 설정하십시오.
+계속하기 전에 트래픽 필터 규칙 설명서 [설정 단계](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=ko#setup)에 설명된 대로 프로그램에 대해 WAF-DDoS 보호를 사용하도록 설정하십시오.
 
 #### WAFFlags가 없는 경우
 
@@ -264,7 +264,7 @@ WAF 규칙이 선언되기 전에도 경험을 먼저 살펴보겠습니다. 프
 
 이제 `wafFlags` 속성을 `action` 속성의 일부로 포함하고 **시뮬레이션된 공격 요청을 차단**&#x200B;하는 WAF 규칙을 추가하겠습니다.
 
-구문 측면에서 볼 때 WAF 규칙은 앞에서 본 규칙과 유사하지만 `action` 속성이 하나 이상의 `wafFlags` 값을 참조합니다. `wafFlags`에 대해 자세히 알아보려면 [WAF 플래그 목록](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html#waf-flags-list) 섹션을 검토하세요.
+구문 측면에서 볼 때 WAF 규칙은 앞에서 본 규칙과 유사하지만 `action` 속성이 하나 이상의 `wafFlags` 값을 참조합니다. `wafFlags`에 대해 자세히 알아보려면 [WAF 플래그 목록](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=ko#waf-flags-list) 섹션을 검토하세요.
 
 - WKND 프로젝트의 `/config/cdn.yaml` 파일에 다음 규칙을 추가합니다. `block-waf-flags` 규칙에 시뮬레이션된 악성 트래픽으로 공격받을 때 대시보드 도구에 표시된 일부 wafFlags가 어떻게 포함되어 있는지 확인합니다. 실제로, 위협 환경이 발전함에 따라, 로그를 분석하여 선언할 새로운 규칙을 결정하는 것은 시간이 지남에 따라 좋은 관례입니다.
 
@@ -352,7 +352,7 @@ data:
 
 ## 추가 리소스
 
-[트래픽 필터 규칙 구문](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html#rules-syntax)
+[트래픽 필터 규칙 구문](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=ko#rules-syntax)
 
-[CDN 로그 형식](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html#cdn-log-format)
+[CDN 로그 형식](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=ko#cdn-log-format)
 

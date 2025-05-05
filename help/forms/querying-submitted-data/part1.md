@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # JSON 스키마를 기반으로 하는 적응형 양식 만들기
 
-AEM Forms 6.3 릴리스에서는 JSON 스키마를 기반으로 하는 적응형 Forms을 만드는 기능이 도입되었습니다. JSON 스키마를 사용한 적응형 Forms 만들기에 대한 자세한 내용은 이 [문서](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-json-schema-form-model.html)에 자세히 설명되어 있습니다.
+AEM Forms 6.3 릴리스에서는 JSON 스키마를 기반으로 하는 적응형 Forms을 만드는 기능이 도입되었습니다. JSON 스키마를 사용한 적응형 Forms 만들기에 대한 자세한 내용은 이 [문서](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-json-schema-form-model.html?lang=ko)에 자세히 설명되어 있습니다.
 
 JSON 스키마를 기반으로 적응형 양식을 만들면 다음 단계는 제출된 데이터를 데이터베이스에 저장하는 것입니다. 이러한 목적으로 다양한 데이터베이스 공급업체에서 도입한 새로운 JSON 데이터 유형을 사용합니다. 이 문서에서는 MySql 8 데이터베이스를 사용하여 제출된 데이터를 저장합니다.
 

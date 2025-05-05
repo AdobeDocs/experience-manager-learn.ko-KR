@@ -89,7 +89,7 @@ else
 **시각적 편집기를 사용하여 항목 추가**
 
 * [에셋 다운로드](assets/usingthevisualeditor.zip)
-* 아직 Tomcat이 없는 경우 설치합니다. [tomcat 설치 지침은 여기에서 확인할 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html)
+* 아직 Tomcat이 없는 경우 설치합니다. [tomcat 설치 지침은 여기에서 확인할 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html?lang=ko)
 * [이 zip 파일에 포함된 SampleRest.war 파일을 Tomcat에 배포합니다](assets/sample-rest.zip)
 * [Forms 및 문서 열기](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * 클릭 &quot;만들기 | File Upload(파일 업로드)&quot;를 클릭하고 이전 단계에서 다운로드한 파일을 업로드합니다

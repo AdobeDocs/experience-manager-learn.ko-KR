@@ -41,4 +41,4 @@ submitting a pull request!
 
 ## 보안 문제
 
-이 발행물 추적기에는 보안 문제가 보고되어서는 안 됩니다. 대신 보안 전문가에게 [문제 제기](https://helpx.adobe.com/security/alertus.html)
+이 발행물 추적기에는 보안 문제가 보고되어서는 안 됩니다. 대신 보안 전문가에게 [문제 제기](https://helpx.adobe.com/kr/security/alertus.html)

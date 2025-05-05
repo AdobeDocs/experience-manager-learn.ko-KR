@@ -230,7 +230,7 @@ public class StreamPDFToEmbed extends SlingAllMethodsServlet {
 
 1. [embedpdf 번들을 다운로드하여 설치](assets/embedpdf.core-1.0-SNAPSHOT.jar)합니다.
 이 템플릿에는 데이터를 XDP 템플릿과 병합하고 pdf를 다시 스트리밍하는 서블릿이 있습니다.
-1. [AEM ConfigMgr](http://localhost:4502/system/console/configMgr)을 사용하여 Adobe Granite CSRF 필터의 제외된 경로 섹션에 /bin/getPDFToEmbed 경로를 추가합니다. 프로덕션 환경에서는 [CSRF 보호 프레임워크](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/csrf-protection.html?lang=en)를 사용하는 것이 좋습니다
+1. [AEM ConfigMgr](http://localhost:4502/system/console/configMgr)을 사용하여 Adobe Granite CSRF 필터의 제외된 경로 섹션에 /bin/getPDFToEmbed 경로를 추가합니다. 프로덕션 환경에서는 [CSRF 보호 프레임워크](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/csrf-protection.html?lang=ko)를 사용하는 것이 좋습니다
 1. [클라이언트 라이브러리 및 사용자 지정 구성 요소 가져오기](assets/embed-pdf.zip)
 1. [적응형 양식 및 템플릿 가져오기](assets/embed-pdf-form-and-xdp.zip)
 1. [적응형 양식 미리 보기](http://localhost:4502/content/dam/formsanddocuments/from1040/jcr:content?wcmmode=disabled)

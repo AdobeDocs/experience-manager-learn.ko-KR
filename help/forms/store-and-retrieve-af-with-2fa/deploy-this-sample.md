@@ -45,7 +45,7 @@ OTP 코드를 보내고 확인하기 위해 [Nexmo](https://dashboard.nexmo.com/
 ## 다음 OSGi 번들 배포
 
 데이터베이스에서 데이터를 저장하고 가져오기 위해 [코드가 있는 번들을 배포합니다](assets/SaveAndResume.core-1.0.0-SNAPSHOT.jar)
-[developingwithserviceuser.zip](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip)을(를) 다운로드하고 압축 해제합니다.
+[developingwithserviceuser.zip](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip?lang=ko)을(를) 다운로드하고 압축 해제합니다.
 Felix 웹 콘솔을 사용하여 DevelopingWithServiceUser.jar 파일을 배포합니다.
 
 ## 클라이언트 라이브러리 배포

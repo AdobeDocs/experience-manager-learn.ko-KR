@@ -24,7 +24,7 @@ ht-degree: 0%
 
 이 문서에서는 양식 데이터 모델 미리 채우기 서비스를 사용하여 SharePoint 목록에서 가져온 데이터로 적응형 양식을 미리 채우기/미리 채우는 데 필요한 단계에 대해 설명합니다.
 
-이 문서에서는 데이터를 SharePoint 목록에 제출하기 위해 [적응형 양식을 구성했다고 가정합니다.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html?lang=en#connect-af-sharepoint-list)
+이 문서에서는 데이터를 SharePoint 목록에 제출하기 위해 [적응형 양식을 구성했다고 가정합니다.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html?lang=ko#connect-af-sharepoint-list)
 
 다음은 SharePoint 목록의 데이터입니다
 ![sharepoint-list](assets/list-data.png)

@@ -21,7 +21,7 @@ ht-degree: 1%
 
 # AEM Sites 및 Adobe Analytics 통합
 
-AEM Sites 및 Adobe Analytics을 Adobe Analytics 태그 확장과 통합하여 [Adobe 클라이언트 데이터 레이어 및 AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)의 기본 기능을 사용하여 Adobe Experience Manager Sites의 페이지에 대한 데이터를 수집하는 방법에 대해 알아봅니다. [Experience Platform의 태그](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) 및 [Adobe Analytics 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html)을 사용하여 Adobe Analytics에 페이지 데이터를 보내는 규칙을 만듭니다.
+AEM Sites 및 Adobe Analytics을 Adobe Analytics 태그 확장과 통합하여 [Adobe 클라이언트 데이터 레이어 및 AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=ko)의 기본 기능을 사용하여 Adobe Experience Manager Sites의 페이지에 대한 데이터를 수집하는 방법에 대해 알아봅니다. [Experience Platform의 태그](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ko) 및 [Adobe Analytics 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html?lang=ko)을 사용하여 Adobe Analytics에 페이지 데이터를 보내는 규칙을 만듭니다.
 
 ## 빌드할 항목 {#what-build}
 
@@ -40,9 +40,9 @@ AEM Sites 및 Adobe Analytics을 Adobe Analytics 태그 확장과 통합하여 [
 다음이 필요합니다.
 
 * Experience Platform의 **태그 속성**
-* **Adobe Analytics** 테스트/개발 보고서 세트 ID 및 추적 서버. [보고서 세트 만들기](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html)에 대한 다음 설명서를 참조하세요.
-* [Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) 브라우저 확장 프로그램. 이 자습서의 스크린샷은 Chrome 브라우저에서 캡처되었습니다.
-* (선택 사항) [Adobe 클라이언트 데이터 레이어가 활성화된 AEM 사이트](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation). 이 자습서에서는 공개 [WKND](https://wknd.site/us/en.html) 사이트를 사용하지만 고유한 사이트를 사용할 수 있습니다.
+* **Adobe Analytics** 테스트/개발 보고서 세트 ID 및 추적 서버. [보고서 세트 만들기](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html?lang=ko)에 대한 다음 설명서를 참조하세요.
+* [Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html?lang=ko) 브라우저 확장 프로그램. 이 자습서의 스크린샷은 Chrome 브라우저에서 캡처되었습니다.
+* (선택 사항) [Adobe 클라이언트 데이터 레이어가 활성화된 AEM 사이트](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=ko#installation-activation). 이 자습서에서는 공개 [WKND](https://wknd.site/us/en.html) 사이트를 사용하지만 고유한 사이트를 사용할 수 있습니다.
 
 >[!NOTE]
 >
@@ -52,10 +52,10 @@ AEM Sites 및 Adobe Analytics을 Adobe Analytics 태그 확장과 통합하여 [
 
 [WKND](https://wknd.site/us/en.html)은(는) 참조로 디자인된 [오픈 소스 프로젝트](https://github.com/adobe/aem-guides-wknd) 및 AEM 구현을 위한 [튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR)을(를) 기반으로 구축된 공개 사이트입니다.
 
-AEM 환경을 설정하고 WKND 코드 베이스를 설치하는 대신 Experience Platform 디버거를 사용하여 **라이브 [WKND 사이트](https://wknd.site/us/en.html)를 *내* 태그 속성으로 전환**&#x200B;할 수 있습니다. 그러나 이미 [Adobe 클라이언트 데이터 레이어](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation)가 활성화되어 있는 경우 자체 AEM 사이트를 사용할 수 있습니다.
+AEM 환경을 설정하고 WKND 코드 베이스를 설치하는 대신 Experience Platform 디버거를 사용하여 **라이브 [WKND 사이트](https://wknd.site/us/en.html)를 *내* 태그 속성으로 전환**&#x200B;할 수 있습니다. 그러나 이미 [Adobe 클라이언트 데이터 레이어](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=ko#installation-activation)가 활성화되어 있는 경우 자체 AEM 사이트를 사용할 수 있습니다.
 
-1. Experience Platform에 로그인하고 [Tag 속성을 만듭니다](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html)&#x200B;(아직 만들지 않은 경우).
-1. 초기 태그 JavaScript [라이브러리가 만들어졌는지](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html#create-a-library) 그리고 태그 [환경](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=ko)&#x200B;(으)로 승격되었는지 확인하십시오.
+1. Experience Platform에 로그인하고 [Tag 속성을 만듭니다](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html?lang=ko)&#x200B;(아직 만들지 않은 경우).
+1. 초기 태그 JavaScript [라이브러리가 만들어졌는지](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html?lang=ko#create-a-library) 그리고 태그 [환경](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=ko)&#x200B;(으)로 승격되었는지 확인하십시오.
 1. 라이브러리가 게시된 태그 환경에서 JavaScript 포함 코드를 복사합니다.
 
    ![태그 속성 포함 코드 복사](assets/collect-data-analytics/launch-environment-copy.png)
@@ -75,7 +75,7 @@ AEM 환경을 설정하고 WKND 코드 베이스를 설치하는 대신 Experien
 
 ## WKND 사이트에서 Adobe 클라이언트 데이터 레이어 확인
 
-[WKND 참조 프로젝트](https://github.com/adobe/aem-guides-wknd)은(는) AEM 핵심 구성 요소로 빌드되었으며 기본적으로 [Adobe 클라이언트 데이터 레이어](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation)가 활성화되어 있습니다. 그런 다음 Adobe 클라이언트 데이터 레이어가 활성화되어 있는지 확인합니다.
+[WKND 참조 프로젝트](https://github.com/adobe/aem-guides-wknd)은(는) AEM 핵심 구성 요소로 빌드되었으며 기본적으로 [Adobe 클라이언트 데이터 레이어](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=ko#installation-activation)가 활성화되어 있습니다. 그런 다음 Adobe 클라이언트 데이터 레이어가 활성화되어 있는지 확인합니다.
 
 1. [WKND 사이트](https://wknd.site/us/en.html)로 이동합니다.
 1. 브라우저의 개발자 도구를 열고 **콘솔**&#x200B;로 이동합니다. 다음 명령을 실행합니다.
@@ -104,11 +104,11 @@ AEM 환경을 설정하고 WKND 코드 베이스를 설치하는 대신 Experien
 
    Adobe Analytics으로 페이지 데이터를 보내려면 데이터 레이어의 `dc:title`, `xdm:language` 및 `xdm:template`과(와) 같은 표준 속성을 사용하겠습니다.
 
-   자세한 내용은 핵심 구성 요소 데이터 스키마에서 [페이지 스키마](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#page)를 검토하십시오.
+   자세한 내용은 핵심 구성 요소 데이터 스키마에서 [페이지 스키마](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=ko#page)를 검토하십시오.
 
    >[!NOTE]
    >
-   > `adobeDataLayer` JavaScript 개체가 표시되지 않는 경우 사이트에서 [Adobe 클라이언트 데이터 레이어가 활성화되었는지 확인](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation)합니다.
+   > `adobeDataLayer` JavaScript 개체가 표시되지 않는 경우 사이트에서 [Adobe 클라이언트 데이터 레이어가 활성화되었는지 확인](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=ko#installation-activation)합니다.
 
 ## Page Loaded 규칙 만들기
 
@@ -177,11 +177,11 @@ Adobe 클라이언트 데이터 레이어는 **이벤트 기반** 데이터 레�
 
    사용자 지정 이벤트에서 호출된 `trigger()` 메서드에서 `event` 개체가 전달되었습니다. 여기서 `component`은(는) 사용자 지정 이벤트의 데이터 레이어 `getState`에서 파생된 현재 페이지입니다.
 
-1. 변경 사항을 저장하고 태그 속성에서 [빌드](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html)를 실행하여 코드를 AEM 사이트에서 사용되는 [환경](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=ko)&#x200B;(으)로 승격합니다.
+1. 변경 사항을 저장하고 태그 속성에서 [빌드](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html?lang=ko)를 실행하여 코드를 AEM 사이트에서 사용되는 [환경](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=ko)&#x200B;(으)로 승격합니다.
 
    >[!NOTE]
    >
-   > [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)을(를) 사용하여 포함 코드를 **개발** 환경으로 전환하면 유용할 수 있습니다.
+   > [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html?lang=ko)을(를) 사용하여 포함 코드를 **개발** 환경으로 전환하면 유용할 수 있습니다.
 
 1. AEM 사이트로 이동하고 개발자 도구를 열어 콘솔을 확인합니다. 페이지를 새로 고치면 콘솔 메시지가 기록되었음을 알 수 있습니다.
 

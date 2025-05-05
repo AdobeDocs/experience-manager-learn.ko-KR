@@ -31,7 +31,7 @@ AEM as a Cloud Service CDN에서 HTTP 응답 캐싱을 활성화하는 방법을
 
 ![기본 캐싱 동작](../assets/how-to/aem-publish-default-cache-headers.png){width="800" zoomable="yes"}
 
-자세한 내용은 [AEM 게시 - 기본 캐시 수명](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/publish.html#cdn-cache-life) 및 [AEM 작성자 - 기본 캐시 수명](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/author.html?#default-cache-life)을 검토하십시오.
+자세한 내용은 [AEM 게시 - 기본 캐시 수명](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/publish.html?lang=ko#cdn-cache-life) 및 [AEM 작성자 - 기본 캐시 수명](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/author.html?lang=ko&#default-cache-life)을 검토하십시오.
 
 요약하면, AEM as a Cloud Service은 AEM Publish에서 대부분의 콘텐츠 유형(HTML, JSON, JS, CSS 및 Assets)과 AEM Author에서 몇 가지 콘텐츠 유형(JS, CSS)을 캐시합니다.
 
@@ -99,7 +99,7 @@ AEM as a Cloud Service CDN에서 HTTP 응답 캐싱을 활성화하는 방법을
    ```
 
    `dispatcher/src/conf.d/enabled_vhosts` 디렉터리의 vhost 파일이 `dispatcher/src/conf.d/available_vhosts` 디렉터리의 파일에 대해 **symlinks**&#x200B;이므로 없는 경우 symlink를 만드십시오.
-1. [Cloud Manager - 웹 계층 구성 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?#web-tier-config-pipelines) 또는 [RDE 명령](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html?lang=en#deploy-apache-or-dispatcher-configuration)을 사용하여 원하는 AEM as a Cloud Service 환경에 vhost 변경 사항을 배포합니다.
+1. [Cloud Manager - 웹 계층 구성 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?lang=ko&#web-tier-config-pipelines) 또는 [RDE 명령](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html?lang=ko#deploy-apache-or-dispatcher-configuration)을 사용하여 원하는 AEM as a Cloud Service 환경에 vhost 변경 사항을 배포합니다.
 
 그러나 웹 브라우저 및 CDN 캐시 수명에 대해 다른 값을 갖기 위해 위의 예에서 `Surrogate-Control` 헤더를 사용할 수 있습니다. 마찬가지로 특정 날짜 및 시간에 캐시를 만료하려면 `Expires` 헤더를 사용할 수 있습니다. 또한 `stale-while-revalidate` 및 `stale-if-error` 특성을 사용하여 응답 콘텐츠의 부실 상태 처리를 제어할 수 있습니다. AEM WKND 프로젝트에 [참조 부실 상태 처리](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.d/available_vhosts/wknd.vhost#L150-L155) CDN 캐시 구성이 있습니다.
 

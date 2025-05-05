@@ -24,7 +24,7 @@ ht-degree: 2%
 
 AEM SPA Editor를 사용하여 편집 가능한 AEM 콘텐츠로 기존 React 기반(또는 Next.js) 원격 SPA을 추가하려는 개발자를 위한 멀티 파트 튜토리얼에 오신 것을 환영합니다.
 
-이 자습서는 AEM의 GraphQL API에 대해 AEM 콘텐츠 조각 콘텐츠를 사용하는 React 앱인 [WKND SPA 앱](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)을 기반으로 빌드되지만 GraphQL 콘텐츠의 컨텍스트 내 작성은 제공하지 않습니다.
+이 자습서는 AEM의 GraphQL API에 대해 AEM 콘텐츠 조각 콘텐츠를 사용하는 React 앱인 [WKND SPA 앱](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ko)을 기반으로 빌드되지만 GraphQL 콘텐츠의 컨텍스트 내 작성은 제공하지 않습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333272?quality=12&learn=on)
 
@@ -47,7 +47,7 @@ AEM SPA Editor를 사용하여 편집 가능한 AEM 콘텐츠로 기존 React �
 
 이 자습서에서는 다음 작업을 수행해야 합니다.
 
-+ [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=en)
++ [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=ko)
 + [Node.js v18](https://nodejs.org/en/)
 + [Java™ 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 + [Maven 3.6+](https://maven.apache.org/)

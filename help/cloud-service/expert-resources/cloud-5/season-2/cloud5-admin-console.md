@@ -24,7 +24,7 @@ Admin Console 내에서 AEM의 컨텍스트에서 각 항목이 수행하는 작
 
 ## 이 비디오에서 다루는 콘텐츠
 
-+ [Admin Console 이해](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/admin-console.html)
++ [Admin Console 이해](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/admin-console.html?lang=ko)
 + [Admin Console 개요](https://helpx.adobe.com/kr/enterprise/using/admin-console.html)
 
 ## 추가 리소스

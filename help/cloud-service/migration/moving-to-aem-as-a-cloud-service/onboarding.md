@@ -31,9 +31,9 @@ ht-degree: 7%
 
 ## 주요 활동
 
-+ 시스템 관리자는 [Admin Console](https://adminconsole.adobe.com/)을(를) 사용하여 하나 이상의 사용자를 [Cloud Manager - 비즈니스 소유자](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) 제품 프로필에 할당합니다.
-+ 비즈니스 소유자 제품 프로필에 할당된 사용자가 [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)에서 [프로그램 만들기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/creating-production-program.html) 및 [환경 추가](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html)까지의 셀프서비스 기능을 사용합니다.
-+ [Admin Console](https://adminconsole.adobe.com/)을(를) 사용하여 개발자와 사용자를 다른 [Cloud Manager 역할](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)에 할당하고 다양한 AEM 환경에 권한을 부여합니다.
++ 시스템 관리자는 [Admin Console](https://adminconsole.adobe.com/)을(를) 사용하여 하나 이상의 사용자를 [Cloud Manager - 비즈니스 소유자](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=ko) 제품 프로필에 할당합니다.
++ 비즈니스 소유자 제품 프로필에 할당된 사용자가 [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=ko)에서 [프로그램 만들기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/creating-production-program.html?lang=ko) 및 [환경 추가](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=ko)까지의 셀프서비스 기능을 사용합니다.
++ [Admin Console](https://adminconsole.adobe.com/)을(를) 사용하여 개발자와 사용자를 다른 [Cloud Manager 역할](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=ko)에 할당하고 다양한 AEM 환경에 권한을 부여합니다.
 
 ## 실습 위주의 운동
 

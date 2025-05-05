@@ -65,7 +65,7 @@ _CDN 오류 페이지_&#x200B;와 관련된 주요 기능에 대해 알아보겠
 
 1. **CDN 구성 파일 업데이트**: 필요한 구성으로 AEM 프로젝트의 `cdn.yaml` 파일을 업데이트합니다. 구성은 규칙으로 추가되며 규칙 구문을 따릅니다. 규칙 3개의 기본 구성 요소: `name`, `when` 및 `action`.
 
-2. **CDN 구성 파일 배포**: Cloud Manager 구성 파이프라인을 사용하여 업데이트된 `cdn.yaml` 파일을 배포합니다. 자세한 내용은 [Cloud Manager을 통해 규칙 배포](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#deploy-rules-through-cloud-manager)를 참조하십시오.
+2. **CDN 구성 파일 배포**: Cloud Manager 구성 파이프라인을 사용하여 업데이트된 `cdn.yaml` 파일을 배포합니다. 자세한 내용은 [Cloud Manager을 통해 규칙 배포](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#deploy-rules-through-cloud-manager)를 참조하십시오.
 
 ### 예
 
@@ -91,13 +91,13 @@ data:
 
 [트래픽 필터 규칙으로 웹 사이트 보호](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview)
 
-[HTTP 헤더 유효성 검사 CDN 규칙 구성 및 배포](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule)
+[HTTP 헤더 유효성 검사 CDN 규칙 구성 및 배포](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule)
 
-[CDN 캐시를 제거하는 방법](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)
+[CDN 캐시를 제거하는 방법](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)
 
-[CDN 오류 페이지 구성](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages)
+[CDN 오류 페이지 구성](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages)
 
-[CDN에서 트래픽 구성](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#client-side-redirectors)
+[CDN에서 트래픽 구성](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#client-side-redirectors)
 
-[CDN 자격 증명 및 인증 구성](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication)
+[CDN 자격 증명 및 인증 구성](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication)
 

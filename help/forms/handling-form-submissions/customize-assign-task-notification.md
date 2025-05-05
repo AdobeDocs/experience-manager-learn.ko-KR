@@ -22,14 +22,14 @@ ht-degree: 0%
 # 작업 알림 할당 사용자 지정
 
 작업 할당 구성 요소는 워크플로 참여자에게 작업을 할당하는 데 사용됩니다. 작업이 사용자 또는 그룹에 할당되면 정의된 사용자 또는 그룹 구성원에게 이메일 알림이 전송됩니다.
-이 전자 메일 알림에는 일반적으로 작업과 관련된 동적 데이터가 포함됩니다. 이 동적 데이터는 시스템에서 생성한 [메타데이터 속성](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/use-metadata-in-email-notifications.html#using-system-generated-metadata-in-an-email-notification)을 사용하여 가져옵니다.
+이 전자 메일 알림에는 일반적으로 작업과 관련된 동적 데이터가 포함됩니다. 이 동적 데이터는 시스템에서 생성한 [메타데이터 속성](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/use-metadata-in-email-notifications.html?lang=ko#using-system-generated-metadata-in-an-email-notification)을 사용하여 가져옵니다.
 제출된 양식 데이터의 값을 이메일 알림에 포함하려면 사용자 지정 메타데이터 속성을 만든 다음 이메일 템플릿에서 이러한 사용자 지정 메타데이터 속성을 사용해야 합니다
 
 
 
 ## 사용자 지정 메타데이터 속성을 만드는 중
 
-권장 접근 방법은 [WorkitemUserMetadataService](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/workspace/service/external/WorkitemUserMetadataService.html#getUserMetadataMap--)의 getUserMetadata 메서드를 구현하는 OSGI 구성 요소를 만드는 것입니다.
+권장 접근 방법은 [WorkitemUserMetadataService](https://helpx.adobe.com/kr/experience-manager/6-5/forms/javadocs/com/adobe/fd/workspace/service/external/WorkitemUserMetadataService.html#getUserMetadataMap--)의 getUserMetadata 메서드를 구현하는 OSGI 구성 요소를 만드는 것입니다.
 
 다음 코드는 4개의 메타데이터 속성(_firstName_,_lastName_,_reason_ 및 _amountRequested_)을 만들고 제출된 데이터에서 해당 값을 설정합니다. 예를 들어 메타데이터 속성 _firstName_&#x200B;의 값은 제출된 데이터에서 firstName이라는 요소의 값으로 설정됩니다. 다음 코드는 적응형 양식의 제출된 데이터가 xml 형식이라고 가정합니다. JSON 스키마 또는 양식 데이터 모델 기반의 적응형 Forms은 JSON 형식으로 데이터를 생성합니다.
 
@@ -128,7 +128,7 @@ OSGi 구성 요소가 AEM 서버에 빌드 및 배포되면 사용자 지정 메
 
 ## 서버에서 시도
 
-* [일별 CQ 메일 서비스 구성](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)
+* [일별 CQ 메일 서비스 구성](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=ko#configuring-the-mail-service)
 * 올바른 전자 메일 ID를 [관리자](http://localhost:4502/security/users.html)와(과) 연결
 * [패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp)를 사용하여 [워크플로 및 알림 템플릿](assets/workflow-and-task-notification-template.zip)을(를) 다운로드하여 설치하십시오.
 * [적응형 양식](assets/request-travel-authorization.zip)을(를) 다운로드하고 [양식 및 문서 ui](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)에서 AEM으로 가져옵니다.

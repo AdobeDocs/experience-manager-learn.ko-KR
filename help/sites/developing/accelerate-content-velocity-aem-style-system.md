@@ -93,4 +93,4 @@ AEM 스타일 시스템에는 다음과 같은 네 가지 주요 이점이 있�
 
 자세한 내용은 Will Brisbane 및 Joseph Van Buskirk와 함께 [고객 성공 웹 세미나](https://adobecustomersuccess.adobeconnect.com/pob610c9mffjmp4/)를 확인하십시오.
 
-[고객 성공](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html) 허브에서 전략 및 사고 리더십에 대해 자세히 알아보세요.
+[고객 성공](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html?lang=ko) 허브에서 전략 및 사고 리더십에 대해 자세히 알아보세요.

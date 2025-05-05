@@ -35,7 +35,7 @@ Adobe Experience Manager 또는 AEM용 개발 시 로컬 개발 환경을 설정
 
 로컬 AEM 인스턴스를 참조할 때 개발자의 개인 컴퓨터에서 실행되는 Adobe Experience Manager 사본에 대해 이야기하고 있습니다. ***모두*** AEM 개발은 로컬 AEM 인스턴스에 대해 코드를 작성하고 실행하는 것부터 시작해야 합니다.
 
-AEM을 처음 사용하는 경우 두 가지 기본 실행 모드를 설치할 수 있습니다. ***작성자*** 및 ***게시***. ***작성자*** [실행 모드](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configure-runmodes.html?lang=en)는 디지털 마케터가 콘텐츠를 만들고 관리하는 데 사용하는 환경입니다. 대부분의 경우 개발하면 작성자 인스턴스에 코드를 배포하게 됩니다. 페이지를 만들고 구성 요소를 추가 및 구성할 수 있습니다. AEM Sites은 WYSIWYG 제작 CMS이므로 작성 인스턴스에 대해 CSS와 JavaScript의 대부분을 테스트할 수 있습니다.
+AEM을 처음 사용하는 경우 두 가지 기본 실행 모드를 설치할 수 있습니다. ***작성자*** 및 ***게시***. ***작성자*** [실행 모드](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configure-runmodes.html?lang=ko)는 디지털 마케터가 콘텐츠를 만들고 관리하는 데 사용하는 환경입니다. 대부분의 경우 개발하면 작성자 인스턴스에 코드를 배포하게 됩니다. 페이지를 만들고 구성 요소를 추가 및 구성할 수 있습니다. AEM Sites은 WYSIWYG 제작 CMS이므로 작성 인스턴스에 대해 CSS와 JavaScript의 대부분을 테스트할 수 있습니다.
 
 또한 로컬 ***Publish*** 인스턴스에 대해 *중요* 테스트 코드입니다. ***Publish*** 인스턴스는 웹 사이트 방문자가 상호 작용하는 AEM 환경입니다. ***Publish*** 인스턴스는 ***작성자*** 인스턴스와 동일한 기술 스택이지만 일부 주요 구성 및 사용 권한 구분이 있습니다. 더 높은 수준의 환경으로 승격하기 전에 로컬 ***Publish*** 인스턴스에 대해 코드를 테스트해야 합니다.
 
@@ -44,7 +44,7 @@ AEM을 처음 사용하는 경우 두 가지 기본 실행 모드를 설치할 �
 1. Java™이 설치되어 있는지 확인합니다.
    * AEM 6.5+용 [Java™ JDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atoling&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14) 기본 설정
    * AEM 6.5 이전 AEM 버전용 [Java™ JDK 8](https://www.oracle.com/java/technologies/downloads/)
-1. [AEM QuickStart Jar 및  [!DNL license.properties]](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html)의 복사본을 가져옵니다.
+1. [AEM QuickStart Jar 및  [!DNL license.properties]](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=ko)의 복사본을 가져옵니다.
 1. 다음과 같이 컴퓨터에 폴더 구조를 만듭니다.
 
 ```plain
@@ -83,7 +83,7 @@ JAR 파일을 두 번 클릭할 수 있는 또 다른 방법은 명령줄에서 
 $ java -Xmx2048M -Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=30303 -jar aem-author-p4502.jar -gui -r"author,localdev"
 ```
 
-여기서 `-X`은(는) JVM 옵션이고 `-D`은(는) 추가 프레임워크 속성입니다. 자세한 내용은 [AEM 인스턴스 배포 및 유지 관리](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html) 및 [빠른 시작 파일에서 사용할 수 있는 추가 옵션](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/custom-standalone-install.html#further-options-available-from-the-quickstart-file)을 참조하십시오.
+여기서 `-X`은(는) JVM 옵션이고 `-D`은(는) 추가 프레임워크 속성입니다. 자세한 내용은 [AEM 인스턴스 배포 및 유지 관리](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=ko) 및 [빠른 시작 파일에서 사용할 수 있는 추가 옵션](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/custom-standalone-install.html?lang=ko#further-options-available-from-the-quickstart-file)을 참조하십시오.
 
 ## Apache Maven 설치
 
@@ -137,12 +137,12 @@ IDE를 사용하는 경우 Maven 프로필 탭에서 `classic`을(를) 확인하
 
 ### [!DNL Eclipse] IDE
 
-**[[!DNL Eclipse] IDE](https://www.eclipse.org/ide/)**&#x200B;은(는) 대부분 오픈 소스이고 ***무료***&#x200B;이기 때문에 Java™ 개발용으로 더 많이 사용되는 IDE 중 하나입니다. Adobe에서는 코드를 로컬 AEM 인스턴스와 동기화하는 유용한 GUI를 사용하여 보다 쉽게 개발할 수 있도록 [!DNL Eclipse]에 대해 **[[!DNL AEM Developer Tools]](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html)** 플러그인을 제공합니다. [!DNL AEM Developer Tools]의 GUI 지원 때문에 AEM을 처음 사용하는 개발자에게 [!DNL Eclipse] IDE를 사용하는 것이 좋습니다.
+**[[!DNL Eclipse] IDE](https://www.eclipse.org/ide/)**&#x200B;은(는) 대부분 오픈 소스이고 ***무료***&#x200B;이기 때문에 Java™ 개발용으로 더 많이 사용되는 IDE 중 하나입니다. Adobe에서는 코드를 로컬 AEM 인스턴스와 동기화하는 유용한 GUI를 사용하여 보다 쉽게 개발할 수 있도록 [!DNL Eclipse]에 대해 **[[!DNL AEM Developer Tools]](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html?lang=ko)** 플러그인을 제공합니다. [!DNL AEM Developer Tools]의 GUI 지원 때문에 AEM을 처음 사용하는 개발자에게 [!DNL Eclipse] IDE를 사용하는 것이 좋습니다.
 
 #### 설치 및 설정
 
 1. [!DNL Java™ EE Developers]에 대한 [!DNL Eclipse] IDE를 다운로드하여 설치하십시오. [https://www.eclipse.org](https://www.eclipse.org/)
-1. 다음 지침에 따라 [!DNL AEM Developer Tools] 플러그인을 설치하십시오. [https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html)
+1. 다음 지침에 따라 [!DNL AEM Developer Tools] 플러그인을 설치하십시오. [https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html?lang=ko](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html?lang=ko)
 
 >[!VIDEO](https://video.tv.adobe.com/v/25906?quality=12&learn=on)
 
@@ -192,7 +192,7 @@ IDE를 사용하는 경우 Maven 프로필 탭에서 `classic`을(를) 확인하
 
 ### [!DNL CRXDE Lite]
 
-[CRXDE Lite](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/developing-with-crxde-lite.html)은(는) AEM 저장소의 브라우저 기반 보기입니다. [!DNL CRXDE Lite]은(는) AEM에 포함되어 있으며 개발자가 파일 편집, 구성 요소 정의, 대화 상자 및 템플릿과 같은 표준 개발 작업을 수행할 수 있도록 해 줍니다. [!DNL CRXDE Lite]은(는) 전체 개발 환경을 위한 ***not***&#x200B;이지만 디버깅 도구로 유효합니다. [!DNL CRXDE Lite]은(는) 코드 베이스 외부의 제품 코드를 확장하거나 이해할 때 유용합니다. [!DNL CRXDE Lite]은(는) 리포지토리의 강력한 보기와 권한을 효과적으로 테스트 및 관리할 수 있는 방법을 제공합니다.
+[CRXDE Lite](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/developing-with-crxde-lite.html?lang=ko)은(는) AEM 저장소의 브라우저 기반 보기입니다. [!DNL CRXDE Lite]은(는) AEM에 포함되어 있으며 개발자가 파일 편집, 구성 요소 정의, 대화 상자 및 템플릿과 같은 표준 개발 작업을 수행할 수 있도록 해 줍니다. [!DNL CRXDE Lite]은(는) 전체 개발 환경을 위한 ***not***&#x200B;이지만 디버깅 도구로 유효합니다. [!DNL CRXDE Lite]은(는) 코드 베이스 외부의 제품 코드를 확장하거나 이해할 때 유용합니다. [!DNL CRXDE Lite]은(는) 리포지토리의 강력한 보기와 권한을 효과적으로 테스트 및 관리할 수 있는 방법을 제공합니다.
 
 [!DNL CRXDE Lite]은(는) 다른 IDE와 함께 사용하여 코드를 테스트하고 디버깅해야 하지만 기본 개발 도구로는 사용할 수 없습니다. 구문 지원이 제한적이고 자동 완성 기능이 없으며 소스 제어 관리 시스템과의 통합이 제한적입니다.
 

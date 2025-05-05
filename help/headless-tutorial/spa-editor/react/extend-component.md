@@ -174,7 +174,7 @@ AEM SPA 편집기에서 사용할 기존 핵심 구성 요소를 확장하는 �
 
 ## 대화 상자 확장 {#extend-dialog}
 
-`Banner` 구성 요소에서 `bannerText`을(를) 캡처하려면 대화 상자에 추가 텍스트 필드가 필요합니다. Sling 상속을 사용하고 있으므로 [Sling 리소스 병합](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/sling-resource-merger.html)의 기능을 사용하여 대화 상자의 일부를 재정의하거나 확장할 수 있습니다. 이 샘플에서는 작성자의 추가 데이터를 캡처하여 카드 구성 요소를 채우기 위한 새 탭이 대화 상자에 추가되었습니다.
+`Banner` 구성 요소에서 `bannerText`을(를) 캡처하려면 대화 상자에 추가 텍스트 필드가 필요합니다. Sling 상속을 사용하고 있으므로 [Sling 리소스 병합](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/sling-resource-merger.html?lang=ko)의 기능을 사용하여 대화 상자의 일부를 재정의하거나 확장할 수 있습니다. 이 샘플에서는 작성자의 추가 데이터를 캡처하여 카드 구성 요소를 채우기 위한 새 탭이 대화 상자에 추가되었습니다.
 
 1. `banner` 폴더 아래의 `ui.apps` 모듈에서 `_cq_dialog` 폴더를 만듭니다.
 1. `_cq_dialog` 아래에 대화 상자 정의 파일 `.content.xml`을(를) 만듭니다. 다음을 사용하여 채웁니다.

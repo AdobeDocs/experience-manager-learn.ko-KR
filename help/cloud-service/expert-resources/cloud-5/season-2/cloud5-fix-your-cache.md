@@ -24,7 +24,7 @@ ht-degree: 4%
 
 ## 이 비디오에서 다루는 콘텐츠
 
-+ [캐싱 및 콘텐츠 배달](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html)
++ [캐싱 및 콘텐츠 배달](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=ko)
 + [Google 등대](https://developers.google.com/web/tools/lighthouse)
 
 ## 추가 리소스

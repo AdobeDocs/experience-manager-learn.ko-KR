@@ -169,7 +169,7 @@ RDE 상태 정보는 환경 상태, 작성자 및 게시 서비스의 _AEM 프�
 
 ## 추가 리소스
 
-[프로그램 설명서에서 RDE 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html#enabling-rde-in-a-program)
+[프로그램 설명서에서 RDE 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html?lang=ko#enabling-rde-in-a-program)
 
 `aio CLI`이라고도 하는 [Adobe I/O Runtime 확장 가능 CLI](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) 설정
 

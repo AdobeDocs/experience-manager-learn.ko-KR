@@ -28,7 +28,7 @@ AEM 콘텐츠 조각 모델은 AEM 작성자가 원시 콘텐츠 생성을 템�
 
 ## 콘텐츠 조각 모델 활성화
 
-콘텐츠 조각 모델 **은(는)**&#x200B;[ AEM의 [!UICONTROL 구성 브라우저]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html)**을(를) 통해 활성화해야 합니다**.
+콘텐츠 조각 모델 **은(는)**&#x200B;[ AEM의 [!UICONTROL 구성 브라우저]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html?lang=ko)**을(를) 통해 활성화해야 합니다**.
 
 구성에 대해 콘텐츠 조각 모델이 **활성화되지 않음**&#x200B;인 경우 관련 AEM 구성에 대해 **[!UICONTROL 만들기] > [!UICONTROL 콘텐츠 조각]** 단추가 표시되지 않습니다.
 
@@ -40,7 +40,7 @@ AEM 콘텐츠 조각 모델은 AEM 작성자가 원시 콘텐츠 생성을 템�
 >
 >`global` 구성을 사용하면 구성이 모든 콘텐츠에 적용되며 `cq:conf`을(를) 설정할 필요가 없습니다.
 >
->자세한 내용은 [[!UICONTROL 구성 브라우저] 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html)를 참조하세요.
+>자세한 내용은 [[!UICONTROL 구성 브라우저] 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html?lang=ko)를 참조하세요.
 
 1. 관련 구성을 수정할 수 있는 적절한 권한이 있는 사용자로 AEM Author에 로그인합니다.
    * 이 자습서에서는 **admin** 사용자를 사용할 수 있습니다.

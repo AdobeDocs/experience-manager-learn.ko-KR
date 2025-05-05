@@ -22,7 +22,7 @@ ht-degree: 2%
 
 AEM as a Cloud Service은 AEM as a Cloud Service 프로그램과의 연결을 정밀하게 관리할 수 있는 고급 네트워킹 기능을 제공합니다.
 
-|                                                   | [프로덕션 프로그램](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs.html) | [샌드박스 프로그램](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html) |
+|                                                   | [프로덕션 프로그램](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs.html?lang=ko) | [샌드박스 프로그램](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html?lang=ko) |
 |---------------------------------------------------|:-----------------------:|:---------------------:|
 | 고급 네트워킹 지원 | ✔ | ✘ |
 
@@ -37,7 +37,7 @@ AEM의 고급 네트워킹은 외부 서비스와의 연결을 관리하는 세 
 | [__가상 개인 네트워크__](./vpn.md) | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 
 
-적절한 고급 네트워킹 유형을 선택할 때 고려할 사항에 대한 자세한 내용은 [고급 네트워킹 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html)를 참조하십시오.
+적절한 고급 네트워킹 유형을 선택할 때 고려할 사항에 대한 자세한 내용은 [고급 네트워킹 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html?lang=ko)를 참조하십시오.
 
 ## 고급 네트워킹 자습서
 
@@ -106,15 +106,15 @@ AEM의 고급 네트워킹은 외부 서비스와의 연결을 관리하는 세 
       </p>
     </td>   
     <td>
-      <a  href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list.html"><img alt="IP 허용 목록 적용" src="./assets/code_examples__vpn-allow-list.png"/></a>
-      <div><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list.html">IP 허용 목록 적용</a></strong></div>
+      <a  href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list.html?lang=ko"><img alt="IP 허용 목록 적용" src="./assets/code_examples__vpn-allow-list.png"/></a>
+      <div><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list.html?lang=ko">IP 허용 목록 적용</a></strong></div>
       <p>
             허용 목록에 추가하다 VPN 트래픽만 AEM에 액세스할 수 있도록 IP 트래픽만 구성합니다.
       </p>
     </td>
    <td>
-      <a  href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#restrict-vpn-to-ingress-connections"><img alt="AEM 게시에 대한 경로 기반 VPN 액세스 제한" src="./assets/code_examples__vpn-path-allow-list.png"/></a>
-      <div><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#restrict-vpn-to-ingress-connections">AEM 게시에 대한 경로 기반 VPN 액세스 제한</a></strong></div>
+      <a  href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html?lang=ko#restrict-vpn-to-ingress-connections"><img alt="AEM 게시에 대한 경로 기반 VPN 액세스 제한" src="./assets/code_examples__vpn-path-allow-list.png"/></a>
+      <div><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html?lang=ko#restrict-vpn-to-ingress-connections">AEM 게시에 대한 경로 기반 VPN 액세스 제한</a></strong></div>
       <p>
             AEM 게시의 특정 경로에 대한 VPN 액세스 권한이 필요합니다.
       </p>

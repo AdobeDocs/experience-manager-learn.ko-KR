@@ -27,7 +27,7 @@ AEM as a Cloud Service의 일괄 가져오기 도구를 사용하면 관리자�
 
 >[!TAB 자산 보기]
 
-명확하고 따라하기 쉬운 통합 프로세스를 위한 예제 클라우드 스토리지 공급자 역할을 하는 AEM Assets을 사용하여 [자산 보기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/assets-view/assets-view-introduction.html) [일괄 가져오기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view.html)를 사용하여 여러 파일을 Dropbox으로 가져오는 방법에 대해 알아봅니다.
+명확하고 따라하기 쉬운 통합 프로세스를 위한 예제 클라우드 스토리지 공급자 역할을 하는 AEM Assets을 사용하여 [자산 보기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/assets-view/assets-view-introduction.html?lang=ko) [일괄 가져오기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view.html?lang=ko)를 사용하여 여러 파일을 Dropbox으로 가져오는 방법에 대해 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3426857/?learn=on)
 
@@ -37,7 +37,7 @@ AEM as a Cloud Service의 일괄 가져오기 도구를 사용하면 관리자�
 
 >[!TIP]
 >
-> 이 비디오의 입력 소스에는 Azure Blob Storage 및 Amazon S3만 표시되지만 사용 가능한 소스는 시간이 지남에 따라 계속 증가합니다. 지원되는 입력 소스의 전체 목록에 대해서는 제품에서 사용 가능한 옵션 또는 [설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html#bulk-upload)를 참조하십시오.
+> 이 비디오의 입력 소스에는 Azure Blob Storage 및 Amazon S3만 표시되지만 사용 가능한 소스는 시간이 지남에 따라 계속 증가합니다. 지원되는 입력 소스의 전체 목록에 대해서는 제품에서 사용 가능한 옵션 또는 [설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=ko#bulk-upload)를 참조하십시오.
 
 ## 일괄 가져오기 예약
 

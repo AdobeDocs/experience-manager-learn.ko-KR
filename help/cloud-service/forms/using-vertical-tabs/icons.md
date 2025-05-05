@@ -32,7 +32,7 @@ ht-degree: 0%
 
 ## 사전 요구 사항
 
-이 문서를 팔로우하려면 Git, cloud manager를 사용하여 AEM 프로젝트 생성 및 배포, AEM cloud manager에서의 프론트엔드 파이프라인 설정 및 약간의 CSS에 익숙해야 합니다. 위에서 언급한 주제에 익숙하지 않은 경우 [테마를 사용하여 핵심 구성 요소 스타일링](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components#rename-env-file-theme-folder) 문서를 팔로우하십시오.
+이 문서를 팔로우하려면 Git, cloud manager를 사용하여 AEM 프로젝트 생성 및 배포, AEM cloud manager에서의 프론트엔드 파이프라인 설정 및 약간의 CSS에 익숙해야 합니다. 위에서 언급한 주제에 익숙하지 않은 경우 [테마를 사용하여 핵심 구성 요소 스타일링](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components#rename-env-file-theme-folder) 문서를 팔로우하십시오.
 
 ## 테마에 아이콘 추가
 

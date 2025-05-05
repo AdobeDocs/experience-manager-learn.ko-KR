@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # 모범 사례
 
-Adobe Experience Manager(AEM) forms를 사용하면 복잡한 트랜잭션을 단순하고 즐거운 디지털 경험으로 변환할 수 있습니다. 다음 문서에서는 적응형 Forms을 개발할 때 따라야 할 몇 가지 추가 모범 사례에 대해 설명합니다. 이 문서는 [이 문서](https://helpx.adobe.com/experience-manager/6-3/forms/using/adaptive-forms-best-practices.html#Overview)와 함께 사용됩니다.
+Adobe Experience Manager(AEM) forms를 사용하면 복잡한 트랜잭션을 단순하고 즐거운 디지털 경험으로 변환할 수 있습니다. 다음 문서에서는 적응형 Forms을 개발할 때 따라야 할 몇 가지 추가 모범 사례에 대해 설명합니다. 이 문서는 [이 문서](https://helpx.adobe.com/kr/experience-manager/6-3/forms/using/adaptive-forms-best-practices.html#Overview)와 함께 사용됩니다.
 
 ## 이름 지정 규칙
 

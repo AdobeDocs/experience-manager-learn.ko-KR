@@ -45,17 +45,17 @@ WKND 마케팅 팀이 홈 페이지에서 성과가 가장 좋은 `Call to Actio
 ### 목표 {#objective}
 
 1. 보고서 세트를 만들거나 기존 보고서 세트를 사용합니다.
-1. 보고서 세트에서 [전환 변수(eVars)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/conversion-var-admin.html) 및 [성공 이벤트(이벤트)](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-event)를 구성합니다.
-1. 인사이트를 빠르게 구축, 분석 및 공유할 수 있는 도구를 사용하여 데이터를 분석할 [Analysis Workspace 프로젝트](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html)를 만드십시오.
+1. 보고서 세트에서 [전환 변수(eVars)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/conversion-var-admin.html?lang=ko) 및 [성공 이벤트(이벤트)](https://experienceleague.adobe.com/ko/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-event)를 구성합니다.
+1. 인사이트를 빠르게 구축, 분석 및 공유할 수 있는 도구를 사용하여 데이터를 분석할 [Analysis Workspace 프로젝트](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=ko)를 만드십시오.
 1. 다른 팀 구성원과 Analysis Workspace 프로젝트를 공유합니다.
 
 ## 사전 요구 사항
 
 이 자습서는 [클릭한 구성 요소를 Adobe Analytics](./track-clicked-component.md)에서 추적하고 다음과 같은 내용이 있다고 가정합니다.
 
-* [Adobe Analytics 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html)이 활성화된 **태그 속성**
-* **Adobe Analytics** 테스트/개발 보고서 세트 ID 및 추적 서버. [보고서 세트 만들기](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html)에 대한 다음 설명서를 참조하세요.
-* [Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) 브라우저 확장이 [WKND 사이트](https://wknd.site/us/en.html) 또는 Adobe 데이터 레이어가 활성화된 AEM 사이트에 로드된 태그 속성으로 구성되었습니다.
+* [Adobe Analytics 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html?lang=ko)이 활성화된 **태그 속성**
+* **Adobe Analytics** 테스트/개발 보고서 세트 ID 및 추적 서버. [보고서 세트 만들기](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html?lang=ko)에 대한 다음 설명서를 참조하세요.
+* [Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html?lang=ko) 브라우저 확장이 [WKND 사이트](https://wknd.site/us/en.html) 또는 Adobe 데이터 레이어가 활성화된 AEM 사이트에 로드된 태그 속성으로 구성되었습니다.
 
 ## 전환 변수 (eVar) 및 성공 이벤트 (이벤트)
 
@@ -116,19 +116,19 @@ eVar는 다음과 같이 원인과 영향을 측정하는 데 가장 잘 사용�
 
 Analysis Workspace은 분석을 빌드하고 통찰력을 빠르게 공유할 수 있는 유연한 브라우저 도구입니다. 드래그 앤 드롭 인터페이스를 사용하여 분석을 작성하고, 시각화를 추가하여 데이터를 생동감 있게 표현하고, 데이터 세트를 큐레이션하고, 조직 내 누구와도 프로젝트를 공유 및 예약할 수 있습니다.
 
-그런 다음 [프로젝트](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/freeform-overview.html#analysis-workspace)를 만들어 사이트 전체의 CTA 단추 성능을 분석하는 대시보드를 만듭니다.
+그런 다음 [프로젝트](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/freeform-overview.html?lang=ko#analysis-workspace)를 만들어 사이트 전체의 CTA 단추 성능을 분석하는 대시보드를 만듭니다.
 
 1. Analytics 도구 모음에서 **Workspace**&#x200B;을(를) 선택하고 **새 프로젝트 만들기**&#x200B;를 클릭합니다.
 
    ![Workspace](assets/create-analytics-workspace/create-workspace.png)
 
-1. **빈 프로젝트**&#x200B;에서 시작하도록 선택하거나 Adobe에서 제공하는 미리 빌드된 템플릿 또는 조직에서 만든 사용자 지정 템플릿 중 하나를 선택합니다. 분석 또는 염두에 둔 사용 사례에 따라 여러 템플릿을 사용할 수 있습니다. 사용 가능한 다양한 템플릿 옵션에 대해 [자세히 알아보기](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html).
+1. **빈 프로젝트**&#x200B;에서 시작하도록 선택하거나 Adobe에서 제공하는 미리 빌드된 템플릿 또는 조직에서 만든 사용자 지정 템플릿 중 하나를 선택합니다. 분석 또는 염두에 둔 사용 사례에 따라 여러 템플릿을 사용할 수 있습니다. 사용 가능한 다양한 템플릿 옵션에 대해 [자세히 알아보기](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html?lang=ko).
 
    Workspace 프로젝트에서 패널, 테이블, 시각화 및 구성 요소는 왼쪽 레일에서 액세스됩니다. 프로젝트의 빌딩 블록을 구성합니다.
 
-   * **[구성 요소](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/analysis-workspace-components.html)** - 구성 요소는 차원, 지표, 세그먼트 또는 날짜 범위입니다. 모두 비즈니스 질문에 답변하기 위해 자유 형식 테이블에서 결합할 수 있습니다. 분석하기 전에 각 구성 요소 유형을 숙지하십시오. 구성 요소 용어를 숙지하면 드래그 앤 드롭을 시작하여 자유 형식 테이블에서 분석을 빌드할 수 있습니다.
-   * **[시각화](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html)** - 막대 또는 선 차트와 같은 시각화가 데이터 위에 추가되어 시각적으로 생동감 있게 표현됩니다. 맨 왼쪽 레일에서 가운데 시각화 아이콘을 선택하여 시각화의 전체 목록을 확인합니다.
-   * **[패널](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html)** - 패널은 테이블 및 시각화의 컬렉션입니다. Workspace의 왼쪽 상단 아이콘에서 패널에 액세스할 수 있습니다. 패널은 기간, 보고서 세트 또는 분석 사용 사례에 따라 프로젝트를 구성하려는 경우 유용합니다. Analysis Workspace에서는 다음 패널 유형을 사용할 수 있습니다.
+   * **[구성 요소](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/analysis-workspace-components.html?lang=ko)** - 구성 요소는 차원, 지표, 세그먼트 또는 날짜 범위입니다. 모두 비즈니스 질문에 답변하기 위해 자유 형식 테이블에서 결합할 수 있습니다. 분석하기 전에 각 구성 요소 유형을 숙지하십시오. 구성 요소 용어를 숙지하면 드래그 앤 드롭을 시작하여 자유 형식 테이블에서 분석을 빌드할 수 있습니다.
+   * **[시각화](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html?lang=ko)** - 막대 또는 선 차트와 같은 시각화가 데이터 위에 추가되어 시각적으로 생동감 있게 표현됩니다. 맨 왼쪽 레일에서 가운데 시각화 아이콘을 선택하여 시각화의 전체 목록을 확인합니다.
+   * **[패널](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=ko)** - 패널은 테이블 및 시각화의 컬렉션입니다. Workspace의 왼쪽 상단 아이콘에서 패널에 액세스할 수 있습니다. 패널은 기간, 보고서 세트 또는 분석 사용 사례에 따라 프로젝트를 구성하려는 경우 유용합니다. Analysis Workspace에서는 다음 패널 유형을 사용할 수 있습니다.
 
    ![템플릿 선택](assets/create-analytics-workspace/workspace-tools.png)
 
@@ -170,7 +170,7 @@ Analysis Workspace은 분석을 빌드하고 통찰력을 빠르게 공유할 �
 
    ![eVar8](assets/create-analytics-workspace/evar8-metric.png)
 
-1. Adobe Analytics 분류를 사용하여 버튼 ID 값을 보다 친숙한 이름으로 바꿀 수 있습니다. 특정 지표 [여기](https://experienceleague.adobe.com/docs/analytics/components/classifications/c-classifications.html)에 대한 분류를 만드는 방법에 대해 자세히 알아볼 수 있습니다. 이 경우 버튼 ID를 사용자에게 친숙한 이름에 매핑하는 `eVar8`에 대한 분류 지표 `Button Section (Button ID)` 설정이 있습니다.
+1. Adobe Analytics 분류를 사용하여 버튼 ID 값을 보다 친숙한 이름으로 바꿀 수 있습니다. 특정 지표 [여기](https://experienceleague.adobe.com/docs/analytics/components/classifications/c-classifications.html?lang=ko)에 대한 분류를 만드는 방법에 대해 자세히 알아볼 수 있습니다. 이 경우 버튼 ID를 사용자에게 친숙한 이름에 매핑하는 `eVar8`에 대한 분류 지표 `Button Section (Button ID)` 설정이 있습니다.
 
    ![단추 섹션](assets/create-analytics-workspace/button-section.png)
 

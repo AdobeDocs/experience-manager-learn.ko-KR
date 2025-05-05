@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # 두 가지 접근 방식을 테스트하는 데 필요한 단계
 
-* AEM Forms 서버에서 전자 메일을 보내도록 [일 CQ 메일 서비스](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=en#configuring-the-mail-service) 구성
+* AEM Forms 서버에서 전자 메일을 보내도록 [일 CQ 메일 서비스](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=ko#configuring-the-mail-service) 구성
 * [felix 웹 콘솔](http://localhost:4502/system/console/bundles)을 사용하여 [formattachments](assets/formattachments.formattachments.core-1.0-SNAPSHOT.jar) 번들 배포
 
 ## zip 파일을 이메일 첨부 파일로 보내기

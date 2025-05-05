@@ -30,7 +30,7 @@ ht-degree: 2%
       * [Adobe Developer Console](https://developer.adobe.com/console/)
 
      >[!NOTE]
-     >데이터 수집에서 개발, 승인, Publish, 확장 관리 및 환경 관리 권한이 있어야 합니다. 사용자 인터페이스 옵션을 사용할 수 없어서 이러한 단계를 완료할 수 없는 경우 Experience Cloud 관리자에게 연락하여 액세스 권한을 요청하십시오. 태그 권한에 대한 자세한 내용은 [설명서를 참조](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html)하십시오.
+     >데이터 수집에서 개발, 승인, Publish, 확장 관리 및 환경 관리 권한이 있어야 합니다. 사용자 인터페이스 옵션을 사용할 수 없어서 이러한 단계를 완료할 수 없는 경우 Experience Cloud 관리자에게 연락하여 액세스 권한을 요청하십시오. 태그 권한에 대한 자세한 내용은 [설명서를 참조](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=ko)하십시오.
 
 * **Chrome 브라우저 확장**
    * Adobe Experience Cloud Debugger(https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
@@ -75,7 +75,7 @@ AEM은 태그와 즉시 통합됩니다. 이 통합을 통해 AEM 관리자는 �
 1. 올바른 조직에 속해 있는지 확인한 다음 태그 속성을 계속 만듭니다.
    ![Experience Cloud - 태그](assets/using-launch-adobe-io/launch-create-property.png)
 
-   *속성 만들기에 대한 자세한 내용은 제품 설명서에서 [속성 만들기](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=en#create-or-configure-a-property)를 참조하세요.*
+   *속성 만들기에 대한 자세한 내용은 제품 설명서에서 [속성 만들기](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=ko#create-or-configure-a-property)를 참조하세요.*
 1. **새 속성** 단추 클릭
 1. 속성의 이름을 지정하십시오(예: *AEM Target 자습서*).
 1. WKND 데모 사이트가 실행되고 있는 도메인이므로 도메인으로는 *localhost.com*&#x200B;을(를) 입력하십시오. &#39;*도메인*&#39; 필드는 필수이지만 태그 속성은 구현된 모든 도메인에서 작동합니다. 이 필드의 기본 목적은 규칙 빌더에서 메뉴 옵션을 미리 채우는 것입니다.
@@ -87,7 +87,7 @@ AEM은 태그와 즉시 통합됩니다. 이 통합을 통해 AEM 관리자는 �
 
 #### Target 확장 추가
 
-Adobe Target 확장은 최신 웹 `at.js`에 Target JavaScript SDK를 사용하여 클라이언트측 구현을 지원합니다. 여전히 Target 이전 라이브러리인 `mbox.js`, [을(를) 사용하는 고객은 태그를 사용하려면 at.js로 업그레이드](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/upgrading-from-atjs-1x-to-atjs-20.html)해야 합니다.
+Adobe Target 확장은 최신 웹 `at.js`에 Target JavaScript SDK를 사용하여 클라이언트측 구현을 지원합니다. 여전히 Target 이전 라이브러리인 `mbox.js`, [을(를) 사용하는 고객은 태그를 사용하려면 at.js로 업그레이드](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/upgrading-from-atjs-1x-to-atjs-20.html?lang=ko)해야 합니다.
 
 Target 확장은 다음 두 가지 주요 부분으로 구성됩니다.
 
@@ -137,7 +137,7 @@ Target 확장은 다음 두 가지 주요 부분으로 구성됩니다.
 
 >[!NOTE]
 >
-> Adobe Developer 통합에 적절한 [역할이 있는 작업 영역을 선택할 수 있는 액세스 권한을 부여하여 중앙 팀이 일부 작업 영역에서만 API 기반 변경을 수행할 수 있도록 합니다](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/configure-adobe-io-integration.html).
+> Adobe Developer 통합에 적절한 [역할이 있는 작업 영역을 선택할 수 있는 액세스 권한을 부여하여 중앙 팀이 일부 작업 영역에서만 API 기반 변경을 수행할 수 있도록 합니다](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/configure-adobe-io-integration.html?lang=ko).
 
 1. Adobe Developer의 자격 증명을 사용하여 AEM에서 IMS 통합을 만듭니다. (01:12~03:55)
 2. 데이터 수집에서 속성을 만듭니다. ([위](#create-launch-property)에서 적용)

@@ -55,7 +55,7 @@ Adobe Asset Link는 Adobe Asset Link와 AEM 간의 InDesign 직접 연결 지원
 
 >[!NOTE]
 >
->Adobe Creative Cloud Enterprise ID 또는 Federated ID만 사용하십시오. [Adobe Asset Link용 AEM을 구성](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html)했는지 확인하십시오.
+>Adobe Creative Cloud Enterprise ID 또는 Federated ID만 사용하십시오. [Adobe Asset Link용 AEM을 구성](https://helpx.adobe.com/kr/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html)했는지 확인하십시오.
 
 아래 옵션 중 하나를 사용하여 InDesign 레이아웃에 자산을 배치할 수 있습니다.
 

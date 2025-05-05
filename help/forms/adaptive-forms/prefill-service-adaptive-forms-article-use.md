@@ -20,7 +20,7 @@ ht-degree: 0%
 
 기존 데이터를 사용하여 적응형 양식의 필드를 미리 채울 수 있습니다. 사용자가 양식을 열면 해당 필드의 값이 미리 채워집니다. 적응형 양식 필드를 미리 채우는 방법에는 여러 가지가 있습니다. 이 문서에서는 AEM Forms 미리 채우기 서비스를 사용하는 적응형 양식 미리 채우기에 대해 살펴봅니다.
 
-적응형 양식을 미리 채우는 다양한 방법에 대해 자세히 알아보려면 [이 설명서를 따르십시오](https://helpx.adobe.com/experience-manager/6-4/forms/using/prepopulate-adaptive-form-fields.html#AEMFormsprefillservice)
+적응형 양식을 미리 채우는 다양한 방법에 대해 자세히 알아보려면 [이 설명서를 따르십시오](https://helpx.adobe.com/kr/experience-manager/6-4/forms/using/prepopulate-adaptive-form-fields.html#AEMFormsprefillservice)
 
 미리 채우기 서비스를 사용하여 적응형 양식을 미리 채우려면 `com.adobe.forms.common.service.DataXMLProvider` 인터페이스를 구현하는 클래스를 만들어야 합니다. `getDataXMLForDataRef` 메서드에는 적응형 양식에서 필드를 미리 채우는 데 사용할 데이터를 빌드하고 반환하는 논리가 있습니다. 이 메서드에서는 모든 소스에서 데이터를 가져오고 데이터 문서의 입력 스트림을 반환할 수 있습니다. 다음 샘플 코드는 로그인한 사용자의 사용자 프로필 정보를 가져오고 입력 스트림이 적응형 양식에서 사용하도록 반환되는 XML 문서를 구성합니다.
 

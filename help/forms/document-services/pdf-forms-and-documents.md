@@ -61,7 +61,7 @@ XFA Forms은 XML을 기반으로 합니다. 이렇게 잘 구조화되고 유연
 * 동적 양식은 양식의 레이아웃과 페이지 매김을 변경하는 클라이언트측 스크립트를 지원합니다. 예를 들어 Purchase Order.xdp는 동적 양식으로 저장하는 경우 무제한 양의 데이터를 수용하도록 확장되고 페이지가 지정됩니다
 * 동적 양식은 런타임 시 양식의 모든 속성을 지원하는 반면, 정적 양식은 하위 집합만 지원합니다
 
-* [정적 및 동적 PDF 양식의 차이점을 이해하려면 이 문서를 참조하세요](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents.html#:~:text=Dynamic%20forms%20support%20all%20the,forms%20support%20only%20a%20subset)
+* [정적 및 동적 PDF 양식의 차이점을 이해하려면 이 문서를 참조하세요](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents.html?lang=ko#:~:text=Dynamic%20forms%20support%20all%20the,forms%20support%20only%20a%20subset)
 
 >[!NOTE]
 >

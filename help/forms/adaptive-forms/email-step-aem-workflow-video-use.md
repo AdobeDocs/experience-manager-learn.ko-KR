@@ -43,7 +43,7 @@ ht-degree: 0%
 1. [Developingwithserviceuser 번들 배포](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
 1. [setvalue 번들 다운로드 및 설치](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)이 번들에는 워크플로의 프로세스 단계의 일부로 메타데이터 속성을 만드는 코드가 포함되어 있습니다.
-1. [일별 CQ 메일 서비스 구성](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/notification.html)
+1. [일별 CQ 메일 서비스 구성](https://helpx.adobe.com/kr/experience-manager/6-5/sites/administering/using/notification.html)
 1. [패키지 관리자를 사용하여 이 문서와 연결된 에셋을 CRX으로 가져오고 설치합니다](assets/emaildoraemformskt.zip)
 1. [적응형 양식](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)을 시작합니다. 필수 필드를 입력한 다음 제출합니다.
 1. DocumentOfRecord가 첨부 파일로 포함된 이메일을 받아야 합니다.

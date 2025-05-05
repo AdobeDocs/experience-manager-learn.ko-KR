@@ -33,8 +33,8 @@ AEM 유니버설 편집기를 사용하여 React 앱의 콘텐츠를 편집하�
    - [Git](https://git-scm.com/downloads)
    - [Visual Studio Code](https://code.visualstudio.com/)와 같은 IDE 또는 코드 편집기
 - 다음을 다운로드하여 설치합니다.
-   - [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime#download-the-aem-as-a-cloud-service-sdk): 여기에는 개발 목적으로 로컬에서 AEM 작성자 및 게시를 실행하는 데 사용되는 Quickstart Jar가 포함되어 있습니다.
-   - [유니버설 편집기 서비스](https://experienceleague.adobe.com/en/docs/experience-cloud/software-distribution/home): 유니버설 편집기 서비스의 로컬 복사본으로, 기능의 하위 집합이 있으며 소프트웨어 배포 포털에서 다운로드할 수 있습니다.
+   - [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime#download-the-aem-as-a-cloud-service-sdk): 여기에는 개발 목적으로 로컬에서 AEM 작성자 및 게시를 실행하는 데 사용되는 Quickstart Jar가 포함되어 있습니다.
+   - [유니버설 편집기 서비스](https://experienceleague.adobe.com/ko/docs/experience-cloud/software-distribution/home): 유니버설 편집기 서비스의 로컬 복사본으로, 기능의 하위 집합이 있으며 소프트웨어 배포 포털에서 다운로드할 수 있습니다.
    - [local-ssl-proxy](https://www.npmjs.com/package/local-ssl-proxy#local-ssl-proxy): 로컬 개발을 위해 자체 서명된 인증서를 사용하는 간단한 로컬 SSL HTTP 프록시입니다. AEM Universal Editor를 편집기에서 로드하려면 React 앱의 HTTPS URL이 필요합니다.
 
 ## 로컬 설정

@@ -40,4 +40,4 @@ WKND SPA 구현은 AEM 6.4.8+, AEM 6.5.5+ 및 AEM as a Cloud Service에 대한 �
 
 SPA 편집기를 사용한 개발에 대한 자세한 튜토리얼은 다음을 참조하십시오.
 
-* [AEM SPA 편집기 및 반응 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
+* [AEM SPA 편집기 및 반응 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=ko)

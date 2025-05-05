@@ -19,6 +19,6 @@ ht-degree: 1%
 
 # 변경 가능한 콘텐츠 및 변경 불가능한 콘텐츠
 
-AEM as a Cloud에서 [변경 가능한 콘텐츠 및 변경 불가능한 콘텐츠](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)의 중요성과 차이점 및 개발 방식에 미치는 영향에 대해 알아봅니다.
+AEM as a Cloud에서 [변경 가능한 콘텐츠 및 변경 불가능한 콘텐츠](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=ko)의 중요성과 차이점 및 개발 방식에 미치는 영향에 대해 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330555?quality=12&learn=on)

@@ -83,7 +83,7 @@ AEM에서 쿼리를 해석하고 실행하는 방법에 대한 주요 통찰력�
 
 ![QueryBuilder 디버거](./assets/other-tools/query-debugger.png)
 
-QueryBuilder 디버거는 AEM의 [QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html) 구문을 사용하여 검색 쿼리를 디버깅하고 이해하는 데 도움이 되는 웹 기반 도구입니다.
+QueryBuilder 디버거는 AEM의 [QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html?lang=ko) 구문을 사용하여 검색 쿼리를 디버깅하고 이해하는 데 도움이 되는 웹 기반 도구입니다.
 
 QueryBuilder 디버거는 다음 위치에 있습니다.
 

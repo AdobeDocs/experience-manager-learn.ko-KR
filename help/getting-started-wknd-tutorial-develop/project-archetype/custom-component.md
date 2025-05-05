@@ -103,7 +103,7 @@ Byline 구성 요소의 구현에는 byline 콘텐츠를 수집하는 대화 상
        sling:resourceSuperType="core/wcm/components/image/v2/image"/>
    ```
 
-   위의 XML 파일은 제목, 설명 및 그룹을 포함하여 구성 요소에 대한 정의를 제공합니다. `sling:resourceSuperType`이(가) [핵심 이미지 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html)인 `core/wcm/components/image/v2/image`을(를) 가리킵니다.
+   위의 XML 파일은 제목, 설명 및 그룹을 포함하여 구성 요소에 대한 정의를 제공합니다. `sling:resourceSuperType`이(가) [핵심 이미지 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=ko)인 `core/wcm/components/image/v2/image`을(를) 가리킵니다.
 
 ### HTL 스크립트 만들기 {#create-the-htl-script}
 
@@ -358,7 +358,7 @@ Byline Sling 모델은 AEM에서 제공하는 여러 Java™ API를 사용합니
    </dependency>
    ```
 
-   [aem-sdk-api](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en)에는 AEM에 의해 노출된 모든 공개 Java™ API가 포함되어 있습니다. 이 프로젝트를 빌드할 때 기본적으로 `aem-sdk-api`이(가) 사용됩니다. 버전은 `aem-guides-wknd/pom.xml`에 있는 프로젝트의 루트에서 상위 반응기 pom에 유지됩니다.
+   [aem-sdk-api](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=ko)에는 AEM에 의해 노출된 모든 공개 Java™ API가 포함되어 있습니다. 이 프로젝트를 빌드할 때 기본적으로 `aem-sdk-api`이(가) 사용됩니다. 버전은 `aem-guides-wknd/pom.xml`에 있는 프로젝트의 루트에서 상위 반응기 pom에 유지됩니다.
 
 1. `uber-jar`에 대한 종속성 찾기 - **AEM 6.5/6.4 전용**
 
@@ -374,7 +374,7 @@ Byline Sling 모델은 AEM에서 제공하는 여러 Java™ API를 사용합니
 
    `uber-jar`은(는) `classic` 프로필을 호출할 때만 포함됩니다(예: `mvn clean install -PautoInstallSinglePackage -Pclassic`). 이는 이 프로젝트에 고유합니다. AEM Project Archetype에서 생성된 실제 프로젝트에서는 지정된 AEM 버전이 6.5 또는 6.4인 경우 `uber-jar`이(가) 기본값입니다.
 
-   [uber-jar](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html#experience-manager-api-dependencies)에는 AEM 6.x에서 노출된 모든 공개 Java™ API가 포함되어 있습니다. 버전은 프로젝트 `aem-guides-wknd/pom.xml`의 루트에서 상위 반응기 pom에 유지됩니다.
+   [uber-jar](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html?lang=ko#experience-manager-api-dependencies)에는 AEM 6.x에서 노출된 모든 공개 Java™ API가 포함되어 있습니다. 버전은 프로젝트 `aem-guides-wknd/pom.xml`의 루트에서 상위 반응기 pom에 유지됩니다.
 
 1. `core.wcm.components.core`에 대한 종속성을 찾습니다.
 

@@ -27,4 +27,4 @@ AEM 프로젝트에는 구현에 대한 모든 코드와 구성이 포함됩니�
 ## 추가 리소스 {#additional-resources}
 
 * [GitHub 프로젝트](https://github.com/adobe/aem-project-archetype)
-* [AEM Project Archetype 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+* [AEM Project Archetype 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko)

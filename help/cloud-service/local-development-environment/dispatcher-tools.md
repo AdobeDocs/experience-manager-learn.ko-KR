@@ -24,8 +24,8 @@ ht-degree: 4%
 >id="aemcloud_localdev_dispatcher"
 >title="로컬 Dispatcher 도구"
 >abstract="Dispatcher는 전체 Experience Manager 아키텍처의 필수적인 부분이며 로컬 개발 설정의 일부여야 합니다. AEM as a Cloud Service SDK에는 Dispatcher를 로컬에서 쉽게 구성, 유효성 검사 및 시뮬레이션할 수 있는 권장 Dispatcher 도구 버전이 포함되어 있습니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html" text="클라우드의 Dispatcher"
->additional-url="https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html" text="AEM as a Cloud Service SDK 다운로드"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html?lang=ko" text="클라우드의 Dispatcher"
+>additional-url="https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=ko" text="AEM as a Cloud Service SDK 다운로드"
 
 Adobe Experience Manager(AEM)의 Dispatcher은 CDN과 AEM Publish 계층 간에 보안 및 성능 계층을 제공하는 Apache HTTP 웹 서버 모듈입니다. Dispatcher은 전체 Experience Manager 아키텍처의 필수적인 부분이며 로컬 개발 설정의 일부여야 합니다.
 
@@ -115,7 +115,7 @@ Dispatcher 도구는 로컬 개발을 포함하여 모든 환경에 대한 동�
 
 ## 구성 유효성 검사
 
-선택적으로 `httpd -t`을(를) 통해 Dispatcher 및 Apache 웹 서버 구성을 `validate` 스크립트를 사용하여 확인할 수 있습니다(`validator` 실행 파일과 혼동하지 않도록 함). `validate` 스크립트는 `validator`의 [3단계](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/validation-debug.html?lang=en)를 편리하게 실행할 수 있는 방법을 제공합니다.
+선택적으로 `httpd -t`을(를) 통해 Dispatcher 및 Apache 웹 서버 구성을 `validate` 스크립트를 사용하여 확인할 수 있습니다(`validator` 실행 파일과 혼동하지 않도록 함). `validate` 스크립트는 `validator`의 [3단계](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/validation-debug.html?lang=ko)를 편리하게 실행할 수 있는 방법을 제공합니다.
 
 
 >[!BEGINTABS]

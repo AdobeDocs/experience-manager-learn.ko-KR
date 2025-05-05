@@ -55,7 +55,7 @@ _satellite.setDebug(true)
 
 ## Adobe Experience Platform Debugger 사용
 
-[AEP 디버거 확장](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html)을(를) 브라우저에 추가하여 자세한 디버깅 정보를 확인하십시오
+[AEP 디버거 확장](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=ko)을(를) 브라우저에 추가하여 자세한 디버깅 정보를 확인하십시오
 
 ![platform-debugger](assets/platform-debugger.png)
 

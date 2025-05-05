@@ -21,13 +21,13 @@ ht-degree: 0%
 
 # AEM 구성 요소를 사용하여 Adobe 클라이언트 데이터 레이어 사용자 지정 {#customize-data-layer}
 
-사용자 지정 AEM 구성 요소의 콘텐츠를 사용하여 Adobe 클라이언트 데이터 레이어를 사용자 지정하는 방법에 대해 알아봅니다. [AEM 핵심 구성 요소에서 제공하는 API를 사용하여 ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/extending.html)을(를) 확장하고 데이터 레이어를 사용자 지정하는 방법을 알아봅니다.
+사용자 지정 AEM 구성 요소의 콘텐츠를 사용하여 Adobe 클라이언트 데이터 레이어를 사용자 지정하는 방법에 대해 알아봅니다. [AEM 핵심 구성 요소에서 제공하는 API를 사용하여 ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/extending.html?lang=ko)을(를) 확장하고 데이터 레이어를 사용자 지정하는 방법을 알아봅니다.
 
 ## 빌드할 항목
 
 ![줄 데이터 레이어](assets/adobe-client-data-layer/byline-data-layer-html.png)
 
-이 자습서에서는 WKND [Byline 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/custom-component.html)를 업데이트하여 Adobe 클라이언트 데이터 레이어를 확장하는 다양한 옵션에 대해 알아보겠습니다. _Byline_ 구성 요소는 **사용자 지정 구성 요소**&#x200B;이며 이 자습서에서 배운 내용을 다른 사용자 지정 구성 요소에 적용할 수 있습니다.
+이 자습서에서는 WKND [Byline 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/custom-component.html?lang=ko)를 업데이트하여 Adobe 클라이언트 데이터 레이어를 확장하는 다양한 옵션에 대해 알아보겠습니다. _Byline_ 구성 요소는 **사용자 지정 구성 요소**&#x200B;이며 이 자습서에서 배운 내용을 다른 사용자 지정 구성 요소에 적용할 수 있습니다.
 
 ### 목표 {#objective}
 
@@ -173,7 +173,7 @@ AEM as a Cloud Service을 처음 사용하십니까?**&#x200B;** AEM as a Cloud 
 
 ## 인라인 HTL 업데이트 {#htl}
 
-`Byline` [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html?lang=en)을(를) 업데이트합니다. HTL(HTML 템플릿 언어)은 구성 요소의 HTML을 렌더링하는 데 사용되는 템플릿입니다.
+`Byline` [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html?lang=ko)을(를) 업데이트합니다. HTL(HTML 템플릿 언어)은 구성 요소의 HTML을 렌더링하는 데 사용되는 템플릿입니다.
 
 각 AEM 구성 요소의 특수 데이터 특성 `data-cmp-data-layer`을(를) 사용하여 해당 데이터 계층을 표시합니다. AEM 핵심 구성 요소에서 제공하는 JavaScript이 이 데이터 속성을 찾습니다. 이 데이터 속성의 값은 Byline Sling 모델의 `getData()` 메서드에서 반환된 JSON 문자열로 채워지고 Adobe 클라이언트 데이터 레이어에 삽입됩니다.
 
@@ -434,4 +434,4 @@ AEM 구성 요소를 사용하여 Adobe 클라이언트 데이터 레이어 를 
 
 * [Adobe 클라이언트 데이터 레이어 설명서](https://github.com/adobe/adobe-client-data-layer/wiki)
 * [핵심 구성 요소와 데이터 레이어 통합](https://github.com/adobe/aem-core-wcm-components/blob/main/DATA_LAYER_INTEGRATION.md)
-* [Adobe 클라이언트 데이터 레이어 및 핵심 구성 요소 설명서 사용](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)
+* [Adobe 클라이언트 데이터 레이어 및 핵심 구성 요소 설명서 사용](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=ko)

@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # 클라이언트 라이브러리 만들기
 
-CSS 클래스 **저장 단추**&#x200B;에 의해 식별된 단추의 클릭 이벤트에서 `guideBridge` API의 `doAjaxSubmitWithFileAttachment` 메서드를 호출하는 코드를 포함하는 [client lib](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html)을(를) 만듭니다.  `**/bin/storeafdatawithattachments`에서 수신 대기하는 끝점에 적응형 양식 데이터 `fileMap` 및 `mobileNumber`을(를) 전달합니다.
+CSS 클래스 **저장 단추**&#x200B;에 의해 식별된 단추의 클릭 이벤트에서 `guideBridge` API의 `doAjaxSubmitWithFileAttachment` 메서드를 호출하는 코드를 포함하는 [client lib](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=ko)을(를) 만듭니다.  `**/bin/storeafdatawithattachments`에서 수신 대기하는 끝점에 적응형 양식 데이터 `fileMap` 및 `mobileNumber`을(를) 전달합니다.
 
 양식 데이터가 저장되면 고유한 애플리케이션 ID가 생성되고 대화 상자에서 사용자에게 표시됩니다. 대화 상자를 닫으면 사용자가 고유한 애플리케이션 ID를 사용하여 저장된 적응형 양식을 검색할 수 있는 양식으로 이동됩니다.
 

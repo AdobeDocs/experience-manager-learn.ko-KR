@@ -22,7 +22,7 @@ ht-degree: 1%
 
 # 규칙 정의
 
-Tags 속성에서 2개의 새 [규칙](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/add-data-elements-rules.html)&#x200B;(**필드 유효성 검사 오류 및 FormSubmit**)을 만들었습니다.
+Tags 속성에서 2개의 새 [규칙](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/add-data-elements-rules.html?lang=ko)&#x200B;(**필드 유효성 검사 오류 및 FormSubmit**)을 만들었습니다.
 
 ![적응형 양식](assets/rules.png)
 
@@ -54,7 +54,7 @@ Adobe Analytics - 변수 설정 은 다음과 같이 구성됩니다
 Adobe Analytics - 변수 설정은 다음과 같이 구성됩니다.
 ![form-submit-rule-set-variables](assets/form-submit-set-variable.png)
 
-태그 코드를 테스트할 준비가 되면 게시 플로우를 사용하여 [태그에 대한 변경 사항을 게시](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/publishing-flow.html)합니다.
+태그 코드를 테스트할 준비가 되면 게시 플로우를 사용하여 [태그에 대한 변경 사항을 게시](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/publishing-flow.html?lang=ko)합니다.
 
 ## 다음 단계
 

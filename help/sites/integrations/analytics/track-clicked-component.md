@@ -21,7 +21,7 @@ ht-degree: 1%
 
 # 클릭한 구성 요소를 Adobe Analytics에서 추적
 
-이벤트 기반의 [Adobe Client Data Layer를 AEM 핵심 구성 요소와 함께 사용](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)하여 Adobe Experience Manager 사이트에서 특정 구성 요소의 클릭을 추적합니다. 태그 속성의 규칙을 사용하여 클릭 이벤트를 수신하고, 구성 요소별로 필터링하고, 추적 링크 비콘이 있는 Adobe Analytics으로 데이터를 전송하는 방법에 대해 알아봅니다.
+이벤트 기반의 [Adobe Client Data Layer를 AEM 핵심 구성 요소와 함께 사용](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=ko)하여 Adobe Experience Manager 사이트에서 특정 구성 요소의 클릭을 추적합니다. 태그 속성의 규칙을 사용하여 클릭 이벤트를 수신하고, 구성 요소별로 필터링하고, 추적 링크 비콘이 있는 Adobe Analytics으로 데이터를 전송하는 방법에 대해 알아봅니다.
 
 ## 빌드할 항목 {#what-build}
 
@@ -39,13 +39,13 @@ WKND 마케팅 팀이 홈 페이지에서 성과가 가장 좋은 `Call to Actio
 
 이 자습서는 [Adobe Analytics으로 페이지 데이터 수집](./collect-data-analytics.md)의 연속이며 다음과 같은 항목이 있다고 가정합니다.
 
-* [Adobe Analytics 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html)이 활성화된 **Tag 속성**
-* **Adobe Analytics** 테스트/개발 보고서 세트 ID 및 추적 서버. [보고서 세트 만들기](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html)에 대한 다음 설명서를 참조하세요.
-* [WKND 사이트](https://wknd.site/us/en.html) 또는 Adobe 데이터 레이어가 활성화된 AEM 사이트에서 로드된 태그 속성으로 구성된 [Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) 브라우저 확장 프로그램.
+* [Adobe Analytics 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html?lang=ko)이 활성화된 **Tag 속성**
+* **Adobe Analytics** 테스트/개발 보고서 세트 ID 및 추적 서버. [보고서 세트 만들기](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html?lang=ko)에 대한 다음 설명서를 참조하세요.
+* [WKND 사이트](https://wknd.site/us/en.html) 또는 Adobe 데이터 레이어가 활성화된 AEM 사이트에서 로드된 태그 속성으로 구성된 [Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html?lang=ko) 브라우저 확장 프로그램.
 
 ## 버튼 및 티저 스키마 검사
 
-태그 속성에서 규칙을 만들기 전에 Button 및 Teaser[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#item)에 대한 스키마를 검토하고 데이터 레이어 구현에서 검사하는 것이 좋습니다.
+태그 속성에서 규칙을 만들기 전에 Button 및 Teaser[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=ko#item)에 대한 스키마를 검토하고 데이터 레이어 구현에서 검사하는 것이 좋습니다.
 
 1. [WKND 홈 페이지로 이동](https://wknd.site/us/en.html)
 1. 브라우저의 개발자 도구를 열고 **콘솔**&#x200B;로 이동합니다. 다음 명령을 실행합니다.
@@ -81,7 +81,7 @@ WKND 마케팅 팀이 홈 페이지에서 성과가 가장 좋은 `Call to Actio
        xdm:linkURL: "/content/wknd/us/en/magazine/san-diego-surf.html"
    ```
 
-   위의 데이터 세부 정보는 [구성 요소/컨테이너 항목 스키마](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#item)를 기반으로 합니다. 새 태그 규칙은 이 스키마를 사용합니다.
+   위의 데이터 세부 정보는 [구성 요소/컨테이너 항목 스키마](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=ko#item)를 기반으로 합니다. 새 태그 규칙은 이 스키마를 사용합니다.
 
 ## CTA 클릭 규칙 만들기
 
@@ -147,11 +147,11 @@ Adobe 클라이언트 데이터 계층은 **이벤트** 기반 데이터 계층�
 
    사용자 지정 이벤트에서 호출된 `trigger()` 메서드에서 `event` 개체가 전달되었습니다. `component` 개체는 데이터 계층 `getState()` 메서드에서 파생된 구성 요소의 현재 상태이며 클릭을 트리거한 요소입니다.
 
-1. 변경 사항을 저장하고 태그 속성에서 [빌드](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html)를 실행하여 코드를 AEM 사이트에서 사용되는 [환경](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=ko)&#x200B;(으)로 승격합니다.
+1. 변경 사항을 저장하고 태그 속성에서 [빌드](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html?lang=ko)를 실행하여 코드를 AEM 사이트에서 사용되는 [환경](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=ko)&#x200B;(으)로 승격합니다.
 
    >[!NOTE]
    >
-   > [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)을(를) 사용하여 포함 코드를 **개발** 환경으로 전환하면 유용할 수 있습니다.
+   > [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html?lang=ko)을(를) 사용하여 포함 코드를 **개발** 환경으로 전환하면 유용할 수 있습니다.
 
 1. [WKND 사이트](https://wknd.site/us/en.html)&#x200B;(으)로 이동하고 개발자 도구를 열어 콘솔을 봅니다. **로그 유지** 확인란도 선택하십시오.
 

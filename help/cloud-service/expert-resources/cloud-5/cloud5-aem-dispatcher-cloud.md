@@ -27,7 +27,7 @@ Darin과 James는 몇 가지 모범 사례와 AMS/On-Prem과의 차이점 등 AE
 ## 이 비디오에서 다루는 콘텐츠
 
 + cloud service 환경에 dispatcher 파일 배포
-   + [마이그레이션 문서](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)
+   + [마이그레이션 문서](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html?lang=ko)
    + [블로그](https://medium.com/adobetech/migrating-a-dispatcher-configuration-from-managed-services-to-aem-as-a-cloud-service-fa8a80d242ee)
 + [마이그레이션 도구](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration)
 

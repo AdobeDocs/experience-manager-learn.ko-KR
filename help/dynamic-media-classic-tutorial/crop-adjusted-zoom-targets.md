@@ -21,9 +21,9 @@ Dynamic Media Classic 마스터 이미지 개념의 주요 강점 중 하나는 
 
 이 자습서 섹션이 끝날 때까지 다음 방법을 알 수 있습니다.
 
-- Dynamic Media Classic에서 이미지를 자르고 새 마스터 파일 또는 가상 이미지로 저장합니다. [자세히 알아보기](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html).
-- 가상 조정된 이미지를 저장하고 마스터 자산 대신 사용합니다. [자세히 알아보기](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/adjusting-image.html).
-- 이미지에 확대/축소 대상 을 만들어 강조 표시를 표시합니다. [자세히 알아보기](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/zoom/creating-zoom-targets-guided-zoom.html).
+- Dynamic Media Classic에서 이미지를 자르고 새 마스터 파일 또는 가상 이미지로 저장합니다. [자세히 알아보기](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html?lang=ko).
+- 가상 조정된 이미지를 저장하고 마스터 자산 대신 사용합니다. [자세히 알아보기](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/adjusting-image.html?lang=ko).
+- 이미지에 확대/축소 대상 을 만들어 강조 표시를 표시합니다. [자세히 알아보기](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/zoom/creating-zoom-targets-guided-zoom.html?lang=ko).
 
 ## 자르기
 
@@ -42,8 +42,8 @@ Dynamic Media Classic에는 자르기 도구를 포함하여 UI에서 편리하�
 
 에셋에 대한 세부 정보 페이지에서 또는 **편집** 단추를 클릭하여 Dynamic Media Classic의 자르기 도구에 액세스할 수 있습니다. 이 도구를 사용하여 다음 두 가지 방법으로 자를 수 있습니다.
 
-- 자르기 창의 핸들을 드래그하거나 [크기] 상자에 값을 입력하는 기본 자르기 모드입니다. [수동으로 자르기](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html#select-an-area-to-crop)하는 방법을 알아보세요.
-- 트림. 이미지와 일치하지 않는 픽셀 수를 계산하여 이미지 주위의 추가 공백을 제거하려면 이 옵션을 사용하십시오. [트리밍으로 자르기](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html#crop-to-remove-white-space-around-an-image)하는 방법을 알아봅니다.
+- 자르기 창의 핸들을 드래그하거나 [크기] 상자에 값을 입력하는 기본 자르기 모드입니다. [수동으로 자르기](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html?lang=ko#select-an-area-to-crop)하는 방법을 알아보세요.
+- 트림. 이미지와 일치하지 않는 픽셀 수를 계산하여 이미지 주위의 추가 공백을 제거하려면 이 옵션을 사용하십시오. [트리밍으로 자르기](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html?lang=ko#crop-to-remove-white-space-around-an-image)하는 방법을 알아봅니다.
 
 ### _수동 자르기_
 
@@ -134,7 +134,7 @@ Zoom Targets는 기본적으로 머천다이징 기능이며 제품의 판매 �
 
 확대/축소 대상 사용 여부를 결정하는 또 다른 요소는 뷰어를 선택하는 것입니다. 일부 뷰어 유형에서는 확대/축소 대상을 표시할 수 없습니다(예: 플라이아웃 뷰어가 해당 대상을 지원하지 않음).
 
-[확대/축소 대상을 만들기](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/zoom/creating-zoom-targets-guided-zoom.html#creating-and-editing-zoom-targets)하는 방법을 알아보세요.
+[확대/축소 대상을 만들기](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/zoom/creating-zoom-targets-guided-zoom.html?lang=ko#creating-and-editing-zoom-targets)하는 방법을 알아보세요.
 
 ![이미지](assets/crop-adjusted-zoom-targets/zoom-targets.jpg)
 

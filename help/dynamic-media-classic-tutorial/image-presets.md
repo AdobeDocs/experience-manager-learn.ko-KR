@@ -37,8 +37,8 @@ Dynamic Media Classic 고객에 대한 URL을 살펴보면 사용 중인 이미�
 >
 >사이트의 고유한 이미지 크기당 하나의 이미지 사전 설정을 만듭니다. 예를 들어 제품 세부 사항 페이지에 350 X 350 이미지, 검색 페이지에 120 X 120 이미지, 크로스셀/추천 항목에 90 X 90 이미지가 필요한 경우 이미지 500개든 500,000개든 관계없이 세 개의 이미지 사전 설정이 필요합니다.
 
-- [이미지 사전 설정](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sizing/setting-image-presets.html)에 대해 자세히 알아보세요.
-- [이미지 사전 설정을 만드는 방법](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sizing/setting-image-presets.html#creating-an-image-preset)을 알아보세요.
+- [이미지 사전 설정](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sizing/setting-image-presets.html?lang=ko)에 대해 자세히 알아보세요.
+- [이미지 사전 설정을 만드는 방법](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sizing/setting-image-presets.html?lang=ko#creating-an-image-preset)을 알아보세요.
 
 ## 이미지 사전 설정 및 선명하게 하기
 
@@ -60,7 +60,7 @@ Dynamic Media Classic에 업로드하는 고해상도 이미지는 전체 크기
 
 Dynamic Media Classic에서는 단순 선명하게 하기, 리샘플링 모드 및 언샵 마스크의 세 가지 유형을 사용할 수 있습니다.
 
-[Dynamic Media Classic 선명하게 하기 옵션](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/sharpening-image.html#sharpening_an_image)에 대해 자세히 알아보세요.
+[Dynamic Media Classic 선명하게 하기 옵션](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/sharpening-image.html?lang=ko#sharpening_an_image)에 대해 자세히 알아보세요.
 
 ## 추가 리소스
 

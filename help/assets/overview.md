@@ -87,7 +87,7 @@ AEM Assets이 무엇인지, 그리고 이를 사용하여 조직의 비즈니스
 
 ## 추가 리소스
 
-* [AEM Assets 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=en)
+* [AEM Assets 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=ko)
 * [AEM as a Cloud Service 자습서](/help/cloud-service/overview.md)
 * [AEM Sites 자습서](/help/sites/overview.md)
 * [AEM Forms 자습서](/help/forms/overview.md)

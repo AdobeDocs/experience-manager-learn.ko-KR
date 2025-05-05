@@ -59,7 +59,7 @@ AEM CORS OSGi 구성 팩토리는 CORS HTTP 요청을 수락하는 허용 기준
 + AEM 작성자에 대한 요청이 승인되어야 하므로 `supportedheaders`에 `"Authorization"`이(가) 포함됩니다.
 + AEM 작성자에 대한 요청이 승인되어야 하므로 `supportscredentials`이(가) `true`(으)로 설정됩니다.
 
-[CORS OSGi 구성에 대해 자세히 알아보세요.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)
+[CORS OSGi 구성에 대해 자세히 알아보세요.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=ko)
 
 다음 예제에서는 AEM Author에서 AEM GraphQL 지속 쿼리 사용을 지원합니다. 클라이언트 정의 GraphQL 쿼리를 사용하려면 `allowedpaths` 및 `POST`의 GraphQL 끝점 URL을 `supportedmethods`에 추가하십시오.
 

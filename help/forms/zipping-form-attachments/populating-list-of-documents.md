@@ -21,7 +21,7 @@ ht-degree: 1%
 
 이 안내서에서는 Adobe Experience Manager에서 배열 목록 유형의 목록 변수를 첨부 파일 및 첨부 파일 이름으로 채우는 사용자 지정 프로세스 단계를 안내합니다. 이러한 변수는 이메일 전송 워크플로우 구성 요소에 필수적입니다.
 
-OSGi 번들 만들기에 익숙하지 않은 경우 다음 [지침](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en)을(를) 따르십시오.
+OSGi 번들 만들기에 익숙하지 않은 경우 다음 [지침](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=ko)을(를) 따르십시오.
 
 사용자 지정 프로세스 단계의 코드는 다음 작업을 수행합니다.
 

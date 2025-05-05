@@ -18,7 +18,7 @@ ht-degree: 4%
 
 # 다중 사이트 관리자 사용 {#using-multi-site-manager-with-aem-sites}
 
-Live Copy 개요 및 블루프린트 구성 관리자는 AEM에서 [다중 사이트 관리자](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/msm-and-translation.html)와(과) 함께 작업하기 위한 Adobe Experience Manager Sites 작성자 인터페이스입니다.
+Live Copy 개요 및 블루프린트 구성 관리자는 AEM에서 [다중 사이트 관리자](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/msm-and-translation.html?lang=ko)와(과) 함께 작업하기 위한 Adobe Experience Manager Sites 작성자 인터페이스입니다.
 
 ## Live Copy 개요 {#live-copy-overview}
 
@@ -34,6 +34,6 @@ Live Copy 개요 및 블루프린트 구성 관리자는 AEM에서 [다중 사�
 
 ## 추가 리소스 {#additional-resources}
 
-* [Live Copy 개요 콘솔](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm-livecopy-overview.html)
-* [라이브 카피 만들기 및 동기화](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm-livecopy.html)
-* [MSM 모범 사례](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm-best-practices.html)
+* [Live Copy 개요 콘솔](https://helpx.adobe.com/kr/experience-manager/6-5/sites/administering/using/msm-livecopy-overview.html)
+* [라이브 카피 만들기 및 동기화](https://helpx.adobe.com/kr/experience-manager/6-5/sites/administering/using/msm-livecopy.html)
+* [MSM 모범 사례](https://helpx.adobe.com/kr/experience-manager/6-5/sites/administering/using/msm-best-practices.html)

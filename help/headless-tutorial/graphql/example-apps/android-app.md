@@ -40,7 +40,7 @@ GitHub에서 [소스 코드 보기](https://github.com/adobe/aem-guides-wknd-gra
 
 Android 애플리케이션은 다음 AEM 배포 옵션과 함께 작동합니다. 모든 배포를 사용하려면 [WKND 사이트 v3.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest)을(를) 설치해야 합니다.
 
-+ [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
++ [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=ko)
 
 Android 응용 프로그램은 __AEM 게시__ 환경에 연결하도록 디자인되었지만 Android 응용 프로그램의 구성에서 인증을 제공하는 경우 AEM 작성자의 콘텐츠를 소싱할 수 있습니다.
 
@@ -75,7 +75,7 @@ Android 응용 프로그램은 __AEM 게시__ 환경에 연결하도록 디자�
 
 ### AEM 환경에 연결
 
-AEM 작성자 환경 [인증](https://github.com/adobe/aem-headless-client-java#using-authorization)에 연결해야 하는 경우. [AEMHeadlessClientBuilder](https://github.com/adobe/aem-headless-client-java/blob/main/client/src/main/java/com/adobe/aem/graphql/client/AEMHeadlessClientBuilder.java)에서는 [토큰 기반 인증](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)을 사용할 수 있습니다. 토큰 기반 인증을 사용하려면 `AdventureLoader.java` 및 `AdventuresLoader.java`에서 클라이언트 빌더를 업데이트하십시오.
+AEM 작성자 환경 [인증](https://github.com/adobe/aem-headless-client-java#using-authorization)에 연결해야 하는 경우. [AEMHeadlessClientBuilder](https://github.com/adobe/aem-headless-client-java/blob/main/client/src/main/java/com/adobe/aem/graphql/client/AEMHeadlessClientBuilder.java)에서는 [토큰 기반 인증](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=ko)을 사용할 수 있습니다. 토큰 기반 인증을 사용하려면 `AdventureLoader.java` 및 `AdventuresLoader.java`에서 클라이언트 빌더를 업데이트하십시오.
 
 ```java
 /* Comment out basicAuth
@@ -229,5 +229,5 @@ Android 애플리케이션은 두 개의 보기를 사용하여 모바일 경험
 
 ## 추가 리소스
 
-+ [AEM Headless 시작하기 - GraphQL 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html)
++ [AEM Headless 시작하기 - GraphQL 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=ko)
 + Java용 [AEM Headless 클라이언트](https://github.com/adobe/aem-headless-client-java)

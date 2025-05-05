@@ -25,8 +25,8 @@ ht-degree: 3%
 
 ## 이 비디오에서 다루는 콘텐츠
 
-+ 검색 및 색인 [개요](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html)
-+ AEM [인덱스 변환기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/index-converter.html)
++ 검색 및 색인 [개요](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=ko)
++ AEM [인덱스 변환기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/index-converter.html?lang=ko)
 + 전문가 시리즈 [심층 분석](../../../cloud-service/migration/moving-to-aem-as-a-cloud-service/search-and-indexing.md)
 
 

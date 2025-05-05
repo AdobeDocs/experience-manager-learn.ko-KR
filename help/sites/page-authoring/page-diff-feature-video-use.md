@@ -47,4 +47,4 @@ AEM Sites의 페이지 차이 기능 에서는 페이지에서 변경된 콘텐�
 
 ## 추가 리소스 {#additional-resources}
 
-* [페이지 비교 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/page-diff.html)
+* [페이지 비교 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/page-diff.html?lang=ko)

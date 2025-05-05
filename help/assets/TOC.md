@@ -93,7 +93,7 @@ ht-degree: 21%
    + [Sidekick 플러그인](./edge-delivery-services/sidekick-plugin.md)
 
 + Adobe GenStudio{#adobe-genstudio}
-   + [AEM Assets 및 GenStudio for Performance Marketing](https://experienceleague.adobe.com/en/docs/integrations-learn/experience-cloud/tutorials/genstudio-for-performance-marketing-experience-manager/overview)
+   + [AEM Assets 및 GenStudio for Performance Marketing](https://experienceleague.adobe.com/ko/docs/integrations-learn/experience-cloud/tutorials/genstudio-for-performance-marketing-experience-manager/overview)
 
 + 공유 및 배포{#sharing}
    + [자산 다운로드](./sharing/download.md)
@@ -200,4 +200,4 @@ ht-degree: 21%
 + 배포{#deployment}
    + [멀티 테넌트 관리 및 동시 개발](deployment/multitenancy-concurrent-article-understand.md)
 
-+ [Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/overview.html){target=_blank}
++ [Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/overview.html?lang=ko){target=_blank}

@@ -31,12 +31,12 @@ Dynamic Media Classic 솔루션의 워크플로우는 세 가지 주요 단계�
 
 워크플로우의 시작입니다. 이 단계에서는 사용 중인 워크플로우에 맞는 소스 콘텐츠를 모으거나 만들어 Dynamic Media Classic에 업로드합니다. 시스템은 이미지, 비디오 및 글꼴에 대해 여러 파일 유형을 지원하지만 PDF, Adobe Illustrator 및 Adobe InDesign에 대해서도 지원합니다.
 
-[지원되는 파일 형식](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#supported-asset-file-formats)의 전체 목록을 확인하세요.
+[지원되는 파일 형식](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html?lang=ko#supported-asset-file-formats)의 전체 목록을 확인하세요.
 
 다음과 같은 여러 가지 방법으로 소스 콘텐츠를 업로드할 수 있습니다.
 
-- 데스크탑 또는 로컬 네트워크에서 직접 액세스 [방법을 알아보세요](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-sps-desktop-application).
-- Dynamic Media Classic FTP 서버에서 [방법을 알아보세요](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-via-ftp).
+- 데스크탑 또는 로컬 네트워크에서 직접 액세스 [방법을 알아보세요](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html?lang=ko#upload-files-using-sps-desktop-application).
+- Dynamic Media Classic FTP 서버에서 [방법을 알아보세요](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html?lang=ko#upload-files-using-via-ftp).
 
 기본 모드는 로컬 네트워크에서 파일을 검색하고 업로드를 시작하는 데스크톱에서 입니다.
 
@@ -64,11 +64,11 @@ Dynamic Media Classic 솔루션의 워크플로우는 세 가지 주요 단계�
 - **확장명에 관계없이 같은 기본 자산 이름으로 모든 폴더에 덮어씁니다**.
 이 옵션은 가장 포괄적인 대체 규칙입니다. 대체 이미지를 원본이 아닌 다른 폴더에 업로드하고, 파일 확장명이 다른 파일을 업로드하고, 원본 파일을 바꿀 수 있습니다. 원본 파일이 다른 폴더에 있는 경우 대체 이미지는 업로드된 새 폴더에 있습니다.
 
-[이미지 덮어쓰기 옵션](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#using-the-overwrite-images-option)에 대해 자세히 알아보세요.
+[이미지 덮어쓰기 옵션](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html?lang=ko#using-the-overwrite-images-option)에 대해 자세히 알아보세요.
 
 필수는 아니지만, 위의 두 가지 방법 중 하나를 사용하여 업로드하는 동안 해당 특정 업로드에 대한 작업 옵션 을 지정할 수 있습니다. 예를 들어 반복 업로드를 예약하고, 업로드 시 자르기 옵션을 설정하는 등의 작업을 수행할 수 있습니다. 이러한 지표는 일부 워크플로우에 유용할 수 있으므로 자신의 워크플로우가 될 수 있는지 고려해 볼 필요가 있습니다.
 
-[작업 옵션](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-options)에 대해 자세히 알아보세요.
+[작업 옵션](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html?lang=ko#upload-options)에 대해 자세히 알아보세요.
 
 Dynamic Media Classic은 아직 시스템에 없는 콘텐츠로는 작업할 수 없으므로 업로드는 워크플로우에서 가장 먼저 필요한 단계입니다. 업로드하는 동안 백그라운드에서 시스템은 업로드된 모든 에셋을 중앙 집중식 Dynamic Media Classic 데이터베이스에 등록하고 ID를 할당한 다음 이를 스토리지에 복사합니다. 또한 이미지 파일을 동적 크기 조정 및 확대/축소가 가능한 형식으로 변환하고 비디오 파일을 MP4 웹에 친숙한 형식으로 변환합니다.
 
@@ -97,7 +97,7 @@ Dynamic Media Classic은 아직 시스템에 없는 콘텐츠로는 작업할 �
 
 **이미지 크기에 대한 최소값은 없지만 대용량 이미지는 업로드하지 않는 것이 좋습니다.** 거대한 이미지는 4000픽셀 이상으로 간주할 수 있습니다. 이 크기의 이미지를 업로드하면 이미지의 먼지 또는 털의 그레인과 같은 잠재적인 결함을 보여줄 수 있습니다. 이러한 이미지는 Dynamic Media Classic 서버에서 더 많은 공간을 차지하므로 계약된 스토리지 한도를 초과할 수 있습니다.
 
-[파일 업로드](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#uploading-your-files)에 대해 자세히 알아보세요.
+[파일 업로드](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html?lang=ko#uploading-your-files)에 대해 자세히 알아보세요.
 
 ## 2단계: 작성자(및 Publish)
 
@@ -145,8 +145,8 @@ Dynamic Media Classic URL을 결합하는 방법을 이해하면 이를 프로�
 >
 >캐싱 지연과 관련된 문제를 방지하려면 항상 미리 작업하십시오(예: 저녁, 하루, 2주 등). 공개하기 전에 내부 당사자가 작업을 증명하기 위해 QA/수락에 대한 시간에 맞춰 빌드합니다. 전날 저녁에 작업하더라도 변경한 후 그날 저녁에 다시 게시할 수 있습니다. 아침까지 10시간이 경과하고 캐시가 올바른 이미지로 업데이트됩니다.
 
-- [게시 작업 만들기](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/publishing-files.html#creating-a-publish-job)에 대해 자세히 알아보세요.
-- [게시](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/publishing-files.html)에 대해 자세히 알아보세요.
+- [게시 작업 만들기](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/publishing-files.html?lang=ko#creating-a-publish-job)에 대해 자세히 알아보세요.
+- [게시](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/publishing-files.html?lang=ko)에 대해 자세히 알아보세요.
 
 ## 3단계: 제공
 
@@ -184,4 +184,4 @@ IT 팀이나 통합 파트너는 앞장서서 코드를 작성하고 변경하�
 
 **확대/축소** 옵션을 사용하여 포함된 다양한 확대/축소 뷰어를 기반으로 하는 미리 작성된 여러 확대/축소 사전 설정 중 하나로 이미지를 미리 볼 수도 있습니다.
 
-[Assets 미리 보기](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/managing-assets/previewing-asset.html)에 대해 자세히 알아보세요.
+[Assets 미리 보기](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/managing-assets/previewing-asset.html?lang=ko)에 대해 자세히 알아보세요.

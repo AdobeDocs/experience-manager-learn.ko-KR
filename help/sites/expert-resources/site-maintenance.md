@@ -39,31 +39,31 @@ AEM 인스턴스의 설치 및 유지 관리에 대한 세 가지 옵션이 있�
 
 ### 일상적인 유지 관리
 
-#### [인덱스 유지 관리](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=en)
+#### [인덱스 유지 관리](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=ko)
 
 인덱스를 통해 쿼리를 최대한 신속하게 실행할 수 있으므로 다른 작업에 필요한 리소스를 확보할 수 있습니다. 색인이 맨 위 셰이프인지 확인합니다. AEM은 인덱스를 사용하는 대신 트래버스하는 쿼리를 취소하여 잘못된 쿼리 하나가 전체 AEM 성능에 영향을 주지 않도록 합니다.
 
-#### [Tar 압축/수정 정리](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=en)
+#### [Tar 압축/수정 정리](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=ko)
 
 저장소에 대한 각 업데이트는 새 콘텐츠 개정을 만듭니다. 결과적으로 각 업데이트 시 저장소의 크기가 커집니다. 저장소 증가를 제어하지 않으려면 디스크 리소스를 확보하기 위해 이전 버전을 정리해야 합니다.
 
-#### [Lucene 바이너리 정리](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/operations-dashboard.html#automated-maintenance-tasks)
+#### [Lucene 바이너리 정리](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/operations-dashboard.html?lang=ko#automated-maintenance-tasks)
 
 Lucene 바이너리를 제거하고 실행 중인 데이터 저장소 크기 요구 사항을 줄입니다.
 
-#### [데이터 저장소 가비지](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/data-store-garbage-collection.html)
+#### [데이터 저장소 가비지](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/data-store-garbage-collection.html?lang=ko)
 
 AEM의 에셋이 삭제되면 기본 데이터 저장소 레코드에 대한 참조가 노드 계층 구조에서 제거될 수 있지만 데이터 저장소 레코드 자체는 유지됩니다. 참조되지 않은 이 데이터 저장소 레코드는 보존할 필요가 없는 &quot;가비지&quot;가 됩니다. 참조되지 않은 자산이 많이 존재하는 경우 해당 자산을 제거하고 공간을 보존하며 백업 및 파일 시스템 유지 관리 성능을 최적화하는 것이 좋습니다.
 
-#### [워크플로 제거](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html)
+#### [워크플로 제거](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html?lang=ko)
 
 워크플로 인스턴스 수를 최소화하면 워크플로 엔진의 성능이 향상되므로 완료되었거나 실행 중인 워크플로 인스턴스를 저장소에서 정기적으로 제거할 수 있습니다.
 
-#### [감사 로그 유지 관리] (https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/operations-audit-log.html
+#### [감사 로그 유지 관리] (https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/operations-audit-log.html?lang=ko
 
 감사 로깅에 적합한 AEM 이벤트는 많은 보관된 데이터를 생성합니다. 이 데이터는 복제, 에셋 업로드 및 기타 시스템 활동으로 인해 시간이 지남에 따라 빠르게 증가할 수 있습니다.
 
-#### [보안](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html?lang=en)
+#### [보안](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html?lang=ko)
 
 AEM의 가장 안전한 인스턴스를 보장하기 위해 보안 체크리스트 모범 사례 를 철저히 준수해야 합니다.
 
@@ -75,19 +75,19 @@ AEM의 가장 안전한 인스턴스를 보장하기 위해 보안 체크리스�
 
 사용자 지정 구성 요소를 사용하지 마십시오. [핵심 구성 요소](https://www.aemcomponents.dev/)를 사용하십시오. 핵심 구성 요소는 시간의 80~90%, 사용자 지정 구성 요소는 제한적으로만 사용해야 합니다. 이렇게 하려면 페이지의 구성 요소를 보는 새로운 방법이 필요할 수 있습니다. CSS를 사용하는 프론트엔드 개발자가 구성 요소를 쉽게 변경할 수 있음을 알고 있어야 합니다. 또한 이러한 핵심 구성 요소는 서로 임베드되어 매우 복잡한 결과를 얻을 수 있습니다. 창의력을 발휘하십시오!
 
-### [스타일 시스템](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=en)
+### [스타일 시스템](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=ko)
 
 스타일 시스템을 사용하면 핵심 구성 요소 및 사용자 지정 구성 요소도 완전히 새로운 모양의 구성 요소를 만들 수 있도록 작성자 재량에 따라 핵심 구성 요소의 모양과 느낌을 변경할 수 있습니다. 이러한 스타일 변경은 일반적으로 프론트엔드 디자이너와 지식이 있는 작성자(&#39;슈퍼 작성자&#39;라고도 함)만 포함합니다
 
-### [론치](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/launches/overview.html?lang=en)
+### [론치](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/launches/overview.html?lang=ko)
 
 론치를 사용하면 현재 배포된 페이지에 영향을 주지 않고 새로운 프로모션, 판매 또는 웹 사이트 롤아웃에 대한 작업을 완료할 수 있습니다. 또한 출석 또는 감독 없이 자동으로 라이브로 예약할 수 있으므로 작성자는 다음 주(또는 다음 분기) 작업을 오늘 수행하고 라이브로 전환되기 하루 전에 페이지 개발에 서두르지 않아도 됩니다. 이는 참으로 TIME의 선물입니다.)
 
-### [콘텐츠 조각](https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments.html)
+### [콘텐츠 조각](https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments.html?lang=ko)
 
 콘텐츠 조각은 사용자 정의 가능한 &quot;청크&quot; 정보의 덩어리로, 사이트 전체에서 쉽게 재사용할 수 있습니다. 변경이 필요한 경우 원본 청크만 변경하면 업데이트가 사용되는 모든 곳에서 즉시 표시됩니다.
 
-### [경험 조각](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html?lang=en)
+### [경험 조각](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html?lang=ko)
 
 콘텐츠 조각과 거의 동일하게 들리는 동안 경험 조각은 페이지의 작고 보이는 조각입니다. 또한 사이트 전체에서 광범위하게 재사용하고 AEM 내의 중앙 위치에서 유지 관리하여 사이트 전체에서 일 또는 주가 아닌 몇 초 만에 잠재적으로 전역 변경 작업을 완화할 수 있습니다.
 
@@ -95,7 +95,7 @@ AEM의 가장 안전한 인스턴스를 보장하기 위해 보안 체크리스�
 
 ## 일반
 
-지속적인 학습을 통해 AEM의 변화에 당황하지 마십시오. 과거에 얽매이지 마십시오. [Experience League](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=en) 및 [ADLS(디지털 학습 서비스) Adobe](https://learning.adobe.com/)을(를) 사용하여 기술을 연마하세요.
+지속적인 학습을 통해 AEM의 변화에 당황하지 마십시오. 과거에 얽매이지 마십시오. [Experience League](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=ko) 및 [ADLS(디지털 학습 서비스) Adobe](https://learning.adobe.com/)을(를) 사용하여 기술을 연마하세요.
 
 ## 결론
 

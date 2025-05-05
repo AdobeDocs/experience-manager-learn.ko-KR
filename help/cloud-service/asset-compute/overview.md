@@ -147,7 +147,7 @@ Adobe I/O Runtime에 배포되면 Asset Compute 작업자는 [Assets 처리 프�
 
 ### 설명서
 
-+ [Asset Compute 서비스 설명서](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html)
++ [Asset Compute 서비스 설명서](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=ko)
 + [Asset Compute 개발 도구 추가 정보](https://github.com/adobe/asset-compute-devtool)
 + [Asset Compute 예제 작업자](https://github.com/adobe/asset-compute-example-workers)
 

@@ -34,7 +34,7 @@ ht-degree: 2%
 
 * AEM Forms 6.5.16 인스턴스 실행 중
 
-* [작성자 및 게시 인스턴스에서 Headless 양식 사용](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/quick-setup/enable-headless-adaptive-forms-and-core-components.html?lang=en)
+* [작성자 및 게시 인스턴스에서 Headless 양식 사용](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/quick-setup/enable-headless-adaptive-forms-and-core-components.html?lang=ko)
 
 ## 다음 단계
 

@@ -30,5 +30,5 @@ AEM 6.3 Forms은 hobbes.js 프레임워크 위에 구축된 Calvin SDK을 사용
 >
 >**유용한 링크**
 >
->* [SDK 네임스페이스 계산](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html)
->* [Hobbes.js 설명서](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)
+>* [SDK 네임스페이스 계산](https://helpx.adobe.com/kr/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html)
+>* [Hobbes.js 설명서](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko)

@@ -38,7 +38,7 @@ ht-degree: 0%
 
 여러 부분으로 구성된 자습서이며 [표준 AEM 프로젝트 업데이트](./update-project.md)에 설명된 단계가 완료된 것으로 간주됩니다.
 
-Cloud Manager에서 파이프라인을 만들고 배포할 수 있는 [권한](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=en#role-definitions)과(와) AEM as a Cloud Service 환경에 대한 [액세스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html)이 있는지 확인하십시오.
+Cloud Manager에서 파이프라인을 만들고 배포할 수 있는 [권한](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=ko#role-definitions)과(와) AEM as a Cloud Service 환경에 대한 [액세스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=ko)이 있는지 확인하십시오.
 
 ## 기존 파이프라인 이름 바꾸기
 

@@ -24,7 +24,7 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->이 기능을 사용하려면 AEM에서 [Dynamic Media를 사용](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)하세요.
+>이 기능을 사용하려면 AEM에서 [Dynamic Media를 사용](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko)하세요.
 
 이 기능은 AEM 6.1 및 6.2 버전에서 기능 팩으로 사용할 수 있습니다.
 
@@ -125,4 +125,4 @@ ht-degree: 11%
 
 ## 추가 리소스{#additional-resources}
 
-* [Dynamic Media 색상 관리 구성](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dynamic.html#ConfiguringDynamicMediaColorManagement)
+* [Dynamic Media 색상 관리 구성](https://helpx.adobe.com/kr/experience-manager/6-5/assets/using/config-dynamic.html#ConfiguringDynamicMediaColorManagement)

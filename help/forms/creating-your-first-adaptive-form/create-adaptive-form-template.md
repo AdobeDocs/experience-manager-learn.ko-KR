@@ -23,7 +23,7 @@ ht-degree: 5%
 
 >[!VIDEO](https://video.tv.adobe.com/v/37324?quality=12&learn=on)
 
-자세한 내용은 [적응형 양식 템플릿 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html)를 참조하세요
+자세한 내용은 [적응형 양식 템플릿 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html?lang=ko)를 참조하세요
 
 필요한 경우 [적응형 양식 템플릿](assets/peak-application-template.zip)을(를) 다운로드하고 [패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp)를 사용하여 AEM으로 가져올 수 있습니다
 

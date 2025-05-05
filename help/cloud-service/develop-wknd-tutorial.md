@@ -43,4 +43,4 @@ WKND 자습서를 완료한 후 아래 비디오를 통해 AEM as a Cloud Servic
 2. AEM as a Cloud Service 프로그램에 등록된 업스트림 Adobe Cloud Manager Git 저장소로 푸시됨
 3. Cloud Manager 파이프라인을 통해 AEM as a Cloud Service 환경으로 배포됨
 
-AEM as a Cloud service에 AEM 프로젝트를 배포하는 방법에 대한 전체 개요는 비디오 시리즈를 통해 [Git을 Adobe Cloud Manager과 통합](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html)하는 방법에 대해 알아보십시오.
+AEM as a Cloud service에 AEM 프로젝트를 배포하는 방법에 대한 전체 개요는 비디오 시리즈를 통해 [Git을 Adobe Cloud Manager과 통합](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html)하는 방법에 대해 알아보십시오.

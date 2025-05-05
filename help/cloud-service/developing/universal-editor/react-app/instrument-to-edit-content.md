@@ -178,7 +178,7 @@ export default App;
 
 ## React 구성 요소 계측
 
-_팀 제목 및 팀 설명_&#x200B;과 같은 WKND Teams React 앱의 콘텐츠를 편집하려면 React 구성 요소를 계측해야 합니다. 계측은 범용 편집기를 사용하여 편집할 수 있도록 하려는 HTML 요소에 관련 데이터 특성(`data-aue-*`)을 추가하는 것을 의미합니다. 데이터 특성에 대한 자세한 내용은 [특성 및 형식](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/attributes-types)을 참조하세요.
+_팀 제목 및 팀 설명_&#x200B;과 같은 WKND Teams React 앱의 콘텐츠를 편집하려면 React 구성 요소를 계측해야 합니다. 계측은 범용 편집기를 사용하여 편집할 수 있도록 하려는 HTML 요소에 관련 데이터 특성(`data-aue-*`)을 추가하는 것을 의미합니다. 데이터 특성에 대한 자세한 내용은 [특성 및 형식](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/attributes-types)을 참조하세요.
 
 ### 편집 가능한 요소 정의
 

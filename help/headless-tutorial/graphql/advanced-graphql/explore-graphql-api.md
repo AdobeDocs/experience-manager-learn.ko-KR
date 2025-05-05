@@ -38,7 +38,7 @@ AEM의 GraphQL API를 사용하면 콘텐츠 조각 데이터를 다운스트림
 ## GraphiQL 탐색기 사용
 
 
-개발자는 [GraphiQL 탐색기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html) 도구를 사용하여 현재 AEM 환경의 콘텐츠에 대해 쿼리를 만들고 테스트할 수 있습니다. 또한 GraphiQL 도구를 통해 사용자는 프로덕션 설정에서 클라이언트 애플리케이션에서 사용할 쿼리를 **유지 또는 저장**&#x200B;할 수 있습니다.
+개발자는 [GraphiQL 탐색기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html?lang=ko) 도구를 사용하여 현재 AEM 환경의 콘텐츠에 대해 쿼리를 만들고 테스트할 수 있습니다. 또한 GraphiQL 도구를 통해 사용자는 프로덕션 설정에서 클라이언트 애플리케이션에서 사용할 쿼리를 **유지 또는 저장**&#x200B;할 수 있습니다.
 
 그런 다음 내장된 GraphiQL 탐색기를 사용하여 AEM GraphQL API의 강력한 기능을 살펴보십시오.
 

@@ -33,5 +33,5 @@ Adobe Experience Manager 6.4는 AEM과 Target 간의 개인화 워크플로를 �
 
 ## 추가 리소스 {#additional-resources}
 
-* [경험 조각 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/experience-fragments.html)
+* [경험 조각 설명서](https://helpx.adobe.com/kr/experience-manager/6-5/sites/authoring/using/experience-fragments.html)
 * [경험 조각 사용](/help/sites/experience-fragments/experience-fragments-feature-video-use.md)

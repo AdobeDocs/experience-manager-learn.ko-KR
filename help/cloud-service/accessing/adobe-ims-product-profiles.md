@@ -31,4 +31,4 @@ Adobe IMS 제품 프로필은 사용자가 AEM Author 서비스에 로그인할 
 
 ## 추가 리소스
 
-+ [Admin Console 설명서에서 제품 및 사용자 액세스 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html#managing-products-and-user-access-in-admin-console)
++ [Admin Console 설명서에서 제품 및 사용자 액세스 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=ko#managing-products-and-user-access-in-admin-console)

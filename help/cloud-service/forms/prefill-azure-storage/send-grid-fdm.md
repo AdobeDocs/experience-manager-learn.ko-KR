@@ -27,8 +27,8 @@ SendGrid API를 사용하여 동적 템플릿을 사용하여 이메일을 전�
 
 AEM Forms과 SendGrid 간의 통합을 만들려면 다음 단계를 따르십시오
 
-* [swagger 파일](./assets/SendGridWithDynamicTemplate.yaml)을 사용하여 RESTful 데이터 원본을 만드십시오. AEM Forms에서 데이터 원본을 만드는 방법에 대한 자세한 지침은 [이 비디오를 참조하세요](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html)
-* 이전 단계에서 만든 데이터 소스를 기반으로 양식 데이터 모델을 만듭니다.[자세한 설명서를 따라](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models.html) 양식 데이터 모델을 만듭니다.
+* [swagger 파일](./assets/SendGridWithDynamicTemplate.yaml)을 사용하여 RESTful 데이터 원본을 만드십시오. AEM Forms에서 데이터 원본을 만드는 방법에 대한 자세한 지침은 [이 비디오를 참조하세요](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html?lang=ko)
+* 이전 단계에서 만든 데이터 소스를 기반으로 양식 데이터 모델을 만듭니다.[자세한 설명서를 따라](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models.html?lang=ko) 양식 데이터 모델을 만듭니다.
 
 이 자습서를 위해 만든 양식 데이터 모델은 문서 에셋의 일부로 포함됩니다.
 

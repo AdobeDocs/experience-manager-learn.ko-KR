@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Calvin SDK을 사용한 적응형 Forms 자동 테스트
 
-Calvin SDK은 적응형 Forms 개발자가 적응형 Forms을 테스트할 수 있는 유틸리티 API입니다. Calvin SDK은 [Hobbes.js 테스트 프레임워크](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)의 맨 위에 빌드되었습니다. Calvin SDK은 AEM Forms 6.3 이상에서 사용할 수 있습니다.
+Calvin SDK은 적응형 Forms 개발자가 적응형 Forms을 테스트할 수 있는 유틸리티 API입니다. Calvin SDK은 [Hobbes.js 테스트 프레임워크](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko)의 맨 위에 빌드되었습니다. Calvin SDK은 AEM Forms 6.3 이상에서 사용할 수 있습니다.
 
 이 자습서에서는 다음을 만듭니다.
 

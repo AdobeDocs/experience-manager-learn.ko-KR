@@ -54,7 +54,7 @@ Cloud Manager 및 Cloud Manager 프로그램에 대한 간략한 소개입니다
 
 ## 지원 자료
 
-* [Cloud Manager 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
-* [코드 검색 다운로드 [!DNL SonarQube] 규칙](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-quality-testing.html)
+* [Cloud Manager 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=ko)
+* [코드 검색 다운로드 [!DNL SonarQube] 규칙](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-quality-testing.html?lang=ko)
    * *연결된 섹션 아래쪽에서 사용 가능한 XLSX*
 * [[!DNL SonarQube] Java™ 규칙 인덱스](https://rules.sonarsource.com/java/)

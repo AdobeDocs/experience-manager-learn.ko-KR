@@ -28,7 +28,7 @@ ACS에는 다양한 API 세트가 노출되므로 ACS를 선택한 기술과 인
 
 AEM Forms을 ACS와 통합하려면 다음 단계를 수행해야 합니다.
 
-* [ACS 인스턴스에 대한 API 액세스를 설정합니다.](https://experienceleague.adobe.com/docs/campaign-standard/using/working-with-apis/get-started-apis.html?lang=en)
+* [ACS 인스턴스에 대한 API 액세스를 설정합니다.](https://experienceleague.adobe.com/docs/campaign-standard/using/working-with-apis/get-started-apis.html?lang=ko)
 * JSON 웹 토큰을 만듭니다.
 * JSON 웹 토큰을 Adobe Identity Management Service와 교환하여 액세스 토큰을 얻습니다.
 * ACS 인스턴스에 대한 모든 요청에서 X-API-Key와 함께 인증 HTTP 헤더에 이 액세스 토큰을 포함합니다.

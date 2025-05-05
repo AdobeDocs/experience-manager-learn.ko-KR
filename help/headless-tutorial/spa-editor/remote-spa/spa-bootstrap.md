@@ -67,7 +67,7 @@ AEM과 상호 작용하는 방법을 알 수 있도록 몇 가지 환경 변수�
       + AEM Author에 사용해야 합니다.
       + AEM Publish과 함께 사용해야 할 수도 있습니다(콘텐츠가 보호되는 경우).
       + AEM SDK에 대해 개발하는 경우 기본 인증을 통해 로컬 계정을 지원합니다. 이 자습서에서 사용하는 메서드입니다.
-      + AEM as a Cloud Service과 통합할 때 [액세스 토큰](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)을 사용하세요.
+      + AEM as a Cloud Service과 통합할 때 [액세스 토큰](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=ko)을 사용하세요.
    + `REACT_APP_BASIC_AUTH_USER`: AEM 콘텐츠를 검색하는 동안 SPA에서 인증하는 AEM __사용자 이름__.
    + `REACT_APP_BASIC_AUTH_PASS`: AEM 콘텐츠를 검색하는 동안 SPA에서 인증하는 AEM __암호__.
 

@@ -39,7 +39,7 @@ ht-degree: 0%
 
    * **마우스 오른쪽 단추로**&#x200B;을 클릭하고&#x200B;**맞춤 > 프레임 맞춤 옵션... > 내용 맞춤 > 프레임 비율 채우기**
 
-   [프레임 맞춤 옵션에 대해 자세히 알아보세요](https://helpx.adobe.com/indesign/using/frames-objects.html#fitting_objects_to_frames). 사용 사례에 적합한 옵션입니다.
+   [프레임 맞춤 옵션에 대해 자세히 알아보세요](https://helpx.adobe.com/kr/indesign/using/frames-objects.html#fitting_objects_to_frames). 사용 사례에 적합한 옵션입니다.
 
 5. 바로 붙여넣기를 통해 페이지 및 페이지의 기본 템플릿에서 헤더(로고 및 회사 이름) 아래로 복사합니다.
 

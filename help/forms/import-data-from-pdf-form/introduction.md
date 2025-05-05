@@ -28,7 +28,7 @@ ht-degree: 4%
 
 * Forms 추가 기능 패키지가 설치된 AEM의 작업 인스턴스.
 
-* [이 문서에 따라 설정된 개발 환경](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)
+* [이 문서에 따라 설정된 개발 환경](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=ko)
 
 * AEM Forms Designer
 

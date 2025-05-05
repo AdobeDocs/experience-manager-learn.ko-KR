@@ -55,7 +55,7 @@ AMS 기본 구성 팜에서는 아래와 같이 의 포함을 찾을 수 있습�
 ```
 
 
-캐시할 내용에 대한 규칙을 만들 때 [여기](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache) 설명서를 참조하십시오.
+캐시할 내용에 대한 규칙을 만들 때 [여기](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#configuring-the-dispatcher-cache-cache) 설명서를 참조하십시오.
 
 
 ## 캐싱 작성자
@@ -336,6 +336,6 @@ Dispatcher 모듈의 최신 기능은 캐시된 항목에 대한 `Time To Live (
 
 게시된 사이트를 가능한 한 탐욕스럽게 만들고 모든 것을 캐시하려고 합니다.
 
-캐시될 때 경험을 중단하는 요소가 있는 경우 규칙을 추가하여 해당 항목을 캐시하는 옵션을 제거할 수 있습니다. 위의 예에서 보듯이 csrf 토큰은 캐시되어서는 안 되며 제외되었습니다. 이러한 규칙 작성에 대한 자세한 내용은 [여기](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache)에서 확인할 수 있습니다.
+캐시될 때 경험을 중단하는 요소가 있는 경우 규칙을 추가하여 해당 항목을 캐시하는 옵션을 제거할 수 있습니다. 위의 예에서 보듯이 csrf 토큰은 캐시되어서는 안 되며 제외되었습니다. 이러한 규칙 작성에 대한 자세한 내용은 [여기](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#configuring-the-dispatcher-cache-cache)에서 확인할 수 있습니다.
 
 [다음 -> 변수 사용 및 이해](./variables.md)

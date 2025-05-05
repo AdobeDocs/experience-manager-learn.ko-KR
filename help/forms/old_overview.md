@@ -83,7 +83,7 @@ Adobe Experience Manager(AEM)는 백엔드 프로세스, 비즈니스 규칙 및
 <table>
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ko">
       <img alt= "AEM Forms의 캡치" src="./assets/captcha1.png" />
     </a>
     <div>
@@ -175,11 +175,11 @@ Adobe Experience Manager(AEM)는 백엔드 프로세스, 비즈니스 규칙 및
 
 ## 추가 리소스
 
-* [Experience League - AEM 탐색](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
-* [AEM Sites 작성 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html)
-* [AEM Sites 개발 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html)
-* [AEM Sites 관리 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/administering/home.html)
-* [AEM Sites 배포 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/home.html)
+* [Experience League - AEM 탐색](https://experienceleague.adobe.com/ko#recommended/solutions/experience-manager)
+* [AEM Sites 작성 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html?lang=ko)
+* [AEM Sites 개발 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html?lang=ko)
+* [AEM Sites 관리 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/administering/home.html?lang=ko)
+* [AEM Sites 배포 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/home.html?lang=ko)
 * [AEM as a Cloud Service 튜토리얼](/help/cloud-service/overview.md)
 * [AEM Assets 튜토리얼](/help/assets/overview.md)
 * [AEM Forms 튜토리얼](/help/forms/overview.md)

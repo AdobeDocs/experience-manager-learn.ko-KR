@@ -28,4 +28,4 @@ ht-degree: 2%
 
 ## 추가 리소스 {#more-resources}
 
-* [페이지 버전 사용 - 타임워프](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/page-versions.html)
+* [페이지 버전 사용 - 타임워프](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/page-versions.html?lang=ko)

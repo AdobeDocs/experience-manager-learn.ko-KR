@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Asset Compute 작업자 테스트
 
-Asset Compute 프로젝트는 Asset Compute 작업자의 [테스트](https://experienceleague.adobe.com/docs/asset-compute/using/extend/test-custom-application.html)를 쉽게 만들고 실행하기 위한 패턴을 정의합니다.
+Asset Compute 프로젝트는 Asset Compute 작업자의 [테스트](https://experienceleague.adobe.com/docs/asset-compute/using/extend/test-custom-application.html?lang=ko)를 쉽게 만들고 실행하기 위한 패턴을 정의합니다.
 
 ## 작업자 테스트의 해부학
 

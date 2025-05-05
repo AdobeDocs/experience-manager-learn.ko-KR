@@ -39,7 +39,7 @@ while ((line = reader.readLine()) != null) {
 System.out.println("The submitted form data is " + stringBuffer.toString());
 ```
 
-코드를 사용하여 J2EE 프로세스를 호출하려는 경우 [Adobe LiveCycle Client SDK 구성](https://helpx.adobe.com/aem-forms/6/submit-form-data-livecycle-process.html)을 구성했는지 확인하십시오.
+코드를 사용하여 J2EE 프로세스를 호출하려는 경우 [Adobe LiveCycle Client SDK 구성](https://helpx.adobe.com/kr/aem-forms/6/submit-form-data-livecycle-process.html)을 구성했는지 확인하십시오.
 
 ## HTML5 양식의 제출 URL 구성
 
@@ -65,5 +65,5 @@ System.out.println("The submitted form data is " + stringBuffer.toString());
 
 ### 추가 읽기
 
-HTML5 양식 제출을 통해 PDF를 생성하는 방법에 대한 자세한 내용은 이 [문서](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/generate-pdf-from-mobile-form-submission-article.html)를 참조하십시오.
+HTML5 양식 제출을 통해 PDF를 생성하는 방법에 대한 자세한 내용은 이 [문서](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/generate-pdf-from-mobile-form-submission-article.html?lang=ko)를 참조하십시오.
 

@@ -28,4 +28,4 @@ Adobe Experience Manager Sites을 사용하면 작성자가 응답형 사이트 
 
 ## 추가 리소스 {#additional-resources}
 
-* [응답형 레이아웃 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html)
+* [응답형 레이아웃 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html?lang=ko)

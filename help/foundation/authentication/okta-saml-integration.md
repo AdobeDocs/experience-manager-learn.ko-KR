@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # OKTA를 사용하여 AEM 작성자 인증
 
-> AEM as a Cloud Service에서 OKTA를 설정하는 방법에 대한 지침은 [SAML 2.0 인증](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html)을 참조하십시오.
+> AEM as a Cloud Service에서 OKTA를 설정하는 방법에 대한 지침은 [SAML 2.0 인증](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html?lang=ko)을 참조하십시오.
 
 첫 번째 단계는 OKTA 포털에서 앱을 구성하는 것입니다. OKTA 관리자가 앱을 승인하면 IdP 인증서와 SSO(Single Sign-On) URL에 액세스할 수 있습니다. 다음은 일반적으로 새 응용 프로그램을 등록할 때 사용되는 설정입니다.
 

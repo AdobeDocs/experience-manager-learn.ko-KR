@@ -42,13 +42,13 @@ AEM 컨텐츠 조각을 Adobe Target으로 내보내고 이를 사용하여 AEM 
 
 AEM과 Adobe Target 간의 인증을 용이하게 하는 Adobe IMS 구성
 
-Adobe IMS 구성을 만드는 방법에 대한 단계별 지침은 [설명서](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/integrations/target#adobe-target-cloud-service)를 검토하십시오.
+Adobe IMS 구성을 만드는 방법에 대한 단계별 지침은 [설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/integrations/target#adobe-target-cloud-service)를 검토하십시오.
 
 ## Adobe Target Cloud Service{#adobe-target-cloud-service}
 
 Adobe Target Cloud Service은 컨텐츠 조각을 Adobe Target으로 내보낼 수 있도록 AEM에 만들어집니다.
 
-Adobe Target Cloud Service을 만드는 방법에 대한 단계별 지침은 [설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html)를 검토하십시오.
+Adobe Target Cloud Service을 만드는 방법에 대한 단계별 지침은 [설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html?lang=ko)를 검토하십시오.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3416499/?quality=12&learn=on)
 
@@ -164,7 +164,7 @@ Adobe Target에서는 컨텐츠 조각 오퍼 JSON을 컨텐츠로 사용하는 
 
 ## Experience Platform 데이터 스트림 ID{#datastream-id}
 
-AEM Headless 앱이 [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html)을(를) 사용하여 Adobe Target과 상호 작용하려면 [Adobe 데이터스트림](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-datastream.html) ID가 필요합니다.
+AEM Headless 앱이 [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=ko)을(를) 사용하여 Adobe Target과 상호 작용하려면 [Adobe 데이터스트림](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-datastream.html?lang=ko) ID가 필요합니다.
 
 +++확장 을 통한 단계별 지침
 
@@ -184,7 +184,7 @@ AEM Headless 앱이 [Adobe Experience Platform Web SDK](https://experienceleague
       + Target 환경은 __관리 > 호스트__&#x200B;의 Adobe Target에서 설정할 수 있습니다.
    + 대상 타사 ID 네임스페이스: __비워 둠__
 1. __저장__ 선택
-1. 오른쪽에서 [Adobe Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html) 구성 호출에 사용할 __데이터 스트림 ID__&#x200B;를 복사합니다.
+1. 오른쪽에서 [Adobe Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=ko) 구성 호출에 사용할 __데이터 스트림 ID__&#x200B;를 복사합니다.
 
 +++
 
@@ -194,7 +194,7 @@ AEM Headless 앱이 [Adobe Experience Platform Web SDK](https://experienceleague
 
 ## AEM Headless 앱에 개인화 추가{#code}
 
-이 자습서에서는 [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html)를 통해 Adobe Target에서 컨텐츠 조각 오퍼를 사용하여 간단한 React 앱을 개인화하는 방법을 살펴봅니다. 이 접근 방식을 사용하여 모든 JavaScript 기반 웹 경험을 개인화할 수 있습니다.
+이 자습서에서는 [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=ko)를 통해 Adobe Target에서 컨텐츠 조각 오퍼를 사용하여 간단한 React 앱을 개인화하는 방법을 살펴봅니다. 이 접근 방식을 사용하여 모든 JavaScript 기반 웹 경험을 개인화할 수 있습니다.
 
 Android™ 및 iOS 모바일 경험은 [Adobe의 Mobile SDK](https://developer.adobe.com/client-sdks/documentation/)를 사용하여 유사한 패턴에 따라 개인화할 수 있습니다.
 
@@ -230,7 +230,7 @@ Android™ 및 iOS 모바일 경험은 [Adobe의 Mobile SDK](https://developer.a
    $ npm run start
    ```
 
-1. NPM 패키지로 [Adobe Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html#option-3%3A-using-the-npm-package)을(를) 설치합니다.
+1. NPM 패키지로 [Adobe Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=ko#option-3%3A-using-the-npm-package)을(를) 설치합니다.
 
    ```shell
    $ cd ~/Code/aem-guides-wknd-graphql/personalization-tutorial

@@ -792,4 +792,4 @@ $ git push origin block-options
 
 이제 Edge Delivery Services 및 유니버설 편집기의 블록 옵션을 살펴보았으므로, 콘텐츠 편집을 보다 유연하게 사용자 정의하고 간소화할 수 있는 도구를 제공합니다. 효율성을 개선하고 일관성을 유지하기 위해 프로젝트에 이러한 옵션을 적용하십시오.
 
-더 많은 모범 사례와 고급 기술을 보려면 [유니버설 편집기 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block#block-options)를 확인하십시오.
+더 많은 모범 사례와 고급 기술을 보려면 [유니버설 편집기 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block#block-options)를 확인하십시오.

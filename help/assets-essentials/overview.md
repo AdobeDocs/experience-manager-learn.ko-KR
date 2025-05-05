@@ -38,11 +38,11 @@ Experience Manager Assets Essentials는 간단한 에셋 관리 및 공동 작�
    </p>
 </td>
 <td>
-   <a href="https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html">
+   <a href="https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html?lang=ko">
    <img alt="Assets Essentials 설명서" src="./assets/overview/assets-essentials-docs.png"/>
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html">
+      <a href="https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html?lang=ko">
       <strong>Assets Essentials 설명서</strong>
       </a>
    </div>

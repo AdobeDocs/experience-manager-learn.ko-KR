@@ -118,7 +118,7 @@ mvn clean install -PautoInstallSinglePackage
 ## 코드를 cloud manager에 푸시하고 코드를 배포합니다
 
 로컬 인스턴스에서 코드를 확인한 후 클라우드 인스턴스에 코드를 푸시합니다.
-변경 사항을 로컬 git 저장소로 푸시한 다음 cloud manager 저장소로 푸시합니다. [Git 설정](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/setup-git.html), [AEM 프로젝트를 Cloud Manager 저장소로 푸시](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/push-project-to-cloud-manager-git.html) 및 [개발 환경에 배포](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/deploy-to-dev-environment.html) 문서를 참조할 수 있습니다.
+변경 사항을 로컬 git 저장소로 푸시한 다음 cloud manager 저장소로 푸시합니다. [Git 설정](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/setup-git.html?lang=ko), [AEM 프로젝트를 Cloud Manager 저장소로 푸시](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/push-project-to-cloud-manager-git.html?lang=ko) 및 [개발 환경에 배포](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/deploy-to-dev-environment.html?lang=ko) 문서를 참조할 수 있습니다.
 
 파이프라인이 성공적으로 실행되면 아래 스크린샷과 같이 양식의 제출 액션을 사용자 지정 제출 핸들러에 연결할 수 있어야 합니다
 ![제출 액션](./assets/configure-submit-action.png)

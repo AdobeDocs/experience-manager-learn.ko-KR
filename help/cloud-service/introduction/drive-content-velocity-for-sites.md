@@ -103,7 +103,7 @@ AEM은 회사 또는 브랜드의 많은 부분을 연결하는 엔터프라이�
 
 1. **조직 전역 분류의 기초를 정의합니다.**
 
-   분류법에 대해 이야기할 때 폴더 구조만 참조하는 것이 아니라 누가 언제 무엇을 작성하는지 이해하는 것이 중요합니다. 또한 각 작성자 유형에 대해 설계해야 하는 [다른 권한](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html?lang=en) 구조도 고려해야 합니다.
+   분류법에 대해 이야기할 때 폴더 구조만 참조하는 것이 아니라 누가 언제 무엇을 작성하는지 이해하는 것이 중요합니다. 또한 각 작성자 유형에 대해 설계해야 하는 [다른 권한](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html?lang=ko) 구조도 고려해야 합니다.
 
    이 시점에서 중앙 집중식 거버넌스 모델을 원할지 아니면 분산 거버넌스 모델을 원할지 생각해 보십시오.한 편으로, 중앙 집중식 거버넌스 모델은 통합 분류 전략을 만들어 더 엄격한 품질 관리와 프로세스 통찰력을 제공하므로, 이는 불가능하거나 적어도 분산 프레임워크에서는 어려운 작업입니다.
 
@@ -147,9 +147,9 @@ AEM은 회사 또는 브랜드의 많은 부분을 연결하는 엔터프라이�
 
 일반적으로 다음과 같은 경험 규칙을 따르는 것이 가장 좋습니다.
 
-* [기본 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR) 및 [스타일 시스템](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=en)을 통해 80% 이상의 경험을 제공하는 것을 목표로 합니다. 고객 증언을 통해 제품 로드맵을 활용할 수 있는 보다 확장 가능한 기반을 만들 뿐만 아니라 속도가 최대 50%까지 빨라집니다.
-* [편집 가능한 템플릿을 설정](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en)하고 정적 템플릿에서 벗어납니다. 편집 가능한 템플릿(스타일 시스템 사용 필수)을 설정할 때 페이지 또는 웹 사이트 섹션에 사용할 수 있는 다양한 스타일을 제어할 템플릿 작성자를 지정해야 합니다. 템플릿 자체에 대한 이러한 업데이트는 일상적인 작업 측면에서는 다소 미미한 수준입니다.
-* 가능하면 [경험 조각](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html?lang=en)을 사용하세요. 경험 조각의 일반적인 사용 사례는 다중 채널 배포용이지만 여러 영역에서 콘텐츠를 수동으로 업데이트하는 대신 사이트 전체에서 효과적으로 사용하여 한 번에 한 영역의 콘텐츠를 채울 수도 있습니다. 이렇게 하면 과도한 시간과 노력을 절약할 수 있으며 작성 팀이 보다 구체적이고 풍부한 경험을 작업할 수 있습니다.
+* [기본 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR) 및 [스타일 시스템](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=ko)을 통해 80% 이상의 경험을 제공하는 것을 목표로 합니다. 고객 증언을 통해 제품 로드맵을 활용할 수 있는 보다 확장 가능한 기반을 만들 뿐만 아니라 속도가 최대 50%까지 빨라집니다.
+* [편집 가능한 템플릿을 설정](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=ko)하고 정적 템플릿에서 벗어납니다. 편집 가능한 템플릿(스타일 시스템 사용 필수)을 설정할 때 페이지 또는 웹 사이트 섹션에 사용할 수 있는 다양한 스타일을 제어할 템플릿 작성자를 지정해야 합니다. 템플릿 자체에 대한 이러한 업데이트는 일상적인 작업 측면에서는 다소 미미한 수준입니다.
+* 가능하면 [경험 조각](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html?lang=ko)을 사용하세요. 경험 조각의 일반적인 사용 사례는 다중 채널 배포용이지만 여러 영역에서 콘텐츠를 수동으로 업데이트하는 대신 사이트 전체에서 효과적으로 사용하여 한 번에 한 영역의 콘텐츠를 채울 수도 있습니다. 이렇게 하면 과도한 시간과 노력을 절약할 수 있으며 작성 팀이 보다 구체적이고 풍부한 경험을 작업할 수 있습니다.
 * 더 풍부한 경험을 만들 수 있습니다. 80/20 규칙(이상)을 활용함으로써 조직은 일반적인 유지 관리 업데이트 대신 특정 CSS 및 백엔드 개발을 일부 경험에 활용할 수 있습니다.
 * 확장 가능한 기초 및 빠른 리브랜딩을 선택하십시오. 최신 구현을 기반으로 실행되는 스타일 시스템을 사용하면 플랫폼 전반에 걸쳐 효율적으로 리브랜딩을 수행할 수 있습니다. CSS 스킨 변경을 통해 다양한 콘텐츠 섹터를 업데이트하면 빠른 테스트 및 유효성 검사를 수행할 수 있고 ROI에 직접적인 영향을 미치면서 사이트 경험적 품질을 높일 수 있습니다.
 
@@ -180,4 +180,4 @@ AEM Sites: 기본 실행 및 운영
 
 컨텐츠 속도에 대한 보다 심도 있는 토론을 보려면 1시간 동안 Monique Misrahi(T-Mobile), Amy Bergstrom(Deloitte) 및 Adobe의 Anuradha Pentaredy가 포함된 [패널 토론](https://primetime.bluejeans.com/a2m/events/playback/e63686d4-158f-4f73-aea0-f03ebee4606d)을 들어보십시오.
 
-[고객 성공](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html) 허브에서 전략 및 사고 리더십에 대해 자세히 알아보세요.
+[고객 성공](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html?lang=ko) 허브에서 전략 및 사고 리더십에 대해 자세히 알아보세요.

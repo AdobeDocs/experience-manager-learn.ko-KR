@@ -29,7 +29,7 @@ AEM as a Cloud Service에서 OSGi 서비스를 통해 보안을 관리하는 것
 
 ### OSGi 서비스 구현
 
-[OSGi 구성에서 비밀을 노출하는 사용자 지정 OSGi 서비스 개발](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi#secret-configuration-values)을 진행합니다.
+[OSGi 구성에서 비밀을 노출하는 사용자 지정 OSGi 서비스 개발](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi#secret-configuration-values)을 진행합니다.
 
 구현은 `@Activate` 메서드를 통해 OSGi 구성에서 암호를 읽고 `getSecret(String secretName)` 메서드를 통해 노출합니다. 또는 각 암호에 대해 `getApiKey()`과(와) 같은 개별 메서드를 만들 수 있지만 이 방법에서는 암호를 추가하거나 제거할 때 유지 관리가 더 필요합니다.
 
@@ -80,7 +80,7 @@ public interface SecretsManager {
 
 ## OSGi 구성에 암호 매핑
 
-OSGi 서비스의 비밀 값을 표시하려면 [OSGi 비밀 구성 값](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi#secret-configuration-values)을 사용하여 OSGi 구성에 매핑하십시오. OSGi 속성 이름을 `SecretsManager.getSecret()` 메서드에서 비밀 값을 검색할 키로 정의합니다.
+OSGi 서비스의 비밀 값을 표시하려면 [OSGi 비밀 구성 값](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi#secret-configuration-values)을 사용하여 OSGi 구성에 매핑하십시오. OSGi 속성 이름을 `SecretsManager.getSecret()` 메서드에서 비밀 값을 검색할 키로 정의합니다.
 
 AEM Maven 프로젝트의 OSGi 구성 파일 `/apps/example/osgiconfig/config/com.example.core.util.impl.SecretsManagerImpl.cfg.json`에서 암호를 정의합니다. 각 속성은 Cloud Manager에서 노출된 암호를 나타내며, 값은 AEM을 통해 설정됩니다. 키는 `SecretsManager` 서비스에서 비밀 값을 검색하는 데 사용되는 OSGi 속성 이름입니다.
 
@@ -151,7 +151,7 @@ public class ExampleSecretConsumerImpl implements ExampleSecretConsumer {
 
 OSGi 서비스 및 구성을 갖추게 되면 마지막 단계에서 Cloud Manager의 비밀 값을 설정합니다.
 
-암호 값은 [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Variables) 또는 더 일반적으로는 [Cloud Manager UI](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables#overview)를 통해 설정할 수 있습니다. Cloud Manager UI를 통해 비밀 변수를 적용하려면:
+암호 값은 [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Variables) 또는 더 일반적으로는 [Cloud Manager UI](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables#overview)를 통해 설정할 수 있습니다. Cloud Manager UI를 통해 비밀 변수를 적용하려면:
 
 ![Cloud Manager 암호 구성](./assets/secrets/cloudmanager-configuration.png)
 

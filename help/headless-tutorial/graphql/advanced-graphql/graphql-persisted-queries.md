@@ -207,9 +207,9 @@ GET <AEM_HOST>/graphql/execute.json/<Project-Config-Name>/<Persisted-Query-Name>
 
 >[!TIP]
 >
->    AEM 작성자 환경에 대해 위의 쿼리를 실행하는 경우 자격 증명을 보내야 합니다. 자세한 내용은 [로컬 개발 액세스 토큰](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/local-development-access-token.html)을(를) 보여 주고 [AEM API 호출](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#calling-the-aem-api)을(를) 참조하십시오.
+>    AEM 작성자 환경에 대해 위의 쿼리를 실행하는 경우 자격 증명을 보내야 합니다. 자세한 내용은 [로컬 개발 액세스 토큰](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/local-development-access-token.html?lang=ko)을(를) 보여 주고 [AEM API 호출](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=ko#calling-the-aem-api)을(를) 참조하십시오.
 
-또한 [지속 쿼리를 실행하는 방법](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html#execute-persisted-query), [쿼리 변수 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html#query-variables) 및 [앱에서 사용할 쿼리 URL 인코딩](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html#encoding-query-url)을 검토하여 클라이언트 응용 프로그램의 지속 쿼리 실행에 대해 알아보십시오.
+또한 [지속 쿼리를 실행하는 방법](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?lang=ko#execute-persisted-query), [쿼리 변수 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?lang=ko#query-variables) 및 [앱에서 사용할 쿼리 URL 인코딩](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?lang=ko#encoding-query-url)을 검토하여 클라이언트 응용 프로그램의 지속 쿼리 실행에 대해 알아보십시오.
 
 ## 지속 쿼리의 캐시 제어 매개 변수 업데이트 {#cache-control-all-adventures}
 
@@ -231,7 +231,7 @@ AEM GraphQL API를 사용하면 기본 캐시 제어 매개 변수를 쿼리에 
    ![GraphQL 캐시 구성 유지](assets/graphql-persisted-queries/persist-graphql-cache-config.png)
 
 
-기본 캐시 제어 매개 변수에 대한 자세한 내용은 [지속 쿼리 캐싱](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html#caching-persisted-queries)을 검토하십시오.
+기본 캐시 제어 매개 변수에 대한 자세한 내용은 [지속 쿼리 캐싱](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?lang=ko#caching-persisted-queries)을 검토하십시오.
 
 
 ## 축하합니다!

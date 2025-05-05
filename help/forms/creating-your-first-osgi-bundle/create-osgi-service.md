@@ -80,7 +80,7 @@ public class MyfirstInterfaceImpl implements MyfirstInterface {
 
 10행의 `@Component(...)` 주석은 이 Java 클래스를 OSGi 구성 요소로 표시하고 OSGi 서비스로 등록합니다.
 
-`@Reference` 주석은 OSGi 선언 서비스의 일부이며 [Outputservice](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html)의 참조를 `outputService` 변수에 삽입하는 데 사용됩니다.
+`@Reference` 주석은 OSGi 선언 서비스의 일부이며 [Outputservice](https://helpx.adobe.com/kr/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html)의 참조를 `outputService` 변수에 삽입하는 데 사용됩니다.
 
 
 ## 번들 빌드 및 배포

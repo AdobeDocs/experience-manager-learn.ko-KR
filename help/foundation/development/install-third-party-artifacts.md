@@ -27,7 +27,7 @@ AEM 프로젝트를 빌드하고 배포할 때 공용 Maven 저장소에서 *사
 
 - [OSGi 번들](https://www.osgi.org/resources/architecture/): OSGi 번들은 Java 클래스, 리소스 및 번들과 해당 종속성을 설명하는 매니페스트를 포함하는 Java™ 보관 파일입니다.
 - [Java jar](https://docs.oracle.com/javase/tutorial/deployment/jar/basicsindex.html): Java 클래스와 리소스가 포함된 Java™ 아카이브 파일입니다.
-- [패키지](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager#what-are-packages): 패키지는 파일 시스템 직렬화 양식의 저장소 콘텐츠가 들어 있는 zip 파일입니다.
+- [패키지](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager#what-are-packages): 패키지는 파일 시스템 직렬화 양식의 저장소 콘텐츠가 들어 있는 zip 파일입니다.
 
 ## 표준 시나리오
 
@@ -57,7 +57,7 @@ AEM 프로젝트를 빌드하고 배포할 때 공용 Maven 저장소에서 *사
 
 이 자습서를 수행하려면 다음이 필요합니다.
 
-- [로컬 AEM 개발 환경](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) 또는 [신속한 개발 환경(RDE)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/overview) 설정.
+- [로컬 AEM 개발 환경](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) 또는 [신속한 개발 환경(RDE)](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/rde/overview) 설정.
 
 - [AEM WKND 프로젝트](https://github.com/adobe/aem-guides-wknd) _타사 번들 또는 jar 또는 패키지를 추가_&#x200B;하고 변경 사항을 확인합니다.
 

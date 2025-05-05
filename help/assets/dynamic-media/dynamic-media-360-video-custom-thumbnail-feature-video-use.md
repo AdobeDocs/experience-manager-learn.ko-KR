@@ -104,4 +104,4 @@ Dynamic Media 비디오는 이제 비디오에 대한 사용자 지정 썸네일
 
 ## 추가 리소스{#additional-resources}
 
-[Scene7 모드에서 Dynamic Media 구성](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dms7.html)
+[Scene7 모드에서 Dynamic Media 구성](https://helpx.adobe.com/kr/experience-manager/6-5/assets/using/config-dms7.html)

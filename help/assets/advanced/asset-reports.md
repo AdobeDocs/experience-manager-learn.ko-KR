@@ -28,4 +28,4 @@ AEM Assets은 직관적인 사용자 경험을 통해 대규모 저장소에 맞
 
 >[!IMPORTANT]
 >
->AEM 6.5에서는 [자산 보고서](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html#prerequisite-for-reporting)를 구성하는 기능을 제공하므로 관리자가 보고서에 추적 및 포함된 항목을 정의할 수 있습니다.
+>AEM 6.5에서는 [자산 보고서](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html?lang=ko#prerequisite-for-reporting)를 구성하는 기능을 제공하므로 관리자가 보고서에 추적 및 포함된 항목을 정의할 수 있습니다.

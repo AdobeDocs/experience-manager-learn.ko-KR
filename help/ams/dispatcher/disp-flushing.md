@@ -175,7 +175,7 @@ $ find /mnt/var/www/html/ -type f -name ".stat"
 
 ## 팜 파일 설정
 
-전체 구성 옵션 집합 [https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-dispatcher_configuring-the-dispatcher-cache-cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko-KR)에 대한 모든 문서입니다.
+전체 구성 옵션 집합 [https://docs.adobe.com/content/help/ko-KR/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-dispatcher_configuring-the-dispatcher-cache-cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko-KR)에 대한 모든 문서입니다.
 
 캐시 플러싱과 관련된 몇 가지 항목을 강조하고 싶습니다
 

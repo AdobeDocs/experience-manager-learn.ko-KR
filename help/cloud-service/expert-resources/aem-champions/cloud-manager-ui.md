@@ -26,4 +26,4 @@ ht-degree: 2%
 
 ## 추가 리소스 {#additional-resources}
 
-* [Cloud Manager 소개](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/concepts/cloud-manager-introduction.html) - AEM as a Cloud Service에서의 Cloud Manager 사용에 대한 설명서
+* [Cloud Manager 소개](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/concepts/cloud-manager-introduction.html?lang=ko) - AEM as a Cloud Service에서의 Cloud Manager 사용에 대한 설명서

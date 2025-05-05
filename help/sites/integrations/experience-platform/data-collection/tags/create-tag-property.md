@@ -42,7 +42,7 @@ Adobe Experience Manager과 통합하기 위한 최소 구성으로 태그 속�
 
 ## 새 규칙 만들기
 
-**태그 속성** 보기에서 해당 이름을 클릭하여 새로 만든 태그 속성을 엽니다. 또한 _내 최근 활동_ 제목 아래에 Core 확장이 추가되었음을 알 수 있습니다. 코어 태그 확장은 기본 확장이며 페이지 로드, 브라우저, 양식 및 기타 이벤트 유형과 같은 기본 이벤트 유형을 제공합니다. 자세한 내용은 [코어 확장 개요](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html)를 참조하십시오.
+**태그 속성** 보기에서 해당 이름을 클릭하여 새로 만든 태그 속성을 엽니다. 또한 _내 최근 활동_ 제목 아래에 Core 확장이 추가되었음을 알 수 있습니다. 코어 태그 확장은 기본 확장이며 페이지 로드, 브라우저, 양식 및 기타 이벤트 유형과 같은 기본 이벤트 유형을 제공합니다. 자세한 내용은 [코어 확장 개요](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=ko)를 참조하십시오.
 
 규칙을 사용하면 방문자가 AEM 사이트와 상호 작용할 때 일어나야 하는 일을 지정할 수 있습니다. 간단하게 하기 위해 브라우저 콘솔에 두 개의 메시지를 기록하여 데이터 수집 Tag 통합이 AEM 프로젝트 코드를 업데이트하지 않고도 AEM 사이트에 JavaScript 코드를 삽입하는 방법을 보여 드리겠습니다.
 
@@ -93,4 +93,4 @@ Tag 속성 _규칙_&#x200B;이(가) 라이브러리를 사용하여 활성화되
 
 ## 추가 리소스 {#additional-resources}
 
-* [태그 속성 만들기](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html)
+* [태그 속성 만들기](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html?lang=ko)

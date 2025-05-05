@@ -51,7 +51,7 @@ ht-degree: 14%
    + [ModSecurity CRS DoS 공격 방지](./security/modsecurity-crs-dos-attack-protection.md)
    + [개인 인증서가 있는 API에 대한 HTTPS 연결](./security/call-internal-apis-having-private-certificate.md)
    + [AEM의 상호 TLS(mTLS) 인증](./security/mutual-tls-authentication.md)
-   + [JWT에서 OAuth로의 자격 증명 마이그레이션](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/authentication/jwt-to-oauth-migration){target=_blank}
+   + [JWT에서 OAuth로의 자격 증명 마이그레이션](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/foundation/authentication/jwt-to-oauth-migration){target=_blank}
 + 워크플로 {#workflow}
    + [워크플로우 편집기 사용](./workflow/use-the-workflow-editor.md)
    + [워크플로우 사용](./workflow/use-workflow.md)

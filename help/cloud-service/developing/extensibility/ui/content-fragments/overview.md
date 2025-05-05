@@ -29,7 +29,7 @@ AEM(Adobe Experience Manager)의 콘텐츠 조각 콘솔 은 콘텐츠 조각을
 
 ![콘텐츠 조각 콘솔](./assets/overview/cfc.png)
 
-[AEM 콘텐츠 조각 콘솔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html)은(는) 콘텐츠 조각을 나열하고 관리하기 위한 확장 가능한 UI입니다. `@adobe/aem-cf-admin-ui-ext-tpl` AEM 템플릿을 사용하여 [App Builder 콘텐츠 조각 콘솔 확장이 만들어집니다](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/code-generation).
+[AEM 콘텐츠 조각 콘솔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=ko)은(는) 콘텐츠 조각을 나열하고 관리하기 위한 확장 가능한 UI입니다. `@adobe/aem-cf-admin-ui-ext-tpl` AEM 템플릿을 사용하여 [App Builder 콘텐츠 조각 콘솔 확장이 만들어집니다](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/code-generation).
 
 다음 콘텐츠 조각 콘솔 확장 지점을 사용할 수 있습니다.
 

@@ -54,7 +54,7 @@ AEM Publish에서 AEM Headless 콘텐츠를 제공할 때 데이터의 무결성
 
 AEM Headless GraphQL API 요청에 보호된 콘텐츠에 대한 액세스 권한을 부여하려면 Headless 요청을 특정 사용자 그룹에 속하는 사용자와 연결할 수 있습니다. 다음은 두 가지 일반적인 접근 방식입니다.
 
-1. **AEM as a Cloud Service [기술 계정](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials):**
+1. **AEM as a Cloud Service [기술 계정](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials):**
    - AEM as a Cloud Service Developer Console에서 기술 계정을 만듭니다.
    - 기술 계정으로 AEM 작성자에 한 번 로그인합니다.
    - **도구 > 보안 > 그룹 > AEM Headless API 사용자 > 구성원**&#x200B;을 통해 사용자 그룹에 기술 계정을 추가합니다.
@@ -73,7 +73,7 @@ AEM Headless 콘텐츠를 보호하려면 콘텐츠 조각 보호가 필수적�
 
 ![AEM 헤드리스 CUG](./assets/protected-content/cugs.png){align="center"}
 
-[폐쇄된 사용자 그룹(CUG)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/advanced/closed-user-groups)을 통해 이를 달성하려면 다음 단계를 따르십시오.
+[폐쇄된 사용자 그룹(CUG)](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/advanced/closed-user-groups)을 통해 이를 달성하려면 다음 단계를 따르십시오.
 
 1. AEM 작성자에 **DAM 사용자**(으)로 로그인합니다.
 2. **Assets > 파일**(으)로 이동하여 보호할 콘텐츠 조각이 포함된 **폴더**&#x200B;를 선택합니다. CUG는 계층적으로 적용되며 다른 CUG로 재정의되지 않는 한 하위 폴더에 적용됩니다.
@@ -96,7 +96,7 @@ AEM Headless 콘텐츠를 보호하려면 콘텐츠 조각 보호가 필수적�
 
 ## 보호된 콘텐츠의 캐싱 방지
 
-AEM as a Cloud Service [기본적으로 HTTP 응답을 캐시합니다](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/publish). 성능 향상을 위해. 그러나 이로 인해 보호된 콘텐츠를 제공하는 데 문제가 발생할 수 있습니다. 이러한 콘텐츠의 캐싱을 방지하려면 AEM 게시 인스턴스의 Apache 구성에서 [특정 끝점에 대한 캐시 헤더를 제거](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/publish#how-to-customize-cache-rules-1)하십시오.
+AEM as a Cloud Service [기본적으로 HTTP 응답을 캐시합니다](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/caching/publish). 성능 향상을 위해. 그러나 이로 인해 보호된 콘텐츠를 제공하는 데 문제가 발생할 수 있습니다. 이러한 콘텐츠의 캐싱을 방지하려면 AEM 게시 인스턴스의 Apache 구성에서 [특정 끝점에 대한 캐시 헤더를 제거](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/caching/publish#how-to-customize-cache-rules-1)하십시오.
 
 Dispatcher 프로젝트의 Apache 구성 파일에 다음 규칙을 추가하여 특정 끝점에 대한 캐시 헤더를 제거합니다.
 
@@ -120,4 +120,4 @@ Dispatcher 프로젝트의 Apache 구성 파일에 다음 규칙을 추가하여
 
 ## AEM Headless GraphQL API 엔드포인트 보호
 
-이 안내서에서는 [AEM Headless GraphQL API 끝점](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/graphql-api/graphql-endpoint) 자체를 보호하는 문제를 해결하지 않고, 대신 해당 끝점에서 제공하는 콘텐츠를 보호하는 데 중점을 둡니다. 익명 사용자를 포함한 모든 사용자는 보호된 콘텐츠가 포함된 엔드포인트에 액세스할 수 있습니다. 사용자의 [폐쇄된 사용자 그룹]이 액세스할 수 있는 컨텐츠만 반환됩니다. 콘텐츠에 액세스할 수 없는 경우 AEM Headless API 응답에는 여전히 200개의 HTTP 응답 상태 코드가 있지만 결과는 비어 있습니다. 일반적으로 콘텐츠 보안은 엔드포인트 자체가 기본적으로 중요한 데이터를 노출하지 않으므로 충분합니다. 끝점을 보호해야 하는 경우 [Sling 저장소 초기화(repoinit) 스크립트](https://sling.apache.org/documentation/bundles/repository-initialization.html#repoinit-parser-test-scenarios)를 통해 AEM 게시에서 끝점에 ACL을 적용합니다.
+이 안내서에서는 [AEM Headless GraphQL API 끝점](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/headless/graphql-api/graphql-endpoint) 자체를 보호하는 문제를 해결하지 않고, 대신 해당 끝점에서 제공하는 콘텐츠를 보호하는 데 중점을 둡니다. 익명 사용자를 포함한 모든 사용자는 보호된 콘텐츠가 포함된 엔드포인트에 액세스할 수 있습니다. 사용자의 [폐쇄된 사용자 그룹]이 액세스할 수 있는 컨텐츠만 반환됩니다. 콘텐츠에 액세스할 수 없는 경우 AEM Headless API 응답에는 여전히 200개의 HTTP 응답 상태 코드가 있지만 결과는 비어 있습니다. 일반적으로 콘텐츠 보안은 엔드포인트 자체가 기본적으로 중요한 데이터를 노출하지 않으므로 충분합니다. 끝점을 보호해야 하는 경우 [Sling 저장소 초기화(repoinit) 스크립트](https://sling.apache.org/documentation/bundles/repository-initialization.html#repoinit-parser-test-scenarios)를 통해 AEM 게시에서 끝점에 ACL을 적용합니다.

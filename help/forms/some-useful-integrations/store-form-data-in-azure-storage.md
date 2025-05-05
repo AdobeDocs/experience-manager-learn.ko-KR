@@ -23,7 +23,7 @@ ht-degree: 0%
 제출된 양식 데이터를 Azure Storage에 저장하려면 다음 단계를 수행해야 합니다.
 
 >[!NOTE]
->이 문서의 코드는 적응형 양식을 기반으로 하는 핵심 구성 요소에서는 작동하지 않습니다. [핵심 구성 요소 기반 적응형 양식에 대한 동등한 문서는 여기에서 확인할 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/prefill-form-with-data-attachments/introduction.html?lang=en)
+>이 문서의 코드는 적응형 양식을 기반으로 하는 핵심 구성 요소에서는 작동하지 않습니다. [핵심 구성 요소 기반 적응형 양식에 대한 동등한 문서는 여기에서 확인할 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/prefill-form-with-data-attachments/introduction.html?lang=ko)
 
 
 ## Azure 스토리지 계정 만들기
@@ -104,7 +104,7 @@ https://aemformstutorial.blob.core.windows.net/formsubmissions/blobid/sastoken
 
 * [샘플 적응형 양식 가져오기](./assets/bank-account-sample-form.zip)
 
-* [OSGi 구성 콘솔을 사용하여 Azure 포털 구성에서 적절한 값을 지정하십시오.](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/some-useful-integrations/store-form-data-in-azure-storage.html?lang=en#provide-the-blob-sas-token-and-storage-uri)
+* [OSGi 구성 콘솔을 사용하여 Azure 포털 구성에서 적절한 값을 지정하십시오.](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/some-useful-integrations/store-form-data-in-azure-storage.html?lang=ko#provide-the-blob-sas-token-and-storage-uri)
 
 * [BankAccount 양식 미리 보기 및 제출](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled)
 

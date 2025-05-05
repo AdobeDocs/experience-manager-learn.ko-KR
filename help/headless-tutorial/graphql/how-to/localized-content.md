@@ -19,11 +19,11 @@ ht-degree: 0%
 
 # AEM Headless로 현지화된 콘텐츠
 
-AEM은 Headless 콘텐츠를 위한 [번역 통합 프레임워크](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/translation/integration-framework.html)를 제공하여 콘텐츠 조각 및 지원 에셋을 로케일에서 사용하기 위해 쉽게 번역할 수 있도록 합니다. 페이지, 경험 조각, Assets 및 Forms과 같은 다른 AEM 콘텐츠를 번역하는 데 사용되는 것과 동일한 프레임워크입니다. [Headless 콘텐츠를 번역](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html)하고 게시하면 Headless 애플리케이션에서 사용할 수 있습니다.
+AEM은 Headless 콘텐츠를 위한 [번역 통합 프레임워크](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/translation/integration-framework.html?lang=ko)를 제공하여 콘텐츠 조각 및 지원 에셋을 로케일에서 사용하기 위해 쉽게 번역할 수 있도록 합니다. 페이지, 경험 조각, Assets 및 Forms과 같은 다른 AEM 콘텐츠를 번역하는 데 사용되는 것과 동일한 프레임워크입니다. [Headless 콘텐츠를 번역](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html?lang=ko)하고 게시하면 Headless 애플리케이션에서 사용할 수 있습니다.
 
 ## Assets 폴더 구조{#assets-folder-structure}
 
-AEM의 지역화된 콘텐츠 조각이 [권장된 지역화 구조](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/getting-started.html#recommended-structure)를 따르는지 확인하십시오.
+AEM의 지역화된 콘텐츠 조각이 [권장된 지역화 구조](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/getting-started.html?lang=ko#recommended-structure)를 따르는지 확인하십시오.
 
 ![지역화된 AEM 자산 폴더](./assets/localized-content/asset-folders.jpg)
 

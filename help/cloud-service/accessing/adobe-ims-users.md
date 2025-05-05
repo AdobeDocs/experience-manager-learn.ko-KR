@@ -32,5 +32,5 @@ AEM 작성자 서비스에 액세스해야 하는 사용자는 [Adobe의 Admin C
 
 ## 추가 리소스
 
-+ [Admin Console 설명서에서 사용자 온보딩](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html#onboarding-users-in-admin-console)
++ [Admin Console 설명서에서 사용자 온보딩](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=ko#onboarding-users-in-admin-console)
 + [Adobe Admin Console ID 개요 설명서](https://helpx.adobe.com/kr/enterprise/using/identity.html)

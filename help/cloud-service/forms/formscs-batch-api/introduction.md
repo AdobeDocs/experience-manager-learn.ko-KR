@@ -29,4 +29,4 @@ AEM Forms CS 일괄 처리 작업 API를 사용하려면 다음 구성이 필요
 1. 일괄 처리 데이터 저장소 구성 만들기
 1. 일괄 처리 API 실행
 
-이 자습서를 사용하기 전에 [API 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/batch-api.yaml?lang=en)를 숙지하는 것이 좋습니다.
+이 자습서를 사용하기 전에 [API 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/batch-api.yaml?lang=ko)를 숙지하는 것이 좋습니다.

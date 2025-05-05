@@ -122,7 +122,7 @@ AEM 인증서를 가져오려면 아래 단계를 따르십시오.
 
    ![AEM 개인 키 및 인증서 가져옴](assets/mutual-tls-authentication/aem-privatekey-cert-imported.png)
 
-API 공급자가 자체 서명된 CA 인증서를 사용하는 경우 받은 인증서를 AEM의 TrustStore로 가져와서 [여기](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/call-internal-apis-having-private-certificate.html#httpclient-and-load-aem-truststore-material)의 단계를 따릅니다.
+API 공급자가 자체 서명된 CA 인증서를 사용하는 경우 받은 인증서를 AEM의 TrustStore로 가져와서 [여기](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/call-internal-apis-having-private-certificate.html?lang=ko#httpclient-and-load-aem-truststore-material)의 단계를 따릅니다.
 
 마찬가지로, AEM에서 자체 서명된 CA 인증서를 사용하는 경우 API 공급자에게 가져오도록 요청합니다.
 
@@ -217,7 +217,7 @@ private KeyStore getAEMTrustStore(KeyStoreService keyStoreService, ResourceResol
 - API 공급자가 자체 서명된 CA 인증서를 사용하는 경우 `getAEMTrustStore(...)` 메서드에서 전역 AEM TrustStore를 가져옵니다.
 - `SSLContextBuilder`의 개체를 만듭니다. Java™ [API 세부 정보](https://javadoc.io/static/org.apache.httpcomponents/httpcore/4.4.8/index.html?org/apache/http/ssl/SSLContextBuilder.html)를 참조하십시오.
 - `loadKeyMaterial(final KeyStore keystore,final char[] keyPassword)` 메서드를 사용하여 사용자의 AEM KeyStore를 `SSLContextBuilder`에 로드합니다.
-- 키 저장소 암호는 키 저장소를 만들 때 설정된 암호이며 OSGi 구성에 저장해야 합니다. [암호 구성 값](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#secret-configuration-values)을 참조하십시오.
+- 키 저장소 암호는 키 저장소를 만들 때 설정된 암호이며 OSGi 구성에 저장해야 합니다. [암호 구성 값](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=ko#secret-configuration-values)을 참조하십시오.
 
 ## JVM 키 저장소 변경 방지
 

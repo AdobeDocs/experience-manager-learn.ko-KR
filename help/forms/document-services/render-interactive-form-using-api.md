@@ -24,7 +24,7 @@ AEM Forms에서 Forms 서비스 API를 사용하여 대화형 PDF 렌더링
 
 * FormsService - 다양한 용도로 사용할 수 있는 서비스로, PDF 파일에서 로 데이터를 내보내고 가져올 수 있으며 xml 데이터를 xdp 템플릿으로 병합하여 대화형 pdf를 생성할 수도 있습니다
 
-AEM Forms API용 공식 [javadoc이 여기에 나열되어 있습니다](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/package-summary.html)
+AEM Forms API용 공식 [javadoc이 여기에 나열되어 있습니다](https://helpx.adobe.com/kr/aem-forms/6/javadocs/com/adobe/fd/output/api/package-summary.html)
 
 다음 코드 조각은 FormsService의 renderPDFForm 작업을 사용하여 대화형 pdf를 렌더링합니다. schengen.xdp는 xml 데이터를 병합하는 데 사용되는 템플릿입니다.
 

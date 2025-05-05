@@ -272,7 +272,7 @@ Hero 레이아웃 스타일에 브랜드 색상을 지정하려면 프로모션 
 
 ## 추가 리소스 {#additional-resources}
 
-* [스타일 시스템 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/style-system.html)
+* [스타일 시스템 설명서](https://helpx.adobe.com/kr/experience-manager/6-5/sites/authoring/using/style-system.html)
 * [AEM 클라이언트 라이브러리 만들기](https://helpx.adobe.com/kr/experience-manager/6-5/sites/developing/using/clientlibs.html)
 * [BEM(Block Element Modifier) 설명서 웹 사이트](https://getbem.com/)
 * [더 적은 설명서 웹 사이트](https://lesscss.org/)

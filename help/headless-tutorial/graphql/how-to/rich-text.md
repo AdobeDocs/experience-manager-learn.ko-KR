@@ -27,7 +27,7 @@ AEM의 GraphQL API는 서식 있는 텍스트를 HTML, 일반 텍스트 또는 �
 
 >[!VIDEO](https://video.tv.adobe.com/v/342104?quality=12&learn=on)
 
-콘텐츠 조각 편집기에서 여러 줄 텍스트 필드의 메뉴 모음은 작성자에게 **bold**, *기울임꼴* 및 밑줄과 같은 표준 서식 있는 텍스트 서식 기능을 제공합니다. 여러 줄 필드를 전체 화면 모드로 열면 [단락 유형, 찾기 및 바꾸기, 맞춤법 검사 등과 같은 추가 서식 도구를 사용할 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-variations.html).
+콘텐츠 조각 편집기에서 여러 줄 텍스트 필드의 메뉴 모음은 작성자에게 **bold**, *기울임꼴* 및 밑줄과 같은 표준 서식 있는 텍스트 서식 기능을 제공합니다. 여러 줄 필드를 전체 화면 모드로 열면 [단락 유형, 찾기 및 바꾸기, 맞춤법 검사 등과 같은 추가 서식 도구를 사용할 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-variations.html?lang=ko).
 
 >[!NOTE]
 >
@@ -63,7 +63,7 @@ AEM의 GraphQL API는 서식 있는 텍스트를 HTML, 일반 텍스트 또는 �
 
 GraphQL 쿼리를 만들 때 개발자는 여러 줄 필드에서 `html`, `plaintext`, `markdown` 및 `json`의 다른 응답 형식을 선택할 수 있습니다.
 
-개발자는 콘텐츠 조각 편집기에서 [JSON 미리 보기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html)를 사용하여 GraphQL API를 사용하여 반환할 수 있는 현재 콘텐츠 조각의 모든 값을 표시할 수 있습니다.
+개발자는 콘텐츠 조각 편집기에서 [JSON 미리 보기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=ko)를 사용하여 GraphQL API를 사용하여 반환할 수 있는 현재 콘텐츠 조각의 모든 값을 표시할 수 있습니다.
 
 ## GraphQL 지속 쿼리
 

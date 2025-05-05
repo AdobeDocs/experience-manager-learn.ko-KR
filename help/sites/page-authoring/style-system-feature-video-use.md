@@ -34,4 +34,4 @@ Adobe Experience Manager의 스타일 시스템을 사용하면 백엔드 개발
 
 스타일 시스템을 사용하여 개발하는 방법에 대해 알아보시겠습니까? 다음 튜토리얼을 확인하십시오.
 
-* [스타일 시스템을 사용하여 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html)
+* [스타일 시스템을 사용하여 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html?lang=ko)

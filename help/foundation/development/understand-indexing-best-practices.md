@@ -41,7 +41,7 @@ AEM 인스턴스의 성능에 영향을 주지 않는 효율적이고 올바른 
 
 - 검색 요구 사항을 이해하고 OOTB 인덱스가 검색 요구 사항을 지원할 수 있는지 확인합니다. Developer Console 또는 `https://author-pXXXX-eYYYY.adobeaemcloud.com/ui#/aem/libs/granite/operations/content/diagnosistools/queryPerformance.html?appId=aemshell`을(를) 통해 [로컬 SDK](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) 및 AEMCS에서 사용할 수 있는 **쿼리 성능 도구**&#x200B;를 사용합니다.
 
-- 최적의 쿼리를 정의하고 [쿼리 최적화](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/query-and-indexing-best-practices) 순서도와 [JCR 쿼리 치트 시트](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf)를 참조하십시오.
+- 최적의 쿼리를 정의하고 [쿼리 최적화](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/operations/query-and-indexing-best-practices) 순서도와 [JCR 쿼리 치트 시트](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf?lang=ko)를 참조하십시오.
 
 - OOTB 인덱스가 검색 요구 사항을 지원할 수 없는 경우 두 가지 옵션이 있습니다. 그러나 효율적인 색인을 만들기 위한 [팁](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/deploying/practices/best-practices-for-queries-and-indexing)을 검토하십시오.
    - OOTB 인덱스 사용자 정의: 유지 관리 및 업그레이드가 용이하여 선호하는 옵션.
@@ -253,7 +253,7 @@ Apache Tika를 완전히 비활성화하려면 아래 단계를 수행하십시�
 
 ### 쿼리 성능 도구
 
-Developer Console 또는 `https://author-pXXXX-eYYYY.adobeaemcloud.com/ui#/aem/libs/granite/operations/content/diagnosistools/queryPerformance.html?appId=aemshell`을(를) 통해 [로컬 SDK](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) 및 AEMCS에서 사용할 수 있는 OOTB _쿼리 성능 도구_&#x200B;를 통해 **쿼리 성능을 분석** 및 [JCR 쿼리 치트 시트](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf?lang=en)에서 최적의 쿼리를 정의할 수 있습니다.
+Developer Console 또는 `https://author-pXXXX-eYYYY.adobeaemcloud.com/ui#/aem/libs/granite/operations/content/diagnosistools/queryPerformance.html?appId=aemshell`을(를) 통해 [로컬 SDK](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) 및 AEMCS에서 사용할 수 있는 OOTB _쿼리 성능 도구_&#x200B;를 통해 **쿼리 성능을 분석** 및 [JCR 쿼리 치트 시트](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf?lang=ko)에서 최적의 쿼리를 정의할 수 있습니다.
 
 ### 문제 해결 도구 및 팁
 
@@ -274,6 +274,6 @@ Developer Console 또는 `https://author-pXXXX-eYYYY.adobeaemcloud.com/ui#/aem/l
 자세한 내용은 다음 설명서를 참조하십시오.
 
 - [Oak 쿼리 및 색인화](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/deploying/deploying/queries-and-indexing)
-- [쿼리 및 색인화 모범 사례](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/query-and-indexing-best-practices)
+- [쿼리 및 색인화 모범 사례](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/operations/query-and-indexing-best-practices)
 - [쿼리 및 색인화 모범 사례](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/deploying/practices/best-practices-for-queries-and-indexing)
 

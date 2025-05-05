@@ -202,7 +202,7 @@ AEM Content Services를 통해 기본 모바일 경험을 제공하는 방법을
 
 AEM Content Services 및 AEM as a Headless CMS에 대한 자세한 내용은 Adobe의 다른 설명서 및 지원 자료를 참조하십시오.
 
-* [콘텐츠 조각 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html)
+* [콘텐츠 조각 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=ko)
 * [AEM WCM 코어 구성 요소 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)
 * [AEM WCM 핵심 구성 요소 구성 요소 라이브러리](https://opensource.adobe.com/aem-core-wcm-components/library.html)
 * [AEM WCM 핵심 구성 요소 GitHub 프로젝트](https://github.com/adobe/aem-core-wcm-components)

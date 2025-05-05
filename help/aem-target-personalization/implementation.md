@@ -22,7 +22,7 @@ ht-degree: 1%
 이 섹션에서는 다양한 시나리오에 대해 Adobe Target을 사용하여 Adobe Experience Manager Sites을 설정하는 방법에 대해 설명합니다. 시나리오 및 조직 요구 사항 기반.
 
 * **Adobe Target JavaScript 라이브러리 추가(모든 시나리오에 필요)**
-AEM에서 호스팅되는 사이트의 경우 [Adobe Experience Platform의 태그](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)를 사용하여 Target 라이브러리를 사이트에 추가할 수 있습니다. 태그는 관련 고객 환경을 향상하는 데 필요한 모든 태그를 배포하고 관리하는 간단한 방법을 제공합니다.
+AEM에서 호스팅되는 사이트의 경우 [Adobe Experience Platform의 태그](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ko)를 사용하여 Target 라이브러리를 사이트에 추가할 수 있습니다. 태그는 관련 고객 환경을 향상하는 데 필요한 모든 태그를 배포하고 관리하는 간단한 방법을 제공합니다.
 * **Adobe Target Cloud Service 추가(경험 조각 시나리오에 필요)**
 경험 조각 오퍼를 사용하여 Adobe Target 내에서 활동을 만들려는 AEM 고객의 경우 이전 Cloud Service을 사용하여 Adobe Target을 AEM과 통합해야 합니다. 이 통합은 AEM에서 Target으로 경험 조각을 HTML/JSON 오퍼로 푸시하고 오퍼를 AEM과 동기화 상태로 유지하는 데 필요합니다. *시나리오 1을 구현하려면 이 통합이 필요합니다.*
 
@@ -58,7 +58,7 @@ AEM에서 호스팅되는 사이트의 경우 [Adobe Experience Platform의 태�
 
 #### AEM 작성자 및 Publish 인스턴스 설정
 
-1. [AEM Quickstart Jar 및 라이선스 복사본을 가져옵니다.](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#GettingtheSoftware)
+1. [AEM Quickstart Jar 및 라이선스 복사본을 가져옵니다.](https://helpx.adobe.com/kr/experience-manager/6-5/sites/deploying/using/deploy.html#GettingtheSoftware)
 2. 다음과 같이 컴퓨터에 폴더 구조를 만듭니다.
    ![폴더 구조](assets/implementation/aem-setup-1.png)
 3. Quickstart jar 이름을 `aem-author-p4502.jar`(으)로 바꾸고 `/author` 디렉터리 아래에 놓습니다. `/author` 디렉터리 아래에 `license.properties` 파일을 추가합니다.

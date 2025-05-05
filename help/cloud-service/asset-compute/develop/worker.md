@@ -43,7 +43,7 @@ Asset Compute 작업자는 개념적으로 다음과 같은 `renditionCallback(.
 1. Asset Compute 작업자가 새 렌디션의 이진 데이터를 `rendition.path`에 저장합니다.
 1. `rendition.path`에 기록된 이진 데이터는 Asset Compute SDK을 통해 AEM 작성자 서비스로 전송되며 __(4a)__ 텍스트 렌디션과 __(4b)__(자산의 메타데이터 노드로 유지됨)으로 노출됩니다.
 
-위의 다이어그램은 Asset Compute 개발자가 직면한 문제와 Asset Compute 작업자 호출에 대한 논리적 흐름을 설명합니다. 궁금한 점은 [Asset Compute 실행에 대한 내부 세부 정보](https://experienceleague.adobe.com/docs/asset-compute/using/extend/custom-application-internals.html)를 사용할 수 있지만 공개 Asset Compute SDK API 계약만 따라 달라질 수 있습니다.
+위의 다이어그램은 Asset Compute 개발자가 직면한 문제와 Asset Compute 작업자 호출에 대한 논리적 흐름을 설명합니다. 궁금한 점은 [Asset Compute 실행에 대한 내부 세부 정보](https://experienceleague.adobe.com/docs/asset-compute/using/extend/custom-application-internals.html?lang=ko)를 사용할 수 있지만 공개 Asset Compute SDK API 계약만 따라 달라질 수 있습니다.
 
 ## 노동자의 해부학
 

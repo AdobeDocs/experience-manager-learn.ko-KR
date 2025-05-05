@@ -211,7 +211,7 @@ Sling 매핑은 AEM이 `http` 및 `localhost`에서 실행되므로 로컬 개�
 
 ## 원본 간 리소스 공유 보안 정책
 
-다음으로, 이 AEM만 AEM 콘텐츠에 액세스할 수 있도록 SPA을 구성하여 콘텐츠를 보호합니다. [AEM에서 원본 간 리소스 공유 구성](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html).
+다음으로, 이 AEM만 AEM 콘텐츠에 액세스할 수 있도록 SPA을 구성하여 콘텐츠를 보호합니다. [AEM에서 원본 간 리소스 공유 구성](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=ko).
 
 1. IDE에서 `ui.config` Maven 하위 프로젝트를 엽니다.
 1. `src/main/content/jcr_root/apps/wknd-app/osgiconfig/config` 탐색

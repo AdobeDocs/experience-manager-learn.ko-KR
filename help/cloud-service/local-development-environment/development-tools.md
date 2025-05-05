@@ -100,7 +100,7 @@ Homebrew를 사용하는 경우 아래 섹션에서 __Homebrew를 사용하여 �
 
 ## Git 설치
 
-[Git](https://git-scm.com/)은(는) [Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/source-code-repository.html)에서 사용하는 소스 제어 관리 시스템이므로 개발에 필요합니다.
+[Git](https://git-scm.com/)은(는) [Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/source-code-repository.html?lang=ko)에서 사용하는 소스 제어 관리 시스템이므로 개발에 필요합니다.
 
 >[!BEGINTABS]
 
@@ -180,7 +180,7 @@ Apache Maven은 AEM Project Maven Archetype에서 생성된 AEM 프로젝트를 
 
 + AEM as a Cloud Services의 테일 로그
 + CLI에서 Cloud Manager 파이프라인 관리
-+ [AEM 빠른 개발 환경](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html)에 배포
++ [AEM 빠른 개발 환경](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html?lang=ko)에 배포
 
 ### Adobe I/O CLI 설치
 
@@ -217,7 +217,7 @@ Adobe I/O CLI를 통해 Cloud Manager에 대해 [명령 실행](https://github.c
 
 ### AEM 빠른 개발 환경 플러그인 설정{#rde}
 
-AEM 빠른 개발 환경 플러그인을 사용하면 aio CLI가 `aio aem:rde` 명령을 통해 AEM as a Cloud Service [빠른 개발 환경](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html)과(와) 상호 작용할 수 있습니다.
+AEM 빠른 개발 환경 플러그인을 사용하면 aio CLI가 `aio aem:rde` 명령을 통해 AEM as a Cloud Service [빠른 개발 환경](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html?lang=ko)과(와) 상호 작용할 수 있습니다.
 
 1. `aio plugins:install @adobe/aio-cli-plugin-aem-rde`을(를) 실행하여 [AEM 빠른 개발 환경 플러그 인](https://github.com/adobe/aio-cli-plugin-aem-rde)을(를) 설치합니다.
 
@@ -254,9 +254,9 @@ Visual Studio Code는 주로 프론트엔드 코드인 JavaScript, CSS 및 HTML�
 
 ### Eclipse
 
-__[Eclipse IDE](https://www.eclipse.org/ide/)__&#x200B;은(는) Java 개발용으로 많이 사용되는 IDE이며 Adobe에서 제공하는 __[AEM 개발자 도구](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html)__ 플러그인을 지원하며, 작성에 IDE 내 GUI를 제공하고 JCR 콘텐츠를 로컬 AEM 인스턴스와 동기화합니다.
+__[Eclipse IDE](https://www.eclipse.org/ide/)__&#x200B;은(는) Java 개발용으로 많이 사용되는 IDE이며 Adobe에서 제공하는 __[AEM 개발자 도구](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html?lang=ko)__ 플러그인을 지원하며, 작성에 IDE 내 GUI를 제공하고 JCR 콘텐츠를 로컬 AEM 인스턴스와 동기화합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25906?quality=12&learn=on)
 
 + [Eclipse 다운로드](https://www.eclipse.org/ide/)
-+ [Eclipse 개발 도구 다운로드](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html)
++ [Eclipse 개발 도구 다운로드](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html?lang=ko)

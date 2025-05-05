@@ -71,7 +71,7 @@ AEM 현대화 도구는 편집 가능한 템플릿, AEM 코어 WCM 구성 요소
 + [AEM as a Cloud Service에 대해 다르게 생각](./introduction.md)
 + [저장소 현대화](./repository-modernization.md)
 + [변경 가능한 콘텐츠 및 변경 불가능한 콘텐츠](../../developing/basics/mutable-immutable.md)
-+ [AEM 프로젝트 구조](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)
++ [AEM 프로젝트 구조](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=ko)
 
 또한, 이전에 실습한 연습을 완료했는지 확인하십시오.
 
@@ -103,7 +103,7 @@ AEM 현대화 도구는 편집 가능한 템플릿, AEM 코어 WCM 구성 요소
 
 + [AEM 현대화 도구 다운로드](https://github.com/adobe/aem-modernize-tools/releases/latest)
 + [AEM 현대화 도구 설명서](https://opensource.adobe.com/aem-modernize-tools/)
-+ [AEM Gems - AEM 현대화 세트 소개](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/Introducing-the-AEM-Modernization-Suite.html)
++ [AEM Gems - AEM 현대화 세트 소개](https://helpx.adobe.com/kr/experience-manager/kt/eseminars/gems/Introducing-the-AEM-Modernization-Suite.html)
 
 1. 로컬 AEM SDK에 새로 현대화된 wknd 레거시 사이트를 배포합니다. AEM ASK는 여기에서 다운로드할 수 있습니다.
    + [소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html).

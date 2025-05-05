@@ -19,7 +19,7 @@ ht-degree: 1%
 
 # 사용자 정의 프로세스 단계
 
-양식 첨부 파일이 포함된 zip 파일을 만들기 위해 사용자 지정 프로세스 단계가 구현되었습니다. OSGi 번들 만들기에 익숙하지 않은 경우 [다음 지침을 따르세요](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en).
+양식 첨부 파일이 포함된 zip 파일을 만들기 위해 사용자 지정 프로세스 단계가 구현되었습니다. OSGi 번들 만들기에 익숙하지 않은 경우 [다음 지침을 따르세요](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=ko).
 
 사용자 지정 프로세스 단계의 코드는 다음을 수행합니다.
 

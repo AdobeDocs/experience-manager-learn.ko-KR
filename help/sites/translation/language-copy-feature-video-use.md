@@ -24,5 +24,5 @@ AEM 6.3 언어 사본 만들기 마법사 사이트 번역 개선 사항을 통�
 
 ## 추가 리소스 {#additional-resources}
 
-* [언어 복사 마법사 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-wizard.html)
-* [MSM 모범 사례](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm-best-practices.html)
+* [언어 복사 마법사 설명서](https://helpx.adobe.com/kr/experience-manager/6-5/sites/administering/using/tc-wizard.html)
+* [MSM 모범 사례](https://helpx.adobe.com/kr/experience-manager/6-5/sites/administering/using/msm-best-practices.html)

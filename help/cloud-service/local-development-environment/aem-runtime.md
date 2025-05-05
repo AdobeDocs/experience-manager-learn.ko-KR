@@ -24,7 +24,7 @@ ht-degree: 7%
 >id="aemcloud_localdev_aemruntime"
 >title="로컬 AEM 런타임"
 >abstract="AEM(Adobe Experience Manager)은 AEM as a Cloud Service SDK의 QuickStart Jar로 사용하여 로컬에서 실행할 수 있습니다. 이 경우 개발자는 소스 제어에 커밋하기 전에 사용자 정의 코드, 구성 및 콘텐츠를 배포하고 테스트하고, AEM as a Cloud Service 환경으로 배포할 수 있습니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html" text="AEM as a Cloud Service SDK"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=ko" text="AEM as a Cloud Service SDK"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="AEM as a Cloud Service SDK 다운로드"
 
 AEM(Adobe Experience Manager)은 AEM as a Cloud Service SDK의 QuickStart Jar로 사용하여 로컬에서 실행할 수 있습니다. 이 경우 개발자는 소스 제어에 커밋하기 전에 사용자 정의 코드, 구성 및 콘텐츠를 배포하고 테스트하고, AEM as a Cloud Service 환경으로 배포할 수 있습니다.
@@ -169,7 +169,7 @@ $ java -jar aem-publish-p4503.jar
 
 ## 프리릴리스 모드에서 로컬 AEM 서비스 설정
 
-로컬 AEM 런타임을 [프리릴리스 모드](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html)에서 시작하여 개발자가 AEM as a Cloud Service의 다음 릴리스 기능에 맞게 빌드할 수 있습니다. 로컬 AEM 런타임의 첫 번째 시작 시 `-r prerelease` 인수를 전달하여 프리릴리스를 사용할 수 있습니다. 로컬 AEM Author 및 AEM Publish 서비스에서 모두 사용할 수 있습니다.
+로컬 AEM 런타임을 [프리릴리스 모드](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko)에서 시작하여 개발자가 AEM as a Cloud Service의 다음 릴리스 기능에 맞게 빌드할 수 있습니다. 로컬 AEM 런타임의 첫 번째 시작 시 `-r prerelease` 인수를 전달하여 프리릴리스를 사용할 수 있습니다. 로컬 AEM Author 및 AEM Publish 서비스에서 모두 사용할 수 있습니다.
 
 
 >[!BEGINTABS]
@@ -208,7 +208,7 @@ $ java -jar aem-publish-p4503.jar -r prerelease
 
 ## 콘텐츠 배포 시뮬레이션 {#content-distribution}
 
-실제 Cloud Service 환경에서는 [Sling 콘텐츠 배포](https://sling.apache.org/documentation/bundles/content-distribution.html) 및 Adobe 파이프라인을 사용하여 Author 서비스에서 Publish 서비스로 콘텐츠가 배포됩니다. [Adobe 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/core-concepts/architecture.html?lang=en#content-distribution)은(는) 클라우드 환경에서만 사용할 수 있는 격리된 마이크로서비스입니다.
+실제 Cloud Service 환경에서는 [Sling 콘텐츠 배포](https://sling.apache.org/documentation/bundles/content-distribution.html) 및 Adobe 파이프라인을 사용하여 Author 서비스에서 Publish 서비스로 콘텐츠가 배포됩니다. [Adobe 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/core-concepts/architecture.html?lang=ko#content-distribution)은(는) 클라우드 환경에서만 사용할 수 있는 격리된 마이크로서비스입니다.
 
 개발 중에 로컬 Author 및 Publish 서비스를 사용하여 콘텐츠 배포를 시뮬레이션하는 것이 바람직할 수 있습니다. 이 작업은 기존 복제 에이전트를 활성화하여 수행할 수 있습니다.
 
@@ -271,7 +271,7 @@ Quickstart Jar 이름 `aem-<tier>_<environment>-p<port number>.jar`은(는) 시�
 
 ## 선택적 로컬 AEM 런타임 설정 작업
 
-+ __OSGi 구성 환경 변수 및 비밀 변수__&#x200B;은(는) aio CLI를 사용하여 관리하는 대신 [AEM 로컬 런타임에 특별히 설정된](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development)입니다.
++ __OSGi 구성 환경 변수 및 비밀 변수__&#x200B;은(는) aio CLI를 사용하여 관리하는 대신 [AEM 로컬 런타임에 특별히 설정된](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=ko#local-development)입니다.
 
 ## Quickstart Jar 업데이트 시기
 

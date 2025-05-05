@@ -101,11 +101,11 @@ $ git checkout -b teaser origin/main
 
 | JSON 속성 | 설명 |
 |---------------|-----------------------------------------------------------------------------------------------------------------------|
-| `component` | [필드 형식](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/field-types#component-types)&#x200B;(예: `text`, `reference` 또는 `aem-content`). |
+| `component` | [필드 형식](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/field-types#component-types)&#x200B;(예: `text`, `reference` 또는 `aem-content`). |
 | `name` | 값이 AEM에 저장되는 JCR 속성에 매핑되는 필드의 이름입니다. |
 | `label` | 범용 편집기에서 작성자에게 표시되는 레이블입니다. |
 
-선택 사항을 포함한 포괄적인 속성 목록을 보려면 [유니버설 편집기 필드 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/field-types#fields)를 검토하십시오.
+선택 사항을 포함한 포괄적인 속성 목록을 보려면 [유니버설 편집기 필드 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/field-types#fields)를 검토하십시오.
 
 #### 블록 디자인
 
@@ -132,16 +132,16 @@ $ git checkout -b teaser origin/main
 
 티저는 이미지와 텍스트의 두 가지 논리적 영역으로 구성됩니다. Edge Delivery Services HTML을 원하는 웹 경험으로 표시하는 데 필요한 코드를 간소화하려면 블록 모델이 이 구조를 반영해야 합니다.
 
-- [필드 축소](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse)를 사용하여 **이미지** 및 **이미지 대체 텍스트**&#x200B;를 함께 그룹화합니다.
-- [요소 그룹화](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#element-grouping) 및 [CTA의 필드 축소](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse)을 사용하여 텍스트 콘텐츠 필드를 함께 그룹화합니다.
+- [필드 축소](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse)를 사용하여 **이미지** 및 **이미지 대체 텍스트**&#x200B;를 함께 그룹화합니다.
+- [요소 그룹화](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#element-grouping) 및 [CTA의 필드 축소](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse)을 사용하여 텍스트 콘텐츠 필드를 함께 그룹화합니다.
 
-[필드 축소](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse), [요소 그룹화](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#element-grouping) 또는 [형식 유추](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#type-inference)에 익숙하지 않은 경우 올바른 구조의 블록 모델을 만드는 데 필수이므로 연결된 설명서를 검토한 후 계속하십시오.
+[필드 축소](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse), [요소 그룹화](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#element-grouping) 또는 [형식 유추](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#type-inference)에 익숙하지 않은 경우 올바른 구조의 블록 모델을 만드는 데 필수이므로 연결된 설명서를 검토한 후 계속하십시오.
 
 아래 예에서:
 
-- [형식 유추](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#type-inference)은(는) `image` 필드에서 `<img>` HTML 요소를 자동으로 만드는 데 사용됩니다. `image` 및 `imageAlt` 필드와 함께 필드 축소법을 사용하여 `<img>` HTML 요소를 만듭니다. `src` 특성은 `image` 필드의 값으로 설정되어 있고 `alt` 특성은 `imageAlt` 필드의 값으로 설정되어 있습니다.
+- [형식 유추](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#type-inference)은(는) `image` 필드에서 `<img>` HTML 요소를 자동으로 만드는 데 사용됩니다. `image` 및 `imageAlt` 필드와 함께 필드 축소법을 사용하여 `<img>` HTML 요소를 만듭니다. `src` 특성은 `image` 필드의 값으로 설정되어 있고 `alt` 특성은 `imageAlt` 필드의 값으로 설정되어 있습니다.
 - `textContent`은(는) 필드를 분류하는 데 사용되는 그룹 이름입니다. 의미론적이어야 하지만 이 블록에 고유한 것일 수 있습니다. 이렇게 하면 최종 HTML 출력의 동일한 `<div>` 요소 내에서 이 접두사가 있는 모든 필드를 렌더링하도록 유니버설 편집기에 알립니다.
-- 필드 축소도 클릭 유도 문안(CTA)에 대해 `textContent` 그룹 내에 적용됩니다. [형식 유추](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#type-inference)를 통해 `<a>`(으)로 CTA이 만들어졌습니다. `cta` 필드는 `<a>` 요소의 `href` 특성을 설정하는 데 사용되며 `ctaText` 필드는 `<a ...>` 태그 내의 링크에 대한 텍스트 콘텐츠를 제공합니다.
+- 필드 축소도 클릭 유도 문안(CTA)에 대해 `textContent` 그룹 내에 적용됩니다. [형식 유추](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#type-inference)를 통해 `<a>`(으)로 CTA이 만들어졌습니다. `cta` 필드는 `<a>` 요소의 `href` 특성을 설정하는 데 사용되며 `ctaText` 필드는 `<a ...>` 태그 내의 링크에 대한 텍스트 콘텐츠를 제공합니다.
 
 [!BADGE /blocks/teaser/_teaser.json]{type=Neutral tooltip="아래 코드 샘플의 파일 이름입니다."}
 
@@ -223,7 +223,7 @@ $ git checkout -b teaser origin/main
 
 **이 탭은 티저 블록을 모델링하는 최적의 방법을 보여 주며 올바른 방법과 병치됩니다.**
 
-[필드 접기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse) 및 [요소 그룹화](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#element-grouping)을 사용하지 않고 각 필드를 블록 모델에서 독립 실행형 필드로 정의하면 끌릴 수 있습니다. 그러나 이러한 감독이 블록을 결합 단위로 스타일링하는 것을 복잡하게 만듭니다.
+[필드 접기](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse) 및 [요소 그룹화](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#element-grouping)을 사용하지 않고 각 필드를 블록 모델에서 독립 실행형 필드로 정의하면 끌릴 수 있습니다. 그러나 이러한 감독이 블록을 결합 단위로 스타일링하는 것을 복잡하게 만듭니다.
 
 예를 들어 다음과 같이 필드 축소 또는 요소 그룹화가 없는 **티저 모델을 정의할 수 있습니다.**
 
@@ -304,7 +304,7 @@ $ git checkout -b teaser origin/main
 </div>        
 ```
 
-각 필드는 자체 `div`에서 분리되어 있어 이미지 및 텍스트 콘텐츠를 일관된 단위로 스타일링하기 어렵습니다. 노력과 창의력으로 원하는 디자인을 달성할 수 있지만, [요소 그룹화](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#element-grouping)를 사용하여 텍스트 콘텐츠 필드를 그룹화하고 [필드 축소](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse)를 사용하여 작성된 값을 요소 특성으로 추가하는 것이 더 쉽고, 의미론적으로 정확합니다.
+각 필드는 자체 `div`에서 분리되어 있어 이미지 및 텍스트 콘텐츠를 일관된 단위로 스타일링하기 어렵습니다. 노력과 창의력으로 원하는 디자인을 달성할 수 있지만, [요소 그룹화](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#element-grouping)를 사용하여 텍스트 콘텐츠 필드를 그룹화하고 [필드 축소](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse)를 사용하여 작성된 값을 요소 특성으로 추가하는 것이 더 쉽고, 의미론적으로 정확합니다.
 
 티저 블록을 더 잘 모델링하는 방법은 위의 **쓰기 방법** 탭을 참조하십시오.
 
@@ -322,7 +322,7 @@ $ git checkout -b teaser origin/main
 | `definition.plugins.xwalk.page.resourceType` | 유니버설 편집기에서 구성 요소를 렌더링하기 위한 Sling 리소스 유형을 정의합니다. 항상 `core/franklin/components/block/v#/block` 리소스 형식을 사용하십시오. |
 | `definition.plugins.xwalk.page.template.name` | 블록의 이름입니다. 블록의 폴더 이름과 일치하도록 대/소문자를 줄이고 하이픈을 사용해야 합니다. 이 값은 범용 편집기에서 블록 인스턴스에 레이블을 지정하는 데도 사용됩니다. |
 | `definition.plugins.xwalk.page.template.model` | 이 정의를 유니버설 편집기에서 블록에 대해 표시되는 작성 필드를 제어하는 `model` 정의에 연결합니다. 이 값은 `model.id` 값과 일치해야 합니다. |
-| `definition.plugins.xwalk.page.template.classes` | 블록 HTML 요소의 `class` 특성에 값을 추가하는 선택적 속성입니다. 이렇게 하면 동일한 블록의 변형이 허용됩니다. [클래스 필드 추가](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block#block-options)를 블록의 [모델](#block-model)에 사용하면 `classes` 값을 편집할 수 있습니다. |
+| `definition.plugins.xwalk.page.template.classes` | 블록 HTML 요소의 `class` 특성에 값을 추가하는 선택적 속성입니다. 이렇게 하면 동일한 블록의 변형이 허용됩니다. [클래스 필드 추가](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block#block-options)를 블록의 [모델](#block-model)에 사용하면 `classes` 값을 편집할 수 있습니다. |
 
 
 다음은 블록 정의에 대한 JSON 예입니다.
@@ -363,7 +363,7 @@ $ git checkout -b teaser origin/main
 
 ### 블록 필터
 
-블록의 `filters` 배열은 [컨테이너 블록](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#container)에 대해 다른 블록을 컨테이너에 추가할 수 있는 블록을 정의합니다. 필터는 컨테이너에 추가할 수 있는 블록 ID(`model.id`) 목록을 정의합니다.
+블록의 `filters` 배열은 [컨테이너 블록](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#container)에 대해 다른 블록을 컨테이너에 추가할 수 있는 블록을 정의합니다. 필터는 컨테이너에 추가할 수 있는 블록 ID(`model.id`) 목록을 정의합니다.
 
 [!BADGE /blocks/teaser/_teaser.json]{type=Neutral tooltip="아래 코드 샘플의 파일 이름입니다."}
 
@@ -375,7 +375,7 @@ $ git checkout -b teaser origin/main
 }
 ```
 
-티저 구성 요소가 [컨테이너 블록](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#container)이(가) 아닙니다. 즉, 다른 블록을 추가할 수 없습니다. 따라서 해당 `filters` 배열이 비어 있습니다. 대신 티저를 섹션에 추가할 수 있도록 티저의 ID를 섹션 블록의 필터 목록에 추가합니다.
+티저 구성 요소가 [컨테이너 블록](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#container)이(가) 아닙니다. 즉, 다른 블록을 추가할 수 없습니다. 따라서 해당 `filters` 배열이 비어 있습니다. 대신 티저를 섹션에 추가할 수 있도록 티저의 ID를 섹션 블록의 필터 목록에 추가합니다.
 
 ![차단 필터](./assets/5-new-block/filters.png)
 

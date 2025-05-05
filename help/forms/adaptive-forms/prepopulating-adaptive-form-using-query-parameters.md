@@ -27,7 +27,7 @@ https://forms.enablementadobe.com/content/forms/af/testingxml.html?FirstName=Joh
 
 이 사용 사례를 달성하기 위해 새로운 적응형 양식 템플릿을 만들고 페이지 구성 요소와 연결했습니다. 이 페이지 구성 요소에는 쿼리 매개 변수를 확보하고 적응형 양식을 채우는 데 사용할 수 있는 xml 구조를 만드는 jsp가 있습니다.
 
-새 적응형 양식 템플릿 및 페이지 구성 요소를 만드는 방법에 대한 자세한 내용은 [이 비디오에서 설명합니다.](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/storing-and-retrieving-form-data/part5.html?lang=en)
+새 적응형 양식 템플릿 및 페이지 구성 요소를 만드는 방법에 대한 자세한 내용은 [이 비디오에서 설명합니다.](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/storing-and-retrieving-form-data/part5.html?lang=ko)
 
 다음은 jsp 페이지에 사용된 코드입니다
 

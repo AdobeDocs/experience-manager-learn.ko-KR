@@ -73,7 +73,7 @@ Next.js는 __AEM Publish__ 서비스에 연결하고 보호되지 않은 콘텐�
    AEM_AUTH_PASSWORD=password-for-the-aem-user-account
    ```
 
-   [AEM as a Cloud Service 로컬 개발 토큰](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#generating-the-access-token)을(를) 사용하려면 `AEM_AUTH_METHOD=dev-token`을(를) 설정하고 `AEM_AUTH_DEV_TOKEN` 속성에 전체 개발 토큰 값을 제공하십시오.
+   [AEM as a Cloud Service 로컬 개발 토큰](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=ko#generating-the-access-token)을(를) 사용하려면 `AEM_AUTH_METHOD=dev-token`을(를) 설정하고 `AEM_AUTH_DEV_TOKEN` 속성에 전체 개발 토큰 값을 제공하십시오.
 
    ```plain
    ...

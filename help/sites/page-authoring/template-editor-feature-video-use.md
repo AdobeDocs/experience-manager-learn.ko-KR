@@ -40,5 +40,5 @@ ht-degree: 5%
 
 ## 추가 리소스 {#additional-resources}
 
-* [편집 가능한 페이지 템플릿 - 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html)
-* [페이지 템플릿 만들기 - 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/templates.html)
+* [편집 가능한 페이지 템플릿 - 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=ko)
+* [페이지 템플릿 만들기 - 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/templates.html?lang=ko)

@@ -45,7 +45,7 @@ public class HandleFormSubmissison extends SlingAllMethodsServlet {
 
 ## 사용자 정의 제출 핸들러 만들기
 
-[이전 버전의 AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-submit-aem-forms-article.html?lang=en)에서 만들 때와 같은 방법으로 `apps/bankingapplication` 폴더에서 사용자 지정 제출 액션을 만듭니다. 이 자습서에서는 CRX 저장소의 `apps/bankingapplication` 노드 아래에 SubmitToAEMServlet이라는 폴더를 만듭니다.
+[이전 버전의 AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-submit-aem-forms-article.html?lang=ko)에서 만들 때와 같은 방법으로 `apps/bankingapplication` 폴더에서 사용자 지정 제출 액션을 만듭니다. 이 자습서에서는 CRX 저장소의 `apps/bankingapplication` 노드 아래에 SubmitToAEMServlet이라는 폴더를 만듭니다.
 
 post.POST.jsp의 다음 코드는 요청을 /bin/formstutorial에 마운트된 서블릿에 전달하기만 합니다. 이전 단계에서 생성된 것과 동일한 서블릿입니다
 

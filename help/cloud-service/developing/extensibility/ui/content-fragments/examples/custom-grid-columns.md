@@ -208,7 +208,7 @@ render: async function (fragments) {
 
 >[!IMPORTANT]
 >
-> AEM 작성자 인스턴스가 AppBuilder 앱이 실행 중인 원본에서 [원본 간 요청](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html)을 허용하도록 구성되어 있는지 확인하십시오. 허용되는 원본에는 `https://localhost:9080`, AppBuilder Stage 원본 및 AppBuilder 프로덕션 원본이 포함됩니다.
+> AEM 작성자 인스턴스가 AppBuilder 앱이 실행 중인 원본에서 [원본 간 요청](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=ko)을 허용하도록 구성되어 있는지 확인하십시오. 허용되는 원본에는 `https://localhost:9080`, AppBuilder Stage 원본 및 AppBuilder 프로덕션 원본이 포함됩니다.
 >
 > 또는 확장 프로그램이 확장 프로그램을 대신하여 AEM 작성자에게 요청하는 사용자 지정 [AppBuilder 작업](../../runtime-action.md)을 호출할 수 있습니다.
 

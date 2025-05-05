@@ -20,7 +20,7 @@ ht-degree: 13%
 
 + [AEM 헤드리스 개요](./overview.md)
 + GraphQL {#graphql}
-   + [AEM 헤드리스 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html){target=_blank}
+   + [AEM 헤드리스 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ko){target=_blank}
    + [개요](./graphql/overview.md)
    + 빠른 설정 {#quick-setup}
       + [Cloud Service](./graphql/quick-setup/cloud-service.md)

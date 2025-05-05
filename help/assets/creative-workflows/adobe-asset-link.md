@@ -27,7 +27,7 @@ Adobe Creative Cloud for enterprise용 Adobe Asset Link 확장은 Creative Cloud
 
 >[!TIP]
 >
-> [Adobe XD Premium 교육 프로그램](https://helpx.adobe.com/support/xd.html)을 통해 Asset Link를 Adobe Experience Manager 워크플로와 통합하는 방법에 대해 자세히 알아보십시오.
+> [Adobe XD Premium 교육 프로그램](https://helpx.adobe.com/kr/support/xd.html)을 통해 Asset Link를 Adobe Experience Manager 워크플로와 통합하는 방법에 대해 자세히 알아보십시오.
 
 ## Adobe Asset Link 및 AEM creative 워크플로
 

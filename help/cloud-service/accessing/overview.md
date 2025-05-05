@@ -50,7 +50,7 @@ AEM 작성자 서비스에 액세스하는 사용자는 [Adobe의 AdminConsole](
 
 ## Adobe IMS 제품 프로필
 
-[Adobe의 AdminConsole](https://adminconsole.adobe.com)에서 관리되는 [Adobe IMS 제품 프로필](https://helpx.adobe.com/enterprise/using/manage-permissions-and-roles.html)은(는) 기본 액세스 수준으로 AEM 작성자 서비스에 로그인할 수 있도록 [Adobe IMS 사용자](#adobe-ims-users) 액세스 권한을 제공하는 정비사입니다.
+[Adobe의 AdminConsole](https://adminconsole.adobe.com)에서 관리되는 [Adobe IMS 제품 프로필](https://helpx.adobe.com/kr/enterprise/using/manage-permissions-and-roles.html)은(는) 기본 액세스 수준으로 AEM 작성자 서비스에 로그인할 수 있도록 [Adobe IMS 사용자](#adobe-ims-users) 액세스 권한을 제공하는 정비사입니다.
 
 + __AEM 사용자__ 제품 프로필은 AEM의 참가자 그룹의 멤버십을 통해 AEM에 대한 읽기 전용 액세스 권한을 사용자에게 부여합니다.
 + __AEM 관리자__ 제품 프로필은 사용자에게 AEM에 대한 모든 관리자 액세스 권한을 제공합니다.
@@ -74,5 +74,5 @@ Adobe Admin Console에서 Adobe IMS 사용자, 사용자 그룹 및 제품 프�
 다음 설명서는 Adobe Admin Console을 더 잘 이해하고 이를 사용하여 사용자와 Experience Cloud 제품 간의 액세스를 관리하는 데 도움이 될 수 있는 [Adobe Admin Console](https://adminconsole.adobe.com)별 세부 정보 및 우려 사항을 다룹니다.
 
 + [Adobe Admin Console ID 개요](https://helpx.adobe.com/kr/enterprise/using/identity.html)
-+ [Adobe Admin Console 관리자 역할](https://helpx.adobe.com/enterprise/using/admin-roles.html)
-+ [Adobe Admin Console 개발자 역할](https://helpx.adobe.com/enterprise/using/manage-developers.html)
++ [Adobe Admin Console 관리자 역할](https://helpx.adobe.com/kr/enterprise/using/admin-roles.html)
++ [Adobe Admin Console 개발자 역할](https://helpx.adobe.com/kr/enterprise/using/manage-developers.html)

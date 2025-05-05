@@ -34,4 +34,4 @@ ht-degree: 1%
 
 ## 추가 리소스 {#additional-resources}
 
-* [구성 요소 콘솔 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/default-components-console.html)
+* [구성 요소 콘솔 설명서](https://helpx.adobe.com/kr/experience-manager/6-5/sites/authoring/using/default-components-console.html)

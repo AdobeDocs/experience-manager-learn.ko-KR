@@ -26,7 +26,7 @@ ht-degree: 2%
 
 ## 이 시리즈의 첫 번째 부분에서 다루는 콘텐츠
 
-+ AEM CDN [개요](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html)
++ AEM CDN [개요](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=ko)
 + 웹 애플리케이션 방화벽(WAF) 기능
 + IP 제한 사항
 + DDOS 보호

@@ -30,7 +30,7 @@ ht-degree: 4%
 
 AEM Forms CS에서 위의 사용 사례를 구현하려면 다음이 필요합니다
 
-* [AEM Forms CS 클라우드 지원 인스턴스](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-and-aem-sync.html?lang=en#set-up-aem-author-instance)
+* [AEM Forms CS 클라우드 지원 인스턴스](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-and-aem-sync.html?lang=ko#set-up-aem-author-instance)
 
 ### 다음 단계
 

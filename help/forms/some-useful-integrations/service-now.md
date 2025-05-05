@@ -24,8 +24,8 @@ AEM Forms의 양식 데이터 모델을 사용하여 [!DNL ServiceNow]에서 인
 ## 사전 요구 사항
 
 * [!DNL ServiceNow] 계정입니다.
-* [데이터 소스 만들기](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html)에 익숙함
-* [양식 데이터 모델](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html)에 익숙함
+* [데이터 소스 만들기](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html?lang=ko)에 익숙함
+* [양식 데이터 모델](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=ko)에 익숙함
 
 ## 샘플 Assets
 

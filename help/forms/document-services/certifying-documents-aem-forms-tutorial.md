@@ -22,7 +22,7 @@ ht-degree: 0%
 
 문서를 인증하려면 데스크탑의 Acrobat DC 또는 AEM Forms Document Services를 서버의 자동화된 프로세스의 일부로 사용할 수 있습니다.
 
-이 문서에서는 AEM Forms Document Services를 사용하여 pdf 문서를 인증하는 샘플 OSGI 번들을 제공합니다. 샘플에 사용된 코드는 [여기에서 사용 가능](https://helpx.adobe.com/experience-manager/6-4/forms/using/aem-document-services-programmatically.html)합니다.
+이 문서에서는 AEM Forms Document Services를 사용하여 pdf 문서를 인증하는 샘플 OSGI 번들을 제공합니다. 샘플에 사용된 코드는 [여기에서 사용 가능](https://helpx.adobe.com/kr/experience-manager/6-4/forms/using/aem-document-services-programmatically.html)합니다.
 
 AEM Forms을 사용하여 문서를 인증하려면 다음 단계를 수행해야 합니다
 
@@ -43,7 +43,7 @@ AEM의 키 저장소에 인증서를 추가하려면 아래 단계를 따르십�
 고유한 OSGi 번들을 작성하고 AEM Forms 클라이언트 SDK 를 사용하여 PDF 문서를 인증하는 서비스를 구현할 수 있습니다. 다음 링크는 자체 OSGi 번들을 작성하는 데 유용합니다
 
 * [첫 번째 OSGi 번들 만들기](https://helpx.adobe.com/experience-manager/using/maven_arch13.html)
-* [문서 서비스 API 사용](https://helpx.adobe.com/experience-manager/6-4/forms/using/aem-document-services-programmatically.html)
+* [문서 서비스 API 사용](https://helpx.adobe.com/kr/experience-manager/6-4/forms/using/aem-document-services-programmatically.html)
 
 또는 이 튜토리얼 에셋의 일부로 포함된 샘플 번들을 사용할 수 있습니다.
 

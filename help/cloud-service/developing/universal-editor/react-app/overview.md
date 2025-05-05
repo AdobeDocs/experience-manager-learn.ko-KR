@@ -56,7 +56,7 @@ ht-degree: 0%
 
 React 앱의 콘텐츠는 GraphQL API를 사용하여 AEM에서 제공하며 사용자 인터페이스는 두 개의 React 구성 요소인 `Teams` 및 `Person`을(를) 사용하여 빌드되었습니다.
 
-해당 튜토리얼을 통해 **WKND Teams** React 앱을 빌드하는 방법을 배울 수 있습니다. 자습서는 [여기](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview)에서 찾을 수 있습니다.
+해당 튜토리얼을 통해 **WKND Teams** React 앱을 빌드하는 방법을 배울 수 있습니다. 자습서는 [여기](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview)에서 찾을 수 있습니다.
 
 ## 다음 단계
 

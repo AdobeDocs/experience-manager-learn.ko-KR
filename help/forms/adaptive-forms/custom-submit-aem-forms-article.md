@@ -22,7 +22,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >이 문서의 코드는 적응형 양식을 기반으로 하는 핵심 구성 요소에서는 작동하지 않습니다.
->[핵심 구성 요소 기반 적응형 양식에 대한 동등한 문서는 여기](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/custom-submit-headless-forms/custom-submit-service.html?lang=en)에서 사용할 수 있습니다.
+>[핵심 구성 요소 기반 적응형 양식에 대한 동등한 문서는 여기](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/custom-submit-headless-forms/custom-submit-service.html?lang=ko)에서 사용할 수 있습니다.
 
 
 이 문서에서는 적응형 Forms 제출을 처리하기 위한 사용자 지정 제출 액션을 만드는 데 필요한 단계를 안내합니다.

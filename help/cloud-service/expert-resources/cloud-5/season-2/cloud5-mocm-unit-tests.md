@@ -25,7 +25,7 @@ ht-degree: 6%
 ## 이 비디오에서 다루는 콘텐츠
 
 + 자동화된 검사 개요
-+ [사용자 지정 코드 품질 규칙](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/test-results/custom-code-quality-rules.html)
++ [사용자 지정 코드 품질 규칙](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/test-results/custom-code-quality-rules.html?lang=ko)
 
 ## 추가 리소스
 

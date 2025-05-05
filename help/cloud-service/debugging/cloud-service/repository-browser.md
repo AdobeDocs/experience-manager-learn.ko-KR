@@ -30,7 +30,7 @@ Repository Browser는 AEM의 기본 데이터 저장소에 대한 가시성을 �
 
 AEM as a Cloud Service의 저장소 브라우저에 액세스하려면 다음을 수행하십시오.
 
-1. 사용자에게 [필요한 액세스 권한이 있는지 확인](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/repository-browser.html#access-prerequisites)
+1. 사용자에게 [필요한 액세스 권한이 있는지 확인](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/repository-browser.html?lang=ko#access-prerequisites)
 1. [Cloud Manager](https://my.cloudmanager.adobe.com)에 로그인
 1. 디버그할 AEM as a Cloud Service 환경이 포함된 프로그램 선택
 1. 디버깅할 AEM as a Cloud Service 환경에 해당하는 [Developer Console](./developer-console.md)을(를) 엽니다.
@@ -45,4 +45,4 @@ AEM as a Cloud Service의 저장소 브라우저에 액세스하려면 다음을
 
 ## 게시 및 미리보기 액세스
 
-기본적으로 게시 또는 미리보기에 대한 액세스가 제한되어 저장소 브라우저의 사용 가능한 리소스가 줄어듭니다. [게시(또는 미리보기)에 있는 모든 리소스를 보려면 게시(또는 미리보기) 관리자 역할에 사용자를 추가하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/repository-browser.html#navigate-the-hierarchy)
+기본적으로 게시 또는 미리보기에 대한 액세스가 제한되어 저장소 브라우저의 사용 가능한 리소스가 줄어듭니다. [게시(또는 미리보기)에 있는 모든 리소스를 보려면 게시(또는 미리보기) 관리자 역할에 사용자를 추가하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/repository-browser.html?lang=ko#navigate-the-hierarchy)

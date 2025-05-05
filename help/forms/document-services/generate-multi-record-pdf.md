@@ -25,7 +25,7 @@ OutputService는 폼 디자인과 데이터를 사용하여 문서를 만들고 
 
 ![multi-record-xml](assets/multi-record-xml.PNG)
 
-데이터 xml에는 2개의 레코드가 있습니다. 각 레코드는 form1 요소에 의해 표시됩니다. 이 XML은 OutputService [generatePDFOutputBatch 메서드](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/OutputService.html)에 전달됩니다. PDF 문서 목록(레코드당 하나)이 제공됩니다.
+데이터 xml에는 2개의 레코드가 있습니다. 각 레코드는 form1 요소에 의해 표시됩니다. 이 XML은 OutputService [generatePDFOutputBatch 메서드](https://helpx.adobe.com/kr/aem-forms/6/javadocs/com/adobe/fd/output/api/OutputService.html)에 전달됩니다. PDF 문서 목록(레코드당 하나)이 제공됩니다.
 generatePDFOutputBatch 메서드의 서명은 다음 매개 변수를 사용합니다
 
 * 템플릿 - 키로 식별되는 템플릿이 포함된 맵
