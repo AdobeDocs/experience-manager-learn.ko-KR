@@ -1,15 +1,15 @@
 ---
-title: AEM Sites 비디오 및 자습서
-description: Adobe Experience Manager(AEM) Sites는 선도적인 경험 관리 플랫폼입니다. 이 사용 안내서에는 AEM Sites의 다양한 기능과 성능에 대한 비디오 및 튜토리얼이 포함되어 있습니다.
+title: AEM Sites 비디오 및 튜토리얼
+description: Adobe Experience Manager Sites의 기능과 성능에 대한 비디오 및 튜토리얼을 찾아보십시오. AEM Sites은 선도적인 경험 관리 플랫폼입니다.
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 topic: Content Management
 doc-type: Catalog
 exl-id: cde4ce7f-0afe-4632-8c1c-354586f296d5
-source-git-commit: 5bd752ec257763e6d5da99c3da4b44fa9a43fd25
+source-git-commit: 85472bce41e7d2911bcb15d1ec70be2b094012fc
 workflow-type: tm+mt
-source-wordcount: '517'
-ht-degree: 5%
+source-wordcount: '512'
+ht-degree: 6%
 
 ---
 
@@ -52,7 +52,7 @@ AEM Sites은 경험을 구축, 작성 및 전달하는 세 가지 방법을 제�
 
 <!-- CARDS
 
-* https://experienceleague.adobe.com/ko/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview
+* https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview
   {title = Traditional Sites - WKND Tutorial}
   {description = Learn how to build a sample AEM Sites project using the WKND tutorial. This guide walks you through project setup, Core Components, Editable Templates, client-side libraries, and component development.}
   {image = ./assets/aem-wknd-spa-editor-tutorial.png}
@@ -62,7 +62,7 @@ AEM Sites은 경험을 구축, 작성 및 전달하는 세 가지 방법을 제�
   {description = Explore Edge Delivery Services with comprehensive guides. The Build, Publish, and Launch guides cover everything you need to get started with EDS.}
   {image = ./assets/edge-delivery-services.png}
   {target = _blank}
-* https://experienceleague.adobe.com/ko/docs/experience-manager-learn/getting-started-with-aem-headless/overview
+* https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/overview
   {title = Headless/API-First - Tutorials}
   {description = Learn how to build headless applications powered by AEM content. Tutorials cover frameworks like iOS, Android, and React—choose what fits your stack.}
   {image = ./assets/headless.png}
@@ -120,7 +120,7 @@ AEM Sites은 경험을 구축, 작성 및 전달하는 세 가지 방법을 제�
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-learn/getting-started-with-aem-headless/overview" title="Headless/API-First - 튜토리얼" target="_self" rel="referrer">
+                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/overview" title="Headless/API-First - 튜토리얼" target="_self" rel="referrer">
                         <img class="is-bordered-r-small" src="./assets/headless.png" alt="Headless/API-First - 튜토리얼"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
@@ -129,11 +129,11 @@ AEM Sites은 경험을 구축, 작성 및 전달하는 세 가지 방법을 제�
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-learn/getting-started-with-aem-headless/overview" target="_self" rel="referrer" title="Headless/API-First - 튜토리얼">헤드리스/API 우선 - 튜토리얼</a>
+                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/overview" target="_self" rel="referrer" title="Headless/API-First - 튜토리얼">헤드리스/API 우선 - 튜토리얼</a>
                     </p>
                     <p class="is-size-6">AEM 콘텐츠로 구동되는 Headless 애플리케이션을 구축하는 방법에 대해 알아봅니다. 튜토리얼에서는 iOS, Android™ 및 React와 같은 프레임워크를 다루며 스택에 맞는 항목을 선택합니다.</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-learn/getting-started-with-aem-headless/overview" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/overview" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">자세히 알아보기</span>
                 </a>
             </div>
@@ -145,10 +145,10 @@ AEM Sites은 경험을 구축, 작성 및 전달하는 세 가지 방법을 제�
 
 ## 추가 리소스
 
-* [AEM Sites 작성 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/sites/authoring/essentials/first-steps)
-* [AEM Sites 개발 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/developing/introduction/getting-started)
-* [AEM Sites 관리 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/sites/administering/home)
-* [AEM Sites 배포 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/deploying/introduction/platform)
+* [AEM Sites 작성 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/essentials/first-steps)
+* [AEM Sites 개발 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/introduction/getting-started)
+* [AEM Sites 관리 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/home)
+* [AEM Sites 배포 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/introduction/platform)
 * [AEM as a Cloud Service 자습서](/help/cloud-service/overview.md)
 * [AEM Assets 자습서](/help/assets/overview.md)
 * [AEM Forms 자습서](/help/forms/overview.md)

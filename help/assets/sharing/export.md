@@ -6,15 +6,15 @@ version: Experience Manager as a Cloud Service
 topic: Content Management
 role: Developer
 level: Experienced
-last-substantial-update: 2024-04-08T00:00:00Z
+last-substantial-update: 2025-04-28T00:00:00Z
 doc-type: Tutorial
 jira: KT-15313
 thumbnail: KT-15313.jpeg
 exl-id: d04c3316-6f8f-4fd1-9df1-3fe09d44f735
 duration: 256
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 107a9a77a1bf2337f309d503a4a310d8d0781f0d
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '510'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 ## 스크립트 내보내기
 
-JavaScript 모듈로 작성된 스크립트는 `node-fetch`에 종속되어 있으므로 Node.js 프로젝트의 일부입니다. [프로젝트를 zip 파일로 다운로드](./assets/export/export-aem-assets-script.zip)하거나 `module` 형식의 빈 Node.js 프로젝트에 아래 스크립트를 복사하고 `npm install node-fetch`을(를) 실행하여 종속성을 설치할 수 있습니다.
+JavaScript 모듈로 작성된 스크립트는 `node-fetch` 및 `p-limit`에 종속되어 있으므로 Node.js 프로젝트의 일부입니다. `module` 형식의 빈 Node.js 프로젝트에 아래 스크립트를 복사하고 `npm install node-fetch p-limit`을(를) 실행하여 종속성을 설치할 수 있습니다.
 
 이 스크립트는 AEM Assets 폴더 트리로 이동하여 에셋과 폴더를 컴퓨터의 로컬 폴더로 다운로드합니다. [AEM Assets HTTP API](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets)를 사용하여 폴더 및 에셋 데이터를 가져오고 에셋의 원본 렌디션을 다운로드합니다.
 
@@ -41,6 +41,7 @@ JavaScript 모듈로 작성된 스크립트는 `node-fetch`에 종속되어 있�
 import fetch from 'node-fetch';
 import { promises as fs } from 'fs';
 import path from 'path';
+import pLimit from 'p-limit';
 
 // Do not process the contents of these well-known AEM system folders
 const SKIP_FOLDERS = ['/content/dam/appdata', '/content/dam/projects', '/content/dam/_CSS', '/content/dam/_DMSAMPLE' ];
@@ -54,11 +55,10 @@ const SKIP_FOLDERS = ['/content/dam/appdata', '/content/dam/projects', '/content
  */
 function isValidFolder(entity, aemPath) {
     if (aemPath === '/content/dam') {
-        // Always allow processing /content/dam 
         return true;
     } else if (!entity.class.includes('assets/folder')) {
         return false;
-    } if (SKIP_FOLDERS.find((path) => path === aemPath)) {
+    } else if (SKIP_FOLDERS.find((path) => path === aemPath)) {
         return false;
     } else if (entity.properties.hidden) {
         return false;
@@ -78,7 +78,6 @@ function isDownloadable(entity) {
     } else if (entity.properties.contentFragment) {
         return false;
     }
-
     return true;
 }
 
@@ -86,7 +85,7 @@ function isDownloadable(entity) {
  * Helper function to get the link from the entity based on the relationship name.
  * @param {Object} entity the entity from the AEM Assets HTTP API
  * @param {String} rel the relationship name
- * @returns 
+ * @returns {String} link URL
  */
 function getLink(entity, rel) {
     return entity.links.find(link => link.rel.includes(rel));
@@ -95,7 +94,7 @@ function getLink(entity, rel) {
 /**
  * Helper function to fetch JSON data from the AEM Assets HTTP API.
  * @param {String} url the AEM Assets HTTP API URL to fetch data from
- * @returns the JSON response of the AEM Assets HTTP API
+ * @returns {Object} the JSON response
  */
 async function fetchJSON(url) {
     const response = await fetch(url, {
@@ -107,7 +106,7 @@ async function fetchJSON(url) {
     });
 
     if (!response.ok) {
-        throw new Error(`Error: ${response.status}`);
+        throw new Error(`Error fetching ${url}: ${response.status}`);
     }
 
     return response.json();
@@ -137,16 +136,15 @@ async function downloadFile(url, outputPath) {
 }
 
 /**
- * Main entry
- * @param {Object} options the options for downloading assets
- * @param {String} options.folderUrl the URL of the AEM folder to download
- * @param {String} options.localPath the local path to save the downloaded assets
- * @param {String} options.aemPath the AEM path of the folder to download
+ * Main entry point to download assets from AEM.
+ * 
+ * @param {Object} options 
+ * @param {String} options.apiUrl (optional) the direct AEM Assets HTTP API URL
+ * @param {String} options.localPath local filesystem path to save the assets
+ * @param {String} options.aemPath AEM folder path
  */
-async function downloadAssets({apiUrl, localPath = LOCAL_DOWNLOAD_FOLDER, aemPath = '/content/dam'}) {    
+async function downloadAssets({ apiUrl, localPath = LOCAL_DOWNLOAD_FOLDER, aemPath = '/content/dam' }) {
     if (!apiUrl) {
-        // Handle the initial call to the script, which should just provide the AEM path
-        // Construct the proper AEM Assets HTTP API URL as it uses a truncated AEM path
         const prefix = "/content/dam/";
         let apiPath = aemPath.startsWith(prefix) ? aemPath.substring(prefix.length) : aemPath;    
 
@@ -154,13 +152,13 @@ async function downloadAssets({apiUrl, localPath = LOCAL_DOWNLOAD_FOLDER, aemPat
             apiPath = '/' + apiPath;
         }
 
-        apiUrl = `${AEM_HOST}/api/assets.json${apiPath}`
+        apiUrl = `${AEM_HOST}/api/assets.json${apiPath}`;
     }
     
     const data = await fetchJSON(apiUrl);
     const entities = data.entities || [];
 
-    // Process folders first
+    // First, process folders
     for (const folder of entities.filter(entity => entity.class.includes('assets/folder'))) {
         const newLocalPath = path.join(localPath, folder.properties.name);
         const newAemPath = path.join(aemPath, folder.properties.name);
@@ -170,33 +168,26 @@ async function downloadAssets({apiUrl, localPath = LOCAL_DOWNLOAD_FOLDER, aemPat
         }
 
         await fs.mkdir(newLocalPath, { recursive: true });
-    
+
         await downloadAssets({
-            apiUrl: getLink(folder, 'self')?.href, 
-            localPath: newLocalPath, 
+            apiUrl: getLink(folder, 'self')?.href,
+            localPath: newLocalPath,
             aemPath: newAemPath
         });
     }
 
-    let downloads = [];
+    // Now, process assets with concurrency limit
+    const limit = pLimit(MAX_CONCURRENT_DOWNLOADS);
+    const downloads = [];
 
-    // Process assets
     for (const asset of entities.filter(entity => entity.class.includes('assets/asset'))) {
         const assetLocalPath = path.join(localPath, asset.properties.name);
         if (isDownloadable(asset)) {
-            downloads.push(downloadFile(getLink(asset, 'content')?.href, assetLocalPath));
-        }
-
-        // Process in batches of MAX_CONCURRENT_DOWNLOADS
-        if (downloads.length >= MAX_CONCURRENT_DOWNLOADS) {
-            await Promise.all(downloads);
-            downloads = [];
+            downloads.push(limit(() => downloadFile(getLink(asset, 'content')?.href, assetLocalPath)));
         }
     }
 
-    // Wait for the remaining downloads to finish
     await Promise.all(downloads);
-    downloads = [];
 
     // Handle pagination
     const nextUrl = getLink(data, 'next');
@@ -224,7 +215,7 @@ const AEM_ASSETS_FOLDER = '/content/dam/wknd-shared';
 // The local folder to save the downloaded assets.
 const LOCAL_DOWNLOAD_FOLDER = './exported-assets';
 
-// The number of maximum concurrent downloads to avoid overwhelming the client or server. 10 is typically a good value.
+// The number of maximum concurrent downloads to avoid overwhelming the client or server.
 const MAX_CONCURRENT_DOWNLOADS = 10;
 
 /***** SCRIPT ENTRY POINT *****/
@@ -232,7 +223,7 @@ const MAX_CONCURRENT_DOWNLOADS = 10;
 console.time('Download AEM assets');
 
 await downloadAssets({
-    aemPath: AEM_ASSETS_FOLDER, 
+    aemPath: AEM_ASSETS_FOLDER,
     localPath: LOCAL_DOWNLOAD_FOLDER
 }).catch(console.error);
 
@@ -243,7 +234,7 @@ console.timeEnd('Download AEM assets');
 
 스크립트가 다운로드되면 스크립트 하단에 있는 구성 변수를 업데이트합니다.
 
-`AEM_ACCESS_TOKEN`은(는) [AEM as a Cloud Service에 대한 토큰 기반 인증](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview) 자습서의 단계를 사용하여 가져올 수 있습니다. 내보내기가 완료되는 데 24시간 미만이 걸리고 토큰을 생성하는 사용자가 내보낼 에셋에 대한 읽기 액세스 권한이 있는 한 24시간 개발자 토큰으로 충분한 경우가 많습니다.
+`AEM_ACCESS_TOKEN`은(는) [AEM as a Cloud Service에 대한 토큰 기반 인증](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview) 자습서의 단계를 사용하여 가져올 수 있습니다. 내보내기가 완료되는 데 24시간 미만이 걸리고 토큰을 생성하는 사용자가 내보낼 에셋에 대한 읽기 액세스 권한이 있는 한 24시간 개발자 토큰으로 충분한 경우가 많습니다.
 
 ```javascript
 ...
@@ -294,6 +285,6 @@ Downloaded asset: exported-assets/wknd-shared/en/magazine/western-australia/adob
 Download AEM assets: 24.770s
 ```
 
-내보낸 자산은 `LOCAL_DOWNLOAD_FOLDER` 구성에 지정된 로컬 폴더에서 찾을 수 있습니다. 폴더 구조는 AEM Assets 폴더 구조를 적절한 하위 폴더로 다운로드한 에셋과 함께 미러링합니다. 이러한 파일은 [지원되는 클라우드 저장소 공급자](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view)에 업로드하거나, [다른 AEM 인스턴스로 일괄 가져오기](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/migration/bulk-import)하거나, 백업 목적으로 업로드할 수 있습니다.
+내보낸 자산은 `LOCAL_DOWNLOAD_FOLDER` 구성에 지정된 로컬 폴더에서 찾을 수 있습니다. 폴더 구조는 AEM Assets 폴더 구조를 적절한 하위 폴더로 다운로드한 에셋과 함께 미러링합니다. 이러한 파일은 [지원되는 클라우드 저장소 공급자](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view)에 업로드하거나, [다른 AEM 인스턴스로 일괄 가져오기](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/migration/bulk-import)하거나, 백업 목적으로 업로드할 수 있습니다.
 
 ![내보낸 자산](./assets/export/exported-assets.png)
