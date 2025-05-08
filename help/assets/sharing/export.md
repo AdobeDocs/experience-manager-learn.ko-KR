@@ -234,7 +234,7 @@ console.timeEnd('Download AEM assets');
 
 스크립트가 다운로드되면 스크립트 하단에 있는 구성 변수를 업데이트합니다.
 
-`AEM_ACCESS_TOKEN`은(는) [AEM as a Cloud Service에 대한 토큰 기반 인증](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview) 자습서의 단계를 사용하여 가져올 수 있습니다. 내보내기가 완료되는 데 24시간 미만이 걸리고 토큰을 생성하는 사용자가 내보낼 에셋에 대한 읽기 액세스 권한이 있는 한 24시간 개발자 토큰으로 충분한 경우가 많습니다.
+`AEM_ACCESS_TOKEN`은(는) [AEM as a Cloud Service에 대한 토큰 기반 인증](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview) 자습서의 단계를 사용하여 가져올 수 있습니다. 내보내기가 완료되는 데 24시간 미만이 걸리고 토큰을 생성하는 사용자가 내보낼 에셋에 대한 읽기 액세스 권한이 있는 한 24시간 개발자 토큰으로 충분한 경우가 많습니다.
 
 ```javascript
 ...
@@ -285,6 +285,6 @@ Downloaded asset: exported-assets/wknd-shared/en/magazine/western-australia/adob
 Download AEM assets: 24.770s
 ```
 
-내보낸 자산은 `LOCAL_DOWNLOAD_FOLDER` 구성에 지정된 로컬 폴더에서 찾을 수 있습니다. 폴더 구조는 AEM Assets 폴더 구조를 적절한 하위 폴더로 다운로드한 에셋과 함께 미러링합니다. 이러한 파일은 [지원되는 클라우드 저장소 공급자](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view)에 업로드하거나, [다른 AEM 인스턴스로 일괄 가져오기](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/migration/bulk-import)하거나, 백업 목적으로 업로드할 수 있습니다.
+내보낸 자산은 `LOCAL_DOWNLOAD_FOLDER` 구성에 지정된 로컬 폴더에서 찾을 수 있습니다. 폴더 구조는 AEM Assets 폴더 구조를 적절한 하위 폴더로 다운로드한 에셋과 함께 미러링합니다. 이러한 파일은 [지원되는 클라우드 저장소 공급자](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view)에 업로드하거나, [다른 AEM 인스턴스로 일괄 가져오기](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/migration/bulk-import)하거나, 백업 목적으로 업로드할 수 있습니다.
 
 ![내보낸 자산](./assets/export/exported-assets.png)
