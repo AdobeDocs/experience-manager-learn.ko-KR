@@ -12,9 +12,9 @@ thumbnail: KT-17426.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 1df4c816-b354-4803-bb6c-49aa7d7404c6
-source-git-commit: 610fe6fc91a400baa9d7f5d40a6a5c2084f93ed0
+source-git-commit: 34a22580db6dc32b5c4c5945af83600be2e0a852
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1440'
 ht-degree: 1%
 
 ---
@@ -22,6 +22,8 @@ ht-degree: 1%
 # OpenAPI 기반 AEM API 설정
 
 OpenAPI 기반 AEM API에 액세스할 수 있도록 AEM as a Cloud Service 환경을 설정하는 방법에 대해 알아봅니다.
+
+이 예에서는 서버 간 인증 방법을 사용하는 AEM Assets API를 사용하여 설정 프로세스를 보여 줍니다. 다른 OpenAPI 기반 AEM API에 대해서도 동일한 단계를 따를 수 있습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3457510?quality=12&learn=on)
 
@@ -78,13 +80,25 @@ _새 제품 프로필_&#x200B;이 있으면 ADC(Adobe Developer Console)에서 O
 
 ![제품 프로필과 연결된 서비스 검토](./assets/setup/review-services-associated-with-product-profile.png)
 
-기본적으로 **AEM Assets API 사용자** 서비스는 제품 프로필과 연결되어 있지 않습니다. 새로 추가된 **AEM Assets Collaborator 사용자 - 작성자 - 프로그램 XXX - 환경 XXX** 제품 프로필과 연결합니다. 이 연결 후에 ADC 프로젝트 _자산 작성자 API_&#x200B;에서 원하는 서버 간 인증을 설정하고 ADC 프로젝트(다음 단계에서 생성)의 인증 계정을 제품 프로필과 연결할 수 있습니다.
+### AEM Assets API 액세스 활성화{#enable-aem-assets-apis-access}
+
+기본적으로 **AEM Assets API 사용자** 서비스는 제품 프로필과 연결되어 있지 않습니다. 새로 추가된 **AEM Assets Collaborator 사용자 - 작성자 - 프로그램 XXX - 환경 XXX** 제품 프로필 또는 AEM Assets API 액세스에 사용하려는 다른 제품 프로필과 연결합니다.
 
 ![AEM Assets API 사용자 서비스를 제품 프로필과 연결](./assets/setup/associate-aem-assets-api-users-service-with-product-profile.png)
 
+### 서버 간 인증 활성화
+
+원하는 AEM API에 대해 서버 간 인증을 활성화하려면 Adobe Developer Console(ADC)를 사용하여 통합을 설정하는 사용자를 서비스가 연결된 제품 프로필에 개발자로 추가해야 합니다.
+
+예를 들어 AEM Assets API에 대해 서버 간 인증을 사용하려면 사용자를 **AEM Assets Collaborator 사용자 - 작성자 - 프로그램 XXX - 환경 XXX** 제품 프로필에 개발자로 추가해야 합니다.
+
+![제품 프로필에 개발자 연결](./assets/setup/associate-developer-to-product-profile.png)
+
+이 연결 후에 ADC 프로젝트 _자산 작성자 API_&#x200B;에서 원하는 서버 간 인증을 설정하고 ADC 프로젝트(다음 단계에서 생성)의 인증 계정을 제품 프로필과 연결할 수 있습니다.
+
 >[!IMPORTANT]
 >
->위의 단계는 AEM Assets API에 대해 서버 간 인증을 활성화하는 데 중요합니다. 이 연결이 없으면 AEM Assets API를 서버 간 인증 방법과 함께 사용할 수 없습니다.
+>위의 단계는 원하는 AEM API에 대해 서버 간 인증을 활성화하는 데 중요합니다. 이 연결이 없으면 AEM API를 서버 간 인증 방법과 함께 사용할 수 없습니다.
 
 ## Adobe Developer Console(ADC) 프로젝트 만들기{#adc-project}
 
@@ -125,6 +139,11 @@ ADC 프로젝트를 만든 후 원하는 AEM API를 추가하고, 인증을 설�
    ![인증 선택](./assets/s2s/select-authentication.png)
 
    서버 간 인증은 사용자 상호 작용 없이 API 액세스가 필요한 백엔드 서비스에 이상적입니다. 웹 앱 및 단일 페이지 앱 인증 옵션은 사용자를 대신하여 API 액세스가 필요한 애플리케이션에 적합합니다. 자세한 내용은 [OAuth 서버 간 자격 증명과 웹 앱 간 자격 증명 및 단일 페이지 앱 자격 증명 간의 차이점](./overview.md#difference-between-oauth-server-to-server-vs-web-app-vs-single-page-app-credentials)을 참조하십시오.
+
+   >[!TIP]
+   >
+   >서버 간 인증 옵션이 표시되지 않으면 통합을 설정하는 사용자가 서비스가 연결된 제품 프로필에 개발자로 추가되지 않은 것입니다. 자세한 내용은 [서버 간 인증 사용](#enable-server-to-server-authentication)을 참조하십시오.
+
 
 1. 필요한 경우 보다 쉽게 식별할 수 있도록 API의 이름을 변경할 수 있습니다. 데모 목적으로 기본 이름이 사용됩니다.
 

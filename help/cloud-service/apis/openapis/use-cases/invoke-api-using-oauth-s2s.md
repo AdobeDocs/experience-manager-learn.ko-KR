@@ -12,9 +12,9 @@ thumbnail: KT-16516.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 8338a905-c4a2-4454-9e6f-e257cb0db97c
-source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
+source-git-commit: 34a22580db6dc32b5c4c5945af83600be2e0a852
 workflow-type: tm+mt
-source-wordcount: '1687'
+source-wordcount: '1727'
 ht-degree: 2%
 
 ---
@@ -88,6 +88,10 @@ OAuth 서버 간 인증은 사용자 상호 작용 없이 API 액세스가 필�
 1. 그런 다음 _API 구성_ 대화 상자에서 **서버 간** 인증 옵션을 선택하고 **다음**&#x200B;을(를) 클릭합니다. 서버 간 인증은 사용자 상호 작용 없이 API 액세스가 필요한 백엔드 서비스에 이상적입니다.
 
    ![인증 선택](../assets/s2s/select-authentication.png)
+
+   >[!TIP]
+   >
+   >서버 간 인증 옵션이 표시되지 않으면 통합을 설정하는 사용자가 서비스가 연결된 제품 프로필에 개발자로 추가되지 않은 것입니다. 자세한 내용은 [서버 간 인증 사용](../setup.md#enable-server-to-server-authentication)을 참조하십시오.
 
 1. 보다 쉽게 식별할 수 있도록 자격 증명의 이름을 바꾸고 **다음**&#x200B;을 클릭합니다. 데모 목적으로 기본 이름이 사용됩니다.
 
