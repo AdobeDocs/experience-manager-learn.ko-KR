@@ -12,7 +12,7 @@ last-substantial-update: 2024-02-13T00:00:00Z
 jira: KT-14901
 thumbnail: KT-14901.jpeg
 exl-id: 070cbe54-2379-448b-bb7d-3756a60b65f0
-source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
+source-git-commit: ab499385a1df8c4b0ac58b6a382faa29b262e3ba
 workflow-type: tm+mt
 source-wordcount: '1518'
 ht-degree: 0%
@@ -57,8 +57,8 @@ AEM Assets 이벤트를 받고 처리하기 위해 [Adobe I/O Runtime](https://d
 
 높은 수준의 개발 단계는 다음과 같습니다.
 
-1. [AEM as a Cloud Service 환경 현대화](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis#modernization-of-aem-as-a-cloud-service-environment)
-1. [AEM API 액세스 사용](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis#enable-aem-apis-access)
+1. [AEM as a Cloud Service 환경 현대화](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis#modernization-of-aem-as-a-cloud-service-environment)
+1. [AEM API 액세스 사용](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis#enable-aem-apis-access)
 1. [Adobe Developer Console(ADC)에서 프로젝트 만들기](./runtime-action.md#Create-project-in-Adobe-Developer-Console)
 1. [로컬 개발을 위해 프로젝트 초기화](./runtime-action.md#initialize-project-for-local-development)
 1. ADC에서 프로젝트 구성
@@ -77,7 +77,7 @@ AEM Assets 이벤트를 수신하고 이전 단계에서 만든 Adobe I/O Runtim
 
 - ADC에서 3단계에서 만든 [프로젝트](https://developer.adobe.com/console/projects)로 이동합니다. 해당 프로젝트에서 `aio app deploy`을(를) 4단계 지침의 일부로 실행할 때 런타임 작업이 배포되는 `Stage` 작업 영역을 선택하십시오.
 
-- **서비스 추가** 단추를 클릭하고 **이벤트** 옵션을 선택합니다. **이벤트 추가** 대화 상자에서 **Experience Cloud** > **AEM Assets**&#x200B;을 선택하고 **다음**&#x200B;을 클릭합니다.
+- **서비스 추가** 단추를 클릭하고 **이벤트** 옵션을 선택합니다. **이벤트 추가** 대화 상자에서 **Experience Cloud** > **AEM Assets**&#x200B;을 선택하고 **다음**을 클릭합니다.
   ![AEM Assets 이벤트 - 이벤트 추가](../assets/examples/assets-pim-integration/add-aem-assets-event.png)
 
 - **이벤트 등록 구성** 단계에서 원하는 AEMCS 인스턴스, _자산 처리 완료_ 이벤트 및 OAuth 서버 간 인증 유형을 선택합니다.
@@ -221,7 +221,7 @@ ADC 프로젝트의 OAuth 서버 간 자격 증명 ClientID가 AEM 인스턴스�
         'Content-Type': 'application/json-patch+json',
         'If-Match': '*',
         'X-Adobe-Accept-Experimental': '1',
-        'X-Api-Key': 'aem-assets-management-api', // temporary value
+        'X-Api-Key': '12345676', // Use the `ClientID` value from the ADC Project's credentials section
         Authorization: `Bearer ${access_token}`,
       },
       body: JSON.stringify(transformedMetadata),
@@ -293,7 +293,7 @@ ADC 프로젝트의 OAuth 서버 간 자격 증명 ClientID가 AEM 인스턴스�
 
 기본적으로 WKND Sites 프로젝트에는 SKU, 공급업체 이름 등과 같은 PIM 관련 메타데이터를 표시하는 자산 메타데이터 스키마가 없습니다. AEM 인스턴스의 에셋 폴더에 에셋 메타데이터 스키마를 만들고 적용해 보겠습니다.
 
-1. AEM as a Cloud Service 자산 인스턴스에 로그인하고 [자산 보기](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/authoring/switch-views)에 있습니다.
+1. AEM as a Cloud Service 자산 인스턴스에 로그인하고 [자산 보기](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/authoring/switch-views)에 있습니다.
 
    ![AEM Assets 보기](../assets/examples/assets-pim-integration/aem-assets-view.png)
 
