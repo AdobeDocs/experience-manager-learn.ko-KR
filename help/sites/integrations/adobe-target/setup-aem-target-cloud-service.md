@@ -34,4 +34,4 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->이 비디오에 표시된 Adobe Target Cloud Services 구성에 알려진 문제가 있습니다. 이 문제가 해결될 때까지 비디오에서 동일한 단계를 따르되 [레거시 Adobe Target Cloud Services 구성](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-aem-cloud-services.html)을 사용하십시오.
+>이 비디오에 표시된 Adobe Target Cloud Services 구성에 알려진 문제가 있습니다. 이 문제가 해결될 때까지 비디오에서 동일한 단계를 따르되 [레거시 Adobe Target Cloud Services 구성](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-aem-cloud-services.html?lang=ko)을 사용하십시오.
