@@ -6,10 +6,10 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 17aa4aeb053a0bc0beca5e005185c49cf7a06a67
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 18%
+source-wordcount: '594'
+ht-degree: 21%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 18%
    + [벌크 메타데이터](document-authoring/bulk-metadata.md)
    + [페이지 메타데이터](document-authoring/page-metadata.md)
    + [작성자 인증](document-authoring/author-authentication.md)
-   + 하는 방법{#how-to}
+   + 방법{#how-to}
       + [문서 감사](./document-authoring/how-to/document-audit.md)
       + [문서 권한](./document-authoring/how-to/document-permissions.md)
       + [문서 버전](./document-authoring/how-to/document-versions.md)
@@ -73,20 +73,20 @@ ht-degree: 18%
    + [스타일 시스템](page-authoring/style-system-feature-video-use.md)
    + [타임워프](page-authoring/timewarp-feature-video-use.md)
    + [론치](page-authoring/launches.md)
-   + 피어에서 학습 {#expert-advice}
+   + 동료로부터 학습 {#expert-advice}
       + [사이트 계층 구조 팁](page-authoring/expert-advice/site-hierarchy.md)
 + 생성형 AI {#generative-ai}
    + [변형 생성](./generative-ai/generate-variations.md)
 + 콘텐츠 조각 {#content-fragments}
-   + [콘텐츠 조각 콘솔](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html?lang=ko){target=_blank}
+   + [콘텐츠 조각 콘솔](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html){target=_blank}
    + [콘텐츠 조각 작성](content-fragments/content-fragments-feature-video-use.md)
    + [컨텐츠 조각 전달](content-fragments/content-fragments-delivery-feature-video-use.md)
    + [콘텐츠 조각 번역](content-fragments/content-fragments-translation-feature-video-use.md)
    + [컨텐츠 조각과 경험 조각 비교](content-fragments/understand-content-fragments-and-experience-fragments.md)
-+ 경험 구성요소 {#experience-fragments}
++ 경험 조각 {#experience-fragments}
    + [경험 조각 사용](experience-fragments/experience-fragments-feature-video-use.md)
    + [빌딩 블록](experience-fragments/building-blocks.md)
-   + [콘텐츠 조각과 경험 조각 비교](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=ko){target=_blank}
+   + [콘텐츠 조각과 경험 조각 비교](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html){target=_blank}
 + Edge Delivery Services{#edge-delivery-services}
    + [개요](./edge-delivery-services/overview.md)
    + 개발{#developing}
@@ -119,8 +119,8 @@ ht-degree: 18%
    + [Edge Delivery Services](developing/edge-delivery-services.md)
    + [AEM Project Archetype](developing/aem-project-archetype.md)
    + [AEM Sites 시작](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR){target=_blank}
-   + [AEM Headless 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ko){target=_blank}
-   + [AEM SPA 편집기 및 반응 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=ko){target=_blank}
+   + [AEM Headless 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html){target=_blank}
+   + [AEM SPA 편집기 및 반응 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html){target=_blank}
    + [페이지 속성 확장](developing/page-properties-technical-video-develop.md)
    + [응답형 중단점](developing/responsive-breakpoints.md)
    + [스타일 시스템을 사용하여 개발](developing/style-system-technical-video-understand.md)
@@ -131,7 +131,7 @@ ht-degree: 18%
    + [소셜 미디어 공유](developing/social-media-sharing-technical-video-use.md)
    + [구성 요소 아이콘 사용자 정의](developing/component-icons-technical-video-develop.md)
 + 개인화 {#personalization}
-   + [Adobe Target과 통합](https://helpx.adobe.com/kr/marketing-cloud/how-to/aem-target.html){target=_blank}
+   + [Adobe Target과 통합](https://helpx.adobe.com/marketing-cloud/how-to/aem-target.html){target=_blank}
    + [경험 조각 및 Adobe Target 설정](personalization/experience-fragment-target-technical-video-setup.md)
    + [Adobe Target에서 경험 조각 사용](personalization/experience-fragment-target-offer-feature-video-use.md)
    + [ContextHub 설정](personalization/context-hub-technical-video-setup.md)
@@ -142,9 +142,9 @@ ht-degree: 18%
    + [구성 요소 콘솔](components/components-console-feature-video-use.md)
 + SEO {#seo}
    + [사이트맵](./seo/sitemaps.md)
-+ 단일 페이지 응용 프로그램 {#spa-editor}
++ SPA (Single Page Applications) {#spa-editor}
    + [SPA 편집기 사용](spa-editor/spa-editor-framework-feature-video-use.md)
-   + [AEM SPA 편집기 및 반응 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=ko){target=_blank}
+   + [AEM SPA 편집기 및 반응 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html){target=_blank}
 + 다중 사이트 관리 {#multi-site-management}
    + [언어 사본 소개](./multi-site-management/language-copy-overview.md)
    + [Live Copy 및 블루프린트](./multi-site-management/live-copy-and-blueprint.md)
@@ -179,7 +179,7 @@ ht-degree: 18%
    + Adobe 클라이언트 데이터 레이어 {#adobe-client-data-layer}
       + [Adobe 클라이언트 데이터 레이어 사용](integrations/adobe-client-data-layer/data-layer-overview.md)
       + [Adobe 클라이언트 데이터 레이어 사용자 지정](integrations/adobe-client-data-layer/data-layer-customize.md)
-   + Analytics {#analytics}
+   + 분석 {#analytics}
       + [Adobe Analytics으로 페이지 데이터 수집](integrations/analytics/collect-data-analytics.md)
       + [클릭한 구성 요소를 Adobe Analytics에서 추적](integrations/analytics/track-clicked-component.md)
       + [Analysis Workspace을 사용하여 데이터 분석](integrations/analytics/create-analytics-workspace.md)
@@ -192,8 +192,9 @@ ht-degree: 18%
       + [경험 조각 오퍼를 사용하여 Target 활동 만들기](integrations/adobe-target/create-target-activity.md)
       + [시각적 경험 작성기를 사용한 Personalization](integrations/adobe-target/personalization-using-vec.md)
       + [전체 웹 페이지 경험의 Personalization](integrations/adobe-target/personalization-web-page.md)
-+ 피어에서 학습 {#expert-resources}
++ 동료로부터 학습 {#expert-resources}
    + [개요](expert-resources/learn-from-your-peers-overview.md)
+   + [AEM Sites에서 작성 안내서 만들기](expert-resources/authoring-guide-in-sites.md)
    + [AEM Sites 성숙도 평가](expert-resources/maturity-assessment.md)
    + [사이트 유지 관리](expert-resources/site-maintenance.md)
    + [AEM 챔피언 팁 및 요령: 세션 1](expert-resources/champion-tips-1.md)
