@@ -60,5 +60,5 @@ AEM에서 Dynamic Media를 사용하여 가상 렌디션을 만들고, 투명도
 
 ## Dynamic Media 이미지 서버 API
 
-* [Dynamic Media 이미지 제공 및 렌더링 API](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/c-http-protocol-reference)
+* [Dynamic Media 이미지 제공 및 렌더링 API](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/c-http-protocol-reference)
 * [Dynamic Media 스냅숏 미리 보기](https://snapshot.scene7.com/)
