@@ -25,4 +25,4 @@ ht-degree: 0%
 
 진입 장벽을 낮추고 워크플로를 통합하며 GenAI 도구를 통해 비즈니스 효과를 극대화하기 위한 Adobe의 접근 방식에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459231/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3462157/?learn=on&enablevpops&captions=kor)

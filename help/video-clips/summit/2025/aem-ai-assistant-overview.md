@@ -25,4 +25,4 @@ ht-degree: 0%
 
 AEM AI Assistant를 통해 제품 지식 검색을 간소화하고 지원 티켓 생성을 자동화하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459225/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3461926/?learn=on&enablevpops&captions=kor)

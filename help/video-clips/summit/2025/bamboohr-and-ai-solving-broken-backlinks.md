@@ -25,4 +25,4 @@ ht-degree: 0%
 
 BambooHR이 어떻게 AI를 사용하여 끊어진 백링크를 식별하고 수정하여 유기 트래픽의 4% 증가를 초래했는지 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459238/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3461994/?learn=on&enablevpops&captions=kor)

@@ -25,4 +25,4 @@ ht-degree: 0%
 
 디지털 경험을 최적화하기 위한 세 가지 주요 원칙인 기본 사항 수정, AI 활용 및 전략 리더 역량 강화에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459234/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3462049/?learn=on&enablevpops&captions=kor)
