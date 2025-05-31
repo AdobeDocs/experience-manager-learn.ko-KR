@@ -21,7 +21,7 @@ ht-degree: 6%
 
 AEM에서 Dynamic Media를 사용하여 가상 렌디션을 만들고, 투명도를 관리하고, 이미지 처리를 자동화하여 확장 가능한 컨텐츠 재사용을 가능하게 하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459589/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3463052/?learn=on&enablevpops&captions=kor)
 
 
 ## Dynamic Media 자산 예

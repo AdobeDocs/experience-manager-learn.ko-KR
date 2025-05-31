@@ -22,4 +22,4 @@ ht-degree: 0%
 
 AEM Assets Content Hub을 사용하여 승인된 브랜드 에셋을 쉽게 관리하고 공유하는 방법을 알아봅니다. 이를 통해 팀은 그 어느 때보다 빠르게 마케팅 캠페인을 실행할 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3457638/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3463063/?learn=on&enablevpops&captions=kor)

@@ -221,7 +221,7 @@ AEM Assets Content Hub이 다양한 컨텍스트에서 어떻게 효과적으로
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./use-cases/manage-assets.md" title="AEM Assets Content Hub을 사용하여 에셋을 관리하는 방법" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3457638/?format=jpeg&nocache=1744751770120" alt="AEM Assets Content Hub을 사용하여 에셋을 관리하는 방법"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3463063/?format=jpeg&nocache=1744751770120&captions=kor" alt="AEM Assets Content Hub을 사용하여 에셋을 관리하는 방법"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
