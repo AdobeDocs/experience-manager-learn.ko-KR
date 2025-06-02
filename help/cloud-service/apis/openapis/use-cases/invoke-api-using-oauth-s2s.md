@@ -12,7 +12,7 @@ thumbnail: KT-16516.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 8338a905-c4a2-4454-9e6f-e257cb0db97c
-source-git-commit: 34a22580db6dc32b5c4c5945af83600be2e0a852
+source-git-commit: 9a5d811cf92a09da27057f99e1b6b2ed8df2a414
 workflow-type: tm+mt
 source-wordcount: '1727'
 ht-degree: 2%
@@ -139,9 +139,9 @@ GET https://{bucket}.adobeaemcloud.com/adobe/../assets/{assetId}/metadata
 
 ### 브라우저를 사용하여 API 호출
 
-응용 프로그램을 개발하기 전에 [API 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)의 **시도** 기능을 사용하여 API를 호출해 보겠습니다.
+응용 프로그램을 개발하기 전에 [API 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/author/)의 **시도** 기능을 사용하여 API를 호출해 보겠습니다.
 
-1. 브라우저에서 [Assets 작성자 API 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)를 엽니다.
+1. 브라우저에서 [Assets 작성자 API 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/author/)를 엽니다.
 
 1. _메타데이터_ 섹션을 확장하고 **지정된 자산의 메타데이터 배달** 옵션을 클릭합니다.
 
