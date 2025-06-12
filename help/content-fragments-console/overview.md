@@ -23,7 +23,7 @@ ht-degree: 100%
 
 Adobe Experience Manager의 콘텐츠 조각 콘솔을 사용하면 콘텐츠 조각을 쉽게 관리하고 작성할 수 있습니다. 이 비디오를 시청하여 콘텐츠 조각 콘솔을 최대로 활용하는 방법을 알아보십시오.
 
-콘텐츠 조각 콘솔과 해당 기능에 대한 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html)를 검토하십시오.
+콘텐츠 조각 콘솔과 해당 기능에 대한 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=ko)를 검토하십시오.
 
 ## 비디오
 

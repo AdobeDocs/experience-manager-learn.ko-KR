@@ -180,4 +180,4 @@ AEM Sites: 기본 실행 및 운영
 
 콘텐츠 속도에 대한 심도 있는 논의를 원한다면 Monique Misrahi(T-Mobile), Amy Bergstrom(Deloitte), Adobe의 Anuradha Pentareddy가 참여한 1시간 분량의 [패널 토론](https://primetime.bluejeans.com/a2m/events/playback/e63686d4-158f-4f73-aea0-f03ebee4606d)을 들어 보십시오.
 
-[고객 성공](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html) 허브에서 전략 및 사고 리더십에 대해 자세히 알아보십시오.
+[고객 성공](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html?lang=ko) 허브에서 전략 및 사고 리더십에 대해 자세히 알아보십시오.

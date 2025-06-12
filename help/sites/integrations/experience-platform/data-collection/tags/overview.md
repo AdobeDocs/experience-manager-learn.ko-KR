@@ -51,6 +51,6 @@ Experience Platform 데이터 수집 태그를 통합하려면 다음 사항이 
 
 ## 추가 리소스 {#additional-resources}
 
-+ [Experience Cloud 애플리케이션과의 Experience Platform 통합](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/integrations-with-experience-cloud-applications.html)
-+ [태그 개요](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
-+ [태그를 사용하여 웹 사이트에서 Experience Cloud 구현](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html)
++ [Experience Cloud 애플리케이션과의 Experience Platform 통합](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/integrations-with-experience-cloud-applications.html?lang=ko)
++ [태그 개요](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ko)
++ [태그를 사용하여 웹 사이트에서 Experience Cloud 구현](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html?lang=ko)

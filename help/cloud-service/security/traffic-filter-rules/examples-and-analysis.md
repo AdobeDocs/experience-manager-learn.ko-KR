@@ -163,7 +163,7 @@ data:
 
 초당 100건의 요청을 보내는 IP 주소를 5분 동안 차단하여 **DoS 공격을 방지**&#x200B;해 보겠습니다.
 
-- WKND 프로젝트의 `/config/cdn.yaml` 파일에 다음 [속도 제한 트래픽 필터 규칙](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html#ratelimit-structure)을 추가합니다.
+- WKND 프로젝트의 `/config/cdn.yaml` 파일에 다음 [속도 제한 트래픽 필터 규칙](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=ko#ratelimit-structure)을 추가합니다.
 
 ```yaml
 kind: CDN
@@ -264,7 +264,7 @@ WAF 규칙을 추가하지 않고(또는 `wafFlags` 속성을 사용하지 않�
 
 이제 `action` 속성을 `wafFlags` 속성의 일부로 포함하는 WAF 규칙을 추가하여 **시뮬레이션된 공격 요청을 차단**&#x200B;해 보겠습니다.
 
-문법적으로 WAF 규칙은 이전에 살펴본 규칙과 유사하지만 `action` 속성에 하나 이상의 `wafFlags` 값을 참조한다는 점이 다릅니다. `wafFlags`에 대해 자세히 알아보려면 [WAF 플래그 목록](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html#waf-flags-list) 섹션을 검토하십시오.
+문법적으로 WAF 규칙은 이전에 살펴본 규칙과 유사하지만 `action` 속성에 하나 이상의 `wafFlags` 값을 참조한다는 점이 다릅니다. `wafFlags`에 대해 자세히 알아보려면 [WAF 플래그 목록](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=ko#waf-flags-list) 섹션을 검토하십시오.
 
 - WKND 프로젝트의 `/config/cdn.yaml` 파일에 다음 규칙을 추가합니다. `block-waf-flags` 규칙에는 시뮬레이션된 악성 트래픽 공격 시 대시보드 도구에 나타난 일부 wafFlags가 포함되어 있음을 확인할 수 있습니다. 실제로 위협 환경이 변화함에 따라 시간이 지남에 따라 로그를 분석하여 어떤 새로운 규칙을 선언해야 할지 결정하는 것이 좋은 방법입니다.
 
@@ -352,7 +352,7 @@ data:
 
 ## 추가 리소스
 
-[트래픽 필터 규칙 구문](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html#rules-syntax)
+[트래픽 필터 규칙 구문](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=ko#rules-syntax)
 
-[CDN 로그 형식](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html#cdn-log-format)
+[CDN 로그 형식](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=ko#cdn-log-format)
 

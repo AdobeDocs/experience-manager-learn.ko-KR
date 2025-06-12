@@ -147,7 +147,7 @@ Adobe I/O Runtime에 배포한 후에는 AEM as a Cloud Service에서 [Assets �
 
 ### 설명서
 
-+ [Asset Compute Service 설명서](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html)
++ [Asset Compute Service 설명서](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=ko)
 + [Asset Compute 개발 도구 추가 정보](https://github.com/adobe/asset-compute-devtool)
 + [Asset Compute 예제 작업자](https://github.com/adobe/asset-compute-example-workers)
 

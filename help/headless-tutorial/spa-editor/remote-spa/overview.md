@@ -24,7 +24,7 @@ ht-degree: 100%
 
 AEM SPA 편집기를 사용하여 편집 가능한 AEM 콘텐츠로 기존 React 기반(또는 Next.js) 원격 SPA를 확장하려는 개발자를 위한 멀티 파트 튜토리얼을 시작합니다.
 
-이 튜토리얼은 AEM의 GraphQL API에 대한 AEM 콘텐츠 조각 콘텐츠를 사용하는 React 앱인 [WKND GraphQL App](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)에서 빌드되지만 상황에 맞는 SPA 콘텐츠 작성 기능은 제공하지 않습니다.
+이 튜토리얼은 AEM의 GraphQL API에 대한 AEM 콘텐츠 조각 콘텐츠를 사용하는 React 앱인 [WKND GraphQL App](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ko)에서 빌드되지만 상황에 맞는 SPA 콘텐츠 작성 기능은 제공하지 않습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333272?quality=12&learn=on)
 
@@ -65,7 +65,7 @@ AEM SPA 편집기를 사용하여 편집 가능한 AEM 콘텐츠로 기존 React
 
 >[!NOTE]
 >
-> **로컬 개발 환경을 설정하는 데 도움이 필요하십니까?** [AEM as a Cloud Service SDK를 사용하여 로컬 개발 환경을 설정하는 방법에 대한 다음 안내서](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)를 확인하십시오.
+> **로컬 개발 환경을 설정하는 데 도움이 필요하십니까?** [AEM as a Cloud Service SDK를 사용하여 로컬 개발 환경을 설정하는 방법에 대한 다음 안내서](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=ko)를 확인하십시오.
 
 ## &#x200B;1. SPA 편집기용 AEM 구성
 

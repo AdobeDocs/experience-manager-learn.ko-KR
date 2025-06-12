@@ -134,4 +134,4 @@ AEM을 실행하고 운영하려면 다음 요소를 고려하십시오.
 
 거버넌스 및 인력 모델과 원형에 대한 보다 심층적인 논의를 위해, 1시간 분량의 [ [!DNL AEM Assets] 및 [!DNL Sites]를 위한 역할 원형 및 운영 프레임워크 생성](https://adobecustomersuccess.adobeconnect.com/p8ml5nmy0758mp4/) 패널 토론을 시청하십시오.
 
-[고객 성공](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html) 허브에서 전략 및 사고 리더십에 대해 자세히 알아보십시오.
+[고객 성공](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html?lang=ko) 허브에서 전략 및 사고 리더십에 대해 자세히 알아보십시오.

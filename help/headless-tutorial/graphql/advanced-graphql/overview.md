@@ -27,7 +27,7 @@ ht-degree: 100%
 
 >[!CAUTION]
 >
->AEM as a Cloud Service 환경에 액세스할 수 없는 경우 [로컬 SDK를 사용하여 AEM Headless 빠른 설정](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/quick-setup/local-sdk.html)을 완료할 수 있습니다. 단, 콘텐츠 조각 탐색과 같은 일부 제품 UI 페이지는 다르다는 점을 염두에 두어야 합니다.
+>AEM as a Cloud Service 환경에 액세스할 수 없는 경우 [로컬 SDK를 사용하여 AEM Headless 빠른 설정](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/quick-setup/local-sdk.html?lang=ko)을 완료할 수 있습니다. 단, 콘텐츠 조각 탐색과 같은 일부 제품 UI 페이지는 다르다는 점을 염두에 두어야 합니다.
 
 
 
@@ -49,7 +49,7 @@ ht-degree: 100%
 
 >[!CAUTION]
 >
->이 비디오(2:25)에서는 패키지 관리자를 통해 GraphiQL 쿼리 편집기를 설치하여 GraphQL 쿼리를 살펴보는 방법에 대해 설명합니다. 그러나 최신 버전의 AEM as a Cloud Service에서는 **GraphiQL 탐색기**&#x200B;가 기본 제공되므로 별도의 패키지 설치가 필요하지 않습니다. 자세한 내용은 [GraphiQL IDE 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html)을 참조하십시오.
+>이 비디오(2:25)에서는 패키지 관리자를 통해 GraphiQL 쿼리 편집기를 설치하여 GraphQL 쿼리를 살펴보는 방법에 대해 설명합니다. 그러나 최신 버전의 AEM as a Cloud Service에서는 **GraphiQL 탐색기**&#x200B;가 기본 제공되므로 별도의 패키지 설치가 필요하지 않습니다. 자세한 내용은 [GraphiQL IDE 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html?lang=ko)을 참조하십시오.
 
 
 ## 프로젝트 설정
@@ -79,7 +79,7 @@ AEM에서 새 프로젝트를 시작하기 위한 첫 번째 단계는 작업 �
 
 >[!NOTE]
 >
-> 엔드포인트를 저장하면 보안 콘솔을 방문하라는 모달이 표시됩니다. 여기서 엔드포인트에 대한 액세스를 구성하려는 경우 보안 설정을 조정할 수 있습니다. 그러나 보안 권한 자체는 이 튜토리얼의 범위를 벗어납니다. 자세한 내용은 [AEM 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html)를 참조하십시오.
+> 엔드포인트를 저장하면 보안 콘솔을 방문하라는 모달이 표시됩니다. 여기서 엔드포인트에 대한 액세스를 구성하려는 경우 보안 설정을 조정할 수 있습니다. 그러나 보안 권한 자체는 이 튜토리얼의 범위를 벗어납니다. 자세한 내용은 [AEM 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=ko)를 참조하십시오.
 
 ### WKND 콘텐츠 구조 및 언어 루트 폴더 검토
 

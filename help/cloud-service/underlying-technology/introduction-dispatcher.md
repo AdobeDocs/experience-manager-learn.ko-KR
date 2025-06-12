@@ -26,4 +26,4 @@ AEM 아키텍처의 일부로 [!DNL dispatcher]의 기능 및 특징을 소개�
 
 ## 추가 리소스 {#additional-resources}
 
-* [[!DNL Dispatcher] 설명서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
+* [[!DNL Dispatcher] 설명서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko)

@@ -22,7 +22,7 @@ ht-degree: 100%
 
 AEM 작성자가 Microsoft Word 또는 Google Docs를 사용하여 문서를 편집하고 게시할 수 있도록 문서 작성을 구성하는 방법을 이해합니다.
 
-문서 작성 설정에 대한 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html)를 검토하십시오.
+문서 작성 설정에 대한 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=ko)를 검토하십시오.
 
 ## 문서 작성 시작하기
 

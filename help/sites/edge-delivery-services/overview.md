@@ -31,7 +31,7 @@ Edge Delivery Services와 해당 기능에 대한 자세한 내용은 [설명서
 
 <!-- CARDS 
 
-* https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial
+* https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial
   {title = Document-based authoring and Edge Delivery Services tutorial}
   {description = Learn how to create Edge Delivery Services web sites authored using Document-based authoring.}
   {cta = Start the tutorial}
@@ -49,7 +49,7 @@ Edge Delivery Services와 해당 기능에 대한 자세한 내용은 [설명서
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial" title="문서 기반 작성 및 Edge Delivery Services 튜토리얼" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial./media_18d1c2a9ecd6557f129e41b42a03a8dfbff1e27e9.png?width=400&format=png&optimize=medium" alt="문서 기반 작성 및 Edge Delivery Services 튜토리얼"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial./media_18d1c2a9ecd6557f129e41b42a03a8dfbff1e27e9.png?width=400&format=png&optimize=medium" alt="문서 기반 작성 및 Edge Delivery Services 튜토리얼"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
