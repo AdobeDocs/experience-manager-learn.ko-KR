@@ -21,7 +21,7 @@ ht-degree: 100%
 
 기본 제공 SSL 마법사를 사용하여 HTTPS를 통해 실행되도록 Adobe Experience Manager에서 SSL을 설정하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/17993?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33351?quality=12&learn=on&captions=kor)
 
 
 >[!NOTE]

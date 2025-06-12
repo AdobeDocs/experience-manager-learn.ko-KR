@@ -23,10 +23,10 @@ ht-degree: 100%
 
 이 비디오에서는 개발자가 Edge Delivery Services 개발을 시작하는 데 필요한 모든 부분을 설명합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425709/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3434591/?learn=on&captions=kor)
 
 ## Node.js 설치
 
 Edge Delivery Services 개발을 시작하려면 시스템에 [Node.js](https://nodejs.org)가 설치되어 있어야 합니다. 명령줄에서 `node -v`를 실행하면 Node.js가 이미 설치되어 있는지 확인할 수 있으며, 설치되어 있다면 현재 버전이 표시됩니다. 시스템에 Node.js가 설치되어 있지 않은 경우, 함께 제공되는 아래 비디오를 참조하여 자세한 설치 지침을 확인하십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425710/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438308/?learn=on&captions=kor)

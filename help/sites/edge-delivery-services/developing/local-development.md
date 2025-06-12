@@ -23,7 +23,7 @@ ht-degree: 100%
 
 Edge Delivery Services용 개발을 위한 로컬 개발 환경을 설정하는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425717/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3434738/?learn=on&captions=kor)
 
 
 ## 비디오에 설명된 단계

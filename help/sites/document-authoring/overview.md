@@ -36,7 +36,7 @@ AEM 작성자가 Microsoft Word 또는 Google Docs를 사용하여 문서를 편
             <a href="set-up.md" title="문서 작성 설정"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425699/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438869/?format=jpeg&captions=kor"
                 alt="문서 작성 개요">
             </a>
           </figure>
@@ -68,7 +68,7 @@ AEM 작성자가 Microsoft Word 또는 Google Docs를 사용하여 문서를 편
             <a href="preview-and-publish.md" title="콘텐츠 미리 보기 및 게시"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425700/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3441348/?format=jpeg&captions=kor"
                 alt="콘텐츠 미리 보기 및 게시">
             </a>
           </figure>
@@ -100,7 +100,7 @@ AEM 작성자가 Microsoft Word 또는 Google Docs를 사용하여 문서를 편
             <a href="document-structure.md" title="문서 구조"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425701/?format=jpeg" alt="문서 구조">
+                src="https://video.tv.adobe.com/v/3438819/?format=jpeg&captions=kor" alt="문서 구조">
             </a>
           </figure>
         </div>
@@ -131,7 +131,7 @@ AEM 작성자가 Microsoft Word 또는 Google Docs를 사용하여 문서를 편
             <a href="default-content-and-sections.md" title="기본 콘텐츠 및 섹션"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425702/?format=jpeg" alt="기본 콘텐츠 및 섹션">
+                src="https://video.tv.adobe.com/v/3437982/?format=jpeg&captions=kor" alt="기본 콘텐츠 및 섹션">
             </a>
           </figure>
         </div>
@@ -161,7 +161,7 @@ AEM 작성자가 Microsoft Word 또는 Google Docs를 사용하여 문서를 편
           <figure class="image is-16by9">
             <a href="blocks-and-autoblocks.md" title="블록 및 자동 블록" tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425703/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3439511/?format=jpeg&captions=kor"
                 alt="블록 및 자동 블록">
             </a>
           </figure>
@@ -194,7 +194,7 @@ AEM 작성자가 Microsoft Word 또는 Google Docs를 사용하여 문서를 편
             <a href="redirects.md" title="리디렉션"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425704/?format=jpeg" alt="리디렉션">
+                src="https://video.tv.adobe.com/v/3438550/?format=jpeg&captions=kor" alt="리디렉션">
             </a>
           </figure>
         </div>
@@ -225,7 +225,7 @@ AEM 작성자가 Microsoft Word 또는 Google Docs를 사용하여 문서를 편
             <a href="bulk-metadata.md" title="대량 메타데이터"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425705/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438426/?format=jpeg&captions=kor"
                 alt="대량 메타데이터">
             </a>
           </figure>
@@ -258,7 +258,7 @@ AEM 작성자가 Microsoft Word 또는 Google Docs를 사용하여 문서를 편
             <a href="page-metadata.md" title="페이지 메타데이터"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425706/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438075/?format=jpeg&captions=kor"
                 alt="페이지 메타데이터">
             </a>
           </figure>
@@ -290,7 +290,7 @@ AEM 작성자가 Microsoft Word 또는 Google Docs를 사용하여 문서를 편
             <a href="author-authentication.md" title="작성자 인증"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3429594/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438185/?format=jpeg&captions=kor"
                 alt="작성자 인증">
             </a>
           </figure>
@@ -327,7 +327,7 @@ AEM 작성자가 Microsoft Word 또는 Google Docs를 사용하여 문서를 편
             <a href="./how-to/responsive-navigation.md" title="반응형 탐색"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425707/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438174/?format=jpeg&captions=kor"
                 alt="반응형 탐색">
             </a>
           </figure>
@@ -359,7 +359,7 @@ AEM 작성자가 Microsoft Word 또는 Google Docs를 사용하여 문서를 편
             <a href="./how-to/document-audit.md" title="문서 감사"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425722/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3437718/?format=jpeg&captions=kor"
                 alt="문서 감사">
             </a>
           </figure>
@@ -391,7 +391,7 @@ AEM 작성자가 Microsoft Word 또는 Google Docs를 사용하여 문서를 편
             <a href="./how-to/document-permissions.md" title="문서 권한"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425724/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438108/?format=jpeg&captions=kor"
                 alt="문서 권한">
             </a>
           </figure>
@@ -423,7 +423,7 @@ AEM 작성자가 Microsoft Word 또는 Google Docs를 사용하여 문서를 편
             <a href="./how-to/document-versions.md" title="문서 버전"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425728/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438803/?format=jpeg&captions=kor"
                 alt="문서 버전">
             </a>
           </figure>
@@ -455,7 +455,7 @@ AEM 작성자가 Microsoft Word 또는 Google Docs를 사용하여 문서를 편
             <a href="./how-to/document-workflows.md" title="문서 워크플로"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425720/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438297/?format=jpeg&captions=kor"
                 alt="문서 워크플로">
             </a>
           </figure>
@@ -487,7 +487,7 @@ AEM 작성자가 Microsoft Word 또는 Google Docs를 사용하여 문서를 편
             <a href="./how-to/iframes.md" title="iFrames 사용"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425719/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438396/?format=jpeg&captions=kor"
                 alt="iFrames 사용">
             </a>
           </figure>
@@ -519,7 +519,7 @@ AEM 작성자가 Microsoft Word 또는 Google Docs를 사용하여 문서를 편
             <a href="./how-to/image-alt-text.md" title="대체 텍스트 사용"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425721/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438682/?format=jpeg&captions=kor"
                 alt="대체 텍스트 사용">
             </a>
           </figure>
@@ -551,7 +551,7 @@ AEM 작성자가 Microsoft Word 또는 Google Docs를 사용하여 문서를 편
             <a href="./how-to/no-index.md" title="인덱싱 방지"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425726/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438123/?format=jpeg&captions=kor"
                 alt="인덱싱 방지">
             </a>
           </figure>
@@ -583,7 +583,7 @@ AEM 작성자가 Microsoft Word 또는 Google Docs를 사용하여 문서를 편
             <a href="./how-to/using-dynamic-media.md" title="Dynamic Media"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3429593/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438911/?format=jpeg&captions=kor"
                 alt="Dynamic Media">
             </a>
           </figure>
@@ -615,7 +615,7 @@ AEM 작성자가 Microsoft Word 또는 Google Docs를 사용하여 문서를 편
             <a href="./how-to/migration-using-importer.md" title="가져오기 도구를 사용한 사이트 마이그레이션"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3429595/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3443703/?format=jpeg&captions=kor"
                 alt="가져오기 도구를 사용한 사이트 마이그레이션">
             </a>
           </figure>
@@ -647,7 +647,7 @@ AEM 작성자가 Microsoft Word 또는 Google Docs를 사용하여 문서를 편
             <a href="./how-to/customizing-importer.md" title="가져오기 도구 맞춤화"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3429596/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3444252/?format=jpeg&captions=kor"
                 alt="가져오기 도구 맞춤화">
             </a>
           </figure>
@@ -679,7 +679,7 @@ AEM 작성자가 Microsoft Word 또는 Google Docs를 사용하여 문서를 편
             <a href="./how-to/bulk-importing-using-importer.md" title="가져오기 도구를 사용한 일괄 가져오기"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3429597/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3445892/?format=jpeg&captions=kor"
                 alt="가져오기 도구를 사용한 일괄 가져오기">
             </a>
           </figure>
@@ -716,7 +716,7 @@ AEM 작성자가 Microsoft Word 또는 Google Docs를 사용하여 문서를 편
             <a href="./how-to/generate-variations/overview.md" title="변형 생성"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3428307/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3441338/?format=jpeg&captions=kor"
                 alt="변형 생성">
             </a>
           </figure>
@@ -748,7 +748,7 @@ AEM 작성자가 Microsoft Word 또는 Google Docs를 사용하여 문서를 편
             <a href="./how-to/generate-variations/configure-sidekick.md" title="변형 생성 - Sidekick 구성"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3428306/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3436996/?format=jpeg&captions=kor"
                 alt="변형 생성 - Sidekick 구성">
             </a>
           </figure>
@@ -780,7 +780,7 @@ AEM 작성자가 Microsoft Word 또는 Google Docs를 사용하여 문서를 편
             <a href="./how-to/generate-variations/prompt-templates.md" title="변형 생성 - 프롬프트 템플릿"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3428307/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3441338/?format=jpeg&captions=kor"
                 alt="변형 생성 - 프롬프트 템플릿">
             </a>
           </figure>
@@ -812,7 +812,7 @@ AEM 작성자가 Microsoft Word 또는 Google Docs를 사용하여 문서를 편
             <a href="./how-to/generate-variations/custom-prompt-templates.md" title="변형 생성 - 사용자 정의 프롬프트 템플릿"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3428316/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438506/?format=jpeg&captions=kor"
                 alt="변형 생성 - 사용자 정의 프롬프트 템플릿">
             </a>
           </figure>
@@ -844,7 +844,7 @@ AEM 작성자가 Microsoft Word 또는 Google Docs를 사용하여 문서를 편
             <a href="./how-to/generate-variations/custom-prompt-templates.md" title="변형 생성 - 사용자 정의 프롬프트 템플릿 저장"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3428317/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3437513/?format=jpeg&captions=kor"
                 alt="변형 생성 - 사용자 정의 프롬프트 템플릿 저장">
             </a>
           </figure>
@@ -876,7 +876,7 @@ AEM 작성자가 Microsoft Word 또는 Google Docs를 사용하여 문서를 편
             <a href="./how-to/generate-variations/using-target-audiences.md" title="변형 생성 - Adobe Target 대상자 사용"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3428792/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3437762/?format=jpeg&captions=kor"
                 alt="변형 생성 - Adobe Target 대상자 사용">
             </a>
           </figure>
@@ -908,7 +908,7 @@ AEM 작성자가 Microsoft Word 또는 Google Docs를 사용하여 문서를 편
             <a href="./how-to/generate-variations/using-csv-file-audiences.md" title="변형 생성 - CSV 파일 대상자 사용"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3428793/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3436894/?format=jpeg&captions=kor"
                 alt="변형 생성 - CSV 파일 대상자 사용">
             </a>
           </figure>
@@ -940,7 +940,7 @@ AEM 작성자가 Microsoft Word 또는 Google Docs를 사용하여 문서를 편
             <a href="./how-to/generate-variations/using-adobe-firefly-for-images.md" title="변형 생성 - Adobe Firefly 사용"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3428794/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438363/?format=jpeg&captions=kor"
                 alt="변형 생성 - Adobe Firefly 사용">
             </a>
           </figure>
@@ -972,7 +972,7 @@ AEM 작성자가 Microsoft Word 또는 Google Docs를 사용하여 문서를 편
             <a href="./how-to/generate-variations/actions.md" title="변형 생성 - 생성된 변형에 대한 작업"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3428795/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3437292/?format=jpeg&captions=kor"
                 alt="변형 생성 - 생성된 변형에 대한 작업">
             </a>
           </figure>
@@ -1004,7 +1004,7 @@ AEM 작성자가 Microsoft Word 또는 Google Docs를 사용하여 문서를 편
             <a href="./how-to/generate-variations/trust-privacy.md" title="변형 생성 - 보안 및 개인정보 보호"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3429060/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3440021/?format=jpeg&captions=kor"
                 alt="변형 생성 - 보안 및 개인정보 보호">
             </a>
           </figure>
@@ -1036,7 +1036,7 @@ AEM 작성자가 Microsoft Word 또는 Google Docs를 사용하여 문서를 편
             <a href="./how-to/experimentation-framework.md" title="실험 프레임워크 개요"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3429061/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3437861/?format=jpeg&captions=kor"
                 alt="실험 프레임워크 개요">
             </a>
           </figure>
@@ -1068,7 +1068,7 @@ AEM 작성자가 Microsoft Word 또는 Google Docs를 사용하여 문서를 편
             <a href="./how-to/setup-experimentation-framework.md" title="실험 프레임워크 설정"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3429062/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438935/?format=jpeg&captions=kor"
                 alt="실험 프레임워크 설정">
             </a>
           </figure>
@@ -1100,7 +1100,7 @@ AEM 작성자가 Microsoft Word 또는 Google Docs를 사용하여 문서를 편
             <a href="./how-to/experimentation-add-metadata.md" title="실험용 메타데이터 추가"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3428796/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3440116/?format=jpeg&captions=kor"
                 alt="실험용 메타데이터 추가">
             </a>
           </figure>

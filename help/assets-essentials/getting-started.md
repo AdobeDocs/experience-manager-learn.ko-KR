@@ -23,4 +23,4 @@ ht-degree: 100%
 
 AEM Assets에 액세스하는 방법과 사용자 인터페이스의 주요 기능을 살펴보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/336005?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418821?quality=12&learn=on&captions=kor)

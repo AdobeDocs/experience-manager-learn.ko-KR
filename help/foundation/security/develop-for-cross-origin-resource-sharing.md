@@ -25,7 +25,7 @@ ht-degree: 100%
 
 AEM 게시 인스턴스에 대한 다중 출처 액세스가 필요한 경우에는 [이 설명서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=ko#dispatcher-configuration)를 참조하십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/18837?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33348?quality=12&learn=on&captions=kor)
 
 이 비디오에서는 다음 내용을 다룹니다.
 

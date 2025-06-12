@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Edge Delivery Services 문서가 섹션, 기본 콘텐츠 등을 사용하여 구성되는 방식을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425716/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3445196/?learn=on&captions=kor)

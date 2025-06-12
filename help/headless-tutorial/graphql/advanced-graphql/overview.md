@@ -45,7 +45,7 @@ ht-degree: 100%
 
 다음 비디오에서는 이 튜토리얼에서 다루는 개념에 대한 전반적인 개요를 제공합니다. 이 튜토리얼에는 고급 데이터 유형을 사용하여 콘텐츠 조각 모델을 정의하고, 콘텐츠 조각을 중첩하고, AEM에서 GraphQL 쿼리를 지속하는 방법이 포함되어 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/340035?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3446134?quality=12&learn=on&captions=kor)
 
 >[!CAUTION]
 >

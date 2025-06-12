@@ -33,12 +33,12 @@ Adobe Experience Manager(AEM)를 Edge Delivery Services와 통합하려면 먼�
 
 SharePoint를 Edge Delivery Services에서 사용할 콘텐츠 저장소로 설정합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425712/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3446035/?learn=on&captions=kor)
 
 >[!TAB Google Drive]
 
 Google Drive를 Edge Delivery Services에서 사용할 콘텐츠 저장소로 설정합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425711/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3434727/?learn=on&captions=kor)
 
 >[!ENDTABS]

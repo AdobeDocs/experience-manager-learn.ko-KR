@@ -24,4 +24,4 @@ ht-degree: 100%
 
 Edge Delivery Services를 사용하여 AEM as a Cloud Service의 기본 아키텍처와 중요한 부분을 살펴봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/330542?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/346184?quality=12&learn=on&captions=kor)

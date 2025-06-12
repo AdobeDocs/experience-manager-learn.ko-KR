@@ -22,7 +22,7 @@ ht-degree: 100%
 
 Edge Delivery Services로 웹 사이트를 빠르게 만드는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3427989/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3453457/?learn=on&captions=kor)
 
 Edge Delivery Services와 해당 기능에 대한 자세한 내용은 [설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/overview)를 검토하십시오.
 
@@ -108,7 +108,7 @@ Edge Delivery Services와 해당 기능에 대한 자세한 내용은 [설명서
             <a href="./developing/prerequisites.md" title="사전 요구 사항"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425709/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3434591/?format=jpeg&captions=kor"
                 alt="사전 요구 사항">
             </a>
           </figure>
@@ -140,7 +140,7 @@ Edge Delivery Services와 해당 기능에 대한 자세한 내용은 [설명서
             <a href="./developing/aem-boilerplate.md" title="보일러플레이트 템플릿 사용"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425713/?format=jpeg" alt="보일러플레이트
+                src="https://video.tv.adobe.com/v/3434618/?format=jpeg&captions=kor" alt="보일러플레이트
                 설정">
             </a>
           </figure>
@@ -172,7 +172,7 @@ Edge Delivery Services와 해당 기능에 대한 자세한 내용은 [설명서
             <a href="./developing/content-repository.md" title="Google Drive 링크"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425711/?format=jpeg" alt="Google Drive 링크">
+                src="https://video.tv.adobe.com/v/3434727/?format=jpeg&captions=kor" alt="Google Drive 링크">
             </a>
           </figure>
         </div>
@@ -202,7 +202,7 @@ Edge Delivery Services와 해당 기능에 대한 자세한 내용은 [설명서
           <figure class="image is-16by9">
             <a href="./developing/content-repository.md" title="SharePoint 링크" tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425712/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3446035/?format=jpeg&captions=kor"
                 alt="SharePoint 링크">
             </a>
           </figure>
@@ -234,7 +234,7 @@ Edge Delivery Services와 해당 기능에 대한 자세한 내용은 [설명서
             <a href="./developing/preview-and-publish.md" title="콘텐츠 미리 보기 및 게시"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425714/?format=jpeg" alt="콘텐츠 미리 보기 및 게시">
+                src="https://video.tv.adobe.com/v/3434716/?format=jpeg&captions=kor" alt="콘텐츠 미리 보기 및 게시">
             </a>
           </figure>
         </div>
@@ -265,7 +265,7 @@ Edge Delivery Services와 해당 기능에 대한 자세한 내용은 [설명서
             <a href="./developing/sidekick.md" title="Sidekick 사용"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425715/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3441293/?format=jpeg&captions=kor"
                 alt="Sidekick 사용">
             </a>
           </figure>
@@ -297,7 +297,7 @@ Edge Delivery Services와 해당 기능에 대한 자세한 내용은 [설명서
             <a href="./developing/document-structure.md" title="문서 구조"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425716/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3445196/?format=jpeg&captions=kor"
                 alt="문서 구조">
             </a>
           </figure>
@@ -329,7 +329,7 @@ Edge Delivery Services와 해당 기능에 대한 자세한 내용은 [설명서
             <a href="./developing/local-development.md" title="로컬 개발"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425717/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3434738/?format=jpeg&captions=kor"
                 alt="로컬 개발">
             </a>
           </figure>
@@ -361,7 +361,7 @@ Edge Delivery Services와 해당 기능에 대한 자세한 내용은 [설명서
             <a href="./developing/git.md" title="Git과 통합"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425718/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3441833/?format=jpeg&captions=kor"
                 alt="Git과 통합">
             </a>
           </figure>
@@ -398,7 +398,7 @@ Edge Delivery Services와 해당 기능에 대한 자세한 내용은 [설명서
             <a href="./how-to/rss.md" title="RSS 피드 만들기"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425725/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438006/?format=jpeg&captions=kor"
                 alt="RSS 피드 만들기">
             </a>
           </figure>
@@ -430,7 +430,7 @@ Edge Delivery Services와 해당 기능에 대한 자세한 내용은 [설명서
             <a href="./how-to/social-media-sharing.md" title="소셜 미디어 공유"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425974/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3439444/?format=jpeg&captions=kor"
                 alt="소셜 미디어 공유">
             </a>
           </figure>
@@ -462,7 +462,7 @@ Edge Delivery Services와 해당 기능에 대한 자세한 내용은 [설명서
             <a href="./how-to/delete-page.md" title="페이지 삭제"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425973/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438097/?format=jpeg&captions=kor"
                 alt="페이지 삭제">
             </a>
           </figure>

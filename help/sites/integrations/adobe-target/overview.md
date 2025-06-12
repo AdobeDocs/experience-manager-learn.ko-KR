@@ -28,7 +28,7 @@ AEM Sites와 Adobe Target을 통합하여 개인화된 경험을 제공하는 �
 
 Adobe Experience Manager(AEM)와 Adobe Target은 상호 보완적인 기능을 갖춘 강력한 솔루션으로, 원활한 통합을 통해 개인화된 경험을 제공합니다. 그러나 고객은 이러한 제품을 언제, 어떻게 효과적으로 함께 사용해야 하는지 이해하는 데 어려움을 겪을 수 있습니다. 모든 최종 사용자의 경험을 최적화하려면 조직 내의 다양한 팀이 긴밀하게 협업하고 명확한 역할과 책임을 정의해야 합니다. AEM과 Adobe Target의 통합을 활용하면 팀이 조화롭게 협력하여 탁월하고 개인화된 경험을 제공할 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/41241?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3410059?quality=12&learn=on&captions=kor)
 
 이 비디오에서는 AEM과 Target을 사용하는 세 가지 접근 방식에 대해 설명하여, 조직에 가장 적합한 방식을 이해하는 데 도움을 줍니다.
 

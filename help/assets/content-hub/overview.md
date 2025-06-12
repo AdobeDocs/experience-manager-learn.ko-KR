@@ -69,7 +69,7 @@ Adobe Experience Manager Assets as a Cloud Service Content Hub에서 자산을 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/content-hub/configure" title="구성" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3439311/?format=jpeg&nocache=1744751768916" alt="구성"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3439318/?format=jpeg&nocache=1744751768916&captions=kor" alt="구성"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -92,7 +92,7 @@ Adobe Experience Manager Assets as a Cloud Service Content Hub에서 자산을 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/content-hub/add-assets" title="자산 추가" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3432980/?format=jpeg&nocache=1744751769952" alt="자산 추가"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3450289/?format=jpeg&nocache=1744751769952&captions=kor" alt="자산 추가"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -161,7 +161,7 @@ Adobe Experience Manager Assets as a Cloud Service Content Hub에서 자산을 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/content-hub/collections" title="컬렉션" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435687/?format=jpeg&nocache=1744751769136" alt="컬렉션"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3445307/?format=jpeg&nocache=1744751769136&captions=kor" alt="컬렉션"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -184,7 +184,7 @@ Adobe Experience Manager Assets as a Cloud Service Content Hub에서 자산을 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/content-hub/share" title="공유" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435685/?format=jpeg&nocache=1744751769933" alt="공유"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3445362/?format=jpeg&nocache=1744751769933&captions=kor" alt="공유"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -221,7 +221,7 @@ Adobe Experience Manager Assets as a Cloud Service Content Hub에서 자산을 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./use-cases/manage-assets.md" title="AEM Assets Content Hub를 사용하여 자산을 관리하는 방법" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3457638/?format=jpeg&nocache=1744751770120" alt="AEM Assets Content Hub를 사용하여 자산을 관리하는 방법"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3463063/?format=jpeg&nocache=1744751770120&captions=kor" alt="AEM Assets Content Hub를 사용하여 자산을 관리하는 방법"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

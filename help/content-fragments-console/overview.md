@@ -38,7 +38,7 @@ Adobe Experience Manager의 콘텐츠 조각 콘솔을 사용하면 콘텐츠 �
             <a href="./basics/content-fragments-console.md" title="콘솔 개요"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3409492?format=jpeg"
+                src="https://video.tv.adobe.com/v/3449339?format=jpeg&captions=kor"
                 alt="콘솔 개요">
             </a>
           </figure>
@@ -104,7 +104,7 @@ Adobe Experience Manager의 콘텐츠 조각 콘솔을 사용하면 콘텐츠 �
             <a href="./search/fast-filtering.md" title="빠른 필터링"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3419310?format=jpeg" alt="빠른
+                src="https://video.tv.adobe.com/v/3436703?format=jpeg&captions=kor" alt="빠른
                 필터링">
             </a>
           </figure>
@@ -172,7 +172,7 @@ Adobe Experience Manager의 콘텐츠 조각 콘솔을 사용하면 콘텐츠 �
             <a href="./editor/non-asset-content-references.md" title="자산이 아닌
               콘텐츠 참조" tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3419313?format=jpeg"
+                src="https://video.tv.adobe.com/v/3436769?format=jpeg&captions=kor"
                 alt="자산이 아닌 콘텐츠 참조">
             </a>
           </figure>
@@ -205,7 +205,7 @@ Adobe Experience Manager의 콘텐츠 조각 콘솔을 사용하면 콘텐츠 �
             <a href="./editor/rte-variant-compare.md" title="RTE 변형 비교"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3419314?format=jpeg" alt="RTE
+                src="https://video.tv.adobe.com/v/3437555?format=jpeg&captions=kor" alt="RTE
                 변형 비교">
             </a>
           </figure>
@@ -239,7 +239,7 @@ Adobe Experience Manager의 콘텐츠 조각 콘솔을 사용하면 콘텐츠 �
             <a href="./editor/language-copies.md" title="언어 사본"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3419311?format=jpeg"
+                src="https://video.tv.adobe.com/v/3436963?format=jpeg&captions=kor"
                 alt="언어 사본">
             </a>
           </figure>
@@ -272,7 +272,7 @@ Adobe Experience Manager의 콘텐츠 조각 콘솔을 사용하면 콘텐츠 �
             <a href="./search/references.md" title="참조"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3420950?format=jpeg"
+                src="https://video.tv.adobe.com/v/3423641?format=jpeg&captions=kor"
                 alt="참조">
             </a>
           </figure>

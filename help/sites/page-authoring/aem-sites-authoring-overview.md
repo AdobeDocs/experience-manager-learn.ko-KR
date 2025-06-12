@@ -24,7 +24,7 @@ ht-degree: 100%
 
 다음 비디오에서는 AEM Sites용 AEM 작성 환경에서 작성의 기본 개념에 대한 개요를 제공합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/33594?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36862?quality=12&learn=on&captions=kor)
 
 ## 추가 리소스 {#additional-resources}
 

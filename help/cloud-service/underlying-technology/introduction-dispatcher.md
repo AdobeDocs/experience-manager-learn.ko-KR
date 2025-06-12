@@ -22,7 +22,7 @@ ht-degree: 100%
 
 AEM 아키텍처의 일부로 [!DNL dispatcher]의 기능 및 특징을 소개합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/32029?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37050?quality=12&learn=on&captions=kor)
 
 ## 추가 리소스 {#additional-resources}
 

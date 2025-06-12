@@ -24,4 +24,4 @@ ht-degree: 100%
 
 Edge Delivery Services의 변형 생성에 대한 소개를 살펴보고 이것이 마케팅 담당자에게 어떻게 유용할 수 있는지 이해합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428304/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438561/?learn=on&captions=kor)

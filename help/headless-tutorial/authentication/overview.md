@@ -24,7 +24,7 @@ AEM은 GraphQL, AEM 콘텐츠 서비스부터 Assets HTTP API까지 Headless 방
 
 이 튜토리얼에서는 외부 애플리케이션이 액세스 토큰을 사용하여 HTTP를 통해 AEM as a Cloud Service 를 프로그래밍 방식으로 인증하고 상호 작용하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/330460?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3410082?quality=12&learn=on&captions=kor)
 
 ## 사전 요구 사항
 

@@ -27,7 +27,7 @@ Adobe Experience Platform의 태그를 Adobe Experience Manager와 통합하는 
 
 태그는 Adobe Experience Platform의 차세대 태그 관리 기술입니다. 태그는 Adobe Analytics, Target, Audience Manager 등 다양한 솔루션을 배포하는 가장 간단한 방법을 제공합니다. 태그에 대한 개요와 Adobe Experience Manager와의 권장 통합을 확인하십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/3417061?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3445207?quality=12&learn=on&captions=kor)
 
 ## 사전 요구 사항
 

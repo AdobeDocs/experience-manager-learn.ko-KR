@@ -27,7 +27,7 @@ AEM 6.x에서는 사용자 정의 AEM Workflow 프로세스를 사용하여 자�
 
 ## 수행할 작업
 
->[!VIDEO](https://video.tv.adobe.com/v/40965?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3410118?quality=12&learn=on&captions=kor)
 
 이 튜토리얼에서는 원본 자산을 원형으로 자르고, 구성 가능한 대비와 명도를 적용하여 자산 렌디션을 생성하는 간단한 Asset Compute 작업자를 만드는 방법을 안내합니다. 작업자 자체는 기본적인 것이지만 이 튜토리얼에서는 이를 사용하여 AEM as a Cloud Service에서 사용할 사용자 정의 Asset Compute 작업자를 만들고, 개발하고, 배포하는 과정을 학습할 수 있습니다.
 
