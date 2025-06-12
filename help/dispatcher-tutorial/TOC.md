@@ -7,9 +7,9 @@ jira: KT-2233
 index: y
 team: TM
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '39'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -17,6 +17,6 @@ ht-degree: 69%
 # AEM Dispatcher 캐시 튜토리얼{#dispatcher-tutorial}
 
 + [개요](overview.md)
-+ [1 - 개념, 패턴 및 패턴 방지](chapter-1.md)
++ [1 - 개념, 패턴 및 안티패턴](chapter-1.md)
 + [2 - 인프라 패턴](chapter-2.md)
-+ [3 - 고급 캐싱 항목](chapter-3.md)
++ [3 - 고급 캐싱 주제](chapter-3.md)

@@ -1,6 +1,6 @@
 ---
 title: 머리글 및 바닥글
-description: Edge Delivery Services 및 유니버설 편집기에서 머리글 및 바닥글을 개발하는 방법에 대해 알아봅니다.
+description: Edge Delivery Services와 범용 편집기에서 머리글 및 바닥글이 개발되는 방식을 알아봅니다.
 version: Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Development
@@ -11,9 +11,9 @@ jira: KT-17470
 duration: 300
 exl-id: 70ed4362-d4f1-4223-8528-314b2bf06c7c
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1207'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
@@ -21,17 +21,17 @@ ht-degree: 0%
 
 ![머리글 및 바닥글](./assets/header-and-footer/hero.png){align="center"}
 
-머리글과 바닥글은 Edge Delivery Services `<header>` 및 `<footer>` 요소에 직접 바인딩되므로 EDS(HTML)에서 고유한 역할을 합니다. 일반 페이지 콘텐츠와 달리 별도로 관리되며, 전체 페이지 캐시를 제거할 필요 없이 독립적으로 업데이트할 수 있습니다. 구현은 코드 프로젝트에서 `blocks/header` 및 `blocks/footer` 아래의 블록으로 존재하지만 작성자는 블록의 조합을 포함할 수 있는 전용 AEM 페이지를 통해 콘텐츠를 편집할 수 있습니다.
+머리글 및 바닥글은 Edge Delivery Services(EDS)에서 고유한 역할을 하며, HTML의 `<header>` 및 `<footer>` 요소에 직접 바인딩됩니다. 일반 페이지 콘텐츠와 달리 별도로 관리되며, 전체 페이지 캐시를 삭제할 필요 없이 독립적으로 업데이트할 수 있습니다. 구현은 코드 프로젝트 내의 `blocks/header` 및 `blocks/footer` 경로에 블록으로 존재하지만 작성자는 블록의 모든 조합을 포함할 수 있는 전용 AEM 페이지를 통해 해당 콘텐츠를 편집할 수 있습니다.
 
-## 헤더 블록
+## 머리글 블록
 
-![헤더 블록](./assets/header-and-footer/header-local-development-preview.png){align="center"}
+![머리글 블록](./assets/header-and-footer/header-local-development-preview.png){align="center"}
 
-헤더는 Edge Delivery Services HTML `<header>` 요소에 바인딩되는 특수 블록입니다.
-`<header>` 요소는 비어 있고 XHR(AJAX)을 통해 별도의 AEM 페이지로 채워집니다.
-이렇게 하면 헤더를 페이지 콘텐츠와 독립적으로 관리하고, 모든 페이지의 전체 캐시 제거를 수행하지 않고도 업데이트할 수 있습니다.
+머리글은 Edge Delivery Services HTML `<header>` 요소에 바인딩된 특수 블록입니다.
+`<header>` 요소는 비어 있는 상태로 전달되고 XHR(AJAX)을 통해 별도의 AEM 페이지에 채워집니다.
+이를 통해 머리글을 페이지 콘텐츠와 별도로 관리할 수 있으며, 모든 페이지의 캐시를 완전히 삭제하지 않고도 업데이트할 수 있습니다.
 
-헤더 블록은 헤더 콘텐츠가 포함된 AEM 페이지 조각을 요청하고 `<header>` 요소에서 렌더링합니다.
+머리글 블록은 머리글 콘텐츠를 포함하는 AEM 페이지 조각을 요청하고 이를 `<header>` 요소에서 렌더링하는 역할을 합니다.
 
 [!BADGE /blocks/header/header.js]{type=Neutral tooltip="아래 코드 샘플의 파일 이름입니다."}
 
@@ -58,45 +58,45 @@ export default async function decorate(block) {
 }
 ```
 
-`loadFragment()` 함수는 페이지의 `<main>` 태그에 있는 AEM 페이지의 HTML에 대한 EDS HTML 렌디션을 반환하고, 해당 콘텐츠를 포함할 수 있는 블록으로 처리하고, 업데이트된 DOM 트리를 반환하는 `${navPath}.plain.html`에 XHR(AJAX) 요청을 수행합니다.
+`loadFragment()` 함수는 `${navPath}.plain.html`에 XHR(AJAX) 요청을 보내며, 이는 해당 AEM 페이지의 `<main>` 태그 내에 존재하는 HTML을 EDS HTML 렌디션으로 반환합니다. 그런 다음 포함된 블록으로 반환된 콘텐츠를 처리하고, 업데이트된 DOM 트리를 반환합니다.
 
-## 헤더 페이지 작성자
+## 머리글 페이지 작성
 
-헤더 블록을 개발하기 전에 먼저 유니버설 편집기에서 콘텐츠를 작성하여 개발할 사항이 있습니다.
+머리글 블록을 개발하기 전에 먼저 범용 편집기에서 머리글 블록의 내용을 작성하여 개발할 내용을 준비합니다.
 
-헤더 콘텐츠는 `nav`(이)라는 전용 AEM 페이지에 있습니다.
+머리글 콘텐츠는 `nav`라는 전용 AEM 페이지에 있습니다.
 
-![기본 헤더 페이지](./assets/header-and-footer/header-page.png){align="center"}
+![기본 머리글 페이지](./assets/header-and-footer/header-page.png){align="center"}
 
-헤더를 작성하려면 다음 작업을 수행하십시오.
+머리글을 작성하려면 다음 작업을 수행하십시오.
 
-1. 유니버설 편집기에서 `nav` 페이지 열기
-1. 기본 단추를 WKND 로고가 포함된 **이미지 블록**(으)로 바꾸기
-1. **텍스트 블록**&#x200B;의 탐색 메뉴를 다음 방법으로 업데이트하세요.
+1. 범용 편집기에서 `nav` 페이지 열기
+1. 기본 버튼을 WKND 로고가 포함된 **이미지 블록**&#x200B;으로 바꾸기
+1. **텍스트 블록**&#x200B;에서 다음 작업을 수행하여 탐색 메뉴 업데이트:
    - 원하는 탐색 링크 추가
-   - 필요한 경우 하위 탐색 항목 만들기
-   - 현재 홈 페이지(`/`)에 대한 모든 링크를 설정하는 중
+   - 필요한 곳에 하위 탐색 항목 만들기
+   - 모든 링크를 홈 페이지(`/`)로 설정
 
-![유니버설 편집기의 작성자 헤더 블록](./assets/header-and-footer/header-author.png){align="center"}
+![범용 편집기에서 머리글 블록 작성](./assets/header-and-footer/header-author.png){align="center"}
 
 ### 미리보기에 게시
 
-머리글 페이지를 업데이트한 상태에서 [미리 볼 페이지를 게시](../6-author-block.md)합니다.
+머리글 페이지를 업데이트한 후 [해당 페이지를 미리보기에 게시](../6-author-block.md)합니다.
 
-헤더 콘텐츠는 자체 페이지(`nav` 페이지)에 있으므로 헤더 변경 내용을 적용하려면 해당 페이지를 특별히 게시해야 합니다. 헤더를 사용하는 다른 페이지를 게시해도 Edge Delivery Services의 헤더 콘텐츠가 업데이트되지 않습니다.
+머리글 콘텐츠는 자체 페이지(`nav` 페이지)에 존재하므로, 머리글 변경 사항을 적용하려면 해당 페이지를 별도로 게시해야 합니다. 해당 머리글을 사용하는 다른 페이지를 게시해도 Edge Delivery Services의 머리글 콘텐츠는 업데이트되지 않습니다.
 
-## HTML 차단
+## 블록 HTML
 
-블록 개발을 시작하려면 Edge Delivery Services 미리 보기에 의해 노출된 DOM 구조를 검토하는 것부터 시작하십시오. DOM은 JavaScript으로 향상되고 CSS로 스타일링되므로 블록을 빌드하고 사용자 지정할 수 있는 기반을 제공합니다.
+블록 개발을 시작하려면 먼저 Edge Delivery Services 미리보기에서 노출되는 DOM 구조를 검토합니다. DOM은 JavaScript로 강화되고 CSS로 스타일이 지정되어 블록을 빌드하고 사용자 정의하기 위한 기반을 제공합니다.
 
-헤더가 조각으로 로드되기 때문에 XHR 요청에서 반환된 HTML이 DOM에 삽입되고 `loadFragment()`을(를) 통해 데코레이트된 후 검사해야 합니다. 이 작업은 브라우저의 개발자 도구에서 DOM을 검사하여 수행할 수 있습니다.
+머리글은 조각으로 로드되기 때문에 `loadFragment()`를 통해 DOM에 주입되고 장식된 후 XHR 요청에서 반환되는 HTML을 검사해야 합니다. 이 작업은 브라우저의 개발자 도구에서 DOM을 검사하여 수행할 수 있습니다.
 
 
 >[!BEGINTABS]
 
->[!TAB 장식할 DOM]
+>[!TAB DOM 장식]
 
-다음은 제공된 `header.js`을(를) 사용하여 로드되고 DOM에 주입된 헤더 페이지의 HTML입니다.
+다음은 제공된 `header.js`를 사용하여 머리글 페이지가 로드된 후 DOM에 주입된 HTML입니다.
 
 ```html
 <header class="header-wrapper">
@@ -143,16 +143,16 @@ export default async function decorate(block) {
 
 웹 브라우저의 개발자 도구에서 페이지의 `<header>` 요소를 찾아 검사합니다.
 
-![헤더 DOM](./assets/header-and-footer/header-dom.png){align="center"}
+![머리글 DOM](./assets/header-and-footer/header-dom.png){align="center"}
 
 >[!ENDTABS]
 
 
-## JavaScript 차단
+## 블록 JavaScript
 
-[AEM Boilerplate XWalk 프로젝트 템플릿](https://github.com/adobe-rnd/aem-boilerplate-xwalk)의 `/blocks/header/header.js` 파일은 드롭다운 메뉴와 반응형 모바일 보기를 포함하여 탐색용 JavaScript을 제공합니다.
+[AEM 보일러플레이트 XWalk 프로젝트 템플릿](https://github.com/adobe-rnd/aem-boilerplate-xwalk)의 `/blocks/header/header.js` 파일은 드롭다운 메뉴와 반응형 모바일 보기를 포함한 탐색용 JavaScript를 제공합니다.
 
-`header.js` 스크립트는 종종 사이트의 디자인에 맞게 크게 사용자 지정되지만 헤더 페이지 조각을 검색하고 처리하는 `decorate()`의 첫 번째 줄을 유지해야 합니다.
+`header.js` 스크립트는 사이트 디자인에 맞게 많이 맞춤화되는 경우가 많지만 머리글 페이지 조각을 검색하고 처리하는 `decorate()`의 첫 부분 코드는 반드시 유지하는 것이 중요합니다.
 
 [!BADGE /blocks/header/header.js]{type=Neutral tooltip="아래 코드 샘플의 파일 이름입니다."}
 
@@ -165,23 +165,23 @@ export default async function decorate(block) {
   ...
 ```
 
-나머지 코드는 프로젝트의 요구 사항에 맞게 수정할 수 있습니다.
+나머지 코드는 프로젝트의 필요에 맞게 수정할 수 있습니다.
 
-헤더 요구 사항에 따라 보일러플레이트 코드를 조정하거나 제거할 수 있습니다. 이 자습서에서는 제공된 코드를 사용하여 처음 작성된 이미지 주위에 하이퍼링크를 추가하고 사이트의 홈 페이지에 연결하여 이 코드를 향상시킵니다.
+머리글 요구 사항에 따라 보일러플레이트 코드를 조정하거나 제거할 수 있습니다. 이 튜토리얼에서는 제공된 코드를 사용하고, 첫 번째로 작성된 이미지 주위에 하이퍼링크를 추가하여 사이트의 홈 페이지로 연결하는 방법을 개선해 보겠습니다.
 
-템플릿의 코드는 다음 순서로 세 개의 섹션으로 구성되어 있다고 가정하고 헤더 페이지 조각을 처리합니다.
+템플릿의 코드는 머리글 페이지 조각을 처리하며, 조각이 다음 순서로 세 개의 섹션으로 구성되어 있다고 가정합니다.
 
-1. **브랜드 섹션** - 로고가 포함되어 있으며 `.nav-brand` 클래스로 스타일이 지정됩니다.
-2. **섹션** - 사이트의 주 메뉴를 정의하고 `.nav-sections`(으)로 스타일을 지정합니다.
-3. **도구 섹션** - `.nav-tools`(으)로 스타일이 지정된 검색, 로그인/로그아웃 및 프로필과 같은 요소를 포함합니다.
+1. **브랜드 섹션** - 로고를 포함하며, `.nav-brand` 클래스로 스타일이 지정되어 있습니다.
+2. **섹션** - 사이트의 기본 메뉴를 정의하며, `.nav-sections`로 스타일이 지정되어 있습니다.
+3. **도구 섹션** - 검색, 로그인/로그아웃 및 프로필과 같은 요소를 포함하며, `.nav-tools`로 스타일이 지정되어 있습니다.
 
-로고 이미지를 홈 페이지에 하이퍼링크로 보내려면 다음과 같이 JavaScript 블록을 업데이트합니다.
+로고 이미지를 홈 페이지에 하이퍼링크로 연결하려면 다음과 같이 블록 JavaScript를 업데이트합니다.
 
 >[!BEGINTABS]
 
 >[!TAB 업데이트된 JavaScript]
 
-로고 이미지를 사이트의 홈 페이지(`/`)에 대한 링크로 래핑하는 업데이트된 코드가 아래에 표시됩니다.
+아래는 로고 이미지를 사이트의 홈 페이지(`/`) 링크로 래핑하도록 업데이트한 코드입니다.
 
 [!BADGE /blocks/header/header.js]{type=Neutral tooltip="아래 코드 샘플의 파일 이름입니다."}
 
@@ -214,9 +214,9 @@ export default async function decorate(block) {
 }
 ```
 
->[!TAB 원래 JavaScript]
+>[!TAB 원본 JavaScript]
 
-다음은 템플릿에서 생성된 원본 `header.js`입니다.
+아래는 템플릿에서 생성된 원본 `header.js`입니다.
 
 [!BADGE /blocks/header/header.js]{type=Neutral tooltip="아래 코드 샘플의 파일 이름입니다."}
 
@@ -250,13 +250,13 @@ export default async function decorate(block) {
 >[!ENDTABS]
 
 
-## CSS 차단
+## 블록 CSS
 
-WKND의 브랜드에 따라 스타일을 지정하려면 `/blocks/header/header.css`을(를) 업데이트하십시오.
+WKND 브랜드에 맞게 `/blocks/header/header.css` 스타일을 업데이트합니다.
 
-튜토리얼 변경 내용을 더 쉽게 보고 이해할 수 있도록 사용자 지정 CSS를 `header.css`의 맨 아래에 추가합니다. 이러한 스타일은 템플릿의 CSS 규칙에 직접 통합할 수 있지만, 스타일을 구분해서 보관하면 수정된 내용을 나타낼 수 있습니다.
+튜토리얼에서 변경한 내용을 더 쉽게 확인하고 이해할 수 있도록 사용자 정의 CSS를 `header.css` 맨 아래에 추가하겠습니다. 이러한 스타일을 템플릿의 CSS 규칙에 직접 통합할 수도 있지만 별도로 유지하면 수정된 내용을 보여 주는 데 도움이 됩니다.
 
-원래 집합 뒤에 새 규칙을 추가하므로 템플릿 규칙보다 우선하도록 `header .header.block nav` CSS 선택기로 래핑합니다.
+새 규칙을 원래 규칙 세트 뒤에 추가하기 때문에 `header .header.block nav` CSS 선택기로 래핑하여 템플릿 규칙보다 우선 적용되도록 하겠습니다.
 
 [!BADGE /blocks/header/header.css]{type=Neutral tooltip="아래 코드 샘플의 파일 이름입니다."}
 
@@ -322,13 +322,13 @@ header .header.block nav {
 
 ## 개발 미리보기
 
-CSS와 JavaScript이 개발되면 AEM CLI의 로컬 개발 환경은 변경 사항을 핫 로드하여 코드가 블록에 미치는 영향을 빠르고 쉽게 시각화할 수 있습니다. CTA 위로 마우스를 가져간 후 티저의 이미지가 확대되고 축소되는지 확인합니다.
+CSS와 JavaScript를 개발하면 AEM CLI의 로컬 개발 환경이 변경 사항을 핫 리로드하여 코드가 블록에 미치는 영향을 빠르고 쉽게 시각화할 수 있게 해 줍니다. CTA 위에 마우스를 가져다 대고 티저 이미지가 확대/축소되는지 확인하십시오.
 
-![CSS 및 JS를 사용한 헤더의 로컬 개발 미리 보기](./assets/header-and-footer/header-local-development-preview.png){align="center"}
+![CSS와 JS를 사용한 머리글 로컬 개발 미리보기](./assets/header-and-footer/header-local-development-preview.png){align="center"}
 
 ## 코드 린트
 
-코드 변경 내용을 깔끔하고 일관되게 유지하려면 [자주 lint](../3-local-development-environment.md#linting)해야 합니다. 정기적인 린팅은 문제를 조기에 발견하는 데 도움이 되므로 전반적인 개발 시간이 단축됩니다. 모든 린팅 문제가 해결될 때까지 개발 작업을 `main` 분기에 병합할 수 없습니다.
+코드 변경 사항을 [자주 린트](../3-local-development-environment.md#linting)하여 코드를 깔끔하고 일관되게 유지하십시오. 정기적인 린트는 문제를 일찍 발견하여 전체 개발 시간을 줄이는 데 도움이 됩니다. 모든 린트 문제가 해결되어야 개발 작업을 `main` 분기에 병합할 수 있습니다.
 
 ```bash
 # ~/Code/aem-wknd-eds-ue
@@ -336,9 +336,9 @@ CSS와 JavaScript이 개발되면 AEM CLI의 로컬 개발 환경은 변경 사�
 $ npm run lint
 ```
 
-## 유니버설 편집기에서 미리 보기
+## 범용 편집기에서 미리 보기
 
-AEM의 유니버설 편집기에서 변경 사항을 보려면 변경 사항을 추가하고, 커밋한 다음 유니버설 편집기에서 사용하는 Git 저장소 분기에 푸시합니다. 이렇게 하면 블록 구현이 작성 경험을 중단하지 않습니다.
+AEM의 범용 편집기에서 변경 사항을 보려면 범용 편집기에서 사용하는 Git 저장소 분기에 변경 사항을 추가하고, 커밋하고, 푸시하십시오. 이렇게 하면 블록 구현이 작성 경험을 방해하지 않도록 할 수 있습니다.
 
 ```bash
 # ~/Code/aem-wknd-eds-ue
@@ -349,41 +349,41 @@ $ git commit -m "CSS and JavaScript implementation for Header block"
 $ git push origin header-and-footer
 ```
 
-이제 `?ref=header-and-footer` 쿼리 매개 변수를 사용할 때 유니버설 편집기에 변경 내용이 표시됩니다.
+이제 `?ref=header-and-footer` 쿼리 매개변수를 사용하면 범용 편집기에서 변경 사항을 볼 수 있습니다.
 
-![유니버설 편집기의 헤더](./assets/header-and-footer/header-universal-editor-preview.png){align="center"}
+![범용 편집기의 머리글](./assets/header-and-footer/header-universal-editor-preview.png){align="center"}
 
 ## 바닥글
 
-바닥글 콘텐츠는 머리글과 마찬가지로 전용 AEM 페이지(이 경우 바닥글 페이지(`footer`)에 작성됩니다. 바닥글은 조각으로 로드되고 CSS와 JavaScript으로 장식되는 것과 동일한 패턴을 따릅니다.
+머리글과 마찬가지로, 바닥글 콘텐츠도 전용 AEM 페이지(이 경우 바닥글 페이지(`footer`))에서 작성됩니다. 바닥글은 조각으로 로드되고 CSS와 JavaScript로 장식되는 동일한 패턴을 따릅니다.
 
 >[!BEGINTABS]
 
 >[!TAB 바닥글]
 
-바닥글은 다음을 포함하는 3열 레이아웃으로 구현해야 합니다.
+바닥글은 다음과 같은 세 개의 열로 구성된 레이아웃으로 구현해야 합니다.
 
-- 프로모션이 포함된 왼쪽 열(이미지 및 텍스트)
-- 탐색 링크가 있는 가운데 열
-- 소셜 미디어 링크가 있는 오른쪽 열
-- 저작권이 있는 세 열 모두에 걸쳐 있는 맨 아래에 있는 행
+- 왼쪽 열: 프로모션 이미지 및 텍스트 포함
+- 가운데 열: 탐색 링크 포함
+- 오른쪽 열: 소셜 미디어 링크 포함
+- 하단 행: 저작권 정보 포함, 나머지 세 개 열을 가로지름
 
-![바닥글 미리 보기](./assets/header-and-footer/footer-preview.png){align="center"}
+![바닥글 미리보기](./assets/header-and-footer/footer-preview.png){align="center"}
 
 >[!TAB 바닥글 콘텐츠]
 
-바닥글 페이지의 열 블록을 사용하여 3열 효과를 만듭니다.
+바닥글 페이지에서 열 블록을 사용하여 세 개의 열 효과를 만듭니다.
 
 | 열 1 | 열 2 | 열 3 |
 | ---------|----------------|---------------|
 | 이미지 | 제목 3 | 제목 3 |
 | 텍스트 | 링크 목록 | 링크 목록 |
 
-![헤더 DOM](./assets/header-and-footer/footer-author.png){align="center"}
+![머리글 DOM](./assets/header-and-footer/footer-author.png){align="center"}
 
 >[!TAB 바닥글 코드]
 
-아래의 CSS는 3열 레이아웃, 일관된 간격 및 타이포그래피로 바닥글 블록의 스타일을 지정합니다. 바닥글 구현에서는 템플릿에서 제공한 JavaScript 만 사용합니다.
+아래 CSS는 바닥글 블록을 세 개의 열 레이아웃으로 스타일 지정하며, 일정한 간격과 타이포그래피를 적용합니다. 바닥글 구현은 템플릿에서 제공하는 JavaScript만 사용합니다.
 
 [!BADGE /blocks/footer/footer.css]{type=Neutral tooltip="아래 코드 샘플의 파일 이름입니다."}
 
@@ -462,13 +462,13 @@ footer {
 
 ## 축하합니다!
 
-이제 Edge Delivery Services 및 Universal Editor에서 머리글과 바닥글을 어떻게 관리하고 개발하는지 알아보았습니다. 다음과 같은 내용을 학습했습니다.
+이제 Edge Delivery Services와 범용 편집기에서 머리글과 바닥글이 어떻게 관리되고 개발되는지 살펴보았습니다. 머리글과 바닥글에 대해 학습한 내용은 다음과 같습니다.
 
-- 기본 컨텐츠와 별도로 전용 AEM 페이지에서 작성
-- 독립 업데이트를 활성화하기 위해 비동기적으로 조각으로 로드됨
-- JavaScript 및 CSS로 데코레이트하여 반응형 탐색 경험 만들기
-- 범용 편집기와 원활하게 통합되어 손쉽게 콘텐츠를 관리할 수 있습니다
+- 주요 콘텐츠와 분리된 전용 AEM 페이지에서 작성됨
+- 독립적인 업데이트가 가능하도록 조각으로 비동기 로드됨
+- JavaScript와 CSS로 장식되어 반응형 탐색 경험을 제공함
+- 범용 편집기와 완벽하게 통합되어 손쉬운 콘텐츠 관리가 가능함
 
-이 패턴은 사이트 전체 탐색 구성 요소를 구현하기 위한 유연하고 유지 관리 가능한 접근 방식을 제공합니다.
+이 패턴은 사이트 전체 탐색 구성 요소를 구현하기 위한 유연하고 유지 관리가 용이한 접근 방식을 제공합니다.
 
-더 많은 모범 사례와 고급 기술을 보려면 [유니버설 편집기 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block#block-options)를 확인하십시오.
+더 많은 모범 사례와 고급 기술을 알아보려면 [범용 편집기 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block#block-options)를 확인하십시오.

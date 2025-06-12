@@ -1,6 +1,6 @@
 ---
-title: Edge Delivery Services용 컨텐츠 저장소 설정
-description: Edge Delivery Services을 사용하여 Sharepoint 또는 Google 드라이브 설정
+title: Edge Delivery Services용 콘텐츠 저장소 설정
+description: Edge Delivery Services를 사용하여 Sharepoint 또는 Google Drive 설정
 version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Development
@@ -13,32 +13,32 @@ thumbnail: 3425712.jpeg
 duration: 409
 exl-id: 290184ea-88cb-401e-b784-77c8322c77de
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '126'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # 콘텐츠 저장소
 
-Adobe Experience Manager(AEM)을 Edge Delivery Services과 통합하려면 먼저 [SharePoint](#sharepoint) 또는 [Google 드라이브](#google-drive)를 콘텐츠 저장소로 설정합니다. 두 플랫폼 모두 AEM과 잘 작동하므로 원활한 콘텐츠 관리 및 전달이 가능합니다. 환경 설정에 맞는 항목을 선택하고 단계에 따라 AEM 및 Edge Delivery Services을 시작하고 실행합니다.
+Adobe Experience Manager(AEM)를 Edge Delivery Services와 통합하려면 먼저 [SharePoint](#sharepoint) 또는 [Google Drive](#google-drive)를 콘텐츠 저장소로 설정해야 합니다. 두 플랫폼 모두 AEM과 매우 잘 작동하여 콘텐츠를 원활하게 관리하고 게재할 수 있습니다. 선호도에 맞는 플랫폼을 선택한 후 AEM 및 Edge Delivery Services와 함께 사용할 수 있도록 안내된 단계를 따라 설정하십시오.
 
 ## 문서 작성 옵션
 
-[문서 작성](../../document-authoring/set-up.md), [SharePoint](#sharepoint) 및 [Google 드라이브](#google-drive)에 대해 지원되는 두 개의 콘텐츠 저장소가 있습니다.
+[문서 작성](../../document-authoring/set-up.md)에 대해 지원되는 콘텐츠 저장소는 [SharePoint](#sharepoint) 및 [Google Drive](#google-drive), 이상 두 가지입니다.
 
 >[!BEGINTABS]
 
 >[!TAB SharePoint]
 
-SharePoint을 Edge Delivery Services에서 사용할 컨텐츠 저장소로 설정합니다.
+SharePoint를 Edge Delivery Services에서 사용할 콘텐츠 저장소로 설정합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3446035/?learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3425712/?learn=on)
 
->[!TAB Google 드라이브]
+>[!TAB Google Drive]
 
-Google Drive를 Edge Delivery Services에 사용할 컨텐츠 저장소로 설정합니다.
+Google Drive를 Edge Delivery Services에서 사용할 콘텐츠 저장소로 설정합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3434727/?learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3425711/?learn=on)
 
 >[!ENDTABS]

@@ -9,16 +9,16 @@ activity: develop
 audience: developer
 index: y
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '124'
-ht-degree: 40%
+ht-degree: 100%
 
 ---
 
 
 # AEM Sites 시작하기 - WKND 튜토리얼 {#getting-started-wknd-tutorial-develop}
 
-+ [WKND 자습서 개요](overview.md)
++ [WKND 튜토리얼 개요](overview.md)
 + Project Archetype {#project-archetype}
    + [개요](./project-archetype/overview.md)
    + [1 - 프로젝트 설정](./project-archetype/project-setup.md)
@@ -26,15 +26,15 @@ ht-degree: 40%
    + [3 - 페이지 및 템플릿](./project-archetype/pages-templates.md)
    + [4 - 클라이언트측 라이브러리](./project-archetype/client-side-libraries.md)
    + [5 - 스타일 시스템](./project-archetype/style-system.md)
-   + [6 - 사용자 지정 구성 요소](./project-archetype/custom-component.md)
-   + [7 - 장치 테스트](./project-archetype/unit-testing.md)
+   + [6 - 사용자 정의 구성 요소](./project-archetype/custom-component.md)
+   + [7 - 단위 테스트](./project-archetype/unit-testing.md)
 + 빠른 사이트 생성 {#site-template}
    + [개요](./site-template/overview.md)
    + [1 - 사이트 만들기](./site-template/create-site.md)
    + [2 - 작성 및 게시 소개](./site-template/author-content-publish.md)
-   + [3 - Adobe XD을 통한 UI 계획](./site-template/ui-planning-adobe-xd.md)
+   + [3 - Adobe XD를 사용한 UI 계획 수립](./site-template/ui-planning-adobe-xd.md)
    + [4 - 페이지 템플릿](./site-template/page-templates.md)
-   + [5 - 테마](./site-template/theming.md)
+   + [5 - 테마 설정](./site-template/theming.md)
 + 프론트엔드 파이프라인 활성화 - DevOps{#enable-frontend-pipeline-devops}
    + [개요](./enable-frontend-pipeline/overview.md)
    + [1 - 전체 스택 프로젝트 검토](./enable-frontend-pipeline/review-uifrontend-module.md)

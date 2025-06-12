@@ -1,6 +1,6 @@
 ---
-title: Edge Delivery Services을 위한 로컬 개발 환경 설정
-description: Edge Delivery Services용 로컬 개발 환경을 설정하는 방법
+title: Edge Delivery Services를 위한 로컬 개발 환경 설정
+description: Edge Delivery Services를 위한 로컬 개발 환경을 설정하는 방법을 알아봅니다.
 version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Development
@@ -13,20 +13,20 @@ thumbnail: 3425717.jpeg
 duration: 169
 exl-id: 0f3e50f0-88d8-46be-be8b-0f547c3633a6
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '87'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 # 로컬 개발 환경 설정
 
-Edge Delivery Services 개발을 위한 로컬 개발 환경을 설정하는 방법.
+Edge Delivery Services용 개발을 위한 로컬 개발 환경을 설정하는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3434738/?learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3425717/?learn=on)
 
 
-## 비디오에 요약된 단계
+## 비디오에 설명된 단계
 
 1. AEM CLI 설치
 
@@ -34,7 +34,7 @@ Edge Delivery Services 개발을 위한 로컬 개발 환경을 설정하는 방
    $ sudo npm install -g @adobe/aem-cli
    ```
 
-1. [AEM 상용구](https://github.com/adobe/aem-boilerplate) 템플릿에서 만든 git 저장소인 프로젝트 디렉터리로 디렉터리를 변경합니다.
+1. [AEM 보일러플레이트](https://github.com/adobe/aem-boilerplate) 템플릿으로 생성된 git 저장소인 프로젝트 디렉터리로 디렉터리를 변경합니다.
 
    ```
    $ git clone git@github.com:my-org/my-project.git
@@ -60,4 +60,4 @@ Edge Delivery Services 개발을 위한 로컬 개발 환경을 설정하는 방
    opening default browser: http://localhost:3000/
    ```
 
-1. 웹 브라우저 http://localhost:3000/ 를 열어 AEM 웹 사이트를 확인합니다.
+1. 웹 브라우저에서 http://localhost:3000/을 열어 AEM 웹 사이트를 확인합니다.
