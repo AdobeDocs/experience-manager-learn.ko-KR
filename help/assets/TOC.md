@@ -62,10 +62,10 @@ ht-degree: 99%
    + [3D 자산](./advanced/3d-assets.md)
    + [주석 PDF 출력](./advanced/customizing-annotations-pdf-output.md)
    + [자산 보고서](./advanced/asset-reports.md)
-   + [콘텐츠 자격 증명](./advanced/content-credentials.md)
+   + [Content Credentials](./advanced/content-credentials.md)
    + [차단된 태그](./advanced/blocked-tags.md)
    + [아카이브 추출](./advanced/extract-archive.md)
-   + [권한(CUG)](./advanced/closed-user-groups.md)
+   + [권한 (CUG)](./advanced/closed-user-groups.md)
    + [메타데이터 기반 권한](./advanced/metadata-driven-permissions.md)
    + [비디오 닫힘 캡션](./advanced/video-closed-captions.md)
    + [워터마크](./advanced/watermarks.md)
@@ -105,7 +105,7 @@ ht-degree: 99%
       + [자산 소싱 구성](brand-portal/configure-asset-sourcing.md)
       + [렌디션 다운로드 활성화](brand-portal/enable-renditions-download.md)
 
-   + Asset share{#assets-share}
+   + Asset Share{#assets-share}
       + [Asset Share Commons](./sharing/asset-share-commons-user-experience-feature-video-understand.md)
       + [로컬 AEM에 Asset Share Commons 설정](./sharing/asset-share-commons-technical-video-setup.md)
       + [Asset Share Commons 테마 설정](./sharing/asset-share-commons-feature-video-theming.md)
@@ -125,10 +125,10 @@ ht-degree: 99%
    + [파일 및 컬렉션](./adobe-asset-link/files-and-collections.md)
    + [다운로드 및 업로드](./adobe-asset-link/download-and-upload.md)
    + [체크인 체크아웃](./adobe-asset-link/check-in-check-out.md)
-   + [버전 관리 및 주석](./adobe-asset-link/file-versioning-and-comments.md)
+   + [버전 관리 및 댓글](./adobe-asset-link/file-versioning-and-comments.md)
    + [사본 배치](./adobe-asset-link/place-copy.md)
    + [연결된 장소](./adobe-asset-link/place-linked.md)
-   + [배치 전용(FPO)](./adobe-asset-link/for-placement-only.md)
+   + [배치 전용 (FPO)](./adobe-asset-link/for-placement-only.md)
    + [자산 검색](./adobe-asset-link/asset-search.md)
 
 + 콘텐츠 자동화{#content-automation}
@@ -201,4 +201,4 @@ ht-degree: 99%
 + 배포{#deployment}
    + [다중 테넌시 및 동시 개발](deployment/multitenancy-concurrent-article-understand.md)
 
-+ [Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/overview.html?lang=ko){target=_blank}
++ [Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/overview.html){target=_blank}
