@@ -68,7 +68,7 @@ AEM Sites는 경험을 빌드하고, 작성하고, 전달하는 세 가지 방�
   {description = Learn how to build headless applications powered by AEM content. Tutorials cover frameworks like iOS, Android, and React—choose what fits your stack.}
   {image = ./assets/headless.png}
   {target = _self}
-* https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview
+* https://experienceleague.adobe.com/ko/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview
   {title = Traditional AEM - WKND Tutorial}
   {description = Learn how to build a sample AEM Sites project using the WKND tutorial. This guide walks you through project setup, Core Components, Editable Templates, client-side libraries, and component development.}
   {image = ./assets/aem-wknd-spa-editor-tutorial.png}
