@@ -14,10 +14,10 @@ hide: true
 hidefromtoc: true
 exl-id: 2d4396dc-2346-4561-b040-eba0ab62a96f
 duration: 22
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 6425188da75f789b0661ec9bfb79624b5704c92b
 workflow-type: tm+mt
-source-wordcount: '116'
-ht-degree: 0%
+source-wordcount: '98'
+ht-degree: 6%
 
 ---
 
@@ -29,8 +29,6 @@ ht-degree: 0%
 
 + AEM Publish 서비스에 연결하며 인증이 필요하지 않습니다
 + WKND의 지속 쿼리 `wknd-shared/adventures-all` 및 `wknd-shared/adventures-by-slug`을(를) 사용합니다.
-
-이 Next.js 앱의 빌드 방법에 대한 자세한 내용을 보려면 [예제 Next.js 앱 설명서](../example-apps/next-js.md)를 검토하십시오.
 
 >[!IMPORTANT]
 >

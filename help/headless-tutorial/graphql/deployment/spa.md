@@ -11,10 +11,10 @@ thumbnail: KT-10587.jpg
 mini-toc-levels: 2
 exl-id: 3fe175f7-6213-439a-a02c-af3f82b6e3b7
 duration: 136
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 6425188da75f789b0661ec9bfb79624b5704c92b
 workflow-type: tm+mt
-source-wordcount: '655'
-ht-degree: 1%
+source-wordcount: '640'
+ht-degree: 5%
 
 ---
 
@@ -53,7 +53,7 @@ SPA 및 AEM 트래픽이 공유 도메인에서 라우팅되는 방법은 여러
 
 다음은 AEM과 동일한 도메인에서 호스팅되는 경우 SPA 프로덕션 배포에 필요한 배포 구성입니다.
 
-| SPA가 SPA에 → | AEM Author | AEM 게시 | AEM 미리보기 |
+| SPA가 SPA에 → | AEM Author | AEM 게시 인스턴스 | AEM 미리보기 |
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
 | [Dispatcher 필터](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | CORS(원본 간 리소스 공유) | ✘ | ✘ | ✘ |
@@ -70,7 +70,7 @@ AEM과 SPA는 서로 다른 도메인에서 액세스하므로 웹 브라우저�
 
 다음은 AEM이 아닌 다른 도메인에서 호스팅되는 경우 SPA 프로덕션 배포에 필요한 배포 구성입니다.
 
-| SPA가 SPA에 → | AEM Author | AEM 게시 | AEM 미리보기 |
+| SPA가 SPA에 → | AEM Author | AEM 게시 인스턴스 | AEM 미리보기 |
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
 | [Dispatcher 필터](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | [CORS(원본 간 리소스 공유)](./configurations/cors.md) | ✔ | ✔ | ✔ |
@@ -82,7 +82,7 @@ AEM과 SPA는 서로 다른 도메인에서 액세스하므로 웹 브라우저�
 
 1. SPA는 Netlify 도메인에서 제공되지만 다른 도메인의 AEM GraphQL API에 대해 XHR을 호출합니다. 이 사이트 간 요청을 사용하려면 Netlify 도메인의 콘텐츠 액세스를 허용하도록 AEM에 [CORS](./configurations/cors.md)을(를) 설정해야 합니다.
 
-   SPA 및 AEM 호스트 ![&#128279;](assets/spa/cors-requirement.png)에서 제공된 SPA 요청
+   SPA 및 AEM 호스트 ](assets/spa/cors-requirement.png)에서 제공된 ![SPA 요청
 
 2. AEM GraphQL API에 대한 XHR 요청을 검사하는 동안 `Access-Control-Allow-Origin`이(가) 있으며, 이는 AEM이 이 Netlify 도메인의 콘텐츠 액세스를 요청할 수 있음을 웹 브라우저에 나타냅니다.
 
@@ -94,47 +94,37 @@ AEM과 SPA는 서로 다른 도메인에서 액세스하므로 웹 브라우저�
 
 Adobe은 React로 코딩된 단일 페이지 앱의 예를 제공합니다.
 
-<div class="columns is-multiline">
-<!-- React app -->
-<div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="React app" tabindex="0">
-   <div class="card">
-       <div class="card-image">
-           <figure class="image is-16by9">
-               <a href="../example-apps/react-app.md" title="React 앱" tabindex="-1">
-                   <img class="is-bordered-r-small" src="../example-apps/assets/react-app/react-app-card.png" alt="React 앱">
-               </a>
-           </figure>
-       </div>
-       <div class="card-content is-padded-small">
-           <div class="content">
-               <p class="headline is-size-6 has-text-weight-bold"><a href="../example-apps/react-app.md" title="React 앱">React 앱</a></p>
-               <p class="is-size-6">AEM Headless GraphQL API의 콘텐츠를 사용하는 React로 작성된 단일 페이지 앱의 예입니다.</p>
-               <a href="../example-apps/react-app.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">예제 보기</span>
-               </a>
-           </div>
-       </div>
-   </div>
+<!-- CARDS 
+
+* ../example-apps/react-app.md
+
+-->
+<!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
+<div class="columns">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="React App - AEM Headless Example">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="../example-apps/react-app.md" title="React 앱 - AEM Headless 예" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="../example-apps/assets/react-app/react-app.png" alt="React 앱 - AEM Headless 예"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="../example-apps/react-app.md" target="_blank" rel="referrer" title="React 앱 - AEM Headless 예">React 앱 - AEM Headless 예</a>
+                    </p>
+                    <p class="is-size-6">예제 애플리케이션은 Adobe Experience Manager(AEM)의 Headless 기능을 탐색할 수 있는 훌륭한 방법입니다. 이 React 애플리케이션은 지속 쿼리를 사용하여 AEM의 GraphQL API를 사용하여 콘텐츠를 쿼리하는 방법을 보여 줍니다.</p>
+                </div>
+                <a href="../example-apps/react-app.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">자세히 알아보기</span>
+                </a>
+            </div>
+        </div>
+    </div>
 </div>
-<!-- Next.js app -->
-<div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Next.js app" tabindex="0">
-   <div class="card">
-       <div class="card-image">
-           <figure class="image is-16by9">
-               <a href="../example-apps/next-js.md" title="Next.js 앱" tabindex="-1">
-                   <img class="is-bordered-r-small" src="../example-apps/assets/next-js/next-js-card.png" alt="Next.js 앱">
-               </a>
-           </figure>
-       </div>
-       <div class="card-content is-padded-small">
-           <div class="content">
-               <p class="headline is-size-6 has-text-weight-bold"><a href="../example-apps/next-js.md" title="Next.js 앱">Next.js 앱</a></p>
-               <p class="is-size-6">AEM Headless GraphQL API의 콘텐츠를 사용하는 Next.js로 작성된 단일 페이지 앱의 예입니다.</p>
-               <a href="../example-apps/next-js.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">예제 보기</span>
-               </a>
-           </div>
-       </div>
-   </div>
-</div>
-</div>
+<!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
+
+

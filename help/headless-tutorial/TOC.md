@@ -8,9 +8,9 @@ sub-product: Experience Manager Sites
 version: Experience Manager 6.5, Experience Manager as a Cloud Service
 jira: KT-2963
 index: y
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
-source-wordcount: '341'
+source-git-commit: 6425188da75f789b0661ec9bfb79624b5704c92b
+workflow-type: tm+mt
+source-wordcount: '317'
 ht-degree: 100%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 + [AEM Headless 개요](./overview.md)
 + GraphQL {#graphql}
-   + [AEM Headless 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ko){target=_blank}
+   + [AEM Headless 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html){target=_blank}
    + [개요](./graphql/overview.md)
    + 빠른 설정 {#quick-setup}
       + [Cloud Service](./graphql/quick-setup/cloud-service.md)
@@ -72,20 +72,11 @@ ht-degree: 100%
    + [AEM 6.5용 GraphiQL 설치](./graphql/how-to/install-graphiql-aem-6-5.md)
    + 예 {#example-apps}
       + [React](./graphql/example-apps/react-app.md)
-      + [Next.js](./graphql/example-apps/next-js.md)
       + [웹 구성 요소](./graphql/example-apps/web-component.md)
       + [iOS](./graphql/example-apps/ios-swiftui-app.md)
       + [Android](./graphql/example-apps/android-app.md)
       + [Node.js](./graphql/example-apps/server-to-server-app.md)
 + SPA 편집기{#spa-editor}
-   + React{#react}
-      + [개요](./spa-editor/react/overview.md)
-      + [1 - 프로젝트 만들기](./spa-editor/react/create-project.md)
-      + [2 - SPA 통합](./spa-editor/react/integrate-spa.md)
-      + [3 - SPA 구성 요소 매핑](./spa-editor/react/map-components.md)
-      + [4 - 탐색 및 라우팅](./spa-editor/react/navigation-routing.md)
-      + [5 - 사용자 정의 구성 요소](./spa-editor/react/custom-component.md)
-      + [6 - 구성 요소 확장](./spa-editor/react/extend-component.md)
    + Angular{#angular}
       + [개요](./spa-editor/angular/overview.md)
       + [1 - SPA 편집기 프로젝트](./spa-editor/angular/create-project.md)
