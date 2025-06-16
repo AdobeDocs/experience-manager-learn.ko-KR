@@ -51,7 +51,7 @@ AEM 구성 요소는 노드 및 속성으로 정의됩니다. 프로젝트에서
 
 >[!NOTE]
 >
-> AEM 구성 요소의 [기본 사항에 대한 빠른 새로 고침이 도움이 될 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html).
+> AEM 구성 요소의 [기본 사항에 대한 빠른 새로 고침이 도움이 될 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html?lang=ko).
 
 1. 선택한 IDE에서 `ui.apps` 폴더를 엽니다.
 2. `ui.apps/src/main/content/jcr_root/apps/wknd-spa-react/components`(으)로 이동하여 `open-weather`(이)라는 새 폴더를 만드십시오.
@@ -151,7 +151,7 @@ AEM 구성 요소는 노드 및 속성으로 정의됩니다. 프로젝트에서
 
 ## Sling 모델 만들기
 
-Sling 모델은 JCR에서 Java 변수로의 데이터 매핑을 용이하게 하는 주석 기반 Java &quot;POJO&quot;(일반 이전 Java 개체)입니다. [Sling 모델](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html?lang=en#sling-models)은 일반적으로 AEM 구성 요소에 대한 복잡한 서버측 비즈니스 논리를 캡슐화하는 기능을 합니다.
+Sling 모델은 JCR에서 Java 변수로의 데이터 매핑을 용이하게 하는 주석 기반 Java &quot;POJO&quot;(일반 이전 Java 개체)입니다. [Sling 모델](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html?lang=ko#sling-models)은 일반적으로 AEM 구성 요소에 대한 복잡한 서버측 비즈니스 논리를 캡슐화하는 기능을 합니다.
 
 SPA 편집기의 컨텍스트에서 슬링 모델은 [슬링 모델 내보내기 도구](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=ko)를 사용하는 기능을 통해 JSON 모델을 통해 구성 요소의 콘텐츠를 노출합니다.
 

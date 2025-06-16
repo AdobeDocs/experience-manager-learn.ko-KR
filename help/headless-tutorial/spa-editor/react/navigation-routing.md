@@ -33,7 +33,7 @@ SPA 편집기 SDK을 사용하여 AEM 페이지에 매핑하여 SPA의 여러 �
 
 ## 빌드할 내용
 
-이 장에서는 AEM의 SPA에 탐색 기능을 추가합니다. 탐색 메뉴는 AEM 페이지 계층 구조에 의해 구동되며 [탐색 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/navigation.html)에서 제공하는 JSON 모델을 사용합니다.
+이 장에서는 AEM의 SPA에 탐색 기능을 추가합니다. 탐색 메뉴는 AEM 페이지 계층 구조에 의해 구동되며 [탐색 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/navigation.html?lang=ko)에서 제공하는 JSON 모델을 사용합니다.
 
 ![탐색 추가됨](assets/navigation-routing/navigation-added.png)
 
