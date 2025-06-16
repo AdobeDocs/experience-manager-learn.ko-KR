@@ -11,20 +11,23 @@ thumbnail: 22229.jpg
 doc-type: Feature Video
 exl-id: 645b6986-830f-4409-b46c-ddf15c33e84c
 duration: 473
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+hide: true
+source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 1%
 
 ---
 
-# AEM Sites에서 SPA 편집기 사용 {#using-the-spa-editor-with-aem-sites}
+# AEM Sites에서 SPA 편집기 사용
+
+{{spa-editor-deprecation}}
 
 AEM Sites의 단일 페이지 애플리케이션용 컨텐츠 작성에 대한 비디오 개요입니다.
 
 AEM의 SPA Editor는 작성자가 단일 페이지 애플리케이션 또는 SPA의 콘텐츠를 편집할 수 있는 기능을 제공합니다. React 프레임워크를 사용하는 개발자는 SPA를 만든 다음 SPA 영역을 AEM 구성 요소에 매핑하므로 작성자가 익숙한 AEM Sites 편집 도구를 사용할 수 있습니다. 아래 비디오에서는 WKND SPA 샘플 사이트와 함께 제공되는 몇 가지 컨텍스트 내 편집 기능을 보여 줍니다. WKND SPA 프로젝트에는 React 구현이 모두 포함됩니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/34814?quality=12&learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/22229?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -40,4 +43,4 @@ WKND SPA 구현은 AEM 6.4.8+, AEM 6.5.5+ 및 AEM as a Cloud Service에 대한 �
 
 SPA 편집기를 사용한 개발에 대한 자세한 튜토리얼은 다음을 참조하십시오.
 
-* [AEM SPA 편집기 및 반응 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=ko)
+* [AEM SPA 편집기 및 반응 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)

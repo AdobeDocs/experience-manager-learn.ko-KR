@@ -11,7 +11,8 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 497ce6d7-cd39-4fb3-b5e0-6c60845f7648
 duration: 477
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+hide: true
+source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
 workflow-type: tm+mt
 source-wordcount: '2123'
 ht-degree: 0%
@@ -19,6 +20,8 @@ ht-degree: 0%
 ---
 
 # SPA 구성 요소를 AEM 구성 요소에 매핑 {#map-components}
+
+{{spa-editor-deprecation}}
 
 AEM SPA Editor JS SDK을 사용하여 React 구성 요소를 Adobe Experience Manager(AEM) 구성 요소에 매핑하는 방법을 알아봅니다. 구성 요소 매핑을 통해 사용자는 AEM SPA 편집기 내에서 기존 AEM 작성과 유사하게 SPA 구성 요소를 동적으로 업데이트할 수 있습니다.
 
@@ -50,7 +53,7 @@ AEM SPA Editor JS SDK을 사용하여 React 구성 요소를 Adobe Experience Ma
 
 ## 텍스트 구성 요소 검사
 
-[AEM Project Archetype](https://github.com/adobe/aem-project-archetype)은(는) AEM [텍스트 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=ko)에 매핑된 `Text` 구성 요소를 제공합니다. AEM에서 *content*&#x200B;을(를) 렌더링한다는 점에서 **content** 구성 요소의 예입니다.
+[AEM Project Archetype](https://github.com/adobe/aem-project-archetype)은(는) AEM [텍스트 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html)에 매핑된 `Text` 구성 요소를 제공합니다. AEM에서 *content*&#x200B;을(를) 렌더링한다는 점에서 **content** 구성 요소의 예입니다.
 
 구성 요소가 어떻게 작동하는지 살펴보겠습니다.
 
@@ -221,7 +224,7 @@ AEM SPA Editor JS SDK을 사용하여 React 구성 요소를 Adobe Experience Ma
 
    **레이아웃 컨테이너** 구성 요소에 `wcm/foundation/components/responsivegrid`의 `sling:resourceType`이(가) 있으며, `Text` 및 `Image` 구성 요소와 마찬가지로 `:type` 속성을 사용하여 SPA 편집기에서 인식됩니다.
 
-   SPA 편집기에서 [레이아웃 모드](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html?lang=ko#defining-layouts-layout-mode)를 사용하여 구성 요소 크기를 다시 조정하는 것과 동일한 기능을 사용할 수 있습니다.
+   SPA 편집기에서 [레이아웃 모드](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html#defining-layouts-layout-mode)를 사용하여 구성 요소 크기를 다시 조정하는 것과 동일한 기능을 사용할 수 있습니다.
 
 2. [http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html)&#x200B;(으)로 돌아갑니다. **이미지** 구성 요소를 추가하고 **레이아웃** 옵션을 사용하여 크기를 다시 조정해 보십시오.
 
@@ -286,7 +289,7 @@ AEM SPA Editor JS SDK을 사용하여 React 구성 요소를 Adobe Experience Ma
 
 ## (보너스) 사용자 지정 이미지 구성 요소 만들기 {#bonus-image}
 
-SPA 이미지 구성 요소는 React 핵심 구성 요소에서 이미 제공했습니다. 그러나 추가 연습이 필요하면 AEM [이미지 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=ko)에 매핑되는 React 구현을 직접 만드십시오. `Image` 구성 요소는 **content** 구성 요소의 또 다른 예입니다.
+SPA 이미지 구성 요소는 React 핵심 구성 요소에서 이미 제공했습니다. 그러나 추가 연습이 필요하면 AEM [이미지 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html)에 매핑되는 React 구현을 직접 만드십시오. `Image` 구성 요소는 **content** 구성 요소의 또 다른 예입니다.
 
 ### JSON 검사
 

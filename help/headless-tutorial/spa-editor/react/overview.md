@@ -12,8 +12,9 @@ doc-type: Tutorial
 exl-id: 38802296-8988-4300-a04a-fcbbe98ac810
 last-substantial-update: 2022-08-25T00:00:00Z
 duration: 71
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
+hide: true
+source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+workflow-type: tm+mt
 source-wordcount: '417'
 ht-degree: 100%
 
@@ -21,7 +22,7 @@ ht-degree: 100%
 
 # AEM에서 첫 번째 React SPA 만들기 {#overview}
 
-{{edge-delivery-services}}
+{{spa-editor-deprecation}}
 
 Adobe Experience Manager(AEM)의 **SPA 편집기** 기능을 처음 사용하는 개발자를 위한 멀티 파트 튜토리얼을 시작합니다. 이 튜토리얼은 WKND의 가상 라이프스타일 브랜드를 위한 React 애플리케이션의 구현 과정을 안내합니다. React 앱은 AEM의 SPA 편집기와 함께 배포되도록 개발 및 설계되었으며, React 구성 요소를 AEM 구성 요소에 매핑합니다. 완성된 SPA는 AEM에 배포되며 AEM의 기존 인라인 편집 도구를 사용하여 동적으로 작성할 수 있습니다.
 
@@ -46,7 +47,7 @@ Adobe Experience Manager(AEM)의 **SPA 편집기** 기능을 처음 사용하는
 * HTML, CSS 및 JavaScript에 대한 기본 지식
 * [React](https://reactjs.org/tutorial/tutorial.html)에 대한 기본적인 이해
 
-*반드시 필요한 것은 아니지만 [기존 AEM Sites 구성 요소 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko)에 대한 기본적인 이해가 있으면 도움이 됩니다.*
+*반드시 필요한 것은 아니지만 [기존 AEM Sites 구성 요소 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)에 대한 기본적인 이해가 있으면 도움이 됩니다.*
 
 ## 로컬 개발 환경 {#local-dev-environment}
 
@@ -54,7 +55,7 @@ Adobe Experience Manager(AEM)의 **SPA 편집기** 기능을 처음 사용하는
 
 ### 필수 소프트웨어
 
-* [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=ko), [AEM 6.5.4 이상](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=ko#aem-65) 또는 [AEM 6.4.8 이상](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=ko#aem-64)
+* [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html), [AEM 6.5.4 이상](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=ko#aem-65) 또는 [AEM 6.4.8 이상](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=ko#aem-64)
 * [Java](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 * [Apache Maven](https://maven.apache.org/)&#x200B;(3.3.9 이상)
 * [Node.js](https://nodejs.org/en/) 및 [npm](https://www.npmjs.com/)

@@ -11,7 +11,8 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 49fcd603-ab1a-4f1e-ae1f-49d3ff373439
 duration: 252
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+hide: true
+source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
 workflow-type: tm+mt
 source-wordcount: '1002'
 ht-degree: 1%
@@ -19,6 +20,8 @@ ht-degree: 1%
 ---
 
 # SPA 편집기 프로젝트 {#create-project}
+
+{{spa-editor-deprecation}}
 
 Adobe Experience Manager(AEM) Maven 프로젝트를 AEM SPA 편집기와 통합된 Angular 애플리케이션의 시작점으로 사용하는 방법에 대해 알아봅니다.
 
@@ -87,7 +90,7 @@ AEM용 Maven 다중 모듈 프로젝트를 만드는 몇 가지 옵션이 있습
 
    >[!NOTE]
    >
-   > `frontendModule=angular` 속성을 확인합니다. 이를 통해 AEM Project Archetype에서 AEM SPA 편집기와 함께 사용할 스타터 [Angular 코드 베이스](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html?lang=ko)로 프로젝트를 부트스트랩합니다.
+   > `frontendModule=angular` 속성을 확인합니다. 이를 통해 AEM Project Archetype에서 AEM SPA 편집기와 함께 사용할 스타터 [Angular 코드 베이스](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html)로 프로젝트를 부트스트랩합니다.
 
 ## 프로젝트 빌드
 
@@ -146,7 +149,7 @@ AEM용 Maven 다중 모듈 프로젝트를 만드는 몇 가지 옵션이 있습
 
    프로젝트에 필요한 모든 사용자 지정 코드는 이러한 패키지에 번들로 제공되며 AEM 런타임에 설치됩니다.
 
-6. `spa.project.core` 및 `core.wcm.components`에 대한 패키지도 여러 개 표시됩니다. 이러한 종속성은 Archetype에 의해 자동으로 포함됩니다. [AEM 핵심 구성 요소에 대한 자세한 내용은 여기](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)를 참조하십시오.
+6. `spa.project.core` 및 `core.wcm.components`에 대한 패키지도 여러 개 표시됩니다. 이러한 종속성은 Archetype에 의해 자동으로 포함됩니다. [AEM 핵심 구성 요소에 대한 자세한 내용은 여기](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)를 참조하십시오.
 
 ## 콘텐츠 작성
 

@@ -11,8 +11,9 @@ level: Beginner
 doc-type: Tutorial
 exl-id: f2cf4063-0b08-4b4f-91e6-70e5a148f931
 duration: 123
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
+hide: true
+source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 100%
 
@@ -20,7 +21,7 @@ ht-degree: 100%
 
 # AEM에서 첫 번째 Angular SPA 만들기 {#introduction}
 
-{{edge-delivery-services}}
+{{spa-editor-deprecation}}
 
 Adobe Experience Manager(AEM)의 **SPA 편집기** 기능을 처음 사용하는 개발자를 위한 멀티 파트 튜토리얼을 시작합니다. 이 튜토리얼에서는 가상의 라이프스타일 브랜드인 WKND를 위한 React 애플리케이션을 구현하는 과정을 안내합니다. Angular 앱은 AEM의 SPA 편집기와 함께 배포되도록 개발 및 설계되었으며, Angular 구성 요소를 AEM 구성 요소에 매핑합니다. 완성된 SPA는 AEM에 배포되며 AEM의 기존 인라인 편집 도구를 사용하여 동적으로 작성할 수 있습니다.
 
@@ -34,9 +35,9 @@ Adobe Experience Manager(AEM)의 **SPA 편집기** 기능을 처음 사용하는
 
 이 튜토리얼은 **AEM as a Cloud Service**&#x200B;와 함께 작동하도록 설계되었으며, **AEM 6.5.4 이상** 및 **AEM 6.4.8 이상** 버전과도 하위 호환됩니다. SPA는 다음을 사용해 구현됩니다.
 
-* [Maven AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko)
-* [AEM SPA 편집기](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-walkthrough.html?lang=ko#content-editing-experience-with-spa)
-* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)
+* [Maven AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+* [AEM SPA 편집기](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-walkthrough.html#content-editing-experience-with-spa)
+* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [Angular](https://angular.io/)
 
 *튜토리얼의 각 부분을 완료하는 데는 약 1~2시간이 소요됩니다.*
@@ -53,12 +54,12 @@ Adobe Experience Manager(AEM)의 **SPA 편집기** 기능을 처음 사용하는
 
 * HTML, CSS 및 JavaScript에 대한 기본 지식
 * [Angular](https://angular.io/)에 대한 기본적인 이해
-* [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=ko#download-the-aem-as-a-cloud-service-sdk), [AEM 6.5.4 이상](https://helpx.adobe.com/kr/experience-manager/aem-releases-updates.html#65) 또는 [AEM 6.4.8 이상](https://helpx.adobe.com/kr/experience-manager/aem-releases-updates.html#64)
+* [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk), [AEM 6.5.4 이상](https://helpx.adobe.com/kr/experience-manager/aem-releases-updates.html#65) 또는 [AEM 6.4.8 이상](https://helpx.adobe.com/kr/experience-manager/aem-releases-updates.html#64)
 * [Java](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 * [Apache Maven](https://maven.apache.org/)&#x200B;(3.3.9 이상)
 * [Node.js](https://nodejs.org/en/) 및 [npm](https://www.npmjs.com/)
 
-*반드시 필요한 것은 아니지만 [기존 AEM Sites 구성 요소 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko)에 대한 기본적인 이해가 있으면 도움이 됩니다.*
+*반드시 필요한 것은 아니지만 [기존 AEM Sites 구성 요소 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)에 대한 기본적인 이해가 있으면 도움이 됩니다.*
 
 ## 로컬 개발 환경 {#local-dev-environment}
 
@@ -78,7 +79,7 @@ Adobe Experience Manager(AEM)의 **SPA 편집기** 기능을 처음 사용하는
 
 이 튜토리얼의 프로젝트 코드는 AEM as a Cloud Service용으로 작성되었습니다. **6.5.4 이상** 및 **6.4.8 이상**&#x200B;과의 프로젝트 코드 하위 호환을 위해 몇 가지 수정이 적용되었습니다.
 
-[UberJar](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html?lang=ko#what-is-the-uberjar) **v6.4.4** 종속성이 추가되었습니다.
+[UberJar](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html#what-is-the-uberjar) **v6.4.4** 종속성이 추가되었습니다.
 
 ```xml
 <!-- Adobe AEM 6.x Dependencies -->

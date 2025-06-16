@@ -11,7 +11,8 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 9c3d47c7-1bb9-441c-a0e6-85887a32c817
 duration: 337
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+hide: true
+source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
 workflow-type: tm+mt
 source-wordcount: '1481'
 ht-degree: 0%
@@ -19,6 +20,8 @@ ht-degree: 0%
 ---
 
 # 탐색 및 라우팅 추가 {#navigation-routing}
+
+{{spa-editor-deprecation}}
 
 SPA 편집기 SDK을 사용하여 AEM 페이지에 매핑하여 SPA의 여러 보기를 지원하는 방법을 알아봅니다. 동적 탐색은 React Router 및 React 핵심 구성 요소를 사용하여 구현됩니다.
 
@@ -30,7 +33,7 @@ SPA 편집기 SDK을 사용하여 AEM 페이지에 매핑하여 SPA의 여러 �
 
 ## 빌드할 내용
 
-이 장에서는 AEM의 SPA에 탐색 기능을 추가합니다. 탐색 메뉴는 AEM 페이지 계층 구조에 의해 구동되며 [탐색 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/navigation.html?lang=ko)에서 제공하는 JSON 모델을 사용합니다.
+이 장에서는 AEM의 SPA에 탐색 기능을 추가합니다. 탐색 메뉴는 AEM 페이지 계층 구조에 의해 구동되며 [탐색 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/navigation.html)에서 제공하는 JSON 모델을 사용합니다.
 
 ![탐색 추가됨](assets/navigation-routing/navigation-added.png)
 

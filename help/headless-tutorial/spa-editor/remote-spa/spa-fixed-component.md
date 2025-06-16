@@ -1,6 +1,6 @@
 ---
 title: 원격 SPA에 편집 가능한 고정 구성 요소 추가
-description: 원격 SPA에 편집 가능한 고정 구성 요소를 추가하는 방법을 알아봅니다.
+description: 원격 SPA에 편집 가능한 고정 구성 요소를 추가하는 방법에 대해 알아봅니다.
 topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
 role: Developer, Architect
@@ -12,7 +12,8 @@ recommendations: noDisplay, noCatalog
 doc-type: Tutorial
 exl-id: edd18f2f-6f24-4299-a31a-54ccc4f6d86e
 duration: 164
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+hide: true
+source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
 workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 1%
@@ -21,7 +22,9 @@ ht-degree: 1%
 
 # 편집 가능한 고정 구성 요소
 
-편집 가능한 React 구성 요소는 &quot;고정&quot;되거나 SPA 보기에 하드 코딩할 수 있습니다. 이 경우 개발자는 SPA Editor와 호환되는 구성 요소를 SPA AEM 보기에 배치할 수 있으며 사용자는 SPA Editor에서 구성 요소의 콘텐츠를 작성할 수 있습니다.
+{{spa-editor-deprecation}}
+
+편집 가능한 React 구성 요소는 &quot;고정&quot; 또는 SPA 보기에 하드 코딩할 수 있습니다. 이렇게 하면 개발자는 SPA 보기에 SPA 편집기 호환 구성 요소를 배치하고, 사용자는 AEM SPA 편집기에서 구성 요소의 콘텐츠를 작성할 수 있습니다.
 
 ![고정 구성 요소](./assets/spa-fixed-component/intro.png)
 
@@ -31,12 +34,12 @@ ht-degree: 1%
 
 __고정__ 구성 요소를 홈 보기에 추가하려면:
 
-+ 사용자 지정 편집 가능한 제목 구성 요소를 만들고 프로젝트의 제목 리소스 유형에 등록합니다.
-+ SPA 홈 보기에 편집 가능한 제목 구성 요소를 배치합니다.
+* 사용자 지정 편집 가능한 제목 구성 요소를 만들고 프로젝트의 제목 리소스 유형에 등록합니다.
+* SPA의 홈 보기에서 편집 가능한 제목 구성 요소 를 배치합니다.
 
 ### 편집 가능한 React Title 구성 요소 만들기
 
-SPA 홈 보기에서 하드 코딩된 텍스트 `<h2>Current Adventures</h2>`을(를) 사용자 지정 편집 가능한 제목 구성 요소로 바꿉니다. 제목 구성 요소를 사용하기 전에 다음을 수행해야 합니다.
+SPA의 홈 보기에서 하드 코딩된 텍스트 `<h2>Current Adventures</h2>`을(를) 사용자 지정 편집 가능한 제목 구성 요소로 바꿉니다. 제목 구성 요소를 사용하기 전에 다음을 수행해야 합니다.
 
 1. 사용자 지정 제목 React 구성 요소 만들기
 1. 편집할 수 있도록 `@adobe/aem-react-editable-components`의 메서드를 사용하여 사용자 지정 제목 구성 요소를 장식합니다.
@@ -132,7 +135,7 @@ SPA 홈 보기에서 하드 코딩된 텍스트 `<h2>Current Adventures</h2>`을
    export default EditableTitle;
    ```
 
-   이 `EditableTitle` React 구성 요소는 `Title` React 구성 요소를 래핑하고 AEM SPA Editor에서 편집할 수 있도록 래핑 및 데코레이트합니다.
+   이 `EditableTitle` React 구성 요소는 `Title` React 구성 요소를 래핑하고 AEM SPA 편집기에서 편집할 수 있도록 래핑 및 데코레이트합니다.
 
 ### React EditableTitle 구성 요소 사용
 
@@ -175,24 +178,24 @@ EditableTitle React 구성 요소가에 등록되어 React 앱 내에서 사용�
    ![제목 구성 요소 작업 표시줄](./assets/spa-fixed-component/title-action-bar.png)
 
 1. 제목 구성 요소 작성:
-   + 제목: __WKND 모험__
-   + 형식/크기: __H2__
+   1. 제목: __WKND 모험__
+   1. 형식/크기: __H2__
 
-     ![제목 구성 요소 대화 상자](./assets/spa-fixed-component/title-dialog.png)
+      ![제목 구성 요소 대화 상자](./assets/spa-fixed-component/title-dialog.png)
 
 1. 저장하려면 __완료__&#x200B;를 탭하세요.
-1. AEM SPA Editor에서 변경 사항 미리보기
+1. AEM SPA 편집기에서 변경 사항 미리보기
 1. [http://localhost:3000](http://localhost:3000)에서 로컬로 실행되는 WKND 앱을 새로 고치고 작성된 제목 변경 사항이 즉시 반영되었는지 확인합니다.
 
-   ![SPA의 제목 구성 요소](./assets/spa-fixed-component/title-final.png)
+   SPA의 ![제목 구성 요소](./assets/spa-fixed-component/title-final.png)
 
 ## 축하합니다!
 
 편집 가능한 고정 구성 요소를 WKND 앱에 추가했습니다. 이제 다음 방법을 이해할 수 있습니다.
 
-+ 수정되었지만 편집 가능한 구성 요소를 SPA에 만들었습니다.
-+ AEM에서 고정 구성 요소 작성
-+ 원격 SPA에서 작성된 콘텐츠 보기
+* SPA에 대해 수정되었지만 편집 가능한 구성 요소 생성
+* AEM에서 고정 구성 요소 작성
+* 원격 SPA에서 작성된 콘텐츠 보기
 
 ## 다음 단계
 

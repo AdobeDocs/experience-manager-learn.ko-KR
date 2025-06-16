@@ -11,7 +11,8 @@ thumbnail: kt-10900.jpeg
 doc-type: Tutorial
 exl-id: e055b356-dd26-4366-8608-5a0ccf5b4c49
 duration: 190
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+hide: true
+source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
 workflow-type: tm+mt
 source-wordcount: '525'
 ht-degree: 1%
@@ -20,24 +21,24 @@ ht-degree: 1%
 
 # AEM React Editable Components v2 사용법
 
-{{edge-delivery-services}}
+{{spa-editor-deprecation}}
 
 AEM은 AEM SPA 편집기를 사용하여 컨텍스트 내 구성 요소 편집을 지원하는 React 구성 요소를 만들 수 있는 Node.js 기반 SDK인 [AEM React Editable Components v2](https://www.npmjs.com/package/@adobe/aem-react-editable-components)을(를) 제공합니다.
 
-+ [npm 모듈](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
-+ [Github 프로젝트](https://github.com/adobe/aem-react-editable-components)
-+ [Adobe 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/developing/spas/spa-reference-materials.html?lang=ko)
+* [npm 모듈](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
+* [Github 프로젝트](https://github.com/adobe/aem-react-editable-components)
+* [Adobe 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/developing/spas/spa-reference-materials.html)
 
 
 AEM React Editable Components v2에 대한 자세한 내용 및 코드 샘플은 기술 설명서를 참조하십시오.
 
-+ [AEM 설명서와 통합](https://github.com/adobe/aem-react-editable-components/tree/master/src/core)
-+ [편집 가능한 구성 요소 설명서](https://github.com/adobe/aem-react-editable-components/tree/master/src/components)
-+ [도우미 설명서](https://github.com/adobe/aem-react-editable-components/tree/master/src/api)
+* [AEM 설명서와 통합](https://github.com/adobe/aem-react-editable-components/tree/master/src/core)
+* [편집 가능한 구성 요소 설명서](https://github.com/adobe/aem-react-editable-components/tree/master/src/components)
+* [도우미 설명서](https://github.com/adobe/aem-react-editable-components/tree/master/src/api)
 
 ## AEM 페이지
 
-AEM React Editable Components 는 SPA Editor 또는 Remote SPA React 앱에서 모두 작동합니다. 편집 가능한 React 구성 요소를 채우는 콘텐츠는 [SPA 페이지 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-page-component.html?lang=ko)를 확장하는 AEM 페이지를 통해 노출되어야 합니다. 편집 가능한 React 구성 요소에 매핑되는 AEM 구성 요소는 AEM의 [구성 요소 내보내기 프레임워크](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/json-exporter-components.html?lang=ko)&#x200B;(예: [AEM 코어 WCM 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko))를 구현해야 합니다.
+AEM React Editable Components 는 SPA Editor 또는 Remote SPA React 앱에서 모두 작동합니다. 편집 가능한 React 구성 요소를 채우는 콘텐츠는 [SPA 페이지 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-page-component.html)를 확장하는 AEM 페이지를 통해 노출되어야 합니다. 편집 가능한 React 구성 요소에 매핑되는 AEM 구성 요소는 AEM의 [구성 요소 내보내기 프레임워크](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/json-exporter-components.html)&#x200B;(예: [AEM 코어 WCM 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html))를 구현해야 합니다.
 
 
 ## 종속성
@@ -46,8 +47,7 @@ React 앱이 Node.js 14+에서 실행 중인지 확인합니다.
 
 AEM React Editable Components v2를 사용하기 위한 React 앱의 최소 종속성 집합은 `@adobe/aem-react-editable-components`, `@adobe/aem-spa-component-mapping` 및 `@adobe/aem-spa-page-model-manager`입니다.
 
-
-+ `package.json`
+* `package.json`
 
 ```json
 {
@@ -75,7 +75,7 @@ SPA 편집기 기반 React 앱에서 AEM React Editable Components를 사용하�
 
 초기화된 ModelManager로 React 앱을 래핑하고 React 앱을 렌더링합니다. React 앱에는 `@adobe/aem-react-editable-components`에서 내보낸 `<Page>` 구성 요소의 인스턴스 하나가 있어야 합니다. `<Page>` 구성 요소에 AEM에서 제공한 `.model.json`을(를) 기반으로 React 구성 요소를 동적으로 만드는 논리가 있습니다.
 
-+ `src/index.js`
+* `src/index.js`
 
 ```javascript
 import { Constants, ModelManager } from '@adobe/aem-spa-page-model-manager';
@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 `<Page>`은(는) `ModelManager`을(를) 통해 AEM 페이지의 표현을 JSON으로 전달합니다. 그런 다음 `<Page>` 구성 요소는 JS 개체의 `resourceType` 값과 구성 요소의 `MapTo(..)` 호출을 통해 리소스 유형에 자신을 등록하는 React 구성 요소를 일치시켜 JSON의 각 개체에 대해 React 구성 요소를 동적으로 만듭니다. 예를 들어 인스턴스를 인스턴스화하는 데 다음 항목이 사용됩니다
 
-+ `HTTP GET /content/.../home.model.json`
+* `HTTP GET /content/.../home.model.json`
 
 ```json
 ...
@@ -181,7 +181,7 @@ export default MapTo("wknd-examples/components/example")(EditableExample);
 1. 임베디드 구성 요소에 대한 AEM의 JSON 콘텐츠는 임베디드 구성 요소를 충족하기 위한 콘텐츠를 포함해야 합니다. 이 작업은 필요한 데이터를 수집하는 AEM 구성 요소에 대한 대화 상자를 만들어 수행합니다.
 1. React 구성 요소의 &quot;편집할 수 없는&quot; 인스턴스는 `<EditableComponent>`(으)로 래핑된 &quot;편집 가능한&quot; 인스턴스가 아니라 포함되어야 합니다. 그 이유는 포함된 구성 요소에 `<EditableComponent>` 래퍼가 있으면 SPA 편집기에서 외부 포함 구성 요소가 아닌 편집 크롬(파란색 가리키기 상자)으로 내부 구성 요소를 드레스하려고 하기 때문입니다.
 
-+ `HTTP GET /content/.../home.model.json`
+* `HTTP GET /content/.../home.model.json`
 
 ```json
 ...

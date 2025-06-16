@@ -11,7 +11,8 @@ level: Beginner
 doc-type: Tutorial
 exl-id: e9386885-86de-4e43-933c-2f0a2c04a2f2
 duration: 536
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+hide: true
+source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
 workflow-type: tm+mt
 source-wordcount: '2045'
 ht-degree: 0%
@@ -19,6 +20,8 @@ ht-degree: 0%
 ---
 
 # SPA 통합 {#integrate-spa}
+
+{{spa-editor-deprecation}}
 
 Angular으로 작성된 단일 페이지 애플리케이션(SPA)의 소스 코드를 Adobe Experience Manager(AEM) 프로젝트와 통합하는 방법에 대해 알아봅니다. Webpack 개발 서버와 같은 최신 프론트엔드 도구를 사용하여 AEM JSON 모델 API에 대해 SPA를 신속하게 개발하는 방법에 대해 알아봅니다.
 
@@ -74,13 +77,13 @@ Angular으로 작성된 단일 페이지 애플리케이션(SPA)의 소스 코�
 
 *SPA 통합에 대한 높은 수준의 설명입니다.*
 
-프론트엔드 빌드에 대한 추가 정보는 [여기에서 찾을 수 있음](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html?lang=ko).
+프론트엔드 빌드에 대한 추가 정보는 [여기에서 찾을 수 있음](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html).
 
 ## SPA 통합 검사 {#inspect-spa-integration}
 
-그런 다음 `ui.frontend` 모듈을 검사하여 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html?lang=ko)에서 자동으로 생성된 SPA를 이해합니다.
+그런 다음 `ui.frontend` 모듈을 검사하여 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html)에서 자동으로 생성된 SPA를 이해합니다.
 
-1. 선택한 IDE에서 WKND SPA에 대한 AEM 프로젝트를 엽니다. 이 자습서에서는 [Visual Studio 코드 IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=ko#microsoft-visual-studio-code)를 사용합니다.
+1. 선택한 IDE에서 WKND SPA에 대한 AEM 프로젝트를 엽니다. 이 자습서에서는 [Visual Studio 코드 IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code)를 사용합니다.
 
    ![VSCode - AEM WKND SPA 프로젝트](./assets/integrate-spa/vscode-ide-openproject.png)
 
@@ -109,7 +112,7 @@ Angular으로 작성된 단일 페이지 애플리케이션(SPA)의 소스 코�
    "@adobe/cq-spa-page-model-manager": "^1.1.3",
    ```
 
-   위의 모듈은 [AEM SPA Editor JS SDK](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-blueprint.html?lang=ko)을(를) 구성하고 SPA 구성 요소를 AEM 구성 요소에 매핑할 수 있는 기능을 제공합니다.
+   위의 모듈은 [AEM SPA Editor JS SDK](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-blueprint.html)을(를) 구성하고 SPA 구성 요소를 AEM 구성 요소에 매핑할 수 있는 기능을 제공합니다.
 
 5. `package.json` 파일에 여러 `scripts`이(가) 정의되어 있습니다.
 
@@ -129,7 +132,7 @@ Angular으로 작성된 단일 페이지 애플리케이션(SPA)의 소스 코�
 
    `build` - 프로덕션 배포를 위해 Angular 앱을 컴파일합니다. `&& clientlib`을(를) 추가하면 빌드 중에 컴파일된 SPA를 클라이언트측 라이브러리로 `ui.apps` 모듈에 복사됩니다. 이 작업을 용이하게 하기 위해 npm 모듈 [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator)을(를) 사용합니다.
 
-   사용 가능한 스크립트에 대한 자세한 내용은 [여기](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html?lang=ko)를 참조하세요.
+   사용 가능한 스크립트에 대한 자세한 내용은 [여기](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html)를 참조하세요.
 
 6. `ui.frontend/clientlib.config.js` 파일을 검사합니다. 이 구성 파일은 [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator#clientlibconfigjs)에서 클라이언트 라이브러리를 생성하는 방법을 결정하는 데 사용됩니다.
 

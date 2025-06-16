@@ -11,7 +11,8 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 57c8fc16-fed5-4af4-b98b-5c3f0350b240
 duration: 250
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+hide: true
+source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
 workflow-type: tm+mt
 source-wordcount: '975'
 ht-degree: 1%
@@ -19,6 +20,8 @@ ht-degree: 1%
 ---
 
 # 프로젝트 만들기 {#spa-editor-project}
+
+{{spa-editor-deprecation}}
 
 AEM SPA 편집기와 통합된 React 애플리케이션의 시작점으로 Adobe Experience Manager(AEM) Maven 프로젝트를 생성하는 방법에 대해 알아봅니다.
 
@@ -64,7 +67,7 @@ AEM SPA 편집기와 통합된 React 애플리케이션의 시작점으로 Adobe
    >
    > AEM 6.5.5 이상을 타깃팅하는 경우 `aemVersion="cloud"`을(를) `aemVersion="6.5.5"`(으)로 바꾸십시오. 6.4.8 이상을 타깃팅하는 경우 `aemVersion="6.4.8"`을(를) 사용합니다.
 
-   `frontendModule=react` 속성을 확인합니다. 이렇게 하면 AEM Project Archetype이 AEM SPA 편집기에서 사용할 스타터 [React 코드 베이스](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-react.html?lang=ko)로 프로젝트를 부트스트랩합니다. `appTitle`, `appId`, `artifactId` 및 `groupId`과(와) 같은 속성은 프로젝트 및 목적을 식별하는 데 사용됩니다.
+   `frontendModule=react` 속성을 확인합니다. 이렇게 하면 AEM Project Archetype이 AEM SPA 편집기에서 사용할 스타터 [React 코드 베이스](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-react.html)로 프로젝트를 부트스트랩합니다. `appTitle`, `appId`, `artifactId` 및 `groupId`과(와) 같은 속성은 프로젝트 및 목적을 식별하는 데 사용됩니다.
 
    [ 프로젝트를 구성하는 데 사용할 수 있는 속성의 전체 목록이 여기](https://github.com/adobe/aem-project-archetype#available-properties)에 있습니다.
 
@@ -89,7 +92,7 @@ AEM SPA 편집기와 통합된 React 애플리케이션의 시작점으로 Adobe
        |--- .gitignore
    ```
 
-   각 폴더는 개별 Maven 모듈을 나타냅니다. 이 자습서에서는 주로 React 앱인 `ui.frontend` 모듈을 사용하여 작업합니다. 개별 모듈에 대한 자세한 내용은 [AEM Project Archetype 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko)를 참조하세요.
+   각 폴더는 개별 Maven 모듈을 나타냅니다. 이 자습서에서는 주로 React 앱인 `ui.frontend` 모듈을 사용하여 작업합니다. 개별 모듈에 대한 자세한 내용은 [AEM Project Archetype 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)를 참조하세요.
 
 ## 프로젝트 배포 및 빌드
 

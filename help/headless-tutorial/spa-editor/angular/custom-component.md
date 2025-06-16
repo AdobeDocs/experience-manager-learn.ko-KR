@@ -11,7 +11,8 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 6c1c7f2b-f574-458c-b744-b92419c46f23
 duration: 308
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+hide: true
+source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
 workflow-type: tm+mt
 source-wordcount: '1321'
 ht-degree: 0%
@@ -19,6 +20,8 @@ ht-degree: 0%
 ---
 
 # 사용자 지정 구성 요소 만들기 {#custom-component}
+
+{{spa-editor-deprecation}}
 
 AEM SPA 편집기에서 사용할 사용자 지정 구성 요소를 만드는 방법을 알아봅니다. 작성자 대화 상자 및 Sling 모델을 개발하여 JSON 모델을 확장하여 사용자 지정 구성 요소를 채우는 방법에 대해 알아봅니다.
 
@@ -74,7 +77,7 @@ AEM 구성 요소는 노드 및 속성으로 정의됩니다. 프로젝트에서
 
 >[!NOTE]
 >
-> AEM 구성 요소의 [기본 사항에 대한 빠른 새로 고침이 도움이 될 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html?lang=ko).
+> AEM 구성 요소의 [기본 사항에 대한 빠른 새로 고침이 도움이 될 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html).
 
 1. 선택한 IDE에서 `ui.apps` 폴더를 엽니다.
 2. `ui.apps/src/main/content/jcr_root/apps/wknd-spa-angular/components`(으)로 이동하여 `custom-component` 폴더를 만듭니다.
@@ -156,11 +159,11 @@ AEM 구성 요소는 노드 및 속성으로 정의됩니다. 프로젝트에서
    >
    > 핵심 구성 요소 정의를 보면 훨씬 많은 [대화 상자의 예제를 볼 수 있습니다](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components). [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/libs/granite/ui/components/coral/foundation/form)의 `/libs/granite/ui/components/coral/foundation/form` 아래에서 사용할 수 있는 `select`, `textarea`, `pathfield`과(와) 같은 추가 양식 필드를 볼 수도 있습니다.
 
-   기존 AEM 구성 요소의 경우 일반적으로 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=ko) 스크립트가 필요합니다. SPA는 구성 요소를 렌더링하므로 HTL 스크립트가 필요하지 않습니다.
+   기존 AEM 구성 요소의 경우 일반적으로 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) 스크립트가 필요합니다. SPA는 구성 요소를 렌더링하므로 HTL 스크립트가 필요하지 않습니다.
 
 ## Sling 모델 만들기
 
-Sling 모델은 JCR에서 Java™ 변수로 데이터를 쉽게 매핑하는 주석 기반 Java™ &quot;POJO&quot;(일반 이전 Java™ 개체)입니다. [Sling 모델](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html?lang=ko#sling-models)은 일반적으로 AEM 구성 요소에 대한 복잡한 서버측 비즈니스 논리를 캡슐화하는 기능을 합니다.
+Sling 모델은 JCR에서 Java™ 변수로 데이터를 쉽게 매핑하는 주석 기반 Java™ &quot;POJO&quot;(일반 이전 Java™ 개체)입니다. [Sling 모델](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html#sling-models)은 일반적으로 AEM 구성 요소에 대한 복잡한 서버측 비즈니스 논리를 캡슐화하는 기능을 합니다.
 
 SPA 편집기의 컨텍스트에서 슬링 모델은 [슬링 모델 내보내기 도구](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=ko)를 사용하는 기능을 통해 JSON 모델을 통해 구성 요소의 콘텐츠를 노출합니다.
 
