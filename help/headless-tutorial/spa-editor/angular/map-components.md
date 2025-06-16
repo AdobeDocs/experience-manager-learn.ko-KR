@@ -134,7 +134,7 @@ AEM SPA Editor JS SDK을 사용하여 Angular 구성 요소를 Adobe Experience 
 
    [@Input()](https://angular.io/api/core/Input) decorator는 앞에서 검토한 대로 매핑된 JSON 개체를 통해 값이 설정된 필드를 선언하는 데 사용됩니다.
 
-   `@HostBinding('innerHtml') get content()`은(는) `this.text` 값에서 작성된 텍스트 콘텐츠를 노출하는 메서드입니다. 콘텐츠가 서식 있는 텍스트(`this.richText` 플래그로 결정됨)인 경우 Angular의 기본 제공 보안은 무시됩니다. Angular의 [DomSanitizer](https://angular.io/api/platform-browser/DomSanitizer)은(는) 원시 HTML을 &quot;스크러빙&quot;하고 교차 사이트 스크립팅 취약성을 방지하는 데 사용됩니다. 메서드는 [](https://angular.io/api/core/HostBinding) decorator를 사용하여 `innerHtml` @HostBinding에 바인딩됩니다.
+   `@HostBinding('innerHtml') get content()`은(는) `this.text` 값에서 작성된 텍스트 콘텐츠를 노출하는 메서드입니다. 콘텐츠가 서식 있는 텍스트(`this.richText` 플래그로 결정됨)인 경우 Angular의 기본 제공 보안은 무시됩니다. Angular의 [DomSanitizer](https://angular.io/api/platform-browser/DomSanitizer)은(는) 원시 HTML을 &quot;스크러빙&quot;하고 교차 사이트 스크립팅 취약성을 방지하는 데 사용됩니다. 메서드는 [&#128279;](https://angular.io/api/core/HostBinding) decorator를 사용하여 `innerHtml` @HostBinding에 바인딩됩니다.
 
 5. 다음 ~줄 24에서 `TextEditConfig`을(를) 검사합니다.
 

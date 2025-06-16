@@ -322,7 +322,7 @@ AEM 반응형 그리드 SCSS 파일을 SPA에 추가합니다.
 
 1. [http://localhost:3000](http://localhost:3000)에서 SPA를 찾아봅니다. 모든 것이 좋아 보여야 합니다!
 
-http://localhost:3000](./assets/spa-bootstrap/localhost-3000.png)에서 실행 중인 ![SPA
+http://localhost:3000![&#128279;](./assets/spa-bootstrap/localhost-3000.png)에서 실행 중인 SPA
 
 ## AEM SPA 편집기에서 SPA 열기
 
@@ -337,7 +337,7 @@ http://localhost:3000](./assets/spa-bootstrap/localhost-3000.png)에서 실행 �
 1. 오른쪽 상단의 모드 전환기를 사용하여 __미리 보기__(으)로 전환
 1. SPA 주위를 클릭합니다.
 
-   http://localhost:3000](./assets/spa-bootstrap/spa-editor.png)에서 실행 중인 ![SPA
+   http://localhost:3000![&#128279;](./assets/spa-bootstrap/spa-editor.png)에서 실행 중인 SPA
 
 ## 축하합니다!
 
