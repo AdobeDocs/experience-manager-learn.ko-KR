@@ -22,4 +22,4 @@ ht-degree: 0%
 
 AEM 챔피언 Brett Birschbach가 Adobe Experience Manager(AEM) Sites 내에서 라이브 작성 안내서를 작성하기 위한 모범 사례를 공유합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459572/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3463140/?learn=on&enablevpops&captions=kor)
