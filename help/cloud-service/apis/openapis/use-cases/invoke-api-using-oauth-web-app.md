@@ -12,9 +12,9 @@ thumbnail: KT-16718.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 9cf7c318-2be4-4b26-bd6f-0c80d002db45
-source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
+source-git-commit: 723c439202b8e00e7b3236a50641ee1f2f6a4d9c
 workflow-type: tm+mt
-source-wordcount: '2213'
+source-wordcount: '2262'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ WKND PIM 앱은 AEM as a Cloud Service 내에 저장된 제품 속성 및 자산
 
 Adobe Developer Console(ADC) 프로젝트가 OAuth 웹 앱 인증을 사용하여 Assets 작성자 API에 액세스하도록 구성되어 있습니다. _authorization_code_ 권한 부여 흐름을 시작하는 데 필요한 _client_id_ 및 _client_secret_&#x200B;을(를) WKND-PIM 웹 앱에 제공합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3442764?quality=12&learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3442757?quality=12&learn=on)
 
 
 다음 다이어그램은 WKND-PIM 웹 앱 _Assets 작성자 API와 상호 작용하기 위한 사용자별 액세스 토큰을 가져오는 중_&#x200B;의 기능 흐름을 보여 줍니다.
@@ -461,6 +461,10 @@ OpenAPI 기반 AEM API 호출은 액세스 토큰이 안전하게 관리되고 �
 
    ![AEM API 추가](../assets/s2s/add-aem-api.png)
 
+   >[!TIP]
+   >
+   >원하는 **AEM API 카드**&#x200B;가 비활성화되어 있고 _비활성화된 이유는 무엇입니까?_ 정보에 **라이선스 필요** 메시지가 표시되어 있습니다. 그 이유 중 하나는 AEM as a Cloud Service 환경을 현대화하지 않았기 때문일 수 있습니다. 자세한 내용은 [AEM as a Cloud Service 환경 현대화](../setup.md#modernization-of-aem-as-a-cloud-service-environment)를 참조하십시오.
+
 1. 그런 다음 _API 구성_ 대화 상자에서 **사용자 인증** 인증 옵션을 선택하고 **다음**&#x200B;을 클릭합니다.
 
    ![AEM API 구성](../assets/web-app/configure-aem-api.png)
@@ -493,7 +497,7 @@ OpenAPI 기반 AEM API 호출은 액세스 토큰이 안전하게 관리되고 �
 
 기본적으로 WKND Sites 프로젝트에는 제품 속성을 표시하는 데 필요한 에셋 메타데이터 스키마가 없습니다. AEM 인스턴스의 에셋 폴더에 에셋 메타데이터 스키마를 만들고 적용해 보겠습니다.
 
-1. AEM as a Cloud Service 자산 인스턴스에 로그인합니다. [자산 보기](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/authoring/switch-views)를 사용하여 `/content/dam/wknd-shared/en` 폴더로 이동합니다.
+1. AEM as a Cloud Service 자산 인스턴스에 로그인합니다. [자산 보기](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/authoring/switch-views)를 사용하여 `/content/dam/wknd-shared/en` 폴더로 이동합니다.
 
    ![폴더로 이동](../assets/web-app/navigate-to-folder.png)
 

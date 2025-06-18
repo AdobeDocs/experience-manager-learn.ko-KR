@@ -1,6 +1,6 @@
 ---
 title: OpenAPI 기반 AEM API 설정
-description: OpenAPI 기반 AEM API에 액세스할 수 있도록 AEM as a Cloud Service 환경을 설정하는 방법에 대해 알아봅니다.
+description: OpenAPI 기반 AEM API에 액세스할 수 있도록 AEM as a Cloud Service 환경을 설정하는 방법을 알아봅니다.
 version: Experience Manager as a Cloud Service
 feature: Developing
 topic: Development, Architecture, Content Management
@@ -12,16 +12,16 @@ thumbnail: KT-17426.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 1df4c816-b354-4803-bb6c-49aa7d7404c6
-source-git-commit: 34a22580db6dc32b5c4c5945af83600be2e0a852
+source-git-commit: 723c439202b8e00e7b3236a50641ee1f2f6a4d9c
 workflow-type: tm+mt
-source-wordcount: '1440'
-ht-degree: 1%
+source-wordcount: '1493'
+ht-degree: 12%
 
 ---
 
 # OpenAPI 기반 AEM API 설정
 
-OpenAPI 기반 AEM API에 액세스할 수 있도록 AEM as a Cloud Service 환경을 설정하는 방법에 대해 알아봅니다.
+OpenAPI 기반 AEM API에 액세스할 수 있도록 AEM as a Cloud Service 환경을 설정하는 방법을 알아봅니다.
 
 이 예에서는 서버 간 인증 방법을 사용하는 AEM Assets API를 사용하여 설정 프로세스를 보여 줍니다. 다른 OpenAPI 기반 AEM API에 대해서도 동일한 단계를 따를 수 있습니다.
 
@@ -94,7 +94,7 @@ _새 제품 프로필_&#x200B;이 있으면 ADC(Adobe Developer Console)에서 O
 
 ![제품 프로필에 개발자 연결](./assets/setup/associate-developer-to-product-profile.png)
 
-이 연결 후에 ADC 프로젝트 _자산 작성자 API_&#x200B;에서 원하는 서버 간 인증을 설정하고 ADC 프로젝트(다음 단계에서 생성)의 인증 계정을 제품 프로필과 연결할 수 있습니다.
+이 연결 후에 ADC 프로젝트 _자산 작성자 API_&#x200B;에서 원하는 서버 간 인증을 설정하고 (다음 단계에서 생성된) ADC 프로젝트의 인증 계정을 제품 프로필과 연결할 수 있습니다.
 
 >[!IMPORTANT]
 >
@@ -133,6 +133,10 @@ ADC 프로젝트를 만든 후 원하는 AEM API를 추가하고, 인증을 설�
 1. _API 추가_ 대화 상자에서 _Experience Cloud_&#x200B;을(를) 기준으로 필터링하고 원하는 AEM API를 선택합니다. 예를 들어 이 경우 _자산 작성자 API_&#x200B;가 선택됩니다.
 
    ![AEM API 추가](./assets/s2s/add-aem-api.png)
+
+   >[!TIP]
+   >
+   >    원하는 **AEM API 카드**&#x200B;가 비활성화되어 있고 _비활성화된 이유는 무엇입니까?_ 정보에 **라이선스 필요** 메시지가 표시되어 있습니다. 그 이유 중 하나는 AEM as a Cloud Service 환경을 현대화하지 않았기 때문일 수 있습니다. 자세한 내용은 [AEM as a Cloud Service 환경 현대화](#modernization-of-aem-as-a-cloud-service-environment)를 참조하십시오.
 
 1. 그런 다음 _API 구성_ 대화 상자에서 원하는 인증 옵션을 선택합니다. 예를 들어 이 경우 **서버 간** 인증 옵션이 선택됩니다.
 
@@ -198,7 +202,7 @@ ADC 프로젝트의 ClientID가 AEM 인스턴스와 통신할 수 있도록 하�
 
 ## 다음 단계
 
-AEM 인스턴스가 ADC 프로젝트 통신을 활성화하도록 구성되면 OpenAPI 기반 AEM API를 사용할 수 있습니다. 다양한 OAuth 인증 방법을 사용하여 OpenAPI 기반 AEM API를 사용하는 방법에 대해 알아봅니다.
+AEM 인스턴스가 ADC 프로젝트 통신을 활성화하도록 구성되면 OpenAPI 기반 AEM API를 사용할 수 있습니다. 다양한 OAuth 인증 방법을 사용하여 OpenAPI 기반 AEM API를 사용하는 방법을 알아봅니다.
 
 <!-- CARDS
 {target = _self}
@@ -233,7 +237,7 @@ AEM 인스턴스가 ADC 프로젝트 통신을 활성화하도록 구성되면 O
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="./use-cases/invoke-api-using-oauth-s2s.md" target="_self" rel="referrer" title="서버 간 인증을 사용하여 API 호출">서버 간 인증을 사용하여 API 호출</a>
                     </p>
-                    <p class="is-size-6">OAuth 서버 간 인증을 사용하여 사용자 지정 NodeJS 애플리케이션에서 OpenAPI 기반 AEM API를 호출하는 방법에 대해 알아봅니다.</p>
+                    <p class="is-size-6">OAuth 서버 간 인증을 사용하여 사용자 정의 NodeJS 애플리케이션에서 OpenAPI 기반 AEM API를 호출하는 방법을 알아봅니다.</p>
                 </div>
                 <a href="./use-cases/invoke-api-using-oauth-s2s.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">자세히 알아보기</span>
@@ -256,7 +260,7 @@ AEM 인스턴스가 ADC 프로젝트 통신을 활성화하도록 구성되면 O
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="./use-cases/invoke-api-using-oauth-web-app.md" target="_self" rel="referrer" title="웹 앱 인증을 사용하여 API 호출">웹 앱 인증을 사용하여 API 호출</a>
                     </p>
-                    <p class="is-size-6">OAuth 웹 앱 인증을 사용하여 사용자 지정 웹 애플리케이션에서 OpenAPI 기반 AEM API를 호출하는 방법에 대해 알아봅니다.</p>
+                    <p class="is-size-6">OAuth 웹 앱 인증을 사용하여 사용자 정의 웹 애플리케이션에서 OpenAPI 기반 AEM API를 호출하는 방법을 알아봅니다.</p>
                 </div>
                 <a href="./use-cases/invoke-api-using-oauth-web-app.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">자세히 알아보기</span>

@@ -12,10 +12,10 @@ thumbnail: KT-17430.jpg
 last-substantial-update: 2025-03-28T00:00:00Z
 duration: 0
 exl-id: 9fb92127-9dea-4a1d-b1f7-8fb98cabf188
-source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
+source-git-commit: 723c439202b8e00e7b3236a50641ee1f2f6a4d9c
 workflow-type: tm+mt
-source-wordcount: '2081'
-ht-degree: 0%
+source-wordcount: '2130'
+ht-degree: 1%
 
 ---
 
@@ -59,7 +59,7 @@ Adobe Developer Console(ADC) 프로젝트가 OAuth 단일 페이지 앱 인증�
 >ADC 프로젝트가 _client_secret_&#x200B;을(를) 제공하지 않습니다. 대신 SPA는 _액세스 토큰_&#x200B;에 대한 인증 코드를 안전하게 교환하기 위해 _code_verifier_ 및 _code_challenge_&#x200B;을(를) 생성합니다. 클라이언트 측에 클라이언트 암호를 저장할 필요가 없으므로 보안이 강화됩니다.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3456971?quality=12&learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3456964?quality=12&learn=on)
 
 
 
@@ -384,6 +384,10 @@ WKND SPA는 사용자별 액세스 토큰을 사용하여 콘텐츠 조각 모�
 1. _API 추가_ 대화 상자에서 _Experience Cloud_&#x200B;별로 필터링하고 **AEM CS 사이트 콘텐츠 관리** 카드를 선택한 후 **다음**&#x200B;을 클릭합니다.
 
    ![AEM API 추가](../assets/spa/add-aem-sites-api.png)
+
+   >[!TIP]
+   >
+   >원하는 **AEM API 카드**&#x200B;가 비활성화되어 있고 _비활성화된 이유는 무엇입니까?_ 정보에 **라이선스 필요** 메시지가 표시되어 있습니다. 그 이유 중 하나는 AEM as a Cloud Service 환경을 현대화하지 않았기 때문일 수 있습니다. 자세한 내용은 [AEM as a Cloud Service 환경 현대화](../setup.md#modernization-of-aem-as-a-cloud-service-environment)를 참조하십시오.
 
 1. 그런 다음 _API 구성_ 대화 상자에서 **사용자 인증** 인증 옵션을 선택하고 **다음**&#x200B;을 클릭합니다.
 
