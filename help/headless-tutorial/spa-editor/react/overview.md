@@ -14,7 +14,7 @@ last-substantial-update: 2022-08-25T00:00:00Z
 duration: 71
 hide: true
 source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '417'
 ht-degree: 100%
 
@@ -47,7 +47,7 @@ Adobe Experience Manager(AEM)의 **SPA 편집기** 기능을 처음 사용하는
 * HTML, CSS 및 JavaScript에 대한 기본 지식
 * [React](https://reactjs.org/tutorial/tutorial.html)에 대한 기본적인 이해
 
-*반드시 필요한 것은 아니지만 [기존 AEM Sites 구성 요소 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko)에 대한 기본적인 이해가 있으면 도움이 됩니다.*
+*반드시 필요한 것은 아니지만 [기존 AEM Sites 구성 요소 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)에 대한 기본적인 이해가 있으면 도움이 됩니다.*
 
 ## 로컬 개발 환경 {#local-dev-environment}
 
@@ -55,7 +55,7 @@ Adobe Experience Manager(AEM)의 **SPA 편집기** 기능을 처음 사용하는
 
 ### 필수 소프트웨어
 
-* [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=ko), [AEM 6.5.4 이상](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=ko#aem-65) 또는 [AEM 6.4.8 이상](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=ko#aem-64)
+* [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html), [AEM 6.5.4 이상](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=ko#aem-65) 또는 [AEM 6.4.8 이상](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=ko#aem-64)
 * [Java](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 * [Apache Maven](https://maven.apache.org/)&#x200B;(3.3.9 이상)
 * [Node.js](https://nodejs.org/en/) 및 [npm](https://www.npmjs.com/)
