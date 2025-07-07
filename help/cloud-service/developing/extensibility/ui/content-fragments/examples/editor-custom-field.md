@@ -11,7 +11,7 @@ last-substantial-update: 2024-02-27T00:00:00Z
 jira: KT-14903
 thumbnail: KT-14903.jpeg
 exl-id: 563bab0e-21e3-487c-9bf3-de15c3a81aba
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: be710750cd6f2c71fa6b5eb8a6309d5965d67c82
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 1%
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 AEM 콘텐츠 조각 편집기에서 사용자 지정 필드를 만드는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3437641?learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3427585?learn=on)
 
 AEM UI 확장은 AEM의 나머지 부분과 일관된 모양과 느낌을 유지하고 사전 설치된 기능의 광범위한 라이브러리를 사용하므로 [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html) 프레임워크를 사용하여 개발해야 하며 개발 시간이 단축됩니다.
 
@@ -51,7 +51,7 @@ AEM UI 확장은 AEM의 나머지 부분과 일관된 모양과 느낌을 유지
 
 ### 앱 경로
 
-기본 React 구성 요소 `App.js`에서 `SkuField` React 구성 요소를 렌더링할 `/sku-field` 경로를 포함합니다.
+기본 React 구성 요소 `App.js`에서 `/sku-field` React 구성 요소를 렌더링할 `SkuField` 경로를 포함합니다.
 
 `src/aem-cf-editor-1/web-src/src/components/App.js`
 
@@ -91,8 +91,8 @@ function App() {
 
 index.html 경로에 매핑된 `ExtensionRegistration.js`은(는) AEM 확장의 진입점이며 다음을 정의합니다.
 
-+ `fieldNameExp` 및 `url` 특성이 있는 `getDefinitions()`의 위젯 정의입니다. 사용 가능한 전체 특성 목록은 [사용자 지정 양식 요소 렌더링 API 참조](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/custom-fields/#api-reference)에서 사용할 수 있습니다.
-+ 필드 UI를 로드할 상대 URL 경로(`/index.html#/skuField`)인 `url` 특성 값입니다.
++ `getDefinitions()` 및 `fieldNameExp` 특성이 있는 `url`의 위젯 정의입니다. 사용 가능한 전체 특성 목록은 [사용자 지정 양식 요소 렌더링 API 참조](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/custom-fields/#api-reference)에서 사용할 수 있습니다.
++ 필드 UI를 로드할 상대 URL 경로(`url`)인 `/index.html#/skuField` 특성 값입니다.
 
 `src/aem-cf-editor-1/web-src/src/components/ExtensionRegistration.js`
 
@@ -136,9 +136,9 @@ export default ExtensionRegistration;
 
 + 초기화에 `useEffect`을(를) 사용하고 AEM의 콘텐츠 조각 편집기에 연결하며 설정이 완료될 때까지 로드 상태가 표시됩니다.
 + iFrame 내에서 렌더링하면 Adobe React 스펙트럼 선택기의 드롭다운을 수용하도록 `onOpenChange` 함수를 통해 iFrame의 높이가 동적으로 조정됩니다.
-+ `onSelectionChange` 함수의 `connection.host.field.onChange(value)`을(를) 사용하여 필드 선택 사항을 다시 호스트에 전달합니다. 즉, 콘텐츠 조각 모델의 지침에 따라 선택한 값이 유효성이 검사되고 자동 저장됩니다.
++ `connection.host.field.onChange(value)` 함수의 `onSelectionChange`을(를) 사용하여 필드 선택 사항을 다시 호스트에 전달합니다. 즉, 콘텐츠 조각 모델의 지침에 따라 선택한 값이 유효성이 검사되고 자동 저장됩니다.
 
-사용자 지정 필드는 콘텐츠 조각 편집기에 삽입된 iFrame 내에서 렌더링됩니다. 사용자 지정 필드 코드와 콘텐츠 조각 편집기 간의 통신은 `@adobe/uix-guest` 패키지에서 `attach` 함수에 의해 설정된 `connection` 개체를 통해서만 가능합니다.
+사용자 지정 필드는 콘텐츠 조각 편집기에 삽입된 iFrame 내에서 렌더링됩니다. 사용자 지정 필드 코드와 콘텐츠 조각 편집기 간의 통신은 `connection` 패키지에서 `attach` 함수에 의해 설정된 `@adobe/uix-guest` 개체를 통해서만 가능합니다.
 
 `src/aem-cf-editor-1/web-src/src/components/SkuField.js`
 
@@ -189,7 +189,7 @@ const SkuField = (props) => {
    * In these cases adjust the Content Fragment Editor's iframe's height so the field doesn't get cut off.     *
    * @param {*} isOpen true if the picker is open, false if it's closed
    */
-  const onOpenChange = async (isOpen) => {
+  const onOpenChange = (isOpen) => {
     if (isOpen) {
       // Calculate the height of the picker box and its label, and surrounding padding.
       const pickerHeight = Number(document.body.clientHeight.toFixed(0));
@@ -202,12 +202,15 @@ const SkuField = (props) => {
       const height = Math.min(pickerHeight + optionsHeight, 400);
 
       // Set the height of the iframe in the Content Fragment Editor
-      await connection.host.field.setHeight(height);
+      connection.host.field.setStyles({
+        current: { height, },
+        parent: { height, },
+      })
     } else {
-      // Set the height of the iframe in the Content Fragment Editor to the height of the closed picker.
-      await connection.host.field.setHeight(
-        Number(document.body.clientHeight.toFixed(0))
-      );
+      connection.host.field.setStyles({
+        current: { height: 74 },
+        parent: { height: 74 },
+      })
     }
   };
 
