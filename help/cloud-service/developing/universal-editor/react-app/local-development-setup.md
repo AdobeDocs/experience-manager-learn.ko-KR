@@ -12,10 +12,10 @@ last-substantial-update: 2024-04-19T00:00:00Z
 jira: KT-15359
 thumbnail: KT-15359.png
 exl-id: 47bef697-5253-493a-b9f9-b26c27d2db56
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 7c58c5cb6a3d99a9577206b3e5e0b8dcd55a850e
 workflow-type: tm+mt
 source-wordcount: '787'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -25,16 +25,16 @@ AEM 유니버설 편집기를 사용하여 React 앱의 콘텐츠를 편집하�
 
 ## 사전 요구 사항
 
-이 자습서를 수행하려면 다음이 필요합니다.
+이 튜토리얼을 따르려면 다음 사항이 필요합니다.
 
 - 기본 HTML 및 JavaScript 스킬.
-- 다음 도구를 로컬에 설치해야 합니다.
+- 다음 도구가 로컬에 설치되어 있어야 합니다.
    - [Node.js](https://nodejs.org/en/download/)
    - [Git](https://git-scm.com/downloads)
    - [Visual Studio Code](https://code.visualstudio.com/)와 같은 IDE 또는 코드 편집기
 - 다음을 다운로드하여 설치합니다.
-   - [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime#download-the-aem-as-a-cloud-service-sdk): 여기에는 개발 목적으로 로컬에서 AEM 작성자 및 게시를 실행하는 데 사용되는 Quickstart Jar가 포함되어 있습니다.
-   - [유니버설 편집기 서비스](https://experienceleague.adobe.com/ko/docs/experience-cloud/software-distribution/home): 유니버설 편집기 서비스의 로컬 복사본으로, 기능의 하위 집합이 있으며 소프트웨어 배포 포털에서 다운로드할 수 있습니다.
+   - [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime#download-the-aem-as-a-cloud-service-sdk): 여기에는 개발 목적으로 로컬에서 AEM 작성자 및 게시를 실행하는 데 사용되는 Quickstart Jar가 포함되어 있습니다.
+   - [유니버설 편집기 서비스](https://experienceleague.adobe.com/en/docs/experience-cloud/software-distribution/home): 유니버설 편집기 서비스의 로컬 복사본으로, 기능의 하위 집합이 있으며 소프트웨어 배포 포털에서 다운로드할 수 있습니다.
    - [local-ssl-proxy](https://www.npmjs.com/package/local-ssl-proxy#local-ssl-proxy): 로컬 개발을 위해 자체 서명된 인증서를 사용하는 간단한 로컬 SSL HTTP 프록시입니다. AEM Universal Editor를 편집기에서 로드하려면 React 앱의 HTTPS URL이 필요합니다.
 
 ## 로컬 설정
@@ -54,7 +54,7 @@ WKND Teams React 앱에 대한 콘텐츠를 제공하려면 로컬 AEM SDK에 �
 
 WKND Teams React 앱을 설정하려면 아래 단계를 따르십시오.
 
-1. `basic-tutorial` 솔루션 분기에서 [WKND Teams React 앱](https://github.com/adobe/aem-guides-wknd-graphql/tree/solution/basic-tutorial)을 복제합니다.
+1. [ 솔루션 분기에서 ](https://github.com/adobe/aem-guides-wknd-graphql/tree/solution/basic-tutorial)WKND Teams React 앱`basic-tutorial`을 복제합니다.
 
    ```bash
    $ git clone -b solution/basic-tutorial git@github.com:adobe/aem-guides-wknd-graphql.git
@@ -94,13 +94,13 @@ WKND Teams React 앱을 설정하려면 아래 단계를 따르십시오.
    $ cp universal-editor-service.cjs universal-editor-service
    ```
 
-1. `universal-editor-service` 디렉터리에 `.env` 파일을 만들고 다음 환경 변수를 추가합니다.
+1. `.env` 디렉터리에 `universal-editor-service` 파일을 만들고 다음 환경 변수를 추가합니다.
 
    ```bash
    # The port on which the Universal Editor service runs
-   EXPRESS_PORT=8000
+   UES_PORT=8000
    # Disable SSL verification
-   NODE_TLS_REJECT_UNAUTHORIZED=0
+   UES_TLS_REJECT_UNAUTHORIZED=false
    ```
 
 1. 로컬 유니버설 편집기 서비스를 시작합니다.
@@ -147,7 +147,7 @@ AEM 유니버설 편집기를 사용하려면 HTTPS를 통해 React 앱이 제�
 WKND Teams React 앱에 대해 HTTPS를 활성화하려면 아래 단계를 따르십시오.
 
 1. 터미널에서 `Ctrl + C`을(를) 눌러 React를 중지합니다.
-1. `start` 스크립트에 `HTTPS=true` 환경 변수를 포함하도록 `package.json` 파일을 업데이트하십시오.
+1. `package.json` 스크립트에 `HTTPS=true` 환경 변수를 포함하도록 `start` 파일을 업데이트하십시오.
 
    ```json
    "scripts": {
@@ -156,14 +156,14 @@ WKND Teams React 앱에 대해 HTTPS를 활성화하려면 아래 단계를 따�
    }
    ```
 
-1. AEM SDK의 HTTPS 프로토콜 및 로컬 SSL HTTP 프록시 포트를 사용하도록 `.env.development` 파일에서 `REACT_APP_HOST_URI`을(를) 업데이트합니다.
+1. AEM SDK의 HTTPS 프로토콜 및 로컬 SSL HTTP 프록시 포트를 사용하도록 `REACT_APP_HOST_URI` 파일에서 `.env.development`을(를) 업데이트합니다.
 
    ```bash
    REACT_APP_HOST_URI=https://localhost:8443
    ...
    ```
 
-1. `secure: false` 옵션을 사용하여 느슨한 SSL 설정을 사용하도록 `../src/proxy/setupProxy.auth.basic.js` 파일을 업데이트하십시오.
+1. `../src/proxy/setupProxy.auth.basic.js` 옵션을 사용하여 느슨한 SSL 설정을 사용하도록 `secure: false` 파일을 업데이트하십시오.
 
    ```javascript
    ...
