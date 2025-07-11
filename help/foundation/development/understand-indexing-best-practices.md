@@ -13,7 +13,7 @@ last-substantial-update: 2024-01-04T00:00:00Z
 jira: KT-14745
 thumbnail: KT-14745.jpeg
 exl-id: 3fd4c404-18e9-44e5-958f-15235a3091d5
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 7ada3c2e7deb414b924077a5d2988db16f28712c
 workflow-type: tm+mt
 source-wordcount: '1693'
 ht-degree: 1%
@@ -29,7 +29,7 @@ Adobe Experience Manager(AEM)의 색인 지정 모범 사례에 대해 알아봅
 - AEM as a Cloud Service은 Oak Lucene 인덱스만 지원합니다.
 - 인덱스 구성은 AEM 프로젝트 코드베이스에서 관리되고 Cloud Manager CI/CD 파이프라인을 사용하여 배포되어야 합니다.
 - 지정된 쿼리에 여러 인덱스를 사용할 수 있는 경우 예상 비용이 가장 낮은 **인덱스가 사용됩니다**.
-- 지정된 쿼리에 사용할 수 있는 색인이 없을 경우 일치하는 콘텐츠를 찾기 위해 콘텐츠 트리를 이동합니다. 그러나 `org.apache.jackrabbit.oak.query.QueryEngineSettingsService`을(를) 통한 기본 제한은 10,000개의 노드만 트래버스하는 것입니다.
+- 지정된 쿼리에 사용할 수 있는 색인이 없을 경우 일치하는 콘텐츠를 찾기 위해 콘텐츠 트리를 이동합니다. 그러나 `org.apache.jackrabbit.oak.query.QueryEngineSettingsService`을(를) 통한 기본 제한은 10만 개의 노드만 트래버스하는 것입니다.
 - 쿼리 결과는 **마지막으로 필터링**&#x200B;되어 현재 사용자에게 읽기 권한이 있는지 확인합니다. 즉, 쿼리 결과가 인덱싱된 노드의 수보다 작을 수 있습니다.
 - 색인 정의 변경 후 저장소를 다시 색인화하려면 시간이 필요하며 저장소 크기에 따라 다릅니다.
 
@@ -39,9 +39,9 @@ AEM 인스턴스의 성능에 영향을 주지 않는 효율적이고 올바른 
 
 경우에 따라 검색 요구 사항을 지원하도록 사용자 정의 색인을 만들어야 합니다. 단, 사용자 지정 색인을 생성하기 전에 아래 지침을 따르십시오.
 
-- 검색 요구 사항을 이해하고 OOTB 인덱스가 검색 요구 사항을 지원할 수 있는지 확인합니다. Developer Console 또는 `https://author-pXXXX-eYYYY.adobeaemcloud.com/ui#/aem/libs/granite/operations/content/diagnosistools/queryPerformance.html?appId=aemshell`을(를) 통해 [로컬 SDK](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) 및 AEMCS에서 사용할 수 있는 **쿼리 성능 도구**&#x200B;를 사용합니다.
+- 검색 요구 사항을 이해하고 OOTB 인덱스가 검색 요구 사항을 지원할 수 있는지 확인합니다. Developer Console 또는 **을(를) 통해**&#x200B;로컬 SDK[ 및 AEMCS에서 사용할 수 있는 ](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html)쿼리 성능 도구`https://author-pXXXX-eYYYY.adobeaemcloud.com/ui#/aem/libs/granite/operations/content/diagnosistools/queryPerformance.html?appId=aemshell`를 사용합니다.
 
-- 최적의 쿼리를 정의하고 [쿼리 최적화](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/operations/query-and-indexing-best-practices) 순서도와 [JCR 쿼리 치트 시트](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf?lang=ko)를 참조하십시오.
+- 최적의 쿼리를 정의하고 [쿼리 최적화](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/query-and-indexing-best-practices) 순서도와 [JCR 쿼리 치트 시트](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf)를 참조하십시오.
 
 - OOTB 인덱스가 검색 요구 사항을 지원할 수 없는 경우 두 가지 옵션이 있습니다. 그러나 효율적인 색인을 만들기 위한 [팁](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/deploying/practices/best-practices-for-queries-and-indexing)을 검토하십시오.
    - OOTB 인덱스 사용자 정의: 유지 관리 및 업그레이드가 용이하여 선호하는 옵션.
@@ -67,7 +67,7 @@ AEM 인스턴스의 성능에 영향을 주지 않는 효율적이고 올바른 
 
 - OOTB 인덱스와 동일한 노드 유형에 사용자 정의 인덱스를 생성하지 마십시오. 대신 `indexRules` 노드에서 필요한 속성으로 OOTB 인덱스를 사용자 지정합니다. 예를 들어 `dam:Asset` 노드 유형에 사용자 지정 인덱스를 만들지 말고 OOTB `damAssetLucene` 인덱스를 사용자 지정하십시오. _성능 및 기능 문제의 일반적인 근본 원인입니다_.
 
-- 또한 인덱싱 규칙(`indexRules`) 노드 아래에 `cq:Page` 및 `cq:Tag`과 같은 여러 노드 형식을 추가하지 마십시오. 대신 각 노드 유형에 대해 별도의 인덱스를 만듭니다.
+- 또한 인덱싱 규칙(`cq:Page`) 노드 아래에 `cq:Tag` 및 `indexRules`과 같은 여러 노드 형식을 추가하지 마십시오. 대신 각 노드 유형에 대해 별도의 인덱스를 만듭니다.
 
 - 위의 섹션에서 설명한 대로 인덱스 정의를 `ui.apps/src/main/content/jcr_root/_oak_index`의 AEM 프로젝트에 저장하고 Cloud Manager CI/CD 파이프라인을 사용하여 배포합니다. 자세한 내용은 [사용자 지정 인덱스 정의 배포](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/operations/indexing)를 참조하십시오.
 
@@ -110,7 +110,7 @@ AEM 인스턴스의 성능에 영향을 주지 않는 효율적이고 올바른 
 
 #### `dam:Asset` 노드 유형의 인덱스
 
-아래 이미지는 `includedPaths` 속성이 특정 경로로 설정된 `dam:Asset` 노드 유형에 대한 사용자 지정 인덱스를 보여 줍니다.
+아래 이미지는 `dam:Asset` 속성이 특정 경로로 설정된 `includedPaths` 노드 유형에 대한 사용자 지정 인덱스를 보여 줍니다.
 
 ![dam:Asset 노드 형식에 대한 인덱스](./assets/understand-indexing-best-practices/index-for-damAsset-type.png)
 
@@ -118,7 +118,7 @@ AEM 인스턴스의 성능에 영향을 주지 않는 효율적이고 올바른 
 
 Assets에서 omnisearch를 수행하는 경우 사용자 정의 색인의 예상 비용이 낮으므로 잘못된 결과가 반환됩니다.
 
-`dam:Asset` 노드 유형에 사용자 지정 인덱스를 만들지 말고 `indexRules` 노드에서 필요한 속성으로 OOTB `damAssetLucene` 인덱스를 사용자 지정하십시오.
+`dam:Asset` 노드 유형에 사용자 지정 인덱스를 만들지 말고 `damAssetLucene` 노드에서 필요한 속성으로 OOTB `indexRules` 인덱스를 사용자 지정하십시오.
 
 #### 인덱싱 규칙에 있는 여러 노드 유형
 
@@ -168,7 +168,7 @@ Assets에서 omnisearch를 수행하는 경우 사용자 정의 색인의 예상
 
 ## Apache Tika를 비활성화하여 인덱스 최적화
 
-AEM은 PDF, Word, Excel 등과 같은 _파일에서 메타데이터 및 텍스트 콘텐츠 추출_&#x200B;을 위해 [Apache Tika](https://tika.apache.org/)을 사용합니다. 추출된 콘텐츠는 저장소에 저장되고 Oak Lucene 인덱스로 인덱싱됩니다.
+AEM은 PDF, Word, Excel 등과 같은 [파일에서 메타데이터 및 텍스트 콘텐츠 추출](https://tika.apache.org/)을 위해 _Apache Tika_&#x200B;을 사용합니다. 추출된 콘텐츠는 저장소에 저장되고 Oak Lucene 인덱스로 인덱싱됩니다.
 
 경우에 따라 사용자는 파일/에셋의 콘텐츠 내에서 검색할 능력이 필요하지 않습니다. 이러한 경우 Apache Tika를 비활성화하여 색인화 성능을 향상시킬 수 있습니다. 장점은 다음과 같습니다.
 
@@ -185,7 +185,7 @@ AEM은 PDF, Word, Excel 등과 같은 _파일에서 메타데이터 및 텍스�
 
 MIME 유형별로 Apache Tika를 비활성화하려면 다음 단계를 수행하십시오.
 
-- 사용자 지정 또는 OOBT 인덱스 정의 아래에 `nt:unstructured` 유형의 `tika` 노드를 추가하십시오. 다음 예제에서는 OOTB `damAssetLucene` 인덱스에 대해 PDF MIME 유형을 사용하지 않도록 설정했습니다.
+- 사용자 지정 또는 OOBT 인덱스 정의 아래에 `tika` 유형의 `nt:unstructured` 노드를 추가하십시오. 다음 예제에서는 OOTB `damAssetLucene` 인덱스에 대해 PDF MIME 유형을 사용하지 않도록 설정했습니다.
 
 ```xml
 /oak:index/damAssetLucene
@@ -197,7 +197,7 @@ MIME 유형별로 Apache Tika를 비활성화하려면 다음 단계를 수행�
     </tika>
 ```
 
-- `tika` 노드 아래에 다음 세부 정보가 있는 `config.xml`을(를) 추가합니다.
+- `config.xml` 노드 아래에 다음 세부 정보가 있는 `tika`을(를) 추가합니다.
 
 ```xml
 <properties>
@@ -211,7 +211,7 @@ MIME 유형별로 Apache Tika를 비활성화하려면 다음 단계를 수행�
 
 - 저장된 인덱스를 새로 고치려면 인덱스 정의 노드 아래에서 `refresh` 속성을 `true`(으)로 설정합니다. 자세한 내용은 [인덱스 정의 속성](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition:~:text=Defaults%20to%2010000-,refresh,-Optional%20boolean%20property)을(를) 참조하십시오.
 
-다음 이미지는 PDF 및 기타 MIME 유형을 비활성화하는 `tika` 노드 및 `config.xml` 파일이 있는 OOTB `damAssetLucene` 인덱스를 보여 줍니다.
+다음 이미지는 PDF 및 기타 MIME 유형을 비활성화하는 `damAssetLucene` 노드 및 `tika` 파일이 있는 OOTB `config.xml` 인덱스를 보여 줍니다.
 
 ![tika 노드가 있는 OOTB damAssetLucene 인덱스](./assets/understand-indexing-best-practices/ootb-index-with-tika-node.png)
 
@@ -219,11 +219,11 @@ MIME 유형별로 Apache Tika를 비활성화하려면 다음 단계를 수행�
 
 Apache Tika를 완전히 비활성화하려면 아래 단계를 수행하십시오.
 
-- `/oak:index/<INDEX-NAME>/indexRules/<NODE-TYPE>`에서 `includePropertyTypes` 속성을 추가하고 값을 `String`(으)로 설정합니다. 예를 들어 아래 이미지에서는 OOBT `damAssetLucene` 인덱스의 `dam:Asset` 노드 유형에 대해 `includePropertyTypes` 속성이 추가됩니다.
+- `includePropertyTypes`에서 `/oak:index/<INDEX-NAME>/indexRules/<NODE-TYPE>` 속성을 추가하고 값을 `String`(으)로 설정합니다. 예를 들어 아래 이미지에서는 OOBT `includePropertyTypes` 인덱스의 `dam:Asset` 노드 유형에 대해 `damAssetLucene` 속성이 추가됩니다.
 
 ![IncludePropertyTypes 속성](./assets/understand-indexing-best-practices/includePropertyTypes-prop.png)
 
-- `properties` 노드 아래에 속성이 있는 `data`을(를) 추가합니다. 속성 정의 위에 있는 첫 번째 노드인지 확인하십시오. 예를 들어 아래 이미지 를 참조하십시오.
+- `data` 노드 아래에 속성이 있는 `properties`을(를) 추가합니다. 속성 정의 위에 있는 첫 번째 노드인지 확인하십시오. 예를 들어 아래 이미지 를 참조하십시오.
 
 ```xml
 /oak:index/<INDEX-NAME>/indexRules/<NODE-TYPE>/properties/data
@@ -253,7 +253,7 @@ Apache Tika를 완전히 비활성화하려면 아래 단계를 수행하십시�
 
 ### 쿼리 성능 도구
 
-Developer Console 또는 `https://author-pXXXX-eYYYY.adobeaemcloud.com/ui#/aem/libs/granite/operations/content/diagnosistools/queryPerformance.html?appId=aemshell`을(를) 통해 [로컬 SDK](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) 및 AEMCS에서 사용할 수 있는 OOTB _쿼리 성능 도구_&#x200B;를 통해 **쿼리 성능을 분석** 및 [JCR 쿼리 치트 시트](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf?lang=ko)에서 최적의 쿼리를 정의할 수 있습니다.
+Developer Console 또는 _을(를) 통해_&#x200B;로컬 SDK[ 및 AEMCS에서 사용할 수 있는 OOTB ](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html)쿼리 성능 도구`https://author-pXXXX-eYYYY.adobeaemcloud.com/ui#/aem/libs/granite/operations/content/diagnosistools/queryPerformance.html?appId=aemshell`를 통해 **쿼리 성능을 분석** 및 [JCR 쿼리 치트 시트](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf?lang=en)에서 최적의 쿼리를 정의할 수 있습니다.
 
 ### 문제 해결 도구 및 팁
 
@@ -261,7 +261,7 @@ Developer Console 또는 `https://author-pXXXX-eYYYY.adobeaemcloud.com/ui#/aem/l
 
 - `http://host:port/libs/granite/operations/content/diagnosistools/indexManager.html`에서 사용 가능한 색인 관리자를 사용하여 유형, 마지막 업데이트, 크기 등의 색인 정보를 가져올 수 있습니다.
 
-- 문제 해결을 위해 `http://host:port/system/console/slinglog`을(를) 통해 Oak 쿼리 및 `org.apache.jackrabbit.oak.plugins.index`, `org.apache.jackrabbit.oak.query`, `com.day.cq.search`과(와) 같은 인덱싱 관련 Java™ 패키지를 자세히 로깅합니다.
+- 문제 해결을 위해 `org.apache.jackrabbit.oak.plugins.index`을(를) 통해 Oak 쿼리 및 `org.apache.jackrabbit.oak.query`, `com.day.cq.search`, `http://host:port/system/console/slinglog`과(와) 같은 인덱싱 관련 Java™ 패키지를 자세히 로깅합니다.
 
 - _IndexStats_ 형식의 JMX MBean은 `http://host:port/system/console/jmx`에서 비동기 인덱싱과 관련된 상태, 진행률 또는 통계와 같은 인덱스 정보를 가져올 수 있습니다. 또한 _FailingIndexStats_&#x200B;도 제공합니다. 여기에 결과가 없으면 손상된 인덱스가 없음을 의미합니다. AsyncIndexerService는 30분(구성 가능) 동안 업데이트하지 못한 인덱스를 손상된 것으로 표시하고 인덱싱을 중지합니다. 쿼리에서 예상한 결과가 나오지 않는 경우 리인덱싱하는 것은 계산적으로 비싸고 시간이 많이 소요되므로 개발자가 리인덱싱을 진행하기 전에 이를 확인하는 것이 좋습니다.
 
@@ -274,6 +274,6 @@ Developer Console 또는 `https://author-pXXXX-eYYYY.adobeaemcloud.com/ui#/aem/l
 자세한 내용은 다음 설명서를 참조하십시오.
 
 - [Oak 쿼리 및 색인화](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/deploying/deploying/queries-and-indexing)
-- [쿼리 및 색인화 모범 사례](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/operations/query-and-indexing-best-practices)
+- [쿼리 및 색인화 모범 사례](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/query-and-indexing-best-practices)
 - [쿼리 및 색인화 모범 사례](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/deploying/practices/best-practices-for-queries-and-indexing)
 
