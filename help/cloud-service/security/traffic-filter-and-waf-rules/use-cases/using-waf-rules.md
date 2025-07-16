@@ -59,7 +59,7 @@ AEM WKND 프로젝트의 `cdn.yaml` 파일에 추가해야 하는 세 가지 권
 
 이 규칙은 의심스러운 **및** 요청이 모두 악의적인 것으로 플래그가 지정된 IP 주소에서 비롯된 *블록* 요청입니다. 이 두 가지 기준이 모두 충족되므로 긍정 오류(합법적인 트래픽 차단)의 위험이 매우 낮다고 확신할 수 있습니다. 알려진 잘못된 IP는 위협 인텔리전스 피드 및 기타 소스를 기반으로 식별됩니다.
 
-`ATTACK-FROM-BAD-IP` WAF 플래그를 사용하여 이러한 요청을 식별합니다. [여기에 나열된](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#waf-flags-list) WAF 플래그 중 일부를 집계합니다.
+`ATTACK-FROM-BAD-IP` WAF 플래그를 사용하여 이러한 요청을 식별합니다. [여기에 나열된](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#waf-flags-list) WAF 플래그 중 일부를 집계합니다.
 
 ```yaml
 kind: "CDN"
@@ -220,7 +220,7 @@ Splunk에서 대시보드를 만들려면 [AEMCS CDN 로그 분석을 위한 Spl
 
 - **트래픽 패턴 모니터링**: CDN 로그 및 ELK 대시보드를 사용하여 트래픽 패턴을 모니터링하고 트래픽 이상 현상이나 스파이크를 식별합니다. 탐지되는 공격 유형을 이해하려면 ELK 대시보드의 _WAF 플래그 분포_ 및 _상위 공격_ 패널에 주의하십시오.
 - **wafFlags 조정**: `ATTACK` 플래그가 너무 자주 트리거되거나
-공격 벡터를 세밀하게 조정해야 합니다. 특정 WAF 플래그로 사용자 지정 규칙을 만들 수 있습니다. 설명서에서 [WAF 플래그](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#waf-flags-list)의 전체 목록을 확인하십시오. 먼저 `log` 모드에서 새 사용자 지정 규칙을 사용해 보십시오.
+공격 벡터를 세밀하게 조정해야 합니다. 특정 WAF 플래그로 사용자 지정 규칙을 만들 수 있습니다. 설명서에서 [WAF 플래그](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#waf-flags-list)의 전체 목록을 확인하십시오. 먼저 `log` 모드에서 새 사용자 지정 규칙을 사용해 보십시오.
 - **차단 규칙으로 이동**: 트래픽 패턴의 유효성을 검사하고 WAF 플래그를 조정했으면 차단 규칙으로 이동하는 것을 고려해 볼 수 있습니다.
 
 ## 요약
@@ -316,5 +316,5 @@ Splunk에서 대시보드를 만들려면 [AEMCS CDN 로그 분석을 위한 Spl
 
 ## 추가 리소스
 
-- [권장 시작 규칙](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#recommended-nonwaf-starter-rules)
-- [WAF 플래그 목록](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#waf-flags-list)
+- [권장 시작 규칙](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#recommended-nonwaf-starter-rules)
+- [WAF 플래그 목록](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#waf-flags-list)

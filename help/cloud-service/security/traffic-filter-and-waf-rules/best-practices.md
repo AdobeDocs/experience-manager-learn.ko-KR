@@ -38,7 +38,7 @@ ht-degree: 18%
 
 ## 트래픽 필터 규칙에 대한 모범 사례
 
-- 에지, 원본 보호 및 OFAC 기반 제한에 대한 규칙이 포함된 Adobe [권장 표준 트래픽 필터 규칙](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#recommended-starter-rules)을(를) 기준으로 사용합니다.
+- 에지, 원본 보호 및 OFAC 기반 제한에 대한 규칙이 포함된 Adobe [권장 표준 트래픽 필터 규칙](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#recommended-starter-rules)을(를) 기준으로 사용합니다.
 - 경고 및 로그를 정기적으로 검토하여 남용 또는 잘못된 구성의 패턴을 식별하십시오.
 - 애플리케이션의 트래픽 패턴 및 사용자 동작에 따라 속도 제한에 대한 임계값을 조정합니다.
 
@@ -55,9 +55,9 @@ ht-degree: 18%
 
 ## WAF 규칙에 대한 모범 사례
 
-- 알려진 잘못된 IP를 차단하고, DDoS 공격을 탐지하고, 봇 남용을 완화하는 규칙을 포함하는 Adobe [권장 WAF 규칙](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#recommended-nonwaf-starter-rules)으로 시작합니다.
+- 알려진 잘못된 IP를 차단하고, DDoS 공격을 탐지하고, 봇 남용을 완화하는 규칙을 포함하는 Adobe [권장 WAF 규칙](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#recommended-nonwaf-starter-rules)으로 시작합니다.
 - `ATTACK` WAF 플래그는 잠재적인 위협을 경고해야 합니다. `block`(으)로 이동하기 전에 긍정 오류(false positive)가 없는지 확인하십시오.
-- 권장 WAF 규칙이 특정 위협을 다루지 않는 경우 애플리케이션의 고유 요구 사항을 기반으로 사용자 지정 규칙을 만드는 것이 좋습니다. 설명서에서 [WAF 플래그](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#waf-flags-list)의 전체 목록을 확인하십시오.
+- 권장 WAF 규칙이 특정 위협을 다루지 않는 경우 애플리케이션의 고유 요구 사항을 기반으로 사용자 지정 규칙을 만드는 것이 좋습니다. 설명서에서 [WAF 플래그](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#waf-flags-list)의 전체 목록을 확인하십시오.
 
 ## 규칙 구현
 
@@ -132,6 +132,6 @@ AEM as a Cloud Service에서 트래픽 필터 규칙 및 WAF 규칙을 구현하
 ## 추가 리소스
 
 - [WAF 규칙을 포함하는 트래픽 필터 규칙](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf)
-- [AEM의 DoS/DDoS 방지 이해](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/understanding-dos-and-prevention-approaches)
+- [AEM의 DoS/DDoS 방지 이해](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/foundation/security/understanding-dos-and-prevention-approaches)
 - [트래픽 필터 규칙을 사용하여 DoS 및 DDoS 공격 차단](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/security/blocking-dos-attack-using-traffic-filter-rules)
 

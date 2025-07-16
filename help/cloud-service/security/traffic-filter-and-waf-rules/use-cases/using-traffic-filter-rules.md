@@ -388,6 +388,6 @@ Adobe 권장 WAF 규칙을 구현하여 기존 보안 조치를 우회하는 고
 
 ## 추가 리소스
 
-- [권장 시작 규칙](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#recommended-starter-rules)
+- [권장 시작 규칙](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#recommended-starter-rules)
 
 

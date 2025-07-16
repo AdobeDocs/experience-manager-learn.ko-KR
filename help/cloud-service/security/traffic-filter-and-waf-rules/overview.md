@@ -52,7 +52,7 @@ AEM as a Cloud Service은 통합 CDN 계층을 활용하여 웹 사이트 전달
 
 표준 트래픽 필터 규칙은 속도 제한 또는 특정 영역 차단과 같은 비즈니스별 정책을 적용하고 IP 주소, 경로 또는 사용자 에이전트와 같은 요청 속성 및 헤더를 기반으로 트래픽을 차단하는 데 유용합니다.
 반면 WAF 트래픽 필터 규칙은 알려진 웹 악용 및 공격 벡터에 대한 포괄적인 사전 보호를 제공하며, 가양성(즉, 합법적인 트래픽 차단)을 제한하는 고급 인텔리전스를 보유하고 있습니다.
-두 유형의 규칙을 모두 정의하려면 YAML 구문을 사용합니다. 자세한 내용은 [트래픽 필터 규칙 구문](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#rules-syntax)을 참조하십시오.
+두 유형의 규칙을 모두 정의하려면 YAML 구문을 사용합니다. 자세한 내용은 [트래픽 필터 규칙 구문](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#rules-syntax)을 참조하십시오.
 
 ## 사용 시기 및 이유
 
