@@ -193,7 +193,7 @@ $./nikto.pl -useragent "AttackSimulationAgent (Demo/1.0)" -D V -Tuning 9 -ssl -h
 
 ![WKND CDN 로그 ELK](../assets/use-cases/wknd-cdn-logs-elk-waf.png)
 
-ELK 응용 프로그램 내에서 **WAF 대시보드**에
+ELK 응용 프로그램 내에서 **WAF 대시보드**&#x200B;에
 클라이언트 IP(cli_ip), 호스트, url, 작업(waf_action) 및 규칙 이름(waf_match) 열에 플래그가 지정된 요청 및 해당 값.
 
 ![WKND WAF 대시보드 ELK](../assets/use-cases/elk-tool-dashboard-waf-flagged.png)
