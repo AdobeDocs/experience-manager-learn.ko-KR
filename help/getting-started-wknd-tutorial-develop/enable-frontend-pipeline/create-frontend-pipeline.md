@@ -13,7 +13,7 @@ recommendations: noDisplay, noCatalog
 doc-type: Tutorial
 exl-id: d6da05e4-bd65-4625-b9a4-cad8eae3c9d7
 duration: 225
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 293157c296676ef1496e6f861ed8c2c24da7e068
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 0%
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 여러 부분으로 구성된 자습서이며 [표준 AEM 프로젝트 업데이트](./update-project.md)에 설명된 단계가 완료된 것으로 간주됩니다.
 
-Cloud Manager에서 파이프라인을 만들고 배포할 수 있는 [권한](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=ko#role-definitions)과(와) AEM as a Cloud Service 환경에 대한 [액세스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=ko)이 있는지 확인하십시오.
+Cloud Manager에서 파이프라인을 만들고 배포할 수 있는 [권한](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=en#role-definitions)과(와) AEM as a Cloud Service 환경에 대한 [액세스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html)이 있는지 확인하십시오.
 
 ## 기존 파이프라인 이름 바꾸기
 
@@ -54,7 +54,7 @@ __Source 코드__ 탭에서도 저장소 및 Git 분기 필드 값이 올바른�
 
 ## 프론트엔드 파이프라인 만들기
 
-`ui.frontend` 모듈에서 프론트엔드 리소스를 __ONLY__&#x200B;만 빌드하고 배포하려면 다음 단계를 수행하십시오.
+__모듈에서 프론트엔드 리소스를__ ONLY`ui.frontend`만 빌드하고 배포하려면 다음 단계를 수행하십시오.
 
 1. Cloud Manager UI의 __파이프라인__ 섹션에서 __추가__ 버튼을 클릭한 다음 배포하려는 AEM as a Cloud Service 환경을 기반으로 __비프로덕션 파이프라인 추가__(또는 __프로덕션 파이프라인 추가__)를 선택합니다.
 
@@ -96,7 +96,7 @@ __코드 위치__ 필드의 __가장 중요한__ 값은 `/ui.frontend`이고 마
 
 >[!TIP]
 >
->여기에서 `$HASH_VALUE$`은(는) __FrontEnd WKND를 Dev__ 파이프라인의 __CONTENT HASH__ 필드에 표시되는 것과 동일합니다. AEM은 프론트엔드 리소스의 CDN URL에 대한 알림을 받습니다. 값은 __prefixPath__ 속성 아래 `/conf/wknd/sling:configs/com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig/jcr:content`에 저장됩니다.
+>여기에서 `$HASH_VALUE$`은(는) __FrontEnd WKND를 Dev__ 파이프라인의 __CONTENT HASH__ 필드에 표시되는 것과 동일합니다. AEM은 프론트엔드 리소스의 CDN URL에 대한 알림을 받습니다. 값은 `/conf/wknd/sling:configs/com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig/jcr:content`prefixPath __속성 아래__&#x200B;에 저장됩니다.
 
 
 ![해시 값 상관 관계](assets/hash-value-correlartion.png)

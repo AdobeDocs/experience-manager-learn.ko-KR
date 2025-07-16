@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Experience Manager as a Cloud Service
 team: TM
-source-git-commit: 380bd2b3121db5810e4d295a5f7f9d1139d22402
-workflow-type: ht
-source-wordcount: '1385'
-ht-degree: 100%
+source-git-commit: 293157c296676ef1496e6f861ed8c2c24da7e068
+workflow-type: tm+mt
+source-wordcount: '1400'
+ht-degree: 98%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 100%
    + [작성자 및 게시 서비스](./underlying-technology/introduction-author-publish.md)
    + [Dispatcher](./underlying-technology/introduction-dispatcher.md)
 + Edge Delivery Services {#edge-delivery-services}
-   + [AEM Assets Sidekick 플러그인](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/edge-delivery-services/sidekick-plugin.html?lang=ko){target=_blank}
+   + [AEM Assets Sidekick 플러그인](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/edge-delivery-services/sidekick-plugin.html){target=_blank}
 + Cloud Manager {#cloud-manager}
    + [프로그램](./cloud-manager/programs.md)
    + [환경](./cloud-manager/environments.md)
@@ -159,7 +159,7 @@ ht-degree: 100%
    + [캐싱](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/caching/overview){target=_blank}
    + [Adobe CDN - 캐싱 그 이상](./content-delivery/adobe-cdn-beyond-caching.md)
    + [사용자 정의 오류 페이지](./content-delivery/custom-error-pages.md)
-   + [URL 리디렉션](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/url-redirection.html?lang=ko){target=_blank}
+   + [URL 리디렉션](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/url-redirection.html){target=_blank}
 + 캐싱{#caching}
    + [개요](./caching/overview.md)
    + [AEM 게시 서비스](./caching/publish.md)
@@ -192,11 +192,16 @@ ht-degree: 100%
       + [이메일 서비스](./networking/examples/email-service.md)
 + 보안 {#security}
    + [트래픽 필터 규칙을 사용하여 DoS/DDoS 공격 차단](./security/blocking-dos-attack-using-traffic-filter-rules.md)
-   + WAF 규칙이 포함된 트래픽 필터 규칙{#traffic-filter-and-waf-rules}
-      + [개요](./security/traffic-filter-rules/overview.md)
-      + [설정 방법](./security/traffic-filter-rules/how-to-setup.md)
-      + [예시 및 결과 분석](./security/traffic-filter-rules/examples-and-analysis.md)
-      + [모범 사례](./security/traffic-filter-rules/best-practices.md)
+   + WAF 규칙을 포함한 트래픽 필터 규칙 {#traffic-filter-and-waf-rules}
+      + [AEM 웹 사이트 보호](./security/traffic-filter-and-waf-rules/overview.md)
+      + [설정 방법](./security/traffic-filter-and-waf-rules/setup.md)
+      + [트래픽 필터 규칙 사용](./security/traffic-filter-and-waf-rules/use-cases/using-traffic-filter-rules.md)
+      + [WAF 규칙 사용](./security/traffic-filter-and-waf-rules/use-cases/using-waf-rules.md)
+      + [모범 사례](./security/traffic-filter-and-waf-rules/best-practices.md)
+      + 방법{#how-to}
+         + [중요한 요청 모니터링](./security/traffic-filter-and-waf-rules/how-to/request-logging.md)
+         + [액세스 제한](./security/traffic-filter-and-waf-rules/how-to/request-blocking.md)
+         + [요청 표준화](./security/traffic-filter-and-waf-rules/how-to/request-transformation.md)
 + AEM Eventing{#aem-eventing}
    + [개요](./eventing/overview.md)
    + 예{#examples}
@@ -238,7 +243,7 @@ ht-degree: 100%
       + [자산 워크플로 마이그레이션 도구](./migration/cloud-acceleration-manager/asset-workflow-migration-tool.md)
       + [Cloud Acceleration Manager 탐색](./migration/cloud-acceleration-manager/navigating.md)
       + [Cloud Acceleration Manager 사용](./migration/cloud-acceleration-manager/using.md)
-+ [콘텐츠 조각](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html?lang=ko){target=_blank}
++ [콘텐츠 조각](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html){target=_blank}
 + Forms{#forms}
    + Forms as a Cloud Service용 개발{#developing-for-cloud-service}
       + [1- 시작하기](./forms/developing-for-cloud-service/getting-started.md)
@@ -416,11 +421,11 @@ ht-degree: 100%
    + [문제 해결](./asset-compute/troubleshooting.md)
 
 + 여러 단계 튜토리얼{#multi-step-tutorials}
-   + [AEM 사이트 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko){target=_blank}
-   + [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ko){target=_blank}
-   + [SPA 편집기 (React)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html?lang=ko){target=_blank}
-   + [AEM Sites 및 Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html?lang=ko){target=_blank}
-   + [토큰 기반 인증](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=ko){target=_blank}
+   + [AEM 사이트 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html){target=_blank}
+   + [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html){target=_blank}
+   + [SPA 편집기 (React)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html){target=_blank}
+   + [AEM Sites 및 Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html){target=_blank}
+   + [토큰 기반 인증](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html){target=_blank}
 + 전문가 리소스 {#expert-resources}
    + AEM 챔피언 {#aem-champions}
       + [Cloud Manager 온보딩 플레이북](./expert-resources/aem-champions/onboarding-playbook.md)
