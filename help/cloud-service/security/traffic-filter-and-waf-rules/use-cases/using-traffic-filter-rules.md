@@ -11,7 +11,7 @@ last-substantial-update: 2025-06-04T00:00:00Z
 jira: KT-18307
 thumbnail: null
 exl-id: 5e235220-82f6-46e4-b64d-315f027a7024
-source-git-commit: 22a35b008de380bf2f2ef5dfde6743261346df89
+source-git-commit: b7f567da159865ff04cb7e9bd4dae0b140048e7d
 workflow-type: tm+mt
 source-wordcount: '1780'
 ht-degree: 100%
@@ -23,7 +23,7 @@ ht-degree: 100%
 AEM as a Cloud Service에서 _Adobe 권장_ **표준 트래픽 필터 규칙**&#x200B;을 사용하여 서비스 거부(DoS), 분산 서비스 거부(DDoS) 및 봇 남용으로부터 AEM 웹 사이트를 보호하는 방법에 대해 알아봅니다.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3469395/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3469396/?quality=12&learn=on)
 
 ## 학습 목표
 

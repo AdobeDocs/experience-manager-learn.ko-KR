@@ -11,7 +11,7 @@ last-substantial-update: 2025-06-04T00:00:00Z
 jira: KT-18306
 thumbnail: null
 exl-id: 0a738af8-666b-48dc-8187-9b7e6a8d7e1b
-source-git-commit: 22a35b008de380bf2f2ef5dfde6743261346df89
+source-git-commit: b7f567da159865ff04cb7e9bd4dae0b140048e7d
 workflow-type: tm+mt
 source-wordcount: '1125'
 ht-degree: 100%
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 설정 프로세스를 보여주기 위해 이 튜토리얼은 [AEM WKND Sites 프로젝트](https://github.com/adobe/aem-guides-wknd)를 사용합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3469396/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3469395/?quality=12&learn=on)
 
 ## 설정 개요
 
