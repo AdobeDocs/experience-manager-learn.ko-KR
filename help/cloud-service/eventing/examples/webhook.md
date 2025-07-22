@@ -24,7 +24,7 @@ ht-degree: 1%
 웹후크에서 AEM 이벤트를 수신하고 페이로드, 헤더 및 메타데이터 등 이벤트 세부 사항을 검토하는 방법에 대해 알아봅니다.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3427051?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449755?quality=12&learn=on&captions=kor)
 
 
 >[!IMPORTANT]
