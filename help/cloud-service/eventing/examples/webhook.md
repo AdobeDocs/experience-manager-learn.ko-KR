@@ -12,10 +12,10 @@ last-substantial-update: 2023-01-29T00:00:00Z
 jira: KT-14732
 thumbnail: KT-14732.jpeg
 exl-id: 00954d74-c4c7-4dac-8d23-7140c49ae31f
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: e01eb7ff050321a70d84f8a613705799017dbf5d
 workflow-type: tm+mt
-source-wordcount: '520'
-ht-degree: 0%
+source-wordcount: '533'
+ht-degree: 1%
 
 ---
 
@@ -23,9 +23,17 @@ ht-degree: 0%
 
 웹후크에서 AEM 이벤트를 수신하고 페이로드, 헤더 및 메타데이터 등 이벤트 세부 사항을 검토하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3449755?quality=12&learn=on&captions=kor)
 
-이 예에서는 Adobe에서 제공하는 _호스팅된 webhook_&#x200B;을(를) 사용하면 자체 웹후크를 설정할 필요 없이 AEM 이벤트를 받을 수 있습니다. 이 Adobe 제공 웹후크는 웹 응용 프로그램을 빌드하고 배포하는 데 도움이 되는 웹 기반 환경을 제공하는 것으로 알려진 플랫폼인 [Glitch](https://glitch.com/)에서 호스팅됩니다. 그러나 원하는 경우 자체 웹후크를 사용하는 옵션도 사용할 수 있습니다.
+>[!VIDEO](https://video.tv.adobe.com/v/3427051?quality=12&learn=on)
+
+
+>[!IMPORTANT]
+>
+>이 자습서의 라이브 데모 끝점은 이전에 [Glitch](https://glitch.com/)에서 호스팅되었습니다. 2025년 7월부터 Glitch가 호스팅 서비스를 중단했으며 더 이상 종단점에 액세스할 수 없습니다.
+>>데모를 대체 플랫폼으로 마이그레이션하는 데 적극적으로 노력하고 있습니다. 튜토리얼 콘텐츠는 정확하게 유지되며 업데이트된 링크가 곧 제공됩니다.
+>>양해와 인내심에 감사드립니다.
+
+라이브 데모 엔드포인트를 다시 사용할 수 있을 때까지 자체 웹후크를 사용하십시오.
 
 ## 사전 요구 사항
 
@@ -155,4 +163,4 @@ AEM 이벤트 세부 사항에 웹후크에서 이벤트를 처리하는 데 필
 
 ## 추가 리소스
 
-- [결함 웹후크 소스 코드](https://glitch.com/edit/#!/러블리 앤시언트 코스터)을(를) 참조할 수 있습니다.
+- [AEM-Eventing Webhook](../assets/examples/webhook/aemeventing-webhook.tgz) 소스 코드를 참조할 수 있습니다.

@@ -12,10 +12,10 @@ last-substantial-update: 2023-01-29T00:00:00Z
 jira: KT-14734
 thumbnail: KT-14734.jpeg
 exl-id: 33eb0757-f0ed-4c2d-b8b9-fa6648e87640
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: e01eb7ff050321a70d84f8a613705799017dbf5d
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 0%
+source-wordcount: '579'
+ht-degree: 1%
 
 ---
 
@@ -29,7 +29,13 @@ ht-degree: 0%
 
 Adobe Developer Console 프로젝트 내에서 모든 이벤트 등록은 저널링을 위해 자동으로 활성화되므로 원활한 통합이 가능합니다.
 
-이 예제에서는 Adobe에서 제공하는 _호스팅된 웹 애플리케이션_&#x200B;을(를) 사용하면 애플리케이션을 설정할 필요 없이 저널에서 첫 번째 AEM 이벤트 배치를 가져올 수 있습니다. Adobe에서 제공하는 이 웹 응용 프로그램은 웹 응용 프로그램을 빌드하고 배포하는 데 도움이 되는 웹 기반 환경을 제공하는 것으로 알려진 플랫폼인 [Glitch](https://glitch.com/)에서 호스팅됩니다. 그러나 원하는 경우 자체 애플리케이션을 사용하는 옵션도 사용할 수 있습니다.
+>[!IMPORTANT]
+>
+>이 자습서의 라이브 데모 끝점은 이전에 [Glitch](https://glitch.com/)에서 호스팅되었습니다. 2025년 7월부터 Glitch가 호스팅 서비스를 중단했으며 더 이상 종단점에 액세스할 수 없습니다.
+>>데모를 대체 플랫폼으로 마이그레이션하는 데 적극적으로 노력하고 있습니다. 튜토리얼 콘텐츠는 정확하게 유지되며 업데이트된 링크가 곧 제공됩니다.
+>>양해와 인내심에 감사드립니다.
+
+라이브 데모 엔드포인트를 다시 사용할 수 있을 때까지 자체 애플리케이션을 사용하십시오.
 
 ## 사전 요구 사항
 
@@ -67,7 +73,7 @@ Adobe에서 제공하는 웹 애플리케이션에 액세스하려면 다음 단
 
   ![Adobe Developer Console 프로젝트 이벤트 카드](../assets/examples/journaling/adobe-developer-console-project-events-card.png)
 
-## AEM 이벤트 저널 로드
+## AEM Events 저널 로드
 
 간단하게 하기 위해 호스팅된 이 웹 애플리케이션은 저널에서 첫 번째 AEM 이벤트 배치만 가져옵니다. 저널에서 사용할 수 있는 가장 오래된 이벤트입니다. 자세한 내용은 [첫 번째 이벤트 일괄 처리](https://developer.adobe.com/events/docs/guides/api/journaling_api/#fetching-your-first-batch-of-events-from-the-journal)를 참조하십시오.
 
@@ -82,7 +88,5 @@ Adobe에서 제공하는 웹 애플리케이션에 액세스하려면 다음 단
   ![전체 AEM 이벤트 페이로드](../assets/examples/journaling/complete-journal-data.png)
 
 ## 추가 리소스
-
-- [결함 웹후크 소스 코드](https://glitch.com/edit/#!/인디고스펙클앤틀러)을(를) 참조할 수 있습니다. UI를 렌더링하기 위해 [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html) 구성 요소를 사용하는 간단한 React 응용 프로그램입니다.
 
 - [Adobe I/O Events 저널링 API](https://developer.adobe.com/events/docs/guides/api/journaling_api/)에서는 이벤트의 첫 번째, 다음 및 마지막 배치, 페이지 매김 등과 같은 API에 대한 자세한 정보를 제공합니다.
