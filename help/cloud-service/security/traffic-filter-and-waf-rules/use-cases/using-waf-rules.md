@@ -13,7 +13,7 @@ jira: KT-18308
 thumbnail: null
 exl-id: b87c27e9-b6ab-4530-b25c-a98c55075aef
 source-git-commit: 22a35b008de380bf2f2ef5dfde6743261346df89
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1376'
 ht-degree: 100%
 
@@ -30,7 +30,7 @@ AEM as a Cloud Service에서 _Adobe 권장_ **웹 애플리케이션 방화벽(W
 > WAF 트래픽 필터 규칙을 사용하려면 추가 **WAF-DDoS Protection** 또는 **향상된 보안** 라이선스가 필요합니다. 표준 트래픽 필터 규칙은 기본적으로 Sites 및 Forms 고객에게 제공됩니다.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3469437/?quality=12&learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3469397/?quality=12&learn=on)
 
 ## 학습 목표
 
