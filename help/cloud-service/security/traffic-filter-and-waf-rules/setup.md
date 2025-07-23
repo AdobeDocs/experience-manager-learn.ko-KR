@@ -22,7 +22,7 @@ ht-degree: 100%
 
 웹 애플리케이션 방화벽(WAF) 규칙을 포함한 트래픽 필터 규칙을 **설정하는 방법**&#x200B;에 대해 알아봅니다. 이 튜토리얼에서는 이후 튜토리얼을 위한 기초 작업을 설정합니다. 이후 튜토리얼에서는 규칙을 구성하고 배포한 다음 결과를 테스트하고 분석합니다.
 
-설정 프로세스를 보여주기 위해 이 튜토리얼은 [AEM WKND Sites 프로젝트](https://github.com/adobe/aem-guides-wknd)를 사용합니다.
+설정 프로세스를 보여 주기 위해 이 튜토리얼은 [AEM WKND Sites 프로젝트](https://github.com/adobe/aem-guides-wknd)를 사용합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3469395/?quality=12&learn=on)
 
@@ -65,7 +65,7 @@ data:
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에 로그인하고 프로그램을 선택합니다.
 
-2. **프로그램 개요** 페이지에서 **파이프라인** 카드로 섹션으로 이동하여 **+추가** 를 클릭하여 새 파이프라인을 생성합니다.
+2. **프로그램 개요** 페이지에서 **파이프라인** 카드로 섹션으로 이동하여 **+추가**&#x200B;를 클릭하여 새 파이프라인을 생성합니다.
 
    ![Cloud Manager 파이프라인 카드](./assets/setup/cloud-manager-pipelines-card.png)
 
