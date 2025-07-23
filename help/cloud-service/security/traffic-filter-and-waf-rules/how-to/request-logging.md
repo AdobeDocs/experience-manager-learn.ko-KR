@@ -1,6 +1,6 @@
 ---
-title: 중요한 요청 모니터링
-description: AEM as a Cloud Service에서 트래픽 필터 규칙을 사용하여 중요한 요청을 기록하여 모니터링하는 방법을 알아봅니다.
+title: 민감한 요청 모니터링
+description: AEM as a Cloud Service에서 트래픽 필터 규칙을 사용하여 민감한 요청을 로깅하여 모니터링하는 방법에 대해 알아봅니다.
 version: Experience Manager as a Cloud Service
 feature: Security
 topic: Security, Administration, Architecture
@@ -11,39 +11,39 @@ last-substantial-update: 2025-06-04T00:00:00Z
 jira: KT-18311
 thumbnail: null
 source-git-commit: 293157c296676ef1496e6f861ed8c2c24da7e068
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '520'
-ht-degree: 34%
+ht-degree: 100%
 
 ---
 
-# 중요한 요청 모니터링
+# 민감한 요청 모니터링
 
-AEM as a Cloud Service에서 트래픽 필터 규칙을 사용하여 중요한 요청을 기록하여 모니터링하는 방법을 알아봅니다.
+AEM as a Cloud Service에서 트래픽 필터 규칙을 사용하여 민감한 요청을 로깅하여 모니터링하는 방법에 대해 알아봅니다.
 
-로깅을 사용하면 최종 사용자 또는 서비스에 영향을 주지 않고 트래픽 패턴을 관찰할 수 있으며 차단 규칙을 구현하기 전에 중요한 첫 번째 단계입니다.
+로깅을 통해 최종 사용자나 서비스에 영향을 주지 않고 트래픽 패턴을 관찰할 수 있으며, 이는 차단 규칙을 구현하기 전에 중요한 첫 단계입니다.
 
-이 자습서에서는 AEM Publish 서비스에 대해 **WKND 로그인 및 로그아웃 경로의 요청을 기록**&#x200B;하는 방법을 보여줍니다.
+이 튜토리얼에서는 AEM 게시 서비스에 대한 **WKND 로그인 및 로그아웃 경로의 요청을 로그**&#x200B;하는 방법을 보여 줍니다.
 
-## 요청을 기록할 이유 및 시기
+## 요청을 로그하는 이유 및 시기
 
-특정 요청 로깅은 사용자 및 잠재적으로 악의적인 행위자가 AEM 애플리케이션과 상호 작용하는 방법을 이해하는 위험성이 낮고 가치가 높은 방법입니다. 이는 차단 규칙을 적용하기 전에 특히 유용하여 합법적인 트래픽을 방해하지 않으면서 보안 자세를 개선할 수 있는 자신감을 제공합니다.
+특정 요청을 로그하는 것은 사용자 및 잠재적으로 악의적인 행위자가 AEM 애플리케이션과 상호 작용하는 방식을 이해하는 데 있어 위험이 낮고 가치가 높은 방법입니다. 특히 차단 규칙을 적용하기 전에 유용하며, 합법적인 트래픽을 방해하지 않고 보안 태세를 개선할 수 있는 확신을 줍니다.
 
 로깅에 대한 일반적인 시나리오는 다음과 같습니다.
 
-- `block` 모드로 승격하기 전에 규칙의 영향 및 도달 범위를 확인합니다.
-- 로그인/로그아웃 경로 및 인증 엔드포인트를 모니터링하여 비정상적인 패턴 또는 무차별 시도.
-- 잠재적인 남용 또는 DoS 활동을 위해 API 엔드포인트에 대한 고주파 액세스를 추적합니다.
-- 더 엄격한 컨트롤을 적용하기 전에 보트 동작에 대한 기준선을 설정합니다.
-- 보안 사고의 경우, 공격의 특성 및 영향을 받는 리소스를 이해하기 위한 법의학 데이터를 제공하십시오.
+- 규칙을 `block` 모드로 승격하기 전에 규칙의 영향과 도달 범위를 확인합니다.
+- 로그인/로그아웃 경로 및 인증 엔드포인트에서 비정상적인 패턴 또는 무차별 대입 시도를 모니터링합니다.
+- 잠재적인 남용 또는 DoS 활동에 대해 API 엔드포인트에 대한 빈도가 높은 액세스를 추적합니다.
+- 더 엄격한 통제를 적용하기 전에 봇 동작에 대한 기준선을 설정합니다.
+- 보안 사고 발생 시 공격의 특성 및 영향을 받는 리소스를 파악하기 위한 포렌식 데이터를 제공합니다.
 
 ## 사전 요구 사항
 
-계속하기 전에 [트래픽 필터 및 WAF 규칙을 설정하는 방법](../setup.md) 자습서에 설명된 대로 필요한 설정을 완료했는지 확인하십시오. 또한 [AEM WKND Sites 프로젝트](https://github.com/adobe/aem-guides-wknd)를 AEM 환경에 복제 및 배포했습니다.
+진행하기 전에 트래픽 [필터 및 WAF 규칙 설정 방법](../setup.md) 튜토리얼에 설명된 필수 설정을 완료했는지 확인하시기 바랍니다. 또한 [AEM WKND Sites 프로젝트](https://github.com/adobe/aem-guides-wknd)를 AEM 환경에 복제하고 배포했는지 확인하십시오.
 
-## 예: 로그 WKND 로그인 및 로그아웃 요청
+## 예: WKND 로그인 및 로그아웃 요청 로그
 
-이 예에서는 트래픽 필터 규칙을 만들어 AEM Publish 서비스의 WKND 로그인 및 로그아웃 경로에 대한 요청을 기록합니다. 인증 시도를 모니터링하고 잠재적인 보안 문제를 식별하는 데 도움이 됩니다.
+이 예시에서는 AEM 게시 서비스의 WKND 로그인 및 로그아웃 경로에 대한 요청을 로그하는 트래픽 필터 규칙을 생성합니다. 이렇게 하면 인증 시도를 모니터링하고 잠재적인 보안 문제를 식별하는 데 도움이 됩니다.
 
 - WKND 프로젝트의 `/config/cdn.yaml` 파일에 다음 규칙을 추가합니다.
 
@@ -70,15 +70,15 @@ data:
 
 - 변경 사항을 Cloud Manager Git 저장소에 커밋하고 푸시합니다.
 
-- Cloud Manager 구성 파이프라인 [이전에 만든](../setup.md#deploy-rules-using-adobe-cloud-manager)을(를) 사용하여 AEM 환경에 변경 사항을 배포합니다.
+- [앞서 만든](../setup.md#deploy-rules-using-adobe-cloud-manager) Cloud Manager Config Pipeline을 사용하여 AEM 환경에 변경 사항을 배포합니다.
 
-- 프로그램의 WKND 사이트에서 로그인하여 로그아웃하여 규칙을 테스트합니다(예: `https://publish-pXXXX-eYYYY.adobeaemcloud.com/us/en.html`). `asmith/asmith`를 사용자 이름과 암호로 사용할 수 있습니다.
+- 프로그램의 WKND 사이트(예: `https://publish-pXXXX-eYYYY.adobeaemcloud.com/us/en.html`)에 로그인 및 로그아웃하여 규칙을 테스트합니다. `asmith/asmith`를 사용자 이름과 암호로 사용할 수 있습니다.
 
   ![WKND 로그인](../assets/how-to/wknd-login.png)
 
 ## 분석
 
-Cloud Manager에서 AEMCS CDN 로그를 다운로드하고 `publish-auth-requests`AEMCS CDN 로그 분석 도구[를 사용하여 ](../setup.md#setup-the-elastic-dashboard-tool) 규칙의 결과를 분석해 보겠습니다.
+Cloud Manager에서 AEMCS CDN 로그를 가져오고 [AEMCS CDN Log Analysis Tooling](../setup.md#setup-the-elastic-dashboard-tool)을 사용하여 `publish-auth-requests` 규칙의 결과를 분석해 보겠습니다.
 
 - [Cloud Manager](https://my.cloudmanager.adobe.com/)의 **환경** 카드에서 AEMCS **게시** 서비스의 CDN 로그를 다운로드합니다.
 
