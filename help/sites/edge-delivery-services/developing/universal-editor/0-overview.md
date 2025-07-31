@@ -10,10 +10,10 @@ doc-type: Catalog
 jira: KT-15832
 duration: 88
 exl-id: aeac08a2-75a0-4adb-b32e-0e7f85e7eb1d
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
-source-wordcount: '586'
-ht-degree: 100%
+source-git-commit: f0ad5d66549970337118220156d7a6b0fd30fd57
+workflow-type: tm+mt
+source-wordcount: '620'
+ht-degree: 94%
 
 ---
 
@@ -100,7 +100,7 @@ AEM as a Cloud Service에서 코드 프로젝트를 만들고 새 사이트를 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./3-local-development-environment.md" title="로컬 개발 환경 설정" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443985/?format=jpeg&nocache=1741027443737&captions=kor" alt="로컬 개발 환경 설정"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443978/?format=jpeg&nocache=1753811862249" alt="로컬 개발 환경 설정"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -261,6 +261,7 @@ AEM as a Cloud Service에서 코드 프로젝트를 만들고 새 사이트를 �
 
 * ./how-to/block-options.md
 * ./how-to/header-and-footer.md
+* ./how-to/local-extension-preview.md {image = ./how-to/assets/local-extension-preview/extension-loaded.png}
 
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
@@ -303,9 +304,32 @@ AEM as a Cloud Service에서 코드 프로젝트를 만들고 새 사이트를 �
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="./how-to/header-and-footer.md" target="_blank" rel="referrer" title="머리글 및 바닥글">머리글 및 바닥글</a>
                     </p>
-                    <p class="is-size-6">Edge Delivery Services와 범용 편집기에서 머리글 및 바닥글이 사용되는 방식을 알아봅니다.</p>
+                    <p class="is-size-6">Edge Delivery Services와 범용 편집기에서 머리글 및 바닥글이 개발되는 방식을 알아봅니다.</p>
                 </div>
                 <a href="./how-to/header-and-footer.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">자세히 알아보기</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Preview a Universal Editor extension">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="./how-to/local-extension-preview.md" title="유니버설 편집기 확장 미리 보기" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="./how-to/assets/local-extension-preview/extension-loaded.png" alt="유니버설 편집기 확장 미리 보기"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="./how-to/local-extension-preview.md" target="_blank" rel="referrer" title="유니버설 편집기 확장 미리 보기">유니버설 편집기 확장 미리 보기</a>
+                    </p>
+                    <p class="is-size-6">개발 중에 로컬에서 실행 중인 유니버설 편집기 확장을 미리 보는 방법에 대해 알아봅니다.</p>
+                </div>
+                <a href="./how-to/local-extension-preview.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">자세히 알아보기</span>
                 </a>
             </div>
