@@ -92,7 +92,7 @@ Adobe Experience Manager Assets as a Cloud Service Content Hub에서 자산을 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/content-hub/add-assets" title="자산 추가" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3432980/?format=jpeg&nocache=1744751769952" alt="자산 추가"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3450289/?format=jpeg&nocache=1744751769952&captions=kor" alt="자산 추가"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
