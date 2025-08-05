@@ -11,9 +11,9 @@ jira: KT-15832
 duration: 88
 exl-id: aeac08a2-75a0-4adb-b32e-0e7f85e7eb1d
 source-git-commit: f0ad5d66549970337118220156d7a6b0fd30fd57
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '620'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -100,7 +100,7 @@ AEM as a Cloud Service에서 코드 프로젝트를 만들고 새 사이트를 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./3-local-development-environment.md" title="로컬 개발 환경 설정" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443985/?format=jpeg&nocache=1753811862249&captions=kor" alt="로컬 개발 환경 설정"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443978/?format=jpeg&nocache=1753811862249" alt="로컬 개발 환경 설정"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -316,8 +316,8 @@ AEM as a Cloud Service에서 코드 프로젝트를 만들고 새 사이트를 �
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./how-to/local-extension-preview.md" title="유니버설 편집기 확장 미리 보기" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="./how-to/assets/local-extension-preview/extension-loaded.png" alt="유니버설 편집기 확장 미리 보기"
+                    <a href="./how-to/local-extension-preview.md" title="범용 편집기 확장 기능 미리보기" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="./how-to/assets/local-extension-preview/extension-loaded.png" alt="범용 편집기 확장 기능 미리보기"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -325,9 +325,9 @@ AEM as a Cloud Service에서 코드 프로젝트를 만들고 새 사이트를 �
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./how-to/local-extension-preview.md" target="_blank" rel="referrer" title="유니버설 편집기 확장 미리 보기">유니버설 편집기 확장 미리 보기</a>
+                        <a href="./how-to/local-extension-preview.md" target="_blank" rel="referrer" title="범용 편집기 확장 기능 미리보기">범용 편집기 확장 기능 미리보기</a>
                     </p>
-                    <p class="is-size-6">개발 중에 로컬에서 실행 중인 유니버설 편집기 확장을 미리 보는 방법에 대해 알아봅니다.</p>
+                    <p class="is-size-6">개발 중에 로컬에서 실행되는 범용 편집기 확장 기능을 미리보기하는 방법을 알아봅니다.</p>
                 </div>
                 <a href="./how-to/local-extension-preview.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">자세히 알아보기</span>
