@@ -5,9 +5,9 @@ sub-product: Experience Manager Assets
 version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 doc-type: Catalog
 exl-id: 1d0b0183-25ee-4cb4-82a5-3506e7c1c908
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
-source-wordcount: '177'
+source-git-commit: 82437ad5d395c5261b3a913b168e4068abb55206
+workflow-type: tm+mt
+source-wordcount: '128'
 ht-degree: 100%
 
 ---
@@ -36,54 +36,6 @@ AEM Assets가 무엇인지, 조직의 비즈니스 목표를 달성하는 데 �
 <div id="recs-overview-body-4"></div>
 <div id="recs-overview-body-5"></div>
 <div id="recs-overview-body-6"></div>
-
-<div id="staff-picks-section">
-
-## 직원 추천
-
-<table>
-<td>
-   <a href="./creative-workflows/aem-desktop-app.md">
-   <img alt="향상된 스마트 태그" src="./assets/overview/desktop-app.png" />
-   </a>
-   <div>
-      <a href="./creative-workflows/aem-desktop-app.md">
-      <strong>AEM 데스크탑 앱 사용</strong>
-      </a>
-   </div>
-   <p>
-      <em>데스크탑에서 AEM의 자산에 직접 액세스</em>
-   </p>
-</td>
-<td>
-   <a href="../assets-essentials/overview.md">
-   <img alt="AEM Assets Essentials" src="../assets-essentials/assets/overview/getting-started.png"/>
-   </a>
-   <div>
-      <a href="../assets-essentials/overview.md">
-      <strong>Assets Essentials 시작하기</strong>
-      </a>
-   </div>
-   <p>
-      <em>개념부터 디자인, 게재까지 경험 생성 속도를 높입니다.</em>
-   <p>
-</td>
-<td>
-   <a href="./dynamic-media/dynamic-media-overview-feature-video-use.md">
-   <img alt="Dynamic Media 개요" src="./assets/overview/dynamic-media.png" />
-   </a>
-   <div>
-      <a href="./dynamic-media/dynamic-media-overview-feature-video-use.md">
-      <strong>Dynamic Media 개요</strong>
-      </a>
-   </div>
-   <p>
-      <em>Dynamic Media를 사용하여 미디어 콘텐츠 관리 및 액세스</em>
-   <p>
-</td>
-</table>
-
-</div>
 
 ## 추가 리소스
 
