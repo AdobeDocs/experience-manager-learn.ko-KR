@@ -127,5 +127,5 @@ AEM에서 태그 구성을 만들어 사이트 페이지에 필요한 속성 및
 
 ## 추가 리소스
 
-- [Adobe Experience Platform Debugger 개요](https://experienceleague.adobe.com/en/docs/experience-platform/debugger/home)
+- [Adobe Experience Platform Debugger 개요](https://experienceleague.adobe.com/ko/docs/experience-platform/debugger/home)
 - [태그 개요](https://experienceleague.adobe.com/ko/docs/experience-platform/tags/home)
