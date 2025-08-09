@@ -20,7 +20,7 @@ ht-degree: 0%
 
 적응형 스트리밍, 다양한 화면 크기에 대한 스마트 자르기, 사용자 지정 뷰어 사전 설정, 캡션, 오디오 트랙 및 챕터 마커 지원을 포함하여 AEM Dynamic Media에서 비디오를 게시하고 최적화하는 모범 사례에 대해 알아봅니다. 장치 간에 뷰어 경험, 접근성 및 마케팅 효과를 향상시키는 방법을 강조합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470634/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3470685/?learn=on&enablevpops&captions=kor)
 
 ## 지원 리소스
 
