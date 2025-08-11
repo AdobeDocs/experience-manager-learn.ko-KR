@@ -7,9 +7,9 @@ solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 source-git-commit: bc1c7a96a3d5dbc23fb7d34343cee0cfc2853be9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '597'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -78,7 +78,7 @@ ht-degree: 99%
 + 생성형 AI {#generative-ai}
    + [변형 생성](./generative-ai/generate-variations.md)
 + 콘텐츠 조각 {#content-fragments}
-   + [콘텐츠 조각 콘솔](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html?lang=ko){target=_blank}
+   + [콘텐츠 조각 콘솔](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html){target=_blank}
    + [콘텐츠 조각 작성](content-fragments/content-fragments-feature-video-use.md)
    + [콘텐츠 조각 게재](content-fragments/content-fragments-delivery-feature-video-use.md)
    + [콘텐츠 조각 번역](content-fragments/content-fragments-translation-feature-video-use.md)
@@ -86,7 +86,7 @@ ht-degree: 99%
 + 경험 조각 {#experience-fragments}
    + [경험 조각 사용](experience-fragments/experience-fragments-feature-video-use.md)
    + [빌딩 블록](experience-fragments/building-blocks.md)
-   + [콘텐츠 조각과 경험 조각 비교](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=ko){target=_blank}
+   + [콘텐츠 조각과 경험 조각 비교](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html){target=_blank}
 + Edge Delivery Services{#edge-delivery-services}
    + [개요](./edge-delivery-services/overview.md)
    + 개발{#developing}
@@ -111,7 +111,7 @@ ht-degree: 99%
          + 방법{#how-to}
             + [블록 옵션](./edge-delivery-services/developing/universal-editor/how-to/block-options.md)
             + [머리글 및 바닥글](./edge-delivery-services/developing/universal-editor/how-to/header-and-footer.md)
-            + [로컬 확장 미리 보기](./edge-delivery-services/developing/universal-editor/how-to/local-extension-preview.md)
+            + [로컬 확장 기능 미리보기](./edge-delivery-services/developing/universal-editor/how-to/local-extension-preview.md)
    + 방법{#how-to}
       + [RSS 피드](edge-delivery-services/how-to/rss.md)
       + [소셜 미디어 공유](edge-delivery-services/how-to/social-media-sharing.md)
@@ -119,8 +119,8 @@ ht-degree: 99%
 + 개발 {#developing}
    + [Edge Delivery Services](developing/edge-delivery-services.md)
    + [AEM Project Archetype](developing/aem-project-archetype.md)
-   + [AEM Sites 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko){target=_blank}
-   + [AEM Headless 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ko){target=_blank}
+   + [AEM Sites 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html){target=_blank}
+   + [AEM Headless 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html){target=_blank}
    + [AEM SPA 편집기 및 React 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html){target=_blank}
    + [페이지 속성 확장](developing/page-properties-technical-video-develop.md)
    + [반응형 중단점](developing/responsive-breakpoints.md)
