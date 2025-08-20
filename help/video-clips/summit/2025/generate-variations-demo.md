@@ -25,4 +25,4 @@ ht-degree: 0%
 
 변형 생성 도구의 라이브 데모로, 브랜드 내 콘텐츠 변형을 빠르고 효율적으로 만들 수 있는 기능을 보여줍니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459233/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3462359/?learn=on&enablevpops&captions=kor)
