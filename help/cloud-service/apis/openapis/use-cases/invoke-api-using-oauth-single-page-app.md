@@ -1,7 +1,7 @@
 ---
 title: OAuth 단일 페이지 앱을 사용하여 OpenAPI 기반 AEM API 호출
 description: OAuth 2.0 PKCE 흐름을 통해 사용자 지정 SPA(단일 페이지 앱)에서 사용자 기반 인증을 사용하여 AEM as a Cloud Service에서 OpenAPI 기반 AEM API를 호출하는 방법에 대해 알아봅니다.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Developing
 topic: Development, Architecture, Content Management
 role: Architect, Developer, Leader
@@ -12,7 +12,7 @@ thumbnail: KT-17430.jpg
 last-substantial-update: 2025-03-28T00:00:00Z
 duration: 0
 exl-id: 9fb92127-9dea-4a1d-b1f7-8fb98cabf188
-source-git-commit: 723c439202b8e00e7b3236a50641ee1f2f6a4d9c
+source-git-commit: 7c7c9070bb6061dc59530070dd32ca6b8c78bc8d
 workflow-type: tm+mt
 source-wordcount: '2130'
 ht-degree: 1%
@@ -59,7 +59,7 @@ Adobe Developer Console(ADC) 프로젝트가 OAuth 단일 페이지 앱 인증�
 >ADC 프로젝트가 _client_secret_&#x200B;을(를) 제공하지 않습니다. 대신 SPA는 _액세스 토큰_&#x200B;에 대한 인증 코드를 안전하게 교환하기 위해 _code_verifier_ 및 _code_challenge_&#x200B;을(를) 생성합니다. 클라이언트 측에 클라이언트 암호를 저장할 필요가 없으므로 보안이 강화됩니다.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3456971?quality=12&learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3456964?quality=12&learn=on)
 
 
 
@@ -144,7 +144,7 @@ IMS 사용자 인증 및 SPA 권한 부여를 처리하는 코드를 살펴보�
 
 ![WKND SPA 첫 번째 로그인 및 동의](../assets/spa/wknd-spa-first-login-consent.png)
 
-1. `src/context/IMSAuthContext.js` 파일에서 `login` 함수는 IMS 사용자 인증 및 앱 권한 부여 흐름을 시작합니다. 액세스 토큰으로 `code`을(를) 안전하게 교환하기 위해 임의의 `code_verifier` 및 `code_challenge`을(를) 생성합니다. `code_verifier`은(는) 나중에 사용할 수 있도록 로컬 저장소에 저장됩니다. 앞에서 언급했듯이 SPA는 `client_secret`을(를) 저장하거나 사용하지 않으며, 즉시 생성하여 `authorize` 및 `token` 요청의 두 단계로 사용합니다.
+1. `src/context/IMSAuthContext.js` 파일에서 `login` 함수는 IMS 사용자 인증 및 앱 권한 부여 흐름을 시작합니다. 액세스 토큰으로 `code_verifier`을(를) 안전하게 교환하기 위해 임의의 `code_challenge` 및 `code`을(를) 생성합니다. `code_verifier`은(는) 나중에 사용할 수 있도록 로컬 저장소에 저장됩니다. 앞에서 언급했듯이 SPA는 `client_secret`을(를) 저장하거나 사용하지 않으며, 즉시 생성하여 `authorize` 및 `token` 요청의 두 단계로 사용합니다.
 
    ```javascript
    ...
@@ -373,7 +373,7 @@ WKND SPA는 사용자별 액세스 토큰을 사용하여 콘텐츠 조각 모�
 
 ### ADC 프로젝트 구성{#configure-adc-project}
 
-[Setup OpenAPI 기반 AEM API](../setup.md)에서 ADC 프로젝트 구성 단계가 _반복_&#x200B;됩니다. Assets, Sites API를 추가하고 해당 인증 방법을 OAuth 단일 페이지 앱으로 구성하는 작업이 반복됩니다.
+_Setup OpenAPI 기반 AEM API_&#x200B;에서 ADC 프로젝트 구성 단계가 [반복](../setup.md)됩니다. Assets, Sites API를 추가하고 해당 인증 방법을 OAuth 단일 페이지 앱으로 구성하는 작업이 반복됩니다.
 
 1. [Adobe Developer Console](https://developer.adobe.com/console/projects)에서 원하는 프로젝트를 엽니다.
 
@@ -423,7 +423,7 @@ WKND SPA는 사용자별 액세스 토큰을 사용하여 콘텐츠 조각 모�
 
 AEM as a Cloud Service의 CORS(원본 간 리소스 공유)를 사용하면 AEM 이외 웹 속성을 사용하여 AEM API에 대한 브라우저 기반 클라이언트측 호출을 할 수 있습니다.
 
-1. AEM 프로젝트에서 `/ui.config/src/main/content/jcr_root/apps/wknd/osgiconfig/config.author/` 폴더에서 `com.adobe.granite.cors.impl.CORSPolicyImpl~wknd-graphql.cfg.json` 파일을 찾거나 만듭니다.
+1. AEM 프로젝트에서 `com.adobe.granite.cors.impl.CORSPolicyImpl~wknd-graphql.cfg.json` 폴더에서 `/ui.config/src/main/content/jcr_root/apps/wknd/osgiconfig/config.author/` 파일을 찾거나 만듭니다.
 
    ![CORS 구성 파일 찾기](../assets/spa/locate-cors-config-file.png)
 

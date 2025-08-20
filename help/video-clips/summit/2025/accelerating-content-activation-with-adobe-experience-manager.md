@@ -2,7 +2,7 @@
 title: Adobe Experience Manager을 통한 컨텐츠 활성화 가속화
 description: Adobe Experience Manager을 통해 브랜드가 신뢰, 개인화 및 ROI를 유지하면서 콘텐츠 활성화를 가속화하는 방법을 알아봅니다.
 cloud: Experience Cloud
-solution: Experience Manager Assets, Sensei
+solution: Experience Manager Assets
 feature-set: Experience Manager Assets
 role: User, Leader, Admin, Developer, Architect
 level: Beginner, Intermediate, Experienced
@@ -13,13 +13,13 @@ feature: Brand Experiences, Content Personalization, Marketing Campaigns, Multic
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 0d93dab6ccdae1420589a00f3a46eef10bc16ec8
+exl-id: 177150b3-6be3-4594-b1ca-f7f080effdfd
+source-git-commit: 7c7c9070bb6061dc59530070dd32ca6b8c78bc8d
 workflow-type: tm+mt
 source-wordcount: '46'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Experience Manager을 통한 컨텐츠 활성화 가속화
 
