@@ -1,6 +1,6 @@
 ---
 title: AEM Assets Content Hub 구성
-description: 조직의 요구 사항에 맞게 사용 가능한 탭을 탐색하고 구성 옵션을 사용자 지정하는 방법을 알아봅니다.
+description: 사용 가능한 탭을 탐색하고 조직의 요구 사항에 맞게 구성 옵션을 사용자 정의하는 방법에 대해 알아봅니다.
 version: Experience Manager as a Cloud Service
 feature: Asset Management, Marketing Campaigns, Metadata
 topic: Content Supply Chain, Content Management
@@ -11,15 +11,15 @@ duration: 432
 last-substantial-update: 2024-11-19T00:00:00Z
 jira: KT-15990
 exl-id: d04d584e-ecad-498d-a94d-36ac60b7f2c0
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 4a4334047f600cd64a6f6be82974f280b786d0c1
 workflow-type: tm+mt
-source-wordcount: '67'
-ht-degree: 0%
+source-wordcount: '64'
+ht-degree: 25%
 
 ---
 
 # AEM Assets Content Hub 구성
 
-조직의 요구 사항에 맞게 사용 가능한 탭을 탐색하고 구성 옵션을 사용자 지정하는 방법을 알아봅니다. 이 비디오는 관리자가 다양한 설정을 이해하는 데 도움이 되며 최적의 성능과 조직 목표에 맞게 조정하는 방법에 대한 높은 수준의 지침을 제공합니다.
+조직의 요구 사항을 충족하도록 AEM Assets Content Hub을 구성하는 방법에 대해 알아봅니다. 이 비디오는 관리자가 Content Hub의 구성 설정을 이해하고 최적의 성능과 조직 목표에 맞게 조정하는 고급 지침을 제공합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3439318/?learn=on&enablevpops&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3472917/?learn=on&enablevpops)
