@@ -22,6 +22,6 @@ ht-degree: 0%
 
 Experience Manager Assets을 Figma와 통합하여 디자인 워크플로를 간소화하고, 브랜드 일관성을 보장하며, 디자인하는 동안 크리에이티브 팀이 승인된 에셋에 직접 액세스하는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3472903/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3472911/?learn=on&enablevpops&captions=kor)
 
 * [샘플 WKND Figma 파일 다운로드](./assets/figma/WKND-Summer-Campaign.fig)

@@ -23,4 +23,4 @@ ht-degree: 29%
 
 Adobe Cloud Manager 프로그램 및 Content Hub 추가 기능을 사용하여 Experience Manager Assets Assets를 설정하는 방법에 대해 알아봅니다. 제품 프로필을 사용하여 사용자의 액세스를 구성하는 방법도 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3472918/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3472942/?learn=on&captions=kor)

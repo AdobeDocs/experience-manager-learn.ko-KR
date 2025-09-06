@@ -22,4 +22,4 @@ ht-degree: 25%
 
 조직의 요구 사항을 충족하도록 AEM Assets Content Hub을 구성하는 방법에 대해 알아봅니다. 이 비디오는 관리자가 Content Hub의 구성 설정을 이해하고 최적의 성능과 조직 목표에 맞게 조정하는 고급 지침을 제공합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3472917/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3472953/?learn=on&enablevpops&captions=kor)
