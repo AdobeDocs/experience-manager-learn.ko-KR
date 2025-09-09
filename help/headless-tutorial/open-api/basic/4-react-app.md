@@ -43,7 +43,7 @@ ht-degree: 1%
 
 이 예제 React 앱은 `http://localhost:3000`에서 로컬로 실행되고 OpenAPI API를 사용하여 AEM Publish 서비스의 AEM 콘텐츠 조각 배달에 연결합니다. 이 연결을 허용하려면 AEM 게시(또는 미리보기) 서비스에 CORS(원본 간 리소스 공유)를 구성해야 합니다.
 
-[에서 실행 중인 SPA를 설정하여 AEM 게시 서비스에 대한 CORS 요청을 허용하는 방법에 대한 `http://localhost:3000`지침을 따르십시오](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/spa#different-domains).
+[에서 실행 중인 SPA를 설정하여 AEM 게시 서비스에 대한 CORS 요청을 허용하는 방법에 대한 `http://localhost:3000`지침을 따르십시오](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/spa#different-domains).
 
 ### 로컬 CORS 프록시
 

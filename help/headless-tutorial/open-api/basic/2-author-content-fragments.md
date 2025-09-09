@@ -50,7 +50,7 @@ AEM은 &quot;플랫&quot; 폴더 구성을 지원합니다. 즉, 다른 콘텐�
    * 제목: **영어**
    * 이름: **en**
 
-   AEM의 기본 현지화 기능을 지원하도록 프로젝트를 배치하기 위해 루트 언어 폴더를 만듭니다. 가장 좋은 방법은 현지화가 필요하지 않더라도 다국어 지원을 위한 프로젝트를 설정하는 것입니다. 자세한 내용은 [다음 문서 페이지](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html)를 참조하세요.
+   AEM의 기본 현지화 기능을 지원하도록 프로젝트를 배치하기 위해 루트 언어 폴더를 만듭니다. 가장 좋은 방법은 현지화가 필요하지 않더라도 다국어 지원을 위한 프로젝트를 설정하는 것입니다. 자세한 내용은 [다음 문서 페이지](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html?lang=ko)를 참조하세요.
 
 1. 다음 값으로 새 **내 프로젝트 > 영어** 폴더 아래에 두 개의 하위 폴더를 만듭니다.
 

@@ -28,7 +28,7 @@ ht-degree: 94%
       + [4 - React 앱 빌드](./open-api/basic/4-react-app.md)
       + [5 - 유니버설 편집기 통합](./open-api/basic/5-universal-editor.md)
 + GraphQL {#graphql}
-   + [AEM Headless 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html){target=_blank}
+   + [AEM Headless 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ko){target=_blank}
    + [개요](./graphql/overview.md)
    + 빠른 설정 {#quick-setup}
       + [Cloud Service](./graphql/quick-setup/cloud-service.md)

@@ -42,7 +42,7 @@ Dynamic Media Classic은 고객이 리치 미디어 콘텐츠를 제작, 작성 
 - **비디오입니다.** 최종 비디오를 업로드하고 게시한 다음 점진적으로 구성 가능한 비디오 뷰어에 다운로드합니다.
 - **스마트 이미징** 기존 &quot;이미지 사전 설정&quot;과 함께 작동하여 클라이언트 브라우저 기능을 기반으로 이미지 형식, 크기 및 품질을 자동으로 최적화하여 이미지 전달 성능을 향상시키는 기술입니다.
 
-솔루션의 추가 기능을 알아보려면 [Dynamic Media Classic 설명서](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/introduction.html)를 참조하세요.
+솔루션의 추가 기능을 알아보려면 [Dynamic Media Classic 설명서](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/introduction.html?lang=ko)를 참조하세요.
 
 ## Dynamic Media Classic 사용자 인터페이스(UI)
 
@@ -72,4 +72,4 @@ _Dynamic Media Classic UI_
 >
 >업로드 시 자산을 자동으로 게시하려면 업로드 대화 상자에서 **업로드 후 게시** 확인란을 선택하십시오.
 
-[Dynamic Media Classic의 UI 탐색](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/navigation-basics.html)에 대해 자세히 알아보세요.
+[Dynamic Media Classic의 UI 탐색](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/navigation-basics.html?lang=ko)에 대해 자세히 알아보세요.
