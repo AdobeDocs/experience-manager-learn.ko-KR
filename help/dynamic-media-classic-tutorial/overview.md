@@ -8,9 +8,9 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 975b85af-ca6a-419e-ab2a-6e1781bfee4a
 duration: 173
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: c6213dd318ec4865375c57143af40dbe3f3990b1
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '867'
 ht-degree: 0%
 
 ---
@@ -40,9 +40,9 @@ Dynamic Media Classic은 고객이 리치 미디어 콘텐츠를 제작, 작성 
 
 - **Dynamic Imaging.** 실시간 편집, 서식 지정 및 크기 조정, 대화형 확대/축소 및 패닝, 색상 및 텍스처 관찰, 360도 회전, 이미지 템플릿 및 멀티미디어 뷰어에 대한 포괄적인 용어입니다.
 - **비디오입니다.** 최종 비디오를 업로드하고 게시한 다음 점진적으로 구성 가능한 비디오 뷰어에 다운로드합니다.
-- **스마트 이미징** Adobe Sensei AI 기능을 활용하고 기존 &quot;이미지 사전 설정&quot;과 함께 작동하는 기술로 클라이언트 브라우저 기능을 기반으로 이미지 형식, 크기 및 품질을 자동으로 최적화하여 이미지 제공 성능을 향상시킵니다.
+- **스마트 이미징** 기존 &quot;이미지 사전 설정&quot;과 함께 작동하여 클라이언트 브라우저 기능을 기반으로 이미지 형식, 크기 및 품질을 자동으로 최적화하여 이미지 전달 성능을 향상시키는 기술입니다.
 
-솔루션의 추가 기능을 알아보려면 [Dynamic Media Classic 설명서](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/introduction.html?lang=ko)를 참조하세요.
+솔루션의 추가 기능을 알아보려면 [Dynamic Media Classic 설명서](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/introduction.html)를 참조하세요.
 
 ## Dynamic Media Classic 사용자 인터페이스(UI)
 
@@ -64,12 +64,12 @@ _Dynamic Media Classic UI_
 
 >[!IMPORTANT]
 >
->각 자산 ID 옆에는 **Publish용으로 표시** 스위치가 있습니다. 토글이 켜져 있으면(녹색), 이는 자산이 게시용으로 표시되었음을 나타냅니다.
+>각 자산 ID 옆에는 **게시용으로 표시** 스위치가 있습니다. 토글이 켜져 있으면(녹색), 이는 자산이 게시용으로 표시되었음을 나타냅니다.
 
 ![이미지](assets/overview/overview-mark-for-publish.png)
 
 >[!TIP]
 >
->업로드 시 자산을 자동으로 게시하려면 [업로드] 대화 상자에서 **업로드 후 Publish** 확인란을 선택하십시오.
+>업로드 시 자산을 자동으로 게시하려면 업로드 대화 상자에서 **업로드 후 게시** 확인란을 선택하십시오.
 
-[Dynamic Media Classic의 UI 탐색](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/navigation-basics.html?lang=ko)에 대해 자세히 알아보세요.
+[Dynamic Media Classic의 UI 탐색](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/navigation-basics.html)에 대해 자세히 알아보세요.

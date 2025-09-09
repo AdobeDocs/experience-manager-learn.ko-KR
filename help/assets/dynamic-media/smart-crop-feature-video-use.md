@@ -1,6 +1,6 @@
 ---
 title: AEM Assets Dynamic Media에서 스마트 자르기 사용
-description: 스마트 자르기는 Adobe Sensei을 사용하여 반응형 디자인을 위한 콘텐츠 자르기에 드는 시간과 비용을 없애줍니다.
+description: 스마트 자르기를 사용하면 반응형 디자인을 위해 콘텐츠를 자르는 데 드는 시간과 비용이 많이 드는 작업을 수행할 필요가 없습니다.
 feature: Smart Crop, Image Profiles
 version: Experience Manager 6.4, Experience Manager 6.5
 topic: Content Management
@@ -10,18 +10,18 @@ jira: KT-784
 doc-type: Feature Video
 exl-id: 295bbfb6-241f-41c0-972d-d9688863cea1
 duration: 443
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: c6213dd318ec4865375c57143af40dbe3f3990b1
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '231'
 ht-degree: 0%
 
 ---
 
 # AEM Assets Dynamic Media에서 스마트 자르기 사용{#using-smart-crop-with-aem-assets-dynamic-media}
 
-스마트 자르기는 Adobe Sensei을 사용하여 반응형 디자인을 위한 콘텐츠 자르기에 드는 시간과 비용을 없애줍니다.
+스마트 자르기를 사용하면 반응형 디자인을 위해 콘텐츠를 자르는 데 드는 시간과 비용이 많이 드는 작업을 수행할 필요가 없습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/35624?quality=12&learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/21519?quality=12&learn=on)
 
 >[!NOTE]
 >
