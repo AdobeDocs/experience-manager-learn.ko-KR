@@ -256,7 +256,7 @@ A/B 테스트가 제대로 작동하는지 확인하려면 [WKND 지원 웹 사�
 
 ## 추가 리소스
 
-- [A/B 테스트 개요](https://experienceleague.adobe.com/en/docs/target/using/activities/abtest/test-ab)
-- [Adobe Experience Platform 웹 SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)
-- [데이터스트림 개요](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview)
-- [VEC(시각적 경험 작성기)](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/visual-experience-composer)
+- [A/B 테스트 개요](https://experienceleague.adobe.com/ko/docs/target/using/activities/abtest/test-ab)
+- [Adobe Experience Platform 웹 SDK](https://experienceleague.adobe.com/ko/docs/experience-platform/web-sdk/home)
+- [데이터스트림 개요](https://experienceleague.adobe.com/ko/docs/experience-platform/datastreams/overview)
+- [VEC(시각적 경험 작성기)](https://experienceleague.adobe.com/ko/docs/target/using/experiences/vec/visual-experience-composer)
