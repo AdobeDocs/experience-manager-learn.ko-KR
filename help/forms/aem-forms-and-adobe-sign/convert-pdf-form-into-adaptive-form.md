@@ -24,7 +24,7 @@ AEM Forms 자동 양식 전환 서비스는 PDF forms을 장치 친화적이고 
 
 다음 비디오에서는 자동 양식 전환 서비스를 사용하여 PDF 양식을 적응형 양식으로 전환하는 데 필요한 단계에 대해 설명합니다
 
->[!VIDEO](https://video.tv.adobe.com/v/39495?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327718?quality=12&learn=on&captions=kor)
 
 ## 다음 단계
 

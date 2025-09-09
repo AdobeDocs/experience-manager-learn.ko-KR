@@ -21,7 +21,7 @@ ht-degree: 0%
 
 스마트 자르기를 사용하면 반응형 디자인을 위해 콘텐츠를 자르는 데 드는 시간과 비용이 많이 드는 작업을 수행할 필요가 없습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/21519?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35624?quality=12&learn=on&captions=kor)
 
 >[!NOTE]
 >

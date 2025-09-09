@@ -22,7 +22,7 @@ ht-degree: 0%
 
 비디오용 Dynamic Media Smart Crop은 비디오의 관심 영역을 지능적으로 추적하여 모든 화면 크기에서 비디오가 가장 잘 보이도록 합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/37958?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326472?quality=12&learn=on&captions=kor)
 
 >[!NOTE]
 >
