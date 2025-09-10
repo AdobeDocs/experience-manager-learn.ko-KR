@@ -10,14 +10,14 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 duration: 430
-source-git-commit: c6213dd318ec4865375c57143af40dbe3f3990b1
+source-git-commit: a3d2a88232cae941647464be8e215a47c85bc0ab
 workflow-type: tm+mt
 source-wordcount: '930'
 ht-degree: 3%
 
 ---
 
-# 콘텐츠 조각 모델 정의
+# 콘텐츠 조각 모델 만들기
 
 이 장에서는 콘텐츠를 모델링하고 **콘텐츠 조각 모델**&#x200B;을(를) 사용하여 스키마를 구축하는 방법과 콘텐츠 조각 모델을 정의하는 다양한 데이터 유형에 대해 알아봅니다.
 
@@ -160,5 +160,5 @@ ht-degree: 3%
 
 ## 관련 설명서
 
-* [콘텐츠 조각 모델](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-models.html?lang=ko)
+* [콘텐츠 조각 모델](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-models.html)
 
