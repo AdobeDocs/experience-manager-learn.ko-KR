@@ -46,7 +46,7 @@ ht-degree: 2%
 먼저 필요한 메타 태그를 추가하여 React 앱을 범용 편집기 호환으로 식별합니다.
 
 1. React 앱에서 `public/index.html` 열기
-1. React 앱의 [ 섹션에서 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/getting-started)유니버설 편집기 메타 태그 및 CORS 스크립트`<head>`를 추가합니다.
+1. React 앱의 [ 섹션에서 ](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/getting-started)유니버설 편집기 메타 태그 및 CORS 스크립트`<head>`를 추가합니다.
 
    ```html
    <!DOCTYPE html>
