@@ -1,5 +1,5 @@
 ---
-title: Universal Editor를 사용하여 React 앱을 편집 가능하게 만들기 | Headless 튜토리얼 5부
+title: 범용 편집기로 React 앱 편집 | Headless 튜토리얼 5부
 description: 필요한 계기 및 구성을 추가하여 AEM 유니버설 편집기에서 React 앱을 편집할 수 있도록 만드는 방법을 알아봅니다.
 version: Experience Manager as a Cloud Service
 mini-toc-levels: 1
@@ -8,15 +8,15 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 duration: 800
-source-git-commit: c6213dd318ec4865375c57143af40dbe3f3990b1
+source-git-commit: da3bfa25a424e3176fb7d53189169515db225228
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '759'
 ht-degree: 2%
 
 ---
 
 
-# Universal Editor를 사용하여 React 앱을 편집할 수 있게 만들기
+# 범용 편집기로 React 앱 편집
 
 이 장에서는 AEM Universal Editor를 사용하여 [이전 챕터](./4-react-app.md)에 내장된 React 앱을 편집 가능하게 만드는 방법에 대해 알아봅니다. 범용 편집기를 사용하면 콘텐츠 작성자가 Headless 애플리케이션의 원활한 경험을 유지하면서 React 앱 환경의 컨텍스트 내에서 직접 콘텐츠를 편집할 수 있습니다.
 
@@ -46,7 +46,7 @@ ht-degree: 2%
 먼저 필요한 메타 태그를 추가하여 React 앱을 범용 편집기 호환으로 식별합니다.
 
 1. React 앱에서 `public/index.html` 열기
-1. React 앱의 [ 섹션에서 ](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/getting-started)유니버설 편집기 메타 태그 및 CORS 스크립트`<head>`를 추가합니다.
+1. React 앱의 [ 섹션에서 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/getting-started)유니버설 편집기 메타 태그 및 CORS 스크립트`<head>`를 추가합니다.
 
    ```html
    <!DOCTYPE html>
