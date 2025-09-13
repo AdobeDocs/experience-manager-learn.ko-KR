@@ -45,7 +45,7 @@ Adobe Experience Platform(AEP) 및 Adobe Target을 사용하여 사용자 행동
 
 - **매거진 페이지**: 사용자가 _3개 이상_&#x200B;개의 문서를 읽을 때 **매거진 리더**&#x200B;로 분류되고 매거진 페이지에서 개인화된 영웅 섹션을 봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3474001/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3474008/?learn=on&enablevpops&captions=kor)
 
 >[!TIP]
 >
