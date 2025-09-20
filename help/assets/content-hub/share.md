@@ -22,4 +22,4 @@ ht-degree: 77%
 
 AEM Assets Content Hub에서 팀원들과 자산 및 컬렉션을 공유하여 효과적인 팀워크와 안전한 자산 공유를 촉진하는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3474890/?learn=on&enablevpops=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3474926/?learn=on&enablevpops=on&captions=kor)

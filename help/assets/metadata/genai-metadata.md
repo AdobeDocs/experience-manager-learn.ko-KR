@@ -21,4 +21,4 @@ ht-degree: 0%
 
 AEM Assets as a Cloud Service이 Adobe GenAI를 사용하여 콘텐츠 관리 및 검색을 지원하는 에셋 메타데이터를 생성하고 강화하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3474891/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3474914/?learn=on&enablevpops&captions=kor)
