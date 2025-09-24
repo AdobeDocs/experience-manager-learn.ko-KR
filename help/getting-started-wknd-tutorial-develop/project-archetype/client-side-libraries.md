@@ -21,7 +21,7 @@ ht-degree: 100%
 
 # 클라이언트 라이브러리 및 프론트엔드 워크플로 {#client-side-libraries}
 
-클라이언트측 라이브러리 또는 clientlibs를 사용하여 Adobe Experience Manager(AEM) 사이트 구현을 위한 CSS와 JavaScript를 배포하고 관리하는 방법을 알아봅니다. 이 튜토리얼은 결합 해제된 [webpack](https://webpack.js.org/) 프로젝트인 [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) 모듈이 어떻게 엔드 투 엔드 빌드 프로세스에 통합될 수 있는지도 다룹니다.
+클라이언트측 라이브러리 또는 clientlibs를 사용하여 Adobe Experience Manager(AEM) 사이트 구현을 위한 CSS와 JavaScript를 배포하고 관리하는 방법을 알아봅니다. 이 튜토리얼은 결합 해제된 [webpack](https://webpack.js.org/) 프로젝트인 [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=ko) 모듈이 어떻게 엔드 투 엔드 빌드 프로세스에 통합될 수 있는지도 다룹니다.
 
 ## 사전 요구 사항 {#prerequisites}
 
@@ -82,7 +82,7 @@ ht-degree: 100%
 1. 체계적인 방식으로 서드파티 프레임워크에 대한 종속성 관리
 1. CSS/JS를 하나 또는 두 개의 요청으로 연결하여 클라이언트측 요청 수 최소화
 
-[ 클라이언트측 라이브러리 사용에 관한 더 많은 정보는 여기에서 찾을 수 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html)
+[ 클라이언트측 라이브러리 사용에 관한 더 많은 정보는 여기에서 찾을 수 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=ko)
 
 클라이언트측 라이브러리에는 몇 가지 제한이 있습니다. 가장 눈에 띄는 점은 Sass, LESS, TypeScript와 같은 인기 프론트엔드 언어에 대한 지원이 제한적이라는 것입니다. 튜토리얼에서는 **ui.frontend** 모듈이 이 문제를 해결하는 데 어떻게 도움이 되는지 살펴보겠습니다.
 
@@ -90,7 +90,7 @@ ht-degree: 100%
 
 ## 클라이언트측 라이브러리 구성 {#organization}
 
-다음으로 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)에 의해 생성된 clientlibs의 구성을 살펴보겠습니다.
+다음으로 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko)에 의해 생성된 clientlibs의 구성을 살펴보겠습니다.
 
 ![상위 수준 클라이언트 라이브러리 구성](./assets/client-side-libraries/high-level-clientlib-organization.png)
 
@@ -112,7 +112,7 @@ ht-degree: 100%
    | 이름 | 설명 | 메모 |
    |-------------------| ------------| ------|
    | `clientlib-base` | WKND 사이트가 작동하려면 기본 수준의 CSS 및 JavaScript 필요 | 핵심 구성 요소 클라이언트 라이브러리 임베드 |
-   | `clientlib-grid` | [레이아웃 모드](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html)가 작동하는 데 필요한 CSS 생성 | 여기에서 모바일/태블릿 중단점 구성 가능 |
+   | `clientlib-grid` | [레이아웃 모드](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html?lang=ko)가 작동하는 데 필요한 CSS 생성 | 여기에서 모바일/태블릿 중단점 구성 가능 |
    | `clientlib-site` | WKND 사이트에 대한 사이트별 테마 포함 | `ui.frontend` 모듈에 의해 생성 |
    | `clientlib-dependencies` | 모든 서드파티 종속성 임베드 | `ui.frontend` 모듈에 의해 생성 |
 
@@ -120,7 +120,7 @@ ht-degree: 100%
 
 ## 기본 스타일 업데이트 {#base-styles}
 
-다음으로 **[ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)** 모듈에 정의된 기본 스타일을 업데이트합니다. `ui.frontend` 모듈 내 파일은 사이트 테마와 모든 서드파티 종속성을 포함하는 `clientlib-site` 및 `clientlib-dependecies` 라이브러리를 생성합니다.
+다음으로 **[ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=ko)** 모듈에 정의된 기본 스타일을 업데이트합니다. `ui.frontend` 모듈 내 파일은 사이트 테마와 모든 서드파티 종속성을 포함하는 `clientlib-site` 및 `clientlib-dependecies` 라이브러리를 생성합니다.
 
 클라이언트측 라이브러리는 [Sass](https://sass-lang.com/) 또는 [TypeScript](https://www.typescriptlang.org/)와 같은 고급 언어를 지원하지 않습니다. [NPM](https://www.npmjs.com/) 및 [Webpack](https://webpack.js.org/)과 같은 프론트엔드 개발을 가속화하고 최적화하는 오픈소스 도구가 여러 개 있습니다. **ui.frontend** 모듈의 목표는 이러한 도구를 사용하여 대부분의 프론트엔드 소스 파일을 관리할 수 있게 하는 것입니다.
 
@@ -220,7 +220,7 @@ AEM Project Archetype은 이 통합을 자동으로 설정합니다. 다음으�
 
    >[!NOTE]
    >
-   >JS와 CSS를 최소화하는 `npm run prod` 프로필도 있습니다. 이는 Maven을 통해 webpack 빌드가 트리거될 때마다 발생하는 표준 컴파일입니다. [ui.frontend 모듈에 대한 상세 내용은 여기에서 확인](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)할 수 있습니다.
+   >JS와 CSS를 최소화하는 `npm run prod` 프로필도 있습니다. 이는 Maven을 통해 webpack 빌드가 트리거될 때마다 발생하는 표준 컴파일입니다. [ui.frontend 모듈에 대한 상세 내용은 여기에서 확인](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=ko)할 수 있습니다.
 
 1. `ui.frontend/dist/clientlib-site/site.css` 아래에서 `site.css` 파일을 검사합니다. 이 파일은 Sass 소스 파일을 기반으로 컴파일된 CSS입니다.
 
@@ -328,7 +328,7 @@ AEM Project Archetype은 이 통합을 자동으로 설정합니다. 다음으�
 
    >[!WARNING]
    >
-   >게시 측면에서는 클라이언트 라이브러리가 **/apps** 경로에서 제공되지 **않도록** 하는 것이 매우 중요합니다. 보안상의 이유로 이 경로는 [Dispatcher 필터 섹션](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#example-filter-section)을 사용하여 제한되어야 하기 때문입니다. 클라이언트 라이브러리의 [allowProxy 속성](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet)은 CSS와 JS가 **/etc.clientlibs**&#x200B;에서 제공되도록 보장합니다.
+   >게시 측면에서는 클라이언트 라이브러리가 **/apps** 경로에서 제공되지 **않도록** 하는 것이 매우 중요합니다. 보안상의 이유로 이 경로는 [Dispatcher 필터 섹션](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#example-filter-section)을 사용하여 제한되어야 하기 때문입니다. 클라이언트 라이브러리의 [allowProxy 속성](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=ko#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet)은 CSS와 JS가 **/etc.clientlibs**&#x200B;에서 제공되도록 보장합니다.
 
 ### 다음 단계 {#next-steps}
 

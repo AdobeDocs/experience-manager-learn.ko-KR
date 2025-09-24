@@ -79,7 +79,7 @@ _Java™ 8과 Java™ 11이 모두 시스템에 설치된 경우, VS Code 테스
 
 ## 단위 테스트 및 Adobe Cloud Manager {#unit-testing-and-adobe-cloud-manager}
 
-[Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)는 단위 테스트 실행과 [코드 커버리지 보고](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-quality-testing.html)를 CI/CD 파이프라인에 통합하여 AEM 코드의 단위 테스트 모범 사례를 장려 및 촉진하는 데 기여합니다.
+[Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=ko)는 단위 테스트 실행과 [코드 커버리지 보고](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-quality-testing.html?lang=ko)를 CI/CD 파이프라인에 통합하여 AEM 코드의 단위 테스트 모범 사례를 장려 및 촉진하는 데 기여합니다.
 
 단위 테스트 코드는 모든 코드 베이스에 적용하는 것이 좋지만 Cloud Manager를 사용할 때는 Cloud Manager에서 실행할 단위 테스트를 제공하여 코드 품질 테스트 및 보고 기능을 활용하는 것이 중요합니다.
 

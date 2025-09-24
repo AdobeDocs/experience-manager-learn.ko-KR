@@ -29,7 +29,7 @@ Adobe Experience Manager as a Cloud Service의 새로운 기능은? 최신 사�
 
 이 튜토리얼은 **AEM as a Cloud Service**&#x200B;와 함께 작동하도록 설계되었으며, **AEM 6.5 이상** 및 **AEM 6.4.2 이상** 버전과도 하위 호환됩니다.
 
-**[여기에서 튜토리얼을 확인하십시오!](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)**
+**[여기에서 튜토리얼을 확인하십시오!](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko)**
 
 ## AEM as a Cloud Service에 WKND 배포{#deploying-wknd-to-aem-as-a-cloud-service}
 

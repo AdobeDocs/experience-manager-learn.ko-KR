@@ -62,7 +62,7 @@ ht-degree: 100%
 
 ## 경험 조각으로 머리글 및 바닥글 업데이트 {#experience-fragments}
 
-헤더나 푸터와 같은 글로벌 콘텐츠를 만들 때 일반적인 관행은 [경험 조각](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html)을 사용하는 것입니다. 경험 조각을 사용하면 사용자가 여러 구성 요소를 결합하여 참조 가능한 단일 구성 요소를 만들 수 있습니다. 경험 조각은 다중 사이트 관리 및 [현지화](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html?lang=ko#localized-site-structure)를 지원한다는 장점이 있습니다.
+헤더나 푸터와 같은 글로벌 콘텐츠를 만들 때 일반적인 관행은 [경험 조각](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html?lang=ko)을 사용하는 것입니다. 경험 조각을 사용하면 사용자가 여러 구성 요소를 결합하여 참조 가능한 단일 구성 요소를 만들 수 있습니다. 경험 조각은 다중 사이트 관리 및 [현지화](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html?lang=ko#localized-site-structure)를 지원한다는 장점이 있습니다.
 
 사이트 템플릿이 머리글과 바닥글을 생성했습니다. 다음으로 목업과 일치하도록 경험 조각을 업데이트합니다. 아래의 비디오에서 안내된 단계를 따릅니다.
 

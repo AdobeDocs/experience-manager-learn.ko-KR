@@ -103,7 +103,7 @@ Byline 구성 요소의 구현에는 Byline 콘텐츠를 수집하는 대화 상
        sling:resourceSuperType="core/wcm/components/image/v2/image"/>
    ```
 
-   위의 XML 파일은 제목, 설명, 그룹을 포함한 구성 요소에 대한 정의를 제공합니다. `sling:resourceSuperType`은 [핵심 이미지 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html)인 `core/wcm/components/image/v2/image`를 가리킵니다.
+   위의 XML 파일은 제목, 설명, 그룹을 포함한 구성 요소에 대한 정의를 제공합니다. `sling:resourceSuperType`은 [핵심 이미지 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=ko)인 `core/wcm/components/image/v2/image`를 가리킵니다.
 
 ### HTL 스크립트 만들기 {#create-the-htl-script}
 
@@ -374,7 +374,7 @@ Byline Sling 모델은 AEM이 제공하는 여러 가지 Java™ API를 활용�
 
    `uber-jar`는 `classic` 프로필, 즉 `mvn clean install -PautoInstallSinglePackage -Pclassic`이 호출될 때만 포함됩니다. 다시 말씀드리지만 이 프로젝트만의 독특한 특징입니다. AEM Project Archetype에서 생성된 실제 프로젝트의 경우 지정된 AEM 버전이 6.5 또는 6.4이면 `uber-jar`가 기본값입니다.
 
-   [uber-jar](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html#experience-manager-api-dependencies)는 AEM 6.x에서 공개된 모든 공개 Java™ API를 포함합니다. 버전은 프로젝트 루트의 Parent Reactor POM인 `aem-guides-wknd/pom.xml`에서 유지 관리됩니다.
+   [uber-jar](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html?lang=ko#experience-manager-api-dependencies)는 AEM 6.x에서 공개된 모든 공개 Java™ API를 포함합니다. 버전은 프로젝트 루트의 Parent Reactor POM인 `aem-guides-wknd/pom.xml`에서 유지 관리됩니다.
 
 1. `core.wcm.components.core`에 대한 종속성을 찾습니다.
 

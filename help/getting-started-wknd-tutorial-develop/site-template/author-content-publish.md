@@ -60,7 +60,7 @@ ht-degree: 100%
 
 AEM 구성 요소는 웹 페이지의 작은 모듈식 빌딩 블록으로 생각할 수 있습니다. UI를 논리적인 덩어리나 구성 요소로 나누면 관리가 훨씬 쉬워집니다. 구성 요소를 재사용하려면 구성 요소가 구성 가능해야 합니다. 이는 작성자 대화 상자를 통해 수행됩니다.
 
-AEM은 프로덕션에 바로 사용할 수 있는 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 세트를 제공합니다. **핵심 구성 요소**&#x200B;는 [텍스트](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html) 및 [이미지](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) 등의 기본 요소부터 [슬라이드](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html)와 같은 복잡한 UI 요소까지 다양합니다.
+AEM은 프로덕션에 바로 사용할 수 있는 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko) 세트를 제공합니다. **핵심 구성 요소**&#x200B;는 [텍스트](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=ko) 및 [이미지](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=ko) 등의 기본 요소부터 [슬라이드](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=ko)와 같은 복잡한 UI 요소까지 다양합니다.
 
 다음으로 AEM 페이지 편집기를 사용하여 몇 가지 구성 요소를 작성합니다.
 
@@ -90,7 +90,7 @@ AEM은 프로덕션에 바로 사용할 수 있는 [핵심 구성 요소](https:
 
 1. 페이지에 **제목**, **탐색**, **검색** 등 고정된 구성 요소가 있는지 확인합니다. 이러한 영역은 페이지 템플릿의 일부로 구성되며 개별 페이지에서 수정할 수 없습니다. 관련 내용은 다음 챕터에서 더 자세히 살펴보겠습니다.
 
-다른 구성 요소도 자유롭게 시도해 보시기 바랍니다. 각 [핵심 구성 요소 관련 문서는 여기에서 확인](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)할 수 있습니다. [페이지 작성 관련 상세 비디오는 여기에서 확인](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/aem-sites-authoring-overview.html)할 수 있습니다.
+다른 구성 요소도 자유롭게 시도해 보시기 바랍니다. 각 [핵심 구성 요소 관련 문서는 여기에서 확인](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)할 수 있습니다. [페이지 작성 관련 상세 비디오는 여기에서 확인](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/aem-sites-authoring-overview.html?lang=ko)할 수 있습니다.
 
 ## 업데이트 게시 {#publish-updates}
 
@@ -156,9 +156,9 @@ AEM 환경은 **작성 서비스** 및 **게시 서비스** 간에 분할됩니�
 
    ![직접 게시](assets/author-content-publish/page-editor-publish.png)
 
-1. **AEM 게시 서비스**&#x200B;로 돌아가 변경 사항을 확인합니다. 즉시 업데이트를 확인하지는 **못할** 가능성이 큽니다. **AEM 게시 서비스**&#x200B;에 [Apache 웹 서버와 CDN을 통한 캐싱](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/caching.html)이 포함되어 있기 때문입니다. 기본적으로 HTML 콘텐츠는 약 5분 동안 캐시됩니다.
+1. **AEM 게시 서비스**&#x200B;로 돌아가 변경 사항을 확인합니다. 즉시 업데이트를 확인하지는 **못할** 가능성이 큽니다. **AEM 게시 서비스**&#x200B;에 [Apache 웹 서버와 CDN을 통한 캐싱](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/caching.html?lang=ko)이 포함되어 있기 때문입니다. 기본적으로 HTML 콘텐츠는 약 5분 동안 캐시됩니다.
 
-1. 테스트/디버깅 목적으로 캐시를 우회하려면 `?nocache=true`와 같은 쿼리 매개변수를 추가하기만 하면 됩니다. URL은 `https://publish-pYYYY-eXXXX.adobeaemcloud.com/content/wknd/en/article/hello-world.html?nocache=true`와 비슷합니다. 캐싱 전략 및 사용 가능한 구성에 대한 자세한 내용은 [여기에서 확인](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/overview.html)할 수 있습니다.
+1. 테스트/디버깅 목적으로 캐시를 우회하려면 `?nocache=true`와 같은 쿼리 매개변수를 추가하기만 하면 됩니다. URL은 `https://publish-pYYYY-eXXXX.adobeaemcloud.com/content/wknd/en/article/hello-world.html?nocache=true`와 비슷합니다. 캐싱 전략 및 사용 가능한 구성에 대한 자세한 내용은 [여기에서 확인](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/overview.html?lang=ko)할 수 있습니다.
 
 1. Cloud Manager에서 게시 서비스의 URL을 찾을 수도 있습니다. **Cloud Manager 프로그램** > **환경** > **환경**&#x200B;으로 이동합니다.
 

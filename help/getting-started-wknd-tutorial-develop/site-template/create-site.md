@@ -25,13 +25,13 @@ ht-degree: 100%
 
 ## 사전 요구 사항 {#prerequisites}
 
-이 챕터에 소개된 단계는 Adobe Experience Manager as a Cloud Service 환경에서 진행됩니다. AEM 환경에 대한 관리 액세스 권한이 있는지 확인하십시오. 이 튜토리얼을 완료할 때 [샌드박스 프로그램](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/sandbox-programs/introduction-sandbox-programs.html) 및 [개발 환경](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html)을 사용하는 것이 권장됩니다.
+이 챕터에 소개된 단계는 Adobe Experience Manager as a Cloud Service 환경에서 진행됩니다. AEM 환경에 대한 관리 액세스 권한이 있는지 확인하십시오. 이 튜토리얼을 완료할 때 [샌드박스 프로그램](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/sandbox-programs/introduction-sandbox-programs.html?lang=ko) 및 [개발 환경](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=ko)을 사용하는 것이 권장됩니다.
 
-[프로덕션 프로그램](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs.html) 환경 또한 이 튜토리얼에 사용할 수 있습니다. 다만 이 튜토리얼은 콘텐츠와 코드를 대상 AEM 환경에 배포하기 때문에 튜토리얼의 활동이 타깃 환경에서 수행되는 작업에 영향을 미치지 않도록 주의해야 합니다.
+[프로덕션 프로그램](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs.html?lang=ko) 환경 또한 이 튜토리얼에 사용할 수 있습니다. 다만 이 튜토리얼은 콘텐츠와 코드를 대상 AEM 환경에 배포하기 때문에 튜토리얼의 활동이 타깃 환경에서 수행되는 작업에 영향을 미치지 않도록 주의해야 합니다.
 
-[AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html)는 튜토리얼 중 일부에 사용될 수 있습니다. [Cloud Manager의 프론트엔드 파이프라인을 통한 테마 배포](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/theming.html) 등 이 튜토리얼에서 클라우드 서비스를 사용하는 부분은 AEM SDK에서 실행되지 않습니다.
+[AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=ko)는 튜토리얼 중 일부에 사용될 수 있습니다. [Cloud Manager의 프론트엔드 파이프라인을 통한 테마 배포](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/theming.html?lang=ko) 등 이 튜토리얼에서 클라우드 서비스를 사용하는 부분은 AEM SDK에서 실행되지 않습니다.
 
-자세한 내용은 [온보딩 문서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html)를 검토하시기 바랍니다.
+자세한 내용은 [온보딩 문서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=ko)를 검토하시기 바랍니다.
 
 ## 목표 {#objective}
 
@@ -76,7 +76,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
-> Experience Manager에 액세스하는 데 문제가 있습니까? [온보딩 문서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html) 검토
+> Experience Manager에 액세스하는 데 문제가 있습니까? [온보딩 문서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=ko) 검토
 
 ## 기본 사이트 템플릿 다운로드
 

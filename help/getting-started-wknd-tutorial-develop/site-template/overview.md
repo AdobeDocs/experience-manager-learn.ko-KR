@@ -31,7 +31,7 @@ ht-degree: 100%
 
 ## AEM as a Cloud Service 환경 {#environment}
 
-이 튜토리얼에서 다루는 단계는 Adobe Experience Manager as a Cloud Service 환경에서 진행됩니다. AEM 환경에 대한 관리 액세스 권한이 있는지 확인하십시오. 이 튜토리얼을 완료할 때 [샌드박스 프로그램](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/sandbox-programs/introduction-sandbox-programs.html) 및 [개발 환경](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html)을 사용하는 것이 권장됩니다.
+이 튜토리얼에서 다루는 단계는 Adobe Experience Manager as a Cloud Service 환경에서 진행됩니다. AEM 환경에 대한 관리 액세스 권한이 있는지 확인하십시오. 이 튜토리얼을 완료할 때 [샌드박스 프로그램](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/sandbox-programs/introduction-sandbox-programs.html?lang=ko) 및 [개발 환경](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=ko)을 사용하는 것이 권장됩니다.
 
 ## 다음 단계 {#next-steps}
 

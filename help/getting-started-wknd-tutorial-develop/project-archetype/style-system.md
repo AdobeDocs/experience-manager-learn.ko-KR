@@ -69,7 +69,7 @@ Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 �
 
 ## 빌드 결과물 {#what-build}
 
-이 챕터에서는 [스타일 시스템 기능](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html)을 사용하여 문서 페이지에 사용되는 **제목** 및 **텍스트** 구성 요소의 베리에이션을 만듭니다.
+이 챕터에서는 [스타일 시스템 기능](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html?lang=ko)을 사용하여 문서 페이지에 사용되는 **제목** 및 **텍스트** 구성 요소의 베리에이션을 만듭니다.
 
 ![제목에 사용 가능한 스타일](assets/style-system/styles-added-title.png)
 
@@ -77,15 +77,15 @@ Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 �
 
 ## 배경 {#background}
 
-[스타일 시스템](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html)을 사용하면 개발자와 템플릿 편집자가 구성 요소의 다양한 시각적 베리에이션을 만들 수 있습니다. 또한 작성자는 페이지를 구성할 때 어떤 스타일을 사용할지 결정할 수 있습니다. 이 튜토리얼의 나머지 부분에서는 스타일 시스템을 사용하여 로우코드 방식으로 핵심 구성 요소를 사용하면서 여러 가지 고유한 스타일을 구현합니다.
+[스타일 시스템](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=ko)을 사용하면 개발자와 템플릿 편집자가 구성 요소의 다양한 시각적 베리에이션을 만들 수 있습니다. 또한 작성자는 페이지를 구성할 때 어떤 스타일을 사용할지 결정할 수 있습니다. 이 튜토리얼의 나머지 부분에서는 스타일 시스템을 사용하여 로우코드 방식으로 핵심 구성 요소를 사용하면서 여러 가지 고유한 스타일을 구현합니다.
 
 스타일 시스템의 일반적인 아이디어는 작성자가 구성 요소의 모양을 다양한 스타일로 선택할 수 있다는 것입니다. &#39;스타일&#39;은 구성 요소의 바깥쪽 div에 삽입되는 추가 CSS 클래스에 의해 지원됩니다. 클라이언트 라이브러리에서는 이러한 스타일 클래스를 기반으로 CSS 규칙이 추가되어 구성 요소의 모양이 변경됩니다.
 
-[스타일 시스템에 대한 자세한 문서는 여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/style-system.html?lang=ko-kr)에서 확인할 수 있습니다. [스타일 시스템을 이해하는 데 도움이 되는 수준 높은 기술 비디오](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/style-system-technical-video-understand.html)도 있습니다.
+[스타일 시스템에 대한 자세한 문서는 여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/style-system.html?lang=ko-kr)에서 확인할 수 있습니다. [스타일 시스템을 이해하는 데 도움이 되는 수준 높은 기술 비디오](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/style-system-technical-video-understand.html?lang=ko)도 있습니다.
 
 ## 밑줄 스타일 - 제목 {#underline-style}
 
-[제목 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/title.html)는 `/apps/wknd/components/title`에서 **ui.apps** 모듈의 일부로 프로젝트에 프록시화되었습니다. 제목 요소(`H1`, `H2`, `H3`...)의 기본 스타일은 이미 **ui.frontend** 모듈에 구현되어 있습니다.
+[제목 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/title.html?lang=ko)는 `/apps/wknd/components/title`에서 **ui.apps** 모듈의 일부로 프로젝트에 프록시화되었습니다. 제목 요소(`H1`, `H2`, `H3`...)의 기본 스타일은 이미 **ui.frontend** 모듈에 구현되어 있습니다.
 
 [WKND 문서 디자인](assets/pages-templates/wknd-article-design.xd)에는 밑줄이 있는 제목 구성 요소에 대한 고유한 스타일이 포함되어 있습니다. 두 개의 구성 요소를 만들거나 구성 요소 대화 상자를 수정하는 대신, 스타일 시스템을 사용하면 작성자가 밑줄 스타일을 추가하는 옵션을 사용할 수 있습니다.
 
@@ -195,7 +195,7 @@ Experience Manager의 스타일 시스템을 사용하여 개별 스타일을 �
 
 ## 인용 블록 스타일 - 텍스트 {#text-component}
 
-그다음으로 비슷한 단계를 반복하여 [텍스트 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html)에 고유한 스타일을 적용합니다. 텍스트 구성 요소는 `/apps/wknd/components/text`에서 **ui.apps** 모듈의 일부로 프로젝트에 프록시화되었습니다. 단락 요소의 기본 스타일은 이미 **ui.frontend**&#x200B;에 구현되어 있습니다.
+그다음으로 비슷한 단계를 반복하여 [텍스트 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html?lang=ko)에 고유한 스타일을 적용합니다. 텍스트 구성 요소는 `/apps/wknd/components/text`에서 **ui.apps** 모듈의 일부로 프로젝트에 프록시화되었습니다. 단락 요소의 기본 스타일은 이미 **ui.frontend**&#x200B;에 구현되어 있습니다.
 
 [WKND 문서 디자인](assets/pages-templates/wknd-article-design.xd)에는 인용 블록이 있는 텍스트 구성 요소에 대한 고유한 스타일이 포함되어 있습니다.
 
