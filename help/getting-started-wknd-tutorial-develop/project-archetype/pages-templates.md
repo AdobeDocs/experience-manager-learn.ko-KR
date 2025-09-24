@@ -76,7 +76,7 @@ ht-degree: 100%
 
 일반적으로 새로운 웹 사이트를 계획하는 작업은 목업 및 정적인 디자인에서 시작합니다. [Adobe XD](https://helpx.adobe.com/kr/support/xd.html)는 사용자 경험을 빌드하는 디자인 도구입니다. 다음으로는 문서 페이지 템플릿의 구조를 계획하는 데 도움이 되는 UI 키트와 목업을 살펴보겠습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/30214?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36124?quality=12&learn=on&captions=kor)
 
 **[WKND 문서 디자인 파일](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-0.0.2/AEM_UI-kit-WKND-article-design.xd)을 다운로드**&#x200B;합니다.
 
@@ -96,7 +96,7 @@ ht-degree: 100%
 
 다음으로 목업의 구조와 일치하는 템플릿을 AEM에서 만듭니다. 이 작업은 AEM의 로컬 인스턴스에서 이루어집니다. 아래의 비디오에서 안내된 단계를 따릅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/330991?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36123?quality=12&learn=on&captions=kor)
 
 위 비디오에 대한 상위 수준 단계:
 
@@ -164,7 +164,7 @@ ht-degree: 100%
 
 AEM Project Archetype이 머리글과 바닥글을 생성했습니다. 다음으로 목업과 일치하도록 경험 조각을 업데이트합니다. 아래의 비디오에서 안내된 단계를 따릅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/330992?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447496?quality=12&learn=on&captions=kor)
 
 위 비디오에 대한 상위 수준 단계:
 
@@ -210,7 +210,7 @@ AEM Project Archetype이 머리글과 바닥글을 생성했습니다. 다음으
 
 다음으로, 문서 페이지 템플릿을 사용하여 페이지를 만듭니다. 사이트 목업에 맞게 페이지 콘텐츠를 작성합니다. 아래의 비디오에서 안내된 단계를 따릅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/330993?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3446449?quality=12&learn=on&captions=kor)
 
 위 비디오에 대한 상위 수준 단계:
 
