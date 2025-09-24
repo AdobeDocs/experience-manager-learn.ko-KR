@@ -6,7 +6,7 @@ sub-product: Experience Manager Sites
 topic: Content Management
 doc-type: Catalog
 exl-id: cde4ce7f-0afe-4632-8c1c-354586f296d5
-source-git-commit: 2b3ff1957f9da313b71a73492777700ddbd79854
+source-git-commit: 14ca2ba3d5b6c116e3fa8b437aa9ed90375ae468
 workflow-type: tm+mt
 source-wordcount: '786'
 ht-degree: 38%
@@ -19,7 +19,7 @@ ht-degree: 38%
 
 Adobe Experience Manager(AEM) Sites는 Adobe의 경험 관리 플랫폼으로, 웹 사이트, 모바일 앱 또는 기타 디지털 채널을 통해 디지털 경험을 작성, 관리 및 제공할 수 있습니다.
 
-## AEM Sites을 사용하여 경험을 전달하는 세 가지 방법
+## AEM Sites을 통해 경험을 전달하는 세 가지 방법
 
 AEM Sites는 경험을 빌드하고, 작성하고, 전달하는 세 가지 방법을 제공합니다. 웹 사이트를 구축하든, 에지 성능을 최적화하든, 헤드리스 앱을 강화하든 상관없이 AEM Sites은 프로젝트 요구 사항에 맞는 유연한 옵션을 제공합니다.
 
@@ -67,12 +67,12 @@ AEM Sites을 사용하여 빌드하기 위한 세 가지 접근 방식을 자세
   {description = Explore Edge Delivery Services with comprehensive guides. The Build, Publish, and Launch guides cover everything you need to get started with Edge Delivery Services.}
   {image = ./assets/edge-delivery-services.png}
   {target = _blank}
-* https://experienceleague.adobe.com/ko/docs/experience-manager-learn/getting-started-with-aem-headless/overview
+* https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/overview
   {title = Headless/API-First - Tutorials}
   {description = Learn how to build headless applications powered by AEM content. Tutorials cover frameworks like iOS, Android, and React—choose what fits your stack.}
   {image = ./assets/headless.png}
   {target = _self}
-* https://experienceleague.adobe.com/ko/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview
+* https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview
   {title = Traditional AEM - WKND Tutorial}
   {description = Learn how to build a sample AEM Sites project using the WKND tutorial. This guide walks you through project setup, Core Components, Editable Templates, client-side libraries, and component development.}
   {image = ./assets/aem-wknd-spa-editor-tutorial.png}
