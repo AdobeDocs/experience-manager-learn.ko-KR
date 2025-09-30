@@ -11,10 +11,10 @@ thumbnail: KT-11862.png
 last-substantial-update: 2023-02-15T00:00:00Z
 exl-id: 1d1bcb18-06cd-46fc-be2a-7a3627c1e2b2
 duration: 792
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 2f7e10680c7211da836e33fdd241cd7f5d633d5f
 workflow-type: tm+mt
-source-wordcount: '792'
-ht-degree: 0%
+source-wordcount: '788'
+ht-degree: 1%
 
 ---
 
@@ -49,9 +49,9 @@ $ mvn clean package
 
 ## AEM-RDE 플러그인을 사용하여 AEM 아티팩트 배포
 
-먼저 [최신 `aio` CLI 모듈이 설치되어 있는지 확인합니다](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools#aio-cli).
+먼저 [최신 `aio` CLI 모듈이 설치되어 있는지 확인합니다](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools#aio-cli).
 
-그런 다음 `aio aem:rde:install` 명령을 사용하여 다양한 AEM 아티팩트를 배포합니다. 이제 다음을 수행해야 합니다
+그런 다음 `aio aem:rde:install` 명령을 사용하여 다양한 AEM 아티팩트를 배포합니다.
 
 ### `all` 및 `dispatcher` 패키지 배포
 
@@ -71,8 +71,8 @@ $ aio aem:rde:install dispatcher/target/aem-guides-wknd.dispatcher.cloud-2.1.3-S
 
 `Hello World Component`을(를) 향상하고 RDE에 배포하겠습니다.
 
-1. `ui.apps/src/main/content/jcr_root/apps/wknd/components/helloworld/_cq_dialog/` 폴더에서 대화 상자 XML(`.content.xml`) 파일을 엽니다.
-1. 기존 `Text` 대화 상자 필드 뒤에 `Description` 텍스트 필드 추가
+1. `.content.xml` 폴더에서 대화 상자 XML(`ui.apps/src/main/content/jcr_root/apps/wknd/components/helloworld/_cq_dialog/`) 파일을 엽니다.
+1. 기존 `Description` 대화 상자 필드 뒤에 `Text` 텍스트 필드 추가
 
    ```xml
    ...
@@ -84,8 +84,8 @@ $ aio aem:rde:install dispatcher/target/aem-guides-wknd.dispatcher.cloud-2.1.3-S
    ...
    ```
 
-1. `ui.apps/src/main/content/jcr_root/apps/wknd/components/helloworld` 폴더에서 `helloworld.html` 파일 열기
-1. `Text` 속성의 기존 `<div>` 요소 뒤에 `Description` 속성을 렌더링합니다.
+1. `helloworld.html` 폴더에서 `ui.apps/src/main/content/jcr_root/apps/wknd/components/helloworld` 파일 열기
+1. `Description` 속성의 기존 `<div>` 요소 뒤에 `Text` 속성을 렌더링합니다.
 
    ```html
    ...
@@ -126,13 +126,13 @@ $ aio aem:rde:install dispatcher/target/aem-guides-wknd.dispatcher.cloud-2.1.3-S
 $ aio aem:rde:install --help
 ```
 
-플래그는 설명이 따로 필요하지 않으므로 `-s` 플래그는 작성자 또는 게시 서비스에만 배포를 타깃팅하는 데 유용합니다. `-p` 플래그와 함께 **content-file 또는 content-xml** 파일을 배포할 때 `-t` 플래그를 사용하여 AEM RDE 환경에서 대상 JCR 경로를 지정하십시오.
+플래그는 설명이 따로 필요하지 않으므로 `-s` 플래그는 작성자 또는 게시 서비스에만 배포를 타깃팅하는 데 유용합니다. `-t` 플래그와 함께 **content-file 또는 content-xml** 파일을 배포할 때 `-p` 플래그를 사용하여 AEM RDE 환경에서 대상 JCR 경로를 지정하십시오.
 
 ### OSGi 번들 배포
 
 OSGi 번들을 배포하는 방법에 대해 알아보려면 `HelloWorldModel` Java™ 클래스를 개선하고 RDE에 배포해 보겠습니다.
 
-1. `core/src/main/java/com/adobe/aem/guides/wknd/core/models` 폴더에서 `HelloWorldModel.java` 파일 열기
+1. `HelloWorldModel.java` 폴더에서 `core/src/main/java/com/adobe/aem/guides/wknd/core/models` 파일 열기
 1. 다음과 같이 `init()` 메서드를 업데이트합니다.
 
    ```java
@@ -204,11 +204,11 @@ Apache 또는 Dispatcher 구성 파일 **을(를) 개별적으로 배포할 수 
 
 ### YAML(구성) 파일 배포
 
-CDN, 유지 관리 작업, 로그 전달 및 AEM API 인증 구성 파일은 `install` 명령을 사용하여 RDE에 배포할 수 있습니다. 이러한 구성은 AEM 프로젝트의 `config` 폴더에서 YAML 파일로 관리됩니다. 자세한 내용은 [지원되는 구성](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/operations/config-pipeline#configurations)을 참조하십시오.
+CDN, 유지 관리 작업, 로그 전달 및 AEM API 인증 구성 파일은 `install` 명령을 사용하여 RDE에 배포할 수 있습니다. 이러한 구성은 AEM 프로젝트의 `config` 폴더에서 YAML 파일로 관리됩니다. 자세한 내용은 [지원되는 구성](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/config-pipeline#configurations)을 참조하십시오.
 
 구성 파일을 배포하는 방법에 대해 알아보려면 `cdn` 구성 파일을 개선하고 RDE에 배포해 보겠습니다.
 
-1. `config` 폴더에서 `cdn.yaml` 파일 열기
+1. `cdn.yaml` 폴더에서 `config` 파일 열기
 1. 원하는 구성을 업데이트합니다. 예를 들어 속도 제한을 초당 200개의 요청으로 업데이트합니다.
 
    ```yaml
@@ -273,8 +273,8 @@ RDE를 사용한 [개발/배포 수명 주기](./development-life-cycle.md)에 �
 
 ## 추가 리소스
 
-[RDE 명령 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments)
+[RDE 명령 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments)
 
 [AEM 빠른 개발 환경과의 상호 작용을 위한 Adobe I/O Runtime CLI 플러그인](https://github.com/adobe/aio-cli-plugin-aem-rde#aio-cli-plugin-aem-rde)
 
-[AEM 프로젝트 설정](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup)
+[AEM 프로젝트 설정](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup)
