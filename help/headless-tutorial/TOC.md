@@ -9,9 +9,9 @@ version: Experience Manager 6.5, Experience Manager as a Cloud Service
 jira: KT-2963
 index: y
 source-git-commit: c6213dd318ec4865375c57143af40dbe3f3990b1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '343'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -20,15 +20,15 @@ ht-degree: 94%
 
 + [AEM Headless 개요](./overview.md)
 + OpenAPI {#open-api}
-   + 기본 자습서 {#basic}
+   + 기본 튜토리얼 {#basic}
       + [개요](./open-api/basic/overview.md)
       + [1 - 콘텐츠 조각 모델 정의](./open-api/basic/1-content-fragment-models.md)
       + [2 - 콘텐츠 조각 작성](./open-api/basic/2-author-content-fragments.md)
-      + [3 - OpenAPI 탐색](./open-api/basic/3-explore-openapis.md)
-      + [4 - React 앱 빌드](./open-api/basic/4-react-app.md)
-      + [5 - 유니버설 편집기 통합](./open-api/basic/5-universal-editor.md)
+      + [3 - OpenAPI API 살펴보기](./open-api/basic/3-explore-openapis.md)
+      + [4 - React 앱 만들기](./open-api/basic/4-react-app.md)
+      + [5 - 범용 편집기 통합](./open-api/basic/5-universal-editor.md)
 + GraphQL {#graphql}
-   + [AEM Headless 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ko){target=_blank}
+   + [AEM Headless 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html){target=_blank}
    + [개요](./graphql/overview.md)
    + 빠른 설정 {#quick-setup}
       + [Cloud Service](./graphql/quick-setup/cloud-service.md)

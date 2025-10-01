@@ -8,9 +8,9 @@ version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
 source-git-commit: 16b106d88d51d68819470758abd536ad42b019db
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '461'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -65,13 +65,13 @@ ht-degree: 99%
    + [Content Credentials](./advanced/content-credentials.md)
    + [차단된 태그](./advanced/blocked-tags.md)
    + [아카이브 추출](./advanced/extract-archive.md)
-   + [권한 (CUG)](./advanced/closed-user-groups.md)
+   + [권한(CUG)](./advanced/closed-user-groups.md)
    + [메타데이터 기반 권한](./advanced/metadata-driven-permissions.md)
    + [비디오 닫힘 캡션](./advanced/video-closed-captions.md)
    + [워터마크](./advanced/watermarks.md)
 
 + 고급 메타데이터 관리{#metadata}
-   + [GenAI 메타데이터](metadata/genai-metadata.md)
+   + [생성형 AI 메타데이터](metadata/genai-metadata.md)
    + [계단식 메타데이터](metadata/cascade-metadata-feature-video-use.md)
    + [이미지용 스마트 태그](metadata/image-smart-tags.md)
    + [이미지용 사용자 정의 스마트 태그](metadata/custom-smart-tags.md)
@@ -118,7 +118,7 @@ ht-degree: 99%
    + [AEM 데스크탑 앱](./creative-workflows/aem-desktop-app.md)
    + [Adobe Asset Link](./creative-workflows/adobe-asset-link.md)
    + [Adobe Stock](./creative-workflows/adobe-stock.md)
-   + [피그마](./creative-workflows/figma.md)
+   + [Figma](./creative-workflows/figma.md)
 
 + Adobe Asset Link{#adobe-asset-link}
    + [설정](./adobe-asset-link/setup.md)
@@ -130,7 +130,7 @@ ht-degree: 99%
    + [버전 관리 및 댓글](./adobe-asset-link/file-versioning-and-comments.md)
    + [사본 배치](./adobe-asset-link/place-copy.md)
    + [연결된 장소](./adobe-asset-link/place-linked.md)
-   + [배치 전용 (FPO)](./adobe-asset-link/for-placement-only.md)
+   + [배치 전용(FPO)](./adobe-asset-link/for-placement-only.md)
    + [자산 검색](./adobe-asset-link/asset-search.md)
 
 + 콘텐츠 자동화{#content-automation}
@@ -204,4 +204,4 @@ ht-degree: 99%
 + 배포{#deployment}
    + [다중 테넌시 및 동시 개발](deployment/multitenancy-concurrent-article-understand.md)
 
-+ [Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/overview.html?lang=ko){target=_blank}
++ [Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/overview.html){target=_blank}
