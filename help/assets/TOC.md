@@ -7,9 +7,9 @@ sub-product: Experience Manager Assets
 version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: 16b106d88d51d68819470758abd536ad42b019db
-workflow-type: ht
-source-wordcount: '461'
+source-git-commit: 4d17b28ed67d7e5b03caa5fb57701ab7ddbcb77f
+workflow-type: tm+mt
+source-wordcount: '464'
 ht-degree: 100%
 
 ---
@@ -87,6 +87,7 @@ ht-degree: 100%
    + [Adobe Express를 사용한 이미지 변형](./content-hub/image-variants.md)
    + [컬렉션](./content-hub/collections.md)
    + [공유](./content-hub/share.md)
+   + [속성 기반 액세스 제어](./content-hub/attribute-based-access-control.md)
    + 사용 사례{#use-cases}
       + [자산 관리](./content-hub/use-cases/manage-assets.md)
 
@@ -204,4 +205,4 @@ ht-degree: 100%
 + 배포{#deployment}
    + [다중 테넌시 및 동시 개발](deployment/multitenancy-concurrent-article-understand.md)
 
-+ [Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/overview.html?lang=ko){target=_blank}
++ [Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/overview.html){target=_blank}

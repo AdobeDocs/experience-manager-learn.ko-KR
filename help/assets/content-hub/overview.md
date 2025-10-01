@@ -10,10 +10,10 @@ doc-type: Catalog
 duration: 60
 last-substantial-update: 2024-11-20T00:00:00Z
 exl-id: ea7b852e-b40d-44ef-ba63-69081e68456e
-source-git-commit: 16baf47ff27e119b8de11eb532647408cecabf4d
-workflow-type: ht
-source-wordcount: '567'
-ht-degree: 100%
+source-git-commit: 4d17b28ed67d7e5b03caa5fb57701ab7ddbcb77f
+workflow-type: tm+mt
+source-wordcount: '597'
+ht-degree: 96%
 
 ---
 
@@ -30,13 +30,14 @@ Adobe Experience Manager Assets as a Cloud Service Content Hub에서 자산을 �
 
 <!-- CARDS
 
-* https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/content-hub/set-up {title = Set up}
-* https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/content-hub/configure {title = Configure}
-* https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/content-hub/add-assets {title = Add assets}
-* https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/content-hub/download-assets {title = Download assets}
-* https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/content-hub/image-variants {title = Create image variants}
-* https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/content-hub/collections {title = Collections}
-* https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/content-hub/share {title = Sharing}
+* https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/set-up {title = Set up}
+* https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/configure {title = Configure}
+* https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/add-assets {title = Add assets}
+* https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/download-assets {title = Download assets}
+* https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/image-variants {title = Create image variants}
+* https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/collections {title = Collections}
+* https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/share {title = Sharing}
+* ./attribute-based-access-control.md {title = Attribute-based access control}
 
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
@@ -46,7 +47,7 @@ Adobe Experience Manager Assets as a Cloud Service Content Hub에서 자산을 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/content-hub/set-up" title="설정" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3433513/?format=jpeg&nocache=1744751768867" alt="설정"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3472918/?format=jpeg&nocache=1759339176339" alt="설정"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -69,7 +70,7 @@ Adobe Experience Manager Assets as a Cloud Service Content Hub에서 자산을 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/content-hub/configure" title="구성" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3439318/?format=jpeg&nocache=1744751768916&captions=kor" alt="구성"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3472917/?format=jpeg&nocache=1759339176369" alt="구성"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -92,7 +93,7 @@ Adobe Experience Manager Assets as a Cloud Service Content Hub에서 자산을 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/content-hub/add-assets" title="자산 추가" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3450289/?format=jpeg&nocache=1744751769952&captions=kor" alt="자산 추가"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3432980/?format=jpeg&nocache=1759339176806" alt="자산 추가"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -115,7 +116,7 @@ Adobe Experience Manager Assets as a Cloud Service Content Hub에서 자산을 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/content-hub/download-assets" title="자산 다운로드" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3433135/?format=jpeg&nocache=1744751768978" alt="자산 다운로드"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3433135/?format=jpeg&nocache=1759339176178" alt="자산 다운로드"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -138,7 +139,7 @@ Adobe Experience Manager Assets as a Cloud Service Content Hub에서 자산을 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/content-hub/image-variants" title="이미지 변형 만들기" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435003/?format=jpeg&nocache=1744751768877" alt="이미지 변형 만들기"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435003/?format=jpeg&nocache=1759339176189" alt="이미지 변형 만들기"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -161,7 +162,7 @@ Adobe Experience Manager Assets as a Cloud Service Content Hub에서 자산을 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/content-hub/collections" title="컬렉션" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3445307/?format=jpeg&nocache=1744751769136&captions=kor" alt="컬렉션"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435687/?format=jpeg&nocache=1759339176447" alt="컬렉션"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -184,7 +185,7 @@ Adobe Experience Manager Assets as a Cloud Service Content Hub에서 자산을 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/content-hub/share" title="공유" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3445362/?format=jpeg&nocache=1744751769933&captions=kor" alt="공유"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3474890/?format=jpeg&nocache=1759339176327" alt="공유"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -202,6 +203,29 @@ Adobe Experience Manager Assets as a Cloud Service Content Hub에서 자산을 �
             </div>
         </div>
     </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Attribute-based access control">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="./attribute-based-access-control.md" title="속성 기반 액세스 제어" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475413/?format=jpeg&nocache=1759339175804" alt="속성 기반 액세스 제어"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="./attribute-based-access-control.md" target="_blank" rel="referrer" title="속성 기반 액세스 제어">특성 기반 액세스 제어</a>
+                    </p>
+                    <p class="is-size-6">ABAC(속성 기반 액세스 제어)가 무엇인지와 이를 AEM Assets Content Hub에 맞게 구성하는 방법에 대해 알아봅니다.</p>
+                </div>
+                <a href="./attribute-based-access-control.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">시청하기</span>
+                </a>
+            </div>
+        </div>
+    </div>
 </div>
 <!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
 
@@ -213,7 +237,6 @@ Adobe Experience Manager Assets as a Cloud Service Content Hub에서 자산을 �
 <!-- CARDS
 * ./use-cases/manage-assets.md
 -->
-
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
 <div class="columns">
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="How to manage assets with AEM Assets Content Hub">
@@ -221,7 +244,7 @@ Adobe Experience Manager Assets as a Cloud Service Content Hub에서 자산을 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./use-cases/manage-assets.md" title="AEM Assets Content Hub를 사용하여 자산을 관리하는 방법" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3463063/?format=jpeg&nocache=1744751770120&captions=kor" alt="AEM Assets Content Hub를 사용하여 자산을 관리하는 방법"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3457638/?format=jpeg&nocache=1759339177153" alt="AEM Assets Content Hub를 사용하여 자산을 관리하는 방법"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -242,6 +265,7 @@ Adobe Experience Manager Assets as a Cloud Service Content Hub에서 자산을 �
 </div>
 <!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
 
+
 ## Content Hub 설명서
 
 AEM Assets Content Hub를 이해하고 최대로 활용하는 데 도움이 되는 Content Hub의 제품 설명서를 살펴봅니다. 이들 리소스는 해당 기능을 사용하는 방법에 대한 자세한 지침을 제공하여 효율적인 자산 관리에 필요한 도움을 줍니다.
@@ -249,9 +273,9 @@ AEM Assets Content Hub를 이해하고 최대로 활용하는 데 도움이 되�
 
 <!-- CARDS
 
-* https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/content-hub/product-overview {title=Content Hub documentation} {description=This documentation serves as your entry point to learn about Content Hub's key benefits, access methods, and how to provide feedback on the available options.}
-* https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/content-hub/deploy-content-hub {description=Learn how to deploy and activate Content Hub, providing users with various privileges, including asset uploads and administrator access.}
-* https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/content-hub/frequently-asked-questions-content-hub {title = Content Hub FAQs}
+* https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/product-overview {title=Content Hub documentation} {description=This documentation serves as your entry point to learn about Content Hub's key benefits, access methods, and how to provide feedback on the available options.}
+* https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/deploy-content-hub {description=Learn how to deploy and activate Content Hub, providing users with various privileges, including asset uploads and administrator access.}
+* https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/frequently-asked-questions-content-hub {title = Content Hub FAQs}
 
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
@@ -261,7 +285,7 @@ AEM Assets Content Hub를 이해하고 최대로 활용하는 데 도움이 되�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/content-hub/product-overview" title="Content Hub 설명서" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/content-hub/product-overview./media_1ef4ad26652365b140f1a06c31df8ebc6546850df.png?width=400&format=png&optimize=medium" alt="Content Hub 설명서"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3463712?format=jpeg&nocache=1759339177820" alt="Content Hub 설명서"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -284,7 +308,7 @@ AEM Assets Content Hub를 이해하고 최대로 활용하는 데 도움이 되�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/content-hub/deploy-content-hub" title="Content Hub 배포" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/content-hub/deploy-content-hub./media_13f7f053438556286beebdf1266b2d2bf18469b68.png?width=400&format=png&optimize=medium" alt="Content Hub 배포"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3469851?format=jpeg&nocache=1759339177807" alt="Content Hub 배포"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -307,7 +331,7 @@ AEM Assets Content Hub를 이해하고 최대로 활용하는 데 도움이 되�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/content-hub/frequently-asked-questions-content-hub" title="Content Hub FAQ" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/content-hub/frequently-asked-questions-content-hub./media_1fbf2b11f65863898a615041cf5cc7a79b2f8942d.png?width=400&format=png&optimize=medium" alt="Content Hub FAQ"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/frequently-asked-questions-content-hub./media_1fbf2b11f65863898a615041cf5cc7a79b2f8942d.png?width=400&format=png&optimize=medium" alt="Content Hub FAQ"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
