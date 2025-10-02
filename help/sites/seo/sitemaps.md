@@ -89,7 +89,7 @@ RewriteRule ^/(.*)$ /content/${CONTENT_FOLDER_NAME}/$1 [PT,L]
 
 ## 리소스
 
-+ [AEM 사이트 맵 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html?lang=en)
++ [AEM 사이트 맵 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html?lang=ko)
 + [Apache Sling 사이트 맵 설명서](https://github.com/apache/sling-org-apache-sling-sitemap#readme)
 + [Sitemap.org 사이트 맵 설명서](https://www.sitemaps.org/protocol.html)
 + [Sitemap.org 사이트 맵 인덱스 파일 설명서](https://www.sitemaps.org/protocol.html#index)
