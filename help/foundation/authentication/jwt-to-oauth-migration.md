@@ -22,4 +22,4 @@ ht-degree: 0%
 
 더 이상 사용되지 않는 JWT(서비스 계정) 자격 증명에서 다른 Adobe 솔루션을 새 OAuth 서버 간 자격 증명으로 마이그레이션하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3432960/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449245/?learn=on&captions=kor)
