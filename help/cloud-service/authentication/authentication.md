@@ -11,10 +11,10 @@ thumbnail: KT-10436.png
 last-substantial-update: 2022-10-14T00:00:00Z
 exl-id: 4dba6c09-2949-4153-a9bc-d660a740f8f7
 duration: 28
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 777d5514d0fe79948289e9e24fe20273e48972f8
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 3%
+source-wordcount: '133'
+ht-degree: 5%
 
 ---
 
@@ -22,13 +22,13 @@ ht-degree: 3%
 
 AEM as a Cloud Service은 여러 인증 옵션을 지원하며 서비스 유형에 따라 다릅니다.
 
-|                       | AEM Author | AEM 게시 |
+|                       | AEM Author | AEM 게시 인스턴스 |
 |-----------------------|:----------:|:-----------:|
-| [Adobe IMS](../accessing/overview.md) | ✔ | ✘ |
-| · [Adobe IMS를 통한 SAML 2.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=ko#how-to-set-up) | ✔ | ✘ |
+| [Adobe IMS](../accessing/overview.md) | ✔ | ✔ |
+| · [Adobe IMS를 통한 SAML 2.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html#how-to-set-up) | ✔ | ✔ |
 | [SAML 2.0](./saml-2-0.md) | ✘ | ✔ |
-| [SSO(Single Sign-On)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html?lang=ko#integration-with-an-idp) | ✘ | ✔ |
-| [OAuth](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html?lang=ko#integration-with-an-idp) | ✘ | ✔ |
+| [SSO(Single Sign-On)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html#integration-with-an-idp) | ✘ | ✔ |
+| [OAuth](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html#integration-with-an-idp) | ✘ | ✔ |
 | [토큰 인증](../../headless-tutorial/authentication/overview.md) | ✔ | ✔ |
 | 기본 인증 | ✘ | ✘ |
 
