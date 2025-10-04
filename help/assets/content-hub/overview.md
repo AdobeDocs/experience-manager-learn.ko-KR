@@ -208,7 +208,7 @@ Adobe Experience Manager Assets as a Cloud Service Content Hub에서 자산을 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./attribute-based-access-control.md" title="속성 기반 액세스 제어" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475413/?format=jpeg&nocache=1759339175804" alt="속성 기반 액세스 제어"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475421/?format=jpeg&nocache=1759339175804&captions=kor" alt="속성 기반 액세스 제어"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

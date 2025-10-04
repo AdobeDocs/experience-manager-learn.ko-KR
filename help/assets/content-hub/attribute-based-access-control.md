@@ -22,6 +22,6 @@ ht-degree: 1%
 
 속성 기반 액세스 제어(ABAC)를 사용하여 AEM Assets Content Hub에서 에셋에 대한 액세스를 설정하고 제어하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3475413/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475421/?learn=on&enablevpops&captions=kor)
 
 AEM Assets Content Hub 특성 기반 액세스 제어 설명서에서 [특성 기반 액세스 제어 정의 스프레드시트를 다운로드합니다](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/content-hub/attribute-based-access-control).
