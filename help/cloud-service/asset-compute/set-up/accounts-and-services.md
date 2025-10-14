@@ -29,7 +29,7 @@ ht-degree: 2%
    + 프로비저닝은 2~10일 정도 소요될 수 있습니다.
 + 클라우드 스토리지
    + [Azure Blob 저장소](https://azure.microsoft.com/en-us/services/storage/blobs/)
-   + 또는 [Amazon S3](https://aws.amazon.com/s3/?did=ft_card&amp;trk=ft_card)
+   + 또는 [Amazon S3](https://aws.amazon.com/s3/?did=ft_card&trk=ft_card)
 
 >[!WARNING]
 >
@@ -84,7 +84,7 @@ _Azure Blob 저장소를 프로비전하는 클릭스루(오디오 없음)_
 
 ### Amazon{#amazon-s3}
 
-이 자습서를 완료하려면 [Microsoft Azure Blob 저장소](#azure-blob-storage)를 사용하는 것이 좋지만 [Amazon S3](https://aws.amazon.com/s3/?did=ft_card&amp;trk=ft_card)도 사용할 수 있습니다.
+이 자습서를 완료하려면 [Microsoft Azure Blob 저장소](#azure-blob-storage)를 사용하는 것이 좋지만 [Amazon S3](https://aws.amazon.com/s3/?did=ft_card&trk=ft_card)도 사용할 수 있습니다.
 
 Amazon S3 저장소를 사용하는 경우 [프로젝트의 환경 변수를 구성](../develop/environment-variables.md#amazon-s3)할 때 Amazon S3 클라우드 저장소 자격 증명을 지정하십시오.
 

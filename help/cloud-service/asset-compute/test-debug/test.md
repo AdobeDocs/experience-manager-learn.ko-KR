@@ -85,7 +85,7 @@ Asset Compute 프로젝트의 테스트 구조는 다음과 같습니다.
    + [Docker 데스크톱](../set-up/development-environment.md#docker) 및 지원되는 Docker 이미지가 설치 및 시작되었는지 확인
    + 실행 중인 개발 도구 인스턴스 종료
 
-![테스트 - 성공 ](./assets/test/success-parameterized/result.png)
+![테스트 - 성공 &#x200B;](./assets/test/success-parameterized/result.png)
 
 ## 오류 검사 테스트 사례 작성
 

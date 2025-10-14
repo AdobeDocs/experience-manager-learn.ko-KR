@@ -66,7 +66,7 @@ $ lcp --proxyUrl https://publish-p<PROGRAM_ID>-e<ENVIRONMENT_ID>.adobeaemcloud.c
 
 React 앱을 다운로드하려면:
 
-1. [ 태그의 ](https://github.com/adobe/aem-tutorials)Github.com[`headless_open-api_basic`에서 샘플 WKND OpenAPI React 앱을 복제합니다](https://github.com/adobe/aem-tutorials/tree/headless_open-api_basic).
+1. [&#x200B; 태그의 &#x200B;](https://github.com/adobe/aem-tutorials)Github.com[`headless_open-api_basic`에서 샘플 WKND OpenAPI React 앱을 복제합니다](https://github.com/adobe/aem-tutorials/tree/headless_open-api_basic).
 
    ```shell
    $ cd ~/Code

@@ -91,6 +91,6 @@ AEM Forms 데이터 통합은 [양식 데이터 모델](https://experienceleague
 완료된 Swagger 파일은 [여기](assets/geonames-swagger-files.zip)에서 다운로드할 수 있습니다.
 Swagger 파일은 다음 REST API를 설명합니다
 * [모든 국가 가져오기](https://secure.geonames.org/countryInfoJSON?username=yourusername)
-* [Geoname 개체의 하위 항목 가져오기](https://secure.geonames.org/children?formatted=true&amp;geonameId=6252001&amp;username=yourusername)
+* [Geoname 개체의 하위 항목 가져오기](https://secure.geonames.org/children?formatted=true&geonameId=6252001&username=yourusername)
 
 완료된 [양식 데이터 모델은 여기에서 다운로드할 수 있습니다](assets/geonames-api-form-data-model.zip)

@@ -106,7 +106,7 @@ Dispatcher 모듈은 호스팅 Apache 서버가 제공하는 기능을 활용합
 
 Dispatcher을 더 자세히 이해하기 위해 간단한 샘플 URL의 구조를 다시 살펴보겠습니다.  아래 예를 살펴보겠습니다.
 
-`http://domain.com/path/to/resource/pagename.selectors.html/path/suffix.ext?parameter=value&amp;otherparameter=value#fragment`
+`http://domain.com/path/to/resource/pagename.selectors.html/path/suffix.ext?parameter=value&otherparameter=value#fragment`
 
 * `http`은(는) 프로토콜을 나타냅니다.
 

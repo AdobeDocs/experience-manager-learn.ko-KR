@@ -31,7 +31,7 @@ ht-degree: 0%
    * [AEM 6.4에서 SSL을 사용하기 위한 공식 설명서](https://helpx.adobe.com/kr/experience-manager/6-4/sites/administering/using/ssl-by-default.html)
 
 * Salesforce 계정이 있어야 합니다.
-* 연결된 앱을 만들어야 합니다. 앱을 만들기 위한 공식 설명서 양식 Salesforce은 [여기](https://help.salesforce.com/articleView?id=connected_app_create.htm&amp;type=0)에 나열되어 있습니다.
+* 연결된 앱을 만들어야 합니다. 앱을 만들기 위한 공식 설명서 양식 Salesforce은 [여기](https://help.salesforce.com/articleView?id=connected_app_create.htm&type=0)에 나열되어 있습니다.
 * 앱에 적절한 OAuth 범위를 제공합니다(테스트 목적으로 사용 가능한 모든 OAuth 범위를 선택함).
 * 콜백 URL을 제공합니다. 내 경우 콜백 URL은
 

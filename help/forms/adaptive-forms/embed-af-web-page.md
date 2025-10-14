@@ -26,7 +26,7 @@ ht-degree: 29%
 최상의 사전 요구 사항, 모범 사례 등은 [설명서](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-external-web-page.html?lang=ko)를 참조하세요.
 >[!VIDEO](https://video.tv.adobe.com/v/3418456?quality=12&learn=on&captions=kor)
 
-[ 비디오에 사용된 샘플 파일은 ](assets/embedding-af-web-page.zip)에서 다운로드할 수 있습니다.
+[&#x200B; 비디오에 사용된 샘플 파일은 &#x200B;](assets/embedding-af-web-page.zip)에서 다운로드할 수 있습니다.
 
 다음은 적응형 양식을 가져오고 클래스 이름 **right**&#x200B;로 식별된 컨테이너에 양식을 임베드하는 데 사용되는 코드입니다.
 

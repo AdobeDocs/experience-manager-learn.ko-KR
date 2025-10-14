@@ -29,7 +29,7 @@ AEM Forms은 다음과 같은 포털 구성 요소를 즉시 제공합니다.
 
 ## Forms 포털 구성 요소 활성화
 
-IntelliJ를 시작하고 [ 이전 단계에서 만든 BankingApplication 프로젝트를 엽니다.](./getting-started.md) ui.apps->src->main->content->jcr_root->apps.bankingapplication->구성 요소를 확장합니다.
+IntelliJ를 시작하고 [&#x200B; 이전 단계에서 만든 BankingApplication 프로젝트를 엽니다.](./getting-started.md) ui.apps->src->main->content->jcr_root->apps.bankingapplication->구성 요소를 확장합니다.
 
 Adobe Experience Manager(AEM) 사이트에서 핵심 구성 요소(기본 포털 구성 요소 포함)를 사용하려면 프록시 구성 요소를 만들어 사이트에 맞게 활성화해야 합니다.
 새로 만든 프록시 구성 요소는 기본 양식 구성 요소를 가리켜야 합니다. 이렇게 하면 구성 요소로부터 모든 것을 상속받을 수 있습니다. 이 작업은 프록시 구성 요소의 content.xml에서 resourceSuperType을 변경하여 수행합니다. content.xml에서 제목과 구성 요소 그룹도 지정합니다.

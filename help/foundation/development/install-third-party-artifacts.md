@@ -35,9 +35,9 @@ AEM 프로젝트를 빌드하고 배포할 때 공용 Maven 저장소에서 *사
 
 예:
 
-- [AEM WCM 핵심 구성 요소](https://github.com/adobe/aem-core-wcm-components) **번들**&#x200B;이(가) [WKND 프로젝트의 ](https://github.com/adobe/aem-guides-wknd/blob/main/pom.xml#L747-L753) `pom.xml` 파일에 종속성으로 추가되었습니다. 여기서 `provided` 범위는 AEM 런타임에서 AEM WCM 핵심 구성 요소 번들을 제공할 때 사용됩니다. AEM 런타임에서 번들을 제공하지 않으면 `compile` 범위를 사용하게 되며 기본 범위입니다.
+- [AEM WCM 핵심 구성 요소](https://github.com/adobe/aem-core-wcm-components) **번들**&#x200B;이(가) [WKND 프로젝트의 &#x200B;](https://github.com/adobe/aem-guides-wknd/blob/main/pom.xml#L747-L753) `pom.xml` 파일에 종속성으로 추가되었습니다. 여기서 `provided` 범위는 AEM 런타임에서 AEM WCM 핵심 구성 요소 번들을 제공할 때 사용됩니다. AEM 런타임에서 번들을 제공하지 않으면 `compile` 범위를 사용하게 되며 기본 범위입니다.
 
-- [WKND 공유](https://github.com/adobe/aem-guides-wknd-shared) **패키지**&#x200B;가 [WKND 프로젝트의 ](https://github.com/adobe/aem-guides-wknd/blob/main/pom.xml#L767-L773) `pom.xml` 파일에 종속성으로 추가되었습니다.
+- [WKND 공유](https://github.com/adobe/aem-guides-wknd-shared) **패키지**&#x200B;가 [WKND 프로젝트의 &#x200B;](https://github.com/adobe/aem-guides-wknd/blob/main/pom.xml#L767-L773) `pom.xml` 파일에 종속성으로 추가되었습니다.
 
 
 

@@ -67,7 +67,7 @@ AEM Publish CDN은 TTL(time-to-live) 기반입니다. 즉, 캐시 수명은 `Cac
 
 #### 기본 캐시 수명
 
-HTTP 응답이 AEM Dispatcher 캐싱 [위의 한정자 ](#when-are-http-requestsresponses-cached)에 적격인 경우, 사용자 지정 구성이 없으면 기본값은 다음과 같습니다.
+HTTP 응답이 AEM Dispatcher 캐싱 [위의 한정자 &#x200B;](#when-are-http-requestsresponses-cached)에 적격인 경우, 사용자 지정 구성이 없으면 기본값은 다음과 같습니다.
 
 | 컨텐츠 유형 | 기본 CDN 캐시 수명 |
 |:------------ |:---------- |
@@ -127,7 +127,7 @@ AEM Dispatcher은 다음 접근 방식을 사용하여 HTTP 응답을 캐시합�
 
 #### 기본 캐시 수명
 
-HTTP 응답이 AEM Dispatcher 캐싱 [위의 한정자 ](#when-are-http-requestsresponses-cached-1)에 적격인 경우, 사용자 지정 구성이 없으면 기본값은 다음과 같습니다.
+HTTP 응답이 AEM Dispatcher 캐싱 [위의 한정자 &#x200B;](#when-are-http-requestsresponses-cached-1)에 적격인 경우, 사용자 지정 구성이 없으면 기본값은 다음과 같습니다.
 
 | 컨텐츠 유형 | 기본 CDN 캐시 수명 |
 |:------------ |:---------- |

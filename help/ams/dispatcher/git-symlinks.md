@@ -116,7 +116,7 @@ lrwxrwxrwx. 1 root root 35 Oct 13 21:38 aem_flush.vhost -> ../available_vhosts/a
 > <br/>부적절한 권한:
 > ![권한으로 인해 실패한 명령을 표시하는 Windows 명령 프롬프트 그림](./assets/git-symlinks/windows-mklink-underpriv.png)
 > <br/>적절한 권한:
-> ![관리자 ](./assets/git-symlinks/windows-mklink-properpriv.png)(으)로 실행된 Windows 명령 프롬프트 그림
+> ![관리자 &#x200B;](./assets/git-symlinks/windows-mklink-properpriv.png)(으)로 실행된 Windows 명령 프롬프트 그림
 
 다음은 링크를 만드는 명령입니다.
 

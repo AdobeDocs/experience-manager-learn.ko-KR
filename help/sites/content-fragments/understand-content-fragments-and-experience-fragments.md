@@ -131,7 +131,7 @@ Adobe Experience Manager의 콘텐츠 조각 및 경험 조각 은 표면적으�
 </td>
 </tr><tr><td><strong>설명서</strong></td>
 <td><ul>
-<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=ko&amp;topic=/experience-manager/6-5/assets/morehelp/content-fragments.ug.js" target="_blank">AEM 콘텐츠 조각 사용 안내서</a></li>
+<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=ko&topic=/experience-manager/6-5/assets/morehelp/content-fragments.ug.js" target="_blank">AEM 콘텐츠 조각 사용 안내서</a></li>
 <li><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/content-fragments-feature-video-use.html?lang=ko" target="_blank">AEM에서 컨텐츠 조각 사용</a></li>
 </ul>
 </td>
@@ -172,7 +172,7 @@ Adobe Experience Manager의 콘텐츠 조각 및 경험 조각 은 표면적으�
 
 ## 콘텐츠 조각 지원 리소스
 
-+ [콘텐츠 조각 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=ko&amp;topic=/experience-manager/6-5/assets/morehelp/content-fragments.ug.js)
++ [콘텐츠 조각 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=ko&topic=/experience-manager/6-5/assets/morehelp/content-fragments.ug.js)
 + [Adobe Experience Manager as a Headless CMS 소개](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=ko)
 + [AEM에서 콘텐츠 조각 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/content-fragments-feature-video-use.html?lang=ko)
 + [AEM WCM 핵심 구성 요소의 콘텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=ko)

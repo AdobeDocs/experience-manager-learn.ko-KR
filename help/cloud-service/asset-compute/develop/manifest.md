@@ -28,7 +28,7 @@ Asset Compute 프로젝트의 루트에 있는 `manifest.yml`은(는) 배포할 
 
 작업자는 `actions` 아래에 Adobe I/O Runtime 작업 항목으로 정의되어 있으며 일련의 구성으로 구성되어 있습니다.
 
-다른 Adobe I/O 통합에 액세스하는 작업자는 `annotations -> require-adobe-auth` 속성을 `true`(으)로 설정해야 합니다. 이 [은(는) ](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html?lang=ko#access-adobe-apis) 개체를 통해 작업자의 Adobe I/O 자격 증명`params.auth`을(를) 노출합니다. 이 작업은 일반적으로 작업자가 Adobe Photoshop 또는 Lightroom API와 같은 Adobe I/O API를 호출할 때 필요하며 작업자별로 전환할 수 있습니다.
+다른 Adobe I/O 통합에 액세스하는 작업자는 `annotations -> require-adobe-auth` 속성을 `true`(으)로 설정해야 합니다. 이 [은(는) &#x200B;](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html?lang=ko#access-adobe-apis) 개체를 통해 작업자의 Adobe I/O 자격 증명`params.auth`을(를) 노출합니다. 이 작업은 일반적으로 작업자가 Adobe Photoshop 또는 Lightroom API와 같은 Adobe I/O API를 호출할 때 필요하며 작업자별로 전환할 수 있습니다.
 
 1. 자동 생성된 작업자 `manifest.yml`을(를) 열고 검토합니다. 여러 Asset Compute 작업자가 포함된 프로젝트는 `actions` 배열에서 각 작업자에 대한 항목을 정의해야 합니다.
 

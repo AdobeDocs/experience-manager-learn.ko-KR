@@ -28,7 +28,7 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/21475?quality=12&learn=on)
 
-* 사용된 [[!DNL oak-run.jar]](https://repository.apache.org/service/local/artifact/maven/redirect?r=releases&amp;g=org.apache.jackrabbit&amp;a=oak-run&amp;v=1.8.0)의 버전은 AEM 인스턴스에 사용된 Oak 버전과 일치해야 합니다.
+* 사용된 [[!DNL oak-run.jar]](https://repository.apache.org/service/local/artifact/maven/redirect?r=releases&g=org.apache.jackrabbit&a=oak-run&v=1.8.0)의 버전은 AEM 인스턴스에 사용된 Oak 버전과 일치해야 합니다.
 * [!DNL oak-run.jar]을(를) 사용하여 인덱스를 관리하면 다양한 플래그가 있는 **[!DNL index]** 명령을 사용하여 다양한 작업을 지원합니다.
 
    * `java -jar oak-run*.jar index ...`

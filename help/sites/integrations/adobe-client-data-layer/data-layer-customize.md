@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # AEM 구성 요소를 사용하여 Adobe 클라이언트 데이터 레이어 사용자 지정 {#customize-data-layer}
 
-사용자 지정 AEM 구성 요소의 콘텐츠를 사용하여 Adobe 클라이언트 데이터 레이어를 사용자 지정하는 방법에 대해 알아봅니다. [AEM 핵심 구성 요소에서 제공하는 API를 사용하여 ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/extending.html?lang=ko)을(를) 확장하고 데이터 레이어를 사용자 지정하는 방법을 알아봅니다.
+사용자 지정 AEM 구성 요소의 콘텐츠를 사용하여 Adobe 클라이언트 데이터 레이어를 사용자 지정하는 방법에 대해 알아봅니다. [AEM 핵심 구성 요소에서 제공하는 API를 사용하여 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/extending.html?lang=ko)을(를) 확장하고 데이터 레이어를 사용자 지정하는 방법을 알아봅니다.
 
 ## 빌드할 항목
 

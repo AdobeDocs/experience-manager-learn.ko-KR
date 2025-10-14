@@ -46,7 +46,7 @@ ht-degree: 2%
 먼저 필요한 메타 태그를 추가하여 React 앱을 범용 편집기 호환으로 식별합니다.
 
 1. React 앱에서 `public/index.html` 열기
-1. React 앱의 [ 섹션에서 ](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/getting-started)유니버설 편집기 메타 태그 및 CORS 스크립트`<head>`를 추가합니다.
+1. React 앱의 [&#x200B; 섹션에서 &#x200B;](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/getting-started)유니버설 편집기 메타 태그 및 CORS 스크립트`<head>`를 추가합니다.
 
    ```html
    <!DOCTYPE html>
@@ -88,7 +88,7 @@ ht-degree: 2%
 이제 Teams 구성 요소를 편집할 수 있도록 유니버설 편집기 속성을 추가하십시오.
 
 1. `src/components/Teams.js`를 엽니다.
-1. `Team`유니버설 편집기 데이터 특성[을 포함하도록 ](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/attributes-types) 구성 요소 업데이트:
+1. `Team`유니버설 편집기 데이터 특성[을 포함하도록 &#x200B;](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/attributes-types) 구성 요소 업데이트:
 
    `data-aue-resource` 특성을 설정할 때 OpenAPI API를 사용하여 AEM 콘텐츠 조각 게재에서 반환된 콘텐츠 조각에 대한 AEM 경로가 콘텐츠 조각 변형에 대한 하위 경로와 함께 포스트픽스되는지 확인하십시오(이 경우 `/jcr:content/data/master`).
 
@@ -374,4 +374,4 @@ Universal Editor는 편집 기능이 활성화된 React 앱을 로드해야 합�
 
 축하합니다! React 앱에 유니버설 편집기를 통합했습니다. 이제 콘텐츠 작성자는 React 앱 인터페이스 내에서 콘텐츠 조각을 직접 편집할 수 있으므로 Headless 아키텍처의 이점을 유지하면서 원활한 작성 경험을 제공할 수 있습니다.
 
-`main`GitHub.com 저장소[의 ](https://github.com/adobe/aem-tutorials/tree/main) 분기에서 이 자습서의 최종 소스 코드를 항상 가져올 수 있습니다.
+`main`GitHub.com 저장소[의 &#x200B;](https://github.com/adobe/aem-tutorials/tree/main) 분기에서 이 자습서의 최종 소스 코드를 항상 가져올 수 있습니다.

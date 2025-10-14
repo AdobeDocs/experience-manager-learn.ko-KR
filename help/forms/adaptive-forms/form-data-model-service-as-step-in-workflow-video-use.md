@@ -37,5 +37,5 @@ ht-degree: 0%
    * 제출 시 워크플로우를 트리거하는 적응형 양식입니다.
 * [MortgageApplicationForm](http://localhost:4502/content/dam/formsanddocuments/loanapplication/jcr:content?wcmmode=disabled)을 엽니다. 세부 사항을 입력하고 제출하십시오. 양식 제출 시 [loanapplication workflow](http://http://localhost:4502/editor.html/conf/global/settings/workflow/models/LoanApplication2.html)이(가) 트리거됩니다.
 
-![ 워크플로 ](assets/fdm-as-service-step-workflow.PNG).
+![&#x200B; 워크플로 &#x200B;](assets/fdm-as-service-step-workflow.PNG).
 크레딧 점수가 500점 이상인 경우 워크플로우는 Or 분할 구성 요소를 사용하여 애플리케이션을 관리자로 라우팅합니다. 신용 점수가 500점 미만인 경우 지원서가 cavery로 라우팅됩니다.

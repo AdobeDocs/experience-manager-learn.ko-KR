@@ -26,7 +26,7 @@ AEM의 [OpenAPI를 통한 AEM 콘텐츠 조각 배달](https://developer.adobe.c
 
 다음을 확인하십시오.
 
-* `https://publish-<PROGRAM_ID>-e<ENVIRONMENT_ID >.adobeaemcloud.com/`콘텐츠 조각이 [에 게시되는 AEM Publish 서비스(예: ](./2-author-content-fragments.md#publish-content-fragments))의 호스트 이름입니다. AEM 미리보기 서비스를 게시하는 경우 해당 호스트 이름을 사용할 수 있습니다(예: `https://preview-<PROGRAM_ID>-e<ENVIRONMENT_ID>.adobeaemcloud.com/`).
+* `https://publish-<PROGRAM_ID>-e<ENVIRONMENT_ID >.adobeaemcloud.com/`콘텐츠 조각이 [에 게시되는 AEM Publish 서비스(예: &#x200B;](./2-author-content-fragments.md#publish-content-fragments))의 호스트 이름입니다. AEM 미리보기 서비스를 게시하는 경우 해당 호스트 이름을 사용할 수 있습니다(예: `https://preview-<PROGRAM_ID>-e<ENVIRONMENT_ID>.adobeaemcloud.com/`).
 
 ## 목표 {#objectives}
 

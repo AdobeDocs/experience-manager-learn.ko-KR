@@ -35,7 +35,7 @@ AEM(Adobe Experience Manager)은 AEM as a Cloud Service SDK의 QuickStart Jar로
 
 Experience Manager은 Java™ 애플리케이션이므로 개발 도구를 지원하려면 Oracle Java™ SDK이 필요합니다.
 
-1. [최신 Java™ SDK 11 다운로드 및 설치](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atoling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)
+1. [최신 Java™ SDK 11 다운로드 및 설치](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atoling&fulltext=Oracle%7E+JDK%7E+11%7E&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=14)
 1. 다음 명령을 실행하여 Oracle Java™ 11 SDK이 설치되어 있는지 확인합니다.
 
 >[!BEGINTABS]
@@ -364,7 +364,7 @@ java.lang.Exception: Quickstart requires a Java Specification 11 VM, but your VM
 Quickstart: aborting
 ```
 
-이는 AEM as a Cloud Service에 Java™ SDK 11이 필요하며 다른 버전(Java™ 8일 가능성이 높음)을 실행 중이기 때문입니다. 이 문제를 해결하려면 [Oracle Java™ SDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atoling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)을(를) 다운로드하여 설치하십시오.
+이는 AEM as a Cloud Service에 Java™ SDK 11이 필요하며 다른 버전(Java™ 8일 가능성이 높음)을 실행 중이기 때문입니다. 이 문제를 해결하려면 [Oracle Java™ SDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atoling&fulltext=Oracle%7E+JDK%7E+11%7E&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=14)을(를) 다운로드하여 설치하십시오.
 
 Oracle Java™ 11 SDK이 설치되면 명령줄에서 명령을 실행하여 활성 버전인지 확인합니다.
 
