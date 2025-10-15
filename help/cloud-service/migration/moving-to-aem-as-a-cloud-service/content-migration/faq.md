@@ -207,7 +207,7 @@ CTT 프로세스에는 아래 리소스에 대한 연결이 필요합니다.
 
 ## 추가 리소스
 
-+ [클라우드에서 Experience Manager(Summit 2022)로 마이그레이션하기 위한 팁과 요령](https://business.adobe.com/summit/2022/sessions/tips-and-tricks-for-migrating-to-experience-manage-tw109.html)
++ [클라우드에서 Experience Manager(Summit 2022)로 마이그레이션하기 위한 팁과 요령](https://business.adobe.com/kr/summit/2022/sessions/tips-and-tricks-for-migrating-to-experience-manage-tw109.html)
 
 + [CTT 전문가 시리즈 비디오](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/content-migration/content-transfer-tool.html?lang=ko)
 
