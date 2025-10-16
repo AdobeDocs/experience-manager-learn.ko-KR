@@ -10,10 +10,10 @@ mini-toc-levels: 1
 index: y
 doc-type: Tutorial
 exl-id: 90d14734-f644-4a45-9361-1e47a5b52fff
-recommendations: disable
+recommendations: display, noCatalog
 duration: 74
-source-git-commit: dbf63f30ccfd06e4f4d7883c2f7bc4ac78245364
-workflow-type: ht
+source-git-commit: b612e2e36af8f56661a07577e979959c650564ee
+workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 100%
 
@@ -25,16 +25,16 @@ ht-degree: 100%
 
 Adobe Experience Manager(AEM)를 처음 사용하는 개발자를 위해 설계된 멀티 파트 튜토리얼을 시작합니다. 이 튜토리얼은 WKND의 가상 라이프스타일 브랜드를 위한 AEM 사이트의 구현 과정을 안내합니다.
 
-이 튜토리얼은 먼저 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko)을 사용하여 새로운 프로젝트를 생성합니다.
+이 튜토리얼은 먼저 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)을 사용하여 새로운 프로젝트를 생성합니다.
 
 또한 이 튜토리얼은 **AEM as a Cloud Service**&#x200B;와 함께 작동하도록 설계되었으며 **AEM 6.5.14+**&#x200B;와도 하위 호환됩니다. 다음을 사용하여 사이트를 구현합니다.
 
-* [Maven AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko)
-* [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)
-* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/getting-started.html?lang=ko)
+* [Maven AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+* [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/getting-started.html)
 * [Sling 모델](https://sling.apache.org/documentation/bundles/models.html)
-* [편집 가능한 템플릿](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=ko)
-* [스타일 시스템](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html?lang=ko)
+* [편집 가능한 템플릿](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html)
+* [스타일 시스템](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html)
 
 *튜토리얼의 각 부분을 완료하는 데는 약 1~2시간이 소요됩니다.*
 
