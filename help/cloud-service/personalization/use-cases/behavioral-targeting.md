@@ -131,13 +131,13 @@ AEP의 다양한 솔루션을 사용하여 행동 데이터를 수집, 관리 �
 
 페이지 보기 데이터를 저장하는 데이터 세트를 만들어 보겠습니다.
 
-- **Adobe Experience Platform**&#x200B;에서 왼쪽 탐색에서 **데이터 세트**&#x200B;를 클릭하고 **데이터 세트 만들기**를 클릭합니다.
+- **Adobe Experience Platform**&#x200B;에서 왼쪽 탐색에서 **데이터 세트**&#x200B;를 클릭하고 **데이터 세트 만들기**&#x200B;를 클릭합니다.
   ![데이터 집합 만들기](../assets/use-cases/behavioral-targeting/create-dataset.png)
 
-- **데이터 집합 만들기** 단계에서 **스키마에서 데이터 집합 만들기** 옵션을 선택하고 **다음**을 클릭합니다.
+- **데이터 집합 만들기** 단계에서 **스키마에서 데이터 집합 만들기** 옵션을 선택하고 **다음**&#x200B;을 클릭합니다.
   ![데이터 집합 만들기 마법사](../assets/use-cases/behavioral-targeting/create-dataset-wizard.png)
 
-- **스키마에서 데이터 집합 만들기** 마법사에서 **스키마 선택** 단계에서는 **WKND-RDE-Behavioral-Targeting** 스키마를 선택하고 **다음**을(를) 클릭합니다.
+- **스키마에서 데이터 집합 만들기** 마법사에서 **스키마 선택** 단계에서는 **WKND-RDE-Behavioral-Targeting** 스키마를 선택하고 **다음**&#x200B;을(를) 클릭합니다.
   ![스키마 선택](../assets/use-cases/behavioral-targeting/select-schema.png)
 
 - **데이터 집합 구성** 단계에 대해 다음을 입력하십시오.
@@ -184,7 +184,7 @@ AEP의 다양한 솔루션을 사용하여 행동 데이터를 수집, 관리 �
 
   ![Adobe Experience Platform 서비스 구성](../assets/use-cases/behavioral-targeting/configure-adobe-experience-platform-service.png)
 
-- **서비스 추가** 단계의 드롭다운에서 **Adobe Target**&#x200B;을(를) 선택하고 **Target 환경 ID**&#x200B;를 입력합니다. Target 환경 ID는 **관리** > **환경**&#x200B;에서 Adobe Target에 있습니다. 서비스를 추가하려면 **저장**을 클릭하세요.
+- **서비스 추가** 단계의 드롭다운에서 **Adobe Target**&#x200B;을(를) 선택하고 **Target 환경 ID**&#x200B;를 입력합니다. Target 환경 ID는 **관리** > **환경**&#x200B;에서 Adobe Target에 있습니다. 서비스를 추가하려면 **저장**&#x200B;을 클릭하세요.
   ![Adobe Target 서비스 구성](../assets/use-cases/behavioral-targeting/configure-adobe-target-service.png)
 
 ### 태그 속성 만들기 및 구성
@@ -216,7 +216,7 @@ Tags 속성은 웹 사이트에서 데이터를 수집하여 Adobe Experience Pl
 - 새 속성을 열고 왼쪽 탐색에서 **확장**&#x200B;을 클릭한 다음 **카탈로그** 탭을 클릭합니다. **웹 SDK**&#x200B;을 검색하고 **설치** 단추를 클릭합니다.
   ![웹 SDK 확장 설치](../assets/use-cases/behavioral-targeting/install-web-sdk-extension.png)
 
-- **확장 설치** 대화 상자에서 이전에 만든 **데이터스트림**&#x200B;을 선택하고 **저장**을 클릭합니다.
+- **확장 설치** 대화 상자에서 이전에 만든 **데이터스트림**&#x200B;을 선택하고 **저장**&#x200B;을 클릭합니다.
   ![데이터 스트림 선택](../assets/use-cases/behavioral-targeting/select-datastream.png)
 
 #### 데이터 요소 추가

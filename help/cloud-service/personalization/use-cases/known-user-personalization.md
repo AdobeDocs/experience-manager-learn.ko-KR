@@ -336,7 +336,7 @@ WKND 사용자 ID(`wkndUserId`)에 대한 ID 네임스페이스를 만들어 보
 
   ![Adobe Experience Platform 서비스 구성](../assets/use-cases/known-user-personalization/configure-adobe-experience-platform-service.png)
 
-- **서비스 추가** 단계의 드롭다운에서 **Adobe Target**&#x200B;을(를) 선택하고 **Target 환경 ID**&#x200B;를 입력합니다. Target 환경 ID는 **관리** > **환경**&#x200B;에서 Adobe Target에 있습니다. 서비스를 추가하려면 **저장**을 클릭하세요.
+- **서비스 추가** 단계의 드롭다운에서 **Adobe Target**&#x200B;을(를) 선택하고 **Target 환경 ID**&#x200B;를 입력합니다. Target 환경 ID는 **관리** > **환경**&#x200B;에서 Adobe Target에 있습니다. 서비스를 추가하려면 **저장**&#x200B;을 클릭하세요.
   ![Adobe Target 서비스 구성](../assets/use-cases/known-user-personalization/configure-adobe-target-service.png)
 
 - 최종 데이터 스트림은 다음과 같아야 합니다.
@@ -375,7 +375,7 @@ Tags 속성은 웹 사이트에서 데이터를 수집하여 Adobe Experience Pl
 - 새 속성을 열고 왼쪽 탐색에서 **확장**&#x200B;을 클릭한 다음 **카탈로그** 탭을 클릭합니다. **웹 SDK**&#x200B;을 검색하고 **설치** 단추를 클릭합니다.
   ![웹 SDK 확장 설치](../assets/use-cases/known-user-personalization/install-web-sdk-extension.png)
 
-- **확장 설치** 대화 상자에서 이전에 만든 **데이터스트림**&#x200B;을 선택하고 **저장**을 클릭합니다.
+- **확장 설치** 대화 상자에서 이전에 만든 **데이터스트림**&#x200B;을 선택하고 **저장**&#x200B;을 클릭합니다.
   ![데이터 스트림 선택](../assets/use-cases/known-user-personalization/select-datastream.png)
 
 #### 데이터 요소 추가
@@ -682,7 +682,7 @@ Experience Platform으로 보내기 전에 다른 데이터 요소를 사용하�
 
   ![라이브러리 추가](../assets/use-cases/known-user-personalization/add-library-dialog.png)
 
-- 라이브러리를 프로덕션에 게시하려면 **승인 및 프로덕션에 게시**를 클릭하십시오. 게시가 완료되면 AEM에서 속성을 사용할 수 있습니다.
+- 라이브러리를 프로덕션에 게시하려면 **승인 및 프로덕션에 게시**&#x200B;를 클릭하십시오. 게시가 완료되면 AEM에서 속성을 사용할 수 있습니다.
   ![승인 및 게시](../assets/use-cases/known-user-personalization/approve-publish.png)
 
 이제 라이브러리가 게시되었으며 AEM 페이지에서 데이터를 수집할 준비가 되었습니다.
@@ -911,7 +911,7 @@ $ git checkout -b feature/known-user-personalization
   $ mvn clean install -PautoInstallSinglePackage
   ```
 
-  `asmith/asmith`(또는 사용자가 만든 다른 사용자) 자격 증명을 사용하여 로그인합니다. 해당 자격 증명은 [ 프로젝트에 ](https://github.com/adobe/aem-guides-wknd/blob/main/ui.content.sample/src/main/content/jcr_root/home/users/wknd/l28HasMYWAMHAaGkv-Lj/.content.xml)포함`aem-guides-wknd`됩니다.
+  `asmith/asmith`(또는 사용자가 만든 다른 사용자) 자격 증명을 사용하여 로그인합니다. 해당 자격 증명은 [&#x200B; 프로젝트에 &#x200B;](https://github.com/adobe/aem-guides-wknd/blob/main/ui.content.sample/src/main/content/jcr_root/home/users/wknd/l28HasMYWAMHAaGkv-Lj/.content.xml)포함`aem-guides-wknd`됩니다.
 
   ![로그인](../assets/use-cases/known-user-personalization/userid-in-session-storage.png)
 
