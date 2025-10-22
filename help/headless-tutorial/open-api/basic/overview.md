@@ -1,6 +1,7 @@
 ---
 title: AEM Headless OpenAPI 자습서 | 컨텐츠 조각 전달
 description: AEM의 OpenAPI 기반 콘텐츠 조각 배달 API를 사용하여 콘텐츠를 작성하고 노출하는 방법을 소개하는 종단간 튜토리얼입니다.
+short-description: OpenAPI API를 통해 컨텐츠 조각 전달을 사용하여 AEM 컨텐츠를 빌드하고 노출하며 Headless CMS 시나리오에 대한 외부 앱에서 이를 사용하는 방법을 보여 주는 튜토리얼입니다.
 doc-type: Tutorial
 mini-toc-levels: 1
 jira: KT-6678
@@ -11,10 +12,11 @@ role: Developer
 level: Beginner
 last-substantial-update: 2022-10-17T00:00:00Z
 duration: 54
-source-git-commit: c6213dd318ec4865375c57143af40dbe3f3990b1
+exl-id: 1bb7c415-58f8-4f6c-a0bc-38bdbdb521cf
+source-git-commit: f0b1b906e1ef04b53eca940f191e65d62a2e0bab
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 22%
+source-wordcount: '393'
+ht-degree: 20%
 
 ---
 

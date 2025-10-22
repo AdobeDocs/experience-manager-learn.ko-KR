@@ -1,6 +1,7 @@
 ---
 title: Edge Delivery Services 및 범용 편집기 개발자 튜토리얼
 description: AEM 범용 편집기로 작성되고 Edge Delivery Services로 게재되는 새 웹 사이트 개발의 기본 사항에 대해 알아봅니다.
+short-description: Edge Delivery Services을 사용하여 강력한 작성 기능과 범용 편집기 및 매우 빠른 전달을 결합하는 AEM 웹 사이트를 구축하기 위한 개발자 튜토리얼입니다. 새 프로젝트를 만들고, 로컬 개발 환경을 설정하고, 사용자 지정 블록을 만드는 방법을 알아봅니다.
 version: Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Development
@@ -10,10 +11,10 @@ doc-type: Catalog
 jira: KT-15832
 duration: 88
 exl-id: aeac08a2-75a0-4adb-b32e-0e7f85e7eb1d
-source-git-commit: f0ad5d66549970337118220156d7a6b0fd30fd57
-workflow-type: ht
-source-wordcount: '620'
-ht-degree: 100%
+source-git-commit: f0b1b906e1ef04b53eca940f191e65d62a2e0bab
+workflow-type: tm+mt
+source-wordcount: '658'
+ht-degree: 94%
 
 ---
 
@@ -100,7 +101,7 @@ AEM as a Cloud Service에서 코드 프로젝트를 만들고 새 사이트를 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./3-local-development-environment.md" title="로컬 개발 환경 설정" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443985/?format=jpeg&nocache=1753811862249&captions=kor" alt="로컬 개발 환경 설정"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443978/?format=jpeg&nocache=1753811862249" alt="로컬 개발 환경 설정"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
