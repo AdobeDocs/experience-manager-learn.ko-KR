@@ -78,7 +78,7 @@ ht-degree: 1%
 - [Adobe Target 통합](../setup/integrate-adobe-target.md): 팀이 AEM의 중앙에서 개인화된 콘텐츠를 만들고 관리하며 Adobe Target의 오퍼로 활성화할 수 있습니다.
 - [Adobe Experience Platform의 태그 통합](../setup/integrate-adobe-tags.md): 팀이 AEM 코드를 다시 배포할 필요 없이 개인화 및 데이터 수집을 위해 JavaScript을 관리하고 배포할 수 있도록 허용합니다.
 
-스키마, 데이터 세트, 데이터스트림, 대상, ID 및 프로필과 같은 [ECID(Adobe Experience Cloud Identity Service)](https://experienceleague.adobe.com/en/docs/id-service/using/home) 및 [Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/landing/home) 개념에도 익숙합니다.
+스키마, 데이터 세트, 데이터스트림, 대상, ID 및 프로필과 같은 [ECID(Adobe Experience Cloud Identity Service)](https://experienceleague.adobe.com/ko/docs/id-service/using/home) 및 [Adobe Experience Platform](https://experienceleague.adobe.com/ko/docs/experience-platform/landing/home) 개념에도 익숙합니다.
 
 이 자습서에서는 Adobe Experience Platform에서 ID 결합에 대해 알아보고 고객 프로필을 빌드합니다. 따라서 행동 데이터를 트랜잭션 데이터와 결합하여 완전한 고객 프로필을 만듭니다.
 
@@ -1186,9 +1186,9 @@ WKND 사이트에서 알려진 사용자 개인화 구현을 확인할 차례입
 
 ## 추가 리소스
 
-- [Adobe Experience Platform 웹 SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)
-- [데이터스트림 개요](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview)
-- [VEC(시각적 경험 작성기)](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/visual-experience-composer)
-- [Edge 세그멘테이션](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/edge-segmentation)
-- [대상 유형](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/types/overview)
-- [Adobe Target 연결](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection)
+- [Adobe Experience Platform 웹 SDK](https://experienceleague.adobe.com/ko/docs/experience-platform/web-sdk/home)
+- [데이터스트림 개요](https://experienceleague.adobe.com/ko/docs/experience-platform/datastreams/overview)
+- [VEC(시각적 경험 작성기)](https://experienceleague.adobe.com/ko/docs/target/using/experiences/vec/visual-experience-composer)
+- [Edge 세그멘테이션](https://experienceleague.adobe.com/ko/docs/experience-platform/segmentation/methods/edge-segmentation)
+- [대상 유형](https://experienceleague.adobe.com/ko/docs/experience-platform/segmentation/types/overview)
+- [Adobe Target 연결](https://experienceleague.adobe.com/ko/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection)
