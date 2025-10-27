@@ -33,7 +33,7 @@ ht-degree: 1%
 
 ## 예제 사용 사례
 
->[!VIDEO](https://video.tv.adobe.com/v/3476105/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3476116/?captions=kor&learn=on&enablevpops)
 
 이 자습서에서는 [샘플 WKND 사이트](https://github.com/adobe/aem-guides-wknd)를 사용하여 **스키** 모험을 구매한 **로그인한 사용자**&#x200B;가 **WKND 홈 페이지**&#x200B;에서 개인화된 영웅을 보는 방법을 보여줍니다.
 
