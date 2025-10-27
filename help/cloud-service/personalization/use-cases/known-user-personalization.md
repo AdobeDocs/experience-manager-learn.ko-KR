@@ -10,9 +10,9 @@ doc-type: Tutorial
 last-substantial-update: 2025-10-17T00:00:00Z
 jira: KT-16331
 thumbnail: KT-16331.jpeg
-source-git-commit: 418e61e28e4a03a5b9657e80534926fe40ccefbd
+source-git-commit: a713c282af1dd6c3e947a1b22de53488d7761019
 workflow-type: tm+mt
-source-wordcount: '6447'
+source-wordcount: '6446'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 1%
 
 ## 예제 사용 사례
 
-![비디오](https://video.tv.adobe.com/v/3476116/?captions=kor&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3476105/?learn=on&enablevpops)
 
 이 자습서에서는 [샘플 WKND 사이트](https://github.com/adobe/aem-guides-wknd)를 사용하여 **스키** 모험을 구매한 **로그인한 사용자**&#x200B;가 **WKND 홈 페이지**&#x200B;에서 개인화된 영웅을 보는 방법을 보여줍니다.
 
@@ -78,7 +78,7 @@ ht-degree: 1%
 - [Adobe Target 통합](../setup/integrate-adobe-target.md): 팀이 AEM의 중앙에서 개인화된 콘텐츠를 만들고 관리하며 Adobe Target의 오퍼로 활성화할 수 있습니다.
 - [Adobe Experience Platform의 태그 통합](../setup/integrate-adobe-tags.md): 팀이 AEM 코드를 다시 배포할 필요 없이 개인화 및 데이터 수집을 위해 JavaScript을 관리하고 배포할 수 있도록 허용합니다.
 
-스키마, 데이터 세트, 데이터스트림, 대상, ID 및 프로필과 같은 [ECID(Adobe Experience Cloud Identity Service)](https://experienceleague.adobe.com/ko/docs/id-service/using/home) 및 [Adobe Experience Platform](https://experienceleague.adobe.com/ko/docs/experience-platform/landing/home) 개념에도 익숙합니다.
+스키마, 데이터 세트, 데이터스트림, 대상, ID 및 프로필과 같은 [ECID(Adobe Experience Cloud Identity Service)](https://experienceleague.adobe.com/en/docs/id-service/using/home) 및 [Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/landing/home) 개념에도 익숙합니다.
 
 이 자습서에서는 Adobe Experience Platform에서 ID 결합에 대해 알아보고 고객 프로필을 빌드합니다. 따라서 행동 데이터를 트랜잭션 데이터와 결합하여 완전한 고객 프로필을 만듭니다.
 
@@ -338,7 +338,7 @@ WKND 사용자 ID(`wkndUserId`)에 대한 ID 네임스페이스를 만들어 보
 
   ![Adobe Experience Platform 서비스 구성](../assets/use-cases/known-user-personalization/configure-adobe-experience-platform-service.png)
 
-- **서비스 추가** 단계의 드롭다운에서 **Adobe Target**&#x200B;을(를) 선택하고 **Target 환경 ID**&#x200B;를 입력합니다. Target 환경 ID는 **관리** > **환경**&#x200B;에서 Adobe Target에 있습니다. 서비스를 추가하려면 **저장**&#x200B;을 클릭하세요.
+- **서비스 추가** 단계의 드롭다운에서 **Adobe Target**&#x200B;을(를) 선택하고 **Target 환경 ID**&#x200B;를 입력합니다. Target 환경 ID는 **관리** > **환경**&#x200B;에서 Adobe Target에 있습니다. 서비스를 추가하려면 **저장**을 클릭하세요.
   ![Adobe Target 서비스 구성](../assets/use-cases/known-user-personalization/configure-adobe-target-service.png)
 
 - 최종 데이터 스트림은 다음과 같아야 합니다.
@@ -377,7 +377,7 @@ Tags 속성은 웹 사이트에서 데이터를 수집하여 Adobe Experience Pl
 - 새 속성을 열고 왼쪽 탐색에서 **확장**&#x200B;을 클릭한 다음 **카탈로그** 탭을 클릭합니다. **웹 SDK**&#x200B;을 검색하고 **설치** 단추를 클릭합니다.
   ![웹 SDK 확장 설치](../assets/use-cases/known-user-personalization/install-web-sdk-extension.png)
 
-- **확장 설치** 대화 상자에서 이전에 만든 **데이터스트림**&#x200B;을 선택하고 **저장**&#x200B;을 클릭합니다.
+- **확장 설치** 대화 상자에서 이전에 만든 **데이터스트림**&#x200B;을 선택하고 **저장**을 클릭합니다.
   ![데이터 스트림 선택](../assets/use-cases/known-user-personalization/select-datastream.png)
 
 #### 데이터 요소 추가
@@ -684,7 +684,7 @@ Experience Platform으로 보내기 전에 다른 데이터 요소를 사용하�
 
   ![라이브러리 추가](../assets/use-cases/known-user-personalization/add-library-dialog.png)
 
-- 라이브러리를 프로덕션에 게시하려면 **승인 및 프로덕션에 게시**&#x200B;를 클릭하십시오. 게시가 완료되면 AEM에서 속성을 사용할 수 있습니다.
+- 라이브러리를 프로덕션에 게시하려면 **승인 및 프로덕션에 게시**를 클릭하십시오. 게시가 완료되면 AEM에서 속성을 사용할 수 있습니다.
   ![승인 및 게시](../assets/use-cases/known-user-personalization/approve-publish.png)
 
 이제 라이브러리가 게시되었으며 AEM 페이지에서 데이터를 수집할 준비가 되었습니다.
@@ -913,7 +913,7 @@ $ git checkout -b feature/known-user-personalization
   $ mvn clean install -PautoInstallSinglePackage
   ```
 
-  `asmith/asmith`(또는 사용자가 만든 다른 사용자) 자격 증명을 사용하여 로그인합니다. 해당 자격 증명은 [&#x200B; 프로젝트에 &#x200B;](https://github.com/adobe/aem-guides-wknd/blob/main/ui.content.sample/src/main/content/jcr_root/home/users/wknd/l28HasMYWAMHAaGkv-Lj/.content.xml)포함`aem-guides-wknd`됩니다.
+  `asmith/asmith`(또는 사용자가 만든 다른 사용자) 자격 증명을 사용하여 로그인합니다. 해당 자격 증명은 [ 프로젝트에 ](https://github.com/adobe/aem-guides-wknd/blob/main/ui.content.sample/src/main/content/jcr_root/home/users/wknd/l28HasMYWAMHAaGkv-Lj/.content.xml)포함`aem-guides-wknd`됩니다.
 
   ![로그인](../assets/use-cases/known-user-personalization/userid-in-session-storage.png)
 
@@ -1186,9 +1186,9 @@ WKND 사이트에서 알려진 사용자 개인화 구현을 확인할 차례입
 
 ## 추가 리소스
 
-- [Adobe Experience Platform 웹 SDK](https://experienceleague.adobe.com/ko/docs/experience-platform/web-sdk/home)
-- [데이터스트림 개요](https://experienceleague.adobe.com/ko/docs/experience-platform/datastreams/overview)
-- [VEC(시각적 경험 작성기)](https://experienceleague.adobe.com/ko/docs/target/using/experiences/vec/visual-experience-composer)
-- [Edge 세그멘테이션](https://experienceleague.adobe.com/ko/docs/experience-platform/segmentation/methods/edge-segmentation)
-- [대상 유형](https://experienceleague.adobe.com/ko/docs/experience-platform/segmentation/types/overview)
-- [Adobe Target 연결](https://experienceleague.adobe.com/ko/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection)
+- [Adobe Experience Platform 웹 SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)
+- [데이터스트림 개요](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview)
+- [VEC(시각적 경험 작성기)](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/visual-experience-composer)
+- [Edge 세그멘테이션](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/edge-segmentation)
+- [대상 유형](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/types/overview)
+- [Adobe Target 연결](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection)
