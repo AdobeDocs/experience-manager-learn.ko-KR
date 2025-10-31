@@ -11,10 +11,10 @@ last-substantial-update: 2025-08-07T00:00:00Z
 jira: KT-18717
 thumbnail: null
 exl-id: c4fb11b9-b613-4522-b9da-18d7ae0826ec
-source-git-commit: c367564acb6465d5f203e5db943c5470607b63c9
+source-git-commit: 055dc7d666d082244d73d3494bac54d7eb4bb886
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 11%
+source-wordcount: '492'
+ht-degree: 8%
 
 ---
 
@@ -35,6 +35,51 @@ AEM as a Cloud Service(AEMCS)를 Adobe Target 및 Adobe Experience Platform(AEP)
 - AEM 구성 요소 및 경험 조각에 대한 기본 이해
 
 - [AEM WKND](https://github.com/adobe/aem-guides-wknd/) 프로젝트가 AEM as a Cloud Service 환경에 배포되었습니다.
+
+## Personalization 사용 사례의 라이브 데모
+
+[WKND 지원 웹 사이트](https://wknd.enablementadobe.com/us/en.html){target="_blank"}에서 경험 개인화가 작동 중입니다. 데모 사이트는 A/B 테스트, 행동 타기팅 및 알려진 사용자 개인화의 세 가지 개인화 유형을 보여 줍니다.
+
+>[!TIP]
+>
+> 먼저 라이브 데모를 살펴보는 것은 설정 및 구현에 시간을 투자하기 전에 각 개인화 기법의 가치와 기능을 이해하는 데 도움이 됩니다.
+
+<!-- CARDS
+{target = _self}
+
+* ./live-demo.md
+  {title = Live Demo of Personalization Use Cases}
+  {description = Experience personalization in action on the [WKND Enablement website](https://wknd.enablementadobe.com/us/en.html). The demo site demonstrates three types of personalization: A/B testing, behavioral targeting, and known-user personalization.}
+  {image = ./assets/live-demo/live-demo.png}
+  {cta = Live Demo}
+-->
+<!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
+<div class="columns">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Live Demo of Personalization Use Cases">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="./live-demo.md" title="Personalization 사용 사례의 라이브 데모" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="./assets/live-demo/live-demo.png" alt="Personalization 사용 사례의 라이브 데모"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="./live-demo.md" target="_self" rel="referrer" title="Personalization 사용 사례의 라이브 데모">Personalization 사용 사례 라이브 데모</a>
+                    </p>
+                    <p class="is-size-6">WKND 지원 웹 사이트에서 사용 중인 경험 개인화입니다. 데모 사이트는 A/B 테스트, 행동 타기팅 및 알려진 사용자 개인화의 세 가지 개인화 유형을 보여 줍니다.</p>
+                </div>
+                <a href="./live-demo.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">라이브 데모</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
 
 ## 시작하기
 
