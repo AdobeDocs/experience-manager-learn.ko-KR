@@ -21,7 +21,7 @@ ht-degree: 1%
 
 A/B 테스트, 행동 타기팅 및 알려진 사용자 개인화에 대한 실제 사례를 보려면 [WKND 지원 웹 사이트](https://wknd.enablementadobe.com/us/en.html){target="wknd"}를 방문하십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/3476461/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3476468/?captions=kor&learn=on&enablevpops)
 
 이 페이지에서는 각 개인화 시나리오의 실습 데모를 안내합니다. 이를 사용하여 AEM 사이트에서 이러한 기능을 빌드하기 전에 가능한 기능을 살펴보십시오.
 
