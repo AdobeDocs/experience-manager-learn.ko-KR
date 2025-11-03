@@ -11,7 +11,7 @@ last-substantial-update: 2025-08-07T00:00:00Z
 jira: KT-18717
 thumbnail: null
 exl-id: c4fb11b9-b613-4522-b9da-18d7ae0826ec
-source-git-commit: 055dc7d666d082244d73d3494bac54d7eb4bb886
+source-git-commit: 4d345ba7b10ea21d7bc7eee89157de782e1c4350
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 8%
@@ -38,7 +38,7 @@ AEM as a Cloud Service(AEMCS)를 Adobe Target 및 Adobe Experience Platform(AEP)
 
 ## Personalization 사용 사례의 라이브 데모
 
-[WKND 지원 웹 사이트](https://wknd.enablementadobe.com/us/en.html){target="_blank"}에서 경험 개인화가 작동 중입니다. 데모 사이트는 A/B 테스트, 행동 타기팅 및 알려진 사용자 개인화의 세 가지 개인화 유형을 보여 줍니다.
+[WKND 지원 웹 사이트](https://wknd.enablementadobe.com/us/en.html){target="wknd"}에서 경험 개인화가 작동 중입니다. 데모 사이트는 A/B 테스트, 행동 타기팅 및 알려진 사용자 개인화의 세 가지 개인화 유형을 보여 줍니다.
 
 >[!TIP]
 >
