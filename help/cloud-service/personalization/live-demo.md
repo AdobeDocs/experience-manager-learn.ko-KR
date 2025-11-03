@@ -7,10 +7,10 @@ topic: Personalization, Integrations
 role: Developer, Architect, Leader, User
 level: Beginner
 doc-type: Tutorial
-last-substantial-update: 2025-11-01T00:00:00Z
+last-substantial-update: 2025-11-03T00:00:00Z
 jira: KT-19546
 thumbnail: KT-19546.jpeg
-source-git-commit: 055dc7d666d082244d73d3494bac54d7eb4bb886
+source-git-commit: 9e99936fb03e085f6bc276c7d6ef5cc08e34d1e5
 workflow-type: tm+mt
 source-wordcount: '944'
 ht-degree: 1%
@@ -21,12 +21,14 @@ ht-degree: 1%
 
 A/B 테스트, 행동 타기팅 및 알려진 사용자 개인화에 대한 실제 사례를 보려면 [WKND 지원 웹 사이트](https://wknd.enablementadobe.com/us/en.html){target="wknd"}를 방문하십시오.
 
+>[!VIDEO](https://video.tv.adobe.com/v/3476461/?learn=on&enablevpops)
+
 이 페이지에서는 각 개인화 시나리오의 실습 데모를 안내합니다. 이를 사용하여 AEM 사이트에서 이러한 기능을 빌드하기 전에 가능한 기능을 살펴보십시오.
 
 >[!IMPORTANT]
 >
 > 여러 브라우저 창 또는 시크릿/개인 탐색 모드에서 데모 사이트를 열어 다양한 개인화된 변형을 동시에 경험하십시오.
-> &#x200B;> 비공개 탐색 모드를 사용할 때 Firefox와 Safari는 ECID 쿠키를 차단하거나, 새로운 개인화 시나리오를 시도하기 전에 일반 탐색 모드를 사용하거나 쿠키를 지울 수 있습니다.
+> 비공개 탐색 모드를 사용할 때 Firefox와 Safari는 ECID 쿠키를 차단하거나, 새로운 개인화 시나리오를 시도하기 전에 일반 탐색 모드를 사용하거나 쿠키를 지울 수 있습니다.
 
 ## 데모 사용 사례
 
