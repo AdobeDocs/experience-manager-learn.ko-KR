@@ -131,7 +131,7 @@ ht-degree: 0%
 
    >[!TIP]
    >
-   > 위의 glob `*.nocache.html*` 규칙에서 후행 `*`을(를) 해제하면 [하위 리소스에 대한 요청에 문제가 발생](https://github.com/AdobeDocs/experience-manager-learn.en/issues/16)할 수 있습니다.
+   > 위의 glob `*.nocache.html*` 규칙에서 후행 `*`을(를) 해제하면 [하위 리소스에 대한 요청에 문제가 발생](https://github.com/AdobeDocs/experience-manager-learn.ko-KR/issues/16)할 수 있습니다.
 
    ```shell
    /cache {
