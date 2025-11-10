@@ -13,10 +13,10 @@ last-substantial-update: 2024-01-04T00:00:00Z
 jira: KT-14745
 thumbnail: KT-14745.jpeg
 exl-id: 3fd4c404-18e9-44e5-958f-15235a3091d5
-source-git-commit: 7ada3c2e7deb414b924077a5d2988db16f28712c
+source-git-commit: 1048beba42011eccb1ebdd43458591c8e953fb8a
 workflow-type: tm+mt
-source-wordcount: '1693'
-ht-degree: 1%
+source-wordcount: '1706'
+ht-degree: 0%
 
 ---
 
@@ -39,9 +39,9 @@ AEM 인스턴스의 성능에 영향을 주지 않는 효율적이고 올바른 
 
 경우에 따라 검색 요구 사항을 지원하도록 사용자 정의 색인을 만들어야 합니다. 단, 사용자 지정 색인을 생성하기 전에 아래 지침을 따르십시오.
 
-- 검색 요구 사항을 이해하고 OOTB 인덱스가 검색 요구 사항을 지원할 수 있는지 확인합니다. Developer Console 또는 **을(를) 통해**&#x200B;로컬 SDK[&#x200B; 및 AEMCS에서 사용할 수 있는 &#x200B;](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html)쿼리 성능 도구`https://author-pXXXX-eYYYY.adobeaemcloud.com/ui#/aem/libs/granite/operations/content/diagnosistools/queryPerformance.html?appId=aemshell`를 사용합니다.
+- 검색 요구 사항을 이해하고 OOTB 인덱스가 검색 요구 사항을 지원할 수 있는지 확인합니다. Developer Console 또는 **을(를) 통해**&#x200B;로컬 SDK[ 및 AEMCS에서 사용할 수 있는 ](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html)쿼리 성능 도구`https://author-pXXXX-eYYYY.adobeaemcloud.com/ui#/aem/libs/granite/operations/content/diagnosistools/queryPerformance.html?appId=aemshell`를 사용합니다.
 
-- 최적의 쿼리를 정의하고 [쿼리 최적화](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/operations/query-and-indexing-best-practices) 순서도와 [JCR 쿼리 치트 시트](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf?lang=ko)를 참조하십시오.
+- 최적의 쿼리를 정의하고 [쿼리 최적화](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/query-and-indexing-best-practices) 순서도와 [JCR 쿼리 치트 시트](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf)를 참조하십시오.
 
 - OOTB 인덱스가 검색 요구 사항을 지원할 수 없는 경우 두 가지 옵션이 있습니다. 그러나 효율적인 색인을 만들기 위한 [팁](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/deploying/practices/best-practices-for-queries-and-indexing)을 검토하십시오.
    - OOTB 인덱스 사용자 정의: 유지 관리 및 업그레이드가 용이하여 선호하는 옵션.
@@ -61,7 +61,7 @@ AEM 인스턴스의 성능에 영향을 주지 않는 효율적이고 올바른 
 
 완전히 맞춤화된 색인을 만드는 것은 마지막 옵션이어야 하며 위의 옵션이 작동하지 않는 경우에만 가능합니다.
 
-- 전체 사용자 지정 인덱스를 만들 때 **\&lt;prefix>을(를) 사용합니다.\&lt;customIndexName>-\&lt;version>-custom-\&lt;customVersion>** 명명 규칙. 예, `wknd.adventures-1-custom-1`. 이렇게 하면 이름 지정 충돌을 방지하는 데 도움이 됩니다. 여기서 `wknd`은(는) 접두사이고 `adventures`은(는) 사용자 지정 인덱스 이름입니다. 이 규칙은 AEM 6.X와 AEMCS 모두에 적용할 수 있으며 향후 AEMCS로의 마이그레이션을 준비하는 데 도움이 됩니다.
+- 전체 사용자 지정 인덱스를 만들 때 **\&lt;prefix>을(를) 사용합니다.\&lt;customIndexName>-\&lt;version>-custom-\&lt;customVersion>** 명명 규칙. 예를 들어, `wknd.adventures-1-custom-1`과 같이 입력합니다. 이렇게 하면 이름 지정 충돌을 방지하는 데 도움이 됩니다. 여기서 `wknd`은(는) 접두사이고 `adventures`은(는) 사용자 지정 인덱스 이름입니다. 이 규칙은 AEM 6.X와 AEMCS 모두에 적용할 수 있으며 향후 AEMCS로의 마이그레이션을 준비하는 데 도움이 됩니다.
 
 - AEMCS는 Lucene 인덱스만 지원하므로 향후 AEMCS로의 마이그레이션에 대비하려면 항상 Lucene 인덱스를 사용하십시오. 자세한 내용은 [Lucene 인덱스 대 속성 인덱스](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/deploying/practices/best-practices-for-queries-and-indexing)를 참조하십시오.
 
@@ -112,7 +112,7 @@ AEM 인스턴스의 성능에 영향을 주지 않는 효율적이고 올바른 
 
 아래 이미지는 `dam:Asset` 속성이 특정 경로로 설정된 `includedPaths` 노드 유형에 대한 사용자 지정 인덱스를 보여 줍니다.
 
-![dam:Asset 노드 형식에 대한 인덱스](./assets/understand-indexing-best-practices/index-for-damAsset-type.png)
+![dam의 인덱스:Asset 노드 유형](./assets/understand-indexing-best-practices/index-for-damAsset-type.png)
 
 ##### Analysis
 
@@ -243,17 +243,17 @@ Apache Tika를 완전히 비활성화하려면 아래 단계를 수행하십시�
 
 색인을 정의, 분석 및 최적화하는 데 도움이 되는 몇 가지 도구를 검토해 보겠습니다.
 
-### 색인 생성 도구
+### 색인 생성 도구 및 Oak 도구
 
-[Oak 인덱스 정의 생성기](https://oakutils.appspot.com/generate/index) 도구를 사용하면 **입력 쿼리를 기반으로 인덱스 정의를 생성**&#x200B;할 수 있습니다. 사용자 지정 색인을 만드는 좋은 시작점입니다.
+[Oak 인덱스 정의 생성기](https://thomasmueller.github.io/oakTools/indexDefGenerator.html) 도구를 사용하면 **입력 쿼리를 기반으로 인덱스 정의를 생성**&#x200B;할 수 있습니다. 사용자 지정 색인을 만드는 좋은 시작점입니다.
 
-### 색인 분석 도구
-
-[인덱스 정의 분석기](https://oakutils.appspot.com/analyze/index) 도구를 사용하여 **인덱스 정의를 분석**&#x200B;하고 인덱스 정의를 개선하기 위한 권장 사항을 제공합니다.
+[Oak 도구](https://thomasmueller.github.io/oakTools/index.html)에 다른 도구도 포함되어 있습니다
+색인 지정 및 쿼리 관련 유틸리티(예: JSON과 XML 형식 간에 색인 변환)
+XPath 쿼리를 SQL-2로 변환하고 색인을 비교합니다.
 
 ### 쿼리 성능 도구
 
-Developer Console 또는 _을(를) 통해_&#x200B;로컬 SDK[&#x200B; 및 AEMCS에서 사용할 수 있는 OOTB &#x200B;](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html)쿼리 성능 도구`https://author-pXXXX-eYYYY.adobeaemcloud.com/ui#/aem/libs/granite/operations/content/diagnosistools/queryPerformance.html?appId=aemshell`를 통해 **쿼리 성능을 분석** 및 [JCR 쿼리 치트 시트](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf?lang=ko)에서 최적의 쿼리를 정의할 수 있습니다.
+Developer Console 또는 _을(를) 통해_&#x200B;로컬 SDK[ 및 AEMCS에서 사용할 수 있는 OOTB ](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html)쿼리 성능 도구`https://author-pXXXX-eYYYY.adobeaemcloud.com/ui#/aem/libs/granite/operations/content/diagnosistools/queryPerformance.html?appId=aemshell`를 통해 **쿼리 성능을 분석** 및 [JCR 쿼리 치트 시트](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf?lang=en)에서 최적의 쿼리를 정의할 수 있습니다.
 
 ### 문제 해결 도구 및 팁
 
@@ -274,6 +274,6 @@ Developer Console 또는 _을(를) 통해_&#x200B;로컬 SDK[&#x200B; 및 AEMCS�
 자세한 내용은 다음 설명서를 참조하십시오.
 
 - [Oak 쿼리 및 색인화](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/deploying/deploying/queries-and-indexing)
-- [쿼리 및 색인화 모범 사례](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/operations/query-and-indexing-best-practices)
+- [쿼리 및 색인화 모범 사례](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/query-and-indexing-best-practices)
 - [쿼리 및 색인화 모범 사례](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/deploying/practices/best-practices-for-queries-and-indexing)
 
