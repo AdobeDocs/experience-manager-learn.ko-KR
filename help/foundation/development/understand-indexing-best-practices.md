@@ -39,7 +39,7 @@ AEM 인스턴스의 성능에 영향을 주지 않는 효율적이고 올바른 
 
 경우에 따라 검색 요구 사항을 지원하도록 사용자 정의 색인을 만들어야 합니다. 단, 사용자 지정 색인을 생성하기 전에 아래 지침을 따르십시오.
 
-- 검색 요구 사항을 이해하고 OOTB 인덱스가 검색 요구 사항을 지원할 수 있는지 확인합니다. Developer Console 또는 **을(를) 통해**&#x200B;로컬 SDK[ 및 AEMCS에서 사용할 수 있는 ](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html)쿼리 성능 도구`https://author-pXXXX-eYYYY.adobeaemcloud.com/ui#/aem/libs/granite/operations/content/diagnosistools/queryPerformance.html?appId=aemshell`를 사용합니다.
+- 검색 요구 사항을 이해하고 OOTB 인덱스가 검색 요구 사항을 지원할 수 있는지 확인합니다. Developer Console 또는 **을(를) 통해**&#x200B;로컬 SDK[&#x200B; 및 AEMCS에서 사용할 수 있는 &#x200B;](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html)쿼리 성능 도구`https://author-pXXXX-eYYYY.adobeaemcloud.com/ui#/aem/libs/granite/operations/content/diagnosistools/queryPerformance.html?appId=aemshell`를 사용합니다.
 
 - 최적의 쿼리를 정의하고 [쿼리 최적화](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/query-and-indexing-best-practices) 순서도와 [JCR 쿼리 치트 시트](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf)를 참조하십시오.
 
@@ -253,7 +253,7 @@ XPath 쿼리를 SQL-2로 변환하고 색인을 비교합니다.
 
 ### 쿼리 성능 도구
 
-Developer Console 또는 _을(를) 통해_&#x200B;로컬 SDK[ 및 AEMCS에서 사용할 수 있는 OOTB ](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html)쿼리 성능 도구`https://author-pXXXX-eYYYY.adobeaemcloud.com/ui#/aem/libs/granite/operations/content/diagnosistools/queryPerformance.html?appId=aemshell`를 통해 **쿼리 성능을 분석** 및 [JCR 쿼리 치트 시트](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf?lang=en)에서 최적의 쿼리를 정의할 수 있습니다.
+Developer Console 또는 _을(를) 통해_&#x200B;로컬 SDK[&#x200B; 및 AEMCS에서 사용할 수 있는 OOTB &#x200B;](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html)쿼리 성능 도구`https://author-pXXXX-eYYYY.adobeaemcloud.com/ui#/aem/libs/granite/operations/content/diagnosistools/queryPerformance.html?appId=aemshell`를 통해 **쿼리 성능을 분석** 및 [JCR 쿼리 치트 시트](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf?lang=en)에서 최적의 쿼리를 정의할 수 있습니다.
 
 ### 문제 해결 도구 및 팁
 
