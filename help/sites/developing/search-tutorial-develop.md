@@ -77,7 +77,7 @@ ht-degree: 1%
 * [Github 저장소](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/master/simple-search-guide)
 * [Sling 모델](https://sling.apache.org/documentation/bundles/models.html)
 * [슬링 모델 내보내기](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130)
-* [QueryBuilder API](https://experienceleague.adobe.com/docs/)
+* [QueryBuilder API](https://experienceleague.adobe.com/docs/?lang=ko)
 * [AEM Chrome 플러그인](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode)&#x200B;([설명서 페이지](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/))
 
 ## 수정 및 추가 작업 {#corrections-and-follow-up}
