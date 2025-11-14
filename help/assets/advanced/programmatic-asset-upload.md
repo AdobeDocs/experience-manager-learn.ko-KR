@@ -50,7 +50,7 @@ _직접적인 바이너리 업로드_ 접근 방식을 사용하면 _사전 서�
 
 >[!CAUTION]
 >
->Java에는 [aem-upload](https://github.com/adobe/aem-upload) 라이브러리에 해당하는 항목이 없습니다. _직접적인 바이너리 업로드_ 방법을 사용하려면 클라이언트 응용 프로그램을 Node.js로 작성해야 합니다. 자세한 내용은 [Experience Manager Assets API 및 작업](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis#use-cases-and-apis) 페이지를 참조하십시오.
+>Java에는 [aem-upload](https://github.com/adobe/aem-upload) 라이브러리에 해당하는 항목이 없습니다. _직접적인 바이너리 업로드_ 방법을 사용하려면 클라이언트 응용 프로그램을 Node.js로 작성해야 합니다. 자세한 내용은 [Experience Manager Assets API 및 작업](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis#use-cases-and-apis) 페이지를 참조하십시오.
 
 ## 샘플 애플리케이션
 
@@ -97,7 +97,7 @@ _직접적인 바이너리 업로드_ 접근 방식을 사용하면 _사전 서�
 
 _aem-upload_ Node.js 라이브러리에서 지원하는 [여러 인증 방법](https://github.com/adobe/aem-upload)이 있습니다. 다음 표에는 지원되는 _인증 방법_ 및 해당 용도가 요약되어 있습니다.
 
-| | 기본 인증 | [로컬 개발 토큰](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/local-development-access-token) | [서비스 자격 증명](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) | [OAuth S2S](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/) | [OAuth 웹 앱](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation#oauth-web-app-credential) | [OAuth 스파](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation#oauth-single-page-app-credential) |
+| | 기본 인증 | [로컬 개발 토큰](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/local-development-access-token) | [서비스 자격 증명](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) | [OAuth S2S](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/) | [OAuth 웹 앱](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation#oauth-web-app-credential) | [OAuth 스파](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation#oauth-single-page-app-credential) |
 |---|---|---|---|---|---|---|
 | 지원됩니까? | &check; | &check; | &check; | &cross; | &cross; | &cross; |
 | 목적 | 로컬 개발 | 로컬 개발 | 프로덕션 | N/A | N/A | N/A |
@@ -176,7 +176,7 @@ _aem-upload_ Node.js 라이브러리에서 지원하는 [여러 인증 방법](h
 
 1. `AEM_SERVICE_CREDENTIALS_FILE` 환경 변수를 service-credentials.json 파일의 경로로 업데이트합니다.
 
-1. 서비스 자격 증명 사용자에게 AEM as a Cloud Service 환경에 에셋을 업로드하는 데 필요한 권한이 있는지 확인하십시오. 자세한 내용은 [AEM에서 액세스 구성](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials#configure-access-in-aem) 페이지를 참조하십시오.
+1. 서비스 자격 증명 사용자에게 AEM as a Cloud Service 환경에 에셋을 업로드하는 데 필요한 권한이 있는지 확인하십시오. 자세한 내용은 [AEM에서 액세스 구성](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials#configure-access-in-aem) 페이지를 참조하십시오.
 
 >[!ENDTABS]
 
