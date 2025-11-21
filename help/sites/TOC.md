@@ -78,7 +78,7 @@ ht-degree: 98%
 + 생성형 AI {#generative-ai}
    + [변형 생성](./generative-ai/generate-variations.md)
 + 콘텐츠 조각 {#content-fragments}
-   + [콘텐츠 조각 콘솔](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html?lang=ko){target=_blank}
+   + [콘텐츠 조각 콘솔](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html){target=_blank}
    + [콘텐츠 조각 작성](content-fragments/content-fragments-feature-video-use.md)
    + [콘텐츠 조각 게재](content-fragments/content-fragments-delivery-feature-video-use.md)
    + [콘텐츠 조각 번역](content-fragments/content-fragments-translation-feature-video-use.md)
@@ -86,7 +86,7 @@ ht-degree: 98%
 + 경험 조각 {#experience-fragments}
    + [경험 조각 사용](experience-fragments/experience-fragments-feature-video-use.md)
    + [빌딩 블록](experience-fragments/building-blocks.md)
-   + [콘텐츠 조각과 경험 조각 비교](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=ko){target=_blank}
+   + [콘텐츠 조각과 경험 조각 비교](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html){target=_blank}
 + Edge Delivery Services{#edge-delivery-services}
    + [개요](./edge-delivery-services/overview.md)
    + 개발{#developing}
@@ -119,8 +119,8 @@ ht-degree: 98%
 + 개발 {#developing}
    + [Edge Delivery Services](developing/edge-delivery-services.md)
    + [AEM Project Archetype](developing/aem-project-archetype.md)
-   + [AEM Sites 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko){target=_blank}
-   + [AEM Headless 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ko){target=_blank}
+   + [AEM Sites 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html){target=_blank}
+   + [AEM Headless 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html){target=_blank}
    + [AEM SPA 편집기 및 React 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html){target=_blank}
    + [페이지 속성 확장](developing/page-properties-technical-video-develop.md)
    + [반응형 중단점](developing/responsive-breakpoints.md)
@@ -171,7 +171,7 @@ ht-degree: 98%
       + [FPID 생성](integrations/platform/fpid.md)
       + [Web SDK](integrations/platform/web-sdk.md)
       + [Platform Web SDK를 사용한 Analytics](integrations/platform/analytics-using-web-sdk.md)
-      + [Adobe Target](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/personalization/overview)
+      + [Adobe Target](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/personalization/overview)
    + Adobe Experience Platform의 태그 {#experience-platform-data-collection-tags}
       + [개요](integrations/experience-platform/data-collection/tags/overview.md)
       + [태그 속성 만들기](integrations/experience-platform/data-collection/tags/create-tag-property.md)
@@ -186,9 +186,9 @@ ht-degree: 98%
       + [클릭한 구성 요소를 Adobe Analytics에서 추적](integrations/analytics/track-clicked-component.md)
       + [Analysis Workspace를 사용하여 데이터 분석](integrations/analytics/create-analytics-workspace.md)
    + Adobe Target {#target}
-      + [개요](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/personalization/overview)
-      + [설치](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/personalization/setup/integrate-adobe-tags)
-      + [사용 사례](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/personalization/overview#use-cases)
+      + [개요](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/personalization/overview)
+      + [설치](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/personalization/setup/integrate-adobe-tags)
+      + [사용 사례](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/personalization/overview#use-cases)
 + 동료로부터 배우기 {#expert-resources}
    + [개요](expert-resources/learn-from-your-peers-overview.md)
    + [AEM Sites에서 작성 가이드 만들기](expert-resources/authoring-guide-in-sites.md)
