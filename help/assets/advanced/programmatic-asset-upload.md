@@ -23,7 +23,7 @@ ht-degree: 1%
 [aem-upload](https://github.com/adobe/aem-upload) Node.js 라이브러리를 사용하는 클라이언트 애플리케이션을 사용하여 AEM as a Cloud Service 환경에 자산을 업로드하는 방법을 알아봅니다.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3476952?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3476959?captions=kor&quality=12&learn=on)
 
 
 ## 학습 내용
