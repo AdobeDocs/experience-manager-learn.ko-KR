@@ -23,4 +23,4 @@ ht-degree: 0%
 
 AEM의 콘텐츠 조각 편집기에 대한 간략한 소개입니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3424373/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3477334/?captions=kor&learn=on)

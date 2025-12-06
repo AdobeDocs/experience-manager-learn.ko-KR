@@ -41,7 +41,7 @@ AEM Sites의 페이지 차이 기능 에서는 페이지에서 변경된 콘텐�
 
 ## 시작 페이지 비교 {#comparing-launch-pages}
 
->[!VIDEO](https://video.tv.adobe.com/v/17746?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3477345?captions=kor&quality=12&learn=on)
 
 페이지 차이 기능을 사용하여 블루프린트와 라이브 카피, 블루프린트와 언어 사본 간의 차이를 식별할 수도 있습니다.
 

@@ -71,7 +71,7 @@ Adobe Experience Manager의 콘텐츠 조각 콘솔을 사용하면 콘텐츠 �
             <a href="./basics/content-fragment-editor.md" title="편집기 개요"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3424373?format=jpeg"
+                src="https://video.tv.adobe.com/v/3477334?captions=kor&format=jpeg"
                 alt="편집기 개요">
             </a>
           </figure>
@@ -138,7 +138,7 @@ Adobe Experience Manager의 콘텐츠 조각 콘솔을 사용하면 콘텐츠 �
             <a href="./editor/new-editor-toggle.md" title="새로운 편집기 토글"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3419312?format=jpeg" alt="새로운
+                src="https://video.tv.adobe.com/v/3477323?captions=kor&format=jpeg" alt="새로운
                 편집기 토글">
             </a>
           </figure>

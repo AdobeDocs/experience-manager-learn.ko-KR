@@ -27,4 +27,4 @@ AEM의 GraphQL API를 사용할 때 AEM 작성자 및 게시 환경을 활용하
 + AEM 작성 및 게시 아키텍처와 콘텐츠 게시 방법을 이해합니다
 + AEM 게시 환경을 사용한 Headless 전달에 대한 모범 사례 알아보기
 
->[!VIDEO](https://video.tv.adobe.com/v/333296?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3450956?captions=kor&quality=12&learn=on)
