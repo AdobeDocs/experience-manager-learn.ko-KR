@@ -12,9 +12,9 @@ last-substantial-update: 2023-01-12T00:00:00Z
 doc-type: Tutorial
 exl-id: e2922278-4d0b-4f28-a999-90551ed65fb4
 duration: 881
-source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
+source-git-commit: dc29a4b7857ee8d1405c9ef8d14f09374c2bfd01
 workflow-type: tm+mt
-source-wordcount: '1963'
+source-wordcount: '1962'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,9 @@ ht-degree: 0%
 
 Adobe Experience Manager(AEM) as a Cloud Service과의 통합은 AEM 서비스를 안전하게 인증할 수 있어야 합니다. AEM의 Developer Console은 외부 애플리케이션, 시스템 및 서비스가 HTTP를 통해 AEM 작성자 또는 게시 서비스와 프로그래밍 방식으로 상호 작용하는 데 사용되는 서비스 자격 증명에 대한 액세스 권한을 부여합니다.
 
-AEM은 Adobe Developer Console을 통해 관리되는 [S2S OAuth](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)를 사용하여 다른 Adobe 제품과 통합됩니다. 서비스 계정과의 사용자 정의 통합을 위해 AEM Developer Console에서 JWT 자격 증명을 사용 및 관리합니다.
+AEM은 Adobe Developer Console을 통해 관리되는 [S2S OAuth](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)를 사용하여 다른 Adobe 제품과 통합됩니다. 서비스 계정과의 사용자 정의 통합을 위해 AEM Developer Console에서 JWT 자격 증명을 사용 및 관리합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/344048?quality=12&learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/330519?quality=12&learn=on)
 
 서비스 자격 증명은 [로컬 개발 액세스 토큰](./local-development-access-token.md)과 비슷하게 나타날 수 있지만 몇 가지 주요 방법으로 다릅니다.
 
@@ -124,7 +124,7 @@ AEM as Cloud Service 환경의 서비스 자격 증명이 초기화되면 Adobe 
 
 + 서비스 자격 증명이 있으면 외부 애플리케이션이 AEM as a Cloud Service에 액세스할 때 로컬 개발 액세스 토큰 대신 이 액세스 토큰을 사용합니다
 
-이 자습서에서는 Adobe의 `@adobe/jwt-auth` npm 모듈을 사용하여 (1) 서비스 자격 증명에서 JWT를 생성하고, (2) 단일 함수 호출에서 액세스 토큰으로 교환합니다. 애플리케이션이 JavaScript을 기반으로 하지 않는 경우 [다른 언어의 샘플 코드](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/samples/)를 검토하여 서비스 자격 증명에서 JWT를 만드는 방법을 알아보고 Adobe IMS와 액세스 토큰으로 교환하십시오.
+이 자습서에서는 Adobe의 `@adobe/jwt-auth` npm 모듈을 사용하여 (1) 서비스 자격 증명에서 JWT를 생성하고, (2) 단일 함수 호출에서 액세스 토큰으로 교환합니다. 애플리케이션이 JavaScript 기반이 아닌 경우 서비스 자격 증명에서 JWT를 생성하는 사용자 지정 코드를 원하는 언어로 개발하고 Adobe IMS와 액세스 토큰으로 교환할 수 있습니다.
 
 ## 서비스 자격 증명 읽기
 
@@ -186,7 +186,7 @@ function getCommandLineParams() {
     
     서비스 자격 증명이 365일마다 만료되는 동안 JWT 및 해당 액세스 토큰은 자주 만료되며 만료되기 전에 새로 고쳐야 합니다. Adobe IMS에서 제공하는 &#39;refresh_token&#39;(https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/OAuth/OAuth.md)을 사용하면 됩니다#access-tokens
 
-1. 이러한 변경 사항이 적용되면 AEM Developer Console에서 서비스 자격 증명 JSON이 다운로드되어 이 `index.js`과(와) 동일한 폴더에 `service_token.json`(으)로 저장되었습니다. 이제 응용 프로그램을 실행하여 명령줄 매개 변수 `file`을(를) `service_token.json`(으)로 바꾸고 AEM에서 효과가 나타나도록 `propertyValue`을(를) 새 값으로 업데이트하겠습니다.
+1. 이러한 변경 사항이 적용되면 AEM Developer Console에서 서비스 자격 증명 JSON이 다운로드되어 이 `service_token.json`과(와) 동일한 폴더에 `index.js`(으)로 저장되었습니다. 이제 응용 프로그램을 실행하여 명령줄 매개 변수 `file`을(를) `service_token.json`(으)로 바꾸고 AEM에서 효과가 나타나도록 `propertyValue`을(를) 새 값으로 업데이트하겠습니다.
 
    ```shell
    $ node index.js \
@@ -219,12 +219,12 @@ function getCommandLineParams() {
 
 기술 계정 AEM 사용자가 AEM에 존재하면(액세스 토큰을 사용하여 첫 번째 HTTP 요청 이후) 이 AEM 사용자의 권한은 다른 AEM 사용자와 동일하게 관리할 수 있습니다.
 
-1. 먼저 AEM Developer Console에서 다운로드한 서비스 자격 증명 JSON을 열어 기술 계정의 AEM 로그인 이름을 찾은 다음 `12345678-abcd-9000-efgh-0987654321c@techacct.adobe.com`과(와) 유사한 `integration.email` 값을 찾습니다.
+1. 먼저 AEM Developer Console에서 다운로드한 서비스 자격 증명 JSON을 열어 기술 계정의 AEM 로그인 이름을 찾은 다음 `integration.email`과(와) 유사한 `12345678-abcd-9000-efgh-0987654321c@techacct.adobe.com` 값을 찾습니다.
 1. AEM 관리자로 해당 AEM 환경의 Author 서비스에 로그인합니다
 1. __도구__ > __보안__ > __사용자__(으)로 이동
 1. 1단계에서 식별된 __로그인 이름__&#x200B;을 사용하는 AEM 사용자를 찾아 해당 __속성__&#x200B;을 엽니다.
 1. __그룹__ 탭으로 이동하여 __DAM 사용자__ 그룹(에셋에 대한 쓰기 액세스 권한으로 사용)을 추가합니다.
-   + 최적의 사용 권한을 얻으려면 [AEM에서 제공한 사용자 그룹 목록을](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=ko#built-in-users-and-groups)에 추가하십시오. AEM에서 제공한 사용자 그룹으로 충분하지 않은 경우 직접 만들고 적절한 권한을 추가합니다.
+   + 최적의 사용 권한을 얻으려면 [AEM에서 제공한 사용자 그룹 목록을](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#built-in-users-and-groups)에 추가하십시오. AEM에서 제공한 사용자 그룹으로 충분하지 않은 경우 직접 만들고 적절한 권한을 추가합니다.
 1. __저장 후 닫기__ 탭
 
 AEM에서 자산에 대한 쓰기 권한을 가질 수 있는 기술 계정을 사용하여 애플리케이션을 다시 실행하십시오.
@@ -255,7 +255,7 @@ $ node index.js \
 1. `folder` 명령줄 매개 변수로 지정된 자산 폴더로 이동합니다(예: __WKND__ > __영어__ > __모험__ > __나파 와인 테이스팅__).
 1. 폴더의 에셋에 대한 __속성__&#x200B;을 엽니다.
 1. __고급__ 탭으로 이동
-1. 업데이트된 속성의 값(예: __Copyright__)을 검토하십시오. 이 값은 이제 `propertyValue` 매개 변수에 제공된 값(예: __WKND 제한된 사용__)을 반영합니다.`metadata/dc:rights`
+1. 업데이트된 속성의 값(예: __Copyright__)을 검토하십시오. 이 값은 이제 `metadata/dc:rights` 매개 변수에 제공된 값(예: `propertyValue`WKND 제한된 사용&#x200B;__)을 반영합니다.__
 
 ![WKND 제한된 사용 메타데이터 업데이트](./assets/service-credentials/asset-metadata.png)
 
