@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Adobe Experience Manager(AEM) as a Cloud Service과의 통합은 AEM 서비스를 안전하게 인증할 수 있어야 합니다. AEM의 Developer Console은 외부 애플리케이션, 시스템 및 서비스가 HTTP를 통해 AEM 작성자 또는 게시 서비스와 프로그래밍 방식으로 상호 작용하는 데 사용되는 서비스 자격 증명에 대한 액세스 권한을 부여합니다.
 
-AEM은 Adobe Developer Console을 통해 관리되는 [S2S OAuth](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)를 사용하여 다른 Adobe 제품과 통합됩니다. 서비스 계정과의 사용자 정의 통합을 위해 AEM Developer Console에서 JWT 자격 증명을 사용 및 관리합니다.
+AEM은 Adobe Developer Console을 통해 관리되는 [S2S OAuth](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)를 사용하여 다른 Adobe 제품과 통합됩니다. 서비스 계정과의 사용자 정의 통합을 위해 AEM Developer Console에서 JWT 자격 증명을 사용 및 관리합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330519?quality=12&learn=on)
 
@@ -224,7 +224,7 @@ function getCommandLineParams() {
 1. __도구__ > __보안__ > __사용자__(으)로 이동
 1. 1단계에서 식별된 __로그인 이름__&#x200B;을 사용하는 AEM 사용자를 찾아 해당 __속성__&#x200B;을 엽니다.
 1. __그룹__ 탭으로 이동하여 __DAM 사용자__ 그룹(에셋에 대한 쓰기 액세스 권한으로 사용)을 추가합니다.
-   + 최적의 사용 권한을 얻으려면 [AEM에서 제공한 사용자 그룹 목록을](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#built-in-users-and-groups)에 추가하십시오. AEM에서 제공한 사용자 그룹으로 충분하지 않은 경우 직접 만들고 적절한 권한을 추가합니다.
+   + 최적의 사용 권한을 얻으려면 [AEM에서 제공한 사용자 그룹 목록을](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=ko#built-in-users-and-groups)에 추가하십시오. AEM에서 제공한 사용자 그룹으로 충분하지 않은 경우 직접 만들고 적절한 권한을 추가합니다.
 1. __저장 후 닫기__ 탭
 
 AEM에서 자산에 대한 쓰기 권한을 가질 수 있는 기술 계정을 사용하여 애플리케이션을 다시 실행하십시오.
