@@ -24,4 +24,4 @@ CDN 규칙, Edge Delivery 필터 또는 로그 전달과 같은 구성의 제어
 
 >[!VIDEO](https://video.tv.adobe.com/v/3458975/?learn=on&enablevpops)
 
-구성 옵션 및 형식에 대한 전체 개요는 [Edge Delivery 구성 파이프라인 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/config-pipeline#yamls-for-eds)를 참조하십시오.
+구성 옵션 및 형식에 대한 전체 개요는 [Edge Delivery 구성 파이프라인 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/operations/config-pipeline#yamls-for-eds)를 참조하십시오.
