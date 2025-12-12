@@ -210,11 +210,11 @@ ADC 프로젝트를 만든 후 원하는 AEM API를 추가하고, 인증을 설�
 
 1. 구성 변경 사항을 커밋하고 Cloud Manager 파이프라인이 연결된 원격 Git 저장소에 변경 사항을 푸시합니다.
 
-1. Cloud Manager에서 [구성 파이프라인](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#config-deployment-pipeline)을 사용하여 위의 변경 사항을 배포합니다.
+1. Cloud Manager에서 [구성 파이프라인](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#config-deployment-pipeline)을 사용하여 위의 변경 사항을 배포합니다.
 
    ![YAML 배포](./assets/setup/config-pipeline.png)
 
-`api.yaml` 파일은 [RDE](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/overview), [명령줄 도구 사용](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)에도 설치할 수 있습니다. 이 기능은 구성 변경 사항을 프로덕션 환경에 배포하기 전에 테스트하는 데 유용합니다.
+`api.yaml` 파일은 [RDE](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/rde/overview), [명령줄 도구 사용](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)에도 설치할 수 있습니다. 이 기능은 구성 변경 사항을 프로덕션 환경에 배포하기 전에 테스트하는 데 유용합니다.
 
 ## 다음 단계
 
