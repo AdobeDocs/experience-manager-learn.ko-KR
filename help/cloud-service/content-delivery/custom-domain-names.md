@@ -4,7 +4,7 @@ description: AEM as a Cloud Service 호스팅 웹 사이트에 대한 사용자 
 version: Experience Manager as a Cloud Service
 feature: Cloud Manager, Custom Domain Names
 topic: Architecture, Migration
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Intermediate
 doc-type: Tutorial
 duration: 130
@@ -12,10 +12,10 @@ last-substantial-update: 2024-08-09T00:00:00Z
 jira: KT-15946
 thumbnail: KT-15946.jpeg
 exl-id: e11ff38c-e823-4631-a5b0-976c2d11353e
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
-source-wordcount: '599'
-ht-degree: 1%
+source-wordcount: '594'
+ht-degree: 2%
 
 ---
 
@@ -82,5 +82,5 @@ Adobe 관리 CDN 또는 고객 관리 CDN을 사용하여 도메인 이름을 �
 
 도메인 이름 관리 프로세스를 이해했으므로 아래 자습서에 따라 AEM as a Cloud Service 웹 사이트에 대한 사용자 정의 도메인 이름을 구현할 수 있습니다.
 
-**[Adobe 관리 CDN을 사용하는 사용자 지정 도메인 이름](./custom-domain-name-with-adobe-managed-cdn.md)**: 이 자습서에서는 사용자 지정 도메인 이름을 Adobe 관리 CDN을 사용하는 **AEM as a Cloud Service 웹 사이트에 추가**&#x200B;하는 방법에 대해 알아봅니다.
+**[Adobe 관리 CDN을 사용하는 사용자 지정 도메인 이름](./custom-domain-name-with-adobe-managed-cdn.md)**: 이 자습서에서는 사용자 지정 도메인 이름을 Adobe 관리 CDN을 사용하는 **AEM as a Cloud Service 웹 사이트에 추가**하는 방법에 대해 알아봅니다.
 **[고객 관리 CDN을 사용한 사용자 지정 도메인 이름](./custom-domain-names-with-customer-managed-cdn.md)**: 이 자습서에서는 고객 관리 CDN을 사용한 **AEM as a Cloud Service 웹 사이트에 사용자 지정 도메인 이름을 추가하는 방법**&#x200B;을 배웁니다.

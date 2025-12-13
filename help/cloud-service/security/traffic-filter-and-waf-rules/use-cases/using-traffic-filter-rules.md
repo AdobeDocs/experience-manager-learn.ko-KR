@@ -4,15 +4,15 @@ description: AEM as a Cloud Service에서 Adobe 권장 표준 트래픽 필터 �
 version: Experience Manager as a Cloud Service
 feature: Security
 topic: Security, Administration, Architecture
-role: Admin, Architect
+role: Admin, Developer
 level: Intermediate
 doc-type: Tutorial
 last-substantial-update: 2025-06-04T00:00:00Z
 jira: KT-18307
 thumbnail: null
 exl-id: 5e235220-82f6-46e4-b64d-315f027a7024
-source-git-commit: b7f567da159865ff04cb7e9bd4dae0b140048e7d
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '1780'
 ht-degree: 100%
 
@@ -38,7 +38,7 @@ AEM as a Cloud Service에서 _Adobe 권장_ **표준 트래픽 필터 규칙**&#
 
 - AEM WKND 프로젝트의 `/config/cdn.yaml` 파일에 표준 트래픽 필터 규칙을 추가합니다.
 - 변경 사항을 Cloud Manager Git 저장소에 커밋하고 푸시합니다.
-- Cloud Manager Config Pipeline을 사용하여 AEM 환경에 변경 사항을 배포합니다.
+- Cloud Manager 구성 파이프라인을 사용하여 AEM 환경에 변경 사항을 배포합니다.
 - [Vegeta](https://github.com/tsenart/vegeta)를 사용하여 DoS 공격을 시뮬레이션하여 규칙을 테스트합니다.
 - AEMCS CDN 로그 및 ELK 대시보드 도구를 사용하여 결과를 분석합니다.
 
@@ -164,9 +164,9 @@ data:
 
 - 변경 사항을 Cloud Manager Git 저장소에 커밋하고 푸시합니다.
 
-- [앞서 만든](../setup.md#deploy-rules-using-adobe-cloud-manager) Cloud Manager Config Pipeline을 사용하여 AEM 환경에 변경 사항을 배포합니다.
+- [앞서 만든](../setup.md#deploy-rules-using-adobe-cloud-manager) Cloud Manager 구성 파이프라인을 사용하여 AEM 환경에 변경 사항을 배포합니다.
 
-  ![Cloud Manager Config Pipeline](../assets/use-cases/cloud-manager-config-pipeline.png)
+  ![Cloud Manager 구성 파이프라인](../assets/use-cases/cloud-manager-config-pipeline.png)
 
 ## 규칙 테스트
 

@@ -3,14 +3,14 @@ title: 1장 - Dispatcher 개념, 패턴 및 패턴 방지
 description: 이 장에서는 Dispatcher의 역사와 역학에 대해 간략하게 소개하고, AEM 개발자가 구성 요소를 디자인하는 방법에 영향을 주는 방법에 대해 설명합니다.
 feature: Dispatcher
 topic: Architecture
-role: Architect
+role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: 3bdb6e36-4174-44b5-ba05-efbc870c3520
 duration: 3855
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
-source-wordcount: '17384'
+source-wordcount: '17382'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## 개발자가 인프라에 관심을 가져야 하는 이유
 
-Dispatcher은 대부분의 AEM 설치에서 필수적인 부분입니다(일부 설치는 아님). Dispatcher 구성 방법과 팁 및 요령을 설명하는 많은 온라인 문서를 찾을 수 있습니다.
+Dispatcher은 대부분의 필수적인 부분입니다(일부 AEM 설치는 아님). Dispatcher 구성 방법과 팁 및 요령을 설명하는 많은 온라인 문서를 찾을 수 있습니다.
 
 그러나 이러한 정보 조각은 항상 매우 기술적인 수준에서 시작합니다. 즉, 원하는 작업을 이미 알고 있다고 가정하고 원하는 작업을 수행하는 방법에 대한 세부 정보만 제공합니다. Dispatcher로 수행할 수 있는 작업과 수행할 수 없는 작업에 대해 _기능 및 이유_&#x200B;를 설명하는 개념적 문서를 찾지 못했습니다.
 
@@ -69,9 +69,9 @@ Dispatcher은
 
 * 역방향 프록시
 
-* Apache의 범용성에 AEM 관련 기능을 추가하고 다른 모든 Apache 모듈과 원활하게 작동하는 Apache httpd 웹 서버용 모듈입니다(예: SSL 또는 SSI에 다음에서 보는 바와 같이 포함됨)
+* Apache의 범용성에 AEM 관련 기능을 추가하고 다른 모든 Apache 모듈과 원활하게 작동하는 Apache httpd 웹 서버용 모듈입니다(예: SSL 또는 SSI에 다음에서 보는 바와 같이 포함됨).
 
-웹 초기에는 사이트에 수백 명의 방문자가 있을 것으로 예상됩니다. 여러 AEM 게시 서버에 대한 요청 로드를 &quot;디스패치됨&quot; 또는 밸런싱한 Dispatcher 한 개의 설정이며 일반적으로 충분했습니다. 따라서 이름이 &quot;Dispatcher&quot;입니다. 그러나 최근에는 이 설정이 더 이상 자주 사용되지 않습니다.
+웹 초기에는 사이트에 수백 명의 방문자가 있을 것으로 예상됩니다. 여러 AEM 게시 서버에 대한 요청 로드를 &quot;발송&quot;하거나 균형을 맞춘 Dispatcher 한 대의 설정으로 충분했으며 일반적으로 &quot;Dispatcher&quot;라는 이름으로 충분했습니다. 그러나 최근에는 이 설정이 더 이상 자주 사용되지 않습니다.
 
 Dispatcher 및 Publish 시스템을 설정하는 다양한 방법은 이 문서의 뒷부분에서 확인할 수 있습니다. 먼저 HTTP 캐싱의 기본 사항으로 시작하겠습니다.
 
@@ -85,12 +85,12 @@ Dispatcher의 기본 사항은 여기에 설명되어 있습니다. Dispatcher�
 
 1. 사용자가 페이지를 요청합니다.
 2. Dispatcher은 이미 해당 페이지의 렌더링된 버전이 있는지 확인합니다. 이 페이지에 대한 첫 번째 요청이고 Dispatcher에서 로컬 캐시 복사본을 찾을 수 없다고 가정해 보겠습니다.
-3. Dispatcher이 Publish 시스템에서 페이지를 요청합니다
-4. Publish 시스템에서 페이지는 JSP 또는 HTL 템플릿에 의해 렌더링됩니다
+3. Dispatcher이 게시 시스템에서 페이지를 요청합니다
+4. 게시 시스템에서 페이지는 JSP 또는 HTL 템플릿에 의해 렌더링됩니다
 5. 페이지가 Dispatcher으로 반환됩니다
 6. Dispatcher이 페이지를 캐시합니다
 7. Dispatcher이 페이지를 브라우저에 반환합니다.
-8. 동일한 페이지를 두 번째로 요청하는 경우 Publish 인스턴스에서 다시 렌더링하지 않아도 Dispatcher 캐시에서 직접 제공할 수 있습니다. 이렇게 하면 Publish 인스턴스에서 사용자 및 CPU 사이클에 대한 대기 시간이 절약됩니다.
+8. 동일한 페이지가 두 번째로 요청되면 게시 인스턴스에서 다시 렌더링하지 않고 Dispatcher 캐시에서 직접 제공될 수 있습니다. 따라서 게시 인스턴스에서 사용자 및 CPU 주기를 기다리는 시간이 절약됩니다.
 
 우리는 마지막 섹션에서 &quot;페이지&quot;에 대해 이야기하고 있었습니다. 그러나 이미지, CSS 파일, PDF 다운로드 등과 같은 다른 리소스에도 동일한 스키마가 적용됩니다.
 
@@ -100,13 +100,13 @@ Dispatcher 모듈은 호스팅 Apache 서버가 제공하는 기능을 활용합
 
 파일 이름은 요청된 리소스의 URL에 의해 파생됩니다. `/foo/bar.html` 파일을 요청하면 /`var/cache/docroot/foo/bar.html` 아래에 저장됩니다.
 
-원칙적으로 모든 파일이 캐시되어 Dispatcher에 정적으로 저장되는 경우 Publish 시스템의 플러그를 가져올 수 있으며 Dispatcher은 간단한 웹 서버 역할을 합니다. 하지만 이것은 단지 원리를 설명하기 위한 것이다. 실제 생활은 더 복잡하다. 모든 것을 캐시할 수는 없으며 렌더링 프로세스의 동적 특성으로 인해 리소스 수가 무한대가 될 수 있으므로 캐시가 완전히 &quot;가득 참&quot;인 것은 아닙니다. 정적 파일 시스템의 모델은 Dispatcher의 기능에 대한 대략적인 그림을 생성하는 데 도움이 됩니다. 또한 Dispatcher의 제한 사항을 설명하는 데 도움이 됩니다.
+원칙적으로 모든 파일이 캐시되어 Dispatcher에 정적으로 저장되는 경우 게시 시스템의 플러그를 가져올 수 있으며 Dispatcher은 간단한 웹 서버 역할을 합니다. 하지만 이것은 단지 원리를 설명하기 위한 것이다. 실제 생활은 더 복잡하다. 모든 것을 캐시할 수는 없으며 렌더링 프로세스의 동적 특성으로 인해 리소스 수가 무한대가 될 수 있으므로 캐시가 완전히 &quot;가득 참&quot;인 것은 아닙니다. 정적 파일 시스템의 모델은 Dispatcher의 기능에 대한 대략적인 그림을 생성하는 데 도움이 됩니다. 또한 Dispatcher의 제한 사항을 설명하는 데 도움이 됩니다.
 
 #### AEM URL 구조 및 파일 시스템 매핑
 
 Dispatcher을 더 자세히 이해하기 위해 간단한 샘플 URL의 구조를 다시 살펴보겠습니다.  아래 예를 살펴보겠습니다.
 
-`http://domain.com/path/to/resource/pagename.selectors.html/path/suffix.ext?parameter=value&otherparameter=value#fragment`
+`http://domain.com/path/to/resource/pagename.selectors.html/path/suffix.ext?parameter=value&amp;otherparameter=value#fragment`
 
 * `http`은(는) 프로토콜을 나타냅니다.
 
@@ -116,7 +116,7 @@ Dispatcher을 더 자세히 이해하기 위해 간단한 샘플 URL의 구조�
 
 여기서 AEM 파일 시스템과 Apache 파일 시스템 사이에는 약간의 차이가 있습니다.
 
-AEM에서
+AEM,
 
 * `pagename`은(는) 리소스 레이블입니다.
 
@@ -128,7 +128,7 @@ AEM에서
 
 * `?parameter=value&otherparameter=value`은(는) URL의 쿼리 섹션입니다. 임의의 매개 변수를 AEM에 전달하는 데 사용됩니다. 매개 변수가 있는 URL은 캐시할 수 없으므로 매개 변수는 반드시 필요한 경우로 제한해야 합니다.
 
-* `#fragment`. URL의 조각 부분이 AEM으로 전달되지 않고 브라우저에서만 사용됩니다. JavaScript 프레임워크에서는 &quot;라우팅 매개 변수&quot;로 사용되거나 페이지의 특정 부분으로 이동합니다.
+* `#fragment`. URL의 조각 부분이 AEM으로 전달되지 않습니다. 이 부분은 브라우저에서만 사용됩니다. JavaScript 프레임워크에서는 &quot;라우팅 매개 변수&quot;로 사용되거나 페이지의 특정 부분으로 이동합니다.
 
 Apache(*아래 다이어그램 참조*)에서
 
@@ -138,7 +138,7 @@ URL에 `path/suffix.ext` 접미사가 있으면
 
 * `pagename.selectors.html`이(가) 폴더로 만들어졌습니다.
 
-* `pagename.selectors.html` 폴더의 폴더 `path`
+* `path` 폴더의 폴더 `pagename.selectors.html`
 
 * `suffix.ext`은(는) `path` 폴더의 파일입니다. 참고: 접미사에 확장명이 없으면 파일이 캐시되지 않습니다.
 
@@ -200,7 +200,7 @@ URL에 접미사가 포함된 경우에도 동일한 규칙이 적용됩니다. 
 
 `http://domain.com/home.html/suffix.html`
 
-AEM에서 절대적으로 유효합니다. 로컬 개발 시스템에는 Dispatcher이 없으면 문제가 발생하지 않습니다. 또한 UAT 또는 로드 테스트에서도 문제가 발생하지 않을 가능성이 높습니다. 우리가 직면한 문제는 너무 미묘해서 대부분의 시험을 통과했다.  피크 타임에 있고 해결할 시간이 제한되어 있고 서버 액세스 권한 또는 이를 수정할 리소스가 없을 때 이 문제가 사용자에게 매우 큰 영향을 미칩니다. 우리는 그곳에 갔다...
+이 변수는 AEM에서 절대적으로 유효합니다. 로컬 개발 시스템에는 Dispatcher이 없으면 문제가 발생하지 않습니다. 또한 UAT 또는 로드 테스트에서도 문제가 발생하지 않을 가능성이 높습니다. 우리가 직면한 문제는 너무 미묘해서 대부분의 시험을 통과했다.  피크 타임에 있고 해결할 시간이 제한되어 있고 서버 액세스 권한 또는 이를 수정할 리소스가 없을 때 이 문제가 사용자에게 매우 큰 영향을 미칩니다. 우리는 그곳에 갔다...
 
 그래서... 뭐가 문제야?
 
@@ -304,7 +304,7 @@ invalidate-path:  /content/dam/path/to/image
 <no body>
 ```
 
-무효화는 쉽습니다. Dispatcher의 특수 &quot;/invalidate&quot; URL에 대한 간단한 GET 요청입니다. HTTP-body가 필요하지 않습니다. &quot;payload&quot;는 &quot;invalidate-path&quot; 헤더일 뿐입니다. 또한 헤더의 invalidate-path는 Dispatcher에서 캐시한 파일 또는 파일이 아니라 AEM이 알고 있는 리소스입니다. AEM은 리소스만 알고 있습니다. 리소스가 요청될 때 런타임에 확장, 선택기 및 접미사가 사용됩니다. AEM은 리소스에서 사용된 선택기에 대한 부기를 수행하지 않으므로 리소스 경로는 리소스를 활성화할 때 확실히 알 수 있습니다.
+무효화는 쉽습니다. Dispatcher의 특수 &quot;/invalidate&quot; URL에 대한 간단한 GET 요청입니다. HTTP-body가 필요하지 않습니다. &quot;payload&quot;는 &quot;invalidate-path&quot; 헤더일 뿐입니다. 또한 헤더의 invalidate-path는 Dispatcher이 캐시한 파일 또는 파일이 아니라 AEM이 알고 있는 리소스입니다. AEM은 리소스만 알고 있습니다. 리소스가 요청될 때 런타임에 확장, 선택기 및 접미사가 사용됩니다. AEM은 리소스에 사용된 선택기에 대한 부기를 수행하지 않으므로 리소스 경로는 리소스를 활성화할 때 확실히 알 수 있습니다.
 
 이 정도면 충분합니다. 리소스가 변경된 경우 해당 리소스의 모든 렌디션도 변경되었다고 안전하게 가정할 수 있습니다. 이 예제에서 이미지가 변경된 경우 새 썸네일도 렌더링됩니다.
 
@@ -336,7 +336,7 @@ AEM에 업로드된 이미지 또는 기타 이진 파일과 달리 HTML 페이�
 
 ![](assets/chapter-1/content-references.png)
 
-AEM에서는 매력적으로 작동하지만 Publish 인스턴스에서 Dispatcher을 사용하면 이상한 일이 발생합니다.
+AEM에서는 매력적으로 작동하는 것만 가능하지만, 게시 인스턴스에서 Dispatcher을 사용하는 경우 이상한 일이 발생합니다.
 
 웹 사이트를 게시했다고 상상해 보십시오. 캐나다 페이지의 제목은 &quot;Canada&quot;입니다. 방문자가 해당 페이지에 대한 티저 참조가 있는 홈 페이지를 요청하면 &quot;캐나다&quot; 페이지의 구성 요소가 다음과 같이 렌더링됩니다
 
@@ -351,7 +351,7 @@ AEM에서는 매력적으로 작동하지만 Publish 인스턴스에서 Dispatch
 
 이제 마케팅 담당자는 티저 헤드라인이 실행 가능해야 한다는 것을 알게 되었습니다. 그래서 그는 제목을 &quot;캐나다&quot;에서 &quot;캐나다 방문&quot;으로 변경하기로 결정하고 이미지도 업데이트합니다.
 
-그는 편집된 &quot;캐나다&quot; 페이지를 게시하고 이전에 게시된 홈 페이지를 다시 방문하여 변경 사항을 확인합니다. 하지만 거기엔 아무 것도 바뀌지 않았어요 여전히 이전 티저가 표시됩니다. 그는 &quot;겨울 스페셜&quot;을 두 번 점검한다. 해당 페이지는 이전에 요청된 적이 없기 때문에 Dispatcher에 정적으로 캐시되지 않습니다. 따라서 이 페이지는 Publish에서 새로 렌더링했으며 이제 이 페이지에 새로운 &quot;캐나다 방문&quot; 티저가 포함됩니다.
+그는 편집된 &quot;캐나다&quot; 페이지를 게시하고 이전에 게시된 홈 페이지를 다시 방문하여 변경 사항을 확인합니다. 하지만 거기엔 아무 것도 바뀌지 않았어요 여전히 이전 티저가 표시됩니다. 그는 &quot;겨울 스페셜&quot;을 두 번 점검한다. 해당 페이지는 이전에 요청된 적이 없기 때문에 Dispatcher에 정적으로 캐시되지 않습니다. 따라서 이 페이지는 Publish에서 새로 렌더링되며 이제 이 페이지에 새로운 &quot;캐나다 방문&quot; 티저가 포함됩니다.
 
 ![Dispatcher이 홈 페이지에 오래된 포함된 콘텐츠를 저장](assets/chapter-1/dispatcher-storing-stale-content.png)
 
@@ -367,7 +367,7 @@ AEM에서는 매력적으로 작동하지만 Publish 인스턴스에서 Dispatch
 
 Dispatcher은 리소스가 변경될 때 이 리소스를 사용한 모든 페이지를 렌더링하고 플러시하는 동안 해당 리소스가 접촉하는 모든 리소스를 추적한다고 생각할 수 있습니다. 하지만 Dispatcher은 페이지를 렌더링하지 않습니다. 렌더링은 Publish 시스템에서 수행됩니다. Dispatcher은 렌더링된 .html 파일에 어떤 리소스가 들어가는지 알지 못합니다.
 
-아직도 납득이 안 가요? *&quot;일종의 종속성 추적&quot;*&#x200B;을(를) 구현하는 방법이 있어야 한다고 생각할 수 있습니다. *was*&#x200B;이(가) 있습니다. Communiqué 3 AEM의 고조부는 페이지를 렌더링하는 데 사용되는 _session_&#x200B;에서 종속성 추적기를 구현했습니다.
+아직도 납득이 안 가요? *&quot;일종의 종속성 추적&quot;*&#x200B;을(를) 구현하는 방법이 있어야 한다고 생각할 수 있습니다. *was*&#x200B;이(가) 있습니다. AEM의 고조부였던 코뮤니케 3에는 페이지를 렌더링하는 데 사용된 _session_&#x200B;에 구현된 종속성 추적기가 있습니다.
 
 요청 중에 이 세션을 통해 얻은 각 리소스는 현재 렌더링 중인 URL의 종속성으로 추적되었습니다.
 
@@ -429,7 +429,7 @@ Dispatcher은 파일 확장명에 따라 자동 무효화 스키마를 적용할
 
 자동 무효화를 위한 파일 끝을 구성할 수 있습니다. 이론적으로 자동 무효화에 대한 모든 확장을 포함할 수 있습니다. 그러나 이것은 매우 높은 가격에 온다는 것을 명심하십시오. 오래된 리소스가 의도하지 않게 배달되는 것을 볼 수는 없지만 지나치게 무효화되면 배달 성능이 크게 저하됩니다.
 
-예를 들어 PNG 및 JPG이 동적으로 렌더링되고 다른 리소스에 따라 렌더링되는 체계를 구현한다고 가정해 보겠습니다. 고해상도 이미지를 더 작은 웹 호환 해상도로 다시 조정할 수 있습니다. 당신이 있는 동안 압축률도 변합니다. 이 예제의 해상도 및 압축 속도는 고정 상수가 아니라 이미지를 사용하는 구성 요소에서 구성 가능한 매개 변수입니다. 이제 이 매개 변수가 변경되면 이미지를 무효화해야 합니다.
+예를 들어 PNG 및 JPG가 동적으로 렌더링되는 스키마를 구현하고, 이를 위해 다른 리소스에 의존한다고 가정해 보겠습니다. 고해상도 이미지를 더 작은 웹 호환 해상도로 다시 조정할 수 있습니다. 당신이 있는 동안 압축률도 변합니다. 이 예제의 해상도 및 압축 속도는 고정 상수가 아니라 이미지를 사용하는 구성 요소에서 구성 가능한 매개 변수입니다. 이제 이 매개 변수가 변경되면 이미지를 무효화해야 합니다.
 
 문제 없음 - 방금 자동 무효화에 이미지를 추가할 수 있고 변경 사항이 있을 때마다 항상 이미지를 새로 렌더링할 수 있다는 것을 알게 되었습니다.
 
@@ -445,7 +445,7 @@ Dispatcher은 파일 확장명에 따라 자동 무효화 스키마를 적용할
 
 ##### 자동 무효화 예외: 리소스 전용 무효화
 
-Dispatcher에 대한 무효화 요청은 일반적으로 복제 에이전트에 의해 Publish 시스템에서 실행됩니다.
+Dispatcher에 대한 무효화 요청은 일반적으로 복제 에이전트에 의해 게시 시스템에서 실행됩니다.
 
 종속성에 대해 매우 자신 있는 경우 무효화된 자체 복제 에이전트를 빌드할 수 있습니다.
 
@@ -493,7 +493,7 @@ Lightbox에 로드되는 팝업 창이나 컨텐츠에 대해서도 마찬가지
 
 반응형 이미지 구성 요소는 다음과 같이 구현됩니다.
 
-구성 요소에는 두 개의 부분이 있습니다. 첫 번째 부분은 이미지의 HTML 마크업을 렌더링하고, 두 번째 부분은 참조된 이미지의 이진 데이터를 &quot;스풀&quot;합니다. 반응형 디자인이 적용된 최신 웹 사이트이므로 간단한 `<img src"…">` 태그가 아닌 `<picture/>` 태그의 이미지 집합을 렌더링하고 있습니다. 각 장치에 대해 서로 다른 두 이미지를 DAM에 업로드하고 이미지 구성 요소에서 참조합니다.
+구성 요소에는 두 개의 부품이 있습니다. 첫 번째 부분은 이미지의 HTML 마크업을 렌더링하고, 두 번째 부분은 참조된 이미지의 이진 데이터를 &quot;스풀&quot;합니다. 반응형 디자인이 적용된 최신 웹 사이트이므로 간단한 `<img src"…">` 태그가 아닌 `<picture/>` 태그의 이미지 집합을 렌더링하고 있습니다. 각 장치에 대해 서로 다른 두 이미지를 DAM에 업로드하고 이미지 구성 요소에서 참조합니다.
 
 구성 요소에는 전용 선택기를 사용하여 각각 지정된 세 개의 렌더링 스크립트(JSP, HTL 또는 서블릿으로 구현됨)가 있습니다.
 
@@ -624,15 +624,15 @@ Unix 타임스탬프는 실제 구현에 적합합니다. 가독성을 높이기
 
 지문은 쿼리 매개 변수를 사용하는 URL과 같이 쿼리 매개 변수로 사용할 수 없습니다.   캐시할 수 없습니다. 선택기나 접미사를 지문에 사용할 수 있습니다.
 
-`/content/dam/flower.jpg` 파일의 `jcr:lastModified` 날짜는 2018년 12월 31일 23:59이라고 가정해 보겠습니다. 지문이 있는 URL은 `/content/home/jcr:content/par/respi.fp-2018-31-12-23-59.jpg`입니다.
+`/content/dam/flower.jpg` 파일의 `jcr:lastModified` 날짜는 2018년 12월 31일, 23:59이라고 가정해 보겠습니다. 지문이 있는 URL은 `/content/home/jcr:content/par/respi.fp-2018-31-12-23-59.jpg`입니다.
 
 이 URL은 참조된 리소스(`flower.jpg`) 파일이 변경되지 않는 한 안정적으로 유지됩니다. 따라서 무한한 시간 동안 캐시될 수 있으며 캐시 킬러가 아닙니다.
 
-이 URL은 응답형 이미지 구성 요소에서 만들고 제공해야 합니다. 기본 AEM 기능이 아닙니다.
+이 URL은 응답형 이미지 구성 요소에서 만들고 제공해야 합니다. 기본 AEM 기능은 아닙니다.
 
 그것이 기본 개념입니다. 그러나 간과하기 쉬운 몇 가지 세부 사항이 있습니다.
 
-이 예에서 구성 요소는 23:59에 렌더링되고 캐시되었습니다. 이제 이미지가 변경되었습니다. 예를 들어 00:00에 변경하겠습니다.  구성 요소 _이(가) 해당 마크업에 새 지문 URL을 생성합니다._
+이 예제에서 구성 요소는 23:59에 렌더링되고 캐시되었습니다. 이제 00:00에 이미지가 변경되었습니다.  구성 요소 _이(가) 해당 마크업에 새 지문 URL을 생성합니다._
 
 _should_&#x200B;이라고 생각할 수 있지만 그렇지 않습니다. 이미지의 이진만 변경되었으며 포함 페이지를 터치하지 않았으므로 HTML 마크업을 다시 렌더링할 필요가 없습니다. 따라서 Dispatcher은 이전 지문이 있는 페이지를 제공하므로 이전 버전의 이미지가 제공됩니다.
 
@@ -664,7 +664,7 @@ statfile level은 하위 트리의 깊이 루트 노드가 있는 위치를 정�
 
 #### 사용자 지정 무효화 에이전트 구현
 
-어쨌든 - 새로운 URL을 사용하여 다시 렌더링할 수 있도록 &quot;.jpg&quot; 또는 &quot;.png&quot;가 변경된 경우 어떻게든 HTML 페이지를 무효화하도록 Dispatcher에 알려야 합니다.
+어쨌든 - 새로운 URL을 사용하여 다시 렌더링할 수 있도록 &quot;.jpg&quot; 또는 &quot;.png&quot;가 변경된 경우 Dispatcher에 알려 HTML-Pages를 무효화해야 합니다.
 
 프로젝트에서 볼 수 있는 것은 (예: 게시 시스템의 특수 복제 에이전트로서, 해당 사이트의 이미지가 게시될 때마다 사이트에 대한 무효화 요청을 보냅니다.
 
@@ -742,9 +742,9 @@ Invalidate-path /content/mysite/dummy
 …
 ```
 
-각 요청은 Dispatcher을 우회하여 Publish 인스턴스에 로드됩니다. 그리고 더 나쁜 것은 Dispatcher에 따라 파일을 만드는 것입니다.
+각 요청은 Dispatcher을 무시하여 게시 인스턴스에 로드됩니다. 그리고 더 나쁜 것은 Dispatcher에 따라 파일을 만드는 것입니다.
 
-따라서... 간단한 캐시 킬러로 지문을 사용하는 대신 이미지의 jcr:lastModified 날짜를 확인하고 예상 날짜가 아닌 경우 404를 반환해야 합니다. Publish 시스템에서는 시간이 걸리고 CPU 사이클이 소요됩니다. 애초에 방지하려는 작업입니다.
+따라서... 간단한 캐시 킬러로 지문을 사용하는 대신 이미지의 jcr:lastModified 날짜를 확인하고 예상 날짜가 아닌 경우 404를 반환해야 합니다. 게시 시스템에서 시간이 다소 걸리며 CPU이 순환합니다. 이는 처음부터 방지하려는 것입니다.
 
 #### 고주파수 릴리스에서 URL 지문 주의
 
@@ -756,7 +756,7 @@ DAM에서 가져온 자산뿐만 아니라 JS 및 CSS 파일과 관련 리소스
 
 #### 짧은 휴식
 
-와우, 고려해야 할 세부 사항이 많네요, 그렇죠? 그리고 쉽게 이해되고 테스트되고 디버깅되는 것을 거부합니다. 그리고 이 모든 것이 겉으로 보기에 우아한 해결책을 위한 것입니다. 확실히, 그것은 우아하다 - 하지만 오직 AEM 전용 관점에서만. Dispatcher과 함께 그것은 지저분해진다.
+와우, 고려해야 할 세부 사항이 많네요, 그렇죠? 그리고 쉽게 이해되고 테스트되고 디버깅되는 것을 거부합니다. 그리고 이 모든 것이 겉으로 보기에 우아한 해결책을 위한 것입니다. 단연 우아하지만 AEM 전용 관점에서만 볼 수 있습니다. Dispatcher과 함께 그것은 지저분해진다.
 
 또한 - 하나의 기본 경고가 해결되지 않습니다. 이미지가 다른 페이지에서 여러 번 사용되는 경우 해당 페이지 아래에 캐시됩니다. 거기에는 캐싱 시너지가 별로 없다.
 
@@ -776,13 +776,13 @@ AEM도 종속성에 대해 거의 알지 못합니다. 적절한 의미 체계�
 
 AEM은 일부 참조를 알고 있습니다. 참조된 페이지나 에셋을 삭제하거나 이동하려고 할 때 이 지식을 사용하여 경고합니다. 에셋을 삭제할 때 내부 검색을 쿼리하면 됩니다. 콘텐츠 참조에는 매우 특별한 양식이 있습니다. &quot;/content&quot;로 시작하는 경로 표현식입니다. 따라서 전체 텍스트 인덱싱을 손쉽게 수행할 수 있으며 필요할 때 쿼리할 수 있습니다.
 
-이 경우 Publish 시스템에서 해당 경로가 변경되었을 때 특정 경로 검색을 트리거하는 사용자 지정 복제 에이전트가 필요합니다.
+이 경우 게시 시스템에 사용자 지정된 복제 에이전트가 필요하며, 이는 해당 경로가 변경되었을 때 특정 경로 검색을 트리거합니다.
 
 예:
 
 `/content/dam/flower.jpg`
 
-Publish에서 변경되었습니다. 에이전트는 &quot;/content/dam/flower.jpg&quot;에 대한 검색을 실행하고 해당 이미지를 참조하는 모든 페이지를 찾습니다.
+이(가) 게시 시 변경되었습니다. 에이전트는 &quot;/content/dam/flower.jpg&quot;에 대한 검색을 실행하고 해당 이미지를 참조하는 모든 페이지를 찾습니다.
 
 그런 다음 Dispatcher에 여러 무효화 요청을 발행할 수 있습니다. 자산이 포함된 각 페이지마다 하나씩.
 
@@ -910,14 +910,14 @@ respi2 구성 요소는 응답형 이미지를 표시하는 구성 요소입니�
 
 #### 선택기를 사용할 때 잘못된 요청 필터링
 
-선택기 수를 줄이는 것이 좋은 시작이었습니다. 일반적으로 유효한 매개 변수의 수를 항상 절대 최소값으로 제한해야 합니다. 이 작업을 영리하게 수행하는 경우 기본 AEM 시스템에 대한 깊은 지식 없이 정적 필터 세트를 사용하여 AEM 외부의 웹 애플리케이션 방화벽을 활용하여 시스템을 보호할 수도 있습니다.
+선택기 수를 줄이는 것이 좋은 시작이었습니다. 일반적으로 유효한 매개 변수의 수를 항상 절대 최소값으로 제한해야 합니다. 이렇게 하면 기본 AEM 시스템에 대한 깊이 있는 지식 없이 정적 필터 세트를 사용하여 AEM 외부의 웹 애플리케이션 방화벽을 활용하여 시스템을 보호할 수 있습니다.
 
 ```
 Allow: /content/dam/(-\_/a-z0-9)+/(-\_a-z0-9)+
        \.respi\.q-(20|40|60|80|100)\.jpg
 ```
 
-웹 애플리케이션 방화벽이 없는 경우 Dispatcher 또는 AEM 자체에서 필터링해야 합니다. AEM에서 수행하는 경우 다음을 확인하십시오.
+웹 애플리케이션 방화벽이 없는 경우 Dispatcher 또는 AEM 자체에서 필터링해야 합니다. AEM에서 수행하는 경우 다음을 확인하십시오
 
 1. 이 필터는 CRX에 너무 많이 액세스하거나 메모리 및 시간을 낭비하지 않고 매우 효율적으로 구현됩니다.
 
@@ -974,11 +974,11 @@ Allow: /content/dam/(-\_/a-z0-9)+/(-\_a-z0-9)+
 
 #### 웹 애플리케이션 방화벽
 
-웹 보안을 위해 설계된 웹 응용 프로그램 방화벽 장치나 &quot;WAF&quot;가 있는 경우 이러한 기능을 반드시 활용해야 합니다. 그러나 WAF는 콘텐츠 애플리케이션에 대한 지식이 제한된 사람만 사용하며 유효한 요청을 필터링하거나 너무 많은 유해 요청을 전달한다는 것을 알 수 있습니다. WAF를 운영하는 직원들이 교대 근무와 릴리스 일정이 다른 부서에 할당되어 있으며, 커뮤니케이션이 직속 팀원들과 같이 긴밀하지 않을 수 있고 항상 시간에 변화를 얻지 못하여 결과적으로 개발 및 콘텐츠 속도가 저하되는 것을 알 수 있습니다.
+웹 보안을 위해 설계된 웹 애플리케이션 방화벽 장치나 &quot;WAF&quot;가 있는 경우 이러한 기능을 반드시 활용해야 합니다. 하지만 WAF은 콘텐츠 애플리케이션에 대한 지식이 제한된 사람만 운영하고 유효한 요청을 필터링하거나 너무 많은 유해 요청을 허용한다는 사실을 알 수 있습니다. WAF을 운영하는 직원들이 근무조와 릴리스 일정이 다른 부서에 할당되어 있으며, 커뮤니케이션이 직접 팀 동료와 긴밀하지 않을 수 있고 항상 시간에 따른 변화를 얻지 못하여 결과적으로 개발 및 콘텐츠 속도가 저하된다는 것을 알게 될 수 있습니다.
 
 당신은 몇 가지 일반적인 규칙이나 심지어 당신의 직감이 강화될 수 있다고 말하는 차단 목록에 추가하다로 끝날 수 있습니다.
 
-#### Dispatcher 및 Publish 필터링
+#### Dispatcher 및 게시 필터링
 
 다음 단계는 Apache 코어 및/또는 Dispatcher에서 URL 필터링 규칙을 추가하는 것입니다.
 
@@ -986,7 +986,7 @@ Allow: /content/dam/(-\_/a-z0-9)+/(-\_a-z0-9)+
 
 #### 모니터링 및 디버깅
 
-실제로 각 수준에 약간의 보안이 제공됩니다. 하지만 어떤 수준에서 요청이 필터링되는지 확인할 수 있는 수단이 있는지 확인하십시오. Publish 시스템, Dispatcher 및 WAF의 로그 파일에 직접 액세스하여 체인의 어떤 필터가 요청을 차단하는지 확인해야 합니다.
+실제로 각 수준에 약간의 보안이 제공됩니다. 하지만 어떤 수준에서 요청이 필터링되는지 확인할 수 있는 수단이 있는지 확인하십시오. 게시 시스템, Dispatcher 및 WAF의 로그 파일에 직접 액세스하여 체인의 어떤 필터가 요청을 차단하는지 확인해야 합니다.
 
 ### 선택기 및 선택기 확산
 
@@ -1080,7 +1080,7 @@ width = w-100, w-200, w-400, w-800, w-1000, w-1200
 >
 >마지막으로 수정된 날짜는 캐시된 파일이며 클라이언트의 브라우저에서 파일이 요청되어 파일 시스템에서 최종적으로 생성된 날짜입니다. 리소스의 `jcr:lastModified` 날짜가 아닙니다.
 
-statfile(`.stat`)의 마지막 수정 날짜는 Dispatcher에서 AEM의 무효화 요청을 받은 날짜입니다.
+statfile의 마지막 수정 날짜(`.stat`)는 Dispatcher에서 AEM의 무효화 요청을 받은 날짜입니다.
 
 Dispatcher이 두 개 이상 있는 경우 이로 인해 이상한 효과가 발생할 수 있습니다. 브라우저에 Dispatcher 최신 버전이 있을 수 있습니다(Dispatcher이 두 개 이상 있는 경우). 또는 Dispatcher이 다른 Dispatcher에서 발급한 브라우저 버전이 오래되어 새 복사본을 불필요하게 보냈다고 생각할 수 있습니다. 이러한 효과는 성능 또는 기능 요구 사항에 큰 영향을 주지 않습니다. 브라우저에 최신 버전이 있으면 시간이 지남에 따라 레벨이 조정됩니다. 하지만 브라우저 캐싱 동작을 최적화하고 디버깅하는 경우에는 다소 혼란스러울 수 있습니다. 조심하세요.
 
@@ -1108,7 +1108,7 @@ statfileslevel이 0인 기본 사례를 살펴보겠습니다.
 
 이제 게시하여 `/content/site-b/home` 또는 `/content/site-b` 아래의 다른 리소스를 무효화하면 `.stat` 파일이 `/content/site-b/`에 만들어집니다.
 
-`/content/site-a/` 아래의 콘텐츠는 영향을 받지 않습니다. 이 콘텐츠는 `/content/site-a/`의 `.stat` 파일과 비교됩니다. 두 개의 별도 무효화 도메인을 만들었습니다.
+`/content/site-a/` 아래의 콘텐츠는 영향을 받지 않습니다. 이 콘텐츠는 `.stat`의 `/content/site-a/` 파일과 비교됩니다. 두 개의 별도 무효화 도메인을 만들었습니다.
 
 ![statfileslevel &quot;1&quot;은(는) 다른 무효화 도메인을 만듭니다](assets/chapter-1/statfiles-level-1.png)
 
@@ -1145,7 +1145,7 @@ statfileslevel은 설정의 모든 사이트에 동일하게 적용됩니다. �
   ..
 ```
 
-전자는 _2_&#x200B;의 `statfileslevel`이(가) 필요하지만 후자는 _3_&#x200B;이(가) 필요합니다.
+전자는 `statfileslevel`2 _의_&#x200B;이(가) 필요하지만 후자는 _3_&#x200B;이(가) 필요합니다.
 
 이상적인 상황은 아니야 _3_(으)로 설정하면 하위 분기 `/home`, `/products` 및 `/about` 사이의 작은 사이트 내에서 자동 무효화가 작동하지 않습니다.
 
@@ -1167,7 +1167,7 @@ statfileslevel은 설정의 모든 사이트에 동일하게 적용됩니다. �
 
 어느 수준이 적당할까요? 사이트 간 종속성 수에 따라 다릅니다. 페이지 렌더링에 대해 확인하는 포함은 &quot;엄격한 종속성&quot;으로 간주됩니다. 이 안내서 시작 부분에 _티저_ 구성 요소를 도입했을 때 이러한 _포함_&#x200B;을 보여 주었습니다.
 
-_하이퍼링크_&#x200B;는 더 부드러운 형식의 종속성입니다. 한 웹 사이트 내에서 하이퍼링크를 사용할 가능성이 높으며 웹 사이트 간에 링크가 있을 가능성도 낮지 않습니다. 단순 하이퍼링크는 일반적으로 웹 사이트 간에 종속성을 만들지 않습니다. 사이트에서 facebook으로 설정한 외부 링크만 생각해 보십시오. facebook에서 변경되는 내용이 있거나 그 반대로 변경되는 경우 페이지를 렌더링하지 않아도 됩니다.
+_하이퍼링크_&#x200B;는 더 부드러운 형식의 종속성입니다. 한 웹 사이트 내에서 하이퍼링크를 사용할 가능성이 높으며 웹 사이트 간에 링크가 있을 가능성도 낮지 않습니다. 단순 하이퍼링크는 일반적으로 웹 사이트 간에 종속성을 만들지 않습니다. 사이트에서 facebook으로 설정한 외부 링크를 생각해 보십시오. Facebook에서 변경된 내용이 있거나 그 반대의 경우 페이지를 렌더링할 필요가 없습니다.
 
 연결된 리소스(예: 탐색 제목)에서 콘텐츠를 읽을 때 종속성이 발생합니다. 이와 같은 종속성은 로컬로 입력한 탐색 제목에만 의존하고 대상 페이지에서 가져오지 않는 경우(외부 링크에서처럼) 방지할 수 있습니다.
 
@@ -1208,7 +1208,7 @@ www.shiny-brand.de
 
 Google과 같은 검색 엔진은 다른 URL에 동일한 콘텐츠가 &quot;기만적&quot;인 것으로 간주합니다. 사용자는 동일한 콘텐츠를 제공하는 팜을 만들어 등급을 더 높게 매기거나 더 자주 나열하려고 할 수 있습니다. 검색 엔진은 이러한 시도를 인식하고 단순히 콘텐츠를 재활용하는 페이지의 등급을 실제로 낮춥니다.
 
-각 페이지의 헤더 섹션에서 각 관련 페이지에 `<link rel="alternate">` 태그를 설정하여 투명 순위를 매기고, 실제로는 동일한 콘텐츠를 가진 페이지가 두 개 이상 있으며, 시스템을 &quot;게임&quot;하려고 하지 않을 수 있습니다([&quot;Google에 페이지의 현지화된 버전에 대해 알리기&quot;](https://support.google.com/webmasters/answer/189077?hl=en) 참조).
+각 페이지의 헤더 섹션에서 각 관련 페이지에 [ 태그를 설정하여 투명 순위를 매기고, 실제로는 동일한 콘텐츠를 가진 페이지가 두 개 이상 있으며, 시스템을 &quot;게임&quot;하려고 하지 않을 수 있습니다(](https://support.google.com/webmasters/answer/189077?hl=en)&quot;Google에 페이지의 현지화된 버전에 대해 알리기&quot;`<link rel="alternate">` 참조).
 
 ```
 # URL: www.shiny-brand.fr/fr/home/produits.html
@@ -1298,15 +1298,15 @@ Dispatcher에서 이 기능이 구성되는 방법에 대한 자세한 내용은
 
 ### 무효화 시기 수정
 
-AEM Author 및 Publish을 즉시 설치하는 경우 토폴로지가 약간 이상합니다. 작성자는 Publish 시스템에 콘텐츠를 전송하는 동시에 Dispatcher에 무효화 요청을 전송합니다. Publish 시스템과 Dispatcher은 모두 큐에 의해 작성자와 분리되므로 시간이 다소 불행할 수 있습니다. Publish 시스템에서 콘텐츠가 업데이트되기 전에 Dispatcher은 작성자로부터 무효화 요청을 받을 수 있습니다.
+AEM Author 및 Publish를 즉시 설치하는 경우 토폴로지가 약간 이상합니다. 작성자는 게시 시스템에 콘텐츠를 전송하는 동시에 Dispatcher에 무효화 요청을 전송합니다. 게시 시스템과 Dispatcher은 모두 큐에 의해 작성자와 분리되므로 타이밍이 약간 유감스러울 수 있습니다. Dispatcher은 Publish 시스템에서 콘텐츠가 업데이트되기 전에 작성자로부터 무효화 요청을 수신할 수 있습니다.
 
 그동안 클라이언트가 해당 콘텐츠를 요청하면 Dispatcher에서 오래된 콘텐츠를 요청하고 저장합니다.
 
-보다 신뢰할 수 있는 설정은 컨텐츠를 받은 Publish 시스템 _after_&#x200B;에서 무효화 요청을 보냅니다. 문서 &quot;[게시 인스턴스에서 Dispatcher 캐시 무효화](https://helpx.adobe.com/kr/experience-manager/dispatcher/using/page-invalidate.html#InvalidatingDispatcherCachefromaPublishingInstance)&quot;는 세부 정보를 설명합니다.
+더 신뢰할 수 있는 설정은 콘텐츠를 받은 게시 시스템 _after_&#x200B;에서 무효화 요청을 보냅니다. 문서 &quot;[게시 인스턴스에서 Dispatcher 캐시 무효화](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#InvalidatingDispatcherCachefromaPublishingInstance)&quot;는 세부 정보를 설명합니다.
 
 **참조**
 
-[helpx.adobe.com - 게시 인스턴스에서 Dispatcher 캐시 무효화](https://helpx.adobe.com/kr/experience-manager/dispatcher/using/page-invalidate.html#InvalidatingDispatcherCachefromaPublishingInstance)
+[helpx.adobe.com - 게시 인스턴스에서 Dispatcher 캐시 무효화](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#InvalidatingDispatcherCachefromaPublishingInstance)
 
 ### HTTP 헤더 및 헤더 캐싱
 
@@ -1314,11 +1314,11 @@ AEM Author 및 Publish을 즉시 설치하는 경우 토폴로지가 약간 이�
 
 일반적으로 리소스 경로 및 접미사에 의해 파생될 수 있는 정보를 사용하여 `mod_headers`을(를) 사용하여 Apache 서버의 리소스에 누락된 헤더를 다시 적용하기 시작했습니다. 그러나 그것이 항상 충분하지는 않았다.
 
-특히 Dispatcher을 사용하더라도 브라우저에 대한 첫 _uncached_ 응답이 전체 범위의 헤더가 있는 Publish 시스템에서 나온 반면 후속 응답은 제한된 헤더 집합이 있는 Dispatcher에서 생성되었다는 것이 짜증스러웠습니다.
+특히 Dispatcher을 사용하더라도 브라우저에 대한 첫 번째 _캐시되지 않음_ 응답이 전체 범위의 헤더가 있는 Publish 시스템에서 온 반면, 후속 응답은 제한된 헤더 집합이 있는 Dispatcher에서 생성되었다는 것이 짜증스러웠습니다.
 
-Dispatcher 4.1.11 이상에서 Dispatcher은 Publish 시스템에서 생성된 헤더를 저장할 수 있습니다.
+Dispatcher 4.1.11 이상에서 Dispatcher은 게시 시스템에서 생성된 헤더를 저장할 수 있습니다.
 
-이렇게 하면 Dispatcher에서 헤더 논리를 복제하지 않아도 되고 HTTP 및 AEM의 전체 표현력이 출시됩니다.
+이렇게 하면 Dispatcher에서 헤더 논리를 복제하지 않아도 되고 HTTP와 AEM의 전체 표현력이 해제됩니다.
 
 **참조**
 
@@ -1376,17 +1376,17 @@ Cache-Control 및 Pragma는 CDN과 같은 상위 캐싱 계층에 전파되고 �
 
 앞에서 설명한 대로 `Last-Modified` 날짜가 Dispatcher에 의해 생성되면 브라우저에 의해 파일이 요청될 때 캐시된 파일(및 날짜의 파일)이 생성되기 때문에 요청마다 달라질 수 있습니다. 대안은 &quot;e-tags&quot;를 사용하는 것입니다. 이 숫자는 날짜 대신 실제 콘텐츠를 식별하는 숫자입니다(예: 해시 코드를 생성하여).
 
-_ACS Commons 패키지_&#x200B;의 &quot;[Etag 지원](https://adobe-consulting-services.github.io/acs-aem-commons/features/etag/index.html)&quot;에서 이 방법을 사용합니다. 그러나 가격과 함께 제공됩니다. E-Tag는 헤더로 전송해야 하지만 해시 코드 계산에서는 응답을 완전히 읽어야 하므로 응답이 배달되기 전에 기본 메모리에서 완전히 버퍼링되어야 합니다. 이 경우 웹 사이트에 캐시되지 않은 리소스가 더 있을 수 있고 AEM 시스템에서 사용하는 메모리를 주시해야 하는 경우 지연에 부정적인 영향을 미칠 수 있습니다.
+[ACS Commons 패키지](https://adobe-consulting-services.github.io/acs-aem-commons/features/etag/index.html)의 &quot;_Etag 지원_&quot;에서 이 방법을 사용합니다. 그러나 가격과 함께 제공됩니다. E-Tag는 헤더로 전송해야 하지만 해시 코드 계산에서는 응답을 완전히 읽어야 하므로 응답이 배달되기 전에 기본 메모리에서 완전히 버퍼링되어야 합니다. 이 경우 웹 사이트에 캐시되지 않은 리소스가 더 있을 수 있고 AEM 시스템에서 사용하는 메모리를 주시해야 하는 경우 지연에 부정적인 영향을 미칠 수 있습니다.
 
 URL 지문을 사용하는 경우 매우 긴 만료 날짜를 설정할 수 있습니다. 브라우저에서 지문 리소스를 영원히 캐시할 수 있습니다. 새 버전이 새 URL로 표시되어 이전 버전을 업데이트할 필요가 없습니다.
 
 스풀러 패턴을 소개할 때 URL 지문을 활용했습니다. `/etc/design`(CSS, JS)에서 가져온 정적 파일은 거의 변경되지 않으므로 지문으로 사용하기에 적합한 후보입니다.
 
-일반 파일의 경우 일반적으로 30분마다 HTML 재확인, 4시간마다 이미지 다시 확인 등과 같은 고정 체계를 설정합니다.
+일반 파일의 경우 일반적으로 30분마다 HTML 다시 확인, 4시간마다 이미지 다시 확인 등과 같은 고정 체계를 설정합니다.
 
 브라우저 캐싱은 작성자 시스템에서 매우 유용합니다. 편집 환경을 개선하기 위해 브라우저에서 최대한 캐시하려고 합니다. 안타깝게도 가장 비싼 자산인 html 페이지는 캐시될 수 없습니다. 작성자에서 자주 변경되어야 합니다.
 
-AEM의 UI를 구성하는 Granite 라이브러리는 상당히 오랜 시간 동안 캐시될 수 있습니다. 브라우저에서 사이트의 정적 파일(글꼴, CSS 및 JavaScript)을 캐시할 수도 있습니다. `/content/dam`의 이미지도 페이지의 복사 텍스트만큼 자주 변경되지 않으므로 대개 15분 동안 캐시될 수 있습니다. 이미지는 AEM에서 대화식으로 편집되지 않습니다. 이러한 구성 요소는 AEM에 업로드되기 전에 먼저 편집되고 승인됩니다. 따라서 텍스트가 텍스트만큼 자주 변경되지 않는다고 가정할 수 있습니다.
+AEM의 UI를 구성하는 Granite 라이브러리는 상당히 오랜 시간 동안 캐시할 수 있습니다. 브라우저에서 사이트의 정적 파일(글꼴, CSS 및 JavaScript)을 캐시할 수도 있습니다. `/content/dam`의 이미지도 페이지의 복사 텍스트만큼 자주 변경되지 않으므로 대개 15분 동안 캐시될 수 있습니다. 이미지는 AEM에서 대화식으로 편집되지 않습니다. AEM에 업로드하기 전에 먼저 편집하고 승인합니다. 따라서 텍스트가 텍스트만큼 자주 변경되지 않는다고 가정할 수 있습니다.
 
 편집 모드에 있을 때 UI 파일, 사이트 라이브러리 파일 및 이미지를 캐시하면 페이지 다시 로드 속도가 상당히 빨라집니다.
 
@@ -1420,13 +1420,13 @@ AEM의 UI를 구성하는 Granite 라이브러리는 상당히 오랜 시간 동
 
 `www.shiny-brand.fi/home.html`
 
-AEM에서 해당 매핑을 구현해야 합니다. AEM은 잘린 형식에 따라 링크를 렌더링하는 방법을 알아야 하기 때문입니다.
+AEM에서는 잘린 형식에 따라 링크를 렌더링하는 방법을 알고 있어야 하므로 AEM에서 해당 매핑을 구현해야 합니다.
 
-그러나 AEM에만 의존하지 마십시오. 이 경우 캐시의 루트 디렉터리에 `/home.html`과(와) 같은 경로가 있습니다. 이제, 그것이 피니시 또는 독일어 또는 캐나다 웹사이트의 &quot;홈&quot;입니까? 그리고 Dispatcher에 `/home.html` 파일이 있는 경우 `/content/brand/fi/fi/home`에 대한 무효화 요청이 들어올 때 Dispatcher에서 이를 무효화해야 한다는 것을 어떻게 알 수 있습니까?
+하지만 AEM에만 의존하지 마십시오. 이 경우 캐시의 루트 디렉터리에 `/home.html`과(와) 같은 경로가 있습니다. 이제, 그것이 피니시 또는 독일어 또는 캐나다 웹사이트의 &quot;홈&quot;입니까? 그리고 Dispatcher에 `/home.html` 파일이 있는 경우 `/content/brand/fi/fi/home`에 대한 무효화 요청이 들어올 때 Dispatcher에서 이를 무효화해야 한다는 것을 어떻게 알 수 있습니까?
 
 각 도메인에 대해 별도의 docroot가 있는 프로젝트를 보았습니다. 디버깅하고 유지하는 것은 악몽이었고 - 실제로 우리는 그것이 완벽하게 실행되는 것을 보지 못했습니다.
 
-우리는 캐시를 재구성하여 문제를 해결할 수 있다. 모든 도메인에 대한 단일 docroot가 있으며, 서버의 모든 파일이 `/content`(으)로 시작하므로 무효화 요청이 1:1로 처리될 수 있습니다.
+우리는 캐시를 재구성하여 문제를 해결할 수 있다. 모든 도메인에 대한 단일 docroot가 있으며, 서버의 모든 파일이 :1(으)로 시작되었으므로 무효화 요청이 1`/content`(으)로 처리될 수 있습니다.
 
 자르는 부분도 아주 쉬웠어요.  `/etc/map`의 해당 구성으로 인해 AEM에서 잘린 링크를 생성했습니다.
 
@@ -1440,7 +1440,7 @@ AEM에서 해당 매핑을 구현해야 합니다. AEM은 잘린 형식에 따�
   RewriteRule "^(.\*\.html)" "/content/shiny-brand/finland/fi/$1"
 ```
 
-파일 시스템에는 작성자 및 Publish에서도 찾을 수 있는 일반 `/content` 기반 경로가 있으며, 이는 디버깅에 많은 도움이 되었습니다. 올바른 무효화는 말할 것도 없고, 더 이상 문제가 되지 않았습니다.
+파일 시스템에는 이제 작성자 및 게시에서도 찾을 수 있는 일반 `/content` 기반 경로가 있으며, 이는 디버깅에 많은 도움이 되었습니다. 올바른 무효화는 말할 것도 없고, 더 이상 문제가 되지 않았습니다.
 
 브라우저의 URL 슬롯에 표시되는 &quot;표시&quot; URL, URL에 대해서만 수행했습니다. 예를 들어 이미지의 URL은 여전히 순수 &quot;/content&quot; URL이었습니다. 검색 엔진 최적화는 기본 URL을 아름답게 하는 것으로 충분하다고 생각합니다.
 
@@ -1454,7 +1454,7 @@ AEM에서 해당 매핑을 구현해야 합니다. AEM은 잘린 형식에 따�
 
 * [apache.org - Mod 다시 작성](https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html)
 
-* [helpx.adobe.com - 리소스 매핑](https://helpx.adobe.com/kr/experience-manager/6-4/sites/deploying/using/resource-mapping.html)
+* [helpx.adobe.com - 리소스 매핑](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/resource-mapping.html)
 
 ### 오류 처리
 
@@ -1479,7 +1479,7 @@ ErrorDocument 500 "/content/shiny-brand/fi/fi/edocs/error-500.html"
 
 먼저 `error-404.html`은(는) 항상 같은 페이지입니다. 따라서 &quot;_제품_&quot;에 대한 검색 결과가 생성되지 않았습니다&quot;와 같은 개별 메시지는 없습니다. 우리는 쉽게 그것을 받아들일 수 있습니다.
 
-둘째... 내부 서버 오류가 표시되거나 AEM 시스템이 중단되는 경우 AEM에 오류 페이지를 렌더링하도록 요청할 방법이 없습니다. `ErrorDocument` 지시문에 정의된 필수 후속 요청도 실패합니다. `wget`을(를) 통해 정의된 위치에서 오류 페이지를 정기적으로 가져와서 `ErrorDocuments` 지시문에 정의된 정적 파일 위치에 저장하는 cron-job을 실행하여 이 문제를 해결했습니다.
+두 번째... 음, 내부 서버 오류가 표시되거나 AEM 시스템이 중단되는 경우 AEM에 오류 페이지를 렌더링하도록 요청할 수 있는 방법이 없습니다. `ErrorDocument` 지시문에 정의된 필수 후속 요청도 실패합니다. `wget`을(를) 통해 정의된 위치에서 오류 페이지를 정기적으로 가져와서 `ErrorDocuments` 지시문에 정의된 정적 파일 위치에 저장하는 cron-job을 실행하여 이 문제를 해결했습니다.
 
 **참조**
 
@@ -1489,9 +1489,9 @@ ErrorDocument 500 "/content/shiny-brand/fi/fi/edocs/error-500.html"
 
 Dispatcher은 기본적으로 리소스를 전달할 때 권한을 확인하지 않습니다. 이 기능은 일부러 이렇게 구현됩니다. 공개 웹 사이트를 빠르게 하기 위해서입니다. 로그인하여 일부 리소스를 보호하려면 기본적으로 세 가지 옵션이 있습니다.
 
-1. Protect은 요청이 캐시에 도달하기 전에 리소스를 캐시에 저장합니다(예: Dispatcher 앞의 SSO(Single Sign-On) 게이트웨이에 의해 또는 Apache 서버의 모듈로)
+1. 요청이 캐시에 도달하기 전에 리소스를 보호합니다(예: Dispatcher 앞의 SSO(Single Sign-On) 게이트웨이에 의해 또는 Apache 서버의 모듈로)
 
-2. 중요한 리소스를 캐시되지 않도록 제외하므로 항상 Publish 시스템에서 라이브로 제공합니다.
+2. 중요한 리소스를 캐시되지 않도록 제외하므로 항상 게시 시스템에서 라이브로 제공합니다.
 
 3. Dispatcher에서 권한 구분 캐싱 사용
 
@@ -1504,13 +1504,13 @@ Dispatcher은 기본적으로 리소스를 전달할 때 권한을 확인하지 
 >이 패턴에는 각 요청을 _가로채기_&#x200B;하고 Dispatcher에 대한 요청을 승인 또는 거부하는 실제 _인증_&#x200B;을 수행하는 _게이트웨이_&#x200B;가 필요합니다. SSO 시스템이 _인증자_&#x200B;인 경우 옵션 3을 구현해야 하는 사용자의 ID만 설정됩니다. SSO 시스템의 안내서에서 &quot;SAML&quot; 또는 &quot;OAauth&quot;와 같은 용어를 읽는 경우 옵션 3을 구현해야 한다는 강력한 표시기입니다.
 
 
-**옵션 2**. 일반적으로 &quot;캐싱하지 않음&quot;은 좋지 않은 생각입니다. 그 길로 가면 제외되는 트래픽의 양과 중요한 리소스의 수가 작은지 확인합니다. 또는 Publish 시스템에 일부 메모리 내 캐시가 설치되어 있어야 Publish 시스템에서 결과 로드를 처리할 수 있습니다. 이 시리즈의 Part III에 있는 해당 로드에 대해 자세히 알아보십시오.
+**옵션 2**. 일반적으로 &quot;캐싱하지 않음&quot;은 좋지 않은 생각입니다. 그 길로 가면 제외되는 트래픽의 양과 중요한 리소스의 수가 작은지 확인합니다. 또는 Publish 시스템에 메모리 내 캐시가 설치되어 있어야 Publish 시스템이 결과 로드를 처리할 수 있습니다(이 시리즈의 Part III에 있는 로드 추가).
 
-**옵션 3**. &quot;권한 구분 캐싱&quot;은 흥미로운 접근 방식입니다. Dispatcher은 리소스를 캐시하고 있지만 전달하기 전에 AEM 시스템에 캐시할 수 있는지 여부를 묻습니다. 이렇게 하면 Dispatcher에서 Publish으로 추가 요청이 작성되지만, 페이지가 이미 캐시된 경우 일반적으로 Publish 시스템에서 페이지를 다시 렌더링하지 않습니다. 그러나 이 접근 방식에서는 몇 가지 사용자 지정 구현이 필요합니다. 자세한 내용은 [권한 구분 캐싱](https://helpx.adobe.com/kr/experience-manager/dispatcher/using/permissions-cache.html) 문서에서 확인하세요.
+**옵션 3**. &quot;권한 구분 캐싱&quot;은 흥미로운 접근 방식입니다. Dispatcher이 리소스를 캐시하고 있지만 전달하기 전에 AEM 시스템에 캐시할 수 있는지 여부를 묻습니다. 이렇게 하면 Dispatcher에서 게시로 추가 요청이 작성되지만, 일반적으로 페이지가 이미 캐시된 경우 게시 시스템이 페이지를 다시 렌더링하지 않습니다. 그러나 이 접근 방식에서는 몇 가지 사용자 지정 구현이 필요합니다. 자세한 내용은 [권한 구분 캐싱](https://helpx.adobe.com/experience-manager/dispatcher/using/permissions-cache.html) 문서에서 확인하세요.
 
 **참조**
 
-* [helpx.adobe.com - 권한 구분 캐싱](https://helpx.adobe.com/kr/experience-manager/dispatcher/using/permissions-cache.html)
+* [helpx.adobe.com - 권한 구분 캐싱](https://helpx.adobe.com/experience-manager/dispatcher/using/permissions-cache.html)
 
 ### 유예 기간 설정
 
@@ -1528,7 +1528,7 @@ Dispatcher은 기본적으로 리소스를 전달할 때 권한을 확인하지 
 
 자동 무효화에 `grace period`을(를) 사용하도록 Dispatcher을 설정할 수 있습니다. 이렇게 하면 내부적으로 `statfiles` 수정 날짜에 시간이 더 추가됩니다.
 
-예를 들어 `statfile`의 수정 시간이 오늘 12시이고 `gracePeriod`이(가) 2분으로 설정되어 있습니다. 그런 다음 자동 무효화된 모든 파일은 12:01 및 12:02에 유효한 것으로 간주됩니다. 12:02 이후에 다시 렌더링됩니다.
+예를 들어 `statfile`의 수정 시간이 오늘 12:00이고 `gracePeriod`이(가) 2분으로 설정되어 있습니다. 그러면 모든 자동 무효화 파일이 12:01 및 12:02에서 유효한 것으로 간주됩니다. 12:02 이후에 다시 렌더링됩니다.
 
 참조 구성에서는 충분한 이유로 2분 `gracePeriod`을(를) 제안합니다. &quot;2분? 거의 아무것도 아니에요. 내용이 나오기까지 10분 정도 기다릴 수 있습니다...  따라서 더 긴 기간을 설정하고 싶을 수 있습니다. 최소한 이 10분 후에 콘텐츠가 나타난다고 가정해 보겠습니다.
 
@@ -1540,13 +1540,13 @@ Dispatcher은 기본적으로 리소스를 전달할 때 권한을 확인하지 
 
 예를 들어 미디어 사이트를 운영하고 있으며 편집 직원이 5분마다 정기적인 콘텐츠 업데이트를 제공하고 있습니다. gracePeriod를 5분으로 설정하는 것이 좋습니다.
 
-12:00에 간단한 예제로 시작하겠습니다.
+12:00에 빠른 예제로 시작하겠습니다.
 
-12:00 - Statfile이 12:00으로 설정되어 있습니다. 캐시된 모든 파일은 12:05까지 유효한 것으로 간주됩니다.
+12:00 - Statfile이 12:00(으)로 설정되어 있습니다. 캐시된 모든 파일은 12:05까지 유효한 것으로 간주됩니다.
 
-12:01 - 무효화가 발생합니다. 이렇게 하면 그레이트 시간이 12:06으로 늘어납니다.
+12:01 - 무효화가 발생합니다. 이렇게 하면 grate 시간이 12:06(으)로 연장됩니다.
 
-12:05 - 다른 편집자 그의 기사를 게시 - 다른 유예 기간 12:10으로 유예 시간을 연장합니다.
+12:05 - 다른 편집자가 이 문서를 발행하여 다른 유예 기간만큼 유예 시간을 12:10(으)로 연장합니다.
 
 그리고 그 내용은 무효화되지 않습니다. 각 무효화는 *within* gracePeriod를 통해 유예 시간을 효과적으로 연장합니다. `gracePeriod`은(는) 무효화 폭풍을 견딜 수 있도록 설계되었습니다. 하지만 결국에는 비를 맞아야 합니다... 따라서 대피소에 영원히 숨지 않도록 `gracePeriod`을(를) 상당히 짧게 유지하십시오.
 
@@ -1556,7 +1556,7 @@ Dispatcher은 기본적으로 리소스를 전달할 때 권한을 확인하지 
 
 `gracePeriod`은(는) 일반 복제 간격이 `gracePeriod`보다 짧으면 예상할 수 없을 정도로 길어질 수 있습니다.
 
-대체 아이디어는 다음과 같습니다. 고정된 시간 간격에서만 무효화하십시오. 사이의 시간은 항상 오래된 콘텐츠를 제공하는 것을 의미합니다. 무효화는 결국 발생하지만, 여러 무효화가 하나의 &quot;일괄&quot; 무효화에 수집되므로 Dispatcher은 그동안 캐시된 콘텐츠를 제공하고 Publish 시스템에 숨 쉴 수 있는 공기를 제공할 수 있습니다.
+대체 아이디어는 다음과 같습니다. 고정된 시간 간격에서만 무효화하십시오. 사이의 시간은 항상 오래된 콘텐츠를 제공하는 것을 의미합니다. 무효화는 결국 발생하지만, 여러 무효화가 하나의 &quot;일괄&quot; 무효화에 수집되므로 Dispatcher은 그동안 캐시된 콘텐츠를 제공하고 Publish 시스템에 숨통을 틔울 수 있습니다.
 
 구현은 다음과 같습니다.
 
@@ -1570,7 +1570,7 @@ Dispatcher은 기본적으로 리소스를 전달할 때 권한을 확인하지 
 
 <br> 
 
-무효화 요청과 다음 라운드 30초 슬롯 사이에 발생하는 캐시 히트는 오래된 것으로 간주됩니다. Publish에 업데이트가 있지만 Dispatcher은 여전히 이전 콘텐츠를 제공합니다.
+무효화 요청과 다음 라운드 30초 슬롯 사이에 발생하는 캐시 히트는 오래된 것으로 간주됩니다. 게시에는 업데이트가 있지만 Dispatcher은 여전히 이전 콘텐츠를 제공합니다.
 
 이 접근 방식은 후속 요청이 기간을 비결정적으로 연장한다는 것을 두려워하지 않고도 더 긴 유예 기간을 정의하는 데 도움이 될 수 있습니다. 이전에 언급했듯이, 그것은 단지 아이디어일 뿐이고 우리는 그것을 시험해 볼 기회가 없었습니다.
 
@@ -1588,11 +1588,11 @@ Dispatcher은 기본적으로 리소스를 전달할 때 권한을 확인하지 
 
 따라서 이러한 페이지가 매우 인기 있으므로 다른 브라우저에서 새로 들어오는 요청이 있습니다. 홈 페이지를 예로 들어 보겠습니다.
 
-현재 캐시가 유효하지 않기 때문에, 동시에 들어오는 모든 홈 페이지 요청은 높은 로드를 생성하는 Publish 시스템으로 전달됩니다.
+현재 캐시가 유효하지 않기 때문에, 동시에 들어오는 홈 페이지에 대한 모든 요청은 높은 로드를 생성하는 게시 시스템으로 전달됩니다.
 
-![빈 캐시의 동일한 리소스에 대한 병렬 요청: 요청이 Publish으로 전달됩니다](assets/chapter-1/parallel-requests.png)
+![빈 캐시의 동일한 리소스에 대한 병렬 요청: 요청이 Publish로 전달됨](assets/chapter-1/parallel-requests.png)
 
-*빈 캐시의 동일한 리소스에 대한 병렬 요청: 요청이 Publish으로 전달됩니다*
+*빈 캐시의 동일한 리소스에 대한 병렬 요청: 요청이 Publish로 전달됨*
 
 자동 다시 가져오기를 사용하면 이를 어느 정도 완화할 수 있습니다. 대부분의 무효화된 페이지는 자동 무효화 이후에도 여전히 물리적으로 Dispatcher에 저장됩니다. _고려됨_&#x200B;일 뿐입니다. _자동 다시 가져오기_&#x200B;는 오래된 콘텐츠를 다시 가져오기 위해 게시 시스템에 대한 _단일_ 요청을 시작하는 동안 이러한 오래된 페이지를 몇 초 동안 계속 제공함을 의미합니다.
 
@@ -1604,7 +1604,7 @@ Dispatcher은 기본적으로 리소스를 전달할 때 권한을 확인하지 
 
 다시 가져오기를 활성화하려면 자동 무효화 후에 다시 가져올 리소스를 Dispatcher에 알려 주어야 합니다. 활성화한 모든 페이지는 인기 있는 페이지를 포함하여 다른 모든 페이지를 자동 무효화한다는 것을 기억하십시오.
 
-다시 가져오기는 실제로 각 (!)의 Dispatcher에 알리는 것을 의미합니다. 가장 방문 빈도가 높은 항목과 가장 방문 빈도가 높은 항목을 다시 가져오려는 무효화 요청.
+다시 가져오기는 실제로 각 (!) 무효화 요청의 Dispatcher에 가장 인기 있는 항목과 가장 인기 있는 항목을 다시 가져오도록 알리는 것을 의미합니다.
 
 이는 리소스 URL(경로뿐만 아니라 실제 URL) 목록을 무효화 요청 본문에 넣음으로써 수행됩니다.
 
@@ -1623,7 +1623,7 @@ Content-Length: 207
 /content/my-brand/products/product-2.html
 ```
 
-Dispatcher에 이러한 요청이 표시되면 평소와 같이 자동 무효화가 트리거되고 Publish 시스템에서 새로운 콘텐츠를 다시 가져오기 위한 요청이 즉시 대기됩니다.
+Dispatcher에 이러한 요청이 표시되면 평소와 같이 자동 무효화가 트리거되고 게시 시스템에서 새 콘텐츠를 다시 가져오기 위한 요청이 즉시 대기됩니다.
 
 이제 요청 본문을 사용하므로 HTTP 표준에 따라 콘텐츠 유형 및 콘텐츠 길이도 설정해야 합니다.
 
@@ -1635,13 +1635,13 @@ Dispatcher의 캐시 디렉터리를 살펴보면 타임스탬프로 표시된 �
 
 **참조**
 
-[helpx.adobe.com - AEM에서 캐시된 페이지 무효화](https://helpx.adobe.com/kr/experience-manager/dispatcher/using/page-invalidate.html)
+[helpx.adobe.com - AEM에서 캐시된 페이지 무효화](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html)
 
 ### Publish 시스템 보호
 
-Dispatcher은 유지 관리 목적으로만 사용되는 요청에서 Publish 시스템을 차단하여 약간의 추가 보안을 제공합니다. 예를 들어 `/crx/de` 또는 `/system/console` URL을 공개하지 않습니다.
+Dispatcher은 유지 관리 목적으로만 설계된 요청에서 게시 시스템을 차단하여 약간의 추가 보안을 제공합니다. 예를 들어 `/crx/de` 또는 `/system/console` URL을 공개하지 않습니다.
 
-시스템에 WAF(Web Application Firewall)가 설치되어 있어도 문제가 없습니다. 그러나 이는 귀하의 예산에 상당한 양을 추가하며 모든 프로젝트가 WAF를 운영 및 유지 관리할 수 있는 여유가 있는 상황은 아닙니다.
+시스템에 웹 애플리케이션 방화벽(WAF)을 설치해도 아무런 해가 없습니다. 그러나 이는 예산에 상당한 영향을 미치고 있으며 모든 프로젝트가 여유가 있고 WAF을 운영 및 유지 관리할 수 있는 상황이 아닙니다.
 
 자주 표시되는 것은 더 취약한 리소스에 대한 액세스를 방지하는 Dispatcher 구성의 Apache 재작성 규칙 세트입니다.
 
@@ -1684,13 +1684,13 @@ Dispatcher을 필터로 사용하는 또 다른 방법은 `dispatcher.any`에서
 
 우리는 한 지시어의 사용을 다른 지시어의 사용을 의무화하고 있는 것이 아니라 모든 지시어의 적절한 혼합을 권장하고 있다.
 
-그러나 필요한 만큼 가능한 한 빨리 체인 내에 URL 공간을 좁히고 가능한 가장 간단한 방법으로 좁히는 것을 고려해 볼 것을 제안합니다. 이러한 기술은 매우 민감한 웹 사이트에서 WAF를 대체하는 것이 아니라는 점을 여전히 명심하십시오. 어떤 사람들은 이런 기술을 &quot;가난한 사람의 방화벽&quot; 이라고 부르는데, 그 이유가 있다.
+그러나 필요한 만큼 가능한 한 빨리 체인 내에 URL 공간을 좁히고 가능한 가장 간단한 방법으로 좁히는 것을 고려해 볼 것을 제안합니다. 이러한 기술은 매우 민감한 웹 사이트에서 WAF을 대체하는 것이 아니라는 점을 여전히 염두에 두십시오. 어떤 사람들은 이런 기술을 &quot;가난한 사람의 방화벽&quot; 이라고 부르는데, 그 이유가 있다.
 
 **참조**
 
 [apache.org- sethandler 지시문](https://httpd.apache.org/docs/2.4/mod/core.html#sethandler)
 
-[helpx.adobe.com - 콘텐츠 필터에 대한 액세스 구성](https://helpx.adobe.com/kr/experience-manager/dispatcher/using/dispatcher-configuration.html#ConfiguringAccesstoContentfilter)
+[helpx.adobe.com - 콘텐츠 필터에 대한 액세스 구성](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#ConfiguringAccesstoContentfilter)
 
 ### 정규 표현식 및 글로브를 사용한 필터링
 
@@ -1843,7 +1843,7 @@ Globs를 사용하고 싶을 때는
 
 **참조**
 
-[helpx.adobe.com - glob 속성에 대한 패턴 디자인](https://helpx.adobe.com/kr/experience-manager/dispatcher/using/dispatcher-configuration.html#DesigningPatternsforglobProperties)
+[helpx.adobe.com - glob 속성에 대한 패턴 디자인](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#DesigningPatternsforglobProperties)
 
 ### 프로토콜 사양
 
@@ -1906,17 +1906,17 @@ CQ-Handle: <path-pattern>
 
 ## 추가 리소스
 
-Dispatcher 캐싱에 대한 유용한 개요 및 소개: [https://helpx.adobe.com/kr/experience-manager/dispatcher/using/dispatcher.html](https://helpx.adobe.com/kr/experience-manager/dispatcher/using/dispatcher.html)
+Dispatcher 캐싱에 대한 유용한 개요 및 소개: [https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)
 
-모든 지시문이 포함된 Dispatcher 설명서에 대해 설명합니다. [https://helpx.adobe.com/kr/experience-manager/dispatcher/using/dispatcher-configuration.html](https://helpx.adobe.com/kr/experience-manager/dispatcher/using/dispatcher-configuration.html)
+모든 지시문이 포함된 Dispatcher 설명서에 대해 설명합니다. [https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html](https://helpx.adobe.com/kr/experience-manager/dispatcher/using/dispatcher-configuration.html)
 
-몇 가지 자주 묻는 질문: [https://helpx.adobe.com/kr/experience-manager/using/dispatcher-faq.html](https://helpx.adobe.com/kr/experience-manager/using/dispatcher-faq.html)
+몇 가지 자주 묻는 질문: [https://helpx.adobe.com/experience-manager/using/dispatcher-faq.html](https://helpx.adobe.com/experience-manager/using/dispatcher-faq.html)
 
 Dispatcher 최적화에 대한 웨비나 녹화 - 적극 권장: [https://my.adobeconnect.com/p7th2gf8k43?proto=true](https://my.adobeconnect.com/p7th2gf8k43?proto=true)
 
 프레젠테이션 &quot;컨텐츠 무효화의 저평가된 능력&quot;, &quot;adaptTo()&quot; 컨퍼런스(Potsdam 2018 [https://adapt.to/2018/en/schedule/the-underappreciated-power-of-content-invalidation.html](https://adapt.to/2018/en/schedule/the-underappreciated-power-of-content-invalidation.html))
 
-AEM에서 캐시된 페이지 무효화: [https://helpx.adobe.com/kr/experience-manager/dispatcher/using/page-invalidate.html](https://helpx.adobe.com/kr/experience-manager/dispatcher/using/page-invalidate.html)
+AEM에서 캐시된 페이지를 무효화하는 중: [https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html)
 
 ## 다음 단계
 

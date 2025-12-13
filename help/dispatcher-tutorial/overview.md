@@ -3,12 +3,12 @@ title: AEM Dispatcher 캐시 튜토리얼
 description: 이 튜토리얼의 목표는 Dispatcher 작동 방식과 사용 방법을 이해하도록 돕는 것입니다.
 feature: Dispatcher
 topic: Architecture
-role: Architect
+role: Developer
 level: Beginner
 doc-type: Catalog
 exl-id: 9780870e-9ac6-46f9-abc4-87c9470ef7e7
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 100%
 

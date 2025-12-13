@@ -4,7 +4,7 @@ description: Maven 기반 풀스택 AEM Sites 프로젝트의 프론트엔드 �
 version: Experience Manager as a Cloud Service
 feature: AEM Project Archetype, Cloud Manager, CI-CD Pipeline
 topic: Content Management, Development, Development, Architecture
-role: Developer, Architect, Admin
+role: Developer, Admin
 level: Intermediate
 jira: KT-10689
 mini-toc-levels: 1
@@ -13,8 +13,8 @@ recommendations: noDisplay, noCatalog
 doc-type: Tutorial
 exl-id: 65e8d41e-002a-4d80-a050-5366e9ebbdea
 duration: 364
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 100%
 
@@ -56,14 +56,14 @@ ht-degree: 100%
 
 개발 단계의 경우 스타일 지정, 리브랜딩과 같은 프론트엔드 변경은 `ui.frontend/src/main/webpack` 폴더의 CSS, JS 파일을 업데이트하여 수행됩니다. 그다음 빌드 단계에서는 [Webpack](https://webpack.js.org/) 모듈 번들러와 Maven 플러그인이 이러한 파일을 `ui.apps` 모듈에서 최적화된 AEM clientlibs로 변환합니다.
 
-Cloud Manager에서 [__풀스택__ 파이프라인을 실행하는 경우 프론트엔드 변경 사항은 AEM as a Cloud Service 환경에 배포됩니다](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?lang=ko).
+Cloud Manager에서 [__풀스택__ 파이프라인을 실행하는 경우 프론트엔드 변경 사항은 AEM as a Cloud Service 환경에 배포됩니다](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html).
 
 프론트엔드 리소스는 `/etc.clientlibs/`로 시작하는 URI 경로를 통해 웹 브라우저에 전달되며, 일반적으로 AEM Dispatcher와 CDN에 캐시됩니다.
 
 
 >[!NOTE]
 >
-> 마찬가지로 __AEM 빠른 사이트 생성 여정__&#x200B;에서 [프론트엔드 변경 사항](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/customize-theme.html?lang=ko)은 __프론트엔드__ 파이프라인을 실행함으로써 AEM as a Cloud Service 환경에 배포됩니다. 관련 내용은 [파이프라인 설정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup.html?lang=ko)을 참조하시기 바랍니다.
+> 마찬가지로 __AEM 빠른 사이트 생성 여정__&#x200B;에서 [프론트엔드 변경 사항](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/customize-theme.html)은 __프론트엔드__ 파이프라인을 실행함으로써 AEM as a Cloud Service 환경에 배포됩니다. 관련 내용은 [파이프라인 설정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup.html)을 참조하시기 바랍니다.
 
 ### WKND Sites 프로젝트에서 Webpack 구성 검토 {#development-frontend-webpack-clientlib}
 
@@ -134,7 +134,7 @@ Cloud Manager에서 [__풀스택__ 파이프라인을 실행하는 경우 프론
 
 ### AEM as a Cloud Service에 배포 {#deployment-frontend-aemaacs}
 
-[__풀스택__ 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?lang=ko&#full-stack-pipeline)은 이러한 변경 사항을 클라우드 AEM as a Cloud Service 환경에 배포합니다.
+[__풀스택__ 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?#full-stack-pipeline)은 이러한 변경 사항을 클라우드 AEM as a Cloud Service 환경에 배포합니다.
 
 
 ### AEM as a Cloud Service에서 게재 {#delivery-frontend-aemaacs}

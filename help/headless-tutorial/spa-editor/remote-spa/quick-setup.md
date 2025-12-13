@@ -3,7 +3,7 @@ title: 빠른 설정 SPA 편집기 및 원격 SPA
 description: 15분 내에 원격 SPA 및 AEM SPA 편집기를 시작하고 실행하는 방법에 대해 알아보십시오.
 topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
-role: Developer, Architect
+role: Developer
 level: Beginner
 jira: KT-7629
 thumbnail: 333181.jpg
@@ -13,9 +13,9 @@ doc-type: Tutorial
 exl-id: ef7a1dad-993a-4c47-a9fb-91fa73de9b5d
 duration: 647
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '730'
 ht-degree: 10%
 
 ---
@@ -69,7 +69,7 @@ _빠른 설정의 비디오 둘러보기_
    # Provide `admin` as the admin user's password
    ```
 
-AEM SDK은 [http://localhost:4502](http://localhost:4502)에 시작되고 자동으로 실행됩니다. 다음 자격 증명을 사용하여 로그인합니다.
+AEM SDK은 [http://localhost:4502](http://localhost:4502)에 시작되고 자동으로 시작됩니다. 다음 자격 증명을 사용하여 로그인합니다.
 
 + 사용자 이름: `admin`
 + 암호: `admin`
@@ -79,21 +79,21 @@ AEM SDK은 [http://localhost:4502](http://localhost:4502)에 시작되고 자동
 이 자습서는 __WKND 2.1.0+의__ 프로젝트(콘텐츠의 경우)에 종속되어 있습니다.
 
 1. [최신 버전의 `aem-guides-wknd.all.x.x.x.zip`을(를) 다운로드](https://github.com/adobe/aem-guides-wknd/releases)
-1. `admin` 자격 증명을 사용하여 [http://localhost:4502/crx/packmgr](http://localhost:4502/crx/packmgr)에서 AEM SDK의 패키지 관리자에 로그인합니다.
-1. 1단계에서 다운로드한 `aem-guides-wknd.all.x.x.x.zip`을(를) __업로드__
-1. `aem-guides-wknd.all-x.x.x.zip` 항목의 __설치__ 단추를 탭합니다.
+1. [http://localhost:4502/crx/packmgr](http://localhost:4502/crx/packmgr)의 AEM SDK 패키지 관리자에 `admin` 자격 증명으로 로그인합니다.
+1. 1단계에서 다운로드한 __을(를)__&#x200B;업로드`aem-guides-wknd.all.x.x.x.zip`
+1. __항목의__&#x200B;설치`aem-guides-wknd.all-x.x.x.zip` 단추를 탭합니다.
 
 ## WKND 앱 SPA 패키지 다운로드 및 설치
 
 빠른 설정을 수행하기 위해 자습서의 최종 AEM 구성 및 콘텐츠가 포함된 AEM 패키지가 여기에 제공됩니다.
 
-1. [다운로드 &#x200B;](./assets/quick-setup/wknd-app.all-1.0.0-SNAPSHOT.zip)
-1. [다운로드 &#x200B;](./assets/quick-setup/wknd-app.ui.content.sample-1.0.1.zip)
-1. `admin` 자격 증명을 사용하여 [http://localhost:4502/crx/packmgr](http://localhost:4502/crx/packmgr)에서 AEM SDK의 패키지 관리자에 로그인합니다.
-1. 1단계에서 다운로드한 `wknd-app.all.x.x.x.zip`을(를) __업로드__
-1. `wknd-app.all.x.x.x.zip` 항목의 __설치__ 단추를 탭합니다.
-1. 2단계에서 다운로드한 `wknd-app.ui.content.sample.x.x.x.zip`을(를) __업로드__
-1. `wknd-app.ui.content.sample.x.x.x.zip` 항목의 __설치__ 단추를 탭합니다.
+1. [다운로드 ](./assets/quick-setup/wknd-app.all-1.0.0-SNAPSHOT.zip)
+1. [다운로드 ](./assets/quick-setup/wknd-app.ui.content.sample-1.0.1.zip)
+1. [http://localhost:4502/crx/packmgr](http://localhost:4502/crx/packmgr)의 AEM SDK 패키지 관리자에 `admin` 자격 증명으로 로그인합니다.
+1. 1단계에서 다운로드한 __을(를)__&#x200B;업로드`wknd-app.all.x.x.x.zip`
+1. __항목의__&#x200B;설치`wknd-app.all.x.x.x.zip` 단추를 탭합니다.
+1. 2단계에서 다운로드한 __을(를)__&#x200B;업로드`wknd-app.ui.content.sample.x.x.x.zip`
+1. __항목의__&#x200B;설치`wknd-app.ui.content.sample.x.x.x.zip` 단추를 탭합니다.
 
 ## WKND 앱 소스 다운로드
 

@@ -1,13 +1,13 @@
 ---
 title: AEM Forms이 포함된 Acroforms
 description: Acroforms와 AEM Forms 통합의 1부. Acroform을 사용하여 적응형 양식을 만들고 데이터를 병합하여 PDF을 가져올 수 있습니다.
-feature: adaptive-forms
+feature: Adaptive Forms
 doc-type: Tutorial
 version: Experience Manager 6.5
 badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 duration: 144
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Acroforms는 Acrobat을 사용하여 만든 양식입니다. Acrobat을 사용�
 >
 >XFA 기반 문서를 보내는 경우 문서를 병합해야 하며 Acrobat Sign 서명 태그가 문서에 정적 텍스트로 표시되어야 합니다.
 
-[Acrobat Sign 텍스트 태그 문서](https://helpx.adobe.com/kr/sign/using/text-tag.html)
+[Acrobat Sign 텍스트 태그 문서](https://helpx.adobe.com/sign/using/text-tag.html)
 
 >[!NOTE]
 >

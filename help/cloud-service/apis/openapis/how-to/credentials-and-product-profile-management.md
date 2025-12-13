@@ -4,7 +4,7 @@ description: AEM API에 대한 자격 증명 및 제품 프로필을 관리하�
 version: Experience Manager as a Cloud Service
 feature: Developing
 topic: Development, Architecture, Content Management
-role: Architect, Developer, Leader
+role: Developer, Leader
 level: Beginner
 doc-type: Article
 jira: KT-17428
@@ -12,7 +12,7 @@ thumbnail: KT-17428.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 277b4789-b035-4904-b489-c827c970fb55
-source-git-commit: f125cffc72a6f0eb558492f8dde6f4f30bc074ec
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '726'
 ht-degree: 0%
@@ -81,7 +81,7 @@ _제품 프로필_&#x200B;은(는) 자격 증명에 대한 _권한(또는 권한
 
 자격 증명(기술 계정 사용자)에 AEM 리소스의 _만들기, 업데이트, 삭제_(CUD)와 같은 추가 권한이 필요한 경우가 있습니다. 이러한 경우 필요한 권한을 제공하는 _서비스_&#x200B;와 연결된 새 _제품 프로필_&#x200B;을 추가해야 합니다.
 
-예를 들어 AEM Assets 작성자 API 호출이 GET이 아닌 요청[&#128279;](../use-cases/invoke-api-using-oauth-s2s.md#403-error-for-non-get-requests)에 대해 403 오류를 받으면 **AEM 관리자 - 작성자 - 프로그램 XXX - 환경 XXX** _제품 프로필_&#x200B;을 추가하여 문제를 해결할 수 있습니다.
+예를 들어 AEM Assets 작성자 API 호출이 GET이 아닌 요청[에 대해 ](../use-cases/invoke-api-using-oauth-s2s.md#403-error-for-non-get-requests)403 오류를 받으면 **AEM 관리자 - 작성자 - 프로그램 XXX - 환경 XXX** _제품 프로필_&#x200B;을 추가하여 문제를 해결할 수 있습니다.
 
 >[!CAUTION]
 >

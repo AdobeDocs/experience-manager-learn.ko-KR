@@ -3,7 +3,7 @@ title: SPA 편집기 및 원격 SPA용 AEM 구성
 description: AEM SPA 편집기에서 원격 SPA를 작성하려면 AEM 프로젝트가 구성 및 콘텐츠 요구 사항을 설정 지원하는 데 필요합니다.
 topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
-role: Developer, Architect
+role: Developer
 level: Beginner
 jira: KT-7631
 thumbnail: kt-7631.jpeg
@@ -13,7 +13,7 @@ doc-type: Tutorial
 exl-id: 0bdb93c9-5070-483c-a34c-f2b348bfe5ae
 duration: 297
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '1229'
 ht-degree: 0%
@@ -65,16 +65,16 @@ $ mv ~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/wknd-app ~/Code/aem-guid
 
 _last 명령을 사용하면 AEM 프로젝트임이 분명하고 Remote SPA와 혼동되지 않도록 AEM 프로젝트 폴더의 이름을 변경할 수 있습니다**
 
-`frontendModule="react"`이(가) 지정되었지만 `ui.frontend` 프로젝트는 원격 SPA 사용 사례에 사용되지 않습니다. SPA는 AEM 외부에서 개발 및 관리되며 AEM을 컨텐츠 API로만 사용합니다. 프로젝트에 `spa-project` AEM Java™ 종속성을 포함하고 원격 SPA 페이지 템플릿을 설정하는 데 `frontendModule="react"` 플래그가 필요합니다.
+`frontendModule="react"`이(가) 지정되었지만 `ui.frontend` 프로젝트는 원격 SPA 사용 사례에 사용되지 않습니다. SPA는 AEM 외부에서 개발 및 관리되며 AEM을 컨텐츠 API로만 사용합니다. 프로젝트에 `frontendModule="react"` AEM Java™ 종속성을 포함하고 원격 SPA 페이지 템플릿을 설정하는 데 `spa-project` 플래그가 필요합니다.
 
 AEM Project Archetype 은 SPA와의 통합을 위해 AEM을 구성하는 데 사용되는 다음 요소를 생성합니다.
 
-* `ui.apps/src/.../apps/wknd-app/components`의 **AEM WCM 핵심 구성 요소 프록시**
-* `ui.apps/src/.../apps/wknd-app/components/remotepage`의 **AEM SPA 원격 페이지 프록시**
-* `ui.content/src/.../conf/wknd-app/settings/wcm/templates`의 **AEM 페이지 템플릿**
-* `ui.content/src/...`에 콘텐츠 매핑을 정의하는 **하위 프로젝트**
-* `ui.content/src/.../content/wknd-app`의 **기본 원격 SPA AEM 페이지**
-* `ui.config/src/.../apps/wknd-app/osgiconfig`의 **OSGi 구성 폴더**
+* **의** AEM WCM 핵심 구성 요소 프록시`ui.apps/src/.../apps/wknd-app/components`
+* **의** AEM SPA 원격 페이지 프록시`ui.apps/src/.../apps/wknd-app/components/remotepage`
+* **의** AEM 페이지 템플릿`ui.content/src/.../conf/wknd-app/settings/wcm/templates`
+* **에 콘텐츠 매핑을 정의하는**&#x200B;하위 프로젝트`ui.content/src/...`
+* **의**&#x200B;기본 원격 SPA AEM 페이지`ui.content/src/.../content/wknd-app`
+* **의** OSGi 구성 폴더`ui.config/src/.../apps/wknd-app/osgiconfig`
 
 기본 AEM 프로젝트가 생성되면 몇 가지 조정을 통해 SPA 편집기와 원격 SPA의 호환성이 보장됩니다.
 
@@ -84,7 +84,7 @@ SPA는 원격 SPA이므로 AEM 프로젝트 외부에서 개발 및 관리되었
 
 1. IDE에서 AEM 프로젝트(`~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/com.adobe.aem.guides.wknd-app`)를 엽니다
 1. `pom.xml` 루트 열기
-1. `<modules>` 목록에서 `<module>ui.frontend</module`에 주석 달기
+1. `<module>ui.frontend</module` 목록에서 `<modules>`에 주석 달기
 
    ```
    <modules>
@@ -109,7 +109,7 @@ SPA는 원격 SPA이므로 AEM 프로젝트 외부에서 개발 및 관리되었
    ![리액터 pom에서 ui.frontend 모듈 제거](./assets/aem-project/uifrontend-reactor-pom.png)
 
 1. `ui.apps/pom.xml` 열기
-1. `<artifactId>wknd-app.ui.frontend</artifactId>`에서 `<dependency>`에 주석 달기
+1. `<dependency>`에서 `<artifactId>wknd-app.ui.frontend</artifactId>`에 주석 달기
 
    ```
    <dependencies>
@@ -129,7 +129,7 @@ SPA는 원격 SPA이므로 AEM 프로젝트 외부에서 개발 및 관리되었
 
    ![ui.apps에서 ui.frontend 종속성 제거](./assets/aem-project/uifrontend-uiapps-pom.png)
 
-이러한 변경 이전에 AEM 프로젝트가 빌드된 경우 `ui.apps/src/main/content/jcr_root/apps/wknd-app/clientlibs/clientlib-react`의 `ui.apps` 프로젝트에서 `ui.frontend` 생성된 클라이언트 라이브러리를 수동으로 삭제하십시오.
+이러한 변경 이전에 AEM 프로젝트가 빌드된 경우 `ui.frontend`의 `ui.apps` 프로젝트에서 `ui.apps/src/main/content/jcr_root/apps/wknd-app/clientlibs/clientlib-react` 생성된 클라이언트 라이브러리를 수동으로 삭제하십시오.
 
 ## AEM 콘텐츠 매핑
 
@@ -137,7 +137,7 @@ AEM이 SPA 편집기에서 원격 SPA를 로드하려면 SPA의 경로와, 컨�
 
 이 구성의 중요성은 나중에 알아봅니다.
 
-매핑은 `/etc/map`에 정의된 [Sling 매핑](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html#root-level-mappings-1)으로 수행할 수 있습니다.
+매핑은 [에 정의된 ](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html#root-level-mappings-1)Sling 매핑`/etc/map`으로 수행할 수 있습니다.
 
 1. IDE에서 `ui.content` 하위 프로젝트를 엽니다.
 1. `src/main/content/jcr_root`(으)로 이동
@@ -214,7 +214,7 @@ Sling 매핑은 AEM이 `http` 및 `localhost`에서 실행되므로 로컬 개�
 
 ## 원본 간 리소스 공유 보안 정책
 
-그런 다음 이 SPA만 AEM 콘텐츠에 액세스할 수 있도록 콘텐츠를 보호하도록 AEM을 구성합니다. AEM에서 [원본 간 리소스 공유 구성](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=ko).
+그런 다음 이 SPA만 AEM 콘텐츠에 액세스할 수 있도록 콘텐츠를 보호하도록 AEM을 구성합니다. AEM에서 [원본 간 리소스 공유 구성](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html).
 
 1. IDE에서 `ui.config` Maven 하위 프로젝트를 엽니다.
 1. `src/main/content/jcr_root/apps/wknd-app/osgiconfig/config` 탐색
@@ -315,7 +315,7 @@ AEM Project Archetype은 AEM과 원격 SPA의 통합을 위해 준비된 프로�
 
 >[!NOTE]
 >
->이 프로젝트가 이전에 AEM에 배포된 경우 `ui.content` 프로젝트가 **업데이트**&#x200B;가 아닌 **병합** 노드로 설정되어 있으므로 **사이트 > WKND 앱 > 사용자 > en > WKND 앱 홈 페이지**(으)로 AEM 페이지를 삭제해야 합니다.
+>이 프로젝트가 이전에 AEM에 배포된 경우 **프로젝트가**&#x200B;업데이트`ui.content`가 아닌 **병합** 노드로 설정되어 있으므로 **사이트 > WKND 앱 > 사용자 > en > WKND 앱 홈 페이지**(으)로 AEM 페이지를 삭제해야 합니다.
 
 이 페이지를 제거하고 AEM 자체에서 원격 SPA 페이지로 다시 만들 수도 있지만 이 페이지는 `ui.content` 프로젝트에서 자동으로 만들어지므로 코드베이스에서 업데이트하는 것이 가장 좋습니다.
 
@@ -354,7 +354,7 @@ AEM 프로젝트가 배포되면 SPA 편집기를 준비하여 원격 SPA를 로
 
 이 구성은 SPA의 루트에 해당하는 AEM 페이지에서만 설정해야 합니다. 이 페이지 아래의 모든 AEM 페이지는 값을 상속합니다.
 
-## 축하합니다.
+## 축하합니다
 
 이제 AEM 구성을 준비하고 로컬 AEM 작성자에게 배포했습니다! 이제 다음 방법을 이해할 수 있습니다.
 

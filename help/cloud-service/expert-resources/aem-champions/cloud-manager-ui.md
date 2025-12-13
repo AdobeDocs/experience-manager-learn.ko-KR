@@ -4,14 +4,14 @@ description: AEM 챔피언 및 전문가 Rakesh Pasupuleti가 Cloud Manager의 U
 version: Experience Manager as a Cloud Service
 feature: Cloud Manager
 topic: Administration
-role: Admin, Architect
+role: Admin, Developer
 level: Beginner
 doc-type: Value Video
 last-substantial-update: 2023-05-11T00:00:00Z
 jira: KT-13230
 exl-id: a89860ed-9ea4-494c-bce9-91ec550361fe
 duration: 303
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '80'
 ht-degree: 2%
@@ -26,4 +26,4 @@ ht-degree: 2%
 
 ## 추가 리소스 {#additional-resources}
 
-* [Cloud Manager 소개](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/concepts/cloud-manager-introduction.html?lang=ko) - AEM as a Cloud Service에서의 Cloud Manager 사용에 대한 설명서
+* [Cloud Manager 소개](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/concepts/cloud-manager-introduction.html) - AEM as a Cloud Service에서의 Cloud Manager 사용에 대한 설명서

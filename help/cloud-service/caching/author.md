@@ -4,7 +4,7 @@ description: AEM as a Cloud Service 작성자 서비스 캐싱에 대한 일반 
 version: Experience Manager as a Cloud Service
 feature: Developer Tools
 topic: Performance
-role: Architect, Developer
+role: Developer
 level: Intermediate
 doc-type: Article
 last-substantial-update: 2023-08-28T00:00:00Z
@@ -12,10 +12,10 @@ jira: KT-13858
 thumbnail: KT-13858.jpeg
 exl-id: b8e09820-f1f2-4897-b454-16c0df5a0459
 duration: 56
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '281'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
@@ -35,7 +35,7 @@ AEM Author 서비스는 CDN을 사용하지만 그 목적은 제품 리소스의
 
 AEM Author CDN은 최종 사용자(일반적으로 마케터 또는 콘텐츠 작성자)와 AEM Author 사이에 있습니다. AEM 작성 환경을 향상하고 작성된 컨텐츠가 아닌 정적 에셋과 같은 변경할 수 없는 파일을 캐시합니다.
 
-AEM 작성자의 CDN은 [지속 쿼리에 대한 사용자 지정 TTL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?lang=ko&author-instances) 및 [사용자 지정 클라이언트 라이브러리에 대한 TTL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=ko#client-side-libraries)을 포함하여 관심 있을 수 있는 여러 유형의 리소스를 캐시합니다.
+AEM 작성자의 CDN은 [지속 쿼리에 대한 사용자 지정 TTL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?author-instances) 및 [사용자 지정 클라이언트 라이브러리에 대한 TTL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#client-side-libraries)을 포함하여 관심 있을 수 있는 여러 유형의 리소스를 캐시합니다.
 
 ### 기본 캐시 수명
 
@@ -43,9 +43,9 @@ AEM 작성자의 CDN은 [지속 쿼리에 대한 사용자 지정 TTL](https://e
 
 | 컨텐츠 유형 | 기본 CDN 캐시 수명 |
 |:------------ |:---------- |
-| [지속 쿼리(JSON)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?lang=ko&author-instances) | 1분 |
-| [클라이언트 라이브러리(JS/CSS)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=ko#client-side-libraries) | 30일 |
-| [기타 항목](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=ko#other-content) | 캐시되지 않음 |
+| [지속 쿼리(JSON)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?author-instances) | 1분 |
+| [클라이언트 라이브러리(JS/CSS)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#client-side-libraries) | 30일 |
+| [기타 항목](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#other-content) | 캐시되지 않음 |
 
 
 ## AEM Dispatcher

@@ -4,14 +4,14 @@ description: AEM Importer 도구를 사용하고 구성하여 사이트를 Edge 
 version: Experience Manager as a Cloud Service
 feature: Authoring
 topic: Content Management
-role: Developer, User, Architect
+role: Developer, User
 level: Beginner, Intermediate
 doc-type: Technical Video
 duration: 156
 last-substantial-update: 2024-06-07T00:00:00Z
 jira: KT-15675
 exl-id: a357aaaf-5a88-416a-8c3e-e5a41c71f2f5
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '53'
 ht-degree: 0%
@@ -24,4 +24,4 @@ ht-degree: 0%
 
 문서 작성 사이트를 AEM으로 마이그레이션하기 위해 Edge Delivery Services Importer 도구를 사용하고 구성하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3443703/?learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3429595/?learn=on)

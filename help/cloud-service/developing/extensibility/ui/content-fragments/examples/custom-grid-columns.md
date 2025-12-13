@@ -12,7 +12,7 @@ doc-type: article
 last-substantial-update: 2023-06-07T00:00:00Z
 exl-id: 87143cf9-e932-4ad6-afe2-cce093c520f4
 duration: 198
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%
@@ -30,7 +30,7 @@ ht-degree: 0%
 이 예제는 확장 지점 `contentFragmentGrid`까지 확장하여 콘텐츠 조각 콘솔에 사용자 지정 열을 추가합니다.
 
 | AEM UI 확장 | 확장 지점 |
-| ------------------------ | --------------------- | 
+| ------------------------ | --------------------- |
 | [콘텐츠 조각 콘솔](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/) | [표 형태 창](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/grid-columns/) |
 
 ## 확장 예
@@ -149,7 +149,7 @@ export default ExtensionRegistration;
 
 #### 컨텐츠 조각 데이터
 
-`getColumns()`의 `render(..)` 메서드가 조각 배열로 전달됩니다. 배열의 각 개체는 그리드의 행을 나타내며 콘텐츠 조각에 대한 다음 메타데이터를 포함합니다. 이 메타데이터는 그리드에서 자주 사용되는 사용자 정의 열에 사용할 수 있습니다.
+`render(..)`의 `getColumns()` 메서드가 조각 배열로 전달됩니다. 배열의 각 개체는 그리드의 행을 나타내며 콘텐츠 조각에 대한 다음 메타데이터를 포함합니다. 이 메타데이터는 그리드에서 자주 사용되는 사용자 정의 열에 사용할 수 있습니다.
 
 
 ```javascript
@@ -161,7 +161,7 @@ render: async function (fragments) {
 }
 ```
 
-`render(..)` 메서드에서 `fragments` 매개 변수의 요소로 사용할 수 있는 예제 콘텐츠 조각 JSON입니다.
+`fragments` 메서드에서 `render(..)` 매개 변수의 요소로 사용할 수 있는 예제 콘텐츠 조각 JSON입니다.
 
 ```json
 {
@@ -208,7 +208,7 @@ render: async function (fragments) {
 
 >[!IMPORTANT]
 >
-> AEM 작성자 인스턴스가 AppBuilder 앱이 실행 중인 원본에서 [원본 간 요청](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=ko)을 허용하도록 구성되어 있는지 확인하십시오. 허용되는 원본에는 `https://localhost:9080`, AppBuilder Stage 원본 및 AppBuilder 프로덕션 원본이 포함됩니다.
+> AEM 작성자 인스턴스가 AppBuilder 앱이 실행 중인 원본에서 [원본 간 요청](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html)을 허용하도록 구성되어 있는지 확인하십시오. 허용되는 원본에는 `https://localhost:9080`, AppBuilder Stage 원본 및 AppBuilder 프로덕션 원본이 포함됩니다.
 >
 > 또는 확장 프로그램이 확장 프로그램을 대신하여 AEM 작성자에게 요청하는 사용자 지정 [AppBuilder 작업](../../runtime-action.md)을 호출할 수 있습니다.
 

@@ -4,16 +4,16 @@ description: AEM GraphQL에서 사용할 AEM Publish Dispatcher 필터를 구성
 version: Experience Manager as a Cloud Service
 feature: GraphQL API
 topic: Headless, Content Management
-role: Developer, Architect
+role: Developer
 level: Intermediate
 jira: KT-10829
 thumbnail: kt-10829.jpg
 exl-id: b76b7c46-5cbd-4039-8fd6-9f0f10a4a84f
 duration: 48
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 2%
+source-wordcount: '200'
+ht-degree: 3%
 
 ---
 
@@ -33,11 +33,11 @@ Adobe Experience Manager as a Cloud Service은 AEM 게시 Dispatcher 필터를 �
 
 AEM Publish Dispatcher 필터 구성은 AEM에 연결할 수 있는 URL 패턴을 정의하며 AEM 지속 쿼리 끝점의 URL 접두사를 포함해야 합니다.
 
-| 클라이언트가에 연결 | AEM Author | AEM 게시 | AEM 미리보기 |
+| 클라이언트가에 연결 | AEM Author | AEM 게시 인스턴스 | AEM 미리보기 |
 |------------------------------------------:|:----------:|:-------------:|:-------------:|
 | Dispatcher 필터 구성 필요 | ✘ | ✔ | ✔ |
 
-URL 패턴이 `/graphql/execute.json/*`인 `allow` 규칙을 추가하고 파일 ID(예: `/0600`, 예제 팜 파일에서 고유함)를 확인하십시오.
+URL 패턴이 `allow`인 `/graphql/execute.json/*` 규칙을 추가하고 파일 ID(예: `/0600`, 예제 팜 파일에서 고유함)를 확인하십시오.
 이렇게 하면 HTTP GET 요청이 지속 쿼리 끝점(예: `HTTP GET /graphql/execute.json/wknd-shared/adventures-all`부터 AEM 게시까지)에 도달할 수 있습니다.
 
 AEM Headless 경험에서 경험 조각을 사용하는 경우 이러한 경로에 대해 동일한 작업을 수행합니다.

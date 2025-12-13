@@ -1,24 +1,24 @@
 ---
-title: 실험 (A/B 테스트)
+title: 실험(A/B 테스트)
 description: A/B 테스트를 위해 Adobe Target을 사용하여 AEM as a Cloud Service(AEMCS)에서 다양한 콘텐츠 변형을 테스트하는 방법을 알아봅니다.
 version: Experience Manager as a Cloud Service
 feature: Personalization
 topic: Personalization,Content Management, Integrations
-role: Developer, Architect, Leader
+role: Developer, Leader
 level: Beginner
 doc-type: Tutorial
 last-substantial-update: 2025-08-07T00:00:00Z
 jira: KT-18720
 thumbnail: KT-18720.jpeg
 exl-id: c8a4f0bf-1f80-4494-abe6-9fbc138e4039
-source-git-commit: 5b91e7409ff0735bab40d78ad98410ac2ab006ed
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '1493'
 ht-degree: 1%
 
 ---
 
-# 실험 (A/B 테스트)
+# 실험(A/B 테스트)
 
 Adobe Target을 사용하여 AEM as a Cloud Service(AEMCS) 웹 사이트에서 다양한 콘텐츠 변형을 테스트하는 방법을 알아봅니다.
 
@@ -64,7 +64,7 @@ A/B 테스트 설정 프로세스에는 실험을 만들고 구성하는 6가지
 
 이 예제에서는 AEM WKND 프로젝트의 **Camping in Western Australia** Experience Fragment(XF)를 사용하여 A/B 테스트를 위해 WKND 웹 사이트 홈페이지에 사용될 세 가지 변형을 만듭니다.
 
-1. AEM에서 **경험 조각** 카드를 클릭하고 **호주 서부 캠핑**&#x200B;으로 이동한 다음 **편집**&#x200B;을 클릭합니다.
+1. AEM에서 **경험 조각** 카드를 클릭하고 **호주 서부 캠핑**&#x200B;으로 이동한 다음 **편집**을 클릭합니다.
    ![경험 조각](../assets/use-cases/experiment/camping-in-western-australia-xf.png)
 
 1. 편집기의 **변형** 섹션에서 **만들기**&#x200B;를 클릭하고 **변형**&#x200B;을 선택합니다.\
@@ -196,7 +196,7 @@ AEM 페이지에서 개인화 및 데이터 수집 이벤트를 보내려면 Web
    >
    >규칙을 사용하면 사용자 상호 작용 또는 브라우저 이벤트에 따라 태그가 실행되는 시기와 방법을 정의할 수 있습니다.
 
-1. **규칙 만들기** 화면에서 규칙 이름(예: `All Pages - Library Loaded - Send Event`)을 입력하고 **이벤트** 섹션 아래에서 **+ 추가**&#x200B;를 클릭합니다.
+1. **규칙 만들기** 화면에서 규칙 이름(예: `All Pages - Library Loaded - Send Event`)을 입력하고 **이벤트** 섹션 아래에서 **+ 추가**를 클릭합니다.
    ![규칙 이름](../assets/use-cases/experiment/web-sdk-rule-name.png)
 
 1. **이벤트 구성** 대화 상자에서:
@@ -224,7 +224,7 @@ AEM 페이지에서 개인화 및 데이터 수집 이벤트를 보내려면 Web
    >
    >   이 작업은 페이지가 로드될 때 AEP Web SDK 이벤트를 전송하여 Adobe Target에서 개인화된 콘텐츠를 전달할 수 있도록 합니다.
 
-1. 완료된 규칙을 검토하고 **저장**&#x200B;을 클릭합니다.
+1. 완료된 규칙을 검토하고 **저장**을 클릭합니다.
    ![규칙 검토](../assets/use-cases/experiment/web-sdk-rule-review.png)
 
 1. 변경 사항을 적용하려면 **플로우 게시**(으)로 이동하여 업데이트된 규칙을 **라이브러리**&#x200B;에 추가하십시오.\
@@ -256,7 +256,7 @@ A/B 테스트가 제대로 작동하는지 확인하려면 [WKND 지원 웹 사�
 
 ## 추가 리소스
 
-- [A/B 테스트 개요](https://experienceleague.adobe.com/ko/docs/target/using/activities/abtest/test-ab)
-- [Adobe Experience Platform 웹 SDK](https://experienceleague.adobe.com/ko/docs/experience-platform/web-sdk/home)
-- [데이터스트림 개요](https://experienceleague.adobe.com/ko/docs/experience-platform/datastreams/overview)
-- [VEC(시각적 경험 작성기)](https://experienceleague.adobe.com/ko/docs/target/using/experiences/vec/visual-experience-composer)
+- [A/B 테스트 개요](https://experienceleague.adobe.com/en/docs/target/using/activities/abtest/test-ab)
+- [Adobe Experience Platform 웹 SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)
+- [데이터스트림 개요](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview)
+- [VEC(시각적 경험 작성기)](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/visual-experience-composer)

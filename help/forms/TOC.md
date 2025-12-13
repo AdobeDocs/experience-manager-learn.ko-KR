@@ -8,7 +8,7 @@ breadcrumb-title: AEM Forms 튜토리얼
 sub-product: Experience Manager Forms
 version: Experience Manager 6.4, Experience Manager 6.5
 index: y
-source-git-commit: c4b5a015f1c0d5e3877886052476871548ec9b0e
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '2104'
 ht-degree: 100%
@@ -316,8 +316,7 @@ ht-degree: 100%
    + [Workbench 소개](aem-forms-workbench/workbench-introduction.md)
    + [양식 만들기 프로세스](aem-forms-workbench/workbench-creating-a-process.md)
    + [디버깅 프로세스](aem-forms-workbench/workbench-recording-and-testing-process.md)
-+ 인쇄 채널용 대화형 통신 
-{#ic-print-channel-tutorial}
++ 인쇄 채널용 대화형 통신 {#ic-print-channel-tutorial}
    + [1 - 소개](ic-print-channel-tutorial/introduction.md)
    + [2 - Tomcat 설정](ic-print-channel-tutorial/set-up-tomcat.md)
    + [3 - 데이터 소스 만들기](ic-print-channel-tutorial/create-data-source.md)

@@ -4,7 +4,7 @@ description: AEM as a Cloud Service Publish 서비스 캐싱에 대한 일반 �
 version: Experience Manager as a Cloud Service
 feature: Dispatcher, Developer Tools
 topic: Performance
-role: Architect, Developer
+role: Developer
 level: Intermediate
 doc-type: Article
 last-substantial-update: 2023-08-28T00:00:00Z
@@ -12,14 +12,14 @@ jira: KT-13858
 thumbnail: KT-13858.jpeg
 exl-id: 1a1accbe-7706-4f9b-bf63-755090d03c4c
 duration: 240
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '1134'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# AEM 게시
+# AEM 게시 인스턴스
 
 AEM Publish 서비스에는 AEM as a Cloud Service CDN과 AEM Dispatcher라는 두 개의 기본 캐싱 계층이 있습니다. 선택적으로 고객 관리 CDN을 AEM as a Cloud Service CDN 앞에 배치할 수 있습니다. AEM as a Cloud Service CDN은 컨텐츠의 에지 전송을 제공하여 전 세계 사용자에게 지연 없이 경험이 전달되도록 합니다. AEM Dispatcher은 AEM Publish 바로 앞에 캐싱을 제공하며 AEM Publish 자체에 대한 불필요한 로드를 완화하는 데 사용됩니다.
 
@@ -42,7 +42,7 @@ AEM as a Cloud Service CDN은 HTTP 응답만 캐시하며, 다음 기준을 모�
 + 다음 HTTP 응답 헤더 중 하나 이상이 있습니다. `Cache-Control`, `Surrogate-Control` 또는 `Expires`
 + HTTP 응답은 HTML, JSON, CSS, JS 및 이진 파일을 포함한 모든 콘텐츠 유형이 될 수 있습니다.
 
-기본적으로 [AEM Dispatcher](#aem-dispatcher)에서 캐시되지 않은 HTTP 응답에는 CDN에서 캐싱을 방지하기 위해 모든 HTTP 응답 캐시 헤더가 자동으로 제거됩니다. 이 동작은 필요한 경우 `Header always set ...` 지시문과 함께 `mod_headers`을(를) 사용하여 신중하게 재정의할 수 있습니다.
+기본적으로 [AEM Dispatcher](#aem-dispatcher)에서 캐시되지 않은 HTTP 응답에는 CDN에서 캐싱을 방지하기 위해 모든 HTTP 응답 캐시 헤더가 자동으로 제거됩니다. 이 동작은 필요한 경우 `mod_headers` 지시문과 함께 `Header always set ...`을(를) 사용하여 신중하게 재정의할 수 있습니다.
 
 ### 캐시된 항목
 
@@ -51,7 +51,7 @@ AEM as a Cloud Service CDN은 다음을 캐싱합니다.
 + HTTP 응답 본문
 + HTTP 응답 헤더
 
-일반적으로 단일 URL에 대한 HTTP 요청/응답은 단일 개체로 캐시됩니다. 그러나 HTTP 응답에 `Vary` 헤더가 설정된 경우 CDN은 단일 URL에 대해 여러 개체를 캐싱하는 것을 처리할 수 있습니다. 값이 엄격하게 통제되는 값 집합을 갖지 않는 헤더에 `Vary`을(를) 지정하지 마십시오. 이렇게 하면 캐시 누락이 많아 캐시 적중률이 줄어들 수 있습니다. AEM Dispatcher에서 다양한 요청의 캐싱을 지원하려면 [변형 캐싱 설명서를 검토](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/advanced/variant-caching.html?lang=ko)하십시오.
+일반적으로 단일 URL에 대한 HTTP 요청/응답은 단일 개체로 캐시됩니다. 그러나 HTTP 응답에 `Vary` 헤더가 설정된 경우 CDN은 단일 URL에 대해 여러 개체를 캐싱하는 것을 처리할 수 있습니다. 값이 엄격하게 통제되는 값 집합을 갖지 않는 헤더에 `Vary`을(를) 지정하지 마십시오. 이렇게 하면 캐시 누락이 많아 캐시 적중률이 줄어들 수 있습니다. AEM Dispatcher에서 다양한 요청의 캐싱을 지원하려면 [변형 캐싱 설명서를 검토](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/advanced/variant-caching.html)하십시오.
 
 ### 캐시 수명{#cdn-cache-life}
 
@@ -67,19 +67,19 @@ AEM Publish CDN은 TTL(time-to-live) 기반입니다. 즉, 캐시 수명은 `Cac
 
 #### 기본 캐시 수명
 
-HTTP 응답이 AEM Dispatcher 캐싱 [위의 한정자 &#x200B;](#when-are-http-requestsresponses-cached)에 적격인 경우, 사용자 지정 구성이 없으면 기본값은 다음과 같습니다.
+HTTP 응답이 AEM Dispatcher 캐싱 [위의 한정자 ](#when-are-http-requestsresponses-cached)에 적격인 경우, 사용자 지정 구성이 없으면 기본값은 다음과 같습니다.
 
 | 컨텐츠 유형 | 기본 CDN 캐시 수명 |
 |:------------ |:---------- |
-| [HTML/JSON/XML](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=ko#html-text) | 5분 |
-| [Assets(이미지, 비디오, 문서 등)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=ko#images) | 10분 |
-| [지속 쿼리(JSON)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?lang=ko&publish-instances) | 2시간 |
-| [클라이언트 라이브러리(JS/CSS)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=ko#client-side-libraries) | 30일 |
-| [기타](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=ko#other-content) | 캐시되지 않음 |
+| [HTML/JSON/XML](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#html-text) | 5분 |
+| [Assets(이미지, 비디오, 문서 등)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#images) | 10분 |
+| [지속 쿼리(JSON)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?publish-instances) | 2시간 |
+| [클라이언트 라이브러리(JS/CSS)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#client-side-libraries) | 30일 |
+| [기타](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#other-content) | 캐시되지 않음 |
 
 ### 캐시 규칙을 사용자 지정하는 방법
 
-[CDN이 콘텐츠를 캐시하는 방법을 구성하는 중](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=ko#disp)은(는) HTTP 응답에서 캐시 헤더를 설정하는 것으로 제한됩니다. 이러한 캐시 헤더는 일반적으로 `mod_headers`을(를) 사용하여 AEM Dispatcher `vhost` 구성에서 설정되지만, AEM 게시 자체에서 실행되는 사용자 지정 Java™ 코드에서도 설정할 수 있습니다.
+[CDN이 콘텐츠를 캐시하는 방법을 구성하는 중](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#disp)은(는) HTTP 응답에서 캐시 헤더를 설정하는 것으로 제한됩니다. 이러한 캐시 헤더는 일반적으로 `vhost`을(를) 사용하여 AEM Dispatcher `mod_headers` 구성에서 설정되지만, AEM 게시 자체에서 실행되는 사용자 지정 Java™ 코드에서도 설정할 수 있습니다.
 
 ## AEM Dispatcher
 
@@ -95,10 +95,10 @@ HTTP 응답이 AEM Dispatcher 캐싱 [위의 한정자 &#x200B;](#when-are-http-
 + 이진 파일에 대한 HTTP 응답이 없습니다.
 + HTTP 요청 URL 경로가 확장으로 끝납니다. 예: `.html`, `.json`, `.css`, `.js` 등
 + HTTP 요청은 인증을 포함하지 않으며, AEM에 의해 인증되지 않습니다.
-   + 그러나 인증된 요청의 캐싱 [은(는) 전역적으로](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#caching-when-authentication-is-used) 또는 선택적으로 [권한 구분 캐싱](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=ko)을 통해 활성화할 수 있습니다.
+   + 그러나 인증된 요청의 캐싱 [은(는) 전역적으로](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#caching-when-authentication-is-used) 또는 선택적으로 [권한 구분 캐싱](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=ko)을 통해 활성화할 수 있습니다.
 + HTTP 요청에 쿼리 매개 변수가 포함되어 있지 않습니다.
-   + 그러나 [무시된 쿼리 매개 변수](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#ignoring-url-parameters)을(를) 구성하면 무시된 쿼리 매개 변수를 사용하는 HTTP 요청을 캐시에서 캐시하거나 제공할 수 있습니다.
-+ HTTP 요청의 경로 [이(가) 허용 Dispatcher 규칙과 일치하고 거부 규칙과 일치하지 않습니다](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#specifying-the-documents-to-cache).
+   + 그러나 [무시된 쿼리 매개 변수](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters)을(를) 구성하면 무시된 쿼리 매개 변수를 사용하는 HTTP 요청을 캐시에서 캐시하거나 제공할 수 있습니다.
++ HTTP 요청의 경로 [이(가) 허용 Dispatcher 규칙과 일치하고 거부 규칙과 일치하지 않습니다](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-documents-to-cache).
 + HTTP 응답에는 AEM Publish에서 설정한 다음 HTTP 응답 헤더가 없습니다.
 
    + `no-cache`
@@ -110,7 +110,7 @@ HTTP 응답이 AEM Dispatcher 캐싱 [위의 한정자 &#x200B;](#when-are-http-
 AEM Dispatcher은 다음을 캐시합니다.
 
 + HTTP 응답 본문
-+ Dispatcher의 [캐시 헤더 구성](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#caching-http-response-headers)에 지정된 HTTP 응답 헤더입니다. [AEM Project Archetype](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.dispatcher.d/available_farms/default.farm#L106-L113)과(와) 함께 제공되는 기본 구성을 확인하세요.
++ Dispatcher의 [캐시 헤더 구성](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#caching-http-response-headers)에 지정된 HTTP 응답 헤더입니다. [AEM Project Archetype](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.dispatcher.d/available_farms/default.farm#L106-L113)과(와) 함께 제공되는 기본 구성을 확인하세요.
    + `Cache-Control`
    + `Content-Disposition`
    + `Content-Type`
@@ -123,23 +123,23 @@ AEM Dispatcher은 다음을 캐시합니다.
 AEM Dispatcher은 다음 접근 방식을 사용하여 HTTP 응답을 캐시합니다.
 
 + 콘텐츠 게시 또는 게시 취소와 같은 메커니즘을 통해 무효화가 트리거될 때까지.
-+ 명시적으로 [Dispatcher 구성에 구성됨](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#configuring-time-based-cache-invalidation-enablettl)인 경우 TTL(time-to-live). `enableTTL` 구성을 검토하여 [AEM Project Archetype](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.dispatcher.d/available_farms/default.farm#L122-L127)의 기본 구성을 확인하세요.
++ 명시적으로 [Dispatcher 구성에 구성됨](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-time-based-cache-invalidation-enablettl)인 경우 TTL(time-to-live). [ 구성을 검토하여 ](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.dispatcher.d/available_farms/default.farm#L122-L127)AEM Project Archetype`enableTTL`의 기본 구성을 확인하세요.
 
 #### 기본 캐시 수명
 
-HTTP 응답이 AEM Dispatcher 캐싱 [위의 한정자 &#x200B;](#when-are-http-requestsresponses-cached-1)에 적격인 경우, 사용자 지정 구성이 없으면 기본값은 다음과 같습니다.
+HTTP 응답이 AEM Dispatcher 캐싱 [위의 한정자 ](#when-are-http-requestsresponses-cached-1)에 적격인 경우, 사용자 지정 구성이 없으면 기본값은 다음과 같습니다.
 
 | 컨텐츠 유형 | 기본 CDN 캐시 수명 |
 |:------------ |:---------- |
-| [HTML/JSON/XML](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=ko#html-text) | 무효화될 때까지 |
-| [Assets(이미지, 비디오, 문서 등)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=ko#images) | 사용 안 함 |
-| [지속 쿼리(JSON)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?lang=ko&publish-instances) | 1분 |
-| [클라이언트 라이브러리(JS/CSS)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=ko#client-side-libraries) | 30일 |
-| [기타](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=ko#other-content) | 무효화될 때까지 |
+| [HTML/JSON/XML](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#html-text) | 무효화될 때까지 |
+| [Assets(이미지, 비디오, 문서 등)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#images) | 사용 안 함 |
+| [지속 쿼리(JSON)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?publish-instances) | 1분 |
+| [클라이언트 라이브러리(JS/CSS)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#client-side-libraries) | 30일 |
+| [기타](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#other-content) | 무효화될 때까지 |
 
 ### 캐시 규칙을 사용자 지정하는 방법
 
-다음을 포함한 [Dispatcher 구성](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#configuring-the-dispatcher-cache-cache)을 통해 AEM Dispatcher 캐시를 구성할 수 있습니다.
+다음을 포함한 [Dispatcher 구성](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache)을 통해 AEM Dispatcher 캐시를 구성할 수 있습니다.
 
 + 캐시된 항목
 + 게시/게시 취소 시 무효화되는 캐시의 일부

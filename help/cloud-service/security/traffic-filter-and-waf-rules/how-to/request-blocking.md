@@ -4,14 +4,15 @@ description: AEM as a Cloud Service에서 트래픽 필터 규칙을 사용하�
 version: Experience Manager as a Cloud Service
 feature: Security
 topic: Security, Administration, Architecture
-role: Admin, Architect
+role: Admin, Developer
 level: Intermediate
 doc-type: Tutorial
 last-substantial-update: 2025-06-04T00:00:00Z
 jira: KT-18312
 thumbnail: null
-source-git-commit: 293157c296676ef1496e6f861ed8c2c24da7e068
-workflow-type: ht
+exl-id: 53cb8996-4944-4137-a979-6cf86b088d42
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 100%
 
@@ -68,7 +69,7 @@ data:
 
 - 변경 사항을 Cloud Manager Git 저장소에 커밋하고 푸시합니다.
 
-- [앞서 만든](../setup.md#deploy-rules-using-adobe-cloud-manager) Cloud Manager Config Pipeline을 사용하여 AEM 환경에 변경 사항을 배포합니다.
+- [앞서 만든](../setup.md#deploy-rules-using-adobe-cloud-manager) Cloud Manager 구성 파이프라인을 사용하여 AEM 환경에 변경 사항을 배포합니다.
 
 - WKND 사이트의 내부 페이지(예: `https://publish-pXXXX-eYYYY.adobeaemcloud.com/content/wknd/internal/demo-page.html`)에 액세스하거나 아래의 CURL 명령을 사용하여 규칙을 테스트합니다.
 

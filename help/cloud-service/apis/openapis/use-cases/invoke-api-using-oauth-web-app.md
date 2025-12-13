@@ -4,7 +4,7 @@ description: OAuth 웹 앱을 사용하는 사용자 지정 웹 앱의 사용자
 version: Experience Manager as a Cloud Service
 feature: Developing
 topic: Development, Architecture, Content Management
-role: Architect, Developer, Leader
+role: Developer, Leader
 level: Intermediate
 doc-type: Tutorial
 jira: KT-16718
@@ -12,7 +12,7 @@ thumbnail: KT-16718.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 9cf7c318-2be4-4b26-bd6f-0c80d002db45
-source-git-commit: 723c439202b8e00e7b3236a50641ee1f2f6a4d9c
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '2262'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 OAuth 웹 앱을 사용하는 사용자 지정 웹 앱의 사용자 기반 인증을 사용하여 AEM as a Cloud Service에서 OpenAPI 기반 AEM API를 호출하는 방법에 대해 알아봅니다.
 
-OAuth 웹 앱 인증은 **사용자를 대신하여 AEM API에 액세스**&#x200B;해야 하는 프론트엔드 및 _백엔드_ 구성 요소가 있는 웹 애플리케이션에 이상적입니다. OAuth 2.0 _authorization_code_ 권한 유형을 사용하여 AEM API에 액세스할 수 있는 사용자 대신 액세스 토큰을 가져옵니다. 자세한 내용은 [OAuth 서버 간 인증서와 웹 앱 간 인증서와 단일 페이지 앱 자격 증명 간의 차이점](../overview.md#difference-between-oauth-server-to-server-vs-web-app-vs-single-page-app-credentials)을 참조하십시오.
+OAuth 웹 앱 인증은 _사용자를 대신하여 AEM API에 액세스_&#x200B;해야 하는 프론트엔드 및 **백엔드** 구성 요소가 있는 웹 애플리케이션에 이상적입니다. OAuth 2.0 _authorization_code_ 권한 유형을 사용하여 AEM API에 액세스할 수 있는 사용자 대신 액세스 토큰을 가져옵니다. 자세한 내용은 [OAuth 서버 간 인증서와 웹 앱 간 인증서와 단일 페이지 앱 자격 증명 간의 차이점](../overview.md#difference-between-oauth-server-to-server-vs-web-app-vs-single-page-app-credentials)을 참조하십시오.
 
 ## 학습 내용{#what-you-learn}
 
@@ -49,7 +49,7 @@ WKND PIM 앱은 AEM as a Cloud Service 내에 저장된 제품 속성 및 자산
 
 Adobe Developer Console(ADC) 프로젝트가 OAuth 웹 앱 인증을 사용하여 Assets 작성자 API에 액세스하도록 구성되어 있습니다. _authorization_code_ 권한 부여 흐름을 시작하는 데 필요한 _client_id_ 및 _client_secret_&#x200B;을(를) WKND-PIM 웹 앱에 제공합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3442764?quality=12&learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3442757?quality=12&learn=on)
 
 
 다음 다이어그램은 WKND-PIM 웹 앱 _Assets 작성자 API와 상호 작용하기 위한 사용자별 액세스 토큰을 가져오는 중_&#x200B;의 기능 흐름을 보여 줍니다.
@@ -449,7 +449,7 @@ OpenAPI 기반 AEM API 호출은 액세스 토큰이 안전하게 관리되고 �
 
 ### ADC 프로젝트 구성
 
-[Setup OpenAPI 기반 AEM API](../setup.md)에서 ADC 프로젝트 구성 단계가 _반복_&#x200B;됩니다. Assets 작성자 API를 추가하고 해당 인증 방법을 OAuth 웹 앱으로 구성하는 작업이 반복됩니다.
+_Setup OpenAPI 기반 AEM API_&#x200B;에서 ADC 프로젝트 구성 단계가 [반복](../setup.md)됩니다. Assets 작성자 API를 추가하고 해당 인증 방법을 OAuth 웹 앱으로 구성하는 작업이 반복됩니다.
 
 1. [Adobe Developer Console](https://developer.adobe.com/console/projects)에서 원하는 프로젝트를 엽니다.
 
@@ -497,11 +497,11 @@ OpenAPI 기반 AEM API 호출은 액세스 토큰이 안전하게 관리되고 �
 
 기본적으로 WKND Sites 프로젝트에는 제품 속성을 표시하는 데 필요한 에셋 메타데이터 스키마가 없습니다. AEM 인스턴스의 에셋 폴더에 에셋 메타데이터 스키마를 만들고 적용해 보겠습니다.
 
-1. AEM as a Cloud Service 자산 인스턴스에 로그인합니다. [자산 보기](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/authoring/switch-views)를 사용하여 `/content/dam/wknd-shared/en` 폴더로 이동합니다.
+1. AEM as a Cloud Service 자산 인스턴스에 로그인합니다. [자산 보기](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/authoring/switch-views)를 사용하여 `/content/dam/wknd-shared/en` 폴더로 이동합니다.
 
    ![폴더로 이동](../assets/web-app/navigate-to-folder.png)
 
-1. **PIM**&#x200B;을(를) 만들고 **Camping** 폴더를 만든 다음 **Camping** 폴더에서 [샘플 이미지](../assets/web-app/camping-gear-imgs.zip)를 업로드하십시오.
+1. **PIM**&#x200B;을(를) 만들고 **Camping** 폴더를 만든 다음 [Camping](../assets/web-app/camping-gear-imgs.zip) 폴더에서 **샘플 이미지**&#x200B;를 업로드하십시오.
 
    ![PIM 폴더](../assets/web-app/pim-folder.png)
 
@@ -577,7 +577,7 @@ OpenAPI 기반 AEM API 호출은 액세스 토큰이 안전하게 관리되고 �
    EXPRESS_SESSION_SECRET=1234554321
    ```
 
-   `AEM_ASSET_IDS`은(는) **Camping** 폴더에 있는 업로드된 이미지의 `jcr:uuid` 속성 값입니다. 자세한 내용은 이 [섹션](./invoke-api-using-oauth-s2s.md#review-the-api)을 참조하세요.
+   `AEM_ASSET_IDS`은(는) `jcr:uuid`Camping **폴더에 있는 업로드된 이미지의** 속성 값입니다. 자세한 내용은 이 [섹션](./invoke-api-using-oauth-s2s.md#review-the-api)을 참조하세요.
 
 1. 터미널을 열고 추출된 폴더로 이동합니다. 다음 명령을 사용하여 필요한 종속성을 설치합니다.
 

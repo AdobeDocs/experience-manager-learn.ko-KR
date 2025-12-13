@@ -4,7 +4,7 @@ description: AEM as a Cloud Service에서 제품 프로필 및 서비스 사용�
 version: Experience Manager as a Cloud Service
 feature: Developing
 topic: Development, Architecture, Content Management
-role: Architect, Developer, Leader
+role: Developer, Leader
 level: Beginner
 doc-type: Article
 jira: KT-17429
@@ -12,7 +12,7 @@ thumbnail: KT-17429.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 3230a8e7-6342-4497-9163-1898700f29a4
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '593'
 ht-degree: 0%
@@ -50,7 +50,7 @@ API가 성공적으로 호출되면 ADC 프로젝트의 자격 증명을 나타�
 
 자격 증명(기술 계정 사용자)에 AEM 리소스의 _만들기, 업데이트, 삭제_(CUD)와 같은 추가 권한이 필요한 경우가 있습니다. 이러한 경우 AEM 인스턴스에서 _서비스_ 사용자 그룹의 권한을 업데이트할 수 있습니다.
 
-예를 들어 AEM Assets 작성자 API 호출이 GET이 아닌 요청[&#128279;](../use-cases/invoke-api-using-oauth-s2s.md#403-error-for-non-get-requests)에 대해 403 오류를 받으면 AEM 인스턴스에서 _AEM Assets Collaborator 사용자 - 서비스_ 사용자 그룹의 권한을 업데이트할 수 있습니다.
+예를 들어 AEM Assets 작성자 API 호출이 GET이 아닌 요청[에 대해 ](../use-cases/invoke-api-using-oauth-s2s.md#403-error-for-non-get-requests)403 오류를 받으면 AEM 인스턴스에서 _AEM Assets Collaborator 사용자 - 서비스_ 사용자 그룹의 권한을 업데이트할 수 있습니다.
 
 권한 사용자 인터페이스 또는 [Sling 저장소 초기화](https://sling.apache.org/documentation/bundles/repository-initialization.html) 스크립트를 사용하여 AEM 인스턴스에서 기본 사용자 그룹의 권한을 업데이트할 수 있습니다.
 
@@ -90,7 +90,7 @@ API가 성공적으로 호출되면 ADC 프로젝트의 자격 증명을 나타�
 
 - 변경 사항을 커밋하고 저장소에 푸시합니다.
 
-- [AEM 전체 스택 파이프라인](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#full-stack-pipeline)을 사용하여 Cloud Manager 인스턴스에 변경 내용을 배포합니다.
+- [AEM 전체 스택 파이프라인](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#full-stack-pipeline)을 사용하여 Cloud Manager 인스턴스에 변경 내용을 배포합니다.
 
 - **권한** 보기를 사용하여 사용자 그룹의 권한을 확인할 수도 있습니다. AEM 인스턴스의 **도구** > **보안** > **권한**(으)로 이동합니다.
 

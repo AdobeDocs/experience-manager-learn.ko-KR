@@ -4,7 +4,7 @@ description: OWASP ModSecurity 핵심 규칙 세트(CRS)를 사용하여 서비�
 feature: Security
 version: Experience Manager 6.5, Experience Manager as a Cloud Service
 topic: Security, Development
-role: Admin, Architect
+role: Admin, Developer
 level: Experienced
 jira: KT-10385
 thumbnail: KT-10385.png
@@ -12,8 +12,8 @@ doc-type: Article
 last-substantial-update: 2023-08-18T00:00:00Z
 exl-id: 9f689bd9-c846-4c3f-ae88-20454112cf9a
 duration: 783
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '1171'
 ht-degree: 100%
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 Adobe Experience Manager(AEM) 게시 Dispatcher에서 **OWASP ModSecurity 핵심 규칙 세트(CRS)**&#x200B;를 사용하여 서비스 거부(DoS) 공격으로부터 사이트를 보호하기 위해 ModSecurity를 &#x200B;&#x200B;활성화하는 방법에 대해 알아봅니다.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3452135?quality=12&learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3422976?quality=12&learn=on)
 
 ## 개요
 
@@ -38,7 +38,7 @@ OWSAP®은 또한 [OWASP® ModSecurity 핵심 규칙 세트(CRS)](https://github
 
 >[!TIP]
 >
->AEM as a Cloud Service의 [관리형 CDN은](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=ko) 대부분 고객의 성능 및 보안 요구 사항을 충족합니다. 추가로 ModSecurity는 추가 보안 계층을 제공하며 고객 맞춤형 규칙과 구성을 허용합니다.
+>AEM as a Cloud Service의 [관리형 CDN은](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html) 대부분 고객의 성능 및 보안 요구 사항을 충족합니다. 추가로 ModSecurity는 추가 보안 계층을 제공하며 고객 맞춤형 규칙과 구성을 허용합니다.
 
 ## Dispatcher 프로젝트 모듈에 CRS 추가
 
@@ -228,7 +228,7 @@ ModSecurity(또는 `mod_security` Apache 모듈)를 활성화하려면 다음 �
 
 ### Dispatcher 구성 유효성 검사
 
-AEM as a Cloud Service를 사용하는 경우, _Dispatcher 구성_ 변경 사항을 배포하기 전에 [AEM SDK의 Dispatcher 도구](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=ko)의 `validate` 스크립트를 사용하여 로컬에서 해당 변경 사항의 유효성을 검사하는 것이 좋습니다.
+AEM as a Cloud Service를 사용하는 경우, _Dispatcher 구성_ 변경 사항을 배포하기 전에 [AEM SDK의 Dispatcher 도구](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html)의 `validate` 스크립트를 사용하여 로컬에서 해당 변경 사항의 유효성을 검사하는 것이 좋습니다.
 
 ```
 # Go inside Dispatcher SDK 'bin' directory
@@ -240,11 +240,11 @@ $ ./validate.sh <YOUR-AEM-PROJECT-CODE-DIR>/dispatcher/src
 
 ## 배포
 
-Cloud Manager [웹 계층](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?lang=ko&#web-tier-config) 또는 [전체 스택](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?lang=ko&#full-stack-code) 파이프라인을 사용하여 로컬에서 검증된 Dispatcher 구성을 배포합니다. 빠른 작업을 원할 경우 [신속한 개발 환경](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html?lang=ko)을 사용할 수도 있습니다.
+Cloud Manager [웹 계층](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?#web-tier-config) 또는 [전체 스택](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?#full-stack-code) 파이프라인을 사용하여 로컬에서 검증된 Dispatcher 구성을 배포합니다. 빠른 작업을 원할 경우 [신속한 개발 환경](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html)을 사용할 수도 있습니다.
 
 ## 확인
 
-DoS 보호 기능을 검증하려면 이 예시에서는 60초 이내에 25회 요청이 두 번 이상 발생하는, 즉 50회 이상의 요청을 보내야 합니다. 단, 요청은 AEM as a Cloud Service [기본 제공](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=ko) CDN이나 웹 사이트 앞단에 위치한 [다른 CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=ko&#point-to-point-CDN)을 통과해야 합니다.
+DoS 보호 기능을 검증하려면 이 예시에서는 60초 이내에 25회 요청이 두 번 이상 발생하는, 즉 50회 이상의 요청을 보내야 합니다. 단, 요청은 AEM as a Cloud Service [기본 제공](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html) CDN이나 웹 사이트 앞단에 위치한 [다른 CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?#point-to-point-CDN)을 통과해야 합니다.
 
 CDN을 통과하는 한 가지 방법은, **각 페이지 요청마다 쿼리 매개변수에 랜덤 값을 추가**&#x200B;하는 것입니다.
 

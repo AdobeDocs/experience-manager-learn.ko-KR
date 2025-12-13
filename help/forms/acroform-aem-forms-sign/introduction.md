@@ -1,16 +1,16 @@
 ---
 title: AEM Forms이 포함된 Acroforms
 description: Acroform을 사용하여 적응형 양식을 만들고 데이터를 병합하여 PDF을 얻는 과정을 단계별로 설명하는 자습서입니다. 그런 다음 병합된 데이터가 있는 PDF을 Acrobat Sign을 사용하여 서명하도록 전송할 수 있습니다.
-feature: adaptive-forms
+feature: Adaptive Forms
 doc-type: Tutorial
 version: Experience Manager 6.5
 badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 duration: 45
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '248'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 

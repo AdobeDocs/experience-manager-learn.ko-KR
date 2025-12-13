@@ -4,7 +4,7 @@ description: AEM as a Cloud Service CDN에서 캐시된 HTTP 응답을 제거하
 version: Experience Manager as a Cloud Service
 feature: Operations, CDN Cache
 topic: Administration, Performance
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Intermediate
 doc-type: Tutorial
 duration: 0
@@ -12,7 +12,7 @@ last-substantial-update: 2024-08-13T00:00:00Z
 jira: KT-15963
 thumbnail: KT-15963.jpeg
 exl-id: 5d81f6ee-a7df-470f-84b9-12374c878a1b
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '924'
 ht-degree: 0%
@@ -25,7 +25,7 @@ AEM as a Cloud Service CDN에서 캐시된 HTTP 응답을 제거하거나 제거
 
 이 자습서에서는 셀프 서비스 기능을 사용하여 샘플 [AEM WKND](https://github.com/adobe/aem-guides-wknd) 사이트의 CDN 캐시를 제거하기 위해 API 토큰 제거를 설정하고 사용하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3436936?quality=12&learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3432948?quality=12&learn=on)
 
 ## 캐시 무효화와 명시적 제거 비교
 
@@ -45,7 +45,7 @@ CDN 캐시를 제거하기 위해 API 토큰 제거를 설정하는 방법에 �
 
 Purge API 토큰은 AEM 프로젝트 코드에 CDN 규칙을 구성하여 만듭니다.
 
-1. AEM 프로젝트의 기본 `config` 폴더에서 `cdn.yaml` 파일을 엽니다. 예를 들어 [WKND 프로젝트의 cdn.yaml](https://github.com/adobe/aem-guides-wknd/blob/main/config/cdn.yaml) 파일입니다.
+1. AEM 프로젝트의 기본 `cdn.yaml` 폴더에서 `config` 파일을 엽니다. 예를 들어 [WKND 프로젝트의 cdn.yaml](https://github.com/adobe/aem-guides-wknd/blob/main/config/cdn.yaml) 파일입니다.
 
 1. `cdn.yaml` 파일에 다음 CDN 규칙을 추가합니다.
 
@@ -86,7 +86,7 @@ data:
 1. 그런 다음 **구성** 탭을 선택하고 **구성 추가** 단추를 클릭합니다.
 
 1. **환경 구성** 대화 상자에 다음 세부 정보를 입력하십시오.
-   - **이름**: 환경 변수의 이름을 입력하십시오. `cdn.yaml` 파일의 `purgeKey1` 또는 `purgeKey2` 값과 일치해야 합니다.
+   - **이름**: 환경 변수의 이름을 입력하십시오. `purgeKey1` 파일의 `purgeKey2` 또는 `cdn.yaml` 값과 일치해야 합니다.
    - **값**: 제거 API 토큰 값을 입력하십시오.
    - **서비스 적용됨**: **모두** 옵션을 선택하십시오.
    - **유형**: **암호** 옵션을 선택하십시오.

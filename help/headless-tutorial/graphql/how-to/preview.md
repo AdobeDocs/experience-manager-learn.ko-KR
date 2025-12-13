@@ -4,7 +4,7 @@ description: 모든 작성자가 콘텐츠 조각 미리보기를 사용하여 �
 version: Experience Manager as a Cloud Service
 feature: Content Fragments
 topic: Headless, Content Management, Development
-role: Architect, Developer
+role: Developer
 level: Beginner
 doc-type: Tutorial
 last-substantial-update: 2023-03-17T00:00:00Z
@@ -12,7 +12,7 @@ jira: KT-10841
 thumbnail: 3416906.jpeg
 exl-id: 247d40a3-ff67-4c1f-86bf-3794d7ce3e32
 duration: 463
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 AEM Headless 애플리케이션은 통합 작성 미리보기를 지원합니다. 미리보기 경험은 AEM 작성자의 콘텐츠 조각 편집기를 사용자 정의 앱(HTTP를 통해 주소 지정 가능)과 연결하여 미리보고 있는 콘텐츠 조각을 렌더링하는 앱에 대한 딥 링크를 허용합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3449595?quality=12&learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3416906?quality=12&learn=on)
 
 콘텐츠 조각 미리보기를 사용하려면 다음 몇 가지 조건을 충족해야 합니다.
 
@@ -57,8 +57,8 @@ AEM Headless 애플리케이션은 통합 작성 미리보기를 지원합니다
 
 미리보기 URL 예:
 
-+ __Adventure__ 모델의 미리 보기 URL은 `https://preview.app.wknd.site/adventure/content/dam/wknd-shared/en/adventures/surf-camp-bali/surf-camp-bali`(으)로 확인되는 `https://preview.app.wknd.site/adventure${contentFragment.path}`처럼 보일 수 있습니다.
-+ __Article__ 모델의 미리 보기 URL은 `https://preview.news.wknd.site/article/99c34317-1901-2ab3-35b6-d7890aa1c23c.html?variation=main`을(를) 확인하는 `https://preview.news.wknd.site/${contentFragment.model.name}/${contentFragment.id}.html?variation=${contentFragment.variation}`처럼 보일 수 있습니다.
++ __Adventure__ 모델의 미리 보기 URL은 `https://preview.app.wknd.site/adventure${contentFragment.path}`(으)로 확인되는 `https://preview.app.wknd.site/adventure/content/dam/wknd-shared/en/adventures/surf-camp-bali/surf-camp-bali`처럼 보일 수 있습니다.
++ __Article__ 모델의 미리 보기 URL은 `https://preview.news.wknd.site/${contentFragment.model.name}/${contentFragment.id}.html?variation=${contentFragment.variation}`을(를) 확인하는 `https://preview.news.wknd.site/article/99c34317-1901-2ab3-35b6-d7890aa1c23c.html?variation=main`처럼 보일 수 있습니다.
 
 ## 인앱 미리 보기
 
@@ -76,7 +76,7 @@ AEM Headless GraphQL API를 사용하여 AEM의 모험을 표시하는 간단한
 
 ## URL 및 경로
 
-콘텐츠 조각을 미리 보는 데 사용되는 URL 또는 경로는 [URL 표현식](#url-expressions)을 사용하여 구성할 수 있어야 합니다. 이 미리 보기 사용 버전의 WKND 앱에서는 `/adventure<CONTENT FRAGMENT PATH>` 경로에 바인딩된 `AdventureDetail` 구성 요소를 통해 어드벤처 콘텐츠 조각이 표시됩니다. 따라서 이 경로를 확인하려면 WKND Adventure 모델의 미리 보기 URL을 `https://preview.app.wknd.site:3000/adventure${contentFragment.path}`(으)로 설정해야 합니다.
+콘텐츠 조각을 미리 보는 데 사용되는 URL 또는 경로는 [URL 표현식](#url-expressions)을 사용하여 구성할 수 있어야 합니다. 이 미리 보기 사용 버전의 WKND 앱에서는 `AdventureDetail` 경로에 바인딩된 `/adventure<CONTENT FRAGMENT PATH>` 구성 요소를 통해 어드벤처 콘텐츠 조각이 표시됩니다. 따라서 이 경로를 확인하려면 WKND Adventure 모델의 미리 보기 URL을 `https://preview.app.wknd.site:3000/adventure${contentFragment.path}`(으)로 설정해야 합니다.
 
 콘텐츠 조각 미리 보기는 앱에 미리 보기 가능한 방식으로 해당 콘텐츠 조각을 렌더링하는 [URL 표현식](#url-expressions)(으)로 채울 수 있는 주소 지정 가능한 경로가 있는 경우에만 작동합니다.
 

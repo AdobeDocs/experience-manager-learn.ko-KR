@@ -4,15 +4,15 @@ description: AEM as a Cloud Service에서 웹 애플리케이션 방화벽(WAF) 
 version: Experience Manager as a Cloud Service
 feature: Security
 topic: Security, Administration, Architecture
-role: Admin, Architect
+role: Admin, Developer
 level: Intermediate
 doc-type: Tutorial
 last-substantial-update: 2025-06-04T00:00:00Z
 jira: KT-13148
 thumbnail: null
 exl-id: e6d67204-2f76-441c-a178-a34798fe266d
-source-git-commit: 22a35b008de380bf2f2ef5dfde6743261346df89
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '1185'
 ht-degree: 100%
 
@@ -50,7 +50,7 @@ AEM as a Cloud Service는 통합 CDN 계층을 활용하여 웹 사이트 게재
 | 예 | 속도 제한, 지역 차단, 사용자 에이전트 필터링 | SQL 주입, XSS, 알려진 공격 IP |
 | 유연성 | YAML을 통해 높은 구성 가능 | WAF 플래그가 미리 정의된 YAML을 통해 높은 구성 가능 |
 | 권장 모드 | 먼저 `log` 모드로 시작 후 `block` 모드로 전환 | `ATTACK-FROM-BAD-IP` WAF 플래그는 `block` 모드, `ATTACK` WAF 플래그는 `log` 모드로 시작 후 두 플래그 모두에 대해 `block` 모드로 전환 |
-| 배포 | YAML로 정의하고 Cloud Manager Config Pipeline을 통해 배포 | `wafFlags`를 포함한 YAML로 정의하고 Cloud Manager Config Pipeline을 통해 배포 |
+| 배포 | YAML로 정의하고 Cloud Manager 구성 파이프라인을 통해 배포 | `wafFlags`를 포함한 YAML로 정의하고 Cloud Manager 구성 파이프라인을 통해 배포 |
 | 라이선스 | Sites 및 Forms 라이선스에 포함 | **WAF-DDoS 보호 또는 향상된 보안 라이선스 필요** |
 
 표준 트래픽 필터 규칙은 속도 제한이나 특정 지역 차단과 같은 비즈니스별 정책을 시행하는 데 유용하며, IP 주소, 경로 또는 사용자 에이전트와 같은 요청 속성 및 헤더를 기반으로 트래픽을 차단하는 데도 유용합니다.

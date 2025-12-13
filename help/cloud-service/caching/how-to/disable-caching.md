@@ -4,7 +4,7 @@ description: AEM as a Cloud Service CDN에서 HTTP 응답 캐싱을 비활성화
 version: Experience Manager as a Cloud Service
 feature: Operations, CDN Cache
 topic: Administration, Performance
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Beginner
 doc-type: Tutorial
 last-substantial-update: 2023-11-30T00:00:00Z
@@ -12,7 +12,7 @@ jira: KT-14224
 thumbnail: KT-14224.jpeg
 exl-id: 22b1869e-5bb5-437d-9cb5-2d27f704c052
 duration: 100
-source-git-commit: cf006f24abbc5aa4b91277b91d68538c41d33e15
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 0%
@@ -27,7 +27,7 @@ AEM as a Cloud Service CDN에서 HTTP 응답 캐싱을 비활성화하는 방법
 
 ## 기본 캐싱 동작
 
-AEM as a Cloud Service의 CDN에서 HTTP 응답 캐싱은 원본 `Cache-Control`, `Surrogate-Control` 또는 `Expires`의 다음 HTTP 응답 헤더에 의해 제어됩니다.  `Cache-Control`에 `private`, `no-cache` 또는 `no-store`이(가) 포함된 원본 응답은 캐시되지 않습니다.
+AEM as a Cloud Service의 CDN에서 HTTP 응답 캐싱은 원본 `Cache-Control`, `Surrogate-Control` 또는 `Expires`의 다음 HTTP 응답 헤더에 의해 제어됩니다.  `private`에 `no-cache`, `no-store` 또는 `Cache-Control`이(가) 포함된 원본 응답은 캐시되지 않습니다.
 
 AEM Project Archetype 기반 AEM 프로젝트가 배포되면 AEM 게시 및 작성자에 대한 [기본 캐싱 동작](./enable-caching.md#default-caching-behavior)을 검토하십시오.
 
@@ -87,8 +87,8 @@ AEM Project Archetype 기반 AEM 프로젝트가 배포되면 AEM 게시 및 작
    </LocationMatch>
    ```
 
-   `dispatcher/src/conf.d/enabled_vhosts` 디렉터리의 vhost 파일이 `dispatcher/src/conf.d/available_vhosts` 디렉터리의 파일에 대해 **symlinks**&#x200B;이므로 없는 경우 symlink를 만드십시오.
-1. [Cloud Manager - 웹 계층 구성 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?lang=ko&#web-tier-config-pipelines) 또는 [RDE 명령](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html?lang=ko#deploy-apache-or-dispatcher-configuration)을 사용하여 원하는 AEM as a Cloud Service 환경에 vhost 변경 사항을 배포합니다.
+   `dispatcher/src/conf.d/enabled_vhosts` 디렉터리의 vhost 파일이 **디렉터리의 파일에 대해** symlinks`dispatcher/src/conf.d/available_vhosts`이므로 없는 경우 symlink를 만드십시오.
+1. [Cloud Manager - 웹 계층 구성 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?#web-tier-config-pipelines) 또는 [RDE 명령](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html?lang=en#deploy-apache-or-dispatcher-configuration)을 사용하여 원하는 AEM as a Cloud Service 환경에 vhost 변경 사항을 배포합니다.
 
 ### 사용자 지정 Java™ 코드
 

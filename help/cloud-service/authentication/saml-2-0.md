@@ -4,16 +4,16 @@ description: AEM as a Cloud Service Publish 서비스에서 SAML 2.0 인증을 �
 version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Security
-role: Architect, Developer
+role: Developer
 level: Intermediate
 jira: KT-9351
 thumbnail: 343040.jpeg
 last-substantial-update: 2024-05-15T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
 duration: 2200
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
-source-wordcount: '4262'
+source-wordcount: '4233'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 1%
 
 SAML 2.0을 AEM Publish(또는 미리보기)와 통합하면 AEM 기반 웹 경험의 최종 사용자가 Adobe이 아닌 IDP(ID 공급자)에 인증하고 지정된 승인된 사용자로 AEM에 액세스할 수 있습니다.
 
-|                       | AEM Author | AEM 게시 |
+|                       | AEM Author | AEM 게시 인스턴스 |
 |-----------------------|:----------:|:-----------:|
 | SAML 2.0 지원 | ✘ | ✔ |
 
@@ -56,7 +56,7 @@ AEM Publish SAML 통합의 일반적인 흐름은 다음과 같습니다.
 
 ## 구성 연습
 
->[!VIDEO](https://video.tv.adobe.com/v/3455349?quality=12&learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/343040?quality=12&learn=on)
 
 이 비디오는 AEM as a Cloud Service Publish 서비스와 SAML 2.0 통합을 설정하고 Okta를 IDP로 사용하는 방법에 대해 안내합니다.
 
@@ -110,7 +110,7 @@ IDP의 공개 인증서가 AEM의 Global Trust Store에 추가되고, IDP에서 
 1. __사용자에게 인증서 매핑__&#x200B;을 비워 둡니다.
 1. __제출__&#x200B;을 선택합니다.
 1. 새로 추가된 인증서는 __CRT 파일에서 인증서 추가__ 섹션 위에 표시됩니다.
-1. 이 값은 [SAML 2.0 인증 처리기 OSGi 구성](#saml-2-0-authentication-handler-osgi-configuration)에서 사용되므로 __alias__&#x200B;을(를) 메모해 두십시오.
+1. 이 값은 __SAML 2.0 인증 처리기 OSGi 구성__&#x200B;에서 사용되므로 [alias](#saml-2-0-authentication-handler-osgi-configuration)을(를) 메모해 두십시오.
 1. __저장 후 닫기__&#x200B;를 선택합니다.
 
 글로벌 Trust Store는 AEM 작성자의 IDP 공개 인증서로 구성되지만 SAML은 AEM 게시에서만 사용되므로 IDP 공개 인증서에 액세스하려면 글로벌 Trust Store를 AEM 게시로 복제해야 합니다.
@@ -141,7 +141,7 @@ _인증 서비스에 대한 키 저장소를 만들려면 [SAML 2.0 인증 처�
 1. __저장 후 닫기__&#x200B;를 선택합니다.
 1. 업데이트된 __authentication-service__ 사용자가 포함된 패키지를 만듭니다.
 
-   _패키지를 사용하여 다음 임시 해결 방법 사용:_
+   패키지를 사용하여 다음 임시 해결 방법 사용(_U):_
 
    1. __도구 > 배포 > 패키지__(으)로 이동합니다.
    1. 패키지 만들기
@@ -224,11 +224,11 @@ AuthnRequest 서명 및 SAML 어설션 암호화는 모두 선택 사항이지�
       + 위의 `openssl` 메서드를 사용하면 `aem-public.crt` 파일입니다.
    + __제출__ 선택
 1. 새로 추가된 인증서는 __CRT 파일에서 인증서 추가__ 섹션 위에 표시됩니다.
-   + [SAML 2.0 인증 처리기 OSGi 구성](#saml-20-authentication-handler-osgi-configuration)에서 사용되므로 __alias__&#x200B;을(를) 메모하십시오.
+   + __SAML 2.0 인증 처리기 OSGi 구성__&#x200B;에서 사용되므로 [alias](#saml-20-authentication-handler-osgi-configuration)을(를) 메모하십시오.
 1. __저장 후 닫기__&#x200B;를 선택합니다.
 1. 업데이트된 __authentication-service__ 사용자가 포함된 패키지를 만듭니다.
 
-   _패키지를 사용하여 다음 임시 해결 방법 사용:_
+   패키지를 사용하여 다음 임시 해결 방법 사용(_U):_
 
    1. __도구 > 배포 > 패키지__(으)로 이동합니다.
    1. 패키지 만들기
@@ -251,7 +251,7 @@ AEM의 SAML 구성은 __Adobe Granite SAML 2.0 Authentication Handler__ OSGi 구
 
 ### Adobe Granite SAML 2.0 Authentication Handler OSGi 구성{#configure-saml-2-0-authentication-handler-osgi-configuration}
 
-|                                   | OSGi 속성 | 필수 | 값 형식 | 기본값 | 설명 |
+|                                   | OSGi 속성 | 필수 | 값 형식 | 기본 값 | 설명 |
 |-----------------------------------|-------------------------------|:--------:|:---------------------:|---------------------------|-------------|
 | 경로 | `path` | ✔ | 문자열 배열 | `/` | AEM은 이 인증 핸들러가 사용되는 경로를 지정합니다. |
 | IDP URL | `idpUrl` | ✔ | 문자열 |                           | IDP URL SAML 인증 요청이 전송됩니다. |
@@ -333,9 +333,9 @@ SAML 구성이 환경마다 다른 경우 환경당 OSGi 구성(`config.publish.
 
 ### 암호화 사용
 
-[AuthnRequest 및 SAML 어설션 암호화](#encrypting-the-authnrequest-and-saml-assertion)할 때 `useEncryption`, `spPrivateKeyAlias` 및 `keyStorePassword` 속성이 필요합니다. `keyStorePassword`에 암호가 포함되어 있으므로 값을 OSGi 구성 파일에 저장하지 말고 [비밀 구성 값](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=ko#secret-configuration-values)을 사용하여 삽입해야 합니다.
+[AuthnRequest 및 SAML 어설션 암호화](#encrypting-the-authnrequest-and-saml-assertion)할 때 `useEncryption`, `spPrivateKeyAlias` 및 `keyStorePassword` 속성이 필요합니다. `keyStorePassword`에 암호가 포함되어 있으므로 값을 OSGi 구성 파일에 저장하지 말고 [비밀 구성 값](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#secret-configuration-values)을 사용하여 삽입해야 합니다.
 
-+++선택적으로 암호화를 사용하도록 OSGi 구성을 업데이트합니다
++++필요한 경우 암호화를 사용하도록 OSGi 구성을 업데이트합니다
 
 1. IDE에서 `/ui.config/src/main/content/jcr_root/wknd-examples/osgiconfig/config.publish/com.adobe.granite.auth.saml.SamlAuthenticationHandler~saml.cfg.json`을(를) 엽니다.
 1. 아래와 같이 세 개의 속성 `useEncryption`, `spPrivateKeyAlias` 및 `keyStorePassword`을(를) 추가합니다.
@@ -366,7 +366,7 @@ SAML 구성이 환경마다 다른 경우 환경당 OSGi 구성(`config.publish.
 
 + `useEncryption`이(가) `true`(으)로 설정됨
 + `spPrivateKeyAlias`에 SAML 통합에서 사용하는 개인 키에 대한 키 저장소 항목 별칭이 포함되어 있습니다.
-+ `keyStorePassword`에 `authentication-service` 사용자 키 저장소의 암호를 포함하는 [OSGi 비밀 구성 변수](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=ko#secret-configuration-values)이(가) 있습니다.
++ `keyStorePassword`에 [ 사용자 키 저장소의 암호를 포함하는 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#secret-configuration-values)OSGi 비밀 구성 변수`authentication-service`이(가) 있습니다.
 
 +++
 
@@ -394,7 +394,7 @@ SAML 인증 프로세스 중에 IDP는 AEM 게시의 `.../saml_login` 끝점에 
 
 AEM Publish는 단일 레퍼러 필터 구성을 지원하므로 SAML 구성 요구 사항을 기존 구성과 병합합니다.
 
-환경마다 `allow.hosts`(또는 `allow.hosts.regex`)이 다른 경우 환경당 OSGi 구성(`config.publish.dev`, `config.publish.stage` 및 `config.publish.prod`)을 특정 특성으로 정의할 수 있습니다.
+환경마다 `config.publish.dev`(또는 `config.publish.stage`)이 다른 경우 환경당 OSGi 구성(`config.publish.prod`, `allow.hosts` 및 `allow.hosts.regex`)을 특정 특성으로 정의할 수 있습니다.
 
 ## CORS(원본 간 리소스 공유) 구성
 
@@ -402,7 +402,7 @@ SAML 인증 프로세스 중에 IDP는 AEM 게시의 `.../saml_login` 끝점에 
 
 이 HTTP POST 요청의 `Origin` 헤더에 일반적으로 AEM 게시 호스트와 다른 값이 있으므로 CORS 구성이 필요합니다.
 
-로컬 AEM SDK(`localhost:4503`)에서 SAML 인증을 테스트할 때 IDP가 `Origin` 헤더를 `null`(으)로 설정할 수 있습니다. `alloworigin` 목록에 `"null"`을(를) 추가합니다.
+로컬 AEM SDK(`localhost:4503`)에서 SAML 인증을 테스트할 때 IDP가 `Origin` 헤더를 `null`(으)로 설정할 수 있습니다. `"null"` 목록에 `alloworigin`을(를) 추가합니다.
 
 1. `/ui.config/src/main/content/jcr_root/wknd-examples/osgiconfig/config.publish/com.adobe.granite.cors.impl.CORSPolicyImpl~saml.cfg.json`의 프로젝트에서 OSGi 구성 파일 만들기
    + `/wknd-examples/`을(를) 프로젝트 이름으로 변경
@@ -424,7 +424,7 @@ SAML 인증 프로세스 중에 IDP는 AEM 게시의 `.../saml_login` 끝점에 
 }
 ```
 
-`alloworigin` 및 `allowedpaths`이(가) 환경마다 다른 경우 환경당 OSGi 구성(`config.publish.dev`, `config.publish.stage` 및 `config.publish.prod`)을 특정 특성으로 정의할 수 있습니다.
+`config.publish.dev` 및 `config.publish.stage`이(가) 환경마다 다른 경우 환경당 OSGi 구성(`config.publish.prod`, `alloworigin` 및 `allowedpaths`)을 특정 특성으로 정의할 수 있습니다.
 
 ## SAML HTTP POST를 허용하도록 AEM Dispatcher 구성
 
@@ -452,12 +452,12 @@ Apache 웹 서버에서 URL 재작성이 구성(`dispatcher/src/conf.d/rewrites/
 ### 새 환경에서 SAML 사용자에 대해 동적 그룹 멤버십을 활성화하는 방법
 
 새 AEM as a Cloud Service 환경에서 그룹 평가 성능을 크게 향상시키려면 새 환경에서 동적 그룹 멤버십 기능을 활성화하는 것이 좋습니다.
-또한 데이터 동기화가 활성화될 때 필요한 단계입니다. 자세한 내용은 [여기](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier)를 참조하세요.
+또한 데이터 동기화가 활성화될 때 필요한 단계입니다. 자세한 내용은 [여기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier)를 참조하세요.
 이렇게 하려면 OSGI 구성 파일에 다음 속성을 추가합니다.
 
 `/apps/example/osgiconfig/config.publish/com.adobe.granite.auth.saml.SamlAuthenticationHandler~example.cfg.json`
 
-이 구성을 통해 사용자 및 그룹은 [Oak 외부 사용자](https://jackrabbit.apache.org/oak/docs/security/authentication/identitymanagement.html)&#x200B;(으)로 만들어집니다. AEM에서 외부 사용자 및 그룹에는 `[user name];[idp]` 또는 `[group name];[idp]`(으)로 구성된 기본 `rep:principalName`이(가) 있습니다.
+이 구성을 통해 사용자 및 그룹은 [Oak 외부 사용자](https://jackrabbit.apache.org/oak/docs/security/authentication/identitymanagement.html)&#x200B;(으)로 만들어집니다. AEM에서 외부 사용자 및 그룹에는 `rep:principalName` 또는 `[user name];[idp]`(으)로 구성된 기본 `[group name];[idp]`이(가) 있습니다.
 ACL(액세스 제어 목록)이 사용자 또는 그룹의 PrincipalName과 연결되어 있음을 나타냅니다.
 이전에 `identitySyncType`이(가) 지정되지 않았거나 `default`(으)로 설정된 기존 배포에서 이 구성을 배포하는 경우 새 사용자 및 그룹이 만들어지고 이러한 새 사용자 및 그룹에 ACL을 적용해야 합니다. 외부 그룹은 로컬 사용자를 포함할 수 없습니다. [Repoinit](https://sling.apache.org/documentation/bundles/repository-initialization.html)은(는) 사용자가 로그인을 수행할 때만 만들어지더라도 SAML 외부 그룹에 대한 ACL을 만드는 데 사용할 수 있습니다.
 ACL에서 이 리팩터링을 방지하기 위해 표준 [마이그레이션 기능](#automatic-migration-to-dynamic-group-membership-for-existing-environments)이 구현되었습니다.
@@ -535,7 +535,7 @@ ACL에서 이 리팩터링을 방지하기 위해 표준 [마이그레이션 기
 다음 속성이 지정되면 SAML 인증 처리기에서 로컬 사용자를 만듭니다. `"identitySyncType": "default"`. 이 값은 속성을 지정하지 않은 경우에도 기본값입니다. 이 섹션에서는 자동 마이그레이션 절차에 의해 수행되는 단계에 대해 설명합니다.
 
 이 마이그레이션이 활성화되면 사용자 인증 중에 수행되며 다음 단계로 구성됩니다.
-1. 로컬 사용자는 원래 사용자 이름을 유지하면서 외부 사용자로 마이그레이션됩니다. 이는 이제 외부 사용자로 기능하는 마이그레이션된 로컬 사용자가 이전 섹션에서 언급한 명명 구문을 따르는 대신 원래 사용자 이름을 유지함을 의미합니다. 값이 `[user name];[idp]`인 속성 `rep:externalId`이(가) 한 개 더 추가됩니다. `PrincipalName` 사용자가 수정되지 않았습니다.
+1. 로컬 사용자는 원래 사용자 이름을 유지하면서 외부 사용자로 마이그레이션됩니다. 이는 이제 외부 사용자로 기능하는 마이그레이션된 로컬 사용자가 이전 섹션에서 언급한 명명 구문을 따르는 대신 원래 사용자 이름을 유지함을 의미합니다. 값이 `rep:externalId`인 속성 `[user name];[idp]`이(가) 한 개 더 추가됩니다. `PrincipalName` 사용자가 수정되지 않았습니다.
 2. SAML 어설션에 수신된 각 외부 그룹에 대해 외부 그룹이 생성됩니다. 해당 로컬 그룹이 존재하는 경우, 외부 그룹은 로컬 그룹에 멤버로 추가됩니다.
 3. 사용자가 외부 그룹의 구성원으로 추가됩니다.
 4. 그런 다음 로컬 사용자는 자신이 멤버로 있던 모든 Saml 로컬 그룹에서 제거됩니다. Saml 로컬 그룹은 OAK 속성으로 식별됩니다. `rep:managedByIdp`. `syncType` 특성이 지정되지 않았거나 `default`(으)로 설정된 경우 Saml Authentication 처리기에서 이 속성을 설정합니다.
@@ -551,7 +551,7 @@ ACL에서 이 리팩터링을 방지하기 위해 표준 [마이그레이션 기
 
 ### 동적 그룹 멤버십으로 자동 마이그레이션을 구성하는 방법
 
-1. SAML OSGi 구성 파일 `com.adobe.granite.auth.saml.SamlAuthenticationHandler~...cfg.json`에서 `"identitySyncType": "idp_dynamic_simplified_id"` 속성을 사용하도록 설정합니다.
+1. SAML OSGi 구성 파일 `"identitySyncType": "idp_dynamic_simplified_id"`에서 `com.adobe.granite.auth.saml.SamlAuthenticationHandler~...cfg.json` 속성을 사용하도록 설정합니다.
 2. `com.adobe.granite.auth.saml.migration.SamlDynamicGroupMembershipMigration~`(으)로 시작하는 공장 PID로 새 OSGi 서비스를 구성합니다. 예를 들어 PID는 `com.adobe.granite.auth.saml.migration.SamlDynamicGroupMembershipMigration~myIdP`일 수 있습니다. 다음 속성을 설정합니다.
 
 ```
@@ -597,7 +597,7 @@ SAML 인증은 다음 형식으로 HTTP GET 요청을 만들어 호출할 수 �
 
 | 쿼리 매개 변수 이름 | 쿼리 매개 변수 값 |
 |----------------------|-----------------------|
-| `resource` | SAML 인증 핸들러인 모든 JCR 경로 또는 하위 경로는 [Adobe Granite SAML 2.0 Authentication Handler OSGi 구성의 &#x200B;](#configure-saml-2-0-authentication-handler) `path` 속성에 정의된 대로 수신합니다. |
+| `resource` | SAML 인증 핸들러인 모든 JCR 경로 또는 하위 경로는 [Adobe Granite SAML 2.0 Authentication Handler OSGi 구성의 ](#configure-saml-2-0-authentication-handler) `path` 속성에 정의된 대로 수신합니다. |
 | `saml_request_path` | SAML 인증이 성공한 후 사용자가 이동해야 하는 URL 경로입니다. |
 
 예를 들어 이 HTML 링크는 SAML 로그인 흐름을 트리거하고 성공 시 사용자를 `/content/wknd/us/en/protected/page.html`(으)로 이동합니다. 이러한 쿼리 매개 변수는 필요에 따라 프로그래밍 방식으로 설정할 수 있습니다.
@@ -618,7 +618,7 @@ SAML 인증은 다음 형식으로 HTTP POST 요청을 만들어 호출할 수 �
 
 | 양식 데이터 이름 | 양식 데이터 값 |
 |----------------------|-----------------------|
-| `resource` | SAML 인증 핸들러인 모든 JCR 경로 또는 하위 경로는 [Adobe Granite SAML 2.0 Authentication Handler OSGi 구성의 &#x200B;](#configure-saml-2-0-authentication-handler) `path` 속성에 정의된 대로 수신합니다. |
+| `resource` | SAML 인증 핸들러인 모든 JCR 경로 또는 하위 경로는 [Adobe Granite SAML 2.0 Authentication Handler OSGi 구성의 ](#configure-saml-2-0-authentication-handler) `path` 속성에 정의된 대로 수신합니다. |
 | `saml_request_path` | SAML 인증이 성공한 후 사용자가 이동해야 하는 URL 경로입니다. |
 
 

@@ -4,7 +4,7 @@ description: AEM as a Cloud Service에서 Adobe 권장 웹 애플리케이션 �
 version: Experience Manager as a Cloud Service
 feature: Security
 topic: Security, Administration, Architecture
-role: Admin, Architect
+role: Admin, Developer
 level: Intermediate
 doc-type: Tutorial
 last-substantial-update: 2025-06-04T00:00:00Z
@@ -12,8 +12,8 @@ badgeLicense: label="라이선스 필요" type="positive" before-title="true"
 jira: KT-18308
 thumbnail: null
 exl-id: b87c27e9-b6ab-4530-b25c-a98c55075aef
-source-git-commit: 22a35b008de380bf2f2ef5dfde6743261346df89
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '1376'
 ht-degree: 100%
 
@@ -30,7 +30,7 @@ AEM as a Cloud Service에서 _Adobe 권장_ **웹 애플리케이션 방화벽(W
 > WAF 트래픽 필터 규칙을 사용하려면 추가 **WAF-DDoS Protection** 또는 **향상된 보안** 라이선스가 필요합니다. 표준 트래픽 필터 규칙은 기본적으로 Sites 및 Forms 고객에게 제공됩니다.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3469437/?quality=12&learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3469397/?quality=12&learn=on)
 
 ## 학습 목표
 
@@ -45,7 +45,7 @@ AEM as a Cloud Service에서 _Adobe 권장_ **웹 애플리케이션 방화벽(W
 
 - AEM WKND 프로젝트의 `/config/cdn.yaml` 파일에 WAF 규칙을 추가합니다.
 - 변경 사항을 Cloud Manager Git 저장소에 커밋하고 푸시합니다.
-- Cloud Manager Config Pipeline을 사용하여 AEM 환경에 변경 사항을 배포합니다.
+- Cloud Manager 구성 파이프라인을 사용하여 AEM 환경에 변경 사항을 배포합니다.
 - [Nikto](https://github.com/sullo/nikto/wiki)를 사용하여 DDoS 공격을 시뮬레이션하여 규칙을 테스트합니다.
 - AEMCS CDN 로그 및 ELK 대시보드 도구를 사용하여 결과를 분석합니다.
 
@@ -167,9 +167,9 @@ data:
 
 - 변경 사항을 Cloud Manager Git 저장소에 커밋하고 푸시합니다.
 
-- [앞서 만든](../setup.md#deploy-rules-using-adobe-cloud-manager) Cloud Manager Config Pipeline을 사용하여 AEM 환경에 변경 사항을 배포합니다.
+- [앞서 만든](../setup.md#deploy-rules-using-adobe-cloud-manager) Cloud Manager 구성 파이프라인을 사용하여 AEM 환경에 변경 사항을 배포합니다.
 
-  ![Cloud Manager Config Pipeline](../assets/use-cases/cloud-manager-config-pipeline.png)
+  ![Cloud Manager 구성 파이프라인](../assets/use-cases/cloud-manager-config-pipeline.png)
 
 ## 규칙 테스트
 

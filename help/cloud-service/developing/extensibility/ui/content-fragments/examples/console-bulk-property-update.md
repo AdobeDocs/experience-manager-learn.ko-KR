@@ -12,7 +12,7 @@ doc-type: article
 last-substantial-update: 2024-01-26T00:00:00Z
 exl-id: fbfb5c10-95f8-4875-88dd-9a941d7a16fd
 duration: 1362
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '769'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # 대량 속성 업데이트 예시 확장
 
->[!VIDEO](https://video.tv.adobe.com/v/3454461?quality=12&learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3412296?quality=12&learn=on)
 
 이 예제 AEM 콘텐츠 조각 콘솔 확장은 콘텐츠 조각 속성을 공통 값으로 대량 업데이트하는 [작업 표시줄](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/action-bar/) 확장입니다.
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 이 예제는 확장 지점 `actionBar`까지 확장하여 콘텐츠 조각 콘솔에 사용자 지정 단추를 추가합니다.
 
 | AEM UI 확장 | 확장 지점 |
-| ------------------------ | --------------------- | 
+| ------------------------ | --------------------- |
 | [콘텐츠 조각 콘솔](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/) | [작업 표시줄](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/action-bar/) |
 
 
@@ -89,7 +89,7 @@ ht-degree: 0%
 
 ### 확장 등록
 
-`index.html` 경로에 매핑된 `ExtensionRegistration.js`은(는) AEM 확장의 진입점이며 다음을 정의합니다.
+`ExtensionRegistration.js` 경로에 매핑된 `index.html`은(는) AEM 확장의 진입점이며 다음을 정의합니다.
 
 1. 확장 단추의 위치가 AEM 작성 환경에 나타납니다(`actionBar` 또는 `headerMenu`).
 1. `getButtons()` 함수에서 확장 단추의 정의
@@ -158,7 +158,7 @@ function ExtensionRegistration() {
 export default ExtensionRegistration;
 ```
 
-### 양식
+### 모달
 
 [`App.js`](#app-routes)에 정의된 확장의 각 경로는 확장의 모달에서 렌더링되는 React 구성 요소에 매핑됩니다.
 
@@ -168,10 +168,10 @@ export default ExtensionRegistration;
 1. 사용자가 업데이트할 속성 이름과 값을 지정할 수 있도록 해 주는 벌크 속성 업데이트 양식
 1. 업데이트된 콘텐츠 조각과 업데이트할 수 없는 콘텐츠 조각을 나열하는 벌크 속성 업데이트 작업의 응답입니다
 
-중요한 점은 확장에서 AEM을 사용하는 모든 상호 작용은 [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/)에서 실행되는 별도의 서버리스 프로세스인 [AppBuilder Adobe I/O Runtime 작업](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/)에 위임해야 한다는 것입니다.
+중요한 점은 확장에서 AEM을 사용하는 모든 상호 작용은 [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/)에서 실행되는 별도의 서버리스 프로세스인 [AppBuilder Adobe I/O Runtime 작업](https://developer.adobe.com/runtime/docs/)에 위임해야 한다는 것입니다.
 Adobe I/O Runtime 작업을 사용하여 AEM과 통신하면 CORS(원본 간 리소스 공유) 연결 문제를 방지할 수 있습니다.
 
-벌크 속성 업데이트 양식이 제출되면 사용자 지정 `onSubmitHandler()`이(가) Adobe I/O Runtime 작업을 호출하여 현재 AEM 호스트(도메인)와 사용자의 AEM 액세스 토큰을 전달합니다. 그러면 콘텐츠 조각을 업데이트하기 위해 [AEM 콘텐츠 조각 API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html?lang=ko)가 호출됩니다.
+벌크 속성 업데이트 양식이 제출되면 사용자 지정 `onSubmitHandler()`이(가) Adobe I/O Runtime 작업을 호출하여 현재 AEM 호스트(도메인)와 사용자의 AEM 액세스 토큰을 전달합니다. 그러면 콘텐츠 조각을 업데이트하기 위해 [AEM 콘텐츠 조각 API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html)가 호출됩니다.
 
 Adobe I/O Runtime 작업의 응답을 받으면 모달이 업데이트되어 벌크 속성 업데이트 작업의 결과가 표시됩니다.
 

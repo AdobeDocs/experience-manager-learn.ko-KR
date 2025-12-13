@@ -4,7 +4,7 @@ description: AEM 프로젝트를 빌드하고 배포할 때 공개 Maven 저장�
 version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: OSGI
 topic: Development
-role: Architect, Developer
+role: Developer
 level: Intermediate
 doc-type: Tutorial
 duration: 0
@@ -12,7 +12,7 @@ last-substantial-update: 2024-09-13T00:00:00Z
 jira: KT-16207
 thumbnail: KT-16207.jpeg
 exl-id: 0cec14b3-4be5-4666-a36c-968ea2fc634f
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '1569'
 ht-degree: 0%
@@ -27,23 +27,23 @@ AEM 프로젝트를 빌드하고 배포할 때 공용 Maven 저장소에서 *사
 
 - [OSGi 번들](https://www.osgi.org/resources/architecture/): OSGi 번들은 Java 클래스, 리소스 및 번들과 해당 종속성을 설명하는 매니페스트를 포함하는 Java™ 보관 파일입니다.
 - [Java jar](https://docs.oracle.com/javase/tutorial/deployment/jar/basicsindex.html): Java 클래스와 리소스가 포함된 Java™ 아카이브 파일입니다.
-- [패키지](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager#what-are-packages): 패키지는 파일 시스템 직렬화 양식의 저장소 콘텐츠가 들어 있는 zip 파일입니다.
+- [패키지](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager#what-are-packages): 패키지는 파일 시스템 직렬화 양식의 저장소 콘텐츠가 들어 있는 zip 파일입니다.
 
 ## 표준 시나리오
 
-일반적으로 AEM 프로젝트의 `pom.xml` 파일에 종속되어 있는 공개 Maven 저장소에 *사용할 수 있는*&#x200B;서드파티 번들을 설치합니다.
+일반적으로 AEM 프로젝트의 *파일에 종속되어 있는 공개 Maven 저장소에*&#x200B;사용할 수 있는`pom.xml`서드파티 번들을 설치합니다.
 
 예:
 
-- [AEM WCM 핵심 구성 요소](https://github.com/adobe/aem-core-wcm-components) **번들**&#x200B;이(가) [WKND 프로젝트의 &#x200B;](https://github.com/adobe/aem-guides-wknd/blob/main/pom.xml#L747-L753) `pom.xml` 파일에 종속성으로 추가되었습니다. 여기서 `provided` 범위는 AEM 런타임에서 AEM WCM 핵심 구성 요소 번들을 제공할 때 사용됩니다. AEM 런타임에서 번들을 제공하지 않으면 `compile` 범위를 사용하게 되며 기본 범위입니다.
+- [AEM WCM 핵심 구성 요소](https://github.com/adobe/aem-core-wcm-components) **번들**&#x200B;이(가) [WKND 프로젝트의 ](https://github.com/adobe/aem-guides-wknd/blob/main/pom.xml#L747-L753) `pom.xml` 파일에 종속성으로 추가되었습니다. 여기서 `provided` 범위는 AEM 런타임에서 AEM WCM 핵심 구성 요소 번들을 제공할 때 사용됩니다. AEM 런타임에서 번들을 제공하지 않으면 `compile` 범위를 사용하게 되며 기본 범위입니다.
 
-- [WKND 공유](https://github.com/adobe/aem-guides-wknd-shared) **패키지**&#x200B;가 [WKND 프로젝트의 &#x200B;](https://github.com/adobe/aem-guides-wknd/blob/main/pom.xml#L767-L773) `pom.xml` 파일에 종속성으로 추가되었습니다.
+- [WKND 공유](https://github.com/adobe/aem-guides-wknd-shared) **패키지**&#x200B;가 [WKND 프로젝트의 ](https://github.com/adobe/aem-guides-wknd/blob/main/pom.xml#L767-L773) `pom.xml` 파일에 종속성으로 추가되었습니다.
 
 
 
 ## 드문 시나리오
 
-경우에 따라 AEM 프로젝트를 빌드하고 배포할 때 [Maven 중앙 저장소](https://mvnrepository.com/) 또는 [Adobe 공용 저장소](https://repo.adobe.com/index.html)에 사용할 수 없는 **서드파티 번들 또는 jar 또는 패키지를 설치해야 할 수 있습니다.**
+경우에 따라 AEM 프로젝트를 빌드하고 배포할 때 **Maven 중앙 저장소** 또는 [Adobe 공용 저장소](https://mvnrepository.com/)에 사용할 수 없는 [서드파티 번들 또는 jar 또는 패키지를 설치해야 할 수 있습니다.](https://repo.adobe.com/index.html)
 
 이유는 다음과 같습니다.
 
@@ -57,7 +57,7 @@ AEM 프로젝트를 빌드하고 배포할 때 공용 Maven 저장소에서 *사
 
 이 자습서를 수행하려면 다음이 필요합니다.
 
-- [로컬 AEM 개발 환경](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) 또는 [신속한 개발 환경(RDE)](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/rde/overview) 설정.
+- [로컬 AEM 개발 환경](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) 또는 [신속한 개발 환경(RDE)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/overview) 설정.
 
 - [AEM WKND 프로젝트](https://github.com/adobe/aem-guides-wknd) _타사 번들 또는 jar 또는 패키지를 추가_&#x200B;하고 변경 사항을 확인합니다.
 
@@ -77,7 +77,7 @@ AEM 프로젝트를 빌드하고 배포할 때 공용 Maven 저장소에서 *사
 
 ## AEM 프로젝트에 서드파티 번들 설치{#install-third-party-bundle}
 
-공개 Maven 저장소에서 _사용할 수 없는 데모 OSGi [my-example-bundle](./assets/install-third-party-articafcts/my-example-bundle.zip)을(를) AEM WKND 프로젝트에 설치 및 사용하겠습니다_.
+공개 Maven 저장소에서 [사용할 수 없는 데모 OSGi ](./assets/install-third-party-articafcts/my-example-bundle.zip)my-example-bundle _을(를) AEM WKND 프로젝트에 설치 및 사용하겠습니다_.
 
 **my-example-bundle**&#x200B;이(가) `HelloWorldService` OSGi 서비스를 내보냅니다. 해당 `sayHello()` 메서드가 `Hello Earth!` 메시지를 반환합니다.
 
@@ -85,19 +85,19 @@ AEM 프로젝트를 빌드하고 배포할 때 공용 Maven 저장소에서 *사
 
 ### `all` 모듈에 번들 추가
 
-첫 번째 단계는 AEM WKND 프로젝트의 `all` 모듈에 `my-example-bundle`을(를) 추가하는 것입니다.
+첫 번째 단계는 AEM WKND 프로젝트의 `my-example-bundle` 모듈에 `all`을(를) 추가하는 것입니다.
 
 - [my-example-bundle.zip](./assets/install-third-party-articafcts/my-example-bundle.zip) 파일을 다운로드하여 추출하십시오.
 
 - AEM WKND 프로젝트의 `all` 모듈에서 `all/src/main/content/jcr_root/apps/wknd-vendor-packages/container/install` 디렉터리 구조를 만듭니다. `/all/src/main/content` 디렉터리가 있습니다. `jcr_root/apps/wknd-vendor-packages/container/install` 디렉터리만 만들면 됩니다.
 
-- 추출된 `target` 디렉터리에서 위의 `all/src/main/content/jcr_root/apps/wknd-vendor-packages/container/install` 디렉터리로 `my-example-bundle-1.0-SNAPSHOT.jar` 파일을 복사합니다.
+- 추출된 `my-example-bundle-1.0-SNAPSHOT.jar` 디렉터리에서 위의 `target` 디렉터리로 `all/src/main/content/jcr_root/apps/wknd-vendor-packages/container/install` 파일을 복사합니다.
 
   모든 모듈의 ![타사 번들](./assets/install-third-party-articafcts/3rd-party-bundle-all-module.png)
 
 ### 번들의 서비스 사용
 
-AEM WKND 프로젝트의 `my-example-bundle`에서 `HelloWorldService` OSGi 서비스를 사용해 보겠습니다.
+AEM WKND 프로젝트의 `HelloWorldService`에서 `my-example-bundle` OSGi 서비스를 사용해 보겠습니다.
 
 - AEM WKND 프로젝트의 `core` 모듈에서 `SayHello.java` Sling 서블릿 @ `core/src/main/java/com/adobe/aem/guides/wknd/core/servlet`을(를) 만듭니다.
 
@@ -155,7 +155,7 @@ AEM WKND 프로젝트의 `my-example-bundle`에서 `HelloWorldService` OSGi 서�
 
   여기:
    - `system` 범위는 공용 Maven 저장소에서 종속성을 조회해서는 안 됨을 나타냅니다.
-   - `systemPath`은(는) AEM WKND 프로젝트의 `all` 모듈에 있는 `my-example-bundle` 파일의 경로입니다.
+   - `systemPath`은(는) AEM WKND 프로젝트의 `my-example-bundle` 모듈에 있는 `all` 파일의 경로입니다.
    - `${maven.multiModuleProjectDirectory}`은(는) 다중 모듈 프로젝트의 루트 디렉터리를 가리키는 Maven 속성입니다.
 
 - AEM WKND 프로젝트 `core` 모듈의 `core/pom.xml` 파일에서 `my-example-bundle`을(를) 종속성으로 추가합니다.
@@ -176,7 +176,7 @@ AEM WKND 프로젝트의 `my-example-bundle`에서 `HelloWorldService` OSGi 서�
   $ mvn clean install -PautoInstallPackage
   ```
 
-- 브라우저의 URL `http://localhost:4502/bin/sayhello`에 액세스하여 `SayHello` 서블릿이 예상대로 작동하는지 확인하십시오.
+- 브라우저의 URL `SayHello`에 액세스하여 `http://localhost:4502/bin/sayhello` 서블릿이 예상대로 작동하는지 확인하십시오.
 
 - 위의 변경 사항을 AEM WKND 프로젝트의 저장소에 커밋합니다. 그런 다음 Cloud Manager 파이프라인을 실행하여 RDE 또는 AEM 환경의 변경 사항을 확인합니다.
 
@@ -196,27 +196,27 @@ AEM WKND 프로젝트의 [tutorial/install-third-party-bundle](https://github.co
 
 이 예에서 `my-example-jar`은(는) OSGi 번들이 아니라 Java jar 파일입니다.
 
-공개 Maven 저장소에서 _사용할 수 없는 데모 [my-example-jar](./assets/install-third-party-articafcts/my-example-jar.zip)을(를) AEM WKND 프로젝트에 설치 및 사용하겠습니다_.
+공개 Maven 저장소에서 [사용할 수 없는 데모 ](./assets/install-third-party-articafcts/my-example-jar.zip)my-example-jar _을(를) AEM WKND 프로젝트에 설치 및 사용하겠습니다_.
 
-**my-example-jar**&#x200B;은(는) `Hello World!` 메시지를 반환하는 `sayHello()` 메서드를 사용하는 `MyHelloWorldService` 클래스를 포함하는 Java jar 파일입니다.
+**my-example-jar**&#x200B;은(는) `MyHelloWorldService` 메시지를 반환하는 `sayHello()` 메서드를 사용하는 `Hello World!` 클래스를 포함하는 Java jar 파일입니다.
 
 자세한 내용은 [my-example-jar.zip](./assets/install-third-party-articafcts/my-example-jar.zip) 파일의 README.md 파일을 참조하십시오.
 
 ### `all` 모듈에 jar 추가
 
-첫 번째 단계는 AEM WKND 프로젝트의 `all` 모듈에 `my-example-jar`을(를) 추가하는 것입니다.
+첫 번째 단계는 AEM WKND 프로젝트의 `my-example-jar` 모듈에 `all`을(를) 추가하는 것입니다.
 
 - [my-example-jar.zip](./assets/install-third-party-articafcts/my-example-jar.zip) 파일을 다운로드하여 추출하십시오.
 
 - AEM WKND 프로젝트의 `all` 모듈에서 `all/resource/jar` 디렉터리 구조를 만듭니다.
 
-- 추출된 `target` 디렉터리에서 위의 `all/resource/jar` 디렉터리로 `my-example-jar-1.0-SNAPSHOT.jar` 파일을 복사합니다.
+- 추출된 `my-example-jar-1.0-SNAPSHOT.jar` 디렉터리에서 위의 `target` 디렉터리로 `all/resource/jar` 파일을 복사합니다.
 
   모든 모듈의 ![타사-jar](./assets/install-third-party-articafcts/3rd-party-JAR-all-module.png)
 
 ### jar의 서비스 사용
 
-AEM WKND 프로젝트에서 `my-example-jar`의 `MyHelloWorldService`을(를) 사용해 보겠습니다.
+AEM WKND 프로젝트에서 `MyHelloWorldService`의 `my-example-jar`을(를) 사용해 보겠습니다.
 
 - AEM WKND 프로젝트의 `core` 모듈에서 `SayHello.java` Sling 서블릿 @ `core/src/main/java/com/adobe/aem/guides/wknd/core/servlet`을(를) 만듭니다.
 
@@ -275,7 +275,7 @@ AEM WKND 프로젝트에서 `my-example-jar`의 `MyHelloWorldService`을(를) �
 
   여기:
    - `system` 범위는 공용 Maven 저장소에서 종속성을 조회해서는 안 됨을 나타냅니다.
-   - `systemPath`은(는) AEM WKND 프로젝트의 `all` 모듈에 있는 `my-example-jar` 파일의 경로입니다.
+   - `systemPath`은(는) AEM WKND 프로젝트의 `my-example-jar` 모듈에 있는 `all` 파일의 경로입니다.
    - `${maven.multiModuleProjectDirectory}`은(는) 다중 모듈 프로젝트의 루트 디렉터리를 가리키는 Maven 속성입니다.
 
 - AEM WKND 프로젝트 `core` 모듈의 `core/pom.xml` 파일에서 다음 두 가지 사항을 변경합니다.
@@ -292,7 +292,7 @@ AEM WKND 프로젝트에서 `my-example-jar`의 `MyHelloWorldService`을(를) �
      ...
      ```
 
-   - 빌드 중인 OSGi 번들(aem-guides-wknd.core)에 `my-example-jar`을(를) 포함하도록 `bnd-maven-plugin` 구성을 업데이트합니다.
+   - 빌드 중인 OSGi 번들(aem-guides-wknd.core)에 `bnd-maven-plugin`을(를) 포함하도록 `my-example-jar` 구성을 업데이트합니다.
 
      ```xml
      ...
@@ -325,7 +325,7 @@ AEM WKND 프로젝트에서 `my-example-jar`의 `MyHelloWorldService`을(를) �
   $ mvn clean install -PautoInstallPackage
   ```
 
-- 브라우저의 URL `http://localhost:4502/bin/sayhello`에 액세스하여 `SayHello` 서블릿이 예상대로 작동하는지 확인하십시오.
+- 브라우저의 URL `SayHello`에 액세스하여 `http://localhost:4502/bin/sayhello` 서블릿이 예상대로 작동하는지 확인하십시오.
 
 - 위의 변경 사항을 AEM WKND 프로젝트의 저장소에 커밋합니다. 그런 다음 Cloud Manager 파이프라인을 실행하여 RDE 또는 AEM 환경의 변경 사항을 확인합니다.
 
@@ -339,7 +339,7 @@ Java jar 파일 _을(를) 공용 Maven 저장소에서 사용할 수 있지만 O
 
 OSGi 번들이 아니며 공용 Maven 저장소에서 사용할 수 있거나 사용할 수 없는 Java jar는 다음 단계에 따라 AEM 프로젝트에 설치할 수 있습니다.
 
-- 작성 중인 OSGi 번들에 Java jar를 인라인 리소스로 포함하도록 코어 모듈의 `pom.xml` 파일에서 `bnd-maven-plugin` 구성을 업데이트합니다.
+- 작성 중인 OSGi 번들에 Java jar를 인라인 리소스로 포함하도록 코어 모듈의 `bnd-maven-plugin` 파일에서 `pom.xml` 구성을 업데이트합니다.
 
 공개 Maven 저장소에서 Java jar를 사용할 수 없는 경우에만 다음 단계가 필요합니다.
 
@@ -361,7 +361,7 @@ ACS AEM Commons 패키지는 공개 Maven 저장소에서 사용할 수 있습�
 
 - POM 파일에서 ACS AEM Commons 릴리스 종속성을 주석 처리하거나 제거합니다. 종속성을 확인하려면 [AEM Maven 프로젝트에 ACS AEM Commons 추가](https://adobe-consulting-services.github.io/acs-aem-commons/pages/maven.html)를 참조하십시오.
 
-- [ACS AEM Commons 저장소](https://github.com/Adobe-Consulting-Services/acs-aem-commons)의 `master` 분기를 로컬 컴퓨터에 복제합니다.
+- `master`ACS AEM Commons 저장소[의 ](https://github.com/Adobe-Consulting-Services/acs-aem-commons) 분기를 로컬 컴퓨터에 복제합니다.
 
 - 다음 명령을 사용하여 ACS AEM Commons SNAPSHOT 버전을 작성합니다.
 

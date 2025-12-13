@@ -10,14 +10,14 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: ec8e2804-1fd6-4e95-af6d-07d840069c8b
 duration: 379
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '1694'
 ht-degree: 0%
 
 ---
 
-# 구성 파일에 대한 설명
+# 구성 파일 설명
 
 [목차](./overview.md)
 
@@ -35,7 +35,7 @@ Apache 웹 서버는 `Include` 또는 `IncludeOptional` 문으로 타깃팅할 �
 | ---- | ---------------- | ----------- |
 | 파일 이름`.conf` | `/etc/httpd/conf.d/` | 기본 Enterprise Linux 설치는 이 파일 확장명을 사용하고 폴더를 httpd.conf에 선언된 설정을 재정의하고 Apache의 전역 수준에서 추가 기능을 추가할 수 있는 위치로 포함합니다. |
 | 파일 이름`.vhost` | 준비: `/etc/httpd/conf.d/available_vhosts/`<br>활성: `/etc/httpd/conf.d/enabled_vhosts/`<br/><br/><b>참고:</b> .vhost 파일은 enabled_vhosts 폴더에 복사되지 않지만 available_vhosts/\*.vhost 파일의 상대 경로에 대한 심볼릭 링크를 사용합니다</u><br><br> | \*.vhost(가상 호스트) 파일은 `<VirtualHosts>`입니다.  항목이 호스트 이름을 일치시키고 Apache가 서로 다른 규칙으로 각 도메인 트래픽을 처리할 수 있도록 합니다. `.vhost` 파일에서 `rewrites`, `whitelisting`, `etc`과(와) 같은 다른 파일이 포함됩니다. |
-| 파일 이름`_rewrite.rules` | `/etc/httpd/conf.d/rewrites/` | `*_rewrite.rules` 파일은 `vhost` 파일에서 명시적으로 포함 및 사용할 `mod_rewrite` 규칙을 저장합니다. |
+| 파일 이름`_rewrite.rules` | `/etc/httpd/conf.d/rewrites/` | `*_rewrite.rules` 파일은 `mod_rewrite` 파일에서 명시적으로 포함 및 사용할 `vhost` 규칙을 저장합니다. |
 | 파일 이름`_whitelist.rules` | `/etc/httpd/conf.d/whitelists/` | `*_ipwhitelist.rules`개의 파일이 `*.vhost`개 파일 내에 포함되어 있습니다. 화이트리스트에 IP를 허용하는 IP 정규 표현식 또는 거부 규칙이 포함되어 있습니다. IP 주소를 기반으로 가상 호스트 보기를 제한하려는 경우 이러한 파일 중 하나를 생성하여 `*.vhost` 파일에서 포함합니다 |
 
 ## conf.dispatcher.d/
@@ -43,7 +43,7 @@ Apache 웹 서버는 `Include` 또는 `IncludeOptional` 문으로 타깃팅할 �
 | 파일 | 파일 대상 | 설명 |
 | --- | --- | --- |
 | 파일 이름`.any` | `/etc/httpd/conf.dispatcher.d/` | AEM Dispatcher Apache 모듈은 `*.any`개 파일에서 해당 설정을 소스화합니다. 기본 상위 포함 파일은 `conf.dispatcher.d/dispatcher.any`입니다. |
-| 파일 이름`_farm.any` | 준비 단계: `/etc/httpd/conf.dispatcher.d/available_farms/`<br>활성: `/etc/httpd/conf.dispatcher.d/enabled_farms/`<br><br><b>참고:</b> 이러한 팜 파일은 `enabled_farms` 폴더에 복사되지 않지만 `symlinks`을(를) 사용하여 `available_farms/*_farm.any` 파일의 상대 경로를 지정하십시오. <br/>`*_farm.any` 파일이 `conf.dispatcher.d/dispatcher.any` 파일 내에 포함되어 있습니다. 이러한 상위 팜 파일은 각 렌더링 또는 웹 사이트 유형에 대한 모듈 동작을 제어하기 위해 존재합니다. 파일이 `available_farms` 디렉터리에 만들어지고 `enabled_farms` 디렉터리에 `symlink`(으)로 활성화되었습니다.  <br/>`dispatcher.any` 파일의 이름별로 자동 포함됩니다.<br/><b>기준선</b> 팜 파일이 먼저 로드되었는지 확인하기 위해 `000_`(으)로 시작합니다.<br><b>사용자 지정</b> 팜 파일은 올바른 포함 동작을 위해 `100_`에서 번호 구성표를 시작한 후에 로드해야 합니다. |
+| 파일 이름`_farm.any` | 준비 단계: `/etc/httpd/conf.dispatcher.d/available_farms/`<br>활성: `/etc/httpd/conf.dispatcher.d/enabled_farms/`<br><br><b>참고:</b> 이러한 팜 파일은 `enabled_farms` 폴더에 복사되지 않지만 `symlinks`을(를) 사용하여 `available_farms/*_farm.any` 파일의 상대 경로를 지정하십시오. <br/>`*_farm.any` 파일이 `conf.dispatcher.d/dispatcher.any` 파일 내에 포함되어 있습니다. 이러한 상위 팜 파일은 각 렌더링 또는 웹 사이트 유형에 대한 모듈 동작을 제어하기 위해 존재합니다. 파일이 `available_farms` 디렉터리에 만들어지고 `symlink` 디렉터리에 `enabled_farms`(으)로 활성화되었습니다.  <br/>`dispatcher.any` 파일의 이름별로 자동 포함됩니다.<br/><b>기준선</b> 팜 파일이 먼저 로드되었는지 확인하기 위해 `000_`(으)로 시작합니다.<br><b>사용자 지정</b> 팜 파일은 올바른 포함 동작을 위해 `100_`에서 번호 구성표를 시작한 후에 로드해야 합니다. | |
 | 파일 이름`_filters.any` | `/etc/httpd/conf.dispatcher.d/filters/` | `*_filters.any`개의 파일이 `conf.dispatcher.d/enabled_farms/*_farm.any`개 파일 내에 포함되어 있습니다. 각 팜에는 필터링해야 하는 트래픽을 변경하고 렌더러에게 전달되지 않는 일련의 규칙이 있습니다. |
 | 파일 이름`_vhosts.any` | `/etc/httpd/conf.dispatcher.d/vhosts/` | `*_vhosts.any`개의 파일이 `conf.dispatcher.d/enabled_farms/*_farm.any`개 파일 내에 포함되어 있습니다. 이러한 파일은 요청을 처리하는 데 사용할 렌더러를 결정하기 위해 blob 일치에 의해 일치되는 호스트 이름 또는 URI 경로 목록입니다 |
 | 파일 이름`_cache.any` | `/etc/httpd/conf.dispatcher.d/cache/` | `*_cache.any`개의 파일이 `conf.dispatcher.d/enabled_farms/*_farm.any`개 파일 내에 포함되어 있습니다. 이러한 파일은 캐시되는 항목과 캐시되지 않는 항목을 지정합니다. |
@@ -91,7 +91,7 @@ RewriteRule ^/robots.txt$ /content/dam/exampleco/robots.txt [PT,L]
 
 <b>파일 확장명이 같고 자동 포함이 가능합니다.</b>
 
-파일 확장명은 동일하며 Apache가 대부분의 기본 폴더에서 `.conf` 파일을 `auto include`할 자동 포함 확장명을 사용합니다.
+파일 확장명은 동일하며 Apache가 대부분의 기본 폴더에서 `auto include` 파일을 `.conf`할 자동 포함 확장명을 사용합니다.
 
 <b>일반적으로 문제가 되는 방법</b>
 
@@ -109,7 +109,7 @@ IP 허용 목록 규칙 파일인 경우 설명 `_whitelist.rules`을(를) 접�
 
 이러한 이름 지정 규칙을 사용하면 파일이 속해 있지 않은 자동 포함 디렉터리로 이동하는 경우 문제가 발생하지 않습니다.
 
-예를 들어 `/etc/httpd/conf.d/`의 자동 포함 폴더에 `.rules`, `.any` 또는 `.vhost`이(가) 있는 파일을 추가해도 영향을 받지 않습니다.
+예를 들어 `.rules`의 자동 포함 폴더에 `.any`, `.vhost` 또는 `/etc/httpd/conf.d/`이(가) 있는 파일을 추가해도 영향을 받지 않습니다.
 
 배포 변경 요청에 &quot;exameco_rewrite.rules를 프로덕션 Dispatcher에 배포하십시오&quot;라고 설명되어 있는 경우 변경 사항을 배포하는 사람이 새 사이트를 추가하지 않고 파일 이름으로 표시된 대로 다시 작성 규칙을 업데이트하는 것입니다.
 
@@ -152,7 +152,7 @@ LoadModule dispatcher_module modules /mod_dispatcher .so
 </IfModule>
 ```
 
-위에서 보듯이 Dispatcher 모듈에서 `/etc/httpd/conf.dispatcher.d/dispatcher.any`에서 구성 파일을 선택하는 데 사용할 최상위 수준 `dispatcher.any` 파일이 여기에 포함됩니다.
+위에서 보듯이 Dispatcher 모듈에서 `dispatcher.any`에서 구성 파일을 선택하는 데 사용할 최상위 수준 `/etc/httpd/conf.dispatcher.d/dispatcher.any` 파일이 여기에 포함됩니다.
 
 이 파일의 내용에 주의하십시오.
 
@@ -162,9 +162,9 @@ LoadModule dispatcher_module modules /mod_dispatcher .so
 }
 ```
 
-최상위 `dispatcher.any` 파일에는 파일 이름이 `FILENAME_farm.any`이고 표준 명명 규칙을 따르는 `/etc/httpd/conf.dispatcher.d/enabled_farms/`에 있는 활성화된 모든 팜 파일이 포함되어 있습니다.
+최상위 `dispatcher.any` 파일에는 파일 이름이 `/etc/httpd/conf.dispatcher.d/enabled_farms/`이고 표준 명명 규칙을 따르는 `FILENAME_farm.any`에 있는 활성화된 모든 팜 파일이 포함되어 있습니다.
 
-앞에서 언급한 `dispatcher_vhost.conf` 파일의 뒷부분에서는 표준 명명 규칙을 따르는 파일 이름이 `FILENAME.vhost`인 `/etc/httpd/conf.d/enabled_vhosts/`에 있는 활성화된 각 가상 호스트 파일을 활성화하는 include 문도 수행합니다.
+앞에서 언급한 `dispatcher_vhost.conf` 파일의 뒷부분에서는 표준 명명 규칙을 따르는 파일 이름이 `/etc/httpd/conf.d/enabled_vhosts/`인 `FILENAME.vhost`에 있는 활성화된 각 가상 호스트 파일을 활성화하는 include 문도 수행합니다.
 
 ```
 IncludeOptional /etc/httpd/conf.d/enabled_vhosts/*.vhost
@@ -193,7 +193,7 @@ IncludeOptional /etc/httpd/conf.d/enabled_vhosts/*.vhost
 
 ![이 그림에서는 하나의 .vhost 파일에 변수, 허용 목록의 파일이 포함되어 있고 폴더를 다시 쓰는 방법을 보여 줍니다](assets/explanation-config-files/Apache-Webserver-AMS-Vhost-Includes.png "Apache-Webserver-AMS-Vhost-Includes")
 
-`/etc/httpd/conf.d/availabled_vhosts/` 디렉터리의 `.vhost` 파일이 `/etc/httpd/conf.d/enabled_vhosts/` 디렉터리에 심볼릭 링크되면 실행 중인 구성에서 사용됩니다.
+`.vhost` 디렉터리의 `/etc/httpd/conf.d/availabled_vhosts/` 파일이 `/etc/httpd/conf.d/enabled_vhosts/` 디렉터리에 심볼릭 링크되면 실행 중인 구성에서 사용됩니다.
 
 `.vhost` 파일에 우리가 찾은 공통 부분을 기반으로 하는 하위 포함이 있습니다.  변수, 허용 목록 및 규칙 다시 작성과 같은 작업.
 
@@ -249,11 +249,11 @@ RewriteRule ^/logo.jpg$ /content/dam/weretail/general/logo.jpg [NC,PT]
 
 ### AMS 팜에는 다음이 포함됩니다
 
-![&lt;FILENAME>_farms.any에 하위 .any 파일이 포함되어 팜 구성을 완료합니다.  이 그림에서는 팜에 각 최상위 섹션 파일 캐시, clientheaders, filter, renders 및 vhosts .any files](assets/explanation-config-files/Apache-Webserver-AMS-Farm-Includes.png "Apache-Webserver-AMS-Farm-Includes")가 포함되어 있음을 알 수 있습니다.
+![<FILENAME>_farms.any에 하위 .any 파일이 포함되어 팜 구성을 완료합니다.  이 그림에서는 팜에 각 최상위 섹션 파일 캐시, clientheaders, filter, renders 및 vhosts .any files](assets/explanation-config-files/Apache-Webserver-AMS-Farm-Includes.png "Apache-Webserver-AMS-Farm-Includes")가 포함되어 있음을 알 수 있습니다.
 
 `/etc/httpd/conf.dispatcher.d/available_farms/` 디렉터리의 FILENAME_farm.any 파일이 `/etc/httpd/conf.dispatcher.d/enabled_farms/` 디렉터리에 심볼릭 링크되면 실행 중인 구성에서 사용됩니다.
 
-팜 파일에는 캐시, clientheaders, filters, renders 및 vhosts와 같은 [팜의 최상위 섹션](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#defining-farms-farms)을 기반으로 하는 하위 항목이 포함되어 있습니다.
+팜 파일에는 캐시, clientheaders, filters, renders 및 vhosts와 같은 [팜의 최상위 섹션](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#defining-farms-farms)을 기반으로 하는 하위 항목이 포함되어 있습니다.
 
 `FILENAME_farm.any` 파일에는 팜 파일에 포함해야 하는 위치에 따라 각 파일에 대한 include 문이 있습니다.  다음은 올바른 참조로서 `FILENAME_farm.any` 파일의 예제 구문입니다.
 

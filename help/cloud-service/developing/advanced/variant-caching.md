@@ -1,12 +1,12 @@
 ---
 title: AEM as a Cloud Service을 사용하여 페이지 변형 캐싱
 description: AEM as a cloud service를 설정하고 사용하여 페이지 변형 캐싱을 지원하는 방법에 대해 알아봅니다.
-role: Architect, Developer
+role: Developer
 topic: Development
 feature: CDN Cache, Dispatcher
 exl-id: fdf62074-1a16-437b-b5dc-5fb4e11f1355
 duration: 149
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '551'
 ht-degree: 1%
@@ -31,7 +31,7 @@ AEM as a cloud service를 설정하고 사용하여 페이지 변형 캐싱을 �
 
 + 방문자의 후속 요청에서는 해당 쿠키를 보냅니다(예: `"Cookie: x-aem-variant=NY"`) 및 쿠키는 CDN 수준에서 Dispatcher에 전달되는 사전 정의된 헤더(즉, `x-aem-variant:NY`)로 변환됩니다.
 
-+ Apache 재작성 규칙은 페이지 URL의 헤더 값을 Apache Sling 선택기(예: `/page.variant=NY.html`). 이렇게 하면 AEM Publish은 선택기를 기반으로 다른 컨텐츠를 제공하고 Dispatcher는 변형당 하나의 페이지를 캐시할 수 있습니다.
++ Apache 재작성 규칙은 페이지 URL의 헤더 값을 Apache Sling 선택기(예: `/page.variant=NY.html`). 이렇게 하면 AEM 게시는 선택기를 기반으로 다른 컨텐츠를 제공하고 Dispatcher는 변형당 하나의 페이지를 캐시할 수 있습니다.
 
 + AEM Dispatcher에서 보낸 응답에는 HTTP 응답 헤더 `Vary: x-aem-variant`이(가) 있어야 합니다. 이렇게 하면 CDN이 서로 다른 헤더 값에 대해 서로 다른 캐시 사본을 저장하도록 지시합니다.
 
@@ -49,7 +49,7 @@ AEM as a cloud service를 설정하고 사용하여 페이지 변형 캐싱을 �
 
 ## 사용
 
-1. 이 기능을 보여 주기 위해 [WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR)의 구현을 예로 사용합니다.
+1. 이 기능을 보여 주기 위해 [WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)의 구현을 예로 사용합니다.
 
 1. AEM에서 [SlingServletFilter](https://sling.apache.org/documentation/the-sling-engine/filters.html)을(를) 구현하여 HTTP 응답에 대한 `x-aem-variant` 쿠키를 변형 값으로 설정합니다.
 

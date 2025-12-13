@@ -12,7 +12,7 @@ doc-type: article
 last-substantial-update: 2023-06-02T00:00:00Z
 exl-id: 70adb2c1-9e08-4a4b-b8f1-16bddd84c23d
 duration: 307
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 1%
@@ -32,7 +32,7 @@ ht-degree: 1%
 이 예제는 확장 지점 `headerBar`까지 확장하여 콘텐츠 조각 편집기에 사용자 지정 단추를 추가합니다.
 
 | AEM UI 확장 | 확장 지점 |
-| ------------------------ | --------------------- | 
+| ------------------------ | --------------------- |
 | [콘텐츠 조각 편집기](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [머리글 메뉴](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/header-menu/) |
 
 ## 확장 예
@@ -148,7 +148,7 @@ export default ExtensionRegistration;
 
 #### 컨텐츠 조각 데이터
 
-`guestConnection.host.contentFragment` 개체에서 `getContentFragment()` 메서드를 사용하여 활성 콘텐츠 조각을 검색할 수 있습니다.
+`getContentFragment()` 개체에서 `guestConnection.host.contentFragment` 메서드를 사용하여 활성 콘텐츠 조각을 검색할 수 있습니다.
 
 ```javascript
 const contentFragment = await guestConnection.host.contentFragment.getContentFragment();

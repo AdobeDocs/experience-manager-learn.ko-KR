@@ -4,15 +4,15 @@ description: AEM의 JDBC DataSourcePool 및 이그레스 포트를 사용하여 
 version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Security
-role: Architect, Developer
+role: Developer
 level: Intermediate
 jira: KT-9355
 thumbnail: KT-9355.jpeg
 exl-id: c1a26dcb-b2ae-4015-b865-2ce32f4fa869
 duration: 117
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '325'
 ht-degree: 0%
 
 ---
@@ -35,8 +35,8 @@ SQL 데이터베이스(및 기타 비HTTP/HTTPS 서비스)에 대한 연결은 �
 
 OSGi 구성의 연결 문자열은 다음을 사용합니다.
 
-+ [OSGi 구성 환경 변수](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=ko#environment-specific-configuration-values) `$[env:AEM_PROXY_HOST;default=proxy.tunnel]`을(를) 통해 연결의 호스트로 `AEM_PROXY_HOST` 값
-+ `30001`: Cloud Manager 포트 전달 매핑 `30001` → `mysql.example.com:3306`의 `portOrig` 값
++ `AEM_PROXY_HOST`OSGi 구성 환경 변수[ ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#environment-specific-configuration-values)을(를) 통해 연결의 호스트로 `$[env:AEM_PROXY_HOST;default=proxy.tunnel]` 값
++ `30001`: Cloud Manager 포트 전달 매핑 `portOrig` → `30001`의 `mysql.example.com:3306` 값
 
 암호는 코드에 저장할 수 없으므로 SQL 연결의 사용자 이름과 암호는 AIO CLI 또는 Cloud Manager API를 사용하여 설정된 OSGi 구성 변수를 통해 제공되는 것이 가장 좋습니다.
 
@@ -61,7 +61,7 @@ $ aio cloudmanager:set-environment-variables --programId=<PROGRAM_ID> <ENVIRONME
 ## 코드 예
 
 이 Java™ 코드 예는 AEM의 DataSourcePool OSGi 서비스를 통해 외부 MySQL 데이터베이스에 연결하는 OSGi 서비스입니다.
-DataSourcePool OSGi 팩터리 구성은 [enableEnvironmentAdvancedNetworkingConfiguration](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration) 작업의 `portForwards` 규칙을 통해 외부 호스트 및 포트 `mysql.example.com:3306`에 매핑된 포트(`30001`)를 지정합니다.
+DataSourcePool OSGi 팩터리 구성은 `30001`enableEnvironmentAdvancedNetworkingConfiguration`portForwards` 작업의 [ 규칙을 통해 외부 호스트 및 포트 ](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration)에 매핑된 포트(`mysql.example.com:3306`)를 지정합니다.
 
 ```json
 ...

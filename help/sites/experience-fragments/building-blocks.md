@@ -6,13 +6,13 @@ version: Experience Manager as a Cloud Service
 feature: Experience Fragments
 topic: Content Management
 level: Beginner, Intermediate
-role: Architect, Developer, Admin, User
+role: Developer, Admin, User
 doc-type: Feature Video
 jira: KT-660
 thumbnail: 331786.jpg
 exl-id: cc758602-3c20-4eca-9b87-f04b6dc96bfe
 duration: 179
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '98'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 빌딩 블록은 경험 조각의 하위 기능입니다. 구성 요소를 통해 콘텐츠 작성자는 다양한 경험 조각 변형에서 구성 요소를 재사용할 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3410272?quality=12&learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/331786?quality=12&learn=on)
 
 >[!NOTE]
 >

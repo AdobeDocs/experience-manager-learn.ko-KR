@@ -4,7 +4,7 @@ description: Adobe I/O Runtime 작업을 사용하여 AEM 이벤트를 수신하
 version: Experience Manager as a Cloud Service
 feature: Developing, App Builder
 topic: Development, Architecture, Content Management
-role: Architect, Developer
+role: Developer
 level: Beginner
 doc-type: Tutorial
 duration: 457
@@ -12,10 +12,10 @@ last-substantial-update: 2024-01-29T00:00:00Z
 jira: KT-14878
 thumbnail: KT-14878.jpeg
 exl-id: b1c127a8-24e7-4521-b535-60589a1391bf
-source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '699'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -145,7 +145,7 @@ AEM 이벤트를 수신하고 이전 단계에서 만든 Adobe I/O Runtime 작�
 
 - 마지막으로 **이벤트를 받는 방법** 단계에서 **런타임 작업** 옵션을 확장하고 이전 단계에서 만든 _일반_ 작업을 선택합니다. **구성된 이벤트 저장**&#x200B;을 클릭합니다.
 
-  ![런타임 작업 - 프로젝트 구성 &#x200B;](../assets/examples/runtime-action/select-runtime-action.png)
+  ![런타임 작업 - 프로젝트 구성 ](../assets/examples/runtime-action/select-runtime-action.png)
 
 - 이벤트 등록 세부 정보와 **Debug Tracing** 탭을 검토하고 **Challenge Probe** 요청 및 응답을 확인합니다.
 

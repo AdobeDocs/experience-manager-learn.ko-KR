@@ -4,7 +4,7 @@ description: AEM Headless를 사용하여 대규모 결과 세트로 작업하�
 version: Experience Manager as a Cloud Service
 topic: Headless
 feature: GraphQL API
-role: Architect, Developer
+role: Developer
 level: Intermediate
 doc-type: Article
 last-substantial-update: 2023-04-14T00:00:00Z
@@ -12,7 +12,7 @@ jira: KT-13102
 thumbnail: 3418381.jpeg
 exl-id: 304b4d80-27bd-4336-b2ff-4b613a30f712
 duration: 308
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '843'
 ht-degree: 1%
@@ -200,7 +200,7 @@ query adventuresByPaginated($first:Int, $after:String) {
 
 #### useEffect 후크
 
-`useEffect` 후크는 모험 목록을 검색하는 지속 쿼리(`adventures-by-offset-and-limit`)를 호출합니다. 쿼리는 `offset` 및 `limit` 매개 변수를 사용하여 검색할 시작점과 결과 수를 지정합니다. `page` 값이 변경되면 `useEffect` 후크가 호출됩니다.
+`useEffect` 후크는 모험 목록을 검색하는 지속 쿼리(`adventures-by-offset-and-limit`)를 호출합니다. 쿼리는 `offset` 및 `limit` 매개 변수를 사용하여 검색할 시작점과 결과 수를 지정합니다. `useEffect` 값이 변경되면 `page` 후크가 호출됩니다.
 
 
 ```javascript

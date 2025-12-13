@@ -1,10 +1,10 @@
 ---
-title: Adobe I/O Runtime 작업을 사용하여 AEM 이벤트 처리
+title: Adobe I/O Runtime Action을 사용한 AEM Events 처리
 description: Adobe I/O Runtime 작업을 사용하여 수신된 AEM 이벤트를 처리하는 방법을 알아봅니다.
 version: Experience Manager as a Cloud Service
 feature: Developing, App Builder
 topic: Development, Architecture, Content Management
-role: Architect, Developer
+role: Developer
 level: Beginner
 doc-type: Tutorial
 duration: 558
@@ -12,14 +12,14 @@ last-substantial-update: 2024-01-30T00:00:00Z
 jira: KT-14879
 thumbnail: KT-14879.jpeg
 exl-id: c362011e-89e4-479c-9a6c-2e5caa3b6e02
-source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '548'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
-# Adobe I/O Runtime 작업을 사용하여 AEM 이벤트 처리
+# Adobe I/O Runtime Action을 사용한 AEM Events 처리
 
 [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/overview/what_is_runtime/) 액션을 사용하여 받은 AEM 이벤트를 처리하는 방법에 대해 알아보십시오. 이 예제에서는 이전 예인 [Adobe I/O Runtime 작업 및 AEM 이벤트](runtime-action.md)를 향상시킵니다. 이 작업을 진행하기 전에 완료했는지 확인하십시오.
 
@@ -162,7 +162,7 @@ ht-degree: 0%
   ...
   ```
 
-  자세한 내용은 [AEM 서비스 자격 증명 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=ko)을 참조하세요. 또한 암호 및 작업 매개 변수 관리를 위한 [App Builder 구성 파일](https://developer.adobe.com/app-builder/docs/guides/configuration/)입니다.
+  자세한 내용은 [AEM 서비스 자격 증명 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en)을 참조하세요. 또한 암호 및 작업 매개 변수 관리를 위한 [App Builder 구성 파일](https://developer.adobe.com/app-builder/docs/guides/configuration/)입니다.
 
 - `src/dx-excshell-1/actions/aem-event-processor/storeEventData.js` 모듈은 원본 이벤트 데이터, 활동 메시지 및 수정 세부 사항(있는 경우)을 Adobe I/O Runtime 저장소에 저장합니다.
 

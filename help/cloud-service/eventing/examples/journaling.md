@@ -4,7 +4,7 @@ description: 저널에서 초기 AEM 이벤트 세트를 검색하고 각 이벤
 version: Experience Manager as a Cloud Service
 feature: Developing, App Builder
 topic: Development, Architecture, Content Management
-role: Architect, Developer
+role: Developer
 level: Beginner
 doc-type: Tutorial
 duration: 280
@@ -12,7 +12,7 @@ last-substantial-update: 2023-01-29T00:00:00Z
 jira: KT-14734
 thumbnail: KT-14734.jpeg
 exl-id: 33eb0757-f0ed-4c2d-b8b9-fa6648e87640
-source-git-commit: e01eb7ff050321a70d84f8a613705799017dbf5d
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '579'
 ht-degree: 1%
@@ -32,8 +32,8 @@ Adobe Developer Console 프로젝트 내에서 모든 이벤트 등록은 저널
 >[!IMPORTANT]
 >
 >이 자습서의 라이브 데모 끝점은 이전에 [Glitch](https://glitch.com/)에서 호스팅되었습니다. 2025년 7월부터 Glitch가 호스팅 서비스를 중단했으며 더 이상 종단점에 액세스할 수 없습니다.
->&#x200B;>데모를 대체 플랫폼으로 마이그레이션하는 데 적극적으로 노력하고 있습니다. 튜토리얼 콘텐츠는 정확하게 유지되며 업데이트된 링크가 곧 제공됩니다.
->&#x200B;>양해와 인내심에 감사드립니다.
+>데모를 대체 플랫폼으로 마이그레이션하는 데 적극적으로 노력하고 있습니다. 튜토리얼 콘텐츠는 정확하게 유지되며 업데이트된 링크가 곧 제공됩니다.
+>양해와 인내심에 감사드립니다.
 
 라이브 데모 엔드포인트를 다시 사용할 수 있을 때까지 자체 애플리케이션을 사용하십시오.
 

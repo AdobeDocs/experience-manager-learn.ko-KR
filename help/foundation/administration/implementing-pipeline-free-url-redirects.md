@@ -4,7 +4,7 @@ description: AEM as a Cloud Service에서 파이프라인 없는 URL 리디렉�
 version: Experience Manager as a Cloud Service
 feature: Operations, Dispatcher
 topic: Development, Content Management, Administration
-role: Architect, Developer, User
+role: Developer, User
 level: Beginner, Intermediate
 doc-type: Article
 duration: 0
@@ -12,16 +12,16 @@ last-substantial-update: 2025-02-05T00:00:00Z
 jira: KT-15739
 thumbnail: KT-15739.jpeg
 exl-id: 3b0f5971-38b8-4b9e-b90e-9de7432e0e9d
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '973'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
 # 파이프라인 없는 URL 리디렉션 구현
 
-AEM as a Cloud Service에서 [파이프라인 없는 URL 리디렉션](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects)을 구현하여 개발자가 필요 없이 마케팅 팀이 리디렉션을 관리할 수 있도록 하는 방법에 대해 알아봅니다.
+AEM as a Cloud Service에서 [파이프라인 없는 URL 리디렉션](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects)을 구현하여 개발자가 필요 없이 마케팅 팀이 리디렉션을 관리할 수 있도록 하는 방법에 대해 알아봅니다.
 
 AEM에는 URL 리디렉션을 관리하는 여러 옵션이 있습니다. 자세한 내용은 [URL 리디렉션](url-redirection.md)을 참조하십시오.
 
@@ -37,11 +37,11 @@ AEM에는 URL 리디렉션을 관리하는 여러 옵션이 있습니다. 자세
 
 ## 튜토리얼 사용 사례
 
-데모 목적으로 WKND 마케팅 팀이 새로운 스키 캠페인을 시작한다고 가정해 보겠습니다. 스키 어드벤처 페이지에 대한 짧은 URL을 만들고 콘텐츠 관리 방법과 마찬가지로 직접 관리하려고 합니다. [파이프라인 없는 URL 리디렉션](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects) 접근 방식을 사용하여 URL 리디렉션을 관리하기로 결정했습니다.
+데모 목적으로 WKND 마케팅 팀이 새로운 스키 캠페인을 시작한다고 가정해 보겠습니다. 스키 어드벤처 페이지에 대한 짧은 URL을 만들고 콘텐츠 관리 방법과 마찬가지로 직접 관리하려고 합니다. [파이프라인 없는 URL 리디렉션](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects) 접근 방식을 사용하여 URL 리디렉션을 관리하기로 결정했습니다.
 
 마케팅 팀의 요구 사항에 따라 만들어야 하는 URL 리디렉션은 다음과 같습니다.
 
-| SOURCE URL | 대상 URL |
+| 소스 URL | 대상 URL |
 |------------|------------|
 | /ski | /us/en/adventures.html |
 | /ski/northamerica | /us/en/adventures/downhill-skiing-wyoming.html |
@@ -74,7 +74,7 @@ URL 리디렉션은 텍스트 파일에서 키-값 쌍으로 관리되고 AEM DA
 
 [ACS Commons - 리디렉션 맵 관리자](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html)는 URL 리디렉션을 관리할 수 있는 사용자 친화적 인터페이스를 제공합니다.
 
-예를 들어 마케팅 팀은 `SkiCampaign`(이)라는 이름의 새 *리디렉션 맵* 페이지를 만들고 **항목 편집** 탭을 사용하여 위의 URL 리디렉션을 추가할 수 있습니다. `/etc/acs-commons/redirect-maps/skicampaign/jcr:content.redirectmap.txt`에서 URL 리디렉션을 사용할 수 있습니다.
+예를 들어 마케팅 팀은 *(이)라는 이름의 새*&#x200B;리디렉션 맵`SkiCampaign` 페이지를 만들고 **항목 편집** 탭을 사용하여 위의 URL 리디렉션을 추가할 수 있습니다. `/etc/acs-commons/redirect-maps/skicampaign/jcr:content.redirectmap.txt`에서 URL 리디렉션을 사용할 수 있습니다.
 
 ![맵 관리자 리디렉션](./assets/pipeline-free-redirects/redirect-map-manager.png)
 
@@ -100,11 +100,11 @@ URL 리디렉션을 RewriteMap으로 로드하여 수신 요청에 적용하려�
 
 ### 유연한 모드를 위한 Dispatcher 모듈 활성화
 
-먼저 Dispatcher 모듈이 _유연한 모드_&#x200B;에 대해 활성화되어 있는지 확인합니다. `dispatcher/src/opt-in` 폴더에 `USE_SOURCES_DIRECTLY` 파일이 있으면 Dispatcher이 유연한 모드에 있음을 나타냅니다.
+먼저 Dispatcher 모듈이 _유연한 모드_&#x200B;에 대해 활성화되어 있는지 확인합니다. `USE_SOURCES_DIRECTLY` 폴더에 `dispatcher/src/opt-in` 파일이 있으면 Dispatcher이 유연한 모드에 있음을 나타냅니다.
 
 ### URL 리디렉션을 RewriteMap으로 로드
 
-다음 구조로 `dispatcher/src/opt-in` 폴더에 새 구성 파일 `managed-rewrite-maps.yaml`을(를) 만듭니다.
+다음 구조로 `managed-rewrite-maps.yaml` 폴더에 새 구성 파일 `dispatcher/src/opt-in`을(를) 만듭니다.
 
 ```yaml
 maps:
@@ -114,7 +114,7 @@ maps:
     ttl: 300 # Optional, default is 300 seconds, the reload interval for the map
 ```
 
-배포하는 동안 Dispatcher은 `/tmp/rewrites` 폴더에 `<MAPNAME>.map` 파일을 만듭니다.
+배포하는 동안 Dispatcher은 `<MAPNAME>.map` 폴더에 `/tmp/rewrites` 파일을 만듭니다.
 
 >[!IMPORTANT]
 >
@@ -122,7 +122,7 @@ maps:
 
 ### 수신 요청에 URL 리디렉션 적용
 
-마지막으로 위의 맵(`<MAPNAME>.map`)을 사용하도록 Apache 재작성 구성 파일을 만들거나 업데이트합니다. 예를 들어 `dispatcher/src/conf.d/rewrites` 폴더의 `rewrite.rules` 파일을 사용하여 URL 리디렉션을 적용해 보겠습니다.
+마지막으로 위의 맵(`<MAPNAME>.map`)을 사용하도록 Apache 재작성 구성 파일을 만들거나 업데이트합니다. 예를 들어 `rewrite.rules` 폴더의 `dispatcher/src/conf.d/rewrites` 파일을 사용하여 URL 리디렉션을 적용해 보겠습니다.
 
 ```
 ...
@@ -229,7 +229,7 @@ RewriteRule ^(.*)$ ${skicampaign:$1|/} [L,R=301]
 >
 >*파이프라인 없음* 용어를 사용하여 구성이 *한 번만 배포*&#x200B;되고 마케팅 팀이 텍스트 파일을 업데이트하여 URL 리디렉션을 관리할 수 있음을 강조합니다.
 
-구성을 배포하려면 [Cloud Manager](https://my.cloudmanager.adobe.com/)에서 [전체 스택](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#full-stack-pipeline) 또는 [웹 계층 구성](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#web-tier-config-pipelines) 파이프라인을 사용하십시오.
+구성을 배포하려면 [Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#full-stack-pipeline)에서 [전체 스택](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#web-tier-config-pipelines) 또는 [웹 계층 구성](https://my.cloudmanager.adobe.com/) 파이프라인을 사용하십시오.
 
 ![전체 스택 파이프라인을 통해 배포](./assets/pipeline-free-redirects/deploy-full-stack-pipeline.png)
 
@@ -248,5 +248,5 @@ RewriteRule ^(.*)$ ${skicampaign:$1|/} [L,R=301]
 
 ## 추가 리소스
 
-- [파이프라인 없는 URL 리디렉션](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects)
+- [파이프라인 없는 URL 리디렉션](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects)
 - [URL 리디렉션](url-redirection.md)

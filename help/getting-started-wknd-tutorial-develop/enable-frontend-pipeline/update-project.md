@@ -4,7 +4,7 @@ description: 프론트엔드 파이프라인에서 풀스택 AEM 프로젝트를
 version: Experience Manager as a Cloud Service
 feature: AEM Project Archetype, Cloud Manager, CI-CD Pipeline
 topic: Content Management, Development, Development, Architecture
-role: Developer, Architect, Admin
+role: Developer, Admin
 level: Intermediate
 jira: KT-10689
 mini-toc-levels: 1
@@ -13,8 +13,8 @@ recommendations: noDisplay, noCatalog
 doc-type: Tutorial
 exl-id: c4a961fb-e440-4f78-b40d-e8049078b3c0
 duration: 307
-source-git-commit: b395b3b84e63fe6c24e597d1628f4aed5ba47469
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 100%
 
@@ -30,7 +30,7 @@ ht-degree: 100%
 
 ## 풀스택 AEM 프로젝트의 구성 변경 개요
 
->[!VIDEO](https://video.tv.adobe.com/v/3453616?quality=12&learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3409419?quality=12&learn=on)
 
 ## 사전 요구 사항 {#prerequisites}
 
@@ -195,7 +195,7 @@ ht-degree: 100%
 
 ## 주의 - _프론트엔드 파이프라인 활성화_ 버튼
 
-[레일 선택기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html?lang=ko)의 [사이트](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html?lang=ko) 옵션은 사이트 루트 또는 사이트 페이지를 선택할 시 **프론트엔드 파이프라인 활성화** 버튼을 표시합니다. **프론트엔드 파이프라인 활성화** 버튼을 클릭하면 위의 **Sling 구성**&#x200B;을 재정의하게 되므로 Cloud Manager 파이프라인 실행을 통해 위의 변경 사항을 배포한 후에는 이 버튼을 **누르지 말아야 합니다**.
+[레일 선택기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html)의 [사이트](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html) 옵션은 사이트 루트 또는 사이트 페이지를 선택할 시 **프론트엔드 파이프라인 활성화** 버튼을 표시합니다. **프론트엔드 파이프라인 활성화** 버튼을 클릭하면 위의 **Sling 구성**&#x200B;을 재정의하게 되므로 Cloud Manager 파이프라인 실행을 통해 위의 변경 사항을 배포한 후에는 이 버튼을 **누르지 말아야 합니다**.
 
 ![프론트엔드 파이프라인 활성화 버튼](assets/enable-front-end-Pipeline-button.png)
 

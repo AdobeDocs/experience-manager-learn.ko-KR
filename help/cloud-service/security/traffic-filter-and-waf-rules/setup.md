@@ -4,15 +4,15 @@ description: WAF 규칙을 포함한 트래픽 필터 규칙의 결과를 생성
 version: Experience Manager as a Cloud Service
 feature: Security
 topic: Security, Administration, Architecture
-role: Admin, Architect
+role: Admin, Developer
 level: Intermediate
 doc-type: Tutorial
 last-substantial-update: 2025-06-04T00:00:00Z
 jira: KT-18306
 thumbnail: null
 exl-id: 0a738af8-666b-48dc-8187-9b7e6a8d7e1b
-source-git-commit: b7f567da159865ff04cb7e9bd4dae0b140048e7d
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '1125'
 ht-degree: 100%
 
@@ -31,7 +31,7 @@ ht-degree: 100%
 이후 튜토리얼의 기초 작업에는 다음 단계가 포함됩니다.
 
 - `config` 폴더의 AEM 프로젝트 내에 _규칙을 생성_&#x200B;합니다.
-- Cloud Manager Config Pipeline을 사용하여 _규칙을 배포_&#x200B;합니다.
+- Cloud Manager 구성 파이프라인을 사용하여 _규칙을 배포_&#x200B;합니다.
 - Curl, Vegeta, Nikto와 같은 도구를 사용하여 _규칙을 테스트_&#x200B;합니다.
 - AEMCS CDN Log Analysis Tooling을 사용하여 _결과를 분석_&#x200B;합니다.
 
@@ -74,7 +74,7 @@ data:
    - **유형**: 배포 파이프라인
    - **파이프라인 이름**: Dev-Config
 
-   ![Cloud Manager Config Pipeline 대화 상자](./assets/setup/cloud-manager-config-pipeline-step1-dialog.png)
+   ![Cloud Manager 구성 파이프라인 대화 상자](./assets/setup/cloud-manager-config-pipeline-step1-dialog.png)
 
 4. 소스 코드 구성:
 
@@ -85,7 +85,7 @@ data:
    - **Git 분기**: 작업 분기
    - **코드 위치**: `/config`
 
-   ![Cloud Manager Config Pipeline 대화 상자](./assets/setup/cloud-manager-config-pipeline-step2-dialog.png)
+   ![Cloud Manager 구성 파이프라인 대화 상자](./assets/setup/cloud-manager-config-pipeline-step2-dialog.png)
 
 5. 파이프라인 구성을 검토하고 **저장**&#x200B;을 클릭합니다.
 

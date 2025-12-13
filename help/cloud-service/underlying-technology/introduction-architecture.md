@@ -6,12 +6,12 @@ version: Experience Manager as a Cloud Service
 jira: KT-4260
 thumbnail: 32034.jpg
 topic: Architecture
-role: Architect, Developer
+role: Developer
 level: Beginner
 exl-id: bb13fc39-fcb7-4241-8504-8ff999a6caa2
 duration: 190
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '42'
 ht-degree: 100%
 
@@ -21,4 +21,4 @@ ht-degree: 100%
 
 Adobe Experience Manager의 기술 스택의 일부인 [!DNL OSGi], [!DNL JCR], [!DNL Oak] 및 [!DNL Sling] 기술을 소개합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/37045?quality=12&learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/32034?quality=12&learn=on)

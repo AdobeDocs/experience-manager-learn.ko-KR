@@ -12,9 +12,9 @@ last-substantial-update: 2023-01-12T00:00:00Z
 doc-type: Tutorial
 exl-id: e2922278-4d0b-4f28-a999-90551ed65fb4
 duration: 881
-source-git-commit: dc29a4b7857ee8d1405c9ef8d14f09374c2bfd01
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
-source-wordcount: '1962'
+source-wordcount: '1960'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,9 @@ ht-degree: 0%
 
 Adobe Experience Manager(AEM) as a Cloud Service과의 통합은 AEM 서비스를 안전하게 인증할 수 있어야 합니다. AEM의 Developer Console은 외부 애플리케이션, 시스템 및 서비스가 HTTP를 통해 AEM 작성자 또는 게시 서비스와 프로그래밍 방식으로 상호 작용하는 데 사용되는 서비스 자격 증명에 대한 액세스 권한을 부여합니다.
 
-AEM은 Adobe Developer Console을 통해 관리되는 [S2S OAuth](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)를 사용하여 다른 Adobe 제품과 통합됩니다. 서비스 계정과의 사용자 정의 통합을 위해 AEM Developer Console에서 JWT 자격 증명을 사용 및 관리합니다.
+AEM은 Adobe Developer Console을 통해 관리되는 [S2S OAuth](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)를 사용하여 다른 Adobe 제품과 통합됩니다. 서비스 계정과의 사용자 정의 통합을 위해 AEM Developer Console에서 JWT 자격 증명을 사용 및 관리합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/344048?captions=kor&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330519?quality=12&learn=on)
 
 서비스 자격 증명은 [로컬 개발 액세스 토큰](./local-development-access-token.md)과 비슷하게 나타날 수 있지만 몇 가지 주요 방법으로 다릅니다.
 
@@ -53,8 +53,10 @@ AEM은 Adobe Developer Console을 통해 관리되는 [S2S OAuth](https://experi
 기술 계정은 한 번 생성되지만, 기술 계정과 연결된 서비스 자격 증명을 관리하는 데 사용되는 개인 키는 시간이 지남에 따라 관리될 수 있습니다. 예를 들어 서비스 자격 증명 사용자가 계속 액세스할 수 있도록 하려면 현재 개인 키가 만료되기 전에 새 개인 키/서비스 자격 증명을 생성해야 합니다.
 
 1. 다음으로 로그인했는지 확인합니다.
+
    + __Adobe IMS 조직의 시스템 관리자__
    + __AEM 작성자__&#x200B;의 __AEM 관리자__ IMS 제품 프로필의 구성원
+
 1. [Adobe Cloud Manager](https://my.cloudmanager.adobe.com)에 로그인
 1. AEM as a Cloud Service 환경이 포함된 프로그램을 열어 을(를) 통합하기 위한 서비스 자격 증명 설정
 1. __환경__ 섹션에서 환경 옆에 있는 생략 부호를 탭하고 __Developer Console__&#x200B;을(를) 선택합니다
@@ -74,8 +76,10 @@ AEM as Cloud Service 환경의 서비스 자격 증명이 초기화되면 Adobe 
 서비스 자격 증명 다운로드는 초기화와 유사한 단계를 따릅니다.
 
 1. 다음으로 로그인했는지 확인합니다.
+
    + __Adobe IMS 조직의 관리자__
    + __AEM 작성자__&#x200B;의 __AEM 관리자__ IMS 제품 프로필의 구성원
+
 1. [Adobe Cloud Manager](https://my.cloudmanager.adobe.com)에 로그인
 1. 통합할 AEM as a Cloud Service 환경이 포함된 프로그램 열기
 1. __환경__ 섹션에서 환경 옆에 있는 생략 부호를 탭하고 __Developer Console__&#x200B;을(를) 선택합니다
@@ -93,6 +97,7 @@ AEM as Cloud Service 환경의 서비스 자격 증명이 초기화되면 Adobe 
 간소화를 위해 이 자습서에서는 명령줄을 통해 의 서비스 자격 증명을 전달합니다. 그러나 IT 보안 팀과 협력하여 조직의 보안 지침에 따라 이러한 자격 증명을 저장하고 액세스하는 방법을 이해하십시오.
 
 1. [다운로드한 서비스 자격 증명 JSON](#download-service-credentials)을(를) 프로젝트 루트의 `service_token.json` 파일에 복사합니다.
+
    + Git에 _자격 증명_&#x200B;을(를) 커밋하지 마십시오!
 
 ## 서비스 자격 증명 사용
@@ -107,7 +112,9 @@ AEM as Cloud Service 환경의 서비스 자격 증명이 초기화되면 Adobe 
 1. 외부 애플리케이션은 서비스 자격 증명의 정보를 사용하여 JWT 토큰을 구성합니다
 1. JWT 토큰은 액세스 토큰으로 교환하기 위해 Adobe IMS로 전송됩니다
 1. Adobe IMS는 AEM as a Cloud Service에 액세스하는 데 사용할 수 있는 액세스 토큰을 반환합니다
+
    + 액세스 토큰은 만료 시간을 변경할 수 없습니다.
+
 1. 외부 애플리케이션은 AEM as a Cloud Service에 대한 HTTP 요청을 수행하며, 액세스 토큰을 HTTP 요청의 인증 헤더에 전달자 토큰으로 추가합니다
 1. AEM as a Cloud Service은 HTTP 요청을 수신하고 요청을 인증하며 HTTP 요청에서 요청한 작업을 수행하고 HTTP 응답을 다시 외부 애플리케이션으로 반환합니다
 
@@ -117,12 +124,12 @@ AEM as Cloud Service 환경의 서비스 자격 증명이 초기화되면 Adobe 
 
 1. 서비스 자격 증명에서 읽기
 
-+ 간소화를 위해 다운로드한 JSON 파일에서 서비스 자격 증명을 읽지만, 실제 사용 시나리오에서는 조직의 보안 지침에 따라 서비스 자격 증명을 안전하게 저장해야 합니다
+   + 간소화를 위해 다운로드한 JSON 파일에서 서비스 자격 증명을 읽지만, 실제 사용 시나리오에서는 조직의 보안 지침에 따라 서비스 자격 증명을 안전하게 저장해야 합니다
 
 1. 서비스 자격 증명에서 JWT 생성
 1. JWT를 액세스 토큰으로 교환
 
-+ 서비스 자격 증명이 있으면 외부 애플리케이션이 AEM as a Cloud Service에 액세스할 때 로컬 개발 액세스 토큰 대신 이 액세스 토큰을 사용합니다
+   + 서비스 자격 증명이 있으면 외부 애플리케이션이 AEM as a Cloud Service에 액세스할 때 로컬 개발 액세스 토큰 대신 이 액세스 토큰을 사용합니다
 
 이 자습서에서는 Adobe의 `@adobe/jwt-auth` npm 모듈을 사용하여 (1) 서비스 자격 증명에서 JWT를 생성하고, (2) 단일 함수 호출에서 액세스 토큰으로 교환합니다. 애플리케이션이 JavaScript 기반이 아닌 경우 서비스 자격 증명에서 JWT를 생성하는 사용자 지정 코드를 원하는 언어로 개발하고 Adobe IMS와 액세스 토큰으로 교환할 수 있습니다.
 
@@ -155,36 +162,36 @@ function getCommandLineParams() {
 
    서비스 자격 증명이 제공되면 애플리케이션은 JWT를 생성하고 액세스 토큰에 대해 Adobe IMS와 교환합니다. 단일 함수 호출에서 JWT를 생성하고 액세스 토큰으로 교환하는 [@adobe/jwt-auth](https://www.npmjs.com/package/@adobe/jwt-auth)의 `auth(...)` 함수를 사용합니다. `auth(..)` 메서드에 대한 매개 변수는 코드에 설명된 대로 서비스 자격 증명 JSON에서 사용할 수 있는 [특정 정보](https://www.npmjs.com/package/@adobe/jwt-auth#config-object)로 구성된 JSON 개체입니다.
 
-```javascript
- async function getAccessToken(developerConsoleCredentials) {
+   ```javascript
+    async function getAccessToken(developerConsoleCredentials) {
+   
+        if (developerConsoleCredentials.accessToken) {
+            // This is a Local Development access token
+            return developerConsoleCredentials.accessToken;
+        } else {
+            // This is the Service Credentials JSON object that must be exchanged with Adobe IMS for an access token
+            let serviceCredentials = developerConsoleCredentials.integration;
+   
+            // Use the @adobe/jwt-auth library to pass the service credentials generated a JWT and exchange that with Adobe IMS for an access token.
+            // If other programming languages are used, please see these code samples: https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/samples/samples.md
+            let { access_token } = await auth({
+                clientId: serviceCredentials.technicalAccount.clientId, // Client Id
+                technicalAccountId: serviceCredentials.id,              // Technical Account Id
+                orgId: serviceCredentials.org,                          // Adobe IMS Org Id
+                clientSecret: serviceCredentials.technicalAccount.clientSecret, // Client Secret
+                privateKey: serviceCredentials.privateKey,              // Private Key to sign the JWT
+                metaScopes: serviceCredentials.metascopes.split(','),   // Meta Scopes defining level of access the access token should provide
+                ims: `https://${serviceCredentials.imsEndpoint}`,       // IMS endpoint used to obtain the access token from
+            });
+   
+            return access_token;
+        }
+    }
+   ```
 
-     if (developerConsoleCredentials.accessToken) {
-         // This is a Local Development access token
-         return developerConsoleCredentials.accessToken;
-     } else {
-         // This is the Service Credentials JSON object that must be exchanged with Adobe IMS for an access token
-         let serviceCredentials = developerConsoleCredentials.integration;
+   이제 `file` 명령줄 매개 변수를 통해 전달되는 JSON 파일(로컬 개발 액세스 토큰 JSON 또는 서비스 자격 증명 JSON)에 따라 응용 프로그램에서 액세스 토큰을 가져옵니다.
 
-         // Use the @adobe/jwt-auth library to pass the service credentials generated a JWT and exchange that with Adobe IMS for an access token.
-         // If other programming languages are used, please see these code samples: https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/samples/samples.md
-         let { access_token } = await auth({
-             clientId: serviceCredentials.technicalAccount.clientId, // Client Id
-             technicalAccountId: serviceCredentials.id,              // Technical Account Id
-             orgId: serviceCredentials.org,                          // Adobe IMS Org Id
-             clientSecret: serviceCredentials.technicalAccount.clientSecret, // Client Secret
-             privateKey: serviceCredentials.privateKey,              // Private Key to sign the JWT
-             metaScopes: serviceCredentials.metascopes.split(','),   // Meta Scopes defining level of access the access token should provide
-             ims: `https://${serviceCredentials.imsEndpoint}`,       // IMS endpoint used to obtain the access token from
-         });
-
-         return access_token;
-     }
- }
-```
-
-    이제 &#39;file&#39; 명령줄 매개 변수를 통해 전달되는 JSON 파일(로컬 개발 액세스 토큰 JSON 또는 서비스 자격 증명 JSON)에 따라 응용 프로그램에서 액세스 토큰을 가져옵니다.
-    
-    서비스 자격 증명이 365일마다 만료되는 동안 JWT 및 해당 액세스 토큰은 자주 만료되며 만료되기 전에 새로 고쳐야 합니다. Adobe IMS에서 제공하는 &#39;refresh_token&#39;(https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/OAuth/OAuth.md)을 사용하면 됩니다#access-tokens
+   서비스 자격 증명이 365일마다 만료되는 동안 JWT 및 해당 액세스 토큰은 자주 만료되며 만료되기 전에 새로 고쳐야 합니다. Adobe IMS에서 제공하는 `refresh_token` [을(를) 사용하여 ](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/OAuth/OAuth.md#access-tokens)할 수 있습니다.
 
 1. 이러한 변경 사항이 적용되면 AEM Developer Console에서 서비스 자격 증명 JSON이 다운로드되어 이 `service_token.json`과(와) 동일한 폴더에 `index.js`(으)로 저장되었습니다. 이제 응용 프로그램을 실행하여 명령줄 매개 변수 `file`을(를) `service_token.json`(으)로 바꾸고 AEM에서 효과가 나타나도록 `propertyValue`을(를) 새 값으로 업데이트하겠습니다.
 
@@ -224,7 +231,9 @@ function getCommandLineParams() {
 1. __도구__ > __보안__ > __사용자__(으)로 이동
 1. 1단계에서 식별된 __로그인 이름__&#x200B;을 사용하는 AEM 사용자를 찾아 해당 __속성__&#x200B;을 엽니다.
 1. __그룹__ 탭으로 이동하여 __DAM 사용자__ 그룹(에셋에 대한 쓰기 액세스 권한으로 사용)을 추가합니다.
-   + 최적의 사용 권한을 얻으려면 [AEM에서 제공한 사용자 그룹 목록을](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=ko#built-in-users-and-groups)에 추가하십시오. AEM에서 제공한 사용자 그룹으로 충분하지 않은 경우 직접 만들고 적절한 권한을 추가합니다.
+
+   + 최적의 사용 권한을 얻으려면 [AEM에서 제공한 사용자 그룹 목록을](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#built-in-users-and-groups)에 추가하십시오. AEM에서 제공한 사용자 그룹으로 충분하지 않은 경우 직접 만들고 적절한 권한을 추가합니다.
+
 1. __저장 후 닫기__ 탭
 
 AEM에서 자산에 대한 쓰기 권한을 가질 수 있는 기술 계정을 사용하여 애플리케이션을 다시 실행하십시오.

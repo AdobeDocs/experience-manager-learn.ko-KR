@@ -4,14 +4,15 @@ description: 보안을 강화하고 위험을 완화하기 위해 AEM as a Cloud
 version: Experience Manager as a Cloud Service
 feature: Security
 topic: Security, Administration, Architecture
-role: Admin, Architect
+role: Admin, Developer
 level: Intermediate
 doc-type: Tutorial
 last-substantial-update: 2025-06-04T00:00:00Z
 jira: KT-18310
 thumbnail: null
-source-git-commit: 293157c296676ef1496e6f861ed8c2c24da7e068
-workflow-type: ht
+exl-id: 4a7acdd2-f442-44ee-8560-f9cb64436acf
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 100%
 
@@ -134,4 +135,3 @@ AEM as a Cloud Service에서 트래픽 필터 규칙 및 WAF 규칙을 구현하
 - [WAF 규칙이 포함된 트래픽 필터 규칙](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf)
 - [AEM의 DoS/DDoS 방지 이해](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/foundation/security/understanding-dos-and-prevention-approaches)
 - [트래픽 필터 규칙을 사용하여 DoS 및 DDoS 공격 차단](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/security/blocking-dos-attack-using-traffic-filter-rules)
-

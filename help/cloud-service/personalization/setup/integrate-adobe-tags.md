@@ -4,19 +4,19 @@ description: Adobe Experience Platform의 태그와 AEM as a Cloud Service을 �
 version: Experience Manager as a Cloud Service
 feature: Personalization, Integrations
 topic: Personalization, Integrations, Architecture, Content Management
-role: Developer, Architect, Leader, Data Architect, User
+role: Developer, Leader, User
 level: Beginner
 doc-type: Tutorial
 last-substantial-update: 2025-08-07T00:00:00Z
 jira: KT-18719
 thumbnail: null
-source-git-commit: 70665c019f63df1e736292ad24c47624a3a80d49
+exl-id: 71cfb9f5-57d9-423c-bd2a-f6940cc0b4db
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '745'
 ht-degree: 1%
 
 ---
-
 
 # Adobe Experience Platform의 태그 통합
 
@@ -55,7 +55,7 @@ Adobe Experience Platform에서 Tags 속성을 생성하여 시작합니다. 이
 4. 새 속성을 엽니다. **Core** 확장을 이미 포함해야 합니다. **데이터 스트림 ID**&#x200B;와 같은 추가 구성이 필요하므로 나중에 실험 사용 사례를 설정할 때 **웹 SDK** 확장을 추가할 예정입니다.\
    ![Adobe 태그 코어 확장](../assets/setup/adobe-tags-core-extension.png)
 
-5. **흐름 게시**&#x200B;로 이동하고 **라이브러리 추가**&#x200B;를 클릭하여 배포 라이브러리를 만들어 Tags 속성을 게시합니다.
+5. **흐름 게시**&#x200B;로 이동하고 **라이브러리 추가**를 클릭하여 배포 라이브러리를 만들어 Tags 속성을 게시합니다.
    ![Adobe 태그 게시 흐름](../assets/setup/adobe-tags-publishing-flow.png)
 
 6. **라이브러리 만들기** 대화 상자에서 다음을 제공합니다.
@@ -127,5 +127,5 @@ AEM에서 태그 구성을 만들어 사이트 페이지에 필요한 속성 및
 
 ## 추가 리소스
 
-- [Adobe Experience Platform Debugger 개요](https://experienceleague.adobe.com/ko/docs/experience-platform/debugger/home)
+- [Adobe Experience Platform Debugger 개요](https://experienceleague.adobe.com/en/docs/experience-platform/debugger/home)
 - [태그 개요](https://experienceleague.adobe.com/ko/docs/experience-platform/tags/home)

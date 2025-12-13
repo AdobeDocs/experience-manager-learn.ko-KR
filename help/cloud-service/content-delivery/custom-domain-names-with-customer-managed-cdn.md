@@ -4,7 +4,7 @@ description: 고객 관리 CDN을 사용하는 AEM as a Cloud Service 웹 사이
 version: Experience Manager as a Cloud Service
 feature: Cloud Manager, Operations
 topic: Administration, Architecture
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Intermediate
 doc-type: Tutorial
 duration: 0
@@ -12,7 +12,7 @@ last-substantial-update: 2024-06-21T00:00:00Z
 jira: KT-15945
 thumbnail: KT-15945.jpeg
 exl-id: fa9ee14f-130e-491b-91b6-594ba47a7278
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '1051'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 **고객 관리 CDN**&#x200B;을(를) 사용하는 AEM as a Cloud Service 웹 사이트에 사용자 지정 도메인 이름을 추가하는 방법을 알아봅니다.
 
-이 자습서에서는 고객 관리 CDN을 사용하여 TLS(전송 계층 보안)가 있는 HTTPS 주소 지정 가능한 사용자 지정 도메인 이름 `wkndviaawscdn.enablementadobe.com`을(를) 추가하여 샘플 [AEM WKND](https://github.com/adobe/aem-guides-wknd) 사이트의 브랜딩을 개선합니다. 이 자습서에서는 AWS CloudFront를 고객 관리 CDN으로 사용하지만 모든 CDN 공급자는 AEM as a Cloud Service과 호환되어야 합니다.
+이 자습서에서는 고객 관리 CDN을 사용하여 TLS(전송 계층 보안)가 있는 HTTPS 주소 지정 가능한 사용자 지정 도메인 이름 [을(를) 추가하여 샘플 ](https://github.com/adobe/aem-guides-wknd)AEM WKND`wkndviaawscdn.enablementadobe.com` 사이트의 브랜딩을 개선합니다. 이 자습서에서는 AWS CloudFront를 고객 관리 CDN으로 사용하지만 모든 CDN 공급자는 AEM as a Cloud Service과 호환되어야 합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3432561?quality=12&learn=on)
 
@@ -41,13 +41,13 @@ ht-degree: 0%
    - 고객 CDN - 고객 CDN을 설정하고 SSL 인증서 및 AWS CloudFront, Azure CDN 또는 Akamai와 같은 도메인 세부 사항을 추가합니다.
    - DNS(Domain Name System) 호스팅 서비스 - Azure DNS 또는 AWS Route 53과 같은 사용자 정의 도메인에 대한 DNS 레코드를 추가합니다.
 - HTTP 헤더 유효성 검사 CDN 규칙을 AEM as a Cloud Service 환경에 배포하기 위해 [Adobe Cloud Manager](https://my.cloudmanager.adobe.com/)에 액세스합니다.
-- 샘플 [AEM WKND](https://github.com/adobe/aem-guides-wknd) 사이트가 [프로덕션 프로그램](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs) 유형의 AEM as a Cloud Service 환경에 배포되었습니다.
+- 샘플 [AEM WKND](https://github.com/adobe/aem-guides-wknd) 사이트가 [프로덕션 프로그램](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs) 유형의 AEM as a Cloud Service 환경에 배포되었습니다.
 
 서드파티 서비스에 액세스할 수 없는 경우 _보안 또는 호스팅 팀과 협력하여 단계를 완료합니다_.
 
 ## SSL 인증서 생성
 
->[!VIDEO](https://video.tv.adobe.com/v/3441495?quality=12&learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3427908?quality=12&learn=on)
 
 다음 두 가지 옵션이 있습니다.
 
@@ -78,7 +78,7 @@ $ openssl crl2pkcs7 -nocrl -certfile <YOUR-SIGNED-CERT>.crt | openssl pkcs7 -pri
 
 Adobe Cloud Manager은 별도의 양식 필드 _에서 최종 엔티티 인증서 및 인증서 체인_&#x200B;을(를) 허용하므로 서명된 인증서에서 최종 엔티티 인증서 및 인증서 체인을 추출해야 합니다.
 
-이 자습서에서는 `*.enablementadobe.com` 도메인에 대해 발급된 [DigitCert](https://www.digicert.com/) 서명 인증서를 예로 사용합니다. 텍스트 편집기에서 서명된 인증서를 열고 `-----BEGIN CERTIFICATE-----`과(와) `-----END CERTIFICATE-----` 마커 사이의 콘텐츠를 복사하여 최종 엔터티 및 인증서 체인을 추출합니다.
+이 자습서에서는 [ 도메인에 대해 발급된 ](https://www.digicert.com/)DigitCert`*.enablementadobe.com` 서명 인증서를 예로 사용합니다. 텍스트 편집기에서 서명된 인증서를 열고 `-----BEGIN CERTIFICATE-----`과(와) `-----END CERTIFICATE-----` 마커 사이의 콘텐츠를 복사하여 최종 엔터티 및 인증서 체인을 추출합니다.
 
 ## 고객 관리 CDN 설정
 
@@ -180,7 +180,7 @@ public class VerifyHeadersServlet extends SlingSafeMethodsServlet {
 }
 ```
 
-서블릿을 테스트하려면 `../dispatcher/src/conf.dispatcher.d/filters/filters.any` 파일을 다음 구성으로 업데이트하십시오. 또한 CDN이 `/bin/*` 경로를 **캐싱하지 않음**&#x200B;하도록 구성되어 있는지 확인하십시오.
+서블릿을 테스트하려면 `../dispatcher/src/conf.dispatcher.d/filters/filters.any` 파일을 다음 구성으로 업데이트하십시오. 또한 CDN이 **경로를**&#x200B;캐싱하지 않음`/bin/*`하도록 구성되어 있는지 확인하십시오.
 
 ```plaintext
 # Testing purpose bin
@@ -222,7 +222,7 @@ HTTP 헤더 유효성 검사 CDN 규칙을 구성하고 배포하려면 다음 �
 
 ## X-AEM-Edge-키 HTTP 헤더에서 암호 전달
 
->[!VIDEO](https://video.tv.adobe.com/v/3445052?quality=12&learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3432567?quality=12&learn=on)
 
 고객 CDN을 업데이트하여 `X-AEM-Edge-Key` HTTP 헤더에서 암호를 전달합니다. 이 암호는 Adobe CDN에서 고객 CDN으로부터 요청이 오고 있는지 확인하고 `Host` 헤더 값을 고객 CDN으로부터 받은 `X-Forwarded-Host`의 값으로 변환하는 데 사용됩니다.
 

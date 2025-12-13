@@ -4,13 +4,13 @@ description: WKND 지원 웹 사이트에서 A/B 테스트, 행동 타기팅 및
 version: Experience Manager as a Cloud Service
 feature: Personalization, Integrations
 topic: Personalization, Integrations
-role: Developer, Architect, Leader, User
+role: Developer, Leader, User
 level: Beginner
 doc-type: Tutorial
 last-substantial-update: 2025-11-03T00:00:00Z
 jira: KT-19546
 thumbnail: KT-19546.jpeg
-source-git-commit: ed7af09d747d54a84d2583073d3c731388b5f516
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '944'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 A/B 테스트, 행동 타기팅 및 알려진 사용자 개인화에 대한 실제 사례를 보려면 [WKND 지원 웹 사이트](https://wknd.enablementadobe.com/us/en.html){target="wknd"}를 방문하십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/3476468/?captions=kor&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3476461/?learn=on&enablevpops)
 
 이 페이지에서는 각 개인화 시나리오의 실습 데모를 안내합니다. 이를 사용하여 AEM 사이트에서 이러한 기능을 빌드하기 전에 가능한 기능을 살펴보십시오.
 

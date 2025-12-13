@@ -11,7 +11,7 @@ last-substantial-update: 2024-02-27T00:00:00Z
 jira: KT-14903
 thumbnail: KT-14903.jpeg
 exl-id: 563bab0e-21e3-487c-9bf3-de15c3a81aba
-source-git-commit: be710750cd6f2c71fa6b5eb8a6309d5965d67c82
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 1%
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 AEM 콘텐츠 조각 편집기에서 사용자 지정 필드를 만드는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3437641?learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3427585?learn=on)
 
 AEM UI 확장은 AEM의 나머지 부분과 일관된 모양과 느낌을 유지하고 사전 설치된 기능의 광범위한 라이브러리를 사용하므로 [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html) 프레임워크를 사용하여 개발해야 하며 개발 시간이 단축됩니다.
 
@@ -31,7 +31,7 @@ AEM UI 확장은 AEM의 나머지 부분과 일관된 모양과 느낌을 유지
 이 예는 콘텐츠 조각 편집기의 기존 필드를 사용자 지정 구현으로 대체합니다.
 
 | AEM UI 확장 | 확장 지점 |
-| ------------------------ | --------------------- | 
+| ------------------------ | --------------------- |
 | [콘텐츠 조각 편집기](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [사용자 지정 양식 요소 렌더링](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/custom-fields/) |
 
 ## 확장 예

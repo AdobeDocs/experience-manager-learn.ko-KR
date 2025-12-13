@@ -4,19 +4,19 @@ description: AEM as a Cloud Service을 Adobe Target과 통합하여 개인화된
 version: Experience Manager as a Cloud Service
 feature: Personalization, Integrations
 topic: Personalization, Integrations, Architecture
-role: Developer, Architect, Leader, Data Architect, User
+role: Developer, Leader, User
 level: Beginner
 doc-type: Tutorial
 last-substantial-update: 2025-08-07T00:00:00Z
 jira: KT-18718
 thumbnail: null
-source-git-commit: 70665c019f63df1e736292ad24c47624a3a80d49
+exl-id: 86767e52-47ce-442c-a620-bc9e7ac2eaf3
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '782'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
-
 
 # Adobe Target 통합
 
@@ -55,7 +55,7 @@ AEM이 Adobe Target과 안전하게 통신할 수 있도록 하려면 OAuth 서�
 5. **제품 프로필 선택** 단계에서 **기본 Workspace**&#x200B;을 선택하고 **구성된 API 저장**&#x200B;을 클릭합니다.\
    ![제품 프로필 선택](../assets/setup/adc-select-product-profiles.png)
 
-6. 왼쪽 탐색에서 **OAuth 서버 간**&#x200B;을(를) 선택하고 구성 세부 사항을 검토합니다. 클라이언트 ID 및 클라이언트 암호 참고 - AEM에서 IMS 통합을 구성하려면 다음 값이 필요합니다.
+6. 왼쪽 탐색에서 **OAuth 서버 간**을(를) 선택하고 구성 세부 사항을 검토합니다. 클라이언트 ID 및 클라이언트 암호 참고 - AEM에서 IMS 통합을 구성하려면 다음 값이 필요합니다.
    ![OAuth 서버 간 세부 정보](../assets/setup/adc-oauth-server-to-server.png)
 
 ## AEM에서 Target에 대한 Adobe IMS 구성 만들기
@@ -140,7 +140,7 @@ Adobe Target 구성을 경험 조각과 연결하여 Target에서 오퍼로 내�
 
 ## 추가 리소스
 
-- [Target API 개요](https://experienceleague.adobe.com/ko/docs/target-dev/developer/api/target-api-overview)
-- [오퍼 타깃팅](https://experienceleague.adobe.com/ko/docs/target/using/experiences/offers/manage-content)
+- [Target API 개요](https://experienceleague.adobe.com/en/docs/target-dev/developer/api/target-api-overview)
+- [오퍼 타깃팅](https://experienceleague.adobe.com/en/docs/target/using/experiences/offers/manage-content)
 - [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/)
-- [AEM의 경험 조각](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use)
+- [AEM의 경험 조각](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use)

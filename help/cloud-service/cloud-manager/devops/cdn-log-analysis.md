@@ -4,7 +4,7 @@ description: Adobe이 제공하는 AEM Cloud Service CDN 로그 분석 도구에
 version: Experience Manager as a Cloud Service
 feature: Developer Tools
 topic: Development
-role: Developer, Architect, Admin
+role: Developer, Admin
 level: Beginner
 doc-type: Tutorial
 duration: 219
@@ -12,10 +12,10 @@ last-substantial-update: 2024-05-17T00:00:00Z
 jira: KT-15505
 thumbnail: KT-15505.jpeg
 exl-id: 830c2486-099b-454f-bc07-6bf36e81ac8d
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '442'
-ht-degree: 0%
+ht-degree: 11%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Adobe에서 제공하는 _AEM Cloud Service CDN 로그 분석 도구_와 이 도구를 통해 CDN 성능과 AEM 구현에 대한 통찰력을 얻는 방법에 대해 알아봅니다.
  
->[!VIDEO](https://video.tv.adobe.com/v/3446112?quality=12&learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3429177?quality=12&learn=on)
 
 ## 개요
 
@@ -44,11 +44,11 @@ Adobe에서 제공하는 _AEM Cloud Service CDN 로그 분석 도구_와 이 도
 
 로그 분석을 신속하게 시작하기 위해 Adobe은 Splunk 및 ELK 스택 모두에 대해 사전 설치된 대시보드를 제공합니다.
 
-- **CDN 캐시 적중률**: HIT, PASS 및 MISS 상태별 총 캐시 적중률 및 총 요청 수에 대한 통찰력을 제공합니다. 또한 최상위 HIT, PASS 및 MISS URL도 제공합니다.
+- **CDN 캐시 적중률**: 적중, 통과 및 실패 상태별로 총 캐시 적중률과 총 요청 수에 대한 인사이트를 제공합니다. 또한 최상위 HIT, PASS 및 MISS URL도 제공합니다.
 
   ![CDN 캐시 적중률](assets/CHR-dashboard.png)
 
-- **CDN 트래픽 대시보드**: CDN 및 원본 요청 속도, 4xx 및 5xx 오류율 및 캐시되지 않은 요청을 통해 트래픽에 대한 통찰력을 제공합니다. 또한 클라이언트 IP 주소당 초당 최대 CND 및 Origin 요청 수와 CDN 구성을 최적화하는 더 많은 통찰력을 제공합니다.
+- **CDN 트래픽 대시보드**: CDN 및 Origin 요청 속도, 4xx 및 5xx 오류율 및 캐시되지 않은 요청을 통해 트래픽에 대한 인사이트를 제공합니다. 또한 클라이언트 IP 주소당 초당 최대 CND 및 Origin 요청 수와 CDN 구성을 최적화하는 더 많은 통찰력을 제공합니다.
 
   ![CDN 트래픽 대시보드](assets/Traffic-dashboard.png)
 

@@ -3,7 +3,7 @@ title: 원격 SPA에 편집 가능한 React 컨테이너 구성 요소 추가
 description: AEM 작성자가 구성 요소를 원격 SPA에 끌어다 놓을 수 있도록 하는 편집 가능한 컨테이너 구성 요소를 추가하는 방법에 대해 알아봅니다.
 topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
-role: Developer, Architect
+role: Developer
 level: Beginner
 jira: KT-7635
 thumbnail: kt-7635.jpeg
@@ -13,7 +13,7 @@ doc-type: Tutorial
 exl-id: e5e6204c-d88c-4e79-a7f4-0cfc140bc51c
 duration: 306
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '1112'
 ht-degree: 1%
@@ -42,7 +42,7 @@ ht-degree: 1%
 편집 가능한 영역을 홈 보기에 추가하려면 다음을 수행합니다.
 
 1. `react-app/src/components/Home.js` 열기 및 편집
-1. `@adobe/aem-react-editable-components`에서 `ResponsiveGrid` 구성 요소를 가져와 `Home` 구성 요소에 추가하십시오.
+1. `ResponsiveGrid`에서 `@adobe/aem-react-editable-components` 구성 요소를 가져와 `Home` 구성 요소에 추가하십시오.
 1. `<ResponsiveGrid...>` 구성 요소에서 다음 특성을 설정합니다.
    1. `pagePath = '/content/wknd-app/us/en/home'`
    1. `itemPath = 'root/responsivegrid'`
@@ -51,7 +51,7 @@ ht-degree: 1%
 
    1. `/content/wknd-app/us/en/home/jcr:content/root/responsivegrid`
 
-   `itemPath`은(는) `Remote SPA Page` AEM 템플릿에 정의된 `responsivegrid` 노드에 매핑되며 `Remote SPA Page` AEM 템플릿에서 만든 새 AEM 페이지에 자동으로 만들어집니다.
+   `itemPath`은(는) `responsivegrid` AEM 템플릿에 정의된 `Remote SPA Page` 노드에 매핑되며 `Remote SPA Page` AEM 템플릿에서 만든 새 AEM 페이지에 자동으로 만들어집니다.
 
    `Home.js`을(를) 업데이트하여 `<ResponsiveGrid...>` 구성 요소를 추가합니다.
 
@@ -237,7 +237,7 @@ export default EditableImage;
 ```
 
 
-1. `EditableImage.scss`에 대한 사용자 지정 스타일을 제공하는 SCSS 파일 `src/components/editable/EditableImage.scss`을(를) 만듭니다. 이러한 스타일은 편집 가능한 React 구성 요소의 CSS 클래스를 대상으로 합니다.
+1. `src/components/editable/EditableImage.scss`에 대한 사용자 지정 스타일을 제공하는 SCSS 파일 `EditableImage.scss`을(를) 만듭니다. 이러한 스타일은 편집 가능한 React 구성 요소의 CSS 클래스를 대상으로 합니다.
 1. `EditableImage.scss`에 다음 SCSS 추가
 
    ```css
@@ -248,7 +248,7 @@ export default EditableImage;
     }
    ```
 
-1. `EditableImage.js`에서 `EditableImage.scss` 가져오기
+1. `EditableImage.scss`에서 `EditableImage.js` 가져오기
 
    ```javascript
    ...

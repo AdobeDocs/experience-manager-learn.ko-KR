@@ -12,10 +12,10 @@ doc-type: article
 last-substantial-update: 2023-06-12T00:00:00Z
 exl-id: 83acbddb-9168-4d8b-84b5-97577d8a1ead
 duration: 538
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '729'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -31,20 +31,20 @@ RTE 배지의 가장 일반적인 사용 사례는 [RTE 위젯](https://develope
 
 일반적으로 위젯과 연결된 배지는 외부 시스템 종속성이 있지만 _콘텐츠 작성자는 무결성을 유지하기 위해 삽입된 동적 콘텐츠를 수정할 수 없는_&#x200B;동적 콘텐츠를 추가하는 데 사용됩니다. 전체 항목으로만 제거할 수 있습니다.
 
-**배지**&#x200B;이(가) `rte` 확장 지점을 사용하여 콘텐츠 조각 편집기의 **RTE**&#x200B;에 추가됩니다. `rte` 확장 지점의 `getBadges()` 메서드를 사용하면 하나 이상의 배지가 추가됩니다.
+**배지**&#x200B;이(가) **확장 지점을 사용하여 콘텐츠 조각 편집기의** RTE`rte`에 추가됩니다. `rte` 확장 지점의 `getBadges()` 메서드를 사용하면 하나 이상의 배지가 추가됩니다.
 
-이 예에서는 RTE 콘텐츠 내에서 **담당자 이름** 및 **전화 번호**&#x200B;와 같은 WKND 어드벤처 관련 고객 서비스 세부 사항을 찾고, 선택하고, 추가하기 위해 _대규모 그룹 예약 고객 서비스_&#x200B;라는 위젯을 추가하는 방법을 보여 줍니다. 배지 기능을 사용하여 **전화 번호**&#x200B;을(를) **편집할 수 없음**(으)로 만들지만 WKND 콘텐츠 작성자는 대표 이름을 편집할 수 있습니다.
+이 예에서는 RTE 콘텐츠 내에서 _담당자 이름_ 및 **전화 번호**&#x200B;와 같은 WKND 어드벤처 관련 고객 서비스 세부 사항을 찾고, 선택하고, 추가하기 위해 **대규모 그룹 예약 고객 서비스**&#x200B;라는 위젯을 추가하는 방법을 보여 줍니다. 배지 기능을 사용하여 **전화 번호**&#x200B;을(를) **편집할 수 없음**(으)로 만들지만 WKND 콘텐츠 작성자는 대표 이름을 편집할 수 있습니다.
 
 또한 **전화 번호**&#x200B;은(는) 배지 기능의 추가 사용 사례인 스타일이 다르게 지정되어 있습니다.
 
-이 예제에서는 [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html) 프레임워크를 사용하여 위젯 또는 대화 상자 UI와 하드 코딩된 WKND 고객 서비스 전화 번호를 개발합니다. 콘텐츠의 편집되지 않고 다른 스타일 측면을 제어하기 위해 배지 정의의 `prefix` 및 `suffix` 특성에서 `#` 문자가 사용됩니다.
+이 예제에서는 [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html) 프레임워크를 사용하여 위젯 또는 대화 상자 UI와 하드 코딩된 WKND 고객 서비스 전화 번호를 개발합니다. 콘텐츠의 편집되지 않고 다른 스타일 측면을 제어하기 위해 배지 정의의 `#` 및 `prefix` 특성에서 `suffix` 문자가 사용됩니다.
 
 ## 확장 기능 포인트
 
 이 예제는 확장 지점 `rte`까지 확장하여 콘텐츠 조각 편집기의 RTE에 배지를 추가합니다.
 
 | AEM UI 확장 | 확장 기능 포인트 |
-| ------------------------ | --------------------- | 
+| ------------------------ | --------------------- |
 | [콘텐츠 조각 편집기](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [리치 텍스트 편집기 배지](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-badges/) 및 [리치 텍스트 편집기 위젯](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-widgets/) |
 
 ## 확장 예
@@ -55,7 +55,7 @@ RTE 배지의 가장 일반적인 사용 사례는 [RTE 위젯](https://develope
 
 ### 확장 등록
 
-`index.html` 경로에 매핑된 `ExtensionRegistration.js`은(는) AEM 확장의 진입점이며 다음을 정의합니다.
+`ExtensionRegistration.js` 경로에 매핑된 `index.html`은(는) AEM 확장의 진입점이며 다음을 정의합니다.
 
 + `getBadges()`에서 구성 특성 `id`, `prefix`, `suffix`, `backgroundColor` 및 `textColor`을(를) 사용하여 배지의 정의를 정의합니다.
 + 이 예에서는 `#` 문자를 사용하여 이 배지의 경계를 정의합니다. 즉, `#`(으)로 둘러싸인 RTE의 모든 문자열이 이 배지의 인스턴스로 처리됩니다.
@@ -113,7 +113,7 @@ function ExtensionRegistration() {
 export default ExtensionRegistration;
 ```
 
-### `App.js`에 `largeBookingsCustomerService` 경로 추가{#add-widgets-route}
+### `largeBookingsCustomerService`에 `App.js` 경로 추가{#add-widgets-route}
 
 기본 React 구성 요소 `App.js`에서 `largeBookingsCustomerService` 경로를 추가하여 위의 상대 URL 경로에 대한 UI를 렌더링합니다.
 
@@ -147,8 +147,8 @@ export default ExtensionRegistration;
 + `largeGroupCustomerServiceList` 배열에 대표 이름 및 전화 번호의 매핑이 하드코딩되어 있습니다. 실제 시나리오에서는 Adobe AppBuilder 작업 또는 외부 시스템이나 자체 개발 또는 클라우드 공급자 기반 API 게이트웨이에서 이 데이터를 검색할 수 있습니다.
 + `guestConnection`은(는) `useEffect` [React 후크](https://react.dev/reference/react/useEffect)을(를) 사용하여 초기화되고 구성 요소 상태로 관리됩니다. AEM 호스트와 통신하는 데 사용됩니다.
 + `handleCustomerServiceChange` 함수는 대표 이름과 전화 번호를 가져오고 구성 요소 상태 변수를 업데이트합니다.
-+ `guestConnection` 개체를 사용하는 `addCustomerServiceDetails` 함수는 실행할 RTE 명령을 제공합니다. 이 경우 `insertContent` 명령 및 HTML 코드 조각입니다.
-+ 배지를 사용하여 **전화 번호를 편집할 수 없도록**&#x200B;하려면 `...<div><p>Phone Number: #${phoneNumber}#</strong></p></div>`과(와) 같이 `phoneNumber` 변수 앞과 뒤에 `#` 특수 문자가 추가됩니다.
++ `addCustomerServiceDetails` 개체를 사용하는 `guestConnection` 함수는 실행할 RTE 명령을 제공합니다. 이 경우 `insertContent` 명령 및 HTML 코드 조각입니다.
++ 배지를 사용하여 **전화 번호를 편집할 수 없도록**&#x200B;하려면 `#`과(와) 같이 `phoneNumber` 변수 앞과 뒤에 `...<div><p>Phone Number: #${phoneNumber}#</strong></p></div>` 특수 문자가 추가됩니다.
 
 `src/aem-cf-editor-1/web-src/src/components/LargeBookingsCustomerService.js`
 

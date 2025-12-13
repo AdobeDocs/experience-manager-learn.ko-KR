@@ -4,7 +4,7 @@ description: OAuth 서버 간 인증을 사용하여 사용자 지정 애플리�
 version: Experience Manager as a Cloud Service
 feature: Developing
 topic: Development, Architecture, Content Management
-role: Architect, Developer, Leader
+role: Developer, Leader
 level: Beginner
 doc-type: Tutorial
 jira: KT-16516
@@ -12,7 +12,7 @@ thumbnail: KT-16516.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 8338a905-c4a2-4454-9e6f-e257cb0db97c
-source-git-commit: 57da04874cfb37dcccbf605c65fbcba8f12849fb
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '1811'
 ht-degree: 2%
@@ -52,7 +52,7 @@ OAuth 서버 간 인증은 사용자 상호 작용 없이 API 액세스가 필�
 
 - [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started)에 액세스
 
-- 로컬 컴퓨터에 Node.js[를 설치](https://nodejs.org/en/)하여 샘플 NodeJS 애플리케이션를 실행합니다.
+- 로컬 컴퓨터에 [Node.js](https://nodejs.org/en/)을(를) 설치하여 샘플 NodeJS 응용 프로그램을 실행합니다.
 
 ## 개발 단계
 
@@ -62,9 +62,9 @@ OAuth 서버 간 인증은 사용자 상호 작용 없이 API 액세스가 필�
    1. Assets 작성자 API 추가
    1. OAuth 서버 간 인증 방법으로 인증 방법 구성
    1. 제품 프로필을 인증 구성과 연결
-1. ADC 프로젝트 통신을 활성화하도록 AEM 인스턴스 구성
+1. ADC 프로젝트 통신을 사용하도록 AEM 인스턴스 구성
 1. 샘플 NodeJS 애플리케이션 개발
-1. 엔드투엔드 흐름 확인
+1. 엔드 투 엔드 흐름 확인
 
 ## ADC 프로젝트 구성
 
@@ -81,10 +81,10 @@ _Setup OpenAPI 기반 AEM API_&#x200B;에서 ADC 프로젝트 구성 단계가 [
 
    ![API 추가](../assets/s2s/add-api.png)
 
-1. API 추가 대화 상자에서 Experience Cloud _로_&#x200B;필터링하고 AEM Assets 작성자 API _카드 선택한_&#x200B;다음 다음&#x200B;**클릭합니다**.**&#x200B;**
-다른 OpenAPI 기반 AEM API가 필요한 경우 Adobe Systems 개발자 설명서[를 참조](https://developer.adobe.com/experience-cloud/experience-manager-apis/#openapi-based-apis)하여 사용 사례와 일치하는 API를 찾으십시오.
+1. _API 추가_ 대화 상자에서 _Experience Cloud_&#x200B;별로 필터링하고 **AEM Assets 작성자 API** 카드를 선택한 후 **다음**을 클릭합니다.
+다른 OpenAPI 기반 AEM API가 필요한 경우 [Adobe Developer 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/#openapi-based-apis)를 참조하여 사용 사례와 일치하는 API를 찾으십시오.
 
-   아래 예에서는 AEM Assets 작성자 API **를**&#x200B;추가하는 과정을 안내합니다.
+   아래 예제는 **AEM Assets 작성자 API**&#x200B;를 추가하는 방법을 안내합니다.
 
    ![AEM API 추가](../assets/s2s/add-aem-api.png)
 
@@ -98,9 +98,9 @@ _Setup OpenAPI 기반 AEM API_&#x200B;에서 ADC 프로젝트 구성 단계가 [
 
    >[!TIP]
    >
-   >서버 간 인증 옵션이 표시되지 않으면 통합을 설정하는 사용자 서비스가 연결된 제품 프로필에 개발자로 추가되지 않았음을 의미합니다. 자세한 내용은 서버 간 인증[&#x200B; 사용을 참조하십시오](../setup.md#enable-server-to-server-authentication).
+   >서버 간 인증 옵션이 표시되지 않으면 통합을 설정하는 사용자가 서비스가 연결된 제품 프로필에 개발자로 추가되지 않은 것입니다. 자세한 내용은 [서버 간 인증 사용](../setup.md#enable-server-to-server-authentication)을 참조하십시오.
 
-1. 더 쉽게 식별할 수 있도록 자격 증명을 이름 바꾸기하고(필요한 경우) 다음&#x200B;**클릭합니다**. 데모용으로 기본 이름이 사용됩니다.
+1. 보다 쉽게 식별할 수 있도록 자격 증명의 이름을 바꾸고 **다음**&#x200B;을 클릭합니다. 데모 목적으로 기본 이름이 사용됩니다.
 
    ![자격 증명 이름 바꾸기](../assets/s2s/rename-credential.png)
 
@@ -159,7 +159,7 @@ GET https://{bucket}.adobeaemcloud.com/adobe/../assets/{assetId}/metadata
 
    | 섹션 | 매개변수 | 값 |
    | --- | --- | --- |
-   |  | 버킷 | Adobe Systems 도메인 이름(.adobeaemcloud.com)이 없는 AEM 인스턴스 이름입니다(예: `author-p63947-e1420428`. |
+   |  | 버킷 | Adobe 도메인 이름(.adobeaemcloud.com)이 없는 AEM 인스턴스 이름(예: `author-p63947-e1420428`)입니다. |
    | **보안** | 전달자 토큰 | ADC 프로젝트의 OAuth 서버 간 자격 증명에서 액세스 토큰을 사용합니다. |
    | **보안** | X-Api-Key | ADC 프로젝트의 OAuth 서버 간 자격 증명에서 `ClientID` 값을 사용합니다. |
    | **매개변수** | assetId | AEM의 에셋에 대한 고유 식별자(예: `urn:aaid:aem:a200faf1-6d12-4abc-bc16-1b9a21f870da`) |
@@ -173,7 +173,7 @@ GET https://{bucket}.adobeaemcloud.com/adobe/../assets/{assetId}/metadata
 
    ![API 호출 - 응답](../assets/s2s/invoke-api-response.png)
 
-위의 단계에서는 AEM API 액세스를 활성화하는 AEM as a Cloud Service 환경으로 현대화되었음을 확인합니다. 또한 ADC 프로젝트의 성공적인 구성 및 AEM 작성자 인스턴스와의 OAuth 서버 간 자격 증명 ClientID 통신을 확인합니다.
+위의 단계에서는 AEM as a Cloud Service 환경의 현대화를 확인하여 AEM API 액세스를 활성화합니다. 또한 ADC 프로젝트의 성공적인 구성과 AEM 작성자 인스턴스와의 OAuth 서버 간 자격 증명 ClientID 통신을 확인합니다.
 
 ### 샘플 NodeJS 애플리케이션
 
@@ -193,11 +193,11 @@ GET https://{bucket}.adobeaemcloud.com/adobe/../assets/{assetId}/metadata
    $ npm install
    ```
 
-1. 파일의 자리 표시자를 `.env` ADC 프로젝트의 OAuth 서버 간 자격 증명의 실제 값으로 바꾸기 합니다.
+1. `.env` 파일의 자리 표시자를 ADC 프로젝트의 OAuth 서버 간 자격 증명의 실제 값으로 바꿉니다.
 
-1. `<BUCKETNAME>` 파일의 및 `<ASSETID>` `src/index.js` 를 실제 값으로 바꾸기.
+1. `<BUCKETNAME>` 파일의 `<ASSETID>` 및 `src/index.js`을(를) 실제 값으로 바꾸십시오.
 
-1. NodeJS 애플리케이션 실행.
+1. NodeJS 응용 프로그램을 실행합니다.
 
    ```bash
    $ node src/index.js
@@ -417,7 +417,7 @@ GET https://{bucket}.adobeaemcloud.com/adobe/../assets/{assetId}/metadata
    ...
    ```
 
-## 모자 밑
+## 후드 아래
 
 API가 성공적으로 호출되면 ADC 프로젝트의 OAuth 서버 간 자격 증명을 나타내는 사용자가 제품 프로필 및 서비스 구성과 일치하는 사용자 그룹과 함께 AEM 작성자 서비스에 생성됩니다. _기술 계정 사용자_&#x200B;는 제품 프로필 및 _서비스_ 사용자 그룹에 연결되어 있으며, 자산 메타데이터는 _읽기_&#x200B;하는 데 필요한 권한이 있습니다.
 
@@ -461,11 +461,11 @@ API가 성공적으로 호출되면 ADC 프로젝트의 OAuth 서버 간 자격 
   | **보안** | 전달자 토큰 | ADC 프로젝트의 OAuth 서버 간 자격 증명에서 액세스 토큰을 사용합니다. |
   | **보안** | X-Api-Key | ADC 프로젝트의 OAuth 서버 간 자격 증명에서 `ClientID` 값을 사용합니다. |
   | **본문** |  | `[{ "op": "add", "path": "foo","value": "bar"}]` |
-  | **매개변수** | 자산 ID | AEM의 자산에 대한 고유 식별자(예: `urn:aaid:aem:a200faf1-6d12-4abc-bc16-1b9a21f870da` |
+  | **매개변수** | assetId | AEM의 에셋에 대한 고유 식별자(예: `urn:aaid:aem:a200faf1-6d12-4abc-bc16-1b9a21f870da`) |
   | **매개변수** | X-Adobe-Accept-Experimental | * |
   | **매개변수** | X-Adobe-Accept-Experimental | 1 |
 
-- 보내기를 클릭하여 **PATCH** 요청 요청을 호출&#x200B;_하고 403 오류 응답을 관찰_&#x200B;합니다.
+- **보내기**&#x200B;를 클릭하여 _PATCH_ 요청을 호출하고 403 오류 응답을 확인합니다.
 
   ![API 호출 - PATCH 요청](../assets/s2s/invoke-api-patch-request.png)
 

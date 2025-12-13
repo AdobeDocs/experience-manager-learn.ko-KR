@@ -4,7 +4,7 @@ description: AEM에서 mTLS(상호 전송 계층 보안) 인증이 필요한 웹
 feature: Security
 version: Experience Manager 6.5, Experience Manager as a Cloud Service
 topic: Security, Development
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Experienced
 jira: KT-13881
 thumbnail: KT-13881.png
@@ -12,8 +12,8 @@ doc-type: Article
 last-substantial-update: 2023-10-10T00:00:00Z
 exl-id: 7238f091-4101-40b5-81d9-87b4d57ccdb2
 duration: 495
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '731'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 AEM에서 mTLS(상호 전송 계층 보안) 인증이 필요한 웹 API로 HTTPS 호출을 수행하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447866?quality=12&learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3424855?quality=12&learn=on)
 
 mTLS(양방향 TLS) 인증은 TLS 프로토콜의 보안을 강화하는 방식으로, **서버뿐만 아니라 클라이언트도 서로 인증**&#x200B;하는 과정을 거칩니다. 이러한 인증은 디지털 인증서를 사용하여 수행됩니다. 일반적으로 강력한 보안과 신원 확인이 중요한 상황에서 사용됩니다.
 
@@ -122,7 +122,7 @@ AEM 인증서를 가져오려면 아래 단계를 따르십시오.
 
    ![가져온 AEM 비공개 키 및 인증서](assets/mutual-tls-authentication/aem-privatekey-cert-imported.png)
 
-API 공급자가 자체 서명된 CA 인증서를 사용하는 경우, 해당 인증서를 AEM의 TrustStore에 가져와야 합니다. [여기](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/call-internal-apis-having-private-certificate.html?lang=ko#httpclient-and-load-aem-truststore-material)의 단계를 따르십시오.
+API 공급자가 자체 서명된 CA 인증서를 사용하는 경우, 해당 인증서를 AEM의 TrustStore에 가져와야 합니다. [여기](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/call-internal-apis-having-private-certificate.html#httpclient-and-load-aem-truststore-material)의 단계를 따르십시오.
 
 마찬가지로, AEM이 자체 서명된 CA 인증서를 사용하는 경우 API 공급자에게 해당 인증서를 가져오도록 요청해야 합니다.
 
@@ -217,7 +217,7 @@ private KeyStore getAEMTrustStore(KeyStoreService keyStoreService, ResourceResol
 - API 공급자가 자체 서명된 CA 인증서를 사용하는 경우 `getAEMTrustStore(...)` 메서드를 사용하여 글로벌 AEM TrustStore를 가져옵니다.
 - `SSLContextBuilder` 오브젝트를 만듭니다(Java™ [API 세부 정보](https://javadoc.io/static/org.apache.httpcomponents/httpcore/4.4.8/index.html?org/apache/http/ssl/SSLContextBuilder.html) 참조).
 - `loadKeyMaterial(final KeyStore keystore,final char[] keyPassword)` 메서드를 사용하여 사용자의 AEM 키 저장소를 `SSLContextBuilder`에 로드합니다.
-- 키 저장소 암호는 키 저장소를 만들 때 설정한 암호이며, OSGi 구성에 저장해야 합니다(자세한 내용은 [암호 구성 값](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=ko#secret-configuration-values) 참조).
+- 키 저장소 암호는 키 저장소를 만들 때 설정한 암호이며, OSGi 구성에 저장해야 합니다(자세한 내용은 [암호 구성 값](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#secret-configuration-values) 참조).
 
 ## JVM 키 저장소 변경 방지
 

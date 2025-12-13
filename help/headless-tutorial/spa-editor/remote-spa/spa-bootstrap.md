@@ -3,7 +3,7 @@ title: SPA용 원격 SPA 편집기 Bootstrap
 description: AEM SPA 편집기 호환성을 위해 원격 SPA를 부트스트랩하는 방법에 대해 알아봅니다.
 topic: Headless, SPA, Development
 feature: SPA Editor, APIs, Developing
-role: Developer, Architect
+role: Developer
 level: Beginner
 jira: KT-7633
 thumbnail: kt-7633.jpeg
@@ -12,10 +12,10 @@ doc-type: Tutorial
 exl-id: b8d43e44-014c-4142-b89c-ff4824b89c78
 duration: 327
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '1167'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -65,18 +65,18 @@ AEM과 상호 작용하는 방법을 알 수 있도록 몇 가지 환경 변수�
 
    * `REACT_APP_HOST_URI`: 원격 SPA가 연결하는 AEM 서비스의 체계 및 호스트입니다.
       * 이 값은 AEM 환경(로컬, 개발, 스테이지 또는 프로덕션) 및 AEM 서비스 유형(작성자 대 게시)의 여부에 따라 변경됩니다
-   * `REACT_APP_USE_PROXY`: `http-proxy-middleware` 모듈을 사용하여 React 개발 서버에 `/content, /graphql, .model.json`과(와) 같은 프록시 AEM 요청을 보내면 개발 중 CORS 문제가 발생하지 않습니다.
+   * `REACT_APP_USE_PROXY`: `/content, /graphql, .model.json` 모듈을 사용하여 React 개발 서버에 `http-proxy-middleware`과(와) 같은 프록시 AEM 요청을 보내면 개발 중 CORS 문제가 발생하지 않습니다.
    * `REACT_APP_AUTH_METHOD`: AEM에서 제공하는 요청에 대한 인증 방법, 옵션은 &#39;service-token&#39;, &#39;dev-token&#39;, &#39;basic&#39; 또는 no-auth 사용 사례를 위해 비워 둡니다.
       * AEM 작성자에 사용 필요
       * AEM 게시와 함께 사용해야 할 수도 있습니다(콘텐츠가 보호된 경우).
       * AEM SDK에 대해 개발하는 경우 기본 인증을 통해 로컬 계정을 지원합니다. 이 자습서에서 사용하는 메서드입니다.
-      * AEM as a Cloud Service과 통합할 때 [액세스 토큰](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=ko)을 사용하세요.
+      * AEM as a Cloud Service과 통합할 때 [액세스 토큰](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)을 사용하세요.
    * `REACT_APP_BASIC_AUTH_USER`: AEM 콘텐츠를 검색하는 동안 SPA에서 인증하는 AEM __사용자 이름__.
    * `REACT_APP_BASIC_AUTH_PASS`: AEM 콘텐츠를 검색하는 동안 SPA에서 인증하는 AEM __암호__.
 
 ## ModelManager API 통합
 
-앱에서 사용할 수 있는 AEM SPA npm 종속성을 사용하여 `ReactDOM.render(...)`이(가) 호출되기 전에 프로젝트 `index.js`에서 AEM `ModelManager`을(를) 초기화합니다.
+앱에서 사용할 수 있는 AEM SPA npm 종속성을 사용하여 `ModelManager`이(가) 호출되기 전에 프로젝트 `index.js`에서 AEM `ReactDOM.render(...)`을(를) 초기화합니다.
 
 [ModelManager](https://github.com/adobe/aem-spa-page-model-manager/blob/master/src/ModelManager.ts)은(는) AEM에 연결하여 편집 가능한 콘텐츠를 검색할 수 있습니다.
 
@@ -106,7 +106,7 @@ AEM과 상호 작용하는 방법을 알 수 있도록 몇 가지 환경 변수�
 
 1. IDE에서 원격 SPA 프로젝트 열기
 1. `src/proxy/setupProxy.spa-editor.auth.basic.js`에서 파일 열기
-1. 다음 코드를 사용하여 파일을 업데이트합니다.
+1. 다음 코드로 파일을 업데이트합니다.
 
    ```javascript
    const { createProxyMiddleware } = require('http-proxy-middleware');
@@ -129,7 +129,7 @@ AEM과 상호 작용하는 방법을 알 수 있도록 몇 가지 환경 변수�
        * @returns true if the SPA request should be re-routed to AEM
        */
        const toAEM = function(path, req) {
-           return path.startsWith('/content') || 
+           return path.startsWith('/content') ||
                path.startsWith('/graphql') ||
                path.endsWith('.model.json')
        }
@@ -253,7 +253,7 @@ WKND 로고 및 그래픽 로드 등 정적 SPA 리소스에서는 src URL이 �
    }
    ```
 
-1. `src/components/AdventureDetails.js`에서 뒤로 단추의 __2개 인스턴스__&#x200B;에 대해
+1. __에서 뒤로 단추의__ 2개 인스턴스`src/components/AdventureDetails.js`에 대해
 
    ```javascript
    const { REACT_APP_PUBLIC_URI } = process.env;
@@ -300,7 +300,7 @@ AEM 반응형 그리드 SCSS 파일을 SPA에 추가합니다.
 
 다음 유틸리티 클래스에서 React 앱 프로젝트에 복사합니다.
 
-* `~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/react-app/src/components/editable/core/RoutedLink.js`(으)로 [RoutedLink.js](./assets/spa-bootstrap/RoutedLink.js)
+* [(으)로 ](./assets/spa-bootstrap/RoutedLink.js)RoutedLink.js`~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/react-app/src/components/editable/core/RoutedLink.js`
 * [EditorPlaceholder.js](./assets/spa-bootstrap/EditorPlaceholder.js)에서 `~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/react-app/src/components/editable/core/util/EditorPlaceholder.js`(으)로
 * [withConditionalPlaceholder.js](./assets/spa-bootstrap/withConditionalPlaceholder.js)에서 `~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/react-app/src/components/editable/core/util/withConditionalPlaceholder.js`(으)로
 * [withStandardBaseCssClass.js](./assets/spa-bootstrap/withStandardBaseCssClass.js)에서 `~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/react-app/src/components/editable/core/util/withStandardBaseCssClass.js`(으)로
@@ -322,7 +322,7 @@ AEM 반응형 그리드 SCSS 파일을 SPA에 추가합니다.
 
 1. [http://localhost:3000](http://localhost:3000)에서 SPA를 찾아봅니다. 모든 것이 좋아 보여야 합니다!
 
-http://localhost:3000![&#128279;](./assets/spa-bootstrap/localhost-3000.png)에서 실행 중인 SPA
+http://localhost![에서 실행 중인 :3000](./assets/spa-bootstrap/localhost-3000.png)SPA
 
 ## AEM SPA 편집기에서 SPA 열기
 
@@ -337,7 +337,7 @@ http://localhost:3000![&#128279;](./assets/spa-bootstrap/localhost-3000.png)에�
 1. 오른쪽 상단의 모드 전환기를 사용하여 __미리 보기__(으)로 전환
 1. SPA 주위를 클릭합니다.
 
-   http://localhost:3000![&#128279;](./assets/spa-bootstrap/spa-editor.png)에서 실행 중인 SPA
+   http://localhost![에서 실행 중인 :3000](./assets/spa-bootstrap/spa-editor.png)SPA
 
 ## 축하합니다!
 

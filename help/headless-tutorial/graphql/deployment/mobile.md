@@ -4,15 +4,15 @@ description: 모바일 AEM Headless 배포를 위한 배포 고려 사항에 대
 version: Experience Manager as a Cloud Service
 feature: GraphQL API
 topic: Headless, Content Management
-role: Developer, Architect
+role: Developer
 level: Intermediate
 jira: KT-10796
 thumbnail: KT-10796.jpg
 exl-id: 1f536079-b3ce-4807-be88-804378e75d37
 duration: 31
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
-source-wordcount: '161'
+source-wordcount: '152'
 ht-degree: 2%
 
 ---
@@ -27,7 +27,7 @@ AEM Headless API에 대한 HTTP 연결은 브라우저의 컨텍스트에서 시
 
 모바일 앱 배포를 위해서는 다음 배포 구성이 적용되어야 합니다.
 
-| 모바일 앱이 DTM에 → | AEM Author | AEM 게시 | AEM 미리보기 |
+| 모바일 앱이 DTM에 → | AEM Author | AEM 게시 인스턴스 | AEM 미리보기 |
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
 | [Dispatcher 필터](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | CORS(원본 간 리소스 공유) | ✘ | ✘ | ✘ |

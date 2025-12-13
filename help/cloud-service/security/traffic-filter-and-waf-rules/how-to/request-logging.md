@@ -4,14 +4,15 @@ description: AEM as a Cloud Service에서 트래픽 필터 규칙을 사용하�
 version: Experience Manager as a Cloud Service
 feature: Security
 topic: Security, Administration, Architecture
-role: Admin, Architect
+role: Admin, Developer
 level: Intermediate
 doc-type: Tutorial
 last-substantial-update: 2025-06-04T00:00:00Z
 jira: KT-18311
 thumbnail: null
-source-git-commit: 293157c296676ef1496e6f861ed8c2c24da7e068
-workflow-type: ht
+exl-id: 8fa0488f-b901-49bf-afa5-5ed29242355f
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '520'
 ht-degree: 100%
 
@@ -70,7 +71,7 @@ data:
 
 - 변경 사항을 Cloud Manager Git 저장소에 커밋하고 푸시합니다.
 
-- [앞서 만든](../setup.md#deploy-rules-using-adobe-cloud-manager) Cloud Manager Config Pipeline을 사용하여 AEM 환경에 변경 사항을 배포합니다.
+- [앞서 만든](../setup.md#deploy-rules-using-adobe-cloud-manager) Cloud Manager 구성 파이프라인을 사용하여 AEM 환경에 변경 사항을 배포합니다.
 
 - 프로그램의 WKND 사이트(예: `https://publish-pXXXX-eYYYY.adobeaemcloud.com/us/en.html`)에 로그인 및 로그아웃하여 규칙을 테스트합니다. `asmith/asmith`를 사용자 이름과 암호로 사용할 수 있습니다.
 
@@ -104,4 +105,3 @@ Cloud Manager에서 AEMCS CDN 로그를 가져오고 [AEMCS CDN Log Analysis Too
 - 업데이트된 대시보드의 **분석된 요청**, **플래그가 지정된 요청** 및 **플래그가 지정된 요청 세부 정보** 패널을 검토합니다. CDN 로그 항목을 일치시키려면 각 항목의 클라이언트 IP(cli_ip), 호스트, URL, 작업(waf_action) 및 규칙 이름(waf_match) 값을 표시해야 합니다.
 
   ![ELK 도구 대시보드](../assets/how-to/elk-tool-dashboard.png)
-

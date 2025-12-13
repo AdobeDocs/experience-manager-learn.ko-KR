@@ -4,7 +4,7 @@ description: AEM as a Cloud Service의 리더 인스턴스에서 작업을 실�
 version: Experience Manager as a Cloud Service
 topic: Development
 feature: OSGI, Cloud Manager
-role: Architect, Developer
+role: Developer
 level: Intermediate, Experienced
 doc-type: Article
 duration: 0
@@ -12,7 +12,7 @@ last-substantial-update: 2024-10-23T00:00:00Z
 jira: KT-16399
 thumbnail: KT-16399.jpeg
 exl-id: b8b88fc1-1de1-4b5e-8c65-d94fcfffc5a5
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '557'
 ht-degree: 0%
@@ -136,7 +136,7 @@ public class SimpleJobConsumerImpl implements JobConsumer {
 
 AEM 작성자 서비스에서 작업을 한 번만 실행하려면 아래에 설명된 [작업 큐 구성](#how-to-run-a-job-on-the-leader-instance)을 추가하십시오.
 
-[Cloud Manager](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#cloud-manager)에서 AEM 작성자 서비스의 로그를 검토하여 확인할 수 있습니다.
+[Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#cloud-manager)에서 AEM 작성자 서비스의 로그를 검토하여 확인할 수 있습니다.
 
 ![모든 인스턴스에서 작업 처리](./assets/run-job-once/job-processed-by-all-instances.png)
 

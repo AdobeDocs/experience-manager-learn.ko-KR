@@ -4,17 +4,17 @@ description: AEM as a Cloud Service과 VPN을 연결하여 AEM과 내부 서비�
 version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Security
-role: Architect, Developer
+role: Developer
 level: Intermediate
 jira: KT-9352
 thumbnail: KT-9352.jpeg
 exl-id: 74cca740-bf5e-4cbd-9660-b0579301a3b4
 last-substantial-update: 2024-04-27T00:00:00Z
 duration: 919
-source-git-commit: 5f547d9a721c2072559e877d1c4a08fcd11327b7
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '1531'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -26,21 +26,21 @@ AEM as a Cloud Service과 VPN을 연결하여 AEM과 내부 서비스 간에 보
 >
 >Cloud Manager UI를 통해 또는 API 호출을 사용하여 VPN 및 포트 전달을 구성할 수 있습니다. 이 자습서에서는 API 메서드에 중점을 둡니다.
 >
->UI를 사용하려면 [AEM as a Cloud Service을 위한 고급 네트워킹 구성](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking)을 참조하십시오.
+>UI를 사용하려면 [AEM as a Cloud Service을 위한 고급 네트워킹 구성](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking)을 참조하십시오.
 
 ## 가상 사설망이란?
 
-Virtual Private Network(VPN)를 사용하면 AEM as a Cloud Service 고객이 Cloud Manager 프로그램 내의 **AEM 환경**&#x200B;을 기존의 [지원](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking)된 VPN에 연결할 수 있습니다. VPN을 사용하면 고객 네트워크 내의 AEM as a Cloud Service과 서비스 간에 안전하고 통제된 연결을 사용할 수 있습니다.
+Virtual Private Network(VPN)를 사용하면 AEM as a Cloud Service 고객이 Cloud Manager 프로그램 내의 **AEM 환경**&#x200B;을 기존의 [지원](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking)된 VPN에 연결할 수 있습니다. VPN을 사용하면 고객 네트워크 내의 AEM as a Cloud Service과 서비스 간에 안전하고 통제된 연결을 사용할 수 있습니다.
 
-Cloud Manager 프로그램에는 __single__ 네트워크 인프라 유형만 있을 수 있습니다. 다음 명령을 실행하기 전에 Virtual Private Network가 AEM as a Cloud Service에 가장 [적합한 네트워크 인프라 유형](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking)인지 확인하십시오.
+Cloud Manager 프로그램에는 __single__ 네트워크 인프라 유형만 있을 수 있습니다. 다음 명령을 실행하기 전에 Virtual Private Network가 AEM as a Cloud Service에 가장 [적합한 네트워크 인프라 유형](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking)인지 확인하십시오.
 
 >[!NOTE]
 >
->Cloud Manager에서 VPN으로 빌드 환경을 연결하는 것은 지원되지 않습니다. 개인 리포지토리에서 이진 아티팩트에 액세스해야 하는 경우 여기에 설명된 대로 공용 인터넷 [에서 사용할 수 있는 URL을 사용하여 보안 및 암호로 보호된 리포지토리를 설정해야 합니다](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/setting-up-project).
+>Cloud Manager에서 VPN으로 빌드 환경을 연결하는 것은 지원되지 않습니다. 개인 리포지토리에서 이진 아티팩트에 액세스해야 하는 경우 여기에 설명된 대로 공용 인터넷 [에서 사용할 수 있는 URL을 사용하여 보안 및 암호로 보호된 리포지토리를 설정해야 합니다](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/setting-up-project).
 
 >[!MORELIKETHIS]
 >
-> Virtual Private Network에 대한 자세한 내용은 AEM as a Cloud Service [고급 네트워크 구성 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking)를 참조하십시오.
+> Virtual Private Network에 대한 자세한 내용은 AEM as a Cloud Service [고급 네트워크 구성 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking)를 참조하십시오.
 
 ## 사전 요구 사항
 
@@ -55,13 +55,13 @@ Cloud Manager API를 사용하여 Virtual Private Network를 설정할 때 필�
 + Cloud Manager 환경 ID
 + 필요한 모든 연결 매개 변수에 액세스할 수 있는 **경로 기반** 가상 개인 네트워크입니다.
 
-자세한 내용은 [Cloud Manger API 자격 증명을 설정, 구성 및 얻는 방법](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/extensibility/app-builder/server-to-server-auth)을 검토하여 Cloud Manager API 호출을 수행하는 데 사용하십시오.
+자세한 내용은 [Cloud Manger API 자격 증명을 설정, 구성 및 얻는 방법](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/app-builder/server-to-server-auth)을 검토하여 Cloud Manager API 호출을 수행하는 데 사용하십시오.
 
 >[!IMPORTANT]
 >
 >이 자습서에서는 `curl`을(를) 사용하여 Cloud Manager API 구성을 만듭니다.*프로그래밍 방식을 선호하는 경우*. 제공된 `curl` 명령은 Linux® 또는 macOS 구문을 가정합니다. Windows 명령 프롬프트를 사용하는 경우 `\` 줄 바꿈 문자를 `^`(으)로 바꾸십시오.
 >
->또는 Cloud Manager UI를 통해 동일한 작업을 완료할 수 있습니다. *UI 접근 방식을 선호하는 경우* AEM as a Cloud Service에 대한 [고급 네트워킹 구성](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking)을 참조하십시오.
+>또는 Cloud Manager UI를 통해 동일한 작업을 완료할 수 있습니다. *UI 접근 방식을 선호하는 경우* AEM as a Cloud Service에 대한 [고급 네트워킹 구성](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking)을 참조하십시오.
 
 ## 프로그램당 Virtual Private Network 사용
 
@@ -113,7 +113,7 @@ Cloud Manager API를 사용하여 가상 개인 네트워크를 활성화할 수
 
 1. 먼저 Cloud Manager API [listRegions](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) 작업을 사용하여 고급 네트워킹이 필요한 지역을 결정합니다. 후속 Cloud Manager API를 호출하려면 `region name`이(가) 필요합니다. 일반적으로 프로덕션 환경이 있는 영역이 사용됩니다.
 
-   [환경의 세부 정보](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments)에서 [Cloud Manager](https://my.cloudmanager.adobe.com)의 AEM as a Cloud Service 환경 지역을 찾으십시오. Cloud Manager에 표시되는 지역 이름은 Cloud Manager API에서 사용되는 지역 코드 [&#128279;](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments)에 매핑될 수 있습니다.
+   [환경의 세부 정보](https://my.cloudmanager.adobe.com)에서 [Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments)의 AEM as a Cloud Service 환경 지역을 찾으십시오. Cloud Manager에 표시되는 지역 이름은 Cloud Manager API에서 사용되는 지역 코드 [에 ](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments)매핑될 수 있습니다.
 
    __listRegions HTTP 요청__
 
@@ -125,7 +125,7 @@ Cloud Manager API를 사용하여 가상 개인 네트워크를 활성화할 수
        -H 'Content-Type: application/json'
    ```
 
-1. Cloud Manager API [createNetworkInfrastructure](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) 작업을 사용하여 Cloud Manager 프로그램에 대해 가상 사설망을 사용하도록 설정하십시오. Cloud Manager API `listRegions` 작업에서 얻은 적절한 `region` 코드를 사용합니다.
+1. Cloud Manager API [createNetworkInfrastructure](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) 작업을 사용하여 Cloud Manager 프로그램에 대해 가상 사설망을 사용하도록 설정하십시오. Cloud Manager API `region` 작업에서 얻은 적절한 `listRegions` 코드를 사용합니다.
 
    __createNetworkInfrastructure HTTP 요청__
 
@@ -191,7 +191,7 @@ Cloud Manager API를 사용하여 가상 개인 네트워크를 활성화할 수
 
    Cloud Manager 프로그램이 네트워크 인프라를 프로비저닝할 때까지 45~60분 동안 기다립니다.
 
-1. 이전 단계의 `createNetworkInfrastructure` HTTP 요청에서 반환된 `id`을(를) 사용하여 환경이 Cloud Manager API [getNetworkInfrastructure](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) 작업을 사용하여 __가상 개인 네트워크__ 구성을 완료했는지 확인하십시오.
+1. 이전 단계의 __HTTP 요청에서 반환된__&#x200B;을(를) 사용하여 환경이 Cloud Manager API [getNetworkInfrastructure](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) 작업을 사용하여 `id`가상 개인 네트워크`createNetworkInfrastructure` 구성을 완료했는지 확인하십시오.
 
    __getNetworkInfrastructure HTTP 요청__
 
@@ -212,7 +212,7 @@ Cloud Manager API를 사용하여 가상 개인 네트워크를 활성화할 수
 
 ## 환경당 Virtual Private Network 프록시 구성
 
-1. Cloud Manager API [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) 작업을 사용하여 각 AEM as a Cloud Service 환경에서 __가상 개인 네트워크__ 구성을 사용하도록 설정하고 구성합니다.
+1. Cloud Manager API __enableEnvironmentAdvancedNetworkingConfiguration__ 작업을 사용하여 각 AEM as a Cloud Service 환경에서 [가상 개인 네트워크](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) 구성을 사용하도록 설정하고 구성합니다.
 
    __enableEnvironmentAdvancedNetworkingConfiguration HTTP 요청__
 
@@ -261,7 +261,7 @@ Cloud Manager API를 사용하여 가상 개인 네트워크를 활성화할 수
    AEM 배포 __only__&#x200B;에 외부 서비스에 대한 HTTP/HTTPS 연결이 필요한 경우 `portForwards` 배열을 비워 두십시오. 이러한 규칙은 HTTP/HTTPS가 아닌 요청에만 필요합니다.
 
 
-&#x200B;2. 각 환경에 대해 Cloud Manager API의 [getEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) 작업을 사용하여 VPN 라우팅 규칙이 적용되는지 확인하십시오.
+2. 각 환경에 대해 Cloud Manager API의 [getEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) 작업을 사용하여 VPN 라우팅 규칙이 적용되는지 확인하십시오.
 
    __getEnvironmentAdvancedNetworkingConfiguration HTTP 요청__
 
@@ -273,9 +273,9 @@ Cloud Manager API를 사용하여 가상 개인 네트워크를 활성화할 수
        -H 'Content-Type: application/json'
    ```
 
-&#x200B;3. Cloud Manager API의 [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) 작업을 사용하여 가상 개인 네트워크 프록시 구성을 업데이트할 수 있습니다. `enableEnvironmentAdvancedNetworkingConfiguration`은(는) `PUT` 작업이므로 이 작업을 호출할 때마다 모든 규칙을 제공해야 합니다.
+3. Cloud Manager API의 [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) 작업을 사용하여 가상 개인 네트워크 프록시 구성을 업데이트할 수 있습니다. `enableEnvironmentAdvancedNetworkingConfiguration`은(는) `PUT` 작업이므로 이 작업을 호출할 때마다 모든 규칙을 제공해야 합니다.
 
-&#x200B;4. 이제 사용자 지정 AEM 코드 및 구성에서 Virtual Private Network 이그레스 구성을 사용할 수 있습니다.
+4. 이제 사용자 지정 AEM 코드 및 구성에서 Virtual Private Network 이그레스 구성을 사용할 수 있습니다.
 
 ## Virtual Private Network를 통해 외부 서비스에 연결
 
@@ -294,7 +294,7 @@ AEM에서 HTTP/HTTPS 연결을 만들 때 VPN을 사용하면 HTTP/HTTPS 연결�
 
 >[!TIP]
 >
-> [전체 라우팅 규칙 집합](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking)에 대해서는 AEM as a Cloud Service의 가상 개인 네트워크 설명서를 참조하십시오.
+> [전체 라우팅 규칙 집합](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking)에 대해서는 AEM as a Cloud Service의 가상 개인 네트워크 설명서를 참조하십시오.
 
 #### 코드 예
 
@@ -362,8 +362,8 @@ AEM에서 HTTP/HTTPS 연결을 만들 때 VPN을 사용하면 HTTP/HTTPS 연결�
 
 <table><tr>
    <td>
-      <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list"><img alt="IP 허용 목록 적용" src="./assets/code_examples__vpn-allow-list.png"/></a>
-      <div><strong><a href="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list">IP 허용 목록 적용</a></strong></div>
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list"><img alt="IP 허용 목록 적용" src="./assets/code_examples__vpn-allow-list.png"/></a>
+      <div><strong><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list">IP 허용 목록 적용</a></strong></div>
       <p>
             허용 목록에 추가하다 VPN 트래픽만 AEM에 액세스할 수 있도록 IP 트래픽만 구성합니다.
       </p>

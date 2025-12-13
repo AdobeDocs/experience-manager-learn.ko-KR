@@ -8,8 +8,8 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 5aa32791-861a-48e3-913c-36028373b788
 duration: 311
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 100%
 
@@ -25,7 +25,7 @@ AEM 콘텐츠 서비스를 사용하면 AEM Sites에서 웹 페이지를 작성�
 
 Headless CMS 시나리오에서 AEM을 사용하여 콘텐츠를 빌드하고 노출하며, 기본 모바일 앱에서 사용하는 방법을 보여 주는 전체 튜토리얼입니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/33075?quality=12&learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/28315?quality=12&learn=on)
 
 이 튜토리얼에서는 AEM 콘텐츠 서비스를 사용하여 WKND 팀에서 선별한 이벤트 정보(음악, 공연, 예술 등)를 표시하는 모바일 앱의 경험을 강화하는 방법을 알아봅니다.
 

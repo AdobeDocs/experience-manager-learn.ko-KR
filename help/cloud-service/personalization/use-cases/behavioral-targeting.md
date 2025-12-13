@@ -4,14 +4,14 @@ description: Adobe Experience Platform 및 Adobe Target을 사용하여 사용�
 version: Experience Manager as a Cloud Service
 feature: Personalization
 topic: Personalization,Content Management, Integrations
-role: Developer, Architect, Leader
+role: Developer, Leader
 level: Beginner
 doc-type: Tutorial
 last-substantial-update: 2025-09-10T00:00:00Z
 jira: KT-19113
 thumbnail: KT-19113.jpeg
 exl-id: fd7204fa-03f2-40df-9f0a-487a5aec2891
-source-git-commit: c367564acb6465d5f203e5db943c5470607b63c9
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '4185'
 ht-degree: 0%
@@ -46,7 +46,7 @@ Adobe Experience Platform(AEP) 및 Adobe Target을 사용하여 사용자 행동
 
 - **매거진 페이지**: 사용자가 _3개 이상_&#x200B;개의 문서를 읽을 때 **매거진 리더**&#x200B;로 분류되고 매거진 페이지에서 개인화된 영웅 섹션을 봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3474008/?captions=kor&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3474001/?learn=on&enablevpops)
 
 >[!TIP]
 >
@@ -59,7 +59,7 @@ Adobe Experience Platform(AEP) 및 Adobe Target을 사용하여 사용자 행동
 - [Adobe Target 통합](../setup/integrate-adobe-target.md): 팀이 AEM의 중앙에서 개인화된 콘텐츠를 만들고 관리하며 Adobe Target의 오퍼로 활성화할 수 있습니다.
 - [Adobe Experience Platform의 태그 통합](../setup/integrate-adobe-tags.md): 팀이 AEM 코드를 다시 배포할 필요 없이 개인화 및 데이터 수집을 위해 JavaScript을 관리하고 배포할 수 있도록 허용합니다.
 
-스키마, 데이터스트림, 대상, ID 및 프로필과 같은 [ECID(Adobe Experience Cloud Identity Service)](https://experienceleague.adobe.com/ko/docs/id-service/using/home) 및 [Adobe Experience Platform](https://experienceleague.adobe.com/ko/docs/experience-platform/landing/home) 개념에도 익숙합니다.
+스키마, 데이터스트림, 대상, ID 및 프로필과 같은 [ECID(Adobe Experience Cloud Identity Service)](https://experienceleague.adobe.com/en/docs/id-service/using/home) 및 [Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/landing/home) 개념에도 익숙합니다.
 
 Adobe Target에서 간단한 대상을 만들 수 있지만 Adobe Experience Platform(AEP)에서는 행동 및 트랜잭션 데이터와 같은 다양한 데이터 소스를 사용하여 대상을 만들고 관리하고 전체 고객 프로필을 빌드하는 최신 접근 방식을 제공합니다.
 
@@ -131,13 +131,13 @@ AEP의 다양한 솔루션을 사용하여 행동 데이터를 수집, 관리 �
 
 페이지 보기 데이터를 저장하는 데이터 세트를 만들어 보겠습니다.
 
-- **Adobe Experience Platform**&#x200B;에서 왼쪽 탐색에서 **데이터 세트**&#x200B;를 클릭하고 **데이터 세트 만들기**&#x200B;를 클릭합니다.
+- **Adobe Experience Platform**&#x200B;에서 왼쪽 탐색에서 **데이터 세트**&#x200B;를 클릭하고 **데이터 세트 만들기**를 클릭합니다.
   ![데이터 집합 만들기](../assets/use-cases/behavioral-targeting/create-dataset.png)
 
-- **데이터 집합 만들기** 단계에서 **스키마에서 데이터 집합 만들기** 옵션을 선택하고 **다음**&#x200B;을 클릭합니다.
+- **데이터 집합 만들기** 단계에서 **스키마에서 데이터 집합 만들기** 옵션을 선택하고 **다음**을 클릭합니다.
   ![데이터 집합 만들기 마법사](../assets/use-cases/behavioral-targeting/create-dataset-wizard.png)
 
-- **스키마에서 데이터 집합 만들기** 마법사에서 **스키마 선택** 단계에서는 **WKND-RDE-Behavioral-Targeting** 스키마를 선택하고 **다음**&#x200B;을(를) 클릭합니다.
+- **스키마에서 데이터 집합 만들기** 마법사에서 **스키마 선택** 단계에서는 **WKND-RDE-Behavioral-Targeting** 스키마를 선택하고 **다음**을(를) 클릭합니다.
   ![스키마 선택](../assets/use-cases/behavioral-targeting/select-schema.png)
 
 - **데이터 집합 구성** 단계에 대해 다음을 입력하십시오.
@@ -184,7 +184,7 @@ AEP의 다양한 솔루션을 사용하여 행동 데이터를 수집, 관리 �
 
   ![Adobe Experience Platform 서비스 구성](../assets/use-cases/behavioral-targeting/configure-adobe-experience-platform-service.png)
 
-- **서비스 추가** 단계의 드롭다운에서 **Adobe Target**&#x200B;을(를) 선택하고 **Target 환경 ID**&#x200B;를 입력합니다. Target 환경 ID는 **관리** > **환경**&#x200B;에서 Adobe Target에 있습니다. 서비스를 추가하려면 **저장**&#x200B;을 클릭하세요.
+- **서비스 추가** 단계의 드롭다운에서 **Adobe Target**&#x200B;을(를) 선택하고 **Target 환경 ID**&#x200B;를 입력합니다. Target 환경 ID는 **관리** > **환경**&#x200B;에서 Adobe Target에 있습니다. 서비스를 추가하려면 **저장**을 클릭하세요.
   ![Adobe Target 서비스 구성](../assets/use-cases/behavioral-targeting/configure-adobe-target-service.png)
 
 ### 태그 속성 만들기 및 구성
@@ -216,7 +216,7 @@ Tags 속성은 웹 사이트에서 데이터를 수집하여 Adobe Experience Pl
 - 새 속성을 열고 왼쪽 탐색에서 **확장**&#x200B;을 클릭한 다음 **카탈로그** 탭을 클릭합니다. **웹 SDK**&#x200B;을 검색하고 **설치** 단추를 클릭합니다.
   ![웹 SDK 확장 설치](../assets/use-cases/behavioral-targeting/install-web-sdk-extension.png)
 
-- **확장 설치** 대화 상자에서 이전에 만든 **데이터스트림**&#x200B;을 선택하고 **저장**&#x200B;을 클릭합니다.
+- **확장 설치** 대화 상자에서 이전에 만든 **데이터스트림**&#x200B;을 선택하고 **저장**을 클릭합니다.
   ![데이터 스트림 선택](../assets/use-cases/behavioral-targeting/select-datastream.png)
 
 #### 데이터 요소 추가
@@ -659,9 +659,9 @@ AEM 페이지에서 동작 타깃팅 구현을 확인합니다.
 
 ## 추가 리소스
 
-- [Adobe Experience Platform 웹 SDK](https://experienceleague.adobe.com/ko/docs/experience-platform/web-sdk/home)
-- [데이터스트림 개요](https://experienceleague.adobe.com/ko/docs/experience-platform/datastreams/overview)
-- [VEC(시각적 경험 작성기)](https://experienceleague.adobe.com/ko/docs/target/using/experiences/vec/visual-experience-composer)
-- [Edge 세그멘테이션](https://experienceleague.adobe.com/ko/docs/experience-platform/segmentation/methods/edge-segmentation)
-- [대상 유형](https://experienceleague.adobe.com/ko/docs/experience-platform/segmentation/types/overview)
-- [Adobe Target 연결](https://experienceleague.adobe.com/ko/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection)
+- [Adobe Experience Platform 웹 SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)
+- [데이터스트림 개요](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview)
+- [VEC(시각적 경험 작성기)](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/visual-experience-composer)
+- [Edge 세그멘테이션](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/edge-segmentation)
+- [대상 유형](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/types/overview)
+- [Adobe Target 연결](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection)

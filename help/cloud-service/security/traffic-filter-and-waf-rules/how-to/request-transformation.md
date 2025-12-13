@@ -4,14 +4,15 @@ description: AEM as a Cloud Service에서 트래픽 필터 규칙을 사용하�
 version: Experience Manager as a Cloud Service
 feature: Security
 topic: Security, Administration, Architecture
-role: Admin, Architect
+role: Admin, Developer
 level: Intermediate
 doc-type: Tutorial
 last-substantial-update: 2025-06-04T00:00:00Z
 jira: KT-18313
 thumbnail: null
-source-git-commit: 293157c296676ef1496e6f861ed8c2c24da7e068
-workflow-type: ht
+exl-id: eee81cd6-9090-45d6-b77f-a266de1d9826
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '259'
 ht-degree: 100%
 
@@ -61,11 +62,10 @@ data:
 
 - 변경 사항을 Cloud Manager Git 저장소에 커밋하고 푸시합니다.
 
-- [앞서 만든](../setup.md#deploy-rules-using-adobe-cloud-manager) Cloud Manager Config Pipeline을 사용하여 AEM 환경에 변경 사항을 배포합니다.
+- [앞서 만든](../setup.md#deploy-rules-using-adobe-cloud-manager) Cloud Manager 구성 파이프라인을 사용하여 AEM 환경에 변경 사항을 배포합니다.
 
 - WKND 사이트의 페이지(예: `https://publish-pXXXX-eYYYY.adobeaemcloud.com/us/en.html?search=foo&campaignId=bar&otherParam=baz`)에 액세스하여 규칙을 테스트합니다.
 
 - AEM 로그(`aemrequest.log`)에서 요청이 `otherParam`이 제거된 `https://publish-pXXXX-eYYYY.adobeaemcloud.com/us/en.html?search=foo&campaignId=bar`로 변환된 것을 확인할 수 있습니다.
 
   ![WKND 요청 변환](../assets/how-to/aemrequest-log-transformation.png)
-

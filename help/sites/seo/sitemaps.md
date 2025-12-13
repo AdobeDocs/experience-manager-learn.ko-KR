@@ -12,7 +12,7 @@ last-substantial-update: 2022-10-03T00:00:00Z
 doc-type: Technical Video
 exl-id: 40bb55f9-011d-4261-9f44-b1104a591252
 duration: 937
-source-git-commit: d2714443fa644ba17afdfbed5e6da8091425aeab
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 4%
@@ -27,7 +27,7 @@ AEM Sites용 사이트 맵을 만들어 SEO를 향상시키는 방법을 알아�
 >
 >이 비디오에서는 사이트 맵에서 상대 URL의 사용을 보여 줍니다. 사이트 맵 [은(는) 절대 URL](https://sitemaps.org/protocol.html)을(를) 사용해야 합니다. 절대 URL을 활성화하는 방법은 [구성](#absolute-sitemap-urls)을 참조하십시오. 아래 비디오에서는 다루지 않습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3454368?quality=12&learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/337960?quality=12&learn=on)
 
 ## 구성
 
@@ -89,7 +89,7 @@ RewriteRule ^/(.*)$ /content/${CONTENT_FOLDER_NAME}/$1 [PT,L]
 
 ## 리소스
 
-+ [AEM 사이트 맵 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html?lang=ko)
++ [AEM 사이트 맵 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html?lang=en)
 + [Apache Sling 사이트 맵 설명서](https://github.com/apache/sling-org-apache-sling-sitemap#readme)
 + [Sitemap.org 사이트 맵 설명서](https://www.sitemaps.org/protocol.html)
 + [Sitemap.org 사이트 맵 인덱스 파일 설명서](https://www.sitemaps.org/protocol.html#index)
