@@ -90,7 +90,7 @@ API가 성공적으로 호출되면 ADC 프로젝트의 자격 증명을 나타�
 
 - 변경 사항을 커밋하고 저장소에 푸시합니다.
 
-- [AEM 전체 스택 파이프라인](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#full-stack-pipeline)을 사용하여 Cloud Manager 인스턴스에 변경 내용을 배포합니다.
+- [AEM 전체 스택 파이프라인](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#full-stack-pipeline)을 사용하여 Cloud Manager 인스턴스에 변경 내용을 배포합니다.
 
 - **권한** 보기를 사용하여 사용자 그룹의 권한을 확인할 수도 있습니다. AEM 인스턴스의 **도구** > **보안** > **권한**(으)로 이동합니다.
 

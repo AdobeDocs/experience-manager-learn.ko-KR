@@ -26,4 +26,4 @@ ht-degree: 2%
 
 ## 추가 리소스 {#additional-resources}
 
-* [컨텐츠 전송 도구 개요](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html)
+* [컨텐츠 전송 도구 개요](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=ko)

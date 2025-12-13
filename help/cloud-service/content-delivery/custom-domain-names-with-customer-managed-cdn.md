@@ -41,7 +41,7 @@ ht-degree: 0%
    - 고객 CDN - 고객 CDN을 설정하고 SSL 인증서 및 AWS CloudFront, Azure CDN 또는 Akamai와 같은 도메인 세부 사항을 추가합니다.
    - DNS(Domain Name System) 호스팅 서비스 - Azure DNS 또는 AWS Route 53과 같은 사용자 정의 도메인에 대한 DNS 레코드를 추가합니다.
 - HTTP 헤더 유효성 검사 CDN 규칙을 AEM as a Cloud Service 환경에 배포하기 위해 [Adobe Cloud Manager](https://my.cloudmanager.adobe.com/)에 액세스합니다.
-- 샘플 [AEM WKND](https://github.com/adobe/aem-guides-wknd) 사이트가 [프로덕션 프로그램](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs) 유형의 AEM as a Cloud Service 환경에 배포되었습니다.
+- 샘플 [AEM WKND](https://github.com/adobe/aem-guides-wknd) 사이트가 [프로덕션 프로그램](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs) 유형의 AEM as a Cloud Service 환경에 배포되었습니다.
 
 서드파티 서비스에 액세스할 수 없는 경우 _보안 또는 호스팅 팀과 협력하여 단계를 완료합니다_.
 

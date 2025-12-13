@@ -34,7 +34,7 @@ Acroforms는 Acrobat을 사용하여 만든 양식입니다. Acrobat을 사용�
 >
 >XFA 기반 문서를 보내는 경우 문서를 병합해야 하며 Acrobat Sign 서명 태그가 문서에 정적 텍스트로 표시되어야 합니다.
 
-[Acrobat Sign 텍스트 태그 문서](https://helpx.adobe.com/sign/using/text-tag.html)
+[Acrobat Sign 텍스트 태그 문서](https://helpx.adobe.com/kr/sign/using/text-tag.html)
 
 >[!NOTE]
 >

@@ -35,7 +35,7 @@ SQL 데이터베이스(및 HTTP/HTTPS가 아닌 다른 서비스)에 대한 연�
 
 ## OSGi 구성
 
-암호는 코드에 저장할 수 없으므로 SQL 연결의 사용자 이름과 암호는 [암호 OSGi 구성 변수](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#secret-configuration-values)을 통해 제공되는 것이 가장 좋습니다. AIO CLI 또는 Cloud Manager API를 사용하여 설정합니다.
+암호는 코드에 저장할 수 없으므로 SQL 연결의 사용자 이름과 암호는 [암호 OSGi 구성 변수](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=ko#secret-configuration-values)을 통해 제공되는 것이 가장 좋습니다. AIO CLI 또는 Cloud Manager API를 사용하여 설정합니다.
 
 + `ui.config/src/jcr_root/apps/wknd-examples/osgiconfig/com.adobe.aem.wknd.examples.core.connections.impl.MySqlExternalServiceImpl.cfg.json`
 

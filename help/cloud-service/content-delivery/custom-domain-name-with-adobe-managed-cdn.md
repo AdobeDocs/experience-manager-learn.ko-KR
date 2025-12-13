@@ -40,7 +40,7 @@ Adobe CDN을 사용하는 ![사용자 지정 도메인 이름](./assets/add-cust
    - CA(인증 기관) - [DigitCert](https://www.digicert.com/)와 같이 사이트 도메인에 대해 서명된 인증서를 요청합니다.
    - DNS(Domain Name System) 호스팅 서비스 - Azure DNS 또는 AWS Route 53과 같은 사용자 정의 도메인에 대한 DNS 레코드를 추가합니다.
 - [비즈니스 소유자](https://my.cloudmanager.adobe.com/) 또는 **배포 관리자** 역할로 **Adobe Cloud Manager**&#x200B;에 액세스합니다.
-- 샘플 [AEM WKND](https://github.com/adobe/aem-guides-wknd) 사이트가 [프로덕션 프로그램](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs) 유형의 AEM as a Cloud Service 환경에 배포되었습니다.
+- 샘플 [AEM WKND](https://github.com/adobe/aem-guides-wknd) 사이트가 [프로덕션 프로그램](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs) 유형의 AEM as a Cloud Service 환경에 배포되었습니다.
 
 서드파티 서비스에 액세스할 수 없는 경우 _보안 또는 호스팅 팀과 협력하여 단계를 완료합니다_.
 
@@ -83,7 +83,7 @@ Adobe Cloud Manager은 별도의 양식 필드 _에서 최종 엔티티 인증�
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427906?quality=12&learn=on)
 
-Cloud Manager에서 SSL 인증서를 추가하려면 [SSL 인증서 추가](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate) 설명서를 따르십시오.
+Cloud Manager에서 SSL 인증서를 추가하려면 [SSL 인증서 추가](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate) 설명서를 따르십시오.
 
 ## 도메인 이름 확인
 
@@ -92,7 +92,7 @@ Cloud Manager에서 SSL 인증서를 추가하려면 [SSL 인증서 추가](http
 도메인 이름을 확인하려면 다음 단계를 수행하십시오.
 
 - [사용자 지정 도메인 이름 추가](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name) 설명서에 따라 Cloud Manager에서 도메인 이름을 추가하십시오.
-- DNS 호스팅 서비스에 AEM 관련 [TXT 레코드](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-text-record)를 추가합니다.
+- DNS 호스팅 서비스에 AEM 관련 [TXT 레코드](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-text-record)를 추가합니다.
 - `dig` 명령을 사용하여 DNS 서버를 쿼리하여 위의 단계를 확인합니다.
 
 ```bash
@@ -128,7 +128,7 @@ _aemverification.wknd.enablementadobe.com. 3600    IN TXT "adobe-aem-verificatio
 
 이 자습서에서는 Azure DNS를 사용하지만 모든 DNS 공급자를 사용할 수 있습니다. TXT 레코드를 추가하려면 DNS 호스팅 서비스의 설명서를 따라야 합니다.
 
-문제가 있는 경우 [도메인 이름 상태 확인](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status) 설명서를 검토하십시오.
+문제가 있는 경우 [도메인 이름 상태 확인](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status) 설명서를 검토하십시오.
 
 ## DNS 레코드 구성
 
@@ -136,9 +136,9 @@ _aemverification.wknd.enablementadobe.com. 3600    IN TXT "adobe-aem-verificatio
 
 사용자 정의 도메인에 대한 DNS 레코드를 구성하려면 다음 단계를 따르십시오.
 
-1. 루트 도메인(APEX) 또는 하위 도메인(CNAME)과 같은 도메인 유형에 따라 DNS 레코드 유형(CNAME 또는 APEX)을 결정하고 [DNS 설정 구성](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/configure-dns-settings) 설명서를 따릅니다.
+1. 루트 도메인(APEX) 또는 하위 도메인(CNAME)과 같은 도메인 유형에 따라 DNS 레코드 유형(CNAME 또는 APEX)을 결정하고 [DNS 설정 구성](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/configure-dns-settings) 설명서를 따릅니다.
 1. DNS 호스팅 서비스에 DNS 레코드를 추가합니다.
-1. [DNS 레코드 상태 확인](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status) 설명서에 따라 DNS 레코드 유효성 검사를 트리거합니다.
+1. [DNS 레코드 상태 확인](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status) 설명서에 따라 DNS 레코드 유효성 검사를 트리거합니다.
 
 이 자습서에서는 **하위 도메인** `wknd.enablementadobe.com`이(가) 사용되면 `cdn.adobeaemcloud.com`을(를) 가리키는 CNAME 레코드 종류가 추가됩니다.
 

@@ -25,15 +25,15 @@ AEM as a Cloud Service의 웹에 최적화된 이미지 제공 Java™ API를 �
 
 AEM as a Cloud Service은 자산의 최적화된 이미지 웹 변환을 자동으로 생성하는 [웹에 최적화된 이미지 제공](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=ko-KR)을 지원합니다. 웹에 최적화된 이미지 제공은 다음과 같은 세 가지 주요 방법을 사용할 수 있습니다.
 
-1. [AEM 코어 WCM 구성 요소 사용](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
-2. [AEM 코어 WCM 구성 요소 이미지 구성 요소를 확장하는 사용자 지정 구성 요소를 만듭니다](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/custom-component.html#tackling-the-image-problem)
+1. [AEM 코어 WCM 구성 요소 사용](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)
+2. [AEM 코어 WCM 구성 요소 이미지 구성 요소를 확장하는 사용자 지정 구성 요소를 만듭니다](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/custom-component.html?lang=ko#tackling-the-image-problem)
 3. AssetDelivery Java™ API를 사용하여 웹에 최적화된 이미지 URL을 생성하는 사용자 지정 구성 요소를 만듭니다.
 
 이 문서에서는 AEM as a Cloud Service 및 AEM SDK 모두에서 코드 기반이 작동할 수 있도록 사용자 지정 구성 요소에서 웹에 최적화된 이미지 Java™ API를 사용하는 방법에 대해 살펴봅니다.
 
 ## Java™ API
 
-[AssetDelivery API](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/adobe/cq/wcm/spi/AssetDelivery.html)은(는) 이미지 자산에 대해 웹에 최적화된 배달 URL을 생성하는 OSGi 서비스입니다. `AssetDelivery.getDeliveryURL(...)`개의 허용된 옵션이 [여기에 문서화되어 있습니다](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html#can-i-use-web-optimized-image-delivery-with-my-own-component%3F).
+[AssetDelivery API](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/adobe/cq/wcm/spi/AssetDelivery.html)은(는) 이미지 자산에 대해 웹에 최적화된 배달 URL을 생성하는 OSGi 서비스입니다. `AssetDelivery.getDeliveryURL(...)`개의 허용된 옵션이 [여기에 문서화되어 있습니다](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=ko#can-i-use-web-optimized-image-delivery-with-my-own-component%3F).
 
 AEM as a Cloud Service에서 실행할 때만 `AssetDelivery` OSGi 서비스가 충족됩니다. AEM SDK에서 `AssetDelivery` OSGi 서비스에 대한 참조가 `null`을(를) 반환합니다. AEM as a Cloud Service에서 실행할 때 웹에 최적화된 URL을 조건부로 사용하고 AEM SDK에서 대체 이미지 URL을 사용하는 것이 가장 좋습니다. 일반적으로 에셋의 웹 렌디션은 충분한 대체 요소입니다.
 

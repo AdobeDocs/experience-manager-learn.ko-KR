@@ -49,7 +49,7 @@ AEM as a cloud service를 설정하고 사용하여 페이지 변형 캐싱을 �
 
 ## 사용
 
-1. 이 기능을 보여 주기 위해 [WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)의 구현을 예로 사용합니다.
+1. 이 기능을 보여 주기 위해 [WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko)의 구현을 예로 사용합니다.
 
 1. AEM에서 [SlingServletFilter](https://sling.apache.org/documentation/the-sling-engine/filters.html)을(를) 구현하여 HTTP 응답에 대한 `x-aem-variant` 쿠키를 변형 값으로 설정합니다.
 

@@ -253,7 +253,7 @@ RewriteRule ^/logo.jpg$ /content/dam/weretail/general/logo.jpg [NC,PT]
 
 `/etc/httpd/conf.dispatcher.d/available_farms/` 디렉터리의 FILENAME_farm.any 파일이 `/etc/httpd/conf.dispatcher.d/enabled_farms/` 디렉터리에 심볼릭 링크되면 실행 중인 구성에서 사용됩니다.
 
-팜 파일에는 캐시, clientheaders, filters, renders 및 vhosts와 같은 [팜의 최상위 섹션](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#defining-farms-farms)을 기반으로 하는 하위 항목이 포함되어 있습니다.
+팜 파일에는 캐시, clientheaders, filters, renders 및 vhosts와 같은 [팜의 최상위 섹션](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#defining-farms-farms)을 기반으로 하는 하위 항목이 포함되어 있습니다.
 
 `FILENAME_farm.any` 파일에는 팜 파일에 포함해야 하는 위치에 따라 각 파일에 대한 include 문이 있습니다.  다음은 올바른 참조로서 `FILENAME_farm.any` 파일의 예제 구문입니다.
 

@@ -76,7 +76,7 @@ SDR 문서는 구현 계획에 대한 포괄적인 개요를 제공하여 모든
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419874?quality=12&learn=on)
 
-SDR 문서에 포함되어야 하는 개념 및 다양한 요소에 대한 자세한 내용은 [솔루션 디자인 참조(SDR) 문서 만들기 및 유지 관리](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html)를 참조하십시오. 샘플 Excel 템플릿을 다운로드할 수도 있지만 WKND별 버전은 [여기](./assets/Initial-WKND-WebSDK-BRD-SDR.xlsx)에서 사용할 수 있습니다.
+SDR 문서에 포함되어야 하는 개념 및 다양한 요소에 대한 자세한 내용은 [솔루션 디자인 참조(SDR) 문서 만들기 및 유지 관리](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html?lang=ko)를 참조하십시오. 샘플 Excel 템플릿을 다운로드할 수도 있지만 WKND별 버전은 [여기](./assets/Initial-WKND-WebSDK-BRD-SDR.xlsx)에서 사용할 수 있습니다.
 
 ## Analytics 설정 - 보고서 세트, Analysis Workspace
 
@@ -90,10 +90,10 @@ SDR 문서에 포함되어야 하는 개념 및 다양한 요소에 대한 자�
 
 Analytics 설정 및 개념에 대해 자세히 알아보려면 다음 리소스를 사용하는 것이 좋습니다.
 
-+ [보고서 세트](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite.html)
-+ [전환 변수](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/conversion-var-admin.html)
-+ [성공 이벤트](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-event)
-+ [Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html)
++ [보고서 세트](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite.html?lang=ko)
++ [전환 변수](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/conversion-var-admin.html?lang=ko)
++ [성공 이벤트](https://experienceleague.adobe.com/ko/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-event)
++ [Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=ko)
 
 ## 데이터스트림 업데이트 - Analytics 서비스 추가
 
@@ -214,7 +214,7 @@ XDM(경험 데이터 모델) 스키마를 사용하면 수집된 데이터를 �
 
 +++
 
-AEM 핵심 구성 요소와 Adobe 클라이언트 데이터 레이어 통합에 대한 자세한 내용은 [AEM 핵심 구성 요소와 Adobe 클라이언트 데이터 레이어 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html)을 참조하십시오.
+AEM 핵심 구성 요소와 Adobe 클라이언트 데이터 레이어 통합에 대한 자세한 내용은 [AEM 핵심 구성 요소와 Adobe 클라이언트 데이터 레이어 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html?lang=ko)을 참조하십시오.
 
 
 >[!INFO]
@@ -273,9 +273,9 @@ Analysis Workspace은 유연하고 대화형 방식으로 데이터를 탐색하
 
 ## 추가 리소스
 
-+ [Experience Platform Web SDK 통합](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform/web-sdk.html)
-+ [핵심 구성 요소와 함께 Adobe 클라이언트 데이터 레이어 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html)
-+ [Experience Platform 데이터 수집 태그와 AEM 통합](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)
-+ [Adobe Experience Platform Web SDK 및 Edge Network 개요](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html)
-+ [데이터 수집 튜토리얼](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html)
-+ [Adobe Experience Platform Debugger 개요](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)
++ [Experience Platform Web SDK 통합](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform/web-sdk.html?lang=ko)
++ [핵심 구성 요소와 함께 Adobe 클라이언트 데이터 레이어 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html?lang=ko)
++ [Experience Platform 데이터 수집 태그와 AEM 통합](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=ko)
++ [Adobe Experience Platform Web SDK 및 Edge Network 개요](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html?lang=ko)
++ [데이터 수집 튜토리얼](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html?lang=ko)
++ [Adobe Experience Platform Debugger 개요](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html?lang=ko)

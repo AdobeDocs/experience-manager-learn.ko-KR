@@ -23,11 +23,11 @@ ht-degree: 1%
 
 # AEM Sites 및 Experience Platform Web SDK 통합
 
-AEM as a Cloud Service을 Experience Platform [웹 SDK](https://experienceleague.adobe.com/docs/experience-platform/web-sdk/home.html)과 통합하는 방법을 알아봅니다. 이 기본 단계는 Adobe Analytics, Target과 같은 Adobe Experience Cloud 제품이나 Real-Time Customer Data Platform, Customer Journey Analytics 및 Journey Optimizer과 같은 최신 혁신 제품을 통합하는 데 필수적입니다.
+AEM as a Cloud Service을 Experience Platform [웹 SDK](https://experienceleague.adobe.com/docs/experience-platform/web-sdk/home.html?lang=ko)과 통합하는 방법을 알아봅니다. 이 기본 단계는 Adobe Analytics, Target과 같은 Adobe Experience Cloud 제품이나 Real-Time Customer Data Platform, Customer Journey Analytics 및 Journey Optimizer과 같은 최신 혁신 제품을 통합하는 데 필수적입니다.
 
-또한 [Experience Platform](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project)에서 [WKND - 샘플 Adobe Experience Manager 프로젝트](https://experienceleague.adobe.com/en/docs/experience-platform/landing/home) 페이지 보기 데이터를 수집하고 전송하는 방법에 대해 알아봅니다.
+또한 [Experience Platform](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project)에서 [WKND - 샘플 Adobe Experience Manager 프로젝트](https://experienceleague.adobe.com/ko/docs/experience-platform/landing/home) 페이지 보기 데이터를 수집하고 전송하는 방법에 대해 알아봅니다.
 
-이 설정을 완료한 후 견고한 기반을 구현했습니다. 또한 [Real-Time Customer Data Platform(Real-Time CDP)](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html), [Customer Journey Analytics(CJA)](https://experienceleague.adobe.com/en/docs/customer-journey-analytics) 및 [Adobe Journey Optimizer(AJO)](https://experienceleague.adobe.com/en/docs/journey-optimizer)와 같은 응용 프로그램을 사용하여 Experience Platform 구현을 진행할 준비가 되었습니다. 고급 구현은 웹 및 고객 데이터를 표준화하여 고객 참여를 높이는 데 도움이 됩니다.
+이 설정을 완료한 후 견고한 기반을 구현했습니다. 또한 [Real-Time Customer Data Platform(Real-Time CDP)](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html?lang=ko), [Customer Journey Analytics(CJA)](https://experienceleague.adobe.com/ko/docs/customer-journey-analytics) 및 [Adobe Journey Optimizer(AJO)](https://experienceleague.adobe.com/ko/docs/journey-optimizer)와 같은 응용 프로그램을 사용하여 Experience Platform 구현을 진행할 준비가 되었습니다. 고급 구현은 웹 및 고객 데이터를 표준화하여 고객 참여를 높이는 데 도움이 됩니다.
 
 ## 사전 요구 사항
 
@@ -55,14 +55,14 @@ Experience Platform Web SDK을 통합할 때 필요한 사항은 다음과 같�
 
 XDM(경험 데이터 모델) 스키마를 사용하면 고객 경험 데이터를 표준화할 수 있습니다. **WKND pageview** 데이터를 수집하려면 XDM 스키마를 만들고 웹 데이터 수집을 위해 Adobe 제공 필드 그룹 `AEP Web SDK ExperienceEvent`을(를) 사용하십시오.
 
-소매, 금융 서비스, 의료 서비스 등과 같은 특정 산업 및 일반 데이터 모델이 있습니다. 자세한 내용은 [산업 데이터 모델 개요](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/industries/overview)를 참조하십시오.
+소매, 금융 서비스, 의료 서비스 등과 같은 특정 산업 및 일반 데이터 모델이 있습니다. 자세한 내용은 [산업 데이터 모델 개요](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/schema/industries/overview)를 참조하십시오.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418894?quality=12&learn=on)
 
-[XDM 시스템 개요](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home)에서 XDM 스키마와 필드 그룹, 형식, 클래스 및 데이터 형식 등 관련 개념에 대해 알아봅니다.
+[XDM 시스템 개요](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/home)에서 XDM 스키마와 필드 그룹, 형식, 클래스 및 데이터 형식 등 관련 개념에 대해 알아봅니다.
 
-[XDM 시스템 개요](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home)는 XDM 스키마 및 필드 그룹, 형식, 클래스 및 데이터 형식과 같은 관련 개념에 대해 배울 수 있는 좋은 리소스입니다. XDM 데이터 모델과 XDM 스키마를 만들고 관리하여 기업 전반의 데이터를 표준화하는 방법에 대한 포괄적인 이해를 제공합니다. 이를 살펴보고 XDM 스키마와 이것이 데이터 수집 및 관리 프로세스에 도움이 되는 방법에 대해 더 깊이 이해하십시오.
+[XDM 시스템 개요](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/home)는 XDM 스키마 및 필드 그룹, 형식, 클래스 및 데이터 형식과 같은 관련 개념에 대해 배울 수 있는 좋은 리소스입니다. XDM 데이터 모델과 XDM 스키마를 만들고 관리하여 기업 전반의 데이터를 표준화하는 방법에 대한 포괄적인 이해를 제공합니다. 이를 살펴보고 XDM 스키마와 이것이 데이터 수집 및 관리 프로세스에 도움이 되는 방법에 대해 더 깊이 이해하십시오.
 
 ## 데이터스트림 만들기 - Experience Platform
 
@@ -71,7 +71,7 @@ XDM(경험 데이터 모델) 스키마를 사용하면 고객 경험 데이터�
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418895?quality=12&learn=on)
 
-[데이터스트림 개요](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) 페이지를 방문하여 데이터스트림의 개념과 데이터 거버넌스 및 구성과 같은 관련 주제를 숙지하십시오.
+[데이터스트림 개요](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=ko) 페이지를 방문하여 데이터스트림의 개념과 데이터 거버넌스 및 구성과 같은 관련 주제를 숙지하십시오.
 
 ## 태그 속성 만들기 - Experience Platform
 
@@ -170,11 +170,11 @@ Experience Platform에서 태그 속성을 만들어 WKND 웹 사이트에 웹 S
 
 [태그 개요](https://experienceleague.adobe.com/ko/docs/experience-platform/tags/home)에서는 데이터 요소, 규칙 및 확장과 같은 중요한 개념에 대해 자세히 설명합니다.
 
-AEM 핵심 구성 요소와 Adobe 클라이언트 데이터 레이어 통합에 대한 자세한 내용은 [AEM 핵심 구성 요소와 Adobe 클라이언트 데이터 레이어 사용](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview)을 참조하십시오.
+AEM 핵심 구성 요소와 Adobe 클라이언트 데이터 레이어 통합에 대한 자세한 내용은 [AEM 핵심 구성 요소와 Adobe 클라이언트 데이터 레이어 사용](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview)을 참조하십시오.
 
 ## AEM에 태그 속성 연결
 
-AEM의 Adobe Experience Platform 구성에서 Adobe IMS 및 태그를 통해 최근에 만든 태그 속성을 AEM에 연결하는 방법을 알아봅니다. AEM as a Cloud Service 환경이 구축되면 태그를 비롯한 여러 Adobe IMS 기술 계정 구성이 자동으로 생성됩니다. 단계별 지침은 [IMS를 사용하여 AEM Sites과 태그 속성 연결](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/connect-aem-tag-property-using-ims)을 참조하십시오.
+AEM의 Adobe Experience Platform 구성에서 Adobe IMS 및 태그를 통해 최근에 만든 태그 속성을 AEM에 연결하는 방법을 알아봅니다. AEM as a Cloud Service 환경이 구축되면 태그를 비롯한 여러 Adobe IMS 기술 계정 구성이 자동으로 생성됩니다. 단계별 지침은 [IMS를 사용하여 AEM Sites과 태그 속성 연결](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/connect-aem-tag-property-using-ims)을 참조하십시오.
 
 그러나 AEM 6.5 버전의 경우 수동으로 구성해야 합니다.
 
@@ -199,7 +199,7 @@ Web SDK을 사용하여 수집된 페이지 보기 데이터는 Experience Platf
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418898?quality=12&learn=on)
 
-[데이터 집합 개요](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview)에서는 개념, 구성 및 기타 수집 기능에 대한 자세한 정보를 제공합니다.
+[데이터 집합 개요](https://experienceleague.adobe.com/ko/docs/experience-platform/catalog/datasets/overview)에서는 개념, 구성 및 기타 수집 기능에 대한 자세한 정보를 제공합니다.
 
 
 ## Experience Platform의 WKND 페이지 보기 데이터
@@ -222,8 +222,8 @@ Web SDK을 사용하여 수집된 페이지 보기 데이터는 Experience Platf
 
 ## 추가 리소스
 
-+ [핵심 구성 요소와 함께 Adobe 클라이언트 데이터 레이어 사용](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview)
-+ [Experience Platform 데이터 수집 태그와 AEM 통합](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview)
-+ [Adobe Experience Platform Web SDK 및 Edge Network 개요](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview)
-+ [데이터 수집 튜토리얼](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/overview)
-+ [Adobe Experience Platform Debugger 개요](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview)
++ [핵심 구성 요소와 함께 Adobe 클라이언트 데이터 레이어 사용](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview)
++ [Experience Platform 데이터 수집 태그와 AEM 통합](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview)
++ [Adobe Experience Platform Web SDK 및 Edge Network 개요](https://experienceleague.adobe.com/ko/docs/platform-learn/data-collection/web-sdk/overview)
++ [데이터 수집 튜토리얼](https://experienceleague.adobe.com/ko/docs/platform-learn/data-collection/overview)
++ [Adobe Experience Platform Debugger 개요](https://experienceleague.adobe.com/ko/docs/platform-learn/data-collection/debugger/overview)

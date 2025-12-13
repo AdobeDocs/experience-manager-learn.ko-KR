@@ -32,4 +32,4 @@ ht-degree: 1%
 
 ## 추가 리소스 {#additional-resources}
 
-* [AEM as a Cloud Service 온보딩 여정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html) - 새로운 시스템 관리자가 각 팀원이 새 AEM as a Cloud Service 리소스에 로그인하고 액세스할 수 있도록 클라우드 리소스를 처음 프로비저닝하고 작업 책임에 따라 사용자를 역할에 할당할 수 있는 단계별 안내서입니다
+* [AEM as a Cloud Service 온보딩 여정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=ko) - 새로운 시스템 관리자가 각 팀원이 새 AEM as a Cloud Service 리소스에 로그인하고 액세스할 수 있도록 클라우드 리소스를 처음 프로비저닝하고 작업 책임에 따라 사용자를 역할에 할당할 수 있는 단계별 안내서입니다

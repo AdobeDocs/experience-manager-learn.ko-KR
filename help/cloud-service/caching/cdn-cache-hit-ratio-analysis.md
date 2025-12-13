@@ -26,7 +26,7 @@ CDN에서 캐시된 컨텐츠는 요청이 Apache/dispatcher 또는 AEM 게시�
 최적화를 위해 AEM as a Cloud Service에서 제공한 **CDN 로그**&#x200B;를 분석하고 **캐시 적중률**, **MISS _및_PASS _캐시 유형_의 상위 URL을 얻는 방법에 대해 알아봅니다.**
 
 
-CDN 로그는 `url`, `cache`을(를) 포함한 다양한 필드가 포함된 JSON 형식으로 사용할 수 있습니다. 자세한 내용은 [CDN 로그 형식](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/logging.html?lang=en#cdn-log:~:text=Toggle%20Text%20Wrapping-,Log%20Format,-The%20CDN%20logs)을 참조하십시오. `cache` 필드는 캐시의 _상태_&#x200B;에 대한 정보를 제공하며 가능한 값은 HIT, MISS 또는 PASS입니다. 가능한 값에 대한 세부 사항을 검토해 보겠습니다.
+CDN 로그는 `url`, `cache`을(를) 포함한 다양한 필드가 포함된 JSON 형식으로 사용할 수 있습니다. 자세한 내용은 [CDN 로그 형식](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/logging.html?lang=ko#cdn-log:~:text=Toggle%20Text%20Wrapping-,Log%20Format,-The%20CDN%20logs)을 참조하십시오. `cache` 필드는 캐시의 _상태_&#x200B;에 대한 정보를 제공하며 가능한 값은 HIT, MISS 또는 PASS입니다. 가능한 값에 대한 세부 사항을 검토해 보겠습니다.
 
 | 캐시 상태 </br> 가능한 값 | 설명 |
 |------------------------------------|:-----------------------------------------------------:|
@@ -67,7 +67,7 @@ CDN 로그를 분석하기 위해 이 자습서에서는 다음 세 가지 옵�
 
 1. **Elasticsearch, Logstash 및 ELK(Kibana)**: [ELK 대시보드 도구](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md)를 로컬에 설치할 수 있습니다.
 1. **Splunk**: [Splunk 대시보드 도구](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/README.md)를 사용하려면 Splunk에 액세스해야 하며 CDN 로그를 수집하려면 [AEMCS 로그 전달이 활성화되어야 합니다](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/developing/logging#splunk-logs).
-1. **Jupyter Notebook**: Adobe Experience Platform 라이선스가 부여된 고객의 경우 추가 소프트웨어를 설치하지 않고도 [Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data)의 일부로 원격으로 액세스할 수 있습니다.
+1. **Jupyter Notebook**: Adobe Experience Platform 라이선스가 부여된 고객의 경우 추가 소프트웨어를 설치하지 않고도 [Adobe Experience Platform](https://experienceleague.adobe.com/ko/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data)의 일부로 원격으로 액세스할 수 있습니다.
 
 ### 옵션 1: ELK 대시보드 도구 사용
 
@@ -149,7 +149,7 @@ CDN 로그를 분석하기 위해 이 자습서에서는 다음 세 가지 옵�
 
 로컬로 소프트웨어를 설치하지 않으려는 사용자(즉, 이전 섹션의 ELK 대시보드 도구)에게는 다른 옵션이 있지만 Adobe Experience Platform에 대한 라이센스가 필요합니다.
 
-[Jupyter Notebook](https://jupyter.org/)은(는) 코드, 텍스트 및 시각화가 포함된 문서를 만들 수 있는 오픈 소스 웹 응용 프로그램입니다. 데이터 변환, 시각화 및 통계 모델링에 사용됩니다. Adobe Experience Platform의 일부로 [원격으로 액세스할 수 있습니다](https://experienceleague.adobe.com/en/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data).
+[Jupyter Notebook](https://jupyter.org/)은(는) 코드, 텍스트 및 시각화가 포함된 문서를 만들 수 있는 오픈 소스 웹 응용 프로그램입니다. 데이터 변환, 시각화 및 통계 모델링에 사용됩니다. Adobe Experience Platform의 일부로 [원격으로 액세스할 수 있습니다](https://experienceleague.adobe.com/ko/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data).
 
 #### 대화형 Python Notebook 파일 다운로드
 

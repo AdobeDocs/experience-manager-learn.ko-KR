@@ -171,7 +171,7 @@ export default ExtensionRegistration;
 중요한 점은 확장에서 AEM을 사용하는 모든 상호 작용은 [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/)에서 실행되는 별도의 서버리스 프로세스인 [AppBuilder Adobe I/O Runtime 작업](https://developer.adobe.com/runtime/docs/)에 위임해야 한다는 것입니다.
 Adobe I/O Runtime 작업을 사용하여 AEM과 통신하면 CORS(원본 간 리소스 공유) 연결 문제를 방지할 수 있습니다.
 
-벌크 속성 업데이트 양식이 제출되면 사용자 지정 `onSubmitHandler()`이(가) Adobe I/O Runtime 작업을 호출하여 현재 AEM 호스트(도메인)와 사용자의 AEM 액세스 토큰을 전달합니다. 그러면 콘텐츠 조각을 업데이트하기 위해 [AEM 콘텐츠 조각 API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html)가 호출됩니다.
+벌크 속성 업데이트 양식이 제출되면 사용자 지정 `onSubmitHandler()`이(가) Adobe I/O Runtime 작업을 호출하여 현재 AEM 호스트(도메인)와 사용자의 AEM 액세스 토큰을 전달합니다. 그러면 콘텐츠 조각을 업데이트하기 위해 [AEM 콘텐츠 조각 API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html?lang=ko)가 호출됩니다.
 
 Adobe I/O Runtime 작업의 응답을 받으면 모달이 업데이트되어 벌크 속성 업데이트 작업의 결과가 표시됩니다.
 

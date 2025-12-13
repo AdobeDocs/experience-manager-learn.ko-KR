@@ -333,7 +333,7 @@ SAML 구성이 환경마다 다른 경우 환경당 OSGi 구성(`config.publish.
 
 ### 암호화 사용
 
-[AuthnRequest 및 SAML 어설션 암호화](#encrypting-the-authnrequest-and-saml-assertion)할 때 `useEncryption`, `spPrivateKeyAlias` 및 `keyStorePassword` 속성이 필요합니다. `keyStorePassword`에 암호가 포함되어 있으므로 값을 OSGi 구성 파일에 저장하지 말고 [비밀 구성 값](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#secret-configuration-values)을 사용하여 삽입해야 합니다.
+[AuthnRequest 및 SAML 어설션 암호화](#encrypting-the-authnrequest-and-saml-assertion)할 때 `useEncryption`, `spPrivateKeyAlias` 및 `keyStorePassword` 속성이 필요합니다. `keyStorePassword`에 암호가 포함되어 있으므로 값을 OSGi 구성 파일에 저장하지 말고 [비밀 구성 값](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=ko#secret-configuration-values)을 사용하여 삽입해야 합니다.
 
 +++필요한 경우 암호화를 사용하도록 OSGi 구성을 업데이트합니다
 
@@ -366,7 +366,7 @@ SAML 구성이 환경마다 다른 경우 환경당 OSGi 구성(`config.publish.
 
 + `useEncryption`이(가) `true`(으)로 설정됨
 + `spPrivateKeyAlias`에 SAML 통합에서 사용하는 개인 키에 대한 키 저장소 항목 별칭이 포함되어 있습니다.
-+ `keyStorePassword`에 [&#x200B; 사용자 키 저장소의 암호를 포함하는 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#secret-configuration-values)OSGi 비밀 구성 변수`authentication-service`이(가) 있습니다.
++ `keyStorePassword`에 [&#x200B; 사용자 키 저장소의 암호를 포함하는 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=ko#secret-configuration-values)OSGi 비밀 구성 변수`authentication-service`이(가) 있습니다.
 
 +++
 
@@ -452,7 +452,7 @@ Apache 웹 서버에서 URL 재작성이 구성(`dispatcher/src/conf.d/rewrites/
 ### 새 환경에서 SAML 사용자에 대해 동적 그룹 멤버십을 활성화하는 방법
 
 새 AEM as a Cloud Service 환경에서 그룹 평가 성능을 크게 향상시키려면 새 환경에서 동적 그룹 멤버십 기능을 활성화하는 것이 좋습니다.
-또한 데이터 동기화가 활성화될 때 필요한 단계입니다. 자세한 내용은 [여기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier)를 참조하세요.
+또한 데이터 동기화가 활성화될 때 필요한 단계입니다. 자세한 내용은 [여기](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier)를 참조하세요.
 이렇게 하려면 OSGI 구성 파일에 다음 속성을 추가합니다.
 
 `/apps/example/osgiconfig/config.publish/com.adobe.granite.auth.saml.SamlAuthenticationHandler~example.cfg.json`

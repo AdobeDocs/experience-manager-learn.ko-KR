@@ -26,5 +26,5 @@ ht-degree: 3%
 
 ## 추가 리소스 {#additional-resources}
 
-* [환경 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html) - AEM as a Cloud Service의 환경 관리에 대한 설명서
-* [신속한 개발 환경](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html) - AEM as a Cloud Service의 RDE에 대한 설명서
+* [환경 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=ko) - AEM as a Cloud Service의 환경 관리에 대한 설명서
+* [신속한 개발 환경](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html?lang=ko) - AEM as a Cloud Service의 RDE에 대한 설명서

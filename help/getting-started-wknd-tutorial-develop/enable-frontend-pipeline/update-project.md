@@ -195,7 +195,7 @@ ht-degree: 100%
 
 ## 주의 - _프론트엔드 파이프라인 활성화_ 버튼
 
-[레일 선택기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html)의 [사이트](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html) 옵션은 사이트 루트 또는 사이트 페이지를 선택할 시 **프론트엔드 파이프라인 활성화** 버튼을 표시합니다. **프론트엔드 파이프라인 활성화** 버튼을 클릭하면 위의 **Sling 구성**&#x200B;을 재정의하게 되므로 Cloud Manager 파이프라인 실행을 통해 위의 변경 사항을 배포한 후에는 이 버튼을 **누르지 말아야 합니다**.
+[레일 선택기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html?lang=ko)의 [사이트](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html?lang=ko) 옵션은 사이트 루트 또는 사이트 페이지를 선택할 시 **프론트엔드 파이프라인 활성화** 버튼을 표시합니다. **프론트엔드 파이프라인 활성화** 버튼을 클릭하면 위의 **Sling 구성**&#x200B;을 재정의하게 되므로 Cloud Manager 파이프라인 실행을 통해 위의 변경 사항을 배포한 후에는 이 버튼을 **누르지 말아야 합니다**.
 
 ![프론트엔드 파이프라인 활성화 버튼](assets/enable-front-end-Pipeline-button.png)
 

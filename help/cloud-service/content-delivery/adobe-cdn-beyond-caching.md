@@ -91,13 +91,13 @@ data:
 
 [트래픽 필터 규칙으로 웹 사이트 보호](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview)
 
-[HTTP 헤더 유효성 검사 CDN 규칙 구성 및 배포](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule)
+[HTTP 헤더 유효성 검사 CDN 규칙 구성 및 배포](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule)
 
-[CDN 캐시를 제거하는 방법](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)
+[CDN 캐시를 제거하는 방법](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)
 
-[CDN 오류 페이지 구성](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages)
+[CDN 오류 페이지 구성](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages)
 
-[CDN에서 트래픽 구성](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#client-side-redirectors)
+[CDN에서 트래픽 구성](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#client-side-redirectors)
 
-[CDN 자격 증명 및 인증 구성](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication)
+[CDN 자격 증명 및 인증 구성](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication)
 

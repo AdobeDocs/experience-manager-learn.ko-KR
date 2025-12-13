@@ -82,7 +82,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
 
 다음은 AEM에서 제공하는 주요 기초 기능의 매트릭스입니다. 이러한 기능 중 일부는 각 릴리스에 추가된 이전 버전의 증분 개선 사항에 도입되었습니다.
 
-+ [AEM Foundation 릴리스 노트](https://helpx.adobe.com/experience-manager/6-5/release-notes/wcm-platform.html)
++ [AEM Foundation 릴리스 노트](https://helpx.adobe.com/kr/experience-manager/6-5/release-notes/wcm-platform.html)
 
 이 버전의 기능에 대한 중요한 개선 사항이 ***✔<sup>+</sup>개 있습니다.***
 
@@ -126,7 +126,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/indexing-via-the-oak-run-jar.html">oak-run.jar 인덱스 지원</a>:</strong> Oak 인덱스의 다시 인덱싱, 통계 수집 및 일관성 검사를 개선했습니다.</td>
+            <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/6-5/sites/deploying/using/indexing-via-the-oak-run-jar.html">oak-run.jar 인덱스 지원</a>:</strong> Oak 인덱스의 다시 인덱싱, 통계 수집 및 일관성 검사를 개선했습니다.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -136,7 +136,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/queries-and-indexing.html" target="_blank">사용자 지정 검색 인덱스</a>: </strong>
+            <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/6-5/sites/deploying/using/queries-and-indexing.html" target="_blank">사용자 지정 검색 인덱스</a>: </strong>
                 쿼리 성능 및 검색 관련성을 최적화하기 위해 사용자 정의 인덱스 정의를 추가하는 기능.</td>
             <td> </td>
             <td>✔</td>
@@ -147,7 +147,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/revision-cleanup.html" target="_blank">온라인 수정 정리</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/6-5/sites/deploying/using/revision-cleanup.html" target="_blank">온라인 수정 정리</a>:</strong>
                 서버 다운타임 없이 저장소 유지 관리를 수행할 수 있습니다.</td>
             <td> </td>
             <td> </td>
@@ -158,7 +158,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/storage-elements-in-aem-6.html" target="_blank">TarMK 또는 MongoMK 저장소 저장소</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/6-5/sites/deploying/using/storage-elements-in-aem-6.html" target="_blank">TarMK 또는 MongoMK 저장소 저장소</a>:</strong>
                 TarMK(차세대 TarPM 버전)의 간단하고 성능이 뛰어난 파일 기반 스토리지를 사용하는 <br> 옵션
                 <br> 또는 MongoMK를 사용하는 MongoDB 지원 저장소를 사용하여 가로로 확장.</td>
             <td> </td>
@@ -170,7 +170,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/aem-with-mongodb.html" target="_blank">MongoMK 성능 및 안정성</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/6-5/sites/deploying/using/aem-with-mongodb.html" target="_blank">MongoMK 성능 및 안정성</a>:</strong>
             AEM 6.0으로 도입된 이후 MongoMK에 대한 지속적인 개선이 이루어졌습니다.</td>
             <td> </td>
             <td> </td>
@@ -181,7 +181,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/data-store-config.html#AmazonS3DataStore">Amazon S3 DataStore</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/6-5/sites/deploying/using/data-store-config.html#AmazonS3DataStore">Amazon S3 DataStore</a>:</strong>
             확장 가능한 클라우드 스토리지 솔루션을 활용하여 바이너리 자산을 저장합니다.</td>
             <td>✔</td>
             <td>✔<sup>+</sup></td>
@@ -214,7 +214,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/operations-dashboard.html" target="_blank">작업 대시보드</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/6-5/sites/administering/using/operations-dashboard.html" target="_blank">작업 대시보드</a>:</strong>
  AEM 내에서 유지 관리를 수행하고, 서버 상태를 모니터링하고, 성능을 분석합니다.</td>
             <td></td>
             <td>✔</td>
@@ -225,7 +225,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/upgrade.html" target="_blank">업그레이드 개선 사항</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/6-5/sites/deploying/using/upgrade.html" target="_blank">업그레이드 개선 사항</a>:</strong>
             업그레이드 개선 사항을 통해 AEM을 보다 쉽고 빠르게 즉각적으로 업그레이드할 수 있습니다.</td>
             <td> </td>
             <td> </td>
@@ -276,7 +276,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
 
 다음은 AEM에서 제공하는 주요 보안 기능의 매트릭스입니다. 이러한 기능 중 일부는 각 릴리스에 추가된 이전 버전의 증분 개선 사항에 도입되었습니다.
 
-+ [보안 릴리스 정보](https://helpx.adobe.com/experience-manager/6-5/release-notes/wcm-platform.html#Security)
++ [보안 릴리스 정보](https://helpx.adobe.com/kr/experience-manager/6-5/release-notes/wcm-platform.html#Security)
 
 ***✔은(는) 이 버전의 기능에 대한 중요한 개선 사항을 나타냅니다.***
 
@@ -297,7 +297,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
     </thead>
     <tbody>
         <tr>
-        <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/security-service-users.html" target="_blank">서비스 사용자</a></strong>
+        <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/6-5/sites/administering/using/security-service-users.html" target="_blank">서비스 사용자</a></strong>
             <br>은(는) 권한을 구획하여 관리자 권한을 불필요하게 사용하지 않도록 합니다.</td>
         <td></td>
         <td>✔</td>
@@ -308,7 +308,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
         <td>✔</td>
     </tr>
     <tr>
-        <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/saml-2-0-authenticationhandler.html" target="_blank">키 저장소 관리</a></strong>
+        <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/6-5/sites/administering/using/saml-2-0-authenticationhandler.html" target="_blank">키 저장소 관리</a></strong>
             <br> 저장소 내에서 관리되는 전역 트러스트 저장소, 인증서 및 키입니다.</td>
         <td></td>
         <td>✔</td>
@@ -319,7 +319,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
         <td>✔</td>
     </tr>
     <tr>
-        <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/csrf-protection.html" target="_blank"><strong>CSRF</strong> <strong>보호</strong></a>
+        <td><a href="https://helpx.adobe.com/kr/experience-manager/6-5/sites/developing/using/csrf-protection.html" target="_blank"><strong>CSRF</strong> <strong>보호</strong></a>
             <br> 사이트 간 요청 위조 보호를 즉시 사용할 수 있습니다.</td>
         <td></td>
         <td></td>
@@ -330,7 +330,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
         <td>✔</td>
     </tr>
     <tr>
-        <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/saml-2-0-authenticationhandler.html" target="_blank"><strong>CORS</strong> <strong>지원</strong></a>
+        <td><a href="https://helpx.adobe.com/kr/experience-manager/6-5/sites/administering/using/saml-2-0-authenticationhandler.html" target="_blank"><strong>CORS</strong> <strong>지원</strong></a>
             <br> 원본 간 리소스 공유 지원을 통해 응용 프로그램의 유연성을 높일 수 있습니다.</td>
         <td></td>
         <td></td>
@@ -341,7 +341,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
         <td>✔</td>
     </tr>
     <tr>
-        <td><strong><a href="https://experienceleague.adobe.com/docs/" target="_blank">향상된 SAML 인증 지원</a><br>
+        <td><strong><a href="https://experienceleague.adobe.com/docs/?lang=ko" target="_blank">향상된 SAML 인증 지원</a><br>
  </strong>향상된 SAML 리디렉션, 최적화된 그룹 정보 및 키 암호화 문제가 해결되었습니다.
             <br>
         </td>
@@ -354,7 +354,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
         <td>✔</td>
     </tr>
     <tr>
-        <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ldap-config.html" target="_blank">OSGi 구성으로서의 LDAP</a><br>
+        <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/6-5/sites/administering/using/ldap-config.html" target="_blank">OSGi 구성으로서의 LDAP</a><br>
  </strong>LDAP 인증 관리 및 업데이트를 간소화합니다.</td>
         <td></td>
         <td>✔</td>
@@ -376,7 +376,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
         <td>✔</td>
     </tr>
     <tr>
-        <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/user-group-ac-admin.html" target="_blank">CUG 개선 사항</a><br>
+        <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/6-5/sites/administering/using/user-group-ac-admin.html" target="_blank">CUG 개선 사항</a><br>
  성능 및 확장성 문제를 해결하기 위해 </strong>폐쇄형 사용자 그룹 구현이 다시 작성되었습니다.</td>
         <td></td>
         <td></td>
@@ -398,7 +398,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
         <td>✔</td>
     </tr>
     <tr>
-        <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/encapsulated-token.html" target="_blank">압축된 토큰 지원</a></strong>
+        <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/6-5/sites/administering/using/encapsulated-token.html" target="_blank">압축된 토큰 지원</a></strong>
             <br> 게시 인스턴스 간 수평 인증을 지원하기 위해 "고정" 세션이 더 이상 필요하지 않습니다.</td>
         <td> </td>
         <td> </td>
@@ -409,7 +409,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
         <td>✔</td>
     </tr>
     <tr>
-        <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ims-config-and-admin-console.html" target="_blank">Adobe IMS 인증 지원</a><br>
+        <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/6-5/sites/administering/using/ims-config-and-admin-console.html" target="_blank">Adobe IMS 인증 지원</a><br>
  </strong>Adobe Managed Services(AMS)만 사용할 수 있으며 Adobe IMS(Identity Management System)를 통해 AEM 작성자 인스턴스에 대한 액세스를 중앙에서 관리합니다.</td>
         <td> </td>
         <td> </td>
@@ -426,7 +426,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
 
 다음은 AEM에서 제공하는 주요 Sites 기능의 매트릭스입니다. 이러한 기능 중 일부는 각 릴리스에 추가된 이전 버전의 증분 개선 사항에 도입되었습니다.
 
-+ [AEM Sites 릴리스 노트](https://helpx.adobe.com/experience-manager/6-5/release-notes/sites.html)
++ [AEM Sites 릴리스 노트](https://helpx.adobe.com/kr/experience-manager/6-5/release-notes/sites.html)
 
 이 버전의 기능에 대한 중요한 개선 사항이 ***✔<sup>+</sup>개 있습니다.***
 
@@ -458,7 +458,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/responsive-layout.html" target="_blank">응답형 사이트 작성</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/6-5/sites/authoring/using/responsive-layout.html" target="_blank">응답형 사이트 작성</a>:</strong>
                 레이아웃 모드를 사용하면 편집기에서 응답형 사이트의 장치 너비에 따라 구성 요소의 크기를 조정할 수 있습니다.</td>
             <td></td>
             <td></td>
@@ -480,7 +480,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/core-components/user-guide.html" target="_blank">핵심 구성 요소</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/core-components/user-guide.html" target="_blank">핵심 구성 요소</a>:</strong>
             사이트 개발을 가속화합니다. 빈번한 릴리스 일정과 유연성을 위해 GitHub에서 사용할 수 있습니다.</td>
             <td> </td>
             <td> </td>
@@ -491,7 +491,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/spa-overview.html" target="_blank">SPA 편집기</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/6-5/sites/developing/using/spa-overview.html" target="_blank">SPA 편집기</a>:</strong>
             React를 기반으로 구축된 단일 페이지 애플리케이션(SPA) 프레임워크를 사용하여 작성 가능한 웹 경험을 만듭니다.</td>
             <td> </td>
             <td> </td>
@@ -513,7 +513,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm.html" target="_blank">다중 사이트 관리자(MSM)</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/6-5/sites/administering/using/msm.html" target="_blank">다중 사이트 관리자(MSM)</a>:</strong>
             공통 콘텐츠를 공유하는 여러 웹 사이트(즉, 다국어, 여러 브랜드)를 관리합니다.</td>
             <td>✔</td>
             <td>✔</td>
@@ -524,7 +524,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/translation.html" target="_blank">콘텐츠 번역</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/6-5/sites/administering/using/translation.html" target="_blank">콘텐츠 번역</a>:</strong>
             플러그 앤 플레이 프레임워크는 업계 최고의 타사 번역 서비스와 통합됩니다.</td>
             <td></td>
             <td></td>
@@ -535,7 +535,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/contexthub.html" target="_blank">ContextHub</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/6-5/sites/developing/using/contexthub.html" target="_blank">ContextHub</a>:</strong>
             콘텐츠의 개인화를 위한 차세대 Client Context Framework.</td>
             <td></td>
             <td>✔</td>
@@ -546,7 +546,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/launches.html" target="_blank">시작</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/6-5/sites/authoring/using/launches.html" target="_blank">시작</a>:</strong>
             일상적인 작성을 중단하지 않고 향후 릴리스를 위한 콘텐츠를 개발할 수 있습니다.</td>
             <td>✔</td>
             <td>✔</td>
@@ -601,7 +601,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/content-targeting-touch.html" target="_blank">Adobe Target 통합</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/6-5/sites/authoring/using/content-targeting-touch.html" target="_blank">Adobe Target 통합</a>:</strong>
             단계별 마법사: 타겟팅된 경험을 만들고 재사용 가능한 오퍼 라이브러리를 만듭니다.</td>
             <td> </td>
             <td> </td>
@@ -612,7 +612,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaign.html" target="_blank">Adobe Campaign 통합</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/6-5/sites/administering/using/campaign.html" target="_blank">Adobe Campaign 통합</a>:</strong>
             차세대 이메일 캠페인 솔루션과 쉽게 통합됩니다.</td>
             <td> </td>
             <td>✔</td>
@@ -645,7 +645,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ecommerce.html" target="_blank">전자 상거래</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/6-5/sites/administering/using/ecommerce.html" target="_blank">전자 상거래</a>:</strong>
             웹, 모바일 및 소셜 터치포인트 전반에 걸쳐 브랜딩되고 개인화된 쇼핑 경험을 제공합니다.
             </td>
             <td>✔</td>
@@ -657,7 +657,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/overview.html" target="_blank">커뮤니티</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/6-5/communities/using/overview.html" target="_blank">커뮤니티</a>:</strong>
             포럼, 스레드된 주석, 이벤트 캘린더 및 기타 다양한 기능을 통해 사이트 방문자와 긴밀하게 소통할 수 있습니다.</td>
             <td>✔</td>
             <td>✔</td>
@@ -674,7 +674,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
 
 다음은 AEM에서 제공하는 주요 Assets 기능 매트릭스입니다. 이러한 기능 중 일부는 각 릴리스에 추가된 이전 버전의 증분 개선 사항에 도입되었습니다.
 
-+ [AEM Assets 릴리스 노트](https://helpx.adobe.com/experience-manager/6-5/release-notes/assets.html)
++ [AEM Assets 릴리스 노트](https://helpx.adobe.com/kr/experience-manager/6-5/release-notes/assets.html)
 
 ***✔은(는) 이 버전의 기능에 대한 중요한 개선 사항을 나타냅니다.***
 
@@ -695,7 +695,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
     </thead>
     <tbody>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/managing-assets-touch-ui.html" target="_blank">터치에 적합한 UI</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/6-5/assets/using/managing-assets-touch-ui.html" target="_blank">터치에 적합한 UI</a>:</strong>
             데스크탑 컴퓨터나 터치 지원 장치에서 자산을 관리합니다.</td>
             <td> </td>
             <td>✔</td>
@@ -706,7 +706,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/metadata.html" target="_blank">고급 메타데이터 관리</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/6-5/assets/using/metadata.html" target="_blank">고급 메타데이터 관리</a>:</strong>
             메타데이터 템플릿, 메타데이터 스키마 편집기 및 벌크 메타데이터 편집.</td>
             <td> </td>
             <td>✔</td>
@@ -717,7 +717,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/task-content.html" target="_blank">작업</a> 및 워크플로 관리:</strong>
+            <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/6-5/sites/authoring/using/task-content.html" target="_blank">작업</a> 및 워크플로 관리:</strong>
             AEM 프로젝트를 활용하는 디지털 에셋의 검토 및 승인을 위해 사전 빌드된 워크플로우 및 작업입니다.</td>
             <td> </td>
             <td>✔</td>
@@ -739,7 +739,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/mac-api-assets.html" target="_blank">Assets HTTP API</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/6-5/assets/using/mac-api-assets.html" target="_blank">Assets HTTP API</a>:</strong>
             HTTP 및 JSON을 통해 자산과 프로그래밍 방식으로 상호 작용합니다.</td>
             <td> </td>
             <td> </td>
@@ -750,7 +750,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/link-sharing.html" target="_blank">링크 공유</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/6-5/assets/using/link-sharing.html" target="_blank">링크 공유</a>:</strong>
             로그인할 필요 없이 디지털 에셋을 간편하게 임시로 공유</td>
             <td> </td>
             <td> </td>
@@ -761,7 +761,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal.html" target="_blank">Brand Portal</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/brand-portal/using/brand-portal.html" target="_blank">Brand Portal</a>:</strong>
             디지털 에셋의 원활한 공유 및 배포를 위한 클라우드 서비스 SAAS 솔루션입니다.</td>
             <td> </td>
             <td> </td>
@@ -772,7 +772,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/use-assets-across-connected-assets-instances.html" target="_blank">연결된 Assets</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/6-5/assets/using/use-assets-across-connected-assets-instances.html" target="_blank">연결된 Assets</a>:</strong>
             AEM Sites 인스턴스는 다른 AEM Assets 인스턴스의 자산에 원활하게 액세스하고 사용할 수 있습니다.</td>
             <td> </td>
             <td> </td>
@@ -783,7 +783,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/touch-ui-asset-insights.html" target="_blank">자산 통찰력</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/6-5/assets/using/touch-ui-asset-insights.html" target="_blank">자산 통찰력</a>:</strong>
             Adobe Analytics을 활용하여 AEM에서 디지털 에셋과 보기의 고객 상호 작용을 캡처합니다.</td>
             <td> </td>
             <td> </td>
@@ -794,7 +794,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/multilingual-assets.html" target="_blank">다국어 Assets</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/6-5/assets/using/multilingual-assets.html" target="_blank">다국어 Assets</a>:</strong>
             언어 루트를 사용하여 자산 메타데이터의 번역을 자동으로 지원합니다.</td>
             <td> </td>
             <td> </td>
@@ -805,7 +805,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/enhanced-smart-tags.html" target="_blank">스마트 태그 및 중재</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/6-5/assets/using/enhanced-smart-tags.html" target="_blank">스마트 태그 및 중재</a>:</strong>
             Adobe AI를 활용하여 유용한 메타데이터로 이미지에 자동으로 태그를 지정합니다.</td>
             <td> </td>
             <td></td>
@@ -827,7 +827,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/indesign.html" target="_blank">Adobe InDesign Server 통합</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/6-5/assets/using/indesign.html" target="_blank">Adobe InDesign Server 통합</a>:</strong>
             제품 카탈로그를 생성합니다. InDesign 템플릿을 기반으로 브로셔, 전단지 및 인쇄 광고를 만들 수 있습니다.</td>
             <td> </td>
             <td> </td>
@@ -850,7 +850,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/imaging-transcoding-library.html" target="_blank">Adobe 이미징 라이브러리</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/6-5/assets/using/imaging-transcoding-library.html" target="_blank">Adobe 이미징 라이브러리</a>:</strong>
                 <br> Photoshop 및 Acrobat PDF 라이브러리가 고품질 파일 조작에 사용되었습니다.</td>
             <td> </td>
             <td> </td>
@@ -872,7 +872,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/aem-assets-adobe-stock.html" target="_blank">Adobe Stock 통합</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/6-5/assets/using/aem-assets-adobe-stock.html" target="_blank">Adobe Stock 통합</a>:</strong>
             AEM에서 직접 Adobe Stock 이미지에 원활하게 액세스하고 사용합니다.</td>
             <td> </td>
             <td> </td>
@@ -907,7 +907,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
     </thead>
     <tbody>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/managing-assets.html" target="_blank">이미징</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/6-5/assets/using/managing-assets.html" target="_blank">이미징</a>:</strong>
             스마트 자르기를 포함하여 다양한 크기와 형식으로 이미지를 동적으로 제공합니다.</td>
             <td> </td>
             <td></td>
@@ -918,7 +918,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/video-profiles.html" target="_blank">비디오</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/6-5/assets/using/video-profiles.html" target="_blank">비디오</a>:</strong>
             고급 비디오 인코딩 및 응용 비디오 스트리밍</td>
             <td> </td>
             <td>✔</td>
@@ -929,7 +929,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/interactive-images.html" target="_blank">대화형 미디어</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/6-5/assets/using/interactive-images.html" target="_blank">대화형 미디어</a>:</strong>
             주요 오퍼를 선보일 수 있는 클릭 가능한 콘텐츠가 있는 대화형 배너, 비디오를 만듭니다.
             </td>
             <td> </td>
@@ -941,7 +941,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong>집합(<a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/image-sets.html" target="_blank">이미지</a>, <a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/spin-sets.html" target="_blank">회전</a>, <a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/mixed-media-sets.html" target="_blank">혼합 미디어</a>):</strong>
+            <td><strong>집합(<a href="https://helpx.adobe.com/kr/experience-manager/6-5/assets/using/image-sets.html" target="_blank">이미지</a>, <a href="https://helpx.adobe.com/kr/experience-manager/6-5/assets/using/spin-sets.html" target="_blank">회전</a>, <a href="https://helpx.adobe.com/kr/experience-manager/6-5/assets/using/mixed-media-sets.html" target="_blank">혼합 미디어</a>):</strong>
             사용자가 360도 보기 환경을 확대/축소, 패닝, 회전 및 시뮬레이션할 수 있습니다.</td>
             <td> </td>
             <td>✔</td>
@@ -952,7 +952,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://experienceleague.adobe.com/docs/" target="_blank">뷰어</a>:</strong>
+            <td><strong><a href="https://experienceleague.adobe.com/docs/?lang=ko" target="_blank">뷰어</a>:</strong>
             다양한 화면/장치를 지원하는 사용자 지정 브랜드 리치 미디어 플레이어 및 사전 설정입니다.</td>
             <td> </td>
             <td>✔</td>
@@ -963,7 +963,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/delivering-dynamic-media-assets.html" target="_blank">배달</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/6-5/assets/using/delivering-dynamic-media-assets.html" target="_blank">배달</a>:</strong>
             HTTP/2 프로토콜을 통해 Dynamic Media 콘텐츠를 연결 또는 포함하고 전달하기 위한 유연한 옵션입니다.</td>
             <td> </td>
             <td>✔</td>
@@ -1010,7 +1010,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
     </thead>
     <tbody>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html" target="_blank">적응형 Forms 편집기</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/6-5/forms/using/introduction-forms-authoring.html" target="_blank">적응형 Forms 편집기</a>:</strong>
             장치 및 브라우저 설정을 기반으로 매력적인 반응형 적응형 양식을 만듭니다.</td>
             <td> </td>
             <td>✔</td>
@@ -1021,7 +1021,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.html" target="_blank">기록 문서</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/6-5/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.html" target="_blank">기록 문서</a>:</strong>
             문서를 만들어 데이터 캡처 환경을 장기간 저장하거나 인쇄 준비 버전을 저장할 수 있습니다.</td>
             <td> </td>
             <td>✔</td>
@@ -1032,7 +1032,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html" target="_blank">테마 편집기</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/6-5/forms/using/themes.html" target="_blank">테마 편집기</a>:</strong>
             재사용 가능한 테마를 만들어 양식의 구성 요소 및 패널의 스타일을 지정합니다.</td>
             <td> </td>
             <td> </td>
@@ -1043,7 +1043,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html" target="_blank">템플릿 편집기</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/6-5/forms/using/template-editor.html" target="_blank">템플릿 편집기</a>:</strong>
             적응형 양식에 대한 모범 사례를 표준화하고 구현합니다.</td>
             <td> </td>
             <td> </td>
@@ -1054,7 +1054,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/aem-forms/6-5/whats-new.html#EnhancedintegrationwithAdobeSign" target="_blank">Acrobat Sign 통합</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/kr/aem-forms/6-5/whats-new.html#EnhancedintegrationwithAdobeSign" target="_blank">Acrobat Sign 통합</a>:</strong>
             서명 시나리오를 기반으로 Acrobat Sign 통합 양식을 배포할 수 있습니다.</td>
             <td> </td>
             <td> </td>
@@ -1065,7 +1065,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/cm-overview.html" target="_blank">서신 관리</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/6-5/forms/using/cm-overview.html" target="_blank">서신 관리</a>:</strong>
             AEM Forms을 사용하면 개인화되고 인터랙티브한 고객 서신을 생성, 관리 및 제공할 수 있습니다.
             </td>
             <td> </td>
@@ -1077,7 +1077,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/aem-forms/6-5/whats-new.html#AEMFormsdataintegration" target="_blank">타사 데이터 통합</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/kr/aem-forms/6-5/whats-new.html#AEMFormsdataintegration" target="_blank">타사 데이터 통합</a>:</strong>
             데이터 통합을 사용하면 양식의 사용자 입력을 기반으로 다양한 데이터 소스에서 데이터를 가져옵니다. 양식 제출 시 캡처된 데이터가 데이터 소스에 다시 기록됩니다.
             </td>
             <td> </td>
@@ -1089,7 +1089,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td>Forms 처리를 위한 <strong><a href="https://helpx.adobe.com/aem-forms/6-5/whats-new.html#FormscentricAEMWorkflowsforAEMFormsonOSGi" target="_blank">워크플로(OSGi 기반)</a>:</strong>
+            <td>Forms 처리를 위한 <strong><a href="https://helpx.adobe.com/kr/aem-forms/6-5/whats-new.html#FormscentricAEMWorkflowsforAEMFormsonOSGi" target="_blank">워크플로(OSGi 기반)</a>:</strong>
             양식 승인 프로세스의 배포를 단순화합니다.</td>
             <td> </td>
             <td> </td>
@@ -1111,7 +1111,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-managing-forms.html" target="_blank">양식 관리자</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/6-5/forms/using/introduction-managing-forms.html" target="_blank">양식 관리자</a>:</strong>
             분석, 번역, A/B 테스트, 검토 및 게시와 같은 모든 양식/문서/서신을 관리할 수 있는 단일 위치입니다.
             </td>
             <td> </td>
@@ -1123,7 +1123,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/aem-forms-app.html" target="_blank">AEM Forms 앱</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/kr/experience-manager/6-5/forms/using/aem-forms-app.html" target="_blank">AEM Forms 앱</a>:</strong>
             iOS, Android 또는 Windows의 앱 내에서 온라인/오프라인 양식 처리를 허용합니다.</td>
             <td> </td>
             <td>✔</td>
@@ -1134,7 +1134,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/aem-forms/6-5/adaptive-document.html" target="_blank">대화형 통신</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/kr/aem-forms/6-5/adaptive-document.html" target="_blank">대화형 통신</a>:</strong>
             차트(이전의 적응형 문서)와 같은 대화형 요소를 사용하여 타깃팅된 문과 같은 풍부한 커뮤니케이션을 생성합니다.</td>
             <td> </td>
             <td> </td>
@@ -1156,7 +1156,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/aem-forms/6-5/whats-new.html#EnhancedDocumentSecurity" target="_blank">AEM Forms 문서 보안</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/kr/aem-forms/6-5/whats-new.html#EnhancedDocumentSecurity" target="_blank">AEM Forms 문서 보안</a>:</strong>
             PDF 및 Office 문서의 보안 액세스 및 권한 부여.
             </td>
             <td> </td>
@@ -1168,7 +1168,7 @@ Adobe Managed Services(AMS) 고객만 이용할 수 있는 [Cloud Manager](https
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/aem-forms/6-5/whats-new.html#Simplifiedauthoringexperience" target="_blank">프레임워크 테스트</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/kr/aem-forms/6-5/whats-new.html#Simplifiedauthoringexperience" target="_blank">프레임워크 테스트</a>:</strong>
             Calvin 프레임워크 및 Chrome 플러그인을 사용하여 적응형 양식을 지원하고 디버깅합니다.</td>
             <td> </td>
             <td> </td>

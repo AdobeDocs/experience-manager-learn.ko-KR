@@ -140,7 +140,7 @@ Adobe Target 구성을 경험 조각과 연결하여 Target에서 오퍼로 내�
 
 ## 추가 리소스
 
-- [Target API 개요](https://experienceleague.adobe.com/en/docs/target-dev/developer/api/target-api-overview)
-- [오퍼 타깃팅](https://experienceleague.adobe.com/en/docs/target/using/experiences/offers/manage-content)
+- [Target API 개요](https://experienceleague.adobe.com/ko/docs/target-dev/developer/api/target-api-overview)
+- [오퍼 타깃팅](https://experienceleague.adobe.com/ko/docs/target/using/experiences/offers/manage-content)
 - [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/)
-- [AEM의 경험 조각](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use)
+- [AEM의 경험 조각](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use)
