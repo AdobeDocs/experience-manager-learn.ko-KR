@@ -23,4 +23,4 @@ ht-degree: 2%
 
 AEM의 콘텐츠 조각 콘솔 및 편집기를 사용하여 참조된 콘텐츠를 쉽게 이해하고 관리하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3420950/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3423641/?captions=kor&learn=on)

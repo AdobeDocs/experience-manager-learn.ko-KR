@@ -24,4 +24,4 @@ ht-degree: 0%
 
 문서 작성 사이트를 AEM으로 마이그레이션하기 위해 Edge Delivery Services Importer 도구를 사용하고 구성하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429595/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3443703/?captions=kor&learn=on)

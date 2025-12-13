@@ -46,7 +46,7 @@ Adobe CDN을 사용하는 ![사용자 지정 도메인 이름](./assets/add-cust
 
 ## SSL 인증서 생성
 
->[!VIDEO](https://video.tv.adobe.com/v/3427908?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441495?captions=kor&quality=12&learn=on)
 
 다음 두 가지 옵션이 있습니다.
 

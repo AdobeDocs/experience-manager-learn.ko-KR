@@ -23,7 +23,7 @@ ht-degree: 100%
 
 AEM에서 mTLS(상호 전송 계층 보안) 인증이 필요한 웹 API로 HTTPS 호출을 수행하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3424855?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447866?captions=kor&quality=12&learn=on)
 
 mTLS(양방향 TLS) 인증은 TLS 프로토콜의 보안을 강화하는 방식으로, **서버뿐만 아니라 클라이언트도 서로 인증**&#x200B;하는 과정을 거칩니다. 이러한 인증은 디지털 인증서를 사용하여 수행됩니다. 일반적으로 강력한 보안과 신원 확인이 중요한 상황에서 사용됩니다.
 

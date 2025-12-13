@@ -26,6 +26,6 @@ ht-degree: 20%
 
 Workfront 사용자 정의 양식 및 AEM 메타데이터 스키마를 사용하여 에셋 메타데이터를 관리하고 동기화하도록 Workfront 및 AEM Assets을 구성하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/340332?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3431496?captions=kor&quality=12&learn=on)
 
 _Workfront for Experience Manager 강화 커넥터에 대한 [4부 전문가 시리즈의 2부](./overview.md)_

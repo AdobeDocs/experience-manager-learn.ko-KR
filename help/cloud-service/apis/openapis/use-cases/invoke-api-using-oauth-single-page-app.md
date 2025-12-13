@@ -59,7 +59,7 @@ Adobe Developer Console(ADC) 프로젝트가 OAuth 단일 페이지 앱 인증�
 >ADC 프로젝트가 _client_secret_&#x200B;을(를) 제공하지 않습니다. 대신 SPA는 _액세스 토큰_&#x200B;에 대한 인증 코드를 안전하게 교환하기 위해 _code_verifier_ 및 _code_challenge_&#x200B;을(를) 생성합니다. 클라이언트 측에 클라이언트 암호를 저장할 필요가 없으므로 보안이 강화됩니다.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3456964?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3456971?captions=kor&quality=12&learn=on)
 
 
 

@@ -21,4 +21,4 @@ ht-degree: 100%
 
 Cloud Manager의 목적과 AEM as a Cloud Service와의 작동 방식을 살펴보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/330545?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/346170?captions=kor&quality=12&learn=on)

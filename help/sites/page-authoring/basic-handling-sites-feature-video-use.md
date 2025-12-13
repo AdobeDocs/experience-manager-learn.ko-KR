@@ -24,7 +24,7 @@ ht-degree: 15%
 
 다음 비디오에서는 AEM 작성 환경을 사용할 때 기본 처리에 대한 개요를 제공합니다. Sites 콘솔을 기본으로 사용합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/31784?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37003?captions=kor&quality=12&learn=on)
 
 이 비디오에서는 다음 기능에 대해 설명합니다.
 

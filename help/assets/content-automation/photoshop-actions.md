@@ -23,4 +23,4 @@ ht-degree: 0%
 
 컨텐츠 작성자가 컨텐츠 자동화 추가 기능과 함께 Photoshop API를 사용하여 AEM Assets 내에서 Creative Cloud 작업을 수행하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/336539?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3423926?captions=kor&quality=12&learn=on)

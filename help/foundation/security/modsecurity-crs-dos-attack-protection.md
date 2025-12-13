@@ -24,7 +24,7 @@ ht-degree: 100%
 Adobe Experience Manager(AEM) 게시 Dispatcher에서 **OWASP ModSecurity 핵심 규칙 세트(CRS)**&#x200B;를 사용하여 서비스 거부(DoS) 공격으로부터 사이트를 보호하기 위해 ModSecurity를 &#x200B;&#x200B;활성화하는 방법에 대해 알아봅니다.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3422976?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3452135?captions=kor&quality=12&learn=on)
 
 ## 개요
 

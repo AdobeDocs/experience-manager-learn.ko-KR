@@ -25,7 +25,7 @@ AEM as a Cloud Service CDN에서 캐시된 HTTP 응답을 제거하거나 제거
 
 이 자습서에서는 셀프 서비스 기능을 사용하여 샘플 [AEM WKND](https://github.com/adobe/aem-guides-wknd) 사이트의 CDN 캐시를 제거하기 위해 API 토큰 제거를 설정하고 사용하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3432948?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3436936?captions=kor&quality=12&learn=on)
 
 ## 캐시 무효화와 명시적 제거 비교
 

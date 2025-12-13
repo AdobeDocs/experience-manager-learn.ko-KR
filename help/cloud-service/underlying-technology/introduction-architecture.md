@@ -21,4 +21,4 @@ ht-degree: 100%
 
 Adobe Experience Manager의 기술 스택의 일부인 [!DNL OSGi], [!DNL JCR], [!DNL Oak] 및 [!DNL Sling] 기술을 소개합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/32034?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37045?captions=kor&quality=12&learn=on)

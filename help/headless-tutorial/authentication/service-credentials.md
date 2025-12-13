@@ -25,7 +25,7 @@ Adobe Experience Manager(AEM) as a Cloud Service과의 통합은 AEM 서비스�
 
 AEM은 Adobe Developer Console을 통해 관리되는 [S2S OAuth](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)를 사용하여 다른 Adobe 제품과 통합됩니다. 서비스 계정과의 사용자 정의 통합을 위해 AEM Developer Console에서 JWT 자격 증명을 사용 및 관리합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/330519?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/344048?captions=kor&quality=12&learn=on)
 
 서비스 자격 증명은 [로컬 개발 액세스 토큰](./local-development-access-token.md)과 비슷하게 나타날 수 있지만 몇 가지 주요 방법으로 다릅니다.
 

@@ -21,4 +21,4 @@ ht-degree: 100%
 
 Adobe Experience Manager Assets 콘텐츠 자동화를 사용하여 Photoshop 및 Lightroom 기능을 적용하는 방법에 대한 개요입니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/333197?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3416631?captions=kor&quality=12&learn=on)

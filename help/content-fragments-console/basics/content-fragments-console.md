@@ -23,4 +23,4 @@ ht-degree: 0%
 
 AEM as a Cloud Service 콘텐츠 조각 작성 콘솔의 기본 기능에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3409492?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449339?captions=kor&quality=12&learn=on)

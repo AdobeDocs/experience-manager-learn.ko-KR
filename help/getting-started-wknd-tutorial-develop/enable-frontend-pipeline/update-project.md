@@ -30,7 +30,7 @@ ht-degree: 100%
 
 ## 풀스택 AEM 프로젝트의 구성 변경 개요
 
->[!VIDEO](https://video.tv.adobe.com/v/3409419?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3453616?captions=kor&quality=12&learn=on)
 
 ## 사전 요구 사항 {#prerequisites}
 

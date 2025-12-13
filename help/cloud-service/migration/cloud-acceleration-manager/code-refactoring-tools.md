@@ -21,4 +21,4 @@ ht-degree: 12%
 
 AEM의 Code Refactoring Tools 가 기존 AEM 프로젝트를 AEM as a Cloud Service과 호환되도록 자동 변환하는 데 어떻게 도움이 되는지에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/336693?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3444722?captions=kor&quality=12&learn=on)

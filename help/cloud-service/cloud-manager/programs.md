@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Cloud Manager **프로그램**&#x200B;은(는) 논리적 비즈니스 이니셔티브를 지원하는 AEM 환경 집합을 나타내며, 일반적으로 구매된 Service level agreement(SLA)에 해당합니다. 예를 들어 한 프로그램은 글로벌 공개 웹 사이트를 지원하는 AEM 리소스를 나타내고 다른 프로그램은 내부 중앙 DAM을 나타낼 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/26313?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34267?captions=kor&quality=12&learn=on)

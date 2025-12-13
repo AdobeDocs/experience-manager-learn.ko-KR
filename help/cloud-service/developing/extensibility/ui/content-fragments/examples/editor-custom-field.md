@@ -22,7 +22,7 @@ ht-degree: 1%
 
 AEM 콘텐츠 조각 편집기에서 사용자 지정 필드를 만드는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3427585?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437641?captions=kor&learn=on)
 
 AEM UI 확장은 AEM의 나머지 부분과 일관된 모양과 느낌을 유지하고 사전 설치된 기능의 광범위한 라이브러리를 사용하므로 [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html) 프레임워크를 사용하여 개발해야 하며 개발 시간이 단축됩니다.
 

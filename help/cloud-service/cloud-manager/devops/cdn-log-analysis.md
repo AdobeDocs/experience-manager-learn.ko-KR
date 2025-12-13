@@ -23,7 +23,7 @@ ht-degree: 11%
 
 Adobe에서 제공하는 _AEM Cloud Service CDN 로그 분석 도구_와 이 도구를 통해 CDN 성능과 AEM 구현에 대한 통찰력을 얻는 방법에 대해 알아봅니다.
  
->[!VIDEO](https://video.tv.adobe.com/v/3429177?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3446112?captions=kor&quality=12&learn=on)
 
 ## 개요
 

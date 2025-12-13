@@ -30,7 +30,7 @@ AEM as a Cloud Service에서 _Adobe 권장_ **웹 애플리케이션 방화벽(W
 > WAF 트래픽 필터 규칙을 사용하려면 추가 **WAF-DDoS Protection** 또는 **향상된 보안** 라이선스가 필요합니다. 표준 트래픽 필터 규칙은 기본적으로 Sites 및 Forms 고객에게 제공됩니다.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3469397/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3469437/?captions=kor&quality=12&learn=on)
 
 ## 학습 목표
 

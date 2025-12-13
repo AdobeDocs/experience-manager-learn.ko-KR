@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Dispatcher 구성의 차이점 개요 및 Adobe Managed Services(AMS)에서 AEM as a Cloud Service으로 Dispatcher를 마이그레이션하기 위한 팁과 요령입니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/330556?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345898?captions=kor&quality=12&learn=on)

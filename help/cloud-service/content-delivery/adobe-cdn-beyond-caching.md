@@ -31,7 +31,7 @@ Adobe CDN은 콘텐츠 캐싱 외에 웹 사이트 성능을 최적화하는 데
 
 이러한 기능은 **셀프 서비스** 기능입니다. AEM 프로젝트의 `cdn.yaml` 파일에서 구성되고 Cloud Manager 구성 파이프라인을 사용하여 배포됩니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3433104?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3440279?captions=kor&quality=12&learn=on)
 
 ## CDN에서 트래픽 구성
 

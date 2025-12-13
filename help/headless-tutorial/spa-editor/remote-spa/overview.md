@@ -27,7 +27,7 @@ AEM SPA 편집기를 사용하여 편집 가능한 AEM 콘텐츠로 기존 React
 
 이 튜토리얼은 AEM의 GraphQL API에 대한 AEM 콘텐츠 조각 콘텐츠를 사용하는 React 앱인 [WKND GraphQL App](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ko)에서 빌드되지만 상황에 맞는 SPA 콘텐츠 작성 기능은 제공하지 않습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/333272?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3444854?captions=kor&quality=12&learn=on)
 
 ## 튜토리얼 정보
 

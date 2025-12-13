@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # 대량 속성 업데이트 예시 확장
 
->[!VIDEO](https://video.tv.adobe.com/v/3412296?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3454461?captions=kor&quality=12&learn=on)
 
 이 예제 AEM 콘텐츠 조각 콘솔 확장은 콘텐츠 조각 속성을 공통 값으로 대량 업데이트하는 [작업 표시줄](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/action-bar/) 확장입니다.
 

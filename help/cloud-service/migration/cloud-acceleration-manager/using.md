@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Cloud Acceleration Manager의 도구 사용에 대한 내레이션 설명입니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/336699?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3454677?captions=kor&quality=12&learn=on)
