@@ -300,7 +300,7 @@ AEM 반응형 그리드 SCSS 파일을 SPA에 추가합니다.
 
 다음 유틸리티 클래스에서 React 앱 프로젝트에 복사합니다.
 
-* [(으)로 ](./assets/spa-bootstrap/RoutedLink.js)RoutedLink.js`~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/react-app/src/components/editable/core/RoutedLink.js`
+* [(으)로 &#x200B;](./assets/spa-bootstrap/RoutedLink.js)RoutedLink.js`~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/react-app/src/components/editable/core/RoutedLink.js`
 * [EditorPlaceholder.js](./assets/spa-bootstrap/EditorPlaceholder.js)에서 `~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/react-app/src/components/editable/core/util/EditorPlaceholder.js`(으)로
 * [withConditionalPlaceholder.js](./assets/spa-bootstrap/withConditionalPlaceholder.js)에서 `~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/react-app/src/components/editable/core/util/withConditionalPlaceholder.js`(으)로
 * [withStandardBaseCssClass.js](./assets/spa-bootstrap/withStandardBaseCssClass.js)에서 `~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/react-app/src/components/editable/core/util/withStandardBaseCssClass.js`(으)로

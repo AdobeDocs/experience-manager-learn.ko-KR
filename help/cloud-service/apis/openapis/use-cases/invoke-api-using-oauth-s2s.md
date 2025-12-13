@@ -81,7 +81,7 @@ _Setup OpenAPI 기반 AEM API_&#x200B;에서 ADC 프로젝트 구성 단계가 [
 
    ![API 추가](../assets/s2s/add-api.png)
 
-1. _API 추가_ 대화 상자에서 _Experience Cloud_&#x200B;별로 필터링하고 **AEM Assets 작성자 API** 카드를 선택한 후 **다음**을 클릭합니다.
+1. _API 추가_ 대화 상자에서 _Experience Cloud_&#x200B;별로 필터링하고 **AEM Assets 작성자 API** 카드를 선택한 후 **다음**&#x200B;을 클릭합니다.
 다른 OpenAPI 기반 AEM API가 필요한 경우 [Adobe Developer 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/#openapi-based-apis)를 참조하여 사용 사례와 일치하는 API를 찾으십시오.
 
    아래 예제는 **AEM Assets 작성자 API**&#x200B;를 추가하는 방법을 안내합니다.

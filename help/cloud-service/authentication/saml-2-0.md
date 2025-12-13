@@ -366,7 +366,7 @@ SAML 구성이 환경마다 다른 경우 환경당 OSGi 구성(`config.publish.
 
 + `useEncryption`이(가) `true`(으)로 설정됨
 + `spPrivateKeyAlias`에 SAML 통합에서 사용하는 개인 키에 대한 키 저장소 항목 별칭이 포함되어 있습니다.
-+ `keyStorePassword`에 [ 사용자 키 저장소의 암호를 포함하는 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#secret-configuration-values)OSGi 비밀 구성 변수`authentication-service`이(가) 있습니다.
++ `keyStorePassword`에 [&#x200B; 사용자 키 저장소의 암호를 포함하는 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#secret-configuration-values)OSGi 비밀 구성 변수`authentication-service`이(가) 있습니다.
 
 +++
 
@@ -597,7 +597,7 @@ SAML 인증은 다음 형식으로 HTTP GET 요청을 만들어 호출할 수 �
 
 | 쿼리 매개 변수 이름 | 쿼리 매개 변수 값 |
 |----------------------|-----------------------|
-| `resource` | SAML 인증 핸들러인 모든 JCR 경로 또는 하위 경로는 [Adobe Granite SAML 2.0 Authentication Handler OSGi 구성의 ](#configure-saml-2-0-authentication-handler) `path` 속성에 정의된 대로 수신합니다. |
+| `resource` | SAML 인증 핸들러인 모든 JCR 경로 또는 하위 경로는 [Adobe Granite SAML 2.0 Authentication Handler OSGi 구성의 &#x200B;](#configure-saml-2-0-authentication-handler) `path` 속성에 정의된 대로 수신합니다. |
 | `saml_request_path` | SAML 인증이 성공한 후 사용자가 이동해야 하는 URL 경로입니다. |
 
 예를 들어 이 HTML 링크는 SAML 로그인 흐름을 트리거하고 성공 시 사용자를 `/content/wknd/us/en/protected/page.html`(으)로 이동합니다. 이러한 쿼리 매개 변수는 필요에 따라 프로그래밍 방식으로 설정할 수 있습니다.
@@ -618,7 +618,7 @@ SAML 인증은 다음 형식으로 HTTP POST 요청을 만들어 호출할 수 �
 
 | 양식 데이터 이름 | 양식 데이터 값 |
 |----------------------|-----------------------|
-| `resource` | SAML 인증 핸들러인 모든 JCR 경로 또는 하위 경로는 [Adobe Granite SAML 2.0 Authentication Handler OSGi 구성의 ](#configure-saml-2-0-authentication-handler) `path` 속성에 정의된 대로 수신합니다. |
+| `resource` | SAML 인증 핸들러인 모든 JCR 경로 또는 하위 경로는 [Adobe Granite SAML 2.0 Authentication Handler OSGi 구성의 &#x200B;](#configure-saml-2-0-authentication-handler) `path` 속성에 정의된 대로 수신합니다. |
 | `saml_request_path` | SAML 인증이 성공한 후 사용자가 이동해야 하는 URL 경로입니다. |
 
 

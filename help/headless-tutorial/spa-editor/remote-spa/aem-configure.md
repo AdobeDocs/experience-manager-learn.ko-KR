@@ -137,7 +137,7 @@ AEM이 SPA 편집기에서 원격 SPA를 로드하려면 SPA의 경로와, 컨�
 
 이 구성의 중요성은 나중에 알아봅니다.
 
-매핑은 [에 정의된 ](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html#root-level-mappings-1)Sling 매핑`/etc/map`으로 수행할 수 있습니다.
+매핑은 [에 정의된 &#x200B;](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html#root-level-mappings-1)Sling 매핑`/etc/map`으로 수행할 수 있습니다.
 
 1. IDE에서 `ui.content` 하위 프로젝트를 엽니다.
 1. `src/main/content/jcr_root`(으)로 이동

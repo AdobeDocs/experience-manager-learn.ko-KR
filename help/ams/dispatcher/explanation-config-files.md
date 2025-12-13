@@ -249,7 +249,7 @@ RewriteRule ^/logo.jpg$ /content/dam/weretail/general/logo.jpg [NC,PT]
 
 ### AMS 팜에는 다음이 포함됩니다
 
-![<FILENAME>_farms.any에 하위 .any 파일이 포함되어 팜 구성을 완료합니다.  이 그림에서는 팜에 각 최상위 섹션 파일 캐시, clientheaders, filter, renders 및 vhosts .any files](assets/explanation-config-files/Apache-Webserver-AMS-Farm-Includes.png "Apache-Webserver-AMS-Farm-Includes")가 포함되어 있음을 알 수 있습니다.
+![&lt;FILENAME>_farms.any에 하위 .any 파일이 포함되어 팜 구성을 완료합니다.  이 그림에서는 팜에 각 최상위 섹션 파일 캐시, clientheaders, filter, renders 및 vhosts .any files](assets/explanation-config-files/Apache-Webserver-AMS-Farm-Includes.png "Apache-Webserver-AMS-Farm-Includes")가 포함되어 있음을 알 수 있습니다.
 
 `/etc/httpd/conf.dispatcher.d/available_farms/` 디렉터리의 FILENAME_farm.any 파일이 `/etc/httpd/conf.dispatcher.d/enabled_farms/` 디렉터리에 심볼릭 링크되면 실행 중인 구성에서 사용됩니다.
 

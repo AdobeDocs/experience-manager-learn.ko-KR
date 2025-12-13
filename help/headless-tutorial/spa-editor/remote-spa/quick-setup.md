@@ -87,8 +87,8 @@ AEM SDK은 [http://localhost:4502](http://localhost:4502)에 시작되고 자동
 
 빠른 설정을 수행하기 위해 자습서의 최종 AEM 구성 및 콘텐츠가 포함된 AEM 패키지가 여기에 제공됩니다.
 
-1. [다운로드 ](./assets/quick-setup/wknd-app.all-1.0.0-SNAPSHOT.zip)
-1. [다운로드 ](./assets/quick-setup/wknd-app.ui.content.sample-1.0.1.zip)
+1. [다운로드 &#x200B;](./assets/quick-setup/wknd-app.all-1.0.0-SNAPSHOT.zip)
+1. [다운로드 &#x200B;](./assets/quick-setup/wknd-app.ui.content.sample-1.0.1.zip)
 1. [http://localhost:4502/crx/packmgr](http://localhost:4502/crx/packmgr)의 AEM SDK 패키지 관리자에 `admin` 자격 증명으로 로그인합니다.
 1. 1단계에서 다운로드한 __을(를)__&#x200B;업로드`wknd-app.all.x.x.x.zip`
 1. __항목의__&#x200B;설치`wknd-app.all.x.x.x.zip` 단추를 탭합니다.

@@ -86,7 +86,7 @@ Cloud Manager API를 사용하여 전용 이그레스 IP 주소를 활성화할 
 
 1. 먼저 Cloud Manager API [listRegions](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) 작업을 사용하여 고급 네트워킹이 필요한 지역을 결정합니다. 후속 Cloud Manager API를 호출하려면 `region name`이(가) 필요합니다. 일반적으로 프로덕션 환경이 있는 영역이 사용됩니다.
 
-   [환경의 세부 정보](https://my.cloudmanager.adobe.com)에서 [Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments)의 AEM as a Cloud Service 환경 지역을 찾으십시오. Cloud Manager에 표시되는 지역 이름은 Cloud Manager API에서 사용되는 지역 코드 [에 ](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments)매핑될 수 있습니다.
+   [환경의 세부 정보](https://my.cloudmanager.adobe.com)에서 [Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments)의 AEM as a Cloud Service 환경 지역을 찾으십시오. Cloud Manager에 표시되는 지역 이름은 Cloud Manager API에서 사용되는 지역 코드 [에 &#x200B;](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments)매핑될 수 있습니다.
 
    __listRegions HTTP 요청__
 
@@ -172,7 +172,7 @@ Cloud Manager API를 사용하여 전용 이그레스 IP 주소를 활성화할 
    }
    ```
 
-   전용 이그레스 IP 주소 구성의 HTTP 시그니처는 선택적 [ 구성도 지원한다는 점에서 ](./flexible-port-egress.md#enable-dedicated-egress-ip-address-per-environment)유연한 이그레스 포트`nonProxyHosts`와 다릅니다.
+   전용 이그레스 IP 주소 구성의 HTTP 시그니처는 선택적 [&#x200B; 구성도 지원한다는 점에서 &#x200B;](./flexible-port-egress.md#enable-dedicated-egress-ip-address-per-environment)유연한 이그레스 포트`nonProxyHosts`와 다릅니다.
 
    `nonProxyHosts`은(는) 포트 80 또는 443이 전용 이그레스 IP가 아닌 기본 공유 IP 주소 범위를 통해 라우팅되어야 하는 호스트 집합을 선언합니다. 공유 IP를 통해 이그레스되는 트래픽이 Adobe에서 자동으로 최적화되므로 `nonProxyHosts`이(가) 유용할 수 있습니다.
 
@@ -196,7 +196,7 @@ Cloud Manager API를 사용하여 전용 이그레스 IP 주소를 활성화할 
 
 1. Cloud Manager API [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) 작업을 사용하여 전용 이그레스 IP 주소 구성을 업데이트할 수 있습니다. `enableEnvironmentAdvancedNetworkingConfiguration`은(는) `PUT` 작업이므로 이 작업을 호출할 때마다 모든 규칙을 제공해야 합니다.
 
-1. __호스트에서 DNS Resolver(예:__ DNSChecker.org[)를 사용하거나 명령줄에서 ](https://dnschecker.org/)을(를) 실행하여 `p{programId}.external.adobeaemcloud.com`전용 이그레스 IP 주소`dig`을(를) 가져옵니다.
+1. __호스트에서 DNS Resolver(예:__ DNSChecker.org[)를 사용하거나 명령줄에서 &#x200B;](https://dnschecker.org/)을(를) 실행하여 `p{programId}.external.adobeaemcloud.com`전용 이그레스 IP 주소`dig`을(를) 가져옵니다.
 
    ```shell
    $ dig +short p{programId}.external.adobeaemcloud.com

@@ -35,9 +35,9 @@ AEM 프로젝트를 빌드하고 배포할 때 공용 Maven 저장소에서 *사
 
 예:
 
-- [AEM WCM 핵심 구성 요소](https://github.com/adobe/aem-core-wcm-components) **번들**&#x200B;이(가) [WKND 프로젝트의 ](https://github.com/adobe/aem-guides-wknd/blob/main/pom.xml#L747-L753) `pom.xml` 파일에 종속성으로 추가되었습니다. 여기서 `provided` 범위는 AEM 런타임에서 AEM WCM 핵심 구성 요소 번들을 제공할 때 사용됩니다. AEM 런타임에서 번들을 제공하지 않으면 `compile` 범위를 사용하게 되며 기본 범위입니다.
+- [AEM WCM 핵심 구성 요소](https://github.com/adobe/aem-core-wcm-components) **번들**&#x200B;이(가) [WKND 프로젝트의 &#x200B;](https://github.com/adobe/aem-guides-wknd/blob/main/pom.xml#L747-L753) `pom.xml` 파일에 종속성으로 추가되었습니다. 여기서 `provided` 범위는 AEM 런타임에서 AEM WCM 핵심 구성 요소 번들을 제공할 때 사용됩니다. AEM 런타임에서 번들을 제공하지 않으면 `compile` 범위를 사용하게 되며 기본 범위입니다.
 
-- [WKND 공유](https://github.com/adobe/aem-guides-wknd-shared) **패키지**&#x200B;가 [WKND 프로젝트의 ](https://github.com/adobe/aem-guides-wknd/blob/main/pom.xml#L767-L773) `pom.xml` 파일에 종속성으로 추가되었습니다.
+- [WKND 공유](https://github.com/adobe/aem-guides-wknd-shared) **패키지**&#x200B;가 [WKND 프로젝트의 &#x200B;](https://github.com/adobe/aem-guides-wknd/blob/main/pom.xml#L767-L773) `pom.xml` 파일에 종속성으로 추가되었습니다.
 
 
 
@@ -77,7 +77,7 @@ AEM 프로젝트를 빌드하고 배포할 때 공용 Maven 저장소에서 *사
 
 ## AEM 프로젝트에 서드파티 번들 설치{#install-third-party-bundle}
 
-공개 Maven 저장소에서 [사용할 수 없는 데모 OSGi ](./assets/install-third-party-articafcts/my-example-bundle.zip)my-example-bundle _을(를) AEM WKND 프로젝트에 설치 및 사용하겠습니다_.
+공개 Maven 저장소에서 [사용할 수 없는 데모 OSGi &#x200B;](./assets/install-third-party-articafcts/my-example-bundle.zip)my-example-bundle _을(를) AEM WKND 프로젝트에 설치 및 사용하겠습니다_.
 
 **my-example-bundle**&#x200B;이(가) `HelloWorldService` OSGi 서비스를 내보냅니다. 해당 `sayHello()` 메서드가 `Hello Earth!` 메시지를 반환합니다.
 
@@ -196,7 +196,7 @@ AEM WKND 프로젝트의 [tutorial/install-third-party-bundle](https://github.co
 
 이 예에서 `my-example-jar`은(는) OSGi 번들이 아니라 Java jar 파일입니다.
 
-공개 Maven 저장소에서 [사용할 수 없는 데모 ](./assets/install-third-party-articafcts/my-example-jar.zip)my-example-jar _을(를) AEM WKND 프로젝트에 설치 및 사용하겠습니다_.
+공개 Maven 저장소에서 [사용할 수 없는 데모 &#x200B;](./assets/install-third-party-articafcts/my-example-jar.zip)my-example-jar _을(를) AEM WKND 프로젝트에 설치 및 사용하겠습니다_.
 
 **my-example-jar**&#x200B;은(는) `MyHelloWorldService` 메시지를 반환하는 `sayHello()` 메서드를 사용하는 `Hello World!` 클래스를 포함하는 Java jar 파일입니다.
 
@@ -361,7 +361,7 @@ ACS AEM Commons 패키지는 공개 Maven 저장소에서 사용할 수 있습�
 
 - POM 파일에서 ACS AEM Commons 릴리스 종속성을 주석 처리하거나 제거합니다. 종속성을 확인하려면 [AEM Maven 프로젝트에 ACS AEM Commons 추가](https://adobe-consulting-services.github.io/acs-aem-commons/pages/maven.html)를 참조하십시오.
 
-- `master`ACS AEM Commons 저장소[의 ](https://github.com/Adobe-Consulting-Services/acs-aem-commons) 분기를 로컬 컴퓨터에 복제합니다.
+- `master`ACS AEM Commons 저장소[의 &#x200B;](https://github.com/Adobe-Consulting-Services/acs-aem-commons) 분기를 로컬 컴퓨터에 복제합니다.
 
 - 다음 명령을 사용하여 ACS AEM Commons SNAPSHOT 버전을 작성합니다.
 

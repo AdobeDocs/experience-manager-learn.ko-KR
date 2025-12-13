@@ -37,7 +37,7 @@ OpenAI 또는 DALL·E 2를 사용하여 이미지를 생성하고 컨텐츠 속�
 
 ![디지털 이미지 생성을 위한 Adobe I/O Runtime 작업 흐름](./assets/digital-image-generation/flow.png){align="center"}
 
-1. 콘텐츠 조각을 선택하고 `Generate Image`작업 표시줄[에서 확장의 ](#extension-registration) 단추를 클릭하면 [모달](#modal)이 열립니다.
+1. 콘텐츠 조각을 선택하고 `Generate Image`작업 표시줄[에서 확장의 &#x200B;](#extension-registration) 단추를 클릭하면 [모달](#modal)이 열립니다.
 1. [모달](#modal)은(는) [React Spectrum](https://react-spectrum.adobe.com/react-spectrum/)을(를) 사용하여 빌드된 사용자 지정 입력 양식을 표시합니다.
 1. 양식을 제출하면 사용자가 제공한 `Image Description` 텍스트, 선택한 컨텐츠 조각 및 AEM 호스트가 [사용자 지정 Adobe I/O Runtime 작업](#adobe-io-runtime-action)으로 전송됩니다.
 1. [Adobe I/O Runtime 작업](#adobe-io-runtime-action)이 입력의 유효성을 검사합니다.

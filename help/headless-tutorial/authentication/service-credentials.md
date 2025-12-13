@@ -191,7 +191,7 @@ function getCommandLineParams() {
 
    이제 `file` 명령줄 매개 변수를 통해 전달되는 JSON 파일(로컬 개발 액세스 토큰 JSON 또는 서비스 자격 증명 JSON)에 따라 응용 프로그램에서 액세스 토큰을 가져옵니다.
 
-   서비스 자격 증명이 365일마다 만료되는 동안 JWT 및 해당 액세스 토큰은 자주 만료되며 만료되기 전에 새로 고쳐야 합니다. Adobe IMS에서 제공하는 `refresh_token` [을(를) 사용하여 ](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/OAuth/OAuth.md#access-tokens)할 수 있습니다.
+   서비스 자격 증명이 365일마다 만료되는 동안 JWT 및 해당 액세스 토큰은 자주 만료되며 만료되기 전에 새로 고쳐야 합니다. Adobe IMS에서 제공하는 `refresh_token` [을(를) 사용하여 &#x200B;](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/OAuth/OAuth.md#access-tokens)할 수 있습니다.
 
 1. 이러한 변경 사항이 적용되면 AEM Developer Console에서 서비스 자격 증명 JSON이 다운로드되어 이 `service_token.json`과(와) 동일한 폴더에 `index.js`(으)로 저장되었습니다. 이제 응용 프로그램을 실행하여 명령줄 매개 변수 `file`을(를) `service_token.json`(으)로 바꾸고 AEM에서 효과가 나타나도록 `propertyValue`을(를) 새 값으로 업데이트하겠습니다.
 

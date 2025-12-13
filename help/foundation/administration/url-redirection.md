@@ -86,7 +86,7 @@ AEM as a Cloud Service에서 이러한 리디렉션 규칙은 AEM 코드의 일�
 
 ### `Redirect` 페이지 속성
 
-`Redirect`고급 탭[의 기본 제공(OOTB) ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/page-properties.html) 페이지 속성을 사용하면 콘텐츠 작성자가 현재 페이지의 리디렉션 위치를 정의할 수 있습니다. 이 솔루션은 페이지당 리디렉션 시나리오에 가장 적합하며 페이지 리디렉션을 보고 관리할 중앙 위치가 없습니다.
+`Redirect`고급 탭[의 기본 제공(OOTB) &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/page-properties.html) 페이지 속성을 사용하면 콘텐츠 작성자가 현재 페이지의 리디렉션 위치를 정의할 수 있습니다. 이 솔루션은 페이지당 리디렉션 시나리오에 가장 적합하며 페이지 리디렉션을 보고 관리할 중앙 위치가 없습니다.
 
 ## 구현에 적합한 솔루션
 

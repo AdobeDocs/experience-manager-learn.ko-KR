@@ -113,7 +113,7 @@ Cloud Manager API를 사용하여 가상 개인 네트워크를 활성화할 수
 
 1. 먼저 Cloud Manager API [listRegions](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) 작업을 사용하여 고급 네트워킹이 필요한 지역을 결정합니다. 후속 Cloud Manager API를 호출하려면 `region name`이(가) 필요합니다. 일반적으로 프로덕션 환경이 있는 영역이 사용됩니다.
 
-   [환경의 세부 정보](https://my.cloudmanager.adobe.com)에서 [Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments)의 AEM as a Cloud Service 환경 지역을 찾으십시오. Cloud Manager에 표시되는 지역 이름은 Cloud Manager API에서 사용되는 지역 코드 [에 ](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments)매핑될 수 있습니다.
+   [환경의 세부 정보](https://my.cloudmanager.adobe.com)에서 [Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments)의 AEM as a Cloud Service 환경 지역을 찾으십시오. Cloud Manager에 표시되는 지역 이름은 Cloud Manager API에서 사용되는 지역 코드 [에 &#x200B;](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments)매핑될 수 있습니다.
 
    __listRegions HTTP 요청__
 
@@ -261,7 +261,7 @@ Cloud Manager API를 사용하여 가상 개인 네트워크를 활성화할 수
    AEM 배포 __only__&#x200B;에 외부 서비스에 대한 HTTP/HTTPS 연결이 필요한 경우 `portForwards` 배열을 비워 두십시오. 이러한 규칙은 HTTP/HTTPS가 아닌 요청에만 필요합니다.
 
 
-2. 각 환경에 대해 Cloud Manager API의 [getEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) 작업을 사용하여 VPN 라우팅 규칙이 적용되는지 확인하십시오.
+&#x200B;2. 각 환경에 대해 Cloud Manager API의 [getEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) 작업을 사용하여 VPN 라우팅 규칙이 적용되는지 확인하십시오.
 
    __getEnvironmentAdvancedNetworkingConfiguration HTTP 요청__
 
@@ -273,9 +273,9 @@ Cloud Manager API를 사용하여 가상 개인 네트워크를 활성화할 수
        -H 'Content-Type: application/json'
    ```
 
-3. Cloud Manager API의 [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) 작업을 사용하여 가상 개인 네트워크 프록시 구성을 업데이트할 수 있습니다. `enableEnvironmentAdvancedNetworkingConfiguration`은(는) `PUT` 작업이므로 이 작업을 호출할 때마다 모든 규칙을 제공해야 합니다.
+&#x200B;3. Cloud Manager API의 [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) 작업을 사용하여 가상 개인 네트워크 프록시 구성을 업데이트할 수 있습니다. `enableEnvironmentAdvancedNetworkingConfiguration`은(는) `PUT` 작업이므로 이 작업을 호출할 때마다 모든 규칙을 제공해야 합니다.
 
-4. 이제 사용자 지정 AEM 코드 및 구성에서 Virtual Private Network 이그레스 구성을 사용할 수 있습니다.
+&#x200B;4. 이제 사용자 지정 AEM 코드 및 구성에서 Virtual Private Network 이그레스 구성을 사용할 수 있습니다.
 
 ## Virtual Private Network를 통해 외부 서비스에 연결
 

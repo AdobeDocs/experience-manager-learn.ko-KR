@@ -47,7 +47,7 @@ ht-degree: 0%
 
 ## OSGi 구성
 
-이 OSGi 구성 예제는 `portForwards`enableEnvironmentAdvancedNetworkingConfiguration[ 작업의 다음 Cloud Manager ](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration) 규칙을 사용하여 외부 메일 서비스를 사용하도록 AEM의 메일 OSGi 서비스를 구성합니다.
+이 OSGi 구성 예제는 `portForwards`enableEnvironmentAdvancedNetworkingConfiguration[&#x200B; 작업의 다음 Cloud Manager &#x200B;](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration) 규칙을 사용하여 외부 메일 서비스를 사용하도록 AEM의 메일 OSGi 서비스를 구성합니다.
 
 ```json
 ...
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 + `ui.config/src/jcr_root/apps/wknd-examples/osgiconfig/config/com.day.cq.mailer.DefaultMailService.cfg.json`
 
-전자 메일 공급자(예: [ 등)에 필요한 대로 AEM의 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email)DefaultMailService`smtp.ssl`을 구성하십시오.
+전자 메일 공급자(예: [&#x200B; 등)에 필요한 대로 AEM의 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email)DefaultMailService`smtp.ssl`을 구성하십시오.
 
 ```json
 {

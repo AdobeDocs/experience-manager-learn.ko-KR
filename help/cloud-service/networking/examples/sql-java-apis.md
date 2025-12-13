@@ -54,7 +54,7 @@ $ aio cloudmanager:set-environment-variables --programId=<PROGRAM_ID> <ENVIRONME
 
 ## 코드 예
 
-이 Java™ 코드 예제는 `portForwards`enableEnvironmentAdvancedNetworkingConfiguration[ 작업의 다음 Cloud Manager ](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration) 규칙을 통해 외부 SQL Server 웹 서버에 연결하는 OSGi 서비스입니다.
+이 Java™ 코드 예제는 `portForwards`enableEnvironmentAdvancedNetworkingConfiguration[&#x200B; 작업의 다음 Cloud Manager &#x200B;](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration) 규칙을 통해 외부 SQL Server 웹 서버에 연결하는 OSGi 서비스입니다.
 
 ```json
 ...

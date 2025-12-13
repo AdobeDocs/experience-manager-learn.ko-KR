@@ -35,7 +35,7 @@ SQL 데이터베이스(및 기타 비HTTP/HTTPS 서비스)에 대한 연결은 �
 
 OSGi 구성의 연결 문자열은 다음을 사용합니다.
 
-+ `AEM_PROXY_HOST`OSGi 구성 환경 변수[ ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#environment-specific-configuration-values)을(를) 통해 연결의 호스트로 `$[env:AEM_PROXY_HOST;default=proxy.tunnel]` 값
++ `AEM_PROXY_HOST`OSGi 구성 환경 변수[&#x200B; &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#environment-specific-configuration-values)을(를) 통해 연결의 호스트로 `$[env:AEM_PROXY_HOST;default=proxy.tunnel]` 값
 + `30001`: Cloud Manager 포트 전달 매핑 `portOrig` → `30001`의 `mysql.example.com:3306` 값
 
 암호는 코드에 저장할 수 없으므로 SQL 연결의 사용자 이름과 암호는 AIO CLI 또는 Cloud Manager API를 사용하여 설정된 OSGi 구성 변수를 통해 제공되는 것이 가장 좋습니다.
@@ -61,7 +61,7 @@ $ aio cloudmanager:set-environment-variables --programId=<PROGRAM_ID> <ENVIRONME
 ## 코드 예
 
 이 Java™ 코드 예는 AEM의 DataSourcePool OSGi 서비스를 통해 외부 MySQL 데이터베이스에 연결하는 OSGi 서비스입니다.
-DataSourcePool OSGi 팩터리 구성은 `30001`enableEnvironmentAdvancedNetworkingConfiguration`portForwards` 작업의 [ 규칙을 통해 외부 호스트 및 포트 ](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration)에 매핑된 포트(`mysql.example.com:3306`)를 지정합니다.
+DataSourcePool OSGi 팩터리 구성은 `30001`enableEnvironmentAdvancedNetworkingConfiguration`portForwards` 작업의 [&#x200B; 규칙을 통해 외부 호스트 및 포트 &#x200B;](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration)에 매핑된 포트(`mysql.example.com:3306`)를 지정합니다.
 
 ```json
 ...

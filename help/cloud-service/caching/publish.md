@@ -67,7 +67,7 @@ AEM Publish CDN은 TTL(time-to-live) 기반입니다. 즉, 캐시 수명은 `Cac
 
 #### 기본 캐시 수명
 
-HTTP 응답이 AEM Dispatcher 캐싱 [위의 한정자 ](#when-are-http-requestsresponses-cached)에 적격인 경우, 사용자 지정 구성이 없으면 기본값은 다음과 같습니다.
+HTTP 응답이 AEM Dispatcher 캐싱 [위의 한정자 &#x200B;](#when-are-http-requestsresponses-cached)에 적격인 경우, 사용자 지정 구성이 없으면 기본값은 다음과 같습니다.
 
 | 컨텐츠 유형 | 기본 CDN 캐시 수명 |
 |:------------ |:---------- |
@@ -123,11 +123,11 @@ AEM Dispatcher은 다음을 캐시합니다.
 AEM Dispatcher은 다음 접근 방식을 사용하여 HTTP 응답을 캐시합니다.
 
 + 콘텐츠 게시 또는 게시 취소와 같은 메커니즘을 통해 무효화가 트리거될 때까지.
-+ 명시적으로 [Dispatcher 구성에 구성됨](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-time-based-cache-invalidation-enablettl)인 경우 TTL(time-to-live). [ 구성을 검토하여 ](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.dispatcher.d/available_farms/default.farm#L122-L127)AEM Project Archetype`enableTTL`의 기본 구성을 확인하세요.
++ 명시적으로 [Dispatcher 구성에 구성됨](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-time-based-cache-invalidation-enablettl)인 경우 TTL(time-to-live). [&#x200B; 구성을 검토하여 &#x200B;](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.dispatcher.d/available_farms/default.farm#L122-L127)AEM Project Archetype`enableTTL`의 기본 구성을 확인하세요.
 
 #### 기본 캐시 수명
 
-HTTP 응답이 AEM Dispatcher 캐싱 [위의 한정자 ](#when-are-http-requestsresponses-cached-1)에 적격인 경우, 사용자 지정 구성이 없으면 기본값은 다음과 같습니다.
+HTTP 응답이 AEM Dispatcher 캐싱 [위의 한정자 &#x200B;](#when-are-http-requestsresponses-cached-1)에 적격인 경우, 사용자 지정 구성이 없으면 기본값은 다음과 같습니다.
 
 | 컨텐츠 유형 | 기본 CDN 캐시 수명 |
 |:------------ |:---------- |

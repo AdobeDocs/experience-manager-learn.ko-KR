@@ -23,7 +23,7 @@ ht-degree: 0%
 
 **고객 관리 CDN**&#x200B;을(를) 사용하는 AEM as a Cloud Service 웹 사이트에 사용자 지정 도메인 이름을 추가하는 방법을 알아봅니다.
 
-이 자습서에서는 고객 관리 CDN을 사용하여 TLS(전송 계층 보안)가 있는 HTTPS 주소 지정 가능한 사용자 지정 도메인 이름 [을(를) 추가하여 샘플 ](https://github.com/adobe/aem-guides-wknd)AEM WKND`wkndviaawscdn.enablementadobe.com` 사이트의 브랜딩을 개선합니다. 이 자습서에서는 AWS CloudFront를 고객 관리 CDN으로 사용하지만 모든 CDN 공급자는 AEM as a Cloud Service과 호환되어야 합니다.
+이 자습서에서는 고객 관리 CDN을 사용하여 TLS(전송 계층 보안)가 있는 HTTPS 주소 지정 가능한 사용자 지정 도메인 이름 [을(를) 추가하여 샘플 &#x200B;](https://github.com/adobe/aem-guides-wknd)AEM WKND`wkndviaawscdn.enablementadobe.com` 사이트의 브랜딩을 개선합니다. 이 자습서에서는 AWS CloudFront를 고객 관리 CDN으로 사용하지만 모든 CDN 공급자는 AEM as a Cloud Service과 호환되어야 합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3432561?quality=12&learn=on)
 
@@ -78,7 +78,7 @@ $ openssl crl2pkcs7 -nocrl -certfile <YOUR-SIGNED-CERT>.crt | openssl pkcs7 -pri
 
 Adobe Cloud Manager은 별도의 양식 필드 _에서 최종 엔티티 인증서 및 인증서 체인_&#x200B;을(를) 허용하므로 서명된 인증서에서 최종 엔티티 인증서 및 인증서 체인을 추출해야 합니다.
 
-이 자습서에서는 [ 도메인에 대해 발급된 ](https://www.digicert.com/)DigitCert`*.enablementadobe.com` 서명 인증서를 예로 사용합니다. 텍스트 편집기에서 서명된 인증서를 열고 `-----BEGIN CERTIFICATE-----`과(와) `-----END CERTIFICATE-----` 마커 사이의 콘텐츠를 복사하여 최종 엔터티 및 인증서 체인을 추출합니다.
+이 자습서에서는 [&#x200B; 도메인에 대해 발급된 &#x200B;](https://www.digicert.com/)DigitCert`*.enablementadobe.com` 서명 인증서를 예로 사용합니다. 텍스트 편집기에서 서명된 인증서를 열고 `-----BEGIN CERTIFICATE-----`과(와) `-----END CERTIFICATE-----` 마커 사이의 콘텐츠를 복사하여 최종 엔터티 및 인증서 체인을 추출합니다.
 
 ## 고객 관리 CDN 설정
 

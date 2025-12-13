@@ -58,7 +58,7 @@ _직접적인 바이너리 업로드_ 접근 방식을 사용하면 _사전 서�
 
 ## 샘플 애플리케이션
 
-[aem-asset-upload-sample](./assets/programmatic-asset-upload/aem-asset-upload-sample.zip) 응용 프로그램을 사용하여 프로그래밍 방식의 에셋 업로드 프로세스를 알아봅니다. 샘플 응용 프로그램에서는 `FileSystemUpload`aem-upload`DirectBinaryUpload` 라이브러리에서 [ 클래스와 ](https://github.com/adobe/aem-upload) 클래스를 모두 사용하는 방법을 보여 줍니다.
+[aem-asset-upload-sample](./assets/programmatic-asset-upload/aem-asset-upload-sample.zip) 응용 프로그램을 사용하여 프로그래밍 방식의 에셋 업로드 프로세스를 알아봅니다. 샘플 응용 프로그램에서는 `FileSystemUpload`aem-upload`DirectBinaryUpload` 라이브러리에서 [&#x200B; 클래스와 &#x200B;](https://github.com/adobe/aem-upload) 클래스를 모두 사용하는 방법을 보여 줍니다.
 
 ### 사전 요구 사항
 
@@ -103,7 +103,7 @@ _aem-upload_ Node.js 라이브러리에서 지원하는 [여러 인증 방법](h
 
 | | 기본 인증 | [로컬 개발 토큰](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/local-development-access-token) | [서비스 자격 증명](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) | [OAuth S2S](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/) | [OAuth 웹 앱](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation#oauth-web-app-credential) | [OAuth 스파](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation#oauth-single-page-app-credential) |
 |---|---|---|---|---|---|---|
-| 지원됩니까? | &amp;check; | &amp;check; | &amp;check; | &amp;cross; | &amp;cross; | &amp;cross; |
+| 지원됩니까? | &check; | &check; | &check; | &cross; | &cross; | &cross; |
 | 목적 | 로컬 개발 | 로컬 개발 | 프로덕션 | N/A | N/A | N/A |
 
 샘플 응용 프로그램을 구성하려면 아래 단계를 수행합니다.

@@ -82,7 +82,7 @@ AEM과 SPA는 서로 다른 도메인에서 액세스하므로 웹 브라우저�
 
 1. SPA는 Netlify 도메인에서 제공되지만 다른 도메인의 AEM GraphQL API에 대해 XHR을 호출합니다. 이 사이트 간 요청을 사용하려면 Netlify 도메인의 콘텐츠 액세스를 허용하도록 AEM에 [CORS](./configurations/cors.md)을(를) 설정해야 합니다.
 
-   SPA 및 AEM 호스트 ![에서 제공된 ](assets/spa/cors-requirement.png)SPA 요청
+   SPA 및 AEM 호스트 ![에서 제공된 &#x200B;](assets/spa/cors-requirement.png)SPA 요청
 
 2. AEM GraphQL API에 대한 XHR 요청을 검사하는 동안 `Access-Control-Allow-Origin`이(가) 있으며, 이는 AEM이 이 Netlify 도메인의 콘텐츠 액세스를 요청할 수 있음을 웹 브라우저에 나타냅니다.
 

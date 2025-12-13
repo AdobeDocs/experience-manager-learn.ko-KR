@@ -51,7 +51,7 @@ SPA의 동적 경로에 대해 편집 가능한 구성 요소에 대한 매핑�
 
 ## 원격 SPA 매핑
 
-원격 SPA에서 나가는 요청에 대한 매핑은 `setupProxy`SPA의 Bootstrap[에서 수행한 ](./spa-bootstrap.md) 구성을 통해 구성됩니다.
+원격 SPA에서 나가는 요청에 대한 매핑은 `setupProxy`SPA의 Bootstrap[에서 수행한 &#x200B;](./spa-bootstrap.md) 구성을 통해 구성됩니다.
 
 ## SPA 편집기 매핑
 
@@ -91,7 +91,7 @@ SPA가 AEM SPA 편집기를 통해 열릴 때 SPA 요청에 대한 매핑은 [AE
 
 ## WKND 앱 업데이트
 
-`<ResponsiveGrid...>`마지막 챕터[에서 만든 ](./spa-container-component.md) 구성 요소를 `AdventureDetail` SPA 구성 요소에 배치하여 편집 가능한 컨테이너를 만들어 보겠습니다.
+`<ResponsiveGrid...>`마지막 챕터[에서 만든 &#x200B;](./spa-container-component.md) 구성 요소를 `AdventureDetail` SPA 구성 요소에 배치하여 편집 가능한 컨테이너를 만들어 보겠습니다.
 
 ### ResponsiveGrid SPA 구성 요소 배치
 

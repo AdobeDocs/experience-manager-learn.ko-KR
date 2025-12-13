@@ -77,7 +77,7 @@ AEM Assets 이벤트를 수신하고 이전 단계에서 만든 Adobe I/O Runtim
 
 - ADC에서 3단계에서 만든 [프로젝트](https://developer.adobe.com/console/projects)로 이동합니다. 해당 프로젝트에서 `Stage`을(를) 4단계 지침의 일부로 실행할 때 런타임 작업이 배포되는 `aio app deploy` 작업 영역을 선택하십시오.
 
-- **서비스 추가** 단추를 클릭하고 **이벤트** 옵션을 선택합니다. **이벤트 추가** 대화 상자에서 **Experience Cloud** > **AEM Assets**&#x200B;을 선택하고 **다음**을 클릭합니다.
+- **서비스 추가** 단추를 클릭하고 **이벤트** 옵션을 선택합니다. **이벤트 추가** 대화 상자에서 **Experience Cloud** > **AEM Assets**&#x200B;을 선택하고 **다음**&#x200B;을 클릭합니다.
   ![AEM Assets 이벤트 - 이벤트 추가](../assets/examples/assets-pim-integration/add-aem-assets-event.png)
 
 - **이벤트 등록 구성** 단계에서 원하는 AEMCS 인스턴스, _자산 처리 완료_ 이벤트 및 OAuth 서버 간 인증 유형을 선택합니다.

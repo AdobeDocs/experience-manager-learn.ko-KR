@@ -202,4 +202,4 @@ CDN 로그를 분석한 후에는 CDN 캐시 구성을 최적화하여 사이트
 
 자세한 내용은 [CDN 캐시 구성 최적화](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching)를 참조하십시오.
 
-AEM WKND 프로젝트에 참조 CDN 구성이 있습니다. 자세한 내용은 [ 파일의 ](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.d/available_vhosts/wknd.vhost#L137-L190)CDN 구성`wknd.vhost`을(를) 참조하십시오.
+AEM WKND 프로젝트에 참조 CDN 구성이 있습니다. 자세한 내용은 [&#x200B; 파일의 &#x200B;](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.d/available_vhosts/wknd.vhost#L137-L190)CDN 구성`wknd.vhost`을(를) 참조하십시오.

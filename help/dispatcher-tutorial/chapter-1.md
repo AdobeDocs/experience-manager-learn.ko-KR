@@ -106,7 +106,7 @@ Dispatcher 모듈은 호스팅 Apache 서버가 제공하는 기능을 활용합
 
 Dispatcher을 더 자세히 이해하기 위해 간단한 샘플 URL의 구조를 다시 살펴보겠습니다.  아래 예를 살펴보겠습니다.
 
-`http://domain.com/path/to/resource/pagename.selectors.html/path/suffix.ext?parameter=value&amp;otherparameter=value#fragment`
+`http://domain.com/path/to/resource/pagename.selectors.html/path/suffix.ext?parameter=value&otherparameter=value#fragment`
 
 * `http`은(는) 프로토콜을 나타냅니다.
 
@@ -1208,7 +1208,7 @@ www.shiny-brand.de
 
 Google과 같은 검색 엔진은 다른 URL에 동일한 콘텐츠가 &quot;기만적&quot;인 것으로 간주합니다. 사용자는 동일한 콘텐츠를 제공하는 팜을 만들어 등급을 더 높게 매기거나 더 자주 나열하려고 할 수 있습니다. 검색 엔진은 이러한 시도를 인식하고 단순히 콘텐츠를 재활용하는 페이지의 등급을 실제로 낮춥니다.
 
-각 페이지의 헤더 섹션에서 각 관련 페이지에 [ 태그를 설정하여 투명 순위를 매기고, 실제로는 동일한 콘텐츠를 가진 페이지가 두 개 이상 있으며, 시스템을 &quot;게임&quot;하려고 하지 않을 수 있습니다(](https://support.google.com/webmasters/answer/189077?hl=en)&quot;Google에 페이지의 현지화된 버전에 대해 알리기&quot;`<link rel="alternate">` 참조).
+각 페이지의 헤더 섹션에서 각 관련 페이지에 [&#x200B; 태그를 설정하여 투명 순위를 매기고, 실제로는 동일한 콘텐츠를 가진 페이지가 두 개 이상 있으며, 시스템을 &quot;게임&quot;하려고 하지 않을 수 있습니다(](https://support.google.com/webmasters/answer/189077?hl=en)&quot;Google에 페이지의 현지화된 버전에 대해 알리기&quot;`<link rel="alternate">` 참조).
 
 ```
 # URL: www.shiny-brand.fr/fr/home/produits.html

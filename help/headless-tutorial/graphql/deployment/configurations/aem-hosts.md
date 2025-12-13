@@ -70,7 +70,7 @@ REACT_APP_AEM_HOST=https://publish-p123-e456.adobeaemcloud.com
 ...
 ```
 
-`.env`과(와) 의미 체계 설명자(예: [ 또는 ](https://create-react-app.dev/docs/adding-custom-environment-variables/#what-other-env-files-can-be-used))를 후정하여 `.env`다른 용도로 `.env.stage`개 파일을 지정할 수 있습니다`.env.production`. `.env` 명령을 실행하기 전에 `REACT_APP_ENV`을(를) 설정하여 React 앱을 실행하거나 빌드할 때 다른 `npm` 파일을 사용할 수 있습니다.
+`.env`과(와) 의미 체계 설명자(예: [&#x200B; 또는 &#x200B;](https://create-react-app.dev/docs/adding-custom-environment-variables/#what-other-env-files-can-be-used))를 후정하여 `.env`다른 용도로 `.env.stage`개 파일을 지정할 수 있습니다`.env.production`. `.env` 명령을 실행하기 전에 `REACT_APP_ENV`을(를) 설정하여 React 앱을 실행하거나 빌드할 때 다른 `npm` 파일을 사용할 수 있습니다.
 
 예를 들어 React 앱의 `package.json`에 다음 `scripts` 구성이 포함될 수 있습니다.
 
@@ -290,7 +290,7 @@ public class AdventuresLoader extends AsyncTaskLoader<AdventureList> {
 
 [위의 표](#managing-aem-hosts)에 설명된 대로 AEM에 대한 Headless 앱의 이미지 요청은 올바른 AEM 서비스와 상호 작용하도록 구성해야 합니다.
 
-Adobe에서는 AEM GraphQL API의 [ 필드를 통해 사용할 수 있는 ](../../how-to/images.md)최적화된 이미지`_dynamicUrl`를 사용할 것을 권장합니다. `_dynamicUrl` 필드는 AEM GraphQL API를 쿼리하는 데 사용되는 AEM 서비스 호스트에 접두사가 추가될 수 있는 호스트 없는 URL을 반환합니다. GraphQL 응답의 `_dynamicUrl` 필드에 대한 모습은 다음과 같습니다.
+Adobe에서는 AEM GraphQL API의 [&#x200B; 필드를 통해 사용할 수 있는 &#x200B;](../../how-to/images.md)최적화된 이미지`_dynamicUrl`를 사용할 것을 권장합니다. `_dynamicUrl` 필드는 AEM GraphQL API를 쿼리하는 데 사용되는 AEM 서비스 호스트에 접두사가 추가될 수 있는 호스트 없는 URL을 반환합니다. GraphQL 응답의 `_dynamicUrl` 필드에 대한 모습은 다음과 같습니다.
 
 ```json
 {
@@ -361,7 +361,7 @@ REACT_APP_AEM_HOST=https://publish-p123-e456.adobeaemcloud.com
 ...
 ```
 
-`.env`과(와) 의미 체계 설명자(예: [ 또는 ](https://create-react-app.dev/docs/adding-custom-environment-variables/#what-other-env-files-can-be-used))를 후정하여 `.env`다른 용도로 `.env.stage`개 파일을 지정할 수 있습니다`.env.production`. `.env` 명령을 실행하기 전에 `REACT_APP_ENV`을(를) 설정하여 React 앱을 실행하거나 빌드할 때 다른 `npm` 파일을 사용할 수 있습니다.
+`.env`과(와) 의미 체계 설명자(예: [&#x200B; 또는 &#x200B;](https://create-react-app.dev/docs/adding-custom-environment-variables/#what-other-env-files-can-be-used))를 후정하여 `.env`다른 용도로 `.env.stage`개 파일을 지정할 수 있습니다`.env.production`. `.env` 명령을 실행하기 전에 `REACT_APP_ENV`을(를) 설정하여 React 앱을 실행하거나 빌드할 때 다른 `npm` 파일을 사용할 수 있습니다.
 
 예를 들어 React 앱의 `package.json`에 다음 `scripts` 구성이 포함될 수 있습니다.
 
