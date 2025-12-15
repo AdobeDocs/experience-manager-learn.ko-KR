@@ -9,9 +9,9 @@ level: Beginner
 doc-type: Feature Video
 exl-id: 59462cb4-d379-4e58-b786-ff8dbae6191c
 duration: 2516
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: a43bd7ae4e5b0a6793c52b5a8d0f36e3c1b260b1
 workflow-type: tm+mt
-source-wordcount: '854'
+source-wordcount: '828'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 ## Dynamic Media 개요
 
->[!VIDEO](https://video.tv.adobe.com/v/34946?captions=kor&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27144?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 ## AEM Sites에 사용
 
->[!VIDEO](https://video.tv.adobe.com/v/34952?captions=kor&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27145?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -58,7 +58,7 @@ ht-degree: 0%
 
 ## 혼합 미디어 컬렉션 빌드
 
->[!VIDEO](https://video.tv.adobe.com/v/34956?captions=kor&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27146?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -73,7 +73,7 @@ ht-degree: 0%
 
 ## 이미지 사전 설정
 
->[!VIDEO](https://video.tv.adobe.com/v/34501?captions=kor&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27320?quality=12&learn=on)
 
 이 비디오에서는 이미지 사전 설정을 만드는 방법과 이미지 사전 설정이란, URL이 요청할 때마다 이미지에 대해 작동하는 일련의 이미지 서버 인수에 대한 URL 단축기를 설명합니다. 이미지 사전 설정을 확장 및 편집하는 중요한 기술을 알아봅니다.
 
@@ -84,7 +84,7 @@ ht-degree: 0%
 
 ## 고급 URL 수정자
 
->[!VIDEO](https://video.tv.adobe.com/v/34495?captions=kor&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27319?quality=12&learn=on)
 
 이 비디오에서는 이미지 크기를 조정하는 것뿐만 아니라 Dynamic Media의 URL 수정자를 사용하여 소스 파일 자체의 기능(배경 투명도, 클리핑 패스 및 자르기 및 텍스트 포함)을 변수로 활용하는 방법에 대해 설명합니다.
 
@@ -96,7 +96,7 @@ ht-degree: 0%
 
 ## JPEG 파일 크기 관리
 
->[!VIDEO](https://video.tv.adobe.com/v/35033?captions=kor&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27404?quality=12&learn=on)
 
 
 >[!NOTE]
@@ -107,16 +107,7 @@ jpeg 압축 설정을 조정하는 2개의 명령을 사용하여 페이지 로�
 
 ## 자막
 
->[!VIDEO](https://video.tv.adobe.com/v/34226?captions=kor&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28074?quality=12&learn=on)
 
 비디오에 대한 CC 정보가 포함된 추가 자막 파일 문서인 web.VTT 사이드카 파일을 가리키도록 복사 URL을 추가하여 Dynamic Media 비디오에 자막 기능을 쉽게 추가할 수 있습니다.
 
-## 이미지 선명하게 하기
-
-이 비디오에서는 이미지 선명하게 하기가 이미지 품질 유지에 중요한 이유와 완벽한 이미지를 만들기 위해 고급 설정을 사용하는 방법을 다룹니다.
-
-<!--
-This link is broken
-
->[!VIDEO](https://demos-pub.assetsadobe.com/etc/dam/viewers/s7viewers/html5/VideoViewer.html?asset=%2Fcontent%2Fdam%2Fdm-public-facing-upgrade-portal-video%2F04_DynamicImagery_AdvancedSettings_071917_BH.mp4&config=/etc/dam/presets/viewer/Video_social&serverUrl=https%3A%2F%2Fadobedemo62-h.assetsadobe.com%2Fis%2Fimage%2F&contenturl=%2F&config2=/etc/dam/presets/analytics&videoserverurl=https://gateway-na.assetsadobe.com/DMGateway/public/demoCo&posterimage=/content/dam/dm-public-facing-upgrade-portal-video/04_DynamicImagery_AdvancedSettings_071917_BH.mp4)
--->
