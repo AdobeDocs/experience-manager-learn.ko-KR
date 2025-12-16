@@ -21,6 +21,6 @@ ht-degree: 0%
 
 이 비디오는 Dynamic Media에서 이미지 사전 설정을 만드는 단계를 안내합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/335459?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418242?captions=kor&quality=12&learn=on)
 
 AEM Assets에서 Dynamic Media URL 및 이미지 사전 설정을 만드는 모범 사례에 대해 알아보고 모두 작동하는 방식을 이해합니다! [여기에서 비디오를 시청하십시오](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-urls-and-image-presets).
