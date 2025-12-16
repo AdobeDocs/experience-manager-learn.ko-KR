@@ -23,4 +23,4 @@ AEM Assets Dynamic Media URL 구문을 살펴보고 이미지 사전 설정을 �
 
 >[!VIDEO](https://video.tv.adobe.com/v/3477924/?learn=on&enablevpops)
 
-[AEM Assets에서 이미지 사전 설정을 만드는 방법](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/tutorials/creating-image-presets)에 대한 짧은 비디오를 시청하십시오.
+[AEM Assets에서 이미지 사전 설정을 만드는 방법](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/dynamic-media/tutorials/creating-image-presets)에 대한 짧은 비디오를 시청하십시오.
