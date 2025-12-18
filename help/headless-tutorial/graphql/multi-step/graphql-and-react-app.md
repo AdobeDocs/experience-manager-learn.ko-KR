@@ -35,8 +35,8 @@ _이 장의 IDE 스크린샷은 [Visual Studio 코드](https://code.visualstudio
 
 이 자습서를 완료하려면 AEM 관리자가 다음 중 하나에 액세스할 수 있도록 하는 것이 좋습니다.
 
-+ [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
-+ [AEM Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)를 사용하여 로컬 설정
++ [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=ko)
++ [AEM Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=ko)를 사용하여 로컬 설정
 + [AEM 6.5 LTS](https://experienceleague.adobe.com/docs/experience-manager-65/content/release-notes/release-notes.html?lang=ko-KR), [GraphQL 인덱스 패키지 1.0.5+](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/graphql-api/graphql-endpoint.html) 설치
 
 ### 소프트웨어 요구 사항
