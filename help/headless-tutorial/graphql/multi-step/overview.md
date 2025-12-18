@@ -54,7 +54,7 @@ Headless CMS 시나리오에서 AEM의 GraphQL API를 사용하여 콘텐츠를 
 
 ## GitHub 프로젝트
 
-소스 코드 및 컨텐츠 패키지는 `basic-tutorial`AEM Guides - WKND GraphQL GitHub 프로젝트[의 ](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/basic-tutorial) 폴더에서 사용할 수 있습니다.
+소스 코드 및 컨텐츠 패키지는 `basic-tutorial`AEM Guides - WKND GraphQL GitHub 프로젝트[의 &#x200B;](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/basic-tutorial) 폴더에서 사용할 수 있습니다.
 
 
 튜토리얼이나 코드에 문제가 있는 경우 [GitHub 문제](https://github.com/adobe/aem-guides-wknd-graphql/issues)를 남겨주십시오.

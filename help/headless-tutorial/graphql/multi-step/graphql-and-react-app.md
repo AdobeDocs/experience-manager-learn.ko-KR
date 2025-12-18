@@ -127,11 +127,11 @@ React 앱을 다운로드하려면:
 >   이 React 앱은 부분적으로 구현됩니다. 이 자습서의 단계에 따라 구현을 완료합니다. 구현 작업이 필요한 JavaScript 파일에는 다음 주석이 있습니다. 이 자습서에 지정된 코드로 해당 파일의 코드를 추가/업데이트하십시오.
 >
 >
-> //*********************************
+> //**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;***
 >
 >  // TODO AEM Headless 자습서의 단계에 따라 이를 구현합니다.
 >
->  //*********************************
+>  //**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;***
 >
 
 ## React 앱 구조
@@ -153,11 +153,11 @@ React 앱을 다운로드하려면:
 
 1. 1-40행을 검토합니다.
 
-   + JavaScript용 `AEMHeadless`AEM Headless 클라이언트[의 11행 ](https://github.com/adobe/aem-headless-client-js) 선언을 가져옵니다.
+   + JavaScript용 `AEMHeadless`AEM Headless 클라이언트[의 11행 &#x200B;](https://github.com/adobe/aem-headless-client-js) 선언을 가져옵니다.
 
    + `.env.development`, 14-22행 및 화살표 함수 식 `setAuthorization`, 31-40행에 정의된 변수를 기반으로 한 권한 부여의 구성입니다.
 
-   + 포함된 `serviceUrl`개발 프록시[ 구성에 대한 ](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/basic-tutorial#proxy-api-requests) 설정, 27행.
+   + 포함된 `serviceUrl`개발 프록시[&#x200B; 구성에 대한 &#x200B;](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/basic-tutorial#proxy-api-requests) 설정, 27행.
 
 1. 줄 42-49는 `AEMHeadless` 클라이언트를 인스턴스화하고 React 앱 전체에서 사용하도록 내보낼 때 가장 중요합니다.
 
@@ -218,7 +218,7 @@ async function fetchPersistedQuery(persistedQueryName, queryParameters) {
 
 그런 다음 React 앱의 기본 보기에서 팀과 팀원을 표시하는 기능을 빌드합니다. 이 기능을 사용하려면 다음 조건을 충족해야 합니다.
 
-+ [ 지속 쿼리를 호출하여 AEM의 팀 콘텐츠 조각 목록을 반환하는 ](https://react.dev/reference/react/useEffect#useeffect)의 새 `src/api/usePersistedQueries.js`사용자 지정 React useEffect 후크`my-project/all-teams`입니다.
++ [&#x200B; 지속 쿼리를 호출하여 AEM의 팀 콘텐츠 조각 목록을 반환하는 &#x200B;](https://react.dev/reference/react/useEffect#useeffect)의 새 `src/api/usePersistedQueries.js`사용자 지정 React useEffect 후크`my-project/all-teams`입니다.
 + 새 사용자 지정 React `src/components/Teams.js` 후크를 호출하고 팀 데이터를 렌더링하는 `useEffect`의 React 구성 요소입니다.
 
 완료되면 앱의 기본 보기가 AEM의 팀 데이터로 채워집니다.
@@ -368,7 +368,7 @@ async function fetchPersistedQuery(persistedQueryName, queryParameters) {
 
 이 기능을 사용하려면 다음 조건을 충족해야 합니다.
 
-+ 매개 변수가 있는 [ 지속 쿼리를 호출하고 단일 개인 레코드를 반환하는 ](https://react.dev/reference/react/useEffect#useeffect)의 새 `src/api/usePersistedQueries.js`사용자 지정 React useEffect 후크`my-project/person-by-name`입니다.
++ 매개 변수가 있는 [&#x200B; 지속 쿼리를 호출하고 단일 개인 레코드를 반환하는 &#x200B;](https://react.dev/reference/react/useEffect#useeffect)의 새 `src/api/usePersistedQueries.js`사용자 지정 React useEffect 후크`my-project/person-by-name`입니다.
 
 + `src/components/Person.js`에서 개인의 전체 이름을 쿼리 매개 변수로 사용하고, 새로운 사용자 지정 React `useEffect` 후크를 호출하고, 개인 데이터를 렌더링하는 React 구성 요소입니다.
 
@@ -532,7 +532,7 @@ async function fetchPersistedQuery(persistedQueryName, queryParameters) {
 
 ## 언더더 후드
 
-**요청에 대해 브라우저의**&#x200B;개발자 도구&#x200B;**>**&#x200B;네트워크&#x200B;_및_&#x200B;필터`all-teams`를 엽니다. GraphQL API 요청 `/graphql/execute.json/my-project/all-teams`이(가) `http://localhost:3000`의 값(예: **)에 대해** 및 `REACT_APP_HOST_URI`NOT`<https://publish-pxxx-exxx.adobeaemcloud.com`에 대해 수행됩니다. [ 모듈을 사용하여 ](https://create-react-app.dev/docs/proxying-api-requests-in-development/#configuring-the-proxy-manually)프록시 설정`http-proxy-middleware`을(를) 사용하도록 설정했기 때문에 React 앱의 도메인에 대해 요청이 수행됩니다.
+**요청에 대해 브라우저의**&#x200B;개발자 도구&#x200B;**>**&#x200B;네트워크&#x200B;_및_&#x200B;필터`all-teams`를 엽니다. GraphQL API 요청 `/graphql/execute.json/my-project/all-teams`이(가) `http://localhost:3000`의 값(예: **)에 대해** 및 `REACT_APP_HOST_URI`NOT`<https://publish-pxxx-exxx.adobeaemcloud.com`에 대해 수행됩니다. [&#x200B; 모듈을 사용하여 &#x200B;](https://create-react-app.dev/docs/proxying-api-requests-in-development/#configuring-the-proxy-manually)프록시 설정`http-proxy-middleware`을(를) 사용하도록 설정했기 때문에 React 앱의 도메인에 대해 요청이 수행됩니다.
 
 
 ![프록시를 통한 GraphQL API 요청](assets/graphql-and-external-app/graphql-api-request-via-proxy.png)
