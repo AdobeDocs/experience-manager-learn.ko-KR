@@ -12,10 +12,10 @@ level: Beginner
 last-substantial-update: 2022-10-17T00:00:00Z
 exl-id: 41e15a2c-758b-4e7d-9d23-ef671c1dc155
 duration: 54
-source-git-commit: c6213dd318ec4865375c57143af40dbe3f3990b1
-workflow-type: ht
-source-wordcount: '237'
-ht-degree: 100%
+source-git-commit: e7f556737cdf6a92c0503d3b4a52eef1f71c8330
+workflow-type: tm+mt
+source-wordcount: '240'
+ht-degree: 88%
 
 ---
 
@@ -50,10 +50,11 @@ Headless CMS 시나리오에서 AEM의 GraphQL API를 사용하여 콘텐츠를 
 
 ## 시작하기
 
-[콘텐츠 조각 모델 정의](content-fragment-models.md)로 튜토리얼을 시작하십시오.
+[콘텐츠 조각 모델 정의](content-fragment-models.md)(으)로 자습서를 시작하십시오.
 
 ## GitHub 프로젝트
 
-소스 코드와 콘텐츠 패키지는 [AEM Guides - WKND GraphQL GitHub 프로젝트](https://github.com/adobe/aem-guides-wknd-graphql)에서 확인할 수 있습니다.
+소스 코드 및 컨텐츠 패키지는 `basic-tutorial`AEM Guides - WKND GraphQL GitHub 프로젝트[의 ](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/basic-tutorial) 폴더에서 사용할 수 있습니다.
+
 
 튜토리얼이나 코드에 문제가 있는 경우 [GitHub 문제](https://github.com/adobe/aem-guides-wknd-graphql/issues)를 남겨주십시오.
