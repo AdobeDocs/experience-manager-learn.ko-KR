@@ -23,4 +23,4 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418242?captions=kor&quality=12&learn=on)
 
-AEM Assets에서 Dynamic Media URL 및 이미지 사전 설정을 만드는 모범 사례에 대해 알아보고 모두 작동하는 방식을 이해합니다! [여기에서 비디오를 시청하십시오](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-urls-and-image-presets).
+AEM Assets에서 Dynamic Media URL 및 이미지 사전 설정을 만드는 모범 사례에 대해 알아보고 모두 작동하는 방식을 이해합니다! [여기에서 비디오를 시청하십시오](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-urls-and-image-presets).
