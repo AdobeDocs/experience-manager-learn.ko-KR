@@ -12,10 +12,10 @@ thumbnail: KT-17426.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 1df4c816-b354-4803-bb6c-49aa7d7404c6
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: f4f177f2745cb03c81011679b9d88eaadeb9cae3
 workflow-type: tm+mt
-source-wordcount: '1859'
-ht-degree: 10%
+source-wordcount: '1891'
+ht-degree: 9%
 
 ---
 
@@ -179,7 +179,9 @@ ADC 프로젝트를 만든 후 원하는 AEM API를 추가하고, 인증을 설�
 
 ## ADC 프로젝트 통신을 사용하도록 AEM 인스턴스 구성{#configure-aem-instance}
 
-그런 다음 위의 ADC 프로젝트 통신을 활성화하도록 AEM 인스턴스를 구성해야 합니다. 이 구성에서는 ADC 프로젝트의 ClientID가 AEM 인스턴스와 통신할 수 없어 403 금지 오류가 발생합니다. 이 구성을 허용된 ClientID만 AEM 인스턴스와 통신할 수 있도록 하는 방화벽 규칙으로 생각해 보십시오.
+그런 다음 위의 ADC 프로젝트 통신을 활성화하도록 AEM 인스턴스를 구성해야 합니다.
+
+이 구성이 없으면 ADC 프로젝트의 ClientID가 AEM 인스턴스와 통신할 수 없어 403 금지 오류가 발생합니다. 이 구성을 허용된 ClientID만 AEM 인스턴스와 통신할 수 있도록 하는 방화벽 규칙으로 생각해 보십시오.
 
 위의 ADC 프로젝트 통신을 활성화하도록 AEM 인스턴스를 구성하는 단계를 따라 살펴보겠습니다.
 
@@ -210,11 +212,16 @@ ADC 프로젝트를 만든 후 원하는 AEM API를 추가하고, 인증을 설�
 
 1. 구성 변경 사항을 커밋하고 Cloud Manager 파이프라인이 연결된 원격 Git 저장소에 변경 사항을 푸시합니다.
 
-1. Cloud Manager에서 [구성 파이프라인](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#config-deployment-pipeline)을 사용하여 위의 변경 사항을 배포합니다.
+1. Cloud Manager에서 [구성 파이프라인](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#config-deployment-pipeline)을 사용하여 위의 변경 사항을 배포합니다.
 
    ![YAML 배포](./assets/setup/config-pipeline.png)
 
-`api.yaml` 파일은 [RDE](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/rde/overview), [명령줄 도구 사용](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)에도 설치할 수 있습니다. 이 기능은 구성 변경 사항을 프로덕션 환경에 배포하기 전에 테스트하는 데 유용합니다.
+`api.yaml` 파일은 [RDE](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/overview), [명령줄 도구 사용](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)에도 설치할 수 있습니다. 이 기능은 구성 변경 사항을 프로덕션 환경에 배포하기 전에 테스트하는 데 유용합니다.
+
+>[!CAUTION]
+>
+>YAML(`api.yaml`) 파일은 ADC 프로젝트와 통신할 수 있도록 AEM 인스턴스를 구성하는 유일한 방법입니다. 이 구성에서는 환경 변수 사용과 같은 다른 방법이 지원되지 않습니다.
+
 
 ## 다음 단계
 
