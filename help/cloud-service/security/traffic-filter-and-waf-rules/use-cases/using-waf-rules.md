@@ -30,7 +30,7 @@ AEM as a Cloud Service에서 _Adobe 권장_ **웹 애플리케이션 방화벽(W
 > WAF 트래픽 필터 규칙에는 추가 확장 보안(이전 명칭: WAF-DDoS Protection) 또는 확장 보안 for Healthcare(이전 명칭: Enhanced Security) 라이센스가 필요합니다. 표준 트래픽 필터 규칙은 기본적으로 Sites 및 Forms 고객에게 제공됩니다.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3469397/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3469437/?captions=kor&quality=12&learn=on)
 
 ## 학습 목표
 
