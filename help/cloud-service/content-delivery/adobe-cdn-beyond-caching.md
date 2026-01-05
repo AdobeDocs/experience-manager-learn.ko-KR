@@ -12,9 +12,9 @@ last-substantial-update: 2024-08-21T00:00:00Z
 jira: KT-15123
 thumbnail: KT-15123.jpeg
 exl-id: 8948a900-01e9-49ed-9ce5-3a057f5077e4
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: 7b29187ef84bebebd4586374abb09ced947dff28
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '555'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Adobe CDN은 콘텐츠 캐싱 외에 웹 사이트 성능을 최적화하는 데
 
 이러한 기능은 **셀프 서비스** 기능입니다. AEM 프로젝트의 `cdn.yaml` 파일에서 구성되고 Cloud Manager 구성 파이프라인을 사용하여 배포됩니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3440279?captions=kor&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3433104?quality=12&learn=on)
 
 ## CDN에서 트래픽 구성
 
@@ -39,7 +39,7 @@ _CDN에서 트래픽 구성_&#x200B;과 관련된 주요 기능에 대해 알아
 
 - **DoS 공격 방지:** Adobe CDN은 네트워크 계층에서 DoS 공격을 흡수하여 원본 서버에 도달하지 못하도록 합니다.
 - **속도 제한:** 원본 서버에 너무 많은 요청이 포함되는 것을 방지하기 위해 CDN에서 속도 제한을 구성할 수 있습니다.
-- **웹 응용 프로그램 방화벽(WAF):** WAF은 SQL 삽입, 사이트 간 스크립팅 등과 같은 일반적인 웹 응용 프로그램 취약점으로부터 웹 사이트를 보호합니다. 이 기능을 사용하려면 Enhanced Security 라이센스 또는 WAF-DDoS Protection 라이센스가 필요합니다.
+- **웹 응용 프로그램 방화벽(WAF):** WAF은 SQL 삽입, 사이트 간 스크립팅 등과 같은 일반적인 웹 응용 프로그램 취약점으로부터 웹 사이트를 보호합니다. 이 기능을 사용하려면 확장 보안(이전 명칭: WAF-DDoS Protection) 또는 확장 보안 for Healthcare(이전 명칭: Enhanced Security) 라이센스가 필요합니다.
 - **요청 변환:** 헤더 설정 또는 설정 해제, 쿼리 매개 변수, 쿠키 수정 등과 같은 수신 요청을 수정합니다.
 - **응답 변환:** 헤더를 설정하거나 해제하는 등의 보내는 응답을 수정합니다.
 - **원본 선택:** 요청 URL을 기반으로 다른 원본 서버(Adobe 및 Adobe 이외)로 트래픽을 라우팅합니다.
@@ -91,13 +91,13 @@ data:
 
 [트래픽 필터 규칙으로 웹 사이트 보호](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview)
 
-[HTTP 헤더 유효성 검사 CDN 규칙 구성 및 배포](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule)
+[HTTP 헤더 유효성 검사 CDN 규칙 구성 및 배포](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule)
 
-[CDN 캐시를 제거하는 방법](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)
+[CDN 캐시를 제거하는 방법](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)
 
-[CDN 오류 페이지 구성](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages)
+[CDN 오류 페이지 구성](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages)
 
-[CDN에서 트래픽 구성](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#client-side-redirectors)
+[CDN에서 트래픽 구성](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#client-side-redirectors)
 
-[CDN 자격 증명 및 인증 구성](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication)
+[CDN 자격 증명 및 인증 구성](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication)
 

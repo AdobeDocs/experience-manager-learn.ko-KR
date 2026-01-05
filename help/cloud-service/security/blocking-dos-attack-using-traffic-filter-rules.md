@@ -12,10 +12,10 @@ last-substantial-update: 2024-04-19T00:00:00Z
 jira: KT-15184
 thumbnail: KT-15184.jpeg
 exl-id: 60c2306f-3cb6-4a6e-9588-5fa71472acf7
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: 7b29187ef84bebebd4586374abb09ced947dff28
 workflow-type: tm+mt
-source-wordcount: '609'
-ht-degree: 100%
+source-wordcount: '619'
+ht-degree: 93%
 
 ---
 
@@ -43,7 +43,7 @@ AEM 웹 사이트를 위한 기본 DDoS 보호에 대해 알아보겠습니다.
 고객이 DDoS 공격으로부터 웹 사이트를 보호하기 위해 추가로 수행할 수 있는 권장 조치를 살펴보겠습니다.
 
 - Adobe 권장 [표준 트래픽 필터 규칙](./traffic-filter-and-waf-rules/use-cases/using-traffic-filter-rules.md)을 구현하여 의심스러운 동작을 로깅하고 경고함으로써 잠재적으로 악성 트래픽 패턴을 식별합니다.
-- **WAF-DDoS 보호** 또는 **향상된 보안** 추가 기능을 사용하고 Adobe에서 권장하는 [WAF 트래픽 필터 규칙](./traffic-filter-and-waf-rules/use-cases/using-waf-rules.md)을 구현하여 고급 프로토콜 또는 페이로드 기반 기술을 사용하는 공격을 포함한 정교한 공격에 대비합니다.
+- 확장 보안(이전 이름: WAF-DDoS Protection) 또는 확장 보안 for Healthcare(이전 이름: 강화 보안) 추가 기능을 사용하고 Adobe 권장 [WAF 트래픽 필터 규칙](./traffic-filter-and-waf-rules/use-cases/using-waf-rules.md)을 구현하여 고급 프로토콜 또는 페이로드 기반 기술을 사용하는 공격을 포함한 정교한 공격으로부터 방어합니다.
 - 불필요한 쿼리 매개변수를 무시하도록 [요청 변환](./traffic-filter-and-waf-rules/how-to/request-transformation.md)을 구성하여 캐시 적용 범위를 확대합니다.
 
 ## 시작하기

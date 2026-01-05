@@ -12,10 +12,10 @@ badgeLicense: label="라이선스 필요" type="positive" before-title="true"
 jira: KT-18308
 thumbnail: null
 exl-id: b87c27e9-b6ab-4530-b25c-a98c55075aef
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: 7b29187ef84bebebd4586374abb09ced947dff28
 workflow-type: tm+mt
-source-wordcount: '1376'
-ht-degree: 100%
+source-wordcount: '1386'
+ht-degree: 98%
 
 ---
 
@@ -27,10 +27,10 @@ AEM as a Cloud Service에서 _Adobe 권장_ **웹 애플리케이션 방화벽(W
 
 >[!IMPORTANT]
 >
-> WAF 트래픽 필터 규칙을 사용하려면 추가 **WAF-DDoS Protection** 또는 **향상된 보안** 라이선스가 필요합니다. 표준 트래픽 필터 규칙은 기본적으로 Sites 및 Forms 고객에게 제공됩니다.
+> WAF 트래픽 필터 규칙에는 추가 확장 보안(이전 명칭: WAF-DDoS Protection) 또는 확장 보안 for Healthcare(이전 명칭: Enhanced Security) 라이센스가 필요합니다. 표준 트래픽 필터 규칙은 기본적으로 Sites 및 Forms 고객에게 제공됩니다.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3469437/?captions=kor&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3469397/?quality=12&learn=on)
 
 ## 학습 목표
 

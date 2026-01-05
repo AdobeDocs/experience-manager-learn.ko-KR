@@ -11,10 +11,10 @@ last-substantial-update: 2025-06-04T00:00:00Z
 jira: KT-13148
 thumbnail: null
 exl-id: e6d67204-2f76-441c-a178-a34798fe266d
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: 7b29187ef84bebebd4586374abb09ced947dff28
 workflow-type: tm+mt
-source-wordcount: '1185'
-ht-degree: 100%
+source-wordcount: '1195'
+ht-degree: 98%
 
 ---
 
@@ -26,7 +26,7 @@ AEM as a Cloud Service에서 **트래픽 필터 규칙**&#x200B;과 그 하위 �
 
 >[!IMPORTANT]
 >
-> WAF 트래픽 필터 규칙을 사용하려면 추가 **WAF-DDoS Protection** 또는 **향상된 보안** 라이선스가 필요합니다. 표준 트래픽 필터 규칙은 기본적으로 Sites 및 Forms 고객에게 제공됩니다.
+> WAF 트래픽 필터 규칙에는 추가 확장 보안(이전 명칭: WAF-DDoS Protection) 또는 확장 보안 for Healthcare(이전 명칭: Enhanced Security) 라이센스가 필요합니다. 표준 트래픽 필터 규칙은 기본적으로 Sites 및 Forms 고객에게 제공됩니다.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3469394/?quality=12&learn=on)

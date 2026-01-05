@@ -11,10 +11,10 @@ duration: 75
 last-substantial-update: 2024-03-30T00:00:00Z
 jira: KT-15219
 exl-id: 1d7dd829-e235-4884-a13f-b6ea8f6b4b0b
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: 7b29187ef84bebebd4586374abb09ced947dff28
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 100%
+source-wordcount: '374'
+ht-degree: 98%
 
 ---
 
@@ -42,7 +42,7 @@ AEM 환경에서 DoS 및 DDoS 공격을 방지하고 완화하는 데 사용할 
             <td>웹 애플리케이션 방화벽 (WAF)</td>
             <td>다양한 유형의 공격으로부터 웹 애플리케이션을 보호하도록 설계된 보안 솔루션입니다.</td>
             <td>
-            <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/examples-and-analysis#waf-rules" target="_blank">WAF-DDoS 보호 라이선스</a></td>
+            <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/examples-and-analysis#waf-rules" target="_blank">확장 보안(이전 이름: WAF-DDoS Protection) 라이선스</a></td>
             <td>AMS 계약을 통한 <a href="https://docs.aws.amazon.com/waf/" target="_blank">AWS</a> 또는 <a href="https://azure.microsoft.com/en-us/products/web-application-firewall" target="_blank">Azure</a> WAF.</td>
             <td>선호하는 WAF</td>
         </tr>
