@@ -7,7 +7,7 @@ level: Beginner
 doc-type: Catalog
 duration: 30
 last-substantial-update: 2026-01-05T00:00:00Z
-source-git-commit: 96719e9f53324469927eee83840356833b5605a0
+source-git-commit: 9a2b7ee23132b5eac60f3eb2fd416fa26d0312db
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 15%
@@ -27,7 +27,7 @@ Experience Manager as a Cloud Service은 고급 AI 기능을 제공하여 콘텐
     {title = Set up AI in AEM}
     {description = Learn what access is needed to use AI in AEM.}
     {cta = Set up}
-* ./aem-ai-assistant.md
+* ./ai-assistant.md
     {title = AEM AI Assistant}
     {description = Learn how AI Assistant provides product knowledge and support in AEM.}
     {cta = Watch}
@@ -48,7 +48,7 @@ Experience Manager as a Cloud Service은 고급 AI 기능을 제공하여 콘텐
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./setup.md" title="AEM에서 AI 설정" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3474073/?captions=kor&format=jpeg&nocache=1767634731991" alt="AEM에서 AI 설정"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3474066/?format=jpeg&nocache=1767634731991" alt="AEM에서 AI 설정"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -71,7 +71,7 @@ Experience Manager as a Cloud Service은 고급 AI 기능을 제공하여 콘텐
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./agents-in-aem.md" title="AEM의 에이전트" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475365/?captions=kor&format=jpeg&nocache=1767634731999" alt="AEM의 에이전트"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475357/?format=jpeg&nocache=1767634731999" alt="AEM의 에이전트"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
