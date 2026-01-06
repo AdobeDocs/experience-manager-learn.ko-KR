@@ -24,7 +24,7 @@ AEM에서 AEM AI Assistant 및 에이전트를 사용하려면 Adobe Experience 
 
 [Adobe Admin Console](https://adminconsole.adobe.com)을(를) 사용하여 Adobe Experience Manager에서 AI Assistant에 대한 액세스를 구성하는 방법에 대해 알아봅니다. 이 단계는 사용자가 도우미에서 응답을 얻고 자동 티켓 생성을 활용할 수 있도록 하는 데 필요합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3474066/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3474073/?captions=kor&learn=on&enablevpops)
 
 ### AEM의 에이전트
 
