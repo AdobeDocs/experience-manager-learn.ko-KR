@@ -28,7 +28,7 @@ AEM에서 AEM AI Assistant 및 에이전트를 사용하려면 Adobe Experience 
 
 ### AEM의 에이전트
 
-AEM에서 에이전트를 사용하려면 먼저 [AEM AI Assistant](#aem-ai-assistant) 액세스가 구성되어 있어야 합니다. AEM의 에이전트는 Adobe에서 프로비저닝해야 합니다. AEM의 에이전트에 대한 액세스 권한을 요청하려면 Adobe 담당자 또는 [Adobe 지원](https://experienceleague.adobe.com/en/support)에 문의하십시오.
+AEM에서 에이전트를 사용하려면 먼저 [AEM AI Assistant](#aem-ai-assistant) 액세스가 구성되어 있어야 합니다. AEM의 에이전트는 Adobe에서 프로비저닝해야 합니다. AEM의 에이전트에 대한 액세스 권한을 요청하려면 Adobe 담당자 또는 [Adobe 지원](https://experienceleague.adobe.com/ko/support)에 문의하십시오.
 
 ## 공간
 
