@@ -22,6 +22,6 @@ ht-degree: 0%
 
 Adobe 스냅샷은 최적화된 동적 이미지 제공을 위한 Dynamic Media의 기능을 보여 주도록 설계된 시각적 데모 도구입니다. 테스트 이미지 또는 Dynamic Media URL을 실험하여 다양한 Dynamic Media 이미지 수정자, 스마트 자르기 및 파일 크기에 대한 스마트 이미징 최적화(WebP 및 AVIF 게재)의 출력을 시각적으로 관찰합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3419421/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3445570/?captions=kor&learn=on)
 
 [Adobe 스냅숏 시작](https://snapshot.scene7.com/)
