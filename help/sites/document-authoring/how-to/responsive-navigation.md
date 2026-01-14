@@ -25,4 +25,4 @@ ht-degree: 16%
 
 문서 작성에서 응답형 탐색을 수행하는 방법을 살펴봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425707/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438174/?captions=kor&learn=on)
