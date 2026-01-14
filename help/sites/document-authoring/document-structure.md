@@ -1,7 +1,7 @@
 ---
 title: 문서 작성을 위한 문서 구조
 description: 문서 작성 방법을 살펴봅니다.
-version: Experience Manager 6.5, Experience Manager as a Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Authoring
 topic: Content Management
 role: User
@@ -12,10 +12,10 @@ jira: KT-14467
 thumbnail: 3425701.jpeg
 duration: 104
 exl-id: 637a2d44-554d-45e4-aad2-a9e64feb511b
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8323da7961c4b6ffeaad5f936b7b515bb08a616a
 workflow-type: tm+mt
 source-wordcount: '28'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 
@@ -25,4 +25,4 @@ ht-degree: 0%
 
 기본 콘텐츠, 블록 등을 사용하여 문서 작성을 구성하는 방법을 살펴봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3438819/?learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3425701/?learn=on)

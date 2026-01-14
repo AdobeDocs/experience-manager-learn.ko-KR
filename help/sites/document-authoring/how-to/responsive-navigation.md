@@ -1,7 +1,7 @@
 ---
-title: 응답형 탐색
+title: 반응형 탐색
 description: Edge Delivery 문서 작성에서 응답형 탐색을 수행하는 방법을 살펴봅니다.
-version: Experience Manager 6.5, Experience Manager as a Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Authoring
 topic: Content Management
 role: User
@@ -12,17 +12,17 @@ jira: KT-14473
 thumbnail: 3425707.jpeg
 duration: 91
 exl-id: 58af7383-61eb-4df1-ac2b-6d7bafb999c3
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8323da7961c4b6ffeaad5f936b7b515bb08a616a
 workflow-type: tm+mt
 source-wordcount: '24'
-ht-degree: 0%
+ht-degree: 16%
 
 ---
 
-# 응답형 탐색
+# 반응형 탐색
 
 {{edge-delivery-services}}
 
 문서 작성에서 응답형 탐색을 수행하는 방법을 살펴봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3438174/?learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3425707/?learn=on)
