@@ -13,10 +13,10 @@ badgeIntegration: label="통합" type="positive"
 badgeVersions: label="AEM Assets as a Cloud Service, AEM Assets 6.5" before-title="false"
 exl-id: 4f279c0d-270f-433e-b047-88c02f5b1e78
 duration: 49
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
-source-wordcount: '280'
-ht-degree: 100%
+source-git-commit: 866dca32844a7185bdf3980e38570da1d44d8b83
+workflow-type: tm+mt
+source-wordcount: '328'
+ht-degree: 85%
 
 ---
 
@@ -95,3 +95,9 @@ ht-degree: 100%
    </td>
   </tr>  
 </tbody></table>
+
+## Workfront Fusion을 통해 연결
+
+Workfront Fusion을 사용하여 Workfront과 AEM Assets을 연결하는 경우 프로젝트 생성 및 워크플로 오케스트레이션을 자동화하려면 Workfron Fusion 및 AEM Assets 통합 설명서를 참조하십시오.
+
+[Workfront Fusion을 사용하여 Workfront 문제를 AEM 워크플로가 있는 프로젝트로 변환](https://experienceleague.adobe.com/en/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/use-fusion-to-create-project-with-workflows)
