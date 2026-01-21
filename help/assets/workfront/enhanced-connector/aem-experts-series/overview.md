@@ -100,4 +100,4 @@ ht-degree: 85%
 
 Workfront Fusion을 사용하여 Workfront과 AEM Assets을 연결하는 경우 프로젝트 생성 및 워크플로 오케스트레이션을 자동화하려면 Workfron Fusion 및 AEM Assets 통합 설명서를 참조하십시오.
 
-[Workfront Fusion을 사용하여 Workfront 문제를 AEM 워크플로가 있는 프로젝트로 변환](https://experienceleague.adobe.com/en/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/use-fusion-to-create-project-with-workflows)
+[Workfront Fusion을 사용하여 Workfront 문제를 AEM 워크플로가 있는 프로젝트로 변환](https://experienceleague.adobe.com/ko/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/use-fusion-to-create-project-with-workflows)
