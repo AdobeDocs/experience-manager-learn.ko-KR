@@ -68,7 +68,7 @@ SAML 2.0 인증을 설정할 때 필요한 사항은 다음과 같습니다.
 + AEM 관리자가 Cloud Service 환경으로서의 AEM 액세스
 + IDP에 대한 관리자 액세스
 + 선택적으로, SAML 페이로드를 암호화하는 데 사용되는 공개/개인 키 쌍에 대한 액세스
-+ AEM Sites 페이지(또는 페이지 트리), AEM Publish에 게시되고 [CUG(폐쇄된 사용자 그룹)에 의해 보호됨](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/page-properties#permissions)
++ AEM Sites 페이지(또는 페이지 트리), AEM Publish에 게시되고 [CUG(폐쇄된 사용자 그룹)에 의해 보호됨](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/page-properties#permissions)
 
 SAML 2.0은 AEM Publish 또는 미리 보기 사용을 인증하는 용도로만 지원됩니다. 및 IDP [를 사용하여 AEM 작성자 인증을 관리하려면 IDP를 Adobe Systems IMS](https://helpx.adobe.com/kr/enterprise/using/set-up-identity.html)와 통합하십시오.
 
@@ -334,7 +334,7 @@ AEM에서는 Adobe Systems Granite SAML 2.0 Authentication Handler OSGi 구성�
 
 ### 암호화 사용
 
-AuthnRequest 및 SAML 어설션[&#128279;](#encrypting-the-authnrequest-and-saml-assertion)을 암호화할 때 `useEncryption`, `spPrivateKeyAlias`, 및 `keyStorePassword`. 에 `keyStorePassword` 암호 포함 따라서 값은 OSGi 구성 파일에 저장되지 않고 비밀 구성 값을 사용하여 [삽입되어야 합니다](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#secret-configuration-values)
+AuthnRequest 및 SAML 어설션[&#128279;](#encrypting-the-authnrequest-and-saml-assertion)을 암호화할 때 `useEncryption`, `spPrivateKeyAlias`, 및 `keyStorePassword`. 에 `keyStorePassword` 암호 포함 따라서 값은 OSGi 구성 파일에 저장되지 않고 비밀 구성 값을 사용하여 [삽입되어야 합니다](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=ko#secret-configuration-values)
 
 +++선택적으로, 암호화를 사용하도록 OSGi 구성을 업데이트하십시오
 
@@ -367,7 +367,7 @@ AuthnRequest 및 SAML 어설션[&#128279;](#encrypting-the-authnrequest-and-saml
 
 + `useEncryption` 로 설정 `true`
 + `spPrivateKeyAlias` SAML 통합에서 사용하는 개인 키에 대한 키 저장소 항목 별칭이 포함되어 있습니다.
-+ `keyStorePassword`[에는 사용자 키 저장소의 암호를 포함하는 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#secret-configuration-values) OSGi 시크릿 구성 변수`authentication-service`가 포함되어 있습니다.
++ `keyStorePassword`[에는 사용자 키 저장소의 암호를 포함하는 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=ko#secret-configuration-values) OSGi 시크릿 구성 변수`authentication-service`가 포함되어 있습니다.
 
 +++
 
@@ -453,7 +453,7 @@ Apache 웹 서버에서 URL 재작성이 구성된 경우(`dispatcher/src/conf.d
 ### 새로운 환경에서 SAML 사용자에 대해 동적 그룹 멤버십을 활성화하는 방법
 
 새로운 AEM as a Cloud Service 환경에서 그룹 평가 성능을 크게 향상시키려면 새 환경에서 동적 그룹 멤버십 기능을 활성화하는 것이 좋습니다.
-이 단계는 데이터 동기화가 활성화될 때도 필요합니다. 자세한 내용은 [여기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier) .
+이 단계는 데이터 동기화가 활성화될 때도 필요합니다. 자세한 내용은 [여기](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier) .
 이렇게 하려면 OSGI 구성 파일에 다음 속성 추가하십시오.
 
 `/apps/example/osgiconfig/config.publish/com.adobe.granite.auth.saml.SamlAuthenticationHandler~example.cfg.json`
