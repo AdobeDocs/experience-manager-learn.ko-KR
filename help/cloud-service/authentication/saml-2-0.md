@@ -104,7 +104,7 @@ IDP의 공개 인증서는 AEM Global Trust Store에 추가되며, IDP에서 전
    ```
 
 1. AEM 작성자에 AEM 관리자로 로그인합니다.
-1. > Security > Trust Store __도구__&#x200B;이동합니다.
+1. &#x200B;> Security > Trust Store __도구__&#x200B;이동합니다.
 1. 글로벌 Trust Store를 만들기 또는 엽니다. 글로벌 Trust Store를 만드는 경우 암호 안전한 곳에 스토어하십시오.
 1. Add certificate from CER file(CER 파일에서 인증서 추가)을 확장 __합니다__.
 1. 인증서 파일&#x200B;__선택을 선택하고__ IDP에서 제공한 인증서 파일을 업로드합니다.
@@ -131,7 +131,7 @@ IDP의 공개 인증서는 AEM Global Trust Store에 추가되며, IDP에서 전
 
 ## authentication-service 키 저장소 만들기{#authentication-service-keystore}
 
-_SAML 2.0 인증 핸들러 OSGi 구성 속성 [ 로 설정 `handleLogout` 되거나 AuthnRequest 서명/SAML 어설션 암호화`true`](#saml-20-authenticationsaml-2-0-authentication)가 필요한 경우 [](#install-aem-public-private-key-pair)authentication-service에 대한 키 저장소를 작성해야 합니다_
+_SAML 2.0 인증 핸들러 OSGi 구성 속성 [&#x200B; 로 설정 `handleLogout` 되거나 AuthnRequest 서명/SAML 어설션 암호화`true`](#saml-20-authenticationsaml-2-0-authentication)가 필요한 경우 [&#128279;](#install-aem-public-private-key-pair)authentication-service에 대한 키 저장소를 작성해야 합니다_
 
 1. AEM 작성자에 AEM 관리자로 로그인하여 개인 키를 업로드합니다.
 1. __도구 > 보안 > 사용자__(으)로 이동하고 __인증 서비스__ 사용자를 선택한 다음 상단 작업 표시줄에서 __속성__&#x200B;을 선택합니다.
@@ -334,7 +334,7 @@ AEM에서는 Adobe Systems Granite SAML 2.0 Authentication Handler OSGi 구성�
 
 ### 암호화 사용
 
-AuthnRequest 및 SAML 어설션[](#encrypting-the-authnrequest-and-saml-assertion)을 암호화할 때 `useEncryption`, `spPrivateKeyAlias`, 및 `keyStorePassword`. 에 `keyStorePassword` 암호 포함 따라서 값은 OSGi 구성 파일에 저장되지 않고 비밀 구성 값을 사용하여 [삽입되어야 합니다](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#secret-configuration-values)
+AuthnRequest 및 SAML 어설션[&#128279;](#encrypting-the-authnrequest-and-saml-assertion)을 암호화할 때 `useEncryption`, `spPrivateKeyAlias`, 및 `keyStorePassword`. 에 `keyStorePassword` 암호 포함 따라서 값은 OSGi 구성 파일에 저장되지 않고 비밀 구성 값을 사용하여 [삽입되어야 합니다](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#secret-configuration-values)
 
 +++선택적으로, 암호화를 사용하도록 OSGi 구성을 업데이트하십시오
 
@@ -367,7 +367,7 @@ AuthnRequest 및 SAML 어설션[](#encrypting-the-authnrequest-and-saml-assertio
 
 + `useEncryption` 로 설정 `true`
 + `spPrivateKeyAlias` SAML 통합에서 사용하는 개인 키에 대한 키 저장소 항목 별칭이 포함되어 있습니다.
-+ `keyStorePassword`[에는 사용자 키 저장소의 암호를 포함하는 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#secret-configuration-values) OSGi 시크릿 구성 변수`authentication-service`가 포함되어 있습니다.
++ `keyStorePassword`[에는 사용자 키 저장소의 암호를 포함하는 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#secret-configuration-values) OSGi 시크릿 구성 변수`authentication-service`가 포함되어 있습니다.
 
 +++
 
@@ -448,7 +448,7 @@ Apache 웹 서버에서 URL 재작성이 구성된 경우(`dispatcher/src/conf.d
 
 ## 동적 그룹 구성원
 
-동적 그룹 멤버십은 그룹 평가 및 프로비저닝의 성능을 향상시키는 Apache Jackrabbit Oak[ 기능입니다](https://jackrabbit.apache.org/oak/docs/security/authentication/external/dynamic.html). 이 섹션에서는 이 기능이 활성화될 때 사용자 및 그룹이 저장되는 방법과 SAML Authentication Handler의 구성을 수정하여 신규 또는 기존 환경에서 활성화하는 방법에 대해 설명합니다.
+동적 그룹 멤버십은 그룹 평가 및 프로비저닝의 성능을 향상시키는 Apache Jackrabbit Oak[&#x200B; 기능입니다](https://jackrabbit.apache.org/oak/docs/security/authentication/external/dynamic.html). 이 섹션에서는 이 기능이 활성화될 때 사용자 및 그룹이 저장되는 방법과 SAML Authentication Handler의 구성을 수정하여 신규 또는 기존 환경에서 활성화하는 방법에 대해 설명합니다.
 
 ### 새로운 환경에서 SAML 사용자에 대해 동적 그룹 멤버십을 활성화하는 방법
 
@@ -458,9 +458,9 @@ Apache 웹 서버에서 URL 재작성이 구성된 경우(`dispatcher/src/conf.d
 
 `/apps/example/osgiconfig/config.publish/com.adobe.granite.auth.saml.SamlAuthenticationHandler~example.cfg.json`
 
-이 구성을 사용하면 사용자 및 그룹이 Oak 외부 사용자[로 ](https://jackrabbit.apache.org/oak/docs/security/authentication/identitymanagement.html)만들어집니다. AEM에서 외부 사용자 및 그룹의 기본값은 `rep:principalName` 또는 `[user name];[idp]`로 구성됩니다`[group name];[idp]`.
+이 구성을 사용하면 사용자 및 그룹이 Oak 외부 사용자[로 &#x200B;](https://jackrabbit.apache.org/oak/docs/security/authentication/identitymanagement.html)만들어집니다. AEM에서 외부 사용자 및 그룹의 기본값은 `rep:principalName` 또는 `[user name];[idp]`로 구성됩니다`[group name];[idp]`.
 ACL(액세스 제어 목록)은 사용자 또는 그룹의 PrincipalName과 연결되어 있습니다.
-이전에 `identitySyncType` 지정되지 않았거나 로 설정 `default`되지 않은 기존 배포 환경에서 이 구성을 배포하면 새 사용자 및 그룹이 생성되고 ACL을 이러한 새 사용자 및 그룹에 적용해야 합니다. 외부 그룹에는 로컬 사용자가 포함될 수 없습니다. [](https://sling.apache.org/documentation/bundles/repository-initialization.html) 보고서는 SAML 외부 그룹에 대한 ACL을 생성하는 데 사용할 수 있으며, 사용자가 로그인을 수행할 때만 생성되는 경우 ACL이 균일 가능합니다.
+이전에 `identitySyncType` 지정되지 않았거나 로 설정 `default`되지 않은 기존 배포 환경에서 이 구성을 배포하면 새 사용자 및 그룹이 생성되고 ACL을 이러한 새 사용자 및 그룹에 적용해야 합니다. 외부 그룹에는 로컬 사용자가 포함될 수 없습니다. [&#128279;](https://sling.apache.org/documentation/bundles/repository-initialization.html) 보고서는 SAML 외부 그룹에 대한 ACL을 생성하는 데 사용할 수 있으며, 사용자가 로그인을 수행할 때만 생성되는 경우 ACL이 균일 가능합니다.
 ACL에서 이러한 리팩토링을 방지하기 위해 표준 [마이그레이션 기능이](#automatic-migration-to-dynamic-group-membership-for-existing-environments) 구현되었습니다.
 
 ### 동적 그룹 멤버십를 사용하여 로컬 및 외부 그룹에 멤버십을 저장하는 방법How memberships are stored in local and external groups with dynamic
@@ -598,7 +598,7 @@ SAML 인증은 다음 형식으로 HTTP GET 요청을 만들어 호출할 수 �
 
 | 쿼리 매개 변수 이름 | 쿼리 매개 변수 값 |
 |----------------------|-----------------------|
-| `resource` | Adobe Systems Granite SAML 2.0 Authentication Handler OSGi 구성의[ ](#configure-saml-2-0-authentication-handler) 속성에 정의된 `path`대로 SAML 인증 핸들러가 수신하는 모든 JCR 경로 또는 하위 경로입니다. |
+| `resource` | Adobe Systems Granite SAML 2.0 Authentication Handler OSGi 구성의[&#x200B; &#x200B;](#configure-saml-2-0-authentication-handler) 속성에 정의된 `path`대로 SAML 인증 핸들러가 수신하는 모든 JCR 경로 또는 하위 경로입니다. |
 | `saml_request_path` | SAML 인증에 성공한 후 사용자 이동해야 하는 URL 경로입니다. |
 
 예를 들어, 이 HTML 링크는 SAML 로그인 흐름을 트리거하고, 성공하면 사용자 `/content/wknd/us/en/protected/page.html`를 . 이러한 쿼리 매개 변수는 필요에 따라 프로그래밍 방식으로 설정할 수 있습니다.
@@ -619,7 +619,7 @@ SAML 인증은 포맷 형식으로 HTTP POST 요청을 생성하여 호출할 �
 
 | 양식 데이터 이름 | 양식 데이터 값 |
 |----------------------|-----------------------|
-| `resource` | Adobe Systems Granite SAML 2.0 Authentication Handler OSGi 구성의[ ](#configure-saml-2-0-authentication-handler) 속성에 정의된 `path`대로 SAML 인증 핸들러가 수신하는 모든 JCR 경로 또는 하위 경로입니다. |
+| `resource` | Adobe Systems Granite SAML 2.0 Authentication Handler OSGi 구성의[&#x200B; &#x200B;](#configure-saml-2-0-authentication-handler) 속성에 정의된 `path`대로 SAML 인증 핸들러가 수신하는 모든 JCR 경로 또는 하위 경로입니다. |
 | `saml_request_path` | SAML 인증에 성공한 후 사용자 이동해야 하는 URL 경로입니다. |
 
 
