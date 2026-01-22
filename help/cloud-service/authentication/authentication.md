@@ -25,11 +25,11 @@ AEM as a Cloud Service은 여러 인증 옵션을 지원하며 서비스 유형�
 |                       | AEM Author | AEM 게시 인스턴스 |
 |-----------------------|:----------:|:-----------:|
 | [Adobe IMS &#x200B;](../accessing/overview.md)<br>*(AEM 미리 보기는 Adobe IMS를 지원하지 않습니다)* | ✔ | ✔ |
-| [OpenID 연결(OIDC)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier) | ✘ | ✔ |
-| Adobe IMS를 통한 [SAML 2.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html#how-to-set-up) | ✔ | ✔ |
+| [OpenID 연결(OIDC)](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier) | ✘ | ✔ |
+| Adobe IMS를 통한 [SAML 2.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=ko#how-to-set-up) | ✔ | ✔ |
 | [SAML 2.0](./saml-2-0.md) | ✘ | ✔ |
-| [SSO(Single Sign-On)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html#integration-with-an-idp) | ✘ | ✔ |
-| [OAuth](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html#integration-with-an-idp) | ✘ | ✔ |
+| [SSO(Single Sign-On)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html?lang=ko#integration-with-an-idp) | ✘ | ✔ |
+| [OAuth](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html?lang=ko#integration-with-an-idp) | ✘ | ✔ |
 | [토큰 인증](../../headless-tutorial/authentication/overview.md) | ✔ | ✔ |
 | 기본 인증 | ✘ | ✘ |
 
