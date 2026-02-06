@@ -25,7 +25,7 @@ AEM 개발 에이전트는 개발자, DevOps 엔지니어 및 관리자를 포�
 
 >[!TIP]
 >
-> 또한 AEM에서 사용 가능한 에이전트의 전체 목록, 기능 및 액세스 방법에 대해서는 [AEM as a Cloud Service의 에이전트 개요](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/overview)를 참조하십시오.
+> 또한 AEM에서 사용 가능한 에이전트의 전체 목록, 기능 및 액세스 방법에 대해서는 [AEM as a Cloud Service의 에이전트 개요](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/agents/overview)를 참조하십시오.
 
 
 ## 개요
@@ -41,9 +41,9 @@ AEM 개발 에이전트는 실패한 CI/CD 파이프라인을 나열, 문제 해
 이 자습서를 수행하려면 다음이 필요합니다.
 
 - AEM의 AI Assistant 및 에이전트 가 활성화되었습니다. 자세한 내용은 [AEM에서 AI 설정](./setup.md)을 참조하십시오. 이 문서에 언급된 플레이그라운드에는 AEM Development Agent 기능이 없습니다.
-- 개발자 또는 프로그램 관리자 역할을 가진 Adobe [Cloud Manager](https://my.cloudmanager.adobe.com/)에 액세스합니다. 자세한 내용은 [역할 정의](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles#role-definitions)를 참조하십시오.
+- 개발자 또는 프로그램 관리자 역할을 가진 Adobe [Cloud Manager](https://my.cloudmanager.adobe.com/)에 액세스합니다. 자세한 내용은 [역할 정의](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-manager/content/requirements/users-and-roles#role-definitions)를 참조하십시오.
 - AEM as a Cloud Service 환경
-- [Beta 프로그램](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs)을 통해 AEM의 에이전트에 액세스
+- [Beta 프로그램](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs)을 통해 AEM의 에이전트에 액세스
 - 로컬 컴퓨터에 복제된 [WKND Sites 프로젝트](https://github.com/adobe/aem-guides-wknd)
 
 ### AEM Development Agent의 현재 기능
@@ -122,7 +122,7 @@ AEM Development Agent의 기능은 지속적으로 확장되고 정기적으로 
 
 ### 코드 품질 파이프라인 생성 및 구성
 
-이 자습서에서는 코드 품질 파이프라인(비프로덕션)을 사용하여 문제를 해결하기 위해 파이프라인 오류를 트리거합니다. 코드 품질 파이프라인에 대한 자세한 내용은 [CI/CD 파이프라인 소개](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#introduction)를 참조하십시오.
+이 자습서에서는 코드 품질 파이프라인(비프로덕션)을 사용하여 문제를 해결하기 위해 파이프라인 오류를 트리거합니다. 코드 품질 파이프라인에 대한 자세한 내용은 [CI/CD 파이프라인 소개](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#introduction)를 참조하십시오.
 
 - Cloud Manager에서 **파이프라인** 섹션으로 이동한 다음 **추가** > **비프로덕션 파이프라인 추가**&#x200B;를 선택합니다.
 - **비프로덕션 파이프라인 추가** 대화 상자에서 다음을 구성합니다.
@@ -210,17 +210,17 @@ WKND Sites 프로젝트에는 종속성 누락 및 잘못된 구성과 같은 �
 
 ![분기 비교](./assets/dev-agent/compare-branches.png)
 
-또한 AEM 개발 에이전트를 사용하는 방법에 대한 자세한 아이디어를 얻으려면 [샘플 프롬프트](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/development/overview#sample-prompts)를 참조하십시오.
+또한 AEM 개발 에이전트를 사용하는 방법에 대한 자세한 아이디어를 얻으려면 [샘플 프롬프트](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/agents/development/overview#sample-prompts)를 참조하십시오.
 
 ## 요약
 
 이 자습서에서는 AEM 개발 에이전트를 사용하여 AI Assistant를 사용하여 실패한 CI/CD 파이프라인의 문제를 해결하고 수정하는 방법에 대해 알아보았습니다. 또한 아젠틱 AI가 실행 가능한 통찰력과 코드 변경 사항을 제공하여 기술 워크플로우를 가속화하는 방법에 대해서도 배웠습니다.
 
-AEM 개발 에이전트와 AEM의 다른 에이전트를 사용하여 워크플로를 가속화하십시오. 자세한 내용은 [AEM의 에이전트 개요](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/overview)를 참조하십시오.
+AEM 개발 에이전트와 AEM의 다른 에이전트를 사용하여 워크플로를 가속화하십시오. 자세한 내용은 [AEM의 에이전트 개요](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/agents/overview)를 참조하십시오.
 
 ## 추가 리소스
 
 - [Experience Manager의 AI](./overview.md)
-- [AEM의 에이전트 개요](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/overview)
-- [개발 에이전트 개요](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/development/overview)
-- [AEM의 에이전트 개요](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/overview)
+- [AEM의 에이전트 개요](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/agents/overview)
+- [개발 에이전트 개요](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/agents/development/overview)
+- [AEM의 에이전트 개요](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/agents/overview)
