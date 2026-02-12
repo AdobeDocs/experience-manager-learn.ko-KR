@@ -117,10 +117,10 @@ AEM 분석기는 **what**&#x200B;이(가) 더 이상 사용되지 않음을 보�
 
 | 분석기 경고 유형 | 표시 내용 | 권장 작업 | 참조 |
 | --------------------- | ----------------- | ------------------ | --------- |
-| 더 이상 사용되지 않는 AEM API | API가 AEM as a Cloud Service에서 제거됩니다. | 사용을 지원되는 공개 API로 바꾸기 | [API 제거 지침](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features#api-removal-guidance) |
-| 더 이상 사용되지 않는 AEM 패키지 또는 클래스 | 패키지 또는 클래스는 더 이상 지원되지 않습니다. | 권장 대안을 사용하기 위한 리팩터링 코드 | [사용되지 않는 API](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features#aem-apis) |
-| 더 이상 사용되지 않는 타사 라이브러리 | 라이브러리는 향후 SDK에서 지원되지 않습니다. | 종속성 및 리팩터링 사용 업그레이드 | [일반 지침](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features#api-removal-guidance) |
-| 더 이상 사용되지 않는 Sling/OSGi 패턴 | 기존 주석 또는 API가 감지됨 | 최신 Sling 및 OSGi API로 마이그레이션 | [Sling/OSGi 패턴 제거](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features#api-removal-guidance) |
+| 더 이상 사용되지 않는 AEM API | API가 AEM as a Cloud Service에서 제거됩니다. | 사용을 지원되는 공개 API로 바꾸기 | [API 제거 지침](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features#api-removal-guidance) |
+| 더 이상 사용되지 않는 AEM 패키지 또는 클래스 | 패키지 또는 클래스는 더 이상 지원되지 않습니다. | 권장 대안을 사용하기 위한 리팩터링 코드 | [사용되지 않는 API](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features#aem-apis) |
+| 더 이상 사용되지 않는 타사 라이브러리 | 라이브러리는 향후 SDK에서 지원되지 않습니다. | 종속성 및 리팩터링 사용 업그레이드 | [일반 지침](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features#api-removal-guidance) |
+| 더 이상 사용되지 않는 Sling/OSGi 패턴 | 기존 주석 또는 API가 감지됨 | 최신 Sling 및 OSGi API로 마이그레이션 | [Sling/OSGi 패턴 제거](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features#api-removal-guidance) |
 | 제거 예정(미래 날짜) | API는 여전히 작동하지만 제거는 나중에 적용됩니다. | 파이프라인 시행 전에 정리 예약 | [릴리스 정보](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/release-notes/home) |
 
 ### 실용적인 지침
@@ -134,4 +134,4 @@ AEM 분석기는 **what**&#x200B;이(가) 더 이상 사용되지 않음을 보�
 ## 추가 리소스
 
 - [AEM Analyzer Maven 플러그인](https://github.com/adobe/aemanalyser-maven-plugin/blob/main/aemanalyser-maven-plugin/README.md)
-- [더 이상 사용되지 않는 기능 및 제거된 API](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features#api-removal-guidance)
+- [더 이상 사용되지 않는 기능 및 제거된 API](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features#api-removal-guidance)
