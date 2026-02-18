@@ -68,7 +68,7 @@ SAML 2.0 인증을 설정할 때 필요한 사항은 다음과 같습니다.
 + AEM as a Cloud Service 환경에 대한 AEM 관리자 액세스
 + IDP에 대한 관리자 액세스
 + 필요한 경우 SAML 페이로드를 암호화하는 데 사용되는 공개/개인 키 쌍에 액세스
-+ AEM Sites 페이지(또는 페이지 트리), AEM Publish에 게시되고 [폐쇄형 사용자 그룹(CUG)으로 보호됨](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/page-properties#permissions)
++ AEM Sites 페이지(또는 페이지 트리), AEM Publish에 게시되고 [폐쇄형 사용자 그룹(CUG)으로 보호됨](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/page-properties#permissions)
 
 SAML 2.0은 AEM 게시 또는 미리보기에 대한 사용을 인증하는 데만 지원됩니다. 및 IDP를 사용하여 AEM 작성자의 인증을 관리하려면 [IDP를 Adobe IMS와 통합](https://helpx.adobe.com/kr/enterprise/using/set-up-identity.html)하십시오.
 
@@ -334,7 +334,7 @@ SAML 구성이 환경마다 다른 경우 환경당 OSGi 구성(`config.publish.
 
 ### 암호화 사용
 
-[AuthnRequest 및 SAML 어설션 암호화](#encrypting-the-authnrequest-and-saml-assertion)할 때 `useEncryption`, `spPrivateKeyAlias` 및 `keyStorePassword` 속성이 필요합니다. `keyStorePassword`에 암호가 포함되어 있으므로 값을 OSGi 구성 파일에 저장하지 말고 [비밀 구성 값](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#secret-configuration-values)을 사용하여 삽입해야 합니다.
+[AuthnRequest 및 SAML 어설션 암호화](#encrypting-the-authnrequest-and-saml-assertion)할 때 `useEncryption`, `spPrivateKeyAlias` 및 `keyStorePassword` 속성이 필요합니다. `keyStorePassword`에 암호가 포함되어 있으므로 값을 OSGi 구성 파일에 저장하지 말고 [비밀 구성 값](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=ko#secret-configuration-values)을 사용하여 삽입해야 합니다.
 
 +++필요한 경우 암호화를 사용하도록 OSGi 구성을 업데이트합니다
 
@@ -367,7 +367,7 @@ SAML 구성이 환경마다 다른 경우 환경당 OSGi 구성(`config.publish.
 
 + `useEncryption`이(가) `true`(으)로 설정됨
 + `spPrivateKeyAlias`에 SAML 통합에서 사용하는 개인 키에 대한 키 저장소 항목 별칭이 포함되어 있습니다.
-+ `keyStorePassword`에 [&#x200B; 사용자 키 저장소의 암호를 포함하는 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#secret-configuration-values)OSGi 비밀 구성 변수`authentication-service`이(가) 있습니다.
++ `keyStorePassword`에 [&#x200B; 사용자 키 저장소의 암호를 포함하는 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=ko#secret-configuration-values)OSGi 비밀 구성 변수`authentication-service`이(가) 있습니다.
 
 +++
 
@@ -453,7 +453,7 @@ Apache 웹 서버에서 URL 재작성이 구성(`dispatcher/src/conf.d/rewrites/
 ### 새 환경에서 SAML 사용자에 대해 동적 그룹 멤버십을 활성화하는 방법
 
 새 AEM as a Cloud Service 환경에서 그룹 평가 성능을 크게 향상시키려면 새 환경에서 동적 그룹 멤버십 기능을 활성화하는 것이 좋습니다.
-또한 데이터 동기화가 활성화될 때 필요한 단계입니다. 자세한 내용은 [여기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier)를 참조하세요.
+또한 데이터 동기화가 활성화될 때 필요한 단계입니다. 자세한 내용은 [여기](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier)를 참조하세요.
 이렇게 하려면 OSGI 구성 파일에 다음 속성을 추가합니다.
 
 `/apps/example/osgiconfig/config.publish/com.adobe.granite.auth.saml.SamlAuthenticationHandler~example.cfg.json`
@@ -623,7 +623,7 @@ public void postSyncUserProcess(
 
 **중요:** 리포지토리에서 사용자 속성을 수정하려면 후크를 구현해야 합니다.
 + `SlingRepository`을(를) 통해 `@Reference` 참조가 삽입됨
-+ 적절한 권한이 있는 구성된 [서비스 사용자](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/service-users)&#x200B;(&quot;Apache Sling 서비스 사용자 매퍼 서비스 수정&quot;에 구성됨)
++ 적절한 권한이 있는 구성된 [서비스 사용자](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/advanced/service-users)&#x200B;(&quot;Apache Sling 서비스 사용자 매퍼 서비스 수정&quot;에 구성됨)
 + try-catch-finally 블록을 사용한 적절한 세션 관리
 
 ### 사용자 정의 SAML 후크 구현
@@ -809,7 +809,7 @@ AEM Maven 핵심 프로젝트 `pom.xml`에 필요한 SAML SPI 종속성을 추�
 
 #### 4단계: 서비스 사용자 구성(저장소를 수정하는 경우)
 
-`postSyncUserProcess` 예에 표시된 대로 SAML 후크에서 리포지토리의 사용자 속성을 수정해야 하는 경우 [서비스 사용자](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/service-users)를 구성해야 합니다.
+`postSyncUserProcess` 예에 표시된 대로 SAML 후크에서 리포지토리의 사용자 속성을 수정해야 하는 경우 [서비스 사용자](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/advanced/service-users)를 구성해야 합니다.
 
 1. `/ui.config/src/main/content/jcr_root/apps/myproject/osgiconfig/config/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~saml.cfg.json`의 프로젝트에서 서비스 사용자 매핑을 만듭니다.
 
@@ -852,8 +852,8 @@ end
 + **테스트**: 프로덕션에 배포하기 전에 낮은 환경에서 사용자 지정 후크를 철저하게 테스트합니다.
 + **여러 후크**: 여러 SAML 후크 구현을 구성할 수 있습니다. 일치하는 모든 후크가 실행됩니다. OSGi 구성 요소에서 `service.ranking` 속성을 사용하여 실행 순서를 제어합니다(높은 순위 값이 먼저 실행됨). 여러 SAML 인증 처리기 팩터리 구성(`com.adobe.granite.auth.saml.SamlAuthenticationHandler~<unique-id>`)에서 SAML 후크를 다시 사용하려면 각 SAML 인증 처리기와 일치하는 다른 `idpIdentifier`을(를) 사용하여 여러 후크 구성(OSGi 팩터리 구성)을 만드십시오
 + **보안**: 비즈니스 논리에 사용하기 전에 SAML 어설션의 모든 데이터를 확인하고 정리합니다.
-+ **저장소 액세스**: `postSyncUserProcess`에서 사용자 속성을 수정할 때는 관리 세션이 아닌 적절한 권한이 있는 [서비스 사용자](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/service-users)를 항상 사용하십시오
-+ **서비스 사용자 권한**: [서비스 사용자](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/service-users)에게 필요한 최소 권한을 부여합니다(예: `jcr:read`의 `rep:write` 및 `/home/users`만, 전체 관리자 권한이 아님).
++ **저장소 액세스**: `postSyncUserProcess`에서 사용자 속성을 수정할 때는 관리 세션이 아닌 적절한 권한이 있는 [서비스 사용자](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/advanced/service-users)를 항상 사용하십시오
++ **서비스 사용자 권한**: [서비스 사용자](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/advanced/service-users)에게 필요한 최소 권한을 부여합니다(예: `jcr:read`의 `rep:write` 및 `/home/users`만, 전체 관리자 권한이 아님).
 + **세션 관리**: 예외가 발생하더라도 항상 try-catch-finally 블록을 사용하여 저장소 세션이 올바르게 닫히도록 하십시오
 + **사용자 동기화 시간**: 사용자가 OAK에 동기화된 후 `postSyncUserProcess` 후크가 실행되므로 이 시점에는 사용자 개체가 저장소에 존재할 수 있습니다
 
