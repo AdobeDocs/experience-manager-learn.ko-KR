@@ -7,10 +7,10 @@ sub-product: Experience Manager Assets
 version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: a43bd7ae4e5b0a6793c52b5a8d0f36e3c1b260b1
+source-git-commit: 146cb524c9ff10d6e4a836c0c14bdcabb553ef5d
 workflow-type: tm+mt
 source-wordcount: '472'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -52,7 +52,7 @@ ht-degree: 98%
 
 + 검색 및 발견{#search-and-discovery}
    + [검색](./search-and-discovery/search.md)
-   + [상황별 검색](./search-and-discovery/contextual-search.md)
+   + [AI 검색](./search-and-discovery/ai-search.md)
    + [Adobe Firefly 통합](./search-and-discovery/adobe-firefly.md)
    + [컬렉션](./search-and-discovery/collections.md)
    + [검색 증폭](./search-and-discovery/search-boost.md)
@@ -207,4 +207,4 @@ ht-degree: 98%
 + 배포{#deployment}
    + [다중 테넌시 및 동시 개발](deployment/multitenancy-concurrent-article-understand.md)
 
-+ [Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/overview.html?lang=ko){target=_blank}
++ [Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/overview.html){target=_blank}
