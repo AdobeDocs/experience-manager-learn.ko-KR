@@ -10,10 +10,10 @@ jira: KT-20288
 thumbnail: KT-20288.png
 last-substantial-update: 2026-02-09T00:00:00Z
 exl-id: 287894ea-9cc1-4c27-ac7e-967ad46f4789
-source-git-commit: effacd58725dab502f6fb6a4750646c1ea956de2
+source-git-commit: 08dd5006ebf4ebd94e8bc60594f8f1541feb810f
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 3%
+source-wordcount: '603'
+ht-degree: 2%
 
 ---
 
@@ -23,9 +23,29 @@ AEM as a Cloud Service에서 더 이상 사용되지 않는 API를 찾고 제거
 
 ## 개요
 
-AEM as a Cloud Service **작업 센터**&#x200B;에서 프로젝트의 _더 이상 사용되지 않는 API_&#x200B;에 대해 알려 줍니다. 애플리케이션이 안전하고 성능이 보장되며 Cloud Manager 파이프라인을 사용하여 코드를 계속 배포할 수 있도록 프로젝트에서 더 이상 사용되지 않는 API를 제거하십시오.
+애플리케이션이 안전하고 성능이 보장되며 Cloud Manager 파이프라인을 사용하여 코드를 계속 배포할 수 있도록 프로젝트에서 더 이상 사용되지 않는 API를 제거하십시오.
 
 이 자습서에서는 [AEM Analyzer Maven 플러그인](https://github.com/adobe/aemanalyser-maven-plugin/blob/main/aemanalyser-maven-plugin/README.md)을 사용하여 AEM as a Cloud Service 환경에서 더 이상 사용되지 않는 API를 찾고 제거하는 방법을 알아봅니다.
+
+## 더 이상 사용되지 않는 API에 대한 알림
+
+더 이상 사용되지 않는 API 사용 및 문제 해결에 대한 주의가 정기적으로 보고됩니다. 몇 가지 예를 살펴보겠습니다.
+
+- AEM as a Cloud Service **작업 센터**&#x200B;에서 프로젝트의 _더 이상 사용되지 않는 API_에 대해 알려 줍니다.
+  ![작업 센터에서 더 이상 사용되지 않는 API](./assets/deprecated-apis/actions-center-deprecated-apis.png)
+
+- Cloud Manager 파이프라인의 **코드 스캔** 단계는 프로젝트에서 더 이상 사용되지 않는 API를 보고합니다. **다운로드 세부 정보** 보고서를 검토하여 더 이상 사용되지 않는 API의 전체 목록을 확인하십시오.
+  ![코드 검색에서 더 이상 사용되지 않는 API](./assets/deprecated-apis/code-scanning-summary.png)
+
+- Cloud Manager 파이프라인의 **아티팩트 준비** 단계는 프로젝트에서 더 이상 사용되지 않는 API를 보고합니다. **로그 다운로드** 및 로그 파일에서 _분석기 경고_&#x200B;를 찾으십시오.
+
+  ```
+  2026-02-20 15:40:48.376 Analyser warnings have been found 
+  2026-02-20 15:40:48.376 The analyser found the following warnings for author and publish : 
+  2026-02-20 15:40:48.376 [region-deprecated-api] com.adobe.aem.guides:aem-guides-wknd.core:4.0.5-SNAPSHOT: Usage of deprecated package found : org.apache.commons.lang : Commons Lang 2 is in maintenance mode. Commons Lang 3 should be used instead. Deprecated since 2021-04-30 For removal : 2021-12-31 (com.adobe.aem.guides:aem-guides-wknd.all:4.0.5-SNAPSHOT)
+  2026-02-20 15:40:56.458 Convert Merge Analyse finished.
+  ```
+
 
 ## 더 이상 사용되지 않는 API를 찾는 방법
 
@@ -39,7 +59,7 @@ AEM as a Cloud Service 프로젝트에서 더 이상 사용되지 않는 API를 
 
      ```xml
      ...
-     <aemanalyser.version>1.6.14</aemanalyser.version> <!-- Latest released version as of 09-Feb-2026 -->
+     <aemanalyser.version>1.6.16</aemanalyser.version> <!-- Latest released version as of 20-Feb-2026 -->
      ...
      <!-- AEM Analyser Plugin -->
      <plugin>
@@ -55,7 +75,7 @@ AEM as a Cloud Service 프로젝트에서 더 이상 사용되지 않는 API를 
 
      ```xml
      ...
-     <aem.sdk.api>2026.2.24288.20260204T121510Z-260100</aem.sdk.api> <!-- Latest available AEM SDK version as of 09-Feb-2026 -->
+     <aem.sdk.api>2026.2.24464.20260214T050318Z-260100</aem.sdk.api> <!-- Latest available AEM SDK version as of 20-Feb-2026 -->
      ...
      ```
 
@@ -117,10 +137,10 @@ AEM 분석기는 **what**&#x200B;이(가) 더 이상 사용되지 않음을 보�
 
 | 분석기 경고 유형 | 표시 내용 | 권장 작업 | 참조 |
 | --------------------- | ----------------- | ------------------ | --------- |
-| 더 이상 사용되지 않는 AEM API | API가 AEM as a Cloud Service에서 제거됩니다. | 사용을 지원되는 공개 API로 바꾸기 | [API 제거 지침](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features#api-removal-guidance) |
-| 더 이상 사용되지 않는 AEM 패키지 또는 클래스 | 패키지 또는 클래스는 더 이상 지원되지 않습니다. | 권장 대안을 사용하기 위한 리팩터링 코드 | [사용되지 않는 API](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features#aem-apis) |
-| 더 이상 사용되지 않는 타사 라이브러리 | 라이브러리는 향후 SDK에서 지원되지 않습니다. | 종속성 및 리팩터링 사용 업그레이드 | [일반 지침](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features#api-removal-guidance) |
-| 더 이상 사용되지 않는 Sling/OSGi 패턴 | 기존 주석 또는 API가 감지됨 | 최신 Sling 및 OSGi API로 마이그레이션 | [Sling/OSGi 패턴 제거](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features#api-removal-guidance) |
+| 더 이상 사용되지 않는 AEM API | API가 AEM as a Cloud Service에서 제거됩니다. | 사용을 지원되는 공개 API로 바꾸기 | [API 제거 지침](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features#api-removal-guidance) |
+| 더 이상 사용되지 않는 AEM 패키지 또는 클래스 | 패키지 또는 클래스는 더 이상 지원되지 않습니다. | 권장 대안을 사용하기 위한 리팩터링 코드 | [사용되지 않는 API](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features#aem-apis) |
+| 더 이상 사용되지 않는 타사 라이브러리 | 라이브러리는 향후 SDK에서 지원되지 않습니다. | 종속성 및 리팩터링 사용 업그레이드 | [일반 지침](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features#api-removal-guidance) |
+| 더 이상 사용되지 않는 Sling/OSGi 패턴 | 기존 주석 또는 API가 감지됨 | 최신 Sling 및 OSGi API로 마이그레이션 | [Sling/OSGi 패턴 제거](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features#api-removal-guidance) |
 | 제거 예정(미래 날짜) | API는 여전히 작동하지만 제거는 나중에 적용됩니다. | 파이프라인 시행 전에 정리 예약 | [릴리스 정보](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/release-notes/home) |
 
 ### 실용적인 지침
@@ -134,4 +154,4 @@ AEM 분석기는 **what**&#x200B;이(가) 더 이상 사용되지 않음을 보�
 ## 추가 리소스
 
 - [AEM Analyzer Maven 플러그인](https://github.com/adobe/aemanalyser-maven-plugin/blob/main/aemanalyser-maven-plugin/README.md)
-- [더 이상 사용되지 않는 기능 및 제거된 API](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features#api-removal-guidance)
+- [더 이상 사용되지 않는 기능 및 제거된 API](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features#api-removal-guidance)
