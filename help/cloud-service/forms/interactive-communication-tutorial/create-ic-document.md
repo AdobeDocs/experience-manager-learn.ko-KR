@@ -21,7 +21,7 @@ ht-degree: 2%
 
 미리 정의된 템플릿과 재사용 가능한 조각을 사용하여 대화형 통신 문서를 만듭니다. 이를 통해 문서 작성의 일관성과 효율성을 확보할 수 있습니다. 올바른 양식 데이터 모델(FDM)을 선택하고 지정된 대상 영역에 조각을 삽입하여 동적 데이터를 포함합니다. 최종 출력의 정확성 및 형식을 테스트합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3480054/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3480072/?captions=kor&learn=on&enablevpops)
 
 ## 다음 단계
 

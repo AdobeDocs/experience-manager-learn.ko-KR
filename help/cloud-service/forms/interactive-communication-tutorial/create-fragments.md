@@ -21,7 +21,7 @@ ht-degree: 3%
 
 대화형 통신 문서를 위해 재사용 가능한 조각을 개발하는 방법에 대해 알아봅니다. 레이아웃을 최적화하고 고객 주소 및 편지 본문 섹션에 대한 동적 데이터 바인딩을 보장합니다. 서식, 위치 지정 및 여백 컨트롤을 사용하여 문서 디자인을 향상시킬 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3480042/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3480061/?captions=kor&learn=on&enablevpops)
 
 ## 다음 단계
 

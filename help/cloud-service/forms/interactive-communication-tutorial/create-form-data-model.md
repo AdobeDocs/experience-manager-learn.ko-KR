@@ -25,7 +25,7 @@ Forms 데이터 모델을 만들어 Adobe AEM의 대화형 통신과 외부 데�
 
 양식 데이터 모델을 만드는 데 사용되는 Swagger 파일은 [여기에서 다운로드](assets/UsersAndOrders.json)할 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3480005/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3480024/?captions=kor&learn=on&enablevpops)
 
 ## 다음 단계
 
