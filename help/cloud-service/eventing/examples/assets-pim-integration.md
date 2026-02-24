@@ -53,8 +53,8 @@ AEM Assets 이벤트를 받고 처리하기 위해 [Adobe I/O Runtime](https://d
 
 높은 수준의 개발 단계는 다음과 같습니다.
 
-1. [AEM as a Cloud Service 환경 현대화](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis#modernization-of-aem-as-a-cloud-service-environment)
-1. [AEM API 액세스 사용](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis#enable-aem-apis-access)
+1. [AEM as a Cloud Service 환경 현대화](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis#modernization-of-aem-as-a-cloud-service-environment)
+1. [AEM API 액세스 사용](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis#enable-aem-apis-access)
 1. [Adobe Developer Console(ADC)에서 프로젝트 만들기](./runtime-action.md#Create-project-in-Adobe-Developer-Console)
 1. [로컬 개발을 위해 프로젝트 초기화](./runtime-action.md#initialize-project-for-local-development)
 1. ADC에서 프로젝트 구성
@@ -289,7 +289,7 @@ ADC 프로젝트의 OAuth 서버 간 자격 증명 ClientID가 AEM 인스턴스�
 
 기본적으로 WKND Sites 프로젝트에는 SKU, 공급업체 이름 등과 같은 PIM 관련 메타데이터를 표시하는 자산 메타데이터 스키마가 없습니다. AEM 인스턴스의 에셋 폴더에 에셋 메타데이터 스키마를 만들고 적용해 보겠습니다.
 
-1. AEM as a Cloud Service 자산 인스턴스에 로그인하고 [자산 보기](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/authoring/switch-views)에 있습니다.
+1. AEM as a Cloud Service 자산 인스턴스에 로그인하고 [자산 보기](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/authoring/switch-views)에 있습니다.
 
    ![AEM Assets 보기](../assets/examples/assets-pim-integration/aem-assets-view.png)
 
