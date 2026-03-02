@@ -4,9 +4,9 @@ description: 뉴스레터의 보관된 버전을 다운로드합니다.
 hidefromtoc: true
 hide: true
 exl-id: 16133400-b4c6-4d86-9c28-d5e230d55839
-source-git-commit: 5de1edcc2349330d31f1adb8944acab1eb2b9352
+source-git-commit: 8f60e8aff04942a3fc1edabac1c5f22f5e9ab2a8
 workflow-type: tm+mt
-source-wordcount: '57'
+source-wordcount: '58'
 ht-degree: 0%
 
 ---
@@ -34,5 +34,6 @@ ht-degree: 0%
 | 년 뉴스레터 |
 |------------|
 | [1월](assets/Jan-2026.pdf) |
+| [2월](assets/Feb-2026.pdf) |
 
 
