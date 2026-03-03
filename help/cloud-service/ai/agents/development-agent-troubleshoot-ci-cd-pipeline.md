@@ -206,7 +206,7 @@ AEM Development Agent가 없는 경우 이 파이프라인 실패는 수동 문�
 
 ## 추가 예
 
-WKND Sites 프로젝트에는 종속성 누락 및 잘못된 구성과 같은 끊어진 코드 및 구성 문제에 대한 추가 예제가 포함되어 있습니다. [`tutorial/dev-agent/`(으)로 시작하는 ](https://github.com/adobe/aem-guides-wknd/branches/all?query=tutorial%2Fdev-agent&lastTab=overview)분기를 확인하여 이러한 예제를 살펴볼 수 있습니다. 변경 내용을 보려면 `tutorial/dev-agent/unit-test-failure`비교`main` 단추를 클릭하여 **분기를** 분기와 비교할 수 있습니다. 그런 다음 _변경된 파일_ 섹션을 찾습니다.
+WKND Sites 프로젝트에는 종속성 누락 및 잘못된 구성과 같은 끊어진 코드 및 구성 문제에 대한 추가 예제가 포함되어 있습니다. [`tutorial/dev-agent/`(으)로 시작하는 &#x200B;](https://github.com/adobe/aem-guides-wknd/branches/all?query=tutorial%2Fdev-agent&lastTab=overview)분기를 확인하여 이러한 예제를 살펴볼 수 있습니다. 변경 내용을 보려면 `tutorial/dev-agent/unit-test-failure`비교`main` 단추를 클릭하여 **분기를** 분기와 비교할 수 있습니다. 그런 다음 _변경된 파일_ 섹션을 찾습니다.
 
 ![분기 비교](./assets/development-agent-troubleshoot-ci-cd-pipeline/compare-branches.png)
 
