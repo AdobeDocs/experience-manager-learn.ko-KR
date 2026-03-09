@@ -8,19 +8,21 @@ doc-type: tutorial
 duration: null
 last-substantial-update: 2026-03-04T00:00:00Z
 jira: KT-20474
-source-git-commit: c5f1c7f57181b1e9de6dd91aa2428f2fe1a04893
+exl-id: 843209cb-2f31-466c-b5b1-a9fb26965bc0
+source-git-commit: 6a0eb6e8f5fa9d7152f46d6b8054dc89ff656507
 workflow-type: tm+mt
 source-wordcount: '850'
 ht-degree: 0%
 
 ---
 
-
 # Content MCP 서버를 사용하여 AEM 컨텐츠 작업 가속화
 
 **커서 IDE**&#x200B;와 같은 AI 기반 IDE의 [콘텐츠 MCP 서버](https://www.cursor.com/)를 사용하여 낮은 수준의 API 코드 또는 UI 탐색 없이 자연어로 된 AEM 콘텐츠로 작업하십시오.
 
 이 자습서에서는 MCP 흐름을 종료하지 않고 _더 낮은 AEM 환경_(RDE 또는 개발)에 대해 IDE에서 조각(예: 모험 가격)을 _검토_, _업데이트_, [WKND 모험 반응 앱](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app)의 변경 사항을 _확인_&#x200B;합니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3480895/?learn=on&enablevpops)
 
 ## 개요
 
@@ -39,7 +41,7 @@ AEM as a Cloud Service은 IDE 또는 채팅 앱이 AEM에서 안전하게 작동
 1. [커서] 메뉴에서 **설정** > **커서 설정**(으)로 이동하여 설정 창을 엽니다.
    ![커서 설정](../assets/content-mcp-server/cursor-settings.png)
 
-1. 왼쪽 사이드바에서 **도구 및 MCP**&#x200B;를 클릭하여 해당 패널을 엽니다.
+1. 왼쪽 사이드바에서 **도구 및 MCP**를 클릭하여 해당 패널을 엽니다.
    ![도구 및 MCP](../assets/content-mcp-server/tools-mcp.png)
 
 1. **사용자 지정 MCP 추가** 또는 **새 MCP 서버**&#x200B;를 클릭하여 `mcp.json`을(를) 연 다음 이 구성에 붙여 넣으십시오.
@@ -68,7 +70,7 @@ AEM as a Cloud Service은 IDE 또는 채팅 앱이 AEM에서 안전하게 작동
 
    ![AEM MCP 서버 추가](../assets/content-mcp-server/mcp-json-file.png)
 
-1. 커서 설정 창에서 **연결**&#x200B;을 클릭하여 인증 프로세스를 시작합니다. OAuth 2.0 PKCE 흐름을 사용하여 AEM MCP 서버에 액세스할 수 있는 **사용자별 액세스 토큰**&#x200B;을(를) 가져옵니다.
+1. 커서 설정 창에서 **연결**&#x200B;을 클릭하여 인증 프로세스를 시작합니다. OAuth 2.0 PKCE 흐름을 사용하여 AEM MCP 서버에 액세스할 수 있는 **사용자별 액세스 토큰**을(를) 가져옵니다.
    ![AEM MCP 서버에 연결](../assets/content-mcp-server/connect-to-aem-mcp-server.png)
 
 1. Adobe ID으로 로그인한 다음 커서 설정 창으로 돌아갑니다.
@@ -92,7 +94,7 @@ AEM as a Cloud Service은 IDE 또는 채팅 앱이 AEM에서 안전하게 작동
    $ git clone git@github.com:adobe/aem-guides-wknd.git
    ```
 
-1. RDE에 [WKND 사이트](https://github.com/adobe/aem-guides-wknd) 프로젝트를 배포합니다. 자세한 단계는 [빠른 개발 환경 사용 방법](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-aem-artifacts-using-the-aem-rde-plugin)을 참조하세요.
+1. RDE에 [WKND 사이트](https://github.com/adobe/aem-guides-wknd) 프로젝트를 배포합니다. 자세한 단계는 [빠른 개발 환경 사용 방법](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-aem-artifacts-using-the-aem-rde-plugin)을 참조하세요.
 
 1. IDE에서 `react-app` 폴더를 엽니다.
 
