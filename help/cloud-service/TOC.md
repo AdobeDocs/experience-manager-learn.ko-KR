@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Experience Manager as a Cloud Service
 team: TM
-source-git-commit: c5f1c7f57181b1e9de6dd91aa2428f2fe1a04893
+source-git-commit: bf6a6f467c3ded713552e0077b13c41fb45511cb
 workflow-type: tm+mt
-source-wordcount: '1469'
-ht-degree: 96%
+source-wordcount: '1481'
+ht-degree: 95%
 
 ---
 
@@ -31,7 +31,11 @@ ht-degree: 96%
 + AI {#ai}
    + [개요](./ai/overview.md)
    + [설정 및 프로비저닝](./ai/setup.md)
-   + [AI 어시스턴트](./ai/ai-assistant.md)
+   + AI 어시스턴트 {#ai-assistant}
+      + [개요](./ai/ai-assistant/overview.md)
+      + [AI Assistant란 무엇입니까?](./ai/ai-assistant/what-is-ai-assistant.md)
+      + [AI 비서는 누구입니까?](./ai/ai-assistant/who-is-ai-assistant-for.md)
+      + [주요 기능](./ai/ai-assistant/key-capabilities.md)
    + 에이전트 {#agents}
       + [개요](./ai/agents/agents-in-aem.md)
       + [개발 에이전트 및 CI/CD 문제 해결](./ai/agents/development-agent-troubleshoot-ci-cd-pipeline.md)
@@ -50,7 +54,7 @@ ht-degree: 96%
    + [작성자 및 게시 서비스](./underlying-technology/introduction-author-publish.md)
    + [Dispatcher](./underlying-technology/introduction-dispatcher.md)
 + Edge Delivery Services {#edge-delivery-services}
-   + [AEM Assets Sidekick 플러그인](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/edge-delivery-services/sidekick-plugin.html?lang=ko){target=_blank}
+   + [AEM Assets Sidekick 플러그인](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/edge-delivery-services/sidekick-plugin.html){target=_blank}
 + Cloud Manager {#cloud-manager}
    + [프로그램](./cloud-manager/programs.md)
    + [환경](./cloud-manager/environments.md)
@@ -182,7 +186,7 @@ ht-degree: 96%
    + [캐싱](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/caching/overview){target=_blank}
    + [Adobe CDN - 캐싱 그 이상](./content-delivery/adobe-cdn-beyond-caching.md)
    + [사용자 정의 오류 페이지](./content-delivery/custom-error-pages.md)
-   + [URL 리디렉션](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/url-redirection.html?lang=ko){target=_blank}
+   + [URL 리디렉션](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/url-redirection.html){target=_blank}
 + 캐싱{#caching}
    + [개요](./caching/overview.md)
    + [AEM 게시 서비스](./caching/publish.md)
@@ -266,7 +270,7 @@ ht-degree: 96%
       + [자산 워크플로 마이그레이션 도구](./migration/cloud-acceleration-manager/asset-workflow-migration-tool.md)
       + [Cloud Acceleration Manager 탐색](./migration/cloud-acceleration-manager/navigating.md)
       + [Cloud Acceleration Manager 사용](./migration/cloud-acceleration-manager/using.md)
-+ [콘텐츠 조각](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html?lang=ko){target=_blank}
++ [콘텐츠 조각](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html){target=_blank}
 + Forms{#forms}
    + Forms as a Cloud Service용 개발{#developing-for-cloud-service}
       + [1- 시작하기](./forms/developing-for-cloud-service/getting-started.md)
@@ -447,11 +451,11 @@ ht-degree: 96%
    + [문제 해결](./asset-compute/troubleshooting.md)
 
 + 여러 단계 튜토리얼{#multi-step-tutorials}
-   + [AEM 사이트 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko){target=_blank}
-   + [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ko){target=_blank}
+   + [AEM 사이트 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html){target=_blank}
+   + [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html){target=_blank}
    + [SPA 편집기(React)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html){target=_blank}
-   + [AEM Sites 및 Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html?lang=ko){target=_blank}
-   + [토큰 기반 인증](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=ko){target=_blank}
+   + [AEM Sites 및 Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html){target=_blank}
+   + [토큰 기반 인증](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html){target=_blank}
 + 전문가 리소스 {#expert-resources}
    + AEM 챔피언 {#aem-champions}
       + [Cloud Manager 온보딩 플레이북](./expert-resources/aem-champions/onboarding-playbook.md)
