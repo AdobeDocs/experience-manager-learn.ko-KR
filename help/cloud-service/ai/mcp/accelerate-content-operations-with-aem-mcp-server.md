@@ -94,7 +94,7 @@ AEM as a Cloud Service은 IDE 또는 채팅 앱이 AEM에서 안전하게 작동
    $ git clone git@github.com:adobe/aem-guides-wknd.git
    ```
 
-1. RDE에 [WKND 사이트](https://github.com/adobe/aem-guides-wknd) 프로젝트를 배포합니다. 자세한 단계는 [빠른 개발 환경 사용 방법](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-aem-artifacts-using-the-aem-rde-plugin)을 참조하세요.
+1. RDE에 [WKND 사이트](https://github.com/adobe/aem-guides-wknd) 프로젝트를 배포합니다. 자세한 단계는 [빠른 개발 환경 사용 방법](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-aem-artifacts-using-the-aem-rde-plugin)을 참조하세요.
 
 1. IDE에서 `react-app` 폴더를 엽니다.
 
