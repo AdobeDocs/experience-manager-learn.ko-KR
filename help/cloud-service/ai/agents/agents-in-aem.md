@@ -22,6 +22,6 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3478455/?learn=on&enablevpops)
 
-샘플 프롬프트를 포함하여 AEM에서 사용 가능한 에이전트 및 해당 기능의 전체 목록에 대해서는 [AEM의 에이전트 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/overview)를 참조하십시오.
+샘플 프롬프트를 포함하여 AEM에서 사용 가능한 에이전트 및 해당 기능의 전체 목록에 대해서는 [AEM의 에이전트 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/agents/overview)를 참조하십시오.
 
 *AEM의 에이전트에 액세스하려면 [설치 가이드](../setup.md#agents-in-aem)를 따라 AEM 환경에서 액세스 권한을 설정했는지 확인하십시오.*
