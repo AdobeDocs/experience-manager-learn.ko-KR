@@ -41,7 +41,7 @@ AEM as a Cloud Service은 IDE 또는 채팅 앱이 AEM에서 안전하게 작동
 1. [커서] 메뉴에서 **설정** > **커서 설정**(으)로 이동하여 설정 창을 엽니다.
    ![커서 설정](../assets/content-mcp-server/cursor-settings.png)
 
-1. 왼쪽 사이드바에서 **도구 및 MCP**를 클릭하여 해당 패널을 엽니다.
+1. 왼쪽 사이드바에서 **도구 및 MCP**&#x200B;를 클릭하여 해당 패널을 엽니다.
    ![도구 및 MCP](../assets/content-mcp-server/tools-mcp.png)
 
 1. **사용자 지정 MCP 추가** 또는 **새 MCP 서버**&#x200B;를 클릭하여 `mcp.json`을(를) 연 다음 이 구성에 붙여 넣으십시오.
@@ -70,7 +70,7 @@ AEM as a Cloud Service은 IDE 또는 채팅 앱이 AEM에서 안전하게 작동
 
    ![AEM MCP 서버 추가](../assets/content-mcp-server/mcp-json-file.png)
 
-1. 커서 설정 창에서 **연결**&#x200B;을 클릭하여 인증 프로세스를 시작합니다. OAuth 2.0 PKCE 흐름을 사용하여 AEM MCP 서버에 액세스할 수 있는 **사용자별 액세스 토큰**을(를) 가져옵니다.
+1. 커서 설정 창에서 **연결**&#x200B;을 클릭하여 인증 프로세스를 시작합니다. OAuth 2.0 PKCE 흐름을 사용하여 AEM MCP 서버에 액세스할 수 있는 **사용자별 액세스 토큰**&#x200B;을(를) 가져옵니다.
    ![AEM MCP 서버에 연결](../assets/content-mcp-server/connect-to-aem-mcp-server.png)
 
 1. Adobe ID으로 로그인한 다음 커서 설정 창으로 돌아갑니다.
