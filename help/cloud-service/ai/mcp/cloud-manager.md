@@ -24,4 +24,4 @@ Cloud Manager MCP Server를 사용하면 AEM 개발자가 파이프라인을 실
 >
 > Cloud Manager MCP Server는 현재 베타 버전입니다. 액세스 권한을 요청하려면 사용 사례에 대한 설명을 [aemcs-mcp-feedback@adobe.com](mailto:aemcs-mcp-feedback@adobe.com)에 전자 메일로 보내십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/3480340/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3480349/?captions=kor&learn=on&enablevpops)
