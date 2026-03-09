@@ -20,4 +20,4 @@ ht-degree: 0%
 
 AI Assistant는 AEM 작업을 가속화하고, 즉각적인 답변을 제공하며, 기능 사용을 안내하고, 문제를 해결하며, Experience Manager 인터페이스에서 지원 티켓을 생성합니다. 이를 통해 팀이 컨텐츠를 보다 빠르게 제공하고 문서 검색을 줄이며 운영 효율성을 높일 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3480859/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3480877/?captions=kor&learn=on&enablevpops)

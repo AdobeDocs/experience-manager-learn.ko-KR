@@ -20,4 +20,4 @@ ht-degree: 0%
 
 AI Assistant가 즉각적인 지침, 코드 조각 및 문제 해결 단계를 제공하여 AEM 워크플로를 가속화하는 방법에 대해 알아봅니다. 따라서 지원 노력이 줄어들고 팀이 더 높은 품질로 콘텐츠를 더 빠르고 제공할 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3480858/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3480866/?captions=kor&learn=on&enablevpops)
