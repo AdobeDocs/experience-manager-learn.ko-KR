@@ -22,7 +22,7 @@ ht-degree: 0%
 
 이 자습서에서는 MCP 흐름을 종료하지 않고 _더 낮은 AEM 환경_(RDE 또는 개발)에 대해 IDE에서 조각(예: 모험 가격)을 _검토_, _업데이트_, [WKND 모험 반응 앱](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app)의 변경 사항을 _확인_&#x200B;합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3480895/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3480902/?captions=kor&learn=on&enablevpops)
 
 ## 개요
 
