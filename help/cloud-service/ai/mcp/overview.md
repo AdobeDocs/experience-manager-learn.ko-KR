@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## AEM MCP 서버 목록
 
-모든 AEM MCP 서버는 `https://mcp.adobeaemcloud.com/adobe/mcp/`에서 사용할 수 있습니다. 자세한 내용은 [AEM as a Cloud Service과 MCP 사용](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service)을 참조하세요.
+모든 AEM MCP 서버는 `https://mcp.adobeaemcloud.com/adobe/mcp/`에서 사용할 수 있습니다. 자세한 내용은 [AEM as a Cloud Service과 MCP 사용](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service)을 참조하세요.
 
 - **컨텐츠**(`/content`) — 페이지, 조각 및 자산을 만들고, 읽고, 업데이트하고, 삭제할 수 있는 전체 액세스 권한입니다.
 - **콘텐츠(읽기 전용)**(`/content-readonly`) — 페이지, 조각 및 에셋을 나열하고 가져올 수 있는 읽기 전용(변경 사항 없음).
@@ -71,7 +71,7 @@ MCP는 **호스트**, **클라이언트** 및 **서버** 등 세 가지 엔터�
 ## 설정
 
 AEM MCP 서버는 정의된 MCP 호환 애플리케이션 세트와 호환되도록 설계되었습니다.
-선호하는 IDE 또는 채팅 기반 응용 프로그램에서 AEM MCP 서버를 설정하려면 [지원되는 MCP 응용 프로그램](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service#supported-mcp-applications)을 참조하십시오.
+선호하는 IDE 또는 채팅 기반 응용 프로그램에서 AEM MCP 서버를 설정하려면 [지원되는 MCP 응용 프로그램](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service#supported-mcp-applications)을 참조하십시오.
 
 ## 사용 사례
 
