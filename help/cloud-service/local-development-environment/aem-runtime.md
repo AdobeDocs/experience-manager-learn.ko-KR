@@ -295,7 +295,7 @@ AEM as a Cloud Service &quot;기능 릴리스&quot;에 대한 릴리스 케이�
 AEM SDK을 업그레이드하면 새 저장소를 포함하여 완전히 새로운 AEM 런타임이 생성됩니다. 즉, 이전 AEM SDK 저장소에 대한 변경 사항이 모두 손실됩니다. 다음은 AEM SDK 업그레이드 사이에서 콘텐츠를 유지하는 데 도움이 되는 실행 가능한 전략이며, 개별적으로 또는 함께 사용할 수 있습니다.
 
 1. 개발에 도움이 되는 &quot;샘플&quot; 콘텐츠를 포함하는 전용 콘텐츠 패키지를 만들고 Git에서 유지 관리합니다. AEM SDK 업그레이드를 통해 유지해야 하는 모든 콘텐츠는 이 패키지로 유지되며 AEM SDK을 업그레이드한 후 다시 배포됩니다.
-1. [ 지시문과 함께 ](https://jackrabbit.apache.org/oak/docs/migration.html)oak-upgrade`includepaths`를 사용하여 이전 AEM SDK 저장소의 콘텐츠를 새 AEM SDK 저장소로 복사합니다.
+1. [&#x200B; 지시문과 함께 &#x200B;](https://jackrabbit.apache.org/oak/docs/migration.html)oak-upgrade`includepaths`를 사용하여 이전 AEM SDK 저장소의 콘텐츠를 새 AEM SDK 저장소로 복사합니다.
 1. 이전 AEM SDK의 AEM 패키지 관리자 및 컨텐츠 패키지를 사용하여 모든 컨텐츠를 백업하고 새 AEM SDK에 다시 설치합니다.
 
 위의 접근 방식을 사용하여 AEM SDK 업그레이드 간에 코드를 유지 관리하면 개발 방지 패턴이 있음을 나타냅니다. 일회용이 아닌 코드는 개발 IDE에서 가져와서 배포를 통해 AEM SDK으로 이동해야 합니다.
