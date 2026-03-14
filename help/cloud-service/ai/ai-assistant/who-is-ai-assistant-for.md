@@ -20,5 +20,5 @@ ht-degree: 0%
 
 AI Assistant는 Adobe Experience Manager의 다양한 역할 전반에서 생산성을 향상시킵니다. 콘텐츠 작성자는 콘텐츠 생성 및 전달을 간소화하고, 기술 팀은 워크플로 및 문제 해결을 간소화하며, 관리자는 정보에 입각한 결정을 보다 신속하게 내립니다. AI Assistant는 단계별 지침, 즉각적인 답변 및 사전 설치 프롬프트와 같은 기능을 통해 팀이 효율적으로 작업하고 앞서 나갈 수 있도록 합니다. AI Assistant가 귀하의 역할 및 팀 목표를 지원하는 방법을 확인하십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/3481163/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3481170/?captions=kor&learn=on&enablevpops)
 
