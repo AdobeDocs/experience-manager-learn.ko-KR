@@ -81,7 +81,7 @@ public void postSyncUserProcess(
 **중요:** 리포지토리에서 사용자 속성을 수정하려면 후크를 구현해야 합니다.
 
 + `SlingRepository`을(를) 통해 `@Reference` 참조가 삽입되었습니다.
-+ 적절한 권한을 가진 구성된 [서비스 사용자](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/service-users)&#x200B;(&quot;Apache Sling Service User Mapper Service Advisory&quot;에서 구성됨)
++ 적절한 권한을 가진 구성된 [서비스 사용자](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/advanced/service-users)&#x200B;(&quot;Apache Sling Service User Mapper Service Advisory&quot;에서 구성됨)
 + try-catch-finally 블록을 사용한 적절한 세션 관리
 
 ## 사용자 정의 SAML 후크 구현
@@ -267,7 +267,7 @@ AEM Maven 핵심 프로젝트의 `pom.xml`에 필요한 SAML SPI 종속성을 �
 
 ### 서비스 사용자 구성(선택 사항)
 
-SAML 후크가 사용자 속성과 같은 AEM JCR 저장소의 콘텐츠를 수정해야 하는 경우(`postSyncUserProcess` 예제와 같이) [서비스 사용자](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/service-users)를 구성해야 합니다.
+SAML 후크가 사용자 속성과 같은 AEM JCR 저장소의 콘텐츠를 수정해야 하는 경우(`postSyncUserProcess` 예제와 같이) [서비스 사용자](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/advanced/service-users)를 구성해야 합니다.
 
 1. `/ui.config/src/main/content/jcr_root/apps/myproject/osgiconfig/config/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~saml.cfg.json`의 프로젝트에서 서비스 사용자 매핑을 만듭니다.
 
@@ -310,7 +310,7 @@ end
 + **테스트**: 프로덕션에 배포하기 전에 낮은 환경에서 사용자 지정 후크를 철저히 테스트합니다.
 + **여러 후크**: 여러 SAML 후크 구현을 구성할 수 있습니다. 일치하는 모든 후크가 실행됩니다. OSGi 구성 요소에서 `service.ranking` 속성을 사용하여 실행 순서를 제어합니다. 순위가 높은 값이 먼저 실행됩니다. 여러 SAML 인증 처리기 팩터리 구성(`com.adobe.granite.auth.saml.SamlAuthenticationHandler~<unique-id>`)에서 SAML 후크를 다시 사용하려면 각 SAML 인증 처리기와 일치하는 다른 `idpIdentifier`을(를) 사용하여 여러 후크 구성(OSGi 팩터리 구성)을 만듭니다
 + **보안**: 비즈니스 논리에 사용하기 전에 SAML 어설션의 모든 데이터를 확인하고 정리합니다.
-+ **저장소 액세스**: `postSyncUserProcess`에서 사용자 속성을 수정할 때는 관리 세션이 아닌 적절한 권한이 있는 [서비스 사용자](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/service-users)를 항상 사용하십시오
-+ **서비스 사용자 권한**: [서비스 사용자](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/service-users)에게 최소한의 필수 권한을 부여합니다(예: `jcr:read`의 `rep:write` 및 `/home/users`만, 전체 관리자 권한 아님).
++ **저장소 액세스**: `postSyncUserProcess`에서 사용자 속성을 수정할 때는 관리 세션이 아닌 적절한 권한이 있는 [서비스 사용자](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/advanced/service-users)를 항상 사용하십시오
++ **서비스 사용자 권한**: [서비스 사용자](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/advanced/service-users)에게 최소한의 필수 권한을 부여합니다(예: `jcr:read`의 `rep:write` 및 `/home/users`만, 전체 관리자 권한 아님).
 + **세션 관리**: 예외가 발생하더라도 항상 try-catch-finally 블록을 사용하여 리포지토리 세션이 제대로 닫히도록 하십시오
 + **사용자 동기화 타이밍**: `postSyncUserProcess` 후크는 사용자가 OAK에 동기화한 후에 실행되므로 해당 시점에 사용자 개체가 저장소에 존재할 수 있습니다

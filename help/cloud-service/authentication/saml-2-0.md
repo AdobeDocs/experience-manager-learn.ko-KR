@@ -66,7 +66,7 @@ SAML 2.0 인증을 설정할 때 필요한 사항은 다음과 같습니다.
 + AEM as a Cloud Service 환경에 대한 AEM 관리자 액세스
 + IDP에 대한 관리자 액세스
 + 필요한 경우 SAML 페이로드를 암호화하는 데 사용되는 공개/개인 키 쌍에 액세스
-+ AEM Sites 페이지(또는 페이지 트리), AEM Publish에 게시되고 [폐쇄형 사용자 그룹(CUG)으로 보호됨](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/page-properties#permissions)
++ AEM Sites 페이지(또는 페이지 트리), AEM Publish에 게시되고 [폐쇄형 사용자 그룹(CUG)으로 보호됨](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/page-properties#permissions)
 
 SAML 2.0은 AEM 게시 또는 미리보기에 대한 사용을 인증하는 데만 지원됩니다. 및 IDP를 사용하여 AEM 작성자의 인증을 관리하려면 [IDP를 Adobe IMS와 통합](https://helpx.adobe.com/kr/enterprise/using/set-up-identity.html)하십시오.
 
@@ -74,7 +74,7 @@ SAML 2.0은 AEM 게시 또는 미리보기에 대한 사용을 인증하는 데�
 
 AEM Preview를 포함하여 AEM as a Cloud Service에서 SAML 2.0이 지원됩니다. 그러나 AEM의 SAML 구성은 OSGi 구성을 사용하며, AEM 미리 보기와 AEM 게시는 모두 동일한 OSGi 실행 모드 확인(`config.publish`)을 공유합니다. 따라서 미리보기 및 게시용으로 별도의 SAML 구성 파일을 만들 수 없습니다.
 
-대신 OSGi 구성 내에서 [환경별 구성 값](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi#environment-specific-configuration-values)을 사용하고 미리 보기 및 게시 환경에 대해 [적절한 변수 값을 설정](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi#cloud-manager-api-format-for-setting-properties)하십시오.
+대신 OSGi 구성 내에서 [환경별 구성 값](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi#environment-specific-configuration-values)을 사용하고 미리 보기 및 게시 환경에 대해 [적절한 변수 값을 설정](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi#cloud-manager-api-format-for-setting-properties)하십시오.
 
 ## AEM에 IDP 공개 인증서 설치
 
@@ -337,7 +337,7 @@ SAML 구성이 환경마다 다른 경우 환경당 OSGi 구성(`config.publish.
 
 ### 암호화 사용
 
-[AuthnRequest 및 SAML 어설션 암호화](#encrypting-the-authnrequest-and-saml-assertion)할 때 `useEncryption`, `spPrivateKeyAlias` 및 `keyStorePassword` 속성이 필요합니다. `keyStorePassword`에 암호가 포함되어 있으므로 값을 OSGi 구성 파일에 저장하지 말고 [비밀 구성 값](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#secret-configuration-values)을 사용하여 삽입해야 합니다.
+[AuthnRequest 및 SAML 어설션 암호화](#encrypting-the-authnrequest-and-saml-assertion)할 때 `useEncryption`, `spPrivateKeyAlias` 및 `keyStorePassword` 속성이 필요합니다. `keyStorePassword`에 암호가 포함되어 있으므로 값을 OSGi 구성 파일에 저장하지 말고 [비밀 구성 값](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=ko#secret-configuration-values)을 사용하여 삽입해야 합니다.
 
 +++필요한 경우 암호화를 사용하도록 OSGi 구성을 업데이트합니다
 
@@ -370,7 +370,7 @@ SAML 구성이 환경마다 다른 경우 환경당 OSGi 구성(`config.publish.
 
 + `useEncryption`이(가) `true`(으)로 설정됨
 + `spPrivateKeyAlias`에 SAML 통합에서 사용하는 개인 키에 대한 키 저장소 항목 별칭이 포함되어 있습니다.
-+ `keyStorePassword`에 [&#x200B; 사용자 키 저장소의 암호를 포함하는 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#secret-configuration-values)OSGi 비밀 구성 변수`authentication-service`이(가) 있습니다.
++ `keyStorePassword`에 [&#x200B; 사용자 키 저장소의 암호를 포함하는 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=ko#secret-configuration-values)OSGi 비밀 구성 변수`authentication-service`이(가) 있습니다.
 
 +++
 
@@ -456,7 +456,7 @@ Apache 웹 서버에서 URL 재작성이 구성(`dispatcher/src/conf.d/rewrites/
 ### 새 환경에서 SAML 사용자에 대해 동적 그룹 멤버십을 활성화하는 방법
 
 새 AEM as a Cloud Service 환경에서 그룹 평가 성능을 크게 향상시키려면 새 환경에서 동적 그룹 멤버십 기능을 활성화하는 것이 좋습니다.
-또한 데이터 동기화가 활성화될 때 필요한 단계입니다. 자세한 내용은 [여기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier)를 참조하세요.
+또한 데이터 동기화가 활성화될 때 필요한 단계입니다. 자세한 내용은 [여기](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier)를 참조하세요.
 이렇게 하려면 OSGI 구성 파일에 다음 속성을 추가합니다.
 
 `/apps/example/osgiconfig/config.publish/com.adobe.granite.auth.saml.SamlAuthenticationHandler~example.cfg.json`
