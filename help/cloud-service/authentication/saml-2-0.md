@@ -8,23 +8,21 @@ role: Developer
 level: Intermediate
 jira: KT-9351
 thumbnail: 343040.jpeg
-last-substantial-update: 2024-05-15T00:00:00Z
+last-substantial-update: 2025-03-11T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
 duration: 2200
-source-git-commit: 4a8d97d8d65f0ff9b256cb233db5dd6a70fd2a8a
+source-git-commit: 34f098de6bd15875e5534250b28c08bdb62e74fa
 workflow-type: tm+mt
-source-wordcount: '5215'
+source-wordcount: '4423'
 ht-degree: 1%
 
 ---
 
-# SAML 2.0 인증{#saml-2-0-authentication}
+# SAML 2.0 인증
 
-선택한 SAML 2.0 호환 IDP에 대해 최종 사용자(AEM 작성자가 아님)를 설정하고 인증하는 방법에 대해 알아보십시오.
+선택한 SAML 2.0 호환 IDP에 최종 사용자(AEM 작성자 아님)를 설정하고 인증하는 방법에 대해 알아보십시오.
 
-## AEM as a Cloud Service을 위한 SAML은 무엇입니까?
-
-SAML 2.0을 AEM Publish(또는 미리보기)와 통합하면 AEM 기반 웹 경험의 최종 사용자가 Adobe이 아닌 IDP(ID 공급자)에 인증하고 지정된 승인된 사용자로 AEM에 액세스할 수 있습니다.
+SAML 2.0은 AEM Publish(또는 미리 보기)와 통합되므로 AEM 기반 웹 환경의 최종 사용자가 Adobe이 아닌 IDP(ID 공급자)에 인증하고, AEM을 지정된 승인된 사용자로 액세스할 수 있습니다.
 
 |                       | AEM Author | AEM 게시 인스턴스 |
 |-----------------------|:----------:|:-----------:|
@@ -56,7 +54,7 @@ AEM Publish SAML 통합의 일반적인 흐름은 다음과 같습니다.
 
 ## 구성 연습
 
->[!VIDEO](https://video.tv.adobe.com/v/3455349?captions=kor&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343040?quality=12&learn=on)
 
 이 비디오는 AEM as a Cloud Service Publish 서비스와 SAML 2.0 통합을 설정하고 Okta를 IDP로 사용하는 방법에 대해 안내합니다.
 
@@ -68,10 +66,15 @@ SAML 2.0 인증을 설정할 때 필요한 사항은 다음과 같습니다.
 + AEM as a Cloud Service 환경에 대한 AEM 관리자 액세스
 + IDP에 대한 관리자 액세스
 + 필요한 경우 SAML 페이로드를 암호화하는 데 사용되는 공개/개인 키 쌍에 액세스
-+ AEM Sites 페이지(또는 페이지 트리), AEM Publish에 게시되고 [폐쇄형 사용자 그룹(CUG)으로 보호됨](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/page-properties#permissions)
++ AEM Sites 페이지(또는 페이지 트리), AEM Publish에 게시되고 [폐쇄형 사용자 그룹(CUG)으로 보호됨](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/page-properties#permissions)
 
 SAML 2.0은 AEM 게시 또는 미리보기에 대한 사용을 인증하는 데만 지원됩니다. 및 IDP를 사용하여 AEM 작성자의 인증을 관리하려면 [IDP를 Adobe IMS와 통합](https://helpx.adobe.com/kr/enterprise/using/set-up-identity.html)하십시오.
 
+### AEM as a Cloud Service 미리보기 서비스 지원
+
+AEM Preview를 포함하여 AEM as a Cloud Service에서 SAML 2.0이 지원됩니다. 그러나 AEM의 SAML 구성은 OSGi 구성을 사용하며, AEM 미리 보기와 AEM 게시는 모두 동일한 OSGi 실행 모드 확인(`config.publish`)을 공유합니다. 따라서 미리보기 및 게시용으로 별도의 SAML 구성 파일을 만들 수 없습니다.
+
+대신 OSGi 구성 내에서 [환경별 구성 값](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi#environment-specific-configuration-values)을 사용하고 미리 보기 및 게시 환경에 대해 [적절한 변수 값을 설정](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi#cloud-manager-api-format-for-setting-properties)하십시오.
 
 ## AEM에 IDP 공개 인증서 설치
 
@@ -105,20 +108,20 @@ IDP의 공개 인증서가 AEM의 Global Trust Store에 추가되고, IDP에서 
 
 1. AEM 작성자에 AEM 관리자로 로그인합니다.
 1. __도구 > 보안 > Trust Store__(으)로 이동합니다.
-1. 글로벌 Trust Store를 만들거나 엽니다. 글로벌 Trust Store를 만드는 경우 암호를 안전한 곳에 저장합니다.
+1. 글로벌 Trust Store를 만들거나 엽니다. 전역 트러스트 저장소를 만드는 경우 암호를 안전한 곳에 저장합니다.
 1. __CER 파일에서 인증서 추가__&#x200B;를 확장합니다.
-1. __인증서 파일 선택__&#x200B;을 선택하고 IDP에서 제공한 인증서 파일을 업로드하십시오.
+1. __인증서 파일 선택__&#x200B;을 선택하고 IDP에서 제공한 인증서 파일을 업로드합니다.
 1. __사용자에게 인증서 매핑__&#x200B;을 비워 둡니다.
 1. __제출__&#x200B;을 선택합니다.
 1. 새로 추가된 인증서는 __CRT 파일에서 인증서 추가__ 섹션 위에 표시됩니다.
-1. 이 값은 __SAML 2.0 인증 처리기 OSGi 구성__&#x200B;에서 사용되므로 [alias](#saml-2-0-authentication-handler-osgi-configuration)을(를) 메모해 두십시오.
+1. 이 값은 __SAML 2.0 인증 처리기 OSGi 구성__&#x200B;에서 사용되므로 [별칭](#saml-2-0-authentication-handler-osgi-configuration)을 기록해 두십시오.
 1. __저장 후 닫기__&#x200B;를 선택합니다.
 
-글로벌 Trust Store는 AEM 작성자의 IDP 공개 인증서로 구성되지만 SAML은 AEM 게시에서만 사용되므로 IDP 공개 인증서에 액세스하려면 글로벌 Trust Store를 AEM 게시로 복제해야 합니다.
+Global Trust Store는 AEM Author의 IDP 공용 인증서로 구성되지만 SAML은 AEM Publish에서만 사용되므로 IDP 공용 인증서를 여기에서 액세스하려면 Global Trust Store를 AEM Publish으로 복제해야 합니다.
 
-![글로벌 Trust Store를 AEM 게시로 복제](./assets/saml-2-0/global-trust-store-replicate.png)
+![전역 신뢰 저장소를 AEM Publish에 복제](./assets/saml-2-0/global-trust-store-replicate.png)
 
-1. __도구 > 배포 > 패키지__(으)로 이동합니다.
+1. __도구 > 배포 > 패키지__&#x200B;로 이동합니다.
 1. 패키지 만들기
    + 패키지 이름: `Global Trust Store`
    + 버전: `1.0.0`
@@ -183,22 +186,22 @@ IDP와 AEM Publish 간의 모든 HTTP 통신은 HTTPS를 통해 전송되어야 
 
 ![SAML 2.0 - SP SAML 어설션 암호화](./assets/saml-2-0/sp-samlrequest-encryption-diagram.png)
 
-1. 사용자가 IDP를 인증합니다.
-1. IDP는 사용자의 데이터가 포함된 SAML 어설션을 생성하고 IDP의 개인 인증서를 사용하여 서명합니다.
-1. 그런 다음 IDP는 AEM의 공개 키로 SAML 어설션을 암호화하며, 이를 위해 AEM 개인 키가 해독되어야 합니다.
+1. 사용자가 IDP에 인증합니다.
+1. IDP는 사용자의 데이터를 포함하는 SAML 어설션을 생성하고 IDP의 개인 인증서를 사용하여 서명합니다.
+1. 그런 다음 IDP는 AEM 공개 키로 SAML 어설션을 암호화하며, 암호를 해독하려면 AEM 개인 키가 필요합니다.
 1. 암호화된 SAML 어설션은 사용자의 웹 브라우저를 통해 AEM Publish로 전송됩니다.
 1. AEM Publish는 SAML 어설션을 수신하고 AEM의 개인 키를 사용하여 어설션을 해독합니다.
 1. IDP는 사용자에게 인증하라는 메시지를 표시합니다.
 
 +++
 
-AuthnRequest 서명 및 SAML 어설션 암호화는 모두 선택 사항이지만 [SAML 2.0 인증 처리기 OSGi 구성 속성 `useEncryption`](#saml-20-authenticationsaml-2-0-authentication)을(를) 사용하여 둘 다 활성화되었습니다. 즉, 둘 다 사용하거나 둘 다 사용할 수 없습니다.
+AuthnRequest 서명 및 SAML 어설션 암호화는 모두 선택 사항이지만 [SAML 2.0 인증 처리기 OSGi 구성 속성 `useEncryption`](#saml-20-authenticationsaml-2-0-authentication)을(를) 사용하여 둘 다 활성화되므로 둘 다 사용하거나 둘 다 사용할 수 없습니다.
 
 ![AEM 인증 서비스 키 저장소](./assets/saml-2-0/authentication-service-key-store.png)
 
-1. AuthnRequest 서명에 사용되는 공개 키, 개인 키(DER 형식의 PKCS#8) 및 인증서 체인 파일(공개 키일 수 있음)을 가져오고 SAML 어설션을 암호화합니다. 키는 일반적으로 IT 조직의 보안 팀에서 제공합니다.
+1. AuthnRequest에 서명하고 SAML 어설션을 암호화하는 데 사용되는 공개 키, 개인 키(DER 형식의 PKCS#8) 및 인증서 체인 파일(공개 키일 수 있음)을 얻습니다. 키는 일반적으로 IT 조직의 보안 팀에서 제공합니다.
 
-   + __openssl__&#x200B;을 사용하여 자체 서명된 키 쌍을 생성할 수 있습니다.
+   + __openssl__&#x200B;을(를) 사용하여 자체 서명된 키 쌍을 생성할 수 있습니다.
 
    ```
    $ openssl req -x509 -sha256 -days 365 -newkey rsa:4096 -keyout aem-private.key -out aem-public.crt
@@ -257,8 +260,8 @@ AEM의 SAML 구성은 __Adobe Granite SAML 2.0 Authentication Handler__ OSGi 구
 | 경로 | `path` | ✔ | 문자열 배열 | `/` | AEM은 이 인증 핸들러가 사용되는 경로를 지정합니다. |
 | IDP URL | `idpUrl` | ✔ | 문자열 |                           | IDP URL SAML 인증 요청이 전송됩니다. |
 | IDP 인증서 별칭 | `idpCertAlias` | ✔ | 문자열 |                           | AEM의 글로벌 Trust Store에 있는 IDP 인증서의 별칭 |
-| IDP HTTP 리디렉션 | `idpHttpRedirect` | ✘ | 부울 | `false` | AuthnRequest를 보내는 대신 IDP URL로 HTTP 리디렉션을 수행할지 여부를 나타냅니다. IDP 시작 인증을 위해 `true`(으)로 설정합니다. |
-| IDP 식별자 | `idpIdentifier` | ✘ | 문자열 |                           | AEM 사용자 및 그룹의 고유성을 보장하는 고유 IDP ID. 비어 있으면 대신 `serviceProviderEntityId`이(가) 사용됩니다. |
+| IDP HTTP 리디렉션 | `idpHttpRedirect` | ✘ | 부울 | `false` | AuthnRequest를 보내는 대신 IDP URL로 HTTP 리디렉션되는지 여부를 나타냅니다. IDP 시작 인증에 대해 `true`(으)로 설정합니다. |
+| IDP 식별자 | `idpIdentifier` | ✘ | 문자열 |                           | AEM 사용자 및 그룹의 고유성을 보장하는 고유 IDP ID. 비어 있으면 `serviceProviderEntityId`이(가) 대신 사용됩니다. |
 | 어설션 소비자 서비스 URL | `assertionConsumerServiceURL` | ✘ | 문자열 |                           | AuthnRequest의 `AssertionConsumerServiceURL` URL 특성으로 `<Response>` 메시지를 AEM으로 보내야 하는 위치를 지정합니다. |
 | SP 엔티티 ID | `serviceProviderEntityId` | ✔ | 문자열 |                           | IDP에 대한 AEM(일반적으로 AEM 호스트 이름)를 고유하게 식별합니다. |
 | SP 암호화 | `useEncryption` | ✘ | 부울 | `true` | IDP가 SAML 어설션을 암호화하는지 여부를 나타냅니다. `spPrivateKeyAlias` 및 `keyStorePassword`을(를) 설정해야 합니다. |
@@ -334,7 +337,7 @@ SAML 구성이 환경마다 다른 경우 환경당 OSGi 구성(`config.publish.
 
 ### 암호화 사용
 
-[AuthnRequest 및 SAML 어설션 암호화](#encrypting-the-authnrequest-and-saml-assertion)할 때 `useEncryption`, `spPrivateKeyAlias` 및 `keyStorePassword` 속성이 필요합니다. `keyStorePassword`에 암호가 포함되어 있으므로 값을 OSGi 구성 파일에 저장하지 말고 [비밀 구성 값](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=ko#secret-configuration-values)을 사용하여 삽입해야 합니다.
+[AuthnRequest 및 SAML 어설션 암호화](#encrypting-the-authnrequest-and-saml-assertion)할 때 `useEncryption`, `spPrivateKeyAlias` 및 `keyStorePassword` 속성이 필요합니다. `keyStorePassword`에 암호가 포함되어 있으므로 값을 OSGi 구성 파일에 저장하지 말고 [비밀 구성 값](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#secret-configuration-values)을 사용하여 삽입해야 합니다.
 
 +++필요한 경우 암호화를 사용하도록 OSGi 구성을 업데이트합니다
 
@@ -367,7 +370,7 @@ SAML 구성이 환경마다 다른 경우 환경당 OSGi 구성(`config.publish.
 
 + `useEncryption`이(가) `true`(으)로 설정됨
 + `spPrivateKeyAlias`에 SAML 통합에서 사용하는 개인 키에 대한 키 저장소 항목 별칭이 포함되어 있습니다.
-+ `keyStorePassword`에 [&#x200B; 사용자 키 저장소의 암호를 포함하는 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=ko#secret-configuration-values)OSGi 비밀 구성 변수`authentication-service`이(가) 있습니다.
++ `keyStorePassword`에 [ 사용자 키 저장소의 암호를 포함하는 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#secret-configuration-values)OSGi 비밀 구성 변수`authentication-service`이(가) 있습니다.
 
 +++
 
@@ -453,7 +456,7 @@ Apache 웹 서버에서 URL 재작성이 구성(`dispatcher/src/conf.d/rewrites/
 ### 새 환경에서 SAML 사용자에 대해 동적 그룹 멤버십을 활성화하는 방법
 
 새 AEM as a Cloud Service 환경에서 그룹 평가 성능을 크게 향상시키려면 새 환경에서 동적 그룹 멤버십 기능을 활성화하는 것이 좋습니다.
-또한 데이터 동기화가 활성화될 때 필요한 단계입니다. 자세한 내용은 [여기](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier)를 참조하세요.
+또한 데이터 동기화가 활성화될 때 필요한 단계입니다. 자세한 내용은 [여기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier)를 참조하세요.
 이렇게 하려면 OSGI 구성 파일에 다음 속성을 추가합니다.
 
 `/apps/example/osgiconfig/config.publish/com.adobe.granite.auth.saml.SamlAuthenticationHandler~example.cfg.json`
@@ -563,299 +566,11 @@ ACL에서 이 리팩터링을 방지하기 위해 표준 [마이그레이션 기
 
 여러 SAML 구성을 마이그레이션하려면 `com.adobe.granite.auth.saml.migration.SamlDynamicGroupMembershipMigration`에 대한 여러 OSGi 팩토리 구성을 만들어야 하며, 각 구성은 마이그레이션할 `idpIdentifier`을(를) 지정합니다.
 
-## 고급 사용 사례에 대한 사용자 정의 SAML 후크
+## 사용자 정의 SAML 로그인 후크
 
-IDP가 SAML 어설션의 사용자 프로필 데이터 및 사용자 그룹 멤버십을 전송할 수 없거나 AEM에 동기화하기 전에 데이터를 변환해야 하는 경우 SAML 인증 프로세스를 확장하기 위해 사용자 지정 SAML 후크를 구현할 수 있습니다. SAML 후크를 사용하면 그룹 멤버십 할당을 사용자 지정하고, 사용자 프로필 속성을 수정하고, 인증 흐름 동안 사용자 지정 비즈니스 논리를 추가할 수 있습니다.
+고급 사용 사례의 경우 AEM은 `com.adobe.granite.auth.saml.SamlLoginHook` 인터페이스를 구현하는 OSGi 서비스인 사용자 지정 SAML 로그인 후크의 개발을 지원합니다. 이러한 후크는 SAML 인증 프로세스 중에 실행되며, 추가 사용자 프로비저닝 또는 사용자 정의 로깅과 같은 사용자 정의 로직을 구현하는 데 사용할 수 있습니다.
 
->[!NOTE]
->사용자 지정 SAML 후크는 **AEM as a Cloud Service** 및 **AEM LTS**&#x200B;에서 지원됩니다. 이 기능은 이전 AEM 버전에서는 사용할 수 없습니다.
-
-### 사용자 정의 SAML 후크를 사용해야 하는 경우
-
-사용자 정의 SAML 후크는 다음 작업을 수행해야 할 때 유용합니다.
-
-+ SAML 어설션에 제공된 것 이상으로 사용자 지정 비즈니스 논리에 따라 그룹 멤버십을 동적으로 할당
-+ AEM에 동기화되기 전에 사용자 프로필 데이터 변형 또는 보강
-+ 복잡한 SAML 속성 구조를 AEM 사용자 속성에 매핑
-+ 사용자 지정 권한 부여 규칙 또는 조건부 그룹 할당 구현
-+ SAML 인증 중에 사용자 정의 로깅 또는 감사 추가
-+ 인증 프로세스 중에 외부 시스템과 통합
-
-### SamlHook 인터페이스 이해
-
-`com.adobe.granite.auth.saml.spi.SamlHook` 인터페이스는 SAML 인증 프로세스의 여러 단계에서 호출되는 두 개의 후크 메서드를 제공합니다.
-
-#### 1. postSamlValidationProcess
-
-이 메서드는 SAML 응답의 유효성을 검사했지만 사용자 동기화 프로세스가 시작되는 **이전**&#x200B;에 **이후**&#x200B;라고 합니다. 속성 추가 또는 변형과 같이 SAML 어설션 데이터를 수정하기에 이상적인 위치입니다.
-
-```java
-public void postSamlValidationProcess(
-    HttpServletRequest request, 
-    Assertion assertion, 
-    Message samlResponse)
-```
-
-**사용 사례:**
-+ 어설션에 추가 그룹 멤버십 추가
-+ 속성 값을 동기화하기 전에 변환
-+ 외부 소스의 데이터로 어설션 보강
-+ 사용자 정의 비즈니스 규칙 유효성 검사
-
-#### 2. postSyncUserProcess
-
-이 메서드는 사용자 동기화 프로세스가 완료된 후 **after**&#x200B;에 호출됩니다. 이 후크는 AEM 사용자가 생성되거나 업데이트된 후 추가 작업을 수행하는 데 사용할 수 있습니다.
-
-```java
-public void postSyncUserProcess(
-    HttpServletRequest request, 
-    HttpServletResponse response, 
-    Assertion assertion,
-    AuthenticationInfo authenticationInfo, 
-    String samlResponse)
-```
-
-**사용 사례:**
-+ 표준 동기화에서 다루지 않는 추가 사용자 프로필 속성 업데이트
-+ AEM에서 사용자 지정 사용자 관련 리소스 만들기 또는 업데이트
-+ 사용자 인증 후 워크플로우 또는 알림 트리거
-+ 사용자 지정 인증 이벤트 기록
-
-**중요:** 리포지토리에서 사용자 속성을 수정하려면 후크를 구현해야 합니다.
-+ `SlingRepository`을(를) 통해 `@Reference` 참조가 삽입됨
-+ 적절한 권한이 있는 구성된 [서비스 사용자](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/advanced/service-users)&#x200B;(&quot;Apache Sling 서비스 사용자 매퍼 서비스 수정&quot;에 구성됨)
-+ try-catch-finally 블록을 사용한 적절한 세션 관리
-
-### 사용자 정의 SAML 후크 구현
-
-다음 단계에서는 사용자 정의 SAML 후크를 만들고 배포하는 방법에 대해 간략히 설명합니다.
-
-#### 1단계: SAML 후크 구현 만들기
-
-`com.adobe.granite.auth.saml.spi.SamlHook` 인터페이스를 구현하는 AEM 프로젝트에서 새 Java 클래스를 만듭니다.
-
-```java
-package com.mycompany.aem.saml;
-
-import com.adobe.granite.auth.saml.spi.Assertion;
-import com.adobe.granite.auth.saml.spi.Attribute;
-import com.adobe.granite.auth.saml.spi.Message;
-import com.adobe.granite.auth.saml.spi.SamlHook;
-import org.apache.jackrabbit.api.JackrabbitSession;
-import org.apache.jackrabbit.api.security.user.Authorizable;
-import org.apache.jackrabbit.api.security.user.UserManager;
-import org.apache.sling.auth.core.spi.AuthenticationInfo;
-import org.apache.sling.jcr.api.SlingRepository;
-import org.osgi.service.component.annotations.Component;
-import org.osgi.service.component.annotations.Reference;
-import org.osgi.service.component.annotations.ReferenceCardinality;
-import org.osgi.service.metatype.annotations.AttributeDefinition;
-import org.osgi.service.metatype.annotations.Designate;
-import org.osgi.service.metatype.annotations.ObjectClassDefinition;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import javax.annotation.Nonnull;
-import javax.jcr.RepositoryException;
-import javax.jcr.Session;
-import javax.jcr.ValueFactory;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
-@Component
-@Designate(ocd = SampleImpl.Configuration.class, factory = true)
-public class SampleImpl implements SamlHook {
-    @ObjectClassDefinition(name = "Saml Sample Authentication Handler Hook Configuration")
-    @interface Configuration {
-        @AttributeDefinition(
-                name = "idpIdentifier",
-                description = "Identifier of SAML Idp. Match the idpIdentifier property's value configured in the SAML Authentication Handler OSGi factory configuration (com.adobe.granite.auth.saml.SamlAuthenticationHandler~<unique-id>) this SAML hook will hook into"
-        )
-        String idpIdentifier();
-
-    }
-
-    private static final String SAMPLE_SERVICE_NAME = "sample-saml-service";
-    private static final String CUSTOM_LOGIN_COUNT = "customLoginCount";
-
-    private final Logger log = LoggerFactory.getLogger(getClass());
-
-    private SlingRepository repository;
-
-    @SuppressWarnings("UnusedDeclaration")
-    @Reference(name = "repository", cardinality = ReferenceCardinality.MANDATORY)
-    public void bindRepository(SlingRepository repository) {
-        this.repository = repository;
-    }
-
-    /**
-     * This method is called after the user sync process is completed.
-     * At this point, the user has already been synchronized in OAK (created or updated).
-     * Example: Track login count by adding custom attributes to the user in the repository
-     *
-     * @param request
-     * @param response
-     * @param assertion
-     * @param authenticationInfo
-     * @param samlResponse
-     */
-    @Override
-    public void postSyncUserProcess(HttpServletRequest request, HttpServletResponse response, Assertion assertion,
-                                    AuthenticationInfo authenticationInfo, String samlResponse) {
-        log.info("Custom Audit Log: user {} successfully logged in", authenticationInfo.getUser());
-
-        // This code executes AFTER the user has been synchronized in OAK
-        // The user object already exists in the repository at this point
-        Session serviceSession = null;
-        try {
-            // Get a service session - requires "sample-saml-service" to be configured as system user
-            // Configure in: "Apache Sling Service User Mapper Service Amendment"
-            serviceSession = repository.loginService(SAMPLE_SERVICE_NAME, null);
-
-            // Get the UserManager to work with users and groups
-            UserManager userManager = ((JackrabbitSession) serviceSession).getUserManager();
-
-            // Get the authorizable (user) that just logged in
-            Authorizable user = userManager.getAuthorizable(authenticationInfo.getUser());
-
-            if (user != null && !user.isGroup()) {
-                ValueFactory valueFactory = serviceSession.getValueFactory();
-
-                // Increment login count
-                long loginCount = 1;
-                if (user.hasProperty(CUSTOM_LOGIN_COUNT)) {
-                    loginCount = user.getProperty(CUSTOM_LOGIN_COUNT)[0].getLong() + 1;
-                }
-                user.setProperty(CUSTOM_LOGIN_COUNT, valueFactory.createValue(loginCount));
-                log.debug("Set {} property to {} for user {}", CUSTOM_LOGIN_COUNT, loginCount, user.getID());
-
-                // Save all changes to the repository
-                if (serviceSession.hasPendingChanges()) {
-                    serviceSession.save();
-                    log.debug("Successfully saved custom attributes for user {}", user.getID());
-                }
-            } else {
-                log.warn("User {} not found or is a group", authenticationInfo.getUser());
-            }
-
-        } catch (RepositoryException e) {
-            log.error("Error adding custom attributes to user repository for user: {}",
-                     authenticationInfo.getUser(), e);
-        } finally {
-            if (serviceSession != null) {
-                serviceSession.logout();
-            }
-        }
-    }
-
-    /**
-     * This method is called after the SAML response is validated but before the user sync process starts.
-     * We can modify the assertion here to add custom attributes.
-     *
-     * @param request
-     * @param assertion
-     * @param samlResponse
-     */
-    @Override
-    public void postSamlValidationProcess(@Nonnull HttpServletRequest request, @Nonnull Assertion assertion, @Nonnull Message samlResponse) {
-        // Add the attribute "memberOf" with value "sample-group" to the assertion
-        // In this example "memberOf" is a multi-valued attribute that contains the groups from the Saml Idp
-        log.debug("Inside postSamlValidationProcess");
-        Attribute groupsAttr = assertion.getAttributes().get("groups");
-        if (groupsAttr != null) {
-            groupsAttr.addAttributeValue("sample-group-from-hook");
-        } else {
-            groupsAttr = new Attribute();
-            groupsAttr.setName("groups");
-            groupsAttr.addAttributeValue("sample-group-from-hook");
-            assertion.getAttributes().put("groups", groupsAttr);
-        }
-    }
-
-}
-```
-
-#### 2단계: SAML 후크 구성
-
-SAML 후크는 OSGi 구성을 사용하여 적용할 IDP를 지정합니다. 다음 프로젝트의 OSGi 구성 파일을 만듭니다.
-
-`/ui.config/src/main/content/jcr_root/wknd-examples/osgiconfig/config.publish/com.mycompany.aem.saml.CustomSamlHook~okta.cfg.json`
-
-```json
-{
-  "idpIdentifier": "$[env:SAML_IDP_ID;default=http://www.okta.com/exk4z55r44Jz9C6am5d7]",
-  "service.ranking": 100
-}
-```
-
-`idpIdentifier`은(는) 해당 SAML 인증 처리기 OSGi 팩터리 구성(PID: `idpIdentifier`)에 구성된 `com.adobe.granite.auth.saml.SamlAuthenticationHandler~<unique-id>.cfg.json` 값과 일치해야 합니다. 이 일치는 중요합니다. SAML 후크는 동일한 `idpIdentifier` 값을 갖는 SAML 인증 처리기 인스턴스에 대해서만 호출됩니다. SAML 인증 처리기는 팩터리 구성입니다. 즉, 여러 인스턴스(예: `com.adobe.granite.auth.saml.SamlAuthenticationHandler~okta.cfg.json`, `com.adobe.granite.auth.saml.SamlAuthenticationHandler~azure.cfg.json`)가 있을 수 있으며 각 후크는 `idpIdentifier`을(를) 통해 특정 처리기에 연결되어 있습니다. `service.ranking` 속성은 여러 후크를 구성할 때 실행 순서를 제어합니다(높은 값이 먼저 실행됨).
-
-#### 3단계: Maven 종속성 추가
-
-AEM Maven 핵심 프로젝트 `pom.xml`에 필요한 SAML SPI 종속성을 추가합니다.
-
-**AEM as a Cloud Service 프로젝트의 경우** SAML 인터페이스를 포함하는 AEM SDK API 종속성을 사용하십시오.
-
-```xml
-<dependency>
-    <groupId>com.adobe.aem</groupId>
-    <artifactId>aem-sdk-api</artifactId>
-    <version>${aem.sdk.api}</version>
-    <scope>provided</scope>
-</dependency>
-```
-
-`aem-sdk-api` 아티팩트에 `com.adobe.granite.auth.saml.spi.SamlHook`을(를) 포함하여 필요한 모든 Adobe Granite SAML 인터페이스가 포함되어 있습니다.
-
-#### 4단계: 서비스 사용자 구성(저장소를 수정하는 경우)
-
-`postSyncUserProcess` 예에 표시된 대로 SAML 후크에서 리포지토리의 사용자 속성을 수정해야 하는 경우 [서비스 사용자](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/advanced/service-users)를 구성해야 합니다.
-
-1. `/ui.config/src/main/content/jcr_root/apps/myproject/osgiconfig/config/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~saml.cfg.json`의 프로젝트에서 서비스 사용자 매핑을 만듭니다.
-
-```json
-{
-  "user.mapping": [
-    "com.mycompany.aem.core:sample-saml-service=saml-hook-service"
-  ]
-}
-```
-
-1. `/ui.config/src/main/content/jcr_root/apps/myproject/osgiconfig/config/org.apache.sling.jcr.repoinit.RepositoryInitializer~saml.cfg.json`에서 서비스 사용자 및 권한을 정의하는 Repoinit 스크립트를 만듭니다.
-
-```
-create service user saml-hook-service with path system/saml
-
-set ACL for saml-hook-service
-    allow jcr:read,rep:write,rep:userManagement on /home/users
-end
-```
-
-이렇게 하면 서비스 사용자에게 저장소의 사용자 속성을 읽고 수정할 수 있는 권한이 부여됩니다.
-
-#### 5단계: AEM에 배포
-
-사용자 지정 SAML 후크를 AEM as a Cloud Service에 배포합니다.
-
-1. AEM 프로젝트 빌드
-1. Cloud Manager Git 저장소에 코드를 커밋합니다.
-1. 전체 스택 배포 파이프라인을 사용하여 배포
-1. 사용자가 SAML을 통해 인증하면 SAML 후크가 자동으로 활성화됩니다
-
-
-### 중요한 고려 사항
-
-+ **IDP 식별자 일치**: SAML 후크에 구성된 `idpIdentifier`은(는) SAML 인증 처리기 팩터리 구성(`idpIdentifier`)의 `com.adobe.granite.auth.saml.SamlAuthenticationHandler~<unique-id>`과(와) 정확히 일치해야 합니다.
-+ **특성 이름**: 후크에서 참조된 특성 이름(예: `groupMembership`)이 SAML 인증 처리기에 구성된 특성과 일치하는지 확인하십시오.
-+ **성능**: 모든 SAML 인증 중에 실행될 때 후크 구현을 가볍게 유지하십시오.
-+ **오류 처리**: 인증에 실패하는 심각한 오류가 발생하면 SAML 후크 구현에서 `com.adobe.granite.auth.saml.spi.SamlHookException`을(를) throw해야 합니다. SAML 인증 처리기가 이러한 예외를 catch하고 `AuthenticationInfo.FAIL_AUTH`을(를) 반환합니다. 저장소 작업의 경우 항상 `RepositoryException`을(를) catch하고 오류를 적절하게 기록합니다. try-catch-finally 블록을 사용하여 리소스를 올바르게 정리합니다.
-+ **테스트**: 프로덕션에 배포하기 전에 낮은 환경에서 사용자 지정 후크를 철저하게 테스트합니다.
-+ **여러 후크**: 여러 SAML 후크 구현을 구성할 수 있습니다. 일치하는 모든 후크가 실행됩니다. OSGi 구성 요소에서 `service.ranking` 속성을 사용하여 실행 순서를 제어합니다(높은 순위 값이 먼저 실행됨). 여러 SAML 인증 처리기 팩터리 구성(`com.adobe.granite.auth.saml.SamlAuthenticationHandler~<unique-id>`)에서 SAML 후크를 다시 사용하려면 각 SAML 인증 처리기와 일치하는 다른 `idpIdentifier`을(를) 사용하여 여러 후크 구성(OSGi 팩터리 구성)을 만드십시오
-+ **보안**: 비즈니스 논리에 사용하기 전에 SAML 어설션의 모든 데이터를 확인하고 정리합니다.
-+ **저장소 액세스**: `postSyncUserProcess`에서 사용자 속성을 수정할 때는 관리 세션이 아닌 적절한 권한이 있는 [서비스 사용자](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/advanced/service-users)를 항상 사용하십시오
-+ **서비스 사용자 권한**: [서비스 사용자](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/advanced/service-users)에게 필요한 최소 권한을 부여합니다(예: `jcr:read`의 `rep:write` 및 `/home/users`만, 전체 관리자 권한이 아님).
-+ **세션 관리**: 예외가 발생하더라도 항상 try-catch-finally 블록을 사용하여 저장소 세션이 올바르게 닫히도록 하십시오
-+ **사용자 동기화 시간**: 사용자가 OAK에 동기화된 후 `postSyncUserProcess` 후크가 실행되므로 이 시점에는 사용자 개체가 저장소에 존재할 수 있습니다
+사용자 지정 SAML 로그인 후크를 개발하고 등록하는 방법에 대한 자세한 내용은 [사용자 지정 SAML 로그인 후크](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/custom-saml-login-hook.html) 설명서를 참조하십시오.
 
 ## SAML 구성 배포
 
@@ -892,7 +607,7 @@ SAML 인증은 다음 형식으로 HTTP GET 요청을 만들어 호출할 수 �
 
 | 쿼리 매개 변수 이름 | 쿼리 매개 변수 값 |
 |----------------------|-----------------------|
-| `resource` | SAML 인증 핸들러인 모든 JCR 경로 또는 하위 경로는 [Adobe Granite SAML 2.0 Authentication Handler OSGi 구성의 &#x200B;](#configure-saml-2-0-authentication-handler) `path` 속성에 정의된 대로 수신합니다. |
+| `resource` | SAML 인증 핸들러인 모든 JCR 경로 또는 하위 경로는 [Adobe Granite SAML 2.0 Authentication Handler OSGi 구성의 ](#configure-saml-2-0-authentication-handler) `path` 속성에 정의된 대로 수신합니다. |
 | `saml_request_path` | SAML 인증이 성공한 후 사용자가 이동해야 하는 URL 경로입니다. |
 
 예를 들어 이 HTML 링크는 SAML 로그인 흐름을 트리거하고 성공 시 사용자를 `/content/wknd/us/en/protected/page.html`(으)로 이동합니다. 이러한 쿼리 매개 변수는 필요에 따라 프로그래밍 방식으로 설정할 수 있습니다.
@@ -913,7 +628,7 @@ SAML 인증은 다음 형식으로 HTTP POST 요청을 만들어 호출할 수 �
 
 | 양식 데이터 이름 | 양식 데이터 값 |
 |----------------------|-----------------------|
-| `resource` | SAML 인증 핸들러인 모든 JCR 경로 또는 하위 경로는 [Adobe Granite SAML 2.0 Authentication Handler OSGi 구성의 &#x200B;](#configure-saml-2-0-authentication-handler) `path` 속성에 정의된 대로 수신합니다. |
+| `resource` | SAML 인증 핸들러인 모든 JCR 경로 또는 하위 경로는 [Adobe Granite SAML 2.0 Authentication Handler OSGi 구성의 ](#configure-saml-2-0-authentication-handler) `path` 속성에 정의된 대로 수신합니다. |
 | `saml_request_path` | SAML 인증이 성공한 후 사용자가 이동해야 하는 URL 경로입니다. |
 
 
