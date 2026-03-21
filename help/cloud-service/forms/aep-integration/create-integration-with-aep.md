@@ -22,4 +22,4 @@ ht-degree: 0%
 
 AEM Forms 제출을 통해 Adobe Experience Platform에서 프로필을 만들고 관리하는 방법을 알아봅니다. 이 통합은 데이터 관리를 간소화하고 사용자 경험을 향상시킵니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3481508/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3481516/?captions=kor&learn=on&enablevpops)

@@ -22,7 +22,7 @@ ht-degree: 2%
 
 AEM Forms에서 Adobe Experience Platform과 안전하게 통합되는 클라우드 구성을 설정하는 방법에 대해 알아봅니다. Adobe Developer Console 자격 증명을 사용하여 양식에 대한 데이터를 원활하게 제출하고 검색할 수 있습니다. 이 안내서에서는 연결을 효율적으로 구성하는 단계별 지침을 제공합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3481496/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3481503/?captions=kor&learn=on&enablevpops)
 
 
 ## 다음 단계
