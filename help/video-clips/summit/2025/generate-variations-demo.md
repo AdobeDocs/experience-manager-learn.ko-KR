@@ -14,7 +14,7 @@ index: false
 hide: true
 hidefromtoc: true
 exl-id: 58a249c2-e4d1-4221-ad9d-3b19856b3048
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '44'
 ht-degree: 0%
@@ -25,4 +25,4 @@ ht-degree: 0%
 
 변형 생성 도구의 라이브 데모로, 브랜드 내 콘텐츠 변형을 빠르고 효율적으로 만들 수 있는 기능을 보여줍니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3462359/?captions=kor&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3459233/?learn=on&enablevpops)

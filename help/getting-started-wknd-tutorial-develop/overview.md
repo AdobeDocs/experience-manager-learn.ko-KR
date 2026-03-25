@@ -4,7 +4,7 @@ description: WKND라는 가상의 라이프스타일 브랜드를 위한 AEM 사
 version: Experience Manager as a Cloud Service
 jira: KT-13565
 mini-toc-levels: 1
-index: y
+index: true
 thumbnail: 30476.jpg
 feature: Core Components, Page Editor, Editable Templates, AEM Project Archetype
 topic: Content Management, Development
@@ -13,8 +13,8 @@ level: Beginner
 doc-type: Catalog
 exl-id: 09a600f4-1ada-4fb7-ae44-586364cff389
 recommendations: disable
-source-git-commit: dbf63f30ccfd06e4f4d7883c2f7bc4ac78245364
-workflow-type: ht
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
+workflow-type: tm+mt
 source-wordcount: '577'
 ht-degree: 100%
 
@@ -30,7 +30,7 @@ Adobe Experience Manager(AEM)를 처음 사용하는 개발자를 위해 설계�
 
 이 멀티 파트 튜토리얼의 목표는 개발자를 대상으로 최신 표준 기술을 통해 Adobe Experience Manager(AEM)에서 웹 사이트를 구현하는 방법을 교육하는 것입니다. 이 튜토리얼을 완료하면 개발자는 AEM의 플랫폼 기본 토대와 일반적인 디자인 패턴을 이해하게 됩니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/36102?quality=12&learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/30476?quality=12&learn=on)
 
 ## Sites 프로젝트 시작을 위한 옵션
 

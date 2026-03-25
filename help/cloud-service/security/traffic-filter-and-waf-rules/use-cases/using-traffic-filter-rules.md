@@ -11,7 +11,7 @@ last-substantial-update: 2025-06-04T00:00:00Z
 jira: KT-18307
 thumbnail: null
 exl-id: 5e235220-82f6-46e4-b64d-315f027a7024
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '1780'
 ht-degree: 100%
@@ -263,7 +263,8 @@ Splunk에서 대시보드를 만들려면 [AEMCS CDN 로그 분석을 위한 Spl
 
 기존 보안 조치를 우회하기 위해 고급 기술을 사용하는 정교한 위협으로부터 AEM 웹 사이트를 보호하기 위해 Adobe에서 권장하는 WAF 규칙을 구현하는 방법에 대해 알아봅니다.
 
-<!-- CARDS
+<!-- 
+CARDS
 {target = _self}
 
 * ./using-waf-rules.md
@@ -305,7 +306,8 @@ Splunk에서 대시보드를 만들려면 [AEMCS CDN 로그 분석을 위한 Spl
 
 더 고급 시나리오의 경우, 특정 비즈니스 요구 사항에 따라 사용자 정의 트래픽 필터 규칙을 구현하는 방법을 보여 주는 다음 사용 사례를 살펴볼 수 있습니다.
 
-<!-- CARDS
+<!-- 
+CARDS
 {target = _self}
 
 * ../how-to/request-logging.md

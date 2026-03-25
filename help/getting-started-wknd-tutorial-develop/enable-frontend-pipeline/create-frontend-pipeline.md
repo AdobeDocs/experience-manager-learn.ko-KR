@@ -8,12 +8,12 @@ role: Developer, Admin
 level: Intermediate
 jira: KT-10689
 mini-toc-levels: 1
-index: y
+index: true
 recommendations: noDisplay, noCatalog
 doc-type: Tutorial
 exl-id: d6da05e4-bd65-4625-b9a4-cad8eae3c9d7
 duration: 225
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 100%
@@ -38,7 +38,7 @@ ht-degree: 100%
 
 여러 부분으로 구성된 튜토리얼로, [표준 AEM Project 업데이트](./update-project.md)에 개괄된 단계가 완료되었다고 가정합니다.
 
-[Cloud Manager에서 파이프라인을 생성 및 배포할 수 있는 권한](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=ko#role-definitions) 및 [AEM as a Cloud Service 환경에 액세스할 수 있는 권한](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=ko)이 있는지 확인합니다.
+[Cloud Manager에서 파이프라인을 생성 및 배포할 수 있는 권한](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=ko#role-definitions) 및 [AEM as a Cloud Service 환경에 액세스할 수 있는 권한](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html)이 있는지 확인합니다.
 
 ## 기존 파이프라인 이름 재설정
 

@@ -11,7 +11,7 @@ last-substantial-update: 2025-08-07T00:00:00Z
 jira: KT-18717
 thumbnail: null
 exl-id: c4fb11b9-b613-4522-b9da-18d7ae0826ec
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 8%
@@ -44,7 +44,8 @@ AEM as a Cloud Service(AEMCS)를 Adobe Target 및 Adobe Experience Platform(AEP)
 >
 > 먼저 라이브 데모를 살펴보는 것은 설정 및 구현에 시간을 투자하기 전에 각 개인화 기법의 가치와 기능을 이해하는 데 도움이 됩니다.
 
-<!-- CARDS
+<!-- 
+CARDS
 {target = _self}
 
 * ./live-demo.md
@@ -85,7 +86,8 @@ AEM as a Cloud Service(AEMCS)를 Adobe Target 및 Adobe Experience Platform(AEP)
 
 특정 사용 사례를 살펴보기 전에 먼저 개인화를 위해 AEM as a Cloud Service을 구성합니다. 먼저 Adobe Target과 태그를 통합하여 웹 SDK을 사용하여 클라이언트측 개인화를 활성화합니다. 이러한 기본 단계를 통해 AEM 페이지에서 실험, 대상 타기팅 및 실시간 개인화를 지원할 수 있습니다.
 
-<!-- CARDS
+<!-- 
+CARDS
 {target = _self}
 
 * ./setup/integrate-adobe-target.md
@@ -158,7 +160,8 @@ AEM as a Cloud Service(AEMCS)를 Adobe Target 및 Adobe Experience Platform(AEP)
 
 AEMCS, Adobe Target 및 Adobe Experience Platform에서 지원하는 다음과 같은 일반적인 개인화 사용 사례를 살펴봅니다.
 
-<!-- CARDS
+<!-- 
+CARDS
 {target = _self}
 
 * ./use-cases/experimentation.md

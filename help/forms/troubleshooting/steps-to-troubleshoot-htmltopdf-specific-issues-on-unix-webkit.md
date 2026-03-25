@@ -7,10 +7,10 @@ level: Intermediate
 version: Experience Manager 6.5
 feature: PDF Generator
 topic: Development
-index: y
+index: true
 exl-id: 6afe3b69-1422-4832-a189-57cbc0658ac1
 duration: 120
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '49'
 ht-degree: 0%
@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *이 비디오에서는 Unix 설정(WebKit 변환)에서 HtmltoPDF 관련 문제를 해결하는 과정을 안내합니다.*
 
->[!VIDEO](https://video.tv.adobe.com/v/3417643?quality=12&learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/335548?quality=12&learn=on)

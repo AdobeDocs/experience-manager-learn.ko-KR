@@ -1,6 +1,6 @@
 ---
-title: jQuery 및 Handlebars를 사용한 필터링
-description: 표시할 WKND Adventures를 필터링하는 jQuery 및 Handlebars를 사용하는 JavaScript 구현입니다. .
+title: jQuery와 Handlebars를 사용한 필터링
+description: 표시할 WKND 모험 을 필터링하는 jQuery 및 Handlebars를 사용하는 JavaScript 구현입니다.
 version: Experience Manager as a Cloud Service
 mini-toc-levels: 1
 feature: Content Fragments, GraphQL API
@@ -14,14 +14,14 @@ hide: true
 hidefromtoc: true
 exl-id: 75ffd84a-62b1-480f-b05f-3664f54bb171
 duration: 26
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '138'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 
-# jQuery 및 Handlebars를 사용한 필터링
+# jQuery와 Handlebars를 사용한 필터링
 
 [jQuery](https://jquery.com/) 및 [Handlebars](https://handlebarsjs.com/)를 사용하는 AEM 앱을 사용하여 데이터를 필터링하는 JavaScript Headless GraphQL API 기능을 살펴보십시오. 이 앱은 활동 유형별로 필터링 가능한 WKND 모험 목록을 만듭니다.
 

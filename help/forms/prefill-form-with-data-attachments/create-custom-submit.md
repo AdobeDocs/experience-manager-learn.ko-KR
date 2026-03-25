@@ -1,6 +1,6 @@
 ---
 title: 사용자 정의 제출을 만들어 핵심 구성 요소 기반 양식 제출을 처리합니다.
-description: Azure에 첨부 파일이 있는 양식 데이터를 저장하기 위한 사용자 지정 제출 만들기
+description: Azure에 첨부 파일이 있는 양식 데이터를 저장하기 위해 사용자 정의 제출 만들기
 feature: Adaptive Forms
 type: Documentation
 role: Developer
@@ -10,7 +10,7 @@ topic: Integrations
 jira: KT-14794
 exl-id: c4257567-76bd-417e-a1a2-38a0647767d9
 duration: 147
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 # 양식 제출을 처리할 사용자 정의 제출 만들기
 
-사용 사례를 충족하기 위해 제출된 데이터 및 첨부 파일을 Azure에 저장하는 사용자 지정 제출 서비스를 만들었습니다. 핵심 구성 요소 기반 양식을 제출하면 데이터는 다음 형식을 갖습니다
+사용 사례를 충족하기 위해 Azure에 제출된 데이터와 첨부 파일을 저장하는 사용자 정의 제출 서비스가 생성되었습니다. 핵심 구성 요소 기반 양식을 제출하면 데이터는 다음 형식을 갖습니다
 
 ```json
 {
@@ -40,9 +40,9 @@ ht-degree: 1%
 }
 ```
 
-_&#x200B;**contractcopy**&#x200B;_ 요소는 첨부 파일 구성 요소를 나타내며 양식과 함께 제출된 첨부 파일을 캡처하는 데 사용됩니다.
+_**contractcopy**_ 요소는 첨부 파일 구성 요소를 나타내며 양식과 함께 제출된 첨부 파일을 캡처하는 데 사용됩니다.
 적응형 양식에 데이터 및 해당 첨부 파일을 미리 채울 수 있도록 제출된 첨부 파일이 Azure 포털에 저장되고 제출된 데이터에 있는 contractcopy 개체의 데이터 요소가 저장된 첨부 파일의 URL로 업데이트됩니다.
-사용자 지정 제출 서비스는 Azure 포털에서 첨부 파일을 추출하여 저장합니다.  업데이트된 제출 데이터는 다음과 같이 표시됩니다
+사용자 정의 제출 서비스는 Azure 포털에서 첨부 파일을 추출하고 저장합니다.  업데이트된 제출 데이터는 다음과 같이 표시됩니다
 
 
 ```json
@@ -62,9 +62,7 @@ _&#x200B;**contractcopy**&#x200B;_ 요소는 첨부 파일 구성 요소를 나�
     },
     "Message": "We would like to renew our annual contract "
 }
-``
 ```
-
 
 [핵심 구성 요소 기반 적응형 양식에 대한 샘플 사용자 지정 제출 처리기는 여기에서 사용할 수 있습니다](https://github.com/adobe/aem-core-forms-components/blob/master/it/core/src/main/java/com/adobe/cq/forms/core/components/it/service/CustomAFSubmitService.java#L56). 양식 제출을 처리하기 위해 다음과 같은 사용자 정의 제출을 작성했습니다
 

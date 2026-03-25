@@ -11,7 +11,7 @@ thumbnail: KT-10587.jpg
 mini-toc-levels: 2
 exl-id: 3fe175f7-6213-439a-a02c-af3f82b6e3b7
 duration: 136
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '640'
 ht-degree: 5%
@@ -82,7 +82,7 @@ AEM과 SPA는 서로 다른 도메인에서 액세스하므로 웹 브라우저�
 
 1. SPA는 Netlify 도메인에서 제공되지만 다른 도메인의 AEM GraphQL API에 대해 XHR을 호출합니다. 이 사이트 간 요청을 사용하려면 Netlify 도메인의 콘텐츠 액세스를 허용하도록 AEM에 [CORS](./configurations/cors.md)을(를) 설정해야 합니다.
 
-   SPA 및 AEM 호스트 ![에서 제공된 &#x200B;](assets/spa/cors-requirement.png)SPA 요청
+   SPA 및 AEM 호스트 ![에서 제공된 ](assets/spa/cors-requirement.png)SPA 요청
 
 2. AEM GraphQL API에 대한 XHR 요청을 검사하는 동안 `Access-Control-Allow-Origin`이(가) 있으며, 이는 AEM이 이 Netlify 도메인의 콘텐츠 액세스를 요청할 수 있음을 웹 브라우저에 나타냅니다.
 
@@ -94,7 +94,8 @@ AEM과 SPA는 서로 다른 도메인에서 액세스하므로 웹 브라우저�
 
 Adobe은 React로 코딩된 단일 페이지 앱의 예를 제공합니다.
 
-<!-- CARDS 
+<!-- 
+CARDS
 
 * ../example-apps/react-app.md
 

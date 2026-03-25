@@ -12,7 +12,7 @@ thumbnail: KT-16515.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 0eb0054d-0c0a-4ac0-b7b2-fdaceaa6479b
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '1100'
 ht-degree: 100%
@@ -94,7 +94,8 @@ Adobe API에 액세스하기 전에 다음과 같은 주요 구조를 이해하�
 
 AEM as a Cloud Service환경을 설정하고 Adobe Developer Console 프로젝트를 통해 OpenAPI 기반 AEM API에 액세스할 수 있도록 하는 방법을 알아보십시오. 또한 브라우저를 통해 AEM API에 액세스하여 설정을 확인하고 요청과 응답을 검토해 보십시오.
 
-<!-- CARDS
+<!-- 
+CARDS
 {target = _self}
 
 * ./setup.md
@@ -135,7 +136,8 @@ AEM as a Cloud Service환경을 설정하고 Adobe Developer Console 프로젝�
 
 다양한 OAuth 인증 방법을 사용하여 OpenAPI 기반 AEM API를 사용하는 방법을 알아봅니다.
 
-<!-- CARDS
+<!-- 
+CARDS
 {target = _self}
 
 * ./use-cases/invoke-api-using-oauth-s2s.md

@@ -8,7 +8,7 @@ doc-type: Catalog
 duration: 30
 last-substantial-update: 2026-01-05T00:00:00Z
 exl-id: cc255744-bb86-49cb-88ca-1266d28985a5
-source-git-commit: bf6a6f467c3ded713552e0077b13c41fb45511cb
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 22%
@@ -21,7 +21,8 @@ Experience Manager의 ![AI](./assets/overview/hero.png)
 
 Experience Manager as a Cloud Service은 고급 AI 기능을 제공하여 콘텐츠 관리를 향상시키고, 워크플로를 간소화하며, 사용자 경험을 향상시킵니다. 사용자는 AEM AI Assistant 및 AEM AI 에이전트와 같은 AI 기반 기능을 통합하여 작업을 자동화하고, 통찰력을 얻고, 콘텐츠 전달을 최적화할 수 있습니다.
 
-<!-- CARDS 
+<!-- 
+CARDS
 
 * ./ai-assistant/overview.md
     {title = AEM AI Assistant}
@@ -55,7 +56,7 @@ Experience Manager as a Cloud Service은 고급 AI 기능을 제공하여 콘텐
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./ai-assistant/overview.md" title="AEM AI 어시스턴트" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475365/?captions=kor&format=jpeg&nocache=1773082651757" alt="AEM AI 어시스턴트"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475357/?format=jpeg&nocache=1773082651757" alt="AEM AI 어시스턴트"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

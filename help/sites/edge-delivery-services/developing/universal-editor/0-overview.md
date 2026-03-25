@@ -1,7 +1,7 @@
 ---
 title: Edge Delivery Services 및 범용 편집기 개발자 튜토리얼
 description: AEM 범용 편집기로 작성되고 Edge Delivery Services로 게재되는 새 웹 사이트 개발의 기본 사항에 대해 알아봅니다.
-short-description: Edge Delivery Services을 사용하여 강력한 작성 기능과 범용 편집기 및 매우 빠른 전달을 결합하는 AEM 웹 사이트를 구축하기 위한 개발자 튜토리얼입니다. 새 프로젝트를 만들고, 로컬 개발 환경을 설정하고, 사용자 지정 블록을 만드는 방법을 알아봅니다.
+short-description: 강력한 작성 기능과 범용 편집기를 결합한 AEM 웹 사이트 빌드와 Edge Delivery Services를 사용한 빠른 게재가 가능한 개발자 튜토리얼입니다. 새로운 프로젝트를 만들고, 로컬 개발 환경을 설정하며, 사용자 정의 블록을 빌드하는 방법을 알아봅니다.
 version: Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Development
@@ -11,10 +11,10 @@ doc-type: Catalog
 jira: KT-15832
 duration: 88
 exl-id: aeac08a2-75a0-4adb-b32e-0e7f85e7eb1d
-source-git-commit: f0b1b906e1ef04b53eca940f191e65d62a2e0bab
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '658'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,8 @@ ht-degree: 94%
 
 AEM as a Cloud Service에서 코드 프로젝트를 만들고 새 사이트를 구성하는 방법을 알아봅니다. 이 설정을 사용하면 범용 편집기의 콘텐츠 생성 기능과 Edge Delivery Services를 통한 빠른 콘텐츠 게재 기능을 원활하게 연동하여 개발할 수 있습니다.
 
-<!-- CARDS 
+<!-- 
+CARDS
 
 * ./1-new-code-project.md
 * ./2-new-aem-site.md
@@ -88,7 +89,8 @@ AEM as a Cloud Service에서 코드 프로젝트를 만들고 새 사이트를 �
 ## 개발 설정
 
 빠른 웹 사이트 개발을 위해 로컬 개발 환경을 구성하는 방법을 알아봅니다. 이 설정을 사용하면 범용 편집기를 통한 원활한 사이트 생성과 Edge Delivery Services를 통한 효율적인 콘텐츠 게재를 결합하여, 원활하고 최적화된 개발 워크플로가 확보됩니다.
-<!-- CARDS 
+<!-- 
+CARDS
 
 * ./3-local-development-environment.md
 * ./4-website-branding.md
@@ -101,7 +103,7 @@ AEM as a Cloud Service에서 코드 프로젝트를 만들고 새 사이트를 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./3-local-development-environment.md" title="로컬 개발 환경 설정" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443985/?captions=kor&format=jpeg&nocache=1753811862249" alt="로컬 개발 환경 설정"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443978/?format=jpeg&nocache=1753811862249" alt="로컬 개발 환경 설정"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -149,7 +151,8 @@ AEM as a Cloud Service에서 코드 프로젝트를 만들고 새 사이트를 �
 
 콘텐츠 모델을 정의하고 테스트 및 개발을 위한 샘플 콘텐츠를 설정하여 새 블록을 만드는 방법을 알아봅니다. 블록을 렌더링하는 두 가지 방법을 살펴보고, AEM 및 Edge Delivery Services에서 최적의 성능과 유연성을 위해 블록을 구성하는 방법을 이해합니다.
 
-<!-- CARDS 
+<!-- 
+CARDS
 
 * ./5-new-block.md {image = ./assets/5-new-block/card.png}
 * ./6-author-block.md {image = ./assets/6-author-block/card.png}
@@ -258,7 +261,8 @@ AEM as a Cloud Service에서 코드 프로젝트를 만들고 새 사이트를 �
 
 이 튜토리얼을 완료했으므로, 이제 학습한 내용을 바탕으로 다음의 집중적인 방법을 통해 작업을 진행해 보십시오. 이들 안내서에서는 여기서 다룬 코드와 개념을 확장하여 역할별 사용 사례, 고급 기술, Edge Delivery Services와 범용 편집기 개발 기술을 연마하기 위한 추가 팁을 살펴봅니다.
 
-<!-- CARDS 
+<!-- 
+CARDS
 
 * ./how-to/block-options.md
 * ./how-to/header-and-footer.md

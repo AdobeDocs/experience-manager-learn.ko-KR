@@ -7,8 +7,8 @@ solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: Experience Manager 6.5, Experience Manager as a Cloud Service
 jira: KT-2963
-index: y
-source-git-commit: c6213dd318ec4865375c57143af40dbe3f3990b1
+index: true
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 100%
@@ -28,7 +28,7 @@ ht-degree: 100%
       + [4 - React 앱 만들기](./open-api/basic/4-react-app.md)
       + [5 - 범용 편집기 통합](./open-api/basic/5-universal-editor.md)
 + GraphQL {#graphql}
-   + [AEM Headless 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ko){target=_blank}
+   + [AEM Headless 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html){target=_blank}
    + [개요](./graphql/overview.md)
    + 빠른 설정 {#quick-setup}
       + [Cloud Service](./graphql/quick-setup/cloud-service.md)
@@ -70,7 +70,7 @@ ht-degree: 100%
       + [CORS](./graphql/deployment/configurations/cors.md)
       + [Dispatcher 필터](./graphql/deployment/configurations/dispatcher-filters.md)
 + 방법 {#how-to}
-   + [리치 텍스트](./graphql/how-to/rich-text.md)
+   + [서식 있는 텍스트](./graphql/how-to/rich-text.md)
    + [이미지](./graphql/how-to/images.md)
    + [현지화된 콘텐츠](./graphql/how-to/localized-content.md)
    + [큰 결과 세트](./graphql/how-to/large-result-sets.md)

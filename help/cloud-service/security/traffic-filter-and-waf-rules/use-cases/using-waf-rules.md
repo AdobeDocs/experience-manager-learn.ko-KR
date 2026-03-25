@@ -12,7 +12,7 @@ badgeLicense: label="라이선스 필요" type="positive" before-title="true"
 jira: KT-18308
 thumbnail: null
 exl-id: b87c27e9-b6ab-4530-b25c-a98c55075aef
-source-git-commit: 7b29187ef84bebebd4586374abb09ced947dff28
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '1386'
 ht-degree: 98%
@@ -30,7 +30,7 @@ AEM as a Cloud Service에서 _Adobe 권장_ **웹 애플리케이션 방화벽(W
 > WAF 트래픽 필터 규칙에는 추가 확장 보안(이전 명칭: WAF-DDoS Protection) 또는 확장 보안 for Healthcare(이전 명칭: Enhanced Security) 라이센스가 필요합니다. 표준 트래픽 필터 규칙은 기본적으로 Sites 및 Forms 고객에게 제공됩니다.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3469437/?captions=kor&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3469397/?quality=12&learn=on)
 
 ## 학습 목표
 
@@ -233,7 +233,8 @@ Splunk에서 대시보드를 만들려면 [AEMCS CDN 로그 분석을 위한 Spl
 
 더 고급 시나리오의 경우, 특정 비즈니스 요구 사항에 따라 사용자 정의 트래픽 필터 규칙을 구현하는 방법을 보여 주는 다음 사용 사례를 살펴볼 수 있습니다.
 
-<!-- CARDS
+<!-- 
+CARDS
 {target = _self}
 
 * ../how-to/request-logging.md

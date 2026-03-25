@@ -11,7 +11,7 @@ last-substantial-update: 2025-06-04T00:00:00Z
 jira: KT-13148
 thumbnail: null
 exl-id: e6d67204-2f76-441c-a178-a34798fe266d
-source-git-commit: 7b29187ef84bebebd4586374abb09ced947dff28
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '1195'
 ht-degree: 98%
@@ -95,7 +95,8 @@ Adobe는 AEM Sites를 신속하게 보호할 수 있도록 표준 트래픽 필�
 
 아래의 설정 안내서 및 사용 사례를 따라 AEM as a Cloud Service에서 WAF 규칙을 포함한 트래픽 필터 규칙을 정의하고, 배포하고, 테스트하고, 분석하는 방법에 대해 알아봅니다. 이를 통해 나중에 Adobe 권장 규칙을 자신 있게 적용할 수 있는 배경 지식을 얻을 수 있습니다.
 
-<!-- CARDS
+<!-- 
+CARDS
 {target = _self}
 
 * ./setup.md
@@ -136,7 +137,8 @@ Adobe는 AEM Sites를 신속하게 보호할 수 있도록 표준 트래픽 필�
 
 이 안내서는 AEM as a Cloud Service 환경에서 Adobe 권장 표준 트래픽 필터 및 WAF 트래픽 필터 규칙을 설정하고 배포하기 위한 단계별 지침을 제공합니다.
 
-<!-- CARDS
+<!-- 
+CARDS
 {target = _self}
 
 * ./use-cases/using-traffic-filter-rules.md
@@ -206,7 +208,8 @@ Adobe는 AEM Sites를 신속하게 보호할 수 있도록 표준 트래픽 필�
 
 더 고급 시나리오의 경우, 특정 비즈니스 요구 사항에 따라 사용자 정의 트래픽 필터 규칙을 구현하는 방법을 보여 주는 다음 사용 사례를 살펴볼 수 있습니다.
 
-<!-- CARDS
+<!-- 
+CARDS
 {target = _self}
 
 * ./how-to/request-logging.md

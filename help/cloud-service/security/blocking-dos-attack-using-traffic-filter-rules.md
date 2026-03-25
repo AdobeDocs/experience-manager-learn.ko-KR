@@ -12,7 +12,7 @@ last-substantial-update: 2024-04-19T00:00:00Z
 jira: KT-15184
 thumbnail: KT-15184.jpeg
 exl-id: 60c2306f-3cb6-4a6e-9588-5fa71472acf7
-source-git-commit: 7b29187ef84bebebd4586374abb09ced947dff28
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '619'
 ht-degree: 93%
@@ -50,7 +50,8 @@ AEM 웹 사이트를 위한 기본 DDoS 보호에 대해 알아보겠습니다.
 
 Adobe에서 권장하는 공격 차단 규칙을 구성하려면 다음 튜토리얼을 살펴보십시오.
 
-<!-- CARDS
+<!-- 
+CARDS
 {target = _self}
 
 * ./traffic-filter-and-waf-rules/setup.md

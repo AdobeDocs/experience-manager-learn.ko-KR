@@ -1,5 +1,5 @@
 ---
-title: 사전 설정 앱 필터링
+title: Preact 앱 필터링
 description: 콘텐츠 조각을 사용하여 모델링된 WKND 모험을 필터링하는 간단한 사전 설정 앱입니다.
 version: Experience Manager as a Cloud Service
 feature: Content Fragments, GraphQL API
@@ -13,14 +13,14 @@ hide: true
 hidefromtoc: true
 exl-id: d2b7e8ab-8bbc-495f-94f1-362ea47b3853
 duration: 26
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '130'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
-# 사전 설정 앱 필터링
+# Preact 앱 필터링
 
 [삽입](https://preactjs.com/) 앱을 사용하여 데이터를 필터링하는 AEM Headless GraphQL API 기능을 살펴보십시오. 이 사전 설정 앱은 활동 유형별로 필터링 가능한 WKND 모험 목록을 생성합니다.
 

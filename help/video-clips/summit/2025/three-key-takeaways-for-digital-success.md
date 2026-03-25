@@ -14,7 +14,7 @@ index: false
 hide: true
 hidefromtoc: true
 exl-id: 39ed523f-abcd-49b5-978f-b795e109d7f5
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '48'
 ht-degree: 0%
@@ -25,4 +25,4 @@ ht-degree: 0%
 
 디지털 경험을 최적화하기 위한 세 가지 주요 원칙인 기본 사항 수정, AI 활용 및 전략 리더 역량 강화에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3462049/?captions=kor&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3459234/?learn=on&enablevpops)

@@ -7,10 +7,10 @@ level: Intermediate
 version: Experience Manager 6.5
 feature: PDF Generator
 topic: Administration
-index: y
+index: true
 exl-id: 397f5580-d982-46f3-b63a-7fc6def07ec5
 duration: 128
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '56'
 ht-degree: 0%
@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *이 비디오에서는 트랜잭션 롤백 문제를 완화하기 위해 Forms PDFG에서 CORBA 시간 제한을 업데이트하는 프로세스에 대해 설명합니다.*
 
->[!VIDEO](https://video.tv.adobe.com/v/3417232?quality=12&learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/335512?quality=12&learn=on)

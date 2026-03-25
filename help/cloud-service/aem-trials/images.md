@@ -6,7 +6,7 @@ hidefromtoc: true
 hide: true
 exl-id: c2ee05f0-9e10-4a3b-8ecb-0366116356e8
 duration: 8
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '59'
 ht-degree: 0%
@@ -20,4 +20,4 @@ ht-degree: 0%
 게시할 각 이미지 파일은 다음 구문을 사용하여 이 파일에서 연결해야 합니다.
 
 ![평가판 사용 가능 전자 메일 이미지 개인 계정](./assets/select-personal-account.png)
-![Slack 전자 메일 이미지](./assets/Slack-email-image.png)
+![Slack 이메일 이미지](./assets/Slack-email-image.png)
