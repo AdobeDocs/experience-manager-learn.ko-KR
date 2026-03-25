@@ -108,7 +108,7 @@ _순회 경고란 무엇입니까?_
 
 ## &#x200B;1. 분석{#analyze}
 
-먼저 순회 경고를 표시하는 AEM 게시 서비스를 식별합니다. 이렇게 하려면 Cloud Manager에서 지난 [3일`aemerror` 동안 모든 환경(개발, 스테이지 및 프로덕션)에서 ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html#cloud-manager){target="_blank"}게시 서비스 __개의 로그__&#x200B;를 다운로드하세요.
+먼저 순회 경고를 표시하는 AEM 게시 서비스를 식별합니다. 이렇게 하려면 Cloud Manager에서 지난 [3일`aemerror` 동안 모든 환경(개발, 스테이지 및 프로덕션)에서 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html#cloud-manager){target="_blank"}게시 서비스 __개의 로그__&#x200B;를 다운로드하세요.
 
 ![AEM as a Cloud Service 로그 다운로드](./assets/traversals/download-logs.jpg)
 
