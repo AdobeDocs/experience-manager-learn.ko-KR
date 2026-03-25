@@ -48,7 +48,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/content-hub/set-up" title="설정" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3472918/?format=jpeg&nocache=1759339176339" alt="설정"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3472942/?captions=kor&format=jpeg&nocache=1759339176339" alt="설정"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -71,7 +71,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/content-hub/configure" title="구성" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3472917/?format=jpeg&nocache=1759339176369" alt="구성"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3472953/?captions=kor&format=jpeg&nocache=1759339176369" alt="구성"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -94,7 +94,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/content-hub/add-assets" title="자산 추가" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3432980/?format=jpeg&nocache=1759339176806" alt="자산 추가"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3445384/?captions=kor&format=jpeg&nocache=1759339176806" alt="자산 추가"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -163,7 +163,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/content-hub/collections" title="컬렉션" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435687/?format=jpeg&nocache=1759339176447" alt="컬렉션"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3445307/?captions=kor&format=jpeg&nocache=1759339176447" alt="컬렉션"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -186,7 +186,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/content-hub/share" title="공유" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3474890/?format=jpeg&nocache=1759339176327" alt="공유"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3474926/?captions=kor&format=jpeg&nocache=1759339176327" alt="공유"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -209,7 +209,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./attribute-based-access-control.md" title="속성 기반 액세스 제어" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475413/?format=jpeg&nocache=1759339175804" alt="속성 기반 액세스 제어"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475421/?captions=kor&format=jpeg&nocache=1759339175804" alt="속성 기반 액세스 제어"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -246,7 +246,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./use-cases/manage-assets.md" title="AEM Assets Content Hub를 사용하여 자산을 관리하는 방법" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3457638/?format=jpeg&nocache=1759339177153" alt="AEM Assets Content Hub를 사용하여 자산을 관리하는 방법"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3463063/?captions=kor&format=jpeg&nocache=1759339177153" alt="AEM Assets Content Hub를 사용하여 자산을 관리하는 방법"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

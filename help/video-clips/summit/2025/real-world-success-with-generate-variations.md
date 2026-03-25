@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Emily Kellman은 Adobe.com 이 변형 생성 을 사용하여 콘텐츠 속도를 높이고 타임라인을 줄이며 전환을 향상시키는 방법을 공유합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459232/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3462721/?captions=kor&learn=on&enablevpops)

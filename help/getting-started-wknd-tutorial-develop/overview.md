@@ -30,7 +30,7 @@ Adobe Experience Manager(AEM)를 처음 사용하는 개발자를 위해 설계�
 
 이 멀티 파트 튜토리얼의 목표는 개발자를 대상으로 최신 표준 기술을 통해 Adobe Experience Manager(AEM)에서 웹 사이트를 구현하는 방법을 교육하는 것입니다. 이 튜토리얼을 완료하면 개발자는 AEM의 플랫폼 기본 토대와 일반적인 디자인 패턴을 이해하게 됩니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/30476?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36102?captions=kor&quality=12&learn=on)
 
 ## Sites 프로젝트 시작을 위한 옵션
 

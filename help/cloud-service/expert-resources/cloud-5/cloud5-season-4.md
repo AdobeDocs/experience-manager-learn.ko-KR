@@ -43,7 +43,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./season-4/cloud5-edge-delivery-services-best-practices.md" title="Edge Delivery Services을 위한 개발 모범 사례" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3440978/?format=jpeg&nocache=1734040055526" alt="Edge Delivery Services을 위한 개발 모범 사례"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441007/?captions=kor&format=jpeg&nocache=1734040055526" alt="Edge Delivery Services을 위한 개발 모범 사례"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -66,7 +66,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./season-4/cloud5-search-optimization.md" title="Edge Delivery Services의 검색 최적화" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3440976/?format=jpeg&nocache=1734040055519" alt="Edge Delivery Services의 검색 최적화"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3440985/?captions=kor&format=jpeg&nocache=1734040055519" alt="Edge Delivery Services의 검색 최적화"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -89,7 +89,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./season-4/cloud5-google-maps.md" title="Google 맵과 통합" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3440977/?format=jpeg&nocache=1734040055523" alt="Google 맵과 통합"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3440996/?captions=kor&format=jpeg&nocache=1734040055523" alt="Google 맵과 통합"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
