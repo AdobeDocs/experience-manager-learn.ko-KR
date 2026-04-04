@@ -76,5 +76,5 @@ InDesign 템플릿 파일 및 지원 이미지
 
 [InDesign 템플릿 파일 및 지원 이미지 다운로드](assets/asset-templates-tutorial-video--supporting-files-1.zip)
 
-* [InDesign CC 평가판 다운로드](https://creative.adobe.com/products/download/indesign)
-* InDesign Server 평가판은 [Adobe 프리릴리스 사이트](https://www.adobeprerelease.com/)에서 다운로드하거나 [CC Enterprise 고객은 계정 담당자에게 문의하여 오전 InDesign Server 평가판 라이선스를 요청할 수 있습니다](https://www.adobe.com/products/indesignserver/faq.html)
+* [InDesign CC 평가판 다운로드](https://creative.adobe.com/kr/products/download/indesign)
+* InDesign Server 평가판은 [Adobe 프리릴리스 사이트](https://www.adobeprerelease.com/)에서 다운로드하거나 [CC Enterprise 고객은 계정 담당자에게 문의하여 오전 InDesign Server 평가판 라이선스를 요청할 수 있습니다](https://www.adobe.com/kr/products/indesignserver/faq.html)
