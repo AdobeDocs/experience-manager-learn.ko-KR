@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Cloud Manager MCP Server를 사용하면 AEM 개발자가 파이프라인을 실행하고, 오류를 디버깅하고, IDE에서 직접 Cloud Manager 도구에 액세스할 수 있습니다(컨텍스트 전환 없음).
 
->[!VIDEO](https://video.tv.adobe.com/v/3480340/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3480349/?captions=kor&learn=on&enablevpops)
