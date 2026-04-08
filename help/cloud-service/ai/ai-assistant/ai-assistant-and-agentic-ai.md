@@ -20,4 +20,4 @@ ht-degree: 0%
 
 AI Assistant가 Agentic AI에 어떻게 적합하여 사용자의 의도를 행동으로 전환하는지 알아봅니다. 이 비디오에서는 AI Assistant가 AEM에서 Agentic AI 기능의 게이트웨이 역할을 수행하는 방법에 대해 알아봅니다. 개념 수준에서 Agentic AI를 학습하고 AEM의 에이전트를 간단히 소개할 수도 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3483212/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3483219/?captions=kor&learn=on&enablevpops)
