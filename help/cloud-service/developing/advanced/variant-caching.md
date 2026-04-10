@@ -6,16 +6,18 @@ topic: Development
 feature: CDN Cache, Dispatcher
 exl-id: fdf62074-1a16-437b-b5dc-5fb4e11f1355
 duration: 149
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: 0f9480bb52765daa01c5372a117a441adb03bb9d
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 1%
+source-wordcount: '696'
+ht-degree: 0%
 
 ---
 
 # 페이지 변형 캐싱
 
-AEM as a cloud service를 설정하고 사용하여 페이지 변형 캐싱을 지원하는 방법에 대해 알아봅니다.
+웹 경험은 지리, 개인화 또는 실험에 따라 서로 다른 대상에 맞게 콘텐츠를 조정해야 하는 경우가 많습니다. 이 자습서에서는 `x-aem-variant` 쿠키를 사용하여 여러 페이지 변형을 효율적으로 캐싱하고 제공하도록 Adobe Experience Manager(AEM) as a Cloud Service을 구성하여 규모에 맞게 유연성과 고성능을 보장하는 방법을 알아봅니다.
+
+높은 수준에서 이 접근 방법에는 프로젝트 코드가 방문자별 `x-aem-variant` 쿠키(예: 위치에 따라)를 설정하는 작업이 포함되며, 이 쿠키는 CDN에서 요청 헤더로 변환됩니다. 이 값은 Dispatcher 재작성 규칙을 통해 요청 URL에 통합되어 AEM에서 올바른 변형을 렌더링하고 CDN 및 Dispatcher에서 각 변형에 대해 별도의 페이지 버전을 캐시할 수 있습니다.
 
 ## 예시 사용 사례
 
@@ -27,7 +29,7 @@ AEM as a cloud service를 설정하고 사용하여 페이지 변형 캐싱을 �
 
 + 변형 키와 변형 키에 포함될 수 있는 값 수를 식별합니다. 이 예제에서 우리는 미국 주별로 다르므로 최대 숫자는 50이다. 이는 CDN에서 변형 제한에 문제를 일으키지 않을 만큼 충분히 작습니다. [변형 제한 검토 섹션](#variant-limitations).
 
-+ AEM 코드는 __&quot;x-aem-variant&quot;__ 쿠키를 방문자의 기본 설정 상태(예: `Set-Cookie: x-aem-variant=NY`)을(를) 사용합니다.
++ 프로젝트 코드는 __&quot;x-aem-variant&quot;__ 쿠키를 방문자의 기본 설정 상태(예: `Set-Cookie: x-aem-variant=NY`)을(를) 사용합니다. AEM 및 Adobe 관리 CDN은 `x-aem-variant`을(를) 자동으로 결정하거나 설정하지 않습니다. 이 헤더/쿠키가 있는 경우 애플리케이션이 설정했기 때문입니다. 이 헤더는 사용자 지정 AEM 서블릿 또는 AEM 서블릿 필터를 통해 설정할 수 있습니다(아래 코드 샘플에 표시됨).
 
 + 방문자의 후속 요청에서는 해당 쿠키를 보냅니다(예: `"Cookie: x-aem-variant=NY"`) 및 쿠키는 CDN 수준에서 Dispatcher에 전달되는 사전 정의된 헤더(즉, `x-aem-variant:NY`)로 변환됩니다.
 
@@ -49,13 +51,13 @@ AEM as a cloud service를 설정하고 사용하여 페이지 변형 캐싱을 �
 
 ## 사용
 
-1. 이 기능을 보여 주기 위해 [WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko)의 구현을 예로 사용합니다.
+1. 이 기능을 보여 주기 위해 [WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)의 구현을 예로 사용합니다.
 
 1. AEM에서 [SlingServletFilter](https://sling.apache.org/documentation/the-sling-engine/filters.html)을(를) 구현하여 HTTP 응답에 대한 `x-aem-variant` 쿠키를 변형 값으로 설정합니다.
 
 1. AEM의 CDN은 `x-aem-variant` 쿠키를 동일한 이름의 HTTP 헤더로 자동 변환합니다.
 
-1. 변형 선택기를 포함하도록 요청 경로를 수정하는 Apache 웹 서버 mod_rewrite 규칙을 `dispatcher` 프로젝트에 추가합니다.
+1. 변형 선택기를 포함하도록 요청 경로를 수정하는 Apache 웹 서버 `mod_rewrite` 규칙을 `dispatcher` 프로젝트에 추가합니다.
 
 1. Cloud Manager을 사용하여 필터 및 다시 작성 규칙을 배포합니다.
 
