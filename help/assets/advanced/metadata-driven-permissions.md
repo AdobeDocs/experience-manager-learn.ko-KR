@@ -11,10 +11,10 @@ doc-type: Tutorial
 last-substantial-update: 2024-05-03T00:00:00Z
 exl-id: 57478aa1-c9ab-467c-9de0-54807ae21fb1
 duration: 158
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 794a0109e4b28b452c462c5cab37e2d094ab4897
 workflow-type: tm+mt
-source-wordcount: '770'
-ht-degree: 0%
+source-wordcount: '783'
+ht-degree: 1%
 
 ---
 
@@ -46,7 +46,9 @@ ht-degree: 0%
        "status",
        "brand"
      ],
-     "restrictionContentPropertyNames":[],
+     "restrictionContentPropertyNames":[
+       "dam:rightsManaged"
+     ],
      "enabled":true
    }
    ```
@@ -108,9 +110,8 @@ ht-degree: 0%
 > 주의해야 할 사항:
 > 
 > - 속성은 __문자열 같음__(`=`)을 사용하여 제한에 대해 평가됩니다. (`>`) 또는 Date 속성보다 큰 경우 다른 데이터 형식 또는 연산자는 아직 지원되지 않습니다.
-> - 제한 속성에 대해 여러 값을 허용하려면 &quot;유형 선택&quot; 드롭다운에서 동일한 속성을 선택하고 새 제한 값(예: `status=approved`, `status=wip`)을 입력한 다음 &quot;+&quot;를 클릭하여 항목에 제한을 추가하여 액세스 제어 항목에 추가 제한을 추가할 수 있습니다
-> ![여러 값 허용](./assets/metadata-driven-permissions/allow-multiple-values.png)
-> - __AND 제한__&#x200B;이(가) 지원됩니다. 속성 이름이 다른 단일 액세스 제어 항목의 여러 제한(예: `status=approved`, `brand=Adobe`)은 AND 조건으로 평가됩니다. 즉, 선택한 사용자 그룹에는 `status=approved AND brand=Adobe`이(가) 있는 자산에 대한 읽기 액세스 권한이 부여됩니다
+> - 제한 속성에 대해 여러 값을 허용하려면 &quot;유형 선택&quot; 드롭다운에서 동일한 속성을 선택하고 새 제한 값(예: `status=approved`, `status=wip`)을 입력한 다음 &quot;+&quot;를 클릭하여 항목에 제한을 추가하여 액세스 제어 항목에 추가 제한을 추가할 수 있습니다> ![여러 값 허용](./assets/metadata-driven-permissions/allow-multiple-values.png)
+> - __AND 제한__&#x200B;이(가) 지원됩니다. 속성 이름이 다른 단일 액세스 제어 항목의 여러 제한(예: `status=approved`, `brand=Adobe`)은 AND 조건으로 평가됩니다. 즉, 선택한 사용자 그룹에게 다음 항목에 대한 읽기 액세스 권한이 부여됩니다. `status=approved AND brand=Adobe`
 > ![여러 제한 허용](./assets/metadata-driven-permissions/allow-multiple-restrictions.png)
-> - __OR 제한__&#x200B;은(는) 메타데이터 속성 제한이 있는 새 액세스 제어 항목을 추가하여 지원됩니다. 예를 들어 제한이 `status=approved`인 단일 항목과 `brand=Adobe`인 단일 항목이 `status=approved OR brand=Adobe`(으)로 평가됩니다.
+> - __OR 제한__&#x200B;은(는) 메타데이터 속성 제한이 있는 새 액세스 제어 항목을 추가하여 지원됩니다. 예를 들어 제한이 `status=approved`인 단일 항목과 `brand=Adobe`인 단일 항목이 다음으로 평가됩니다. `status=approved OR brand=Adobe`
 > ![여러 제한 허용](./assets/metadata-driven-permissions/allow-multiple-aces.png)

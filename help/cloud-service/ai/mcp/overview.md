@@ -9,9 +9,9 @@ duration: 0
 last-substantial-update: 2026-03-04T00:00:00Z
 jira: KT-20473
 exl-id: 7f2e4e37-6440-423e-9ba9-9228fe03600b
-source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
+source-git-commit: 794a0109e4b28b452c462c5cab37e2d094ab4897
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '955'
 ht-degree: 0%
 
 ---
@@ -22,10 +22,10 @@ ht-degree: 0%
 
 ## AEM MCP 서버 목록
 
-모든 AEM MCP 서버는 `https://mcp.adobeaemcloud.com/adobe/mcp/`에서 사용할 수 있습니다. 자세한 내용은 [AEM as a Cloud Service과 MCP 사용](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service)을 참조하세요.
+모든 AEM MCP 서버는 `https://mcp.adobeaemcloud.com/adobe/mcp/`에서 사용할 수 있습니다. 자세한 내용은 [AEM as a Cloud Service과 MCP 사용](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service)을 참조하세요.
 
-- **컨텐츠**(`/content`) — 페이지, 조각 및 자산을 만들고, 읽고, 업데이트하고, 삭제할 수 있는 전체 액세스 권한입니다.
-- **콘텐츠(읽기 전용)**(`/content-readonly`) — 페이지, 조각 및 에셋을 나열하고 가져올 수 있는 읽기 전용(변경 사항 없음).
+- **컨텐츠**(`/content`) — 페이지 및 컨텐츠 조각에 대한 CRUD(만들기, 읽기, 업데이트 및 삭제)와 자산 가져오기를 포함한 컨텐츠 작업.
+- **컨텐츠(읽기 전용)**(`/content-readonly`) — 페이지 및 컨텐츠 조각에 대한 읽기 전용 컨텐츠 작업(가져오기, 목록/검색).
 - **Cloud Manager**(`/cloudmanager`) — Adobe Cloud Manager 프로그램, 환경, 저장소 및 파이프라인을 관리합니다.
 
 >[!TIP]
@@ -43,7 +43,7 @@ AEM MCP 서버를 사용하기 전에 MCP 서버에 대한 두 가지 주요 사
 
 | 측면 | 인간 중심 | 무발생 |
 | ------ | ------------- | ------- |
-| **작업을 유도하는 사용자** | 너. <br> AI가 IDE 또는 채팅 기반 응용 프로그램에서 도구를 제안하거나 실행합니다. | AI. <br> 사용할 도구를 선택하고 최소한의 지침으로 계속 진행합니다. |
+| **작업을 유도하는 사용자** | 너. <br> AI는 IDE 또는 채팅 기반 애플리케이션에서 도구를 제안하거나 실행합니다. | AI. <br> 어떤 도구를 사용해야 하는지 선택하며 최소한의 지침으로 계속 진행합니다. |
 | **결정 권한** | 넌 통제권을 갖고있어 각 단계를 승인하거나 트리거합니다. | AI는 더 많은 자유를 가지고 있습니다. 영향을 많이 주는 작업에는 보호 기능 또는 승인이 필요할 수 있습니다. |
 | **일반적인 사용 패턴** | **개발자당**, 자체 IDE 또는 채팅 기반 응용 프로그램에서 사용하며 세션당 한 명의 개발자가 매일 개발 작업에 적합합니다. | 많은 사용자 또는 에이전트의 공유 서비스 및 게이트웨이로 에이전트 응용 프로그램을 통해 **공유**. |
 | **가장 적합한 항목** | 루프에 있는 동안 콘텐츠 검토, 안내식 업데이트, 탐색 또는 반복 작업. | 에이전트 워크플로, 일괄 처리 작업, 파이프라인 및 시스템이 최소한의 개입으로 실행되어야 하는 목표입니다. |
@@ -52,7 +52,7 @@ AEM MCP 서버를 사용하기 전에 MCP 서버에 대한 두 가지 주요 사
 
 MCP 서버는 대화형 UX와 인간의 감독을 통해 **인간이 운영하는 MCP 클라이언트**&#x200B;용으로 설계되었습니다. MCP 도구 사양은 도구 호출을 승인하거나 거부할 수 있는 _루프 안의 사람_&#x200B;을(를) 권장합니다.
 
-에이전트 또는 자율 시스템에서 MCP 서버를 사용하는 경우 이를 별도의 호환성 티어로 취급합니다. **프롬프트**, _허용 목록_ 또는 _라우팅 논리_&#x200B;에서 도구 이름을 _하드코딩하지 않음_&#x200B;하십시오. MCP에서 _도구 이름_&#x200B;은(는) 프로그램 식별자이고 _설명_&#x200B;은(는) LLM에 대한 모델 표시 힌트입니다. 프롬프트 및 선택 기반의 기능 또는 설명을 선호합니다.
+에이전트 또는 자율 시스템에서 MCP 서버를 사용하는 경우 이를 별도의 호환성 티어로 취급합니다. _프롬프트_, _허용 목록_ 또는 _라우팅 논리_&#x200B;에서 도구 이름을 **하드코딩하지 않음**&#x200B;하십시오. MCP에서 _도구 이름_&#x200B;은(는) 프로그램 식별자이고 _설명_&#x200B;은(는) LLM에 대한 모델 표시 힌트입니다. 프롬프트 및 선택 기반의 기능 또는 설명을 선호합니다.
 
 `tools/list`을(를) 통해 런타임 검색을 구현하고 도구 목록 변경(`notifications/tools/list_changed`)을 처리하며, 프로토콜 기준선을 넘어서는 안정성 보장이 필요한 경우 온보딩 및 버전 관리 시 MCP 서버 공급자와 일치합니다.
 
@@ -71,7 +71,7 @@ MCP는 **호스트**, **클라이언트** 및 **서버** 등 세 가지 엔터�
 ## 설정
 
 AEM MCP 서버는 정의된 MCP 호환 애플리케이션 세트와 호환되도록 설계되었습니다.
-선호하는 IDE 또는 채팅 기반 응용 프로그램에서 AEM MCP 서버를 설정하려면 [지원되는 MCP 응용 프로그램](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service#supported-mcp-applications)을 참조하십시오.
+선호하는 IDE 또는 채팅 기반 응용 프로그램에서 AEM MCP 서버를 설정하려면 [지원되는 MCP 응용 프로그램](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service#supported-mcp-applications)을 참조하십시오.
 
 ## 사용 사례
 
