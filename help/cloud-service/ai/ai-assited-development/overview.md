@@ -69,8 +69,8 @@ MCP 서버는 디버깅, 검사, 실행 및 변경 내용 유효성 검사와 �
 
 AEM SDK 및 Dispatcher에 대한 **로컬 개발**&#x200B;의 경우 [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=mcp*&1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atooling&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=3) 포털에서 다음 **로컬 MCP 서버**&#x200B;를 설치하십시오.
 
-- **AEM 빠른 시작 로컬 MCP 서버**: 문제 해결 및 개발을 지원하기 위해 로컬 AEM SDK 인스턴스의 실시간 런타임 데이터를 표시합니다. 자세한 내용은 [AEM 빠른 시작 MCP 서버](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/local-development-with-ai-tools#aem-quickstart-mcp-server)를 참조하십시오.
-- **Dispatcher 로컬 MCP 서버**: 로컬 Dispatcher 인스턴스의 런타임 유효성 검사 및 검사를 사용하도록 설정합니다. 자세한 내용은 [Dispatcher MCP 서버](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/local-development-with-ai-tools#dispatcher-mcp-server)를 참조하십시오.
+- **AEM 빠른 시작 로컬 MCP 서버**: 문제 해결 및 개발을 지원하기 위해 로컬 AEM SDK 인스턴스의 실시간 런타임 데이터를 표시합니다. 자세한 내용은 [AEM 빠른 시작 MCP 서버](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/local-development-with-ai-tools#aem-quickstart-mcp-server)를 참조하십시오.
+- **Dispatcher 로컬 MCP 서버**: 로컬 Dispatcher 인스턴스의 런타임 유효성 검사 및 검사를 사용하도록 설정합니다. 자세한 내용은 [Dispatcher MCP 서버](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/local-development-with-ai-tools#dispatcher-mcp-server)를 참조하십시오.
 
 Adobe에서 호스팅하는 AEM MCP 서버(예: 컨텐츠, 읽기 전용 컨텐츠 및 Cloud Manager)의 경우 [AEM의 MCP 서버](../mcp/overview.md)를 참조하십시오.
 
@@ -157,7 +157,7 @@ CARDS
 
 ## 추가 리소스
 
-- [AI 도구를 사용한 로컬 개발](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/local-development-with-ai-tools)
+- [AI 도구를 사용한 로컬 개발](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/local-development-with-ai-tools)
 
 - [AI 코딩 에이전트를 위한 Adobe 기술](https://github.com/adobe/skills)
 

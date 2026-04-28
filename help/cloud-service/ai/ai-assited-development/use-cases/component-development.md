@@ -105,7 +105,7 @@ AEM as a Cloud Service 프로젝트의 경우 `ensure-agents-md` 부트스트랩
 
 ## 추가 리소스
 
-- [AI 도구를 사용한 로컬 개발](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/local-development-with-ai-tools)
+- [AI 도구를 사용한 로컬 개발](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/local-development-with-ai-tools)
 
 - [AI 코딩 에이전트를 위한 Adobe 기술](https://github.com/adobe/skills)
 
