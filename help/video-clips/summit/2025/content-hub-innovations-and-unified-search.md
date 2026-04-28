@@ -14,9 +14,9 @@ index: false
 hide: true
 hidefromtoc: true
 exl-id: eac1d731-6860-4af4-aba4-bc93abb40073
-source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
-source-wordcount: '46'
+source-wordcount: '48'
 ht-degree: 0%
 
 ---
@@ -25,4 +25,4 @@ ht-degree: 0%
 
 속성 기반 액세스 제어, 브랜드 랜딩 페이지, 플랫폼 간 통합 검색 등 Content Hub의 새로운 기능을 살펴봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3461817/?captions=kor&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3459223/?learn=on&enablevpops)

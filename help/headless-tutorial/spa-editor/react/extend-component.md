@@ -1,5 +1,5 @@
 ---
-title: 핵심 구성 요소 확장 | AEM SPA 편집기 및 반응 시작하기
+title: 핵심 구성 요소 확장 | AEM SPA 편집기 시작하기 및 반응
 description: AEM SPA 편집기에서 사용할 기존 핵심 구성 요소에 대한 JSON 모델을 확장하는 방법을 알아봅니다. 기존 구성 요소에 속성 및 콘텐츠를 추가하는 방법을 이해하는 것은 AEM SPA Editor 구현의 기능을 확장하는 강력한 기술입니다. Sling 리소스 병합의 Sling 모델 및 기능을 확장하기 위해 전달 패턴을 사용하는 방법에 대해 알아봅니다.
 feature: SPA Editor, Core Components
 version: Experience Manager as a Cloud Service
@@ -12,10 +12,10 @@ doc-type: Tutorial
 exl-id: 44433595-08bc-4a82-9232-49d46c31b07b
 duration: 316
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
-source-wordcount: '1058'
-ht-degree: 0%
+source-wordcount: '1115'
+ht-degree: 5%
 
 ---
 
@@ -31,7 +31,7 @@ AEM SPA 편집기에서 사용할 기존 핵심 구성 요소를 확장하는 �
 2. `sling:resourceSuperType`을(를) 사용하여 구성 요소 상속의 기본 사항을 이해합니다.
 3. Sling 모델에 대해 [위임 패턴](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models)을 활용하여 기존 논리 및 기능을 다시 사용하는 방법에 대해 알아봅니다.
 
-## 빌드할 내용
+## 빌드 결과물
 
 이 장에서는 새 `Banner` 구성 요소에 대한 요구 사항을 충족하기 위해 표준 `Image` 구성 요소에 속성을 추가하는 데 필요한 추가 코드를 보여 줍니다. `Banner` 구성 요소에 표준 `Image` 구성 요소와 동일한 속성이 모두 포함되어 있지만 사용자가 **배너 텍스트**&#x200B;를 채울 수 있는 추가 속성이 포함되어 있습니다.
 
@@ -39,7 +39,7 @@ AEM SPA 편집기에서 사용할 기존 핵심 구성 요소를 확장하는 �
 
 ## 사전 요구 사항
 
-[로컬 개발 환경](overview.md#local-dev-environment)을 설정하는 데 필요한 도구 및 지침을 검토하십시오. 이 시점에서 자습서에서는 사용자가 AEM SPA 편집기 기능을 잘 이해하고 있다고 가정합니다.
+[로컬 개발 환경](overview.md#local-dev-environment)을 설정하는 데 필요한 도구와 지침을 검토합니다. 이 시점에서 자습서에서는 사용자가 AEM SPA 편집기 기능을 잘 이해하고 있다고 가정합니다.
 
 ## Sling 리소스 슈퍼 유형을 통한 상속 {#sling-resource-super-type}
 
@@ -63,10 +63,10 @@ AEM SPA 편집기에서 사용할 기존 핵심 구성 요소를 확장하는 �
 
 ## cq:editConfig {#cq-edit-config}
 
-`_cq_editConfig.xml` 파일은 AEM 작성 UI에서 끌어서 놓기 동작을 지시합니다. 이미지 구성 요소를 확장할 때 리소스 유형이 구성 요소 자체와 일치해야 합니다.
+The `_cq_editConfig.xml` file dictates the drag and drop behavior in the AEM authoring UI. When extending the Image component it is important that the resource type matches the component itself.
 
-1. `ui.apps` 모듈에서 `banner` 아래에 이름이 `_cq_editConfig.xml`인 다른 파일을 만듭니다.
-1. `_cq_editConfig.xml`을(를) 다음 XML로 채우기:
+1. In the `ui.apps` module create another file beneath `banner` named `_cq_editConfig.xml`.
+1. Populate `_cq_editConfig.xml` with the following XML:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -162,7 +162,7 @@ AEM SPA 편집기에서 사용할 기존 핵심 구성 요소를 확장하는 �
    </jcr:root>
    ```
 
-1. 파일의 고유한 특성은 resourceType을 `wknd-spa-react/components/banner`(으)로 설정하는 `<parameters>` 노드입니다.
+1. The unique aspect of the file is the `<parameters>` node that sets the resourceType to `wknd-spa-react/components/banner`.
 
    ```xml
    <parameters
@@ -173,14 +173,14 @@ AEM SPA 편집기에서 사용할 기존 핵심 구성 요소를 확장하는 �
        imageRotate=""/>
    ```
 
-   대부분의 구성 요소에는 `_cq_editConfig`이(가) 필요하지 않습니다. 이미지 구성 요소와 하위 항목은 예외입니다.
+   Most component&#39;s do not require a `_cq_editConfig`. Image components and descendants are the exception.
 
-## 대화 상자 확장 {#extend-dialog}
+## Extend the Dialog {#extend-dialog}
 
-`Banner` 구성 요소에서 `bannerText`을(를) 캡처하려면 대화 상자에 추가 텍스트 필드가 필요합니다. Sling 상속을 사용하고 있으므로 [Sling 리소스 병합](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/sling-resource-merger.html?lang=ko)의 기능을 사용하여 대화 상자의 일부를 재정의하거나 확장할 수 있습니다. 이 샘플에서는 작성자의 추가 데이터를 캡처하여 카드 구성 요소를 채우기 위한 새 탭이 대화 상자에 추가되었습니다.
+Our `Banner` component requires an extra text field in the dialog to capture the `bannerText`. Since we are using Sling inheritance, we can use features of the [Sling Resource Merger](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/sling-resource-merger.html) to override or extend portions of the dialog. In this sample a new tab has been added to the dialog to capture additional data from an author to populate the Card Component.
 
-1. `banner` 폴더 아래의 `ui.apps` 모듈에서 `_cq_dialog` 폴더를 만듭니다.
-1. `_cq_dialog` 아래에 대화 상자 정의 파일 `.content.xml`을(를) 만듭니다. 다음을 사용하여 채웁니다.
+1. In the `ui.apps` module, beneath the `banner` folder, create a folder named `_cq_dialog`.
+1. Beneath `_cq_dialog` create a Dialog definition file `.content.xml`. Populate it with the following:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -234,22 +234,22 @@ AEM SPA 편집기에서 사용할 기존 핵심 구성 요소를 확장하는 �
    </jcr:root>
    ```
 
-   위의 XML 정의는 **Text**(이)라는 새 탭을 만들고 기존 **Asset** 탭의 순서를 *before*&#x200B;합니다. 단일 필드 **배너 텍스트**&#x200B;가 포함됩니다.
+   The above XML definition will create a new tab named **Text** and order it *before* the existing **Asset** tab. It will contain a single field **Banner Text**.
 
-1. 대화 상자는 다음과 같이 표시됩니다.
+1. The dialog will look like the following:
 
-   ![배너 최종 대화 상자](assets/extend-component/banner-dialog.png)
+   ![Banner final dialog](assets/extend-component/banner-dialog.png)
 
-   **자산** 또는 **메타데이터**&#x200B;에 대한 탭을 정의할 필요가 없습니다. `sling:resourceSuperType` 속성을 통해 상속됩니다.
+   Observe that we did not have to define the tabs for **Asset** or **Metadata**. These are inherited via the `sling:resourceSuperType` property.
 
-   대화 상자를 미리 보려면 SPA 구성 요소와 `MapTo` 함수를 구현해야 합니다.
+   Before we can preview the dialog, we need to implement the SPA Component and the `MapTo` function.
 
-## SPA 구성 요소 구현 {#implement-spa-component}
+## Implement SPA Component {#implement-spa-component}
 
-SPA 편집기에서 배너 구성 요소를 사용하려면 `wknd-spa-react/components/banner`에 매핑될 새 SPA 구성 요소를 만들어야 합니다. 이 작업은 `ui.frontend` 모듈에서 수행됩니다.
+In order to use the Banner component with the SPA Editor, a new SPA component must be created that will map to `wknd-spa-react/components/banner`. This is done in the `ui.frontend` module.
 
-1. `ui.frontend` 모듈에서 `ui.frontend/src/components/Banner`에 `Banner`에 대한 새 폴더를 만듭니다.
-1. `Banner` 폴더 아래에 이름이 `Banner.js`인 새 파일을 만듭니다. 다음을 사용하여 채웁니다.
+1. In the `ui.frontend` module create a new folder for `Banner` at `ui.frontend/src/components/Banner`.
+1. `Banner` 폴더 아래에 이름이 `Banner.js`인 새 파일을 만듭니다. Populate it with the following:
 
    ```js
    import React, {Component} from 'react';
@@ -299,9 +299,9 @@ SPA 편집기에서 배너 구성 요소를 사용하려면 `wknd-spa-react/comp
    MapTo('wknd-spa-react/components/banner')(Banner, BannerEditConfig);
    ```
 
-   이 SPA 구성 요소는 이전에 만든 AEM 구성 요소 `wknd-spa-react/components/banner`에 매핑됩니다.
+   This SPA component maps to the AEM component `wknd-spa-react/components/banner` created earlier.
 
-1. 새 `Banner` SPA 구성 요소를 포함하도록 `ui.frontend/src/components/import-components.js`에서 `import-components.js`을(를) 업데이트합니다.
+1. Update `import-components.js` at `ui.frontend/src/components/import-components.js` to include the new `Banner` SPA component:
 
    ```diff
      import './ExperienceFragment/ExperienceFragment';
@@ -309,30 +309,30 @@ SPA 편집기에서 배너 구성 요소를 사용하려면 `wknd-spa-react/comp
    + import './Banner/Banner';
    ```
 
-1. 이 시점에서 프로젝트를 AEM에 배포하고 대화 상자를 테스트할 수 있습니다. Maven 기술을 사용하여 프로젝트를 배포합니다.
+1. At this point the project can be deployed to AEM and the dialog can be tested. Deploy the project using your Maven skills:
 
    ```shell
    $ cd aem-guides-wknd-spa.react
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-1. SPA 템플릿의 정책을 업데이트하여 `Banner` 구성 요소를 **허용된 구성 요소**(으)로 추가합니다.
+1. Update the SPA Template&#39;s policy to add the `Banner` component as an **allowed component**.
 
-1. SPA 페이지로 이동하고 SPA 페이지 중 하나에 `Banner` 구성 요소를 추가합니다.
+1. Navigate to a SPA page and add the `Banner` component to one of the SPA pages:
 
-   ![배너 구성 요소 추가](assets/extend-component/add-banner-component.png)
+   ![Add Banner component](assets/extend-component/add-banner-component.png)
 
    >[!NOTE]
    >
-   > 대화 상자에서 **배너 텍스트**&#x200B;에 대한 값을 저장할 수 있지만 이 값은 SPA 구성 요소에 반영되지 않습니다. 활성화하려면 구성 요소에 대한 슬링 모델 을 확장해야 합니다.
+   > The dialog will allow you to save a value for **Banner Text** but this value is not reflected in the SPA component. To enable, we need to extend the Sling Model for the component.
 
-## Java 인터페이스 추가 {#java-interface}
+## Add Java Interface {#java-interface}
 
-궁극적으로 구성 요소 대화 상자의 값을 React 구성 요소에 노출하려면 `Banner` 구성 요소에 대해 JSON을 채우는 Sling 모델을 업데이트해야 합니다. 이 작업은 SPA 프로젝트에 대한 모든 Java 코드를 포함하는 `core` 모듈에서 수행됩니다.
+To ultimately expose the values from the component dialog to the React component we need to update the Sling Model that populates the JSON for the `Banner` component. This is done in the `core` module that contains all of the Java code for our SPA project.
 
-먼저 `Image` Java 인터페이스를 확장하는 `Banner`에 대한 새 Java 인터페이스를 만듭니다.
+First we will create a new Java interface for `Banner` that extends the `Image` Java interface.
 
-1. `core` 모듈에서 `core/src/main/java/com/adobe/aem/guides/wkndspa/react/core/models`에 이름이 `BannerModel.java`인 새 파일을 만듭니다.
+1. In the `core` module create a new file named `BannerModel.java` at `core/src/main/java/com/adobe/aem/guides/wkndspa/react/core/models`.
 1. `BannerModel.java`을(를) 다음으로 채우기:
 
    ```java
@@ -349,13 +349,13 @@ SPA 편집기에서 배너 구성 요소를 사용하려면 `wknd-spa-react/comp
    }
    ```
 
-   핵심 구성 요소 `Image` 인터페이스에서 모든 메서드를 상속하고 새 메서드 `getBannerText()`을(를) 하나 추가합니다.
+   This will inherit all of the methods from the Core Component `Image` interface and add one new method `getBannerText()`.
 
-## Sling 모델 구현 {#sling-model}
+## Implement Sling Model {#sling-model}
 
-그런 다음 `BannerModel` 인터페이스에 대한 Sling 모델을 구현합니다.
+Next, implement the Sling Model for the `BannerModel` interface.
 
-1. `core` 모듈에서 `core/src/main/java/com/adobe/aem/guides/wkndspa/react/core/models/impl`에 이름이 `BannerModelImpl.java`인 새 파일을 만듭니다.
+1. In the `core` module create a new file named `BannerModelImpl.java` at `core/src/main/java/com/adobe/aem/guides/wkndspa/react/core/models/impl`.
 
 1. `BannerModelImpl.java`을(를) 다음으로 채우기:
 
@@ -432,11 +432,11 @@ SPA 편집기에서 배너 구성 요소를 사용하려면 `wknd-spa-react/comp
    }
    ```
 
-   Sling 모델 내보내기를 통해 Sling 모델을 JSON으로 serialize할 수 있도록 `@Model` 및 `@Exporter` 주석을 사용하십시오.
+   Notice the use of the `@Model` and `@Exporter` annotations to ensure the Sling Model is able to be serialized as JSON via the Sling Model Exporter.
 
-   `BannerModelImpl.java`은(는) 이미지 핵심 구성 요소의 모든 논리를 다시 쓰지 않도록 Sling 모델에 대해 [위임 패턴](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models)을 사용합니다.
+   `BannerModelImpl.java` uses the [Delegation pattern for Sling Models](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) to avoid rewriting all of the logic from the Image core component.
 
-1. 다음 행을 검토하십시오.
+1. Review the following lines:
 
    ```java
    @Self

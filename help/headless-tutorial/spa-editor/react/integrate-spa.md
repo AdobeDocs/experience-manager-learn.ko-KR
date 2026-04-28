@@ -1,5 +1,5 @@
 ---
-title: SPA 통합 | AEM SPA 편집기 및 반응 시작하기
+title: SPA 통합 | AEM SPA 편집기 시작하기 및 반응
 description: React로 작성된 단일 페이지 애플리케이션(SPA)의 소스 코드를 Adobe Experience Manager(AEM) 프로젝트와 통합하는 방법에 대해 알아봅니다. Webpack 개발 서버와 같은 최신 프론트엔드 도구를 사용하여 AEM JSON 모델 API에 대해 SPA를 신속하게 개발하는 방법에 대해 알아봅니다.
 feature: SPA Editor
 version: Experience Manager as a Cloud Service
@@ -12,10 +12,10 @@ doc-type: Tutorial
 exl-id: 31416399-6a4e-47d1-8ed8-be842a01a727
 duration: 409
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
-source-wordcount: '1689'
-ht-degree: 0%
+source-wordcount: '1964'
+ht-degree: 2%
 
 ---
 
@@ -31,7 +31,7 @@ React로 작성된 단일 페이지 애플리케이션(SPA)의 소스 코드를 
 2. 전용 프론트엔드 개발을 위해 Webpack 개발 서버를 사용하는 방법에 대해 알아봅니다.
 3. AEM JSON 모델 API를 통해 개발하기 위해 **프록시** 및 정적 **mock** 파일의 사용을 살펴봅니다.
 
-## 빌드할 내용
+## 빌드 결과물
 
 이 장에서는 AEM과 통합되는 방법을 이해하기 위해 SPA를 몇 가지 작게 변경합니다.
 이 장에서는 간단한 `Header` 구성 요소를 SPA에 추가합니다. 이 **정적** `Header` 구성 요소를 빌드하는 과정에서 AEM SPA 개발에 대한 몇 가지 접근 방식이 사용됩니다.
@@ -42,7 +42,7 @@ React로 작성된 단일 페이지 애플리케이션(SPA)의 소스 코드를 
 
 ## 사전 요구 사항
 
-[로컬 개발 환경](overview.md#local-dev-environment)을 설정하는 데 필요한 도구 및 지침을 검토하십시오. 이 챕터는 [프로젝트 만들기](create-project.md) 챕터의 연속이지만, SPA를 사용하는 작업 중인 AEM 프로젝트만 있으면 됩니다.
+[로컬 개발 환경](overview.md#local-dev-environment)을 설정하는 데 필요한 도구와 지침을 검토합니다. 이 챕터는 [프로젝트 만들기](create-project.md) 챕터의 연속이지만, SPA를 사용하는 작업 중인 AEM 프로젝트만 있으면 됩니다.
 
 ## 통합 접근 방식 {#integration-approach}
 
@@ -54,13 +54,13 @@ React로 작성된 단일 페이지 애플리케이션(SPA)의 소스 코드를 
 
 *SPA 통합에 대한 높은 수준의 설명입니다.*
 
-프론트엔드 빌드에 대한 추가 정보는 [여기에서 찾을 수 있음](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-react.html?lang=ko).
+프론트엔드 빌드에 대한 추가 정보는 [여기에서 찾을 수 있음](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-react.html).
 
 ## SPA 통합 검사 {#inspect-spa-integration}
 
-그런 다음 `ui.frontend` 모듈을 검사하여 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-react.html?lang=ko)에서 자동으로 생성된 SPA를 이해합니다.
+그런 다음 `ui.frontend` 모듈을 검사하여 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-react.html)에서 자동으로 생성된 SPA를 이해합니다.
 
-1. 선택한 IDE에서 AEM 프로젝트를 엽니다. 이 자습서에서는 [Visual Studio 코드 IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=ko#microsoft-visual-studio-code)를 사용합니다.
+1. 선택한 IDE에서 AEM 프로젝트를 엽니다. 이 자습서에서는 [Visual Studio 코드 IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code)를 사용합니다.
 
    ![VSCode - AEM WKND SPA 프로젝트](./assets/integrate-spa/vscode-ide-openproject.png)
 
@@ -80,7 +80,7 @@ React로 작성된 단일 페이지 애플리케이션(SPA)의 소스 코드를 
    "@adobe/aem-core-components-react-spa": "1.1.7",
    ```
 
-   위의 모듈은 [AEM SPA Editor JS SDK](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-blueprint.html?lang=ko)을(를) 구성하고 SPA 구성 요소를 AEM 구성 요소에 매핑할 수 있는 기능을 제공합니다.
+   위의 모듈은 [AEM SPA Editor JS SDK](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-blueprint.html)을(를) 구성하고 SPA 구성 요소를 AEM 구성 요소에 매핑할 수 있는 기능을 제공합니다.
 
    [AEM WCM 구성 요소 - React 코어 구현](https://github.com/adobe/aem-react-core-wcm-components-base) 및 [AEM WCM 구성 요소 - Spa 편집기 - React 코어 구현](https://github.com/adobe/aem-react-core-wcm-components-spa)도 포함됩니다. 기본 AEM 구성 요소에 매핑되는 재사용 가능한 UI 구성 요소 세트입니다. 이는 프로젝트 요구 사항에 맞게 디자인 및 디자인되었습니다.
 
@@ -268,7 +268,7 @@ React로 작성된 단일 페이지 애플리케이션(SPA)의 소스 코드를 
 
    >[!NOTE]
    >
-   > AEM의 보안 요구 사항으로 인해 동일한 브라우저에 있지만 다른 탭에서 로컬 AEM 인스턴스(http://localhost:4502)에 로그인해야 합니다.
+   > AEM의 보안 요구 사항으로 인해 동일한 브라우저에서 다른 탭으로 로컬 AEM 인스턴스(http://localhost:4502)에 로그인해야 합니다.
 
 1. IDE로 돌아가서 `src/components/Header` 폴더에 이름이 `Header.css`인 파일을 만듭니다.
 1. `Header.css`을(를) 다음과 같이 채웁니다.

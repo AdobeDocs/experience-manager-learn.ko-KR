@@ -13,10 +13,10 @@ exl-id: 38802296-8988-4300-a04a-fcbbe98ac810
 last-substantial-update: 2022-08-25T00:00:00Z
 duration: 71
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
-workflow-type: ht
-source-wordcount: '417'
-ht-degree: 100%
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
+workflow-type: tm+mt
+source-wordcount: '526'
+ht-degree: 86%
 
 ---
 
@@ -47,7 +47,7 @@ Adobe Experience Manager(AEM)의 **SPA 편집기** 기능을 처음 사용하는
 * HTML, CSS 및 JavaScript에 대한 기본 지식
 * [React](https://reactjs.org/tutorial/tutorial.html)에 대한 기본적인 이해
 
-*반드시 필요한 것은 아니지만 [기존 AEM Sites 구성 요소 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko)에 대한 기본적인 이해가 있으면 도움이 됩니다.*
+*반드시 필요한 것은 아니지만 [기존 AEM Sites 구성 요소 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)에 대한 기본적인 이해가 있으면 도움이 됩니다.*
 
 ## 로컬 개발 환경 {#local-dev-environment}
 
@@ -55,17 +55,17 @@ Adobe Experience Manager(AEM)의 **SPA 편집기** 기능을 처음 사용하는
 
 ### 필수 소프트웨어
 
-* [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=ko), [AEM 6.5.4 이상](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=ko#aem-65) 또는 [AEM 6.4.8 이상](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=ko#aem-64)
+* [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html), [AEM 6.5.4 이상](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=ko#aem-65) 또는 [AEM 6.4.8 이상](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=ko#aem-64)
 * [Java](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 * [Apache Maven](https://maven.apache.org/)&#x200B;(3.3.9 이상)
 * [Node.js](https://nodejs.org/en/) 및 [npm](https://www.npmjs.com/)
 
 >[!NOTE]
 >
-> **AEM as a Cloud Service를 처음 사용하십니까?** [AEM as a Cloud Service SDK를 사용하여 로컬 개발 환경을 설정하는 방법에 대한 다음 안내서](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=ko)를 확인하십시오.
+> **AEM as a Cloud Service을 처음 사용하십니까?** AEM as a Cloud Service SDK을 사용하여 로컬 개발 환경을 설정하는 [다음 안내서를 확인하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=ko).
 >
-> **AEM 6.5를 처음 사용하십니까?** [로컬 개발 환경을 설정하는 방법에 대한 다음 안내서](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=ko)를 확인하십시오.
+> **AEM 6.5를 처음 사용하십니까?** [로컬 개발 환경 설정에 대한 다음 안내서](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=ko)를 확인하십시오.
 
 ## 다음 단계 {#next-steps}
 
-지금 바로 [프로젝트 만들기](create-project.md) 장으로 이동하여 AEM Project Archetype을 사용하여 SPA 편집기가 활성화된 프로젝트를 생성하는 방법을 알아보십시오.
+무엇을 기다리고 있습니까?! [프로젝트 만들기](create-project.md) 장으로 이동하여 자습서를 시작하고 AEM Project Archetype을 사용하여 SPA 편집기 사용 프로젝트를 생성하는 방법을 알아봅니다.

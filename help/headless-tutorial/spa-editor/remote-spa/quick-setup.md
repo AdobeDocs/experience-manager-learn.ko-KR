@@ -1,6 +1,6 @@
 ---
-title: 빠른 설정 SPA 편집기 및 원격 SPA
-description: 15분 내에 원격 SPA 및 AEM SPA 편집기를 시작하고 실행하는 방법에 대해 알아보십시오.
+title: Quick setup SPA Editor and Remote SPA
+description: Learn how to get up and running with a remote SPA and AEM SPA Editor in 15 mins!
 topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
 role: Developer
@@ -13,24 +13,24 @@ doc-type: Tutorial
 exl-id: ef7a1dad-993a-4c47-a9fb-91fa73de9b5d
 duration: 647
 hide: true
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
-source-wordcount: '730'
-ht-degree: 10%
+source-wordcount: '838'
+ht-degree: 13%
 
 ---
 
-# 빠른 설정
+# Quick Setup
 
 {{spa-editor-deprecation}}
 
-빠른 설정은 WKND 앱을 원격 SPA로 설치 및 실행하고 AEM SPA 편집기를 사용하여 작성하는 방법에 대한 자세한 설명입니다.
+Quick setup is an expedited walk-through illustrating how to install and run the WKND App and as a Remote SPA, and author it using AEM SPA Editor.
 
-빠른 설정을 통해 이 자습서의 종료 상태로 바로 이동할 수 있습니다.
+Quick setup takes you directly to the end state of this tutorial.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333181?quality=12&learn=on)
 
-_빠른 설정의 비디오 둘러보기_
+_A video walk-through of the quick setup_
 
 ## 사전 요구 사항
 
@@ -41,10 +41,10 @@ _빠른 설정의 비디오 둘러보기_
 + [Java™ 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 + [Maven 3.6+](https://maven.apache.org/)
 + [Git](https://git-scm.com/downloads)
-+ macOS 전용 사전 요구 사항
-   + [Xcode](https://developer.apple.com/xcode/) 또는 [Xcode 명령줄 도구](https://developer.apple.com/xcode/resources/)
-+ [aem-guides-wknd.all-2.1.0.zip 이상](https://github.com/adobe/aem-guides-wknd/releases)
-+ [aem-guides-wknd-graphql 소스 코드(분기: 기능/spa-editor)](https://github.com/adobe/aem-guides-wknd-graphql/tree/feature/spa-editor)
++ macOS only prerequisites
+   + [Xcode](https://developer.apple.com/xcode/) or [Xcode command-line tools](https://developer.apple.com/xcode/resources/)
++ [aem-guides-wknd.all-2.1.0.zip or greater](https://github.com/adobe/aem-guides-wknd/releases)
++ [aem-guides-wknd-graphql source code (branch: feature/spa-editor)](https://github.com/adobe/aem-guides-wknd-graphql/tree/feature/spa-editor)
 
 
 이 튜토리얼에서는 다음을 가정합니다.
@@ -55,13 +55,13 @@ _빠른 설정의 비디오 둘러보기_
 + AEM SDK를 로컬 `admin` 계정과 암호 `admin`로 실행 중임
 + SPA는 `http://localhost:3000`에서 실행 중임
 
-## AEM SDK 빠른 시작
+## Start the AEM SDK Quickstart
 
-기본 `admin/admin` 자격 증명으로 포트 4502에 AEM SDK 빠른 시작을 다운로드하여 설치하십시오.
+Download and install the AEM SDK Quickstart on port 4502, with default `admin/admin` credentials.
 
-1. [최신 AEM SDK 다운로드](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=AEM*+SDK*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=1)
-1. `~/aem-sdk`에 AEM SDK 압축 풀기
-1. AEM SDK Quickstart Jar 실행
+1. [Download latest AEM SDK](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=AEM*+SDK*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=1)
+1. Unzip the AEM SDK to `~/aem-sdk`
+1. Run the AEM SDK Quickstart Jar
 
    ```
    $ java -jar aem-sdk-quickstart-xxx.jar
@@ -69,7 +69,7 @@ _빠른 설정의 비디오 둘러보기_
    # Provide `admin` as the admin user's password
    ```
 
-AEM SDK은 [http://localhost:4502](http://localhost:4502)에 시작되고 자동으로 시작됩니다. 다음 자격 증명을 사용하여 로그인합니다.
+AEM SDK starts and automatically launches on [http://localhost:4502](http://localhost:4502). 다음 자격 증명을 사용하여 로그인합니다.
 
 + 사용자 이름: `admin`
 + 암호: `admin`
@@ -78,22 +78,22 @@ AEM SDK은 [http://localhost:4502](http://localhost:4502)에 시작되고 자동
 
 이 자습서는 __WKND 2.1.0+의__ 프로젝트(콘텐츠의 경우)에 종속되어 있습니다.
 
-1. [최신 버전의 `aem-guides-wknd.all.x.x.x.zip`을(를) 다운로드](https://github.com/adobe/aem-guides-wknd/releases)
+1. [`aem-guides-wknd.all.x.x.x.zip`의 최신 버전 다운로드](https://github.com/adobe/aem-guides-wknd/releases)
 1. [http://localhost:4502/crx/packmgr](http://localhost:4502/crx/packmgr)의 AEM SDK 패키지 관리자에 `admin` 자격 증명으로 로그인합니다.
-1. 1단계에서 다운로드한 __을(를)__&#x200B;업로드`aem-guides-wknd.all.x.x.x.zip`
-1. __항목의__&#x200B;설치`aem-guides-wknd.all-x.x.x.zip` 단추를 탭합니다.
+1. 1단계에서 다운로드한 `aem-guides-wknd.all.x.x.x.zip`을(를) __업로드__
+1. `aem-guides-wknd.all-x.x.x.zip` 항목의 __설치__ 단추를 탭합니다.
 
 ## WKND 앱 SPA 패키지 다운로드 및 설치
 
 빠른 설정을 수행하기 위해 자습서의 최종 AEM 구성 및 콘텐츠가 포함된 AEM 패키지가 여기에 제공됩니다.
 
-1. [다운로드 &#x200B;](./assets/quick-setup/wknd-app.all-1.0.0-SNAPSHOT.zip)
-1. [다운로드 &#x200B;](./assets/quick-setup/wknd-app.ui.content.sample-1.0.1.zip)
+1. [다운로드 `wknd-app.all.x.x.x.zip`](./assets/quick-setup/wknd-app.all-1.0.0-SNAPSHOT.zip)
+1. [다운로드 `wknd-app.ui.content.sample.x.x.x.zip`](./assets/quick-setup/wknd-app.ui.content.sample-1.0.1.zip)
 1. [http://localhost:4502/crx/packmgr](http://localhost:4502/crx/packmgr)의 AEM SDK 패키지 관리자에 `admin` 자격 증명으로 로그인합니다.
-1. 1단계에서 다운로드한 __을(를)__&#x200B;업로드`wknd-app.all.x.x.x.zip`
-1. __항목의__&#x200B;설치`wknd-app.all.x.x.x.zip` 단추를 탭합니다.
-1. 2단계에서 다운로드한 __을(를)__&#x200B;업로드`wknd-app.ui.content.sample.x.x.x.zip`
-1. __항목의__&#x200B;설치`wknd-app.ui.content.sample.x.x.x.zip` 단추를 탭합니다.
+1. 1단계에서 다운로드한 `wknd-app.all.x.x.x.zip`을(를) __업로드__
+1. `wknd-app.all.x.x.x.zip` 항목의 __설치__ 단추를 탭합니다.
+1. 2단계에서 다운로드한 `wknd-app.ui.content.sample.x.x.x.zip`을(를) __업로드__
+1. `wknd-app.ui.content.sample.x.x.x.zip` 항목의 __설치__ 단추를 탭합니다.
 
 ## WKND 앱 소스 다운로드
 

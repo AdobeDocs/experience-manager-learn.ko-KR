@@ -12,10 +12,10 @@ doc-type: Tutorial
 exl-id: 9c3d47c7-1bb9-441c-a0e6-85887a32c817
 duration: 337
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
-source-wordcount: '1481'
-ht-degree: 0%
+source-wordcount: '1721'
+ht-degree: 2%
 
 ---
 
@@ -31,20 +31,20 @@ SPA 편집기 SDK을 사용하여 AEM 페이지에 매핑하여 SPA의 여러 �
 1. [React Router](https://reacttraining.com/react-router)를 사용하여 SPA의 다양한 보기 사이를 탐색하는 방법을 알아봅니다.
 1. AEM React 핵심 구성 요소를 사용하여 AEM 페이지 계층 구조에 의해 실행되는 동적 탐색을 구현합니다.
 
-## 빌드할 내용
+## 빌드 결과물
 
-이 장에서는 AEM의 SPA에 탐색 기능을 추가합니다. 탐색 메뉴는 AEM 페이지 계층 구조에 의해 구동되며 [탐색 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/navigation.html?lang=ko)에서 제공하는 JSON 모델을 사용합니다.
+이 장에서는 AEM의 SPA에 탐색 기능을 추가합니다. 탐색 메뉴는 AEM 페이지 계층 구조에 의해 구동되며 [탐색 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/navigation.html)에서 제공하는 JSON 모델을 사용합니다.
 
 ![탐색 추가됨](assets/navigation-routing/navigation-added.png)
 
 ## 사전 요구 사항
 
-[로컬 개발 환경](overview.md#local-dev-environment)을 설정하는 데 필요한 도구 및 지침을 검토하십시오. 이 챕터는 [구성 요소 매핑](map-components.md) 챕터의 연속이지만, 필요한 사항은 로컬 AEM 인스턴스에 배포된 SPA 사용 AEM 프로젝트입니다.
+[로컬 개발 환경](overview.md#local-dev-environment)을 설정하는 데 필요한 도구와 지침을 검토합니다. 이 챕터는 [구성 요소 매핑](map-components.md) 챕터의 연속이지만, 필요한 사항은 로컬 AEM 인스턴스에 배포된 SPA 사용 AEM 프로젝트입니다.
 
 ## 템플릿에 탐색 추가 {#add-navigation-template}
 
 1. 브라우저를 열고 AEM([http://localhost:4502/](http://localhost:4502/))에 로그인합니다. 시작 코드 베이스를 이미 배포해야 합니다.
-1. **SPA 페이지 템플릿**(으)로 이동합니다. [http://localhost:4502/editor.html/conf/wknd-spa-react/settings/wcm/templates/spa-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd-spa-react/settings/wcm/templates/spa-page-template/structure.html).
+1. **SPA 페이지 템플릿**: [http://localhost:4502/editor.html/conf/wknd-spa-react/settings/wcm/templates/spa-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd-spa-react/settings/wcm/templates/spa-page-template/structure.html)&#x200B;(으)로 이동합니다.
 1. 가장 바깥쪽의 **루트 레이아웃 컨테이너**&#x200B;를 선택하고 **정책** 아이콘을 클릭합니다. 작성을 위해 잠기지 않은 **레이아웃 컨테이너**&#x200B;를 선택하려면 **not**&#x200B;에 주의하십시오.
 
    ![루트 레이아웃 컨테이너 정책 아이콘 선택](assets/navigation-routing/root-layout-container-policy.png)
@@ -73,8 +73,8 @@ SPA 편집기 SDK을 사용하여 AEM 페이지에 매핑하여 SPA의 여러 �
    **속성**&#x200B;에서:
 
    * **탐색 루트**&#x200B;을(를) `/content/wknd-spa-react/us/en`(으)로 설정합니다.
-   * **루트 수준 제외**&#x200B;를 **1**(으)로 설정합니다.
-   * **모든 하위 페이지 수집**&#x200B;을 선택 취소합니다.
+   * **루트 수준 제외**&#x200B;를 **1**&#x200B;로 설정합니다.
+   * **모든 하위 페이지 수집**&#x200B;을 선택 해제합니다.
    * **탐색 구조 깊이**&#x200B;을(를) **3**(으)로 설정합니다.
 
    ![탐색 정책 구성](assets/navigation-routing/navigation-policy.png)
@@ -193,7 +193,7 @@ SPA 편집기 SDK을 사용하여 AEM 페이지에 매핑하여 SPA의 여러 �
 
    **페이지 3** 경로가 초기 JSON 모델에서 제거되었습니다. `/content/wknd-spa-react/us/en/home/page-2/page-3`. **페이지 3**&#x200B;이(가) 계층 구조의 수준 3에 있으며 최대 수준 2의 콘텐츠만 포함하도록 정책을 업데이트했기 때문입니다.
 
-1. SPA 홈 페이지 [http://localhost:4502/content/wknd-spa-react/us/en/home.html](http://localhost:4502/content/wknd-spa-react/us/en/home.html)을(를) 다시 열고 브라우저의 개발자 도구를 엽니다.
+1. SPA 홈 페이지 [http://localhost:4502/content/wknd-spa-react/us/en/home.html](http://localhost:4502/content/wknd-spa-react/us/en/home.html)를 다시 열고 브라우저의 개발자 도구를 엽니다.
 
    페이지를 새로 고치면 SPA 루트인 `/content/wknd-spa-react/us/en.model.json`에 대한 XHR 요청이 표시됩니다. 자습서에서 이전에 만든 SPA 루트 템플릿에 대한 계층 구조 깊이 구성에 따라 하위 페이지가 세 개만 포함됩니다. 여기에는 **페이지 3**&#x200B;이(가) 포함되지 않습니다.
 

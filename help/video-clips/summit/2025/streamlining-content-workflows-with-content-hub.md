@@ -1,6 +1,6 @@
 ---
-title: Content Hub을 사용하여 콘텐츠 워크플로우 간소화
-description: Content Hub을 통해 지역 팀의 콘텐츠 액세스, 권한 및 현지화를 간소화하여 효율성과 관련성을 보장하는 방법을 살펴볼 수 있습니다.
+title: Streamlining Content Workflows with Content Hub
+description: Discover how Content Hub simplifies content access, permissions, and localization for regional teams, ensuring efficiency and relevance.
 cloud: Experience Cloud
 solution: Experience Manager Assets
 feature-set: Experience Manager Assets
@@ -14,15 +14,15 @@ index: false
 hide: true
 hidefromtoc: true
 exl-id: 5f7de18c-8859-4201-be24-4fa2ae4aeb8d
-source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
 source-wordcount: '46'
 ht-degree: 0%
 
 ---
 
-# Content Hub을 사용하여 콘텐츠 워크플로우 간소화
+# Streamlining Content Workflows with Content Hub
 
-Content Hub을 통해 지역 팀의 콘텐츠 액세스, 권한 및 현지화를 간소화하여 효율성과 관련성을 보장하는 방법을 살펴볼 수 있습니다.
+Discover how Content Hub simplifies content access, permissions, and localization for regional teams, ensuring efficiency and relevance.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3459240/?learn=on&enablevpops)

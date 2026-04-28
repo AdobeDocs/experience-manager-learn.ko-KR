@@ -12,10 +12,10 @@ doc-type: Tutorial
 exl-id: e055b356-dd26-4366-8608-5a0ccf5b4c49
 duration: 190
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
-source-wordcount: '525'
-ht-degree: 1%
+source-wordcount: '634'
+ht-degree: 4%
 
 ---
 
@@ -27,7 +27,7 @@ AEM은 AEM SPA 편집기를 사용하여 컨텍스트 내 구성 요소 편집�
 
 * [npm 모듈](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
 * [Github 프로젝트](https://github.com/adobe/aem-react-editable-components)
-* [Adobe 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/developing/spas/spa-reference-materials.html?lang=ko)
+* [Adobe 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/developing/spas/spa-reference-materials.html)
 
 
 AEM React Editable Components v2에 대한 자세한 내용 및 코드 샘플은 기술 설명서를 참조하십시오.
@@ -38,7 +38,7 @@ AEM React Editable Components v2에 대한 자세한 내용 및 코드 샘플은
 
 ## AEM 페이지
 
-AEM React Editable Components 는 SPA Editor 또는 Remote SPA React 앱에서 모두 작동합니다. 편집 가능한 React 구성 요소를 채우는 콘텐츠는 [SPA 페이지 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-page-component.html?lang=ko)를 확장하는 AEM 페이지를 통해 노출되어야 합니다. 편집 가능한 React 구성 요소에 매핑되는 AEM 구성 요소는 AEM의 [구성 요소 내보내기 프레임워크](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/json-exporter-components.html?lang=ko)&#x200B;(예: [AEM 코어 WCM 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko))를 구현해야 합니다.
+AEM React Editable Components 는 SPA Editor 또는 Remote SPA React 앱에서 모두 작동합니다. 편집 가능한 React 구성 요소를 채우는 콘텐츠는 [SPA 페이지 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-page-component.html)를 확장하는 AEM 페이지를 통해 노출되어야 합니다. 편집 가능한 React 구성 요소에 매핑되는 AEM 구성 요소는 AEM의 [구성 요소 내보내기 프레임워크](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/json-exporter-components.html)&#x200B;(예: [AEM 코어 WCM 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html))를 구현해야 합니다.
 
 
 ## 종속성

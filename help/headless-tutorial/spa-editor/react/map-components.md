@@ -1,5 +1,5 @@
 ---
-title: SPA 구성 요소를 AEM 구성 요소에 매핑 | AEM SPA 편집기 및 반응 시작하기
+title: SPA 구성 요소를 AEM 구성 요소에 매핑 | AEM SPA 편집기 시작하기 및 반응
 description: AEM SPA Editor JS SDK을 사용하여 React 구성 요소를 Adobe Experience Manager(AEM) 구성 요소에 매핑하는 방법을 알아봅니다. 구성 요소 매핑을 통해 사용자는 AEM SPA 편집기 내에서 기존 AEM 작성과 유사하게 SPA 구성 요소를 동적으로 업데이트할 수 있습니다. 또한 AEM React 핵심 구성 요소를 즉시 사용하는 방법에 대해 알아봅니다.
 feature: SPA Editor
 version: Experience Manager as a Cloud Service
@@ -12,10 +12,10 @@ doc-type: Tutorial
 exl-id: 497ce6d7-cd39-4fb3-b5e0-6c60845f7648
 duration: 477
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
-source-wordcount: '2123'
-ht-degree: 0%
+source-wordcount: '2357'
+ht-degree: 8%
 
 ---
 
@@ -33,7 +33,7 @@ AEM SPA Editor JS SDK을 사용하여 React 구성 요소를 Adobe Experience Ma
 1. React 구성 요소가 AEM에서 전달된 동적 속성을 사용하는 방법을 검사합니다.
 1. 기본 제공 [React AEM 핵심 구성 요소](https://github.com/adobe/aem-react-core-wcm-components-examples)를 사용하는 방법에 대해 알아봅니다.
 
-## 빌드할 내용
+## 빌드 결과물
 
 이 장에서는 제공된 `Text` SPA 구성 요소가 AEM `Text` 구성 요소에 매핑되는 방법을 검사합니다. `Image` SPA 구성 요소와 같은 React 핵심 구성 요소는 SPA에서 사용되고 AEM에서 작성됩니다. **레이아웃 컨테이너** 및 **템플릿 편집기** 정책의 기본 기능을 사용하여 모양이 약간 더 다양한 보기를 만들 수도 있습니다.
 
@@ -41,11 +41,11 @@ AEM SPA Editor JS SDK을 사용하여 React 구성 요소를 Adobe Experience Ma
 
 ## 사전 요구 사항
 
-[로컬 개발 환경](overview.md#local-dev-environment)을 설정하는 데 필요한 도구 및 지침을 검토하십시오. 이 챕터는 [SPA 통합](integrate-spa.md) 챕터의 연속이지만 SPA를 사용할 수 있는 AEM 프로젝트만 있으면 됩니다.
+[로컬 개발 환경](overview.md#local-dev-environment)을 설정하는 데 필요한 도구와 지침을 검토합니다. 이 챕터는 [SPA 통합](integrate-spa.md) 챕터의 연속이지만 SPA를 사용할 수 있는 AEM 프로젝트만 있으면 됩니다.
 
 ## 매핑 접근 방식
 
-기본 개념은 SPA 구성 요소를 AEM 구성 요소에 매핑하는 것입니다. AEM 구성 요소, 서버측 실행, JSON 모델 API의 일부로 콘텐츠 내보내기. JSON 콘텐츠는 브라우저에서 클라이언트측을 실행하는 SPA에서 사용됩니다. SPA 구성 요소와 AEM 구성 요소 간의 1:1 매핑이 생성됩니다.
+기본 개념은 SPA 구성 요소를 AEM 구성 요소에 매핑하는 것입니다. AEM 구성 요소, 서버측 실행, JSON 모델 API의 일부로 콘텐츠 내보내기. JSON 콘텐츠는 브라우저에서 클라이언트측을 실행하는 SPA에서 사용됩니다. SPA 구성 요소와 AEM 구성 요소 간의 1:1 매핑이 만들어집니다.
 
 ![AEM 구성 요소를 React 구성 요소에 매핑하는 방법에 대한 높은 수준의 개요](./assets/map-components/high-level-approach.png)
 
@@ -53,7 +53,7 @@ AEM SPA Editor JS SDK을 사용하여 React 구성 요소를 Adobe Experience Ma
 
 ## 텍스트 구성 요소 검사
 
-[AEM Project Archetype](https://github.com/adobe/aem-project-archetype)은(는) AEM [텍스트 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=ko)에 매핑된 `Text` 구성 요소를 제공합니다. AEM에서 *content*&#x200B;을(를) 렌더링한다는 점에서 **content** 구성 요소의 예입니다.
+[AEM Project Archetype](https://github.com/adobe/aem-project-archetype)은(는) AEM [텍스트 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html)에 매핑된 `Text` 구성 요소를 제공합니다. AEM에서 *content*&#x200B;을(를) 렌더링한다는 점에서 **content** 구성 요소의 예입니다.
 
 구성 요소가 어떻게 작동하는지 살펴보겠습니다.
 
@@ -141,9 +141,9 @@ AEM SPA Editor JS SDK을 사용하여 React 구성 요소를 Adobe Experience Ma
 
 [AEM WCM 구성 요소 - React 코어 구현](https://github.com/adobe/aem-react-core-wcm-components-base) 및 [AEM WCM 구성 요소 - Spa 편집기 - React 코어 구현](https://github.com/adobe/aem-react-core-wcm-components-spa). 기본 AEM 구성 요소에 매핑되는 재사용 가능한 UI 구성 요소 세트입니다. 대부분의 프로젝트는 이러한 구성 요소를 자체 구현을 위한 시작점으로 다시 사용할 수 있습니다.
 
-1. 프로젝트 코드에서 `ui.frontend/src/components`의 `import-components.js` 파일을 엽니다.
-이 파일은 AEM 구성 요소에 매핑되는 모든 SPA 구성 요소를 가져옵니다. SPA 편집기 구현의 동적 특성이 주어지면 AEM 작성 가능 구성 요소에 연결된 모든 SPA 구성 요소를 명시적으로 참조해야 합니다. 이를 통해 AEM 작성자는 애플리케이션에서 원하는 위치에 구성 요소를 사용할 수 있습니다.
-1. 다음 가져오기 구문에는 프로젝트에 작성된 SPA 구성 요소가 포함됩니다.
+1. In the project code open the file `import-components.js` at `ui.frontend/src/components`.
+This file imports all of the SPA components that map to AEM components. Given the dynamic nature of the SPA Editor implementation, we must explicitly reference any SPA components that are tied to AEM author-able components. This allows an AEM author to choose to use a component wherever they want in the application.
+1. The following import statements include SPA components written in the project:
 
    ```js
    import './Page/Page';
@@ -152,25 +152,25 @@ AEM SPA Editor JS SDK을 사용하여 React 구성 요소를 Adobe Experience Ma
    import './ExperienceFragment/ExperienceFragment';
    ```
 
-1. `@adobe/aem-core-components-react-spa` 및 `@adobe/aem-core-components-react-base`의 다른 `imports`이(가) 몇 개 있습니다. React 코어 구성 요소를 가져와 현재 프로젝트에서 사용할 수 있도록 설정하는 것입니다. 그런 다음 이전 `Text` 구성 요소 예제와 마찬가지로 `MapTo`을(를) 사용하여 프로젝트별 AEM 구성 요소에 매핑됩니다.
+1. There are several other `imports` from `@adobe/aem-core-components-react-spa` and `@adobe/aem-core-components-react-base`. These are importing the React Core components and making them available in the current project. These are then mapped to project specific AEM components using the `MapTo`, just like with the `Text` component example earlier.
 
-### AEM 정책 업데이트
+### Update AEM Policies
 
-정책은 개발자와 고급 사용자가 사용할 수 있는 구성 요소를 세부적으로 제어할 수 있는 AEM 템플릿의 기능입니다. React 코어 구성 요소는 SPA 코드에 포함되어 있지만 애플리케이션에서 사용하려면 정책을 통해 활성화해야 합니다.
+Policies are a feature of AEM templates gives developers and power-users granular control over which components are available to be used. The React Core Components are included in the SPA Code but need to be enabled via a policy before they can be used in the application.
 
-1. AEM 시작 화면에서 **도구** > **템플릿** > **[WKND SPA 반응](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf/wknd-spa-react)**(으)로 이동합니다.
+1. From the AEM Start screen navigate to **Tools** > **Templates** > **[WKND SPA React](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf/wknd-spa-react)**.
 
-1. 편집할 **SPA 페이지** 템플릿을 선택하고 엽니다.
+1. Select and open the **SPA Page** template for editing.
 
 1. **레이아웃 컨테이너**&#x200B;를 선택하고 **정책** 아이콘을 클릭하여 정책을 편집합니다.
 
-   ![레이아웃 컨테이너 정책](assets/map-components/edit-spa-page-template.png)
+   ![layout container policy](assets/map-components/edit-spa-page-template.png)
 
-1. **허용된 구성 요소** > **WKND SPA 반응 - 콘텐츠** > 확인 **이미지**, **티저** 및 **제목**&#x200B;에서.
+1. Under **Allowed Components** > **WKND SPA React - Content** > check **Image**, **Teaser**, and **Title**.
 
-   ![업데이트된 구성 요소를 사용할 수 있음](assets/map-components/update-components-available.png)
+   ![Updated Components available](assets/map-components/update-components-available.png)
 
-   **기본 구성 요소** > **매핑 추가**&#x200B;에서 **이미지 - WKND SPA React - 콘텐츠** 구성 요소를 선택합니다.
+   Under **Default Components** > **Add mapping** and choose the **Image - WKND SPA React - Content** component:
 
    ![기본 구성 요소 설정](./assets/map-components/default-components.png)
 
@@ -178,7 +178,7 @@ AEM SPA Editor JS SDK을 사용하여 React 구성 요소를 Adobe Experience Ma
 
    정책 업데이트를 저장하려면 **완료**&#x200B;를 클릭하십시오.
 
-1. **레이아웃 컨테이너**&#x200B;에서 **Text** 구성 요소에 대한 **정책** 아이콘을 클릭합니다.
+1. In the **Layout Container** click the **policy** icon for the **Text** component.
 
    **WKND SPA 텍스트**(이)라는 새 정책을 만듭니다. **플러그인** > **서식** > 모든 상자를 선택하여 추가 서식 옵션을 사용하도록 설정합니다.
 
@@ -224,7 +224,7 @@ AEM SPA Editor JS SDK을 사용하여 React 구성 요소를 Adobe Experience Ma
 
    **레이아웃 컨테이너** 구성 요소에 `wcm/foundation/components/responsivegrid`의 `sling:resourceType`이(가) 있으며, `Text` 및 `Image` 구성 요소와 마찬가지로 `:type` 속성을 사용하여 SPA 편집기에서 인식됩니다.
 
-   SPA 편집기에서 [레이아웃 모드](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html?lang=ko#defining-layouts-layout-mode)를 사용하여 구성 요소 크기를 다시 조정하는 것과 동일한 기능을 사용할 수 있습니다.
+   SPA 편집기에서 [레이아웃 모드](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html#defining-layouts-layout-mode)를 사용하여 구성 요소 크기를 다시 조정하는 것과 동일한 기능을 사용할 수 있습니다.
 
 2. [http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html)&#x200B;(으)로 돌아갑니다. **이미지** 구성 요소를 추가하고 **레이아웃** 옵션을 사용하여 크기를 다시 조정해 보십시오.
 
@@ -254,7 +254,7 @@ AEM SPA Editor JS SDK을 사용하여 React 구성 요소를 Adobe Experience Ma
 
 ## (보너스) 소스 제어에 구성을 유지합니다. {#bonus-configs}
 
-대부분의 경우, 특히 AEM 프로젝트 시작 시 소스 제어에 템플릿 및 관련 콘텐츠 정책과 같은 구성을 유지하는 것이 중요합니다. 이렇게 하면 모든 개발자가 동일한 콘텐츠 및 구성 세트에 대해 작업하고 환경 간에 추가적인 일관성을 보장할 수 있습니다. 일단 프로젝트가 일정 수준의 완성도에 도달하면 템플릿을 관리하는 관행을 특별한 고급 사용자 그룹에게 이관할 수 있습니다.
+대부분의 경우, 특히 AEM 프로젝트 시작 시 소스 제어에 템플릿 및 관련 콘텐츠 정책과 같은 구성을 유지하는 것이 중요합니다. 이렇게 하면 모든 개발자가 동일한 콘텐츠와 구성으로 작업할 수 있으며 환경 간의 일관성을 더욱 높일 수 있습니다. 프로젝트가 일정 수준의 성숙도에 도달하면 템플릿 관리 업무를 특정 전문 사용자 그룹에 인계할 수 있습니다.
 
 다음 몇 단계는 Visual Studio Code IDE 및 [VSCode AEM 동기화](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync)를 사용하지만 AEM의 로컬 인스턴스에서 **끌어오기** 또는 **가져오기** 콘텐츠를 사용하도록 구성한 모든 도구와 IDE를 사용하여 수행할 수 있습니다.
 
@@ -264,7 +264,7 @@ AEM SPA Editor JS SDK을 사용하여 React 구성 요소를 Adobe Experience Ma
 
 2. 프로젝트 탐색기에서 **ui.content** 모듈을 확장하고 `/conf/wknd-spa-react/settings/wcm/templates`(으)로 이동합니다.
 
-3. `templates` 폴더를 **마우스 오른쪽 단추로 클릭**&#x200B;하고 **AEM 서버에서 가져오기**&#x200B;를 선택합니다.
+3. `templates` 폴더를 **마우스 오른쪽 버튼으로 클릭**&#x200B;라고 **AEM 서버에서 가져오기**&#x200B;를 선택합니다.
 
    ![VSCode 가져오기 템플릿](./assets/map-components/import-aem-servervscode.png)
 
@@ -283,13 +283,13 @@ AEM SPA Editor JS SDK을 사용하여 React 구성 요소를 Adobe Experience Ma
     </workspaceFilter>
    ```
 
-   `filter.xml` 파일은 패키지와 함께 설치된 노드의 경로를 식별합니다. 각 필터에서 `mode="merge"`을(를) 확인합니다. 이는 기존 콘텐츠는 수정되지 않고 새 콘텐츠만 추가됨을 나타냅니다. 콘텐츠 작성자가 이러한 경로를 업데이트할 수 있으므로 코드 배포는 콘텐츠를 **덮어쓰지**&#x200B;하지 않는 것이 중요합니다. 필터 요소 작업에 대한 자세한 내용은 [FileVault 설명서](https://jackrabbit.apache.org/filevault/filter.html)를 참조하십시오.
+   `filter.xml` 파일은 패키지와 함께 설치된 노드의 경로를 식별하는 역할을 합니다. 각 필터에서 `mode="merge"`을(를) 확인합니다. 이는 기존 콘텐츠는 수정되지 않고 새 콘텐츠만 추가됨을 나타냅니다. 콘텐츠 작성자가 이러한 경로를 업데이트할 수 있으므로 코드 배포 시 콘텐츠를 덮어쓰지 **않는** 것이 중요합니다. 필터 요소를 사용하는 작업에 대한 자세한 내용은 [FileVault 문서](https://jackrabbit.apache.org/filevault/filter.html)에서 확인할 수 있습니다.
 
-   `ui.content/src/main/content/META-INF/vault/filter.xml`과(와) `ui.apps/src/main/content/META-INF/vault/filter.xml`을(를) 비교하여 각 모듈에서 관리하는 다른 노드를 이해합니다.
+   `ui.content/src/main/content/META-INF/vault/filter.xml` 및 `ui.apps/src/main/content/META-INF/vault/filter.xml`을 비교하여 각 모듈에서 관리하는 다양한 노드를 이해합니다.
 
 ## (보너스) 사용자 지정 이미지 구성 요소 만들기 {#bonus-image}
 
-SPA 이미지 구성 요소는 React 핵심 구성 요소에서 이미 제공했습니다. 그러나 추가 연습이 필요하면 AEM [이미지 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=ko)에 매핑되는 React 구현을 직접 만드십시오. `Image` 구성 요소는 **content** 구성 요소의 또 다른 예입니다.
+SPA 이미지 구성 요소는 React 핵심 구성 요소에서 이미 제공했습니다. 그러나 추가 연습이 필요하면 AEM [이미지 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html)에 매핑되는 React 구현을 직접 만드십시오. `Image` 구성 요소는 **content** 구성 요소의 또 다른 예입니다.
 
 ### JSON 검사
 

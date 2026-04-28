@@ -1,6 +1,6 @@
 ---
 title: 탐색 및 라우팅 추가 | AEM SPA 편집기 및 Angular 시작하기
-description: AEM Pages 및 SPA Editor SDK을 사용하여 SPA의 여러 보기가 지원되는 방법에 대해 알아봅니다. 동적 탐색은 Angular 경로를 사용하여 구현되고 기존 헤더 구성 요소에 추가됩니다.
+description: Learn how multiple views in the SPA are supported using AEM Pages and the SPA Editor SDK. 동적 탐색은 Angular 경로를 사용하여 구현되고 기존 헤더 구성 요소에 추가됩니다.
 feature: SPA Editor
 version: Experience Manager as a Cloud Service
 jira: KT-5312
@@ -12,10 +12,10 @@ doc-type: Tutorial
 exl-id: 197a0c1f-4d0a-4b99-ba89-cdff2e6ac4ec
 duration: 669
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
-source-wordcount: '2531'
-ht-degree: 0%
+source-wordcount: '2845'
+ht-degree: 2%
 
 ---
 
@@ -28,18 +28,18 @@ AEM Pages 및 SPA Editor SDK을 사용하여 SPA의 여러 보기가 지원되�
 ## 목표
 
 1. SPA 편집기를 사용할 때 사용할 수 있는 SPA 모델 라우팅 옵션을 이해합니다.
-2. [Angular 라우팅](https://angular.io/guide/router)을 사용하여 SPA의 다양한 보기 사이를 탐색하는 방법을 알아봅니다.
+2. Learn to use [Angular routing](https://angular.io/guide/router) to navigate between different views of the SPA.
 3. AEM 페이지 계층 구조에 의해 실행되는 동적 탐색 구현
 
-## 빌드할 내용
+## 빌드 결과물
 
-이 장에서는 기존 `Header` 구성 요소에 탐색 메뉴를 추가합니다. 탐색 메뉴는 AEM 페이지 계층 구조에 의해 구동되며 [탐색 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html?lang=ko)에서 제공하는 JSON 모델을 사용합니다.
+이 장에서는 기존 `Header` 구성 요소에 탐색 메뉴를 추가합니다. 탐색 메뉴는 AEM 페이지 계층 구조에 의해 구동되며 [탐색 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html)에서 제공하는 JSON 모델을 사용합니다.
 
 ![탐색 구현](assets/navigation-routing/final-navigation-implemented.gif)
 
 ## 사전 요구 사항
 
-[로컬 개발 환경](overview.md#local-dev-environment)을 설정하는 데 필요한 도구 및 지침을 검토하십시오.
+[로컬 개발 환경](overview.md#local-dev-environment)을 설정하는 데 필요한 도구와 지침을 검토합니다.
 
 ### 코드 가져오기
 
@@ -116,12 +116,12 @@ AEM Pages 및 SPA Editor SDK을 사용하여 SPA의 여러 보기가 지원되�
        componentGroup="WKND SPA Angular - Structure"/>
    ```
 
-   AEM `Header` 구성 요소는 `sling:resourceSuperType` 속성을 통해 [탐색 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html?lang=ko)의 모든 기능을 상속합니다.
+   AEM `Header` 구성 요소는 `sling:resourceSuperType` 속성을 통해 [탐색 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html)의 모든 기능을 상속합니다.
 
 ## SPA 템플릿에 HeaderComponent 추가 {#add-header-template}
 
 1. 브라우저를 열고 AEM([http://localhost:4502/](http://localhost:4502/))에 로그인합니다. 시작 코드 베이스를 이미 배포해야 합니다.
-2. **[!UICONTROL SPA 페이지 템플릿]**(으)로 이동합니다. [http://localhost:4502/editor.html/conf/wknd-spa-angular/settings/wcm/templates/spa-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd-spa-angular/settings/wcm/templates/spa-page-template/structure.html).
+2. **[!UICONTROL SPA 페이지 템플릿]**: [http://localhost:4502/editor.html/conf/wknd-spa-angular/settings/wcm/templates/spa-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd-spa-angular/settings/wcm/templates/spa-page-template/structure.html)&#x200B;(으)로 이동합니다.
 3. 가장 바깥쪽의 **[!UICONTROL 루트 레이아웃 컨테이너]**&#x200B;를 선택하고 **[!UICONTROL 정책]** 아이콘을 클릭합니다. 작성을 위해 잠기지 않은 **[!UICONTROL 레이아웃 컨테이너]**&#x200B;를 선택하려면 **not**&#x200B;에 주의하십시오.
 
    ![루트 레이아웃 컨테이너 정책 아이콘 선택](assets/navigation-routing/root-layout-container-policy.png)
@@ -153,7 +153,7 @@ AEM Pages 및 SPA Editor SDK을 사용하여 SPA의 여러 보기가 지원되�
    **[!UICONTROL 속성]**&#x200B;에서:
 
    * **[!UICONTROL 탐색 루트]**&#x200B;을(를) `/content/wknd-spa-angular/us/en`(으)로 설정합니다.
-   * **[!UICONTROL 루트 수준 제외]**&#x200B;를 **1**(으)로 설정합니다.
+   * **[!UICONTROL 루트 수준 제외]**&#x200B;를 **1**&#x200B;로 설정합니다.
    * **[!UICONTROL 모든 하위 페이지 수집]**&#x200B;을 선택 취소합니다.
    * **[!UICONTROL 탐색 구조 깊이]**&#x200B;을(를) **3**(으)로 설정합니다.
 

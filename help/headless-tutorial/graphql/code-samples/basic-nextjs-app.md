@@ -1,6 +1,6 @@
 ---
 title: 기본 Next.js 앱
-description: WKND 모험 목록 및 세부 사항을 표시하는 기본 Next.js 앱입니다
+description: A basic Next.js app that displays a list of WKND adventures and their details
 version: Experience Manager as a Cloud Service
 mini-toc-levels: 1
 feature: Content Fragments, GraphQL API
@@ -14,16 +14,16 @@ hide: true
 hidefromtoc: true
 exl-id: 2d4396dc-2346-4561-b040-eba0ab62a96f
 duration: 22
-source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
-source-wordcount: '98'
-ht-degree: 6%
+source-wordcount: '106'
+ht-degree: 5%
 
 ---
 
 # 기본 Next.js 앱
 
-이 [Next.js](https://nextjs.org/) 앱은 지속 쿼리를 사용하여 AEM의 GraphQL API를 사용하여 콘텐츠를 쿼리하는 방법을 보여 줍니다. 이 애플리케이션은 필터링 가능한 WKND 모험을 렌더링하며, 모험을 선택하면 모험의 전체 세부 정보를 표시합니다.
+This [Next.js](https://nextjs.org/) app demonstrates how to query content using AEM&#39;s GraphQL APIs using persisted queries. 이 애플리케이션은 필터링 가능한 WKND 모험을 렌더링하며, 모험을 선택하면 모험의 전체 세부 정보를 표시합니다.
 
 이 코드:
 
@@ -32,4 +32,4 @@ ht-degree: 6%
 
 >[!IMPORTANT]
 >
-> Codesandbox.io는 포함된 IDE에서 Next.js 응용 프로그램의 편집을 지원하지 않습니다. 이 코드 샘플을 편집하려면 [codesandbox.io에서 바로 Next.js 앱을 여십시오](https://codesandbox.io/s/wknd-next-js-app-u8x5f8).
+> Codesandbox.io does not support editting of Next.js application in the embedded IDE. To edit this code sample, [open the Next.js app directly on codesandbox.io](https://codesandbox.io/s/wknd-next-js-app-u8x5f8).

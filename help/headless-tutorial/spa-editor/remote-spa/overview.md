@@ -12,10 +12,10 @@ doc-type: Tutorial
 exl-id: c5f933eb-c409-41dc-bb6a-6b2220dfbb47
 duration: 294
 hide: true
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
-source-wordcount: '571'
-ht-degree: 100%
+source-wordcount: '667'
+ht-degree: 89%
 
 ---
 
@@ -25,9 +25,9 @@ ht-degree: 100%
 
 AEM SPA 편집기를 사용하여 편집 가능한 AEM 콘텐츠로 기존 React 기반(또는 Next.js) 원격 SPA를 확장하려는 개발자를 위한 멀티 파트 튜토리얼을 시작합니다.
 
-이 튜토리얼은 AEM의 GraphQL API에 대한 AEM 콘텐츠 조각 콘텐츠를 사용하는 React 앱인 [WKND GraphQL App](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ko)에서 빌드되지만 상황에 맞는 SPA 콘텐츠 작성 기능은 제공하지 않습니다.
+이 튜토리얼은 AEM의 GraphQL API에 대한 AEM 콘텐츠 조각 콘텐츠를 사용하는 React 앱인 [WKND GraphQL App](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)에서 빌드되지만 상황에 맞는 SPA 콘텐츠 작성 기능은 제공하지 않습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3444854?captions=kor&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/333272?quality=12&learn=on)
 
 ## 튜토리얼 정보
 
@@ -66,7 +66,7 @@ AEM SPA 편집기를 사용하여 편집 가능한 AEM 콘텐츠로 기존 React
 
 >[!NOTE]
 >
-> **로컬 개발 환경을 설정하는 데 도움이 필요하십니까?** [AEM as a Cloud Service SDK를 사용하여 로컬 개발 환경을 설정하는 방법에 대한 다음 안내서](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=ko)를 확인하십시오.
+> **로컬 개발 환경을 설정하는 데 도움이 필요하십니까?** AEM as a Cloud Service SDK을 사용하여 로컬 개발 환경을 설정하는 [다음 안내서를 확인하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
 
 ## &#x200B;1. SPA 편집기용 AEM 구성
 
@@ -74,7 +74,7 @@ SPA를 AEM SPA 편집기와 통합하려면 AEM 구성이 필요합니다. 이�
 
 + [SPA 편집기용 AEM 구성 방법 알아보기](./aem-configure.md)
 
-## &#x200B;2. SPA 부트스트랩
+## &#x200B;2. Bootstrap 더 스파
 
 AEM SPA 편집기가 SPA를 작성 컨텍스트에 통합하려면 SPA에 몇 가지 추가 작업을 수행해야 합니다.
 

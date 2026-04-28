@@ -12,10 +12,10 @@ doc-type: Tutorial
 exl-id: 0265d3df-3de8-4a25-9611-ddf73d725f6e
 duration: 435
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
-source-wordcount: '1713'
-ht-degree: 0%
+source-wordcount: '2040'
+ht-degree: 7%
 
 ---
 
@@ -31,19 +31,19 @@ AEM SPA 편집기에서 사용할 기존 핵심 구성 요소를 확장하는 �
 2. `sling:resourceSuperType`을(를) 사용하여 구성 요소 상속의 기본 사항을 이해합니다.
 3. Sling 모델용 [위임 패턴](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models)을 사용하여 기존 논리 및 기능을 재사용하는 방법에 대해 알아봅니다.
 
-## 빌드할 내용
+## 빌드 결과물
 
-이 장에서는 새 `Card` 구성 요소를 만듭니다. `Card` 구성 요소는 [이미지 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=ko)를 확장하고 제목 및 Call to action 단추와 같은 추가 콘텐츠 필드를 추가하여 SPA 내의 다른 콘텐츠에 대한 티저 역할을 수행합니다.
+이 장에서는 새 `Card` 구성 요소를 만듭니다. `Card` 구성 요소는 [이미지 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html)를 확장하고 제목 및 Call to action 단추와 같은 추가 콘텐츠 필드를 추가하여 SPA 내의 다른 콘텐츠에 대한 티저 역할을 수행합니다.
 
 ![카드 구성 요소 최종 작성](assets/extend-component/final-authoring-card.png)
 
 >[!NOTE]
 >
-> 실제 구현에서는 프로젝트 요구 사항에 따라 [이미지 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=ko)를 확장하여 `Card` 구성 요소를 만드는 것보다 [티저 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/teaser.html?lang=ko)를 사용하는 것이 더 적절할 수 있습니다. 가능하면 항상 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)를 직접 사용하는 것이 좋습니다.
+> 실제 구현에서는 프로젝트 요구 사항에 따라 [이미지 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html)를 확장하여 `Card` 구성 요소를 만드는 것보다 [티저 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/teaser.html)를 사용하는 것이 더 적절할 수 있습니다. 가능하면 항상 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)를 직접 사용하는 것이 좋습니다.
 
 ## 사전 요구 사항
 
-[로컬 개발 환경](overview.md#local-dev-environment)을 설정하는 데 필요한 도구 및 지침을 검토하십시오.
+[로컬 개발 환경](overview.md#local-dev-environment)을 설정하는 데 필요한 도구와 지침을 검토합니다.
 
 ### 코드 가져오기
 
@@ -71,7 +71,7 @@ AEM SPA 편집기에서 사용할 기존 핵심 구성 요소를 확장하는 �
 
    ![패키지 관리자 설치 wknd.all](./assets/map-components/package-manager-wknd-all.png)
 
-[GitHub](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/extend-component-solution)에서 완성된 코드를 항상 보거나 `Angular/extend-component-solution` 분기로 전환하여 코드를 로컬로 확인할 수 있습니다.
+완성된 코드는 언제든지 [GitHub](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/extend-component-solution)에서 볼 수 있으며 `Angular/extend-component-solution` 분기로 전환하여 로컬에서 코드를 확인할 수도 있습니다.
 
 ## 초기 카드 구현 검사
 
@@ -106,13 +106,13 @@ AEM SPA 편집기에서 사용할 기존 핵심 구성 요소를 확장하는 �
 
    `sling:resourceSuperType`이(가) `core/wcm/components/image/v2/image`을(를) 가리킵니다. 이는 WKND SPA 이미지 구성 요소가 핵심 구성 요소 이미지의 기능을 상속함을 나타냅니다.
 
-   [프록시 패턴](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html?lang=ko#proxy-component-pattern) 슬링 리소스 상속이라고도 하는 Sling 리소스 상속은 하위 구성 요소가 기능을 상속하고 원하는 경우 동작을 확장/재정의할 수 있는 강력한 디자인 패턴입니다. Sling 상속은 여러 수준의 상속을 지원하므로 궁극적으로 새 `Card` 구성 요소는 핵심 구성 요소 이미지의 기능을 상속합니다.
+   [프록시 패턴](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html#proxy-component-pattern) 슬링 리소스 상속이라고도 하는 Sling 리소스 상속은 하위 구성 요소가 기능을 상속하고 원하는 경우 동작을 확장/재정의할 수 있는 강력한 디자인 패턴입니다. Sling 상속은 여러 수준의 상속을 지원하므로 궁극적으로 새 `Card` 구성 요소는 핵심 구성 요소 이미지의 기능을 상속합니다.
 
    많은 개발 팀이 D.R.Y.가 되도록 노력합니다(반복하지 마십시오). Sling 상속을 사용하면 AEM에서 이 작업을 수행할 수 있습니다.
 
 4. `card` 폴더 아래에서 `_cq_dialog/.content.xml` 파일을 엽니다.
 
-   이 파일은 `Card` 구성 요소에 대한 구성 요소 대화 상자 정의입니다. Sling 상속을 사용하는 경우 [Sling 리소스 병합](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/sling-resource-merger.html?lang=ko)의 기능을 사용하여 대화 상자의 일부를 재정의하거나 확장할 수 있습니다. 이 샘플에서는 작성자의 추가 데이터를 캡처하여 카드 구성 요소를 채우기 위한 새 탭이 대화 상자에 추가되었습니다.
+   이 파일은 `Card` 구성 요소에 대한 구성 요소 대화 상자 정의입니다. Sling 상속을 사용하는 경우 [Sling 리소스 병합](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/sling-resource-merger.html)의 기능을 사용하여 대화 상자의 일부를 재정의하거나 확장할 수 있습니다. 이 샘플에서는 작성자의 추가 데이터를 캡처하여 카드 구성 요소를 채우기 위한 새 탭이 대화 상자에 추가되었습니다.
 
    개발자는 `sling:orderBefore`과(와) 같은 속성을 사용하여 새 탭이나 양식 필드를 삽입할 위치를 선택할 수 있습니다. 이 경우 `Text` 탭은 `asset` 탭 앞에 삽입됩니다. Sling 리소스 병합을 최대한 활용하려면 [이미지 구성 요소 대화 상자](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/image/v2/image/_cq_dialog/.content.xml)의 원래 대화 상자 노드 구조를 알고 있어야 합니다.
 
@@ -262,7 +262,7 @@ AEM SPA 편집기에서 사용할 기존 핵심 구성 요소를 확장하는 �
 
    이러한 메서드는 JSON 모델 API를 통해 노출되고 Angular 구성 요소에 전달됩니다.
 
-3. `CardImpl.java` 열기 `Card.java` 인터페이스의 구현입니다. 이 구현은 자습서를 가속화하기 위해 부분적으로 자세히 설명되어 있습니다.  Sling 모델 내보내기를 통해 Sling 모델을 JSON으로 serialize할 수 있도록 `@Model` 및 `@Exporter` 주석을 사용하십시오.
+3. `CardImpl.java`를 엽니다. `Card.java` 인터페이스의 구현입니다. 이 구현은 자습서를 가속화하기 위해 부분적으로 자세히 설명되어 있습니다.  Sling 모델 내보내기를 통해 Sling 모델을 JSON으로 serialize할 수 있도록 `@Model` 및 `@Exporter` 주석을 사용하십시오.
 
    `CardImpl.java`은(는) 또한 이미지 핵심 구성 요소에서 논리를 다시 쓰지 않도록 Sling 모델에 대해 [위임 패턴](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models)을 사용합니다.
 
@@ -296,7 +296,7 @@ AEM SPA 편집기에서 사용할 기존 핵심 구성 요소를 확장하는 �
    }
    ```
 
-   Sling 모델이 초기화될 때 `@PostConstruct initModel()`이(가) 호출되므로 모델의 다른 메서드에서 사용할 수 있는 개체를 초기화할 수 있습니다. `pageManager`은(는) `@ScriptVariable` 주석을 통해 Sling 모델에서 사용할 수 있는 여러 [Java™ 지원 전역 개체](https://experienceleague.adobe.com/docs/experience-manager-htl/content/global-objects.html?lang=ko) 중 하나입니다. [getPage](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageManager.html) 메서드는 경로를 사용하여 AEM [Page](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/Page.html) 개체를 반환하거나, 경로가 올바른 페이지를 가리키지 않으면 null을 반환합니다.
+   Sling 모델이 초기화될 때 `@PostConstruct initModel()`이(가) 호출되므로 모델의 다른 메서드에서 사용할 수 있는 개체를 초기화할 수 있습니다. `pageManager`은(는) `@ScriptVariable` 주석을 통해 Sling 모델에서 사용할 수 있는 여러 [Java™ 지원 전역 개체](https://experienceleague.adobe.com/docs/experience-manager-htl/content/global-objects.html) 중 하나입니다. [getPage](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageManager.html) 메서드는 경로를 사용하여 AEM [Page](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/Page.html) 개체를 반환하거나, 경로가 올바른 페이지를 가리키지 않으면 null을 반환합니다.
 
    이렇게 하면 `cardPage` 변수가 초기화됩니다. 이 변수는 다른 새 메서드에서 연결된 기본 페이지에 대한 데이터를 반환하는 데 사용됩니다.
 
@@ -472,4 +472,4 @@ AEM SPA 편집기에서 사용할 기존 핵심 구성 요소를 확장하는 �
 
 축하합니다. AEM 구성 요소를 확장하는 방법과 Sling 모델 및 대화 상자가 JSON 모델과 함께 작동하는 방법을 배웠습니다.
 
-[GitHub](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/extend-component-solution)에서 완성된 코드를 항상 보거나 `Angular/extend-component-solution` 분기로 전환하여 코드를 로컬로 확인할 수 있습니다.
+완성된 코드는 언제든지 [GitHub](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/extend-component-solution)에서 볼 수 있으며 `Angular/extend-component-solution` 분기로 전환하여 로컬에서 코드를 확인할 수도 있습니다.

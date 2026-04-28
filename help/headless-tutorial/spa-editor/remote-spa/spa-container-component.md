@@ -13,9 +13,9 @@ doc-type: Tutorial
 exl-id: e5e6204c-d88c-4e79-a7f4-0cfc140bc51c
 duration: 306
 hide: true
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
-source-wordcount: '1112'
+source-wordcount: '1121'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 1%
 편집 가능한 영역을 홈 보기에 추가하려면 다음을 수행합니다.
 
 1. `react-app/src/components/Home.js` 열기 및 편집
-1. `ResponsiveGrid`에서 `@adobe/aem-react-editable-components` 구성 요소를 가져와 `Home` 구성 요소에 추가하십시오.
+1. `@adobe/aem-react-editable-components`에서 `ResponsiveGrid` 구성 요소를 가져와 `Home` 구성 요소에 추가하십시오.
 1. `<ResponsiveGrid...>` 구성 요소에서 다음 특성을 설정합니다.
    1. `pagePath = '/content/wknd-app/us/en/home'`
    1. `itemPath = 'root/responsivegrid'`
@@ -51,7 +51,7 @@ ht-degree: 1%
 
    1. `/content/wknd-app/us/en/home/jcr:content/root/responsivegrid`
 
-   `itemPath`은(는) `responsivegrid` AEM 템플릿에 정의된 `Remote SPA Page` 노드에 매핑되며 `Remote SPA Page` AEM 템플릿에서 만든 새 AEM 페이지에 자동으로 만들어집니다.
+   `itemPath`은(는) `Remote SPA Page` AEM 템플릿에 정의된 `responsivegrid` 노드에 매핑되며 `Remote SPA Page` AEM 템플릿에서 만든 새 AEM 페이지에 자동으로 만들어집니다.
 
    `Home.js`을(를) 업데이트하여 `<ResponsiveGrid...>` 구성 요소를 추가합니다.
 
@@ -91,7 +91,7 @@ SPA 편집기에서 제공하는 유연한 작성 경험 컨테이너를 최대�
 
 1. IDE에서 SPA 프로젝트 열기
 1. `src/components/editable/core/Text.js`에서 React 구성 요소 만들기
-1. `Text.js`에 다음 코드 추가
+1. Add the following code to `Text.js`
 
    ```javascript
    import React from 'react'
@@ -237,7 +237,7 @@ export default EditableImage;
 ```
 
 
-1. `src/components/editable/EditableImage.scss`에 대한 사용자 지정 스타일을 제공하는 SCSS 파일 `EditableImage.scss`을(를) 만듭니다. 이러한 스타일은 편집 가능한 React 구성 요소의 CSS 클래스를 대상으로 합니다.
+1. `EditableImage.scss`에 대한 사용자 지정 스타일을 제공하는 SCSS 파일 `src/components/editable/EditableImage.scss`을(를) 만듭니다. 이러한 스타일은 편집 가능한 React 구성 요소의 CSS 클래스를 대상으로 합니다.
 1. `EditableImage.scss`에 다음 SCSS 추가
 
    ```css
@@ -248,7 +248,7 @@ export default EditableImage;
     }
    ```
 
-1. `EditableImage.scss`에서 `EditableImage.js` 가져오기
+1. `EditableImage.js`에서 `EditableImage.scss` 가져오기
 
    ```javascript
    ...
@@ -277,47 +277,47 @@ export default EditableImage;
    ...
    ```
 
-결과는 다음과 같아야 합니다.
+The result should look like:
 
 ![Home.js](./assets/spa-container-component/home-js-imports.png)
 
-이 가져오기가 _추가되지 않음_&#x200B;인 경우 SPA에서 `EditableText` 및 `EditableImage` 코드를 호출하지 않으므로 구성 요소가 제공된 리소스 형식에 매핑되지 않습니다.
+If these imports are _not_ added, the `EditableText` and `EditableImage` code is not be invoked by SPA, and thus, the components are not mapped to the provided resource types.
 
-## AEM에서 컨테이너 구성
+## Configuring the container in AEM
 
-AEM 컨테이너 구성 요소는 정책을 사용하여 허용된 구성 요소를 지시합니다. SPA에서 SPA 구성 요소의 대응 요소를 매핑한 AEM 구성 요소만 렌더링할 수 있으므로 SPA 편집기를 사용할 때 매우 중요한 구성입니다. SPA 구현을 제공한 구성 요소만 허용되는지 확인하십시오.
+AEM container components use policies to dictate their allowed components. This is a critical configuration when using SPA Editor, since only AEM Components that have mapped SPA component counterparts are render-able by the SPA. Ensure only the components which we&#39;ve provided SPA implementations for are allowed:
 
-* `EditableTitle`이(가) `wknd-app/components/title`에 매핑됨
-* `EditableText`이(가) `wknd-app/components/text`에 매핑됨
-* `EditableImage`이(가) `wknd-app/components/image`에 매핑됨
+* `EditableTitle` mapped to `wknd-app/components/title`
+* `EditableText` mapped to `wknd-app/components/text`
+* `EditableImage` mapped to `wknd-app/components/image`
 
-원격 SPA 페이지 템플릿의 Reponsivegrid 컨테이너를 구성하려면 다음을 수행하십시오.
+To configure the Remote SPA Page template&#39;s reponsivegrid container:
 
 1. AEM 작성자에 로그인
-1. __도구 > 일반 > 템플릿 > WKND 앱으로 이동__
-1. __보고서 SPA 페이지__ 편집
+1. Navigate to __Tools > General > Templates > WKND App__
+1. Edit __Report SPA Page__
 
-   ![응답형 격자 정책](./assets/spa-container-component/templates-remote-spa-page.png)
+   ![Responsive Grid policies](./assets/spa-container-component/templates-remote-spa-page.png)
 
-1. 오른쪽 상단의 모드 전환기에서 __구조__&#x200B;를 선택합니다.
-1. 탭하여 __레이아웃 컨테이너__ 선택
-1. 팝업 막대에서 __정책__ 아이콘을 탭합니다.
+1. Select __Structure__ in the mode switcher in the top right
+1. Tap to select the __Layout Container__
+1. Tap the __Policy__ icon in the popup bar
 
-   ![응답형 격자 정책](./assets/spa-container-component/templates-policies-action.png)
+   ![Responsive Grid policies](./assets/spa-container-component/templates-policies-action.png)
 
-1. 오른쪽의 __허용된 구성 요소__ 탭에서 __WKND 앱 - 콘텐츠__&#x200B;를 확장합니다.
-1. 다음 항목만 선택해야 합니다.
+1. On the right, under the __Allowed Components__ tab, expand __WKND APP - CONTENT__
+1. Ensure only following are selected:
    1. 이미지
    1. 텍스트
    1. 제목
 
-   ![원격 SPA 페이지](./assets/spa-container-component/templates-allowed-components.png)
+   ![Remote SPA Page](./assets/spa-container-component/templates-allowed-components.png)
 
 1. __완료__ 탭
 
-## AEM에서 컨테이너 작성
+## Authoring the container in AEM
 
-SPA에서 `<ResponsiveGrid...>`을(를) 포함하도록 업데이트하고, 세 개의 편집 가능한 React 구성 요소(`EditableTitle`, `EditableText` 및 `EditableImage`)에 대한 래퍼를 업데이트하고, AEM이 일치하는 템플릿 정책으로 업데이트되면 컨테이너 구성 요소에서 콘텐츠 작성을 시작할 수 있습니다.
+After the SPA updated to embed the `<ResponsiveGrid...>`, wrappers for three editable React components (`EditableTitle`, `EditableText`, and `EditableImage`), and AEM is updated with a matching Template policy, we can start authoring content in the container component.
 
 1. AEM 작성자에 로그인
 1. __사이트 > WKND 앱__(으)로 이동

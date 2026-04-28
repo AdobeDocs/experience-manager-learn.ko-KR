@@ -12,10 +12,10 @@ doc-type: Tutorial
 exl-id: 19a8917c-a1e7-4293-9ce1-9f4c1a565861
 duration: 509
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
-source-wordcount: '2213'
-ht-degree: 0%
+source-wordcount: '2475'
+ht-degree: 8%
 
 ---
 
@@ -33,7 +33,7 @@ AEM SPA Editor JS SDK을 사용하여 Angular 구성 요소를 Adobe Experience 
 2. **Container** 구성 요소와 **Content** 구성 요소의 차이점을 이해합니다.
 3. 기존 Angular 구성 요소에 매핑되는 새 AEM 구성 요소를 만듭니다.
 
-## 빌드할 내용
+## 빌드 결과물
 
 이 장에서는 제공된 `Text` SPA 구성 요소가 AEM `Text` 구성 요소에 매핑되는 방식을 검사합니다. SPA에서 사용하고 AEM에서 작성할 수 있는 새 `Image` SPA 구성 요소가 만들어집니다. **레이아웃 컨테이너** 및 **템플릿 편집기** 정책의 기본 기능을 사용하여 모양이 약간 더 다양한 보기를 만듭니다.
 
@@ -41,7 +41,7 @@ AEM SPA Editor JS SDK을 사용하여 Angular 구성 요소를 Adobe Experience 
 
 ## 사전 요구 사항
 
-[로컬 개발 환경](overview.md#local-dev-environment)을 설정하는 데 필요한 도구 및 지침을 검토하십시오.
+[로컬 개발 환경](overview.md#local-dev-environment)을 설정하는 데 필요한 도구와 지침을 검토합니다.
 
 ### 코드 가져오기
 
@@ -69,7 +69,7 @@ AEM SPA Editor JS SDK을 사용하여 Angular 구성 요소를 Adobe Experience 
 
 ## 매핑 접근 방식
 
-기본 개념은 SPA 구성 요소를 AEM 구성 요소에 매핑하는 것입니다. AEM 구성 요소, 서버측 실행, JSON 모델 API의 일부로 콘텐츠 내보내기. JSON 콘텐츠는 브라우저에서 클라이언트측을 실행하는 SPA에서 사용됩니다. SPA 구성 요소와 AEM 구성 요소 간의 1:1 매핑이 생성됩니다.
+기본 개념은 SPA 구성 요소를 AEM 구성 요소에 매핑하는 것입니다. AEM 구성 요소, 서버측 실행, JSON 모델 API의 일부로 콘텐츠 내보내기. JSON 콘텐츠는 브라우저에서 클라이언트측을 실행하는 SPA에서 사용됩니다. SPA 구성 요소와 AEM 구성 요소 간의 1:1 매핑이 만들어집니다.
 
 ![AEM 구성 요소를 Angular 구성 요소에 매핑하는 방법에 대한 높은 수준의 개요](./assets/map-components/high-level-approach.png)
 
@@ -77,7 +77,7 @@ AEM SPA Editor JS SDK을 사용하여 Angular 구성 요소를 Adobe Experience 
 
 ## 텍스트 구성 요소 검사
 
-[AEM Project Archetype](https://github.com/adobe/aem-project-archetype)은(는) AEM [텍스트 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=ko)에 매핑된 `Text` 구성 요소를 제공합니다. AEM에서 *content*&#x200B;을(를) 렌더링한다는 점에서 **content** 구성 요소의 예입니다.
+[AEM Project Archetype](https://github.com/adobe/aem-project-archetype)은(는) AEM [텍스트 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html)에 매핑된 `Text` 구성 요소를 제공합니다. AEM에서 *content*&#x200B;을(를) 렌더링한다는 점에서 **content** 구성 요소의 예입니다.
 
 구성 요소가 어떻게 작동하는지 살펴보겠습니다.
 
@@ -105,7 +105,7 @@ AEM SPA Editor JS SDK을 사용하여 Angular 구성 요소를 Adobe Experience 
 
    `ui.frontend` 모듈이 현재 [모의 JSON 모델](./integrate-spa.md#mock-json)을(를) 사용하도록 설정되어 있습니다.
 
-2. [http://localhost:4200/content/wknd-spa-angular/us/en/home.html](http://localhost:4200/content/wknd-spa-angular/us/en/home.html)에 새 브라우저 창이 열립니다.
+2. [http://localhost:4200/content/wknd-spa-angular/us/en/home.html](http://localhost:4200/content/wknd-spa-angular/us/en/home.html)에 새 브라우저 창이 열립니다
 
    ![모의 콘텐츠가 있는 Webpack 개발 서버](assets/map-components/initial-start.png)
 
@@ -134,7 +134,7 @@ AEM SPA Editor JS SDK을 사용하여 Angular 구성 요소를 Adobe Experience 
 
    [@Input()](https://angular.io/api/core/Input) decorator는 앞에서 검토한 대로 매핑된 JSON 개체를 통해 값이 설정된 필드를 선언하는 데 사용됩니다.
 
-   `@HostBinding('innerHtml') get content()`은(는) `this.text` 값에서 작성된 텍스트 콘텐츠를 노출하는 메서드입니다. 콘텐츠가 서식 있는 텍스트(`this.richText` 플래그로 결정됨)인 경우 Angular의 기본 제공 보안은 무시됩니다. Angular의 [DomSanitizer](https://angular.io/api/platform-browser/DomSanitizer)은(는) 원시 HTML을 &quot;스크러빙&quot;하고 교차 사이트 스크립팅 취약성을 방지하는 데 사용됩니다. 메서드는 [&#128279;](https://angular.io/api/core/HostBinding) decorator를 사용하여 `innerHtml` @HostBinding에 바인딩됩니다.
+   `@HostBinding('innerHtml') get content()`은(는) `this.text` 값에서 작성된 텍스트 콘텐츠를 노출하는 메서드입니다. 콘텐츠가 서식 있는 텍스트(`this.richText` 플래그로 결정됨)인 경우 Angular의 기본 제공 보안은 무시됩니다. Angular의 [DomSanitizer](https://angular.io/api/platform-browser/DomSanitizer)은(는) 원시 HTML을 &quot;스크러빙&quot;하고 교차 사이트 스크립팅 취약성을 방지하는 데 사용됩니다. 메서드는 [](https://angular.io/api/core/HostBinding) decorator를 사용하여 `innerHtml` @HostBinding에 바인딩됩니다.
 
 5. 다음 ~줄 24에서 `TextEditConfig`을(를) 검사합니다.
 
@@ -201,7 +201,7 @@ AEM SPA Editor JS SDK을 사용하여 Angular 구성 요소를 Adobe Experience 
 
 ## 이미지 구성 요소 만들기
 
-그런 다음 AEM [이미지 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=ko)에 매핑된 `Image` Angular 구성 요소를 만듭니다. `Image` 구성 요소는 **content** 구성 요소의 또 다른 예입니다.
+그런 다음 AEM [이미지 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html)에 매핑된 `Image` Angular 구성 요소를 만듭니다. `Image` 구성 요소는 **content** 구성 요소의 또 다른 예입니다.
 
 ### JSON 검사
 
@@ -437,7 +437,7 @@ SPA 코드로 이동하기 전에 AEM에서 제공하는 JSON 모델을 검사�
 
    **레이아웃 컨테이너** 구성 요소에 `wcm/foundation/components/responsivegrid`의 `sling:resourceType`이(가) 있으며, `Text` 및 `Image` 구성 요소와 마찬가지로 `:type` 속성을 사용하여 SPA 편집기에서 인식됩니다.
 
-   SPA 편집기에서 [레이아웃 모드](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html?lang=ko#defining-layouts-layout-mode)를 사용하여 구성 요소 크기를 다시 조정하는 것과 동일한 기능을 사용할 수 있습니다.
+   SPA 편집기에서 [레이아웃 모드](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html#defining-layouts-layout-mode)를 사용하여 구성 요소 크기를 다시 조정하는 것과 동일한 기능을 사용할 수 있습니다.
 
 3. [http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html)&#x200B;(으)로 돌아갑니다. **이미지** 구성 요소를 추가하고 **레이아웃** 옵션을 사용하여 크기를 다시 조정해 보십시오.
 
@@ -469,7 +469,7 @@ SPA 코드로 이동하기 전에 AEM에서 제공하는 JSON 모델을 검사�
 
 ## 보너스 - 소스 제어에 구성 유지 {#bonus}
 
-대부분의 경우, 특히 AEM 프로젝트 시작 시 소스 제어에 템플릿 및 관련 콘텐츠 정책과 같은 구성을 유지하는 것이 중요합니다. 이렇게 하면 모든 개발자가 동일한 콘텐츠 및 구성 세트에 대해 작업하고 환경 간에 추가적인 일관성을 보장할 수 있습니다. 일단 프로젝트가 일정 수준의 완성도에 도달하면 템플릿을 관리하는 관행을 특별한 고급 사용자 그룹에게 이관할 수 있습니다.
+대부분의 경우, 특히 AEM 프로젝트 시작 시 소스 제어에 템플릿 및 관련 콘텐츠 정책과 같은 구성을 유지하는 것이 중요합니다. 이렇게 하면 모든 개발자가 동일한 콘텐츠와 구성으로 작업할 수 있으며 환경 간의 일관성을 더욱 높일 수 있습니다. 프로젝트가 일정 수준의 성숙도에 도달하면 템플릿 관리 업무를 특정 전문 사용자 그룹에 인계할 수 있습니다.
 
 다음 몇 단계는 Visual Studio Code IDE 및 [VSCode AEM 동기화](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync)를 사용하지만 AEM의 로컬 인스턴스에서 **끌어오기** 또는 **가져오기** 콘텐츠를 사용하도록 구성한 모든 도구와 IDE를 사용하여 수행할 수 있습니다.
 
@@ -479,7 +479,7 @@ SPA 코드로 이동하기 전에 AEM에서 제공하는 JSON 모델을 검사�
 
 2. 프로젝트 탐색기에서 **ui.content** 모듈을 확장하고 `/conf/wknd-spa-angular/settings/wcm/templates`(으)로 이동합니다.
 
-3. `templates` 폴더를 **마우스 오른쪽 단추로 클릭**&#x200B;하고 **AEM 서버에서 가져오기**&#x200B;를 선택합니다.
+3. `templates` 폴더를 **마우스 오른쪽 버튼으로 클릭**&#x200B;라고 **AEM 서버에서 가져오기**&#x200B;를 선택합니다.
 
    ![VSCode 가져오기 템플릿](assets/map-components/import-aem-servervscode.png)
 
@@ -498,6 +498,6 @@ SPA 코드로 이동하기 전에 AEM에서 제공하는 JSON 모델을 검사�
     </workspaceFilter>
    ```
 
-   `filter.xml` 파일은 패키지와 함께 설치된 노드의 경로를 식별합니다. 각 필터에서 `mode="merge"`을(를) 확인합니다. 이는 기존 콘텐츠는 수정되지 않고 새 콘텐츠만 추가됨을 나타냅니다. 콘텐츠 작성자가 이러한 경로를 업데이트할 수 있으므로 코드 배포는 콘텐츠를 **덮어쓰지**&#x200B;하지 않는 것이 중요합니다. 필터 요소 작업에 대한 자세한 내용은 [FileVault 설명서](https://jackrabbit.apache.org/filevault/filter.html)를 참조하십시오.
+   `filter.xml` 파일은 패키지와 함께 설치된 노드의 경로를 식별하는 역할을 합니다. 각 필터에서 `mode="merge"`을(를) 확인합니다. 이는 기존 콘텐츠는 수정되지 않고 새 콘텐츠만 추가됨을 나타냅니다. 콘텐츠 작성자가 이러한 경로를 업데이트할 수 있으므로 코드 배포 시 콘텐츠를 덮어쓰지 **않는** 것이 중요합니다. 필터 요소를 사용하는 작업에 대한 자세한 내용은 [FileVault 문서](https://jackrabbit.apache.org/filevault/filter.html)에서 확인할 수 있습니다.
 
-   `ui.content/src/main/content/META-INF/vault/filter.xml`과(와) `ui.apps/src/main/content/META-INF/vault/filter.xml`을(를) 비교하여 각 모듈에서 관리하는 다른 노드를 이해합니다.
+   `ui.content/src/main/content/META-INF/vault/filter.xml` 및 `ui.apps/src/main/content/META-INF/vault/filter.xml`을 비교하여 각 모듈에서 관리하는 다양한 노드를 이해합니다.

@@ -1,6 +1,6 @@
 ---
 title: Angular 앱 필터링
-description: 콘텐츠 조각을 사용하여 모델링된 WKND 모험을 필터링하는 간단한 Angular 앱입니다.
+description: A simple Angular app that filters WKND adventures modeled using Content Fragments.
 version: Experience Manager as a Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
@@ -13,18 +13,18 @@ hide: true
 hidefromtoc: true
 exl-id: c238dd83-65d3-4b04-b90e-19ed250b8e36
 duration: 26
-source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
-source-wordcount: '130'
+source-wordcount: '141'
 ht-degree: 5%
 
 ---
 
 # Angular 앱 필터링
 
-[Angular](https://angular.io/) 앱을 사용하여 데이터를 필터링하는 AEM Headless GraphQL API 기능을 살펴보십시오. 이 Angular 앱은 활동 유형별로 필터링 가능한 WKND 모험 목록을 생성합니다.
+Explore AEM Headless GraphQL APIs ability to filter data using a [Angular](https://angular.io/) app. This Angular app creates a list of WKND adventures filterable by Activity Type.
 
-이 코드는 Adobe의 [JavaScript용 AEM Headless 클라이언트](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md)를 사용하여 Angular에서 지속 GraphQL 쿼리를 호출하는 방법을 보여 줍니다. 이 앱은 `wknd-shared/adventures-all` 지속 쿼리를 사용하여 모든 모험을 수집하고 사용 가능한 활동 유형 목록을 파생합니다. 사용자가 활동 유형을 선택하면 선택한 유형이 `wknd-shared/adventures-by-activity` 지속 쿼리에 전달되고 지정된 활동 유형의 모험에 대한 모험 세부 정보만 검색합니다.
+This code demonstrates using Adobe&#39;s [AEM Headless Client for JavaScript](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md) to invoke persisted GraphQL queries from Angular. 이 앱은 `wknd-shared/adventures-all` 지속 쿼리를 사용하여 모든 모험을 수집하고 사용 가능한 활동 유형 목록을 파생합니다. 사용자가 활동 유형을 선택하면 선택한 유형이 `wknd-shared/adventures-by-activity` 지속 쿼리에 전달되고 지정된 활동 유형의 모험에 대한 모험 세부 정보만 검색합니다.
 
 이 코드:
 

@@ -12,10 +12,10 @@ doc-type: Tutorial
 exl-id: 57c8fc16-fed5-4af4-b98b-5c3f0350b240
 duration: 250
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
-source-wordcount: '975'
-ht-degree: 1%
+source-wordcount: '1105'
+ht-degree: 15%
 
 ---
 
@@ -30,7 +30,7 @@ AEM SPA 편집기와 통합된 React 애플리케이션의 시작점으로 Adobe
 1. AEM Project Archetype을 사용하여 SPA 편집기 활성화 프로젝트를 생성합니다.
 2. 스타터 프로젝트를 AEM의 로컬 인스턴스에 배포합니다.
 
-## 빌드할 내용 {#what-build}
+## 빌드 결과물 {#what-build}
 
 이 장에서는 [AEM Project Archetype](https://github.com/adobe/aem-project-archetype)을(를) 기반으로 새 AEM 프로젝트가 생성됩니다. AEM 프로젝트는 React SPA의 매우 간단한 시작점으로 부트스트랩됩니다.
 
@@ -40,13 +40,13 @@ AEM SPA 편집기와 통합된 React 애플리케이션의 시작점으로 Adobe
 
 ## 사전 요구 사항
 
-[로컬 개발 환경](overview.md#local-dev-environment)을 설정하는 데 필요한 도구 및 지침을 검토하십시오. **작성자** 모드에서 시작된 Adobe Experience Manager의 새 인스턴스가 로컬에서 실행되고 있는지 확인하십시오.
+[로컬 개발 환경](overview.md#local-dev-environment)을 설정하는 데 필요한 도구와 지침을 검토합니다. **작성자** 모드에서 시작된 Adobe Experience Manager의 새 인스턴스가 로컬에서 실행되고 있는지 확인하십시오.
 
 ## 프로젝트 만들기 {#create}
 
 >[!NOTE]
 >
->이 자습서에서는 Archetype 버전 **35**&#x200B;을(를) 사용합니다.
+>이 튜토리얼에서는 Archetype **35** 버전을 사용합니다.
 
 1. 명령줄 터미널을 열고 다음 Maven 명령을 입력합니다.
 
@@ -67,11 +67,11 @@ AEM SPA 편집기와 통합된 React 애플리케이션의 시작점으로 Adobe
    >
    > AEM 6.5.5 이상을 타깃팅하는 경우 `aemVersion="cloud"`을(를) `aemVersion="6.5.5"`(으)로 바꾸십시오. 6.4.8 이상을 타깃팅하는 경우 `aemVersion="6.4.8"`을(를) 사용합니다.
 
-   `frontendModule=react` 속성을 확인합니다. 이렇게 하면 AEM Project Archetype이 AEM SPA 편집기에서 사용할 스타터 [React 코드 베이스](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-react.html?lang=ko)로 프로젝트를 부트스트랩합니다. `appTitle`, `appId`, `artifactId` 및 `groupId`과(와) 같은 속성은 프로젝트 및 목적을 식별하는 데 사용됩니다.
+   `frontendModule=react` 속성을 확인합니다. 이렇게 하면 AEM Project Archetype이 AEM SPA 편집기에서 사용할 스타터 [React 코드 베이스](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-react.html)로 프로젝트를 부트스트랩합니다. `appTitle`, `appId`, `artifactId` 및 `groupId`과(와) 같은 속성은 프로젝트 및 목적을 식별하는 데 사용됩니다.
 
-   [&#x200B; 프로젝트를 구성하는 데 사용할 수 있는 속성의 전체 목록이 여기](https://github.com/adobe/aem-project-archetype#available-properties)에 있습니다.
+   프로젝트 구성을 위해 사용 가능한 속성의 전체 목록은 [여기에서 확인](https://github.com/adobe/aem-project-archetype#available-properties)할 수 있습니다.
 
-1. 로컬 파일 시스템에서 Maven Archetype에 의해 다음 폴더 및 파일 구조가 생성됩니다.
+1. 다음 폴더와 파일 구조는 로컬 파일 시스템의 Maven Archetype에 의해 생성됩니다.
 
    ```plain
    |--- aem-guides-wknd-spa.react/
@@ -92,14 +92,14 @@ AEM SPA 편집기와 통합된 React 애플리케이션의 시작점으로 Adobe
        |--- .gitignore
    ```
 
-   각 폴더는 개별 Maven 모듈을 나타냅니다. 이 자습서에서는 주로 React 앱인 `ui.frontend` 모듈을 사용하여 작업합니다. 개별 모듈에 대한 자세한 내용은 [AEM Project Archetype 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko)를 참조하세요.
+   Each folder represents an individual Maven module. In this tutorial we will primarily be working with the `ui.frontend` module, which is the React app. More details about individual modules can be found in the [AEM Project Archetype documentation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html).
 
 ## 프로젝트 배포 및 빌드
 
-그런 다음 Maven을 사용하여 프로젝트 코드를 AEM 로컬 인스턴스에 컴파일, 빌드 및 배포합니다.
+Next, compile, build, and deploy the project code to a local instance of AEM using Maven.
 
-1. AEM 인스턴스가 포트 **4502**&#x200B;에서 로컬로 실행되고 있는지 확인하십시오.
-1. 명령줄에서 `aem-guides-wknd-spa.react` 프로젝트 디렉터리로 이동합니다.
+1. Ensure an instance of AEM is running locally on port **4502**.
+1. From the command line navigate into the `aem-guides-wknd-spa.react` project directory.
 
    ```shell
    $ cd aem-guides-wknd-spa.react
@@ -111,7 +111,7 @@ AEM SPA 편집기와 통합된 React 애플리케이션의 시작점으로 Adobe
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-   빌드는 약 1분 정도 소요되며 다음 메시지로 종료됩니다.
+   The build will take around a minute and should end with the following message:
 
    ```shell
    ...
@@ -135,17 +135,17 @@ AEM SPA 편집기와 통합된 React 애플리케이션의 시작점으로 Adobe
    [INFO] ------------------------------------------------------------------------
    ```
 
-   Maven 프로필 `autoInstallSinglePackage`은(는) 프로젝트의 개별 모듈을 컴파일하고 단일 패키지를 AEM 인스턴스에 배포합니다. 기본적으로 이 패키지는 포트 **4502**&#x200B;에서 로컬로 실행되고 자격 증명이 `admin:admin`인 AEM 인스턴스에 배포됩니다.
+   Maven 프로필인 `autoInstallSinglePackage`는 프로젝트의 개별 모듈을 컴파일하고 단일 패키지를 AEM 인스턴스에 배포합니다. 기본적으로 이 패키지는 **4502** 포트에서 로컬로 실행되는 AEM 인스턴스에 배포되며 `admin:admin`의 자격 증명을 보유합니다.
 
 1. 로컬 AEM 인스턴스의 **패키지 관리자**(으)로 이동합니다. [http://localhost:4502/crx/packmgr/index.jsp](http://localhost:4502/crx/packmgr/index.jsp).
 
-1. 접두사가 `aem-guides-wknd-spa.react`인 패키지가 여러 개 표시됩니다.
+1. You should see multiple packages prefixed with `aem-guides-wknd-spa.react`.
 
    ![WKND SPA 패키지](assets/create-project/package-manager.png)
 
-   *AEM 패키지 관리자*
+   *AEM Package Manager*
 
-   프로젝트에 필요한 모든 사용자 지정 코드는 이러한 패키지에 번들로 제공되며 AEM 환경에 설치됩니다.
+   All of the custom code needed for the project is bundled into these packages and installed on the AEM environment.
 
 ## 콘텐츠 작성
 
@@ -155,7 +155,7 @@ AEM SPA 편집기와 통합된 React 애플리케이션의 시작점으로 Adobe
 
    WKND SPA에는 국가, 언어 및 홈 페이지가 있는 기본 사이트 구조가 포함되어 있습니다. 이 계층은 `language_country` 및 `isSingleCountryWebsite`에 대한 Archetype의 기본값을 기반으로 합니다. 프로젝트를 생성할 때 [사용 가능한 속성](https://github.com/adobe/aem-project-archetype#available-properties)을 업데이트하여 이러한 값을 덮어쓸 수 있습니다.
 
-2. 페이지를 선택하고 메뉴 표시줄에서 **편집** 단추를 클릭하여 **us** > **en** > **WKND SPA React 홈 페이지** 페이지를 엽니다.
+2. Open the **us** > **en** > **WKND SPA React Home Page** page by selecting the page and clicking the **Edit** button in the menu bar:
 
    ![사이트 콘솔](./assets/create-project/open-home-page.png)
 
@@ -200,7 +200,7 @@ AEM SPA 편집기와 통합된 React 애플리케이션의 시작점으로 Adobe
 
    [http://localhost:4502/content/wknd-spa-react/us/en.model.json](http://localhost:4502/content/wknd-spa-react/us/en.model.json)에 대한 요청이 있어야 합니다. 여기에는 SPA를 구동하는 JSON 형식의 모든 콘텐츠가 포함되어 있습니다.
 
-5. 새 탭에서 [http://localhost:4502/content/wknd-spa-react/us/en.model.json](http://localhost:4502/content/wknd-spa-react/us/en.model.json) 열기
+5. 새 탭에서 [http://localhost:4502/content/wknd-spa-react/us/en.model.json](http://localhost:4502/content/wknd-spa-react/us/en.model.json)을 엽니다.
 
    `en.model.json` 요청은 응용 프로그램을 실행할 콘텐츠 모델을 나타냅니다. JSON 출력을 검사하면 **[!UICONTROL Text]** 구성 요소를 나타내는 코드 조각을 찾을 수 있습니다.
 
