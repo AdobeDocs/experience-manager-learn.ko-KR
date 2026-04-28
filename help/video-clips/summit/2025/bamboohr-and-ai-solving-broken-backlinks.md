@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Learn how BambooHR used AI to identify and fix broken backlinks, leading to a 4% increase in organic traffic.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459238/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3461994/?captions=kor&learn=on&enablevpops)

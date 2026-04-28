@@ -25,4 +25,4 @@ ht-degree: 0%
 
 컨트리 음악의 storytelling 원칙이 디지털 경험을 위한 GenAI 도구의 디자인과 어떤 관련이 있는지 알아보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459229/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3462016/?captions=kor&learn=on&enablevpops)

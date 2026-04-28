@@ -25,4 +25,4 @@ ht-degree: 0%
 
 속성 기반 액세스 제어, 브랜드 랜딩 페이지, 플랫폼 간 통합 검색 등 Content Hub의 새로운 기능을 살펴봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459223/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3461817/?captions=kor&learn=on&enablevpops)

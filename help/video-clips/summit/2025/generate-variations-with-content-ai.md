@@ -25,4 +25,4 @@ ht-degree: 0%
 
 See how Content AI enables you to create engaging content variations quickly and efficiently.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459227/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3461884/?captions=kor&learn=on&enablevpops)
