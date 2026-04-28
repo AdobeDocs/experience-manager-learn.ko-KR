@@ -33,7 +33,7 @@ AEM Pages 및 SPA Editor SDK을 사용하여 SPA의 여러 보기가 지원되�
 
 ## 빌드 결과물
 
-이 장에서는 기존 `Header` 구성 요소에 탐색 메뉴를 추가합니다. 탐색 메뉴는 AEM 페이지 계층 구조에 의해 구동되며 [탐색 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html)에서 제공하는 JSON 모델을 사용합니다.
+이 장에서는 기존 `Header` 구성 요소에 탐색 메뉴를 추가합니다. 탐색 메뉴는 AEM 페이지 계층 구조에 의해 구동되며 [탐색 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html?lang=ko)에서 제공하는 JSON 모델을 사용합니다.
 
 ![탐색 구현](assets/navigation-routing/final-navigation-implemented.gif)
 
@@ -116,7 +116,7 @@ AEM Pages 및 SPA Editor SDK을 사용하여 SPA의 여러 보기가 지원되�
        componentGroup="WKND SPA Angular - Structure"/>
    ```
 
-   AEM `Header` 구성 요소는 `sling:resourceSuperType` 속성을 통해 [탐색 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html)의 모든 기능을 상속합니다.
+   AEM `Header` 구성 요소는 `sling:resourceSuperType` 속성을 통해 [탐색 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html?lang=ko)의 모든 기능을 상속합니다.
 
 ## SPA 템플릿에 HeaderComponent 추가 {#add-header-template}
 

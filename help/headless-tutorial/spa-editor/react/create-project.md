@@ -67,7 +67,7 @@ AEM SPA 편집기와 통합된 React 애플리케이션의 시작점으로 Adobe
    >
    > AEM 6.5.5 이상을 타깃팅하는 경우 `aemVersion="cloud"`을(를) `aemVersion="6.5.5"`(으)로 바꾸십시오. 6.4.8 이상을 타깃팅하는 경우 `aemVersion="6.4.8"`을(를) 사용합니다.
 
-   `frontendModule=react` 속성을 확인합니다. 이렇게 하면 AEM Project Archetype이 AEM SPA 편집기에서 사용할 스타터 [React 코드 베이스](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-react.html)로 프로젝트를 부트스트랩합니다. `appTitle`, `appId`, `artifactId` 및 `groupId`과(와) 같은 속성은 프로젝트 및 목적을 식별하는 데 사용됩니다.
+   `frontendModule=react` 속성을 확인합니다. 이렇게 하면 AEM Project Archetype이 AEM SPA 편집기에서 사용할 스타터 [React 코드 베이스](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-react.html?lang=ko)로 프로젝트를 부트스트랩합니다. `appTitle`, `appId`, `artifactId` 및 `groupId`과(와) 같은 속성은 프로젝트 및 목적을 식별하는 데 사용됩니다.
 
    프로젝트 구성을 위해 사용 가능한 속성의 전체 목록은 [여기에서 확인](https://github.com/adobe/aem-project-archetype#available-properties)할 수 있습니다.
 
@@ -92,7 +92,7 @@ AEM SPA 편집기와 통합된 React 애플리케이션의 시작점으로 Adobe
        |--- .gitignore
    ```
 
-   Each folder represents an individual Maven module. In this tutorial we will primarily be working with the `ui.frontend` module, which is the React app. More details about individual modules can be found in the [AEM Project Archetype documentation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html).
+   Each folder represents an individual Maven module. In this tutorial we will primarily be working with the `ui.frontend` module, which is the React app. More details about individual modules can be found in the [AEM Project Archetype documentation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko).
 
 ## 프로젝트 배포 및 빌드
 

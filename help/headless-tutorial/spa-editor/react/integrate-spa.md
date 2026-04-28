@@ -54,13 +54,13 @@ React로 작성된 단일 페이지 애플리케이션(SPA)의 소스 코드를 
 
 *SPA 통합에 대한 높은 수준의 설명입니다.*
 
-프론트엔드 빌드에 대한 추가 정보는 [여기에서 찾을 수 있음](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-react.html).
+프론트엔드 빌드에 대한 추가 정보는 [여기에서 찾을 수 있음](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-react.html?lang=ko).
 
 ## SPA 통합 검사 {#inspect-spa-integration}
 
-그런 다음 `ui.frontend` 모듈을 검사하여 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-react.html)에서 자동으로 생성된 SPA를 이해합니다.
+그런 다음 `ui.frontend` 모듈을 검사하여 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-react.html?lang=ko)에서 자동으로 생성된 SPA를 이해합니다.
 
-1. 선택한 IDE에서 AEM 프로젝트를 엽니다. 이 자습서에서는 [Visual Studio 코드 IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code)를 사용합니다.
+1. 선택한 IDE에서 AEM 프로젝트를 엽니다. 이 자습서에서는 [Visual Studio 코드 IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=ko#microsoft-visual-studio-code)를 사용합니다.
 
    ![VSCode - AEM WKND SPA 프로젝트](./assets/integrate-spa/vscode-ide-openproject.png)
 
@@ -80,7 +80,7 @@ React로 작성된 단일 페이지 애플리케이션(SPA)의 소스 코드를 
    "@adobe/aem-core-components-react-spa": "1.1.7",
    ```
 
-   위의 모듈은 [AEM SPA Editor JS SDK](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-blueprint.html)을(를) 구성하고 SPA 구성 요소를 AEM 구성 요소에 매핑할 수 있는 기능을 제공합니다.
+   위의 모듈은 [AEM SPA Editor JS SDK](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-blueprint.html?lang=ko)을(를) 구성하고 SPA 구성 요소를 AEM 구성 요소에 매핑할 수 있는 기능을 제공합니다.
 
    [AEM WCM 구성 요소 - React 코어 구현](https://github.com/adobe/aem-react-core-wcm-components-base) 및 [AEM WCM 구성 요소 - Spa 편집기 - React 코어 구현](https://github.com/adobe/aem-react-core-wcm-components-spa)도 포함됩니다. 기본 AEM 구성 요소에 매핑되는 재사용 가능한 UI 구성 요소 세트입니다. 이는 프로젝트 요구 사항에 맞게 디자인 및 디자인되었습니다.
 
