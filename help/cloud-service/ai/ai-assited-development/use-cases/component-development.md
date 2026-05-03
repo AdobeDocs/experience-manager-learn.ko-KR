@@ -10,19 +10,21 @@ duration: 0
 last-substantial-update: 2026-04-24T00:00:00Z
 jira: KT-20901
 thumbnail: KT-20901.png
-source-git-commit: e3ef450cfe9005ba940ff1897c216681654341b3
+exl-id: bd9b74e8-81ab-4d42-bd0a-5443248b5770
+source-git-commit: f93359e731b6c3fa549e9499ef693042eba3aad7
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 2%
 
 ---
 
-
 # AEM 에이전트 기술을 사용한 구성 요소 개발
 
 [AI 지원 개발](../overview.md)의 일부로 AEM 에이전트 기술을 사용하여 AEM 구성 요소를 개발하는 방법에 대해 알아봅니다.
 
 이 연습에서는 AI 기반 IDE에서 자연어(예: Cursor)를 사용하여 [WKND Sites 프로젝트](https://github.com/adobe/aem-guides-wknd)에서 **프로모션 배너** 구성 요소를 개발합니다. 코딩 에이전트는 `create-component` AEM 에이전트 스킬을 적용하여 구현을 생성합니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3484952/?learn=on&enablevpops)
 
 ## 사전 요구 사항
 
@@ -105,7 +107,7 @@ AEM as a Cloud Service 프로젝트의 경우 `ensure-agents-md` 부트스트랩
 
 ## 추가 리소스
 
-- [AI 도구를 사용한 로컬 개발](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/local-development-with-ai-tools)
+- [AI 도구를 사용한 로컬 개발](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/local-development-with-ai-tools)
 
 - [AI 코딩 에이전트를 위한 Adobe 기술](https://github.com/adobe/skills)
 
