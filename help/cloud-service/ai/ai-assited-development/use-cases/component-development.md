@@ -24,7 +24,7 @@ ht-degree: 2%
 
 이 연습에서는 AI 기반 IDE에서 자연어(예: Cursor)를 사용하여 [WKND Sites 프로젝트](https://github.com/adobe/aem-guides-wknd)에서 **프로모션 배너** 구성 요소를 개발합니다. 코딩 에이전트는 `create-component` AEM 에이전트 스킬을 적용하여 구현을 생성합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3484952/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3484959/?captions=kor&learn=on&enablevpops)
 
 ## 사전 요구 사항
 
